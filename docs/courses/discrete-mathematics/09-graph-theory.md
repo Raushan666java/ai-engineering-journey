@@ -1,4 +1,4 @@
-# Chapter 9: Graph Theory
+﻿# Chapter 9: Graph Theory
 
 > **Previous:** [Chapter 8: Functions](./08-functions.md) | **Next:** [Chapter 10: Trees](./10-trees.md)
 
@@ -9,16 +9,16 @@ After completing this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/discrete-mathematics/09-graph-theory/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/discrete-mathematics/09-graph-theory/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/discrete-mathematics/09-graph-theory/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/discrete-mathematics/09-graph-theory/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/discrete-mathematics/09-graph-theory/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/discrete-mathematics/09-graph-theory/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/discrete-mathematics/09-graph-theory/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/discrete-mathematics/09-graph-theory/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/discrete-mathematics/09-graph-theory/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/discrete-mathematics/09-graph-theory/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/discrete-mathematics/09-graph-theory/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/discrete-mathematics/09-graph-theory/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>

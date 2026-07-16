@@ -1,4 +1,4 @@
-# Phase 2 — LLM Fundamentals + RAG Theory
+﻿# Phase 2 â€” LLM Fundamentals + RAG Theory
 
 **Duration:** Weeks 4-5, ~25 hours
 **Goal:** Understand embeddings, vector search, chunking strategies, and RAG architecture well enough to defend every design decision in a technical interview. Build a public RAG demo API.
@@ -9,16 +9,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/ai-agent-engineer/03-phase2-llm-rag-theory/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -30,7 +30,7 @@
 |---|----------|-------|-----------------|
 | 1 | Tokens and tokenization (BPE) | 1 | Estimate token count of a paragraph within 20% without a tool |
 | 2 | Context window mechanics | 1 | Explain why multi-turn chat resends the whole history every call |
-| 3 | Embeddings — what a vector represents | 2 | Explain cosine similarity in one concrete sentence |
+| 3 | Embeddings â€” what a vector represents | 2 | Explain cosine similarity in one concrete sentence |
 | 4 | Embedding dimensionality (cost/quality tradeoff) | 1 | Name 2 OpenAI embedding models, their dimensions, pick the right one |
 | 5 | Prompt engineering: zero-shot, few-shot, CoT | 2.5 | Write a few-shot prompt that improves output vs zero-shot |
 | 6 | Structured output / function calling | 2 | Write a tool-call schema by hand for both OpenAI and Anthropic |
@@ -49,7 +49,7 @@
 
 ## 2.1 Tokens and Tokenization
 
-LLMs don't see characters or words. They see **tokens** — subword units produced by a tokenizer.
+LLMs don't see characters or words. They see **tokens** â€” subword units produced by a tokenizer.
 
 ### BPE (Byte-Pair Encoding)
 
@@ -82,7 +82,7 @@ def estimate_cost(prompt: str, model: str = "gpt-4") -> float:
 
 ### Exercise
 
-Take 5 paragraphs from your own writing. Use `tiktoken` to count tokens. Try to estimate before running — see how close you get. Then check: how many tokens does a 500-word article produce? (Answer: ~650-700 tokens, gpt-4)
+Take 5 paragraphs from your own writing. Use `tiktoken` to count tokens. Try to estimate before running â€” see how close you get. Then check: how many tokens does a 500-word article produce? (Answer: ~650-700 tokens, gpt-4)
 
 ---
 
@@ -115,9 +115,9 @@ Write a script that simulates 10 conversation turns, counting tokens for each tu
 
 ---
 
-## 2.3 Embeddings — What a Vector Actually Represents
+## 2.3 Embeddings â€” What a Vector Actually Represents
 
-An embedding is a **semantic compression** — a list of N floats (usually 1536 or 768) that represents the "meaning" of a piece of text. Similar texts have similar vectors.
+An embedding is a **semantic compression** â€” a list of N floats (usually 1536 or 768) that represents the "meaning" of a piece of text. Similar texts have similar vectors.
 
 ```python
 from openai import OpenAI
@@ -159,7 +159,7 @@ print(f"cat-market similarity: {sim_0_2:.3f}")
 
 ### Exercise
 
-Write a 20-line script: embed 3 sentences (2 similar, 1 unrelated), print cosine similarities, confirm the math matches intuition. This is the foundation exercise — skip nothing in it.
+Write a 20-line script: embed 3 sentences (2 similar, 1 unrelated), print cosine similarities, confirm the math matches intuition. This is the foundation exercise â€” skip nothing in it.
 
 ---
 
@@ -167,7 +167,7 @@ Write a 20-line script: embed 3 sentences (2 similar, 1 unrelated), print cosine
 
 | Model | Dimensions | Cost/1M tokens | Use case |
 |-------|-----------|----------------|----------|
-| `text-embedding-3-small` | 1536 | $0.02 | Default — best cost/quality balance |
+| `text-embedding-3-small` | 1536 | $0.02 | Default â€” best cost/quality balance |
 | `text-embedding-3-large` | 3072 | $0.13 | High-accuracy retrieval, semantic search |
 | `text-embedding-3-small` (dimensions=256) | 256 | $0.02 | Cost-sensitive, good-enough accuracy |
 
@@ -184,7 +184,7 @@ response = client.embeddings.create(
 
 ### Exercise
 
-Embed the same 3 sentences at 1536, 512, and 256 dimensions. Compare cosine similarity outputs — how much does ranking change?
+Embed the same 3 sentences at 1536, 512, and 256 dimensions. Compare cosine similarity outputs â€” how much does ranking change?
 
 ---
 
@@ -296,7 +296,7 @@ Write the same tool schema (a RAG query tool with `query: str`, `top_k: int`, `c
 
 
 ```
-cosine(A, B) = (A · B) / (|A| * |B|)
+cosine(A, B) = (A Â· B) / (|A| * |B|)
 ```
 
 Range: -1 (opposite) to 1 (identical). For text embeddings, most values are between 0 and 1.
@@ -318,19 +318,19 @@ Range: 0 to inf. For normalized vectors, this is monotonic with cosine.
 ### Why cosine wins for text
 
 
-Text embedding models are trained to normalize embeddings. Cosine similarity is equivalent to dot product on normalized vectors. It's the default because it's unaffected by text length — a short query semantically similar to a long document still scores high.
+Text embedding models are trained to normalize embeddings. Cosine similarity is equivalent to dot product on normalized vectors. It's the default because it's unaffected by text length â€” a short query semantically similar to a long document still scores high.
 
 ### Exercise
 
-Take 2 similar and 2 dissimilar sentence pairs. Compute all 3 metrics (cosine, dot product, Euclidean). Note that ranking is identical for all 3 on normalized vectors — confirm this empirically.
+Take 2 similar and 2 dissimilar sentence pairs. Compute all 3 metrics (cosine, dot product, Euclidean). Note that ranking is identical for all 3 on normalized vectors â€” confirm this empirically.
 
 ---
 
 ## 2.8 ANN Indexes: HNSW
 
-**Exact search:** Compare query vector against every stored vector. Correct, but O(N) — takes 1 second for 1M vectors.
+**Exact search:** Compare query vector against every stored vector. Correct, but O(N) â€” takes 1 second for 1M vectors.
 
-**HNSW (Hierarchical Navigable Small World):** Builds a multi-layer graph. Search starts at the top layer (fewest nodes), navigates neighbors, descends to denser layers. O(log N) — takes ~5ms for 1M vectors.
+**HNSW (Hierarchical Navigable Small World):** Builds a multi-layer graph. Search starts at the top layer (fewest nodes), navigates neighbors, descends to denser layers. O(log N) â€” takes ~5ms for 1M vectors.
 
 ### The tradeoff
 
@@ -369,54 +369,54 @@ Insert 1000 vectors. Search with `ef_search=10`, `ef_search=50`, `ef_search=200`
 ```
                     INGESTION PIPELINE
                     +--------------+
-                    ¦   Document   ¦
-                    ¦   (PDF/TXT)  ¦
+                    Â¦   Document   Â¦
+                    Â¦   (PDF/TXT)  Â¦
                     +--------------+
                            ?
                     +--------------+
-                    ¦   Chunking   ¦   500-800 tokens, 50-100 overlap
+                    Â¦   Chunking   Â¦   500-800 tokens, 50-100 overlap
                     +--------------+
                            ?
                     +--------------+
-                    ¦   Embedding  ¦   text-embedding-3-small ? 1536-dim vector
+                    Â¦   Embedding  Â¦   text-embedding-3-small ? 1536-dim vector
                     +--------------+
                            ?
                     +--------------+
-                    ¦  Vector DB   ¦   ChromaDB stores vector + text + metadata
-                    ¦  (ChromaDB)  ¦
+                    Â¦  Vector DB   Â¦   ChromaDB stores vector + text + metadata
+                    Â¦  (ChromaDB)  Â¦
                     +--------------+
 
                     QUERY PIPELINE
                     +--------------+
-                    ¦   User query  ¦   "What is the membership fee?"
+                    Â¦   User query  Â¦   "What is the membership fee?"
                     +--------------+
                            ?
                     +--------------+
-                    ¦   Embedding  ¦   Same model as ingestion
+                    Â¦   Embedding  Â¦   Same model as ingestion
                     +--------------+
                            ?
                     +--------------+
-                    ¦  Similarity  ¦   Cosine search ? top_k chunks
-                    ¦   Search     ¦
+                    Â¦  Similarity  Â¦   Cosine search ? top_k chunks
+                    Â¦   Search     Â¦
                     +--------------+
                            ?
                     +--------------+
-                    ¦ Build context ¦   Retrieved chunks concatenated
+                    Â¦ Build context Â¦   Retrieved chunks concatenated
                     +--------------+
                            ?
                     +--------------+
-                    ¦   LLM call   ¦   Prompt + context + question ? answer
+                    Â¦   LLM call   Â¦   Prompt + context + question ? answer
                     +--------------+
                            ?
                     +--------------+
-                    ¦  Return to   ¦   Answer + cited chunks + scores
-                    ¦   User       ¦
+                    Â¦  Return to   Â¦   Answer + cited chunks + scores
+                    Â¦   User       Â¦
                     +--------------+
 ```
 
 ### Exercise
 
-Draw this pipeline from memory without looking at the diagram. Every arrow needs a label. Every box needs a data type (vector, string, list). This is the single most important diagram in modern AI engineering — it's asked in almost every interview.
+Draw this pipeline from memory without looking at the diagram. Every arrow needs a label. Every box needs a data type (vector, string, list). This is the single most important diagram in modern AI engineering â€” it's asked in almost every interview.
 
 ---
 
@@ -436,13 +436,13 @@ def fixed_chunks(text: str, chunk_size: int = 500, overlap: int = 50) -> list[st
     return chunks
 ```
 
-**Failure mode:** Cuts mid-sentence, mid-table, mid-code-block. The chunk might say "The price is ?" and the next chunk continues "12,000 per year" — retrieval gets the first chunk and misses the price.
+**Failure mode:** Cuts mid-sentence, mid-table, mid-code-block. The chunk might say "The price is ?" and the next chunk continues "12,000 per year" â€” retrieval gets the first chunk and misses the price.
 
 ### Recursive character splitting (better)
 
 
 ```python
-# LangChain's recursive splitter — split on paragraphs first, then sentences, then characters
+# LangChain's recursive splitter â€” split on paragraphs first, then sentences, then characters
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 splitter = RecursiveCharacterTextSplitter(
@@ -483,7 +483,7 @@ Take a real PDF (a Terms of Service document, or the Indian Constitution preambl
 ### First-pass retrieval
 
 
-Top-k from vector search. Fast but imperfect — similar-looking chunks may be semantically wrong.
+Top-k from vector search. Fast but imperfect â€” similar-looking chunks may be semantically wrong.
 
 ### Second-pass re-ranking
 
@@ -504,7 +504,7 @@ results = co.rerank(
 )
 ```
 
-**Why this works:** Vector search compares dense embeddings (semantic). Re-ranking uses cross-attention between query and document — more accurate but too expensive to do on 1M documents.
+**Why this works:** Vector search compares dense embeddings (semantic). Re-ranking uses cross-attention between query and document â€” more accurate but too expensive to do on 1M documents.
 
 ### Exercise
 
@@ -597,9 +597,9 @@ Take a query that retrieves chunks but none of them answer the question. Run it 
 
 ```
 Client --? FastAPI --? ChromaDB
-               ¦
+               Â¦
                +--? Redis (rate limiting)
-               ¦
+               Â¦
                +--? OpenAI (embeddings + generation)
 ```
 
@@ -624,13 +624,13 @@ GET    /healthz                           Liveness probe
 ### Week-by-week build
 
 
-**Week 1 — Core API**
+**Week 1 â€” Core API**
 - Days 1-2: Pydantic schemas for all endpoints
 - Day 3: Document ingestion (chunk ? embed ? store)
 - Day 4: Query endpoint (embed ? search ? augment ? generate)
 - Day 5: Multi-tenancy + API key auth
 
-**Week 2 — Hardening + deployment**
+**Week 2 â€” Hardening + deployment**
 - Day 1: Rate limiting with `slowapi`
 - Day 2: Docker + docker-compose
 - Day 3: Deploy to Hetzner behind Cloudflare Tunnel
@@ -692,7 +692,7 @@ Instead of updating all weights, LoRA inserts small trainable matrices:
 
 ```
 Full fine-tune:  ?W with shape (d, k) ? 7B parameters updated
-LoRA:           BA with shapes (d, r) × (r, k) ? 0.1% parameters updated
+LoRA:           BA with shapes (d, r) Ã— (r, k) ? 0.1% parameters updated
 ```
 
 ```python
@@ -702,7 +702,7 @@ from peft import get_peft_model
 model = AutoModelForCausalLM.from_pretrained("mistralai/Mistral-7B-v0.1")
 
 lora_config = LoraConfig(
-    r=8,              # rank — higher = more capacity, more memory
+    r=8,              # rank â€” higher = more capacity, more memory
     lora_alpha=32,    # scaling factor
     target_modules=["q_proj", "v_proj"],
     lora_dropout=0.05,
@@ -752,7 +752,7 @@ model = AutoModelForCausalLM.from_pretrained(
 
 ### Exercise
 
-Your RAG demo doesn't need fine-tuning — RAG is the right solution for your use case. But as an exercise: download a small model (Mistral-7B), apply LoRA config, and print trainable parameter count. Then argue in writing why RAG beats fine-tuning for a document Q&A system.
+Your RAG demo doesn't need fine-tuning â€” RAG is the right solution for your use case. But as an exercise: download a small model (Mistral-7B), apply LoRA config, and print trainable parameter count. Then argue in writing why RAG beats fine-tuning for a document Q&A system.
 
 ---
 
@@ -819,7 +819,7 @@ print(f"Claude: {claude_score['avg_score']:.2%}")
 | Factual accuracy | Does the answer contain expected facts? | Keyword overlap, LLM-as-judge |
 | Hallucination rate | Does the answer fabricate? | Human review, external fact check |
 | Latency (TTFT) | How fast does it start responding? | `time` the first token |
-| Cost per query | $ per 1K queries | Token count × pricing |
+| Cost per query | $ per 1K queries | Token count Ã— pricing |
 | Instruction following | Does it obey format constraints? | Regex/JSON parse success rate |
 
 ### Exercise
@@ -830,7 +830,7 @@ Build an eval harness with 5 test cases. Run the same prompt through GPT-4 and C
 
 ## 2.16 Guardrails / Content Moderation
 
-Agents that talk to users need guardrails — both input (what users can ask) and output (what the model can say).
+Agents that talk to users need guardrails â€” both input (what users can ask) and output (what the model can say).
 
 ### Input guardrails: detect harmful queries
 
@@ -979,4 +979,4 @@ Before moving to Phase 3, you should be able to:
 
 **Estimated time to checkpoint:** 28-32 hours over 2 weeks.
 
-[Next: Phase 3 — AI Agents: LangGraph, CrewAI, MCP](04-phase3-agents-langgraph-mcp.md)
+[Next: Phase 3 â€” AI Agents: LangGraph, CrewAI, MCP](04-phase3-agents-langgraph-mcp.md)

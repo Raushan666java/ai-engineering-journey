@@ -1,8 +1,8 @@
-# Architectural Design
+﻿# Architectural Design
 
 ## Learning Objectives
 
-> ✅ After completing this chapter, the student will be able to:
+> âœ… After completing this chapter, the student will be able to:
 > - Explain the role of architectural design in software engineering and its impact on quality attributes
 > - Identify the key decisions made during architectural design
 > - Describe and compare layered, MVC, repository, client-server, pipe-and-filter, microservices, event-driven, CQRS, hexagonal, and broker patterns
@@ -16,16 +16,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/04-architectural-design/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/software-engineering/04-architectural-design/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/04-architectural-design/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/software-engineering/04-architectural-design/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/04-architectural-design/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/software-engineering/04-architectural-design/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/04-architectural-design/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/software-engineering/04-architectural-design/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/04-architectural-design/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/software-engineering/04-architectural-design/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/04-architectural-design/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/software-engineering/04-architectural-design/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -37,7 +37,7 @@
 
 Architectural design is the process of defining the overall structure of a software system. It identifies the major components, their responsibilities, and the relationships between them. Architectural design is the first stage of the design process and serves as the bridge between requirements and detailed design.
 
-The architecture of a system influences every subsequent development activity. It determines the system's ability to meet **quality attributes** including performance, security, maintainability, and reliability. Architectural decisions are the most consequential decisions in software development because they are the most difficult to change — a poor architectural decision can haunt a project for years.
+The architecture of a system influences every subsequent development activity. It determines the system's ability to meet **quality attributes** including performance, security, maintainability, and reliability. Architectural decisions are the most consequential decisions in software development because they are the most difficult to change â€” a poor architectural decision can haunt a project for years.
 
 ```mermaid
 graph TD
@@ -166,10 +166,10 @@ graph TD
 ```
 
 **Benefits:**
-- Separation of concerns — each layer has a clear responsibility
-- Encapsulation — changes within a layer do not affect other layers if interfaces remain stable
-- Testability — each layer can be tested independently (mock the layer below)
-- Reusability — layers can be reused across applications
+- Separation of concerns â€” each layer has a clear responsibility
+- Encapsulation â€” changes within a layer do not affect other layers if interfaces remain stable
+- Testability â€” each layer can be tested independently (mock the layer below)
+- Reusability â€” layers can be reused across applications
 
 **Costs:**
 - Performance overhead from passing through multiple layers
@@ -235,8 +235,8 @@ graph TD
 ```
 
 **Benefits:**
-- Simple communication model — all components share the same data
-- Data consistency — centralised update management ensures integrity
+- Simple communication model â€” all components share the same data
+- Data consistency â€” centralised update management ensures integrity
 - Suitable for data-centric systems (information systems, compilers, IDEs)
 
 **Costs:**
@@ -294,16 +294,16 @@ graph TD
 ```
 
 **Benefits:**
-- Independent deployability — each service can be deployed without coordinating with others
-- Technology diversity (polyglot persistence) — each service can use the best technology for its domain
-- Team alignment with Conway's law — service boundaries match team boundaries
-- Resilience through fault isolation — one service failure doesn't cascade
+- Independent deployability â€” each service can be deployed without coordinating with others
+- Technology diversity (polyglot persistence) â€” each service can use the best technology for its domain
+- Team alignment with Conway's law â€” service boundaries match team boundaries
+- Resilience through fault isolation â€” one service failure doesn't cascade
 
 **Costs:**
-- Distributed system complexity — network latency, partial failures, distributed tracing
-- Data consistency challenges — eventual consistency requires careful design
+- Distributed system complexity â€” network latency, partial failures, distributed tracing
+- Data consistency challenges â€” eventual consistency requires careful design
 - Service discovery and orchestration overhead
-- Operational burden — monitoring, logging, deployment automation for many services
+- Operational burden â€” monitoring, logging, deployment automation for many services
 
 **When to use:** Large, complex systems with multiple independent development teams.
 
@@ -332,9 +332,9 @@ graph LR
 ```
 
 **Benefits:**
-- Highly decoupled — producers and consumers don't know each other
-- Highly scalable — consumers can be added independently
-- Real-time responsiveness — events processed as they occur
+- Highly decoupled â€” producers and consumers don't know each other
+- Highly scalable â€” consumers can be added independently
+- Real-time responsiveness â€” events processed as they occur
 
 **Costs:**
 - Event schema evolution requires careful versioning
@@ -377,7 +377,7 @@ The hexagonal architecture, by Alistair Cockburn, places the domain model at the
 ```mermaid
 graph TD
     subgraph "Hexagonal Architecture"
-        subgraph "Adapters — Left Side (Driving)"
+        subgraph "Adapters â€” Left Side (Driving)"
             WEB_ADAPTER[Web Adapter<br/>HTTP Controller]
             CLI_ADAPTER[CLI Adapter<br/>Command Line]
             TEST_ADAPTER[Test Adapter<br/>Automated Tests]
@@ -387,7 +387,7 @@ graph TD
             DOMAIN[Domain Model<br/>Core Business Logic]
             OUT_PORT[Outbound Port<br/>Repository Interface]
         end
-        subgraph "Adapters — Right Side (Driven)"
+        subgraph "Adapters â€” Right Side (Driven)"
             PERSISTENCE_ADAPTER[Persistence Adapter<br/>PostgreSQL Repository]
             MESSAGING_ADAPTER[Messaging Adapter<br/>Kafka Producer]
             EXTERNAL_ADAPTER[External Adapter<br/>Payment Gateway SDK]
@@ -412,7 +412,7 @@ graph TD
 
 ### The Broker Pattern
 
-The broker pattern decouples clients from servers by introducing an intermediary — the **broker** — that routes requests, handles load balancing, and provides location transparency.
+The broker pattern decouples clients from servers by introducing an intermediary â€” the **broker** â€” that routes requests, handles load balancing, and provides location transparency.
 
 **Modern incarnations:** API gateways (Kong, AWS API Gateway), service meshes (Istio, Linkerd), message brokers (Kafka, RabbitMQ), RPC frameworks (gRPC).
 
@@ -710,7 +710,7 @@ controller.createOrder({
 ### Example 2: Hexagonal Architecture in TypeScript
 
 ```typescript
-// === Domain (Core) Layer — No external dependencies ===
+// === Domain (Core) Layer â€” No external dependencies ===
 
 interface OrderRepository {
   save(order: Order): Promise<void>;
@@ -1075,10 +1075,10 @@ class QualityAttributeScenarioBuilder {
   public generateScenarioReport(): string {
     return this.scenarios.map(s => {
       const status = s.actualValue !== undefined
-        ? (s.actualValue >= s.targetValue ? '✅ MET' : '❌ UNMET')
-        : '⏳ NOT EVALUATED';
+        ? (s.actualValue >= s.targetValue ? 'âœ… MET' : 'âŒ UNMET')
+        : 'â³ NOT EVALUATED';
       return [
-        `## ${s.id}: ${s.attribute} — ${status}`,
+        `## ${s.id}: ${s.attribute} â€” ${status}`,
         `Priority: ${s.priority}`,
         `Description: ${s.description}`,
         '',
@@ -1157,7 +1157,7 @@ console.log(`Met: ${evaluation.met.length}, Unmet: ${evaluation.unmet.length}`);
 console.log(evaluation.unmet.map(s => `${s.id} (${s.attribute}): target ${s.targetValue}, actual ${s.actualValue}`));
 ```
 
-### Example 5: ArchitectureEvaluator — SAAM/ATAM-Inspired
+### Example 5: ArchitectureEvaluator â€” SAAM/ATAM-Inspired
 
 ```typescript
 interface WeightedAttribute {
@@ -1310,20 +1310,20 @@ console.log('Sensitivity Analysis (scalability +0.1):', sensitivity);
 
 ## Summary
 
-Architectural design is the most consequential phase of software development because architectural decisions are the most difficult and expensive to reverse. The choice of architectural pattern — whether layered, MVC, microservices, event-driven, CQRS, hexagonal, or broker — fundamentally shapes the system's quality attributes including performance, scalability, modifiability, security, and deployability. Each pattern represents a set of trade-offs: layered architecture offers simplicity and testability at the cost of performance, microservices provide independent deployability and team autonomy at the cost of distributed system complexity, and event-driven patterns maximise decoupling at the cost of debugging and consistency guarantees.
+Architectural design is the most consequential phase of software development because architectural decisions are the most difficult and expensive to reverse. The choice of architectural pattern â€” whether layered, MVC, microservices, event-driven, CQRS, hexagonal, or broker â€” fundamentally shapes the system's quality attributes including performance, scalability, modifiability, security, and deployability. Each pattern represents a set of trade-offs: layered architecture offers simplicity and testability at the cost of performance, microservices provide independent deployability and team autonomy at the cost of distributed system complexity, and event-driven patterns maximise decoupling at the cost of debugging and consistency guarantees.
 
-Quality attribute scenarios provide a structured, measurable way to specify and evaluate architectural decisions. Rather than vague goals like "the system should be fast," a well-formed scenario identifies the stimulus, source, environment, artifact, response, and response measure — for example "under 1,000 concurrent requests (stimulus) in production (environment), the API (artifact) responds within 200ms at 95th percentile (measure)." Architecture Decision Records (ADRs) capture the rationale behind architectural choices, preserving institutional knowledge for future teams. The ATAM evaluation framework enables systematic comparison of architecture alternatives against weighted quality attribute priorities, revealing trade-offs and risks before implementation begins.
+Quality attribute scenarios provide a structured, measurable way to specify and evaluate architectural decisions. Rather than vague goals like "the system should be fast," a well-formed scenario identifies the stimulus, source, environment, artifact, response, and response measure â€” for example "under 1,000 concurrent requests (stimulus) in production (environment), the API (artifact) responds within 200ms at 95th percentile (measure)." Architecture Decision Records (ADRs) capture the rationale behind architectural choices, preserving institutional knowledge for future teams. The ATAM evaluation framework enables systematic comparison of architecture alternatives against weighted quality attribute priorities, revealing trade-offs and risks before implementation begins.
 
 ## Practical Takeaways
 
-1. **Start simple, evolve when needed** — a well-structured layered monolith beats premature microservices every time
-2. **Let quality attributes drive architecture** — performance, security, maintainability, and scalability requirements should determine pattern selection, not trends
-3. **Document architectural decisions with ADRs** — they save future teams from repeating mistakes and preserve the reasoning behind choices
-4. **Design for change** — identify what's most likely to change (business rules, third-party integrations, data sources) and isolate it behind interfaces
-5. **Monoliths are not anti-patterns** — many highly successful systems (Stack Overflow, Shopify, GitHub in early years) started as monoliths and never needed microservices
-6. **Test the architecture early** — performance, scalability, and fault tolerance should be validated with prototypes and load tests before committing
-7. **Use ATAM for critical decisions** — when choosing between fundamentally different architectures (e.g., monolith vs microservices), conduct a structured trade-off analysis
-8. **Hexagonal architecture for domain complexity** — when the system has complex business logic, ports-and-adapters decouples the domain from infrastructure, enabling testability and flexibility
+1. **Start simple, evolve when needed** â€” a well-structured layered monolith beats premature microservices every time
+2. **Let quality attributes drive architecture** â€” performance, security, maintainability, and scalability requirements should determine pattern selection, not trends
+3. **Document architectural decisions with ADRs** â€” they save future teams from repeating mistakes and preserve the reasoning behind choices
+4. **Design for change** â€” identify what's most likely to change (business rules, third-party integrations, data sources) and isolate it behind interfaces
+5. **Monoliths are not anti-patterns** â€” many highly successful systems (Stack Overflow, Shopify, GitHub in early years) started as monoliths and never needed microservices
+6. **Test the architecture early** â€” performance, scalability, and fault tolerance should be validated with prototypes and load tests before committing
+7. **Use ATAM for critical decisions** â€” when choosing between fundamentally different architectures (e.g., monolith vs microservices), conduct a structured trade-off analysis
+8. **Hexagonal architecture for domain complexity** â€” when the system has complex business logic, ports-and-adapters decouples the domain from infrastructure, enabling testability and flexibility
 
 ## Chapter Quiz
 
@@ -1332,7 +1332,7 @@ Quality attribute scenarios provide a structured, measurable way to specify and 
 | Q1 | B | MVC supports multiple views (Views) of the same data (Model), making it ideal for interactive systems. |
 | Q2 | B | The repository becomes a bottleneck because all data access flows through a single point. |
 | Q3 | C | Without strict interface enforcement, layers bypass each other and become tightly coupled. |
-| Q4 | C | ADRs document decisions, context, and rationale — not implementation code. |
+| Q4 | C | ADRs document decisions, context, and rationale â€” not implementation code. |
 | Q5 | B | Blue-green deployment maintains two identical environments; switching traffic back is instant. |
 
 **Q1: Which architectural pattern is most appropriate for an interactive system that must support multiple views of the same data?**

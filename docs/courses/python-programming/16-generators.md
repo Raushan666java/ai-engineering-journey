@@ -1,4 +1,4 @@
-# Chapter 16: Generators and itertools
+﻿# Chapter 16: Generators and itertools
 
 
 > **Previous:** [Decorators](./15-decorators.md) | **Next:** [Exceptions and File I/O](./17-exceptions-files.md)
@@ -14,16 +14,16 @@ By the end of this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/16-generators/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/16-generators/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/16-generators/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/16-generators/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/16-generators/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/16-generators/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/16-generators/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/16-generators/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/16-generators/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/16-generators/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/16-generators/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/16-generators/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -37,7 +37,7 @@ By the end of this chapter, students will be able to:
 
 | Section | Topic | Key Concept |
 |---------|-------|-------------|
-|16.1 Generator Functions||Generators produce sequences lazily with `yield` — each call advances to the next yield.|
+|16.1 Generator Functions||Generators produce sequences lazily with `yield` â€” each call advances to the next yield.|
 |16.2 Generator Expressions||Generator expressions (`(x for x in items)`) are lazy alternatives to list comprehensions.|
 |16.3 Lazy Evaluation||Lazy evaluation saves memory by computing values on demand rather than storing them all.|
 |16.4 send(), throw(), and close()||`send()` enables two-way communication; `yield from` delegates to subgenerators.|
@@ -66,8 +66,8 @@ flowchart LR
 ```
 ## 16.1 Generator Functions
 
-> **One-Sentence Takeaway:** Generators produce sequences lazily with `yield` — each call advances to the next yield.
-> **Remember:** Generators are single-use — once exhausted, they raise StopIteration on further calls. Create a new generator for a fresh iteration.
+> **One-Sentence Takeaway:** Generators produce sequences lazily with `yield` â€” each call advances to the next yield.
+> **Remember:** Generators are single-use â€” once exhausted, they raise StopIteration on further calls. Create a new generator for a fresh iteration.
 
 
 
@@ -91,11 +91,11 @@ for num in counter:
 print()
 
 # Generators are single-use
-print(list(counter))  # [] → exhausted
+print(list(counter))  # [] â†’ exhausted
 ```
 
 Key differences from regular functions:
-- Calling a generator function returns a generator object → it does not execute the function.
+- Calling a generator function returns a generator object â†’ it does not execute the function.
 - Execution starts when the generator's `__next__()` is called.
 - `yield` suspends execution and returns a value.
 - The generator raises `StopIteration` when it completes.
@@ -108,12 +108,12 @@ Key differences from regular functions:
 Generator expressions are like list comprehensions but lazy:
 
 ```python
-# List comprehension → eager, creates full list
+# List comprehension â†’ eager, creates full list
 squares_list = [x ** 2 for x in range(10)]
 print(type(squares_list))   # <class 'list'>
 print(sum(squares_list))    # 285
 
-# Generator expression → lazy, produces values on demand
+# Generator expression â†’ lazy, produces values on demand
 squares_gen = (x ** 2 for x in range(10))
 print(type(squares_gen))    # <class 'generator'>
 print(sum(squares_gen))     # 285
@@ -290,11 +290,11 @@ from itertools import permutations, combinations, combinations_with_replacement,
 
 items = ["A", "B", "C"]
 
-# Permutations → order matters, without replacement
+# Permutations â†’ order matters, without replacement
 print(list(permutations(items, 2)))
 # [('A', 'B'), ('A', 'C'), ('B', 'A'), ('B', 'C'), ('C', 'A'), ('C', 'B')]
 
-# Combinations → order does not matter, without replacement
+# Combinations â†’ order does not matter, without replacement
 print(list(combinations(items, 2)))
 # [('A', 'B'), ('A', 'C'), ('B', 'C')]
 
@@ -339,17 +339,17 @@ print(list(chain([1, 2], [3, 4], [5])))  # [1, 2, 3, 4, 5]
 a, b = [1, 2, 3], [10, 20]
 print(list(zip_longest(a, b, fillvalue=0)))  # [(1, 10), (2, 20), (3, 0)]
 
-# islice → lazy slicing
+# islice â†’ lazy slicing
 print(list(islice(range(100), 10)))  # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 print(list(islice(range(100), 5, 15, 2)))  # [5, 7, 9, 11, 13]
 
-# takewhile → take while condition is true
+# takewhile â†’ take while condition is true
 print(list(takewhile(lambda x: x < 5, [1, 3, 7, 2, 9])))  # [1, 3]
 
-# dropwhile → drop while condition is true, then yield all
+# dropwhile â†’ drop while condition is true, then yield all
 print(list(dropwhile(lambda x: x < 5, [1, 3, 7, 2, 9])))  # [7, 2, 9]
 
-# accumulate → running total (or other binary function)
+# accumulate â†’ running total (or other binary function)
 print(list(accumulate([1, 2, 3, 4, 5])))  # [1, 3, 6, 10, 15]
 import operator
 print(list(accumulate([1, 2, 3, 4, 5], operator.mul)))  # [1, 2, 6, 24, 120]
@@ -629,7 +629,7 @@ print(sm.send("stop"))        # stopped
 | Parallel processing | `concurrent.futures` | Generators are single-threaded |
 ```typescript
 // Chapter 16: TypeScript Generator Equivalents
-// Python: generator with yield → TypeScript: function* with yield
+// Python: generator with yield â†’ TypeScript: function* with yield
 function* fibonacci(): Generator<number, void, unknown> {
   let a = 0, b = 1;
   while (true) {
@@ -653,14 +653,14 @@ function* range(start: number, end: number): Generator<number> {
 const doubled = Array.from(range(0, 5), (x) => x * 2);
 console.log(doubled);  // [0, 2, 4, 6, 8]
 
-// Python: yield from → TypeScript: yield* (delegation)
+// Python: yield from â†’ TypeScript: yield* (delegation)
 function* concat<T>(...iters: Iterable<T>[]): Generator<T> {
   for (const iter of iters) yield* iter;
 }
 const combined = Array.from(concat([1, 2], [3, 4]));
 console.log(combined);  // [1, 2, 3, 4]
 
-// Python: itertools.islice → TypeScript: take from generator
+// Python: itertools.islice â†’ TypeScript: take from generator
 function* take<T>(gen: Generator<T>, count: number): Generator<T> {
   for (let i = 0; i < count; i++) {
     const next = gen.next();
@@ -684,7 +684,7 @@ function* accumulator(): Generator<number, void, number> {
 ### TypeScript Iterable & Iterator Protocol
 
 ```typescript
-// Python: custom iterator via __iter__/__next__ → TypeScript: Symbol.iterator
+// Python: custom iterator via __iter__/__next__ â†’ TypeScript: Symbol.iterator
 class CountDown implements Iterable<number> {
   constructor(private start: number) {}
   [Symbol.iterator](): Iterator<number> {
@@ -701,11 +701,11 @@ for (const n of new CountDown(3)) {
   console.log(n);  // 3, 2, 1, 0
 }
 
-// Python: itertools.chain → TypeScript: spread or flat
+// Python: itertools.chain â†’ TypeScript: spread or flat
 const combined2 = [...[1, 2], ...[3, 4]];  // [1, 2, 3, 4]
 // Python: list(itertools.chain([1, 2], [3, 4]))
 
-// Python: itertools.cycle → TypeScript: generator
+// Python: itertools.cycle â†’ TypeScript: generator
 function* cycle<T>(items: T[]): Generator<T> {
   while (true) {
     for (const item of items) yield item;
@@ -717,7 +717,7 @@ console.log(colors.next().value);  // green
 console.log(colors.next().value);  // blue
 console.log(colors.next().value);  // red (wraps around)
 
-// Python: itertools.accumulate → TypeScript: scan
+// Python: itertools.accumulate â†’ TypeScript: scan
 function* accumulate(iter: number[]): Generator<number> {
   let sum = 0;
   for (const n of iter) {
@@ -727,7 +727,7 @@ function* accumulate(iter: number[]): Generator<number> {
 }
 console.log(Array.from(accumulate([1, 2, 3, 4])));  // [1, 3, 6, 10]
 
-// Python: itertools.permutations → TypeScript: recursive generator
+// Python: itertools.permutations â†’ TypeScript: recursive generator
 function* permutations<T>(items: T[]): Generator<T[]> {
   if (items.length <= 1) { yield items; return; }
   for (let i = 0; i < items.length; i++) {

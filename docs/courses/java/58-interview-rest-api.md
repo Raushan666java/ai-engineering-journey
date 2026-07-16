@@ -1,4 +1,4 @@
-# REST API Interview Q&A
+﻿# REST API Interview Q&A
 
 > **Previous:** [Spring Framework Interview Q&amp;A](./57-interview-spring.md) | **Next:** [Databases Interview Q&amp;A](./59-interview-databases.md)
 
@@ -10,16 +10,16 @@ This chapter covers 25 essential REST API interview questions from REST constrai
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/58-interview-rest-api/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/58-interview-rest-api/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/58-interview-rest-api/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/58-interview-rest-api/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/58-interview-rest-api/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/58-interview-rest-api/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/58-interview-rest-api/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/58-interview-rest-api/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/58-interview-rest-api/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/58-interview-rest-api/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/58-interview-rest-api/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/58-interview-rest-api/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -118,7 +118,7 @@ GET /api/orders
 Authorization: Bearer eyJhbGciOiJIUzI1NiIs...
 */
 
-// Stateless filter → extracts user from token on every request
+// Stateless filter â†’ extracts user from token on every request
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import java.io.IOException;
@@ -197,7 +197,7 @@ Rarely used in modern REST APIs (more common in web apps).
 // === REST constraint violations ===
 /*
 Violation                      Example                      Fix
-────────────────────────────────────────────────────────────────────
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Not stateless                 Storing auth in session      Use JWT tokens
 Not uniform interface         /api/getOrder?id=123         GET /api/orders/123
 Not cacheable                 No Cache-Control headers     Add caching headers
@@ -205,7 +205,7 @@ Ignoring layered system       Direct DB access from web    Service layer + proxy
 */
 ```
 
-REST constraints create loosely coupled, evolvable systems. The uniform interface constraint is the most impactful → it standardizes how clients interact with resources. Statelessness enables horizontal scaling but requires token-based auth on every request. Cacheability dramatically improves performance for read-heavy APIs.
+REST constraints create loosely coupled, evolvable systems. The uniform interface constraint is the most impactful â†’ it standardizes how clients interact with resources. Statelessness enables horizontal scaling but requires token-based auth on every request. Cacheability dramatically improves performance for read-heavy APIs.
 
 ### Q2: What is the difference between POST and PUT? When should you use PATCH?
 
@@ -249,7 +249,7 @@ Returns 200 OK (or 201 if created at that URL).
 @PutMapping("/api/orders/{id}")
 public ResponseEntity<Order> replaceOrder(@PathVariable Long id,
                                           @Valid @RequestBody ReplaceOrderRequest request) {
-    // idempotent → calling this 5 times with same body = same result
+    // idempotent â†’ calling this 5 times with same body = same result
     Order order = orderService.findById(id)
         .orElse(new Order());
 
@@ -257,7 +257,7 @@ public ResponseEntity<Order> replaceOrder(@PathVariable Long id,
     order.setItems(request.items());
     order.setTotal(request.total());
 
-    // PUT replaces ALL fields → missing fields become null/default
+    // PUT replaces ALL fields â†’ missing fields become null/default
     Order saved = orderService.save(order);
     return ResponseEntity.ok(saved);
 }
@@ -267,19 +267,19 @@ public ResponseEntity<Order> replaceOrder(@PathVariable Long id,
 PUT /api/orders/456           PUT /api/orders/456
 {"customerId": 123,           {"customerId": 123,
  "total": 99.99}               "total": 99.99}
-                               → Same result both times
+                               â†’ Same result both times
 
 BUT:
 PUT /api/orders/456           PUT /api/orders/456
 {"total": 99.99}              {"total": 99.99, "customerId": 123
-                              → DIFFERENT → "customerId" is now null
+                              â†’ DIFFERENT â†’ "customerId" is now null
                                  (because PUT replaces the whole resource)
 */
 
 // === PATCH: Partial update (may be non-idempotent) ===
 /*
 PATCH with JSON Patch (RFC 6902) or Merge Patch (RFC 7396).
-Merge Patch is simpler → send only the fields you want to change.
+Merge Patch is simpler â†’ send only the fields you want to change.
 */
 
 @PatchMapping("/api/orders/{id}")
@@ -307,7 +307,7 @@ public ResponseEntity<Order> partialUpdateOrder(
 // PATCH /api/orders/456     Only "status" field changes
 // {"status": "SHIPPED"}     All other fields remain as-is
 
-// === JSON Patch (RFC 6902) → more expressive ===
+// === JSON Patch (RFC 6902) â†’ more expressive ===
 /*
 PATCH /api/orders/456
 Content-Type: application/json-patch+json
@@ -324,7 +324,7 @@ Content-Type: application/json-patch+json
 // === Summary ===
 /*
 Method   Idempotent  Safe   Use Case                Response
-──────────────────────────────────────────────────────────────
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 GET      Yes         Yes    Retrieve resource       200 OK
 POST     No          No     Create (unknown URL)    201 Created
 PUT      Yes         No     Replace entire resource 200 OK / 201
@@ -337,7 +337,7 @@ OPTIONS  Yes         Yes    Allowed methods         200 OK
 
 POST creates, PUT replaces fully, PATCH updates partially. The idempotency guarantee of PUT makes it safe for retry logic. For PATCH, use JSON Merge Patch for simple cases and JSON Patch (RFC 6902) for complex operations. Always include idempotency keys for POST operations that trigger payments or critical actions.
 
-### Q3: HTTP status codes → how do you choose the right ones?
+### Q3: HTTP status codes â†’ how do you choose the right ones?
 
 
 **Answer:** HTTP status codes communicate the result of a request. 2xx for success, 3xx for redirection, 4xx for client errors, 5xx for server errors. Choosing correctly is critical for API usability and proper client behavior. Common pattern: 200 for GET success, 201 for creation, 204 for deletion, 400 for bad input, 401/403 for auth issues, 404 for not found, 409 for conflicts, 422 for validation errors, 429 for rate limiting, 500 for unexpected errors.
@@ -345,7 +345,7 @@ POST creates, PUT replaces fully, PATCH updates partially. The idempotency guara
 ```java
 // === 2xx Success codes ===
 
-// 200 OK → Standard success for GET, PUT, PATCH
+// 200 OK â†’ Standard success for GET, PUT, PATCH
 @GetMapping("/api/orders/{id}")
 public ResponseEntity<Order> getOrder(@PathVariable Long id) {
     return orderService.findById(id)
@@ -355,7 +355,7 @@ public ResponseEntity<Order> getOrder(@PathVariable Long id) {
         .orElse(ResponseEntity.notFound().build());
 }
 
-// 201 Created → After successful resource creation (POST)
+// 201 Created â†’ After successful resource creation (POST)
 @PostMapping("/api/orders")
 public ResponseEntity<Order> createOrder(@RequestBody Order order) {
     Order saved = orderService.save(order);
@@ -364,7 +364,7 @@ public ResponseEntity<Order> createOrder(@RequestBody Order order) {
         .body(saved);
 }
 
-// 202 Accepted → Request accepted but processing not complete (async)
+// 202 Accepted â†’ Request accepted but processing not complete (async)
 @PostMapping("/api/reports")
 public ResponseEntity<ReportStatus> requestReport(@RequestBody ReportRequest request) {
     String reportId = reportService.scheduleReport(request);
@@ -374,7 +374,7 @@ public ResponseEntity<ReportStatus> requestReport(@RequestBody ReportRequest req
             URI.create("/api/reports/" + reportId + "/status")));
 }
 
-// 204 No Content → Successful delete or update with no response body
+// 204 No Content â†’ Successful delete or update with no response body
 @DeleteMapping("/api/orders/{id}")
 public ResponseEntity<Void> deleteOrder(@PathVariable Long id) {
     orderService.delete(id);
@@ -383,7 +383,7 @@ public ResponseEntity<Void> deleteOrder(@PathVariable Long id) {
 
 // === 3xx Redirection ===
 
-// 301 Moved Permanently → Resource has new permanent URL
+// 301 Moved Permanently â†’ Resource has new permanent URL
 @GetMapping("/api/old-orders/{id}")
 public ResponseEntity<Void> redirectPermanent(@PathVariable Long id) {
     return ResponseEntity.status(HttpStatus.MOVED_PERMANENTLY)
@@ -391,7 +391,7 @@ public ResponseEntity<Void> redirectPermanent(@PathVariable Long id) {
         .build();
 }
 
-// 303 See Other → Redirect to status resource (after POST)
+// 303 See Other â†’ Redirect to status resource (after POST)
 @PostMapping("/api/orders/async")
 public ResponseEntity<Void> createOrderAsync(@RequestBody Order order) {
     String jobId = orderService.startAsyncCreation(order);
@@ -400,7 +400,7 @@ public ResponseEntity<Void> createOrderAsync(@RequestBody Order order) {
         .build();
 }
 
-// 304 Not Modified → Cached resource still valid (ETag)
+// 304 Not Modified â†’ Cached resource still valid (ETag)
 @GetMapping("/api/orders/{id}")
 public ResponseEntity<Order> getOrderConditional(
         @PathVariable Long id,
@@ -422,7 +422,7 @@ public ResponseEntity<Order> getOrderConditional(
 
 // === 4xx Client errors ===
 
-// 400 Bad Request → Malformed request syntax
+// 400 Bad Request â†’ Malformed request syntax
 @ExceptionHandler(MethodArgumentNotValidException.class)
 public ResponseEntity<ProblemDetail> handleValidation(MethodArgumentNotValidException ex) {
     ProblemDetail pd = ProblemDetail.forStatus(HttpStatus.BAD_REQUEST);
@@ -437,7 +437,7 @@ public ResponseEntity<ProblemDetail> handleValidation(MethodArgumentNotValidExce
     return ResponseEntity.badRequest().body(pd);
 }
 
-// 401 Unauthorized → Missing or invalid authentication
+// 401 Unauthorized â†’ Missing or invalid authentication
 @ExceptionHandler(AuthenticationException.class)
 public ResponseEntity<ProblemDetail> handleUnauthorized(AuthenticationException ex) {
     ProblemDetail pd = ProblemDetail.forStatusAndDetail(
@@ -448,7 +448,7 @@ public ResponseEntity<ProblemDetail> handleUnauthorized(AuthenticationException 
         .body(pd);
 }
 
-// 403 Forbidden → Authenticated but not authorized
+// 403 Forbidden â†’ Authenticated but not authorized
 @ExceptionHandler(AccessDeniedException.class)
 public ResponseEntity<ProblemDetail> handleForbidden(AccessDeniedException ex) {
     ProblemDetail pd = ProblemDetail.forStatusAndDetail(
@@ -457,7 +457,7 @@ public ResponseEntity<ProblemDetail> handleForbidden(AccessDeniedException ex) {
     return ResponseEntity.status(HttpStatus.FORBIDDEN).body(pd);
 }
 
-// 404 Not Found → Resource doesn't exist
+// 404 Not Found â†’ Resource doesn't exist
 @ExceptionHandler(ResourceNotFoundException.class)
 public ResponseEntity<ProblemDetail> handleNotFound(ResourceNotFoundException ex) {
     ProblemDetail pd = ProblemDetail.forStatusAndDetail(
@@ -467,10 +467,10 @@ public ResponseEntity<ProblemDetail> handleNotFound(ResourceNotFoundException ex
     return ResponseEntity.status(HttpStatus.NOT_FOUND).body(pd);
 }
 
-// 405 Method Not Allowed → Wrong HTTP method
+// 405 Method Not Allowed â†’ Wrong HTTP method
 // Spring Boot returns this automatically when no mapping exists
 
-// 409 Conflict → Resource state conflicts with request
+// 409 Conflict â†’ Resource state conflicts with request
 @ExceptionHandler(ConcurrentModificationException.class)
 public ResponseEntity<ProblemDetail> handleConflict(RuntimeException ex) {
     ProblemDetail pd = ProblemDetail.forStatusAndDetail(
@@ -479,7 +479,7 @@ public ResponseEntity<ProblemDetail> handleConflict(RuntimeException ex) {
     return ResponseEntity.status(HttpStatus.CONFLICT).body(pd);
 }
 
-// 410 Gone → Resource was intentionally removed (different from 404)
+// 410 Gone â†’ Resource was intentionally removed (different from 404)
 @GetMapping("/api/orders/v1/{id}")
 public ResponseEntity<Void> orderDeprecated(@PathVariable Long id) {
     return ResponseEntity.status(HttpStatus.GONE)
@@ -487,10 +487,10 @@ public ResponseEntity<Void> orderDeprecated(@PathVariable Long id) {
         .build();
 }
 
-// 415 Unsupported Media Type → Wrong Content-Type
+// 415 Unsupported Media Type â†’ Wrong Content-Type
 // Spring Boot returns this automatically when consumes doesn't match
 
-// 422 Unprocessable Entity → Semantic validation error
+// 422 Unprocessable Entity â†’ Semantic validation error
 @ExceptionHandler(BusinessValidationException.class)
 public ResponseEntity<ProblemDetail> handleUnprocessable(BusinessValidationException ex) {
     ProblemDetail pd = ProblemDetail.forStatusAndDetail(
@@ -500,7 +500,7 @@ public ResponseEntity<ProblemDetail> handleUnprocessable(BusinessValidationExcep
     return ResponseEntity.status(HttpStatus.UNPROCESSABLE_ENTITY).body(pd);
 }
 
-// 429 Too Many Requests → Rate limit exceeded
+// 429 Too Many Requests â†’ Rate limit exceeded
 @Component
 class RateLimitFilter implements Filter {
     @Override
@@ -523,7 +523,7 @@ class RateLimitFilter implements Filter {
 
 // === 5xx Server errors ===
 
-// 500 Internal Server Error → Unexpected server failure
+// 500 Internal Server Error â†’ Unexpected server failure
 @ExceptionHandler(Exception.class)
 public ResponseEntity<ProblemDetail> handleUnexpected(Exception ex) {
     // Log full error internally but return generic message
@@ -534,40 +534,40 @@ public ResponseEntity<ProblemDetail> handleUnexpected(Exception ex) {
     return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(pd);
 }
 
-// 502 Bad Gateway → Upstream service returned error
-// 503 Service Unavailable → Server temporarily overloaded
-// 504 Gateway Timeout → Upstream service timed out
+// 502 Bad Gateway â†’ Upstream service returned error
+// 503 Service Unavailable â†’ Server temporarily overloaded
+// 504 Gateway Timeout â†’ Upstream service timed out
 
 // === Status code decision flow ===
 /*
 Request received
-├─ Parse error?                         → 400 Bad Request
-├─ Authentication missing/invalid?       → 401 Unauthorized
-├─ Authenticated but forbidden?          → 403 Forbidden
-├─ Resource doesn't exist?               → 404 Not Found
-├─ Method not allowed?                   → 405 Method Not Allowed
-├─ Content-Type unsupported?             → 415 Unsupported Media Type
-├─ Validation error (semantic)?          → 422 Unprocessable Entity
-├─ Concurrent modification?              → 409 Conflict
-├─ Rate limited?                         → 429 Too Many Requests
-├─ Request succeeds
-│  ├─ GET / HEAD → 200 OK
-│  ├─ POST (created) → 201 Created
-│  ├─ PUT / PATCH (updated) → 200 OK
-│  ├─ DELETE (no body) → 204 No Content
-│  └─ Async accepted → 202 Accepted
-└─ Server error?                         → 500 Internal Server Error
+â”œâ”€ Parse error?                         â†’ 400 Bad Request
+â”œâ”€ Authentication missing/invalid?       â†’ 401 Unauthorized
+â”œâ”€ Authenticated but forbidden?          â†’ 403 Forbidden
+â”œâ”€ Resource doesn't exist?               â†’ 404 Not Found
+â”œâ”€ Method not allowed?                   â†’ 405 Method Not Allowed
+â”œâ”€ Content-Type unsupported?             â†’ 415 Unsupported Media Type
+â”œâ”€ Validation error (semantic)?          â†’ 422 Unprocessable Entity
+â”œâ”€ Concurrent modification?              â†’ 409 Conflict
+â”œâ”€ Rate limited?                         â†’ 429 Too Many Requests
+â”œâ”€ Request succeeds
+â”‚  â”œâ”€ GET / HEAD â†’ 200 OK
+â”‚  â”œâ”€ POST (created) â†’ 201 Created
+â”‚  â”œâ”€ PUT / PATCH (updated) â†’ 200 OK
+â”‚  â”œâ”€ DELETE (no body) â†’ 204 No Content
+â”‚  â””â”€ Async accepted â†’ 202 Accepted
+â””â”€ Server error?                         â†’ 500 Internal Server Error
 */
 ```
 
-Choose status codes to enable correct client behavior without inspecting the response body. Use 201 for creation, 202 for async acceptance, 204 for successful empty responses, 400 for bad syntax, 422 for bad semantics, 409 for conflicts, 429 for rate limits. Never expose 5xx details to clients → log internally, return generic messages.
-### Q4: RESTful URL design → what are the best practices?
+Choose status codes to enable correct client behavior without inspecting the response body. Use 201 for creation, 202 for async acceptance, 204 for successful empty responses, 400 for bad syntax, 422 for bad semantics, 409 for conflicts, 429 for rate limits. Never expose 5xx details to clients â†’ log internally, return generic messages.
+### Q4: RESTful URL design â†’ what are the best practices?
 
 
 **Answer:** Good REST URLs use nouns (not verbs), plural collection names, hierarchical paths for sub-resources, query parameters for filtering/sorting/pagination, and avoid deep nesting (max 2-3 levels). URLs should represent resources, not actions. Use kebab-case for multi-word resources.
 
 ```java
-// === âœ… GOOD URL design ===
+// === Ã¢Å“â€¦ GOOD URL design ===
 /*
 Collection:        GET    /api/orders
 Single item:       GET    /api/orders/{id}
@@ -581,19 +581,19 @@ Field selection:   GET    /api/orders?fields=id,status,total
 Search:            GET    /api/orders/search?q=keyword
 */
 
-// === âŒ BAD URL design ===
+// === Ã¢ÂÅ’ BAD URL design ===
 /*
-getAllOrders        → GET    /api/getAllOrders           (verb in URL)
-getOrder            → GET    /api/getOrder?id=123        (verb + query param)
-createOrder         → POST   /api/createOrder            (verb in URL)
-updateOrder         → PUT    /api/updateOrder            (verb in URL)
-deleteOrder         → GET    /api/deleteOrder?id=123     (wrong method + verb)
-Orders              → GET    /api/Orders                 (capital letter)
-order-service       → GET    /api/order-service          (kebab is OK, but misleading)
-allOrdersCamelCase  → GET    /api/allOrdersCamelCase     (camelCase in URLs)
-api/orders/list     → GET    /api/orders/list            (redundant nesting)
-api/orders/detail   → GET    /api/orders/detail          (redundant nesting)
-api/orders/customer → GET    /api/orders/customer/123/orders  (deep nesting)
+getAllOrders        â†’ GET    /api/getAllOrders           (verb in URL)
+getOrder            â†’ GET    /api/getOrder?id=123        (verb + query param)
+createOrder         â†’ POST   /api/createOrder            (verb in URL)
+updateOrder         â†’ PUT    /api/updateOrder            (verb in URL)
+deleteOrder         â†’ GET    /api/deleteOrder?id=123     (wrong method + verb)
+Orders              â†’ GET    /api/Orders                 (capital letter)
+order-service       â†’ GET    /api/order-service          (kebab is OK, but misleading)
+allOrdersCamelCase  â†’ GET    /api/allOrdersCamelCase     (camelCase in URLs)
+api/orders/list     â†’ GET    /api/orders/list            (redundant nesting)
+api/orders/detail   â†’ GET    /api/orders/detail          (redundant nesting)
+api/orders/customer â†’ GET    /api/orders/customer/123/orders  (deep nesting)
 */
 
 // === Controller implementing good URL design ===
@@ -616,7 +616,7 @@ class OrderApiController {
         this.paymentService = paymentService;
     }
 
-    // GET /api/orders → collection with filtering, sorting, pagination
+    // GET /api/orders â†’ collection with filtering, sorting, pagination
     @GetMapping
     public PagedModel<OrderSummary> listOrders(
             @RequestParam(required = false) String status,
@@ -629,25 +629,25 @@ class OrderApiController {
         return orderService.findAll(status, customerId, pageable);
     }
 
-    // GET /api/orders/{id} → single resource
+    // GET /api/orders/{id} â†’ single resource
     @GetMapping("/{id}")
     public Order getOrder(@PathVariable Long id) {
         return orderService.findById(id);
     }
 
-    // GET /api/orders/{id}/items → sub-resource collection
+    // GET /api/orders/{id}/items â†’ sub-resource collection
     @GetMapping("/{id}/items")
     public List<OrderItem> getOrderItems(@PathVariable Long id) {
         return itemService.findByOrderId(id);
     }
 
-    // GET /api/orders/{id}/items/{itemId} → single sub-resource
+    // GET /api/orders/{id}/items/{itemId} â†’ single sub-resource
     @GetMapping("/{id}/items/{itemId}")
     public OrderItem getOrderItem(@PathVariable Long id, @PathVariable Long itemId) {
         return itemService.findByOrderIdAndItemId(id, itemId);
     }
 
-    // GET /api/orders/search → dedicated search endpoint
+    // GET /api/orders/search â†’ dedicated search endpoint
     @GetMapping("/search")
     public List<Order> searchOrders(@RequestParam String q,
                                     @RequestParam(defaultValue = "0") int page) {
@@ -671,7 +671,7 @@ class OrderApiController {
 // === Naming conventions ===
 /*
 Concept             Good                  Bad
-────────────────────────────────────────────────────
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Collection          /api/orders           /api/OrdersList
 Single resource     /api/orders/123       /api/order?id=123
 Sub-resource        /api/orders/123/items /api/getOrderItems?orderId=123
@@ -690,12 +690,12 @@ Resource naming rules:
 3. Use query params for filtering/sorting: ?status=SHIPPED
 4. Keep hierarchies shallow: /api/customers/123/orders (not /api/.../.../...)
 5. Use verbs only for non-CRUD actions: /api/orders/123/cancel
-6. Never use file extensions: /api/orders/123.json → /api/orders/123 (use Accept header)
+6. Never use file extensions: /api/orders/123.json â†’ /api/orders/123 (use Accept header)
 */
 ```
 
-Good URLs are self-documenting and consistent. Use plural nouns for collections, path parameters for identities, query parameters for filtering. Keep nesting to 2-3 levels max → deeper hierarchies suggest poor resource modeling. Use actions as sub-resources (e.g., /api/orders/123/cancel) only for operations that don't map to standard CRUD.
-### Q5: REST API versioning → what strategies exist?
+Good URLs are self-documenting and consistent. Use plural nouns for collections, path parameters for identities, query parameters for filtering. Keep nesting to 2-3 levels max â†’ deeper hierarchies suggest poor resource modeling. Use actions as sub-resources (e.g., /api/orders/123/cancel) only for operations that don't map to standard CRUD.
+### Q5: REST API versioning â†’ what strategies exist?
 
 
 **Answer:** Four main API versioning strategies: URI path versioning (/v1/orders), query parameter (?v=1), custom header (Accept: application/vnd.company.v1+json), and content negotiation (Accept header media type versioning). URI versioning is most common for public APIs. Content negotiation is most RESTful but harder to consume.
@@ -799,7 +799,7 @@ public List<OrderV2> listOrdersV2() {
 // === Versioning strategy comparison ===
 /*
 Strategy           URI Path     Query Param   Custom Header   Accept Header
-───────────────────────────────────────────────────────────────────────────────
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Caching            Good         Poor          Good            Good
 Browser testing    Easy         Easy          Hard            Hard
 RESTful purity     Low          Low           Medium          High
@@ -862,7 +862,7 @@ Migration approach:
 */
 ```
 
-URI path versioning is the most practical choice for public APIs → it's explicit, easy to route, cache-friendly, and simple for clients. Content negotiation is theoretically more RESTful but adds client complexity. Always provide deprecation headers and migration guides when retiring versions.
+URI path versioning is the most practical choice for public APIs â†’ it's explicit, easy to route, cache-friendly, and simple for clients. Content negotiation is theoretically more RESTful but adds client complexity. Always provide deprecation headers and migration guides when retiring versions.
 ### Q6: How do you implement pagination, sorting, and filtering?
 
 
@@ -899,7 +899,7 @@ class OrderPaginationController {
         return new PagedModel<>(result);
     }
 
-    // Safe sort parser → only allows known fields
+    // Safe sort parser â†’ only allows known fields
     private List<Sort.Order> parseSortParams(String sortParam) {
         Set<String> allowedFields = Set.of(
             "id", "createdAt", "total", "status", "customerName");
@@ -936,7 +936,7 @@ class OrderPaginationController {
 // === 2. Cursor-based pagination (keyset pagination) ===
 /*
 Better for real-time data (new items inserted frequently).
-Uses a WHERE clause instead of OFFSET → O(1) not O(n).
+Uses a WHERE clause instead of OFFSET â†’ O(1) not O(n).
 */
 
 @GetMapping("/api/events")
@@ -947,7 +947,7 @@ public List<Event> listEvents(
     limit = Math.min(limit, 100);
 
     if (cursor == null) {
-        // First page → get most recent
+        // First page â†’ get most recent
         return eventRepository.findFirstByOrderByIdDesc(
             PageRequest.of(0, limit));
     } else {
@@ -1103,11 +1103,11 @@ class OrderSearchCriteria {
 // === 4. Pagination types comparison ===
 /*
 Feature            Offset-based           Cursor-based
-─────────────────────────────────────────────────────────
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Performance        O(n) for large OFFSET  O(1) always
 Consistency        Page numbers shift     Stable (items don't move)
                     when new items added
-Real-time data     Poor → pages drift     Excellent
+Real-time data     Poor â†’ pages drift     Excellent
 Back/forward nav   Easy (page numbers)    Harder (cursor needed)
 Random access      Yes (page #150)        No (must iterate)
 Use case           Admin panels,          Infinite scroll,
@@ -1371,7 +1371,7 @@ void testValidationReturnsFieldErrors() throws Exception {
 // === Common error response formats compared ===
 /*
 Format               Example                                RFC
-──────────────────────────────────────────────────────────────────
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Problem Details      {type, title, status, detail,          RFC 7807
 (RFC 7807)            instance, properties}
 
@@ -1392,7 +1392,7 @@ RFC 7807 Problem Details provides a consistent, extensible error format across y
 ### Q8: How do you implement content negotiation in a REST API?
 
 
-**Answer:** Content negotiation lets clients choose response format (JSON, XML, CSV) via the Accept header and specify request format via Content-Type. Spring Boot auto-negotiates based on Accept header and registered HttpMessageConverters. You can also use URL suffixes (.json, .xml) or query parameters. Always use Accept header → that's what HTTP designed.
+**Answer:** Content negotiation lets clients choose response format (JSON, XML, CSV) via the Accept header and specify request format via Content-Type. Spring Boot auto-negotiates based on Accept header and registered HttpMessageConverters. You can also use URL suffixes (.json, .xml) or query parameters. Always use Accept header â†’ that's what HTTP designed.
 
 ```java
 // === 1. Content negotiation via Accept header (standard) ===
@@ -1494,7 +1494,7 @@ class OrderContentNegotiationController {
 // === 4. Custom serialization per version ===
 import com.fasterxml.jackson.annotation.*;
 
-// V1 serialization → flat fields
+// V1 serialization â†’ flat fields
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
 class OrderV1Representation {
@@ -1512,7 +1512,7 @@ class OrderV1Representation {
     // getters...
 }
 
-// V2 serialization → nested objects
+// V2 serialization â†’ nested objects
 @JsonInclude(JsonInclude.Include.NON_NULL)
 class OrderV2Representation {
     private Long id;
@@ -1615,7 +1615,7 @@ spring:
 ```
 
 Content negotiation decouples resource representation from resource identity. Always use the Accept header. Support JSON as minimum; add XML for enterprise clients. Use versioned media types (application/vnd.company.v1+json) for API versioning. Return 406 for unsupported formats.
-### Q9: CORS → what is it and how do you configure it?
+### Q9: CORS â†’ what is it and how do you configure it?
 
 
 **Answer:** CORS (Cross-Origin Resource Sharing) controls which origins can access your API from browser-based applications. Browsers enforce same-origin policy by default. CORS headers (Access-Control-Allow-Origin, Allow-Methods, Allow-Headers) tell the browser which cross-origin requests are permitted. Spring Boot provides @CrossOrigin annotation and WebMvcConfigurer for global configuration.
@@ -1651,7 +1651,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 @RequestMapping("/api/public")
 @CrossOrigin(origins = "*", maxAge = 3600)
 class PublicApiController {
-    // All origins allowed → for public APIs
+    // All origins allowed â†’ for public APIs
 }
 
 @RestController
@@ -1669,20 +1669,20 @@ class CorsPathSpecificConfig implements WebMvcConfigurer {
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        // Public API → open to all
+        // Public API â†’ open to all
         registry.addMapping("/api/public/**")
             .allowedOrigins("*")
             .allowedMethods("GET")
             .allowedHeaders("*");
 
-        // Partner API → specific origins
+        // Partner API â†’ specific origins
         registry.addMapping("/api/partners/**")
             .allowedOrigins("https://partner1.com", "https://partner2.com")
             .allowedMethods("GET", "POST")
             .allowedHeaders("Authorization", "Content-Type")
             .maxAge(1800);
 
-        // Internal API → company domains only
+        // Internal API â†’ company domains only
         registry.addMapping("/api/internal/**")
             .allowedOrigins("https://app.company.com", "https://admin.company.com")
             .allowedMethods("*")  // All methods
@@ -1690,7 +1690,7 @@ class CorsPathSpecificConfig implements WebMvcConfigurer {
             .allowCredentials(true)
             .maxAge(3600);
 
-        // Admin API → additional restrictions
+        // Admin API â†’ additional restrictions
         registry.addMapping("/api/admin/**")
             .allowedOrigins("https://admin.company.com")
             .allowedMethods("GET", "POST", "PUT", "DELETE")
@@ -1820,18 +1820,18 @@ class SecurityConfig {
 // === 8. CORS best practices ===
 /*
 1. Never use allowedOrigins("*") with allowCredentials(true)
-   → this is forbidden by browsers and returns an error
+   â†’ this is forbidden by browsers and returns an error
 
 2. Keep allowed origins specific to your deployed domains
-   → Don't allow localhost in production
-   → Use environment-specific configuration:
+   â†’ Don't allow localhost in production
+   â†’ Use environment-specific configuration:
      @Value("${app.cors.allowed-origins}")
 
 3. Cache preflight responses with maxAge for performance
-   → 3600 seconds (1 hour) is a good default
+   â†’ 3600 seconds (1 hour) is a good default
 
 4. Expose custom response headers via exposedHeaders
-   → ETag, Link, X-RateLimit-*, X-Request-Id
+   â†’ ETag, Link, X-RateLimit-*, X-Request-Id
 
 5. Test CORS with curl:
    curl -H "Origin: https://evil.com" -H "Access-Control-Request-Method: GET" \
@@ -2068,7 +2068,7 @@ application/vnd.siren+json:
 // === 5. Real-world HATEOAS tradeoffs ===
 /*
 Arguments FOR HATEOAS:
-1. Clients discover endpoints dynamically → no hardcoded URLs
+1. Clients discover endpoints dynamically â†’ no hardcoded URLs
 2. API evolution without breaking clients (move URLs, change structure)
 3. Self-documenting responses show what's possible
 4. Reduces client-side state machines (server tells what's next)
@@ -2094,7 +2094,7 @@ When to skip HATEOAS:
 - Simple CRUD APIs
 
 // Minimal HATEOAS for real projects:
-// Just self links and pagination links → skip action links
+// Just self links and pagination links â†’ skip action links
 @GetMapping("/{id}")
 public EntityModel<Order> getOrderMinimal(@PathVariable Long id) {
     Order order = orderService.findById(id);
@@ -2109,7 +2109,7 @@ HATEOAS is a REST maturity level L3 concept. Most real APIs provide minimal hype
 ### Q11: How do you secure a REST API with authentication?
 
 
-**Answer:** REST APIs use stateless authentication → every request carries credentials. Common approaches: Basic Auth (simple, insecure alone), Bearer tokens (JWT), API keys (server-to-server), and OAuth2 (delegated auth). Spring Security + JWT is the standard pattern. Never use session-based auth (cookies) for REST APIs → it's stateful and breaks scaling.
+**Answer:** REST APIs use stateless authentication â†’ every request carries credentials. Common approaches: Basic Auth (simple, insecure alone), Bearer tokens (JWT), API keys (server-to-server), and OAuth2 (delegated auth). Spring Security + JWT is the standard pattern. Never use session-based auth (cookies) for REST APIs â†’ it's stateful and breaks scaling.
 
 ```java
 // === 1. Basic Authentication (simple but less secure) ===
@@ -2451,7 +2451,7 @@ void testMissingToken() throws Exception {
 
 // === 6. Authentication best practices ===
 /*
-1. Always use HTTPS → never send tokens over HTTP
+1. Always use HTTPS â†’ never send tokens over HTTP
 2. Keep tokens short-lived (15-60 minutes)
 3. Use refresh tokens for longer sessions
 4. Store tokens securely (httpOnly cookies for web, secure storage for mobile)
@@ -2474,7 +2474,7 @@ JWT Bearer tokens in the Authorization header are the standard for REST API auth
 ### Q12: How do you implement rate limiting in a REST API?
 
 
-**Answer:** Rate limiting protects your API from abuse and ensures fair usage. Common strategies: token bucket (burst traffic), leaking bucket (smoothing), fixed window (simple, boundary issue), sliding window (accurate). Spring Boot doesn't have built-in rate limiting → implement with interceptors, Bucket4j library, or API gateway. Always return 429 Too Many Requests with Retry-After header.
+**Answer:** Rate limiting protects your API from abuse and ensures fair usage. Common strategies: token bucket (burst traffic), leaking bucket (smoothing), fixed window (simple, boundary issue), sliding window (accurate). Spring Boot doesn't have built-in rate limiting â†’ implement with interceptors, Bucket4j library, or API gateway. Always return 429 Too Many Requests with Retry-After header.
 
 ```java
 // === 1. Bucket4j rate limiting (token bucket algorithm) ===
@@ -2875,7 +2875,7 @@ Characteristics:
 
 // === Level 2: HTTP Verbs ===
 /*
-Full use of HTTP methods → GET, POST, PUT, PATCH, DELETE.
+Full use of HTTP methods â†’ GET, POST, PUT, PATCH, DELETE.
 Status codes used correctly.
 
 @RestController
@@ -2883,34 +2883,34 @@ Status codes used correctly.
 class Level2OrderController {
     private final OrderService orderService;
 
-    // GET → read resource
+    // GET â†’ read resource
     @GetMapping("/{id}")
     public Order getOrder(@PathVariable Long id) {
         return orderService.findById(id);
     }
 
-    // POST → create
+    // POST â†’ create
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public Order createOrder(@RequestBody @Valid CreateOrderRequest request) {
         return orderService.create(request);
     }
 
-    // PUT → full replacement
+    // PUT â†’ full replacement
     @PutMapping("/{id}")
     public Order updateOrder(@PathVariable Long id,
                              @RequestBody @Valid UpdateOrderRequest request) {
         return orderService.replace(id, request);
     }
 
-    // PATCH → partial update
+    // PATCH â†’ partial update
     @PatchMapping("/{id}")
     public Order patchOrder(@PathVariable Long id,
                             @RequestBody Map<String, Object> updates) {
         return orderService.partialUpdate(id, updates);
     }
 
-    // DELETE → remove
+    // DELETE â†’ remove
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteOrder(@PathVariable Long id) {
@@ -2920,17 +2920,17 @@ class Level2OrderController {
 
 // Correct status codes:
 /*
-GET /orders           → 200 OK
-GET /orders/999       → 404 Not Found
-POST /orders          → 201 Created
-PUT /orders/1         → 200 OK
-DELETE /orders/1      → 204 No Content
-PATCH /orders/1       → 200 OK
-POST (validation)     → 400 Bad Request
-Rate limit exceeded   → 429 Too Many Requests
-Auth failure          → 401 Unauthorized
-Insufficient role     → 403 Forbidden
-Conflict              → 409 Conflict
+GET /orders           â†’ 200 OK
+GET /orders/999       â†’ 404 Not Found
+POST /orders          â†’ 201 Created
+PUT /orders/1         â†’ 200 OK
+DELETE /orders/1      â†’ 204 No Content
+PATCH /orders/1       â†’ 200 OK
+POST (validation)     â†’ 400 Bad Request
+Rate limit exceeded   â†’ 429 Too Many Requests
+Auth failure          â†’ 401 Unauthorized
+Insufficient role     â†’ 403 Forbidden
+Conflict              â†’ 409 Conflict
 */
 
 // === Level 3: Hypermedia (HATEOAS) ===
@@ -2976,7 +2976,7 @@ public EntityModel<Order> getOrder(@PathVariable Long id) {
     }
 }
 
-Client advantage: no need to know URLs → just follow links.
+Client advantage: no need to know URLs â†’ just follow links.
 If server changes URL structure, clients still work.
 Server controls the possible transitions.
 */
@@ -2984,14 +2984,14 @@ Server controls the possible transitions.
 
 // === Summary comparison ===
 /*
-┌─────────┬─────────────────────────────────────┬────────────────┐
-│ Level   │ What You Do                         │ Adoption       │
-├─────────┼─────────────────────────────────────┼────────────────┤
-│ L0 (POX)│ Single URL, all POST, RPC-style     │ Legacy/SOAP    │
-│ L1 (Res)│ Multiple resource URLs, still POST  │ Rare, legacy   │
-│ L2 (Ver)│ Resources + HTTP verbs + status     │ 95% of APIs    │
-│ L3 (Hyp)│ L2 + hypermedia links in responses  │ <5% of APIs    │
-└─────────┴─────────────────────────────────────┴────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ Level   â”‚ What You Do                         â”‚ Adoption       â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚ L0 (POX)â”‚ Single URL, all POST, RPC-style     â”‚ Legacy/SOAP    â”‚
+â”‚ L1 (Res)â”‚ Multiple resource URLs, still POST  â”‚ Rare, legacy   â”‚
+â”‚ L2 (Ver)â”‚ Resources + HTTP verbs + status     â”‚ 95% of APIs    â”‚
+â”‚ L3 (Hyp)â”‚ L2 + hypermedia links in responses  â”‚ <5% of APIs    â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 */
 
 // === Identifying RMM level ===
@@ -3031,7 +3031,7 @@ void testRmmLevel() {
 }
 ```
 
-Most practical APIs target Level 2 (resources + HTTP verbs + status codes). Level 3 (hypermedia) adds discoverability but increases complexity. Don't jump to L3 unless you have hypermedia clients. The model is descriptive, not prescriptive → build at the level that serves your consumers.
+Most practical APIs target Level 2 (resources + HTTP verbs + status codes). Level 3 (hypermedia) adds discoverability but increases complexity. Don't jump to L3 unless you have hypermedia clients. The model is descriptive, not prescriptive â†’ build at the level that serves your consumers.
 ### Q14: How does REST compare to GraphQL and gRPC?
 
 
@@ -3042,7 +3042,7 @@ Most practical APIs target Level 2 (resources + HTTP verbs + status codes). Leve
 /*
 REST: resource-oriented, multiple endpoints, fixed response structure.
 
-GET /api/orders/1 → { id, customer, total, status, items, ... }
+GET /api/orders/1 â†’ { id, customer, total, status, items, ... }
 
 Pros:
 - Universal, works everywhere
@@ -3062,13 +3062,13 @@ Cons:
 @RestController
 @RequestMapping("/api/orders")
 class RestOrderController {
-    // Fixed response → always returns full order
+    // Fixed response â†’ always returns full order
     @GetMapping("/{id}")
     public Order getOrder(@PathVariable Long id) {
         return orderService.findById(id);
     }
 
-    // Client needs customer too → separate request
+    // Client needs customer too â†’ separate request
     @GetMapping("/{id}/customer")
     public Customer getOrderCustomer(@PathVariable Long id) {
         return orderService.findCustomerByOrderId(id);
@@ -3081,13 +3081,13 @@ GraphQL: single endpoint, client specifies exact fields.
 
 POST /graphql
 Body: { "query": "{ order(id: 1) { id total status } }" }
-      → Client gets only id, total, status (no over-fetching)
+      â†’ Client gets only id, total, status (no over-fetching)
 
 Body: { "query": "{ order(id: 1) { id items { name price } } }" }
-      → Client gets order WITH items in ONE request (no under-fetching)
+      â†’ Client gets order WITH items in ONE request (no under-fetching)
 
 Body: { "query": "{ order(id: 1) { id } customer(id: 2) { name } }" }
-      → Multiple resources in one request
+      â†’ Multiple resources in one request
 
 Pros:
 - Client controls response shape (no over/under-fetching)
@@ -3229,7 +3229,7 @@ Cons:
 - Overkill for simple CRUD
 */
 
-// gRPC Java client (compile proto → generated stub)
+// gRPC Java client (compile proto â†’ generated stub)
 /*
 class OrderGrpcClient {
     private final OrderServiceGrpc.OrderServiceBlockingStub stub;
@@ -3252,7 +3252,7 @@ class OrderGrpcClient {
 // === 4. Decision framework ===
 /*
                      REST           GraphQL          gRPC
-───────────────────────────────────────────────────────────
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Transport           HTTP/1.1       HTTP/1.1+       HTTP/2
 Data format         JSON (XML)     JSON            Protobuf
 Caching             Native (304)   Custom          Not built-in
@@ -3285,9 +3285,9 @@ Choose gRPC if:
 - Internal APIs only (not browser-facing)
 
 // Hybrid approach is common:
-// Public API → REST
-// Frontend-Gateway → GraphQL (aggregates REST services)
-// Service-to-Service → gRPC
+// Public API â†’ REST
+// Frontend-Gateway â†’ GraphQL (aggregates REST services)
+// Service-to-Service â†’ gRPC
 */
 
 // === 5. Spring Boot comparison endpoints ===
@@ -3335,14 +3335,14 @@ Don't use gRPC when:
 */
 ```
 
-Choose the right protocol for the job: REST for public APIs, GraphQL for flexible frontends, gRPC for microservice-internal communication. Many large systems use all three → REST for external, GraphQL for frontend gateway, gRPC for service mesh. Don't over-engineer: REST is the safest default.
+Choose the right protocol for the job: REST for public APIs, GraphQL for flexible frontends, gRPC for microservice-internal communication. Many large systems use all three â†’ REST for external, GraphQL for frontend gateway, gRPC for service mesh. Don't over-engineer: REST is the safest default.
 ### Q15: How do you implement caching in a REST API (ETag, Cache-Control)?
 
 
-**Answer:** HTTP caching reduces server load and latency. Two levels: client-side (Cache-Control header tells browsers/proxies to cache) and server-side (ETag for conditional requests → 304 Not Modified avoids resending data). Spring supports both via WebMvcConfigurer and Servlet filters. Always set Cache-Control for GET responses and use ETags for validation.
+**Answer:** HTTP caching reduces server load and latency. Two levels: client-side (Cache-Control header tells browsers/proxies to cache) and server-side (ETag for conditional requests â†’ 304 Not Modified avoids resending data). Spring supports both via WebMvcConfigurer and Servlet filters. Always set Cache-Control for GET responses and use ETags for validation.
 
 ```java
-// === 1. ETag → conditional GET ===
+// === 1. ETag â†’ conditional GET ===
 /*
 ETag is a hash (or version identifier) of the resource.
 Server returns ETag in response header.
@@ -3361,7 +3361,7 @@ GET /api/orders/1
 If-None-Match: "a1b2c3d4"
 Response:
 304 Not Modified
-Body: (empty → client uses cached version)
+Body: (empty â†’ client uses cached version)
 */
 
 // === 2. Spring ETag filter ===
@@ -3373,7 +3373,7 @@ import org.springframework.web.filter.ShallowEtagHeaderFilter;
 @Configuration
 class ETagConfig {
 
-    // Shallow ETag → auto-calculated from response body
+    // Shallow ETag â†’ auto-calculated from response body
     @Bean
     public FilterRegistrationBean&lt;ShallowEtagHeaderFilter&gt; shallowEtagFilter() {
         FilterRegistrationBean&lt;ShallowEtagHeaderFilter&gt; registration =
@@ -3385,7 +3385,7 @@ class ETagConfig {
     }
 }
 
-// === 3. Deep ETag → calculated from business logic ===
+// === 3. Deep ETag â†’ calculated from business logic ===
 @Component
 class DeepEtagService {
 
@@ -3461,25 +3461,25 @@ class CachingOrderController {
 /*
 Cache-Control directives:
 -----------------------
-max-age=3600              → Cache for 1 hour
-s-maxage=3600             → Shared cache (CDN) max age
-no-cache                  → Must revalidate before using cached
-no-store                  → Never cache (sensitive data)
-public                    → Can be cached by any cache (CDN, proxy)
-private                   → Only browser can cache (not CDN)
-must-revalidate           → Must check server if cache expired
-proxy-revalidate          → Same for proxy caches
-immutable                 → Never needs revalidation (static assets)
-stale-while-revalidate=60 → Serve stale while fetching fresh
+max-age=3600              â†’ Cache for 1 hour
+s-maxage=3600             â†’ Shared cache (CDN) max age
+no-cache                  â†’ Must revalidate before using cached
+no-store                  â†’ Never cache (sensitive data)
+public                    â†’ Can be cached by any cache (CDN, proxy)
+private                   â†’ Only browser can cache (not CDN)
+must-revalidate           â†’ Must check server if cache expired
+proxy-revalidate          â†’ Same for proxy caches
+immutable                 â†’ Never needs revalidation (static assets)
+stale-while-revalidate=60 â†’ Serve stale while fetching fresh
 
 Examples:
-// Sensitive data → never cache
+// Sensitive data â†’ never cache
 Cache-Control: no-store
-// Public data → cache 5 minutes, CDN cache 1 minute
+// Public data â†’ cache 5 minutes, CDN cache 1 minute
 Cache-Control: max-age=300, s-maxage=60, public
-// Dynamic data → check freshness before use
+// Dynamic data â†’ check freshness before use
 Cache-Control: no-cache, private
-// Static data → cache forever (with immutable)
+// Static data â†’ cache forever (with immutable)
 Cache-Control: max-age=31536000, immutable
 
 // Spring CacheControl builder
@@ -3496,14 +3496,14 @@ CacheControl cc5 = CacheControl.maxAge(365, TimeUnit.DAYS).cachePublic()
 @RequestMapping("/api/products")
 class ProductController {
 
-    // Public catalog → cache aggressively
+    // Public catalog â†’ cache aggressively
     @GetMapping("/{id}")
     @CacheControl(maxAge = 300, policy = CacheControl.Policy.PUBLIC)
     public Product getProduct(@PathVariable Long id) {
         return productService.findById(id);
     }
 
-    // Search results → shorter cache
+    // Search results â†’ shorter cache
     @GetMapping
     @CacheControl(maxAge = 60, policy = CacheControl.Policy.PUBLIC)
     public List&lt;Product&gt; searchProducts(
@@ -3511,7 +3511,7 @@ class ProductController {
         return productService.search(query);
     }
 
-    // User-specific data → private cache only
+    // User-specific data â†’ private cache only
     @GetMapping("/recommendations")
     @CacheControl(maxAge = 600, policy = CacheControl.Policy.PRIVATE)
     public List&lt;Product&gt; getRecommendations(
@@ -3597,7 +3597,7 @@ void testEtagCaching() throws Exception {
     String etag = firstRequest.andReturn().getResponse()
         .getHeader("ETag");
 
-    // Second request with If-None-Match → 304
+    // Second request with If-None-Match â†’ 304
     mockMvc.perform(get("/api/orders/1")
             .header("If-None-Match", etag))
         .andExpect(status().isNotModified())
@@ -3617,14 +3617,14 @@ void testIfMatchOptimisticLocking() throws Exception {
     String etag = mockMvc.perform(get("/api/orders/1"))
         .andReturn().getResponse().getHeader("ETag");
 
-    // Update with correct ETag → success
+    // Update with correct ETag â†’ success
     mockMvc.perform(put("/api/orders/1")
             .header("If-Match", etag)
             .contentType(MediaType.APPLICATION_JSON)
             .content("{\"status\": \"SHIPPED\"}"))
         .andExpect(status().isOk());
 
-    // Update with wrong ETag → 412
+    // Update with wrong ETag â†’ 412
     mockMvc.perform(put("/api/orders/1")
             .header("If-Match", "\"wrong-etag\"")
             .contentType(MediaType.APPLICATION_JSON)
@@ -3849,7 +3849,7 @@ class OrderDocController {
         ),
         @ApiResponse(
             responseCode = "304",
-            description = "Not modified → ETag matches cached version",
+            description = "Not modified â†’ ETag matches cached version",
             headers = @Header(name = "ETag",
                 schema = @Schema(type = "string"))
         ),
@@ -4098,11 +4098,11 @@ public Attachment uploadAttachment(
 }
 ```
 
-OpenAPI is essential for production APIs. Springdoc auto-generates the spec from annotations → add descriptive text, examples, and response codes. Document error responses (Problem Details schema), auth requirements (Bearer, API key), and pagination parameters. Group endpoints by domain for manageable docs. Provide examples for request/response bodies.
+OpenAPI is essential for production APIs. Springdoc auto-generates the spec from annotations â†’ add descriptive text, examples, and response codes. Document error responses (Problem Details schema), auth requirements (Bearer, API key), and pagination parameters. Group endpoints by domain for manageable docs. Provide examples for request/response bodies.
 ### Q17: How do you validate request bodies and parameters?
 
 
-**Answer:** Spring Boot uses Bean Validation (Jakarta Validation) annotations for request validation. Combine @Valid on request bodies with validation annotations on DTO fields. Use @Validated for grouped validation, custom validators for complex rules, and @ControllerAdvice for consistent error responses. Always validate at the boundary → never trust client input.
+**Answer:** Spring Boot uses Bean Validation (Jakarta Validation) annotations for request validation. Combine @Valid on request bodies with validation annotations on DTO fields. Use @Validated for grouped validation, custom validators for complex rules, and @ControllerAdvice for consistent error responses. Always validate at the boundary â†’ never trust client input.
 
 ```java
 // === 1. Basic bean validation ===
@@ -4182,7 +4182,7 @@ record ShippingAddress(
 @Validated  // Enables validation on method-level parameters
 class ValidatingOrderController {
 
-    // Validate request body → @Valid triggers validation
+    // Validate request body â†’ @Valid triggers validation
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public Order createOrder(
@@ -4448,7 +4448,7 @@ class ValidationExceptionHandler {
 void testValidationErrors() throws Exception {
     mockMvc.perform(post("/api/orders")
             .contentType(MediaType.APPLICATION_JSON)
-            .content("{}"))  // Empty body → all fields invalid
+            .content("{}"))  // Empty body â†’ all fields invalid
         .andExpect(status().isBadRequest())
         .andExpect(jsonPath("$.title").value("Validation Failed"))
         .andExpect(jsonPath("$.errors.customerId").exists())
@@ -4489,7 +4489,7 @@ void testEnumValidation() throws Exception {
 
 // === 9. Best practices ===
 /*
-1. Validate at the boundary → every public endpoint validates input
+1. Validate at the boundary â†’ every public endpoint validates input
 2. Use DTOs with validation annotations (not entity classes)
 3. Custom validators for cross-field validation (date ranges, conditional rules)
 4. Return field-level error messages (not "invalid request")
@@ -4950,7 +4950,7 @@ class FileStorageException extends RuntimeException {
 1. Validate files BEFORE storing (type, size, content check)
 2. Store files outside the application directory
 3. Generate unique filenames (UUID + extension) to prevent collisions
-4. Never trust original filename → sanitize it
+4. Never trust original filename â†’ sanitize it
 5. Use presigned URLs for cloud storage access
 6. Implement file type whitelist (not blacklist)
 7. Scan uploads for malware
@@ -4969,7 +4969,7 @@ File uploads require careful validation and secure storage. Validate file type (
 **Answer:** Streaming sends large responses incrementally without loading everything into memory. Spring Boot supports several streaming approaches: StreamingResponseBody (byte streaming), ResponseBodyEmitter (object streaming), Server-Sent Events (SSE), and text/event-stream. Choose based on whether you need real-time pushes (SSE) or efficient large-data transfer (streaming).
 
 ```java
-// === 1. StreamingResponseBody → raw byte streaming ===
+// === 1. StreamingResponseBody â†’ raw byte streaming ===
 /*
 Best for: Large file downloads, CSV/JSON export, database cursors
 Protocol: HTTP chunked transfer encoding
@@ -4990,7 +4990,7 @@ class StreamingExportController {
                 // Header
                 writer.write("id,customer,total,status,date\n");
 
-                // Stream data → one row at a time via cursor
+                // Stream data â†’ one row at a time via cursor
                 orderService.streamAllOrders().forEach(order -> {
                     try {
                         writer.write(String.format("%d,%s,%.2f,%s,%s\n",
@@ -5079,7 +5079,7 @@ interface OrderRepository extends JpaRepository&lt;Order, Long&gt; {
 }
 */
 
-// === 3. ResponseBodyEmitter → stream objects ===
+// === 3. ResponseBodyEmitter â†’ stream objects ===
 /*
 Best for: Pushing objects as they become available
 Spring serializes each object independently
@@ -5143,7 +5143,7 @@ class ObjectStreamingController {
 /*
 Best for: Real-time updates, notifications, live dashboards
 Client uses EventSource API (native in browsers)
-Single-direction: server → client only
+Single-direction: server â†’ client only
 Auto-reconnects on connection loss
 */
 
@@ -5151,7 +5151,7 @@ Auto-reconnects on connection loss
 @RequestMapping("/api/sse")
 class SseController {
 
-    // Basic SSE endpoint → pushes events
+    // Basic SSE endpoint â†’ pushes events
     @GetMapping("/orders/updates")
     public SseEmitter streamOrderUpdates() {
         SseEmitter emitter = new SseEmitter(60_000L); // 60s timeout
@@ -5357,7 +5357,7 @@ void testSseEmitter() throws Exception {
 1. Use StreamingResponseBody for large binary/text data
 2. Use SseEmitter for real-time event notifications
 3. Configure timeouts appropriately (SseEmitter constructor)
-4. Handle client disconnects (IOException → complete emitter)
+4. Handle client disconnects (IOException â†’ complete emitter)
 5. Use database cursors for streaming large datasets
 6. Set fetch size hints (100-500) in JPA queries
 7. Clear Hibernate session periodically to free memory
@@ -5368,7 +5368,7 @@ void testSseEmitter() throws Exception {
 // Error handling for SSE
 @ExceptionHandler(IOException.class)
 public void handleSseError(IOException e) {
-    // Client disconnected → log and ignore
+    // Client disconnected â†’ log and ignore
     log.warn("SSE client disconnected: {}", e.getMessage());
 }
 */
@@ -5385,8 +5385,8 @@ Streaming is essential for large datasets and real-time updates. Use StreamingRe
 /*
 Client:                         Server:
 POST /api/payments              Check if idempotency key exists
-Idempotency-Key: uuid-xxx        → No: Execute, store result, return 201
-                                  → Yes: Return stored result, return 200
+Idempotency-Key: uuid-xxx        â†’ No: Execute, store result, return 201
+                                  â†’ Yes: Return stored result, return 200
 
 Implementation decisions:
 - Store: Redis (recommended) or database
@@ -5499,7 +5499,7 @@ class IdempotencyInterceptor extends HandlerInterceptor {
             record.responseHeaders().forEach(
                 (k, v) -> response.setHeader(k, v));
             response.getWriter().write(record.responseBody());
-            return false;  // Skip controller → already processed
+            return false;  // Skip controller â†’ already processed
         }
 
         // Try to acquire lock for this key
@@ -5663,7 +5663,7 @@ interface IdempotencyRecordRepository
 void testIdempotencyKey() throws Exception {
     String idempotencyKey = UUID.randomUUID().toString();
 
-    // First request → should execute
+    // First request â†’ should execute
     MvcResult first = mockMvc.perform(
             post("/api/payments")
                 .header("Idempotency-Key", idempotencyKey)
@@ -5674,7 +5674,7 @@ void testIdempotencyKey() throws Exception {
 
     String firstBody = first.getResponse().getContentAsString();
 
-    // Second request with same key → should return cached result
+    // Second request with same key â†’ should return cached result
     MvcResult second = mockMvc.perform(
             post("/api/payments")
                 .header("Idempotency-Key", idempotencyKey)
@@ -5761,13 +5761,13 @@ Idempotency keys prevent duplicate processing on retries. Store results with TTL
 ### Q21: What are REST API security best practices?
 
 
-**Answer:** REST API security covers authentication, authorization, transport security, input validation, rate limiting, and auditing. Use HTTPS exclusively. Implement the principle of least privilege for every endpoint. Never expose internal details. Validate everything at the boundary. Log security-relevant events. Defense in depth → multiple layers of security.
+**Answer:** REST API security covers authentication, authorization, transport security, input validation, rate limiting, and auditing. Use HTTPS exclusively. Implement the principle of least privilege for every endpoint. Never expose internal details. Validate everything at the boundary. Log security-relevant events. Defense in depth â†’ multiple layers of security.
 
 ```java
 // === 1. Transport security (HTTPS) ===
 /*
 Always enforce HTTPS:
-- Redirect HTTP → HTTPS
+- Redirect HTTP â†’ HTTPS
 - HSTS header: Strict-Transport-Security: max-age=31536000; includeSubDomains
 - Use TLS 1.2+ (disable TLS 1.0, 1.1, SSLv3)
 - Strong cipher suites only
@@ -5935,10 +5935,10 @@ class AuditLogger {
 // === 9. SQL injection prevention ===
 /*
 1. Always use parameterized queries (never concatenation)
-   âœ… jdbcTemplate.query("SELECT * FROM users WHERE id = ?", id)
-   âŒ jdbcTemplate.query("SELECT * FROM users WHERE id = " + id)
+   Ã¢Å“â€¦ jdbcTemplate.query("SELECT * FROM users WHERE id = ?", id)
+   Ã¢ÂÅ’ jdbcTemplate.query("SELECT * FROM users WHERE id = " + id)
 
-2. Use JPA/Spring Data → built-in parameter binding
+2. Use JPA/Spring Data â†’ built-in parameter binding
    @Query("SELECT u FROM User u WHERE u.email = :email")
    User findByEmail(@Param("email") String email)
 
@@ -5981,50 +5981,50 @@ Only allow specific origins. Never use CORS for internal APIs.
 // === 12. Security checklist ===
 /*
 Transport:
-â˜ HTTPS everywhere (HSTS preload)
-â˜ TLS 1.2+ only
-â˜ Strong cipher suites
-â˜ HTTP/2 enabled
+Ã¢ËœÂ HTTPS everywhere (HSTS preload)
+Ã¢ËœÂ TLS 1.2+ only
+Ã¢ËœÂ Strong cipher suites
+Ã¢ËœÂ HTTP/2 enabled
 
 Authentication:
-â˜ JWT with short expiry (15-60 min)
-â˜ Refresh tokens for long sessions
-â˜ Password hashing (bcrypt/scrypt)
-â˜ MFA for admin endpoints
+Ã¢ËœÂ JWT with short expiry (15-60 min)
+Ã¢ËœÂ Refresh tokens for long sessions
+Ã¢ËœÂ Password hashing (bcrypt/scrypt)
+Ã¢ËœÂ MFA for admin endpoints
 
 Authorization:
-â˜ Method-level @PreAuthorize
-â˜ Principle of least privilege
-â˜ IDOR prevention (verify ownership)
-â˜ Role hierarchy
+Ã¢ËœÂ Method-level @PreAuthorize
+Ã¢ËœÂ Principle of least privilege
+Ã¢ËœÂ IDOR prevention (verify ownership)
+Ã¢ËœÂ Role hierarchy
 
 Input:
-â˜ Bean validation on all DTOs
-â˜ SQL injection prevention (parameterized queries)
-â˜ XSS sanitization
-â˜ Size limits on all inputs
+Ã¢ËœÂ Bean validation on all DTOs
+Ã¢ËœÂ SQL injection prevention (parameterized queries)
+Ã¢ËœÂ XSS sanitization
+Ã¢ËœÂ Size limits on all inputs
 
 Output:
-â˜ No stack traces in production
-â˜ No internal IDs in responses
-â˜ Consistent error format
-â˜ Security headers on all responses
+Ã¢ËœÂ No stack traces in production
+Ã¢ËœÂ No internal IDs in responses
+Ã¢ËœÂ Consistent error format
+Ã¢ËœÂ Security headers on all responses
 
 Operations:
-â˜ Rate limiting on all endpoints
-â˜ Audit logging for mutations
-â˜ IP allowlisting for admin
-â˜ Request logging (method, path, user, duration, status)
-â˜ Secret rotation (API keys, JWT secrets, DB passwords)
-â˜ Dependency vulnerability scanning
+Ã¢ËœÂ Rate limiting on all endpoints
+Ã¢ËœÂ Audit logging for mutations
+Ã¢ËœÂ IP allowlisting for admin
+Ã¢ËœÂ Request logging (method, path, user, duration, status)
+Ã¢ËœÂ Secret rotation (API keys, JWT secrets, DB passwords)
+Ã¢ËœÂ Dependency vulnerability scanning
 
 Infrastructure:
-â˜ WAF (Web Application Firewall)
-â˜ DDoS protection
-â˜ API Gateway for unified security
-â˜ Container security scanning
-â˜ Secrets management (Vault, AWS Secrets Manager)
-â˜ Regular penetration testing
+Ã¢ËœÂ WAF (Web Application Firewall)
+Ã¢ËœÂ DDoS protection
+Ã¢ËœÂ API Gateway for unified security
+Ã¢ËœÂ Container security scanning
+Ã¢ËœÂ Secrets management (Vault, AWS Secrets Manager)
+Ã¢ËœÂ Regular penetration testing
 */
 
 // === 13. Security testing ===
@@ -6128,16 +6128,16 @@ class ProductionSecurityConfig {
 }
 ```
 
-Security is layered: HTTPS + HSTS for transport, JWT/OAuth2 for auth, @PreAuthorize for authorization, bean validation for input, rate limiting for abuse prevention, and audit logging for accountability. Every layer is necessary → one missed layer becomes the weakest link. Test security headers, injection vectors, and error information leakage.
+Security is layered: HTTPS + HSTS for transport, JWT/OAuth2 for auth, @PreAuthorize for authorization, bean validation for input, rate limiting for abuse prevention, and audit logging for accountability. Every layer is necessary â†’ one missed layer becomes the weakest link. Test security headers, injection vectors, and error information leakage.
 ### Q22: How do you handle async requests in REST (DeferredResult / Callable)?
 
 
 **Answer:** Spring Boot provides three async options: Callable (offload to thread pool), DeferredResult (response from external thread), and WebAsyncTask (timeout handling). These free up the servlet container thread while processing continues, improving scalability. Use DeferredResult when the response comes from a queue or event. Use Callable for simple offloading of blocking operations.
 
 ```java
-// === 1. Callable → simple thread offloading ===
+// === 1. Callable â†’ simple thread offloading ===
 /*
-Request arrives → Servlet thread creates Callable → Thread pool runs → Servlet thread returns to pool → Callable result is written to response
+Request arrives â†’ Servlet thread creates Callable â†’ Thread pool runs â†’ Servlet thread returns to pool â†’ Callable result is written to response
 */
 
 @RestController
@@ -6181,9 +6181,9 @@ class AsyncCallableController {
     }
 }
 
-// === 2. DeferredResult → response from external source ===
+// === 2. DeferredResult â†’ response from external source ===
 /*
-Request arrives → Servlet thread creates DeferredResult and returns → DeferredResult is set by another thread → Response is written
+Request arrives â†’ Servlet thread creates DeferredResult and returns â†’ DeferredResult is set by another thread â†’ Response is written
 Useful for: message queue listeners, long polling, webSocket events
 */
 
@@ -6254,7 +6254,7 @@ class DeferredResultController {
     }
 }
 
-// === 3. WebAsyncTask → with timeout/callback management ===
+// === 3. WebAsyncTask â†’ with timeout/callback management ===
 @GetMapping("/orders/export")
 public WebAsyncTask&lt;String&gt; exportOrders() {
     WebAsyncTask&lt;String&gt; task = new WebAsyncTask&lt;>(
@@ -6492,14 +6492,14 @@ server:
 */
 ```
 
-Async request processing frees servlet container threads during long operations. Use Callable for simple offloading, DeferredResult for event-driven responses (queues, long polling), and CompletableFuture for complex orchestration. Always configure a proper thread pool → the default SimpleAsyncTaskExecutor creates unbounded threads. Test async endpoints with asyncDispatch().
+Async request processing frees servlet container threads during long operations. Use Callable for simple offloading, DeferredResult for event-driven responses (queues, long polling), and CompletableFuture for complex orchestration. Always configure a proper thread pool â†’ the default SimpleAsyncTaskExecutor creates unbounded threads. Test async endpoints with asyncDispatch().
 ### Q23: How do you test REST APIs?
 
 
 **Answer:** REST API testing spans three levels: unit tests (controller logic), integration tests (full request/response cycle with MockMvc), and contract tests (API compatibility). Use MockMvc for web layer tests, TestRestTemplate for full integration tests, and REST Assured or WebTestClient for advanced scenarios. Always test success paths, validation errors, auth failures, edge cases, and error responses.
 
 ```java
-// === 1. MockMvc → controller layer tests ===
+// === 1. MockMvc â†’ controller layer tests ===
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.test.web.servlet.MockMvc;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
@@ -6604,7 +6604,7 @@ class OrderControllerTest {
     }
 }
 
-// === 2. @SpringBootTest → full integration tests ===
+// === 2. @SpringBootTest â†’ full integration tests ===
 /*
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 class OrderIntegrationTest {
@@ -6655,12 +6655,12 @@ class OrderIntegrationTest {
 
     @Test
     void testAuthentication() {
-        // Without auth → 401
+        // Without auth â†’ 401
         ResponseEntity&lt;String&gt; response = restTemplate.getForEntity(
             "/api/admin/users", String.class);
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.UNAUTHORIZED);
 
-        // With valid token → 200
+        // With valid token â†’ 200
         String token = obtainAccessToken("admin", "admin");
         HttpHeaders headers = new HttpHeaders();
         headers.setBearerAuth(token);
@@ -6701,7 +6701,7 @@ class OrderIntegrationTest {
 }
 */
 
-// === 3. @DataJpaTest → repository layer tests ===
+// === 3. @DataJpaTest â†’ repository layer tests ===
 /*
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = Replace.NONE)
@@ -6734,7 +6734,7 @@ class OrderRepositoryTest {
 }
 */
 
-// === 4. REST Assured → expressive API testing ===
+// === 4. REST Assured â†’ expressive API testing ===
 /*
 import static io.restassured.RestAssured.*;
 import static io.restassured.matcher.RestAssuredMatchers.*;
@@ -6854,28 +6854,28 @@ void testGetOrderStatusCodes(Long id, int expectedStatus,
 // === 7. Testing security scenarios ===
 @Test
 void testAuthorizationScenarios() throws Exception {
-    // Unauthenticated → 401
+    // Unauthenticated â†’ 401
     mockMvc.perform(get("/api/orders"))
         .andExpect(status().isUnauthorized());
 
-    // USER role → allowed for read
+    // USER role â†’ allowed for read
     String userToken = createToken("user", "ROLE_USER");
     mockMvc.perform(get("/api/orders")
             .header("Authorization", "Bearer " + userToken))
         .andExpect(status().isOk());
 
-    // USER role → forbidden for admin
+    // USER role â†’ forbidden for admin
     mockMvc.perform(get("/api/admin/users")
             .header("Authorization", "Bearer " + userToken))
         .andExpect(status().isForbidden());
 
-    // ADMIN role → allowed
+    // ADMIN role â†’ allowed
     String adminToken = createToken("admin", "ROLE_ADMIN");
     mockMvc.perform(get("/api/admin/users")
             .header("Authorization", "Bearer " + adminToken))
         .andExpect(status().isOk());
 
-    // Expired token → 401
+    // Expired token â†’ 401
     String expiredToken = createExpiredToken("user");
     mockMvc.perform(get("/api/orders")
             .header("Authorization", "Bearer " + expiredToken))
@@ -6885,28 +6885,28 @@ void testAuthorizationScenarios() throws Exception {
 // === 8. Testing error scenarios ===
 @Test
 void testErrorScenarios() throws Exception {
-    // Invalid JSON → 400
+    // Invalid JSON â†’ 400
     mockMvc.perform(post("/api/orders")
             .contentType(MediaType.APPLICATION_JSON)
             .content("{invalid json"))
         .andExpect(status().isBadRequest());
 
-    // Wrong content type → 415
+    // Wrong content type â†’ 415
     mockMvc.perform(post("/api/orders")
             .contentType(MediaType.TEXT_PLAIN)
             .content("hello"))
         .andExpect(status().isUnsupportedMediaType());
 
-    // Missing body → 400
+    // Missing body â†’ 400
     mockMvc.perform(post("/api/orders")
             .contentType(MediaType.APPLICATION_JSON))
         .andExpect(status().isBadRequest());
 
-    // Method not allowed → 405
+    // Method not allowed â†’ 405
     mockMvc.perform(patch("/api/orders"))
         .andExpect(status().isMethodNotAllowed());
 
-    // SQL injection attempt → still works safely
+    // SQL injection attempt â†’ still works safely
     mockMvc.perform(get("/api/orders/search")
             .param("query", "'; DROP TABLE orders; --"))
         .andExpect(status().isOk());
@@ -6942,7 +6942,7 @@ void testBulkCreate() {
 // === 10. Test summary ===
 /*
 Testing Layer        Tool                What it tests
-─────────────────────────────────────────────────────────
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Unit (Controller)   MockMvc             Logic, status codes, response body,
                                         validation, error handling
 Unit (Service)      JUnit + Mockito     Business logic, exception handling
@@ -6980,7 +6980,7 @@ Test your REST API at every level. MockMvc for fast controller tests with valida
 **Answer:** Conditional requests use HTTP headers to make the server check a condition before executing the request. They prevent unnecessary data transfer (GET) and lost updates (PUT/PATCH/DELETE). Two groups: Last-Modified/If-Modified-Since (time-based) and ETag/If-None-Match-If-Match (content-based). Essential for caching and optimistic concurrency.
 
 ```java
-// === 1. Conditional GET → 304 Not Modified ===
+// === 1. Conditional GET â†’ 304 Not Modified ===
 /*
 Client has cached version. Asks: "Has this changed?"
 
@@ -6991,7 +6991,7 @@ If-Modified-Since: Mon, 15 Jan 2024 10:30:00 GMT
 
 Response (unchanged):
 304 Not Modified
-(No body → client uses cached version)
+(No body â†’ client uses cached version)
 
 Response (changed):
 200 OK
@@ -6999,7 +6999,7 @@ ETag: "def456"
 Body: { new data }
 */
 
-// === 2. Conditional mutation → 412 Precondition Failed ===
+// === 2. Conditional mutation â†’ 412 Precondition Failed ===
 /*
 Client wants to update but: "Has someone else changed it first?"
 
@@ -7088,7 +7088,7 @@ class ConditionalRequestController {
                 .body(current);     // Send current state
         }
 
-        // If-Match is absent → update anyway (no locking)
+        // If-Match is absent â†’ update anyway (no locking)
         Order updated = orderService.update(id, request);
         String newEtag = etagService.generateEtag(updated);
 
@@ -7144,8 +7144,8 @@ class ConditionalRequestController {
 
 // === 4. ETag service with strong/weak comparison ===
 /*
-Strong ETag: "abc123" → byte-for-byte identical
-Weak ETag: W/"abc123" → semantically equivalent (not byte-identical)
+Strong ETag: "abc123" â†’ byte-for-byte identical
+Weak ETag: W/"abc123" â†’ semantically equivalent (not byte-identical)
 
 Use strong ETag for:
 - Conditional mutations (PUT/PATCH/DELETE with If-Match)
@@ -7188,7 +7188,7 @@ class EtagService {
 /*
 If-None-Match + If-Modified-Since (GET):
 - If both present, If-None-Match takes precedence
-- Server checks both; if any says unchanged → 304
+- Server checks both; if any says unchanged â†’ 304
 
 If-Match (PUT/PATCH/DELETE):
 - Required for optimistic locking
@@ -7208,7 +7208,7 @@ If-Range (partial content):
 /*
 @Test
 void testConditionalGet_NotModified() throws Exception {
-    // First request → get ETag
+    // First request â†’ get ETag
     MvcResult first = mockMvc.perform(get("/api/orders/1"))
         .andExpect(status().isOk())
         .andExpect(header().exists("ETag"))
@@ -7216,7 +7216,7 @@ void testConditionalGet_NotModified() throws Exception {
 
     String etag = first.getResponse().getHeader("ETag");
 
-    // Second request with If-None-Match → 304
+    // Second request with If-None-Match â†’ 304
     mockMvc.perform(get("/api/orders/1")
             .header("If-None-Match", etag))
         .andExpect(status().isNotModified())
@@ -7234,7 +7234,7 @@ void testConditionalPut_Conflict() throws Exception {
     // Someone else updates the order
     orderService.update(1L, new UpdateOrderRequest(null, "SHIPPED"));
 
-    // Our update with old ETag → 412
+    // Our update with old ETag â†’ 412
     mockMvc.perform(put("/api/orders/1")
             .header("If-Match", originalEtag)
             .contentType(MediaType.APPLICATION_JSON)
@@ -7249,7 +7249,7 @@ void testConditionalDelete() throws Exception {
     String etag = mockMvc.perform(get("/api/orders/1"))
         .andReturn().getResponse().getHeader("ETag");
 
-    // Delete with valid ETag → success
+    // Delete with valid ETag â†’ success
     mockMvc.perform(delete("/api/orders/1")
             .header("If-Match", etag))
         .andExpect(status().isNoContent());
@@ -7269,33 +7269,33 @@ void testIfModifiedSince() throws Exception {
 // === 7. Conditional request decision flow ===
 /*
 GET /resource
-├─ Has If-None-Match?
-│  ├─ Yes → ETag matches? → Yes → 304 (cached)
-│  │                       → No  → 200 (fresh data)
-│  └─ No → Has If-Modified-Since?
-│          ├─ Yes → Not modified since? → Yes → 304
-│          │                           → No → 200
-│          └─ No → 200 (always serve)
+â”œâ”€ Has If-None-Match?
+â”‚  â”œâ”€ Yes â†’ ETag matches? â†’ Yes â†’ 304 (cached)
+â”‚  â”‚                       â†’ No  â†’ 200 (fresh data)
+â”‚  â””â”€ No â†’ Has If-Modified-Since?
+â”‚          â”œâ”€ Yes â†’ Not modified since? â†’ Yes â†’ 304
+â”‚          â”‚                           â†’ No â†’ 200
+â”‚          â””â”€ No â†’ 200 (always serve)
 
 PUT /resource
-├─ Has If-Match?
-│  ├─ Yes → ETag matches? → Yes → 200 (update)
-│  │                       → No → 412 (conflict)
-│  └─ No → Has If-Unmodified-Since?
-│          ├─ Yes → Not modified since? → Yes → 200
-│          │                           → No → 412
-│          └─ No → 200 (last-writer-wins, no locking)
+â”œâ”€ Has If-Match?
+â”‚  â”œâ”€ Yes â†’ ETag matches? â†’ Yes â†’ 200 (update)
+â”‚  â”‚                       â†’ No â†’ 412 (conflict)
+â”‚  â””â”€ No â†’ Has If-Unmodified-Since?
+â”‚          â”œâ”€ Yes â†’ Not modified since? â†’ Yes â†’ 200
+â”‚          â”‚                           â†’ No â†’ 412
+â”‚          â””â”€ No â†’ 200 (last-writer-wins, no locking)
 
 DELETE /resource
-├─ Has If-Match?
-│  ├─ Yes → ETag matches? → Yes → 204 (deleted)
-│  │                       → No → 412 (conflict)
-│  └─ No → 204 (no locking)
+â”œâ”€ Has If-Match?
+â”‚  â”œâ”€ Yes â†’ ETag matches? â†’ Yes â†’ 204 (deleted)
+â”‚  â”‚                       â†’ No â†’ 412 (conflict)
+â”‚  â””â”€ No â†’ 204 (no locking)
 */
 ```
 
 Conditional requests are the foundation of HTTP caching and optimistic concurrency. Use ETag + If-None-Match for efficient caching (304). Use If-Match for safe updates (prevents lost updates, 412 Precondition Failed). Always include both ETag and Last-Modified headers. Test all conditional scenarios: not modified (304), conflict (412), and normal success (200).
-### Q25: REST API design → complete best practices checklist
+### Q25: REST API design â†’ complete best practices checklist
 
 
 **Answer:** A well-designed REST API follows consistent conventions, uses HTTP properly, handles errors gracefully, and considers consumers first. This answer provides a comprehensive checklist of REST API best practices covering URL design, HTTP semantics, error handling, security, performance, documentation, and evolution.
@@ -7303,18 +7303,18 @@ Conditional requests are the foundation of HTTP caching and optimistic concurren
 ```java
 // === 1. URL design ===
 /*
-â˜ Use nouns for resources (not verbs): /orders NOT /getOrders
-â˜ Use plural nouns: /orders NOT /order
-â˜ Use kebab-case: /order-history NOT /orderHistory
-â˜ Lowercase only: /api/orders NOT /api/Orders
-â˜ Nest related resources: /orders/1/items
-â˜ Use query parameters for filtering, sorting, pagination
-â˜ Avoid deep nesting (max 3 levels): /a/b/c
-  âŒ /orders/1/customers/2/payments/3
-  âœ… /orders/1/payments?customerId=2
-â˜ Version through URL prefix or header:
+Ã¢ËœÂ Use nouns for resources (not verbs): /orders NOT /getOrders
+Ã¢ËœÂ Use plural nouns: /orders NOT /order
+Ã¢ËœÂ Use kebab-case: /order-history NOT /orderHistory
+Ã¢ËœÂ Lowercase only: /api/orders NOT /api/Orders
+Ã¢ËœÂ Nest related resources: /orders/1/items
+Ã¢ËœÂ Use query parameters for filtering, sorting, pagination
+Ã¢ËœÂ Avoid deep nesting (max 3 levels): /a/b/c
+  Ã¢ÂÅ’ /orders/1/customers/2/payments/3
+  Ã¢Å“â€¦ /orders/1/payments?customerId=2
+Ã¢ËœÂ Version through URL prefix or header:
   /v1/orders or Accept: application/vnd.company.v1+json
-â˜ Use IDs in path, not in body for updates:
+Ã¢ËœÂ Use IDs in path, not in body for updates:
   PUT /orders/1 NOT PUT /orders with id in body
 */
 
@@ -7357,13 +7357,13 @@ class WellDesignedController {
 
 // === 2. HTTP methods ===
 /*
-â˜ GET: Read resources (safe, idempotent, cacheable)
-â˜ POST: Create resources (not safe, not idempotent)
-â˜ PUT: Full replacement (idempotent)
-â˜ PATCH: Partial update (not idempotent in practice)
-â˜ DELETE: Remove resource (idempotent)
-â˜ HEAD: Get headers only (safe, no body)
-â˜ OPTIONS: Get allowed methods
+Ã¢ËœÂ GET: Read resources (safe, idempotent, cacheable)
+Ã¢ËœÂ POST: Create resources (not safe, not idempotent)
+Ã¢ËœÂ PUT: Full replacement (idempotent)
+Ã¢ËœÂ PATCH: Partial update (not idempotent in practice)
+Ã¢ËœÂ DELETE: Remove resource (idempotent)
+Ã¢ËœÂ HEAD: Get headers only (safe, no body)
+Ã¢ËœÂ OPTIONS: Get allowed methods
 
 // PUT vs PATCH:
 // PUT replaces entire resource (send ALL fields)
@@ -7372,26 +7372,26 @@ class WellDesignedController {
 @PutMapping("/users/{id}")
 public User replaceUser(@PathVariable Long id,
                          @RequestBody @Valid ReplaceUserRequest request) {
-    // All fields required → replaces entire user
+    // All fields required â†’ replaces entire user
     return userService.replace(id, request);
 }
 
 @PatchMapping("/users/{id}")
 public User patchUser(@PathVariable Long id,
                        @RequestBody Map&lt;String, Object&gt; updates) {
-    // Only changed fields → apply partial update
+    // Only changed fields â†’ apply partial update
     return userService.partialUpdate(id, updates);
 }
 */
 
-// === 3. HTTP status codes → use them correctly ===
+// === 3. HTTP status codes â†’ use them correctly ===
 /*
 200 OK: Successful GET, PUT, PATCH
 201 Created: Successful POST (include Location header)
 204 No Content: Successful DELETE
 301 Moved Permanently: Resource moved (new URL in Location)
 302 Found: Temporary redirect
-304 Not Modified: Conditional GET → ETag matches
+304 Not Modified: Conditional GET â†’ ETag matches
 400 Bad Request: Validation failure, malformed request
 401 Unauthorized: Missing or invalid authentication
 403 Forbidden: Authenticated but not authorized
@@ -7429,76 +7429,76 @@ class HttpStatusUtil {
 
 // === 4. Error handling best practices ===
 /*
-â˜ Use RFC 7807 Problem Details for all errors
-â˜ Include error type URL for documentation
-â˜ Never expose stack traces or internal details
-â˜ Return field-level validation errors
-â˜ Use consistent error format across all endpoints
-â˜ Include correlation ID for debugging
-â˜ Log all errors with sufficient context
-â˜ Handle unexpected exceptions gracefully (500)
+Ã¢ËœÂ Use RFC 7807 Problem Details for all errors
+Ã¢ËœÂ Include error type URL for documentation
+Ã¢ËœÂ Never expose stack traces or internal details
+Ã¢ËœÂ Return field-level validation errors
+Ã¢ËœÂ Use consistent error format across all endpoints
+Ã¢ËœÂ Include correlation ID for debugging
+Ã¢ËœÂ Log all errors with sufficient context
+Ã¢ËœÂ Handle unexpected exceptions gracefully (500)
 */
 
 // === 5. Security checklist ===
 /*
-â˜ HTTPS everywhere (enforce with redirect)
-â˜ HSTS header with preload
-â˜ Authentication: JWT Bearer tokens
-â˜ Authorization: @PreAuthorize, role/permission-based
-â˜ Input validation on all endpoints
-â˜ Rate limiting on all mutation endpoints
-â˜ CORS: specific origins only (never * with credentials)
-â˜ Security headers: X-Content-Type-Options, X-Frame-Options, CSP
-â˜ No sensitive data in URLs (passwords, tokens)
-â˜ Audit logging for all mutations
-â˜ API key rotation policy
-â˜ Regular dependency vulnerability scanning
+Ã¢ËœÂ HTTPS everywhere (enforce with redirect)
+Ã¢ËœÂ HSTS header with preload
+Ã¢ËœÂ Authentication: JWT Bearer tokens
+Ã¢ËœÂ Authorization: @PreAuthorize, role/permission-based
+Ã¢ËœÂ Input validation on all endpoints
+Ã¢ËœÂ Rate limiting on all mutation endpoints
+Ã¢ËœÂ CORS: specific origins only (never * with credentials)
+Ã¢ËœÂ Security headers: X-Content-Type-Options, X-Frame-Options, CSP
+Ã¢ËœÂ No sensitive data in URLs (passwords, tokens)
+Ã¢ËœÂ Audit logging for all mutations
+Ã¢ËœÂ API key rotation policy
+Ã¢ËœÂ Regular dependency vulnerability scanning
 */
 
 // === 6. Performance checklist ===
 /*
-â˜ Pagination for all list endpoints (default page size: 20, max: 100)
-â˜ ETag support for conditional GET (304 Not Modified)
-â˜ Cache-Control headers on GET responses
-â˜ Server-side caching (@Cacheable) for expensive operations
-â˜ Gzip compression on responses
-â˜ Database indexes on queried columns
-â˜ N+1 query prevention (JOIN FETCH, EntityGraph)
-â˜ Async processing for long operations (DeferredResult)
-â˜ Streaming for large datasets
-â˜ Connection pooling configuration
-â˜ Request size limits (multipart, JSON body)
+Ã¢ËœÂ Pagination for all list endpoints (default page size: 20, max: 100)
+Ã¢ËœÂ ETag support for conditional GET (304 Not Modified)
+Ã¢ËœÂ Cache-Control headers on GET responses
+Ã¢ËœÂ Server-side caching (@Cacheable) for expensive operations
+Ã¢ËœÂ Gzip compression on responses
+Ã¢ËœÂ Database indexes on queried columns
+Ã¢ËœÂ N+1 query prevention (JOIN FETCH, EntityGraph)
+Ã¢ËœÂ Async processing for long operations (DeferredResult)
+Ã¢ËœÂ Streaming for large datasets
+Ã¢ËœÂ Connection pooling configuration
+Ã¢ËœÂ Request size limits (multipart, JSON body)
 */
 
 // === 7. Documentation checklist ===
 /*
-â˜ OpenAPI 3.0 specification auto-generated
-â˜ Every endpoint has summary and description
-â˜ Request/response schemas documented
-â˜ All possible status codes documented per endpoint
-â˜ Authentication method documented
-â˜ Rate limit headers documented
-â˜ Pagination parameters documented
-â˜ Error response format documented
-â˜ Examples for common request/response pairs
-â˜ API changelog / version history
+Ã¢ËœÂ OpenAPI 3.0 specification auto-generated
+Ã¢ËœÂ Every endpoint has summary and description
+Ã¢ËœÂ Request/response schemas documented
+Ã¢ËœÂ All possible status codes documented per endpoint
+Ã¢ËœÂ Authentication method documented
+Ã¢ËœÂ Rate limit headers documented
+Ã¢ËœÂ Pagination parameters documented
+Ã¢ËœÂ Error response format documented
+Ã¢ËœÂ Examples for common request/response pairs
+Ã¢ËœÂ API changelog / version history
 */
 
 // === 8. API evolution checklist ===
 /*
-â˜ Version from day 1 (/v1/ prefix)
-â˜ Never remove fields from responses (add new ones only)
-â˜ Make new fields optional initially
-â˜ Document deprecations in response headers:
+Ã¢ËœÂ Version from day 1 (/v1/ prefix)
+Ã¢ËœÂ Never remove fields from responses (add new ones only)
+Ã¢ËœÂ Make new fields optional initially
+Ã¢ËœÂ Document deprecations in response headers:
   Deprecation: true
   Sunset: Sat, 1 Jan 2025 00:00:00 GMT
   Link: &lt;/v2/orders&gt;; rel="successor-version"
 
-â˜ Provide migration guides for breaking changes
-â˜ Keep old version running for minimum 6 months after deprecation
-â˜ Use HATEOAS for optional discoverability
-â˜ Test backward compatibility automatically
-â˜ Maintain API changelog
+Ã¢ËœÂ Provide migration guides for breaking changes
+Ã¢ËœÂ Keep old version running for minimum 6 months after deprecation
+Ã¢ËœÂ Use HATEOAS for optional discoverability
+Ã¢ËœÂ Test backward compatibility automatically
+Ã¢ËœÂ Maintain API changelog
 */
 
 // === 9. Pagination best practices ===
@@ -7511,11 +7511,11 @@ Cursor-based (for real-time data):
 GET /api/orders?cursor=id_100&limit=20
 Response: { data: [...], nextCursor: "id_120", hasMore: true }
 
-â˜ Always return total count for page-based pagination
-â˜ Set sensible defaults (page=0, size=20)
-â˜ Enforce maximum page size (size &lt;= 100)
-â˜ Include pagination links/headers
-â˜ Use stable sorting for consistent pagination
+Ã¢ËœÂ Always return total count for page-based pagination
+Ã¢ËœÂ Set sensible defaults (page=0, size=20)
+Ã¢ËœÂ Enforce maximum page size (size &lt;= 100)
+Ã¢ËœÂ Include pagination links/headers
+Ã¢ËœÂ Use stable sorting for consistent pagination
 */
 
 @GetMapping
@@ -7529,50 +7529,50 @@ public ResponseEntity&lt;Page<Order&gt;> getOrders(Pageable pageable) {
         .body(orderService.findAll(pageable));
 }
 
-// === 10. Complete checklist → concise ===
+// === 10. Complete checklist â†’ concise ===
 /*
 DESIGN
-â˜ Nouns, plural, kebab-case for URLs
-â˜ Correct HTTP methods (GET/POST/PUT/PATCH/DELETE)
-â˜ Correct status codes (every endpoint)
-â˜ Consistent naming conventions
-â˜ HATEOAS optional (self links recommended)
+Ã¢ËœÂ Nouns, plural, kebab-case for URLs
+Ã¢ËœÂ Correct HTTP methods (GET/POST/PUT/PATCH/DELETE)
+Ã¢ËœÂ Correct status codes (every endpoint)
+Ã¢ËœÂ Consistent naming conventions
+Ã¢ËœÂ HATEOAS optional (self links recommended)
 
 ERRORS
-â˜ RFC 7807 Problem Details
-â˜ Field-level validation errors
-â˜ Correlation IDs
-â˜ No stack traces in production
+Ã¢ËœÂ RFC 7807 Problem Details
+Ã¢ËœÂ Field-level validation errors
+Ã¢ËœÂ Correlation IDs
+Ã¢ËœÂ No stack traces in production
 
 SECURITY
-â˜ HTTPS + HSTS
-â˜ JWT authentication
-â˜ Method-level authorization
-â˜ Input validation (Bean Validation)
-â˜ Rate limiting
-â˜ CORS whitelist
-â˜ Security headers
-â˜ Audit logging
+Ã¢ËœÂ HTTPS + HSTS
+Ã¢ËœÂ JWT authentication
+Ã¢ËœÂ Method-level authorization
+Ã¢ËœÂ Input validation (Bean Validation)
+Ã¢ËœÂ Rate limiting
+Ã¢ËœÂ CORS whitelist
+Ã¢ËœÂ Security headers
+Ã¢ËœÂ Audit logging
 
 PERFORMANCE
-â˜ Pagination (default 20, max 100)
-â˜ ETag + Cache-Control
-â˜ Database indexes
-â˜ Gzip compression
-â˜ Connection pooling
+Ã¢ËœÂ Pagination (default 20, max 100)
+Ã¢ËœÂ ETag + Cache-Control
+Ã¢ËœÂ Database indexes
+Ã¢ËœÂ Gzip compression
+Ã¢ËœÂ Connection pooling
 
 DOCUMENTATION
-â˜ OpenAPI 3.0
-â˜ Examples for all endpoints
-â˜ Error response documentation
-â˜ Auth documentation
+Ã¢ËœÂ OpenAPI 3.0
+Ã¢ËœÂ Examples for all endpoints
+Ã¢ËœÂ Error response documentation
+Ã¢ËœÂ Auth documentation
 
 EVOLUTION
-â˜ API versioning
-â˜ Backward-compatible changes
-â˜ Deprecation headers
-â˜ Migration guides
-â˜ Changelog
+Ã¢ËœÂ API versioning
+Ã¢ËœÂ Backward-compatible changes
+Ã¢ËœÂ Deprecation headers
+Ã¢ËœÂ Migration guides
+Ã¢ËœÂ Changelog
 */
 
 // === 11. Request tracing ===
@@ -7665,7 +7665,7 @@ paths:
 */
 ```
 
-A great REST API feels obvious to consumers. Use HTTP as designed → correct methods, status codes, and headers. Validate everything. Document everything. Cache aggressively on reads, lock safely on writes. Version early. The best REST APIs look simple because they handle complexity consistently and predictably. When in doubt, follow the HTTP specification → it was designed for exactly this.
+A great REST API feels obvious to consumers. Use HTTP as designed â†’ correct methods, status codes, and headers. Validate everything. Document everything. Cache aggressively on reads, lock safely on writes. Version early. The best REST APIs look simple because they handle complexity consistently and predictably. When in doubt, follow the HTTP specification â†’ it was designed for exactly this.
 
 ## Concept Comparison Table
 

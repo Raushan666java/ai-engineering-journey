@@ -1,4 +1,4 @@
-# Chapter 8: Decentralized Finance (DeFi)
+﻿# Chapter 8: Decentralized Finance (DeFi)
 
 > **Previous:** [Chapter 7: Decentralized Applications (dApps)](./07-dapps.md) | **Next:** [Chapter 9: Enterprise Blockchain](./09-enterprise.md)
 
@@ -18,16 +18,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/blockchain/08-defi/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/blockchain/08-defi/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/blockchain/08-defi/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/blockchain/08-defi/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/blockchain/08-defi/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/blockchain/08-defi/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/blockchain/08-defi/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/blockchain/08-defi/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/blockchain/08-defi/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/blockchain/08-defi/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/blockchain/08-defi/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/blockchain/08-defi/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -38,7 +38,7 @@
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|--------------------|
 | DeFi Ecosystem | Financial services without intermediaries | Built entirely on smart contracts |
-| AMMs | x × y = k constant product formula | No order book needed, but price slippage |
+| AMMs | x Ã— y = k constant product formula | No order book needed, but price slippage |
 | Stablecoins | Fiat-backed, crypto-collateralized, algorithmic | Each type has different trust assumptions |
 | Yield Farming | Moving assets across protocols for returns | High APY but high risk, impermanent loss |
 | Flash Loans | Uncollateralized loans within one transaction | Powerful tool; also exploited in attacks |
@@ -105,7 +105,7 @@ flowchart TB
     end
     subgraph AMM["Automated Market Maker"]
         Pool["Liquidity Pool<br/>10 ETH + 20,000 USDC"]
-        Formula["x × y = k<br/>10 × 20,000 = 200,000"]
+        Formula["x Ã— y = k<br/>10 Ã— 20,000 = 200,000"]
         Trade["Trade: 1 ETH ? get USDC<br/>New pool: 11 ETH + 18,181 USDC<br/>Trader receives: 1,818 USDC"]
     end
     
@@ -115,7 +115,7 @@ flowchart TB
     Formula --> Trade
 ```
 
-**Constant Product Formula:** `x × y = k`
+**Constant Product Formula:** `x Ã— y = k`
 - `x` and `y` are the quantities of two tokens in the pool
 - `k` must remain constant
 - If you buy `x`, its price increases (because its quantity in the pool decreases)
@@ -222,7 +222,7 @@ const alicePosition: LendingPosition = {
 
 console.log(calculateHealthFactor(alicePosition));  // 1.375
 // If ETH drops to $1,500:
-// collat.value = $75K, HF = (75K * 0.825) / 60K = 1.03 — close to liquidation!
+// collat.value = $75K, HF = (75K * 0.825) / 60K = 1.03 â€” close to liquidation!
 ```
 
 ### Stablecoin Types
@@ -333,7 +333,7 @@ async function executeFlashLoanArbitrage() {
 
 ### DeFi Composability (Money Legos)
 
-DeFi's power comes from **composability** — protocols can be combined like Lego bricks:
+DeFi's power comes from **composability** â€” protocols can be combined like Lego bricks:
 
 ```mermaid
 flowchart TB
@@ -360,7 +360,7 @@ A **Decentralized Autonomous Organization (DAO)** is an organization governed by
 | Model | Description | Example | Pros | Cons |
 |-------|-------------|---------|------|------|
 | Token-based | 1 token = 1 vote | Uniswap | Simple, aligned with economic stake | Plutocracy, whale dominance |
-| Quadratic | Cost = votes² | Gitcoin | Better minority representation | Complex, Sybil-prone |
+| Quadratic | Cost = votesÂ² | Gitcoin | Better minority representation | Complex, Sybil-prone |
 | Delegated | Delegate voting power | Compound | More informed voting | Potential delegate centralization |
 | Multisig | M-of-N signers | Gnosis Safe | Fast execution | Trusted signers needed |
 
@@ -428,15 +428,15 @@ NFTs (Non-Fungible Tokens) represent unique digital assets on the blockchain.
 
 ### Example 1: Trading on Uniswap
 
-A pool has 10 ETH and 20,000 USDC. `k = 10 × 20,000 = 200,000`.
+A pool has 10 ETH and 20,000 USDC. `k = 10 Ã— 20,000 = 200,000`.
 
 Alice wants to sell 1 ETH.
 
 1. New ETH quantity = 11 (10 + 1).
-2. New USDC quantity = 200,000 / 11 ˜ 18,181.8.
+2. New USDC quantity = 200,000 / 11 Ëœ 18,181.8.
 3. With fee: `?y = y - (k / (x + ?x))` where ?x includes 0.3% fee.
 4. With 0.997 multiplier: Alice receives ~1,818 USDC.
-5. Price impact: Without AMM, 1 ETH = $2,000. Alice receives $1,818 — a slippage of ~9%.
+5. Price impact: Without AMM, 1 ETH = $2,000. Alice receives $1,818 â€” a slippage of ~9%.
 
 ```typescript
 function uniswapTrade(
@@ -498,7 +498,7 @@ function simulateImpermanentLoss(
     const initialUsdcValue = initialUsdc;
     const initialEthValue = initialEth * (initialUsdc / initialEth) / 2;
     
-    // HODL value = initial value × price change
+    // HODL value = initial value Ã— price change
     const hodlEthValue = initialEth * ethPriceChange;
     const hodlTotal = hodlEthValue + initialUsdcValue;
     
@@ -520,7 +520,7 @@ console.log(`LP: $${result.lp.toFixed(2)}`);
 console.log(`IL: ${result.ilPercent.toFixed(2)}%`);  // ~-5.7%
 ```
 
-> **One-Sentence Takeaway:** DeFi composability means any protocol can plug into any other like Lego bricks — but this also means a vulnerability in one contract can cascade across the entire ecosystem.
+> **One-Sentence Takeaway:** DeFi composability means any protocol can plug into any other like Lego bricks â€” but this also means a vulnerability in one contract can cascade across the entire ecosystem.
 
 > **Pro Tip:** When providing liquidity to an AMM, use a calculator to estimate impermanent loss before depositing. For a 2x price change, impermanent loss is ~5.7%; for 5x, it's ~25.5%.
 
@@ -532,7 +532,7 @@ console.log(`IL: ${result.ilPercent.toFixed(2)}%`);  // ~-5.7%
 
 | Concept | Definition | Key Distinction | Use Case |
 |---------|-----------|-----------------|----------|
-| AMM (Uniswap) | x × y = k constant product | No order book, infinite liquidity | Token swaps |
+| AMM (Uniswap) | x Ã— y = k constant product | No order book, infinite liquidity | Token swaps |
 | Order Book (CEX) | Buy/sell limit orders | Better price discovery | Professional trading |
 | DAI | Crypto-collateralized stablecoin | Over-collateralized, decentralized | Lending, stable savings |
 | USDC | Fiat-backed stablecoin | Centralized, audited reserves | Payments, trading pairs |
@@ -545,7 +545,7 @@ console.log(`IL: ${result.ilPercent.toFixed(2)}%`);  // ~-5.7%
 
 | Category | Key Concepts | Notes |
 |----------|-------------|-------|
-| **AMM Formula** | x × y = k | Larger pools = less slippage |
+| **AMM Formula** | x Ã— y = k | Larger pools = less slippage |
 | **Impermanent Loss** | Loss vs holding during price divergence | 2x change = 5.7% IL |
 | **Stablecoin Types** | Fiat-backed, crypto-collateralized, algorithmic | Different trust and risk profiles |
 | **Lending** | Over-collateralization, liquidation, health factor | Typically 120-150% collateral ratio |
@@ -576,7 +576,7 @@ console.log(`IL: ${result.ilPercent.toFixed(2)}%`);  // ~-5.7%
 
 <details>
 <summary>Answer&lt;/summary&gt;
-**B) ~20%.** The formula for impermanent loss is (2vr)/(1+r) - 1 where r is the price ratio. For r=4, IL ˜ 20%. For comparison, 2x ? 5.7%, 3x ? 13.4%, 5x ? 25.5%.
+**B) ~20%.** The formula for impermanent loss is (2vr)/(1+r) - 1 where r is the price ratio. For r=4, IL Ëœ 20%. For comparison, 2x ? 5.7%, 3x ? 13.4%, 5x ? 25.5%.
 </details>
 
 2. Why must flash loans be repaid in the same transaction?
@@ -587,7 +587,7 @@ console.log(`IL: ${result.ilPercent.toFixed(2)}%`);  // ~-5.7%
 
 <details>
 <summary>Answer&lt;/summary&gt;
-**B) Because Ethereum atomicity guarantees the entire tx succeeds or reverts.** If the flash loan isn't repaid by the end of the transaction, the entire transaction reverts — including the loan. This makes them trustless.
+**B) Because Ethereum atomicity guarantees the entire tx succeeds or reverts.** If the flash loan isn't repaid by the end of the transaction, the entire transaction reverts â€” including the loan. This makes them trustless.
 </details>
 
 3. What is the primary risk of an algorithmic stablecoin?
@@ -603,13 +603,13 @@ console.log(`IL: ${result.ilPercent.toFixed(2)}%`);  // ~-5.7%
 
 4. What does TVL measure in DeFi?
    - A) Transaction Volume Location
-   - B) Total Value Locked — the amount of assets deposited in a protocol
+   - B) Total Value Locked â€” the amount of assets deposited in a protocol
    - C) Token Velocity Limit
    - D) Total Verified Loans
 
 <details>
 <summary>Answer&lt;/summary&gt;
-**B) Total Value Locked — the amount of assets deposited in a protocol.** TVL measures the sum of all assets deposited in a DeFi protocol's smart contracts. It's a key metric for protocol adoption and ecosystem health.
+**B) Total Value Locked â€” the amount of assets deposited in a protocol.** TVL measures the sum of all assets deposited in a DeFi protocol's smart contracts. It's a key metric for protocol adoption and ecosystem health.
 </details>
 
 5. What is a key difference between a DAO and a traditional company?
@@ -962,7 +962,7 @@ export { Processor, Task }
 ## Practical Takeaways
 
 1. Use a calculator to estimate impermanent loss before providing AMM liquidity.
-2. Monitor health factors on lending positions — set alerts for liquidation thresholds.
+2. Monitor health factors on lending positions â€” set alerts for liquidation thresholds.
 3. Prefer crypto-collateralized stablecoins (DAI) over algorithmic ones for safety.
 4. Verify contract audits and TVL distribution before depositing in any protocol.
 5. Use slippage protection (minOut) when trading on AMMs.
@@ -974,7 +974,7 @@ export { Processor, Task }
 
 ### Review Questions
 
-1. Explain the constant product formula (x × y = k).
+1. Explain the constant product formula (x Ã— y = k).
 2. What is "Impermanent Loss"?
 3. Define "Over-collateralization".
 4. How do decentralized Oracles (like Chainlink) help DeFi protocols?

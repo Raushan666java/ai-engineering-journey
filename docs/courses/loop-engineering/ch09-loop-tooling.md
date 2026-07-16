@@ -1,4 +1,4 @@
-# Chapter 9: Loop Tooling
+﻿# Chapter 9: Loop Tooling
 
 ---
 
@@ -9,16 +9,16 @@ After completing this chapter you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/loop-engineering/ch09-loop-tooling/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/loop-engineering/ch09-loop-tooling/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/loop-engineering/ch09-loop-tooling/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/loop-engineering/ch09-loop-tooling/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/loop-engineering/ch09-loop-tooling/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/loop-engineering/ch09-loop-tooling/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/loop-engineering/ch09-loop-tooling/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/loop-engineering/ch09-loop-tooling/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/loop-engineering/ch09-loop-tooling/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/loop-engineering/ch09-loop-tooling/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/loop-engineering/ch09-loop-tooling/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/loop-engineering/ch09-loop-tooling/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -35,7 +35,7 @@ After completing this chapter you will be able to:
 
 ## Theory
 
-Production agent loops require more than correct logic — they need **tooling** that makes them reliable, observable, and safe. This chapter introduces five categories of production loop tooling.
+Production agent loops require more than correct logic â€” they need **tooling** that makes them reliable, observable, and safe. This chapter introduces five categories of production loop tooling.
 
 ### 9.1 Durable Execution
 
@@ -47,10 +47,10 @@ Agent loops run for unpredictable durations. A single coding task may require do
 **Saga pattern.** When a multi-step workflow fails midway, some steps may have already produced side effects (files written, emails sent, API calls made). The saga pattern defines a **compensation** for each step. If step N fails, the engine runs `compensate(N-1)`, `compensate(N-2)`, ..., `compensate(1)` in reverse order, undoing each effect.
 
 ```
-Step 1: createFile → compensation: deleteFile
-Step 2: editFile   → compensation: revertFile
-Step 3: deploy     → compensation: rollbackDeploy  ← FAIL
-⇒ Run compensations: rollbackDeploy, revertFile, deleteFile
+Step 1: createFile â†’ compensation: deleteFile
+Step 2: editFile   â†’ compensation: revertFile
+Step 3: deploy     â†’ compensation: rollbackDeploy  â† FAIL
+â‡’ Run compensations: rollbackDeploy, revertFile, deleteFile
 ```
 
 **Temporal-style workflows.** Temporal.io popularized the idea of writing workflows as regular async functions whose execution is transparently recorded. The SDK replays the function on worker restart, skipping already-completed activities. While we implement a simplified version here, the same principle applies: make side effects idempotent and log every transition.
@@ -58,7 +58,7 @@ Step 3: deploy     → compensation: rollbackDeploy  ← FAIL
 ### 9.2 Checkpoint / Restore
 
 
-Checkpointing saves the complete agent context — conversation history, tool results, accumulated state — to durable storage. On recovery, the agent loads the checkpoint and continues without losing context.
+Checkpointing saves the complete agent context â€” conversation history, tool results, accumulated state â€” to durable storage. On recovery, the agent loads the checkpoint and continues without losing context.
 
 **What to save in a checkpoint:**
 
@@ -86,13 +86,13 @@ Agent loops can burn through tokens and money at alarming speed. A runaway loop 
 **Per-cost budget.** Multiply token counts by model pricing to enforce a dollar limit. This accounts for the fact that different models have different costs.
 
 ```
-┌──────────────────────────────────────┐
-│           Budget Envelope             │
-│  ┌──────┐  ┌──────────┐  ┌───────┐  │
-│  │Tokens│  │Iterations│  │Cost($)│  │
-│  └──────┘  └──────────┘  └───────┘  │
-│  Loop terminates when ANY limit hit  │
-└──────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚           Budget Envelope             â”‚
+â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”  â”‚
+â”‚  â”‚Tokensâ”‚  â”‚Iterationsâ”‚  â”‚Cost($)â”‚  â”‚
+â”‚  â””â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚
+â”‚  Loop terminates when ANY limit hit  â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 **Token bucket algorithm.** The classic rate limiter uses a bucket that fills at a steady rate and drains with each request. If the bucket is empty, the request is denied or queued.
@@ -118,19 +118,19 @@ Debugging an agent loop is harder than debugging a synchronous program because t
 ### 9.5 Loop Testing
 
 
-Agent loops are stochastic — the same input can produce different outputs. Testing requires strategies beyond simple assertions.
+Agent loops are stochastic â€” the same input can produce different outputs. Testing requires strategies beyond simple assertions.
 
 **Deterministic replay.** Record the LLM responses and tool results for a given run. In test mode, replay the exact same sequence instead of calling live APIs. This makes tests hermetic and reproducible.
 
 **Simulation.** Replace the real LLM with a mock that returns controlled responses. Test edge cases: tool call parsing errors, empty responses, refusal messages.
 
-**Chaos engineering.** Inject failures into the loop — network timeouts, corrupted tool results, delayed responses — and verify the agent handles them gracefully. A resilient loop should degrade instead of crash.
+**Chaos engineering.** Inject failures into the loop â€” network timeouts, corrupted tool results, delayed responses â€” and verify the agent handles them gracefully. A resilient loop should degrade instead of crash.
 
 ---
 
 ## Examples
 
-### Example 9.1 — DurableWorkflowEngine with Saga Compensation
+### Example 9.1 â€” DurableWorkflowEngine with Saga Compensation
 
 This engine executes a sequence of steps where each step may have a compensating action. If any step throws, all prior steps are compensated in reverse order.
 
@@ -280,8 +280,8 @@ async function mainDurableWorkflow() {
   const result = await engine.run(steps);
   console.log("\nResult:", result.success ? "SUCCESS" : "FAILED");
   if (!result.success) console.log("Error:", result.error);
-  console.log("Executed steps:", result.executedSteps.join(" → "));
-  console.log("Compensated steps:", result.compensatedSteps.join(" → "));
+  console.log("Executed steps:", result.executedSteps.join(" â†’ "));
+  console.log("Compensated steps:", result.compensatedSteps.join(" â†’ "));
 }
 
 await mainDurableWorkflow();
@@ -298,13 +298,13 @@ await mainDurableWorkflow();
 
 Result: FAILED
 Error: Step "deploy" failed: Deployment server unreachable
-Executed steps: create-readme → create-config
-Compensated steps: deploy → create-config → create-readme
+Executed steps: create-readme â†’ create-config
+Compensated steps: deploy â†’ create-config â†’ create-readme
 ```
 
 ---
 
-### Example 9.2 — StateCheckpointer for Agent Context
+### Example 9.2 â€” StateCheckpointer for Agent Context
 
 This checkpointer serializes the full agent conversation and state to a JSON file. On restart, it loads the checkpoint and resumes from the last completed step.
 
@@ -345,7 +345,7 @@ class StateCheckpointer {
   async save(checkpoint: AgentCheckpoint): Promise<void> {
     const path = this.checkpointPath(checkpoint.loopId);
     await Bun.write(path, JSON.stringify(checkpoint, null, 2));
-    console.log(`[checkpoint] saved step ${checkpoint.step} → ${path}`);
+    console.log(`[checkpoint] saved step ${checkpoint.step} â†’ ${path}`);
   }
 
   async load(loopId: string): Promise<AgentCheckpoint | null> {
@@ -453,7 +453,7 @@ async function mainCheckpointer() {
 
   const resumed = await agent.resume();
   if (!resumed) {
-    console.log("[agent] fresh start — no checkpoint found");
+    console.log("[agent] fresh start â€” no checkpoint found");
   }
 
   for (let i = 0; i < 3; i++) {
@@ -474,7 +474,7 @@ async function mainCheckpointer() {
   const ctx = agent.getContext();
   console.log(`\nFinal state: step=${ctx.step}, messages=${ctx.messages.length}, tokens=${ctx.tokensUsed}`);
 
-  // Simulate crash recovery — create a new agent with same loopId
+  // Simulate crash recovery â€” create a new agent with same loopId
   console.log("\n--- Simulating restart ---");
   const agent2 = new CheckpointedAgent("run-demo-001");
   const recovered = await agent2.resume();
@@ -487,10 +487,10 @@ await mainCheckpointer();
 **Expected output:**
 
 ```
-[agent] fresh start — no checkpoint found
-[checkpoint] saved step 1 → /tmp/agent-checkpoints/run-demo-001.json
-[checkpoint] saved step 2 → /tmp/agent-checkpoints/run-demo-001.json
-[checkpoint] saved step 3 → /tmp/agent-checkpoints/run-demo-001.json
+[agent] fresh start â€” no checkpoint found
+[checkpoint] saved step 1 â†’ /tmp/agent-checkpoints/run-demo-001.json
+[checkpoint] saved step 2 â†’ /tmp/agent-checkpoints/run-demo-001.json
+[checkpoint] saved step 3 â†’ /tmp/agent-checkpoints/run-demo-001.json
 
 Final state: step=3, messages=6, tokens=0
 
@@ -501,7 +501,7 @@ Recovered: true, step=3
 
 ---
 
-### Example 9.3 — TokenBucket Rate Limiter + LoopTracer
+### Example 9.3 â€” TokenBucket Rate Limiter + LoopTracer
 
 This example provides a token-bucket rate limiter and a structured tracer that records spans for each loop step.
 
@@ -740,7 +740,7 @@ Cycle breakdown:
 
 ---
 
-### Example 9.4 — ChaosMonkey for Failure Injection
+### Example 9.4 â€” ChaosMonkey for Failure Injection
 
 ChaosMonkey injects configurable failures into a running loop. Use it to verify that your agent handles network errors, rate limits, corrupt data, and crashes gracefully.
 
@@ -836,7 +836,7 @@ class ResilientLoop {
         } catch (err) {
           attempts++;
           retries++;
-          console.log(`  Step ${step}: FAIL (attempt ${attempts}) — ${err instanceof Error ? err.message : String(err)}`);
+          console.log(`  Step ${step}: FAIL (attempt ${attempts}) â€” ${err instanceof Error ? err.message : String(err)}`);
           if (attempts > this.maxRetries) {
             failures++;
             console.log(`  Step ${step}: GIVING UP after ${this.maxRetries} retries`);
@@ -874,17 +874,17 @@ async function mainChaos() {
 await mainChaos();
 ```
 
-**Expected output (stochastic — exact output depends on random seed):**
+**Expected output (stochastic â€” exact output depends on random seed):**
 
 ```
 Running chaos-resilient loop...
 
   Step 0: Reading file...
-  Step 1: FAIL (attempt 1) — Tool execution timed out
-  Step 1: FAIL (attempt 2) — Tool execution timed out
-  Step 1: FAIL (attempt 3) — GIVING UP after 2 retries
+  Step 1: FAIL (attempt 1) â€” Tool execution timed out
+  Step 1: FAIL (attempt 2) â€” Tool execution timed out
+  Step 1: FAIL (attempt 3) â€” GIVING UP after 2 retries
   Step 2: Searching code...
-  Step 3: FAIL (attempt 1) — 429 Too Many Requests
+  Step 3: FAIL (attempt 1) â€” 429 Too Many Requests
   Step 3: Writing output...
   Step 4: Analyzing results...
   Step 5: Reading file...
@@ -902,7 +902,7 @@ The following suite brings together six production-grade tools that wrap any age
 ```typescript
 // advanced-loop-tooling-suite.ts
 
-// ─── 1. LoopDebugger: breakpoints, cycle stepping, state inspection ───
+// â”€â”€â”€ 1. LoopDebugger: breakpoints, cycle stepping, state inspection â”€â”€â”€
 
 interface Breakpoint {
   condition: string;
@@ -963,7 +963,7 @@ class LoopDebugger {
   }
 }
 
-// ─── 2. LoopProfiler: cycle-time histogram, hot-spot detection ───
+// â”€â”€â”€ 2. LoopProfiler: cycle-time histogram, hot-spot detection â”€â”€â”€
 
 interface ProfileSample {
   step: number;
@@ -1029,7 +1029,7 @@ class LoopProfiler {
   }
 }
 
-// ─── 3. TraceVisualizer: flame-graph and cycle-metrics data ───
+// â”€â”€â”€ 3. TraceVisualizer: flame-graph and cycle-metrics data â”€â”€â”€
 
 interface FlameGraphNode {
   name: string;
@@ -1091,7 +1091,7 @@ class TraceVisualizer {
   }
 }
 
-// ─── 4. LoopTestHarness: mock outputs, assertion engine, property-based testing ───
+// â”€â”€â”€ 4. LoopTestHarness: mock outputs, assertion engine, property-based testing â”€â”€â”€
 
 interface MockSpec {
   toolName: string;
@@ -1165,7 +1165,7 @@ class LoopTestHarness {
   }
 }
 
-// ─── 5. LoopScaffoldGenerator: boilerplate for new agent loops ───
+// â”€â”€â”€ 5. LoopScaffoldGenerator: boilerplate for new agent loops â”€â”€â”€
 
 interface LoopBlueprint {
   name: string;
@@ -1194,7 +1194,7 @@ ${blueprint.tools.map((t) => `    - ${t}`).join("\n")}
     selfCritique: ${String(blueprint.hasCritique)}
 `);
 
-    files.set("index.ts", `// ${blueprint.name} — Auto-generated agent loop
+    files.set("index.ts", `// ${blueprint.name} â€” Auto-generated agent loop
 import { createLoopRuntime } from "./runtime";
 
 interface ToolCall {
@@ -1275,7 +1275,7 @@ export async function loadCheckpoint<T>(loopId: string): Promise<T | null> {
   }
 }
 
-// ─── 6. ConfigurationManager: YAML/JSON configs with schema validation ───
+// â”€â”€â”€ 6. ConfigurationManager: YAML/JSON configs with schema validation â”€â”€â”€
 
 interface LoopConfigSchema {
   fields: Array<{
@@ -1374,10 +1374,10 @@ class ConfigurationManager {
   }
 }
 
-// ─── Demo: wiring all six tools together ───
+// â”€â”€â”€ Demo: wiring all six tools together â”€â”€â”€
 
 async function demoAdvancedToolingSuite() {
-  console.log("═══ Advanced Loop Tooling Suite Demo ═══\n");
+  console.log("â•â•â• Advanced Loop Tooling Suite Demo â•â•â•\n");
 
   // 1. Scaffold a new loop
   const generator = new LoopScaffoldGenerator();
@@ -1445,7 +1445,7 @@ async function demoAdvancedToolingSuite() {
   const assertionResults = harness.runAssertions();
   console.log("\nTest harness assertions:");
   for (const a of assertionResults) {
-    console.log(`  ${a.passed ? "✓" : "✗"} ${a.description}`);
+    console.log(`  ${a.passed ? "âœ“" : "âœ—"} ${a.description}`);
   }
 }
 
@@ -1454,7 +1454,7 @@ await demoAdvancedToolingSuite();
 
 **Expected output:**
 ```
-═══ Advanced Loop Tooling Suite Demo ═══
+â•â•â• Advanced Loop Tooling Suite Demo â•â•â•
 
 Generated 3 files for CodeReviewAgent
   - loop-config.yaml
@@ -1477,7 +1477,7 @@ Trace cycle metrics:
   Cycle 2: plan=800ms act=150ms critique=2200ms
 
 Test harness assertions:
-  ✓ Every read call returns content
+  âœ“ Every read call returns content
 ```
 
 
@@ -1577,12 +1577,12 @@ class SnapshotComparator {
 
   generateReport(baseline: LoopSnapshot, candidate: LoopSnapshot): string {
     const diffs = this.compare(baseline, candidate);
-    const lines = ["═══ Snapshot Comparison Report ═══\n"];
+    const lines = ["â•â•â• Snapshot Comparison Report â•â•â•\n"];
     lines.push(`Baseline:  ${baseline.id} @ ${baseline.timestamp}`);
     lines.push(`Candidate: ${candidate.id} @ ${candidate.timestamp}\n`);
     for (const d of diffs) {
-      const icon = d.impact === "critical" ? "🔴" : d.impact === "warning" ? "⚠️" : "ℹ️";
-      lines.push(`  ${icon} ${d.metric}: ${d.baseline} → ${d.candidate} (${d.delta})`);
+      const icon = d.impact === "critical" ? "ðŸ”´" : d.impact === "warning" ? "âš ï¸" : "â„¹ï¸";
+      lines.push(`  ${icon} ${d.metric}: ${d.baseline} â†’ ${d.candidate} (${d.delta})`);
     }
     return lines.join("\n");
   }
@@ -1591,7 +1591,7 @@ class SnapshotComparator {
 
 #### ScenarioRecorder
 
-Captures every step of a real loop run — LLM calls, tool results, decisions, and timing — and exports a replayable scenario file.
+Captures every step of a real loop run â€” LLM calls, tool results, decisions, and timing â€” and exports a replayable scenario file.
 
 ```typescript
 // scenario-recorder.ts
@@ -1765,7 +1765,7 @@ class ABNTestFramework {
     for (let i = 1; i < snapshots.length; i++) {
       const comp = new SnapshotComparator();
       const diffs = comp.compare(snapshots[0], snapshots[i]);
-      lines.push(`\n${snapshots[0].id} → ${snapshots[i].id}:`);
+      lines.push(`\n${snapshots[0].id} â†’ ${snapshots[i].id}:`);
       for (const d of diffs) {
         lines.push(`  ${d.metric}: ${d.delta} (${d.impact})`);
       }
@@ -1827,19 +1827,19 @@ class RegressionTestSuite {
 
       if (snapshot.totals.steps < test.expectedSteps)
         failures.push(
-          `Steps: expected ≥${test.expectedSteps}, got ${snapshot.totals.steps}`,
+          `Steps: expected â‰¥${test.expectedSteps}, got ${snapshot.totals.steps}`,
         );
       if (snapshot.totals.tokens > test.maxTokens)
         failures.push(
-          `Tokens: expected ≤${test.maxTokens}, got ${snapshot.totals.tokens}`,
+          `Tokens: expected â‰¤${test.maxTokens}, got ${snapshot.totals.tokens}`,
         );
       if (snapshot.totals.durationMs > test.maxDurationMs)
         failures.push(
-          `Duration: expected ≤${test.maxDurationMs}ms, got ${snapshot.totals.durationMs}ms`,
+          `Duration: expected â‰¤${test.maxDurationMs}ms, got ${snapshot.totals.durationMs}ms`,
         );
       if (successRate < test.minSuccessRate)
         failures.push(
-          `Success rate: expected ≥${(test.minSuccessRate * 100).toFixed(0)}%, got ${(successRate * 100).toFixed(0)}%`,
+          `Success rate: expected â‰¥${(test.minSuccessRate * 100).toFixed(0)}%, got ${(successRate * 100).toFixed(0)}%`,
         );
 
       results.push({
@@ -1929,7 +1929,7 @@ class DocumentationGenerator {
 ```typescript
 // demo-extended-tooling.ts
 async function demoExtendedTooling() {
-  console.log("═══ Extended Tooling Suite Demo ═══\n");
+  console.log("â•â•â• Extended Tooling Suite Demo â•â•â•\n");
 
   // 1. Record a scenario from a live run
   const recorder = new ScenarioRecorder(

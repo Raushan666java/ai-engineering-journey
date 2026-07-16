@@ -1,4 +1,4 @@
-# Chapter 8: Binary Trees
+﻿# Chapter 8: Binary Trees
 
 > **Previous:** [Chapter 7: Hash Tables](./07-hash-tables.md) | **Next:** [Binary Search Trees](./09-bst.md)
 
@@ -15,16 +15,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-structures/08-binary-trees/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/data-structures/08-binary-trees/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/08-binary-trees/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/data-structures/08-binary-trees/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-structures/08-binary-trees/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/data-structures/08-binary-trees/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/08-binary-trees/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/data-structures/08-binary-trees/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-structures/08-binary-trees/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/data-structures/08-binary-trees/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/08-binary-trees/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/data-structures/08-binary-trees/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -33,17 +33,17 @@
 
 ## Why Binary Trees Matter
 
-Imagine you are building the file system on your computer. Every folder can contain files or subfolders — but each folder has exactly **one parent** (except the root). That hierarchy is a tree. Now imagine an **organizational chart** of a company: the CEO at the top, VPs under them, managers under VPs, and so on. Each person reports to exactly one boss. That too is a tree.
+Imagine you are building the file system on your computer. Every folder can contain files or subfolders â€” but each folder has exactly **one parent** (except the root). That hierarchy is a tree. Now imagine an **organizational chart** of a company: the CEO at the top, VPs under them, managers under VPs, and so on. Each person reports to exactly one boss. That too is a tree.
 
 **Binary trees** restrict this structure to at most two children per node, making them the simplest hierarchical structure that still enables powerful algorithms. They are the backbone of:
 
-- **Expression evaluation** — compilers parse `a + b * c` into a binary expression tree.
-- **Search** — binary search trees enable `O(log n)` lookup.
-- **Priority queues** — binary heaps power Dijkstra's algorithm.
-- **Routing protocols** — network routing tables are organized as trees.
-- **Machine learning** — decision trees and random forests are built from binary splits.
+- **Expression evaluation** â€” compilers parse `a + b * c` into a binary expression tree.
+- **Search** â€” binary search trees enable `O(log n)` lookup.
+- **Priority queues** â€” binary heaps power Dijkstra's algorithm.
+- **Routing protocols** â€” network routing tables are organized as trees.
+- **Machine learning** â€” decision trees and random forests are built from binary splits.
 
-Without binary trees, hierarchical data would require expensive linear scans. Trees give us the ability to **skip half the data at each step** — the core idea behind logarithmic efficiency.
+Without binary trees, hierarchical data would require expensive linear scans. Trees give us the ability to **skip half the data at each step** â€” the core idea behind logarithmic efficiency.
 
 ## Chapter at a Glance
 
@@ -132,7 +132,7 @@ A **binary tree** is a hierarchical data structure where each node has at most t
 | **Full** (strict) | Every node has 0 or 2 children |
 | **Complete** | All levels filled except possibly last, filled left to right |
 | **Perfect** | All internal nodes have 2 children and all leaves at same level |
-| **Degenerate** (skewed) | Each node has at most 1 child — effectively a linked list |
+| **Degenerate** (skewed) | Each node has at most 1 child â€” effectively a linked list |
 | **Balanced** | Height difference between subtrees &lt;= 1 for all nodes |
 
 ## Inorder Traversal
@@ -140,7 +140,7 @@ A **binary tree** is a hierarchical data structure where each node has at most t
 ### Real-World Analogy
 
 
-Inorder traversal is like **reading a document left to right**. If you arrange the tree so that smaller values are on the left and larger on the right (BST), inorder gives you values in **sorted order** — just like reading a dictionary from A to Z. For expression tree `a + b`, inorder gives `a + b` — the natural infix notation.
+Inorder traversal is like **reading a document left to right**. If you arrange the tree so that smaller values are on the left and larger on the right (BST), inorder gives you values in **sorted order** â€” just like reading a dictionary from A to Z. For expression tree `a + b`, inorder gives `a + b` â€” the natural infix notation.
 
 ### Algorithm Steps (Recursive)
 
@@ -293,7 +293,7 @@ void inorderIterative(TreeNode root) {
 | Recursive | O(n) | O(h) | Every node visited once; recursion stack depth = height h |
 | Iterative | O(n) | O(h) | Every node visited once; explicit stack holds at most h nodes |
 
-**Why O(n)?** Each node is pushed/popped once — constant work per node yields linear total.
+**Why O(n)?** Each node is pushed/popped once â€” constant work per node yields linear total.
 
 **Why O(h) space?** In the worst case (skewed tree), h = n, so stack uses O(n) space. In a balanced tree, h = log n, so O(log n).
 
@@ -303,7 +303,7 @@ void inorderIterative(TreeNode root) {
 |-----------|--------------|
 | Produces sorted order in BST | Recursive version may overflow stack for deep trees |
 | Intuitive recursive formulation | Iterative version is more complex to write |
-| O(n) time is optimal | Cannot skip nodes — visits every node |
+| O(n) time is optimal | Cannot skip nodes â€” visits every node |
 
 ### Edge Cases
 
@@ -483,7 +483,7 @@ void preorderIterative(TreeNode root) {
 ### Real-World Analogy
 
 
-Postorder is like **deleting files from a folder**: you must delete all files inside a subfolder before you can delete the subfolder itself, and all subfolders before the parent. Operating systems use postorder when recursively removing directories. Compilers evaluate `a + b * c` using postorder — operands before operator.
+Postorder is like **deleting files from a folder**: you must delete all files inside a subfolder before you can delete the subfolder itself, and all subfolders before the parent. Operating systems use postorder when recursively removing directories. Compilers evaluate `a + b * c` using postorder â€” operands before operator.
 
 ### Algorithm Steps (Recursive)
 
@@ -492,7 +492,7 @@ Postorder is like **deleting files from a folder**: you must delete all files in
 3. Recursively traverse the **right** subtree.
 4. **Visit** the current node.
 
-### Algorithm Steps (Iterative — Two-Stack Method)
+### Algorithm Steps (Iterative â€” Two-Stack Method)
 
 1. Push root onto stack1.
 2. While stack1 is not empty:
@@ -953,7 +953,7 @@ int height(TreeNode root) {
 ### Real-World Analogy
 
 
-The diameter of a tree is like the **farthest distance between two cities on a road network**. The path does not have to pass through the root — it could be entirely within a subtree. It measures the tree's "spread."
+The diameter of a tree is like the **farthest distance between two cities on a road network**. The path does not have to pass through the root â€” it could be entirely within a subtree. It measures the tree's "spread."
 
 ### Algorithm (Postorder with Global Variable)
 
@@ -1201,7 +1201,7 @@ boolean isSymmetric(TreeNode root) {
 ### Real-World Analogy
 
 
-LCA in a tree is like finding the **common boss** of two employees in an org chart — the nearest person who manages both. For two cousins, their LCA is their shared grandparent. In genealogy, LCA is the most recent common ancestor.
+LCA in a tree is like finding the **common boss** of two employees in an org chart â€” the nearest person who manages both. For two cousins, their LCA is their shared grandparent. In genealogy, LCA is the most recent common ancestor.
 
 ### Algorithm
 
@@ -1554,7 +1554,7 @@ A **threaded binary tree** replaces null pointers with special links (threads):
 - A null **left** pointer points to the **inorder predecessor** of that node.
 - A null **right** pointer points to the **inorder successor** of that node.
 
-This enables O(1) space inorder traversal — no stack, no recursion.
+This enables O(1) space inorder traversal â€” no stack, no recursion.
 
 ### Types
 
@@ -1741,8 +1741,8 @@ DOM tree structure:
 - **Level-order (BFS) is iterative, not recursive**: Use a queue. While the queue is not empty, pop the front, process it, push its children. This is the natural way to visit nodes level by level.
 - **Three traversals are all O(n)**: Each node is visited exactly once. The difference is the order, not the complexity. Choose the traversal that matches your processing need.
 - **Reconstruct from traversals**: Given inorder + preorder (or inorder + postorder), you can uniquely reconstruct a binary tree. Inorder alone or preorder alone is insufficient.
-- **Threaded trees eliminate recursion**: By reusing null right pointers as inorder successor links, a threaded binary tree can be traversed without recursion or an explicit stack — useful in memory-constrained environments.
-- **Postorder is the foundation of tree DP**: Height, diameter, max path sum — all use the same postorder pattern where a node returns a computed value and updates a global variable.
+- **Threaded trees eliminate recursion**: By reusing null right pointers as inorder successor links, a threaded binary tree can be traversed without recursion or an explicit stack â€” useful in memory-constrained environments.
+- **Postorder is the foundation of tree DP**: Height, diameter, max path sum â€” all use the same postorder pattern where a node returns a computed value and updates a global variable.
 - **Recursion vs. iteration trade-off**: Recursive code is cleaner but risks stack overflow on skewed trees (n = 10^5). Always consider the constraint on tree depth.
 
 ## One-Sentence Takeaways
@@ -1751,7 +1751,7 @@ DOM tree structure:
 - Inorder visits left -> root -> right; preorder visits root -> left -> right; postorder visits left -> right -> root.
 - Level-order traversal uses a queue to process nodes by depth.
 - Tree height is the longest path from root to leaf, computed recursively in postorder.
-- Tree diameter may pass through root or stay within a subtree — compute height and max in one pass.
+- Tree diameter may pass through root or stay within a subtree â€” compute height and max in one pass.
 - Two trees are mirrors if their left and right subtrees are swapped reflections.
 - LCA is the first node where the paths to two nodes diverge into different subtrees.
 - Serialization converts a tree to a string; deserialization reconstructs it.
@@ -1803,7 +1803,7 @@ DOM tree structure:
 | Building unbalanced trees when sequential data is inserted | No self-balancing leads to O(n) operations | Use AVL, Red-Black, or B-Trees for ordered data |
 | Forgetting that leaf nodes have both children null | Checking only one child may mis-identify a leaf | Verify `node.left == null && node.right == null` |
 | Level-order using BFS without tracking level boundaries | All nodes come out in one flat queue with no level info | Use null sentinel or inner loop based on `queue.size()` per level |
-| Mistaking full binary tree (every node has 0 or 2 children) with complete binary tree (all levels filled left-to-right) | They are different — a full tree may be incomplete | Learn the 3 definitions: full, complete, perfect |
+| Mistaking full binary tree (every node has 0 or 2 children) with complete binary tree (all levels filled left-to-right) | They are different â€” a full tree may be incomplete | Learn the 3 definitions: full, complete, perfect |
 
 ### TypeScript Binary Tree Traversals
 
@@ -1897,7 +1897,7 @@ function treeDiameter<T>(root: TreeNode<T> | null): number {
     return max;
 }
 
-// Check if tree is balanced (height diff ≤ 1)
+// Check if tree is balanced (height diff â‰¤ 1)
 function isBalanced<T>(root: TreeNode<T> | null): boolean {
     function check(node: TreeNode<T> | null): number {
         if (!node) return 0;
@@ -1917,36 +1917,36 @@ function isBalanced<T>(root: TreeNode<T> | null): boolean {
 9. **What is the space complexity of iterative in-order traversal using a stack?**
    - a) O(1)
    - b) O(log n)
-   - c) O(h) where h = height ✓
+   - c) O(h) where h = height âœ“
    - d) O(n)
 
 10. **In a complete binary tree with n nodes, the height is:**
     - a) n
     - b) n/2
-    - c) ⌊log₂(n)⌋ ✓
-    - d) log₂(n+1)
+    - c) âŒŠlogâ‚‚(n)âŒ‹ âœ“
+    - d) logâ‚‚(n+1)
 
 11. **Which traversal produces the nodes in sorted order for a BST?**
     - a) Pre-order
-    - b) In-order ✓
+    - b) In-order âœ“
     - c) Post-order
     - d) Level-order
 
 12. **The diameter of a binary tree is defined as:**
     - a) The height of the tree
-    - b) The longest path between any two nodes (may or may not pass through root) ✓
+    - b) The longest path between any two nodes (may or may not pass through root) âœ“
     - c) The maximum number of nodes in any level
     - d) The number of leaf nodes
 
 13. **A tree where every node has either 0 or 2 children is called:**
     - a) Complete binary tree
-    - b) Full (strict) binary tree ✓
+    - b) Full (strict) binary tree âœ“
     - c) Perfect binary tree
     - d) Skewed binary tree
 
 14. **Morris traversal achieves O(1) space by:**
     - a) Using a queue
-    - b) Using threaded binary tree concepts ✓
+    - b) Using threaded binary tree concepts âœ“
     - c) Using recursion
     - d) Using hash set
 
@@ -1956,7 +1956,7 @@ function isBalanced<T>(root: TreeNode<T> | null): boolean {
 
 12. **Construct a binary tree from inorder and preorder traversals**: Given inorder and preorder arrays, rebuild the binary tree. Solve recursively.
 
-13. **Boundary traversal of a binary tree**: Print the boundary nodes of a binary tree in anti-clockwise direction (left boundary → leaves → right boundary reversed).
+13. **Boundary traversal of a binary tree**: Print the boundary nodes of a binary tree in anti-clockwise direction (left boundary â†’ leaves â†’ right boundary reversed).
 
 14. **Maximum path sum**: Find the maximum path sum in a binary tree. A path can start and end at any node.
 
@@ -1966,7 +1966,7 @@ function isBalanced<T>(root: TreeNode<T> | null): boolean {
 
 17. **Serialize and deserialize a binary tree**: Design algorithms to convert a binary tree to a string and reconstruct it from that string.
 
-18. **Zigzag level order traversal**: Traverse the tree in level order, alternating direction at each level (L→R, R→L, L→R, …).
+18. **Zigzag level order traversal**: Traverse the tree in level order, alternating direction at each level (Lâ†’R, Râ†’L, Lâ†’R, â€¦).
 
 19. **Check if a binary tree is symmetric (mirror of itself)**: A tree is symmetric if the left subtree is a mirror of the right subtree.
 
@@ -1980,8 +1980,8 @@ function isBalanced<T>(root: TreeNode<T> | null): boolean {
 |----------|-------------|-----------------|----------------|----------|--------|
 | Every node has 0 or 2 children | Yes | No | Yes | No | No |
 | Levels filled left-to-right | No | Yes | Yes | No | No |
-| Height | O(n) worst | ⌊log₂n⌋ | log₂(n+1) | O(log n) | n |
-| Leaves (max) | ≈ n/2 | ≈ n/2 | 2ʰ | — | 1 |
+| Height | O(n) worst | âŒŠlogâ‚‚nâŒ‹ | logâ‚‚(n+1) | O(log n) | n |
+| Leaves (max) | â‰ˆ n/2 | â‰ˆ n/2 | 2Ê° | â€” | 1 |
 | Array representation possible | No | Yes | Yes | No | No |
 | Search time | O(n) worst | O(log n) avg | O(log n) | O(log n) | O(n) |
    - c) n/2
@@ -1989,43 +1989,43 @@ function isBalanced<T>(root: TreeNode<T> | null): boolean {
 
 2. **Which traversal visits root first?**
    - a) Inorder
-   - b) Preorder ✓
+   - b) Preorder âœ“
    - c) Postorder
    - d) Level-order
 
 3. **Level-order traversal uses what data structure?**
    - a) Stack
-   - b) Queue ✓
+   - b) Queue âœ“
    - c) Priority queue
    - d) Hash table
 
 4. **Which two traversals uniquely reconstruct a binary tree?**
    - a) Preorder + postorder
-   - b) Inorder + preorder ✓
+   - b) Inorder + preorder âœ“
    - c) Inorder + level-order
    - d) Any two
 
 5. **What does a threaded tree reuse?**
    - a) Node values
-   - b) Null pointers ✓
+   - b) Null pointers âœ“
    - c) Leaf nodes
    - d) Memory allocator
 
 6. **Which traversal computes tree height most naturally?**
    - a) Preorder
    - b) Inorder
-   - c) Postorder ✓
+   - c) Postorder âœ“
    - d) Level-order
 
 7. **What is the time complexity of checking if a binary tree is symmetric?**
    - a) O(log n)
-   - b) O(n) ✓
+   - b) O(n) âœ“
    - c) O(n^2)
    - d) O(1)
 
 8. **The diameter of a tree is computed in a single pass by combining height with:**
    - a) A queue
-   - b) A global variable ✓
+   - b) A global variable âœ“
    - c) A stack
    - d) A hash set
 

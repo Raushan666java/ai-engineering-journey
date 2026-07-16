@@ -1,4 +1,4 @@
-# Chapter P6: AI/ML Fundamentals & Laravel Integration
+﻿# Chapter P6: AI/ML Fundamentals & Laravel Integration
 
 ---
 
@@ -17,16 +17,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/ai-ml-fundamentals/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/ai-ml-fundamentals/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/ai-ml-fundamentals/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/ai-ml-fundamentals/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/ai-ml-fundamentals/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/ai-ml-fundamentals/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/ai-ml-fundamentals/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/ai-ml-fundamentals/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/ai-ml-fundamentals/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/ai-ml-fundamentals/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/ai-ml-fundamentals/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/ai-ml-fundamentals/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -132,10 +132,10 @@ flowchart LR
 ---
 
 ## Theory
-> **One-Sentence Takeaway:** Theory is the foundation → master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation → master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation → master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation → master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation â†’ master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation â†’ master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation â†’ master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation â†’ master it before moving to examples and exercises.
 
 ![AI and ML Fundamentals](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/ai-ml-fundamentals.png)
 
@@ -161,13 +161,13 @@ $dataset = [
     ['sqft' => 950,  'bedrooms' => 2, 'price' => 210000],
 ];
 
-// The algorithm learns: price Ã¢â€°Ë† f(sqft, bedrooms)
-// After training: predict(1200, 3) Ã¢â€ â€™ 285000
+// The algorithm learns: price ÃƒÂ¢Ã¢â‚¬Â°Ã‹â€  f(sqft, bedrooms)
+// After training: predict(1200, 3) ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ 285000
 ```
 
 #### Unsupervised Learning
 
-Unsupervised learning has no labels. The algorithm finds hidden structure in the data Ã¢â‚¬â€ clusters of similar customers, groups of related news articles, or anomalous transactions that deviate from the norm.
+Unsupervised learning has no labels. The algorithm finds hidden structure in the data ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â clusters of similar customers, groups of related news articles, or anomalous transactions that deviate from the norm.
 
 ```php
 // Conceptual: clustering discovers groups without labels
@@ -191,9 +191,9 @@ Every ML project begins by partitioning available data into three disjoint sets:
 
 | Split | Purpose | Typical Size |
 |-------|---------|-------------|
-| Training | The model sees this data and adjusts its internal parameters | 60Ã¢â‚¬â€œ80% |
-| Validation | Used to tune hyperparameters and select between model variants | 10Ã¢â‚¬â€œ20% |
-| Test | Held back until the final evaluation. Measures real generalization | 10Ã¢â‚¬â€œ20% |
+| Training | The model sees this data and adjusts its internal parameters | 60ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“80% |
+| Validation | Used to tune hyperparameters and select between model variants | 10ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“20% |
+| Test | Held back until the final evaluation. Measures real generalization | 10ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“20% |
 
 ```php
 use Phpml\Dataset\Demo\IrisDataset;
@@ -208,13 +208,13 @@ $testSamples      = $split->getTestSamples();    // 45 samples
 $testLabels        = $split->getTestLabels();
 ```
 
-A model that scores 99% on training but 60% on test is **overfitting** Ã¢â‚¬â€ it memorized the training data instead of learning general patterns. A model that scores 60% on both is **underfitting** Ã¢â‚¬â€ it is too simple to capture the underlying structure.
+A model that scores 99% on training but 60% on test is **overfitting** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â it memorized the training data instead of learning general patterns. A model that scores 60% on both is **underfitting** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â it is too simple to capture the underlying structure.
 
 #### The Bias-Variance Tradeoff
 
-**Bias** is the error introduced by approximating a complex reality with a simplistic model. A linear regression on a sinusoidal dataset has high bias Ã¢â‚¬â€ it simply cannot curve.
+**Bias** is the error introduced by approximating a complex reality with a simplistic model. A linear regression on a sinusoidal dataset has high bias ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â it simply cannot curve.
 
-**Variance** is the error introduced by the model's sensitivity to small fluctuations in the training set. A deep decision tree that carves perfect boundaries around every training point has high variance Ã¢â‚¬â€ re-train it on a slightly different set and the boundaries shift wildly.
+**Variance** is the error introduced by the model's sensitivity to small fluctuations in the training set. A deep decision tree that carves perfect boundaries around every training point has high variance ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â re-train it on a slightly different set and the boundaries shift wildly.
 
 ```
                  Underfitting    |    Balanced    |    Overfitting
@@ -235,7 +235,7 @@ The goal is to find the sweet spot where both bias and variance are low. Increas
 | Accuracy | (TP + TN) / (TP + TN + FP + FN) | Balanced classes |
 | Precision | TP / (TP + FP) | Minimize false positives (spam detection) |
 | Recall | TP / (TP + FN) | Minimize false negatives (cancer screening) |
-| F1 Score | 2 Ãƒ→ (Precision Ãƒ→ Recall) / (Precision + Recall) | Imbalanced classes |
+| F1 Score | 2 ÃƒÆ’â†’ (Precision ÃƒÆ’â†’ Recall) / (Precision + Recall) | Imbalanced classes |
 
 ```php
 use Phpml\Metric\ClassificationReport;
@@ -259,9 +259,9 @@ $matrix = ConfusionMatrix::compute($actualLabels, $predictedLabels, [0, 1]);
 
 | Metric | Formula | Interpretation |
 |--------|---------|----------------|
-| MAE (Mean Absolute Error) | (1/n) ÃŽÂ£ |yÃ¡ÂµÂ¢ Ã¢Ë†â€™ Ã…Â·Ã¡ÂµÂ¢| | Average magnitude of error in original units |
-| MSE (Mean Squared Error) | (1/n) ÃŽÂ£ (yÃ¡ÂµÂ¢ Ã¢Ë†â€™ Ã…Â·Ã¡ÂµÂ¢)Ã‚Â² | Penalizes large errors more heavily |
-| RMSE (Root Mean Squared Error) | Ã¢Ë†Å¡MSE | Interpretable in original units, penalizes outliers |
+| MAE (Mean Absolute Error) | (1/n) ÃƒÅ½Ã‚Â£ |yÃƒÂ¡Ã‚ÂµÃ‚Â¢ ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ Ãƒâ€¦Ã‚Â·ÃƒÂ¡Ã‚ÂµÃ‚Â¢| | Average magnitude of error in original units |
+| MSE (Mean Squared Error) | (1/n) ÃƒÅ½Ã‚Â£ (yÃƒÂ¡Ã‚ÂµÃ‚Â¢ ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ Ãƒâ€¦Ã‚Â·ÃƒÂ¡Ã‚ÂµÃ‚Â¢)Ãƒâ€šÃ‚Â² | Penalizes large errors more heavily |
+| RMSE (Root Mean Squared Error) | ÃƒÂ¢Ã‹â€ Ã…Â¡MSE | Interpretable in original units, penalizes outliers |
 
 ```php
 use Phpml\Metric\Regression;
@@ -276,10 +276,10 @@ $r2   = Regression::r2Score($actual, $predicted);
 
 echo "MAE:  $" . number_format($mae, 2);   // MAE:  $12,000.00
 echo "RMSE: $" . number_format($rmse, 2);  // RMSE: $14,577.38
-echo "RÃ‚Â²:   " . number_format($r2, 4);     // RÃ‚Â²:   0.9681
+echo "RÃƒâ€šÃ‚Â²:   " . number_format($r2, 4);     // RÃƒâ€šÃ‚Â²:   0.9681
 ```
 
-The RÃ‚Â² score ranges from negative infinity to 1. A value of 1 means perfect prediction. A value of 0 means the model performs no better than predicting the mean. Negative values indicate the model is worse than the mean baseline.
+The RÃƒâ€šÃ‚Â² score ranges from negative infinity to 1. A value of 1 means perfect prediction. A value of 0 means the model performs no better than predicting the mean. Negative values indicate the model is worse than the mean baseline.
 
 ---
 
@@ -294,15 +294,15 @@ PHP-ML is the most widely used machine learning library for PHP. It provides imp
 composer require php-ai/php-ml
 ```
 
-#### 2.1 Regression Ã¢â‚¬â€ Linear Regression
+#### 2.1 Regression ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Linear Regression
 
 Linear regression models the relationship between input features and a continuous target as a linear combination:
 
 ```
-Ã…Â· = wÃ¢â€šâ‚¬ + wÃ¢â€šÂxÃ¢â€šÂ + wÃ¢â€šâ€šxÃ¢â€šâ€š + ... + wÃ¢â€šâ„¢xÃ¢â€šâ„¢
+Ãƒâ€¦Ã‚Â· = wÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€šÂ¬ + wÃƒÂ¢Ã¢â‚¬Å¡Ã‚ÂxÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â + wÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬Å¡xÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬Å¡ + ... + wÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€žÂ¢xÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€žÂ¢
 ```
 
-The algorithm finds the weights **w** that minimize the sum of squared residuals Ã¢â‚¬â€ the **ordinary least squares** (OLS) solution.
+The algorithm finds the weights **w** that minimize the sum of squared residuals ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â the **ordinary least squares** (OLS) solution.
 
 ```php
 <?php
@@ -310,7 +310,7 @@ The algorithm finds the weights **w** that minimize the sum of squared residuals
 use Phpml\Regression\LeastSquares;
 use Phpml\ModelManager;
 
-// Training data: [square_feet, bedrooms, age] Ã¢â€ â€™ price
+// Training data: [square_feet, bedrooms, age] ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ price
 $samples = [
     [1400, 3, 5],
     [1800, 4, 2],
@@ -334,7 +334,7 @@ $modelManager->saveToFile($regression, storage_path('models/housing.model'));
 
 The `LeastSquares` class solves the normal equation analytically using matrix operations. It works well when the relationship is approximately linear and features are not highly correlated (multicollinearity inflates variance).
 
-#### 2.2 Classification Ã¢â‚¬â€ Naive Bayes
+#### 2.2 Classification ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Naive Bayes
 
 Naive Bayes applies Bayes' theorem with the "naive" assumption that features are conditionally independent given the class. Despite this unrealistic assumption, it performs well on text classification, spam filtering, and sentiment analysis.
 
@@ -381,7 +381,7 @@ echo "Prediction: {$prediction}";              // positive
 echo "Confidence: " . round(max($probs), 4);    // 0.9213
 ```
 
-#### 2.3 Classification Ã¢â‚¬â€ Support Vector Machines (SVM)
+#### 2.3 Classification ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Support Vector Machines (SVM)
 
 SVM finds the hyperplane that maximizes the margin between classes. It works well in high-dimensional spaces and is effective for text classification and image recognition.
 
@@ -391,7 +391,7 @@ SVM finds the hyperplane that maximizes the margin between classes. It works wel
 use Phpml\Classification\SVC;
 use Phpml\SupportVectorMachine\Kernel;
 
-// Iris dataset: sepal_length, sepal_width, petal_length, petal_width Ã¢â€ â€™ species
+// Iris dataset: sepal_length, sepal_width, petal_length, petal_width ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ species
 $samples = [
     [5.1, 3.5, 1.4, 0.2],
     [4.9, 3.0, 1.4, 0.2],
@@ -403,9 +403,9 @@ $samples = [
 $labels = ['setosa', 'setosa', 'versicolor', 'versicolor', 'virginica', 'virginica'];
 
 $classifier = new SVC(
-    kernel: Kernel::RBF,    // Radial Basis Function Ã¢â‚¬â€ handles non-linear boundaries
+    kernel: Kernel::RBF,    // Radial Basis Function ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â handles non-linear boundaries
     degree: 3,              // Polynomial degree (ignored for RBF)
-    cost: 1000.0,           // Penalty parameter Ã¢â‚¬â€ higher = less tolerance for misclassification
+    cost: 1000.0,           // Penalty parameter ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â higher = less tolerance for misclassification
     shrinking: true,
     tolerance: 0.001,
     cacheSize: 200
@@ -420,7 +420,7 @@ echo "Predicted species: {$prediction}";  // versicolor
 
 The `cost` parameter controls the tradeoff between a smooth decision boundary and classifying every training point correctly. High cost values risk overfitting.
 
-#### 2.4 Classification Ã¢â‚¬â€ K-Nearest Neighbors
+#### 2.4 Classification ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â K-Nearest Neighbors
 
 KNN is a lazy learner that stores all training data and classifies new points by majority vote among their k nearest neighbors.
 
@@ -443,9 +443,9 @@ echo $classifier->predict([5.5, 5.5]);   // B
 echo $classifier->predict([3.0, 3.0]);   // A or B? Depends on nearest 3
 ```
 
-KNN requires no training time (it simply stores the data) but prediction time scales linearly with the dataset size. Feature scaling is critical Ã¢â‚¬â€ if one feature ranges from 1Ã¢â‚¬â€œ10 and another from 1Ã¢â‚¬â€œ1000, the distance calculation is dominated by the larger feature.
+KNN requires no training time (it simply stores the data) but prediction time scales linearly with the dataset size. Feature scaling is critical ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â if one feature ranges from 1ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“10 and another from 1ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“1000, the distance calculation is dominated by the larger feature.
 
-#### 2.5 Clustering Ã¢â‚¬â€ K-Means
+#### 2.5 Clustering ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â K-Means
 
 K-Means partitions data into K clusters, each represented by the centroid of its members.
 
@@ -462,7 +462,7 @@ $customers = [
     [33, 68000, 72], [45, 88000, 40], [27, 42000, 88],
 ];
 
-$kmeans = new KMeans(3);  // 3 clusters Ã¢â‚¬â€ high-spenders, mid-range, low-spenders
+$kmeans = new KMeans(3);  // 3 clusters ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â high-spenders, mid-range, low-spenders
 $clusters = $kmeans->cluster($customers);
 
 foreach ($clusters as $index => $members) {
@@ -475,7 +475,7 @@ foreach ($clusters as $index => $members) {
 
 K-Means requires the number of clusters to be specified upfront. The **elbow method** helps choose K: run K-Means with K = 1 through 10, plot the within-cluster sum of squares, and look for the "elbow" where adding more clusters yields diminishing returns.
 
-#### 2.6 Clustering Ã¢â‚¬â€ DBSCAN
+#### 2.6 Clustering ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â DBSCAN
 
 DBSCAN does not require specifying the number of clusters. It groups points that are closely packed together and marks points in low-density regions as outliers.
 
@@ -498,9 +498,9 @@ $clusters = $dbscan->cluster($points);
 
 `$epsilon` is the maximum distance between two points to be considered neighbors. `$minSamples` is the minimum number of points to form a dense region. DBSCAN is excellent for geospatial data, anomaly detection, and any domain where clusters have arbitrary shapes.
 
-#### 2.7 Association Learning Ã¢â‚¬â€ Apriori
+#### 2.7 Association Learning ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Apriori
 
-The Apriori algorithm discovers association rules in transactional data. It identifies items that frequently appear together Ã¢â‚¬â€ "customers who bought X also bought Y."
+The Apriori algorithm discovers association rules in transactional data. It identifies items that frequently appear together ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â "customers who bought X also bought Y."
 
 ```php
 <?php
@@ -528,12 +528,12 @@ foreach ($rules as $rule) {
     $consequent = implode(', ', $rule['consequent']);
     $support = $rule['support'];
     $confidence = $rule['confidence'];
-    echo "{$antecedent} Ã¢â€ â€™ {$consequent} (support: {$support}, confidence: {$confidence})\n";
+    echo "{$antecedent} ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ {$consequent} (support: {$support}, confidence: {$confidence})\n";
 }
 
 // Example output:
-// bread Ã¢â€ â€™ milk (support: 0.6, confidence: 0.75)
-// milk, bread Ã¢â€ â€™ butter (support: 0.4, confidence: 0.67)
+// bread ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ milk (support: 0.6, confidence: 0.75)
+// milk, bread ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ butter (support: 0.4, confidence: 0.67)
 ```
 
 #### 2.8 Dataset Management
@@ -553,7 +553,7 @@ use Phpml\CrossValidation\Split;
 $dataset = new CsvDataset(
     filename: storage_path('ml-data/housing.csv'),
     samplesColumn: 3,  // Number of feature columns before the label
-    headingRow: true   // First row is headers Ã¢â‚¬â€ skip it
+    headingRow: true   // First row is headers ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â skip it
 );
 
 // Create from arrays
@@ -564,7 +564,7 @@ $arrayDataset = new ArrayDataset($samples, $labels);
 // Random split (70/30)
 $split = new RandomSplit($dataset, 0.7);
 
-// Stratified split Ã¢â‚¬â€ preserves class proportions in both sets
+// Stratified split ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â preserves class proportions in both sets
 $stratified = new StratifiedRandomSplit($dataset, 0.7);
 
 echo "Train samples: " . count($split->getTrainSamples());     // 70% of total
@@ -742,8 +742,8 @@ $datasetWithCategories = new Labeled(
 );
 $encoder->fit($datasetWithCategories);
 $encoder->transform($datasetWithCategories);
-// After: ["red", "large"] Ã¢â€ â€™ [1.0, 0.0, 1.0, 0.0, 0.0]
-//         ["blue", "small"] Ã¢â€ â€™ [0.0, 1.0, 0.0, 0.0, 1.0]
+// After: ["red", "large"] ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ [1.0, 0.0, 1.0, 0.0, 0.0]
+//         ["blue", "small"] ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ [0.0, 1.0, 0.0, 0.0, 1.0]
 
 // MissingDataImputer: fill null values with strategic defaults
 $imputer = new MissingDataImputer('?', new StandardScaler());
@@ -772,7 +772,7 @@ $labels = [320000, 410000, 210000, 550000, 285000, 375000];
 
 $dataset = new Labeled($samples, $labels);
 
-// Ridge Regression Ã¢â‚¬â€ linear model with L2 regularization
+// Ridge Regression ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â linear model with L2 regularization
 $estimator = new Pipeline([
     new StandardScaler(),
 ], new Ridge(alpha: 1.0));
@@ -788,7 +788,7 @@ $rmse = (new RMSE())->score($predictions, [300000, 400000]);
 echo "RMSE: $rmse";
 ```
 
-#### 3.4 Classification Ã¢â‚¬â€ LogisticRegression
+#### 3.4 Classification ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â LogisticRegression
 
 ```php
 <?php
@@ -828,10 +828,10 @@ $probabilities = $estimator->proba(new Unlabeled([
     [5.9, 3.0, 4.2, 1.5],
 ]));
 print_r($probabilities[0]);
-// [0 => 0.02, 1 => 0.91, 2 => 0.07] Ã¢â‚¬â€ 91% confidence in class 1
+// [0 => 0.02, 1 => 0.91, 2 => 0.07] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â 91% confidence in class 1
 ```
 
-#### 3.5 Neural Networks Ã¢â‚¬â€ Multilayer Perceptron
+#### 3.5 Neural Networks ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Multilayer Perceptron
 
 A Multilayer Perceptron (MLP) is a feedforward neural network with one or more hidden layers. Rubix ML's MLP classifier supports configurable layers, activation functions, optimizers, and regularization.
 
@@ -870,7 +870,7 @@ $predictions = $estimator->predict(new Unlabeled($testSamples));
 $probabilities = $estimator->proba(new Unlabeled($testSamples));
 ```
 
-The architecture above has 4 Ã¢â€ â€™ 100 Ã¢â€ â€™ 50 Ã¢â€ â€™ 3 neurons. Dropout randomly disables 20% of neurons each training iteration, forcing the network to learn redundant representations and reducing overfitting.
+The architecture above has 4 ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ 100 ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ 50 ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ 3 neurons. Dropout randomly disables 20% of neurons each training iteration, forcing the network to learn redundant representations and reducing overfitting.
 
 #### 3.6 Random Forest
 
@@ -1079,14 +1079,14 @@ foreach ($samples as $sample) {
     echo "[" . implode(", ", $sample) . "]\n";
 }
 // 'the product is amazing and I love it'
-// Ã¢â€ â€™ After removing stop words: [product, amazing, love]
+// ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ After removing stop words: [product, amazing, love]
 // 'this is a terrible waste of money'
-// Ã¢â€ â€™ After: [terrible, waste, money]
+// ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ After: [terrible, waste, money]
 ```
 
 #### 4.3 TF-IDF Vectorization
 
-TF-IDF (Term Frequency Ã¢â‚¬â€ Inverse Document Frequency) assigns higher weight to words that are frequent in a specific document but rare across all documents.
+TF-IDF (Term Frequency ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Inverse Document Frequency) assigns higher weight to words that are frequent in a specific document but rare across all documents.
 
 ```php
 <?php
@@ -1249,7 +1249,7 @@ echo "Confidence: " . round($result['confidence'], 4) . "\n";
 
 #### 4.6 Stemming
 
-Stemming reduces words to their root form (running Ã¢â€ â€™ run, better Ã¢â€ â€™ better, walked Ã¢â€ â€™ walk). PHP-ML provides a Porter Stemmer implementation.
+Stemming reduces words to their root form (running ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ run, better ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ better, walked ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ walk). PHP-ML provides a Porter Stemmer implementation.
 
 ```php
 <?php
@@ -1275,7 +1275,7 @@ class SimpleStemmer
             }
         }
 
-        // Handle double consonants at end (running Ã¢â€ â€™ run)
+        // Handle double consonants at end (running ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ run)
         if (strlen($lower) > 3) {
             $last = substr($lower, -1);
             $secondLast = substr($lower, -2, 1);
@@ -2470,7 +2470,7 @@ class FeatureController extends Controller
 ### 8. Model Evaluation & MLOps Basics
 
 
-MLOps (Machine Learning Operations) brings DevOps principles to ML workflows Ã¢â‚¬â€ experiment tracking, model registry, drift monitoring, and safe deployment strategies.
+MLOps (Machine Learning Operations) brings DevOps principles to ML workflows ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â experiment tracking, model registry, drift monitoring, and safe deployment strategies.
 
 #### 8.1 Experiment Tracking
 
@@ -2548,7 +2548,7 @@ class ExperimentTracker
         }
 
         $event = $this->stopwatch->stop($this->runId);
-        $duration = $event->getDuration() / 1000; // milliseconds Ã¢â€ â€™ seconds
+        $duration = $event->getDuration() / 1000; // milliseconds ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ seconds
 
         MlExperiment::where('run_id', $this->runId)->update([
             'status' => $status,
@@ -3125,7 +3125,7 @@ class ModelDeployer
             ->first();
 
         if (!$previous) {
-            Log::channel('ml-ops')->warning('Rollback failed Ã¢â‚¬â€ no previous model', [
+            Log::channel('ml-ops')->warning('Rollback failed ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â no previous model', [
                 'model' => $modelName,
             ]);
             return null;
@@ -3234,7 +3234,7 @@ class MlPerformanceRecorder
 ```php
 <?php
 
-// config/pulse.php Ã¢â‚¬â€ ML-specific Pulse configuration
+// config/pulse.php ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â ML-specific Pulse configuration
 
 return [
     'recorders' => [
@@ -3616,9 +3616,9 @@ Custom Pulse card for the dashboard:
 
 This chapter introduced the complete pipeline for integrating machine learning into Laravel applications, spanning both classical ML algorithms and modern LLM-based AI.
 
-**Machine Learning Fundamentals**: We established the three paradigms Ã¢â‚¬â€ supervised learning (regression and classification with labeled data), unsupervised learning (clustering and association discovery without labels), and reinforcement learning (agent-environment interaction). The training/validation/test split, bias-variance tradeoff, and evaluation metrics (accuracy, precision, recall, F1, RMSE, MAE, RÃ‚Â²) form the theoretical foundation for every ML project.
+**Machine Learning Fundamentals**: We established the three paradigms ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â supervised learning (regression and classification with labeled data), unsupervised learning (clustering and association discovery without labels), and reinforcement learning (agent-environment interaction). The training/validation/test split, bias-variance tradeoff, and evaluation metrics (accuracy, precision, recall, F1, RMSE, MAE, RÃƒâ€šÃ‚Â²) form the theoretical foundation for every ML project.
 
-**Classical ML with PHP-ML**: PHP-ML provides accessible implementations of the most important algorithms Ã¢â‚¬â€ LeastSquares regression, Naive Bayes classification, SVM with configurable kernels, K-Nearest Neighbors, K-Means and DBSCAN clustering, and Apriori association learning. Dataset management with CSV loading, random and stratified splitting, k-fold cross-validation, and model persistence via the ModelManager complete the workflow.
+**Classical ML with PHP-ML**: PHP-ML provides accessible implementations of the most important algorithms ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â LeastSquares regression, Naive Bayes classification, SVM with configurable kernels, K-Nearest Neighbors, K-Means and DBSCAN clustering, and Apriori association learning. Dataset management with CSV loading, random and stratified splitting, k-fold cross-validation, and model persistence via the ModelManager complete the workflow.
 
 **Advanced ML with Rubix ML**: Rubix ML introduces pipelines, transformers (StandardScaler, MinMaxScaler, OneHotEncoder, MissingDataImputer), and more sophisticated learners including LogisticRegression with Adam optimization, MultilayerPerceptron with configurable hidden layers and dropout regularization, Random Forest with feature importance scoring, and anomaly detectors (IsolationForest, LocalOutlierFactor). RBX serialization provides production-grade model persistence.
 
@@ -3626,11 +3626,11 @@ This chapter introduced the complete pipeline for integrating machine learning i
 
 **Laravel ML Workflow**: Artisan commands encapsulate training pipelines. The scheduler enables periodic retraining. A model registry database table tracks versioning. A/B testing splits traffic between model versions. Feature stores in Redis and MySQL provide low-latency feature access.
 
-**Hybrid AI Integration**: Classical ML models exposed as Laravel AI SDK tools give LLM agents direct access to structured predictions. The agent can call a churn model, receive probability scores, and synthesize natural-language explanations with business recommendations Ã¢â‚¬â€ combining the reliability of statistical models with the reasoning flexibility of large language models.
+**Hybrid AI Integration**: Classical ML models exposed as Laravel AI SDK tools give LLM agents direct access to structured predictions. The agent can call a churn model, receive probability scores, and synthesize natural-language explanations with business recommendations ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â combining the reliability of statistical models with the reasoning flexibility of large language models.
 
 **Feature Engineering**: Complete data pipelines for collection, cleaning (null handling, IQR outlier removal, capping), transformation (min-max scaling, standard scaling, log transform, one-hot encoding, interaction terms), feature selection (correlation, variance, mutual information), and batch queue processing prepare production data for training.
 
-**MLOps**: Experiment tracking logs every training run with parameters and metrics. The model registry manages staging, production, shadow, canary, and green versions. Feature drift and concept drift detectors trigger automatic retraining. Deployment strategies (shadow Ã¢â€ â€™ canary Ã¢â€ â€™ blue-green) with immediate rollback capability ensure safe model updates.
+**MLOps**: Experiment tracking logs every training run with parameters and metrics. The model registry manages staging, production, shadow, canary, and green versions. Feature drift and concept drift detectors trigger automatic retraining. Deployment strategies (shadow ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ canary ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ blue-green) with immediate rollback capability ensure safe model updates.
 
 ---
 

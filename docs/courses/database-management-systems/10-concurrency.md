@@ -1,4 +1,4 @@
-# Chapter 10: Concurrency Control
+﻿# Chapter 10: Concurrency Control
 
 
 
@@ -6,16 +6,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/10-concurrency/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/10-concurrency/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/10-concurrency/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/10-concurrency/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/10-concurrency/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/10-concurrency/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/10-concurrency/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/10-concurrency/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/10-concurrency/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/10-concurrency/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/10-concurrency/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/10-concurrency/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -490,7 +490,7 @@ Two employees write cell phone numbers on the same form. Employee A writes "555-
 
 1. T1 writes A ? 100 (uncommitted)
 
-2. T2 writes A ? 200 (uncommitted) â†’ overwrites T1's uncommitted write
+2. T2 writes A ? 200 (uncommitted) Ã¢â€ â€™ overwrites T1's uncommitted write
 
 3. T1 commits ? A = 100? 
 
@@ -2955,27 +2955,27 @@ Txn C (ts=35): sees X_v3 (value=300)
 
 +-------------------------------------+
 
-Â¦ Row: id=1, name='Alice', amount=500 Â¦
+Ã‚Â¦ Row: id=1, name='Alice', amount=500 Ã‚Â¦
 
-Â¦ xmin=100 (created by txn 100)        Â¦
+Ã‚Â¦ xmin=100 (created by txn 100)        Ã‚Â¦
 
-Â¦ xmax=150 (deleted by txn 150)        Â¦
+Ã‚Â¦ xmax=150 (deleted by txn 150)        Ã‚Â¦
 
-Â¦ ctid=(0,2) (next version pointer)    Â¦
-
-+-------------------------------------+
-
-
+Ã‚Â¦ ctid=(0,2) (next version pointer)    Ã‚Â¦
 
 +-------------------------------------+
 
-Â¦ Row: id=1, name='Alice', amount=600 Â¦
 
-Â¦ xmin=150 (created by txn 150)        Â¦
 
-Â¦ xmax=0 (current version)             Â¦
++-------------------------------------+
 
-Â¦ ctid=(0,0) (end of chain)            Â¦
+Ã‚Â¦ Row: id=1, name='Alice', amount=600 Ã‚Â¦
+
+Ã‚Â¦ xmin=150 (created by txn 150)        Ã‚Â¦
+
+Ã‚Â¦ xmax=0 (current version)             Ã‚Â¦
+
+Ã‚Â¦ ctid=(0,0) (end of chain)            Ã‚Â¦
 
 +-------------------------------------+
 
@@ -2993,9 +2993,9 @@ Clustered Index:                    UNDO Log:
 
 +---------------------+           +----------------------+
 
-Â¦ id=1, amount=600    Â¦ ? - - -  Â¦ amount=500 (txn 100) Â¦
+Ã‚Â¦ id=1, amount=600    Ã‚Â¦ ? - - -  Ã‚Â¦ amount=500 (txn 100) Ã‚Â¦
 
-Â¦ roll_ptr=0xABCD1234 Â¦    roll  Â¦ amount=400 (txn 50)  Â¦
+Ã‚Â¦ roll_ptr=0xABCD1234 Ã‚Â¦    roll  Ã‚Â¦ amount=400 (txn 50)  Ã‚Â¦
 
 +---------------------+   back   +----------------------+
 
@@ -4552,7 +4552,7 @@ The TypeScript code below simulates a lock manager with shared/exclusive locks, 
 
 ```typescript
 // ============================================================
-// Lock Manager & Deadlock Detector â€” TypeScript
+// Lock Manager & Deadlock Detector Ã¢â‚¬â€ TypeScript
 // ============================================================
 
 enum LockMode { SHARED, EXCLUSIVE }
@@ -4624,7 +4624,7 @@ class LockManager {
         if (!visited.has(next)) {
           if (dfs(next, graph, path)) return true;
         } else if (recStack.has(next)) {
-          // Found cycle â€” extract it from path
+          // Found cycle Ã¢â‚¬â€ extract it from path
           const cycleStart = path.indexOf(next);
           path.splice(0, cycleStart);
           path.push(next);
@@ -4673,9 +4673,9 @@ console.log('T1 acquires X(A)');
 lm.acquire(1, 'A', LockMode.EXCLUSIVE);
 console.log('T2 acquires X(B)');
 lm.acquire(2, 'B', LockMode.EXCLUSIVE);
-console.log('T1 requests X(B) â€” WAIT');
+console.log('T1 requests X(B) Ã¢â‚¬â€ WAIT');
 lm.acquire(1, 'B', LockMode.EXCLUSIVE);
-console.log('T2 requests X(A) â€” WAIT (DEADLOCK!)');
+console.log('T2 requests X(A) Ã¢â‚¬â€ WAIT (DEADLOCK!)');
 lm.acquire(2, 'A', LockMode.EXCLUSIVE);
 lm.printState();
 ```
@@ -4727,7 +4727,7 @@ flowchart LR
     c) Read-only workloads
     d) Write-heavy workloads
 
-**Answers:** 11-b, 12-b, 13-a (older timestamp wins â€” Thomas Write Rule), 14-b
+**Answers:** 11-b, 12-b, 13-a (older timestamp wins Ã¢â‚¬â€ Thomas Write Rule), 14-b
 
 ---
 

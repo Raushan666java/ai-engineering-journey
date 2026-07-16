@@ -1,6 +1,6 @@
-# Chapter 15: NP-Completeness
+﻿# Chapter 15: NP-Completeness
 
-> **Prerequisites:** [Chapter 14: String Algorithms](./14-string-algorithms.md) — Understanding of polynomial-time algorithms | **Next:** [Chapter 16: Approximation Algorithms](./16-approximation.md) — Coping with NP-hardness via approximation
+> **Prerequisites:** [Chapter 14: String Algorithms](./14-string-algorithms.md) â€” Understanding of polynomial-time algorithms | **Next:** [Chapter 16: Approximation Algorithms](./16-approximation.md) â€” Coping with NP-hardness via approximation
 
 ## Learning Objectives
 
@@ -9,16 +9,16 @@ By the end of this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/algorithms/15-np-completeness/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/algorithms/15-np-completeness/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/algorithms/15-np-completeness/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/algorithms/15-np-completeness/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/algorithms/15-np-completeness/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/algorithms/15-np-completeness/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/algorithms/15-np-completeness/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/algorithms/15-np-completeness/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/algorithms/15-np-completeness/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/algorithms/15-np-completeness/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/algorithms/15-np-completeness/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/algorithms/15-np-completeness/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -29,18 +29,18 @@ By the end of this chapter, students will be able to:
 2. Perform polynomial-time reductions between problems.
 3. Understand the statement and significance of the Cook-Levin theorem.
 4. Prove NP-completeness of classic problems: SAT, TSP, vertex cover, clique.
-5. Apply reduction chains (3-SAT → Clique → Vertex Cover → Hamiltonian → TSP) with concrete implementations.
+5. Apply reduction chains (3-SAT â†’ Clique â†’ Vertex Cover â†’ Hamiltonian â†’ TSP) with concrete implementations.
 6. Recognize NP-hard problems in real systems and select appropriate coping strategies.
 
 ---
 
 ### Why NP-Completeness Matters
 
-Imagine you are tasked with finding the most efficient delivery route for 100 packages across a city. Brute-forcing every possible sequence would take longer than the age of the universe. You spend months trying to design a "fast" algorithm before realizing the problem is provably hard — no polynomial-time solution exists (unless P = NP).
+Imagine you are tasked with finding the most efficient delivery route for 100 packages across a city. Brute-forcing every possible sequence would take longer than the age of the universe. You spend months trying to design a "fast" algorithm before realizing the problem is provably hard â€” no polynomial-time solution exists (unless P = NP).
 
-This is the value of NP-completeness theory: it saves you from chasing impossible solutions. When you prove a problem is NP-complete, you know that countless brilliant minds have tried and failed to solve it efficiently. The rational response is not to give up — it is to pivot to **approximation algorithms**, **heuristics**, **parameterized techniques**, or **special-case solvers** that work well in practice.
+This is the value of NP-completeness theory: it saves you from chasing impossible solutions. When you prove a problem is NP-complete, you know that countless brilliant minds have tried and failed to solve it efficiently. The rational response is not to give up â€” it is to pivot to **approximation algorithms**, **heuristics**, **parameterized techniques**, or **special-case solvers** that work well in practice.
 
-**Real-world analogy:** NP-completeness is like a geological survey before digging a tunnel. If you discover bedrock that cannot be drilled through with your equipment, you don't keep drilling — you change the plan. NP-completeness tells you bedrock exists, saving years of wasted effort.
+**Real-world analogy:** NP-completeness is like a geological survey before digging a tunnel. If you discover bedrock that cannot be drilled through with your equipment, you don't keep drilling â€” you change the plan. NP-completeness tells you bedrock exists, saving years of wasted effort.
 
 ---
 
@@ -52,7 +52,7 @@ This is the value of NP-completeness theory: it saves you from chasing impossibl
 | NP-Complete | In NP and every NP problem reduces to it | Hardest problems in NP; no poly-time algorithm known |
 | NP-Hard | At least as hard as NP-complete (not necessarily in NP) | Includes optimization versions and undecidable problems |
 | Cook-Levin Theorem | SAT is NP-complete | First NP-completeness proof; all reductions chain from SAT |
-| Reductions | Transform problem A to problem B in poly time | If A ≤ₚ B and B ∈ P, then A ∈ P |
+| Reductions | Transform problem A to problem B in poly time | If A â‰¤â‚š B and B âˆˆ P, then A âˆˆ P |
 | Coping Strategies | Approximate, heuristic, parameterize, brute-force for small n | Industry survival guide for NP-hard problems |
 
 ### Chapter Roadmap
@@ -68,11 +68,11 @@ flowchart LR
     D --> E
     D --> F[Cook-Levin SAT]
     D --> G[Reductions]
-    G --> H[SAT → 3SAT]
-    G --> I[3SAT → Clique]
-    G --> J[Clique → Vertex Cover]
-    G --> K[Vertex Cover → Hamiltonian]
-    G --> L[Hamiltonian → TSP]
+    G --> H[SAT â†’ 3SAT]
+    G --> I[3SAT â†’ Clique]
+    G --> J[Clique â†’ Vertex Cover]
+    G --> K[Vertex Cover â†’ Hamiltonian]
+    G --> L[Hamiltonian â†’ TSP]
     H --> I
     I --> J
     J --> K
@@ -86,37 +86,37 @@ flowchart LR
 ### 15.1 Complexity Classes
 
 
-#### The Complexity Zoo — Venn Diagram
+#### The Complexity Zoo â€” Venn Diagram
 
 | Class | Relationship | Meaning | Real-World Analogy |
 |-------|-------------|---------|--------------------|
-| **P** | Inside NP | Solvable in polynomial time | Baking a cake from a recipe — you can follow the steps and finish in a predictable time |
-| **NP** | Contains P, contains NP-Complete | Verifiable in polynomial time | Checking if someone else baked the cake correctly — verification is easier than creation |
-| **NP-Complete** | Inside NP, intersection of NP and NP-Hard | Both in NP and NP-hard | Finding a proof for a mathematical theorem — once found, it is easy to verify but hard to discover |
-| **NP-Hard** | Contains NP-Complete, extends beyond NP | At least as hard as any NP problem | Writing a program that decides if any arbitrary program halts — harder than anything in NP |
+| **P** | Inside NP | Solvable in polynomial time | Baking a cake from a recipe â€” you can follow the steps and finish in a predictable time |
+| **NP** | Contains P, contains NP-Complete | Verifiable in polynomial time | Checking if someone else baked the cake correctly â€” verification is easier than creation |
+| **NP-Complete** | Inside NP, intersection of NP and NP-Hard | Both in NP and NP-hard | Finding a proof for a mathematical theorem â€” once found, it is easy to verify but hard to discover |
+| **NP-Hard** | Contains NP-Complete, extends beyond NP | At least as hard as any NP problem | Writing a program that decides if any arbitrary program halts â€” harder than anything in NP |
 
 ```
-              ┌─────────────────────────────────────┐
-              │              NP-Hard                  │
-              │     ┌───────────────────────┐        │
-              │     │        NP             │        │
-              │     │  ┌─────────────────┐  │        │
-              │     │  │       P         │  │        │
-              │     │  │  Sorting,       │  │        │
-              │     │  │  Shortest Path  │  │        │
-              │     │  │  MST, Matching  │  │        │
-              │     │  └─────────────────┘  │        │
-              │     │  ┌─────────────────┐  │        │
-              │     │  │   NP-Complete   │  │        │
-              │     │  │  SAT, 3SAT,     │  │        │
-              │     │  │  Clique, VC,    │  │        │
-              │     │  │  TSP, SubsetSum │  │        │
-              │     │  └─────────────────┘  │        │
-              │     │                       │        │
-              │     └───────────────────────┘        │
-              │    Optimization TSP,                  │
-              │    Halting Problem                    │
-              └─────────────────────────────────────┘
+              â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+              â”‚              NP-Hard                  â”‚
+              â”‚     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”        â”‚
+              â”‚     â”‚        NP             â”‚        â”‚
+              â”‚     â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”‚        â”‚
+              â”‚     â”‚  â”‚       P         â”‚  â”‚        â”‚
+              â”‚     â”‚  â”‚  Sorting,       â”‚  â”‚        â”‚
+              â”‚     â”‚  â”‚  Shortest Path  â”‚  â”‚        â”‚
+              â”‚     â”‚  â”‚  MST, Matching  â”‚  â”‚        â”‚
+              â”‚     â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚        â”‚
+              â”‚     â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”‚        â”‚
+              â”‚     â”‚  â”‚   NP-Complete   â”‚  â”‚        â”‚
+              â”‚     â”‚  â”‚  SAT, 3SAT,     â”‚  â”‚        â”‚
+              â”‚     â”‚  â”‚  Clique, VC,    â”‚  â”‚        â”‚
+              â”‚     â”‚  â”‚  TSP, SubsetSum â”‚  â”‚        â”‚
+              â”‚     â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚        â”‚
+              â”‚     â”‚                       â”‚        â”‚
+              â”‚     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜        â”‚
+              â”‚    Optimization TSP,                  â”‚
+              â”‚    Halting Problem                    â”‚
+              â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 **Definition 15.1 (P).** The class **P** consists of all decision problems that can be solved in polynomial time by a deterministic Turing machine. Formally: a language \( L \subseteq \{0,1\}^* \) is in P if there exists a deterministic Turing machine \( M \) and a polynomial \( p(n) \) such that for all strings \( x \), \( M \) decides whether \( x \in L \) within \( O(p(|x|)) \) steps.
@@ -133,19 +133,19 @@ x \in L \iff \exists c \text{ with } |c| \le p(|x|) \text{ and } V(x, c) = \text
 
 **Examples:** SAT, TSP decision version, graph coloring, knapSack, integer factorization.
 
-**Definition 15.3 (NP-hard).** A problem \( H \) is **NP-hard** if every problem in NP can be reduced to \( H \) in polynomial time. NP-hard problems are **at least as hard** as any problem in NP — they may not even be decision problems.
+**Definition 15.3 (NP-hard).** A problem \( H \) is **NP-hard** if every problem in NP can be reduced to \( H \) in polynomial time. NP-hard problems are **at least as hard** as any problem in NP â€” they may not even be decision problems.
 
-**Real-world analogy:** NP-hard is like climbing Mount Everest — harder than any hike in a national park (NP problems). Some NP-hard problems (like the halting problem) are not even decision problems — comparable to trying to break a rock with a hammer that does not exist.
+**Real-world analogy:** NP-hard is like climbing Mount Everest â€” harder than any hike in a national park (NP problems). Some NP-hard problems (like the halting problem) are not even decision problems â€” comparable to trying to break a rock with a hammer that does not exist.
 
 **Definition 15.4 (NP-complete).** A problem is **NP-complete** if it is (a) **in NP** and (b) **NP-hard**.
 
-**Real-world analogy:** If NP problems are all "hikes in the park," NP-complete problems are the most difficult trails — still hikes (in NP) but as hard as any possible hike.
+**Real-world analogy:** If NP problems are all "hikes in the park," NP-complete problems are the most difficult trails â€” still hikes (in NP) but as hard as any possible hike.
 
-**The central question:** Is \( P = NP \)? That is, can every problem whose solution can be verified in polynomial time also be solved in polynomial time? This is one of the seven Millennium Prize Problems — a correct solution carries a $1M prize.
+**The central question:** Is \( P = NP \)? That is, can every problem whose solution can be verified in polynomial time also be solved in polynomial time? This is one of the seven Millennium Prize Problems â€” a correct solution carries a $1M prize.
 
-> **Pro Tip:** The P vs NP question asks whether every efficiently verifiable problem is also efficiently solvable. Knowing that a problem is NP-complete is a signal to look for approximation, heuristics, or special cases — not to give up.
+> **Pro Tip:** The P vs NP question asks whether every efficiently verifiable problem is also efficiently solvable. Knowing that a problem is NP-complete is a signal to look for approximation, heuristics, or special cases â€” not to give up.
 >
-> **Remember:** P ⊆ NP. Every problem in P is trivially in NP (self-verifiable). The open question is whether the reverse holds.
+> **Remember:** P âŠ† NP. Every problem in P is trivially in NP (self-verifiable). The open question is whether the reverse holds.
 
 **One-Sentence Takeaway:** P = efficiently solvable, NP = efficiently verifiable; NP-complete problems are the hardest in NP and no polynomial algorithm is known for any of them.
 
@@ -162,18 +162,18 @@ x \text{ is a YES instance of } A \iff f(x) \text{ is a YES instance of } B
 
 **Notation:** \( A \le_p B \) (A reduces to B in polynomial time).
 
-**Real-world analogy:** Reducing problem A to problem B is like translating a French cookbook to English. If you know how to cook from English recipes, a French-to-English translation lets you cook French cuisine. Similarly, if you can solve B, a reduction from A to B lets you solve A — the reduction translates A's instance into B's language.
+**Real-world analogy:** Reducing problem A to problem B is like translating a French cookbook to English. If you know how to cook from English recipes, a French-to-English translation lets you cook French cuisine. Similarly, if you can solve B, a reduction from A to B lets you solve A â€” the reduction translates A's instance into B's language.
 
 **Properties:**
 - If \( A \le_p B \) and \( B \in P \), then \( A \in P \).
 - If \( A \le_p B \) and \( A \) is NP-hard, then \( B \) is NP-hard.
 - Reductions are transitive: \( A \le_p B \) and \( B \le_p C \) implies \( A \le_p C \).
 
-**Why the direction matters (common mistake):** To prove problem B is NP-hard, you reduce **from a known NP-complete problem A to B** (A ≤ₚ B). Beginners often get this backwards — reducing B to A proves nothing about B's hardness.
+**Why the direction matters (common mistake):** To prove problem B is NP-hard, you reduce **from a known NP-complete problem A to B** (A â‰¤â‚š B). Beginners often get this backwards â€” reducing B to A proves nothing about B's hardness.
 
 > **Pro Tip:** Reductions are the most important tool in NP-completeness. To prove a new problem is NP-hard, reduce a known NP-complete problem to it. The reduction must be polynomial time and preserve YES/NO answers.
 >
-> **Remember:** If A ≤ₚ B and B ∈ P, then A ∈ P. However, if A is NP-hard and A ≤ₚ B, then B is NP-hard.
+> **Remember:** If A â‰¤â‚š B and B âˆˆ P, then A âˆˆ P. However, if A is NP-hard and A â‰¤â‚š B, then B is NP-hard.
 
 **One-Sentence Takeaway:** Polynomial-time reductions transform instances of one problem to another, enabling NP-hardness proofs by showing a known NP-complete problem reduces to your problem.
 
@@ -188,14 +188,14 @@ x \text{ is a YES instance of } A \iff f(x) \text{ is a YES instance of } B
 1. **SAT is in NP:** Given a satisfying assignment (the certificate), evaluate each clause in O(number of clauses) time. Verification is clearly polynomial.
 2. **SAT is NP-hard:** For any NP language \( L \), there exists a nondeterministic Turing machine \( M \) and a polynomial \( p(n) \) such that \( M \) decides \( L \) in at most \( p(n) \) steps. We construct a Boolean formula \( \phi \) that is satisfiable iff \( M \) accepts its input \( x \). The formula \( \phi \) has three parts:
    - **Initial configuration:** Encodes the starting tape contents, head position, and state as Boolean variables.
-   - **Transition function:** Encodes the NTM's transition relation as clauses — for each time step, the next configuration follows from the current one.
+   - **Transition function:** Encodes the NTM's transition relation as clauses â€” for each time step, the next configuration follows from the current one.
    - **Acceptance condition:** At least one time step shows the machine in an accepting state.
 
    The formula is of size \( O(p(n)^2) \), polynomial in \( n \).
 
-**Why this matters:** The Cook-Levin theorem established the **first** NP-complete problem. Before 1971, there was no way to claim a problem was "as hard as any in NP." Afterward, proving any problem NP-complete became a matter of reducing from SAT — opening the floodgates for thousands of NP-completeness proofs across every field of computer science.
+**Why this matters:** The Cook-Levin theorem established the **first** NP-complete problem. Before 1971, there was no way to claim a problem was "as hard as any in NP." Afterward, proving any problem NP-complete became a matter of reducing from SAT â€” opening the floodgates for thousands of NP-completeness proofs across every field of computer science.
 
-> **Remember:** SAT gets its power from its expressiveness — any computational process can be encoded as a Boolean formula. This universality is what made Cook-Levin's proof work.
+> **Remember:** SAT gets its power from its expressiveness â€” any computational process can be encoded as a Boolean formula. This universality is what made Cook-Levin's proof work.
 
 ---
 
@@ -206,23 +206,23 @@ Here is the canonical reduction chain that connects the major NP-complete proble
 
 ```
     SAT
-     ↓
+     â†“
     3-SAT
-     ↓
+     â†“
    Clique
-     ↓
+     â†“
 Vertex Cover
-     ↓
+     â†“
 Hamiltonian Cycle
-     ↓
+     â†“
      TSP
-     ↓
+     â†“
 Subset Sum
 ```
 
 ---
 
-#### 15.4.1 SAT → 3-SAT
+#### 15.4.1 SAT â†’ 3-SAT
 
 **Problem:** Given a CNF formula (any clause length), produce an equisatisfiable 3-CNF formula.
 
@@ -230,26 +230,26 @@ Subset Sum
 
 **Algorithm:**
 ```
-For each clause C = (l1 ∨ l2 ∨ ... ∨ lk):
-    If k = 1: Replace with (l1 ∨ y1 ∨ y2) ∧ (l1 ∨ ¬y1 ∨ y2) ∧ (l1 ∨ y1 ∨ ¬y2) ∧ (l1 ∨ ¬y1 ∨ ¬y2)
-    If k = 2: Replace with (l1 ∨ l2 ∨ y) ∧ (l1 ∨ l2 ∨ ¬y)
+For each clause C = (l1 âˆ¨ l2 âˆ¨ ... âˆ¨ lk):
+    If k = 1: Replace with (l1 âˆ¨ y1 âˆ¨ y2) âˆ§ (l1 âˆ¨ Â¬y1 âˆ¨ y2) âˆ§ (l1 âˆ¨ y1 âˆ¨ Â¬y2) âˆ§ (l1 âˆ¨ Â¬y1 âˆ¨ Â¬y2)
+    If k = 2: Replace with (l1 âˆ¨ l2 âˆ¨ y) âˆ§ (l1 âˆ¨ l2 âˆ¨ Â¬y)
     If k = 3: Keep as is
     If k > 3: Introduce k-3 new variables y1, ..., y_{k-3}
-              Add clauses: (l1 ∨ l2 ∨ y1), (¬y1 ∨ l3 ∨ y2), (¬y2 ∨ l4 ∨ y3), ..., (¬y_{k-3} ∨ l_{k-1} ∨ lk)
+              Add clauses: (l1 âˆ¨ l2 âˆ¨ y1), (Â¬y1 âˆ¨ l3 âˆ¨ y2), (Â¬y2 âˆ¨ l4 âˆ¨ y3), ..., (Â¬y_{k-3} âˆ¨ l_{k-1} âˆ¨ lk)
 ```
 
-**Dry run:** Transform (a ∨ b ∨ c ∨ d) to 3-CNF
+**Dry run:** Transform (a âˆ¨ b âˆ¨ c âˆ¨ d) to 3-CNF
 ```
-Formula: (a ∨ b ∨ c ∨ d), k = 4
+Formula: (a âˆ¨ b âˆ¨ c âˆ¨ d), k = 4
 New variables: y1
-New clauses: (a ∨ b ∨ y1) ∧ (¬y1 ∨ c ∨ d)
+New clauses: (a âˆ¨ b âˆ¨ y1) âˆ§ (Â¬y1 âˆ¨ c âˆ¨ d)
 ```
 
-**Correctness logic:** If the original clause is satisfiable, at least one literal is true. The auxiliary variables simply propagate the truth along the chain. If (a ∨ b) is true, y1 = false works and (¬y1 ∨ c ∨ d) holds because the remaining literals still need to satisfy the chain.
+**Correctness logic:** If the original clause is satisfiable, at least one literal is true. The auxiliary variables simply propagate the truth along the chain. If (a âˆ¨ b) is true, y1 = false works and (Â¬y1 âˆ¨ c âˆ¨ d) holds because the remaining literals still need to satisfy the chain.
 
 ---
 
-#### 15.4.2 3-SAT → Clique
+#### 15.4.2 3-SAT â†’ Clique
 
 **Problem:** Prove CLIQUE is NP-complete by reducing 3-SAT to CLIQUE.
 
@@ -270,12 +270,12 @@ function SAT_to_CLIQUE(F):
     for each clause C_j in F:
         for each literal l in C_j:
             Create vertex v_{j,literal}
-            V = V ∪ {v_{j,literal}}
+            V = V âˆª {v_{j,literal}}
     
     E = {}
-    for each pair (v_{a,la}, v_{b,lb}) where a ≠ b:
-        if la ≠ ¬lb:
-            E = E ∪ {(v_{a,la}, v_{b,lb})}
+    for each pair (v_{a,la}, v_{b,lb}) where a â‰  b:
+        if la â‰  Â¬lb:
+            E = E âˆª {(v_{a,la}, v_{b,lb})}
     
     return (G = (V, E), k = m)
 ```
@@ -285,12 +285,12 @@ function SAT_to_CLIQUE(F):
 | Clause | Literals | Vertices |
 |--------|----------|---------|
 | C1 | x1, x2, x3 | v11, v12, v13 |
-| C2 | ¬x1, x2, x4 | v21, v22, v23 |
-| C3 | x1, ¬x2, ¬x4 | v31, v32, v33 |
+| C2 | Â¬x1, x2, x4 | v21, v22, v23 |
+| C3 | x1, Â¬x2, Â¬x4 | v31, v32, v33 |
 
-Edges between from different clauses except for complementary pairs. C1 vertices connect to all C2 vertices except v11 (x1) to v21 (¬x1) — blocked because complementary. Similarly v12 (x2) to v32 (¬x2) blocked, v13 (x1) to v31 (x1) — allowed (not complementary, same literal is fine). v23 (x4) to v33 (¬x4) blocked.
+Edges between from different clauses except for complementary pairs. C1 vertices connect to all C2 vertices except v11 (x1) to v21 (Â¬x1) â€” blocked because complementary. Similarly v12 (x2) to v32 (Â¬x2) blocked, v13 (x1) to v31 (x1) â€” allowed (not complementary, same literal is fine). v23 (x4) to v33 (Â¬x4) blocked.
 
-A satisfying assignment (x1 = T, x2 = F, x4 = T) gives clique {v11, v22, v33} — size 3 = m.
+A satisfying assignment (x1 = T, x2 = F, x4 = T) gives clique {v11, v22, v33} â€” size 3 = m.
 
 **Correctness:** A clique of size m must select exactly one vertex from each clause (no intra-clause edges). No two selected vertices represent complementary literals (they would not be connected). Thus, the selected vertices define a consistent assignment that satisfies every clause.
 
@@ -326,7 +326,7 @@ pair<Graph, int> threeSATtoClique(vector<vector<string>>& clauses) {
                     bool complementary = false;
                     string l1 = clauses[c1][p1];
                     string l2 = clauses[c2][p2];
-                    // Check if l1 = ¬l2 or ¬l1 = l2
+                    // Check if l1 = Â¬l2 or Â¬l1 = l2
                     if ((l1[0] == '~' && l1.substr(1) == l2) ||
                         (l2[0] == '~' && l2.substr(1) == l1))
                         complementary = true;
@@ -342,7 +342,7 @@ pair<Graph, int> threeSATtoClique(vector<vector<string>>& clauses) {
 
 ---
 
-#### 15.4.3 Clique → Vertex Cover
+#### 15.4.3 Clique â†’ Vertex Cover
 
 **Problem:** Reduce CLIQUE to VERTEX COVER.
 
@@ -360,9 +360,9 @@ function CLIQUE_to_VERTEX_COVER(G, k):
     // G = (V, E), find if G has a clique of size k
     V' = V
     E' = {}
-    for each pair (u, v) in V with u ≠ v:
-        if (u, v) ∉ E:
-            E' = E' ∪ {(u, v)}
+    for each pair (u, v) in V with u â‰  v:
+        if (u, v) âˆ‰ E:
+            E' = E' âˆª {(u, v)}
     k' = |V| - k
     return (G' = (V', E'), k')
 ```
@@ -421,15 +421,15 @@ print(f"Complement edges: {Ep}")
 # Complement should have vertex cover of size 2
 ```
 
-**Correctness:** A set \( C \subseteq V \) is a vertex cover in \( \overline{G} \) iff every non-edge in \( G \) has at least one endpoint in \( C \). This is equivalent to \( V \setminus C \) being a clique in \( G \) — because no non-edge in \( G \) connects two vertices both outside \( C \). Therefore \( G \) has a clique of size \( k \) iff \( \overline{G} \) has a vertex cover of size \( |V| - k \).
+**Correctness:** A set \( C \subseteq V \) is a vertex cover in \( \overline{G} \) iff every non-edge in \( G \) has at least one endpoint in \( C \). This is equivalent to \( V \setminus C \) being a clique in \( G \) â€” because no non-edge in \( G \) connects two vertices both outside \( C \). Therefore \( G \) has a clique of size \( k \) iff \( \overline{G} \) has a vertex cover of size \( |V| - k \).
 
 ---
 
-#### 15.4.4 Vertex Cover → Hamiltonian Cycle
+#### 15.4.4 Vertex Cover â†’ Hamiltonian Cycle
 
 **Problem:** Reduce VERTEX COVER to HAMILTONIAN CYCLE.
 
-**The Gadget Approach:** This reduction uses a clever **selector gadget** — a graph structure that encodes the choice of k vertices for the vertex cover.
+**The Gadget Approach:** This reduction uses a clever **selector gadget** â€” a graph structure that encodes the choice of k vertices for the vertex cover.
 
 **Note:** This reduction is more involved than the previous ones. It requires constructing "OR gadgets" (also called "choice gadgets") that represent each vertex and each edge of the original graph.
 
@@ -438,12 +438,12 @@ print(f"Complement edges: {Ep}")
 Given graph \( G = (V, E) \) and integer k (vertex cover size):
 
 1. Create k **selector vertices** \( a_1, a_2, ..., a_k \).
-2. For each edge \( (u, v) \in E \), create a **cover-testing gadget** — a subgraph with one "entry" and one "exit" that can be traversed in two ways (representing covering the edge by u or by v).
+2. For each edge \( (u, v) \in E \), create a **cover-testing gadget** â€” a subgraph with one "entry" and one "exit" that can be traversed in two ways (representing covering the edge by u or by v).
 3. Connect the gadgets in a chain with the selector vertices such that a Hamiltonian cycle exists iff there is a vertex cover of size k.
 
 **Simplified trace for k = 2, G = triangle (3 nodes, 3 edges):**
 
-- Selector path: S1 → S2
+- Selector path: S1 â†’ S2
 - For each edge, create a gadget with two "cover paths"
 - Vertices u, v in the cover set select which path through each gadget
 
@@ -451,7 +451,7 @@ The Hamiltonian cycle must visit all gadgets and all selector vertices exactly o
 
 ---
 
-#### 15.4.5 Hamiltonian Cycle → TSP
+#### 15.4.5 Hamiltonian Cycle â†’ TSP
 
 **Problem:** Reduce HAMILTONIAN CYCLE to TRAVELING SALESMAN PROBLEM (decision version).
 
@@ -493,11 +493,11 @@ Edges: All edges weight 1
 Non-edges: (B,D) weight 2
 B = 4
 
-Hamiltonian cycle A→B→C→D→A has total weight 1+1+1+1 = 4 ≤ B
-If no Hamiltonian cycle existed (e.g., missing edge), min tour would be ≥ 5 > B
+Hamiltonian cycle Aâ†’Bâ†’Câ†’Dâ†’A has total weight 1+1+1+1 = 4 â‰¤ B
+If no Hamiltonian cycle existed (e.g., missing edge), min tour would be â‰¥ 5 > B
 ```
 
-**Correctness:** A Hamiltonian cycle in G uses exactly n edges, each of weight 1, giving total weight n = B. Any tour that uses a non-edge has weight ≥ (n-1) + 2 = n+1 > B. Therefore a tour of weight ≤ B exists iff G has a Hamiltonian cycle.
+**Correctness:** A Hamiltonian cycle in G uses exactly n edges, each of weight 1, giving total weight n = B. Any tour that uses a non-edge has weight â‰¥ (n-1) + 2 = n+1 > B. Therefore a tour of weight â‰¤ B exists iff G has a Hamiltonian cycle.
 
 **C++ Implementation:**
 ```cpp
@@ -546,17 +546,17 @@ bool verifyTour(const TSPInstance& tsp, const vector<int>& tour) {
 
 ---
 
-### 15.5 Proving NP-Completeness — Step-by-Step Methodology
+### 15.5 Proving NP-Completeness â€” Step-by-Step Methodology
 
 
 | Step | Action | What to Do | Common Mistake |
 |------|--------|-----------|----------------|
-| **1. Show ∈ NP** | Identify the certificate | What is the poly-size witness? (e.g., a set of vertices, a permutation) | Forgetting that NP requires a decision problem |
+| **1. Show âˆˆ NP** | Identify the certificate | What is the poly-size witness? (e.g., a set of vertices, a permutation) | Forgetting that NP requires a decision problem |
 | **2. Design verifier** | Give poly-time algorithm | Check certificate in O(n^k) time | Exponential-time verifier disqualifies membership |
 | **3. Choose source problem** | Pick known NP-complete problem | Select one whose structure matches your problem | Picking a problem with very different constraints |
-| **4. Design reduction** | Map source instance → target instance | Must be polynomial-time computable | Creating invalid output (not a valid instance of target) |
-| **5. Forward proof** | Source YES ⇒ Target YES | Show that if source instance is satisfiable, the constructed target instance is also a YES | Circular reasoning |
-| **6. Backward proof** | Target YES ⇒ Source YES | Show any certificate for target can be decoded into a certificate for source | Non-equivalence of transformations |
+| **4. Design reduction** | Map source instance â†’ target instance | Must be polynomial-time computable | Creating invalid output (not a valid instance of target) |
+| **5. Forward proof** | Source YES â‡’ Target YES | Show that if source instance is satisfiable, the constructed target instance is also a YES | Circular reasoning |
+| **6. Backward proof** | Target YES â‡’ Source YES | Show any certificate for target can be decoded into a certificate for source | Non-equivalence of transformations |
 | **7. Complexity check** | Verify polynomial bound | Sum up construction costs (vertices, edges, formula size) | Assuming O(1) operations for non-trivial work |
 
 ---
@@ -568,24 +568,24 @@ When you encounter an NP-hard problem in practice, here is your arsenal:
 
 | Strategy | Description | When to Use | Example Problems |
 |----------|-------------|-------------|------------------|
-| **Approximation** | Find a solution provably within a factor of optimal | When a "good enough" answer is acceptable | TSP (Christofides: 1.5× optimal), Vertex Cover (2×) |
+| **Approximation** | Find a solution provably within a factor of optimal | When a "good enough" answer is acceptable | TSP (Christofides: 1.5Ã— optimal), Vertex Cover (2Ã—) |
 | **Heuristics** | Problem-specific rules that work well in practice | When approximation is too slow | Simulated annealing for TSP, greedy for set cover |
-| **Parameterized** | Algorithm exponential only in a small parameter k | When k is small in practice | Vertex Cover: O(2^k · n), k = cover size |
+| **Parameterized** | Algorithm exponential only in a small parameter k | When k is small in practice | Vertex Cover: O(2^k Â· n), k = cover size |
 | **Special Cases** | Exploit structure (tree, bipartite, planar) | When the input has known structure | Planar TSP is still hard, but treewidth-bounded is easier |
-| **Fixed-Parameter Tractable** | O(f(k) · n^c) algorithms | When parameter k is small | Vertex cover parameterized by solution size |
-| **Backtracking + Pruning** | Branch and bound | When n is small (n ≤ 30) | Maximum clique with branch-and-bound |
+| **Fixed-Parameter Tractable** | O(f(k) Â· n^c) algorithms | When parameter k is small | Vertex cover parameterized by solution size |
+| **Backtracking + Pruning** | Branch and bound | When n is small (n â‰¤ 30) | Maximum clique with branch-and-bound |
 | **ILP Solvers** | Formulate as integer program; use CPLEX/Gurobi | When hardware budget allows | Scheduling, resource allocation |
 | **Quantum** | Grover's search gives sqrt speedup | When problem is search-heavy | Unstructured search variants |
 
 **Real-world hierarchy of coping:**
 ```
 Your problem is NP-hard?
-     │
-     ├── Is n tiny (≤ 30)? ──→ Brute force / backtracking
-     ├── Has small parameter k? ──→ Parameterized algorithm
-     ├── Has special structure? ──→ Exploit it (LP relax, treewidth, etc.)
-     ├── Good enough is OK? ──→ Approximation algorithm
-     └── None of the above? ──→ Heuristic / Metaheuristic (SA, GA, etc.)
+     â”‚
+     â”œâ”€â”€ Is n tiny (â‰¤ 30)? â”€â”€â†’ Brute force / backtracking
+     â”œâ”€â”€ Has small parameter k? â”€â”€â†’ Parameterized algorithm
+     â”œâ”€â”€ Has special structure? â”€â”€â†’ Exploit it (LP relax, treewidth, etc.)
+     â”œâ”€â”€ Good enough is OK? â”€â”€â†’ Approximation algorithm
+     â””â”€â”€ None of the above? â”€â”€â†’ Heuristic / Metaheuristic (SA, GA, etc.)
 ```
 
 ---
@@ -597,17 +597,17 @@ Your problem is NP-hard?
 
 | Aspect | Decision (NP-Complete) | Optimization (NP-Hard) |
 |--------|----------------------|----------------------|
-| Question | Does a tour of length ≤ B exist? | Find the shortest tour |
-| Certificate | A tour with length ≤ B (verifiable) | Not a decision — no certificate |
+| Question | Does a tour of length â‰¤ B exist? | Find the shortest tour |
+| Certificate | A tour with length â‰¤ B (verifiable) | Not a decision â€” no certificate |
 | Reductions | Used in NP-completeness proofs | Typically solved via decision oracle |
 | Example | "Is there a clique of size 10?" | "Find the maximum clique" |
 
 #### Reduction Patterns to Recognize
 
-1. **Constraint satisfaction → Graph problems:** Variables become vertices, clauses become edges/gadgets.
-2. **Graph → Numeric:** Use complement graphs (Clique → Vertex Cover).
-3. **Graph → Sequence:** Use gadgets to encode choices in a Hamiltonian cycle/TSP.
-4. **Numeric → Numeric:** Use base encoding (3-SAT → Subset Sum with digits as place values).
+1. **Constraint satisfaction â†’ Graph problems:** Variables become vertices, clauses become edges/gadgets.
+2. **Graph â†’ Numeric:** Use complement graphs (Clique â†’ Vertex Cover).
+3. **Graph â†’ Sequence:** Use gadgets to encode choices in a Hamiltonian cycle/TSP.
+4. **Numeric â†’ Numeric:** Use base encoding (3-SAT â†’ Subset Sum with digits as place values).
 
 #### How to Think About NP-Hard Problems
 
@@ -617,29 +617,29 @@ Your problem is NP-hard?
 - **Worst-case vs. average-case.** The worst instance may be hard, but typical instances may be easy (e.g., SAT solvers work on industrial circuits).
 - **Ask: do I need optimality?** If 95% of optimal is acceptable, approximation is the answer.
 
-> **Pro Tip:** In coding interviews, if you suspect a problem is NP-hard, tell the interviewer why (it is NP-hard). Then pivot to an approximation, heuristic, or pseudo-polynomial solution. This shows depth — recognition of hardness is a signal, not a failure.
+> **Pro Tip:** In coding interviews, if you suspect a problem is NP-hard, tell the interviewer why (it is NP-hard). Then pivot to an approximation, heuristic, or pseudo-polynomial solution. This shows depth â€” recognition of hardness is a signal, not a failure.
 
 ---
 
 ### 15.8 Applications in Real Systems
 
 
-NP-hard problems are not just academic curiosities — they appear in critical industrial systems daily. Here is how industry copes:
+NP-hard problems are not just academic curiosities â€” they appear in critical industrial systems daily. Here is how industry copes:
 
 | Domain | NP-Hard Problem | How Industry Copes |
 |--------|----------------|-------------------|
 | **Logistics** (UPS, FedEx) | Vehicle Routing / TSP | + 60,000 vehicles: use Concorde TSP solver (branch-and-cut); Clarke-Wright savings heuristic |
 | **Chip Design** (Intel, AMD) | VLSI Layout / Graph Coloring | Simulated annealing for placement; register allocation via graph coloring (Chaitin's algorithm) |
-| **SAT in Verification** (Synopsys, Cadence) | SAT / Circuit Verification | Conflict-driven clause learning (CDCL) SAT solvers — handle millions of clauses |
+| **SAT in Verification** (Synopsys, Cadence) | SAT / Circuit Verification | Conflict-driven clause learning (CDCL) SAT solvers â€” handle millions of clauses |
 | **Manufacturing** (Siemens, Bosch) | Job Shop Scheduling | Shifting Bottleneck heuristic + constraint programming (CP Optimizer) |
 | **Protein Folding** | 3D conformation prediction | Deep learning (AlphaFold) + energy minimization heuristics |
-| **Network Design** | Steiner Tree | Approximation (1.39×); LP-based algorithms |
+| **Network Design** | Steiner Tree | Approximation (1.39Ã—); LP-based algorithms |
 | **Compiler Design** | Register Allocation via Graph Coloring | Chaitin-Briggs with iterative coalescing |
 | **Bioinformatics** | Sequence Alignment / Motif Finding | Dynamic programming for small n; BLAST heuristics for large |
 | **Airline Crew Scheduling** | Set Cover | Column generation + branch-and-price; CPLEX |
 | **Telecom** | Frequency Assignment | Graph coloring heuristics; ILP with decomposition |
 
-**Case study — SAT in hardware verification:** Modern chips have billions of transistors. Before fabrication, equivalence checking (is this circuit identical to the specification?) is reduced to SAT. Industrial SAT solvers (MiniSAT, Glucose, Z3) use CDCL — a heuristic extension of the DPLL algorithm — and routinely solve instances with millions of variables. Despite the NP-completeness of SAT, the average case for structured industrial circuits is tractable.
+**Case study â€” SAT in hardware verification:** Modern chips have billions of transistors. Before fabrication, equivalence checking (is this circuit identical to the specification?) is reduced to SAT. Industrial SAT solvers (MiniSAT, Glucose, Z3) use CDCL â€” a heuristic extension of the DPLL algorithm â€” and routinely solve instances with millions of variables. Despite the NP-completeness of SAT, the average case for structured industrial circuits is tractable.
 
 ---
 
@@ -738,10 +738,10 @@ Some problems are NP-hard but not in NP (because they are not decision problems)
 | **NP** | Problems verifiable in polynomial time |
 | **NP-Complete** | In NP and every NP problem reduces to it |
 | **NP-Hard** | At least as hard as NP; not necessarily in NP |
-| **Cook-Levin** | SAT is NP-complete — the first proof |
-| **Reduction Direction** | Know NP-complete → Your problem (reduces TO) |
-| **Reduction Chain** | SAT → 3SAT → Clique → Vertex Cover → Hamiltonian → TSP |
-| **5 NP-Complete Proof Steps** | ∈NP, choose source, construct f, prove iff, poly bound |
+| **Cook-Levin** | SAT is NP-complete â€” the first proof |
+| **Reduction Direction** | Know NP-complete â†’ Your problem (reduces TO) |
+| **Reduction Chain** | SAT â†’ 3SAT â†’ Clique â†’ Vertex Cover â†’ Hamiltonian â†’ TSP |
+| **5 NP-Complete Proof Steps** | âˆˆNP, choose source, construct f, prove iff, poly bound |
 | **Coping Strategies** | Approx, heuristic, parameterized, special-case, ILP, brute for small n |
 
 ### Cross-Application Matrix
@@ -750,7 +750,7 @@ Some problems are NP-hard but not in NP (because they are not decision problems)
 |---------|---------------|----------------------|----------|------------|
 | P vs NP | Foundational knowledge | Affects approach to problems | Active research | Algorithm selection |
 | Reductions | Occasionally asked | N/A | Core proof technique | Problem modeling |
-| NP-Completeness | Common — recognize hard problems | Know when to use heuristics | Exam requirement | When to approximate |
+| NP-Completeness | Common â€” recognize hard problems | Know when to use heuristics | Exam requirement | When to approximate |
 | Approximation | Less common | Common in contests | Core theory | Logistics, scheduling |
 | Cook-Levin | Theoretical importance | N/A | Required understanding | Basis for SAT solvers |
 
@@ -765,7 +765,7 @@ Some problems are NP-hard but not in NP (because they are not decision problems)
 | NP-complete | NP + NP-hard | 3-SAT, vertex cover |
 | NP-hard | At least as hard as any NP problem | Optimization TSP |
 | Approximable | PTAS or constant-factor in poly time | Euclidean TSP, vertex cover |
-| Parameterized | O(f(k) · n^c) for parameter k | Vertex cover (k = solution size) |
+| Parameterized | O(f(k) Â· n^c) for parameter k | Vertex cover (k = solution size) |
 
 The P vs. NP question remains open. If \( P = NP \), every problem with an efficiently verifiable solution can be solved efficiently. If \( P \neq NP \), there are intrinsically hard combinatorial problems. Either way, the theory of NP-completeness gives us a powerful toolkit: recognize hardness, choose the right coping strategy, and never waste years chasing a proof that could reveal bedrock.
 
@@ -778,7 +778,7 @@ The P vs. NP question remains open. If \( P = NP \), every problem with an effic
 1. Explain the difference between NP-complete and NP-hard.
 2. What is the significance of the Cook-Levin theorem?
 3. List three properties that polynomial-time reductions satisfy.
-4. Why is the reduction direction "known NP-complete → your problem" and not the reverse?
+4. Why is the reduction direction "known NP-complete â†’ your problem" and not the reverse?
 5. What is the relationship between a clique in G and a vertex cover in the complement of G?
 
 ### Application Problems
@@ -819,10 +819,10 @@ B) NP-complete means the problem is in NP (verifiable in poly time) and NP-hard 
 
 <details>
 <summary>Answer&lt;/summary&gt;
-C) The Cook-Levin theorem (1971) proved SAT is NP-complete — the first such proof.
+C) The Cook-Levin theorem (1971) proved SAT is NP-complete â€” the first such proof.
 </details>
 
-**Q3.** If problem A reduces to problem B in polynomial time (A ≤ₚ B) and A is NP-hard, what can you conclude?
+**Q3.** If problem A reduces to problem B in polynomial time (A â‰¤â‚š B) and A is NP-hard, what can you conclude?
 
 - A) B is in P
 - B) B is NP-hard
@@ -831,7 +831,7 @@ C) The Cook-Levin theorem (1971) proved SAT is NP-complete — the first such pr
 
 <details>
 <summary>Answer&lt;/summary&gt;
-B) If A is NP-hard and A ≤ₚ B, then B is NP-hard. If B were also in NP, it would be NP-complete.
+B) If A is NP-hard and A â‰¤â‚š B, then B is NP-hard. If B were also in NP, it would be NP-complete.
 </details>
 
 **Q4.** Which of the following is NOT a valid coping strategy for an NP-hard problem encountered in practice?
@@ -855,5 +855,5 @@ C) You will not prove P = NP in your afternoon coding session. Stick to practica
 
 <details>
 <summary>Answer&lt;/summary&gt;
-B) The complement graph has a vertex cover of size |V| − k = 10 − 4 = 6.
+B) The complement graph has a vertex cover of size |V| âˆ’ k = 10 âˆ’ 4 = 6.
 </details>

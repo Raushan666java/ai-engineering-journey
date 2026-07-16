@@ -1,4 +1,4 @@
-# REST API Development with Spring MVC
+﻿# REST API Development with Spring MVC
 
 > **Previous:** [Logging, Error Handling & i18n](./14-logging-error-i18n.md) | **Next:** [Request Validation & Error Handling](./16-validation.md)
 
@@ -9,16 +9,16 @@ After completing this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/15-rest-api/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/15-rest-api/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/15-rest-api/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/15-rest-api/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/15-rest-api/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/15-rest-api/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/15-rest-api/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/15-rest-api/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/15-rest-api/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/15-rest-api/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/15-rest-api/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/15-rest-api/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -61,7 +61,7 @@ flowchart LR
     H --> I[Best Practices]
 ```
 
-> **Pro Tip:** Use `@ExceptionHandler` in a `@ControllerAdvice` to return consistent error responses across all endpoints — never let the container generate the error response.
+> **Pro Tip:** Use `@ExceptionHandler` in a `@ControllerAdvice` to return consistent error responses across all endpoints â€” never let the container generate the error response.
 
 ---
 
@@ -86,11 +86,11 @@ REST (Representational State Transfer) is an architectural style defined by Roy 
 ### 1.2 Resources and Representations
 
 
-A **resource** is any concept that can be named → a user, an order, a product. Resources are identified by URIs. Clients interact with **representations** of resources (JSON, XML, etc.), not the resources themselves.
+A **resource** is any concept that can be named â†’ a user, an order, a product. Resources are identified by URIs. Clients interact with **representations** of resources (JSON, XML, etc.), not the resources themselves.
 
 ```
-GET /api/users/42  →  Returns a representation of user 42
-POST /api/users    →  Creates a new user resource
+GET /api/users/42  â†’  Returns a representation of user 42
+POST /api/users    â†’  Creates a new user resource
 ```
 
 ### 1.3 Richardson Maturity Model
@@ -141,7 +141,7 @@ public class OldBookController {
 
 `@Controller` marks the class as a Spring MVC controller. `@ResponseBody` tells Spring to serialize the return value directly to the HTTP response body (JSON/XML) rather than resolving a view name. Without `@ResponseBody`, Spring would look for a Thymeleaf/JSP template named after the return value.
 
-### 2.2 @RestController → The Composed Annotation
+### 2.2 @RestController â†’ The Composed Annotation
 
 
 Spring 4.0 introduced `@RestController`, a convenience annotation that combines `@Controller` and `@ResponseBody`:
@@ -188,7 +188,7 @@ public @interface RestController {
 }
 ```
 
-Key insight: `@RestController` is a **composed annotation** → it inherits component scanning through `@Controller` and response body semantics through `@ResponseBody`.
+Key insight: `@RestController` is a **composed annotation** â†’ it inherits component scanning through `@Controller` and response body semantics through `@ResponseBody`.
 
 ### 2.4 Model Class Example
 
@@ -328,7 +328,7 @@ public class BookRepository {
 
 ---
 
-## 3. @RequestMapping → The Foundation
+## 3. @RequestMapping â†’ The Foundation
 
 ### 3.1 @RequestMapping Attributes
 
@@ -392,7 +392,7 @@ public class RequestMappingController {
 | `produces` | `String[]` | Media types the method produces | `"application/json"` |
 | `name` | `String` | Handler name for debugging | `"getUserHandler"` |
 
-### 3.3 params Attribute → Expressions
+### 3.3 params Attribute â†’ Expressions
 
 
 ```java
@@ -402,7 +402,7 @@ public class RequestMappingController {
 @RequestMapping(method = RequestMethod.GET, params = "author!=tolkien")
 ```
 
-### 3.4 headers Attribute → Expressions
+### 3.4 headers Attribute â†’ Expressions
 
 
 ```java
@@ -466,7 +466,7 @@ public Book createBook(@RequestBody Book book) {
 }
 ```
 
-### 4.3 @PutMapping → Full Update
+### 4.3 @PutMapping â†’ Full Update
 
 
 ```java
@@ -501,7 +501,7 @@ public void deleteBook(@PathVariable Long id) {
 }
 ```
 
-### 4.5 @PatchMapping → Partial Update
+### 4.5 @PatchMapping â†’ Partial Update
 
 
 ```java
@@ -539,7 +539,7 @@ Each composed annotation supports `value`/`path`, `params`, `headers`, `consumes
 
 ## 5. Request Data Extraction
 
-### 5.1 @PathVariable → URI Template Variables
+### 5.1 @PathVariable â†’ URI Template Variables
 
 
 ```java
@@ -582,7 +582,7 @@ public class PathVariableController {
 }
 ```
 
-### 5.2 @RequestParam → Query Parameters
+### 5.2 @RequestParam â†’ Query Parameters
 
 
 ```java
@@ -647,7 +647,7 @@ public class RequestParamController {
 | `required` | `true` | Whether the parameter is required |
 | `defaultValue` | `null` | Default value (implies `required=false`) |
 
-### 5.3 @RequestHeader → HTTP Headers
+### 5.3 @RequestHeader â†’ HTTP Headers
 
 
 ```java
@@ -685,7 +685,7 @@ public class RequestHeaderController {
 }
 ```
 
-### 5.4 @RequestBody → Request Body
+### 5.4 @RequestBody â†’ Request Body
 
 
 ```java
@@ -718,7 +718,7 @@ public class RequestBodyController {
 }
 ```
 
-### 5.5 @RequestAttribute → Request Scoped Attributes
+### 5.5 @RequestAttribute â†’ Request Scoped Attributes
 
 
 ```java
@@ -760,10 +760,10 @@ public class RequestAttributeFilter implements Filter {
 }
 ```
 
-### 5.6 @MatrixVariable → Matrix Parameters
+### 5.6 @MatrixVariable â†’ Matrix Parameters
 
 
-Step 1 → Enable matrix variables:
+Step 1 â†’ Enable matrix variables:
 
 ```java
 import org.springframework.context.annotation.Configuration;
@@ -782,7 +782,7 @@ public class WebConfig implements WebMvcConfigurer {
 }
 ```
 
-Step 2 → Use @MatrixVariable:
+Step 2 â†’ Use @MatrixVariable:
 
 ```java
 import org.springframework.web.bind.annotation.MatrixVariable;
@@ -909,7 +909,7 @@ public class ResponseStatusController {
 }
 ```
 
-### 6.2 ResponseEntity → Full Control
+### 6.2 ResponseEntity â†’ Full Control
 
 
 ```java
@@ -998,7 +998,7 @@ public ResponseEntity<Book> getBookComplete(@PathVariable Long id) {
 }
 ```
 
-### 6.4 HttpHeaders → Building Custom Headers
+### 6.4 HttpHeaders â†’ Building Custom Headers
 
 
 ```java
@@ -1156,7 +1156,7 @@ public class CustomExceptionController {
 }
 ```
 
-### 6.7 @ExceptionHandler → Controller-Level
+### 6.7 @ExceptionHandler â†’ Controller-Level
 
 
 ```java
@@ -1195,7 +1195,7 @@ public class ExceptionHandlerController {
 }
 ```
 
-### 6.8 @ControllerAdvice → Global Error Handling
+### 6.8 @ControllerAdvice â†’ Global Error Handling
 
 
 ```java
@@ -1369,7 +1369,7 @@ public class WebConfig implements WebMvcConfigurer {
 }
 ```
 
-### 7.6 ContentNegotiationManager → Programmatic Use
+### 7.6 ContentNegotiationManager â†’ Programmatic Use
 
 
 ```java
@@ -1500,7 +1500,7 @@ public class WebConfig implements WebMvcConfigurer {
 
 ## 8. HTTP Method Semantics
 
-### 8.1 GET → Safe, Idempotent, Cacheable
+### 8.1 GET â†’ Safe, Idempotent, Cacheable
 
 
 ```java
@@ -1536,7 +1536,7 @@ public class GetSemanticsController {
 
 **GET characteristics**: Safe (no state modification), Idempotent (same result every time), Cacheable (browsers/proxies cache), Request body ignored.
 
-### 8.2 POST → Create, Non-Idempotent
+### 8.2 POST â†’ Create, Non-Idempotent
 
 
 ```java
@@ -1568,7 +1568,7 @@ public class PostSemanticsController {
 
 **POST characteristics**: Not safe (modifies state), Not idempotent (repeated calls create multiple resources), Not cacheable, Returns `201 Created` with `Location` header.
 
-### 8.3 PUT → Full Replacement, Idempotent
+### 8.3 PUT â†’ Full Replacement, Idempotent
 
 
 ```java
@@ -1614,7 +1614,7 @@ public class PutSemanticsController {
 
 **PUT characteristics**: Not safe (modifies state), Idempotent (same call N times = same result), Client specifies entire state, Optional upsert convention.
 
-### 8.4 PATCH → Partial Update
+### 8.4 PATCH â†’ Partial Update
 
 
 ```java
@@ -1651,7 +1651,7 @@ public class PatchSemanticsController {
 
 **PATCH characteristics**: Not safe (modifies state), Not necessarily idempotent, Client sends only the delta (differences), Supports JSON Patch (RFC 6902) and Merge Patch (RFC 7386) formats.
 
-### 8.5 DELETE → Remove, Idempotent
+### 8.5 DELETE â†’ Remove, Idempotent
 
 
 ```java
@@ -1820,7 +1820,7 @@ public class StatusCodeDemoController {
 | **202 Accepted** | Request accepted for async processing |
 | **204 No Content** | Successful DELETE or PUT/PATCH with no body |
 | **301 Moved Permanently** | Resource has a new permanent URI |
-| **304 Not Modified** | Conditional GET → cached version is fresh |
+| **304 Not Modified** | Conditional GET â†’ cached version is fresh |
 | **400 Bad Request** | Malformed syntax, missing parameters |
 | **401 Unauthorized** | Missing or invalid authentication |
 | **403 Forbidden** | Authenticated but lacking permissions |
@@ -1859,7 +1859,7 @@ implementation 'org.springframework.boot:spring-boot-starter-hateoas'
 </dependency>
 ```
 
-### 10.3 RepresentationModel → The Base Class
+### 10.3 RepresentationModel â†’ The Base Class
 
 
 ```java
@@ -1897,7 +1897,7 @@ public class BookModel extends RepresentationModel<BookModel> {
 }
 ```
 
-### 10.4 EntityModel → Single Resource
+### 10.4 EntityModel â†’ Single Resource
 
 
 ```java
@@ -1935,7 +1935,7 @@ public class BookHateoasController {
 }
 ```
 
-### 10.5 CollectionModel → Resource Collections
+### 10.5 CollectionModel â†’ Resource Collections
 
 
 ```java
@@ -2004,7 +2004,7 @@ public class LinkBuilderController {
 }
 ```
 
-### 10.7 PagedModel → Paginated Collections
+### 10.7 PagedModel â†’ Paginated Collections
 
 
 ```java
@@ -2276,16 +2276,16 @@ public class BookAcceptVersionController {
 
 ```
 Q: Is backwards compatibility critical?
-  Yes → Use Accept header or custom header
-  No  → Use URI path (simplest)
+  Yes â†’ Use Accept header or custom header
+  No  â†’ Use URI path (simplest)
 
 Q: Is the API public/external?
-  Yes → Accept header versioning (most RESTful)
-  No  → URI path or parameter (simpler)
+  Yes â†’ Accept header versioning (most RESTful)
+  No  â†’ URI path or parameter (simpler)
 
 Q: Do clients cache responses aggressively?
-  Yes → URI path (different URLs = different cache keys)
-  No  → Any strategy works
+  Yes â†’ URI path (different URLs = different cache keys)
+  No  â†’ Any strategy works
 ```
 
 ---
@@ -2297,7 +2297,7 @@ Q: Do clients cache responses aggressively?
 
 CORS is a security mechanism that allows browsers to make cross-origin HTTP requests. A web page from `http://localhost:3000` cannot by default make AJAX requests to `http://api.example.com` without the server's permission.
 
-### 12.2 @CrossOrigin → Controller-Level CORS
+### 12.2 @CrossOrigin â†’ Controller-Level CORS
 
 
 ```java
@@ -2427,22 +2427,22 @@ Error: Credentials header cannot be '*'
 
 
 ```java
-// NO → verbs in URLs
+// NO â†’ verbs in URLs
 @GetMapping("/getAllBooks")
 @PostMapping("/createBook")
 @DeleteMapping("/removeBookById")
 
-// YES → nouns, plural resources
+// YES â†’ nouns, plural resources
 @GetMapping("/api/books")
 @PostMapping("/api/books")
 @DeleteMapping("/api/books/{id}")
 
-// NO → inconsistent naming
+// NO â†’ inconsistent naming
 /api/get-book
 /api/Book
 /api/booksList
 
-// YES → consistent, lowercase, kebab-case
+// YES â†’ consistent, lowercase, kebab-case
 /api/books
 /api/book-reviews
 /api/published-authors
@@ -3112,7 +3112,7 @@ public class CompleteBookController {
         this.bookRepository = bookRepository;
     }
 
-    // GET /api/books → List all books (paginated)
+    // GET /api/books â†’ List all books (paginated)
     @GetMapping
     public ResponseEntity<PagedModel<EntityModel<Book>>> getAllBooks(
             @PageableDefault(page = 0, size = 20, sort = "id", direction = Sort.Direction.ASC)
@@ -3154,7 +3154,7 @@ public class CompleteBookController {
         return ResponseEntity.ok().body(pagedModel);
     }
 
-    // GET /api/books/{id} → Get a single book
+    // GET /api/books/{id} â†’ Get a single book
     @GetMapping("/{id}")
     public ResponseEntity<EntityModel<Book>> getBook(@PathVariable Long id, WebRequest webRequest) {
         return bookRepository.findById(id)
@@ -3177,7 +3177,7 @@ public class CompleteBookController {
             .orElse(ResponseEntity.notFound().build());
     }
 
-    // POST /api/books → Create a new book
+    // POST /api/books â†’ Create a new book
     @PostMapping
     public ResponseEntity<EntityModel<Book>> createBook(@Valid @RequestBody Book book) {
         if (bookRepository.existsByIsbn(book.getIsbn())) {
@@ -3205,7 +3205,7 @@ public class CompleteBookController {
         return ResponseEntity.created(URI.create("/api/books/" + saved.getId())).body(entityModel);
     }
 
-    // PUT /api/books/{id} → Full replacement
+    // PUT /api/books/{id} â†’ Full replacement
     @PutMapping("/{id}")
     public ResponseEntity<EntityModel<Book>> updateBook(@PathVariable Long id,
                                                          @Valid @RequestBody Book book) {
@@ -3226,7 +3226,7 @@ public class CompleteBookController {
             .orElse(ResponseEntity.notFound().build());
     }
 
-    // PATCH /api/books/{id} → Partial update
+    // PATCH /api/books/{id} â†’ Partial update
     @PatchMapping("/{id}")
     public ResponseEntity<EntityModel<Book>> partialUpdateBook(@PathVariable Long id,
                                                                 @RequestBody Map<String, Object> updates) {
@@ -3251,7 +3251,7 @@ public class CompleteBookController {
             .orElse(ResponseEntity.notFound().build());
     }
 
-    // DELETE /api/books/{id} → Delete a book
+    // DELETE /api/books/{id} â†’ Delete a book
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteBook(@PathVariable Long id) {
         return bookRepository.findById(id)
@@ -3263,7 +3263,7 @@ public class CompleteBookController {
             .orElse(ResponseEntity.notFound().build());
     }
 
-    // GET /api/books/search → Search with filters
+    // GET /api/books/search â†’ Search with filters
     @GetMapping("/search")
     public ResponseEntity<List<Book>> searchBooks(
             @RequestParam(required = false) String author,
@@ -3375,7 +3375,7 @@ Response handling included `@ResponseStatus` for setting HTTP status codes, `Res
 
 Content negotiation was covered through `ContentNegotiationConfigurer`, supporting multiple strategies including Accept header, file extension, query parameter, and custom parameter approaches.
 
-We examined HTTP method semantics → the safety of GET, the non-idempotent creation nature of POST, the full-replacement idempotency of PUT, the partial update semantics of PATCH, and the removal idempotency of DELETE. We then mapped these methods to appropriate HTTP status codes: 200 OK, 201 Created, 204 No Content, 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 409 Conflict, 422 Unprocessable Entity, and 500 Internal Server Error.
+We examined HTTP method semantics â†’ the safety of GET, the non-idempotent creation nature of POST, the full-replacement idempotency of PUT, the partial update semantics of PATCH, and the removal idempotency of DELETE. We then mapped these methods to appropriate HTTP status codes: 200 OK, 201 Created, 204 No Content, 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 409 Conflict, 422 Unprocessable Entity, and 500 Internal Server Error.
 
 HATEOAS was introduced as Level 3 of the Richardson Maturity Model, using `RepresentationModel`, `EntityModel`, `CollectionModel`, `Link`, and `WebMvcLinkBuilder` to create self-descriptive responses with discoverable navigation links.
 
@@ -3395,11 +3395,11 @@ Finally, Spring Data's `Pageable`, `Page`, `Sort`, and `PagedModel` were used to
 
 Create a `@RestController` for managing `Author` resources with the following endpoints:
 
-- `GET /api/authors` → List all authors
-- `GET /api/authors/{id}` → Get a single author
-- `POST /api/authors` → Create a new author
-- `PUT /api/authors/{id}` → Update an author
-- `DELETE /api/authors/{id}` → Delete an author
+- `GET /api/authors` â†’ List all authors
+- `GET /api/authors/{id}` â†’ Get a single author
+- `POST /api/authors` â†’ Create a new author
+- `PUT /api/authors/{id}` â†’ Update an author
+- `DELETE /api/authors/{id}` â†’ Delete an author
 
 Use appropriate `@ResponseStatus` and `ResponseEntity` return types. Return 201 for creation, 204 for deletion, and 404 when not found.
 
@@ -3417,10 +3417,10 @@ Use `@RequestParam` with appropriate `required` and `defaultValue` attributes.
 
 Implement a `@RestControllerAdvice` that handles:
 
-- `BookNotFoundException` → 404 with a structured error response
-- `MethodArgumentNotValidException` → 400 with field-level validation errors
-- `HttpMessageNotReadableException` → 400 with descriptive parsing error
-- Any unhandled `Exception` → 500 with a generic error response
+- `BookNotFoundException` â†’ 404 with a structured error response
+- `MethodArgumentNotValidException` â†’ 400 with field-level validation errors
+- `HttpMessageNotReadableException` â†’ 400 with descriptive parsing error
+- Any unhandled `Exception` â†’ 500 with a generic error response
 
 Include timestamp, status, error, message, and path fields.
 

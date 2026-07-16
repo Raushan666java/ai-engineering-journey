@@ -1,4 +1,4 @@
-# Chapter 5: à¤…à¤¨à¥à¤µà¤¾à¤¦ (Translation)
+﻿# Chapter 5: Ã Â¤â€¦Ã Â¤Â¨Ã Â¥ÂÃ Â¤ÂµÃ Â¤Â¾Ã Â¤Â¦ (Translation)
 
 ## Learning Objectives
 
@@ -12,16 +12,16 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/hindi-language/05-hindi-translation/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/hindi-language/05-hindi-translation/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/hindi-language/05-hindi-translation/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/hindi-language/05-hindi-translation/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/hindi-language/05-hindi-translation/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/hindi-language/05-hindi-translation/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/hindi-language/05-hindi-translation/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/hindi-language/05-hindi-translation/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/hindi-language/05-hindi-translation/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/hindi-language/05-hindi-translation/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/hindi-language/05-hindi-translation/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/hindi-language/05-hindi-translation/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -40,7 +40,7 @@ Translation is a significant component in:
 - State PCS: Hindi translation from English
 - Translation exams: Central Translation Bureau, Ministry of Home Affairs
 
-### 5.2 à¤…à¤¨à¥à¤µà¤¾à¤¦ à¤•à¥‡ à¤¸à¤¿à¤¦à¥à¤§à¤¾à¤‚à¤¤ (Principles of Translation)
+### 5.2 Ã Â¤â€¦Ã Â¤Â¨Ã Â¥ÂÃ Â¤ÂµÃ Â¤Â¾Ã Â¤Â¦ Ã Â¤â€¢Ã Â¥â€¡ Ã Â¤Â¸Ã Â¤Â¿Ã Â¤Â¦Ã Â¥ÂÃ Â¤Â§Ã Â¤Â¾Ã Â¤â€šÃ Â¤Â¤ (Principles of Translation)
 
 ```mermaid
 flowchart TD
@@ -66,7 +66,7 @@ flowchart TD
 
 ### 5.3 English-to-Hindi Translation Rules
 
-#### A. à¤¸à¤°à¥à¤µà¤¨à¤¾à¤® (Pronouns)
+#### A. Ã Â¤Â¸Ã Â¤Â°Ã Â¥ÂÃ Â¤ÂµÃ Â¤Â¨Ã Â¤Â¾Ã Â¤Â® (Pronouns)
 
 | English | Hindi |
 |---------|-------|
@@ -81,25 +81,25 @@ flowchart TD
 | These | Yeh |
 | Those | Vah |
 
-#### B. à¤•à¤¾à¤² à¤•à¤¾ à¤…à¤¨à¥à¤µà¤¾à¤¦ (Tense Translation)
+#### B. Ã Â¤â€¢Ã Â¤Â¾Ã Â¤Â² Ã Â¤â€¢Ã Â¤Â¾ Ã Â¤â€¦Ã Â¤Â¨Ã Â¥ÂÃ Â¤ÂµÃ Â¤Â¾Ã Â¤Â¦ (Tense Translation)
 
-| English Tense | Hindi Equivalent | Example EN â†’ HI |
+| English Tense | Hindi Equivalent | Example EN Ã¢â€ â€™ HI |
 |---------------|------------------|-----------------|
-| Simple Present | Samanya Vartman | I eat â†’ Main khata hoon |
-| Present Continuous | Apurn Vartman | I am eating â†’ Main kha raha hoon |
-| Present Perfect | Purna Vartman | I have eaten â†’ Maine kha liya hai |
-| Simple Past | Samanya Bhoot | I ate â†’ Maine khaya |
-| Past Continuous | Apurn Bhoot | I was eating â†’ Main kha raha tha |
-| Simple Future | Samanya Bhavishya | I will eat â†’ Main khaunga |
-| Present Perfect Cont. | Poori Vartman | I have been eating â†’ Main kha raha hoon (since/for se) |
+| Simple Present | Samanya Vartman | I eat Ã¢â€ â€™ Main khata hoon |
+| Present Continuous | Apurn Vartman | I am eating Ã¢â€ â€™ Main kha raha hoon |
+| Present Perfect | Purna Vartman | I have eaten Ã¢â€ â€™ Maine kha liya hai |
+| Simple Past | Samanya Bhoot | I ate Ã¢â€ â€™ Maine khaya |
+| Past Continuous | Apurn Bhoot | I was eating Ã¢â€ â€™ Main kha raha tha |
+| Simple Future | Samanya Bhavishya | I will eat Ã¢â€ â€™ Main khaunga |
+| Present Perfect Cont. | Poori Vartman | I have been eating Ã¢â€ â€™ Main kha raha hoon (since/for se) |
 
-#### C. à¤µà¤¾à¤šà¥à¤¯ à¤•à¤¾ à¤…à¤¨à¥à¤µà¤¾à¤¦ (Voice Translation)
+#### C. Ã Â¤ÂµÃ Â¤Â¾Ã Â¤Å¡Ã Â¥ÂÃ Â¤Â¯ Ã Â¤â€¢Ã Â¤Â¾ Ã Â¤â€¦Ã Â¤Â¨Ã Â¥ÂÃ Â¤ÂµÃ Â¤Â¾Ã Â¤Â¦ (Voice Translation)
 
 - Active to Passive: Karak vibhakti change karein
-- "Subject + Verb + Object" â†’ "Subject + se + Object + Verb (with jaana)"
-- Example: "Ram eats food" â†’ "Ram se khaana khaaya jaata hai"
+- "Subject + Verb + Object" Ã¢â€ â€™ "Subject + se + Object + Verb (with jaana)"
+- Example: "Ram eats food" Ã¢â€ â€™ "Ram se khaana khaaya jaata hai"
 
-#### D. à¤•à¥à¤°à¤¿à¤¯à¤¾ à¤µà¤¿à¤¶à¥‡à¤·à¤£ à¤•à¤¾ à¤¸à¥à¤¥à¤¾à¤¨ (Adverb Placement)
+#### D. Ã Â¤â€¢Ã Â¥ÂÃ Â¤Â°Ã Â¤Â¿Ã Â¤Â¯Ã Â¤Â¾ Ã Â¤ÂµÃ Â¤Â¿Ã Â¤Â¶Ã Â¥â€¡Ã Â¤Â·Ã Â¤Â£ Ã Â¤â€¢Ã Â¤Â¾ Ã Â¤Â¸Ã Â¥ÂÃ Â¤Â¥Ã Â¤Â¾Ã Â¤Â¨ (Adverb Placement)
 
 | English | Hindi |
 |---------|-------|
@@ -107,14 +107,14 @@ flowchart TD
 | I always speak truth | Main hamesha sach bolta hoon |
 | She sings beautifully | Vah khoobsurat gaati hai |
 
-#### E. à¤¸à¤‚à¤¬à¤‚à¤§à¤¸à¥‚à¤šà¤• à¤¶à¤¬à¥à¤¦ (Relative Clauses)
+#### E. Ã Â¤Â¸Ã Â¤â€šÃ Â¤Â¬Ã Â¤â€šÃ Â¤Â§Ã Â¤Â¸Ã Â¥â€šÃ Â¤Å¡Ã Â¤â€¢ Ã Â¤Â¶Ã Â¤Â¬Ã Â¥ÂÃ Â¤Â¦ (Relative Clauses)
 
 | English | Hindi | Example |
 |---------|-------|---------|
-| Who | Jo | The man who came â†’ Jo aadmi aaya |
-| Which | Jo | The book which I read â†’ Jo kitab maine padi |
-| That | Ki | I know that... â†’ Main janta hoon ki... |
-| Where | Jahan | The place where â†’ Vah sthan jahan |
+| Who | Jo | The man who came Ã¢â€ â€™ Jo aadmi aaya |
+| Which | Jo | The book which I read Ã¢â€ â€™ Jo kitab maine padi |
+| That | Ki | I know that... Ã¢â€ â€™ Main janta hoon ki... |
+| Where | Jahan | The place where Ã¢â€ â€™ Vah sthan jahan |
 
 ### 5.4 Common Pitfalls (False Friends)
 
@@ -218,37 +218,37 @@ flowchart TD
 | Vicharadheen hai | Is under consideration |
 | Avashyak karyvahi hetu | For necessary action |
 
-### 5.8A तकनीकी अनुवाद: IT और कंप्यूटर शब्दावली (Technical Translation: IT Terms)
+### 5.8A à¤¤à¤•à¤¨à¥€à¤•à¥€ à¤…à¤¨à¥à¤µà¤¾à¤¦: IT à¤”à¤° à¤•à¤‚à¤ªà¥à¤¯à¥‚à¤Ÿà¤° à¤¶à¤¬à¥à¤¦à¤¾à¤µà¤²à¥€ (Technical Translation: IT Terms)
 
 | English Term | Hindi Translation | Usage |
 |-------------|------------------|-------|
-| Software | सॉफ़्टवेयर / क्रमांकित प्रोग्राम | कंप्यूटर सॉफ़्टवेयर स्थापित करें |
-| Hardware | हार्डवेयर / भौतिक उपकरण | हार्डवेयर की मरम्मत कराएँ |
-| Operating System | संचालन प्रणाली / ओएस | विंडोज संचालन प्रणाली है |
-| Database | डेटाबेस / आँकड़ा आधार | ग्राहक डेटाबेस अपडेट करें |
-| Network | नेटवर्क / संजाल | कार्यालय संजाल सुरक्षित है |
-| Server | सर्वर / सेवक | सर्वर डाउन हो गया |
-| Email | ईमेल / विद्युत पत्र | ईमेल भेज दिया गया है |
-| Cloud Computing | क्लाउड कंप्यूटिंग / मेघ संगणन | मेघ संगणन से डेटा सुरक्षित |
-| Artificial Intelligence | कृत्रिम बुद्धिमत्ता | AI से कार्य स्वचालित |
-| Cyber Security | साइबर सुरक्षा | साइबर सुरक्षा बढ़ाएँ |
-| Encryption | कूटलेखन / एन्क्रिप्शन | डेटा कूटलेखन अनिवार्य है |
-| Firewall | फायरवॉल / अग्निरोधक | फायरवॉल सक्रिय करें |
+| Software | à¤¸à¥‰à¤«à¤¼à¥à¤Ÿà¤µà¥‡à¤¯à¤° / à¤•à¥à¤°à¤®à¤¾à¤‚à¤•à¤¿à¤¤ à¤ªà¥à¤°à¥‹à¤—à¥à¤°à¤¾à¤® | à¤•à¤‚à¤ªà¥à¤¯à¥‚à¤Ÿà¤° à¤¸à¥‰à¤«à¤¼à¥à¤Ÿà¤µà¥‡à¤¯à¤° à¤¸à¥à¤¥à¤¾à¤ªà¤¿à¤¤ à¤•à¤°à¥‡à¤‚ |
+| Hardware | à¤¹à¤¾à¤°à¥à¤¡à¤µà¥‡à¤¯à¤° / à¤­à¥Œà¤¤à¤¿à¤• à¤‰à¤ªà¤•à¤°à¤£ | à¤¹à¤¾à¤°à¥à¤¡à¤µà¥‡à¤¯à¤° à¤•à¥€ à¤®à¤°à¤®à¥à¤®à¤¤ à¤•à¤°à¤¾à¤à¤ |
+| Operating System | à¤¸à¤‚à¤šà¤¾à¤²à¤¨ à¤ªà¥à¤°à¤£à¤¾à¤²à¥€ / à¤“à¤à¤¸ | à¤µà¤¿à¤‚à¤¡à¥‹à¤œ à¤¸à¤‚à¤šà¤¾à¤²à¤¨ à¤ªà¥à¤°à¤£à¤¾à¤²à¥€ à¤¹à¥ˆ |
+| Database | à¤¡à¥‡à¤Ÿà¤¾à¤¬à¥‡à¤¸ / à¤†à¤à¤•à¤¡à¤¼à¤¾ à¤†à¤§à¤¾à¤° | à¤—à¥à¤°à¤¾à¤¹à¤• à¤¡à¥‡à¤Ÿà¤¾à¤¬à¥‡à¤¸ à¤…à¤ªà¤¡à¥‡à¤Ÿ à¤•à¤°à¥‡à¤‚ |
+| Network | à¤¨à¥‡à¤Ÿà¤µà¤°à¥à¤• / à¤¸à¤‚à¤œà¤¾à¤² | à¤•à¤¾à¤°à¥à¤¯à¤¾à¤²à¤¯ à¤¸à¤‚à¤œà¤¾à¤² à¤¸à¥à¤°à¤•à¥à¤·à¤¿à¤¤ à¤¹à¥ˆ |
+| Server | à¤¸à¤°à¥à¤µà¤° / à¤¸à¥‡à¤µà¤• | à¤¸à¤°à¥à¤µà¤° à¤¡à¤¾à¤‰à¤¨ à¤¹à¥‹ à¤—à¤¯à¤¾ |
+| Email | à¤ˆà¤®à¥‡à¤² / à¤µà¤¿à¤¦à¥à¤¯à¥à¤¤ à¤ªà¤¤à¥à¤° | à¤ˆà¤®à¥‡à¤² à¤­à¥‡à¤œ à¤¦à¤¿à¤¯à¤¾ à¤—à¤¯à¤¾ à¤¹à¥ˆ |
+| Cloud Computing | à¤•à¥à¤²à¤¾à¤‰à¤¡ à¤•à¤‚à¤ªà¥à¤¯à¥‚à¤Ÿà¤¿à¤‚à¤— / à¤®à¥‡à¤˜ à¤¸à¤‚à¤—à¤£à¤¨ | à¤®à¥‡à¤˜ à¤¸à¤‚à¤—à¤£à¤¨ à¤¸à¥‡ à¤¡à¥‡à¤Ÿà¤¾ à¤¸à¥à¤°à¤•à¥à¤·à¤¿à¤¤ |
+| Artificial Intelligence | à¤•à¥ƒà¤¤à¥à¤°à¤¿à¤® à¤¬à¥à¤¦à¥à¤§à¤¿à¤®à¤¤à¥à¤¤à¤¾ | AI à¤¸à¥‡ à¤•à¤¾à¤°à¥à¤¯ à¤¸à¥à¤µà¤šà¤¾à¤²à¤¿à¤¤ |
+| Cyber Security | à¤¸à¤¾à¤‡à¤¬à¤° à¤¸à¥à¤°à¤•à¥à¤·à¤¾ | à¤¸à¤¾à¤‡à¤¬à¤° à¤¸à¥à¤°à¤•à¥à¤·à¤¾ à¤¬à¤¢à¤¼à¤¾à¤à¤ |
+| Encryption | à¤•à¥‚à¤Ÿà¤²à¥‡à¤–à¤¨ / à¤à¤¨à¥à¤•à¥à¤°à¤¿à¤ªà¥à¤¶à¤¨ | à¤¡à¥‡à¤Ÿà¤¾ à¤•à¥‚à¤Ÿà¤²à¥‡à¤–à¤¨ à¤…à¤¨à¤¿à¤µà¤¾à¤°à¥à¤¯ à¤¹à¥ˆ |
+| Firewall | à¤«à¤¾à¤¯à¤°à¤µà¥‰à¤² / à¤…à¤—à¥à¤¨à¤¿à¤°à¥‹à¤§à¤• | à¤«à¤¾à¤¯à¤°à¤µà¥‰à¤² à¤¸à¤•à¥à¤°à¤¿à¤¯ à¤•à¤°à¥‡à¤‚ |
 
-### 5.8B अनुवाद में सामान्य मुहावरों के समतुल्य (Common English Idioms with Hindi Equivalents)
+### 5.8B à¤…à¤¨à¥à¤µà¤¾à¤¦ à¤®à¥‡à¤‚ à¤¸à¤¾à¤®à¤¾à¤¨à¥à¤¯ à¤®à¥à¤¹à¤¾à¤µà¤°à¥‹à¤‚ à¤•à¥‡ à¤¸à¤®à¤¤à¥à¤²à¥à¤¯ (Common English Idioms with Hindi Equivalents)
 
 | English Idiom | Literal Translation | Hindi Equivalent |
 |---------------|-------------------|------------------|
-| A blessing in disguise | भेष में वरदान | नुकसान में भी लाभ |
-| Actions speak louder than words | कर्म शब्दों से ज़ोरदार | बातों से नहीं, कामों से पहचान |
-| Better late than never | देर से सही, पर कभी नहीं से अच्छा | देर आए दुरुस्त आए |
-| Don't count your chickens before they hatch | अंडे न गिनें पहले | अभी से जयजयकार न करो |
-| Every cloud has a silver lining | हर बादल में चाँदी की परत | निराशा में भी आशा का किरण |
-| Fortune favors the brave | भाग्य बहादुरों का साथ देता है | साहसी को ही सफलता मिलती है |
-| Honesty is the best policy | ईमानदारी सबसे अच्छी नीति | सच्चाई की हमेशा जीत |
-| Practice makes perfect | अभ्यास परिपूर्ण बनाता है | करत-करत अभ्यास के |
-| Rome was not built in a day | रोम एक दिन में नहीं बना | कोई काम रातों-रात नहीं होता |
-| Where there is a will, there is a way | जहाँ चाह वहाँ राह | ठान लो तो राह निकल ही आती है |
+| A blessing in disguise | à¤­à¥‡à¤· à¤®à¥‡à¤‚ à¤µà¤°à¤¦à¤¾à¤¨ | à¤¨à¥à¤•à¤¸à¤¾à¤¨ à¤®à¥‡à¤‚ à¤­à¥€ à¤²à¤¾à¤­ |
+| Actions speak louder than words | à¤•à¤°à¥à¤® à¤¶à¤¬à¥à¤¦à¥‹à¤‚ à¤¸à¥‡ à¤œà¤¼à¥‹à¤°à¤¦à¤¾à¤° | à¤¬à¤¾à¤¤à¥‹à¤‚ à¤¸à¥‡ à¤¨à¤¹à¥€à¤‚, à¤•à¤¾à¤®à¥‹à¤‚ à¤¸à¥‡ à¤ªà¤¹à¤šà¤¾à¤¨ |
+| Better late than never | à¤¦à¥‡à¤° à¤¸à¥‡ à¤¸à¤¹à¥€, à¤ªà¤° à¤•à¤­à¥€ à¤¨à¤¹à¥€à¤‚ à¤¸à¥‡ à¤…à¤šà¥à¤›à¤¾ | à¤¦à¥‡à¤° à¤†à¤ à¤¦à¥à¤°à¥à¤¸à¥à¤¤ à¤†à¤ |
+| Don't count your chickens before they hatch | à¤…à¤‚à¤¡à¥‡ à¤¨ à¤—à¤¿à¤¨à¥‡à¤‚ à¤ªà¤¹à¤²à¥‡ | à¤…à¤­à¥€ à¤¸à¥‡ à¤œà¤¯à¤œà¤¯à¤•à¤¾à¤° à¤¨ à¤•à¤°à¥‹ |
+| Every cloud has a silver lining | à¤¹à¤° à¤¬à¤¾à¤¦à¤² à¤®à¥‡à¤‚ à¤šà¤¾à¤à¤¦à¥€ à¤•à¥€ à¤ªà¤°à¤¤ | à¤¨à¤¿à¤°à¤¾à¤¶à¤¾ à¤®à¥‡à¤‚ à¤­à¥€ à¤†à¤¶à¤¾ à¤•à¤¾ à¤•à¤¿à¤°à¤£ |
+| Fortune favors the brave | à¤­à¤¾à¤—à¥à¤¯ à¤¬à¤¹à¤¾à¤¦à¥à¤°à¥‹à¤‚ à¤•à¤¾ à¤¸à¤¾à¤¥ à¤¦à¥‡à¤¤à¤¾ à¤¹à¥ˆ | à¤¸à¤¾à¤¹à¤¸à¥€ à¤•à¥‹ à¤¹à¥€ à¤¸à¤«à¤²à¤¤à¤¾ à¤®à¤¿à¤²à¤¤à¥€ à¤¹à¥ˆ |
+| Honesty is the best policy | à¤ˆà¤®à¤¾à¤¨à¤¦à¤¾à¤°à¥€ à¤¸à¤¬à¤¸à¥‡ à¤…à¤šà¥à¤›à¥€ à¤¨à¥€à¤¤à¤¿ | à¤¸à¤šà¥à¤šà¤¾à¤ˆ à¤•à¥€ à¤¹à¤®à¥‡à¤¶à¤¾ à¤œà¥€à¤¤ |
+| Practice makes perfect | à¤…à¤­à¥à¤¯à¤¾à¤¸ à¤ªà¤°à¤¿à¤ªà¥‚à¤°à¥à¤£ à¤¬à¤¨à¤¾à¤¤à¤¾ à¤¹à¥ˆ | à¤•à¤°à¤¤-à¤•à¤°à¤¤ à¤…à¤­à¥à¤¯à¤¾à¤¸ à¤•à¥‡ |
+| Rome was not built in a day | à¤°à¥‹à¤® à¤à¤• à¤¦à¤¿à¤¨ à¤®à¥‡à¤‚ à¤¨à¤¹à¥€à¤‚ à¤¬à¤¨à¤¾ | à¤•à¥‹à¤ˆ à¤•à¤¾à¤® à¤°à¤¾à¤¤à¥‹à¤‚-à¤°à¤¾à¤¤ à¤¨à¤¹à¥€à¤‚ à¤¹à¥‹à¤¤à¤¾ |
+| Where there is a will, there is a way | à¤œà¤¹à¤¾à¤ à¤šà¤¾à¤¹ à¤µà¤¹à¤¾à¤ à¤°à¤¾à¤¹ | à¤ à¤¾à¤¨ à¤²à¥‹ à¤¤à¥‹ à¤°à¤¾à¤¹ à¤¨à¤¿à¤•à¤² à¤¹à¥€ à¤†à¤¤à¥€ à¤¹à¥ˆ |
 
 ### 5.8 Idioms Translation (Muhavaron ka Anuvad)
 
@@ -274,7 +274,7 @@ flowchart TD
 
 ## Examples
 
-### Example 1: TypeScript â€” Translation Accuracy Checker
+### Example 1: TypeScript Ã¢â‚¬â€ Translation Accuracy Checker
 
 ```typescript
 interface Translation {
@@ -293,7 +293,7 @@ class TranslationChecker {
     const targetWords = translation.targetText.toLowerCase().split(" ");
     const errors: string[] = [];
 
-    // Simplified check â€” look for common errors
+    // Simplified check Ã¢â‚¬â€ look for common errors
     if (translation.sourceLang === "en" && translation.targetLang === "hi") {
       if (!translation.targetText.includes("hai") &&
           translation.sourceText.includes("is"))
@@ -322,7 +322,7 @@ console.log("Accuracy:", result.accuracyScore);
 console.log("Errors:", result.errors);
 ```
 
-### Example 2: TypeScript â€” Banking Term Translator
+### Example 2: TypeScript Ã¢â‚¬â€ Banking Term Translator
 
 ```typescript
 interface Term {
@@ -369,7 +369,7 @@ console.log("NPA:", translateBankingTerm("NPA")?.hi);
 console.log("Full glossary entries:", Object.keys(getHindiGlossary()).length);
 ```
 
-### Example 3: TypeScript â€” Tense-Aware Translator
+### Example 3: TypeScript Ã¢â‚¬â€ Tense-Aware Translator
 
 ```typescript
 type Tense = "present" | "past" | "future";
@@ -399,7 +399,7 @@ console.log(translateTense("padh", "past", "she"));    // Vah padhi
 console.log(translateTense("padh", "future", "they")); // Ve padhenge
 ```
 
-### Example 4: TypeScript â€” Government Term Mapper
+### Example 4: TypeScript Ã¢â‚¬â€ Government Term Mapper
 
 ```typescript
 interface GovTerm {
@@ -438,10 +438,10 @@ function hiToEn(word: string): string {
 
 console.log("Department:", enToHi("Department"));
 console.log("Vidheyak:", hiToEn("Vidheyak"));
-console.log("Legal terms:", govTerms.filter(t => t.category === "legal").map(t => `${t.en} â†’ ${t.hi}`));
+console.log("Legal terms:", govTerms.filter(t => t.category === "legal").map(t => `${t.en} Ã¢â€ â€™ ${t.hi}`));
 ```
 
-### Example 5: TypeScript â€” False Friend Detector
+### Example 5: TypeScript Ã¢â‚¬â€ False Friend Detector
 
 ```typescript
 interface FalseFriend {
@@ -499,7 +499,7 @@ console.log("Check 'patent':", detectFalseFriend("patent")?.correctTranslation);
 console.log("Total false friends:", falseFriends.length);
 ```
 
-### Example 5B: TypeScript — Technical Term Translator
+### Example 5B: TypeScript â€” Technical Term Translator
 
 ```typescript
 interface TechnicalTerm {
@@ -509,32 +509,32 @@ interface TechnicalTerm {
 }
 
 const techTerms: TechnicalTerm[] = [
-  { en: "Software", hi: "सॉफ़्टवेयर", category: "IT" },
-  { en: "Hardware", hi: "हार्डवेयर", category: "IT" },
-  { en: "Network", hi: "संजाल", category: "IT" },
-  { en: "Database", hi: "आँकड़ा आधार", category: "IT" },
-  { en: "Cloud Computing", hi: "मेघ संगणन", category: "IT" },
-  { en: "Artificial Intelligence", hi: "कृत्रिम बुद्धिमत्ता", category: "IT" },
-  { en: "Encryption", hi: "कूटलेखन", category: "security" },
-  { en: "Firewall", hi: "अग्निरोधक", category: "security" },
-  { en: "Server", hi: "सेवक", category: "IT" },
-  { en: "Email", hi: "विद्युत पत्र", category: "communication" },
+  { en: "Software", hi: "à¤¸à¥‰à¤«à¤¼à¥à¤Ÿà¤µà¥‡à¤¯à¤°", category: "IT" },
+  { en: "Hardware", hi: "à¤¹à¤¾à¤°à¥à¤¡à¤µà¥‡à¤¯à¤°", category: "IT" },
+  { en: "Network", hi: "à¤¸à¤‚à¤œà¤¾à¤²", category: "IT" },
+  { en: "Database", hi: "à¤†à¤à¤•à¤¡à¤¼à¤¾ à¤†à¤§à¤¾à¤°", category: "IT" },
+  { en: "Cloud Computing", hi: "à¤®à¥‡à¤˜ à¤¸à¤‚à¤—à¤£à¤¨", category: "IT" },
+  { en: "Artificial Intelligence", hi: "à¤•à¥ƒà¤¤à¥à¤°à¤¿à¤® à¤¬à¥à¤¦à¥à¤§à¤¿à¤®à¤¤à¥à¤¤à¤¾", category: "IT" },
+  { en: "Encryption", hi: "à¤•à¥‚à¤Ÿà¤²à¥‡à¤–à¤¨", category: "security" },
+  { en: "Firewall", hi: "à¤…à¤—à¥à¤¨à¤¿à¤°à¥‹à¤§à¤•", category: "security" },
+  { en: "Server", hi: "à¤¸à¥‡à¤µà¤•", category: "IT" },
+  { en: "Email", hi: "à¤µà¤¿à¤¦à¥à¤¯à¥à¤¤ à¤ªà¤¤à¥à¤°", category: "communication" },
 ];
 
 function translateTechTerm(term: string): string {
   const found = techTerms.find(t => t.en.toLowerCase() === term.toLowerCase());
-  return found ? found.hi : "अनुवाद उपलब्ध नहीं";
+  return found ? found.hi : "à¤…à¤¨à¥à¤µà¤¾à¤¦ à¤‰à¤ªà¤²à¤¬à¥à¤§ à¤¨à¤¹à¥€à¤‚";
 }
 
 function listByCategory(cat: string): TechnicalTerm[] {
   return techTerms.filter(t => t.category === cat);
 }
 
-console.log(translateTechTerm("Firewall")); // अग्निरोधक
-console.log("IT terms:", listByCategory("IT").map(t => `${t.en} → ${t.hi}`));
+console.log(translateTechTerm("Firewall")); // à¤…à¤—à¥à¤¨à¤¿à¤°à¥‹à¤§à¤•
+console.log("IT terms:", listByCategory("IT").map(t => `${t.en} â†’ ${t.hi}`));
 ```
 
-### Example 5C: TypeScript — Idiom Translator
+### Example 5C: TypeScript â€” Idiom Translator
 
 ```typescript
 interface IdiomEntry {
@@ -544,11 +544,11 @@ interface IdiomEntry {
 }
 
 const idiomDict: IdiomEntry[] = [
-  { english: "Actions speak louder than words", hindiEquivalent: "बातों से नहीं, कामों से पहचान", literalTranslation: "कर्म शब्दों से ज़ोरदार होते हैं" },
-  { english: "Better late than never", hindiEquivalent: "देर आए दुरुस्त आए", literalTranslation: "देर से सही, पर कभी नहीं से अच्छा" },
-  { english: "Where there is a will, there is a way", hindiEquivalent: "जहाँ चाह वहाँ राह", literalTranslation: "जहाँ इच्छा है, वहाँ रास्ता है" },
-  { english: "Practice makes perfect", hindiEquivalent: "करत-करत अभ्यास के", literalTranslation: "अभ्यास परिपूर्ण बनाता है" },
-  { english: "Every cloud has a silver lining", hindiEquivalent: "निराशा में भी आशा का किरण", literalTranslation: "हर बादल में चाँदी की परत" },
+  { english: "Actions speak louder than words", hindiEquivalent: "à¤¬à¤¾à¤¤à¥‹à¤‚ à¤¸à¥‡ à¤¨à¤¹à¥€à¤‚, à¤•à¤¾à¤®à¥‹à¤‚ à¤¸à¥‡ à¤ªà¤¹à¤šà¤¾à¤¨", literalTranslation: "à¤•à¤°à¥à¤® à¤¶à¤¬à¥à¤¦à¥‹à¤‚ à¤¸à¥‡ à¤œà¤¼à¥‹à¤°à¤¦à¤¾à¤° à¤¹à¥‹à¤¤à¥‡ à¤¹à¥ˆà¤‚" },
+  { english: "Better late than never", hindiEquivalent: "à¤¦à¥‡à¤° à¤†à¤ à¤¦à¥à¤°à¥à¤¸à¥à¤¤ à¤†à¤", literalTranslation: "à¤¦à¥‡à¤° à¤¸à¥‡ à¤¸à¤¹à¥€, à¤ªà¤° à¤•à¤­à¥€ à¤¨à¤¹à¥€à¤‚ à¤¸à¥‡ à¤…à¤šà¥à¤›à¤¾" },
+  { english: "Where there is a will, there is a way", hindiEquivalent: "à¤œà¤¹à¤¾à¤ à¤šà¤¾à¤¹ à¤µà¤¹à¤¾à¤ à¤°à¤¾à¤¹", literalTranslation: "à¤œà¤¹à¤¾à¤ à¤‡à¤šà¥à¤›à¤¾ à¤¹à¥ˆ, à¤µà¤¹à¤¾à¤ à¤°à¤¾à¤¸à¥à¤¤à¤¾ à¤¹à¥ˆ" },
+  { english: "Practice makes perfect", hindiEquivalent: "à¤•à¤°à¤¤-à¤•à¤°à¤¤ à¤…à¤­à¥à¤¯à¤¾à¤¸ à¤•à¥‡", literalTranslation: "à¤…à¤­à¥à¤¯à¤¾à¤¸ à¤ªà¤°à¤¿à¤ªà¥‚à¤°à¥à¤£ à¤¬à¤¨à¤¾à¤¤à¤¾ à¤¹à¥ˆ" },
+  { english: "Every cloud has a silver lining", hindiEquivalent: "à¤¨à¤¿à¤°à¤¾à¤¶à¤¾ à¤®à¥‡à¤‚ à¤­à¥€ à¤†à¤¶à¤¾ à¤•à¤¾ à¤•à¤¿à¤°à¤£", literalTranslation: "à¤¹à¤° à¤¬à¤¾à¤¦à¤² à¤®à¥‡à¤‚ à¤šà¤¾à¤à¤¦à¥€ à¤•à¥€ à¤ªà¤°à¤¤" },
 ];
 
 function translateIdiom(englishIdiom: string): IdiomEntry | null {
@@ -571,42 +571,42 @@ Analysis: Tense change (present perfect in EN, present in HI is acceptable). "Ul
 **Passage 2: English to Hindi**
 "Inflation is the rate at which the general level of prices for goods and services is rising."
 Translation: "Mudrasfiti vah dar hai jis per vastuon aur sewaon ke samanya mool star mein vriddhi hoti hai."
-Analysis: "Rate at which" â†’ "vah dar jis per" â€” relative clause correctly handled.
+Analysis: "Rate at which" Ã¢â€ â€™ "vah dar jis per" Ã¢â‚¬â€ relative clause correctly handled.
 
 **Passage 3: English to Hindi**
 "The Reserve Bank of India (RBI) is the central bank of the country."
 Translation: "Bhartiya Reserve Bank (RBI) desh ka kendriya bank hai."
-Analysis: RBI remains same; "central bank" â†’ "kendriya bank" â€” accepted usage.
+Analysis: RBI remains same; "central bank" Ã¢â€ â€™ "kendriya bank" Ã¢â‚¬â€ accepted usage.
 
 **Passage 4: Hindi to English**
 "Bharat ki sanskriti vishva ki sabase prachin sanskritiyon mein se ek hai."
 Translation: "Indian culture is one of the oldest cultures in the world."
-Analysis: "Sabase prachin" â†’ "the oldest" â€” superlative correctly translated.
+Analysis: "Sabase prachin" Ã¢â€ â€™ "the oldest" Ã¢â‚¬â€ superlative correctly translated.
 
 **Passage 5: English to Hindi**
 "The government has launched several schemes for the welfare of farmers."
 Translation: "Sarkar ne kisanon ke kalyan ke liye anek yojnaye shuru ki hain."
-Analysis: Passive voice replaced with active; "welfare" â†’ "kalyan" â€” correct.
+Analysis: Passive voice replaced with active; "welfare" Ã¢â€ â€™ "kalyan" Ã¢â‚¬â€ correct.
 
 **Passage 6: English to Hindi**
 "Digital payments have revolutionized India's financial landscape."
 Translation: "Digital bhungtaano ne bharat ke vitiy paridrishya mein krantikari parivartan kar diya hai."
-Analysis: "Revolutionized" â†’ "krantikari parivartan" â€” faithful.
+Analysis: "Revolutionized" Ã¢â€ â€™ "krantikari parivartan" Ã¢â‚¬â€ faithful.
 
 **Passage 7: Hindi to English**
 "Jal sanrakshan har nagrik ka kartavy hai."
 Translation: "Water conservation is the duty of every citizen."
-Analysis: Simple N â†’ is; correctly translated.
+Analysis: Simple N Ã¢â€ â€™ is; correctly translated.
 
 **Passage 8: English to Hindi**
 "Each one of us must contribute to the nation's progress."
 Translation: "Hamein se pratyek ko rashtra ki pragati mein yogdan dena chahiye."
-Analysis: "Each one of us" â†’ "Hamein se pratyek" â€” accurate.
+Analysis: "Each one of us" Ã¢â€ â€™ "Hamein se pratyek" Ã¢â‚¬â€ accurate.
 
 **Passage 9: English to Hindi**
 "The new education policy aims to transform the Indian education system."
 Translation: "Nai shiksha neeti ka uddeshya bhartiya shiksha pranali mein parivartan lana hai."
-Analysis: "Aims to" â†’ "uddeshya ... lana hai" â€” correct infinitive use.
+Analysis: "Aims to" Ã¢â€ â€™ "uddeshya ... lana hai" Ã¢â‚¬â€ correct infinitive use.
 
 **Passage 10: Hindi to English**
 "Yadi baarish samay per nahi hoti to faslein kharab ho jayengi."
@@ -616,12 +616,12 @@ Analysis: Conditional sentence correctly translated.
 **Passage 11: English to Hindi (Banking Context)**
 "The bank has reduced its lending rate by 25 basis points."
 Translation: "Bank ne apne rinn dar mein 25 basis point ki kami ki hai."
-Analysis: "Lending rate" â†’ "rinn dar"; "basis points" remains same (accepted).
+Analysis: "Lending rate" Ã¢â€ â€™ "rinn dar"; "basis points" remains same (accepted).
 
 **Passage 12: English to Hindi**
 "Climate change poses a serious threat to biodiversity."
 Translation: "Jalvayu parivartan jiv vividhata ke liye gambhir khatra paida karta hai."
-Analysis: "Biodiversity" â†’ "jiv vividhata" â€” correct technical term.
+Analysis: "Biodiversity" Ã¢â€ â€™ "jiv vividhata" Ã¢â‚¬â€ correct technical term.
 
 **Passage 13: Hindi to English**
 "Aapke patra dinank 15 August 2026 ke sandarbh mein..."
@@ -631,7 +631,7 @@ Analysis: Office correspondence correctly translated.
 **Passage 14: English to Hindi (Government)**
 "The undersigned is directed to convey the approval of the competent authority."
 Translation: "Adhosathak ko pradhikari pradhikaran ki anumanjuri vyakt karne ka nirdesh diya gaya hai."
-Analysis: Official tone maintained; "competent authority" â†’ "pradhikari pradhikaran."
+Analysis: Official tone maintained; "competent authority" Ã¢â€ â€™ "pradhikari pradhikaran."
 
 **Passage 15: English to Hindi (Literature)**
 "It was the best of times, it was the worst of times."
@@ -646,7 +646,7 @@ Analysis: Parallel structure maintained.
 
 **Hindi Saransh:**
 - Anuvad ke teen mool siddhant hain: Fidelity (arth ki suraksha), Readability (sahajta), Accuracy (shuddhta).
-- Samanya gallatiyon mein "false friends" shamil hain â€” angrezi shabd jo Hindi mein alag arth rakhte hain.
+- Samanya gallatiyon mein "false friends" shamil hain Ã¢â‚¬â€ angrezi shabd jo Hindi mein alag arth rakhte hain.
 - Banking aur sarkari shabdon ke liye mank Hindi shabdon ko yaad karna avashyak hai.
 - Krim (Tense) aur vachy (Voice) ka anuvad karte samay dhyan dena hoga.
 - Muhavaron ka anuvad shabdasah anuvad se na karke, samarthak Hindi muhavare ka upyog karna chahiye.
@@ -654,7 +654,7 @@ Analysis: Parallel structure maintained.
 
 **English Summary:**
 - Three core principles of translation: Fidelity (meaning preservation), Readability (natural flow), Accuracy (correctness).
-- Common pitfalls include false friends â€” English words with different meanings in Hindi.
+- Common pitfalls include false friends Ã¢â‚¬â€ English words with different meanings in Hindi.
 - Banking and government terminology requires memorization of standard Hindi equivalents.
 - Tense and voice must be carefully mapped between English and Hindi.
 - Idioms should be translated by equivalent expressions, not word-for-word.
@@ -662,11 +662,11 @@ Analysis: Parallel structure maintained.
 
 ## Practical Takeaways
 
-1. False friends awareness: "Sympathy" â‰  "sympathi", "Patent" â‰  "spast" â€” learn the 20 most common false friends.
+1. False friends awareness: "Sympathy" Ã¢â€°Â  "sympathi", "Patent" Ã¢â€°Â  "spast" Ã¢â‚¬â€ learn the 20 most common false friends.
 2. Banking terms: Master the 30 key terms (Repo, CRR, SLR, NPA) in both languages.
-3. Government formats: Learn the standard opening and closing phrases: "With reference to..." â†’ "Sandarbh mein...", "The undersigned..." â†’ "Adhosathak...".
-4. Tense mapping: English present perfect (have/has + V3) â†’ Hindi Purna Vartman (V+ liya hai).
-5. Idioms: For "once in a blue moon", don't translate literally â€” use "Kabhi-kabhi" or "Bade dinon baad".
+3. Government formats: Learn the standard opening and closing phrases: "With reference to..." Ã¢â€ â€™ "Sandarbh mein...", "The undersigned..." Ã¢â€ â€™ "Adhosathak...".
+4. Tense mapping: English present perfect (have/has + V3) Ã¢â€ â€™ Hindi Purna Vartman (V+ liya hai).
+5. Idioms: For "once in a blue moon", don't translate literally Ã¢â‚¬â€ use "Kabhi-kabhi" or "Bade dinon baad".
 
 ## Chapter Quiz
 
@@ -720,11 +720,11 @@ Translate these terms to Hindi:
 
 ### False Friend Correction (Q16-Q20)
 Correct the wrong translations:
-16. "I have sympathy for you." â†’ "Mujhe tumse sympathy hai."
-17. "This is a patent issue." â†’ "Yah ek patent mudda hai."
-18. "He is a liberal thinker." â†’ "Vah liberal vichardhara ka hai."
-19. "She is decent." â†’ "Vah decent hai."
-20. "What is your concern?" â†’ "Tumhara concern kya hai?"
+16. "I have sympathy for you." Ã¢â€ â€™ "Mujhe tumse sympathy hai."
+17. "This is a patent issue." Ã¢â€ â€™ "Yah ek patent mudda hai."
+18. "He is a liberal thinker." Ã¢â€ â€™ "Vah liberal vichardhara ka hai."
+19. "She is decent." Ã¢â€ â€™ "Vah decent hai."
+20. "What is your concern?" Ã¢â€ â€™ "Tumhara concern kya hai?"
 
 ### Government Terms (Q21-Q25)
 Translate to Hindi:
@@ -775,7 +775,7 @@ Find the Hindi equivalent:
 26. Aankhon ka taara 27. Der raat tak padhna/mehnat karna
 28. Ek teer se do nishane 29. Ghaav par namak chidakna 30. Ab tumhari baari hai
 
-### Additional Translation Practice (Q31-Q50) — Added
+### Additional Translation Practice (Q31-Q50) â€” Added
 
 **Translate to Hindi (Q31-Q40):**
 31. "The customer is always right."
@@ -790,68 +790,68 @@ Find the Hindi equivalent:
 40. "Please acknowledge receipt of this email."
 
 **Translate to English (Q41-Q50):**
-41. "कृपया अपना पासवर्ड किसी से साझा न करें।"
-42. "यह अनुबंध दो वर्षों के लिए वैध है।"
-43. "भारतीय अर्थव्यवस्था तीव्र गति से बढ़ रही है।"
-44. "सभी कर्मचारियों को समय पर कार्यालय पहुँचना चाहिए।"
-45. "इस परियोजना को अगले महीने तक पूरा करना है।"
-46. "डिजिटल भुगतान ने व्यापार को सरल बना दिया है।"
-47. "ग्राहक संतुष्टि हमारी प्राथमिकता है।"
-48. "यह रिपोर्ट तत्काल ध्यान देने की आवश्यकता है।"
-49. "हम पर्यावरण संरक्षण के लिए प्रतिबद्ध हैं।"
-50. "नई तकनीक ने उत्पादन क्षमता बढ़ा दी है।"
+41. "à¤•à¥ƒà¤ªà¤¯à¤¾ à¤…à¤ªà¤¨à¤¾ à¤ªà¤¾à¤¸à¤µà¤°à¥à¤¡ à¤•à¤¿à¤¸à¥€ à¤¸à¥‡ à¤¸à¤¾à¤à¤¾ à¤¨ à¤•à¤°à¥‡à¤‚à¥¤"
+42. "à¤¯à¤¹ à¤…à¤¨à¥à¤¬à¤‚à¤§ à¤¦à¥‹ à¤µà¤°à¥à¤·à¥‹à¤‚ à¤•à¥‡ à¤²à¤¿à¤ à¤µà¥ˆà¤§ à¤¹à¥ˆà¥¤"
+43. "à¤­à¤¾à¤°à¤¤à¥€à¤¯ à¤…à¤°à¥à¤¥à¤µà¥à¤¯à¤µà¤¸à¥à¤¥à¤¾ à¤¤à¥€à¤µà¥à¤° à¤—à¤¤à¤¿ à¤¸à¥‡ à¤¬à¤¢à¤¼ à¤°à¤¹à¥€ à¤¹à¥ˆà¥¤"
+44. "à¤¸à¤­à¥€ à¤•à¤°à¥à¤®à¤šà¤¾à¤°à¤¿à¤¯à¥‹à¤‚ à¤•à¥‹ à¤¸à¤®à¤¯ à¤ªà¤° à¤•à¤¾à¤°à¥à¤¯à¤¾à¤²à¤¯ à¤ªà¤¹à¥à¤à¤šà¤¨à¤¾ à¤šà¤¾à¤¹à¤¿à¤à¥¤"
+45. "à¤‡à¤¸ à¤ªà¤°à¤¿à¤¯à¥‹à¤œà¤¨à¤¾ à¤•à¥‹ à¤…à¤—à¤²à¥‡ à¤®à¤¹à¥€à¤¨à¥‡ à¤¤à¤• à¤ªà¥‚à¤°à¤¾ à¤•à¤°à¤¨à¤¾ à¤¹à¥ˆà¥¤"
+46. "à¤¡à¤¿à¤œà¤¿à¤Ÿà¤² à¤­à¥à¤—à¤¤à¤¾à¤¨ à¤¨à¥‡ à¤µà¥à¤¯à¤¾à¤ªà¤¾à¤° à¤•à¥‹ à¤¸à¤°à¤² à¤¬à¤¨à¤¾ à¤¦à¤¿à¤¯à¤¾ à¤¹à¥ˆà¥¤"
+47. "à¤—à¥à¤°à¤¾à¤¹à¤• à¤¸à¤‚à¤¤à¥à¤·à¥à¤Ÿà¤¿ à¤¹à¤®à¤¾à¤°à¥€ à¤ªà¥à¤°à¤¾à¤¥à¤®à¤¿à¤•à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+48. "à¤¯à¤¹ à¤°à¤¿à¤ªà¥‹à¤°à¥à¤Ÿ à¤¤à¤¤à¥à¤•à¤¾à¤² à¤§à¥à¤¯à¤¾à¤¨ à¤¦à¥‡à¤¨à¥‡ à¤•à¥€ à¤†à¤µà¤¶à¥à¤¯à¤•à¤¤à¤¾ à¤¹à¥ˆà¥¤"
+49. "à¤¹à¤® à¤ªà¤°à¥à¤¯à¤¾à¤µà¤°à¤£ à¤¸à¤‚à¤°à¤•à¥à¤·à¤£ à¤•à¥‡ à¤²à¤¿à¤ à¤ªà¥à¤°à¤¤à¤¿à¤¬à¤¦à¥à¤§ à¤¹à¥ˆà¤‚à¥¤"
+50. "à¤¨à¤ˆ à¤¤à¤•à¤¨à¥€à¤• à¤¨à¥‡ à¤‰à¤¤à¥à¤ªà¤¾à¤¦à¤¨ à¤•à¥à¤·à¤®à¤¤à¤¾ à¤¬à¤¢à¤¼à¤¾ à¤¦à¥€ à¤¹à¥ˆà¥¤"
 
-### Additional Solved MCQs (Q31-Q40) — Added
+### Additional Solved MCQs (Q31-Q40) â€” Added
 
 <details>
-<summary>View 10 more solved MCQs — Technical Translation, Advanced False Friends</summary>
+<summary>View 10 more solved MCQs â€” Technical Translation, Advanced False Friends</summary>
 
-**Q31.** "Cloud Computing" का हिंदी अनुवाद है:
-a) बादल गणना  b) मेघ संगणन  c) क्लाउड कंप्यूटिंग  d) b और c दोनों
+**Q31.** "Cloud Computing" à¤•à¤¾ à¤¹à¤¿à¤‚à¤¦à¥€ à¤…à¤¨à¥à¤µà¤¾à¤¦ à¤¹à¥ˆ:
+a) à¤¬à¤¾à¤¦à¤² à¤—à¤£à¤¨à¤¾  b) à¤®à¥‡à¤˜ à¤¸à¤‚à¤—à¤£à¤¨  c) à¤•à¥à¤²à¤¾à¤‰à¤¡ à¤•à¤‚à¤ªà¥à¤¯à¥‚à¤Ÿà¤¿à¤‚à¤—  d) b à¤”à¤° c à¤¦à¥‹à¤¨à¥‹à¤‚
 
-**Answer:** d) b और c दोनों (मेघ संगणन / क्लाउड कंप्यूटिंग — दोनों स्वीकार्य)
+**Answer:** d) b à¤”à¤° c à¤¦à¥‹à¤¨à¥‹à¤‚ (à¤®à¥‡à¤˜ à¤¸à¤‚à¤—à¤£à¤¨ / à¤•à¥à¤²à¤¾à¤‰à¤¡ à¤•à¤‚à¤ªà¥à¤¯à¥‚à¤Ÿà¤¿à¤‚à¤— â€” à¤¦à¥‹à¤¨à¥‹à¤‚ à¤¸à¥à¤µà¥€à¤•à¤¾à¤°à¥à¤¯)
 
-**Q32.** "Encryption" का हिंदी अनुवाद है:
-a) कूटलेखन  b) सुरक्षा  c) गुप्तता  d) एन्क्रिप्शन
+**Q32.** "Encryption" à¤•à¤¾ à¤¹à¤¿à¤‚à¤¦à¥€ à¤…à¤¨à¥à¤µà¤¾à¤¦ à¤¹à¥ˆ:
+a) à¤•à¥‚à¤Ÿà¤²à¥‡à¤–à¤¨  b) à¤¸à¥à¤°à¤•à¥à¤·à¤¾  c) à¤—à¥à¤ªà¥à¤¤à¤¤à¤¾  d) à¤à¤¨à¥à¤•à¥à¤°à¤¿à¤ªà¥à¤¶à¤¨
 
-**Answer:** a) कूटलेखन (Encryption का मानक हिंदी शब्द)
+**Answer:** a) à¤•à¥‚à¤Ÿà¤²à¥‡à¤–à¤¨ (Encryption à¤•à¤¾ à¤®à¤¾à¤¨à¤• à¤¹à¤¿à¤‚à¤¦à¥€ à¤¶à¤¬à¥à¤¦)
 
-**Q33.** "Where there is a will, there is a way" का समतुल्य हिंदी मुहावरा:
-a) चाह न हो तो राह कहाँ  b) जहाँ चाह वहाँ राह  c) मन चंगा तो कठौती में गंगा  d) बनता है तो बनता है
+**Q33.** "Where there is a will, there is a way" à¤•à¤¾ à¤¸à¤®à¤¤à¥à¤²à¥à¤¯ à¤¹à¤¿à¤‚à¤¦à¥€ à¤®à¥à¤¹à¤¾à¤µà¤°à¤¾:
+a) à¤šà¤¾à¤¹ à¤¨ à¤¹à¥‹ à¤¤à¥‹ à¤°à¤¾à¤¹ à¤•à¤¹à¤¾à¤  b) à¤œà¤¹à¤¾à¤ à¤šà¤¾à¤¹ à¤µà¤¹à¤¾à¤ à¤°à¤¾à¤¹  c) à¤®à¤¨ à¤šà¤‚à¤—à¤¾ à¤¤à¥‹ à¤•à¤ à¥Œà¤¤à¥€ à¤®à¥‡à¤‚ à¤—à¤‚à¤—à¤¾  d) à¤¬à¤¨à¤¤à¤¾ à¤¹à¥ˆ à¤¤à¥‹ à¤¬à¤¨à¤¤à¤¾ à¤¹à¥ˆ
 
-**Answer:** b) जहाँ चाह वहाँ राह
+**Answer:** b) à¤œà¤¹à¤¾à¤ à¤šà¤¾à¤¹ à¤µà¤¹à¤¾à¤ à¤°à¤¾à¤¹
 
-**Q34.** "Better late than never" का हिंदी समतुल्य अनुवाद:
-a) देर से सही  b) देर आए दुरुस्त आए  c) जल्दी करो  d) सही समय पर
+**Q34.** "Better late than never" à¤•à¤¾ à¤¹à¤¿à¤‚à¤¦à¥€ à¤¸à¤®à¤¤à¥à¤²à¥à¤¯ à¤…à¤¨à¥à¤µà¤¾à¤¦:
+a) à¤¦à¥‡à¤° à¤¸à¥‡ à¤¸à¤¹à¥€  b) à¤¦à¥‡à¤° à¤†à¤ à¤¦à¥à¤°à¥à¤¸à¥à¤¤ à¤†à¤  c) à¤œà¤²à¥à¤¦à¥€ à¤•à¤°à¥‹  d) à¤¸à¤¹à¥€ à¤¸à¤®à¤¯ à¤ªà¤°
 
-**Answer:** b) देर आए दुरुस्त आए
+**Answer:** b) à¤¦à¥‡à¤° à¤†à¤ à¤¦à¥à¤°à¥à¤¸à¥à¤¤ à¤†à¤
 
-**Q35.** "The customer is always right" का हिंदी अनुवाद:
-a) ग्राहक हमेशा सही होता है  b) ग्राहक सही है या नहीं  c) ग्राहक सेवा  d) ग्राहक भगवान है
+**Q35.** "The customer is always right" à¤•à¤¾ à¤¹à¤¿à¤‚à¤¦à¥€ à¤…à¤¨à¥à¤µà¤¾à¤¦:
+a) à¤—à¥à¤°à¤¾à¤¹à¤• à¤¹à¤®à¥‡à¤¶à¤¾ à¤¸à¤¹à¥€ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ  b) à¤—à¥à¤°à¤¾à¤¹à¤• à¤¸à¤¹à¥€ à¤¹à¥ˆ à¤¯à¤¾ à¤¨à¤¹à¥€à¤‚  c) à¤—à¥à¤°à¤¾à¤¹à¤• à¤¸à¥‡à¤µà¤¾  d) à¤—à¥à¤°à¤¾à¤¹à¤• à¤­à¤—à¤µà¤¾à¤¨ à¤¹à¥ˆ
 
-**Answer:** a) ग्राहक हमेशा सही होता है
+**Answer:** a) à¤—à¥à¤°à¤¾à¤¹à¤• à¤¹à¤®à¥‡à¤¶à¤¾ à¤¸à¤¹à¥€ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆ
 
-**Q36.** "His attitude is liberal" में liberal का सही अनुवाद:
-a) लिबरल  b) उदार  c) उदारवादी  d) स्वतंत्रता-प्रेमी
+**Q36.** "His attitude is liberal" à¤®à¥‡à¤‚ liberal à¤•à¤¾ à¤¸à¤¹à¥€ à¤…à¤¨à¥à¤µà¤¾à¤¦:
+a) à¤²à¤¿à¤¬à¤°à¤²  b) à¤‰à¤¦à¤¾à¤°  c) à¤‰à¤¦à¤¾à¤°à¤µà¤¾à¤¦à¥€  d) à¤¸à¥à¤µà¤¤à¤‚à¤¤à¥à¤°à¤¤à¤¾-à¤ªà¥à¤°à¥‡à¤®à¥€
 
-**Answer:** b) उदार (स्वभाव के संदर्भ में)
+**Answer:** b) à¤‰à¤¦à¤¾à¤° (à¤¸à¥à¤µà¤­à¤¾à¤µ à¤•à¥‡ à¤¸à¤‚à¤¦à¤°à¥à¤­ à¤®à¥‡à¤‚)
 
-**Q37.** "Please advise" का कार्यालयी हिंदी अनुवाद:
-a) कृपया सलाह दें  b) कृपया परामर्श दें  c) कोई नहीं  d) a और b दोनों
+**Q37.** "Please advise" à¤•à¤¾ à¤•à¤¾à¤°à¥à¤¯à¤¾à¤²à¤¯à¥€ à¤¹à¤¿à¤‚à¤¦à¥€ à¤…à¤¨à¥à¤µà¤¾à¤¦:
+a) à¤•à¥ƒà¤ªà¤¯à¤¾ à¤¸à¤²à¤¾à¤¹ à¤¦à¥‡à¤‚  b) à¤•à¥ƒà¤ªà¤¯à¤¾ à¤ªà¤°à¤¾à¤®à¤°à¥à¤¶ à¤¦à¥‡à¤‚  c) à¤•à¥‹à¤ˆ à¤¨à¤¹à¥€à¤‚  d) a à¤”à¤° b à¤¦à¥‹à¤¨à¥‹à¤‚
 
-**Answer:** d) a और b दोनों
+**Answer:** d) a à¤”à¤° b à¤¦à¥‹à¤¨à¥‹à¤‚
 
-**Q38.** "Event" का उपयुक्त हिंदी अनुवाद (संदर्भानुसार):
-a) घटना  b) कार्यक्रम  c) समारोह  d) उपर्युक्त सभी
+**Q38.** "Event" à¤•à¤¾ à¤‰à¤ªà¤¯à¥à¤•à¥à¤¤ à¤¹à¤¿à¤‚à¤¦à¥€ à¤…à¤¨à¥à¤µà¤¾à¤¦ (à¤¸à¤‚à¤¦à¤°à¥à¤­à¤¾à¤¨à¥à¤¸à¤¾à¤°):
+a) à¤˜à¤Ÿà¤¨à¤¾  b) à¤•à¤¾à¤°à¥à¤¯à¤•à¥à¤°à¤®  c) à¤¸à¤®à¤¾à¤°à¥‹à¤¹  d) à¤‰à¤ªà¤°à¥à¤¯à¥à¤•à¥à¤¤ à¤¸à¤­à¥€
 
-**Answer:** d) उपर्युक्त सभी
+**Answer:** d) à¤‰à¤ªà¤°à¥à¤¯à¥à¤•à¥à¤¤ à¤¸à¤­à¥€
 
-**Q39.** "अनुबंध" का अंग्रेज़ी अनुवाद है:
+**Q39.** "à¤…à¤¨à¥à¤¬à¤‚à¤§" à¤•à¤¾ à¤…à¤‚à¤—à¥à¤°à¥‡à¤œà¤¼à¥€ à¤…à¤¨à¥à¤µà¤¾à¤¦ à¤¹à¥ˆ:
 a) Contract  b) Agreement  c) Treaty  d) All of the above
 
 **Answer:** d) All of the above
 
-**Q40.** "प्रतिबद्ध" का अंग्रेज़ी अनुवाद:
+**Q40.** "à¤ªà¥à¤°à¤¤à¤¿à¤¬à¤¦à¥à¤§" à¤•à¤¾ à¤…à¤‚à¤—à¥à¤°à¥‡à¤œà¤¼à¥€ à¤…à¤¨à¥à¤µà¤¾à¤¦:
 a) Dedicated  b) Committed  c) Devoted  d) All of the above
 
 **Answer:** d) All of the above
@@ -861,33 +861,33 @@ a) Dedicated  b) Committed  c) Devoted  d) All of the above
 ### Answer Key for Additional Passages (Q31-Q50)
 
 **Q31-Q40 (Hindi Translation):**
-31. ग्राहक हमेशा सही होता है। 32. यह ऑफर स्टॉक समाप्त होने तक वैध है। 33. कृपया संलग्न चालान देखें। 34. बैठक अगले सोमवार को पुनर्निर्धारित की गई है। 35. आपका आवेदन स्वीकृत हो गया है। 36. हमें खेद है कि आपका अनुरोध अस्वीकृत किया गया है। 37. रिपोर्ट मुख्य प्रदर्शन संकेतकों को उजागर करती है। 38. सभी कर्मचारियों से प्रशिक्षण सत्र में भाग लेने का अनुरोध है। 39. नई नीति 1 अगस्त से प्रभावी होगी। 40. कृपया इस ईमेल की प्राप्ति की पुष्टि करें।
+31. à¤—à¥à¤°à¤¾à¤¹à¤• à¤¹à¤®à¥‡à¤¶à¤¾ à¤¸à¤¹à¥€ à¤¹à¥‹à¤¤à¤¾ à¤¹à¥ˆà¥¤ 32. à¤¯à¤¹ à¤‘à¤«à¤° à¤¸à¥à¤Ÿà¥‰à¤• à¤¸à¤®à¤¾à¤ªà¥à¤¤ à¤¹à¥‹à¤¨à¥‡ à¤¤à¤• à¤µà¥ˆà¤§ à¤¹à¥ˆà¥¤ 33. à¤•à¥ƒà¤ªà¤¯à¤¾ à¤¸à¤‚à¤²à¤—à¥à¤¨ à¤šà¤¾à¤²à¤¾à¤¨ à¤¦à¥‡à¤–à¥‡à¤‚à¥¤ 34. à¤¬à¥ˆà¤ à¤• à¤…à¤—à¤²à¥‡ à¤¸à¥‹à¤®à¤µà¤¾à¤° à¤•à¥‹ à¤ªà¥à¤¨à¤°à¥à¤¨à¤¿à¤°à¥à¤§à¤¾à¤°à¤¿à¤¤ à¤•à¥€ à¤—à¤ˆ à¤¹à¥ˆà¥¤ 35. à¤†à¤ªà¤•à¤¾ à¤†à¤µà¥‡à¤¦à¤¨ à¤¸à¥à¤µà¥€à¤•à¥ƒà¤¤ à¤¹à¥‹ à¤—à¤¯à¤¾ à¤¹à¥ˆà¥¤ 36. à¤¹à¤®à¥‡à¤‚ à¤–à¥‡à¤¦ à¤¹à¥ˆ à¤•à¤¿ à¤†à¤ªà¤•à¤¾ à¤…à¤¨à¥à¤°à¥‹à¤§ à¤…à¤¸à¥à¤µà¥€à¤•à¥ƒà¤¤ à¤•à¤¿à¤¯à¤¾ à¤—à¤¯à¤¾ à¤¹à¥ˆà¥¤ 37. à¤°à¤¿à¤ªà¥‹à¤°à¥à¤Ÿ à¤®à¥à¤–à¥à¤¯ à¤ªà¥à¤°à¤¦à¤°à¥à¤¶à¤¨ à¤¸à¤‚à¤•à¥‡à¤¤à¤•à¥‹à¤‚ à¤•à¥‹ à¤‰à¤œà¤¾à¤—à¤° à¤•à¤°à¤¤à¥€ à¤¹à¥ˆà¥¤ 38. à¤¸à¤­à¥€ à¤•à¤°à¥à¤®à¤šà¤¾à¤°à¤¿à¤¯à¥‹à¤‚ à¤¸à¥‡ à¤ªà¥à¤°à¤¶à¤¿à¤•à¥à¤·à¤£ à¤¸à¤¤à¥à¤° à¤®à¥‡à¤‚ à¤­à¤¾à¤— à¤²à¥‡à¤¨à¥‡ à¤•à¤¾ à¤…à¤¨à¥à¤°à¥‹à¤§ à¤¹à¥ˆà¥¤ 39. à¤¨à¤ˆ à¤¨à¥€à¤¤à¤¿ 1 à¤…à¤—à¤¸à¥à¤¤ à¤¸à¥‡ à¤ªà¥à¤°à¤­à¤¾à¤µà¥€ à¤¹à¥‹à¤—à¥€à¥¤ 40. à¤•à¥ƒà¤ªà¤¯à¤¾ à¤‡à¤¸ à¤ˆà¤®à¥‡à¤² à¤•à¥€ à¤ªà¥à¤°à¤¾à¤ªà¥à¤¤à¤¿ à¤•à¥€ à¤ªà¥à¤·à¥à¤Ÿà¤¿ à¤•à¤°à¥‡à¤‚à¥¤
 
 **Q41-Q50 (English Translation):**
 41. Please do not share your password with anyone. 42. This contract is valid for two years. 43. The Indian economy is growing at a rapid pace. 44. All employees must reach the office on time. 45. This project has to be completed by next month. 46. Digital payments have simplified business. 47. Customer satisfaction is our priority. 48. This report requires urgent attention. 49. We are committed to environmental protection. 50. The new technology has increased production efficiency.
 
 ## Exam-Oriented Tips for Translation
 
-### परीक्षा-वार अनुवाद रणनीति
+### à¤ªà¤°à¥€à¤•à¥à¤·à¤¾-à¤µà¤¾à¤° à¤…à¤¨à¥à¤µà¤¾à¤¦ à¤°à¤£à¤¨à¥€à¤¤à¤¿
 
-| परीक्षा | अनुवाद प्रकार | अंक | तैयारी रणनीति |
+| à¤ªà¤°à¥€à¤•à¥à¤·à¤¾ | à¤…à¤¨à¥à¤µà¤¾à¤¦ à¤ªà¥à¤°à¤•à¤¾à¤° | à¤…à¤‚à¤• | à¤¤à¥ˆà¤¯à¤¾à¤°à¥€ à¤°à¤£à¤¨à¥€à¤¤à¤¿ |
 |---------|-------------|-----|--------------|
-| UPSC Mains | EN→HI + HI→EN | 15-20 | समसामयिक विषयों का अभ्यास |
-| SSC CGL | EN→HI (Banking/Business) | 10-15 | शब्दावली और मुहावरों पर जोर |
-| IBPS PO | EN→HI (Banking Terms) | 10 | 100 बैंकिंग शब्द याद करें |
-| Translation Bureau | EN→HI Technical | 25-30 | सरकारी दिशानिर्देशों का अध्ययन |
+| UPSC Mains | ENâ†’HI + HIâ†’EN | 15-20 | à¤¸à¤®à¤¸à¤¾à¤®à¤¯à¤¿à¤• à¤µà¤¿à¤·à¤¯à¥‹à¤‚ à¤•à¤¾ à¤…à¤­à¥à¤¯à¤¾à¤¸ |
+| SSC CGL | ENâ†’HI (Banking/Business) | 10-15 | à¤¶à¤¬à¥à¤¦à¤¾à¤µà¤²à¥€ à¤”à¤° à¤®à¥à¤¹à¤¾à¤µà¤°à¥‹à¤‚ à¤ªà¤° à¤œà¥‹à¤° |
+| IBPS PO | ENâ†’HI (Banking Terms) | 10 | 100 à¤¬à¥ˆà¤‚à¤•à¤¿à¤‚à¤— à¤¶à¤¬à¥à¤¦ à¤¯à¤¾à¤¦ à¤•à¤°à¥‡à¤‚ |
+| Translation Bureau | ENâ†’HI Technical | 25-30 | à¤¸à¤°à¤•à¤¾à¤°à¥€ à¤¦à¤¿à¤¶à¤¾à¤¨à¤¿à¤°à¥à¤¦à¥‡à¤¶à¥‹à¤‚ à¤•à¤¾ à¤…à¤§à¥à¤¯à¤¯à¤¨ |
 
-### अनुवाद में अच्छे अंक के टिप्स
-1. **शब्दशः अनुवाद से बचें**: भाव और संदर्भ को प्राथमिकता दें
-2. **संदर्भ समझें**: एक शब्द के अलग-अलग अर्थ हो सकते हैं
-3. **कार्यालयी शैली**: सरकारी अनुवाद में औपचारिक भाषा का उपयोग करें
-4. **काल और वाच्य**: अंग्रेज़ी और हिंदी में काल और वाच्य का सही मिलान करें
-5. **False Friends से सावधान**: "Sympathy", "Patent", "Actual" जैसे शब्दों के सही अर्थ जानें
+### à¤…à¤¨à¥à¤µà¤¾à¤¦ à¤®à¥‡à¤‚ à¤…à¤šà¥à¤›à¥‡ à¤…à¤‚à¤• à¤•à¥‡ à¤Ÿà¤¿à¤ªà¥à¤¸
+1. **à¤¶à¤¬à¥à¤¦à¤¶à¤ƒ à¤…à¤¨à¥à¤µà¤¾à¤¦ à¤¸à¥‡ à¤¬à¤šà¥‡à¤‚**: à¤­à¤¾à¤µ à¤”à¤° à¤¸à¤‚à¤¦à¤°à¥à¤­ à¤•à¥‹ à¤ªà¥à¤°à¤¾à¤¥à¤®à¤¿à¤•à¤¤à¤¾ à¤¦à¥‡à¤‚
+2. **à¤¸à¤‚à¤¦à¤°à¥à¤­ à¤¸à¤®à¤à¥‡à¤‚**: à¤à¤• à¤¶à¤¬à¥à¤¦ à¤•à¥‡ à¤…à¤²à¤—-à¤…à¤²à¤— à¤…à¤°à¥à¤¥ à¤¹à¥‹ à¤¸à¤•à¤¤à¥‡ à¤¹à¥ˆà¤‚
+3. **à¤•à¤¾à¤°à¥à¤¯à¤¾à¤²à¤¯à¥€ à¤¶à¥ˆà¤²à¥€**: à¤¸à¤°à¤•à¤¾à¤°à¥€ à¤…à¤¨à¥à¤µà¤¾à¤¦ à¤®à¥‡à¤‚ à¤”à¤ªà¤šà¤¾à¤°à¤¿à¤• à¤­à¤¾à¤·à¤¾ à¤•à¤¾ à¤‰à¤ªà¤¯à¥‹à¤— à¤•à¤°à¥‡à¤‚
+4. **à¤•à¤¾à¤² à¤”à¤° à¤µà¤¾à¤šà¥à¤¯**: à¤…à¤‚à¤—à¥à¤°à¥‡à¤œà¤¼à¥€ à¤”à¤° à¤¹à¤¿à¤‚à¤¦à¥€ à¤®à¥‡à¤‚ à¤•à¤¾à¤² à¤”à¤° à¤µà¤¾à¤šà¥à¤¯ à¤•à¤¾ à¤¸à¤¹à¥€ à¤®à¤¿à¤²à¤¾à¤¨ à¤•à¤°à¥‡à¤‚
+5. **False Friends à¤¸à¥‡ à¤¸à¤¾à¤µà¤§à¤¾à¤¨**: "Sympathy", "Patent", "Actual" à¤œà¥ˆà¤¸à¥‡ à¤¶à¤¬à¥à¤¦à¥‹à¤‚ à¤•à¥‡ à¤¸à¤¹à¥€ à¤…à¤°à¥à¤¥ à¤œà¤¾à¤¨à¥‡à¤‚
 
 ### Quick Revision Checklist
-- [ ] 100+ सरकारी और बैंकिंग शब्द याद करें
-- [ ] 20+ False Friends के सही अर्थ जानें
-- [ ] 15+ अंग्रेज़ी मुहावरों के हिंदी समतुल्य सीखें
-- [ ] IT और तकनीकी शब्दावली (20 शब्द) याद करें
-- [ ] प्रतिदिन 2-3 अनुच्छेद का अनुवाद अभ्यास करें
-- [ ] पिछले वर्षों के अनुवाद प्रश्न हल करें
+- [ ] 100+ à¤¸à¤°à¤•à¤¾à¤°à¥€ à¤”à¤° à¤¬à¥ˆà¤‚à¤•à¤¿à¤‚à¤— à¤¶à¤¬à¥à¤¦ à¤¯à¤¾à¤¦ à¤•à¤°à¥‡à¤‚
+- [ ] 20+ False Friends à¤•à¥‡ à¤¸à¤¹à¥€ à¤…à¤°à¥à¤¥ à¤œà¤¾à¤¨à¥‡à¤‚
+- [ ] 15+ à¤…à¤‚à¤—à¥à¤°à¥‡à¤œà¤¼à¥€ à¤®à¥à¤¹à¤¾à¤µà¤°à¥‹à¤‚ à¤•à¥‡ à¤¹à¤¿à¤‚à¤¦à¥€ à¤¸à¤®à¤¤à¥à¤²à¥à¤¯ à¤¸à¥€à¤–à¥‡à¤‚
+- [ ] IT à¤”à¤° à¤¤à¤•à¤¨à¥€à¤•à¥€ à¤¶à¤¬à¥à¤¦à¤¾à¤µà¤²à¥€ (20 à¤¶à¤¬à¥à¤¦) à¤¯à¤¾à¤¦ à¤•à¤°à¥‡à¤‚
+- [ ] à¤ªà¥à¤°à¤¤à¤¿à¤¦à¤¿à¤¨ 2-3 à¤…à¤¨à¥à¤šà¥à¤›à¥‡à¤¦ à¤•à¤¾ à¤…à¤¨à¥à¤µà¤¾à¤¦ à¤…à¤­à¥à¤¯à¤¾à¤¸ à¤•à¤°à¥‡à¤‚
+- [ ] à¤ªà¤¿à¤›à¤²à¥‡ à¤µà¤°à¥à¤·à¥‹à¤‚ à¤•à¥‡ à¤…à¤¨à¥à¤µà¤¾à¤¦ à¤ªà¥à¤°à¤¶à¥à¤¨ à¤¹à¤² à¤•à¤°à¥‡à¤‚

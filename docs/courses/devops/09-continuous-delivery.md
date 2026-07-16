@@ -1,4 +1,4 @@
-# Chapter 9: Continuous Delivery
+﻿# Chapter 9: Continuous Delivery
 
 > **Prev:** [Advanced Kubernetes](./08-k8s-advanced.md)
 > **Next:** [Terraform & IaC](./09-iac.md)
@@ -17,16 +17,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/09-continuous-delivery/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/09-continuous-delivery/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/09-continuous-delivery/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/09-continuous-delivery/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/09-continuous-delivery/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/09-continuous-delivery/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/09-continuous-delivery/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/09-continuous-delivery/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/09-continuous-delivery/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/09-continuous-delivery/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/09-continuous-delivery/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/09-continuous-delivery/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -703,7 +703,7 @@ console.log(orchestrator.generateRollbackReport(plan, result));
 1. **Use feature flags to decouple deploy from release.** Deploy often, release when ready.
 2. **Implement blue-green or canary for production.** Zero-downtime deployments reduce risk.
 3. **Automate rollback triggers.** Health check failures should automatically revert.
-4. **Promote the same artifact.** Build once, deploy everywhere — no rebuilding.
+4. **Promote the same artifact.** Build once, deploy everywhere â€” no rebuilding.
 5. **Monitor every deployment.** Error rates, latency, and throughput are key signals.
 6. **Keep deployments small.** Smaller changes are easier to test and roll back.
 

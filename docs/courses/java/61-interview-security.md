@@ -1,8 +1,8 @@
-# Security Interview Q&A
+﻿# Security Interview Q&A
 
 > **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-d.md) | **Next:** [Testing Interview Q&amp;A](./62-interview-testing.md)
 
-This chapter covers essential security concepts every Java and Spring Boot developer should master for technical interviews. From foundational distinctions like authentication versus authorization to advanced topics such as OAuth2 authorization flows, JWT token management, Spring Security configuration, CSRF protection, secrets management with Vault, and password hashing with Argon2 → each question provides detailed explanations with complete, production-quality code examples. Security is not a feature; it is a cross-cutting concern that must be designed into every layer of an application. Understanding these patterns, protocols, and their implementations will prepare you to design, build, and defend secure systems at any scale.
+This chapter covers essential security concepts every Java and Spring Boot developer should master for technical interviews. From foundational distinctions like authentication versus authorization to advanced topics such as OAuth2 authorization flows, JWT token management, Spring Security configuration, CSRF protection, secrets management with Vault, and password hashing with Argon2 â†’ each question provides detailed explanations with complete, production-quality code examples. Security is not a feature; it is a cross-cutting concern that must be designed into every layer of an application. Understanding these patterns, protocols, and their implementations will prepare you to design, build, and defend secure systems at any scale.
 
 ![Security Interview Topics - Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/61-interview-security.png)
 
@@ -10,16 +10,16 @@ This chapter covers essential security concepts every Java and Spring Boot devel
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/61-interview-security/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/61-interview-security/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/61-interview-security/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/61-interview-security/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/61-interview-security/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/61-interview-security/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/61-interview-security/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/61-interview-security/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/61-interview-security/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/61-interview-security/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/61-interview-security/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/61-interview-security/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -51,7 +51,7 @@ flowchart LR
 
 **Answer:**
 
-Authentication and authorization are two fundamental but distinct security concerns. Authentication answers the question "Who are you?" → it verifies the identity of a user or system. Authorization answers "What are you allowed to do?" → it determines what resources an authenticated principal may access.
+Authentication and authorization are two fundamental but distinct security concerns. Authentication answers the question "Who are you?" â†’ it verifies the identity of a user or system. Authorization answers "What are you allowed to do?" â†’ it determines what resources an authenticated principal may access.
 
 In a typical web application, authentication happens first. The user presents credentials (username and password, token, certificate), and the system validates them. Once identity is established, authorization checks are applied to every subsequent request to ensure the principal has permission to perform the requested action.
 
@@ -143,7 +143,7 @@ public class OrderService {
 }
 ```
 
-The `@PreAuthorize` annotation runs its SpEL expression before the method executes. The `@PostAuthorize` annotation runs after the method returns, which is useful for scenarios where you need to inspect the return value. The `@Secured` annotation is simpler → it checks that the authenticated principal has the specified role → but lacks the expressiveness of SpEL expressions.
+The `@PreAuthorize` annotation runs its SpEL expression before the method executes. The `@PostAuthorize` annotation runs after the method returns, which is useful for scenarios where you need to inspect the return value. The `@Secured` annotation is simpler â†’ it checks that the authenticated principal has the specified role â†’ but lacks the expressiveness of SpEL expressions.
 
 In the filter chain, the ordering matters. Spring Security processes filters in a specific order, and the `authorizeHttpRequests` rules are evaluated in declaration order. The first matching rule wins. Always put permissive rules first and the catch-all `.anyRequest().authenticated()` last.
 
@@ -168,15 +168,15 @@ The **header** typically contains the token type and the signing algorithm:
 }
 ```
 
-The **payload** contains claims → statements about the entity and additional metadata. There are three categories of claims: registered (standardized), public (custom but collision-resistant), and private (custom between parties). Standard registered claims include:
+The **payload** contains claims â†’ statements about the entity and additional metadata. There are three categories of claims: registered (standardized), public (custom but collision-resistant), and private (custom between parties). Standard registered claims include:
 
-- `sub` (subject) → the principal identifier
-- `iss` (issuer) → who issued the token
-- `aud` (audience) → who the token is intended for
-- `exp` (expiration) → expiration time as a Unix timestamp
-- `nbf` (not before) → token is not valid before this time
-- `iat` (issued at) → when the token was issued
-- `jti` (JWT ID) → unique identifier for the token
+- `sub` (subject) â†’ the principal identifier
+- `iss` (issuer) â†’ who issued the token
+- `aud` (audience) â†’ who the token is intended for
+- `exp` (expiration) â†’ expiration time as a Unix timestamp
+- `nbf` (not before) â†’ token is not valid before this time
+- `iat` (issued at) â†’ when the token was issued
+- `jti` (JWT ID) â†’ unique identifier for the token
 
 The **signature** is computed over the base64url-encoded header and payload concatenated with a dot:
 
@@ -269,7 +269,7 @@ public class JwtAsymmetricExample {
 
 The verification process works by recomputing the signature using the received header and payload and comparing it against the transmitted signature. If they match, the token has not been tampered with. The verification also checks the `exp` claim to ensure the token is not expired, and optionally checks `iss`, `aud`, and `nbf`.
 
-Modern best practices recommend using asymmetric algorithms (RS256, ES256) over symmetric ones (HS256) in distributed systems. The key management is simpler → only the issuer holds the private key, and any service can verify using the public key without needing to protect a shared secret.
+Modern best practices recommend using asymmetric algorithms (RS256, ES256) over symmetric ones (HS256) in distributed systems. The key management is simpler â†’ only the issuer holds the private key, and any service can verify using the public key without needing to protect a shared secret.
 
 ### Q3: How do refresh tokens work in a JWT-based authentication system? When should you rotate refresh tokens?
 
@@ -409,7 +409,7 @@ public class RefreshTokenService {
         // Reuse detection: if already revoked, this indicates token theft
         if (refreshToken.isRevoked()) {
             repository.revokeAllByUsername(refreshToken.getUsername());
-            throw new TokenRefreshException("Potential token theft detected → all tokens revoked");
+            throw new TokenRefreshException("Potential token theft detected â†’ all tokens revoked");
         }
 
         refreshToken.setRevoked(true);
@@ -440,7 +440,7 @@ Refresh token rotation is an essential security mechanism. Every time a refresh 
 Best practices for refresh token storage:
 - Store refresh tokens in an HTTP-only, Secure, SameSite=Strict cookie rather than in localStorage. This prevents XSS attacks from accessing the token.
 - The refresh endpoint should use CSRF protection.
-- Implement refresh token reuse detection → if a revoked token is used, it indicates token theft.
+- Implement refresh token reuse detection â†’ if a revoked token is used, it indicates token theft.
 - Set appropriate expiration based on the sensitivity of the application. Banking apps might use 15 minutes; social apps might use 30 days.
 - Store a device fingerprint or user agent alongside the token to detect anomalous usage.
 
@@ -505,7 +505,7 @@ public class OAuth2ResourceServerConfig {
 }
 ```
 
-The PKCE (Proof Key for Code Exchange) extension is designed for public clients that cannot securely store a client secret → mobile apps, single-page applications, and native desktop apps. PKCE prevents the authorization code interception attack by introducing a cryptographically random secret that the client generates for each authorization request.
+The PKCE (Proof Key for Code Exchange) extension is designed for public clients that cannot securely store a client secret â†’ mobile apps, single-page applications, and native desktop apps. PKCE prevents the authorization code interception attack by introducing a cryptographically random secret that the client generates for each authorization request.
 
 Here is how PKCE works:
 
@@ -603,7 +603,7 @@ The choice of flow depends on your application type:
 
 **Answer:**
 
-Configuring Spring Security for a stateless REST API requires disabling session management, CSRF protection, and configuring a JWT authentication filter. The server should not create HTTP sessions → every request must carry its own authentication in the form of a JWT access token.
+Configuring Spring Security for a stateless REST API requires disabling session management, CSRF protection, and configuring a JWT authentication filter. The server should not create HTTP sessions â†’ every request must carry its own authentication in the form of a JWT access token.
 
 Here is the complete configuration:
 
@@ -793,7 +793,7 @@ app:
 
 Key points about this configuration:
 - `SessionCreationPolicy.STATELESS` ensures Spring Security never creates an HTTP session.
-- CSRF is disabled because there is no session to protect → CSRF tokens prevent session-based attacks.
+- CSRF is disabled because there is no session to protect â†’ CSRF tokens prevent session-based attacks.
 - The `OncePerRequestFilter` guarantees the filter executes once per request, even if forwarded to other servlets.
 - The filter extracts the token, validates it, and sets the `SecurityContext` before the request reaches the controller.
 
@@ -802,7 +802,7 @@ Key points about this configuration:
 
 **Answer:**
 
-OpenID Connect (OIDC) is an identity layer built on top of OAuth2. While OAuth2 is an authorization framework that provides access tokens for accessing resources, OIDC adds authentication capabilities by introducing the ID token → a signed JWT that contains information about the authenticated user.
+OpenID Connect (OIDC) is an identity layer built on top of OAuth2. While OAuth2 is an authorization framework that provides access tokens for accessing resources, OIDC adds authentication capabilities by introducing the ID token â†’ a signed JWT that contains information about the authenticated user.
 
 The key extension points of OIDC over OAuth2 are:
 
@@ -836,14 +836,14 @@ The ID token is a JWT with specific registered claims:
 ```
 
 Key claims in an ID token:
-- `iss` (issuer) → MUST match the issuer URL obtained from discovery.
-- `sub` (subject) → a unique, stable identifier for the user.
-- `aud` (audience) → MUST include the client's ID.
-- `exp` → the client MUST verify this timestamp.
-- `nonce` → a one-time value sent by the client during the initial request, included in the ID token to prevent replay attacks.
-- `auth_time` → when the user last authenticated.
-- `acr` (Authentication Context Class Reference) → indicates the level of authentication assurance.
-- `amr` (Authentication Methods Reference) → lists the authentication methods used.
+- `iss` (issuer) â†’ MUST match the issuer URL obtained from discovery.
+- `sub` (subject) â†’ a unique, stable identifier for the user.
+- `aud` (audience) â†’ MUST include the client's ID.
+- `exp` â†’ the client MUST verify this timestamp.
+- `nonce` â†’ a one-time value sent by the client during the initial request, included in the ID token to prevent replay attacks.
+- `auth_time` â†’ when the user last authenticated.
+- `acr` (Authentication Context Class Reference) â†’ indicates the level of authentication assurance.
+- `amr` (Authentication Methods Reference) â†’ lists the authentication methods used.
 
 Here is a Spring Boot application that acts as an OIDC client:
 
@@ -939,7 +939,7 @@ public class LegacyMethodSecurityConfig {
 }
 ```
 
-**@PreAuthorize** → Executes a SpEL expression before the method:
+**@PreAuthorize** â†’ Executes a SpEL expression before the method:
 
 ```java
 @RestController
@@ -972,7 +972,7 @@ public class OrderController {
 }
 ```
 
-**@PostAuthorize** → Executes after the method returns and can access the return value:
+**@PostAuthorize** â†’ Executes after the method returns and can access the return value:
 
 ```java
 @Service
@@ -994,7 +994,7 @@ public class DocumentService {
 }
 ```
 
-**@Secured** → A simpler annotation that takes an array of role strings:
+**@Secured** â†’ A simpler annotation that takes an array of role strings:
 
 ```java
 @Service
@@ -1008,7 +1008,7 @@ public class AdminService {
 }
 ```
 
-**@RolesAllowed** → The JSR-250 equivalent of `@Secured`:
+**@RolesAllowed** â†’ The JSR-250 equivalent of `@Secured`:
 
 ```java
 import jakarta.annotation.security.RolesAllowed;
@@ -1204,7 +1204,7 @@ http.headers(headers -> headers
 );
 ```
 
-3. Automatic HTML escaping in template engines → Thymeleaf, React, and Angular escape output by default:
+3. Automatic HTML escaping in template engines â†’ Thymeleaf, React, and Angular escape output by default:
 
 ```html
 <!-- Thymeleaf auto-escapes by default -->
@@ -1607,7 +1607,7 @@ fetch('/api/protected', { headers: { 'Authorization': `Bearer ${token}` } });
 ```
 
 Risks:
-- Full XSS vulnerability → one injected script compromises all tokens.
+- Full XSS vulnerability â†’ one injected script compromises all tokens.
 - No built-in expiry mechanism.
 - Accessible by any JavaScript on the same origin.
 
@@ -1978,7 +1978,7 @@ Key differences from the servlet stack:
 
 **Answer:**
 
-Password hashing transforms a plaintext password into an irreversible, fixed-length string. The two primary modern algorithms are bcrypt and Argon2id. Both incorporate salts → random values unique per password → to prevent rainbow table attacks.
+Password hashing transforms a plaintext password into an irreversible, fixed-length string. The two primary modern algorithms are bcrypt and Argon2id. Both incorporate salts â†’ random values unique per password â†’ to prevent rainbow table attacks.
 
 **Salt** is a cryptographically random string, unique per user, combined with the password before hashing. Salt prevents rainbow table attacks and detecting users with identical passwords.
 
@@ -2160,7 +2160,7 @@ public class PasswordConfig {
 
 **Answer:**
 
-The OAuth2 Device Authorization Grant (Device Flow) is designed for devices that have no browser or limited input capabilities → smart TVs, game consoles, IoT devices, CLI tools.
+The OAuth2 Device Authorization Grant (Device Flow) is designed for devices that have no browser or limited input capabilities â†’ smart TVs, game consoles, IoT devices, CLI tools.
 
 The flow:
 
@@ -2172,12 +2172,12 @@ The flow:
 6. The server returns an access token to the device.
 
 ```
-Device → Auth Server:
+Device â†’ Auth Server:
 POST /realms/my-realm/protocol/openid-connect/auth/device
 client_id=smart-tv-app
 &scope=openid profile streaming:read
 
-Auth Server → Device:
+Auth Server â†’ Device:
 {
   "device_code": "dGhpcyBpcyBhbiBleGFtcGxl",
   "user_code": "WDJB-MJHT",
@@ -2407,11 +2407,11 @@ http.headers(headers -> headers
 
 **Answer:**
 
-A custom `AuthenticationProvider` allows you to implement non-standard authentication mechanisms → OTP codes, hardware tokens, biometrics, MFA, or integration with legacy systems.
+A custom `AuthenticationProvider` allows you to implement non-standard authentication mechanisms â†’ OTP codes, hardware tokens, biometrics, MFA, or integration with legacy systems.
 
 The `AuthenticationProvider` interface has two methods:
-- `authenticate(Authentication)` → performs auth and returns a populated `Authentication` object
-- `supports(Class)` → returns true if this provider handles the given token type
+- `authenticate(Authentication)` â†’ performs auth and returns a populated `Authentication` object
+- `supports(Class)` â†’ returns true if this provider handles the given token type
 
 Complete TOTP-based MFA authentication provider:
 
@@ -2550,7 +2550,7 @@ public class TotpService {
 
 **Answer:**
 
-The authorization code flow with PKCE (Proof Key for Code Exchange) is the recommended OAuth2 flow for public clients → single-page applications, mobile apps, and native desktop apps. PKCE prevents the authorization code interception attack by introducing a cryptographic challenge-verifier pair.
+The authorization code flow with PKCE (Proof Key for Code Exchange) is the recommended OAuth2 flow for public clients â†’ single-page applications, mobile apps, and native desktop apps. PKCE prevents the authorization code interception attack by introducing a cryptographic challenge-verifier pair.
 
 **Complete step-by-step flow:**
 
@@ -2563,19 +2563,19 @@ The authorization code flow with PKCE (Proof Key for Code Exchange) is the recom
 7. The server hashes the verifier, compares it to the challenge, and if they match, issues tokens.
 
 ```
-Browser → Auth Server: GET /authorize?response_type=code&client_id=myapp&code_challenge=E9Melho...&code_challenge_method=S256
+Browser â†’ Auth Server: GET /authorize?response_type=code&client_id=myapp&code_challenge=E9Melho...&code_challenge_method=S256
 
-Auth Server → Browser: redirect with ?code=xxxxx
+Auth Server â†’ Browser: redirect with ?code=xxxxx
 
-Browser → Client Backend: POST /callback?code=xxxxx
+Browser â†’ Client Backend: POST /callback?code=xxxxx
 
-Client Backend → Auth Server: POST /token
+Client Backend â†’ Auth Server: POST /token
   grant_type=authorization_code
   code=xxxxx
   code_verifier=dBjftJeZ4CVP-mB92K27uhbUJU1p1r_wW1gFWFOEjXk
   client_id=myapp
 
-Auth Server → Client Backend: { access_token, id_token, refresh_token }
+Auth Server â†’ Client Backend: { access_token, id_token, refresh_token }
 ```
 
 Spring Boot controller implementing the client:
@@ -2726,7 +2726,7 @@ logging:
 Common CORS troubleshooting checklist:
 - The `Access-Control-Allow-Origin` must exactly match the request's `Origin` header.
 - `allowCredentials(true)` requires `allowedOrigins` to be specific (not `*`).
-- The browser sends preflight OPTIONS before the actual request → check both in server logs.
+- The browser sends preflight OPTIONS before the actual request â†’ check both in server logs.
 - If CORS is configured in both Spring Security and Spring MVC, Spring Security takes precedence.
 - For Spring Cloud Gateway or API gateways, ensure the gateway does not strip CORS headers.
 
@@ -2735,7 +2735,7 @@ Common CORS troubleshooting checklist:
 
 **Answer:**
 
-Secrets management involves securely storing, accessing, and rotating sensitive configuration → database passwords, API keys, TLS certificates, and encryption keys. Never hardcode secrets in source code or configuration files.
+Secrets management involves securely storing, accessing, and rotating sensitive configuration â†’ database passwords, API keys, TLS certificates, and encryption keys. Never hardcode secrets in source code or configuration files.
 
 **Spring Cloud Vault Integration:**
 
@@ -2941,8 +2941,8 @@ spring:
 
 Encryption in transit protects data as it travels over the network. In a Spring Boot application, this means:
 
-1. **HTTPS/TLS** for client-to-server communication → configure as shown in Q16.
-2. **Database TLS** → configure SSL connection to the database:
+1. **HTTPS/TLS** for client-to-server communication â†’ configure as shown in Q16.
+2. **Database TLS** â†’ configure SSL connection to the database:
 
 ```yaml
 spring:
@@ -2956,7 +2956,7 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
 ```
 
-3. **Message broker TLS** → configure SSL for RabbitMQ or Kafka:
+3. **Message broker TLS** â†’ configure SSL for RabbitMQ or Kafka:
 
 ```yaml
 spring:
@@ -2991,7 +2991,7 @@ public GrpcChannelFactory grpcChannelFactory() throws Exception {
 
 Encryption at rest protects stored data. In a Spring Boot application, this involves:
 
-1. **Database-level encryption** → transparent data encryption (TDE) in PostgreSQL, MySQL, or SQL Server.
+1. **Database-level encryption** â†’ transparent data encryption (TDE) in PostgreSQL, MySQL, or SQL Server.
 2. **Column-level encryption** with JPA:
 
 ```java
@@ -3168,7 +3168,7 @@ public class CustomFilterConfig {
 }
 ```
 
-The `addFilterAt` method places the filter at the same position as the specified filter class. Spring Security does not guarantee which filter runs first if two filters are at the same position → it is safer to use `addFilterBefore` or `addFilterAfter`.
+The `addFilterAt` method places the filter at the same position as the specified filter class. Spring Security does not guarantee which filter runs first if two filters are at the same position â†’ it is safer to use `addFilterBefore` or `addFilterAfter`.
 
 **Implementing custom filters:**
 
@@ -3232,7 +3232,7 @@ public class RateLimitingFilter extends OncePerRequestFilter {
 
 The Spring Security authentication architecture follows a layered design pattern with three main participants:
 
-**AuthenticationManager** → The core strategy interface with a single method:
+**AuthenticationManager** â†’ The core strategy interface with a single method:
 
 ```java
 public interface AuthenticationManager {
@@ -3241,7 +3241,7 @@ public interface AuthenticationManager {
 }
 ```
 
-**ProviderManager** → The default implementation of `AuthenticationManager`. It holds a list of `AuthenticationProvider` instances and iterates through them until one returns a non-null `Authentication` or throws a non-final exception.
+**ProviderManager** â†’ The default implementation of `AuthenticationManager`. It holds a list of `AuthenticationProvider` instances and iterates through them until one returns a non-null `Authentication` or throws a non-final exception.
 
 ```java
 public class ProviderManager implements AuthenticationManager, MessageSourceAware {
@@ -3294,7 +3294,7 @@ public class ProviderManager implements AuthenticationManager, MessageSourceAwar
 }
 ```
 
-**AuthenticationProvider** → The strategy interface that performs a specific type of authentication:
+**AuthenticationProvider** â†’ The strategy interface that performs a specific type of authentication:
 
 ```java
 public interface AuthenticationProvider {
@@ -3357,7 +3357,7 @@ public class AuthArchitectureConfig {
 **Provider iteration rules:**
 - `supports()` is checked first. If false, the provider is skipped.
 - If a provider throws `AuthenticationException` that is not `AccountStatusException` or `InternalAuthenticationServiceException`, the next provider is tried.
-- If a provider throws `AccountStatusException` (locked, disabled, expired), the exception is thrown immediately → no fallback.
+- If a provider throws `AccountStatusException` (locked, disabled, expired), the exception is thrown immediately â†’ no fallback.
 - If no provider succeeds, the parent `AuthenticationManager` is tried.
 - If no provider succeeds and there is no parent, `ProviderNotFoundException` is thrown.
 
@@ -3583,8 +3583,8 @@ public class RateLimitedController {
 
 `AuthenticationEntryPoint` and `AccessDeniedHandler` handle two different security failure scenarios:
 
-- **AuthenticationEntryPoint** handles unauthenticated requests → when a user tries to access a protected resource without valid credentials.
-- **AccessDeniedHandler** handles authenticated but unauthorized requests → when a user has valid credentials but lacks the required permissions for the requested resource.
+- **AuthenticationEntryPoint** handles unauthenticated requests â†’ when a user tries to access a protected resource without valid credentials.
+- **AccessDeniedHandler** handles authenticated but unauthorized requests â†’ when a user has valid credentials but lacks the required permissions for the requested resource.
 
 ```java
 @Configuration
@@ -3657,8 +3657,8 @@ The `ExceptionTranslationFilter` is the filter that catches authentication and a
 
 ```
 ExceptionTranslationFilter
-├── AuthenticationException → AuthenticationEntryPoint
-└── AccessDeniedException  → AccessDeniedHandler
+â”œâ”€â”€ AuthenticationException â†’ AuthenticationEntryPoint
+â””â”€â”€ AccessDeniedException  â†’ AccessDeniedHandler
 ```
 
 For form-based login, the default `AuthenticationEntryPoint` redirects to the login page. For REST APIs, you should use a custom entry point that returns 401 with a JSON body.
@@ -3683,7 +3683,7 @@ public class MethodSecurityConfig {
 
 **Answer:**
 
-Spring Boot Actuator provides production-ready endpoints for monitoring and managing your application. These endpoints expose sensitive information about your application's health, metrics, environment properties, and thread dumps → so they must be secured properly.
+Spring Boot Actuator provides production-ready endpoints for monitoring and managing your application. These endpoints expose sensitive information about your application's health, metrics, environment properties, and thread dumps â†’ so they must be secured properly.
 
 **Secure actuator configuration:**
 
@@ -3860,8 +3860,8 @@ Microservices security requires a defense-in-depth approach across multiple laye
 **Architecture overview:**
 
 ```
-Client → API Gateway → Service A → Service B
-                ↓            ↓           ↓
+Client â†’ API Gateway â†’ Service A â†’ Service B
+                â†“            â†“           â†“
           Auth Server    Database    Message Queue
 ```
 
@@ -4013,7 +4013,7 @@ Additional security measures:
 - **Audit logging**: All inter-service calls are logged with correlation IDs.
 - **Circuit breakers**: Prevent cascading failures and limit blast radius.
 - **Data encryption**: Encrypt sensitive data at rest in each service's database.
-- **Input validation**: Each service validates inputs independently → never trust downstream service data.
+- **Input validation**: Each service validates inputs independently â†’ never trust downstream service data.
 
 Istio authorization policy example:
 

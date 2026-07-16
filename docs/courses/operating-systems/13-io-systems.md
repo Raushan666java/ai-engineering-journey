@@ -1,4 +1,4 @@
-# Chapter 13: I/O Systems
+﻿# Chapter 13: I/O Systems
 
 **<< [Secondary Storage](./12-secondary-storage.md)** | [**Next: The Linux Kernel**](./14-linux-kernel.md) >>
 
@@ -18,16 +18,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/operating-systems/13-io-systems/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/operating-systems/13-io-systems/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/operating-systems/13-io-systems/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/operating-systems/13-io-systems/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/operating-systems/13-io-systems/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/operating-systems/13-io-systems/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/operating-systems/13-io-systems/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/operating-systems/13-io-systems/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/operating-systems/13-io-systems/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/operating-systems/13-io-systems/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/operating-systems/13-io-systems/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/operating-systems/13-io-systems/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -2941,10 +2941,10 @@ int main() {
    a) Page cache  b) IOMMU  c) VFS  d) Device mapper
 
 11. What is the sequence of events in an interrupt-driven I/O operation?
-    a) Device signals IRQ → CPU saves context → ISR runs → CPU restores context
-    b) CPU polls device → reads data → clears flag
-    c) DMA controller transfers → CPU saves context → IRQ fires
-    d) CPU writes command → device writes to memory → CPU reads
+    a) Device signals IRQ â†’ CPU saves context â†’ ISR runs â†’ CPU restores context
+    b) CPU polls device â†’ reads data â†’ clears flag
+    c) DMA controller transfers â†’ CPU saves context â†’ IRQ fires
+    d) CPU writes command â†’ device writes to memory â†’ CPU reads
 
 12. In a double-buffering scheme, what is the primary advantage over single buffering?
     a) Less memory usage
@@ -2965,18 +2965,18 @@ int main() {
     d) Enables scheduling and prioritization of I/O jobs
 
 15. In the Linux I/O stack, what is the correct order from top to bottom?
-    a) Device driver → Block layer → Page cache → VFS → Application
-    b) Application → VFS → Page cache → Block layer → Device driver → Device
-    c) Application → Page cache → VFS → Device driver → Device
-    d) Application → Block layer → VFS → Page cache → Device driver
+    a) Device driver â†’ Block layer â†’ Page cache â†’ VFS â†’ Application
+    b) Application â†’ VFS â†’ Page cache â†’ Block layer â†’ Device driver â†’ Device
+    c) Application â†’ Page cache â†’ VFS â†’ Device driver â†’ Device
+    d) Application â†’ Block layer â†’ VFS â†’ Page cache â†’ Device driver
 
 **Answers:** 1-c, 2-a, 3-b, 4-c, 5-a, 6-c, 7-c, 8-b, 9-b, 10-b, 11-a, 12-b, 13-b, 14-c, 15-b
 
-### TypeScript I/O Simulator — DMA vs Interrupt vs Polling
+### TypeScript I/O Simulator â€” DMA vs Interrupt vs Polling
 
 ```typescript
 /**
- * IOSimulator: Compares three I/O methods — Polling, Interrupt-Driven, and DMA —
+ * IOSimulator: Compares three I/O methods â€” Polling, Interrupt-Driven, and DMA â€”
  * in terms of CPU utilization, transfer time, and concurrency.
  */
 interface IoConfig {
@@ -3152,7 +3152,7 @@ analyzer.compare(scenarios);
 
 18. **Interrupt coalescing simulator**: Implement a model of interrupt coalescing where the device waits for a batch of events before raising an IRQ. Compare latency (increased due to batching) vs CPU utilization (decreased due to fewer IRQs). Find the optimal coalescing threshold for a 10 GbE NIC producing 1M packets/sec.
 
-19. **Block device scheduler comparison**: Implement three I/O schedulers in TypeScript — NOOP (FIFO), Deadline (per-request deadlines), and CFQ (per-process fairness). Generate a mixed workload of 80% reads (latency-sensitive) and 20% writes (throughput-oriented). Measure avg read latency, write throughput, and fairness index.
+19. **Block device scheduler comparison**: Implement three I/O schedulers in TypeScript â€” NOOP (FIFO), Deadline (per-request deadlines), and CFQ (per-process fairness). Generate a mixed workload of 80% reads (latency-sensitive) and 20% writes (throughput-oriented). Measure avg read latency, write throughput, and fairness index.
 
 20. **io_uring async I/O simulator**: Design and implement a simplified io_uring model in TypeScript. Features: submission queue (SQ) and completion queue (CQ) as shared ring buffers, batched submission with `io_uring_enter()`, support for `readv`, `writev`, and `fsync` operations, and polled I/O mode (SQPOLL). Compare throughput vs traditional synchronous I/O for random 4KB reads.
 

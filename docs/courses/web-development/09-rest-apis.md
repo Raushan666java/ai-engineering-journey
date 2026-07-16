@@ -1,4 +1,4 @@
-# Chapter 9: REST APIs and API Design
+﻿# Chapter 9: REST APIs and API Design
 
 > **Previous:** [08-node-express](./08-node-express.md) | **Next:** [10-auth](./10-auth.md)
 
@@ -9,16 +9,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/web-development/09-rest-apis/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/web-development/09-rest-apis/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/web-development/09-rest-apis/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/web-development/09-rest-apis/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/web-development/09-rest-apis/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/web-development/09-rest-apis/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/web-development/09-rest-apis/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/web-development/09-rest-apis/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/web-development/09-rest-apis/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/web-development/09-rest-apis/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/web-development/09-rest-apis/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/web-development/09-rest-apis/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -35,7 +35,7 @@ By the end of this chapter, you will be able to:
 |-------|-------------|-------------------|
 |REST Principles|Six constraints including stateless, cacheable, uniform interface|Use plural nouns for resources, HTTP methods for actions, nested URIs for relations|
 |Route Design|Maps HTTP methods + URL patterns to handler functions|Keep resource names plural, use params for IDs, query params for filtering|
-|Input Validation|Zod schemas parse and validate request bodies and query params|Validate at the boundary — parse input before it reaches business logic|
+|Input Validation|Zod schemas parse and validate request bodies and query params|Validate at the boundary â€” parse input before it reaches business logic|
 |Error Handling|Structured error responses with code, message, and details fields|Use consistent error shape across all endpoints for client-side handling|
 |OpenAPI/Swagger|YAML/JSON specification documents the entire API surface|Auto-generate client SDKs and interactive docs from the spec file|
 |API Versioning|URI, header, or query-parameter strategies for backward compat|Prefer URI versioning `/v1/` for simplicity; header versioning for cleaner URLs|
@@ -460,7 +460,7 @@ app.post("/api/users/bulk", async (req, res, next) => {
 
 
 > [!TIP]
-> Use `z.coerce.number()` to automatically convert query string values to numbers in Zod schemas — query params are always strings.
+> Use `z.coerce.number()` to automatically convert query string values to numbers in Zod schemas â€” query params are always strings.
 
 > [!WARNING]
 > Never expose internal IDs like database primary keys in API responses. Use UUIDs or slugs for public resource identifiers.

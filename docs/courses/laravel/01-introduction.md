@@ -1,4 +1,4 @@
-# Chapter 1: Introduction to Laravel 13
+﻿# Chapter 1: Introduction to Laravel 13
 
 **Next:** [Architecture, Routing, Middleware & Controllers](./02-architecture-routing.md)
 
@@ -21,16 +21,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/01-introduction/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/01-introduction/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/01-introduction/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/01-introduction/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/01-introduction/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/01-introduction/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/01-introduction/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/01-introduction/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/01-introduction/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/01-introduction/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/01-introduction/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/01-introduction/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -47,7 +47,7 @@
 |Framework Philosophy|Laravel offers elegant syntax, expressive code, and convention over configuration|Use Laravel when you need rapid development with clean, maintainable code|
 |Laravel 13 Features|PHP 8.3 minimum, annual release cadence, AI-native workflows, minimal breaking changes|Upgrade planning should start 3 months before each August release|
 |Application Setup|Four methods: Installer, Herd, Sail, and Composer|Use Herd for local dev, Sail for team consistency|
-|Directory Structure|MVC-based layout with app/, config/, database/, resources/, routes/ as core|Follow Laravel conventions — AI tools find files predictably|
+|Directory Structure|MVC-based layout with app/, config/, database/, resources/, routes/ as core|Follow Laravel conventions â€” AI tools find files predictably|
 |Artisan CLI|CLI for scaffolding, migrations, and queue commands|Use `php artisan make:` for all scaffolding|
 |Environment Config|.env + config/ for environment-specific settings|Store secrets in .env, defaults in config/|
 
@@ -77,7 +77,7 @@ flowchart TD
 |Framework Philosophy|Laravel offers elegant syntax, expressive code, and convention over configuration|Use Laravel when you need rapid development with clean, maintainable code|
 |Laravel 13 Features|PHP 8.3 minimum, annual release cadence, AI-native workflows, minimal breaking changes|Upgrade planning should start 3 months before each August release|
 |Application Setup|Four methods: Installer, Herd, Sail (Docker), and Composer create-project|Use Laravel Herd for local dev, Sail for team consistency|
-|Directory Structure|MVC-based layout with app/, config/, database/, resources/, routes/ as core directories|Follow Laravel conventions — AI tools and team members will find files predictably|
+|Directory Structure|MVC-based layout with app/, config/, database/, resources/, routes/ as core directories|Follow Laravel conventions â€” AI tools and team members will find files predictably|
 |Artisan CLI|CLI tool for scaffolding, migrations, queue work, and custom commands|Use `php artisan make:` commands to scaffold controllers, models, migrations, and more|
 |Environment Config|.env file + config/ directory for environment-specific settings|Store secrets in .env, configuration defaults in config/ files|
 
@@ -110,9 +110,9 @@ flowchart TD
 
 > **One-Sentence Takeaway:** Laravel's progressive nature lets you start small and scale up by adopting only the features you need
 
-Laravel is an open-source PHP web framework created by Taylor Otwell in June 2011. Otwell, a web developer from Arkansas, had been building applications with CodeIgniter and saw an opportunity to create something better → a framework that combined the best ideas from Ruby on Rails, ASP.NET MVC, and existing PHP frameworks into a cohesive, elegant package. The first beta of Laravel 1.0 was released on GitHub on June 9, 2011, and immediately resonated with developers who were frustrated with PHP's fragmented ecosystem.
+Laravel is an open-source PHP web framework created by Taylor Otwell in June 2011. Otwell, a web developer from Arkansas, had been building applications with CodeIgniter and saw an opportunity to create something better â†’ a framework that combined the best ideas from Ruby on Rails, ASP.NET MVC, and existing PHP frameworks into a cohesive, elegant package. The first beta of Laravel 1.0 was released on GitHub on June 9, 2011, and immediately resonated with developers who were frustrated with PHP's fragmented ecosystem.
 
-At the time, PHP frameworks fell into two camps: lightweight but underpowered (CodeIgniter, CakePHP) or powerful but overly complex (Symfony). Laravel struck a balance. It offered modern features like routing, ORM, authentication, and templating, but wrapped them in what Otwell called "developer ergonomics" → clean syntax, intuitive method names, and sensible defaults.
+At the time, PHP frameworks fell into two camps: lightweight but underpowered (CodeIgniter, CakePHP) or powerful but overly complex (Symfony). Laravel struck a balance. It offered modern features like routing, ORM, authentication, and templating, but wrapped them in what Otwell called "developer ergonomics" â†’ clean syntax, intuitive method names, and sensible defaults.
 
 > **Remember:** Laravel ships with sensible defaults. You do not need to configure a database, view renderer, or mailer before they work.
 
@@ -120,8 +120,8 @@ At the time, PHP frameworks fell into two camps: lightweight but underpowered (C
 The core philosophy rests on three pillars:
 
 - **Elegant Syntax**: Laravel code reads like well-written prose. Database queries are expressed fluently. Relationships read naturally. Method chains are predictable. The goal is to minimize the distance between what you think and what you type.
-- **Expressive**: Common web development tasks → database queries, email delivery, authentication, caching, file storage → are expressed in as few lines as possible without sacrificing clarity. A simple contact form submission might be five lines of controller code.
-- **Convention over Configuration**: Laravel ships with sensible defaults. You do not need to write a configuration file to render a view, connect to a database, or send email. When you need to override conventions, the escape hatch is always there → but you rarely need it.
+- **Expressive**: Common web development tasks â†’ database queries, email delivery, authentication, caching, file storage â†’ are expressed in as few lines as possible without sacrificing clarity. A simple contact form submission might be five lines of controller code.
+- **Convention over Configuration**: Laravel ships with sensible defaults. You do not need to write a configuration file to render a view, connect to a database, or send email. When you need to override conventions, the escape hatch is always there â†’ but you rarely need it.
 
 > **Remember:** Laravel ships with sensible defaults. You do not need to configure a database, view renderer, or mailer before they work.
 
@@ -140,10 +140,10 @@ Laravel follows an annual major release cadence, shipping each August. Laravel 1
 > **Warning:** Verify your PHP version before upgrading. Laravel 13 drops support for PHP 8.2 and below.
 
 
-> **Warning:** Verify your PHP version before upgrading. Laravel 13 drops support for PHP 8.2 and below — run `php -v` first.
+> **Warning:** Verify your PHP version before upgrading. Laravel 13 drops support for PHP 8.2 and below â€” run `php -v` first.
 
 
-**Annual Release Cadence**: The predictable August release schedule allows teams to plan upgrades. Each major version receives 18 months of bug fixes and two years of security fixes. The upgrade path between consecutive versions is designed to be minimal → Laravel's core team treats breaking changes as a last resort.
+**Annual Release Cadence**: The predictable August release schedule allows teams to plan upgrades. Each major version receives 18 months of bug fixes and two years of security fixes. The upgrade path between consecutive versions is designed to be minimal â†’ Laravel's core team treats breaking changes as a last resort.
 
 **Minimal Breaking Changes Philosophy**: When a breaking change is unavoidable, Laravel provides comprehensive upgrade guides, automation via Laravel Shift (a paid service that rewrites your code for the new version), and deprecation warnings that span multiple versions. Most applications upgrade from N-1 to N in under an hour.
 
@@ -183,7 +183,7 @@ Herd is Laravel's native PHP development environment for macOS and Windows. It b
 herd create my-app
 ```
 
-Herd automatically serves projects from `~/Herd/` at `{folder}.test` with HTTPS. It provides a GUI for managing PHP versions (you can set different PHP versions per project), controlling services like MySQL and Redis, and accessing logs. No configuration files, no Docker overhead → it just works.
+Herd automatically serves projects from `~/Herd/` at `{folder}.test` with HTTPS. It provides a GUI for managing PHP versions (you can set different PHP versions per project), controlling services like MySQL and Redis, and accessing logs. No configuration files, no Docker overhead â†’ it just works.
 
 #### Laravel Sail
 
@@ -228,7 +228,7 @@ A fresh Laravel application follows a consistent, well-documented layout.
 
 | Directory / File | Purpose |
 |---|---|
-| `app/` | Core application code → models, controllers, middleware, providers |
+| `app/` | Core application code â†’ models, controllers, middleware, providers |
 | `bootstrap/` | Framework bootstrapping files |
 | `config/` | Configuration files, one per system concern |
 | `database/` | Migrations, factories, seeders |
@@ -249,14 +249,14 @@ A fresh Laravel application follows a consistent, well-documented layout.
 | `Http/Middleware/` | HTTP middleware for request filtering |
 | `Http/Requests/` | Form request validation classes |
 | `Models/` | Eloquent model classes |
-| `Providers/` | Service providers → the bootstrapping logic |
+| `Providers/` | Service providers â†’ the bootstrapping logic |
 
 The `app/Models` directory is notable. Models live under `app/Models/` by convention rather than directly in `app/`. This keeps the namespace clean and predictable.
 
 ### 1.5 Artisan CLI
 
 
-> **One-Sentence Takeaway:** Artisan is your Swiss Army knife — from scaffolding to migrations to custom commands, it handles everything
+> **One-Sentence Takeaway:** Artisan is your Swiss Army knife â€” from scaffolding to migrations to custom commands, it handles everything
 
 Artisan is Laravel's command-line interface. It is your daily companion for development.
 
@@ -398,7 +398,7 @@ Laravel 13 is explicitly designed to work well with AI coding assistants. This i
 
 **Laravel for Agents**: The ecosystem publishes guidelines for AI coding tools. These guidelines recommend using `artisan make` commands over manual file creation, defining routes explicitly rather than relying on magic, and writing tests first. They also document file path conventions, namespace rules, and naming patterns that AI agents should follow.
 
-### 1.8 Hello World → Complete Walkthrough
+### 1.8 Hello World â†’ Complete Walkthrough
 
 
 We will build "Hello World" three ways, each demonstrating a deeper layer.
@@ -534,7 +534,7 @@ Laravel's first-party ecosystem is one of its greatest strengths. These packages
 | **Telescope** | Debugging | Request/query/exception inspector |
 | **Pulse** | Monitoring | Production health (slow queries, users, queues) |
 | **Sanctum** | Auth | API token auth for SPAs and mobile apps |
-| **Socialite** | Auth | OAuth → GitHub, Google, Facebook, Twitter |
+| **Socialite** | Auth | OAuth â†’ GitHub, Google, Facebook, Twitter |
 | **Cashier** | Billing | Subscription management (Stripe, Paddle) |
 | **Scout** | Search | Full-text search (Meilisearch, Algolia) |
 | **Sail** | Dev | Docker development environment |
@@ -691,7 +691,7 @@ Test your understanding with these questions.
 - Artisan CLI provides scaffolding commands for models, controllers, migrations, and middleware
 - Environment configuration uses `.env` files and a `config/` directory with `env()` and `config()` helpers
 - The framework is designed for AI-assisted development with predictable, agent-friendly conventions
-- Hello World can be built at three depth levels → closure, controller, or full MVC with Blade
+- Hello World can be built at three depth levels â†’ closure, controller, or full MVC with Blade
 - The first-party ecosystem spans deployment, monitoring, admin, search, billing, real-time, and AI
 
 ### 1.10 Development Workflow
@@ -708,7 +708,7 @@ A typical Laravel development session follows this rhythm:
 8. **Test**: Write tests with Pest or PHPUnit in the `tests/` directory
 9. **Iterate**: Artisan commands, Tinker REPL, and Telescope debugging support rapid iteration
 
-This workflow is intentionally linear and predictable → another reason AI agents excel at Laravel development. Each step has a clear entry point and a known output location.
+This workflow is intentionally linear and predictable â†’ another reason AI agents excel at Laravel development. Each step has a clear entry point and a known output location.
 
 ---
 

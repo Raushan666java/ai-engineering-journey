@@ -1,4 +1,4 @@
-# Chapter 17: PSUs & Government — Company-Specific Question Bank
+﻿# Chapter 17: PSUs & Government â€” Company-Specific Question Bank
 
 ## Learning Objectives
 
@@ -11,16 +11,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/interview-preparation/17-company-psus-govt/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/interview-preparation/17-company-psus-govt/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/17-company-psus-govt/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/interview-preparation/17-company-psus-govt/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/interview-preparation/17-company-psus-govt/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/interview-preparation/17-company-psus-govt/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/17-company-psus-govt/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/interview-preparation/17-company-psus-govt/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/interview-preparation/17-company-psus-govt/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/interview-preparation/17-company-psus-govt/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/17-company-psus-govt/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/interview-preparation/17-company-psus-govt/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -90,7 +90,7 @@ pie showData
 | **Memory** | Contiguous allocation | Dynamic, non-contiguous |
 | **Size** | Fixed (static arrays) or resizable (dynamic) | Dynamic, grows/shrinks at runtime |
 | **Access** | O(1) random access via index | O(n) sequential access |
-| **Insertion/Deletion** | O(n) — shifting elements | O(1) at head, O(n) at arbitrary position |
+| **Insertion/Deletion** | O(n) â€” shifting elements | O(1) at head, O(n) at arbitrary position |
 | **Memory overhead** | Minimal (only data) | Extra per-node pointer storage |
 | **Cache locality** | Excellent (sequential memory) | Poor (scattered memory) |
 
@@ -113,7 +113,7 @@ A stack is a linear data structure that follows LIFO (Last In, First Out) princi
 5. **Syntax parsing:** Checking balanced parentheses, HTML tag matching
 6. **Backtracking algorithms:** Maze solving, N-Queens problem
 
-**Operations:** push(), pop(), peek()/top(), isEmpty() — all O(1) time.
+**Operations:** push(), pop(), peek()/top(), isEmpty() â€” all O(1) time.
 </details>
 
 **Q3.** What is a queue? What are its types?
@@ -124,8 +124,8 @@ A stack is a linear data structure that follows LIFO (Last In, First Out) princi
 A queue is a linear data structure that follows FIFO (First In, First Out) principle. Elements are added at the rear and removed from the front.
 
 **Types:**
-1. **Simple Queue:** Basic FIFO — enqueue at rear, dequeue at front
-2. **Circular Queue:** Last position connects to first — better memory utilization
+1. **Simple Queue:** Basic FIFO â€” enqueue at rear, dequeue at front
+2. **Circular Queue:** Last position connects to first â€” better memory utilization
 3. **Priority Queue:** Elements removed based on priority, not order
 4. **Deque (Double Ended Queue):** Insert/delete at both ends
 
@@ -141,13 +141,13 @@ Binary search is a divide-and-conquer algorithm that finds an element in a **sor
 
 **Algorithm:**
 1. Compare target with middle element
-2. If equal → return index
-3. If target < middle → search left half
-4. If target > middle → search right half
+2. If equal â†’ return index
+3. If target < middle â†’ search left half
+4. If target > middle â†’ search right half
 5. Repeat until found or space exhausted
 
 **Complexity:**
-- **Time:** O(log n) — search space halves each iteration
+- **Time:** O(log n) â€” search space halves each iteration
 - **Space:** O(1) iterative, O(log n) recursive
 
 **Prerequisite:** The array must be sorted.
@@ -175,10 +175,10 @@ Hashing is a technique that maps keys to array indices using a hash function, en
 |-----------|-------------|------|------|
 | **Separate Chaining** | Each bucket stores a linked list of entries | Simple, unlimited elements | Extra memory for pointers |
 | **Linear Probing** | Find next empty slot: (hash+1), (hash+2)... | Cache-friendly | Clustering problem |
-| **Quadratic Probing** | (hash+1²), (hash+2²), (hash+3²)... | Reduces clustering | May miss empty slots |
+| **Quadratic Probing** | (hash+1Â²), (hash+2Â²), (hash+3Â²)... | Reduces clustering | May miss empty slots |
 | **Double Hashing** | Use second hash function for step size | Best distribution | More computation |
 
-**Load factor (λ) = n/m** (filled slots / total slots). Rehashing when λ exceeds threshold (typically 0.75).
+**Load factor (Î») = n/m** (filled slots / total slots). Rehashing when Î» exceeds threshold (typically 0.75).
 </details>
 
 ### Algorithms (5 Questions)
@@ -319,12 +319,12 @@ function fibOptimal(n: number): number {
 | O(log n) | Logarithmic | Binary search | Each step halves the input |
 | O(n) | Linear | Linear search | Time grows proportionally to input |
 | O(n log n) | Linearithmic | Merge sort | Common for efficient sorting |
-| O(n²) | Quadratic | Bubble sort | Nested loops over input |
-| O(2ⁿ) | Exponential | Fibonacci naive | Growth doubles with each input |
+| O(nÂ²) | Quadratic | Bubble sort | Nested loops over input |
+| O(2â¿) | Exponential | Fibonacci naive | Growth doubles with each input |
 
 **Rules:**
-- Drop constants: O(2n) → O(n)
-- Drop lower order terms: O(n² + n) → O(n²)
+- Drop constants: O(2n) â†’ O(n)
+- Drop lower order terms: O(nÂ² + n) â†’ O(nÂ²)
 - Analyze worst case unless specified
 
 **Space complexity:** Similar notation but for memory usage.
@@ -338,10 +338,10 @@ function fibOptimal(n: number): number {
 | Aspect | Merge Sort | Quick Sort |
 |--------|-----------|------------|
 | **Approach** | Divide and conquer (splits array in half) | Divide and conquer (pivot-based partition) |
-| **Time (worst)** | O(n log n) — guaranteed | O(n²) — rare (poor pivot choices) |
+| **Time (worst)** | O(n log n) â€” guaranteed | O(nÂ²) â€” rare (poor pivot choices) |
 | **Time (average)** | O(n log n) | O(n log n) |
 | **Time (best)** | O(n log n) | O(n log n) |
-| **Space** | O(n) — auxiliary array | O(log n) — recursion stack |
+| **Space** | O(n) â€” auxiliary array | O(log n) â€” recursion stack |
 | **Stability** | Stable | Not stable (by default) |
 | **When to prefer** | Guaranteed performance needed, linked lists | In-place sorting, average-case optimized |
 | **External sorting** | Excellent (sequential access) | Poor (random access needed) |
@@ -408,14 +408,14 @@ A **critical section** is a code segment that accesses shared resources (variabl
 
 **Paging Address Translation:**
 ```
-Virtual Address → Page Number + Offset
-       ↓             ↓
-   Page Table → Frame Number
-       ↓             ↓
-Physical Address = Frame Number × Page Size + Offset
+Virtual Address â†’ Page Number + Offset
+       â†“             â†“
+   Page Table â†’ Frame Number
+       â†“             â†“
+Physical Address = Frame Number Ã— Page Size + Offset
 ```
 
-**Combined approach (Paged Segmentation):** Segments are themselves paged — gives both logical view and no external fragmentation. Used in modern OS.
+**Combined approach (Paged Segmentation):** Segments are themselves paged â€” gives both logical view and no external fragmentation. Used in modern OS.
 </details>
 
 **Q14.** What are the different CPU scheduling algorithms?
@@ -451,10 +451,10 @@ Physical Address = Frame Number × Page Size + Offset
 
 **How it works:**
 - Pages are swapped between RAM and disk (swap space)
-- Page fault → OS loads required page from disk
+- Page fault â†’ OS loads required page from disk
 - Page replacement algorithms (LRU, Clock, FIFO) decide which page to evict
 
-**Thrashing:** Excessive paging when RAM is insufficient — system spends more time paging than executing.
+**Thrashing:** Excessive paging when RAM is insufficient â€” system spends more time paging than executing.
 </details>
 
 ### Database Management Systems (5 Questions)
@@ -522,12 +522,12 @@ LEFT JOIN departments d ON e.dept_id = d.dept_id;
 | **2NF** | 1NF + No partial dependency on composite key | Column depends on part of composite PK |
 | **3NF** | 2NF + No transitive dependency | Column depends on another non-key column |
 
-**Example: Unnormalized table → 3NF**
+**Example: Unnormalized table â†’ 3NF**
 ```
 Unnormalized: Student(ID, Name, Courses, Instructor, InstructorPhone)
 1NF: Student(ID, Name, CourseID), Course(CourseID, CourseName, InstructorID, InstructorPhone)
 2NF: Student(ID, Name), Enrollment(ID, CourseID), Course(CourseID, CourseName, InstructorID), Instructor(InstructorID, InstructorPhone)
-3NF: (InstructorPhone depends on InstructorID, not directly on Course → already in 3NF)
+3NF: (InstructorPhone depends on InstructorID, not directly on Course â†’ already in 3NF)
 ```
 </details>
 
@@ -560,7 +560,7 @@ An **index** is a database structure that speeds up data retrieval operations at
 |--------|--------|----------|------|
 | **Type** | DML (Data Manipulation Language) | DDL (Data Definition Language) | DDL |
 | **Operation** | Removes rows one by one | Removes all rows at once | Removes entire table structure |
-| **WHERE clause** | Yes — can delete specific rows | No — deletes all rows | No |
+| **WHERE clause** | Yes â€” can delete specific rows | No â€” deletes all rows | No |
 | **Triggers** | Fires triggers | Does not fire triggers | Does not fire triggers |
 | **Transaction log** | Logs each row deletion | Minimal logging | Minimal logging |
 | **Rollback** | Possible (within transaction) | Possible (within transaction) | Possible (within transaction) |
@@ -599,7 +599,7 @@ The OSI (Open Systems Interconnection) model has 7 layers:
 | **Data Link** | 2 | Framing, MAC addressing, error detection | Ethernet, PPP, switches, bridges |
 | **Physical** | 1 | Bit transmission, signal encoding | Cables, hubs, repeaters |
 
-**Data flow:** Data → Segment (L4) → Packet (L3) → Frame (L2) → Bits (L1)
+**Data flow:** Data â†’ Segment (L4) â†’ Packet (L3) â†’ Frame (L2) â†’ Bits (L1)
 
 **Mnemonic (top-down):** "All People Seem To Need Data Processing"
 </details>
@@ -611,27 +611,27 @@ The OSI (Open Systems Interconnection) model has 7 layers:
 
 **3-Way Handshake (Connection Establishment):**
 ```
-Client → Server: SYN (Seq=x)
-Server → Client: SYN-ACK (Seq=y, Ack=x+1)
-Client → Server: ACK (Seq=x+1, Ack=y+1)
+Client â†’ Server: SYN (Seq=x)
+Server â†’ Client: SYN-ACK (Seq=y, Ack=x+1)
+Client â†’ Server: ACK (Seq=x+1, Ack=y+1)
 ```
 
 **Purpose:** Synchronize sequence numbers and establish parameters for reliable data transfer.
 
 **4-Way Termination (Connection Closure):**
 ```
-Client → Server: FIN (Seq=x)
-Server → Client: ACK (Ack=x+1)
-Server → Client: FIN (Seq=y)
-Client → Server: ACK (Ack=y+1)
+Client â†’ Server: FIN (Seq=x)
+Server â†’ Client: ACK (Ack=x+1)
+Server â†’ Client: FIN (Seq=y)
+Client â†’ Server: ACK (Ack=y+1)
 ```
 
 **States during termination:**
-- Client sends FIN → FIN_WAIT_1 state
-- Server receives and sends ACK → CLOSE_WAIT state
-- Client receives ACK → FIN_WAIT_2 state
-- Server sends FIN → LAST_ACK state
-- Client sends ACK → TIME_WAIT state (2 MSL)
+- Client sends FIN â†’ FIN_WAIT_1 state
+- Server receives and sends ACK â†’ CLOSE_WAIT state
+- Client receives ACK â†’ FIN_WAIT_2 state
+- Server sends FIN â†’ LAST_ACK state
+- Client sends ACK â†’ TIME_WAIT state (2 MSL)
 
 **Why TIME_WAIT?** Ensures the final ACK is received and prevents delayed packets from interfering with new connections.
 </details>
@@ -645,7 +645,7 @@ Client → Server: ACK (Ack=y+1)
 |--------|------|------|
 | **Address size** | 32 bits | 128 bits |
 | **Address format** | Dotted decimal (192.168.1.1) | Hexadecimal (2001:db8::1) |
-| **Address count** | ~4.3 billion | ~3.4 × 10³⁸ |
+| **Address count** | ~4.3 billion | ~3.4 Ã— 10Â³â¸ |
 | **Header size** | 20-60 bytes (variable) | 40 bytes (fixed) |
 | **Fragmentation** | Done by routers | Done only by sender |
 | **Security** | Optional (IPSec) | Built-in IPSec support |
@@ -695,12 +695,12 @@ A **firewall** is a network security device that monitors and controls incoming 
 - Logging and auditing
 - Deep packet inspection (NGFW)
 
-**Default policies:** "Deny all" vs "Allow all" — PSUs typically use "Deny all" with explicit allow rules.
+**Default policies:** "Deny all" vs "Allow all" â€” PSUs typically use "Deny all" with explicit allow rules.
 </details>
 
 ---
 
-## Section 2: Aptitude — Quant + Reasoning (20 Questions)
+## Section 2: Aptitude â€” Quant + Reasoning (20 Questions)
 
 ### Quantitative Aptitude (10 Questions)
 
@@ -710,7 +710,7 @@ A **firewall** is a network security device that monitors and controls incoming 
 <summary><b>Solution</b></summary>
 
 Sum of first n natural numbers = n(n+1)/2
-Sum of first 20 = 20 × 21 / 2 = 210
+Sum of first 20 = 20 Ã— 21 / 2 = 210
 Average = 210 / 20 = 10.5
 
 **Answer: 10.5**
@@ -723,7 +723,7 @@ Average = 210 / 20 = 10.5
 
 Total distance = 300 + 200 = 500 m
 Time = 25 s
-Speed = 500/25 = 20 m/s = 20 × 18/5 = 72 km/h
+Speed = 500/25 = 20 m/s = 20 Ã— 18/5 = 72 km/h
 
 **Answer: 72 km/h**
 </details>
@@ -751,22 +751,22 @@ Numbers: 33 and 55
 
 A's 1 day = 1/15, B's 1 day = 1/20
 Both 1 day = 1/15 + 1/20 = (4+3)/60 = 7/60
-Work in 5 days = 5 × 7/60 = 35/60 = 7/12
+Work in 5 days = 5 Ã— 7/60 = 35/60 = 7/12
 Remaining = 1 - 7/12 = 5/12
-B's time = (5/12) / (1/20) = 5/12 × 20 = 100/12 = 25/3 = 8.33 days
+B's time = (5/12) / (1/20) = 5/12 Ã— 20 = 100/12 = 25/3 = 8.33 days
 
 **Answer: 8.33 days**
 </details>
 
-**Q5.** Find the compound interest on ₹10,000 for 2 years at 10% per annum compounded annually.
+**Q5.** Find the compound interest on â‚¹10,000 for 2 years at 10% per annum compounded annually.
 
 <details>
 <summary><b>Solution</b></summary>
 
-Amount = P(1 + R/100)^T = 10000(1.1)² = ₹12,100
-CI = Amount - Principal = 12,100 - 10,000 = ₹2,100
+Amount = P(1 + R/100)^T = 10000(1.1)Â² = â‚¹12,100
+CI = Amount - Principal = 12,100 - 10,000 = â‚¹2,100
 
-**Answer: ₹2,100**
+**Answer: â‚¹2,100**
 </details>
 
 **Q6.** A man travels 40 km at 8 km/h, then 60 km at 12 km/h. Find the average speed.
@@ -774,7 +774,7 @@ CI = Amount - Principal = 12,100 - 10,000 = ₹2,100
 <details>
 <summary><b>Solution</b></summary>
 
-Time₁ = 40/8 = 5 hr, Time₂ = 60/12 = 5 hr
+Timeâ‚ = 40/8 = 5 hr, Timeâ‚‚ = 60/12 = 5 hr
 Total distance = 40 + 60 = 100 km
 Total time = 5 + 5 = 10 hr
 Average speed = 100/10 = 10 km/h
@@ -782,16 +782,16 @@ Average speed = 100/10 = 10 km/h
 **Answer: 10 km/h**
 </details>
 
-**Q7.** A shopkeeper sells an article for ₹1,080 at a profit of 20%. Find the cost price.
+**Q7.** A shopkeeper sells an article for â‚¹1,080 at a profit of 20%. Find the cost price.
 
 <details>
 <summary><b>Solution</b></summary>
 
-SP = CP × (100 + 20)/100
-1080 = CP × 1.2
-CP = 1080/1.2 = ₹900
+SP = CP Ã— (100 + 20)/100
+1080 = CP Ã— 1.2
+CP = 1080/1.2 = â‚¹900
 
-**Answer: ₹900**
+**Answer: â‚¹900**
 </details>
 
 **Q8.** How many numbers between 100 and 1000 are divisible by 7?
@@ -799,8 +799,8 @@ CP = 1080/1.2 = ₹900
 <details>
 <summary><b>Solution</b></summary>
 
-First number ≥ 100 divisible by 7: 105 (7×15)
-Last number ≤ 1000 divisible by 7: 994 (7×142)
+First number â‰¥ 100 divisible by 7: 105 (7Ã—15)
+Last number â‰¤ 1000 divisible by 7: 994 (7Ã—142)
 Count = 142 - 15 + 1 = 128
 
 **Answer: 128**
@@ -818,16 +818,16 @@ P(not blue) = 10/15 = 2/3
 **Answer: 2/3**
 </details>
 
-**Q10.** The value of 9³ × 27² / 81² is:
+**Q10.** The value of 9Â³ Ã— 27Â² / 81Â² is:
 
 <details>
 <summary><b>Solution</b></summary>
 
-9 = 3², 27 = 3³, 81 = 3⁴
-9³ = (3²)³ = 3⁶
-27² = (3³)² = 3⁶
-81² = (3⁴)² = 3⁸
-(3⁶ × 3⁶) / 3⁸ = 3¹² / 3⁸ = 3⁴ = 81
+9 = 3Â², 27 = 3Â³, 81 = 3â´
+9Â³ = (3Â²)Â³ = 3â¶
+27Â² = (3Â³)Â² = 3â¶
+81Â² = (3â´)Â² = 3â¸
+(3â¶ Ã— 3â¶) / 3â¸ = 3Â¹Â² / 3â¸ = 3â´ = 81
 
 **Answer: 81**
 </details>
@@ -839,7 +839,7 @@ P(not blue) = 10/15 = 2/3
 <details>
 <summary><b>Solution</b></summary>
 
-Pattern: 1×2=2, 2×3=6, 3×4=12, 4×5=20, 5×6=30, 6×7=42
+Pattern: 1Ã—2=2, 2Ã—3=6, 3Ã—4=12, 4Ã—5=20, 5Ã—6=30, 6Ã—7=42
 
 **Answer: 42**
 </details>
@@ -849,9 +849,9 @@ Pattern: 1×2=2, 2×3=6, 3×4=12, 4×5=20, 5×6=30, 6×7=42
 <details>
 <summary><b>Solution</b></summary>
 
-B→C(+1), O→P(+1), O→P(+1), K→L(+1)
+Bâ†’C(+1), Oâ†’P(+1), Oâ†’P(+1), Kâ†’L(+1)
 Each letter shifted +1.
-P→Q, E→F, N→O → QFO
+Pâ†’Q, Eâ†’F, Nâ†’O â†’ QFO
 
 **Answer: QFO**
 </details>
@@ -861,8 +861,8 @@ P→Q, E→F, N→O → QFO
 <details>
 <summary><b>Solution</b></summary>
 
-A is B's father. C is A's sister → C is B's aunt.
-D is C's wife → D is B's aunt by marriage (aunt-in-law).
+A is B's father. C is A's sister â†’ C is B's aunt.
+D is C's wife â†’ D is B's aunt by marriage (aunt-in-law).
 
 **Answer: Aunt (by marriage)**
 </details>
@@ -872,10 +872,10 @@ D is C's wife → D is B's aunt by marriage (aunt-in-law).
 <details>
 <summary><b>Solution</b></summary>
 
-1. East 10 m → (10, 0)
-2. Right (South) 5 m → (10, -5)
-3. Right (West) 10 m → (0, -5)
-Distance from (0,0) = √(0² + 5²) = 5 m
+1. East 10 m â†’ (10, 0)
+2. Right (South) 5 m â†’ (10, -5)
+3. Right (West) 10 m â†’ (0, -5)
+Distance from (0,0) = âˆš(0Â² + 5Â²) = 5 m
 
 **Answer: 5 m**
 </details>
@@ -886,8 +886,8 @@ Conclusions: I. Some flowers are red. II. Some red are roses.
 <details>
 <summary><b>Solution</b></summary>
 
-All flowers are roses → but the "some roses" that are red may or may not include flowers. Conclusion I is uncertain.
-"Some roses are red" → "Some red are roses" (valid conversion). Conclusion II follows.
+All flowers are roses â†’ but the "some roses" that are red may or may not include flowers. Conclusion I is uncertain.
+"Some roses are red" â†’ "Some red are roses" (valid conversion). Conclusion II follows.
 
 **Answer: Only II follows**
 </details>
@@ -907,8 +907,8 @@ Position from right = Total - Position from left + 1 = 40 - 15 + 1 = 26
 <details>
 <summary><b>Solution</b></summary>
 
-8 = 2³, 27 = 3³, 64 = 4³, 125 = 5³, 196 = 14²
-All except 196 are perfect cubes. 196 is a perfect square (14²).
+8 = 2Â³, 27 = 3Â³, 64 = 4Â³, 125 = 5Â³, 196 = 14Â²
+All except 196 are perfect cubes. 196 is a perfect square (14Â²).
 
 **Answer: 196**
 </details>
@@ -943,14 +943,14 @@ E's opposite is C.
 <details>
 <summary><b>Solution</b></summary>
 
-A pentagon has 5 vertices. With all diagonals, the number of triangles formed is 35 (standard combinatorial formula: C(5,3) + 5×C(4,2) + ...). The standard known answer is 35 triangles in a pentagon with all diagonals.
+A pentagon has 5 vertices. With all diagonals, the number of triangles formed is 35 (standard combinatorial formula: C(5,3) + 5Ã—C(4,2) + ...). The standard known answer is 35 triangles in a pentagon with all diagonals.
 
 **Answer: 35**
 </details>
 
 ---
 
-## Section 3: General Awareness — PSU-Specific (15 Questions)
+## Section 3: General Awareness â€” PSU-Specific (15 Questions)
 
 ### Energy & Power Sector
 
@@ -1019,7 +1019,7 @@ India's renewable energy targets under the Ministry of New and Renewable Energy 
 - Status: Maharatna PSU, India's largest oil and gas exploration and production company
 - Contribution: Produces ~70% of India's crude oil and ~60% of natural gas
 - Major fields: Mumbai High, Krishna-Godavari basin, Assam
-- Subsidiaries: ONGC Videsh (OVL) — overseas operations
+- Subsidiaries: ONGC Videsh (OVL) â€” overseas operations
 </details>
 
 **Q6.** What is the full form of IOCL and what are its major divisions?
@@ -1066,12 +1066,12 @@ India's renewable energy targets under the Ministry of New and Renewable Energy 
 - Headquarters: New Delhi
 - Status: Maharatna PSU, India's largest steel producer
 - Major steel plants:
-  1. **Bhilai Steel Plant** (BSP) — Chhattisgarh
-  2. **Rourkela Steel Plant** (RSP) — Odisha
-  3. **Durgapur Steel Plant** (DSP) — West Bengal
-  4. **Bokaro Steel Plant** (BSL) — Jharkhand
-  5. **IISCO Steel Plant** (ISP) — West Bengal
-  6. **Salem Steel Plant** (SSP) — Tamil Nadu
+  1. **Bhilai Steel Plant** (BSP) â€” Chhattisgarh
+  2. **Rourkela Steel Plant** (RSP) â€” Odisha
+  3. **Durgapur Steel Plant** (DSP) â€” West Bengal
+  4. **Bokaro Steel Plant** (BSL) â€” Jharkhand
+  5. **IISCO Steel Plant** (ISP) â€” West Bengal
+  6. **Salem Steel Plant** (SSP) â€” Tamil Nadu
 - Crude steel capacity: ~20 million tonnes per annum
 </details>
 
@@ -1084,10 +1084,10 @@ The Government of India classifies CPSEs (Central Public Sector Enterprises) bas
 
 | Category | Criteria | Financial Autonomy | Examples |
 |----------|----------|-------------------|----------|
-| **Maharatna** | Avg annual turnover > ₹25,000 Cr for 3 yrs, Net worth > ₹15,000 Cr, Net profit > ₹5,000 Cr | Highest — can invest up to ₹5,000 Cr without govt approval | ONGC, IOCL, NTPC, SAIL, BHEL, GAIL |
-| **Navratna** | Profit-making for 3 yrs, positive net worth, operational efficiency score ≥ 60 | Moderate — can invest up to ₹1,000 Cr without govt approval | NLC, NHPC, HAL, BEL |
-| **Miniratna Category I** | Profit-making for 3 yrs, positive net worth | Lower — can invest up to ₹500 Cr | BEML, IRCON |
-| **Miniratna Category II** | Profit-making for 3 yrs | Lower — can invest up to ₹300 Cr | |
+| **Maharatna** | Avg annual turnover > â‚¹25,000 Cr for 3 yrs, Net worth > â‚¹15,000 Cr, Net profit > â‚¹5,000 Cr | Highest â€” can invest up to â‚¹5,000 Cr without govt approval | ONGC, IOCL, NTPC, SAIL, BHEL, GAIL |
+| **Navratna** | Profit-making for 3 yrs, positive net worth, operational efficiency score â‰¥ 60 | Moderate â€” can invest up to â‚¹1,000 Cr without govt approval | NLC, NHPC, HAL, BEL |
+| **Miniratna Category I** | Profit-making for 3 yrs, positive net worth | Lower â€” can invest up to â‚¹500 Cr | BEML, IRCON |
+| **Miniratna Category II** | Profit-making for 3 yrs | Lower â€” can invest up to â‚¹300 Cr | |
 
 **Current Maharatna PSUs (12):** ONGC, IOCL, NTPC, SAIL, BHEL, GAIL, Coal India, BPCL, HPCL, PGCIL, Power Finance Corp, REC.
 </details>
@@ -1105,7 +1105,7 @@ The Government of India classifies CPSEs (Central Public Sector Enterprises) bas
 - Know the PSU's ranking in India/globally
 - Know recent major achievements or projects
 
-**For example (2025 context — verify current):**
+**For example (2025 context â€” verify current):**
 - ONGC CMD: Arun Kumar Singh (as of 2025)
 - IOCL Chairman: Shrikant Madhav Vaidya
 - NTPC CMD: Gurdeep Singh
@@ -1143,7 +1143,7 @@ The Government of India classifies CPSEs (Central Public Sector Enterprises) bas
 
 1. **Disinvestment targets:** Government aims to reduce stake in many PSUs, creating uncertainty
 2. **Competition from private sector:** Private companies (Reliance, Adani, Tata) competing aggressively
-3. **Energy transition:** Shift from coal to renewables — PSUs must adapt (NTPC's green energy push)
+3. **Energy transition:** Shift from coal to renewables â€” PSUs must adapt (NTPC's green energy push)
 4. **Technology obsolescence:** Need for modernization, Industry 4.0 adoption
 5. **Debt burden:** Some PSUs carry significant debt (especially power distribution companies)
 6. **Talent retention:** Competition from private sector for skilled engineers and managers
@@ -1176,7 +1176,7 @@ The **National Electricity Policy** (2005, amended) sets the framework for India
 
 **Key Objectives:**
 1. **Access:** Electricity for all households (achieved under Saubhagya scheme)
-2. **Availability:** 24×7 quality power supply
+2. **Availability:** 24Ã—7 quality power supply
 3. **Reliability:** Grid stability, minimal outages
 4. **Affordability:** Cost-reflective tariffs with cross-subsidization for poor
 5. **Efficiency:** Reduce T&D losses (target: below 15%), improve plant load factor
@@ -1216,7 +1216,7 @@ The **National Electricity Policy** (2005, amended) sets the framework for India
 
 ---
 
-## Section 4: Behavioral Questions — PSU Interview Style (10 Questions)
+## Section 4: Behavioral Questions â€” PSU Interview Style (10 Questions)
 
 ### Q1: Why do you want to join the public sector / a PSU instead of a private company?
 
@@ -1300,7 +1300,7 @@ Use STAR format. Highlight:
 
 For example, during our semester exams, I had to prepare for 4 papers in 2 weeks while also completing a project submission. I created a study schedule allocating specific hours per subject, solved one previous year paper daily, and submitted the project 1 day early. I scored 8.2 SGPA while maintaining quality on the project.
 
-I believe pressure brings out my best — it sharpens focus and eliminates procrastination."
+I believe pressure brings out my best â€” it sharpens focus and eliminates procrastination."
 </details>
 
 ### Q7: Do you have any questions for us?
@@ -1324,15 +1324,15 @@ Always have 2-3 thoughtful questions ready. Good questions for PSU interviews:
 <summary><b>Strategy</b></summary>
 
 **Strengths:** Pick 2-3 genuine strengths with examples.
-- "I'm a quick learner — I taught myself [technology] in 2 weeks to complete a project."
-- "I'm detail-oriented — I caught a calculation error that saved our team 2 weeks of rework."
-- "I work well under pressure — I thrive in deadline-driven environments."
+- "I'm a quick learner â€” I taught myself [technology] in 2 weeks to complete a project."
+- "I'm detail-oriented â€” I caught a calculation error that saved our team 2 weeks of rework."
+- "I work well under pressure â€” I thrive in deadline-driven environments."
 
 **Weaknesses:** Pick a real but addressable weakness. Show improvement.
 - "I sometimes spend too much time perfecting details. I've learned to set time limits and ask for peer reviews to catch the 80/20 point."
 - "Public speaking was challenging for me. I joined a Toastmasters club and now I'm comfortable presenting to groups."
 
-**NEVER say:** "I work too hard" (clichéd and fake), "I have no weaknesses" (dishonest), or mention a critical weakness for the role.
+**NEVER say:** "I work too hard" (clichÃ©d and fake), "I have no weaknesses" (dishonest), or mention a critical weakness for the role.
 </details>
 
 ### Q9: Why should we hire you over other candidates?
@@ -1348,7 +1348,7 @@ Always have 2-3 thoughtful questions ready. Good questions for PSU interviews:
 
 3. **Commitment to the PSU ethos:** I've researched [PSU Name]'s history, projects, and future plans. I understand the responsibility that comes with working in a Maharatna PSU, and I'm genuinely excited about contributing to the nation's growth through this organization.
 
-I'm not looking for a job — I'm looking for a career where I can grow with the organization and make a meaningful contribution."
+I'm not looking for a job â€” I'm looking for a career where I can grow with the organization and make a meaningful contribution."
 </details>
 
 ### Q10: What do you know about our PSU?
@@ -1373,7 +1373,7 @@ This is a test of your preparation. Research the PSU thoroughly:
 **Example for SAIL:**
 "I know SAIL was established in 1954 as Hindustan Steel and became Steel Authority of India in 1973. Headquartered in New Delhi, it's a Maharatna PSU and India's largest steel producer. SAIL operates 5 integrated steel plants at Bhilai, Rourkela, Durgapur, Bokaro, and IISCO, plus 3 special steel plants. The current chairman is Shri Amarendu Prakash. SAIL produced about 19 million tonnes of crude steel last year and is undergoing a massive modernization program to increase capacity to 25 million tonnes. I also know SAIL has been actively working on developing specialized steel grades for defense and infrastructure applications."
 
-*Verify all facts before the interview — leadership changes and financial figures are time-sensitive.*
+*Verify all facts before the interview â€” leadership changes and financial figures are time-sensitive.*
 </details>
 
 ---
@@ -1398,7 +1398,7 @@ This is a test of your preparation. Research the PSU thoroughly:
 | **Your PSU** | History, leadership, products, financials, recent news |
 | **Energy sector** | India's energy mix, installed capacity, key policies |
 | **Economy** | GDP growth, inflation, industrial production |
-| **Current affairs** | Last 6 months — national and international |
+| **Current affairs** | Last 6 months â€” national and international |
 
 ### Behavioral Strategy
 
@@ -1414,7 +1414,7 @@ This is a test of your preparation. Research the PSU thoroughly:
 
 ## Summary
 
-This chapter provided a comprehensive PSU interview question bank covering all common topics. The 25 technical questions span data structures, algorithms, operating systems, database management, and computer networks — the core CS fundamentals PSU interviews focus on. The 20 aptitude questions cover quant and reasoning at PSU exam difficulty. The 15 general awareness questions focus on PSU-specific knowledge: energy, oil & gas, steel sectors, and India's energy policy. The 10 behavioral questions cover the types of panel questions PSU interviews are known for, with strategies and sample responses.
+This chapter provided a comprehensive PSU interview question bank covering all common topics. The 25 technical questions span data structures, algorithms, operating systems, database management, and computer networks â€” the core CS fundamentals PSU interviews focus on. The 20 aptitude questions cover quant and reasoning at PSU exam difficulty. The 15 general awareness questions focus on PSU-specific knowledge: energy, oil & gas, steel sectors, and India's energy policy. The 10 behavioral questions cover the types of panel questions PSU interviews are known for, with strategies and sample responses.
 
 ## Practical Takeaways
 
@@ -1422,7 +1422,7 @@ This chapter provided a comprehensive PSU interview question bank covering all c
 2. **Technical depth over breadth:** PSU interviews go deep into core subjects (OS, DBMS, Networks, DS). Prepare each topic thoroughly, not superficially.
 3. **Know your PSU inside out:** Interviewers expect you to know their organization's history, products, financials, and recent developments. This distinguishes prepared candidates.
 4. **Panel interviews are formal:** PSU interviews are conducted by a panel of 3-5 senior officials. Dress formally, speak respectfully, and address panel members as "Sir" or "Ma'am."
-5. **⭐ Must-Know:** For ANY PSU interview — ACID properties, OSI model, Normalization forms, and the specific PSU's CMD name, products, and annual report highlights.
+5. **â­ Must-Know:** For ANY PSU interview â€” ACID properties, OSI model, Normalization forms, and the specific PSU's CMD name, products, and annual report highlights.
 6. **Documentation matters:** Have all original documents (degrees, marksheets, certificates, ID proof, GATE scorecard) properly organized in folders. Missing documents can lead to disqualification.
 
 ## Chapter Quiz
@@ -1444,10 +1444,10 @@ The Network layer (Layer 3) handles logical addressing and routing decisions.
 </details>
 
 **Q3.** What is the correct order of database normalization?
-a) 1NF → 3NF → 2NF  b) 2NF → 1NF → 3NF  c) 1NF → 2NF → 3NF  d) 3NF → 2NF → 1NF
+a) 1NF â†’ 3NF â†’ 2NF  b) 2NF â†’ 1NF â†’ 3NF  c) 1NF â†’ 2NF â†’ 3NF  d) 3NF â†’ 2NF â†’ 1NF
 
 <details>
-<summary>Answer: c) 1NF → 2NF → 3NF</summary>
+<summary>Answer: c) 1NF â†’ 2NF â†’ 3NF</summary>
 Normalization progresses from 1NF (atomic values) to 2NF (full FD on key) to 3NF (no transitive dependency).
 </details>
 
@@ -1475,5 +1475,5 @@ Shortest Job First (SJF) provides the minimum average waiting time theoretically
 2. **DBMS:** Given a table Employee(EmpID, Name, DeptID, Salary, City), write SQL queries to: (a) Find the highest salary department-wise, (b) Find employees earning more than the average salary.
 3. **General Awareness:** Research and write a 200-word profile of your target PSU (SAIL/ONGC/IOCL/NTPC/BHEL/GAIL) covering its history, products, financials, and current leadership.
 4. **Aptitude:** A tank is filled by pipe A in 6 hours and by pipe B in 8 hours. A drain pipe C empties it in 12 hours. If all three are opened together, how long will it take to fill the tank?
-5. **Behavioral:** Prepare a 2-minute answer to "Tell us about yourself" specifically tailored for a PSU interview — highlight technical skills, project experience, and motivation for joining the public sector.
+5. **Behavioral:** Prepare a 2-minute answer to "Tell us about yourself" specifically tailored for a PSU interview â€” highlight technical skills, project experience, and motivation for joining the public sector.
 </details>

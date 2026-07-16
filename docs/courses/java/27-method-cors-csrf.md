@@ -1,4 +1,4 @@
-# Method Security, CORS & CSRF
+﻿# Method Security, CORS & CSRF
 > **Previous:** [JWT, OAuth2 & OIDC](26-jwt-oauth2.md) | **Next:** [Keycloak](28-keycloak.md)
 
 Security in Spring is layered. Authentication answers "who are you?"; authorization answers "what are you allowed to do?"; CORS controls "where can requests come from?"; and CSRF protects against "was this request forged?".
@@ -14,16 +14,16 @@ By the end of this chapter you should be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/27-method-cors-csrf/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/27-method-cors-csrf/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/27-method-cors-csrf/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/27-method-cors-csrf/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/27-method-cors-csrf/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/27-method-cors-csrf/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/27-method-cors-csrf/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/27-method-cors-csrf/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/27-method-cors-csrf/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/27-method-cors-csrf/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/27-method-cors-csrf/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/27-method-cors-csrf/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -48,9 +48,9 @@ By the end of this chapter you should be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|------------|-------------------|
-| Method Security → `@PreAuthorize`, `@PostAuthorize`, `@Secured` annotations | Use Spring Expression Language (SpEL) for fine-grained rules |
-| CORS → cross-origin resource sharing for browser security | Configure allowed origins, methods, and headers via `CorsConfigurationSource` |
-| CSRF → cross-site request forgery protection | State-changing requests from authenticated users must include a token |
+| Method Security â†’ `@PreAuthorize`, `@PostAuthorize`, `@Secured` annotations | Use Spring Expression Language (SpEL) for fine-grained rules |
+| CORS â†’ cross-origin resource sharing for browser security | Configure allowed origins, methods, and headers via `CorsConfigurationSource` |
+| CSRF â†’ cross-site request forgery protection | State-changing requests from authenticated users must include a token |
 
 ---
 ## Chapter Roadmap
@@ -103,11 +103,11 @@ flowchart TD
 
 1. Which annotation allows SpEL-based access control before method execution? **Answer:** `@PreAuthorize`
 2. What bean must be defined to customize CORS in Spring Security? **Answer:** `CorsConfigurationSource`
-3. Should CSRF protection be enabled for a stateless REST API? **Answer:** No → CSRF protection requires browser sessions
+3. Should CSRF protection be enabled for a stateless REST API? **Answer:** No â†’ CSRF protection requires browser sessions
 
 ---
 
-## 1. Method Security Ã¢â‚¬â€ @EnableMethodSecurity
+## 1. Method Security ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â @EnableMethodSecurity
 
 ![Method Security CORS CSRF Flow](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/27-method-cors-csrf.png)
 
@@ -243,7 +243,7 @@ The expression root provides methods like `hasRole()`, `hasAuthority()`, `hasPer
 
 ---
 
-## 2. @PreAuthorize Ã¢â‚¬â€ Before Method Invocation
+## 2. @PreAuthorize ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Before Method Invocation
 
 `@PreAuthorize` evaluates a SpEL expression before the method executes. If the expression returns `false`, an `AccessDeniedException` is thrown.
 
@@ -334,7 +334,7 @@ public class ArticleController {
 }
 ```
 
-### 2.3 hasRole, hasAnyRole Ã¢â‚¬â€ Under the Hood
+### 2.3 hasRole, hasAnyRole ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Under the Hood
 
 
 ```java
@@ -450,7 +450,7 @@ public class SpELController {
         return "Restricted";
     }
 
-    // Ternary Ã¢â‚¬â€ expression must resolve to boolean
+    // Ternary ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â expression must resolve to boolean
     @GetMapping("/conditional")
     @PreAuthorize("hasRole('ADMIN') ? true : hasRole('EDITOR')")
     public String conditional() {
@@ -502,7 +502,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/owners")
 public class OwnerController {
 
-    // Parameter match Ã¢â‚¬â€ user can only access their own data
+    // Parameter match ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â user can only access their own data
     @GetMapping("/{userId}/profile")
     @PreAuthorize("#userId == authentication.name")
     public String getProfile(@PathVariable String userId) {
@@ -537,7 +537,7 @@ public class OwnerController {
 
 ---
 
-## 3. @PostAuthorize Ã¢â‚¬â€ After Method Invocation
+## 3. @PostAuthorize ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â After Method Invocation
 
 `@PostAuthorize` evaluates after the method returns but before the response is sent. It can use `returnObject` to access the method's return value.
 
@@ -571,7 +571,7 @@ public class PostAuthorizeController {
         return documentService.findById(id);
     }
 
-    // Safe navigation Ã¢â‚¬â€ if null, access is denied
+    // Safe navigation ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â if null, access is denied
     @GetMapping("/optional/{id}")
     @PostAuthorize("returnObject?.owner == authentication.name")
     public Optional<Document> getOptionalDocument(@PathVariable Long id) {
@@ -637,11 +637,11 @@ public class AccountController {
 
 ---
 
-## 4. @PreFilter and @PostFilter Ã¢â‚¬â€ Collection Filtering
+## 4. @PreFilter and @PostFilter ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Collection Filtering
 
 Spring Security can automatically filter collections based on SpEL expressions.
 
-### 4.1 @PreFilter Ã¢â‚¬â€ Filter Method Arguments
+### 4.1 @PreFilter ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Filter Method Arguments
 
 
 Filters a collection parameter before the method executes. Elements that do not match the expression are removed.
@@ -688,7 +688,7 @@ public class BatchController {
 }
 ```
 
-### 4.2 @PostFilter Ã¢â‚¬â€ Filter Return Value
+### 4.2 @PostFilter ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Filter Return Value
 
 
 Filters the returned collection, removing elements that do not match the expression.
@@ -746,7 +746,7 @@ public class PostFilterController {
 ### 4.3 PostFilter with Pagination Warning
 
 
-`@PostFilter` executes on the **entire** result set in memory. For paginated endpoints, this can cause unexpected behavior Ã¢â‚¬â€ the filter runs after the method returns but before Spring MVC serializes the response.
+`@PostFilter` executes on the **entire** result set in memory. For paginated endpoints, this can cause unexpected behavior ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â the filter runs after the method returns but before Spring MVC serializes the response.
 
 ```java
 @RestController
@@ -797,7 +797,7 @@ public class PagedFilterController {
 
 ## 5. @Secured (Deprecated) and @RolesAllowed (JSR-250)
 
-### 5.1 @Secured Ã¢â‚¬â€ Legacy Annotation
+### 5.1 @Secured ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Legacy Annotation
 
 
 `@Secured` is the original Spring Security annotation. It supports only role-based checks (no SpEL). Enable it with `@EnableMethodSecurity(securedEnabled = true)`.
@@ -821,7 +821,7 @@ public class SecuredController {
     @GetMapping("/editor-area")
     @Secured({"ROLE_ADMIN", "ROLE_EDITOR"})
     public String editorArea() {
-        return "Editor Area Ã¢â‚¬â€ multiple roles are OR-ed";
+        return "Editor Area ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â multiple roles are OR-ed";
     }
 
     @GetMapping("/super")
@@ -838,7 +838,7 @@ Limitations of `@Secured`:
 - No permission-based checks
 - All roles must use the full `ROLE_` prefix
 
-### 5.2 @RolesAllowed Ã¢â‚¬â€ JSR-250 Standard
+### 5.2 @RolesAllowed ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â JSR-250 Standard
 
 
 `@RolesAllowed` is the Jakarta EE standard annotation for role-based access. Enable it with `@EnableMethodSecurity(jsr250Enabled = true)`.
@@ -865,7 +865,7 @@ public class Jsr250Controller {
     @GetMapping("/any-authenticated")
     @PermitAll
     public String anyAuthenticated() {
-        return "Any authenticated user Ã¢â‚¬â€ actually @PermitAll allows everyone including anonymous";
+        return "Any authenticated user ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â actually @PermitAll allows everyone including anonymous";
     }
 
     @DeleteMapping("/block-all")
@@ -902,7 +902,7 @@ public class Jsr250Controller {
 
 Create composed annotations to reduce repetition and improve readability.
 
-### 6.1 @IsAdmin Ã¢â‚¬â€ Custom Meta-Annotation
+### 6.1 @IsAdmin ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Custom Meta-Annotation
 
 
 ```java
@@ -942,7 +942,7 @@ public @interface IsEditorOrAdmin {
 }
 ```
 
-### 6.3 @OwnResource Ã¢â‚¬â€ Parameterized Meta-Annotation
+### 6.3 @OwnResource ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Parameterized Meta-Annotation
 
 
 ```java
@@ -1003,7 +1003,7 @@ public class MetaAnnotationController {
 
         @GetMapping("/config")
         public String config() {
-            return "Internal Config Ã¢â‚¬â€ inherits @IsAdmin from class";
+            return "Internal Config ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â inherits @IsAdmin from class";
         }
 
         @GetMapping("/health")
@@ -1038,7 +1038,7 @@ public @interface IsAuditor {
 
 ---
 
-## 7. PermissionEvaluator Ã¢â‚¬â€ Custom hasPermission
+## 7. PermissionEvaluator ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Custom hasPermission
 
 The `hasPermission` expression in SpEL delegates to a `PermissionEvaluator`. Implement one to add domain-object-level authorization.
 
@@ -1222,7 +1222,7 @@ public class PermissionController {
         return documentService.update(id, doc);
     }
 
-    // Delete permission Ã¢â‚¬â€ only admins
+    // Delete permission ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â only admins
     @DeleteMapping("/{id}")
     @PreAuthorize("hasPermission(#id, 'Document', 'DELETE')")
     public void deleteDocument(@PathVariable Long id) {
@@ -1486,7 +1486,7 @@ public class AspectConfig {
 
 ---
 
-## 9. CORS Ã¢â‚¬â€ Cross-Origin Resource Sharing
+## 9. CORS ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Cross-Origin Resource Sharing
 
 CORS is a browser security mechanism that controls which origins (domains, schemes, ports) are allowed to access resources from a different origin.
 
@@ -1686,7 +1686,7 @@ public class PerUrlCorsConfig {
     public CorsConfigurationSource corsConfigurationSource() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
 
-        // Public API Ã¢â‚¬â€ wide open
+        // Public API ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â wide open
         CorsConfiguration publicApi = new CorsConfiguration();
         publicApi.setAllowedOrigins(List.of("*"));
         publicApi.setAllowedMethods(List.of("GET"));
@@ -1694,7 +1694,7 @@ public class PerUrlCorsConfig {
         publicApi.setMaxAge(3600L);
         source.registerCorsConfiguration("/api/public/**", publicApi);
 
-        // Authenticated API Ã¢â‚¬â€ specific origins only
+        // Authenticated API ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â specific origins only
         CorsConfiguration secureApi = new CorsConfiguration();
         secureApi.setAllowedOriginPatterns(List.of("https://*.example.com"));
         secureApi.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE"));
@@ -1704,7 +1704,7 @@ public class PerUrlCorsConfig {
         secureApi.setMaxAge(1800L);
         source.registerCorsConfiguration("/api/secure/**", secureApi);
 
-        // Admin API Ã¢â‚¬â€ single origin
+        // Admin API ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â single origin
         CorsConfiguration adminApi = new CorsConfiguration();
         adminApi.setAllowedOrigins(List.of("https://admin.example.com"));
         adminApi.setAllowedMethods(List.of("*"));
@@ -1855,7 +1855,7 @@ public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
 ---
 
-## 10. CSRF Ã¢â‚¬â€ Cross-Site Request Forgery
+## 10. CSRF ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Cross-Site Request Forgery
 
 CSRF (also called XSRF) is an attack that forces an authenticated user to perform unwanted actions on a web application. Spring Security provides built-in CSRF protection.
 
@@ -1955,7 +1955,7 @@ public class CookieCsrfConfig {
 }
 ```
 
-`withHttpOnlyFalse()` makes the cookie readable by JavaScript Ã¢â‚¬â€ required for SPAs that need to read the token.
+`withHttpOnlyFalse()` makes the cookie readable by JavaScript ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â required for SPAs that need to read the token.
 
 ### 10.4 Custom CsrfTokenRepository
 
@@ -2347,11 +2347,11 @@ public class WebSecurityConfig {
 ```
 
 > [!NOTE]
-> If your service is a REST API using stateless auth (JWT/OAuth2), CSRF protection should be disabled → there is no browser session to protect.
+> If your service is a REST API using stateless auth (JWT/OAuth2), CSRF protection should be disabled â†’ there is no browser session to protect.
 
 ---
 
-## 11. CSP Ã¢â‚¬â€ Content Security Policy Headers
+## 11. CSP ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Content Security Policy Headers
 
 Content Security Policy (CSP) is a browser security mechanism that helps detect and mitigate content injection attacks, including XSS and data injection.
 
@@ -2633,7 +2633,7 @@ public class MasterSecurityConfig {
             // CORS
             .cors(cors -> cors.configurationSource(corsConfigurationSource()))
 
-            // CSRF Ã¢â‚¬â€ enabled for browser clients, disabled for API
+            // CSRF ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â enabled for browser clients, disabled for API
             .csrf(csrf -> csrf
                 .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse())
                 .csrfTokenRequestHandler(new CsrfTokenRequestAttributeHandler())
@@ -2711,7 +2711,7 @@ public class MasterSecurityConfig {
 
 - `@EnableMethodSecurity(prePostEnabled=true)` enables `@PreAuthorize`, `@PostAuthorize`, `@PreFilter`, `@PostFilter` with full SpEL support
 - `hasRole('ADMIN')` checks for `ROLE_ADMIN`; `hasAuthority('WRITE')` checks for that exact authority string
-- `@PostAuthorize` evaluates after the method and can access `returnObject` Ã¢â‚¬â€ useful for object-level security
+- `@PostAuthorize` evaluates after the method and can access `returnObject` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â useful for object-level security
 - `@PreFilter` and `@PostFilter` remove elements from collections that don't match the SpEL expression
 - `@Secured` and `@RolesAllowed` are legacy alternatives without SpEL support
 - Custom `PermissionEvaluator` + `MethodSecurityExpressionHandler` enables `hasPermission(...)` checks

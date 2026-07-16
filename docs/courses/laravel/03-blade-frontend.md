@@ -1,4 +1,4 @@
-# Chapter 3: Blade Templating, Components & Frontend
+﻿# Chapter 3: Blade Templating, Components & Frontend
 > **Previous:** [Architecture & Routing](./02-architecture-routing) | **Next:** [Eloquent ORM, Database & Migrations](./04-eloquent-database)
 
 ---
@@ -16,16 +16,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/03-blade-frontend/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/03-blade-frontend/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/03-blade-frontend/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/03-blade-frontend/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/03-blade-frontend/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/03-blade-frontend/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/03-blade-frontend/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/03-blade-frontend/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/03-blade-frontend/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/03-blade-frontend/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/03-blade-frontend/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/03-blade-frontend/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -132,7 +132,7 @@ Blade compiles templates to cached PHP. It adds zero overhead in production.
 
 #### The `$loop` Variable
 
-> **Pro Tip:** The `$loop->parent` property is invaluable when rendering nested collections — it lets you access the outer loop's iteration count from within an inner loop without passing additional variables.
+> **Pro Tip:** The `$loop->parent` property is invaluable when rendering nested collections â€” it lets you access the outer loop's iteration count from within an inner loop without passing additional variables.
 
 Inside `@foreach`, `@forelse`, and `@while`, Blade exposes `$loop`:
 
@@ -311,7 +311,7 @@ class Alert extends Component
 
 > **Remember:** Anonymous components use `@props()` to declare their attributes instead of a PHP constructor. They are ideal for simple, stateless presentational components like form inputs or buttons.
 
-No PHP class → all logic lives in the template:
+No PHP class â†’ all logic lives in the template:
 
 `resources/views/components/forms/input.blade.php`:
 
@@ -342,7 +342,7 @@ No PHP class → all logic lives in the template:
 
 #### The `$attributes` Bag
 
-> **Warning:** The `$attributes->merge()` method merges classes, not replaces them. To override a class, provide it after the default — Laravel deduplicates automatically.
+> **Warning:** The `$attributes->merge()` method merges classes, not replaces them. To override a class, provide it after the default â€” Laravel deduplicates automatically.
 
 ```blade
 {{-- Merge: original + override --}}
@@ -660,7 +660,7 @@ function addLineItem() {
 | Reusability | Limited to layout | Highly reusable across views |
 | Logic | Controller provides data | Class methods + @props() |
 
-## Quick Reference — Blade Directives
+## Quick Reference â€” Blade Directives
 
 | Directive | Purpose | Example |
 |-----------|---------|---------|
@@ -769,5 +769,5 @@ function addLineItem() {
 
 - **Admin index** `posts.admin-index` with a table, checkboxes for bulk selection, dropdown for bulk actions (delete, publish, unpublish), and individual edit/delete buttons. Use `@push` for a confirmation modal and bulk selection JavaScript.
 
-All views must be fully functional Blade → every `@error`, `@csrf`, `@method`, `@push`, `@stack`, `old()`, and `@each` present with correct syntax.
+All views must be fully functional Blade â†’ every `@error`, `@csrf`, `@method`, `@push`, `@stack`, `old()`, and `@each` present with correct syntax.
 

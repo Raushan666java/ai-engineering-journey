@@ -1,4 +1,4 @@
-# Chapter 45: Spring WebFlux
+﻿# Chapter 45: Spring WebFlux
 
 > **Previous:** [Project Reactor &amp; Reactive Streams](./44-reactor.md) | **Next:** [R2DBC &amp; Reactive Data Access](./46-r2dbc.md)
 
@@ -7,16 +7,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/45-webflux/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/45-webflux/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/45-webflux/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/45-webflux/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/45-webflux/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/45-webflux/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/45-webflux/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/45-webflux/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/45-webflux/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/45-webflux/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/45-webflux/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/45-webflux/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -56,7 +56,7 @@ After completing this chapter, you will be able to:
 
 ## 1. WebFlux Architecture Overview
 
-> **Pro Tip:** Test with production-like configurations → dev setups often hide issues that surface under real load.
+> **Pro Tip:** Test with production-like configurations â†’ dev setups often hide issues that surface under real load.
 
 > **Remember:** Start simple. Add complexity only when proven necessary. Premature abstraction creates maintenance burden.
 
@@ -84,10 +84,10 @@ Spring WebFlux is the reactive-stack web framework introduced in Spring 5, built
 WebFlux uses an event-loop threading model. For N CPU cores, Netty creates 2N event-loop threads (one reader, one writer per core). All non-blocking I/O operations run on these threads. Blocking operations must be offloaded to a `boundedElastic` scheduler.
 
 ```
-Request → EventLoop → Controller → Service → Repository
-           ↓               ↓           ↓           ↓
+Request â†’ EventLoop â†’ Controller â†’ Service â†’ Repository
+           â†“               â†“           â†“           â†“
         non-blocking   non-blocking  non-blocking  non-blocking
-                             ↓
+                             â†“
                     Never block an event-loop thread!
 ```
 
@@ -361,7 +361,7 @@ public class ProductController {
         return repository.deleteAll();
     }
 
-    // Streaming endpoint → emits one product per second
+    // Streaming endpoint â†’ emits one product per second
     @GetMapping(value = "/stream", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
     public Flux<Product> streamProducts() {
         return repository.findAll()
@@ -754,7 +754,7 @@ public class AdvancedRouterConfig {
 }
 ```
 
-## 4. WebClient → Reactive HTTP Client
+## 4. WebClient â†’ Reactive HTTP Client
 
 ### 4.1 WebClient Configuration
 
@@ -1525,7 +1525,7 @@ public class StreamingController {
         long fileSize = file.toFile().length();
 
         if (rangeHeader == null) {
-            // No range requested → return full file
+            // No range requested â†’ return full file
             Flux<DataBuffer> data = DataBufferUtils.readAsynchronousFileChannel(
                 () -> AsynchronousFileChannel.open(file, StandardOpenOption.READ),
                 org.springframework.core.io.buffer.DefaultDataBufferFactory.sharedInstance,
@@ -1565,7 +1565,7 @@ public class StreamingController {
 }
 ```
 
-## 8. RSocket → Reactive Socket Protocol
+## 8. RSocket â†’ Reactive Socket Protocol
 
 ### 8.1 RSocket Server
 
@@ -1955,7 +1955,7 @@ public class PerformanceController {
 
     @GetMapping("/mvc-simulation")
     public String simulateMvc() {
-        // Simulate blocking I/O → this would block a Tomcat thread
+        // Simulate blocking I/O â†’ this would block a Tomcat thread
         try { Thread.sleep(200); } catch (InterruptedException e) {}
         return "Done on " + Thread.currentThread().getName();
     }
@@ -1980,7 +1980,7 @@ public class PerformanceController {
     public Mono<String> concurrentDownstreamCalls() {
         Instant start = Instant.now();
 
-        // Sequential: 3 calls Ã— 200ms = 600ms
+        // Sequential: 3 calls Ãƒâ€” 200ms = 600ms
         Mono<String> seq = Mono.fromCallable(() -> {
             Thread.sleep(200);
             return "A";
@@ -1996,7 +1996,7 @@ public class PerformanceController {
         .map(result -> "Sequential: " + result + " in " +
             Duration.between(start, Instant.now()).toMillis() + "ms");
 
-        // Parallel: 3 calls Ã— 200ms = ~200ms
+        // Parallel: 3 calls Ãƒâ€” 200ms = ~200ms
         Mono<String> par = Mono.zip(
             Mono.fromCallable(() -> {
                 Thread.sleep(200);
@@ -2199,10 +2199,10 @@ record ProductRouter(ProductRepository repository) {
 
 | Scenario | Pattern A | Pattern B | Pattern C |
 |----------|-----------|-----------|-----------|
-| Small application | âœ“ | âœ— | âœ“ |
-| Enterprise system | âœ“ | âœ“ | âœ— |
-| High-throughput API | âœ— | âœ“ | âœ“ |
-| Event-driven | âœ— | âœ“ | âœ“ |
+| Small application | Ã¢Å“â€œ | Ã¢Å“â€” | Ã¢Å“â€œ |
+| Enterprise system | Ã¢Å“â€œ | Ã¢Å“â€œ | Ã¢Å“â€” |
+| High-throughput API | Ã¢Å“â€” | Ã¢Å“â€œ | Ã¢Å“â€œ |
+| Event-driven | Ã¢Å“â€” | Ã¢Å“â€œ | Ã¢Å“â€œ |
 
 ## Chapter Quiz
 
@@ -2232,7 +2232,7 @@ record ProductRouter(ProductRepository repository) {
    - A) For every project regardless of size
    - B) When complexity justifies the overhead
    - C) Only in legacy systems
-   - D) Never → it is outdated
+   - D) Never â†’ it is outdated
 
 <details>
 <summary>Answer&lt;/summary&gt;
@@ -2304,7 +2304,7 @@ This chapter covered Spring WebFlux from architecture through production deploym
 
 3. **Reactive File Processing Pipeline**: Build a WebFlux application that:
    - Accepts large file uploads via multipart streaming
-   - Processes each file through a pipeline (validate → transform → enrich)
+   - Processes each file through a pipeline (validate â†’ transform â†’ enrich)
    - Emits SSE progress events for each processing stage
    - Supports concurrent processing with configurable parallelism
    - Returns a downloadable report with processing results

@@ -1,4 +1,4 @@
-# Chapter 14: Distributed Data Structures — Consistent Hashing and Beyond
+﻿# Chapter 14: Distributed Data Structures â€” Consistent Hashing and Beyond
 > **Previous:** [13 Lld Concurrency](./13-lld-concurrency.md) | **Next:** [15 Cdn Dns Edge](./15-cdn-dns-edge.md)
 
 ---
@@ -14,16 +14,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/system-design/14-distributed-data-structures/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/system-design/14-distributed-data-structures/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/system-design/14-distributed-data-structures/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/system-design/14-distributed-data-structures/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/system-design/14-distributed-data-structures/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/system-design/14-distributed-data-structures/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/system-design/14-distributed-data-structures/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/system-design/14-distributed-data-structures/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/system-design/14-distributed-data-structures/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/system-design/14-distributed-data-structures/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/system-design/14-distributed-data-structures/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/system-design/14-distributed-data-structures/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -43,7 +43,7 @@ flowchart LR
 ```
 |--------|---------|
 | **Scope** | Distributed data structures, Bloom filters, HyperLogLog, Count-Min Sketch |
-| **Key Concepts** | Core topics covered in Chapter 14: Distributed Data Structures — Consistent Hashing and Beyond |
+| **Key Concepts** | Core topics covered in Chapter 14: Distributed Data Structures â€” Consistent Hashing and Beyond |
 | **Design Skills** | Probabilistic data structure selection, memory budgeting |
 | **Interview Angle** | Frequently tested in system design interviews |
 
@@ -51,7 +51,7 @@ flowchart LR
 
 | Aspect | Details |
 |--------|---------|
-| **Scope** | Core concepts covered in Chapter 14: Distributed Data Structures — Consistent Hashing and Beyond |
+| **Scope** | Core concepts covered in Chapter 14: Distributed Data Structures â€” Consistent Hashing and Beyond |
 | **Key Concepts** | Theory, Examples, Concept Comparison, Quick Reference |
 | **Design Skills** | Concept mastery and practical application |
 | **Interview Angle** | Common system design interview topic |
@@ -91,7 +91,7 @@ flowchart LR
 > **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
 
 > **Pro Tip:** Master this concept thoroughly ? it appears in nearly every system design interview.
-Consistent hashing maps keys to nodes in a hash ring (range [0, 2^m - 1]). Both nodes and keys hash into this ring; each key is assigned to the nearest clockwise node. When a node joins or leaves, only keys in its immediate vicinity redistribute — O(K/N) keys rather than O(K) reshuffling, where K is total keys and N is node count.
+Consistent hashing maps keys to nodes in a hash ring (range [0, 2^m - 1]). Both nodes and keys hash into this ring; each key is assigned to the nearest clockwise node. When a node joins or leaves, only keys in its immediate vicinity redistribute â€” O(K/N) keys rather than O(K) reshuffling, where K is total keys and N is node count.
 
 **Hash ring**: Construct a circle of size 2^m (typically m = 32 or 64). Hash each node identifier (e.g., IP:port) with a uniform hash function and place it on the ring. Hash each key and walk clockwise to find the first node.
 
@@ -166,7 +166,7 @@ For large node sets, HRW can be accelerated with a tree-based grouping (hierarch
 
 > **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
-A Merkle tree is a complete binary tree where leaf nodes store hashes of data blocks and internal nodes store hashes of their children. The root hash commits the entire dataset. Two replicas compare root hashes; if they differ, they walk down divergent branches to find the specific blocks that differ — O(log B) comparisons for B blocks rather than O(B).
+A Merkle tree is a complete binary tree where leaf nodes store hashes of data blocks and internal nodes store hashes of their children. The root hash commits the entire dataset. Two replicas compare root hashes; if they differ, they walk down divergent branches to find the specific blocks that differ â€” O(log B) comparisons for B blocks rather than O(B).
 
 **Application in Dynamo**: Each node maintains a Merkle tree per key range. During anti-entropy (gossip-based reconciliation), nodes exchange root hashes. Mismatched ranges are recursively compared until individual conflicting key-value pairs are identified. This reduces reconciliation bandwidth from O(N) to O(log N) per range.
 
@@ -186,12 +186,12 @@ A Bloom filter is a space-efficient probabilistic data structure that tests set 
 **False positive rate** (after n insertions):
 
 ```
-p = (1 - (1 - 1/m)^(k*n))^k  ˜  (1 - e^(-k*n/m))^k
+p = (1 - (1 - 1/m)^(k*n))^k  Ëœ  (1 - e^(-k*n/m))^k
 ```
 
 **Optimal k**: k_opt = (m/n) * ln(2)
 
-At k_opt, p = (1/2)^k ˜ 0.6185^(m/n). For a 1% false positive rate, m/n ˜ 9.6 bits per element.
+At k_opt, p = (1/2)^k Ëœ 0.6185^(m/n). For a 1% false positive rate, m/n Ëœ 9.6 bits per element.
 
 ```python
 import hashlib, math
@@ -259,14 +259,14 @@ class CountMinSketch:
 ### 6. HyperLogLog
 
 
-Estimates the cardinality (number of distinct elements) of a multiset using O(log log N) space — 12 KB for 2% error on billions of elements. The algorithm observes the longest run of leading zeros in hashed values: if we see a hash starting with ? zeros, we expect approximately 2^? distinct elements.
+Estimates the cardinality (number of distinct elements) of a multiset using O(log log N) space â€” 12 KB for 2% error on billions of elements. The algorithm observes the longest run of leading zeros in hashed values: if we see a hash starting with ? zeros, we expect approximately 2^? distinct elements.
 
 **Loglog counting**: For n elements with hash values uniformly distributed in [0, 2^L), the probability of a hash beginning with ? zeros is 2^(-?-1). The maximum observed ? across n elements approximates log2(n).
 
 **HyperLogLog** improves this with stochastic averaging: split the hash into a bucket index (first p bits, yielding m = 2^p registers) and a value (remaining bits). Track ?_max per bucket. Combine estimates using harmonic mean:
 
 ```
-E = a_m * m² / S(2^(-M[j]))
+E = a_m * mÂ² / S(2^(-M[j]))
 ```
 
 where a_m is a bias correction constant (~0.7213 for m = 2^12).
@@ -303,11 +303,11 @@ class HyperLogLog:
 
 A Cuckoo filter stores fingerprints (f-bit hash of each item) in a Cuckoo hash table. Each item maps to two candidate buckets (via primary hash and XOR of fingerprint). On insertion, if both buckets are full, existing entries are relocated (cuckoo kick). Supports deletion natively by removing the fingerprint.
 
-**Properties**: Supports deletion, O(1) lookup, 95% load factor, better lookup performance than Bloom for low false positive targets (< 3%). False positive rate ˜ 1/2^f for f-bit fingerprint.
+**Properties**: Supports deletion, O(1) lookup, 95% load factor, better lookup performance than Bloom for low false positive targets (< 3%). False positive rate Ëœ 1/2^f for f-bit fingerprint.
 
 ```
 f = log2(1/p) + 3  bits per fingerprint
-Space ˜ (log2(1/p) + 3) / load_factor  bits per item
+Space Ëœ (log2(1/p) + 3) / load_factor  bits per item
 ```
 
 ### 8. Quotient Filter and XOR Filter
@@ -315,7 +315,7 @@ Space ˜ (log2(1/p) + 3) / load_factor  bits per item
 
 **Quotient filter**: Stores the quotient (upper bits of hash) and remainder (lower bits) in a compact hash table using linear probing. Supports deletion, merging, and better cache locality than Bloom filters. Uses 3 metadata bits per slot: is_occupied, is_continuation, is_shifted.
 
-**XOR filter**: A recent alternative to Bloom filters for static sets (no inserts after build). Uses a single hash function and 3 hash tables. Requires ~1.23 log2(1/p) + 3 bits per entry — approximately 20-30% smaller than Bloom filters for 1% false positive rate. Cannot support dynamic insertions.
+**XOR filter**: A recent alternative to Bloom filters for static sets (no inserts after build). Uses a single hash function and 3 hash tables. Requires ~1.23 log2(1/p) + 3 bits per entry â€” approximately 20-30% smaller than Bloom filters for 1% false positive rate. Cannot support dynamic insertions.
 
 ### 9. Comparison Table
 
@@ -370,11 +370,11 @@ Given 10 million elements and 1% false positive rate:
 ```python
 n = 10_000_000
 p = 0.01
-m = int(-n * math.log(p) / (math.log(2)**2))  # 95,904,678 bits ˜ 11.4 MB
+m = int(-n * math.log(p) / (math.log(2)**2))  # 95,904,678 bits Ëœ 11.4 MB
 k = int((m / n) * math.log(2))                # 7 hash functions
 ```
 
-At k = 7 and m/n = 9.6, the actual false positive rate is (1 - e^(-7/9.6))^7 ˜ 0.0081 (0.81%), slightly better than target. Reducing m/n to 6.2 doubles the FP rate to ~2%.
+At k = 7 and m/n = 9.6, the actual false positive rate is (1 - e^(-7/9.6))^7 Ëœ 0.0081 (0.81%), slightly better than target. Reducing m/n to 6.2 doubles the FP rate to ~2%.
 
 ### Example 3: HyperLogLog Merge in Distributed Counting
 
@@ -397,7 +397,7 @@ for hll in hll_shards:
 print(f"Estimated unique visitors: {merged.cardinality()}")
 ```
 
-At p = 12 (m = 4096), total memory = 4096 registers × 6 bits ˜ 3 KB per shard, merged result accurate within ~2%.
+At p = 12 (m = 4096), total memory = 4096 registers Ã— 6 bits Ëœ 3 KB per shard, merged result accurate within ~2%.
 
 ### Example 4: Cuckoo Filter Implementation
 
@@ -453,7 +453,7 @@ class CuckooFilter:
 
 | Concept | Definition | Key Metric |
 |---------|-----------|------------|
-| Theory | Core topic covered in Chapter 14: Distributed Data Structures — Consistent Hashing and Beyond | Defined by specific measurable attributes |
+| Theory | Core topic covered in Chapter 14: Distributed Data Structures â€” Consistent Hashing and Beyond | Defined by specific measurable attributes |
 
 ---
 
@@ -462,7 +462,7 @@ class CuckooFilter:
 
 | Topic | Key Point |
 |-------|-----------|
-| Theory | Fundamental concept for Chapter 14: Distributed Data Structures — Consistent Hashing and Beyond |
+| Theory | Fundamental concept for Chapter 14: Distributed Data Structures â€” Consistent Hashing and Beyond |
 
 ---
 
@@ -478,7 +478,7 @@ class CuckooFilter:
 
 | # | Question | A | B | C | D | Answer |
 |---|----------|---|---|---|---|--------|
-| 1 | What is the optimal k for a Bloom filter with m=960 bits and n=100 elements? | 5 | 7 | 9 | 11 | **B** (k = (m/n)·ln2 ≈ 6.65, round to 7) |
+| 1 | What is the optimal k for a Bloom filter with m=960 bits and n=100 elements? | 5 | 7 | 9 | 11 | **B** (k = (m/n)Â·ln2 â‰ˆ 6.65, round to 7) |
 | 2 | How does a Merkle tree reduce reconciliation bandwidth in Dynamo? | By compressing data blocks | By comparing root hashes and walking divergent branches | By using Bloom filters per node | By gossiping full datasets | **B** |
 | 3 | Which data structure estimates cardinality using O(log log N) space? | Bloom Filter | Count-Min Sketch | HyperLogLog | Cuckoo Filter | **C** |
 | 4 | What is the primary advantage of virtual nodes in consistent hashing? | Faster lookups | Lower memory usage | Smoother load distribution | Simpler implementation | **C** |
@@ -490,10 +490,10 @@ class CuckooFilter:
 
 | Takeaway | Application |
 |----------|-------------|
-| Use consistent hashing with 150+ virtual nodes per physical node for balanced key distribution | DynamoDB, Cassandra, Riak — key-value stores needing elastic scaling |
+| Use consistent hashing with 150+ virtual nodes per physical node for balanced key distribution | DynamoDB, Cassandra, Riak â€” key-value stores needing elastic scaling |
 | Pair Merkle trees with gossip protocol for O(log N) anti-entropy reconciliation | Dynamo-style databases where nodes must detect and repair divergent replicas |
-| Tune Bloom filter m/n ratio to 9.6 for 1% false positive rate; use optimal k = (m/n)·ln2 | Cache filters (prevent cache miss storms), web crawler dedup, spell checkers |
-| HyperLogLog with p=12 provides ~2% error using only 12KB — perfect for distributed cardinality | Unique visitor counting across CDN edges, distributed analytics |
+| Tune Bloom filter m/n ratio to 9.6 for 1% false positive rate; use optimal k = (m/n)Â·ln2 | Cache filters (prevent cache miss storms), web crawler dedup, spell checkers |
+| HyperLogLog with p=12 provides ~2% error using only 12KB â€” perfect for distributed cardinality | Unique visitor counting across CDN edges, distributed analytics |
 | Count-Min Sketch excels at heavy hitter detection with bounded error; use d=4-5 rows | Network traffic monitoring, trending topics, top-k in streaming data |
 | Cuckoo filters beat Bloom filters for lookup speed when FP rate target is <3% | Deletable membership sets, on-disk index filters |
 | XOR filters are 20-30% smaller than Bloom but require static datasets | Read-only datasets, blockchain transaction filters, archive indexes |
@@ -502,17 +502,17 @@ class CuckooFilter:
 
 **Scenario: Global User Analytics Pipeline**
 
-A social media platform with 500 million monthly active users needs to track daily unique visitors across 20 global data centers. Each data center sees 50 million unique users per day. The naive approach — storing every user ID in a distributed database — would consume 500M × 32 bytes ≈ 16 GB per day per data center, plus the I/O overhead of deduplication queries.
+A social media platform with 500 million monthly active users needs to track daily unique visitors across 20 global data centers. Each data center sees 50 million unique users per day. The naive approach â€” storing every user ID in a distributed database â€” would consume 500M Ã— 32 bytes â‰ˆ 16 GB per day per data center, plus the I/O overhead of deduplication queries.
 
-The team deploys HyperLogLog (p=14, ~26 KB per data center) at each edge location. Every user interaction is hashed and added to the local HLL register. At the end of each hour, a central aggregator fetches all 20 HLL sketches (total: 20 × 26 KB = 520 KB per hour) and merges them via element-wise max. The merged sketch estimates global unique visitors with ~1.5% error — sufficient for business reporting. The 99th percentile error is under 3%, and the total memory across all data centers is under 1 MB, compared to 160+ GB for raw ID storage.
+The team deploys HyperLogLog (p=14, ~26 KB per data center) at each edge location. Every user interaction is hashed and added to the local HLL register. At the end of each hour, a central aggregator fetches all 20 HLL sketches (total: 20 Ã— 26 KB = 520 KB per hour) and merges them via element-wise max. The merged sketch estimates global unique visitors with ~1.5% error â€” sufficient for business reporting. The 99th percentile error is under 3%, and the total memory across all data centers is under 1 MB, compared to 160+ GB for raw ID storage.
 
-For cache efficiency, the CDN layer uses a Bloom filter (m/n = 9.6, k = 7) per PoP to filter out requests for non-existent short URLs before they hit the origin. This eliminates 99% of unnecessary origin lookups. When the filter's false positive rate exceeds 2% (monitored weekly), the filter is rebuilt with a larger bit array. The combined architecture — HLL for analytics, Bloom for cache filtering, consistent hashing for data partitioning — handles 2 million requests per second across 50 microservices with P99 latency under 20 ms.
+For cache efficiency, the CDN layer uses a Bloom filter (m/n = 9.6, k = 7) per PoP to filter out requests for non-existent short URLs before they hit the origin. This eliminates 99% of unnecessary origin lookups. When the filter's false positive rate exceeds 2% (monitored weekly), the filter is rebuilt with a larger bit array. The combined architecture â€” HLL for analytics, Bloom for cache filtering, consistent hashing for data partitioning â€” handles 2 million requests per second across 50 microservices with P99 latency under 20 ms.
 > **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
 > **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
 
 | Concept | Definition | Key Insight |
 |---------|-----------|-------------|
-| Theory | Core topic in Chapter 14: Distributed Data Structures — Consistent Hashing and Beyond | Fundamental to system design |
+| Theory | Core topic in Chapter 14: Distributed Data Structures â€” Consistent Hashing and Beyond | Fundamental to system design |
 
 ---
 
@@ -521,7 +521,7 @@ For cache efficiency, the CDN layer uses a Bloom filter (m/n = 9.6, k = 7) per P
 
 | Topic | Key Point |
 |-------|-----------|
-| Theory | Essential concept for Chapter 14: Distributed Data Structures — Consistent Hashing and Beyond |
+| Theory | Essential concept for Chapter 14: Distributed Data Structures â€” Consistent Hashing and Beyond |
 
 ---
 
@@ -1027,11 +1027,11 @@ demo()
 export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
-- Consistent hashing maps keys to nodes on a ring with O(log N) lookup; virtual nodes (R ˜ 150) smooth load imbalance to CV &lt; 0.01
+- Consistent hashing maps keys to nodes on a ring with O(log N) lookup; virtual nodes (R Ëœ 150) smooth load imbalance to CV &lt; 0.01
 - Rendezvous hashing needs O(N) lookups but is metadata-free and inherently balanced
 - Merkle trees enable log-time anti-entropy reconciliation in Dynamo/Cassandra by comparing block-level hash roots
 - Bloom filters (m/n = 9.6 for 1% FP rate) trade accuracy for space; optimal hash count k = (m/n) * ln(2)
-- Counting Bloom adds 4-bit counters per slot for deletion support but uses 4× the space
+- Counting Bloom adds 4-bit counters per slot for deletion support but uses 4Ã— the space
 - Count-Min Sketch estimates item frequency with ed-bounds in sublinear space
 - HyperLogLog estimates cardinality at ~2% error using 12 KB, with trivial merge for distributed counts
 - Cuckoo filters support deletion and beat Bloom on lookup speed for FP rates below 3%
@@ -1043,22 +1043,22 @@ export { Cache, Logger, computeHash, CacheEntry }
 ## Exercises
 
 ### Review Questions
-<details><summary>Solution</summary>1. Each physical node has 100 virtual tokens out of 50×100 = 5000 total tokens. When one node fails, its 100 tokens redistribute. Expected keys per token: 10M / 5000 = 2000. Keys redistributed: 100 × 2000 = 200,000 keys (2% of total).
-2. Minimize p = (1 - e^(-kn/m))^k. Take log: ln(p) = k·ln(1 - e^(-kn/m)). Set d(ln(p))/dk = 0, solve: k = (m/n)·ln(2) ≈ 0.693·(m/n).
+<details><summary>Solution</summary>1. Each physical node has 100 virtual tokens out of 50Ã—100 = 5000 total tokens. When one node fails, its 100 tokens redistribute. Expected keys per token: 10M / 5000 = 2000. Keys redistributed: 100 Ã— 2000 = 200,000 keys (2% of total).
+2. Minimize p = (1 - e^(-kn/m))^k. Take log: ln(p) = kÂ·ln(1 - e^(-kn/m)). Set d(ln(p))/dk = 0, solve: k = (m/n)Â·ln(2) â‰ˆ 0.693Â·(m/n).
 3. Element-wise max preserves the longest run of leading zeros observed. Sum or average would overestimate (since multiple elements can map to the same register and sum would count them multiple times). Max correctly captures the register's extremal observation.
-4. Counting Bloom: 4-bit counters × m bits ≈ 4m bits. Cuckoo: (log2(1/p) + 3) / load_factor bits per item. For m/n ≈ 9.6 (1% FP), Counting Bloom ≈ 38.4 bits/item. Cuckoo at f = log2(100) + 3 ≈ 9.6 bits, with 95% load ≈ 10.1 bits/item. Cuckoo is ~4× more memory-efficient.
+4. Counting Bloom: 4-bit counters Ã— m bits â‰ˆ 4m bits. Cuckoo: (log2(1/p) + 3) / load_factor bits per item. For m/n â‰ˆ 9.6 (1% FP), Counting Bloom â‰ˆ 38.4 bits/item. Cuckoo at f = log2(100) + 3 â‰ˆ 9.6 bits, with 95% load â‰ˆ 10.1 bits/item. Cuckoo is ~4Ã— more memory-efficient.
 5. (1) Exchange root hashes. (2) If roots match, ranges are identical. (3) If mismatch, walk down the tree: compare children recursively. (4) At leaf level, identify individual key-value pairs that differ. (5) Request missing/repaired entries from the peer. O(log B) messages for B blocks.</details>
 
 ### Application Problems
-<details><summary>Solution</summary>1. m = -500M·ln(0.001) / (ln2)^2 = 500M × 6.907 / 0.48 ≈ 7.19B bits ≈ 856 MB. k = (7.19B / 500M)·ln2 ≈ 9.96 → 10. Actual FP: (1 - e^(-10·500M/7.19B))^10 ≈ 0.0009. With 4-bit counters: 856 MB × 4 = 3.42 GB.
-2. Worst-case overestimate: each row has expected collision count = total/w = 1M/10000 = 100. With d=4, P(error > e·total) ≤ e^(-d). Estimate = min([512, 487, 503, 498]) = 487. Min is used because collisions can only inflate the count, not deflate it — the minimum gives the closest to the true value.
-3. Gini coefficient with R=1 is typically 0.15-0.30 (significant imbalance). With R=150, Gini drops to 0.003-0.008 (nearly perfect balance). The law of large numbers: each physical node's expected load variance is 1/√R of the total.
-4. a_m for m=1024: 0.7213 / (1 + 1.079/1024) ≈ 0.7205. 512 registers at 0, 256 at 1, 256 at 2. Sum = 512·1 + 256·0.5 + 256·0.25 = 512 + 128 + 64 = 704. Estimate = 0.7205 × 1024² / 704 ≈ 1073. Linear counting for small ranges: zero count = 512, estimate = 1024·ln(1024/512) ≈ 710. Final = 710 (linear counting dominates for small cardinalities).</details>
+<details><summary>Solution</summary>1. m = -500MÂ·ln(0.001) / (ln2)^2 = 500M Ã— 6.907 / 0.48 â‰ˆ 7.19B bits â‰ˆ 856 MB. k = (7.19B / 500M)Â·ln2 â‰ˆ 9.96 â†’ 10. Actual FP: (1 - e^(-10Â·500M/7.19B))^10 â‰ˆ 0.0009. With 4-bit counters: 856 MB Ã— 4 = 3.42 GB.
+2. Worst-case overestimate: each row has expected collision count = total/w = 1M/10000 = 100. With d=4, P(error > eÂ·total) â‰¤ e^(-d). Estimate = min([512, 487, 503, 498]) = 487. Min is used because collisions can only inflate the count, not deflate it â€” the minimum gives the closest to the true value.
+3. Gini coefficient with R=1 is typically 0.15-0.30 (significant imbalance). With R=150, Gini drops to 0.003-0.008 (nearly perfect balance). The law of large numbers: each physical node's expected load variance is 1/âˆšR of the total.
+4. a_m for m=1024: 0.7213 / (1 + 1.079/1024) â‰ˆ 0.7205. 512 registers at 0, 256 at 1, 256 at 2. Sum = 512Â·1 + 256Â·0.5 + 256Â·0.25 = 512 + 128 + 64 = 704. Estimate = 0.7205 Ã— 1024Â² / 704 â‰ˆ 1073. Linear counting for small ranges: zero count = 512, estimate = 1024Â·ln(1024/512) â‰ˆ 710. Final = 710 (linear counting dominates for small cardinalities).</details>
 
 ### Challenge Problem
 <details><summary>Solution</summary>Design a multi-layer membership test service:
 
-**Memory per node**: 1B keys / 200 nodes = 5M keys/node. Bloom filter: m = -5M·ln(0.01)/(ln2)^2 ≈ 48M bits = 6 MB. Cuckoo filter: at 0.1% FP, f = log2(1000) + 3 ≈ 13 bits, with 95% load ≈ 13.7 bits/item × 500K hot items ≈ 0.86 MB. CMS: d=4, w=2/eps (eps=0.01) = 200, 4×200 = 800 counters × 4 bytes = 3.2 KB. HLL: p=12, 4096 registers × 6 bits ≈ 3 KB. Total per node: ~7 MB. Cluster total: 200 × 7 MB = 1.4 GB.
+**Memory per node**: 1B keys / 200 nodes = 5M keys/node. Bloom filter: m = -5MÂ·ln(0.01)/(ln2)^2 â‰ˆ 48M bits = 6 MB. Cuckoo filter: at 0.1% FP, f = log2(1000) + 3 â‰ˆ 13 bits, with 95% load â‰ˆ 13.7 bits/item Ã— 500K hot items â‰ˆ 0.86 MB. CMS: d=4, w=2/eps (eps=0.01) = 200, 4Ã—200 = 800 counters Ã— 4 bytes = 3.2 KB. HLL: p=12, 4096 registers Ã— 6 bits â‰ˆ 3 KB. Total per node: ~7 MB. Cluster total: 200 Ã— 7 MB = 1.4 GB.
 
 **Query path**: (1) Client sends key read request. (2) Node Bloom filter check: if negative, return immediately (key guaranteed absent). (3) If Bloom positive, check Cuckoo filter for hot key range. (4) Update CMS frequency counter (async). (5) Perform actual key lookup. (6) If key not found (Bloom false positive), increment CMS false-positive counter (triggers filter rebuild at threshold). P99 latency: 0.5ms (Bloom-only miss) to 8ms (Bloom hit + Cuckoo hit + key lookup).
 

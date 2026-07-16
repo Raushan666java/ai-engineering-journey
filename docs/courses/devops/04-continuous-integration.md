@@ -1,4 +1,4 @@
-# Chapter 4: Continuous Integration
+﻿# Chapter 4: Continuous Integration
 
 > **Prev:** [CI/CD](./04-cicd.md)
 > **Next:** [Containerization](./05-containerization.md)
@@ -17,16 +17,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/04-continuous-integration/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/04-continuous-integration/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/04-continuous-integration/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/04-continuous-integration/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/04-continuous-integration/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/04-continuous-integration/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/04-continuous-integration/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/04-continuous-integration/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/04-continuous-integration/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/04-continuous-integration/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/04-continuous-integration/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/04-continuous-integration/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -95,7 +95,7 @@ flowchart TD
 
 **Unit tests (70-80%):** Test individual functions, methods, and classes in isolation. Mock external dependencies. Fast execution (milliseconds each).
 
-**Integration tests (15-20%):** Test interactions between components — database queries, API endpoints, service-to-service communication. Verify real behavior of integrated parts.
+**Integration tests (15-20%):** Test interactions between components â€” database queries, API endpoints, service-to-service communication. Verify real behavior of integrated parts.
 
 **E2E tests (5-10%):** Test complete user workflows from UI to database. Slow and brittle. Cover critical paths only.
 

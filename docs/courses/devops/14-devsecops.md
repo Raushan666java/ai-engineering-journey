@@ -1,4 +1,4 @@
-# Chapter 14: DevSecOps
+﻿# Chapter 14: DevSecOps
 
 > **Previous:** [Observability](./13-observability.md) | **Next:** [Database DevOps](./15-database-devops.md)
 
@@ -9,16 +9,16 @@ By the end of this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/14-devsecops/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/14-devsecops/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/14-devsecops/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/14-devsecops/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/14-devsecops/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/14-devsecops/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/14-devsecops/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/14-devsecops/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/14-devsecops/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/14-devsecops/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/14-devsecops/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/14-devsecops/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -93,14 +93,14 @@ Shift-left security integrates security practices earlier in the software develo
 
 SAST analyzes source code for security vulnerabilities without executing the application. It scans at the code level, identifying potential vulnerabilities before the code runs.
 
-**SonarQube** — Continuous code quality and security inspection platform:
+**SonarQube** â€” Continuous code quality and security inspection platform:
 - Analyzes 30+ programming languages
 - Reports bugs, vulnerabilities, code smells, security hotspots
 - Quality gates that fail CI/CD pipelines
 - Built-in rules for OWASP Top 10, CWE Top 25
 - Supports custom rules and quality profiles
 
-**Semgrep** — Lightweight static analysis using pattern-based rules:
+**Semgrep** â€” Lightweight static analysis using pattern-based rules:
 - Custom rules in a simple, readable syntax
 - Community rule registry (Semgrep Registry) with 2000+ rules
 - OWASP Top 10, CWE Top 25, and framework-specific vulnerabilities
@@ -122,7 +122,7 @@ rules:
     severity: ERROR
 ```
 
-**CodeQL** — Semantic code analysis by GitHub:
+**CodeQL** â€” Semantic code analysis by GitHub:
 - Treats code as data for query-based security analysis
 - Deep analysis identifies complex vulnerabilities (injection, XSS, path traversal)
 - Integrated with GitHub Advanced Security
@@ -133,7 +133,7 @@ rules:
 
 DAST tests running applications for vulnerabilities by simulating attacks from the outside. Unlike SAST, DAST tests the application in its running state with all components active.
 
-**OWASP ZAP** — Open-source web application scanner:
+**OWASP ZAP** â€” Open-source web application scanner:
 - Automated scanning, passive scanning, active scanning
 - API scanning (OpenAPI, GraphQL, SOAP)
 - CI/CD integration via Docker
@@ -147,7 +147,7 @@ docker run -v $(pwd):/zap/wrk owasp/zap2docker-stable \
   -r zap_report.html
 ```
 
-**Burp Suite** — Professional web security testing tool:
+**Burp Suite** â€” Professional web security testing tool:
 - Burp Enterprise automates scanning in CI/CD
 - Scanning engine identifies SQL injection, XSS, SSRF, authentication bypass
 - Extensible through BApps (community and pro extensions)
@@ -158,14 +158,14 @@ docker run -v $(pwd):/zap/wrk owasp/zap2docker-stable \
 
 SCA analyzes open-source dependencies for known vulnerabilities, license compliance, and outdated versions. Modern applications consist of 80-90% open-source code, making SCA critical.
 
-**Snyk** — Developer-first security platform:
+**Snyk** â€” Developer-first security platform:
 - Scans dependencies, container images, and IaC configurations
 - Provides fix suggestions and automated pull requests
 - Monitors projects continuously between scans
 - Supports multiple languages and package managers
 - Policy engine for custom vulnerability thresholds
 
-**Dependabot** — GitHub-native dependency update tool:
+**Dependabot** â€” GitHub-native dependency update tool:
 - Creates pull requests for vulnerable dependencies
 - Configurable update schedule and version constraints
 - Groups related updates together
@@ -185,13 +185,13 @@ updates:
       - "security"
 ```
 
-**Trivy** — Comprehensive vulnerability scanner:
+**Trivy** â€” Comprehensive vulnerability scanner:
 - Scans filesystems, container images, Git repos, Kubernetes
 - Fast execution, no database required
 - Reports CVSS scores and fix versions
 - Supports multiple vulnerability databases (NVD, GitHub Advisory, RedHat, Alpine)
 
-**Grype** — Vulnerability scanner focused on accuracy:
+**Grype** â€” Vulnerability scanner focused on accuracy:
 - Multiple vulnerability database sources
 - Generates CycloneDX SBOM output
 - Cataloger-based package discovery
@@ -203,10 +203,10 @@ updates:
 Container images must be scanned for OS packages and application dependencies with known vulnerabilities.
 
 **Scanning Locations:**
-1. **Pre-build** — Scan Dockerfile for misconfigurations and base image vulnerabilities
-2. **Post-build** — Scan the built image before pushing to registry
-3. **Registry** — Continuous scanning of stored images
-4. **Runtime** — Monitor running containers for new vulnerability disclosures
+1. **Pre-build** â€” Scan Dockerfile for misconfigurations and base image vulnerabilities
+2. **Post-build** â€” Scan the built image before pushing to registry
+3. **Registry** â€” Continuous scanning of stored images
+4. **Runtime** â€” Monitor running containers for new vulnerability disclosures
 
 ```bash
 # Scan image before push
@@ -219,7 +219,7 @@ trivy image registry.example.com/myapp:latest
 trivy fs --severity HIGH,CRITICAL .
 ```
 
-**Docker Scout** — Docker-native vulnerability scanning:
+**Docker Scout** â€” Docker-native vulnerability scanning:
 - Policy evaluation with customizable rules
 - Remediation guidance with step-by-step fixes
 - SBOM generation and comparison
@@ -230,7 +230,7 @@ trivy fs --severity HIGH,CRITICAL .
 
 Secrets (API keys, passwords, tokens, certificates) committed to source code represent immediate security risks.
 
-**GitLeaks** — Detects secrets in Git repositories:
+**GitLeaks** â€” Detects secrets in Git repositories:
 - Scans commits, diffs, and directories
 - Customizable rule sets
 - Pre-commit hooks for local scanning
@@ -246,7 +246,7 @@ gitleaks protect --staged
 gitleaks detect --source . --report-path gitleaks-report.json
 ```
 
-**TruffleHog** — Scans Git repositories for secrets:
+**TruffleHog** â€” Scans Git repositories for secrets:
 - Entropy detection finds high-entropy strings
 - Regex matching for known patterns
 - Custom detectors for specific secrets
@@ -269,9 +269,9 @@ cosign attest --predicate sbom.json --key cosign.key myapp:latest
 ```
 
 **SBOM Formats:**
-- **CycloneDX** — OWASP standard, most commonly used for security
-- **SPDX** — ISO standard, commonly used for license compliance
-- **SWID** — ISO standard for software identification tags
+- **CycloneDX** â€” OWASP standard, most commonly used for security
+- **SPDX** â€” ISO standard, commonly used for license compliance
+- **SWID** â€” ISO standard for software identification tags
 
 **SBOM Use Cases:**
 - Vulnerability scanning against known CVEs
@@ -283,7 +283,7 @@ cosign attest --predicate sbom.json --key cosign.key myapp:latest
 ### 14.8 Policy as Code
 
 
-**Open Policy Agent (OPA)** — General-purpose policy engine:
+**Open Policy Agent (OPA)** â€” General-purpose policy engine:
 - Decouples policy from software
 - Policies in Rego, a declarative language
 - Enforces policies on arbitrary JSON data
@@ -301,7 +301,7 @@ deny[msg] {
 }
 ```
 
-**Kyverno** — Kubernetes-native policy engine:
+**Kyverno** â€” Kubernetes-native policy engine:
 - Policies are Kubernetes Custom Resources
 - Supports validate, mutate, generate, and verify patterns
 - Built-in 200+ policy library
@@ -334,12 +334,12 @@ spec:
 Supply chain security protects the software development and delivery pipeline from compromise:
 
 **Key Practices:**
-- **Dependency pinning** — Lock dependency versions to prevent unexpected updates
-- **Signed commits** — GPG or SSH signing for commit authenticity
-- **Image signing** — Cosign for container image signatures
-- **SLSA levels** — Supply-chain Levels for Software Artifacts
-- **Admission control** — OPA/Kyverno verifying image signatures before deployment
-- **Provenance** — SLSA provenance attestations for build process integrity
+- **Dependency pinning** â€” Lock dependency versions to prevent unexpected updates
+- **Signed commits** â€” GPG or SSH signing for commit authenticity
+- **Image signing** â€” Cosign for container image signatures
+- **SLSA levels** â€” Supply-chain Levels for Software Artifacts
+- **Admission control** â€” OPA/Kyverno verifying image signatures before deployment
+- **Provenance** â€” SLSA provenance attestations for build process integrity
 
 ---
 
@@ -577,7 +577,7 @@ class SBOMAnalyzer {
     }, 0);
 
     report += `\n## Overall Risk Score: ${riskScore}\n`;
-    report += riskScore > 50 ? '?? High risk — immediate action required\n' : riskScore > 20 ? '?? Moderate risk\n' : '? Low risk\n';
+    report += riskScore > 50 ? '?? High risk â€” immediate action required\n' : riskScore > 20 ? '?? Moderate risk\n' : '? Low risk\n';
 
     return report;
   }
@@ -720,7 +720,7 @@ console.log(`Gate: ${gateResult.passed ? 'PASSED' : 'FAILED'}, Critical: ${gateR
 
 <details><summary>Question 3: Which tool detects secrets in Git history?</summary>**A)** SonarQube<br>**B)** GitLeaks<br>**C)** OWASP ZAP<br>**D)** Prometheus<br><br>**Answer: B)** GitLeaks&lt;/details&gt;
 
-<details><summary>Question 4: What is an SBOM?</summary>**A)** A security tool<br>**B)** Software Bill of Materials — inventory of components<br>**C)** A deployment strategy<br>**D)** A monitoring tool<br><br>**Answer: B)** Software Bill of Materials — inventory of components&lt;/details&gt;
+<details><summary>Question 4: What is an SBOM?</summary>**A)** A security tool<br>**B)** Software Bill of Materials â€” inventory of components<br>**C)** A deployment strategy<br>**D)** A monitoring tool<br><br>**Answer: B)** Software Bill of Materials â€” inventory of components&lt;/details&gt;
 
 <details><summary>Question 5: What language does OPA use for policies?</summary>**A)** YAML<br>**B)** Rego<br>**C)** JSON<br>**D)** Python<br><br>**Answer: B)** Rego&lt;/details&gt;
 

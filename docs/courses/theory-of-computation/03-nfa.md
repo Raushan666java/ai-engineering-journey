@@ -1,4 +1,4 @@
-# Chapter 3: Nondeterministic Finite Automata
+﻿# Chapter 3: Nondeterministic Finite Automata
 
 > **Previous:** [Deterministic Finite Automata](./02-dfa.md) | **Next:** [Regular Expressions](./04-regex.md)
 
@@ -17,16 +17,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/theory-of-computation/03-nfa/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/theory-of-computation/03-nfa/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/theory-of-computation/03-nfa/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/theory-of-computation/03-nfa/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/theory-of-computation/03-nfa/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/theory-of-computation/03-nfa/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/theory-of-computation/03-nfa/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/theory-of-computation/03-nfa/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/theory-of-computation/03-nfa/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/theory-of-computation/03-nfa/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/theory-of-computation/03-nfa/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/theory-of-computation/03-nfa/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -38,7 +38,7 @@
 | Topic | Key Insight | Practical Takeaway |
 |-------|------------|-------------------|
 | Nondeterminism | Multiple next states per symbol | Simpler automata than DFA |
-| NFA Definition | d: Q × S ? P(Q) | Accept if any path accepts |
+| NFA Definition | d: Q Ã— S ? P(Q) | Accept if any path accepts |
 | Epsilon | e-transitions consume no input | Modular automata construction |
 | Subset Construction | NFA ? DFA via state sets | DFA may need exponential states |
 | Equivalence | NFA = DFA in power | Convenience ? more power |
@@ -64,53 +64,53 @@ flowchart LR
 ### 2.1 The Concept of Nondeterminism
 
 
-In a DFA, for each state and symbol there is exactly one next state. In an **NFA (nondeterministic finite automaton)**, from a given state and symbol, there may be **zero, one, or multiple** possible next states. When presented with choices, the NFA is said to "guess" the correct path → it accepts the input if *some* sequence of choices leads to an accepting state.
+In a DFA, for each state and symbol there is exactly one next state. In an **NFA (nondeterministic finite automaton)**, from a given state and symbol, there may be **zero, one, or multiple** possible next states. When presented with choices, the NFA is said to "guess" the correct path â†’ it accepts the input if *some* sequence of choices leads to an accepting state.
 
-Nondeterminism is a powerful *descriptive* tool: many languages are much easier to describe with an NFA than a DFA. Remarkably, NFAs are **no more powerful** than DFAs → every NFA can be converted to an equivalent DFA, though the DFA may require exponentially more states.
+Nondeterminism is a powerful *descriptive* tool: many languages are much easier to describe with an NFA than a DFA. Remarkably, NFAs are **no more powerful** than DFAs â†’ every NFA can be converted to an equivalent DFA, though the DFA may require exponentially more states.
 
 ### 2.2 Formal Definition of an NFA
 
 
-An **NFA** is a 5-tuple (Q, Î£, Î´, qâ‚€, F) where:
+An **NFA** is a 5-tuple (Q, ÃŽÂ£, ÃŽÂ´, qÃ¢â€šâ‚¬, F) where:
 
 - **Q** is a finite set of states.
-- **Î£** is a finite input alphabet.
-- **Î´: Q Ã— Î£ → P(Q)** is the transition function (where P(Q) is the power set of Q).
-- **qâ‚€ âˆˆ Q** is the start state.
-- **F âŠ† Q** is the set of accepting states.
+- **ÃŽÂ£** is a finite input alphabet.
+- **ÃŽÂ´: Q Ãƒâ€” ÃŽÂ£ â†’ P(Q)** is the transition function (where P(Q) is the power set of Q).
+- **qÃ¢â€šâ‚¬ Ã¢Ë†Ë† Q** is the start state.
+- **F Ã¢Å â€  Q** is the set of accepting states.
 
-The key difference from DFA: Î´ returns a **set** of possible next states rather than a single state.
+The key difference from DFA: ÃŽÂ´ returns a **set** of possible next states rather than a single state.
 
 ### 2.3 Computation of an NFA
 
 
-For an NFA on input w = wâ‚wâ‚‚â€¦wâ‚™:
-- The NFA starts in state qâ‚€.
-- After reading each symbol wáµ¢, the NFA may be in any of the states reachable via the transition function from any of the current states.
-- The NFA **accepts** w if there exists **at least one** path from qâ‚€ to some accepting state after processing all symbols.
+For an NFA on input w = wÃ¢â€šÂwÃ¢â€šâ€šÃ¢â‚¬Â¦wÃ¢â€šâ„¢:
+- The NFA starts in state qÃ¢â€šâ‚¬.
+- After reading each symbol wÃ¡ÂµÂ¢, the NFA may be in any of the states reachable via the transition function from any of the current states.
+- The NFA **accepts** w if there exists **at least one** path from qÃ¢â€šâ‚¬ to some accepting state after processing all symbols.
 - The NFA **rejects** w if no path leads to an accepting state.
 
 The set of all possible states after reading a prefix is called the **configuration** or **computation tree** of the NFA.
 
-Extended transition function for NFA: Î´Ì‚(q, w) = set of states reachable from q by reading w. Formally:
-- Î´Ì‚(q, Îµ) = {q}
-- Î´Ì‚(q, wa) = âˆª_{r âˆˆ Î´Ì‚(q, w)} Î´(r, a)
+Extended transition function for NFA: ÃŽÂ´ÃŒâ€š(q, w) = set of states reachable from q by reading w. Formally:
+- ÃŽÂ´ÃŒâ€š(q, ÃŽÂµ) = {q}
+- ÃŽÂ´ÃŒâ€š(q, wa) = Ã¢Ë†Âª_{r Ã¢Ë†Ë† ÃŽÂ´ÃŒâ€š(q, w)} ÃŽÂ´(r, a)
 
-Language recognized: L(N) = { w | Î´Ì‚(qâ‚€, w) âˆ© F â‰  âˆ… }
+Language recognized: L(N) = { w | ÃŽÂ´ÃŒâ€š(qÃ¢â€šâ‚¬, w) Ã¢Ë†Â© F Ã¢â€°Â  Ã¢Ë†â€¦ }
 
 ### 2.4 NFA with Epsilon Transitions
 
 
-An NFA-Îµ extends the NFA to allow **Îµ-transitions** → transitions that occur without consuming any input symbol. The transition function becomes:
-Î´: Q Ã— (Î£ âˆª {Îµ}) → P(Q)
+An NFA-ÃŽÂµ extends the NFA to allow **ÃŽÂµ-transitions** â†’ transitions that occur without consuming any input symbol. The transition function becomes:
+ÃŽÂ´: Q Ãƒâ€” (ÃŽÂ£ Ã¢Ë†Âª {ÃŽÂµ}) â†’ P(Q)
 
-The **Îµ-closure** of a state q, denoted ECLOSE(q), is the set of all states reachable from q using only Îµ-transitions (including q itself).
+The **ÃŽÂµ-closure** of a state q, denoted ECLOSE(q), is the set of all states reachable from q using only ÃŽÂµ-transitions (including q itself).
 
-To compute the extended transition function for an NFA-Îµ:
-1. Start with the Îµ-closure of the start state.
-2. For each symbol, take the Îµ-closure of the union of all transitions from the current set of states.
+To compute the extended transition function for an NFA-ÃŽÂµ:
+1. Start with the ÃŽÂµ-closure of the start state.
+2. For each symbol, take the ÃŽÂµ-closure of the union of all transitions from the current set of states.
 
-NFA-Îµ are strictly a convenience → they add no computational power. Both standard NFA and NFA-Îµ are equivalent to DFA.
+NFA-ÃŽÂµ are strictly a convenience â†’ they add no computational power. Both standard NFA and NFA-ÃŽÂµ are equivalent to DFA.
 
 ### 2.5 Equivalence of NFA and DFA: Subset Construction
 
@@ -119,12 +119,12 @@ The **subset construction** converts any NFA into an equivalent DFA. The key ins
 
 **Algorithm: Subset Construction**
 
-Given NFA N = (Q_N, Î£, Î´_N, qâ‚€, F_N), construct DFA D = (Q_D, Î£, Î´_D, qâ‚€_D, F_D):
+Given NFA N = (Q_N, ÃŽÂ£, ÃŽÂ´_N, qÃ¢â€šâ‚¬, F_N), construct DFA D = (Q_D, ÃŽÂ£, ÃŽÂ´_D, qÃ¢â€šâ‚¬_D, F_D):
 
-1. Q_D = { S âŠ† Q_N | S is reachable from the start state } (each DFA state is a set of NFA states).
-2. qâ‚€_D = ECLOSE(qâ‚€) (for NFA-Îµ; otherwise just {qâ‚€}).
-3. Î´_D(S, a) = âˆª_{r âˆˆ S} ECLOSE(Î´_N(r, a)) (for NFA-Îµ; omit ECLOSE for standard NFA).
-4. F_D = { S âˆˆ Q_D | S âˆ© F_N â‰  âˆ… } (any DFA state containing an accepting NFA state is accepting).
+1. Q_D = { S Ã¢Å â€  Q_N | S is reachable from the start state } (each DFA state is a set of NFA states).
+2. qÃ¢â€šâ‚¬_D = ECLOSE(qÃ¢â€šâ‚¬) (for NFA-ÃŽÂµ; otherwise just {qÃ¢â€šâ‚¬}).
+3. ÃŽÂ´_D(S, a) = Ã¢Ë†Âª_{r Ã¢Ë†Ë† S} ECLOSE(ÃŽÂ´_N(r, a)) (for NFA-ÃŽÂµ; omit ECLOSE for standard NFA).
+4. F_D = { S Ã¢Ë†Ë† Q_D | S Ã¢Ë†Â© F_N Ã¢â€°Â  Ã¢Ë†â€¦ } (any DFA state containing an accepting NFA state is accepting).
 
 **Number of states:** The DFA may have up to 2^|Q_N| states, though in practice many are unreachable.
 
@@ -142,72 +142,72 @@ NDFA/DFA equivalence is special: for finite automata, nondeterminism adds conven
 
 ### Example 2.1: NFA for Strings Where the Third-Last Symbol is '1'
 
-Design an NFA over Î£ = {0, 1} that accepts strings where the third symbol from the end is 1.
+Design an NFA over ÃŽÂ£ = {0, 1} that accepts strings where the third symbol from the end is 1.
 
 **Solution with NFA:**
 
 We can "guess" where the third-last symbol is. The NFA has 4 states:
-- qâ‚€: Start → haven't guessed yet.
-- qâ‚: Guessed → just read the candidate third-last symbol as 1.
-- qâ‚‚: Two more symbols consumed.
-- qâ‚ƒ: Three more symbols consumed (accept if we reach here).
+- qÃ¢â€šâ‚¬: Start â†’ haven't guessed yet.
+- qÃ¢â€šÂ: Guessed â†’ just read the candidate third-last symbol as 1.
+- qÃ¢â€šâ€š: Two more symbols consumed.
+- qÃ¢â€šÆ’: Three more symbols consumed (accept if we reach here).
 
 NFA transitions:
-- qâ‚€ --1--> qâ‚ (guess this 1 is the third-last), qâ‚€ --0,1--> qâ‚€ (keep looking)
-- qâ‚ --0,1--> qâ‚‚
-- qâ‚‚ --0,1--> qâ‚ƒ
-- qâ‚ƒ is accepting
+- qÃ¢â€šâ‚¬ --1--> qÃ¢â€šÂ (guess this 1 is the third-last), qÃ¢â€šâ‚¬ --0,1--> qÃ¢â€šâ‚¬ (keep looking)
+- qÃ¢â€šÂ --0,1--> qÃ¢â€šâ€š
+- qÃ¢â€šâ€š --0,1--> qÃ¢â€šÆ’
+- qÃ¢â€šÆ’ is accepting
 
 The NFA nondeterministically chooses when to start counting. If the guess is correct (the position was indeed the third-last), the string is accepted.
 
 **Compare with DFA:** The minimal DFA for this language requires 8 states. The NFA captures the same language with 4 states and intuitive logic.
 
-### Example 2.2: NFA-Îµ for Zero or More 'ab' Followed by 'ba'
+### Example 2.2: NFA-ÃŽÂµ for Zero or More 'ab' Followed by 'ba'
 
-Design an NFA-Îµ over Î£ = {a, b} for L = { (ab)* ba }.
+Design an NFA-ÃŽÂµ over ÃŽÂ£ = {a, b} for L = { (ab)* ba }.
 
 **Solution:**
 
-- qâ‚€ (start) --Îµ--> qâ‚ (optionally start the (ab)* loop)
-- qâ‚€ --Îµ--> qâ‚„ (skip straight to 'ba' part)
-- qâ‚ --a--> qâ‚‚, qâ‚‚ --b--> qâ‚ (the (ab)* loop)
-- qâ‚ --Îµ--> qâ‚„ (exit loop to 'ba' part)
-- qâ‚„ --b--> qâ‚…, qâ‚… --a--> qâ‚† (accept)
+- qÃ¢â€šâ‚¬ (start) --ÃŽÂµ--> qÃ¢â€šÂ (optionally start the (ab)* loop)
+- qÃ¢â€šâ‚¬ --ÃŽÂµ--> qÃ¢â€šâ€ž (skip straight to 'ba' part)
+- qÃ¢â€šÂ --a--> qÃ¢â€šâ€š, qÃ¢â€šâ€š --b--> qÃ¢â€šÂ (the (ab)* loop)
+- qÃ¢â€šÂ --ÃŽÂµ--> qÃ¢â€šâ€ž (exit loop to 'ba' part)
+- qÃ¢â€šâ€ž --b--> qÃ¢â€šâ€¦, qÃ¢â€šâ€¦ --a--> qÃ¢â€šâ€  (accept)
 
-ECLOSE(qâ‚€) = {qâ‚€, qâ‚, qâ‚„}. The Îµ-transitions let the NFA "decide" when to stop looping without consuming symbols.
+ECLOSE(qÃ¢â€šâ‚¬) = {qÃ¢â€šâ‚¬, qÃ¢â€šÂ, qÃ¢â€šâ€ž}. The ÃŽÂµ-transitions let the NFA "decide" when to stop looping without consuming symbols.
 
-### Example 2.3: Subset Construction → Convert NFA to DFA
+### Example 2.3: Subset Construction â†’ Convert NFA to DFA
 
-Convert this NFA over Î£ = {a, b} to a DFA:
-- States: {qâ‚€, qâ‚, qâ‚‚}, start qâ‚€, accept {qâ‚‚}
-- Î´(qâ‚€, a) = {qâ‚€, qâ‚}, Î´(qâ‚€, b) = {qâ‚€}
-- Î´(qâ‚, a) = âˆ…, Î´(qâ‚, b) = {qâ‚‚}
-- Î´(qâ‚‚, a) = âˆ…, Î´(qâ‚‚, b) = âˆ…
+Convert this NFA over ÃŽÂ£ = {a, b} to a DFA:
+- States: {qÃ¢â€šâ‚¬, qÃ¢â€šÂ, qÃ¢â€šâ€š}, start qÃ¢â€šâ‚¬, accept {qÃ¢â€šâ€š}
+- ÃŽÂ´(qÃ¢â€šâ‚¬, a) = {qÃ¢â€šâ‚¬, qÃ¢â€šÂ}, ÃŽÂ´(qÃ¢â€šâ‚¬, b) = {qÃ¢â€šâ‚¬}
+- ÃŽÂ´(qÃ¢â€šÂ, a) = Ã¢Ë†â€¦, ÃŽÂ´(qÃ¢â€šÂ, b) = {qÃ¢â€šâ€š}
+- ÃŽÂ´(qÃ¢â€šâ€š, a) = Ã¢Ë†â€¦, ÃŽÂ´(qÃ¢â€šâ€š, b) = Ã¢Ë†â€¦
 
-**Step 1:** Start state of DFA = {qâ‚€}.
+**Step 1:** Start state of DFA = {qÃ¢â€šâ‚¬}.
 
 **Step 2:** Compute transitions:
-- Î´_D({qâ‚€}, a) = Î´(qâ‚€, a) = {qâ‚€, qâ‚}
-- Î´_D({qâ‚€}, b) = Î´(qâ‚€, b) = {qâ‚€}
+- ÃŽÂ´_D({qÃ¢â€šâ‚¬}, a) = ÃŽÂ´(qÃ¢â€šâ‚¬, a) = {qÃ¢â€šâ‚¬, qÃ¢â€šÂ}
+- ÃŽÂ´_D({qÃ¢â€šâ‚¬}, b) = ÃŽÂ´(qÃ¢â€šâ‚¬, b) = {qÃ¢â€šâ‚¬}
 
-**Step 3:** Process new state {qâ‚€, qâ‚}:
-- Î´_D({qâ‚€, qâ‚}, a) = Î´(qâ‚€, a) âˆª Î´(qâ‚, a) = {qâ‚€, qâ‚} âˆª âˆ… = {qâ‚€, qâ‚}
-- Î´_D({qâ‚€, qâ‚}, b) = Î´(qâ‚€, b) âˆª Î´(qâ‚, b) = {qâ‚€} âˆª {qâ‚‚} = {qâ‚€, qâ‚‚}
+**Step 3:** Process new state {qÃ¢â€šâ‚¬, qÃ¢â€šÂ}:
+- ÃŽÂ´_D({qÃ¢â€šâ‚¬, qÃ¢â€šÂ}, a) = ÃŽÂ´(qÃ¢â€šâ‚¬, a) Ã¢Ë†Âª ÃŽÂ´(qÃ¢â€šÂ, a) = {qÃ¢â€šâ‚¬, qÃ¢â€šÂ} Ã¢Ë†Âª Ã¢Ë†â€¦ = {qÃ¢â€šâ‚¬, qÃ¢â€šÂ}
+- ÃŽÂ´_D({qÃ¢â€šâ‚¬, qÃ¢â€šÂ}, b) = ÃŽÂ´(qÃ¢â€šâ‚¬, b) Ã¢Ë†Âª ÃŽÂ´(qÃ¢â€šÂ, b) = {qÃ¢â€šâ‚¬} Ã¢Ë†Âª {qÃ¢â€šâ€š} = {qÃ¢â€šâ‚¬, qÃ¢â€šâ€š}
 
-**Step 4:** Process {qâ‚€, qâ‚‚}:
-- Î´_D({qâ‚€, qâ‚‚}, a) = {qâ‚€, qâ‚} âˆª âˆ… = {qâ‚€, qâ‚}
-- Î´_D({qâ‚€, qâ‚‚}, b) = {qâ‚€} âˆª âˆ… = {qâ‚€}
+**Step 4:** Process {qÃ¢â€šâ‚¬, qÃ¢â€šâ€š}:
+- ÃŽÂ´_D({qÃ¢â€šâ‚¬, qÃ¢â€šâ€š}, a) = {qÃ¢â€šâ‚¬, qÃ¢â€šÂ} Ã¢Ë†Âª Ã¢Ë†â€¦ = {qÃ¢â€šâ‚¬, qÃ¢â€šÂ}
+- ÃŽÂ´_D({qÃ¢â€šâ‚¬, qÃ¢â€šâ€š}, b) = {qÃ¢â€šâ‚¬} Ã¢Ë†Âª Ã¢Ë†â€¦ = {qÃ¢â€šâ‚¬}
 
-**Step 5:** Accepting states: {qâ‚€, qâ‚‚} (contains qâ‚‚).
+**Step 5:** Accepting states: {qÃ¢â€šâ‚¬, qÃ¢â€šâ€š} (contains qÃ¢â€šâ€š).
 
-The resulting DFA has 3 states: {qâ‚€}, {qâ‚€, qâ‚}, {qâ‚€, qâ‚‚}, with {qâ‚€, qâ‚‚} as the only accepting state.
+The resulting DFA has 3 states: {qÃ¢â€šâ‚¬}, {qÃ¢â€šâ‚¬, qÃ¢â€šÂ}, {qÃ¢â€šâ‚¬, qÃ¢â€šâ€š}, with {qÃ¢â€šâ‚¬, qÃ¢â€šâ€š} as the only accepting state.
 
 ### Example 2.4: NFA for Union Without Nondeterminism
 
-To accept Lâ‚ âˆª Lâ‚‚ where Lâ‚ = strings ending with "ab" and Lâ‚‚ = strings starting with "b":
+To accept LÃ¢â€šÂ Ã¢Ë†Âª LÃ¢â€šâ€š where LÃ¢â€šÂ = strings ending with "ab" and LÃ¢â€šâ€š = strings starting with "b":
 
 DFA approach: product construction, 4-6 states.
-NFA approach: add a new start state q with Îµ-transitions to the start states of Lâ‚'s and Lâ‚‚'s automata. The NFA nondeterministically chooses which language to match against.
+NFA approach: add a new start state q with ÃŽÂµ-transitions to the start states of LÃ¢â€šÂ's and LÃ¢â€šâ€š's automata. The NFA nondeterministically chooses which language to match against.
 
 This shows why nondeterminism simplifies **modular** automaton construction.
 
@@ -303,7 +303,7 @@ One of the most important applications of NFA theory is **Thompson's constructio
 |-------|-------------|-------------|
 | \(a\) | `q0 --a--> q1` | Single symbol |
 | \(e\) | `q0` (same state is accepting) | Empty string |
-| Ø | `q0` (non-accepting with no transitions) | Empty language |
+| Ã˜ | `q0` (non-accepting with no transitions) | Empty language |
 | \(r_1 \mid r_2\) | New start with e to both sub-NFAs | Union |
 | \(r_1 r_2\) | Accept of r1 connects via e to start of r2 | Concatenation |
 | \(r^*\) | Loop: e from accept back to start | Kleene star |
@@ -455,17 +455,17 @@ function nfaToDfa(nfa: NFA): DFA {
 }
 ```
 
-The subset construction demonstrates that NFAs are a **convenience abstraction** — they make automaton design easier without expanding the class of recognizable languages.
+The subset construction demonstrates that NFAs are a **convenience abstraction** â€” they make automaton design easier without expanding the class of recognizable languages.
 
 ## Practical Takeaways
 
 1. **Nondeterminism is a specification tool.** When designing an automaton, start with an NFA for clarity, then convert to a DFA for implementation. The NFA captures the *what* without worrying about the *how*.
 
-2. **Epsilon transitions enable modularity.** Use e-transitions to compose automata like building blocks — glue together sub-automata for union, concatenation, and Kleene star.
+2. **Epsilon transitions enable modularity.** Use e-transitions to compose automata like building blocks â€” glue together sub-automata for union, concatenation, and Kleene star.
 
 3. **Subset construction can explode.** An NFA with k states can yield a DFA with up to 2^k states. In practice, many subsets are unreachable, but the worst case is real.
 
-4. **NFA simulation is efficient.** Simulating an NFA directly (tracking state sets) takes O(k²n) time for k states and n input symbols — no need to materialize the DFA unless you need repeated simulations.
+4. **NFA simulation is efficient.** Simulating an NFA directly (tracking state sets) takes O(kÂ²n) time for k states and n input symbols â€” no need to materialize the DFA unless you need repeated simulations.
 
 ## Concept Comparison Table
 | Feature | DFA | NFA | NFA-e |
@@ -479,11 +479,11 @@ The subset construction demonstrates that NFAs are a **convenience abstraction**
 ## Quick Reference
 | NFA Concept | Definition |
 |-------------|-----------|
-| Formal NFA | (Q, S, d, q0, F), d: Q × S ? P(Q) |
+| Formal NFA | (Q, S, d, q0, F), d: Q Ã— S ? P(Q) |
 | Extended d^ | { r | q0 ?* r reading w } |
-| Acceptance | d^(q0, w) n F ? Ø |
+| Acceptance | d^(q0, w) n F ? Ã˜ |
 | e-closure(q) | States reachable via e* |
-| NFA-e d | d: Q × (S ? {e}) ? P(Q) |
+| NFA-e d | d: Q Ã— (S ? {e}) ? P(Q) |
 
 ## Cross-Application Matrix
 | Domain | Application |
@@ -504,7 +504,7 @@ The subset construction demonstrates that NFAs are a **convenience abstraction**
 
 <details>
 <summary>Answer&lt;/summary&gt;
-**B)** NFA d returns a set of possible next states — this is the key difference from DFA.
+**B)** NFA d returns a set of possible next states â€” this is the key difference from DFA.
 </details>
 
 **Q2.** An NFA accepts w if:
@@ -679,7 +679,7 @@ console.log([...dfa.transitions]);  // DFA transition table
 ```
 
 // --------------------------------------------------------
-// Epsilon-Closure Calculator — given an NFA state,
+// Epsilon-Closure Calculator â€” given an NFA state,
 // finds all states reachable via e-transitions.
 // --------------------------------------------------------
 
@@ -858,7 +858,7 @@ export { Processor, Task }
 
 - NFA generalizes DFA by allowing multiple or zero next states per input symbol.
 - NFA accepts a string if at least one computation path leads to acceptance.
-- NFA-Îµ adds transitions that consume no input; Îµ-closure captures all states reachable via Îµ-steps.
+- NFA-ÃŽÂµ adds transitions that consume no input; ÃŽÂµ-closure captures all states reachable via ÃŽÂµ-steps.
 - **Subset construction** converts any NFA to an equivalent DFA by tracking sets of NFA states.
 - The DFA may have up to exponentially more states than the NFA.
 - NFA and DFA recognize exactly the same class of languages: the regular languages.
@@ -873,27 +873,27 @@ export { Processor, Task }
 
 ### Basic
 
-1. Design an NFA over Î£ = {a, b} that accepts strings where the second-last symbol is 'a'.
-2. Design an NFA-Îµ for the language L = a* b* c*.
-3. Compute the Îµ-closure of each state in an NFA-Îµ where: qâ‚€ --Îµ--> qâ‚, qâ‚ --Îµ--> qâ‚‚, qâ‚‚ --a--> qâ‚€.
+1. Design an NFA over ÃŽÂ£ = {a, b} that accepts strings where the second-last symbol is 'a'.
+2. Design an NFA-ÃŽÂµ for the language L = a* b* c*.
+3. Compute the ÃŽÂµ-closure of each state in an NFA-ÃŽÂµ where: qÃ¢â€šâ‚¬ --ÃŽÂµ--> qÃ¢â€šÂ, qÃ¢â€šÂ --ÃŽÂµ--> qÃ¢â€šâ€š, qÃ¢â€šâ€š --a--> qÃ¢â€šâ‚¬.
 4. Convert the NFA from Example 2.1 to a DFA using subset construction.
-5. Design an NFA for L = { w âˆˆ {0,1}* | w contains both "00" and "11" as substrings }.
+5. Design an NFA for L = { w Ã¢Ë†Ë† {0,1}* | w contains both "00" and "11" as substrings }.
 
 ### Intermediate
 
-6. Convert the following NFA-Îµ to a DFA: Q={qâ‚€,qâ‚,qâ‚‚}, Î£={a,b}, Î´(qâ‚€,Îµ)={qâ‚}, Î´(qâ‚,a)={qâ‚,qâ‚‚}, Î´(qâ‚,b)={qâ‚€}, Î´(qâ‚‚,a)={qâ‚‚}, F={qâ‚‚}.
-7. Prove formally that if L is recognized by an NFA with k states, then L is recognized by a DFA with at most 2áµ states.
-8. Design an NFA for L = { w âˆˆ {a,b}* | |w| â‰¥ 3 and the third symbol equals the last symbol }.
-9. Show that NFA-Îµ are equivalent to NFA by showing how to eliminate Îµ-transitions.
+6. Convert the following NFA-ÃŽÂµ to a DFA: Q={qÃ¢â€šâ‚¬,qÃ¢â€šÂ,qÃ¢â€šâ€š}, ÃŽÂ£={a,b}, ÃŽÂ´(qÃ¢â€šâ‚¬,ÃŽÂµ)={qÃ¢â€šÂ}, ÃŽÂ´(qÃ¢â€šÂ,a)={qÃ¢â€šÂ,qÃ¢â€šâ€š}, ÃŽÂ´(qÃ¢â€šÂ,b)={qÃ¢â€šâ‚¬}, ÃŽÂ´(qÃ¢â€šâ€š,a)={qÃ¢â€šâ€š}, F={qÃ¢â€šâ€š}.
+7. Prove formally that if L is recognized by an NFA with k states, then L is recognized by a DFA with at most 2Ã¡ÂµÂ states.
+8. Design an NFA for L = { w Ã¢Ë†Ë† {a,b}* | |w| Ã¢â€°Â¥ 3 and the third symbol equals the last symbol }.
+9. Show that NFA-ÃŽÂµ are equivalent to NFA by showing how to eliminate ÃŽÂµ-transitions.
 10. Design an NFA that accepts strings over {0,1} where there are at most two 1s or the string length is even. Convert to DFA.
 
 ### Advanced
 
 11. Prove that the subset construction produces the minimal DFA for a given NFA (i.e., show that any DFA equivalent to the NFA must have at least as many states as the reachable subsets).
-12. Consider the language L = { w âˆˆ {0,1}* | w interpreted as binary is congruent to 1 mod 4 OR w contains an even number of 0s }. Design an NFA with at most 6 states using Îµ-transitions. Convert to DFA.
-13. Prove that for any NFA, the subset construction yields a DFA with at most 2â¿ states, and that this bound is tight → exhibit a family of languages Lâ‚™ that require a DFA with 2â¿ states but only an NFA with n+1 states.
-14. Design an NFA-Îµ where Îµ-transitions create exponentially many states in the equivalent DFA. Show the full subset construction.
-15. Given two NFA-Îµ Nâ‚ and Nâ‚‚, show how to construct an NFA-Îµ for L(Nâ‚)L(Nâ‚‚) (concatenation) and L(Nâ‚)* (Kleene star) using Îµ-transitions. Prove the constructions correct.
+12. Consider the language L = { w Ã¢Ë†Ë† {0,1}* | w interpreted as binary is congruent to 1 mod 4 OR w contains an even number of 0s }. Design an NFA with at most 6 states using ÃŽÂµ-transitions. Convert to DFA.
+13. Prove that for any NFA, the subset construction yields a DFA with at most 2Ã¢ÂÂ¿ states, and that this bound is tight â†’ exhibit a family of languages LÃ¢â€šâ„¢ that require a DFA with 2Ã¢ÂÂ¿ states but only an NFA with n+1 states.
+14. Design an NFA-ÃŽÂµ where ÃŽÂµ-transitions create exponentially many states in the equivalent DFA. Show the full subset construction.
+15. Given two NFA-ÃŽÂµ NÃ¢â€šÂ and NÃ¢â€šâ€š, show how to construct an NFA-ÃŽÂµ for L(NÃ¢â€šÂ)L(NÃ¢â€šâ€š) (concatenation) and L(NÃ¢â€šÂ)* (Kleene star) using ÃŽÂµ-transitions. Prove the constructions correct.
 16. Implement Thompson's construction in TypeScript for the full regex syntax including union (`|`), concatenation, and Kleene star (`*`). Test it by building the NFA for `(0|1)*00` and simulating it on "100" and "101".
 17. Write a TypeScript function that takes an NFA and returns a DFA using the full subset construction with e-closure handling. Test it on the NFA from Example 2.1.
 18. Prove that if an NFA has k states, the equivalent minimal DFA may have up to 2^k states. Construct a family of languages where this exponential blowup is realized. (Hint: consider the language of strings where the k-th symbol from the end is 1.)
@@ -915,7 +915,7 @@ flowchart TD
     J -->|Yes| E
     J -->|No| K{"Worklist empty?"}
     K -->|No| D
-    K -->|Yes| L["Set F_D = {S ? Q_D | S n F ? Ø}"]
+    K -->|Yes| L["Set F_D = {S ? Q_D | S n F ? Ã˜}"]
     L --> M["Return DFA D = (Q_D, S, d_D, S0, F_D)"]
 ```
 
@@ -923,10 +923,10 @@ flowchart TD
 
 1. **Nondeterminism is a specification tool.** When designing an automaton, start with an NFA for clarity, then convert to a DFA for implementation. The NFA captures the *what* without worrying about the *how*.
 
-2. **Epsilon transitions enable modularity.** Use e-transitions to compose automata like building blocks — glue together sub-automata for union, concatenation, and Kleene star. Thompson's construction is the canonical example.
+2. **Epsilon transitions enable modularity.** Use e-transitions to compose automata like building blocks â€” glue together sub-automata for union, concatenation, and Kleene star. Thompson's construction is the canonical example.
 
 3. **Subset construction can explode.** An NFA with k states can yield a DFA with up to 2^k states. In practice, many subsets are unreachable, but the worst case is real and limits direct DFA generation.
 
-4. **NFA simulation is efficient.** Simulating an NFA directly (tracking state sets) takes O(k²n) time for k states and n input symbols — no need to materialize the DFA unless you need repeated simulations.
+4. **NFA simulation is efficient.** Simulating an NFA directly (tracking state sets) takes O(kÂ²n) time for k states and n input symbols â€” no need to materialize the DFA unless you need repeated simulations.
 
 5. **Thompson construction is everywhere.** Modern regex engines like PCRE, RE2, and Rust's regex crate all build NFA representations internally, then apply variants of the subset construction to run matches efficiently.

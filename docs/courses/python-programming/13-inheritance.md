@@ -1,4 +1,4 @@
-# Chapter 13: Inheritance and Protocols
+﻿# Chapter 13: Inheritance and Protocols
 
 
 > **Previous:** [Object-Oriented Programming](./12-oop.md) | **Next:** [Magic Methods and Operator Overloading](./14-magic-methods.md)
@@ -15,16 +15,16 @@ By the end of this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/13-inheritance/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/13-inheritance/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/13-inheritance/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/13-inheritance/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/13-inheritance/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/13-inheritance/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/13-inheritance/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/13-inheritance/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/13-inheritance/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/13-inheritance/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/13-inheritance/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/13-inheritance/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -41,7 +41,7 @@ By the end of this chapter, students will be able to:
 |13.1 Basic Inheritance||Inheritance creates an "is-a" relationship; `super()` delegates to the next class in MRO.|
 |13.2 super()||MRO (C3 linearization) determines method lookup order: child before parent, base-order preserved.|
 |13.3 Method Resolution Order (MRO)||Mixins provide focused, reusable behaviour and should avoid `__init__`.|
-|13.4 Multiple Inheritance||ABCs enforce interface contracts via `@abstractmethod` — cannot be instantiated directly.|
+|13.4 Multiple Inheritance||ABCs enforce interface contracts via `@abstractmethod` â€” cannot be instantiated directly.|
 |13.5 Mixins||Protocols (PEP 544) provide structural subtyping: any object with the right methods satisfies the protocol.|
 |13.6 Abstract Base Classes (ABCs)||undefined|
 |13.7 isinstance and issubclass||undefined|
@@ -161,7 +161,7 @@ print(D.__mro__)
 # (<class 'D'>, <class 'B'>, <class 'C'>, <class 'A'>, <class 'object'>)
 ```
 
-The MRO for `D(B, C)` is computed as: D → B → C → A → object. Python uses `mro()` to inspect:
+The MRO for `D(B, C)` is computed as: D â†’ B â†’ C â†’ A â†’ object. Python uses `mro()` to inspect:
 
 ```python
 for cls in D.__mro__:
@@ -176,7 +176,7 @@ C3 linearization ensures:
 
 ## 13.4 Multiple Inheritance
 
-> **One-Sentence Takeaway:** ABCs enforce interface contracts via `@abstractmethod` — cannot be instantiated directly.
+> **One-Sentence Takeaway:** ABCs enforce interface contracts via `@abstractmethod` â€” cannot be instantiated directly.
 
 
 Python supports multiple inheritance directly:
@@ -299,7 +299,7 @@ class Rectangle(Shape):
     def perimeter(self) -> float:
         return 2 * (self.width + self.height)
 
-# shape = Shape()  # TypeError → can't instantiate abstract class
+# shape = Shape()  # TypeError â†’ can't instantiate abstract class
 circle = Circle(5)
 print(circle.description())  # Circle (area=78.54)
 ```
@@ -411,12 +411,12 @@ class Person:
 print(isinstance(Person(), Named))  # True
 ```
 
-Protocols enable duck typing with static safety → objects satisfy a protocol if they have the right methods, regardless of inheritance.
+Protocols enable duck typing with static safety â†’ objects satisfy a protocol if they have the right methods, regardless of inheritance.
 
 ## 13.9 Composition over Inheritance
 
 > **One-Sentence Takeaway:** undefined
-> **Pro Tip:** Favour composition over inheritance — it allows different implementations to be injected without changing the class hierarchy.
+> **Pro Tip:** Favour composition over inheritance â€” it allows different implementations to be injected without changing the class hierarchy.
 
 
 
@@ -613,7 +613,7 @@ function playAll(items: Playable[]): void {
 ### TypeScript Advanced Inheritance & Composition Patterns
 
 ```typescript
-// Python: diamond problem (MRO) → TypeScript: no multiple inheritance
+// Python: diamond problem (MRO) â†’ TypeScript: no multiple inheritance
 // but mixins via interface merging
 interface Loggable {
   log(message: string): void;
@@ -631,7 +631,7 @@ class Entity implements Loggable, Timestamped {
   }
 }
 
-// Python: super().__init__() → TypeScript: super()
+// Python: super().__init__() â†’ TypeScript: super()
 class Animal {
   constructor(public name: string) {}
   speak(): void { console.log("..."); }
@@ -646,7 +646,7 @@ class Dog extends Animal {
   }
 }
 
-// Python: abstractmethod → TypeScript: abstract class
+// Python: abstractmethod â†’ TypeScript: abstract class
 abstract class Shape {
   abstract area(): number;
   abstract perimeter(): number;
@@ -661,7 +661,7 @@ class Circle extends Shape {
   perimeter(): number { return 2 * Math.PI * this.radius; }
 }
 
-// Python: Protocol → TypeScript: interface
+// Python: Protocol â†’ TypeScript: interface
 interface Flyable {
   fly(): void;
 }
@@ -686,7 +686,7 @@ class Car {
 ### TypeScript Generic Constraints & Mixin Patterns
 
 ```typescript
-// Python: generic types → TypeScript: generics with constraints
+// Python: generic types â†’ TypeScript: generics with constraints
 interface HasId {
   id: number;
 }
@@ -698,7 +698,7 @@ class Repository<T extends HasId> {
   findAll(): T[] { return [...this.items.values()]; }
 }
 
-// Python: Mixin pattern → TypeScript: mixin function
+// Python: Mixin pattern â†’ TypeScript: mixin function
 type GConstructor<T = {}> = new (...args: any[]) => T;
 function Timestamped<TBase extends GConstructor>(Base: TBase) {
   return class extends Base {
@@ -715,7 +715,7 @@ const TimestampedEntity = Timestamped(BasicEntity);
 const entity = new TimestampedEntity(1);
 console.log(entity.createdAt);  // current date/time
 
-// Python: Protocol → TypeScript: structural typing
+// Python: Protocol â†’ TypeScript: structural typing
 interface Drawable {
   draw(): void;
 }
@@ -725,7 +725,7 @@ class Canvas {
   }
 }
 
-// Python: isinstance check with ABC → TypeScript: instanceof
+// Python: isinstance check with ABC â†’ TypeScript: instanceof
 function handle(shape: unknown): void {
   if (shape instanceof Circle) {
     console.log(`Circle with radius ${shape.radius}`);
@@ -734,8 +734,8 @@ function handle(shape: unknown): void {
   }
 }
 
-// Python: MRO (C3 linearization) → TypeScript: chain of super() calls
-// TypeScript: single inheritance chain — no MRO complexities
+// Python: MRO (C3 linearization) â†’ TypeScript: chain of super() calls
+// TypeScript: single inheritance chain â€” no MRO complexities
 ```
 
 ### TypeScript Utilities
@@ -1027,7 +1027,7 @@ console.log(csvProc.process()); // ["A_PROCESSED", "B_PROCESSED", "C_PROCESSED"]
 
 ### Application Problems
 
-1. Create a class hierarchy for geometric solids: `Shape3D` (abstract) → `Sphere`, `Cuboid`, `Cylinder`. Each must implement `volume()` and `surface_area()`. Use `super().__init__()` for common attributes.
+1. Create a class hierarchy for geometric solids: `Shape3D` (abstract) â†’ `Sphere`, `Cuboid`, `Cylinder`. Each must implement `volume()` and `surface_area()`. Use `super().__init__()` for common attributes.
 2. Implement mixins `TimestampMixin` (adds `created_at` and `updated_at` timestamps) and `SerializableMixin` (adds `to_dict`/`from_dict`). Use them with a `Note` class.
 3. Define a `Playable` Protocol with a `play()` method. Create classes `MusicTrack` and `VideoClip` that satisfy it. Write a function `play_all(playables: list[Playable])` and test it.
 

@@ -1,4 +1,4 @@
-# Chapter 4: SQL Basics
+﻿# Chapter 4: SQL Basics
 
 > **Previous:** [Chapter 3: The Relational Model](./03-relational-model.md) | **Next:** [Chapter 5: SQL Joins and Subqueries](./05-sql-joins.md)
 
@@ -17,16 +17,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/04-sql-basics/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/04-sql-basics/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/04-sql-basics/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/04-sql-basics/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/04-sql-basics/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/04-sql-basics/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/04-sql-basics/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/04-sql-basics/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/04-sql-basics/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/04-sql-basics/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/04-sql-basics/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/04-sql-basics/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -2123,7 +2123,7 @@ The TypeScript implementation below validates SQL DDL and DML statements, checks
 
 ```typescript
 // ============================================================
-// SQL Validator & Execution Simulator â€” TypeScript
+// SQL Validator & Execution Simulator Ã¢â‚¬â€ TypeScript
 // ============================================================
 
 interface ColumnDef {
@@ -2171,7 +2171,7 @@ class SQLValidator {
         case 'DELETE':
           return this.delete(stmt.table, stmt.where);
         case 'GRANT':
-          return 'GRANT ' + stmt.privilege + ' ON ' + stmt.table + ' TO ' + stmt.user + ' â€” OK';
+          return 'GRANT ' + stmt.privilege + ' ON ' + stmt.table + ' TO ' + stmt.user + ' Ã¢â‚¬â€ OK';
         case 'BEGIN':
           this.inTransaction = true;
           this.transactionLog = [];
@@ -2179,11 +2179,11 @@ class SQLValidator {
         case 'COMMIT':
           this.inTransaction = false;
           this.transactionLog = [];
-          return 'COMMIT â€” ' + this.transactionLog.length + ' changes persisted';
+          return 'COMMIT Ã¢â‚¬â€ ' + this.transactionLog.length + ' changes persisted';
         case 'ROLLBACK':
           this.rollbackTransaction();
           this.inTransaction = false;
-          return 'ROLLBACK â€” all changes undone';
+          return 'ROLLBACK Ã¢â‚¬â€ all changes undone';
       }
     } catch (e) {
       if (this.inTransaction) this.rollbackTransaction();
@@ -2195,7 +2195,7 @@ class SQLValidator {
     if (this.tables.has(table.name)) throw new Error('Table ' + table.name + ' already exists');
     this.tables.set(table.name, table);
     this.rows.set(table.name, []);
-    return 'CREATE TABLE ' + table.name + ' â€” ' + table.columns.length + ' columns';
+    return 'CREATE TABLE ' + table.name + ' Ã¢â‚¬â€ ' + table.columns.length + ' columns';
   }
 
   private getTable(name: string): TableDef {
@@ -2228,7 +2228,7 @@ class SQLValidator {
       this.transactionLog.push({ table: tableName, row: { ...values }, action: 'INSERT' });
     }
     this.rows.get(tableName)!.push(values);
-    return 'INSERT INTO ' + tableName + ' â€” 1 row inserted';
+    return 'INSERT INTO ' + tableName + ' Ã¢â‚¬â€ 1 row inserted';
   }
 
   private select(tableName: string, columns: string[], where?: (row: Record<string, unknown>) => boolean): string {
@@ -2263,7 +2263,7 @@ class SQLValidator {
         count++;
       }
     }
-    return 'UPDATE ' + tableName + ' â€” ' + count + ' rows updated';
+    return 'UPDATE ' + tableName + ' Ã¢â‚¬â€ ' + count + ' rows updated';
   }
 
   private delete(tableName: string, where?: (row: Record<string, unknown>) => boolean): string {
@@ -2276,7 +2276,7 @@ class SQLValidator {
       }
     }
     this.rows.set(tableName, where ? rows.filter(r => !where(r)) : []);
-    return 'DELETE FROM ' + tableName + ' â€” ' + toDelete.length + ' rows deleted';
+    return 'DELETE FROM ' + tableName + ' Ã¢â‚¬â€ ' + toDelete.length + ' rows deleted';
   }
 
   private rollbackTransaction(): void {

@@ -1,6 +1,6 @@
-# Chapter 3: Comparison-Based Sorting
+﻿# Chapter 3: Comparison-Based Sorting
 
-> **Prerequisites:** [Chapter 1: Fundamentals of Algorithm Analysis](./01-analysis.md) — Asymptotic notation and recurrence analysis | **Next:** [Chapter 4: Linear-Time Sorting](./04-sorting-linear.md) — Breaking the \( \Omega(n \log n) \) barrier
+> **Prerequisites:** [Chapter 1: Fundamentals of Algorithm Analysis](./01-analysis.md) â€” Asymptotic notation and recurrence analysis | **Next:** [Chapter 4: Linear-Time Sorting](./04-sorting-linear.md) â€” Breaking the \( \Omega(n \log n) \) barrier
 
 ## Learning Objectives
 
@@ -9,16 +9,16 @@ By the end of this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/algorithms/03-sorting-nlogn/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/algorithms/03-sorting-nlogn/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/algorithms/03-sorting-nlogn/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/algorithms/03-sorting-nlogn/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/algorithms/03-sorting-nlogn/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/algorithms/03-sorting-nlogn/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/algorithms/03-sorting-nlogn/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/algorithms/03-sorting-nlogn/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/algorithms/03-sorting-nlogn/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/algorithms/03-sorting-nlogn/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/algorithms/03-sorting-nlogn/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/algorithms/03-sorting-nlogn/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -35,11 +35,11 @@ By the end of this chapter, students will be able to:
 
 ## Why Comparison Sorting Matters
 
-Imagine you have a deck of 52 playing cards scattered across a table. You need to organize them into ascending order — first by suit, then by rank. Without any shortcuts (you cannot "magically know" where the Ace of Spades belongs), you must compare cards one pair at a time. Every time you pick up two cards and decide which is larger, you have performed one **comparison**. This fundamental operation — comparing two elements — is the only tool available to **comparison-based sorting algorithms**.
+Imagine you have a deck of 52 playing cards scattered across a table. You need to organize them into ascending order â€” first by suit, then by rank. Without any shortcuts (you cannot "magically know" where the Ace of Spades belongs), you must compare cards one pair at a time. Every time you pick up two cards and decide which is larger, you have performed one **comparison**. This fundamental operation â€” comparing two elements â€” is the only tool available to **comparison-based sorting algorithms**.
 
-The problem of sorting is universal: databases sort query results, search engines rank pages, spreadsheets order rows, operating systems schedule tasks by priority. Every sorting algorithm that works by comparing elements (as opposed to exploiting properties like digit structure) must obey the **\( \Omega(n \log n) \) lower bound** — a mathematical ceiling on how fast any comparison sort can go.
+The problem of sorting is universal: databases sort query results, search engines rank pages, spreadsheets order rows, operating systems schedule tasks by priority. Every sorting algorithm that works by comparing elements (as opposed to exploiting properties like digit structure) must obey the **\( \Omega(n \log n) \) lower bound** â€” a mathematical ceiling on how fast any comparison sort can go.
 
-This chapter covers three of the most important \( O(n \log n) \) comparison sorts — **merge sort**, **quick sort**, and **heap sort** — each with different trade-offs in speed, memory usage, stability, and real-world suitability.
+This chapter covers three of the most important \( O(n \log n) \) comparison sorts â€” **merge sort**, **quick sort**, and **heap sort** â€” each with different trade-offs in speed, memory usage, stability, and real-world suitability.
 
 > **Remember:** The \( \Omega(n \log n) \) bound applies ONLY to comparison-based sorting. Non-comparison sorts (counting, radix, bucket) can beat it by exploiting key structure.
 
@@ -58,7 +58,7 @@ This chapter covers three of the most important \( O(n \log n) \) comparison sor
 
 ```mermaid
 flowchart LR
-    A[Lower Bound Ωn log n] --> B[Merge Sort]
+    A[Lower Bound Î©n log n] --> B[Merge Sort]
     A --> C[Quick Sort]
     A --> D[Heap Sort]
     B --> E[Stable, O(n) space]
@@ -95,14 +95,14 @@ flowchart LR
 
 #### Real-World Analogy
 
-Imagine you are the captain of a sports team tasked with sorting 100 player cards by height. You divide the stack among your assistant coaches, telling each to sort their pile. Once every pile comes back sorted, you merge them pairwise — comparing the shortest player from each pile and picking the smaller one, just like merging two sorted lanes on a highway.
+Imagine you are the captain of a sports team tasked with sorting 100 player cards by height. You divide the stack among your assistant coaches, telling each to sort their pile. Once every pile comes back sorted, you merge them pairwise â€” comparing the shortest player from each pile and picking the smaller one, just like merging two sorted lanes on a highway.
 
 #### Algorithm Description
 
 Merge sort uses the **divide-and-conquer** paradigm:
 1. **Divide** the array into two halves.
-2. **Conquer** — recursively sort each half.
-3. **Combine** — merge the two sorted halves into one sorted array.
+2. **Conquer** â€” recursively sort each half.
+3. **Combine** â€” merge the two sorted halves into one sorted array.
 
 #### Algorithm Steps (Numbered)
 
@@ -146,15 +146,15 @@ Merge(A, low, mid, high):
 | 1 | Divide [38, 27, 43, 3, 9, 82, 10] at mid=3 | [38, 27, 43, 3] [9, 82, 10] |
 | 2 | Divide [38, 27, 43, 3] at mid=1 | [38, 27] [43, 3] |
 | 3 | Divide [38, 27] at mid=0 | [38] [27] |
-| 4 | Merge [38] and [27] → compare 38 ≤ 27? No → [27, 38] | [27, 38, 43, 3, 9, 82, 10] |
+| 4 | Merge [38] and [27] â†’ compare 38 â‰¤ 27? No â†’ [27, 38] | [27, 38, 43, 3, 9, 82, 10] |
 | 5 | Divide [43, 3] at mid=0 | [43] [3] |
-| 6 | Merge [43] and [3] → compare 43 ≤ 3? No → [3, 43] | [27, 38, 3, 43, 9, 82, 10] |
-| 7 | Merge [27, 38] and [3, 43]: 27≤3? No → pick 3; 27≤43? Yes → pick 27; 38≤43? Yes → pick 38; pick 43 | [3, 27, 38, 43, 9, 82, 10] |
+| 6 | Merge [43] and [3] â†’ compare 43 â‰¤ 3? No â†’ [3, 43] | [27, 38, 3, 43, 9, 82, 10] |
+| 7 | Merge [27, 38] and [3, 43]: 27â‰¤3? No â†’ pick 3; 27â‰¤43? Yes â†’ pick 27; 38â‰¤43? Yes â†’ pick 38; pick 43 | [3, 27, 38, 43, 9, 82, 10] |
 | 8 | Divide [9, 82, 10] at mid=1 | [9, 82] [10] |
 | 9 | Divide [9, 82] at mid=0 | [9] [82] |
-| 10 | Merge [9] and [82] → [9, 82] | [3, 27, 38, 43, 9, 82, 10] |
-| 11 | Merge [9, 82] and [10]: compare 9≤10? Yes → pick 9; 82≤10? No → pick 10; pick 82 | [3, 27, 38, 43, 9, 10, 82] |
-| 12 | Merge [3, 27, 38, 43] and [9, 10, 82]: 3≤9→3, 27≤9→9, 27≤10→10, 27≤82→27, 38≤82→38, 43≤82→43, 82 | **[3, 9, 10, 27, 38, 43, 82]** |
+| 10 | Merge [9] and [82] â†’ [9, 82] | [3, 27, 38, 43, 9, 82, 10] |
+| 11 | Merge [9, 82] and [10]: compare 9â‰¤10? Yes â†’ pick 9; 82â‰¤10? No â†’ pick 10; pick 82 | [3, 27, 38, 43, 9, 10, 82] |
+| 12 | Merge [3, 27, 38, 43] and [9, 10, 82]: 3â‰¤9â†’3, 27â‰¤9â†’9, 27â‰¤10â†’10, 27â‰¤82â†’27, 38â‰¤82â†’38, 43â‰¤82â†’43, 82 | **[3, 9, 10, 27, 38, 43, 82]** |
 
 **Comparison count:** This run makes 14 comparisons. In general, \( O(n \log n) \) comparisons are needed.
 
@@ -245,7 +245,7 @@ public class MergeSort {
 |------|------|------|
 | Best | \( O(n \log n) \) | Even if already sorted, merge sort still divides and merges \( \log n \) levels, performing \( O(n) \) work at each level. |
 | Average | \( O(n \log n) \) | The recurrence \( T(n) = 2T(n/2) + O(n) \) solves to \( \Theta(n \log n) \) by the Master Theorem. |
-| Worst | \( O(n \log n) \) | Same recurrence regardless of input — no worst-case input exists. |
+| Worst | \( O(n \log n) \) | Same recurrence regardless of input â€” no worst-case input exists. |
 | Space | \( O(n) \) | Temporary arrays `L` and `R` of total size \( n \) are allocated at each recursive level (or globally reused). |
 
 **Why is merge sort always \( O(n \log n) \)?** The array is always split exactly in half, producing \( \log_2 n \) levels. At each level, every element participates in exactly one comparison during the merge step, giving \( O(n) \) work per level. Hence \( n \times \log n = O(n \log n) \).
@@ -256,8 +256,8 @@ public class MergeSort {
 |------------|----------|
 | **Empty array** | Base case triggers immediately; no operations. |
 | **Single element** | Base case; array is already sorted. |
-| **Already sorted** | Still divides and merges — no shortcut, still \( O(n \log n) \). |
-| **Reverse sorted** | Same as any other input — \( O(n \log n) \), no degradation. |
+| **Already sorted** | Still divides and merges â€” no shortcut, still \( O(n \log n) \). |
+| **Reverse sorted** | Same as any other input â€” \( O(n \log n) \), no degradation. |
 | **All duplicates** | Comparison `L[i] <= R[j]` picks from left half, preserving stability. |
 
 #### Advantages & Disadvantages
@@ -265,7 +265,7 @@ public class MergeSort {
 | Advantages | Disadvantages |
 |-----------|--------------|
 | Guaranteed \( O(n \log n) \) in all cases | Requires \( O(n) \) auxiliary space |
-| **Stable** — preserves relative order of equal elements | Not in-place; memory overhead on large arrays |
+| **Stable** â€” preserves relative order of equal elements | Not in-place; memory overhead on large arrays |
 | Excellent for **linked lists** (no random access needed) | Recursive overhead (can be mitigated by iterative bottom-up version) |
 | Naturally **parallelizable** | Slower constant factor than quick sort for small arrays |
 | Ideal for **external sorting** (large data on disk) | Merge step requires copying |
@@ -283,7 +283,7 @@ public class MergeSort {
 
 #### Real-World Analogy
 
-Imagine organizing a group of students by height. You pick one student (the **pivot**) and tell everyone shorter than the pivot to stand on the left, and everyone taller to stand on the right. Now the pivot is in its final position. Recursively repeat the process on the left group and the right group. This is exactly what quick sort does — and it's incredibly fast.
+Imagine organizing a group of students by height. You pick one student (the **pivot**) and tell everyone shorter than the pivot to stand on the left, and everyone taller to stand on the right. Now the pivot is in its final position. Recursively repeat the process on the left group and the right group. This is exactly what quick sort does â€” and it's incredibly fast.
 
 #### Algorithm Description
 
@@ -323,23 +323,23 @@ Partition(A, low, high):
 
 **Input:** `[10, 80, 30, 90, 40, 50, 70]`
 
-**First call — Partition with pivot = 70 (last element):**
+**First call â€” Partition with pivot = 70 (last element):**
 
-| j | A[j] | A[j] ≤ 70? | i | Action | Array After |
+| j | A[j] | A[j] â‰¤ 70? | i | Action | Array After |
 |---|------|-----------|----|--------|-------------|
 | 0 | 10 | Yes | 0 | swap(10,10) | [10, 80, 30, 90, 40, 50, 70] |
-| 1 | 80 | No | 0 | — | [10, 80, 30, 90, 40, 50, 70] |
+| 1 | 80 | No | 0 | â€” | [10, 80, 30, 90, 40, 50, 70] |
 | 2 | 30 | Yes | 1 | swap(80,30) | [10, 30, 80, 90, 40, 50, 70] |
-| 3 | 90 | No | 1 | — | [10, 30, 80, 90, 40, 50, 70] |
+| 3 | 90 | No | 1 | â€” | [10, 30, 80, 90, 40, 50, 70] |
 | 4 | 40 | Yes | 2 | swap(80,40) | [10, 30, 40, 90, 80, 50, 70] |
 | 5 | 50 | Yes | 3 | swap(90,50) | [10, 30, 40, 50, 80, 90, 70] |
 
-Finally: `swap(A[4], A[6])` → swap(80, 70) → **[10, 30, 40, 50, 70, 90, 80]**. Pivot index = 4.
+Finally: `swap(A[4], A[6])` â†’ swap(80, 70) â†’ **[10, 30, 40, 50, 70, 90, 80]**. Pivot index = 4.
 
-**Recurse left** on `[10, 30, 40, 50]` — pivot=50 → `[10, 30, 40, 50]`, pivot at 3.
-**Recurse right** on `[90, 80]` — pivot=80 → `[10, 30, 40, 50, 70, 80, 90]`. Done after 3 recursive calls.
+**Recurse left** on `[10, 30, 40, 50]` â€” pivot=50 â†’ `[10, 30, 40, 50]`, pivot at 3.
+**Recurse right** on `[90, 80]` â€” pivot=80 â†’ `[10, 30, 40, 50, 70, 80, 90]`. Done after 3 recursive calls.
 
-**Worst-case input** (already sorted, first-element pivot): `[1, 2, 3, 4, 5]`. Each partition splits off one element — \( n \) levels, each doing \( O(n) \) work → \( O(n^2) \).
+**Worst-case input** (already sorted, first-element pivot): `[1, 2, 3, 4, 5]`. Each partition splits off one element â€” \( n \) levels, each doing \( O(n) \) work â†’ \( O(n^2) \).
 
 #### C++ Implementation
 
@@ -440,9 +440,9 @@ public class QuickSort {
 
 | Case | Time | Why? |
 |------|------|------|
-| Best | \( O(n \log n) \) | Pivot always divides the array into two equal halves — \( T(n) = 2T(n/2) + O(n) \). |
+| Best | \( O(n \log n) \) | Pivot always divides the array into two equal halves â€” \( T(n) = 2T(n/2) + O(n) \). |
 | Average | \( O(n \log n) \) | Random pivot makes any split ratio produce \( O(n \log n) \) expected time. |
-| Worst | \( O(n^2) \) | Pivot is always smallest or largest element — \( T(n) = T(0) + T(n-1) + O(n) = O(n^2) \). |
+| Worst | \( O(n^2) \) | Pivot is always smallest or largest element â€” \( T(n) = T(0) + T(n-1) + O(n) = O(n^2) \). |
 | Space | \( O(\log n) \) | Recursion stack depth (average case). Worst case \( O(n) \) without tail-call optimization. |
 
 **Why quick sort is \( O(n \log n) \) on average:** Even a lopsided 1:9 split produces \( T(n) = T(n/10) + T(9n/10) + O(n) \), which still solves to \( \Theta(n \log n) \). Only the pathological 0:\( n-1 \) split causes \( O(n^2) \). Randomization makes the 0:\( n-1 \) split astronomically unlikely.
@@ -453,22 +453,22 @@ public class QuickSort {
 |------------|----------|
 | **Empty array** | Base case; returns immediately. |
 | **Single element** | Base case; already sorted. |
-| **Already sorted** | **Worst case** if pivot is first/last element — \( O(n^2) \). Random pivot mitigates this. |
-| **Reverse sorted** | Same as already sorted — triggers \( O(n^2) \) without randomization. |
+| **Already sorted** | **Worst case** if pivot is first/last element â€” \( O(n^2) \). Random pivot mitigates this. |
+| **Reverse sorted** | Same as already sorted â€” triggers \( O(n^2) \) without randomization. |
 | **All duplicates** | Lomuto partition produces worst-case split (all elements equal triggers \( O(n^2) \)). Use Hoare partition for better behavior. |
 
 #### Advantages & Disadvantages
 
 | Advantages | Disadvantages |
 |-----------|--------------|
-| Fastest in practice — small constant factors | \( O(n^2) \) worst case without randomization |
-| In-place sorting (only stack space for recursion) | **Not stable** — equal elements may change order |
-| Cache-friendly — sequential memory access | Vulnerable to DoS attacks with malicious input |
+| Fastest in practice â€” small constant factors | \( O(n^2) \) worst case without randomization |
+| In-place sorting (only stack space for recursion) | **Not stable** â€” equal elements may change order |
+| Cache-friendly â€” sequential memory access | Vulnerable to DoS attacks with malicious input |
 | Efficient tail recursion optimization | Degrades on small arrays (switch to insertion sort) |
 
 > **Pro Tip:** Always randomize pivot selection in production quick sort. Using the first/last element makes sorted or reverse-sorted inputs hit the \( O(n^2) \) worst case trivially.
 >
-> **Warning:** Quick sort is NOT stable — equal elements may change relative order. Use merge sort if stability is required.
+> **Warning:** Quick sort is NOT stable â€” equal elements may change relative order. Use merge sort if stability is required.
 
 **One-Sentence Takeaway:** Quick sort's \( O(n \log n) \) average case and in-place partition make it the fastest general-purpose sort in practice, though randomized pivot selection is essential to avoid \( O(n^2) \).
 
@@ -479,13 +479,13 @@ public class QuickSort {
 
 #### Real-World Analogy
 
-Imagine you are in charge of a fruit stall and need to display fruits in ascending order of weight. You arrange all fruits into a **max-heap** — a pyramid where the heaviest fruit sits at the top. You then repeatedly take the heaviest fruit (the top), put it at the end of your display row, and rearrange the pyramid so the next heaviest rises to the top. This process — heapify, extract, heapify, extract — is exactly how heap sort works.
+Imagine you are in charge of a fruit stall and need to display fruits in ascending order of weight. You arrange all fruits into a **max-heap** â€” a pyramid where the heaviest fruit sits at the top. You then repeatedly take the heaviest fruit (the top), put it at the end of your display row, and rearrange the pyramid so the next heaviest rises to the top. This process â€” heapify, extract, heapify, extract â€” is exactly how heap sort works.
 
 #### Algorithm Description
 
 Heap sort uses a **binary heap** data structure. It operates in two phases:
 
-1. **Build a max-heap** from the input array — the largest element is at the root.
+1. **Build a max-heap** from the input array â€” the largest element is at the root.
 2. **Repeatedly extract** the maximum element:
    - Swap the root with the last element of the unsorted portion.
    - Reduce the heap size.
@@ -535,22 +535,22 @@ SiftDown(A, i, last):
 
 | i | Subtree Root | Children | Action | Array After |
 |---|--------------|----------|--------|-------------|
-| 1 | A[1]=10 | A[3]=5, A[4]=1 | 10≥5, 10≥1 — no swap | [4, 10, 3, 5, 1] |
-| 0 | A[0]=4 | A[1]=10, A[2]=3 | 10>4 → swap(4,10) | [10, 4, 3, 5, 1] |
-| — | siftDown A[1]=4 | A[3]=5, A[4]=1 | 5>4 → swap(4,5) | [10, 5, 3, 4, 1] |
+| 1 | A[1]=10 | A[3]=5, A[4]=1 | 10â‰¥5, 10â‰¥1 â€” no swap | [4, 10, 3, 5, 1] |
+| 0 | A[0]=4 | A[1]=10, A[2]=3 | 10>4 â†’ swap(4,10) | [10, 4, 3, 5, 1] |
+| â€” | siftDown A[1]=4 | A[3]=5, A[4]=1 | 5>4 â†’ swap(4,5) | [10, 5, 3, 4, 1] |
 
-**Heap built:** `[10, 5, 3, 4, 1]` ✅
+**Heap built:** `[10, 5, 3, 4, 1]` âœ…
 
 **Phase 2: Extract Repeatedly**
 
 | i | Action | Array After | SiftDown |
 |---|--------|-------------|----------|
-| 4 | swap(10,1) | [1, 5, 3, 4, **10**] | 1↔5→[5,1,3,4,10]; 1↔4→[5,4,3,1,10] |
-| 3 | swap(5,1) | [1, 4, 3, **5**, 10] | 1↔4→[4,1,3,5,10]; 1 stays |
-| 2 | swap(4,3) | [3, 1, **4**, 5, 10] | 3↔1→[3,1,4,5,10]; 1 stays |
+| 4 | swap(10,1) | [1, 5, 3, 4, **10**] | 1â†”5â†’[5,1,3,4,10]; 1â†”4â†’[5,4,3,1,10] |
+| 3 | swap(5,1) | [1, 4, 3, **5**, 10] | 1â†”4â†’[4,1,3,5,10]; 1 stays |
+| 2 | swap(4,3) | [3, 1, **4**, 5, 10] | 3â†”1â†’[3,1,4,5,10]; 1 stays |
 | 1 | swap(3,1) | [1, **3**, 4, 5, 10] | 1 stays (single element) |
 
-**Final sorted array:** `[1, 3, 4, 5, 10]` ✅
+**Final sorted array:** `[1, 3, 4, 5, 10]` âœ…
 
 #### C++ Implementation
 
@@ -651,12 +651,12 @@ public class HeapSort {
 |------|------|------|
 | Best | \( O(n \log n) \) | Heap property must be restored after every extraction regardless of input. |
 | Average | \( O(n \log n) \) | Each sift-down takes \( O(\log n) \), executed \( n \) times. |
-| Worst | \( O(n \log n) \) | Same as average — heap sort has no worst-case input. |
+| Worst | \( O(n \log n) \) | Same as average â€” heap sort has no worst-case input. |
 | Space | \( O(1) \) | Entirely in-place; only a few variables for indices. |
 
 **Why is heapify \( O(n) \) and not \( O(n \log n) \)?** The heapify loop runs \( n/2 \) times, but the sift-down depth is not uniform. Lower nodes start closer to leaves. The total work sum is \( \sum_{h=0}^{\log n} \frac{n}{2^{h+1}} \cdot O(h) = O(n) \). Only the extraction phase is \( O(n \log n) \).
 
-> **Remember:** The heapify phase runs in \( O(n) \), not \( O(n \log n) \) — a common misconception. Only the extraction phase is \( O(n \log n) \).
+> **Remember:** The heapify phase runs in \( O(n) \), not \( O(n \log n) \) â€” a common misconception. Only the extraction phase is \( O(n \log n) \).
 
 #### Edge Cases
 
@@ -664,7 +664,7 @@ public class HeapSort {
 |------------|----------|
 | **Empty array** | No operations; returns immediately. |
 | **Single element** | Already a heap; no operations needed. |
-| **Already sorted (ascending)** | Builds heap in \( O(n) \), then extractions proceed — still \( O(n \log n) \). |
+| **Already sorted (ascending)** | Builds heap in \( O(n) \), then extractions proceed â€” still \( O(n \log n) \). |
 | **Reverse sorted** | Best-case for heap building (already a valid heap), but extraction still takes \( O(n \log n) \). |
 | **All duplicates** | Sift-down comparisons find no larger child; minimal swaps. |
 
@@ -672,9 +672,9 @@ public class HeapSort {
 
 | Advantages | Disadvantages |
 |-----------|--------------|
-| Guaranteed \( O(n \log n) \) in all cases | **Not stable** — equal elements can be reordered |
-| **In-place** — uses \( O(1) \) extra space | Constant factor is higher than quick sort (≈2-3× slower) |
-| No worst-case input (unlike quick sort) | Poor cache locality — jumps across array indices |
+| Guaranteed \( O(n \log n) \) in all cases | **Not stable** â€” equal elements can be reordered |
+| **In-place** â€” uses \( O(1) \) extra space | Constant factor is higher than quick sort (â‰ˆ2-3Ã— slower) |
+| No worst-case input (unlike quick sort) | Poor cache locality â€” jumps across array indices |
 | Excellent for **real-time systems** | Cannot exploit partially sorted data |
 | Simple to implement iteratively | Not suitable for linked lists (requires random access) |
 
@@ -688,7 +688,7 @@ public class HeapSort {
 
 | Property | Merge Sort | Quick Sort | Heap Sort |
 |----------|-----------|-----------|-----------|
-| **Stable** | Yes ✅ | No ❌ | No ❌ |
+| **Stable** | Yes âœ… | No âŒ | No âŒ |
 | **In-Place** | No (needs \( O(n) \)) | Yes (\( O(\log n) \) stack) | Yes (\( O(1) \)) |
 | **Best Case** | \( O(n \log n) \) | \( O(n \log n) \) | \( O(n \log n) \) |
 | **Average Case** | \( O(n \log n) \) | \( O(n \log n) \) | \( O(n \log n) \) |
@@ -708,15 +708,15 @@ public class HeapSort {
 
 **Lomuto Partition** (simpler, fewer swaps):
 - Pivot = `A[high]`.
-- Single scan: `i` tracks boundary of elements ≤ pivot.
+- Single scan: `i` tracks boundary of elements â‰¤ pivot.
 - **Weakness:** Degrades on all-duplicates (all equal elements produce worst-case split).
 - Used in most textbooks for clarity.
 
 **Hoare Partition** (more efficient, more swaps):
 - Pivot = `A[low]`.
 - Two pointers scan from both ends toward the middle.
-- **Strength:** Performs 3× fewer swaps on average. Handles duplicates well.
-- **Weakness:** Pivot not in final position after partition — need to recurse on both halves.
+- **Strength:** Performs 3Ã— fewer swaps on average. Handles duplicates well.
+- **Weakness:** Pivot not in final position after partition â€” need to recurse on both halves.
 
 ```cpp
 int hoarePartition(std::vector<int>& A, int low, int high) {
@@ -837,7 +837,7 @@ long long mergeAndCount(std::vector<int>& A, int low, int mid, int high) {
 |--------|----------------------|------|
 | **Python** (`list.sort()`) | **Timsort** (hybrid merge + insertion sort) | Adaptive: \( O(n) \) on nearly-sorted data, stable. |
 | **Java** (`Arrays.sort()`) | **Dual-Pivot QuickSort** (objects & primitives) | Faster than single-pivot: ~20% fewer comparisons. |
-| **C++** (`std::sort()`) | **Introsort** (quick sort → heap sort → insertion sort) | Detects pathological cases and switches to heap sort. |
+| **C++** (`std::sort()`) | **Introsort** (quick sort â†’ heap sort â†’ insertion sort) | Detects pathological cases and switches to heap sort. |
 | **Rust** (`slice::sort()`) | **Adaptive merge sort (TimSort derivative)** | Stable, adaptive, \( O(n) \) on pre-sorted data. |
 | **Go** (`sort.Slice()`) | **Pattern-defeating QuickSort (pdqsort)** | Branching-optimized; handles sorted/reverse sorted in \( O(n) \). |
 | **JavaScript** (`Array.sort()`) | **Timsort** (V8) / **Introsort** (SpiderMonkey) | Stable since ES2019; adaptive with fallback strategies. |
@@ -846,7 +846,7 @@ long long mergeAndCount(std::vector<int>& A, int low, int mid, int high) {
 | **PostgreSQL** | **Quick sort / Heap sort / Merge sort** | Adaptive: chooses based on cost estimates and memory budget. |
 | **.NET** (`Array.Sort()`) | **Introsort** (up to .NET 4.5), **Timsort** (.NET Core 2.1+) | Improved stability and adaptivity in modern versions. |
 
-> **Pro Tip:** If you are implementing a sort in production, do not write your own — use the language's built-in sort. It is likely an adaptive hybrid that has been battle-tested on billions of inputs.
+> **Pro Tip:** If you are implementing a sort in production, do not write your own â€” use the language's built-in sort. It is likely an adaptive hybrid that has been battle-tested on billions of inputs.
 
 ---
 
@@ -876,10 +876,10 @@ long long mergeAndCount(std::vector<int>& A, int low, int mid, int high) {
 
 | Technique | DSA Interviews | Competitive Programming | System Design | Academia/Research |
 |-----------|---------------|----------------------|---------------|-------------------|
-| Merge Sort | Frequently — merge K sorted lists, inversion count | Used in divide-and-conquer problems | External sort, distributed sort (MapReduce) | Optimal comparison sort proof |
+| Merge Sort | Frequently â€” merge K sorted lists, inversion count | Used in divide-and-conquer problems | External sort, distributed sort (MapReduce) | Optimal comparison sort proof |
 | Quick Sort | Partition logic, quickselect, nth element | Most common sort for CP | In-memory database sorting | Randomized analysis |
 | Heap Sort | K largest/smallest, priority queue use | Heap problems, median maintenance | Real-time system guarantees | Priority queue theory |
-| Lower Bound | Occasionally — prove optimality | Choosing non-comparison sort | Choosing database sort algorithm | Computational complexity |
+| Lower Bound | Occasionally â€” prove optimality | Choosing non-comparison sort | Choosing database sort algorithm | Computational complexity |
 
 ---
 
@@ -922,7 +922,7 @@ C) Heap sort. Merge sort uses \( O(n) \) space, quick sort uses \( O(\log n) \) 
 
 <details>
 <summary>Answer&lt;/summary&gt;
-B) \( \Omega(n \log n) \) — proven by the decision tree model: there are \( n! \) permutations and a binary tree of height \( h \) has at most \( 2^h \) leaves.
+B) \( \Omega(n \log n) \) â€” proven by the decision tree model: there are \( n! \) permutations and a binary tree of height \( h \) has at most \( 2^h \) leaves.
 </details>
 
 **Q3.** Which pivot selection strategy avoids the \( O(n^2) \) worst case for quick sort on sorted input?

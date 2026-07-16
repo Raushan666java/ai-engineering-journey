@@ -1,6 +1,6 @@
-# Chapter 7: Dynamic Programming — Foundations
+﻿# Chapter 7: Dynamic Programming â€” Foundations
 
-> **Prerequisites:** [Chapter 6: Greedy Algorithms](./06-greedy.md) — Understanding when local choices aren't enough | **Next:** [Chapter 8: Dynamic Programming — Knapsack Problems](./08-dp-knapsack.md) — Classic DP patterns for resource allocation
+> **Prerequisites:** [Chapter 6: Greedy Algorithms](./06-greedy.md) â€” Understanding when local choices aren't enough | **Next:** [Chapter 8: Dynamic Programming â€” Knapsack Problems](./08-dp-knapsack.md) â€” Classic DP patterns for resource allocation
 
 ## Learning Objectives
 
@@ -9,16 +9,16 @@ By the end of this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/algorithms/07-dp-intro/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/algorithms/07-dp-intro/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/algorithms/07-dp-intro/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/algorithms/07-dp-intro/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/algorithms/07-dp-intro/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/algorithms/07-dp-intro/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/algorithms/07-dp-intro/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/algorithms/07-dp-intro/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/algorithms/07-dp-intro/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/algorithms/07-dp-intro/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/algorithms/07-dp-intro/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/algorithms/07-dp-intro/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -36,9 +36,9 @@ By the end of this chapter, students will be able to:
 
 ## Why Dynamic Programming Matters
 
-**Real-world analogy — GPS shortest path:** Imagine you need to drive from New York to Los Angeles. The naive approach enumerates every possible route — 2^(number of intersections) — which is computationally impossible. Instead, GPS systems use DP: the shortest path to Los Angeles through any city X is the shortest path to X plus the shortest path from X to LA. By caching the shortest path to every intermediate city, we avoid recomputing the same subpaths thousands of times. This is *exactly* how DP works — break a problem into overlapping pieces, solve each once, and reuse.
+**Real-world analogy â€” GPS shortest path:** Imagine you need to drive from New York to Los Angeles. The naive approach enumerates every possible route â€” 2^(number of intersections) â€” which is computationally impossible. Instead, GPS systems use DP: the shortest path to Los Angeles through any city X is the shortest path to X plus the shortest path from X to LA. By caching the shortest path to every intermediate city, we avoid recomputing the same subpaths thousands of times. This is *exactly* how DP works â€” break a problem into overlapping pieces, solve each once, and reuse.
 
-Contrast this with **Fibonacci**: while it demonstrates DP's mechanics beautifully, it is not a real-world problem. Nobody computes Fibonacci numbers for a living. But shortest paths, sequence alignment, resource allocation, and inventory optimization are DP — and they run billions of times daily in Google Maps, BLAST, AWS EC2 Auto Scaling, and SAP systems. DP turns exponential-time pipe dreams into polynomial-time production systems.
+Contrast this with **Fibonacci**: while it demonstrates DP's mechanics beautifully, it is not a real-world problem. Nobody computes Fibonacci numbers for a living. But shortest paths, sequence alignment, resource allocation, and inventory optimization are DP â€” and they run billions of times daily in Google Maps, BLAST, AWS EC2 Auto Scaling, and SAP systems. DP turns exponential-time pipe dreams into polynomial-time production systems.
 
 ---
 
@@ -80,7 +80,7 @@ flowchart LR
 ### 7.1 The Dynamic Programming Paradigm
 
 
-Dynamic programming (DP) is a method for solving complex problems by breaking them down into simpler subproblems, solving each subproblem once, and storing the results for reuse. It was pioneered by Richard Bellman in the 1950s — the name "dynamic programming" was chosen to hide the mathematical nature from his skeptical Pentagon boss.
+Dynamic programming (DP) is a method for solving complex problems by breaking them down into simpler subproblems, solving each subproblem once, and storing the results for reuse. It was pioneered by Richard Bellman in the 1950s â€” the name "dynamic programming" was chosen to hide the mathematical nature from his skeptical Pentagon boss.
 
 DP applies when a problem exhibits two properties:
 
@@ -91,16 +91,16 @@ An optimal solution to the problem contains optimal solutions to its subproblems
 | Scenario | Has Optimal Substructure? | Why |
 |----------|--------------------------|-----|
 | Shortest path | Yes | Subpath of shortest path is shortest between its endpoints |
-| Longest path (general graph) | No | Subpath of longest path may not be longest — cycles make it NP-hard |
+| Longest path (general graph) | No | Subpath of longest path may not be longest â€” cycles make it NP-hard |
 | Merge sort | Yes | Sorting halves correctly gives sorted whole |
 | Binary search | Yes | Searching in correct half guarantees result |
 | Matrix chain multiplication | Yes | Optimal parenthesization contains optimal sub-chains |
 
-> **Warning:** Greedy algorithms also require optimal substructure but add the "greedy-choice property" — that a local choice is globally optimal. DP never assumes this; it explores all choices.
+> **Warning:** Greedy algorithms also require optimal substructure but add the "greedy-choice property" â€” that a local choice is globally optimal. DP never assumes this; it explores all choices.
 
 **2. Overlapping Subproblems**
 
-The same subproblems recur multiple times, and the total number of distinct subproblems is polynomial. This is what makes DP worthwhile — without overlap, you just have divide-and-conquer (like merge sort, which splits into non-overlapping halves).
+The same subproblems recur multiple times, and the total number of distinct subproblems is polynomial. This is what makes DP worthwhile â€” without overlap, you just have divide-and-conquer (like merge sort, which splits into non-overlapping halves).
 
 | Problem | Subproblems Overlap? | Distinct Subproblems | Total Calls (Naive) |
 |---------|---------------------|---------------------|-------------------|
@@ -128,7 +128,7 @@ The same subproblems recur multiple times, and the total number of distinct subp
 ### 7.2 Fibonacci Numbers
 
 
-**Real-world analogy — rabbit population growth:** The Fibonacci sequence originally modeled idealized rabbit reproduction: each pair matures in one month, then produces one pair per month forever. While biologically simplified, the same recurrence appears in stock option pricing (binomial trees), computer science (AVL tree height analysis, Fibonacci heap operations), and even nature (phyllotaxis, nautilus shells). The real lesson: recurrences that branch into overlapping subproblems are everywhere.
+**Real-world analogy â€” rabbit population growth:** The Fibonacci sequence originally modeled idealized rabbit reproduction: each pair matures in one month, then produces one pair per month forever. While biologically simplified, the same recurrence appears in stock option pricing (binomial trees), computer science (AVL tree height analysis, Fibonacci heap operations), and even nature (phyllotaxis, nautilus shells). The real lesson: recurrences that branch into overlapping subproblems are everywhere.
 
 **Problem:** Compute F(n) where F(0) = 0, F(1) = 1, and F(n) = F(n-1) + F(n-2) for n >= 2.
 
@@ -139,7 +139,7 @@ The same subproblems recur multiple times, and the total number of distinct subp
 3. **Recurrence:** F(n) = F(n-1) + F(n-2).
 4. **Store and return:** save computed result before returning.
 
-**Step-by-Step Dry Run — Memoization Trace for F(5)**
+**Step-by-Step Dry Run â€” Memoization Trace for F(5)**
 
 ```
 Call Tree:
@@ -176,7 +176,7 @@ Result: F(5) = 5.
 **Implementations**
 
 ```cpp
-// C++ — Memoization (Top-Down)
+// C++ â€” Memoization (Top-Down)
 #include <vector>
 int fibMemo(int n, std::vector<int>& memo) {
     if (n <= 1) return n;
@@ -191,7 +191,7 @@ int fib(int n) {
 ```
 
 ```cpp
-// C++ — Tabulation (Bottom-Up) O(1) Space
+// C++ â€” Tabulation (Bottom-Up) O(1) Space
 int fib(int n) {
     if (n <= 1) return n;
     int prev2 = 0, prev1 = 1;
@@ -205,7 +205,7 @@ int fib(int n) {
 ```
 
 ```python
-# Python — Memoization
+# Python â€” Memoization
 def fib_memo(n: int, memo: list = None) -> int:
     if memo is None:
         memo = [-1] * (n + 1)
@@ -216,7 +216,7 @@ def fib_memo(n: int, memo: list = None) -> int:
     memo[n] = fib_memo(n-1, memo) + fib_memo(n-2, memo)
     return memo[n]
 
-# Python — Tabulation O(1) Space
+# Python â€” Tabulation O(1) Space
 def fib(n: int) -> int:
     if n <= 1:
         return n
@@ -227,7 +227,7 @@ def fib(n: int) -> int:
 ```
 
 ```java
-// Java — Memoization
+// Java â€” Memoization
 class Solution {
     int fibMemo(int n, int[] memo) {
         if (n <= 1) return n;
@@ -242,7 +242,7 @@ class Solution {
     }
 }
 
-// Java — Tabulation O(1) Space
+// Java â€” Tabulation O(1) Space
 int fib(int n) {
     if (n <= 1) return n;
     int prev2 = 0, prev1 = 1;
@@ -264,11 +264,11 @@ int fib(int n) {
 | Tabulation (array) | O(n) | O(n) | O(1) |
 | Tabulation (space-optimized) | O(n) | O(1) | O(1) |
 
-**Space Optimization Discussion:** Fibonacci only ever needs the previous two values. This is the simplest example of state compression — noticing that dp[i] depends only on dp[i-1] and dp[i-2], so we can drop the full array. This pattern generalizes: whenever dp[i] depends on a fixed window of previous k states, we can reduce space from O(n) to O(k). More broadly, this is the first hint at **rolling array** optimization.
+**Space Optimization Discussion:** Fibonacci only ever needs the previous two values. This is the simplest example of state compression â€” noticing that dp[i] depends only on dp[i-1] and dp[i-2], so we can drop the full array. This pattern generalizes: whenever dp[i] depends on a fixed window of previous k states, we can reduce space from O(n) to O(k). More broadly, this is the first hint at **rolling array** optimization.
 
-> **Pro Tip:** Fibonacci is the simplest example of DP's power — naive recursion is exponential (O(phi^n)), while DP is linear (O(n)). Always draw the recursion tree to check if subproblems overlap.
+> **Pro Tip:** Fibonacci is the simplest example of DP's power â€” naive recursion is exponential (O(phi^n)), while DP is linear (O(n)). Always draw the recursion tree to check if subproblems overlap.
 >
-> **Warning:** The naive recursive Fibonacci is a classic interview trap — never implement it without memoization.
+> **Warning:** The naive recursive Fibonacci is a classic interview trap â€” never implement it without memoization.
 
 **One-Sentence Takeaway:** Fibonacci numbers demonstrate DP's transformative power, dropping from exponential to linear time by caching overlapping subproblem results.
 
@@ -277,7 +277,7 @@ int fib(int n) {
 ### 7.3 Rod Cutting
 
 
-**Real-world analogy — lumber mill optimization:** A lumber mill receives logs of fixed length 10 meters. Customers want rods of lengths 1–10 meters at known prices. Should they sell one 10m rod? Cut into 4m + 6m? 3m + 3m + 4m? Each cut reduces total usable wood (kerf loss), and different markets value different lengths differently. The mill must compute optimal cutting patterns to maximize revenue. This is rod cutting — every sawmill, paper mill, and metal fabrication plant solves this exact problem.
+**Real-world analogy â€” lumber mill optimization:** A lumber mill receives logs of fixed length 10 meters. Customers want rods of lengths 1â€“10 meters at known prices. Should they sell one 10m rod? Cut into 4m + 6m? 3m + 3m + 4m? Each cut reduces total usable wood (kerf loss), and different markets value different lengths differently. The mill must compute optimal cutting patterns to maximize revenue. This is rod cutting â€” every sawmill, paper mill, and metal fabrication plant solves this exact problem.
 
 **Problem:** Given a rod of length `n` and a price function `p[i]` for rods of length `i`, determine the maximum revenue obtainable by cutting the rod and selling the pieces.
 
@@ -300,7 +300,7 @@ with base case `r[0] = 0`.
 3. **Return** `r[n]`.
 4. **(Reconstruction):** Track `s[j]` = optimal first cut for each length; backtrack.
 
-**Step-by-Step Dry Run — DP Table Trace**
+**Step-by-Step Dry Run â€” DP Table Trace**
 
 Price table: `p = [0, 1, 5, 8, 9, 10, 17, 17, 20]`, `n = 8`
 
@@ -348,14 +348,14 @@ j=8:  cut 1: p[1] + r[7] = 1 + 18 = 19
 | j | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
 |---|----|----|----|----|----|----|----|----|
 | r[j] | 0 | 1 | 5 | 8 | 10 | 13 | 17 | 18 | 22 |
-| s[j] | — | 1 | 2 | 3 | 2 | 2 | 6 | 1 | 2 |
+| s[j] | â€” | 1 | 2 | 3 | 2 | 2 | 6 | 1 | 2 |
 
 **Reconstruction:** For n=8, s[8]=2. Cut a piece of length 2, remaining 6. s[6]=6. Cut 6, remaining 0. Cuts: [2, 6]. Revenue: p[2] + p[6] = 5 + 17 = 22.
 
 **Implementations**
 
 ```cpp
-// C++ — Rod Cutting with Reconstruction
+// C++ â€” Rod Cutting with Reconstruction
 #include <vector>
 #include <algorithm>
 
@@ -391,7 +391,7 @@ RodSolution rodCutting(const std::vector<int>& price, int n) {
 ```
 
 ```python
-# Python — Rod Cutting with Reconstruction
+# Python â€” Rod Cutting with Reconstruction
 def rod_cutting(price: list, n: int) -> tuple:
     r = [0] * (n + 1)
     s = [0] * (n + 1)
@@ -420,7 +420,7 @@ print(f"Max revenue: {max_rev}, Cuts: {cuts}")  # 22, [2, 6]
 ```
 
 ```java
-// Java — Rod Cutting with Reconstruction
+// Java â€” Rod Cutting with Reconstruction
 import java.util.*;
 
 class RodSolution {
@@ -475,9 +475,9 @@ class RodCutting {
 | Tabulation (basic) | O(n^2) | O(n) | Double loop over lengths and cuts |
 | Tabulation (optimized) | Theta(n^2) | O(n) | Cannot improve beyond quadratic input/output |
 
-**Space Optimization Discussion:** Rod cutting's DP depends on all smaller subproblems (r[j] uses r[j-i] for any i), so the full array is necessary — O(1) space is impossible. However, if we only need the maximum value (not the cuts), the reconstruction array `s[]` can be omitted, still O(n) for `r[]`.
+**Space Optimization Discussion:** Rod cutting's DP depends on all smaller subproblems (r[j] uses r[j-i] for any i), so the full array is necessary â€” O(1) space is impossible. However, if we only need the maximum value (not the cuts), the reconstruction array `s[]` can be omitted, still O(n) for `r[]`.
 
-> **Pro Tip:** Rod cutting introduces the critical DP step of reconstruction — storing decisions alongside optimal values. Always implement reconstruction if the problem asks for the actual solution, not just the value.
+> **Pro Tip:** Rod cutting introduces the critical DP step of reconstruction â€” storing decisions alongside optimal values. Always implement reconstruction if the problem asks for the actual solution, not just the value.
 >
 > **Remember:** The four-step DP framework (structure, recurse, compute, reconstruct) applies to every DP problem.
 
@@ -510,7 +510,7 @@ Does the problem ask for maximum, minimum, longest, shortest, or number of ways?
 Is the solution built from a sequence of decisions? Each choice leads to a subproblem of the same type.
 
 **Step 3: Does the choice affect future choices?**
-If choosing A vs B at step 1 changes what's available at step 2, greedy might fail — and DP might be needed.
+If choosing A vs B at step 1 changes what's available at step 2, greedy might fail â€” and DP might be needed.
 
 **Step 4: Can you find overlapping subproblems?**
 Draw the recursion tree for a small input. Do the same subproblems appear in multiple branches? If yes, memoization will help.
@@ -522,13 +522,13 @@ A state `dp[i]`, `dp[i][j]`, or `dp[i][j][k]` must capture everything needed to 
 
 | Pattern | State | Classic Problems |
 |---------|-------|-----------------|
-| 1D DP | dp[i] — best for first i items | Fibonacci, rod cutting, climbing stairs |
-| 2D DP (two sequences) | dp[i][j] — prefixes of two strings | LCS, edit distance |
-| 2D DP (knapsack) | dp[i][c] — first i items with capacity c | 0/1 Knapsack, subset sum |
-| Interval DP | dp[i][j] — substring i..j | Matrix chain multiplication, palindrome partitioning |
-| Tree DP | dp[node] — subtree rooted at node | Diameter of tree, max independent set |
-| Bitmask DP | dp[mask] — subset represented as bitmask | Traveling salesman, assignment |
-| DP on Grid | dp[i][j] — cell (i, j) in grid | Minimum path sum, unique paths |
+| 1D DP | dp[i] â€” best for first i items | Fibonacci, rod cutting, climbing stairs |
+| 2D DP (two sequences) | dp[i][j] â€” prefixes of two strings | LCS, edit distance |
+| 2D DP (knapsack) | dp[i][c] â€” first i items with capacity c | 0/1 Knapsack, subset sum |
+| Interval DP | dp[i][j] â€” substring i..j | Matrix chain multiplication, palindrome partitioning |
+| Tree DP | dp[node] â€” subtree rooted at node | Diameter of tree, max independent set |
+| Bitmask DP | dp[mask] â€” subset represented as bitmask | Traveling salesman, assignment |
+| DP on Grid | dp[i][j] â€” cell (i, j) in grid | Minimum path sum, unique paths |
 
 ### Common Decision Questions
 
@@ -537,7 +537,7 @@ A state `dp[i]`, `dp[i][j]`, or `dp[i][j][k]` must capture everything needed to 
 | Greedy, DP, or just recursion? | Greedy has greedy-choice property; DP has overlapping subproblems; recursion alone has neither |
 | Medium constraint -> DP? | If constraints are 10^2-10^3, DP array of size O(n) or O(n^2) is feasible |
 | Top-down or bottom-up? | Top-down for complex dependencies or sparse solves; bottom-up for dense, known order |
-| Can space be optimized? | Check dp[i]'s dependency window — only previous k states? O(1) possible |
+| Can space be optimized? | Check dp[i]'s dependency window â€” only previous k states? O(1) possible |
 
 ---
 
@@ -645,7 +645,7 @@ Maximum revenue for length 8: 22, cuts = [2, 6] (p[2]=5, p[6]=17, sum=22).
 | Shortest path (DAG) | Yes | Yes | Yes (Bellman-Ford) |
 | Longest increasing subsequence | Yes | Yes | Yes |
 
-### Example 7.4: DP vs Greedy — Activity Selection
+### Example 7.4: DP vs Greedy â€” Activity Selection
 
 | Aspect | Greedy | DP |
 |--------|--------|-----|
@@ -675,7 +675,7 @@ Maximum revenue for length 8: 22, cuts = [2, 6] (p[2]=5, p[6]=17, sum=22).
 |---------|-----|
 | Forgetting base cases | Always check n=0, n=1, empty input |
 | Wrong recurrence direction | Use small example to verify; trace by hand |
-| Off-by-one in array indices | DP[0] is base, DP[i] uses DP[i-1] — test with i=1 |
+| Off-by-one in array indices | DP[0] is base, DP[i] uses DP[i-1] â€” test with i=1 |
 | Not handling negative values | Initialize with -inf, not 0 |
 | Over-indexing | Allocate n+1, not n |
 | Ignoring reconstruction until end | Store decisions in companion array during compute phase |
@@ -706,17 +706,17 @@ Maximum revenue for length 8: 22, cuts = [2, 6] (p[2]=5, p[6]=17, sum=22).
 
 ## Applications in Real Systems
 
-### Bioinformatics — Sequence Alignment
+### Bioinformatics â€” Sequence Alignment
 
-The Smith-Waterman algorithm (local sequence alignment) is DP applied to DNA/protein sequences. Given two genetic sequences, it finds regions of similarity by filling a DP table where each cell represents the alignment score up to that position. BLAST, the most-cited bioinformatics tool ever, uses DP as its core engine. Every genome sequencing pipeline depends on DP for aligning reads to reference genomes — enabling personalized medicine, evolutionary biology, and COVID-19 variant tracking.
+The Smith-Waterman algorithm (local sequence alignment) is DP applied to DNA/protein sequences. Given two genetic sequences, it finds regions of similarity by filling a DP table where each cell represents the alignment score up to that position. BLAST, the most-cited bioinformatics tool ever, uses DP as its core engine. Every genome sequencing pipeline depends on DP for aligning reads to reference genomes â€” enabling personalized medicine, evolutionary biology, and COVID-19 variant tracking.
 
 ### Routing and Navigation
 
-GPS systems use Dijkstra's algorithm (which is DP — it relies on optimal substructure) and A* (which adds heuristics) to compute shortest paths. Google Maps processes over 40 billion kilometers of route computation daily. Without DP, routing at this scale would require supercomputers.
+GPS systems use Dijkstra's algorithm (which is DP â€” it relies on optimal substructure) and A* (which adds heuristics) to compute shortest paths. Google Maps processes over 40 billion kilometers of route computation daily. Without DP, routing at this scale would require supercomputers.
 
 ### Natural Language Processing
 
-**Viterbi algorithm** (DP) powers part-of-speech tagging: given a sequence of words, find the most likely sequence of tags (noun, verb, etc.). The recurrence `dp[i][tag] = max( dp[i-1][prev] + emission + transition )` is textbook DP. Similarly, the **CKY algorithm** (DP) underlies constituency parsing — how computers understand sentence structure.
+**Viterbi algorithm** (DP) powers part-of-speech tagging: given a sequence of words, find the most likely sequence of tags (noun, verb, etc.). The recurrence `dp[i][tag] = max( dp[i-1][prev] + emission + transition )` is textbook DP. Similarly, the **CKY algorithm** (DP) underlies constituency parsing â€” how computers understand sentence structure.
 
 ### Operations Research
 
@@ -732,7 +732,7 @@ GPS systems use Dijkstra's algorithm (which is DP — it relies on optimal subst
 
 | System | DP Component | Why It's DP |
 |--------|-------------|-------------|
-| CDN caching | Optimal cache replacement (Belady's) | Future-knowing optimal — theoretical upper bound |
+| CDN caching | Optimal cache replacement (Belady's) | Future-knowing optimal â€” theoretical upper bound |
 | Load balancer | Least-connections routing | Overlapping server state subproblems |
 | Rate limiter | Token bucket / sliding window | Stateful counting with overlapping time windows |
 | Database query optimizer | Join order selection | Matrix-chain multiplication pattern (interval DP) |
@@ -743,10 +743,10 @@ GPS systems use Dijkstra's algorithm (which is DP — it relies on optimal subst
 
 | Concept | Definition | Key Distinction | Use Case |
 |---------|-----------|-----------------|----------|
-| Optimal Substructure | Optimal solution from optimal sub-solutions | Shared with greedy — not unique to DP | All DP problems |
+| Optimal Substructure | Optimal solution from optimal sub-solutions | Shared with greedy â€” not unique to DP | All DP problems |
 | Overlapping Subproblems | Same subproblems recur | Distinguishes DP from divide-and-conquer | What makes DP necessary |
-| Memoization | Top-down recursion + caching | Lazy — only solves needed subproblems | When subproblem space is sparse |
-| Tabulation | Bottom-up iterative table | Eager — solves all subproblems | When all subproblems are needed |
+| Memoization | Top-down recursion + caching | Lazy â€” only solves needed subproblems | When subproblem space is sparse |
+| Tabulation | Bottom-up iterative table | Eager â€” solves all subproblems | When all subproblems are needed |
 | Reconstruction | Store decisions to recover solution | Separates value computation from solution building | Problems asking for actual solution |
 | State Compression | Reduce table to minimal window | Decreases space from O(n) to O(1) or O(k) | Fibonacci, house robber, grid DP row-by-row |
 
@@ -760,16 +760,16 @@ GPS systems use Dijkstra's algorithm (which is DP — it relies on optimal subst
 | **5-Step Decision Framework** | Optimization? Choices? Future affected? Overlap? State definable? |
 | **Complexity Pattern** | States x Transitions = O(number of subproblems x choices per problem) |
 | **Common Pitfall** | Using DP when subproblems don't overlap (just use recursion); forgetting base cases; off-by-one in indices |
-| **Space Optimization** | Check dependency window — rolling array for last k states |
+| **Space Optimization** | Check dependency window â€” rolling array for last k states |
 
 ### Cross-Application Matrix
 
 | Technique | DSA Interviews | Competitive Programming | System Design | Academia/Research |
 |-----------|---------------|----------------------|---------------|-------------------|
-| DP Paradigm | Extremely common — most important technique | Core technique for optimization | Resource allocation, routing | Algorithm design theory |
+| DP Paradigm | Extremely common â€” most important technique | Core technique for optimization | Resource allocation, routing | Algorithm design theory |
 | Memoization | Quick DP in interviews | Lazy DP for sparse states | Caching, query optimization | Computational complexity |
 | Tabulation | Preferred for efficiency | Standard CP DP approach | Table-driven automation | Formal verification |
-| Fibonacci DP | Trivial — warm-up | Matrix exponentiation variation | N/A | Recursion theory |
+| Fibonacci DP | Trivial â€” warm-up | Matrix exponentiation variation | N/A | Recursion theory |
 | Rod Cutting | Classic DP intro problem | Variations in cutting problems | Inventory optimization | Operations research |
 | DP Decision Framework | Systematic approach to unknown problems | Pattern recognition training | Architecture decisions | Curriculum design |
 | Sequence Alignment DP | LCS, edit distance | String DP variations | Diff tools, plagiarism detection | Bioinformatics |
@@ -806,12 +806,12 @@ B) Optimal substructure (optimal solution from optimal sub-solutions) and overla
 
 - A) O(n)
 - B) O(n^2)
-- C) O(phi^n) — exponential
+- C) O(phi^n) â€” exponential
 - D) O(log n)
 
 <details>
 <summary>Answer&lt;/summary&gt;
-C) O(phi^n) where phi approx 1.618 — each call spawns two recursive calls, leading to exponential growth.
+C) O(phi^n) where phi approx 1.618 â€” each call spawns two recursive calls, leading to exponential growth.
 </details>
 
 **Q3.** Which DP approach solves only the subproblems that are actually needed?
@@ -835,7 +835,7 @@ B) Memoization (top-down) only computes subproblems that are reached through rec
 
 <details>
 <summary>Answer&lt;/summary&gt;
-B) Merge sort's subproblems are disjoint (left half, right half) — they never overlap, so caching provides no benefit.
+B) Merge sort's subproblems are disjoint (left half, right half) â€” they never overlap, so caching provides no benefit.
 </details>
 
 **Q5.** What is the space-optimized Fibonacci implementation's space complexity?
@@ -847,7 +847,7 @@ B) Merge sort's subproblems are disjoint (left half, right half) — they never 
 
 <details>
 <summary>Answer&lt;/summary&gt;
-B) O(1) — since dp[i] depends only on dp[i-1] and dp[i-2], we only need two variables.
+B) O(1) â€” since dp[i] depends only on dp[i-1] and dp[i-2], we only need two variables.
 </details>
 
 ---
@@ -871,5 +871,5 @@ B) O(1) — since dp[i] depends only on dp[i-1] and dp[i-2], we only need two va
 ### Challenge Problems
 
 9. Generalize rod cutting to include a **cost per cut** c. Modify the recurrence and implement the solution. Analyze the complexity.
-10. **Can Rod Cutting be solved with O(1) space?** Prove or disprove — what about the problem's dependency structure prevents O(1) space optimization?
+10. **Can Rod Cutting be solved with O(1) space?** Prove or disprove â€” what about the problem's dependency structure prevents O(1) space optimization?
 11. **Identify the pattern:** For each of these problems, determine if DP applies and identify the state: (a) Minimum number of coins to make change, (b) Maximum subarray sum, (c) Tower of Hanoi, (d) Counting paths in a grid with obstacles.

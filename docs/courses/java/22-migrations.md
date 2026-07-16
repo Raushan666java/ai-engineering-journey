@@ -1,4 +1,4 @@
-> **Previous:** [Spring Data JPA](./21-spring-data-jpa.md) | **Next:** [NoSQL](./23-nosql.md)
+﻿> **Previous:** [Spring Data JPA](./21-spring-data-jpa.md) | **Next:** [NoSQL](./23-nosql.md)
 
 # Database Migrations (Flyway & Liquibase)
 
@@ -9,16 +9,16 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/22-migrations/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/22-migrations/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/22-migrations/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/22-migrations/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/22-migrations/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/22-migrations/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/22-migrations/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/22-migrations/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/22-migrations/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/22-migrations/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/22-migrations/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/22-migrations/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -1518,7 +1518,7 @@ src/main/resources/db/
 
 <details>
 <summary>Answer&lt;/summary&gt;
-**B) Create a new migration that repairs the state.** Never modify an existing migration → create a compensating migration that fixes the issue.
+**B) Create a new migration that repairs the state.** Never modify an existing migration â†’ create a compensating migration that fixes the issue.
 </details>
 
 ---

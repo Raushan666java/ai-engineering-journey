@@ -1,4 +1,4 @@
-# Chapter 7: Message Queues and Event-Driven Architecture
+﻿# Chapter 7: Message Queues and Event-Driven Architecture
 > **Previous:** [06 Distributed Consistency](./06-distributed-consistency.md) | **Next:** [08 Microservices Apis](./08-microservices-apis.md)
 
 ---
@@ -14,16 +14,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/system-design/07-message-queues/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/system-design/07-message-queues/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/system-design/07-message-queues/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/system-design/07-message-queues/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/system-design/07-message-queues/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/system-design/07-message-queues/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/system-design/07-message-queues/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/system-design/07-message-queues/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/system-design/07-message-queues/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/system-design/07-message-queues/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/system-design/07-message-queues/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/system-design/07-message-queues/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -84,7 +84,7 @@ Client ? ? ? ? 202 Accepted (immediate)
 
 | Aspect | Synchronous | Asynchronous |
 |---|---|---|
-| Coupling | Tight — caller knows callee's location | Loose — only the broker is known |
+| Coupling | Tight â€” caller knows callee's location | Loose â€” only the broker is known |
 | Latency | Sum of all service times | Just the publish latency |
 | Availability | Requires all services up | Degrades gracefully |
 | Error handling | Immediate failure notification | Needs retry/DLQ mechanisms |
@@ -98,7 +98,7 @@ Client ? ? ? ? 202 Accepted (immediate)
 
 > **Warning:** Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake.
 
-**Point-to-Point (Queue):** A message is consumed by exactly one consumer. Multiple consumers compete for messages — Kafka consumer groups implement this model.
+**Point-to-Point (Queue):** A message is consumed by exactly one consumer. Multiple consumers compete for messages â€” Kafka consumer groups implement this model.
 
 ```
 Producer ? [Queue] ? Consumer A (takes message)
@@ -132,7 +132,7 @@ Apache Kafka is a distributed event streaming platform organized as a commit log
 
 #### Topics and Partitions
 
-A **topic** is a logical channel for messages of a particular type. Each topic is divided into **partitions** — ordered, immutable sequences of messages.
+A **topic** is a logical channel for messages of a particular type. Each topic is divided into **partitions** â€” ordered, immutable sequences of messages.
 
 ```
 Topic "orders":
@@ -141,11 +141,11 @@ Topic "orders":
   Partition 2: [msg0, msg1, msg2, msg3, ...]
 ```
 
-Each message within a partition has a unique **offset** (sequential ID). Messages within a partition are strictly ordered — message at offset 10 was published before offset 11. There is no ordering guarantee across partitions.
+Each message within a partition has a unique **offset** (sequential ID). Messages within a partition are strictly ordered â€” message at offset 10 was published before offset 11. There is no ordering guarantee across partitions.
 
 **Partition assignment:** The producer chooses which partition to write to. Common strategies:
 - **Round-robin:** Even distribution, no ordering guarantee
-- **Key-based:** `partition_id = hash(key) % num_partitions` — ensures all messages with the same key go to the same partition (and thus are ordered)
+- **Key-based:** `partition_id = hash(key) % num_partitions` â€” ensures all messages with the same key go to the same partition (and thus are ordered)
 
 #### Consumer Groups
 
@@ -159,9 +159,9 @@ Topic with 4 partitions:
   Partition 3 ? Consumer A (balanced, A handles 2 partitions)
 ```
 
-If a consumer fails, its partitions are rebalanced to the remaining members. Rebalancing triggers a *stop-the-world* phase where no messages are consumed — this is the cost of the consumer group protocol.
+If a consumer fails, its partitions are rebalanced to the remaining members. Rebalancing triggers a *stop-the-world* phase where no messages are consumed â€” this is the cost of the consumer group protocol.
 
-**Offset management:** Each consumer group tracks its committed offset per partition — the position of the last processed message. When a consumer restarts, it resumes from the committed offset.
+**Offset management:** Each consumer group tracks its committed offset per partition â€” the position of the last processed message. When a consumer restarts, it resumes from the committed offset.
 
 ```
 Consumer group "order-processor", topic "orders", partition 0:
@@ -179,7 +179,7 @@ The ISR set contains all followers that are fully caught up with the leader. A f
 Partition with replication factor 3:
   Leader: Broker 0 (handles reads/writes)
   Follower: Broker 1 (in ISR)
-  Follower: Broker 2 (out of ISR — lagging by 45s ? removed from ISR)
+  Follower: Broker 2 (out of ISR â€” lagging by 45s ? removed from ISR)
 ```
 
 **`acks` producer setting:**
@@ -324,7 +324,7 @@ If consumer crashes before ack ? message is redelivered ? processed twice
 Messages are delivered exactly once, even in the presence of failures. This is the hardest guarantee to achieve in a distributed system.
 
 **Exactly-once in Kafka (EOS):**
-1. **Idempotent producer:** Each batch carries a unique producer ID (PID) and sequence number. The broker deduplicates based on this — if a batch is received twice with the same PID and sequence number, it is ignored.
+1. **Idempotent producer:** Each batch carries a unique producer ID (PID) and sequence number. The broker deduplicates based on this â€” if a batch is received twice with the same PID and sequence number, it is ignored.
 
 2. **Transactional writes:** The producer wraps multiple messages into a transaction. All messages in the transaction become visible atomically. The broker writes a *commit marker* to the log.
 
@@ -471,7 +471,7 @@ MySQL ? Debezium ? Kafka Topic "db.orders.orders"
 ### Backpressure
 
 
-Backpressure occurs when a consumer cannot process messages as fast as the producer publishes them. Without backpressure, the system degrades — queues grow unbounded, memory fills, and latency increases.
+Backpressure occurs when a consumer cannot process messages as fast as the producer publishes them. Without backpressure, the system degrades â€” queues grow unbounded, memory fills, and latency increases.
 
 **Strategies:**
 
@@ -484,7 +484,7 @@ Backpressure occurs when a consumer cannot process messages as fast as the produ
 4. **Reactive streams (Reactive Manifesto):** Protocol-level backpressure (e.g., RSocket, ReactiveX). The consumer tells the producer exactly how many more items it can handle.
 
 ```java
-// ReactiveX example — backpressure via request(n)
+// ReactiveX example â€” backpressure via request(n)
 Observable.range(1, 1000)
     .subscribe(new Subscriber<Integer>() {
         @Override
@@ -500,7 +500,7 @@ Observable.range(1, 1000)
     });
 ```
 
-**Kafka backpressure:** Kafka handles backpressure through consumer polling. The consumer calls `poll(maxRecords)` — the broker sends at most `maxRecords` messages. The consumer controls the rate. If the consumer falls behind, messages accumulate on the broker (retained for `retention.ms`). This provides natural backpressure — the consumer processes at its own speed.
+**Kafka backpressure:** Kafka handles backpressure through consumer polling. The consumer calls `poll(maxRecords)` â€” the broker sends at most `maxRecords` messages. The consumer controls the rate. If the consumer falls behind, messages accumulate on the broker (retained for `retention.ms`). This provides natural backpressure â€” the consumer processes at its own speed.
 
 ### Priority Queues
 
@@ -705,7 +705,7 @@ sequenceDiagram
 | 2 | In Kafka, what does the `acks=all` producer setting guarantee? | A) Fire-and-forget, B) Leader acknowledges after writing to its log, C) Leader waits for all ISR replicas to acknowledge, D) No acknowledgment | C) Leader waits for all ISR replicas to acknowledge |
 | 3 | Which RabbitMQ exchange type broadcasts messages to all bound queues ignoring the routing key? | A) Direct, B) Topic, C) Fanout, D) Headers | C) Fanout |
 | 4 | What problem does the transactional outbox pattern solve? | A) Message ordering, B) The dual-write problem of atomically writing to DB and publishing to queue, C) Consumer group rebalancing, D) Partition assignment | B) The dual-write problem of atomically writing to DB and publishing to queue |
-| 5 | What is the primary advantage of Kafka's pull-based consumption model? | A) Lower latency, B) Natural backpressure — the consumer controls the rate, C) Simpler broker implementation, D) Exactly-once delivery | B) Natural backpressure — the consumer controls the rate |
+| 5 | What is the primary advantage of Kafka's pull-based consumption model? | A) Lower latency, B) Natural backpressure â€” the consumer controls the rate, C) Simpler broker implementation, D) Exactly-once delivery | B) Natural backpressure â€” the consumer controls the rate |
 
 ---
 
@@ -1120,9 +1120,9 @@ graph TD
 
 **E-Commerce Order Processing Pipeline**
 
-A large e-commerce platform processes 50,000 orders per day. Each order triggers inventory checks, payment processing, shipping label generation, email notifications, and analytics events. The initial architecture used synchronous HTTP calls between services — when the inventory service slowed down during a flash sale, the entire order pipeline stalled, causing 30-second response times and checkout failures.
+A large e-commerce platform processes 50,000 orders per day. Each order triggers inventory checks, payment processing, shipping label generation, email notifications, and analytics events. The initial architecture used synchronous HTTP calls between services â€” when the inventory service slowed down during a flash sale, the entire order pipeline stalled, causing 30-second response times and checkout failures.
 
-The team migrated to an event-driven architecture using Kafka. The Order Service writes events to a partitioned `orders` topic. Downstream services (Inventory, Payment, Shipping, Notification, Analytics) each run as independent consumer groups with their own offsets. The Inventory Service uses a key-based partition strategy (`order_id % 50`) to ensure all events for a single order reach the same partition, preserving ordering. During flash sales, the pipeline processes 5,000 orders/minute sustained with p99 latency under 200ms — a 150x improvement over the synchronous approach.
+The team migrated to an event-driven architecture using Kafka. The Order Service writes events to a partitioned `orders` topic. Downstream services (Inventory, Payment, Shipping, Notification, Analytics) each run as independent consumer groups with their own offsets. The Inventory Service uses a key-based partition strategy (`order_id % 50`) to ensure all events for a single order reach the same partition, preserving ordering. During flash sales, the pipeline processes 5,000 orders/minute sustained with p99 latency under 200ms â€” a 150x improvement over the synchronous approach.
 
 A critical incident occurred when a malformed payload caused the Payment Service consumer to crash-loop. Without a DLQ, the consumer would have replayed the same poison message indefinitely. The team deployed a DeadLetterQueue with a retry policy (3 retries with exponential backoff) that routed the failing message to a `orders-dlq` topic after exhausting retries. An alert on DLQ depth (threshold: 100 messages) notified the on-call engineer within 2 minutes. The payload was fixed, and the DLQ was replayed using offset-based reprocessing, resulting in zero data loss.
 
@@ -1135,7 +1135,7 @@ A critical incident occurred when a malformed payload caused the Payment Service
 - Dead-letter queues provide a safety net for messages that cannot be processed, enabling redrive after issue resolution
 - Event sourcing stores all state changes as an ordered event sequence, enabling complete audit trails, temporal queries, and multiple projections from the same event stream
 - Change data capture with Debezium bridges databases and event streams without application-level code changes
-- Backpressure must be explicitly managed — Kafka's consumer pull model provides natural rate limiting, while reactive streams implement protocol-level demand signaling
+- Backpressure must be explicitly managed â€” Kafka's consumer pull model provides natural rate limiting, while reactive streams implement protocol-level demand signaling
 - Priority queues enable time-critical processing by draining higher-priority messages first
 - The transactional outbox pattern solves the dual-write problem by atomically writing events alongside business data in the same transaction
 
@@ -1146,17 +1146,17 @@ A critical incident occurred when a malformed payload caused the Payment Service
 
 <details>
 <summary>Solution for Review Question 1</summary>
-**Kafka consumer groups** assign partitions to consumers within a group — each partition is assigned to exactly one consumer. On failure, the group rebalances: partitions of the failed consumer are reassigned to remaining members (stop-the-world phase). **RabbitMQ competing consumers** all pull from the same queue — the broker delivers each message to exactly one consumer. On failure, unacknowledged messages are requeued and delivered to another consumer. Kafka's approach provides ordering within a partition; RabbitMQ's approach is simpler but provides no ordering guarantees across messages.
+**Kafka consumer groups** assign partitions to consumers within a group â€” each partition is assigned to exactly one consumer. On failure, the group rebalances: partitions of the failed consumer are reassigned to remaining members (stop-the-world phase). **RabbitMQ competing consumers** all pull from the same queue â€” the broker delivers each message to exactly one consumer. On failure, unacknowledged messages are requeued and delivered to another consumer. Kafka's approach provides ordering within a partition; RabbitMQ's approach is simpler but provides no ordering guarantees across messages.
 </details>
 
 <details>
 <summary>Solution for Review Question 2</summary>
-With `acks=1`, the message acknowledged by the leader is lost permanently if the leader crashes before replication and never recovers — the message existed only on that leader. With `acks=all`, the leader waits for all ISR replicas to acknowledge; the message survives on the replicas even if the original leader fails. In the scenario described, `acks=all` ensures the data is replicated to at least one follower before acknowledgment.
+With `acks=1`, the message acknowledged by the leader is lost permanently if the leader crashes before replication and never recovers â€” the message existed only on that leader. With `acks=all`, the leader waits for all ISR replicas to acknowledge; the message survives on the replicas even if the original leader fails. In the scenario described, `acks=all` ensures the data is replicated to at least one follower before acknowledgment.
 </details>
 
 <details>
 <summary>Solution for Review Question 3</summary>
-The dual-write problem occurs when a service writes to a database and then publishes a message to Kafka — if one operation succeeds and the other fails, the system is inconsistent. The transactional outbox pattern solves this by writing the event to an `outbox` table in the same database transaction as the business data. A separate process (CDC or poller) reads from the outbox and publishes to Kafka. If the outbox publisher crashes mid-publish, the unprocessed outbox rows remain and are picked up on restart (at-least-once delivery). The consumer must be idempotent to handle duplicate deliveries.
+The dual-write problem occurs when a service writes to a database and then publishes a message to Kafka â€” if one operation succeeds and the other fails, the system is inconsistent. The transactional outbox pattern solves this by writing the event to an `outbox` table in the same database transaction as the business data. A separate process (CDC or poller) reads from the outbox and publishes to Kafka. If the outbox publisher crashes mid-publish, the unprocessed outbox rows remain and are picked up on restart (at-least-once delivery). The consumer must be idempotent to handle duplicate deliveries.
 </details>
 
 <details>
@@ -1173,7 +1173,7 @@ Exactly-once delivery between Kafka and an external database is impossible witho
 
 <details>
 <summary>Solution for Application Problem 2: DLQ Redrive Strategy</summary>
-To process 540,000 DLQ messages without overwhelming: (a) Use a rate-limited consumer that processes 100 msg/sec with a sliding window, gradually increasing to 500 msg/sec as the system stabilizes. (b) Preserve original ordering by replaying within each partition — process all messages from partition 0 first, then partition 1, etc. Use `kafka-consumer-groups --reset-offsets --to-earliest` on the DLQ topic per partition. (c) Prevent duplicates by using idempotency keys: store processed notification IDs in a Redis set with 24h TTL. Producer config: `enable.idempotence=true`, `acks=all`, `retries=5`. Consumer config: `isolation.level=read_committed`, `auto.offset.reset=earliest`.
+To process 540,000 DLQ messages without overwhelming: (a) Use a rate-limited consumer that processes 100 msg/sec with a sliding window, gradually increasing to 500 msg/sec as the system stabilizes. (b) Preserve original ordering by replaying within each partition â€” process all messages from partition 0 first, then partition 1, etc. Use `kafka-consumer-groups --reset-offsets --to-earliest` on the DLQ topic per partition. (c) Prevent duplicates by using idempotency keys: store processed notification IDs in a Redis set with 24h TTL. Producer config: `enable.idempotence=true`, `acks=all`, `retries=5`. Consumer config: `isolation.level=read_committed`, `auto.offset.reset=earliest`.
 </details>
 
 <details>

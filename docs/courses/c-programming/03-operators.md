@@ -1,4 +1,4 @@
-# Chapter 3: Operators in C --- In-Depth Reference
+﻿# Chapter 3: Operators in C --- In-Depth Reference
 
 > **Previous:** [Introduction to C](./01-introduction.md) | **Next:** [Control Flow](./04-control-flow.md)
 
@@ -14,16 +14,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/03-operators/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/c-programming/03-operators/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/03-operators/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/c-programming/03-operators/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/03-operators/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/c-programming/03-operators/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/03-operators/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/c-programming/03-operators/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/03-operators/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/c-programming/03-operators/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/03-operators/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/c-programming/03-operators/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>

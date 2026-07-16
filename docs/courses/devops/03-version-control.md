@@ -1,4 +1,4 @@
-# Chapter 3: Version Control
+﻿# Chapter 3: Version Control
 
 > **Prev:** [Advanced Git](./02-git.md)
 > **Next:** [Build Tools](./03-build-tools.md)
@@ -17,16 +17,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/03-version-control/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/03-version-control/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/03-version-control/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/03-version-control/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/03-version-control/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/03-version-control/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/03-version-control/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/03-version-control/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/03-version-control/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/03-version-control/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/03-version-control/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/03-version-control/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -348,11 +348,11 @@ docker push myapp:$VERSION
 
 Effective code review in version control:
 
-1. **Small PRs** — Reviewers process small changes faster and catch more defects
-2. **Automated checks first** — Lint, style, tests run before human review
-3. **Clear description** — What changed and why
-4. **Review checklist** — Consistency, correctness, coverage, security
-5. **No blame** — Review the code, not the author
+1. **Small PRs** â€” Reviewers process small changes faster and catch more defects
+2. **Automated checks first** â€” Lint, style, tests run before human review
+3. **Clear description** â€” What changed and why
+4. **Review checklist** â€” Consistency, correctness, coverage, security
+5. **No blame** â€” Review the code, not the author
 
 ---
 
@@ -814,7 +814,7 @@ class CommitGraphAnalyzer {
         `- ${a.author}: ${a.commitCount} commits, ~${a.filesTouched} files`
       ).join('\n') +
       `\n\n**Islands (disconnected histories):** ${this.findIslands().length}\n` +
-      (metrics.mergeCommitPercent > 30 ? '?? High merge commit ratio — consider rebase workflow\n' : '');
+      (metrics.mergeCommitPercent > 30 ? '?? High merge commit ratio â€” consider rebase workflow\n' : '');
   }
 }
 
@@ -1022,7 +1022,7 @@ export { Processor, Task }
 - Branching models range from simple (trunk-based) to complex (GitFlow), chosen based on release cadence.
 - Tags create immutable named references, ideally using semantic versioning.
 - CI/CD pipelines integrate with VCS through hooks and triggers for every event type.
-- Monorepos enable atomic changes; multi-repos provide team autonomy — choose based on context.
+- Monorepos enable atomic changes; multi-repos provide team autonomy â€” choose based on context.
 - Code review via pull requests is essential for quality, with automated checks before human review.
 
 ---

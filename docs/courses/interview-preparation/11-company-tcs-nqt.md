@@ -1,4 +1,4 @@
-# Chapter 11: TCS NQT & Digital — Company-Specific Question Bank
+﻿# Chapter 11: TCS NQT & Digital â€” Company-Specific Question Bank
 
 ## Learning Objectives
 
@@ -11,16 +11,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/interview-preparation/11-company-tcs-nqt/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/interview-preparation/11-company-tcs-nqt/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/11-company-tcs-nqt/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/interview-preparation/11-company-tcs-nqt/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/interview-preparation/11-company-tcs-nqt/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/interview-preparation/11-company-tcs-nqt/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/11-company-tcs-nqt/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/interview-preparation/11-company-tcs-nqt/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/interview-preparation/11-company-tcs-nqt/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/interview-preparation/11-company-tcs-nqt/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/11-company-tcs-nqt/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/interview-preparation/11-company-tcs-nqt/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -34,12 +34,12 @@ flowchart TD
         A[TCS NQT Registration] --> B{Exam Mode}
         B -->|Foundation| C[Foundation Section]
         B -->|Advanced| D[Advanced Section]
-        C --> E[Numerical Ability<br/>20 Qs • 25 mins]
-        C --> F[Reasoning Ability<br/>20 Qs • 25 mins]
-        C --> G[Verbal Ability<br/>25 Qs • 25 mins]
-        D --> H[Advanced Quantitative<br/>15 Qs • 25 mins]
-        D --> I[Advanced Reasoning<br/>15 Qs • 25 mins]
-        D --> J[Coding<br/>2 Problems • 70 mins]
+        C --> E[Numerical Ability<br/>20 Qs â€¢ 25 mins]
+        C --> F[Reasoning Ability<br/>20 Qs â€¢ 25 mins]
+        C --> G[Verbal Ability<br/>25 Qs â€¢ 25 mins]
+        D --> H[Advanced Quantitative<br/>15 Qs â€¢ 25 mins]
+        D --> I[Advanced Reasoning<br/>15 Qs â€¢ 25 mins]
+        D --> J[Coding<br/>2 Problems â€¢ 70 mins]
         C --> K[Aggregate Score]
         D --> K
         K --> L{Score >= Threshold?}
@@ -89,10 +89,10 @@ Input:  [1, 1, 1, 2, 2]
 Output: 1
 ```
 
-**Constraints:** 1 ≤ n ≤ 10^5, -10^9 ≤ arr[i] ≤ 10^9
+**Constraints:** 1 â‰¤ n â‰¤ 10^5, -10^9 â‰¤ arr[i] â‰¤ 10^9
 
 <details>
-<summary><b>Approach 1: HashMap Counting — O(n) time, O(n) space</b></summary>
+<summary><b>Approach 1: HashMap Counting â€” O(n) time, O(n) space</b></summary>
 
 ```typescript
 function findMajorityElement(nums: number[]): number {
@@ -109,12 +109,12 @@ function findMajorityElement(nums: number[]): number {
 }
 ```
 
-**Time:** O(n) — single pass through the array
-**Space:** O(n) — hash map stores up to n/2+1 entries
+**Time:** O(n) â€” single pass through the array
+**Space:** O(n) â€” hash map stores up to n/2+1 entries
 </details>
 
 <details>
-<summary><b>Approach 2: Boyer-Moore Voting Algorithm — O(n) time, O(1) space</b></summary>
+<summary><b>Approach 2: Boyer-Moore Voting Algorithm â€” O(n) time, O(1) space</b></summary>
 
 ```typescript
 function findMajorityElementOptimal(nums: number[]): number {
@@ -141,8 +141,8 @@ function findMajorityElementOptimal(nums: number[]): number {
 }
 ```
 
-**Time:** O(n) — two passes (one for candidate, one for verification)
-**Space:** O(1) — only two variables
+**Time:** O(n) â€” two passes (one for candidate, one for verification)
+**Space:** O(1) â€” only two variables
 </details>
 
 **Why TCS asks this:** Tests array traversal, hash map usage, and the optimization mindset to reduce space complexity.
@@ -170,7 +170,7 @@ Explanation: Left sum = 0 (empty), Right sum = 1+(-1) = 0
 ```
 
 <details>
-<summary><b>Solution: Prefix Sum — O(n) time, O(1) space</b></summary>
+<summary><b>Solution: Prefix Sum â€” O(n) time, O(1) space</b></summary>
 
 ```typescript
 function findEquilibriumIndex(nums: number[]): number {
@@ -186,10 +186,10 @@ function findEquilibriumIndex(nums: number[]): number {
 }
 ```
 
-**Why this works:** Instead of computing left and right sums separately for each index (which would be O(n²)), we compute the total sum once, then track the left sum as we iterate. The right sum is derived as `total - left - current`.
+**Why this works:** Instead of computing left and right sums separately for each index (which would be O(nÂ²)), we compute the total sum once, then track the left sum as we iterate. The right sum is derived as `total - left - current`.
 
-**Time:** O(n) — single pass
-**Space:** O(1) — constant extra space
+**Time:** O(n) â€” single pass
+**Space:** O(1) â€” constant extra space
 </details>
 
 ---
@@ -215,7 +215,7 @@ Explanation: "b" with length 1
 ```
 
 <details>
-<summary><b>Solution: Sliding Window with HashMap — O(n) time, O(min(m,n)) space</b></summary>
+<summary><b>Solution: Sliding Window with HashMap â€” O(n) time, O(min(m,n)) space</b></summary>
 
 ```typescript
 function lengthOfLongestSubstring(s: string): number {
@@ -238,13 +238,13 @@ function lengthOfLongestSubstring(s: string): number {
 }
 ```
 
-**Time:** O(n) — each character is visited at most twice
-**Space:** O(min(m,n)) — hash map stores at most m unique characters (m ≤ 26 for lowercase, or n for general ASCII)
+**Time:** O(n) â€” each character is visited at most twice
+**Space:** O(min(m,n)) â€” hash map stores at most m unique characters (m â‰¤ 26 for lowercase, or n for general ASCII)
 
 **Edge cases:**
-- Empty string → 0
-- All unique characters → length of string
-- All same characters → 1
+- Empty string â†’ 0
+- All unique characters â†’ length of string
+- All same characters â†’ 1
 </details>
 
 ---
@@ -263,7 +263,7 @@ Explanation: Items 2 (100,20) + 3 (120,30) = 220 value, 50 weight
 ```
 
 <details>
-<summary><b>Solution: DP Tabulation — O(n*W) time, O(n*W) space</b></summary>
+<summary><b>Solution: DP Tabulation â€” O(n*W) time, O(n*W) space</b></summary>
 
 ```typescript
 function knapsack01(values: number[], weights: number[], W: number): number {
@@ -290,7 +290,7 @@ function knapsack01(values: number[], weights: number[], W: number): number {
 ```
 
 <details>
-<summary><b>Optimized: 1D DP — O(n*W) time, O(W) space</b></summary>
+<summary><b>Optimized: 1D DP â€” O(n*W) time, O(W) space</b></summary>
 
 ```typescript
 function knapsack01Optimized(values: number[], weights: number[], W: number): number {
@@ -307,11 +307,11 @@ function knapsack01Optimized(values: number[], weights: number[], W: number): nu
 }
 ```
 
-**Time:** O(n*W) — where n is number of items, W is capacity
-**Space:** O(W) — single array instead of 2D matrix
+**Time:** O(n*W) â€” where n is number of items, W is capacity
+**Space:** O(W) â€” single array instead of 2D matrix
 </details>
 
-**Why TCS asks this:** DP problems test candidate's ability to break problems into subproblems and optimize — key for Digital roles.
+**Why TCS asks this:** DP problems test candidate's ability to break problems into subproblems and optimize â€” key for Digital roles.
 </details>
 
 ---
@@ -326,11 +326,11 @@ function knapsack01Optimized(values: number[], weights: number[], W: number): nu
 ```
 Input:  arr = [1, 5, 7, -1, 5], k = 6
 Output: 3
-Explanation: (1,5), (1,5), (7,-1) — three pairs sum to 6
+Explanation: (1,5), (1,5), (7,-1) â€” three pairs sum to 6
 ```
 
 <details>
-<summary><b>Solution: HashMap Frequency — O(n) time, O(n) space</b></summary>
+<summary><b>Solution: HashMap Frequency â€” O(n) time, O(n) space</b></summary>
 
 ```typescript
 function countPairsWithSum(arr: number[], k: number): number {
@@ -349,12 +349,12 @@ function countPairsWithSum(arr: number[], k: number): number {
 }
 ```
 
-**Time:** O(n) — single pass through array
-**Space:** O(n) — hash map stores frequencies
+**Time:** O(n) â€” single pass through array
+**Space:** O(n) â€” hash map stores frequencies
 
 **Edge cases:**
-- Empty array → 0
-- No pairs → 0
+- Empty array â†’ 0
+- No pairs â†’ 0
 - Negative numbers handled correctly
 - Duplicate values counted correctly
 </details>
@@ -375,7 +375,7 @@ Explanation: "ace" is the longest common subsequence
 ```
 
 <details>
-<summary><b>Solution: DP Tabulation — O(m*n) time, O(m*n) space</b></summary>
+<summary><b>Solution: DP Tabulation â€” O(m*n) time, O(m*n) space</b></summary>
 
 ```typescript
 function longestCommonSubsequence(text1: string, text2: string): number {
@@ -400,7 +400,7 @@ function longestCommonSubsequence(text1: string, text2: string): number {
 ```
 
 <details>
-<summary><b>Optimized: Space-Optimized DP — O(m*n) time, O(n) space</b></summary>
+<summary><b>Optimized: Space-Optimized DP â€” O(m*n) time, O(n) space</b></summary>
 
 ```typescript
 function longestCommonSubsequenceOptimized(text1: string, text2: string): number {
@@ -424,11 +424,11 @@ function longestCommonSubsequenceOptimized(text1: string, text2: string): number
 }
 ```
 
-**Time:** O(m*n) — fill DP table
-**Space:** O(n) — only two rows instead of full table
+**Time:** O(m*n) â€” fill DP table
+**Space:** O(n) â€” only two rows instead of full table
 </details>
 
-**Why TCS asks this:** Tests string manipulation and DP recurrence formulation — essential for algorithmic thinking in Digital roles.
+**Why TCS asks this:** Tests string manipulation and DP recurrence formulation â€” essential for algorithmic thinking in Digital roles.
 </details>
 
 ---
@@ -445,7 +445,7 @@ function longestCommonSubsequenceOptimized(text1: string, text2: string): number
 Total distance = Length of train + Length of platform = 150 + 250 = 400 m
 Time = 30 seconds
 Speed = Distance / Time = 400 / 30 = 40/3 m/s
-Speed in km/h = (40/3) × (18/5) = (40 × 18) / (3 × 5) = 720 / 15 = 48 km/h
+Speed in km/h = (40/3) Ã— (18/5) = (40 Ã— 18) / (3 Ã— 5) = 720 / 15 = 48 km/h
 
 **Answer: 48 km/h**
 </details>
@@ -456,7 +456,7 @@ Speed in km/h = (40/3) × (18/5) = (40 × 18) / (3 × 5) = 720 / 15 = 48 km/h
 <summary><b>Solution</b></summary>
 
 Average speed = 2xy / (x + y) where x and y are speeds
-= 2 × 60 × 40 / (60 + 40)
+= 2 Ã— 60 Ã— 40 / (60 + 40)
 = 4800 / 100
 = 48 km/h
 
@@ -471,7 +471,7 @@ Note: This is NOT the arithmetic mean (50 km/h). For equal distances, use harmon
 <summary><b>Solution</b></summary>
 
 Relative speed (opposite) = 54 + 72 = 126 km/h
-= 126 × (5/18) = 35 m/s
+= 126 Ã— (5/18) = 35 m/s
 Total distance = 200 + 300 = 500 m
 Time = 500 / 35 = 100/7 = 14.29 seconds
 
@@ -504,29 +504,29 @@ Time = 600 / 20 = 30 seconds
 
 ### Profit and Loss
 
-**Q6.** A shopkeeper sells an article at 20% profit. If he had bought it at 10% less and sold it at 30% profit, he would have gained ₹ 42 more. Find the cost price.
+**Q6.** A shopkeeper sells an article at 20% profit. If he had bought it at 10% less and sold it at 30% profit, he would have gained â‚¹ 42 more. Find the cost price.
 
 <details>
 <summary><b>Solution</b></summary>
 
-Let CP = ₹ x
-First case: SP = x × 120/100 = 1.2x, Profit = 0.2x
-Second case: CP' = x × 90/100 = 0.9x, SP' = 0.9x × 130/100 = 1.17x, Profit' = 0.27x
+Let CP = â‚¹ x
+First case: SP = x Ã— 120/100 = 1.2x, Profit = 0.2x
+Second case: CP' = x Ã— 90/100 = 0.9x, SP' = 0.9x Ã— 130/100 = 1.17x, Profit' = 0.27x
 Difference in profit = 0.27x - 0.2x = 0.07x = 42
 x = 42 / 0.07 = 600
 
-**Answer: ₹ 600**
+**Answer: â‚¹ 600**
 </details>
 
-**Q7.** A vendor bought oranges at 8 for ₹ 34 and sold them at 12 for ₹ 57. Find the profit or loss percentage.
+**Q7.** A vendor bought oranges at 8 for â‚¹ 34 and sold them at 12 for â‚¹ 57. Find the profit or loss percentage.
 
 <details>
 <summary><b>Solution</b></summary>
 
-CP per orange = 34/8 = ₹ 4.25
-SP per orange = 57/12 = ₹ 4.75
-Profit per orange = 4.75 - 4.25 = ₹ 0.50
-Profit % = (0.50 / 4.25) × 100 = 11.76%
+CP per orange = 34/8 = â‚¹ 4.25
+SP per orange = 57/12 = â‚¹ 4.75
+Profit per orange = 4.75 - 4.25 = â‚¹ 0.50
+Profit % = (0.50 / 4.25) Ã— 100 = 11.76%
 
 **Answer: 11.76% profit**
 </details>
@@ -536,11 +536,11 @@ Profit % = (0.50 / 4.25) × 100 = 11.76%
 <details>
 <summary><b>Solution</b></summary>
 
-Let CP of 1 pen = ₹ 1
-CP of 90 pens = ₹ 90
-Gain = CP of 15 pens = ₹ 15
-SP = CP + Gain = 90 + 15 = ₹ 105
-Profit % = (Gain / CP) × 100 = (15 / 90) × 100 = 16.67%
+Let CP of 1 pen = â‚¹ 1
+CP of 90 pens = â‚¹ 90
+Gain = CP of 15 pens = â‚¹ 15
+SP = CP + Gain = 90 + 15 = â‚¹ 105
+Profit % = (Gain / CP) Ã— 100 = (15 / 90) Ã— 100 = 16.67%
 
 **Answer: 16.67%**
 </details>
@@ -552,11 +552,11 @@ Profit % = (Gain / CP) × 100 = (15 / 90) × 100 = 16.67%
 
 He gives 900 g instead of 1000 g.
 He pays for 900 g but charges for 1000 g.
-Profit % = [Error / (True Weight - Error)] × 100
-= [100 / 900] × 100 = 11.11%
+Profit % = [Error / (True Weight - Error)] Ã— 100
+= [100 / 900] Ã— 100 = 11.11%
 
-Alternatively: CP of 900 g = ₹ 900 (assuming ₹ 1/g), SP for 900 g = ₹ 1000
-Profit % = (100/900) × 100 = 11.11%
+Alternatively: CP of 900 g = â‚¹ 900 (assuming â‚¹ 1/g), SP for 900 g = â‚¹ 1000
+Profit % = (100/900) Ã— 100 = 11.11%
 
 **Answer: 11.11%**
 </details>
@@ -566,11 +566,11 @@ Profit % = (100/900) × 100 = 11.11%
 <details>
 <summary><b>Solution</b></summary>
 
-Let CP = ₹ 100
-Marked Price = 100 + 60% of 100 = ₹ 160
-Discount = 20% of 160 = ₹ 32
-SP = 160 - 32 = ₹ 128
-Profit = 128 - 100 = ₹ 28
+Let CP = â‚¹ 100
+Marked Price = 100 + 60% of 100 = â‚¹ 160
+Discount = 20% of 160 = â‚¹ 32
+SP = 160 - 32 = â‚¹ 128
+Profit = 128 - 100 = â‚¹ 28
 Profit % = 28%
 
 **Answer: 28%**
@@ -583,12 +583,12 @@ Profit % = 28%
 <details>
 <summary><b>Solution</b></summary>
 
-Let B's income = ₹ 100
-A's income = 100 + 25% of 100 = ₹ 125
-Difference = 125 - 100 = ₹ 25
-Required % = (25/125) × 100 = 20%
+Let B's income = â‚¹ 100
+A's income = 100 + 25% of 100 = â‚¹ 125
+Difference = 125 - 100 = â‚¹ 25
+Required % = (25/125) Ã— 100 = 20%
 
-Note: If A is x% more than B, then B is [x/(100+x)] × 100% less than A.
+Note: If A is x% more than B, then B is [x/(100+x)] Ã— 100% less than A.
 
 **Answer: 20%**
 </details>
@@ -642,11 +642,11 @@ x = 30
 <summary><b>Solution</b></summary>
 
 Let population 2 years ago = P
-P × (1 + 5/100)² = 185220
-P × (105/100)² = 185220
-P × (21/20)² = 185220
-P × 441/400 = 185220
-P = 185220 × 400 / 441
+P Ã— (1 + 5/100)Â² = 185220
+P Ã— (105/100)Â² = 185220
+P Ã— (21/20)Â² = 185220
+P Ã— 441/400 = 185220
+P = 185220 Ã— 400 / 441
 P = 168000
 
 **Answer: 1,68,000**
@@ -659,16 +659,16 @@ P = 168000
 <details>
 <summary><b>Solution</b></summary>
 
-A:B = 2:3 = 2 × 8 : 3 × 8 = 16:24
-B:C = 4:5 = 4 × 6 : 5 × 6 = 24:30
-C:D = 6:7 = 6 × 5 : 7 × 5 = 30:35
+A:B = 2:3 = 2 Ã— 8 : 3 Ã— 8 = 16:24
+B:C = 4:5 = 4 Ã— 6 : 5 Ã— 6 = 24:30
+C:D = 6:7 = 6 Ã— 5 : 7 Ã— 5 = 30:35
 A:B:C:D = 16:24:30:35
 A:D = 16:35
 
 **Answer: 16:35**
 </details>
 
-**Q17.** A sum of money is divided among A, B, C in the ratio 3:5:8. If C gets ₹ 800 more than B, find the total sum.
+**Q17.** A sum of money is divided among A, B, C in the ratio 3:5:8. If C gets â‚¹ 800 more than B, find the total sum.
 
 <details>
 <summary><b>Solution</b></summary>
@@ -676,9 +676,9 @@ A:D = 16:35
 Let shares be 3x, 5x, 8x
 C - B = 8x - 5x = 3x = 800
 x = 800/3 = 266.67
-Total = 16x = 16 × 800/3 = 12800/3 = ₹ 4266.67
+Total = 16x = 16 Ã— 800/3 = 12800/3 = â‚¹ 4266.67
 
-**Answer: ₹ 4266.67**
+**Answer: â‚¹ 4266.67**
 </details>
 
 **Q18.** Two numbers are in ratio 4:7. If each is increased by 10, the ratio becomes 3:5. Find the original numbers.
@@ -692,7 +692,7 @@ Let numbers be 4x and 7x
 20x + 50 = 21x + 30
 50 - 30 = 21x - 20x
 20 = x
-Numbers: 4 × 20 = 80, 7 × 20 = 140
+Numbers: 4 Ã— 20 = 80, 7 Ã— 20 = 140
 
 **Answer: 80 and 140**
 </details>
@@ -704,7 +704,7 @@ Numbers: 4 × 20 = 80, 7 × 20 = 140
 <details>
 <summary><b>Solution</b></summary>
 
-Sum of 20 numbers = 20 × 45 = 900
+Sum of 20 numbers = 20 Ã— 45 = 900
 Sum after removing 25 and 35 = 900 - 25 - 35 = 840
 New average = 840 / 18 = 46.67
 
@@ -716,9 +716,9 @@ New average = 840 / 18 = 46.67
 <details>
 <summary><b>Solution</b></summary>
 
-Sum of students' ages = 30 × 12 = 360
+Sum of students' ages = 30 Ã— 12 = 360
 New average (with teacher) = 13
-Sum of 31 persons = 31 × 13 = 403
+Sum of 31 persons = 31 Ã— 13 = 403
 Teacher's age = 403 - 360 = 43
 
 **Answer: 43 years**
@@ -735,21 +735,21 @@ Teacher's age = 403 - 360 = 43
 <details>
 <summary><b>Solution</b></summary>
 
-S → R (previous letter)
-U → U (same)
-M → N (next)
-M → N (next)
-E → E (same)
-R → R (same)
+S â†’ R (previous letter)
+U â†’ U (same)
+M â†’ N (next)
+M â†’ N (next)
+E â†’ E (same)
+R â†’ R (same)
 
 Pattern: First letter replaced by previous, 3rd and 4th by next, others unchanged.
-WINTER → VI \u00b6... Let's apply:
-W → V (previous)
-I → I (same)
-N → O (next)
-T → U (next)
-E → E (same)
-R → R (same)
+WINTER â†’ VI \u00b6... Let's apply:
+W â†’ V (previous)
+I â†’ I (same)
+N â†’ O (next)
+T â†’ U (next)
+E â†’ E (same)
+R â†’ R (same)
 
 **Answer: VIOUER**
 </details>
@@ -759,13 +759,13 @@ R → R (same)
 <details>
 <summary><b>Solution</b></summary>
 
-123 → hot filtered coffee
-356 → very hot day
-589 → day and night
+123 â†’ hot filtered coffee
+356 â†’ very hot day
+589 â†’ day and night
 
-Common digit in 1st and 2nd: 3 → "hot"
-Common digit in 2nd and 3rd: 5 → "day"
-From 2nd: 356 → 3:hot, 5:day, so 6:"very"
+Common digit in 1st and 2nd: 3 â†’ "hot"
+Common digit in 2nd and 3rd: 5 â†’ "day"
+From 2nd: 356 â†’ 3:hot, 5:day, so 6:"very"
 
 **Answer: 6**
 </details>
@@ -775,9 +775,9 @@ From 2nd: 356 → 3:hot, 5:day, so 6:"very"
 <details>
 <summary><b>Solution</b></summary>
 
-F→G (+1), R→Q (-1), I→J (+1), E→D (-1), N→O (+1), D→C (-1)
+Fâ†’G (+1), Râ†’Q (-1), Iâ†’J (+1), Eâ†’D (-1), Nâ†’O (+1), Dâ†’C (-1)
 Pattern: Alternating +1, -1
-P→Q (+1), E→D (-1), A→B (+1), C→B (-1), E→F (+1)
+Pâ†’Q (+1), Eâ†’D (-1), Aâ†’B (+1), Câ†’B (-1), Eâ†’F (+1)
 
 **Answer: QDBBF**
 </details>
@@ -788,8 +788,8 @@ P→Q (+1), E→D (-1), A→B (+1), C→B (-1), E→F (+1)
 <summary><b>Solution</b></summary>
 
 A=1, B=2, C=3, ..., Z=26
-C=3, A=1, T=20 → 3120
-D=4, O=15, G=7 → 4157
+C=3, A=1, T=20 â†’ 3120
+D=4, O=15, G=7 â†’ 4157
 
 **Answer: 4157**
 </details>
@@ -801,7 +801,7 @@ D=4, O=15, G=7 → 4157
 
 The code substitutes each word with the next in the sequence.
 "cherry" is coded as "date" (as given: "cherry" is "date").
-The question asks: what is "cherry"? → "date"
+The question asks: what is "cherry"? â†’ "date"
 
 **Answer: date**
 </details>
@@ -813,10 +813,10 @@ The question asks: what is "cherry"? → "date"
 <details>
 <summary><b>Solution</b></summary>
 
-"My mother" → Man's mother
-"Only son of my mother" → The man himself (only son)
-"Wife of the only son" → Man's wife
-"Daughter of the wife" → Man's daughter
+"My mother" â†’ Man's mother
+"Only son of my mother" â†’ The man himself (only son)
+"Wife of the only son" â†’ Man's wife
+"Daughter of the wife" â†’ Man's daughter
 
 **Answer: Daughter**
 </details>
@@ -840,9 +840,9 @@ E and B are cousins (children of brothers)
 <details>
 <summary><b>Solution</b></summary>
 
-"Her mother's husband" → Woman's father
-"Her mother's husband's sister" → Woman's father's sister = Woman's aunt
-"This aunt is my mother" → So the woman's aunt is the man's mother
+"Her mother's husband" â†’ Woman's father
+"Her mother's husband's sister" â†’ Woman's father's sister = Woman's aunt
+"This aunt is my mother" â†’ So the woman's aunt is the man's mother
 Therefore, the woman's father is the brother of the man's mother
 So the woman is the niece of the man
 
@@ -857,14 +857,14 @@ So the woman is the niece of the man
 <summary><b>Solution</b></summary>
 
 Let's track:
-1. North 10 m → (0, 10)
-2. Right (East) 15 m → (15, 10)
-3. Right (South) 20 m → (15, -10)
-4. Left (East) 10 m → (25, -10)
+1. North 10 m â†’ (0, 10)
+2. Right (East) 15 m â†’ (15, 10)
+3. Right (South) 20 m â†’ (15, -10)
+4. Left (East) 10 m â†’ (25, -10)
 
-Distance from origin (0,0) = √(25² + 10²) = √(625 + 100) = √725 = 26.93 m
+Distance from origin (0,0) = âˆš(25Â² + 10Â²) = âˆš(625 + 100) = âˆš725 = 26.93 m
 
-**Answer: 26.93 m ≈ 27 m**
+**Answer: 26.93 m â‰ˆ 27 m**
 </details>
 
 **Q10.** A is 20 m east of B. C is 15 m south of A. D is 30 m west of C. E is 10 m north of D. What is the distance between B and E?
@@ -879,9 +879,9 @@ D = (20-30, -15) = (-10, -15)
 E = (-10, -15+10) = (-10, -5)
 
 B = (0, 0), E = (-10, -5)
-Distance BE = √(10² + 5²) = √125 = 11.18 m
+Distance BE = âˆš(10Â² + 5Â²) = âˆš125 = 11.18 m
 
-**Answer: 11.18 m ≈ 11 m**
+**Answer: 11.18 m â‰ˆ 11 m**
 </details>
 
 **Q11.** A man walks 5 km towards east, turns right and walks 3 km, turns left and walks 2 km, turns right and walks 4 km. In which direction is he from the starting point?
@@ -889,12 +889,12 @@ Distance BE = √(10² + 5²) = √125 = 11.18 m
 <details>
 <summary><b>Solution</b></summary>
 
-1. East 5 km → (5, 0)
-2. Right (South) 3 km → (5, -3)
-3. Left (East) 2 km → (7, -3)
-4. Right (South) 4 km → (7, -7)
+1. East 5 km â†’ (5, 0)
+2. Right (South) 3 km â†’ (5, -3)
+3. Left (East) 2 km â†’ (7, -3)
+4. Right (South) 4 km â†’ (7, -7)
 
-Final position: 7 km East, 7 km South → Southeast direction from start
+Final position: 7 km East, 7 km South â†’ Southeast direction from start
 
 **Answer: Southeast**
 </details>
@@ -907,7 +907,7 @@ Conclusions: I. All dogs are rats. II. Some rats are dogs.
 <details>
 <summary><b>Solution</b></summary>
 
-All dogs are cats, all cats are rats → All dogs are rats (Conclusion I valid)
+All dogs are cats, all cats are rats â†’ All dogs are rats (Conclusion I valid)
 If all dogs are rats, then some rats are definitely dogs (Conclusion II valid)
 Both conclusions follow.
 
@@ -921,7 +921,7 @@ Conclusions: I. Some pens are not erasers. II. All erasers are pencils.
 <summary><b>Solution</b></summary>
 
 Some pens are pencils, and no pencil is an eraser.
-So those pens that are pencils are definitely not erasers. → Conclusion I valid
+So those pens that are pencils are definitely not erasers. â†’ Conclusion I valid
 Conclusion II: "All erasers are pencils" is NOT stated anywhere. We only know no pencil is an eraser, but this doesn't mean all erasers are pencils.
 
 **Answer: Only I follows**
@@ -933,7 +933,7 @@ Conclusions: I. Some plants are flowers. II. No plant is a flower.
 <details>
 <summary><b>Solution</b></summary>
 
-From "All flowers are trees" and "Some trees are plants" — we cannot definitively say whether any plant is a flower or not. It's possible that some plants are flowers, but it's also possible that no plant is a flower. Both are possibilities but not certainties.
+From "All flowers are trees" and "Some trees are plants" â€” we cannot definitively say whether any plant is a flower or not. It's possible that some plants are flowers, but it's also possible that no plant is a flower. Both are possibilities but not certainties.
 
 **Answer: Neither I nor II follows**
 </details>
@@ -944,8 +944,8 @@ Conclusions: I. Some fruits are bananas. II. Some mangoes are fruits.
 <details>
 <summary><b>Solution</b></summary>
 
-All bananas are fruits → Some fruits are bananas (Conclusion I valid)
-Some fruits are mangoes → Some mangoes are fruits (Conclusion II valid)
+All bananas are fruits â†’ Some fruits are bananas (Conclusion I valid)
+Some fruits are mangoes â†’ Some mangoes are fruits (Conclusion II valid)
 Both follow independently.
 
 **Answer: Both I and II follow**
@@ -1038,7 +1038,7 @@ a) anticipated  b) predictable  c) revolutionary  d) insignificant
 <summary><b>Solution</b></summary>
 
 **Answer: c) revolutionary**
-"Overturning decades of established theory" indicates a major,颠覆性 change. "Revolutionary" fits perfectly.
+"Overturning decades of established theory" indicates a major,é¢ è¦†æ€§ change. "Revolutionary" fits perfectly.
 </details>
 
 **Q9.** Despite the heavy rainfall, the event continued ___________.
@@ -1069,7 +1069,7 @@ a) convoluted  b) esoteric  c) lucid  d) ambiguous
 
 | Section | Tips |
 |---------|------|
-| **Numerical Ability** | Focus on speed — 20 Qs in 25 mins. Practice percentage, ratio, and time-speed-distance heavily |
+| **Numerical Ability** | Focus on speed â€” 20 Qs in 25 mins. Practice percentage, ratio, and time-speed-distance heavily |
 | **Reasoning** | Coding-decoding and blood relations are high-weightage. Practice 3+ puzzles daily |
 | **Verbal** | Email writing is important. Practice formal email format with proper salutation and closing |
 
@@ -1103,7 +1103,7 @@ Yours sincerely,
 
 ## Summary
 
-This chapter provided a comprehensive TCS NQT & Digital question bank covering all four sections of the exam. The 6 coding problems cover arrays, strings, and DP — the most common TCS patterns. The 20 quant questions span all major topics with TCS-specific difficulty levels. The 15 reasoning questions cover the trickiest areas: coding-decoding, blood relations, direction sense, and syllogisms. The 10 verbal questions test vocabulary and sentence completion skills essential for the English section.
+This chapter provided a comprehensive TCS NQT & Digital question bank covering all four sections of the exam. The 6 coding problems cover arrays, strings, and DP â€” the most common TCS patterns. The 20 quant questions span all major topics with TCS-specific difficulty levels. The 15 reasoning questions cover the trickiest areas: coding-decoding, blood relations, direction sense, and syllogisms. The 10 verbal questions test vocabulary and sentence completion skills essential for the English section.
 
 ## Practical Takeaways
 
@@ -1112,7 +1112,7 @@ This chapter provided a comprehensive TCS NQT & Digital question bank covering a
 3. **Coding round strategy:** Read both problems first, then start with the easier one. Aim for partial test cases even if you can't fully solve.
 4. **For TCS Digital:** The coding round is the differentiator. Master hash maps, sliding window, and DP basics.
 5. **Email writing is mandatory:** TCS Ninja includes an email writing task. Memorize a formal template and practice 5-10 variations.
-6. **⭐ Must-Know:** TCS values clean code with comments. In the coding round, write readable code with meaningful variable names.
+6. **â­ Must-Know:** TCS values clean code with comments. In the coding round, write readable code with meaningful variable names.
 
 ## Chapter Quiz
 
@@ -1121,7 +1121,7 @@ a) 60 km/h  b) 90 km/h  c) 50 km/h  d) 75 km/h
 
 <details>
 <summary>Answer: b) 90 km/h</summary>
-Speed = 150/6 = 25 m/s = 25 × 18/5 = 90 km/h
+Speed = 150/6 = 25 m/s = 25 Ã— 18/5 = 90 km/h
 </details>
 
 **Q2.** In a code language, if 'PENCIL' is coded as 'QDOBHK', how is 'PAPER' coded?
@@ -1129,7 +1129,7 @@ a) QZQDS  b) QZQCS  c) QZOCS  d) QAPCS
 
 <details>
 <summary>Answer: a) QZQDS</summary>
-Pattern: P→Q(+1), E→D(-1), N→O(+1), C→B(-1), I→H(-1... wait) Let me redo: P→Q(+1), E→D(-1), N→O(+1), C→B(-1), I→H(-1), L→K(-1) — alternating +1, -1. PAPER: P→Q(+1), A→Z(-1), P→Q(+1), E→D(-1), R→S(+1) = QZQDS
+Pattern: Pâ†’Q(+1), Eâ†’D(-1), Nâ†’O(+1), Câ†’B(-1), Iâ†’H(-1... wait) Let me redo: Pâ†’Q(+1), Eâ†’D(-1), Nâ†’O(+1), Câ†’B(-1), Iâ†’H(-1), Lâ†’K(-1) â€” alternating +1, -1. PAPER: Pâ†’Q(+1), Aâ†’Z(-1), Pâ†’Q(+1), Eâ†’D(-1), Râ†’S(+1) = QZQDS
 </details>
 
 **Q3.** The average weight of 6 people increases by 2.5 kg when a new person joins. If the average weight was 55 kg, what is the weight of the new person?
@@ -1137,7 +1137,7 @@ a) 65 kg  b) 70 kg  c) 72.5 kg  d) 67.5 kg
 
 <details>
 <summary>Answer: b) 70 kg</summary>
-Sum of 6 = 55 × 6 = 330. New avg = 57.5, sum of 7 = 402.5. New person = 402.5 - 330 = 72.5... wait. New avg = 55 + 2.5 = 57.5. Sum of 7 = 57.5 × 7 = 402.5. New person = 402.5 - 330 = 72.5. Hmm. Let me recalculate: Sum of 6 = 330, sum of 7 = 57.5×7 = 402.5. New person = 72.5 kg. Oh wait, the increase is 2.5kg, average goes from 55 to 57.5. So 57.5*7 - 55*6 = 402.5 - 330 = 72.5 kg.
+Sum of 6 = 55 Ã— 6 = 330. New avg = 57.5, sum of 7 = 402.5. New person = 402.5 - 330 = 72.5... wait. New avg = 55 + 2.5 = 57.5. Sum of 7 = 57.5 Ã— 7 = 402.5. New person = 402.5 - 330 = 72.5. Hmm. Let me recalculate: Sum of 6 = 330, sum of 7 = 57.5Ã—7 = 402.5. New person = 72.5 kg. Oh wait, the increase is 2.5kg, average goes from 55 to 57.5. So 57.5*7 - 55*6 = 402.5 - 330 = 72.5 kg.
 </details>
 
 **Q4.** If 'All roses are flowers' and 'Some flowers fade quickly', which conclusion is valid?
@@ -1145,7 +1145,7 @@ a) Some roses fade quickly  b) No roses fade quickly  c) Cannot determine  d) Al
 
 <details>
 <summary>Answer: c) Cannot determine</summary>
-We cannot say anything definitive about roses fading quickly — the "some flowers" that fade quickly may or may not include roses.
+We cannot say anything definitive about roses fading quickly â€” the "some flowers" that fade quickly may or may not include roses.
 </details>
 
 **Q5.** Synonym of 'EPHEMERAL':
@@ -1160,9 +1160,9 @@ Ephemeral means lasting for a very short time.
 
 ## Exercises
 
-1. **Coding:** Solve "Container with Most Water" (LeetCode 11) — TCS has asked this in Digital rounds.
+1. **Coding:** Solve "Container with Most Water" (LeetCode 11) â€” TCS has asked this in Digital rounds.
 2. **Quant:** A shopkeeper marks goods 40% above CP and gives 15% discount. Find profit %.
 3. **Reasoning:** Pointing to a photo, a woman says, "He is the son of the only daughter of my father-in-law." How is the person related to the woman?
 4. **Verbal:** Write a professional email to your TCS manager requesting leave for a family function.
-5. **Coding:** Implement Kadane's algorithm (maximum subarray sum) — a TCS Digital favorite.
+5. **Coding:** Implement Kadane's algorithm (maximum subarray sum) â€” a TCS Digital favorite.
 </details>

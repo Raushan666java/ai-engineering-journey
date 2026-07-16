@@ -1,4 +1,4 @@
-# Chapter 6: Orchestration
+﻿# Chapter 6: Orchestration
 
 > **Prev:** [Docker Compose](./06-docker-compose.md)
 > **Next:** [Infrastructure as Code](./07-infrastructure-as-code.md)
@@ -17,16 +17,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/06-orchestration/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/06-orchestration/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/06-orchestration/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/06-orchestration/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/06-orchestration/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/06-orchestration/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/06-orchestration/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/06-orchestration/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/06-orchestration/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/06-orchestration/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/06-orchestration/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/06-orchestration/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -237,7 +237,7 @@ spec:
 ### Stateful Workloads in Orchestration
 
 
-Not all applications are stateless — databases, caches, and message queues require stateful orchestration:
+Not all applications are stateless â€” databases, caches, and message queues require stateful orchestration:
 
 **StatefulSet (Kubernetes):**
 - Each pod gets a stable, unique network identity (`pod-0`, `pod-1`)
@@ -358,8 +358,8 @@ flowchart LR
 ```
 
 - **terminationGracePeriodSeconds** (default 30s): Time between SIGTERM and SIGKILL
-- **PreStop hook:** Runs before SIGTERM — drain connections, flush buffers
-- **PostStart hook:** Runs after container starts — register with service mesh
+- **PreStop hook:** Runs before SIGTERM â€” drain connections, flush buffers
+- **PostStart hook:** Runs after container starts â€” register with service mesh
 
 ```yaml
 lifecycle:
@@ -941,7 +941,7 @@ export { Processor, Task }
 2. Compare three orchestration platforms for a team of 5 deploying 10 microservices.
 3. Implement an autoscaling strategy based on CPU utilization.
 4. Create a service discovery and load balancing design for a multi-service application.
-5. Extend the `OrchestrationSimulator` class to support: **StatefulSet** behavior (pods with stable identity — rescheduled pods retain their name), **pod topology spread constraints** (ensure pods are distributed across at least 3 nodes with a max skew of 1), and **graceful termination** (pods run a preStop hook that drains connections in 5s before SIGKILL at 30s).
+5. Extend the `OrchestrationSimulator` class to support: **StatefulSet** behavior (pods with stable identity â€” rescheduled pods retain their name), **pod topology spread constraints** (ensure pods are distributed across at least 3 nodes with a max skew of 1), and **graceful termination** (pods run a preStop hook that drains connections in 5s before SIGKILL at 30s).
 6. Implement a `SchedulingPolicyEngine` that accepts pod requirements and node labels then returns the optimal node assignment. Support the following constraint types: `requiredNodeAffinity` (pod must run on matching nodes), `preferredNodeAffinity` (weighted preference for node attributes), `podAntiAffinity` (prevent same-app pods on same node), and `toleration` (pod tolerates tainted nodes). Use the engine to schedule 6 web pods across a 3-node cluster where each node has a different zone label.
 
 ### Challenge Problem

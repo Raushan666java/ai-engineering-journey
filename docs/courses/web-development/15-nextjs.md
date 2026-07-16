@@ -1,4 +1,4 @@
-# Chapter 15: Next.js
+﻿# Chapter 15: Next.js
 
 > **Previous:** [14-typescript](./14-typescript.md) | **Next:** [16-testing-web](./16-testing-web.md)
 
@@ -9,16 +9,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/web-development/15-nextjs/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/web-development/15-nextjs/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/web-development/15-nextjs/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/web-development/15-nextjs/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/web-development/15-nextjs/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/web-development/15-nextjs/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/web-development/15-nextjs/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/web-development/15-nextjs/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/web-development/15-nextjs/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/web-development/15-nextjs/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/web-development/15-nextjs/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/web-development/15-nextjs/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -29,7 +29,7 @@ By the end of this chapter, you will be able to:
 
 ## Chapter at a Glance
 
-> **One-Sentence Takeaway:** Next.js supports SSR, SSG, ISR, and client-side rendering — choose based on data freshness needs.
+> **One-Sentence Takeaway:** Next.js supports SSR, SSG, ISR, and client-side rendering â€” choose based on data freshness needs.
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
@@ -37,7 +37,7 @@ By the end of this chapter, you will be able to:
 |Rendering|SSR, SSG, ISR, and client rendering serve different use cases|Default to SSG/ISR for public content, SSR for personalized pages, client for highly interactive UI|
 |Data Fetching|Server Components fetch directly; client components use SWR/React Query|Fetch in Server Components by default to eliminate client waterfalls|
 |API Routes|Route handlers in `/api/*` replace separate backend servers|Use for lightweight BFF (Backend for Frontend) patterns, not for full API backends|
-|Middleware|Edge functions that intercept requests before they reach routes|Good for auth checks, redirects, i18n — but keep logic minimal for low latency|
+|Middleware|Edge functions that intercept requests before they reach routes|Good for auth checks, redirects, i18n â€” but keep logic minimal for low latency|
 |SEO|Metadata API, sitemaps, and Open Graph tags improve search visibility|Generate metadata dynamically in `generateMetadata` for each page|
 
 ## Chapter Roadmap
@@ -478,7 +478,7 @@ export default nextConfig;
 
 
 > [!TIP]
-> Use `next: { revalidate: 3600 }` in fetch options for ISR — it gives you static speed with periodic content freshness without deploying.
+> Use `next: { revalidate: 3600 }` in fetch options for ISR â€” it gives you static speed with periodic content freshness without deploying.
 
 > [!WARNING]
 > Prefetch all `Link` components by default in App Router. Disable prefetch for non-critical links with `prefetch={false}` to save bandwidth.
@@ -825,7 +825,7 @@ Next.js is a React framework providing SSR, SSG, ISR, and client rendering. The 
 Server Actions let you mutate server-side data directly from client components.
 
 ```typescript
-// app/actions/todo.ts — Server Action
+// app/actions/todo.ts â€” Server Action
 "use server";
 
 import { revalidatePath } from "next/cache";
@@ -846,7 +846,7 @@ export async function addTodo(formData: FormData) {
 ```
 
 ```typescript
-// app/todos/page.tsx — consuming Server Action
+// app/todos/page.tsx â€” consuming Server Action
 export default function TodoPage() {
   return (
     <form action={addTodo}>
@@ -905,8 +905,8 @@ Build a multi-tenant SaaS application in Next.js with dynamic routing by tenant 
 ### Practical Takeaways
 
 
-1. **Default to Server Components** — fetch data in Server Components to eliminate client-side waterfalls and reduce bundle size. Add `"use client"` only for interactivity.
-2. **Use layouts for persistent UI** — navbars, sidebars, and footers belong in `layout.tsx` so they do not remount on navigation.
-3. **Choose the right rendering strategy** — SSG for static marketing pages, ISR for blog content with periodic updates, SSR for personalized dashboards, client rendering for highly interactive tools.
-4. **Leverage parallel routes for complex layouts** — render independent page sections (analytics, tasks, feed) concurrently in the same layout using `@slot` conventions.
-5. **Generate metadata dynamically** — use `generateMetadata()` to set per-page title, description, and Open Graph tags from fetched data for optimal SEO.
+1. **Default to Server Components** â€” fetch data in Server Components to eliminate client-side waterfalls and reduce bundle size. Add `"use client"` only for interactivity.
+2. **Use layouts for persistent UI** â€” navbars, sidebars, and footers belong in `layout.tsx` so they do not remount on navigation.
+3. **Choose the right rendering strategy** â€” SSG for static marketing pages, ISR for blog content with periodic updates, SSR for personalized dashboards, client rendering for highly interactive tools.
+4. **Leverage parallel routes for complex layouts** â€” render independent page sections (analytics, tasks, feed) concurrently in the same layout using `@slot` conventions.
+5. **Generate metadata dynamically** â€” use `generateMetadata()` to set per-page title, description, and Open Graph tags from fetched data for optimal SEO.

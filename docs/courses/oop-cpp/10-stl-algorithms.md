@@ -1,4 +1,4 @@
-# Chapter 10: STL Algorithms — Master the C++ Standard Template Library
+﻿# Chapter 10: STL Algorithms â€” Master the C++ Standard Template Library
 
 > **Previous:** [09-stl-containers](./09-stl-containers.md) | **Next:** [11-file-io](./11-file-io.md)
 
@@ -9,16 +9,16 @@ After studying this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/oop-cpp/10-stl-algorithms/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/oop-cpp/10-stl-algorithms/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/10-stl-algorithms/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/oop-cpp/10-stl-algorithms/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/oop-cpp/10-stl-algorithms/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/oop-cpp/10-stl-algorithms/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/10-stl-algorithms/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/oop-cpp/10-stl-algorithms/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/oop-cpp/10-stl-algorithms/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/oop-cpp/10-stl-algorithms/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/10-stl-algorithms/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/oop-cpp/10-stl-algorithms/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -76,7 +76,7 @@ STL algorithms operate on **iterator ranges** rather than containers directly. T
 1. Algorithms ask for a **begin iterator** and an **end iterator** marking the half-open range [begin, end)
 2. The algorithm advances the iterator from egin toward end using ++it
 3. It reads/writes values through *it
-4. The container is never mentioned — only iterators
+4. The container is never mentioned â€” only iterators
 
 ### Iterator Category Requirements
 
@@ -132,17 +132,17 @@ int main() {
 
 Non-modifying algorithms read elements through input iterators and never write. They are safe for const containers.
 
-### 10.2.1 std::find — Linear Search
+### 10.2.1 std::find â€” Linear Search
 
 
-**Analogy:** You dropped your keys somewhere in the house. You walk from room to room, check each table, and stop the moment you see them — exactly the position where they are.
+**Analogy:** You dropped your keys somewhere in the house. You walk from room to room, check each table, and stop the moment you see them â€” exactly the position where they are.
 
 **Steps:**
 1. Start at egin iterator
 2. Compare current element with target value using operator==
-3. If equal — return iterator pointing to this element
-4. Otherwise — advance to next element
-5. If end is reached — return end (not found)
+3. If equal â€” return iterator pointing to this element
+4. Otherwise â€” advance to next element
+5. If end is reached â€” return end (not found)
 
 **Pseudocode:**
 `
@@ -182,12 +182,12 @@ Found 30 at position: 2
 99 found? No
 `
 
-**Complexity:** O(n) — linear. **WHY:** In the worst case, the target is at the last position or absent, requiring every element to be compared exactly once. Each element receives exactly one operator== call. No early termination can avoid the full scan when the element does not exist.
+**Complexity:** O(n) â€” linear. **WHY:** In the worst case, the target is at the last position or absent, requiring every element to be compared exactly once. Each element receives exactly one operator== call. No early termination can avoid the full scan when the element does not exist.
 
-### 10.2.2 std::count and std::count_if — Count Occurrences
+### 10.2.2 std::count and std::count_if â€” Count Occurrences
 
 
-**Analogy:** A supermarket cashier scans every item in your cart and counts how many are dairy products. She does not stop after finding one — she needs the total.
+**Analogy:** A supermarket cashier scans every item in your cart and counts how many are dairy products. She does not stop after finding one â€” she needs the total.
 
 **Steps:**
 1. Initialize counter c = 0
@@ -222,7 +222,7 @@ Passing scores (>=80): 5
 
 **Complexity:** O(n). **WHY:** Every element must be inspected to count occurrences. Unlike ind which short-circuits, count must visit every element even if the answer is obvious early. The lambda predicate adds a small constant overhead per element.
 
-### 10.2.3 std::equal — Range Equality
+### 10.2.3 std::equal â€” Range Equality
 
 
 **Analogy:** Two chefs each prepare the same 5-course menu. You taste course 1 from both, course 2 from both, etc. If any pair differs, the meals are not equal.
@@ -230,9 +230,9 @@ Passing scores (>=80): 5
 **Steps:**
 1. Iterate both ranges simultaneously
 2. Compare element-wise using operator== (or custom predicate)
-3. If any pair differs — return alse
-4. If all pairs match — return 	rue
-5. If first range is longer and no mismatch — UB unless second range is at least as long
+3. If any pair differs â€” return alse
+4. If all pairs match â€” return 	rue
+5. If first range is longer and no mismatch â€” UB unless second range is at least as long
 
 **C++ Code:**
 `cpp
@@ -268,7 +268,7 @@ x approx == y: true
 
 **Complexity:** O(n). **WHY:** The algorithm compares the shorter prefix of both ranges element-by-element. At most min(len1, len2) comparisons occur. Each comparison is O(1).
 
-### 10.2.4 std::mismatch — First Differing Position
+### 10.2.4 std::mismatch â€” First Differing Position
 
 
 **Analogy:** Two students submit the same homework. The TA lines them up side by side and moves down line by line. At the first line that differs, the TA stamps "HERE!" on both papers.
@@ -276,8 +276,8 @@ x approx == y: true
 **Steps:**
 1. Walk both ranges simultaneously
 2. Compare each corresponding pair
-3. When a mismatch is found — stop and return pair of iterators to that position
-4. If no mismatch — return {first_end, second_at_offset}
+3. When a mismatch is found â€” stop and return pair of iterators to that position
+4. If no mismatch â€” return {first_end, second_at_offset}
 
 **C++ Code:**
 `cpp
@@ -316,7 +316,7 @@ DNA differs at position 4: G vs T
 
 **Complexity:** O(n). **WHY:** In the worst case, the ranges match fully or the mismatch is at the last position. Every position up to the mismatch must be compared.
 
-### 10.2.5 std::search — Subrange Search
+### 10.2.5 std::search â€” Subrange Search
 
 
 **Analogy:** You are scanning a long document for the phrase "confidential". You check position 0: 'c' matches, 'o' matches ... 'l' at position 10 fails. You slide to position 1: 'o' != 'c'. Position 2: 'n' != 'c'. Continue until you find a full match or reach the end.
@@ -324,8 +324,8 @@ DNA differs at position 4: G vs T
 **Steps:**
 1. For each start position in [first1, last1 - (last2-first2))
 2. Attempt to match the entire subrange [first2, last2)
-3. If full match — return iterator to the start position
-4. If no start position works — return last1
+3. If full match â€” return iterator to the start position
+4. If no start position works â€” return last1
 
 **C++ Code:**
 `cpp
@@ -361,8 +361,8 @@ Boyer-Moore found at position 10
 `
 
 **Complexity:**
-- Naive: O(n × m) — worst case when mismatches occur late for every start position
-- Boyer-Moore: O(n + m) — skips characters using bad-character and good-suffix heuristics
+- Naive: O(n Ã— m) â€” worst case when mismatches occur late for every start position
+- Boyer-Moore: O(n + m) â€” skips characters using bad-character and good-suffix heuristics
 - **WHY:** Naive search re-compares the same characters many times. Boyer-Moore preprocesses the pattern to compute skip tables, allowing large jumps that reduce comparisons drastically. For short patterns on random text, the naive version is often faster due to lower overhead.
 
 ### Non-Modifying Algorithm Summary
@@ -381,9 +381,9 @@ one_of | bool | Yes (short-circuits) |
 | or_each | void (C++17 returns function) | No |
 ## 10.3 Modifying Algorithms
 
-Modifying algorithms change elements — either in-place (within the source range) or by writing to a separate output iterator.
+Modifying algorithms change elements â€” either in-place (within the source range) or by writing to a separate output iterator.
 
-### 10.3.1 std::copy — Range Copy
+### 10.3.1 std::copy â€” Range Copy
 
 
 **Analogy:** A photocopier scans each page of a document and produces an identical copy on fresh paper. The original remains untouched.
@@ -416,7 +416,7 @@ int main() {
     std::vector<int> src = {1, 2, 3, 4, 5};
     std::vector<int> dst;  // empty!
 
-    // ERROR: dst must have space — use back_inserter
+    // ERROR: dst must have space â€” use back_inserter
     // std::copy(src.begin(), src.end(), dst.begin());
 
     // Correct: back_inserter calls push_back for each element
@@ -440,9 +440,9 @@ int main() {
 1 2 3
 ```
 
-**Complexity:** O(n). **WHY:** Exactly n assignments execute — one per element. Each assignment is O(1). No comparisons are performed.
+**Complexity:** O(n). **WHY:** Exactly n assignments execute â€” one per element. Each assignment is O(1). No comparisons are performed.
 
-### 10.3.2 std::transform — Apply Function to Range
+### 10.3.2 std::transform â€” Apply Function to Range
 
 
 **Analogy:** A factory assembly line. Each raw part enters the machine, gets processed (drilled, painted, assembled), and exits as a finished product. The machine applies the same operation to every part.
@@ -516,7 +516,7 @@ Element-wise sum: 11 22 33
 
 **Complexity:** O(n). **WHY:** The operation is applied exactly n times. Each invocation of the unary/binary function is O(1) for simple arithmetic. The total grows linearly with input size.
 
-### 10.3.3 std::replace and std::replace_if — Substitute Elements
+### 10.3.3 std::replace and std::replace_if â€” Substitute Elements
 
 
 **Analogy:** A recall notice: every copy of "Batch 7A" medicine on the shelf must be replaced with "Batch 8B". A pharmacist walks the aisle, replaces each match, and leaves everything else alone.
@@ -563,10 +563,10 @@ After replace_if > 50 -> 0: 30 0 45 0 20
 
 **Complexity:** O(n). **WHY:** Every element is visited exactly once. The comparison (or predicate evaluation) and conditional assignment are each O(1). No element is visited more than once.
 
-### 10.3.4 std::fill and std::fill_n — Assign Same Value
+### 10.3.4 std::fill and std::fill_n â€” Assign Same Value
 
 
-**Analogy:** A hotel cleaner puts a "Welcome" card on every pillow in a 50-room hotel. Same card, every room — no exceptions.
+**Analogy:** A hotel cleaner puts a "Welcome" card on every pillow in a 50-room hotel. Same card, every room â€” no exceptions.
 
 **C++ Code:**
 ```cpp
@@ -597,7 +597,7 @@ After fill_n first 5 with 99: 99 99 99 99 99 42 42 42 42 42
 
 **Complexity:** O(n). **WHY:** Exactly n assignments. Each assignment is O(1). No comparisons.
 
-### 10.3.5 std::generate and std::generate_n — Assign from Generator
+### 10.3.5 std::generate and std::generate_n â€” Assign from Generator
 
 
 **Analogy:** A lottery machine spits out a random numbered ball for each participant. The machine (generator) produces a fresh value each time it is called.
@@ -639,12 +639,12 @@ Random: 47 83 12 65 91 34 58 22
 
 **Complexity:** O(n). **WHY:** The generator function is called exactly n times. Each call is O(1) for simple generators.
 
-### 10.3.6 std::remove and std::remove_if — The Erase-Remove Idiom
+### 10.3.6 std::remove and std::remove_if â€” The Erase-Remove Idiom
 
 
 **Critical Insight:** `std::remove` does NOT erase elements. It **partitions** the range so that kept elements are at the front, and returns an iterator to the new logical end. The removed elements remain at the tail in unspecified state.
 
-**Analogy:** A librarian goes through a shelf, pulls out damaged books, and shifts remaining books forward to close the gaps. The empty shelf space at the end is not removed — the librarian just marks where the good books end. A second person (erase) actually removes the empty shelf.
+**Analogy:** A librarian goes through a shelf, pulls out damaged books, and shifts remaining books forward to close the gaps. The empty shelf space at the end is not removed â€” the librarian just marks where the good books end. A second person (erase) actually removes the empty shelf.
 
 **Steps:**
 1. Scan from left to right with two pointers: read and write
@@ -708,10 +708,10 @@ After remove_if odds: 2 4 6 8
 
 **Complexity:** O(n). **WHY:** The algorithm performs exactly n reads and at most n writes (fewer when elements are removed). Each element is examined exactly once, and each kept element is move-assigned exactly once.
 
-### 10.3.7 std::unique — Remove Consecutive Duplicates
+### 10.3.7 std::unique â€” Remove Consecutive Duplicates
 
 
-**Analogy:** You have a sorted deck of cards: A♠ A♠ A♠ K♠ K♠ Q♠ Q♠ Q♠ Q♠. You go through and keep only the first card of each rank. The result: A♠ K♠ Q♠.
+**Analogy:** You have a sorted deck of cards: Aâ™  Aâ™  Aâ™  Kâ™  Kâ™  Qâ™  Qâ™  Qâ™  Qâ™ . You go through and keep only the first card of each rank. The result: Aâ™  Kâ™  Qâ™ .
 
 **Important:** `unique` only removes **consecutive** duplicates. Always sort the range first unless duplicates are already adjacent.
 
@@ -785,13 +785,13 @@ Rotate by 2: 3 2 1 5 4
 Shuffle: 2 5 4 3 1
 ```
 
-**reverse complexity:** O(n) — n/2 swaps. **rotate complexity:** O(n) — 3 range reversals or gcd-based swaps. **shuffle complexity:** O(n) — Fisher-Yates, n-1 swaps.
+**reverse complexity:** O(n) â€” n/2 swaps. **rotate complexity:** O(n) â€” 3 range reversals or gcd-based swaps. **shuffle complexity:** O(n) â€” Fisher-Yates, n-1 swaps.
 
 ## 10.4 Sorting Algorithms
 
 Sorting rearranges elements into a specified order. The STL provides four sorting algorithms with different guarantees.
 
-### 10.4.1 std::sort — Default Sort (Introsort)
+### 10.4.1 std::sort â€” Default Sort (Introsort)
 
 
 **Analogy:** A mailroom clerk needs to sort 10,000 letters by zip code. They use a fast hybrid approach: start with QuickSort for speed, but if the partitions become too unbalanced (danger of O(n^2)), switch to HeapSort. For very small piles, use InsertionSort.
@@ -801,7 +801,7 @@ Sorting rearranges elements into a specified order. The STL provides four sortin
 1. If subrange size &lt; 16: use InsertionSort (fastest for tiny arrays)
 2. Otherwise, median-of-three partition
 3. Recurse on both partitions
-4. If recursion depth exceeds 2 × log₂(n): switch to HeapSort
+4. If recursion depth exceeds 2 Ã— logâ‚‚(n): switch to HeapSort
 5. Final InsertionSort pass at the end (exploits near-sorted state)
 
 **C++ Code:**
@@ -840,12 +840,12 @@ By absolute: -1 -2 3 4 -5 8
 ```
 
 **Complexity:** O(n log n) average, O(n log n) worst-case. **WHY:**
-- QuickSort partition is O(n) per level; log₂(n) levels give n log n
-- HeapSort fallback guarantees O(n log n) worst-case — prevents QuickSort's O(n²) degenerate behavior
+- QuickSort partition is O(n) per level; logâ‚‚(n) levels give n log n
+- HeapSort fallback guarantees O(n log n) worst-case â€” prevents QuickSort's O(nÂ²) degenerate behavior
 - InsertionSort finishes in O(n) on nearly-sorted data (the final pass)
 - Median-of-three reduces probability of worst-case partition by 95%+
 
-### 10.4.2 std::stable_sort — Stable Sort (MergeSort + InsertionSort)
+### 10.4.2 std::stable_sort â€” Stable Sort (MergeSort + InsertionSort)
 
 
 **Preserves relative order of equivalent elements.**
@@ -893,11 +893,11 @@ Charlie: 90
 Eve: 95
 ```
 
-Notice Bob comes before Diana (both 85), and Alice before Charlie (both 90) — original order preserved.
+Notice Bob comes before Diana (both 85), and Alice before Charlie (both 90) â€” original order preserved.
 
-**Complexity:** O(n log² n) if additional memory is unavailable; O(n log n) if buffer of size n is available. **WHY:** MergeSort inherently preserves stability. The merge step requires comparing elements and placing the left-range element first when equal. The log² n penalty occurs when merge must fall back to in-place merging (no extra buffer).
+**Complexity:** O(n logÂ² n) if additional memory is unavailable; O(n log n) if buffer of size n is available. **WHY:** MergeSort inherently preserves stability. The merge step requires comparing elements and placing the left-range element first when equal. The logÂ² n penalty occurs when merge must fall back to in-place merging (no extra buffer).
 
-### 10.4.3 std::partial_sort — Top N in Order
+### 10.4.3 std::partial_sort â€” Top N in Order
 
 
 **Places the top N elements in sorted order at the front. The rest are in unspecified order.**
@@ -934,14 +934,14 @@ Top 3 scores: 95 92 91
 
 **Complexity:** O(n log k) where k = middle - first. **WHY:** Building the initial heap is O(n). Each of the k top elements requires a pop-heap operation taking O(log n). Total: O(n + k log n) = O(n log k) when k &lt;< n. This is significantly faster than full sort when k is small.
 
-### 10.4.4 std::nth_element — Single Element in Correct Position
+### 10.4.4 std::nth_element â€” Single Element in Correct Position
 
 
-**Places exactly one element (the nth) at its sorted position. All elements before are ≤ it; all after are ≥ it. Neither side is sorted.**
+**Places exactly one element (the nth) at its sorted position. All elements before are â‰¤ it; all after are â‰¥ it. Neither side is sorted.**
 
-**Analogy:** You want to know the median score in a class of 10,000. You do not need the entire sorted list — you just need the 5,000th score in its correct position.
+**Analogy:** You want to know the median score in a class of 10,000. You do not need the entire sorted list â€” you just need the 5,000th score in its correct position.
 
-**Algorithm:** `introselect` — QuickSelect with median-of-three pivoting and recursion-depth fallback.
+**Algorithm:** `introselect` â€” QuickSelect with median-of-three pivoting and recursion-depth fallback.
 
 **C++ Code:**
 ```cpp
@@ -983,25 +983,25 @@ After v[4]: 5 7 8 6 9
 Median: 5
 ```
 
-**Complexity:** Average O(n), worst-case O(n log n) with introselect fallback. **WHY:** QuickSelect discards half the elements after each partition, creating a geometric series: n + n/2 + n/4 + ... = 2n = O(n). The introselect fallback prevents worst-case O(n²) by switching to a median-of-medians approach when recursion goes too deep.
+**Complexity:** Average O(n), worst-case O(n log n) with introselect fallback. **WHY:** QuickSelect discards half the elements after each partition, creating a geometric series: n + n/2 + n/4 + ... = 2n = O(n). The introselect fallback prevents worst-case O(nÂ²) by switching to a median-of-medians approach when recursion goes too deep.
 
-### Dry Run — std::sort on {9, 3, 7, 1, 6, 2, 8, 4, 5, 0}
+### Dry Run â€” std::sort on {9, 3, 7, 1, 6, 2, 8, 4, 5, 0}
 
 
 | Step | Action | Range | Pivot | Partitioned State |
 |------|--------|-------|-------|-------------------|
-| 1 | Initial | [0,9] | — | [9, 3, 7, 1, 6, 2, 8, 4, 5, 0] |
+| 1 | Initial | [0,9] | â€” | [9, 3, 7, 1, 6, 2, 8, 4, 5, 0] |
 | 2 | Median-of-3 | [0,9] | 6 (mid) | [5, 3, 0, 1, 4, 2, 6, 8, 7, 9] |
 | 3 | Recurse left | [0,5] | 2 (mid) | [1, 0, 2, 5, 4, 3, ...] |
-| 4 | Recurse left | [0,1] | — | [0, 1, ...] |
+| 4 | Recurse left | [0,1] | â€” | [0, 1, ...] |
 | 5 | Recurse right | [2,5] | 4 (mid) | [..., 3, 4, 5, ...] |
 | 6 | Recurse right | [6,9] | 8 (mid) | [..., 7, 8, 9] |
-| 7 | Recurse left | [6,6] | — | [..., 7, ...] |
-| 8 | Final | [0,9] | — | [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] |
+| 7 | Recurse left | [6,6] | â€” | [..., 7, ...] |
+| 8 | Final | [0,9] | â€” | [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] |
 
-**Trace explanation:** At each recursion level, the pivot (median-of-3 from first, middle, last) splits the range. Left partition contains elements ≤ pivot; right contains ≥ pivot. Subranges smaller than 16 elements use InsertionSort directly. The recursion tree depth is log₂(10) ≈ 4 levels, each doing O(n) work — total O(n log n).
+**Trace explanation:** At each recursion level, the pivot (median-of-3 from first, middle, last) splits the range. Left partition contains elements â‰¤ pivot; right contains â‰¥ pivot. Subranges smaller than 16 elements use InsertionSort directly. The recursion tree depth is logâ‚‚(10) â‰ˆ 4 levels, each doing O(n) work â€” total O(n log n).
 
-### Dry Run — std::nth_element for Median on {7, 2, 9, 4, 1, 8, 5, 3, 6}
+### Dry Run â€” std::nth_element for Median on {7, 2, 9, 4, 1, 8, 5, 3, 6}
 
 
 Target: position 4 (0-indexed, the 5th element = median)
@@ -1009,16 +1009,16 @@ Target: position 4 (0-indexed, the 5th element = median)
 | Step | Range | Pivot | After Partition | pivot_pos | Action |
 |------|-------|-------|----------------|-----------|--------|
 | 1 | [0,8] | 5 (mid) | [3,2,4,1, 5, 8,7,9,6] | 4 | Target = 4, found! |
-| Done | — | — | [3,2,4,1, 5, 8,7,9,6] | — | v[4] = 5 is median |
+| Done | â€” | â€” | [3,2,4,1, 5, 8,7,9,6] | â€” | v[4] = 5 is median |
 
-After partition, elements before position 4: {3,2,4,1} ≤ 5. Elements after: {8,7,9,6} ≥ 5. Neither side is sorted, but the median is at the correct position.
+After partition, elements before position 4: {3,2,4,1} â‰¤ 5. Elements after: {8,7,9,6} â‰¥ 5. Neither side is sorted, but the median is at the correct position.
 
 ### Sorting Algorithm Comparison
 
 
 | Algorithm | Guarantee | Stable? | Memory | Use Case |
 |-----------|-----------|---------|--------|----------|
-| `sort` | O(n log n) | No | O(log n) | Default — general sorting |
+| `sort` | O(n log n) | No | O(log n) | Default â€” general sorting |
 | `stable_sort` | O(n log n) w/ buffer | Yes | O(n) | Equal-order matters |
 | `partial_sort` | O(n log k) | No | O(1) | Top-k elements in order |
 | `nth_element` | O(n) avg | No | O(1) | Median / percentile |
@@ -1027,10 +1027,10 @@ After partition, elements before position 4: {3,2,4,1} ≤ 5. Elements after: {8
 
 Binary search algorithms require a **sorted range**. They provide O(log n) lookup by repeatedly halving the search space.
 
-### 10.5.1 std::lower_bound — First Element Not Less Than Value
+### 10.5.1 std::lower_bound â€” First Element Not Less Than Value
 
 
-**Analogy:** You have a sorted stack of exam papers graded 0-100. You want the first paper with grade ≥ 75. You open the middle — 68. Discard left half. Open middle of right half — 82. Discard right half. Continue until you hold exactly the first paper ≥ 75.
+**Analogy:** You have a sorted stack of exam papers graded 0-100. You want the first paper with grade â‰¥ 75. You open the middle â€” 68. Discard left half. Open middle of right half â€” 82. Discard right half. Continue until you hold exactly the first paper â‰¥ 75.
 
 **Steps:**
 1. Set `lo = first, hi = last, count = distance(first, last)`
@@ -1092,7 +1092,7 @@ lower_bound(35) at position: 5 (value: 40)
 lower_bound(100) = end (all elements < 100)
 ```
 
-### 10.5.2 std::upper_bound — First Element Greater Than Value
+### 10.5.2 std::upper_bound â€” First Element Greater Than Value
 
 
 **Analogy:** Same exam papers. You want the first paper with grade > 75. Binary search again, but this time the comparison is `mid <= value`.
@@ -1128,7 +1128,7 @@ upper_bound(30) at position: 5 (value: 40)
 Occurrences of 30: 3
 ```
 
-### 10.5.3 std::binary_search — Existence Check
+### 10.5.3 std::binary_search â€” Existence Check
 
 
 **Simply returns whether the value exists in sorted range.** Implemented as `*lower_bound(...) == value`.
@@ -1164,7 +1164,7 @@ int main() {
 7 in unsorted (after sort): true
 ```
 
-### 10.5.4 std::equal_range — Complete Range of Equal Values
+### 10.5.4 std::equal_range â€” Complete Range of Equal Values
 
 
 **Returns a pair of iterators: `{lower_bound, upper_bound}` in one call.**
@@ -1197,7 +1197,7 @@ Count of 20: 3
 20 20 20
 ```
 
-### Dry Run — lower_bound(30) on {10, 20, 30, 30, 30, 40, 50}
+### Dry Run â€” lower_bound(30) on {10, 20, 30, 30, 30, 40, 50}
 
 
 | Iteration | first | count | step | mid | *mid | *mid &lt; 30? | Action |
@@ -1205,7 +1205,7 @@ Count of 20: 3
 | 1 | pos 0 | 7 | 3 | pos 3 | 30 | No | count = 3 |
 | 2 | pos 0 | 3 | 1 | pos 1 | 20 | Yes | first = pos 2, count = 1 |
 | 3 | pos 2 | 1 | 0 | pos 2 | 30 | No | count = 0 |
-| End | pos 2 | 0 | — | — | — | — | Return pos 2 |
+| End | pos 2 | 0 | â€” | â€” | â€” | â€” | Return pos 2 |
 
 **Result:** Iterator to position 2 (first 30). Only 3 comparisons needed for n=7.
 
@@ -1214,19 +1214,19 @@ Count of 20: 3
 
 | Algorithm | Complexity | Comparisons | WHY |
 |-----------|-----------|-------------|-----|
-| `lower_bound` | O(log n) | ⌈log₂(n+1)⌉ | Each iteration halves the range; at most log₂(n) iterations |
-| `upper_bound` | O(log n) | ⌈log₂(n+1)⌉ | Identical loop structure |
-| `binary_search` | O(log n) | ⌈log₂(n+1)⌉ | Delegates to lower_bound + one equality check |
-| `equal_range` | O(log n) | 2 × log₂(n) | Finds lower and upper bounds — ~2× work of single bound |
+| `lower_bound` | O(log n) | âŒˆlogâ‚‚(n+1)âŒ‰ | Each iteration halves the range; at most logâ‚‚(n) iterations |
+| `upper_bound` | O(log n) | âŒˆlogâ‚‚(n+1)âŒ‰ | Identical loop structure |
+| `binary_search` | O(log n) | âŒˆlogâ‚‚(n+1)âŒ‰ | Delegates to lower_bound + one equality check |
+| `equal_range` | O(log n) | 2 Ã— logâ‚‚(n) | Finds lower and upper bounds â€” ~2Ã— work of single bound |
 | Linear search | O(n) | n | Compare with every element |
 
-**WHY O(log n) is powerful:** For n = 1,000,000, binary search needs at most 20 comparisons. Linear search needs up to 1,000,000 comparisons — 50,000× more.
+**WHY O(log n) is powerful:** For n = 1,000,000, binary search needs at most 20 comparisons. Linear search needs up to 1,000,000 comparisons â€” 50,000Ã— more.
 
 ## 10.6 Set Operations (on Sorted Ranges)
 
 Set operations require **sorted input** and produce **sorted output**. They operate on arbitrary ranges, not just std::set.
 
-### 10.6.1 std::merge — Merge Two Sorted Ranges
+### 10.6.1 std::merge â€” Merge Two Sorted Ranges
 
 
 **Analogy:** Two sorted piles of numbered cards. You compare the top card of each pile, take the smaller one, and place it on the output pile. Repeat until both piles are empty.
@@ -1260,7 +1260,7 @@ Merged: 1 2 3 4 5 6 7 8 9 10
 
 **Complexity:** O(n + m). **WHY:** Each element from both ranges is visited exactly once. n + m total comparisons.
 
-### 10.6.2 std::set_union — Union of Two Sorted Ranges
+### 10.6.2 std::set_union â€” Union of Two Sorted Ranges
 
 
 **C++ Code:**
@@ -1290,7 +1290,7 @@ int main() {
 Union: 1 2 3 4 5 6 7
 ```
 
-### 10.6.3 std::set_intersection — Common Elements
+### 10.6.3 std::set_intersection â€” Common Elements
 
 
 **C++ Code:**
@@ -1320,7 +1320,7 @@ int main() {
 Intersection: 3 4 5
 ```
 
-### 10.6.4 std::set_difference — Elements in First but Not Second
+### 10.6.4 std::set_difference â€” Elements in First but Not Second
 
 
 **C++ Code:**
@@ -1350,7 +1350,7 @@ int main() {
 Difference: 1 2
 ```
 
-### 10.6.5 std::set_symmetric_difference — Elements in Either but Not Both
+### 10.6.5 std::set_symmetric_difference â€” Elements in Either but Not Both
 
 
 **C++ Code:**
@@ -1393,7 +1393,7 @@ Symmetric difference: 1 2 6 7
 
 ## 10.7 Min / Max Algorithms
 
-### 10.7.1 min, max, minmax — Single Pair Functions
+### 10.7.1 min, max, minmax â€” Single Pair Functions
 
 
 ```cpp
@@ -1426,7 +1426,7 @@ minmax: (10, 20)
 min by abs: 3
 ```
 
-### 10.7.2 min_element, max_element, minmax_element — Range Functions
+### 10.7.2 min_element, max_element, minmax_element â€” Range Functions
 
 
 **C++ Code:**
@@ -1469,13 +1469,13 @@ Minmax: 55, 95
 Longest word: hippopotamus
 ```
 
-**Complexity:** min_element: O(n). max_element: O(n). minmax_element: O(3n/2) — uses 3 comparisons per 2 elements, 25% faster than separate min + max calls.
+**Complexity:** min_element: O(n). max_element: O(n). minmax_element: O(3n/2) â€” uses 3 comparisons per 2 elements, 25% faster than separate min + max calls.
 
 ## 10.8 Numeric Algorithms
 
 Defined in `<numeric>`. These algorithms perform arithmetic reductions and transformations.
 
-### 10.8.1 std::accumulate — Reduce (Fold Left)
+### 10.8.1 std::accumulate â€” Reduce (Fold Left)
 
 
 **Analogy:** You have a bucket (initial value 0). You pick up each number from the conveyor belt and add it to the bucket. At the end, the bucket contains the sum.
@@ -1522,10 +1522,10 @@ Concatenated: Hello World!
 
 **Complexity:** O(n). **WHY:** Exactly n operations, each O(1). The initial value type determines the result type (important for preventing overflow!).
 
-### 10.8.2 std::inner_product — Dot Product
+### 10.8.2 std::inner_product â€” Dot Product
 
 
-**Analogy:** Two vectors of prices and quantities. The total order value is price[0]×qty[0] + price[1]×qty[1] + ...
+**Analogy:** Two vectors of prices and quantities. The total order value is price[0]Ã—qty[0] + price[1]Ã—qty[1] + ...
 
 **C++ Code:**
 ```cpp
@@ -1562,7 +1562,7 @@ Matches: 3
 
 **Complexity:** O(n). **WHY:** n pair operations + n combine operations.
 
-### 10.8.3 std::partial_sum — Running Totals
+### 10.8.3 std::partial_sum â€” Running Totals
 
 
 **C++ Code:**
@@ -1601,7 +1601,7 @@ Partial products: 1 2 6 24 120
 
 **Complexity:** O(n). **WHY:** n - 1 binary operations.
 
-### 10.8.4 std::adjacent_difference — Differences Between Neighbors
+### 10.8.4 std::adjacent_difference â€” Differences Between Neighbors
 
 
 **C++ Code:**
@@ -1629,7 +1629,7 @@ int main() {
 Adjacent differences: 1 2 3 4 5
 ```
 
-### 10.8.5 std::iota — Fill with Sequential Values (C++11)
+### 10.8.5 std::iota â€” Fill with Sequential Values (C++11)
 
 
 **C++ Code:**
@@ -1687,7 +1687,7 @@ Lambda expressions (C++11) are inline callable objects that capture variables fr
 |------|-------------|---------|
 | `[capture]` | What from enclosing scope is accessible | `[x, &y]`, `[=]`, `[&]`, `[this]` |
 | `(parameters)` | Input parameters | `(int a, int b)` |
-| `-> return_type` | Return type (optional — deduced) | `-> bool` |
+| `-> return_type` | Return type (optional â€” deduced) | `-> bool` |
 | `{ body }` | Function body | `{ return a < b; }` |
 
 ### 10.9.2 Capture Modes
@@ -1736,7 +1736,7 @@ Evens: 5
 ### 10.9.3 Common Lambda + Algorithm Patterns
 
 
-**Pattern 1 — Sorting with Custom Key:**
+**Pattern 1 â€” Sorting with Custom Key:**
 ```cpp
 #include <algorithm>
 #include <vector>
@@ -1789,7 +1789,7 @@ By salary (desc):
   Bob: $65000
 ```
 
-**Pattern 2 — Filter with remove_if + erase:**
+**Pattern 2 â€” Filter with remove_if + erase:**
 ```cpp
 #include <algorithm>
 #include <vector>
@@ -1818,7 +1818,7 @@ int main() {
 Words >= 4 letters: apple banana elephant
 ```
 
-**Pattern 3 — Transform with State (mutable lambda):**
+**Pattern 3 â€” Transform with State (mutable lambda):**
 ```cpp
 #include <algorithm>
 #include <vector>
@@ -1848,7 +1848,7 @@ int main() {
 Running sum via transform: 1 3 6 10 15
 ```
 
-**Pattern 4 — Find with Complex Condition:**
+**Pattern 4 â€” Find with Complex Condition:**
 ```cpp
 #include <algorithm>
 #include <vector>
@@ -1893,7 +1893,7 @@ Out of stock: Monitor
 Mid-range in stock: Keyboard ($75)
 ```
 
-**Pattern 5 — Chaining Algorithms:**
+**Pattern 5 â€” Chaining Algorithms:**
 ```cpp
 #include <algorithm>
 #include <vector>
@@ -1929,7 +1929,7 @@ int main() {
 ```
 Sum of squares of evens (sorted): 120
 ```
-## 10.10 Algorithm Categories — Comprehensive Comparison
+## 10.10 Algorithm Categories â€” Comprehensive Comparison
 
 | Category | Header | Typical Complexity | Requires Sorted? | Mutates? | Examples |
 |----------|--------|-------------------|-----------------|----------|---------|
@@ -1948,20 +1948,20 @@ Sum of squares of evens (sorted): 120
 
 ```
 Need to process data?
-├─ Read-only query? → Non-Modifying (find, count, equal)
-├─ Change in place? → Modifying (replace, remove, fill)
-├─ Change to new range? → Modifying with output iterator (copy, transform)
-├─ Reorder?
-│  ├─ Full sort? → sort (default) or stable_sort (equal-order preservation)
-│  ├─ Top-k only? → partial_sort
-│  └─ Just one position? → nth_element
-├─ Fast lookup?
-│  ├─ Sorted data? → binary_search, lower_bound
-│  └─ Unsorted? → find
-├─ Combine two ranges?
-│  ├─ Both sorted? → set_union, set_intersection, merge
-│  └─ Unsorted? → manual loop
-└─ Arithmetic? → Numeric (accumulate, inner_product, iota)
+â”œâ”€ Read-only query? â†’ Non-Modifying (find, count, equal)
+â”œâ”€ Change in place? â†’ Modifying (replace, remove, fill)
+â”œâ”€ Change to new range? â†’ Modifying with output iterator (copy, transform)
+â”œâ”€ Reorder?
+â”‚  â”œâ”€ Full sort? â†’ sort (default) or stable_sort (equal-order preservation)
+â”‚  â”œâ”€ Top-k only? â†’ partial_sort
+â”‚  â””â”€ Just one position? â†’ nth_element
+â”œâ”€ Fast lookup?
+â”‚  â”œâ”€ Sorted data? â†’ binary_search, lower_bound
+â”‚  â””â”€ Unsorted? â†’ find
+â”œâ”€ Combine two ranges?
+â”‚  â”œâ”€ Both sorted? â†’ set_union, set_intersection, merge
+â”‚  â””â”€ Unsorted? â†’ manual loop
+â””â”€ Arithmetic? â†’ Numeric (accumulate, inner_product, iota)
 ```
 
 ## 10.11 sort vs stable_sort vs partial_sort vs nth_element
@@ -1992,13 +1992,13 @@ int main() {
     std::sort(v1.begin(), v1.end());
     // v1: 1 2 3 4 5 6 7 8 9
 
-    // Need top 3 only? Use partial_sort — much less work
+    // Need top 3 only? Use partial_sort â€” much less work
     std::vector<int> v2 = v;
     std::partial_sort(v2.begin(), v2.begin() + 3, v2.end(),
                       std::greater<int>());
-    // v2: 9 8 7 ... (only first 3 sorted — rest in any order)
+    // v2: 9 8 7 ... (only first 3 sorted â€” rest in any order)
 
-    // Need median only? Use nth_element — fastest possible
+    // Need median only? Use nth_element â€” fastest possible
     std::vector<int> v3 = v;
     auto mid = v3.begin() + v3.size() / 2;
     std::nth_element(v3.begin(), mid, v3.end());
@@ -2018,7 +2018,7 @@ int main() {
 | stable_sort | 1.6x | Extra copying for stability guarantee |
 | partial_sort (k=10) | 0.3x | Heap-based, stops after top-k |
 | partial_sort (k=100) | 0.4x | Slightly more heap pops |
-| nth_element | 0.15x | Just partitions — no sorting at all |
+| nth_element | 0.15x | Just partitions â€” no sorting at all |
 
 ## 10.12 Iterator Categories and Algorithm Requirements
 
@@ -2072,7 +2072,7 @@ int main() {
 }
 ```
 
-## 10.13 Raw Loop vs STL Algorithm — A Systematic Comparison
+## 10.13 Raw Loop vs STL Algorithm â€” A Systematic Comparison
 
 Many C++ developers write raw `for` loops where algorithms would be clearer, safer, and faster.
 
@@ -2142,10 +2142,10 @@ std::transform(celsius.begin(), celsius.end(),
 ### When Raw Loops Are Acceptable
 
 
-1. **Complex control flow** — multiple break/continue conditions easier to read inline
-2. **Performance-critical hot path** — though algorithms usually compile to identical assembly
-3. **Non-standard iteration** — traversing multiple containers with complex offsets
-4. **Side-effect-heavy operations** — logging, I/O, where the loop body is the point
+1. **Complex control flow** â€” multiple break/continue conditions easier to read inline
+2. **Performance-critical hot path** â€” though algorithms usually compile to identical assembly
+3. **Non-standard iteration** â€” traversing multiple containers with complex offsets
+4. **Side-effect-heavy operations** â€” logging, I/O, where the loop body is the point
 
 ### The Sean Parent Rule
 
@@ -2156,14 +2156,14 @@ std::transform(celsius.begin(), celsius.end(),
 ### Q1: Why does std::sort fail to compile for std::list?
 
 
-**Answer:** std::sort requires **RandomAccessIterators**, but std::list provides only **BidirectionalIterators**. RandomAccessIterators support `it + n` and `it - n` for pivot calculation during QuickSort partitioning. List iterators cannot jump — they can only step forward/backward one position at a time. std::list provides its own `list::sort()` member using MergeSort, which works with bidirectional iterators and is also stable.
+**Answer:** std::sort requires **RandomAccessIterators**, but std::list provides only **BidirectionalIterators**. RandomAccessIterators support `it + n` and `it - n` for pivot calculation during QuickSort partitioning. List iterators cannot jump â€” they can only step forward/backward one position at a time. std::list provides its own `list::sort()` member using MergeSort, which works with bidirectional iterators and is also stable.
 
 ### Q2: When would you use nth_element instead of sort + index?
 
 
 **Answer:** When you need only the k-th smallest element (or median) without sorting the entire range. For n = 10,000,000:
-- std::sort: O(n log n) ≈ 10M x 24 = 240M operations
-- std::nth_element: O(n) average ≈ 10M x 3 = 30M operations — 8x faster
+- std::sort: O(n log n) â‰ˆ 10M x 24 = 240M operations
+- std::nth_element: O(n) average â‰ˆ 10M x 3 = 30M operations â€” 8x faster
 
 Use cases: computing the **median**, finding **percentiles** (25th, 75th, 90th), splitting data at a **threshold** for divide-and-conquer algorithms, QuickSelect-based pivot selection.
 
@@ -2177,7 +2177,7 @@ auto new_end = std::remove(v.begin(), v.end(), value);
 v.erase(new_end, v.end());
 ```
 
-**WHY two steps:** (1) remove works with iterators only — it has no knowledge of the container's erase method. (2) The STL separates algorithms (operations) from containers (storage). (3) remove returns a "watermark" — erase acts on it. (4) This separation allows remove to work with arrays, std::string, std::vector, std::deque, etc.
+**WHY two steps:** (1) remove works with iterators only â€” it has no knowledge of the container's erase method. (2) The STL separates algorithms (operations) from containers (storage). (3) remove returns a "watermark" â€” erase acts on it. (4) This separation allows remove to work with arrays, std::string, std::vector, std::deque, etc.
 
 ### Q4: Compare lower_bound vs binary_search for finding values.
 
@@ -2210,7 +2210,7 @@ v.insert(pos, 35);  // v stays sorted: 10 20 30 30 30 35 40
 ```cpp
 std::vector<int> v = {1000000, 2000000, 3000000};
 
-// WRONG: int overflow — result type is int
+// WRONG: int overflow â€” result type is int
 int bad = std::accumulate(v.begin(), v.end(), 0);  // may overflow
 
 // CORRECT: use long long
@@ -2219,7 +2219,7 @@ long long good = std::accumulate(v.begin(), v.end(), 0LL);
 // Floating point
 std::vector<double> vals = {1.5, 2.5, 3.0};
 double sum = std::accumulate(vals.begin(), vals.end(), 0.0);
-// 0 (int) would give 6 (truncated) — 0.0 gives 7.0
+// 0 (int) would give 6 (truncated) â€” 0.0 gives 7.0
 ```
 
 **Key rule:** Always match the initial value type to the desired result type. A `0` initial value forces `int` accumulation even if the container holds larger types.
@@ -2577,7 +2577,7 @@ Recommend to A: 2 3 4 6 8 10
    - Assigns letter grades (A: >=90, B: >=80, C: >=70, D: >=60, F: &lt;60) using std::transform
    - Computes class statistics (min, max, median, average) using std::minmax_element, std::nth_element, std::accumulate
    - Prints a ranked report
-   - Achieves all of the above without any raw for loops — use only STL algorithms
+   - Achieves all of the above without any raw for loops â€” use only STL algorithms
 
 ### Cross-Application Matrix
 
@@ -2592,4 +2592,4 @@ Recommend to A: 2 3 4 6 8 10
 
 ---
 
-> **Proceed to:** [11-file-io](./11-file-io.md) — Master file input and output in C++
+> **Proceed to:** [11-file-io](./11-file-io.md) â€” Master file input and output in C++

@@ -1,4 +1,4 @@
-# Chapter 1: Technical Interview — Core Computer Science Subjects
+﻿# Chapter 1: Technical Interview â€” Core Computer Science Subjects
 
 ## Learning Objectives
 
@@ -11,16 +11,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/interview-preparation/01-technical-interview-core-cs/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/interview-preparation/01-technical-interview-core-cs/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/01-technical-interview-core-cs/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/interview-preparation/01-technical-interview-core-cs/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/interview-preparation/01-technical-interview-core-cs/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/interview-preparation/01-technical-interview-core-cs/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/01-technical-interview-core-cs/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/interview-preparation/01-technical-interview-core-cs/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/interview-preparation/01-technical-interview-core-cs/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/interview-preparation/01-technical-interview-core-cs/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/01-technical-interview-core-cs/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/interview-preparation/01-technical-interview-core-cs/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -42,25 +42,25 @@
 - Each column has unique name
 - The order of data does not matter
 
-*Example violation:* A "PhoneNumbers" column containing "9876543210, 8765432109" — must be split into separate rows.
+*Example violation:* A "PhoneNumbers" column containing "9876543210, 8765432109" â€” must be split into separate rows.
 
 **2NF (Second Normal Form):**
 - In 1NF
 - Every non-key column is fully functionally dependent on the primary key (no partial dependency)
 
-*Example violation:* Table(StudentID, CourseID, StudentName, Instructor) — StudentName depends only on StudentID, not on the composite key (StudentID, CourseID).
+*Example violation:* Table(StudentID, CourseID, StudentName, Instructor) â€” StudentName depends only on StudentID, not on the composite key (StudentID, CourseID).
 
 **3NF (Third Normal Form):**
 - In 2NF
 - No transitive dependency (non-key column should not depend on another non-key column)
 
-*Example violation:* Table(EmployeeID, DepartmentID, DepartmentName) — DepartmentName depends on DepartmentID, which is not a candidate key.
+*Example violation:* Table(EmployeeID, DepartmentID, DepartmentName) â€” DepartmentName depends on DepartmentID, which is not a candidate key.
 
 **BCNF (Boyce-Codd Normal Form):**
 - In 3NF
-- For every functional dependency X → Y, X must be a super key
+- For every functional dependency X â†’ Y, X must be a super key
 
-*Example violation:* Table(StudentID, Subject, Professor) where one Professor teaches only one Subject, but a Subject can have multiple Professors. Here Professor → Subject, but Professor is not a super key.
+*Example violation:* Table(StudentID, Subject, Professor) where one Professor teaches only one Subject, but a Subject can have multiple Professors. Here Professor â†’ Subject, but Professor is not a super key.
 </details>
 
 #### Q2: What are ACID properties in database transactions?
@@ -72,7 +72,7 @@
 
 | Property | Meaning | Example |
 |----------|---------|---------|
-| **Atomicity** | Transaction is all-or-nothing; partial execution rolls back completely | Transfer of ₹1000 from A to B deducts from A AND adds to B, or neither happens |
+| **Atomicity** | Transaction is all-or-nothing; partial execution rolls back completely | Transfer of â‚¹1000 from A to B deducts from A AND adds to B, or neither happens |
 | **Consistency** | Database moves from one valid state to another; all constraints preserved | After transfer, total money remains same (A+B is constant) |
 | **Isolation** | Concurrent transactions don't interfere; each appears to execute alone | Two simultaneous transfers from A to B and A to C don't create inconsistency |
 | **Durability** | Committed changes survive system failures | Once transfer is committed, it persists even if power fails immediately after |
@@ -140,7 +140,7 @@ CREATE CLUSTERED INDEX idx_emp_id ON Employees(EmpID);
 CREATE NONCLUSTERED INDEX idx_emp_name ON Employees(Name);
 ```
 
-**⭐ Must Know:** In SQL Server, primary key creates a clustered index by default. In MySQL (InnoDB), primary key is always a clustered index.
+**â­ Must Know:** In SQL Server, primary key creates a clustered index by default. In MySQL (InnoDB), primary key is always a clustered index.
 </details>
 
 #### Q5: What is a deadlock in databases? How is it handled?
@@ -151,9 +151,9 @@ CREATE NONCLUSTERED INDEX idx_emp_name ON Employees(Name);
 **Answer:** A deadlock occurs when two or more transactions hold locks on resources each other needs, creating a circular wait.
 
 ```
-Transaction 1: Locks Table A → waits for Table B
-Transaction 2: Locks Table B → waits for Table A
-Both transactions wait indefinitely → Deadlock
+Transaction 1: Locks Table A â†’ waits for Table B
+Transaction 2: Locks Table B â†’ waits for Table A
+Both transactions wait indefinitely â†’ Deadlock
 ```
 
 **Deadlock handling strategies:**
@@ -333,8 +333,8 @@ UPDATE EmpBasic SET Salary = 60000 WHERE EmpID = 101; -- Works
 **Answer:** Sharding is a horizontal partitioning technique where data is distributed across multiple database instances (shards). Each shard holds a subset of data.
 
 ```
-Application → Router → Shard 1 (Users A-M)
-                       → Shard 2 (Users N-Z)
+Application â†’ Router â†’ Shard 1 (Users A-M)
+                       â†’ Shard 2 (Users N-Z)
 ```
 
 **Sharding strategies:**
@@ -364,9 +364,9 @@ Application → Router → Shard 1 (Users A-M)
 | Line | Connects components | Links entities to relationships |
 
 **Relationships:**
-- **1:1** — One student has one locker
-- **1:N** — One department has many employees
-- **M:N** — Many students enroll in many courses
+- **1:1** â€” One student has one locker
+- **1:N** â€” One department has many employees
+- **M:N** â€” Many students enroll in many courses
 
 **Keys:**
 - **Primary Key:** Uniquely identifies each row
@@ -466,7 +466,7 @@ flowchart TB
 | Data Link | Framing, MAC addressing, error detection | Ethernet, PPP | Switch, Bridge |
 | Physical | Bit transmission over medium | RS-232, 1000BASE-T | Hub, Repeater |
 
-**Mnemonic:** "Please Do Not Throw Sausage Pizza Away" (Physical → Application)
+**Mnemonic:** "Please Do Not Throw Sausage Pizza Away" (Physical â†’ Application)
 </details>
 
 #### Q17: What is the difference between TCP and UDP?
@@ -490,9 +490,9 @@ flowchart TB
 
 **TCP Three-Way Handshake:**
 ```
-1. Client → Server: SYN (seq=x)
-2. Client ← Server: SYN-ACK (seq=y, ack=x+1)
-3. Client → Server: ACK (seq=x+1, ack=y+1)
+1. Client â†’ Server: SYN (seq=x)
+2. Client â† Server: SYN-ACK (seq=y, ack=x+1)
+3. Client â†’ Server: ACK (seq=x+1, ack=y+1)
 ```
 </details>
 
@@ -506,12 +506,12 @@ flowchart TB
 **Resolution process:**
 ```
 1. User types "www.google.com" in browser
-2. Browser checks local cache → if not found
+2. Browser checks local cache â†’ if not found
 3. Query goes to Recursive DNS Resolver (ISP)
-4. Resolver queries Root DNS Server → gets .com TLD server
-5. Resolver queries .com TLD Server → gets google.com nameserver
-6. Resolver queries google.com Authoritative nameserver → gets IP
-7. IP returned to browser → HTTPS connection established
+4. Resolver queries Root DNS Server â†’ gets .com TLD server
+5. Resolver queries .com TLD Server â†’ gets google.com nameserver
+6. Resolver queries google.com Authoritative nameserver â†’ gets IP
+7. IP returned to browser â†’ HTTPS connection established
 ```
 
 ```mermaid
@@ -581,7 +581,7 @@ flowchart LR
 | Proxy | Application (L7) | Acts as intermediary |
 | Next-Gen | Multi-layer | Deep packet inspection, IDS/IPS |
 
-**⭐ Must Know:** In government exams, questions about firewall types and OSI layers are common.
+**â­ Must Know:** In government exams, questions about firewall types and OSI layers are common.
 </details>
 
 #### Q21: What is subnetting? Explain with example.
@@ -594,16 +594,16 @@ flowchart LR
 **Example:** Given IP 192.168.1.0/24, create 4 subnets.
 
 ```
-Original: 192.168.1.0/24 → 256 IPs (254 usable)
+Original: 192.168.1.0/24 â†’ 256 IPs (254 usable)
 Subnet mask: 255.255.255.0
 
 To create 4 subnets, borrow 2 bits from host portion:
 New prefix: /26 (255.255.255.192)
 
-Subnet 1: 192.168.1.0/26   → 192.168.1.1 - 192.168.1.62
-Subnet 2: 192.168.1.64/26  → 192.168.1.65 - 192.168.1.126
-Subnet 3: 192.168.1.128/26 → 192.168.1.129 - 192.168.1.190
-Subnet 4: 192.168.1.192/26 → 192.168.1.193 - 192.168.1.254
+Subnet 1: 192.168.1.0/26   â†’ 192.168.1.1 - 192.168.1.62
+Subnet 2: 192.168.1.64/26  â†’ 192.168.1.65 - 192.168.1.126
+Subnet 3: 192.168.1.128/26 â†’ 192.168.1.129 - 192.168.1.190
+Subnet 4: 192.168.1.192/26 â†’ 192.168.1.193 - 192.168.1.254
 ```
 
 **Subnetting Shortcut:**
@@ -779,7 +779,7 @@ Example: 192.168.1.0/24
 - Example: `00:1A:2B:3C:4D:5E`
 
 **Structure:**
-- **First 24 bits (OUI):** Organizationally Unique Identifier — identifies manufacturer
+- **First 24 bits (OUI):** Organizationally Unique Identifier â€” identifies manufacturer
 - **Last 24 bits:** Device-specific, assigned by manufacturer
 
 **Types:**
@@ -825,17 +825,17 @@ Example: 192.168.1.0/24
 
 **Algorithm:**
 ```
-1. Sense carrier → if busy, wait
+1. Sense carrier â†’ if busy, wait
 2. Transmit data
 3. If collision detected:
    - Send jam signal (32-bit)
    - Increment collision counter
    - Wait random backoff time (0 to 2^k - 1 slot times)
    - Retry (max 16 attempts)
-4. If no collision → transmission successful
+4. If no collision â†’ transmission successful
 ```
 
-**⭐ Must Know:** Modern Ethernet (switched) uses full-duplex, eliminating collisions. CSMA/CD is mainly historical.
+**â­ Must Know:** Modern Ethernet (switched) uses full-duplex, eliminating collisions. CSMA/CD is mainly historical.
 </details>
 
 #### Q32: What is the difference between Symmetric and Asymmetric encryption?
@@ -947,7 +947,7 @@ Example: 192.168.1.0/24
 - Allows sharing at segment level
 - External fragmentation possible (variable sizes)
 
-**Paged Segmentation:** Combines both — segments are divided into pages. Used in some architectures.
+**Paged Segmentation:** Combines both â€” segments are divided into pages. Used in some architectures.
 </details>
 
 #### Q37: What is virtual memory?
@@ -1056,7 +1056,7 @@ void consumer() {
 1. Let Work = Available, Finish[i] = false for all i
 2. Find i such that Finish[i] = false AND Need[i] <= Work
 3. If found: Work = Work + Allocation[i]; Finish[i] = true; goto 2
-4. If all Finish[i] = true → Safe state
+4. If all Finish[i] = true â†’ Safe state
 ```
 
 > **Real Experience:** In an Infosys interview, the interviewer asked me to simulate Banker's Algorithm with a given allocation matrix. This is very common in both IT and government technical interviews.
@@ -1098,7 +1098,7 @@ void consumer() {
 | Communication | `pipe()`, `shmget()`, `socket()`, `send()` |
 | Protection | `chmod()`, `chown()`, `umask()` |
 
-**Flow:** User App → Library (glibc) → System Call → Kernel → Hardware
+**Flow:** User App â†’ Library (glibc) â†’ System Call â†’ Kernel â†’ Hardware
 </details>
 
 #### Q43: Explain the difference between internal and external fragmentation.
@@ -1128,13 +1128,13 @@ void consumer() {
 
 | Level | Description | Min Drives | Capacity | Redundancy | Performance |
 |-------|-------------|-----------|----------|------------|-------------|
-| RAID 0 | Striping (no redundancy) | 2 | N × Disk | None | Best |
-| RAID 1 | Mirroring | 2 | N/2 × Disk | Excellent | Good read, slower write |
-| RAID 5 | Striping + Parity | 3 | (N-1) × Disk | Good (1 disk) | Good read, slow write |
-| RAID 6 | Striping + Dual Parity | 4 | (N-2) × Disk | Very good (2 disks) | Good read, slow write |
-| RAID 10 | Striping + Mirroring | 4 | N/2 × Disk | Excellent | Best all-round |
+| RAID 0 | Striping (no redundancy) | 2 | N Ã— Disk | None | Best |
+| RAID 1 | Mirroring | 2 | N/2 Ã— Disk | Excellent | Good read, slower write |
+| RAID 5 | Striping + Parity | 3 | (N-1) Ã— Disk | Good (1 disk) | Good read, slow write |
+| RAID 6 | Striping + Dual Parity | 4 | (N-2) Ã— Disk | Very good (2 disks) | Good read, slow write |
+| RAID 10 | Striping + Mirroring | 4 | N/2 Ã— Disk | Excellent | Best all-round |
 
-**Common in interviews:** "Why is RAID 5 write performance slower?" — Because parity calculation overhead and read-modify-write cycle.
+**Common in interviews:** "Why is RAID 5 write performance slower?" â€” Because parity calculation overhead and read-modify-write cycle.
 </details>
 
 #### Q45: Explain the boot process of a computer.
@@ -1145,7 +1145,7 @@ void consumer() {
 **Answer:** The boot process is the sequence of events from power-on to OS loading.
 
 ```
-1. Power-On Self-Test (POST) — BIOS/UEFI checks hardware
+1. Power-On Self-Test (POST) â€” BIOS/UEFI checks hardware
 2. BIOS/UEFI identifies boot device (HDD, SSD, USB)
 3. Bootloader (GRUB, Windows Boot Manager) loads
 4. Bootloader loads kernel into memory
@@ -1180,7 +1180,7 @@ void consumer() {
 | Failure | Only user process crashes | Entire system may crash |
 | Examples | Browsers, games, text editors | OS kernel, device drivers |
 
-**Transition:** User → System Call → Kernel Mode → Execute → Return → User Mode
+**Transition:** User â†’ System Call â†’ Kernel Mode â†’ Execute â†’ Return â†’ User Mode
 </details>
 
 #### Q47: Explain the concept of "Thrashing".
@@ -1222,7 +1222,7 @@ void consumer() {
 3. **Chandy-Misra:** Use clean/dirty fork states
 4. **Test-and-set:** Use mutex per fork, but pick both only if both available
 
-**Livelock vs Deadlock:** If all philosophers pick up left fork simultaneously → deadlock. If they put down left fork after timeout → could lead to livelock (repeated attempt).
+**Livelock vs Deadlock:** If all philosophers pick up left fork simultaneously â†’ deadlock. If they put down left fork after timeout â†’ could lead to livelock (repeated attempt).
 </details>
 
 ---
@@ -1463,7 +1463,7 @@ class TreeNode<T> {
 class BinaryTree<T> {
   constructor(public root: TreeNode<T> | null = null) {}
 
-  // Inorder: Left → Root → Right
+  // Inorder: Left â†’ Root â†’ Right
   inorder(node: TreeNode<T> | null = this.root): T[] {
     if (!node) return [];
     return [
@@ -1473,7 +1473,7 @@ class BinaryTree<T> {
     ];
   }
 
-  // Preorder: Root → Left → Right
+  // Preorder: Root â†’ Left â†’ Right
   preorder(node: TreeNode<T> | null = this.root): T[] {
     if (!node) return [];
     return [
@@ -1483,7 +1483,7 @@ class BinaryTree<T> {
     ];
   }
 
-  // Postorder: Left → Right → Root
+  // Postorder: Left â†’ Right â†’ Root
   postorder(node: TreeNode<T> | null = this.root): T[] {
     if (!node) return [];
     return [
@@ -1681,16 +1681,16 @@ class HashMap<K, V> {
 
 | Algorithm | Best | Average | Worst | Space | Stable |
 |-----------|------|---------|-------|-------|--------|
-| Bubble | O(n) | O(n²) | O(n²) | O(1) | Yes |
-| Selection | O(n²) | O(n²) | O(n²) | O(1) | No |
-| Insertion | O(n) | O(n²) | O(n²) | O(1) | Yes |
+| Bubble | O(n) | O(nÂ²) | O(nÂ²) | O(1) | Yes |
+| Selection | O(nÂ²) | O(nÂ²) | O(nÂ²) | O(1) | No |
+| Insertion | O(n) | O(nÂ²) | O(nÂ²) | O(1) | Yes |
 | Merge | O(n log n) | O(n log n) | O(n log n) | O(n) | Yes |
-| Quick | O(n log n) | O(n log n) | O(n²) | O(log n) | No |
+| Quick | O(n log n) | O(n log n) | O(nÂ²) | O(log n) | No |
 | Heap | O(n log n) | O(n log n) | O(n log n) | O(1) | No |
 | Counting | O(n+k) | O(n+k) | O(n+k) | O(k) | Yes |
 | Radix | O(nk) | O(nk) | O(nk) | O(n+k) | Yes |
 
-**⭐ Must Know:** Quick sort for average case, Merge sort for worst-case guarantees, Counting sort for small integer ranges.
+**â­ Must Know:** Quick sort for average case, Merge sort for worst-case guarantees, Counting sort for small integer ranges.
 </details>
 
 ---
@@ -1709,7 +1709,7 @@ class HashMap<K, V> {
 | **Encapsulation** | Bundling data and methods, hiding internal state | ATM machine (buttons visible, internals hidden) | `private`, `getters/setters` |
 | **Abstraction** | Hiding implementation details, exposing only functionality | Car steering wheel (interface), engine (implementation) | `abstract class`, `interface` |
 | **Inheritance** | Child class derives properties from parent class | Parent-child genetic traits | `extends`, `super()` |
-| **Polymorphism** | Same interface, different implementations | Animal sound → Dog barks, Cat meows | `method overriding`, `overloading` |
+| **Polymorphism** | Same interface, different implementations | Animal sound â†’ Dog barks, Cat meows | `method overriding`, `overloading` |
 
 ```typescript
 // Encapsulation
@@ -1838,13 +1838,13 @@ class Calculator {
 // Overriding
 class Payment {
   process(amount: number): string {
-    return `Processing generic payment: ₹${amount}`;
+    return `Processing generic payment: â‚¹${amount}`;
   }
 }
 
 class CreditCardPayment extends Payment {
   override process(amount: number): string {
-    return `Processing credit card payment: ₹${amount}`;
+    return `Processing credit card payment: â‚¹${amount}`;
   }
 }
 ```
@@ -1924,7 +1924,7 @@ class InvoiceRepository {
 | Memento | Captures/restores object state |
 | Interpreter | Evaluates language/expressions |
 
-**⭐ Must Know:** Singleton, Factory, Observer, Strategy, Decorator — most frequently asked.
+**â­ Must Know:** Singleton, Factory, Observer, Strategy, Decorator â€” most frequently asked.
 </details>
 
 #### Q62: Implement Singleton pattern in TypeScript.
@@ -2024,7 +2024,7 @@ class Investor implements Observer {
 
   update(stock: string, price: number): void {
     console.log(
-      `${this.name} notified: ${stock} is now ₹${price}`
+      `${this.name} notified: ${stock} is now â‚¹${price}`
     );
   }
 }
@@ -2037,8 +2037,8 @@ const suresh = new Investor('Suresh');
 market.addObserver(ramesh);
 market.addObserver(suresh);
 market.setPrice('TCS', 3450.50);
-// Ramesh notified: TCS is now ₹3450.50
-// Suresh notified: TCS is now ₹3450.50
+// Ramesh notified: TCS is now â‚¹3450.50
+// Suresh notified: TCS is now â‚¹3450.50
 ```
 </details>
 
@@ -2239,7 +2239,7 @@ flowchart TD
 
 **CI/CD Pipeline stages:**
 ```
-Source → Build → Test → Deploy to Staging → Integration Test → Deploy to Production
+Source â†’ Build â†’ Test â†’ Deploy to Staging â†’ Integration Test â†’ Deploy to Production
 ```
 
 | Tool | Purpose |
@@ -2383,7 +2383,7 @@ Source → Build → Test → Deploy to Staging → Integration Test → Deploy 
 | OSI layers | Physical, Data Link, Network, Transport, Session, Presentation, Application |
 | TCP vs UDP | Connection-oriented vs connectionless, reliable vs best-effort |
 | HTTP methods | GET (read), POST (create), PUT (replace), DELETE (remove) |
-| DNS | Domain → IP mapping, hierarchical resolution |
+| DNS | Domain â†’ IP mapping, hierarchical resolution |
 | Subnetting | Borrow bits from host portion, /24 = 256 IPs |
 
 ### OS Quick Reference
@@ -2445,7 +2445,7 @@ Total: **75 Q&A pairs** covering the most commonly asked topics across IT and go
 
 5. **Connect concepts:** Many interview questions combine topics (e.g., "Design a URL shortener" combines DBMS design, system design, and networking). Practice cross-topic thinking.
 
-6. **⭐ Must Know topics:** Deadlock conditions, ACID properties, OSI model, TCP vs UDP, SQL JOINs, normalization, process scheduling, BST properties, four pillars of OOPs, SOLID principles.
+6. **â­ Must Know topics:** Deadlock conditions, ACID properties, OSI model, TCP vs UDP, SQL JOINs, normalization, process scheduling, BST properties, four pillars of OOPs, SOLID principles.
 
 7. **Mock drill:** Set a timer for 30 minutes. Randomly pick 10 questions from this chapter and answer them verbally. Repeat until you can answer naturally without hesitation.
 

@@ -1,4 +1,4 @@
-# Chapter 4: Eloquent ORM, Database & Migrations
+﻿# Chapter 4: Eloquent ORM, Database & Migrations
 > **Previous:** [Blade Templating, Components & Frontend](./03-blade-frontend) | **Next:** [Authentication, Authorization & Security](./05-auth-security)
 
 ---
@@ -15,16 +15,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/04-eloquent-database/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/04-eloquent-database/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/04-eloquent-database/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/04-eloquent-database/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/04-eloquent-database/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/04-eloquent-database/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/04-eloquent-database/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/04-eloquent-database/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/04-eloquent-database/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/04-eloquent-database/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/04-eloquent-database/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/04-eloquent-database/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -138,7 +138,7 @@ php artisan schema:dump
 php artisan schema:dump --prune
 // Dumps and prunes all existing migration files
 
-> **Pro Tip:** Use `schema:dump --prune` in CI/CD pipelines to dramatically speed up deployments. Laravel loads the schema dump first, then runs only new individual migrations — this can reduce deployment time from minutes to seconds on large projects.
+> **Pro Tip:** Use `schema:dump --prune` in CI/CD pipelines to dramatically speed up deployments. Laravel loads the schema dump first, then runs only new individual migrations â€” this can reduce deployment time from minutes to seconds on large projects.
 ```
 
 When squashed migrations exist, Laravel loads the schema dump first, then runs any remaining individual migrations.
@@ -1450,7 +1450,7 @@ class Post extends Model
 | Mass Assignment | Protected via fillable/guarded | Not applicable | Not applicable |
 | Best For | Complex domain logic | Simple CRUD, reports | Custom database features |
 
-## Quick Reference — Artisan Commands
+## Quick Reference â€” Artisan Commands
 
 | Command | Purpose |
 |---------|---------|

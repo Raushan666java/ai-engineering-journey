@@ -1,4 +1,4 @@
-# Chapter 6: CAP Theorem and Distributed Consistency
+﻿# Chapter 6: CAP Theorem and Distributed Consistency
 > **Previous:** [05 Partitioning Sharding](./05-partitioning-sharding.md) | **Next:** [07 Message Queues](./07-message-queues.md)
 
 ---
@@ -15,16 +15,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/system-design/06-distributed-consistency/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/system-design/06-distributed-consistency/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/system-design/06-distributed-consistency/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/system-design/06-distributed-consistency/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/system-design/06-distributed-consistency/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/system-design/06-distributed-consistency/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/system-design/06-distributed-consistency/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/system-design/06-distributed-consistency/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/system-design/06-distributed-consistency/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/system-design/06-distributed-consistency/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/system-design/06-distributed-consistency/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/system-design/06-distributed-consistency/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -70,7 +70,7 @@ The CAP theorem, formalized by Seth Gilbert and Nancy Lynch in 2002, states that
 
 **Definitions:**
 
-- **Consistency (C):** Every read receives the most recent write or an error. All nodes see the same data at the same time. This is *linearizability* — operations appear to execute atomically at a single instant between invocation and response.
+- **Consistency (C):** Every read receives the most recent write or an error. All nodes see the same data at the same time. This is *linearizability* â€” operations appear to execute atomically at a single instant between invocation and response.
 - **Availability (A):** Every request receives a non-error response, without guarantee that it contains the most recent write. The system continues to function even when nodes are down.
 - **Partition Tolerance (P):** The system continues to operate despite an arbitrary number of messages being dropped or delayed between nodes (network partition).
 
@@ -100,7 +100,7 @@ The CAP theorem is often misunderstood. Key clarifications:
 
 2. **CAP is not 2-out-of-3.** You don't "pick two" at design time. You design for consistency or availability when partitions happen. Most systems choose CP or AP.
 
-3. **CAP ignores latency.** Partition-like behavior can occur even without a network cut — if two datacenters are connected by a high-latency link, a synchronous write may time out, forcing a choice between consistency and availability.
+3. **CAP ignores latency.** Partition-like behavior can occur even without a network cut â€” if two datacenters are connected by a high-latency link, a synchronous write may time out, forcing a choice between consistency and availability.
 
 ### PACELC Extension
 
@@ -143,7 +143,7 @@ Client 3: read(x) ? returns 1 (guaranteed)
 
 **Implementation:** Requires majority acknowledgment before returning to the client. In a quorum system, a write must reach `W` nodes and a read must reach `R` nodes such that `W + R > N`.
 
-**Cost:** Higher latency — every write must coordinate with multiple nodes. During failures, the system may become unavailable (CP sacrifice).
+**Cost:** Higher latency â€” every write must coordinate with multiple nodes. During failures, the system may become unavailable (CP sacrifice).
 
 #### Sequential Consistency
 
@@ -176,7 +176,7 @@ Causal consistency captures the *happens-before* relationship. It is typically i
 
 #### Eventual Consistency
 
-If no new updates are made to a data item, eventually all reads will return the last updated value. There is no time bound — the system converges eventually.
+If no new updates are made to a data item, eventually all reads will return the last updated value. There is no time bound â€” the system converges eventually.
 
 ```
 Write to Node A: x=42
@@ -186,7 +186,7 @@ Read from Node C: x=42 (converged)
 Read from Node B: x=42 (finally converged)
 ```
 
-Eventual consistency is the weakest model. It provides the best availability and latency because reads and writes can complete without waiting for other nodes. However, application complexity increases — developers must handle stale reads and resolve conflicts.
+Eventual consistency is the weakest model. It provides the best availability and latency because reads and writes can complete without waiting for other nodes. However, application complexity increases â€” developers must handle stale reads and resolve conflicts.
 
 **Convergence requires conflict resolution.** Two widely used approaches:
 
@@ -201,7 +201,7 @@ A quorum is the minimum number of nodes that must participate in a read or write
 
 **`W + R > N`**
 
-This ensures that any read quorum intersects with any write quorum — at least one node holds the latest write.
+This ensures that any read quorum intersects with any write quorum â€” at least one node holds the latest write.
 
 #### Quorum Configurations
 
@@ -248,7 +248,7 @@ Intended target: Node 3 (down)
   ? When Node 3 recovers, Node 5 delivers the write
 ```
 
-Hinted handoff improves availability — writes succeed even when some replicas are temporarily unavailable. However, it can weaken consistency guarantees if the hint is lost before delivery.
+Hinted handoff improves availability â€” writes succeed even when some replicas are temporarily unavailable. However, it can weaken consistency guarantees if the hint is lost before delivery.
 
 ### Gossip Protocol
 
@@ -279,7 +279,7 @@ SWIM (Scalable Weakly-consistent Infection-style Process Group Membership Protoc
 
 1. **Failure Detector:** Each node periodically picks a random member and sends a ping. If the ping times out, the node sends indirect pings through k other nodes to confirm the failure. After confirmation, the node is declared failed.
 
-2. **Dissemination Component:** Membership updates (joins, leaves, failures) are propagated via gossip — each piggyback update is attached to the ping/pong messages.
+2. **Dissemination Component:** Membership updates (joins, leaves, failures) are propagated via gossip â€” each piggyback update is attached to the ping/pong messages.
 
 ```
 Node A ? ping ? Node B (random target)
@@ -384,12 +384,12 @@ class ORSet:
                 self.elements[element] = set(other_tags)
 ```
 
-Two concurrent `add("x")` operations produce the same result as one `add("x")` — the union of tags converges. A concurrent add and remove: if the remove has seen the add's tag, the element stays removed; otherwise the remove is ignored.
+Two concurrent `add("x")` operations produce the same result as one `add("x")` â€” the union of tags converges. A concurrent add and remove: if the remove has seen the add's tag, the element stays removed; otherwise the remove is ignored.
 
 ### Logical Clocks
 
 
-Physical clocks are unreliable in distributed systems — clock skew can produce incorrect orderings. Logical clocks capture causality without relying on synchronized wall clocks.
+Physical clocks are unreliable in distributed systems â€” clock skew can produce incorrect orderings. Logical clocks capture causality without relying on synchronized wall clocks.
 
 #### Lamport Clocks
 
@@ -404,11 +404,11 @@ C=2 (send msg)      C=3 (internal)
 ? receives ts 4 ? C=max(2,4)+1=5
 ```
 
-**Property:** If `a happens-before b` (causal relationship), then `C(a) < C(b)`. However, `C(a) < C(b)` does NOT imply `a happens-before b` — Lamport clocks cannot detect concurrent events.
+**Property:** If `a happens-before b` (causal relationship), then `C(a) < C(b)`. However, `C(a) < C(b)` does NOT imply `a happens-before b` â€” Lamport clocks cannot detect concurrent events.
 
 #### Vector Clocks
 
-Each process maintains a vector of counters — one entry per process. Updates track causality more precisely.
+Each process maintains a vector of counters â€” one entry per process. Updates track causality more precisely.
 
 ```
 Process P1:        Process P2:
@@ -453,7 +453,7 @@ A Merkle tree is a hash tree where leaf nodes contain hashes of data blocks and 
 
 **Efficiency:** With N keys in a range, the expected number of exchanged hashes is O(log N) for comparing trees, and O(D * log N) for finding D differences. Without Merkle trees, two replicas would need to compare all N keys (O(N)).
 
-**Use in Dynamo:** Each node maintains a Merkle tree per key range. The tree depth is configurable — a depth-16 tree for 2^16 keys means only 16 hashes are exchanged to detect differences in that entire range. Once a mismatch is found at a specific hash level, the nodes drill down to the exact differing keys.
+**Use in Dynamo:** Each node maintains a Merkle tree per key range. The tree depth is configurable â€” a depth-16 tree for 2^16 keys means only 16 hashes are exchanged to detect differences in that entire range. Once a mismatch is found at a specific hash level, the nodes drill down to the exact differing keys.
 
 ### Distributed Snapshots (Chandy-Lamport Algorithm)
 
@@ -503,7 +503,7 @@ Amazon DynamoDB, derived from the Dynamo paper, offers tunable consistency level
 ```
 Consistency Levels:
   EVENTUAL:     R=1, W=1 (fastest, weakest)
-  STRONG:       R=N, W=N (slowest, strongest) — not available in standard DynamoDB
+  STRONG:       R=N, W=N (slowest, strongest) â€” not available in standard DynamoDB
   CONSISTENT_READ: R=1 with read-after-write consistency guarantee via coordinator
 ```
 
@@ -578,7 +578,7 @@ CL.ALL read: response when all 3 replicas respond (p50 ~10ms, p99 ~50ms)
 
 ### Example 3: Google Spanner External Consistency
 
-Google Spanner provides *external consistency* — the strongest consistency model for geographically distributed databases. It is equivalent to linearizability but across datacenters.
+Google Spanner provides *external consistency* â€” the strongest consistency model for geographically distributed databases. It is equivalent to linearizability but across datacenters.
 
 **Mechanism:** Spanner uses the TrueTime API, which exposes a time interval `[earliest, latest]` for the current time. TrueTime guarantees bounded clock skew of `< 7ms` using GPS clocks and atomic clocks.
 
@@ -1146,7 +1146,7 @@ console.log('Causal check (1->2):', causal1.happensBefore(causal2) ? 'happens-be
 
 ### TypeScript: Raft Consensus (Leader Election and Log Replication)
 
-This class simulates the Raft consensus algorithm — leader election, log replication, and commit — with configurable cluster size and failure scenarios.
+This class simulates the Raft consensus algorithm â€” leader election, log replication, and commit â€” with configurable cluster size and failure scenarios.
 
 ```typescript
 type RaftRole = 'follower' | 'candidate' | 'leader';
@@ -1353,21 +1353,21 @@ flowchart LR
 
 | Takeaway | Application |
 |----------|-------------|
-| CAP applies only during partitions | In normal operation (no partition), you can have both consistency and availability — optimize for the common case |
+| CAP applies only during partitions | In normal operation (no partition), you can have both consistency and availability â€” optimize for the common case |
 | PACELC captures the real trade-off | During normal operation, choose between low latency (eventual consistency) and strong consistency (coordination overhead) |
 | W+R > N guarantees strong consistency | Configure N=3, W=2, R=2 for balanced strong consistency with single-node fault tolerance |
 | Vector clocks detect but don't resolve conflicts | Use vector clocks to detect concurrent writes; defer conflict resolution to application logic or CRDTs |
-| CRDTs eliminate conflicts by design | Use G-Counter for counters, PN-Counter for +/- counters, OR-Set for sets with add/remove — no conflict resolution needed |
+| CRDTs eliminate conflicts by design | Use G-Counter for counters, PN-Counter for +/- counters, OR-Set for sets with add/remove â€” no conflict resolution needed |
 | Raft provides understandable consensus | Leader election + log replication + committed entries. Used by etcd, Consul, and MongoDB (replica set) |
-| Merkle trees enable O(log N) anti-entropy | Exchange root hashes; recursively drill down to find exact differing keys — scales to billions of keys |
+| Merkle trees enable O(log N) anti-entropy | Exchange root hashes; recursively drill down to find exact differing keys â€” scales to billions of keys |
 
 ### Case Study
 
-**Google Spanner — External Consistency at Global Scale.** Google Spanner is the first globally distributed database to provide external consistency (the strongest consistency model, equivalent to linearizability across data centers). The defining challenge was coordinating writes across 100+ data centers while maintaining serializable isolation — a problem that traditional consensus algorithms (Paxos, Raft) could not solve because they rely on physical clocks, which drift across data centers by 10-100ms. Spanner's innovation was TrueTime, a hardware-assisted time synchronization service built on GPS receivers and atomic clocks in each data center. TrueTime exposes a time interval `[earliest, latest]` with bounded uncertainty of 1-7ms, allowing Spanner to assign commit timestamps that are guaranteed to be globally unique and consistent with real-time order.
+**Google Spanner â€” External Consistency at Global Scale.** Google Spanner is the first globally distributed database to provide external consistency (the strongest consistency model, equivalent to linearizability across data centers). The defining challenge was coordinating writes across 100+ data centers while maintaining serializable isolation â€” a problem that traditional consensus algorithms (Paxos, Raft) could not solve because they rely on physical clocks, which drift across data centers by 10-100ms. Spanner's innovation was TrueTime, a hardware-assisted time synchronization service built on GPS receivers and atomic clocks in each data center. TrueTime exposes a time interval `[earliest, latest]` with bounded uncertainty of 1-7ms, allowing Spanner to assign commit timestamps that are guaranteed to be globally unique and consistent with real-time order.
 
-**Architecture Details.** Spanner uses a two-layer replication architecture. The top layer is a Paxos group per shard (each shard = ~2-4 GB of data). The bottom layer is TrueTime-driven commit wait: after a Paxos leader assigns a commit timestamp `t = TT.now().latest`, it waits until `TT.now().earliest > t` before marking the write as committed. This "commit wait" (typically 7ms) guarantees that any subsequent read, anywhere in the world, will observe the write because all clocks in the system have passed the commit timestamp. Reads use a similar mechanism — a read timestamp is chosen and the system waits until `TT.now().earliest > read_timestamp` to ensure all writes up to that point are visible.
+**Architecture Details.** Spanner uses a two-layer replication architecture. The top layer is a Paxos group per shard (each shard = ~2-4 GB of data). The bottom layer is TrueTime-driven commit wait: after a Paxos leader assigns a commit timestamp `t = TT.now().latest`, it waits until `TT.now().earliest > t` before marking the write as committed. This "commit wait" (typically 7ms) guarantees that any subsequent read, anywhere in the world, will observe the write because all clocks in the system have passed the commit timestamp. Reads use a similar mechanism â€” a read timestamp is chosen and the system waits until `TT.now().earliest > read_timestamp` to ensure all writes up to that point are visible.
 
-**Business Impact.** Spanner powers Google's most critical applications: Google Ads (formerly AdWords), Google Play, and Google Search indexing. The switch from a sharded MySQL deployment to Spanner reduced operational complexity by 80% (no more manual shard management) and enabled cross-datacenter reads with strong consistency. The TrueTime commit wait adds 7ms of latency per write — an acceptable cost for applications that need global ACID transactions. The key lesson: Spanner did not sacrifice consistency for scale — it used physical infrastructure (GPS + atomic clocks) to make a previously impossible trade-off (linearizability at global scale) feasible. For systems that do not need external consistency, Spanner's approach is over-engineered; for financial, auction, and advertising systems where every cent must be accounted for correctly, it is the only correct choice.
+**Business Impact.** Spanner powers Google's most critical applications: Google Ads (formerly AdWords), Google Play, and Google Search indexing. The switch from a sharded MySQL deployment to Spanner reduced operational complexity by 80% (no more manual shard management) and enabled cross-datacenter reads with strong consistency. The TrueTime commit wait adds 7ms of latency per write â€” an acceptable cost for applications that need global ACID transactions. The key lesson: Spanner did not sacrifice consistency for scale â€” it used physical infrastructure (GPS + atomic clocks) to make a previously impossible trade-off (linearizability at global scale) feasible. For systems that do not need external consistency, Spanner's approach is over-engineered; for financial, auction, and advertising systems where every cent must be accounted for correctly, it is the only correct choice.
 
 ## Chapter Quiz
 
@@ -1397,15 +1397,15 @@ flowchart LR
 ## Exercises
 
 <details>
-<summary>Review Questions — Click to expand</summary>
+<summary>Review Questions â€” Click to expand</summary>
 
 ### Review Questions
 
 1. Prove that a quorum system with `N=5`, `W=3`, `R=3` guarantees that a read always observes the latest completed write. What happens if `W=2` and `R=3` with `N=5`?
-   **Solution:** W+R = 6 > N = 5, so any read quorum (3 nodes) must overlap with any write quorum (3 nodes) by at least 1 node (pigeonhole principle). The overlapping node returns the latest value. With W=2, R=3: W+R=5 = N, so overlapping node is NOT guaranteed — read quorum may not include the node with the latest write.
+   **Solution:** W+R = 6 > N = 5, so any read quorum (3 nodes) must overlap with any write quorum (3 nodes) by at least 1 node (pigeonhole principle). The overlapping node returns the latest value. With W=2, R=3: W+R=5 = N, so overlapping node is NOT guaranteed â€” read quorum may not include the node with the latest write.
 
 2. You have a vector clock `[3, 0, 5]` from process 0 and `[2, 4, 0]` from process 1. Are these causally related or concurrent? Show the comparison.
-   **Solution:** For each node: node 0: 3 > 2, node 1: 0 < 4, node 2: 5 > 0. Neither dominates (vc1 has some > and some < vc2). Therefore they are CONCURRENT — representing two independent write branches that need conflict resolution.
+   **Solution:** For each node: node 0: 3 > 2, node 1: 0 < 4, node 2: 5 > 0. Neither dominates (vc1 has some > and some < vc2). Therefore they are CONCURRENT â€” representing two independent write branches that need conflict resolution.
 
 3. In the Chandy-Lamport snapshot algorithm, what guarantees that two markers sent by the same process on two different channels are received in an order that preserves the consistent cut?
    **Solution:** The FIFO property of channels guarantees that markers sent on a channel are received in order. Once a process records its state and sends markers, all subsequent messages on that channel are part of the post-snapshot state. The consistent cut is preserved because no message is recorded as received before it was sent.
@@ -1419,7 +1419,7 @@ flowchart LR
 </details>
 
 <details>
-<summary>Application Problems — Click to expand</summary>
+<summary>Application Problems â€” Click to expand</summary>
 
 ### Application Problems
 
@@ -1430,12 +1430,12 @@ flowchart LR
    **Solution:** The version tree: root [0,0,0] -> [1,0,0] -> two branches: [1,1,0] (P1) and [0,0,1] (P2). Neither dominates -> CONFLICT. Dynamo-style read repair returns both conflicting values to the application for resolution. The application must merge x=2 and x=3 (e.g., by using LWW or application-specific merge logic).
 
 3. **Gossip convergence analysis:** 1000 nodes, fanout=3.
-   **Solution:** Each round each node contacts 3 random nodes. After r rounds, the fraction of nodes that have received the update ≈ 1 - (1/1000 * sum of squares)^r. With fanout=3, rounds to 99% ≈ log_3(1000) ≈ 6.3 rounds. With fanout=1: log_1(1000) → doesn't converge logarithmically; need N * (1 - 1/e) per round ≈ O(N) rounds. Practically, fanout=3 achieves 99% in ~7 rounds while fanout=1 takes ~20+ rounds.
+   **Solution:** Each round each node contacts 3 random nodes. After r rounds, the fraction of nodes that have received the update â‰ˆ 1 - (1/1000 * sum of squares)^r. With fanout=3, rounds to 99% â‰ˆ log_3(1000) â‰ˆ 6.3 rounds. With fanout=1: log_1(1000) â†’ doesn't converge logarithmically; need N * (1 - 1/e) per round â‰ˆ O(N) rounds. Practically, fanout=3 achieves 99% in ~7 rounds while fanout=1 takes ~20+ rounds.
 
 </details>
 
 <details>
-<summary>Challenge Problem — Click to expand</summary>
+<summary>Challenge Problem â€” Click to expand</summary>
 
 ### Challenge Problem
 
@@ -1444,13 +1444,13 @@ flowchart LR
 **Solution Outline:**
 1. **CRDT structure:** Use an Observed-Remove Map (OR-Map) with product_id as key and a (counter, tag_set) pair as value. add_item(product_id, qty): if product exists, merge quantities via PN-Counter (increment); if new, add with tag. remove_item(product_id): mark all known tags as removed (add wins). clear_cart(): remove all known tags for all products. update_quantity: treat as add_item with delta (new - old). The merge function: for each (product, tags) pair, take union of tags; if any tags remain, product exists; quantity = max(local_qty, remote_qty).
 
-2. **State evolution:** Before: DC1={}, DC2={}, DC3={}. After concurrent ops: DC1 adds A(qty=2), then A(qty=1) → {A: qty=3, tags={t1,t2}}. DC2 adds B(qty=1) → {B: qty=1, tags={t3}}. DC3 removes A → {A: qty=0, tags={}}. After gossip replication: all DCs converge to {A: qty=3, tags={t1,t2}, B: qty=1, tags={t3}} because add wins over remove (t1 and t2 are not in the remove set, so A remains).
+2. **State evolution:** Before: DC1={}, DC2={}, DC3={}. After concurrent ops: DC1 adds A(qty=2), then A(qty=1) â†’ {A: qty=3, tags={t1,t2}}. DC2 adds B(qty=1) â†’ {B: qty=1, tags={t3}}. DC3 removes A â†’ {A: qty=0, tags={}}. After gossip replication: all DCs converge to {A: qty=3, tags={t1,t2}, B: qty=1, tags={t3}} because add wins over remove (t1 and t2 are not in the remove set, so A remains).
 
 3. **Replication protocol:** Gossip every 5 seconds with fanout=3. Each node maintains a version vector of last-updated timestamps per key. Anti-entropy: Merkle tree per key range to detect differences; full CRDT state transfer on mismatch. Target convergence: <60s (12 rounds at 5s).
 
-4. **Memory overhead:** Each product entry stores tags (UUID = 16 bytes each). With 10K products and 3 ops/product/day = 30K tags. State size ≈ 10K × (product_id 8B + qty 8B + avg 3 tags × 16B) ≈ 10K × 64B = 640KB. With tombstones: removed products keep their tags until compaction. Optimization: periodic compaction merges tags and discards tombstones older than 24 hours.
+4. **Memory overhead:** Each product entry stores tags (UUID = 16 bytes each). With 10K products and 3 ops/product/day = 30K tags. State size â‰ˆ 10K Ã— (product_id 8B + qty 8B + avg 3 tags Ã— 16B) â‰ˆ 10K Ã— 64B = 640KB. With tombstones: removed products keep their tags until compaction. Optimization: periodic compaction merges tags and discards tombstones older than 24 hours.
 
-5. **Partition scenario:** EU-West isolated for 30s: users in EU can still add/remove items (CRDTs work offline). Other DCs continue. After partition heals: gossip sync merges CRDT states. All operations commute — no data loss. The add-wins semantics ensure that concurrent adds survive even if a concurrent remove occurred in another DC.
+5. **Partition scenario:** EU-West isolated for 30s: users in EU can still add/remove items (CRDTs work offline). Other DCs continue. After partition heals: gossip sync merges CRDT states. All operations commute â€” no data loss. The add-wins semantics ensure that concurrent adds survive even if a concurrent remove occurred in another DC.
 
 </details>
 

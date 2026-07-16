@@ -1,4 +1,4 @@
-# Chapter 2: Variables and Data Types
+﻿# Chapter 2: Variables and Data Types
 
 > **Previous:** [Introduction to C](./01-introduction.md) | **Next:** [Operators](./03-operators.md)
 
@@ -15,16 +15,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/02-variables-datatypes/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/c-programming/02-variables-datatypes/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/02-variables-datatypes/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/c-programming/02-variables-datatypes/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/02-variables-datatypes/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/c-programming/02-variables-datatypes/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/02-variables-datatypes/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/c-programming/02-variables-datatypes/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/02-variables-datatypes/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/c-programming/02-variables-datatypes/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/02-variables-datatypes/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/c-programming/02-variables-datatypes/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -37,12 +37,12 @@
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
 | Variable Declarations | Must declare type before use; identifiers are case-sensitive | Use descriptive names like `student_count` over cryptic `n` |
-| Fundamental Types | char, int, float, double with short/long/unsigned modifiers | Match type to data range — `int` for integers, `double` for decimals |
+| Fundamental Types | char, int, float, double with short/long/unsigned modifiers | Match type to data range â€” `int` for integers, `double` for decimals |
 | Type Modifiers | short/long/signed/unsigned combine with integer types in a matrix | Choose combination that fits your value domain exactly |
 | sizeof Operator | Evaluated at compile time, returns size in bytes | Use `sizeof(type)` not hardcoded byte counts for portability |
 | Storage Classes | auto/register/static/extern/typedef control lifetime, scope, linkage | Static local preserves state; extern shares across files |
-| Constants | const vs #define vs enum — type-checked, textual, or integral | Prefer const for type safety; enum for related integer constants |
-| I/O Formatting | printf and scanf use format specifiers (%d, %f, %c) | Mismatched specifiers cause UB — always match type to specifier |
+| Constants | const vs #define vs enum â€” type-checked, textual, or integral | Prefer const for type safety; enum for related integer constants |
+| I/O Formatting | printf and scanf use format specifiers (%d, %f, %c) | Mismatched specifiers cause UB â€” always match type to specifier |
 | Type Conversion | Implicit promotion and explicit casting follow strict rules | Cast explicitly when mixing types to avoid precision loss |
 | Scope and Lifetime | Block, file, function, and prototype scope govern visibility | Declare variables in the narrowest scope possible |
 
@@ -70,9 +70,9 @@ flowchart LR
 
 ![C Data Types and Operators Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/c-programming/ch02-datatypes-operators.png)
 
-A **variable** is a named storage location in memory that holds a value of a specific type. Think of it as a labeled box on a shelf — the label is the variable name, the box size is determined by the type, and the contents are the value.
+A **variable** is a named storage location in memory that holds a value of a specific type. Think of it as a labeled box on a shelf â€” the label is the variable name, the box size is determined by the type, and the contents are the value.
 
-### Real-World Analogy — Parking Lot
+### Real-World Analogy â€” Parking Lot
 
 
 | Concept | Parking Lot Analogy |
@@ -83,7 +83,7 @@ A **variable** is a named storage location in memory that holds a value of a spe
 | Declaration | Reserving a spot with a specific size |
 | Definition | Actually constructing the spot with concrete lines |
 | Initialization | Parking the first vehicle in the spot |
-| Uninitialized variable | Empty spot with unknown debris — using it is dangerous |
+| Uninitialized variable | Empty spot with unknown debris â€” using it is dangerous |
 
 ### 2.1.1 Declaration vs Definition vs Initialization
 
@@ -105,22 +105,22 @@ These three terms are often conflated but are technically distinct in C:
 ```c
 #include <stdio.h>
 
-extern int global_x;    // Declaration only — no storage (definition elsewhere)
+extern int global_x;    // Declaration only â€” no storage (definition elsewhere)
 
 int global_y = 42;      // Definition + initialization
 
-int global_z;           // Definition (tentative — zero-initialized)
+int global_z;           // Definition (tentative â€” zero-initialized)
 
 int main(void)
 {
-    int a;              // Definition (automatic storage — NOT initialized)
+    int a;              // Definition (automatic storage â€” NOT initialized)
     int b = 10;         // Definition + initialization
-    static int c;       // Definition (static storage — zero-initialized)
+    static int c;       // Definition (static storage â€” zero-initialized)
 
-    // printf("%d\n", a);  // UB — 'a' is uninitialized (contains garbage)
+    // printf("%d\n", a);  // UB â€” 'a' is uninitialized (contains garbage)
     printf("%d\n", b);     // 10
     printf("%d\n", c);     // 0  (static variables are zero-initialized)
-    printf("%d\n", global_z); // 0 (tentative definition → zero)
+    printf("%d\n", global_z); // 0 (tentative definition â†’ zero)
 
     return 0;
 }
@@ -139,11 +139,11 @@ int main(void)
 | Strategy | Syntax | Behavior |
 |----------|--------|----------|
 | Copy initialization | `int x = 5;` | Classic C style |
-| Assignment after definition | `int x; x = 5;` | Two steps — value may be indeterminate between them |
+| Assignment after definition | `int x; x = 5;` | Two steps â€” value may be indeterminate between them |
 | Multiple declarations | `int a = 1, b = 2, c = 3;` | All initialized in one statement |
-| Uninitialized (DANGER) | `int x;` | Contains garbage — reading is undefined behavior |
+| Uninitialized (DANGER) | `int x;` | Contains garbage â€” reading is undefined behavior |
 
-**Dry Run — Variable Lifecycle:**
+**Dry Run â€” Variable Lifecycle:**
 
 ```
 Step  | Variable | Operation        | Stack Address | Value    | Notes
@@ -156,16 +156,16 @@ Step  | Variable | Operation        | Stack Address | Value    | Notes
 6     | x        | return x;        | 0x7FFD0010   | 15       | After z is gone
 ```
 
-**Complexity:** Variable declaration, definition, and initialization all operate in O(1) time — they are compile-time or single-instruction operations at runtime.
+**Complexity:** Variable declaration, definition, and initialization all operate in O(1) time â€” they are compile-time or single-instruction operations at runtime.
 
 ### 2.1.3 Edge Cases in Variable Usage
 
 
 | Edge Case | Example | Behavior |
 |-----------|---------|----------|
-| Uninitialized read | `int x; printf("%d", x);` | **Undefined behavior** — may print garbage, crash, or appear to work |
+| Uninitialized read | `int x; printf("%d", x);` | **Undefined behavior** â€” may print garbage, crash, or appear to work |
 | Tentative definition | `int x; int x;` | Allowed in file scope (merged into one definition) |
-| Redeclaration conflict | `int x; double x;` | Compiler error — conflicting types |
+| Redeclaration conflict | `int x; double x;` | Compiler error â€” conflicting types |
 | Shadowing | `int x; { int x = 5; }` | Inner x shadows outer x; outer is inaccessible inside block |
 | Missing semicolon | `int x` | Compiler error (expected ';') |
 
@@ -196,14 +196,14 @@ Inner x: 20
 Outer x again: 10
 ```
 
-> **One-Sentence Takeaway:** A variable is a named memory location — declare its type, define its storage, initialize before use.
-> **Remember:** Declaration ≠ Definition. Declaration tells the compiler the type; definition allocates storage. Uninitialized variables are undefined behavior.
+> **One-Sentence Takeaway:** A variable is a named memory location â€” declare its type, define its storage, initialize before use.
+> **Remember:** Declaration â‰  Definition. Declaration tells the compiler the type; definition allocates storage. Uninitialized variables are undefined behavior.
 
 ---
 
 ## 2.2 Variable Naming Rules
 
-### Real-World Analogy — License Plates
+### Real-World Analogy â€” License Plates
 
 
 Just as license plates must follow DMV rules (letters, numbers, no special characters, unique within the system), C identifiers must follow grammatical rules enforced by the compiler.
@@ -211,9 +211,9 @@ Just as license plates must follow DMV rules (letters, numbers, no special chara
 ### 2.2.1 The Rules
 
 
-**Rule 1:** May contain letters (a–z, A–Z), digits (0–9), and underscores (`_`).
+**Rule 1:** May contain letters (aâ€“z, Aâ€“Z), digits (0â€“9), and underscores (`_`).
 **Rule 2:** Must begin with a letter or underscore (not a digit).
-**Rule 3:** Are case-sensitive — `count`, `Count`, and `COUNT` are three distinct variables.
+**Rule 3:** Are case-sensitive â€” `count`, `Count`, and `COUNT` are three distinct variables.
 **Rule 4:** Must not be a C keyword (`int`, `return`, `if`, `while`, `for`, etc.).
 **Rule 5:** Must not reuse the same name in the same scope with conflicting type.
 **Rule 6:** Implementation reserves identifiers beginning with underscore + capital letter or double underscore.
@@ -230,7 +230,7 @@ Just as license plates must follow DMV rules (letters, numbers, no special chara
 | `my-var` | **No** | Hyphen is not allowed (minus operator) |
 | `int` | **No** | Reserved keyword |
 | `total$amount` | **No** | Dollar sign not allowed |
-| `__internal` | Technically yes | But reserved for compiler — undefined behavior to use |
+| `__internal` | Technically yes | But reserved for compiler â€” undefined behavior to use |
 | `snake_case_name` | Yes | Convention for C variables |
 | `camelCaseName` | Yes | Less common in C |
 
@@ -283,20 +283,20 @@ int main(void)
 
 ## 2.3 Fundamental Data Types
 
-### Real-World Analogy — Parking Lot Spot Sizes
+### Real-World Analogy â€” Parking Lot Spot Sizes
 
 
 | Type | Analogy |
 |------|---------|
-| `char` | Motorcycle spot — 1 byte, small footprint |
-| `short` | Compact car spot — 2 bytes |
-| `int` | Sedan spot — 4 bytes, the standard |
-| `long` | SUV spot — 4 or 8 bytes (platform dependent) |
-| `long long` | Extended truck spot — 8 bytes, guaranteed large |
-| `float` | Compact with rounded edges — 4 bytes, less precise |
-| `double` | Premium sedan — 8 bytes, high precision |
-| `long double` | Luxury extended — 10/16 bytes, maximum precision |
-| `void` | Empty lot — no vehicles, used for structure only |
+| `char` | Motorcycle spot â€” 1 byte, small footprint |
+| `short` | Compact car spot â€” 2 bytes |
+| `int` | Sedan spot â€” 4 bytes, the standard |
+| `long` | SUV spot â€” 4 or 8 bytes (platform dependent) |
+| `long long` | Extended truck spot â€” 8 bytes, guaranteed large |
+| `float` | Compact with rounded edges â€” 4 bytes, less precise |
+| `double` | Premium sedan â€” 8 bytes, high precision |
+| `long double` | Luxury extended â€” 10/16 bytes, maximum precision |
+| `void` | Empty lot â€” no vehicles, used for structure only |
 
 C provides a small set of fundamental (built-in) types:
 
@@ -305,13 +305,13 @@ C provides a small set of fundamental (built-in) types:
 
 | Type | Keyword | Size (typical) | Format Specifier | Range (typical) | Precision |
 |------|---------|----------------|------------------|-----------------|-----------|
-| Character | `char` | 1 byte | `%c` | −128 to 127 or 0 to 255 | N/A |
-| Short int | `short` | 2 bytes | `%hd` | −32,768 to 32,767 | Exact |
-| Integer | `int` | 4 bytes | `%d` / `%i` | −2³¹ to 2³¹−1 | Exact |
-| Long int | `long` | 4 or 8 bytes | `%ld` | −2³¹ to 2³¹−1 or −2⁶³ to 2⁶³−1 | Exact |
-| Long long | `long long` | 8 bytes | `%lld` | −2⁶³ to 2⁶³−1 | Exact |
-| Float | `float` | 4 bytes | `%f` | ±1.2×10⁻³⁸ to ±3.4×10³⁸ | ~7 decimal digits |
-| Double | `double` | 8 bytes | `%lf` | ±2.3×10⁻³⁰⁸ to ±1.7×10³⁰⁸ | ~15 decimal digits |
+| Character | `char` | 1 byte | `%c` | âˆ’128 to 127 or 0 to 255 | N/A |
+| Short int | `short` | 2 bytes | `%hd` | âˆ’32,768 to 32,767 | Exact |
+| Integer | `int` | 4 bytes | `%d` / `%i` | âˆ’2Â³Â¹ to 2Â³Â¹âˆ’1 | Exact |
+| Long int | `long` | 4 or 8 bytes | `%ld` | âˆ’2Â³Â¹ to 2Â³Â¹âˆ’1 or âˆ’2â¶Â³ to 2â¶Â³âˆ’1 | Exact |
+| Long long | `long long` | 8 bytes | `%lld` | âˆ’2â¶Â³ to 2â¶Â³âˆ’1 | Exact |
+| Float | `float` | 4 bytes | `%f` | Â±1.2Ã—10â»Â³â¸ to Â±3.4Ã—10Â³â¸ | ~7 decimal digits |
+| Double | `double` | 8 bytes | `%lf` | Â±2.3Ã—10â»Â³â°â¸ to Â±1.7Ã—10Â³â°â¸ | ~15 decimal digits |
 | Long double | `long double` | 10/16 bytes | `%Lf` | Platform-dependent | ~18+ decimal digits |
 | Void | `void` | 0 bytes (incomplete) | N/A | N/A | N/A |
 
@@ -356,7 +356,7 @@ Hello from void function
 Value via void*: 42
 ```
 
-> **Note:** You cannot declare a `void` variable (`void v;` is a compiler error) — `void` is an incomplete type.
+> **Note:** You cannot declare a `void` variable (`void v;` is a compiler error) â€” `void` is an incomplete type.
 
 ### 2.3.3 The `char` Type in Depth
 
@@ -457,22 +457,22 @@ Overflow: -56
 ### 2.3.7 Complexity
 
 
-All fundamental type operations (load, store, arithmetic) are **O(1)** — single CPU instructions. Type checking happens at compile time with zero runtime cost.
+All fundamental type operations (load, store, arithmetic) are **O(1)** â€” single CPU instructions. Type checking happens at compile time with zero runtime cost.
 
 ---
 
 ## 2.4 Type Modifiers
 
-### Real-World Analogy — Parking Lot Modifier Signs
+### Real-World Analogy â€” Parking Lot Modifier Signs
 
 
 | Modifier | Analogy |
 |----------|---------|
-| `short` | "Compact only" — smaller spot, limits vehicle size |
-| `long` | "Oversize vehicle" — extended spot for larger vehicles |
-| `signed` | "Any vehicle allowed" — includes positive and negative |
-| `unsigned` | "Positive only" — doubles capacity in one direction |
-| `short long` | Invalid — cannot be both (you cannot be compact and extended) |
+| `short` | "Compact only" â€” smaller spot, limits vehicle size |
+| `long` | "Oversize vehicle" â€” extended spot for larger vehicles |
+| `signed` | "Any vehicle allowed" â€” includes positive and negative |
+| `unsigned` | "Positive only" â€” doubles capacity in one direction |
+| `short long` | Invalid â€” cannot be both (you cannot be compact and extended) |
 
 ### 2.4.1 Modifier Combinations
 
@@ -481,19 +481,19 @@ Type modifiers `short`, `long`, `signed`, `unsigned` can be combined with intege
 
 | Declaration | Equivalent | Size | Range |
 |-------------|-----------|------|-------|
-| `short` | `short int` | 2 bytes | −32,768 to 32,767 |
-| `short int` | `short` | 2 bytes | −32,768 to 32,767 |
-| `signed short` | `signed short int` | 2 bytes | −32,768 to 32,767 |
+| `short` | `short int` | 2 bytes | âˆ’32,768 to 32,767 |
+| `short int` | `short` | 2 bytes | âˆ’32,768 to 32,767 |
+| `signed short` | `signed short int` | 2 bytes | âˆ’32,768 to 32,767 |
 | `unsigned short` | `unsigned short int` | 2 bytes | 0 to 65,535 |
-| `int` | `signed int` | 4 bytes | −2³¹ to 2³¹−1 |
-| `signed` | `signed int` | 4 bytes | −2³¹ to 2³¹−1 |
+| `int` | `signed int` | 4 bytes | âˆ’2Â³Â¹ to 2Â³Â¹âˆ’1 |
+| `signed` | `signed int` | 4 bytes | âˆ’2Â³Â¹ to 2Â³Â¹âˆ’1 |
 | `unsigned` | `unsigned int` | 4 bytes | 0 to 4,294,967,295 |
 | `unsigned int` | `unsigned` | 4 bytes | 0 to 4,294,967,295 |
 | `long` | `long int` | 4 or 8 bytes | Platform-dependent |
 | `signed long` | `signed long int` | 4 or 8 bytes | Platform-dependent |
 | `unsigned long` | `unsigned long int` | 4 or 8 bytes | 0 to platform max |
-| `long long` | `long long int` | 8 bytes | −2⁶³ to 2⁶³−1 |
-| `unsigned long long` | `unsigned long long int` | 8 bytes | 0 to 2⁶⁴−1 |
+| `long long` | `long long int` | 8 bytes | âˆ’2â¶Â³ to 2â¶Â³âˆ’1 |
+| `unsigned long long` | `unsigned long long int` | 8 bytes | 0 to 2â¶â´âˆ’1 |
 
 ### 2.4.2 Valid and Invalid Combinations
 
@@ -540,9 +540,9 @@ unsigned LL:  100000000000
 
 | Modifier | Applies To | Effect on Size | Effect on Range |
 |----------|-----------|----------------|-----------------|
-| `short` | int | Minimizes (≥2 bytes) | Smaller range |
-| `long` | int, double | Increases (≥4 bytes) | Larger range |
-| `long long` | int | Guarantees ≥8 bytes | Largest integer range |
+| `short` | int | Minimizes (â‰¥2 bytes) | Smaller range |
+| `long` | int, double | Increases (â‰¥4 bytes) | Larger range |
+| `long long` | int | Guarantees â‰¥8 bytes | Largest integer range |
 | `signed` | char, int types | No change | Both negative and positive |
 | `unsigned` | char, int types | No change | Doubles positive max, no negative |
 
@@ -579,9 +579,9 @@ sizeof(long double): 10 bytes (or 16 with padding)
 | unsigned wrap | `unsigned u = 0; u--;` | Well-defined: wraps to UINT_MAX |
 | long long overflow | `long long ll = LLONG_MAX + 1;` | Undefined behavior |
 | Unsigned underflow in loop | `for (unsigned i = 5; i >= 0; i--)` | Infinite loop! `i >= 0` is always true |
-| Implicit sign change | `if (-1 < (unsigned)1)` | False! −1 converts to UINT_MAX |
+| Implicit sign change | `if (-1 < (unsigned)1)` | False! âˆ’1 converts to UINT_MAX |
 
-**The Infinite Unsigned Loop — Classic Bug:**
+**The Infinite Unsigned Loop â€” Classic Bug:**
 
 ```c
 #include <stdio.h>
@@ -611,8 +611,8 @@ int main(void)
 5 4 3 2 1 0
 ```
 
-> **One-Sentence Takeaway:** Type modifiers customize integer range — short saves memory, long extends range, unsigned doubles positive capacity.
-> **Complexity:** O(1) — modifiers only affect compile-time type selection, not runtime performance.
+> **One-Sentence Takeaway:** Type modifiers customize integer range â€” short saves memory, long extends range, unsigned doubles positive capacity.
+> **Complexity:** O(1) â€” modifiers only affect compile-time type selection, not runtime performance.
 
 ---
 
@@ -658,7 +658,7 @@ Variable x:  4 bytes
 - `sizeof` returns `size_t` (unsigned integer type), printed with `%zu`.
 - `sizeof(char)` is always 1 by definition in the C standard.
 - `sizeof` on an expression does not evaluate the expression.
-- For arrays, `sizeof` returns total bytes (= element count × element size).
+- For arrays, `sizeof` returns total bytes (= element count Ã— element size).
 
 ```c
 #include <stdio.h>
@@ -688,23 +688,23 @@ x = 5 (still 5!)
 ```
 
 > **One-Sentence Takeaway:** `sizeof` is a compile-time operator that returns type size in bytes; use it for portable code.
-> **Pro Tip:** Use `sizeof(array) / sizeof(array[0])` to get element count — but this breaks when the array decays to a pointer.
+> **Pro Tip:** Use `sizeof(array) / sizeof(array[0])` to get element count â€” but this breaks when the array decays to a pointer.
 
 ---
 
 ## 2.6 Storage Classes
 
-### Real-World Analogy — Storage Lockers
+### Real-World Analogy â€” Storage Lockers
 
 
 | Storage Class | Analogy |
 |---------------|---------|
-| `auto` | Temporary rental locker — created on entry, destroyed on exit |
-| `register` | Valet key holder — fast access but limited capacity (hint only) |
-| `static` (local) | Personal permanent locker — retains contents between visits, but only you see it |
-| `static` (global) | Company filing cabinet — visible to everyone in the department (file) |
-| `extern` | Department-shared folder — defined in one file, visible in others |
-| `typedef` | Label maker — creates a new nickname for an existing type |
+| `auto` | Temporary rental locker â€” created on entry, destroyed on exit |
+| `register` | Valet key holder â€” fast access but limited capacity (hint only) |
+| `static` (local) | Personal permanent locker â€” retains contents between visits, but only you see it |
+| `static` (global) | Company filing cabinet â€” visible to everyone in the department (file) |
+| `extern` | Department-shared folder â€” defined in one file, visible in others |
+| `typedef` | Label maker â€” creates a new nickname for an existing type |
 
 ### 2.6.1 Storage Class Comparison
 
@@ -718,7 +718,7 @@ x = 5 (still 5!)
 | External | `extern` | Program duration | Program (external linkage) | Zero-initialized | Data segment |
 | Typedef | `typedef` | N/A (compile-time alias) | Scope of definition | N/A | N/A |
 
-### 2.6.2 `auto` — The Default
+### 2.6.2 `auto` â€” The Default
 
 
 Every local variable is `auto` by default. Explicit use of `auto` is rare in modern C.
@@ -741,7 +741,7 @@ int main(void)
 x = 42, y = 100
 ```
 
-### 2.6.3 `register` — Hint to the Compiler
+### 2.6.3 `register` â€” Hint to the Compiler
 
 
 Suggests the variable be stored in a CPU register for fast access. Modern compilers largely ignore this hint.
@@ -766,7 +766,7 @@ int main(void)
 - Compiler may or may not honor the hint (usually ignores it with modern optimizers).
 - Primarily useful in embedded systems with limited registers.
 
-### 2.6.4 `static` — Persistent Lifetime, Controlled Scope
+### 2.6.4 `static` â€” Persistent Lifetime, Controlled Scope
 
 
 **Local static:** Variable persists across function calls but is visible only inside the function.
@@ -796,7 +796,7 @@ int main(void)
 3
 ```
 
-**Dry Run — Static Local Variable:**
+**Dry Run â€” Static Local Variable:**
 
 ```
 Call  | Access | count (before) | Operation | count (after) | Return
@@ -819,7 +819,7 @@ static void helper_function(void)  // visible only in this file
 }
 ```
 
-### 2.6.5 `extern` — Cross-File Visibility
+### 2.6.5 `extern` â€” Cross-File Visibility
 
 
 Declares a variable or function defined in another file.
@@ -858,7 +858,7 @@ Initial: 0
 After 2 increments: 2
 ```
 
-**Dry Run — extern variable sharing:**
+**Dry Run â€” extern variable sharing:**
 
 ```
 Step | File      | Operation              | shared_counter Value
@@ -870,7 +870,7 @@ Step | File      | Operation              | shared_counter Value
 5    | main.c    | printf reads           | 2
 ```
 
-### 2.6.6 `typedef` — Type Aliases
+### 2.6.6 `typedef` â€” Type Aliases
 
 
 Creates an alias for an existing type. Improves readability and portability.
@@ -913,7 +913,7 @@ pointer value: 42
 | register | Potential speed (hint) | Cannot take address, often ignored |
 | static (local) | Preserves state, encapsulates | Consumes memory for program duration |
 | static (file) | Information hiding, reduces namespace pollution | Less flexible than dynamic linking |
-| extern | Enables modular programming across files | Global state — harder to reason about threading |
+| extern | Enables modular programming across files | Global state â€” harder to reason about threading |
 | typedef | Improves readability, platform abstraction | Can obscure the underlying type |
 
 ### 2.6.8 Edge Cases
@@ -921,16 +921,16 @@ pointer value: 42
 
 | Edge Case | Example | Behavior |
 |-----------|---------|----------|
-| static in header | `static int x;` in header | Each .c file gets its own copy — usually wrong |
+| static in header | `static int x;` in header | Each .c file gets its own copy â€” usually wrong |
 | extern with definition | `extern int x = 5;` | Treated as definition despite extern |
-| Multiple extern declarations | `extern int x; extern int x;` | Allowed — declarations can repeat |
+| Multiple extern declarations | `extern int x; extern int x;` | Allowed â€” declarations can repeat |
 | register int* | `register int *p;` | Allowed, but cannot take p's address either |
 | typedef inside block | `void f() { typedef int T; }` | Typedef scoped to the block |
 
 ```c
 #include <stdio.h>
 
-// DANGER: static in header — each file gets its own copy
+// DANGER: static in header â€” each file gets its own copy
 // static int file_specific = 0;
 
 int main(void)
@@ -945,21 +945,21 @@ int main(void)
 ```
 
 > **One-Sentence Takeaway:** Storage classes define a variable's lifetime (how long it lives) and scope (who can see it).
-> **Complexity:** O(1) — storage class is a compile-time attribute, no runtime cost for auto/static/extern.
+> **Complexity:** O(1) â€” storage class is a compile-time attribute, no runtime cost for auto/static/extern.
 
 ---
 
 ## 2.7 Constants
 
-### Real-World Analogy — Unchangeable Signs
+### Real-World Analogy â€” Unchangeable Signs
 
 
 | Constant Type | Analogy |
 |---------------|---------|
-| `const` variable | Painted sign on a building — cannot be changed, but is physically present |
-| `#define` macro | Billboard template — replaced textually before construction |
-| `enum` constant | Parking lot section numbers — sequential, related, integral |
-| Integer literal | Speed limit sign — value written directly in the code |
+| `const` variable | Painted sign on a building â€” cannot be changed, but is physically present |
+| `#define` macro | Billboard template â€” replaced textually before construction |
+| `enum` constant | Parking lot section numbers â€” sequential, related, integral |
+| Integer literal | Speed limit sign â€” value written directly in the code |
 
 ### 2.7.1 The `const` Qualifier
 
@@ -996,7 +996,7 @@ int main(void)
 ### 2.7.2 `#define` Constants (Symbolic/Macro Constants)
 
 
-`#define` is a preprocessor directive — it performs textual substitution before compilation.
+`#define` is a preprocessor directive â€” it performs textual substitution before compilation.
 
 ```c
 #include <stdio.h>
@@ -1028,7 +1028,7 @@ Area r=3 = 28.27431
 **Properties of `#define`:**
 - No type checking (textual substitution).
 - No memory address (preprocessor replaces before compiler sees it).
-- No scope — effective from point of definition to end of file (or `#undef`).
+- No scope â€” effective from point of definition to end of file (or `#undef`).
 - Can define macros with parameters (function-like macros).
 - Caution: Parenthesize macro parameters to avoid operator precedence bugs.
 
@@ -1084,7 +1084,7 @@ Status: 0
 Next day number: 3
 ```
 
-### 2.7.4 const vs #define vs enum — Comparison
+### 2.7.4 const vs #define vs enum â€” Comparison
 
 
 | Feature | `const` | `#define` | `enum` |
@@ -1154,19 +1154,19 @@ int main(void)
 | Edge Case | Example | Behavior |
 |-----------|---------|----------|
 | const pointer to const | `const int * const p = &x;` | Neither pointer nor value can change |
-| #define without value | `#define FLAG` | Defined empty — used with #ifdef |
-| enum without name | `enum { A, B, C };` | Anonymous enum — just the constants |
+| #define without value | `#define FLAG` | Defined empty â€” used with #ifdef |
+| enum without name | `enum { A, B, C };` | Anonymous enum â€” just the constants |
 | const with union | `const union { int x; float f; } u;` | Entire union is const |
 | Integer literal overflow | `int x = 2147483648;` | Implementation-defined (wraps or warns) |
 
 > **One-Sentence Takeaway:** Use `const` for type-checked immutability, `#define` for macros and conditional compilation, `enum` for related integer constant sets.
-> **Complexity:** O(1) — constants are resolved at compile time.
+> **Complexity:** O(1) â€” constants are resolved at compile time.
 
 ---
 
 ## 2.8 Formatted Output with `printf`
 
-### Real-World Analogy — Label Maker
+### Real-World Analogy â€” Label Maker
 
 
 printf is like a label maker that takes objects and prints them onto labels according to your format template. The format string specifies the layout, and each argument fills a slot.
@@ -1243,7 +1243,7 @@ String width: '        hi'
 | Missing arguments | `printf("%d %d", 1)` | Undefined behavior |
 | Extra arguments | `printf("%d", 1, 2, 3)` | Extra args ignored (but wasteful) |
 | %s with non-string | `printf("%s", 42)` | Crash (dereferences address 42) |
-| %% to print % | `printf("%")` | Incomplete specifier — may crash |
+| %% to print % | `printf("%")` | Incomplete specifier â€” may crash |
 
 > **One-Sentence Takeaway:** printf format specifiers control output layout; always match the specifier to the argument type.
 > **Complexity:** O(n) where n is output length.
@@ -1252,7 +1252,7 @@ String width: '        hi'
 
 ## 2.9 Formatted Input with `scanf`
 
-### Real-World Analogy — Barcode Scanner
+### Real-World Analogy â€” Barcode Scanner
 
 
 scanf is like a barcode scanner that reads formatted input and decodes it into typed variables. It needs to know the target location (address) to write the result.
@@ -1334,7 +1334,7 @@ int main(void)
     if (result == 1)
         printf("You entered: %d\n", value);
     else if (result == 0)
-        printf("Invalid input — not an integer\n");
+        printf("Invalid input â€” not an integer\n");
     else
         printf("End of file reached\n");
 
@@ -1349,15 +1349,15 @@ int main(void)
 
 ## 2.10 Type Conversion
 
-### Real-World Analogy — Currency Exchange
+### Real-World Analogy â€” Currency Exchange
 
 
 | Conversion Type | Analogy |
 |-----------------|---------|
-| Implicit promotion | Exchanging USD to EUR — the bank automatically converts the smaller denomination |
-| Explicit cast | Force-converting a violin case into a suitcase — you override the system |
-| Integer promotion | $1.50 -> 150 cents — converting to a more precise unit |
-| Truncation | Cutting a 2x4 board to 1.8m — you lose the fractional part |
+| Implicit promotion | Exchanging USD to EUR â€” the bank automatically converts the smaller denomination |
+| Explicit cast | Force-converting a violin case into a suitcase â€” you override the system |
+| Integer promotion | $1.50 -> 150 cents â€” converting to a more precise unit |
+| Truncation | Cutting a 2x4 board to 1.8m â€” you lose the fractional part |
 
 ### 2.10.1 Implicit Conversion (Type Promotion)
 
@@ -1428,7 +1428,7 @@ When binary operators have different types, this decision tree is followed:
 1. If either operand is `long double`, the other converts to `long double`.
 2. Else if either is `double`, the other converts to `double`.
 3. Else if either is `float`, the other converts to `float`.
-4. Else — **integer promotion** is performed on both operands, then:
+4. Else â€” **integer promotion** is performed on both operands, then:
    a. If both have same type after promotion, no further conversion.
    b. If one is `unsigned long long`, the other converts to `unsigned long long`.
    c. If one is `long long`, the other converts to `long long`.
@@ -1437,7 +1437,7 @@ When binary operators have different types, this decision tree is followed:
    f. If one is `unsigned int`, the other converts to `unsigned int`.
    g. Otherwise, both are `int`.
 
-**Dry Run — Usual Arithmetic Conversion:**
+**Dry Run â€” Usual Arithmetic Conversion:**
 
 ```
 Expression: int a + unsigned int b
@@ -1474,8 +1474,8 @@ Expression: long l + unsigned int ui
 int main(void)
 {
     double x = 10.8;
-    int truncated = (int)x;               // 10 — fractional part discarded
-    int rounded = (int)(x + 0.5);         // 11 — manual rounding
+    int truncated = (int)x;               // 10 â€” fractional part discarded
+    int rounded = (int)(x + 0.5);         // 11 â€” manual rounding
 
     int numerator = 7;
     int denominator = 3;
@@ -1584,21 +1584,21 @@ float:  123456792
 ```
 
 > **One-Sentence Takeaway:** Implicit conversion promotes smaller to larger types; explicit cast forces conversion but watch for truncation and signed-to-unsigned surprises.
-> **Complexity:** O(1) — conversions are single CPU instructions.
+> **Complexity:** O(1) â€” conversions are single CPU instructions.
 
 ---
 
 ## 2.11 Scope and Lifetime
 
-### Real-World Analogy — Building Access
+### Real-World Analogy â€” Building Access
 
 
 | Scope Type | Analogy |
 |------------|---------|
-| Block scope | Hotel room — accessible only inside that room, destroyed on checkout |
-| File scope | Building lobby — accessible anywhere in the building |
-| Function scope | Meeting room — only during the meeting (goto labels) |
-| Prototype scope | Directory listing — valid only during the function declaration |
+| Block scope | Hotel room â€” accessible only inside that room, destroyed on checkout |
+| File scope | Building lobby â€” accessible anywhere in the building |
+| Function scope | Meeting room â€” only during the meeting (goto labels) |
+| Prototype scope | Directory listing â€” valid only during the function declaration |
 
 ### 2.11.1 Scope Types
 
@@ -1606,7 +1606,7 @@ float:  123456792
 ```c
 #include <stdio.h>
 
-int file_scope_var = 10;        // File scope — visible from here to end of file
+int file_scope_var = 10;        // File scope â€” visible from here to end of file
 
 static int file_static_var = 20; // File scope but internal linkage
 
@@ -1642,7 +1642,7 @@ int main(void)
 | Block scope | `{ }` | Inside the enclosing braces | Until `}` | `int x = 5;` inside a function |
 | File scope | Outside any function | From declaration to file end | Program duration | `int global;` at top level |
 | Function scope | Labels only (goto) | Inside the whole function | Function duration | `label:` anywhere in function |
-| Prototype scope | Parameter list | Inside the prototype only | Prototype evaluation | `void f(int x);` — x matters only here |
+| Prototype scope | Parameter list | Inside the prototype only | Prototype evaluation | `void f(int x);` â€” x matters only here |
 
 ### 2.11.3 Lifetime Types
 
@@ -1687,13 +1687,13 @@ static: 3, auto: 1
 ```
 
 > **One-Sentence Takeaway:** Scope determines where a name is visible; lifetime determines how long the storage exists.
-> **Complexity:** O(1) — scope and lifetime are compile-time attributes.
+> **Complexity:** O(1) â€” scope and lifetime are compile-time attributes.
 
 ---
 
 ## Comparison Tables
 
-### A. Data Types — Complete Reference
+### A. Data Types â€” Complete Reference
 
 
 | Type | Size (bytes) | Min | Max | Format Specifier | Use Case |
@@ -1859,12 +1859,12 @@ void example(void)
 
 ```c
 // File: config.h
-extern int debug_level;       // declaration — no storage
+extern int debug_level;       // declaration â€” no storage
 extern void set_debug(int);   // function declaration
 
 // File: config.c
 #include "config.h"
-int debug_level = 0;           // definition — storage allocated
+int debug_level = 0;           // definition â€” storage allocated
 void set_debug(int level) {    // definition
     debug_level = level;
 }
@@ -1881,7 +1881,7 @@ int main(void) {
 ### Q6: What is the output of sizeof(void)?
 
 
-**Answer:** `sizeof(void)` is a **compiler error** in standard C. `void` is an incomplete type that cannot be completed — it has no size. However, GCC as an extension defines `sizeof(void) == 1`.
+**Answer:** `sizeof(void)` is a **compiler error** in standard C. `void` is an incomplete type that cannot be completed â€” it has no size. However, GCC as an extension defines `sizeof(void) == 1`.
 
 ### Q7: Explain integer promotion with an example.
 
@@ -1895,7 +1895,7 @@ if (c == 200)     // false! c is promoted to int(-56) before comparison
 
 // Fix:
 unsigned char uc = 200;
-if (uc == 200)    // true — uc is promoted to int(200)
+if (uc == 200)    // true â€” uc is promoted to int(200)
     printf("This will print\n");
 ```
 
@@ -1932,7 +1932,7 @@ Signed integer overflow is **undefined behavior**.
 ### Q10: Can const variables be used as array sizes?
 
 
-**Answer:** In C89, no — array sizes must be compile-time constant expressions. In C99+, yes (VLA or const-qualified types):
+**Answer:** In C89, no â€” array sizes must be compile-time constant expressions. In C99+, yes (VLA or const-qualified types):
 
 ```c
 const int SIZE = 10;
@@ -2010,7 +2010,7 @@ int main(void)
 
 int main(void)
 {
-    // NEVER use float for money — use double or integer cents
+    // NEVER use float for money â€” use double or integer cents
     // float has only ~7 digits of precision
 
     double account_balance = 1234567.89;   // ~15 digits
@@ -2147,7 +2147,7 @@ int main(void)
    C) Undefined behavior (anything may happen)
    D) Compiler error
 
-<details><summary>Answer&lt;/summary&gt;**C)** Undefined behavior — uninitialized local variable.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** Undefined behavior â€” uninitialized local variable.</details>
 
 5. What does `unsigned u = 0; u--; printf("%u", u);` print?
    A) -1
@@ -2187,7 +2187,7 @@ int main(void)
    C) 4
    D) Compiler error in standard C
 
-<details><summary>Answer&lt;/summary&gt;**D)** Compiler error — void is an incomplete type (GCC extension gives 1).</details>
+<details><summary>Answer&lt;/summary&gt;**D)** Compiler error â€” void is an incomplete type (GCC extension gives 1).</details>
 
 10. After `char c = 200;` (signed char system), what is the value of c?
     A) 200

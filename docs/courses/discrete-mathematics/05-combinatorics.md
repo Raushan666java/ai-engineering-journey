@@ -1,4 +1,4 @@
-# Chapter 5: Combinatorics
+﻿# Chapter 5: Combinatorics
 
 > **Previous:** [Chapter 4: Proofs](./04-proofs.md) | **Next:** [Chapter 6: Recurrence Relations](./06-recurrence.md)
 
@@ -9,16 +9,16 @@ After completing this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/discrete-mathematics/05-combinatorics/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/discrete-mathematics/05-combinatorics/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/discrete-mathematics/05-combinatorics/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/discrete-mathematics/05-combinatorics/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/discrete-mathematics/05-combinatorics/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/discrete-mathematics/05-combinatorics/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/discrete-mathematics/05-combinatorics/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/discrete-mathematics/05-combinatorics/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/discrete-mathematics/05-combinatorics/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/discrete-mathematics/05-combinatorics/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/discrete-mathematics/05-combinatorics/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/discrete-mathematics/05-combinatorics/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>

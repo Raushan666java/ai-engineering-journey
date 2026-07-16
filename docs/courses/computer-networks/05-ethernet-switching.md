@@ -1,6 +1,6 @@
-# Chapter 5: Ethernet Switching
+﻿# Chapter 5: Ethernet Switching
 
-> **Prerequisites:** [Chapter 4: Medium Access Control](./04-mac.md) → MAC protocols and CSMA/CD | **Next:** [Chapter 6: Network Layer](./06-network-layer.md) → From switching to IP routing
+> **Prerequisites:** [Chapter 4: Medium Access Control](./04-mac.md) â†’ MAC protocols and CSMA/CD | **Next:** [Chapter 6: Network Layer](./06-network-layer.md) â†’ From switching to IP routing
 
 ## Learning Objectives
 
@@ -9,16 +9,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/computer-networks/05-ethernet-switching/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/computer-networks/05-ethernet-switching/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/computer-networks/05-ethernet-switching/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/computer-networks/05-ethernet-switching/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/computer-networks/05-ethernet-switching/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/computer-networks/05-ethernet-switching/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/computer-networks/05-ethernet-switching/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/computer-networks/05-ethernet-switching/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/computer-networks/05-ethernet-switching/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/computer-networks/05-ethernet-switching/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/computer-networks/05-ethernet-switching/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/computer-networks/05-ethernet-switching/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -40,8 +40,8 @@
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
 | Ethernet Frame Format | 7-field structure unchanged since 1980 | Preamble (7B) + SFD (1B) + Dst (6B) + Src (6B) + Type/Len (2B) + Payload (46-1500B) + FCS (4B) |
-| Ethernet Evolution | 10 Mbps coaxial → 400 Gbps full-duplex switched | Each generation preserved frame format for backward compatibility |
-| Learning Bridges | Automatically build MAC tables by observing source addresses | Transparent → stations never know bridges exist |
+| Ethernet Evolution | 10 Mbps coaxial â†’ 400 Gbps full-duplex switched | Each generation preserved frame format for backward compatibility |
+| Learning Bridges | Automatically build MAC tables by observing source addresses | Transparent â†’ stations never know bridges exist |
 | Spanning Tree | Prevents broadcast storms by blocking redundant links | Convergence: STP 30-50s, RSTP 1-3s |
 | VLANs (802.1Q) | Partition switches into logical broadcast domains | 12-bit VLAN ID supports 4094 VLANs per switch |
 | LACP | Bundle multiple physical links into one logical link | Up to 8 links; hash-based load balancing |
@@ -53,7 +53,7 @@
 ```mermaid
 flowchart LR
     A[Ethernet Switching] --> B[Frame Format]
-    A --> C[Evolution 10M→400G]
+    A --> C[Evolution 10Mâ†’400G]
     A --> D[Switching Methods]
     A --> E[Learning Bridges]
     A --> F[STP / RSTP]
@@ -112,13 +112,13 @@ sequenceDiagram
     AP->>DP: Agreement
     Note over DP,AP: Proposal-Agreement handshake (RSTP)
     
-    DP->>DP: Synced → forwarding state
+    DP->>DP: Synced â†’ forwarding state
     Note over AP: RSTP: 1-3s<br/>STP: 30-50s
 
     AP->>RP: Alternate port becomes root
     RP->>DP: Forwarding state
 
-    Note over RP,AP: Convergence complete — loop-free topology
+    Note over RP,AP: Convergence complete â€” loop-free topology
 ```
 
 ---
@@ -132,11 +132,11 @@ The Ethernet frame is the fundamental unit of data transfer on Ethernet networks
 
 ```
   Bytes:     7         1         6          6         2       46-1500       4
-        ┌─────────┬─────────┬──────────┬──────────┬────────┬─────────────┬────────┐
-        │Preamble │   SFD   │Destination│ Source  │Length/ │   Payload   │  FCS   │
-        │         │         │   MAC    │   MAC   │ Type   │  (includes  │ (CRC-32)│
-        │         │         │          │          │        │   padding)  │        │
-        └─────────┴─────────┴──────────┴──────────┴────────┴─────────────┴────────┘
+        â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”
+        â”‚Preamble â”‚   SFD   â”‚Destinationâ”‚ Source  â”‚Length/ â”‚   Payload   â”‚  FCS   â”‚
+        â”‚         â”‚         â”‚   MAC    â”‚   MAC   â”‚ Type   â”‚  (includes  â”‚ (CRC-32)â”‚
+        â”‚         â”‚         â”‚          â”‚          â”‚        â”‚   padding)  â”‚        â”‚
+        â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### 5.1.2 Field-by-Field Breakdown
@@ -144,31 +144,31 @@ The Ethernet frame is the fundamental unit of data transfer on Ethernet networks
 
 | Field | Size | Description |
 |-------|------|-------------|
-| **Preamble** | 7 bytes | Alternating 1 and 0 bits (10101010 Ã— 7). Enables receiver NIC to synchronize clock recovery before the frame arrives. |
+| **Preamble** | 7 bytes | Alternating 1 and 0 bits (10101010 Ãƒâ€” 7). Enables receiver NIC to synchronize clock recovery before the frame arrives. |
 | **SFD** | 1 byte | Start Frame Delimiter (10101011). The last two bits (11) signal that the next byte is the destination MAC. |
 | **Destination MAC** | 6 bytes | Recipient's 48-bit MAC address. If the first bit (I/G) = 0, it is unicast; = 1, multicast/broadcast (FF:FF:FF:FF:FF:FF). |
 | **Source MAC** | 6 bytes | Sender's 48-bit MAC address. First bit always 0 (source cannot be multicast). |
-| **Length/Type** | 2 bytes | If value â‰¤ 1500 (0x05DC): indicates payload length in bytes (IEEE 802.3). If value â‰¥ 1536 (0x0600): indicates EtherType (DIX Ethernet). Common EtherTypes: 0x0800 (IPv4), 0x0806 (ARP), 0x86DD (IPv6), 0x8100 (802.1Q VLAN tag). |
-| **Payload + Pad** | 46â€“1500 bytes | Network-layer PDU (e.g., IP packet). If payload &lt; 46 bytes, padding zeros are added to meet the 64-byte minimum frame size. |
-| **FCS** | 4 bytes | Frame Check Sequence → CRC-32 computed over dest MAC, source MAC, length/type, payload, and pad. The receiver recomputes CRC; mismatch indicates corruption. |
+| **Length/Type** | 2 bytes | If value Ã¢â€°Â¤ 1500 (0x05DC): indicates payload length in bytes (IEEE 802.3). If value Ã¢â€°Â¥ 1536 (0x0600): indicates EtherType (DIX Ethernet). Common EtherTypes: 0x0800 (IPv4), 0x0806 (ARP), 0x86DD (IPv6), 0x8100 (802.1Q VLAN tag). |
+| **Payload + Pad** | 46Ã¢â‚¬â€œ1500 bytes | Network-layer PDU (e.g., IP packet). If payload &lt; 46 bytes, padding zeros are added to meet the 64-byte minimum frame size. |
+| **FCS** | 4 bytes | Frame Check Sequence â†’ CRC-32 computed over dest MAC, source MAC, length/type, payload, and pad. The receiver recomputes CRC; mismatch indicates corruption. |
 
 ### 5.1.3 Real-World Analogy
 
 
-> **A postal envelope.** The Preamble is the postal worker aligning the envelope in the sorting machine. The SFD is the "start here" mark. Destination and source MACs are the recipient and sender addresses. The Length/Type tells the post office whether this is a letter (length) or a package with a tracking number (EtherType). The Payload is the letter inside. The FCS is the tamper-evident seal → if broken, the recipient knows the contents may be damaged.
+> **A postal envelope.** The Preamble is the postal worker aligning the envelope in the sorting machine. The SFD is the "start here" mark. Destination and source MACs are the recipient and sender addresses. The Length/Type tells the post office whether this is a letter (length) or a package with a tracking number (EtherType). The Payload is the letter inside. The FCS is the tamper-evident seal â†’ if broken, the recipient knows the contents may be damaged.
 
 ### 5.1.4 Frame Processing Steps
 
 
 When a NIC receives a frame from the wire:
 
-1. **Clock synchronization** → The Preamble (7 bytes of 10101010) trains the receiver's PLL (phase-locked loop) to the sender's bit timing.
-2. **Frame start detection** → The SFD (10101011) marks the boundary; the two consecutive 1 bits at the end signal "next byte is the destination MAC."
-3. **Address reception** → The NIC reads the 6-byte destination MAC. If the NIC's MAC filter is enabled, it checks whether this address matches its own MAC, a configured multicast group, or the broadcast address. If no match, the frame is discarded at the hardware level.
-4. **Source address capture** → The source MAC is extracted for potential MAC table learning (by switches, not end hosts).
-5. **Type/Length interpretation** → The 2-byte field is read. If â‰¤ 1500, it is a length field (802.3); the receiver expects exactly that many payload bytes. If â‰¥ 1536, it is an EtherType; the payload length is inferred from the frame size minus headers.
-6. **Payload extraction** → The data portion (46â€“1500 bytes) is passed to the upper-layer protocol indicated by EtherType.
-7. **CRC validation** → The receiver computes CRC-32 over the received fields (excluding preamble, SFD, and FCS). If the computed CRC matches the FCS field, the frame is accepted; otherwise, it is silently dropped.
+1. **Clock synchronization** â†’ The Preamble (7 bytes of 10101010) trains the receiver's PLL (phase-locked loop) to the sender's bit timing.
+2. **Frame start detection** â†’ The SFD (10101011) marks the boundary; the two consecutive 1 bits at the end signal "next byte is the destination MAC."
+3. **Address reception** â†’ The NIC reads the 6-byte destination MAC. If the NIC's MAC filter is enabled, it checks whether this address matches its own MAC, a configured multicast group, or the broadcast address. If no match, the frame is discarded at the hardware level.
+4. **Source address capture** â†’ The source MAC is extracted for potential MAC table learning (by switches, not end hosts).
+5. **Type/Length interpretation** â†’ The 2-byte field is read. If Ã¢â€°Â¤ 1500, it is a length field (802.3); the receiver expects exactly that many payload bytes. If Ã¢â€°Â¥ 1536, it is an EtherType; the payload length is inferred from the frame size minus headers.
+6. **Payload extraction** â†’ The data portion (46Ã¢â‚¬â€œ1500 bytes) is passed to the upper-layer protocol indicated by EtherType.
+7. **CRC validation** â†’ The receiver computes CRC-32 over the received fields (excluding preamble, SFD, and FCS). If the computed CRC matches the FCS field, the frame is accepted; otherwise, it is silently dropped.
 
 ### 5.1.5 Pseudocode: Ethernet Frame Parser
 
@@ -201,7 +201,7 @@ FUNCTION ParseEthernetFrame(raw_bytes):
     
     computed_crc = CRC32(raw_bytes[8:fcs_offset])
     IF computed_crc != fcs:
-        RETURN Error("CRC mismatch → frame corrupted")
+        RETURN Error("CRC mismatch â†’ frame corrupted")
     
     RETURN Frame(dst_mac, src_mac, type_len, actual_payload, protocol)
 ```
@@ -215,14 +215,14 @@ Consider a switch receiving a 64-byte frame from Host A (MAC: AA:AA:AA:AA:AA:AA)
 |------|-----------|--------|--------|
 | 1 | PHY | Receive bits from wire | 64 bytes + 8B preamble/SFD = 72B on wire |
 | 2 | Preamble | Synchronize clock | PLL locked to sender's clock |
-| 3 | SFD | Detect frame start | SFD = 0xAB → frame starts |
+| 3 | SFD | Detect frame start | SFD = 0xAB â†’ frame starts |
 | 4 | Dst MAC | Read address | BB:BB:BB:BB:BB:BB (unicast) |
 | 5 | Src MAC | Read address | AA:AA:AA:AA:AA:AA |
 | 6 | Type/Len | Read field | 0x002C = 46 (IEEE 802.3 length) |
 | 7 | Payload | Read 46 bytes | All zeros (padding) |
 | 8 | FCS | Read CRC | 4 bytes, e.g., 0x12345678 |
-| 9 | CRC check | Recompute CRC | CRC matches → frame valid |
-| 10 | Protocol | Dispatch payload | Length â‰¤ 1500 → 802.3 frame |
+| 9 | CRC check | Recompute CRC | CRC matches â†’ frame valid |
+| 10 | Protocol | Dispatch payload | Length Ã¢â€°Â¤ 1500 â†’ 802.3 frame |
 
 ### 5.1.7 C++ Implementation: Ethernet Frame Analyzer
 
@@ -292,7 +292,7 @@ public:
         std::memcpy(&fcs, raw.data() + payload_end, FCS_SIZE);
         fcs = ntohl(fcs);
         
-        // Validate CRC (simplified → real CRC32 polynomial)
+        // Validate CRC (simplified â†’ real CRC32 polynomial)
         uint32_t computed = crc32(raw.data() + offset, payload_end - offset);
         if (computed != fcs) {
             std::cerr << "CRC mismatch: computed 0x" << std::hex << computed
@@ -326,7 +326,7 @@ public:
     
 private:
     static uint32_t crc32(const uint8_t* data, size_t len) {
-        // Simplified CRC-32 → production uses hardware-accelerated CRC
+        // Simplified CRC-32 â†’ production uses hardware-accelerated CRC
         uint32_t crc = 0xFFFFFFFF;
         for (size_t i = 0; i < len; ++i) {
             crc ^= data[i];
@@ -359,7 +359,7 @@ int main() {
         0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
         0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
         0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
-        // FCS (4 bytes) → placeholder
+        // FCS (4 bytes) â†’ placeholder
         0xDE, 0xAD, 0xBE, 0xEF
     };
     
@@ -416,7 +416,7 @@ class EthernetFrameParser:
     @classmethod
     def parse(cls, raw: bytes) -> Optional[EthernetFrame]:
         if len(raw) < cls.MIN_FRAME:
-            print(f"ERROR: Runt frame → {len(raw)} bytes (min {cls.MIN_FRAME})")
+            print(f"ERROR: Runt frame â†’ {len(raw)} bytes (min {cls.MIN_FRAME})")
             return None
         
         # Skip preamble (7 bytes) + SFD (1 byte) if present
@@ -434,7 +434,7 @@ class EthernetFrameParser:
         # Validate CRC
         computed_fcs = cls.crc32(raw[offset:payload_end])
         if computed_fcs != received_fcs:
-            print(f"ERROR: CRC mismatch → computed 0x{computed_fcs:08X}, "
+            print(f"ERROR: CRC mismatch â†’ computed 0x{computed_fcs:08X}, "
                   f"received 0x{received_fcs:08X}")
             return None
         
@@ -504,10 +504,10 @@ if __name__ == "__main__":
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|-------------|
 | Fixed header size | 14-byte header enables fast hardware parsing | No room for extensions without tagging |
-| CRC-32 protection | Detects all single-bit, double-bit, and burst errors â‰¤ 32 bits | No error correction → corrupted frames are silently dropped |
+| CRC-32 protection | Detects all single-bit, double-bit, and burst errors Ã¢â€°Â¤ 32 bits | No error correction â†’ corrupted frames are silently dropped |
 | Minimum frame size | Ensures collision detection in half-duplex modes | Wastes bandwidth for small packets (e.g., TCP ACKs padded with zeros) |
 | Maximum frame size | 1500 bytes is TCP/IP-friendly (fits in typical socket buffers) | Jumbo frames (9000B) are non-standard; requires all devices to agree |
-| Backward compatibility | Same format since 1982 → 10Mbps and 400Gbps NICs speak the same language | No native encryption or authentication at L2 |
+| Backward compatibility | Same format since 1982 â†’ 10Mbps and 400Gbps NICs speak the same language | No native encryption or authentication at L2 |
 
 ### 5.1.11 Edge Cases
 
@@ -520,19 +520,19 @@ if __name__ == "__main__":
 | Jabber | Transmitter sends abnormally long frame (> 1518) | Switch detects jabber and disables port (errdisable) |
 | Alignment error | Frame does not end on byte boundary | CRC check fails; frame discarded |
 | Late collision | Collision detected after first 64 bytes transmitted | Frame treated as collision fragment; station retransmits (half-duplex only) |
-| EtherType ambiguity | Some NICs misclassify length vs type when value is 1500â€“1535 | Modern switches treat values > 1500 as EtherType per IEEE 802.3x |
+| EtherType ambiguity | Some NICs misclassify length vs type when value is 1500Ã¢â‚¬â€œ1535 | Modern switches treat values > 1500 as EtherType per IEEE 802.3x |
 | Dribble bit error | Extra bits after FCS due to clock drift | Receiver may accept frame if FCS is valid and discard extra bits |
 
 ---
 
 ## 5.2 Ethernet Evolution
 
-Ethernet has evolved through seven major speed generations while preserving the same frame format → an engineering achievement unmatched in networking.
+Ethernet has evolved through seven major speed generations while preserving the same frame format â†’ an engineering achievement unmatched in networking.
 
 ### 5.2.1 10 Mbps Ethernet (10Base5, 10Base2, 10BaseT)
 
 
-The original Ethernet standard published in 1980 by DEC, Intel, and Xerox (DIX) operated at 10 Mbps over coaxial cable. 10Base5 (thicknet) used a vampire tap to connect stations to a long coaxial segment up to 500 meters. 10Base2 (thinnet) used BNC T-connectors on thinner, more flexible RG-58 cable with 185 m segments. Both were shared-media bus topologies → all stations on a segment belonged to the same collision domain.
+The original Ethernet standard published in 1980 by DEC, Intel, and Xerox (DIX) operated at 10 Mbps over coaxial cable. 10Base5 (thicknet) used a vampire tap to connect stations to a long coaxial segment up to 500 meters. 10Base2 (thinnet) used BNC T-connectors on thinner, more flexible RG-58 cable with 185 m segments. Both were shared-media bus topologies â†’ all stations on a segment belonged to the same collision domain.
 
 10BaseT introduced twisted-pair cabling and a star topology centered on a hub. Hubs were repeaters: signals received on any port were regenerated and transmitted on all other ports. While easier to cable, hubs still created a single collision domain and limited aggregate throughput to 10 Mbps.
 
@@ -549,14 +549,14 @@ Gigabit Ethernet (IEEE 802.3z, 1998; 802.3ab, 1999) pushed the data rate to 1000
 ### 5.2.4 10 Gigabit Ethernet
 
 
-10GbE (IEEE 802.3ae, 2002) is full-duplex only → CSMA/CD is disabled because switched networks make collisions irrelevant. 10GBASE-SR (short-range, 300 m MMF), 10GBASE-LR (10 km SMF), 10GBASE-ER (40 km SMF), and 10GBASE-T (Cat 6a UTP, 100 m) serve data center and metropolitan applications. FEC (Forward Error Correction) was introduced to maintain BER below 10^-12 over longer fiber runs.
+10GbE (IEEE 802.3ae, 2002) is full-duplex only â†’ CSMA/CD is disabled because switched networks make collisions irrelevant. 10GBASE-SR (short-range, 300 m MMF), 10GBASE-LR (10 km SMF), 10GBASE-ER (40 km SMF), and 10GBASE-T (Cat 6a UTP, 100 m) serve data center and metropolitan applications. FEC (Forward Error Correction) was introduced to maintain BER below 10^-12 over longer fiber runs.
 
 ### 5.2.5 40, 100, 200, 400 Gigabit Ethernet
 
 
 IEEE 802.3ba (2010) defined 40 Gbps and 100 Gbps Ethernet using parallel lanes of 10 Gbps or 25 Gbps physical channels. 400 Gbps (802.3bs, 2017) uses 16 lanes of 25 Gbps or 8 lanes of 50 Gbps with PAM4 modulation. 800 Gbps and 1.6 Tbps are under development (IEEE 802.3df). Modern switches support aggregation of multiple links via LACP.
 
-> **Pro Tip:** The Ethernet frame format has remained fundamentally unchanged since 1980, which is remarkable for any networking technology. This backward compatibility means a 2024 switch can still process frames from a 1990s Ethernet card → the physical speed changes, but the frame language is the same.
+> **Pro Tip:** The Ethernet frame format has remained fundamentally unchanged since 1980, which is remarkable for any networking technology. This backward compatibility means a 2024 switch can still process frames from a 1990s Ethernet card â†’ the physical speed changes, but the frame language is the same.
 
 ### 5.2.6 Ethernet Generations Comparison
 
@@ -567,10 +567,10 @@ IEEE 802.3ba (2010) defined 40 Gbps and 100 Gbps Ethernet using parallel lanes o
 | Fast Ethernet | 802.3u | 1995 | 100 Mbps | Cat5 UTP (100BaseTX), MMF (100BaseFX) | 100 m (TP), 2 km (fiber) | Auto-negotiation, 10x speed |
 | Gigabit Ethernet | 802.3z/ab | 1998/99 | 1 Gbps | Cat5e UTP, MMF (SX), SMF (LX) | 100 m (TP), 550 m (MMF), 5 km (SMF) | Carrier extension, frame bursting |
 | 10 Gigabit | 802.3ae | 2002 | 10 Gbps | Cat6a UTP, MMF, SMF | 100 m (TP), 300 m (MMF), 40 km (SMF) | Full-duplex only, FEC, 8B/10B encoding |
-| 40 Gigabit | 802.3ba | 2010 | 40 Gbps | SMF/MMF, Cat6a (CX) | 100 m (CX), 10 km (SMF) | 4Ã—10G lanes, QSFP form factor |
-| 100 Gigabit | 802.3ba | 2010 | 100 Gbps | SMF/MMF | 40 km (SMF) | 10Ã—10G or 4Ã—25G lanes, CFP/QSFP28 |
-| 200 Gigabit | 802.3bs | 2017 | 200 Gbps | SMF/MMF | 2 km (MMF), 10 km (SMF) | PAM4, 4Ã—50G lanes |
-| 400 Gigabit | 802.3bs | 2017 | 400 Gbps | SMF/MMF | 2 km (MMF), 10 km (SMF) | 16Ã—25G or 8Ã—50G PAM4, QSFP-DD/OSFP |
+| 40 Gigabit | 802.3ba | 2010 | 40 Gbps | SMF/MMF, Cat6a (CX) | 100 m (CX), 10 km (SMF) | 4Ãƒâ€”10G lanes, QSFP form factor |
+| 100 Gigabit | 802.3ba | 2010 | 100 Gbps | SMF/MMF | 40 km (SMF) | 10Ãƒâ€”10G or 4Ãƒâ€”25G lanes, CFP/QSFP28 |
+| 200 Gigabit | 802.3bs | 2017 | 200 Gbps | SMF/MMF | 2 km (MMF), 10 km (SMF) | PAM4, 4Ãƒâ€”50G lanes |
+| 400 Gigabit | 802.3bs | 2017 | 400 Gbps | SMF/MMF | 2 km (MMF), 10 km (SMF) | 16Ãƒâ€”25G or 8Ãƒâ€”50G PAM4, QSFP-DD/OSFP |
 
 ### 5.2.7 Key Physical Layer Innovations by Generation
 
@@ -584,7 +584,7 @@ IEEE 802.3ba (2010) defined 40 Gbps and 100 Gbps Ethernet using parallel lanes o
 | Full-duplex only | 10 Gbps | Eliminated CSMA/CD entirely; simplified PHY, doubled throughput |
 | FEC (RS-FEC) | 10 Gbps (later) | Reed-Solomon FEC corrected bit errors at high speeds over longer reaches |
 | PAM4 modulation | 50 Gbps+ | 2 bits per symbol doubled data rate without doubling bandwidth |
-| NRZ → PAM4 transition | 400 Gbps | 8Ã—50G PAM4 lanes replaced 16Ã—25G NRZ lanes for better density |
+| NRZ â†’ PAM4 transition | 400 Gbps | 8Ãƒâ€”50G PAM4 lanes replaced 16Ãƒâ€”25G NRZ lanes for better density |
 | Multi-lane distribution | 40 Gbps+ | Data striped across multiple physical lanes; reassembled at receiver |
 
 ---
@@ -596,9 +596,9 @@ A **bridge** operates at the data link layer, connecting two or more LAN segment
 ### 5.3.1 Switching Methods
 
 
-**Store-and-forward switching.** The switch receives the entire frame, checks the FCS for errors, and then forwards. This ensures no corrupted frames propagate but adds latency proportional to frame size. Latency = frame_size / link_speed. For a 1500-byte frame on 1 Gbps: 1500Ã—8/1e9 = 12 Âµs.
+**Store-and-forward switching.** The switch receives the entire frame, checks the FCS for errors, and then forwards. This ensures no corrupted frames propagate but adds latency proportional to frame size. Latency = frame_size / link_speed. For a 1500-byte frame on 1 Gbps: 1500Ãƒâ€”8/1e9 = 12 Ã‚Âµs.
 
-**Cut-through switching.** The switch begins forwarding before the complete frame arrives → typically after reading only the destination MAC address (first 6 bytes of the frame, 14 bytes from preamble start). Latency is typically &lt; 10 Âµs regardless of frame size, but damaged frames are forwarded. Two variants: fast-forward (forwards after dst MAC) and fragment-free (forwards after first 64 bytes).
+**Cut-through switching.** The switch begins forwarding before the complete frame arrives â†’ typically after reading only the destination MAC address (first 6 bytes of the frame, 14 bytes from preamble start). Latency is typically &lt; 10 Ã‚Âµs regardless of frame size, but damaged frames are forwarded. Two variants: fast-forward (forwards after dst MAC) and fragment-free (forwards after first 64 bytes).
 
 **Fragment-free switching.** The switch reads the first 64 bytes before forwarding (the collision window). This rejects runt frames (collision fragments) while keeping latency low. It is a compromise between store-and-forward and cut-through.
 
@@ -620,7 +620,7 @@ A **bridge** operates at the data link layer, connecting two or more LAN segment
 | Broadcast domain | Single (all ports) | Per-VLAN (configurable) | Per-interface (does not forward broadcasts by default) |
 | Bandwidth sharing | Shared (total bandwidth divided) | Dedicated (each port gets full speed) | Dedicated (each port gets full speed) |
 | Loop handling | No loop protection | STP/RSTP (blocking redundant paths) | TTL, routing protocols prevent loops |
-| Latency | Lowest (repeats bits immediately) | Low (Âµs) | Higher (ms, due to IP lookup) |
+| Latency | Lowest (repeats bits immediately) | Low (Ã‚Âµs) | Higher (ms, due to IP lookup) |
 | Intelligence | None | MAC learning, STP, VLAN, QoS | Routing protocols, NAT, ACL, firewall |
 | Port density | Low (typically 4-24) | High (24-48 ports common) | Low-moderate (4-48 ports) |
 | Cost per port | Lowest | Moderate | Highest |
@@ -631,14 +631,14 @@ A **bridge** operates at the data link layer, connecting two or more LAN segment
 
 When a switch receives a frame on a port:
 
-1. **Frame arrival** → The PHY receives bits on port P. The MAC layer extracts the frame, validates the FCS. If FCS fails, the frame is dropped.
-2. **Source MAC learning** → The switch extracts the source MAC address S. It creates or refreshes an entry in the MAC address table: (S, port P, timestamp). This links the sender to the port it arrived on.
-3. **Destination MAC lookup** → The switch extracts the destination MAC address D. It looks up D in the MAC address table.
-4. **Forwarding decision** → Three possible outcomes:
+1. **Frame arrival** â†’ The PHY receives bits on port P. The MAC layer extracts the frame, validates the FCS. If FCS fails, the frame is dropped.
+2. **Source MAC learning** â†’ The switch extracts the source MAC address S. It creates or refreshes an entry in the MAC address table: (S, port P, timestamp). This links the sender to the port it arrived on.
+3. **Destination MAC lookup** â†’ The switch extracts the destination MAC address D. It looks up D in the MAC address table.
+4. **Forwarding decision** â†’ Three possible outcomes:
    - **Known unicast (filter):** D is found on port Q, and Q == P (same port). Frame is dropped because the destination is on the same segment as the source.
    - **Known unicast (forward):** D is found on port Q, and Q != P. Frame is forwarded only to port Q.
    - **Unknown unicast or broadcast (flood):** D is not found in the table, or D is broadcast (FF:FF:FF:FF:FF:FF). Frame is forwarded to all ports except P.
-5. **Frame transmission** → The switch queues the frame on the egress port's buffer. The PHY transmits bits on the wire. For cut-through, step 4 begins before the full frame is received.
+5. **Frame transmission** â†’ The switch queues the frame on the egress port's buffer. The PHY transmits bits on the wire. For cut-through, step 4 begins before the full frame is received.
 
 ### 5.3.5 Pseudocode: Switch Forwarding Engine
 
@@ -681,10 +681,10 @@ FUNCTION ProcessFrame(frame, ingress_port, current_time):
     entry = LOOKUP mac_table[dst_mac]
     
     IF entry IS NULL:
-        // Unknown unicast → flood
+        // Unknown unicast â†’ flood
         FloodFrame(frame, ingress_port)
     ELSE IF entry.port == ingress_port:
-        // Same port → filter (drop)
+        // Same port â†’ filter (drop)
         DROP frame
     ELSE:
         // Forward to learned port
@@ -694,22 +694,22 @@ FUNCTION ProcessFrame(frame, ingress_port, current_time):
 ### 5.3.6 Dry Run Trace Table: MAC Table Learning
 
 
-Consider a 4-port switch (ports 1â€“4). Initially the MAC table is empty. Hosts A, B, C connected on ports 1, 2, 3 respectively. Host D connected on port 4. The switch processes frames in sequence:
+Consider a 4-port switch (ports 1Ã¢â‚¬â€œ4). Initially the MAC table is empty. Hosts A, B, C connected on ports 1, 2, 3 respectively. Host D connected on port 4. The switch processes frames in sequence:
 
 | Time | Event | Ingress Port | Src MAC | Dst MAC | MAC Table After | Action |
 |------|-------|-------------|---------|---------|-----------------|--------|
-| T=0 | → | → | → | → | (empty) | Initial state |
-| T=1 | A→B frame | 1 | A | B | {A→1} | Learn A on port 1; B unknown → flood ports 2,3,4 |
-| T=2 | B→A reply | 2 | B | A | {A→1, B→2} | Learn B on port 2; A known on port 1 → forward only port 1 |
-| T=3 | A→C frame | 1 | A | C | {A→1, B→2} | Refresh A; C unknown → flood ports 2,3,4 |
-| T=4 | C→A reply | 3 | C | A | {A→1, B→2, C→3} | Learn C on port 3; A known → forward only port 1 |
-| T=5 | B→D frame | 2 | B | D | {A→1, B→2, C→3} | Refresh B; D unknown → flood ports 1,3,4 |
-| T=6 | D→B reply | 4 | D | B | {A→1, B→2, C→3, D→4} | Learn D on port 4; B known → forward only port 2 |
-| T=7 | A→B frame | 1 | A | B | {A→1, B→2, C→3, D→4} | Refresh A; B known on port 2 â‰  1 → forward only port 2 |
-| T=8 | B→A frame | 2 | B | A | {A→1, B→2, C→3, D→4} | Refresh B; A known on port 1 â‰  2 → forward only port 1 |
-| T=9 | A→A frame (self) | 1 | A | A | {A→1, B→2, C→3, D→4} | Refresh A; A known on port 1 == 1 → filter (drop) |
+| T=0 | â†’ | â†’ | â†’ | â†’ | (empty) | Initial state |
+| T=1 | Aâ†’B frame | 1 | A | B | {Aâ†’1} | Learn A on port 1; B unknown â†’ flood ports 2,3,4 |
+| T=2 | Bâ†’A reply | 2 | B | A | {Aâ†’1, Bâ†’2} | Learn B on port 2; A known on port 1 â†’ forward only port 1 |
+| T=3 | Aâ†’C frame | 1 | A | C | {Aâ†’1, Bâ†’2} | Refresh A; C unknown â†’ flood ports 2,3,4 |
+| T=4 | Câ†’A reply | 3 | C | A | {Aâ†’1, Bâ†’2, Câ†’3} | Learn C on port 3; A known â†’ forward only port 1 |
+| T=5 | Bâ†’D frame | 2 | B | D | {Aâ†’1, Bâ†’2, Câ†’3} | Refresh B; D unknown â†’ flood ports 1,3,4 |
+| T=6 | Dâ†’B reply | 4 | D | B | {Aâ†’1, Bâ†’2, Câ†’3, Dâ†’4} | Learn D on port 4; B known â†’ forward only port 2 |
+| T=7 | Aâ†’B frame | 1 | A | B | {Aâ†’1, Bâ†’2, Câ†’3, Dâ†’4} | Refresh A; B known on port 2 Ã¢â€°Â  1 â†’ forward only port 2 |
+| T=8 | Bâ†’A frame | 2 | B | A | {Aâ†’1, Bâ†’2, Câ†’3, Dâ†’4} | Refresh B; A known on port 1 Ã¢â€°Â  2 â†’ forward only port 1 |
+| T=9 | Aâ†’A frame (self) | 1 | A | A | {Aâ†’1, Bâ†’2, Câ†’3, Dâ†’4} | Refresh A; A known on port 1 == 1 â†’ filter (drop) |
 
-After T=6, all four hosts are learned. After T=7â€“8, frames between known hosts are forwarded precisely to the correct port → no flooding. After T=9, a self-addressed frame is filtered because the source and destination port match (the destination is on the same segment as the source).
+After T=6, all four hosts are learned. After T=7Ã¢â‚¬â€œ8, frames between known hosts are forwarded precisely to the correct port â†’ no flooding. After T=9, a self-addressed frame is filtered because the source and destination port match (the destination is on the same segment as the source).
 
 ### 5.3.7 C++ Implementation: Switch MAC Table
 
@@ -766,7 +766,7 @@ public:
         auto it = table.find(mac);
         
         if (it != table.end()) {
-            // Existing entry → update port and timestamp
+            // Existing entry â†’ update port and timestamp
             if (it->second.port != port) {
                 std::cout << "MAC flapping detected: " << mac_to_string(mac)
                           << " moved from port " << it->second.port
@@ -819,7 +819,7 @@ public:
                 oldest = it;
             }
         }
-        std::cout << "Table full → evicting oldest entry: "
+        std::cout << "Table full â†’ evicting oldest entry: "
                   << mac_to_string(oldest->first) << "\n";
         table.erase(oldest);
     }
@@ -875,16 +875,16 @@ int main() {
     };
     
     std::vector<FrameEvent> events = {
-        {"A→B", "AA:AA:AA:AA:AA:01", "AA:AA:AA:AA:AA:02", 1},
-        {"B→A reply", "AA:AA:AA:AA:AA:02", "AA:AA:AA:AA:AA:01", 2},
-        {"C→D", "AA:AA:AA:AA:AA:03", "AA:AA:AA:AA:AA:04", 3},
-        {"D→C reply", "AA:AA:AA:AA:AA:04", "AA:AA:AA:AA:AA:03", 4},
-        {"A→C", "AA:AA:AA:AA:AA:01", "AA:AA:AA:AA:AA:03", 1},
+        {"Aâ†’B", "AA:AA:AA:AA:AA:01", "AA:AA:AA:AA:AA:02", 1},
+        {"Bâ†’A reply", "AA:AA:AA:AA:AA:02", "AA:AA:AA:AA:AA:01", 2},
+        {"Câ†’D", "AA:AA:AA:AA:AA:03", "AA:AA:AA:AA:AA:04", 3},
+        {"Dâ†’C reply", "AA:AA:AA:AA:AA:04", "AA:AA:AA:AA:AA:03", 4},
+        {"Aâ†’C", "AA:AA:AA:AA:AA:01", "AA:AA:AA:AA:AA:03", 1},
     };
     
     for (const auto& evt : events) {
         std::cout << "\n[" << evt.desc << "] Frame from " << evt.src_mac
-                  << " → " << evt.dst_mac << " on port " << evt.ingress_port << "\n";
+                  << " â†’ " << evt.dst_mac << " on port " << evt.ingress_port << "\n";
         
         // Learn source MAC
         table.learn(evt.src_mac, evt.ingress_port);
@@ -892,13 +892,13 @@ int main() {
         // Lookup destination MAC
         int dst_port = table.lookup(evt.dst_mac);
         if (dst_port == -1) {
-            std::cout << "  → " << evt.dst_mac << " unknown → FLOOD to all ports except "
+            std::cout << "  â†’ " << evt.dst_mac << " unknown â†’ FLOOD to all ports except "
                       << evt.ingress_port << "\n";
         } else if (dst_port == evt.ingress_port) {
-            std::cout << "  → " << evt.dst_mac << " on same port → FILTER (drop)\n";
+            std::cout << "  â†’ " << evt.dst_mac << " on same port â†’ FILTER (drop)\n";
         } else {
-            std::cout << "  → " << evt.dst_mac << " on port " << dst_port
-                      << " → FORWARD\n";
+            std::cout << "  â†’ " << evt.dst_mac << " on port " << dst_port
+                      << " â†’ FORWARD\n";
         }
         
         table.print_table();
@@ -965,7 +965,7 @@ class SwitchMacTable:
         if not self.table:
             return
         oldest_mac = min(self.table.items(), key=lambda x: x[1].timestamp)[0]
-        print(f"Table full → evicting oldest: {oldest_mac}")
+        print(f"Table full â†’ evicting oldest: {oldest_mac}")
         del self.table[oldest_mac]
     
     def __len__(self) -> int:
@@ -1004,11 +1004,11 @@ class Switch:
             if dst_port is None:
                 action = f"FLOOD (unknown unicast) to all ports except {ingress_port}"
             elif dst_port == ingress_port:
-                action = "FILTER (same port → destination on same segment)"
+                action = "FILTER (same port â†’ destination on same segment)"
             else:
                 action = f"FORWARD to port {dst_port}"
         
-        print(f"[{src_mac} → {dst_mac} on port {ingress_port}] {action}")
+        print(f"[{src_mac} â†’ {dst_mac} on port {ingress_port}] {action}")
         return action
 
 
@@ -1046,7 +1046,7 @@ if __name__ == "__main__":
 | MAC table insertion | O(1) amortized | O(m)* | Hash insertion amortized O(1). If table full, eviction adds O(m) to find oldest. |
 | MAC table aging | O(m) | O(1) | Must scan all m entries to check timestamps. In production, coarsened to run every N seconds. |
 | Frame forwarding | O(1) + O(f) | O(f)** | Lookup O(1); transmit cost O(f) where f = frame size in bytes (serialization delay). |
-| Frame flooding | O(p) + O(f) | O(pÂ·f) | Must replicate frame to up to p-1 ports. Each copy costs O(f) bandwidth. |
+| Frame flooding | O(p) + O(f) | O(pÃ‚Â·f) | Must replicate frame to up to p-1 ports. Each copy costs O(f) bandwidth. |
 
 *\* m = number of MAC entries in the table*
 *\*\* f = frame size in bytes*
@@ -1056,9 +1056,9 @@ if __name__ == "__main__":
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|-------------|
-| Learning | Automatic, transparent → no configuration needed | Table overflow can cause excessive flooding |
+| Learning | Automatic, transparent â†’ no configuration needed | Table overflow can cause excessive flooding |
 | Filtering | Precise forwarding conserves bandwidth | Stale entries cause mis-forwarding until aged out |
-| Cut-through | Minimal latency (< 10 Âµs) | Forwards corrupted frames and runt frames |
+| Cut-through | Minimal latency (< 10 Ã‚Âµs) | Forwards corrupted frames and runt frames |
 | Store-and-forward | Never forwards bad frames | Higher latency (entire frame must be received) |
 | Fragment-free | Compromise: fast + no runts | Still forwards frames with payload errors |
 | Scalability | Stackable switches support hundreds of ports | MAC table grows linearly with active hosts |
@@ -1071,11 +1071,11 @@ if __name__ == "__main__":
 |-----------|-------------|------------|
 | MAC table overflow | Table reaches hardware capacity; new entries evict old ones | Use larger TCAM; implement VLAN-based table partitioning |
 | MAC flapping | Same MAC seen on different ports in rapid succession | Throttle learning; errdisable port after threshold |
-| Unknown unicast flooding | Dst MAC not in table → frame sent to all ports | Pre-populate static entries for critical servers |
+| Unknown unicast flooding | Dst MAC not in table â†’ frame sent to all ports | Pre-populate static entries for critical servers |
 | Broadcast storm | High broadcast rate consumes all switch CPU/bandwidth | Storm-control feature; limit broadcast rate per port |
 | Store-and-forward underrun | Frame arrives slower than egress requires | Backpressure or pause frames (802.3x flow control) |
-| Cut-through with speed mismatch | Ingress 1G, egress 100M → must buffer entire frame | Fall back to store-and-forward automatically |
-| STP blocking for learning | STP blocks port → no MAC learning occurs on that port | Port must transition through learning state first |
+| Cut-through with speed mismatch | Ingress 1G, egress 100M â†’ must buffer entire frame | Fall back to store-and-forward automatically |
+| STP blocking for learning | STP blocks port â†’ no MAC learning occurs on that port | Port must transition through learning state first |
 
 ### TypeScript Implementation: Switch Forwarding Table
 
@@ -1106,7 +1106,7 @@ class SwitchForwardingTable {
       this.evictOldest();
     }
     this.table.set(mac, { mac, port, timestamp: Date.now() });
-    console.log(`Learned: ${mac} → port ${port}`);
+    console.log(`Learned: ${mac} â†’ port ${port}`);
   }
 
   lookup(mac: string): number | null {
@@ -1149,9 +1149,9 @@ class SwitchForwardingTable {
 // Demo
 const sw = new SwitchForwardingTable(300_000, 4);
 console.log(sw.processFrame("AA:BB:CC:DD:EE:01", "FF:FF:FF:FF:FF:FF", 1)); // Flood (unknown dst)
-console.log(sw.processFrame("AA:BB:CC:DD:EE:02", "AA:BB:CC:DD:EE:01", 2)); // Learn 02→2, forward 01→1
+console.log(sw.processFrame("AA:BB:CC:DD:EE:02", "AA:BB:CC:DD:EE:01", 2)); // Learn 02â†’2, forward 01â†’1
 console.log(sw.processFrame("AA:BB:CC:DD:EE:02", "AA:BB:CC:DD:EE:02", 2)); // Filter (same port)
-console.log(sw.processFrame("AA:BB:CC:DD:EE:03", "AA:BB:CC:DD:EE:01", 3)); // Learn 03→3, forward 01→1
+console.log(sw.processFrame("AA:BB:CC:DD:EE:03", "AA:BB:CC:DD:EE:01", 3)); // Learn 03â†’3, forward 01â†’1
 console.log(`Table entries: ${sw.getStats().entries}`);
 ```
 
@@ -1159,7 +1159,7 @@ console.log(`Table entries: ${sw.getStats().entries}`);
 
 ## 5.4 Learning Bridges (MAC Learning)
 
-A learning bridge → the intelligence behind every modern switch → automatically builds a forwarding table by observing traffic. This section expands section 5.3's switch-forwarding logic into a dedicated bridge learning algorithm.
+A learning bridge â†’ the intelligence behind every modern switch â†’ automatically builds a forwarding table by observing traffic. This section expands section 5.3's switch-forwarding logic into a dedicated bridge learning algorithm.
 
 ### 5.4.1 Real-World Analogy
 
@@ -1169,15 +1169,15 @@ A learning bridge → the intelligence behind every modern switch → automatica
 ### 5.4.2 The Learning Algorithm: Numbered Steps
 
 
-1. **Port initialization** → Each bridge port starts with empty MAC table and a default aging timer (300 seconds).
-2. **Frame arrival** → A frame enters on port P with source MAC S and destination MAC D.
-3. **Source registration** → The bridge records or refreshes entry (S, P) in the MAC table. If the table is full, the oldest entry is evicted.
-4. **Destination resolution** → The bridge looks up D in the MAC table.
-   - If D is found on port Q (Q â‰  P): forward frame to port Q only.
+1. **Port initialization** â†’ Each bridge port starts with empty MAC table and a default aging timer (300 seconds).
+2. **Frame arrival** â†’ A frame enters on port P with source MAC S and destination MAC D.
+3. **Source registration** â†’ The bridge records or refreshes entry (S, P) in the MAC table. If the table is full, the oldest entry is evicted.
+4. **Destination resolution** â†’ The bridge looks up D in the MAC table.
+   - If D is found on port Q (Q Ã¢â€°Â  P): forward frame to port Q only.
    - If D is found on port Q where Q == P: discard frame (destination on same segment).
    - If D is not found: flood frame to all ports except P.
-5. **Aging** → Every aging interval, entries older than the threshold are removed. This handles station mobility and stale entries.
-6. **Topology change** → When STP detects a topology change, aging is temporarily shortened (default 15 seconds instead of 300) to accelerate re-learning after a link failure.
+5. **Aging** â†’ Every aging interval, entries older than the threshold are removed. This handles station mobility and stale entries.
+6. **Topology change** â†’ When STP detects a topology change, aging is temporarily shortened (default 15 seconds instead of 300) to accelerate re-learning after a link failure.
 
 ### 5.4.3 Pseudocode: Learning Bridge
 
@@ -1243,24 +1243,24 @@ FUNCTION OnTopologyChange():
 ### 5.4.4 Dry Run Trace Table: Learning Bridge with Six Hosts
 
 
-Four-port bridge, hosts Aâ€“F on ports 1â€“4 (A and B on port 1 via hub, C and D on port 2, E on port 3, F on port 4).
+Four-port bridge, hosts AÃ¢â‚¬â€œF on ports 1Ã¢â‚¬â€œ4 (A and B on port 1 via hub, C and D on port 2, E on port 3, F on port 4).
 
 | Time | Frame | Ingress | Learn | Dst Lookup | Action | Table After |
 |------|-------|---------|-------|-----------|--------|-------------|
-| 0 | → | → | → | → | → | (empty) |
-| 1 | A→F | 1 | A→port 1 | F: unknown | Flood ports 2,3,4 | A→1 (age 0) |
-| 2 | F→A reply | 4 | F→port 4 | A: port 1 | Forward port 1 | A→1, F→4 |
-| 3 | B→C | 1 | B→port 1 | C: unknown | Flood ports 2,3,4 | A→1, B→1, F→4 |
-| 4 | C→B reply | 2 | C→port 2 | B: port 1 | Forward port 1 | A→1, B→1, C→2, F→4 |
-| 5 | A→E | 1 | A→port 1 (refresh) | E: unknown | Flood ports 2,3,4 | A→1, B→1, C→2, F→4 |
-| 6 | E→A | 3 | E→port 3 | A: port 1 | Forward port 1 | A→1, B→1, C→2, E→3, F→4 |
-| 7 | D→E | 2 | D→port 2 | E: port 3 | Forward port 3 | A→1, B→1, C→2, D→2, E→3, F→4 |
-| 8 | D→B | 2 | D→port 2 (refresh) | B: port 1 | Forward port 1 | (same) |
-| 9 | B→D | 1 | B→port 1 (refresh) | D: port 2 | Forward port 2 | (same) |
-| 10 | D→A | 2 | D→port 2 (refresh) | A: port 1 | Forward port 1 | (same) |
-| 11 | C→C (self) | 2 | C→port 2 (refresh) | C: port 2 | Filter (drop) | (same) |
+| 0 | â†’ | â†’ | â†’ | â†’ | â†’ | (empty) |
+| 1 | Aâ†’F | 1 | Aâ†’port 1 | F: unknown | Flood ports 2,3,4 | Aâ†’1 (age 0) |
+| 2 | Fâ†’A reply | 4 | Fâ†’port 4 | A: port 1 | Forward port 1 | Aâ†’1, Fâ†’4 |
+| 3 | Bâ†’C | 1 | Bâ†’port 1 | C: unknown | Flood ports 2,3,4 | Aâ†’1, Bâ†’1, Fâ†’4 |
+| 4 | Câ†’B reply | 2 | Câ†’port 2 | B: port 1 | Forward port 1 | Aâ†’1, Bâ†’1, Câ†’2, Fâ†’4 |
+| 5 | Aâ†’E | 1 | Aâ†’port 1 (refresh) | E: unknown | Flood ports 2,3,4 | Aâ†’1, Bâ†’1, Câ†’2, Fâ†’4 |
+| 6 | Eâ†’A | 3 | Eâ†’port 3 | A: port 1 | Forward port 1 | Aâ†’1, Bâ†’1, Câ†’2, Eâ†’3, Fâ†’4 |
+| 7 | Dâ†’E | 2 | Dâ†’port 2 | E: port 3 | Forward port 3 | Aâ†’1, Bâ†’1, Câ†’2, Dâ†’2, Eâ†’3, Fâ†’4 |
+| 8 | Dâ†’B | 2 | Dâ†’port 2 (refresh) | B: port 1 | Forward port 1 | (same) |
+| 9 | Bâ†’D | 1 | Bâ†’port 1 (refresh) | D: port 2 | Forward port 2 | (same) |
+| 10 | Dâ†’A | 2 | Dâ†’port 2 (refresh) | A: port 1 | Forward port 1 | (same) |
+| 11 | Câ†’C (self) | 2 | Câ†’port 2 (refresh) | C: port 2 | Filter (drop) | (same) |
 
-After T=7, all six hosts are learned. From T=8 onward, all frames are forwarded precisely → no flooding occurs.
+After T=7, all six hosts are learned. From T=8 onward, all frames are forwarded precisely â†’ no flooding occurs.
 
 ### 5.4.5 C++ Implementation: Learning Bridge
 
@@ -1368,13 +1368,13 @@ public:
                 oldest = it;
             }
         }
-        std::cout << "Table full → evicting " << oldest->first << "\n";
+        std::cout << "Table full â†’ evicting " << oldest->first << "\n";
         table.erase(oldest);
     }
     
     void on_topology_change() {
         topo_change_active = true;
-        std::cout << "Topology change detected → aging reduced to "
+        std::cout << "Topology change detected â†’ aging reduced to "
                   << topo_change_aging << "s\n";
     }
     
@@ -1402,7 +1402,7 @@ int main() {
     // Simulate frames
     auto act = [&](const std::string& src, const std::string& dst, int port) {
         auto r = bridge.process_frame(src, dst, port);
-        std::cout << "[" << src << " → " << dst << " port " << port
+        std::cout << "[" << src << " â†’ " << dst << " port " << port
                   << "] " << r.action;
         if (!r.flood && r.action == "FORWARD")
             std::cout << " port " << r.egress_port;
@@ -1452,7 +1452,7 @@ class LearningBridge:
             self.table[src].port = ingress
             self.table[src].age = 0
             if old_port != ingress:
-                print(f"  [MAC move] {src} moved from port {old_port} → {ingress}")
+                print(f"  [MAC move] {src} moved from port {old_port} â†’ {ingress}")
         else:
             if len(self.table) >= self.max_entries:
                 self._evict_oldest()
@@ -1487,7 +1487,7 @@ class LearningBridge:
         if not self.table:
             return
         oldest = max(self.table.values(), key=lambda e: e.age)
-        print(f"  [Evict] Table full → removing {oldest.mac}")
+        print(f"  [Evict] Table full â†’ removing {oldest.mac}")
         del self.table[oldest.mac]
     
     def on_topo_change(self):
@@ -1513,8 +1513,8 @@ if __name__ == "__main__":
     
     def process(src, dst, port):
         action, egress = bridge.process_frame(src, dst, port)
-        extra = f" → port {egress}" if egress else ""
-        print(f"[{src} → {dst} on P{port}] {action}{extra}")
+        extra = f" â†’ port {egress}" if egress else ""
+        print(f"[{src} â†’ {dst} on P{port}] {action}{extra}")
     
     # Phase 1: Learning
     print("--- Phase 1: Initial Learning ---")
@@ -1544,16 +1544,16 @@ if __name__ == "__main__":
 | Source learning | O(1) avg hash, O(m) worst | O(1) per entry | Hash collision degrades to O(m) chain scan; TCAM O(1) always |
 | Destination lookup | O(1) avg, O(m) worst | O(1) | Same hash analysis as learning |
 | Aging sweep | O(m) | O(1) | Must visit all m entries to check timestamps |
-| MAC move (same MAC, new port) | O(1) | O(1) | Hash update → no structural change |
+| MAC move (same MAC, new port) | O(1) | O(1) | Hash update â†’ no structural change |
 | Table eviction (when full) | O(m) | O(1) | Linear scan to find oldest entry |
-| Flood to p ports | O(p Â· f) | O(p Â· f) | Each of p egress ports gets a frame copy of size f |
+| Flood to p ports | O(p Ã‚Â· f) | O(p Ã‚Â· f) | Each of p egress ports gets a frame copy of size f |
 
 ### 5.4.8 Advantages and Disadvantages
 
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|-------------|
-| Transparency | Stations are unaware of bridges → zero configuration | No mechanism for stations to detect network changes |
+| Transparency | Stations are unaware of bridges â†’ zero configuration | No mechanism for stations to detect network changes |
 | Self-learning | Automatic adaptation to topology changes | Table size limited by hardware TCAM |
 | Aging | Handles station mobility gracefully | Stale entries cause unnecessary flooding |
 | Aging during topology change | Accelerated aging helps rapid re-convergence | Increased flooding during transition |
@@ -1582,21 +1582,21 @@ The Spanning Tree Protocol (IEEE 802.1D) prevents loops in networks with redunda
 ### 5.5.1 The Problem: Broadcast Storms
 
 
-In a triangle topology of three switches (Aâ€“B, Bâ€“C, Câ€“A connected), a broadcast frame from any host would circulate forever:
+In a triangle topology of three switches (AÃ¢â‚¬â€œB, BÃ¢â‚¬â€œC, CÃ¢â‚¬â€œA connected), a broadcast frame from any host would circulate forever:
 
-1. Host X sends broadcast → Switch A floods to B and C.
-2. Switch B receives from A → floods to C (and its other ports).
-3. Switch C receives from A → floods to B (and its other ports).
-4. Switch B receives from C → floods to A.
-5. Switch C receives from B → floods to A.
-6. Each frame multiplies endlessly → **broadcast storm** (100% bandwidth, network unusable).
+1. Host X sends broadcast â†’ Switch A floods to B and C.
+2. Switch B receives from A â†’ floods to C (and its other ports).
+3. Switch C receives from A â†’ floods to B (and its other ports).
+4. Switch B receives from C â†’ floods to A.
+5. Switch C receives from B â†’ floods to A.
+6. Each frame multiplies endlessly â†’ **broadcast storm** (100% bandwidth, network unusable).
 
 Additionally, MAC tables become unstable: the same source MAC keeps appearing on different ports as the frame loops.
 
 ### 5.5.2 Real-World Analogy
 
 
-> **City traffic management.** Redundant bridges are like multiple roads connecting the same two neighborhoods. If every road is open, drivers could circle endlessly in a rotary (broadcast storm). STP is the city traffic authority that temporarily blocks some roads, keeping only enough open to reach every neighborhood without creating loops. If a road closes (link failure), the authority unblocks a previously blocked road (failover). RSTP is the express version → traffic cameras detect the blockage and reroute in seconds instead of minutes.
+> **City traffic management.** Redundant bridges are like multiple roads connecting the same two neighborhoods. If every road is open, drivers could circle endlessly in a rotary (broadcast storm). STP is the city traffic authority that temporarily blocks some roads, keeping only enough open to reach every neighborhood without creating loops. If a road closes (link failure), the authority unblocks a previously blocked road (failover). RSTP is the express version â†’ traffic cameras detect the blockage and reroute in seconds instead of minutes.
 
 ### 5.5.3 BPDU Format
 
@@ -1623,9 +1623,9 @@ Bridge Protocol Data Units (BPDUs) are exchanged every 2 seconds between bridges
 
 1. **Root bridge election.** Each bridge starts by claiming itself as root, sending BPDUs with its own bridge ID. The bridge with the lowest bridge ID (priority + MAC) wins. Priority is a 16-bit value (default 32768), configurable in increments of 4096. If priorities equal, the lowest MAC address breaks the tie.
 
-2. **Root port selection.** Every non-root bridge selects one root port (RP) → the port with the lowest path cost to the root bridge. Path cost is the cumulative cost of all links to the root. Standard costs: 10 Mbps = 100, 100 Mbps = 19, 1 Gbps = 4, 10 Gbps = 2, 100 Gbps = 1.
+2. **Root port selection.** Every non-root bridge selects one root port (RP) â†’ the port with the lowest path cost to the root bridge. Path cost is the cumulative cost of all links to the root. Standard costs: 10 Mbps = 100, 100 Mbps = 19, 1 Gbps = 4, 10 Gbps = 2, 100 Gbps = 1.
 
-3. **Designated port selection.** On each LAN segment, one bridge is the designated bridge (DB) → the one with the lowest root path cost. The port connecting the DB to that segment is the designated port (DP). Designated ports are in forwarding state.
+3. **Designated port selection.** On each LAN segment, one bridge is the designated bridge (DB) â†’ the one with the lowest root path cost. The port connecting the DB to that segment is the designated port (DP). Designated ports are in forwarding state.
 
 4. **Port blocking.** Any port that is not a root port or designated port becomes an alternate (blocked) port. These ports do not forward data or learn MAC addresses. They listen for BPDUs and become active only if the current best path fails.
 
@@ -1640,7 +1640,7 @@ Bridge Protocol Data Units (BPDUs) are exchanged every 2 seconds between bridges
 | **Forwarding** | Yes | Yes | Yes | Yes | Indefinite (normal operation) |
 | **Disabled** | No | No | No | No | Manual/admin down |
 
-**RSTP equivalent.** RSTP collapses blocking + listening into a single **discarding** state. It also defines three port roles not present in classic STP: **alternate port** (backup to root port), **backup port** (backup to designated port), and **edge port** (directly connected to end station → transitions immediately to forwarding).
+**RSTP equivalent.** RSTP collapses blocking + listening into a single **discarding** state. It also defines three port roles not present in classic STP: **alternate port** (backup to root port), **backup port** (backup to designated port), and **edge port** (directly connected to end station â†’ transitions immediately to forwarding).
 
 ### 5.5.6 Pseudocode: STP Port State Machine
 
@@ -1741,13 +1741,13 @@ FUNCTION PortStateMachine(port):
                 LOG "Port " + port.port_id + " is now FORWARDING"
         
         CASE FORWARDING:
-            // Normal operation → monitor BPDUs
+            // Normal operation â†’ monitor BPDUs
             IF RECEIVE_SUPERIOR_BPDU(port):
                 port.role = ALTERNATE
                 TransitionToBlocking(port)
         
         CASE DISABLED:
-            // Admin down → do nothing
+            // Admin down â†’ do nothing
             BREAK
 
 FUNCTION TransitionToBlocking(port):
@@ -1786,9 +1786,9 @@ Three bridges in a triangle. B1 (priority 4096, MAC 00:00:00:00:00:01), B2 (prio
 
 | Step | Event | B1's Root | B2's Root | B3's Root | Notes |
 |------|-------|-----------|-----------|-----------|-------|
-| 1 | B1→B2 BPDU (root=B1) | B1 (cost 0) | B1 (cost 4) | B3 (cost 0) | B2 adopts B1 as root |
-| 2 | B1→B3 BPDU (root=B1) | B1 (cost 0) | B1 (cost 4) | B1 (cost 4) | B3 adopts B1 as root |
-| 3 | B2→B3 BPDU (root=B1) | B1 (cost 0) | B1 (cost 4) | B1 (cost 4) | B3: B2 gives cost 8 to root → keep B1 direct path (cost 4) |
+| 1 | B1â†’B2 BPDU (root=B1) | B1 (cost 0) | B1 (cost 4) | B3 (cost 0) | B2 adopts B1 as root |
+| 2 | B1â†’B3 BPDU (root=B1) | B1 (cost 0) | B1 (cost 4) | B1 (cost 4) | B3 adopts B1 as root |
+| 3 | B2â†’B3 BPDU (root=B1) | B1 (cost 0) | B1 (cost 4) | B1 (cost 4) | B3: B2 gives cost 8 to root â†’ keep B1 direct path (cost 4) |
 
 **Port role assignment:**
 
@@ -1808,24 +1808,24 @@ B3's port to B2 is blocked because B3 reaches B1 at cost 4 (direct), and B2's pa
 | Time | B1 | B2 | B3 |
 |------|--------|--------|--------|
 | T+0s | All forwarding | All blocking | All blocking |
-| T+2s | → | P1 listening (RP) | P1 listening (RP) |
-| T+17s | → | P1 learning | P1 learning |
-| T+32s | → | P1 forwarding | P1 forwarding |
-| T+34s | → | P2 listening (DP) | P2 stays blocking (Alternate) |
-| T+49s | → | P2 learning | → |
-| T+64s | → | P2 forwarding | → |
+| T+2s | â†’ | P1 listening (RP) | P1 listening (RP) |
+| T+17s | â†’ | P1 learning | P1 learning |
+| T+32s | â†’ | P1 forwarding | P1 forwarding |
+| T+34s | â†’ | P2 listening (DP) | P2 stays blocking (Alternate) |
+| T+49s | â†’ | P2 learning | â†’ |
+| T+64s | â†’ | P2 forwarding | â†’ |
 
 Total STP convergence: ~50 seconds. RSTP would converge in ~2 seconds.
 
-**After link failure (B1→B2 link breaks):**
+**After link failure (B1â†’B2 link breaks):**
 
 | Time | Event | B2 Action | B3 Action |
 |------|-------|-----------|-----------|
-| T+0s | B1→B2 link down | B2 loses root port | B3 hears no BPDU from B2 on P2 |
-| T+2s | Max age timer expires on B2 | B2 transitions P1 to blocking | → |
-| T+4s | B2 sends TCN BPDU to B3 | TCN propagated to B1 via B3 | → |
-| T+6s | B3 acknowledges TCN | → | TCA sent to B2 |
-| T+8s | B3 unblocks P2 | B2 receives BPDU from B3 (root B1, cost 8) | B3 transitions P2 to listening → learning → forwarding |
+| T+0s | B1â†’B2 link down | B2 loses root port | B3 hears no BPDU from B2 on P2 |
+| T+2s | Max age timer expires on B2 | B2 transitions P1 to blocking | â†’ |
+| T+4s | B2 sends TCN BPDU to B3 | TCN propagated to B1 via B3 | â†’ |
+| T+6s | B3 acknowledges TCN | â†’ | TCA sent to B2 |
+| T+8s | B3 unblocks P2 | B2 receives BPDU from B3 (root B1, cost 8) | B3 transitions P2 to listening â†’ learning â†’ forwarding |
 | T+38s | B2 new root port | B2 selects P2 (to B3) as new root port | B3 P2 forwarding |
 
 Total reconvergence after failure: ~38 seconds.
@@ -1983,7 +1983,7 @@ public:
     
     void compute_port_roles() {
         if (is_root) {
-            // Root bridge → all ports are DESIGNATED
+            // Root bridge â†’ all ports are DESIGNATED
             for (auto& port : ports) {
                 port.role = PortRole::DESIGNATED;
                 port.state = PortState::FORWARDING;
@@ -2028,7 +2028,7 @@ public:
         bpdu.hello_time = HELLO_TIME;
         bpdu.forward_delay = FORWARD_DELAY;
         
-        std::cout << "  → BPDU sent on P" << port.id
+        std::cout << "  â†’ BPDU sent on P" << port.id
                   << " (root=" << root_id.to_string()
                   << ", cost=" << root_path_cost << ")\n";
     }
@@ -2067,19 +2067,19 @@ public:
                 if (port.role == PortRole::ROOT || port.role == PortRole::DESIGNATED) {
                     port.state = PortState::LISTENING;
                     port.state_timer = FORWARD_DELAY;
-                    std::cout << "  P" << port.id << " → LISTENING (" 
+                    std::cout << "  P" << port.id << " â†’ LISTENING (" 
                               << FORWARD_DELAY << "s timer)\n";
                 }
                 break;
             case PortState::LISTENING:
                 port.state = PortState::LEARNING;
                 port.state_timer = FORWARD_DELAY;
-                std::cout << "  P" << port.id << " → LEARNING ("
+                std::cout << "  P" << port.id << " â†’ LEARNING ("
                           << FORWARD_DELAY << "s timer)\n";
                 break;
             case PortState::LEARNING:
                 port.state = PortState::FORWARDING;
-                std::cout << "  P" << port.id << " → FORWARDING (active)\n";
+                std::cout << "  P" << port.id << " â†’ FORWARDING (active)\n";
                 break;
             default:
                 break;
@@ -2101,16 +2101,16 @@ public:
                 port.state = PortState::FORWARDING;
             }
             std::cout << "Bridge " << bridge_id.to_string() 
-                      << " is ROOT → all ports forwarding\n";
+                      << " is ROOT â†’ all ports forwarding\n";
         } else {
             // Non-root starts with all ports blocking
             for (auto& port : ports) {
                 port.state = PortState::BLOCKING;
             }
-            // Root port transitions: blocking → listening
+            // Root port transitions: blocking â†’ listening
             for (auto& port : ports) {
                 if (port.role == PortRole::ROOT) {
-                    advance_state(port);  // → listening
+                    advance_state(port);  // â†’ listening
                 }
             }
         }
@@ -2174,7 +2174,7 @@ int main() {
     b2.receive_bpdu(bpdu_b1, 1);  // B2 hears B1 on port 1
     b3.receive_bpdu(bpdu_b1, 1);  // B3 hears B1 on port 1
     
-    // B3 also hears B2's BPDU on port 2 → should remain alternate
+    // B3 also hears B2's BPDU on port 2 â†’ should remain alternate
     b3.receive_bpdu(bpdu_b2_to_b3, 2);
     
     b2.compute_port_roles();
@@ -2336,7 +2336,7 @@ class STPBridge:
             for port in self.ports:
                 port.role = PortRole.DESIGNATED
                 port.state = PortState.FORWARDING
-            print(f"Bridge {self.bridge_id} is ROOT → all ports forwarding")
+            print(f"Bridge {self.bridge_id} is ROOT â†’ all ports forwarding")
         else:
             for port in self.ports:
                 port.state = PortState.BLOCKING
@@ -2348,14 +2348,14 @@ class STPBridge:
         if port.state == PortState.BLOCKING and port.role in (PortRole.ROOT, PortRole.DESIGNATED):
             port.state = PortState.LISTENING
             port.state_timer = self.FORWARD_DELAY
-            print(f"  P{port.id} → LISTENING ({self.FORWARD_DELAY}s)")
+            print(f"  P{port.id} â†’ LISTENING ({self.FORWARD_DELAY}s)")
         elif port.state == PortState.LISTENING:
             port.state = PortState.LEARNING
             port.state_timer = self.FORWARD_DELAY
-            print(f"  P{port.id} → LEARNING ({self.FORWARD_DELAY}s)")
+            print(f"  P{port.id} â†’ LEARNING ({self.FORWARD_DELAY}s)")
         elif port.state == PortState.LEARNING:
             port.state = PortState.FORWARDING
-            print(f"  P{port.id} → FORWARDING")
+            print(f"  P{port.id} â†’ FORWARDING")
     
     def tick(self, seconds: int = 1):
         for port in self.ports:
@@ -2423,12 +2423,12 @@ if __name__ == "__main__":
 
 | Operation | Time Complexity | Space Complexity | Why |
 |-----------|---------------|-----------------|-----|
-| Root bridge election | O(bÂ²) | O(1) | Every bridge sends BPDUs; worst case b bridges exchange b BPDUs each |
+| Root bridge election | O(bÃ‚Â²) | O(1) | Every bridge sends BPDUs; worst case b bridges exchange b BPDUs each |
 | Root port selection | O(p) | O(1) | Scan p ports to find minimum cost path |
 | Designated port selection | O(p) per LAN | O(1) per port | Compare path costs on each segment |
 | Port role computation | O(p) | O(1) | Single pass over all ports after root/designated decisions |
 | BPDU processing | O(1) | O(1) | Fixed-size BPDU fields; constant comparison operations |
-| State transition (block → fwd) | O(d) | O(1) | d = forward delay (15s); timer-based, not compute-bound |
+| State transition (block â†’ fwd) | O(d) | O(1) | d = forward delay (15s); timer-based, not compute-bound |
 | Topology change notification | O(b) | O(1) | TCN propagates from leaf to root through b bridges |
 
 ### 5.5.11 Advantages and Disadvantages
@@ -2439,7 +2439,7 @@ if __name__ == "__main__":
 | Loop prevention | Guarantees a single active path between any two hosts | All other paths are wasted bandwidth until failover |
 | Automatic failover | Redundant links activate when primary fails | 30-50s convergence is too slow for modern apps |
 | Standardized | IEEE 802.1D works across all vendors | Multiple incompatible variants (CST, PVST, PVST+, MST) |
-| Self-configuring | Requires no manual path planning | Non-optimal path selection; best path â‰  shortest latency path |
+| Self-configuring | Requires no manual path planning | Non-optimal path selection; best path Ã¢â€°Â  shortest latency path |
 | Per-VLAN (PVST+) | Load balances traffic across VLANs | Cisco proprietary; management overhead with many VLANs |
 | RSTP | 1-3s convergence (20x faster) | Requires RSTP-capable bridges on all switches |
 | MSTP | Maps multiple VLANs to fewer STP instances | Complex configuration; requires region alignment |
@@ -2451,7 +2451,7 @@ if __name__ == "__main__":
 |-----------|-------------|------------|
 | BPDU filter/guard | Port configured to ignore/suppress BPDUs | Use BPDUGuard on edge ports to prevent rogue switch connections |
 | Unidirectional link failure | Link stays up but one direction fails (fiber issue) | UDLD (UniDirectional Link Detection) detects and errdisables port |
-| Root bridge failure | Root bridge goes offline; no BPDUs for max age | Max age timer (20s) expires → new election begins |
+| Root bridge failure | Root bridge goes offline; no BPDUs for max age | Max age timer (20s) expires â†’ new election begins |
 | Topology change storm | Rapid up/down flapping causes constant re-convergence | PortFast + BPDUGuard on all edge ports |
 | Inconsistent port states | Misconfiguration leads to forwarding loops despite STP | LoopGuard detects and errdisables inconsistent ports |
 | STP with several thousand VLANs | Each VLAN's STP instance consumes CPU/memory | MSTP maps VLANs to a few instances (typically 16-64) |
@@ -2466,7 +2466,7 @@ if __name__ == "__main__":
 | Convergence time | 30-50 seconds | 1-3 seconds (typically &lt; 2s) |
 | Port states | 5 (blocking, listening, learning, forwarding, disabled) | 3 (discarding, learning, forwarding) |
 | Port roles | 3 (root, designated, alternate/blocked) | 5 (root, designated, alternate, backup, edge) |
-| Topology change | TCN BPDU → root BPDU → all bridges (slow) | Propagated immediately via BPDU flags |
+| Topology change | TCN BPDU â†’ root BPDU â†’ all bridges (slow) | Propagated immediately via BPDU flags |
 | BPDU format | Config BPDU + TCN BPDU | Same format but all 6 flag bits used |
 | BPDU aging | Max Age timer (20s) | 3 consecutive missed BPDUs |
 | Edge ports | No native concept | Edge ports transition immediately to forwarding |
@@ -2542,7 +2542,7 @@ class STPSimulator {
   }
 
   simulateFailure(failedBridgeId: number): void {
-    console.log(`\nBridge ${failedBridgeId} fails — re-electing...`);
+    console.log(`\nBridge ${failedBridgeId} fails â€” re-electing...`);
     this.bridges.delete(failedBridgeId);
     this.electRoot();
     this.runElection();
@@ -2553,7 +2553,7 @@ class STPSimulator {
 const net = new STPSimulator();
 net.addBridge(1, 32768, "00:11:22:33:44:01");
 net.addBridge(2, 32768, "00:11:22:33:44:02");
-net.addBridge(3, 4096, "00:11:22:33:44:03"); // lower priority → should be root
+net.addBridge(3, 4096, "00:11:22:33:44:03"); // lower priority â†’ should be root
 
 net.connect(4, 1, 2);
 net.connect(4, 2, 3);
@@ -2562,7 +2562,7 @@ net.connect(19, 1, 3);
 console.log("Initial STP election:");
 net.runElection();
 
-net.simulateFailure(3); // Root fails → re-election
+net.simulateFailure(3); // Root fails â†’ re-election
 ```
 
 ---
@@ -2583,29 +2583,29 @@ IEEE 802.1Q inserts a 4-byte VLAN tag into the Ethernet frame between the source
 
 ```
 Standard Ethernet Frame:
-┌──────────┬──────────┬──────────┬──────────┬────────────┬────────┐
-│ Dst MAC  │ Src MAC  │Type/Len  │ Payload  │    FCS     │        │
-│   (6B)   │   (6B)   │  (2B)    │46-1500B  │   (4B)     │        │
-└──────────┴──────────┴──────────┴──────────┴────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ Dst MAC  â”‚ Src MAC  â”‚Type/Len  â”‚ Payload  â”‚    FCS     â”‚        â”‚
+â”‚   (6B)   â”‚   (6B)   â”‚  (2B)    â”‚46-1500B  â”‚   (4B)     â”‚        â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
 802.1Q Tagged Frame:
-┌──────────┬──────────┬──────────┬──────────┬──────────┬────────────┬────────┐
-│ Dst MAC  │ Src MAC  │ 802.1Q   │Type/Len  │ Payload  │  FCS      │        │
-│   (6B)   │   (6B)   │ Tag(4B)  │  (2B)    │46-1500B  │  (4B)     │        │
-└──────────┴──────────┴──────────┴──────────┴──────────┴────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ Dst MAC  â”‚ Src MAC  â”‚ 802.1Q   â”‚Type/Len  â”‚ Payload  â”‚  FCS      â”‚        â”‚
+â”‚   (6B)   â”‚   (6B)   â”‚ Tag(4B)  â”‚  (2B)    â”‚46-1500B  â”‚  (4B)     â”‚        â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
 802.1Q Tag (4 bytes):
        2 bytes          3 bits   1 bit    12 bits
-┌──────────────────┬──────────┬────────┬──────────────┐
-│  TPID (0x8100)   │ Priority │  DEI   │  VLAN ID     │
-│                  │   (PCP)  │        │              │
-└──────────────────┴──────────┴────────┴──────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚  TPID (0x8100)   â”‚ Priority â”‚  DEI   â”‚  VLAN ID     â”‚
+â”‚                  â”‚   (PCP)  â”‚        â”‚              â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 - **TPID** (2 bytes): Tag Protocol Identifier = 0x8100. Marks the frame as 802.1Q-tagged.
-- **PCP** (3 bits): Priority Code Point → 802.1p class of service (0â€“7). Used for QoS.
+- **PCP** (3 bits): Priority Code Point â†’ 802.1p class of service (0Ã¢â‚¬â€œ7). Used for QoS.
 - **DEI** (1 bit): Drop Eligible Indicator. When set, frame may be dropped during congestion.
-- **VID** (12 bits): VLAN Identifier (1â€“4094; 0 = priority only, 4095 = reserved).
+- **VID** (12 bits): VLAN Identifier (1Ã¢â‚¬â€œ4094; 0 = priority only, 4095 = reserved).
 
 ### 5.6.3 Port-Based vs Tag-Based VLAN Comparison
 
@@ -2615,11 +2615,11 @@ Standard Ethernet Frame:
 | Membership | Port assigned to VLAN statically | VLAN ID embedded in frame tag |
 | Configuration | Per-port assignment (access port) | Per-frame classification (trunk port) |
 | Multiple VLANs per port | No (one VLAN per port) | Yes (trunk carries multiple VLANs) |
-| End-host awareness | None → host sends untagged frames | Host must send tagged frames (for trunk) |
+| End-host awareness | None â†’ host sends untagged frames | Host must send tagged frames (for trunk) |
 | Scalability | Limited to number of switch ports | Up to 4094 VLANs per switch |
 | Cross-switch VLANs | Dedicated link per VLAN | Single trunk carries all VLANs |
 | Security | Host cannot change VLAN | Tag spoofing risk (VLAN hopping) |
-| Configuration complexity | Simple → assign port to VLAN | Requires trunk config + native VLAN |
+| Configuration complexity | Simple â†’ assign port to VLAN | Requires trunk config + native VLAN |
 | Typical use | Access layer (end hosts) | Distribution/core (inter-switch links) |
 | Cisco terminology | Access port | Trunk port (802.1Q encapsulation) |
 
@@ -2635,12 +2635,12 @@ Standard Ethernet Frame:
 ### 5.6.5 Numbered Steps: VLAN Frame Processing
 
 
-1. **Ingress on access port** → Frame arrives untagged. Switch classifies it into the access port's configured VLAN. The internal tag is applied: (VLAN ID, PCP, DEI).
-2. **Ingress on trunk port** → Frame arrives with or without 802.1Q tag:
+1. **Ingress on access port** â†’ Frame arrives untagged. Switch classifies it into the access port's configured VLAN. The internal tag is applied: (VLAN ID, PCP, DEI).
+2. **Ingress on trunk port** â†’ Frame arrives with or without 802.1Q tag:
    - **Tagged:** Switch reads the VID. If it matches an allowed VLAN, the frame is accepted.
    - **Untagged:** Switch assigns it to the trunk's native VLAN (default VLAN 1).
-3. **MAC learning** → Source MAC and ingress port (plus VLAN ID) are learned in the per-VLAN MAC table. MAC learning is VLAN-aware: the same MAC can exist in different VLANs on different ports.
-4. **Destination lookup** → The destination MAC is looked up within the same VLAN only. A frame in VLAN 10 never matches a MAC entry in VLAN 20.
+3. **MAC learning** â†’ Source MAC and ingress port (plus VLAN ID) are learned in the per-VLAN MAC table. MAC learning is VLAN-aware: the same MAC can exist in different VLANs on different ports.
+4. **Destination lookup** â†’ The destination MAC is looked up within the same VLAN only. A frame in VLAN 10 never matches a MAC entry in VLAN 20.
 5. **Egress decision**:
    - If destination is on the same VLAN on another access port: remove tag, send untagged frame.
    - If destination is on a trunk port: keep tag (unless native VLAN), send tagged frame.
@@ -2675,14 +2675,14 @@ FUNCTION ProcessVLANFrame(frame, ingress_port, vlan_id):
     entry = LOOKUP mac_table[dst_key]
     
     IF entry IS NULL:
-        // Unknown unicast → flood within VLAN
+        // Unknown unicast â†’ flood within VLAN
         FOR EACH port in vlan_members[vlan_id]:
             IF port != ingress_port:
                 SEND_VLAN_FRAME(frame, port, vlan_id)
     ELSE IF entry.port != ingress_port:
         SEND_VLAN_FRAME(frame, entry.port, vlan_id)
     ELSE:
-        DROP(frame)  // same port → no forward needed
+        DROP(frame)  // same port â†’ no forward needed
 
 FUNCTION SEND_VLAN_FRAME(frame, egress_port, vlan_id):
     IF egress_port.type == ACCESS:
@@ -2690,7 +2690,7 @@ FUNCTION SEND_VLAN_FRAME(frame, egress_port, vlan_id):
     ELSE IF egress_port.type == TRUNK:
         IF egress_port.native_vlan != vlan_id:
             ADD_8021Q_TAG(frame, vlan_id)
-        // else: native VLAN → send untagged
+        // else: native VLAN â†’ send untagged
     
     SEND(frame, egress_port)
 
@@ -2708,12 +2708,12 @@ Switch with 4 ports: P1=access(VLAN10), P2=access(VLAN10), P3=access(VLAN20), P4
 
 | Time | Event | Ingress | VLAN | Learn | Dst Lookup (VLAN) | Action |
 |------|-------|---------|------|-------|-------------------|--------|
-| 0 | → | → | → | → | → | Tables empty |
-| 1 | A→B (VLAN10) | P1 (acc) | 10 | (A,10)→P1 | (B,10): unknown | Flood P2, P4 (tagged for 10) |
-| 2 | B→A reply (VLAN10) | P2 (acc) | 10 | (B,10)→P2 | (A,10): P1 | Forward to P1 (data reaches A) |
-| 3 | C→D (VLAN20) | P3 (acc) | 20 | (C,20)→P3 | (D,20): unknown | Flood P4 (tagged for 20) |
-| 4 | D→C reply (VLAN20) | P4 (trunk) | 20 | (D,20)→P4 | (C,20): P3 | Forward to P3 (data reaches C) |
-| 5 | A→D (VLAN10 → VLAN20) | P1 (acc) | 10 | (A,10)→P1 | (D,10): unknown | Flood P2, P4 → D not in VLAN10 → D never receives it |
+| 0 | â†’ | â†’ | â†’ | â†’ | â†’ | Tables empty |
+| 1 | Aâ†’B (VLAN10) | P1 (acc) | 10 | (A,10)â†’P1 | (B,10): unknown | Flood P2, P4 (tagged for 10) |
+| 2 | Bâ†’A reply (VLAN10) | P2 (acc) | 10 | (B,10)â†’P2 | (A,10): P1 | Forward to P1 (data reaches A) |
+| 3 | Câ†’D (VLAN20) | P3 (acc) | 20 | (C,20)â†’P3 | (D,20): unknown | Flood P4 (tagged for 20) |
+| 4 | Dâ†’C reply (VLAN20) | P4 (trunk) | 20 | (D,20)â†’P4 | (C,20): P3 | Forward to P3 (data reaches C) |
+| 5 | Aâ†’D (VLAN10 â†’ VLAN20) | P1 (acc) | 10 | (A,10)â†’P1 | (D,10): unknown | Flood P2, P4 â†’ D not in VLAN10 â†’ D never receives it |
 
 Step 5 demonstrates VLAN isolation: A in VLAN10 cannot reach D in VLAN20 directly. A router with an interface in both VLANs (or an SVI) is required for inter-VLAN routing.
 
@@ -2744,7 +2744,7 @@ struct MacKeyHash {
 
 class VlanSwitch {
 private:
-    std::unordered_map<MacKey, int, MacKeyHash> mac_table; // (vlan,mac) → port
+    std::unordered_map<MacKey, int, MacKeyHash> mac_table; // (vlan,mac) â†’ port
     int num_ports;
     
     struct PortConfig {
@@ -2783,9 +2783,9 @@ public:
         // Trunk port
         if (frame_tagged) {
             if (p.allowed_vlans.count(frame_vlan)) return frame_vlan;
-            return -1;  // Not allowed → drop
+            return -1;  // Not allowed â†’ drop
         }
-        return p.native_vlan;  // Untagged → native VLAN
+        return p.native_vlan;  // Untagged â†’ native VLAN
     }
     
     std::string process_frame(const std::string& src, const std::string& dst,
@@ -2819,7 +2819,7 @@ public:
     }
     
     std::string flood_within_vlan(int ingress, int vlan) {
-        std::string result = "FLOOD within VLAN " + std::to_string(vlan) + " →";
+        std::string result = "FLOOD within VLAN " + std::to_string(vlan) + " â†’";
         for (int p = 0; p < num_ports; ++p) {
             if (p == ingress) continue;
             if (port_in_vlan(p, vlan)) {
@@ -2854,7 +2854,7 @@ int main() {
     sw.configure_trunk(3, {10, 20}); // P4 = trunk
     
     auto act = [&](const std::string& s, const std::string& d, int p, bool t, int v) {
-        std::cout << "[" << s << "→" << d << " P" << p
+        std::cout << "[" << s << "â†’" << d << " P" << p
                   << (t ? " (tagged V" + std::to_string(v) + ")" : " (untagged)")
                   << "] " << sw.process_frame(s, d, p, t, v) << "\n";
     };
@@ -2863,7 +2863,7 @@ int main() {
     act("BB:22", "AA:11", 1, false, 0);
     act("CC:33", "DD:44", 2, false, 0);
     act("DD:44", "CC:33", 3, true, 20);  // Trunk, tagged VLAN 20
-    act("AA:11", "CC:33", 0, false, 0);  // Cross-VLAN → should fail
+    act("AA:11", "CC:33", 0, false, 0);  // Cross-VLAN â†’ should fail
     
     sw.print_table();
     return 0;
@@ -2894,7 +2894,7 @@ class PortConfig:
 
 class VlanSwitch:
     def __init__(self, num_ports: int):
-        self.mac_table: Dict[Tuple[int, str], int] = {}  # (vlan, mac) → port
+        self.mac_table: Dict[Tuple[int, str], int] = {}  # (vlan, mac) â†’ port
         self.ports = [PortConfig() for _ in range(num_ports)]
     
     def configure_access(self, port: int, vlan: int):
@@ -2934,14 +2934,14 @@ class VlanSwitch:
         if dst == "FF:FF:FF:FF:FF:FF":
             ports = [p for p in range(len(self.ports))
                     if p != ingress and self._port_in_vlan(p, vlan)]
-            return f"FLOOD in VLAN{vlan} → ports {ports}"
+            return f"FLOOD in VLAN{vlan} â†’ ports {ports}"
         
         # Lookup within same VLAN
         dst_port = self.mac_table.get((vlan, dst))
         if dst_port is None:
             ports = [p for p in range(len(self.ports))
                     if p != ingress and self._port_in_vlan(p, vlan)]
-            return f"FLOOD (unknown unicast) in VLAN{vlan} → ports {ports}"
+            return f"FLOOD (unknown unicast) in VLAN{vlan} â†’ ports {ports}"
         if dst_port == ingress:
             return "FILTER (same port)"
         return f"FORWARD to P{dst_port} (VLAN{vlan})"
@@ -2964,14 +2964,14 @@ if __name__ == "__main__":
     print("=== VLAN Switch Simulation ===\n")
     
     def proc(src, dst, port, tagged=False, vlan=0):
-        print(f"[{src}→{dst} P{port}] "
+        print(f"[{src}â†’{dst} P{port}] "
               f"{sw.process_frame(src, dst, port, tagged, vlan)}")
     
-    proc("AA:AA:AA:AA:AA:01", "BB:BB:BB:BB:BB:01", 0)   # A→B VLAN10
-    proc("BB:BB:BB:BB:BB:01", "AA:AA:AA:AA:AA:01", 1)   # B→A VLAN10
-    proc("CC:CC:CC:CC:CC:01", "DD:DD:DD:DD:DD:01", 2)   # C→D VLAN20
+    proc("AA:AA:AA:AA:AA:01", "BB:BB:BB:BB:BB:01", 0)   # Aâ†’B VLAN10
+    proc("BB:BB:BB:BB:BB:01", "AA:AA:AA:AA:AA:01", 1)   # Bâ†’A VLAN10
+    proc("CC:CC:CC:CC:CC:01", "DD:DD:DD:DD:DD:01", 2)   # Câ†’D VLAN20
     
-    # Cross-VLAN attempt (should fail → routed via VLAN isolation)
+    # Cross-VLAN attempt (should fail â†’ routed via VLAN isolation)
     print("\n--- Cross-VLAN attempt ---")
     proc("AA:AA:AA:AA:AA:01", "CC:CC:CC:CC:CC:01", 0)
     
@@ -2987,12 +2987,12 @@ if __name__ == "__main__":
 
 | Operation | Time Complexity | Space Complexity | Why |
 |-----------|---------------|-----------------|-----|
-| VLAN classification (access) | O(1) | O(p) | Simple port→VLAN mapping table of p ports |
+| VLAN classification (access) | O(1) | O(p) | Simple portâ†’VLAN mapping table of p ports |
 | VLAN classification (trunk) | O(1) | O(v) | Read 12-bit VID from frame; check in set of v allowed VLANs |
-| VLAN-scoped MAC lookup | O(1) avg | O(mÂ·v)* | Hash key is (VLAN, MAC) pair; m MACs Ã— v VLANs |
+| VLAN-scoped MAC lookup | O(1) avg | O(mÃ‚Â·v)* | Hash key is (VLAN, MAC) pair; m MACs Ãƒâ€” v VLANs |
 | Tag insertion | O(f) | O(1) | Shift frame payload by 4 bytes; update FCS |
 | Tag removal | O(f) | O(1) | Remove 4 bytes; update FCS |
-| Flood within VLAN | O(pÂ·f) | O(f) | Replicate to up to p ports in same VLAN |
+| Flood within VLAN | O(pÃ‚Â·f) | O(f) | Replicate to up to p ports in same VLAN |
 | Native VLAN mismatch detection | O(1) | O(1) | Compare expected vs received native VLAN ID |
 
 *\* m = MACs per VLAN, v = VLAN count*
@@ -3019,7 +3019,7 @@ if __name__ == "__main__":
 | Native VLAN mismatch | Trunk ends disagree on native VLAN; frames cross VLANs inadvertently | Use dedicated unused VLAN as native on all trunks |
 | VLAN 1 default access | All ports default to VLAN 1; compromise allows broad access | Change native VLAN from 1 to an unused value (e.g., 999) |
 | Private VLAN | Isolated ports within same VLAN cannot communicate | Use PVLAN (protected port) feature for port isolation |
-| MAC overlap | Same MAC in multiple VLANs on different ports | Normal → MAC table keyed by (VLAN, MAC) tuple, not MAC alone |
+| MAC overlap | Same MAC in multiple VLANs on different ports | Normal â†’ MAC table keyed by (VLAN, MAC) tuple, not MAC alone |
 | VLAN pruning | Unnecessary broadcast flooding on trunks | VTP pruning or manual allowed-VLAN lists |
 | Router-on-a-stick bottleneck | Single trunk carries inter-VLAN traffic for many VLANs | Use L3 switch with SVIs for wire-rate routing |
 
@@ -3036,7 +3036,7 @@ interface VlanConfig {
 class VLANManager {
   private vlans: Map<number, VlanConfig> = new Map();
   private trunkPorts: Set<number> = new Set();
-  private vlanPortMap: Map<number, number[]> = new Map(); // port → VLAN list
+  private vlanPortMap: Map<number, number[]> = new Map(); // port â†’ VLAN list
 
   createVlan(vlanId: number, name: string): void {
     if (vlanId < 1 || vlanId > 4094) throw new Error(`Invalid VLAN ID: ${vlanId}`);
@@ -3116,7 +3116,7 @@ Link Aggregation Control Protocol (LACP, IEEE 802.1AX) combines multiple physica
 ### 5.7.1 Real-World Analogy
 
 
-> **Multiple highway lanes.** A single-lane road (one link) carries a maximum number of cars per hour. Adding three more lanes (LAG) creates a 4-lane highway. Cars (frames) are distributed across lanes based on their license plate (hash of MAC/IP). If one lane closes (link failure), traffic is redistributed to the remaining three → no road closure.
+> **Multiple highway lanes.** A single-lane road (one link) carries a maximum number of cars per hour. Adding three more lanes (LAG) creates a 4-lane highway. Cars (frames) are distributed across lanes based on their license plate (hash of MAC/IP). If one lane closes (link failure), traffic is redistributed to the remaining three â†’ no road closure.
 
 ### 5.7.2 Benefits
 
@@ -3124,16 +3124,16 @@ Link Aggregation Control Protocol (LACP, IEEE 802.1AX) combines multiple physica
 - **Increased bandwidth:** Up to 8 physical links combine into one logical link (some vendors support 16).
 - **Redundancy:** If a member link fails, traffic is redistributed across remaining links (failover &lt; 1 second).
 - **Load balancing:** Traffic is distributed across links using a hash of L2/L3/L4 header fields.
-- **Cost:** Uses existing hardware → no need for faster (and more expensive) individual links.
+- **Cost:** Uses existing hardware â†’ no need for faster (and more expensive) individual links.
 
 ### 5.7.3 LACP Operation Steps
 
 
-1. **Configuration** → Both ends of the link bundle must be configured for LACP (active or passive mode).
-2. **LACPDU exchange** → LACP Data Units are exchanged every 30 seconds (fast rate: 1 second). Each PDU contains the system priority, port key, and port number.
-3. **Aggregation negotiation** → Ports with matching system ID and port key are aggregated. All member ports must have identical speed, duplex, and VLAN configuration.
-4. **Frame distribution** → Incoming frames are distributed across member links using a hash (typically XOR of src MAC, dst MAC, src IP, dst IP, src port, dst port). Frames in the same flow always use the same link (to prevent reordering).
-5. **Link monitoring** → If a member link stops receiving LACPDUs, it is removed from the bundle. Traffic is redistributed to the remaining links.
+1. **Configuration** â†’ Both ends of the link bundle must be configured for LACP (active or passive mode).
+2. **LACPDU exchange** â†’ LACP Data Units are exchanged every 30 seconds (fast rate: 1 second). Each PDU contains the system priority, port key, and port number.
+3. **Aggregation negotiation** â†’ Ports with matching system ID and port key are aggregated. All member ports must have identical speed, duplex, and VLAN configuration.
+4. **Frame distribution** â†’ Incoming frames are distributed across member links using a hash (typically XOR of src MAC, dst MAC, src IP, dst IP, src port, dst port). Frames in the same flow always use the same link (to prevent reordering).
+5. **Link monitoring** â†’ If a member link stops receiving LACPDUs, it is removed from the bundle. Traffic is redistributed to the remaining links.
 
 ### 5.7.4 Pseudocode: LACP Hash Distribution
 
@@ -3177,7 +3177,7 @@ FUNCTION LAGHash(src_mac, dst_mac, src_ip, dst_ip, src_port, dst_port):
 
 FUNCTION LACPReceiveLACPDU(lacpdu, ingress_port):
     IF lacpdu.actor.system_priority < local.system_priority:
-        // Remote has higher priority → use their aggregation rules
+        // Remote has higher priority â†’ use their aggregation rules
         agg_key = lacpdu.actor.port_key
     ELSE IF lacpdu.actor.system_priority == local.system_priority:
         IF local.system_mac < lacpdu.actor.system_mac:
@@ -3190,7 +3190,7 @@ FUNCTION LACPReceiveLACPDU(lacpdu, ingress_port):
     IF aggregated_ports_with_key(agg_key) == local.members:
         ADD_PORT_TO_LAG(ingress_port, lag_id)
     ELSE:
-        LOG "Port " + ingress_port + " cannot join LAG → key mismatch"
+        LOG "Port " + ingress_port + " cannot join LAG â†’ key mismatch"
 ```
 
 ### 5.7.5 Dry Run Trace Table: LACP
@@ -3201,14 +3201,14 @@ Two switches with 4 links between them configured as a LAG (mode active).
 | Time | Event | Switch A Action | Switch B Action | LAG Members |
 |------|-------|----------------|----------------|-------------|
 | T=0 | Ports 1-4 configured LACP active | Sends LACPDU on all 4 ports | Sends LACPDU on all 4 ports | (none) |
-| T=1 | P1 LACPDU exchanged | Matches system ID, port key → P1 added | Matches → P1 added | {P1} |
-| T=2 | P2 LACPDU exchanged | P2 added → checks speed matches (1G) | P2 added | {P1, P2} |
-| T=3 | P3 LACPDU exchanged | P3 added → all ports 1G full-duplex | P3 added | {P1, P2, P3} |
-| T=4 | P4 LACPDU exchanged | P4 added → bundle complete | P4 added | {P1, P2, P3, P4} |
-| T=5 | Frame A→B arrives | Hash(src,dst) % 4 = 2 → P3 | → | {P1, P2, P3, P4} |
-| T=6 | Frame C→D arrives | Hash(src,dst) % 4 = 0 → P1 | → | {P1, P2, P3, P4} |
+| T=1 | P1 LACPDU exchanged | Matches system ID, port key â†’ P1 added | Matches â†’ P1 added | {P1} |
+| T=2 | P2 LACPDU exchanged | P2 added â†’ checks speed matches (1G) | P2 added | {P1, P2} |
+| T=3 | P3 LACPDU exchanged | P3 added â†’ all ports 1G full-duplex | P3 added | {P1, P2, P3} |
+| T=4 | P4 LACPDU exchanged | P4 added â†’ bundle complete | P4 added | {P1, P2, P3, P4} |
+| T=5 | Frame Aâ†’B arrives | Hash(src,dst) % 4 = 2 â†’ P3 | â†’ | {P1, P2, P3, P4} |
+| T=6 | Frame Câ†’D arrives | Hash(src,dst) % 4 = 0 â†’ P1 | â†’ | {P1, P2, P3, P4} |
 | T=35 | P2 stops receiving LACPDU | P2 removed from bundle | P2 removed from bundle | {P1, P3, P4} |
-| T=36 | Frame E→F arrives | Hash(src,dst) % 3 = 1 → P3 | Old flow on P2 fails, new flow redistributed | {P1, P3, P4} |
+| T=36 | Frame Eâ†’F arrives | Hash(src,dst) % 3 = 1 â†’ P3 | Old flow on P2 fails, new flow redistributed | {P1, P3, P4} |
 | T=65 | P2 LACPDU received again | P2 re-added | P2 re-added | {P1, P2, P3, P4} |
 
 ---
@@ -3228,7 +3228,7 @@ MPLS routers use label-switched paths (LSPs) determined by the Label Distributio
 - **Push:** Ingress router adds a label to the packet.
 - **Swap:** Transit router replaces the top label with a new one.
 - **Pop:** Egress router removes the label (penultimate hop popping removes it one hop earlier).
-- **PHP:** Penultimate Hop Popping → the router before the egress pops the label, so the egress does a plain IP lookup.
+- **PHP:** Penultimate Hop Popping â†’ the router before the egress pops the label, so the egress does a plain IP lookup.
 
 ### 5.8.2 MPLS vs VLAN
 
@@ -3247,7 +3247,7 @@ MPLS routers use label-switched paths (LSPs) determined by the Label Distributio
 
 ## 5.9 Interview Corner
 
-### Q1: STP vs RSTP → What Are the Key Differences?
+### Q1: STP vs RSTP â†’ What Are the Key Differences?
 
 
 **Answer:** RSTP (802.1w) improves STP (802.1D) in three critical areas:
@@ -3272,12 +3272,12 @@ MPLS routers use label-switched paths (LSPs) determined by the Label Distributio
 ### Q4: What Are Jumbo Frames and When Should You Use Them?
 
 
-**Answer:** Jumbo frames are Ethernet frames with a payload larger than the standard 1500 bytes, typically up to 9000 bytes. Benefits: higher throughput because fewer frames need to be processed per byte of data (reduced CPU overhead), especially important for storage traffic (NFS, iSCSI) and large file transfers. Drawbacks: requires all devices on the path (switches, NICs, routers) to support jumbo frames with matching MTU settings. If a jumbo frame hits a device with standard MTU, it is either fragmented (if L3) or dropped (if L2). Use jumbo frames in data center storage networks and HPC clusters → not recommended for WAN or internet-facing links.
+**Answer:** Jumbo frames are Ethernet frames with a payload larger than the standard 1500 bytes, typically up to 9000 bytes. Benefits: higher throughput because fewer frames need to be processed per byte of data (reduced CPU overhead), especially important for storage traffic (NFS, iSCSI) and large file transfers. Drawbacks: requires all devices on the path (switches, NICs, routers) to support jumbo frames with matching MTU settings. If a jumbo frame hits a device with standard MTU, it is either fragmented (if L3) or dropped (if L2). Use jumbo frames in data center storage networks and HPC clusters â†’ not recommended for WAN or internet-facing links.
 
 ### Q5: How Does a Switch's MAC Address Table Size Impact Performance?
 
 
-**Answer:** The MAC address table (typically stored in TCAM) directly impacts switching performance. A table that is too small causes premature eviction of legitimate entries, leading to excessive unknown-unicast flooding. Enterprise switches support 8Kâ€“128K MAC entries. Data center switches support 288K+. When the table overflows in hardware, entries are moved to software (CPU-processed switching), reducing throughput from wire speed to CPU-bound rates (typically 1-10% of line rate).
+**Answer:** The MAC address table (typically stored in TCAM) directly impacts switching performance. A table that is too small causes premature eviction of legitimate entries, leading to excessive unknown-unicast flooding. Enterprise switches support 8KÃ¢â‚¬â€œ128K MAC entries. Data center switches support 288K+. When the table overflows in hardware, entries are moved to software (CPU-processed switching), reducing throughput from wire speed to CPU-bound rates (typically 1-10% of line rate).
 
 ### Q6: What Is the Difference Between a Managed and Unmanaged Switch?
 
@@ -3363,10 +3363,10 @@ ip link set br0 type bridge stp_state 1
 ```
 
 **Linux bridge sysfs knobs:**
-- `/sys/class/net/br0/bridge/forward_delay` → Forward delay (default 15s)
-- `/sys/class/net/br0/bridge/max_age` → Max age (default 20s)
-- `/sys/class/net/br0/bridge/ageing_time` → MAC aging (default 30000 = 300s)
-- `/sys/class/net/br0/bridge/hash_max` → Hash table size
+- `/sys/class/net/br0/bridge/forward_delay` â†’ Forward delay (default 15s)
+- `/sys/class/net/br0/bridge/max_age` â†’ Max age (default 20s)
+- `/sys/class/net/br0/bridge/ageing_time` â†’ MAC aging (default 30000 = 300s)
+- `/sys/class/net/br0/bridge/hash_max` â†’ Hash table size
 
 ### 5.10.3 Open vSwitch (OVS)
 
@@ -3413,7 +3413,7 @@ ovs-appctl fdb/show ovs-br0
 | Method | Forward Starts | Error Check | Corrupted Frames | Runt Frames | Latency | Use Case |
 |--------|---------------|-------------|-----------------|-------------|---------|----------|
 | Store-and-Forward | After full frame received | Yes (FCS) | Never forwarded | Discarded | Highest | All environments (default for most switches) |
-| Cut-Through | After dst MAC (14B) | No | Forwarded | Forwarded | Lowest (< 10Âµs) | HPC, low-latency trading |
+| Cut-Through | After dst MAC (14B) | No | Forwarded | Forwarded | Lowest (< 10Ã‚Âµs) | HPC, low-latency trading |
 | Fragment-Free | After 64 bytes | Partial (no FCS) | Forwarded | Discarded | Medium | General purpose (safe compromise) |
 
 ### Hub vs Switch vs Router (Detailed)
@@ -3429,7 +3429,7 @@ ovs-appctl fdb/show ovs-br0
 | Broadcast Domains | 1 (shared by all) | Per VLAN | Per interface |
 | Bandwidth per Port | Shared (1/N) | Full wire speed | Full wire speed |
 | Loop Handling | None | STP/RSTP | TTL + routing protocols |
-| Latency | ~1 Âµs | 5-50 Âµs | 100 Âµs - 5 ms |
+| Latency | ~1 Ã‚Âµs | 5-50 Ã‚Âµs | 100 Ã‚Âµs - 5 ms |
 | Port Density | 4-24 | 24-48 (up to 512 stack) | 2-48 |
 | VLAN Support | No | Yes (802.1Q) | Inter-VLAN routing |
 | QoS Support | No | Yes (802.1p) | Yes (DSCP) |
@@ -3478,18 +3478,18 @@ ovs-appctl fdb/show ovs-br0
 | 100BaseTX | 100 Mbps | Cat 5 UTP (100m) | Same frame, 10x speed |
 | 1000BaseT | 1 Gbps | Cat 5e UTP (100m) | 4-pair signaling |
 | 10GBaseT | 10 Gbps | Cat 6a (100m) | Full-duplex only |
-| 100GbE | 100 Gbps | SMF/MMF | 4Ã—25G lanes |
-| 400GbE | 400 Gbps | SMF/MMF | 8 lanes Ã— 50 Gbps PAM4 |
+| 100GbE | 100 Gbps | SMF/MMF | 4Ãƒâ€”25G lanes |
+| 400GbE | 400 Gbps | SMF/MMF | 8 lanes Ãƒâ€” 50 Gbps PAM4 |
 
 ### Quick Reference
 
 | Category | Key Points |
 |----------|------------|
-| **Ethernet Generations** | 10M → 100M (1995) → 1G (1998) → 10G (2002) → 40/100G (2010) → 400G (2017) |
+| **Ethernet Generations** | 10M â†’ 100M (1995) â†’ 1G (1998) â†’ 10G (2002) â†’ 40/100G (2010) â†’ 400G (2017) |
 | **Frame Format** | Preamble(7B) + SFD(1B) + Dst(6B) + Src(6B) + Type/Len(2B) + Payload(46-1500B) + FCS(4B) = 64-1518B |
 | **Switching Modes** | Store-and-forward (check FCS), Cut-through (min latency), Fragment-free (check 64B) |
-| **STP Port States** | Blocking → Listening(15s) → Learning(15s) → Forwarding (30-50s total) |
-| **RSTP Port States** | Discarding → Learning → Forwarding (1-3s total) |
+| **STP Port States** | Blocking â†’ Listening(15s) â†’ Learning(15s) â†’ Forwarding (30-50s total) |
+| **RSTP Port States** | Discarding â†’ Learning â†’ Forwarding (1-3s total) |
 | **VLAN Frame** | TPID(0x8100) + PCP(3b) + DEI(1b) + VLAN ID(12b) = 4 bytes |
 | **MPLS Label** | Label(20b) + Exp(3b) + S(1b) + TTL(8b) = 32 bits |
 | **LACP** | Up to 8 links per bundle, hash-based load balancing, LACPDU every 30s |
@@ -3501,7 +3501,7 @@ ovs-appctl fdb/show ovs-br0
 |---------|---------------------|-------------|-----------------|-------|
 | STP/RSTP | Office LAN design | Fabric topology (TRILL/SPB) | Carrier Ethernet | Overlay networks (no STP) |
 | VLANs | Department segmentation | Multi-tenant isolation | MPLS L2VPN | VPC/subnets |
-| LACP | Server uplinks | ToR ↔ leaf trunks | N/A | N/A |
+| LACP | Server uplinks | ToR â†” leaf trunks | N/A | N/A |
 | MPLS | N/A | N/A | L3VPN, TE, FRR | AWS Direct Connect |
 | Cut-through switching | Not typical | Low-latency HPC | Not typical | Not applicable |
 | MAC learning | Standard | Standard | Standard | Software switching (OVS) |
@@ -3524,46 +3524,46 @@ ovs-appctl fdb/show ovs-br0
 
 ## Case Study: Data Center Leaf-Spine with VLAN Segmentation
 
-**Background:** A fintech company operates a data center with 1000 servers across 25 racks (40 servers/rack). Requirements: (a) low latency for trading applications (< 10 µs switch latency), (b) 10:1 oversubscription ratio max, (c) separate VLANs for production, staging, and management traffic.
+**Background:** A fintech company operates a data center with 1000 servers across 25 racks (40 servers/rack). Requirements: (a) low latency for trading applications (< 10 Âµs switch latency), (b) 10:1 oversubscription ratio max, (c) separate VLANs for production, staging, and management traffic.
 
-**Design — Leaf-Spine Topology:**
-1. **Leaf layer (ToR switches):** 25 switches (one per rack), each with 48×10G server ports, 4×40G uplinks to spines. Each leaf is a L2 switch with 802.1Q trunk uplinks.
-2. **Spine layer:** 4 switches, each with 48×40G ports (total 192 uplink ports — each leaf connects to all 4 spines for redundancy).
+**Design â€” Leaf-Spine Topology:**
+1. **Leaf layer (ToR switches):** 25 switches (one per rack), each with 48Ã—10G server ports, 4Ã—40G uplinks to spines. Each leaf is a L2 switch with 802.1Q trunk uplinks.
+2. **Spine layer:** 4 switches, each with 48Ã—40G ports (total 192 uplink ports â€” each leaf connects to all 4 spines for redundancy).
 3. **VLAN design:** VLAN 100 (production servers), VLAN 200 (staging), VLAN 300 (management), VLAN 999 (native/unused). All server-facing ports are access ports. All leaf-spine links are 802.1Q trunks carrying all four VLANs.
 
 **Oversubscription calculation:**
-- Downlink capacity per leaf: 48 × 10G = 480 Gbps
-- Uplink capacity per leaf: 4 × 40G = 160 Gbps
+- Downlink capacity per leaf: 48 Ã— 10G = 480 Gbps
+- Uplink capacity per leaf: 4 Ã— 40G = 160 Gbps
 - Oversubscription ratio: 480/160 = 3:1 (within the 10:1 requirement)
 
-**STP considerations:** In a leaf-spine with 4 spines, MSTP creates multiple spanning tree instances — one per VLAN group. VLAN 100 and VLAN 200 can use different spines as root, balancing load across all 4 spines.
+**STP considerations:** In a leaf-spine with 4 spines, MSTP creates multiple spanning tree instances â€” one per VLAN group. VLAN 100 and VLAN 200 can use different spines as root, balancing load across all 4 spines.
 
-**Outcome:** 3:1 oversubscription, < 5 µs leaf-to-spine latency, VLAN isolation between environments, and full redundancy (any single spine failure reduces uplink capacity by 25 % but does not disconnect any server).
+**Outcome:** 3:1 oversubscription, < 5 Âµs leaf-to-spine latency, VLAN isolation between environments, and full redundancy (any single spine failure reduces uplink capacity by 25 % but does not disconnect any server).
 
 ## Practical Takeaways
 
 | Takeaway | Application |
 |----------|------------|
-| **Ethernet frame format** has been stable for 40+ years | Always validate FCS when capturing packets — corrupted frames should never pass a switch |
+| **Ethernet frame format** has been stable for 40+ years | Always validate FCS when capturing packets â€” corrupted frames should never pass a switch |
 | **Cut-through switching** minimizes latency at the cost of forwarding corrupted frames | Use only on low-BER links (fiber within same rack); fall back to store-and-forward for WAN |
-| **MAC table size** determines scalability | A 48-port switch with 1000 MACs per port needs ~48K entries — ensure hardware TCAM supports this |
+| **MAC table size** determines scalability | A 48-port switch with 1000 MACs per port needs ~48K entries â€” ensure hardware TCAM supports this |
 | **STP convergence** is 30-50s (STP) vs 1-3s (RSTP) | Always use RSTP or MSTP; legacy STP causes unacceptable outages during link failures |
 | **VLAN trunking** requires careful native VLAN management | Change native VLAN from 1 to an unused ID (e.g., 999) to prevent VLAN hopping attacks |
 | **LACP load balancing** must be flow-aware | Use hash of src/dst MAC + IP + port to avoid TCP reordering (never use round-robin) |
-| **Leaf-spine topology** provides predictable latency and scale | Each leaf connects to every spine — no oversubscription at spine if N × leaf_uplink ≤ spine_ports |
+| **Leaf-spine topology** provides predictable latency and scale | Each leaf connects to every spine â€” no oversubscription at spine if N Ã— leaf_uplink â‰¤ spine_ports |
 
 ## Summary
 
-Ethernet has evolved from 10 Mbps shared-media coaxial segments to 400 Gbps full-duplex switched networks. The frame format → with Preamble, SFD, MAC addresses, Length/Type, Payload, and FCS → has remained fundamentally unchanged since 1980. Switches learn MAC addresses automatically using the learning bridge algorithm and make forwarding decisions at line rate. STP prevents loops in redundant topologies through a distributed algorithm that elects a root bridge, selects root ports, and blocks alternate paths. RSTP accelerates convergence from 30-50s to 1-3s. VLANs partition broadcast domains using 802.1Q frame tagging. LACP bundles physical links for bandwidth and redundancy. MPLS extends Ethernet with label-based forwarding for traffic engineering and VPN services.
+Ethernet has evolved from 10 Mbps shared-media coaxial segments to 400 Gbps full-duplex switched networks. The frame format â†’ with Preamble, SFD, MAC addresses, Length/Type, Payload, and FCS â†’ has remained fundamentally unchanged since 1980. Switches learn MAC addresses automatically using the learning bridge algorithm and make forwarding decisions at line rate. STP prevents loops in redundant topologies through a distributed algorithm that elects a root bridge, selects root ports, and blocks alternate paths. RSTP accelerates convergence from 30-50s to 1-3s. VLANs partition broadcast domains using 802.1Q frame tagging. LACP bundles physical links for bandwidth and redundancy. MPLS extends Ethernet with label-based forwarding for traffic engineering and VPN services.
 
 ### Key Takeaways
 
 
-1. **Frame format stability** → The Ethernet frame format has been backward-compatible for four decades, enabling seamless interconnection of 10 Mbps and 400 Gbps devices at the data link layer.
-2. **Transparent switching** → Learning bridges require zero configuration at endpoints; MAC learning, aging, and flooding are entirely transparent to hosts.
-3. **Loop prevention vs. redundancy** → STP and its variants (RSTP, MSTP) are essential for safe redundant topologies. The trade-off is convergence time vs. bandwidth utilization.
-4. **VLAN isolation** → VLANs provide broadcast domain segmentation without additional hardware, but require careful trunk configuration to prevent security issues like VLAN hopping.
-5. **Aggregation and tunneling** → LACP and MPLS extend basic switching with increased bandwidth and carrier-grade features.
+1. **Frame format stability** â†’ The Ethernet frame format has been backward-compatible for four decades, enabling seamless interconnection of 10 Mbps and 400 Gbps devices at the data link layer.
+2. **Transparent switching** â†’ Learning bridges require zero configuration at endpoints; MAC learning, aging, and flooding are entirely transparent to hosts.
+3. **Loop prevention vs. redundancy** â†’ STP and its variants (RSTP, MSTP) are essential for safe redundant topologies. The trade-off is convergence time vs. bandwidth utilization.
+4. **VLAN isolation** â†’ VLANs provide broadcast domain segmentation without additional hardware, but require careful trunk configuration to prevent security issues like VLAN hopping.
+5. **Aggregation and tunneling** â†’ LACP and MPLS extend basic switching with increased bandwidth and carrier-grade features.
 
 ## Exercises
 
@@ -3574,12 +3574,12 @@ Ethernet has evolved from 10 Mbps shared-media coaxial segments to 400 Gbps full
 
 1. Hub (L1): repeats signals to all ports. Bridge (L2): connects segments, learns MACs, filters/forwards. Switch (L2): multi-port bridge with dedicated per-port bandwidth.
 2. When a frame from station S arrives on port Q different from the previously learned port P, the bridge updates the table entry to port Q.
-3. Cut-through starts forwarding after reading only the Dst MAC (first 6 bytes of frame) — it does not wait for the full frame or check FCS, so corrupted frames are forwarded.
+3. Cut-through starts forwarding after reading only the Dst MAC (first 6 bytes of frame) â€” it does not wait for the full frame or check FCS, so corrupted frames are forwarded.
 4. STP prevents loops in redundant bridge topologies by blocking selected ports to create a loop-free tree.
-5. 12 bits → 2^12 - 2 = 4094 usable VLANs (VLAN 0 and 4095 reserved).
+5. 12 bits â†’ 2^12 - 2 = 4094 usable VLANs (VLAN 0 and 4095 reserved).
 6. Preamble (7B, sync), SFD (1B, start), Dst MAC (6B), Src MAC (6B), Type/Len (2B), Payload (46-1500B), FCS (4B, CRC-32).
-7. STP: Blocking → Listening → Learning → Forwarding (30-50s). RSTP: Discarding → Learning → Forwarding (1-3s); adds alternate/backup port roles.
-8. Hash of L2/L3/L4 fields maps each flow to the same link consistently — preventing reordering within a flow.
+7. STP: Blocking â†’ Listening â†’ Learning â†’ Forwarding (30-50s). RSTP: Discarding â†’ Learning â†’ Forwarding (1-3s); adds alternate/backup port roles.
+8. Hash of L2/L3/L4 fields maps each flow to the same link consistently â€” preventing reordering within a flow.
 9. Native VLAN is the untagged VLAN on a trunk. If both sides disagree on native VLAN, traffic can cross VLANs inadvertently.
 10. See section 5.4.3 pseudocode: learn source MAC, lookup destination MAC, filter if same port, else forward, or flood if unknown.
 </details>
@@ -3589,11 +3589,11 @@ Ethernet has evolved from 10 Mbps shared-media coaxial segments to 400 Gbps full
 <details>
 <summary>Solution Hints</summary>
 
-11. After learning A→2, B→2, C→2, the frame to A arrives on port 5. Dst = A is found on port 2 → forward to port 2 only.
+11. After learning Aâ†’2, Bâ†’2, Câ†’2, the frame to A arrives on port 5. Dst = A is found on port 2 â†’ forward to port 2 only.
 12. Assume Bridge IDs: B1(prio 32768:mac1), B2(32768:mac2), B3(4096:mac3). Root = B3 (lowest priority). Root ports: B1 selects port connected to B3, B2 selects port connected to B3. Designated ports: all B3 ports, the B1-B2 link's designated port is on the side closer to root.
-13. BDP = 2 × T_prop × R. T_prop = 100 km × 1 µs/km = 100 µs. BDP = 2 × 100 × 10^-6 × 10^10 = 2 × 10^6 bits = 2,000,000 bits. Frames = 2,000,000 / (1500 × 8) = 166.7 frames.
+13. BDP = 2 Ã— T_prop Ã— R. T_prop = 100 km Ã— 1 Âµs/km = 100 Âµs. BDP = 2 Ã— 100 Ã— 10^-6 Ã— 10^10 = 2 Ã— 10^6 bits = 2,000,000 bits. Frames = 2,000,000 / (1500 Ã— 8) = 166.7 frames.
 14. VLAN 10: ports 1-6, VLAN 20: ports 7-12, int gi0/24 switchport trunk allowed vlan 10,20, switchport mode trunk.
-15. Compute hash for each flow: flow1 hash(AA:BB:CC:DD:EE:01, ...) → link 2, flow2 → link 0, flow3 → link 3.
+15. Compute hash for each flow: flow1 hash(AA:BB:CC:DD:EE:01, ...) â†’ link 2, flow2 â†’ link 0, flow3 â†’ link 3.
 </details>
 
 ### Challenge Problem
@@ -3601,5 +3601,5 @@ Ethernet has evolved from 10 Mbps shared-media coaxial segments to 400 Gbps full
 <details>
 <summary>Solution Hints</summary>
 
-16. **Design:** 5000 servers / 40 per rack = 125 ToRs. 125 ToRs × 4 uplinks = 500 uplinks. 4 core switches × 48 ports = 192 uplink capacity. Oversubscription = 5000 × 10G / (4 × 48 × 40G) = 50 Tbps / 7.68 Tbps ≈ 6.5:1. **Modification:** Increase to 8 core switches (96 ports × 40G = 3.84 Tbps per core → 15.36 Tbps total) → oversubscription = 50/15.36 ≈ 3.25:1. Or use 100G uplinks on ToRs with 8 core switches.
+16. **Design:** 5000 servers / 40 per rack = 125 ToRs. 125 ToRs Ã— 4 uplinks = 500 uplinks. 4 core switches Ã— 48 ports = 192 uplink capacity. Oversubscription = 5000 Ã— 10G / (4 Ã— 48 Ã— 40G) = 50 Tbps / 7.68 Tbps â‰ˆ 6.5:1. **Modification:** Increase to 8 core switches (96 ports Ã— 40G = 3.84 Tbps per core â†’ 15.36 Tbps total) â†’ oversubscription = 50/15.36 â‰ˆ 3.25:1. Or use 100G uplinks on ToRs with 8 core switches.
 </details>

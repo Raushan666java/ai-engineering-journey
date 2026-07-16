@@ -1,4 +1,4 @@
-# Formal Methods
+﻿# Formal Methods
 
 ## Learning Objectives
 
@@ -17,16 +17,16 @@ After completing this chapter, the student will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/14-formal-methods/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/software-engineering/14-formal-methods/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/14-formal-methods/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/software-engineering/14-formal-methods/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/14-formal-methods/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/software-engineering/14-formal-methods/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/14-formal-methods/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/software-engineering/14-formal-methods/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/14-formal-methods/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/software-engineering/14-formal-methods/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/14-formal-methods/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/software-engineering/14-formal-methods/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -76,9 +76,9 @@ graph TD
 | Aspect | Formal Methods | Informal/Traditional Methods |
 |--------|---------------|------------------------------|
 | **Specification** | Precise mathematical notation | Natural language, diagrams |
-| **Ambiguity** | None — unambiguous interpretation | High — subject to interpretation |
+| **Ambiguity** | None â€” unambiguous interpretation | High â€” subject to interpretation |
 | **Verification** | Mathematical proof or exhaustive check | Testing, inspection, review |
-| **Completeness** | Can prove absence of certain defects | Cannot prove absence — only presence |
+| **Completeness** | Can prove absence of certain defects | Cannot prove absence â€” only presence |
 | **Cost** | High upfront (training, tooling) | Lower upfront, higher later |
 | **Scalability** | Limited by state explosion | Scales to large systems |
 | **Applicability** | Safety-critical, security-critical | General-purpose |
@@ -91,37 +91,37 @@ graph TD
 
 | Operator | Symbol | Meaning | Truth Table |
 |----------|--------|---------|-------------|
-| Negation | ¬p | Not p | T→F, F→T |
-| Conjunction | p ∧ q | p and q | TT→T |
-| Disjunction | p ∨ q | p or q | FF→F |
-| Implication | p → q | if p then q | TF→F |
-| Biconditional | p ↔ q | p iff q | TT→T, FF→T |
+| Negation | Â¬p | Not p | Tâ†’F, Fâ†’T |
+| Conjunction | p âˆ§ q | p and q | TTâ†’T |
+| Disjunction | p âˆ¨ q | p or q | FFâ†’F |
+| Implication | p â†’ q | if p then q | TFâ†’F |
+| Biconditional | p â†” q | p iff q | TTâ†’T, FFâ†’T |
 
 #### Predicate Logic
 
 Predicate logic extends propositional logic with quantifiers:
 
-- **Universal quantifier (∀):** "For all" — `∀x ∈ ℕ: x ≥ 0`
-- **Existential quantifier (∃):** "There exists" — `∃x ∈ ℕ: x = 42`
+- **Universal quantifier (âˆ€):** "For all" â€” `âˆ€x âˆˆ â„•: x â‰¥ 0`
+- **Existential quantifier (âˆƒ):** "There exists" â€” `âˆƒx âˆˆ â„•: x = 42`
 
-**Example — Binary search specification:**
+**Example â€” Binary search specification:**
 
 ```
-∀a: ARRAY[ℕ] OF ℤ; target: ℤ •
-  sorted(a) →
-    (result ≠ -1 → a[result] = target)
-    ∧ (result = -1 → ∀i: ℕ • i < len(a) → a[i] ≠ target)
+âˆ€a: ARRAY[â„•] OF â„¤; target: â„¤ â€¢
+  sorted(a) â†’
+    (result â‰  -1 â†’ a[result] = target)
+    âˆ§ (result = -1 â†’ âˆ€i: â„• â€¢ i < len(a) â†’ a[i] â‰  target)
 ```
 
 ### Finite State Machines (FSMs)
 
-An FSM is defined by a 5-tuple `(S, Σ, δ, s₀, F)`:
+An FSM is defined by a 5-tuple `(S, Î£, Î´, sâ‚€, F)`:
 
 - **S:** Finite set of states
-- **Σ:** Finite alphabet of input symbols
-- **δ: S × Σ → S:** Transition function
-- **s₀:** Initial state
-- **F ⊆ S:** Set of accepting states
+- **Î£:** Finite alphabet of input symbols
+- **Î´: S Ã— Î£ â†’ S:** Transition function
+- **sâ‚€:** Initial state
+- **F âŠ† S:** Set of accepting states
 
 ```mermaid
 graph TD
@@ -168,8 +168,8 @@ Temporal logic extends predicate logic with operators for reasoning about time.
 | Next | X p | AX p | p holds in next state |
 | Until | p U q | A[p U q] | p holds until q holds |
 
-**Safety Property:** "Something bad never happens" — e.g., `G ¬(deadlock)`  
-**Liveness Property:** "Something good eventually happens" — e.g., `F (request_satisfied)`
+**Safety Property:** "Something bad never happens" â€” e.g., `G Â¬(deadlock)`  
+**Liveness Property:** "Something good eventually happens" â€” e.g., `F (request_satisfied)`
 
 ### Hoare Logic and Weakest Preconditions
 
@@ -179,12 +179,12 @@ Temporal logic extends predicate logic with operators for reasoning about time.
 - **C:** Command (code fragment)
 - **Q:** Postcondition (must be true after execution)
 
-**Example — Absolute value:**
+**Example â€” Absolute value:**
 
 ```
-{ x ∈ ℤ }
-if x ≥ 0 then y := x else y := -x
-{ y ≥ 0 ∧ (y = x ∨ y = -x) }
+{ x âˆˆ â„¤ }
+if x â‰¥ 0 then y := x else y := -x
+{ y â‰¥ 0 âˆ§ (y = x âˆ¨ y = -x) }
 ```
 
 **Weakest Precondition:** `wp(C, Q)` is the weakest predicate P such that `{P} C {Q}` holds.
@@ -200,10 +200,10 @@ wp(y := x + 1, y > 0) = (x + 1 > 0) = (x > -1)
 | Rule | Formula | Description |
 |------|---------|-------------|
 | Assignment | `{Q[E/x]} x := E {Q}` | Substitute expression for variable |
-| Sequence | `{P} S1 {R}, {R} S2 {Q} ⇒ {P} S1;S2 {Q}` | Chain two commands |
-| Condition | `{P ∧ B} S1 {Q}, {P ∧ ¬B} S2 {Q} ⇒ {P} if B then S1 else S2 {Q}` | Branch |
-| Loop | `{I ∧ B} S {I} ⇒ {I} while B do S {I ∧ ¬B}` | While loop with invariant I |
-| Consequence | `P → P', {P'} C {Q'}, Q' → Q ⇒ {P} C {Q}` | Strengthen pre, weaken post |
+| Sequence | `{P} S1 {R}, {R} S2 {Q} â‡’ {P} S1;S2 {Q}` | Chain two commands |
+| Condition | `{P âˆ§ B} S1 {Q}, {P âˆ§ Â¬B} S2 {Q} â‡’ {P} if B then S1 else S2 {Q}` | Branch |
+| Loop | `{I âˆ§ B} S {I} â‡’ {I} while B do S {I âˆ§ Â¬B}` | While loop with invariant I |
+| Consequence | `P â†’ P', {P'} C {Q'}, Q' â†’ Q â‡’ {P} C {Q}` | Strengthen pre, weaken post |
 
 ### Invariants
 
@@ -213,13 +213,13 @@ An **invariant** is a predicate that holds at specific points in program executi
 - **Class invariants:** Hold before and after each public method
 - **Data invariants:** Constraints on data structures
 
-**Example — Loop invariant for binary search:**
+**Example â€” Loop invariant for binary search:**
 
 ```
-∀i: ℕ | i < low • a[i] < target
-∧ ∀i: ℕ | i > high • a[i] > target
-∧ low ≤ high + 1
-∧ sorted(a)
+âˆ€i: â„• | i < low â€¢ a[i] < target
+âˆ§ âˆ€i: â„• | i > high â€¢ a[i] > target
+âˆ§ low â‰¤ high + 1
+âˆ§ sorted(a)
 ```
 
 ### The Z Notation
@@ -231,37 +231,37 @@ Z (pronounced "Zed") is a formal specification language based on set theory and 
 ```
 SchemaName _________________________________
   declarations
-  ──────────────────────────────────────────
+  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   predicates
 ___________________________________________
 ```
 
-**Example — Library system:**
+**Example â€” Library system:**
 
 ```
 Book ______________________________________
-  id: ℕ
-  title: seq ℂhar
-  author: seq ℂhar
-  isbn: seq ℂhar
-  available: 𝔹
-──────────────────────────────────────────
+  id: â„•
+  title: seq â„‚har
+  author: seq â„‚har
+  isbn: seq â„‚har
+  available: ð”¹
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   #title > 0
   #isbn = 13
 __________________________________________
 
 BorrowBook ________________________________
-  ΔLibrary
-  memberId?: ℕ
-  bookId?: ℕ
-  response!: 𝔹
-──────────────────────────────────────────
-  bookId? ∈ dom(books)
-  memberId? ∈ dom(members)
+  Î”Library
+  memberId?: â„•
+  bookId?: â„•
+  response!: ð”¹
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  bookId? âˆˆ dom(books)
+  memberId? âˆˆ dom(members)
   books(bookId).available = True
   response! = True
-  books' = books ⊕ {bookId ↦ (books(bookId))' where available' = False}
-  members' = members ⊕ {memberId ↦ (members(memberId))' where borrowed' = {bookId}}
+  books' = books âŠ• {bookId â†¦ (books(bookId))' where available' = False}
+  members' = members âŠ• {memberId â†¦ (members(memberId))' where borrowed' = {bookId}}
 __________________________________________
 ```
 
@@ -271,13 +271,13 @@ Z schemas can be combined using operators:
 
 | Operator | Notation | Meaning |
 |----------|----------|---------|
-| Schema inclusion | `S ≙ T1 ∧ T2` | Include all declarations and predicates |
-| Schema conjunction | `S ≙ S1 ∧ S2` | Both schemas hold |
-| Schema disjunction | `S ≙ S1 ∨ S2` | At least one schema holds |
-| Schema negation | `¬S` | Negate all predicates |
+| Schema inclusion | `S â‰™ T1 âˆ§ T2` | Include all declarations and predicates |
+| Schema conjunction | `S â‰™ S1 âˆ§ S2` | Both schemas hold |
+| Schema disjunction | `S â‰™ S1 âˆ¨ S2` | At least one schema holds |
+| Schema negation | `Â¬S` | Negate all predicates |
 | Schema hiding | `S \ (x)` | Hide variable x from schema |
-| Schema projection | `S ↾ (x)` | Keep only variable x |
-| Schema composition | `S1 ⨟ S2` | Sequential composition (after S1, S2 holds) |
+| Schema projection | `S â†¾ (x)` | Keep only variable x |
+| Schema composition | `S1 â¨Ÿ S2` | Sequential composition (after S1, S2 holds) |
 | Schema piping | `S1 >> S2` | Output of S1 feeds input of S2 |
 
 ### B-Method
@@ -291,18 +291,18 @@ MACHINE Library
 SETS BookStatus = {available, borrowed}
 VARIABLES books, members
 INVARIANT
-  books ∈ ℙ(Book) ∧ members ∈ ℙ(Member) ∧
-  ∀b · b ∈ books ⇒ b.status ∈ BookStatus
+  books âˆˆ â„™(Book) âˆ§ members âˆˆ â„™(Member) âˆ§
+  âˆ€b Â· b âˆˆ books â‡’ b.status âˆˆ BookStatus
 INITIALISATION
   books := {} || members := {}
 OPERATIONS
   borrowBook(bookId, memberId) =
     PRE
-      bookId ∈ books ∧ memberId ∈ members ∧
+      bookId âˆˆ books âˆ§ memberId âˆˆ members âˆ§
       books(bookId).status = available
     THEN
       books(bookId).status := borrowed ||
-      members(memberId).borrowed := members(memberId).borrowed ∪ {bookId}
+      members(memberId).borrowed := members(memberId).borrowed âˆª {bookId}
     END
 END
 ```
@@ -316,8 +316,8 @@ REFINEMENT Library_i
 REFINES Library
 VARIABLES books_table, members_table
 INVARIANT
-  books_table ∈ Book → BookStatus ∧
-  members_table ∈ Member → ℙ(Book)
+  books_table âˆˆ Book â†’ BookStatus âˆ§
+  members_table âˆˆ Member â†’ â„™(Book)
 ...
 ```
 
@@ -344,10 +344,10 @@ sig Member { id: one Int, borrowed: set Book }
 sig Library {
   books: set Book,
   members: set Member,
-  borrows: Member → Book
+  borrows: Member â†’ Book
 }
 
-fact NoDuplicateIsbn { all b1, b2: Book | b1.isbn = b2.isbn ⇒ b1 = b2 }
+fact NoDuplicateIsbn { all b1, b2: Book | b1.isbn = b2.isbn â‡’ b1 = b2 }
 fact BookOwnership { all b: Book | one l: Library | b in l.books }
 
 pred Borrow[m: Member, b: Book, l, l': Library] {
@@ -356,10 +356,10 @@ pred Borrow[m: Member, b: Book, l, l': Library] {
   b not in m.borrowed
   l'.books = l.books
   l'.members = l.members
-  l'.borrows = l.borrows + m → b
+  l'.borrows = l.borrows + m â†’ b
 }
 
-assert NoDuplicateBorrow { all m: Member | no disj b1, b2: Book | m → b1 in Library.borrows and m → b2 in Library.borrows }
+assert NoDuplicateBorrow { all m: Member | no disj b1, b2: Book | m â†’ b1 in Library.borrows and m â†’ b2 in Library.borrows }
 check NoDuplicateBorrow for 5
 ```
 
@@ -371,7 +371,7 @@ TLA+, created by Leslie Lamport, is used for specifying and verifying concurrent
 - **State:** Assignment of values to variables
 - **Action:** A relation between old and new states
 - **Behavior:** Infinite sequence of states
-- **Specification:** Initial predicate ∧ □[Next]_vars ∧ Liveness
+- **Specification:** Initial predicate âˆ§ â–¡[Next]_vars âˆ§ Liveness
 - **Invariant:** A predicate that holds in all reachable states
 
 ```
@@ -379,18 +379,18 @@ TLA+, created by Leslie Lamport, is used for specifying and verifying concurrent
 EXTENDS Naturals
 VARIABLES hour, minute
 
-Init ≜ hour ∈ {1..12} ∧ minute ∈ {0..59}
+Init â‰œ hour âˆˆ {1..12} âˆ§ minute âˆˆ {0..59}
 
-Tick ≜
-  ∧ minute' = (minute + 1) % 60
-  ∧ hour' = IF minute = 59 THEN (hour % 12) + 1 ELSE hour
+Tick â‰œ
+  âˆ§ minute' = (minute + 1) % 60
+  âˆ§ hour' = IF minute = 59 THEN (hour % 12) + 1 ELSE hour
 
-Next ≜ Tick
+Next â‰œ Tick
 
-Spec ≜ Init ∧ □[Next]_⟨hour, minute⟩
+Spec â‰œ Init âˆ§ â–¡[Next]_âŸ¨hour, minuteâŸ©
 
-HourInvariant ≜ hour ∈ {1..12}
-MinuteInvariant ≜ minute ∈ {0..59}
+HourInvariant â‰œ hour âˆˆ {1..12}
+MinuteInvariant â‰œ minute âˆˆ {0..59}
 =============================================================================
 ```
 
@@ -428,7 +428,7 @@ active proctype q() {
   od
 }
 
-ltl mutex { □ (!(p:critical && q:critical)) }
+ltl mutex { â–¡ (!(p:critical && q:critical)) }
 ```
 
 #### Symbolic Model Checking (NuSMV)
@@ -498,10 +498,10 @@ Theorem proving uses deductive reasoning to prove properties about programs. Unl
 | **PVS** | Higher-Order Logic | Safety-critical | Powerful decision procedures | NASA systems |
 | **ACL2** | First-Order Logic | Industrial verification | Automated, Lisp-based | AMD/Intel CPU verification |
 
-#### Coq Example — Proof of commutativity of addition:
+#### Coq Example â€” Proof of commutativity of addition:
 
 ```coq
-Theorem add_comm : ∀ n m : nat, n + m = m + n.
+Theorem add_comm : âˆ€ n m : nat, n + m = m + n.
 Proof.
   intros n m.
   induction n as [| n' IH].
@@ -584,7 +584,7 @@ graph TD
 
 #### London Stock Exchange (Taurus Disaster)
 
-**Impact:** £75 million wasted (in 1990s currency), project cancelled after 5 years.
+**Impact:** Â£75 million wasted (in 1990s currency), project cancelled after 5 years.
 
 **Root Cause:** The Taurus paperless settlement system specifications were inconsistent and incomplete. The formal specification revealed fundamental design flaws: the system could deadlock under certain transaction sequences, and the data model violated referential integrity constraints.
 
@@ -971,13 +971,13 @@ Formal methods apply mathematical techniques to software specification, developm
 
 ## Practical Takeaways
 
-1. **Formal methods are not all-or-nothing** — even partial application (lightweight formal methods) catches defects
-2. **Invariants are the most practical formal technique** — state them, enforce them, test them
-3. **Model checking is limited by state space** — use abstraction to manage complexity
-4. **Correctness by construction** — build correct programs incrementally via refinement
-5. **Formal specs expose ambiguity** — the act of writing a formal spec finds requirements gaps
-6. **Critical systems justify formal methods** — safety-critical, security-critical, or where failure costs exceed verification costs
-7. **Choose the right tool** — Z for data-oriented specs, TLA+ for concurrent protocols, Alloy for lightweight exploration, Coq for full verification
+1. **Formal methods are not all-or-nothing** â€” even partial application (lightweight formal methods) catches defects
+2. **Invariants are the most practical formal technique** â€” state them, enforce them, test them
+3. **Model checking is limited by state space** â€” use abstraction to manage complexity
+4. **Correctness by construction** â€” build correct programs incrementally via refinement
+5. **Formal specs expose ambiguity** â€” the act of writing a formal spec finds requirements gaps
+6. **Critical systems justify formal methods** â€” safety-critical, security-critical, or where failure costs exceed verification costs
+7. **Choose the right tool** â€” Z for data-oriented specs, TLA+ for concurrent protocols, Alloy for lightweight exploration, Coq for full verification
 
 ## Chapter Quiz
 
@@ -987,7 +987,7 @@ Formal methods apply mathematical techniques to software specification, developm
 - C) Q is the precondition for C
 - D) P and Q are equivalent
 
-**Answer: B** — {P} C {Q} means if precondition P holds before executing command C, then postcondition Q holds afterwards.
+**Answer: B** â€” {P} C {Q} means if precondition P holds before executing command C, then postcondition Q holds afterwards.
 
 **Q2: In temporal logic, "something bad never happens" is what kind of property?**
 - A) Liveness
@@ -995,7 +995,7 @@ Formal methods apply mathematical techniques to software specification, developm
 - C) Fairness
 - D) Reachability
 
-**Answer: B** — Safety properties assert that "something bad never happens" (e.g., G ¬deadlock).
+**Answer: B** â€” Safety properties assert that "something bad never happens" (e.g., G Â¬deadlock).
 
 **Q3: The weakest precondition wp(x := x + 1, x > 0) is:**
 - A) x > 0
@@ -1003,7 +1003,7 @@ Formal methods apply mathematical techniques to software specification, developm
 - C) x > 1
 - D) x + 1 > 0
 
-**Answer: B** — wp(x := E, Q) = Q[E/x]. Substituting x+1 for x in "x > 0" gives "x+1 > 0", which simplifies to "x > -1".
+**Answer: B** â€” wp(x := E, Q) = Q[E/x]. Substituting x+1 for x in "x > 0" gives "x+1 > 0", which simplifies to "x > -1".
 
 **Q4: Which formal modelling language uses schemas with declarations and predicates?**
 - A) B-Method
@@ -1011,7 +1011,7 @@ Formal methods apply mathematical techniques to software specification, developm
 - C) VDM
 - D) Alloy
 
-**Answer: B** — Z notation structures specifications using schemas with declarations above the line and predicates below.
+**Answer: B** â€” Z notation structures specifications using schemas with declarations above the line and predicates below.
 
 **Q5: Statecharts extend FSMs with:**
 - A) Object orientation
@@ -1019,7 +1019,7 @@ Formal methods apply mathematical techniques to software specification, developm
 - C) Temporal logic
 - D) Probability distributions
 
-**Answer: B** — Statecharts (Harel) add hierarchy (nested states), concurrency (orthogonal regions), and communication.
+**Answer: B** â€” Statecharts (Harel) add hierarchy (nested states), concurrency (orthogonal regions), and communication.
 
 ### TypeScript: Formal Methods Classes
 
@@ -1073,7 +1073,7 @@ class ZSchemaEngine {
     const schema = this.schemas.get(schemaName);
     if (!schema) return null;
     const projected: ZSchema = {
-      name: `${schemaName}↾${variable}`,
+      name: `${schemaName}â†¾${variable}`,
       declarations: schema.declarations.filter(d => d.startsWith(variable)),
       predicates: schema.predicates.filter(p => p.includes(variable)),
       includes: [],
@@ -1087,7 +1087,7 @@ class ZSchemaEngine {
     const s2 = this.schemas.get(second);
     if (!s1 || !s2) return null;
     const composed: ZSchema = {
-      name: `${first}⨟${second}`,
+      name: `${first}â¨Ÿ${second}`,
       declarations: [...s1.declarations, ...s2.declarations.map(d => d + "'")],
       predicates: [
         ...s1.predicates,
@@ -1219,18 +1219,18 @@ class HoareTripleValidator {
         case 'if': {
           path.push(`if ${cmd.condition}`);
           state['_condition'] = cmd.condition;
-          const thenResult = this.executeSymbolic(`${currentPre} ∧ ${cmd.condition}`, cmd.then, currentState, path);
+          const thenResult = this.executeSymbolic(`${currentPre} âˆ§ ${cmd.condition}`, cmd.then, currentState, path);
           if (thenResult === null) { path.push('then branch failed'); return null; }
-          const elseResult = this.executeSymbolic(`${currentPre} ∧ ¬(${cmd.condition})`, cmd.else, currentState, path);
+          const elseResult = this.executeSymbolic(`${currentPre} âˆ§ Â¬(${cmd.condition})`, cmd.else, currentState, path);
           if (elseResult === null) { path.push('else branch failed'); return null; }
           return thenResult;
         }
         case 'while': {
           const invariant = cmd.invariant ?? 'true';
           path.push(`while ${cmd.condition} invariant {${invariant}}`);
-          const bodyResult = this.executeSymbolic(`${invariant} ∧ ${cmd.condition}`, cmd.body, currentState, path);
+          const bodyResult = this.executeSymbolic(`${invariant} âˆ§ ${cmd.condition}`, cmd.body, currentState, path);
           if (bodyResult === null) return null;
-          currentPre = `${invariant} ∧ ¬(${cmd.condition})`;
+          currentPre = `${invariant} âˆ§ Â¬(${cmd.condition})`;
           break;
         }
         case 'sequence':
@@ -1253,7 +1253,7 @@ class HoareTripleValidator {
         if (state[match] !== undefined) return state[match];
         if (/^\d+$/.test(match)) return match;
         if (match === 'true' || match === 'false') return match;
-        if (['∧', '∨', '¬', '→', '↔', '=', '>', '<', '≥', '≤'].includes(match)) return match;
+        if (['âˆ§', 'âˆ¨', 'Â¬', 'â†’', 'â†”', '=', '>', '<', 'â‰¥', 'â‰¤'].includes(match)) return match;
         if (['+', '-', '*', '/', '%', '&&', '||', '!', '==', '!=', '>=', '<='].includes(match)) return match;
         return match;
       })) as boolean;
@@ -1320,8 +1320,8 @@ class InvariantChecker<T> {
 
 // === Example usage ===
 const engine = new ZSchemaEngine();
-engine.defineSchema('Book', ['id: ℕ', 'title: seq ℂhar', 'author: seq ℂhar', 'available: 𝔹'], ['#title > 0']);
-engine.defineSchema('Member', ['id: ℕ', 'name: seq ℂhar', 'borrowed: ℙ Book'], ['true']);
+engine.defineSchema('Book', ['id: â„•', 'title: seq â„‚har', 'author: seq â„‚har', 'available: ð”¹'], ['#title > 0']);
+engine.defineSchema('Member', ['id: â„•', 'name: seq â„‚har', 'borrowed: â„™ Book'], ['true']);
 const combined = engine.includeSchema('Book', 'Member');
 console.log('Z Schema validation:', engine.validate('Book'));
 console.log('Combined schema:', combined?.name);
@@ -1347,7 +1347,7 @@ const swapProgram: Command[] = [
   { type: 'assign', variable: 'x', expression: 'y' },
   { type: 'assign', variable: 'y', expression: 'temp' },
 ];
-const swapResult = validator.validateTriple('x = a ∧ y = b', swapProgram, 'x = b ∧ y = a');
+const swapResult = validator.validateTriple('x = a âˆ§ y = b', swapProgram, 'x = b âˆ§ y = a');
 console.log('Hoare swap valid:', swapResult.valid);
 
 const invChecker = new InvariantChecker<SystemState>();
@@ -1476,7 +1476,7 @@ console.log(verifyRefinementChain([
 
 2. Using Hoare logic, prove that the following program correctly computes the maximum of two numbers:
    ```
-   if a ≥ b then max := a else max := b
+   if a â‰¥ b then max := a else max := b
    { max = max(a, b) }
    ```
 
@@ -1487,10 +1487,10 @@ console.log(verifyRefinementChain([
 ### Challenge Problem
 
 A nuclear reactor control system has four states (STARTUP, POWER_OPERATION, SHUTDOWN, EMERGENCY) with the following constraints:
-- From STARTUP, can transition to POWER_OPERATION only if temperature < 300°C and pressure < 150 bar
-- From POWER_OPERATION, transition to SHUTDOWN if temperature > 350°C or pressure > 170 bar
-- From any state, transition to EMERGENCY if radiation > 100 µSv/h
+- From STARTUP, can transition to POWER_OPERATION only if temperature < 300Â°C and pressure < 150 bar
+- From POWER_OPERATION, transition to SHUTDOWN if temperature > 350Â°C or pressure > 170 bar
+- From any state, transition to EMERGENCY if radiation > 100 ÂµSv/h
 - From EMERGENCY, only transition to SHUTDOWN is allowed (after radiation < 10)
-- Never reach a state where both temperature > 400°C AND pressure > 200 bar simultaneously
+- Never reach a state where both temperature > 400Â°C AND pressure > 200 bar simultaneously
 
 Formalise this system as an FSM with guards. Implement a TypeScript formal verifier that checks all reachable states for safety property violations. Generate counterexamples for any invalid configurations.

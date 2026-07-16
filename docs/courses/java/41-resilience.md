@@ -1,4 +1,4 @@
-# Resilience & Circuit Breakers (Resilience4j)
+﻿# Resilience & Circuit Breakers (Resilience4j)
 > **Previous:** [API Gateway](40-gateway.md) | **Next:** [Configuration and Cloud Config](42-config.md)
 
 ## Learning Objectives
@@ -8,16 +8,16 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/41-resilience/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/41-resilience/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/41-resilience/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/41-resilience/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/41-resilience/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/41-resilience/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/41-resilience/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/41-resilience/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/41-resilience/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/41-resilience/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/41-resilience/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/41-resilience/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -39,9 +39,9 @@ By the end of this chapter, you will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|------------|-------------------|
-| Circuit Breaker → three states: CLOSED, OPEN, HALF_OPEN | Sliding window (count- or time-based) tracks failure rate |
-| Retry → automatic reattempt with backoff | Exponential backoff and exception-based retry triggers |
-| Rate Limiter → token bucket algorithm | `limitForPeriod` and `limitRefreshPeriod` control throughput |
+| Circuit Breaker â†’ three states: CLOSED, OPEN, HALF_OPEN | Sliding window (count- or time-based) tracks failure rate |
+| Retry â†’ automatic reattempt with backoff | Exponential backoff and exception-based retry triggers |
+| Rate Limiter â†’ token bucket algorithm | `limitForPeriod` and `limitRefreshPeriod` control throughput |
 
 ---
 ## Chapter Roadmap
@@ -65,7 +65,7 @@ flowchart TD
 
 | Concept | Description | Key Difference |
 |---------|-------------|----------------|
-| Circuit Breaker | Prevents repeated failures | State machine: CLOSED → OPEN → HALF_OPEN → CLOSED |
+| Circuit Breaker | Prevents repeated failures | State machine: CLOSED â†’ OPEN â†’ HALF_OPEN â†’ CLOSED |
 | Retry | Repeats failed operations | With exponential backoff, maxAttempts |
 | Rate Limiter | Throttles request rate | Token bucket: `limitForPeriod`, `limitRefreshPeriod` |
 | Bulkhead | Limits concurrent calls | Semaphore vs ThreadPool isolation |
@@ -135,10 +135,10 @@ Bulkhead limits the number of concurrent calls to a service. Two implementations
 - **ThreadPoolBulkhead**: Uses a thread pool; isolates calls in separate threads
 
 > [!TIP]
-> Always define a `fallbackMethod` for `@CircuitBreaker` → it provides a degraded response when the circuit is open.
+> Always define a `fallbackMethod` for `@CircuitBreaker` â†’ it provides a degraded response when the circuit is open.
 
 > [!WARNING]
-> Do not combine `@Retry` with `@CircuitBreaker` carelessly → configure retries before circuit breaker so failed retries trip the breaker.
+> Do not combine `@Retry` with `@CircuitBreaker` carelessly â†’ configure retries before circuit breaker so failed retries trip the breaker.
 
 > [!NOTE]
 > Use `SemaphoreBulkhead` for in-process isolation (same thread pool) and `ThreadPoolBulkhead` to separate execution contexts entirely.

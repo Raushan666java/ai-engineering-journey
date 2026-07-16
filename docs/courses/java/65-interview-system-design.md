@@ -1,4 +1,4 @@
-# 65. System Design → Interview Q&A
+﻿# 65. System Design â†’ Interview Q&A
 
 > **Previous:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md) | **Next:** [Behavioral Interview Q&amp;A](./66-interview-behavioral.md)
 
@@ -12,16 +12,16 @@ This chapter covers system design concepts essential for senior Java backend int
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/65-interview-system-design/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/65-interview-system-design/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/65-interview-system-design/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/65-interview-system-design/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/65-interview-system-design/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/65-interview-system-design/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/65-interview-system-design/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/65-interview-system-design/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/65-interview-system-design/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/65-interview-system-design/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/65-interview-system-design/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/65-interview-system-design/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -62,7 +62,7 @@ flowchart LR
 
 **1. Encoding Strategy:**
 - Generate a unique ID (base 62 encoded: 0-9, a-z, A-Z) for each URL
-- 7 characters = 62^7 â‰ˆ 3.5 trillion combinations
+- 7 characters = 62^7 Ã¢â€°Ë† 3.5 trillion combinations
 
 ```java
 public class UrlEncoder {
@@ -189,10 +189,10 @@ public class UrlController {
 **Architecture:**
 
 ```
-Client (WebSocket) → Load Balancer → Chat Service (WebSocket handler)
-                                          ↓
+Client (WebSocket) â†’ Load Balancer â†’ Chat Service (WebSocket handler)
+                                          â†“
                                 Message Queue (Kafka)
-                                          ↓
+                                          â†“
                                 Message Store (Cassandra)
 ```
 
@@ -296,12 +296,12 @@ public class SyncController {
 **Architecture:**
 
 ```
-Client → API Gateway → Product Service
-                     → Cart Service
-                     → Order Service → Saga Orchestrator
-                     → Payment Service
-                     → Inventory Service
-                     → Notification Service
+Client â†’ API Gateway â†’ Product Service
+                     â†’ Cart Service
+                     â†’ Order Service â†’ Saga Orchestrator
+                     â†’ Payment Service
+                     â†’ Inventory Service
+                     â†’ Notification Service
 ```
 
 **Key design decisions:**
@@ -341,7 +341,7 @@ public class ProductSearchService {
 @RedisHash("cart")
 public class Cart {
     @Id private String userId;
-    private Map<String, Integer> items;  // productId → quantity
+    private Map<String, Integer> items;  // productId â†’ quantity
     private LocalDateTime lastUpdated;
 }
 
@@ -451,12 +451,12 @@ public class Inventory {
 **Architecture:**
 
 ```
-Service → Notification API → Message Queue (Kafka)
-                                  ↓
-       ┌──────────────────────────┼──────────────────────────┐
-       ↓                          ↓                          ↓
+Service â†’ Notification API â†’ Message Queue (Kafka)
+                                  â†“
+       â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+       â†“                          â†“                          â†“
  Email Worker              SMS Worker                 Push Worker
-       ↓                          ↓                          ↓
+       â†“                          â†“                          â†“
  SendGrid/Twilio           Twilio/SNS                  Firebase/APNs
 ```
 
@@ -687,7 +687,7 @@ public class CacheAsideService {
             return cached;
         }
 
-        // 2. Cache miss → load from DB
+        // 2. Cache miss â†’ load from DB
         Object value = repository.findById(key);
 
         // 3. Populate cache
@@ -791,9 +791,9 @@ public class StampedePreventionService {
             }
         }
 
-        // Another thread is loading → wait briefly and retry
+        // Another thread is loading â†’ wait briefly and retry
         try { Thread.sleep(50); } catch (InterruptedException e) {}
-        return redis.opsForValue().get(key);  // Might still be null → retry in client
+        return redis.opsForValue().get(key);  // Might still be null â†’ retry in client
     }
 }
 ```
@@ -892,9 +892,9 @@ public class BatchIdGenerator {
 **3. UUID-based:**
 
 ```java
-// Time-based UUID (v7) → ordered, indexed-friendly
+// Time-based UUID (v7) â†’ ordered, indexed-friendly
 public String generateId() {
-    return UUID.randomUUID().toString();  // v4 → not ordered
+    return UUID.randomUUID().toString();  // v4 â†’ not ordered
     // Use UUIDv7 for ordered IDs:
     // https://github.com/f4b6a3/uuid-creator
 }
@@ -907,9 +907,9 @@ public String generateId() {
 
 **Answer:** CAP theorem states that a distributed system can provide at most two of three guarantees:
 
-- **Consistency (C)** → Every read receives the most recent write or an error
-- **Availability (A)** → Every request receives a response (without guarantee it contains the latest write)
-- **Partition Tolerance (P)** → The system continues to operate despite network partitions
+- **Consistency (C)** â†’ Every read receives the most recent write or an error
+- **Availability (A)** â†’ Every request receives a response (without guarantee it contains the latest write)
+- **Partition Tolerance (P)** â†’ The system continues to operate despite network partitions
 
 **Trade-offs in practice:**
 
@@ -976,19 +976,19 @@ public class ShoppingCartService {
 
 **Core concepts:**
 
-**1. Inverted index → the heart of search:**
+**1. Inverted index â†’ the heart of search:**
 
 ```
 Document 1: "The quick brown fox"
 Document 2: "The lazy brown dog"
 
 Inverted index:
-"brown" → Document 1, Document 2
-"quick" → Document 1
-"fox"   → Document 1
-"lazy"  → Document 2
-"dog"   → Document 2
-"the"   → Document 1, Document 2 (stop word, often excluded)
+"brown" â†’ Document 1, Document 2
+"quick" â†’ Document 1
+"fox"   â†’ Document 1
+"lazy"  â†’ Document 2
+"dog"   â†’ Document 2
+"the"   â†’ Document 1, Document 2 (stop word, often excluded)
 ```
 
 **2. Indexing pipeline:**
@@ -1107,14 +1107,14 @@ public List<String> suggest(@RequestParam String prefix) {
 **Architecture:**
 
 ```
-Application (stdout JSON logs) → Fluentd/Logstash (agent)
-                                       ↓
+Application (stdout JSON logs) â†’ Fluentd/Logstash (agent)
+                                       â†“
                                Kafka (buffer)
-                                       ↓
-                           ┌───────────┴───────────┐
-                           ↓                       ↓
+                                       â†“
+                           â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                           â†“                       â†“
                       Elasticsearch             S3 (archive)
-                           ↓
+                           â†“
                        Kibana/Grafana
 ```
 
@@ -1175,7 +1175,7 @@ public class LogIndexRouter {
 ```
 
 **4. Hot/warm architecture:**
-- **Hot tier:** Recent logs (7 days) on fast SSDs → Elasticsearch
+- **Hot tier:** Recent logs (7 days) on fast SSDs â†’ Elasticsearch
 - **Warm tier:** Older logs (30 days) on HDDs with replica
 - **Cold tier:** Archived logs (1+ year) in S3, queryable via Elasticsearch (frozen indices)
 
@@ -1543,8 +1543,8 @@ public class OrderEtlJobConfig {
 **Architecture:**
 
 ```
-API → Redis Queue → Worker Pods
-        ↓
+API â†’ Redis Queue â†’ Worker Pods
+        â†“
    Redis (status)
 ```
 
@@ -1798,9 +1798,9 @@ public class JobInitializer {
 **Architecture:**
 
 ```
-Client → API Gateway → File Service → Metadata DB (PostgreSQL)
-                                     → Object Storage (S3/MinIO)
-                                     → CDN for reads
+Client â†’ API Gateway â†’ File Service â†’ Metadata DB (PostgreSQL)
+                                     â†’ Object Storage (S3/MinIO)
+                                     â†’ CDN for reads
 ```
 
 **Implementation:**
@@ -2061,7 +2061,7 @@ public class ImageController {
     public ResponseEntity<Resource> getImage(
             @PathVariable String fileId,
             @RequestParam(defaultValue = "medium") String size) {
-        // This is behind a CDN → CDN caches the response
+        // This is behind a CDN â†’ CDN caches the response
         String s3Key = String.format("images/%s/%s.webp", fileId, size);
         S3Object object = s3Client.getObject(bucket, s3Key);
 
@@ -2232,11 +2232,11 @@ spring:
 
 ```
 config-repo/
-├── order-service.yml          (shared config)
-├── order-service-dev.yml      (dev overrides)
-├── order-service-prod.yml     (prod overrides)
-├── product-service.yml
-└── application.yml            (shared across all services)
+â”œâ”€â”€ order-service.yml          (shared config)
+â”œâ”€â”€ order-service-dev.yml      (dev overrides)
+â”œâ”€â”€ order-service-prod.yml     (prod overrides)
+â”œâ”€â”€ product-service.yml
+â””â”€â”€ application.yml            (shared across all services)
 ```
 
 **3. Config Client:**
@@ -2337,7 +2337,7 @@ public RestClient.Builder restClientBuilder() {
     return RestClient.builder();
 }
 
-// Usage → just use the service name
+// Usage â†’ just use the service name
 @Service
 public class OrderClient {
     private final RestClient restClient;
@@ -2614,7 +2614,7 @@ public class TicketBookingService {
                     .setIfAbsent(lockKey, userId, Duration.ofMinutes(10));
 
                 if (Boolean.FALSE.equals(locked)) {
-                    // Seat already locked → fail the whole booking
+                    // Seat already locked â†’ fail the whole booking
                     return BookingResult.failed("Seat " + seatId + " is not available");
                 }
                 lockedSeats.add(seatId);
@@ -2718,7 +2718,7 @@ public void transferMoney(Long fromId, Long toId, BigDecimal amount) {
 @Service
 public class UserActivityService {
     public void recordActivity(String userId, Activity activity) {
-        // Cassandra → high write throughput
+        // Cassandra â†’ high write throughput
         activityRepository.save(new UserActivity(userId, activity, Instant.now()));
     }
 }
@@ -2779,7 +2779,7 @@ public class DirectoryShardRouter {
 
 **Common challenges:**
 - **Resharding:** Moving data when adding shards. Use consistent hashing to minimize data movement
-- **Cross-shard queries:** Avoid JOINs across shards → denormalize or use application-level aggregation
+- **Cross-shard queries:** Avoid JOINs across shards â†’ denormalize or use application-level aggregation
 - **Shard key selection:** Choose a key that distributes data evenly and matches query patterns
 
 ---
@@ -2849,8 +2849,8 @@ public class ConsistentReadService {
 **Architecture:**
 
 ```
-Application → Prometheus (scrape metrics) → AlertManager → Slack/PagerDuty
-                                              ↓
+Application â†’ Prometheus (scrape metrics) â†’ AlertManager â†’ Slack/PagerDuty
+                                              â†“
                                           Grafana (dashboards)
 ```
 

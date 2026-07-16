@@ -1,4 +1,4 @@
-# Functional Programming in Practice
+﻿# Functional Programming in Practice
 
 > **Previous:** [Java Modules & Packaging](./04-jpms-packaging.md) | **Next:** [Performance Tuning & Profiling](./06-performance.md)
 
@@ -9,21 +9,20 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/05-functional-deep/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/05-functional-deep/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/05-functional-deep/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/05-functional-deep/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/05-functional-deep/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/05-functional-deep/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/05-functional-deep/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/05-functional-deep/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/05-functional-deep/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/05-functional-deep/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/05-functional-deep/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/05-functional-deep/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
 <!-- End Image Gallery -->
-
 
 - Apply advanced stream operations including `mapMulti`, custom `distinctBy`, `zip`, and `Stream.iterate` with predicates
 - Design custom `Collector` implementations using all five components of the `Collector` interface
@@ -63,7 +62,7 @@ flowchart LR
     H --> I[Spring Boot Functional]
 ```
 
-> **Pro Tip:** The most impactful functional technique for reducing bugs is making illegal states unrepresentable — use sealed classes for domain states and records for immutable data carriers.
+> **Pro Tip:** The most impactful functional technique for reducing bugs is making illegal states unrepresentable â€” use sealed classes for domain states and records for immutable data carriers.
 
 ---
 
@@ -74,7 +73,6 @@ flowchart LR
 Chapter P6 covered the fundamentals: `stream()`, `filter`, `map`, `flatMap`, `reduce`, `collect`, `sorted`, `distinct`, `takeWhile`, `dropWhile`, `limit`, `skip`, and basic `flatMap` with `Optional::stream`. This section deepens those patterns and introduces operations not covered there.
 
 ### 1.1 `mapMulti` (Java 16+)
-
 
 `mapMulti` is a hybrid between `map` and `flatMap`. Instead of returning a `Stream` for each element (like `flatMap`), it pushes zero or more results into a `Consumer`-based buffer. This avoids creating intermediate `Stream` objects and can improve performance.
 
@@ -123,7 +121,6 @@ public class MapMultiExamples {
 ```
 
 ### 1.2 Custom `distinctBy`
-
 
 `Stream.distinct()` uses `equals`/`hashCode`. When you need distinct by a *property*, there is no built-in `distinctBy`.
 
@@ -178,7 +175,6 @@ public class DistinctByExamples {
 
 ### 1.3 `Stream.iterate` with Predicate (Java 9+)
 
-
 `Stream.iterate(T seed, Predicate<T> hasNext, UnaryOperator<T> next)` creates a bounded stream without `limit()`:
 
 ```java
@@ -222,7 +218,6 @@ public class StreamIterateWithPredicate {
 ```
 
 ### 1.4 Custom `zip`
-
 
 Java's `Stream` API lacks a built-in `zip`:
 
@@ -308,7 +303,6 @@ class BiZip {
 
 ### 1.5 `flatMap` Deep Patterns
 
-
 Advanced patterns used in production:
 
 ```java
@@ -361,7 +355,6 @@ public class FlatMapDeep {
 
 ### 1.6 `Stream.concat` and Interleave
 
-
 ```java
 import java.util.stream.*;
 import java.util.*;
@@ -413,17 +406,6 @@ public class ConcatAndInterleave {
 Chapter P6 introduced `Collector.of` for custom collectors. Here we dissect the full `Collector` interface and build sophisticated collectors.
 
 ### 2.1 The `Collector<T, A, R>` Interface
-
-<a href="../../../assets/images/diagrams/java/05-functional-deep/2-1-the-collector-t-a-r-interface-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/05-functional-deep/2-1-the-collector-t-a-r-interface-handwritten.svg" alt="Handwritten: 2.1 The `Collector<T, A, R>` Interface" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/05-functional-deep/2-1-the-collector-t-a-r-interface-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/05-functional-deep/2-1-the-collector-t-a-r-interface-diagram.svg" alt="Diagram: 2.1 The `Collector<T, A, R>` Interface" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/05-functional-deep/2-1-the-collector-t-a-r-interface-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/05-functional-deep/2-1-the-collector-t-a-r-interface-sticky.svg" alt="Sticky Note: 2.1 The `Collector<T, A, R>` Interface" width="30%">
-</a>
-
 
 A `Collector` has five components:
 
@@ -490,7 +472,6 @@ public class CollectorInterfaceDeep {
 
 ### 2.2 Custom Downstream Collector
 
-
 A downstream collector is one passed to `groupingBy` or `partitioningBy`:
 
 ```java
@@ -555,7 +536,6 @@ public class DownstreamCollector {
 
 ### 2.3 `Collector.of` with Complex Finisher
 
-
 ```java
 import java.util.*;
 import java.util.function.*;
@@ -611,7 +591,6 @@ A **monad** is a design pattern that wraps a value and provides two operations:
 
 ### 3.1 `Optional` as a Monad
 
-
 ```java
 import java.util.*;
 import java.util.function.*;
@@ -655,7 +634,6 @@ public class OptionalAsMonad {
 
 ### 3.2 `CompletableFuture` as a Monad
 
-
 ```java
 import java.util.concurrent.*;
 import java.util.function.*;
@@ -688,17 +666,6 @@ public class CompletableFutureAsMonad {
 ```
 
 ### 3.3 Custom Monad-Like: `Box<T>`
-
-<a href="../../../assets/images/diagrams/java/05-functional-deep/3-3-custom-monad-like-box-t-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/05-functional-deep/3-3-custom-monad-like-box-t-handwritten.svg" alt="Handwritten: 3.3 Custom Monad-Like: `Box<T>`" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/05-functional-deep/3-3-custom-monad-like-box-t-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/05-functional-deep/3-3-custom-monad-like-box-t-diagram.svg" alt="Diagram: 3.3 Custom Monad-Like: `Box<T>`" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/05-functional-deep/3-3-custom-monad-like-box-t-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/05-functional-deep/3-3-custom-monad-like-box-t-sticky.svg" alt="Sticky Note: 3.3 Custom Monad-Like: `Box<T>`" width="30%">
-</a>
-
 
 ```java
 import java.util.*;
@@ -762,7 +729,6 @@ public class CustomMonadDemo {
 ```
 
 ### 3.4 Validation Monad
-
 
 The `Validation` pattern accumulates errors rather than short-circuiting:
 
@@ -875,12 +841,11 @@ public class ValidationMonadDemo {
 
 ---
 
-## 4. Functional Interfaces → Beyond Basics
+## 4. Functional Interfaces â†’ Beyond Basics
 
 Chapter P6 covered the six core interfaces and their primitive variants. Here we focus on composition, chaining, and extending arity.
 
 ### 4.1 Specialization Reference
-
 
 The JDK provides 43 functional interfaces in `java.util.function`:
 
@@ -926,7 +891,6 @@ public class SpecializationReference {
 ```
 
 ### 4.2 Consumer Chaining
-
 
 ```java
 import java.util.function.*;
@@ -976,7 +940,6 @@ public class ConsumerChaining {
 ```
 
 ### 4.3 Predicate Composition Factories
-
 
 ```java
 import java.util.function.*;
@@ -1038,7 +1001,6 @@ public class PredicateComposition {
 
 ### 4.4 Function Arity: TriFunction and Beyond
 
-
 Java's `java.util.function` provides only `Function` (arity 1) and `BiFunction` (arity 2):
 
 ```java
@@ -1091,7 +1053,6 @@ public class FunctionArity {
 
 ### 5.1 `andThen` and `compose` Deep Dive
 
-
 ```java
 import java.util.function.*;
 import java.util.*;
@@ -1123,7 +1084,6 @@ public class CompositionDeep {
 ```
 
 ### 5.2 Pipeline Construction
-
 
 ```java
 import java.util.function.*;
@@ -1167,7 +1127,6 @@ public class PipelineConstruction {
 
 ### 5.3 Partial Application
 
-
 ```java
 import java.util.function.*;
 
@@ -1210,7 +1169,6 @@ public class PartialApplication {
 
 ### 5.4 Currying Simulation Revisited
 
-
 ```java
 import java.util.function.*;
 
@@ -1250,7 +1208,6 @@ public class CurryingSimulationDeep {
 
 ### 6.1 Stream Laziness Revisited
 
-
 ```java
 import java.util.*;
 import java.util.stream.*;
@@ -1280,7 +1237,6 @@ public class StreamLazinessDeep {
 ```
 
 ### 6.2 `Supplier` for Lazy Initialization
-
 
 ```java
 import java.util.function.*;
@@ -1338,23 +1294,12 @@ public class SupplierLazyInit {
         config.getDb();
         System.out.println("Accessing DB again (cached)...");
         config.getDb();
-        System.out.println("Cache never accessed → not created");
+        System.out.println("Cache never accessed â†’ not created");
     }
 }
 ```
 
 ### 6.3 Custom `Lazy<T>` Structure
-
-<a href="../../../assets/images/diagrams/java/05-functional-deep/6-3-custom-lazy-t-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/05-functional-deep/6-3-custom-lazy-t-structure-handwritten.svg" alt="Handwritten: 6.3 Custom `Lazy<T>` Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/05-functional-deep/6-3-custom-lazy-t-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/05-functional-deep/6-3-custom-lazy-t-structure-diagram.svg" alt="Diagram: 6.3 Custom `Lazy<T>` Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/05-functional-deep/6-3-custom-lazy-t-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/05-functional-deep/6-3-custom-lazy-t-structure-sticky.svg" alt="Sticky Note: 6.3 Custom `Lazy<T>` Structure" width="30%">
-</a>
-
 
 ```java
 import java.util.*;
@@ -1442,7 +1387,6 @@ public class CustomLazyDemo {
 
 ### 6.4 Infinite Streams in Practice
 
-
 ```java
 import java.util.*;
 import java.util.stream.*;
@@ -1487,7 +1431,6 @@ public class InfiniteStreamsInPractice {
 ## 7. Immutable Data in Functional Style
 
 ### 7.1 Records as Functional Data Carriers
-
 
 ```java
 import java.util.*;
@@ -1538,7 +1481,6 @@ public class RecordsAsFunctionalData {
 
 ### 7.2 The `@With` / Wither Pattern
 
-
 ```java
 import java.util.*;
 
@@ -1587,7 +1529,6 @@ public class WitherPattern {
 
 ### 7.3 Unmodifiable Collections
 
-
 ```java
 import java.util.*;
 import java.util.stream.*;
@@ -1614,7 +1555,6 @@ public class UnmodifiableCollections {
 ```
 
 ### 7.4 Defensive Copying
-
 
 ```java
 import java.util.*;
@@ -1648,7 +1588,6 @@ public class DefensiveCopying {
 ## 8. Pattern Matching (Java 21+)
 
 ### 8.1 Switch Expression & Pattern Matching
-
 
 ```java
 import java.util.*;
@@ -1694,7 +1633,6 @@ public class SwitchPatternMatching {
 ```
 
 ### 8.2 Record Patterns
-
 
 ```java
 import java.util.*;
@@ -1750,7 +1688,6 @@ public class RecordPatterns {
 
 ### 8.3 Guarded Patterns
 
-
 ```java
 import java.util.*;
 
@@ -1803,7 +1740,6 @@ public class GuardedPatterns {
 
 ### 8.4 Sealed Class Exhaustive Matching
 
-
 ```java
 import java.util.*;
 
@@ -1855,10 +1791,9 @@ public class SealedExhaustiveMatching {
 
 ---
 
-## 9. Optionals → Beyond the Basics
+## 9. Optionals â†’ Beyond the Basics
 
-### 9.1 `or`, `ifPresentOrElse`, `stream()` → Deep Patterns
-
+### 9.1 `or`, `ifPresentOrElse`, `stream()` â†’ Deep Patterns
 
 ```java
 import java.util.*;
@@ -1914,7 +1849,6 @@ public class OptionalAdvancedPatterns {
 
 ### 9.2 `OptionalInt`, `OptionalLong`, `OptionalDouble`
 
-
 ```java
 import java.util.*;
 import java.util.stream.*;
@@ -1942,7 +1876,6 @@ public class PrimitiveOptionals {
 ```
 
 ### 9.3 Combining Multiple Optionals
-
 
 ```java
 import java.util.*;
@@ -1997,7 +1930,6 @@ public class CombiningOptionals {
 ```
 
 ### 9.4 Result Pattern (Custom `Either`)
-
 
 ```java
 import java.util.*;
@@ -2084,7 +2016,6 @@ public class EitherPattern {
 ## 10. Functional Error Handling
 
 ### 10.1 `Try` Monad Pattern
-
 
 ```java
 import java.util.*;
@@ -2183,7 +2114,6 @@ public class TryMonadDemo {
 
 ### 10.2 Application `Result` Pattern
 
-
 ```java
 import java.util.*;
 import java.util.function.*;
@@ -2259,7 +2189,6 @@ public class ApplicationResult {
 ```
 
 ### 10.3 Validation Aggregation
-
 
 ```java
 import java.util.*;
@@ -2361,7 +2290,6 @@ public class ValidationAggregation {
 Chapter P6 introduced `RouterFunction`, `HandlerFunction`, and lambda-based `@Bean` definitions. Here we go deeper with production patterns.
 
 ### 11.1 `RouterFunction` Deep
-
 
 ```java
 import org.springframework.boot.SpringApplication;
@@ -2470,7 +2398,6 @@ public class RouterFunctionDeepApplication {
 
 ### 11.2 `StreamResponseBody`
 
-
 Streaming responses for large datasets:
 
 ```java
@@ -2556,7 +2483,6 @@ public class StreamingEndpointApplication {
 
 ### 11.3 Lambda-Based `@Bean` Definitions
 
-
 ```java
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -2622,7 +2548,6 @@ public class FunctionalBeanConfiguration {
 ```
 
 ### 11.4 Functional Property Binding
-
 
 ```java
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -2766,27 +2691,27 @@ record Feature(String name, boolean active) {}
 
 This chapter deepens the functional programming foundation established in Chapter P6 with production-grade patterns:
 
-**Advanced Stream Operations** → `mapMulti` (Java 16+) avoids intermediate `Stream` objects for small expansions. Custom `distinctBy` using `Predicate` with `HashSet` or `ConcurrentHashMap` fills a gap in the JDK. `Stream.iterate` with a predicate creates bounded sequences elegantly. Custom `zip` implementations via iterators or index-based merging cover the missing `zip` operation.
+**Advanced Stream Operations** â†’ `mapMulti` (Java 16+) avoids intermediate `Stream` objects for small expansions. Custom `distinctBy` using `Predicate` with `HashSet` or `ConcurrentHashMap` fills a gap in the JDK. `Stream.iterate` with a predicate creates bounded sequences elegantly. Custom `zip` implementations via iterators or index-based merging cover the missing `zip` operation.
 
-**Custom Collectors** → The `Collector<T,A,R>` interface's five components (supplier, accumulator, combiner, finisher, characteristics) enable arbitrary mutable reductions. Custom downstream collectors for `groupingBy` support top-N selection and sliding windows. `Collector.of` with complex finishers transforms intermediate state into immutable results.
+**Custom Collectors** â†’ The `Collector<T,A,R>` interface's five components (supplier, accumulator, combiner, finisher, characteristics) enable arbitrary mutable reductions. Custom downstream collectors for `groupingBy` support top-N selection and sliding windows. `Collector.of` with complex finishers transforms intermediate state into immutable results.
 
-**Monad Patterns** → `Optional` and `CompletableFuture` exemplify monad-like types with unit, bind, and map operations satisfying the three monad laws. Custom monads (`Box`, `Validation`) extend the pattern. Validation distinguishes itself by accumulating errors rather than short-circuiting.
+**Monad Patterns** â†’ `Optional` and `CompletableFuture` exemplify monad-like types with unit, bind, and map operations satisfying the three monad laws. Custom monads (`Box`, `Validation`) extend the pattern. Validation distinguishes itself by accumulating errors rather than short-circuiting.
 
-**Functional Interfaces Deep** → The 43 specialized interfaces in `java.util.function` eliminate boxing overhead. Consumer chaining, predicate composition factories, and custom higher-arity interfaces (`TriFunction`, `QuadFunction`) extend Java's functional vocabulary.
+**Functional Interfaces Deep** â†’ The 43 specialized interfaces in `java.util.function` eliminate boxing overhead. Consumer chaining, predicate composition factories, and custom higher-arity interfaces (`TriFunction`, `QuadFunction`) extend Java's functional vocabulary.
 
-**Function Composition** → `andThen` and `compose` build pipelines of any length. Partial application and currying create reusable, specialized functions from general ones.
+**Function Composition** â†’ `andThen` and `compose` build pipelines of any length. Partial application and currying create reusable, specialized functions from general ones.
 
-**Lazy Evaluation** → `Supplier` enables deferred computation and memoization. Custom `Lazy<T>` structures cache results while supporting `map`/`flatMap`. Infinite streams with `Stream.iterate` and `Stream.generate` provide unbounded data sources.
+**Lazy Evaluation** â†’ `Supplier` enables deferred computation and memoization. Custom `Lazy<T>` structures cache results while supporting `map`/`flatMap`. Infinite streams with `Stream.iterate` and `Stream.generate` provide unbounded data sources.
 
-**Immutable Data** → Records transparently carry data with automatic `equals`/`hashCode`. Withers enable immutable updates. `List.copyOf` and `Collectors.toUnmodifiableList()` guard against mutation.
+**Immutable Data** â†’ Records transparently carry data with automatic `equals`/`hashCode`. Withers enable immutable updates. `List.copyOf` and `Collectors.toUnmodifiableList()` guard against mutation.
 
-**Pattern Matching** → Switch expressions with type patterns, record patterns, guarded patterns (`when`), and sealed class exhaustive matching transform Java's conditional logic into concise, compiler-verified expressions.
+**Pattern Matching** â†’ Switch expressions with type patterns, record patterns, guarded patterns (`when`), and sealed class exhaustive matching transform Java's conditional logic into concise, compiler-verified expressions.
 
-**Optionals in Depth** → `or()` chains fallback sources, `stream()` bridges Optional and Stream, primitive optionals avoid boxing, and `combine`/`lift` patterns handle multiple optionals. `Either` provides Left/Right error handling.
+**Optionals in Depth** â†’ `or()` chains fallback sources, `stream()` bridges Optional and Stream, primitive optionals avoid boxing, and `combine`/`lift` patterns handle multiple optionals. `Either` provides Left/Right error handling.
 
-**Functional Error Handling** → `Try` captures exceptions in a monadic wrapper supporting `map`/`flatMap`/`recover`. `Result` provides application-level success/failure with codes. Validation aggregation accumulates all errors.
+**Functional Error Handling** â†’ `Try` captures exceptions in a monadic wrapper supporting `map`/`flatMap`/`recover`. `Result` provides application-level success/failure with codes. Validation aggregation accumulates all errors.
 
-**Spring Boot Functional** → `RouterFunction` with filters, error handlers, and nested routes. `StreamResponseBody` writes large datasets incrementally. Lambda-based `@Bean` definitions compose functional beans. `@ConfigurationProperties` with records enables functional property binding.
+**Spring Boot Functional** â†’ `RouterFunction` with filters, error handlers, and nested routes. `StreamResponseBody` writes large datasets incrementally. Lambda-based `@Bean` definitions compose functional beans. `@ConfigurationProperties` with records enables functional property binding.
 
 ---
 

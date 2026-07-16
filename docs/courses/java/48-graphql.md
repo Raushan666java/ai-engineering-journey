@@ -1,4 +1,4 @@
-# Spring GraphQL
+﻿# Spring GraphQL
 
 > **Previous:** [Spring AI](./47-spring-ai.md) | **Next:** [Spring Batch](./49-batch.md)
 
@@ -7,16 +7,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/48-graphql/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/48-graphql/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/48-graphql/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/48-graphql/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/48-graphql/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/48-graphql/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/48-graphql/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/48-graphql/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/48-graphql/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/48-graphql/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/48-graphql/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/48-graphql/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -59,7 +59,7 @@ By the end of this chapter, you will be able to:
 
 ## 1. GraphQL Schema Language
 
-> **Pro Tip:** Test with production-like configurations → dev setups often hide issues that surface under real load.
+> **Pro Tip:** Test with production-like configurations â†’ dev setups often hide issues that surface under real load.
 
 > **Remember:** Start simple. Add complexity only when proven necessary. Premature abstraction creates maintenance burden.
 
@@ -3225,10 +3225,10 @@ public class GraphQlSchemaTest {
 
 | Scenario | Pattern A | Pattern B | Pattern C |
 |----------|-----------|-----------|-----------|
-| Small application | âœ“ | âœ— | âœ“ |
-| Enterprise system | âœ“ | âœ“ | âœ— |
-| High-throughput API | âœ— | âœ“ | âœ“ |
-| Event-driven | âœ— | âœ“ | âœ“ |
+| Small application | Ã¢Å“â€œ | Ã¢Å“â€” | Ã¢Å“â€œ |
+| Enterprise system | Ã¢Å“â€œ | Ã¢Å“â€œ | Ã¢Å“â€” |
+| High-throughput API | Ã¢Å“â€” | Ã¢Å“â€œ | Ã¢Å“â€œ |
+| Event-driven | Ã¢Å“â€” | Ã¢Å“â€œ | Ã¢Å“â€œ |
 
 ## Chapter Quiz
 
@@ -3258,7 +3258,7 @@ public class GraphQlSchemaTest {
    - A) For every project regardless of size
    - B) When complexity justifies the overhead
    - C) Only in legacy systems
-   - D) Never → it is outdated
+   - D) Never â†’ it is outdated
 
 <details>
 <summary>Answer&lt;/summary&gt;

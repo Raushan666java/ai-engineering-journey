@@ -1,4 +1,4 @@
-# Chapter 02: Strings
+﻿# Chapter 02: Strings
 
 > String problems test your ability to work with character arrays, pattern matching, and text manipulation. They are among the most common problems in coding interviews.
 
@@ -13,16 +13,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/coding-problems/02-strings/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/coding-problems/02-strings/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/coding-problems/02-strings/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/coding-problems/02-strings/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/coding-problems/02-strings/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/coding-problems/02-strings/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/coding-problems/02-strings/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/coding-problems/02-strings/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/coding-problems/02-strings/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/coding-problems/02-strings/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/coding-problems/02-strings/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/coding-problems/02-strings/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -98,9 +98,9 @@ xychart-beta
 
 ### Problem 1: Valid Palindrome
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-📊 **Difficulty:** Easy
-📂 **Topics:** [String, Two Pointers]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+ðŸ“Š **Difficulty:** Easy
+ðŸ“‚ **Topics:** [String, Two Pointers]
 
 **Problem:** Given a string s, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
 
@@ -117,7 +117,7 @@ Output: false
 ```
 
 **Constraints:**
-- 1 ≤ s.length ≤ 2 × 10⁵
+- 1 â‰¤ s.length â‰¤ 2 Ã— 10âµ
 
 **Solution Approach:**
 - **Brute Force:** Filter string, then reverse and compare. Time O(n), Space O(n).
@@ -156,9 +156,9 @@ console.log(isPalindrome(".,")); // true
 
 ### Problem 2: Valid Anagram
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-📊 **Difficulty:** Easy
-📂 **Topics:** [String, Hash Table, Sorting]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+ðŸ“Š **Difficulty:** Easy
+ðŸ“‚ **Topics:** [String, Hash Table, Sorting]
 
 **Problem:** Given two strings s and t, return true if t is an anagram of s, false otherwise.
 
@@ -175,7 +175,7 @@ Output: false
 ```
 
 **Constraints:**
-- 1 ≤ s.length, t.length ≤ 5 × 10⁴
+- 1 â‰¤ s.length, t.length â‰¤ 5 Ã— 10â´
 
 **Solution Approach:**
 - **Sorting:** Sort both strings and compare. Time O(n log n), Space O(n).
@@ -210,9 +210,9 @@ console.log(isAnagram("a", "a")); // true
 
 ### Problem 3: First Unique Character in a String
 
-🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Apple]
-📊 **Difficulty:** Easy
-📂 **Topics:** [String, Hash Table]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft] [Apple]
+ðŸ“Š **Difficulty:** Easy
+ðŸ“‚ **Topics:** [String, Hash Table]
 
 **Problem:** Given a string s, find the first non-repeating character and return its index. If none exists, return -1.
 
@@ -229,10 +229,10 @@ Output: 2
 ```
 
 **Constraints:**
-- 1 ≤ s.length ≤ 10⁵
+- 1 â‰¤ s.length â‰¤ 10âµ
 
 **Solution Approach:**
-- **Brute Force:** Nested loop checking duplicates. Time O(n²), Space O(1).
+- **Brute Force:** Nested loop checking duplicates. Time O(nÂ²), Space O(1).
 - **Optimal:** Count frequencies in first pass, find first with count 1 in second pass. Time O(n), Space O(1).
 
 ```typescript
@@ -265,9 +265,9 @@ console.log(firstUniqChar("aabb")); // -1
 
 ### Problem 4: Reverse String
 
-🏷️ **Companies:** [Amazon] [Google] [Microsoft]
-📊 **Difficulty:** Easy
-📂 **Topics:** [String, Two Pointers]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft]
+ðŸ“Š **Difficulty:** Easy
+ðŸ“‚ **Topics:** [String, Two Pointers]
 
 **Problem:** Write a function that reverses a string in-place.
 
@@ -278,7 +278,7 @@ Output: ["o","l","l","e","h"]
 ```
 
 **Constraints:**
-- 1 ≤ s.length ≤ 10⁵
+- 1 â‰¤ s.length â‰¤ 10âµ
 
 ```typescript
 function reverseString(s: string[]): void {
@@ -311,9 +311,9 @@ console.log(s2); // ["h","a","n","n","a","H"]
 
 ### Problem 5: Longest Common Prefix
 
-🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
-📊 **Difficulty:** Easy
-📂 **Topics:** [String, Trie]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
+ðŸ“Š **Difficulty:** Easy
+ðŸ“‚ **Topics:** [String, Trie]
 
 **Problem:** Write a function to find the longest common prefix string amongst an array of strings.
 
@@ -324,8 +324,8 @@ Output: "fl"
 ```
 
 **Constraints:**
-- 1 ≤ strs.length ≤ 200
-- 0 ≤ strs[i].length ≤ 200
+- 1 â‰¤ strs.length â‰¤ 200
+- 0 â‰¤ strs[i].length â‰¤ 200
 
 **Solution Approach:**
 - **Horizontal Scanning:** Start with first string as prefix, reduce for each next string.
@@ -362,9 +362,9 @@ console.log(longestCommonPrefix([""])); // ""
 
 ### Problem 6: Valid Parentheses
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-📊 **Difficulty:** Easy
-📂 **Topics:** [String, Stack]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+ðŸ“Š **Difficulty:** Easy
+ðŸ“‚ **Topics:** [String, Stack]
 
 **Problem:** Given a string containing '(', ')', '{', '}', '[' and ']', determine if the input string is valid. Brackets must close in the correct order.
 
@@ -375,7 +375,7 @@ Output: true
 ```
 
 **Constraints:**
-- 1 ≤ s.length ≤ 10⁴
+- 1 â‰¤ s.length â‰¤ 10â´
 
 ```typescript
 function isValid(s: string): boolean {
@@ -409,9 +409,9 @@ console.log(isValid("([)]")); // false
 
 ### Problem 7: Implement strStr()
 
-🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
-📊 **Difficulty:** Easy
-📂 **Topics:** [String, Two Pointers, Pattern Matching]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
+ðŸ“Š **Difficulty:** Easy
+ðŸ“‚ **Topics:** [String, Two Pointers, Pattern Matching]
 
 **Problem:** Return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
 
@@ -422,7 +422,7 @@ Output: 2
 ```
 
 **Constraints:**
-- 1 ≤ haystack.length, needle.length ≤ 10⁴
+- 1 â‰¤ haystack.length, needle.length â‰¤ 10â´
 
 **Solution Approach:**
 - **Brute Force:** Slide window and compare. Time O(n*m), Space O(1).
@@ -458,9 +458,9 @@ console.log(strStr("", "")); // 0
 
 ### Problem 8: Length of Last Word
 
-🏷️ **Companies:** [Amazon] [Google] [Microsoft]
-📊 **Difficulty:** Easy
-📂 **Topics:** [String]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft]
+ðŸ“Š **Difficulty:** Easy
+ðŸ“‚ **Topics:** [String]
 
 **Problem:** Given a string s consisting of words and spaces, return the length of the last word in the string.
 
@@ -471,7 +471,7 @@ Output: 5
 ```
 
 **Constraints:**
-- 1 ≤ s.length ≤ 10⁴
+- 1 â‰¤ s.length â‰¤ 10â´
 
 ```typescript
 function lengthOfLastWord(s: string): number {
@@ -507,9 +507,9 @@ console.log(lengthOfLastWord("a")); // 1
 
 ### Problem 9: Longest Substring Without Repeating Characters
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-📊 **Difficulty:** Medium
-📂 **Topics:** [String, Sliding Window, Hash Table]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [String, Sliding Window, Hash Table]
 
 **Problem:** Given a string s, find the length of the longest substring without repeating characters.
 
@@ -521,10 +521,10 @@ Explanation: "abc" length 3.
 ```
 
 **Constraints:**
-- 0 ≤ s.length ≤ 5 × 10⁴
+- 0 â‰¤ s.length â‰¤ 5 Ã— 10â´
 
 **Solution Approach:**
-- **Brute Force:** Check all substrings. Time O(n³), Space O(min(n, m)).
+- **Brute Force:** Check all substrings. Time O(nÂ³), Space O(min(n, m)).
 - **Optimal (Sliding Window):** Expand right pointer, shrink left when duplicate found. Track max length. Time O(n), Space O(min(n, m)).
 
 ```typescript
@@ -561,9 +561,9 @@ console.log(lengthOfLongestSubstring("")); // 0
 
 ### Problem 10: Longest Palindromic Substring
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-📊 **Difficulty:** Medium
-📂 **Topics:** [String, DP, Two Pointers]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [String, DP, Two Pointers]
 
 **Problem:** Given a string s, return the longest palindromic substring in s.
 
@@ -574,12 +574,12 @@ Output: "bab" or "aba"
 ```
 
 **Constraints:**
-- 1 ≤ s.length ≤ 1000
+- 1 â‰¤ s.length â‰¤ 1000
 
 **Solution Approach:**
-- **Brute Force:** Check all substrings. Time O(n³), Space O(1).
-- **DP:** Table[i][j] = true if substring i..j is palindrome. O(n²) time and space.
-- **Optimal (Expand Around Center):** For each position, expand outward treating it as center. Handle odd (1 char) and even (2 char) centers. Time O(n²), Space O(1).
+- **Brute Force:** Check all substrings. Time O(nÂ³), Space O(1).
+- **DP:** Table[i][j] = true if substring i..j is palindrome. O(nÂ²) time and space.
+- **Optimal (Expand Around Center):** For each position, expand outward treating it as center. Handle odd (1 char) and even (2 char) centers. Time O(nÂ²), Space O(1).
 
 ```typescript
 function longestPalindrome(s: string): string {
@@ -616,16 +616,16 @@ console.log(longestPalindrome("cbbd")); // "bb"
 console.log(longestPalindrome("a")); // "a"
 ```
 
-**Time Complexity:** O(n²)
+**Time Complexity:** O(nÂ²)
 **Space Complexity:** O(1)
 
 ---
 
 ### Problem 11: Group Anagrams
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-📊 **Difficulty:** Medium
-📂 **Topics:** [String, Hash Table, Sorting]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [String, Hash Table, Sorting]
 
 **Problem:** Given an array of strings strs, group the anagrams together.
 
@@ -636,8 +636,8 @@ Output: [["bat"], ["nat", "tan"], ["ate", "eat", "tea"]]
 ```
 
 **Constraints:**
-- 1 ≤ strs.length ≤ 10⁴
-- 0 ≤ strs[i].length ≤ 100
+- 1 â‰¤ strs.length â‰¤ 10â´
+- 0 â‰¤ strs[i].length â‰¤ 100
 
 **Solution Approach:**
 - **Sorting Key:** Sort each string, use as key in map. Time O(n * k log k), Space O(n*k).
@@ -672,9 +672,9 @@ console.log(groupAnagrams(["a"])); // [["a"]]
 
 ### Problem 12: String to Integer (atoi)
 
-🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
-📊 **Difficulty:** Medium
-📂 **Topics:** [String, Math]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [String, Math]
 
 **Problem:** Implement the myAtoi(string s) function, which converts a string to a 32-bit signed integer.
 
@@ -691,10 +691,10 @@ Output: -42
 ```
 
 **Constraints:**
-- 0 ≤ s.length ≤ 200
+- 0 â‰¤ s.length â‰¤ 200
 
 **Solution Approach:**
-- Skip leading whitespace, handle sign, read digits, clamp to [−2³¹, 2³¹−1].
+- Skip leading whitespace, handle sign, read digits, clamp to [âˆ’2Â³Â¹, 2Â³Â¹âˆ’1].
 
 ```typescript
 function myAtoi(s: string): number {
@@ -739,9 +739,9 @@ console.log(myAtoi("-91283472332")); // -2147483648
 
 ### Problem 13: Longest Repeating Character Replacement
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-📊 **Difficulty:** Medium
-📂 **Topics:** [String, Sliding Window]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [String, Sliding Window]
 
 **Problem:** Given a string s and an integer k, find the length of the longest substring that can be obtained by replacing at most k characters to make all characters same.
 
@@ -752,11 +752,11 @@ Output: 4
 ```
 
 **Constraints:**
-- 1 ≤ s.length ≤ 10⁵
-- 0 ≤ k ≤ s.length
+- 1 â‰¤ s.length â‰¤ 10âµ
+- 0 â‰¤ k â‰¤ s.length
 
 **Solution Approach:**
-- Sliding window with frequency tracking. Valid window when (window size - max freq) ≤ k.
+- Sliding window with frequency tracking. Valid window when (window size - max freq) â‰¤ k.
 
 ```typescript
 function characterReplacement(s: string, k: number): number {
@@ -796,9 +796,9 @@ console.log(characterReplacement("AAAA", 0)); // 4
 
 ### Problem 14: Minimum Window Substring
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-📊 **Difficulty:** Medium
-📂 **Topics:** [String, Sliding Window, Hash Table]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [String, Sliding Window, Hash Table]
 
 **Problem:** Given two strings s and t, return the minimum window substring of s that contains all characters of t.
 
@@ -809,7 +809,7 @@ Output: "BANC"
 ```
 
 **Constraints:**
-- 1 ≤ s.length, t.length ≤ 10⁵
+- 1 â‰¤ s.length, t.length â‰¤ 10âµ
 
 **Solution Approach:**
 - Sliding window with two frequency maps. Expand right, when window valid, shrink left to find minimum.
@@ -870,9 +870,9 @@ console.log(minWindow("a", "aa")); // ""
 
 ### Problem 15: Palindromic Substrings
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-📊 **Difficulty:** Medium
-📂 **Topics:** [String, DP, Two Pointers]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [String, DP, Two Pointers]
 
 **Problem:** Count how many palindromic substrings exist in a given string.
 
@@ -884,7 +884,7 @@ Explanation: "a", "b", "c"
 ```
 
 **Constraints:**
-- 1 ≤ s.length ≤ 1000
+- 1 â‰¤ s.length â‰¤ 1000
 
 **Solution Approach:**
 - Expand around each center (including between chars). Count palindromes.
@@ -917,16 +917,16 @@ console.log(countSubstrings("aaa")); // 6
 console.log(countSubstrings("")); // 0
 ```
 
-**Time Complexity:** O(n²)
+**Time Complexity:** O(nÂ²)
 **Space Complexity:** O(1)
 
 ---
 
 ### Problem 16: Encode and Decode Strings
 
-🏷️ **Companies:** [Amazon] [Google] [Meta]
-📊 **Difficulty:** Medium
-📂 **Topics:** [String, Design]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [String, Design]
 
 **Problem:** Design an algorithm to encode a list of strings to a single string and decode it back.
 
@@ -975,9 +975,9 @@ console.log(decode(encoded)); // ["hello", "world", "test#1"]
 
 ### Problem 17: Longest Substring with At Least K Repeating Characters
 
-🏷️ **Companies:** [Amazon] [Google] [Microsoft]
-📊 **Difficulty:** Medium
-📂 **Topics:** [String, Divide and Conquer, Sliding Window]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [String, Divide and Conquer, Sliding Window]
 
 **Problem:** Find the length of the longest substring such that each character appears at least k times.
 
@@ -989,7 +989,7 @@ Explanation: "aaa"
 ```
 
 **Constraints:**
-- 1 ≤ s.length ≤ 10⁴
+- 1 â‰¤ s.length â‰¤ 10â´
 
 **Solution Approach:**
 - **Divide and Conquer:** Split at characters with frequency < k. Recurse on substrings.
@@ -1029,9 +1029,9 @@ console.log(longestSubstring("ababacb", 3)); // 0
 
 ### Problem 18: Letter Combinations of a Phone Number
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-📊 **Difficulty:** Medium
-📂 **Topics:** [String, Backtracking]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [String, Backtracking]
 
 **Problem:** Given a string containing digits 2-9, return all possible letter combinations that the number could represent.
 
@@ -1042,7 +1042,7 @@ Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"]
 ```
 
 **Constraints:**
-- 0 ≤ digits.length ≤ 4
+- 0 â‰¤ digits.length â‰¤ 4
 
 ```typescript
 function letterCombinations(digits: string): string[] {
@@ -1086,9 +1086,9 @@ console.log(letterCombinations("2")); // ["a", "b", "c"]
 
 ### Problem 19: Reverse Words in a String
 
-🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
-📊 **Difficulty:** Medium
-📂 **Topics:** [String, Two Pointers]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [String, Two Pointers]
 
 **Problem:** Given a string s, reverse the order of words.
 
@@ -1099,7 +1099,7 @@ Output: "blue is sky the"
 ```
 
 **Constraints:**
-- 1 ≤ s.length ≤ 10⁴
+- 1 â‰¤ s.length â‰¤ 10â´
 
 ```typescript
 function reverseWords(s: string): string {
@@ -1122,9 +1122,9 @@ console.log(reverseWords("a good   example")); // "example good a"
 
 ### Problem 20: Compare Version Numbers
 
-🏷️ **Companies:** [Amazon] [Google] [Microsoft]
-📊 **Difficulty:** Medium
-📂 **Topics:** [String, Two Pointers]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [String, Two Pointers]
 
 **Problem:** Compare two version numbers (e.g., "1.01" vs "1.001"). Return 1 if v1 > v2, -1 if v1 < v2, 0 if equal.
 
@@ -1169,9 +1169,9 @@ console.log(compareVersion("0.1", "1.1")); // -1
 
 ### Problem 21: Regular Expression Matching
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-📊 **Difficulty:** Hard
-📂 **Topics:** [String, DP, Backtracking]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+ðŸ“Š **Difficulty:** Hard
+ðŸ“‚ **Topics:** [String, DP, Backtracking]
 
 **Problem:** Implement regular expression matching with support for '.' and '*'.
 
@@ -1182,8 +1182,8 @@ Output: true
 ```
 
 **Constraints:**
-- 1 ≤ s.length ≤ 20
-- 1 ≤ p.length ≤ 30
+- 1 â‰¤ s.length â‰¤ 20
+- 1 â‰¤ p.length â‰¤ 30
 
 **Solution Approach:**
 - **DP:** dp[i][j] matches s[0..i-1] with p[0..j-1].
@@ -1228,9 +1228,9 @@ console.log(isMatch("ab", ".*")); // true
 
 ### Problem 22: Edit Distance
 
-🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
-📊 **Difficulty:** Hard
-📂 **Topics:** [String, DP]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
+ðŸ“Š **Difficulty:** Hard
+ðŸ“‚ **Topics:** [String, DP]
 
 **Problem:** Given two strings, return minimum edit operations (insert, delete, replace) to convert word1 to word2.
 
@@ -1241,7 +1241,7 @@ Output: 3
 ```
 
 **Constraints:**
-- 0 ≤ word1.length, word2.length ≤ 500
+- 0 â‰¤ word1.length, word2.length â‰¤ 500
 
 **Solution Approach:**
 - Classic DP: dp[i][j] = min(dp[i-1][j]+1, dp[i][j-1]+1, dp[i-1][j-1]+cost).
@@ -1283,15 +1283,15 @@ console.log(minDistance("", "a")); // 1
 ```
 
 **Time Complexity:** O(m * n)
-**Space Complexity:** O(m * n) — can be optimized to O(min(m, n))
+**Space Complexity:** O(m * n) â€” can be optimized to O(min(m, n))
 
 ---
 
 ### Problem 23: Distinct Subsequences
 
-🏷️ **Companies:** [Amazon] [Google] [Meta]
-📊 **Difficulty:** Hard
-📂 **Topics:** [String, DP]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
+ðŸ“Š **Difficulty:** Hard
+ðŸ“‚ **Topics:** [String, DP]
 
 **Problem:** Given two strings s and t, count the number of distinct subsequences of s that equal t.
 
@@ -1302,7 +1302,7 @@ Output: 3
 ```
 
 **Constraints:**
-- 1 ≤ s.length, t.length ≤ 1000
+- 1 â‰¤ s.length, t.length â‰¤ 1000
 
 ```typescript
 function numDistinct(s: string, t: string): number {
@@ -1340,9 +1340,9 @@ console.log(numDistinct("babgbag", "bag")); // 5
 
 ### Problem 24: Text Justification
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-📊 **Difficulty:** Hard
-📂 **Topics:** [String, Simulation]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+ðŸ“Š **Difficulty:** Hard
+ðŸ“‚ **Topics:** [String, Simulation]
 
 **Problem:** Given an array of words and a maxWidth, format the text such that each line has exactly maxWidth characters, fully justified.
 
@@ -1357,8 +1357,8 @@ Output: [
 ```
 
 **Constraints:**
-- 1 ≤ words.length ≤ 300
-- 1 ≤ words[i].length ≤ 20
+- 1 â‰¤ words.length â‰¤ 300
+- 1 â‰¤ words[i].length â‰¤ 20
 
 ```typescript
 function fullJustify(words: string[], maxWidth: number): string[] {
@@ -1416,9 +1416,9 @@ console.log(fullJustify(words, 16));
 
 ### Problem 25: Wildcard Matching
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-📊 **Difficulty:** Hard
-📂 **Topics:** [String, DP, Greedy]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+ðŸ“Š **Difficulty:** Hard
+ðŸ“‚ **Topics:** [String, DP, Greedy]
 
 **Problem:** Implement wildcard pattern matching with support for '?' (any single char) and '*' (any sequence including empty).
 
@@ -1429,7 +1429,7 @@ Output: true
 ```
 
 **Constraints:**
-- 0 ≤ s.length, p.length ≤ 2000
+- 0 â‰¤ s.length, p.length â‰¤ 2000
 
 ```typescript
 function isMatchWildcard(s: string, p: string): boolean {
@@ -1481,12 +1481,12 @@ console.log(isMatchWildcard("adceb", "*a*b")); // true
 | 7 | Implement strStr() | Easy | Amazon, Google, Microsoft | O(n*m) | O(1) |
 | 8 | Length of Last Word | Easy | Amazon, Google, Microsoft | O(n) | O(1) |
 | 9 | Longest Substring Without Repeating | Medium | Multiple | O(n) | O(k) |
-| 10 | Longest Palindromic Substring | Medium | Multiple | O(n²) | O(1) |
+| 10 | Longest Palindromic Substring | Medium | Multiple | O(nÂ²) | O(1) |
 | 11 | Group Anagrams | Medium | Multiple | O(n*k log k) | O(n*k) |
 | 12 | String to Integer (atoi) | Medium | Amazon, Google, Microsoft | O(n) | O(1) |
 | 13 | Longest Repeating Char Replacement | Medium | Amazon, Google, Meta | O(n) | O(1) |
 | 14 | Minimum Window Substring | Medium | Multiple | O(n) | O(m) |
-| 15 | Palindromic Substrings | Medium | Amazon, Google, Meta | O(n²) | O(1) |
+| 15 | Palindromic Substrings | Medium | Amazon, Google, Meta | O(nÂ²) | O(1) |
 | 16 | Encode and Decode Strings | Medium | Amazon, Google, Meta | O(n) | O(n) |
 | 17 | Longest Substring with K Repeating | Medium | Amazon, Google, Microsoft | O(26n) | O(n) |
 | 18 | Letter Combinations of Phone | Medium | Amazon, Google, Meta | O(4^n) | O(n) |

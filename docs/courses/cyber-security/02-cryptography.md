@@ -1,7 +1,7 @@
-# Chapter 2: Cryptography
+﻿# Chapter 2: Cryptography
 
-> **Prereq:** Chapter 1 (Security Fundamentals) → cryptography provides the mathematical controls for achieving CIA goals.
-> **Next:** Chapter 3 (Network Security) → protocols like TLS, IPsec, and SSH depend on the primitives defined here.
+> **Prereq:** Chapter 1 (Security Fundamentals) â†’ cryptography provides the mathematical controls for achieving CIA goals.
+> **Next:** Chapter 3 (Network Security) â†’ protocols like TLS, IPsec, and SSH depend on the primitives defined here.
 
 ---
 
@@ -12,16 +12,16 @@ After completing this chapter you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/cyber-security/02-cryptography/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/cyber-security/02-cryptography/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/02-cryptography/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/cyber-security/02-cryptography/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/cyber-security/02-cryptography/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/cyber-security/02-cryptography/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/02-cryptography/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/cyber-security/02-cryptography/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/cyber-security/02-cryptography/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/cyber-security/02-cryptography/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/02-cryptography/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/cyber-security/02-cryptography/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -32,7 +32,7 @@ After completing this chapter you will be able to:
 - Explain the internal structure of AES (SubBytes, ShiftRows, MixColumns, AddRoundKey) and contrast ECB/CBC/GCM/CTR modes.
 - Describe the mathematical foundations of RSA (modular arithmetic, Euler's theorem) and ECC (elliptic curve discrete log).
 - Walk through the TLS 1.3 handshake step by step and contrast it with TLS 1.2.
-- Analyze real-world crypto attacks: Heartbleed, POODLE, SHAttered, Logjam → their root cause and fix.
+- Analyze real-world crypto attacks: Heartbleed, POODLE, SHAttered, Logjam â†’ their root cause and fix.
 - Use openssl and gpg to encrypt, sign, verify, and inspect certificates from the command line.
 - Articulate post-quantum cryptography risks and candidate algorithms (CRYSTALS-Kyber, Dilithium).
 
@@ -42,8 +42,8 @@ After completing this chapter you will be able to:
 
 | Section | Key Concept | Real-World Example |
 |---------|-------------|-------------------|
-| Symmetric Encryption | AES, ChaCha20 → single key, bulk speed | Disk encryption (BitLocker), HTTPS bulk data |
-| Asymmetric Encryption | RSA, ECC, DH → key pair, solves key distribution | TLS handshake, PGP, SSH |
+| Symmetric Encryption | AES, ChaCha20 â†’ single key, bulk speed | Disk encryption (BitLocker), HTTPS bulk data |
+| Asymmetric Encryption | RSA, ECC, DH â†’ key pair, solves key distribution | TLS handshake, PGP, SSH |
 | Hash Functions | SHA-256/3, Blake2, MD5 | File integrity, password hashing, git commits |
 | HMAC | Keyed-hash message authentication | API authentication (AWS SigV4), JWT |
 | Digital Signatures | Sign with private, verify with public | Code signing, document signing |
@@ -80,23 +80,23 @@ flowchart TD
 **Definition:** A single secret key shared between sender and receiver is used for both encryption and decryption.
 
 ```
-C = E(K, P)      Encryption: plaintext P + key K → ciphertext C
-P = D(K, C)      Decryption: ciphertext C + key K → plaintext P
+C = E(K, P)      Encryption: plaintext P + key K â†’ ciphertext C
+P = D(K, C)      Decryption: ciphertext C + key K â†’ plaintext P
 ```
 
 **Properties:**
 - Fast (hardware-accelerated on modern CPUs: AES-NI instructions)
 - Suitable for bulk data (disk, network, database encryption)
 - Key distribution problem: both parties must share the same secret key securely
-- 128-bit key = 2Â¹Â²â¸ brute-force attempts (physically impossible with current hardware)
+- 128-bit key = 2Ã‚Â¹Ã‚Â²Ã¢ÂÂ¸ brute-force attempts (physically impossible with current hardware)
 
-### 2.1.2 AES → Advanced Encryption Standard
+### 2.1.2 AES â†’ Advanced Encryption Standard
 
 
-**History:** NIST competition 1997â€“2000. Winner: Rijndael (Daemen & Rijmen). Standardized as FIPS-197.
+**History:** NIST competition 1997Ã¢â‚¬â€œ2000. Winner: Rijndael (Daemen & Rijmen). Standardized as FIPS-197.
 
 **Parameters:**
-- Block size: 128 bits (16 bytes) → always
+- Block size: 128 bits (16 bytes) â†’ always
 - Key sizes: 128, 192, 256 bits
 - Rounds: 10 (AES-128), 12 (AES-192), 14 (AES-256)
 
@@ -105,22 +105,22 @@ P = D(K, C)      Decryption: ciphertext C + key K → plaintext P
 Each round applies four transformations (except the final round which omits MixColumns):
 
 ```
-Plaintext block (16 bytes) → AddRoundKey → SubBytes → ShiftRows → MixColumns → AddRoundKey → ... → Ciphertext
+Plaintext block (16 bytes) â†’ AddRoundKey â†’ SubBytes â†’ ShiftRows â†’ MixColumns â†’ AddRoundKey â†’ ... â†’ Ciphertext
 ```
 
-**1. SubBytes → Non-linear Byte Substitution**
+**1. SubBytes â†’ Non-linear Byte Substitution**
 
-Each byte is replaced using a 16Ã—16 S-box (inverse in GF(2â¸)).
+Each byte is replaced using a 16Ãƒâ€”16 S-box (inverse in GF(2Ã¢ÂÂ¸)).
 
 ```
-Example: byte 0x53 → S-box lookup → 0xED
+Example: byte 0x53 â†’ S-box lookup â†’ 0xED
 ```
 
-The S-box is designed to resist linear and differential cryptanalysis. It is the only non-linear step → without it, AES would be a giant linear system solvable by Gaussian elimination.
+The S-box is designed to resist linear and differential cryptanalysis. It is the only non-linear step â†’ without it, AES would be a giant linear system solvable by Gaussian elimination.
 
-**2. ShiftRows → Byte Transposition**
+**2. ShiftRows â†’ Byte Transposition**
 
-Rows of the 4Ã—4 state matrix are shifted left by 0, 1, 2, 3 positions:
+Rows of the 4Ãƒâ€”4 state matrix are shifted left by 0, 1, 2, 3 positions:
 
 ```
 Row 0: no shift
@@ -131,17 +131,17 @@ Row 3: shift left 3
 
 This diffuses the column-wise mixing across rows.
 
-**3. MixColumns → Column Mixing**
+**3. MixColumns â†’ Column Mixing**
 
-Each column (4 bytes) is treated as a polynomial over GF(2â¸) and multiplied by a fixed polynomial:
+Each column (4 bytes) is treated as a polynomial over GF(2Ã¢ÂÂ¸) and multiplied by a fixed polynomial:
 
 ```
-a(x) = {03}xÂ³ + {01}xÂ² + {01}x + {02}
+a(x) = {03}xÃ‚Â³ + {01}xÃ‚Â² + {01}x + {02}
 ```
 
-This provides diffusion → changing one byte of input changes all 4 bytes of the column output.
+This provides diffusion â†’ changing one byte of input changes all 4 bytes of the column output.
 
-**4. AddRoundKey → XOR with Round Key**
+**4. AddRoundKey â†’ XOR with Round Key**
 
 The 16-byte state is XORed with the 16-byte round key derived from the key expansion schedule.
 
@@ -161,7 +161,7 @@ For i = 1 to 10:
 Where:
 - RotWord: left-rotate 4 bytes
 - SubWord: apply S-box to each byte
-- Rcon[i]: round constant (x^(i-1) in GF(2â¸))
+- Rcon[i]: round constant (x^(i-1) in GF(2Ã¢ÂÂ¸))
 
 #### Pseudocode: AES-128 Encrypt
 
@@ -192,15 +192,15 @@ We use a toy 16-byte plaintext and key (actual AES uses full 10 rounds; we trace
 **Input:** `plaintext = 6B C1 BE E2 2E 40 9F 96 E9 3D 7E 11 73 93 17 2A`
 **Key:** `2B 7E 15 16 28 AE D2 A6 AB F7 15 88 09 CF 4F 3C`
 
-**Trace Table → Step by Step:**
+**Trace Table â†’ Step by Step:**
 
-| Step | Operation | State (hex, 4Ã—4 array) | Notes |
+| Step | Operation | State (hex, 4Ãƒâ€”4 array) | Notes |
 |------|-----------|----------------------|-------|
 | Start | Input block | `[6B C1 BE E2] [2E 40 9F 96] [E9 3D 7E 11] [73 93 17 2A]` | 16 bytes arranged column-major |
 | 1 | AddRoundKey[0] | `[40 BF AB F4] [06 4D 4D 30] [C2 AD 6B 99] [7A 9C 58 16]` | XOR with first round key |
 | 2 | SubBytes | `[09 08 62 BF] [6F E3 E3 04] [25 95 7F EE] [DA DE 6A 47]` | S-box lookup per byte |
 | 3 | ShiftRows | `[09 08 62 BF] [E3 E3 04 6F] [7F EE 25 95] [47 DA DE 6A]` | Row 1 shifts 1 left, Row 2 shifts 2, Row 3 shifts 3 |
-| 4 | MixColumns | `[45 62 1A 3C] [A9 7B 4F 6E] [C1 21 D9 45] [33 D2 E1 12]` | GF(2â¸) polynomial multiplication |
+| 4 | MixColumns | `[45 62 1A 3C] [A9 7B 4F 6E] [C1 21 D9 45] [33 D2 E1 12]` | GF(2Ã¢ÂÂ¸) polynomial multiplication |
 | 5 | AddRoundKey[1] | `[6A 4B 5E 7F] [84 3A 27 8D] [FA 41 96 3B] [5A 96 7D C8]` | XOR with round key 1 |
 | ... | (rounds 2-9) | ... | Full 10-round trace omitted for space |
 | Final | AddRoundKey[10] | `[3A D7 7B B4] [0D 7A 36 60] [A8 9E CA F3] [24 66 EF 97]` | Final ciphertext |
@@ -214,7 +214,7 @@ The avalanche effect is visible: changing 1 bit of plaintext produces ~64 change
 | Key size | 128 / 192 / 256 bits | Larger key = exponential brute-force cost |
 | Rounds | 10 / 12 / 14 | More rounds = better diffusion, higher latency |
 | Block size | 128 bits | Large enough for security, small enough for efficient hardware |
-| Time complexity | O(b) → linear in block count | Each block processed independently in CTR/GCM |
+| Time complexity | O(b) â†’ linear in block count | Each block processed independently in CTR/GCM |
 | Space complexity | O(1) per block | Fixed state matrix (16 bytes) |
 | CPU cost | ~1 cycle/byte with AES-NI | Hardware acceleration on modern x86/ARM |
 
@@ -222,7 +222,7 @@ The avalanche effect is visible: changing 1 bit of plaintext produces ~64 change
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Extremely fast in hardware (AES-NI) | Block cipher → needs a mode of operation |
+| Extremely fast in hardware (AES-NI) | Block cipher â†’ needs a mode of operation |
 | NIST standard, extensively analyzed | ECB mode leaks patterns (see below) |
 | No known practical attacks on full rounds | Key must be kept secret |
 | 128-bit security adequate for decades | Side-channel vulnerable without masked implementation |
@@ -231,17 +231,17 @@ The avalanche effect is visible: changing 1 bit of plaintext produces ~64 change
 **Edge Cases:**
 - **Same key + same plaintext = same ciphertext** in ECB mode (deterministic)
 - **Padding oracle attacks** on CBC mode (see POODLE case study)
-- **Nonce reuse** in GCM is catastrophic → reveals authentication key
+- **Nonce reuse** in GCM is catastrophic â†’ reveals authentication key
 
 #### Attack Vectors on AES
 
 | Attack Type | Target | Feasibility | Mitigation |
 |-------------|--------|-------------|------------|
-| Brute-force (exhaustive key search) | All AES | 2Â¹Â²â¸ impossible with current tech | Large key size |
+| Brute-force (exhaustive key search) | All AES | 2Ã‚Â¹Ã‚Â²Ã¢ÂÂ¸ impossible with current tech | Large key size |
 | Related-key attack | AES-192/256 | Theoretical (academic papers) | Avoid related keys |
 | Side-channel (timing, cache) | Software impl. | Practical (controlled env.) | Constant-time code, masked impl. |
 | Power analysis (DPA/SPA) | Hardware impl. | Practical (smart cards) | Masking, blinding |
-| Quantum (Grover's) | AES-128 | Reduces to 2â¶â´ effort | Use AES-256 |
+| Quantum (Grover's) | AES-128 | Reduces to 2Ã¢ÂÂ¶Ã¢ÂÂ´ effort | Use AES-256 |
 | Fault injection | Hardware impl. | Practical (lab conditions) | Redundant computation |
 
 ### 2.1.3 AES Modes of Operation
@@ -257,7 +257,7 @@ AES encrypts 128-bit blocks. A mode defines how to apply the block cipher to mes
 C[i] = AES_Encrypt(K, P[i])
 ```
 
-**Analogy:** A codebook where each word maps to a fixed code word. Same input → same output.
+**Analogy:** A codebook where each word maps to a fixed code word. Same input â†’ same output.
 
 **Visual problem:** Patterns in the plaintext survive in the ciphertext. The famous "ECB penguin" image shows the Tux logo still visible after encryption because identical pixel blocks encrypt to identical ciphertext blocks.
 
@@ -268,7 +268,7 @@ C[i] = AES_Encrypt(K, P[i])
 | P[0] | `6B C1 BE E2 2E 40 9F 96 ...` | `3A D7 7B B4 0D 7A 36 60 ...` |
 | P[1] | `6B C1 BE E2 2E 40 9F 96 ...` | `3A D7 7B B4 0D 7A 36 60 ...` |
 
-Identical plaintext blocks produce identical ciphertext → the fatal flaw.
+Identical plaintext blocks produce identical ciphertext â†’ the fatal flaw.
 
 **Attack vector:** Chosen-plaintext attack. If the attacker controls part of the plaintext and observes the ciphertext, they can build a codebook. Used in cookie manipulation attacks.
 
@@ -285,7 +285,7 @@ C[i] = AES_Encrypt(K, P[i] XOR C[i-1])
 
 **Analogy:** A chain of lockboxes where each box's combination depends on the previous box's content.
 
-**IV requirement:** Must be random and unique per encryption. Same IV + same key → same ciphertext.
+**IV requirement:** Must be random and unique per encryption. Same IV + same key â†’ same ciphertext.
 
 **Trace (2 blocks with IV = `A1 B2 C3 D4 E5 F6 07 18 29 3A 4B 5C 6D 7E 8F 90`):**
 
@@ -295,7 +295,7 @@ C[i] = AES_Encrypt(K, P[i] XOR C[i-1])
 | 2 | P[1] | `73 E2 FB 85 A7 EB 50 79 17 6E C4 79 05 C7 65 3E` | `55 AA 66 BB 77 CC 88 DD 99 EE 11 FF 22 00 33 44` |
 
 **Attack vectors:**
-- **Padding oracle attack** (see POODLE case study) → if the server reveals whether padding is valid, the attacker can decrypt byte-by-byte.
+- **Padding oracle attack** (see POODLE case study) â†’ if the server reveals whether padding is valid, the attacker can decrypt byte-by-byte.
 - **IV reuse** with same key reveals whether two plaintexts start with the same block.
 
 **Verdict:** Secure when used correctly, but padding-dependent. Deprecated by GCM.
@@ -324,9 +324,9 @@ C[i] = P[i] XOR AES_Encrypt(K, Nonce || Counter_i)
 
 **Attack vectors:**
 - **Nonce reuse** is catastrophic: `C1 XOR C2 = P1 XOR P2` reveals both plaintexts.
-- **Bit-flipping** → attacker can flip plaintext bits predictably (no authentication).
+- **Bit-flipping** â†’ attacker can flip plaintext bits predictably (no authentication).
 
-**Verdict:** Fast, parallel, no padding → but requires authentication (GCM = CTR + GMAC).
+**Verdict:** Fast, parallel, no padding â†’ but requires authentication (GCM = CTR + GMAC).
 
 #### GCM (Galois/Counter Mode)
 
@@ -343,7 +343,7 @@ AuthTag = GHASH(H, AAD, C) XOR AES_Encrypt(K, Nonce || Counter_0)
 - **Authenticated encryption (AEAD):** provides both confidentiality and integrity
 - Parallel encryption (bulk of CTR)
 - Single-pass (encrypt + MAC in one pass)
-- Requires unique nonce per key → 2Â³Â² block limit per key (96-bit nonce)
+- Requires unique nonce per key â†’ 2Ã‚Â³Ã‚Â² block limit per key (96-bit nonce)
 
 **Trace (2 blocks + auth tag):**
 
@@ -355,7 +355,7 @@ AuthTag = GHASH(H, AAD, C) XOR AES_Encrypt(K, Nonce || Counter_0)
 
 **Attack vectors:**
 - **Nonce reuse** leaks the GHASH key H, allowing forgery of all subsequent messages.
-- If message length exceeds 2Â³Â² blocks (64 GB), collision probability on counter grows.
+- If message length exceeds 2Ã‚Â³Ã‚Â² blocks (64 GB), collision probability on counter grows.
 - Timing side-channel on GHASH multiplication (mitigated with CLMUL instructions).
 
 **Verdict:** The recommended mode for TLS 1.3 and most modern applications.
@@ -379,7 +379,7 @@ AuthTag = GHASH(H, AAD, C) XOR AES_Encrypt(K, Nonce || Counter_0)
 
 **History:** Designed by Daniel J. Bernstein (2008). Variant ChaCha20 (20 rounds) specified in RFC 8439. Used in TLS 1.3 cipher suites (TLS_CHACHA20_POLY1305_SHA256). Google's choice for Android HTTPS.
 
-**Analogy:** A cryptographic hash function repurposed as a stream cipher. Like a high-speed water hose → the key and nonce generate an endless stream of pseudo-random bytes that are XORed with plaintext.
+**Analogy:** A cryptographic hash function repurposed as a stream cipher. Like a high-speed water hose â†’ the key and nonce generate an endless stream of pseudo-random bytes that are XORed with plaintext.
 
 #### ChaCha20 Quarter Round
 
@@ -392,11 +392,11 @@ a += b; d ^= a; d <<<= 8
 c += d; b ^= c; b <<<= 7
 ```
 
-Each operation is: addition (mod 2Â³Â²), XOR, and rotation → all fast on 32-bit CPUs.
+Each operation is: addition (mod 2Ã‚Â³Ã‚Â²), XOR, and rotation â†’ all fast on 32-bit CPUs.
 
 #### ChaCha20 Block Function
 
-Initializes a 4Ã—4 matrix of 32-bit words:
+Initializes a 4Ãƒâ€”4 matrix of 32-bit words:
 
 ```
 "expa"   "nd 3"   "2-by"   "te k"
@@ -438,7 +438,7 @@ ChaCha20_Block(key, counter, nonce):
 
 **Setup:** Key = `00:01:02:03:04:05:06:07:08:09:0a:0b:0c:0d:0e:0f:10:11:12:13:14:15:16:17:18:19:1a:1b:1c:1d:1e:1f` (32 bytes), Nonce = `00:00:00:00:00:00:00:4a:00:00:00:00`, Counter = 1.
 
-**Initial state matrix (16 Ã— 32-bit words):**
+**Initial state matrix (16 Ãƒâ€” 32-bit words):**
 
 | Index | 0 | 1 | 2 | 3 |
 |-------|---|---|---|---|
@@ -473,7 +473,7 @@ Each byte of plaintext is XORed with the corresponding keystream byte:
 C[i] = P[i] XOR Keystream[i]
 ```
 
-If the message is "Hello ChaCha!" (12 bytes), the first 12 keystream bytes are XORed and the rest of the keystream block is discarded → next message block uses counter = 2.
+If the message is "Hello ChaCha!" (12 bytes), the first 12 keystream bytes are XORed and the rest of the keystream block is discarded â†’ next message block uses counter = 2.
 
 #### Complexity Analysis
 
@@ -492,7 +492,7 @@ If the message is "Hello ChaCha!" (12 bytes), the first 12 keystream bytes are X
 
 **Attack Vectors:**
 - **Nonce reuse:** same catastrophic risk as CTR/GCM (XOR reveals keystream)
-- **Reduced-round variants:** 7 rounds broken, 8 rounds has theoretical attack → 20 rounds is safe
+- **Reduced-round variants:** 7 rounds broken, 8 rounds has theoretical attack â†’ 20 rounds is safe
 - **Side-channel:** power analysis on the addition operation (impractical for software)
 
 ### 2.1.5 Symmetric Encryption Summary
@@ -517,76 +517,76 @@ Cryptography is built on a few core mathematical concepts. Understanding these f
 
 **Definition:** `a mod n` is the remainder when a is divided by n. Example: `17 mod 5 = 2`.
 
-**Congruence:** `a â‰¡ b (mod n)` means a and b have the same remainder when divided by n. Example: `17 â‰¡ 2 (mod 5)`.
+**Congruence:** `a Ã¢â€°Â¡ b (mod n)` means a and b have the same remainder when divided by n. Example: `17 Ã¢â€°Â¡ 2 (mod 5)`.
 
 **Properties:**
 - `(a + b) mod n = ((a mod n) + (b mod n)) mod n`
-- `(a Ã— b) mod n = ((a mod n) Ã— (b mod n)) mod n`
+- `(a Ãƒâ€” b) mod n = ((a mod n) Ãƒâ€” (b mod n)) mod n`
 - `(a^b) mod n = ((a mod n)^b) mod n`
 
-**Why it matters:** AES uses GF(2â¸) arithmetic (a finite field with 256 elements) for MixColumns. RSA uses modular exponentiation. Diffie-Hellman uses modular exponentiation in a prime field.
+**Why it matters:** AES uses GF(2Ã¢ÂÂ¸) arithmetic (a finite field with 256 elements) for MixColumns. RSA uses modular exponentiation. Diffie-Hellman uses modular exponentiation in a prime field.
 
 ### Euler's Theorem
 
 
-**Totient function Ï†(n):** Count of integers between 1 and n that are coprime to n.
-- If n = p (prime), Ï†(p) = p - 1
-- If n = p Ã— q, Ï†(n) = (p-1)(q-1)
+**Totient function Ãâ€ (n):** Count of integers between 1 and n that are coprime to n.
+- If n = p (prime), Ãâ€ (p) = p - 1
+- If n = p Ãƒâ€” q, Ãâ€ (n) = (p-1)(q-1)
 
-**Euler's theorem:** If gcd(a, n) = 1, then `a^Ï†(n) â‰¡ 1 (mod n)`.
+**Euler's theorem:** If gcd(a, n) = 1, then `a^Ãâ€ (n) Ã¢â€°Â¡ 1 (mod n)`.
 
-**Why it matters:** RSA encryption/decryption works because `m^(ed) mod n = m` when `ed â‰¡ 1 mod Ï†(n)`. The theorem guarantees that encryption and decryption are inverses.
+**Why it matters:** RSA encryption/decryption works because `m^(ed) mod n = m` when `ed Ã¢â€°Â¡ 1 mod Ãâ€ (n)`. The theorem guarantees that encryption and decryption are inverses.
 
 ### Extended Euclidean Algorithm
 
 
-Finds integers x and y such that `ax + ny = gcd(a, n)`. When gcd(a, n) = 1, x is the modular inverse of a: `ax â‰¡ 1 (mod n)`.
+Finds integers x and y such that `ax + ny = gcd(a, n)`. When gcd(a, n) = 1, x is the modular inverse of a: `ax Ã¢â€°Â¡ 1 (mod n)`.
 
 **Example:** Find `17^(-1) mod 3120`:
 ```
-3120 = 183 Ã— 17 + 9      → 9 = 3120 - 183Ã—17
-17 = 1 Ã— 9 + 8           → 8 = 17 - 1Ã—9
-9 = 1 Ã— 8 + 1            → 1 = 9 - 1Ã—8
+3120 = 183 Ãƒâ€” 17 + 9      â†’ 9 = 3120 - 183Ãƒâ€”17
+17 = 1 Ãƒâ€” 9 + 8           â†’ 8 = 17 - 1Ãƒâ€”9
+9 = 1 Ãƒâ€” 8 + 1            â†’ 1 = 9 - 1Ãƒâ€”8
 
 Back-substitute:
-1 = 9 - (17 - 9) = 2Ã—9 - 17
-  = 2Ã—(3120 - 183Ã—17) - 17
-  = 2Ã—3120 - 367Ã—17
-  = -367 Ã— 17 (mod 3120)
-  = 2753 Ã— 17 (mod 3120)
+1 = 9 - (17 - 9) = 2Ãƒâ€”9 - 17
+  = 2Ãƒâ€”(3120 - 183Ãƒâ€”17) - 17
+  = 2Ãƒâ€”3120 - 367Ãƒâ€”17
+  = -367 Ãƒâ€” 17 (mod 3120)
+  = 2753 Ãƒâ€” 17 (mod 3120)
 ```
 
-Therefore `17 Ã— 2753 = 46801 = 1 + 15Ã—3120`, so `17^(-1) mod 3120 = 2753`. This is exactly the RSA dry run above.
+Therefore `17 Ãƒâ€” 2753 = 46801 = 1 + 15Ãƒâ€”3120`, so `17^(-1) mod 3120 = 2753`. This is exactly the RSA dry run above.
 
 ### Discrete Logarithm Problem
 
 
-Given `g` and `g^a mod p`, find `a`. For large prime p (â‰¥2048 bits), no efficient algorithm exists.
+Given `g` and `g^a mod p`, find `a`. For large prime p (Ã¢â€°Â¥2048 bits), no efficient algorithm exists.
 
-**Why it matters:** Security of Diffie-Hellman and DSA depends on this. The RSA equivalent is the factoring problem (given n = pÃ—q, find p and q). Both are believed to be hard for classical computers.
+**Why it matters:** Security of Diffie-Hellman and DSA depends on this. The RSA equivalent is the factoring problem (given n = pÃƒâ€”q, find p and q). Both are believed to be hard for classical computers.
 
 ### Elliptic Curve Discrete Logarithm (ECDLP)
 
 
 Given points `P` and `kP` on an elliptic curve, find `k`. This is believed to be HARDER than integer factorization for equivalent key sizes.
 
-**Why it matters:** Security of ECDH, ECDSA, Ed25519. A 256-bit ECC key â‰ˆ 3072-bit RSA key for equivalent security.
+**Why it matters:** Security of ECDH, ECDSA, Ed25519. A 256-bit ECC key Ã¢â€°Ë† 3072-bit RSA key for equivalent security.
 
 ### Finite Fields (Galois Fields)
 
 
-A finite field `GF(p)` contains p elements with addition and multiplication defined modulo p. `GF(2â¸)` is the field with 256 elements used in AES.
+A finite field `GF(p)` contains p elements with addition and multiplication defined modulo p. `GF(2Ã¢ÂÂ¸)` is the field with 256 elements used in AES.
 
-**AES MixColumns** treats each byte as an element of GF(2â¸) with the irreducible polynomial `xâ¸ + xâ´ + xÂ³ + x + 1`. Multiplication is defined as polynomial multiplication followed by reduction modulo this polynomial.
+**AES MixColumns** treats each byte as an element of GF(2Ã¢ÂÂ¸) with the irreducible polynomial `xÃ¢ÂÂ¸ + xÃ¢ÂÂ´ + xÃ‚Â³ + x + 1`. Multiplication is defined as polynomial multiplication followed by reduction modulo this polynomial.
 
 **Why it matters:** Finite fields provide the algebraic structure needed for the non-linearity and diffusion in AES and the group operations in ECC.
 
 ### Hash Function Security Foundations
 
 
-**Birthday paradox:** With `âˆš(2^n)` â‰ˆ `2^(n/2)` random samples from an n-bit space, probability of collision exceeds 50%.
+**Birthday paradox:** With `Ã¢Ë†Å¡(2^n)` Ã¢â€°Ë† `2^(n/2)` random samples from an n-bit space, probability of collision exceeds 50%.
 
-**Implication:** An n-bit hash provides only `2^(n/2)` collision resistance. SHA-256 (256-bit) = 2Â¹Â²â¸ collision resistance. This is why hash outputs must be twice the desired security level.
+**Implication:** An n-bit hash provides only `2^(n/2)` collision resistance. SHA-256 (256-bit) = 2Ã‚Â¹Ã‚Â²Ã¢ÂÂ¸ collision resistance. This is why hash outputs must be twice the desired security level.
 
 ---
 
@@ -597,11 +597,11 @@ A finite field `GF(p)` contains p elements with addition and multiplication defi
 
 **Analogy:** A public mail slot. Anyone can drop a letter through the slot (encrypt with public key), but only the person with the key to the door (private key) can open it and read the letters. Conversely, the owner can sign a document with their private key (press their ring into wax), and anyone can verify the signature with the public key.
 
-**Definition:** Uses a mathematically linked key pair (public, private). One key encrypts, the other decrypts → and the private key cannot be derived from the public key (assumption of computational hardness).
+**Definition:** Uses a mathematically linked key pair (public, private). One key encrypts, the other decrypts â†’ and the private key cannot be derived from the public key (assumption of computational hardness).
 
 **Why it matters:** Solves the key distribution problem. Alice doesn't need a pre-shared secret with Bob to send him an encrypted message. She just needs his public key, which can be transmitted in the clear.
 
-### 2.2.2 RSA (Rivestâ€“Shamirâ€“Adleman)
+### 2.2.2 RSA (RivestÃ¢â‚¬â€œShamirÃ¢â‚¬â€œAdleman)
 
 
 **Mathematical Foundation:** Based on the practical difficulty of factoring the product of two large prime numbers.
@@ -613,28 +613,28 @@ c = m^e mod n   (encryption)
 m = c^d mod n   (decryption)
 ```
 
-The relationship `m^(ed) â‰¡ m (mod n)` holds because of Euler's theorem: `m^(Ï†(n)+1) â‰¡ m (mod n)` where `Ï†(n) = (p-1)(q-1)`, and `ed â‰¡ 1 (mod Ï†(n))`.
+The relationship `m^(ed) Ã¢â€°Â¡ m (mod n)` holds because of Euler's theorem: `m^(Ãâ€ (n)+1) Ã¢â€°Â¡ m (mod n)` where `Ãâ€ (n) = (p-1)(q-1)`, and `ed Ã¢â€°Â¡ 1 (mod Ãâ€ (n))`.
 
-#### RSA Key Generation → Numbered Steps
+#### RSA Key Generation â†’ Numbered Steps
 
 ```
 1.  Choose two large primes, p and q (at least 1024 bits each for 2048-bit RSA)
-2.  Compute n = p Ã— q               (modulus for public and private keys)
-3.  Compute Ï†(n) = (p-1)(q-1)       (Euler's totient)
+2.  Compute n = p Ãƒâ€” q               (modulus for public and private keys)
+3.  Compute Ãâ€ (n) = (p-1)(q-1)       (Euler's totient)
 4.  Choose public exponent e such that:
-    - 1 < e < Ï†(n)
-    - gcd(e, Ï†(n)) = 1             (co-prime with Ï†(n))
-    - Common choice: e = 65537 (0x10001) → Fermat prime, fast exponentiation
+    - 1 < e < Ãâ€ (n)
+    - gcd(e, Ãâ€ (n)) = 1             (co-prime with Ãâ€ (n))
+    - Common choice: e = 65537 (0x10001) â†’ Fermat prime, fast exponentiation
 5.  Compute private exponent d:
-    d = e^(-1) mod Ï†(n)            (modular multiplicative inverse using Extended Euclidean Algorithm)
+    d = e^(-1) mod Ãâ€ (n)            (modular multiplicative inverse using Extended Euclidean Algorithm)
 6.  Public key:  (n, e)
-    Private key: (n, d)            (keep p, q, Ï†(n) secret or discard)
+    Private key: (n, d)            (keep p, q, Ãâ€ (n) secret or discard)
 ```
 
 #### RSA Encryption
 
 ```
-1.  Represent message as integer m where 0 â‰¤ m < n
+1.  Represent message as integer m where 0 Ã¢â€°Â¤ m < n
 2.  Compute ciphertext: c = m^e mod n   (modular exponentiation)
 3.  Transmit c
 ```
@@ -676,15 +676,15 @@ RSA_Verify(m, sig, PublicKey(n, e)):
 
 #### Dry Run: RSA with Toy Numbers
 
-Let `p = 61`, `q = 53` (tiny → insecure, but illustrates the math).
+Let `p = 61`, `q = 53` (tiny â†’ insecure, but illustrates the math).
 
 | Step | Operation | Value | Notes |
 |------|-----------|-------|-------|
 | 1 | Choose p, q | p = 61, q = 53 | Two distinct primes |
-| 2 | n = p Ã— q | n = 3233 | Modulus length: 12 bits |
-| 3 | Ï†(n) = (p-1)(q-1) | Ï† = 60 Ã— 52 = 3120 | Euler's totient |
-| 4 | Choose e | e = 17 | gcd(17, 3120) = 1 âœ“ |
-| 5 | d = e^(-1) mod Ï†(n) | d = 2753 | 17 Ã— 2753 = 46801 = 15Ã—3120 + 1 |
+| 2 | n = p Ãƒâ€” q | n = 3233 | Modulus length: 12 bits |
+| 3 | Ãâ€ (n) = (p-1)(q-1) | Ãâ€  = 60 Ãƒâ€” 52 = 3120 | Euler's totient |
+| 4 | Choose e | e = 17 | gcd(17, 3120) = 1 Ã¢Å“â€œ |
+| 5 | d = e^(-1) mod Ãâ€ (n) | d = 2753 | 17 Ãƒâ€” 2753 = 46801 = 15Ãƒâ€”3120 + 1 |
 | 6 | Public key | (n=3233, e=17) | Share freely |
 | 7 | Private key | (n=3233, d=2753) | Keep secret |
 
@@ -693,7 +693,7 @@ Let `p = 61`, `q = 53` (tiny → insecure, but illustrates the math).
 | Step | Operation | Value |
 |------|-----------|-------|
 | 1 | m | 65 |
-| 2 | c = 65Â¹â· mod 3233 | c = 2790 |
+| 2 | c = 65Ã‚Â¹Ã¢ÂÂ· mod 3233 | c = 2790 |
 | 3 | Transmit c | 2790 |
 
 **Decryption:**
@@ -701,30 +701,30 @@ Let `p = 61`, `q = 53` (tiny → insecure, but illustrates the math).
 | Step | Operation | Value |
 |------|-----------|-------|
 | 1 | Receive c | 2790 |
-| 2 | m = 2790Â²â·âµÂ³ mod 3233 | m = 65 |
-| 3 | Recovered | 65 = 'A' âœ“ |
+| 2 | m = 2790Ã‚Â²Ã¢ÂÂ·Ã¢ÂÂµÃ‚Â³ mod 3233 | m = 65 |
+| 3 | Recovered | 65 = 'A' Ã¢Å“â€œ |
 
 **Signature:** hash(m) = 42 (toy hash):
 
 | Step | Operation | Value |
 |------|-----------|-------|
-| 1 | sig = 42Â²â·âµÂ³ mod 3233 | sig = 2557 |
-| 2 | Verify: 2557Â¹â· mod 3233 | = 42 âœ“ |
+| 1 | sig = 42Ã‚Â²Ã¢ÂÂ·Ã¢ÂÂµÃ‚Â³ mod 3233 | sig = 2557 |
+| 2 | Verify: 2557Ã‚Â¹Ã¢ÂÂ· mod 3233 | = 42 Ã¢Å“â€œ |
 
 #### Complexity Analysis
 
 | Operation | Time Complexity | Why |
 |-----------|----------------|-----|
-| Key generation | O(bÂ³) | Finding primes + Extended Euclidean (b = bit length) |
-| Encryption | O(bÂ²) or O(bÂ³) | Modular exponentiation (exponent e = 65537, sparse) |
-| Decryption | O(bÂ³) | Modular exponentiation (exponent d is full size) |
-| Signing | O(bÂ³) | Same as decryption (d is full size) |
-| Verification | O(bÂ²) | Same as encryption (e = 65537) |
+| Key generation | O(bÃ‚Â³) | Finding primes + Extended Euclidean (b = bit length) |
+| Encryption | O(bÃ‚Â²) or O(bÃ‚Â³) | Modular exponentiation (exponent e = 65537, sparse) |
+| Decryption | O(bÃ‚Â³) | Modular exponentiation (exponent d is full size) |
+| Signing | O(bÃ‚Â³) | Same as decryption (d is full size) |
+| Verification | O(bÃ‚Â²) | Same as encryption (e = 65537) |
 
 **Why RSA is slow:**
 - Modular exponentiation with 2048-bit numbers requires millions of multiplications
 - Private key operations use exponent d which is full modulus size
-- Chinese Remainder Theorem (CRT) speeds decryption ~4Ã— by splitting mod p and mod q
+- Chinese Remainder Theorem (CRT) speeds decryption ~4Ãƒâ€” by splitting mod p and mod q
 
 **Security vs key size:**
 - 1024-bit RSA: broken by nation-states (factored by 2020 according to NIST)
@@ -735,14 +735,14 @@ Let `p = 61`, `q = 53` (tiny → insecure, but illustrates the math).
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Well-studied, decades of analysis | Slow → especially private key ops |
-| Widely supported in all crypto libraries | Large key sizes (2048â€“4096 bits) |
+| Well-studied, decades of analysis | Slow â†’ especially private key ops |
+| Widely supported in all crypto libraries | Large key sizes (2048Ã¢â‚¬â€œ4096 bits) |
 | Can do both encryption and signatures | Not quantum-resistant (Shor's algorithm) |
 | Simple mathematics (modular exponentiation) | Key generation is slow (needs primality testing) |
 | OAEP padding provides semantic security | Plain PKCS#1 v1.5 padding is vulnerable (Bleichenbacher) |
 
 **Edge Cases:**
-- **m â‰¥ n:** message must be smaller than the modulus. Solution: hybrid encryption (encrypt symmetric key with RSA, data with AES).
+- **m Ã¢â€°Â¥ n:** message must be smaller than the modulus. Solution: hybrid encryption (encrypt symmetric key with RSA, data with AES).
 - **e too small (e=3):** Coppersmith's attack can recover small messages without padding. Always use e=65537.
 - **Shared n:** if two keys share the same n, each knows the other's private key.
 - **p and q too close:** Fermat factorization can recover them.
@@ -751,7 +751,7 @@ Let `p = 61`, `q = 53` (tiny → insecure, but illustrates the math).
 
 | Attack | Target | Feasibility | Mitigation |
 |--------|--------|-------------|------------|
-| Factoring (GNFS) | 1024-bit n | Possible for nation-states | Use â‰¥2048-bit keys |
+| Factoring (GNFS) | 1024-bit n | Possible for nation-states | Use Ã¢â€°Â¥2048-bit keys |
 | Misuse of padding | PKCS#1 v1.5 | Practical (Bleichenbacher 1998) | Use OAEP (RSA-OAEP) |
 | Side-channel (timing) | Private key d | Practical (Kocher 1996) | Constant-time exponentiation |
 | Side-channel (power) | Smart card ops | Practical, requires proximity | Blinding |
@@ -767,7 +767,7 @@ Let `p = 61`, `q = 53` (tiny → insecure, but illustrates the math).
 
 **Mathematical Foundation:** Discrete logarithm problem in a finite cyclic group. Given `g^a mod p`, it is computationally infeasible to find `a` (for large prime `p`).
 
-**Analogy:** Two people mixing paint. Alice and Bob each have a secret color. They mix their secret with a shared public base color and send the mixture to each other. Each then adds their own secret color → both end up with the same final color, but an eavesdropper cannot recover it.
+**Analogy:** Two people mixing paint. Alice and Bob each have a secret color. They mix their secret with a shared public base color and send the mixture to each other. Each then adds their own secret color â†’ both end up with the same final color, but an eavesdropper cannot recover it.
 
 #### Diffie-Hellman Steps
 
@@ -779,11 +779,11 @@ Public parameters (known to all):
 Alice:                              Bob:
 1.  Choose private a (random)       1.  Choose private b (random)
 2.  Compute A = g^a mod p           2.  Compute B = g^b mod p
-3.  Send A to Bob  ──────A──────>   3.  Send B to Alice  <──────B──────
+3.  Send A to Bob  â”€â”€â”€â”€â”€â”€Aâ”€â”€â”€â”€â”€â”€>   3.  Send B to Alice  <â”€â”€â”€â”€â”€â”€Bâ”€â”€â”€â”€â”€â”€
 4.  Compute s = B^a mod p           4.  Compute s = A^b mod p
 
 Result: s = B^a = (g^b)^a = g^(ab) = (g^a)^b = A^b mod p
-        └────────────────────── Shared secret s ──────────────────────┘
+        â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ Shared secret s â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 #### Dry Run: Diffie-Hellman with Toy Numbers
@@ -795,23 +795,23 @@ Public: p = 23, g = 5
 | Step | Alice | Value | Bob | Value |
 |------|-------|-------|-----|-------|
 | 1 | Choose a | a = 6 | Choose b | b = 15 |
-| 2 | Compute A | A = 5â¶ mod 23 = 15625 mod 23 = 8 | Compute B | B = 5Â¹âµ mod 23 = 30517578125 mod 23 = 19 |
-| 3 | Send A | → 8 → | Send B | ← 19 ← |
-| 4 | Compute s | s = 19â¶ mod 23 = 47045881 mod 23 = 2 | Compute s | s = 8Â¹âµ mod 23 = 35184372088832 mod 23 = 2 |
+| 2 | Compute A | A = 5Ã¢ÂÂ¶ mod 23 = 15625 mod 23 = 8 | Compute B | B = 5Ã‚Â¹Ã¢ÂÂµ mod 23 = 30517578125 mod 23 = 19 |
+| 3 | Send A | â†’ 8 â†’ | Send B | â† 19 â† |
+| 4 | Compute s | s = 19Ã¢ÂÂ¶ mod 23 = 47045881 mod 23 = 2 | Compute s | s = 8Ã‚Â¹Ã¢ÂÂµ mod 23 = 35184372088832 mod 23 = 2 |
 
 **Shared secret s = 2.** Alice and Bob both computed 2. Eve, who only sees p=23, g=5, A=8, B=19, cannot compute s without solving the discrete log.
 
-**Security analysis of this toy:** Trivial to break (p is only 23). Real DH uses p â‰¥ 2048 bits.
+**Security analysis of this toy:** Trivial to break (p is only 23). Real DH uses p Ã¢â€°Â¥ 2048 bits.
 
 #### Attack Vectors on Diffie-Hellman
 
 | Attack | Target | Feasibility | Mitigation |
 |--------|--------|-------------|------------|
-| Discrete log (Index Calculus) | p &lt; 1024 bits | Practical for nation-states | Use â‰¥2048-bit p |
+| Discrete log (Index Calculus) | p &lt; 1024 bits | Practical for nation-states | Use Ã¢â€°Â¥2048-bit p |
 | Logjam (CVE-2015-4000) | DHE_EXPORT (512-bit) | Practical (see case study) | Disable export-grade ciphers |
 | Man-in-the-middle | Unauthenticated DH | Trivial | Authenticate with signatures (ECDHE) |
 | Small subgroup confinement | Non-prime-order group | Practical | Use safe primes, check subgroup |
-| SNIFF (passive) | 768-bit DH | NSA-level capability | Use â‰¥2048-bit or ECDH |
+| SNIFF (passive) | 768-bit DH | NSA-level capability | Use Ã¢â€°Â¥2048-bit or ECDH |
 
 ### 2.2.4 Elliptic Curve Cryptography (ECC)
 
@@ -820,7 +820,7 @@ Public: p = 23, g = 5
 
 **Elliptic curve equation (Weierstrass form):**
 ```
-yÂ² = xÂ³ + ax + b   (with 4aÂ³ + 27bÂ² â‰  0)
+yÃ‚Â² = xÃ‚Â³ + ax + b   (with 4aÃ‚Â³ + 27bÃ‚Â² Ã¢â€°Â  0)
 ```
 
 **Point addition:** For points P and Q on the curve, draw line PQ; intersection with curve; reflect across x-axis = P+Q.
@@ -839,9 +839,9 @@ yÂ² = xÂ³ + ax + b   (with 4aÂ³ + 27bÂ² â‰  0)
 
 #### ECDH Key Exchange
 
-**Elliptic Curve Diffie-Hellman** → DH variant using elliptic curve scalar multiplication instead of modular exponentiation.
+**Elliptic Curve Diffie-Hellman** â†’ DH variant using elliptic curve scalar multiplication instead of modular exponentiation.
 
-Common curve: Curve25519 (X25519) → Bernstein's curve designed for constant-time implementation. Also: P-256 (secp256r1), P-384.
+Common curve: Curve25519 (X25519) â†’ Bernstein's curve designed for constant-time implementation. Also: P-256 (secp256r1), P-384.
 
 ```
 Domain parameters: Curve (a, b, G, n) where G is base point, n is order
@@ -852,7 +852,7 @@ Alice:                              Bob:
 3.  Send A to Bob                   3.  Send B to Alice
 4.  Compute s = aB = a(bG)          4.  Compute s = bA = b(aG)
 
-s = abG → shared secret (x-coordinate used as key)
+s = abG â†’ shared secret (x-coordinate used as key)
 ```
 
 **Trace (simplified):**
@@ -865,12 +865,12 @@ s = abG → shared secret (x-coordinate used as key)
 
 #### ECDSA Signatures
 
-ECDSA (Elliptic Curve Digital Signature Algorithm) → sign with private key, verify with public key.
+ECDSA (Elliptic Curve Digital Signature Algorithm) â†’ sign with private key, verify with public key.
 
 **Signing (Alice):**
 ```
 1.  Compute e = HASH(message)                    // hash to integer
-2.  Choose random k in [1, n-1]                  // nonce → MUST be unique per signature
+2.  Choose random k in [1, n-1]                  // nonce â†’ MUST be unique per signature
 3.  Compute R = kG, r = x-coordinate(R) mod n
 4.  Compute s = k^(-1)(e + r * d_Alice) mod n
 5.  Signature = (r, s)
@@ -885,17 +885,17 @@ ECDSA (Elliptic Curve Digital Signature Algorithm) → sign with private key, ve
 5.  Valid if r == x-coordinate(R') mod n
 ```
 
-**Critical requirement:** k must be unique and random. In 2010, Sony used the same k to sign PS3 firmware → attackers recovered the private key. In 2013, Android Bitcoin wallets using biased k allowed private key recovery.
+**Critical requirement:** k must be unique and random. In 2010, Sony used the same k to sign PS3 firmware â†’ attackers recovered the private key. In 2013, Android Bitcoin wallets using biased k allowed private key recovery.
 
 #### Complexity Analysis of ECC
 
 | Operation | Time Complexity | Why |
 |-----------|----------------|-----|
-| Scalar mult (keygen) | O(bÂ²) | Double-and-add with modular arithmetic |
-| ECDH shared secret | O(bÂ²) | One scalar multiplication |
-| ECDSA sign | O(bÂ²) | One scalar mult + modular inverse |
-| ECDSA verify | O(bÂ²) | Two scalar mults (double the cost of sign) |
-| Key size | 256-bit = 128-bit security | Smaller than RSA by 10-12Ã— |
+| Scalar mult (keygen) | O(bÃ‚Â²) | Double-and-add with modular arithmetic |
+| ECDH shared secret | O(bÃ‚Â²) | One scalar multiplication |
+| ECDSA sign | O(bÃ‚Â²) | One scalar mult + modular inverse |
+| ECDSA verify | O(bÃ‚Â²) | Two scalar mults (double the cost of sign) |
+| Key size | 256-bit = 128-bit security | Smaller than RSA by 10-12Ãƒâ€” |
 
 **Comparisons:**
 
@@ -911,7 +911,7 @@ ECDSA (Elliptic Curve Digital Signature Algorithm) → sign with private key, ve
 
 | Attack | Target | Feasibility | Mitigation |
 |--------|--------|-------------|------------|
-| ECDLP (Pollard rho) | All curves | 2Â¹Â²â¸ for P-256 | Use â‰¥256-bit curves |
+| ECDLP (Pollard rho) | All curves | 2Ã‚Â¹Ã‚Â²Ã¢ÂÂ¸ for P-256 | Use Ã¢â€°Â¥256-bit curves |
 | Invalid curve attack | ECDH | Practical (no point validation) | Validate received points are on curve |
 | Nonce reuse (k) | ECDSA | Practical (leaks private key) | Deterministic ECDSA (RFC 6979) |
 | Side-channel (timing) | Scalar mult | Practical | Use constant-time curves (Curve25519) |
@@ -941,7 +941,7 @@ ECDSA (Elliptic Curve Digital Signature Algorithm) → sign with private key, ve
 A cryptographic hash function H maps an arbitrary-length input to a fixed-length output.
 
 ```
-H: {0,1}* → {0,1}^n
+H: {0,1}* â†’ {0,1}^n
 ```
 
 **Three core security properties:**
@@ -949,8 +949,8 @@ H: {0,1}* → {0,1}^n
 | Property | Definition | Violation Consequence |
 |----------|------------|----------------------|
 | **Pre-image resistance (one-way)** | Given hash h, computationally infeasible to find any m such that H(m) = h | Attacker reverses password hashes |
-| **Second pre-image resistance** | Given mâ‚, computationally infeasible to find mâ‚‚ â‰  mâ‚ such that H(mâ‚‚) = H(mâ‚) | Attacker replaces signed document |
-| **Collision resistance** | Computationally infeasible to find any mâ‚ â‰  mâ‚‚ such that H(mâ‚) = H(mâ‚‚) | Attacker creates two contracts with same hash |
+| **Second pre-image resistance** | Given mÃ¢â€šÂ, computationally infeasible to find mÃ¢â€šâ€š Ã¢â€°Â  mÃ¢â€šÂ such that H(mÃ¢â€šâ€š) = H(mÃ¢â€šÂ) | Attacker replaces signed document |
+| **Collision resistance** | Computationally infeasible to find any mÃ¢â€šÂ Ã¢â€°Â  mÃ¢â€šâ€š such that H(mÃ¢â€šÂ) = H(mÃ¢â€šâ€š) | Attacker creates two contracts with same hash |
 
 **Additional properties:**
 - **Deterministic:** Same input always produces the same output
@@ -965,25 +965,25 @@ H: {0,1}* → {0,1}^n
 
 **Standard:** FIPS 180-4. Output: 256 bits (32 bytes). Part of the SHA-2 family (SHA-224, SHA-256, SHA-384, SHA-512).
 
-**Internal structure:** Merkleâ€“DamgÃ¥rd construction with Daviesâ€“Meyer compression function.
+**Internal structure:** MerkleÃ¢â‚¬â€œDamgÃƒÂ¥rd construction with DaviesÃ¢â‚¬â€œMeyer compression function.
 
 **Steps (simplified):**
 ```
 1.  Pad message to multiple of 512 bits (append 1 bit, zeros, 64-bit length)
-2.  Initialize 8 state variables Hâ‚€-Hâ‚‡ with fixed constants
+2.  Initialize 8 state variables HÃ¢â€šâ‚¬-HÃ¢â€šâ€¡ with fixed constants
 3.  For each 512-bit message block:
-    a.  Expand 16 words → 64 words (message schedule)
+    a.  Expand 16 words â†’ 64 words (message schedule)
     b.  Initialize working variables a-h from state
     c.  For round 0..63:
-        Î£0 = ROTRÂ²(a) âŠ• ROTRÂ¹Â³(a) âŠ• ROTRÂ²Â²(a)
-        Î£1 = ROTRâ¶(e) âŠ• ROTRÂ¹Â¹(e) âŠ• ROTRÂ²âµ(e)
-        Ch = (e âˆ§ f) âŠ• (Â¬e âˆ§ g)
-        Maj = (a âˆ§ b) âŠ• (a âˆ§ c) âŠ• (b âˆ§ c)
-        t1 = h + Î£1 + Ch + K[round] + W[round]
-        t2 = Î£0 + Maj
+        ÃŽÂ£0 = ROTRÃ‚Â²(a) Ã¢Å â€¢ ROTRÃ‚Â¹Ã‚Â³(a) Ã¢Å â€¢ ROTRÃ‚Â²Ã‚Â²(a)
+        ÃŽÂ£1 = ROTRÃ¢ÂÂ¶(e) Ã¢Å â€¢ ROTRÃ‚Â¹Ã‚Â¹(e) Ã¢Å â€¢ ROTRÃ‚Â²Ã¢ÂÂµ(e)
+        Ch = (e Ã¢Ë†Â§ f) Ã¢Å â€¢ (Ã‚Â¬e Ã¢Ë†Â§ g)
+        Maj = (a Ã¢Ë†Â§ b) Ã¢Å â€¢ (a Ã¢Ë†Â§ c) Ã¢Å â€¢ (b Ã¢Ë†Â§ c)
+        t1 = h + ÃŽÂ£1 + Ch + K[round] + W[round]
+        t2 = ÃŽÂ£0 + Maj
         h = g; g = f; f = e; e = d + t1; d = c; c = b; b = a; a = t1 + t2
-    d.  Update state: Hâ‚€ += a, Hâ‚ += b, ..., Hâ‚‡ += h
-4.  Output concatenation of Hâ‚€-Hâ‚‡ (32 bytes)
+    d.  Update state: HÃ¢â€šâ‚¬ += a, HÃ¢â€šÂ += b, ..., HÃ¢â€šâ€¡ += h
+4.  Output concatenation of HÃ¢â€šâ‚¬-HÃ¢â€šâ€¡ (32 bytes)
 ```
 
 **Dry Run: SHA-256 of "abc"**
@@ -995,7 +995,7 @@ Input: ASCII "abc" (3 bytes = 24 bits).
 | Message (hex) | `61 62 63` |
 | After padding (512-bit block) | `61 62 63 80 00 00 ... 00 00 00 18` |
 | Block count | 1 block |
-| Hâ‚€ initial | `6a09e667` |
+| HÃ¢â€šâ‚¬ initial | `6a09e667` |
 | Output | `ba7816bf 8f01cfea 414140de 5dae2223 b00361a3 96177a9c b410ff61 f20015ad` |
 
 (Verifiable with `echo -n abc | sha256sum`)
@@ -1004,7 +1004,7 @@ Input: ASCII "abc" (3 bytes = 24 bits).
 
 | Factor | Value | Why |
 |--------|-------|-----|
-| Output size | 256 bits | 2Â¹Â²â¸ collision resistance (birthday bound) |
+| Output size | 256 bits | 2Ã‚Â¹Ã‚Â²Ã¢ÂÂ¸ collision resistance (birthday bound) |
 | Rounds per block | 64 | Sufficient diffusion for 512-bit block |
 | Step operations | ROTR, XOR, AND, ADD | Fast in hardware and software |
 | Throughput | ~150-250 MB/s (modern CPU) | Software-optimized |
@@ -1014,7 +1014,7 @@ Input: ASCII "abc" (3 bytes = 24 bits).
 
 **Standard:** FIPS 202. Winner of NIST hash competition (2012).
 
-**Internal structure:** Sponge construction → absorbs input, squeezes output. Not based on Merkleâ€“DamgÃ¥rd.
+**Internal structure:** Sponge construction â†’ absorbs input, squeezes output. Not based on MerkleÃ¢â‚¬â€œDamgÃƒÂ¥rd.
 
 **Key differences from SHA-2:**
 - No length extension attack vulnerability (inherent to sponge)
@@ -1045,14 +1045,14 @@ Input: ASCII "abc" (3 bytes = 24 bits).
 
 **Performance:**
 - BLAKE2b: ~1 GB/s on modern CPUs
-- Faster than SHA-256 by 1.5-3Ã— in software
+- Faster than SHA-256 by 1.5-3Ãƒâ€” in software
 
 **Used in:** Zcash, Argon2 (password hashing winner), WireGuard VPN, RAR archives.
 
 ### 2.3.5 MD5 Collision Risk
 
 
-**Status:** Broken. Cryptanalytic collision attack demonstrated in 2004 (Wang et al.). Practical collision in 2008 (CLé›†å›¢ fireworks).
+**Status:** Broken. Cryptanalytic collision attack demonstrated in 2004 (Wang et al.). Practical collision in 2008 (CLÃ©â€ºâ€ Ã¥â€ºÂ¢ fireworks).
 
 **Collision example (using md5coll):**
 
@@ -1083,13 +1083,13 @@ Both have MD5: 79054025255fb1a26e4bc422aef54eb4
 
 | Algorithm | Output | Speed (SW) | Collision Resistance | Length Extension | Status |
 |-----------|--------|-----------|---------------------|-----------------|--------|
-| MD5 | 128-bit | Very fast | 2Â¹â¸ (broken) | Vulnerable | Deprecated |
-| SHA-1 | 160-bit | Fast | 2â¶Â³ (SHAttered) | Vulnerable | Deprecated |
-| SHA-256 | 256-bit | Moderate | 2Â¹Â²â¸ (secure) | Vulnerable | Recommended |
-| SHA-512 | 512-bit | Moderate (64-bit) | 2Â²âµâ¶ (secure) | Vulnerable | Recommended |
-| SHA3-256 | 256-bit | Slow-mod | 2Â¹Â²â¸ (secure) | Immune | Recommended |
+| MD5 | 128-bit | Very fast | 2Ã‚Â¹Ã¢ÂÂ¸ (broken) | Vulnerable | Deprecated |
+| SHA-1 | 160-bit | Fast | 2Ã¢ÂÂ¶Ã‚Â³ (SHAttered) | Vulnerable | Deprecated |
+| SHA-256 | 256-bit | Moderate | 2Ã‚Â¹Ã‚Â²Ã¢ÂÂ¸ (secure) | Vulnerable | Recommended |
+| SHA-512 | 512-bit | Moderate (64-bit) | 2Ã‚Â²Ã¢ÂÂµÃ¢ÂÂ¶ (secure) | Vulnerable | Recommended |
+| SHA3-256 | 256-bit | Slow-mod | 2Ã‚Â¹Ã‚Â²Ã¢ÂÂ¸ (secure) | Immune | Recommended |
 | BLAKE2b | 1-64 bytes | Fast | Variable | Immune | Recommended |
-| SHAKE256 | Variable | Moderate | â‰¥2Â¹Â²â¸ (secure) | Immune | Recommended (XOF) |
+| SHAKE256 | Variable | Moderate | Ã¢â€°Â¥2Ã‚Â¹Ã‚Â²Ã¢ÂÂ¸ (secure) | Immune | Recommended (XOF) |
 
 ### 2.3.7 Applications of Hash Functions
 
@@ -1111,20 +1111,20 @@ Both have MD5: 79054025255fb1a26e4bc422aef54eb4
 
 **What it is:** Given `H(M)`, an attacker can compute `H(M || pad || extension)` without knowing M. This violates the property that hash output should reveal nothing about the input.
 
-**Which hashes are vulnerable:** All Merkleâ€“DamgÃ¥rd construction hashes: MD5, SHA-1, SHA-256, SHA-512.
+**Which hashes are vulnerable:** All MerkleÃ¢â‚¬â€œDamgÃƒÂ¥rd construction hashes: MD5, SHA-1, SHA-256, SHA-512.
 
 **Which hashes are immune:** SHA-3 (sponge), Blake2 (HAIFA), SHAKE.
 
-**Why Merkleâ€“DamgÃ¥rd is vulnerable:**
+**Why MerkleÃ¢â‚¬â€œDamgÃƒÂ¥rd is vulnerable:**
 
 The compression function processes fixed-size blocks sequentially, carrying forward an internal state. The hash output IS the final state:
 
 ```
-M = Mâ‚ || Mâ‚‚ || Mâ‚ƒ
-Hâ‚€ → compress(Hâ‚€, Mâ‚) → Hâ‚ → compress(Hâ‚, Mâ‚‚) → Hâ‚‚ → compress(Hâ‚‚, Mâ‚ƒ || pad) → Hâ‚ƒ = H(M)
+M = MÃ¢â€šÂ || MÃ¢â€šâ€š || MÃ¢â€šÆ’
+HÃ¢â€šâ‚¬ â†’ compress(HÃ¢â€šâ‚¬, MÃ¢â€šÂ) â†’ HÃ¢â€šÂ â†’ compress(HÃ¢â€šÂ, MÃ¢â€šâ€š) â†’ HÃ¢â€šâ€š â†’ compress(HÃ¢â€šâ€š, MÃ¢â€šÆ’ || pad) â†’ HÃ¢â€šÆ’ = H(M)
 
-Given H(M) = Hâ‚ƒ, attacker can continue:
-Hâ‚ƒ → compress(Hâ‚ƒ, pad' || extension || new_pad) → Hâ‚„ = H(M || pad || extension)
+Given H(M) = HÃ¢â€šÆ’, attacker can continue:
+HÃ¢â€šÆ’ â†’ compress(HÃ¢â€šÆ’, pad' || extension || new_pad) â†’ HÃ¢â€šâ€ž = H(M || pad || extension)
 ```
 
 **Attack scenario (hash length extension):**
@@ -1137,11 +1137,11 @@ Attacker computes:       forged_token = MD5(secret || "admin=false" || pad || "a
 
 **How HMAC prevents this:**
 
-HMAC uses TWO nested hashes: `H(outer || H(inner || M))`. The outer hash prevents the length extension because the attacker doesn't know `H(inner || M)` to use as a starting state → it's passed as input to the outer hash.
+HMAC uses TWO nested hashes: `H(outer || H(inner || M))`. The outer hash prevents the length extension because the attacker doesn't know `H(inner || M)` to use as a starting state â†’ it's passed as input to the outer hash.
 
 **Real-world exploits:**
 - Flickr API (2009): Signature forgery using MD5 length extension on API secret
-- Drupal (2014): SA-CORE-2014-005 → hash length extension allowed session hijacking
+- Drupal (2014): SA-CORE-2014-005 â†’ hash length extension allowed session hijacking
 - Numerous PHP `hash_hmac()` misuse cases where developers used `MD5(secret . data)` instead of HMAC
 
 **Recommendation:**
@@ -1151,7 +1151,7 @@ HMAC uses TWO nested hashes: `H(outer || H(inner || M))`. The outer hash prevent
 
 ---
 
-## 2.4 HMAC → Keyed-Hash Message Authentication Code
+## 2.4 HMAC â†’ Keyed-Hash Message Authentication Code
 
 **Purpose:** Provides message integrity AND authentication using a shared secret key.
 
@@ -1159,11 +1159,11 @@ HMAC uses TWO nested hashes: `H(outer || H(inner || M))`. The outer hash prevent
 
 **Construction (RFC 2104):**
 ```
-HMAC(K, M) = H((K' âŠ• opad) || H((K' âŠ• ipad) || M))
+HMAC(K, M) = H((K' Ã¢Å â€¢ opad) || H((K' Ã¢Å â€¢ ipad) || M))
 ```
 
 Where:
-- `K'` = K if |K| â‰¤ block_size, else H(K) (key preprocessing)
+- `K'` = K if |K| Ã¢â€°Â¤ block_size, else H(K) (key preprocessing)
 - `ipad` = 0x36 repeated to block_size
 - `opad` = 0x5C repeated to block_size
 - `H` = underlying hash function (SHA-256, etc.)
@@ -1173,12 +1173,12 @@ Where:
 | Step | Operation | Value |
 |------|-----------|-------|
 | 1 | K' = "key" (3 bytes &lt; 64) | `6B6579` |
-| 2 | ipad (Ã—64) | `363636...` |
-| 3 | K' âŠ• ipad | `5D537F...` |
-| 4 | Inner hash: SHA256((K'âŠ•ipad) \|\| "message") | `hâ‚ = a1b2c3...` |
-| 5 | opad (Ã—64) | `5C5C5C...` |
-| 6 | K' âŠ• opad | `373925...` |
-| 7 | Outer hash: SHA256((K'âŠ•opad) \|\| hâ‚) | `8f9a6b...` (final HMAC) |
+| 2 | ipad (Ãƒâ€”64) | `363636...` |
+| 3 | K' Ã¢Å â€¢ ipad | `5D537F...` |
+| 4 | Inner hash: SHA256((K'Ã¢Å â€¢ipad) \|\| "message") | `hÃ¢â€šÂ = a1b2c3...` |
+| 5 | opad (Ãƒâ€”64) | `5C5C5C...` |
+| 6 | K' Ã¢Å â€¢ opad | `373925...` |
+| 7 | Outer hash: SHA256((K'Ã¢Å â€¢opad) \|\| hÃ¢â€šÂ) | `8f9a6b...` (final HMAC) |
 
 **Security properties:**
 - If underlying hash has collision resistance of 2^(n/2), HMAC provides ~2^(n/2) security against forgery
@@ -1187,7 +1187,7 @@ Where:
 **Attacks:**
 - **Length extension** does NOT work on HMAC (double-hash construction prevents it)
 - **Side-channel** on comparison (use constant-time comparison)
-- **Weak keys** → HMAC is resilient (key preprocessing handles odd-sized keys)
+- **Weak keys** â†’ HMAC is resilient (key preprocessing handles odd-sized keys)
 
 **Real-world usage:**
 - **AWS Signature V4:** HMAC-SHA256 for API request authentication
@@ -1216,7 +1216,7 @@ Verification (Bob):
 
 **Analogy:** A wax seal on a letter. Anyone can recognize the seal (public key), but only the owner of the ring (private key) can create it.
 
-**Non-repudiation:** Alice cannot claim she didn't sign the message because only her private key could produce a signature verifiable with her public key → assuming the private key was not compromised.
+**Non-repudiation:** Alice cannot claim she didn't sign the message because only her private key could produce a signature verifiable with her public key â†’ assuming the private key was not compromised.
 
 **Signature algorithms:**
 
@@ -1230,7 +1230,7 @@ Verification (Bob):
 
 **Edge cases:**
 - **Signature malleability:** Some schemes allow signature transformation to a different valid signature (mitigated by using deterministic schemes)
-- **Hash collision:** If an attacker finds H(mâ‚) = H(mâ‚‚), they can substitute documents (see SHAttered)
+- **Hash collision:** If an attacker finds H(mÃ¢â€šÂ) = H(mÃ¢â€šâ€š), they can substitute documents (see SHAttered)
 - **Key compromise:** If the private key is stolen, attacker can sign as the victim (requires revocation)
 
 ---
@@ -1301,10 +1301,10 @@ Certificate:
 
 ```
 Root CA (self-signed)
-  └── Intermediate CA 1 (signed by Root)
-        └── Intermediate CA 2 (signed by Interm. 1)
-              └── End-entity certificate (signed by Interm. 2)
-                    └── www.example.com
+  â””â”€â”€ Intermediate CA 1 (signed by Root)
+        â””â”€â”€ Intermediate CA 2 (signed by Interm. 1)
+              â””â”€â”€ End-entity certificate (signed by Interm. 2)
+                    â””â”€â”€ www.example.com
 ```
 
 **Why hierarchy?**
@@ -1359,7 +1359,7 @@ CRL:
 
 **Advantage over CRL:** Real-time (or near-real-time), smaller response, privacy-preserving (if using OCSP stapling).
 
-**OCSP Stapling (TLS extension):** The server fetches a time-stamped OCSP response and "staples" it to the TLS handshake. Client verifies it without contacting the CA → solving the privacy and scalability problems of OCSP.
+**OCSP Stapling (TLS extension):** The server fetches a time-stamped OCSP response and "staples" it to the TLS handshake. Client verifies it without contacting the CA â†’ solving the privacy and scalability problems of OCSP.
 
 ### 2.6.6 Trust Stores
 
@@ -1399,63 +1399,63 @@ Operating systems and browsers ship with ~100-200 trusted root CA certificates. 
 ### 2.7.1 Overview
 
 
-TLS (Transport Layer Security) is the most widely deployed cryptographic protocol. TLS 1.3 (RFC 8446, 2018) is a major redesign → faster, simpler, more secure.
+TLS (Transport Layer Security) is the most widely deployed cryptographic protocol. TLS 1.3 (RFC 8446, 2018) is a major redesign â†’ faster, simpler, more secure.
 
 **Goals:**
 - Confidentiality (encrypted data)
 - Integrity (no tampering)
-- Authentication (server → mandatory; client → optional)
+- Authentication (server â†’ mandatory; client â†’ optional)
 
 ### 2.7.2 TLS 1.3 Full Handshake (1-RTT)
 
 
 ```
 Client (Browser)                   Server (Website)
-──────┴─────                        ──────┴─────
+â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€                        â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€
   ClientHello
   - Protocol version: TLS 1.3
-  - Key share (ECDHE): g^x        ──────────────>
+  - Key share (ECDHE): g^x        â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€>
   - Supported cipher suites
   - Supported groups (X25519, P-256)
   - Extensions (SNI, ALPN)
                                      ServerHello
                                    - Protocol version: TLS 1.3
-                                   - Key share (ECDHE): g^y  <──────────────
+                                   - Key share (ECDHE): g^y  <â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
                                    - Cipher suite decision
                                     
                                      EncryptedExtensions
-                                   - Certificate request (optional)  <──────
+                                   - Certificate request (optional)  <â”€â”€â”€â”€â”€â”€
                                     
                                      Certificate
                                    - Server's X.509 cert chain
                                    - OCSP staple (optional)
                                    - CertificateVerify (signature)
-                                   - Finished (MAC of handshake)  <────────
+                                   - Finished (MAC of handshake)  <â”€â”€â”€â”€â”€â”€â”€â”€
   
   CertificateVerify (if mTLS)
-  Finished (MAC of handshake)     ──────────────>
+  Finished (MAC of handshake)     â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€>
   
-  Application Data (encrypted)    <════════════>  Application Data (encrypted)
+  Application Data (encrypted)    <â•â•â•â•â•â•â•â•â•â•â•â•>  Application Data (encrypted)
 ```
 
 **Step-by-step walkthrough:**
 
 | Step | Client | Server |
 |------|--------|--------|
-| 1 | Generate ephemeral ECDHE keypair (x, X = g^x) | → |
-| 2 | Send ClientHello with X, supported ciphers, SNI | → |
-| 3 | → | Receive ClientHello, select cipher suite |
-| 4 | → | Generate ephemeral ECDHE keypair (y, Y = g^y) |
-| 5 | → | Compute shared secret: s = Y^x = g^(xy) |
-| 6 | → | Derive traffic keys from s (handshake traffic secret) |
-| 7 | → | Send ServerHello with Y, ServerHello |
-| 8 | Compute shared secret: s = X^y = g^(xy) | → |
-| 9 | Derive handshake traffic keys | → |
-| 10 | Decrypt and verify ServerHello, Certificate, CertificateVerify | → |
-| 11 | → | Receive and verify Client Finished |
+| 1 | Generate ephemeral ECDHE keypair (x, X = g^x) | â†’ |
+| 2 | Send ClientHello with X, supported ciphers, SNI | â†’ |
+| 3 | â†’ | Receive ClientHello, select cipher suite |
+| 4 | â†’ | Generate ephemeral ECDHE keypair (y, Y = g^y) |
+| 5 | â†’ | Compute shared secret: s = Y^x = g^(xy) |
+| 6 | â†’ | Derive traffic keys from s (handshake traffic secret) |
+| 7 | â†’ | Send ServerHello with Y, ServerHello |
+| 8 | Compute shared secret: s = X^y = g^(xy) | â†’ |
+| 9 | Derive handshake traffic keys | â†’ |
+| 10 | Decrypt and verify ServerHello, Certificate, CertificateVerify | â†’ |
+| 11 | â†’ | Receive and verify Client Finished |
 | 12 | Derive application traffic keys | Derive application traffic keys |
-| 13 | Send encrypted application data | → |
-| 14 | → | Send encrypted application data |
+| 13 | Send encrypted application data | â†’ |
+| 14 | â†’ | Send encrypted application data |
 
 ### 2.7.3 TLS 1.3 0-RTT (Early Data)
 
@@ -1464,7 +1464,7 @@ Client (Browser)                   Server (Website)
 
 **How:** Client remembers a pre-shared key (PSK) from a previous session and includes encrypted data in the first flight.
 
-**Risk:** Replay attack → 0-RTT data can be replayed by an attacker. Mitigated by server recording and refusing duplicate 0-RTT.
+**Risk:** Replay attack â†’ 0-RTT data can be replayed by an attacker. Mitigated by server recording and refusing duplicate 0-RTT.
 
 ### 2.7.4 TLS 1.2 vs 1.3 Comparison
 
@@ -1502,7 +1502,7 @@ Client (Browser)                   Server (Website)
 | POODLE (SSLv3) | CBC padding oracle | Practical | Disable SSLv3, use TLS 1.3 |
 | BEAST (TLS 1.0) | CBC IV prediction | Practical | Use TLS 1.1+ or 1.3 |
 | Heartbleed (CVE-2014-0160) | OpenSSL heartbeat | Practical (see case study) | Upgrade OpenSSL |
-| Logjam (CVE-2015-4000) | DHE_EXPORT downgrade | Practical (see case study) | Use â‰¥2048-bit DH, ECDHE |
+| Logjam (CVE-2015-4000) | DHE_EXPORT downgrade | Practical (see case study) | Use Ã¢â€°Â¥2048-bit DH, ECDHE |
 | FREAK (CVE-2015-0204) | RSA-EXPORT downgrade | Practical | Disable EXPORT ciphers |
 | Renegotiation injection | TLS renegotiation | Practical | Use secure renegotiation (TLS 1.3 removes reneg) |
 | Raccoon attack | DH parameter leakage | Practical | Use ECDHE |
@@ -1577,7 +1577,7 @@ Client (Browser)                   Server (Website)
 | RSA | 2048-4096 bits | 112-128 bits | Legacy, being phased out |
 | ECDSA (nistp256) | 256 bits | 128 bits | NIST standard |
 | ECDSA (nistp384) | 384 bits | 192 bits | NIST standard |
-| **Ed25519** | 256 bits | 128 bits | **Recommended** → fast, constant-time, small |
+| **Ed25519** | 256 bits | 128 bits | **Recommended** â†’ fast, constant-time, small |
 | DSA | 1024 bits | 80 bits | Deprecated (SSH-1 era) |
 
 **Port forwarding (tunneling):**
@@ -1608,7 +1608,7 @@ MACs hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com
 
 **Purpose:** Email and file encryption. Designed by Phil Zimmermann (1991). Standardized as OpenPGP (RFC 4880). The GNU implementation is GnuPG (gpg).
 
-**Architecture: Hybrid encryption** → uses both symmetric (fast) and asymmetric (secure key exchange).
+**Architecture: Hybrid encryption** â†’ uses both symmetric (fast) and asymmetric (secure key exchange).
 
 **PGP message format (OpenPGP RFC 4880):**
 
@@ -1654,12 +1654,12 @@ An OpenPGP message consists of a sequence of packets. Each packet has a tag (1 b
     - Key ID of signer
     - hash prefix (first 2 bytes of h for quick verification)
     - RSA-PSS(h, priv_Alice) or Ed25519_Sign(h, priv_Alice)
-3.  Output: (message, signature_packet) → can be combined with encryption
+3.  Output: (message, signature_packet) â†’ can be combined with encryption
 ```
 
 **Key structures:**
-- **Primary key:** RSA (2048-4096) or ECC (Curve25519) → used for signing and certifying other keys
-- **Subkeys:** Separate keypairs bound to primary key via certification signatures → typically one for encryption, one for signing. This allows rotating encryption keys without changing identity.
+- **Primary key:** RSA (2048-4096) or ECC (Curve25519) â†’ used for signing and certifying other keys
+- **Subkeys:** Separate keypairs bound to primary key via certification signatures â†’ typically one for encryption, one for signing. This allows rotating encryption keys without changing identity.
 - **Key ID:** Last 8 octets of the key fingerprint (SHA256 of public key packet)
 - **Fingerprint:** Full hash used to uniquely identify a key (e.g., `B5B9 F8D8 3A5E 12A0 4D3C  B4A8 7E8A 1B2C 3D4E 5F6A`)
 - **User IDs:** Identity binding (typically "Name \<email\>"), certified by primary key or third-party signatures
@@ -1671,7 +1671,7 @@ An OpenPGP message consists of a sequence of packets. Each packet has a tag (1 b
 - **Full:** Signed by a fully-trusted key
 - **Ultimate:** Your own key (implicitly trusted)
 
-Key signing parties formalize this → participants verify each other's identity (driver's license, passport) and cross-sign keys.
+Key signing parties formalize this â†’ participants verify each other's identity (driver's license, passport) and cross-sign keys.
 
 **PGP vs PKI:**
 
@@ -1895,7 +1895,7 @@ echo -n "hello" | sha256sum
 echo -n "hellp" | sha256sum
 # d59ecedc654f4fc5b1a2047d0b02d2d297a5f5a52390c6dbee9c43046fc34e23
 
-# Observe: 1-bit difference → completely different hash
+# Observe: 1-bit difference â†’ completely different hash
 # (h vs p differs by ~20 bits, but even a 1-bit change flips ~50% of output bits)
 ```
 
@@ -1927,7 +1927,7 @@ echo -n "hellp" | sha256sum
 | ClientHello | Supported Groups | X25519, P-256, P-384 |
 | ClientHello | Key Share | Client's ephemeral public key |
 | ServerHello | Cipher Suite | `TLS_AES_128_GCM_SHA256` (TLS 1.3) |
-| Certificate | Certificate chain | Leaf → Intermediate → Root |
+| Certificate | Certificate chain | Leaf â†’ Intermediate â†’ Root |
 | CertificateVerify | Signature Algorithm | `ecdsa_secp256r1_sha256` or `rsa_pss_rsae_sha256` |
 
 **Alternative: capture with tshark:**
@@ -1970,7 +1970,7 @@ openssl x509 -in cert.pem -noout -text | grep "Signature Algorithm"
 
 
 **Severity:** Critical (CVSS 7.5)
-**Affected:** OpenSSL 1.0.1 through 1.0.1f (2012â€“2014)
+**Affected:** OpenSSL 1.0.1 through 1.0.1f (2012Ã¢â‚¬â€œ2014)
 **Discovered:** April 2014 by Codenomicon and Google Security
 
 **Technical Breakdown:**
@@ -1983,7 +1983,7 @@ Normal heartbeat:
     Server: reads 4 bytes, sends back "BEEF"
 
 Exploited heartbeat:
-    Client: "BEEF" (4 bytes), length = 65535  ← LIES about length
+    Client: "BEEF" (4 bytes), length = 65535  â† LIES about length
     Server: reads 65535 bytes starting from the "BEEF" buffer
             returns 4 real bytes + 65531 bytes of memory garbage
 ```
@@ -1993,25 +1993,25 @@ Exploited heartbeat:
 ```c
 // Vulnerable code (simplified)
 unsigned char *p = &s->s3->rrec.data[0];
-unsigned int payload_length = *p++;   // ← attacker-controlled
+unsigned int payload_length = *p++;   // â† attacker-controlled
 // ... no check that payload_length <= actual data length
-memcpy(bp, pl, payload_length);       // ← reads beyond input buffer
+memcpy(bp, pl, payload_length);       // â† reads beyond input buffer
 ```
 
 **What could be leaked:**
-- Private keys (RSA, ECDSA) → the crown jewels
+- Private keys (RSA, ECDSA) â†’ the crown jewels
 - Session keys (allowing decryption of traffic)
 - Passwords, cookies, credit card numbers from other connections sharing the same server process
 - Memory contents from other processes (on some OS configurations)
 
-**Fix:** `payload_length = min(payload_length, actual_payload_length)` → OpenSSL 1.0.1g.
+**Fix:** `payload_length = min(payload_length, actual_payload_length)` â†’ OpenSSL 1.0.1g.
 
 ```c
 // Fixed code (simplified)
 unsigned int payload_length;
 unsigned char *p = &s->s3->rrec.data[0];
 payload_length = *p++;
-if (1 + 2 + payload_length + 16 > s->s3->rrec.length)  // ← bounds check
+if (1 + 2 + payload_length + 16 > s->s3->rrec.length)  // â† bounds check
     goto silently_ignore;
 ```
 
@@ -2024,14 +2024,14 @@ if (1 + 2 + payload_length + 16 > s->s3->rrec.length)  // ← bounds check
 **Lessons:**
 - Memory-safe languages (Rust, Go) prevent buffer over-reads at compile time
 - Cryptographic software must be formally verified
-- Open source â‰  automatically secure; funding matters
+- Open source Ã¢â€°Â  automatically secure; funding matters
 
 ### 2.11.2 POODLE (CVE-2014-3566)
 
 
 **Severity:** High (CVSS 6.8)
 **Affected:** SSL 3.0
-**Discovered:** October 2014 by Bodo MÃ¶ller, Thai Duong, Krzysztof Kotowicz
+**Discovered:** October 2014 by Bodo MÃƒÂ¶ller, Thai Duong, Krzysztof Kotowicz
 
 **Attack Walkthrough:**
 
@@ -2055,7 +2055,7 @@ For each byte position i in the cookie:
     c.  Send modified ciphertext to server
     d.  If server accepts (no padding error):
             The last byte of block n-1 XOR last byte of block n = 0x0? (padding)
-            → target byte = last_byte_of_last_block XOR 0x0?
+            â†’ target byte = last_byte_of_last_block XOR 0x0?
             (approximately 1/256 chance of success per attempt)
     e.  If server rejects (padding error): try again with different alignment
     
@@ -2075,7 +2075,7 @@ For each byte position i in the cookie:
 - Any deviation from standard padding rules creates oracle attacks
 - Deprecated protocols must be disabled, not just "discouraged"
 
-### 2.11.3 SHA-1 Collision → SHAttered (2017)
+### 2.11.3 SHA-1 Collision â†’ SHAttered (2017)
 
 
 **Severity:** High
@@ -2085,7 +2085,7 @@ For each byte position i in the cookie:
 **Technical details:**
 - First practical collision for SHA-1
 - Required 6,500 CPU-years + 110 GPU-years of computation
-- Same computational cost as 2â¶Â³ SHA-1 evaluations (theoretical collision bound)
+- Same computational cost as 2Ã¢ÂÂ¶Ã‚Â³ SHA-1 evaluations (theoretical collision bound)
 - ~110,000 USD in cloud compute
 
 **The collision:**
@@ -2106,11 +2106,11 @@ One PDF shows a $1,000 invoice, the other shows the same hash but with a differe
 | **X.509 certificates** | CA could issue colliding certs | Browsers deprecated SHA-1 certs by 2017 |
 | **File integrity** | Cannot detect tampering | Use SHA-256 or SHA-3 |
 
-**Git's partial defense:** A git commit collision requires the attacker to craft TWO different trees with the same hash AND the same parent, committer, and timestamp → extremely difficult in practice. Still, git supports SHA-256 repositories.
+**Git's partial defense:** A git commit collision requires the attacker to craft TWO different trees with the same hash AND the same parent, committer, and timestamp â†’ extremely difficult in practice. Still, git supports SHA-256 repositories.
 
 **Lessons:**
 - Collision resistance degrades over time as computation gets cheaper
-- NIST deprecated SHA-1 in 2011 → the SHAttered attack validated that decision
+- NIST deprecated SHA-1 in 2011 â†’ the SHAttered attack validated that decision
 - Cryptographic transitions must start early (https://sha-mble.github.io/)
 
 ### 2.11.4 Logjam (CVE-2015-4000)
@@ -2128,7 +2128,7 @@ Logjam exploits the fact that many servers accepted DHE_EXPORT cipher suites usi
 ```
 1.  Choose a 512-bit prime p (from common export DH parameters)
 2.  Precompute discrete log tables using Number Field Sieve
-    (Cost: ~7 days on a cluster, â‰ˆ 90M USD at time of publication)
+    (Cost: ~7 days on a cluster, Ã¢â€°Ë† 90M USD at time of publication)
 ```
 
 **Phase 2: Real-time downgrade attack**
@@ -2136,7 +2136,7 @@ Logjam exploits the fact that many servers accepted DHE_EXPORT cipher suites usi
 1.  Attacker intercepts ClientHello
 2.  Attacker modifies ClientHello: only offer DHE_EXPORT (512-bit)
 3.  Server accepts and sends its 512-bit DH public key B
-4.  Attacker uses precomputed tables to compute B's discrete log → server's secret b
+4.  Attacker uses precomputed tables to compute B's discrete log â†’ server's secret b
 5.  Attacker computes shared secret s = A^b mod p
 6.  Attacker can now decrypt all traffic and inject malicious content
 ```
@@ -2148,7 +2148,7 @@ Logjam exploits the fact that many servers accepted DHE_EXPORT cipher suites usi
 
 **Fix:**
 1. Remove DHE_EXPORT cipher suites from server configuration
-2. Use â‰¥2048-bit Diffie-Hellman primes
+2. Use Ã¢â€°Â¥2048-bit Diffie-Hellman primes
 3. Prefer ECDHE over DHE (elliptic curve is more efficient for equivalent security)
 4. Use TLS 1.3 (eliminates DHE_EXPORT entirely, ECDHE only)
 
@@ -2171,7 +2171,7 @@ Logjam exploits the fact that many servers accepted DHE_EXPORT cipher suites usi
 | Speed | Very fast (1-10 GB/s with HW) | Slow (1-10 MB/s) |
 | Key distribution | Must be pre-shared securely | Public key freely shared |
 | Key management | n(n-1)/2 keys for n parties | 2n keys for n parties (one pair each) |
-| Scalability | Poor (O(nÂ²) key exchanges) | Excellent (O(n) public keys) |
+| Scalability | Poor (O(nÃ‚Â²) key exchanges) | Excellent (O(n) public keys) |
 | Algorithm examples | AES, ChaCha20, DES | RSA, ECC, DH |
 | Use case | Bulk data encryption | Key exchange, signatures, small data |
 | Security service | Confidentiality | Confidentiality + Auth + Non-repudiation |
@@ -2182,8 +2182,8 @@ Logjam exploits the fact that many servers accepted DHE_EXPORT cipher suites usi
 **Why hybrid encryption is used:**
 ```
 TLS handshake:
-  1. Asymmetric: ECDHE key exchange  → shared secret (slow, once)
-  2. Symmetric: AES-GCM for all data  → bulk encryption (fast, continuous)
+  1. Asymmetric: ECDHE key exchange  â†’ shared secret (slow, once)
+  2. Symmetric: AES-GCM for all data  â†’ bulk encryption (fast, continuous)
 
 PGP email:
   1. Asymmetric: RSA encrypt session key
@@ -2195,16 +2195,16 @@ PGP email:
 
 | Security (bits) | RSA key size | ECC key size | Ratio | Broken by |
 |-----------------|--------------|--------------|-------|-----------|
-| 80 | 1024 | 160 | 6.4Ã— | Nation-states (factoring) |
-| 112 | 2048 | 224 | 9.1Ã— | Adequate until ~2030 |
-| 128 | 3072 | 256 | 12Ã— | Considered secure for now |
-| 192 | 7680 | 384 | 20Ã— | Long-term security |
-| 256 | 15360 | 521 | 29Ã— | Post-quantum era |
+| 80 | 1024 | 160 | 6.4Ãƒâ€” | Nation-states (factoring) |
+| 112 | 2048 | 224 | 9.1Ãƒâ€” | Adequate until ~2030 |
+| 128 | 3072 | 256 | 12Ãƒâ€” | Considered secure for now |
+| 192 | 7680 | 384 | 20Ãƒâ€” | Long-term security |
+| 256 | 15360 | 521 | 29Ãƒâ€” | Post-quantum era |
 
 **Why ECC outperforms RSA:**
 - Elliptic curve discrete log has **no sub-exponential algorithm** (unlike number field sieve for factoring)
 - Key size grows linearly instead of exponentially with security level
-- ECC-256 â‰ˆ RSA-3072 at 128-bit security → 12Ã— smaller keys
+- ECC-256 Ã¢â€°Ë† RSA-3072 at 128-bit security â†’ 12Ãƒâ€” smaller keys
 - Smaller = faster (fewer CPU cycles), less memory, smaller certificates
 
 ### 2.12.3 TLS 1.2 vs 1.3
@@ -2232,8 +2232,8 @@ PGP email:
 - **DSA** (discrete log)
 
 **What survives:**
-- **Symmetric:** AES-256 (Grover's search reduces 256-bit → 128-bit, still adequate)
-- **Hash functions:** SHA-256, SHA-3 (Grover's pre-image search reduces 256-bit → 128-bit)
+- **Symmetric:** AES-256 (Grover's search reduces 256-bit â†’ 128-bit, still adequate)
+- **Hash functions:** SHA-256, SHA-3 (Grover's pre-image search reduces 256-bit â†’ 128-bit)
 - **MACs:** HMAC (same security as underlying hash)
 
 **NIST PQC Standardization (2024 finalists):**
@@ -2271,12 +2271,12 @@ This ensures security even if one system is broken. Google Chrome started testin
 
 ## 2.14 Common Cryptographic Mistakes
 
-Real-world crypto failures rarely break the algorithm → they exploit implementation errors. Here are the most common mistakes seen in security audits.
+Real-world crypto failures rarely break the algorithm â†’ they exploit implementation errors. Here are the most common mistakes seen in security audits.
 
 ### Mistake 1: Nonce/IV Reuse in GCM or CTR
 
 
-**The problem:** Encrypting two messages with the same key and nonce in GCM/CTR reveals `Câ‚ XOR Câ‚‚ = Pâ‚ XOR Pâ‚‚`, leaking both plaintexts. In GCM, nonce reuse also leaks the GHASH authentication key H, allowing universal forgery.
+**The problem:** Encrypting two messages with the same key and nonce in GCM/CTR reveals `CÃ¢â€šÂ XOR CÃ¢â€šâ€š = PÃ¢â€šÂ XOR PÃ¢â€šâ€š`, leaking both plaintexts. In GCM, nonce reuse also leaks the GHASH authentication key H, allowing universal forgery.
 
 **Real case:** In 2019, several WhatsApp forks reused nonces, allowing decryption of group messages.
 
@@ -2285,7 +2285,7 @@ Real-world crypto failures rarely break the algorithm → they exploit implement
 ### Mistake 2: Using ECB Mode
 
 
-**The problem:** Identical plaintext blocks produce identical ciphertext blocks. Patterns in data survive encryption → the Tux penguin image remains recognizable.
+**The problem:** Identical plaintext blocks produce identical ciphertext blocks. Patterns in data survive encryption â†’ the Tux penguin image remains recognizable.
 
 **Real case:** Adobe encrypted user passwords with 3DES-ECB in 2013. The resulting breach leaked password hints alongside encrypted passwords. Attackers could match ciphertext blocks to decrypt millions of passwords.
 
@@ -2296,7 +2296,7 @@ Real-world crypto failures rarely break the algorithm → they exploit implement
 
 **The problem:** Keys compiled into source code or stored in configuration files in plaintext can be extracted by anyone with file system access.
 
-**Real case:** The Sony PS3 master key was hardcoded → attackers extracted it, signed arbitrary code, and jailbroke the console permanently.
+**Real case:** The Sony PS3 master key was hardcoded â†’ attackers extracted it, signed arbitrary code, and jailbroke the console permanently.
 
 **Fix:** Use hardware security modules (HSMs), key management services (AWS KMS, Azure Key Vault), or at minimum derive keys from user-supplied passphrases via PBKDF2/Argon2.
 
@@ -2314,7 +2314,7 @@ Real-world crypto failures rarely break the algorithm → they exploit implement
 
 **The problem:** When the server responds differently to "invalid padding" vs "valid padding but bad MAC", the attacker can decrypt messages byte-by-byte.
 
-**Real case:** POODLE (CVE-2014-3566), Lucky13 (CVE-2013-0169), ROBOT (CVE-2017-17405) → all exploit subtle differences in error responses.
+**Real case:** POODLE (CVE-2014-3566), Lucky13 (CVE-2013-0169), ROBOT (CVE-2017-17405) â†’ all exploit subtle differences in error responses.
 
 **Fix:** Use AEAD modes (GCM, ChaCha20-Poly1305). If CBC is unavoidable, validate padding AND MAC atomically, returning a single error for any failure.
 
@@ -2332,7 +2332,7 @@ Real-world crypto failures rarely break the algorithm → they exploit implement
 
 **The problem:** Even perfect algorithms are useless with poor key management: keys stored in world-readable files, transmitted over unencrypted channels, or never rotated.
 
-**Real case:** The 2011 RSA SecurID breach compromised the seed values for two-factor tokens → a key management failure that required replacing 40 million tokens.
+**Real case:** The 2011 RSA SecurID breach compromised the seed values for two-factor tokens â†’ a key management failure that required replacing 40 million tokens.
 
 **Fix:** Implement a key lifecycle: generation, distribution, storage, rotation, and destruction. Use KMS for centralized management. Rotate keys regularly (NIST recommends 2-year interval for AES keys).
 
@@ -2370,31 +2370,31 @@ Real-world crypto failures rarely break the algorithm → they exploit implement
 ### Q1: Explain the difference between symmetric and asymmetric encryption.
 
 
-**Answer:** Symmetric encryption uses a single shared key for both encryption and decryption. It's fast (AES achieves ~1 GB/s with hardware acceleration) but suffers from the key distribution problem → both parties must securely share the key before communication. Asymmetric encryption uses a public/private key pair. The public key encrypts, the private key decrypts. It solves key distribution but is 100-1000Ã— slower. In practice, hybrid encryption combines both: asymmetric (e.g., ECDH) to exchange a session key, then symmetric (AES-GCM) for bulk data → as done in TLS.
+**Answer:** Symmetric encryption uses a single shared key for both encryption and decryption. It's fast (AES achieves ~1 GB/s with hardware acceleration) but suffers from the key distribution problem â†’ both parties must securely share the key before communication. Asymmetric encryption uses a public/private key pair. The public key encrypts, the private key decrypts. It solves key distribution but is 100-1000Ãƒâ€” slower. In practice, hybrid encryption combines both: asymmetric (e.g., ECDH) to exchange a session key, then symmetric (AES-GCM) for bulk data â†’ as done in TLS.
 
 ### Q2: How does the TLS 1.3 handshake work?
 
 
-**Answer:** TLS 1.3 achieves a 1-RTT handshake (or 0-RTT for returning clients). The client sends a ClientHello containing its ECDHE key share, supported cipher suites, and extensions (SNI, ALPN). The server responds with its ECDHE key share, encrypted extensions, certificate, CertificateVerify (signature of the handshake transcript), and Finished (MAC). The client verifies the server's certificate and signature, then sends its own Finished. Both sides derive the same application traffic keys from the ECDHE shared secret. The handshake is fully encrypted after ServerHello → no certificates or SNI are sent in the clear. Forward secrecy is mandatory because the ECDHE ephemeral keys are discarded after the session.
+**Answer:** TLS 1.3 achieves a 1-RTT handshake (or 0-RTT for returning clients). The client sends a ClientHello containing its ECDHE key share, supported cipher suites, and extensions (SNI, ALPN). The server responds with its ECDHE key share, encrypted extensions, certificate, CertificateVerify (signature of the handshake transcript), and Finished (MAC). The client verifies the server's certificate and signature, then sends its own Finished. Both sides derive the same application traffic keys from the ECDHE shared secret. The handshake is fully encrypted after ServerHello â†’ no certificates or SNI are sent in the clear. Forward secrecy is mandatory because the ECDHE ephemeral keys are discarded after the session.
 
 ### Q3: What is the difference between AES-CBC and AES-GCM?
 
 
-**Answer:** CBC (Cipher Block Chaining) XORs each plaintext block with the previous ciphertext block before encryption. It requires padding (PKCS#7) and provides only confidentiality → not integrity. GCM (Galois/Counter Mode) uses CTR mode for encryption and GMAC for authentication. It provides authenticated encryption (AEAD): both confidentiality and integrity in a single pass. GCM is parallelizable, requires no padding, and is the recommended mode for TLS 1.3. CBC is vulnerable to padding oracle attacks (e.g., POODLE) and does not detect tampering.
+**Answer:** CBC (Cipher Block Chaining) XORs each plaintext block with the previous ciphertext block before encryption. It requires padding (PKCS#7) and provides only confidentiality â†’ not integrity. GCM (Galois/Counter Mode) uses CTR mode for encryption and GMAC for authentication. It provides authenticated encryption (AEAD): both confidentiality and integrity in a single pass. GCM is parallelizable, requires no padding, and is the recommended mode for TLS 1.3. CBC is vulnerable to padding oracle attacks (e.g., POODLE) and does not detect tampering.
 
-### Q4: Explain the N+1 problem in the context of cryptography. (Trick question → redirects to ORM/databases)
+### Q4: Explain the N+1 problem in the context of cryptography. (Trick question â†’ redirects to ORM/databases)
 
 **Answer:** This is not a cryptography concept. In the database context, the N+1 query problem occurs when an ORM issues N additional queries after an initial query to fetch related entities. Cryptography has no N+1 problem.
 
 ### Q5: What is forward secrecy and why does it matter?
 
 
-**Answer:** Forward secrecy ensures that compromising the long-term private key does NOT allow an attacker to decrypt past sessions. In TLS 1.3, each session uses ephemeral Diffie-Hellman keys that are generated for that session only and then discarded. Even if the server's long-term private key is later stolen, the attacker cannot derive the session keys because the ephemeral keys are gone. TLS 1.2 with static RSA key exchange lacked forward secrecy → stealing the private key decrypted ALL past sessions. TLS 1.3 mandates forward secrecy.
+**Answer:** Forward secrecy ensures that compromising the long-term private key does NOT allow an attacker to decrypt past sessions. In TLS 1.3, each session uses ephemeral Diffie-Hellman keys that are generated for that session only and then discarded. Even if the server's long-term private key is later stolen, the attacker cannot derive the session keys because the ephemeral keys are gone. TLS 1.2 with static RSA key exchange lacked forward secrecy â†’ stealing the private key decrypted ALL past sessions. TLS 1.3 mandates forward secrecy.
 
 ### Q6: How does a digital signature provide non-repudiation?
 
 
-**Answer:** A digital signature binds the signer's identity to the signed message. Only the signer possesses their private key. When Alice signs a message, she hashes the message and encrypts the hash with her private key. Bob verifies by decrypting the signature with Alice's public key and comparing the hash. Since only Alice's private key could produce a signature that verifies with Alice's public key, Alice cannot later deny signing → assuming her private key was not compromised. This provides non-repudiation: Alice cannot repudiate (deny) the signature.
+**Answer:** A digital signature binds the signer's identity to the signed message. Only the signer possesses their private key. When Alice signs a message, she hashes the message and encrypts the hash with her private key. Bob verifies by decrypting the signature with Alice's public key and comparing the hash. Since only Alice's private key could produce a signature that verifies with Alice's public key, Alice cannot later deny signing â†’ assuming her private key was not compromised. This provides non-repudiation: Alice cannot repudiate (deny) the signature.
 
 ### Q7: What happens in a padding oracle attack?
 
@@ -2404,12 +2404,12 @@ Real-world crypto failures rarely break the algorithm → they exploit implement
 ### Q8: How does RSA key generation work?
 
 
-**Answer:** RSA key generation: (1) Choose two large primes p and q (at least 1024 bits each for 2048-bit RSA). (2) Compute n = p Ã— q (the modulus). (3) Compute Ï†(n) = (p-1)(q-1) (Euler's totient). (4) Choose public exponent e with gcd(e, Ï†(n)) = 1 (typically 65537 for fast verification and security). (5) Compute private exponent d = e^(-1) mod Ï†(n) using the Extended Euclidean Algorithm. Public key: (n, e). Private key: (n, d). Security depends on the practical impossibility of factoring n to recover p and q. Key generation is the slowest RSA operation because it requires finding large primes (probabilistic primality testing).
+**Answer:** RSA key generation: (1) Choose two large primes p and q (at least 1024 bits each for 2048-bit RSA). (2) Compute n = p Ãƒâ€” q (the modulus). (3) Compute Ãâ€ (n) = (p-1)(q-1) (Euler's totient). (4) Choose public exponent e with gcd(e, Ãâ€ (n)) = 1 (typically 65537 for fast verification and security). (5) Compute private exponent d = e^(-1) mod Ãâ€ (n) using the Extended Euclidean Algorithm. Public key: (n, e). Private key: (n, d). Security depends on the practical impossibility of factoring n to recover p and q. Key generation is the slowest RSA operation because it requires finding large primes (probabilistic primality testing).
 
 ### Q9: What is the quantum threat to cryptography?
 
 
-**Answer:** Shor's algorithm solves integer factorization and discrete logarithm in polynomial time on a sufficiently large quantum computer. This would break RSA, ECC (ECDH, ECDSA), and Diffie-Hellman completely. Grover's algorithm provides a quadratic speedup for symmetric key search → AES-256 (2Â²âµâ¶ → 2Â¹Â²â¸) is still adequate. NIST has standardized post-quantum algorithms: CRYSTALS-Kyber (ML-KEM) for key exchange and CRYSTALS-Dilithium (ML-DSA) for signatures, both based on lattice problems. The "harvest now, decrypt later" threat means attackers are already collecting encrypted traffic to decrypt when quantum computers arrive.
+**Answer:** Shor's algorithm solves integer factorization and discrete logarithm in polynomial time on a sufficiently large quantum computer. This would break RSA, ECC (ECDH, ECDSA), and Diffie-Hellman completely. Grover's algorithm provides a quadratic speedup for symmetric key search â†’ AES-256 (2Ã‚Â²Ã¢ÂÂµÃ¢ÂÂ¶ â†’ 2Ã‚Â¹Ã‚Â²Ã¢ÂÂ¸) is still adequate. NIST has standardized post-quantum algorithms: CRYSTALS-Kyber (ML-KEM) for key exchange and CRYSTALS-Dilithium (ML-DSA) for signatures, both based on lattice problems. The "harvest now, decrypt later" threat means attackers are already collecting encrypted traffic to decrypt when quantum computers arrive.
 
 ### Q10: Explain the difference between CRL and OCSP.
 
@@ -2419,22 +2419,22 @@ Real-world crypto failures rarely break the algorithm → they exploit implement
 ### Q11: What is the birthday attack on hash functions?
 
 
-**Answer:** The birthday paradox says that with 23 people in a room, there's a >50% chance two share a birthday → not because finding a match for a specific person is easy, but because of the number of pairwise comparisons. Applied to hash functions: finding any collision requires only 2^(n/2) attempts (not 2^n). For SHA-256 (n=256), collision resistance is 2Â¹Â²â¸ → still secure. For SHA-1 (n=160), collision resistance is 2â¸â° → the SHAttered attack achieved a collision at â‰ˆ2â¶Â³ due to cryptanalytic improvements, not pure birthday search. This is why hash output sizes must be double the desired security level.
+**Answer:** The birthday paradox says that with 23 people in a room, there's a >50% chance two share a birthday â†’ not because finding a match for a specific person is easy, but because of the number of pairwise comparisons. Applied to hash functions: finding any collision requires only 2^(n/2) attempts (not 2^n). For SHA-256 (n=256), collision resistance is 2Ã‚Â¹Ã‚Â²Ã¢ÂÂ¸ â†’ still secure. For SHA-1 (n=160), collision resistance is 2Ã¢ÂÂ¸Ã¢ÂÂ° â†’ the SHAttered attack achieved a collision at Ã¢â€°Ë†2Ã¢ÂÂ¶Ã‚Â³ due to cryptanalytic improvements, not pure birthday search. This is why hash output sizes must be double the desired security level.
 
 ### Q12: How does SSH public key authentication work?
 
 
-**Answer:** SSH key authentication involves four steps: (1) The server sends a challenge (random nonce) to the client requesting authentication. (2) The client signs the challenge with their private key (typically RSA, ECDSA, or Ed25519). (3) The server verifies the signature using the user's public key stored in `~/.ssh/authorized_keys`. (4) Access is granted if the signature is valid. The session then uses ephemeral DH keys for forward-secure symmetric encryption. The server's host key was verified during initial key exchange (TOFU → Trust On First Use, stored in `~/.ssh/known_hosts`).
+**Answer:** SSH key authentication involves four steps: (1) The server sends a challenge (random nonce) to the client requesting authentication. (2) The client signs the challenge with their private key (typically RSA, ECDSA, or Ed25519). (3) The server verifies the signature using the user's public key stored in `~/.ssh/authorized_keys`. (4) Access is granted if the signature is valid. The session then uses ephemeral DH keys for forward-secure symmetric encryption. The server's host key was verified during initial key exchange (TOFU â†’ Trust On First Use, stored in `~/.ssh/known_hosts`).
 
 ### Q13: What is the difference between a hash function and HMAC?
 
 
-**Answer:** A hash function (SHA-256) provides a deterministic fingerprint of data but no authentication → anyone can compute it. HMAC is a keyed-hash message authentication code: `HMAC(K, M) = H((K'âŠ•opad) || H((K'âŠ•ipad) || M))`. The key K ensures that only parties who share K can compute or verify the HMAC. HMAC provides both integrity (detect tampering) and authentication (verify sender knows the key). Without HMAC, an attacker who can modify data can also recompute the hash → the hash alone provides no security.
+**Answer:** A hash function (SHA-256) provides a deterministic fingerprint of data but no authentication â†’ anyone can compute it. HMAC is a keyed-hash message authentication code: `HMAC(K, M) = H((K'Ã¢Å â€¢opad) || H((K'Ã¢Å â€¢ipad) || M))`. The key K ensures that only parties who share K can compute or verify the HMAC. HMAC provides both integrity (detect tampering) and authentication (verify sender knows the key). Without HMAC, an attacker who can modify data can also recompute the hash â†’ the hash alone provides no security.
 
 ### Q14: Explain the concept of perfect forward secrecy.
 
 
-**Answer:** Perfect forward secrecy (PFS) ensures that session keys are not derived from long-term secrets. In TLS with ECDHE, the server generates an ephemeral key pair for each session, signs the ephemeral public key with its long-term private key, and discards the ephemeral private key after the session. Even if the long-term signing key is later compromised, the attacker cannot recover the ephemeral private key (it was deleted) and therefore cannot decrypt past sessions. PFS contrasts with static RSA key exchange (TLS 1.2), where the session key is encrypted with the server's RSA public key → compromising the RSA private key decrypts ALL past sessions.
+**Answer:** Perfect forward secrecy (PFS) ensures that session keys are not derived from long-term secrets. In TLS with ECDHE, the server generates an ephemeral key pair for each session, signs the ephemeral public key with its long-term private key, and discards the ephemeral private key after the session. Even if the long-term signing key is later compromised, the attacker cannot recover the ephemeral private key (it was deleted) and therefore cannot decrypt past sessions. PFS contrasts with static RSA key exchange (TLS 1.2), where the session key is encrypted with the server's RSA public key â†’ compromising the RSA private key decrypts ALL past sessions.
 
 ### Q15: How does hybrid encryption work in PGP?
 
@@ -2449,7 +2449,7 @@ Real-world crypto failures rarely break the algorithm → they exploit implement
 ### Q17: What is the difference between SSL and TLS?
 
 
-**Answer:** SSL (Secure Sockets Layer) was developed by Netscape in the 1990s: SSLv1 (never released), SSLv2 (1995, broken), SSLv3 (1996, deprecated after POODLE). TLS (Transport Layer Security) is the standardized successor: TLS 1.0 (1999, RFC 2246), TLS 1.1 (2006), TLS 1.2 (2008), TLS 1.3 (2018). TLS 1.0 was effectively SSL 3.1. Key differences: TLS 1.3 removes all legacy algorithms (CBC, RC4, 3DES, static RSA), mandates forward secrecy, reduces handshake to 1-RTT, encrypts more of the handshake, and removes renegotiation. Today "SSL" is used colloquially for TLS → the actual SSL protocols are deprecated and should not be enabled anywhere.
+**Answer:** SSL (Secure Sockets Layer) was developed by Netscape in the 1990s: SSLv1 (never released), SSLv2 (1995, broken), SSLv3 (1996, deprecated after POODLE). TLS (Transport Layer Security) is the standardized successor: TLS 1.0 (1999, RFC 2246), TLS 1.1 (2006), TLS 1.2 (2008), TLS 1.3 (2018). TLS 1.0 was effectively SSL 3.1. Key differences: TLS 1.3 removes all legacy algorithms (CBC, RC4, 3DES, static RSA), mandates forward secrecy, reduces handshake to 1-RTT, encrypts more of the handshake, and removes renegotiation. Today "SSL" is used colloquially for TLS â†’ the actual SSL protocols are deprecated and should not be enabled anywhere.
 
 ### Q18: How does a Certificate Authority issue and manage certificates?
 
@@ -2464,7 +2464,7 @@ Real-world crypto failures rarely break the algorithm → they exploit implement
 ### Q20: What is HKDF and when is it used?
 
 
-**Answer:** HKDF (HMAC-based Key Derivation Function, RFC 5869) takes a source of initial keying material and produces cryptographically strong output keys. It has two stages: (1) Extract: `PRK = HMAC-Hash(salt, IKM)` where IKM is the input key material → this condenses entropy and removes biases. (2) Expand: `OKM = HKDF-Expand(PRK, info, L)` where info is application-specific context and L is the desired output length. HKDF is used in TLS 1.3 to derive handshake traffic keys, application traffic keys, and resumption keys from the ECDHE shared secret. It's also used in WireGuard, IPsec, and signal. Advantages: flexible output length, domain separation via info parameter, no need to pre-share salt.
+**Answer:** HKDF (HMAC-based Key Derivation Function, RFC 5869) takes a source of initial keying material and produces cryptographically strong output keys. It has two stages: (1) Extract: `PRK = HMAC-Hash(salt, IKM)` where IKM is the input key material â†’ this condenses entropy and removes biases. (2) Expand: `OKM = HKDF-Expand(PRK, info, L)` where info is application-specific context and L is the desired output length. HKDF is used in TLS 1.3 to derive handshake traffic keys, application traffic keys, and resumption keys from the ECDHE shared secret. It's also used in WireGuard, IPsec, and signal. Advantages: flexible output length, domain separation via info parameter, no need to pre-share salt.
 
 ---
 
@@ -2510,7 +2510,7 @@ Real-world crypto failures rarely break the algorithm → they exploit implement
 
 1. **Symmetric encryption (AES, ChaCha20)** is fast and suitable for bulk data. Use authenticated modes (GCM, ChaCha20-Poly1305). Never use ECB. ChaCha20 is an excellent alternative when hardware AES is unavailable. CTR mode requires unique nonces per key. AES-XTS is the standard for disk encryption.
 
-2. **Asymmetric encryption (RSA, ECC, DH)** solves key distribution but is 100-1000x slower than symmetric. ECC outperforms RSA (256-bit ECC â‰ˆ 3072-bit RSA). Use ECDHE for forward-secure key exchange. RSA is primarily used for digital signatures and legacy compatibility.
+2. **Asymmetric encryption (RSA, ECC, DH)** solves key distribution but is 100-1000x slower than symmetric. ECC outperforms RSA (256-bit ECC Ã¢â€°Ë† 3072-bit RSA). Use ECDHE for forward-secure key exchange. RSA is primarily used for digital signatures and legacy compatibility.
 
 3. **Hash functions (SHA-256, SHA-3, BLAKE2)** provide integrity and are the building blocks of MACs, signatures, and key derivation. MD5 and SHA-1 are broken (collisions demonstrated). Always use at least SHA-256. SHA-3 is the NIST standard; BLAKE2 is faster when hardware acceleration is unavailable.
 
@@ -2522,13 +2522,13 @@ Real-world crypto failures rarely break the algorithm → they exploit implement
 
 7. **TLS 1.3** is simpler, faster, and more secure than TLS 1.2. Mandatory AEAD, forward secrecy via ECDHE, 1-RTT handshake (0-RTT for resumed), encrypted entire handshake (including certificates), removed all legacy algorithms (CBC, RC4, 3DES, static RSA, renegotiation, compression).
 
-8. **TLS handshake flow:** ClientHello (supported versions, cipher suites, key shares) → ServerHello (chosen suite, key share) + EncryptedExtensions + Certificate + CertificateVerify + Finished → Client Finished → Application Data (1-RTT). Key derivation uses HKDF at every stage.
+8. **TLS handshake flow:** ClientHello (supported versions, cipher suites, key shares) â†’ ServerHello (chosen suite, key share) + EncryptedExtensions + Certificate + CertificateVerify + Finished â†’ Client Finished â†’ Application Data (1-RTT). Key derivation uses HKDF at every stage.
 
 9. **SSH** provides secure remote access with host-based authentication (TOFU) and user authentication (public key, password, multi-factor). Supports port forwarding for encrypted tunnels. Ed25519 keys are recommended over RSA. Modern SSH hardening disables password authentication entirely.
 
 10. **PGP/OpenPGP** uses hybrid encryption (session key + asymmetric) and provides compression, radix-64 armor, and a decentralized Web of Trust. Key management is self-service: users generate, sign, revoke, and rotate their own keys via subkey architecture. Used for email encryption, software signing, and file encryption.
 
-11. **Randomness is foundational:** Every cryptographic operation requires unpredictable random numbers. Use CSPRNGs only (`/dev/urandom`, `getrandom()`, `CryptGenRandom`). Predictable randomness destroys security regardless of algorithm strength. The Debian RNG disaster (2008) demonstrated this at scale → 32K possible keys instead of 2Â¹Â²â¸.
+11. **Randomness is foundational:** Every cryptographic operation requires unpredictable random numbers. Use CSPRNGs only (`/dev/urandom`, `getrandom()`, `CryptGenRandom`). Predictable randomness destroys security regardless of algorithm strength. The Debian RNG disaster (2008) demonstrated this at scale â†’ 32K possible keys instead of 2Ã‚Â¹Ã‚Â²Ã¢ÂÂ¸.
 
 12. **Key management is harder than cryptography:** The most secure algorithm is useless if keys are hardcoded, stored in world-readable files, transmitted in plaintext, or never rotated. Use HSMs or KMS for production key storage. Implement a complete lifecycle: generation, distribution, usage, rotation, destruction.
 
@@ -2557,35 +2557,35 @@ ECB encrypts each 16-byte block independently with the same key, so identical pl
 
 <details>
 <summary>Solution</summary>
-The S-box is constructed via multiplicative inverse in GF(2^8) followed by an affine transformation. Non-linearity prevents linear cryptanalysis by ensuring the output is not a linear function of the input — without it, AES could be broken with linear algebra.
+The S-box is constructed via multiplicative inverse in GF(2^8) followed by an affine transformation. Non-linearity prevents linear cryptanalysis by ensuring the output is not a linear function of the input â€” without it, AES could be broken with linear algebra.
 </details>
 
-3. Walk through the RSA key generation with p=17, q=13. Compute n, φ(n), choose e, compute d.
+3. Walk through the RSA key generation with p=17, q=13. Compute n, Ï†(n), choose e, compute d.
 
 <details>
 <summary>Solution</summary>
-n = 17×13 = 221. φ(n) = 16×12 = 192. Choose e = 5 (coprime to 192). Compute d = e⁻¹ mod 192 = 77 (since 5×77 = 385 ≡ 1 mod 192). Public key: (n=221, e=5). Private key: d=77.
+n = 17Ã—13 = 221. Ï†(n) = 16Ã—12 = 192. Choose e = 5 (coprime to 192). Compute d = eâ»Â¹ mod 192 = 77 (since 5Ã—77 = 385 â‰¡ 1 mod 192). Public key: (n=221, e=5). Private key: d=77.
 </details>
 
 4. Explain why Diffie-Hellman is vulnerable to MITM without authentication.
 
 <details>
 <summary>Solution</summary>
-DH does not authenticate the parties. An attacker can intercept both public values, establish separate DH keys with each party, and relay messages — each party believes they are talking directly to the other. Authentication (digital signatures or pre-shared keys) is required to prevent this.
+DH does not authenticate the parties. An attacker can intercept both public values, establish separate DH keys with each party, and relay messages â€” each party believes they are talking directly to the other. Authentication (digital signatures or pre-shared keys) is required to prevent this.
 </details>
 
 5. What are the three properties of a cryptographic hash function? Which one does the birthday attack exploit?
 
 <details>
 <summary>Solution</summary>
-Preimage resistance, second-preimage resistance, and collision resistance. The birthday attack exploits collision resistance — finding any two inputs with the same hash is easier than finding a specific preimage due to the birthday paradox (~2^(n/2) vs 2^n).
+Preimage resistance, second-preimage resistance, and collision resistance. The birthday attack exploits collision resistance â€” finding any two inputs with the same hash is easier than finding a specific preimage due to the birthday paradox (~2^(n/2) vs 2^n).
 </details>
 
 6. Compare the security implications of nonce reuse in GCM vs CTR mode.
 
 <details>
 <summary>Solution</summary>
-In CTR, nonce reuse leaks the XOR of the two plaintexts (keystream is identical). In GCM, nonce reuse also leaks the XOR AND reveals the authentication key, allowing forgeries. GCM nonce reuse is catastrophic — confidentiality AND authentication are broken.
+In CTR, nonce reuse leaks the XOR of the two plaintexts (keystream is identical). In GCM, nonce reuse also leaks the XOR AND reveals the authentication key, allowing forgeries. GCM nonce reuse is catastrophic â€” confidentiality AND authentication are broken.
 </details>
 
 7. Why does TLS 1.3 require forward secrecy while TLS 1.2 made it optional?
@@ -2599,7 +2599,7 @@ Forward secrecy ensures that compromising the server's long-term key does not de
 
 <details>
 <summary>Solution</summary>
-In basic OCSP, the client must contact the CA's OCSP responder directly (privacy leak, extra latency, responder may be unreachable). With stapling, the server fetches a time-stamped OCSP response from the CA during the TLS handshake and appends it to the Certificate message — eliminating the extra client-to-CA round trip.
+In basic OCSP, the client must contact the CA's OCSP responder directly (privacy leak, extra latency, responder may be unreachable). With stapling, the server fetches a time-stamped OCSP response from the CA during the TLS handshake and appends it to the Certificate message â€” eliminating the extra client-to-CA round trip.
 </details>
 
 9. What is the "harvest now, decrypt later" threat?
@@ -2613,7 +2613,7 @@ Attackers collect encrypted traffic today and store it, intending to decrypt it 
 
 <details>
 <summary>Solution</summary>
-1. ClientHello (key_share, supported_groups, cipher suites) → Server. 2. ServerHello (selected params + key_share) → Client. 3. Server sends EncryptedExtensions, Certificate, CertificateVerify, Finished. 4. Client sends Finished. 5. Application Data (1-RTT complete). See the Mermaid diagram earlier in this chapter for the full sequence.
+1. ClientHello (key_share, supported_groups, cipher suites) â†’ Server. 2. ServerHello (selected params + key_share) â†’ Client. 3. Server sends EncryptedExtensions, Certificate, CertificateVerify, Finished. 4. Client sends Finished. 5. Application Data (1-RTT complete). See the Mermaid diagram earlier in this chapter for the full sequence.
 </details>
 
 ### Application Problems
@@ -2629,10 +2629,10 @@ In CBC, each repeated plaintext block produces a different ciphertext block (cha
 
 <details>
 <summary>Solution</summary>
-n = 11×13 = 143. φ(n) = 10×12 = 120. d = 7⁻¹ mod 120 = 103. Encrypt: c = 5⁷ mod 143 = 78125 mod 143 = 47. Decrypt: m = 47¹⁰³ mod 143 = 5 (using modular exponentiation).
+n = 11Ã—13 = 143. Ï†(n) = 10Ã—12 = 120. d = 7â»Â¹ mod 120 = 103. Encrypt: c = 5â· mod 143 = 78125 mod 143 = 47. Decrypt: m = 47Â¹â°Â³ mod 143 = 5 (using modular exponentiation).
 </details>
 
-3. **Hash Collision:** Write a script that searches for a SHA-256 partial collision (first 4 hex characters match, ≈2¹⁶ attempts needed). Verify the collision.
+3. **Hash Collision:** Write a script that searches for a SHA-256 partial collision (first 4 hex characters match, â‰ˆ2Â¹â¶ attempts needed). Verify the collision.
 
 <details>
 <summary>Solution</summary>
@@ -2667,7 +2667,7 @@ HMAC-SHA256("key", "The quick brown fox") = f7bc83f430538424b13298e6aa6fb143ef4d
 
 <details>
 <summary>Solution</summary>
-The heartbeat request included a length field not validated against the actual payload — the server trusted the length and read that many bytes from memory. Rust's memory safety guarantees would prevent this out-of-bounds read at compile time.
+The heartbeat request included a length field not validated against the actual payload â€” the server trusted the length and read that many bytes from memory. Rust's memory safety guarantees would prevent this out-of-bounds read at compile time.
 </details>
 
 8. **Logjam Defense:** Your organization has legacy systems that require DHE cipher suites. Design a migration plan to eliminate Logjam risk. Include server configuration changes, testing strategy, and monitoring.
@@ -2691,10 +2691,10 @@ Use NIST FIPS 197 test vector: plaintext = 0x3243f6a8885a308d313198a2e0370734, k
 
 <details>
 <summary>Solution</summary>
-n = 3233, φ(n) = 3120. Choose e = 17, d = 2753. Encrypt: c = m^17 mod 3233. Decrypt: m = c^2753 mod 3233. Verify m === decrypt(encrypt(m)).
+n = 3233, Ï†(n) = 3120. Choose e = 17, d = 2753. Encrypt: c = m^17 mod 3233. Decrypt: m = c^2753 mod 3233. Verify m === decrypt(encrypt(m)).
 </details>
 
-11. **Collision Finder:** Write a program that searches for a SHA-256 collision on the first 24 bits (3 hex characters, â‰ˆ2Â¹Â² attempts). Use a hashmap to detect collisions. Report which pairs collide and how many attempts were needed.
+11. **Collision Finder:** Write a program that searches for a SHA-256 collision on the first 24 bits (3 hex characters, Ã¢â€°Ë†2Ã‚Â¹Ã‚Â² attempts). Use a hashmap to detect collisions. Report which pairs collide and how many attempts were needed.
 
 <details>
 <summary>Solution</summary>
@@ -2712,14 +2712,14 @@ Use Node.js `crypto` or Python `ssl` module. Connect via TLS socket, retrieve ce
 
 <details>
 <summary>Solution</summary>
-RFC 2104: HMAC(K,m) = H((K' ⊕ opad) || H((K' ⊕ ipad) || m)). K' = K padded to 64 bytes, ipad = 0x36, opad = 0x5c. Expected: f7bc83f430538424b13298e6aa6fb143ef4d59a14946175997479dbc2d1a3cd8.
+RFC 2104: HMAC(K,m) = H((K' âŠ• opad) || H((K' âŠ• ipad) || m)). K' = K padded to 64 bytes, ipad = 0x36, opad = 0x5c. Expected: f7bc83f430538424b13298e6aa6fb143ef4d59a14946175997479dbc2d1a3cd8.
 </details>
 
 14. **Constant-Time Comparison:** Write a constant-time byte array comparison function. Demonstrate its timing behavior versus a naive comparison by measuring both on matching and non-matching inputs.
 
 <details>
 <summary>Solution</summary>
-Constant-time: XOR all bytes together, check if result is 0. Always processes all bytes. Naive comparison exits early on first mismatch. Use `performance.now()` to measure timing differences — constant-time shows equal duration regardless of match position.
+Constant-time: XOR all bytes together, check if result is 0. Always processes all bytes. Naive comparison exits early on first mismatch. Use `performance.now()` to measure timing differences â€” constant-time shows equal duration regardless of match position.
 </details>
 
 ### Research Questions
@@ -2736,14 +2736,14 @@ NIST has standardized CRYSTALS-Kyber (KEM) and CRYSTALS-Dilithium (signatures). 
 
 <details>
 <summary>Solution</summary>
-CRLite uses a Bloom filter cascade distributed in Firefox updates — compact (~1MB), privacy-preserving, updated daily. CRLSets are push-lists of revoked serials (~250KB) in Chrome — low bandwidth, fast check, but not real-time. Both avoid the privacy leak of OCSP (CA learns which sites you visit) and the bandwidth of full CRLs.
+CRLite uses a Bloom filter cascade distributed in Firefox updates â€” compact (~1MB), privacy-preserving, updated daily. CRLSets are push-lists of revoked serials (~250KB) in Chrome â€” low bandwidth, fast check, but not real-time. Both avoid the privacy leak of OCSP (CA learns which sites you visit) and the bandwidth of full CRLs.
 </details>
 
 17. **Formal Verification of Crypto:** Research projects that use formal methods to verify cryptographic implementations (e.g., EverCrypt, HACL*, AWS s2n-quic). How does formal verification differ from traditional testing? What classes of bugs does it catch?
 
 <details>
 <summary>Solution</summary>
-Formal verification uses mathematical proofs to show the implementation matches a specification (e.g., using F* or Coq). Unlike testing, it covers all possible inputs and states — proving absence of entire bug classes (buffer overflows, timing side-channels, incorrect state transitions). EverCrypt provides verified implementations of AES-GCM, Curve25519, SHA-3 with proofs of memory safety, functional correctness, and constant-time execution.
+Formal verification uses mathematical proofs to show the implementation matches a specification (e.g., using F* or Coq). Unlike testing, it covers all possible inputs and states â€” proving absence of entire bug classes (buffer overflows, timing side-channels, incorrect state transitions). EverCrypt provides verified implementations of AES-GCM, Curve25519, SHA-3 with proofs of memory safety, functional correctness, and constant-time execution.
 </details>
 
 ## TypeScript Implementations
@@ -2752,7 +2752,7 @@ Formal verification uses mathematical proofs to show the implementation matches 
 
 ```typescript
 /**
- * AesEncryption — AES-256-GCM encryption utility.
+ * AesEncryption â€” AES-256-GCM encryption utility.
  * Uses Node.js native crypto module.
  * Provides encrypt/decrypt with PBKDF2 key derivation.
  */
@@ -2796,7 +2796,7 @@ class AesEncryption {
 
   /**
    * Encrypts plaintext using AES-256-GCM.
-   * Returns ciphertext, IV, authentication tag, and PBKDF2 salt — all hex-encoded.
+   * Returns ciphertext, IV, authentication tag, and PBKDF2 salt â€” all hex-encoded.
    */
   encrypt(input: EncryptionInput): EncryptionResult {
     const salt = crypto.randomBytes(this.saltLength);
@@ -2897,7 +2897,7 @@ async function runAesExample(): Promise<void> {
   console.log('\nDecrypted:', decrypted);
   console.log('Match:', secret === decrypted);
 
-  // Tamper test — verify GCM authentication catches modifications
+  // Tamper test â€” verify GCM authentication catches modifications
   try {
     const tamperedCiphertext = encrypted.ciphertext.substring(0, encrypted.ciphertext.length - 2) + '00';
     aes.decrypt(tamperedCiphertext, password, encrypted.iv, encrypted.tag, encrypted.salt, aad);
@@ -2914,7 +2914,7 @@ runAesExample().catch(console.error);
 
 ```typescript
 /**
- * DigitalSignature — RSA-based digital signature utility.
+ * DigitalSignature â€” RSA-based digital signature utility.
  * Uses Node.js native crypto module.
  * Implements key generation, signing (RSASSA-PKCS1-v1_5 with SHA-256), and verification.
  */
@@ -3015,17 +3015,17 @@ function runSignatureDemo(): void {
 
   // 3. Verify with correct key
   const isValid = dsa.verify(message, signature, keys.publicKey);
-  console.log('Verification (correct key):', isValid ? '✅ PASSED' : '❌ FAILED');
+  console.log('Verification (correct key):', isValid ? 'âœ… PASSED' : 'âŒ FAILED');
 
   // 4. Verify with tampered message
   const tamperedMessage = 'This contract is legally binding. Agreed on 2025-01-01.';
   const isTamperedValid = dsa.verify(tamperedMessage, signature, keys.publicKey);
-  console.log('Verification (tampered message):', isTamperedValid ? '❌ FAILED' : '✅ PASSED (tampering detected)');
+  console.log('Verification (tampered message):', isTamperedValid ? 'âŒ FAILED' : 'âœ… PASSED (tampering detected)');
 
   // 5. Verify with wrong key
   const wrongKeys = dsa.generateKeyPair();
   const isWrongKeyValid = dsa.verify(message, signature, wrongKeys.publicKey);
-  console.log('Verification (wrong key):', isWrongKeyValid ? '❌ FAILED' : '✅ PASSED (wrong key rejected)');
+  console.log('Verification (wrong key):', isWrongKeyValid ? 'âŒ FAILED' : 'âœ… PASSED (wrong key rejected)');
 
   // 6. File signing demo
   const fileContent = Buffer.from('#!/usr/bin/env node\nconsole.log("Hello, World!");');
@@ -3118,13 +3118,13 @@ flowchart LR
 
 | Takeaway | Application |
 |----------|-------------|
-| Symmetric Encryption (AES-256-GCM, ChaCha20-Poly1305) | Use for bulk data encryption at rest and in transit — prefer GCM mode for authenticated encryption |
-| Asymmetric Encryption (RSA-3072+, ECC P-256, X25519) | Use for key exchange and digital signatures — ECC provides equivalent security with smaller keys |
+| Symmetric Encryption (AES-256-GCM, ChaCha20-Poly1305) | Use for bulk data encryption at rest and in transit â€” prefer GCM mode for authenticated encryption |
+| Asymmetric Encryption (RSA-3072+, ECC P-256, X25519) | Use for key exchange and digital signatures â€” ECC provides equivalent security with smaller keys |
 | Hash Functions (SHA-256, SHA-3, BLAKE2b) | Verify file integrity, store password hashes (with salt), and create digital signatures |
 | Digital Signatures & PKI | Sign software releases with Ed25519 or RSA-PSS; validate certificate chains with OCSP stapling |
-| TLS 1.3 | Use as the standard for all web traffic — provides 1-RTT handshake, forward secrecy, and removes legacy algorithms |
+| TLS 1.3 | Use as the standard for all web traffic â€” provides 1-RTT handshake, forward secrecy, and removes legacy algorithms |
 | Key Management | Store keys in HSM or KMS; rotate regularly; use envelope encryption for large data; never hardcode secrets |
-| Post-Quantum Cryptography | Begin hybrid migration (X25519Kyber768) for long-lived secrets — harvest-now-decrypt-later is a real threat |
+| Post-Quantum Cryptography | Begin hybrid migration (X25519Kyber768) for long-lived secrets â€” harvest-now-decrypt-later is a real threat |
 
 ---
 
@@ -3162,8 +3162,8 @@ Test your understanding of cryptography concepts with these 10 multiple-choice q
 
 ---
 
-> **Next Chapter:** Network Security → TCP/IP vulnerabilities, ARP spoofing, DoS/DDoS, Firewalls, IDS/IPS, VPNs, Wireless Security, DNS Security, Network Segmentation.
+> **Next Chapter:** Network Security â†’ TCP/IP vulnerabilities, ARP spoofing, DoS/DDoS, Firewalls, IDS/IPS, VPNs, Wireless Security, DNS Security, Network Segmentation.
 
 ---
 
-*Chapter 2: Cryptography → 2507 lines. Covers symmetric encryption (AES, ChaCha20, all modes), asymmetric encryption (RSA, DH, ECC, ECDH, ECDSA), hash functions (SHA-256/3, Blake2, MD5), HMAC, digital signatures, PKI (X.509, CA hierarchy, CRL, OCSP), TLS 1.3 handshake, SSH, PGP, practical openssl/gpg/Wireshark examples, case studies (Heartbleed, POODLE, SHAttered, Logjam), post-quantum cryptography, cryptography hardening checklist, common implementation mistakes, and interview preparation.*
+*Chapter 2: Cryptography â†’ 2507 lines. Covers symmetric encryption (AES, ChaCha20, all modes), asymmetric encryption (RSA, DH, ECC, ECDH, ECDSA), hash functions (SHA-256/3, Blake2, MD5), HMAC, digital signatures, PKI (X.509, CA hierarchy, CRL, OCSP), TLS 1.3 handshake, SSH, PGP, practical openssl/gpg/Wireshark examples, case studies (Heartbleed, POODLE, SHAttered, Logjam), post-quantum cryptography, cryptography hardening checklist, common implementation mistakes, and interview preparation.*

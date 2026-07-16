@@ -1,4 +1,4 @@
-# Chapter 9: Binary Search Trees
+﻿# Chapter 9: Binary Search Trees
 
 > **Previous:** [Chapter 8: Binary Trees](./08-binary-trees.md) | **Next:** [Heaps](./10-heaps.md)
 
@@ -13,16 +13,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-structures/09-bst/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/data-structures/09-bst/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/09-bst/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/data-structures/09-bst/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-structures/09-bst/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/data-structures/09-bst/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/09-bst/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/data-structures/09-bst/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-structures/09-bst/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/data-structures/09-bst/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/09-bst/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/data-structures/09-bst/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -33,11 +33,11 @@
 
 **Real-World Analogy: The Dictionary Search**
 
-Imagine you have a printed English dictionary with 100,000 words. You want to find the word "Binary." You do not flip page by page from the start — that would be \(O(n)\) linear search. Instead, you open the dictionary roughly in the middle. If "Binary" comes before the page you opened (alphabetically), you discard the entire right half and repeat on the left half. Each step cuts the search space in half. This is **binary search** — and a BST is the data structure that makes this possible dynamically, with insertions and deletions.
+Imagine you have a printed English dictionary with 100,000 words. You want to find the word "Binary." You do not flip page by page from the start â€” that would be \(O(n)\) linear search. Instead, you open the dictionary roughly in the middle. If "Binary" comes before the page you opened (alphabetically), you discard the entire right half and repeat on the left half. Each step cuts the search space in half. This is **binary search** â€” and a BST is the data structure that makes this possible dynamically, with insertions and deletions.
 
 A BST is like a self-organizing dictionary: every node keeps track of which side every word belongs to, so finding, adding, or removing a word never requires inspecting more than the height of the tree.
 
-> **Why not just use a sorted array?** Arrays support binary search in \(O(\log n)\) but insertion and deletion cost \(O(n)\) due to shifting elements. BSTs give \(O(\log n)\) for all three operations — search, insert, delete — on average.
+> **Why not just use a sorted array?** Arrays support binary search in \(O(\log n)\) but insertion and deletion cost \(O(n)\) due to shifting elements. BSTs give \(O(\log n)\) for all three operations â€” search, insert, delete â€” on average.
 
 ## Chapter at a Glance
 
@@ -47,9 +47,9 @@ A BST is like a self-organizing dictionary: every node keeps track of which side
 | Insert/Search | Compare key, descend left or right | Recursive or iterative both O(h) |
 | Deletion (3 cases) | Leaf, one child, two children | Two-child case uses successor swap |
 | Successor/Predecessor | Min of right subtree or ancestor | Useful for ordered traversal |
-| Floor/Ceiling | Largest ≤ key / Smallest ≥ key | Range queries and nearest-neighbor |
+| Floor/Ceiling | Largest â‰¤ key / Smallest â‰¥ key | Range queries and nearest-neighbor |
 | Check BST | Validate range (min, max) per node | Catch broken invariants |
-| Sorted Array → BST | Pick middle, recurse | Build balanced tree in O(n) |
+| Sorted Array â†’ BST | Pick middle, recurse | Build balanced tree in O(n) |
 | LCA in BST | First node between the two values | Simpler than binary tree LCA |
 | Complexity | O(log n) average, O(n) worst | Balanced tree guarantees O(log n) |
 
@@ -96,7 +96,7 @@ Duplicate keys may be handled by convention (left includes less-than-or-equal, o
    20  40 60  80
 ```
 
-**Why this works:** The BST invariant guarantees that an inorder traversal (left → root → right) yields keys in sorted order. For the tree above, inorder produces: 20, 30, 40, 50, 60, 70, 80. This property is what makes BSTs so powerful — you get a sorted sequence on demand without sorting.
+**Why this works:** The BST invariant guarantees that an inorder traversal (left â†’ root â†’ right) yields keys in sorted order. For the tree above, inorder produces: 20, 30, 40, 50, 60, 70, 80. This property is what makes BSTs so powerful â€” you get a sorted sequence on demand without sorting.
 
 ---
 
@@ -108,7 +108,7 @@ Duplicate keys may be handled by convention (left includes less-than-or-equal, o
 **Algorithm Steps:**
 
 1. Start at the root node.
-2. If the root is null, the key does not exist — return false.
+2. If the root is null, the key does not exist â€” return false.
 3. If the key equals the root's data, return true (found).
 4. If the key is **less than** the root's data, recursively search the **left** subtree.
 5. If the key is **greater than** the root's data, recursively search the **right** subtree.
@@ -143,7 +143,7 @@ Initial:        Step 1:          Step 2:          Step 3:
      / \      / \  / \        /  \  / \        /  \  / \
     40  80   20 40 60 80     20  40 60 80     20  40 60 80
                               ^                   ^
-                           30→right            40==40 ✓
+                           30â†’right            40==40 âœ“
 ```
 
 **C++:**
@@ -264,7 +264,7 @@ function insert(root, key):
         root.left = insert(root.left, key)
     else if key > root.data:
         root.right = insert(root.right, key)
-    // else: duplicate — ignore or increment count
+    // else: duplicate â€” ignore or increment count
     return root
 ```
 
@@ -273,12 +273,12 @@ function insert(root, key):
 | Step | Value | Tree After Insertion |
 |------|-------|---------------------|
 | 1 | 50 | `50` |
-| 2 | 30 | `50 → left: 30` |
-| 3 | 70 | `50 → right: 70` |
-| 4 | 20 | `50 → left(30) → left: 20` |
-| 5 | 40 | `50 → left(30) → right: 40` |
-| 6 | 60 | `50 → right(70) → left: 60` |
-| 7 | 80 | `50 → right(70) → right: 80` |
+| 2 | 30 | `50 â†’ left: 30` |
+| 3 | 70 | `50 â†’ right: 70` |
+| 4 | 20 | `50 â†’ left(30) â†’ left: 20` |
+| 5 | 40 | `50 â†’ left(30) â†’ right: 40` |
+| 6 | 60 | `50 â†’ right(70) â†’ left: 60` |
+| 7 | 80 | `50 â†’ right(70) â†’ right: 80` |
 
 ```
 Final tree:
@@ -299,7 +299,7 @@ BSTNode<T>* insert(BSTNode<T>* node, const T& value) {
         node->left = insert(node->left, value);
     else if (value > node->data)
         node->right = insert(node->right, value);
-    // duplicate — ignore
+    // duplicate â€” ignore
     return node;
 }
 
@@ -402,9 +402,9 @@ public Node insertIterative(Node root, int value) {
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| \(O(\log n)\) average — fast for random data | \(O(n)\) worst-case for sorted/almost-sorted input |
+| \(O(\log n)\) average â€” fast for random data | \(O(n)\) worst-case for sorted/almost-sorted input |
 | Simple recursive implementation | Recursive may overflow stack for deep trees |
-| No restructuring needed for insert | No balancing guarantee — tree degrades silently |
+| No restructuring needed for insert | No balancing guarantee â€” tree degrades silently |
 | Inorder traversal stays sorted after insert | Duplicate handling is non-standard |
 
 ---
@@ -412,15 +412,15 @@ public Node insertIterative(Node root, int value) {
 ### BST Deletion
 
 
-**Real-World Analogy:** Removing a page from a dictionary. If the page is a leaf (no sub-entries), you simply remove it. If the page has only a left or right section (one child), you replace it with that section. If the page has both left and right sub-sections (two children), you find the smallest page in the right sub-section — the "inorder successor" — move its content into the current page, and then delete that smallest page instead. This preserves the dictionary's alphabetical order.
+**Real-World Analogy:** Removing a page from a dictionary. If the page is a leaf (no sub-entries), you simply remove it. If the page has only a left or right section (one child), you replace it with that section. If the page has both left and right sub-sections (two children), you find the smallest page in the right sub-section â€” the "inorder successor" â€” move its content into the current page, and then delete that smallest page instead. This preserves the dictionary's alphabetical order.
 
 **Algorithm Steps (3 Cases):**
 
 1. **Base:** If root is null, return null (key not found).
 2. Navigate to the node: if key &lt; root.data, recurse left; if key &gt; root.data, recurse right.
-3. **Case 1 — Leaf (no children):** Delete the node, return null to the parent.
-4. **Case 2 — One child:** Save the child pointer, delete the node, return the child to the parent.
-5. **Case 3 — Two children:**
+3. **Case 1 â€” Leaf (no children):** Delete the node, return null to the parent.
+4. **Case 2 â€” One child:** Save the child pointer, delete the node, return the child to the parent.
+5. **Case 3 â€” Two children:**
    - Find the inorder successor (smallest node in the right subtree).
    - Copy the successor's data into the current node.
    - Recursively delete the successor from the right subtree.
@@ -436,7 +436,7 @@ function delete(root, key):
     else if key > root.data:
         root.right = delete(root.right, key)
     else:
-        // key found — three cases
+        // key found â€” three cases
         if root.left == null and root.right == null:   // Case 1: leaf
             delete root
             return null
@@ -455,7 +455,7 @@ function delete(root, key):
 
 Initial tree:
 ```
-        50 ← delete
+        50 â† delete
        /  \
      30    70
     /  \   / \
@@ -466,10 +466,10 @@ Step-by-step:
 
 | Step | Action | Tree State |
 |------|--------|------------|
-| 1 | Find 50 at root. Two children → find inorder successor | `min of right subtree(70) = 60` |
+| 1 | Find 50 at root. Two children â†’ find inorder successor | `min of right subtree(70) = 60` |
 | 2 | Copy successor's data (60) into root | Root data becomes 60 |
-| 3 | Recursively delete 60 from right subtree | Descend to 70 → left(60) |
-| 4 | 60 is a leaf → delete and return null | 70's left becomes null |
+| 3 | Recursively delete 60 from right subtree | Descend to 70 â†’ left(60) |
+| 4 | 60 is a leaf â†’ delete and return null | 70's left becomes null |
 
 ```
 Final tree:
@@ -626,26 +626,26 @@ public Node findMin(Node node) {
 ### Min, Max, Successor, Predecessor
 
 
-**Real-World Analogy:** In a well-organized library, the "minimum" is the book at the far-left end of the shelf — keep going left. The "maximum" is the book at the far-right end — keep going right. The "successor" of a book is the next book alphabetically (the leftmost book in its right-side section). The "predecessor" is the previous book (the rightmost book in its left-side section).
+**Real-World Analogy:** In a well-organized library, the "minimum" is the book at the far-left end of the shelf â€” keep going left. The "maximum" is the book at the far-right end â€” keep going right. The "successor" of a book is the next book alphabetically (the leftmost book in its right-side section). The "predecessor" is the previous book (the rightmost book in its left-side section).
 
-**Algorithm Steps — Min:**
+**Algorithm Steps â€” Min:**
 
 1. Start at the root.
 2. While the node has a left child, move to the left child.
 3. The current node is the minimum.
 
-**Algorithm Steps — Max:**
+**Algorithm Steps â€” Max:**
 
 1. Start at the root.
 2. While the node has a right child, move to the right child.
 3. The current node is the maximum.
 
-**Algorithm Steps — Successor:**
+**Algorithm Steps â€” Successor:**
 
 1. If the node has a **right subtree**, the successor is the **minimum** of that subtree.
 2. Otherwise, walk from the **root** to the node. The successor is the **most recent ancestor** where the node lies in the **left** subtree.
 
-**Algorithm Steps — Predecessor:**
+**Algorithm Steps â€” Predecessor:**
 
 1. If the node has a **left subtree**, the predecessor is the **maximum** of that subtree.
 2. Otherwise, walk from the **root** to the node. The predecessor is the **most recent ancestor** where the node lies in the **right** subtree.
@@ -688,7 +688,7 @@ function predecessor(root, target):
     return pred
 ```
 
-**Dry Run — Successor of 60:**
+**Dry Run â€” Successor of 60:**
 
 Tree: `[50, 30, 70, 20, 40, 60, 80]`
 
@@ -701,7 +701,7 @@ Tree: `[50, 30, 70, 20, 40, 60, 80]`
 
 Successor of 60 = **70**. Inorder after 60 is: ..., 60, **70**, 80.
 
-**Dry Run — Predecessor of 70:**
+**Dry Run â€” Predecessor of 70:**
 
 | Step | Current Node | Action | Reason |
 |------|-------------|--------|--------|
@@ -855,7 +855,7 @@ public Node predecessor(Node root, Node target) {
 | Operation | Average | Worst | Why |
 |-----------|---------|-------|-----|
 | Min / Max | \(O(h)\) | \(O(n)\) | Walk the leftmost/rightmost path |
-| Successor (has right subtree) | \(O(h)\) | \(O(n)\) | Min of subtree of height ≤ h |
+| Successor (has right subtree) | \(O(h)\) | \(O(n)\) | Min of subtree of height â‰¤ h |
 | Successor (no right subtree) | \(O(h)\) | \(O(n)\) | Root-to-node walk |
 | Predecessor (has left subtree) | \(O(h)\) | \(O(n)\) | Max of subtree |
 | Predecessor (no left subtree) | \(O(h)\) | \(O(n)\) | Root-to-node walk |
@@ -875,16 +875,16 @@ public Node predecessor(Node root, Node target) {
 ### Floor and Ceiling in BST
 
 
-**Real-World Analogy:** You are looking for a taxi that can seat exactly 5 passengers. No taxi has exactly 5 seats. The "floor" is the largest taxi with ≤ 5 seats (a 4-seater). The "ceiling" is the smallest taxi with ≥ 5 seats (a 6-seater). In a BST, floor(key) = largest value ≤ key; ceil(key) = smallest value ≥ key.
+**Real-World Analogy:** You are looking for a taxi that can seat exactly 5 passengers. No taxi has exactly 5 seats. The "floor" is the largest taxi with â‰¤ 5 seats (a 4-seater). The "ceiling" is the smallest taxi with â‰¥ 5 seats (a 6-seater). In a BST, floor(key) = largest value â‰¤ key; ceil(key) = smallest value â‰¥ key.
 
-**Algorithm Steps — Floor:**
+**Algorithm Steps â€” Floor:**
 
 1. If root is null, return null.
 2. If root.data == key, return root.data.
 3. If root.data > key, the floor must be in the **left** subtree (current root is too large).
 4. If root.data &lt; key, root.data is a candidate. The floor might still be in the **right** subtree if there is a value between root.data and key.
 
-**Algorithm Steps — Ceiling:**
+**Algorithm Steps â€” Ceiling:**
 
 1. If root is null, return null.
 2. If root.data == key, return root.data.
@@ -913,7 +913,7 @@ function ceil(root, key):
     return root.data
 ```
 
-**Dry Run — Floor of 55:**
+**Dry Run â€” Floor of 55:**
 
 Tree: `[50, 30, 70, 20, 40, 60, 80]`
 
@@ -922,18 +922,18 @@ Tree: `[50, 30, 70, 20, 40, 60, 80]`
 | 1 | 50 | 50 &lt; 55, candidate=50, go right | 50 |
 | 2 | 70 | 70 > 55, go left | 50 |
 | 3 | 60 | 60 > 55, go left | 50 |
-| 4 | null | Return null → propagate | Return **50** |
+| 4 | null | Return null â†’ propagate | Return **50** |
 
 Floor of 55 = **50**.
 
-**Dry Run — Ceiling of 55:**
+**Dry Run â€” Ceiling of 55:**
 
 | Step | Node | Action | Ceil Candidate |
 |------|------|--------|----------------|
 | 1 | 50 | 50 &lt; 55, go right | null |
 | 2 | 70 | 70 > 55, candidate=70, go left | 70 |
 | 3 | 60 | 60 > 55, candidate=60, go left | 60 |
-| 4 | null | Return null → propagate | Return **60** |
+| 4 | null | Return null â†’ propagate | Return **60** |
 
 Ceiling of 55 = **60**.
 
@@ -1008,7 +1008,7 @@ public Node ceil(Node root, int key) {
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
 | Floor | \(O(h)\) | \(O(h)\) | Single path descent with potential extra branch |
-| Ceiling | \(O(h)\) | \(O(h)\) | Same as floor — mirror direction |
+| Ceiling | \(O(h)\) | \(O(h)\) | Same as floor â€” mirror direction |
 
 **Edge Cases:**
 
@@ -1030,9 +1030,9 @@ public Node ceil(Node root, int key) {
 
 1. Start at the root.
 2. If root is null, return.
-3. If root.data > L, recurse into the **left** subtree — there may be valid keys on the left.
-4. If L ≤ root.data ≤ R, **print** or collect root.data.
-5. If root.data &lt; R, recurse into the **right** subtree — there may be valid keys on the right.
+3. If root.data > L, recurse into the **left** subtree â€” there may be valid keys on the left.
+4. If L â‰¤ root.data â‰¤ R, **print** or collect root.data.
+5. If root.data &lt; R, recurse into the **right** subtree â€” there may be valid keys on the right.
 
 **Pseudocode:**
 
@@ -1051,16 +1051,16 @@ function rangeQuery(root, L, R):
 
 | Step | Node | Action | Output |
 |------|------|--------|--------|
-| 1 | 50 | 50 > 30 → go left | — |
-| 2 | 30 | 30 > 20 (L) → go left; 30 in [30,70] → print; 30 &lt; 70 → go right | 30 |
-| 3 | 20 | 20 not ≥ 30, skip; 20 &lt; 70 → go right (no-op) | — |
-| 4 | 40 | 40 > 30 → go left (null); 40 in [30,70] → print; 40 &lt; 70 → go right (null) | 40 |
-| 5 | Back at 50 | 50 in [30,70] → print | 50 |
-| 6 | 70 | 70 > 30 → go left; 70 in [30,70] → print; 70 not &lt; 70 → stop | 60, 70 |
+| 1 | 50 | 50 > 30 â†’ go left | â€” |
+| 2 | 30 | 30 > 20 (L) â†’ go left; 30 in [30,70] â†’ print; 30 &lt; 70 â†’ go right | 30 |
+| 3 | 20 | 20 not â‰¥ 30, skip; 20 &lt; 70 â†’ go right (no-op) | â€” |
+| 4 | 40 | 40 > 30 â†’ go left (null); 40 in [30,70] â†’ print; 40 &lt; 70 â†’ go right (null) | 40 |
+| 5 | Back at 50 | 50 in [30,70] â†’ print | 50 |
+| 6 | 70 | 70 > 30 â†’ go left; 70 in [30,70] â†’ print; 70 not &lt; 70 â†’ stop | 60, 70 |
 
 Output: **30, 40, 50, 60, 70**
 
-**Visual:** Nodes visited but skipped: 80 (70.right — 80 > 70, so right branch of 70 is not explored). Nodes visited: 50, 30, 20, 40, 60, 70, 80? No — 80 is never visited because at node 70, R=70, and 70 is not &lt; 70, so we do not go right.
+**Visual:** Nodes visited but skipped: 80 (70.right â€” 80 > 70, so right branch of 70 is not explored). Nodes visited: 50, 30, 20, 40, 60, 70, 80? No â€” 80 is never visited because at node 70, R=70, and 70 is not &lt; 70, so we do not go right.
 
 **C++:**
 
@@ -1126,7 +1126,7 @@ public void rangeQuery(Node root, int L, int R, List<Integer> result) {
 | Empty range (L > R) | No output |
 | No nodes in range | k = 0, still visit O(h) nodes along boundary |
 | L = R (single value) | Returns exactly that node if it exists |
-| L = -∞, R = +∞ | Full inorder traversal, O(n) |
+| L = -âˆž, R = +âˆž | Full inorder traversal, O(n) |
 
 ---
 
@@ -1139,14 +1139,14 @@ public void rangeQuery(Node root, int L, int R, List<Integer> result) {
 
 1. Define a recursive function `isBST(root, min, max)`.
 2. If root is null, return true (empty tree is a BST).
-3. If root.data ≤ min or root.data ≥ max, return false (violation).
+3. If root.data â‰¤ min or root.data â‰¥ max, return false (violation).
 4. Recursively check: `isBST(root.left, min, root.data)` and `isBST(root.right, root.data, max)`.
 
 **Algorithm Steps (Using Inorder):**
 
 1. Perform an inorder traversal of the tree.
 2. Track the previous visited node's value.
-3. If current node's value ≤ previous value, the tree is not a BST.
+3. If current node's value â‰¤ previous value, the tree is not a BST.
 4. If traversal completes without violation, it is a BST.
 
 **Pseudocode (Range Method):**
@@ -1171,35 +1171,35 @@ function isBSTInorder(root):
     return isBSTInorder(root.right)
 ```
 
-**Dry Run — Range Method:**
+**Dry Run â€” Range Method:**
 
 Test tree: `[50, 30, 70, 20, 40, 60, 80]`
 
 | Step | Node | Allowed Range | Valid? |
 |------|------|---------------|--------|
-| 1 | 50 | (-∞, ∞) | 50 in range ✓ |
-| 2 | 30 | (-∞, 50) | 30 in range ✓ |
-| 3 | 20 | (-∞, 30) | 20 in range ✓ |
-| 4 | 40 | (30, 50) | 40 in range ✓ |
-| 5 | 70 | (50, ∞) | 70 in range ✓ |
-| 6 | 60 | (50, 70) | 60 in range ✓ |
-| 7 | 80 | (70, ∞) | 80 in range ✓ |
+| 1 | 50 | (-âˆž, âˆž) | 50 in range âœ“ |
+| 2 | 30 | (-âˆž, 50) | 30 in range âœ“ |
+| 3 | 20 | (-âˆž, 30) | 20 in range âœ“ |
+| 4 | 40 | (30, 50) | 40 in range âœ“ |
+| 5 | 70 | (50, âˆž) | 70 in range âœ“ |
+| 6 | 60 | (50, 70) | 60 in range âœ“ |
+| 7 | 80 | (70, âˆž) | 80 in range âœ“ |
 
-Result: **Valid BST** ✓
+Result: **Valid BST** âœ“
 
-**Dry Run — Invalid Tree Test:**
+**Dry Run â€” Invalid Tree Test:**
 
 ```
       50
      /  \
-    30   40   ← Violation: 40 is in left subtree of 50 but 40 > 30
+    30   40   â† Violation: 40 is in left subtree of 50 but 40 > 30
 ```
 
 | Step | Node | Allowed Range | Valid? |
 |------|------|---------------|--------|
-| 1 | 50 | (-∞, ∞) | ✓ |
-| 2 | 30 | (-∞, 50) | ✓ |
-| 3 | 40 | (-∞, 30) | ✗ 40 ≥ 30 → **Invalid!** |
+| 1 | 50 | (-âˆž, âˆž) | âœ“ |
+| 2 | 30 | (-âˆž, 50) | âœ“ |
+| 3 | 40 | (-âˆž, 30) | âœ— 40 â‰¥ 30 â†’ **Invalid!** |
 
 **C++ (Range Method):**
 
@@ -1286,7 +1286,7 @@ public boolean isBSTInorder(Node root) {
 | Range | \(O(n)\) | \(O(h)\) | Single pass, no global state | Requires sentinel values |
 | Inorder | \(O(n)\) | \(O(h)\) | Intuitive (sorted = BST) | Global/static variable for prev |
 
-**Why \(O(n)\) for both?** Every node must be visited at least once to verify the invariant. There is no way to skip nodes — the BST check is always \(\Omega(n)\).
+**Why \(O(n)\) for both?** Every node must be visited at least once to verify the invariant. There is no way to skip nodes â€” the BST check is always \(\Omega(n)\).
 
 **Edge Cases:**
 
@@ -1294,7 +1294,7 @@ public boolean isBSTInorder(Node root) {
 |------|------------|
 | Empty tree | Yes |
 | Single node | Yes |
-| Duplicates (equal allowed in left) | Depends on ≤ vs &lt; in check |
+| Duplicates (equal allowed in left) | Depends on â‰¤ vs &lt; in check |
 | Right child &lt; parent | No |
 | Grandchild violates ancestor range | No (caught by range method) |
 
@@ -1310,7 +1310,7 @@ public boolean isBSTInorder(Node root) {
 ### Sorted Array to Balanced BST
 
 
-**Real-World Analogy:** You have a sorted list of 7 names and want to build a phonebook that allows fast lookups. The optimal strategy: pick the middle name as the root, recursively build the left half into the left subtree, and the right half into the right subtree. This guarantees the tree is as short as possible — height = ⌈log₂(n+1)⌉.
+**Real-World Analogy:** You have a sorted list of 7 names and want to build a phonebook that allows fast lookups. The optimal strategy: pick the middle name as the root, recursively build the left half into the left subtree, and the right half into the right subtree. This guarantees the tree is as short as possible â€” height = âŒˆlogâ‚‚(n+1)âŒ‰.
 
 **Algorithm Steps:**
 
@@ -1354,7 +1354,7 @@ Result:
    20  40 60  80
 ```
 
-Height = ⌈log₂(8)⌉ = 3. Perfectly balanced.
+Height = âŒˆlogâ‚‚(8)âŒ‰ = 3. Perfectly balanced.
 
 **C++:**
 
@@ -1404,7 +1404,7 @@ public Node sortedArrayToBST(int[] arr, int left, int right) {
 | Space (call stack) | \(O(\log n)\) | Balanced recursion depth = tree height |
 | Space (total) | \(O(n)\) | n new nodes created |
 
-**Why \(O(n)\) and not \(O(n \log n)\)?** Each element is processed once in the middle-finding step. There is no comparison or sorting — the input is already sorted. The recurrence is \(T(n) = 2T(n/2) + O(1)\), which solves to \(O(n)\).
+**Why \(O(n)\) and not \(O(n \log n)\)?** Each element is processed once in the middle-finding step. There is no comparison or sorting â€” the input is already sorted. The recurrence is \(T(n) = 2T(n/2) + O(1)\), which solves to \(O(n)\).
 
 **Edge Cases:**
 
@@ -1448,7 +1448,7 @@ function LCA(root, p, q):
 
 | Step | Node | p=20, q=60 | Action |
 |------|------|------------|--------|
-| 1 | 50 | 20&lt;50, 60&gt;50 | p on left, q on right → **LCA = 50** |
+| 1 | 50 | 20&lt;50, 60&gt;50 | p on left, q on right â†’ **LCA = 50** |
 
 LCA of 40 and 80:
 
@@ -1461,7 +1461,7 @@ LCA of 20 and 40:
 | Step | Node | p=20, q=40 | Action |
 |------|------|------------|--------|
 | 1 | 50 | Both &lt; 50 | Go left |
-| 2 | 30 | 20&lt;30, 40&gt;30 | p left, q right → **LCA = 30** |
+| 2 | 30 | 20&lt;30, 40&gt;30 | p left, q right â†’ **LCA = 30** |
 
 **C++:**
 
@@ -1553,7 +1553,7 @@ public Node LCAIterative(Node root, int p, int q) {
 | Space (recursive) | \(O(h)\) | Call stack depth |
 | Space (iterative) | \(O(1)\) | No extra memory |
 
-**Why is BST LCA simpler than binary tree LCA?** In a general binary tree, LCA requires post-order traversal and ancestor tracking — \(O(n)\) every time. In a BST, the ordering property lets you decide direction at each node, making it \(O(h)\) with a trivial while loop.
+**Why is BST LCA simpler than binary tree LCA?** In a general binary tree, LCA requires post-order traversal and ancestor tracking â€” \(O(n)\) every time. In a BST, the ordering property lets you decide direction at each node, making it \(O(h)\) with a trivial while loop.
 
 **Edge Cases:**
 
@@ -1561,7 +1561,7 @@ public Node LCAIterative(Node root, int p, int q) {
 |------|----------|
 | p == q | Returns the node itself |
 | p is ancestor of q | Returns p |
-| Both not in tree | Returns null (BST property would guide to leaf, but the value not found is not detected here — caller must verify presence) |
+| Both not in tree | Returns null (BST property would guide to leaf, but the value not found is not detected here â€” caller must verify presence) |
 | Empty tree | Returns null |
 | One node null | Returns null |
 
@@ -1579,7 +1579,7 @@ public Node LCAIterative(Node root, int p, int q) {
 | Floor / Ceiling | \( O(h) \) | \( O(n) \) |
 | Range Query | \( O(k + h) \) | \( O(n) \) |
 | Check BST | \( O(n) \) | \( O(n) \) |
-| Sorted Array → BST | \( O(n) \) | \( O(n) \) |
+| Sorted Array â†’ BST | \( O(n) \) | \( O(n) \) |
 | LCA | \( O(h) \) | \( O(n) \) |
 
 ---
@@ -1878,7 +1878,7 @@ Predecessor of 70: 60
 
 **Problem:** Given the root of a binary tree, determine if it is a valid BST.
 
-**Approach:** Use the range method — each node must lie within an allowed interval (min, max). The interval narrows as we descend.
+**Approach:** Use the range method â€” each node must lie within an allowed interval (min, max). The interval narrows as we descend.
 
 ```python
 def is_valid_bst(root):
@@ -1900,7 +1900,7 @@ def is_valid_bst(root):
 
 **Problem:** Find the kth smallest element in a BST (1-indexed).
 
-**Approach:** Inorder traversal visits nodes in sorted order. Track count — when count == k, return the current node's value.
+**Approach:** Inorder traversal visits nodes in sorted order. Track count â€” when count == k, return the current node's value.
 
 ```python
 def kth_smallest(root, k):
@@ -1926,7 +1926,7 @@ def kth_smallest(root, k):
 
 **Problem:** Find the lowest common ancestor of two nodes in a BST.
 
-**Approach:** Use BST property — if both values are less than root, go left; if both greater, go right; otherwise root is the LCA.
+**Approach:** Use BST property â€” if both values are less than root, go left; if both greater, go right; otherwise root is the LCA.
 
 ```python
 def lowest_common_ancestor(root, p, q):
@@ -1993,21 +1993,21 @@ def find_pair(root, target):
     return dfs(root)
 ```
 
-**Approach 2 (Two Pointers):** Use BST iterator — one from left (inorder), one from right (reverse inorder). Move pointers based on sum vs target.
+**Approach 2 (Two Pointers):** Use BST iterator â€” one from left (inorder), one from right (reverse inorder). Move pointers based on sum vs target.
 
 **Time:** \(O(n)\) | **Space:** \(O(n)\) (set) or \(O(h)\) (iterator approach)
 
 ---
 
-## 💡 Pro Tips
+## ðŸ’¡ Pro Tips
 
 > **Pro Tip:** When implementing BST deletion, always draw the tree first. The two-child case is the most error-prone - remember you are moving the successor's value, not the successor node itself.
 
-- **Inorder traversal of a BST is always sorted**: This is the BST invariant. Use it to verify correctness — if inorder is not sorted, the BST property is violated.
-- **Sorted array → balanced BST in \(O(n)\)**: Pick the middle element as root, recursively build left from the left half, right from the right half. This guarantees height \(\lceil \log n \rceil\).
+- **Inorder traversal of a BST is always sorted**: This is the BST invariant. Use it to verify correctness â€” if inorder is not sorted, the BST property is violated.
+- **Sorted array â†’ balanced BST in \(O(n)\)**: Pick the middle element as root, recursively build left from the left half, right from the right half. This guarantees height \(\lceil \log n \rceil\).
 - **Lowest common ancestor in BST is simpler than in binary trees**: Walk from root; the LCA is the first node whose value lies between the two target values (or equals one of them).
 - **Treaps combine BST with heap priorities**: Each node has a key (BST order) and a random priority (heap order). This gives a balanced tree with high probability without explicit rotations.
-- **Morris traversal traverses a BST in \(O(1)\) space**: Uses threaded binary tree links — no recursion or stack needed.
+- **Morris traversal traverses a BST in \(O(1)\) space**: Uses threaded binary tree links â€” no recursion or stack needed.
 - **Always use long long or template types for BST data**: Avoids overflow when using INT_MIN/INT_MAX sentinels in BST validation.
 
 ---
@@ -2021,7 +2021,7 @@ def find_pair(root, target):
 - Sorted array can be converted to a balanced BST in \(O(n)\).
 - Validation of BST requires checking the allowed value range \((min, max)\) per node.
 - Floor/Ceiling and Range Queries use BST ordering to prune search space.
-- LCA in BST is \(O(h)\) using simple comparison — no ancestor tracking needed.
+- LCA in BST is \(O(h)\) using simple comparison â€” no ancestor tracking needed.
 
 ---
 
@@ -2045,11 +2045,11 @@ def find_pair(root, target):
 | Delete (leaf) | \(O(\log n)\) | \(O(n)\) | Simply remove |
 | Delete (1 child) | \(O(\log n)\) | \(O(n)\) | Bypass node |
 | Delete (2 children) | \(O(\log n)\) | \(O(n)\) | Replace with inorder successor |
-| Inorder | \(O(n)\) | \(O(n)\) | Left → root → right |
+| Inorder | \(O(n)\) | \(O(n)\) | Left â†’ root â†’ right |
 | Floor / Ceiling | \(O(h)\) | \(O(n)\) | Descend, track candidate |
 | Range Query [L,R] | \(O(k + h)\) | \(O(n)\) | Prune out-of-range subtrees |
 | Check BST | \(O(n)\) | \(O(n)\) | Range (min, max) per node |
-| Sorted Array → BST | \(O(n)\) | \(O(n)\) | Pick mid, recurse |
+| Sorted Array â†’ BST | \(O(n)\) | \(O(n)\) | Pick mid, recurse |
 | LCA | \(O(h)\) | \(O(n)\) | Compare p, q vs root |
 
 ## Cross-Application Matrix
@@ -2059,7 +2059,7 @@ def find_pair(root, target):
 | Dictionary / symbol table | Fast lookup by key, sorted iteration |
 | Database index | Range queries: find all keys between a and b |
 | Ordered statistics | k-th smallest element (with subtree size) |
-| Priority queue | Not ideal — heap is simpler |
+| Priority queue | Not ideal â€” heap is simpler |
 | Autocomplete | TST or trie preferred over BST |
 | Set implementation | Sorted set operations (union, intersection) |
 | Spell checker | BST stores dictionary for O(log n) lookup |
@@ -2073,7 +2073,7 @@ def find_pair(root, target):
 |---------|----------------|------------------|
 | Deleting a node with two children without finding inorder successor | Removing the node directly breaks BST structure | Replace with inorder successor (or predecessor), then delete the successor |
 | Recursive BST operations without tail recursion optimization | Deep recursion on skewed BST overflows stack | Use iterative versions (while loops) for search and insert |
-| Inserting duplicates without a policy | BST rule says "left ≤ root < right" or "left < root ≤ right" — mixing causes inconsistent behavior | Choose a consistent policy and document it |
+| Inserting duplicates without a policy | BST rule says "left â‰¤ root < right" or "left < root â‰¤ right" â€” mixing causes inconsistent behavior | Choose a consistent policy and document it |
 | Validating BST by only checking immediate children | A node may have a value that satisfies parent check but violates an ancestor's constraint | Pass min/max bounds down the recursion for validation |
 | Assuming all self-balancing trees maintain BST invariant during rotations | Rotations temporarily may violate BST if not applied to the correct pivot | Always verify: left subtree keys < node key < right subtree keys after rotation |
 | Not updating height/balance factor after deletion in AVL | Forgetting to rebalance after deletion leaves tree unbalanced | Rebalance bottom-up after every insertion and deletion |
@@ -2132,7 +2132,7 @@ class BinarySearchTree {
             // case 2: one child
             if (!node.left) return node.right;
             if (!node.right) return node.left;
-            // case 3: two children → replace with inorder successor
+            // case 3: two children â†’ replace with inorder successor
             const succ = this._min(node.right);
             node.data = succ.data;
             node.right = this._delete(node.right, succ.data);
@@ -2203,44 +2203,44 @@ class BinarySearchTree {
 9. **What is the worst-case time complexity of searching in a BST with n nodes?**
    - a) O(1)
    - b) O(log n)
-   - c) O(n) ✓
-   - d) O(n²)
+   - c) O(n) âœ“
+   - d) O(nÂ²)
 
 10. **The inorder traversal of a BST produces:**
     - a) Sorted descending order
-    - b) Sorted ascending order ✓
+    - b) Sorted ascending order âœ“
     - c) Root-to-leaf paths
     - d) Level-order sequence
 
 11. **Which is NOT true about the inorder successor of a node in a BST?**
     - a) It is the smallest node greater than the given node
-    - b) It can be found by going right once, then left repeatedly ✓ (wait, this IS true — let me rephrase. The FALSE statement.)
-    - b) If the node has no right subtree, the successor is the nearest ancestor where the node is in its left subtree ✓ (this IS true)
-    - Actually: False statement: "If the node has a right subtree, the successor is the leftmost node of the left subtree of the right child" — WAIT that IS true.
-    - Let me restate: NOT true → "The inorder predecessor is always a leaf node." ✓ (predecessor can be internal node)
+    - b) It can be found by going right once, then left repeatedly âœ“ (wait, this IS true â€” let me rephrase. The FALSE statement.)
+    - b) If the node has no right subtree, the successor is the nearest ancestor where the node is in its left subtree âœ“ (this IS true)
+    - Actually: False statement: "If the node has a right subtree, the successor is the leftmost node of the left subtree of the right child" â€” WAIT that IS true.
+    - Let me restate: NOT true â†’ "The inorder predecessor is always a leaf node." âœ“ (predecessor can be internal node)
 
     Let me use a clean MCQ:
 11. **Which value is NOT in a valid BST's inorder traversal of [1, 3, 7, 9, 12, 15]?**
     - a) 7
-    - b) 5 ✓ (5 would violate sorted order)
+    - b) 5 âœ“ (5 would violate sorted order)
     - c) 12
     - d) 15
 
 12. **A binary search tree with a preorder traversal of [5, 3, 2, 4, 7, 6, 8] has what root?**
     - a) 2
     - b) 3
-    - c) 5 ✓
+    - c) 5 âœ“
     - d) 8
 
 13. **What is the minimum height of a BST with 255 nodes?**
     - a) 7
-    - b) 8 ✓ (2⁸ - 1 = 255)
+    - b) 8 âœ“ (2â¸ - 1 = 255)
     - c) 9
     - d) 255
 
 14. **The ceiling of a key in a BST is defined as:**
-    - a) The smallest key ≥ given key ✓
-    - b) The largest key ≤ given key
+    - a) The smallest key â‰¥ given key âœ“
+    - b) The largest key â‰¤ given key
     - c) The root value
     - d) The height of the node
 
@@ -2258,7 +2258,7 @@ class BinarySearchTree {
 
 18. **Pair with given sum in BST**: Given a BST and a target sum, check if there exist two nodes whose sum equals the target. Use two-pointer on inorder array, or hash set.
 
-19. **Floor and ceiling in a BST**: Find the largest key ≤ given key (floor) and smallest key ≥ given key (ceiling) in a BST.
+19. **Floor and ceiling in a BST**: Find the largest key â‰¤ given key (floor) and smallest key â‰¥ given key (ceiling) in a BST.
 
 20. **Fix a BST with two swapped nodes**: Two nodes in a BST are swapped. Detect and correct them without changing the structure.
 
@@ -2279,43 +2279,43 @@ class BinarySearchTree {
 | Space overhead | 2 pointers | 2 ptrs + height | 2 ptrs + color bit | m pointers + keys |
 | Use case | Educational | Lookup-heavy | Insert/delete-heavy | Disk I/O (databases) |
 | Rotation per insertion | N/A | Up to 2 | Up to 2 (plus recolor) | Node split |
-| Height bound | n | 1.44 log₂n | 2 log₂n | log_{m/2}(n) |
+| Height bound | n | 1.44 logâ‚‚n | 2 logâ‚‚n | log_{m/2}(n) |
    - c) Tree is always balanced
    - d) Every node has two children
 
 2. **Worst-case BST search complexity?**
    - a) \(O(1)\)
    - b) \(O(\log n)\)
-   - c) \(O(n)\) ✓
+   - c) \(O(n)\) âœ“
    - d) \(O(n^2)\)
 
 3. **What traversal of a BST yields sorted order?**
    - a) Preorder
-   - b) Inorder ✓
+   - b) Inorder âœ“
    - c) Postorder
    - d) Level-order
 
 4. **Deletion of a node with two children uses:**
-   - a) Inorder successor ✓
+   - a) Inorder successor âœ“
    - b) Level-order predecessor
    - c) Random node
    - d) Tree rotation
 
 5. **How to build a balanced BST from a sorted array?**
    - a) Insert in order
-   - b) Pick middle as root, recursively ✓
+   - b) Pick middle as root, recursively âœ“
    - c) Reverse order insertion
    - d) Use heap construction
 
 6. **What is the time complexity of finding LCA in a BST?**
    - a) \(O(n)\) in all cases
-   - b) \(O(\log n)\) average, \(O(n)\) worst ✓
+   - b) \(O(\log n)\) average, \(O(n)\) worst âœ“
    - c) \(O(1)\)
    - d) \(O(n^2)\)
 
 7. **Which data structure supports floor/ceiling queries most efficiently?**
    - a) Hash table
-   - b) BST ✓
+   - b) BST âœ“
    - c) Linked list
    - d) Queue
 
@@ -2329,7 +2329,7 @@ class BinarySearchTree {
 - Deletion of a node with two children uses the inorder successor.
 - Floor/Ceiling and Range Queries use BST ordering to prune search efficiently.
 - Checking BST validity requires range-based validation, not just local child checks.
-- LCA in BST is trivial — just compare both values against the current node.
+- LCA in BST is trivial â€” just compare both values against the current node.
 - Balanced BSTs (AVL, Red-Black, Treap) guarantee \(O(\log n)\) height.
 
 ## Exercises
@@ -2353,8 +2353,8 @@ class BinarySearchTree {
 ### Challenge Problems
 
 11. Implement a **Treap** (Tree + Heap), where each node has a key and a randomly assigned priority. Show that this yields a balanced BST in expectation.
-12. Implement a **Morris inorder traversal** — traverse a BST in \(O(n)\) time and \(O(1)\) space using threaded links.
+12. Implement a **Morris inorder traversal** â€” traverse a BST in \(O(n)\) time and \(O(1)\) space using threaded links.
 13. Implement a **BST iterator** with 
 ext() and hasNext() in \(O(1)\) average time and \(O(h)\) space.
 14. Given a BST, convert it to a sorted doubly linked list in-place (no extra nodes).
-15. Find if there exist two nodes in a BST whose values sum to a given target — solve with \(O(h)\) space and \(O(n)\) time.
+15. Find if there exist two nodes in a BST whose values sum to a given target â€” solve with \(O(h)\) space and \(O(n)\) time.

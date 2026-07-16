@@ -1,4 +1,4 @@
-# Chapter 46: R2DBC & Reactive Data Access
+﻿# Chapter 46: R2DBC & Reactive Data Access
 
 > **Previous:** [Spring WebFlux](./45-webflux.md) | **Next:** [Spring AI](./47-spring-ai.md)
 
@@ -7,16 +7,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/46-r2dbc/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/46-r2dbc/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/46-r2dbc/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/46-r2dbc/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/46-r2dbc/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/46-r2dbc/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/46-r2dbc/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/46-r2dbc/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/46-r2dbc/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/46-r2dbc/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/46-r2dbc/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/46-r2dbc/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -56,7 +56,7 @@ After completing this chapter, you will be able to:
 
 ## 1. What Is R2DBC?
 
-> **Pro Tip:** Test with production-like configurations → dev setups often hide issues that surface under real load.
+> **Pro Tip:** Test with production-like configurations â†’ dev setups often hide issues that surface under real load.
 
 > **Remember:** Start simple. Add complexity only when proven necessary. Premature abstraction creates maintenance burden.
 
@@ -69,7 +69,7 @@ After completing this chapter, you will be able to:
 JDBC (Java Database Connectivity) is inherently blocking. Every `ResultSet.next()`, `PreparedStatement.executeQuery()`, and `Connection.commit()` blocks the calling thread until the database responds. In a reactive application, blocking an event-loop thread defeats the purpose of non-blocking I/O.
 
 ```java
-// JDBC → blocks the calling thread
+// JDBC â†’ blocks the calling thread
 ResultSet rs = stmt.executeQuery("SELECT * FROM products");
 while (rs.next()) {               // Blocking
     String name = rs.getString("name");  // Blocking
@@ -501,7 +501,7 @@ public class Order implements Persistable<UUID> {
     @Transient
     private boolean isNew = false;
 
-    // Transient → not persisted, populated by query
+    // Transient â†’ not persisted, populated by query
     @Transient
     private Customer customer;
 
@@ -1059,7 +1059,7 @@ public class OrderService {
         this.transactionalOperator = transactionalOperator;
     }
 
-    // Declarative transaction → whole method is transactional
+    // Declarative transaction â†’ whole method is transactional
     @Transactional
     public Mono<Order> createOrder(UUID customerId, java.util.List<OrderItemRequest> items) {
         return customerRepository.findById(customerId)
@@ -1098,7 +1098,7 @@ public class OrderService {
             });
     }
 
-    // TransactionalOperator → programmatic transaction boundaries
+    // TransactionalOperator â†’ programmatic transaction boundaries
     public Mono<Order> createOrderProgrammatic(UUID customerId,
                                                 java.util.List<OrderItemRequest> items) {
         return transactionalOperator.execute(status ->
@@ -2153,10 +2153,10 @@ logging:
 
 | Scenario | Pattern A | Pattern B | Pattern C |
 |----------|-----------|-----------|-----------|
-| Small application | âœ“ | âœ— | âœ“ |
-| Enterprise system | âœ“ | âœ“ | âœ— |
-| High-throughput API | âœ— | âœ“ | âœ“ |
-| Event-driven | âœ— | âœ“ | âœ“ |
+| Small application | Ã¢Å“â€œ | Ã¢Å“â€” | Ã¢Å“â€œ |
+| Enterprise system | Ã¢Å“â€œ | Ã¢Å“â€œ | Ã¢Å“â€” |
+| High-throughput API | Ã¢Å“â€” | Ã¢Å“â€œ | Ã¢Å“â€œ |
+| Event-driven | Ã¢Å“â€” | Ã¢Å“â€œ | Ã¢Å“â€œ |
 
 ## Chapter Quiz
 
@@ -2186,7 +2186,7 @@ logging:
    - A) For every project regardless of size
    - B) When complexity justifies the overhead
    - C) Only in legacy systems
-   - D) Never → it is outdated
+   - D) Never â†’ it is outdated
 
 <details>
 <summary>Answer&lt;/summary&gt;
@@ -2201,7 +2201,7 @@ This chapter covered Spring Data R2DBC and reactive data access comprehensively:
 
 2. **Spring Data R2DBC** builds on R2DBC with `R2dbcRepository`, derived query methods, `@Query` annotations, and DTO projections.
 
-3. **Entity mapping** in R2DBC is simpler than JPA → no lazy loading, no persistence context, no automatic relationship mapping. You write explicit queries for joins and aggregates.
+3. **Entity mapping** in R2DBC is simpler than JPA â†’ no lazy loading, no persistence context, no automatic relationship mapping. You write explicit queries for joins and aggregates.
 
 4. **DatabaseClient** provides lower-level SQL access with bind parameters and custom row mapping for complex queries, batch operations, and pagination.
 
@@ -2249,7 +2249,7 @@ This chapter covered Spring Data R2DBC and reactive data access comprehensively:
    - Product catalog with categories, tags, and variants
    - Customer profiles with addresses and preferences
    - Shopping cart with merge on login
-   - Order processing with Saga pattern (inventory → payment → shipping)
+   - Order processing with Saga pattern (inventory â†’ payment â†’ shipping)
    - Review and rating system with aggregation
    - Admin dashboards with real-time metrics
    - All endpoints exposed via WebFlux controllers

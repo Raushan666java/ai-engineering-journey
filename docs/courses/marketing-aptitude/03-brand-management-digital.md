@@ -1,4 +1,4 @@
-# Chapter 3: Brand Management and Digital Marketing
+﻿# Chapter 3: Brand Management and Digital Marketing
 
 ## Learning Objectives
 
@@ -12,16 +12,16 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -33,7 +33,7 @@ By the end of this chapter, you will be able to:
 
 ### 3.1 Understanding Brands
 
-A **brand** is a name, term, sign, symbol, or design — or a combination of these — intended to identify the goods or services of one seller and differentiate them from competitors.
+A **brand** is a name, term, sign, symbol, or design â€” or a combination of these â€” intended to identify the goods or services of one seller and differentiate them from competitors.
 
 #### Key Brand Concepts
 
@@ -50,7 +50,7 @@ A **brand** is a name, term, sign, symbol, or design — or a combination of the
 
 ### 3.2 Keller's Customer-Based Brand Equity (CBBE) Model
 
-The CBBE model views brand equity from the perspective of the consumer — the power of a brand lies in what customers have learned, felt, seen, and heard about it.
+The CBBE model views brand equity from the perspective of the consumer â€” the power of a brand lies in what customers have learned, felt, seen, and heard about it.
 
 ```mermaid
 graph TB
@@ -81,10 +81,10 @@ graph TB
 
 Brand resonance is the highest level of brand equity where customers feel a deep, psychological bond with the brand. It has four categories:
 
-1. **Behavioural loyalty** — Repeat purchases, frequency
-2. **Attitudinal attachment** — Love for the brand, recommendation
-3. **Sense of community** — Feeling of kinship with other brand users
-4. **Active engagement** — Joining brand clubs, following on social media, writing reviews
+1. **Behavioural loyalty** â€” Repeat purchases, frequency
+2. **Attitudinal attachment** â€” Love for the brand, recommendation
+3. **Sense of community** â€” Feeling of kinship with other brand users
+4. **Active engagement** â€” Joining brand clubs, following on social media, writing reviews
 
 ### 3.3 Brand Positioning
 
@@ -97,9 +97,9 @@ Brand positioning is designing the brand's offer and image to occupy a distincti
 | **Target market** | Who the brand is for |
 | **Point of Parity (POP)** | Attributes that are NOT unique but necessary to compete |
 | **Point of Difference (POD)** | Strong, favourable, unique brand associations |
-| **Brand mantra** | A short (3–5 word) internal guiding statement |
+| **Brand mantra** | A short (3â€“5 word) internal guiding statement |
 
-**Example — Nike:**
+**Example â€” Nike:**
 - Target: Athletes and active individuals
 - POP: Quality athletic footwear, stylish design
 - POD: "Just Do It" attitude, inspirational marketing, innovation
@@ -122,14 +122,14 @@ graph LR
         C[Category Extension<br/>Same brand, new category]
     end
     L --> E1[Colgate: Active Salt, Max Fresh, Charcoal<br/>Same toothpaste, different variants]
-    C --> E2[Maggi: Noodles → Soups, Sauces, Masala<br/>Same brand, different food categories]
+    C --> E2[Maggi: Noodles â†’ Soups, Sauces, Masala<br/>Same brand, different food categories]
 ```
 
 | Factor | Line Extension | Category Extension |
 |--------|---------------|--------------------|
 | **Definition** | New variant in existing product category | New product in different category |
-| **Risk** | Lower — familiar category | Higher — unfamiliar territory |
-| **Examples** | Apple iPhone 15 → iPhone 16 | Apple iPhone → Apple Watch, AirPods |
+| **Risk** | Lower â€” familiar category | Higher â€” unfamiliar territory |
+| **Examples** | Apple iPhone 15 â†’ iPhone 16 | Apple iPhone â†’ Apple Watch, AirPods |
 | **Success factor** | Fit with brand identity | Perceived expertise in new category |
 
 **Advantages:** Lower launch cost, reduced risk of failure, parent brand equity transfers.
@@ -140,7 +140,7 @@ graph LR
 
 | Strategy | Definition | Example |
 |----------|------------|---------|
-| **Co-branding** | Two established brands collaborate on a single product | Nestlé + Starbucks (at-home coffee) |
+| **Co-branding** | Two established brands collaborate on a single product | NestlÃ© + Starbucks (at-home coffee) |
 | **Ingredient branding** | One brand appears as a component in another brand's product | Intel Inside in Dell laptops |
 | **Licensing** | One company permits another to use its brand for a fee | Disney characters on lunchboxes |
 | **Brand alliance** | Two brands partner for marketing | Uber + Spotify (ride + music) |
@@ -233,7 +233,7 @@ SEM involves paid advertising on search engines, primarily Pay-Per-Click (PPC) a
 
 | Metric | Meaning | Formula |
 |--------|---------|---------|
-| **CTR (Click-Through Rate)** | % of impressions that resulted in clicks | Clicks / Impressions × 100 |
+| **CTR (Click-Through Rate)** | % of impressions that resulted in clicks | Clicks / Impressions Ã— 100 |
 | **CPC (Cost Per Click)** | Average cost per ad click | Total Cost / Clicks |
 | **CPA (Cost Per Acquisition)** | Cost per desired conversion | Total Cost / Conversions |
 | **Quality Score** | Google's rating of ad relevance | Based on CTR, relevance, landing page |
@@ -259,8 +259,8 @@ class SEMAnalyser {
 
     return {
       CTR: ctr.toFixed(2) + "%",
-      CPC: "₹" + cpc.toFixed(2),
-      CPA: "₹" + cpa.toFixed(2),
+      CPC: "â‚¹" + cpc.toFixed(2),
+      CPA: "â‚¹" + cpa.toFixed(2),
       conversionRate: conversionRate.toFixed(2) + "%",
       ROAS: roas.toFixed(2) + "x",
       profit: campaign.revenue - campaign.totalCost,
@@ -276,36 +276,36 @@ const campaign: SEMCampaign = {
   revenue: 320000,
 };
 console.log(SEMAnalyser.analyze(campaign));
-// { CTR: "2.40%", CPC: "₹80.00", CPA: "₹1,200.00", conversionRate: "6.67%", ROAS: "3.33x", profit: 224000 }
+// { CTR: "2.40%", CPC: "â‚¹80.00", CPA: "â‚¹1,200.00", conversionRate: "6.67%", ROAS: "3.33x", profit: 224000 }
 ```
 
 #### 3.6.3 Social Media Marketing
 
 | Platform | Primary Use | Content Format | Audience |
 |----------|-------------|----------------|----------|
-| **Facebook** | Brand awareness, community building | Images, videos, text, carousel | Wide (25–55) |
-| **Instagram** | Visual storytelling, lifestyle | Photos, Stories, Reels | Younger (18–35) |
-| **LinkedIn** | B2B networking, professional branding | Articles, posts, company updates | Professionals (25–65) |
+| **Facebook** | Brand awareness, community building | Images, videos, text, carousel | Wide (25â€“55) |
+| **Instagram** | Visual storytelling, lifestyle | Photos, Stories, Reels | Younger (18â€“35) |
+| **LinkedIn** | B2B networking, professional branding | Articles, posts, company updates | Professionals (25â€“65) |
 | **YouTube** | Video content, tutorials | Long-form and Shorts videos | All ages |
-| **Twitter/X** | News, customer service, trends | Short text posts (up to 280 chars) | News-conscious (18–50) |
+| **Twitter/X** | News, customer service, trends | Short text posts (up to 280 chars) | News-conscious (18â€“50) |
 
 **Key social media metrics:**
-- **Engagement rate** — (Likes + Comments + Shares) / Followers × 100
-- **Reach** — Number of unique users who saw the content
-- **Impressions** — Number of times content was displayed
-- **Share of voice** — Brand mentions / Total industry mentions × 100
+- **Engagement rate** â€” (Likes + Comments + Shares) / Followers Ã— 100
+- **Reach** â€” Number of unique users who saw the content
+- **Impressions** â€” Number of times content was displayed
+- **Share of voice** â€” Brand mentions / Total industry mentions Ã— 100
 
 #### 3.6.4 Content Marketing
 
 Content marketing focuses on creating and distributing valuable, relevant, and consistent content to attract and retain a clearly defined audience.
 
 **Content types:**
-- **Blog posts/articles** — Educational content for SEO and lead generation
-- **E-books/whitepapers** — In-depth content for lead capture
-- **Infographics** — Visual data representation
-- **Videos/webinars** — Engaging, demo-style content
-- **Podcasts** — Audio content for on-the-go consumption
-- **Case studies** — Real-world proof of value
+- **Blog posts/articles** â€” Educational content for SEO and lead generation
+- **E-books/whitepapers** â€” In-depth content for lead capture
+- **Infographics** â€” Visual data representation
+- **Videos/webinars** â€” Engaging, demo-style content
+- **Podcasts** â€” Audio content for on-the-go consumption
+- **Case studies** â€” Real-world proof of value
 
 **Content marketing funnel:**
 
@@ -337,9 +337,9 @@ Email marketing is sending commercial messages to a targeted list of subscribers
 Affiliate marketing is a performance-based model where a company pays external partners (affiliates) a commission for driving traffic or sales.
 
 **Commission models:**
-- **Pay-per-sale** — Commission only on completed sales
-- **Pay-per-lead** — Commission on qualified leads (form fills, sign-ups)
-- **Pay-per-click** — Commission on clicks to merchant site
+- **Pay-per-sale** â€” Commission only on completed sales
+- **Pay-per-lead** â€” Commission on qualified leads (form fills, sign-ups)
+- **Pay-per-click** â€” Commission on clicks to merchant site
 
 #### 3.6.7 Influencer Marketing
 
@@ -347,9 +347,9 @@ Influencer marketing involves partnering with individuals who have a strong soci
 
 | Influencer Tier | Follower Count | Pros | Cons |
 |----------------|---------------|------|------|
-| **Nano** | 1K–10K | High engagement, low cost, authentic | Limited reach |
-| **Micro** | 10K–100K | Niche expertise, high trust | Moderate reach |
-| **Macro** | 100K–1M | Wide reach, professional quality | Lower engagement, higher cost |
+| **Nano** | 1Kâ€“10K | High engagement, low cost, authentic | Limited reach |
+| **Micro** | 10Kâ€“100K | Niche expertise, high trust | Moderate reach |
+| **Macro** | 100Kâ€“1M | Wide reach, professional quality | Lower engagement, higher cost |
 | **Mega/Celebrity** | 1M+ | Massive reach, prestige | Very expensive, lower trust |
 
 ### 3.7 Customer Relationship Management (CRM)
@@ -410,9 +410,9 @@ console.log(CRMSegmenter.segmentReport(customers));
 
 | Metric | Acquisition | Retention |
 |--------|-------------|-----------|
-| **Cost** | 5–7× more expensive | Lower cost |
-| **Probability of sale** | 5–20% for new | 60–70% for existing |
-| **Profit increase** | 10% new customers | 25–95% from 5% retention increase |
+| **Cost** | 5â€“7Ã— more expensive | Lower cost |
+| **Probability of sale** | 5â€“20% for new | 60â€“70% for existing |
+| **Profit increase** | 10% new customers | 25â€“95% from 5% retention increase |
 | **Loyalty effect** | Short-term | Long-term |
 
 ### 3.8 Brand Architecture
@@ -430,7 +430,7 @@ graph TD
     HH --> E1[Procter & Gamble: Tide, Ariel, Pampers]
     BH --> E2[Virgin: Airlines, Mobile, Banking]
     SB --> E3[Marriott: Marriott Hotels, Marriott Suites]
-    EB --> E4["Courtyard by Marriott", "Nestlé KitKat"]
+    EB --> E4["Courtyard by Marriott", "NestlÃ© KitKat"]
 ```
 
 | Strategy | Description | Advantages | Disadvantages |
@@ -438,7 +438,7 @@ graph TD
 | **House of Brands** | Each product has a unique brand name (P&G) | Market-specific positioning, no cross-contamination | High launch cost, no brand synergy |
 | **Branded House** | Corporate brand on all products (Virgin) | High efficiency, instant recognition | Risk: one failure damages all |
 | **Sub-brands** | Master brand + modifier (Marriott Hotels) | Brand stretching with clarity | Can become complex |
-| **Endorsed Brands** | Individual brands with corporate backing (Nestlé KitKat) | Balance of independence and association | Moderate complexity |
+| **Endorsed Brands** | Individual brands with corporate backing (NestlÃ© KitKat) | Balance of independence and association | Moderate complexity |
 
 ### 3.9 Brand Revitalization and Managing Brand Crises
 
@@ -461,20 +461,20 @@ graph LR
     end
     R1 --> E1[Old Spice: from old to young]
     R2 --> E2[Burberry: digital transformation]
-    R3 --> E3[Apple: iPod → iPhone ecosystem]
+    R3 --> E3[Apple: iPod â†’ iPhone ecosystem]
     R4 --> E4[Tata Nano: failure despite innovation]
     R5 --> E5[Dabur: Ayurvedic to modern health]
 ```
 
 | Strategy | Description | Example | Risk Level |
 |----------|-------------|---------|------------|
-| **Repositioning** | Change how consumers perceive the brand | Old Spice (old → young) | Medium |
+| **Repositioning** | Change how consumers perceive the brand | Old Spice (old â†’ young) | Medium |
 | **Brand Refresh** | Update logo, packaging, visual identity | Burberry, Starbucks | Low |
-| **Innovation** | New products, features, or technology | Apple (iPod → iPhone) | Medium |
-| **Reach Expansion** | Target new customer segments | Lakmé (salon → affordable cosmetics) | Low-Medium |
-| **Rebranding** | Complete brand name and identity change | ValuJet → AirTran (after crash) | Very High |
+| **Innovation** | New products, features, or technology | Apple (iPod â†’ iPhone) | Medium |
+| **Reach Expansion** | Target new customer segments | LakmÃ© (salon â†’ affordable cosmetics) | Low-Medium |
+| **Rebranding** | Complete brand name and identity change | ValuJet â†’ AirTran (after crash) | Very High |
 
-**Brand crises** — When brands face negative publicity:
+**Brand crises** â€” When brands face negative publicity:
 | Crisis Type | Example | Recovery Strategy |
 |-------------|---------|-------------------|
 | **Product failure** | Samsung Galaxy Note 7 (battery explosion) | Recall + transparent investigation |
@@ -502,12 +502,12 @@ graph TD
 
 | Stage | KPI | Benchmark | Formula |
 |-------|-----|-----------|---------|
-| **Awareness** | CPM (Cost per 1000 impressions) | ₹50–₹200 | Total cost / Impressions × 1000 |
-| **Interest** | Bounce Rate | 40–60% | Single-page sessions / Total sessions |
-| **Consideration** | Lead Conversion Rate | 2–5% | Leads / Visitors × 100 |
-| **Purchase** | ROAS | 3×–5× | Revenue / Ad spend |
-| **Loyalty** | Customer Retention Rate | 60–80% | Returning customers / Total customers |
-| **Advocacy** | NPS | 30+ | % Promoters − % Detractors |
+| **Awareness** | CPM (Cost per 1000 impressions) | â‚¹50â€“â‚¹200 | Total cost / Impressions Ã— 1000 |
+| **Interest** | Bounce Rate | 40â€“60% | Single-page sessions / Total sessions |
+| **Consideration** | Lead Conversion Rate | 2â€“5% | Leads / Visitors Ã— 100 |
+| **Purchase** | ROAS | 3Ã—â€“5Ã— | Revenue / Ad spend |
+| **Loyalty** | Customer Retention Rate | 60â€“80% | Returning customers / Total customers |
+| **Advocacy** | NPS | 30+ | % Promoters âˆ’ % Detractors |
 
 ```typescript
 // TypeScript: Digital Marketing KPI Dashboard
@@ -581,7 +581,7 @@ console.log(generateKPIDashboard(campaignMetrics));
 | **Primary channels** | TV, print, radio, outdoor | Social media, SEO, content, influencers |
 | **Speed of building** | Slow (years) | Potentially fast (viral) |
 | **Cost** | Very high | Low to moderate |
-| **Two-way interaction** | Minimal | High — continuous feedback |
+| **Two-way interaction** | Minimal | High â€” continuous feedback |
 | **Measurement** | Awareness surveys, recall | Analytics, engagement, sentiment |
 | **Targeting** | Mass or demographic | Hyper-targeted, behavioural |
 | **Example** | Coca-Cola "Hilltop" TV ad | Dollar Shave Club YouTube launch |
@@ -682,7 +682,7 @@ console.log(classifyLoyalty(customer2)); // Recognition
 
 <details>
 <summary>Answer</summary>
-**c) Brand insistence.** Brand insistence is the highest level of brand loyalty — consumers will accept no substitute and actively search for the brand. Brand preference means they prefer it but accept alternatives if needed.
+**c) Brand insistence.** Brand insistence is the highest level of brand loyalty â€” consumers will accept no substitute and actively search for the brand. Brand preference means they prefer it but accept alternatives if needed.
 </details>
 
 ---
@@ -712,7 +712,7 @@ d) Price advantages
 
 <details>
 <summary>Answer</summary>
-**b) Attributes that are necessary but not unique.** POPs are associations that are NOT unique to the brand but are necessary to be considered a legitimate player in the category. For example, a bank must have ATMs — that's a POP, not a POD.
+**b) Attributes that are necessary but not unique.** POPs are associations that are NOT unique to the brand but are necessary to be considered a legitimate player in the category. For example, a bank must have ATMs â€” that's a POP, not a POD.
 </details>
 
 ---
@@ -742,7 +742,7 @@ d) New brand
 
 <details>
 <summary>Answer</summary>
-**b) Category extension.** Dove moved from soap (personal cleansing) to shampoo (hair care) — a different product category. Line extension would be a new variant of soap (e.g., Dove White vs Dove Pink).
+**b) Category extension.** Dove moved from soap (personal cleansing) to shampoo (hair care) â€” a different product category. Line extension would be a new variant of soap (e.g., Dove White vs Dove Pink).
 </details>
 
 ---
@@ -821,7 +821,7 @@ d) No ad at all
 
 ---
 
-**Q15.** If an ad campaign spends ₹50,000, gets 10,000 impressions and 500 clicks, the CTR is:
+**Q15.** If an ad campaign spends â‚¹50,000, gets 10,000 impressions and 500 clicks, the CTR is:
 
 a) 2%
 b) 5%
@@ -830,7 +830,7 @@ d) 20%
 
 <details>
 <summary>Answer</summary>
-**b) 5%.** CTR = (Clicks ÷ Impressions) × 100 = (500 ÷ 10,000) × 100 = 5%. The ₹50,000 spend is not needed for CTR calculation.
+**b) 5%.** CTR = (Clicks Ã· Impressions) Ã— 100 = (500 Ã· 10,000) Ã— 100 = 5%. The â‚¹50,000 spend is not needed for CTR calculation.
 </details>
 
 ---
@@ -839,14 +839,14 @@ d) 20%
 
 **Q16.** A micro-influencer typically has followers in which range?
 
-a) 1K–10K
-b) 10K–100K
-c) 100K–1M
+a) 1Kâ€“10K
+b) 10Kâ€“100K
+c) 100Kâ€“1M
 d) 1M+
 
 <details>
 <summary>Answer</summary>
-**b) 10K–100K.** Micro-influencers have 10,000 to 100,000 followers. They offer niche expertise, high engagement rates (often 3–6%), and authentic connections with their audience. They often have higher conversion rates than mega-influencers.
+**b) 10Kâ€“100K.** Micro-influencers have 10,000 to 100,000 followers. They offer niche expertise, high engagement rates (often 3â€“6%), and authentic connections with their audience. They often have higher conversion rates than mega-influencers.
 </details>
 
 ---
@@ -937,14 +937,14 @@ d) ROI (Return on Investment)
 
 <details>
 <summary>Answer</summary>
-**b) CLV (Customer Lifetime Value).** CLV predicts the total net profit a company will earn from a customer throughout the relationship. It guides customer acquisition spending — you should not spend more to acquire a customer than their expected CLV.
+**b) CLV (Customer Lifetime Value).** CLV predicts the total net profit a company will earn from a customer throughout the relationship. It guides customer acquisition spending â€” you should not spend more to acquire a customer than their expected CLV.
 </details>
 
 ---
 
-### Example 11: Brand Architecture (Q21–Q22)
+### Example 11: Brand Architecture (Q21â€“Q22)
 
-**Q21.** Procter & Gamble markets Tide, Ariel, Pampers, and Gillette — each with its own brand identity. This brand architecture is called:
+**Q21.** Procter & Gamble markets Tide, Ariel, Pampers, and Gillette â€” each with its own brand identity. This brand architecture is called:
 
 a) Branded house
 b) House of brands
@@ -967,12 +967,12 @@ d) Sub-brand
 
 <details>
 <summary>Answer</summary>
-**c) Endorsed brand.** "Courtyard by Marriott" is an endorsed brand — the individual brand (Courtyard) is backed by the corporate brand (Marriott). This provides the benefit of Marriott's reputation while allowing Courtyard to maintain its own positioning as a mid-tier hotel.
+**c) Endorsed brand.** "Courtyard by Marriott" is an endorsed brand â€” the individual brand (Courtyard) is backed by the corporate brand (Marriott). This provides the benefit of Marriott's reputation while allowing Courtyard to maintain its own positioning as a mid-tier hotel.
 </details>
 
 ---
 
-### Example 12: Brand Revitalization (Q23–Q24)
+### Example 12: Brand Revitalization (Q23â€“Q24)
 
 **Q23.** Old Spice successfully transformed from an older man's brand to a youthful, humorous brand. This strategy is called:
 
@@ -1002,7 +1002,7 @@ d) Ethical violation
 
 ---
 
-### Example 13: Digital Marketing Funnel (Q25–Q27)
+### Example 13: Digital Marketing Funnel (Q25â€“Q27)
 
 **Q25.** In the digital marketing funnel, the stage immediately after "Interest" is:
 
@@ -1013,21 +1013,21 @@ d) Advocacy
 
 <details>
 <summary>Answer</summary>
-**c) Consideration.** The funnel stages are: Awareness → Interest → Consideration → Purchase → Loyalty → Advocacy. After generating interest (visits, time on site), the next stage is consideration (lead capture, content downloads).
+**c) Consideration.** The funnel stages are: Awareness â†’ Interest â†’ Consideration â†’ Purchase â†’ Loyalty â†’ Advocacy. After generating interest (visits, time on site), the next stage is consideration (lead capture, content downloads).
 </details>
 
 ---
 
-**Q26.** A campaign spends ₹1,00,000, gets 50,000 impressions and 2,500 clicks. The CPM (Cost per 1000 impressions) is:
+**Q26.** A campaign spends â‚¹1,00,000, gets 50,000 impressions and 2,500 clicks. The CPM (Cost per 1000 impressions) is:
 
-a) ₹20
-b) ₹40
-c) ₹200
-d) ₹2,000
+a) â‚¹20
+b) â‚¹40
+c) â‚¹200
+d) â‚¹2,000
 
 <details>
 <summary>Answer</summary>
-**d) ₹2,000.** CPM = (Total Cost / Impressions) × 1000 = (100000 / 50000) × 1000 = ₹2,000. This indicates the campaign is paying ₹2,000 for every 1000 ad impressions served.
+**d) â‚¹2,000.** CPM = (Total Cost / Impressions) Ã— 1000 = (100000 / 50000) Ã— 1000 = â‚¹2,000. This indicates the campaign is paying â‚¹2,000 for every 1000 ad impressions served.
 </details>
 
 ---
@@ -1041,23 +1041,23 @@ d) 75%
 
 <details>
 <summary>Answer</summary>
-**c) 65%.** NPS = % Promoters − % Detractors. So, 40 = % Promoters − 25. Therefore, % Promoters = 65%. The remaining 10% are Passives (those who rate 7–8).
+**c) 65%.** NPS = % Promoters âˆ’ % Detractors. So, 40 = % Promoters âˆ’ 25. Therefore, % Promoters = 65%. The remaining 10% are Passives (those who rate 7â€“8).
 </details>
 
 ---
 
-### Example 14: Digital Marketing Metrics (Q28–Q30)
+### Example 14: Digital Marketing Metrics (Q28â€“Q30)
 
 **Q28.** ROAS of 4.0 means:
 
-a) ₹4 spent for every ₹1 earned
-b) ₹1 spent for every ₹4 earned
-c) ₹4 earned for every ₹1 spent
+a) â‚¹4 spent for every â‚¹1 earned
+b) â‚¹1 spent for every â‚¹4 earned
+c) â‚¹4 earned for every â‚¹1 spent
 d) 4% conversion rate
 
 <details>
 <summary>Answer</summary>
-**c) ₹4 earned for every ₹1 spent.** ROAS (Return on Ad Spend) = Revenue / Ad Spend. A ROAS of 4.0 means for every ₹1 spent on advertising, the campaign generated ₹4 in revenue. The higher the ROAS, the more effective the campaign.
+**c) â‚¹4 earned for every â‚¹1 spent.** ROAS (Return on Ad Spend) = Revenue / Ad Spend. A ROAS of 4.0 means for every â‚¹1 spent on advertising, the campaign generated â‚¹4 in revenue. The higher the ROAS, the more effective the campaign.
 </details>
 
 ---
@@ -1085,7 +1085,7 @@ d) 80% of marketing budget goes to retention
 
 <details>
 <summary>Answer</summary>
-**b) 80% of existing customers continue buying.** Customer retention rate measures the percentage of customers who remain customers over a specific period. An 80% retention rate means 20% of customers churned during the period. The average retention rate varies by industry (60–80% for most industries).
+**b) 80% of existing customers continue buying.** Customer retention rate measures the percentage of customers who remain customers over a specific period. An 80% retention rate means 20% of customers churned during the period. The average retention rate varies by industry (60â€“80% for most industries).
 </details>
 
 ---
@@ -1093,7 +1093,7 @@ d) 80% of marketing budget goes to retention
 ## Summary
 
 - A **brand** is a name, term, sign, symbol, or design identifying a seller's goods and differentiating them from competitors
-- **Brand equity** is the added value endowed by the brand name; **CBBE** measures equity through a four-level pyramid (Salience → Performance/Imagery → Judgments/Feelings → Resonance)
+- **Brand equity** is the added value endowed by the brand name; **CBBE** measures equity through a four-level pyramid (Salience â†’ Performance/Imagery â†’ Judgments/Feelings â†’ Resonance)
 - **Brand positioning** involves defining the target market, POP, POD, and brand mantra
 - **Brand extensions** (line and category) leverage existing brand equity but risk dilution
 - **Co-branding** and **licensing** are strategies for leveraging brand partnerships
@@ -1105,11 +1105,11 @@ d) 80% of marketing budget goes to retention
 
 ## Practical Takeaways
 
-1. **For exams**: Remember CBBE pyramid levels (Salience → Performance/Imagery → Judgments/Feelings → Resonance) and the distinction between brand identity (company's intent) and brand image (consumer's perception)
+1. **For exams**: Remember CBBE pyramid levels (Salience â†’ Performance/Imagery â†’ Judgments/Feelings â†’ Resonance) and the distinction between brand identity (company's intent) and brand image (consumer's perception)
 2. **For interviews**: Be able to give a real-world example of successful repositioning and failed brand extension
-3. **For digital strategy**: Master the SEO vs SEM distinction — SEO builds long-term assets, SEM delivers short-term traffic
+3. **For digital strategy**: Master the SEO vs SEM distinction â€” SEO builds long-term assets, SEM delivers short-term traffic
 4. **For social media**: Choose platforms based on where your target audience spends time, not where you are most comfortable
-5. **For CRM**: Customer retention is 5–7× cheaper than acquisition; invest in loyalty programmes and personalised communication
+5. **For CRM**: Customer retention is 5â€“7Ã— cheaper than acquisition; invest in loyalty programmes and personalised communication
 
 ## Chapter Quiz
 
@@ -1135,7 +1135,7 @@ d) 80% of marketing budget goes to retention
 **B) Line extension.** A line extension offers a new variant within the same product category. Category extension would be entering a different category (e.g., soda company launching chips).
 </details>
 
-3. Which digital marketing metric measures Revenue ÷ Ad Spend?
+3. Which digital marketing metric measures Revenue Ã· Ad Spend?
    - A) CPC
    - B) CPA
    - C) ROAS
@@ -1143,7 +1143,7 @@ d) 80% of marketing budget goes to retention
 
 <details>
 <summary>Answer</summary>
-**C) ROAS (Return on Ad Spend).** ROAS = Revenue / Ad Spend. A ROAS of 4.0 means ₹4 earned for every ₹1 spent.
+**C) ROAS (Return on Ad Spend).** ROAS = Revenue / Ad Spend. A ROAS of 4.0 means â‚¹4 earned for every â‚¹1 spent.
 </details>
 
 4. "Intel Inside" on laptops is a classic example of:
@@ -1170,7 +1170,7 @@ d) 80% of marketing budget goes to retention
 
 ## Exercises
 
-### Section A: Conceptual Questions (Q1–Q10)
+### Section A: Conceptual Questions (Q1â€“Q10)
 
 1. Define brand equity and explain its importance in marketing.
 2. What is the difference between brand identity and brand image? Give an example of each.
@@ -1183,20 +1183,20 @@ d) 80% of marketing budget goes to retention
 9. Explain the concept of "drip campaign" in email marketing.
 10. What is customer lifetime value (CLV) and why is it important?
 
-### Section B: Application Problems (Q11–Q20)
+### Section B: Application Problems (Q11â€“Q20)
 
-11. An FMCG company launches a premium soap brand at ₹150 per unit. Suggest a positioning strategy using POP and POD.
-12. Calculate the CTR, CPC, and CPA for a campaign with 50,000 impressions, 1,500 clicks, 60 conversions, and ₹90,000 spend.
+11. An FMCG company launches a premium soap brand at â‚¹150 per unit. Suggest a positioning strategy using POP and POD.
+12. Calculate the CTR, CPC, and CPA for a campaign with 50,000 impressions, 1,500 clicks, 60 conversions, and â‚¹90,000 spend.
 13. A bank wants to increase customer retention. Design a CRM-driven customer loyalty programme for premium banking customers.
 14. A fashion brand is considering a line extension vs a category extension. Evaluate the risks and recommend a strategy.
 15. Calculate the email open rate and click-through rate for a campaign: sent 20,000, delivered 19,200, opened 8,640, clicked 2,592, unsubscribed 192.
 16. A brand with strong loyalty among seniors wants to reposition for younger consumers. Suggest a strategy with examples of successful repositioning.
-17. A startup wants to launch on a ₹2 lakh digital marketing budget. Recommend an allocation across SEO, SEM, social media, and content.
+17. A startup wants to launch on a â‚¹2 lakh digital marketing budget. Recommend an allocation across SEO, SEM, social media, and content.
 18. A luxury hotel brand wants to maintain exclusivity through selective licensing. Identify potential partners and risks.
 19. A tech company sells both to consumers (B2C) and businesses (B2B). Recommend different social media strategies for each.
 20. A retailer wants to implement a CRM system. What data should they capture, and how should they segment customers?
 
-### Section C: Advanced Questions (Q21–Q30)
+### Section C: Advanced Questions (Q21â€“Q30)
 
 21. "Brand equity is built over decades but can be destroyed overnight." Explain with real-world examples of brand crises.
 22. Compare and contrast the AIDA model in personal selling with the content marketing funnel. Where do they converge?
@@ -1215,8 +1215,8 @@ d) 80% of marketing budget goes to retention
 |---|-----|-----------------|
 | 1 | Brand equity = added value from brand name; higher margins, customer loyalty, resilience | Most valuable intangible asset for many firms |
 | 2 | Identity = how company wants to be perceived; Image = how consumers actually perceive | Gap between identity and image needs management |
-| 3 | Salience → Performance/Imagery → Judgments/Feelings → Resonance | Building block model |
-| 4 | Line: same category new variant (iPhone 15→16); Category: same brand new category (iPhone→Watch) | Different risk levels |
+| 3 | Salience â†’ Performance/Imagery â†’ Judgments/Feelings â†’ Resonance | Building block model |
+| 4 | Line: same category new variant (iPhone 15â†’16); Category: same brand new category (iPhoneâ†’Watch) | Different risk levels |
 | 5 | Co-branding = two brands collaborate on same product; Ingredient = one brand in another | Intel Inside is ingredient, not co-branding |
 | 6 | POP = necessary but not unique; POD = unique and superior | Framework for differentiation |
 | 7 | On-page (content), Off-page (backlinks), Technical (site speed) | Three pillars of SEO |
@@ -1224,7 +1224,7 @@ d) 80% of marketing budget goes to retention
 | 9 | Automated sequence of emails triggered by behaviour | Nurtures leads over time |
 | 10 | CLV = total profit from customer over entire relationship | Determines max CAC |
 | 11 | POP: quality ingredients, moisturising; POD: organic certification, ayurvedic ingredients | Premium positioning |
-| 12 | CTR = 3%, CPC = ₹60, CPA = ₹1,500 | Standard SEM metrics |
+| 12 | CTR = 3%, CPC = â‚¹60, CPA = â‚¹1,500 | Standard SEM metrics |
 | 13 | Tiered loyalty: points, exclusive services, personalised RM, priority service | Retention strategy |
 | 14 | Line extension safer; category extension risks dilution | Fit with brand is critical |
 | 15 | Open rate = 45%, Click rate = 30% | Industry benchmark comparison |
@@ -1242,7 +1242,7 @@ d) 80% of marketing budget goes to retention
 | 27 | Check deliverability, subject lines, segmentation, timing, content relevance | Fix email performance |
 | 28 | Google = intent-based (searching); Facebook = interest-based (browsing) | Context matters |
 | 29 | Community creates active engagement (Level 4 resonance) | Belonging drives loyalty |
-| 30 | Month 1–2: Website + SEO; Month 3–4: Social + Content; Month 5–6: SEM + Email | Phased approach |
+| 30 | Month 1â€“2: Website + SEO; Month 3â€“4: Social + Content; Month 5â€“6: SEM + Email | Phased approach |
 
 ### Additional Exam-Oriented MCQs (IBPS SO / SBI / RBI Pattern)
 
@@ -1254,7 +1254,7 @@ d) 80% of marketing budget goes to retention
 
 <details>
 <summary>Answer</summary>
-**b) Kevin Lane Keller.** Kevin Lane Keller developed the Customer-Based Brand Equity (CBBE) model. The model views brand equity from the consumer's perspective and uses a four-level pyramid: Salience → Performance/Imagery → Judgments/Feelings → Resonance.
+**b) Kevin Lane Keller.** Kevin Lane Keller developed the Customer-Based Brand Equity (CBBE) model. The model views brand equity from the consumer's perspective and uses a four-level pyramid: Salience â†’ Performance/Imagery â†’ Judgments/Feelings â†’ Resonance.
 </details>
 
 **32.** In the CBBE pyramid, "What about you and me?" is the question answered at which level?
@@ -1320,7 +1320,7 @@ d) 80% of marketing budget goes to retention
 
 <details>
 <summary>Answer</summary>
-**b) Total emails delivered.** Email CTR is calculated as (unique clicks / unique delivered emails) × 100. The click-to-open rate (CTOR) would be (clicks / opens) × 100 = 33.3%, which indicates strong engagement among openers.
+**b) Total emails delivered.** Email CTR is calculated as (unique clicks / unique delivered emails) Ã— 100. The click-to-open rate (CTOR) would be (clicks / opens) Ã— 100 = 33.3%, which indicates strong engagement among openers.
 </details>
 
 **38.** Which social media platform offers the most precise B2B targeting by job title, company size, and industry?
@@ -1353,18 +1353,18 @@ d) 80% of marketing budget goes to retention
 
 <details>
 <summary>Answer</summary>
-**b) Guide internal brand decisions.** A brand mantra is a short (3–5 word) internal guiding statement that communicates the brand's essence and soul. It guides employees, partners, and marketing decisions. Example: Nike's "Authentic athletic performance."
+**b) Guide internal brand decisions.** A brand mantra is a short (3â€“5 word) internal guiding statement that communicates the brand's essence and soul. It guides employees, partners, and marketing decisions. Example: Nike's "Authentic athletic performance."
 </details>
 
-### Section D: Exam-Oriented Questions (Q31–Q40)
+### Section D: Exam-Oriented Questions (Q31â€“Q40)
 
 31. "Brand equity is the most valuable intangible asset a company can possess." Discuss with examples of brands with high and low equity.
 32. A brand with strong premium positioning is considering a line extension to a lower-priced segment. Analyse the risks using the concepts of brand dilution and brand stretching.
-33. Compare SEO, SEM, and Social Media Marketing for a new e-commerce brand with a limited budget of ₹5 lakh per month.
-34. Design a content marketing strategy for a financial advisory firm targeting young professionals aged 25–35.
+33. Compare SEO, SEM, and Social Media Marketing for a new e-commerce brand with a limited budget of â‚¹5 lakh per month.
+34. Design a content marketing strategy for a financial advisory firm targeting young professionals aged 25â€“35.
 35. Explain the concept of Customer Lifetime Value (CLV) in the context of a subscription-based brand. How does it differ from transaction-based CLV?
 36. A traditional luxury brand wants to enter the digital space without losing its exclusivity. Recommend a digital marketing strategy.
 37. Compare influencer marketing with affiliate marketing. Which is better for a new beauty brand?
 38. How do brand communities create value? Analyse using the CBBE model's resonance stage.
 39. A brand is facing a social media crisis due to a controversial ad. Design a crisis management response plan.
-40. "Retention is cheaper than acquisition." Explain this with reference to CRM strategies and calculate the financial impact for a brand with 10,000 customers, CAC of ₹500, retention cost of ₹100, and 80% retention rate.
+40. "Retention is cheaper than acquisition." Explain this with reference to CRM strategies and calculate the financial impact for a brand with 10,000 customers, CAC of â‚¹500, retention cost of â‚¹100, and 80% retention rate.

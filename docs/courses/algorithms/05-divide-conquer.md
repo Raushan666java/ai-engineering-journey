@@ -1,6 +1,6 @@
-# Chapter 5: Divide and Conquer
+﻿# Chapter 5: Divide and Conquer
 
-> **Prerequisites:** [Chapter 1: Fundamentals of Algorithm Analysis](./01-analysis.md) — Master theorem, recurrence relations | **Next:** [Chapter 6: Greedy Algorithms](./06-greedy.md) — From divide-and-conquer to locally optimal choices
+> **Prerequisites:** [Chapter 1: Fundamentals of Algorithm Analysis](./01-analysis.md) â€” Master theorem, recurrence relations | **Next:** [Chapter 6: Greedy Algorithms](./06-greedy.md) â€” From divide-and-conquer to locally optimal choices
 
 ## Learning Objectives
 
@@ -9,16 +9,16 @@ By the end of this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/algorithms/05-divide-conquer/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/algorithms/05-divide-conquer/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/algorithms/05-divide-conquer/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/algorithms/05-divide-conquer/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/algorithms/05-divide-conquer/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/algorithms/05-divide-conquer/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/algorithms/05-divide-conquer/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/algorithms/05-divide-conquer/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/algorithms/05-divide-conquer/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/algorithms/05-divide-conquer/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/algorithms/05-divide-conquer/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/algorithms/05-divide-conquer/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -29,7 +29,7 @@ By the end of this chapter, students will be able to:
 2. Solve the maximum subarray problem in \( O(n \log n) \) time.
 3. Analyze Strassen's matrix multiplication and Karatsuba multiplication.
 4. Implement the closest pair of points algorithm.
-5. Recognize when divide-and-conquer is — and is not — the right tool.
+5. Recognize when divide-and-conquer is â€” and is not â€” the right tool.
 6. Relate divide-and-conquer to real-world distributed systems like MapReduce.
 
 ---
@@ -49,9 +49,9 @@ Divide-and-conquer is the most fundamental strategy for scaling solutions. Every
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
 | **Maximum Subarray** | Crossing sum requires linear scan | Kadane's \( O(n) \) DP beats divide-and-conquer \( O(n \log n) \) |
-| **Strassen's Matrix Mult** | 7 multiplications instead of 8 | \( O(n^{2.807}) \) — breakthrough but high constant factor |
+| **Strassen's Matrix Mult** | 7 multiplications instead of 8 | \( O(n^{2.807}) \) â€” breakthrough but high constant factor |
 | **Closest Pair** | Strip of width \( 2\delta \), only 7 comparisons per point | Classic \( O(n \log n) \) geometric algorithm |
-| **Karatsuba Multiplication** | 3 multiplications instead of 4 | \( O(n^{1.585}) \) — first fast multiplication algorithm |
+| **Karatsuba Multiplication** | 3 multiplications instead of 4 | \( O(n^{1.585}) \) â€” first fast multiplication algorithm |
 
 ---
 
@@ -64,10 +64,10 @@ flowchart LR
     A --> D[Closest Pair]
     A --> E[Karatsuba Mult]
     B --> F["T(n)=2T(n/2)+O(n)"]
-    C --> G["T(n)=7T(n/2)+O(n²)"]
+    C --> G["T(n)=7T(n/2)+O(nÂ²)"]
     D --> H["T(n)=2T(n/2)+O(n)"]
     E --> I["T(n)=3T(n/2)+O(n)"]
-    F --> J[Θ(n log n)]
+    F --> J[Î˜(n log n)]
     G --> K[O(n^2.807)]
     H --> L[O(n log n)]
     I --> M[O(n^1.585)]
@@ -86,7 +86,7 @@ flowchart LR
 
 **Problem:** Given an array \( A \) of \( n \) integers (which may be negative), find the contiguous subarray with the largest sum.
 
-**Real-World Analogy:** You are a stock trader analyzing price fluctuations over 30 days. You want the contiguous window where buying then selling yields the maximum profit. The "crossing" case corresponds to a trade that starts in the first half of the month and ends in the second half — you must consider windows that cross the midpoint.
+**Real-World Analogy:** You are a stock trader analyzing price fluctuations over 30 days. You want the contiguous window where buying then selling yields the maximum profit. The "crossing" case corresponds to a trade that starts in the first half of the month and ends in the second half â€” you must consider windows that cross the midpoint.
 
 **Algorithm Steps:**
 
@@ -99,13 +99,13 @@ flowchart LR
 
 ```
 MAX-CROSSING-SUM(A, low, mid, high)
-    leftSum = -∞
+    leftSum = -âˆž
     sum = 0
     for i = mid downto low
         sum = sum + A[i]
         if sum > leftSum
             leftSum = sum
-    rightSum = -∞
+    rightSum = -âˆž
     sum = 0
     for i = mid + 1 to high
         sum = sum + A[i]
@@ -117,7 +117,7 @@ MAX-SUBARRAY(A, low, high)
     if high == low
         return A[low]               // base case: one element
     else
-        mid = ⌊(low + high) / 2⌋
+        mid = âŒŠ(low + high) / 2âŒ‹
         leftSum = MAX-SUBARRAY(A, low, mid)
         rightSum = MAX-SUBARRAY(A, mid + 1, high)
         crossSum = MAX-CROSSING-SUM(A, low, mid, high)
@@ -126,7 +126,7 @@ MAX-SUBARRAY(A, low, high)
 
 **Dry Run with Trace Table:**
 
-Array: `A = [-2, 1, -3, 4, -1, 2, 1, -5, 4]` (indices 0–8)
+Array: `A = [-2, 1, -3, 4, -1, 2, 1, -5, 4]` (indices 0â€“8)
 
 | Call | low | high | mid | Left | Right | Cross | Result |
 |------|-----|------|-----|------|-------|-------|--------|
@@ -134,33 +134,33 @@ Array: `A = [-2, 1, -3, 4, -1, 2, 1, -5, 4]` (indices 0–8)
 | left(0,4) | 0 | 4 | 2 | ... | ... | ... | **4** |
 | left(0,2) | 0 | 2 | 1 | ... | ... | ... | **1** |
 | left(0,1) | 0 | 1 | 0 | -2 | 1 | -1 | **1** |
-| base(0,0) | 0 | 0 | — | — | — | — | **-2** |
-| base(1,1) | 1 | 1 | — | — | — | — | **1** |
-| cross(0,0,1) | 0 | 1 | 0 | max(0→0: -2)= -2? Wait — let me recalculate. | | | |
+| base(0,0) | 0 | 0 | â€” | â€” | â€” | â€” | **-2** |
+| base(1,1) | 1 | 1 | â€” | â€” | â€” | â€” | **1** |
+| cross(0,0,1) | 0 | 1 | 0 | max(0â†’0: -2)= -2? Wait â€” let me recalculate. | | | |
 | ... | ... | ... | ... | ... | ... | ... | ... |
 | **Final** | 0 | 8 | 4 | 4 (left [4,-1,2,1]=6)| right [4]=4| Cross [4,-1,2,1]=6| **6** |
 
 The crossing sum at the top level: expanding from mid=4:
-- Left side (i=4 down to 0): `A[4]=-1, +A[3]=3, +A[2]=0, +A[1]=1, +A[0]=-1` → leftSum = 3 (at positions 1–4? Let me carefully trace.)
+- Left side (i=4 down to 0): `A[4]=-1, +A[3]=3, +A[2]=0, +A[1]=1, +A[0]=-1` â†’ leftSum = 3 (at positions 1â€“4? Let me carefully trace.)
 
 Let's trace carefully for `MAX-CROSSING-SUM(A, 0, 4, 8)`:
 
 **Left sweep (i=4 down to 0):**
-- i=4: sum=-1 → leftSum=-1
-- i=3: sum=-1+4=3 → leftSum=3
-- i=2: sum=3+(-3)=0 → leftSum=3
-- i=1: sum=0+1=1 → leftSum=3
-- i=0: sum=1+(-2)=-1 → leftSum=3
+- i=4: sum=-1 â†’ leftSum=-1
+- i=3: sum=-1+4=3 â†’ leftSum=3
+- i=2: sum=3+(-3)=0 â†’ leftSum=3
+- i=1: sum=0+1=1 â†’ leftSum=3
+- i=0: sum=1+(-2)=-1 â†’ leftSum=3
 
 **Right sweep (i=5 to 8):**
-- i=5: sum=2 → rightSum=2
-- i=6: sum=2+1=3 → rightSum=3
-- i=7: sum=3+(-5)=-2 → rightSum=3
-- i=8: sum=-2+4=2 → rightSum=3
+- i=5: sum=2 â†’ rightSum=2
+- i=6: sum=2+1=3 â†’ rightSum=3
+- i=7: sum=3+(-5)=-2 â†’ rightSum=3
+- i=8: sum=-2+4=2 â†’ rightSum=3
 
 **crossSum = 3 + 3 = 6**
 
-Left recursive result (indices 0–4) = 4 (subarray [4,-1] with sum 3? No — let's trust the final: left=4 in the trace is actually... The maximum subarray entirely in left half (0–4) is [4,-1] with sum 3? Wait. Actually [4, -1, 2, 1] = 6 spans indices 3–6, which crosses. Within 0–4 only, the max is subarray [4] = 4 at index 3. So left=4. Right half (5–8) max is [2,1]=3 at indices 5–6 or [4]=4 at index 8. So right=4. Cross=6. Result = max(4,4,6) = 6. The maximum subarray is [4, -1, 2, 1] at indices 3–6 with sum 6.
+Left recursive result (indices 0â€“4) = 4 (subarray [4,-1] with sum 3? No â€” let's trust the final: left=4 in the trace is actually... The maximum subarray entirely in left half (0â€“4) is [4,-1] with sum 3? Wait. Actually [4, -1, 2, 1] = 6 spans indices 3â€“6, which crosses. Within 0â€“4 only, the max is subarray [4] = 4 at index 3. So left=4. Right half (5â€“8) max is [2,1]=3 at indices 5â€“6 or [4]=4 at index 8. So right=4. Cross=6. Result = max(4,4,6) = 6. The maximum subarray is [4, -1, 2, 1] at indices 3â€“6 with sum 6.
 
 | Level | low | high | mid | LeftSum | RightSum | CrossSum | Result |
 |-------|-----|------|-----|---------|----------|----------|--------|
@@ -279,10 +279,10 @@ Result: \( T(n) = \Theta(n^{\log_b a} \log n) = \Theta(n \log n) \).
 | Handles all-negative arrays correctly (returns max element) | Crossing-sum logic is non-intuitive for beginners |
 
 **Edge Cases:**
-- **All negative numbers:** \([-5, -2, -3, -1]\) — The algorithm correctly returns \(-1\) (the least negative element). Each recursive call returns its single element, and crossing sums are always more negative.
+- **All negative numbers:** \([-5, -2, -3, -1]\) â€” The algorithm correctly returns \(-1\) (the least negative element). Each recursive call returns its single element, and crossing sums are always more negative.
 - **Single element:** Returns that element immediately via base case.
 - **All identical:** If all elements are equal (e.g., all 5s), the total sum of the entire array is returned.
-- **Empty array:** Not handled by this implementation — requires a wrapper check.
+- **Empty array:** Not handled by this implementation â€” requires a wrapper check.
 
 > **Pro Tip:** For the maximum subarray problem in interviews, use Kadane's algorithm (\( O(n) \) DP) instead of the divide-and-conquer version. The divide-and-conquer approach is mainly useful for understanding the paradigm.
 
@@ -297,7 +297,7 @@ Result: \( T(n) = \Theta(n^{\log_b a} \log n) = \Theta(n \log n) \).
 
 **Problem:** Multiply two \( n \times n \) matrices, where \( n \) is a power of 2. The standard algorithm requires \( O(n^3) \) time.
 
-**Real-World Analogy:** You run a bakery that produces 4 types of pastries across 4 stores. Computing sales totals normally requires 16 separate calculations (each store × each pastry). But you notice patterns: if you combine certain stores' data and certain pastries' data first, you can compute the same totals with only 7 combined calculations — trading some addition work for fewer multiplication operations. This is exactly what Strassen does.
+**Real-World Analogy:** You run a bakery that produces 4 types of pastries across 4 stores. Computing sales totals normally requires 16 separate calculations (each store Ã— each pastry). But you notice patterns: if you combine certain stores' data and certain pastries' data first, you can compute the same totals with only 7 combined calculations â€” trading some addition work for fewer multiplication operations. This is exactly what Strassen does.
 
 **Algorithm Steps:**
 
@@ -316,7 +316,7 @@ STRASSEN(A, B, n)
     if n == 1
         return A[0][0] * B[0][0]
     
-    // Divide into n/2 × n/2 submatrices
+    // Divide into n/2 Ã— n/2 submatrices
     A11, A12, A21, A22 = split(A)
     B11, B12, B21, B22 = split(B)
     
@@ -363,7 +363,7 @@ Let \( A = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}, B = \begin{bmatrix} 5 &
 | \( C_{21} \) | \( P_3 + P_4 \) | \( 35 + 8 \) | **43** |
 | \( C_{22} \) | \( P_5 + P_1 - P_3 - P_7 \) | \( 65 + (-2) - 35 - (-22) \) | **50** |
 
-Result: \( C = \begin{bmatrix} 19 & 22 \\ 43 & 50 \end{bmatrix} \) ✓ (matches standard multiplication)
+Result: \( C = \begin{bmatrix} 19 & 22 \\ 43 & 50 \end{bmatrix} \) âœ“ (matches standard multiplication)
 
 **C++ Implementation:**
 
@@ -555,21 +555,21 @@ Seven subproblems of size \( n/2 \), plus \( O(n^2) \) additions/subtractions fo
 Since \( f(n) = O(n^2) = O(n^{2.807 - \epsilon}) \), this is **Case 1** of the master theorem (polynomially smaller).  
 Result: \( T(n) = \Theta(n^{\log_2 7}) = \Theta(n^{2.807}) \).
 
-**Why this is a breakthrough:** Standard multiplication uses 8 recursive multiplications (\( T(n) = 8T(n/2) + O(n^2) \)), giving \( \Theta(n^3) \). Strassen's one-subproblem reduction \( 8 \to 7 \) drops the exponent from 3 to 2.807. Every subsequent improvement (Coppersmith–Winograd \( O(n^{2.376}) \), Alman–Williams \( O(n^{2.372}) \)) follows the same pattern: reduce subproblem count further.
+**Why this is a breakthrough:** Standard multiplication uses 8 recursive multiplications (\( T(n) = 8T(n/2) + O(n^2) \)), giving \( \Theta(n^3) \). Strassen's one-subproblem reduction \( 8 \to 7 \) drops the exponent from 3 to 2.807. Every subsequent improvement (Coppersmithâ€“Winograd \( O(n^{2.376}) \), Almanâ€“Williams \( O(n^{2.372}) \)) follows the same pattern: reduce subproblem count further.
 
 **Advantages & Disadvantages:**
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| First algorithm to break \( O(n^3) \) barrier — historic milestone | Large constant factor — slower than naive for \( n &lt; 1000 \) |
+| First algorithm to break \( O(n^3) \) barrier â€” historic milestone | Large constant factor â€” slower than naive for \( n &lt; 1000 \) |
 | Asymptotically faster for very large matrices (\( n > 10^5 \)) | Numerical instability with floating-point (subtractions cause cancellation) |
-| Foundation for all subsequent matrix multiplication improvements | Not in-place — requires significant extra memory for submatrices |
+| Foundation for all subsequent matrix multiplication improvements | Not in-place â€” requires significant extra memory for submatrices |
 | Naturally parallelizable (7 subproblems are independent) | Only works for square matrices; padding required for arbitrary sizes |
 
 **Edge Cases:**
 - **Non-power-of-two sizes:** Pad matrices with zeros to the next power of 2. For example, a \( 5 \times 5 \) matrix is padded to \( 8 \times 8 \).
 - **Single element:** Base case \( n = 1 \) handles this via direct multiplication.
-- **Rectangular matrices:** Strassen's algorithm does not apply directly — use standard multiplication or pad to square.
+- **Rectangular matrices:** Strassen's algorithm does not apply directly â€” use standard multiplication or pad to square.
 - **Integer overflow:** The numerous additions and subtractions may cause overflow in languages with fixed-width integers; use Python or arbitrary-precision types.
 
 > **Pro Tip:** Strassen's algorithm has a large constant factor and numerical stability issues. In practice, standard \( O(n^3) \) multiplication is faster for \( n &lt; 1000 \). Use Strassen only for very large matrices.
@@ -585,7 +585,7 @@ Result: \( T(n) = \Theta(n^{\log_2 7}) = \Theta(n^{2.807}) \).
 
 **Problem:** Given \( n \) points in the plane, find the pair with the smallest Euclidean distance.
 
-**Real-World Analogy:** You are an air traffic controller managing 1000 flights. You need to find which two planes are closest together to issue a warning. Checking every pair (\( O(n^2) \)) takes too long. Instead, you divide the airspace into east and west halves, find the closest pair in each half, then check only a narrow strip around the dividing line — knowing that only a few planes in that strip can be close enough to matter.
+**Real-World Analogy:** You are an air traffic controller managing 1000 flights. You need to find which two planes are closest together to issue a warning. Checking every pair (\( O(n^2) \)) takes too long. Instead, you divide the airspace into east and west halves, find the closest pair in each half, then check only a narrow strip around the dividing line â€” knowing that only a few planes in that strip can be close enough to matter.
 
 **Algorithm Steps:**
 
@@ -640,8 +640,8 @@ Sorted by \( x \): \( \{(2,3), (3,4), (5,1), (12,10), (12,30), (40,50)\} \)
 | Step | Left Subset | Right Subset | \( \delta_L \) | \( \delta_R \) | \( \delta \) | Strip Points | Strip Min |
 |------|-------------|--------------|------|------|------|------|-----------|
 | Top | (2,3),(3,4),(5,1) | (12,10),(12,30),(40,50) | 1.414 | 20 | 1.414 | (2,3),(3,4),(5,1) | 1.414 |
-| Left | (2,3),(3,4),(5,1) | — | brute = 1.414 | — | 1.414 | — | — |
-| Right | (12,10),(12,30),(40,50) | — | brute = 20 | — | 20 | — | — |
+| Left | (2,3),(3,4),(5,1) | â€” | brute = 1.414 | â€” | 1.414 | â€” | â€” |
+| Right | (12,10),(12,30),(40,50) | â€” | brute = 20 | â€” | 20 | â€” | â€” |
 
 Brute force on left half: \( \text{dist}((2,3),(3,4)) = \sqrt{2} \approx 1.414 \), \( \text{dist}((2,3),(5,1)) = \sqrt{13} \approx 3.606 \), \( \text{dist}((3,4),(5,1)) = \sqrt{13} \approx 3.606 \). Minimum: **1.414** between (2,3) and (3,4).
 
@@ -802,30 +802,30 @@ public class ClosestPair {
 
 **Recurrence:** \( T(n) = 2T(n/2) + O(n) \)
 
-Two subproblems of size \( n/2 \), plus \( O(n) \) work to split the \( y \)-sorted list and scan the strip. The strip check compares each of at most \( n \) points against at most 7 others — still \( O(n) \).
+Two subproblems of size \( n/2 \), plus \( O(n) \) work to split the \( y \)-sorted list and scan the strip. The strip check compares each of at most \( n \) points against at most 7 others â€” still \( O(n) \).
 
 **Master Theorem check:** \( a = 2, b = 2, f(n) = O(n) \). \( \log_b a = \log_2 2 = 1 \).  
 Since \( f(n) = O(n^1) = O(n^{\log_b a}) \), this is **Case 2**.  
 Result: \( T(n) = \Theta(n \log n) \).
 
-**Why only 7 comparisons per point?** In the \( \delta \times 2\delta \) rectangle of the strip, at most 8 points can fit without being closer than \( \delta \). Partition the rectangle into \( (\delta/2) \times (2\delta/3) \) sub-rectangles — each can hold at most 1 point. This geometric packing lemma guarantees the constant bound.
+**Why only 7 comparisons per point?** In the \( \delta \times 2\delta \) rectangle of the strip, at most 8 points can fit without being closer than \( \delta \). Partition the rectangle into \( (\delta/2) \times (2\delta/3) \) sub-rectangles â€” each can hold at most 1 point. This geometric packing lemma guarantees the constant bound.
 
 **Advantages & Disadvantages:**
 
 | Advantages | Disadvantages |
 |------------|---------------|
 | \( O(n \log n) \) is optimal for comparison-based approaches | Requires careful implementation of the strip sort |
-| Elegant geometric insight — the 7-point bound is beautiful | Recursive depth can be large for many points |
+| Elegant geometric insight â€” the 7-point bound is beautiful | Recursive depth can be large for many points |
 | Foundation for many spatial data structures (k-d trees) | Presorting by \( x \) is a preprocessing step often forgotten |
 | Easily extended to 3D (with \( O(n \log^2 n) \) complexity) | Floating-point precision issues with \( \sqrt{} \) |
 
 **Edge Cases:**
-- **Collinear points:** Multiple points on the same line. The algorithm still works — distance is computed normally. If 3+ points are collinear and equally spaced, the strip logic still holds.
+- **Collinear points:** Multiple points on the same line. The algorithm still works â€” distance is computed normally. If 3+ points are collinear and equally spaced, the strip logic still holds.
 - **Duplicate points:** Distance = 0. The algorithm should return 0 immediately. If duplicates exist, the packing lemma fails (points can be arbitrarily close in the strip). Add a duplicate check at the start.
 - **Fewer than 3 points:** Handled by the brute-force base case (\( n \leq 3 \)).
 - **Vertical/horizontal lines:** The algorithm handles all orientations equally since it uses Euclidean distance.
 
-> **Pro Tip:** In the closest pair algorithm, the "7-point check" is critical — after sorting the strip by \( y \), each point needs checking against at most 7 following points. This guarantees the \( O(n \log n) \) bound.
+> **Pro Tip:** In the closest pair algorithm, the "7-point check" is critical â€” after sorting the strip by \( y \), each point needs checking against at most 7 following points. This guarantees the \( O(n \log n) \) bound.
 
 > **Warning:** The closest pair algorithm assumes no duplicate points. If duplicates exist, the distance becomes 0 and the strip logic changes.
 
@@ -838,7 +838,7 @@ Result: \( T(n) = \Theta(n \log n) \).
 
 **Problem:** Multiply two \( n \)-digit integers efficiently. The grade-school algorithm takes \( O(n^2) \) time.
 
-**Real-World Analogy:** To compute \( 37 \times 53 \), you normally do \( 30 \times 50 + 30 \times 3 + 7 \times 50 + 7 \times 3 \) — four products. Karatsuba notices that \( (30+7) \times (50+3) = 30 \times 50 + (30 \times 3 + 7 \times 50) + 7 \times 3 \), and the middle term can be derived from \( (30+7) \times (50+3) - 30 \times 50 - 7 \times 3 \), requiring only three multiplications instead of four. This is your mental math shortcut: compute \( 37 \times 53 = 37 \times 50 + 37 \times 3 \) — two products. Karatsuba extends this idea recursively.
+**Real-World Analogy:** To compute \( 37 \times 53 \), you normally do \( 30 \times 50 + 30 \times 3 + 7 \times 50 + 7 \times 3 \) â€” four products. Karatsuba notices that \( (30+7) \times (50+3) = 30 \times 50 + (30 \times 3 + 7 \times 50) + 7 \times 3 \), and the middle term can be derived from \( (30+7) \times (50+3) - 30 \times 50 - 7 \times 3 \), requiring only three multiplications instead of four. This is your mental math shortcut: compute \( 37 \times 53 = 37 \times 50 + 37 \times 3 \) â€” two products. Karatsuba extends this idea recursively.
 
 **Algorithm Steps:**
 
@@ -884,9 +884,9 @@ Compute \( x = 1234, y = 5678 \) (both 4-digit).
 | Level | \( a \) | \( b \) | \( c \) | \( d \) | \( z_2 = a \times c \) | \( z_0 = b \times d \) | \( z_1 = (a+b)(c+d) - z_2 - z_0 \) | Result |
 |-------|--------|--------|--------|--------|----------------------|----------------------|--------------------------------------|--------|
 | 0 | 12 | 34 | 56 | 78 | 672 | 2652 | \( 46 \times 134 - 672 - 2652 = 2840 \) | \( 672\times10^4 + 2840\times10^2 + 2652 \) |
-| 1a | 1 | 2 | 5 | 6 | 1×5=5 | 2×6=12 | \( (3)(11) - 5 - 12 = 16 \) | \( 5\times10^2 + 16\times10 + 12 = 672 \) |
-| 1b | 3 | 4 | 7 | 8 | 3×7=21 | 4×8=32 | \( (7)(15) - 21 - 32 = 52 \) | \( 21\times10^2 + 52\times10 + 32 = 2652 \) |
-| 1c | 3+4=7 | — | 7+8=15 | — | \( a+b=1+2=3, c+d=5+6=11 \) | 3×11=33 | — | — |
+| 1a | 1 | 2 | 5 | 6 | 1Ã—5=5 | 2Ã—6=12 | \( (3)(11) - 5 - 12 = 16 \) | \( 5\times10^2 + 16\times10 + 12 = 672 \) |
+| 1b | 3 | 4 | 7 | 8 | 3Ã—7=21 | 4Ã—8=32 | \( (7)(15) - 21 - 32 = 52 \) | \( 21\times10^2 + 52\times10 + 32 = 2652 \) |
+| 1c | 3+4=7 | â€” | 7+8=15 | â€” | \( a+b=1+2=3, c+d=5+6=11 \) | 3Ã—11=33 | â€” | â€” |
 
 Wait, the trace for level 0 needs the actual multiplication sub-calls. Let me be more precise:
 
@@ -898,20 +898,20 @@ Wait, the trace for level 0 needs the actual multiplication sub-calls. Let me be
 - \( z_1 = 46 \times 134 - 672 - 2652 = 6164 - 3324 = 2840 \)
 - Result: \( 672 \times 10^4 + 2840 \times 10^2 + 2652 = 6,720,000 + 284,000 + 2,652 = 7,006,652 \)
 
-Verify: \( 1234 \times 5678 = 7,006,652 \) ✓
+Verify: \( 1234 \times 5678 = 7,006,652 \) âœ“
 
 **Level 1a:** \( a = 1, b = 2, c = 5, d = 6 \) (computing \( 12 \times 56 \))
 - \( z_2 = 1 \times 5 = 5 \)
 - \( z_0 = 2 \times 6 = 12 \)
 - \( z_1 = (1+2)(5+6) - 5 - 12 = 33 - 17 = 16 \)
-- Result: \( 5 \times 100 + 16 \times 10 + 12 = 500 + 160 + 12 = 672\) ✓
+- Result: \( 5 \times 100 + 16 \times 10 + 12 = 500 + 160 + 12 = 672\) âœ“
 
 | Level | \( a \) | \( b \) | \( c \) | \( d \) | \( z_2 \) | \( z_0 \) | \( z_1 \) | Result |
 |-------|--------|--------|--------|--------|----------|----------|-----------|--------|
 | 0 | 12 | 34 | 56 | 78 | 672 | 2652 | 2840 | **7,006,652** |
 | 1a | 1 | 2 | 5 | 6 | 5 | 12 | 16 | 672 |
 | 1b | 3 | 4 | 7 | 8 | 21 | 32 | 52 | 2652 |
-| 1c | 4 | 6 | 13 | 4 | — | — | — | 6164 |
+| 1c | 4 | 6 | 13 | 4 | â€” | â€” | â€” | 6164 |
 | 2a | 0 | 1 | 0 | 5 | 0 | 5 | 0 | 5 |
 | 2b | 0 | 2 | 0 | 6 | 0 | 12 | 0 | 12 |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... |
@@ -1005,7 +1005,7 @@ Three subproblems of size \( n/2 \) (the three multiplications) plus \( O(n) \) 
 Since \( f(n) = O(n^1) = O(n^{1.585 - \epsilon}) \), this is **Case 1** of the master theorem.  
 Result: \( T(n) = \Theta(n^{\log_2 3}) = \Theta(n^{1.585}) \).
 
-**Why the improvement?** The grade-school method computes \( ac, ad, bc, bd \) — four multiplications. Karatsuba computes \( ac, bd, (a+b)(c+d) \) — three. The savings at each level compound: instead of \( 4^k \) multiplications at depth \( k \), we have \( 3^k \). The \( (3/4)^k \) factor is the speedup.
+**Why the improvement?** The grade-school method computes \( ac, ad, bc, bd \) â€” four multiplications. Karatsuba computes \( ac, bd, (a+b)(c+d) \) â€” three. The savings at each level compound: instead of \( 4^k \) multiplications at depth \( k \), we have \( 3^k \). The \( (3/4)^k \) factor is the speedup.
 
 **Advantages & Disadvantages:**
 
@@ -1013,16 +1013,16 @@ Result: \( T(n) = \Theta(n^{\log_2 3}) = \Theta(n^{1.585}) \).
 |------------|---------------|
 | First sub-\( O(n^2) \) multiplication algorithm large integers | Recursive overhead for small inputs |
 | Used in Python's `int` and Java's `BigInteger` for large operands | Extra memory for splitting and recombination |
-| Generalizes to Toom-Cook (3-way split, \( O(n^{1.465}) \)) | Base case tuning matters — must switch to naive at small \( n \) |
+| Generalizes to Toom-Cook (3-way split, \( O(n^{1.465}) \)) | Base case tuning matters â€” must switch to naive at small \( n \) |
 | Relatively simple to implement correctly | Works poorly for very small numbers (< 100 digits) |
 
 **Edge Cases:**
 - **Small numbers:** If either number has fewer than 10 digits, fall back to direct multiplication to avoid overhead.
 - **Uneven digit lengths:** The algorithm handles this naturally. For \( x = 123, y = 45 \), \( n = 3 \), \( m = 1 \): \( a = 12, b = 3, c = 4, d = 5 \).
 - **Negative numbers:** The algorithm works if you take absolute values and track the sign separately.
-- **Zero:** \( a + b \) or \( c + d \) can overflow — ensure the recursive base case handles this.
+- **Zero:** \( a + b \) or \( c + d \) can overflow â€” ensure the recursive base case handles this.
 
-> **Pro Tip:** Karatsuba's insight — computing \( (a+b)(c+d) \) saves one multiplication — generalizes to Toom-Cook (split into 3 parts) and FFT-based methods (\( O(n \log n) \)). Each reduces the subproblem count at the cost of more additions.
+> **Pro Tip:** Karatsuba's insight â€” computing \( (a+b)(c+d) \) saves one multiplication â€” generalizes to Toom-Cook (split into 3 parts) and FFT-based methods (\( O(n \log n) \)). Each reduces the subproblem count at the cost of more additions.
 
 **One-Sentence Takeaway:** Karatsuba multiplication reduces the naive \( O(n^2) \) integer multiplication to \( O(n^{1.585}) \) by cleverly reusing three multiplication results instead of four.
 
@@ -1035,7 +1035,7 @@ Divide-and-conquer is powerful but not universal. Here are the situations where 
 
 **1. Overlapping Subproblems**
 
-If the subproblems share computations, divide-and-conquer may recompute the same work repeatedly. For example, computing the \( n \)-th Fibonacci number via divide-and-conquer (Fibonacci(n) = Fibonacci(n-1) + Fibonacci(n-2)) yields exponential \( O(2^n) \) time. Dynamic programming solves this by storing subproblem results — trading recursion for a table.
+If the subproblems share computations, divide-and-conquer may recompute the same work repeatedly. For example, computing the \( n \)-th Fibonacci number via divide-and-conquer (Fibonacci(n) = Fibonacci(n-1) + Fibonacci(n-2)) yields exponential \( O(2^n) \) time. Dynamic programming solves this by storing subproblem results â€” trading recursion for a table.
 
 **2. Non-Independent Subproblems**
 
@@ -1047,7 +1047,7 @@ For \( n &lt; 10-100 \), the recursive overhead of divide-and-conquer often exce
 
 **4. Problems with No Efficient Merge**
 
-The combination step must be cheaper than the divide step. If merging takes \( O(n^2) \) while dividing takes \( O(n) \), the recurrence becomes \( T(n) = 2T(n/2) + O(n^2) \), which solves to \( O(n^2) \) — no improvement over a naive approach.
+The combination step must be cheaper than the divide step. If merging takes \( O(n^2) \) while dividing takes \( O(n) \), the recurrence becomes \( T(n) = 2T(n/2) + O(n^2) \), which solves to \( O(n^2) \) â€” no improvement over a naive approach.
 
 **5. Poor Cache Locality**
 
@@ -1076,7 +1076,7 @@ Divide-and-conquer algorithms scatter memory accesses across the recursion tree,
 **A:** The cross-set closest pair problem can be solved by merging both sets, sorting by \( x \), and modifying the strip check to only compare points from different sets. Complexity remains \( O(n \log n) \).
 
 **Q:** Can we find the closest pair in \( O(n) \) expected time?
-**A:** Yes — using a randomized algorithm with a grid-based approach (bucket technique). Divide the plane into a grid of \( \delta \times \delta \) cells. Each point only needs checking against points in its own cell and neighboring cells. The expected number of points per cell is constant.
+**A:** Yes â€” using a randomized algorithm with a grid-based approach (bucket technique). Divide the plane into a grid of \( \delta \times \delta \) cells. Each point only needs checking against points in its own cell and neighboring cells. The expected number of points per cell is constant.
 
 ### Maximum Subarray: Kadane vs. Divide-and-Conquer
 
@@ -1086,7 +1086,7 @@ Divide-and-conquer algorithms scatter memory accesses across the recursion tree,
 | Space Complexity | \( O(1) \) | \( O(\log n) \) (call stack) |
 | Approach | Dynamic programming, single pass | Recursive splitting |
 | When to use | **Always in production** | Teaching the paradigm |
-| Track subarray indices | Easy — track start/end | More complex |
+| Track subarray indices | Easy â€” track start/end | More complex |
 | Parallelizable | No (inherently sequential) | Yes (independent halves) |
 
 **Interview Tip:** Always start with Kadane's for maximum subarray unless the interviewer explicitly asks for a divide-and-conquer solution. Mentioning that Kadane is \( O(n) \) shows you understand the trade-offs.
@@ -1103,7 +1103,7 @@ Divide-and-conquer algorithms scatter memory accesses across the recursion tree,
 **A:** Because the standard 8 multiplications have algebraic redundancy. Each quadrant of the result matrix contains overlapping terms. Strassen found a set of 7 products whose linear combinations reconstruct all 4 quadrants. The 7 is minimal for \( 2 \times 2 \) blocking; no algorithm can reduce it below 7 without a different approach.
 
 **Q:** Can we apply Strassen to non-square matrices?
-**A:** Yes — pad to the next power of 2 with zeros, then apply Strassen. The padding increases size but the asymptotic gain still holds.
+**A:** Yes â€” pad to the next power of 2 with zeros, then apply Strassen. The padding increases size but the asymptotic gain still holds.
 
 ---
 
@@ -1118,9 +1118,9 @@ MapReduce is divide-and-conquer at warehouse scale. The **Map** phase divides in
 - **Combine:** Shuffle/sort groups intermediate results; reducers merge partial answers
 
 ```text
-Map:  (key1, value1) → list(key2, value2)
+Map:  (key1, value1) â†’ list(key2, value2)
 Shuffle: group by key
-Reduce: (key2, list(value2)) → list(key3, value3)
+Reduce: (key2, list(value2)) â†’ list(key3, value3)
 ```
 
 ### Parallel Sorting in Databases
@@ -1179,7 +1179,7 @@ Finding the \( k \)-th smallest element in \( O(n) \) average time using divide-
 
 | Category | Key Points |
 |----------|------------|
-| **Divide-and-Conquer Pattern** | Divide → Recurse → Combine |
+| **Divide-and-Conquer Pattern** | Divide â†’ Recurse â†’ Combine |
 | **Recurrence of the Form** | \( T(n) = aT(n/b) + O(n^k) \) |
 | **Strassen** | \( a=7, b=2, \log_2 7 \approx 2.807 \), huge constant |
 | **Closest Pair** | Presort by \( x \), strip width \( 2\delta \), 7-point \( y \)-check |
@@ -1191,11 +1191,11 @@ Finding the \( k \)-th smallest element in \( O(n) \) average time using divide-
 
 | Technique | DSA Interviews | Competitive Programming | System Design | Academia/Research |
 |-----------|---------------|----------------------|---------------|-------------------|
-| Max Subarray D&C | Conceptual — Kadane's is preferred | Variations (2D, circular) | Stock/financial analysis | Divide-and-conquer pedagogy |
-| Strassen | Rarely — theoretical interest | N/A | N/A | Computational complexity theory |
-| Closest Pair | Occasionally — 2D geometry | Sweep-line alternative | Spatial databases, GIS | Geometric optimization |
+| Max Subarray D&C | Conceptual â€” Kadane's is preferred | Variations (2D, circular) | Stock/financial analysis | Divide-and-conquer pedagogy |
+| Strassen | Rarely â€” theoretical interest | N/A | N/A | Computational complexity theory |
+| Closest Pair | Occasionally â€” 2D geometry | Sweep-line alternative | Spatial databases, GIS | Geometric optimization |
 | Karatsuba | Rarely asked | Big integer libraries | N/A | Algebraic complexity |
-| Divide-and-Conquer Thinking | Extremely common — mergesort, BST, quickselect | Core problem-solving paradigm | Distributed computing, MapReduce | Foundational algorithm design |
+| Divide-and-Conquer Thinking | Extremely common â€” mergesort, BST, quickselect | Core problem-solving paradigm | Distributed computing, MapReduce | Foundational algorithm design |
 
 ---
 
@@ -1221,7 +1221,7 @@ Finding the \( k \)-th smallest element in \( O(n) \) average time using divide-
 
 <details>
 <summary>Answer&lt;/summary&gt;
-B) \( T(n) = 7T(n/2) + O(n^2) \) — 7 subproblems, each half size, \( O(n^2) \) for additions.
+B) \( T(n) = 7T(n/2) + O(n^2) \) â€” 7 subproblems, each half size, \( O(n^2) \) for additions.
 </details>
 
 **Q2.** How many points in the strip need checking against each other in the closest pair algorithm?
@@ -1233,7 +1233,7 @@ B) \( T(n) = 7T(n/2) + O(n^2) \) — 7 subproblems, each half size, \( O(n^2) \)
 
 <details>
 <summary>Answer&lt;/summary&gt;
-C) 7 — the geometric bound ensures at most 7 points can fit in a \( \delta \times 2\delta \) rectangle without being closer than \( \delta \).
+C) 7 â€” the geometric bound ensures at most 7 points can fit in a \( \delta \times 2\delta \) rectangle without being closer than \( \delta \).
 </details>
 
 **Q3.** What is the recurrence for Karatsuba multiplication?
@@ -1245,7 +1245,7 @@ C) 7 — the geometric bound ensures at most 7 points can fit in a \( \delta \ti
 
 <details>
 <summary>Answer&lt;/summary&gt;
-C) \( T(n) = 3T(n/2) + O(n) \) — three multiplications of half-sized numbers.
+C) \( T(n) = 3T(n/2) + O(n) \) â€” three multiplications of half-sized numbers.
 </details>
 
 **Q4.** In which case does divide-and-conquer fail?
@@ -1257,13 +1257,13 @@ C) \( T(n) = 3T(n/2) + O(n) \) — three multiplications of half-sized numbers.
 
 <details>
 <summary>Answer&lt;/summary&gt;
-B) Overlapping subproblems cause redundant recomputation — dynamic programming is better suited.
+B) Overlapping subproblems cause redundant recomputation â€” dynamic programming is better suited.
 </details>
 
 **Q5.** Which real-world system directly mirrors divide-and-conquer?
 
 - A) A relational database with B-tree indexes
-- B) MapReduce — splitting data across mappers and reducing partial results
+- B) MapReduce â€” splitting data across mappers and reducing partial results
 - C) A load balancer distributing HTTP requests
 - D) A DNS resolver caching lookups
 

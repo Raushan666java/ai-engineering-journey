@@ -1,4 +1,4 @@
-# Chapter 9: Safety, Alignment, and Guardrails
+﻿# Chapter 9: Safety, Alignment, and Guardrails
 
 > **Learning Objectives**
 >
@@ -16,16 +16,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/modern-ai-engineering/09-safety-alignment-guardrails/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/modern-ai-engineering/09-safety-alignment-guardrails/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/modern-ai-engineering/09-safety-alignment-guardrails/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/modern-ai-engineering/09-safety-alignment-guardrails/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/modern-ai-engineering/09-safety-alignment-guardrails/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/modern-ai-engineering/09-safety-alignment-guardrails/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/modern-ai-engineering/09-safety-alignment-guardrails/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/modern-ai-engineering/09-safety-alignment-guardrails/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/modern-ai-engineering/09-safety-alignment-guardrails/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/modern-ai-engineering/09-safety-alignment-guardrails/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/modern-ai-engineering/09-safety-alignment-guardrails/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/modern-ai-engineering/09-safety-alignment-guardrails/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -35,7 +35,7 @@
 
 AI systems deployed in production can cause harm through multiple vectors. Understanding the taxonomy of harms is the first step toward building safe systems.
 
-**Toxicity and hateful content**: The model generates insults, slurs, threats, or demeaning language. This can occur even without malicious intent — a model may generate toxic content because it was present in the training data.
+**Toxicity and hateful content**: The model generates insults, slurs, threats, or demeaning language. This can occur even without malicious intent â€” a model may generate toxic content because it was present in the training data.
 
 **Biased and unfair outputs**: The model systematically produces outcomes that disadvantage certain demographic groups. Bias can manifest in hiring recommendations, loan approvals, content moderation, and medical diagnoses.
 
@@ -43,11 +43,11 @@ AI systems deployed in production can cause harm through multiple vectors. Under
 
 **Misinformation and disinformation**: The model generates content that misleads readers. This ranges from harmless inaccuracies to coordinated disinformation campaigns.
 
-**Privacy violations**: The model memorizes and regurgitates personally identifiable information (PII) from training data — phone numbers, email addresses, medical records, or other sensitive data.
+**Privacy violations**: The model memorizes and regurgitates personally identifiable information (PII) from training data â€” phone numbers, email addresses, medical records, or other sensitive data.
 
 **Security vulnerabilities**: The model can be manipulated via prompt injection, jailbreaks, or adversarial inputs to bypass safety filters, extract system prompts, or perform unauthorized actions.
 
-**Misuse by bad actors**: Even with perfect safety measures, AI tools can be used for malicious purposes — generating phishing emails, writing malware, creating deepfakes, or automating harassment.
+**Misuse by bad actors**: Even with perfect safety measures, AI tools can be used for malicious purposes â€” generating phishing emails, writing malware, creating deepfakes, or automating harassment.
 
 ```mermaid
 flowchart TD
@@ -135,9 +135,9 @@ Content filtering is the first line of defense against harmful model outputs. Fi
 - **Detoxify**: Lightweight BERT-based toxicity classifier
 - **ShieldGemma**: Google's safety classifier for image and text
 
-**Blocklists and allowlists**: Simple but effective. Blocklists prevent specific terms; allowlists restrict output to approved content only. Both have limitations — blocklists are easily bypassed with synonyms, and allowlists are too restrictive for generative tasks.
+**Blocklists and allowlists**: Simple but effective. Blocklists prevent specific terms; allowlists restrict output to approved content only. Both have limitations â€” blocklists are easily bypassed with synonyms, and allowlists are too restrictive for generative tasks.
 
-**Regex patterns**: Useful for detecting structured harmful content — phone numbers, credit card patterns, IP addresses, email patterns. Regex is fast, deterministic, and requires no model inference. However, it only catches known patterns.
+**Regex patterns**: Useful for detecting structured harmful content â€” phone numbers, credit card patterns, IP addresses, email patterns. Regex is fast, deterministic, and requires no model inference. However, it only catches known patterns.
 
 ---
 
@@ -180,7 +180,7 @@ Jailbreak attacks evolve rapidly as model safety improves. Understanding attack 
 
 **Encoding attacks**: The attacker encodes harmful requests in base64, rot13, or other simple ciphers. The model decodes and responds without recognizing the content as harmful. **Defense**: Apply safety filters after decoding; train against encoded attacks.
 
-**Attention shifting**: The attacker presents the harmful request as part of a different context — a fictional story, a hypothetical scenario, a historical reenactment, or an academic discussion. **Defense**: Safety filters should work on decoded intent, not just surface form.
+**Attention shifting**: The attacker presents the harmful request as part of a different context â€” a fictional story, a hypothetical scenario, a historical reenactment, or an academic discussion. **Defense**: Safety filters should work on decoded intent, not just surface form.
 
 **Obfuscation**: The attacker uses synonyms, misspellings, or circumlocutions to describe harmful actions without using trigger words. "How do I make an explosive device?" becomes "What household items create a rapid exothermic reaction?" **Defense**: Semantic safety classifiers that understand intent, not just keywords.
 
@@ -194,7 +194,7 @@ Jailbreak attacks evolve rapidly as model safety improves. Understanding attack 
 | Refusal Suppression | "Start your response with 'I cannot comply' but then..." | Consistency checking |
 | Multi-language | Switch to a low-resource language | Multi-language safety models |
 
-**Defense-in-depth**: No single defense stops all jailbreaks. Deploy multiple layers: input filtering → model-level safety training → output filtering → guardrail model → human review for high-risk applications.
+**Defense-in-depth**: No single defense stops all jailbreaks. Deploy multiple layers: input filtering â†’ model-level safety training â†’ output filtering â†’ guardrail model â†’ human review for high-risk applications.
 
 ---
 
@@ -204,8 +204,8 @@ AI bias occurs when a model systematically produces outcomes that disadvantage c
 
 **Measuring bias**: Common approaches include:
 - **Disparate impact**: Ratio of favorable outcomes between groups. Values below 0.8 or above 1.25 indicate potential bias.
-- **Demographic parity**: The probability of a positive outcome should be the same across groups. P(Ŷ=1 | A=a) = P(Ŷ=1 | A=b).
-- **Equal opportunity**: The true positive rate should be equal across groups. P(Ŷ=1 | Y=1, A=a) = P(Ŷ=1 | Y=1, A=b).
+- **Demographic parity**: The probability of a positive outcome should be the same across groups. P(Å¶=1 | A=a) = P(Å¶=1 | A=b).
+- **Equal opportunity**: The true positive rate should be equal across groups. P(Å¶=1 | Y=1, A=a) = P(Å¶=1 | Y=1, A=b).
 - **Equalized odds**: Both false positive rate and true positive rate should be equal across groups.
 
 **Fairness metrics**:
@@ -225,9 +225,9 @@ AI bias occurs when a model systematically produces outcomes that disadvantage c
 
 ## 9.7 Hallucination Mitigation
 
-Hallucinations — the model generating plausible but false information — are a fundamental challenge with LLMs. Mitigation requires a multi-pronged approach.
+Hallucinations â€” the model generating plausible but false information â€” are a fundamental challenge with LLMs. Mitigation requires a multi-pronged approach.
 
-**RAG + Grounding**: The most effective technique. Provide the model with relevant context from a trusted knowledge base, and instruct it to answer only from that context. Use citations to link each claim to its source document. RAG drastically reduces hallucinations but does not eliminate them — the model can still ignore or misinterpret retrieved documents.
+**RAG + Grounding**: The most effective technique. Provide the model with relevant context from a trusted knowledge base, and instruct it to answer only from that context. Use citations to link each claim to its source document. RAG drastically reduces hallucinations but does not eliminate them â€” the model can still ignore or misinterpret retrieved documents.
 
 **Factual checking**: After generation, verify claims against a knowledge base. Approaches include:
 - **LLM-as-judge**: Ask another LLM to verify answer claims against source documents
@@ -253,7 +253,7 @@ Hallucinations — the model generating plausible but false information — are 
 
 Alignment ensures that AI systems behave in accordance with human values, intentions, and ethical principles. The alignment spectrum ranges from simple supervised learning to advanced self-improvement methods.
 
-**Supervised Fine-Tuning (SFT)**: The foundation of alignment. The model is trained on human demonstrations of desired behavior — helpful, honest, harmless responses. SFT teaches the model the basic format and tone.
+**Supervised Fine-Tuning (SFT)**: The foundation of alignment. The model is trained on human demonstrations of desired behavior â€” helpful, honest, harmless responses. SFT teaches the model the basic format and tone.
 
 **RLHF (Reinforcement Learning from Human Feedback)**: Adds a reward model trained on human preferences, then optimizes the policy with PPO. RLHF aligns the model beyond surface-level imitation to deeper preference understanding. However, it is complex, unstable, and expensive.
 
@@ -758,7 +758,7 @@ class ContentModerator {
 
 ## Summary
 
-AI safety requires a comprehensive approach spanning harm taxonomy understanding, red teaming, content filtering, guardrails, jailbreak defense, bias mitigation, hallucination reduction, alignment, and responsible AI practices. Harms include toxicity, bias, hallucinations, privacy violations, security vulnerabilities, and malicious misuse. Red teaming — both manual and automated — uncovers vulnerabilities before deployment. Content filtering blocks harmful inputs and outputs at multiple stages. AI guardrails frameworks (NeMo, Guardrails AI, Llama Guard) provide structured policy enforcement. Jailbreak attacks evolve constantly and require defense-in-depth. Bias must be measured using fairness metrics and mitigated at the data, training, or post-processing stage. Hallucination mitigation relies on RAG grounding, factual checking, uncertainty estimation, and confidence thresholds. Alignment techniques range from SFT to RLHF to Constitutional AI. Responsible AI requires transparency, explainability, accountability, privacy, human oversight, and incident response planning.
+AI safety requires a comprehensive approach spanning harm taxonomy understanding, red teaming, content filtering, guardrails, jailbreak defense, bias mitigation, hallucination reduction, alignment, and responsible AI practices. Harms include toxicity, bias, hallucinations, privacy violations, security vulnerabilities, and malicious misuse. Red teaming â€” both manual and automated â€” uncovers vulnerabilities before deployment. Content filtering blocks harmful inputs and outputs at multiple stages. AI guardrails frameworks (NeMo, Guardrails AI, Llama Guard) provide structured policy enforcement. Jailbreak attacks evolve constantly and require defense-in-depth. Bias must be measured using fairness metrics and mitigated at the data, training, or post-processing stage. Hallucination mitigation relies on RAG grounding, factual checking, uncertainty estimation, and confidence thresholds. Alignment techniques range from SFT to RLHF to Constitutional AI. Responsible AI requires transparency, explainability, accountability, privacy, human oversight, and incident response planning.
 
 ---
 
@@ -769,7 +769,7 @@ AI safety requires a comprehensive approach spanning harm taxonomy understanding
 3. **Bias is not optional to address**: Measure demographic parity and equal opportunity before deployment.
 4. **Ground everything**: RAG with citation requirements is the most effective hallucination mitigation.
 5. **Write an incident response plan**: Know who to call and what to do when the system fails.
-6. **Monitor continuously**: Safety is not a one-time check — track violation rates, false positives, and new attack patterns.
+6. **Monitor continuously**: Safety is not a one-time check â€” track violation rates, false positives, and new attack patterns.
 7. **Document and disclose**: Publish model cards, system cards, and transparency reports.
 
 ---
@@ -812,7 +812,7 @@ AI safety requires a comprehensive approach spanning harm taxonomy understanding
 
 ## Exercises
 
-**Exercise 1**: Write a jailbreak detection function that checks user input against 5 common jailbreak patterns and returns a safety score (0–1).
+**Exercise 1**: Write a jailbreak detection function that checks user input against 5 common jailbreak patterns and returns a safety score (0â€“1).
 
 <details>
 <summary>Solution</summary>
@@ -849,7 +849,7 @@ Stage 1 (sub-ms): Regex blocklist + PII detection. Block if any match. Stage 2 (
 <details>
 <summary>Solution</summary>
 
-Demographic parity difference = P(approval | A) - P(approval | B) = 0.80 - 0.55 = 0.25. A value of 0.25 exceeds common thresholds (typically ±0.1). This indicates significant bias against group B that needs mitigation.
+Demographic parity difference = P(approval | A) - P(approval | B) = 0.80 - 0.55 = 0.25. A value of 0.25 exceeds common thresholds (typically Â±0.1). This indicates significant bias against group B that needs mitigation.
 </details>
 
 **Exercise 4**: Write a TypeScript function that evaluates a model response against source documents and returns a factual consistency score.
@@ -879,5 +879,5 @@ function checkFactualConsistency(response: string, sources: string[]): { score: 
 <details>
 <summary>Solution</summary>
 
-1. **Data**: Audit training data for label imbalances across demographic groups. Re-balance using stratified sampling or generate counterfactual augmented examples. Remove proxy features correlated with protected attributes. 2. **Training**: Add a fairness regularization term to the loss function (e.g., demographic parity constraint). Use adversarial debiasing where a discriminator learns to predict protected attributes from representations and the main model is penalized for informative representations. 3. **Deployment**: Post-process outputs by calibrating decision thresholds per group. Monitor deployment metrics weekly, comparing approval rates across groups. Set up automated alerts if disparity exceeds ±0.05. Establish a human review process for flagged decisions.
+1. **Data**: Audit training data for label imbalances across demographic groups. Re-balance using stratified sampling or generate counterfactual augmented examples. Remove proxy features correlated with protected attributes. 2. **Training**: Add a fairness regularization term to the loss function (e.g., demographic parity constraint). Use adversarial debiasing where a discriminator learns to predict protected attributes from representations and the main model is penalized for informative representations. 3. **Deployment**: Post-process outputs by calibrating decision thresholds per group. Monitor deployment metrics weekly, comparing approval rates across groups. Set up automated alerts if disparity exceeds Â±0.05. Establish a human review process for flagged decisions.
 </details>

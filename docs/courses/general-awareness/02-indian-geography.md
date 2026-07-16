@@ -1,4 +1,4 @@
-# Chapter 2: Indian Geography & Environment
+﻿# Chapter 2: Indian Geography & Environment
 
 ## Learning Objectives
 
@@ -7,16 +7,16 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/general-awareness/02-indian-geography/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/general-awareness/02-indian-geography/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/general-awareness/02-indian-geography/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/general-awareness/02-indian-geography/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/general-awareness/02-indian-geography/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/general-awareness/02-indian-geography/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/general-awareness/02-indian-geography/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/general-awareness/02-indian-geography/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/general-awareness/02-indian-geography/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/general-awareness/02-indian-geography/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/general-awareness/02-indian-geography/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/general-awareness/02-indian-geography/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -34,9 +34,9 @@ By the end of this chapter, you will be able to:
 
 ## Theory
 
-### 2.1 India — Physical Overview
+### 2.1 India â€” Physical Overview
 
-India is the seventh-largest country in the world by area (3.287 million sq km) and the second-most populous (over 1.4 billion). It lies entirely in the Northern Hemisphere, extending from 8°4'N to 37°6'N latitude and 68°7'E to 97°25'E longitude.
+India is the seventh-largest country in the world by area (3.287 million sq km) and the second-most populous (over 1.4 billion). It lies entirely in the Northern Hemisphere, extending from 8Â°4'N to 37Â°6'N latitude and 68Â°7'E to 97Â°25'E longitude.
 
 **Physical Divisions:**
 
@@ -74,8 +74,8 @@ The Himalayan mountain range stretches 2,500 km from the Indus River in the west
 | Range | Average Height | Key Peaks | Features |
 |-------|---------------|-----------|----------|
 | Himadri (Greater Himalayas) | 6,000+ m | Mt. Everest (8,848m), Kanchenjunga (8,586m), Nanga Parbat, Nanda Devi | Perpetual snow, glaciers (Gangotri, Siachen) |
-| Himachal (Lesser Himalayas) | 3,700–4,500 m | Pir Panjal, Dhaula Dhar, Mahabharat Range | Hill stations (Shimla, Mussoorie, Nainital) |
-| Shiwaliks (Outer Himalayas) | 900–1,200 m | Jammu hills, Darjeeling hills | Foothills, Doons (valleys) |
+| Himachal (Lesser Himalayas) | 3,700â€“4,500 m | Pir Panjal, Dhaula Dhar, Mahabharat Range | Hill stations (Shimla, Mussoorie, Nainital) |
+| Shiwaliks (Outer Himalayas) | 900â€“1,200 m | Jammu hills, Darjeeling hills | Foothills, Doons (valleys) |
 
 **Important Himalayan Passes:**
 
@@ -96,15 +96,15 @@ The Peninsular Plateau is the oldest landmass of India (part of Gondwanaland). I
 | Region | Location | Key Features |
 |--------|----------|--------------|
 | Central Highlands | North of Narmada River | Aravalli Range, Vindhyan Range, Malwa Plateau |
-| Deccan Plateau | South of Narmada River | 600–900m elevation, slopes eastwards |
-| Western Ghats | West coast (Sahyadri) | Anamudi (2,695m — highest south of Himalayas), UNESCO World Heritage |
+| Deccan Plateau | South of Narmada River | 600â€“900m elevation, slopes eastwards |
+| Western Ghats | West coast (Sahyadri) | Anamudi (2,695m â€” highest south of Himalayas), UNESCO World Heritage |
 | Eastern Ghats | East coast | Lower than Western Ghats, broken ranges |
 
-**Difference — Western vs Eastern Ghats:**
+**Difference â€” Western vs Eastern Ghats:**
 
 | Feature | Western Ghats | Eastern Ghats |
 |---------|---------------|---------------|
-| Elevation | Higher (900–1,600m) | Lower (600–900m) |
+| Elevation | Higher (900â€“1,600m) | Lower (600â€“900m) |
 | Continuity | Continuous | Discontinuous |
 | Rivers | Few rivers flow westwards | Major rivers flow eastwards |
 | Biodiversity | Very high (Western Ghats hotspot) | Moderate |
@@ -150,7 +150,7 @@ flowchart TD
 
 **Key Fact:** Godavari is the largest peninsular river and the second-longest river in India after the Ganga. It is called the "Dakshin Ganga" (Ganga of the South).
 
-### 2.5 Climate — The Indian Monsoon
+### 2.5 Climate â€” The Indian Monsoon
 
 ```mermaid
 flowchart TD
@@ -175,12 +175,12 @@ flowchart TD
 
 | Season | Months | Characteristics |
 |--------|--------|-----------------|
-| Winter | December–February | NE trade winds, dry, cold |
-| Summer | March–May | Increasing temperature, low pressure, heat waves |
-| SW Monsoon | June–September | Principal rainy season, 75% of annual rainfall |
-| Retreating Monsoon | October–November | Cyclones in Bay of Bengal, NE monsoon rain in Tamil Nadu |
+| Winter | Decemberâ€“February | NE trade winds, dry, cold |
+| Summer | Marchâ€“May | Increasing temperature, low pressure, heat waves |
+| SW Monsoon | Juneâ€“September | Principal rainy season, 75% of annual rainfall |
+| Retreating Monsoon | Octoberâ€“November | Cyclones in Bay of Bengal, NE monsoon rain in Tamil Nadu |
 
-**Climatic Regions of India (Köppen Classification):**
+**Climatic Regions of India (KÃ¶ppen Classification):**
 
 | Region | Climate Type | States |
 |--------|-------------|--------|
@@ -219,8 +219,8 @@ pie title Soil Distribution in India
 | Type | Annual Rainfall | States | Key Species |
 |------|----------------|--------|-------------|
 | Tropical Evergreen | 200+ cm | NE states, Western Ghats | Rosewood, Mahogany, Ebony |
-| Tropical Deciduous (Monsoon) | 100–200 cm | Most of India | Teak, Sal, Sandalwood |
-| Tropical Thorn | 50–100 cm | Rajasthan, Gujarat | Acacia, Cactus |
+| Tropical Deciduous (Monsoon) | 100â€“200 cm | Most of India | Teak, Sal, Sandalwood |
+| Tropical Thorn | 50â€“100 cm | Rajasthan, Gujarat | Acacia, Cactus |
 | Montane | Variable | Himalayas | Oak, Pine, Deodar, Rhododendron |
 | Mangrove | Tidal | Sunderbans, Andaman | Sundari, Avicennia |
 
@@ -258,20 +258,20 @@ pie title Soil Distribution in India
 
 | Season | Months | Crops | States |
 |--------|--------|-------|--------|
-| Kharif | June–October | Rice, millets, cotton, sugarcane | All India (monsoon-dependent) |
-| Rabi | October–March | Wheat, barley, mustard, peas | N & NW India (requires irrigation) |
-| Zaid | March–June | Watermelon, cucumber, vegetables | Summer crops between seasons |
+| Kharif | Juneâ€“October | Rice, millets, cotton, sugarcane | All India (monsoon-dependent) |
+| Rabi | Octoberâ€“March | Wheat, barley, mustard, peas | N & NW India (requires irrigation) |
+| Zaid | Marchâ€“June | Watermelon, cucumber, vegetables | Summer crops between seasons |
 
 **Major Crops:**
 
 | Crop | Largest Producer State | Conditions |
 |------|-----------------------|------------|
-| Rice | West Bengal | 25°C+, 150+ cm rainfall |
+| Rice | West Bengal | 25Â°C+, 150+ cm rainfall |
 | Wheat | Uttar Pradesh | Cool climate, well-drained loamy soil |
-| Sugarcane | Uttar Pradesh | Tropical/subtropical, 21–27°C |
-| Cotton | Gujarat | Black soil, 21–32°C, 6 months frost-free |
-| Tea | Assam | Tropical, well-drained acidic soil, 20–30°C |
-| Coffee | Karnataka | Shade-grown, 15–28°C, 150–250 cm rainfall |
+| Sugarcane | Uttar Pradesh | Tropical/subtropical, 21â€“27Â°C |
+| Cotton | Gujarat | Black soil, 21â€“32Â°C, 6 months frost-free |
+| Tea | Assam | Tropical, well-drained acidic soil, 20â€“30Â°C |
+| Coffee | Karnataka | Shade-grown, 15â€“28Â°C, 150â€“250 cm rainfall |
 | Jute | West Bengal | Hot & humid, alluvial soil |
 
 **Green Revolution (1960s):**
@@ -314,9 +314,9 @@ pie title Soil Distribution in India
 - Wildlife Protection Act, 1972
 - Forest Conservation Act, 1980
 - Environment Protection Act, 1986
-- National Green Tribunal (NGT) — established 2010
+- National Green Tribunal (NGT) â€” established 2010
 - Project Tiger (1973), Project Elephant (1992), Project Rhino
-- ICUN Red List categories: Extinct → Extinct in Wild → Critically Endangered → Endangered → Vulnerable → Near Threatened → Least Concern
+- ICUN Red List categories: Extinct â†’ Extinct in Wild â†’ Critically Endangered â†’ Endangered â†’ Vulnerable â†’ Near Threatened â†’ Least Concern
 
 ---
 
@@ -362,15 +362,15 @@ class GeographyQuizEngine {
 
 // Demo
 const geoEngine = new GeographyQuizEngine();
-console.log('Wettest place:', geoEngine.findWettestPlace().city, '—', geoEngine.findWettestPlace().annualRainfallMM, 'mm');
-console.log('Driest place:', geoEngine.findDriestPlace().city, '—', geoEngine.findDriestPlace().annualRainfallMM, 'mm');
+console.log('Wettest place:', geoEngine.findWettestPlace().city, 'â€”', geoEngine.findWettestPlace().annualRainfallMM, 'mm');
+console.log('Driest place:', geoEngine.findDriestPlace().city, 'â€”', geoEngine.findDriestPlace().annualRainfallMM, 'mm');
 console.log('Tropical Wet stations:', geoEngine.filterByClimate('Tropical Wet').length);
 ```
 
 **Output:**
 ```
-Wettest place: Mawsynram — 11872 mm
-Driest place: Jaisalmer — 184 mm
+Wettest place: Mawsynram â€” 11872 mm
+Driest place: Jaisalmer â€” 184 mm
 Tropical Wet stations: 2
 ```
 
@@ -499,7 +499,7 @@ D) Mangrove
 <summary>Answer</summary>
 **Answer: B) Tropical Deciduous (Monsoon)**
 
-Tropical Deciduous forests (also called Monsoon forests) cover about 65% of India's forested area. They are found in regions receiving 100–200 cm rainfall and include valuable species like teak, sal, and sandalwood.
+Tropical Deciduous forests (also called Monsoon forests) cover about 65% of India's forested area. They are found in regions receiving 100â€“200 cm rainfall and include valuable species like teak, sal, and sandalwood.
 </details>
 
 ---
@@ -696,7 +696,7 @@ Arunachal Pradesh shares the longest international border with China (approximat
 
 ---
 
-### 2.13 World Geography — The Universe and Solar System
+### 2.13 World Geography â€” The Universe and Solar System
 
 ```mermaid
 flowchart LR
@@ -724,30 +724,30 @@ flowchart LR
 | Mars | 227.9 | 6,779 | 687 days | "Red Planet"; has Olympus Mons (largest volcano) |
 | Jupiter | 778.5 | 139,820 | 11.86 years | Largest planet; Great Red Spot |
 | Saturn | 1,434 | 116,460 | 29.46 years | Beautiful ring system; least dense planet |
-| Uranus | 2,871 | 50,724 | 84 years | Rotates on its side (axial tilt 98°) |
+| Uranus | 2,871 | 50,724 | 84 years | Rotates on its side (axial tilt 98Â°) |
 | Neptune | 4,495 | 49,244 | 164.8 years | Windiest planet (2,100 km/h) |
 
 **Earth Facts:**
 - **Circumference:** 40,075 km (equatorial), 40,008 km (polar)
-- **Surface Area:** 510.1 million km² (29% land, 71% water)
-- **Core Temperature:** ~5,500°C (similar to Sun's surface)
-- **Atmosphere Composition:** N₂ (78.08%), O₂ (20.95%), Ar (0.93%), CO₂ (0.04%)
+- **Surface Area:** 510.1 million kmÂ² (29% land, 71% water)
+- **Core Temperature:** ~5,500Â°C (similar to Sun's surface)
+- **Atmosphere Composition:** Nâ‚‚ (78.08%), Oâ‚‚ (20.95%), Ar (0.93%), COâ‚‚ (0.04%)
 - **Time Zones:** 24 standard time zones; GMT/UTC at Prime Meridian (Greenwich)
-- **Latitudes:** Equator (0°), Tropic of Cancer (23.5°N), Tropic of Capricorn (23.5°S), Arctic Circle (66.5°N), Antarctic Circle (66.5°S)
+- **Latitudes:** Equator (0Â°), Tropic of Cancer (23.5Â°N), Tropic of Capricorn (23.5Â°S), Arctic Circle (66.5Â°N), Antarctic Circle (66.5Â°S)
 
 ### 2.14 Continents and Oceans
 
-| Continent | Area (M km²) | Population (B) | Largest Country | Highest Point |
+| Continent | Area (M kmÂ²) | Population (B) | Largest Country | Highest Point |
 |-----------|-------------|----------------|-----------------|---------------|
 | Asia | 44.58 | 4.7 | Russia | Mt. Everest (8,848 m) |
 | Africa | 30.37 | 1.4 | Algeria | Kilimanjaro (5,895 m) |
 | North America | 24.71 | 0.6 | Canada | Denali (6,190 m) |
 | South America | 17.84 | 0.43 | Brazil | Aconcagua (6,961 m) |
-| Antarctica | 14.00 | ~0.001 (Research) | — | Vinson Massif (4,892 m) |
+| Antarctica | 14.00 | ~0.001 (Research) | â€” | Vinson Massif (4,892 m) |
 | Europe | 10.18 | 0.75 | Russia (part) | Elbrus (5,642 m) |
 | Australia/Oceania | 8.60 | 0.04 | Australia | Puncak Jaya (4,884 m) |
 
-**Five Oceans:** Pacific (largest, 165.2 M km²) → Atlantic (106.5 M km²) → Indian (70.6 M km²) → Southern (20.3 M km²) → Arctic (15.6 M km², smallest).
+**Five Oceans:** Pacific (largest, 165.2 M kmÂ²) â†’ Atlantic (106.5 M kmÂ²) â†’ Indian (70.6 M kmÂ²) â†’ Southern (20.3 M kmÂ²) â†’ Arctic (15.6 M kmÂ², smallest).
 
 ### 2.15 Major Straits, Lakes, and Waterfalls
 
@@ -755,20 +755,20 @@ flowchart LR
 
 | Strait | Connects | Between |
 |--------|----------|---------|
-| Palk Strait | Bay of Bengal ↔ Gulf of Mannar | India ↔ Sri Lanka |
-| Malacca Strait | Indian Ocean ↔ South China Sea | Malaysia ↔ Indonesia |
-| Gibraltar Strait | Mediterranean Sea ↔ Atlantic Ocean | Spain ↔ Morocco |
-| Bosphorus Strait | Black Sea ↔ Sea of Marmara | European Turkey ↔ Asian Turkey |
-| Hormuz Strait | Persian Gulf ↔ Gulf of Oman | Iran ↔ Oman |
-| Suez Canal (man-made) | Mediterranean Sea ↔ Red Sea | Egypt |
-| Panama Canal (man-made) | Pacific Ocean ↔ Atlantic Ocean | Panama |
-| Sunda Strait | Java Sea ↔ Indian Ocean | Java ↔ Sumatra |
-| Torres Strait | Coral Sea ↔ Arafura Sea | Australia ↔ Papua New Guinea |
-| Bering Strait | Arctic Ocean ↔ Pacific Ocean | Russia ↔ USA (Alaska) |
+| Palk Strait | Bay of Bengal â†” Gulf of Mannar | India â†” Sri Lanka |
+| Malacca Strait | Indian Ocean â†” South China Sea | Malaysia â†” Indonesia |
+| Gibraltar Strait | Mediterranean Sea â†” Atlantic Ocean | Spain â†” Morocco |
+| Bosphorus Strait | Black Sea â†” Sea of Marmara | European Turkey â†” Asian Turkey |
+| Hormuz Strait | Persian Gulf â†” Gulf of Oman | Iran â†” Oman |
+| Suez Canal (man-made) | Mediterranean Sea â†” Red Sea | Egypt |
+| Panama Canal (man-made) | Pacific Ocean â†” Atlantic Ocean | Panama |
+| Sunda Strait | Java Sea â†” Indian Ocean | Java â†” Sumatra |
+| Torres Strait | Coral Sea â†” Arafura Sea | Australia â†” Papua New Guinea |
+| Bering Strait | Arctic Ocean â†” Pacific Ocean | Russia â†” USA (Alaska) |
 
 **Major Lakes of the World:**
 
-| Lake | Location | Type | Area (km²) |
+| Lake | Location | Type | Area (kmÂ²) |
 |------|----------|------|------------|
 | Caspian Sea | Asia/Europe | Saline (largest lake) | 371,000 |
 | Lake Superior | USA/Canada | Freshwater (largest) | 82,100 |
@@ -790,7 +790,7 @@ flowchart LR
 
 ### 2.16 Top 10 Countries by Area and Population
 
-**By Area (M km²):**
+**By Area (M kmÂ²):**
 
 | Rank | Country | Area | Capital |
 |------|---------|------|---------|
@@ -798,7 +798,7 @@ flowchart LR
 | 2 | Canada | 9.98 | Ottawa |
 | 3 | USA | 9.83 | Washington DC |
 | 4 | China | 9.60 | Beijing |
-| 5 | Brazil | 8.52 | Brasília |
+| 5 | Brazil | 8.52 | BrasÃ­lia |
 | 6 | Australia | 7.69 | Canberra |
 | 7 | India | 3.29 | New Delhi |
 | 8 | Argentina | 2.78 | Buenos Aires |
@@ -815,7 +815,7 @@ flowchart LR
 | 4 | Indonesia | 0.28 | Jakarta |
 | 5 | Pakistan | 0.25 | Islamabad |
 | 6 | Nigeria | 0.23 | Abuja |
-| 7 | Brazil | 0.22 | Brasília |
+| 7 | Brazil | 0.22 | BrasÃ­lia |
 | 8 | Bangladesh | 0.17 | Dhaka |
 | 9 | Russia | 0.14 | Moscow |
 | 10 | Ethiopia | 0.13 | Addis Ababa |
@@ -831,7 +831,7 @@ flowchart LR
 
 **Major Deserts of the World:**
 
-| Desert | Area (M km²) | Location | Type |
+| Desert | Area (M kmÂ²) | Location | Type |
 |--------|-------------|----------|------|
 | Antarctic Desert | 14.0 | Antarctica | Polar (largest) |
 | Arctic Desert | 13.9 | Arctic | Polar |
@@ -843,14 +843,14 @@ flowchart LR
 | Thar Desert | 0.20 | India/Pakistan | Subtropical |
 
 **World Capitals Memory Aid (selected trick questions):**
-- **Canberra** (not Sydney) — Australia
-- **Ottawa** (not Toronto) — Canada
-- **Wellington** (not Auckland) — New Zealand
-- **Brasília** (not Rio/São Paulo) — Brazil
-- **Ankara** (not Istanbul) — Turkey
-- **Abuja** (not Lagos) — Nigeria
-- **Bern** (not Zurich/Geneva) — Switzerland
-- **Naypyidaw** (not Yangon) — Myanmar
+- **Canberra** (not Sydney) â€” Australia
+- **Ottawa** (not Toronto) â€” Canada
+- **Wellington** (not Auckland) â€” New Zealand
+- **BrasÃ­lia** (not Rio/SÃ£o Paulo) â€” Brazil
+- **Ankara** (not Istanbul) â€” Turkey
+- **Abuja** (not Lagos) â€” Nigeria
+- **Bern** (not Zurich/Geneva) â€” Switzerland
+- **Naypyidaw** (not Yangon) â€” Myanmar
 
 ### 2.20 TypeScript: World Geography Data Analyzer
 
@@ -884,7 +884,7 @@ class GeographyDataAnalyzer {
       { name: 'Bolivia', capital: 'Sucre', area: 1098581, population: 12, continent: 'South America', isLandlocked: true },
       { name: 'Australia', capital: 'Canberra', area: 7692024, population: 26, continent: 'Oceania', isLandlocked: false },
       { name: 'Chad', capital: "N'Djamena", area: 1284000, population: 18, continent: 'Africa', isLandlocked: true },
-      { name: 'Brazil', capital: 'Brasília', area: 8515767, population: 218, continent: 'South America', isLandlocked: false },
+      { name: 'Brazil', capital: 'BrasÃ­lia', area: 8515767, population: 218, continent: 'South America', isLandlocked: false },
     ];
   }
 
@@ -918,7 +918,7 @@ class GeographyDataAnalyzer {
     console.log(`Total Countries in DB: ${this.countries.length}`);
     console.log(`Largest Country: ${this.getLargestCountryByArea().name}`);
     console.log(`Landlocked Countries: ${this.getLandlockedCountries().map(c => c.name).join(', ')}`);
-    console.log(`India Population Density: ${this.getPopulationDensity('India')?.toFixed(1)} people/km²`);
+    console.log(`India Population Density: ${this.getPopulationDensity('India')?.toFixed(1)} people/kmÂ²`);
     console.log('=======================================');
   }
 }
@@ -928,18 +928,18 @@ analyzer.printReport();
 ```
 
 **Exam Quick-Reference: Countries You Must Know:**
-- **Largest area:** Russia (17.1M km²)
+- **Largest area:** Russia (17.1M kmÂ²)
 - **Largest population:** India (1.45B)
-- **Smallest country:** Vatican City (0.44 km²)
+- **Smallest country:** Vatican City (0.44 kmÂ²)
 - **Most populous continent:** Asia (4.7B)
-- **Largest desert:** Antarctic (14M km²)
+- **Largest desert:** Antarctic (14M kmÂ²)
 - **Deepest lake:** Baikal (1,642 m)
 - **Highest waterfall:** Angel Falls (979 m)
 - **Longest river:** Nile (6,650 km)
 - **Tallest mountain:** Mt. Everest (8,848 m)
-- **Largest ocean:** Pacific (165.2M km²)
+- **Largest ocean:** Pacific (165.2M kmÂ²)
 
-### 2.19 Additional Solved MCQs (Geography – World Focus)
+### 2.19 Additional Solved MCQs (Geography â€“ World Focus)
 
 **Q21:** The "Ring of Fire" is associated with which ocean?
 
@@ -1019,7 +1019,7 @@ The Kalahari Desert covers much of Botswana and parts of Namibia and South Afric
 - The Himalayas consist of three parallel ranges: Himadri (Greater), Himachal (Lesser), and Shiwaliks (Outer).
 - Major river systems are divided into Himalayan rivers (Indus, Ganga, Brahmaputra) and Peninsular rivers (Godavari, Krishna, Cauvery, Mahanadi, Narmada, Tapti).
 - The Indian Monsoon is driven by seasonal reversal of winds due to differential heating of land and sea, with SW Monsoon bringing 75% of annual rainfall.
-- Soils: Alluvial (43% — most fertile), Black (15% — cotton soil), Red/Yellow (19%), Laterite (7%).
+- Soils: Alluvial (43% â€” most fertile), Black (15% â€” cotton soil), Red/Yellow (19%), Laterite (7%).
 - India's forest cover is 21.76% of total area, with Tropical Deciduous forests being the most prevalent type.
 - Major conservation initiatives: Project Tiger (1973), Project Elephant (1992), 54 tiger reserves, 18 biosphere reserves.
 - India ranks 4th globally in renewable energy capacity with 180+ GW installed.
@@ -1028,13 +1028,13 @@ The Kalahari Desert covers much of Botswana and parts of Namibia and South Afric
 
 ## Practical Takeaways
 
-1. **For Exam Preparation:** Focus on river origins and tributaries — this is the most frequently tested geography topic in IBPS SO and RBI exams.
-2. **Soil-Crop Linkage:** Remember the crop-to-soil mapping: Cotton ↔ Black soil, Rice ↔ Alluvial, Tea ↔ Laterite (acidic).
-3. **National Park Trick:** Use acronym "KGRS" for tiger reserves — Kanha, Gir, Ranthambore, Sunderbans — memorise which state each is in.
+1. **For Exam Preparation:** Focus on river origins and tributaries â€” this is the most frequently tested geography topic in IBPS SO and RBI exams.
+2. **Soil-Crop Linkage:** Remember the crop-to-soil mapping: Cotton â†” Black soil, Rice â†” Alluvial, Tea â†” Laterite (acidic).
+3. **National Park Trick:** Use acronym "KGRS" for tiger reserves â€” Kanha, Gir, Ranthambore, Sunderbans â€” memorise which state each is in.
 4. **Monsoon Mechanism:** Understand the ITCZ movement. Questions on "Why does Tamil Nadu get rain in winter?" (NE Monsoon) appear very frequently.
-5. **NR Intersection:** Environment and current affairs often intersect — know the COP summits, India's climate targets (Net Zero by 2070, 500 GW renewable by 2030).
+5. **NR Intersection:** Environment and current affairs often intersect â€” know the COP summits, India's climate targets (Net Zero by 2070, 500 GW renewable by 2030).
 6. **Map Work:** Practice locating all national parks and tiger reserves on a map. Online interactive map quizzes are helpful for this.
-7. **Biosphere Reserve Mnemonic:** "Nilgiri Sunderbans Nanda Gulf Simlipal" — these are the five oldest biosphere reserves.
+7. **Biosphere Reserve Mnemonic:** "Nilgiri Sunderbans Nanda Gulf Simlipal" â€” these are the five oldest biosphere reserves.
 
 ## Chapter Quiz
 
@@ -1238,7 +1238,7 @@ D) January to April
 
 **30.** India has the largest number of tigers in the world. (T/F)
 
-### Section D: Additional MCQs (Exam Focus — World Geography)
+### Section D: Additional MCQs (Exam Focus â€” World Geography)
 
 **31.** Which is the longest mountain range in the world?
 
@@ -1319,7 +1319,7 @@ D) Ethiopia
 1. B) Lesser Himalayas (Himachal)
 2. B) Godavari
 3. B) 21.76%
-4. B) Kanchenjunga (8,586m — shared with Nepal but peak is within Indian territory)
+4. B) Kanchenjunga (8,586m â€” shared with Nepal but peak is within Indian territory)
 5. C) Alluvial soil
 6. C) 1973
 7. B) Uttar Pradesh
@@ -1355,15 +1355,15 @@ D) Ethiopia
 31. A) Andes (8,900 km along South America's western coast)
 32. C) Pacific Ocean (Mariana Trench depth: 11,034 m at Challenger Deep)
 33. B) Colorado River (Grand Canyon is in Arizona, USA; 446 km long)
-34. C) Canada (202,080 km — longest coastline in the world)
+34. C) Canada (202,080 km â€” longest coastline in the world)
 35. B) USA (Death Valley, California; lowest point in North America at -86 m)
-36. C) Gobi Desert (cold winter desert in Mongolia/China; temperatures can drop to -40°C)
+36. C) Gobi Desert (cold winter desert in Mongolia/China; temperatures can drop to -40Â°C)
 37. B) Atlantic Ocean and Mediterranean Sea (separates Spain and Morocco)
-38. C) Lake Superior (82,100 km²; located in USA/Canada; largest freshwater lake by area)
+38. C) Lake Superior (82,100 kmÂ²; located in USA/Canada; largest freshwater lake by area)
 39. B) 16 countries (including India, China, Mexico, Egypt, Saudi Arabia, etc.)
 40. A) Egypt (Nile flows 6,650 km through 11 countries; Egypt is the final downstream country)
 </details>
 
 ---
 
-*Proceed to Chapter 3 — Indian History & Culture*
+*Proceed to Chapter 3 â€” Indian History & Culture*

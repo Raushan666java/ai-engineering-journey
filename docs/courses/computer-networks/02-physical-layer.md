@@ -1,6 +1,6 @@
-# Chapter 2: The Physical Layer
+﻿# Chapter 2: The Physical Layer
 
-> **Prerequisites:** [Chapter 1: Introduction](./01-introduction.md) — Network models and layering | **Next:** [Chapter 3: Data Link Layer](./03-datalink-layer.md) — From bits to frames
+> **Prerequisites:** [Chapter 1: Introduction](./01-introduction.md) â€” Network models and layering | **Next:** [Chapter 3: Data Link Layer](./03-datalink-layer.md) â€” From bits to frames
 
 ## Learning Objectives
 
@@ -16,16 +16,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/computer-networks/02-physical-layer/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/computer-networks/02-physical-layer/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/computer-networks/02-physical-layer/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/computer-networks/02-physical-layer/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/computer-networks/02-physical-layer/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/computer-networks/02-physical-layer/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/computer-networks/02-physical-layer/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/computer-networks/02-physical-layer/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/computer-networks/02-physical-layer/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/computer-networks/02-physical-layer/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/computer-networks/02-physical-layer/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/computer-networks/02-physical-layer/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -39,12 +39,12 @@
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| Guided Media | Twisted pair, coaxial, fiber — each has a bandwidth-distance trade-off | Fiber for backbone, twisted pair for access, coax for cable TV/broadband |
+| Guided Media | Twisted pair, coaxial, fiber â€” each has a bandwidth-distance trade-off | Fiber for backbone, twisted pair for access, coax for cable TV/broadband |
 | Wireless Transmission | Radio penetrates walls; microwave needs line-of-sight; IR is room-limited | Choose radio for mobility, microwave for point-to-point backhaul, IR for secure short-range |
 | Multiplexing | FDM/TDM/WDM/CDM share medium capacity among multiple users | WDM multiplies fiber capacity 80x; TDM suits constant-rate traffic |
 | Switching | Circuit: reserved path, deterministic. Packet: shared path, efficient | Circuit for voice; packet for data; virtual-circuit gives best-of-both for MPLS |
 | Telephone System | PSTN evolved from analog voice to digital backbone with DSL | DSL exploits existing local loops; PON is the fiber-to-the-home future |
-| Performance Metrics | Bandwidth × delay = window size needed for full utilization | Always compute bandwidth-delay product when tuning TCP |
+| Performance Metrics | Bandwidth Ã— delay = window size needed for full utilization | Always compute bandwidth-delay product when tuning TCP |
 | Signal Encoding | NRZ, Manchester, 4B/5B, 8B/10B convert bits to signals | 8B/10B used in Ethernet; 4B/5B used in Fast Ethernet |
 | Modulation | ASK/FSK/PSK/QAM encode bits by varying carrier properties | QAM-256 achieves 8 bps/Hz; used in cable modems and Wi-Fi |
 
@@ -80,32 +80,32 @@ flowchart LR
 flowchart TB
     subgraph Guided["Guided (Wired) Media"]
         direction TB
-        TP["Twisted Pair<br/>Cat 5e–8<br/>100m–30m"]
-        Coax["Coaxial Cable<br/>RG-6 / RG-58<br/>185m–500m"]
-        Fiber["Optical Fiber<br/>SMF / MMF<br/>550m–200km+"]
+        TP["Twisted Pair<br/>Cat 5eâ€“8<br/>100mâ€“30m"]
+        Coax["Coaxial Cable<br/>RG-6 / RG-58<br/>185mâ€“500m"]
+        Fiber["Optical Fiber<br/>SMF / MMF<br/>550mâ€“200km+"]
     end
 
     subgraph Unguided["Unguided (Wireless)"]
         direction TB
-        Radio["Radio Waves<br/>3 kHz–300 GHz<br/>Through walls"]
-        MW["Microwaves<br/>3–300 GHz<br/>Line-of-sight"]
-        IR["Infrared<br/>300 GHz–400 THz<br/>Room-limited"]
+        Radio["Radio Waves<br/>3 kHzâ€“300 GHz<br/>Through walls"]
+        MW["Microwaves<br/>3â€“300 GHz<br/>Line-of-sight"]
+        IR["Infrared<br/>300 GHzâ€“400 THz<br/>Room-limited"]
     end
 
     Media["Transmission Media"] --> Guided
     Media --> Unguided
 
     Guided --> GuidedProps["Properties:
-    • High bandwidth
-    • Secure (tapping detectable)
-    • Deterministic latency
-    • Higher deployment cost"]
+    â€¢ High bandwidth
+    â€¢ Secure (tapping detectable)
+    â€¢ Deterministic latency
+    â€¢ Higher deployment cost"]
 
     Unguided --> UnguidedProps["Properties:
-    • Mobility support
-    • Easy deployment
-    • Susceptible to interference
-    • Shared medium"]
+    â€¢ Mobility support
+    â€¢ Easy deployment
+    â€¢ Susceptible to interference
+    â€¢ Shared medium"]
 
     classDef gui fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
     classDef ungu fill:#fff3e0,stroke:#e65100,stroke-width:2px
@@ -132,29 +132,29 @@ flowchart TB
             TPCat8["Cat 8<br/>40 Gbps / 30m"]
         end
         subgraph Coax["Coaxial Cable"]
-            RG6["RG-6<br/>75 Ω / 1 GHz<br/>Cable TV"]
-            RG58["RG-58<br/>50 Ω / 10 Mbps<br/>Thinnet"]
+            RG6["RG-6<br/>75 Î© / 1 GHz<br/>Cable TV"]
+            RG58["RG-58<br/>50 Î© / 10 Mbps<br/>Thinnet"]
         end
         subgraph Fiber["Optical Fiber"]
-            SMF["SMF OS2<br/>9/125 µm<br/>200+ km / 400 Gbps"]
-            MMF_OM4["MMF OM4<br/>50/125 µm<br/>550 m / 10 Gbps"]
-            MMF_OM5["MMF OM5<br/>50/125 µm<br/>440 m / 40 Gbps"]
+            SMF["SMF OS2<br/>9/125 Âµm<br/>200+ km / 400 Gbps"]
+            MMF_OM4["MMF OM4<br/>50/125 Âµm<br/>550 m / 10 Gbps"]
+            MMF_OM5["MMF OM5<br/>50/125 Âµm<br/>440 m / 40 Gbps"]
         end
     end
 
     subgraph Wireless["Wireless Media"]
         direction TB
         subgraph RadioBand["Radio Bands"]
-            SubGHz["Sub‑GHz<br/>900 MHz ISM<br/>Long range, low rate"]
-            WiFi24["2.4 GHz<br/>Wi‑Fi / BT<br/>Balance range/rate"]
-            WiFi5["5 GHz<br/>Wi‑Fi 5/6<br/>High throughput"]
-            WiFi6["6 GHz<br/>Wi‑Fi 6E/7<br/>Very high throughput"]
+            SubGHz["Subâ€‘GHz<br/>900 MHz ISM<br/>Long range, low rate"]
+            WiFi24["2.4 GHz<br/>Wiâ€‘Fi / BT<br/>Balance range/rate"]
+            WiFi5["5 GHz<br/>Wiâ€‘Fi 5/6<br/>High throughput"]
+            WiFi6["6 GHz<br/>Wiâ€‘Fi 6E/7<br/>Very high throughput"]
         end
         subgraph MWBand["Microwave Bands"]
-            PtP["Point‑to‑Point<br/>6–86 GHz<br/>10 Gbps+"]
+            PtP["Pointâ€‘toâ€‘Point<br/>6â€“86 GHz<br/>10 Gbps+"]
             Sat["Satellite<br/>LEO/GEO<br/>Global coverage"]
         end
-        IRBand["Infrared<br/>300 GHz–400 THz<br/>1–10 m, secure"]
+        IRBand["Infrared<br/>300 GHzâ€“400 THz<br/>1â€“10 m, secure"]
     end
 
     Media["Transmission Media"] --> Guided
@@ -182,18 +182,18 @@ flowchart LR
         TX_ANT["Antenna Gain<br/>2 dBi"]
     end
     subgraph Channel["Propagation"]
-        FSPL["Free‑Space Path Loss<br/>20·log₁₀(d) + 20·log₁₀(f) − 147.55"]
+        FSPL["Freeâ€‘Space Path Loss<br/>20Â·logâ‚â‚€(d) + 20Â·logâ‚â‚€(f) âˆ’ 147.55"]
         FADE["Fade Margin<br/>10 dB"]
         RAIN["Rain Attenuation<br/>0.1 dB/km (10 GHz)"]
     end
     subgraph Rx["Receiver Side"]
         RX_ANT["Antenna Gain<br/>2 dBi"]
-        RX_POW["Received Power<br/>−66 dBm"]
-        RX_SENS["Receiver Sensitivity<br/>−85 dBm"]
+        RX_POW["Received Power<br/>âˆ’66 dBm"]
+        RX_SENS["Receiver Sensitivity<br/>âˆ’85 dBm"]
     end
 
     TX_POW --> TX_ANT --> FSPL --> FADE --> RAIN --> RX_ANT --> RX_POW
-    RX_POW --> LINK_MARGIN["Link Margin<br/>19 dB → OK"]
+    RX_POW --> LINK_MARGIN["Link Margin<br/>19 dB â†’ OK"]
 
     classDef tx fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
     classDef ch fill:#fff3e0,stroke:#e65100,stroke-width:2px
@@ -208,7 +208,7 @@ flowchart LR
 
 ## 2.1 Analog vs Digital Signals
 
-**Real-world analogy:** An analog signal is like a dimmer switch — infinitely variable brightness. A digital signal is like a light switch — only ON (1) or OFF (0). A dimmer can produce any brightness level, but the light switch gives a clear, unambiguous state that is easy to replicate.
+**Real-world analogy:** An analog signal is like a dimmer switch â€” infinitely variable brightness. A digital signal is like a light switch â€” only ON (1) or OFF (0). A dimmer can produce any brightness level, but the light switch gives a clear, unambiguous state that is easy to replicate.
 
 ### 2.1.1 Definitions
 
@@ -223,22 +223,22 @@ flowchart LR
 |----------|--------|---------|
 | Values | Continuous range | Discrete (0 or 1) |
 | Representation | Sine wave, continuous function | Square wave, step function |
-| Susceptibility to noise | High — noise accumulates | Low — regenerated at repeaters |
+| Susceptibility to noise | High â€” noise accumulates | Low â€” regenerated at repeaters |
 | Bandwidth usage | Low bandwidth, continuous | High bandwidth per bit |
 | Storage | Difficult, degrades over time | Easy, lossless duplication |
 | Processing | Requires analog circuits | Digital logic, cheap and fast |
 | Distance limitation | Attenuates, needs amplification (which adds noise) | Regenerated perfectly (repeaters) |
 | Error detection | Limited | CRC, checksums, parity |
-| Security | Low — easy to tap | Higher — encryption feasible |
+| Security | Low â€” easy to tap | Higher â€” encryption feasible |
 | Example media | Analog telephone line | Ethernet, USB, SATA |
 
 ### 2.1.3 Conversion Steps (Analog to Digital)
 
 
-1. **Sample** — Measure the analog signal amplitude at regular intervals (Nyquist rate: ≥ 2× highest frequency).
-2. **Quantize** — Map each sampled amplitude to the nearest discrete level.
-3. **Encode** — Represent each quantization level as a binary number.
-4. **Transmit** — Send the binary sequence over a digital channel.
+1. **Sample** â€” Measure the analog signal amplitude at regular intervals (Nyquist rate: â‰¥ 2Ã— highest frequency).
+2. **Quantize** â€” Map each sampled amplitude to the nearest discrete level.
+3. **Encode** â€” Represent each quantization level as a binary number.
+4. **Transmit** â€” Send the binary sequence over a digital channel.
 
 **Pseudocode: ADC (Analog-to-Digital Conversion)**
 
@@ -255,7 +255,7 @@ FUNCTION analogToDigital(signal, sampleRate, bitsPerSample):
 
 **Dry Run:** ADC for a 2 Hz sine wave sampled at Nyquist rate (4 Hz) with 3 bits
 
-| Time (s) | Amplitude | Normalized (0–1) | Quantized Level | Binary |
+| Time (s) | Amplitude | Normalized (0â€“1) | Quantized Level | Binary |
 |----------|-----------|-------------------|-----------------|--------|
 | 0.000 | 0.00 | 0.500 | 4 | 100 |
 | 0.125 | 0.71 | 0.854 | 6 | 110 |
@@ -270,10 +270,10 @@ FUNCTION analogToDigital(signal, sampleRate, bitsPerSample):
 
 | Operation | Time Complexity | Space Complexity | Why |
 |-----------|----------------|------------------|-----|
-| Sampling | O(n) where n = sampleRate × duration | O(n) | Every sample is read once |
+| Sampling | O(n) where n = sampleRate Ã— duration | O(n) | Every sample is read once |
 | Quantization | O(n) | O(n) | Round each amplitude to nearest level |
-| Binary encoding | O(n × b) where b = bits/sample | O(n × b) | Convert each level to fixed-width binary |
-| Total | O(n × b) | O(n × b) | All three operations are linear in samples |
+| Binary encoding | O(n Ã— b) where b = bits/sample | O(n Ã— b) | Convert each level to fixed-width binary |
+| Total | O(n Ã— b) | O(n Ã— b) | All three operations are linear in samples |
 
 **Edge Cases:**
 - **Aliasing:** Sampling below Nyquist rate causes frequency overlap. Fix: apply anti-aliasing low-pass filter before sampling.
@@ -281,7 +281,7 @@ FUNCTION analogToDigital(signal, sampleRate, bitsPerSample):
 - **Quantization noise (granular):** Insufficient bits per sample rounds to wrong level. Fix: increase bit depth or use dithering.
 - **Jitter:** Sampling intervals are uneven. Fix: use a precision clock with PLL (phase-locked loop).
 
-**A&D Table — Analog Transmission**
+**A&D Table â€” Analog Transmission**
 
 | Advantage | Disadvantage |
 |-----------|-------------|
@@ -290,7 +290,7 @@ FUNCTION analogToDigital(signal, sampleRate, bitsPerSample):
 | Smooth, natural representation | Signal degrades with distance |
 | No quantization error | Hard to encrypt or process computationally |
 
-**A&D Table — Digital Transmission**
+**A&D Table â€” Digital Transmission**
 
 | Advantage | Disadvantage |
 |-----------|-------------|
@@ -301,7 +301,7 @@ FUNCTION analogToDigital(signal, sampleRate, bitsPerSample):
 
 ## 2.2 Signals (Periodic and Composite)
 
-**Real-world analogy:** A periodic signal is like a metronome — tick, tick, tick, endlessly repeating. A composite signal is like a symphony orchestra — many instruments playing different notes simultaneously, producing a rich waveform.
+**Real-world analogy:** A periodic signal is like a metronome â€” tick, tick, tick, endlessly repeating. A composite signal is like a symphony orchestra â€” many instruments playing different notes simultaneously, producing a rich waveform.
 
 ### 2.2.1 Periodic Signals
 
@@ -311,20 +311,20 @@ A periodic signal completes a pattern within a measurable time period and repeat
 **Key parameters:**
 - **Amplitude (A):** Maximum signal strength (volts).
 - **Period (T):** Time for one complete cycle (seconds).
-- **Frequency (f):** 1/T — cycles per second (Hz).
-- **Phase (φ):** Offset relative to time zero (radians).
+- **Frequency (f):** 1/T â€” cycles per second (Hz).
+- **Phase (Ï†):** Offset relative to time zero (radians).
 
-**Equation:** s(t) = A × sin(2πft + φ)
+**Equation:** s(t) = A Ã— sin(2Ï€ft + Ï†)
 
 **Steps to analyze a periodic signal:**
 
-1. Measure the time between two consecutive identical points on the waveform → period T.
+1. Measure the time between two consecutive identical points on the waveform â†’ period T.
 2. Compute frequency: f = 1/T.
-3. Measure peak-to-peak amplitude: A = (V_max − V_min) / 2.
+3. Measure peak-to-peak amplitude: A = (V_max âˆ’ V_min) / 2.
 4. Determine phase offset by comparing zero-crossing to t=0.
 5. Express as the standard sine equation.
 
-**Pseudocode — Generate and Analyze Sine Wave**
+**Pseudocode â€” Generate and Analyze Sine Wave**
 
 ```
 FUNCTION generateSine(amplitude, frequency, phase, duration, sampleRate):
@@ -349,9 +349,9 @@ FUNCTION analyzePeriod(signal, sampleRate):
             RETURN {period, frequency}
 ```
 
-**Dry Run — Sine Generation of a 3 Hz signal, A=2V, φ=0, sampled at 20 Hz for 1 second**
+**Dry Run â€” Sine Generation of a 3 Hz signal, A=2V, Ï†=0, sampled at 20 Hz for 1 second**
 
-| t (s) | 2πft | sin(2πft) | A·sin(2πft) |
+| t (s) | 2Ï€ft | sin(2Ï€ft) | AÂ·sin(2Ï€ft) |
 |-------|------|-----------|-------------|
 | 0.00 | 0.00 | 0.000 | 0.000 |
 | 0.05 | 0.942 | 0.809 | 1.618 |
@@ -365,10 +365,10 @@ FUNCTION analyzePeriod(signal, sampleRate):
 | 0.45 | 8.482 | 0.809 | 1.618 |
 | 0.50 | 9.425 | 1.000 | 2.000 |
 
-**Edge cases — Periodic Signals:**
+**Edge cases â€” Periodic Signals:**
 - **DC offset:** Signal has non-zero average. Fix: subtract mean before analysis.
 - **Harmonic distortion:** Non-pure sine wave with harmonics. Fix: use FFT to extract fundamental.
-- **Damped oscillation:** Amplitude decays. Not truly periodic — model as e^(−αt) × sin(ωt).
+- **Damped oscillation:** Amplitude decays. Not truly periodic â€” model as e^(âˆ’Î±t) Ã— sin(Ï‰t).
 - **Frequency drift:** Signal frequency changes over time. Fix: windowed FFT (spectrogram).
 
 ### 2.2.2 Composite Signals
@@ -376,21 +376,21 @@ FUNCTION analyzePeriod(signal, sampleRate):
 
 A composite signal is the sum of two or more periodic signals at different frequencies. Fourier analysis shows that any composite periodic signal can be decomposed into a series of sine/cosine waves (harmonics).
 
-**Real-world analogy:** A chord on a piano is a composite signal — multiple keys pressed simultaneously. Each key produces a sine wave at a specific frequency; the chord is the sum.
+**Real-world analogy:** A chord on a piano is a composite signal â€” multiple keys pressed simultaneously. Each key produces a sine wave at a specific frequency; the chord is the sum.
 
 **Steps to decompose a composite signal:**
 
 1. Capture one full period of the composite signal.
 2. Apply the Fourier Transform (or FFT) to convert from time domain to frequency domain.
-3. Identify each peak in the frequency spectrum — each peak represents one component sine wave.
+3. Identify each peak in the frequency spectrum â€” each peak represents one component sine wave.
 4. Read frequency, amplitude, and phase from each peak.
 5. Reconstruct the signal by summing all components at each time point.
 
 **Fourier Series Equation** for a periodic composite signal with period T:
 
-s(t) = a₀ + Σ[n=1 to ∞] (aₙ·cos(2πnft) + bₙ·sin(2πnft))
+s(t) = aâ‚€ + Î£[n=1 to âˆž] (aâ‚™Â·cos(2Ï€nft) + bâ‚™Â·sin(2Ï€nft))
 
-**Pseudocode — Composite Signal Decomposition via DFT**
+**Pseudocode â€” Composite Signal Decomposition via DFT**
 
 ```
 FUNCTION discreteFourierTransform(signal, sampleRate):
@@ -403,20 +403,20 @@ FUNCTION discreteFourierTransform(signal, sampleRate):
             angle = 2 * PI * k * n / N
             real += signal[n] * COS(angle)
             imag -= signal[n] * SIN(angle)
-        magnitude = SQRT(real² + imag²) / N
+        magnitude = SQRT(realÂ² + imagÂ²) / N
         frequency = k * sampleRate / N
         IF magnitude > THRESHOLD:
             frequencies.APPEND({frequency, magnitude})
     RETURN frequencies
 ```
 
-**Complexity of DFT:** O(N²) — each of N frequency bins requires summing N samples.
+**Complexity of DFT:** O(NÂ²) â€” each of N frequency bins requires summing N samples.
 
 **Optimization:** Fast Fourier Transform (FFT) reduces to O(N log N) by exploiting symmetry in the DFT matrix.
 
-**Dry Run — Composite Signal s(t) = sin(2π·2t) + 0.5·sin(2π·6t) sampled at 32 Hz for 1 second**
+**Dry Run â€” Composite Signal s(t) = sin(2Ï€Â·2t) + 0.5Â·sin(2Ï€Â·6t) sampled at 32 Hz for 1 second**
 
-| t (s) | sin(2π·2t) | 0.5·sin(2π·6t) | Composite |
+| t (s) | sin(2Ï€Â·2t) | 0.5Â·sin(2Ï€Â·6t) | Composite |
 |-------|-----------|-----------------|-----------|
 | 0.000 | 0.000 | 0.000 | 0.000 |
 | 0.125 | 0.707 | 0.000 | 0.707 |
@@ -430,7 +430,7 @@ FUNCTION discreteFourierTransform(signal, sampleRate):
 
 FFT of above reveals two peaks: one at 2 Hz (magnitude 1.0) and one at 6 Hz (magnitude 0.5).
 
-**Edge cases — Composite Signals:**
+**Edge cases â€” Composite Signals:**
 
 | Edge Case | Cause | Mitigation |
 |-----------|-------|------------|
@@ -440,7 +440,7 @@ FFT of above reveals two peaks: one at 2 Hz (magnitude 1.0) and one at 6 Hz (mag
 | Phase ambiguity | Multiple signals at same frequency | Use quadrature detection (IQ sampling) |
 | Noise floor | Random noise obscures low-magnitude components | Average multiple FFTs (Welch's method) |
 
-### 2.2.3 C++ Implementation — Signal Generation and Analysis
+### 2.2.3 C++ Implementation â€” Signal Generation and Analysis
 
 
 ```cpp
@@ -507,7 +507,7 @@ int main() {
     // Print frequency components
     std::cout << "Frequency components:" << std::endl;
     for (const auto& [freq, mag] : spectrum)
-        std::cout << "  " << freq << " Hz — magnitude " << mag << std::endl;
+        std::cout << "  " << freq << " Hz â€” magnitude " << mag << std::endl;
 
     // Verify Nyquist: max frequency we can detect = sampleRate/2
     std::cout << "Nyquist limit: " << 256.0 / 2 << " Hz" << std::endl;
@@ -516,7 +516,7 @@ int main() {
 }
 ```
 
-### 2.2.4 Python Implementation — Signal Generation and Analysis
+### 2.2.4 Python Implementation â€” Signal Generation and Analysis
 
 
 ```python
@@ -555,11 +555,11 @@ if __name__ == "__main__":
     sig = generate_composite([(1.0, 2.0, 0.0), (0.5, 6.0, 0.0)], 1.0, 256.0)
     spec = compute_dft(sig, 256.0)
     for freq, mag in spec:
-        print(f"{freq:.1f} Hz — magnitude {mag:.4f}")
+        print(f"{freq:.1f} Hz â€” magnitude {mag:.4f}")
 ```
 ## 2.3 Bandwidth, Throughput, and Latency
 
-**Real-world analogy:** Bandwidth is the width of a水管 (water pipe) — a wider pipe carries more water per second. Throughput is how much water actually flows — limited by the narrowest pipe in the path. Latency is how long it takes a single water molecule to travel from tap to drain — determined by the length of the pipe.
+**Real-world analogy:** Bandwidth is the width of aæ°´ç®¡ (water pipe) â€” a wider pipe carries more water per second. Throughput is how much water actually flows â€” limited by the narrowest pipe in the path. Latency is how long it takes a single water molecule to travel from tap to drain â€” determined by the length of the pipe.
 
 ### 2.3.1 Key Definitions
 
@@ -569,26 +569,26 @@ if __name__ == "__main__":
 | **Bandwidth** | B | Hz or bps | Maximum theoretical data rate of the medium |
 | **Throughput** | T | bps | Actual data transfer rate achieved |
 | **Latency** | L | seconds | Time for one bit to travel source to destination |
-| **Propagation delay** | D_prop | seconds | Distance / propagation speed (≈ 2×10⁸ m/s in copper, 2×10⁸ m/s in fiber) |
+| **Propagation delay** | D_prop | seconds | Distance / propagation speed (â‰ˆ 2Ã—10â¸ m/s in copper, 2Ã—10â¸ m/s in fiber) |
 | **Transmission delay** | D_trans | seconds | Packet size / bandwidth |
 | **Queuing delay** | D_queue | seconds | Time waiting in router/switch buffers |
 | **Processing delay** | D_proc | seconds | Time to examine packet header and route |
 | **Jitter** | J | seconds | Variation in latency (std. dev. of L) |
-| **Bandwidth-Delay Product** | BDP | bits | B × RTT — how much data can be "in flight" |
+| **Bandwidth-Delay Product** | BDP | bits | B Ã— RTT â€” how much data can be "in flight" |
 
 ### 2.3.2 Steps to Compute Total Latency
 
 
-1. Determine propagation delay: Dₚ = distance / (c × velocity factor).
-   - Copper: v ≈ 0.67c ≈ 2 × 10⁸ m/s.
-   - Fiber: v ≈ 0.67c ≈ 2 × 10⁸ m/s.
-   - Free space (wireless): v = c ≈ 3 × 10⁸ m/s.
-2. Determine transmission delay: Dₜ = frame size (bits) / bandwidth (bps).
-3. Estimate queuing delay: D_q = (average queue length × packet size) / bandwidth.
-4. Compute total latency: L = Dₚ + Dₜ + D_q + Dₚᵣₒc.
-5. Compute BDP = bandwidth × RTT (round-trip time = 2 × L without queuing).
+1. Determine propagation delay: Dâ‚š = distance / (c Ã— velocity factor).
+   - Copper: v â‰ˆ 0.67c â‰ˆ 2 Ã— 10â¸ m/s.
+   - Fiber: v â‰ˆ 0.67c â‰ˆ 2 Ã— 10â¸ m/s.
+   - Free space (wireless): v = c â‰ˆ 3 Ã— 10â¸ m/s.
+2. Determine transmission delay: Dâ‚œ = frame size (bits) / bandwidth (bps).
+3. Estimate queuing delay: D_q = (average queue length Ã— packet size) / bandwidth.
+4. Compute total latency: L = Dâ‚š + Dâ‚œ + D_q + Dâ‚šáµ£â‚’c.
+5. Compute BDP = bandwidth Ã— RTT (round-trip time = 2 Ã— L without queuing).
 
-**Pseudocode — Bandwidth-Delay Product Calculator**
+**Pseudocode â€” Bandwidth-Delay Product Calculator**
 
 ```
 FUNCTION computeBDP(bandwidth_bps, distance_m, velocityFactor, frameSize_bits):
@@ -601,16 +601,16 @@ FUNCTION computeBDP(bandwidth_bps, distance_m, velocityFactor, frameSize_bits):
     RETURN {propDelay, transDelay, RTT, BDP}
 ```
 
-**Dry Run — Compute BDP for Different Scenarios**
+**Dry Run â€” Compute BDP for Different Scenarios**
 
 | Scenario | Bandwidth | Distance | Velocity | D_prop | D_trans (1500B) | RTT | BDP |
 |----------|-----------|----------|----------|--------|-----------------|-----|-----|
-| LAN | 1 Gbps | 100 m | 0.67c | 0.5 µs | 12 µs | 25 µs | 25 Kb (3.1 KB) |
-| WAN (copper) | 100 Mbps | 1000 km | 0.67c | 5 ms | 120 µs | 10.24 ms | 1.024 Mb (128 KB) |
-| GEO Satellite | 50 Mbps | 35,786 km | 1.0c | 119 ms | 240 µs | 238.5 ms | 11.9 Mb (1.49 MB) |
+| LAN | 1 Gbps | 100 m | 0.67c | 0.5 Âµs | 12 Âµs | 25 Âµs | 25 Kb (3.1 KB) |
+| WAN (copper) | 100 Mbps | 1000 km | 0.67c | 5 ms | 120 Âµs | 10.24 ms | 1.024 Mb (128 KB) |
+| GEO Satellite | 50 Mbps | 35,786 km | 1.0c | 119 ms | 240 Âµs | 238.5 ms | 11.9 Mb (1.49 MB) |
 | Fiber backbone | 400 Gbps | 3000 km | 0.67c | 15 ms | 30 ns | 30 ms | 12 Gb (1.5 GB) |
 
-### 2.3.3 C++ Implementation — Latency and BDP Calculator
+### 2.3.3 C++ Implementation â€” Latency and BDP Calculator
 
 
 ```cpp
@@ -641,9 +641,9 @@ LatencyResult computePerformance(double bandwidth_bps, double distance_m,
 int main() {
     auto r = computePerformance(1e9, 100.0, 0.67, 1500 * 8.0);
     std::cout << "LAN (1 Gbps, 100 m):" << std::endl;
-    std::cout << "  Propagation delay: " << r.propDelay_s * 1e6 << " µs" << std::endl;
-    std::cout << "  Transmission delay: " << r.transDelay_s * 1e6 << " µs" << std::endl;
-    std::cout << "  RTT: " << r.RTT_s * 1e6 << " µs" << std::endl;
+    std::cout << "  Propagation delay: " << r.propDelay_s * 1e6 << " Âµs" << std::endl;
+    std::cout << "  Transmission delay: " << r.transDelay_s * 1e6 << " Âµs" << std::endl;
+    std::cout << "  RTT: " << r.RTT_s * 1e6 << " Âµs" << std::endl;
     std::cout << "  BDP: " << r.BDP_bits / 8 / 1024 << " KB" << std::endl;
 
     auto sat = computePerformance(50e6, 35786000.0, 1.0, 1500 * 8.0);
@@ -655,7 +655,7 @@ int main() {
 }
 ```
 
-### 2.3.4 Python Implementation — Throughput Simulator
+### 2.3.4 Python Implementation â€” Throughput Simulator
 
 
 ```python
@@ -711,7 +711,7 @@ if __name__ == "__main__":
     print(f"  BDP: {result['bdp_bytes']/1e6:.2f} MB")
 ```
 
-**Complexity Analysis — Bandwidth/Latency Calculations:**
+**Complexity Analysis â€” Bandwidth/Latency Calculations:**
 
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
@@ -731,7 +731,7 @@ if __name__ == "__main__":
 | Gigabit over 1m | D_trans dominates | Tune for serialization delay, not prop delay |
 | Speed of light limit | Absolute lower bound | Cannot beat physics |
 
-**A&D Table — High Bandwidth vs Low Latency**
+**A&D Table â€” High Bandwidth vs Low Latency**
 
 | Aspect | High Bandwidth | Low Latency |
 |--------|---------------|-------------|
@@ -753,11 +753,11 @@ Twisted pair cable consists of two insulated copper wires twisted together. Twis
 
 **Key Properties:**
 
-- **Impedance:** 100 Ω (Ethernet), 110 Ω (IBM token ring).
-- **Attenuation:** ≈ 20 dB per 100 m at 100 MHz for Cat 5e.
-- **NEXT (Near-End Crosstalk):** Signal coupling between adjacent pairs — lower NEXT is better.
+- **Impedance:** 100 Î© (Ethernet), 110 Î© (IBM token ring).
+- **Attenuation:** â‰ˆ 20 dB per 100 m at 100 MHz for Cat 5e.
+- **NEXT (Near-End Crosstalk):** Signal coupling between adjacent pairs â€” lower NEXT is better.
 - **Maximum distance:** 100 m for Ethernet (100BASE-TX, 1000BASE-T).
-- **Cost:** $0.10–$0.50 per meter.
+- **Cost:** $0.10â€“$0.50 per meter.
 
 **UTP Category Comparison:**
 
@@ -789,75 +789,75 @@ Twisted pair cable consists of two insulated copper wires twisted together. Twis
 | Split pair | Wires not twisted per pair | Re-terminate following color code |
 | Impedance mismatch | Wrong connector or damage | Use same category throughout |
 | Pull tension > 25 lbs | Stretched conductors, degraded signal | Use proper pulling lubricant |
-| Bend radius &lt; 4× diameter | Micro-cracks in conductor | Maintain minimum bend radius |
+| Bend radius &lt; 4Ã— diameter | Micro-cracks in conductor | Maintain minimum bend radius |
 
 ### 2.4.2 Coaxial Cable
 
 
-**Real-world analogy:** A coaxial cable is like a subway train in a tunnel — the central conductor is the train, the shield is the tunnel walls that keep interference out.
+**Real-world analogy:** A coaxial cable is like a subway train in a tunnel â€” the central conductor is the train, the shield is the tunnel walls that keep interference out.
 
 Coaxial cable has a central copper conductor surrounded by an insulating layer, a metallic shield, and an outer jacket. The shield provides better noise immunity than twisted pair and supports higher bandwidth over longer distances.
 
 **Key Properties:**
 
-- **Impedance:** 50 Ω (networking, data), 75 Ω (cable TV, video).
-- **Attenuation:** ≈ 2 dB per 100 m at 100 MHz (RG-6).
+- **Impedance:** 50 Î© (networking, data), 75 Î© (cable TV, video).
+- **Attenuation:** â‰ˆ 2 dB per 100 m at 100 MHz (RG-6).
 - **Maximum distance:** 500 m (10BASE5 Thicknet), 185 m (10BASE2 Thinnet).
 - **Bandwidth:** Up to 1 GHz for DOCSIS 3.1 cable modems.
-- **Cost:** $0.30–$1.00 per meter.
+- **Cost:** $0.30â€“$1.00 per meter.
 
 **Types of Coaxial Cable:**
 
 | Type | Impedance | Use | Max Distance |
 |------|-----------|-----|-------------|
-| RG-6 | 75 Ω | Cable TV, satellite, DOCSIS broadband | 500 m+ |
-| RG-8 | 50 Ω | Thicknet (10BASE5) Ethernet | 500 m |
-| RG-58 | 50 Ω | Thinnet (10BASE2) Ethernet | 185 m |
-| RG-59 | 75 Ω | CCTV analog video | 150 m |
-| RG-11 | 75 Ω | Long-run cable TV trunk | 1500 m |
+| RG-6 | 75 Î© | Cable TV, satellite, DOCSIS broadband | 500 m+ |
+| RG-8 | 50 Î© | Thicknet (10BASE5) Ethernet | 500 m |
+| RG-58 | 50 Î© | Thinnet (10BASE2) Ethernet | 185 m |
+| RG-59 | 75 Î© | CCTV analog video | 150 m |
+| RG-11 | 75 Î© | Long-run cable TV trunk | 1500 m |
 
 ### 2.4.3 Optical Fiber
 
 
-**Real-world analogy:** A fiber optic cable is like a super-highway for light — cars (light pulses) travel at near light speed through a glass tunnel, reflecting off the walls (total internal reflection).
+**Real-world analogy:** A fiber optic cable is like a super-highway for light â€” cars (light pulses) travel at near light speed through a glass tunnel, reflecting off the walls (total internal reflection).
 
 Optical fiber transmits light pulses through a glass or plastic core by total internal reflection.
 
 **Key Properties:**
 
-- **Core/Cladding diameters:** SMF 9/125 µm, MMF 50/125 µm or 62.5/125 µm.
+- **Core/Cladding diameters:** SMF 9/125 Âµm, MMF 50/125 Âµm or 62.5/125 Âµm.
 - **Attenuation:** 0.2 dB/km (SMF at 1550 nm), 0.35 dB/km (SMF at 1310 nm), 3 dB/km (MMF at 850 nm).
 - **Bandwidth:** Up to 800 Gbps per wavelength (SMF), 10 Gbps over 550 m (MMF OM4).
-- **Maximum distance:** SMF — hundreds of km with amplifiers; MMF — 550 m at 10 Gbps.
-- **Cost:** $0.50–$2.00 per meter (higher termination cost due to precision polishing).
+- **Maximum distance:** SMF â€” hundreds of km with amplifiers; MMF â€” 550 m at 10 Gbps.
+- **Cost:** $0.50â€“$2.00 per meter (higher termination cost due to precision polishing).
 
 **Fiber Types Comparison:**
 
 | Type | Core | Wavelength | Attenuation | Distance | Application |
 |------|------|-----------|-------------|----------|-------------|
-| SMF (OS2) | 9 µm | 1310/1550 nm | 0.35 / 0.20 dB/km | 40–200 km | Long-haul, metro |
-| MMF OM3 | 50 µm | 850/1300 nm | 3.0 / 1.0 dB/km | 300 m (10G) | Data center |
-| MMF OM4 | 50 µm | 850/1300 nm | 3.0 / 1.0 dB/km | 550 m (10G) | Data center |
-| MMF OM5 | 50 µm | 850–950 nm | 3.0 dB/km | 440 m (40G) | SWDM, data center |
+| SMF (OS2) | 9 Âµm | 1310/1550 nm | 0.35 / 0.20 dB/km | 40â€“200 km | Long-haul, metro |
+| MMF OM3 | 50 Âµm | 850/1300 nm | 3.0 / 1.0 dB/km | 300 m (10G) | Data center |
+| MMF OM4 | 50 Âµm | 850/1300 nm | 3.0 / 1.0 dB/km | 550 m (10G) | Data center |
+| MMF OM5 | 50 Âµm | 850â€“950 nm | 3.0 dB/km | 440 m (40G) | SWDM, data center |
 
 **Steps to install an SC or LC connector on fiber:**
 
 1. Strip 3 cm of outer jacket using a fiber stripper.
 2. Clean bare fiber with isopropyl alcohol and lint-free wipes.
-3. Cleave the fiber precisely at 90° angle using a cleaver.
+3. Cleave the fiber precisely at 90Â° angle using a cleaver.
 4. Insert fiber into the connector ferrule.
 5. Crimp the connector body to secure.
 6. Polish the ferrule end-face on lapping film (optional for pre-polished connectors).
 7. Verify with a visual fault locator and power meter.
 
-**Edge Cases — Optical Fiber:**
+**Edge Cases â€” Optical Fiber:**
 
 | Issue | Cause | Mitigation |
 |-------|-------|------------|
 | Modal dispersion | Multiple modes travel different distances in MMF | Use single-mode or graded-index MMF |
 | Chromatic dispersion | Different wavelengths travel at different speeds | Use dispersion-shifted fiber or compensators |
 | Polarization mode dispersion | Birefringence from non-circular core | Use PMF or modern transceivers with PMD compensation |
-| Fiber bend loss | Macrobending (tight radius) or microbending | Maintain 10× cladding diameter bend radius |
+| Fiber bend loss | Macrobending (tight radius) or microbending | Maintain 10Ã— cladding diameter bend radius |
 | Connector contamination | Dirty end-faces cause reflection and loss | Clean and inspect every connection |
 | Fresnel reflection | Light reflects at air-glass interface | Use index-matching gel or APC polish |
 
@@ -873,27 +873,27 @@ Optical fiber transmits light pulses through a glass or plastic core by total in
 | EMI immunity | Low (STP: medium) | Medium | Complete |
 | Installation ease | Easy (RJ-45) | Moderate (F-type) | Difficult (fusion splice) |
 | Cost per meter | $0.30 | $0.60 | $1.00+ |
-| Termination cost | $0.50 | $1.00 | $20–$50 per connector |
+| Termination cost | $0.50 | $1.00 | $20â€“$50 per connector |
 | Applications | Ethernet, DSL | Cable TV, broadband | Long-haul, data center |
 
-**Complexity Analysis — Media Selection:**
+**Complexity Analysis â€” Media Selection:**
 
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
-| Attenuation budget | O(1) | O(1) | Single formula: tx_power − (attenuation × distance) |
+| Attenuation budget | O(1) | O(1) | Single formula: tx_power âˆ’ (attenuation Ã— distance) |
 | Distance check | O(1) | O(1) | Compare required distance to media max |
 
-**Complexity Equation — Power Budget:**
+**Complexity Equation â€” Power Budget:**
 
-Power Margin (dB) = Tx_Power(dBm) − Rx_Sensitivity(dBm) − Link_Losses(dB)
+Power Margin (dB) = Tx_Power(dBm) âˆ’ Rx_Sensitivity(dBm) âˆ’ Link_Losses(dB)
 
 For a 100 km SMF link at 1550 nm:
 - Tx = 0 dBm
-- Rx sensitivity = −20 dBm
-- Attenuation = 0.2 dB/km × 100 km = 20 dB
-- Splice losses = 0.1 dB × 5 splices = 0.5 dB
-- Connector losses = 0.5 dB × 2 connectors = 1.0 dB
-- Power margin = 0 − (−20) − (20 + 0.5 + 1.0) = −1.5 dB — insufficient! Need amplification.
+- Rx sensitivity = âˆ’20 dBm
+- Attenuation = 0.2 dB/km Ã— 100 km = 20 dB
+- Splice losses = 0.1 dB Ã— 5 splices = 0.5 dB
+- Connector losses = 0.5 dB Ã— 2 connectors = 1.0 dB
+- Power margin = 0 âˆ’ (âˆ’20) âˆ’ (20 + 0.5 + 1.0) = âˆ’1.5 dB â€” insufficient! Need amplification.
 
 ## 2.5 Wireless Transmission
 
@@ -904,31 +904,31 @@ Wireless transmission uses electromagnetic waves propagated through free space. 
 ### 2.5.1 Radio Waves
 
 
-Radio waves in the 3 kHz–300 GHz range propagate through walls and around obstacles.
+Radio waves in the 3 kHzâ€“300 GHz range propagate through walls and around obstacles.
 
 **Propagation modes:**
-- **Ground wave:** Below 2 MHz — follows Earth's curvature. Used by AM radio (530–1700 kHz).
-- **Sky wave:** 2–30 MHz — reflects off ionosphere. Used by shortwave radio (HF band).
-- **Line-of-sight:** Above 30 MHz — travels in straight lines. Used by VHF/UHF TV, FM radio, Wi-Fi.
+- **Ground wave:** Below 2 MHz â€” follows Earth's curvature. Used by AM radio (530â€“1700 kHz).
+- **Sky wave:** 2â€“30 MHz â€” reflects off ionosphere. Used by shortwave radio (HF band).
+- **Line-of-sight:** Above 30 MHz â€” travels in straight lines. Used by VHF/UHF TV, FM radio, Wi-Fi.
 
 **ISM Bands (unlicensed, but must accept interference):**
 
 | Band | Frequency | Common Uses | Limitations |
 |------|-----------|-------------|-------------|
-| 900 MHz | 902–928 MHz | Zigbee, older cordless phones | Narrow bandwidth (26 MHz) |
-| 2.4 GHz | 2.4000–2.4835 GHz | Wi-Fi (802.11b/g/n/ax), Bluetooth, Zigbee | Crowded, interference from microwave ovens |
-| 5 GHz | 5.15–5.85 GHz | Wi-Fi (802.11a/n/ac/ax) | Less range than 2.4 GHz, better throughput |
-| 6 GHz | 5.925–7.125 GHz | Wi-Fi 6E (802.11ax), Wi-Fi 7 (802.11be) | Very high throughput, short range |
+| 900 MHz | 902â€“928 MHz | Zigbee, older cordless phones | Narrow bandwidth (26 MHz) |
+| 2.4 GHz | 2.4000â€“2.4835 GHz | Wi-Fi (802.11b/g/n/ax), Bluetooth, Zigbee | Crowded, interference from microwave ovens |
+| 5 GHz | 5.15â€“5.85 GHz | Wi-Fi (802.11a/n/ac/ax) | Less range than 2.4 GHz, better throughput |
+| 6 GHz | 5.925â€“7.125 GHz | Wi-Fi 6E (802.11ax), Wi-Fi 7 (802.11be) | Very high throughput, short range |
 
 **Steps to calculate free-space path loss (FSPL):**
 
 1. Determine distance (d) in meters between transmitter and receiver.
 2. Determine frequency (f) in Hz of the carrier.
-3. Compute FSPL = 20·log₁₀(d) + 20·log₁₀(f) − 147.55 (in dB).
-4. Add atmospheric losses (rain ≈ 0.1 dB/km at 10 GHz, higher at higher frequencies).
+3. Compute FSPL = 20Â·logâ‚â‚€(d) + 20Â·logâ‚â‚€(f) âˆ’ 147.55 (in dB).
+4. Add atmospheric losses (rain â‰ˆ 0.1 dB/km at 10 GHz, higher at higher frequencies).
 5. Compare against link budget: if Rx_power > Rx_sensitivity, link works.
 
-**Pseudocode — Free-Space Path Loss**
+**Pseudocode â€” Free-Space Path Loss**
 
 ```
 FUNCTION computeFSPL(distance_m, frequency_Hz):
@@ -940,30 +940,30 @@ FUNCTION linkBudget(txPower_dBm, txGain_dBi, rxGain_dBi, fspl_dB, fadeMargin_dB)
     RETURN rxPower_dBm
 ```
 
-**Dry Run — Wi-Fi Link Budget (100 m, 2.4 GHz)**
+**Dry Run â€” Wi-Fi Link Budget (100 m, 2.4 GHz)**
 
 | Parameter | Value |
 |-----------|-------|
 | Distance | 100 m |
-| Frequency | 2.4 × 10⁹ Hz |
-| FSPL | 20·log₁₀(100) + 20·log₁₀(2.4e9) − 147.55 = 40 + 187.6 − 147.55 = 80.05 dB |
+| Frequency | 2.4 Ã— 10â¹ Hz |
+| FSPL | 20Â·logâ‚â‚€(100) + 20Â·logâ‚â‚€(2.4e9) âˆ’ 147.55 = 40 + 187.6 âˆ’ 147.55 = 80.05 dB |
 | Tx power | 20 dBm (100 mW) |
 | Tx antenna gain | 2 dBi |
 | Rx antenna gain | 2 dBi |
 | Fade margin | 10 dB |
-| Received power | 20 + 2 + 2 − 80.05 − 10 = −66.05 dBm |
-| Typical Wi-Fi Rx sensitivity | −85 dBm (for 54 Mbps OFDM) |
-| Link margin | −66.05 − (−85) = 18.95 dB — link works reliably |
+| Received power | 20 + 2 + 2 âˆ’ 80.05 âˆ’ 10 = âˆ’66.05 dBm |
+| Typical Wi-Fi Rx sensitivity | âˆ’85 dBm (for 54 Mbps OFDM) |
+| Link margin | âˆ’66.05 âˆ’ (âˆ’85) = 18.95 dB â€” link works reliably |
 
 ### 2.5.2 Microwaves
 
 
-Microwaves (3–300 GHz) propagate by line-of-sight and are attenuated by rain and atmospheric gases.
+Microwaves (3â€“300 GHz) propagate by line-of-sight and are attenuated by rain and atmospheric gases.
 
 **Point-to-point microwave links:**
 - Distance: up to 50 km
-- Data rate: several Gbps (10–100 Gbps in E-band 71–86 GHz)
-- Antenna dish: 0.3–1.2 m diameter
+- Data rate: several Gbps (10â€“100 Gbps in E-band 71â€“86 GHz)
+- Antenna dish: 0.3â€“1.2 m diameter
 - Requires Fresnel zone clearance (60% of first Fresnel zone radius)
 
 **Satellite communication:**
@@ -971,17 +971,17 @@ Microwaves (3–300 GHz) propagate by line-of-sight and are attenuated by rain a
 | Orbit | Altitude | Delay | Coverage | Example |
 |-------|----------|-------|----------|---------|
 | GEO | 35,786 km | ~250 ms | 1/3 Earth (3 satellites cover globe) | DirecTV, VSAT |
-| MEO | 5,000–20,000 km | ~50 ms | Partial | GPS (20,200 km) |
-| LEO | 500–1,500 km | 1–10 ms | Constellations needed | Starlink (550 km, ~20 ms delay) |
+| MEO | 5,000â€“20,000 km | ~50 ms | Partial | GPS (20,200 km) |
+| LEO | 500â€“1,500 km | 1â€“10 ms | Constellations needed | Starlink (550 km, ~20 ms delay) |
 
-**Fresnel zone radius at midpoint:** r = 0.5 × √(λ × d)
+**Fresnel zone radius at midpoint:** r = 0.5 Ã— âˆš(Î» Ã— d)
 
-For a 10 km link at 5 GHz (λ = 0.06 m): r = 0.5 × √(0.06 × 10000) = 0.5 × 24.5 = 12.25 m.
+For a 10 km link at 5 GHz (Î» = 0.06 m): r = 0.5 Ã— âˆš(0.06 Ã— 10000) = 0.5 Ã— 24.5 = 12.25 m.
 
 ### 2.5.3 Infrared
 
 
-Infrared (IR) waves, with frequencies above 300 GHz (300 GHz–400 THz), are used for short-range communication (1–10 m).
+Infrared (IR) waves, with frequencies above 300 GHz (300 GHzâ€“400 THz), are used for short-range communication (1â€“10 m).
 
 **Properties:**
 - Does not penetrate walls (inherent security).
@@ -994,8 +994,8 @@ Infrared (IR) waves, with frequencies above 300 GHz (300 GHz–400 THz), are use
 | Property | IR | Radio | Microwave |
 |----------|-----|-------|-----------|
 | Wall penetration | No | Yes | Limited |
-| Range | 1–10 m | Up to km | km (line-of-sight) |
-| Data rate | 1–4 Mbps (IrDA) | Up to Gbps | Up to 100 Gbps |
+| Range | 1â€“10 m | Up to km | km (line-of-sight) |
+| Data rate | 1â€“4 Mbps (IrDA) | Up to Gbps | Up to 100 Gbps |
 | Interference | Sunlight, heat | Other transmitters | Rain, atmospheric |
 | Security | High (walled) | Low (overheard) | Medium (beam narrow) |
 | Cost | Very low | Low | High |
@@ -1005,8 +1005,8 @@ Infrared (IR) waves, with frequencies above 300 GHz (300 GHz–400 THz), are use
 
 | Property | Radio (2.4 GHz) | Microwave (60 GHz) | Infrared |
 |----------|-----------------|---------------------|----------|
-| Frequency | 3 kHz–300 GHz | 3–300 GHz | 300 GHz–400 THz |
-| Range | 100 m–km (indoor) | 1 km–50 km (LOS) | 1–10 m |
+| Frequency | 3 kHzâ€“300 GHz | 3â€“300 GHz | 300 GHzâ€“400 THz |
+| Range | 100 mâ€“km (indoor) | 1 kmâ€“50 km (LOS) | 1â€“10 m |
 | Penetrates walls | Yes | Limited | No |
 | Max data rate | 1 Gbps+ (802.11ax) | 100 Gbps | 4 Mbps (IrDA) |
 | Line-of-sight needed | No (obstacles reflect) | Yes | Yes |
@@ -1015,7 +1015,7 @@ Infrared (IR) waves, with frequencies above 300 GHz (300 GHz–400 THz), are use
 | Cost | Low | High | Very low |
 | Typical use | Wi-Fi, cellular | Backhaul, satellite | Remote controls, peripherals |
 
-**A&D Table — Wireless vs Wired:**
+**A&D Table â€” Wireless vs Wired:**
 
 | Aspect | Wireless | Wired |
 |--------|----------|-------|
@@ -1028,7 +1028,7 @@ Infrared (IR) waves, with frequencies above 300 GHz (300 GHz–400 THz), are use
 | Latency | Higher (CSMA/CA, retransmissions) | Lower, predictable |
 ## 2.6 Signal Encoding
 
-**Real-world analogy:** Signal encoding is like choosing a language for a telegram. NRZ is plain English — simple but if you pause, the receiver can't tell if you stopped talking or are still thinking. Manchester is like having a clock tick between every word — the receiver always knows where words begin and end. 4B/5B is like a secret code where every 4-letter word becomes a 5-letter word to avoid offensive patterns.
+**Real-world analogy:** Signal encoding is like choosing a language for a telegram. NRZ is plain English â€” simple but if you pause, the receiver can't tell if you stopped talking or are still thinking. Manchester is like having a clock tick between every word â€” the receiver always knows where words begin and end. 4B/5B is like a secret code where every 4-letter word becomes a 5-letter word to avoid offensive patterns.
 
 ### 2.6.1 NRZ (Non-Return-to-Zero)
 
@@ -1041,11 +1041,11 @@ Infrared (IR) waves, with frequencies above 300 GHz (300 GHz–400 THz), are use
 **Steps for NRZ-L encoding:**
 
 1. Read the input bit (0 or 1).
-2. If bit = 1, set voltage to +V. If bit = 0, set voltage to −V (or 0V).
+2. If bit = 1, set voltage to +V. If bit = 0, set voltage to âˆ’V (or 0V).
 3. Hold voltage constant for the entire bit period.
 4. Sample at the middle of the bit period at the receiver.
 
-**Pseudocode — NRZ Encoding**
+**Pseudocode â€” NRZ Encoding**
 
 ```
 FUNCTION nrzEncode(bits):
@@ -1062,18 +1062,18 @@ FUNCTION nrzEncode(bits):
     RETURN encoded
 ```
 
-**Dry Run — NRZ-L and NRZ-I for bit sequence 1 0 1 1 0 0 1:**
+**Dry Run â€” NRZ-L and NRZ-I for bit sequence 1 0 1 1 0 0 1:**
 
 | Bit | NRZ-L Voltage | NRZ-I Voltage | NRZ-I Toggle? |
 |-----|--------------|--------------|---------------|
-| (start) | — | −V | — |
+| (start) | â€” | âˆ’V | â€” |
 | 1 | +V | +V | Yes |
-| 0 | −V | +V | No |
-| 1 | +V | −V | Yes |
+| 0 | âˆ’V | +V | No |
+| 1 | +V | âˆ’V | Yes |
 | 1 | +V | +V | Yes |
-| 0 | −V | +V | No |
-| 0 | −V | +V | No |
-| 1 | +V | −V | Yes |
+| 0 | âˆ’V | +V | No |
+| 0 | âˆ’V | +V | No |
+| 1 | +V | âˆ’V | Yes |
 
 ### 2.6.2 Manchester Encoding
 
@@ -1085,11 +1085,11 @@ Manchester encoding combines clock and data into a single signal. 1 = low-to-hig
 **Steps for Manchester encoding:**
 
 1. Read the input bit.
-2. If bit = 1: set voltage to low for first half-period, high for second half (low→high transition).
-3. If bit = 0: set voltage to high for first half-period, low for second half (high→low transition).
+2. If bit = 1: set voltage to low for first half-period, high for second half (lowâ†’high transition).
+3. If bit = 0: set voltage to high for first half-period, low for second half (highâ†’low transition).
 4. Every bit has a guaranteed mid-bit transition for clock recovery.
 
-**Pseudocode — Manchester Encoding**
+**Pseudocode â€” Manchester Encoding**
 
 ```
 FUNCTION manchesterEncode(bits):
@@ -1104,14 +1104,14 @@ FUNCTION manchesterEncode(bits):
     RETURN encoded
 ```
 
-**Dry Run — Manchester for bit sequence 1 0 1 1:**
+**Dry Run â€” Manchester for bit sequence 1 0 1 1:**
 
 | Bit | Half 1 Voltage | Half 2 Voltage | Transition |
 |-----|---------------|---------------|------------|
-| 1 | low (0V) | high (+V) | ↑ (up) |
-| 0 | high (+V) | low (0V) | ↓ (down) |
-| 1 | low (0V) | high (+V) | ↑ (up) |
-| 1 | low (0V) | high (+V) | ↑ (up) |
+| 1 | low (0V) | high (+V) | â†‘ (up) |
+| 0 | high (+V) | low (0V) | â†“ (down) |
+| 1 | low (0V) | high (+V) | â†‘ (up) |
+| 1 | low (0V) | high (+V) | â†‘ (up) |
 
 ### 2.6.3 Differential Manchester
 
@@ -1124,13 +1124,13 @@ Differential Manchester (used in Token Ring): bit = 0 means transition at start 
 3. For bit = 1: no transition at the beginning.
 4. Always transition mid-bit (provides clock).
 
-**Dry Run — Differential Manchester for bits 1 0 1 1 (starting high):**
+**Dry Run â€” Differential Manchester for bits 1 0 1 1 (starting high):**
 
 | Bit | Start transition? | Before mid-bit | After mid-bit | End state |
 |-----|------------------|---------------|---------------|-----------|
-| (start) | — | high | — | high |
+| (start) | â€” | high | â€” | high |
 | 1 | No (stays high) | high | low (mid-transition) | low |
-| 0 | Yes (low→high) | high | low (mid-transition) | low |
+| 0 | Yes (lowâ†’high) | high | low (mid-transition) | low |
 | 1 | No (stays low) | low | high (mid-transition) | high |
 | 1 | No (stays high) | high | low (mid-transition) | low |
 
@@ -1171,20 +1171,20 @@ Special codes: 11111 = idle, 11000 = start-of-stream delimiter, 10001 = end-of-s
 **Real-world analogy:** A restaurant where every dish comes with exactly 5 savory ingredients and 5 sweet ingredients (DC balance). If the savory count is off, the chef adds an extra ingredient to compensate.
 
 **Key properties:**
-- Running disparity (RD) tracking: RD+ or RD− state maintained between symbols.
-- Each byte maps to two possible 10-bit codes (RD+ and RD−) for DC balance.
-- Disparity = (# of 1s) − (# of 0s). Target: cumulative disparity alternates.
+- Running disparity (RD) tracking: RD+ or RDâˆ’ state maintained between symbols.
+- Each byte maps to two possible 10-bit codes (RD+ and RDâˆ’) for DC balance.
+- Disparity = (# of 1s) âˆ’ (# of 0s). Target: cumulative disparity alternates.
 - 5B/6B encoding on the top 5 bits + 3B/4B encoding on the bottom 3 bits.
 
 **Steps for 8B/10B encoding:**
 
 1. Split the 8-bit byte into 3 most significant bits (HGF) and 5 least significant bits (EDCBA).
-2. Encode 5 bits → 6 bits using 5B/6B encoder (with current RD).
-3. Encode 3 bits → 4 bits using 3B/4B encoder (with updated RD).
+2. Encode 5 bits â†’ 6 bits using 5B/6B encoder (with current RD).
+3. Encode 3 bits â†’ 4 bits using 3B/4B encoder (with updated RD).
 4. Concatenate: 6-bit code + 4-bit code = 10 bits.
 5. Update running disparity.
 
-**Pseudocode — 8B/10B Encoding Simulator**
+**Pseudocode â€” 8B/10B Encoding Simulator**
 
 ```
 FUNCTION computeDisparity(bits):
@@ -1207,13 +1207,13 @@ FUNCTION encode8b10b(byte, currentRD):
 |--------|---------------|------------|---------------|---------------------|------------|---------|
 | NRZ-L | 1 | Poor | Poor (long runs of same bit lose clock) | 100% (no overhead) | Very low | RS-232, obsolete |
 | NRZ-I | 1 | Poor | Better than NRZ-L (transitions for 1s) | 100% | Low | USB (low-speed), FDDI |
-| Manchester | 0.5 | Good | Excellent (mid-bit transition always) | 50% (2× bandwidth) | Medium | 10BASE-T Ethernet |
+| Manchester | 0.5 | Good | Excellent (mid-bit transition always) | 50% (2Ã— bandwidth) | Medium | 10BASE-T Ethernet |
 | Diff Manchester | 0.5 | Good | Excellent | 50% | Medium | Token Ring (802.5) |
-| 4B/5B | 0.8 | Medium | Good (≤3 consecutive 0s) | 80% (25% overhead) | Medium | 100BASE-TX, FDDI |
+| 4B/5B | 0.8 | Medium | Good (â‰¤3 consecutive 0s) | 80% (25% overhead) | Medium | 100BASE-TX, FDDI |
 | 8B/10B | 0.8 | Excellent | Excellent (DC-balanced, sufficient transitions) | 80% (25% overhead) | High | GigE, Fibre Ch., PCIe, SATA, USB 3 |
 | 64B/66B | 0.97 | Good | Excellent | 97% (3% overhead) | High | 10G Ethernet, 40G Ethernet |
 
-**A&D Table — Encoding Schemes:**
+**A&D Table â€” Encoding Schemes:**
 
 | Scheme | Advantages | Disadvantages |
 |--------|-----------|-------------|
@@ -1224,7 +1224,7 @@ FUNCTION encode8b10b(byte, currentRD):
 | 8B/10B | DC-balanced; excellent clock recovery; wide industry adoption | 25% overhead; complex encoding logic |
 | 64B/66B | Low overhead (3%); scrambler prevents long runs | More complex; scrambler can theoretically produce bad patterns |
 
-### 2.6.7 C++ Implementation — Signal Encoding
+### 2.6.7 C++ Implementation â€” Signal Encoding
 
 
 ```cpp
@@ -1327,7 +1327,7 @@ int main() {
 }
 ```
 
-### 2.6.8 Python Implementation — Signal Encoding Library
+### 2.6.8 Python Implementation â€” Signal Encoding Library
 
 
 ```python
@@ -1350,9 +1350,9 @@ def manchester_encode(bits: List[int]) -> List[int]:
     result = []
     for bit in bits:
         if bit == 1:
-            result.extend([-1, 1])  # low→high
+            result.extend([-1, 1])  # lowâ†’high
         else:
-            result.extend([1, -1])  # high→low
+            result.extend([1, -1])  # highâ†’low
     return result
 
 
@@ -1415,15 +1415,15 @@ if __name__ == "__main__":
     print(f"DC balance: {ones} ones, {zeros} zeros, disparity={ones - zeros}")
 ```
 
-**Complexity Analysis — Signal Encoding:**
+**Complexity Analysis â€” Signal Encoding:**
 
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
 | NRZ encode (any variant) | O(n) | O(n) | One pass over n bits |
-| Manchester encode | O(n) | O(2n) | Each bit → 2 signal levels |
+| Manchester encode | O(n) | O(2n) | Each bit â†’ 2 signal levels |
 | Manchester decode | O(n) | O(n) | One pass over signal samples |
-| 4B/5B encode | O(n/4) | O(5n/4) | Each 4-bit group → 5-bit code |
-| 8B/10B encode | O(n/8) | O(10n/8) | Each byte → 10-bit code |
+| 4B/5B encode | O(n/4) | O(5n/4) | Each 4-bit group â†’ 5-bit code |
+| 8B/10B encode | O(n/8) | O(10n/8) | Each byte â†’ 10-bit code |
 | DC balance check | O(n) | O(1) | Count ones and zeros |
 
 ### TypeScript Implementation: SignalEncoder
@@ -1432,7 +1432,7 @@ The following TypeScript class implements NRZ-L, NRZ-I, Manchester, and 4B/5B en
 
 ```typescript
 /**
- * SignalEncoder — Implements NRZ-L, NRZ-I, Manchester, and 4B/5B
+ * SignalEncoder â€” Implements NRZ-L, NRZ-I, Manchester, and 4B/5B
  * encoding and decoding schemes used in Ethernet and other PHY layers.
  */
 class SignalEncoder {
@@ -1452,12 +1452,12 @@ class SignalEncoder {
     return signal;
   }
 
-  /** Manchester: 1 = low→high, 0 = high→low (IEEE 802.3) */
+  /** Manchester: 1 = lowâ†’high, 0 = highâ†’low (IEEE 802.3) */
   static manchesterEncode(bits: number[]): string[] {
     const signal: string[] = [];
     for (const b of bits) {
-      if (b === 1) { signal.push('-', '+'); }  // low→high
-      else { signal.push('+', '-'); }           // high→low
+      if (b === 1) { signal.push('-', '+'); }  // lowâ†’high
+      else { signal.push('+', '-'); }           // highâ†’low
     }
     return signal;
   }
@@ -1528,7 +1528,7 @@ DC disparity: 2
 
 ## 2.7 Modulation
 
-**Real-world analogy:** Modulation is like placing a message inside a sealed envelope for delivery. ASK is the envelope's weight (heavy = 1, light = 0). FSK is the color of the envelope (red = 1, blue = 0). PSK is how the stamp is oriented (right-side up = 1, upside-down = 0). QAM is like both weight and stamp orientation — more information per envelope.
+**Real-world analogy:** Modulation is like placing a message inside a sealed envelope for delivery. ASK is the envelope's weight (heavy = 1, light = 0). FSK is the color of the envelope (red = 1, blue = 0). PSK is how the stamp is oriented (right-side up = 1, upside-down = 0). QAM is like both weight and stamp orientation â€” more information per envelope.
 
 ### 2.7.1 Amplitude Shift Keying (ASK)
 
@@ -1539,11 +1539,11 @@ ASK varies the carrier amplitude to represent data. 1 = carrier present (high am
 
 **Steps for ASK modulation:**
 
-1. Generate a carrier sine wave at frequency fc: c(t) = A_c × cos(2π·fc·t).
+1. Generate a carrier sine wave at frequency fc: c(t) = A_c Ã— cos(2Ï€Â·fcÂ·t).
 2. For each bit: if bit = 1, transmit c(t) at full amplitude. If bit = 0, transmit c(t) at reduced amplitude (or zero).
 3. At receiver, measure envelope amplitude. If amplitude > threshold, decode as 1; otherwise decode as 0.
 
-**Pseudocode — ASK Modulator**
+**Pseudocode â€” ASK Modulator**
 
 ```
 FUNCTION askModulate(bits, carrierFreq, sampleRate, bitDuration):
@@ -1557,21 +1557,21 @@ FUNCTION askModulate(bits, carrierFreq, sampleRate, bitDuration):
     RETURN signal
 ```
 
-**Dry Run — ASK for bits 1 0 at carrier 10 Hz, 100 samples/s, 0.5s per bit:**
+**Dry Run â€” ASK for bits 1 0 at carrier 10 Hz, 100 samples/s, 0.5s per bit:**
 
-| Bit | t (s) | Carrier cos(2π·10·t) | Amplitude | ASK Output |
+| Bit | t (s) | Carrier cos(2Ï€Â·10Â·t) | Amplitude | ASK Output |
 |-----|-------|---------------------|-----------|------------|
 | 1 | 0.00 | 1.000 | 1.0 | 1.000 |
 | 1 | 0.05 | 0.000 | 1.0 | 0.000 |
-| 1 | 0.10 | −1.000 | 1.0 | −1.000 |
+| 1 | 0.10 | âˆ’1.000 | 1.0 | âˆ’1.000 |
 | 1 | 0.15 | 0.000 | 1.0 | 0.000 |
 | 1 | 0.20 | 1.000 | 1.0 | 1.000 |
 | 1 | 0.25 | 0.000 | 1.0 | 0.000 |
-| 0 | 0.30 | −1.000 | 0.1 | −0.100 |
+| 0 | 0.30 | âˆ’1.000 | 0.1 | âˆ’0.100 |
 | 0 | 0.35 | 0.000 | 0.1 | 0.000 |
 | 0 | 0.40 | 1.000 | 0.1 | 0.100 |
 | 0 | 0.45 | 0.000 | 0.1 | 0.000 |
-| 0 | 0.50 | −1.000 | 0.1 | −0.100 |
+| 0 | 0.50 | âˆ’1.000 | 0.1 | âˆ’0.100 |
 
 ### 2.7.2 Frequency Shift Keying (FSK)
 
@@ -1589,35 +1589,35 @@ FSK varies the carrier frequency to represent data. 1 = frequency f1, 0 = freque
 ### 2.7.3 Phase Shift Keying (PSK)
 
 
-PSK varies the carrier phase to represent data. BPSK: 0° phase = 1, 180° phase = 0.
+PSK varies the carrier phase to represent data. BPSK: 0Â° phase = 1, 180Â° phase = 0.
 
-**Real-world analogy:** Two scouts using a mirror to flash signals. A flash straight at you (0° phase) means "yes", a flash to the right (180° shift = opposite direction) means "no".
+**Real-world analogy:** Two scouts using a mirror to flash signals. A flash straight at you (0Â° phase) means "yes", a flash to the right (180Â° shift = opposite direction) means "no".
 
-**QPSK (Quadrature PSK)** uses 4 phase states (45°, 135°, 225°, 315°) encoding 2 bits per symbol.
+**QPSK (Quadrature PSK)** uses 4 phase states (45Â°, 135Â°, 225Â°, 315Â°) encoding 2 bits per symbol.
 
-**Constellation diagram — BPSK:**
+**Constellation diagram â€” BPSK:**
 
 ```
     Q
     |
-  1 |● (+1, 0)
+  1 |â— (+1, 0)
     |
 ----+---- I
     |
-  0 |● (-1, 0)
+  0 |â— (-1, 0)
     |
 ```
 
-**Constellation diagram — QPSK:**
+**Constellation diagram â€” QPSK:**
 
 ```
          Q
          |
-    01 ● |● 00  (-1, +1) = 00, (+1, +1) = 01
+    01 â— |â— 00  (-1, +1) = 00, (+1, +1) = 01
          |
 ----+----+---- I
          |
-    10 ● |● 11  (-1, -1) = 10, (+1, -1) = 11
+    10 â— |â— 11  (-1, -1) = 10, (+1, -1) = 11
          |
 ```
 
@@ -1625,19 +1625,19 @@ PSK varies the carrier phase to represent data. BPSK: 0° phase = 1, 180° phase
 
 1. Group bits into pairs: dibits (b1, b0).
 2. Map each dibit to I (in-phase) and Q (quadrature) amplitudes:
-   - 00 → I=+1, Q=+1 (phase shift 45°)
-   - 01 → I=−1, Q=+1 (phase shift 135°)
-   - 10 → I=−1, Q=−1 (phase shift 225°)
-   - 11 → I=+1, Q=−1 (phase shift 315°)
-3. Generate: s(t) = I·cos(2πfc·t) − Q·sin(2πfc·t)
+   - 00 â†’ I=+1, Q=+1 (phase shift 45Â°)
+   - 01 â†’ I=âˆ’1, Q=+1 (phase shift 135Â°)
+   - 10 â†’ I=âˆ’1, Q=âˆ’1 (phase shift 225Â°)
+   - 11 â†’ I=+1, Q=âˆ’1 (phase shift 315Â°)
+3. Generate: s(t) = IÂ·cos(2Ï€fcÂ·t) âˆ’ QÂ·sin(2Ï€fcÂ·t)
 4. Transmit the combined signal.
 
 ### 2.7.4 Quadrature Amplitude Modulation (QAM)
 
 
-QAM combines amplitude and phase variation. 16-QAM: 4 amplitudes × 4 phases = 16 symbols = 4 bits per symbol.
+QAM combines amplitude and phase variation. 16-QAM: 4 amplitudes Ã— 4 phases = 16 symbols = 4 bits per symbol.
 
-**Constellation diagram — 16-QAM (simplified):**
+**Constellation diagram â€” 16-QAM (simplified):**
 
 ```
          Q
@@ -1652,7 +1652,7 @@ QAM combines amplitude and phase variation. 16-QAM: 4 amplitudes × 4 phases = 1
 
 Each point encodes a unique 4-bit pattern. Gray coding ensures adjacent symbols differ by only 1 bit (minimizes bit errors).
 
-**Bit rate calculation:** Bit rate = Baud rate × log₂(M)
+**Bit rate calculation:** Bit rate = Baud rate Ã— logâ‚‚(M)
 
 | Modulation | M (Symbols) | Bits/Symbol | Baud Rate | Bit Rate |
 |------------|-------------|-------------|-----------|----------|
@@ -1663,7 +1663,7 @@ Each point encodes a unique 4-bit pattern. Gray coding ensures adjacent symbols 
 | 64-QAM | 64 | 6 | 2400 | 14400 bps |
 | 256-QAM | 256 | 8 | 2400 | 19200 bps |
 
-**Pseudocode — QPSK Modulator**
+**Pseudocode â€” QPSK Modulator**
 
 ```
 FUNCTION qpskModulate(bits, carrierFreq, sampleRate, symbolDuration):
@@ -1673,10 +1673,10 @@ FUNCTION qpskModulate(bits, carrierFreq, sampleRate, symbolDuration):
     FOR i = 0 TO LENGTH(bits) - 1 STEP 2:
         dibit = (bits[i] << 1) | bits[i+1]
         // Map dibit to I, Q
-        IF dibit == 0b00: I = +1, Q = +1   // 45°
-        ELSE IF dibit == 0b01: I = -1, Q = +1  // 135°
-        ELSE IF dibit == 0b10: I = -1, Q = -1  // 225°
-        ELSE IF dibit == 0b11: I = +1, Q = -1  // 315°
+        IF dibit == 0b00: I = +1, Q = +1   // 45Â°
+        ELSE IF dibit == 0b01: I = -1, Q = +1  // 135Â°
+        ELSE IF dibit == 0b10: I = -1, Q = -1  // 225Â°
+        ELSE IF dibit == 0b11: I = +1, Q = -1  // 315Â°
         // Generate carrier
         FOR j = 0 TO samplesPerSymbol - 1:
             t = j / sampleRate
@@ -1700,17 +1700,17 @@ FUNCTION qpskModulate(bits, carrierFreq, sampleRate, symbolDuration):
 | 256-QAM | 8 | 8 bps/Hz | Very high (26 dB) | Very high | High | DOCSIS 3.1, Wi-Fi 6 |
 | 1024-QAM | 10 | 10 bps/Hz | Extreme (30 dB) | Very high | Very high | DOCSIS 4.0, 5G NR |
 
-**A&D Table — Modulation Schemes:**
+**A&D Table â€” Modulation Schemes:**
 
 | Scheme | Advantages | Disadvantages |
 |--------|-----------|-------------|
 | ASK | Simplest hardware; cheap | Very noise-sensitive; amplitude varies with distance |
 | FSK | Noise-immune (frequency detection); constant envelope | Lower spectral efficiency; requires more bandwidth |
-| BPSK | Most robust PSK; simplest PSK to implement | Only 1 bit/symbol — lowest throughput |
-| QPSK | 2× throughput of BPSK at same BW; good noise performance | Phase ambiguity needs differential encoding |
+| BPSK | Most robust PSK; simplest PSK to implement | Only 1 bit/symbol â€” lowest throughput |
+| QPSK | 2Ã— throughput of BPSK at same BW; good noise performance | Phase ambiguity needs differential encoding |
 | QAM (high-order) | Very high spectral efficiency (8+ bps/Hz) | Requires high SNR; complex transmitter/receiver; sensitive to linearity |
 
-### 2.7.6 C++ Implementation — Modulation Simulation
+### 2.7.6 C++ Implementation â€” Modulation Simulation
 
 
 ```cpp
@@ -1805,7 +1805,7 @@ int main() {
 }
 ```
 
-### 2.7.7 Python Implementation — Modulation Simulator
+### 2.7.7 Python Implementation â€” Modulation Simulator
 
 
 ```python
@@ -1898,17 +1898,17 @@ if __name__ == "__main__":
     print("256-QAM: 8 bps/Hz, needs ~26 dB SNR")
 ```
 
-**Complexity Analysis — Modulation:**
+**Complexity Analysis â€” Modulation:**
 
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
-| ASK modulation | O(n · spp) | O(n · spp) | For each bit, generate spp samples of carrier × amplitude |
-| FSK modulation | O(n · spp) | O(n · spp) | Similar to ASK, but switches frequency per symbol |
-| BPSK/QPSK modulation | O(n · spp) | O(n · spp) | Multiply I/Q by carrier, sum |
-| QAM modulation | O(n · spp) | O(n · spp) | Map to constellation point, then carrier modulation |
-| Demodulation (envelope) | O(n · spp) | O(n) | Track amplitude envelope over time |
+| ASK modulation | O(n Â· spp) | O(n Â· spp) | For each bit, generate spp samples of carrier Ã— amplitude |
+| FSK modulation | O(n Â· spp) | O(n Â· spp) | Similar to ASK, but switches frequency per symbol |
+| BPSK/QPSK modulation | O(n Â· spp) | O(n Â· spp) | Multiply I/Q by carrier, sum |
+| QAM modulation | O(n Â· spp) | O(n Â· spp) | Map to constellation point, then carrier modulation |
+| Demodulation (envelope) | O(n Â· spp) | O(n) | Track amplitude envelope over time |
 
-**Edge Cases — Modulation:**
+**Edge Cases â€” Modulation:**
 
 | Edge Case | Cause | Mitigation |
 |-----------|-------|------------|
@@ -1921,14 +1921,14 @@ if __name__ == "__main__":
 | Inter-symbol interference (ISI) | Channel dispersion spreads symbol | Use raised-cosine filter, equalizer |
 ## 2.8 Multiplexing
 
-**Real-world analogy:** Multiplexing is like a highway with multiple lanes. FDM is like dividing the highway into color-coded lanes — red cars use the red lane, blue cars use the blue lane (different frequencies). TDM is like a single-lane road where cars take turns — red for 10 seconds, then blue for 10 seconds. WDM is like the same road painted with different colors of light — invisible to each other. CDM is like everyone speaking different languages in the same room — you only understand your language, the rest sounds like noise.
+**Real-world analogy:** Multiplexing is like a highway with multiple lanes. FDM is like dividing the highway into color-coded lanes â€” red cars use the red lane, blue cars use the blue lane (different frequencies). TDM is like a single-lane road where cars take turns â€” red for 10 seconds, then blue for 10 seconds. WDM is like the same road painted with different colors of light â€” invisible to each other. CDM is like everyone speaking different languages in the same room â€” you only understand your language, the rest sounds like noise.
 
 ### 2.8.1 Frequency-Division Multiplexing (FDM)
 
 
 FDM assigns each signal a distinct frequency band (subchannel). Guard bands between subchannels prevent interference.
 
-**Real-world analogy:** A radio receiver — different stations broadcast on different frequencies simultaneously. You tune your dial to 103.5 MHz to hear one station while 101.1 MHz carries another.
+**Real-world analogy:** A radio receiver â€” different stations broadcast on different frequencies simultaneously. You tune your dial to 103.5 MHz to hear one station while 101.1 MHz carries another.
 
 **Steps for FDM:**
 
@@ -1938,7 +1938,7 @@ FDM assigns each signal a distinct frequency band (subchannel). Guard bands betw
 4. At receiver, bandpass filters separate each channel.
 5. Demodulate each channel to recover the original signal.
 
-**Pseudocode — FDM Multiplexer**
+**Pseudocode â€” FDM Multiplexer**
 
 ```
 FUNCTION fdmMultiplex(signals, carrierFreqs, sampleRate, guardBand_Hz):
@@ -1959,15 +1959,15 @@ FUNCTION fdmDemultiplex(multiplexed, carrierFreq, sampleRate):
     RETURN LOW_PASS(demodulated, cutoffFreq)
 ```
 
-**Dry Run — FDM with 2 signals and guard bands:**
+**Dry Run â€” FDM with 2 signals and guard bands:**
 
 | Parameter | Signal 1 | Signal 2 |
 |-----------|----------|----------|
 | Baseband BW | 3 kHz | 3 kHz |
 | Carrier frequency | 10 kHz | 16 kHz |
 | Guard band | 0 kHz | 4 kHz |
-| Occupied band | 7–13 kHz | 13–19 kHz |
-| Total bandwidth needed | 19 − 7 = 12 kHz | |
+| Occupied band | 7â€“13 kHz | 13â€“19 kHz |
+| Total bandwidth needed | 19 âˆ’ 7 = 12 kHz | |
 
 **FDM A&D Table:**
 
@@ -1976,24 +1976,24 @@ FUNCTION fdmDemultiplex(multiplexed, carrierFreq, sampleRate):
 | Simple, mature technology | Guard bands waste spectrum |
 | Continuous transmission (no waiting) | Hardware filters drift with temperature |
 | Each channel isolated (no sharing jitter) | Limited number of channels (filter crosstalk) |
-| Works with analog signals directly | Fixed allocation — inefficient for bursty traffic |
+| Works with analog signals directly | Fixed allocation â€” inefficient for bursty traffic |
 
 ### 2.8.2 Time-Division Multiplexing (TDM)
 
 
 TDM interleaves bits or frames from multiple sources in time. Synchronous TDM: fixed time slots. Statistical TDM: demand-assigned slots.
 
-**Real-world analogy:** A rotating restaurant — each table (channel) gets a turn at the window view. In synchronous TDM, each table gets exactly 10 minutes regardless of whether anyone is seated. In statistical TDM, empty tables are skipped.
+**Real-world analogy:** A rotating restaurant â€” each table (channel) gets a turn at the window view. In synchronous TDM, each table gets exactly 10 minutes regardless of whether anyone is seated. In statistical TDM, empty tables are skipped.
 
 **Steps for synchronous TDM:**
 
 1. Determine number of input channels (N).
-2. Define frame length = N × slot duration.
+2. Define frame length = N Ã— slot duration.
 3. For each frame, read one unit (bit/byte) from each channel in round-robin order.
 4. Transmit the interleaved frame.
 5. At receiver, de-interleave by extracting channel data based on slot position.
 
-**Pseudocode — Synchronous TDM**
+**Pseudocode â€” Synchronous TDM**
 
 ```
 FUNCTION tdmMultiplex(channels, slotDuration_samples):
@@ -2009,7 +2009,7 @@ FUNCTION tdmMultiplex(channels, slotDuration_samples):
     RETURN frame
 ```
 
-**Dry Run — TDM with 3 channels, 4 samples per slot:**
+**Dry Run â€” TDM with 3 channels, 4 samples per slot:**
 
 | Frame | Slot 1 (Ch1) | Slot 2 (Ch2) | Slot 3 (Ch3) |
 |-------|-------------|-------------|-------------|
@@ -2019,7 +2019,7 @@ FUNCTION tdmMultiplex(channels, slotDuration_samples):
 
 If Ch2 has no data in frame 2 (synchronous): slots are still allocated (wasted).
 
-**Statistical TDM improvement:** Each slot carries a channel identifier. Empty channels are skipped. Header overhead: 1–2 bytes per slot for channel ID.
+**Statistical TDM improvement:** Each slot carries a channel identifier. Empty channels are skipped. Header overhead: 1â€“2 bytes per slot for channel ID.
 
 **TDM A&D Table:**
 
@@ -2035,7 +2035,7 @@ If Ch2 has no data in frame 2 (synchronous): slots are still allocated (wasted).
 
 WDM is FDM applied to optical fiber. Each wavelength (color) of light carries an independent data stream.
 
-**Real-world analogy:** A prism splitting white light into a rainbow. Each color in the rainbow is a separate data channel. WDM is like having 80 colored lasers all shining through the same fiber simultaneously — at the far end, a prism-like device separates them back into individual colors.
+**Real-world analogy:** A prism splitting white light into a rainbow. Each color in the rainbow is a separate data channel. WDM is like having 80 colored lasers all shining through the same fiber simultaneously â€” at the far end, a prism-like device separates them back into individual colors.
 
 **CWDM vs DWDM:**
 
@@ -2043,7 +2043,7 @@ WDM is FDM applied to optical fiber. Each wavelength (color) of light carries an
 |----------|------|------|
 | Channel spacing | 20 nm | 0.8 nm (100 GHz) or less |
 | Max channels | 18 (per ITU G.694.2) | 80+ (per ITU G.694.1) |
-| Wavelength range | 1271–1611 nm | C-band (1530–1565 nm) + L-band (1565–1625 nm) |
+| Wavelength range | 1271â€“1611 nm | C-band (1530â€“1565 nm) + L-band (1565â€“1625 nm) |
 | Laser cooling | Uncooled (cheaper) | Cooled (expensive, precise) |
 | Reach | ~80 km | ~2000 km with amplifiers |
 | Cost per lambda | Low | High |
@@ -2052,10 +2052,10 @@ WDM is FDM applied to optical fiber. Each wavelength (color) of light carries an
 **Steps for DWDM system design:**
 
 1. Determine aggregate capacity needed (e.g., 8 Tbps).
-2. Divide by per-channel rate (e.g., 100 Gbps) → 80 channels needed.
-3. Select DWDM grid (100 GHz → 0.8 nm spacing covers C-band).
-4. Specify optical amplifiers (EDFA) every 80–100 km.
-5. Add dispersion compensation modules every 400–500 km.
+2. Divide by per-channel rate (e.g., 100 Gbps) â†’ 80 channels needed.
+3. Select DWDM grid (100 GHz â†’ 0.8 nm spacing covers C-band).
+4. Specify optical amplifiers (EDFA) every 80â€“100 km.
+5. Add dispersion compensation modules every 400â€“500 km.
 6. Include optical add-drop multiplexers (OADMs) at intermediate sites.
 
 **WDM A&D Table:**
@@ -2065,7 +2065,7 @@ WDM is FDM applied to optical fiber. Each wavelength (color) of light carries an
 | Enormous aggregate capacity (Tbps per fiber) | Expensive optics (especially DWDM) |
 | No electronic processing per channel | Requires precise wavelength control |
 | Each channel operates independently | Amplifiers must cover entire band |
-| Scalable — add wavelengths as needed | Chromatic dispersion accumulates differently per λ |
+| Scalable â€” add wavelengths as needed | Chromatic dispersion accumulates differently per Î» |
 | Compatible with existing fiber plant | Raman crosstalk between channels at high power |
 
 ### 2.8.4 Code-Division Multiplexing (CDM)
@@ -2077,28 +2077,28 @@ CDM assigns each transmitter a unique spreading code. The transmitter multiplies
 
 **Steps for CDMA encoding:**
 
-1. Assign each user a unique orthogonal spreading code (chip sequence), e.g., (+1, −1, +1, −1).
+1. Assign each user a unique orthogonal spreading code (chip sequence), e.g., (+1, âˆ’1, +1, âˆ’1).
 2. For bit = 1: transmit the chip sequence as-is.
 3. For bit = 0: transmit the complement (negative) of the chip sequence.
 4. All users transmit simultaneously.
 5. Receiver multiplies the combined signal by the desired user's chip sequence and sums.
 
-**Mathematical example — 2 users:**
+**Mathematical example â€” 2 users:**
 
-User A code: (1, −1, 1, −1)
-User B code: (1, 1, −1, −1)
+User A code: (1, âˆ’1, 1, âˆ’1)
+User B code: (1, 1, âˆ’1, âˆ’1)
 
-User A sends bit 1: → (1, −1, 1, −1)
-User B sends bit 0: → (−1, −1, 1, 1)
-Combined signal: (0, −2, 2, 0)
+User A sends bit 1: â†’ (1, âˆ’1, 1, âˆ’1)
+User B sends bit 0: â†’ (âˆ’1, âˆ’1, 1, 1)
+Combined signal: (0, âˆ’2, 2, 0)
 
-To decode User A: multiply combined × User A code
-(0×1 + (−2)×(−1) + 2×1 + 0×(−1)) / 4 = (0 + 2 + 2 + 0) / 4 = 1 → bit 1
+To decode User A: multiply combined Ã— User A code
+(0Ã—1 + (âˆ’2)Ã—(âˆ’1) + 2Ã—1 + 0Ã—(âˆ’1)) / 4 = (0 + 2 + 2 + 0) / 4 = 1 â†’ bit 1
 
-To decode User B: multiply combined × User B code
-(0×1 + (−2)×1 + 2×(−1) + 0×(−1)) / 4 = (0 − 2 − 2 + 0) / 4 = −1 → bit 0 ✓
+To decode User B: multiply combined Ã— User B code
+(0Ã—1 + (âˆ’2)Ã—1 + 2Ã—(âˆ’1) + 0Ã—(âˆ’1)) / 4 = (0 âˆ’ 2 âˆ’ 2 + 0) / 4 = âˆ’1 â†’ bit 0 âœ“
 
-**Pseudocode — CDMA Encoder/Decoder**
+**Pseudocode â€” CDMA Encoder/Decoder**
 
 ```
 FUNCTION cdmaEncode(bits, chipSequence):
@@ -2141,12 +2141,12 @@ FUNCTION cdmaDecode(combinedSignal, chipSequence, chipsPerBit):
 | Guard needed | Guard bands | Guard time (between slots) | Guard band (nm spacing) | Orthogonal codes |
 | Synchronization | No (filters isolate) | Yes (frame sync) | No (passive mux/demux) | Yes (code sync) |
 | Scalability | Limited by filter crosstalk | Limited by slot count | 80+ (DWDM) | Soft (more users = more noise) |
-| Burst traffic handling | Poor (wasted BW) | Statistical TDM helps | Excellent (each λ independent) | Good (shared medium) |
+| Burst traffic handling | Poor (wasted BW) | Statistical TDM helps | Excellent (each Î» independent) | Good (shared medium) |
 | Hardware complexity | Low (filters) | Medium (switches) | High (precision lasers) | Very high (correlators) |
 | Bandwidth efficiency | Low (guard bands) | High (no guard overhead) | Very high (tight spacing) | Low (spreading expands BW) |
 | Typical use | Radio, TV, cable | SONET, T1/E1 | Long-haul fiber | 3G cellular (CDMA) |
 
-### 2.8.6 C++ Implementation — Multiplexer Simulation
+### 2.8.6 C++ Implementation â€” Multiplexer Simulation
 
 
 ```cpp
@@ -2270,7 +2270,7 @@ int main() {
 }
 ```
 
-### 2.8.7 Python Implementation — Multiplexer Simulator
+### 2.8.7 Python Implementation â€” Multiplexer Simulator
 
 
 ```python
@@ -2346,22 +2346,22 @@ if __name__ == "__main__":
 
     # Verify Walsh code orthogonality
     dot_ab = sum(ca * cb for ca, cb in zip(code_a, code_b))
-    print(f"\nOrthogonality check: A·B = {dot_ab} (0 = orthogonal)")
+    print(f"\nOrthogonality check: AÂ·B = {dot_ab} (0 = orthogonal)")
 ```
 
-**Complexity Analysis — Multiplexing:**
+**Complexity Analysis â€” Multiplexing:**
 
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
-| TDM multiplex | O(C × F) | O(C × F) | C channels, F frames, each slot visited once |
+| TDM multiplex | O(C Ã— F) | O(C Ã— F) | C channels, F frames, each slot visited once |
 | TDM demultiplex | O(N) | O(N) | Single pass: modulo distribution per slot |
-| FDM multiplex | O(C × N) | O(N) | Each channel's samples multiplied by carrier |
-| CDMA encode | O(B × K) | O(B × K) | B bits × K chips per bit |
-| CDMA decode | O(N) | O(B) | Correlation over all chips, N = B × K |
-| CDMA sum signals | O(C × N) | O(N) | Add C signals element-wise |
-| Walsh code generation | O(K²) | O(K²) | Recursive Hadamard matrix construction |
+| FDM multiplex | O(C Ã— N) | O(N) | Each channel's samples multiplied by carrier |
+| CDMA encode | O(B Ã— K) | O(B Ã— K) | B bits Ã— K chips per bit |
+| CDMA decode | O(N) | O(B) | Correlation over all chips, N = B Ã— K |
+| CDMA sum signals | O(C Ã— N) | O(N) | Add C signals element-wise |
+| Walsh code generation | O(KÂ²) | O(KÂ²) | Recursive Hadamard matrix construction |
 
-**Edge Cases — Multiplexing:**
+**Edge Cases â€” Multiplexing:**
 
 | Edge Case | Problem | Mitigation |
 |-----------|---------|------------|
@@ -2370,7 +2370,7 @@ if __name__ == "__main__":
 | Clock drift (TDM) | Sender/receiver frame misalignment | Stuffing bits, frame alignment words, PLL |
 | Filter drift (FDM) | Temperature changes shift filter passband | Temperature-controlled oscillators, pilot tones |
 | Four-wave mixing (WDM) | High-power channels generate intermodulation in fiber | Reduce per-channel power, uneven channel spacing |
-| Chromatic dispersion (WDM) | Different λs travel at different speeds | Dispersion compensation modules (DCM) |
+| Chromatic dispersion (WDM) | Different Î»s travel at different speeds | Dispersion compensation modules (DCM) |
 
 ## 2.9 Switching
 
@@ -2379,7 +2379,7 @@ if __name__ == "__main__":
 
 Circuit switching establishes a dedicated path between endpoints before data transmission begins. Resources along the path are reserved for the duration of the connection.
 
-**Real-world analogy:** Making a phone call. You dial, the network establishes a dedicated line, you talk, then hang up. The line is yours the whole time — even if you're silent, nobody else can use it.
+**Real-world analogy:** Making a phone call. You dial, the network establishes a dedicated line, you talk, then hang up. The line is yours the whole time â€” even if you're silent, nobody else can use it.
 
 **Steps:**
 
@@ -2387,16 +2387,16 @@ Circuit switching establishes a dedicated path between endpoints before data tra
 2. **Data transfer:** Data flows continuously along the reserved path.
 3. **Circuit teardown:** Either party signals disconnect. Switches release resources.
 
-**Dry Run — Circuit Switched Call Across 3 Switches:**
+**Dry Run â€” Circuit Switched Call Across 3 Switches:**
 
 | Time | Switch 1 | Switch 2 | Switch 3 | Action |
 |------|----------|----------|----------|--------|
 | 0 ms | Idle | Idle | Idle | Call request from A |
-| 5 ms | Port 1→3 reserved | — | — | S1 forwards request |
-| 10 ms | Port 1→3 | Port 2→4 reserved | — | S2 forwards |
-| 15 ms | Port 1→3 | Port 2→4 | Port 1→2 reserved | Ringing B |
-| 20 ms | — | — | — | B answers → data flows |
-| 100 s | — | — | — | Conversation (data) |
+| 5 ms | Port 1â†’3 reserved | â€” | â€” | S1 forwards request |
+| 10 ms | Port 1â†’3 | Port 2â†’4 reserved | â€” | S2 forwards |
+| 15 ms | Port 1â†’3 | Port 2â†’4 | Port 1â†’2 reserved | Ringing B |
+| 20 ms | â€” | â€” | â€” | B answers â†’ data flows |
+| 100 s | â€” | â€” | â€” | Conversation (data) |
 | 100 s + 50 ms | Release | Release | Release | Teardown |
 
 ### 2.9.2 Packet Switching
@@ -2407,9 +2407,9 @@ Packet switching breaks data into packets that travel independently through the 
 **Datagram (connectionless):** Each packet routed independently. Robust to failures; packets may arrive out of order.
 **Virtual circuit (connection-oriented):** Path established once; all packets follow it. MPLS uses this model.
 
-**Real-world analogy:** Mailing letters (datagram). Each letter goes through the postal system independently. Some may arrive out of order. A courier delivery (virtual circuit) — the courier drives the same route every time.
+**Real-world analogy:** Mailing letters (datagram). Each letter goes through the postal system independently. Some may arrive out of order. A courier delivery (virtual circuit) â€” the courier drives the same route every time.
 
-**Comparison — Circuit vs Packet:**
+**Comparison â€” Circuit vs Packet:**
 
 | Feature | Circuit Switching | Packet Switching (Datagram) |
 |---------|------------------|----------------------------|
@@ -2427,9 +2427,9 @@ Packet switching breaks data into packets that travel independently through the 
 
 Message switching forwards entire messages (potentially megabytes) from switch to switch without segmentation. Each switch stores the entire message before forwarding.
 
-**Real-world analogy:** A relay race where one runner carries the baton the entire way — he runs from start to first transfer point, hands off, then the next runner continues with the same baton.
+**Real-world analogy:** A relay race where one runner carries the baton the entire way â€” he runs from start to first transfer point, hands off, then the next runner continues with the same baton.
 
-**Comparison — All Switching Types:**
+**Comparison â€” All Switching Types:**
 
 | Property | Circuit | Packet (Datagram) | Packet (VC) | Message |
 |----------|---------|-------------------|-------------|---------|
@@ -2455,9 +2455,9 @@ The PSTN was originally designed for analog voice using circuit switching. Moder
 
 DSL enables broadband Internet over the same twisted-pair local loop used for telephone service. Uses frequency-division multiplexing:
 
-- **0–4 kHz:** Voice (POTS — Plain Old Telephone Service).
-- **25 kHz–138 kHz:** Upstream data.
-- **138 kHz–1.1 MHz:** Downstream data (ADSL).
+- **0â€“4 kHz:** Voice (POTS â€” Plain Old Telephone Service).
+- **25 kHzâ€“138 kHz:** Upstream data.
+- **138 kHzâ€“1.1 MHz:** Downstream data (ADSL).
 
 | DSL Variant | Max Downstream | Max Upstream | Max Distance |
 |-------------|---------------|-------------|-------------|
@@ -2466,7 +2466,7 @@ DSL enables broadband Internet over the same twisted-pair local loop used for te
 | VDSL2 | 100 Mbps | 100 Mbps (symmetric) | 500 m |
 | G.fast | 1 Gbps | 1 Gbps | 250 m |
 
-**A&D — DSL vs Fiber vs Cable:**
+**A&D â€” DSL vs Fiber vs Cable:**
 
 | Aspect | DSL | Cable (DOCSIS) | Fiber (GPON) |
 |--------|-----|----------------|--------------|
@@ -2474,7 +2474,7 @@ DSL enables broadband Internet over the same twisted-pair local loop used for te
 | Topology | Point-to-point | Shared bus (all subscribers in neighborhood) | Point-to-multipoint (splitter) |
 | Shared bandwidth | No (dedicated line) | Yes (neighborhood shares CMTS) | Yes (split ratio up to 1:64) |
 | Distance limit | 5.5 km (ADSL) | 100 km ring | 20 km from OLT |
-| Typical speed | 10–100 Mbps | 100–1000 Mbps | 100–1000 Mbps |
+| Typical speed | 10â€“100 Mbps | 100â€“1000 Mbps | 100â€“1000 Mbps |
 | Symmetry | Asymmetric dominant | Asymmetric | Symmetric (business) or asymmetric |
 
 ### 2.10.2 SONET/SDH
@@ -2484,14 +2484,14 @@ Synchronous Optical Networking (SONET) / Synchronous Digital Hierarchy (SDH) pro
 
 | SONET Rate | SDH Rate | Line Rate | Payload |
 |------------|----------|-----------|---------|
-| STS-1 / OC-1 | — | 51.84 Mbps | 50.112 Mbps (VT group) |
+| STS-1 / OC-1 | â€” | 51.84 Mbps | 50.112 Mbps (VT group) |
 | STS-3 / OC-3 | STM-1 | 155.52 Mbps | 150.336 Mbps |
 | STS-12 / OC-12 | STM-4 | 622.08 Mbps | 601.344 Mbps |
 | STS-48 / OC-48 | STM-16 | 2.488 Gbps | 2.405 Gbps |
 | STS-192 / OC-192 | STM-64 | 9.953 Gbps | 9.621 Gbps |
 | STS-768 / OC-768 | STM-256 | 39.813 Gbps | 38.486 Gbps |
 
-**SONET frame structure (STS-1, 125 µs, 810 bytes):**
+**SONET frame structure (STS-1, 125 Âµs, 810 bytes):**
 - Section overhead: 9 bytes (framing, error monitoring, orderwire).
 - Line overhead: 18 bytes (APS, line error, data channels).
 - Path overhead: 1 byte per column (trace, status, signal label).
@@ -2503,35 +2503,35 @@ Synchronous Optical Networking (SONET) / Synchronous Digital Hierarchy (SDH) pro
 
 
 **Nyquist Theorem (noiseless channel):**
-- Maximum bit rate = 2 × B × log₂(M)
+- Maximum bit rate = 2 Ã— B Ã— logâ‚‚(M)
 - Where B = bandwidth (Hz), M = number of signal levels.
-- Example: Channel with 3 kHz bandwidth, 8-level signaling: 2 × 3000 × log₂(8) = 2 × 3000 × 3 = 18,000 bps.
+- Example: Channel with 3 kHz bandwidth, 8-level signaling: 2 Ã— 3000 Ã— logâ‚‚(8) = 2 Ã— 3000 Ã— 3 = 18,000 bps.
 
 **Shannon Theorem (noisy channel):**
-- Maximum bit rate = B × log₂(1 + S/N)
+- Maximum bit rate = B Ã— logâ‚‚(1 + S/N)
 - Where S/N = signal-to-noise ratio (linear, not dB).
-- SNR_dB = 10 × log₁₀(S/N_linear).
+- SNR_dB = 10 Ã— logâ‚â‚€(S/N_linear).
 
 **Conversion:**
-- SNR_dB = 10 → S/N_linear = 10^(10/10) = 10.
-- Shannon capacity over 3 kHz channel with 10 dB SNR: 3000 × log₂(1 + 10) = 3000 × log₂(11) ≈ 3000 × 3.459 = 10,377 bps.
+- SNR_dB = 10 â†’ S/N_linear = 10^(10/10) = 10.
+- Shannon capacity over 3 kHz channel with 10 dB SNR: 3000 Ã— logâ‚‚(1 + 10) = 3000 Ã— logâ‚‚(11) â‰ˆ 3000 Ã— 3.459 = 10,377 bps.
 
-**Comparison — Nyquist vs Shannon:**
+**Comparison â€” Nyquist vs Shannon:**
 
 | Aspect | Nyquist | Shannon |
 |--------|---------|---------|
 | Channel model | Noiseless | Noisy (Additive White Gaussian Noise) |
-| Formula | 2B log₂(M) | B log₂(1 + S/N) |
+| Formula | 2B logâ‚‚(M) | B logâ‚‚(1 + S/N) |
 | Parameters | Bandwidth, signal levels | Bandwidth, SNR |
-| Example (3 kHz, 8 levels) | 18 kbps | — |
-| Example (3 kHz, 10 dB SNR) | — | ~10.4 kbps |
+| Example (3 kHz, 8 levels) | 18 kbps | â€” |
+| Example (3 kHz, 10 dB SNR) | â€” | ~10.4 kbps |
 | Practical limit | Hardware-limited (levels) | Physics-limited (noise floor) |
 | Relationship | Nyquist gives upper bound for given M | Shannon gives absolute upper bound regardless of M |
 
 **Q: Can 256-QAM on a 6 MHz cable channel (30 dB SNR) exceed the Shannon limit?**
 
-- Nyquist: 2 × 6e6 × log₂(256) = 2 × 6e6 × 8 = 96 Mbps.
-- Shannon: 6e6 × log₂(1 + 10^(30/10)) = 6e6 × log₂(1001) ≈ 6e6 × 9.97 = 59.8 Mbps.
+- Nyquist: 2 Ã— 6e6 Ã— logâ‚‚(256) = 2 Ã— 6e6 Ã— 8 = 96 Mbps.
+- Shannon: 6e6 Ã— logâ‚‚(1 + 10^(30/10)) = 6e6 Ã— logâ‚‚(1001) â‰ˆ 6e6 Ã— 9.97 = 59.8 Mbps.
 - Answer: 256-QAM (96 Mbps) exceeds Shannon limit for 30 dB SNR. Practical systems must reduce rate or use higher SNR. 64-QAM at 48 Mbps is achievable.
 
 ### TypeScript Implementation: ShannonCapacityCalculator
@@ -2540,7 +2540,7 @@ The following TypeScript class computes channel capacity using the Nyquist and S
 
 ```typescript
 /**
- * ShannonCapacityCalculator — Computes channel capacity using both
+ * ShannonCapacityCalculator â€” Computes channel capacity using both
  * Nyquist (noiseless) and Shannon (noisy) theorems.
  */
 interface CapacityResult {
@@ -2564,7 +2564,7 @@ class ShannonCapacityCalculator {
   }
 
   /**
-   * Nyquist capacity: C = 2B × log₂(M)
+   * Nyquist capacity: C = 2B Ã— logâ‚‚(M)
    * @param bandwidthHz - Channel bandwidth in Hz
    * @param levels - Number of signal levels (M)
    */
@@ -2573,7 +2573,7 @@ class ShannonCapacityCalculator {
   }
 
   /**
-   * Shannon capacity: C = B × log₂(1 + SNR)
+   * Shannon capacity: C = B Ã— logâ‚‚(1 + SNR)
    * @param bandwidthHz - Channel bandwidth in Hz
    * @param snrDb - Signal-to-noise ratio in dB
    */
@@ -2653,13 +2653,13 @@ The following TypeScript class computes baud rate, bit rate, overhead ratios, an
 
 ```typescript
 /**
- * BitRateCalculator — Computes baud rate, bit rate, overhead ratios,
+ * BitRateCalculator â€” Computes baud rate, bit rate, overhead ratios,
  * and explores signalling efficiency.
  */
 class BitRateCalculator {
   /**
    * Bit rate from baud rate and modulation order
-   * Bit rate = Baud rate × log₂(M)
+   * Bit rate = Baud rate Ã— logâ‚‚(M)
    */
   static bitRateFromBaud(baudRate: number, modulationLevels: number): number {
     return baudRate * Math.log2(modulationLevels);
@@ -2667,7 +2667,7 @@ class BitRateCalculator {
 
   /**
    * Baud rate from bit rate and modulation order
-   * Baud rate = Bit rate / log₂(M)
+   * Baud rate = Bit rate / logâ‚‚(M)
    */
   static baudFromBitRate(bitRate: number, modulationLevels: number): number {
     return bitRate / Math.log2(modulationLevels);
@@ -2676,7 +2676,7 @@ class BitRateCalculator {
   /** Compute overhead ratio for a given encoding scheme */
   static encodingOverhead(encodingName: string, dataBits: number, encodedBits: number): string {
     const ratio = (encodedBits - dataBits) / dataBits;
-    return `${encodingName}: ${dataBits}→${encodedBits} bits, overhead=${(ratio * 100).toFixed(1)}%`;
+    return `${encodingName}: ${dataBits}â†’${encodedBits} bits, overhead=${(ratio * 100).toFixed(1)}%`;
   }
 
   /**
@@ -2725,8 +2725,8 @@ BitRateCalculator.compareLinks();
 ```
 64-QAM at 2400 baud: 14400 bps
 To achieve 100 Mbps with QPSK: 50000000 baud
-4B/5B: 4→5 bits, overhead=25.0%
-8B/10B: 8→10 bits, overhead=25.0%
+4B/5B: 4â†’5 bits, overhead=25.0%
+8B/10B: 8â†’10 bits, overhead=25.0%
 
 === Effective Throughput Comparison ===
 Link Type                      | Raw Rate | Eff. Rate | Efficiency
@@ -2742,7 +2742,7 @@ LoRaWAN (51B frame)            | 0.05 Mbps | 0.04 Mbps | 79.7%
 
 **Q1: What is SNR and why does it matter?**
 
-SNR (Signal-to-Noise Ratio) measures signal power relative to noise power. Higher SNR allows higher-order modulation (more bits/symbol). As distance increases, signal attenuates → SNR drops → modulation falls back (e.g., 256-QAM → 16-QAM → BPSK).
+SNR (Signal-to-Noise Ratio) measures signal power relative to noise power. Higher SNR allows higher-order modulation (more bits/symbol). As distance increases, signal attenuates â†’ SNR drops â†’ modulation falls back (e.g., 256-QAM â†’ 16-QAM â†’ BPSK).
 
 **Q2: How does fiber achieve higher data rates than copper?**
 
@@ -2751,17 +2751,17 @@ Fiber has: (a) Higher bandwidth (~10 THz vs ~1 GHz for coax), (b) Lower attenuat
 **Q3: Calculate the maximum data rate over a 1 MHz channel with SNR = 20 dB.**
 
 SNR_linear = 10^(20/10) = 100.
-Capacity = 1e6 × log₂(1 + 100) = 1e6 × log₂(101) ≈ 1e6 × 6.66 = 6.66 Mbps.
+Capacity = 1e6 Ã— logâ‚‚(1 + 100) = 1e6 Ã— logâ‚‚(101) â‰ˆ 1e6 Ã— 6.66 = 6.66 Mbps.
 
 **Q4: If you need 100 Mbps over a 20 MHz channel, what minimum SNR is required?** 
 
-100e6 = 20e6 × log₂(1 + SNR)
-log₂(1 + SNR) = 5
+100e6 = 20e6 Ã— logâ‚‚(1 + SNR)
+logâ‚‚(1 + SNR) = 5
 1 + SNR = 32
 SNR = 31
-SNR_dB = 10 × log₁₀(31) ≈ 14.9 dB.
+SNR_dB = 10 Ã— logâ‚â‚€(31) â‰ˆ 14.9 dB.
 
-### Fiber vs Copper — Engineering Trade-offs
+### Fiber vs Copper â€” Engineering Trade-offs
 
 
 | Aspect | Fiber | Copper |
@@ -2771,8 +2771,8 @@ SNR_dB = 10 × log₁₀(31) ≈ 14.9 dB.
 | Attenuation | 0.2 dB/km at 1550 nm | 20 dB/100m at 100 MHz |
 | EMI immunity | Complete | Poor (STP helps) |
 | Tap difficulty | Hard (must cut fiber) | Easy (inductive tap) |
-| Power per port | 0.5–2 W (SFP+) | 0.5–1.5 W (PHY) |
-| Cost per Gbps | $10–$100 (SFP optics) | $1–$10 (copper PHY) |
+| Power per port | 0.5â€“2 W (SFP+) | 0.5â€“1.5 W (PHY) |
+| Cost per Gbps | $10â€“$100 (SFP optics) | $1â€“$10 (copper PHY) |
 | Installation difficulty | High (cleave, splice, polish) | Low (crimp RJ-45) |
 | Upgrade path | Change optics (same fiber) | Replace cable (higher Cat) |
 
@@ -2780,7 +2780,7 @@ SNR_dB = 10 × log₁₀(31) ≈ 14.9 dB.
 
 ## 2.12 Applications in Real Systems
 
-### Ethernet — 8B/10B and beyond
+### Ethernet â€” 8B/10B and beyond
 
 
 | Ethernet Standard | Speed | Encoding | Medium |
@@ -2791,34 +2791,34 @@ SNR_dB = 10 × log₁₀(31) ≈ 14.9 dB.
 | 1000BASE-SX | 1 Gbps | 8B/10B | MMF (850 nm) |
 | 10GBASE-SR | 10 Gbps | 64B/66B | MMF (850 nm) |
 | 10GBASE-T | 10 Gbps | DSQ128 (Tomlinson-Harashima precoding) | Cat 6a UTP |
-| 40GBASE-SR4 | 40 Gbps | 64B/66B (4×10G lanes) | MMF OM3/OM4 |
-| 100GBASE-LR4 | 100 Gbps | 4×25G WDM with 64B/66B | SMF (1310 nm, 4 λ) |
-| 400GBASE-LR8 | 400 Gbps | 8×50G PAM-4 | SMF, 8 λ |
+| 40GBASE-SR4 | 40 Gbps | 64B/66B (4Ã—10G lanes) | MMF OM3/OM4 |
+| 100GBASE-LR4 | 100 Gbps | 4Ã—25G WDM with 64B/66B | SMF (1310 nm, 4 Î») |
+| 400GBASE-LR8 | 400 Gbps | 8Ã—50G PAM-4 | SMF, 8 Î» |
 
-### Wi-Fi — OFDM Modulation
+### Wi-Fi â€” OFDM Modulation
 
 
 | Standard | Band | Modulation | Max Rate |
 |----------|------|-----------|----------|
 | 802.11a | 5 GHz | OFDM with BPSK/QPSK/16QAM/64QAM | 54 Mbps |
 | 802.11g | 2.4 GHz | OFDM | 54 Mbps |
-| 802.11n (Wi-Fi 4) | 2.4/5 GHz | OFDM with MIMO (4×4) and 64QAM | 600 Mbps |
+| 802.11n (Wi-Fi 4) | 2.4/5 GHz | OFDM with MIMO (4Ã—4) and 64QAM | 600 Mbps |
 | 802.11ac (Wi-Fi 5) | 5 GHz | OFDM with MU-MIMO and 256QAM | 3.47 Gbps |
 | 802.11ax (Wi-Fi 6) | 2.4/5/6 GHz | OFDMA with MU-MIMO and 1024QAM | 9.6 Gbps |
-| 802.11be (Wi-Fi 7) | 2.4/5/6 GHz | OFDMA with 16×16 MIMO and 4096QAM | 46 Gbps |
+| 802.11be (Wi-Fi 7) | 2.4/5/6 GHz | OFDMA with 16Ã—16 MIMO and 4096QAM | 46 Gbps |
 
 **OFDM (Orthogonal Frequency-Division Multiplexing):** Divides the channel into many orthogonal subcarriers (e.g., 52 for 802.11a, 234 for 802.11n 40 MHz). Each subcarrier is modulated independently (BPSK through 1024-QAM). Orthogonality eliminates guard bands between subcarriers, achieving high spectral efficiency.
 
-### DOCSIS — Cable Internet
+### DOCSIS â€” Cable Internet
 
 
 | Standard | Max Downstream | Max Upstream | Modulation | Channels |
 |----------|---------------|-------------|------------|----------|
-| DOCSIS 3.0 | 1 Gbps | 200 Mbps | 256QAM | 32×8 channel bonding |
+| DOCSIS 3.0 | 1 Gbps | 200 Mbps | 256QAM | 32Ã—8 channel bonding |
 | DOCSIS 3.1 | 10 Gbps | 1.5 Gbps | 4096QAM (OFDM) | Up to 192 MHz |
 | DOCSIS 4.0 | 10 Gbps | 6 Gbps | Low/high split, FDX | 1.8 GHz spectrum |
 
-### Cellular — From 2G to 5G
+### Cellular â€” From 2G to 5G
 
 
 | Generation | Technology | Modulation | Multiplexing | Peak Rate |
@@ -2837,8 +2837,8 @@ SNR_dB = 10 × log₁₀(31) ≈ 14.9 dB.
 | Desktop to wall jack | Cat 6a UTP | Cheap, easy, 10 Gbps to 100 m |
 | Server rack to ToR switch | Cat 8 or MMF OM4 | 40G/100G within rack |
 | Data center leaf-spine | MMF OM5 (SWDM) | 400G over 100 m |
-| Campus building connect | SMF OS2 | 10–400 Gbps over km |
-| Long-haul backbone | SMF with DWDM | 100 Gbps × 80 λ = 8 Tbps per fiber |
+| Campus building connect | SMF OS2 | 10â€“400 Gbps over km |
+| Long-haul backbone | SMF with DWDM | 100 Gbps Ã— 80 Î» = 8 Tbps per fiber |
 | Rural broadband (last mile) | Fixed wireless (5 GHz/60 GHz) | No trenching required |
 | Mobile phones | Cellular (4G/5G) | Mobility is the requirement |
 | IoT sensor (low power) | BLE, Zigbee, LoRaWAN | Battery life, range > rate |
@@ -2851,17 +2851,17 @@ SNR_dB = 10 × log₁₀(31) ≈ 14.9 dB.
 
 | Concept | Definition | Key Distinction | Use Case |
 |---------|-----------|-----------------|----------|
-| Twisted Pair | Two insulated wires twisted together | Category rating determines BW (Cat 5e → Cat 8) | LAN, DSL |
+| Twisted Pair | Two insulated wires twisted together | Category rating determines BW (Cat 5e â†’ Cat 8) | LAN, DSL |
 | Coaxial Cable | Copper conductor + shield + jacket | Higher noise immunity than UTP | Cable TV, broadband |
 | Optical Fiber | Light pulses through glass core by TIR | SMF: long-distance, MMF: short-distance | Backbone, data centers |
 | NRZ | Signal level = bit value | Simple but loses clock on long runs | RS-232, basic serial |
-| Manchester | Mid-bit transition encodes bit + clock | Self-clocking at 2× bandwidth cost | 10BASE-T Ethernet |
-| 8B/10B | 8-bit → 10-bit code; DC balanced | 25% overhead, excellent clock recovery | GigE, PCIe, SATA |
+| Manchester | Mid-bit transition encodes bit + clock | Self-clocking at 2Ã— bandwidth cost | 10BASE-T Ethernet |
+| 8B/10B | 8-bit â†’ 10-bit code; DC balanced | 25% overhead, excellent clock recovery | GigE, PCIe, SATA |
 | ASK | Amplitude varies with bit | Simple, noise-sensitive | RFID, optical |
 | FSK | Frequency varies with bit | Noise-immune, constant envelope | Bluetooth (GFSK) |
-| BPSK | Phase switches 180° | Most robust modulation | Satellite, deep space |
+| BPSK | Phase switches 180Â° | Most robust modulation | Satellite, deep space |
 | QPSK | 2 bits per symbol, 4 phases | Good balance of rate and robustness | Satellite TV, LTE |
-| QAM (16/64/256) | Combines amplitude + phase | High spectral efficiency (4–8 bps/Hz) | DOCSIS, Wi-Fi |
+| QAM (16/64/256) | Combines amplitude + phase | High spectral efficiency (4â€“8 bps/Hz) | DOCSIS, Wi-Fi |
 | Circuit Switching | Dedicated path reserved before data | Deterministic QoS, poor burst efficiency | Voice calls |
 | Packet Switching | Data segmented, routed independently | Statistical multiplexing, variable delay | Internet (IP) |
 | FDM | Signals assigned distinct frequency bands | Guard bands prevent interference | Radio/TV, cable Internet |
@@ -2873,26 +2873,26 @@ SNR_dB = 10 × log₁₀(31) ≈ 14.9 dB.
 
 | Category | Key Points |
 |----------|------------|
-| **Media Range** | UTP (100 m) → Coax (500 m) → MMF (550 m) → SMF (100+ km) |
-| **Wireless Spectrum** | Radio (3 kHz–300 GHz, through walls), Microwave (3–300 GHz, line-of-sight), IR (300 GHz+, room-limited) |
+| **Media Range** | UTP (100 m) â†’ Coax (500 m) â†’ MMF (550 m) â†’ SMF (100+ km) |
+| **Wireless Spectrum** | Radio (3 kHzâ€“300 GHz, through walls), Microwave (3â€“300 GHz, line-of-sight), IR (300 GHz+, room-limited) |
 | **Multiplexing Types** | FDM (frequency), TDM (time), WDM (wavelength), CDM (code) |
 | **Switching** | Circuit: setup, reserved, constant delay. Packet: no setup, shared, variable delay. Message: whole-file, high memory |
-| **Fiber Hierarchy** | STS-1 (51.84 Mbps) → STS-192 (10 Gbps) → STS-768 (40 Gbps) |
-| **Modulation Formula** | Bit rate = Baud rate × log₂(M). Capacity = B × log₂(1 + S/N) |
-| **Signal Encoding** | NRZ (1× BW), Manchester (2× BW, self-clocking), 4B/5B (1.25×), 8B/10B (1.25×, DC balanced) |
-| **Nyquist** | Max bit rate (noiseless) = 2B log₂(M) |
-| **Shannon** | Max bit rate (noisy) = B log₂(1 + S/N) |
+| **Fiber Hierarchy** | STS-1 (51.84 Mbps) â†’ STS-192 (10 Gbps) â†’ STS-768 (40 Gbps) |
+| **Modulation Formula** | Bit rate = Baud rate Ã— logâ‚‚(M). Capacity = B Ã— logâ‚‚(1 + S/N) |
+| **Signal Encoding** | NRZ (1Ã— BW), Manchester (2Ã— BW, self-clocking), 4B/5B (1.25Ã—), 8B/10B (1.25Ã—, DC balanced) |
+| **Nyquist** | Max bit rate (noiseless) = 2B logâ‚‚(M) |
+| **Shannon** | Max bit rate (noisy) = B logâ‚‚(1 + S/N) |
 
 ### Cross-Application Matrix
 
 | Concept | Network Engineering | Data Center Ops | Telecom | Embedded/IoT |
 |---------|-------------------|-----------------|---------|--------------|
-| Guided Media | Cable plant design | Fiber topology (MMF vs SMF) | Local loop provisioning | RS-485, I²C bus |
+| Guided Media | Cable plant design | Fiber topology (MMF vs SMF) | Local loop provisioning | RS-485, IÂ²C bus |
 | Wireless | Site survey, AP placement | N/A | Cell tower backhaul | BLE, Zigbee, LoRaWAN |
 | Multiplexing | Link aggregation (LACP) | CWDM/DWDM in fabric | SONET ring design | N/A |
 | Switching | Router/switch selection | Fabric design (CLOS topology) | PSTN call routing | N/A |
 | Modulation | Understanding line rates | N/A | DSL/CMTS provisioning | RF transceiver config |
-| Signal Encoding | PHY chip config | N/A | N/A | SPI, UART, I²C timing |
+| Signal Encoding | PHY chip config | N/A | N/A | SPI, UART, IÂ²C timing |
 
 ---
 
@@ -2902,7 +2902,7 @@ SNR_dB = 10 × log₁₀(31) ≈ 14.9 dB.
 |---|----------|---|---|---|---|--------|
 | 1 | Which UTP category supports 10 Gbps at 100 meters? | Cat 5e | Cat 6 | Cat 6a | Cat 8 | **C** |
 | 2 | What is the primary disadvantage of circuit switching? | Higher latency | Poor burst efficiency | Lower bandwidth | No QoS | **B** |
-| 3 | SMF attenuation = 0.2 dB/km. 50 km link, 3 dBm Tx → min Rx sensitivity? | −3 dBm | −7 dBm | −10 dBm | −17 dBm | **B** |
+| 3 | SMF attenuation = 0.2 dB/km. 50 km link, 3 dBm Tx â†’ min Rx sensitivity? | âˆ’3 dBm | âˆ’7 dBm | âˆ’10 dBm | âˆ’17 dBm | **B** |
 | 4 | 80 independent 100 Gbps channels on a single fiber uses which multiplexing? | FDM | TDM | DWDM | CDM | **C** |
 | 5 | 3 kHz line, SNR = 15 dB. Shannon capacity? | 3 kbps | 6 kbps | 12 kbps | 15 kbps | **D** |
 
@@ -2914,35 +2914,35 @@ SNR_dB = 10 × log₁₀(31) ≈ 14.9 dB.
 
 **Design Requirements:**
 - Aggregate backbone capacity: 400 Gbps
-- Maximum latency: 200 µs between any two buildings
+- Maximum latency: 200 Âµs between any two buildings
 - Future-proof for 800 Gbps without re-cabling
 
 **Solution:**
-1. **Media:** Existing SMF OS2 (9/125 µm) supports 400GBASE-LR8 over 1310 nm with 8 wavelengths of 50G PAM-4. Link budget: 6.3 dB over 10 km → well within 10 km reach.
+1. **Media:** Existing SMF OS2 (9/125 Âµm) supports 400GBASE-LR8 over 1310 nm with 8 wavelengths of 50G PAM-4. Link budget: 6.3 dB over 10 km â†’ well within 10 km reach.
 2. **Switching:** Replace L2 switches with 400G-capable leaf-spine. Each building gets dual 400G uplinks for redundancy.
-3. **Multiplexing:** DWDM with 40 channels × 10G → upgrade to 400G DWDM (8 × 50G per λ) using coherent optics.
+3. **Multiplexing:** DWDM with 40 channels Ã— 10G â†’ upgrade to 400G DWDM (8 Ã— 50G per Î») using coherent optics.
 
-**Outcome:** After upgrade, peak utilization dropped to 18 %. Latency between buildings measured at 47 µs (well below 200 µs target). The fiber plant lasted 10+ years with no change.
+**Outcome:** After upgrade, peak utilization dropped to 18 %. Latency between buildings measured at 47 Âµs (well below 200 Âµs target). The fiber plant lasted 10+ years with no change.
 
 ## Practical Takeaways
 
 | Takeaway | Application |
 |----------|------------|
-| Always compute the **link power budget** before selecting media | Use: `P_rx = P_tx - αL - connector_losses - margin` |
-| **SMF is future-proof** — your fiber plant should outlast three switch generations | Single-mode supports 400G, 800G, and likely 1.6T over the same glass |
-| **Nyquist and Shannon** give upper bounds; real systems have implementation margins | Leave 3–6 dB margin above the Shannon limit |
+| Always compute the **link power budget** before selecting media | Use: `P_rx = P_tx - Î±L - connector_losses - margin` |
+| **SMF is future-proof** â€” your fiber plant should outlast three switch generations | Single-mode supports 400G, 800G, and likely 1.6T over the same glass |
+| **Nyquist and Shannon** give upper bounds; real systems have implementation margins | Leave 3â€“6 dB margin above the Shannon limit |
 | **Multiplexing choice** depends on cost and scalability | DWDM for long-haul, OFDMA for Wi-Fi, TDM for legacy TDM networks |
-| **Media selection** is a 3-way trade (bandwidth, distance, cost) | UTP ≤ 100 m, MMF ≤ 550 m, SMF ≤ 120+ km |
+| **Media selection** is a 3-way trade (bandwidth, distance, cost) | UTP â‰¤ 100 m, MMF â‰¤ 550 m, SMF â‰¤ 120+ km |
 | **Higher-order QAM** needs proportional SNR increase | Every extra bit/symbol (doubling constellation) requires ~3 dB more SNR |
-| **Packet switching** dominates because of statistical multiplexing gain | For N bursty users, provision for √N × average (not N × peak) |
+| **Packet switching** dominates because of statistical multiplexing gain | For N bursty users, provision for âˆšN Ã— average (not N Ã— peak) |
 
 ## Summary
 
-The physical layer governs bit transmission over media. Analog signals are continuous and noise-susceptible; digital signals are discrete and noise-immune. Periodic signals can be decomposed via Fourier analysis, and composite signals are sums of multiple sine waves. Bandwidth, throughput, and latency determine network performance — the bandwidth-delay product governs optimal TCP window sizing.
+The physical layer governs bit transmission over media. Analog signals are continuous and noise-susceptible; digital signals are discrete and noise-immune. Periodic signals can be decomposed via Fourier analysis, and composite signals are sums of multiple sine waves. Bandwidth, throughput, and latency determine network performance â€” the bandwidth-delay product governs optimal TCP window sizing.
 
-Guided media — twisted pair, coaxial cable, and optical fiber — offer different trade-offs in bandwidth, distance, and cost. Wireless transmission using radio, microwave, or infrared enables mobile communication. Signal encoding (NRZ, Manchester, 4B/5B, 8B/10B) converts bits to line signals with varying clock recovery and DC balance properties. Modulation (ASK, FSK, PSK, QAM) maps bits to carrier waves; higher-order QAM achieves more bits per symbol but requires better SNR. Multiplexing techniques (FDM, TDM, WDM, CDM) share medium capacity among multiple users.
+Guided media â€” twisted pair, coaxial cable, and optical fiber â€” offer different trade-offs in bandwidth, distance, and cost. Wireless transmission using radio, microwave, or infrared enables mobile communication. Signal encoding (NRZ, Manchester, 4B/5B, 8B/10B) converts bits to line signals with varying clock recovery and DC balance properties. Modulation (ASK, FSK, PSK, QAM) maps bits to carrier waves; higher-order QAM achieves more bits per symbol but requires better SNR. Multiplexing techniques (FDM, TDM, WDM, CDM) share medium capacity among multiple users.
 
-The Nyquist theorem establishes the maximum data rate on a noiseless channel: 2B log₂(M). The Shannon theorem sets the absolute limit on a noisy channel: B log₂(1 + S/N). Circuit switching provides dedicated paths; packet switching achieves statistical multiplexing.
+The Nyquist theorem establishes the maximum data rate on a noiseless channel: 2B logâ‚‚(M). The Shannon theorem sets the absolute limit on a noisy channel: B logâ‚‚(1 + S/N). Circuit switching provides dedicated paths; packet switching achieves statistical multiplexing.
 
 ## Exercises
 
@@ -2951,15 +2951,15 @@ The Nyquist theorem establishes the maximum data rate on a noiseless channel: 2B
 <details>
 <summary>Solution Hints</summary>
 
-1. Twisting cancels external magnetic fields — each twist exposes equal area to opposite fields, inducing canceling currents.
+1. Twisting cancels external magnetic fields â€” each twist exposes equal area to opposite fields, inducing canceling currents.
 2. Cat 5e: 1 Gbps / 100 m. Cat 6: 10 Gbps / 55 m. Cat 6a: 10 Gbps / 100 m. Cat 7: 10 Gbps / 100 m (shielded). Cat 8: 40 Gbps / 30 m.
-3. Modal dispersion — different propagation modes arrive at different times, spreading the pulse. SMF eliminates this by using a single mode.
+3. Modal dispersion â€” different propagation modes arrive at different times, spreading the pulse. SMF eliminates this by using a single mode.
 4. FDM splits the spectrum into frequency bands (e.g., radio stations). TDM interleaves sources in time (e.g., SONET). Applications: FDM for cable TV, TDM for telephony backbone.
-5. Statistical multiplexing allocates capacity on demand. If each user is active only 10 % of the time, N users need ~N×10 % bandwidth, not N×100 %. For bursty traffic, this yields 3–10× efficiency gain.
+5. Statistical multiplexing allocates capacity on demand. If each user is active only 10 % of the time, N users need ~NÃ—10 % bandwidth, not NÃ—100 %. For bursty traffic, this yields 3â€“10Ã— efficiency gain.
 6. NRZ-L: level = bit (0 = low, 1 = high). NRZ-I: transition at start of 1, no change for 0. NRZ-I handles long 1 runs better (one transition per bit period).
-7. Manchester: 2× bandwidth, self-clocking (transition every bit). 4B/5B: 1.25× bandwidth, clock recovery via enough transitions in coded symbols.
-8. 8B/10B ensures equal number of 1s and 0s over time by selecting code words with disparity +2, 0, or −2.
-9. QPSK constellation: 4 points at 45°, 135°, 225°, 315° on the I-Q plane. 2 bits per symbol.
+7. Manchester: 2Ã— bandwidth, self-clocking (transition every bit). 4B/5B: 1.25Ã— bandwidth, clock recovery via enough transitions in coded symbols.
+8. 8B/10B ensures equal number of 1s and 0s over time by selecting code words with disparity +2, 0, or âˆ’2.
+9. QPSK constellation: 4 points at 45Â°, 135Â°, 225Â°, 315Â° on the I-Q plane. 2 bits per symbol.
 </details>
 
 ### Application Problems
@@ -2967,10 +2967,10 @@ The Nyquist theorem establishes the maximum data rate on a noiseless channel: 2B
 <details>
 <summary>Solution Hints</summary>
 
-10. Each 6 MHz channel at 8 bps/Hz → 48 Mbps per channel. 120 × 48 Mbps = 5.76 Gbps total.
-11. Total loss = 100 × 0.25 = 25 dB. Budget = 3 − (−20) = 23 dB — insufficient. Need one amplifier at 50 km providing 20 dB gain → final received power = 3 − 12.5 + 20 − 12.5 = −2 dBm (feasible).
-12. Circuit: setup 100 ms + (10 × 10⁶ × 8)/(100 × 10⁶) = 100 + 800 = 900 ms. Packet: setup 0, per-hop latency = packet_tx + prop. ~10 × (1500×8/10⁸) ≈ 10 × 120 µs = 1.2 ms + prop. Total ≈ 1.2 ms + small prop = much faster than circuit for short bursts.
-13. FSPL = 20log₁₀(100 m) + 20log₁₀(5.8×10⁹ Hz) − 147.55 = 40 + 75.3 − 147.55 = −32.25 dB ≈ 108 dB loss. P_rx = 20 − 108 + 2 + 2 = −84 dBm. Sensitivity −80 dBm → link not viable (need higher gain antennas or lower distance).
+10. Each 6 MHz channel at 8 bps/Hz â†’ 48 Mbps per channel. 120 Ã— 48 Mbps = 5.76 Gbps total.
+11. Total loss = 100 Ã— 0.25 = 25 dB. Budget = 3 âˆ’ (âˆ’20) = 23 dB â€” insufficient. Need one amplifier at 50 km providing 20 dB gain â†’ final received power = 3 âˆ’ 12.5 + 20 âˆ’ 12.5 = âˆ’2 dBm (feasible).
+12. Circuit: setup 100 ms + (10 Ã— 10â¶ Ã— 8)/(100 Ã— 10â¶) = 100 + 800 = 900 ms. Packet: setup 0, per-hop latency = packet_tx + prop. ~10 Ã— (1500Ã—8/10â¸) â‰ˆ 10 Ã— 120 Âµs = 1.2 ms + prop. Total â‰ˆ 1.2 ms + small prop = much faster than circuit for short bursts.
+13. FSPL = 20logâ‚â‚€(100 m) + 20logâ‚â‚€(5.8Ã—10â¹ Hz) âˆ’ 147.55 = 40 + 75.3 âˆ’ 147.55 = âˆ’32.25 dB â‰ˆ 108 dB loss. P_rx = 20 âˆ’ 108 + 2 + 2 = âˆ’84 dBm. Sensitivity âˆ’80 dBm â†’ link not viable (need higher gain antennas or lower distance).
 </details>
 
 ### Challenge Problem
@@ -2978,7 +2978,7 @@ The Nyquist theorem establishes the maximum data rate on a noiseless channel: 2B
 <details>
 <summary>Solution Hints</summary>
 
-14. **Design approach:** Aggregate peak = 10 buildings × 1000/10 users × 10 Mbps = 10 Gbps peak. With statistical multiplexing (10:1 oversubscription), provision ∼1 Gbps per building. Use SMF with 10GBASE-LR or DWDM (10 × 10G → 100G backbone). Leaf-spine topology with redundant links. Budget for 3–5 year growth.
+14. **Design approach:** Aggregate peak = 10 buildings Ã— 1000/10 users Ã— 10 Mbps = 10 Gbps peak. With statistical multiplexing (10:1 oversubscription), provision âˆ¼1 Gbps per building. Use SMF with 10GBASE-LR or DWDM (10 Ã— 10G â†’ 100G backbone). Leaf-spine topology with redundant links. Budget for 3â€“5 year growth.
 </details>
 
 ### Coding Exercises
@@ -2987,8 +2987,8 @@ The Nyquist theorem establishes the maximum data rate on a noiseless channel: 2B
 <details>
 <summary>Solution Hints</summary>
 
-15. Manchester: XOR bit with clock (1 → high-low, 0 → low-high). For 10110010, encode then decode by detecting mid-bit transitions.
-16. Shannon capacity function: `capacity(bandwidth, snr_db) { let snr = Math.pow(10, snr_db/10); return bandwidth * Math.log2(1 + snr); }` — call for SNR 0..50 in 5 dB steps.
-17. Assign each user an 8-bit Walsh code (orthogonal). Encode user_i bit b as b × code_i. Sum all encoded signals. Recover user_i by multiplying sum by code_i and summing (correlation).
+15. Manchester: XOR bit with clock (1 â†’ high-low, 0 â†’ low-high). For 10110010, encode then decode by detecting mid-bit transitions.
+16. Shannon capacity function: `capacity(bandwidth, snr_db) { let snr = Math.pow(10, snr_db/10); return bandwidth * Math.log2(1 + snr); }` â€” call for SNR 0..50 in 5 dB steps.
+17. Assign each user an 8-bit Walsh code (orthogonal). Encode user_i bit b as b Ã— code_i. Sum all encoded signals. Recover user_i by multiplying sum by code_i and summing (correlation).
 18. FDM: generate N carriers at spaced frequencies, modulate each with baseband signal (AM or QAM), sum, transmit. Demux: bandpass filter each carrier, demodulate.
 </details>

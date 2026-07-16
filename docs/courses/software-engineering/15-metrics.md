@@ -1,4 +1,4 @@
-# Software Metrics and Measurement
+﻿# Software Metrics and Measurement
 
 ## Learning Objectives
 
@@ -17,16 +17,16 @@ After completing this chapter, the student will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/15-metrics/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/software-engineering/15-metrics/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/15-metrics/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/software-engineering/15-metrics/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/15-metrics/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/software-engineering/15-metrics/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/15-metrics/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/software-engineering/15-metrics/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/15-metrics/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/software-engineering/15-metrics/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/15-metrics/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/software-engineering/15-metrics/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -36,7 +36,7 @@ After completing this chapter, the student will be able to:
 
 ### Why Measure Software?
 
-"If you cannot measure it, you cannot improve it." — Lord Kelvin
+"If you cannot measure it, you cannot improve it." â€” Lord Kelvin
 
 Software measurement serves four purposes:
 
@@ -98,7 +98,7 @@ graph TD
     Q3 --> M5[Metric: Defect latency (days)]
 ```
 
-**Detailed GQM Example — Improve Production Stability:**
+**Detailed GQM Example â€” Improve Production Stability:**
 
 | Level | Content |
 |-------|---------|
@@ -192,7 +192,7 @@ Extensions to McCabe's original metric:
 | Variant | Formula | Description |
 |---------|---------|-------------|
 | **Strict Cyclomatic** | M = E - N + 2 | For single-function graphs |
-| **Modified Cyclomatic** | M = π + 1 | Where π = number of predicates |
+| **Modified Cyclomatic** | M = Ï€ + 1 | Where Ï€ = number of predicates |
 | **Essential Cyclomatic** | M - m | Removes structured programming constructs |
 | **Design Complexity** | M_d = E_d - N_d + 2 | For the design structure graph |
 
@@ -202,15 +202,15 @@ Maurice Halstead's software science metrics measure program vocabulary and lengt
 
 | Metric | Formula | Meaning |
 |--------|---------|---------|
-| **n₁** | Unique operators | Program vocabulary richness |
-| **n₂** | Unique operands | Data complexity |
-| **N₁** | Total operators | Program length |
-| **N₂** | Total operands | Data usage |
-| **Vocabulary** | n = n₁ + n₂ | Total vocabulary |
-| **Length** | N = N₁ + N₂ | Program length |
-| **Volume** | V = N × log₂(n) | Program size in bits |
-| **Difficulty** | D = (n₁ / 2) × (N₂ / n₂) | How hard to write/understand |
-| **Effort** | E = D × V | Required mental effort |
+| **nâ‚** | Unique operators | Program vocabulary richness |
+| **nâ‚‚** | Unique operands | Data complexity |
+| **Nâ‚** | Total operators | Program length |
+| **Nâ‚‚** | Total operands | Data usage |
+| **Vocabulary** | n = nâ‚ + nâ‚‚ | Total vocabulary |
+| **Length** | N = Nâ‚ + Nâ‚‚ | Program length |
+| **Volume** | V = N Ã— logâ‚‚(n) | Program size in bits |
+| **Difficulty** | D = (nâ‚ / 2) Ã— (Nâ‚‚ / nâ‚‚) | How hard to write/understand |
+| **Effort** | E = D Ã— V | Required mental effort |
 | **Time (seconds)** | T = E / 18 | Time to implement |
 | **Delivered Bugs** | B = V / 3000 | Estimated bug count |
 
@@ -220,7 +220,7 @@ Maurice Halstead's software science metrics measure program vocabulary and lengt
 |--------|---------|-------------|
 | **Coupling Between Objects (CBO)** | Count of classes referenced | Higher = worse maintainability |
 | **Response for a Class (RFC)** | Count of methods that can be invoked | Higher = more complex |
-| **Lack of Cohesion (LCOM)** | (M - Σμ)/M where M = methods, μ = methods sharing fields | Higher = less cohesive |
+| **Lack of Cohesion (LCOM)** | (M - Î£Î¼)/M where M = methods, Î¼ = methods sharing fields | Higher = less cohesive |
 | **Depth of Inheritance (DIT)** | Length of inheritance chain | Higher = more complex testing |
 | **Number of Children (NOC)** | Count of immediate subclasses | Higher = more reuse potential |
 
@@ -229,7 +229,7 @@ Maurice Halstead's software science metrics measure program vocabulary and lengt
 The Maintainability Index (MI) combines four metrics:
 
 ```
-MI = 171 - 5.2 × ln(V) - 0.23 × (G) - 16.2 × ln(LOC) + 50 × sin(√(2.4 × CM))
+MI = 171 - 5.2 Ã— ln(V) - 0.23 Ã— (G) - 16.2 Ã— ln(LOC) + 50 Ã— sin(âˆš(2.4 Ã— CM))
 ```
 
 Where:
@@ -300,7 +300,7 @@ graph LR
 | **Process Compliance** | Audited process adherence | Discipline |
 | **Escaped Defects** | Production defects / Total defects | Quality of release process |
 
-### Project Metrics — Earned Value Management
+### Project Metrics â€” Earned Value Management
 
 Earned Value Management (EVM) integrates scope, schedule, and cost.
 
@@ -332,24 +332,24 @@ Defect prediction uses historical data and code metrics to forecast defect-prone
 **Defect Prediction Formula (Logistic Regression):**
 
 ```
-P(defect) = 1 / (1 + e^-(β₀ + β₁·complexity + β₂·churn + β₃·coverage + β₄·age))
+P(defect) = 1 / (1 + e^-(Î²â‚€ + Î²â‚Â·complexity + Î²â‚‚Â·churn + Î²â‚ƒÂ·coverage + Î²â‚„Â·age))
 ```
 
 #### Reliability Growth Models
 
 | Model | Formula | Use Case |
 |-------|---------|----------|
-| **Jelinski-Moranda** | λ(t) = φ(N - i + 1) | Early life testing |
-| **Goel-Okumoto** | μ(t) = a(1 - e^(-bt)) | Cumulative defects found |
-| **Musa-Okumoto** | μ(t) = a·ln(1 + bt) | Large systems |
+| **Jelinski-Moranda** | Î»(t) = Ï†(N - i + 1) | Early life testing |
+| **Goel-Okumoto** | Î¼(t) = a(1 - e^(-bt)) | Cumulative defects found |
+| **Musa-Okumoto** | Î¼(t) = aÂ·ln(1 + bt) | Large systems |
 | **Littlewood-Verral** | Bayesian approach | Uncertain environments |
 
 **Goel-Okumoto Model:**
 
-`μ(t) = a(1 - e^(-bt))`
+`Î¼(t) = a(1 - e^(-bt))`
 
 Where:
-- μ(t) = expected number of defects found by time t
+- Î¼(t) = expected number of defects found by time t
 - a = total expected defects
 - b = defect discovery rate
 
@@ -659,7 +659,7 @@ class QualityDashboard {
       '',
       'Gates:',
       ...latest.gates.map((g) =>
-        `  ${g.passed ? '✓' : '✗'} ${g.gate}: ${g.actual} (${g.passed ? 'pass' : 'FAIL'})`
+        `  ${g.passed ? 'âœ“' : 'âœ—'} ${g.gate}: ${g.actual} (${g.passed ? 'pass' : 'FAIL'})`
       ),
       '',
       'Metrics:',
@@ -824,7 +824,7 @@ class DefectMetricsAnalyzer {
     const phases: DefectPhase[] = ['requirements', 'design', 'implementation', 'testing', 'production'];
     return [
       'Phase Defect Report',
-      'Injected → Detected | Count | Containment',
+      'Injected â†’ Detected | Count | Containment',
       ...phases.map((injected) => {
         const injectedCount = this.defects.filter((d) => d.injectedPhase === injected).length;
         const detectedInPhase = this.defects.filter(
@@ -855,10 +855,10 @@ class DefectMetricsAnalyzer {
 - Customer callback rate per build
 
 **Key Insights:**
-- Components with churn > 20% had 3× higher defect density
+- Components with churn > 20% had 3Ã— higher defect density
 - Code review coverage > 85% correlated with 60% fewer post-release defects
 - Bug reopen rate > 5% indicated insufficient root cause analysis
-- Components with coupling > 10 dependencies had 4× higher maintenance cost
+- Components with coupling > 10 dependencies had 4Ã— higher maintenance cost
 
 **Outcomes:** Windows 7 had 50% fewer crashes than Windows Vista, achieved through data-driven quality gates that blocked components from shipping unless they met specific defect density and test coverage thresholds.
 
@@ -876,12 +876,12 @@ class DefectMetricsAnalyzer {
 | **Change Failure Rate** | 0-5% | 0-5% | 0-15% | 0-46% |
 
 **Key Insights:**
-- Elite performers deploy 208× more frequently than low performers
-- Lead time is 2,555× faster for elite performers
-- Change failure rate is 7× lower for elite performers
-- Time to restore is 2,604× faster
+- Elite performers deploy 208Ã— more frequently than low performers
+- Lead time is 2,555Ã— faster for elite performers
+- Change failure rate is 7Ã— lower for elite performers
+- Time to restore is 2,604Ã— faster
 
-**Outcomes:** DORA metrics became the industry standard for measuring DevOps effectiveness. Organisations that track and improve these metrics show 2× higher likelihood of achieving organisational performance goals.
+**Outcomes:** DORA metrics became the industry standard for measuring DevOps effectiveness. Organisations that track and improve these metrics show 2Ã— higher likelihood of achieving organisational performance goals.
 
 #### NASA Software Defect Prevention
 
@@ -895,11 +895,11 @@ class DefectMetricsAnalyzer {
 
 **Key Insights:**
 - 70% of defects were introduced in the requirements phase but only 30% were detected there
-- Code with complexity > 20 had 10× higher defect density
+- Code with complexity > 20 had 10Ã— higher defect density
 - Each hour of peer review prevented 4 hours of rework
 - Software with defect density > 1/KLOC was considered unacceptable for flight
 
-**Outcomes:** NASA's Space Shuttle software achieved a defect density of 0.01 per KLOC — one of the lowest ever recorded. The approach combined formal methods, rigorous peer review, comprehensive testing, and continuous measurement.
+**Outcomes:** NASA's Space Shuttle software achieved a defect density of 0.01 per KLOC â€” one of the lowest ever recorded. The approach combined formal methods, rigorous peer review, comprehensive testing, and continuous measurement.
 
 ## Summary
 
@@ -907,14 +907,14 @@ Software metrics provide quantitative data for describing, evaluating, predictin
 
 ## Practical Takeaways
 
-1. **Metrics are means, not ends** — measure to improve, not to judge
-2. **Never use a single metric in isolation** — each metric tells part of the story
-3. **GQM prevents vanity metrics** — always derive metrics from goals
-4. **Automate collection** — manual metrics are unreliable and unsustainable
-5. **Trends over thresholds** — a declining trend matters more than a single value
-6. **Share metrics transparently** — hidden metrics erode trust
-7. **Use DORA metrics** — deployment frequency, lead time, MTTR, change failure rate benchmark DevOps capability
-8. **EVM integrates scope, schedule, cost** — the best single-view project health indicator
+1. **Metrics are means, not ends** â€” measure to improve, not to judge
+2. **Never use a single metric in isolation** â€” each metric tells part of the story
+3. **GQM prevents vanity metrics** â€” always derive metrics from goals
+4. **Automate collection** â€” manual metrics are unreliable and unsustainable
+5. **Trends over thresholds** â€” a declining trend matters more than a single value
+6. **Share metrics transparently** â€” hidden metrics erode trust
+7. **Use DORA metrics** â€” deployment frequency, lead time, MTTR, change failure rate benchmark DevOps capability
+8. **EVM integrates scope, schedule, cost** â€” the best single-view project health indicator
 
 ## Chapter Quiz
 
@@ -924,7 +924,7 @@ Software metrics provide quantitative data for describing, evaluating, predictin
 - C) General, Quantitative, Measurement
 - D) Graded, Qualified, Measured
 
-**Answer: B** — GQM stands for Goal-Question-Metric, a structured approach to deriving metrics from goals.
+**Answer: B** â€” GQM stands for Goal-Question-Metric, a structured approach to deriving metrics from goals.
 
 **Q2: The Halstead complexity metric that represents the mental effort required to implement a program is:**
 - A) Volume
@@ -932,7 +932,7 @@ Software metrics provide quantitative data for describing, evaluating, predictin
 - C) Effort
 - D) Length
 
-**Answer: C** — Halstead Effort (E = D × V) represents the total mental effort required.
+**Answer: C** â€” Halstead Effort (E = D Ã— V) represents the total mental effort required.
 
 **Q3: A Maintainability Index score of 60 indicates:**
 - A) Highly maintainable
@@ -940,7 +940,7 @@ Software metrics provide quantitative data for describing, evaluating, predictin
 - C) Difficult to maintain
 - D) Cannot be maintained
 
-**Answer: B** — 65-85 is moderately maintainable; 60 is just below moderate threshold (difficult).
+**Answer: B** â€” 65-85 is moderately maintainable; 60 is just below moderate threshold (difficult).
 
 **Q4: Which metric measures the percentage of defects caught in the same phase they were introduced?**
 - A) Defect detection rate
@@ -948,7 +948,7 @@ Software metrics provide quantitative data for describing, evaluating, predictin
 - C) Defect density
 - D) Defect removal efficiency
 
-**Answer: B** — Phase containment ratio measures defects caught in their injection phase.
+**Answer: B** â€” Phase containment ratio measures defects caught in their injection phase.
 
 **Q5: A cyclomatic complexity value of 15 would be classified as:**
 - A) Low risk
@@ -956,7 +956,7 @@ Software metrics provide quantitative data for describing, evaluating, predictin
 - C) High risk
 - D) Untestable
 
-**Answer: B** — 11-20 is moderate risk.
+**Answer: B** â€” 11-20 is moderate risk.
 
 **Q6: In earned value management, a CPI of 0.8 means:**
 - A) Project is ahead of schedule
@@ -964,7 +964,7 @@ Software metrics provide quantitative data for describing, evaluating, predictin
 - C) Project is over budget
 - D) Project is on track
 
-**Answer: C** — CPI < 1 means cost overrun. CPI = EV/AC = 0.8 means earning 80 cents for every dollar spent.
+**Answer: C** â€” CPI < 1 means cost overrun. CPI = EV/AC = 0.8 means earning 80 cents for every dollar spent.
 
 **Q7: According to DORA, elite performers have a change failure rate of:**
 - A) 0-5%
@@ -972,7 +972,7 @@ Software metrics provide quantitative data for describing, evaluating, predictin
 - C) 11-20%
 - D) 21-40%
 
-**Answer: A** — Elite performers achieve 0-5% change failure rate, meaning deployments rarely cause incidents.
+**Answer: A** â€” Elite performers achieve 0-5% change failure rate, meaning deployments rarely cause incidents.
 
 ### TypeScript: Software Metrics Classes
 
@@ -1084,7 +1084,7 @@ class ComplexityAnalyzer {
     // Coupling
     const couplingCount = (sourceCode.match(/import\s+/g) ?? []).length;
 
-    // Cohesion (simplified — ratio of methods that use class fields)
+    // Cohesion (simplified â€” ratio of methods that use class fields)
     const classMethods = (sourceCode.match(/\w+\s*\([^)]*\)\s*{/g) ?? []).length;
     const fieldRefs = (sourceCode.match(/this\.\w+/g) ?? []).length;
     const cohesionScore = classMethods > 0 ? Math.min(1, fieldRefs / (classMethods * 2)) : 1;

@@ -1,7 +1,7 @@
-# Chapter 3: Network Security
+﻿# Chapter 3: Network Security
 
-> **Prereq:** Chapter 2 (Cryptography) → TLS, IPsec, and WPA2 rely on cryptographic algorithms.
-> **Next:** Chapter 4 (System Software Security) → host-based defenses complement network perimeter controls.
+> **Prereq:** Chapter 2 (Cryptography) â†’ TLS, IPsec, and WPA2 rely on cryptographic algorithms.
+> **Next:** Chapter 4 (System Software Security) â†’ host-based defenses complement network perimeter controls.
 
 ---
 
@@ -20,16 +20,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/cyber-security/03-network-security/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/cyber-security/03-network-security/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/03-network-security/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/cyber-security/03-network-security/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/cyber-security/03-network-security/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/cyber-security/03-network-security/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/03-network-security/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/cyber-security/03-network-security/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/cyber-security/03-network-security/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/cyber-security/03-network-security/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/03-network-security/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/cyber-security/03-network-security/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -41,16 +41,16 @@
 ## Table of Contents
 
 1. Introduction & OSI Model Security Map
-2. Firewalls → Packet Filter, Stateful, Proxy, NGFW, WAF
-3. IDS/IPS → Signature vs Anomaly, Snort/Suricata Rules
-4. Virtual Private Networks → IPsec, WireGuard, OpenVPN
-5. Network Segmentation → VLANs, DMZ, Micro-segmentation
-6. Protocol Security → DNS, DHCP, BGP, SNMP
-7. Wireless Security → WPA3, 802.1X, EAP, Rogue AP
+2. Firewalls â†’ Packet Filter, Stateful, Proxy, NGFW, WAF
+3. IDS/IPS â†’ Signature vs Anomaly, Snort/Suricata Rules
+4. Virtual Private Networks â†’ IPsec, WireGuard, OpenVPN
+5. Network Segmentation â†’ VLANs, DMZ, Micro-segmentation
+6. Protocol Security â†’ DNS, DHCP, BGP, SNMP
+7. Wireless Security â†’ WPA3, 802.1X, EAP, Rogue AP
 8. Network Access Control (NAC)
 9. DDoS Mitigation Strategies
 10. Zero Trust Networking
-11. Case Studies → WannaCry, Mirai, Stuxnet
+11. Case Studies â†’ WannaCry, Mirai, Stuxnet
 12. Practical Hands-On Lab
 13. Comparison Tables
 14. Applications in Real Systems
@@ -68,20 +68,20 @@ Network security must be applied at every layer of the OSI model. Each layer has
 
 | OSI Layer | Protocol Example | Common Threats | Security Controls |
 |-----------|-----------------|----------------|-------------------|
-| 7 → Application | HTTP, DNS, SMTP | SQL injection, XSS, DNS poisoning | WAF, DNSSEC, input validation |
-| 6 → Presentation | TLS/SSL | Weak cipher downgrade | Enforce TLS 1.2+ |
-| 5 → Session | SOCKS, RPC | Session hijacking | Token rotation, mTLS |
-| 4 → Transport | TCP, UDP | SYN flood, port scan | Stateful firewall, SYN cookies |
-| 3 → Network | IP, ICMP | IP spoofing, Smurf attack | ACLs, ingress filtering, IPsec |
-| 2 → Data Link | Ethernet, ARP | ARP spoofing, MAC flooding | Port security, Dynamic ARP Inspection |
-| 1 → Physical | Cables, RF | Tapping, rogue AP | 802.1X, port authentication |
+| 7 â†’ Application | HTTP, DNS, SMTP | SQL injection, XSS, DNS poisoning | WAF, DNSSEC, input validation |
+| 6 â†’ Presentation | TLS/SSL | Weak cipher downgrade | Enforce TLS 1.2+ |
+| 5 â†’ Session | SOCKS, RPC | Session hijacking | Token rotation, mTLS |
+| 4 â†’ Transport | TCP, UDP | SYN flood, port scan | Stateful firewall, SYN cookies |
+| 3 â†’ Network | IP, ICMP | IP spoofing, Smurf attack | ACLs, ingress filtering, IPsec |
+| 2 â†’ Data Link | Ethernet, ARP | ARP spoofing, MAC flooding | Port security, Dynamic ARP Inspection |
+| 1 â†’ Physical | Cables, RF | Tapping, rogue AP | 802.1X, port authentication |
 
 ### 1.2 CIA Triad in Network Context
 
 
-- **Confidentiality** → Encryption (TLS, IPsec), VPNs
-- **Integrity** → Hashing, digital signatures, HMAC
-- **Availability** → DDoS mitigation, redundant paths, load balancing
+- **Confidentiality** â†’ Encryption (TLS, IPsec), VPNs
+- **Integrity** â†’ Hashing, digital signatures, HMAC
+- **Availability** â†’ DDoS mitigation, redundant paths, load balancing
 
 ### 1.3 Defense-in-Depth (Layered Security)
 
@@ -89,23 +89,23 @@ Network security must be applied at every layer of the OSI model. Each layer has
 ```
 Internet
    |
-[WAF] → Application-layer filtering
+[WAF] â†’ Application-layer filtering
    |
-[NGFW] → Deep packet inspection, app control
+[NGFW] â†’ Deep packet inspection, app control
    |
-[IDS/IPS] → Threat detection and inline blocking
+[IDS/IPS] â†’ Threat detection and inline blocking
    |
-[VPN Gateway] → Encrypted tunnels
+[VPN Gateway] â†’ Encrypted tunnels
    |
-[DMZ] → Public-facing servers isolated
+[DMZ] â†’ Public-facing servers isolated
    |
-[Internal Firewall] → Segmentation between zones
+[Internal Firewall] â†’ Segmentation between zones
    |
 [Internal Network]
    |
-[NAC] → Endpoint compliance check
+[NAC] â†’ Endpoint compliance check
    |
-[Host Firewall + EDR] → Endpoint protection
+[Host Firewall + EDR] â†’ Endpoint protection
 ```
 
 ---
@@ -153,16 +153,16 @@ Step 6: Log and drop everything else
   iptables -A INPUT -j DROP
 ```
 
-**Dry Run → Packet Filter Decision:**
+**Dry Run â†’ Packet Filter Decision:**
 
 Consider an incoming TCP SYN packet: `src=10.0.0.5:54321, dst=192.168.1.1:80`
 
 ```
-Rule 1: -P INPUT DROP → default is drop
-Rule 2: -i lo? No (comes from eth0) → skip
-Rule 3: --state ESTABLISHED,RELATED? No (SYN is NEW) → skip
-Rule 4: -p tcp --dport 22? No (dport is 80) → skip
-Rule 5: -p tcp --dport 80? Yes → ACCEPT
+Rule 1: -P INPUT DROP â†’ default is drop
+Rule 2: -i lo? No (comes from eth0) â†’ skip
+Rule 3: --state ESTABLISHED,RELATED? No (SYN is NEW) â†’ skip
+Rule 4: -p tcp --dport 22? No (dport is 80) â†’ skip
+Rule 5: -p tcp --dport 80? Yes â†’ ACCEPT
 ```
 
 **Complexity:**
@@ -197,14 +197,14 @@ Rule 5: -p tcp --dport 80? Yes → ACCEPT
 | 10.0.0.5 | 52342 | 151.101.1.140 | 443 | TCP | TIME_WAIT |
 | 192.168.1.1 | 22 | 10.0.0.5 | 54321 | TCP | ESTABLISHED |
 
-**Dry Run → Stateful Decision for a Return Packet:**
+**Dry Run â†’ Stateful Decision for a Return Packet:**
 
 Incoming packet: `src=142.250.80.46:443, dst=10.0.0.5:52341`
 
 ```
-Lookup conntrack: {10.0.0.5:52341 → 142.250.80.46:443}
+Lookup conntrack: {10.0.0.5:52341 â†’ 142.250.80.46:443}
 Find match (direction reversed): YES
-State: ESTABLISHED → ALLOW
+State: ESTABLISHED â†’ ALLOW
 ```
 
 **nftables Equivalent (modern replacement for iptables):**
@@ -327,11 +327,11 @@ http_port 3128
 
 
 **How it works:** Combines traditional firewall capabilities with:
-- Deep Packet Inspection (DPI) → inspects payload beyond headers
-- Application Identification → recognizes apps regardless of port/protocol
-- User Identity Awareness → integrates with AD/LDAP
-- Encrypted Traffic Inspection → TLS/SSL decryption and inspection
-- Intrusion Prevention System (IPS) → inline threat blocking
+- Deep Packet Inspection (DPI) â†’ inspects payload beyond headers
+- Application Identification â†’ recognizes apps regardless of port/protocol
+- User Identity Awareness â†’ integrates with AD/LDAP
+- Encrypted Traffic Inspection â†’ TLS/SSL decryption and inspection
+- Intrusion Prevention System (IPS) â†’ inline threat blocking
 
 **NGFW vs Traditional Firewall:**
 
@@ -439,8 +439,8 @@ SecRule ARGS "@rx (?i:<script|javascript:|onload=|onerror=)" \
 ### 3.1 Overview
 
 
-**IDS (Intrusion Detection System):** Passive monitoring → generates alerts but does not block traffic.
-**IPS (Intrusion Prevention System):** Inline → automatically blocks malicious traffic.
+**IDS (Intrusion Detection System):** Passive monitoring â†’ generates alerts but does not block traffic.
+**IPS (Intrusion Prevention System):** Inline â†’ automatically blocks malicious traffic.
 
 **Real-World Analogy:** IDS is like a security camera that records everything and alerts when it sees something suspicious but cannot stop the event. IPS is like a security guard who stands at the door and physically stops threats from entering.
 
@@ -469,13 +469,13 @@ Example Snort Signature:
 Establishes a baseline of "normal" behavior and flags deviations.
 
 ```
-Example → Baseline:
+Example â†’ Baseline:
   Normal HTTP request rate: 100-500 req/min per IP
   Normal packet size: 40-1500 bytes
   Normal protocol distribution: 60% TCP, 30% UDP, 10% ICMP
 
 Anomaly Alert:
-  IP 10.0.0.9: 12,000 req/min → ANOMALY (2400% over baseline)
+  IP 10.0.0.9: 12,000 req/min â†’ ANOMALY (2400% over baseline)
 ```
 
 **ML-based anomaly detection** uses unsupervised learning (autoencoders, isolation forests) to detect outliers in network traffic features.
@@ -635,10 +635,10 @@ snort -T -c /etc/snort/snort.conf
 
 ```
 Do you need to block attacks in real time?
-├── Yes → Can your rules handle false positives?
-│   ├── Yes → Deploy IPS (inline)
-│   └── No → Deploy IDS first, tune rules, then IPS
-└── No → Deploy IDS (passive monitoring)
+â”œâ”€â”€ Yes â†’ Can your rules handle false positives?
+â”‚   â”œâ”€â”€ Yes â†’ Deploy IPS (inline)
+â”‚   â””â”€â”€ No â†’ Deploy IDS first, tune rules, then IPS
+â””â”€â”€ No â†’ Deploy IDS (passive monitoring)
 ```
 
 ### 3.6 HIDS vs NIDS
@@ -653,14 +653,14 @@ Do you need to block attacks in real time?
 | Visibility | All traffic on segment | All host activity |
 | Blind Spots | Encrypted traffic | Network-level attacks |
 
-### 3.7 Snort/Suricata → Live Detection Dry Run
+### 3.7 Snort/Suricata â†’ Live Detection Dry Run
 
 
 Scenario: A machine on the internal network attempts to connect to a known malware C2 domain (winmalware[.]xyz) on port 443.
 
 ```
 1. Packet arrives at Suricata interface
-2. Suricata parses TLS ClientHello → extracts SNI field: "winmalware[.]xyz"
+2. Suricata parses TLS ClientHello â†’ extracts SNI field: "winmalware[.]xyz"
 3. Suricata matches rule:
    alert tls $HOME_NET any -> $EXTERNAL_NET any
      (msg:"Known Malware C2 Domain";
@@ -682,7 +682,7 @@ Scenario: A machine on the internal network attempts to connect to a known malwa
      "dest_ip": "10.20.30.40",
      "proto": "TCP"
    }
-5. If inline (IPS mode): Suricata sends TCP RST to both sides → connection blocked
+5. If inline (IPS mode): Suricata sends TCP RST to both sides â†’ connection blocked
 ```
 
 ---
@@ -732,8 +732,8 @@ Individual users connect to corporate network.
 
 **Modes:**
 
-1. **Transport Mode:** Encrypts only payload (original IP header visible) → used for end-to-end
-2. **Tunnel Mode:** Encrypts entire packet, wraps in new IP header → used for site-to-site
+1. **Transport Mode:** Encrypts only payload (original IP header visible) â†’ used for end-to-end
+2. **Tunnel Mode:** Encrypts entire packet, wraps in new IP header â†’ used for site-to-site
 
 **IPsec Protocol Stack:**
 
@@ -748,15 +748,15 @@ Individual users connect to corporate network.
 IKE Phase 1 (Main Mode):
 Step 1: Initiator sends SA proposal (encryption, hash, DH group)
 Step 2: Responder selects matching SA
-Step 3: DH key exchange → shared secret
+Step 3: DH key exchange â†’ shared secret
 Step 4: Authentication (PSK or certificates)
-Result: ISAKMP SA (IKE SAs) → secure channel for negotiation
+Result: ISAKMP SA (IKE SAs) â†’ secure channel for negotiation
 
 IKE Phase 2 (Quick Mode):
 Step 1: Negotiate IPsec SA parameters (ESP/AH, crypto, SPI)
 Step 2: Generate session keys from Phase 1 keying material
 Step 3: Install IPsec SAs in kernel
-Result: ESP/AH SAs → secure tunnel for data
+Result: ESP/AH SAs â†’ secure tunnel for data
 ```
 
 **StrongSwan Configuration (Site-to-Site):**
@@ -938,11 +938,11 @@ Network segmentation divides a network into smaller logical or physical segments
 
 ```
 Switch Configuration:
-VLAN 10 → Management     (10.0.10.0/24)
-VLAN 20 → Users          (10.0.20.0/24)
-VLAN 30 → Servers        (10.0.30.0/24)
-VLAN 40 → DMZ            (10.0.40.0/24)
-VLAN 99 → Native/Untagged
+VLAN 10 â†’ Management     (10.0.10.0/24)
+VLAN 20 â†’ Users          (10.0.20.0/24)
+VLAN 30 â†’ Servers        (10.0.30.0/24)
+VLAN 40 â†’ DMZ            (10.0.40.0/24)
+VLAN 99 â†’ Native/Untagged
 ```
 
 **VLAN hopping attacks:**
@@ -985,11 +985,11 @@ A DMZ is a buffer network between the internet and internal network. Public-faci
 **Traffic Flow Rules:**
 
 ```
-External → DMZ: Allow HTTP/HTTPS to web server (port 80, 443)
-External → Internal: Deny all
-DMZ → Internal: Allow specific (e.g., DB queries on port 3306)
-Internal → DMZ: Allow management (SSH, RDP)
-DMZ → Internet: Allow updates (apt, yum)
+External â†’ DMZ: Allow HTTP/HTTPS to web server (port 80, 443)
+External â†’ Internal: Deny all
+DMZ â†’ Internal: Allow specific (e.g., DB queries on port 3306)
+Internal â†’ DMZ: Allow management (SSH, RDP)
+DMZ â†’ Internet: Allow updates (apt, yum)
 ```
 
 ### 5.4 Micro-Segmentation
@@ -1023,7 +1023,7 @@ spec:
       port: 5432
 ```
 
-This ensures ONLY pods labeled `api-server` can connect to `database` pods on port 5432 → all other traffic is blocked.
+This ensures ONLY pods labeled `api-server` can connect to `database` pods on port 5432 â†’ all other traffic is blocked.
 
 **Advantages & Disadvantages of Micro-Segmentation:**
 
@@ -1063,7 +1063,7 @@ DNSSEC adds digital signatures to DNS records:
 - NSEC/NSEC3: Authenticated denial of existence
 
 Chain of Trust:
-Root Zone → .com → example.com → www.example.com
+Root Zone â†’ .com â†’ example.com â†’ www.example.com
   (trust anchor) (DS record)    (DNSKEY)    (A + RRSIG)
 ```
 
@@ -1231,7 +1231,7 @@ Wireless networks use radio waves, which propagate through walls and are inheren
 - Man-in-the-middle (evil twin)
 - Denial of service (deauthentication attacks)
 
-**Real-World Analogy:** Wireless communication is like two people talking in a crowded room → anyone can listen. You need encryption (a secret language) and authentication (voice recognition) to keep conversations private.
+**Real-World Analogy:** Wireless communication is like two people talking in a crowded room â†’ anyone can listen. You need encryption (a secret language) and authentication (voice recognition) to keep conversations private.
 
 ### 7.2 WPA2 vs WPA3
 
@@ -1304,8 +1304,8 @@ airodump-ng wlan0
 # Expected output:
 # BSSID              PWR  Beacons    #Data, CH  MB   ENC  CIPHER AUTH ESSID
 # 00:11:22:33:44:55 -45   120        532    6   54e  WPA2 CCMP   PSK   Corporate-WiFi
-# AA:BB:CC:DD:EE:FF -30  5          0      11  54e  WPA2 CCMP   PSK   !FREE_WIFI!   ← ROUGE (stronger signal, unknown ESSID)
-# 66:77:88:99:AA:BB -65   45         0      1   54e  WPA2 CCMP   PSK   â‹¯
+# AA:BB:CC:DD:EE:FF -30  5          0      11  54e  WPA2 CCMP   PSK   !FREE_WIFI!   â† ROUGE (stronger signal, unknown ESSID)
+# 66:77:88:99:AA:BB -65   45         0      1   54e  WPA2 CCMP   PSK   Ã¢â€¹Â¯
 
 # 2. Check for APs with same SSID but different BSSID (evil twin)
 # Any SSID advertised by multiple BSSIDs should be investigated
@@ -1314,7 +1314,7 @@ airodump-ng wlan0
 # Rogue APs often bridge wireless to wired network
 # Use nmap to discover wired devices and cross-reference
 
-# 4. WIPS (Wireless IPS) → automated detection
+# 4. WIPS (Wireless IPS) â†’ automated detection
 # Cisco MSE, AirMagnet, or open-source Kismet
 kismet -c wlan0
 ```
@@ -1362,7 +1362,7 @@ Step 1: Both parties commit to a shared password-derived element
 Step 2: Each generates an ephemeral private key (random scalar)
 Step 3: Each sends commitment = H(password_identifier + scalar + element)
 Step 4: Each sends confirm = H(commitment + scalar + element)
-Step 5: On match → mutual authentication complete, PMK derived
+Step 5: On match â†’ mutual authentication complete, PMK derived
 
 Key properties:
 - No offline dictionary attack: attacker must commit before seeing response
@@ -1370,7 +1370,7 @@ Key properties:
 - Resistance to KRACK: different keys per session
 ```
 
-**OWE (Opportunistic Wireless Encryption) → RFC 8110:**
+**OWE (Opportunistic Wireless Encryption) â†’ RFC 8110:**
 
 For public Wi-Fi: each client gets a unique per-connection encryption key without needing a password.
 
@@ -1566,8 +1566,8 @@ Always-on detection + on-demand mitigation:
 
 
 ```
-User → Device Check → Identity Authentication → Context Evaluation → App Access
-                        ↓                          ↓
+User â†’ Device Check â†’ Identity Authentication â†’ Context Evaluation â†’ App Access
+                        â†“                          â†“
                 (OS patch, disk encrypted)    (geo, time, data sensitivity)
 
 No VPN required:
@@ -1591,11 +1591,11 @@ Step 7: Monitor continuously (logs, anomaly detection)
 ### 10.4 Zero Trust Edge Cases
 
 
-- **Legacy applications:** Cannot support modern auth (Kerberos/NTLM only) → need bastion/jump host
+- **Legacy applications:** Cannot support modern auth (Kerberos/NTLM only) â†’ need bastion/jump host
 - **Offline access:** Mobile users without connectivity need cached tokens with TTL limits
 - **Privileged access:** Admins need JIT (Just-In-Time) access with approval workflows
 - **Merger & acquisition:** Integrating another org's user base without full trust delegation
-- **Non-human identities:** Service accounts, cron jobs, Kubernetes pods → need workload identity
+- **Non-human identities:** Service accounts, cron jobs, Kubernetes pods â†’ need workload identity
 
 ---
 
@@ -1614,13 +1614,13 @@ Step 7: Monitor continuously (logs, anomaly detection)
 ```
 Infection Chain:
 1. User receives phishing email with malicious attachment (or internal propagation)
-2. Exploit: EternalBlue (MS17-010) → SMBv1 buffer overflow
+2. Exploit: EternalBlue (MS17-010) â†’ SMBv1 buffer overflow
    - Sends specially crafted SMB packet with malformed TRANS2 request
    - Overwrites kernel memory, executes shellcode
 3. Payload: DoublePulsar backdoor installed
 4. WannaCry ransomware delivered via DoublePulsar
 5. Encryption: AES-128 per-file + RSA-2048 for key protection
-6. Ransom note: $300 → $600 in Bitcoin within 3 days
+6. Ransom note: $300 â†’ $600 in Bitcoin within 3 days
 7. Propagation: Scans LAN for SMBv1 hosts (random IP generation)
    - Uses EternalBlue to infect each new host
    - Each infected host becomes a propagation node
@@ -1629,7 +1629,7 @@ Infection Chain:
 **Kill Switch:**
 ```
 WannaCry checked if malwaredomain[.]com domain was registered.
-If domain resolved → virus stopped.
+If domain resolved â†’ virus stopped.
 Researcher Marcus Hutchins (@MalwareTechBlog) registered domain.
 This activated the kill switch, halting global spread.
 ```
@@ -1680,7 +1680,7 @@ Infection Cycle:
 Attack Timeline (Krebs DDoS):
 Sep 20, 2016: 620 Gbps DDoS against KrebsOnSecurity
 Separately: 1.1 Tbps DDoS against OVH (French hosting provider)
-Oct 21, 2016: Dyn DNS attack (1.2 Tbps) → major internet platforms affected
+Oct 21, 2016: Dyn DNS attack (1.2 Tbps) â†’ major internet platforms affected
 ```
 
 **Source Code Release:**
@@ -1723,22 +1723,22 @@ alert tcp $EXTERNAL_NET any -> $HOME_NET 23
 
 ```
 Infection Chain:
-Phase 1 → Initial Infection:
+Phase 1 â†’ Initial Infection:
 1. Stuxnet introduced via infected USB drive by social engineering
-   (or compromised supply chain → contractor laptops)
+   (or compromised supply chain â†’ contractor laptops)
 
-Phase 2 → Propagation (internal network):
+Phase 2 â†’ Propagation (internal network):
 2. Exploits MS10-061 (Print Spooler) for local privilege escalation
 3. Exploits MS08-067 (Server Service) for network propagation
 4. Uses RPC to copy itself to other systems
-5. Exploits MS10-046 (Shortcut .LNK) → auto-executes via USB icon
+5. Exploits MS10-046 (Shortcut .LNK) â†’ auto-executes via USB icon
 
-Phase 3 → Target discovery:
+Phase 3 â†’ Target discovery:
 6. Looks for Siemens Step 7 software (used to program PLCs)
 7. If not found: stays dormant, continues spreading
 8. If found: extracts, decompresses, and installs rootkit components
 
-Phase 4 → PLC sabotage:
+Phase 4 â†’ PLC sabotage:
 9. Modifies PLC code via Step 7 software (using stolen Siemens certificates)
 10. Two attack profiles:
     Attack A: Increase centrifuge rotor speed to 1,410 Hz (destructive vibration)
@@ -1778,7 +1778,7 @@ Phase 4 → PLC sabotage:
 
 All labs below assume a Kali Linux or Ubuntu system. For Windows users, use WSL2 with Ubuntu.
 
-### 12.2 iptables/nftables → Basic Firewall Implementation
+### 12.2 iptables/nftables â†’ Basic Firewall Implementation
 
 
 **Scenario:** Build a stateful firewall for a web server that allows SSH from management, HTTP/HTTPS to everyone, and blocks all other traffic.
@@ -1885,7 +1885,7 @@ curl -I http://192.168.1.1
 # Expected: HTTP/1.1 200 OK
 ```
 
-### 12.3 Nmap → Service Detection, OS Fingerprinting, NSE Scripts
+### 12.3 Nmap â†’ Service Detection, OS Fingerprinting, NSE Scripts
 
 
 ```bash
@@ -1959,7 +1959,7 @@ Windows: TTL=128, Window=65535, MSS=1460, WS=8, TSval freq=100ms
 Cisco IOS: TTL=255, Window=4128, No TS, No WS
 ```
 
-### 12.4 Wireshark/tshark → Deep Packet Inspection
+### 12.4 Wireshark/tshark â†’ Deep Packet Inspection
 
 
 ```bash
@@ -1967,11 +1967,11 @@ Cisco IOS: TTL=255, Window=4128, No TS, No WS
 tshark -i eth0 -f "tcp port 80" -c 100
 
 # Expected output (abbreviated):
-# 1   0.000000  192.168.1.100 → 93.184.216.34  TCP 74 52342 → 80 [SYN] Seq=0
-# 2   0.042000  93.184.216.34 → 192.168.1.100 TCP 74 80 → 52342 [SYN, ACK] Seq=0 Ack=1
-# 3   0.042100  192.168.1.100 → 93.184.216.34  TCP 66 52342 → 80 [ACK] Seq=1 Ack=1
-# 4   0.042500  192.168.1.100 → 93.184.216.34  HTTP 145 GET / HTTP/1.1
-# 5   0.085000  93.184.216.34 → 192.168.1.100  TCP 66 80 → 52342 [ACK] Seq=1 Ack=80
+# 1   0.000000  192.168.1.100 â†’ 93.184.216.34  TCP 74 52342 â†’ 80 [SYN] Seq=0
+# 2   0.042000  93.184.216.34 â†’ 192.168.1.100 TCP 74 80 â†’ 52342 [SYN, ACK] Seq=0 Ack=1
+# 3   0.042100  192.168.1.100 â†’ 93.184.216.34  TCP 66 52342 â†’ 80 [ACK] Seq=1 Ack=1
+# 4   0.042500  192.168.1.100 â†’ 93.184.216.34  HTTP 145 GET / HTTP/1.1
+# 5   0.085000  93.184.216.34 â†’ 192.168.1.100  TCP 66 80 â†’ 52342 [ACK] Seq=1 Ack=80
 
 # 2. Follow TCP stream
 tshark -i eth0 -z follow,tcp,ascii,0
@@ -1994,16 +1994,16 @@ tshark -r capture.pcap -Y "tls.handshake.type == 1" -T fields -e tls.handshake.e
 **Wirehsark GUI Workflow for Attack Investigation:**
 
 ```
-1. Open capture file: File → Open
+1. Open capture file: File â†’ Open
 2. Apply filter: http.request or tls.handshake.type == 1
-3. Follow TCP stream on suspicious connection: Right-click → Follow → TCP Stream
-4. Export objects: File → Export Objects → HTTP/SMB
-5. Statistics → Protocol Hierarchy (understand traffic composition)
-6. Statistics → Conversations (top talkers)
-7. Analyze → Expert Information (automatic anomaly detection)
+3. Follow TCP stream on suspicious connection: Right-click â†’ Follow â†’ TCP Stream
+4. Export objects: File â†’ Export Objects â†’ HTTP/SMB
+5. Statistics â†’ Protocol Hierarchy (understand traffic composition)
+6. Statistics â†’ Conversations (top talkers)
+7. Analyze â†’ Expert Information (automatic anomaly detection)
 ```
 
-### 12.5 tcpdump → Packet Capture and Analysis
+### 12.5 tcpdump â†’ Packet Capture and Analysis
 
 
 ```bash
@@ -2056,7 +2056,7 @@ tcpdump -i eth0 -n "tcp[13] & 2 != 0 and tcp[13] & 16 == 0"
 # 12:00:01.003 IP 10.0.0.1.10003 > 10.0.0.1.80: Flags [S], seq 4000  (spoofed source)
 # 12:00:01.004 IP 192.168.1.103.10004 > 10.0.0.1.80: Flags [S], seq 5000
 # ...
-# 1000+ SYN packets per second, no ACKs returning → SYN flood confirmed
+# 1000+ SYN packets per second, no ACKs returning â†’ SYN flood confirmed
 ```
 
 ### 12.6 OpenVPN Setup
@@ -2183,7 +2183,7 @@ wg show
 #   transfer: 42.5 KiB received, 128.3 KiB sent
 ```
 
-### 12.8 ZAP Proxy → Web Traffic Inspection
+### 12.8 ZAP Proxy â†’ Web Traffic Inspection
 
 
 ```bash
@@ -2240,7 +2240,7 @@ python3 zap-scan.py
 #   [Low] Web Browser XSS Protection Not Enabled - http://testphp.vulnweb.com/
 ```
 
-### 12.9 BetterCAP → ARP Spoofing Detection
+### 12.9 BetterCAP â†’ ARP Spoofing Detection
 
 
 ```bash
@@ -2258,12 +2258,12 @@ sudo bettercap -eval "set arp.spoof.targets 192.168.1.100; arp.spoof on; net.sni
 # 1. Check ARP cache
 arp -a
 # Expected:
-# 192.168.1.1 at 00:11:22:33:44:55 [ether] on eth0  ← gateway MAC
+# 192.168.1.1 at 00:11:22:33:44:55 [ether] on eth0  â† gateway MAC
 # 
 # ARP spoofing indicator (two entries for same IP):
 # ? (192.168.1.1) at AA:BB:CC:DD:EE:FF on eth0
 # ? (192.168.1.1) at 00:11:22:33:44:55 on eth0
-# Duplicate entries → ARP spoofing detected
+# Duplicate entries â†’ ARP spoofing detected
 
 # 2. Detection with arpwatch
 arpwatch -i eth0
@@ -2275,7 +2275,7 @@ arpwatch -i eth0
 arp -s 192.168.1.1 00:11:22:33:44:55
 ```
 
-### 12.10 Airodump/aireplay → Wireless Testing
+### 12.10 Airodump/aireplay â†’ Wireless Testing
 
 
 ```bash
@@ -2420,7 +2420,7 @@ Enterprise NGFW with:
 
 
 ```
-Client → Cloudflare Edge (Anycast) → Origin Server
+Client â†’ Cloudflare Edge (Anycast) â†’ Origin Server
 
 At edge:
 - L3/L4: Packet scrubbing (invalid packets dropped)
@@ -2433,8 +2433,8 @@ At edge:
 
 
 ```
-User → Device Check → Identity Provider → Context Policy → App Access
-   ↓                     ↓
+User â†’ Device Check â†’ Identity Provider â†’ Context Policy â†’ App Access
+   â†“                     â†“
   Workspace ONE      Azure AD Conditional Access
   (device compliance) (MFA, risk score)
 
@@ -2470,12 +2470,12 @@ so-status
 #   wazuh-manager: running
 
 # Query alerts in Kibana
-# Discover → index: so-* → filter: event_type:alert
+# Discover â†’ index: so-* â†’ filter: event_type:alert
 ```
 
 ---
 
-## Section 15: Interview Corner → 15 Q&As
+## Section 15: Interview Corner â†’ 15 Q&As
 
 ### Q1: What is the difference between a stateful and stateless firewall?
 
@@ -2500,7 +2500,7 @@ so-status
 ### Q5: What is the WPA3-Personal improvement over WPA2-Personal?
 
 
-**A5:** WPA2 uses a 4-Way Handshake with PSK. An attacker can capture this handshake and crack the password offline. WPA3 uses SAE (Simultaneous Authentication of Equals, based on Dragonfly handshake). SAE provides forward secrecy and requires the attacker to interact with a real Wi-Fi AP for each password guess → offline brute-force is not possible. WPA3 also mandates Protected Management Frames (802.11w) to prevent deauthentication attacks, uses 256-bit AES-GCMP encryption, and provides OWE for public Wi-Fi encryption without a password.
+**A5:** WPA2 uses a 4-Way Handshake with PSK. An attacker can capture this handshake and crack the password offline. WPA3 uses SAE (Simultaneous Authentication of Equals, based on Dragonfly handshake). SAE provides forward secrecy and requires the attacker to interact with a real Wi-Fi AP for each password guess â†’ offline brute-force is not possible. WPA3 also mandates Protected Management Frames (802.11w) to prevent deauthentication attacks, uses 256-bit AES-GCMP encryption, and provides OWE for public Wi-Fi encryption without a password.
 
 ### Q6: What is the KRACK attack?
 
@@ -2530,7 +2530,7 @@ so-status
 ### Q11: Describe the WannaCry infection chain.
 
 
-**A11:** (1) Initial infection via phishing or internal propagation. (2) EternalBlue exploit (MS17-010) targets SMBv1 buffer overflow → attacker crafts a malformed SMB TRANS2 request, overwrites kernel memory, and gains remote code execution. (3) DoublePulsar backdoor installed via the EternalBlue shellcode. (4) WannaCry ransomware delivered through DoublePulsar. (5) Each file encrypted with AES-128 key, then AES key encrypted with RSA-2048 public key. (6) Propagation: WannaCry scans LAN IPs for SMBv1 hosts and repeats EternalBlue exploitation. (7) Exponential spread across flat networks (NHS worst affected). (8) Kill switch: checked malwaredomain[.]com → when Marcus Hutchins registered the domain, the malware stopped spreading.
+**A11:** (1) Initial infection via phishing or internal propagation. (2) EternalBlue exploit (MS17-010) targets SMBv1 buffer overflow â†’ attacker crafts a malformed SMB TRANS2 request, overwrites kernel memory, and gains remote code execution. (3) DoublePulsar backdoor installed via the EternalBlue shellcode. (4) WannaCry ransomware delivered through DoublePulsar. (5) Each file encrypted with AES-128 key, then AES key encrypted with RSA-2048 public key. (6) Propagation: WannaCry scans LAN IPs for SMBv1 hosts and repeats EternalBlue exploitation. (7) Exponential spread across flat networks (NHS worst affected). (8) Kill switch: checked malwaredomain[.]com â†’ when Marcus Hutchins registered the domain, the malware stopped spreading.
 
 ### Q12: How does Mirai infect IoT devices?
 
@@ -2550,7 +2550,7 @@ so-status
 ### Q15: How does zero trust differ from traditional perimeter security?
 
 
-**A15:** Traditional perimeter security operates on "trust but verify" → once inside the network, users and devices are trusted. This leads to flat networks where lateral movement is easy after initial compromise. Zero Trust operates on "never trust, always verify" → no entity is trusted by default regardless of location. Every access request is authenticated, authorized, and encrypted. Key differences: micro-segmentation replaces VLANs, identity replaces IP addresses as the security primitive, device posture is checked before access, and all traffic is encrypted regardless of network boundary.
+**A15:** Traditional perimeter security operates on "trust but verify" â†’ once inside the network, users and devices are trusted. This leads to flat networks where lateral movement is easy after initial compromise. Zero Trust operates on "never trust, always verify" â†’ no entity is trusted by default regardless of location. Every access request is authenticated, authorized, and encrypted. Key differences: micro-segmentation replaces VLANs, identity replaces IP addresses as the security primitive, device posture is checked before access, and all traffic is encrypted regardless of network boundary.
 
 ---
 
@@ -2564,7 +2564,7 @@ so-status
 - **Wireless Security:** WPA3 with SAE defeats offline brute-force, 802.1X/EAP-TLS for enterprise, OWE for public Wi-Fi
 - **NAC:** 802.1X with posture assessment, quarantine non-compliant devices
 - **DDoS:** Rate limiting, SYN cookies, Anycast CDN, Cloud scrubbing
-- **Zero Trust:** Never trust, always verify → identity-driven, micro-segmented, encrypted-everywhere
+- **Zero Trust:** Never trust, always verify â†’ identity-driven, micro-segmented, encrypted-everywhere
 - **Case Studies:** WannaCry (SMB exploit + worm propagation + kill switch), Mirai (IoT default creds + massive DDoS), Stuxnet (4 zero-days + air-gap breach + PLC sabotage)
 
 ---
@@ -2584,21 +2584,21 @@ Layer 4 (Transport). A stateful firewall tracks TCP connection state (SYN, SYN-A
 
 <details>
 <summary>Solution</summary>
-Signature-based IDS cannot detect novel (zero-day) attacks — it only matches known patterns. Anomaly-based IDS establishes a baseline of normal traffic and flags deviations, enabling detection of unknown attacks. However, anomaly-based has higher false positive rates.
+Signature-based IDS cannot detect novel (zero-day) attacks â€” it only matches known patterns. Anomaly-based IDS establishes a baseline of normal traffic and flags deviations, enabling detection of unknown attacks. However, anomaly-based has higher false positive rates.
 </details>
 
 3. Explain how WPA3 SAE prevents offline dictionary attacks against Wi-Fi passwords.
 
 <details>
 <summary>Solution</summary>
-WPA3 SAE (Simultaneous Authentication of Equals) uses a zero-knowledge proof (Dragonfly handshake). Both parties prove knowledge of the password without revealing it. An attacker cannot capture the handshake and crack the password offline — each guess requires interaction with the real AP.
+WPA3 SAE (Simultaneous Authentication of Equals) uses a zero-knowledge proof (Dragonfly handshake). Both parties prove knowledge of the password without revealing it. An attacker cannot capture the handshake and crack the password offline â€” each guess requires interaction with the real AP.
 </details>
 
 4. What is the difference between a VPN tunnel mode and transport mode?
 
 <details>
 <summary>Solution</summary>
-Transport mode encrypts only the payload (L4+), keeping the original IP header visible — used for end-to-end (host-to-host). Tunnel mode encrypts the entire original IP packet and encapsulates it in a new IP header — used for site-to-site (gateway-to-gateway) VPNs.
+Transport mode encrypts only the payload (L4+), keeping the original IP header visible â€” used for end-to-end (host-to-host). Tunnel mode encrypts the entire original IP packet and encapsulates it in a new IP header â€” used for site-to-site (gateway-to-gateway) VPNs.
 </details>
 
 5. How does ARP spoofing work? List three detection/prevention techniques.
@@ -2619,7 +2619,7 @@ Resource Public Key Infrastructure (RPKI) uses digitally signed route origin aut
 
 <details>
 <summary>Solution</summary>
-Micro-segmentation divides the network into isolated zones at the workload level (per-VM, per-container, per-pod). Each workload has a whitelist of allowed connections. In Kubernetes, Network Policies enforce this — default-deny ingress/egress with allow rules based on labels, namespaces, and ports.
+Micro-segmentation divides the network into isolated zones at the workload level (per-VM, per-container, per-pod). Each workload has a whitelist of allowed connections. In Kubernetes, Network Policies enforce this â€” default-deny ingress/egress with allow rules based on labels, namespaces, and ports.
 </details>
 
 ### Application Problems
@@ -2665,11 +2665,11 @@ WireGuard is recommended for modern site-to-site: faster (kernel-level, ~4k line
 <details>
 <summary>Solution</summary>
 ```
-VLAN 20 → Internet: allow (NAT)
-VLAN 20 → VLAN 30: allow tcp/80,443
-VLAN 30 → VLAN 40: allow tcp/3306
-VLAN 40 → VLAN *: deny all (DMZ cannot initiate)
-VLAN 10 → VLAN 20,30,40: allow tcp/22
+VLAN 20 â†’ Internet: allow (NAT)
+VLAN 20 â†’ VLAN 30: allow tcp/80,443
+VLAN 30 â†’ VLAN 40: allow tcp/3306
+VLAN 40 â†’ VLAN *: deny all (DMZ cannot initiate)
+VLAN 10 â†’ VLAN 20,30,40: allow tcp/22
 Default: deny all inter-VLAN
 ```
 </details>
@@ -2681,7 +2681,7 @@ Default: deny all inter-VLAN
 
 <details>
 <summary>Solution</summary>
-WannaCry spreads via EternalBlue (SMBv1 exploit) and DoublePulsar backdoor. On a flat network: infected USB → workstation → SMB scan → other workstations → servers. Mitigation: segment network into VLANs (clinical, admin, IoT), block SMBv1 at firewalls, enforce 802.1X for device authentication, disable unnecessary USB ports.
+WannaCry spreads via EternalBlue (SMBv1 exploit) and DoublePulsar backdoor. On a flat network: infected USB â†’ workstation â†’ SMB scan â†’ other workstations â†’ servers. Mitigation: segment network into VLANs (clinical, admin, IoT), block SMBv1 at firewalls, enforce 802.1X for device authentication, disable unnecessary USB ports.
 </details>
 
 2. **Mirai:** A manufacturing plant has 500 IoT sensors on the same VLAN as the production servers. Design a network segmentation strategy that isolates IoT devices while maintaining necessary communication.
@@ -2695,7 +2695,7 @@ Create IoT VLAN with default-deny ACLs. Only allow outbound traffic to specific 
 
 <details>
 <summary>Solution</summary>
-Multiple layers: 1) USB scanning station — all removable media must pass through an air-gapped scanning kiosk. 2) Data diode for unidirectional gateway from IT to OT (no return path). 3) Application whitelisting on SCADA hosts (only approved executables run). 4) Full disk encryption with TPM attestation. 5) Honeypot devices to detect scanning activity.
+Multiple layers: 1) USB scanning station â€” all removable media must pass through an air-gapped scanning kiosk. 2) Data diode for unidirectional gateway from IT to OT (no return path). 3) Application whitelisting on SCADA hosts (only approved executables run). 4) Full disk encryption with TPM attestation. 5) Honeypot devices to detect scanning activity.
 </details>
 
 ### Challenge Problems
@@ -2743,7 +2743,7 @@ table inet filter {
 - RFC 8110: Opportunistic Wireless Encryption (OWE)
 - ZMap/Mirai: Understanding the Mirai Botnet (USENIX Security 2017)
 - Snake in the Grass: Stuxnet Analysis (Langner 2013)
-# Chapter 3 Continued: Network Security → Advanced Topics
+# Chapter 3 Continued: Network Security â†’ Advanced Topics
 
 > This section extends Chapter 3 with deeper protocol analysis, additional practical examples, and extended interview preparation.
 
@@ -2757,11 +2757,11 @@ table inet filter {
 Linux netfilter provides five hook points in the kernel networking stack:
 
 ```
-         LOCAL_IN → INPUT chain
-            ↑
-[NF_INET_PRE_ROUTING] → FORWARD → [NF_INET_POST_ROUTING]
-            ↓                              ↑
-           LOCAL_OUT ← OUTPUT chain
+         LOCAL_IN â†’ INPUT chain
+            â†‘
+[NF_INET_PRE_ROUTING] â†’ FORWARD â†’ [NF_INET_POST_ROUTING]
+            â†“                              â†‘
+           LOCAL_OUT â† OUTPUT chain
 ```
 
 **Hook Points:**
@@ -2821,26 +2821,26 @@ struct nf_conn {
 
 ```
 Client (10.0.0.5:50000)          Server (93.184.216.34:80)
-         │                              │
-         │ ── SYN (seq=1000) ──────────→│  NEW (timeout=120s)
-         │                              │
-         │ ←─ SYN-ACK (seq=2000, ack=1001) ───│  ESTABLISHED (timeout=432000s)
-         │                              │
-         │ ── ACK (seq=1001, ack=2001) ─→│  ESTABLISHED, ASSURED
-         │                              │
-         │ ── HTTP GET / ──────────────→│  ESTABLISHED
-         │                              │
-         │ ←─ HTTP 200 OK (data) ───────│  ESTABLISHED
-         │                              │
-         │ ── FIN (seq=2001) ──────────→│  CLOSE_WAIT (timeout=120s)
-         │ ←─ FIN-ACK ─────────────────│  LAST_ACK
-         │ ── ACK ─────────────────────→│  TIME_WAIT (2MSL) → removed
+         â”‚                              â”‚
+         â”‚ â”€â”€ SYN (seq=1000) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â†’â”‚  NEW (timeout=120s)
+         â”‚                              â”‚
+         â”‚ â†â”€ SYN-ACK (seq=2000, ack=1001) â”€â”€â”€â”‚  ESTABLISHED (timeout=432000s)
+         â”‚                              â”‚
+         â”‚ â”€â”€ ACK (seq=1001, ack=2001) â”€â†’â”‚  ESTABLISHED, ASSURED
+         â”‚                              â”‚
+         â”‚ â”€â”€ HTTP GET / â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â†’â”‚  ESTABLISHED
+         â”‚                              â”‚
+         â”‚ â†â”€ HTTP 200 OK (data) â”€â”€â”€â”€â”€â”€â”€â”‚  ESTABLISHED
+         â”‚                              â”‚
+         â”‚ â”€â”€ FIN (seq=2001) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â†’â”‚  CLOSE_WAIT (timeout=120s)
+         â”‚ â†â”€ FIN-ACK â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”‚  LAST_ACK
+         â”‚ â”€â”€ ACK â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â†’â”‚  TIME_WAIT (2MSL) â†’ removed
 ```
 
 ### 17.3 BPF-based Firewalls (eBPF/XDP)
 
 
-Modern firewalls use eBPF at the XDP (eXpress Data Path) hook, which runs before skb allocation → the fastest possible packet processing:
+Modern firewalls use eBPF at the XDP (eXpress Data Path) hook, which runs before skb allocation â†’ the fastest possible packet processing:
 
 ```c
 // XDP program example (drop all traffic from specific subnet)
@@ -2871,7 +2871,7 @@ int xdp_drop_prog(struct xdp_md *ctx) {
 
 ---
 
-## Section 18: Advanced IDS/IPS → Deep Dive
+## Section 18: Advanced IDS/IPS â†’ Deep Dive
 
 ### 18.1 Suricata Multi-Threading Architecture
 
@@ -2879,8 +2879,8 @@ int xdp_drop_prog(struct xdp_md *ctx) {
 Suricata uses a "runmode" packet processing pipeline:
 
 ```
-[Packet Capture] → [Decode] → [Stream TCP] → [Detect] → [Output]
-                                        ↑
+[Packet Capture] â†’ [Decode] â†’ [Stream TCP] â†’ [Detect] â†’ [Output]
+                                        â†‘
                                   [App Layer Parser]
                                   (HTTP, DNS, TLS, SMB, etc.)
 ```
@@ -2909,7 +2909,7 @@ threading:
 flow_bypass: yes
 ```
 
-### 18.2 PCRE Rules → Advanced Pattern Matching
+### 18.2 PCRE Rules â†’ Advanced Pattern Matching
 
 
 Suricata/Snort use PCRE (Perl Compatible Regular Expressions) for complex pattern matching:
@@ -2981,7 +2981,7 @@ cat notice.log | zeek-cut ts note msg
 
 ---
 
-## Section 19: Advanced VPN → DPI and VPN Detection
+## Section 19: Advanced VPN â†’ DPI and VPN Detection
 
 ### 19.1 How DPI Identifies VPN Traffic
 
@@ -2991,7 +2991,7 @@ Deep Packet Inspection can identify VPN protocols:
 **IPsec ESP detection:**
 - Protocol field = 50 (0x32) in IP header
 - Next Header byte in ESP trailer indicates inner protocol
-- ESP SPI (Security Parameter Index) → first 4 bytes after IP header
+- ESP SPI (Security Parameter Index) â†’ first 4 bytes after IP header
 
 **WireGuard detection:**
 - UDP destination port 51820 (default, but changeable)
@@ -3039,19 +3039,19 @@ PSKsecrets = /etc/stunnel/psk.txt
 
 ---
 
-## Section 20: Advanced DDoS → Amplification Attacks
+## Section 20: Advanced DDoS â†’ Amplification Attacks
 
 ### 20.1 DNS Amplification Attack
 
 
 ```
 Attacker (spoofs victim IP: 1.2.3.4)
-  │
-  │ DNS query ("ANY isc.org") with src=1.2.3.4
-  ├────────────────────→ Open DNS Resolver
-  │                       ↑
-  │ DNS response (~3500 bytes) to 1.2.3.4
-  ├────────────────────→ Victim (1.2.3.4)
+  â”‚
+  â”‚ DNS query ("ANY isc.org") with src=1.2.3.4
+  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â†’ Open DNS Resolver
+  â”‚                       â†‘
+  â”‚ DNS response (~3500 bytes) to 1.2.3.4
+  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â†’ Victim (1.2.3.4)
   
 Amplification factor: ~50x-70x
   Input:  60 bytes (DNS query)
@@ -3071,71 +3071,71 @@ Amplification factor: ~50x-70x
 **Mitigation for amplification attacks:**
 
 ```bash
-# 1. DNS → disable recursion for external clients
+# 1. DNS â†’ disable recursion for external clients
 iptables -A INPUT -p udp --dport 53 -s ! 192.168.0.0/16 -m recent --name DNS --set
 iptables -A INPUT -p udp --dport 53 -s ! 192.168.0.0/16 -m recent --name DNS --rcheck --seconds 1 --hitcount 10 -j DROP
 
-# 2. NTP → disable monlist (CVE-2013-5211)
+# 2. NTP â†’ disable monlist (CVE-2013-5211)
 restrict default kod nomodify notrap nopeer noquery
 restrict -6 default kod nomodify notrap nopeer noquery
 
-# 3. memcached → bind to localhost only (if local-only)
+# 3. memcached â†’ bind to localhost only (if local-only)
 sed -i 's/-l 0.0.0.0/-l 127.0.0.1/' /etc/memcached.conf
 
-# 4. uRPF (Unicast Reverse Path Forwarding) → drop packets with spoofed src
+# 4. uRPF (Unicast Reverse Path Forwarding) â†’ drop packets with spoofed src
 sysctl -w net.ipv4.conf.all.rp_filter=1
 sysctl -w net.ipv4.conf.default.rp_filter=1
 ```
 
 ---
 
-## Section 21: Advanced Wireless → Enterprise Deployment
+## Section 21: Advanced Wireless â†’ Enterprise Deployment
 
 ### 21.1 802.1X Full Deployment Topology
 
 
 ```
-                 ┌──────────────┐
-                 │  FreeRADIUS  │
-                 │  (auth + acct)│
-                 └──────┬───────┘
-                        │ RADIUS (UDP 1812/1813)
-         ┌──────────────┼──────────────┐
-         │              │              │
-    ┌────▼────┐   ┌────▼────┐   ┌────▼────┐
-    │  AP-01  │   │  AP-02  │   │  AP-03  │
-    │(Authz)  │   │(Authz)  │   │(Authz)  │
-    └────┬────┘   └────┬────┘   └────┬────┘
-         │              │              │
-    ┌────▼──────────────▼──────────────▼────┐
-    │       802.1Q Trunk (VLAN pool)         │
-    │  VLAN 10=Corp, VLAN 20=Guest, VLAN 30=IoT │
-    └────────────────────────────────────────┘
+                 â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                 â”‚  FreeRADIUS  â”‚
+                 â”‚  (auth + acct)â”‚
+                 â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜
+                        â”‚ RADIUS (UDP 1812/1813)
+         â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+         â”‚              â”‚              â”‚
+    â”Œâ”€â”€â”€â”€â–¼â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â–¼â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â–¼â”€â”€â”€â”€â”
+    â”‚  AP-01  â”‚   â”‚  AP-02  â”‚   â”‚  AP-03  â”‚
+    â”‚(Authz)  â”‚   â”‚(Authz)  â”‚   â”‚(Authz)  â”‚
+    â””â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”˜
+         â”‚              â”‚              â”‚
+    â”Œâ”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”
+    â”‚       802.1Q Trunk (VLAN pool)         â”‚
+    â”‚  VLAN 10=Corp, VLAN 20=Guest, VLAN 30=IoT â”‚
+    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 **EAP-TLS Full Authentication Flow:**
 
 ```
 Supplicant                     AP (Authz)              RADIUS Server
-    │                             │                         │
-    │---- EAPOL-Start ----------→│                         │
-    │←--- EAP-Request/Identity ---│                         │
-    │---- EAP-Response/Identity →│---- RADIUS Access-Request (EAP-Response) →│
-    │                             │                         │
-    │                             │                         │ RADIUS validates EAP type
-    │                             │                         │
-    │←--- EAP-Request (EAP-TLS: Server Hello + Cert) ------│
-    │                             │                         │
-    │---- EAP-Response (EAP-TLS: Client Cert, pre-master) →│
-    │                             │                         │ Validates client cert
-    │                             │                         │ Computes master key
-    │                             │                         │
-    │←--- EAP-Success + RADIUS Accept (session key) -------│
-    │                             │                         │
-    │       4-Way Handshake (derived from MSK from RADIUS) │
-    │←--- PTK derivation --------→│                         │
-    │                             │                         │
-    │       802.11 Data (encrypted with PTK)               │
+    â”‚                             â”‚                         â”‚
+    â”‚---- EAPOL-Start ----------â†’â”‚                         â”‚
+    â”‚â†--- EAP-Request/Identity ---â”‚                         â”‚
+    â”‚---- EAP-Response/Identity â†’â”‚---- RADIUS Access-Request (EAP-Response) â†’â”‚
+    â”‚                             â”‚                         â”‚
+    â”‚                             â”‚                         â”‚ RADIUS validates EAP type
+    â”‚                             â”‚                         â”‚
+    â”‚â†--- EAP-Request (EAP-TLS: Server Hello + Cert) ------â”‚
+    â”‚                             â”‚                         â”‚
+    â”‚---- EAP-Response (EAP-TLS: Client Cert, pre-master) â†’â”‚
+    â”‚                             â”‚                         â”‚ Validates client cert
+    â”‚                             â”‚                         â”‚ Computes master key
+    â”‚                             â”‚                         â”‚
+    â”‚â†--- EAP-Success + RADIUS Accept (session key) -------â”‚
+    â”‚                             â”‚                         â”‚
+    â”‚       4-Way Handshake (derived from MSK from RADIUS) â”‚
+    â”‚â†--- PTK derivation --------â†’â”‚                         â”‚
+    â”‚                             â”‚                         â”‚
+    â”‚       802.11 Data (encrypted with PTK)               â”‚
 ```
 
 ### 21.2 RADIUS Server Logs
@@ -3155,12 +3155,12 @@ tail -f /var/log/freeradius/radius.log
 # (1) Sent Access-Accept Id 215 from 192.168.1.10:1812 to 192.168.1.30:54789
 # (1)   Tunnel-Type = VLAN
 # (1)   Tunnel-Medium-Type = IEEE-802
-# (1)   Tunnel-Private-Group-Id = "30"  ← assigned to IoT VLAN
+# (1)   Tunnel-Private-Group-Id = "30"  â† assigned to IoT VLAN
 ```
 
 ---
 
-## Section 22: Advanced Zero Trust → Google's BeyondCorp Model
+## Section 22: Advanced Zero Trust â†’ Google's BeyondCorp Model
 
 ### 22.1 BeyondCorp Principles
 
@@ -3266,15 +3266,15 @@ curl --cert api.crt --key api.key \
 
 ## Section 23: Advanced Protocol Attacks
 
-### 23.1 DHCP Starvation Attack → Full Walkthrough
+### 23.1 DHCP Starvation Attack â†’ Full Walkthrough
 
 
 **Goal:** Exhaust all DHCP pool addresses so new clients cannot connect.
 
 ```bash
-# YERSINIA → DHCP starvation tool
+# YERSINIA â†’ DHCP starvation tool
 yersinia -I
-# Interactive mode → Select DHCP → Launch starvation attack
+# Interactive mode â†’ Select DHCP â†’ Launch starvation attack
 # Expected: 10,000 DHCP DISCOVER packets in seconds
 
 # Manual using scapy (Python)
@@ -3299,7 +3299,7 @@ for i in range(1000):
     sendp(pkt, iface="eth0", verbose=0)
     print(f"Sent DHCP Discover for MAC {mac}")
 
-# After exhaustion: DHCP server has no addresses → all requests fail
+# After exhaustion: DHCP server has no addresses â†’ all requests fail
 PYEOF
 ```
 
@@ -3326,7 +3326,7 @@ interface GigabitEthernet0/1
 ip dhcp snooping log mismatch
 ```
 
-### 23.2 ARP Spoofing Detection → Detailed
+### 23.2 ARP Spoofing Detection â†’ Detailed
 
 
 ```bash
@@ -3367,7 +3367,7 @@ python3 detect-arp.py
 # 3. Static ARP entry (prevention for critical devices)
 arp -s 192.168.1.1 00:11:22:33:44:55
 
-# 4. Switch protection → Dynamic ARP Inspection (DAI)
+# 4. Switch protection â†’ Dynamic ARP Inspection (DAI)
 ip arp inspection vlan 10,20
 ip arp inspection validate src-mac dst-mac ip
 interface GigabitEthernet0/1
@@ -3384,21 +3384,21 @@ interface GigabitEthernet0/1
 
 ```
 [Network TAP / Mirror Port]
-        │
-        ▼
+        â”‚
+        â–¼
 [Packet Broker] (filter, aggregate, load balance)
-        │
-        ├────────────┬────────────┬─────────────┐
-        ▼            ▼            ▼             ▼
+        â”‚
+        â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+        â–¼            â–¼            â–¼             â–¼
 [Suricata IDS]  [Zeek NSM]   [tcpdump]    [NetFlow/IPFIX]
    (alerts)    (logs/events) (full PCAP)  (flow records)
-        │            │            │             │
-        └────────────┴────────────┴─────────────┘
-                        │
-                        ▼
+        â”‚            â”‚            â”‚             â”‚
+        â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                        â”‚
+                        â–¼
           [Data Lake: Elasticsearch / S3]
-                        │
-                        ▼
+                        â”‚
+                        â–¼
           [Kibana / Grafana / Jupyter]
 ```
 
@@ -3418,7 +3418,7 @@ ip link set eth0-mirror up
 softflowd -i eth0 -n collector.local:2055 -t maxlife=3600
 ```
 
-### 24.2 Security Onion → All-in-One NSM
+### 24.2 Security Onion â†’ All-in-One NSM
 
 
 ```bash
@@ -3444,7 +3444,7 @@ sudo so-pcap -d 'host 10.0.0.5 and port 443'
 
 ---
 
-## Section 25: Extended Interview Corner → Advanced Q&As
+## Section 25: Extended Interview Corner â†’ Advanced Q&As
 
 ### Q16: How does IPsec tunnel mode differ from transport mode? Show packet structure.
 
@@ -3454,19 +3454,19 @@ sudo so-pcap -d 'host 10.0.0.5 and port 443'
 Transport mode packet:
 ```
 [IP Header (original)] [ESP Header] [TCP Header] [Payload] [ESP Trailer] [Auth]
-                              ← encrypted →
+                              â† encrypted â†’
 ```
 
 Tunnel mode packet:
 ```
 [IP Header (new)] [ESP Header] [IP Header (original)] [TCP] [Payload] [ESP Trailer] [Auth]
-                                          ← encrypted →
+                                          â† encrypted â†’
 ```
 
 ### Q17: What is the difference between a reverse proxy and a forward proxy in network security?
 
 
-**A17:** A forward proxy sits between clients and the internet. Clients configure their browser/app to use the proxy. The proxy fetches content on behalf of clients, providing anonymity, content filtering, and caching. Used for outbound traffic control (employees → internet). A reverse proxy sits between the internet and servers. Clients connect to the reverse proxy which forwards to backend servers. Used for inbound traffic control (internet → web servers), providing load balancing, SSL termination, WAF, and server anonymity. Nginx is commonly used as both.
+**A17:** A forward proxy sits between clients and the internet. Clients configure their browser/app to use the proxy. The proxy fetches content on behalf of clients, providing anonymity, content filtering, and caching. Used for outbound traffic control (employees â†’ internet). A reverse proxy sits between the internet and servers. Clients connect to the reverse proxy which forwards to backend servers. Used for inbound traffic control (internet â†’ web servers), providing load balancing, SSL termination, WAF, and server anonymity. Nginx is commonly used as both.
 
 ### Q18: Explain the TLS 1.3 handshake and its security improvements over TLS 1.2.
 
@@ -3475,14 +3475,14 @@ Tunnel mode packet:
 
 ```
 Client                          Server
-  │                                │
-  │── ClientHello (key_share) ────→│
-  │                                │ Server derives session key
-  │←─ ServerHello + Cert + Finish ─│
-  │ (server handshake encrypted)    │
-  │ Client derives session key      │
-  │── Client Finish (encrypted) ──→│
-  │←── Application Data (HTTP/2) ──│
+  â”‚                                â”‚
+  â”‚â”€â”€ ClientHello (key_share) â”€â”€â”€â”€â†’â”‚
+  â”‚                                â”‚ Server derives session key
+  â”‚â†â”€ ServerHello + Cert + Finish â”€â”‚
+  â”‚ (server handshake encrypted)    â”‚
+  â”‚ Client derives session key      â”‚
+  â”‚â”€â”€ Client Finish (encrypted) â”€â”€â†’â”‚
+  â”‚â†â”€â”€ Application Data (HTTP/2) â”€â”€â”‚
 
 Total: 1 round trip (vs 2 in TLS 1.2)
 ```
@@ -3519,7 +3519,7 @@ tunnel = shannon_entropy("3f7a2b9c1d5e8f0a")  # ~4.0
 ### Q21: Describe the full flow of a DDoS mitigation using Cloudflare.
 
 
-**A21:** (1) Traffic arrives at Cloudflare's nearest data center (anycast). (2) Layer 3/4 mitigation drops packets with invalid headers, SYN floods are challenged, and amplification attacks are scrubbed. (3) Layer 7 mitigation: JS challenge verifies browser support, CAPTCHA challenges suspicious IPs, rate limiting per IP/ASN/country, WAF checks HTTP requests for attack signatures, bot management scores each request (1 = human, 100 = automated). (4) Clean traffic is proxied to the origin server over a dedicated tunnel (Argo Tunnel/Cloudflare Tunnel) → the origin IP is never exposed. (5) Analytics provide real-time visibility into dropped vs passed traffic. (6) Under extreme attack (>1 Tbps), Cloudflare's global network distributes the load across 300+ data centers.
+**A21:** (1) Traffic arrives at Cloudflare's nearest data center (anycast). (2) Layer 3/4 mitigation drops packets with invalid headers, SYN floods are challenged, and amplification attacks are scrubbed. (3) Layer 7 mitigation: JS challenge verifies browser support, CAPTCHA challenges suspicious IPs, rate limiting per IP/ASN/country, WAF checks HTTP requests for attack signatures, bot management scores each request (1 = human, 100 = automated). (4) Clean traffic is proxied to the origin server over a dedicated tunnel (Argo Tunnel/Cloudflare Tunnel) â†’ the origin IP is never exposed. (5) Analytics provide real-time visibility into dropped vs passed traffic. (6) Under extreme attack (>1 Tbps), Cloudflare's global network distributes the load across 300+ data centers.
 
 ### Q22: What is the difference between 802.1X and MAC Authentication Bypass (MAB)?
 
@@ -3530,19 +3530,19 @@ tunnel = shannon_entropy("3f7a2b9c1d5e8f0a")  # ~4.0
 
 
 **A23:** NIST SP 800-207 defines:
-1. **Policy Engine (PE):** The brain → makes allow/deny decisions based on identity, device health, and context. Uses OPA or custom policy.
+1. **Policy Engine (PE):** The brain â†’ makes allow/deny decisions based on identity, device health, and context. Uses OPA or custom policy.
 2. **Policy Administrator (PA):** Generates session tokens, handles authentication. Issues JWT or mTLS certificates.
-3. **Policy Enforcement Point (PEP):** Gate → enforces the decision. Can be a reverse proxy, API gateway, or network firewall.
+3. **Policy Enforcement Point (PEP):** Gate â†’ enforces the decision. Can be a reverse proxy, API gateway, or network firewall.
 4. **Identity Provider (IdP):** Authenticates users (Keycloak, Azure AD).
 5. **Device Agent:** Reports device health (osquery, MDM agent).
 6. **Data Plane:** Encrypts all traffic end-to-end (mTLS, WireGuard).
 
-Communication flow: User → PEP (requests access) → PE evaluates (identity + device + context) → PA issues token → PEP allows access.
+Communication flow: User â†’ PEP (requests access) â†’ PE evaluates (identity + device + context) â†’ PA issues token â†’ PEP allows access.
 
 ### Q24: How does the WPA3 SAE handshake prevent offline dictionary attacks?
 
 
-**A24:** WPA2 uses a 4-Way Handshake where the PMK is directly derived from the PSK. An attacker captures the 4 messages and cracks the PSK offline. WPA3 SAE (Dragonfly handshake) uses a zero-knowledge proof: both parties prove knowledge of the password without revealing it. The sequence: (1) Both parties derive a password element from the password using a hash-to-curve function. (2) Each generates an ephemeral private key and sends a commitment (hash of scalar + element). (3) Each sends a confirm value (proof of knowledge). (4) Both parties independently derive the same PMK. Without the password, an attacker cannot compute the correct confirm value. Each guess requires a fresh SAE exchange with the real AP → offline brute force is impossible.
+**A24:** WPA2 uses a 4-Way Handshake where the PMK is directly derived from the PSK. An attacker captures the 4 messages and cracks the PSK offline. WPA3 SAE (Dragonfly handshake) uses a zero-knowledge proof: both parties prove knowledge of the password without revealing it. The sequence: (1) Both parties derive a password element from the password using a hash-to-curve function. (2) Each generates an ephemeral private key and sends a commitment (hash of scalar + element). (3) Each sends a confirm value (proof of knowledge). (4) Both parties independently derive the same PMK. Without the password, an attacker cannot compute the correct confirm value. Each guess requires a fresh SAE exchange with the real AP â†’ offline brute force is impossible.
 
 ### Q25: What is the TCP three-way handshake and how does it enable SYN flood attacks?
 
@@ -3552,7 +3552,7 @@ Communication flow: User → PEP (requests access) → PE evaluates (identity + 
 2. Server responds with SYN-ACK (seq=y, ack=x+1)
 3. Client sends ACK (seq=x+1, ack=y+1)
 
-In a SYN flood, the attacker sends thousands of SYN packets with spoofed source IPs. The server allocates memory (TCB → Transmission Control Block) for each half-open connection and sends SYN-ACK to the spoofed IP (which never responds). The backlog queue fills (typically 1024 entries). The server cannot accept new connections. Mitigation: SYN cookies encode connection info in the SYN-ACK sequence number (no memory allocated until ACK received) → the server only allocates TCB on ACK completion.
+In a SYN flood, the attacker sends thousands of SYN packets with spoofed source IPs. The server allocates memory (TCB â†’ Transmission Control Block) for each half-open connection and sends SYN-ACK to the spoofed IP (which never responds). The backlog queue fills (typically 1024 entries). The server cannot accept new connections. Mitigation: SYN cookies encode connection info in the SYN-ACK sequence number (no memory allocated until ACK received) â†’ the server only allocates TCB on ACK completion.
 
 ### Q26: Compare Snort and Suricata rule languages. When would you use each?
 
@@ -3567,7 +3567,7 @@ In a SYN flood, the attacker sends thousands of SYN packets with spoofed source 
 ### Q27: Explain how BGP route leaks happen and the difference from BGP hijacking.
 
 
-**A27:** BGP hijacking is malicious → an unauthorized AS deliberately announces prefixes it does not own (e.g., Pakistan Telecom announcing YouTube's prefix). BGP route leaks are accidental → a misconfigured AS announces learned routes to other peers when it should only announce its own. Example: AS A learns route to prefix P from its upstream, then announces P to AS B (its other peer) as if AS A owns P. AS B propagates P, causing traffic destined for P to be routed through AS A first. Route leaks are typically unintentional configuration errors. Both are mitigated by prefix filtering, max-prefix limits, and RPKI.
+**A27:** BGP hijacking is malicious â†’ an unauthorized AS deliberately announces prefixes it does not own (e.g., Pakistan Telecom announcing YouTube's prefix). BGP route leaks are accidental â†’ a misconfigured AS announces learned routes to other peers when it should only announce its own. Example: AS A learns route to prefix P from its upstream, then announces P to AS B (its other peer) as if AS A owns P. AS B propagates P, causing traffic destined for P to be routed through AS A first. Route leaks are typically unintentional configuration errors. Both are mitigated by prefix filtering, max-prefix limits, and RPKI.
 
 ### Q28: Describe the contents of the Snort/Suricata rule header and options.
 
@@ -3577,19 +3577,19 @@ In a SYN flood, the attacker sends thousands of SYN packets with spoofed source 
 Actions: alert (log alert), log (log packet), pass (ignore), drop (IPS: block + log), reject (IPS: block + RST/ICMP).
 
 Options (partial list):
-- `msg:` → Alert message
-- `sid:` → Unique rule ID (Snort: &lt;1M reserved, 1M+ custom; Suricata: 2M+ custom)
-- `rev:` → Revision number
-- `classtype:` → Attack category (trojan-activity, attempted-admin, web-application-attack)
-- `reference:` → External reference (cve, url, arachnids)
-- `content:` → Byte pattern matching (`content:"|AABB|"` for hex, `content:"text"` for ASCII)
-- `pcre:` → Perl-compatible regex
-- `flow:` → to_server, from_server, established, stateless
-- `threshold:` → Alert frequency control (type both/track by_src/count 5/seconds 60)
-- `dsize:` → Payload size check
-- `fileext:` → File extension match (Suricata)
-- `tls.sni:` → TLS SNI match (Suricata)
-- `metadata:` → Custom key-value pairs
+- `msg:` â†’ Alert message
+- `sid:` â†’ Unique rule ID (Snort: &lt;1M reserved, 1M+ custom; Suricata: 2M+ custom)
+- `rev:` â†’ Revision number
+- `classtype:` â†’ Attack category (trojan-activity, attempted-admin, web-application-attack)
+- `reference:` â†’ External reference (cve, url, arachnids)
+- `content:` â†’ Byte pattern matching (`content:"|AABB|"` for hex, `content:"text"` for ASCII)
+- `pcre:` â†’ Perl-compatible regex
+- `flow:` â†’ to_server, from_server, established, stateless
+- `threshold:` â†’ Alert frequency control (type both/track by_src/count 5/seconds 60)
+- `dsize:` â†’ Payload size check
+- `fileext:` â†’ File extension match (Suricata)
+- `tls.sni:` â†’ TLS SNI match (Suricata)
+- `metadata:` â†’ Custom key-value pairs
 
 ### Q29: What network security controls would you implement at each layer of the OSI model?
 
@@ -3605,21 +3605,21 @@ Options (partial list):
 ### Q30: Explain the full Stuxnet attack chain and why it was so significant.
 
 
-**A30:** Stuxnet (2010) was the first known cyber weapon → a nation-state (US/Israel) attack on Iranian nuclear centrifuges. Attack chain: (1) USB infection via social engineering or supply chain compromise. (2) Exploit MS10-046 (LNK vulnerability) for auto-execution. (3) MS10-061 print spooler escalation for SYSTEM privileges. (4) MS08-067 (Server Service) for network propagation. (5) Spread across air-gapped network via USB and network shares. (6) Target discovery: looks for Siemens Step 7 software on Windows. (7) Rootkit: hides modified PLC code from operators. (8) PLC sabotage: two attack profiles → rapid frequency oscillation destroys centrifuges; long-duration frequency changes accelerate bearing wear. (9) Man-in-the-middle: replays normal sensor data while centrifuges self-destruct. Operators see "normal operations" as IR-1 centrifuges tear themselves apart. Four zero-day exploits used (unprecedented). Significance: proved air-gaps are not absolute, changed international cyber warfare policy, demonstrated kinetic effects via cyber means, led to NIST SP 800-82 for industrial control system security.
+**A30:** Stuxnet (2010) was the first known cyber weapon â†’ a nation-state (US/Israel) attack on Iranian nuclear centrifuges. Attack chain: (1) USB infection via social engineering or supply chain compromise. (2) Exploit MS10-046 (LNK vulnerability) for auto-execution. (3) MS10-061 print spooler escalation for SYSTEM privileges. (4) MS08-067 (Server Service) for network propagation. (5) Spread across air-gapped network via USB and network shares. (6) Target discovery: looks for Siemens Step 7 software on Windows. (7) Rootkit: hides modified PLC code from operators. (8) PLC sabotage: two attack profiles â†’ rapid frequency oscillation destroys centrifuges; long-duration frequency changes accelerate bearing wear. (9) Man-in-the-middle: replays normal sensor data while centrifuges self-destruct. Operators see "normal operations" as IR-1 centrifuges tear themselves apart. Four zero-day exploits used (unprecedented). Significance: proved air-gaps are not absolute, changed international cyber warfare policy, demonstrated kinetic effects via cyber means, led to NIST SP 800-82 for industrial control system security.
 
 ---
 
-## Section 26: Final Comprehensive Reference → All Tools in One Lab
+## Section 26: Final Comprehensive Reference â†’ All Tools in One Lab
 
 ### 26.1 Complete Network Security Test Lab
 
 
 ```bash
 # Test lab architecture:
-# Kali (attacker) ──eth0── switch ──eth0── Ubuntu Server (target)
+# Kali (attacker) â”€â”€eth0â”€â”€ switch â”€â”€eth0â”€â”€ Ubuntu Server (target)
 # 192.168.1.100           |          192.168.1.1
 #                   eth0
-#                        ── Internet (simulated via iptables NAT)
+#                        â”€â”€ Internet (simulated via iptables NAT)
 
 # 1. Reconnaissance
 nmap -sS -sV -O -A 192.168.1.1
@@ -3728,7 +3728,7 @@ class FirewallAnalyzer {
     for (let i = 0; i < this.rules.length; i++) {
       const key = `${this.rules[i].sourceIp}|${this.rules[i].destIp}|${this.rules[i].destPort}|${this.rules[i].protocol}|${this.rules[i].action}`;
       if (seen.has(key)) {
-        recommendations.push(`Rule #${i + 1} is a duplicate of an earlier rule — consider removing it.`);
+        recommendations.push(`Rule #${i + 1} is a duplicate of an earlier rule â€” consider removing it.`);
       }
       seen.add(key);
     }
@@ -3760,7 +3760,7 @@ console.log('Open ports:', [...result.openPorts].join(', '));
 console.log('Shadowed rules:', result.shadowedRules.length);
 console.log('Overly permissive rules:', result.overlyPermissive.length);
 console.log('Recommendations:');
-result.recommendations.forEach(r => console.log(`  • ${r}`));
+result.recommendations.forEach(r => console.log(`  â€¢ ${r}`));
 ```
 
 ### 2. IDS/IPS Rule Engine
@@ -3846,7 +3846,7 @@ class IDSEngine {
       }
 
       case 'PORT_SCAN': {
-        const key = `${packet.sourceIp}→${packet.destIp}`;
+        const key = `${packet.sourceIp}â†’${packet.destIp}`;
         const count = (this.connectionTracker.get(key) || 0) + 1;
         this.connectionTracker.set(key, count);
         if (count > 50) {
@@ -3931,46 +3931,46 @@ const testPackets: Packet[] = [
 
 const alerts = engine.matchRules(testPackets);
 console.log(`Total alerts generated: ${alerts.length}`);
-alerts.forEach(a => console.log(`  [${a.severity}] ${a.description} → action: ${a.action}`));
+alerts.forEach(a => console.log(`  [${a.severity}] ${a.description} â†’ action: ${a.action}`));
 ```
 
 ---
 
 ## Mermaid Diagrams
 
-### 1. Firewall Architecture — DMZ with Layered Defense
+### 1. Firewall Architecture â€” DMZ with Layered Defense
 
 
 The diagram below illustrates a typical enterprise firewall architecture with a perimeter firewall, DMZ segment, internal firewall, and management network. Traffic flows from the external internet through multiple inspection layers before reaching sensitive internal resources.
 
 ```mermaid
 flowchart TB
-    subgraph Internet["🌐 External Network (Internet)"]
+    subgraph Internet["ðŸŒ External Network (Internet)"]
         A1[Attacker]
         A2[Legitimate User]
     end
 
-    subgraph Perimeter["🛡️ Perimeter Security"]
+    subgraph Perimeter["ðŸ›¡ï¸ Perimeter Security"]
         LB[Load Balancer]
         WAF[WAF - Web Application Firewall]
         NGFW[Next-Gen Firewall / IPS]
         IDS[IDS/IPS Sensor]
     end
 
-    subgraph DMZ["🏗️ DMZ - Demilitarized Zone"]
+    subgraph DMZ["ðŸ—ï¸ DMZ - Demilitarized Zone"]
         WEB[Web Servers :80/:443]
         EMAIL[Email Gateway :25/:587]
         DNS[DNS Server :53]
     end
 
-    subgraph Internal["🔒 Internal Network"]
+    subgraph Internal["ðŸ”’ Internal Network"]
         FW2[Internal Firewall / Zone Gateway]
         DB[(Database Servers)]
         APP[Application Servers]
         DC[Domain Controller / LDAP]
     end
 
-    subgraph Management["⚙️ Management & Monitoring"]
+    subgraph Management["âš™ï¸ Management & Monitoring"]
         SIEM[SIEM / Log Collector]
         NAC[Network Access Control]
         PATCH[Patch Management Server]
@@ -3995,7 +3995,7 @@ flowchart TB
     style Management fill:#ffccff
 ```
 
-### 2. VPN Tunnel Establishment — IPSec IKEv1 Main Mode
+### 2. VPN Tunnel Establishment â€” IPSec IKEv1 Main Mode
 
 
 This sequence diagram details the two-phase IPSec tunnel establishment process. Phase 1 (Main Mode) sets up a secure ISAKMP control channel using Diffie-Hellman key exchange. Phase 2 (Quick Mode) negotiates the actual IPSec security associations for data protection.
@@ -4006,26 +4006,26 @@ sequenceDiagram
     participant GW as VPN Gateway
     participant SA as SA Manager
 
-    Note over Client,SA: IKE Phase 1 — Main Mode (ISAKMP SA)
+    Note over Client,SA: IKE Phase 1 â€” Main Mode (ISAKMP SA)
 
-    Client->>GW: ① SA Proposal (Encryption, Hash, DH Group, Auth Method)
-    GW-->>Client: ② Selected Cipher Suite (accepted proposal)
-    Client->>GW: ③ DH Public Value (g^xa mod p)
-    GW-->>Client: ④ DH Public Value (g^xb mod p)
-    Note over Client,GW: Shared Key Material = g^(xa·xb) mod p
+    Client->>GW: â‘  SA Proposal (Encryption, Hash, DH Group, Auth Method)
+    GW-->>Client: â‘¡ Selected Cipher Suite (accepted proposal)
+    Client->>GW: â‘¢ DH Public Value (g^xa mod p)
+    GW-->>Client: â‘£ DH Public Value (g^xb mod p)
+    Note over Client,GW: Shared Key Material = g^(xaÂ·xb) mod p
 
-    Client->>GW: ⑤ Encrypted ID + Nonce + Proof of Identity
-    GW-->>Client: ⑥ Encrypted ID + Nonce + Proof of Identity
-    Note over Client,GW: ✔ IKE Phase 1 Complete → ISAKMP SA (encrypted control channel)
+    Client->>GW: â‘¤ Encrypted ID + Nonce + Proof of Identity
+    GW-->>Client: â‘¥ Encrypted ID + Nonce + Proof of Identity
+    Note over Client,GW: âœ” IKE Phase 1 Complete â†’ ISAKMP SA (encrypted control channel)
 
-    Note over Client,SA: IKE Phase 2 — Quick Mode (IPSec SA)
+    Note over Client,SA: IKE Phase 2 â€” Quick Mode (IPSec SA)
 
-    Client->>GW: ⑦ IPSec Proposal + SPI + Traffic Selectors
-    GW-->>Client: ⑧ Accepted IPSec Proposal + Nonce + SPI
-    Client->>GW: ⑨ Confirm + Fresh Keying Material
-    Note over Client,GW: ✔ IPSec SA Established → Encrypted Data Tunnel
+    Client->>GW: â‘¦ IPSec Proposal + SPI + Traffic Selectors
+    GW-->>Client: â‘§ Accepted IPSec Proposal + Nonce + SPI
+    Client->>GW: â‘¨ Confirm + Fresh Keying Material
+    Note over Client,GW: âœ” IPSec SA Established â†’ Encrypted Data Tunnel
 
-    Note over Client,GW: 🔒 Secure Data Transfer via ESP in Tunnel Mode
+    Note over Client,GW: ðŸ”’ Secure Data Transfer via ESP in Tunnel Mode
 
     Client->>GW: Encrypted Inner IP Packet (ESP Payload)
     GW-->>Client: Encrypted Inner IP Packet (ESP Payload)
@@ -4045,7 +4045,7 @@ Test your understanding of network security concepts covered in this chapter.
 | 4 | Which IDS detection method builds a statistical baseline of normal traffic and flags deviations? | Signature-based detection | Anomaly-based detection | Stateful protocol analysis | Heuristic analysis | B |
 | 5 | In IPSec VPN, what is the purpose of IKE Phase 1? | Establish the IPSec SA for encrypting user data | Establish a secure ISAKMP control channel (authenticated DH key exchange) | Authenticate individual users via RADIUS | Negotiate compression algorithms | B |
 | 6 | Which wireless security standard replaces WPA2's PSK with Simultaneous Authentication of Equals (SAE), providing forward secrecy? | WEP | WPA2-TKIP | WPA3 | 802.11i | C |
-| 7 | A SYN flood attack exploits which aspect of the TCP protocol? | The three-way handshake — the server allocates resources before the handshake completes | Window size negotiation consuming excessive memory | Sequence number randomization delays processing | Congestion control algorithm retransmission timers | A |
+| 7 | A SYN flood attack exploits which aspect of the TCP protocol? | The three-way handshake â€” the server allocates resources before the handshake completes | Window size negotiation consuming excessive memory | Sequence number randomization delays processing | Congestion control algorithm retransmission timers | A |
 | 8 | Which attack involves an attacker sending forged ARP messages to associate their MAC address with a legitimate IP address? | DNS cache poisoning | ARP spoofing (ARP cache poisoning) | DHCP starvation | MAC flooding (CAM table overflow) | B |
 | 9 | Network segmentation using VLANs primarily provides: | Encryption of inter-VLAN traffic | Logical isolation of broadcast domains at Layer 2 | Automatic load balancing between subnets | Transparent failover for critical network paths | B |
 | 10 | Which switch security feature validates ARP packets against a trusted DHCP binding database to prevent ARP spoofing? | Port security with sticky MAC | Dynamic ARP Inspection (DAI) | VLAN trunking (802.1Q) | Spanning Tree Protocol (STP) BPDU Guard | B |
@@ -4057,12 +4057,12 @@ Test your understanding of network security concepts covered in this chapter.
 | Takeaway | Application |
 |----------|-------------|
 | Layered Firewall Architecture | Deploy stateful firewall at perimeter + NGFW for internal segmentation + WAF for web applications |
-| IDS/IPS with Hybrid Detection | Use signature-based rules for known threats and anomaly-based detection for zero-day threats — Suricata for modern deployments |
+| IDS/IPS with Hybrid Detection | Use signature-based rules for known threats and anomaly-based detection for zero-day threats â€” Suricata for modern deployments |
 | VPN for Secure Remote Access | Use WireGuard for performance-critical tunnels, IPsec IKEv2 for enterprise site-to-site, OpenVPN for legacy compatibility |
 | Network Segmentation (VLANs + DMZ + Micro-segmentation) | Place public servers in DMZ, isolate IoT on separate VLANs, use Kubernetes Network Policies for micro-segmentation |
 | Protocol Security (DNSSEC, DHCP Snooping, BGP RPKI, SNMPv3) | Harden DNS with DNSSEC, enable DHCP snooping on switches, validate BGP routes with RPKI, use SNMPv3 with auth+privacy |
 | Wireless Security (WPA3-Enterprise + 802.1X) | Deploy WPA3 with SAE for home/SMB; use 802.1X/EAP-TLS with certificate authentication for enterprise |
-| Zero Trust Networking | Implement identity-aware proxies, micro-segmentation, and continuous verification — remove implicit trust based on network location |
+| Zero Trust Networking | Implement identity-aware proxies, micro-segmentation, and continuous verification â€” remove implicit trust based on network location |
 
 ---
 
@@ -4078,10 +4078,10 @@ Test your understanding of network security concepts covered in this chapter.
 - Firewalls provide the first line of defense; choose type based on deployment context
 - IDS/IPS detects known and unknown threats; signature + anomaly hybrid is most effective
 - VPNs encrypt traffic; WireGuard offers modern crypto and performance, IPsec offers enterprise features
-- Segment networks to contain breaches → VLANs for basic isolation, micro-segmentation for zero trust
+- Segment networks to contain breaches â†’ VLANs for basic isolation, micro-segmentation for zero trust
 - Secure all protocols (DNS with DNSSEC, DHCP with snooping, BGP with RPKI, SNMPv3)
 - Wireless requires enterprise-grade authentication (802.1X/EAP-TLS + WPA3)
 - DDoS mitigation requires layered approaches from rate limiting to cloud scrubbing
 - Zero Trust is the architectural destination: identity-driven, micro-segmented, encrypted everywhere
 
-**Remember:** Network security is not a product → it is a process of continuous monitoring, assessment, and improvement. The threats evolve daily; your defenses must evolve with them.
+**Remember:** Network security is not a product â†’ it is a process of continuous monitoring, assessment, and improvement. The threats evolve daily; your defenses must evolve with them.

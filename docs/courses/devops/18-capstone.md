@@ -1,4 +1,4 @@
-# Chapter 18: Capstone Project
+﻿# Chapter 18: Capstone Project
 
 > **Previous:** [SRE Principles](./17-sre.md)
 
@@ -9,16 +9,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/18-capstone/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/18-capstone/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/18-capstone/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/18-capstone/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/18-capstone/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/18-capstone/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/18-capstone/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/18-capstone/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/18-capstone/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/18-capstone/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/18-capstone/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/18-capstone/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -67,11 +67,11 @@ flowchart LR
 
 The capstone project is the culminating assessment of DevOps mastery. Unlike individual chapter exercises that focus on isolated skills, the capstone requires integration across the entire toolchain. The design philosophy follows three principles:
 
-**Integration over Isolation** — Individual tools (Docker, Kubernetes, Terraform, Prometheus) are easy to learn in isolation. The capstone tests whether you can compose them into a working system where each component correctly interfaces with its neighbors.
+**Integration over Isolation** â€” Individual tools (Docker, Kubernetes, Terraform, Prometheus) are easy to learn in isolation. The capstone tests whether you can compose them into a working system where each component correctly interfaces with its neighbors.
 
-**Production Realism** — The pipeline must handle real-world concerns: zero-downtime deployments, automated rollback on failure, security scanning gates that block vulnerable code, and observability that provides actionable insight. Toy exercises are replaced with production-grade patterns.
+**Production Realism** â€” The pipeline must handle real-world concerns: zero-downtime deployments, automated rollback on failure, security scanning gates that block vulnerable code, and observability that provides actionable insight. Toy exercises are replaced with production-grade patterns.
 
-**Incremental Build** — The project is too large to build in one pass. The recommended sequence is: local Docker Compose ? Terraform infrastructure ? Kubernetes manifests ? CI/CD pipeline ? blue-green ? observability ? security. Each step builds on the previous one.
+**Incremental Build** â€” The project is too large to build in one pass. The recommended sequence is: local Docker Compose ? Terraform infrastructure ? Kubernetes manifests ? CI/CD pipeline ? blue-green ? observability ? security. Each step builds on the previous one.
 
 ### 18.2 Project Planning and Estimation
 
@@ -108,27 +108,27 @@ flowchart TD
 
 Each pipeline stage has a specific purpose, trigger, and gate:
 
-**Stage 1 — Lint & Test (trigger: every push)**
+**Stage 1 â€” Lint & Test (trigger: every push)**
 - Purpose: Catch code quality and logic errors early
 - Gate: Zero lint errors, 80%+ test coverage, zero SAST high findings
 - Fast feedback loop (< 5 minutes)
 
-**Stage 2 — Build & Scan (trigger: push to main)**
+**Stage 2 â€” Build & Scan (trigger: push to main)**
 - Purpose: Produce container images with verified security posture
 - Gate: No CRITICAL or HIGH vulnerabilities in container scan, SBOM generated
 - Artifact: Container images tagged with commit SHA
 
-**Stage 3 — Deploy Staging (trigger: successful Stage 2)**
+**Stage 3 â€” Deploy Staging (trigger: successful Stage 2)**
 - Purpose: Validate deployment in production-like environment
 - Gate: Integration tests pass, DAST scan finds no HIGH findings
 - Contains: Database migrations run before app deploy
 
-**Stage 4 — Deploy Production (trigger: manual approval after Stage 3)**
+**Stage 4 â€” Deploy Production (trigger: manual approval after Stage 3)**
 - Purpose: Zero-downtime release to production
 - Gate: Smoke tests pass, 10-minute monitoring window with error rate &lt; 1%
 - Fallback: Automatic rollback if gate fails
 
-**Stage 5 — Observe (continuous)**
+**Stage 5 â€” Observe (continuous)**
 - Purpose: Provide visibility into system health
 - Alert thresholds: Error rate > 1% for 5 minutes, p95 latency > 500ms, pod crash loops
 
@@ -147,9 +147,9 @@ Each pipeline stage has a specific purpose, trigger, and gate:
 
 You will build a complete DevOps pipeline for a sample e-commerce application. The application consists of three microservices:
 
-- **Frontend** — React single-page application served by Nginx
-- **API** — Node.js or Go REST API service
-- **Database** — PostgreSQL
+- **Frontend** â€” React single-page application served by Nginx
+- **API** â€” Node.js or Go REST API service
+- **Database** â€” PostgreSQL
 
 The pipeline must automate build, test, security scan, deploy, monitor, and rollback. All infrastructure is provisioned through code. All operations are observable.
 
@@ -164,17 +164,17 @@ The pipeline must automate build, test, security scan, deploy, monitor, and roll
 - Create a GitHub repository with the following directory structure:
 ```
 /
-├── frontend/          # React application
-├── api/               # Node.js or Go API service
-├── infra/             # Terraform configurations
-├── k8s/               # Kubernetes manifests
-├── scripts/           # Automation scripts
-├── .github/           # CI/CD workflows
-│   └── workflows/
-├── docs/              # Documentation
-├── docker-compose.yml # Local development
-├── Makefile           # Development helpers
-└── README.md
+â”œâ”€â”€ frontend/          # React application
+â”œâ”€â”€ api/               # Node.js or Go API service
+â”œâ”€â”€ infra/             # Terraform configurations
+â”œâ”€â”€ k8s/               # Kubernetes manifests
+â”œâ”€â”€ scripts/           # Automation scripts
+â”œâ”€â”€ .github/           # CI/CD workflows
+â”‚   â””â”€â”€ workflows/
+â”œâ”€â”€ docs/              # Documentation
+â”œâ”€â”€ docker-compose.yml # Local development
+â”œâ”€â”€ Makefile           # Development helpers
+â””â”€â”€ README.md
 ```
 
 - Use trunk-based development with short-lived feature branches
@@ -309,9 +309,9 @@ The deployment script:
   - Resource utilization (CPU, memory)
 - Configure Loki for log aggregation with Promtail
 - Set up alert rules:
-  - High error rate (>1% for 5 minutes) → PagerDuty
-  - High latency (p95 > 500ms for 5 minutes) → Slack notification
-  - Pod crash loop → PagerDuty
+  - High error rate (>1% for 5 minutes) â†’ PagerDuty
+  - High latency (p95 > 500ms for 5 minutes) â†’ Slack notification
+  - Pod crash loop â†’ PagerDuty
 
 ### 8. Security Scanning
 
@@ -337,12 +337,12 @@ Integrate the following security tools in the pipeline:
 
 Submit the following:
 
-1. **GitHub Repository** → Complete source code with all configurations
-2. **README.md** → Architecture overview, setup instructions, deployment guide
-3. **Pipeline Documentation** → Description of each stage, triggers, and gates
-4. **Architecture Diagram** → System architecture including network, deployment, and data flow
-5. **Runbook** → Operational procedures for deployment, rollback, incident response, and recovery
-6. **Presentation** → 10-minute recorded walkthrough of the pipeline
+1. **GitHub Repository** â†’ Complete source code with all configurations
+2. **README.md** â†’ Architecture overview, setup instructions, deployment guide
+3. **Pipeline Documentation** â†’ Description of each stage, triggers, and gates
+4. **Architecture Diagram** â†’ System architecture including network, deployment, and data flow
+5. **Runbook** â†’ Operational procedures for deployment, rollback, incident response, and recovery
+6. **Presentation** â†’ 10-minute recorded walkthrough of the pipeline
 
 ## Evaluation Criteria
 
@@ -532,7 +532,7 @@ const results = orchestrator.execute(run, 'deploy-staging');
 console.log(orchestrator.generateReport(run, results));
 ```
 
-**What this demonstrates:** A pipeline orchestrator models the complete CI/CD workflow with conditional gates, stage dependencies, and comprehensive reporting — integrating all DevOps practices.
+**What this demonstrates:** A pipeline orchestrator models the complete CI/CD workflow with conditional gates, stage dependencies, and comprehensive reporting â€” integrating all DevOps practices.
 
 ---
 

@@ -1,4 +1,4 @@
-# Chapter 5: Constraint Satisfaction Problems
+﻿# Chapter 5: Constraint Satisfaction Problems
 
 > **Previous:** [Chapter 4: CSP](04-csp.md) | **Next:** [Chapter 5: Game Playing and Adversarial Search](05-game-playing.md)
 
@@ -11,16 +11,16 @@ By the end of this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/05-csp/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/05-csp/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/05-csp/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/05-csp/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/05-csp/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/05-csp/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/05-csp/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/05-csp/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/05-csp/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/05-csp/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/05-csp/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/05-csp/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -39,7 +39,7 @@ By the end of this chapter, students will be able to:
 
 ## Why CSP Algorithms Matter
 
-**Real-World Analogy:** You manage a hospital with 50 nurses, 3 shifts per day, 7 days per week. Each nurse has preferred shifts, qualification requirements (ICU, ER, general ward), contractual limits (max 5 night shifts per month), and you need minimum coverage per shift (3 ICU nurses, 8 total). Doing this manually takes hours, produces conflicts, and makes nurses unhappy. This is a **constraint satisfaction problem** — CSP algorithms solve it systematically.
+**Real-World Analogy:** You manage a hospital with 50 nurses, 3 shifts per day, 7 days per week. Each nurse has preferred shifts, qualification requirements (ICU, ER, general ward), contractual limits (max 5 night shifts per month), and you need minimum coverage per shift (3 ICU nurses, 8 total). Doing this manually takes hours, produces conflicts, and makes nurses unhappy. This is a **constraint satisfaction problem** â€” CSP algorithms solve it systematically.
 
 CSP algorithms explore assignments while using constraints to prune impossible options early. The same techniques schedule airline crews, solve Sudoku, assign conference rooms, configure computer systems, and plan Mars rover operations. Without them, these tasks require exponentially more brute-force computation.
 
@@ -88,14 +88,14 @@ Planning a wedding reception: you have tables, guests, and vendors (**variables*
 
 A **Constraint Satisfaction Problem (CSP)** is a triple $(X, D, C)$:
 
-- **$X = \{X_1, X_2, ..., X_n\}$** — a finite set of **variables**
-- **$D = \{D_1, D_2, ..., D_n\}$** — a finite set of **domains** (each $D_i$ lists the possible values for $X_i$)
-- **$C = \{C_1, C_2, ..., C_m\}$** — a finite set of **constraints** restricting permissible value combinations
+- **$X = \{X_1, X_2, ..., X_n\}$** â€” a finite set of **variables**
+- **$D = \{D_1, D_2, ..., D_n\}$** â€” a finite set of **domains** (each $D_i$ lists the possible values for $X_i$)
+- **$C = \{C_1, C_2, ..., C_m\}$** â€” a finite set of **constraints** restricting permissible value combinations
 
 A **state** is an assignment of values to some or all variables. An **assignment** is:
-- **Consistent** — if it does not violate any constraints
-- **Complete** — if every variable is assigned a value
-- A **Solution** — if it is both consistent and complete
+- **Consistent** â€” if it does not violate any constraints
+- **Complete** â€” if every variable is assigned a value
+- A **Solution** â€” if it is both consistent and complete
 
 ### Types of Constraints
 
@@ -123,8 +123,8 @@ Color regions of Australia {WA, NT, Q, NSW, V, SA, T} with {Red, Green, Blue} su
 ```
 Variables:   WA, NT, Q, NSW, V, SA, T
 Domains:     {Red, Green, Blue} for all
-Constraints: WA ≠ NT, WA ≠ SA, NT ≠ SA, NT ≠ Q,
-             SA ≠ Q, SA ≠ NSW, SA ≠ V, Q ≠ NSW, NSW ≠ V
+Constraints: WA â‰  NT, WA â‰  SA, NT â‰  SA, NT â‰  Q,
+             SA â‰  Q, SA â‰  NSW, SA â‰  V, Q â‰  NSW, NSW â‰  V
 ```
 
 ### Python: CSP Representation
@@ -158,7 +158,7 @@ def create_australia_csp():
 ### Real-World Analogy
 
 
-Planning a road trip through 10 cities. You pick a first city, then the next, and so on. When you hit a dead end (no unvisited city reachable from your current one), you don't start over — backtrack to the previous city and try a different route. Backtracking for CSPs works identically: assign one variable at a time, and on conflict, undo the last assignment and try the next value.
+Planning a road trip through 10 cities. You pick a first city, then the next, and so on. When you hit a dead end (no unvisited city reachable from your current one), you don't start over â€” backtrack to the previous city and try a different route. Backtracking for CSPs works identically: assign one variable at a time, and on conflict, undo the last assignment and try the next value.
 
 ### Definition
 
@@ -183,12 +183,12 @@ Planning a road trip through 10 cities. You pick a first city, then the next, an
 Algorithm: BacktrackingSearch(assignment, csp)
 1.  IF assignment is complete THEN
 2.      RETURN assignment
-3.  var ← SELECT-UNASSIGNED-VARIABLE(csp, assignment)
+3.  var â† SELECT-UNASSIGNED-VARIABLE(csp, assignment)
 4.  FOR EACH value in ORDER-DOMAIN-VALUES(csp, var, assignment):
 5.      IF value IS CONSISTENT WITH assignment THEN
 6.          Add {var = value} to assignment
-7.          result ← BacktrackingSearch(assignment, csp)
-8.          IF result ≠ failure THEN
+7.          result â† BacktrackingSearch(assignment, csp)
+8.          IF result â‰  failure THEN
 9.              RETURN result
 10.         Remove {var = value} from assignment
 11. RETURN failure
@@ -197,17 +197,17 @@ Algorithm: BacktrackingSearch(assignment, csp)
 ### Step-by-Step Dry Run: Map Coloring (Plain Backtracking)
 
 
-**Problem:** Color WA, NT, SA with {R, G, B}, constraints: WA≠NT, WA≠SA, NT≠SA.  
-**Order:** WA → NT → SA. **Values:** R → G → B.
+**Problem:** Color WA, NT, SA with {R, G, B}, constraints: WAâ‰ NT, WAâ‰ SA, NTâ‰ SA.  
+**Order:** WA â†’ NT â†’ SA. **Values:** R â†’ G â†’ B.
 
 | Step | Var | Value | Consistent? | Assigned State | Action |
 |------|-----|-------|-------------|----------------|--------|
-| 1 | WA | R | ✓ (first var) | {WA=R} | Assign, recurse |
-| 2 | NT | R | ✗ (WA=R) | — | Skip |
-| 2a | NT | G | ✓ (R≠G) | {WA=R, NT=G} | Assign, recurse |
-| 3 | SA | R | ✗ (WA=R) | — | Skip |
-| 3a | SA | G | ✗ (NT=G) | — | Skip |
-| 3b | SA | B | ✓ (R≠B, G≠B) | {WA=R, NT=G, SA=B} | **Solution!** |
+| 1 | WA | R | âœ“ (first var) | {WA=R} | Assign, recurse |
+| 2 | NT | R | âœ— (WA=R) | â€” | Skip |
+| 2a | NT | G | âœ“ (Râ‰ G) | {WA=R, NT=G} | Assign, recurse |
+| 3 | SA | R | âœ— (WA=R) | â€” | Skip |
+| 3a | SA | G | âœ— (NT=G) | â€” | Skip |
+| 3b | SA | B | âœ“ (Râ‰ B, Gâ‰ B) | {WA=R, NT=G, SA=B} | **Solution!** |
 
 **Result:** WA=R, NT=G, SA=B. Only 3 assignments + 3 rejections = 6 attempts.
 
@@ -216,7 +216,7 @@ Algorithm: BacktrackingSearch(assignment, csp)
 
 | Heuristic | Description | Effect |
 |-----------|-------------|--------|
-| **MRV** (Minimum Remaining Values) | Pick variable with smallest domain | "Fail-first" — detects dead ends fastest |
+| **MRV** (Minimum Remaining Values) | Pick variable with smallest domain | "Fail-first" â€” detects dead ends fastest |
 | **Degree** | Pick variable with most constraints on **unassigned** neighbors | Breaks MRV ties; reduces future branching |
 
 ### Value Ordering Heuristic
@@ -224,7 +224,7 @@ Algorithm: BacktrackingSearch(assignment, csp)
 
 | Heuristic | Description | Effect |
 |-----------|-------------|--------|
-| **LCV** (Least Constraining Value) | Pick value that rules out fewest choices for neighbors | "Succeed-first" — keeps maximum flexibility |
+| **LCV** (Least Constraining Value) | Pick value that rules out fewest choices for neighbors | "Succeed-first" â€” keeps maximum flexibility |
 
 ### Python: Backtracking with MRV and LCV
 
@@ -277,15 +277,15 @@ print(solution)
 ### Dry Run: With MRV Heuristic
 
 
-Same problem, but MRV selects NT first (SA has degree 2 vs NT's degree 2 vs WA's degree 1 — degree tie-breaker picks NT).
+Same problem, but MRV selects NT first (SA has degree 2 vs NT's degree 2 vs WA's degree 1 â€” degree tie-breaker picks NT).
 
 | Step | MRV Choice | Assign | Domains After Forward Pruning | Backtrack? |
 |------|-----------|--------|-------------------------------|-----------|
-| 1 | NT (degree tie-break) | NT=R | WA:{G,B}, SA:{G,B} | — |
-| 2 | WA or SA (tie, degree: SA=2, WA=1) | SA=G | WA:{B} (G removed by SA) | — |
-| 3 | WA (only choice) | WA=B | ✓ Solution | No |
+| 1 | NT (degree tie-break) | NT=R | WA:{G,B}, SA:{G,B} | â€” |
+| 2 | WA or SA (tie, degree: SA=2, WA=1) | SA=G | WA:{B} (G removed by SA) | â€” |
+| 3 | WA (only choice) | WA=B | âœ“ Solution | No |
 
-**Result:** Only 3 assignment attempts — no backtracking at all. MRV + Degree cut the search tree from 6 attempts to 3.
+**Result:** Only 3 assignment attempts â€” no backtracking at all. MRV + Degree cut the search tree from 6 attempts to 3.
 
 ### Complexity Analysis
 
@@ -295,7 +295,7 @@ Same problem, but MRV selects NT first (SA has degree 2 vs NT's degree 2 vs WA's
 | **Worst** | O($d^n$) | O(n) | No constraints; all d values for each of n variables |
 | **Average (with heuristics)** | O($d^c$) where $c$ is a small constant | O(n) | Good heuristics keep the effective branching factor low |
 
-**Why O($d^n$)?** In a fully disconnected CSP, every variable independently takes any of d values. With n variables, the full search tree has $d^n$ leaves. Backtracking is a complete DFS — worst case visits every leaf.
+**Why O($d^n$)?** In a fully disconnected CSP, every variable independently takes any of d values. With n variables, the full search tree has $d^n$ leaves. Backtracking is a complete DFS â€” worst case visits every leaf.
 
 **Why O(n) space?** Only the current path down the recursion tree is stored, never the full search tree. Maximum recursion depth = n.
 
@@ -304,7 +304,7 @@ Same problem, but MRV selects NT first (SA has degree 2 vs NT's degree 2 vs WA's
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Complete — guaranteed to find solution if one exists | Exponential worst-case O($d^n$) |
+| Complete â€” guaranteed to find solution if one exists | Exponential worst-case O($d^n$) |
 | Memory-efficient (O(n) space) | Chronological backtracking causes thrashing |
 | Simple to implement | No look-ahead; detects failures late |
 | MRV + LCV heuristics dramatically prune search | Uninformed value ordering wastes effort |
@@ -312,11 +312,11 @@ Same problem, but MRV selects NT first (SA has degree 2 vs NT's degree 2 vs WA's
 ### Edge Cases
 
 
-1. **No solution** — explores entire tree, returns None.
-2. **Empty domain** — MRV selects it immediately, fails instantly.
-3. **Single variable** — returns first domain value.
-4. **All-different constraints only** — can use specialized algorithms.
-5. **Tie-breaking** — MRV ties resolved by Degree heuristic.
+1. **No solution** â€” explores entire tree, returns None.
+2. **Empty domain** â€” MRV selects it immediately, fails instantly.
+3. **Single variable** â€” returns first domain value.
+4. **All-different constraints only** â€” can use specialized algorithms.
+5. **Tie-breaking** â€” MRV ties resolved by Degree heuristic.
 
 ---
 
@@ -325,12 +325,12 @@ Same problem, but MRV selects NT first (SA has degree 2 vs NT's degree 2 vs WA's
 ### Real-World Analogy
 
 
-You're assigning conference rooms to meetings. When you book Room A for 10 AM, you immediately cross it off the availability list for every other meeting that overlaps with 10 AM. You don't wait to discover the conflict later — you prune in advance. This is forward checking.
+You're assigning conference rooms to meetings. When you book Room A for 10 AM, you immediately cross it off the availability list for every other meeting that overlaps with 10 AM. You don't wait to discover the conflict later â€” you prune in advance. This is forward checking.
 
 ### Definition
 
 
-**Forward checking** is a look-ahead technique that, after assigning a value to a variable, prunes the domains of all unassigned variables constrained by it. If any domain becomes empty, the assignment is abandoned immediately — saving exponentially deeper search.
+**Forward checking** is a look-ahead technique that, after assigning a value to a variable, prunes the domains of all unassigned variables constrained by it. If any domain becomes empty, the assignment is abandoned immediately â€” saving exponentially deeper search.
 
 ### Algorithm Steps
 
@@ -338,7 +338,7 @@ You're assigning conference rooms to meetings. When you book Room A for 10 AM, y
 1. Assign value $v$ to variable $X_i$.
 2. For each unassigned $X_j$ sharing a constraint with $X_i$:
    - Remove from $D_j$ all values inconsistent with $X_i = v$.
-   - If $D_j$ becomes empty → backtrack immediately.
+   - If $D_j$ becomes empty â†’ backtrack immediately.
 3. Recurse with the reduced domains.
 4. On backtrack, restore all pruned values.
 
@@ -348,14 +348,14 @@ You're assigning conference rooms to meetings. When you book Room A for 10 AM, y
 ```
 Algorithm: ForwardChecking(assignment, csp)
 1.  IF assignment complete THEN RETURN assignment
-2.  var ← SELECT-UNASSIGNED-VARIABLE(csp, assignment)
+2.  var â† SELECT-UNASSIGNED-VARIABLE(csp, assignment)
 3.  FOR EACH value in ORDER-DOMAIN-VALUES(csp, var, assignment):
 4.      IF value IS CONSISTENT THEN
 5.          Add {var = value} to assignment
-6.          domains_backup ← COPY(csp.domains)
-7.          IF FORWARD-PRUNE(csp, var) ≠ failure THEN
-8.              result ← ForwardChecking(assignment, csp)
-9.              IF result ≠ failure THEN RETURN result
+6.          domains_backup â† COPY(csp.domains)
+7.          IF FORWARD-PRUNE(csp, var) â‰  failure THEN
+8.              result â† ForwardChecking(assignment, csp)
+9.              IF result â‰  failure THEN RETURN result
 10.         RESTORE csp.domains from domains_backup
 11.         Remove {var = value} from assignment
 12. RETURN failure
@@ -372,14 +372,14 @@ Algorithm: FORWARD-PRUNE(csp, var)
 ### Step-by-Step Dry Run: Forward Checking on Map Coloring
 
 
-**Problem:** WA, NT, SA with {R, G, B}, constraints: WA≠NT, WA≠SA, NT≠SA.
+**Problem:** WA, NT, SA with {R, G, B}, constraints: WAâ‰ NT, WAâ‰ SA, NTâ‰ SA.
 
 | Step | Action | WA Domain | NT Domain | SA Domain | Note |
 |------|--------|-----------|-----------|-----------|------|
 | 0 | Init | {R,G,B} | {R,G,B} | {R,G,B} | All domains full |
-| 1 | WA=R | **R** | {G,B} | {G,B} | Forward check: WA=R → NT≠R, SA≠R |
-| 2 | NT=G | **R** | **G** | {B} | Forward check: NT=G → SA≠G; SA={B} |
-| 3 | SA=B | **R** | **G** | **B** | **Solution** ✓ |
+| 1 | WA=R | **R** | {G,B} | {G,B} | Forward check: WA=R â†’ NTâ‰ R, SAâ‰ R |
+| 2 | NT=G | **R** | **G** | {B} | Forward check: NT=G â†’ SAâ‰ G; SA={B} |
+| 3 | SA=B | **R** | **G** | **B** | **Solution** âœ“ |
 
 **No backtracking needed.** Forward checking pruned SA's domain to a single value {B} before we reached it.
 
@@ -415,7 +415,7 @@ def forward_prune(var, csp, assignment):
                 if constraint_fn(assignment[var], val):
                     new_domain.append(val)
             if not new_domain:
-                return False  # Domain wipeout → backtrack
+                return False  # Domain wipeout â†’ backtrack
             csp['domains'][neighbor] = new_domain
     return True
 
@@ -433,25 +433,25 @@ print(solution)
 | **Space** | O($n \cdot d$) | Domain snapshots at each recursion level |
 | **Total worst-case** | O($d^n$) | Still exponential, but constant factor much better than backtracking |
 
-**Why forward checking is still exponential:** It only looks one step ahead — constraints involving the just-assigned variable. It doesn't propagate through chains (A→B→C). AC-3 handles that.
+**Why forward checking is still exponential:** It only looks one step ahead â€” constraints involving the just-assigned variable. It doesn't propagate through chains (Aâ†’Bâ†’C). AC-3 handles that.
 
 ### Advantages & Disadvantages
 
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Detects dead ends earlier than plain backtracking | Higher per-node overhead — scans all neighbor domains |
-| Simple to implement — one extra pruning loop | Only prunes one step ahead; misses indirect conflicts |
+| Detects dead ends earlier than plain backtracking | Higher per-node overhead â€” scans all neighbor domains |
+| Simple to implement â€” one extra pruning loop | Only prunes one step ahead; misses indirect conflicts |
 | Eliminates many recursive calls | Domain snapshots consume extra memory |
 | Eliminates backtracking on easy problems | Does not detect all inconsistencies (weak pruning) |
 
 ### Edge Cases
 
 
-1. **Domain wipeout** — triggers immediate backtrack, saving deep exploration.
-2. **No constraints** — forward checking does nothing; no pruning.
-3. **Dense graph** — many neighbors means more pruning but also more work.
-4. **Large domains** — pruning overhead scales with domain size.
+1. **Domain wipeout** â€” triggers immediate backtrack, saving deep exploration.
+2. **No constraints** â€” forward checking does nothing; no pruning.
+3. **Dense graph** â€” many neighbors means more pruning but also more work.
+4. **Large domains** â€” pruning overhead scales with domain size.
 
 ---
 
@@ -460,7 +460,7 @@ print(solution)
 ### Real-World Analogy
 
 
-You're planning a dinner party menu. You decide to serve salmon. This propagates: salmon → needs white wine → guest Bob is allergic to sulfites in white wine → Bob needs a different main course. One decision triggers a chain reaction through multiple constraints. This is exactly how **arc consistency** propagates constraints through the variable network.
+You're planning a dinner party menu. You decide to serve salmon. This propagates: salmon â†’ needs white wine â†’ guest Bob is allergic to sulfites in white wine â†’ Bob needs a different main course. One decision triggers a chain reaction through multiple constraints. This is exactly how **arc consistency** propagates constraints through the variable network.
 
 ### Definition
 
@@ -479,7 +479,7 @@ AC-3 makes the entire CSP arc-consistent by iteratively processing arcs and prop
    a. Pop arc $(X_i, X_j)$.
    b. **Revise:** remove values from $D_i$ with no supporting value in $D_j$.
    c. If $D_i$ changed:
-      - If $D_i$ is empty → return failure.
+      - If $D_i$ is empty â†’ return failure.
       - Add all arcs $(X_k, X_i)$ back to queue (where $X_k \neq X_j$).
 3. Return success (all arcs consistent).
 
@@ -488,22 +488,22 @@ AC-3 makes the entire CSP arc-consistent by iteratively processing arcs and prop
 
 ```
 Algorithm: AC-3(csp)
-1.  queue ← {(Xi, Xj) | constraint between Xi and Xj, direction both ways}
-2.  WHILE queue ≠ ∅:
-3.      (Xi, Xj) ← POP(queue)
+1.  queue â† {(Xi, Xj) | constraint between Xi and Xj, direction both ways}
+2.  WHILE queue â‰  âˆ…:
+3.      (Xi, Xj) â† POP(queue)
 4.      IF REVISE(csp, Xi, Xj) THEN
-5.          IF csp.domains[Xi] = ∅ THEN
+5.          IF csp.domains[Xi] = âˆ… THEN
 6.              RETURN failure
 7.          FOR EACH Xk in neighbors(Xi) \ {Xj}:
-8.              queue ← queue ∪ {(Xk, Xi)}
+8.              queue â† queue âˆª {(Xk, Xi)}
 9.  RETURN success
 
 Algorithm: REVISE(csp, Xi, Xj)
-1.  revised ← false
+1.  revised â† false
 2.  FOR EACH a in csp.domains[Xi]:
 3.      IF no b in csp.domains[Xj] satisfies constraint(Xi, Xj) THEN
 4.          Remove a from csp.domains[Xi]
-5.          revised ← true
+5.          revised â† true
 6.  RETURN revised
 ```
 
@@ -517,12 +517,12 @@ Algorithm: REVISE(csp, Xi, Xj)
 | Step | Pop Arc | Revise? | Removed Values | Domains After | Queue Additions |
 |------|---------|---------|---------------|---------------|-----------------|
 | 1 | (X,Y) | Yes | X=3 (no Y > 3) | X:{1,2} Y:{1,2,3} Z:{1,2,3} | (neighbors of X: none) |
-| 2 | (Y,X) | Yes | Y=1 (no X &lt; 1) | X:{1,2} Y:{2,3} Z:{1,2,3} | (neighbors of Y: Z) → (Z,Y) |
-| 3 | (Y,Z) | Yes | Y=3 (no Z > 3) | X:{1,2} Y:{2} Z:{1,2,3} | (neighbors of Y: X) → (X,Y) |
+| 2 | (Y,X) | Yes | Y=1 (no X &lt; 1) | X:{1,2} Y:{2,3} Z:{1,2,3} | (neighbors of Y: Z) â†’ (Z,Y) |
+| 3 | (Y,Z) | Yes | Y=3 (no Z > 3) | X:{1,2} Y:{2} Z:{1,2,3} | (neighbors of Y: X) â†’ (X,Y) |
 | 4 | (Z,Y) | Yes | Z=1,2 (no Y &lt; 1 or <2? Y=2, so need Z&gt;2) | X:{1,2} Y:{2} Z:{3} | (neighbors of Z: none) |
 | 5 | (X,Y) | Yes | X=2 (no Y > 2? Y=2, 2&lt;2 false) | X:{1} Y:{2} Z:{3} | (neighbors of X: none) |
 
-**Final:** X={1}, Y={2}, Z={3}. **Solution found by propagation alone — no search needed!**
+**Final:** X={1}, Y={2}, Z={3}. **Solution found by propagation alone â€” no search needed!**
 
 ### Python Implementation
 
@@ -598,18 +598,18 @@ print(csp_small['domains'])  # {'X': [1], 'Y': [2], 'Z': [3]}
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Prunes domains **before** search — reduces branching factor | O($e \cdot d^3$) can be high for large domains |
-| Detects inconsistency without any search | Only binary consistency — not path or global |
+| Prunes domains **before** search â€” reduces branching factor | O($e \cdot d^3$) can be high for large domains |
+| Detects inconsistency without any search | Only binary consistency â€” not path or global |
 | Can solve some CSPs entirely (no search needed) | Re-revision on domain changes is repetitive |
 | Interleaves naturally with backtracking (MAC algorithm) | AC-2001 is strictly faster (O($e \cdot d^2$)) |
 
 ### Edge Cases
 
 
-1. **Empty domain after revision** — CSP has no solution.
-2. **No binary constraints** — queue remains empty; AC-3 does nothing.
-3. **Singleton domains propagate** — often solve the CSP without search.
-4. **Disconnected graph** — each component propagates independently.
+1. **Empty domain after revision** â€” CSP has no solution.
+2. **No binary constraints** â€” queue remains empty; AC-3 does nothing.
+3. **Singleton domains propagate** â€” often solve the CSP without search.
+4. **Disconnected graph** â€” each component propagates independently.
 
 ---
 
@@ -618,7 +618,7 @@ print(csp_small['domains'])  # {'X': [1], 'Y': [2], 'Z': [3]}
 ### Real-World Analogy
 
 
-You're arranging 8 queens on a chessboard. Instead of placing them one by one from scratch, start with a random board (all 8 queens placed, one per column) and fix the worst conflicts. A queen attacked by 3 others — move it to the square in its column with the fewest attacks. Repeat. On average, all conflicts disappear within 50 moves.
+You're arranging 8 queens on a chessboard. Instead of placing them one by one from scratch, start with a random board (all 8 queens placed, one per column) and fix the worst conflicts. A queen attacked by 3 others â€” move it to the square in its column with the fewest attacks. Repeat. On average, all conflicts disappear within 50 moves.
 
 ### Definition
 
@@ -642,13 +642,13 @@ You're arranging 8 queens on a chessboard. Instead of placing them one by one fr
 
 ```
 Algorithm: MinConflicts(csp, max_steps)
-1.  current ← COMPLETE-RANDOM-ASSIGNMENT(csp)
+1.  current â† COMPLETE-RANDOM-ASSIGNMENT(csp)
 2.  FOR i = 1 TO max_steps:
 3.      IF current has no violations THEN
 4.          RETURN current
-5.      var ← RANDOM-CONFLICTED-VARIABLE(current)
-6.      value ← value minimizing CONFLICTS(var, value, current)
-7.      current[var] ← value
+5.      var â† RANDOM-CONFLICTED-VARIABLE(current)
+6.      value â† value minimizing CONFLICTS(var, value, current)
+7.      current[var] â† value
 8.  RETURN failure  // restart with new random assignment
 ```
 
@@ -664,27 +664,27 @@ Algorithm: MinConflicts(csp, max_steps)
 | Row2 | | | Q3 | |
 | Row1 | Q1 | Q2 | | |
 
-**Conflicts:** Q1↔Q2 (same row), Q1↔Q4 (diagonal). **Total = 2 conflicts.**
+**Conflicts:** Q1â†”Q2 (same row), Q1â†”Q4 (diagonal). **Total = 2 conflicts.**
 
 | Step | Pick | Val | Conflict Count for Each Row | Best Row | Assign |
 |------|------|-----|---------------------------|----------|--------|
-| 1 | Q2 | Row1 | 2 (same row Q1, diag Q4) | — | — |
-| | | Row2 | 2 (diag Q1, same row Q3) | — | — |
-| | | Row3 | 1 (diag Q3) | ✓ | **Q2=r3** |
-| | | Row4 | 2 (diag Q1, same row Q4) | — | — |
+| 1 | Q2 | Row1 | 2 (same row Q1, diag Q4) | â€” | â€” |
+| | | Row2 | 2 (diag Q1, same row Q3) | â€” | â€” |
+| | | Row3 | 1 (diag Q3) | âœ“ | **Q2=r3** |
+| | | Row4 | 2 (diag Q1, same row Q4) | â€” | â€” |
 
-**After step 1:** Q1=r1, Q2=r3, Q3=r2, Q4=r4. Conflicts: Q1↔Q4 (diag) = 1 conflict.
-
-| Step | Pick | Val | Conflict Count | Best | Assign |
-|------|------|-----|---------------|------|--------|
-| 2 | Q4 | Row1 | 0 ✓ | ✓ | **Q4=r1** |
-
-**After step 2:** Q1=r1, Q2=r3, Q3=r2, Q4=r1. Conflicts: Q1↔Q4 (same row) = 1 conflict.
+**After step 1:** Q1=r1, Q2=r3, Q3=r2, Q4=r4. Conflicts: Q1â†”Q4 (diag) = 1 conflict.
 
 | Step | Pick | Val | Conflict Count | Best | Assign |
 |------|------|-----|---------------|------|--------|
-| 3 | Q4 | Row2 | 1 (diag Q3?) | — | — |
-| | | Row3 | 1 (diag? |3-3|=0, |4-3|=1... Q2 at r3,c2: |4-2|=2, |3-2|=1→no. Q3 at r2,c3: |4-2|=2, |3-3|=0→no) | |
+| 2 | Q4 | Row1 | 0 âœ“ | âœ“ | **Q4=r1** |
+
+**After step 2:** Q1=r1, Q2=r3, Q3=r2, Q4=r1. Conflicts: Q1â†”Q4 (same row) = 1 conflict.
+
+| Step | Pick | Val | Conflict Count | Best | Assign |
+|------|------|-----|---------------|------|--------|
+| 3 | Q4 | Row2 | 1 (diag Q3?) | â€” | â€” |
+| | | Row3 | 1 (diag? |3-3|=0, |4-3|=1... Q2 at r3,c2: |4-2|=2, |3-2|=1â†’no. Q3 at r2,c3: |4-2|=2, |3-3|=0â†’no) | |
 | | | | Well let me just say row3 has 0 conflicts, this is an illustration. |
 
 You get the idea. After a few steps, all conflicts disappear.
@@ -774,7 +774,7 @@ print(min_conflicts(nqueens_csp(8), max_steps=1000))
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Extremely fast — often O(n) steps | **Incomplete** — may not find solution even if one exists |
+| Extremely fast â€” often O(n) steps | **Incomplete** â€” may not find solution even if one exists |
 | Scales to million-variable problems | Requires random restarts when stuck |
 | Simple to implement | No guarantee of optimality |
 | Excellent for SAT, N-Queens, scheduling | Performance depends heavily on restart strategy |
@@ -782,10 +782,10 @@ print(min_conflicts(nqueens_csp(8), max_steps=1000))
 ### Edge Cases
 
 
-1. **No solution exists** — runs forever without finding one; must detect via step limit.
-2. **Random restarts** — when stuck, regenerate complete random assignment and retry.
-3. **Tie-breaking** — when multiple values have same min-conflict count, pick randomly.
-4. **Initial assignment matters** — some random starts converge faster; others need restart.
+1. **No solution exists** â€” runs forever without finding one; must detect via step limit.
+2. **Random restarts** â€” when stuck, regenerate complete random assignment and retry.
+3. **Tie-breaking** â€” when multiple values have same min-conflict count, pick randomly.
+4. **Initial assignment matters** â€” some random starts converge faster; others need restart.
 
 ---
 
@@ -805,11 +805,11 @@ print(min_conflicts(nqueens_csp(8), max_steps=1000))
 ### When to Use What
 
 
-- **Simple problems (n &lt; 20, d < 10)** — plain backtracking is fine.
-- **Moderate problems (n &lt; 100)** — forward checking + MRV/LCV.
-- **Highly constrained** — AC-3 preprocessing + forward checking (this is MAC).
-- **Very large problems (n > 10,000)** — Min-Conflicts (incomplete but fast).
-- **Tree-structured constraint graph** — specialized O($n \cdot d^2$) algorithm without backtracking.
+- **Simple problems (n &lt; 20, d < 10)** â€” plain backtracking is fine.
+- **Moderate problems (n &lt; 100)** â€” forward checking + MRV/LCV.
+- **Highly constrained** â€” AC-3 preprocessing + forward checking (this is MAC).
+- **Very large problems (n > 10,000)** â€” Min-Conflicts (incomplete but fast).
+- **Tree-structured constraint graph** â€” specialized O($n \cdot d^2$) algorithm without backtracking.
 
 ---
 
@@ -818,7 +818,7 @@ print(min_conflicts(nqueens_csp(8), max_steps=1000))
 ### N-Queens Problem
 
 
-**Problem:** Place N queens on an N×N chessboard so that no two attack each other (same row, column, or diagonal).
+**Problem:** Place N queens on an NÃ—N chessboard so that no two attack each other (same row, column, or diagonal).
 
 **CSP Formulation:**
 - **Variables:** $Q_0, Q_1, ..., Q_{N-1}$ (one per column)
@@ -864,7 +864,7 @@ print(nqueens_min_conflicts(8))  # e.g., [4, 1, 3, 6, 2, 7, 5, 0]
 ### Sudoku Solver Design
 
 
-**Problem:** Fill a 9×9 grid so each row, column, and 3×3 box contains digits 1-9 exactly once.
+**Problem:** Fill a 9Ã—9 grid so each row, column, and 3Ã—3 box contains digits 1-9 exactly once.
 
 **CSP Formulation:**
 - **Variables:** 81 cells $(r, c)$
@@ -873,7 +873,7 @@ print(nqueens_min_conflicts(8))  # e.g., [4, 1, 3, 6, 2, 7, 5, 0]
 
 **Solution approach:** AC-3 + backtracking with MRV. AC-3 alone solves easy puzzles. Hard puzzles need search.
 
-**Key design decision:** Use AC-3 at each node of backtracking (this is **MAC** — Maintaining Arc Consistency). It is the most efficient complete Sudoku solver.
+**Key design decision:** Use AC-3 at each node of backtracking (this is **MAC** â€” Maintaining Arc Consistency). It is the most efficient complete Sudoku solver.
 
 ```python
 def sudoku_solve(grid):
@@ -891,11 +891,11 @@ def sudoku_solve(grid):
 
 **Problem:** Given a map with regions and K colors, color regions so adjacent regions differ.
 
-**CSP Formulation:** Same as Australia example — each region is a variable, domain is {1...K}, constraints are ≠ between adjacent regions.
+**CSP Formulation:** Same as Australia example â€” each region is a variable, domain is {1...K}, constraints are â‰  between adjacent regions.
 
 **Follow-up question:** What is the minimum K needed for any map? The **Four Color Theorem** proves K=4 is sufficient for any planar map. Testing if K=3 is sufficient is NP-complete.
 
-**Interview tip:** Show how to model — don't jump to code. First identify variables, domains, constraints. Then pick algorithm (AC-3 + backtracking for K=3, Min-Conflicts for large maps).
+**Interview tip:** Show how to model â€” don't jump to code. First identify variables, domains, constraints. Then pick algorithm (AC-3 + backtracking for K=3, Min-Conflicts for large maps).
 
 ---
 
@@ -927,7 +927,7 @@ def sudoku_solve(grid):
 - **Qualification:** Only ICU-certified nurses can take ICU shifts
 - **Contractual:** Max 5 night shifts per month per nurse
 - **Rest:** No nurse works two consecutive night shifts
-- **Preference:** Nurses rank preferred shifts (soft constraint — optimize satisfaction)
+- **Preference:** Nurses rank preferred shifts (soft constraint â€” optimize satisfaction)
 
 **Solution:** Use AC-3 preprocessing then forward checking with MRV for the hard constraints. Then apply Min-Conflicts to optimize soft constraint satisfaction.
 
@@ -942,7 +942,7 @@ def sudoku_solve(grid):
 | Path Consistency | Very Strong | High | Preprocessing |
 | MAC (Maintaining Arc Consistency) | Strongest | High | Interleaved with search |
 
-### Quick Reference — CSP Search & Propagation
+### Quick Reference â€” CSP Search & Propagation
 
 
 | Concept | Definition | Benefit |
@@ -959,12 +959,12 @@ def sudoku_solve(grid):
 
 | Technique | ML Engineering | Computer Vision | NLP | Research |
 |-----------|:---:|:---:|:---:|:---:|
-| CSP Formulation | ✓ | ✓ | ✓ | ✓ |
-| Backtracking Search | ✗ | ✗ | ✗ | ✓ |
-| AC-3 Propagation | ✗ | ✗ | ✗ | ✓ |
-| MRV/LCV Heuristics | ✗ | ✗ | ✗ | ✓ |
-| Forward Checking | ✗ | ✗ | ✗ | ✓ |
-| Min-Conflicts | ✗ | ✗ | ✗ | ✓ |
+| CSP Formulation | âœ“ | âœ“ | âœ“ | âœ“ |
+| Backtracking Search | âœ— | âœ— | âœ— | âœ“ |
+| AC-3 Propagation | âœ— | âœ— | âœ— | âœ“ |
+| MRV/LCV Heuristics | âœ— | âœ— | âœ— | âœ“ |
+| Forward Checking | âœ— | âœ— | âœ— | âœ“ |
+| Min-Conflicts | âœ— | âœ— | âœ— | âœ“ |
 
 ---
 
@@ -1012,18 +1012,18 @@ def sudoku_solve(grid):
 
 ---
 
-> **&#x1f4a1; Pro Tip:** For real-world CSPs, start with the most constrained variable (MRV) and use AC-3 for consistency enforcement — these alone solve most practical problems. Use Min-Conflicts only when the problem is too large for complete search (N > 10,000 variables).
+> **&#x1f4a1; Pro Tip:** For real-world CSPs, start with the most constrained variable (MRV) and use AC-3 for consistency enforcement â€” these alone solve most practical problems. Use Min-Conflicts only when the problem is too large for complete search (N > 10,000 variables).
 
 ---
 
 ## Summary
 
-- **CSPs** are defined by variables (X), domains (D), and constraints (C) — the goal is a complete, consistent assignment.
-- **Backtracking search** is the foundational DFS algorithm — assign one variable at a time, backtrack on conflict.
+- **CSPs** are defined by variables (X), domains (D), and constraints (C) â€” the goal is a complete, consistent assignment.
+- **Backtracking search** is the foundational DFS algorithm â€” assign one variable at a time, backtrack on conflict.
 - **MRV** (fail-first) and **LCV** (succeed-first) heuristics dramatically reduce the search tree size.
-- **Forward checking** prunes neighbor domains after each assignment — detects dead ends earlier.
-- **AC-3** enforces arc consistency across the entire graph — often solves CSPs without any search.
-- **Min-Conflicts** uses random assignment + iterative repair — scales to million-variable problems but is incomplete.
+- **Forward checking** prunes neighbor domains after each assignment â€” detects dead ends earlier.
+- **AC-3** enforces arc consistency across the entire graph â€” often solves CSPs without any search.
+- **Min-Conflicts** uses random assignment + iterative repair â€” scales to million-variable problems but is incomplete.
 - Real-world applications include scheduling, resource allocation, configuration problems, and puzzle solving.
 
 ---
@@ -1052,4 +1052,4 @@ def sudoku_solve(grid):
 
 ---
 
-> **Next:** [Chapter 5: Game Playing and Adversarial Search](05-game-playing.md) — From constraint solving to competitive decision-making against an opponent.
+> **Next:** [Chapter 5: Game Playing and Adversarial Search](05-game-playing.md) â€” From constraint solving to competitive decision-making against an opponent.

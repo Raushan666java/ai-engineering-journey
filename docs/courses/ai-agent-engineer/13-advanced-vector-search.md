@@ -1,7 +1,7 @@
-# Chapter 13 — Advanced Vector Search & RAG
+﻿# Chapter 13 â€” Advanced Vector Search & RAG
 
 **Duration:** 2 weeks, ~22 hours
-**Goal:** Master advanced retrieval — hybrid search, multi-vector retrieval, re-ranking architectures, and production-scale vector database tuning. Move beyond basic cosine similarity.
+**Goal:** Master advanced retrieval â€” hybrid search, multi-vector retrieval, re-ranking architectures, and production-scale vector database tuning. Move beyond basic cosine similarity.
 
 ---
 
@@ -9,16 +9,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/ai-agent-engineer/13-advanced-vector-search/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/ai-agent-engineer/13-advanced-vector-search/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-agent-engineer/13-advanced-vector-search/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/ai-agent-engineer/13-advanced-vector-search/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/ai-agent-engineer/13-advanced-vector-search/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/ai-agent-engineer/13-advanced-vector-search/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-agent-engineer/13-advanced-vector-search/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/ai-agent-engineer/13-advanced-vector-search/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/ai-agent-engineer/13-advanced-vector-search/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/ai-agent-engineer/13-advanced-vector-search/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-agent-engineer/13-advanced-vector-search/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/ai-agent-engineer/13-advanced-vector-search/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -186,7 +186,7 @@ def hybrid_search_demo(query: str):
     # Dense embedding
     dense_vec = client.embeddings.create(input=query, model="text-embedding-3-small").data[0].embedding
 
-    # Sparse embedding (using SPLADE or similar — simplified example)
+    # Sparse embedding (using SPLADE or similar â€” simplified example)
     sparse_vec = {"term1": 0.8, "term2": 0.5}  # Placeholder
 
     # BM25 fits on document collection
@@ -504,7 +504,7 @@ class HNSWTuner:
                 "default": 200,
                 "higher": "Higher recall at build time, slower index build",
                 "lower": "Faster build, potentially lower quality",
-                "recommendation": "200-400 — diminishing returns above 400"
+                "recommendation": "200-400 â€” diminishing returns above 400"
             },
             "ef_search (query-time search width)": {
                 "range": "1-2000 (but typically 50-500)",
@@ -610,7 +610,7 @@ results = searcher.search(q_vec, filters={
 
 for r in results:
     meta = r["metadata"]
-    print(f"{meta.get('title', '?')} — {meta.get('price', '?')} AED — distance: {r['distance']:.4f}")
+    print(f"{meta.get('title', '?')} â€” {meta.get('price', '?')} AED â€” distance: {r['distance']:.4f}")
 ```
 
 ---
@@ -649,7 +649,7 @@ class ProductQuantizer:
 
         for m in range(self.M):
             subvectors = vectors[:, m * sub_dim:(m + 1) * sub_dim]
-            # K-means clustering (simplified — use sklearn in production)
+            # K-means clustering (simplified â€” use sklearn in production)
             centroids = subvectors[:self.K]  # Initialize with first K vectors
             for _ in range(20):  # Simple k-means iterations
                 distances = np.linalg.norm(subvectors[:, None, :] - centroids[None, :, :], axis=2)

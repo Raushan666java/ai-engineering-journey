@@ -1,4 +1,4 @@
-# Chapter 1: Advanced Data Interpretation
+﻿# Chapter 1: Advanced Data Interpretation
 
 ## Learning Objectives
 
@@ -14,16 +14,16 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -83,18 +83,18 @@ Tables are the most common DI format. A table organises data into rows and colum
 | 2022 | 180 | 110 | 260 | 550 |
 
 **Key operations on tables:**
-- **Percentages:** `(Part / Total) × 100`
+- **Percentages:** `(Part / Total) Ã— 100`
 - **Ratios:** Compare row to row or column to column
 - **Averages:** `Sum of values / Number of entries`
-- **Growth rate:** `((New - Old) / Old) × 100`
-- **CAGR:** `((Final / Initial)^(1/n) - 1) × 100` where n = number of years
+- **Growth rate:** `((New - Old) / Old) Ã— 100`
+- **CAGR:** `((Final / Initial)^(1/n) - 1) Ã— 100` where n = number of years
 
 #### Two-Table and Three-Table Combinations
 
 Some questions present two or three related tables. You must cross-reference data across tables:
 
-- **Linked tables:** Table 1 gives production data; Table 2 gives cost per unit. Total cost = production × cost per unit.
-- **Supplementary tables:** Table 1 gives company-wise revenue; Table 2 gives expense ratios. Profit = Revenue × (1 - Expense Ratio).
+- **Linked tables:** Table 1 gives production data; Table 2 gives cost per unit. Total cost = production Ã— cost per unit.
+- **Supplementary tables:** Table 1 gives company-wise revenue; Table 2 gives expense ratios. Profit = Revenue Ã— (1 - Expense Ratio).
 - **Comparison tables:** Table 1 and Table 2 present the same metrics for different years or different entities.
 
 **Strategy for combined tables:**
@@ -108,7 +108,7 @@ Some questions present two or three related tables. You must cross-reference dat
 Bars of equal width represent values for different categories. The height (or length) is proportional to the value.
 
 **Calculation tips:**
-- Read the scale carefully — does it start at 0? Is there a break?
+- Read the scale carefully â€” does it start at 0? Is there a break?
 - Use the scale markings to estimate values between grid lines
 - When comparing, consider the ratio of bar heights, not absolute differences only
 
@@ -116,8 +116,8 @@ Bars of equal width represent values for different categories. The height (or le
 A single bar is divided into segments, each representing a sub-category. The total height represents the aggregate value.
 
 **Key operations:**
-- **Absolute value of a segment:** `Total bar height × Segment percentage / 100`
-- **Percentage contribution:** `(Segment value / Total bar value) × 100`
+- **Absolute value of a segment:** `Total bar height Ã— Segment percentage / 100`
+- **Percentage contribution:** `(Segment value / Total bar value) Ã— 100`
 - **Comparison across bars:** Compare individual segments or totals
 
 #### Clustered Bar Graph
@@ -132,7 +132,7 @@ Multiple bars are grouped side by side for each category, allowing direct compar
 Each bar represents 100%, and segments show the percentage distribution. The total height is always the same.
 
 **Key operations:**
-- To find actual values: `Total × Percentage / 100`
+- To find actual values: `Total Ã— Percentage / 100`
 - To compare actual values when totals differ, you must multiply percentages by respective totals
 
 ### 1.4 Line Chart Analysis
@@ -158,7 +158,7 @@ Two or more lines on the same axes, differentiated by colour or marker style.
 Shows cumulative growth over time, often with a base year index of 100.
 
 **Key operations:**
-- Value in year N = Base value × (1 + Growth Rate)^N
+- Value in year N = Base value Ã— (1 + Growth Rate)^N
 - To find the growth rate from index values: `(Index_N / Index_Base)^(1/N) - 1`
 - When comparing two entities, relative performance matters more than absolute values
 
@@ -167,20 +167,20 @@ Shows cumulative growth over time, often with a base year index of 100.
 A pie chart shows the proportional distribution of a whole. Each sector's central angle is proportional to its value.
 
 **Key formulas:**
-- **Value of a sector:** `(Percentage / 100) × Total`
-- **Angle of a sector:** `(Percentage / 100) × 360°` or `(Value / Total) × 360°`
-- **Percentage from angle:** `(Angle / 360°) × 100`
+- **Value of a sector:** `(Percentage / 100) Ã— Total`
+- **Angle of a sector:** `(Percentage / 100) Ã— 360Â°` or `(Value / Total) Ã— 360Â°`
+- **Percentage from angle:** `(Angle / 360Â°) Ã— 100`
 
 #### Angle Calculation Quick Reference
 
 | Percentage | Angle |
 |-----------|-------|
-| 100% | 360° |
-| 50% | 180° |
-| 25% | 90° |
-| 12.5% | 45° |
-| 10% | 36° |
-| 1% | 3.6° |
+| 100% | 360Â° |
+| 50% | 180Â° |
+| 25% | 90Â° |
+| 12.5% | 45Â° |
+| 10% | 36Â° |
+| 1% | 3.6Â° |
 
 ### 1.6 Combining Multiple Chart Types
 
@@ -194,9 +194,9 @@ A single question set may include a table, a bar graph, and a pie chart. The que
 **To solve:**
 1. From the table, get the total production for a company
 2. From the bar graph, find the percentage produced in Q1
-3. Compute Q1 production = Total × Q1%
+3. Compute Q1 production = Total Ã— Q1%
 4. From the pie chart, find the cost component percentage
-5. Compute cost = Q1 production × cost per tonne × cost component%
+5. Compute cost = Q1 production Ã— cost per tonne Ã— cost component%
 
 ### 1.7 Approximation and Estimation Strategies
 
@@ -204,9 +204,9 @@ In competitive exams, exact calculation is not always necessary. Approximation s
 
 | Technique | When to Use | Example |
 |-----------|-------------|---------|
-| Rounding | Values are large with decimal places | 47.8 ≈ 48; 1234 ≈ 1200 |
-| Fraction equivalents | Common percentages | 33.33% ≈ 1/3; 25% = 1/4 |
-| Order of magnitude | Very large numbers | 1,24,567 ≈ 1.25 lakh |
+| Rounding | Values are large with decimal places | 47.8 â‰ˆ 48; 1234 â‰ˆ 1200 |
+| Fraction equivalents | Common percentages | 33.33% â‰ˆ 1/3; 25% = 1/4 |
+| Order of magnitude | Very large numbers | 1,24,567 â‰ˆ 1.25 lakh |
 | Difference elimination | Ratios | Compare numerators directly when denominators are close |
 | Range estimation | Multiple data points | Identify min/max before calculating averages |
 
@@ -215,29 +215,29 @@ In competitive exams, exact calculation is not always necessary. Approximation s
 ### 1.8 CAGR and Growth Rate Calculations
 
 **Simple Growth Rate:**
-`Growth Rate = ((Value in Current Year - Value in Previous Year) / Value in Previous Year) × 100`
+`Growth Rate = ((Value in Current Year - Value in Previous Year) / Value in Previous Year) Ã— 100`
 
 **Compound Annual Growth Rate (CAGR):**
-`CAGR = ((Final Value / Initial Value)^(1/n) - 1) × 100`
+`CAGR = ((Final Value / Initial Value)^(1/n) - 1) Ã— 100`
 
 Where n = number of years between initial and final values.
 
 **CAGR approximation for short periods:**
-For 2 years: CAGR ≈ (Average of annual growth rates) - (Variance adjustment)
+For 2 years: CAGR â‰ˆ (Average of annual growth rates) - (Variance adjustment)
 For quick estimation: Use the rule of 72 for doubling time.
 
 ### 1.9 Percentage, Ratio, and Average Concepts in DI
 
 **Percentage change:**
-- Increase: `((New - Old) / Old) × 100`
-- Decrease: `((Old - New) / Old) × 100`
+- Increase: `((New - Old) / Old) Ã— 100`
+- Decrease: `((Old - New) / Old) Ã— 100`
 
 **Ratio calculation:**
 - Part-to-part: Compare two categories
 - Part-to-whole: Compare a category to the total
 
 **Weighted average:**
-`Weighted Average = Σ(Value_i × Weight_i) / Σ(Weight_i)`
+`Weighted Average = Î£(Value_i Ã— Weight_i) / Î£(Weight_i)`
 
 **Key shortcuts:**
 - `x% of y = y% of x` (commutative property)
@@ -397,12 +397,12 @@ d) 1,500 tonnes
 <summary>Answer</summary>
 b) 1,200 tonnes
 
-State A's production = 24% of 5,000 = 0.24 × 5,000 = 1,200 tonnes.
+State A's production = 24% of 5,000 = 0.24 Ã— 5,000 = 1,200 tonnes.
 </details>
 
 ---
 
-**Q2.** A bar graph shows sales of Company X from 2018 to 2023: 120, 150, 180, 170, 210, 250 (in ₹crores). What is the approximate percentage increase from 2018 to 2023?
+**Q2.** A bar graph shows sales of Company X from 2018 to 2023: 120, 150, 180, 170, 210, 250 (in â‚¹crores). What is the approximate percentage increase from 2018 to 2023?
 
 a) 108.3%
 b) 95.2%
@@ -413,23 +413,23 @@ d) 112.4%
 <summary>Answer</summary>
 a) 108.3%
 
-Increase = (250 - 120) / 120 × 100 = 130 / 120 × 100 = 108.33%.
+Increase = (250 - 120) / 120 Ã— 100 = 130 / 120 Ã— 100 = 108.33%.
 </details>
 
 ---
 
-**Q3.** A pie chart shows the market share of four companies: A = 40%, B = 25%, C = 20%, D = 15%. If the total market size is ₹800 crores, what is the revenue of Company B?
+**Q3.** A pie chart shows the market share of four companies: A = 40%, B = 25%, C = 20%, D = 15%. If the total market size is â‚¹800 crores, what is the revenue of Company B?
 
-a) ₹320 crores
-b) ₹160 crores
-c) ₹200 crores
-d) ₹120 crores
+a) â‚¹320 crores
+b) â‚¹160 crores
+c) â‚¹200 crores
+d) â‚¹120 crores
 
 <details>
 <summary>Answer</summary>
-c) ₹200 crores
+c) â‚¹200 crores
 
-Company B's revenue = 25% of 800 = 0.25 × 800 = ₹200 crores.
+Company B's revenue = 25% of 800 = 0.25 Ã— 800 = â‚¹200 crores.
 </details>
 
 ---
@@ -445,39 +445,39 @@ d) 10.5%
 <summary>Answer</summary>
 b) 12.96%
 
-CAGR = ((144/100)^(1/3) - 1) × 100 = (1.44^0.3333 - 1) × 100 ≈ (1.1296 - 1) × 100 = 12.96%.
+CAGR = ((144/100)^(1/3) - 1) Ã— 100 = (1.44^0.3333 - 1) Ã— 100 â‰ˆ (1.1296 - 1) Ã— 100 = 12.96%.
 </details>
 
 ---
 
-**Q5.** A stacked bar shows total expenses of ₹500 lakhs for Department X. If salaries account for 60% and infrastructure for 25%, what is the salary expense?
+**Q5.** A stacked bar shows total expenses of â‚¹500 lakhs for Department X. If salaries account for 60% and infrastructure for 25%, what is the salary expense?
 
-a) ₹125 lakhs
-b) ₹300 lakhs
-c) ₹250 lakhs
-d) ₹350 lakhs
+a) â‚¹125 lakhs
+b) â‚¹300 lakhs
+c) â‚¹250 lakhs
+d) â‚¹350 lakhs
 
 <details>
 <summary>Answer</summary>
-b) ₹300 lakhs
+b) â‚¹300 lakhs
 
-Salary expense = 60% of 500 = 0.60 × 500 = ₹300 lakhs.
+Salary expense = 60% of 500 = 0.60 Ã— 500 = â‚¹300 lakhs.
 </details>
 
 ---
 
-**Q6.** Two tables are given: Table 1 shows production (units) by company: A = 5,000, B = 7,000, C = 4,000. Table 2 shows cost per unit (₹): A = 20, B = 15, C = 25. What is the total production cost for Company C?
+**Q6.** Two tables are given: Table 1 shows production (units) by company: A = 5,000, B = 7,000, C = 4,000. Table 2 shows cost per unit (â‚¹): A = 20, B = 15, C = 25. What is the total production cost for Company C?
 
-a) ₹1,00,000
-b) ₹75,000
-c) ₹1,50,000
-d) ₹1,25,000
+a) â‚¹1,00,000
+b) â‚¹75,000
+c) â‚¹1,50,000
+d) â‚¹1,25,000
 
 <details>
 <summary>Answer</summary>
-a) ₹1,00,000
+a) â‚¹1,00,000
 
-Total cost for Company C = 4,000 units × ₹25/unit = ₹1,00,000.
+Total cost for Company C = 4,000 units Ã— â‚¹25/unit = â‚¹1,00,000.
 </details>
 
 ---
@@ -498,7 +498,7 @@ Trade deficit = 100 - 80 = 20.
 
 ---
 
-**Q8.** A pie chart has a sector with an angle of 72°. What percentage of the total does this sector represent?
+**Q8.** A pie chart has a sector with an angle of 72Â°. What percentage of the total does this sector represent?
 
 a) 10%
 b) 15%
@@ -509,23 +509,23 @@ d) 25%
 <summary>Answer</summary>
 c) 20%
 
-Percentage = (72 / 360) × 100 = 0.2 × 100 = 20%.
+Percentage = (72 / 360) Ã— 100 = 0.2 Ã— 100 = 20%.
 </details>
 
 ---
 
-**Q9.** Three tables show: (1) number of employees per department; (2) average salary per department; (3) number of years of experience. If Dept P has 50 employees with avg salary ₹60,000, what is the total salary bill?
+**Q9.** Three tables show: (1) number of employees per department; (2) average salary per department; (3) number of years of experience. If Dept P has 50 employees with avg salary â‚¹60,000, what is the total salary bill?
 
-a) ₹30,00,000
-b) ₹25,00,000
-c) ₹35,00,000
-d) ₹20,00,000
+a) â‚¹30,00,000
+b) â‚¹25,00,000
+c) â‚¹35,00,000
+d) â‚¹20,00,000
 
 <details>
 <summary>Answer</summary>
-a) ₹30,00,000
+a) â‚¹30,00,000
 
-Total salary = 50 × ₹60,000 = ₹30,00,000.
+Total salary = 50 Ã— â‚¹60,000 = â‚¹30,00,000.
 </details>
 
 ---
@@ -564,7 +564,7 @@ Total = 600 + 1,000 = 1,600.
 
 ---
 
-**Q12.** A line chart shows the stock price of a company over 12 months. The price in January is ₹250 and in December it is ₹450. What is the percentage increase?
+**Q12.** A line chart shows the stock price of a company over 12 months. The price in January is â‚¹250 and in December it is â‚¹450. What is the percentage increase?
 
 a) 70%
 b) 80%
@@ -575,7 +575,7 @@ d) 60%
 <summary>Answer</summary>
 b) 80%
 
-Increase = (450 - 250) / 250 × 100 = 200 / 250 × 100 = 80%.
+Increase = (450 - 250) / 250 Ã— 100 = 200 / 250 Ã— 100 = 80%.
 </details>
 
 ---
@@ -604,18 +604,18 @@ Average = (30 + 36 + 42) / 3 = 108 / 3 = 36 lakh tonnes.
 
 ---
 
-**Q14.** A pie chart shows the expenditure of a family: Food = 30%, Rent = 25%, Education = 20%, Transport = 15%, Savings = 10%. If total monthly income is ₹80,000, what is the expenditure on Rent?
+**Q14.** A pie chart shows the expenditure of a family: Food = 30%, Rent = 25%, Education = 20%, Transport = 15%, Savings = 10%. If total monthly income is â‚¹80,000, what is the expenditure on Rent?
 
-a) ₹24,000
-b) ₹16,000
-c) ₹20,000
-d) ₹12,000
+a) â‚¹24,000
+b) â‚¹16,000
+c) â‚¹20,000
+d) â‚¹12,000
 
 <details>
 <summary>Answer</summary>
-c) ₹20,000
+c) â‚¹20,000
 
-Rent expenditure = 25% of 80,000 = ₹20,000.
+Rent expenditure = 25% of 80,000 = â‚¹20,000.
 </details>
 
 ---
@@ -631,88 +631,88 @@ d) 2022
 <summary>Answer</summary>
 b) 2020
 
-Gaps: 2019 = 4.5-3.0 = 1.5; 2020 = 3.8-2.5 = 1.3; 2021 = 5.2-4.0 = 1.2; 2022 = 6.0-4.8 = 1.2. The gap was smallest in 2020 (1.3). Wait — 2021 and 2022 both 1.2. Actually 1.3 > 1.2, so 2021 has the smallest gap at 1.2. Let me recalculate: the gap is minimal in 2021-2022 both at 1.2. Since 2021 comes first with the same minimal gap, the narrowing happened most between 2020 and 2021.
+Gaps: 2019 = 4.5-3.0 = 1.5; 2020 = 3.8-2.5 = 1.3; 2021 = 5.2-4.0 = 1.2; 2022 = 6.0-4.8 = 1.2. The gap was smallest in 2020 (1.3). Wait â€” 2021 and 2022 both 1.2. Actually 1.3 > 1.2, so 2021 has the smallest gap at 1.2. Let me recalculate: the gap is minimal in 2021-2022 both at 1.2. Since 2021 comes first with the same minimal gap, the narrowing happened most between 2020 and 2021.
 </details>
 
 ---
 
-**Q16.** A stacked bar graph shows total cost broken into Material, Labour, and Overhead. For Product Z, Material = 40%, Labour = 35%, Overhead = 25%. If the total cost is ₹2,00,000, what is the Labour cost?
+**Q16.** A stacked bar graph shows total cost broken into Material, Labour, and Overhead. For Product Z, Material = 40%, Labour = 35%, Overhead = 25%. If the total cost is â‚¹2,00,000, what is the Labour cost?
 
-a) ₹80,000
-b) ₹50,000
-c) ₹70,000
-d) ₹60,000
+a) â‚¹80,000
+b) â‚¹50,000
+c) â‚¹70,000
+d) â‚¹60,000
 
 <details>
 <summary>Answer</summary>
-c) ₹70,000
+c) â‚¹70,000
 
-Labour cost = 35% of 2,00,000 = ₹70,000.
+Labour cost = 35% of 2,00,000 = â‚¹70,000.
 </details>
 
 ---
 
-**Q17.** A table shows exports and imports for 5 years. Ratio of Exports to Imports in Year 1 is 2:3 and in Year 5 is 4:5. If Exports in Year 1 are ₹200 crores, what are Imports in Year 5?
+**Q17.** A table shows exports and imports for 5 years. Ratio of Exports to Imports in Year 1 is 2:3 and in Year 5 is 4:5. If Exports in Year 1 are â‚¹200 crores, what are Imports in Year 5?
 
-a) ₹250 crores
-b) ₹300 crores
-c) ₹200 crores
-d) ₹350 crores
+a) â‚¹250 crores
+b) â‚¹300 crores
+c) â‚¹200 crores
+d) â‚¹350 crores
 
 <details>
 <summary>Answer</summary>
-a) ₹250 crores
+a) â‚¹250 crores
 
-Year 1: E/I = 2/3 → 200/I = 2/3 → I = 300 crores
-Year 5: E/I = 4/5, but we don't know E in Year 5 directly. However, if we assume the problem intends to use the ratio and given data consistently... Actually, we need more info. Let's re-read. If Exports in Year 1 = 200, Imports in Year 1 = 300. The problem doesn't give exports for Year 5 directly. Without additional data, we cannot determine Year 5 imports. This suggests a trick — perhaps the exports in both years are equal or there's implicit data. If Year 5 exports = Year 1 exports = 200, then 200/I = 4/5 → I = 250. This is a standard DI trap question where you must read carefully.
+Year 1: E/I = 2/3 â†’ 200/I = 2/3 â†’ I = 300 crores
+Year 5: E/I = 4/5, but we don't know E in Year 5 directly. However, if we assume the problem intends to use the ratio and given data consistently... Actually, we need more info. Let's re-read. If Exports in Year 1 = 200, Imports in Year 1 = 300. The problem doesn't give exports for Year 5 directly. Without additional data, we cannot determine Year 5 imports. This suggests a trick â€” perhaps the exports in both years are equal or there's implicit data. If Year 5 exports = Year 1 exports = 200, then 200/I = 4/5 â†’ I = 250. This is a standard DI trap question where you must read carefully.
 </details>
 
 ---
 
-**Q18.** A combined chart set: Table shows total revenue (₹crores) by year: 2019 = 500, 2020 = 650, 2021 = 800, 2022 = 1,000. A bar graph shows the percentage revenue from 4 products. In 2022, Product A contributed 30% of revenue. What is Product A's revenue in 2022?
+**Q18.** A combined chart set: Table shows total revenue (â‚¹crores) by year: 2019 = 500, 2020 = 650, 2021 = 800, 2022 = 1,000. A bar graph shows the percentage revenue from 4 products. In 2022, Product A contributed 30% of revenue. What is Product A's revenue in 2022?
 
-a) ₹150 crores
-b) ₹240 crores
-c) ₹300 crores
-d) ₹200 crores
+a) â‚¹150 crores
+b) â‚¹240 crores
+c) â‚¹300 crores
+d) â‚¹200 crores
 
 <details>
 <summary>Answer</summary>
-c) ₹300 crores
+c) â‚¹300 crores
 
-Product A revenue = 30% of ₹1,000 crores = ₹300 crores.
+Product A revenue = 30% of â‚¹1,000 crores = â‚¹300 crores.
 </details>
 
 ---
 
 **Q19.** A pie chart shows the distribution of investments across five sectors: Tech = 35%, Pharma = 20%, Auto = 25%, FMCG = 12%, Others = 8%. The central angle for the Pharma sector is:
 
-a) 72°
-b) 90°
-c) 60°
-d) 126°
+a) 72Â°
+b) 90Â°
+c) 60Â°
+d) 126Â°
 
 <details>
 <summary>Answer</summary>
-a) 72°
+a) 72Â°
 
-Angle = (20 / 100) × 360° = 72°.
+Angle = (20 / 100) Ã— 360Â° = 72Â°.
 </details>
 
 ---
 
 **Q20.** A line chart with two lines shows Revenue (scale on left axis) and Profit Margin % (scale on right axis). Revenue in 2020 = 400, 2021 = 520, 2022 = 680. Profit margin = 12% in 2020, 15% in 2021, 18% in 2022. What is the profit in 2022?
 
-a) ₹122.4 crores
-b) ₹100.8 crores
-c) ₹136.0 crores
-d) ₹150.0 crores
+a) â‚¹122.4 crores
+b) â‚¹100.8 crores
+c) â‚¹136.0 crores
+d) â‚¹150.0 crores
 
 <details>
 <summary>Answer</summary>
-a) ₹122.4 crores
+a) â‚¹122.4 crores
 
-Profit in 2022 = 18% of 680 = 0.18 × 680 = ₹122.4 crores.
+Profit in 2022 = 18% of 680 = 0.18 Ã— 680 = â‚¹122.4 crores.
 </details>
 
 ---
@@ -725,13 +725,13 @@ Master these calculation shortcuts to solve DI questions 2-3 times faster:
 
 | Calculation | Shortcut Method |
 |-------------|----------------|
-| 12.5% of 640 | 12.5% = 1/8 → 640/8 = 80 |
-| 37.5% of 800 | 37.5% = 3/8 → 800 × 3/8 = 300 |
-| 16.67% of 900 | 16.67% = 1/6 → 900/6 = 150 |
-| 45% of 250 | 10% = 25, 40% = 100, 5% = 12.5 → Total = 112.5 |
-| 62% of 350 | 50% = 175, 12% = 42 → 175 + 42 = 217 |
+| 12.5% of 640 | 12.5% = 1/8 â†’ 640/8 = 80 |
+| 37.5% of 800 | 37.5% = 3/8 â†’ 800 Ã— 3/8 = 300 |
+| 16.67% of 900 | 16.67% = 1/6 â†’ 900/6 = 150 |
+| 45% of 250 | 10% = 25, 40% = 100, 5% = 12.5 â†’ Total = 112.5 |
+| 62% of 350 | 50% = 175, 12% = 42 â†’ 175 + 42 = 217 |
 
-**The Fraction Table** — Memorise these for instant conversion:
+**The Fraction Table** â€” Memorise these for instant conversion:
 
 | Fraction | % | Fraction | % |
 |----------|---|----------|---|
@@ -766,14 +766,14 @@ Instead of `(a+b+c+d)/4`, use the **deviation method**:
 
 #### CAGR Approximation Trick
 
-For 2-year CAGR: `CAGR ≈ (r₁ + r₂)/2 - (r₁ - r₂)² / (4 × (r₁ + r₂))`
-Where r₁ and r₂ are year-over-year growth rates.
+For 2-year CAGR: `CAGR â‰ˆ (râ‚ + râ‚‚)/2 - (râ‚ - râ‚‚)Â² / (4 Ã— (râ‚ + râ‚‚))`
+Where râ‚ and râ‚‚ are year-over-year growth rates.
 
 **Example:** Growth 20% in Year 1, 30% in Year 2
 - Simple average = 25%
-- Adjustment = (20-30)² / (4 × (20+30)) = 100 / 200 = 0.5
+- Adjustment = (20-30)Â² / (4 Ã— (20+30)) = 100 / 200 = 0.5
 - Approx CAGR = 25 - 0.5 = 24.5%
-- Exact CAGR = ((1.20 × 1.30)^0.5 - 1) × 100 = (1.56^0.5 - 1) × 100 = 24.9% — close enough!
+- Exact CAGR = ((1.20 Ã— 1.30)^0.5 - 1) Ã— 100 = (1.56^0.5 - 1) Ã— 100 = 24.9% â€” close enough!
 
 #### The "10% Method" for Any Percentage
 
@@ -785,7 +785,7 @@ To find x% of a number:
 **Example:** 17% of 850
 - 10% of 850 = 85
 - 1% of 850 = 8.5
-- 7% = 7 × 8.5 = 59.5
+- 7% = 7 Ã— 8.5 = 59.5
 - 17% = 85 + 59.5 = 144.5
 
 ### 1.12 Common Mistakes in DI and How to Avoid Them
@@ -794,10 +794,10 @@ To find x% of a number:
 |---------|---------|---------------|------------------|
 | Reading wrong axis | Confusing left-axis bar with right-axis line in combo charts | Each axis has its own scale | Check legend before reading values |
 | Misidentifying percentage base | "Profit is 20% of cost" vs "Profit is 20% of sales" | Different bases give different answers | Identify the base entity: "of" what? |
-| Adding percentages directly | 20% increase + 10% increase = 30% | Compounding gives 32% | Multiply: 1.20 × 1.10 = 1.32 |
+| Adding percentages directly | 20% increase + 10% increase = 30% | Compounding gives 32% | Multiply: 1.20 Ã— 1.10 = 1.32 |
 | Rounding intermediate answers | Rounding 37.4% to 37% | Accumulated error changes final answer | Keep 2 decimal places until final step |
 | Summing pie chart percentages | 35% + 25% + 20% + 15% = 95% (missing 5%) | Pie must total 100% | Check that all segments sum to 100% |
-| Confusing "more than" and "of" | "A is 20% more than B" vs "A is 20% of B" | A = B × 1.20 vs A = B × 0.20 | Read the wording precisely |
+| Confusing "more than" and "of" | "A is 20% more than B" vs "A is 20% of B" | A = B Ã— 1.20 vs A = B Ã— 0.20 | Read the wording precisely |
 
 ### 1.13 Exam Strategy Tips for IBPS/SBI/RBI DI Section
 
@@ -805,17 +805,17 @@ To find x% of a number:
 
 | Section | Time Budget | Strategy |
 |---------|-------------|----------|
-| Data Interpretation | 20 min | 5 question sets × 4 min each |
-| Data Sufficiency | 8 min | 5 questions × 1.5 min each |
+| Data Interpretation | 20 min | 5 question sets Ã— 4 min each |
+| Data Sufficiency | 8 min | 5 questions Ã— 1.5 min each |
 | Miscellaneous | 7 min | Remaining arithmetic questions |
 
 #### Priority Order Within a DI Set
 
-1. **Direct read questions** (10-15 seconds each) — read values straight from the table/chart
-2. **Single-step calculations** (30-45 seconds) — one percentage or ratio operation
-3. **Two-step calculations** (45-60 seconds) — find intermediate value, then compute
-4. **Multi-step calculations** (60-90 seconds) — three or more operations
-5. **True/False statements** (60-90 seconds) — verify each statement
+1. **Direct read questions** (10-15 seconds each) â€” read values straight from the table/chart
+2. **Single-step calculations** (30-45 seconds) â€” one percentage or ratio operation
+3. **Two-step calculations** (45-60 seconds) â€” find intermediate value, then compute
+4. **Multi-step calculations** (60-90 seconds) â€” three or more operations
+5. **True/False statements** (60-90 seconds) â€” verify each statement
 
 #### Smart Guessing Strategy
 
@@ -831,7 +831,7 @@ When running out of time:
 |------|-------------|
 | **Value Approximation** | Round 47,83,214 to 48 lakh for quick calculations |
 | **Option Elimination** | If options are spaced widely (e.g., 120, 240, 360, 480), approximate to closest |
-| **Cross-Multiplication** | For "x% of y" questions, use x × y / 100 |
+| **Cross-Multiplication** | For "x% of y" questions, use x Ã— y / 100 |
 | **Unit Consistency** | Convert lakhs to thousands or crores before dividing |
 | **Mental Math** | 12.5% = 1/8, 33.33% = 1/3, 66.67% = 2/3 |
 
@@ -844,9 +844,9 @@ When running out of time:
 | Line Graph | 3-4 Q | 3-4 Q | 3-4 Q | 3-4 Q |
 | Pie Chart | 4-5 Q | 3-5 Q | 4-5 Q | 4-5 Q |
 | Caselet DI | 3-5 Q | 4-5 Q | 4-6 Q | 3-4 Q |
-| Data Sufficiency | 4-5 Q | 4-5 Q | 5 Q | — |
+| Data Sufficiency | 4-5 Q | 4-5 Q | 5 Q | â€” |
 
-### 1.14 GFG-Style Table DI — Train Arrival/Departure Data
+### 1.14 GFG-Style Table DI â€” Train Arrival/Departure Data
 
 Study the following table and answer the questions:
 
@@ -882,7 +882,7 @@ d) 8.43%
 <summary>Answer</summary>
 b) 6.43%
 
-Total departed late = 82 + 5 + 3 = 90. Percentage = (90/1400) × 100 = 6.43%.
+Total departed late = 82 + 5 + 3 = 90. Percentage = (90/1400) Ã— 100 = 6.43%.
 </details>
 
 **Q23.** How many more Express trains arrived late than Superfast trains?
@@ -899,7 +899,7 @@ b) 83
 Express late = 114, Superfast late = 31. Difference = 114 - 31 = 83.
 </details>
 
-### 1.15 Books Sales Data — Table DI with Trend Analysis
+### 1.15 Books Sales Data â€” Table DI with Trend Analysis
 
 | Month | Fiction | Non-Fiction | Educational | Total |
 |-------|---------|-------------|-------------|-------|
@@ -934,7 +934,7 @@ d) 125%
 <summary>Answer</summary>
 c) 100%
 
-Increase = (240 - 120) / 120 × 100 = 120/120 × 100 = 100%.
+Increase = (240 - 120) / 120 Ã— 100 = 120/120 Ã— 100 = 100%.
 </details>
 
 **Q26.** If the trend continues, what will be the total sales in June?
@@ -948,12 +948,12 @@ d) 560
 <summary>Answer</summary>
 c) 545
 
-Monthly increase in total = 50, 55, 50, 65 — average ≈ 55. June ≈ 480 + 65 = 545.
+Monthly increase in total = 50, 55, 50, 65 â€” average â‰ˆ 55. June â‰ˆ 480 + 65 = 545.
 </details>
 
 ### 1.16 More Examples with Pie Chart and Bar Graph Data
 
-**Pie Chart: Monthly Expenditure (Total Income = ₹75,000)**
+**Pie Chart: Monthly Expenditure (Total Income = â‚¹75,000)**
 
 | Category | Percentage |
 |----------|-----------|
@@ -966,47 +966,47 @@ Monthly increase in total = 50, 55, 50, 65 — average ≈ 55. June ≈ 480 + 65
 
 **Q27.** What amount is spent on Rent?
 
-a) ₹18,750
-b) ₹22,500
-c) ₹25,000
-d) ₹30,000
+a) â‚¹18,750
+b) â‚¹22,500
+c) â‚¹25,000
+d) â‚¹30,000
 
 <details>
 <summary>Answer</summary>
-b) ₹22,500
+b) â‚¹22,500
 
-Rent = 30% of 75,000 = 0.30 × 75,000 = ₹22,500.
+Rent = 30% of 75,000 = 0.30 Ã— 75,000 = â‚¹22,500.
 </details>
 
 **Q28.** How much more is spent on Food and Rent together compared to Transportation and Education combined?
 
-a) ₹20,000
-b) ₹22,500
-c) ₹25,000
-d) ₹27,500
+a) â‚¹20,000
+b) â‚¹22,500
+c) â‚¹25,000
+d) â‚¹27,500
 
 <details>
 <summary>Answer</summary>
-b) ₹22,500
+b) â‚¹22,500
 
-Food + Rent = 55% of 75,000 = ₹41,250. Transport + Education = 25% of 75,000 = ₹18,750. Difference = ₹41,250 - ₹18,750 = ₹22,500.
+Food + Rent = 55% of 75,000 = â‚¹41,250. Transport + Education = 25% of 75,000 = â‚¹18,750. Difference = â‚¹41,250 - â‚¹18,750 = â‚¹22,500.
 </details>
 
 **Q29.** If the Entertainment budget is reduced by half and added to Savings, what is the new Savings amount?
 
-a) ₹9,000
-b) ₹12,000
-c) ₹15,000
-d) ₹18,000
+a) â‚¹9,000
+b) â‚¹12,000
+c) â‚¹15,000
+d) â‚¹18,000
 
 <details>
 <summary>Answer</summary>
-b) ₹12,000
+b) â‚¹12,000
 
-Original Entertainment = 8% of 75,000 = ₹6,000. Reduced by half = ₹3,000. Original Savings = 12% of 75,000 = ₹9,000. New Savings = ₹9,000 + ₹3,000 = ₹12,000.
+Original Entertainment = 8% of 75,000 = â‚¹6,000. Reduced by half = â‚¹3,000. Original Savings = 12% of 75,000 = â‚¹9,000. New Savings = â‚¹9,000 + â‚¹3,000 = â‚¹12,000.
 </details>
 
-### 1.17 Line Graph — Vehicle Production Data (GFG Style)
+### 1.17 Line Graph â€” Vehicle Production Data (GFG Style)
 
 Number of Vehicles Manufactured by Two Companies Over Years (in Thousands):
 
@@ -1030,7 +1030,7 @@ d) 131,667
 <summary>Answer</summary>
 b) 119,333
 
-Average X = (119 + 99 + 141 + 78 + 120 + 159) / 6 × 1000 = 716/6 × 1000 = 119,333.
+Average X = (119 + 99 + 141 + 78 + 120 + 159) / 6 Ã— 1000 = 716/6 Ã— 1000 = 119,333.
 </details>
 
 **Q31.** In which year was the difference between production of X and Y the maximum?
@@ -1058,7 +1058,7 @@ d) 184%
 <summary>Answer</summary>
 b) 164%
 
-Y(2014) = 128,000, X(2014) = 78,000. Percentage = (128/78) × 100 ≈ 164.1%.
+Y(2014) = 128,000, X(2014) = 78,000. Percentage = (128/78) Ã— 100 â‰ˆ 164.1%.
 </details>
 
 ### TypeScript CAGR Calculator and Chart Generator
@@ -1115,7 +1115,7 @@ class CAGRCalculator {
 const navSeries = [100, 120, 144, 172.8, 207.36];
 console.log("3-year CAGR:", CAGRCalculator.compute(100, 172.8, 3), "%");
 console.log("Doubling time at 12%:", CAGRCalculator.timeToDouble(12), "years");
-console.log("Future value of ₹50,000 at 14% for 5 years: ₹",
+console.log("Future value of â‚¹50,000 at 14% for 5 years: â‚¹",
   CAGRCalculator.futureValue(50000, 14, 5));
 ```
 
@@ -1216,7 +1216,7 @@ d) 92.3%
 <summary>Answer</summary>
 b) 83.3%
 
-Girls in D+E = 30,000 + 32,500 = 62,500. Girls in A+B+C = 25,000 + 30,000 + 20,000 = 75,000. Percentage = (62,500/75,000) × 100 = 83.3%.
+Girls in D+E = 30,000 + 32,500 = 62,500. Girls in A+B+C = 25,000 + 30,000 + 20,000 = 75,000. Percentage = (62,500/75,000) Ã— 100 = 83.3%.
 </details>
 
 **Q33.** A company surveyed 500 customers. 80% were satisfied with products. Of the satisfied customers, 60% were repeat customers. How many repeat customers were satisfied?
@@ -1233,18 +1233,18 @@ b) 240
 Satisfied customers = 80% of 500 = 400. Repeat satisfied = 60% of 400 = 240.
 </details>
 
-**Q34.** A pie chart shows: Cement = 72°, Steel = 54°, Labour = 90°, Supervision = 54°, Other = 90°. Total cost = ₹6,00,000. What is the amount spent on cement?
+**Q34.** A pie chart shows: Cement = 72Â°, Steel = 54Â°, Labour = 90Â°, Supervision = 54Â°, Other = 90Â°. Total cost = â‚¹6,00,000. What is the amount spent on cement?
 
-a) ₹90,000
-b) ₹1,00,000
-c) ₹1,20,000
-d) ₹1,50,000
+a) â‚¹90,000
+b) â‚¹1,00,000
+c) â‚¹1,20,000
+d) â‚¹1,50,000
 
 <details>
 <summary>Answer</summary>
-c) ₹1,20,000
+c) â‚¹1,20,000
 
-Cement = (72/360) × 6,00,000 = 0.20 × 6,00,000 = ₹1,20,000.
+Cement = (72/360) Ã— 6,00,000 = 0.20 Ã— 6,00,000 = â‚¹1,20,000.
 </details>
 
 **Q35.** From the same pie chart, labour cost exceeds steel cost by what percent of total cost?
@@ -1258,21 +1258,21 @@ d) 15%
 <summary>Answer</summary>
 b) 10%
 
-Labour = (90/360) × 6,00,000 = ₹1,50,000. Steel = (54/360) × 6,00,000 = ₹90,000. Excess = ₹60,000. Percentage of total = (60,000/6,00,000) × 100 = 10%.
+Labour = (90/360) Ã— 6,00,000 = â‚¹1,50,000. Steel = (54/360) Ã— 6,00,000 = â‚¹90,000. Excess = â‚¹60,000. Percentage of total = (60,000/6,00,000) Ã— 100 = 10%.
 </details>
 
-**Q36.** A stacked bar shows Company X's annual revenue split: Product P = 35%, Product Q = 28%, Product R = 22%, Product S = 15%. Total revenue = ₹850 crores. What is Product Q's revenue?
+**Q36.** A stacked bar shows Company X's annual revenue split: Product P = 35%, Product Q = 28%, Product R = 22%, Product S = 15%. Total revenue = â‚¹850 crores. What is Product Q's revenue?
 
-a) ₹210 crores
-b) ₹238 crores
-c) ₹255 crores
-d) ₹297.5 crores
+a) â‚¹210 crores
+b) â‚¹238 crores
+c) â‚¹255 crores
+d) â‚¹297.5 crores
 
 <details>
 <summary>Answer</summary>
-b) ₹238 crores
+b) â‚¹238 crores
 
-Product Q revenue = 28% of 850 = 0.28 × 850 = ₹238 crores.
+Product Q revenue = 28% of 850 = 0.28 Ã— 850 = â‚¹238 crores.
 </details>
 
 **Q37.** If Product P's revenue grows by 12% next year while total revenue stays constant, what will be Product P's new percentage share?
@@ -1286,7 +1286,7 @@ d) 42.0%
 <summary>Answer</summary>
 c) 39.2%
 
-Current P = 35% of 850 = ₹297.5 crores. Growth = 12% → New P = 297.5 × 1.12 = ₹333.2 crores. New share = (333.2/850) × 100 = 39.2%.
+Current P = 35% of 850 = â‚¹297.5 crores. Growth = 12% â†’ New P = 297.5 Ã— 1.12 = â‚¹333.2 crores. New share = (333.2/850) Ã— 100 = 39.2%.
 </details>
 
 **Q38.** A line chart shows GDP growth: 5.0%, 6.2%, 7.1%, 6.8%, 8.0% over five years. What is the average growth rate?
@@ -1303,7 +1303,7 @@ b) 6.62%
 Average = (5.0 + 6.2 + 7.1 + 6.8 + 8.0) / 5 = 33.1 / 5 = 6.62%.
 </details>
 
-**Q39.** If a company's profit in 2020 was ₹150 crores and in 2023 was ₹280 crores, what is the approximate CAGR?
+**Q39.** If a company's profit in 2020 was â‚¹150 crores and in 2023 was â‚¹280 crores, what is the approximate CAGR?
 
 a) 18.2%
 b) 20.5%
@@ -1314,7 +1314,7 @@ d) 25.4%
 <summary>Answer</summary>
 c) 23.1%
 
-CAGR = ((280/150)^(1/3) - 1) × 100 = (1.8667^0.3333 - 1) × 100 ≈ (1.231 - 1) × 100 = 23.1%.
+CAGR = ((280/150)^(1/3) - 1) Ã— 100 = (1.8667^0.3333 - 1) Ã— 100 â‰ˆ (1.231 - 1) Ã— 100 = 23.1%.
 </details>
 
 **Q40.** A percentage bar graph shows employment distribution in two cities. City X (pop 50,000): Employed 45%, Unemployed 55%. City Y (pop 75,000): Employed 52%, Unemployed 48%. How many more employed people does City Y have than City X?
@@ -1344,21 +1344,21 @@ a) What is the CAGR of State A's production from 2020 to 2023?
 b) In which year did State B show the highest growth rate over previous year?
 c) What is the ratio of State C's production in 2020 to State A's production in 2023?
 
-**42.** A bar graph shows exports (in ₹crores) of 5 companies: P=250, Q=320, R=180, S=410, T=290. If exports of P grow by 15% and Q decreases by 10%, what is the new total export of P and Q combined?
+**42.** A bar graph shows exports (in â‚¹crores) of 5 companies: P=250, Q=320, R=180, S=410, T=290. If exports of P grow by 15% and Q decreases by 10%, what is the new total export of P and Q combined?
 
-**43.** A pie chart shows the market share of 5 mobile brands: Apple=28%, Samsung=32%, Xiaomi=18%, Vivo=12%, Others=10%. Total market = ₹80,000 crores. What is the revenue difference between Samsung and Xiaomi?
+**43.** A pie chart shows the market share of 5 mobile brands: Apple=28%, Samsung=32%, Xiaomi=18%, Vivo=12%, Others=10%. Total market = â‚¹80,000 crores. What is the revenue difference between Samsung and Xiaomi?
 
 **44.** A line chart shows monthly sales: Jan=85, Feb=95, Mar=110, Apr=105, May=125, Jun=145. What is the percentage increase from the first quarter average to the second quarter average?
 
 **45.** A multiple line chart shows two investment funds: Fund A (2019: 100, 2020: 125, 2021: 140, 2022: 170) and Fund B (2019: 100, 2020: 115, 2021: 130, 2022: 150). Which fund has higher CAGR?
 
-**46.** A stacked bar shows the revenue composition of a company for 2022: Products: X=40%, Y=30%, Z=20%, Services=10%. Total revenue = ₹1,200 crores. What is the revenue from Products X and Y together?
+**46.** A stacked bar shows the revenue composition of a company for 2022: Products: X=40%, Y=30%, Z=20%, Services=10%. Total revenue = â‚¹1,200 crores. What is the revenue from Products X and Y together?
 
 **47.** A clustered bar graph shows male and female employees across 4 departments. Total employees = 500. Dept 1: M=60, F=40. Dept 2: M=70, F=55. Dept 3: M=45, F=80. Dept 4: M=75, F=75. Which department has the highest female-to-male ratio?
 
-**48.** CAGR of sales: 2018 = ₹200 crores, 2019 = ₹250 crores, 2020 = ₹300 crores, 2021 = ₹360 crores, 2022 = ₹450 crores. What is the CAGR from 2018 to 2022?
+**48.** CAGR of sales: 2018 = â‚¹200 crores, 2019 = â‚¹250 crores, 2020 = â‚¹300 crores, 2021 = â‚¹360 crores, 2022 = â‚¹450 crores. What is the CAGR from 2018 to 2022?
 
-**49.** A pie chart has three sectors with angles 120°, 150°, and 90°. If the total value represented is ₹540,000, what is the value of the largest sector?
+**49.** A pie chart has three sectors with angles 120Â°, 150Â°, and 90Â°. If the total value represented is â‚¹540,000, what is the value of the largest sector?
 
 **50.** A table shows the performance of 3 mutual funds over 4 years:
 | Fund | 2020 | 2021 | 2022 | 2023 |
@@ -1369,12 +1369,12 @@ c) What is the ratio of State C's production in 2020 to State A's production in 
 
 Which fund has the highest average return? Which fund has the lowest volatility (range)?
 
-- **Tabular DI** is the foundation — master percentage, ratio, average, growth rate, and CAGR calculations
-- **Bar graphs** come in four variants: simple, stacked, clustered, and percentage — identify the type before solving
-- **Line charts** require trend analysis — slopes, intersections, and gaps between multiple lines
+- **Tabular DI** is the foundation â€” master percentage, ratio, average, growth rate, and CAGR calculations
+- **Bar graphs** come in four variants: simple, stacked, clustered, and percentage â€” identify the type before solving
+- **Line charts** require trend analysis â€” slopes, intersections, and gaps between multiple lines
 - **Pie charts** test angle-to-percentage conversion and distribution calculations
 - **Combined chart sets** require cross-referencing data across different formats
-- **Approximation** is a critical exam strategy — round numbers, use fraction equivalents, estimate before calculating exactly
+- **Approximation** is a critical exam strategy â€” round numbers, use fraction equivalents, estimate before calculating exactly
 - **Common traps** include scale non-zero starts, different units, and percentage vs percentage point confusion
 
 ---
@@ -1383,7 +1383,7 @@ Which fund has the highest average return? Which fund has the lowest volatility 
 
 | Strategy | Implementation |
 |----------|----------------|
-| Systematic approach | Read data set → Note units → Read questions → Extract data → Calculate → Verify |
+| Systematic approach | Read data set â†’ Note units â†’ Read questions â†’ Extract data â†’ Calculate â†’ Verify |
 | Cross-referencing | For combined tables/charts, identify linking variables first |
 | Approximation | Round to nearest convenient number; check if the answer is among options before exact computation |
 | Unit vigilance | Convert all values to consistent units before calculating |
@@ -1411,7 +1411,7 @@ Understanding the data presentation format, units, and labels is essential befor
 
 ---
 
-**Q2.** A pie chart sector has a central angle of 90°. What percentage of the total does it represent?
+**Q2.** A pie chart sector has a central angle of 90Â°. What percentage of the total does it represent?
 
 a) 15%
 b) 20%
@@ -1423,7 +1423,7 @@ d) 30%
 
 **Answer:** c) 25%
 
-Percentage = (90 / 360) × 100 = 0.25 × 100 = 25%.
+Percentage = (90 / 360) Ã— 100 = 0.25 Ã— 100 = 25%.
 </details>
 
 ---
@@ -1504,16 +1504,16 @@ In competitive exams, exact calculation for every step is time-prohibitive. Appr
 
 ### Section B: Bar Graph Questions (Q9-Q14)
 
-9. In a simple bar graph showing sales (₹lakhs) for 5 products: A=50, B=75, C=60, D=90, E=45, what is the average sales per product?
-10. A stacked bar shows total sales of ₹200 lakhs for a company. If Product X contributes 35%, Product Y contributes 28%, and the rest is Product Z, what is the sales value of Product Z?
+9. In a simple bar graph showing sales (â‚¹lakhs) for 5 products: A=50, B=75, C=60, D=90, E=45, what is the average sales per product?
+10. A stacked bar shows total sales of â‚¹200 lakhs for a company. If Product X contributes 35%, Product Y contributes 28%, and the rest is Product Z, what is the sales value of Product Z?
 11. A clustered bar graph shows male and female employees in 4 departments. Dept 1: M=30, F=20; Dept 2: M=25, F=35; Dept 3: M=40, F=10; Dept 4: M=20, F=30. Which department has the highest total employees?
 12. In a percentage bar graph, City A (total pop 10,000) has 40% employed, City B (total pop 15,000) has 35% employed. How many more employed people does City B have?
-13. A bar graph shows revenue growth percentages: 2019=8%, 2020=12%, 2021=10%, 2022=15%. If 2019 revenue base was ₹500 crores, what was the revenue in 2020?
+13. A bar graph shows revenue growth percentages: 2019=8%, 2020=12%, 2021=10%, 2022=15%. If 2019 revenue base was â‚¹500 crores, what was the revenue in 2020?
 14. A clustered bar shows exports and imports for 3 years. Calculate the total trade balance (exports - imports) across all 3 years if data is: Y1: E=200, I=180; Y2: E=240, I=220; Y3: E=280, I=250.
 
 ### Section C: Line Chart Questions (Q15-Q20)
 
-**Line Chart: Temperature (in °C) in City X over 12 months**
+**Line Chart: Temperature (in Â°C) in City X over 12 months**
 
 Jan: 15, Feb: 18, Mar: 22, Apr: 28, May: 33, Jun: 36, Jul: 35, Aug: 34, Sep: 31, Oct: 26, Nov: 20, Dec: 16
 
@@ -1522,11 +1522,11 @@ Jan: 15, Feb: 18, Mar: 22, Apr: 28, May: 33, Jun: 36, Jul: 35, Aug: 34, Sep: 31,
 17. By what percentage did temperature increase from March to May?
 18. In which month is the temperature exactly 50% of the June temperature?
 19. What is the median temperature for the year?
-20. If the temperature in June last year was 34°C, what is the percentage increase this year?
+20. If the temperature in June last year was 34Â°C, what is the percentage increase this year?
 
 ### Section D: Pie Chart Questions (Q21-Q25)
 
-**Pie Chart: Company Expenses (Total: ₹1,200 crores)**
+**Pie Chart: Company Expenses (Total: â‚¹1,200 crores)**
 
 Production: 30%, Marketing: 18%, R&D: 15%, Salaries: 25%, Admin: 12%
 
@@ -1538,7 +1538,7 @@ Production: 30%, Marketing: 18%, R&D: 15%, Salaries: 25%, Admin: 12%
 
 ### Section E: Combined Data Questions (Q26-Q30)
 
-**Table: Total Investment (₹crores) in Three Sectors**
+**Table: Total Investment (â‚¹crores) in Three Sectors**
 
 | Year | IT | Pharma | Auto | Total |
 |------|-----|--------|------|-------|
@@ -1561,34 +1561,34 @@ Software: 40%, Hardware: 30%, Services: 20%, Others: 10%
 |---|--------|---|--------|---|--------|---|--------|---|--------|
 | 1 | 520 lakh tonnes | 2 | 9.375% | 3 | Uttar Pradesh (295) | 4 | 5:4 |
 | 5 | 119 lakh tonnes | 6 | 8.8% | 7 | 49.5% | 8 | 112.2 lakh tonnes |
-| 9 | ₹64 lakhs | 10 | ₹74 lakhs | 11 | Dept 3 (50) | 12 | 1,250 more |
-| 13 | ₹560 crores | 14 | 70 | 15 | 21°C (36-15) | 16 | 18.33°C |
-| 17 | 50% | 18 | March (22°C) | 19 | 27°C | 20 | 5.88% |
-| 21 | ₹360 crores | 22 | 54° | 23 | 3:2 | 24 | ₹1,230 crores |
-| 25 | ₹216 crores | 26 | ₹830 crores | 27 | 10.56% | 28 | ₹140 crores |
-| 29 | 43.08% | 30 | ₹190 crores | | | | |
+| 9 | â‚¹64 lakhs | 10 | â‚¹74 lakhs | 11 | Dept 3 (50) | 12 | 1,250 more |
+| 13 | â‚¹560 crores | 14 | 70 | 15 | 21Â°C (36-15) | 16 | 18.33Â°C |
+| 17 | 50% | 18 | March (22Â°C) | 19 | 27Â°C | 20 | 5.88% |
+| 21 | â‚¹360 crores | 22 | 54Â° | 23 | 3:2 | 24 | â‚¹1,230 crores |
+| 25 | â‚¹216 crores | 26 | â‚¹830 crores | 27 | 10.56% | 28 | â‚¹140 crores |
+| 29 | 43.08% | 30 | â‚¹190 crores | | | | |
 
 **Detailed Solutions for Selected Questions:**
 
 **Q1:** 120+85+150+95+70 = 520 lakh tonnes.
 
-**Q2:** ((175-160)/160) × 100 = 15/160 × 100 = 9.375%.
+**Q2:** ((175-160)/160) Ã— 100 = 15/160 Ã— 100 = 9.375%.
 
 **Q5:** (175+118+130+112+60)/5 = 595/5 = 119 lakh tonnes.
 
 **Q12:** City B employed = 35% of 15,000 = 5,250. City A employed = 40% of 10,000 = 4,000. Difference = 1,250.
 
-**Q15:** Range = 36 - 15 = 21°C.
+**Q15:** Range = 36 - 15 = 21Â°C.
 
-**Q22:** R&D angle = (15/100) × 360 = 54°.
+**Q22:** R&D angle = (15/100) Ã— 360 = 54Â°.
 
-**Q24:** New salaries = 25% of 1,200 = 300. Increase = 10% of 300 = 30. New total = 1,200 + 30 = ₹1,230 crores.
+**Q24:** New salaries = 25% of 1,200 = 300. Increase = 10% of 300 = 30. New total = 1,200 + 30 = â‚¹1,230 crores.
 
-**Q27:** CAGR = ((220/180)^(1/2) - 1) × 100 = (1.2222^0.5 - 1) × 100 = (1.1054 - 1) × 100 = 10.54%.
+**Q27:** CAGR = ((220/180)^(1/2) - 1) Ã— 100 = (1.2222^0.5 - 1) Ã— 100 = (1.1054 - 1) Ã— 100 = 10.54%.
 
-**Q28:** IT investment 2022 = 350. Software = 40% of 350 = ₹140 crores.
+**Q28:** IT investment 2022 = 350. Software = 40% of 350 = â‚¹140 crores.
 
-**Q30:** Growth rate = (170-150)/150 = 13.33%. Applying to 2022: 170 × 1.1333 = ₹192.67, which rounds to approximately ₹190 crores (given integer data constraints).
+**Q30:** Growth rate = (170-150)/150 = 13.33%. Applying to 2022: 170 Ã— 1.1333 = â‚¹192.67, which rounds to approximately â‚¹190 crores (given integer data constraints).
 
 ---
 

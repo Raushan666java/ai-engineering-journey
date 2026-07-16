@@ -1,26 +1,24 @@
-# HTML Fundamentals
+﻿# HTML Fundamentals
 
-HyperText Markup Language (HTML) is the foundational language of the World Wide Web. It provides the structural skeleton upon which every web page is built. Before any CSS styling is applied, before any JavaScript adds interactivity, and before any server-side framework like Laravel generates dynamic content, HTML defines what a page *is* Ã¢â‚¬â€ its headings, paragraphs, images, links, forms, and semantic regions. This chapter provides a rigorous, ground-up treatment of HTML5, the current living standard. You will learn correct document structure, semantic markup, embedded media, tabular data, form construction with validation, accessibility (a11y) best practices, search-engine optimization (SEO) fundamentals, browser APIs, and finally how all of these concepts integrate with Laravel's Blade templating engine. Every code example is a complete, self-contained HTML5 document that you can save, open in a browser, and experiment with immediately.
+HyperText Markup Language (HTML) is the foundational language of the World Wide Web. It provides the structural skeleton upon which every web page is built. Before any CSS styling is applied, before any JavaScript adds interactivity, and before any server-side framework like Laravel generates dynamic content, HTML defines what a page *is* ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â its headings, paragraphs, images, links, forms, and semantic regions. This chapter provides a rigorous, ground-up treatment of HTML5, the current living standard. You will learn correct document structure, semantic markup, embedded media, tabular data, form construction with validation, accessibility (a11y) best practices, search-engine optimization (SEO) fundamentals, browser APIs, and finally how all of these concepts integrate with Laravel's Blade templating engine. Every code example is a complete, self-contained HTML5 document that you can save, open in a browser, and experiment with immediately.
 
 ---
 
 ## Learning Objectives
 
-
-
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/html-basics/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/html-basics/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/html-basics/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/html-basics/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/html-basics/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/html-basics/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/html-basics/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/html-basics/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/html-basics/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/html-basics/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/html-basics/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/html-basics/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -123,7 +121,6 @@ flowchart LR
 ```
 ![HTML Basics](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/html-basics.png)
 
-
 By the end of this chapter you will be able to:
 
 - Construct a valid HTML5 document with proper `DOCTYPE`, `html`, `head`, and `body` elements
@@ -148,8 +145,7 @@ Every HTML document follows a mandatory outer structure that the browser uses to
 
 ### 1.1 The DOCTYPE Declaration
 
-
-The `DOCTYPE` is not an HTML element but a *prolog* Ã¢â‚¬â€ an instruction that tells the browser to render the page in **standards mode** rather than quirks mode. In HTML5 the declaration is minimal:
+The `DOCTYPE` is not an HTML element but a *prolog* ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â an instruction that tells the browser to render the page in **standards mode** rather than quirks mode. In HTML5 the declaration is minimal:
 
 ```html
 <!DOCTYPE html>
@@ -159,57 +155,23 @@ This single line activates the latest rendering engine in every modern browser. 
 
 ### 1.2 The `<html>` Element
 
-<a href="../../../assets/images/diagrams/laravel/html-basics/1-2-the-html-element-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/html-basics/1-2-the-html-element-handwritten.svg" alt="Handwritten: 1.2 The `<html>` Element" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/html-basics/1-2-the-html-element-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/html-basics/1-2-the-html-element-diagram.svg" alt="Diagram: 1.2 The `<html>` Element" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/html-basics/1-2-the-html-element-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/html-basics/1-2-the-html-element-sticky.svg" alt="Sticky Note: 1.2 The `<html>` Element" width="30%">
-</a>
-
-
 The `<html>` element is the document's root. The `lang` attribute is **required** for accessibility and SEO; it tells screen readers which pronunciation rules to use and helps search engines serve the page to the correct language audience.
 
 ### 1.3 The `<head>` Element
 
-<a href="../../../assets/images/diagrams/laravel/html-basics/1-3-the-head-element-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/html-basics/1-3-the-head-element-handwritten.svg" alt="Handwritten: 1.3 The `<head>` Element" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/html-basics/1-3-the-head-element-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/html-basics/1-3-the-head-element-diagram.svg" alt="Diagram: 1.3 The `<head>` Element" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/html-basics/1-3-the-head-element-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/html-basics/1-3-the-head-element-sticky.svg" alt="Sticky Note: 1.3 The `<head>` Element" width="30%">
-</a>
+The `<head>` contains metadata ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â data about the document that is not displayed as content. Critical children include:
 
-
-The `<head>` contains metadata Ã¢â‚¬â€ data about the document that is not displayed as content. Critical children include:
-
-- `<meta charset="utf-8">` Ã¢â‚¬â€ must be the first `<meta>` element; declares the character encoding
-- `<meta name="viewport">` Ã¢â‚¬â€ controls layout on mobile viewports
-- `<title>` Ã¢â‚¬â€ the only required element; sets the browser tab title and is the first line of most search-result snippets
-- `<meta name="description">` Ã¢â‚¬â€ the page summary shown in search results
-- `<link rel="icon">` Ã¢â‚¬â€ the favicon shown in the browser tab
+- `<meta charset="utf-8">` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â must be the first `<meta>` element; declares the character encoding
+- `<meta name="viewport">` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â controls layout on mobile viewports
+- `<title>` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â the only required element; sets the browser tab title and is the first line of most search-result snippets
+- `<meta name="description">` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â the page summary shown in search results
+- `<link rel="icon">` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â the favicon shown in the browser tab
 
 ### 1.4 The `<body>` Element
-
-<a href="../../../assets/images/diagrams/laravel/html-basics/1-4-the-body-element-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/html-basics/1-4-the-body-element-handwritten.svg" alt="Handwritten: 1.4 The `<body>` Element" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/html-basics/1-4-the-body-element-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/html-basics/1-4-the-body-element-diagram.svg" alt="Diagram: 1.4 The `<body>` Element" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/html-basics/1-4-the-body-element-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/html-basics/1-4-the-body-element-sticky.svg" alt="Sticky Note: 1.4 The `<body>` Element" width="30%">
-</a>
-
 
 Everything visible to the user lives inside `<body>`: text, images, forms, media, and interactive widgets.
 
 ### Complete Minimal Document
-
 
 ```html
 <!DOCTYPE html>
@@ -219,7 +181,7 @@ Everything visible to the user lives inside `<body>`: text, images, forms, media
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A minimal valid HTML5 document demonstrating correct document structure.">
     <title>HTML5 Document Structure</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>Ã°Å¸â€œâ€ž</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã¢â‚¬Å¾</text></svg>">
 </head>
 <body>
     <h1>Hello, HTML5</h1>
@@ -229,7 +191,6 @@ Everything visible to the user lives inside `<body>`: text, images, forms, media
 ```
 
 ### The Viewport Meta Tag in Detail
-
 
 ```html
 <!DOCTYPE html>
@@ -267,7 +228,6 @@ Semantic HTML means using elements that describe their **meaning** rather than t
 
 ### 2.1 Content Sectioning Elements
 
-
 | Element    | Purpose                                                                 |
 |------------|-------------------------------------------------------------------------|
 | `<header>` | Introductory content or navigational aids for its nearest ancestor      |
@@ -276,10 +236,9 @@ Semantic HTML means using elements that describe their **meaning** rather than t
 | `<article>`| A self-contained composition that could be independently distributed    |
 | `<section>`| A thematic grouping of content, typically with a heading                |
 | `<aside>`  | Content tangentially related to the surrounding content (sidebars)      |
-| `<footer>` | Footer for its nearest ancestor Ã¢â‚¬â€ author info, copyright, related links |
+| `<footer>` | Footer for its nearest ancestor ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â author info, copyright, related links |
 
 ### 2.2 Inline Semantic Elements
-
 
 | Element      | Purpose                                                      |
 |--------------|--------------------------------------------------------------|
@@ -289,7 +248,6 @@ Semantic HTML means using elements that describe their **meaning** rather than t
 | `<time>`     | A machine-readable date or time                              |
 
 ### Complete Semantic Layout
-
 
 ```html
 <!DOCTYPE html>
@@ -323,7 +281,7 @@ Semantic HTML means using elements that describe their **meaning** rather than t
     <div class="wrapper">
         <header>
             <h1>Understanding Semantic HTML5</h1>
-            <p>Elements that carry meaning Ã¢â‚¬â€ not just presentation</p>
+            <p>Elements that carry meaning ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â not just presentation</p>
         </header>
 
         <nav>
@@ -352,13 +310,13 @@ Semantic HTML means using elements that describe their **meaning** rather than t
                     <h2>Key Semantic Elements</h2>
                     <p>The HTML5 specification introduced several landmark elements:</p>
                     <ul>
-                        <li><code>&lt;header&gt;</code> Ã¢â‚¬â€ introductory content</li>
-                        <li><code>&lt;nav&gt;</code> Ã¢â‚¬â€ navigation links</li>
-                        <li><code>&lt;main&gt;</code> Ã¢â‚¬â€ primary content (one per page)</li>
-                        <li><code>&lt;article&gt;</code> Ã¢â‚¬â€ self-contained composition</li>
-                        <li><code>&lt;section&gt;</code> Ã¢â‚¬â€ thematic grouping</li>
-                        <li><code>&lt;aside&gt;</code> Ã¢â‚¬â€ tangentially related content</li>
-                        <li><code>&lt;footer&gt;</code> Ã¢â‚¬â€ closing information</li>
+                        <li><code>&lt;header&gt;</code> ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â introductory content</li>
+                        <li><code>&lt;nav&gt;</code> ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â navigation links</li>
+                        <li><code>&lt;main&gt;</code> ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â primary content (one per page)</li>
+                        <li><code>&lt;article&gt;</code> ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â self-contained composition</li>
+                        <li><code>&lt;section&gt;</code> ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â thematic grouping</li>
+                        <li><code>&lt;aside&gt;</code> ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â tangentially related content</li>
+                        <li><code>&lt;footer&gt;</code> ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â closing information</li>
                     </ul>
                 </article>
 
@@ -380,10 +338,10 @@ Semantic HTML means using elements that describe their **meaning** rather than t
                 <h3>Quick Reference</h3>
                 <p><strong>Rule of thumb:</strong> If an element has a semantic equivalent, always use it over a <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code>.</p>
                 <ul>
-                    <li>Navigation Ã¢â€ â€™ <code>&lt;nav&gt;</code></li>
-                    <li>Blog post Ã¢â€ â€™ <code>&lt;article&gt;</code></li>
-                    <li>Chapter Ã¢â€ â€™ <code>&lt;section&gt;</code></li>
-                    <li>Sidebar Ã¢â€ â€™ <code>&lt;aside&gt;</code></li>
+                    <li>Navigation ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ <code>&lt;nav&gt;</code></li>
+                    <li>Blog post ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ <code>&lt;article&gt;</code></li>
+                    <li>Chapter ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ <code>&lt;section&gt;</code></li>
+                    <li>Sidebar ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ <code>&lt;aside&gt;</code></li>
                 </ul>
             </aside>
         </div>
@@ -404,8 +362,7 @@ HTML provides a rich vocabulary for marking up text. Choosing the correct elemen
 
 ### 3.1 Headings
 
-
-Headings (`<h1>` through `<h6>`) define a six-level document hierarchy. A page should have exactly one `<h1>` Ã¢â‚¬â€ typically the page title Ã¢â‚¬â€ and headings should nest without skipping levels.
+Headings (`<h1>` through `<h6>`) define a six-level document hierarchy. A page should have exactly one `<h1>` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â typically the page title ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â and headings should nest without skipping levels.
 
 ```html
 <!DOCTYPE html>
@@ -421,7 +378,7 @@ Headings (`<h1>` through `<h6>`) define a six-level document hierarchy. A page s
 </head>
 <body>
     <h1>Laravel 13: The Full-Stack Framework</h1>
-    <p>This is the single <code>&lt;h1&gt;</code> for the entire page Ã¢â‚¬â€ the top-level heading.</p>
+    <p>This is the single <code>&lt;h1&gt;</code> for the entire page ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â the top-level heading.</p>
 
     <div class="level">
         <h2>1. Getting Started</h2>
@@ -450,11 +407,9 @@ Headings (`<h1>` through `<h6>`) define a six-level document hierarchy. A page s
 
 ### 3.2 Paragraphs
 
-
-The `<p>` element represents a paragraph Ã¢â‚¬â€ a block of text separated from adjacent blocks by spacing.
+The `<p>` element represents a paragraph ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â a block of text separated from adjacent blocks by spacing.
 
 ### 3.3 Lists
-
 
 HTML supports three list types: unordered (`<ul>`), ordered (`<ol>`), and description (`<dl>`).
 
@@ -478,7 +433,7 @@ HTML supports three list types: unordered (`<ul>`), ordered (`<ol>`), and descri
     <h1>HTML List Types</h1>
 
     <section>
-        <h2>Unordered List Ã¢â‚¬â€ Grocery Items</h2>
+        <h2>Unordered List ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Grocery Items</h2>
         <ul>
             <li>Eggs</li>
             <li>Milk</li>
@@ -489,18 +444,18 @@ HTML supports three list types: unordered (`<ul>`), ordered (`<ol>`), and descri
     </section>
 
     <section>
-        <h2>Ordered List Ã¢â‚¬â€ Recipe Steps</h2>
+        <h2>Ordered List ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Recipe Steps</h2>
         <ol>
             <li>Heat olive oil in a pan over medium heat.</li>
             <li>Dice one onion and two cloves of garlic.</li>
-            <li>SautÃƒÂ© the onion and garlic until translucent.</li>
+            <li>SautÃƒÆ’Ã‚Â© the onion and garlic until translucent.</li>
             <li>Add 400 g of crushed tomatoes and simmer for 15 minutes.</li>
             <li>Season with salt, pepper, and fresh basil.</li>
         </ol>
     </section>
 
     <section>
-        <h2>Nested List Ã¢â‚¬â€ Project Tree</h2>
+        <h2>Nested List ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Project Tree</h2>
         <ul>
             <li>app/
                 <ul>
@@ -526,13 +481,13 @@ HTML supports three list types: unordered (`<ul>`), ordered (`<ol>`), and descri
     </section>
 
     <section>
-        <h2>Description List Ã¢â‚¬â€ Glossary</h2>
+        <h2>Description List ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Glossary</h2>
         <dl>
             <dt>HTML</dt>
-            <dd>HyperText Markup Language Ã¢â‚¬â€ the standard language for creating web pages.</dd>
+            <dd>HyperText Markup Language ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â the standard language for creating web pages.</dd>
 
             <dt>CSS</dt>
-            <dd>Cascading Style Sheets Ã¢â‚¬â€ a language for describing the presentation of a document.</dd>
+            <dd>Cascading Style Sheets ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â a language for describing the presentation of a document.</dd>
 
             <dt>PHP</dt>
             <dd>A popular general-purpose scripting language especially suited to web development.</dd>
@@ -543,7 +498,6 @@ HTML supports three list types: unordered (`<ul>`), ordered (`<ol>`), and descri
 ```
 
 ### 3.4 Blockquotes, Preformatted Text, and Code
-
 
 ```html
 <!DOCTYPE html>
@@ -568,7 +522,7 @@ HTML supports three list types: unordered (`<ul>`), ordered (`<ol>`), and descri
     <h2>Blockquote</h2>
     <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
         <p>The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> indicates that the enclosed text is an extended quotation. Usually, this is rendered visually by indentation.</p>
-        <footer>Ã¢â‚¬â€ MDN Web Docs</footer>
+        <footer>ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â MDN Web Docs</footer>
     </blockquote>
 
     <h2>Inline Code</h2>
@@ -603,10 +557,9 @@ class Article extends Model
 
 ## 4. Links & Navigation
 
-Hyperlinks are what make the web a *web* Ã¢â‚¬â€ interconnected documents reachable through a single click. The `<a>` element (anchor) creates a hyperlink.
+Hyperlinks are what make the web a *web* ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â interconnected documents reachable through a single click. The `<a>` element (anchor) creates a hyperlink.
 
 ### 4.1 Link Targets
-
 
 The `href` attribute specifies the destination. The `target` attribute controls where the linked document opens.
 
@@ -645,10 +598,10 @@ The `href` attribute specifies the destination. The `target` attribute controls 
         <div class="card">
             <h3>Examples</h3>
             <ul>
-                <li><a href="/">Home page</a> Ã¢â‚¬â€ <code>href="/"</code></li>
-                <li><a href="/about">About us</a> Ã¢â‚¬â€ <code>href="/about"</code></li>
-                <li><a href="../contact.html">Contact (parent directory)</a> Ã¢â‚¬â€ <code>href="../contact.html"</code></li>
-                <li><a href="docs/guide.pdf">PDF guide</a> Ã¢â‚¬â€ <code>href="docs/guide.pdf"</code></li>
+                <li><a href="/">Home page</a> ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â <code>href="/"</code></li>
+                <li><a href="/about">About us</a> ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â <code>href="/about"</code></li>
+                <li><a href="../contact.html">Contact (parent directory)</a> ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â <code>href="../contact.html"</code></li>
+                <li><a href="docs/guide.pdf">PDF guide</a> ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â <code>href="docs/guide.pdf"</code></li>
             </ul>
         </div>
     </section>
@@ -673,9 +626,9 @@ The `href` attribute specifies the destination. The `target` attribute controls 
         <div class="card">
             <h3>Examples</h3>
             <ul>
-                <li><a href="#internal">Jump to Internal Links</a> Ã¢â‚¬â€ <code>href="#internal"</code></li>
-                <li><a href="#rel-attr">Jump to Rel Attributes</a> Ã¢â‚¬â€ <code>href="#rel-attr"</code></li>
-                <!-- <li><a href="#top">Back to top</a> Ã¢â‚¬â€ <code>href="#top"</code></li> -->
+                <li><a href="#internal">Jump to Internal Links</a> ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â <code>href="#internal"</code></li>
+                <li><a href="#rel-attr">Jump to Rel Attributes</a> ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â <code>href="#rel-attr"</code></li>
+                <!-- <li><a href="#top">Back to top</a> ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â <code>href="#top"</code></li> -->
             </ul>
         </div>
     </section>
@@ -708,7 +661,6 @@ The `href` attribute specifies the destination. The `target` attribute controls 
 ```
 
 ### 4.2 Download Links and Email Links
-
 
 ```html
 <!DOCTYPE html>
@@ -762,36 +714,13 @@ The `href` attribute specifies the destination. The `target` attribute controls 
 
 ### 5.1 The `<img>` Element
 
-<a href="../../../assets/images/diagrams/laravel/html-basics/5-1-the-img-element-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/html-basics/5-1-the-img-element-handwritten.svg" alt="Handwritten: 5.1 The `<img>` Element" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/html-basics/5-1-the-img-element-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/html-basics/5-1-the-img-element-diagram.svg" alt="Diagram: 5.1 The `<img>` Element" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/html-basics/5-1-the-img-element-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/html-basics/5-1-the-img-element-sticky.svg" alt="Sticky Note: 5.1 The `<img>` Element" width="30%">
-</a>
-
-
-The `<img>` element embeds an image. The `alt` attribute is **mandatory** for accessibility Ã¢â‚¬â€ it provides a textual replacement when the image cannot be displayed or when the user relies on a screen reader.
+The `<img>` element embeds an image. The `alt` attribute is **mandatory** for accessibility ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â it provides a textual replacement when the image cannot be displayed or when the user relies on a screen reader.
 
 ### 5.2 Responsive Images with `<picture>`
-
-<a href="../../../assets/images/diagrams/laravel/html-basics/5-2-responsive-images-with-picture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/html-basics/5-2-responsive-images-with-picture-handwritten.svg" alt="Handwritten: 5.2 Responsive Images with `<picture>`" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/html-basics/5-2-responsive-images-with-picture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/html-basics/5-2-responsive-images-with-picture-diagram.svg" alt="Diagram: 5.2 Responsive Images with `<picture>`" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/html-basics/5-2-responsive-images-with-picture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/html-basics/5-2-responsive-images-with-picture-sticky.svg" alt="Sticky Note: 5.2 Responsive Images with `<picture>`" width="30%">
-</a>
-
 
 The `<picture>` element allows you to serve different image files based on viewport size, screen density, or format support.
 
 ### 5.3 Video and Audio
-
 
 ```html
 <!DOCTYPE html>
@@ -831,7 +760,7 @@ The `<picture>` element allows you to serve different image files based on viewp
         <h2>Responsive Picture Element</h2>
         <p>The <code>&lt;picture&gt;</code> element lets you serve different sources for different conditions:</p>
         <picture>
-            <source srcset="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='400' viewBox='0 0 800 400'%3E%3Crect width='800' height='400' fill='%23e94560'/%3E%3Ctext x='400' y='210' text-anchor='middle' fill='white' font-size='28' font-family='system-ui'%3EDesktop Image (Ã¢â€°Â¥ 768px)%3C/text%3E%3C/svg%3E"
+            <source srcset="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='400' viewBox='0 0 800 400'%3E%3Crect width='800' height='400' fill='%23e94560'/%3E%3Ctext x='400' y='210' text-anchor='middle' fill='white' font-size='28' font-family='system-ui'%3EDesktop Image (ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ 768px)%3C/text%3E%3C/svg%3E"
                     media="(min-width: 768px)">
             <source srcset="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%230f3460'/%3E%3Ctext x='200' y='160' text-anchor='middle' fill='white' font-size='20' font-family='system-ui'%3EMobile Image%3C/text%3E%3C/svg%3E"
                     media="(max-width: 767px)">
@@ -891,16 +820,15 @@ HTML tables organize data into rows and columns. While tables should never be us
 
 ### 6.1 Table Structure
 
-
 A proper HTML table uses three structural sections:
 
-- `<thead>` Ã¢â‚¬â€ groups the header rows
-- `<tbody>` Ã¢â‚¬â€ groups the body (data) rows
-- `<tfoot>` Ã¢â‚¬â€ groups footer rows (summary, totals)
+- `<thead>` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â groups the header rows
+- `<tbody>` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â groups the body (data) rows
+- `<tfoot>` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â groups footer rows (summary, totals)
 
 Cell-merging attributes:
-- `colspan` Ã¢â‚¬â€ merges cells horizontally
-- `rowspan` Ã¢â‚¬â€ merges cells vertically
+- `colspan` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â merges cells horizontally
+- `rowspan` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â merges cells vertically
 
 The `<caption>` element provides a title for the table, similar to `figcaption` for figures.
 
@@ -990,7 +918,7 @@ The `<caption>` element provides a title for the table, similar to `figcaption` 
     <section>
         <h2>Table with Colspan and Rowspan</h2>
         <table>
-            <caption>Employee Work Schedule Ã¢â‚¬â€ Q3 2026</caption>
+            <caption>Employee Work Schedule ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Q3 2026</caption>
             <thead>
                 <tr>
                     <th>Employee</th>
@@ -1004,30 +932,30 @@ The `<caption>` element provides a title for the table, similar to `figcaption` 
             <tbody>
                 <tr>
                     <td rowspan="2">Alice Chen</td>
-                    <td>9 AM Ã¢â‚¬â€œ 5 PM</td>
-                    <td>9 AM Ã¢â‚¬â€œ 5 PM</td>
+                    <td>9 AM ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 5 PM</td>
+                    <td>9 AM ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 5 PM</td>
                     <td>Off</td>
-                    <td>9 AM Ã¢â‚¬â€œ 5 PM</td>
-                    <td>9 AM Ã¢â‚¬â€œ 1 PM</td>
+                    <td>9 AM ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 5 PM</td>
+                    <td>9 AM ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 1 PM</td>
                 </tr>
                 <tr>
-                    <td colspan="5" class="highlight">On-call weekend duty: Sep 12Ã¢â‚¬â€œ13</td>
+                    <td colspan="5" class="highlight">On-call weekend duty: Sep 12ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“13</td>
                 </tr>
                 <tr>
                     <td>Bob Martinez</td>
                     <td>Off</td>
-                    <td>10 AM Ã¢â‚¬â€œ 6 PM</td>
-                    <td>10 AM Ã¢â‚¬â€œ 6 PM</td>
-                    <td>10 AM Ã¢â‚¬â€œ 6 PM</td>
+                    <td>10 AM ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 6 PM</td>
+                    <td>10 AM ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 6 PM</td>
+                    <td>10 AM ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 6 PM</td>
                     <td>Off</td>
                 </tr>
                 <tr>
                     <td>Carol Zhang</td>
-                    <td>1 PM Ã¢â‚¬â€œ 9 PM</td>
-                    <td>1 PM Ã¢â‚¬â€œ 9 PM</td>
-                    <td>1 PM Ã¢â‚¬â€œ 9 PM</td>
+                    <td>1 PM ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 9 PM</td>
+                    <td>1 PM ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 9 PM</td>
+                    <td>1 PM ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 9 PM</td>
                     <td>Off</td>
-                    <td>1 PM Ã¢â‚¬â€œ 6 PM</td>
+                    <td>1 PM ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 6 PM</td>
                 </tr>
             </tbody>
             <tfoot>
@@ -1072,7 +1000,7 @@ The `<caption>` element provides a title for the table, similar to `figcaption` 
                     <th scope="row">Food</th>
                     <td>$600</td>
                     <td>$723</td>
-                    <td>Ã¢Ë†â€™$123</td>
+                    <td>ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢$123</td>
                 </tr>
                 <tr>
                     <th scope="row">Transport</th>
@@ -1092,7 +1020,7 @@ The `<caption>` element provides a title for the table, similar to `figcaption` 
                     <th scope="row">Total</th>
                     <td>$2,600</td>
                     <td>$2,691</td>
-                    <td>Ã¢Ë†â€™$91</td>
+                    <td>ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢$91</td>
                 </tr>
             </tfoot>
         </table>
@@ -1110,26 +1038,13 @@ HTML forms are the primary mechanism for collecting user input and sending it to
 
 ### 7.1 The `<form>` Element
 
-<a href="../../../assets/images/diagrams/laravel/html-basics/7-1-the-form-element-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/html-basics/7-1-the-form-element-handwritten.svg" alt="Handwritten: 7.1 The `<form>` Element" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/html-basics/7-1-the-form-element-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/html-basics/7-1-the-form-element-diagram.svg" alt="Diagram: 7.1 The `<form>` Element" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/html-basics/7-1-the-form-element-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/html-basics/7-1-the-form-element-sticky.svg" alt="Sticky Note: 7.1 The `<form>` Element" width="30%">
-</a>
-
-
 The `action` attribute specifies the URL that receives the data. The `method` attribute is typically `GET` or `POST`.
 
 ### 7.2 Input Types and Elements
 
-
 HTML5 defines over 20 input types. Each type triggers an appropriate on-screen keyboard on mobile devices and provides built-in browser validation.
 
 ### Complete Forms Example
-
 
 ```html
 <!DOCTYPE html>
@@ -1164,7 +1079,7 @@ HTML5 defines over 20 input types. Each type triggers an appropriate on-screen k
     <p>This form demonstrates all major HTML5 input types, form controls, and best practices.</p>
 
     <form action="/register" method="POST" enctype="multipart/form-data" novalidate>
-        <!-- CSRF token placeholder Ã¢â‚¬â€ in Laravel this would be @csrf -->
+        <!-- CSRF token placeholder ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â in Laravel this would be @csrf -->
         <input type="hidden" name="_token" value="csrf-token-here">
 
         <fieldset>
@@ -1192,14 +1107,14 @@ HTML5 defines over 20 input types. Each type triggers an appropriate on-screen k
             <input type="date" id="dob" name="dob" min="1920-01-01" max="2010-12-31">
 
             <label for="age">Age</label>
-            <input type="number" id="age" name="age" min="13" max="120" step="1" placeholder="13Ã¢â‚¬â€œ120">
+            <input type="number" id="age" name="age" min="13" max="120" step="1" placeholder="13ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“120">
 
             <label for="phone">Phone Number</label>
             <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" pattern="[\(]\d{3}[\)]\s?\d{3}-?\d{4}" autocomplete="tel">
 
             <label for="country">Country</label>
             <select id="country" name="country">
-                <option value="">Ã¢â‚¬â€ Select a country Ã¢â‚¬â€</option>
+                <option value="">ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Select a country ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â</option>
                 <option value="US">United States</option>
                 <option value="CA">Canada</option>
                 <option value="UK">United Kingdom</option>
@@ -1240,7 +1155,7 @@ HTML5 defines over 20 input types. Each type triggers an appropriate on-screen k
 
             <label for="referrer" style="margin-top: 1rem;">How did you hear about us?</label>
             <select id="referrer" name="referrer">
-                <option value="">Ã¢â‚¬â€ Please choose Ã¢â‚¬â€</option>
+                <option value="">ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Please choose ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â</option>
                 <option value="search">Search Engine</option>
                 <option value="social">Social Media</option>
                 <option value="friend">Friend or Colleague</option>
@@ -1269,7 +1184,7 @@ HTML5 defines over 20 input types. Each type triggers an appropriate on-screen k
             <label for="website">Personal Website</label>
             <input type="url" id="website" name="website" placeholder="https://example.com">
 
-            <label for="satisfaction">Satisfaction Level (1Ã¢â‚¬â€œ10)</label>
+            <label for="satisfaction">Satisfaction Level (1ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“10)</label>
             <input type="range" id="satisfaction" name="satisfaction" min="1" max="10" value="8">
 
             <input type="hidden" name="source" value="registration_form">
@@ -1289,17 +1204,6 @@ HTML5 defines over 20 input types. Each type triggers an appropriate on-screen k
 
 ### 7.3 The `<fieldset>` and `<legend>` Elements
 
-<a href="../../../assets/images/diagrams/laravel/html-basics/7-3-the-fieldset-and-legend-elements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/html-basics/7-3-the-fieldset-and-legend-elements-handwritten.svg" alt="Handwritten: 7.3 The `<fieldset>` and `<legend>` Elements" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/html-basics/7-3-the-fieldset-and-legend-elements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/html-basics/7-3-the-fieldset-and-legend-elements-diagram.svg" alt="Diagram: 7.3 The `<fieldset>` and `<legend>` Elements" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/html-basics/7-3-the-fieldset-and-legend-elements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/html-basics/7-3-the-fieldset-and-legend-elements-sticky.svg" alt="Sticky Note: 7.3 The `<fieldset>` and `<legend>` Elements" width="30%">
-</a>
-
-
 Grouping related form controls with `<fieldset>` and providing a label with `<legend>` improves both visual organization and accessibility. Screen readers announce the legend before each control inside the fieldset.
 
 ---
@@ -1309,7 +1213,6 @@ Grouping related form controls with `<fieldset>` and providing a label with `<le
 HTML5 provides built-in client-side validation through attributes and a JavaScript API for custom constraints.
 
 ### 8.1 Constraint Attributes
-
 
 | Attribute    | Applies To                    | Behavior                                                  |
 |-------------|-------------------------------|-----------------------------------------------------------|
@@ -1323,7 +1226,6 @@ HTML5 provides built-in client-side validation through attributes and a JavaScri
 | `type`      | email, url, number, etc.     | Built-in format validation                                 |
 
 ### 8.2 Constraint Validation API
-
 
 ```html
 <!DOCTYPE html>
@@ -1354,7 +1256,7 @@ HTML5 provides built-in client-side validation through attributes and a JavaScri
     <h1>Constraint Validation API Demo</h1>
     <form id="validation-demo" novalidate>
         <label for="username">Username</label>
-        <input type="text" id="username" name="username" placeholder="3Ã¢â‚¬â€œ20 characters, letters and numbers only" required minlength="3" maxlength="20" pattern="[a-zA-Z0-9_]+">
+        <input type="text" id="username" name="username" placeholder="3ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“20 characters, letters and numbers only" required minlength="3" maxlength="20" pattern="[a-zA-Z0-9_]+">
         <div class="error-message" id="username-error"></div>
 
         <label for="email">Email Address</label>
@@ -1362,7 +1264,7 @@ HTML5 provides built-in client-side validation through attributes and a JavaScri
         <div class="error-message" id="email-error"></div>
 
         <label for="age">Age</label>
-        <input type="number" id="age" name="age" placeholder="13Ã¢â‚¬â€œ120" required min="13" max="120">
+        <input type="number" id="age" name="age" placeholder="13ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“120" required min="13" max="120">
         <div class="error-message" id="age-error"></div>
 
         <label for="zip">Postal Code (US format)</label>
@@ -1378,7 +1280,7 @@ HTML5 provides built-in client-side validation through attributes and a JavaScri
         <div class="error-message" id="confirm-error"></div>
 
         <button type="submit">Validate &amp; Submit</button>
-        <div class="success-message" id="success-msg">Ã¢Å“â€¦ All validations passed! (Form not actually submitted Ã¢â‚¬â€ demo only)</div>
+        <div class="success-message" id="success-msg">ÃƒÂ¢Ã…â€œÃ¢â‚¬Â¦ All validations passed! (Form not actually submitted ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â demo only)</div>
     </form>
 
     <script>
@@ -1498,7 +1400,6 @@ Web accessibility (a11y) ensures that people with disabilities can perceive, und
 
 ### 9.1 ARIA Roles and Properties
 
-
 ARIA (Accessible Rich Internet Applications) attributes supplement HTML semantics when native elements are insufficient. The golden rule: **do not use ARIA if a native HTML element already conveys the semantics you need.**
 
 ```html
@@ -1527,7 +1428,7 @@ ARIA (Accessible Rich Internet Applications) attributes supplement HTML semantic
     </style>
 </head>
 <body>
-    <!-- Skip Link Ã¢â‚¬â€ first focusable element on the page -->
+    <!-- Skip Link ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â first focusable element on the page -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <h1>Accessibility with ARIA</h1>
@@ -1546,12 +1447,12 @@ ARIA (Accessible Rich Internet Applications) attributes supplement HTML semantic
             <h2>1. Semantic Landmarks</h2>
             <p>HTML5 landmark elements map directly to ARIA roles:</p>
             <ul>
-                <li><code>&lt;header&gt;</code> Ã¢â€ â€™ <code>role="banner"</code></li>
-                <li><code>&lt;nav&gt;</code> Ã¢â€ â€™ <code>role="navigation"</code></li>
-                <li><code>&lt;main&gt;</code> Ã¢â€ â€™ <code>role="main"</code></li>
-                <li><code>&lt;aside&gt;</code> Ã¢â€ â€™ <code>role="complementary"</code></li>
-                <li><code>&lt;footer&gt;</code> Ã¢â€ â€™ <code>role="contentinfo"</code></li>
-                <li><code>&lt;form&gt;</code> Ã¢â€ â€™ <code>role="form"</code> (implicit when it has accessible name)</li>
+                <li><code>&lt;header&gt;</code> ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ <code>role="banner"</code></li>
+                <li><code>&lt;nav&gt;</code> ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ <code>role="navigation"</code></li>
+                <li><code>&lt;main&gt;</code> ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ <code>role="main"</code></li>
+                <li><code>&lt;aside&gt;</code> ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ <code>role="complementary"</code></li>
+                <li><code>&lt;footer&gt;</code> ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ <code>role="contentinfo"</code></li>
+                <li><code>&lt;form&gt;</code> ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ <code>role="form"</code> (implicit when it has accessible name)</li>
             </ul>
         </div>
 
@@ -1560,8 +1461,8 @@ ARIA (Accessible Rich Internet Applications) attributes supplement HTML semantic
 
             <h3><code>aria-label</code></h3>
             <p>Provides an invisible label for an element:</p>
-            <button aria-label="Close dialog" style="background: #e94560; color: #fff; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer;">Ã¢Å“â€¢</button>
-            <p style="margin-top: 0.5rem;"><em>The button above shows "Ã¢Å“â€¢" visually, but a screen reader announces "Close dialog."</em></p>
+            <button aria-label="Close dialog" style="background: #e94560; color: #fff; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer;">ÃƒÂ¢Ã…â€œÃ¢â‚¬Â¢</button>
+            <p style="margin-top: 0.5rem;"><em>The button above shows "ÃƒÂ¢Ã…â€œÃ¢â‚¬Â¢" visually, but a screen reader announces "Close dialog."</em></p>
 
             <h3><code>aria-labelledby</code></h3>
             <p>References one or more IDs to form a label:</p>
@@ -1583,7 +1484,7 @@ ARIA (Accessible Rich Internet Applications) attributes supplement HTML semantic
             <p>ARIA live regions announce dynamic content changes to screen readers:</p>
 
             <div role="alert" class="error-msg">
-                Ã¢Å¡Â Ã¯Â¸Â Your session will expire in 5 minutes. Please save your work.
+                ÃƒÂ¢Ã…Â¡Ã‚Â ÃƒÂ¯Ã‚Â¸Ã‚Â Your session will expire in 5 minutes. Please save your work.
             </div>
             <p><code>role="alert"</code> automatically causes screen readers to announce the content when it appears.</p>
 
@@ -1595,7 +1496,7 @@ ARIA (Accessible Rich Internet Applications) attributes supplement HTML semantic
 
         <div class="card" id="contrast">
             <h2>4. Color Contrast</h2>
-            <p>WCAG 2.1 Level AA requires a contrast ratio of at least <strong>4.5:1</strong> for normal text and <strong>3:1</strong> for large text (Ã¢â€°Â¥18px bold or Ã¢â€°Â¥24px).</p>
+            <p>WCAG 2.1 Level AA requires a contrast ratio of at least <strong>4.5:1</strong> for normal text and <strong>3:1</strong> for large text (ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥18px bold or ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥24px).</p>
 
             <table style="width: 100%; border-collapse: collapse;">
                 <thead>
@@ -1609,17 +1510,17 @@ ARIA (Accessible Rich Internet Applications) attributes supplement HTML semantic
                     <tr>
                         <td style="padding: 0.5rem;"><span class="color-sample" style="background: #16213e;"></span>#16213e on white</td>
                         <td style="padding: 0.5rem;">12.4:1</td>
-                        <td style="padding: 0.5rem; color: #2ecc71;">Ã¢Å“â€¦ Yes</td>
+                        <td style="padding: 0.5rem; color: #2ecc71;">ÃƒÂ¢Ã…â€œÃ¢â‚¬Â¦ Yes</td>
                     </tr>
                     <tr>
                         <td style="padding: 0.5rem;"><span class="color-sample" style="background: #e94560;"></span>#e94560 on white</td>
                         <td style="padding: 0.5rem;">5.0:1</td>
-                        <td style="padding: 0.5rem; color: #2ecc71;">Ã¢Å“â€¦ Yes</td>
+                        <td style="padding: 0.5rem; color: #2ecc71;">ÃƒÂ¢Ã…â€œÃ¢â‚¬Â¦ Yes</td>
                     </tr>
                     <tr>
                         <td style="padding: 0.5rem;"><span class="color-sample" style="background: #ccc;"></span>#ccc on white</td>
                         <td style="padding: 0.5rem;">1.7:1</td>
-                        <td style="padding: 0.5rem; color: #e94560;">Ã¢ÂÅ’ No</td>
+                        <td style="padding: 0.5rem; color: #e94560;">ÃƒÂ¢Ã‚ÂÃ…â€™ No</td>
                     </tr>
                 </tbody>
             </table>
@@ -1643,7 +1544,7 @@ ARIA (Accessible Rich Internet Applications) attributes supplement HTML semantic
     </main>
 
     <footer role="contentinfo" style="text-align: center; padding: 1rem; color: #666; font-size: 0.9rem;">
-        <p>Accessibility is not a feature Ã¢â‚¬â€ it is a fundamental design constraint.</p>
+        <p>Accessibility is not a feature ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â it is a fundamental design constraint.</p>
     </footer>
 </body>
 </html>
@@ -1657,7 +1558,6 @@ Search Engine Optimization (SEO) is the practice of improving a website's visibi
 
 ### 10.1 Essential Meta Tags
 
-
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -1670,13 +1570,13 @@ Search Engine Optimization (SEO) is the practice of improving a website's visibi
     <meta name="description" content="Master Laravel 13 with this comprehensive textbook covering routing, Eloquent ORM, Blade templates, Livewire, security, and deployment.">
     <meta name="keywords" content="Laravel 13, PHP framework, web development, Eloquent, Blade, Livewire, full-stack">
 
-    <!-- Canonical URL Ã¢â‚¬â€ prevents duplicate content issues -->
+    <!-- Canonical URL ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â prevents duplicate content issues -->
     <link rel="canonical" href="https://example.com/laravel-13-guide">
 
     <!-- Open Graph (Facebook, LinkedIn, Discord) -->
     <meta property="og:type" content="article">
     <meta property="og:title" content="Laravel 13: The Complete Guide for Modern PHP Developers">
-    <meta property="og:description" content="Master Laravel 13 with this comprehensive textbook Ã¢â‚¬â€ routing, Eloquent ORM, Blade templates, Livewire, security, and deployment.">
+    <meta property="og:description" content="Master Laravel 13 with this comprehensive textbook ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â routing, Eloquent ORM, Blade templates, Livewire, security, and deployment.">
     <meta property="og:url" content="https://example.com/laravel-13-guide">
     <meta property="og:image" content="https://example.com/images/laravel-13-og.png">
     <meta property="og:image:width" content="1200">
@@ -1692,7 +1592,7 @@ Search Engine Optimization (SEO) is the practice of improving a website's visibi
     <meta name="twitter:description" content="Master Laravel 13 with this comprehensive textbook covering routing, Eloquent ORM, Blade templates, Livewire, and deployment.">
     <meta name="twitter:image" content="https://example.com/images/laravel-13-twitter.png">
 
-    <!-- Robots Ã¢â‚¬â€ control indexing -->
+    <!-- Robots ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â control indexing -->
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 
     <!-- Verification (Google Search Console, etc.) -->
@@ -1716,7 +1616,7 @@ Search Engine Optimization (SEO) is the practice of improving a website's visibi
             </tr>
             <tr>
                 <td style="padding: 0.75rem;"><code>meta name="description"</code></td>
-                <td style="padding: 0.75rem;">The snippet text below the title in search results (160Ã¢â‚¬â€œ165 chars optimal)</td>
+                <td style="padding: 0.75rem;">The snippet text below the title in search results (160ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“165 chars optimal)</td>
             </tr>
             <tr style="background: #f0f4f8;">
                 <td style="padding: 0.75rem;"><code>link rel="canonical"</code></td>
@@ -1742,7 +1642,6 @@ Search Engine Optimization (SEO) is the practice of improving a website's visibi
 
 ### 10.2 Structured Data with JSON-LD
 
-
 JSON-LD (JavaScript Object Notation for Linked Data) is Google's recommended format for structured data. It helps search engines understand the content and enables rich results (star ratings, FAQ snippets, breadcrumbs, etc.).
 
 ```html
@@ -1759,7 +1658,7 @@ JSON-LD (JavaScript Object Notation for Linked Data) is Google's recommended for
     {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "HTML Fundamentals Ã¢â‚¬â€ A Comprehensive Textbook Chapter",
+        "headline": "HTML Fundamentals ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â A Comprehensive Textbook Chapter",
         "description": "A rigorous treatment of HTML5 covering document structure, semantic markup, forms, accessibility, SEO, and browser APIs.",
         "author": {
             "@type": "Organization",
@@ -1861,11 +1760,11 @@ JSON-LD (JavaScript Object Notation for Linked Data) is Google's recommended for
 
     <h2>JSON-LD Best Practices</h2>
     <ul>
-        <li>Validate all JSON with a linter before embedding Ã¢â‚¬â€ malformed JSON breaks the entire block silently</li>
+        <li>Validate all JSON with a linter before embedding ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â malformed JSON breaks the entire block silently</li>
         <li>Use <code>@id</code> properties for cross-referencing entities within and across blocks</li>
         <li>Include human-readable <code>name</code>, <code>description</code>, and <code>image</code> in every entity</li>
         <li>Keep structured data in the <code>&lt;head&gt;</code>; Google also parses it from the <code>&lt;body&gt;</code></li>
-        <li>Do not duplicate or inflate markup Ã¢â‚¬â€ Google penalizes spammy structured data</li>
+        <li>Do not duplicate or inflate markup ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Google penalizes spammy structured data</li>
     </ul>
 </body>
 </html>
@@ -1878,7 +1777,6 @@ JSON-LD (JavaScript Object Notation for Linked Data) is Google's recommended for
 HTML5 introduced a powerful set of APIs that run directly in the browser, reducing the need for third-party plugins and enabling rich, interactive web applications.
 
 ### 11.1 Canvas API
-
 
 The Canvas API provides pixel-level drawing via a JavaScript context. Every shape, line, and text is imperatively drawn.
 
@@ -1977,7 +1875,6 @@ The Canvas API provides pixel-level drawing via a JavaScript context. Every shap
 
 ### 11.2 Drag and Drop API
 
-
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -2061,7 +1958,6 @@ The Canvas API provides pixel-level drawing via a JavaScript context. Every shap
 ```
 
 ### 11.3 Web Storage API
-
 
 The Web Storage API provides two client-side key-value stores: `localStorage` (persists across sessions) and `sessionStorage` (cleared when the tab closes).
 
@@ -2170,8 +2066,7 @@ The Web Storage API provides two client-side key-value stores: `localStorage` (p
 
 ### 11.4 History API
 
-
-The History API allows you to manipulate the browser's session history Ã¢â‚¬â€ enabling modern single-page application navigation without full page reloads.
+The History API allows you to manipulate the browser's session history ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â enabling modern single-page application navigation without full page reloads.
 
 ```html
 <!DOCTYPE html>
@@ -2203,8 +2098,8 @@ The History API allows you to manipulate the browser's session history Ã¢â‚
         <button onclick="navigate('home')">Home</button>
         <button onclick="navigate('about')">About</button>
         <button onclick="navigate('contact')">Contact</button>
-        <button onclick="goBack()">Ã¢â€ Â Back</button>
-        <button onclick="goForward()">Forward Ã¢â€ â€™</button>
+        <button onclick="goBack()">ÃƒÂ¢Ã¢â‚¬Â Ã‚Â Back</button>
+        <button onclick="goForward()">Forward ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢</button>
     </div>
 
     <p>Current URL: <span id="location">/</span></p>
@@ -2252,7 +2147,6 @@ The History API allows you to manipulate the browser's session history Ã¢â‚
 ```
 
 ### 11.5 Geolocation API
-
 
 The Geolocation API provides access to the user's geographical location (with their explicit permission).
 
@@ -2321,7 +2215,7 @@ The Geolocation API provides access to the user's geographical location (with th
                     coordsEl.innerHTML = `Latitude: <strong>${lat}</strong><br>Longitude: <strong>${lng}</strong><br>Accuracy: <strong>${accuracy.toFixed(0)} meters</strong>`;
 
                     const mapsUrl = `https://www.openstreetmap.org/?mlat=${lat}&mlon=${lng}&zoom=14`;
-                    mapLinkEl.innerHTML = `<a href="${mapsUrl}" target="_blank" rel="noopener noreferrer">View on OpenStreetMap Ã¢â€ →</a>`;
+                    mapLinkEl.innerHTML = `<a href="${mapsUrl}" target="_blank" rel="noopener noreferrer">View on OpenStreetMap ÃƒÂ¢Ã¢â‚¬Â â†’</a>`;
 
                     btn.disabled = false;
                 },
@@ -2379,7 +2273,6 @@ Now that you understand pure HTML forms, this section shows how Laravel's Blade 
 
 ### 12.1 CSRF Protection
 
-
 Every HTML form that sends a `POST`, `PUT`, `PATCH`, or `DELETE` request must include a CSRF token. In Blade, the `@csrf` directive generates the hidden input automatically.
 
 ```blade
@@ -2399,7 +2292,6 @@ This renders as:
 ```
 
 ### 12.2 Method Spoofing
-
 
 HTML forms only support `GET` and `POST` natively. Laravel's `@method` directive spoofs other HTTP verbs:
 
@@ -2423,11 +2315,9 @@ This renders as:
 
 ### 12.3 Old Input and Error Display
 
-
 When validation fails, Laravel redirects back with the user's input and error messages. The `old()` helper repopulates fields; the `$errors` variable provides per-field error messages.
 
 ### Complete Blade Form Example
-
 
 ```blade
 {{-- resources/views/posts/create.blade.php --}}
@@ -2490,7 +2380,7 @@ When validation fails, Laravel redirects back with the user's input and error me
             class="@error('category') is-invalid @enderror"
             required
         >
-            <option value="">Ã¢â‚¬â€ Select a category Ã¢â‚¬â€</option>
+            <option value="">ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Select a category ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â</option>
             @foreach (['Technology', 'Design', 'Business', 'Science', 'Health', 'Education'] as $cat)
                 <option value="{{ $cat }}" {{ old('category') === $cat ? 'selected' : '' }}>
                     {{ $cat }}
@@ -2579,7 +2469,7 @@ When validation fails, Laravel redirects back with the user's input and error me
 
         <label for="edit-category">Category</label>
         <select id="edit-category" name="category" class="@error('category') is-invalid @enderror">
-            <option value="">Ã¢â‚¬â€ Select Ã¢â‚¬â€</option>
+            <option value="">ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Select ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â</option>
             @foreach (['Technology', 'Design', 'Business'] as $cat)
                 <option
                     value="{{ $cat }}"
@@ -2614,7 +2504,6 @@ When validation fails, Laravel redirects back with the user's input and error me
 
 ### 12.4 Blade Form Helper Reference
 
-
 | Directive / Helper | Purpose |
 |---|---|
 | `@csrf` | Generates the CSRF token hidden input |
@@ -2627,9 +2516,9 @@ When validation fails, Laravel redirects back with the user's input and error me
 | `@selected(old(...))` | Blade directive for `<option selected>` (Laravel 9+) |
 | `@checked(old(...))` | Blade directive for checkbox `checked` state (Laravel 9+) |
 | `session('success')` | Flash message from the server |
-| Form Model Binding | `old('field', $model->field)` Ã¢â‚¬â€ `old()` takes priority |
+| Form Model Binding | `old('field', $model->field)` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â `old()` takes priority |
 
-The key architectural insight: **Blade never replaces HTML**. Every Blade form is still a valid HTML form. The Blade directives simply handle the dynamic parts Ã¢â‚¬â€ security tokens, persisted input, error feedback Ã¢â‚¬â€ while the HTML specification governs everything else.
+The key architectural insight: **Blade never replaces HTML**. Every Blade form is still a valid HTML form. The Blade directives simply handle the dynamic parts ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â security tokens, persisted input, error feedback ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â while the HTML specification governs everything else.
 
 ---
 
@@ -2649,7 +2538,6 @@ The key architectural insight: **Blade never replaces HTML**. Every Blade form i
 
 ---
 
-
 > **Pro Tip:** Use semantic HTML elements (header, nav, main, section, article, footer) for accessibility and SEO.
 
 ## Quick Reference
@@ -2666,7 +2554,6 @@ The key architectural insight: **Blade never replaces HTML**. Every Blade form i
 
 ---
 
-
 > **Remember:** Always set lang attribute on the html element for screen readers and search engines.
 
 ## Cross-Application Matrix
@@ -2680,7 +2567,6 @@ The key architectural insight: **Blade never replaces HTML**. Every Blade form i
 | Blade | Laravel templating | Power vs complexity |
 
 ---
-
 
 > **Warning:** Validate your HTML. A single unclosed tag can break the entire page layout unpredictably.
 
@@ -2958,7 +2844,7 @@ This chapter covered the full spectrum of HTML fundamentals, from the minimal do
 
 - **Semantic markup**: Use elements like `<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<aside>`, `<footer>`, `<figure>`, `<figcaption>`, `<mark>`, and `<time>` to describe content meaning rather than presentation. Semantic HTML is the foundation of accessibility and SEO.
 
-- **Text and content**: Headings (`<h1>`Ã¢â‚¬â€œ`<h6>`) define a strict hierarchy. Unordered lists (`<ul>`), ordered lists (`<ol>`), and description lists (`<dl>`) structure related items. Blockquotes, preformatted text, and code elements preserve formatting and attribution.
+- **Text and content**: Headings (`<h1>`ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“`<h6>`) define a strict hierarchy. Unordered lists (`<ul>`), ordered lists (`<ol>`), and description lists (`<dl>`) structure related items. Blockquotes, preformatted text, and code elements preserve formatting and attribution.
 
 - **Links and navigation**: The `<a>` element creates hyperlinks with absolute, relative, and fragment targets. Always use `rel="noopener noreferrer"` with `target="_blank"`. Special schemes (`mailto:`, `tel:`, `download`) extend link functionality.
 
@@ -2970,7 +2856,7 @@ This chapter covered the full spectrum of HTML fundamentals, from the minimal do
 
 - **Validation**: HTML5 constraint attributes (`required`, `pattern`, `min`, `max`, `minlength`) enforce rules without JavaScript. The Constraint Validation API provides programmatic control with methods like `setCustomValidity()` and properties like `validity.valid`.
 
-- **Accessibility**: Use ARIA roles and properties sparingly Ã¢â‚¬â€ native HTML elements are always preferred. Implement skip links, semantic landmarks, proper color contrast (4.5:1 minimum), and full keyboard navigation.
+- **Accessibility**: Use ARIA roles and properties sparingly ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â native HTML elements are always preferred. Implement skip links, semantic landmarks, proper color contrast (4.5:1 minimum), and full keyboard navigation.
 
 - **SEO**: Every page needs a unique `<title>`, a compelling `<meta name="description">`, a canonical URL, Open Graph and Twitter Card meta tags, and JSON-LD structured data for rich results.
 
@@ -2978,7 +2864,7 @@ This chapter covered the full spectrum of HTML fundamentals, from the minimal do
 
 - **Laravel Blade integration**: `@csrf` protects against cross-site request forgery. `@method` spoofs PUT, PATCH, and DELETE. `old()` repopulates forms after validation failures. `@error` and `$message` display per-field errors. Form model binding combines `old()` with model data for edit forms.
 
-HTML is not merely a notation Ã¢â‚¬â€ it is the contract between content and browser, between human and machine, between design and accessibility. Master it thoroughly, and every other layer of web development becomes clearer.
+HTML is not merely a notation ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â it is the contract between content and browser, between human and machine, between design and accessibility. Master it thoroughly, and every other layer of web development becomes clearer.
 
 ---
 

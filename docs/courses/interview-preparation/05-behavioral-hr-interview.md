@@ -1,4 +1,4 @@
-# Chapter 5: Behavioral and HR Interview
+﻿# Chapter 5: Behavioral and HR Interview
 
 ## Learning Objectives
 
@@ -12,16 +12,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -194,7 +194,7 @@ flowchart LR
 4. Set up daily 15-minute stand-up meetings
 5. Personally handled VIP speaker confirmations and contingency plans
 
-**Result:** The symposium was attended by 550+ people, featured speakers from Microsoft and Amazon, and generated ₹2 lakhs in revenue. The event was rated 4.5/5 in feedback. This experience taught me structured delegation and the importance of contingency planning.
+**Result:** The symposium was attended by 550+ people, featured speakers from Microsoft and Amazon, and generated â‚¹2 lakhs in revenue. The event was rated 4.5/5 in feedback. This experience taught me structured delegation and the importance of contingency planning.
 
 > **Real Experience:** In my Google interview, I used this example. The interviewer was particularly interested in how I handled a team member who wasn't delivering on time.
 </details>
@@ -315,7 +315,7 @@ flowchart LR
 **Task:** Find and fix the intermittent failure before the upcoming product launch.
 
 **Action:** I:
-1. Added detailed request/response logging at each layer (ELB → API Gateway → Service)
+1. Added detailed request/response logging at each layer (ELB â†’ API Gateway â†’ Service)
 2. Correlated logs with error timestamps and found the pattern: errors coincided with 15-minute intervals
 3. Investigated AWS ALB idle timeout settings (default 60s) vs our service's long-polling endpoints
 4. Discovered that long-polling requests exceeding 60s were being silently dropped
@@ -335,7 +335,7 @@ flowchart LR
 **Task:** Build a system that tracks 15 buses across campus and shows real-time location to 5000+ students.
 
 **Action:** I:
-1. Designed the full architecture: GPS modules on buses → MQTT broker → Node.js backend → WebSocket to React frontend
+1. Designed the full architecture: GPS modules on buses â†’ MQTT broker â†’ Node.js backend â†’ WebSocket to React frontend
 2. Built a custom GPS data ingestion service handling 1000 updates/minute
 3. Implemented ETA prediction using historical data and Haversine distance formula
 4. Created a mobile-first responsive UI with Mapbox integration
@@ -343,7 +343,7 @@ flowchart LR
 
 **Result:** The system achieved 95% location accuracy with 5-second update latency. The university deployed it officially, serving 5000+ daily users. I learned full-stack development, real-time systems, and open-source collaboration.
 
-> **Real Experience:** In my Amazon SDE interview, the interviewer closely examined the architecture decisions — why MQTT over HTTP, why WebSocket over polling, and how I handled 1000 updates/min on a student budget.
+> **Real Experience:** In my Amazon SDE interview, the interviewer closely examined the architecture decisions â€” why MQTT over HTTP, why WebSocket over polling, and how I handled 1000 updates/min on a student budget.
 </details>
 
 ### Q14: Describe a time you had to learn a new technology quickly.
@@ -371,7 +371,7 @@ flowchart LR
 <details>
 <summary>Click to reveal sample answer</summary>
 
-**Situation:** Our code review process was slow — average PR merge time was 3 days. Developers were frustrated.
+**Situation:** Our code review process was slow â€” average PR merge time was 3 days. Developers were frustrated.
 
 **Task:** Reduce PR review time without sacrificing code quality.
 
@@ -436,7 +436,7 @@ flowchart LR
 
 **Result:** Column was restored within 20 minutes. The dashboard was fully functional. I implemented a "DB Migration Review" checklist that became team standard. No similar incident occurred afterward.
 
-> **Tip:** Focus on how you handled the mistake — speed of detection, transparency, and systemic fix.
+> **Tip:** Focus on how you handled the mistake â€” speed of detection, transparency, and systemic fix.
 </details>
 
 ### Q18: Tell me about a time you received negative feedback.
@@ -504,13 +504,13 @@ flowchart LR
 <details>
 <summary>Click to reveal sample answer</summary>
 
-**Situation:** I was asked to present our team's quarterly results to the VP of Engineering — a task I'd never done before. I was comfortable coding but terrified of public speaking.
+**Situation:** I was asked to present our team's quarterly results to the VP of Engineering â€” a task I'd never done before. I was comfortable coding but terrified of public speaking.
 
 **Task:** Deliver a 15-minute presentation covering technical achievements, metrics, and roadmap.
 
 **Action:** I:
 1. Prepared extensively: wrote a script, created slides with clear visuals
-2. Practiced the presentation 7 times — alone, then with my team, then with my manager
+2. Practiced the presentation 7 times â€” alone, then with my team, then with my manager
 3. Anticipated questions and prepared answers
 4. On the day, focused on the data rather than my nervousness
 5. Made eye contact and spoke slowly
@@ -528,7 +528,7 @@ flowchart LR
 **Task:** Self-learn system design concepts well enough to design scalable systems.
 
 **Action:** I:
-1. Followed a structured learning path: YouTube (Gaurav Sen) → Book (Alex Xu) → Practice (interviews)
+1. Followed a structured learning path: YouTube (Gaurav Sen) â†’ Book (Alex Xu) â†’ Practice (interviews)
 2. Built a URL shortener, chat system, and rate limiter from scratch
 3. Practiced whiteboarding designs with friends
 4. Created a GitHub repo with my system design notes and diagrams
@@ -551,7 +551,7 @@ flowchart LR
 **Task:** Explain the technical complexity without being condescending or using jargon.
 
 **Action:** I:
-1. Used an analogy: "Adding this button is like adding a new room to a house — you need a foundation, wiring, and plumbing, not just a door."
+1. Used an analogy: "Adding this button is like adding a new room to a house â€” you need a foundation, wiring, and plumbing, not just a door."
 2. Broke down the feature into layers: UI work, API changes, database migration, testing, deployment
 3. Used a whiteboard to draw the current data flow and how it would change
 4. Quantified each layer in person-days of effort
@@ -571,7 +571,7 @@ flowchart LR
 
 **Action:** I:
 1. Requested an in-person meeting (not email/phone) to show commitment
-2. Listened actively for 30 minutes without interrupting — let them vent
+2. Listened actively for 30 minutes without interrupting â€” let them vent
 3. Empathized with their concerns and apologized for the communication gap
 4. Presented a revised 4-week plan with weekly deliverables and demo sessions
 5. Set up a shared Jira board for total transparency on progress
@@ -596,7 +596,7 @@ flowchart LR
 4. Addressed concerns about complexity by providing a migration plan
 5. Offered to do the migration incrementally (one module at a time)
 
-**Result:** The team agreed to a trial with one module. After seeing the 90% build time reduction and zero issues, all teams adopted the approach. Average build time dropped to 4 minutes, saving the company an estimated ₹50 lakhs/year in developer productivity.
+**Result:** The team agreed to a trial with one module. After seeing the 90% build time reduction and zero issues, all teams adopted the approach. Average build time dropped to 4 minutes, saving the company an estimated â‚¹50 lakhs/year in developer productivity.
 </details>
 
 ---
@@ -608,7 +608,7 @@ flowchart LR
 <details>
 <summary>Click to reveal sample answer</summary>
 
-**Structure:** Present → Past → Future
+**Structure:** Present â†’ Past â†’ Future
 
 "Currently, I am a Software Engineer at XYZ Corp, where I specialize in building scalable backend systems using Node.js and TypeScript. I lead the payment integration team and have improved transaction success rates from 95% to 99.5%.
 
@@ -632,7 +632,7 @@ I am looking for roles where I can work on challenging distributed systems probl
 **Weaknesses (use the STAR method for improvement):**
 "My weakness is that I sometimes spend too much time perfecting code rather than hitting deadlines. For example, I once spent two extra days optimizing a function that was already meeting performance requirements. I'm working on this by setting strict time-boxes for optimization and discussing performance requirements with my team before committing to refactoring."
 
-> **WARNING:** Never say "I work too hard" or "I'm a perfectionist" — these are clichés. Pick a real weakness that you're actively improving.
+> **WARNING:** Never say "I work too hard" or "I'm a perfectionist" â€” these are clichÃ©s. Pick a real weakness that you're actively improving.
 </details>
 
 ### Q28: Why do you want to work at this company?
@@ -670,9 +670,9 @@ I'm open to both IC and management tracks, depending on where I can add the most
 <details>
 <summary>Click to reveal sample answer</summary>
 
-**Positive framing — never badmouth previous employer:**
+**Positive framing â€” never badmouth previous employer:**
 
-"I learned a lot at my previous company — particularly around payment systems and production debugging. However, I'm looking for:
+"I learned a lot at my previous company â€” particularly around payment systems and production debugging. However, I'm looking for:
 
 1. **More scale:** I want to work on systems serving millions of users
 2. **Modern tech stack:** The company was transitioning to microservices, and I want to work in a fully cloud-native environment
@@ -690,7 +690,7 @@ Your company offers all three, which is why I applied."
 
 **Research-based approach:**
 
-"I've done some research based on industry standards for this role and location. For a Senior Software Engineer with 5 years of experience, the typical range is ₹25-35 LPA. Based on my skills in distributed systems and payment infrastructure, I'm looking for something in the ₹28-32 LPA range. However, I'm open to discussing the total compensation package including stock options, bonuses, and other benefits."
+"I've done some research based on industry standards for this role and location. For a Senior Software Engineer with 5 years of experience, the typical range is â‚¹25-35 LPA. Based on my skills in distributed systems and payment infrastructure, I'm looking for something in the â‚¹28-32 LPA range. However, I'm open to discussing the total compensation package including stock options, bonuses, and other benefits."
 
 > **Best practices:**
 > 1. Research the market rate before the interview
@@ -749,7 +749,7 @@ Your company offers all three, which is why I applied."
 1. **Prioritization:** During a production outage, I categorize issues by impact. The database issue gets my full attention; the minor UI bug can wait.
 2. **Break down:** I break overwhelming problems into smaller, manageable tasks.
 3. **Communication:** I keep stakeholders informed about status and expected resolution time.
-4. **Self-care:** I maintain boundaries — no work emails after 9 PM, weekend recharge, regular exercise.
+4. **Self-care:** I maintain boundaries â€” no work emails after 9 PM, weekend recharge, regular exercise.
 
 During the 2022 flash sale, our system was under 10x normal load. Instead of panicking, I followed this framework: identify the critical path, delegate monitoring tasks, and focus on the most impactful fix. The sale was a success with 99.8% uptime."
 </details>
@@ -765,7 +765,7 @@ During the 2022 flash sale, our system was under 10x normal load. Instead of pan
 2. **Learning:** I'm motivated by mastering new technologies. Every project teaches me something new about system design, performance optimization, or team collaboration.
 3. **Problem-solving:** I enjoy the intellectual challenge of debugging complex issues. The satisfaction of solving a problem that stumped the team for days is addictive.
 
-I find that roles combining all three — like the one I'm interviewing for — bring out my best work."
+I find that roles combining all three â€” like the one I'm interviewing for â€” bring out my best work."
 </details>
 
 ---
@@ -813,7 +813,7 @@ flowchart LR
 
 **Participant 3 (Balanced):** "I think both perspectives have merit. The key is specialization. While routine CRUD development may be automated, roles requiring system architecture, security expertise, and domain knowledge will become more valuable. The engineers who adapt by focusing on higher-level design thinking will thrive."
 
-**Participant 1 (Building):** "Building on Participant 3's point, I'd like to add that the Indian IT services industry has historically adapted to paradigm shifts — from mainframe to client-server to cloud. The shift to AI-augmented development is another evolution, not an extinction event."
+**Participant 1 (Building):** "Building on Participant 3's point, I'd like to add that the Indian IT services industry has historically adapted to paradigm shifts â€” from mainframe to client-server to cloud. The shift to AI-augmented development is another evolution, not an extinction event."
 
 **Participant 4 (Conclusion):** "To summarize the key points: AI will automate routine coding but not replace engineers. The role will evolve toward architecture, review, and prompt engineering. The message for engineers is clear: upskill to higher-level thinking or risk being automated."
 
@@ -827,11 +827,11 @@ Prepare stories that cover multiple categories with a single experience:
 
 | Story | Teamwork | Leadership | Failure | Problem-Solving | Adaptability |
 |-------|----------|------------|---------|-----------------|--------------|
-| Database migration failure | ✓ | - | ✓ | ✓ | - |
-| Flash sale optimization | ✓ | ✓ | - | ✓ | ✓ |
-| Hackathon win | ✓ | ✓ | - | ✓ | - |
-| CI/CD pipeline automation | - | ✓ | - | ✓ | ✓ |
-| On-call incident handling | - | - | - | ✓ | ✓ |
+| Database migration failure | âœ“ | - | âœ“ | âœ“ | - |
+| Flash sale optimization | âœ“ | âœ“ | - | âœ“ | âœ“ |
+| Hackathon win | âœ“ | âœ“ | - | âœ“ | - |
+| CI/CD pipeline automation | - | âœ“ | - | âœ“ | âœ“ |
+| On-call incident handling | - | - | - | âœ“ | âœ“ |
 
 ### Common Behavioral Questions by Role
 
@@ -873,7 +873,7 @@ Prepare stories that cover multiple categories with a single experience:
 
 ### Understanding SJT Format
 
-SJTs present workplace scenarios with multiple possible responses. You must choose the BEST and WORST response. Unlike behavioral questions, there's no single "correct" answer — responses are rated on effectiveness.
+SJTs present workplace scenarios with multiple possible responses. You must choose the BEST and WORST response. Unlike behavioral questions, there's no single "correct" answer â€” responses are rated on effectiveness.
 
 ### SJT Scoring Framework
 
@@ -908,7 +908,7 @@ Response D: Deliver partial work on time and complete the rest later
 | C | 3 | Gets help but bypasses proper channels |
 | D | 4 | Pragmatic approach, but should inform manager first |
 
-**Best:** B — Most Effective | **Worst:** A — Ineffective
+**Best:** B â€” Most Effective | **Worst:** A â€” Ineffective
 </details>
 
 #### Scenario 2: Team Conflict
@@ -932,7 +932,7 @@ Response D: Propose a data-driven approach: build a POC for both approaches
 | C | 2 | Escalates conflict by taking sides |
 | D | 5 | Constructive, data-driven, focuses on resolution |
 
-**Best:** D — Most Effective | **Worst:** A — Counterproductive
+**Best:** D â€” Most Effective | **Worst:** A â€” Counterproductive
 </details>
 
 #### Scenario 3: Quality vs Deadline
@@ -956,7 +956,7 @@ Response D: Stay late to both test and meet the deadline
 | C | 1 | Reckless; production bugs cost more than delay |
 | D | 4 | Dedicated but unsustainable pattern |
 
-**Best:** B — Most Effective | **Worst:** C — Counterproductive
+**Best:** B â€” Most Effective | **Worst:** C â€” Counterproductive
 </details>
 
 ### SJT Tips
@@ -992,7 +992,7 @@ Response D: Stay late to both test and meet the deadline
 "I've done some research on industry standards for this role in Bangalore,
 and based on my 5 years of experience with skills in distributed systems
 and payment infrastructure, I'm looking at a total compensation range of
-₹28-35 LPA. However, I'm open to discussing the full package including
+â‚¹28-35 LPA. However, I'm open to discussing the full package including
 bonuses, stock options, and other benefits."
 
 Why this works: You give a range (not a fixed number), mention research,
@@ -1003,15 +1003,15 @@ focus on total comp (not just base), and show flexibility.
 
 ```
 "I'm very excited about the role and the team. Based on my research and
-experience, I was expecting an offer in the range of ₹25-30 LPA. The current
-offer of ₹22 LPA is below market rate for this position. Is there flexibility
+experience, I was expecting an offer in the range of â‚¹25-30 LPA. The current
+offer of â‚¹22 LPA is below market rate for this position. Is there flexibility
 to increase the base salary or adjust the joining bonus to bridge this gap?"
 ```
 
 #### Script 3: When negotiating multiple offers
 
 ```
-"I've received another offer that is ₹X LPA higher. I'd prefer to join your
+"I've received another offer that is â‚¹X LPA higher. I'd prefer to join your
 company because of [specific reason - team, technology, culture], but I'd
 appreciate if you could match the compensation to help me make this decision
 easier."
@@ -1062,15 +1062,15 @@ This chapter covered comprehensive preparation for behavioral and HR interviews:
 
 1. **Prepare 5 core stories** that can be adapted to 80% of behavioral questions. Each story should cover multiple competencies.
 
-2. **Quantify everything** — "improved by 40%", "served 10K users", "reduced cost by ₹5L" — numbers make your answer credible.
+2. **Quantify everything** â€” "improved by 40%", "served 10K users", "reduced cost by â‚¹5L" â€” numbers make your answer credible.
 
-3. **Record yourself answering** — you'll notice filler words ("um", "like", "actually") you can eliminate.
+3. **Record yourself answering** â€” you'll notice filler words ("um", "like", "actually") you can eliminate.
 
 4. **For government interviews:** Be prepared for personal questions about family background, gap years, and reasons for choosing government sector. Stay professional and honest.
 
-5. **The interviewer is human** — they're looking for someone they'd enjoy working with. Show personality and enthusiasm.
+5. **The interviewer is human** â€” they're looking for someone they'd enjoy working with. Show personality and enthusiasm.
 
-6. **⭐ Must-have stories:** Conflict resolution, failure/learning, biggest achievement, teamwork, and leadership/initiative.
+6. **â­ Must-have stories:** Conflict resolution, failure/learning, biggest achievement, teamwork, and leadership/initiative.
 
 7. **Group Discussion:** Speak within the first 2 minutes, make 3-4 quality points, acknowledge others' contributions, and volunteer to summarize.
 

@@ -1,6 +1,6 @@
-# SSC CGL Tier 1 — Full-Length Mock Test
+﻿# SSC CGL Tier 1 â€” Full-Length Mock Test
 
-> **Exam:** Staff Selection Commission — Combined Graduate Level (SSC CGL) Tier 1  
+> **Exam:** Staff Selection Commission â€” Combined Graduate Level (SSC CGL) Tier 1  
 > **Total Questions:** 100 | **Duration:** 60 minutes | **Max Marks:** 200  
 > **Negative Marking:** 0.50 marks per wrong answer (each question carries 2 marks)
 
@@ -9,16 +9,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -39,7 +39,7 @@
 ## Exam Pattern Visualization
 
 ```mermaid
-pie title SSC CGL Tier 1 — Section Weightage (by marks)
+pie title SSC CGL Tier 1 â€” Section Weightage (by marks)
     "General Intelligence & Reasoning" : 50
     "General Awareness" : 50
     "Quantitative Aptitude" : 50

@@ -1,6 +1,6 @@
-# Chapter 2: Network Security
+﻿# Chapter 2: Network Security
 
-> **Exam Weightage:** 4–5 Qs in IBPS SO IT Officer Mains (Firewalls, IDS/IPS, VPN, SSL/TLS, Secure Protocols)
+> **Exam Weightage:** 4â€“5 Qs in IBPS SO IT Officer Mains (Firewalls, IDS/IPS, VPN, SSL/TLS, Secure Protocols)
 >
 > **Key Topics:** Firewall types, IDS/IPS, VPN (IPSec, SSL/TLS), SSL/TLS handshake, HTTPS vs HTTP, SSH, PGP, S/MIME
 
@@ -13,16 +13,16 @@ After completing this chapter you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/information-security/02-network-security/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/information-security/02-network-security/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/information-security/02-network-security/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/information-security/02-network-security/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/information-security/02-network-security/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/information-security/02-network-security/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/information-security/02-network-security/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/information-security/02-network-security/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/information-security/02-network-security/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/information-security/02-network-security/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/information-security/02-network-security/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/information-security/02-network-security/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -75,11 +75,11 @@ A firewall is a network security device that monitors and controls incoming and 
 #### 2.1.3 Application Proxy Firewall (Application Gateway)
 
 - Intermediary: client connects to proxy, proxy connects to destination
-- Full **application-layer awareness (Layer 7)** — understands protocol semantics
+- Full **application-layer awareness (Layer 7)** â€” understands protocol semantics
 - Can inspect, modify, or block content within application protocol
 - **Two types:** Forward proxy (outbound) and Reverse proxy (inbound)
 - **Speed:** Slowest due to full protocol parsing (terminates and re-establishes connections)
-- **Security:** Highest — can filter commands, block malicious content, perform DPI (Deep Packet Inspection)
+- **Security:** Highest â€” can filter commands, block malicious content, perform DPI (Deep Packet Inspection)
 - **Examples:** Squid (web proxy), HAProxy, Nginx reverse proxy
 
 **Advantages over stateful inspection:**
@@ -98,10 +98,10 @@ A firewall is a network security device that monitors and controls incoming and 
 
 | Firewall Type | Layer | Stateful? | App Aware? | Speed | Security |
 |--------------|-------|-----------|------------|-------|----------|
-| Packet Filter | 3–4 | No | No | Very Fast | Low |
-| Stateful | 3–4 | Yes | No | Fast | Medium |
+| Packet Filter | 3â€“4 | No | No | Very Fast | Low |
+| Stateful | 3â€“4 | Yes | No | Fast | Medium |
 | Proxy | 7 | Yes | Yes | Slow | High |
-| NGFW | 3–7 | Yes | Yes | Moderate | Very High |
+| NGFW | 3â€“7 | Yes | Yes | Moderate | Very High |
 
 ```mermaid
 flowchart LR
@@ -126,7 +126,7 @@ flowchart LR
 | Response | Sends alert to admin | Drops/rejects/resets connection |
 | Latency impact | None (monitoring only) | Adds latency (must inspect before forwarding) |
 | False positive | Generates unnecessary alerts | Blocks legitimate traffic (more severe) |
-| Single point of failure | No (sensors fail → still reachable) | Yes (if inline device fails → traffic stops) |
+| Single point of failure | No (sensors fail â†’ still reachable) | Yes (if inline device fails â†’ traffic stops) |
 
 #### 2.2.2 Signature-Based Detection
 
@@ -146,9 +146,9 @@ flowchart LR
 
 | Detection Method | Known Attacks | Unknown Attack | False Positive | False Negative | Maintenance |
 |-----------------|---------------|----------------|----------------|----------------|-------------|
-| Signature-based | ✅ Excellent | ❌ None | Low | Low (known) | High (signature updates) |
-| Anomaly-based | ✅ Good | ✅ Possible | High | Medium | High (baseline tuning) |
-| Hybrid | ✅ Excellent | ✅ Good | Medium | Low | Very High |
+| Signature-based | âœ… Excellent | âŒ None | Low | Low (known) | High (signature updates) |
+| Anomaly-based | âœ… Good | âœ… Possible | High | Medium | High (baseline tuning) |
+| Hybrid | âœ… Excellent | âœ… Good | Medium | Low | Very High |
 
 ### 2.3 VPN (Virtual Private Network)
 
@@ -167,9 +167,9 @@ A VPN creates an encrypted tunnel between two endpoints over a public network, p
 | Transport Mode | Payload only (IP header unchanged) | End-to-end (host-to-host) | Original IP header preserved | New IP header inserted before AH/ESP header |
 | Tunnel Mode | Entire IP packet (encapsulated) | Gateway-to-gateway (site-to-site) | Original packet wrapped in new IP header | New IP header with gateway addresses |
 
-**IPSec Key Exchange — IKE (Internet Key Exchange):**
-- **Phase 1:** Establish ISAKMP SA (Main mode — 6 messages, or Aggressive mode — 3 messages). Authenticates peers and establishes a secure channel.
-- **Phase 2:** Establish IPSec SA (Quick mode — 3 messages). Negotiates AH/ESP parameters and generates session keys.
+**IPSec Key Exchange â€” IKE (Internet Key Exchange):**
+- **Phase 1:** Establish ISAKMP SA (Main mode â€” 6 messages, or Aggressive mode â€” 3 messages). Authenticates peers and establishes a secure channel.
+- **Phase 2:** Establish IPSec SA (Quick mode â€” 3 messages). Negotiates AH/ESP parameters and generates session keys.
 - **Port:** UDP 500 (IKE), UDP 4500 (NAT-Traversal)
 
 **Security Associations (SA):** Unidirectional (two SAs needed for bidirectional communication). Each SA identified by SPI (Security Parameter Index).
@@ -187,7 +187,7 @@ flowchart TD
 
 #### 2.3.2 SSL/TLS VPN
 
-- Uses SSL/TLS protocol (TCP 443) for secure tunnel — same protocol as HTTPS
+- Uses SSL/TLS protocol (TCP 443) for secure tunnel â€” same protocol as HTTPS
 - **Advantages over IPSec:**
   - No client software needed (works in browser)
   - Bypasses NAT/firewalls easily (TCP 443 almost always open)
@@ -201,7 +201,7 @@ flowchart TD
   - **SSL Portal VPN:** Single web page lists accessible applications (browser-based)
   - **SSL Tunnel VPN:** Full network tunnel via browser plugin or dedicated client
 
-#### 2.3.3 IPSec vs SSL VPN — Comparison
+#### 2.3.3 IPSec vs SSL VPN â€” Comparison
 
 | Feature | IPSec VPN | SSL/TLS VPN |
 |---------|-----------|-------------|
@@ -229,31 +229,31 @@ flowchart TD
 
 #### 2.4.2 TLS 1.2 Handshake (10 messages)
 
-1. **ClientHello** — Client sends: TLS version, cipher suites list (e.g., TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384), random nonce, session ID
-2. **ServerHello** — Server responds with: chosen TLS version, chosen cipher suite, random nonce, session ID
-3. **Certificate** — Server sends its X.509 certificate chain (server + intermediate CAs)
-4. **ServerKeyExchange** — Server sends ephemeral DH parameters (p, g, g^b mod p signed with RSA private key) — only for DHE/ECDHE cipher suites
-5. **CertificateRequest** — Optional: server requests client certificate (mutual TLS)
-6. **ServerHelloDone** — Server signals end of hello messages
-7. **ClientCertificate** — Optional: client sends its certificate (if requested)
-8. **ClientKeyExchange** — Client sends pre-master secret encrypted with server's public key (RSA) or DH public value (DHE/ECDHE)
-9. **CertificateVerify** — Optional: client proves possession of private key by signing handshake messages
-10. **ChangeCipherSpec + Finished** — Both sides switch to encrypted mode and send Finished message (MAC of all handshake messages)
+1. **ClientHello** â€” Client sends: TLS version, cipher suites list (e.g., TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384), random nonce, session ID
+2. **ServerHello** â€” Server responds with: chosen TLS version, chosen cipher suite, random nonce, session ID
+3. **Certificate** â€” Server sends its X.509 certificate chain (server + intermediate CAs)
+4. **ServerKeyExchange** â€” Server sends ephemeral DH parameters (p, g, g^b mod p signed with RSA private key) â€” only for DHE/ECDHE cipher suites
+5. **CertificateRequest** â€” Optional: server requests client certificate (mutual TLS)
+6. **ServerHelloDone** â€” Server signals end of hello messages
+7. **ClientCertificate** â€” Optional: client sends its certificate (if requested)
+8. **ClientKeyExchange** â€” Client sends pre-master secret encrypted with server's public key (RSA) or DH public value (DHE/ECDHE)
+9. **CertificateVerify** â€” Optional: client proves possession of private key by signing handshake messages
+10. **ChangeCipherSpec + Finished** â€” Both sides switch to encrypted mode and send Finished message (MAC of all handshake messages)
 
-**Key derivation chain:** Pre-Master Secret → Master Secret (48 bytes, via PRF) → Key material (encryption key, MAC key, IV for both directions)
+**Key derivation chain:** Pre-Master Secret â†’ Master Secret (48 bytes, via PRF) â†’ Key material (encryption key, MAC key, IV for both directions)
 
 #### 2.4.3 TLS 1.3 Handshake (optimized)
 
 - **1-RTT** (one round trip) for full handshake vs 2-RTT in TLS 1.2
 - **0-RTT** (zero round trip) for session resumption (early data)
-- **Key exchange:** Only DHE/ECDHE (no RSA key exchange — forward secrecy mandatory)
+- **Key exchange:** Only DHE/ECDHE (no RSA key exchange â€” forward secrecy mandatory)
 - **Encryption:** Only AEAD ciphers (AES-GCM, ChaCha20-Poly1305)
 - Certificate encryption: entire certificate chain is encrypted (privacy improvement)
 - Removed: compression, renegotiation, CBC mode, RC4, 3DES, static RSA/DH
 
 **TLS 1.3 Handshake Messages:**
-1. ClientHello (contains key share — g^a already included)
-2. ServerHello (contains key share — g^b) + EncryptedExtensions + Certificate + CertificateVerify + Finished
+1. ClientHello (contains key share â€” g^a already included)
+2. ServerHello (contains key share â€” g^b) + EncryptedExtensions + Certificate + CertificateVerify + Finished
 3. Client Finished + Application Data
 
 ```mermaid
@@ -269,12 +269,12 @@ sequenceDiagram
     Client->>Server: ClientKeyExchange (DH public value / enc pre-master secret)
     Client->>Server: ChangeCipherSpec + Finished
     Server->>Client: ChangeCipherSpec + Finished
-    Note over Client,Server: 🔒 Encrypted Application Data
+    Note over Client,Server: ðŸ”’ Encrypted Application Data
     Note over Client,Server: TLS 1.3 Handshake (1-RTT)
     Client->>Server: ClientHello (version, cipher suites, key share)
     Server->>Client: ServerHello (key share) + EncryptedExtensions + Certificate + CertificateVerify + Finished
     Client->>Server: Client Finished + Application Data
-    Note over Client,Server: 🔒 Encrypted Application Data
+    Note over Client,Server: ðŸ”’ Encrypted Application Data
 ```
 
 ### 2.5 HTTPS vs HTTP
@@ -290,16 +290,16 @@ sequenceDiagram
 | SEO ranking | Lower | Higher (Google ranking boost) |
 | Browser indicator | "Not secure" | Padlock icon, "Secure" |
 
-**Mixed Content Warning:** HTTPS page loading HTTP resources (images, scripts) may trigger browser warnings — "This page is not fully secure."
+**Mixed Content Warning:** HTTPS page loading HTTP resources (images, scripts) may trigger browser warnings â€” "This page is not fully secure."
 
 ### 2.6 SSH (Secure Shell)
 
 - **Purpose:** Secure remote login, command execution, port forwarding
 - **Default port:** TCP 22
 - **Protocol layers:**
-  1. **Transport Layer (Key exchange, server auth, encryption)** — Establishes encrypted tunnel (Diffie-Hellman key exchange, host key verification)
-  2. **User Authentication Layer** — Authenticates client to server (password, public key, GSSAPI)
-  3. **Connection Layer** — Multiplexes multiple channels (shell, exec, port forwarding) over single connection
+  1. **Transport Layer (Key exchange, server auth, encryption)** â€” Establishes encrypted tunnel (Diffie-Hellman key exchange, host key verification)
+  2. **User Authentication Layer** â€” Authenticates client to server (password, public key, GSSAPI)
+  3. **Connection Layer** â€” Multiplexes multiple channels (shell, exec, port forwarding) over single connection
 
 #### 2.6.1 SSH Authentication Methods
 
@@ -312,8 +312,8 @@ sequenceDiagram
 
 #### 2.6.2 SSH Port Forwarding
 
-- **Local forwarding (-L):** Forward local port → remote host via SSH server (`ssh -L 8080:internal:80 user@gateway`)
-- **Remote forwarding (-R):** Forward SSH server port → local machine (`ssh -R 8080:localhost:80 user@gateway`)
+- **Local forwarding (-L):** Forward local port â†’ remote host via SSH server (`ssh -L 8080:internal:80 user@gateway`)
+- **Remote forwarding (-R):** Forward SSH server port â†’ local machine (`ssh -R 8080:localhost:80 user@gateway`)
 - **Dynamic forwarding (-D):** SOCKS proxy via SSH (`ssh -D 1080 user@gateway`)
 
 ### 2.7 Secure Email: PGP and S/MIME
@@ -323,11 +323,11 @@ sequenceDiagram
 - **Creator:** Phil Zimmermann (1991)
 - **Standard:** OpenPGP (RFC 4880)
 - **Encryption method:** Hybrid encryption
-  - Generate random session key → encrypt message with symmetric cipher (AES-256)
+  - Generate random session key â†’ encrypt message with symmetric cipher (AES-256)
   - Encrypt session key with recipient's RSA public key
   - Sign message hash with sender's private key
-- **Key management:** Web of Trust (decentralized — users sign each other's keys)
-- **Output format:** Radix-64 (ASCII armor — converts binary to printable text)
+- **Key management:** Web of Trust (decentralized â€” users sign each other's keys)
+- **Output format:** Radix-64 (ASCII armor â€” converts binary to printable text)
 
 **PGP Message Structure:**
 1. Session key packet (encrypted with recipient's public key)
@@ -338,11 +338,11 @@ sequenceDiagram
 
 - **Standard:** PKCS#7 / Cryptographic Message Syntax (CMS)
 - **Dependency:** Requires X.509 PKI hierarchy (certificates issued by trusted CAs)
-- **Key management:** Centralized (CA hierarchy — similar to HTTPS certificates)
+- **Key management:** Centralized (CA hierarchy â€” similar to HTTPS certificates)
 - **Encryption:** Same hybrid approach as PGP
 - **Integration:** Built into most email clients (Outlook, Apple Mail, Thunderbird)
 
-#### 2.7.3 PGP vs S/MIME — Comparison
+#### 2.7.3 PGP vs S/MIME â€” Comparison
 
 | Feature | PGP | S/MIME |
 |---------|-----|--------|
@@ -416,7 +416,7 @@ D) Chosen TLS version
 
 **Answer: B) Server's X.509 certificate**
 
-**Explanation:** ServerHello contains the chosen TLS version, cipher suite, and random nonce. The certificate is sent in a separate Certificate message after ServerHello. The handshake order is: ClientHello → ServerHello → Certificate → ServerKeyExchange (if using DHE/ECDHE) → ServerHelloDone.
+**Explanation:** ServerHello contains the chosen TLS version, cipher suite, and random nonce. The certificate is sent in a separate Certificate message after ServerHello. The handshake order is: ClientHello â†’ ServerHello â†’ Certificate â†’ ServerKeyExchange (if using DHE/ECDHE) â†’ ServerHelloDone.
 </details>
 
 ---
@@ -433,7 +433,7 @@ D) Presentation Layer
 
 **Answer: D) Presentation Layer**
 
-**Explanation:** SSH has three protocol layers: (1) Transport Layer — handles key exchange, server authentication, encryption, and integrity; (2) User Authentication Layer — authenticates the client to the server; (3) Connection Layer — multiplexes multiple channels (shell, exec, port forwarding) over the single encrypted tunnel. Presentation Layer is an OSI layer, not part of SSH.
+**Explanation:** SSH has three protocol layers: (1) Transport Layer â€” handles key exchange, server authentication, encryption, and integrity; (2) User Authentication Layer â€” authenticates the client to the server; (3) Connection Layer â€” multiplexes multiple channels (shell, exec, port forwarding) over the single encrypted tunnel. Presentation Layer is an OSI layer, not part of SSH.
 </details>
 
 ---
@@ -467,7 +467,7 @@ D) IKE
 
 **Answer: B) ESP only**
 
-**Explanation:** ESP (Encapsulating Security Payload) provides confidentiality (encryption), integrity, and authentication (optional auth trailer). AH (Authentication Header) provides integrity and authentication only — no encryption. IKE handles key exchange, not data protection. ESP is the most commonly used IPSec protocol.
+**Explanation:** ESP (Encapsulating Security Payload) provides confidentiality (encryption), integrity, and authentication (optional auth trailer). AH (Authentication Header) provides integrity and authentication only â€” no encryption. IKE handles key exchange, not data protection. ESP is the most commonly used IPSec protocol.
 </details>
 
 ---
@@ -540,21 +540,21 @@ D) TLS 1.3
 
 ---
 
-## 📝 Solved Examples (20 MCQs)
+## ðŸ“ Solved Examples (20 MCQs)
 
 **Q1.** A packet filter firewall examines which layers of the OSI model?
 
-A) Layer 1–2 only  
-B) Layer 3–4 (Network and Transport)  
-C) Layer 5–7 (Session to Application)  
-D) Layer 2–3 only
+A) Layer 1â€“2 only  
+B) Layer 3â€“4 (Network and Transport)  
+C) Layer 5â€“7 (Session to Application)  
+D) Layer 2â€“3 only
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer: B) Layer 3–4**
+**Answer: B) Layer 3â€“4**
 
-**Explanation:** Packet filter firewalls operate at Layer 3 (Network) and Layer 4 (Transport). They examine source/destination IP addresses, port numbers, and protocol (TCP/UDP/ICMP). They do NOT maintain connection state (stateless) and cannot inspect application-layer content. Stateful firewalls also operate at Layers 3–4 but add connection tracking. Application proxy firewalls operate at Layer 7.
+**Explanation:** Packet filter firewalls operate at Layer 3 (Network) and Layer 4 (Transport). They examine source/destination IP addresses, port numbers, and protocol (TCP/UDP/ICMP). They do NOT maintain connection state (stateless) and cannot inspect application-layer content. Stateful firewalls also operate at Layers 3â€“4 but add connection tracking. Application proxy firewalls operate at Layer 7.
 </details>
 
 ---
@@ -588,7 +588,7 @@ D) 3-RTT
 
 **Answer: B) 1-RTT**
 
-**Explanation:** TLS 1.3 reduces the full handshake to 1-RTT (one round trip). The client includes its key share (ECDHE public value) in the ClientHello. The server responds with its key share, certificate, and CertificateVerify in a single flight. TLS 1.2 required 2-RTT (ClientHello → ServerHello + Certificate → ClientKeyExchange → Finished). TLS 1.3 also supports 0-RTT for session resumption (early data), but this is optional and carries replay risks.
+**Explanation:** TLS 1.3 reduces the full handshake to 1-RTT (one round trip). The client includes its key share (ECDHE public value) in the ClientHello. The server responds with its key share, certificate, and CertificateVerify in a single flight. TLS 1.2 required 2-RTT (ClientHello â†’ ServerHello + Certificate â†’ ClientKeyExchange â†’ Finished). TLS 1.3 also supports 0-RTT for session resumption (early data), but this is optional and carries replay risks.
 </details>
 
 ---
@@ -606,8 +606,8 @@ D) 1 encrypted header only
 **Answer: B) 2 headers**
 
 **Explanation:** In tunnel mode, the entire original IP packet (IP header + payload) is encapsulated within a new IP packet:
-- **Outer IP header:** Contains tunnel endpoint IPs (gateway addresses) — visible in cleartext
-- **Inner IP header:** Original source/destination IPs — fully encrypted
+- **Outer IP header:** Contains tunnel endpoint IPs (gateway addresses) â€” visible in cleartext
+- **Inner IP header:** Original source/destination IPs â€” fully encrypted
 
 In transport mode, only the payload is encrypted (original IP header preserved), so there is 1 IP header.
 </details>
@@ -626,7 +626,7 @@ D) On the router itself
 
 **Answer: B) Out-of-band (via port mirror/SPAN)**
 
-**Explanation:** IDS (Intrusion Detection System) is deployed out-of-band — it receives a copy of network traffic via a switch SPAN port or network tap. It monitors passively and cannot block traffic. IPS (Intrusion Prevention System) is deployed inline — traffic physically flows through it, allowing it to drop or reject malicious packets in real time. An IDS failure does not disrupt network traffic; an IPS failure does.
+**Explanation:** IDS (Intrusion Detection System) is deployed out-of-band â€” it receives a copy of network traffic via a switch SPAN port or network tap. It monitors passively and cannot block traffic. IPS (Intrusion Prevention System) is deployed inline â€” traffic physically flows through it, allowing it to drop or reject malicious packets in real time. An IDS failure does not disrupt network traffic; an IPS failure does.
 </details>
 
 ---
@@ -643,24 +643,24 @@ D) Pre-shared key
 
 **Answer: C) ECDHE**
 
-**Explanation:** TLS 1.3 mandates ECDHE (or DHE) for key exchange. RSA key exchange and static DH were removed. ECDHE generates ephemeral (temporary) key pairs per session — the private key is discarded after the handshake. This ensures forward secrecy: even if the server's long-term private signing key is compromised, past session keys cannot be recovered. The "E" in ECDHE stands for Ephemeral.
+**Explanation:** TLS 1.3 mandates ECDHE (or DHE) for key exchange. RSA key exchange and static DH were removed. ECDHE generates ephemeral (temporary) key pairs per session â€” the private key is discarded after the handshake. This ensures forward secrecy: even if the server's long-term private signing key is compromised, past session keys cannot be recovered. The "E" in ECDHE stands for Ephemeral.
 </details>
 
 ---
 
 **Q7.** What is the amplification factor of an NTP amplification attack?
 
-A) Up to 50×  
-B) Up to 556×  
-C) Up to 10×  
-D) Up to 1000×
+A) Up to 50Ã—  
+B) Up to 556Ã—  
+C) Up to 10Ã—  
+D) Up to 1000Ã—
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer: B) Up to 556×**
+**Answer: B) Up to 556Ã—**
 
-**Explanation:** NTP amplification attacks exploit the `monlist` command (or `MON_GETLIST` in older NTP) which returns a list of up to 600 recent clients. A small query (~60 bytes) can generate a response of up to ∼ 33,000 bytes, giving an amplification factor of up to 556×. DNS amplification is ∼50×, Memcached can reach ∼51,000× (but fewer vulnerable servers).
+**Explanation:** NTP amplification attacks exploit the `monlist` command (or `MON_GETLIST` in older NTP) which returns a list of up to 600 recent clients. A small query (~60 bytes) can generate a response of up to âˆ¼ 33,000 bytes, giving an amplification factor of up to 556Ã—. DNS amplification is âˆ¼50Ã—, Memcached can reach âˆ¼51,000Ã— (but fewer vulnerable servers).
 </details>
 
 ---
@@ -699,7 +699,7 @@ D) VPN termination
 
 **Answer: B) Application identification regardless of port/protocol**
 
-**Explanation:** NGFW's key differentiator is **application awareness** — it can identify applications (Facebook, Skype, Salesforce) even when they use non-standard ports or hide over port 443 (TLS). Traditional stateful firewalls filter by IP/port only. Additional NGFW capabilities: TLS inspection (decrypt, inspect, re-encrypt), user identity awareness (integrated with AD/LDAP), threat intelligence feeds, and sandboxing. Stateful inspection (A), NAT (C), and VPN (D) are all available in traditional firewalls.
+**Explanation:** NGFW's key differentiator is **application awareness** â€” it can identify applications (Facebook, Skype, Salesforce) even when they use non-standard ports or hide over port 443 (TLS). Traditional stateful firewalls filter by IP/port only. Additional NGFW capabilities: TLS inspection (decrypt, inspect, re-encrypt), user identity awareness (integrated with AD/LDAP), threat intelligence feeds, and sandboxing. Stateful inspection (A), NAT (C), and VPN (D) are all available in traditional firewalls.
 </details>
 
 ---
@@ -716,7 +716,7 @@ D) GPG
 
 **Answer: B) S/MIME**
 
-**Explanation:** S/MIME (Secure/Multipurpose Internet Mail Extensions) relies on a centralized X.509 PKI hierarchy — certificates are issued by trusted Certificate Authorities (CAs), the same infrastructure used for HTTPS. PGP (and its implementations OpenPGP, GPG) uses a decentralized Web of Trust model where users sign each other's keys. S/MIME is preferred in enterprise environments with existing PKI; PGP is common in technical/open-source communities.
+**Explanation:** S/MIME (Secure/Multipurpose Internet Mail Extensions) relies on a centralized X.509 PKI hierarchy â€” certificates are issued by trusted Certificate Authorities (CAs), the same infrastructure used for HTTPS. PGP (and its implementations OpenPGP, GPG) uses a decentralized Web of Trust model where users sign each other's keys. S/MIME is preferred in enterprise environments with existing PKI; PGP is common in technical/open-source communities.
 </details>
 
 ---
@@ -733,7 +733,7 @@ D) The IDS is deployed out-of-band
 
 **Answer: B) Normal traffic patterns may deviate from the baseline**
 
-**Explanation:** Anomaly-based detection builds a statistical baseline of "normal" behavior. Legitimate traffic that deviates from this baseline (e.g., an employee working unusual hours, a software update causing unusual traffic patterns) is flagged as anomalous — resulting in false positives. High FP rates are the primary disadvantage of anomaly-based IDS. Hybrid systems (signature + anomaly) try to balance detection rate with false positives.
+**Explanation:** Anomaly-based detection builds a statistical baseline of "normal" behavior. Legitimate traffic that deviates from this baseline (e.g., an employee working unusual hours, a software update causing unusual traffic patterns) is flagged as anomalous â€” resulting in false positives. High FP rates are the primary disadvantage of anomaly-based IDS. Hybrid systems (signature + anomaly) try to balance detection rate with false positives.
 </details>
 
 ---
@@ -750,7 +750,7 @@ D) ISAKMP
 
 **Answer: B) AH (Authentication Header)**
 
-**Explanation:** AH (Protocol 51) provides integrity and authentication for IP packets but does NOT encrypt the payload. It computes an Integrity Check Value (ICV) over the IP header + payload (with mutable fields excluded). ESP (Protocol 50) provides both encryption (confidentiality) and optional authentication. AH is rarely used alone in practice — ESP with authentication is preferred. IKE (UDP 500) handles key exchange.
+**Explanation:** AH (Protocol 51) provides integrity and authentication for IP packets but does NOT encrypt the payload. It computes an Integrity Check Value (ICV) over the IP header + payload (with mutable fields excluded). ESP (Protocol 50) provides both encryption (confidentiality) and optional authentication. AH is rarely used alone in practice â€” ESP with authentication is preferred. IKE (UDP 500) handles key exchange.
 </details>
 
 ---
@@ -767,7 +767,7 @@ D) 7 days
 
 **Answer: B) 8 hours (typical Windows domain default)**
 
-**Explanation:** TGT lifetime is configurable but the Windows Domain default is typically 8 hours. After TGT expiry, the client must re-authenticate to the AS. Individual Service Tickets (ST) have shorter lifetimes (commonly 1 hour). When a ST expires, the client can request a new one from the TGS using the TGT without re-entering the password — as long as the TGT is still valid.
+**Explanation:** TGT lifetime is configurable but the Windows Domain default is typically 8 hours. After TGT expiry, the client must re-authenticate to the AS. Individual Service Tickets (ST) have shorter lifetimes (commonly 1 hour). When a ST expires, the client can request a new one from the TGS using the TGT without re-entering the password â€” as long as the TGT is still valid.
 </details>
 
 ---
@@ -784,7 +784,7 @@ D) Circuit-level gateway
 
 **Answer: C) Application proxy**
 
-**Explanation:** Application proxy firewalls act as intermediaries: the client connects to the proxy, which fully terminates the TCP connection, inspects/validates the application-layer content, and then establishes a separate TCP connection to the destination server. This creates two independent TCP connections: client ↔ proxy and proxy ↔ server. This allows deep inspection of application protocols (HTTP, FTP, SMTP) but adds latency. Packet filter and stateful firewalls pass packets transparently without terminating connections.
+**Explanation:** Application proxy firewalls act as intermediaries: the client connects to the proxy, which fully terminates the TCP connection, inspects/validates the application-layer content, and then establishes a separate TCP connection to the destination server. This creates two independent TCP connections: client â†” proxy and proxy â†” server. This allows deep inspection of application protocols (HTTP, FTP, SMTP) but adds latency. Packet filter and stateful firewalls pass packets transparently without terminating connections.
 </details>
 
 ---
@@ -818,7 +818,7 @@ D) ServerHelloDone
 
 **Answer: B) Certificate**
 
-**Explanation:** In TLS 1.2 handshake order: ClientHello → ServerHello → **Certificate** (server's X.509 certificate chain) → ServerKeyExchange (if using DHE/ECDHE) → CertificateRequest (optional) → ServerHelloDone. The Certificate message is separate from ServerHello (which only contains version, cipher suite, and random nonce). The client verifies the certificate chain before trusting the server.
+**Explanation:** In TLS 1.2 handshake order: ClientHello â†’ ServerHello â†’ **Certificate** (server's X.509 certificate chain) â†’ ServerKeyExchange (if using DHE/ECDHE) â†’ CertificateRequest (optional) â†’ ServerHelloDone. The Certificate message is separate from ServerHello (which only contains version, cipher suite, and random nonce). The client verifies the certificate chain before trusting the server.
 </details>
 
 ---
@@ -835,7 +835,7 @@ D) Reverse proxy
 
 **Answer: B) SOCKS proxy**
 
-**Explanation:** `ssh -D 1080 user@gateway` creates a SOCKS5 dynamic forwarding proxy on local port 1080. Applications configured to use SOCKS5 proxy (localhost:1080) will tunnel their traffic through the SSH connection. Local forwarding (`-L`) forwards a specific local port to a remote destination. Remote forwarding (`-R`) exposes a local service to the remote network. SOCKS proxy is versatile — it handles any TCP application protocol.
+**Explanation:** `ssh -D 1080 user@gateway` creates a SOCKS5 dynamic forwarding proxy on local port 1080. Applications configured to use SOCKS5 proxy (localhost:1080) will tunnel their traffic through the SSH connection. Local forwarding (`-L`) forwards a specific local port to a remote destination. Remote forwarding (`-R`) exposes a local service to the remote network. SOCKS proxy is versatile â€” it handles any TCP application protocol.
 </details>
 
 ---
@@ -871,8 +871,8 @@ D) Recipient's private key
 
 **Explanation:** PGP uses hybrid encryption:
 1. Generate a random session key (e.g., AES-256 key)
-2. Encrypt the message with the session key (symmetric — fast)
-3. Encrypt the session key with the **recipient's RSA public key** (asymmetric — only recipient can decrypt)
+2. Encrypt the message with the session key (symmetric â€” fast)
+3. Encrypt the session key with the **recipient's RSA public key** (asymmetric â€” only recipient can decrypt)
 4. Optionally: sign the message hash with the sender's private key
 
 The recipient decrypts the session key using their private key, then uses it to decrypt the message. This combines symmetric speed with asymmetric key management.
@@ -882,15 +882,15 @@ The recipient decrypts the session key using their private key, then uses it to 
 
 **Q20.** Which OWASP Mobile Top 10 risk involves improper certificate validation allowing MITM attacks on mobile banking apps?
 
-A) M1 — Improper Platform Usage  
-B) M2 — Insecure Data Storage  
-C) M3 — Insecure Communication  
-D) M4 — Insecure Authentication
+A) M1 â€” Improper Platform Usage  
+B) M2 â€” Insecure Data Storage  
+C) M3 â€” Insecure Communication  
+D) M4 â€” Insecure Authentication
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer: C) M3 — Insecure Communication**
+**Answer: C) M3 â€” Insecure Communication**
 
 **Explanation:** M3 (Insecure Communication) covers: no TLS enforcement, improper certificate validation (accepting self-signed certs or disabled hostname verification), using outdated TLS versions (SSL 3.0, TLS 1.0), weak cipher suites, and cleartext HTTP traffic. In mobile banking, this allows MITM attacks where an attacker with network access (public Wi-Fi, rogue cell tower) can intercept or modify traffic between the app and the server. Mitigation: SSL pinning (certificate/public key pinning) and strict TLS configuration.
 </details>
@@ -1034,8 +1034,8 @@ class TLSHandshakeSimulator {
 
     console.log(`5. Server derived same key: ${clientKey.equals(serverKey)}`);
     console.log('\n=== Handshake Complete (1-RTT) ===');
-    console.log('Forward Secrecy: ✅ (ephemeral keys discarded after session)');
-    console.log('AEAD Encryption Ready: ✅');
+    console.log('Forward Secrecy: âœ… (ephemeral keys discarded after session)');
+    console.log('AEAD Encryption Ready: âœ…');
   }
 }
 
@@ -1182,7 +1182,7 @@ class FirewallSimulator {
     // Stateful inspection first
     if (!this.statefulInspect(packet)) {
       this.stats.denied++;
-      return { action: 'DENY', reason: `INVALID state - no matching connection ${packet.srcIp}:${packet.srcPort} → ${packet.dstIp}:${packet.dstPort}` };
+      return { action: 'DENY', reason: `INVALID state - no matching connection ${packet.srcIp}:${packet.srcPort} â†’ ${packet.dstIp}:${packet.dstPort}` };
     }
 
     // Rule matching
@@ -1223,7 +1223,7 @@ const testPackets: Packet[] = [
 
 for (const pkt of testPackets) {
   const result = fw.processPacket(pkt);
-  console.log(`${result.action}: ${pkt.srcIp}:${pkt.srcPort} → ${pkt.dstIp}:${pkt.dstPort} [${result.reason}]`);
+  console.log(`${result.action}: ${pkt.srcIp}:${pkt.srcPort} â†’ ${pkt.dstIp}:${pkt.dstPort} [${result.reason}]`);
 }
 console.log('Stats:', fw.getStats());
 ```
@@ -1245,7 +1245,7 @@ sequenceDiagram
     C->>S: ClientKeyExchange (DH public / enc pre-master)
     C->>S: ChangeCipherSpec + Finished
     S->>C: ChangeCipherSpec + Finished
-    Note over C,S: 🔒 Encrypted Data
+    Note over C,S: ðŸ”’ Encrypted Data
     end
 
     rect rgb(255, 243, 224)
@@ -1253,13 +1253,13 @@ sequenceDiagram
     C->>S: ClientHello (key share included)
     S->>C: ServerHello + KeyShare + Certificate + CertificateVerify + Finished
     C->>S: Client Finished + Application Data
-    Note over C,S: 🔒 Encrypted Data (faster!)
+    Note over C,S: ðŸ”’ Encrypted Data (faster!)
     end
 ```
 
 ### Zero-Trust Architecture (ZTA)
 
-**Core Principle:** "Never trust, always verify." No entity is trusted by default — every access request must be authenticated, authorized, and continuously validated.
+**Core Principle:** "Never trust, always verify." No entity is trusted by default â€” every access request must be authenticated, authorized, and continuously validated.
 
 **Key Components of Zero Trust:**
 1. **Identity-based access:** Authentication required for every request (not just perimeter)
@@ -1278,7 +1278,7 @@ sequenceDiagram
 | Authentication | At perimeter only | Every access request |
 | Visibility | Limited | Full (all traffic logged) |
 
-## 📖 Exercise Bank (30 Questions)
+## ðŸ“– Exercise Bank (30 Questions)
 
 **Q1.** Compare the security level and performance of stateful inspection vs application proxy firewalls.
 
@@ -1290,7 +1290,7 @@ sequenceDiagram
 
 **Q5.** Calculate the total overhead (in bytes) added by TLS 1.3 record layer for a 1000-byte HTTP response. (TCP header = 20, IP = 20, TLS record = 5, AEAD tag = 16)
 
-**Q6.** Explain why NTP amplification factor (556×) is higher than DNS amplification (50×). What mitigations exist?
+**Q6.** Explain why NTP amplification factor (556Ã—) is higher than DNS amplification (50Ã—). What mitigations exist?
 
 **Q7.** A company needs remote access for 500 employees. Compare IPSec VPN vs SSL VPN for this use case across: client requirement, NAT traversal, granular access control, and performance.
 
@@ -1347,7 +1347,7 @@ sequenceDiagram
 
 **A1.** Stateful inspection: faster (no termination), moderate security (IP/port + state), suitable for high-throughput. Application proxy: slower (terminates connections), highest security (full app-layer inspection), suitable for DMZ/protected segments. NGFW combines both.
 
-**A2.** SYN=1, ACK=0 → NEW connection. Firewall creates state entry: {src: 192.168.1.1:443, dst: server:ephemeral, state: NEW}. Return SYN-ACK matches ESTABLISHED.
+**A2.** SYN=1, ACK=0 â†’ NEW connection. Firewall creates state entry: {src: 192.168.1.1:443, dst: server:ephemeral, state: NEW}. Return SYN-ACK matches ESTABLISHED.
 
 **A3.** ESP in transport mode: Original IP header (not encrypted, unauthenticated in ESP), ESP header, Payload (encrypted by ESP), ESP trailer (padded), ESP Auth (ICV). TCP payload encrypted, IP header preserved.
 
@@ -1355,33 +1355,33 @@ sequenceDiagram
 
 **A5.** Total = HTTP(1000) + TLS record(5) + AEAD tag(16) + nonce(8 implicit) = 1029 bytes. IP(20) + TCP(20) + payload(1029) = 1069 bytes on wire. Overhead = 69 bytes.
 
-**A6.** NTP monlist returns up to 600 addresses (~33 KB) for a 60-byte query (556×). DNS DNSSEC responses are ~3 KB for ~60-byte query (50×). Mitigation: disable monlist (upgrade NTP), BCP 38 filtering, rate limiting.
+**A6.** NTP monlist returns up to 600 addresses (~33 KB) for a 60-byte query (556Ã—). DNS DNSSEC responses are ~3 KB for ~60-byte query (50Ã—). Mitigation: disable monlist (upgrade NTP), BCP 38 filtering, rate limiting.
 
 **A7.** IPSec: requires client software, NAT issues (NAT-T needed), full network access, higher throughput, complex setup. SSL VPN: browser-based/web client, no NAT issues (TCP 443), per-app granular access, TCP-over-TCP performance, easy setup.
 
-**A8.** Steps: (1) User generates RSA/ECDSA key pair locally. (2) Public key copied to server's ~/.ssh/authorized_keys. (3) Client sends public key fingerprint. (4) Server challenges by encrypting random with public key. (5) Client decrypts with private key and returns hash. (6) Server verifies → authenticated.
+**A8.** Steps: (1) User generates RSA/ECDSA key pair locally. (2) Public key copied to server's ~/.ssh/authorized_keys. (3) Client sends public key fingerprint. (4) Server challenges by encrypting random with public key. (5) Client decrypts with private key and returns hash. (6) Server verifies â†’ authenticated.
 
 **A9.** IDS receives copy of traffic (passive). It can alert but not block. To block, deploy IPS (inline) or integrate IDS with firewall (block via API/SCAP). Alternatively, reconfigure switch to route traffic through IPS.
 
 **A10.** ASCII Armor (Radix-64) converts binary PGP data (encrypted message + keys) to printable ASCII using base64 with CRC-24 checksum and header/footer lines. Ensures email-safe transmission (email protocols may corrupt binary data).
 
-**A11.** 4 GB = 4 × 2^30 = 4,294,967,296 bytes. State entries = 4,294,967,296 / 256 = 16,777,216 ≈ 16.8 million concurrent connections.
+**A11.** 4 GB = 4 Ã— 2^30 = 4,294,967,296 bytes. State entries = 4,294,967,296 / 256 = 16,777,216 â‰ˆ 16.8 million concurrent connections.
 
 **A12.** Signature: 0% zero-day detection, low FP, high signature maintenance, moderate CPU. Anomaly: can detect zero-days, high FP, low maintenance, high CPU (baseline training). Hybrid: best overall.
 
-**A13.** RSA key exchange lacks forward secrecy — if server's private key is compromised, all past session keys can be decrypted. TLS 1.3 mandates (EC)DHE for key exchange, ensuring forward secrecy.
+**A13.** RSA key exchange lacks forward secrecy â€” if server's private key is compromised, all past session keys can be decrypted. TLS 1.3 mandates (EC)DHE for key exchange, ensuring forward secrecy.
 
-**A14.** Amplification = 3000/60 = 50×. Total traffic = 10000 × 3000 = 30,000,000 bytes = 30 MB directed at victim. The attacker only sent 10000 × 60 = 600 KB.
+**A14.** Amplification = 3000/60 = 50Ã—. Total traffic = 10000 Ã— 3000 = 30,000,000 bytes = 30 MB directed at victim. The attacker only sent 10000 Ã— 60 = 600 KB.
 
 **A15.** TLS 1.2: 2-RTT, CBC + GCM + ChaCha20, optional forward secrecy, supports RSA key exchange. TLS 1.3: 1-RTT, AEAD only (GCM, ChaCha20-Poly1305), mandatory forward secrecy, removed RSA key exchange, static DH, compression, renegotiation.
 
 **A16.** Sender needs: recipient's certificate (to encrypt session key). Recipient needs: sender's certificate (+ chain) to verify signature, their own private key to decrypt. Both need CA certificates to validate chains.
 
-**A17.** Standard OCSP: client directly queries CA's OCSP responder, revealing which websites the client visits. OCSP stapling: server fetches OCSP response and provides it during TLS handshake — CA learns nothing about clients. Privacy win.
+**A17.** Standard OCSP: client directly queries CA's OCSP responder, revealing which websites the client visits. OCSP stapling: server fetches OCSP response and provides it during TLS handshake â€” CA learns nothing about clients. Privacy win.
 
 **A18.** In ZTA: device is denied access (or placed in quarantine VLAN). User can access only from a compliant device. Remediation: update OS/patch, then recheck. Continuous compliance ensures devices are never trusted indefinitely.
 
-**A19.** Rule (1) matches (10.0.0.0/8 includes 10.1.0.5) → ALLOW. Rules processed top-down; first match applies. Even though (2) DENY to any would match, it's not reached because (1) matched first.
+**A19.** Rule (1) matches (10.0.0.0/8 includes 10.1.0.5) â†’ ALLOW. Rules processed top-down; first match applies. Even though (2) DENY to any would match, it's not reached because (1) matched first.
 
 **A20.** SYN cookies: server encodes connection parameters (MSS, timestamp) in SYN-ACK sequence number using cryptographic hash with server secret. No memory allocated until ACK received. Defends against SYN flood by eliminating half-open queue exhaustion. The hash is verified when ACK returns.
 
@@ -1389,34 +1389,34 @@ sequenceDiagram
 
 **A22.** WPA2: CCMP/AES encryption, pre-shared key or 802.1X, vulnerable to KRACK (key reinstallation attack). WPA3: SAE (Simultaneous Authentication of Equals) replaces PSK handshake, provides forward secrecy, protects against dictionary attacks, uses 192-bit security suite (WPA3-Enterprise).
 
-**A23.** (1) Firewall intercepts ClientHello → acts as MITM. (2) Establishes TLS with client (presents its own cert — requires client to trust firewall's CA cert). (3) Establishes separate TLS with actual server. (4) Decrypts client traffic, inspects application content (rules/IPS), re-encrypts for server. (5) Returns server response through reverse process.
+**A23.** (1) Firewall intercepts ClientHello â†’ acts as MITM. (2) Establishes TLS with client (presents its own cert â€” requires client to trust firewall's CA cert). (3) Establishes separate TLS with actual server. (4) Decrypts client traffic, inspects application content (rules/IPS), re-encrypts for server. (5) Returns server response through reverse process.
 
-**A24.** Packet rate = 10 Gbps / (1500 × 8) = 833,333 pkt/s. Interrupts/s = 833,333. Cycles/s = 833,333 × 200 = 166,666,600. CPU time = 166.7M / 3G = 5.6%. With interrupt coalescing (16 packets per interrupt): 0.35%.
+**A24.** Packet rate = 10 Gbps / (1500 Ã— 8) = 833,333 pkt/s. Interrupts/s = 833,333. Cycles/s = 833,333 Ã— 200 = 166,666,600. CPU time = 166.7M / 3G = 5.6%. With interrupt coalescing (16 packets per interrupt): 0.35%.
 
-**A25.** DNSSEC signs DNS records with digital signatures (RRSIG). Resolver validates signature using DNSKEY (public key). Prevents cache poisoning because forged records won't verify. DoH encrypts DNS queries in HTTPS (privacy) but doesn't validate origin — DNSSEC + DoH provides both security and privacy.
+**A25.** DNSSEC signs DNS records with digital signatures (RRSIG). Resolver validates signature using DNSKEY (public key). Prevents cache poisoning because forged records won't verify. DoH encrypts DNS queries in HTTPS (privacy) but doesn't validate origin â€” DNSSEC + DoH provides both security and privacy.
 
 **A26.** The authenticator (client ID + timestamp, encrypted with TGS session key) proves the client knows the TGS session key. Without it, anyone possessing the TGT (which is encrypted with KDC's key, but could be replayed) could request service tickets. Timestamp prevents replay.
 
-**A27.** NGFW integrates with AD/LDAP/IdP. When user authenticates (via captive portal, 802.1X, or mapping IP→user from AD logs), firewall associates traffic flows with user identity. Policies then apply per-user: "Allow user Alice to access HR app, block user Bob" regardless of IP.
+**A27.** NGFW integrates with AD/LDAP/IdP. When user authenticates (via captive portal, 802.1X, or mapping IPâ†’user from AD logs), firewall associates traffic flows with user identity. Policies then apply per-user: "Allow user Alice to access HR app, block user Bob" regardless of IP.
 
 **A28.** Detection: Deep packet inspection (SSH traffic on unusual ports/time), volume analysis (large data transfers via SSH), SSH protocol anomalies. Prevention: application-layer firewalls that block SSH port forwarding (`-L`/`-R` flags), allow SSH only through jump hosts with logging, DLP systems.
 
 **A29.** M2 in banking: storing session tokens in SharedPreferences (Android) or NSUserDefaults (iOS), caching transaction data in SQLite without encryption, logging sensitive data, backup exposure. Protections: use EncryptedSharedPreferences, Android Keystore/iOS Keychain, disable backups, never log sensitive data.
 
-**A30.** Minimum rules: ALLOW any → web-srv:80/443 (HTTP/HTTPS), ALLOW office-IP → mail-srv:25 (SMTP), ALLOW office-IP → mail-srv:587 (submission), ALLOW any → mail-srv:993 (IMAPS), ALLOW office-IP → admin-srv:22 (SSH), ALLOW internal → any (outbound established), DENY all else.
+**A30.** Minimum rules: ALLOW any â†’ web-srv:80/443 (HTTP/HTTPS), ALLOW office-IP â†’ mail-srv:25 (SMTP), ALLOW office-IP â†’ mail-srv:587 (submission), ALLOW any â†’ mail-srv:993 (IMAPS), ALLOW office-IP â†’ admin-srv:22 (SSH), ALLOW internal â†’ any (outbound established), DENY all else.
 </details>
 
 ## Summary
 
-1. **Firewalls** evolved from stateless packet filters (Layer 3–4) → stateful inspection (with connection tracking) → application proxy (full Layer 7 awareness) → NGFW (integrated IDS/IPS, app identity, threat intel).
+1. **Firewalls** evolved from stateless packet filters (Layer 3â€“4) â†’ stateful inspection (with connection tracking) â†’ application proxy (full Layer 7 awareness) â†’ NGFW (integrated IDS/IPS, app identity, threat intel).
 
 2. **IDS** monitors and alerts (passive, out-of-band); **IPS** blocks in real-time (inline). Signature-based detection is accurate for known attacks; anomaly-based can detect zero-days but has higher false positives.
 
-3. **IPSec VPN** operates at Layer 3 (Network) with two modes — Transport (end-to-end) and Tunnel (site-to-site). Uses IKE (UDP 500/4500) for key exchange. ESP provides encryption + authentication; AH provides authentication only.
+3. **IPSec VPN** operates at Layer 3 (Network) with two modes â€” Transport (end-to-end) and Tunnel (site-to-site). Uses IKE (UDP 500/4500) for key exchange. ESP provides encryption + authentication; AH provides authentication only.
 
 4. **SSL/TLS VPN** operates at Layer 4/7, uses TCP 443, requires no client for portal access. Easier to deploy than IPSec but may have TCP-over-TCP performance issues.
 
-5. **TLS handshake:** TLS 1.2 = 2-RTT (ClientHello → ServerHello + Certificate + KeyExchange → ClientKeyExchange → Finished). TLS 1.3 = 1-RTT (client sends key share in ClientHello). Forward secrecy mandatory in TLS 1.3.
+5. **TLS handshake:** TLS 1.2 = 2-RTT (ClientHello â†’ ServerHello + Certificate + KeyExchange â†’ ClientKeyExchange â†’ Finished). TLS 1.3 = 1-RTT (client sends key share in ClientHello). Forward secrecy mandatory in TLS 1.3.
 
 6. **HTTPS** = HTTP over TLS (port 443). Provides encryption + integrity + server authentication. **SSH** (port 22) has three layers: Transport, Authentication, Connection. Supports port forwarding.
 
@@ -1425,7 +1425,7 @@ sequenceDiagram
 ## Practical Takeaways
 
 - **For exam:** Remember firewall types in order of evolution. Know IDS vs IPS placement (out-of-band vs inline). Memorize default ports (HTTP 80, HTTPS 443, SSH 22, IKE 500/UDP, NAT-T 4500/UDP, SMTPS 465, IMAPS 993).
-- **For deployment:** Always use NGFW with IPS enabled for perimeter security. Place IDS sensors at critical network segments (DMZ, internal network, data center). Use TLS 1.3 exclusively — disable SSL 3.0, TLS 1.0, and TLS 1.1.
+- **For deployment:** Always use NGFW with IPS enabled for perimeter security. Place IDS sensors at critical network segments (DMZ, internal network, data center). Use TLS 1.3 exclusively â€” disable SSL 3.0, TLS 1.0, and TLS 1.1.
 - **For VPN:** Use IPSec for site-to-site VPNs (full network connectivity). Use SSL VPN for remote user access (per-application, browser-based). Always enable forward secrecy.
 - **For secure email:** PGP is suitable for technical teams requiring decentralized trust. S/MIME is better for enterprise environments with existing PKI infrastructure.
 
@@ -1438,12 +1438,12 @@ sequenceDiagram
 A) AH  
 B) ESP  
 C) IKE  
-D) None of the above — ESP provides both encryption and authentication  
+D) None of the above â€” ESP provides both encryption and authentication  
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer: D) None of the above — ESP provides both encryption and authentication**
+**Answer: D) None of the above â€” ESP provides both encryption and authentication**
 
 **Explanation:** ESP provides both confidentiality (encryption) and optionally authentication (integrity check value / ICV). AH provides authentication only (no encryption). IKE is a key exchange protocol. There is no IPSec protocol that provides encryption without authentication.
 </details>
@@ -1462,7 +1462,7 @@ D) Circuit-level gateway
 
 **Answer: C) Application proxy firewall**
 
-**Explanation:** Application proxy firewalls act as intermediaries: the client connects to the proxy, which validates the request at the application layer, and then establishes a new connection to the destination server. This means there are two separate TCP connections: client ↔ proxy and proxy ↔ server. Packet filter and stateful inspection firewalls forward packets transparently without terminating connections.
+**Explanation:** Application proxy firewalls act as intermediaries: the client connects to the proxy, which validates the request at the application layer, and then establishes a new connection to the destination server. This means there are two separate TCP connections: client â†” proxy and proxy â†” server. Packet filter and stateful inspection firewalls forward packets transparently without terminating connections.
 </details>
 
 ---
@@ -1479,7 +1479,7 @@ D) Does not support elliptic curve cryptography
 
 **Answer: B) Reduces handshake from 2-RTT to 1-RTT**
 
-**Explanation:** TLS 1.3 reduces the full handshake from two round trips (TLS 1.2) to one round trip by sending the client's key share in the initial ClientHello. Additionally, the server's Certificate and CertificateVerify messages are sent immediately after ServerHello, eliminating the separate round trip. TLS 1.3 also removed CBC mode, RSA key exchange, and made forward secrecy mandatory — all of which are opposite to options A, C, and D.
+**Explanation:** TLS 1.3 reduces the full handshake from two round trips (TLS 1.2) to one round trip by sending the client's key share in the initial ClientHello. Additionally, the server's Certificate and CertificateVerify messages are sent immediately after ServerHello, eliminating the separate round trip. TLS 1.3 also removed CBC mode, RSA key exchange, and made forward secrecy mandatory â€” all of which are opposite to options A, C, and D.
 </details>
 
 ---
@@ -1518,4 +1518,4 @@ D) Computed independently by both parties
 
 ---
 
-> **Next Chapter:** [Chapter 3 — Cyber Threats & Attacks](/courses/information-security/03-cyber-threats-attacks/)
+> **Next Chapter:** [Chapter 3 â€” Cyber Threats & Attacks](/courses/information-security/03-cyber-threats-attacks/)

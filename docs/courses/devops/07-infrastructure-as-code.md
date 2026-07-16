@@ -1,4 +1,4 @@
-# Chapter 7: Infrastructure as Code
+﻿# Chapter 7: Infrastructure as Code
 
 > **Prev:** [Orchestration](./06-orchestration.md)
 > **Next:** [Kubernetes](./07-kubernetes.md)
@@ -17,16 +17,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/07-infrastructure-as-code/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/07-infrastructure-as-code/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/07-infrastructure-as-code/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/07-infrastructure-as-code/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/07-infrastructure-as-code/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/07-infrastructure-as-code/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/07-infrastructure-as-code/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/07-infrastructure-as-code/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/07-infrastructure-as-code/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/07-infrastructure-as-code/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/07-infrastructure-as-code/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/07-infrastructure-as-code/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -279,12 +279,12 @@ main = rule {
 
 **Terraform testing approaches:**
 
-1. **`terraform validate`** — Syntax checks
-2. **`terraform fmt --check`** — Formatting compliance
-3. **TFLint** — Best practice linting
-4. **Checkov/Terrascan** — Security policy scanning
-5. **Terratest** — Integration testing with Go
-6. **Plan review** — Manual review of `terraform plan` output in PRs
+1. **`terraform validate`** â€” Syntax checks
+2. **`terraform fmt --check`** â€” Formatting compliance
+3. **TFLint** â€” Best practice linting
+4. **Checkov/Terrascan** â€” Security policy scanning
+5. **Terratest** â€” Integration testing with Go
+6. **Plan review** â€” Manual review of `terraform plan` output in PRs
 
 ### CI/CD for IaC
 
@@ -846,7 +846,7 @@ class IaCCostEstimator {
   batchEstimate(resources: IaCResource[]): { estimates: CostEstimate[]; totalMonthly: number; budgetStatus: string } {
     const estimates = resources.map(r => this.estimate(r));
     const totalMonthly = Math.round(estimates.reduce((s, e) => s + e.monthlyCost, 0) * 100) / 100;
-    return { estimates, totalMonthly, budgetStatus: totalMonthly > 1000 ? '?? Over $1,000/mo — review required' : '? Within budget' };
+    return { estimates, totalMonthly, budgetStatus: totalMonthly > 1000 ? '?? Over $1,000/mo â€” review required' : '? Within budget' };
   }
 
   compareProviders(workload: Record<string, string>, count: number): { provider: string; monthlyCost: number; annualSavingsVsMax: number }[] {

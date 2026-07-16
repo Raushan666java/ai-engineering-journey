@@ -1,6 +1,6 @@
-# Chapter 43: HR & Recruitment → Interview Q&A
+﻿# Chapter 43: HR & Recruitment â†’ Interview Q&A
 
-> **Previous:** [Logistics & Supply Chain — Interview Q&A](./42-interview-logistics.md) | **Next:** [Marketing & Advertising — Interview Q&A](./44-interview-marketing.md)
+> **Previous:** [Logistics & Supply Chain â€” Interview Q&A](./42-interview-logistics.md) | **Next:** [Marketing & Advertising â€” Interview Q&A](./44-interview-marketing.md)
 
 
 
@@ -17,16 +17,16 @@ This chapter covers common interview questions for Laravel developer roles at HR
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/43-interview-hr/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/43-interview-hr/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/43-interview-hr/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/43-interview-hr/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/43-interview-hr/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/43-interview-hr/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/43-interview-hr/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/43-interview-hr/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/43-interview-hr/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/43-interview-hr/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/43-interview-hr/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/43-interview-hr/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -67,13 +67,13 @@ flowchart LR
 
 **A1:** The employee lifecycle spans seven stages:
 
-1. **Attraction** → Employer branding, job postings distributed across boards, career sites, and social channels
-2. **Recruitment** → Sourcing, screening, interviewing, assessing, and extending offers
-3. **Onboarding** → Document collection (tax forms, ID verification), equipment provisioning, system access grants, training, and orientation
-4. **Performance Management** → Goal setting (OKRs/KPIs), regular check-ins, quarterly reviews, feedback collection (360-degree), and performance ratings
-5. **Development** → Skill assessments, training enrollment, mentorship matching, career pathing, and promotion readiness
-6. **Retention & Engagement** → Pulse surveys, sentiment analysis, recognition programs, compensation reviews, and stay interviews
-7. **Offboarding** → Resignation processing, exit interviews, knowledge transfer, equipment return, access revocation, and compliance recordkeeping
+1. **Attraction** â†’ Employer branding, job postings distributed across boards, career sites, and social channels
+2. **Recruitment** â†’ Sourcing, screening, interviewing, assessing, and extending offers
+3. **Onboarding** â†’ Document collection (tax forms, ID verification), equipment provisioning, system access grants, training, and orientation
+4. **Performance Management** â†’ Goal setting (OKRs/KPIs), regular check-ins, quarterly reviews, feedback collection (360-degree), and performance ratings
+5. **Development** â†’ Skill assessments, training enrollment, mentorship matching, career pathing, and promotion readiness
+6. **Retention & Engagement** â†’ Pulse surveys, sentiment analysis, recognition programs, compensation reviews, and stay interviews
+7. **Offboarding** â†’ Resignation processing, exit interviews, knowledge transfer, equipment return, access revocation, and compliance recordkeeping
 
 A comprehensive HR platform must provide data models and workflows for each stage, with AI agents that automate repetitive tasks and surface insights.
 
@@ -97,14 +97,14 @@ A Laravel platform typically builds an ATS as the core product, integrates with 
 
 **A3:** The standard recruitment pipeline stages are:
 
-1. **Sourcing** → Proactive candidate discovery (job boards, LinkedIn, referrals, talent pools, boolean search)
-2. **Application** → Candidate submits resume and cover letter; system parses and enriches the data
-3. **Screening** → Resume review, phone screen, skills assessment, or AI-powered pre-filter
-4. **Interview** → Technical rounds, behavioral interviews, panel interviews, take-home assignments
-5. **Evaluation** → Interview feedback collection, scorecards, hiring committee review
-6. **Decision** → Go/no-go decision, background check authorization
-7. **Offer** → Compensation proposal, negotiation, offer letter generation
-8. **Acceptance** → Signed offer, start-date confirmation, handoff to onboarding
+1. **Sourcing** â†’ Proactive candidate discovery (job boards, LinkedIn, referrals, talent pools, boolean search)
+2. **Application** â†’ Candidate submits resume and cover letter; system parses and enriches the data
+3. **Screening** â†’ Resume review, phone screen, skills assessment, or AI-powered pre-filter
+4. **Interview** â†’ Technical rounds, behavioral interviews, panel interviews, take-home assignments
+5. **Evaluation** â†’ Interview feedback collection, scorecards, hiring committee review
+6. **Decision** â†’ Go/no-go decision, background check authorization
+7. **Offer** â†’ Compensation proposal, negotiation, offer letter generation
+8. **Acceptance** â†’ Signed offer, start-date confirmation, handoff to onboarding
 
 Each stage has distinct statuses, SLAs, and automation opportunities. An AI agent can automatically progress candidates based on pass/fail criteria.
 
@@ -114,14 +114,14 @@ Each stage has distinct statuses, SLAs, and automation opportunities. An AI agen
 
 **A4:** HR software must navigate a complex regulatory landscape:
 
-- **EEO/AA (Equal Employment Opportunity / Affirmative Action)** → Track applicant demographics for reporting; avoid bias in screening algorithms
-- **GDPR (EU)** → Right to erasure for candidate data, explicit consent for processing, data portability, data-processing records
-- **CCPA/CPRA (California)** → Right to know what personal data is collected, right to delete, opt-out of sale
-- **OFCCP (US Federal Contractors)** → Recordkeeping for all hires, self-identification invitations, adverse impact analysis
-- **FCRA (Fair Credit Reporting Act)** → Disclosure and consent for background checks, adverse-action letters
-- **FLSA / Wage & Hour** → Accurate time tracking, overtime calculations, exempt/non-exempt classification
-- **HIPAA** (if handling health data) → Medical information separation, limited access
-- **Record Retention** → Varies by jurisdiction (typically 1â€“5 years for applicants, indefinitely for key employment records)
+- **EEO/AA (Equal Employment Opportunity / Affirmative Action)** â†’ Track applicant demographics for reporting; avoid bias in screening algorithms
+- **GDPR (EU)** â†’ Right to erasure for candidate data, explicit consent for processing, data portability, data-processing records
+- **CCPA/CPRA (California)** â†’ Right to know what personal data is collected, right to delete, opt-out of sale
+- **OFCCP (US Federal Contractors)** â†’ Recordkeeping for all hires, self-identification invitations, adverse impact analysis
+- **FCRA (Fair Credit Reporting Act)** â†’ Disclosure and consent for background checks, adverse-action letters
+- **FLSA / Wage & Hour** â†’ Accurate time tracking, overtime calculations, exempt/non-exempt classification
+- **HIPAA** (if handling health data) â†’ Medical information separation, limited access
+- **Record Retention** â†’ Varies by jurisdiction (typically 1Ã¢â‚¬â€œ5 years for applicants, indefinitely for key employment records)
 
 In Laravel, these translate to encrypted PII columns, audit trails with `spatie/laravel-activitylog`, role-based access with `spatie/laravel-permission`, data-retention schedules as queued jobs, and consent-flags on the `candidates` and `employees` tables.
 
@@ -135,19 +135,19 @@ Structure example:
 
 ```
 Skill
-├── Technical
-│   ├── Programming Languages (PHP, Python, JavaScript)
-│   ├── Frameworks (Laravel, React, Vue)
-│   ├── Databases (MySQL, PostgreSQL, MongoDB)
-│   └── Cloud (AWS, Azure, GCP)
-├── Soft Skills
-│   ├── Communication
-│   ├── Leadership
-│   └── Collaboration
-└── Domain
-    ├── Healthcare
-    ├── Finance
-    └── Logistics
+â”œâ”€â”€ Technical
+â”‚   â”œâ”€â”€ Programming Languages (PHP, Python, JavaScript)
+â”‚   â”œâ”€â”€ Frameworks (Laravel, React, Vue)
+â”‚   â”œâ”€â”€ Databases (MySQL, PostgreSQL, MongoDB)
+â”‚   â””â”€â”€ Cloud (AWS, Azure, GCP)
+â”œâ”€â”€ Soft Skills
+â”‚   â”œâ”€â”€ Communication
+â”‚   â”œâ”€â”€ Leadership
+â”‚   â””â”€â”€ Collaboration
+â””â”€â”€ Domain
+    â”œâ”€â”€ Healthcare
+    â”œâ”€â”€ Finance
+    â””â”€â”€ Logistics
 ```
 
 In Laravel, model this as:
@@ -169,7 +169,7 @@ Schema::create('skills', function (Blueprint $table) {
 });
 ```
 
-The aliases column is critical for AI matching → "JS," "JavaScript," and "ECMAScript" should all map to the same skill.
+The aliases column is critical for AI matching â†’ "JS," "JavaScript," and "ECMAScript" should all map to the same skill.
 
 ---
 
@@ -188,7 +188,7 @@ The aliases column is critical for AI matching → "JS," "JavaScript," and "ECMA
 | **Drop-off Rate per Stage** | Candidates lost at stage N / candidates entering stage N | Identifies pipeline bottlenecks |
 | **Diversity Pipeline** | Demographic breakdown per stage | Measures DEI health |
 
-In Laravel, compute these via queued analytics jobs that aggregate event data in the `candidate_stages` pivot table. Expose via an API consumed by a dashboard (Laravel Pulse custom card, or an Inertia-powered analytics page). AI agents can flag anomalies → e.g., a sudden drop in offer-acceptance rate triggers an alert to the recruiting team.
+In Laravel, compute these via queued analytics jobs that aggregate event data in the `candidate_stages` pivot table. Expose via an API consumed by a dashboard (Laravel Pulse custom card, or an Inertia-powered analytics page). AI agents can flag anomalies â†’ e.g., a sudden drop in offer-acceptance rate triggers an alert to the recruiting team.
 
 ---
 
@@ -217,7 +217,7 @@ class ResumeScreeningAgent extends Agent
         You are a senior technical recruiter. Given a job description and a candidate resume:
 
         1. Extract structured fields: name, email, phone, skills, years of experience, education, recent employers
-        2. Score the candidate 0â€“100 against the job requirements
+        2. Score the candidate 0Ã¢â‚¬â€œ100 against the job requirements
         3. Provide a brief justification for the score
         4. Flag any red flags (employment gaps, mismatched seniority, exaggerated claims)
 
@@ -296,7 +296,7 @@ class InterviewSchedulingAgent extends Agent
 }
 ```
 
-For a multi-interviewer panel, the agent finds the intersection of all free slots → or uses round-robin when panels are large. Implement an `Slot` value object with `start`, `end`, and a hash of participant availability.
+For a multi-interviewer panel, the agent finds the intersection of all free slots â†’ or uses round-robin when panels are large. Implement an `Slot` value object with `start`, `end`, and a hash of participant availability.
 
 ---
 
@@ -351,7 +351,7 @@ class OnboardingAgent extends Agent
     {
         $workflow = OnboardingWorkflow::create(['employee_id' => $employee->id]);
 
-        // Parallel tasks → dispatch simultaneously
+        // Parallel tasks â†’ dispatch simultaneously
         $tasks = [
             new CollectDocumentsTask($employee),        // W-4, I-9, direct deposit
             new ProvisionEmailTask($employee),            // Create email alias
@@ -368,7 +368,7 @@ class OnboardingAgent extends Agent
             ProcessOnboardingTask::dispatch($workflowItem, $employee);
         }
 
-        // Sequential phase → after day 1 tasks
+        // Sequential phase â†’ after day 1 tasks
         SendFirstDayInstructions::dispatch($employee)->delay(now()->addDays(-1));
 
         // AI-generated personalized training plan
@@ -651,35 +651,35 @@ Store the original file in S3 for audit trail. Return an import summary with cou
 **A16:** A multi-tenant ATS must isolate each client company's data while sharing infrastructure.
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│                    Load Balancer                         │
-└────────────────────┬────────────────────────────────────┘
-                     │
-┌────────────────────▼────────────────────────────────────┐
-│              Laravel Application Layer                    │
-│  ┌──────────────────────────────────────────────────┐   │
-│  │  Multi-Tenant Middleware (TenantResolver)         │   │
-│  │  â€¢ Reads subdomain or header → resolves Tenant   │   │
-│  │  â€¢ Sets scoped config (DB, storage, cache prefix) │   │
-│  └──────────────────────────────────────────────────┘   │
-│  ┌──────────┬──────────┬──────────┬─────────────────┐   │
-│  │ Core ATS │ AI Agents│ Reporting│  Integrations   │   │
-│  │ (CRUD)   │(Screening,│(Metrics, │ (Job Boards,    │   │
-│  │          │ Matching) │ Dash)   │  Calendar, HRIS) │   │
-│  └──────────┴──────────┴──────────┴─────────────────┘   │
-└────────────────────┬────────────────────────────────────┘
-                     │
-┌────────────────────▼────────────────────────────────────┐
-│                 Data Layer                                │
-│  ┌──────────────────────────────────────────────────┐   │
-│  │  PostgreSQL (shared DB, tenant_id on all tables) │   │
-│  │  + pgvector for embedding queries                │   │
-│  ├──────────────────────────────────────────────────┤   │
-│  │  Redis (cache, queues, rate limits per tenant)   │   │
-│  ├──────────────────────────────────────────────────┤   │
-│  │  S3/MinIO (resumes, offer letters, documents)    │   │
-│  └──────────────────────────────────────────────────┘   │
-└─────────────────────────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚                    Load Balancer                         â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                     â”‚
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚              Laravel Application Layer                    â”‚
+â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”‚
+â”‚  â”‚  Multi-Tenant Middleware (TenantResolver)         â”‚   â”‚
+â”‚  â”‚  Ã¢â‚¬Â¢ Reads subdomain or header â†’ resolves Tenant   â”‚   â”‚
+â”‚  â”‚  Ã¢â‚¬Â¢ Sets scoped config (DB, storage, cache prefix) â”‚   â”‚
+â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â”‚
+â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”‚
+â”‚  â”‚ Core ATS â”‚ AI Agentsâ”‚ Reportingâ”‚  Integrations   â”‚   â”‚
+â”‚  â”‚ (CRUD)   â”‚(Screening,â”‚(Metrics, â”‚ (Job Boards,    â”‚   â”‚
+â”‚  â”‚          â”‚ Matching) â”‚ Dash)   â”‚  Calendar, HRIS) â”‚   â”‚
+â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                     â”‚
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚                 Data Layer                                â”‚
+â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”‚
+â”‚  â”‚  PostgreSQL (shared DB, tenant_id on all tables) â”‚   â”‚
+â”‚  â”‚  + pgvector for embedding queries                â”‚   â”‚
+â”‚  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤   â”‚
+â”‚  â”‚  Redis (cache, queues, rate limits per tenant)   â”‚   â”‚
+â”‚  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤   â”‚
+â”‚  â”‚  S3/MinIO (resumes, offer letters, documents)    â”‚   â”‚
+â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 Key architectural decisions:
@@ -695,7 +695,7 @@ Key architectural decisions:
 
 **A17:** HR platforms are prime targets for data breaches. Multi-layer protection is essential.
 
-1. **Encryption at rest** → Laravel's built-in encryption for sensitive columns:
+1. **Encryption at rest** â†’ Laravel's built-in encryption for sensitive columns:
 
 ```php
 Schema::create('employees', function (Blueprint $table) {
@@ -727,14 +727,14 @@ class Employee extends Model
 }
 ```
 
-2. **Access control** → Row-level permissions with `spatie/laravel-permission`:
+2. **Access control** â†’ Row-level permissions with `spatie/laravel-permission`:
 
 - HR admins: full access
 - Recruiters: candidate data only (not employee data)
 - Hiring managers: can view assigned candidates, not all
 - Employees: self-service access only
 
-3. **Audit logging** → Every PII read/write via `spatie/laravel-activitylog`:
+3. **Audit logging** â†’ Every PII read/write via `spatie/laravel-activitylog`:
 
 ```php
 Activity::for($employee)
@@ -745,13 +745,13 @@ Activity::for($employee)
     ->log('employee_pii_accessed');
 ```
 
-4. **Data retention** → Automated purging:
+4. **Data retention** â†’ Automated purging:
 
 - Candidate data: auto-delete after 12 months (unless consent renewed)
 - Old performance reviews: archive after 7 years
 - Offboarded employee records: soft-delete, hard-delete after retention period
 
-5. **Data masking** → API responses auto-mask PII for unauthorized roles:
+5. **Data masking** â†’ API responses auto-mask PII for unauthorized roles:
 
 ```php
 class EmployeeResource extends JsonResource
@@ -788,9 +788,9 @@ class EmployeeResource extends JsonResource
 **Queue Layer:**
 - Dedicated Redis cluster for queues
 - Separate queue connections per workload:
-    - `high` → resume ranking, interview scheduling (priority)
-    - `default` → notifications, email delivery
-    - `bulk` → CSV imports, analytics aggregation
+    - `high` â†’ resume ranking, interview scheduling (priority)
+    - `default` â†’ notifications, email delivery
+    - `bulk` â†’ CSV imports, analytics aggregation
 - Horizon per tenant group for isolation
 
 **AI Agent Layer:**
@@ -809,7 +809,7 @@ class EmployeeResource extends JsonResource
 |--------|--------|----------|
 | Tenants | 500+ | Shared DB with tenant_id, dedicated replicas for heavy tenants |
 | Candidates | 10M+ | Partitioning by tenant_id range, monthly archive jobs |
-| Resume files | 500K+ | S3 with lifecycle policies (warm → cold → glacier) |
+| Resume files | 500K+ | S3 with lifecycle policies (warm â†’ cold â†’ glacier) |
 | AI API calls/day | 100K+ | Queue with priority tiers, caching, batching |
 | Concurrent users | 5K+ | Octane + Redis session + read replicas |
 
@@ -820,31 +820,31 @@ class EmployeeResource extends JsonResource
 **A19:** Job postings are distributed across LinkedIn, Indeed, Glassdoor, and the company career site. A unified ingestion pipeline keeps them in sync.
 
 ```
-                    ┌──────────────┐
-                    │ Career Site  │─── (webhook when posting created)
-                    └──────────────┘
-                    ┌──────────────┐
-                    │ LinkedIn API  │─── (poll every 30min via scheduled task)
-                    └──────────────┘
-                    ┌──────────────┐
-                    │ Indeed API    │─── (poll every 30min via scheduled task)
-                    └──────────────┘
-                           │
-                    ┌──────▼──────┐
-                    │  Normalizer │   ← Agent: maps each board's schema to canonical format
-                    └──────┬──────┘
-                           │
-              ┌────────────▼────────────┐
-              │   Deduplication Check   │   ← match by board_posting_id or title+company+location
-              └────────────┬────────────┘
-                           │
-              ┌────────────▼────────────┐
-              │    JobPosting Model     │   ← upsert (create or update)
-              └────────────┬────────────┘
-                           │
-              ┌────────────▼────────────┐
-              │   Distribution Queue    │   ← notify subscribers, update search index
-              └─────────────────────────┘
+                    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                    â”‚ Career Site  â”‚â”€â”€â”€ (webhook when posting created)
+                    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                    â”‚ LinkedIn API  â”‚â”€â”€â”€ (poll every 30min via scheduled task)
+                    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                    â”‚ Indeed API    â”‚â”€â”€â”€ (poll every 30min via scheduled task)
+                    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                           â”‚
+                    â”Œâ”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”
+                    â”‚  Normalizer â”‚   â† Agent: maps each board's schema to canonical format
+                    â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”˜
+                           â”‚
+              â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+              â”‚   Deduplication Check   â”‚   â† match by board_posting_id or title+company+location
+              â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                           â”‚
+              â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+              â”‚    JobPosting Model     â”‚   â† upsert (create or update)
+              â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                           â”‚
+              â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+              â”‚   Distribution Queue    â”‚   â† notify subscribers, update search index
+              â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ```php
@@ -887,7 +887,7 @@ class ProcessJobPosting implements ShouldQueue
 }
 ```
 
-Board integrations are Laravel packages, each implementing a `JobBoardContract`. New boards are added by creating a new adapter class → no core changes needed.
+Board integrations are Laravel packages, each implementing a `JobBoardContract`. New boards are added by creating a new adapter class â†’ no core changes needed.
 
 ---
 
@@ -971,19 +971,19 @@ This avoids recursive queries. A scheduled job rebuilds the closure table nightl
 
 **Core ATS (Laravel + Inertia + React):**
 - Job posting management with multi-board distribution (LinkedIn, Indeed, Glassdoor via API adapters)
-- Pipeline kanban board (Source → Apply → Screen → Interview → Offer → Hire)
+- Pipeline kanban board (Source â†’ Apply â†’ Screen â†’ Interview â†’ Offer â†’ Hire)
 - Structured scorecards per interview round
 - Collaborative hiring: panel feedback, hiring committee votes
 - Email and calendar integration (Google Calendar API, Outlook Graph)
 
 **AI Agent Layer (Laravel AI SDK):**
-- **ResumeScreeningAgent** → Parses 20+ resume formats, extracts structured data, scores against job requirements
-- **CandidateMatchingAgent** → Vector embeddings + LLM reranking to find best-fit candidates from talent pool
-- **InterviewSchedulingAgent** → Coordinates availability across global timezones, books rooms, sends calendar blocks
-- **BiasDetectionAgent** → Audits job descriptions for gendered language, reviews scorecards for disparate impact
-- **AnswerAnalysisAgent** → Transcribes interview recordings, analyzes response quality, flags red flags
-- **ReferenceCheckAgent** → Automates reference request emails, summarizes reference feedback
-- **OfferOptimizationAgent** → Suggests competitive compensation based on market data, seniority, and location
+- **ResumeScreeningAgent** â†’ Parses 20+ resume formats, extracts structured data, scores against job requirements
+- **CandidateMatchingAgent** â†’ Vector embeddings + LLM reranking to find best-fit candidates from talent pool
+- **InterviewSchedulingAgent** â†’ Coordinates availability across global timezones, books rooms, sends calendar blocks
+- **BiasDetectionAgent** â†’ Audits job descriptions for gendered language, reviews scorecards for disparate impact
+- **AnswerAnalysisAgent** â†’ Transcribes interview recordings, analyzes response quality, flags red flags
+- **ReferenceCheckAgent** â†’ Automates reference request emails, summarizes reference feedback
+- **OfferOptimizationAgent** â†’ Suggests competitive compensation based on market data, seniority, and location
 
 **Data & Infrastructure:**
 - PostgreSQL + pgvector for structured data and semantic search
@@ -1062,7 +1062,7 @@ The recruiter sees the full automation log and can override any decision with on
 
 **Q23: Describe an employee experience platform that improves retention. How would you build it?**
 
-**A23:** An employee experience platform focuses on engagement, growth, and recognition → the drivers of retention.
+**A23:** An employee experience platform focuses on engagement, growth, and recognition â†’ the drivers of retention.
 
 I'd build **Pulse** with these modules:
 
@@ -1091,7 +1091,7 @@ I'd build **Pulse** with these modules:
 
 ---
 
-**Q24: Your ATS's AI candidate ranking is returning too many false positives → candidates the team thinks are great but turn out to be poor fits. How do you debug and fix it?**
+**Q24: Your ATS's AI candidate ranking is returning too many false positives â†’ candidates the team thinks are great but turn out to be poor fits. How do you debug and fix it?**
 
 **A24:** This is a classic signal-vs-noise problem in AI-powered screening. I'd approach it systematically:
 
@@ -1145,12 +1145,12 @@ class ScreeningAudit
 
 **Q25: The product team wants a real-time headcount dashboard. How would you design it?**
 
-**A25:** A headcount dashboard needs to show current team size, budgeted vs. actual headcount, open positions, and historical trends → updating in real-time as hires are made.
+**A25:** A headcount dashboard needs to show current team size, budgeted vs. actual headcount, open positions, and historical trends â†’ updating in real-time as hires are made.
 
 **Architecture:**
 
 ```php
-// Aggregated read model → updated via events, not queried live
+// Aggregated read model â†’ updated via events, not queried live
 Schema::create('headcount_snapshots', function (Blueprint $table) {
     $table->id();
     $table->foreignId('tenant_id')->constrained();
@@ -1171,7 +1171,7 @@ Schema::create('headcount_snapshots', function (Blueprint $table) {
 ```php
 class EmployeeHired
 {
-    // Fired → Reverb broadcast to dashboard
+    // Fired â†’ Reverb broadcast to dashboard
     public function broadcastOn(): array
     {
         return [
@@ -1215,7 +1215,7 @@ class UpdateHeadcountSnapshot implements ShouldQueue
 - Donut chart for departmental breakdown
 - Sankey diagram for movement (hires, transfers, departures)
 - Real-time counter: "143 filled / 175 budgeted (32 open)"
-- Drill-down: click a department → see individual positions and pipeline status
+- Drill-down: click a department â†’ see individual positions and pipeline status
 
 **Performance:** The snapshot table is updated via events, never queried from live tables. Historical snapshots enable trend analysis without heavy aggregation queries.
 
@@ -1247,7 +1247,7 @@ Possible causes to investigate:
 ```php
 class ComplianceAlertSystem
 {
-    // Redundant alerting → multiple independent triggers
+    // Redundant alerting â†’ multiple independent triggers
     public function __construct()
     {
         // Primary: daily scheduled agent
@@ -1307,7 +1307,7 @@ test('compliance agent detects expiring certification', function () {
 });
 ```
 
-The key lesson: never rely on a single AI agent for compliance-critical workflows. Use redundant checks → AI for nuance, deterministic queries for hard facts, and database triggers for zero-latency alerts.
+The key lesson: never rely on a single AI agent for compliance-critical workflows. Use redundant checks â†’ AI for nuance, deterministic queries for hard facts, and database triggers for zero-latency alerts.
 
 ---
 

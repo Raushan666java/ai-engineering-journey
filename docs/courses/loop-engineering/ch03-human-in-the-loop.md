@@ -1,4 +1,4 @@
-# Chapter 3: Human-in-the-Loop
+﻿# Chapter 3: Human-in-the-Loop
 
 > **Previous:** [Agent Loop Architecture](./ch02-agent-loop-architecture.md) | **Next:** [Feedback Loops](./ch04-feedback-loops.md)
 
@@ -9,16 +9,16 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/loop-engineering/ch03-human-in-the-loop/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/loop-engineering/ch03-human-in-the-loop/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/loop-engineering/ch03-human-in-the-loop/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/loop-engineering/ch03-human-in-the-loop/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/loop-engineering/ch03-human-in-the-loop/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/loop-engineering/ch03-human-in-the-loop/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/loop-engineering/ch03-human-in-the-loop/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/loop-engineering/ch03-human-in-the-loop/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/loop-engineering/ch03-human-in-the-loop/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/loop-engineering/ch03-human-in-the-loop/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/loop-engineering/ch03-human-in-the-loop/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/loop-engineering/ch03-human-in-the-loop/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -53,14 +53,14 @@ By the end of this chapter, you will be able to:
 The propose-then-commit pattern is the foundational HITL building block. Instead of allowing an agent to execute actions autonomously, the agent first **proposes** an action (along with justification and confidence), waits for a **human approval signal**, and only then **commits** the action.
 
 ```
- ┌─────────┐     propose     ┌──────────┐    approve    ┌─────────┐
- │  Agent   │ ──────────────>│  Human   │ ────────────> │  Action │
- │          │   (action +    │  Review  │   (or reject) │  Exec.  │
- │          │   rationale)   │  Portal  │               │         │
- └─────────┘                 └──────────┘               └─────────┘
-      │                           │
-      │      escalate             │ timeout
-      └──────────────────────────>┘
+ â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”     propose     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”    approve    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+ â”‚  Agent   â”‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€>â”‚  Human   â”‚ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€> â”‚  Action â”‚
+ â”‚          â”‚   (action +    â”‚  Review  â”‚   (or reject) â”‚  Exec.  â”‚
+ â”‚          â”‚   rationale)   â”‚  Portal  â”‚               â”‚         â”‚
+ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜                 â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜               â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+      â”‚                           â”‚
+      â”‚      escalate             â”‚ timeout
+      â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€>â”˜
                               (escalation chain)
 ```
 
@@ -76,15 +76,15 @@ The propose-then-commit pattern is the foundational HITL building block. Instead
 
 Approval gates are programmable conditions that determine whether an action needs human review or can proceed autonomously. Common gate types:
 
-**Confidence threshold gate.** The agent attaches a confidence score `c ∈ [0, 1]` to every proposal. If `c ≥ τ_high`, the action auto-approves. If `c ≤ τ_low`, the action is rejected outright. Otherwise, it enters human review.
+**Confidence threshold gate.** The agent attaches a confidence score `c âˆˆ [0, 1]` to every proposal. If `c â‰¥ Ï„_high`, the action auto-approves. If `c â‰¤ Ï„_low`, the action is rejected outright. Otherwise, it enters human review.
 
 ```
-auto-approve zone:       c ≥ 0.85
+auto-approve zone:       c â‰¥ 0.85
 human review zone:       0.30 < c < 0.85
-auto-reject zone:        c ≤ 0.30
+auto-reject zone:        c â‰¤ 0.30
 ```
 
-**Cost threshold gate.** Every action carries an estimated cost — monetary (API calls, compute) or impact (deleting a record, sending an email). Actions above a cost ceiling require human sign-off regardless of confidence.
+**Cost threshold gate.** Every action carries an estimated cost â€” monetary (API calls, compute) or impact (deleting a record, sending an email). Actions above a cost ceiling require human sign-off regardless of confidence.
 
 **Destructive-op detection.** Certain operations are intrinsically high-risk: file deletion, database writes, user notifications, payment execution. A static or learned classifier tags operations and gates them unconditionally.
 
@@ -96,7 +96,7 @@ Escalation policies define what happens when a proposal is not reviewed in time 
 | Policy | Behavior | When to Use |
 |--------|----------|-------------|
 | Timeout escalation | After `T` seconds, escalate to next reviewer | Reviewer is unreachable |
-| Delegation chain | Primary → secondary → tertiary reviewer | Multi-tier approval workflow |
+| Delegation chain | Primary â†’ secondary â†’ tertiary reviewer | Multi-tier approval workflow |
 | Fallback approval | After all tiers exhausted, auto-approve | Low-risk, time-sensitive ops |
 | Fallback reject | After all tiers exhausted, auto-reject | High-risk ops |
 
@@ -114,28 +114,28 @@ Hybrid patterns are common: classify proposals at ingestion time, route urgent o
 ### 5. Trust Calibration Framework
 
 
-Trust calibration is the system by which the agent's autonomy level adjusts based on demonstrated reliability. It is a **feedback loop over the HITL loop** — a meta-loop.
+Trust calibration is the system by which the agent's autonomy level adjusts based on demonstrated reliability. It is a **feedback loop over the HITL loop** â€” a meta-loop.
 
 ```
-Session n:  propose → review → execute → outcome (success/failure)
-Session n+1: trust_score ← update(trust_score, outcome)
-             autonomy_level ← map(trust_score)
+Session n:  propose â†’ review â†’ execute â†’ outcome (success/failure)
+Session n+1: trust_score â† update(trust_score, outcome)
+             autonomy_level â† map(trust_score)
 ```
 
 The trust score is a floating-point value updated after each reviewed action:
 
 ```
-trust' = trust + α · (outcome - trust)
+trust' = trust + Î± Â· (outcome - trust)
 ```
 
-Where `α` is the learning rate and `outcome ∈ {0, 1}` (0 = failure, 1 = success). The autonomy level maps the trust score to a confidence threshold:
+Where `Î±` is the learning rate and `outcome âˆˆ {0, 1}` (0 = failure, 1 = success). The autonomy level maps the trust score to a confidence threshold:
 
-| Trust Range | Autonomy Level | Effective τ |
+| Trust Range | Autonomy Level | Effective Ï„ |
 |-------------|---------------|-------------|
-| `[0.00, 0.40)` | Novice | `τ = 0.00` (everything reviewed) |
-| `[0.40, 0.70)` | Apprentice | `τ = 0.50` |
-| `[0.70, 0.90)` | Practitioner | `τ = 0.75` |
-| `[0.90, 1.00]` | Expert | `τ = 0.90` |
+| `[0.00, 0.40)` | Novice | `Ï„ = 0.00` (everything reviewed) |
+| `[0.40, 0.70)` | Apprentice | `Ï„ = 0.50` |
+| `[0.70, 0.90)` | Practitioner | `Ï„ = 0.75` |
+| `[0.90, 1.00]` | Expert | `Ï„ = 0.90` |
 
 As trust grows, the auto-approve threshold rises, meaning the agent needs *less* confidence to act autonomously. Counterintuitive but deliberate: a trusted agent has a proven track record so its lower-confidence predictions are still reliable.
 
@@ -143,7 +143,7 @@ As trust grows, the auto-approve threshold rises, meaning the agent needs *less*
 
 ## Examples
 
-### Example 1: HITLAgent — Propose, Wait, Execute or Escalate
+### Example 1: HITLAgent â€” Propose, Wait, Execute or Escalate
 
 ```typescript
 // ch03-example1-hitl-agent.ts
@@ -391,7 +391,7 @@ async function main() {
 await main();
 ```
 
-### Example 2: BatchReviewQueue — Collect and Process Pending Approvals
+### Example 2: BatchReviewQueue â€” Collect and Process Pending Approvals
 
 ```typescript
 // ch03-example2-batch-review-queue.ts
@@ -482,7 +482,7 @@ class BatchReviewQueue {
   }
 }
 
-// Simulated batch reviewer — auto-approves high-confidence proposals, flags others
+// Simulated batch reviewer â€” auto-approves high-confidence proposals, flags others
 const batchReviewer: BatchReviewer = async (proposals) => {
   await new Promise((r) => setTimeout(r, 100));
   return proposals.map((p) => ({
@@ -522,7 +522,7 @@ async function main() {
 await main();
 ```
 
-### Example 3: TrustScalingGate — Learn When to Auto-Approve
+### Example 3: TrustScalingGate â€” Learn When to Auto-Approve
 
 ```typescript
 // ch03-example3-trust-scaling-gate.ts
@@ -648,7 +648,7 @@ This section builds production HITL infrastructure: an `EscalationChain` with ti
 // ch03-advanced-hitl.ts
 // bun run ch03-advanced-hitl.ts
 
-// ─── EscalationChain ───────────────────────────────────────────────────
+// â”€â”€â”€ EscalationChain â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 interface EscalationTier {
   name: string;
@@ -751,7 +751,7 @@ class EscalationChain {
   }
 }
 
-// ─── MultiStageApprovalGate ────────────────────────────────────────────
+// â”€â”€â”€ MultiStageApprovalGate â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 interface ApprovalRequest {
   id: string;
@@ -814,7 +814,7 @@ class MultiStageApprovalGate {
   }
 }
 
-// ─── ConfidenceDecayTracker ────────────────────────────────────────────
+// â”€â”€â”€ ConfidenceDecayTracker â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 class ConfidenceDecayTracker {
   private scores = new Map<string, { score: number; lastActive: Date; count: number }>();
@@ -866,7 +866,7 @@ class ConfidenceDecayTracker {
   }
 }
 
-// ─── PriorityQueueHITL with Starvation Prevention ──────────────────────
+// â”€â”€â”€ PriorityQueueHITL with Starvation Prevention â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 type PriorityLevel = "critical" | "high" | "medium" | "low";
 
@@ -966,7 +966,7 @@ class PriorityQueueHITL {
   }
 }
 
-// ─── AuditTrailLogger ─────────────────────────────────────────────────
+// â”€â”€â”€ AuditTrailLogger â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 interface AuditEntry {
   timestamp: Date;
@@ -1013,7 +1013,7 @@ class AuditTrailLogger {
   }
 }
 
-// ─── Human Feedback Aggregator ─────────────────────────────────────────
+// â”€â”€â”€ Human Feedback Aggregator â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 interface FeedbackVote {
   reviewerId: string;
@@ -1069,7 +1069,7 @@ class FeedbackAggregator {
   }
 }
 
-// ─── Demo ──────────────────────────────────────────────────────────────
+// â”€â”€â”€ Demo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 async function main() {
   console.log("=== Extended HITL Demo ===\n");
@@ -1135,7 +1135,7 @@ await main();
 **Key concepts demonstrated:**
 - **EscalationChain** models multi-tier human escalation with per-tier timeouts, delegation pools, and a configurable fallback decision
 - **MultiStageApprovalGate** requires N independent approvals before an action commits, with separate approve/reject counters
-- **ConfidenceDecayTracker** applies time-based decay to trust scores — inactivity reduces autonomy over time
+- **ConfidenceDecayTracker** applies time-based decay to trust scores â€” inactivity reduces autonomy over time
 - **PriorityQueueHITL** implements starvation prevention via age-boosting: old proposals get promoted to higher-priority queues
 - **AuditTrailLogger** provides immutable, queryable HITL decision records with summary statistics
 - **FeedbackAggregator** computes mean, median, standard deviation, and consensus level from multiple reviewer votes
@@ -1180,7 +1180,7 @@ graph TD
 */
 */
 
-// ─── ReviewerWorkloadBalancer ──────────────────────────────────────────
+// â”€â”€â”€ ReviewerWorkloadBalancer â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 interface Reviewer {
   id: string;
@@ -1262,7 +1262,7 @@ class ReviewerWorkloadBalancer {
   }
 }
 
-// ─── StaleProposalCleaner ──────────────────────────────────────────────
+// â”€â”€â”€ StaleProposalCleaner â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 interface StaleProposal {
   id: string;
@@ -1338,7 +1338,7 @@ class StaleProposalCleaner {
   }
 }
 
-// ─── HumanPerformanceTracker ──────────────────────────────────────────
+// â”€â”€â”€ HumanPerformanceTracker â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 interface ReviewEvent {
   proposalId: string;
@@ -1428,7 +1428,7 @@ class HumanPerformanceTracker {
   }
 }
 
-// ─── SimulatedReviewerPool ─────────────────────────────────────────────
+// â”€â”€â”€ SimulatedReviewerPool â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 type SimulatedDecision = "approve" | "reject" | "escalate";
 
@@ -1520,7 +1520,7 @@ class SimulatedReviewerPool {
   }
 }
 
-// ─── ProposalLifecycleLogger ───────────────────────────────────────────
+// â”€â”€â”€ ProposalLifecycleLogger â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 interface LifecycleEvent {
   timestamp: Date;
@@ -1549,7 +1549,7 @@ class ProposalLifecycleLogger {
     const stages: Array&lt;{ stage: string; durationMs: number }&gt; = [];
     for (let i = 1; i &lt; timeline.length; i++) {
       const duration = timeline[i].timestamp.getTime() - timeline[i - 1].timestamp.getTime();
-      stages.push({ stage: `${timeline[i - 1].eventType} → ${timeline[i].eventType}`, durationMs: duration });
+      stages.push({ stage: `${timeline[i - 1].eventType} â†’ ${timeline[i].eventType}`, durationMs: duration });
     }
     return stages;
   }
@@ -1584,7 +1584,7 @@ class ProposalLifecycleLogger {
   }
 }
 
-// ─── Demo ──────────────────────────────────────────────────────────────
+// â”€â”€â”€ Demo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 async function main() {
   console.log("=== HITL Production Tooling Demo ===\n");
@@ -1597,11 +1597,11 @@ async function main() {
 
   for (let i = 0; i &lt; 6; i++) {
     const assigned = balancer.assign(`prop-${i}`, i % 2 === 0 ? "security" : "frontend", 1);
-    console.log(`Workload: prop-${i} → ${assigned ? assigned.name : "NO AVAILABLE REVIEWER"}`);
+    console.log(`Workload: prop-${i} â†’ ${assigned ? assigned.name : "NO AVAILABLE REVIEWER"}`);
   }
   balancer.completeReview("alice");
   const assigned2 = balancer.assign("prop-6", "security", 1);
-  console.log(`  prop-6 (after Alice freed) → ${assigned2 ? assigned2.name : "NONE"}`);
+  console.log(`  prop-6 (after Alice freed) â†’ ${assigned2 ? assigned2.name : "NONE"}`);
   console.log(`  Avg utilization: ${(balancer.getAverageUtilization() * 100).toFixed(0)}%`);
 
   // 2. Stale Proposal Cleaner
@@ -1648,7 +1648,7 @@ async function main() {
   // 5. Proposal Lifecycle Logger
   const logger = new ProposalLifecycleLogger();
   logger.log({ proposalId: "pl-1", eventType: "created", actor: "agent", detail: "Proposal created" });
-  logger.log({ proposalId: "pl-1", eventType: "gated", actor: "system", detail: "Confidence=0.72 → review needed" });
+  logger.log({ proposalId: "pl-1", eventType: "gated", actor: "system", detail: "Confidence=0.72 â†’ review needed" });
   logger.log({ proposalId: "pl-1", eventType: "assigned", actor: "alice", detail: "Assigned to Alice" });
   logger.log({ proposalId: "pl-1", eventType: "reviewed", actor: "alice", detail: "Reviewed and approved" });
   logger.log({ proposalId: "pl-1", eventType: "executed", actor: "system", detail: "Action committed" });
@@ -1680,7 +1680,7 @@ await main();
 - **Escalation policies** prevent deadlock: timeouts, delegation chains, and fallback actions ensure every proposal terminates.
 - **Batch review** trades latency for throughput; real-time review trades throughput for responsiveness. Choose based on risk and urgency.
 - **Trust calibration** closes the meta-loop: the agent's autonomy expands as its demonstrated reliability increases. Start conservative; expand with proof.
-- All three patterns compose naturally — a batch queue can feed into a trust-scaling gate, which feeds into a HITL agent.
+- All three patterns compose naturally â€” a batch queue can feed into a trust-scaling gate, which feeds into a HITL agent.
 
 ---
 
@@ -1714,7 +1714,7 @@ await main();
 
 - Proposals enter via an `enqueue()` method
 - Each proposal is tagged with an action type, confidence, estimated cost, and priority
-- A pipeline of gates runs synchronously: confidence gate → cost gate → destructive-op gate → trust-scaling gate
+- A pipeline of gates runs synchronously: confidence gate â†’ cost gate â†’ destructive-op gate â†’ trust-scaling gate
 - If all gates pass, the proposal is executed immediately
 - If any gate flags it, the proposal enters the batch review queue
 - The batch queue flushes based on either max batch size (5) or max wait time (30s simulated)

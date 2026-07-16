@@ -1,4 +1,4 @@
-# Introduction to Spring & Spring Boot
+﻿# Introduction to Spring & Spring Boot
 
 > **Previous:** [Gradle Deep Dive](./08-gradle.md) | **Next:** [Dependency Injection & IoC Container](./10-di-container.md)
 
@@ -9,16 +9,16 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/09-spring-intro/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/09-spring-intro/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/09-spring-intro/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/09-spring-intro/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/09-spring-intro/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/09-spring-intro/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/09-spring-intro/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/09-spring-intro/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/09-spring-intro/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/09-spring-intro/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/09-spring-intro/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/09-spring-intro/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -92,11 +92,11 @@ Spring began in 2004 as a response to the complexity of Enterprise JavaBeans (EJ
 Before Spring, J2EE development required:
 
 ```java
-// EJB 2.x → the pain Spring eliminated
+// EJB 2.x â†’ the pain Spring eliminated
 public class UserManagerEJB implements SessionBean {
     private SessionContext ctx;
 
-    // Mandatory EJB lifecycle methods → even if you don't need them
+    // Mandatory EJB lifecycle methods â†’ even if you don't need them
     public void ejbCreate() {}
     public void ejbRemove() {}
     public void ejbActivate() {}
@@ -108,7 +108,7 @@ public class UserManagerEJB implements SessionBean {
     // Business logic buried under boilerplate
     public User findUser(Long id) {
         try {
-            // JNDI lookup → tightly coupled to the container
+            // JNDI lookup â†’ tightly coupled to the container
             InitialContext ic = new InitialContext();
             DataSource ds = (DataSource) ic.lookup("java:comp/env/jdbc/MyDB");
             Connection conn = ds.getConnection();
@@ -129,17 +129,17 @@ public class UserManagerEJB implements SessionBean {
 Spring replaced this with **plain Java objects (POJOs)**, no mandatory interfaces, no container-dictated lifecycle:
 
 ```java
-// Spring → just a POJO
+// Spring â†’ just a POJO
 public class UserManager {
     private final DataSource dataSource;
 
-    // Constructor injection → no container dependency
+    // Constructor injection â†’ no container dependency
     public UserManager(DataSource dataSource) {
         this.dataSource = dataSource;
     }
 
     public User findUser(Long id) {
-        // Simple JDBC → or use JdbcTemplate for cleaner code
+        // Simple JDBC â†’ or use JdbcTemplate for cleaner code
         try (Connection conn = dataSource.getConnection();
              PreparedStatement ps = conn.prepareStatement("SELECT * FROM users WHERE id = ?")) {
             ps.setLong(1, id);
@@ -171,7 +171,7 @@ public class UserManager {
 | 6.1 | 2023 | Virtual threads, JVM-checkpoint restore (CRaC), SSL hot reload |
 | 6.2 | 2025+ | Continued AOT enhancements, GraalVM native-image improvements |
 
-### 1.3 The Spring Projects → A Modular Ecosystem
+### 1.3 The Spring Projects â†’ A Modular Ecosystem
 
 
 Spring is not a single framework. It is a **family of projects** built on top of the core Spring Framework:
@@ -180,21 +180,21 @@ Spring is not a single framework. It is a **family of projects** built on top of
 Spring Ecosystem Map (simplified)
 ======================================
 Spring Framework (core: IoC, AOP, MVC, Data Access)
-│
-├── Spring Boot        → Opinionated auto-configuration, embedded servers, starters
-├── Spring Cloud       → Distributed systems (discovery, gateway, config, circuit breakers)
-├── Spring Data        → Unified data access (JPA, MongoDB, Redis, Elasticsearch, etc.)
-├── Spring Security    → Authentication, authorization, OAuth2/OIDC, LDAP
-├── Spring Batch       → High-volume batch processing, job orchestration
-├── Spring Integration → Enterprise Integration Patterns (EIP), messaging adapters
-├── Spring Kafka       → Apache Kafka native support
-├── Spring Modulith    → Modular monoliths, structured module boundaries
-├── Spring AI          → AI SDK integration, vector stores, LLM agents, RAG
-├── Spring GraphQL     → GraphQL server, DataLoader, subscription support
-├── Spring Session     → Distributed session management (Redis, JDBC, Hazelcast)
-├── Spring HATEOAS     → Hypermedia-driven REST APIs
-├── Spring Shell       → Interactive CLI applications
-└── Spring Mobile      → Device detection, mobile views (maintenance mode)
+â”‚
+â”œâ”€â”€ Spring Boot        â†’ Opinionated auto-configuration, embedded servers, starters
+â”œâ”€â”€ Spring Cloud       â†’ Distributed systems (discovery, gateway, config, circuit breakers)
+â”œâ”€â”€ Spring Data        â†’ Unified data access (JPA, MongoDB, Redis, Elasticsearch, etc.)
+â”œâ”€â”€ Spring Security    â†’ Authentication, authorization, OAuth2/OIDC, LDAP
+â”œâ”€â”€ Spring Batch       â†’ High-volume batch processing, job orchestration
+â”œâ”€â”€ Spring Integration â†’ Enterprise Integration Patterns (EIP), messaging adapters
+â”œâ”€â”€ Spring Kafka       â†’ Apache Kafka native support
+â”œâ”€â”€ Spring Modulith    â†’ Modular monoliths, structured module boundaries
+â”œâ”€â”€ Spring AI          â†’ AI SDK integration, vector stores, LLM agents, RAG
+â”œâ”€â”€ Spring GraphQL     â†’ GraphQL server, DataLoader, subscription support
+â”œâ”€â”€ Spring Session     â†’ Distributed session management (Redis, JDBC, Hazelcast)
+â”œâ”€â”€ Spring HATEOAS     â†’ Hypermedia-driven REST APIs
+â”œâ”€â”€ Spring Shell       â†’ Interactive CLI applications
+â””â”€â”€ Spring Mobile      â†’ Device detection, mobile views (maintenance mode)
 ```
 
 Each project follows the same philosophy: **POJO-centric, annotation-driven, convention over configuration**.
@@ -202,25 +202,25 @@ Each project follows the same philosophy: **POJO-centric, annotation-driven, con
 ### 1.4 Detailed Project Descriptions
 
 
-**Spring Framework** → The foundation. Provides the IoC container, AOP framework, MVC web framework (Servlets), WebFlux (reactive), transaction management, and data access support. Every other Spring project depends on it.
+**Spring Framework** â†’ The foundation. Provides the IoC container, AOP framework, MVC web framework (Servlets), WebFlux (reactive), transaction management, and data access support. Every other Spring project depends on it.
 
-**Spring Boot** → Bootstraps Spring applications with minimal configuration. Auto-configures beans based on classpath dependencies, provides embedded servers (Tomcat, Jetty, Undertow), externalized configuration, health checks, and production-ready features. The de facto way to build Spring applications since 2014.
+**Spring Boot** â†’ Bootstraps Spring applications with minimal configuration. Auto-configures beans based on classpath dependencies, provides embedded servers (Tomcat, Jetty, Undertow), externalized configuration, health checks, and production-ready features. The de facto way to build Spring applications since 2014.
 
-**Spring Cloud** → Tools for distributed systems: service discovery (Eureka, Consul), API gateways (Spring Cloud Gateway), distributed configuration (Config Server), circuit breakers (Resilience4j integration), distributed tracing (Micrometer + Zipkin), and load balancing.
+**Spring Cloud** â†’ Tools for distributed systems: service discovery (Eureka, Consul), API gateways (Spring Cloud Gateway), distributed configuration (Config Server), circuit breakers (Resilience4j integration), distributed tracing (Micrometer + Zipkin), and load balancing.
 
-**Spring Data** → A consistent data access programming model across relational and NoSQL databases. Provides repository abstractions: `JpaRepository`, `MongoRepository`, `ElasticsearchRepository`, `RedisRepository`. Key modules: Spring Data JPA, MongoDB, Redis, Elasticsearch, JDBC, REST, Neo4j, Gemfire.
+**Spring Data** â†’ A consistent data access programming model across relational and NoSQL databases. Provides repository abstractions: `JpaRepository`, `MongoRepository`, `ElasticsearchRepository`, `RedisRepository`. Key modules: Spring Data JPA, MongoDB, Redis, Elasticsearch, JDBC, REST, Neo4j, Gemfire.
 
-**Spring Security** → Comprehensive authentication and authorization. Supports form-based login, HTTP Basic, Digest, LDAP, OAuth2 (authorization server and resource server), OpenID Connect (OIDC), SAML 2.0, ACL-based, method security, and reactive security.
+**Spring Security** â†’ Comprehensive authentication and authorization. Supports form-based login, HTTP Basic, Digest, LDAP, OAuth2 (authorization server and resource server), OpenID Connect (OIDC), SAML 2.0, ACL-based, method security, and reactive security.
 
-**Spring Batch** → Batch processing: read-process-write chunks, partitioning, job restart, skip/retry, multi-threaded steps, job repository, scheduling integration.
+**Spring Batch** â†’ Batch processing: read-process-write chunks, partitioning, job restart, skip/retry, multi-threaded steps, job repository, scheduling integration.
 
-**Spring Integration** → Enterprise Integration Patterns (EIP): channels, routers, transformers, filters, gateways, service activators. Connects systems via JMS, AMQP, Kafka, MQTT, FTP/SFTP, file system, TCP/UDP, mail.
+**Spring Integration** â†’ Enterprise Integration Patterns (EIP): channels, routers, transformers, filters, gateways, service activators. Connects systems via JMS, AMQP, Kafka, MQTT, FTP/SFTP, file system, TCP/UDP, mail.
 
-**Spring AI** → Latest addition (2024+). Integrates AI SDKs (OpenAI, Anthropic, Ollama, Hugging Face), vector stores (pgvector, Pinecone, Chroma), embeddings, and RAG patterns into the Spring programming model.
+**Spring AI** â†’ Latest addition (2024+). Integrates AI SDKs (OpenAI, Anthropic, Ollama, Hugging Face), vector stores (pgvector, Pinecone, Chroma), embeddings, and RAG patterns into the Spring programming model.
 
-**Spring Modulith** → Modular monolith architecture. Enforces module boundaries, verifies package dependencies, generates C4 diagrams, supports event-driven communication between modules, and provides a migration path to microservices.
+**Spring Modulith** â†’ Modular monolith architecture. Enforces module boundaries, verifies package dependencies, generates C4 diagrams, supports event-driven communication between modules, and provides a migration path to microservices.
 
-**Spring GraalVM Native** → Compiles Spring applications to native executables via GraalVM native-image. Reduces startup time to milliseconds and memory footprint significantly.
+**Spring GraalVM Native** â†’ Compiles Spring applications to native executables via GraalVM native-image. Reduces startup time to milliseconds and memory footprint significantly.
 
 ### 1.5 When to Use What
 
@@ -244,12 +244,12 @@ GraphQL API                          | Spring Boot + Spring GraphQL + Spring Dat
 
 Spring is developed under the **Apache 2.0 license** and governed by **VMware (Broadcom)** since the Pivotal acquisition in 2019. The core team includes:
 
-- **Rod Johnson** → Founder, created Spring Framework 1.0 (left 2012)
-- **Juergen Hoeller** → Core committer since 2003, lead of Spring Framework
-- **StÃ©phane Nicoll** → Spring Boot lead
-- **Andy Wilkinson** → Spring Boot build and release
-- **Rossen Stoyanchev** → Reactive/WebFlux lead
-- **Rob Winch** → Spring Security lead
+- **Rod Johnson** â†’ Founder, created Spring Framework 1.0 (left 2012)
+- **Juergen Hoeller** â†’ Core committer since 2003, lead of Spring Framework
+- **StÃƒÂ©phane Nicoll** â†’ Spring Boot lead
+- **Andy Wilkinson** â†’ Spring Boot build and release
+- **Rossen Stoyanchev** â†’ Reactive/WebFlux lead
+- **Rob Winch** â†’ Spring Security lead
 
 The community is vast: 900+ contributors, 40,000+ stars on GitHub, and the largest annual conference (SpringOne) draws thousands of developers. The ecosystem has been the most popular Java framework for over a decade, used by startups and Fortune 500 companies alike.
 
@@ -266,18 +266,18 @@ In traditional procedural programming, your code calls into library functions. I
 
 ```text
 Traditional programming:
-  main() → calls library functions → returns → done
+  main() â†’ calls library functions â†’ returns â†’ done
 
 IoC container:
-  Container starts → scans for beans → resolves dependencies →
-  calls your code (callbacks) → manages lifecycle → done
+  Container starts â†’ scans for beans â†’ resolves dependencies â†’
+  calls your code (callbacks) â†’ manages lifecycle â†’ done
 ```
 
 ### 2.2 Traditional (Tightly Coupled) Approach
 
 
 ```java
-// Tight coupling → Service creates its own dependencies
+// Tight coupling â†’ Service creates its own dependencies
 public class EmailService {
     private SmtpServer smtpServer;
 
@@ -294,10 +294,10 @@ public class EmailService {
 
 Problems with this approach:
 
-1. **Hard to test** → You cannot replace `SmtpServer` with a mock in unit tests
-2. **Hard to change** → Switching from SMTP to an API-based email provider requires changing the service code
-3. **Hidden dependencies** → The constructor signature does not reveal what the class needs
-4. **No lifecycle management** → Connection pooling, retry logic, and resource cleanup become scattered
+1. **Hard to test** â†’ You cannot replace `SmtpServer` with a mock in unit tests
+2. **Hard to change** â†’ Switching from SMTP to an API-based email provider requires changing the service code
+3. **Hidden dependencies** â†’ The constructor signature does not reveal what the class needs
+4. **No lifecycle management** â†’ Connection pooling, retry logic, and resource cleanup become scattered
 
 ### 2.3 Dependency Injection (the IoC Implementation)
 
@@ -305,11 +305,11 @@ Problems with this approach:
 Dependency Injection (DI) is the primary way Spring implements IoC. Instead of the class creating its own dependencies, the **container injects them**:
 
 ```java
-// Loose coupling → dependencies are injected, not created
+// Loose coupling â†’ dependencies are injected, not created
 public class EmailService {
     private final MailSender mailSender;
 
-    // Constructor Injection → dependencies passed by the container
+    // Constructor Injection â†’ dependencies passed by the container
     public EmailService(MailSender mailSender) {
         this.mailSender = mailSender;
     }
@@ -378,28 +378,28 @@ public class ReportService {
 
 Problems: no way to create the object without the container, violates encapsulation, hides dependencies, impossible to unit test without reflection support.
 
-### 2.5 Spring IoC Container → Inside Out
+### 2.5 Spring IoC Container â†’ Inside Out
 
 
 The IoC container is represented by two main interfaces:
 
 ```java
-// BeanFactory → the simplest container (lazy initialization)
+// BeanFactory â†’ the simplest container (lazy initialization)
 org.springframework.beans.factory.BeanFactory
 
-// ApplicationContext → the full container (eager initialization, events, AOP)
+// ApplicationContext â†’ the full container (eager initialization, events, AOP)
 org.springframework.context.ApplicationContext
 ```
 
 The `ApplicationContext` (the most commonly used) provides:
 
-- **Bean instantiation and wiring** → Creates and assembles beans
-- **Lifecycle management** → `@PostConstruct`, `@PreDestroy`, `InitializingBean`, `DisposableBean`
-- **AOP integration** → Aspect-oriented weaving
-- **Internationalization** → `MessageSource` for i18n
-- **Event publishing** → Application events with `@EventListener`
-- **Environment abstraction** → Profiles and property sources
-- **Resource loading** → `ResourceLoader` for file, URL, classpath resources
+- **Bean instantiation and wiring** â†’ Creates and assembles beans
+- **Lifecycle management** â†’ `@PostConstruct`, `@PreDestroy`, `InitializingBean`, `DisposableBean`
+- **AOP integration** â†’ Aspect-oriented weaving
+- **Internationalization** â†’ `MessageSource` for i18n
+- **Event publishing** â†’ Application events with `@EventListener`
+- **Environment abstraction** â†’ Profiles and property sources
+- **Resource loading** â†’ `ResourceLoader` for file, URL, classpath resources
 
 ### 2.6 XML-Based Configuration (Legacy)
 
@@ -473,7 +473,7 @@ public class AppConfig {
 }
 ```
 
-### 2.8 Benefits of IoC/DI → Detailed
+### 2.8 Benefits of IoC/DI â†’ Detailed
 
 
 **Loose Coupling:**
@@ -548,7 +548,7 @@ public class DatabaseConnectionManager {
 
 ```java
 @Component
-@Scope("singleton")  // default → one instance per container
+@Scope("singleton")  // default â†’ one instance per container
 public class AppCache { ... }
 
 @Component
@@ -561,48 +561,48 @@ public class RequestBuilder { ... }
 @Scope("application")// one instance per ServletContext
 ```
 
-### 2.9 Spring IoC Container Internals → Simplified
+### 2.9 Spring IoC Container Internals â†’ Simplified
 
 
 ```text
                          SpringApplication.run()
-                                  │
-                                  ▼
-                     ┌─────────────────────┐
-                     │   ClassPathScanner   │
-                     │   (@ComponentScan)   │
-                     └─────────┬───────────┘
-                               │
+                                  â”‚
+                                  â–¼
+                     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                     â”‚   ClassPathScanner   â”‚
+                     â”‚   (@ComponentScan)   â”‚
+                     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                               â”‚
                  Scanned classes found
-                               │
-                               ▼
-                     ┌─────────────────────┐
-                     │   BeanDefinition     │
-                     │   Registry           │
-                     │   (all @Component,   │
-                     │    @Bean methods,    │
-                     │    XML <bean>)       │
-                     └─────────┬───────────┘
-                               │
+                               â”‚
+                               â–¼
+                     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                     â”‚   BeanDefinition     â”‚
+                     â”‚   Registry           â”‚
+                     â”‚   (all @Component,   â”‚
+                     â”‚    @Bean methods,    â”‚
+                     â”‚    XML <bean>)       â”‚
+                     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                               â”‚
                      dependency graph built
-                               │
-                               ▼
-                     ┌─────────────────────┐
-                     │   BeanFactory        │
-                     │   (instantiation &   │
-                     │    injection)        │
-                     └─────────┬───────────┘
-                               │
+                               â”‚
+                               â–¼
+                     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                     â”‚   BeanFactory        â”‚
+                     â”‚   (instantiation &   â”‚
+                     â”‚    injection)        â”‚
+                     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                               â”‚
                     Singletons created, 
                     @PostConstruct called
-                               │
-                               ▼
-                     ┌─────────────────────┐
-                     │ Ready Application    │
-                     │ Context              │
-                     │ (all beans wired,    │
-                     │  embedded server up) │
-                     └─────────────────────┘
+                               â”‚
+                               â–¼
+                     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                     â”‚ Ready Application    â”‚
+                     â”‚ Context              â”‚
+                     â”‚ (all beans wired,    â”‚
+                     â”‚  embedded server up) â”‚
+                     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ---
@@ -615,7 +615,7 @@ public class RequestBuilder { ... }
 Before Spring Boot, setting up a Spring application involved:
 
 ```xml
-<!-- Typical pom.xml circa 2013 → dozens of manual version matches -->
+<!-- Typical pom.xml circa 2013 â†’ dozens of manual version matches -->
 <properties>
     <spring.version>4.0.5.RELEASE</spring.version>
     <spring-security.version>3.2.5.RELEASE</spring-security.version>
@@ -684,7 +684,7 @@ All of these can be overridden, but the defaults work for 80% of use cases.
 `@EnableAutoConfiguration` (included in `@SpringBootApplication`) triggers hundreds of auto-configuration classes. Each class checks conditions:
 
 ```java
-// Simplified example → Spring Boot's actual DataSourceAutoConfiguration
+// Simplified example â†’ Spring Boot's actual DataSourceAutoConfiguration
 @AutoConfiguration
 @ConditionalOnClass(DataSource.class)         // is H2/PostgreSQL on the classpath?
 @ConditionalOnMissingBean(DataSource.class)   // did the user define their own?
@@ -717,7 +717,7 @@ The `@Conditional*` annotations make auto-configuration smart:
 
 **Standalone Production-Grade:**
 
-Spring Boot apps are run with `java -jar myapp.jar`. No application server installation is needed. The JAR bundles everything → class files, dependencies, and the embedded server → in a single executable archive.
+Spring Boot apps are run with `java -jar myapp.jar`. No application server installation is needed. The JAR bundles everything â†’ class files, dependencies, and the embedded server â†’ in a single executable archive.
 
 **Reduced Boilerplate:**
 
@@ -807,7 +807,7 @@ Flexibility         | Maximum control         | Opinionated (configurable)
 The easiest way to create a Spring Boot project. Visit `https://start.spring.io` in any browser:
 
 ```text
-Spring Initializr Web UI → Fields
+Spring Initializr Web UI â†’ Fields
 ==================================
 Project:          Gradle (Kotlin)  |  Gradle (Groovy)  |  Maven
 Language:         Java  |  Kotlin  |  Groovy
@@ -821,14 +821,14 @@ Packaging:        Jar  |  War
 Java:             21  |  17  |  11
 
 Dependencies:
-  ┌─ Spring Web         (spring-boot-starter-web)
-  ├─ Spring Data JPA    (spring-boot-starter-data-jpa)
-  ├─ Spring Security    (spring-boot-starter-security)
-  ├─ Spring Boot Actuator (spring-boot-starter-actuator)
-  ├─ PostgreSQL Driver  (postgresql)
-  ├─ Lombok             (lombok)
-  ├─ Spring Boot DevTools (spring-boot-devtools)
-  └─ Validation         (spring-boot-starter-validation)
+  â”Œâ”€ Spring Web         (spring-boot-starter-web)
+  â”œâ”€ Spring Data JPA    (spring-boot-starter-data-jpa)
+  â”œâ”€ Spring Security    (spring-boot-starter-security)
+  â”œâ”€ Spring Boot Actuator (spring-boot-starter-actuator)
+  â”œâ”€ PostgreSQL Driver  (postgresql)
+  â”œâ”€ Lombok             (lombok)
+  â”œâ”€ Spring Boot DevTools (spring-boot-devtools)
+  â””â”€ Validation         (spring-boot-starter-validation)
 ```
 
 Click **Generate** to download a ZIP with the full project skeleton.
@@ -839,24 +839,24 @@ Click **Generate** to download a ZIP with the full project skeleton.
 IntelliJ IDEA Ultimate has built-in Spring Initializr integration:
 
 ```text
-File → New → Project...
-  ├── New Project → Spring Boot
-  │   ├── Language: Java
-  │   ├── Type: Maven  |  Gradle
-  │   ├── JDK: 21
-  │   ├── Java: 21
-  │   └── Spring Boot: 3.4.0
-  │
-  ├── Project Metadata
-  │   ├── Group: com.example
-  │   ├── Artifact: my-app
-  │   ├── Package: com.example.myapp
-  │   └── Dependencies → Add: Spring Web, Spring Data JPA, etc.
-  │
-  └── Finish
+File â†’ New â†’ Project...
+  â”œâ”€â”€ New Project â†’ Spring Boot
+  â”‚   â”œâ”€â”€ Language: Java
+  â”‚   â”œâ”€â”€ Type: Maven  |  Gradle
+  â”‚   â”œâ”€â”€ JDK: 21
+  â”‚   â”œâ”€â”€ Java: 21
+  â”‚   â””â”€â”€ Spring Boot: 3.4.0
+  â”‚
+  â”œâ”€â”€ Project Metadata
+  â”‚   â”œâ”€â”€ Group: com.example
+  â”‚   â”œâ”€â”€ Artifact: my-app
+  â”‚   â”œâ”€â”€ Package: com.example.myapp
+  â”‚   â””â”€â”€ Dependencies â†’ Add: Spring Web, Spring Data JPA, etc.
+  â”‚
+  â””â”€â”€ Finish
 ```
 
-IntelliJ downloads the same Initializr template and opens it as a ready-to-run project. Community Edition does NOT have Spring Boot Initializr → use start.spring.io.
+IntelliJ downloads the same Initializr template and opens it as a ready-to-run project. Community Edition does NOT have Spring Boot Initializr â†’ use start.spring.io.
 
 ### 4.3 VS Code with Spring Boot Extension Pack
 
@@ -873,13 +873,13 @@ code --install-extension vscjava.vscode-spring-boot-dashboard
 Then:
 
 ```text
-Ctrl+Shift+P → Spring Initializr → Create a Maven/Gradle Project
-  → Specify Spring Boot version (3.4.0)
-  → Specify language (Java)
-  → Specify Group Id, Artifact Id
-  → Select dependencies (Web, JPA, etc.)
-  → Choose output location
-  → Open the generated project
+Ctrl+Shift+P â†’ Spring Initializr â†’ Create a Maven/Gradle Project
+  â†’ Specify Spring Boot version (3.4.0)
+  â†’ Specify language (Java)
+  â†’ Specify Group Id, Artifact Id
+  â†’ Select dependencies (Web, JPA, etc.)
+  â†’ Choose output location
+  â†’ Open the generated project
 ```
 
 ### 4.4 Spring Boot CLI
@@ -1012,58 +1012,58 @@ Every Spring Boot project follows a standard layout:
 
 ```text
 my-app/
-│
-├── pom.xml                              # Maven build file (or build.gradle for Gradle)
-│
-├── src/
-│   ├── main/
-│   │   ├── java/                        # Java source files
-│   │   │   └── com/example/myapp/
-│   │   │       ├── MyAppApplication.java       # Main class (@SpringBootApplication)
-│   │   │       ├── controller/                 # REST controllers
-│   │   │       ├── service/                    # Business logic
-│   │   │       ├── repository/                 # Data access (JPA repositories)
-│   │   │       ├── model/                      # Entities / DTOs
-│   │   │       ├── config/                     # @Configuration classes
-│   │   │       ├── dto/                        # Data Transfer Objects
-│   │   │       ├── exception/                  # Custom exceptions / handlers
-│   │   │       └── util/                       # Utility classes
-│   │   │
-│   │   └── resources/                   # Application resources
-│   │       ├── application.properties   # Primary configuration (or application.yml)
-│   │       ├── application-dev.yml      # Profile-specific config (development)
-│   │       ├── application-prod.yml     # Profile-specific config (production)
-│   │       ├── static/                  # Static resources (CSS, JS, images)
-│   │       │   ├── css/
-│   │       │   ├── js/
-│   │       │   └── images/
-│   │       ├── templates/               # Server-side templates (Thymeleaf, Freemarker)
-│   │       ├── messages.properties      # i18n message bundles
-│   │       ├── messages_es.properties
-│   │       ├── messages_fr.properties
-│   │       ├── banner.txt               # Custom ASCII art banner
-│   │       ├── logback-spring.xml       # Logging configuration (optional)
-│   │       └── db/migration/            # Flyway/Liquibase migration scripts
-│   │           ├── V1__init_schema.sql
-│   │           └── V2__add_indexes.sql
-│   │
-│   └── test/
-│       └── java/                        # Test source files
-│           └── com/example/myapp/
-│               ├── MyAppApplicationTests.java       # Context load test
-│               ├── controller/
-│               │   └── HelloControllerTest.java
-│               └── service/
-│                   └── UserServiceTest.java
-│
-├── .gitignore
-├── README.md
-├── HELP.md                              # Spring Initializr-generated help
-├── mvnw                                 # Maven Wrapper (Unix)
-├── mvnw.cmd                             # Maven Wrapper (Windows)
-└── .mvn/
-    └── wrapper/
-        └── maven-wrapper.properties
+â”‚
+â”œâ”€â”€ pom.xml                              # Maven build file (or build.gradle for Gradle)
+â”‚
+â”œâ”€â”€ src/
+â”‚   â”œâ”€â”€ main/
+â”‚   â”‚   â”œâ”€â”€ java/                        # Java source files
+â”‚   â”‚   â”‚   â””â”€â”€ com/example/myapp/
+â”‚   â”‚   â”‚       â”œâ”€â”€ MyAppApplication.java       # Main class (@SpringBootApplication)
+â”‚   â”‚   â”‚       â”œâ”€â”€ controller/                 # REST controllers
+â”‚   â”‚   â”‚       â”œâ”€â”€ service/                    # Business logic
+â”‚   â”‚   â”‚       â”œâ”€â”€ repository/                 # Data access (JPA repositories)
+â”‚   â”‚   â”‚       â”œâ”€â”€ model/                      # Entities / DTOs
+â”‚   â”‚   â”‚       â”œâ”€â”€ config/                     # @Configuration classes
+â”‚   â”‚   â”‚       â”œâ”€â”€ dto/                        # Data Transfer Objects
+â”‚   â”‚   â”‚       â”œâ”€â”€ exception/                  # Custom exceptions / handlers
+â”‚   â”‚   â”‚       â””â”€â”€ util/                       # Utility classes
+â”‚   â”‚   â”‚
+â”‚   â”‚   â””â”€â”€ resources/                   # Application resources
+â”‚   â”‚       â”œâ”€â”€ application.properties   # Primary configuration (or application.yml)
+â”‚   â”‚       â”œâ”€â”€ application-dev.yml      # Profile-specific config (development)
+â”‚   â”‚       â”œâ”€â”€ application-prod.yml     # Profile-specific config (production)
+â”‚   â”‚       â”œâ”€â”€ static/                  # Static resources (CSS, JS, images)
+â”‚   â”‚       â”‚   â”œâ”€â”€ css/
+â”‚   â”‚       â”‚   â”œâ”€â”€ js/
+â”‚   â”‚       â”‚   â””â”€â”€ images/
+â”‚   â”‚       â”œâ”€â”€ templates/               # Server-side templates (Thymeleaf, Freemarker)
+â”‚   â”‚       â”œâ”€â”€ messages.properties      # i18n message bundles
+â”‚   â”‚       â”œâ”€â”€ messages_es.properties
+â”‚   â”‚       â”œâ”€â”€ messages_fr.properties
+â”‚   â”‚       â”œâ”€â”€ banner.txt               # Custom ASCII art banner
+â”‚   â”‚       â”œâ”€â”€ logback-spring.xml       # Logging configuration (optional)
+â”‚   â”‚       â””â”€â”€ db/migration/            # Flyway/Liquibase migration scripts
+â”‚   â”‚           â”œâ”€â”€ V1__init_schema.sql
+â”‚   â”‚           â””â”€â”€ V2__add_indexes.sql
+â”‚   â”‚
+â”‚   â””â”€â”€ test/
+â”‚       â””â”€â”€ java/                        # Test source files
+â”‚           â””â”€â”€ com/example/myapp/
+â”‚               â”œâ”€â”€ MyAppApplicationTests.java       # Context load test
+â”‚               â”œâ”€â”€ controller/
+â”‚               â”‚   â””â”€â”€ HelloControllerTest.java
+â”‚               â””â”€â”€ service/
+â”‚                   â””â”€â”€ UserServiceTest.java
+â”‚
+â”œâ”€â”€ .gitignore
+â”œâ”€â”€ README.md
+â”œâ”€â”€ HELP.md                              # Spring Initializr-generated help
+â”œâ”€â”€ mvnw                                 # Maven Wrapper (Unix)
+â”œâ”€â”€ mvnw.cmd                             # Maven Wrapper (Windows)
+â””â”€â”€ .mvn/
+    â””â”€â”€ wrapper/
+        â””â”€â”€ maven-wrapper.properties
 ```
 
 ### 5.2 The main/java Directory
@@ -1073,20 +1073,20 @@ This is where all application source code lives. Package structure typically fol
 
 ```text
 com.example.myapp/
-  ├── MyAppApplication.java          # Application entry point
-  ├── controller/                    # REST API endpoints
-  │   ├── GreetingController.java
-  │   └── UserController.java
-  ├── service/                       # Business logic
-  │   ├── GreetingService.java
-  │   └── UserService.java
-  ├── repository/                    # Database access
-  │   └── UserRepository.java
-  ├── model/                         # JPA entities
-  │   └── User.java
-  └── config/                        # Configuration classes
-      ├── SecurityConfig.java
-      └── AppConfig.java
+  â”œâ”€â”€ MyAppApplication.java          # Application entry point
+  â”œâ”€â”€ controller/                    # REST API endpoints
+  â”‚   â”œâ”€â”€ GreetingController.java
+  â”‚   â””â”€â”€ UserController.java
+  â”œâ”€â”€ service/                       # Business logic
+  â”‚   â”œâ”€â”€ GreetingService.java
+  â”‚   â””â”€â”€ UserService.java
+  â”œâ”€â”€ repository/                    # Database access
+  â”‚   â””â”€â”€ UserRepository.java
+  â”œâ”€â”€ model/                         # JPA entities
+  â”‚   â””â”€â”€ User.java
+  â””â”€â”€ config/                        # Configuration classes
+      â”œâ”€â”€ SecurityConfig.java
+      â””â”€â”€ AppConfig.java
 ```
 
 ### 5.3 The main/resources Directory
@@ -1095,7 +1095,7 @@ com.example.myapp/
 Contains configuration files, static assets, and templates:
 
 ```yaml
-# application.yml → Primary configuration
+# application.yml â†’ Primary configuration
 server:
   port: 8080
   servlet:
@@ -1113,7 +1113,7 @@ spring:
 ```
 
 ```properties
-# application.properties → Alternative to YAML
+# application.properties â†’ Alternative to YAML
 server.port=8080
 server.servlet.context-path=/api
 spring.datasource.url=jdbc:postgresql://localhost:5432/mydb
@@ -1126,7 +1126,7 @@ spring.jpa.show-sql=false
 **Profile-specific files:**
 
 ```yaml
-# application-dev.yml → Development profile
+# application-dev.yml â†’ Development profile
 server:
   port: 8080
 
@@ -1144,7 +1144,7 @@ logging:
 ```
 
 ```yaml
-# application-prod.yml → Production profile
+# application-prod.yml â†’ Production profile
 server:
   port: 80
 
@@ -1170,15 +1170,15 @@ For non-dynamic web resources served without server-side processing:
 
 ```text
 static/
-  ├── index.html              # Served at /
-  ├── css/
-  │   └── styles.css
-  ├── js/
-  │   └── app.js
-  ├── images/
-  │   ├── logo.png
-  │   └── banner.jpg
-  └── favicon.ico             # Auto-detected by Spring Boot
+  â”œâ”€â”€ index.html              # Served at /
+  â”œâ”€â”€ css/
+  â”‚   â””â”€â”€ styles.css
+  â”œâ”€â”€ js/
+  â”‚   â””â”€â”€ app.js
+  â”œâ”€â”€ images/
+  â”‚   â”œâ”€â”€ logo.png
+  â”‚   â””â”€â”€ banner.jpg
+  â””â”€â”€ favicon.ico             # Auto-detected by Spring Boot
 ```
 
 ### 5.5 The templates/ Directory
@@ -1321,19 +1321,19 @@ The starter's own `pom.xml` (the **starter POM**) bundles all required transitiv
 **Core Starters:**
 
 ```xml
-<!-- Core → minimal Spring Boot application (auto-config, logging, YAML) -->
+<!-- Core â†’ minimal Spring Boot application (auto-config, logging, YAML) -->
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter</artifactId>
 </dependency>
 
-<!-- Web → REST APIs, MVC, embedded Tomcat, Jackson -->
+<!-- Web â†’ REST APIs, MVC, embedded Tomcat, Jackson -->
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-web</artifactId>
 </dependency>
 
-<!-- WebFlux → reactive web applications -->
+<!-- WebFlux â†’ reactive web applications -->
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-webflux</artifactId>
@@ -1409,24 +1409,24 @@ The starter's own `pom.xml` (the **starter POM**) bundles all required transitiv
 
 This single starter includes:
 
-- **JUnit 5** (junit-jupiter) → Test framework
-- **Mockito** → Mocking framework (5.x)
-- **AssertJ** → Fluent assertions
-- **Hamcrest** → Matcher library
-- **JSONassert** → JSON comparison
-- **JsonPath** → JSON path queries
-- **Spring Test** → Test utilities and TestContext framework
+- **JUnit 5** (junit-jupiter) â†’ Test framework
+- **Mockito** â†’ Mocking framework (5.x)
+- **AssertJ** â†’ Fluent assertions
+- **Hamcrest** â†’ Matcher library
+- **JSONassert** â†’ JSON comparison
+- **JsonPath** â†’ JSON path queries
+- **Spring Test** â†’ Test utilities and TestContext framework
 
 **Production Starters:**
 
 ```xml
-<!-- Actuator → health, metrics, env, beans, loggers, etc. -->
+<!-- Actuator â†’ health, metrics, env, beans, loggers, etc. -->
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-actuator</artifactId>
 </dependency>
 
-<!-- Validation → Bean Validation (Hibernate Validator) -->
+<!-- Validation â†’ Bean Validation (Hibernate Validator) -->
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-validation</artifactId>
@@ -1436,13 +1436,13 @@ This single starter includes:
 **Template Starters:**
 
 ```xml
-<!-- Thymeleaf → server-side HTML templates -->
+<!-- Thymeleaf â†’ server-side HTML templates -->
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-thymeleaf</artifactId>
 </dependency>
 
-<!-- Mustache → logic-less templates -->
+<!-- Mustache â†’ logic-less templates -->
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-mustache</artifactId>
@@ -1527,15 +1527,15 @@ This is the **core starter** that all other starters include transitively:
 
 It brings in:
 
-- `spring-boot` → Spring Boot core
-- `spring-boot-autoconfigure` → Auto-configuration support
-- `spring-boot-starter-logging` → Logback + SLF4J + Log4j-to-SLF4J bridge
-- `spring-core` → Spring Framework core
-- `spring-context` → Application context, event system
-- `snakeyaml` → YAML parsing for application.yml
-- `jakarta.annotation-api` → @PostConstruct, @PreDestroy, @Resource
+- `spring-boot` â†’ Spring Boot core
+- `spring-boot-autoconfigure` â†’ Auto-configuration support
+- `spring-boot-starter-logging` â†’ Logback + SLF4J + Log4j-to-SLF4J bridge
+- `spring-core` â†’ Spring Framework core
+- `spring-context` â†’ Application context, event system
+- `snakeyaml` â†’ YAML parsing for application.yml
+- `jakarta.annotation-api` â†’ @PostConstruct, @PreDestroy, @Resource
 
-### 6.4 DevTools → Developer Experience Starter
+### 6.4 DevTools â†’ Developer Experience Starter
 
 
 Not a starter per se, but a special dependency:
@@ -1551,10 +1551,10 @@ Not a starter per se, but a special dependency:
 
 Features:
 
-- **Automatic restart** → Restarts the application when files change (classpath)
-- **LiveReload** → Built-in LiveReload server for browser auto-refresh
-- **Property defaults** → Template caching disabled, debug logging enabled
-- **Remote development** → Remote application restart over HTTP
+- **Automatic restart** â†’ Restarts the application when files change (classpath)
+- **LiveReload** â†’ Built-in LiveReload server for browser auto-refresh
+- **Property defaults** â†’ Template caching disabled, debug logging enabled
+- **Remote development** â†’ Remote application restart over HTTP
 
 ---
 
@@ -1565,11 +1565,11 @@ Features:
 
 The `spring-boot-starter-parent` is a **Maven parent POM** that provides:
 
-1. **Managed dependency versions** → All Spring dependency versions are pre-configured
-2. **Plugin configuration** → Maven plugins pre-configured (compiler, surefire, failsafe, jar)
-3. **Property placeholders** → Resource filtering with `@...@` delimiters
-4. **Java version** → Default Java version
-5. **Resource filtering** → `application.properties` and `application.yml` are filtered
+1. **Managed dependency versions** â†’ All Spring dependency versions are pre-configured
+2. **Plugin configuration** â†’ Maven plugins pre-configured (compiler, surefire, failsafe, jar)
+3. **Property placeholders** â†’ Resource filtering with `@...@` delimiters
+4. **Java version** â†’ Default Java version
+5. **Resource filtering** â†’ `application.properties` and `application.yml` are filtered
 
 ```xml
 <!-- Declare the parent -->
@@ -1628,7 +1628,7 @@ The parent POM's `<dependencyManagement>` section declares versions for hundreds
 <!-- Maven plugins pre-configured in the parent -->
 <build>
     <plugins>
-        <!-- Compiler plugin → Java version set automatically -->
+        <!-- Compiler plugin â†’ Java version set automatically -->
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
@@ -1638,7 +1638,7 @@ The parent POM's `<dependencyManagement>` section declares versions for hundreds
             </configuration>
         </plugin>
 
-        <!-- Surefire plugin → JUnit 5 configured -->
+        <!-- Surefire plugin â†’ JUnit 5 configured -->
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
@@ -1650,7 +1650,7 @@ The parent POM's `<dependencyManagement>` section declares versions for hundreds
             </configuration>
         </plugin>
 
-        <!-- JAR plugin → executable JAR support via spring-boot-maven-plugin -->
+        <!-- JAR plugin â†’ executable JAR support via spring-boot-maven-plugin -->
     </plugins>
 </build>
 ```
@@ -1709,14 +1709,14 @@ The `spring-boot-maven-plugin` repackages your JAR into an executable fat JAR:
 What it does:
 
 ```bash
-# Standard Maven package (without the plugin) → plain JAR
+# Standard Maven package (without the plugin) â†’ plain JAR
 mvn package
-# target/my-app-0.0.1-SNAPSHOT.jar          → ~100 KB (dependencies not included)
+# target/my-app-0.0.1-SNAPSHOT.jar          â†’ ~100 KB (dependencies not included)
 
-# Standard Maven package (with the plugin) → executable fat JAR
+# Standard Maven package (with the plugin) â†’ executable fat JAR
 mvn package
-# target/my-app-0.0.1-SNAPSHOT.jar          → ~18 MB (all dependencies included)
-# target/my-app-0.0.1-SNAPSHOT.jar.original → original JAR before repackaging
+# target/my-app-0.0.1-SNAPSHOT.jar          â†’ ~18 MB (all dependencies included)
+# target/my-app-0.0.1-SNAPSHOT.jar.original â†’ original JAR before repackaging
 
 # Run the executable JAR
 java -jar target/my-app-0.0.1-SNAPSHOT.jar
@@ -1726,21 +1726,21 @@ The repackaged JAR structure:
 
 ```text
 my-app-0.0.1-SNAPSHOT.jar
-├── META-INF/
-│   └── MANIFEST.MF         # Main-Class: org.springframework.boot.loader.JarLauncher
-├── org/springframework/boot/loader/
-│   ├── JarLauncher.class   # Spring Boot custom class loader
-│   ├── Launcher.class
-│   └── ...
-├── BOOT-INF/
-│   ├── classes/            # Your compiled classes
-│   │   └── com/example/myapp/
-│   ├── lib/                # All dependency JARs
-│   │   ├── spring-core-6.2.0.jar
-│   │   ├── spring-webmvc-6.2.0.jar
-│   │   └── ...
-│   └── classpath.idx       # Classpath index for fast startup
-└── ...
+â”œâ”€â”€ META-INF/
+â”‚   â””â”€â”€ MANIFEST.MF         # Main-Class: org.springframework.boot.loader.JarLauncher
+â”œâ”€â”€ org/springframework/boot/loader/
+â”‚   â”œâ”€â”€ JarLauncher.class   # Spring Boot custom class loader
+â”‚   â”œâ”€â”€ Launcher.class
+â”‚   â””â”€â”€ ...
+â”œâ”€â”€ BOOT-INF/
+â”‚   â”œâ”€â”€ classes/            # Your compiled classes
+â”‚   â”‚   â””â”€â”€ com/example/myapp/
+â”‚   â”œâ”€â”€ lib/                # All dependency JARs
+â”‚   â”‚   â”œâ”€â”€ spring-core-6.2.0.jar
+â”‚   â”‚   â”œâ”€â”€ spring-webmvc-6.2.0.jar
+â”‚   â”‚   â””â”€â”€ ...
+â”‚   â””â”€â”€ classpath.idx       # Classpath index for fast startup
+â””â”€â”€ ...
 ```
 
 ### 7.7 Gradle Equivalent
@@ -1861,29 +1861,29 @@ public class MyAppApplication {
 
 Tells Spring Boot to automatically configure beans based on:
 
-1. **Classpath dependencies** → If `spring-boot-starter-web` is on the classpath, configure Spring MVC and embedded Tomcat
-2. **Existing beans** → If the user has already defined a `DataSource`, skip the auto-configured one
-3. **Properties** → Read `application.properties`/`application.yml` and adjust behavior
+1. **Classpath dependencies** â†’ If `spring-boot-starter-web` is on the classpath, configure Spring MVC and embedded Tomcat
+2. **Existing beans** â†’ If the user has already defined a `DataSource`, skip the auto-configured one
+3. **Properties** â†’ Read `application.properties`/`application.yml` and adjust behavior
 
 The auto-configuration process:
 
 ```text
 @EnableAutoConfiguration
-        │
-        ▼
+        â”‚
+        â–¼
 META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports
-        │
-        ├── org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration
-        ├── org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration
-        ├── org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
-        ├── org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
-        ├── org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
-        └── (130+ auto-configuration class names listed)
-        │
-        ▼
+        â”‚
+        â”œâ”€â”€ org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration
+        â”œâ”€â”€ org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration
+        â”œâ”€â”€ org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+        â”œâ”€â”€ org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
+        â”œâ”€â”€ org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+        â””â”€â”€ (130+ auto-configuration class names listed)
+        â”‚
+        â–¼
 Each class is evaluated against its @Conditional annotations
-        │
-        ▼
+        â”‚
+        â–¼
 Applicable auto-configurations are applied in order
 ```
 
@@ -2161,7 +2161,7 @@ server.tomcat.accesslog.enabled=true
 server.tomcat.accesslog.directory=logs
 server.tomcat.accesslog.pattern=%h %l %u %t "%r" %s %b %D
 
-# Remote IP valve → trust the proxy
+# Remote IP valve â†’ trust the proxy
 server.tomcat.remoteip.remote-ip-header=x-forwarded-for
 server.tomcat.remoteip.protocol-header=x-forwarded-proto
 
@@ -2283,7 +2283,7 @@ server.ssl.key-store-type=PKCS12
 server.ssl.key-alias=myapp
 ```
 
-For HTTP/2 without SSL (h2c → cleartext HTTP/2):
+For HTTP/2 without SSL (h2c â†’ cleartext HTTP/2):
 
 ```properties
 # Tomcat: h2c requires special connector
@@ -2330,7 +2330,7 @@ For most applications, the default **Tomcat** is perfectly adequate. Choose Jett
 ### 10.1 What Is the Spring Boot CLI?
 
 
-The **Spring Boot CLI** (Command-Line Interface) is a development tool that lets you write Spring applications in **Groovy** scripts and run them with `spring run` → no compilation, no build file, no project structure.
+The **Spring Boot CLI** (Command-Line Interface) is a development tool that lets you write Spring applications in **Groovy** scripts and run them with `spring run` â†’ no compilation, no build file, no project structure.
 
 ```groovy
 // hello.groovy
@@ -2345,7 +2345,7 @@ class HelloController {
 ```
 
 ```bash
-# Run it directly → no Maven, no Gradle, no compilation step
+# Run it directly â†’ no Maven, no Gradle, no compilation step
 spring run hello.groovy
 
 # Output:
@@ -2372,13 +2372,13 @@ choco install springboot
 # https://spring.io/projects/spring-boot#learn
 ```
 
-### 10.3 Groovy Magic → The Grab Annotations
+### 10.3 Groovy Magic â†’ The Grab Annotations
 
 
 The CLI uses Groovy's `@Grab` annotation to resolve dependencies automatically:
 
 ```groovy
-// No pom.xml needed → Grabs replace Maven coordinates
+// No pom.xml needed â†’ Grabs replace Maven coordinates
 @Grab("org.springframework.boot:spring-boot-starter-web")
 @Grab("org.springframework.boot:spring-boot-starter-data-jpa")
 @Grab("org.postgresql:postgresql:42.7.4")
@@ -2388,7 +2388,7 @@ The CLI uses Groovy's `@Grab` annotation to resolve dependencies automatically:
 Spring Boot CLI's **Groovy auto-import** means you don't even need import statements:
 
 ```groovy
-// No imports needed → Spring Boot CLI auto-imports:
+// No imports needed â†’ Spring Boot CLI auto-imports:
 //   org.springframework.*
 //   org.springframework.boot.*
 //   org.springframework.web.bind.annotation.*
@@ -2512,11 +2512,11 @@ spring war app.war *.groovy
 
 The Spring Boot CLI is ideal for:
 
-1. **Prototyping** → Quickly test ideas without project setup
-2. **Demonstrations** → Live coding demos that start fast
-3. **Learning** → Minimal friction for new developers
-4. **Small internal tools** → API wrappers, webhooks, etc.
-5. **Scripting** → Spring-powered automation scripts
+1. **Prototyping** â†’ Quickly test ideas without project setup
+2. **Demonstrations** â†’ Live coding demos that start fast
+3. **Learning** â†’ Minimal friction for new developers
+4. **Small internal tools** â†’ API wrappers, webhooks, etc.
+5. **Scripting** â†’ Spring-powered automation scripts
 
 For production applications, use a proper Maven/Gradle project with a build file and standard directory structure.
 
@@ -2556,23 +2556,23 @@ tree /F
 
 # Output:
 # hello-world/
-# ├── HELP.md
-# ├── mvnw
-# ├── mvnw.cmd
-# ├── pom.xml
-# └── src/
-#     ├── main/
-#     │   ├── java/
-#     │   │   └── com/example/helloworld/
-#     │   │       └── HelloWorldApplication.java
-#     │   └── resources/
-#     │       ├── application.properties
-#     │       ├── static/
-#     │       └── templates/
-#     └── test/
-#         └── java/
-#             └── com/example/helloworld/
-#                 └── HelloWorldApplicationTests.java
+# â”œâ”€â”€ HELP.md
+# â”œâ”€â”€ mvnw
+# â”œâ”€â”€ mvnw.cmd
+# â”œâ”€â”€ pom.xml
+# â””â”€â”€ src/
+#     â”œâ”€â”€ main/
+#     â”‚   â”œâ”€â”€ java/
+#     â”‚   â”‚   â””â”€â”€ com/example/helloworld/
+#     â”‚   â”‚       â””â”€â”€ HelloWorldApplication.java
+#     â”‚   â””â”€â”€ resources/
+#     â”‚       â”œâ”€â”€ application.properties
+#     â”‚       â”œâ”€â”€ static/
+#     â”‚       â””â”€â”€ templates/
+#     â””â”€â”€ test/
+#         â””â”€â”€ java/
+#             â””â”€â”€ com/example/helloworld/
+#                 â””â”€â”€ HelloWorldApplicationTests.java
 ```
 
 **pom.xml:**
@@ -2815,7 +2815,7 @@ java -jar target/hello-world-0.0.1-SNAPSHOT.jar
 # Option D: Maven Plugin (Windows)
 mvnw.cmd spring-boot:run
 
-# Option E: IDE → Click the green arrow in your IDE
+# Option E: IDE â†’ Click the green arrow in your IDE
 ```
 
 ### 11.7 Step 7: Verify
@@ -2851,28 +2851,28 @@ curl http://localhost:8080/actuator/info
 
 ```text
 hello-world/
-├── pom.xml
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/example/helloworld/
-│   │   │       ├── HelloWorldApplication.java
-│   │   │       └── controller/
-│   │   │           └── GreetingController.java
-│   │   └── resources/
-│   │       ├── application.yml
-│   │       ├── banner.txt
-│   │       ├── static/
-│   │       │   └── index.html
-│   │       └── templates/
-│   └── test/
-│       └── java/
-│           └── com/example/helloworld/
-│               └── HelloWorldApplicationTests.java
-├── .gitignore
-├── HELP.md
-├── mvnw
-└── mvnw.cmd
+â”œâ”€â”€ pom.xml
+â”œâ”€â”€ src/
+â”‚   â”œâ”€â”€ main/
+â”‚   â”‚   â”œâ”€â”€ java/
+â”‚   â”‚   â”‚   â””â”€â”€ com/example/helloworld/
+â”‚   â”‚   â”‚       â”œâ”€â”€ HelloWorldApplication.java
+â”‚   â”‚   â”‚       â””â”€â”€ controller/
+â”‚   â”‚   â”‚           â””â”€â”€ GreetingController.java
+â”‚   â”‚   â””â”€â”€ resources/
+â”‚   â”‚       â”œâ”€â”€ application.yml
+â”‚   â”‚       â”œâ”€â”€ banner.txt
+â”‚   â”‚       â”œâ”€â”€ static/
+â”‚   â”‚       â”‚   â””â”€â”€ index.html
+â”‚   â”‚       â””â”€â”€ templates/
+â”‚   â””â”€â”€ test/
+â”‚       â””â”€â”€ java/
+â”‚           â””â”€â”€ com/example/helloworld/
+â”‚               â””â”€â”€ HelloWorldApplicationTests.java
+â”œâ”€â”€ .gitignore
+â”œâ”€â”€ HELP.md
+â”œâ”€â”€ mvnw
+â””â”€â”€ mvnw.cmd
 ```
 
 ### 11.9 Adding a Static Welcome Page
@@ -2947,10 +2947,10 @@ hello-world/
 
         <div class="endpoints">
             <h3>Available REST Endpoints</h3>
-            <code>GET / → Welcome message</code>
-            <code>GET /hello → Greeting with query param</code>
-            <code>GET /hello/{name} → Greeting with path variable</code>
-            <code>GET /actuator/health → Health check</code>
+            <code>GET / â†’ Welcome message</code>
+            <code>GET /hello â†’ Greeting with query param</code>
+            <code>GET /hello/{name} â†’ Greeting with path variable</code>
+            <code>GET /actuator/health â†’ Health check</code>
         </div>
     </div>
 </body>

@@ -1,4 +1,4 @@
-# Gradle Deep Dive
+﻿# Gradle Deep Dive
 
 > **Previous:** [Maven Deep Dive](./07-maven.md) | **Next:** [Spring Framework Introduction](./09-spring-intro.md)
 
@@ -15,16 +15,16 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/08-gradle/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/08-gradle/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/08-gradle/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/08-gradle/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/08-gradle/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/08-gradle/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/08-gradle/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/08-gradle/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/08-gradle/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/08-gradle/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/08-gradle/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/08-gradle/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -69,7 +69,7 @@ flowchart LR
     H --> I[Spring Boot Integration]
 ```
 
-> **Pro Tip:** Always use `register` (lazy task creation) instead of `create` → it avoids configuring tasks that may never execute, which significantly improves build time in large projects.
+> **Pro Tip:** Always use `register` (lazy task creation) instead of `create` â†’ it avoids configuring tasks that may never execute, which significantly improves build time in large projects.
 
 ---
 
@@ -81,7 +81,7 @@ A Gradle build is defined by three key files in the project root:
 
 | File | Purpose |
 |------|---------|
-| `build.gradle` or `build.gradle.kts` | Build logic Ã¢â‚¬â€ tasks, plugins, dependencies |
+| `build.gradle` or `build.gradle.kts` | Build logic ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â tasks, plugins, dependencies |
 | `settings.gradle` or `settings.gradle.kts` | Project name, included subprojects, plugin management |
 | `gradle.properties` | JVM args, system properties, project properties |
 
@@ -91,7 +91,7 @@ A Gradle build is defined by three key files in the project root:
 Gradle supports two DSLs. Groovy DSL (`build.gradle`) was the original and uses Apache Groovy. Kotlin DSL (`build.gradle.kts`) is now the **recommended** choice because it offers type-safe accessors, IDE autocompletion, and better error messages.
 
 ```groovy
-// build.gradle Ã¢â‚¬â€ Groovy DSL
+// build.gradle ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Groovy DSL
 plugins {
     id 'java'
     id 'org.springframework.boot' version '3.4.1'
@@ -118,7 +118,7 @@ dependencies {
 ```
 
 ```kotlin
-// build.gradle.kts Ã¢â‚¬â€ Kotlin DSL (recommended)
+// build.gradle.kts ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Kotlin DSL (recommended)
 plugins {
     java
     id("org.springframework.boot") version "3.4.1"
@@ -148,7 +148,7 @@ dependencies {
 
 - Kotlin DSL uses parentheses `()` for method calls and typed strings
 - Kotlin DSL allows `plugins { java }` (type-safe accessor) without quotes for built-in plugins
-- Kotlin DSL gives full IDE autocompletion Ã¢â‚¬â€ the preferred choice for all new projects
+- Kotlin DSL gives full IDE autocompletion ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â the preferred choice for all new projects
 - Groovy DSL uses `'single quotes'` or `"double quotes"` interchangeably
 
 ### 1.2 settings.gradle.kts
@@ -157,19 +157,19 @@ dependencies {
 The settings file defines the project name and which subprojects are included. It is evaluated **before** any `build.gradle.kts` file, during the initialization phase.
 
 ```kotlin
-// settings.gradle.kts Ã¢â‚¬â€ single project
+// settings.gradle.kts ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â single project
 rootProject.name = "hello-gradle"
 ```
 
 ```kotlin
-// settings.gradle.kts Ã¢â‚¬â€ multi-project
+// settings.gradle.kts ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â multi-project
 rootProject.name = "my-application"
 
 include("core", "web", "api", "integration-test")
 ```
 
 ```kotlin
-// settings.gradle.kts Ã¢â‚¬â€ with plugin management and repositories
+// settings.gradle.kts ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â with plugin management and repositories
 pluginManagement {
     repositories {
         mavenCentral()
@@ -211,7 +211,7 @@ springBootVersion=3.4.1
 ```
 
 ```properties
-# gradle.properties Ã¢â‚¬â€ proxy settings for corporate environments
+# gradle.properties ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â proxy settings for corporate environments
 systemProp.http.proxyHost=proxy.company.com
 systemProp.http.proxyPort=8080
 systemProp.https.proxyHost=proxy.company.com
@@ -222,7 +222,7 @@ systemProp.http.nonProxyHosts=*.local|localhost|10.*
 ### 1.4 Gradle Wrapper
 
 
-The wrapper (`gradlew` / `gradlew.bat`) is a script that downloads and runs a specific Gradle version. **Every project should use the wrapper** Ã¢â‚¬â€ it eliminates version mismatches across CI and developer machines.
+The wrapper (`gradlew` / `gradlew.bat`) is a script that downloads and runs a specific Gradle version. **Every project should use the wrapper** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â it eliminates version mismatches across CI and developer machines.
 
 ```bash
 # Generate the wrapper in your project
@@ -266,7 +266,7 @@ The wrapper JAR can be verified against a known checksum. To upgrade:
 ```
 
 ```kotlin
-// build.gradle.kts Ã¢â‚¬â€ wrapper task customization
+// build.gradle.kts ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â wrapper task customization
 tasks.named<Wrapper>("wrapper") {
     distributionType = Wrapper.DistributionType.ALL
     gradleVersion = "8.12"
@@ -277,19 +277,19 @@ tasks.named<Wrapper>("wrapper") {
 
 ## 2. Tasks
 
-A Gradle build is a **directed acyclic graph (DAG) of tasks**. Every action Ã¢â‚¬â€ compiling, testing, packaging, deploying Ã¢â‚¬â€ is a task. Tasks can be defined ad hoc in the build script or as reusable types in `buildSrc` or published plugins.
+A Gradle build is a **directed acyclic graph (DAG) of tasks**. Every action ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â compiling, testing, packaging, deploying ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â is a task. Tasks can be defined ad hoc in the build script or as reusable types in `buildSrc` or published plugins.
 
 ### 2.1 Task Lifecycle Phase
 
 
 Gradle runs in three phases:
 
-1. **Initialization** Ã¢â‚¬â€ determines which projects participate in the build (reads `settings.gradle.kts`)
-2. **Configuration** Ã¢â‚¬â€ evaluates build scripts, creates and configures task objects (but does NOT execute them)
-3. **Execution** Ã¢â‚¬â€ runs the subset of tasks selected by the requested task names and their dependencies
+1. **Initialization** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â determines which projects participate in the build (reads `settings.gradle.kts`)
+2. **Configuration** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â evaluates build scripts, creates and configures task objects (but does NOT execute them)
+3. **Execution** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â runs the subset of tasks selected by the requested task names and their dependencies
 
 ```kotlin
-// build.gradle.kts Ã¢â‚¬â€ demonstrating all three phases
+// build.gradle.kts ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â demonstrating all three phases
 println("Configuration phase: this runs for EVERY build, even ./gradlew help")
 
 tasks.register("hello") {
@@ -362,7 +362,7 @@ tasks.register('prepare') {
 
 `doFirst` actions run **before** any existing actions; `doLast` actions run **after**. Multiple `doLast` closures stack in order. This is useful for adding cross-cutting behavior without modifying the original task.
 
-### 2.3 dependsOn Ã¢â‚¬â€ Task Dependencies
+### 2.3 dependsOn ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Task Dependencies
 
 
 Tasks declare dependencies so Gradle can resolve the correct execution order from the DAG.
@@ -420,7 +420,7 @@ tasks.named("compile") {
 You can register callbacks that execute after the task graph is fully resolved but before execution begins. This is useful for conditional logic.
 
 ```kotlin
-// build.gradle.kts Ã¢â‚¬â€ gradle.taskGraph.beforeTask and afterTask
+// build.gradle.kts ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â gradle.taskGraph.beforeTask and afterTask
 gradle.taskGraph.whenReady {
     println("Task graph ready. Tasks to execute:")
     allTasks.forEach { println("  - ${it.path}") }
@@ -565,7 +565,7 @@ tasks.register('runBatchJob', JavaExec) {
 ### 2.6 Custom Task Type
 
 
-For reusable task logic, create a class that extends `DefaultTask` and annotate methods with `@TaskAction`. Declare inputs and outputs with `@Input`, `@InputFile`, `@InputDirectory`, `@OutputFile`, `@OutputDirectory` Ã¢â‚¬â€ these enable **incremental builds** and **build cache** support.
+For reusable task logic, create a class that extends `DefaultTask` and annotate methods with `@TaskAction`. Declare inputs and outputs with `@Input`, `@InputFile`, `@InputDirectory`, `@OutputFile`, `@OutputDirectory` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â these enable **incremental builds** and **build cache** support.
 
 ```kotlin
 // buildSrc/src/main/kotlin/com/example/gradle/CodeGeneratorTask.kt
@@ -619,7 +619,7 @@ abstract class CodeGeneratorTask : DefaultTask() {
 ```
 
 ```kotlin
-// build.gradle.kts Ã¢â‚¬â€ consuming the custom task
+// build.gradle.kts ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â consuming the custom task
 tasks.register<com.example.gradle.CodeGeneratorTask>("generateHello") {
     className.set("HelloWorld")
     packageName.set("com.example.gen")
@@ -629,7 +629,7 @@ tasks.register<com.example.gradle.CodeGeneratorTask>("generateHello") {
 ```
 
 ```groovy
-// build.gradle Ã¢â‚¬â€ same task in Groovy
+// build.gradle ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â same task in Groovy
 tasks.register('generateHello', com.example.gradle.CodeGeneratorTask) {
     className = 'HelloWorld'
     packageName = 'com.example.gen'
@@ -644,8 +644,8 @@ tasks.register('generateHello', com.example.gradle.CodeGeneratorTask) {
 |------------|-----------|---------|
 | `@TaskAction` | Method | The method that runs when the task executes |
 | `@Input` | Property | A string, number, or serializable input |
-| `@InputFile` | `RegularFileProperty` | An input file Ã¢â‚¬â€ tracked by path and content |
-| `@InputDirectory` | `DirectoryProperty` | An input directory Ã¢â‚¬â€ tracked by contents |
+| `@InputFile` | `RegularFileProperty` | An input file ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â tracked by path and content |
+| `@InputDirectory` | `DirectoryProperty` | An input directory ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â tracked by contents |
 | `@InputFiles` | `FileCollection` | A collection of input files |
 | `@OutputFile` | `RegularFileProperty` | A single output file |
 | `@OutputDirectory` | `DirectoryProperty` | An output directory |
@@ -794,10 +794,10 @@ plugins {
 }
 
 dependencies {
-    // api Ã¢â‚¬â€ exposed to consumers' compile classpath
+    // api ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â exposed to consumers' compile classpath
     api("com.google.guava:guava:33.4.0-jre")
 
-    // implementation Ã¢â‚¬â€ hidden from consumers
+    // implementation ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â hidden from consumers
     implementation("org.apache.commons:commons-lang3:3.17.0")
 }
 ```
@@ -1072,7 +1072,7 @@ tasks.withType<com.github.spotbugs.snom.SpotBugsTask>().configureEach {
 Use Gradle's `with` API or `onlyIf` to apply plugins under specific conditions:
 
 ```kotlin
-// build.gradle.kts Ã¢â‚¬â€ conditional plugin application
+// build.gradle.kts ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â conditional plugin application
 if (project.hasProperty("enableProfiling")) {
     apply(plugin = "jfr-profiling")
     // or in the plugins block:
@@ -1090,21 +1090,21 @@ tasks.named("test") {
 
 ## 4. Dependency Configuration
 
-Gradle's dependency management is richer than Maven's. The key concept is **configurations** Ã¢â‚¬â€ named sets of dependencies with specific visibility and scope.
+Gradle's dependency management is richer than Maven's. The key concept is **configurations** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â named sets of dependencies with specific visibility and scope.
 
 ### 4.1 Configuration Hierarchy
 
 
 ```
-implementation  Ã¢â€ â€™  compileClasspath, runtimeClasspath
-    Ã¢â€ â€˜
-api             Ã¢â€ â€™  compileClasspath, runtimeClasspath (exposed to consumers)
-compileOnly     Ã¢â€ â€™  compileClasspath only
-runtimeOnly     Ã¢â€ â€™  runtimeClasspath only
-annotationProcessor Ã¢â€ â€™ annotation processor classpath
-testImplementation  Ã¢â€ â€™  testCompileClasspath, testRuntimeClasspath
-testCompileOnly     Ã¢â€ â€™  testCompileClasspath only
-testRuntimeOnly     Ã¢â€ â€™  testRuntimeClasspath only
+implementation  ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢  compileClasspath, runtimeClasspath
+    ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬Ëœ
+api             ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢  compileClasspath, runtimeClasspath (exposed to consumers)
+compileOnly     ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢  compileClasspath only
+runtimeOnly     ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢  runtimeClasspath only
+annotationProcessor ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ annotation processor classpath
+testImplementation  ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢  testCompileClasspath, testRuntimeClasspath
+testCompileOnly     ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢  testCompileClasspath only
+testRuntimeOnly     ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢  testRuntimeClasspath only
 ```
 
 ### 4.2 Configuration Matrix
@@ -1123,7 +1123,7 @@ testRuntimeOnly     Ã¢â€ â€™  testRuntimeClasspath only
 | `testRuntimeOnly` | No | Test | Yes | No | Test runtime engines |
 
 ```kotlin
-// build.gradle.kts Ã¢â‚¬â€ complete dependency example for a Spring Boot library
+// build.gradle.kts ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â complete dependency example for a Spring Boot library
 plugins {
     `java-library`
     id("org.springframework.boot") version "3.4.1"
@@ -1131,10 +1131,10 @@ plugins {
 }
 
 dependencies {
-    // API Ã¢â‚¬â€ exposed to consumers
+    // API ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â exposed to consumers
     api("org.springframework.boot:spring-boot-starter-web")
 
-    // Implementation Ã¢â‚¬â€ hidden from consumers
+    // Implementation ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â hidden from consumers
     implementation("org.springframework.boot:spring-boot-starter-validation")
     implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310")
 
@@ -1193,7 +1193,7 @@ dependencies {
 }
 ```
 
-**enforcedPlatform** applies a platform **with override semantics** Ã¢â‚¬â€ any version specified in the platform takes precedence:
+**enforcedPlatform** applies a platform **with override semantics** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â any version specified in the platform takes precedence:
 
 ```kotlin
 dependencies {
@@ -1245,7 +1245,7 @@ spotbugs = { id = "com.github.spotbugs", version = "6.1.0" }
 ```
 
 ```kotlin
-// build.gradle.kts Ã¢â‚¬â€ consuming the version catalog
+// build.gradle.kts ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â consuming the version catalog
 plugins {
     alias(libs.plugins.spring.boot)
     alias(libs.plugins.spring.dependency.management)
@@ -1263,7 +1263,7 @@ dependencies {
 ```
 
 ```groovy
-// build.gradle Ã¢â‚¬â€ Groovy alternative
+// build.gradle ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Groovy alternative
 plugins {
     alias libs.plugins.spring.boot
     alias libs.plugins.spring.dependency.management
@@ -1288,7 +1288,7 @@ The type-safe accessors are generated automatically. The convention maps dots to
 Lock files capture exact transitive dependency versions for **reproducible builds**.
 
 ```kotlin
-// build.gradle.kts Ã¢â‚¬â€ enable dependency locking
+// build.gradle.kts ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â enable dependency locking
 dependencyLocking {
     lockAllConfigurations()
 }
@@ -1327,9 +1327,9 @@ In a multi-project build, use `dependencyResolutionManagement` in `settings.grad
 ```kotlin
 // settings.gradle.kts
 dependencyResolutionManagement {
-    // FAIL_ON_PROJECT_REPOS Ã¢â‚¬â€ requires repositories defined only here
-    // PREFER_PROJECT Ã¢â‚¬â€ allows project-level repo declarations
-    // PREFER_SETTINGS Ã¢â‚¬â€ prefers settings-level repos
+    // FAIL_ON_PROJECT_REPOS ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â requires repositories defined only here
+    // PREFER_PROJECT ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â allows project-level repo declarations
+    // PREFER_SETTINGS ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â prefers settings-level repos
     repositoriesMode = RepositoriesMode.PREFER_SETTINGS
     repositories {
         mavenCentral()
@@ -1349,26 +1349,26 @@ Real-world applications are organized as multi-project builds. Gradle handles th
 
 ```
 my-app/
-Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ settings.gradle.kts
-Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ build.gradle.kts          # Root project (shared config)
-Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ gradle.properties
-Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ gradle/
-Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ libs.versions.toml
-Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ domain/
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ build.gradle.kts
-Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ src/main/java/...
-Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ application/
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ build.gradle.kts
-Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ src/main/java/...
-Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ infrastructure/
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ build.gradle.kts
-Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ src/main/java/...
-Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ presentation/
-    Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ build.gradle.kts
-    Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ src/main/java/...
+ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ settings.gradle.kts
+ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ build.gradle.kts          # Root project (shared config)
+ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ gradle.properties
+ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ gradle/
+ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡   ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬ÂÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ libs.versions.toml
+ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ domain/
+ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡   ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ build.gradle.kts
+ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡   ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬ÂÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ src/main/java/...
+ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ application/
+ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡   ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ build.gradle.kts
+ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡   ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬ÂÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ src/main/java/...
+ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ infrastructure/
+ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡   ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ build.gradle.kts
+ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡   ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬ÂÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ src/main/java/...
+ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬ÂÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ presentation/
+    ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ build.gradle.kts
+    ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬ÂÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ src/main/java/...
 ```
 
-### 5.2 settings.gradle.kts Ã¢â‚¬â€ includes
+### 5.2 settings.gradle.kts ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â includes
 
 
 ```kotlin
@@ -1386,7 +1386,7 @@ project(":domain").projectDir = file("modules/domain")
 The root `build.gradle.kts` shares common configuration.
 
 ```kotlin
-// build.gradle.kts Ã¢â‚¬â€ root project (common for all subprojects)
+// build.gradle.kts ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â root project (common for all subprojects)
 plugins {
     java
     jacoco
@@ -1446,7 +1446,7 @@ plugins {
 }
 
 dependencies {
-    // No internal dependencies Ã¢â‚¬â€ pure domain logic
+    // No internal dependencies ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â pure domain logic
     api("jakarta.validation:jakarta.validation-api")
 }
 
@@ -1488,10 +1488,10 @@ dependencies {
 ### 5.5 Composite Builds
 
 
-Composite builds let you include an **external project** as if it were a subproject Ã¢â‚¬â€ without publishing it first.
+Composite builds let you include an **external project** as if it were a subproject ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â without publishing it first.
 
 ```kotlin
-// settings.gradle.kts Ã¢â‚¬â€ composite build
+// settings.gradle.kts ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â composite build
 rootProject.name = "my-app"
 
 include(":domain", ":application", ":infrastructure", ":presentation")
@@ -1527,7 +1527,7 @@ By default, the local cache is at `~/.gradle/caches/build-cache-1`. It is a cont
 
 
 ```kotlin
-// settings.gradle.kts Ã¢â‚¬â€ remote cache configuration
+// settings.gradle.kts ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â remote cache configuration
 buildCache {
     local {
         isEnabled = true
@@ -1580,7 +1580,7 @@ abstract class DocumentRenderer : DefaultTask() {
 ```
 
 ```kotlin
-// build.gradle.kts Ã¢â‚¬â€ consuming the cacheable task
+// build.gradle.kts ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â consuming the cacheable task
 tasks.register<DocumentRenderer>("renderDocs") {
     title.set("Gradle Deep Dive")
     template.set(layout.projectDirectory.file("src/templates/doc.html"))
@@ -1604,7 +1604,7 @@ Cache keys include:
 # To see cache hit/miss details, use --info or --debug
 ./gradlew compileJava --build-cache --info | grep "Build cache"
 
-# For cache debugging Ã¢â‚¬â€ disable cache temporarily
+# For cache debugging ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â disable cache temporarily
 ./gradlew clean build --no-build-cache
 ```
 
@@ -1636,7 +1636,7 @@ sequenceDiagram
 
 
 ```properties
-# gradle.properties Ã¢â‚¬â€ daemon JVM tuning
+# gradle.properties ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â daemon JVM tuning
 
 # Heap size for the daemon (not your application!)
 # 2 GB is a good starting point for most projects
@@ -1672,17 +1672,17 @@ Gradle is fast when configured correctly. The following techniques combine for d
 ### 8.1 Configuration Avoidance
 
 
-The single most important optimization: use `register` instead of `create`. `register` creates a **lazy provider** Ã¢â‚¬â€ the task is instantiated only if it is actually executed.
+The single most important optimization: use `register` instead of `create`. `register` creates a **lazy provider** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â the task is instantiated only if it is actually executed.
 
 ```kotlin
-// BAD Ã¢â‚¬â€ task is always configured (even for ./gradlew help)
+// BAD ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â task is always configured (even for ./gradlew help)
 tasks.create("heavyTask") {
     doLast {
         // expensive work
     }
 }
 
-// GOOD Ã¢â‚¬â€ task is configured only when executed
+// GOOD ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â task is configured only when executed
 tasks.register("heavyTask") {
     doLast {
         // expensive work
@@ -1734,7 +1734,7 @@ org.gradle.workers.max=4
 ```
 
 ```kotlin
-// build.gradle.kts Ã¢â‚¬â€ fine-tune parallel execution
+// build.gradle.kts ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â fine-tune parallel execution
 tasks.withType<JavaCompile>().configureEach {
     options.isFork = true
     options.forkOptions.memoryMaximumSize = "512m"
@@ -1804,10 +1804,10 @@ org.gradle.configuration-cache=true
 ```
 
 ```bash
-# First build Ã¢â‚¬â€ configuration phase runs (slower)
+# First build ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â configuration phase runs (slower)
 ./gradlew build
 
-# Second build Ã¢â‚¬â€ configuration phase is loaded from cache (much faster)
+# Second build ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â configuration phase is loaded from cache (much faster)
 ./gradlew build
 
 # If configuration cache problems arise, disable temporarily:
@@ -1848,7 +1848,7 @@ Gradle knows to skip this task when `sourceFiles` contents haven't changed, beca
 
 ## 9. Publishing
 
-Beyond the basics in Ã‚Â§3.2, here are advanced publishing patterns.
+Beyond the basics in Ãƒâ€šÃ‚Â§3.2, here are advanced publishing patterns.
 
 ### 9.1 Publishing with Artifacts
 
@@ -1986,7 +1986,7 @@ dependencies {
 The `bootJar` task creates an executable fat JAR. It is automatically wired to replace the standard `jar` task.
 
 ```kotlin
-// build.gradle.kts Ã¢â‚¬â€ bootJar customization
+// build.gradle.kts ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â bootJar customization
 tasks.named<org.springframework.boot.gradle.tasks.bundling.BootJar>("bootJar") {
     archiveBaseName.set("my-app")
     archiveVersion.set(project.version.toString())
@@ -2029,7 +2029,7 @@ java -jar build/libs/my-app-1.0.0.jar
 The `bootRun` task runs the application from source without building a JAR.
 
 ```kotlin
-// build.gradle.kts Ã¢â‚¬â€ bootRun customization
+// build.gradle.kts ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â bootRun customization
 tasks.named<org.springframework.boot.gradle.tasks.run.BootRun>("bootRun") {
     // Command-line arguments
     args("--spring.profiles.active=dev")
@@ -2063,7 +2063,7 @@ SPRING_PROFILES_ACTIVE=production ./gradlew bootRun
 Spring Boot 3.x integrates Cloud Native Buildpacks to produce OCI-compliant Docker images **without a Dockerfile**.
 
 ```kotlin
-// build.gradle.kts Ã¢â‚¬â€ bootBuildImage customization
+// build.gradle.kts ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â bootBuildImage customization
 tasks.named<org.springframework.boot.gradle.tasks.bundling.BootBuildImage>("bootBuildImage") {
     imageName = "registry.example.com/my-app:${project.version}"
     builder = "paketobuildpacks/builder-jammy-tiny:latest"
@@ -2105,7 +2105,7 @@ docker push registry.example.com/my-app:1.0.0
 The `io.spring.dependency-management` plugin applies Maven-style BOM import behavior to Gradle.
 
 ```kotlin
-// build.gradle.kts Ã¢â‚¬â€ importing additional BOMs
+// build.gradle.kts ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â importing additional BOMs
 dependencyManagement {
     imports {
         mavenBom("org.springframework.cloud:spring-cloud-dependencies:2024.0.0")
@@ -2136,12 +2136,12 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-validation")
     implementation("org.springframework.boot:spring-boot-starter-security")
 
-    // Optional starters Ã¢â‚¬â€ conditionally active
+    // Optional starters ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â conditionally active
     implementation("org.springframework.boot:spring-boot-starter-mail")
     implementation("org.springframework.boot:spring-boot-starter-cache")
     implementation("org.springframework.boot:spring-boot-starter-quartz")
 
-    // Devtools Ã¢â‚¬â€ excluded from production JAR
+    // Devtools ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â excluded from production JAR
     developmentOnly("org.springframework.boot:spring-boot-devtools")
 
     // Production monitoring
@@ -2265,7 +2265,7 @@ testcontainers = "1.20.4"
 kotlin = "2.1.0"
 
 [libraries]
-# Simple library Ã¢â‚¬â€ no version reference, uses default
+# Simple library ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â no version reference, uses default
 spring-boot-starter-web = { module = "org.springframework.boot:spring-boot-starter-web" }
 
 # Library with version reference
@@ -2273,7 +2273,7 @@ lombok = { module = "org.projectlombok:lombok", version.ref = "lombok" }
 mapstruct-core = { module = "org.mapstruct:mapstruct", version.ref = "mapstruct" }
 mapstruct-processor = { module = "org.mapstruct:mapstruct-processor", version.ref = "mapstruct" }
 
-# Library with inline version (not recommended Ã¢â‚¬â€ use version.ref)
+# Library with inline version (not recommended ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â use version.ref)
 jackson-core = { module = "com.fasterxml.jackson.core:jackson-core", version = "2.18.2" }
 
 # Library with version constraint
@@ -2302,8 +2302,8 @@ spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
 spring-dependency-management = { id = "io.spring.dependency-management", version.ref = "spring-boot" }
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 spotbugs = { id = "com.github.spotbugs", version = "6.1.0" }
-checkstyle = { id = "checkstyle" } # no version Ã¢â‚¬â€ Gradle built-in
-jacoco = { id = "jacoco" }        # no version Ã¢â‚¬â€ Gradle built-in
+checkstyle = { id = "checkstyle" } # no version ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Gradle built-in
+jacoco = { id = "jacoco" }        # no version ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Gradle built-in
 ```
 
 ### 11.2 Type-Safe Accessor Generation
@@ -2325,7 +2325,7 @@ Dashes in TOML keys become dots in accessors. The accessors are generated at bui
 
 
 ```kotlin
-// build.gradle.kts Ã¢â‚¬â€ complete version catalog example
+// build.gradle.kts ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â complete version catalog example
 plugins {
     alias(libs.plugins.spring.boot)
     alias(libs.plugins.spring.dependency.management)
@@ -2384,7 +2384,7 @@ dependencies {
 For advanced setups, you can declare multiple catalogs:
 
 ```kotlin
-// settings.gradle.kts Ã¢â‚¬â€ custom catalog from a file
+// settings.gradle.kts ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â custom catalog from a file
 dependencyResolutionManagement {
     versionCatalogs {
         create("testLibs") {
@@ -2439,14 +2439,14 @@ dependencyResolutionManagement {
 </details>
 
 2. What does `register` do differently from `create` in Gradle?
-   - A) register creates tasks lazily — they are configured only when needed
+   - A) register creates tasks lazily â€” they are configured only when needed
    - B) register creates tasks eagerly
    - C) register is faster for execution
    - D) There is no difference
 
 <details>
 <summary>Answer&lt;/summary&gt;
-**A) register creates tasks lazily — they are configured only when needed.** This is configuration avoidance, which reduces build time by not configuring tasks that may never execute.
+**A) register creates tasks lazily â€” they are configured only when needed.** This is configuration avoidance, which reduces build time by not configuring tasks that may never execute.
 </details>
 
 3. What is the purpose of the Gradle Build Cache?
@@ -2570,9 +2570,9 @@ This chapter covered Gradle comprehensively across three dimensions: **script co
    - Enable configuration caching
 
 7. **Implement a Spring Boot multi-project build.** Create a three-module Gradle project structure:
-   - `api` Ã¢â‚¬â€ Spring Boot web application with `@RestController`
-   - `service` Ã¢â‚¬â€ Business logic, depends on `api` ??? (inverted Ã¢â‚¬â€ `api` depends on `service`)
-   - `persistence` Ã¢â‚¬â€ JPA entities and repositories, depends on `service` ??? (inverted Ã¢â‚¬â€ `service` depends on `persistence`)
+   - `api` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Spring Boot web application with `@RestController`
+   - `service` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Business logic, depends on `api` ??? (inverted ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â `api` depends on `service`)
+   - `persistence` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â JPA entities and repositories, depends on `service` ??? (inverted ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â `service` depends on `persistence`)
    
    Write the `settings.gradle.kts`, root `build.gradle.kts` (shared config), and each module's build script. Use version catalogs. Ensure the final executable bootJar is produced from the `api` module.
 
@@ -2619,7 +2619,7 @@ greeting {
 6. **Advanced publication pipeline.** Build a complete publication pipeline for an open-source library:
    - Publish SNAPSHOT versions to a private Nexus on every push to `develop`
    - Publish releases to Maven Central on tags matching `v*`
-   - Automatically generate `gradle/libs.versions.toml` from the published POM ??? (or the reverse Ã¢â‚¬â€ generate POM from the catalog)
+   - Automatically generate `gradle/libs.versions.toml` from the published POM ??? (or the reverse ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â generate POM from the catalog)
    - Publish a Gradle plugin that wraps the library (using `java-gradle-plugin` plugin)
    - Sign all publications with GPG using in-memory keys from environment variables
    - Include a `buildScan` publication that sends build metrics to a Gradle Enterprise instance

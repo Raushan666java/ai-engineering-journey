@@ -1,4 +1,4 @@
-# Chapter 4: Database Foundations: Replication and Indexing
+﻿# Chapter 4: Database Foundations: Replication and Indexing
 > **Previous:** [03 Caching](./03-caching.md) | **Next:** [05 Partitioning Sharding](./05-partitioning-sharding.md)
 
 ---
@@ -16,16 +16,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/system-design/04-database-foundations/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/system-design/04-database-foundations/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/system-design/04-database-foundations/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/system-design/04-database-foundations/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/system-design/04-database-foundations/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/system-design/04-database-foundations/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/system-design/04-database-foundations/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/system-design/04-database-foundations/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/system-design/04-database-foundations/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/system-design/04-database-foundations/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/system-design/04-database-foundations/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/system-design/04-database-foundations/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -132,23 +132,23 @@ B-Tree nodes are stored in **pages** (typically 4 KB, 8 KB, or 16 KB). A page is
 
 ```
 +---------------------------------+
-¦ Page Header (24 bytes)          ¦
-¦   - page_type, free_start       ¦
-¦   - num_cells, checksum, LSN    ¦
-+---------------------------------¦
-¦ Cell pointer array (grows up)   ¦
-¦ [0]: offset=1568, key=42       ¦
-¦ [1]: offset=1824, key=78       ¦
-¦ [2]: offset=2048, key=105      ¦
-+---------------------------------¦
-¦                                 ¦
-¦   Unused space                  ¦
-¦                                 ¦
-+---------------------------------¦
-¦ Cell data (grows down)          ¦
-¦ Key=42, Value/ptr=<data>        ¦
-¦ Key=78, Value/ptr=<data>        ¦
-¦ Key=105, Value/ptr=<data>       ¦
+Â¦ Page Header (24 bytes)          Â¦
+Â¦   - page_type, free_start       Â¦
+Â¦   - num_cells, checksum, LSN    Â¦
++---------------------------------Â¦
+Â¦ Cell pointer array (grows up)   Â¦
+Â¦ [0]: offset=1568, key=42       Â¦
+Â¦ [1]: offset=1824, key=78       Â¦
+Â¦ [2]: offset=2048, key=105      Â¦
++---------------------------------Â¦
+Â¦                                 Â¦
+Â¦   Unused space                  Â¦
+Â¦                                 Â¦
++---------------------------------Â¦
+Â¦ Cell data (grows down)          Â¦
+Â¦ Key=42, Value/ptr=<data>        Â¦
+Â¦ Key=78, Value/ptr=<data>        Â¦
+Â¦ Key=105, Value/ptr=<data>       Â¦
 +---------------------------------+
 ```
 
@@ -217,24 +217,24 @@ The Log-Structured Merge-Tree (LSM-Tree), introduced by Patrick O'Neil in 1996, 
 
 ```
 MemTable (RAM, skiplist)
-    ¦
-    ¦ flushed when full (e.g., 64 MB)
+    Â¦
+    Â¦ flushed when full (e.g., 64 MB)
     ?
 SSTable 0  (L0, newest)
 SSTable 1  (L0)
 SSTable 2  (L0)
-    ¦
-    ¦ compacted in background
+    Â¦
+    Â¦ compacted in background
     ?
 SSTable 3  (L1, merged, larger)
 SSTable 4  (L1)
-    ¦
-    ¦ compacted
+    Â¦
+    Â¦ compacted
     ?
 SSTable 5  (L2, even larger)
 ```
 
-**Bloom Filters:** A probabilistic data structure that answers "is key K definitely not in this SSTable?" with no false negatives and configurable false positive rate. Before reading from an SSTable, check the bloom filter — if it says "not present," skip the file entirely. This avoids expensive disk reads for keys that do not exist in cold SSTables.
+**Bloom Filters:** A probabilistic data structure that answers "is key K definitely not in this SSTable?" with no false negatives and configurable false positive rate. Before reading from an SSTable, check the bloom filter â€” if it says "not present," skip the file entirely. This avoids expensive disk reads for keys that do not exist in cold SSTables.
 
 $$P(false\ positive) = (1 - e^{-kn/m})^k$$
 
@@ -256,7 +256,7 @@ L2: [1GB]
 **Pros:** Simple, good write throughput (no read-before-write during compaction).
 **Cons:** Space amplification (data exists in multiple levels simultaneously). Read amplification (must check many SSTables).
 
-**Leveled Compaction:** Used by LevelDB, RocksDB. Each level has a fixed size multiplier (typically 10x). L0 is the exception — can have multiple overlapping SSTables flushed from MemTable. L1 and below are non-overlapping: each key range appears in exactly one SSTable per level.
+**Leveled Compaction:** Used by LevelDB, RocksDB. Each level has a fixed size multiplier (typically 10x). L0 is the exception â€” can have multiple overlapping SSTables flushed from MemTable. L1 and below are non-overlapping: each key range appears in exactly one SSTable per level.
 
 ```
 L0: [A-E] [C-G] [F-J]            ? overlapping ranges (from multiple flushes)
@@ -265,7 +265,7 @@ L2: [A-F] [G-L] [M-R] [S-X] ...  ? non-overlapping, 10x larger
 ```
 
 **Pros:** Lower space amplification (no duplication across levels). Better read performance (fewer SSTables to check, binary search on level+file).
-**Cons:** Higher write amplification (compaction reads a key from L1 and writes it to L2, even if the key is unchanged — "write amplification" overhead).
+**Cons:** Higher write amplification (compaction reads a key from L1 and writes it to L2, even if the key is unchanged â€” "write amplification" overhead).
 
 **Time-Windowed Compaction:** Used for time-series data (Cassandra DTCS, now deprecated in favor of Unified Compaction). SSTables are grouped by time windows (e.g., daily). Only SSTables within the same time window are compacted together.
 
@@ -313,14 +313,14 @@ The most common replication pattern. One node (the leader/primary/master) accept
 
 ```
          +---------+
-         ¦  Leader  ¦   ? all writes here
+         Â¦  Leader  Â¦   ? all writes here
          +----------+
-              ¦
+              Â¦
      +--------+--------+
-     ¦        ¦        ¦
+     Â¦        Â¦        Â¦
      ?        ?        ?
   +-----+ +-----+ +-----+
-  ¦ F1  ¦ ¦ F2  ¦ ¦ F3  ¦   ? read-only replicas
+  Â¦ F1  Â¦ Â¦ F2  Â¦ Â¦ F3  Â¦   ? read-only replicas
   +-----+ +-----+ +-----+
 ```
 
@@ -364,23 +364,23 @@ Multiple nodes accept writes and replicate them to all other nodes. Each leader 
 
 ```
 +--------------+           +--------------+
-¦  Leader      ¦?---------?¦  Leader      ¦
-¦  (us-east-1) ¦     ¦     ¦  (eu-west-1) ¦
-+--------------+     ¦     +--------------+
-       ¦             ¦            ¦
-       ?             ¦            ?
-+--------------+     ¦     +--------------+
-¦  Follower     ¦    ¦     ¦  Follower     ¦
-+--------------+    ¦     +--------------+
-                    ¦
-+--------------+    ¦     +--------------+
-¦  Leader      ¦?--------?¦  Leader      ¦
-¦  (ap-southeast)¦        ¦  (sa-east-1) ¦
+Â¦  Leader      Â¦?---------?Â¦  Leader      Â¦
+Â¦  (us-east-1) Â¦     Â¦     Â¦  (eu-west-1) Â¦
++--------------+     Â¦     +--------------+
+       Â¦             Â¦            Â¦
+       ?             Â¦            ?
++--------------+     Â¦     +--------------+
+Â¦  Follower     Â¦    Â¦     Â¦  Follower     Â¦
++--------------+    Â¦     +--------------+
+                    Â¦
++--------------+    Â¦     +--------------+
+Â¦  Leader      Â¦?--------?Â¦  Leader      Â¦
+Â¦  (ap-southeast)Â¦        Â¦  (sa-east-1) Â¦
 +--------------+          +--------------+
-       ¦                        ¦
+       Â¦                        Â¦
        ?                        ?
 +--------------+          +--------------+
-¦  Follower     ¦         ¦  Follower     ¦
+Â¦  Follower     Â¦         Â¦  Follower     Â¦
 +--------------+          +--------------+
 ```
 
@@ -404,7 +404,7 @@ Leader B (Tokyo):   UPDATE product SET price = 20 WHERE id = 42
 $$\text{value} = \max_{timestamp}(value_1, value_2)$$
 
 **Pros:** Simple. No additional infrastructure needed.
-**Cons:** Clock skew is unavoidable (distributed clocks drift). Data loss — the losing write is silently discarded. Used by Cassandra's default conflict resolution (though Cassandra checks for equal timestamps and compares UUIDs as tiebreaker).
+**Cons:** Clock skew is unavoidable (distributed clocks drift). Data loss â€” the losing write is silently discarded. Used by Cassandra's default conflict resolution (though Cassandra checks for equal timestamps and compares UUIDs as tiebreaker).
 
 **Version Vectors:** Each node maintains a vector of version counters, one per replica:
 
@@ -417,7 +417,7 @@ A conflict exists if neither vector dominates the other (i.e., vector A is not g
 
 **Dotted Version Vectors:** An optimization adding a per-event dot to reduce storage. Used in Riak. Each write gets a unique event ID, and the vector tracks the "seen" set of event IDs per replica.
 
-**CRDTs (Conflict-free Replicated Data Types):** Mathematical data types designed for automatic conflict resolution — conflicts are impossible by construction.
+**CRDTs (Conflict-free Replicated Data Types):** Mathematical data types designed for automatic conflict resolution â€” conflicts are impossible by construction.
 
 ---
 
@@ -431,18 +431,18 @@ Dynamo-style replication (from Amazon's DynamoDB paper, 2007). There is no leade
         |                       |
         ?                       ?
   +---------+  +---------+  +---------+
-  ¦ Node 1  ¦  ¦ Node 2  ¦  ¦ Node 3  ¦
-  ¦  (N=3)  ¦  ¦  (N=3)  ¦  ¦  (N=3)  ¦
-  ¦ W=2 ok  ¦  ¦ W=2 ok  ¦  ¦ write   ¦
-  ¦ R=2 ok  ¦  ¦ R=2 ok  ¦  ¦ failed  ¦
+  Â¦ Node 1  Â¦  Â¦ Node 2  Â¦  Â¦ Node 3  Â¦
+  Â¦  (N=3)  Â¦  Â¦  (N=3)  Â¦  Â¦  (N=3)  Â¦
+  Â¦ W=2 ok  Â¦  Â¦ W=2 ok  Â¦  Â¦ write   Â¦
+  Â¦ R=2 ok  Â¦  Â¦ R=2 ok  Â¦  Â¦ failed  Â¦
   +---------+  +---------+  +---------+
 ```
 
 Key parameters:
 
 - **N:** Replication factor (number of replicas that store each piece of data).
-- **W:** Write quorum — the minimum number of replicas that must acknowledge a write for it to be considered successful.
-- **R:** Read quorum — the minimum number of replicas that must respond to a read for it to be considered successful.
+- **W:** Write quorum â€” the minimum number of replicas that must acknowledge a write for it to be considered successful.
+- **R:** Read quorum â€” the minimum number of replicas that must respond to a read for it to be considered successful.
 
 $$W + R > N \implies \text{strong consistency}$$
 
@@ -546,11 +546,11 @@ v2 = {"A": 0, "B": 3, "C": 0}
 # Neither dominates ? CONFLICT. Resolution required.
 ```
 
-**Dominance check:** v1 = v2 if every counter in v1 is = corresponding counter in v2. If neither dominates, the values are concurrent — conflict.
+**Dominance check:** v1 = v2 if every counter in v1 is = corresponding counter in v2. If neither dominates, the values are concurrent â€” conflict.
 
 #### CRDTs
 
-CRDTs are data types where concurrent operations commute. No conflict resolution is needed — the state always converges.
+CRDTs are data types where concurrent operations commute. No conflict resolution is needed â€” the state always converges.
 
 **G-Counter (Grow-only Counter):**
 
@@ -656,7 +656,7 @@ Key architecture:
 - **Zones:** Each zone contains one leader and multiple replicas. Zones map to data centers.
 - **Paxos groups:** Each shard is replicated via Paxos across zones. Leader of each shard processes writes.
 - **TrueTime:** Exposes a time interval `[earliest, latest]` for the current time. Spanner waits out the uncertainty interval (commit wait) to ensure linearizability.
-- **F1 RDBMS:** On top of Spanner for Google Ads (formerly AdWords) — a global SQL system.
+- **F1 RDBMS:** On top of Spanner for Google Ads (formerly AdWords) â€” a global SQL system.
 
 **Amazon DynamoDB.** Fully managed NoSQL key-value and document database based on the Dynamo paper. Uses leaderless replication with configurable N, W, R.
 
@@ -666,7 +666,7 @@ Key features:
 - **Global tables:** Multi-leader replication across regions with last-writer-wins conflict resolution.
 - **Transactions:** Limited ACID transactions (within a single partition or across partitions with TransactWriteItems/TransactGetItems).
 
-**Facebook TAO.** Not a database in the traditional sense — a distributed cache layer that serves Facebook's social graph. As discussed in Chapter 3, TAO sits between application servers and MySQL, providing a graph-optimized API with strong read-after-write consistency across global regions.
+**Facebook TAO.** Not a database in the traditional sense â€” a distributed cache layer that serves Facebook's social graph. As discussed in Chapter 3, TAO sits between application servers and MySQL, providing a graph-optimized API with strong read-after-write consistency across global regions.
 
 ---
 
@@ -682,7 +682,7 @@ Key features:
 - Delete: Bulk delete of data older than 90 days.
 
 **B-Tree analysis:**
-- Insert is random page write — each new data point writes to a different position in the B-Tree. This causes many small random I/Os. Write amplification is high (page splits).
+- Insert is random page write â€” each new data point writes to a different position in the B-Tree. This causes many small random I/Os. Write amplification is high (page splits).
 - Range scan on sorted timestamp is efficient (sequential page traversal).
 - Delete by range requires many page modifications (each leaf page must be modified).
 
@@ -1367,9 +1367,9 @@ flowchart TD
 
 **Uber's Database Migration from MySQL to Schemaless and Docstore.** Uber's original architecture used a single MySQL cluster with follower replicas. As the platform expanded to 500+ cities, the MySQL cluster faced severe scaling challenges: schema changes required hours of downtime, cross-shard queries became impossibly slow, and replication lag caused drivers to see stale trip requests. Uber designed Schemaless, a sharded document database built on top of MySQL, which stored trip data as JSON blobs in a single giant table with an auto-incrementing key. Each shard was a separate MySQL instance, and the application layer handled routing via a consistent hash ring on the trip UUID.
 
-**Key Architectural Decisions.** Uber chose a hybrid approach: B-Tree storage engine (MySQL InnoDB) for its strong read consistency and transaction support, but with an LSM-inspired write path that batched writes to the WAL before applying to the B-Tree. This gave them the read performance of B-Trees (fast point lookups for trip status queries) with improved write throughput. The connection pool for each shard was carefully tuned — each pool maintained 5-20 connections per shard with aggressive health checking (TCP probes every 5 seconds, query-based checks every 30 seconds). When a shard's primary failed, the pool automatically failed over to the replica within 10 seconds using a custom health-check-driven connection router.
+**Key Architectural Decisions.** Uber chose a hybrid approach: B-Tree storage engine (MySQL InnoDB) for its strong read consistency and transaction support, but with an LSM-inspired write path that batched writes to the WAL before applying to the B-Tree. This gave them the read performance of B-Trees (fast point lookups for trip status queries) with improved write throughput. The connection pool for each shard was carefully tuned â€” each pool maintained 5-20 connections per shard with aggressive health checking (TCP probes every 5 seconds, query-based checks every 30 seconds). When a shard's primary failed, the pool automatically failed over to the replica within 10 seconds using a custom health-check-driven connection router.
 
-**Business Impact.** The hybrid architecture scaled Uber's database layer from handling 100K trips/day to 15M trips/day over 3 years. Read latency for trip status queries stayed under 5ms p99, while write throughput scaled linearly with shard count. The isolation level was set to Read Committed (avoiding Serializable overhead), which was acceptable because trip reconciliation ran as a separate eventually-consistent process. The most important lesson: Uber did not choose between B-Tree and LSM-Tree — they combined the read strength of B-Trees with the write optimization ideas from LSM-Trees, proving that real-world database design is about composing trade-offs, not picking one storage engine.
+**Business Impact.** The hybrid architecture scaled Uber's database layer from handling 100K trips/day to 15M trips/day over 3 years. Read latency for trip status queries stayed under 5ms p99, while write throughput scaled linearly with shard count. The isolation level was set to Read Committed (avoiding Serializable overhead), which was acceptable because trip reconciliation ran as a separate eventually-consistent process. The most important lesson: Uber did not choose between B-Tree and LSM-Tree â€” they combined the read strength of B-Trees with the write optimization ideas from LSM-Trees, proving that real-world database design is about composing trade-offs, not picking one storage engine.
 
 ## Chapter Quiz
 
@@ -1386,7 +1386,7 @@ flowchart TD
 - B-Trees use a high branching factor (~1000+) to minimize disk seeks, achieving O(log_base_factor(n)) depth. Page splits and merges keep the tree balanced automatically.
 - LSM-Trees buffer writes in an in-memory MemTable, flush to immutable SSTables on disk, and run background compaction to merge and reclaim space. They dramatically outperform B-Trees on write-heavy workloads.
 - The B-Tree vs LSM-Tree trade-off reduces to read speed vs write speed. B-Trees win on point lookups and range scans; LSM-Trees win on sequential write throughput.
-- Single-leader replication is the simplest topology. Failover requires detecting leader failure, electing a new leader, and reconfiguring the system — with split-brain as the primary risk.
+- Single-leader replication is the simplest topology. Failover requires detecting leader failure, electing a new leader, and reconfiguring the system â€” with split-brain as the primary risk.
 - Multi-leader replication is essential for multi-datacenter and offline-first applications, but requires conflict resolution (LWW, Version Vectors, CRDTs).
 - Leaderless replication (Dynamo-style) uses quorums (N, W, R) and eventual consistency. Hinted handoff and read repair handle failures and staleness.
 - Replication lag causes three anomalies: read-your-writes, monotonic reads, and consistent prefix reads. Each has known solutions.
@@ -1398,7 +1398,7 @@ flowchart TD
 ## Exercises
 
 <details>
-<summary>Review Questions — Click to expand</summary>
+<summary>Review Questions â€” Click to expand</summary>
 
 ### Review Questions (4-5)
 
@@ -1412,7 +1412,7 @@ flowchart TD
    **Solution:** Condition: W+R > N. With N=5, W=4, R=2: W+R=6 > 5, so yes, strongly consistent. But R=2 means reads may be slow (must wait for 2 responses). W=4 means writes need 4/5 acks, tolerating only 1 node failure.
 
 4. Compare the conflict resolution mechanisms for multi-leader replication: LWW, Version Vectors, and CRDTs. Under what conditions does LWW produce incorrect results?
-   **Solution:** LWW: last timestamp wins, simple but loses concurrent writes. Version Vectors: detects concurrent writes but requires application resolution. CRDTs: mathematically converge without conflicts. LWW fails when clock skew causes incorrect timestamp ordering — a later write may have an earlier timestamp if its clock is behind.
+   **Solution:** LWW: last timestamp wins, simple but loses concurrent writes. Version Vectors: detects concurrent writes but requires application resolution. CRDTs: mathematically converge without conflicts. LWW fails when clock skew causes incorrect timestamp ordering â€” a later write may have an earlier timestamp if its clock is behind.
 
 5. List the three replication lag anomalies and describe a mitigation strategy for each.
    **Solution:** (1) RYW: route reads for modified keys to leader for N seconds after write. (2) Monotonic reads: hash-route user to same replica consistently. (3) Consistent prefix: place related data (post + comments) on same partition, or use total ordering with timestamps.
@@ -1420,18 +1420,18 @@ flowchart TD
 </details>
 
 <details>
-<summary>Application Problems — Click to expand</summary>
+<summary>Application Problems â€” Click to expand</summary>
 
 ### Application Problems (3-4)
 
 1. A B-Tree with page size 16 KB stores 100-byte keys and 100-byte values. Calculate the branching factor. How many leaf pages are needed to store 10 million records? How many levels in the tree?
-   **Solution:** Branching factor = page_size / (key_size + pointer_size) = 16384 / (100 + 8) ≈ 152. Records per leaf = 16384 / 200 ≈ 82. Leaf pages needed = 10^7 / 82 ≈ 122,000. Levels = log_152(122000) ≈ 3 (root + 2 internal levels + leaf level).
+   **Solution:** Branching factor = page_size / (key_size + pointer_size) = 16384 / (100 + 8) â‰ˆ 152. Records per leaf = 16384 / 200 â‰ˆ 82. Leaf pages needed = 10^7 / 82 â‰ˆ 122,000. Levels = log_152(122000) â‰ˆ 3 (root + 2 internal levels + leaf level).
 
 2. A database uses N=3, W=2, R=2 across 3 replicas. Node A crashes. Is the system still available for writes? For reads? Show any window of inconsistency that may occur during recovery.
    **Solution:** With 2 remaining nodes: W=2 can be satisfied (write to both). R=2 can be satisfied (read from both). System remains available. W+R=4 > N=3 holds. Inconsistency window: during recovery of Node A, if A had a write that the other two haven't seen (due to async replication), reads from A during recovery could return stale data until read repair updates it.
 
 3. Design a conflict resolution strategy for a shared photo album app where users from multiple devices add, remove, and reorder photos. Multiple users may rename the same album concurrently. Specify which CRDT(s) you would use for each operation and justify your choices.
-   **Solution:** Photo set: OR-Set (add/remove commute). Album name: LWW-register (last rename wins — acceptable because name should converge to one value). Photo order: RGA (Replicated Growable Array) for sequence ordering. The OR-Set for photos ensures no photo is lost due to concurrent add/remove operations.
+   **Solution:** Photo set: OR-Set (add/remove commute). Album name: LWW-register (last rename wins â€” acceptable because name should converge to one value). Photo order: RGA (Replicated Growable Array) for sequence ordering. The OR-Set for photos ensures no photo is lost due to concurrent add/remove operations.
 
 4. A banking ledger uses serializable isolation. A transfer transaction subtracts $100 from account A and adds $100 to account B. A concurrent interest-calculation transaction reads both accounts and writes interest of 1% of the balance. Under Read Committed isolation, what anomalies are possible? Draw a timestamped interleaving that produces a wrong result.
    **Solution:** Under RC: T1 (transfer) could be interleaved with T2 (interest). T2 reads A=1000 (before transfer), T1 transfers $100 from A to B, T2 reads B=100 (after transfer). T2 writes interest: A=1010, B=101. Total=1111 but should be 1100 + interest on correct values. Lost update and inconsistent read anomaly.
@@ -1439,16 +1439,16 @@ flowchart TD
 </details>
 
 <details>
-<summary>Challenge Problem — Click to expand</summary>
+<summary>Challenge Problem â€” Click to expand</summary>
 
 ### Challenge Problem (1)
 
 You are designing a globally distributed document database for a collaboration platform similar to Notion or Coda. 100M users, 1B documents.
 
 **Solution Outline:**
-1. **Storage engine:** Hybrid — RocksDB (LSM-Tree) for write-heavy operations (block edits, real-time collaboration) with periodic compaction; B-Tree-based indexes (via MySQL InnoDB) for metadata and queryable fields. LSM-Tree handles the high write throughput of collaborative editing while B-Tree provides fast lookups for document listing and search.
+1. **Storage engine:** Hybrid â€” RocksDB (LSM-Tree) for write-heavy operations (block edits, real-time collaboration) with periodic compaction; B-Tree-based indexes (via MySQL InnoDB) for metadata and queryable fields. LSM-Tree handles the high write throughput of collaborative editing while B-Tree provides fast lookups for document listing and search.
 2. **Replication topology:** Multi-leader (one leader per region: US, EU, APAC) with CRDT-based conflict resolution. Offline editing uses local-first CRDT state that merges on reconnection.
-3. **Document model:** Documents stored as ordered lists of blocks (CRDT-based RGA for ordering). Version history uses fork/merge semantics — each save creates a diff against the parent version, stored in Cassandra for 30-day retention.
+3. **Document model:** Documents stored as ordered lists of blocks (CRDT-based RGA for ordering). Version history uses fork/merge semantics â€” each save creates a diff against the parent version, stored in Cassandra for 30-day retention.
 4. **OR-Set CRDT for block content:** Elements tagged with (user_id, timestamp, UUID). add(element, tag) creates a tag; remove(element) removes known tags; merge = union of tag sets. Convergence is guaranteed because concurrent adds union, and concurrent add/remove depends on tag awareness.
 5. **Total order for comments:** Use a centralized sequencer per document (a small Raft group) that assigns monotonically increasing sequence numbers to comments. This provides total order while the document content itself uses CRDTs for availability.
 6. **Anti-entropy:** Merkle trees per document range. Each region exchanges root hashes every 30 seconds. On mismatch, recursive comparison finds differing blocks, and only the differing blocks are transferred.

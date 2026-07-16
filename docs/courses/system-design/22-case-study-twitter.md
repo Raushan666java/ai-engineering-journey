@@ -1,4 +1,4 @@
-# Chapter 22: Case Study — Twitter and News Feed
+﻿# Chapter 22: Case Study â€” Twitter and News Feed
 > **Previous:** [21 Case Study Uber](./21-case-study-uber.md) | **Next:** [23 Case Study Dropbox](./23-case-study-dropbox.md)
 
 ---
@@ -15,16 +15,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/system-design/22-case-study-twitter/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/system-design/22-case-study-twitter/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/system-design/22-case-study-twitter/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/system-design/22-case-study-twitter/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/system-design/22-case-study-twitter/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/system-design/22-case-study-twitter/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/system-design/22-case-study-twitter/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/system-design/22-case-study-twitter/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/system-design/22-case-study-twitter/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/system-design/22-case-study-twitter/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/system-design/22-case-study-twitter/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/system-design/22-case-study-twitter/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -81,13 +81,13 @@ flowchart LR
 > **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
 
 > **Pro Tip:** Master this concept thoroughly ? it appears in nearly every system design interview.
-Twitter serves 330+ million monthly active users who generate 500+ million tweets per day. Every user expects to see their timeline load in under 5 seconds, no matter how many accounts they follow. When a breaking news event occurs — an earthquake, a political announcement, a celebrity death — Twitter must surface relevant tweets within seconds, not minutes. The character limit started at 140 and expanded to 280 in 2017, which fundamentally changed the distribution of tweet lengths and engagement patterns.
+Twitter serves 330+ million monthly active users who generate 500+ million tweets per day. Every user expects to see their timeline load in under 5 seconds, no matter how many accounts they follow. When a breaking news event occurs â€” an earthquake, a political announcement, a celebrity death â€” Twitter must surface relevant tweets within seconds, not minutes. The character limit started at 140 and expanded to 280 in 2017, which fundamentally changed the distribution of tweet lengths and engagement patterns.
 
-The core challenge is the fan-out problem. A single tweet from a popular account must appear in the timelines of every one of that account's followers. When @BarackObama tweets — with 60+ million followers — the system must insert that tweet into 60 million timelines. If 10 celebrities tweet in the same second, that is 600 million timeline insertions. Doing this instantly is impossible; doing it in seconds requires careful architectural choices.
+The core challenge is the fan-out problem. A single tweet from a popular account must appear in the timelines of every one of that account's followers. When @BarackObama tweets â€” with 60+ million followers â€” the system must insert that tweet into 60 million timelines. If 10 celebrities tweet in the same second, that is 600 million timeline insertions. Doing this instantly is impossible; doing it in seconds requires careful architectural choices.
 
 Non-functional requirements include high write availability (tweets must never be lost), eventual consistency for timelines (it is acceptable if a tweet appears slightly late for some users), and resistance to abuse (spam, harassment, coordinated disinformation campaigns must be detectable and filterable). The platform operates under significant legal pressure regarding content moderation in different jurisdictions (Germany's NetzDG, India's IT Rules).
 
-### Phase 2: Timeline Generation — Fan-Out Strategies
+### Phase 2: Timeline Generation â€” Fan-Out Strategies
 
 
 > **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
@@ -157,25 +157,25 @@ The threshold T has been tuned over the years. Initially set at around 10,000 fo
 To understand the trade-offs quantitatively, consider the cost model. Let:
 - T = total tweets per day = 500M
 - U = total users = 330M
-- F_avg = average followers per user ˜ 200
+- F_avg = average followers per user Ëœ 200
 - F_celeb = followers of a celebrity account (e.g., @BarackObama = 60M)
-- R = timeline reads per day ˜ 2B (each user reads ~6 timelines/day)
+- R = timeline reads per day Ëœ 2B (each user reads ~6 timelines/day)
 
 Under pure fan-on-write:
-- Write operations per day = sum over all tweets of (follower_count) ˜ T * F_avg ˜ 500M * 200 = 100B writes
-- Read operations per day = R ˜ 2B reads
+- Write operations per day = sum over all tweets of (follower_count) Ëœ T * F_avg Ëœ 500M * 200 = 100B writes
+- Read operations per day = R Ëœ 2B reads
 - Total ops = ~102B
 
 Under pure fan-on-read:
 - Write operations per day = T = 500M writes
-- Read operations per day = R * F_avg_followees ˜ 2B * 200 = 400B reads (each timeline read queries every followee's recent tweets)
+- Read operations per day = R * F_avg_followees Ëœ 2B * 200 = 400B reads (each timeline read queries every followee's recent tweets)
 - Total ops = ~400B
 
 The hybrid with threshold T where 99.9% of users have &lt; T followers:
 - 99.9% of tweets use push (500M * 0.999 = 499.5M tweets, each fanned out to F_avg = 200 followers = 99.9B writes)
 - 0.1% of tweets use pull (500K celebrity tweets, written once = 500K writes, then merged on read by their followers)
 - Read merge: each timeline read merges ~200 normal entries (from Redis list) + N_celeb_followed celebrity tweets
-- Total ops ˜ 100B (write-dominant, roughly same as pure push for normal users)
+- Total ops Ëœ 100B (write-dominant, roughly same as pure push for normal users)
 
 This analysis explains the hybrid threshold. Since 99.9% of users have followers well below the threshold, their tweets are pushed normally. The threshold effectively isolates the 0.1% of celebrity accounts whose follower counts would cause O(100B) additional writes per day under full push. The marginal cost of the read-time merge (pulling celebrity tweets) is small relative to the saved write costs.
 
@@ -188,7 +188,7 @@ This analysis explains the hybrid threshold. Since 99.9% of users have followers
 
 **The Ruby on Rails Monolith (2006-2010)**
 
-Twitter's original architecture was a Ruby on Rails application with a MySQL database. The "Fail Whale" — a cartoon whale being lifted by birds — became famous as the error page users saw when the site was down, which was frequently. The monolith struggled with:
+Twitter's original architecture was a Ruby on Rails application with a MySQL database. The "Fail Whale" â€” a cartoon whale being lifted by birds â€” became famous as the error page users saw when the site was down, which was frequently. The monolith struggled with:
 
 - MySQL replication lag: writes to the master caused followers to fall behind, serving stale data
 - Slow queries: timeline generation queries joined multiple tables and took seconds
@@ -201,7 +201,7 @@ The tipping point was the 2008 US presidential election, where traffic spikes ca
 
 Twitter's engineering team rebuilt the backend from the ground up, making the bet that the JVM with its mature garbage collection, profiling tools, and threading model would provide the performance and stability they needed. The key components of the new architecture were:
 
-- **Finagle**: A protocol-agnostic RPC system built on Netty, providing connection pooling, circuit breaking, load balancing, and request timeouts. Finagle allowed services to communicate with configurable reliability policies — retry budgets (max 5% retries), fail-fast patterns, and distributed tracing via Zipkin.
+- **Finagle**: A protocol-agnostic RPC system built on Netty, providing connection pooling, circuit breaking, load balancing, and request timeouts. Finagle allowed services to communicate with configurable reliability policies â€” retry budgets (max 5% retries), fail-fast patterns, and distributed tracing via Zipkin.
 
 - **Scala**: Chosen for its functional programming features (immutability, pattern matching) running on the JVM. Scala's concurrency model (Futures, Promises) integrated naturally with Finagle's async I/O.
 
@@ -289,11 +289,11 @@ Twitter's trending topics algorithm must identify which topics are spiking in us
 4. Separately, a Bloom filter tracks which entities have been seen in the current window, used for deduplication.
 5. The CM sketch provides approximate frequency counts with a known error bound. For each entity, the actual count is approximately count + epsilon * total_items.
 6. Every 60 seconds, the top K entities by frequency are extracted from the CM sketch using a min-heap.
-7. The candidate trends are filtered: must exceed a minimum frequency threshold, must not be a promoted trend (those are injected separately), must not be spam (detected by velocity anomaly — a topic spiking at 100x normal rate is likely bot-driven).
+7. The candidate trends are filtered: must exceed a minimum frequency threshold, must not be a promoted trend (those are injected separately), must not be spam (detected by velocity anomaly â€” a topic spiking at 100x normal rate is likely bot-driven).
 8. Trends are ranked by a composite score: `frequency * (1 + acceleration) * novelty_score`, where acceleration is the rate of change of frequency and novelty_score is lower for topics that have been trending recently.
 9. Geotagged trends: the pipeline also maintains per-city CM sketches for location-specific trends in New York, Tokyo, London, etc.
 
-The choice of CM sketch over exact counting is deliberate. An exact count would require storing the full set of entities and their counts in memory, which could be millions of entries. The CM sketch uses sub-linear memory — typically a 2D array of 1000x10 integers — and provides accuracy within 1-2% for top-K queries, which is more than sufficient for trending topics.
+The choice of CM sketch over exact counting is deliberate. An exact count would require storing the full set of entities and their counts in memory, which could be millions of entries. The CM sketch uses sub-linear memory â€” typically a 2D array of 1000x10 integers â€” and provides accuracy within 1-2% for top-K queries, which is more than sufficient for trending topics.
 
 **Tweet Indexing with Earlybird**
 
@@ -411,14 +411,14 @@ Both lists are stored in Memcache (in-memory) across a cluster of machines. The 
 
 **Redis Timeline Lists**
 
-The pre-computed timeline lists (fan-on-write output) are stored in Redis as lists keyed by user ID. Each list contains tweet IDs in reverse-chronological order. The list is capped at 800 entries — older tweets are evicted. When a user reads their timeline, the timeline service reads the list with `LRANGE user:<id>:timeline 0 799` and hydrates the tweet metadata from Manhattan.
+The pre-computed timeline lists (fan-on-write output) are stored in Redis as lists keyed by user ID. Each list contains tweet IDs in reverse-chronological order. The list is capped at 800 entries â€” older tweets are evicted. When a user reads their timeline, the timeline service reads the list with `LRANGE user:<id>:timeline 0 799` and hydrates the tweet metadata from Manhattan.
 
 ## Concept Comparison
 > **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
 
 | Concept | Definition | Key Metric |
 |---------|-----------|------------|
-| Theory / Case Study | Core topic covered in Chapter 22: Case Study — Twitter and News Feed | Defined by specific measurable attributes |
+| Theory / Case Study | Core topic covered in Chapter 22: Case Study â€” Twitter and News Feed | Defined by specific measurable attributes |
 
 ---
 
@@ -427,7 +427,7 @@ The pre-computed timeline lists (fan-on-write output) are stored in Redis as lis
 
 | Topic | Key Point |
 |-------|-----------|
-| Theory / Case Study | Fundamental concept for Chapter 22: Case Study — Twitter and News Feed |
+| Theory / Case Study | Fundamental concept for Chapter 22: Case Study â€” Twitter and News Feed |
 
 ---
 
@@ -1051,9 +1051,9 @@ graph TB
 
 ## Case Study: Breaking News Event and Timeline Storm
 
-A major earthquake is detected off the coast of Japan. Within 30 seconds, 50,000 tweets per second mention the event — a 10x spike from the normal 6,000 tweets/sec. The trending service detects the hashtag #JapanEarthquake within 60 seconds using the Count-min sketch: the raw count jumps from 0 to 1.2M mentions in the 15-minute window, with an acceleration factor of 200x (rate of change). The topic is promoted to #1 trending globally.
+A major earthquake is detected off the coast of Japan. Within 30 seconds, 50,000 tweets per second mention the event â€” a 10x spike from the normal 6,000 tweets/sec. The trending service detects the hashtag #JapanEarthquake within 60 seconds using the Count-min sketch: the raw count jumps from 0 to 1.2M mentions in the 15-minute window, with an acceleration factor of 200x (rate of change). The topic is promoted to #1 trending globally.
 
-The timeline service experiences a 5x read surge as users refresh their feeds for updates. The hybrid fan-out handles the write storm: the 50,000 tweets/sec come from a mix of normal users (pushed to ~200 follower timelines each) and verified news accounts (pulled on read). The push model generates 50,000 × 200 = 10M writes/sec to Redis timeline lists — near the capacity of the Redis cluster. The Redis cluster's P99 latency increases from 5ms to 45ms. The Hystrix circuit breaker on the timeline list write path is configured to open at 50ms latency: when P99 exceeds 50ms for 30 seconds, writes to Redis are suspended for 10 seconds, during which the system falls back to fan-on-read for all users (pulling from Earlybird). This degrades read latency from 50ms to 200ms but prevents Redis saturation and total system failure.
+The timeline service experiences a 5x read surge as users refresh their feeds for updates. The hybrid fan-out handles the write storm: the 50,000 tweets/sec come from a mix of normal users (pushed to ~200 follower timelines each) and verified news accounts (pulled on read). The push model generates 50,000 Ã— 200 = 10M writes/sec to Redis timeline lists â€” near the capacity of the Redis cluster. The Redis cluster's P99 latency increases from 5ms to 45ms. The Hystrix circuit breaker on the timeline list write path is configured to open at 50ms latency: when P99 exceeds 50ms for 30 seconds, writes to Redis are suspended for 10 seconds, during which the system falls back to fan-on-read for all users (pulling from Earlybird). This degrades read latency from 50ms to 200ms but prevents Redis saturation and total system failure.
 
 The ML ranker is disabled during the peak (automatically detected by the request rate monitor crossing 200% of baseline). Timelines revert to reverse-chronological ordering. Media thumbnails are served at reduced resolution (240px instead of 480px) to reduce CDN bandwidth. The platform remains usable throughout the event. After 15 minutes, as tweet rate subsides to 15,000/sec, the ML ranker is re-enabled, timeline writes resume, and media quality is restored. A post-event dashboard shows the P99 latency peaked at 450ms (vs 150ms baseline) with zero downtime.
 
@@ -1061,7 +1061,7 @@ The ML ranker is disabled during the peak (automatically detected by the request
 
 A celebrity with 60 million followers tweets a photo from the Oscars red carpet. Under pure fan-on-write, this single tweet would generate 60 million Redis list insertions. Under Twitter's hybrid approach, the celebrity exceeds the follower-count threshold (1500), so the tweet is stored once in Earlybird's reverse-chronological index. Each follower's timeline read merges their precomputed list (from normal followees) with the celebrity's recent tweets.
 
-For a user following 200 normal accounts and 5 celebrities, a timeline read queries: one Redis LRANGE (200 tweet IDs from precomputed list) + 5 Earlybird queries (recent tweets per celebrity). The merge operation sorts ~250 items by timestamp and returns the top 50. P99 latency for the merge is 95ms — acceptable for the timeline loading experience. The write amplification saved: instead of 60M writes for the single celebrity tweet, the system performed 1 write (to Earlybird). Over a year, this saves an estimated 60M × 365 × 10 tweets/year ≈ 219B Redis writes — the difference between a functioning system and one that requires a new Redis cluster every week.
+For a user following 200 normal accounts and 5 celebrities, a timeline read queries: one Redis LRANGE (200 tweet IDs from precomputed list) + 5 Earlybird queries (recent tweets per celebrity). The merge operation sorts ~250 items by timestamp and returns the top 50. P99 latency for the merge is 95ms â€” acceptable for the timeline loading experience. The write amplification saved: instead of 60M writes for the single celebrity tweet, the system performed 1 write (to Earlybird). Over a year, this saves an estimated 60M Ã— 365 Ã— 10 tweets/year â‰ˆ 219B Redis writes â€” the difference between a functioning system and one that requires a new Redis cluster every week.
 
 The trade-off is that followers of celebrities see their tweets with a slight delay (the fan-on-read path adds ~95ms vs the push path's ~10ms). Twitter mitigates this by pre-warming the celebrity tweet cache: the top 100 celebrities' recent tweets are kept in a dedicated Memcache pool with continuous refresh every 30 seconds. When a user requests their timeline, the celebrity tweets are served from this cache rather than querying Earlybird, reducing the celebrity read penalty from 95ms to 5ms.
 
@@ -1086,7 +1086,7 @@ The trade-off is that followers of celebrities see their tweets with a slight de
 
 2. **Earlybird** uses an in-memory Lucene inverted index with incremental partial updates for engagement signals (no full reindex). Partitioned by tweet ID hash across multiple instances. Ingests from Kafka within 2s of publication. Query latency: sub-100ms for search, sub-50ms for reverse-chronological timeline queries.
 
-3. **Count-min sketch** is a 2D array (e.g., 1000×10) of counters, each row hashed with a different function. Estimate(item) = min over rows of table[row][hash(item)]. Error bound: estimate ≤ true_count + ε × total_items. Chosen over exact counting because it uses sub-linear memory (10K integers vs millions of entries).
+3. **Count-min sketch** is a 2D array (e.g., 1000Ã—10) of counters, each row hashed with a different function. Estimate(item) = min over rows of table[row][hash(item)]. Error bound: estimate â‰¤ true_count + Îµ Ã— total_items. Chosen over exact counting because it uses sub-linear memory (10K integers vs millions of entries).
 
 4. **Rails problems**: memory bloat, MySQL replication lag, slow queries, deployment risk. **Finagle** solved these with: connection pooling (reuse TCP connections), circuit breaking (fail fast), retry budgets (max 5% retries), request timeouts, and distributed tracing via Zipkin.
 
@@ -1097,7 +1097,7 @@ The trade-off is that followers of celebrities see their tweets with a slight de
 
 ### Application Problems
 
-<details><summary>Solution</summary>1. **Threshold Tuning**: Cost(T) = read_latency(T) × read_volume + write_latency(T) × write_volume. Measure: write latency from fanout worker (P99 time to write N timeline lists), read latency from timeline service (P99 merge time). Experiment: vary T from 500 to 100K across 1% of users for 1 week. Select T minimizing cost(T). Validate with A/B test: control (current T) vs treatment (new T) measuring P95 timeline load time.
+<details><summary>Solution</summary>1. **Threshold Tuning**: Cost(T) = read_latency(T) Ã— read_volume + write_latency(T) Ã— write_volume. Measure: write latency from fanout worker (P99 time to write N timeline lists), read latency from timeline service (P99 merge time). Experiment: vary T from 500 to 100K across 1% of users for 1 week. Select T minimizing cost(T). Validate with A/B test: control (current T) vs treatment (new T) measuring P95 timeline load time.
 
 2. **Anomaly Detection**: CM sketch: width=2000, depth=10, using murmur3 hash seeds. Velocity metric: (current_window_count / baseline_window_count) > 20x AND absolute count > 100K in 60s. Short window: 60s (detect spike), long window: 15min (baseline). Action: remove from trending list, shadowban (don't notify the bot accounts), label as "potentially spam" for human review.
 
@@ -1116,12 +1116,12 @@ The trade-off is that followers of celebrities see their tweets with a slight de
 **Autoscaling**: Need 25 new timeline instances (250K/10K = 25). Cold-start: 90s (container pull 20s + JVM warmup 30s + cache preheat 40s). Mitigation: maintain 20% warm pool (5 idle instances), use spot instances with 2-min termination notice, pre-warm caches by shadowing 1% of production traffic.
 
 **Degradation modes** (severity order):
-1. Disable ML ranking → reverse-chronological (saves 50ms per request)
-2. Disable media loading → text-only timeline (saves CDN bandwidth + hydration time)
-3. Serve stale timelines → cached version from 30s ago (saves Redis reads)
-4. Show "Trending" landing page → redirect all traffic to trending (eliminates personalized timeline load)
+1. Disable ML ranking â†’ reverse-chronological (saves 50ms per request)
+2. Disable media loading â†’ text-only timeline (saves CDN bandwidth + hydration time)
+3. Serve stale timelines â†’ cached version from 30s ago (saves Redis reads)
+4. Show "Trending" landing page â†’ redirect all traffic to trending (eliminates personalized timeline load)
 
-**Circuit breakers**: Earlybird: 30% errors in 30s → fallback to cached results TTL 60s. Flocks: >100ms latency → fallback to locally cached follow graph TTL 120s. Manhattan: slow hydration → show tweet IDs only with "Tweet unavailable" fallback. **Client mitigation**: increase polling from 30s to 120s, batch timeline requests, suppress animations, show retry-after header (30s). Android/iOS: reduce image quality to 240p, suppress autoplay videos.
+**Circuit breakers**: Earlybird: 30% errors in 30s â†’ fallback to cached results TTL 60s. Flocks: >100ms latency â†’ fallback to locally cached follow graph TTL 120s. Manhattan: slow hydration â†’ show tweet IDs only with "Tweet unavailable" fallback. **Client mitigation**: increase polling from 30s to 120s, batch timeline requests, suppress animations, show retry-after header (30s). Android/iOS: reduce image quality to 240p, suppress autoplay videos.
 
 **Post-event dashboard** (6 charts):
 1. Timeline P99 latency (1-min rolling, 60-min window vs prior week)

@@ -1,4 +1,4 @@
-# Chapter 17: Observability and Resiliency Patterns
+﻿# Chapter 17: Observability and Resiliency Patterns
 > **Previous:** [16 Api Gateways Cqrs](./16-api-gateways-cqrs.md) | **Next:** [18 Case Studies Classic](./18-case-studies-classic.md)
 
 ---
@@ -14,16 +14,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/system-design/17-observability-resiliency/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/system-design/17-observability-resiliency/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/system-design/17-observability-resiliency/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/system-design/17-observability-resiliency/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/system-design/17-observability-resiliency/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/system-design/17-observability-resiliency/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/system-design/17-observability-resiliency/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/system-design/17-observability-resiliency/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/system-design/17-observability-resiliency/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/system-design/17-observability-resiliency/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/system-design/17-observability-resiliency/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/system-design/17-observability-resiliency/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -101,7 +101,7 @@ Observability is the ability to understand a system's internal state from its ex
 
 **RED Method** (for services): Rate (requests/second), Errors (failed requests/second), Duration (latency distribution). Every service should expose at minimum these three metrics.
 
-**USE Method** (for resources): Utilization (time resource busy), Saturation (work queued), Errors (failure count). Applied to CPU, memory, disk, network — every infrastructure resource.
+**USE Method** (for resources): Utilization (time resource busy), Saturation (work queued), Errors (failure count). Applied to CPU, memory, disk, network â€” every infrastructure resource.
 
 **Four Golden Signals** (Google SRE):
 - **Latency**: Time to service a request. Distinguish success latency (fast) from error latency (slow).
@@ -230,13 +230,13 @@ def get_order(id):
 ```
 traceparent: 00-0af7651916cd43dd8448eb211c80319c-b7ad6b7169203331-01
   --- -------------------------- ------------------- ---
-   ¦          ¦                          ¦              ¦
+   Â¦          Â¦                          Â¦              Â¦
  version   trace_id                    span_id       trace_flags
 
 tracestate: vendor1=value1,vendor2=value2
 ```
 
-Automatic propagation via OpenTelemetry's HTTP instrumentation libraries — no manual header passing needed.
+Automatic propagation via OpenTelemetry's HTTP instrumentation libraries â€” no manual header passing needed.
 
 **Sampling strategies**:
 - **Head-based**: Decision at the root span (first service). Simple but may miss important slow requests. Use ProbabilitySampler (sample 1% of traces).
@@ -350,13 +350,13 @@ Isolates resources so failure in one component doesn't exhaust shared resources.
 ```
 Thread pools:
   +- order-service -+
-  ¦ pool: 10 threads¦
+  Â¦ pool: 10 threadsÂ¦
   +-----------------+
   +- payment-service-+  ? this pool exhausts, orders pool unaffected
-  ¦ pool: 5 threads ¦
+  Â¦ pool: 5 threads Â¦
   +-----------------+
   +- inventory-svc -+
-  ¦ pool: 8 threads ¦
+  Â¦ pool: 8 threads Â¦
   +-----------------+
 ```
 
@@ -438,7 +438,7 @@ if len(work_queue) > MAX_DEPTH: return {"error": "too many requests"}, 503
 ### 13. Health Check API
 
 
-Standard endpoints: `GET /health` (liveness — process alive?) and `GET /ready` (readiness — dependencies reachable?). Dependency checks return 503 to remove degraded pods from the load balancer:
+Standard endpoints: `GET /health` (liveness â€” process alive?) and `GET /ready` (readiness â€” dependencies reachable?). Dependency checks return 503 to remove degraded pods from the load balancer:
 
 ```python
 @app.route("/ready")
@@ -601,11 +601,11 @@ Querying Loki for `{correlation_id="abc-123"}` reconstructs the full request flo
 
 | Takeaway | Application |
 |----------|-------------|
-| Implement the three pillars (logging, metrics, tracing) from day one — retrofitting observability is 10× harder | Deploy OpenTelemetry SDK with auto-instrumentation; export to Prometheus + Loki + Jaeger |
+| Implement the three pillars (logging, metrics, tracing) from day one â€” retrofitting observability is 10Ã— harder | Deploy OpenTelemetry SDK with auto-instrumentation; export to Prometheus + Loki + Jaeger |
 | Use RED method (Rate, Errors, Duration) for every service; USE method (Utilization, Saturation, Errors) for every resource | Define SLOs: P99 latency < 200ms, error rate < 0.1%. Alert when error budget burns faster than threshold |
 | Structured JSON logging with correlation IDs enables cross-service log stitching | Inject X-Correlation-Id at the API gateway; propagate via HTTP headers to all downstream services |
 | Circuit breaker with HALF-OPEN probes prevents cascading failures | Set failure threshold = 5, recovery timeout = 30s, half-open max = 3. Use fallbacks for degraded response |
-| Bulkhead isolation protects critical resources: thread pool for high-latency, semaphore for low-latency dependencies | Payment service: dedicated 5-thread pool. Cache: semaphore(50) — lightweight, no context switch |
+| Bulkhead isolation protects critical resources: thread pool for high-latency, semaphore for low-latency dependencies | Payment service: dedicated 5-thread pool. Cache: semaphore(50) â€” lightweight, no context switch |
 | Retry with exponential backoff + full jitter prevents thundering herd on recovery | Base delay = 200ms, max = 20s, 3 retries. Only retry on 5xx and connection errors (not 4xx) |
 | Chaos engineering validates resilience: start with instance failure, escalate to region failure | Weekly Chaos Monkey experiment; automated rollback if P99 exceeds SLO for 3 consecutive minutes |
 
@@ -617,7 +617,7 @@ A payment processing platform handling $2 billion in monthly transaction volume 
 
 The team implements a complete observability stack. First, they deploy OpenTelemetry auto-instrumentation across all 45 microservices. Each service exports RED metrics (request rate, error rate, latency histograms) to Prometheus, structured JSON logs to Loki with correlation IDs, and distributed traces to Jaeger. A Grafana dashboard shows the payment flow end-to-end: from API gateway to fraud detection to bank processor to ledger update.
 
-Second, they implement resiliency patterns. The circuit breaker on the bank processor opens after 3 consecutive 500 errors, returning a cached "payment queued" response while the processor recovers. The bulkhead isolates the 10 most critical dependencies — each with its own thread pool. Retry with jitter (base=100ms, max=10s, 3 retries) handles transient bank network failures. A health check endpoint (`/ready`) reports dependency status and the orchestrator removes pods whose critical dependencies are unhealthy.
+Second, they implement resiliency patterns. The circuit breaker on the bank processor opens after 3 consecutive 500 errors, returning a cached "payment queued" response while the processor recovers. The bulkhead isolates the 10 most critical dependencies â€” each with its own thread pool. Retry with jitter (base=100ms, max=10s, 3 retries) handles transient bank network failures. A health check endpoint (`/ready`) reports dependency status and the orchestrator removes pods whose critical dependencies are unhealthy.
 
 Third, they introduce chaos engineering. Weekly Chaos Monkey experiments randomly kill two pods per deployment. Monthly Chaos Gorilla experiments simulate an entire AWS AZ failure. The steady-state hypothesis: P99 latency < 200ms, error rate < 0.05%, and the system fully recovers within 5 minutes of an AZ failure. Automated rollback triggers when any SLO is violated for 3 consecutive minutes. After six months, mean time to detect (MTTD) drops from 30 minutes to 2 minutes, and mean time to resolve (MTTR) drops from 90 minutes to 8 minutes.
 > **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
@@ -1271,7 +1271,7 @@ demo()
 export { Cache, Logger, computeHash, CacheEntry }
 ## Summary
 
-- The three pillars of observability are logging, metrics, and tracing — each serves a distinct purpose: debugging, alerting, and latency analysis
+- The three pillars of observability are logging, metrics, and tracing â€” each serves a distinct purpose: debugging, alerting, and latency analysis
 - RED method (Rate, Errors, Duration) for services; USE method (Utilization, Saturation, Errors) for infrastructure resources
 - Prometheus uses a pull model with Counter (monotonic), Gauge (fluctuating), Histogram (bucketed), and Summary (quantile) metric types
 - OpenTelemetry provides vendor-neutral tracing with W3C TraceContext propagation and configurable sampling strategies
@@ -1293,22 +1293,22 @@ export { Cache, Logger, computeHash, CacheEntry }
 2. W3C TraceContext uses the `traceparent` header format: `version-trace_id-span_id-trace_flags`. Version (00 for current), trace_id (16-byte globally unique ID), span_id (8-byte parent span ID), flags (01 = sampled). `tracestate` carries vendor-specific data. Context propagates via: service receives header, creates child span with new span_id, passes same trace_id and new span_id to downstream calls.
 3. Thread pool: dedicated OS threads per dependency. Use for high-latency dependencies (P50 > 50ms) where context switching cost is amortized over long operations. Semaphore: no thread context switch, just a counter. Use for low-latency dependencies (<10ms) where thread overhead would dominate. Semaphore uses less memory but cannot isolate thread starvation.
 4. HALF-OPEN exists for recovery detection. A single probe request tests if the downstream service has recovered. If it succeeds, the circuit closes. If it fails, the circuit re-opens and the recovery timer resets. One success followed by immediate failure is handled because the circuit transitions to CLOSED only after `successThreshold` consecutive successes (typically 3).
-5. Four Golden Signals (Google SRE): Latency, Traffic, Errors, Saturation — applicable to both services and infrastructure. RED (Rate, Errors, Duration): designed specifically for services. USE (Utilization, Saturation, Errors): designed specifically for resources. Overlap: Saturation (Golden Signals) ≈ Utilization + Saturation (USE) when applied to services as queue depth.</details>
+5. Four Golden Signals (Google SRE): Latency, Traffic, Errors, Saturation â€” applicable to both services and infrastructure. RED (Rate, Errors, Duration): designed specifically for services. USE (Utilization, Saturation, Errors): designed specifically for resources. Overlap: Saturation (Golden Signals) â‰ˆ Utilization + Saturation (USE) when applied to services as queue depth.</details>
 
 ### Application Problems
-<details><summary>Solution</summary>1. Per service: 5 counters + 5 gauges + 5 histograms × 11 time series (10 buckets + sum + count) = 5 + 5 + 55 = 65 + 5 summaries × 4 quantiles = 85 total series. Fleet: 500 × 85 = 42,500 series. Scrape bandwidth: each series ≈ 40 bytes (metric name + labels + value). 42,500 × 40 × 4 (15s interval) ≈ 6.8 MB/s = 54.4 Mbps. Storage: 1 byte/sample × 42,500 series × 4 samples/min × 60 × 24 = 245 GB/day. 30-day retention: 245 GB × 30 = 7.35 TB. Downsample to 1-minute resolution after 7 days; aggregate to 1-hour resolution after 14 days.
-2. First 5 seconds (3% error rate): 3 errors in 10 seconds — below threshold of 5. Circuit stays CLOSED. Then 60% error rate: 5 consecutive errors in ~8 requests → circuit opens at ~1.3 seconds into failure spike. Requests during OPEN (28.7 seconds): all fast-failed. After 30s recovery timeout → transitions to HALF-OPEN. Probe succeeds → circuit CLOSES. Total requests: ~1000 during 2-minute window. Fast-failed: ~860 (86%). Hit failing service: ~140 (14%).
-3. Steady-state hypothesis: (a) P99 latency < 200ms, (b) error rate < 0.1%, (c) successful failover < 5 minutes. Steps: (1) Gradually shift 25% traffic from region A to region B — verify B handles load. (2) Enable network latency injection (50ms) between regions. (3) Gradually reduce region A capacity (terminate 25%, then 50%, then 75% of pods). (4) Simulate complete region A failure (stop all traffic routing to A). Rollback: any SLO violation for 3 consecutive minutes. Expected degradation: P99 latency may spike to 500ms during DNS propagation, error rate may hit 0.5% briefly, system fully recovers in < 5 minutes.
-4. Bottleneck: Service C at 3.1s. Retry: Service D's 2.4s span (the first 0.8s attempt failed, retry took 2.4s). Serialization: A calls B (1.2s) and C (3.1s) sequentially = 4.3s. D is called after C? D's spans start after C completes. Total actual serial: A(negligible) + B(1.5, parallel wait) + C(3.1) + D(2.4) = 5.5s (but overlaps reduce observed to 4.8s). Theoretical parallel minimum: max(B=1.5, C=3.1, D=2.4) = 3.1s. The retry in D adds 2.4s — eliminating it saves 2.4s from serial path.</details>
+<details><summary>Solution</summary>1. Per service: 5 counters + 5 gauges + 5 histograms Ã— 11 time series (10 buckets + sum + count) = 5 + 5 + 55 = 65 + 5 summaries Ã— 4 quantiles = 85 total series. Fleet: 500 Ã— 85 = 42,500 series. Scrape bandwidth: each series â‰ˆ 40 bytes (metric name + labels + value). 42,500 Ã— 40 Ã— 4 (15s interval) â‰ˆ 6.8 MB/s = 54.4 Mbps. Storage: 1 byte/sample Ã— 42,500 series Ã— 4 samples/min Ã— 60 Ã— 24 = 245 GB/day. 30-day retention: 245 GB Ã— 30 = 7.35 TB. Downsample to 1-minute resolution after 7 days; aggregate to 1-hour resolution after 14 days.
+2. First 5 seconds (3% error rate): 3 errors in 10 seconds â€” below threshold of 5. Circuit stays CLOSED. Then 60% error rate: 5 consecutive errors in ~8 requests â†’ circuit opens at ~1.3 seconds into failure spike. Requests during OPEN (28.7 seconds): all fast-failed. After 30s recovery timeout â†’ transitions to HALF-OPEN. Probe succeeds â†’ circuit CLOSES. Total requests: ~1000 during 2-minute window. Fast-failed: ~860 (86%). Hit failing service: ~140 (14%).
+3. Steady-state hypothesis: (a) P99 latency < 200ms, (b) error rate < 0.1%, (c) successful failover < 5 minutes. Steps: (1) Gradually shift 25% traffic from region A to region B â€” verify B handles load. (2) Enable network latency injection (50ms) between regions. (3) Gradually reduce region A capacity (terminate 25%, then 50%, then 75% of pods). (4) Simulate complete region A failure (stop all traffic routing to A). Rollback: any SLO violation for 3 consecutive minutes. Expected degradation: P99 latency may spike to 500ms during DNS propagation, error rate may hit 0.5% briefly, system fully recovers in < 5 minutes.
+4. Bottleneck: Service C at 3.1s. Retry: Service D's 2.4s span (the first 0.8s attempt failed, retry took 2.4s). Serialization: A calls B (1.2s) and C (3.1s) sequentially = 4.3s. D is called after C? D's spans start after C completes. Total actual serial: A(negligible) + B(1.5, parallel wait) + C(3.1) + D(2.4) = 5.5s (but overlaps reduce observed to 4.8s). Theoretical parallel minimum: max(B=1.5, C=3.1, D=2.4) = 3.1s. The retry in D adds 2.4s â€” eliminating it saves 2.4s from serial path.</details>
 
 ### Challenge Problem
 <details><summary>Solution</summary>Design the complete observability and resiliency stack:
 
-**Prometheus Metrics**: RED per service (rate, errors, duration histograms with buckets [0.005, 0.01, 0.025, 0.05, 0.1, 0.25, 0.5, 1.0, 2.5, 5.0, 10.0]). USE per resource (CPU utilization, memory saturation, disk I/O errors). Scrape interval: 15s. Retention: 14d at full resolution, 90d at 5m downsampled. Storage: ~10 TB (50 services × 100 series × 4 bytes × 5760 samples/day × 14 days).
+**Prometheus Metrics**: RED per service (rate, errors, duration histograms with buckets [0.005, 0.01, 0.025, 0.05, 0.1, 0.25, 0.5, 1.0, 2.5, 5.0, 10.0]). USE per resource (CPU utilization, memory saturation, disk I/O errors). Scrape interval: 15s. Retention: 14d at full resolution, 90d at 5m downsampled. Storage: ~10 TB (50 services Ã— 100 series Ã— 4 bytes Ã— 5760 samples/day Ã— 14 days).
 
 **OTel Tail-Based Sampling**: Jaeger collector with tail sampling processor. 100% of failed traces (status=ERROR), 1% of successful traces. Head-based rate limit: 100 traces/second. Storage: ~200 GB/day (500K traces/day at 400 bytes/trace).
 
-**Structured Logs (Loki)**: JSON format with correlation_id, service, duration_ms, status_code. Label on service, level, environment. Retention: 30d. Storage: 50 services × 10 GB/day = 500 GB/day, compressed to ~150 GB/day.
+**Structured Logs (Loki)**: JSON format with correlation_id, service, duration_ms, status_code. Label on service, level, environment. Retention: 30d. Storage: 50 services Ã— 10 GB/day = 500 GB/day, compressed to ~150 GB/day.
 
 **3-Tier Alertmanager**: Tier 1 (critical): P1 to PagerDuty, 5-minute response SLA. Tier 2 (warning): P2 to Slack, 30-minute response. Tier 3 (info): P3 to email, next-business-day. Grouping: group by service, severity. Inhibition: higher-severity alerts suppress lower-severity for the same service.
 
@@ -1320,8 +1320,8 @@ export { Cache, Logger, computeHash, CacheEntry }
 
 **Load Shedding**: Queue depth limit = 1000 per service. At 80% saturation: shed batch jobs and analytics. At 95%: shed all non-critical traffic. Return 503 with Retry-After header.
 
-**Health Probes**: `/health` (liveness) — process alive, no dependency check. `/ready` (readiness) — checks all critical dependencies with timeout. Orchestrator removes unhealthy pods.
+**Health Probes**: `/health` (liveness) â€” process alive, no dependency check. `/ready` (readiness) â€” checks all critical dependencies with timeout. Orchestrator removes unhealthy pods.
 
 **Chaos Experiments**: Weekly Chaos Monkey (kill 2 pods). Bi-weekly Chaos Gorilla (AZ failure). Monthly Chaos Kong (region failure). Auto-rollback if P99 > 500ms for 3 consecutive minutes. All experiments in staging first, production during low-traffic hours.
 
-**Runbook for 30s P99 Spike**: (1) Open Grafana dashboard → check RED metrics per service. (2) Identify which service latency spiked. (3) Open Jaeger → filter traces for that service, sort by duration. (4) Examine slowest spans → identify bottleneck dependency. (5) Check Loki for error logs with same correlation_id. (6) Check Alertmanager for related alerts. (7) Check saturation metrics (CPU, memory, connection pool). (8) Remediate: scale up, restart, or circuit breaker manual trip. (9) Post-mortem: add missing span instrumentation or adjust circuit breaker thresholds.</details>
+**Runbook for 30s P99 Spike**: (1) Open Grafana dashboard â†’ check RED metrics per service. (2) Identify which service latency spiked. (3) Open Jaeger â†’ filter traces for that service, sort by duration. (4) Examine slowest spans â†’ identify bottleneck dependency. (5) Check Loki for error logs with same correlation_id. (6) Check Alertmanager for related alerts. (7) Check saturation metrics (CPU, memory, connection pool). (8) Remediate: scale up, restart, or circuit breaker manual trip. (9) Post-mortem: add missing span instrumentation or adjust circuit breaker thresholds.</details>

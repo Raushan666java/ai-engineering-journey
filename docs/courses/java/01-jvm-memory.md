@@ -1,4 +1,4 @@
-# JVM Architecture & Memory Management
+﻿# JVM Architecture & Memory Management
 
 > **Previous:** None (First Chapter) | **Next:** [Concurrency & Threading](./02-concurrency.md)
 
@@ -9,16 +9,16 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/01-jvm-memory/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/01-jvm-memory/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/01-jvm-memory/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/01-jvm-memory/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/01-jvm-memory/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/01-jvm-memory/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/01-jvm-memory/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/01-jvm-memory/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/01-jvm-memory/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/01-jvm-memory/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/01-jvm-memory/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/01-jvm-memory/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -67,7 +67,7 @@ flowchart LR
     G --> H[Memory Leaks & Debugging]
 ```
 
-> **Pro Tip:** Always start tuning with a clear goal — minimize pause time (G1/ZGC) or maximize throughput (Parallel). Guessing GC flags without metrics is cargo-cult optimization.
+> **Pro Tip:** Always start tuning with a clear goal â€” minimize pause time (G1/ZGC) or maximize throughput (Parallel). Guessing GC flags without metrics is cargo-cult optimization.
 
 ---
 
@@ -77,9 +77,9 @@ The Java Virtual Machine is the cornerstone of Java's platform independence. It 
 
 The JVM consists of three major subsystems:
 
-1. **Class Loader Subsystem** → loads, links, and initializes Java classes
-2. **Runtime Data Areas** → the memory regions where the JVM stores data during execution
-3. **Execution Engine** → interprets and compiles bytecode into native machine instructions
+1. **Class Loader Subsystem** â†’ loads, links, and initializes Java classes
+2. **Runtime Data Areas** â†’ the memory regions where the JVM stores data during execution
+3. **Execution Engine** â†’ interprets and compiles bytecode into native machine instructions
 
 Let us examine each subsystem in depth with complete code examples.
 
@@ -155,14 +155,14 @@ The Bootstrap class loader returns `null` because it is implemented natively and
 
 Class loading follows three phases:
 
-**Loading** → The class loader reads binary data from a `.class` file and creates a `Class<?>` object. The JVM identifies the class by its fully qualified name and the defining class loader.
+**Loading** â†’ The class loader reads binary data from a `.class` file and creates a `Class<?>` object. The JVM identifies the class by its fully qualified name and the defining class loader.
 
-**Linking** → Three sub-steps:
+**Linking** â†’ Three sub-steps:
 1. **Verification**: The bytecode verifier checks that the class file is structurally correct, valid Java bytecode, and does not violate type safety.
 2. **Preparation**: Static fields are allocated with default values (zero, null, false). This is **not** the same as initialization.
 3. **Resolution**: Symbolic references (e.g., CONSTANT_Class_info, CONSTANT_Methodref_info) are resolved to direct memory addresses.
 
-**Initialization** → Static initializer blocks and static field assignments execute. This phase is triggered when the JVM encounters `new`, `getstatic`, `putstatic`, `invokestatic`, or `Class.forName()`.
+**Initialization** â†’ Static initializer blocks and static field assignments execute. This phase is triggered when the JVM encounters `new`, `getstatic`, `putstatic`, `invokestatic`, or `Class.forName()`.
 
 The following code demonstrates the precise order of class initialization:
 
@@ -252,7 +252,7 @@ CONSTANT_VALUE
 7. Child constructor
 ```
 
-Observe: the second instance does **not** re-run static initializers → class initialization happens exactly once per class loader.
+Observe: the second instance does **not** re-run static initializers â†’ class initialization happens exactly once per class loader.
 
 ### 2.3 Custom Class Loader
 
@@ -847,7 +847,7 @@ The JIT (Just-In-Time) compiler transforms bytecode into native machine code at 
 ### 5.1 Interpretation vs Compilation
 
 
-When a method begins execution, the JVM starts in **interpreted mode** → reading bytecode instruction by instruction. This is slow but has zero startup delay. The JVM monitors which methods are called frequently (hotspot detection) and compiles those methods to native code.
+When a method begins execution, the JVM starts in **interpreted mode** â†’ reading bytecode instruction by instruction. This is slow but has zero startup delay. The JVM monitors which methods are called frequently (hotspot detection) and compiles those methods to native code.
 
 ```java
 package com.example.jvm.jit;
@@ -1977,7 +1977,7 @@ public class ThreadLocalLeak {
         pool.shutdown();
         System.out.println("\nIf TL.remove() is NOT called: ");
         System.out.println("  ThreadLocal.Entry &lt;value&gt; references remain");
-        System.out.println("  Thread lives in pool → 1 MB leak per thread");
+        System.out.println("  Thread lives in pool â†’ 1 MB leak per thread");
         System.out.println("  Week-end: total leak = poolSize * 1 MB\n");
         System.out.println("Root cause: ThreadLocalMap Entry extends WeakReference");
         System.out.println("  Key is weak (WeakReference&lt;ThreadLocal&gt;), value is strong");
@@ -2244,8 +2244,8 @@ public class StackOverflowDemo {
 
         int stackKB = (int) (1024 * 1024);
         System.out.println("\nExample stack analysis:");
-        System.out.println("  -Xss256k → ~800 frames ~32 bytes each");
-        System.out.println("  -Xss2m   → ~6500 frames");
+        System.out.println("  -Xss256k â†’ ~800 frames ~32 bytes each");
+        System.out.println("  -Xss2m   â†’ ~6500 frames");
         System.out.println("  Each local variable: 4 or 8 bytes");
         System.out.println("  Each frame overhead: ~24 bytes\n");
 
@@ -2396,8 +2396,8 @@ public class MemoryFlags {
         System.out.println("-Xmn&lt;size&gt;          -Xmn2g");
         System.out.println("-XX:NewSize=&lt;size&gt;");
         System.out.println("-XX:MaxNewSize=&lt;size&gt;");
-        System.out.println("-XX:NewRatio=N       NewRatio=2 → 1:2");
-        System.out.println("-XX:SurvivorRatio=N  8 → eden:survivor = 8:1:1\n");
+        System.out.println("-XX:NewRatio=N       NewRatio=2 â†’ 1:2");
+        System.out.println("-XX:SurvivorRatio=N  8 â†’ eden:survivor = 8:1:1\n");
 
         System.out.println("--- Metaspace ---");
         System.out.println("-XX:MetaspaceSize=&lt;size&gt; (initial threshold)");
@@ -2505,14 +2505,14 @@ public class ProductionFlags {
 ## Chapter Quiz
 
 1. What is the correct order of the class loader delegation model?
-   - A) Application → Platform → Bootstrap
-   - B) Bootstrap → Platform → Application
-   - C) Application → Bootstrap → Platform
-   - D) Platform → Application → Bootstrap
+   - A) Application â†’ Platform â†’ Bootstrap
+   - B) Bootstrap â†’ Platform â†’ Application
+   - C) Application â†’ Bootstrap â†’ Platform
+   - D) Platform â†’ Application â†’ Bootstrap
 
 <details>
 <summary>Answer</summary>
-**B) Bootstrap → Platform → Application.** The delegation model is parent-first: a class loader delegates to its parent before attempting to load a class itself.
+**B) Bootstrap â†’ Platform â†’ Application.** The delegation model is parent-first: a class loader delegates to its parent before attempting to load a class itself.
 </details>
 
 2. Which garbage collector is designed for sub-millisecond pause times?

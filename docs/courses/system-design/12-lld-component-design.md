@@ -1,4 +1,4 @@
-# Chapter 12: Low-Level Design: Component and Class Design
+﻿# Chapter 12: Low-Level Design: Component and Class Design
 > **Previous:** [11 Lld Design Patterns](./11-lld-design-patterns.md) | **Next:** [13 Lld Concurrency](./13-lld-concurrency.md)
 
 ---
@@ -14,16 +14,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/system-design/12-lld-component-design/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/system-design/12-lld-component-design/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/system-design/12-lld-component-design/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/system-design/12-lld-component-design/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/system-design/12-lld-component-design/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/system-design/12-lld-component-design/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/system-design/12-lld-component-design/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/system-design/12-lld-component-design/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/system-design/12-lld-component-design/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/system-design/12-lld-component-design/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/system-design/12-lld-component-design/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/system-design/12-lld-component-design/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -565,7 +565,7 @@ class ElevatorController:
             if (direction == Direction.UP and floor >= elevator.current_floor) or \
                (direction == Direction.DOWN and floor <= elevator.current_floor):
                 return floor - elevator.current_floor if direction == Direction.UP else elevator.current_floor - floor
-        # Going opposite direction — must wait for turnaround
+        # Going opposite direction â€” must wait for turnaround
         return abs(elevator.current_floor - floor) + self.num_floors
 
     def step(self):
@@ -707,7 +707,7 @@ class Board:
         self._setup()
 
     def _setup(self):
-        # Place pieces — abbreviated for clarity
+        # Place pieces â€” abbreviated for clarity
         for col in range(8):
             self.grid[1][col] = Pawn(Color.BLACK, Position(1, col))
             self.grid[6][col] = Pawn(Color.WHITE, Position(6, col))
@@ -1020,11 +1020,11 @@ class RateLimiterFactory:
 
 | # | Question | Options | Answer |
 |---|----------|---------|--------|
-| 1 | In UML, what does a filled diamond arrow represent? | A) Aggregation (part can exist independently), B) Composition (part lifecycle tied to whole), C) Inheritance, D) Dependency | B) Composition — the part's lifetime is tied to the whole (filled diamond on owner side) |
+| 1 | In UML, what does a filled diamond arrow represent? | A) Aggregation (part can exist independently), B) Composition (part lifecycle tied to whole), C) Inheritance, D) Dependency | B) Composition â€” the part's lifetime is tied to the whole (filled diamond on owner side) |
 | 2 | What is LCOM4 and what does a value of 1 indicate? | A) Lines of Code Metric; 1 = too small, B) Lack of Cohesion of Methods; 1 = high cohesion, C) Loop Complexity Metric; 1 = simple, D) Coupling Metric; 1 = loose | B) LCOM4 counts connected components in the method-field graph; LCOM4 = 1 means all methods share fields (high cohesion) |
-| 3 | In the Elevator System, what algorithm does the controller use for dispatching? | A) FCFS (First-Come-First-Served), B) SCAN (service requests in current direction before reversing), C) SSTF (Shortest Seek Time First), D) Random | B) SCAN algorithm — the elevator continues in its current direction, picking up requests along the way, before reversing direction |
+| 3 | In the Elevator System, what algorithm does the controller use for dispatching? | A) FCFS (First-Come-First-Served), B) SCAN (service requests in current direction before reversing), C) SSTF (Shortest Seek Time First), D) Random | B) SCAN algorithm â€” the elevator continues in its current direction, picking up requests along the way, before reversing direction |
 | 4 | In the Parking Lot design, why is `ParkingSpot.park()` locked but `ParkingLot.park_vehicle()` is not? | A) Both should be locked, B) Spot-level lock prevents concurrent parking in the same spot; scanning floors without a lock is safe because spot lock ensures correctness, C) Neither needs locking, D) The whole lot scan must be locked | B) The fine-grained spot lock prevents double-booking a single spot; scanning for available spots without a global lock is safe because the actual parking operation (locked at spot level) atomically checks and occupies |
-| 5 | What is the purpose of the "make-move, check-for-self-check, undo" cycle in the Chess Game implementation? | A) To reduce computation, B) To validate all rule interactions including discovered checks, C) To simplify the board representation, D) To enable AI move generation | B) It validates all rule interactions — by executing the move, checking if the king is in check, and undoing, the system catches discovered checks, pins, and all other rule interactions without implementing special-case logic |
+| 5 | What is the purpose of the "make-move, check-for-self-check, undo" cycle in the Chess Game implementation? | A) To reduce computation, B) To validate all rule interactions including discovered checks, C) To simplify the board representation, D) To enable AI move generation | B) It validates all rule interactions â€” by executing the move, checking if the king is in check, and undoing, the system catches discovered checks, pins, and all other rule interactions without implementing special-case logic |
 
 ---
 
@@ -1523,9 +1523,9 @@ graph TD
 | UML class diagrams model structural relationships with precise notation | Use class diagrams for documenting architecture; use aggregation (hollow diamond) for independent parts and composition (filled diamond) for lifecycle-bound parts |
 | Sequence diagrams capture dynamic interaction flow over time | Use combined fragments (alt, opt, loop, par) to model branching, optional paths, loops, and parallel execution in system design documents |
 | The Parking Lot design demonstrates entity modeling with thread safety | Lock the spot-level operation (park/leave) rather than the entire lot scan to maximize concurrency |
-| The Vending Machine State pattern eliminates complex conditionals | Each state is a separate class with explicit transitions — the machine object delegates behavior to the current state |
+| The Vending Machine State pattern eliminates complex conditionals | Each state is a separate class with explicit transitions â€” the machine object delegates behavior to the current state |
 | The Elevator SCAN algorithm with dual heaps minimizes starvation | Use two priority queues (min-heap for up, max-heap for down) for O(log n) request insertion instead of linear floor scans |
-| The Chess Game validates moves through a make-check-undo cycle | Execute the move on a copy of the board, check for self-check, then undo — this trivially validates all rule interactions |
+| The Chess Game validates moves through a make-check-undo cycle | Execute the move on a copy of the board, check for self-check, then undo â€” this trivially validates all rule interactions |
 | The Logger library separates formatting, output, and level filtering as swappable components | Design for composability: Formatter (Strategy), Appender (Observer), Level Filter (Chain of Responsibility), all wired together at configuration time |
 
 ## Case Study
@@ -1536,7 +1536,7 @@ A public library system serving 50,000 members needed a digital catalog and borr
 
 The design phase began with entity identification: `Book`, `Member`, `BorrowRecord`, `Reservation`, `Branch`, `Librarian`. The class diagram showed composition between `Branch` and `BookCopy` (copies belong to a branch), aggregation between `Member` and `BorrowRecord` (records exist independently for audit purposes). The sequence diagram for `borrowBook` showed the flow: Member -> LibrarySystem -> validate member -> check book availability -> check fines -> create BorrowRecord -> update book availability. An `alt` fragment modeled the "fines exceeded" rejection path. The state machine defined book statuses: AVAILABLE, BORROWED, RESERVED, LOST, DAMAGED.
 
-The implementation applied SRP strictly: `BorrowingService` handled loans, `FineCalculator` computed overdue charges, `ReservationQueue` managed FIFO waiting lists, `CatalogSearch` handled queries. The Observer pattern was used for notifications — when a reserved book was returned, the `NotificationService` (observer) was notified and contacted the next member in the reservation queue. The Strategy pattern allowed different fine policies (standard $1/day, student $0.50/day, senior citizen free). The system handled 10,000 daily transactions with 99.9% uptime. A post-deployment review showed the design's extensibility: adding a new "digital lending" feature required only two new classes (`DigitalBook`, `DigitalRightsManager`) without modifying any existing code.
+The implementation applied SRP strictly: `BorrowingService` handled loans, `FineCalculator` computed overdue charges, `ReservationQueue` managed FIFO waiting lists, `CatalogSearch` handled queries. The Observer pattern was used for notifications â€” when a reserved book was returned, the `NotificationService` (observer) was notified and contacted the next member in the reservation queue. The Strategy pattern allowed different fine policies (standard $1/day, student $0.50/day, senior citizen free). The system handled 10,000 daily transactions with 99.9% uptime. A post-deployment review showed the design's extensibility: adding a new "digital lending" feature required only two new classes (`DigitalBook`, `DigitalRightsManager`) without modifying any existing code.
 
 ---
 - UML class diagrams use rectangles for classes, with `/` italicization for abstract entities, specific arrow types for inheritance (hollow triangle), composition (filled diamond), aggregation (hollow diamond), and dependency (dashed arrow).
@@ -1552,22 +1552,22 @@ The implementation applied SRP strictly: `BorrowingService` handled loans, `Fine
 ### Review Questions
 <details>
 <summary>Solution for Review Question 1</summary>
-**Aggregation** (hollow diamond): the part can exist independently of the whole. Example: `Department` aggregates `Professor` — if the department dissolves, professors still exist. **Composition** (filled diamond): the part's lifetime is tied to the whole. Example: `House` composes `Room` — if the house is demolished, the rooms cease to exist. Confusing them would cause bugs: if `Order` uses composition with `OrderItem` (items deleted with order), but the design incorrectly uses aggregation, deleting an order would leak items in memory/database. Conversely, if a `Team` incorrectly uses composition for `Player`, releasing a team would delete player records.
+**Aggregation** (hollow diamond): the part can exist independently of the whole. Example: `Department` aggregates `Professor` â€” if the department dissolves, professors still exist. **Composition** (filled diamond): the part's lifetime is tied to the whole. Example: `House` composes `Room` â€” if the house is demolished, the rooms cease to exist. Confusing them would cause bugs: if `Order` uses composition with `OrderItem` (items deleted with order), but the design incorrectly uses aggregation, deleting an order would leak items in memory/database. Conversely, if a `Team` incorrectly uses composition for `Player`, releasing a team would delete player records.
 </details>
 
 <details>
 <summary>Solution for Review Question 2</summary>
-`ParkingSpot.park()` must be locked to prevent two threads from simultaneously parking different vehicles in the same spot (race condition). The lock ensures that the check-and-occupy operation (`isAvailable` check + `vehicle` assignment) is atomic. `ParkingLot.park_vehicle()` iterates floors without a global lock because: (a) if a spot becomes available between the check and the `park()` call, the `park()` lock handles the conflict; (b) holding a global lock during the entire floor scan would block all other parking/exit operations, severely limiting concurrency. What could go wrong without spot-level locking: two vehicles could both find the same spot available and both execute `park()` — both would receive tickets for the same spot.
+`ParkingSpot.park()` must be locked to prevent two threads from simultaneously parking different vehicles in the same spot (race condition). The lock ensures that the check-and-occupy operation (`isAvailable` check + `vehicle` assignment) is atomic. `ParkingLot.park_vehicle()` iterates floors without a global lock because: (a) if a spot becomes available between the check and the `park()` call, the `park()` lock handles the conflict; (b) holding a global lock during the entire floor scan would block all other parking/exit operations, severely limiting concurrency. What could go wrong without spot-level locking: two vehicles could both find the same spot available and both execute `park()` â€” both would receive tickets for the same spot.
 </details>
 
 <details>
 <summary>Solution for Review Question 3</summary>
-The make-check-undo approach generates O(moves × checks) — for each candidate move, we execute it, generate all opponent moves, check for check, and undo. For a typical position with 40 candidate moves each generating 40 opponent moves, this is 1,600 board copies per move iteration. Performance implications: (a) board copy overhead for each candidate move, (b) generating opponent moves twice (once for check detection, once later), (c) undo is O(1) if using move state snapshots. Optimizations: use a bitboard representation (no copies — just XOR bit masks), generate only opponent captures + king checks (fast check detection), use a "check mask" that pre-computes which pieces can give check, and cache legal moves across iterations.
+The make-check-undo approach generates O(moves Ã— checks) â€” for each candidate move, we execute it, generate all opponent moves, check for check, and undo. For a typical position with 40 candidate moves each generating 40 opponent moves, this is 1,600 board copies per move iteration. Performance implications: (a) board copy overhead for each candidate move, (b) generating opponent moves twice (once for check detection, once later), (c) undo is O(1) if using move state snapshots. Optimizations: use a bitboard representation (no copies â€” just XOR bit masks), generate only opponent captures + king checks (fast check detection), use a "check mask" that pre-computes which pieces can give check, and cache legal moves across iterations.
 </details>
 
 <details>
 <summary>Solution for Review Question 4</summary>
-SCAN processes requests in the current direction before reversing — it reduces starvation because a request that arrived at floor 3 going up will be serviced on the current upward pass rather than waiting for the elevator to reach the bottom and come back up. FCFS services requests in arrival order regardless of direction — this causes excessive back-and-forth movement (thrashing). SCAN performs worse than FCFS when: (a) requests are clustered in one direction but the elevator is moving in the opposite direction (SCAN forces the elevator to continue to the end before reversing), (b) real-time systems where worst-case wait time must be bounded (FCFS has more predictable timing), (c) very low request density (SCAN wastes time traversing empty floors).
+SCAN processes requests in the current direction before reversing â€” it reduces starvation because a request that arrived at floor 3 going up will be serviced on the current upward pass rather than waiting for the elevator to reach the bottom and come back up. FCFS services requests in arrival order regardless of direction â€” this causes excessive back-and-forth movement (thrashing). SCAN performs worse than FCFS when: (a) requests are clustered in one direction but the elevator is moving in the opposite direction (SCAN forces the elevator to continue to the end before reversing), (b) real-time systems where worst-case wait time must be bounded (FCFS has more predictable timing), (c) very low request density (SCAN wastes time traversing empty floors).
 </details>
 
 ### Application Problems

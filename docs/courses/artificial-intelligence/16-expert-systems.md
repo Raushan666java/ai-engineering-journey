@@ -1,4 +1,4 @@
-# Chapter 16: Expert Systems
+﻿# Chapter 16: Expert Systems
 
 **Previous:** [Chapter 15: Ethics of AI](15-ethics-ai.md) | **Next:** [Chapter 17: Modern Artificial Intelligence](17-modern-ai.md)
 
@@ -9,16 +9,16 @@ By the conclusion of this chapter, the student will be able to: (1) describe the
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/16-expert-systems/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/16-expert-systems/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/16-expert-systems/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/16-expert-systems/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/16-expert-systems/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/16-expert-systems/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/16-expert-systems/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/16-expert-systems/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/16-expert-systems/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/16-expert-systems/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/16-expert-systems/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/16-expert-systems/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -29,9 +29,9 @@ By the conclusion of this chapter, the student will be able to: (1) describe the
 
 ## Why Expert Systems Matter
 
-**Real-World Analogy:** Imagine a world-class cardiologist retires after 40 years. Her knowledge of rare arrhythmias, subtle ECG patterns, and drug interactions — built from thousands of cases — vanishes. An expert system captures that knowledge in software. It never retires, never gets tired, and can be copied to every clinic in the world.
+**Real-World Analogy:** Imagine a world-class cardiologist retires after 40 years. Her knowledge of rare arrhythmias, subtle ECG patterns, and drug interactions â€” built from thousands of cases â€” vanishes. An expert system captures that knowledge in software. It never retires, never gets tired, and can be copied to every clinic in the world.
 
-Expert systems were AI's first commercial success story. In the 1980s, companies like DEC (XCON), DuPont, and Boeing saved hundreds of millions of dollars by encoding human expertise into rule-based systems. These systems handled tasks that were too complex for traditional algorithms but too narrow for general AI — tax preparation, medical diagnosis, equipment configuration, fault diagnosis.
+Expert systems were AI's first commercial success story. In the 1980s, companies like DEC (XCON), DuPont, and Boeing saved hundreds of millions of dollars by encoding human expertise into rule-based systems. These systems handled tasks that were too complex for traditional algorithms but too narrow for general AI â€” tax preparation, medical diagnosis, equipment configuration, fault diagnosis.
 
 **The Core Insight:** For domains with stable, well-documented knowledge and clear decision rules, a rule-based system can outperform both humans (consistency, speed) and machine learning (explainability, no training data requirement).
 
@@ -113,7 +113,7 @@ FUNCTION ExpertSystemShell(rules, initial_facts):
     RETURN working_memory
 ```
 
-### 1.3 Python Implementation — ES Shell
+### 1.3 Python Implementation â€” ES Shell
 
 
 ```python
@@ -182,12 +182,12 @@ class ExpertSystemShell:
 
 | Operation | Time Complexity | Space Complexity | Why |
 |-----------|---------------|-----------------|-----|
-| Match (naive) | O(R × C × F) | O(WM) | R rules × C conditions each evaluated against F facts |
-| Match (Rete) | O(R × C) amortized | O(Rete network) | Network caches partial matches across cycles |
+| Match (naive) | O(R Ã— C Ã— F) | O(WM) | R rules Ã— C conditions each evaluated against F facts |
+| Match (Rete) | O(R Ã— C) amortized | O(Rete network) | Network caches partial matches across cycles |
 | Conflict Resolution | O(M log M) | O(M) | Sort M matched rules by priority |
 | Fire | O(A) | O(WM) | Execute A actions per rule |
 
-**Why O(R × C × F) for naive match:** Each cycle checks every condition of every rule against every fact. With R=1000 rules, C=5 conditions each, F=100 facts, that is 500,000 evaluations per cycle. The Rete algorithm avoids this by maintaining a discrimination network of intermediate results, re-evaluating only affected nodes when facts change.
+**Why O(R Ã— C Ã— F) for naive match:** Each cycle checks every condition of every rule against every fact. With R=1000 rules, C=5 conditions each, F=100 facts, that is 500,000 evaluations per cycle. The Rete algorithm avoids this by maintaining a discrimination network of intermediate results, re-evaluating only affected nodes when facts change.
 
 ### 1.5 Advantages & Disadvantages
 
@@ -195,7 +195,7 @@ class ExpertSystemShell:
 | Advantages | Disadvantages |
 |-----------|--------------|
 | Transparent reasoning (explainability) | Knowledge acquisition bottleneck |
-| Consistent decisions (same input → same output) | Brittle at domain boundaries |
+| Consistent decisions (same input â†’ same output) | Brittle at domain boundaries |
 | No training data required | No learning from experience |
 | Easy to audit and verify | Maintenance difficulty at scale |
 | Humans can author rules directly | Rule interactions become unpredictable |
@@ -207,7 +207,7 @@ class ExpertSystemShell:
 | Edge Case | Description | Mitigation |
 |-----------|-------------|------------|
 | **Conflicting Rules** | Two rules match and produce contradictory conclusions | Conflict resolution strategy (priority, specificity) |
-| **Circular Rules** | A → B → C → A causes infinite loop | Cycle detection + max cycle limit |
+| **Circular Rules** | A â†’ B â†’ C â†’ A causes infinite loop | Cycle detection + max cycle limit |
 | **Missing Knowledge** | No rule applies to current case | Default rules or interactive query |
 | **Rule Interference** | Firing rule A removes conditions rule B needs | Refraction prevents re-firing same facts |
 | **Inconsistent Facts** | User provides contradictory data | Truth maintenance system |
@@ -226,8 +226,8 @@ class ExpertSystemShell:
 | Production Rules | IF condition THEN action | IF fever AND rash THEN measles | Diagnostic systems |
 | Frames | Object with slots | [Animal: type=mammal, habitat=land] | Hierarchical domains |
 | Semantic Nets | Node-edge-node triples | Dog IS-A Mammal | Concept relationships |
-| Predicate Logic | ∀x (Man(x) → Mortal(x)) | Formal reasoning | Theorem proving |
-| Decision Trees | IF-THEN-ELSE tree | Fever? → Rash? → Diagnosis | Classification |
+| Predicate Logic | âˆ€x (Man(x) â†’ Mortal(x)) | Formal reasoning | Theorem proving |
+| Decision Trees | IF-THEN-ELSE tree | Fever? â†’ Rash? â†’ Diagnosis | Classification |
 
 ### 2.2 Production Rule Anatomy
 
@@ -271,7 +271,7 @@ FUNCTION KnowledgeBase():
         DELETE facts[key]
 ```
 
-### 2.4 Dry Run — Knowledge Base State Changes
+### 2.4 Dry Run â€” Knowledge Base State Changes
 
 
 **Scenario:** Animal classification with 4 rules and initial facts {has_hair=true, eats_meat=true}
@@ -281,9 +281,9 @@ FUNCTION KnowledgeBase():
 | Step | Operation | Working Memory State |
 |------|-----------|---------------------|
 | 0 | Initial facts | {has_hair: T, eats_meat: T} |
-| 1 | Fire R1 (has_hair → mammal) | {has_hair: T, eats_meat: T, is_mammal: T} |
-| 2 | Fire R2 (eats_meat → carnivore) | {has_hair: T, eats_meat: T, is_mammal: T, is_carnivore: T} |
-| 3 | Fire R3 (mammal + carnivore → tiger) | {is_mammal: T, is_carnivore: T, animal: tiger} |
+| 1 | Fire R1 (has_hair â†’ mammal) | {has_hair: T, eats_meat: T, is_mammal: T} |
+| 2 | Fire R2 (eats_meat â†’ carnivore) | {has_hair: T, eats_meat: T, is_mammal: T, is_carnivore: T} |
+| 3 | Fire R3 (mammal + carnivore â†’ tiger) | {is_mammal: T, is_carnivore: T, animal: tiger} |
 
 ### 2.5 Python Implementation
 
@@ -392,17 +392,17 @@ kb.run()
 |-----------|------|-------|-----|
 | Rule addition | O(1) | O(1) | Append to list |
 | Fact assertion | O(1) | O(1) | Dictionary insert |
-| Rule match (all) | O(R × C) | O(1) | Test all R rules, C conditions each |
-| Rule match (indexed) | O(C × M) | O(R × C²) | Alpha-index reduces candidates to M matches |
+| Rule match (all) | O(R Ã— C) | O(1) | Test all R rules, C conditions each |
+| Rule match (indexed) | O(C Ã— M) | O(R Ã— CÂ²) | Alpha-index reduces candidates to M matches |
 
-**Why O(R × C):** Each match cycle must evaluate every condition of every rule. With R=500 and C=5, that is 2500 comparisons. The Rete algorithm improves this to O(C × M) where M ≪ R by maintaining a discrimination network.
+**Why O(R Ã— C):** Each match cycle must evaluate every condition of every rule. With R=500 and C=5, that is 2500 comparisons. The Rete algorithm improves this to O(C Ã— M) where M â‰ª R by maintaining a discrimination network.
 
 ### 2.7 Advantages & Disadvantages
 
 
 | Advantages | Disadvantages |
 |-----------|--------------|
-| Modular — rules are independent units | No inherent consistency checking |
+| Modular â€” rules are independent units | No inherent consistency checking |
 | Natural IF-THEN format matches human reasoning | Rule interactions can cause emergent behavior |
 | Easy to add/remove individual rules | Knowledge acquisition is labor-intensive |
 | Supports explanation via rule trace | Rules may conflict or overlap |
@@ -415,9 +415,9 @@ kb.run()
 |-----------|---------|----------|
 | **Conflicting rules** | R1 says animal=tiger, R2 says animal=lion for same facts | Priority ordering, specificity ordering |
 | **Redundant rules** | R1 and R2 produce same conclusion from same conditions | Rule removal (no effect but wastes cycles) |
-| **Subsumed rules** | R1: A&B→Z, R2: A&B&C→Z (R2 more specific) | Fire R2 first (specificity ordering) |
+| **Subsumed rules** | R1: A&Bâ†’Z, R2: A&B&Câ†’Z (R2 more specific) | Fire R2 first (specificity ordering) |
 | **Missing facts** | Rule needs fact not yet in WM | Query user, use defaults, or defer |
-| **Circular rules** | R1: A→B, R2: B→C, R3: C→A | Cycle detection (mark visited rules) |
+| **Circular rules** | R1: Aâ†’B, R2: Bâ†’C, R3: Câ†’A | Cycle detection (mark visited rules) |
 
 ---
 
@@ -431,14 +431,14 @@ kb.run()
 The inference engine operates in three repeating phases:
 
 ```
-┌────────────┐     ┌────────────────┐     ┌──────────┐
-│   MATCH    │────→│ RESOLVE CONFLICT│────→│   FIRE   │
-│ (find all  │     │ (select one     │     │(execute  │
-│  matching  │     │  rule from      │     │ RHS,     │
-│  rules)    │     │  conflict set)  │     │ update   │
-└────────────┘     └────────────────┘     │ WM)     │
-      ↑                                    └──────────┘
-      └──────────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚   MATCH    â”‚â”€â”€â”€â”€â†’â”‚ RESOLVE CONFLICTâ”‚â”€â”€â”€â”€â†’â”‚   FIRE   â”‚
+â”‚ (find all  â”‚     â”‚ (select one     â”‚     â”‚(execute  â”‚
+â”‚  matching  â”‚     â”‚  rule from      â”‚     â”‚ RHS,     â”‚
+â”‚  rules)    â”‚     â”‚  conflict set)  â”‚     â”‚ update   â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜     â”‚ WM)     â”‚
+      â†‘                                    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+      â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
             (repeat until fixpoint)
 ```
 
@@ -548,13 +548,13 @@ class InferenceEngine:
 
 | Phase | Time Complexity | Why |
 |-------|---------------|-----|
-| Match (naive) | O(R × C × F) | R rules, C conditions per rule, F facts |
-| Match (Rete) | O(ΔF × C × M) | Only ΔF new facts, M matching rules |
+| Match (naive) | O(R Ã— C Ã— F) | R rules, C conditions per rule, F facts |
+| Match (Rete) | O(Î”F Ã— C Ã— M) | Only Î”F new facts, M matching rules |
 | Conflict Resolution | O(M log M) | Sort M matched rules |
 | Fire | O(A) | Execute A actions |
-| Total per cycle | O(R × C × F) naive / O(ΔF × C × M) Rete | Dominated by match phase |
+| Total per cycle | O(R Ã— C Ã— F) naive / O(Î”F Ã— C Ã— M) Rete | Dominated by match phase |
 
-**Why Rete is faster:** In a naive system, every cycle re-evaluates all R×C conditions. In most sessions, only a few facts change (ΔF ≪ F). Rete maintains a network where each node stores partial match state. When a fact changes, only the affected branch of the network is recomputed — typically reducing evaluations by 90-99%.
+**Why Rete is faster:** In a naive system, every cycle re-evaluates all RÃ—C conditions. In most sessions, only a few facts change (Î”F â‰ª F). Rete maintains a network where each node stores partial match state. When a fact changes, only the affected branch of the network is recomputed â€” typically reducing evaluations by 90-99%.
 
 ### 3.6 Advantages & Disadvantages
 
@@ -574,7 +574,7 @@ class InferenceEngine:
 |-----------|---------|----------|
 | **Infinite loop** | Rules keep firing in cycle | Cycle detection, max cycles limit |
 | **Starvation** | High-priority rules prevent low-priority from firing | Fairness scheduling |
-| **Rule explosion** | M rules added causes M×C×F match cost | Rete, rule partitioning |
+| **Rule explosion** | M rules added causes MÃ—CÃ—F match cost | Rete, rule partitioning |
 | **Fact thrashing** | Same facts repeatedly asserted/retracted | Truth maintenance system |
 | **Non-termination** | Rules generate infinite new facts | Goal state detection |
 ---
@@ -591,18 +591,18 @@ ALGORITHM: ForwardChaining
 INPUT:  RuleSet R, Initial Facts F
 OUTPUT: Set of derived conclusions C
 
-1. Initialize working_memory ← F
-2. Initialize fired_set ← ∅
+1. Initialize working_memory â† F
+2. Initialize fired_set â† âˆ…
 3. REPEAT:
-   a. conflict_set ← ∅
-   b. FOR each rule r ∈ R:
-      i.   IF r ∉ fired_set AND conditions(r) ⊆ working_memory:
-           conflict_set ← conflict_set ∪ {r}
-   c. IF conflict_set = ∅: BREAK
-   d. selected ← CONFLICT_RESOLUTION(conflict_set)
-   e. conclusions ← CONSEQUENT(selected)
-   f. working_memory ← working_memory ∪ conclusions
-   g. fired_set ← fired_set ∪ {selected}
+   a. conflict_set â† âˆ…
+   b. FOR each rule r âˆˆ R:
+      i.   IF r âˆ‰ fired_set AND conditions(r) âŠ† working_memory:
+           conflict_set â† conflict_set âˆª {r}
+   c. IF conflict_set = âˆ…: BREAK
+   d. selected â† CONFLICT_RESOLUTION(conflict_set)
+   e. conclusions â† CONSEQUENT(selected)
+   f. working_memory â† working_memory âˆª conclusions
+   g. fired_set â† fired_set âˆª {selected}
 4. UNTIL fixpoint OR MAX_CYCLES reached
 5. RETURN working_memory
 ```
@@ -649,7 +649,7 @@ FUNCTION forward_chain(rules, initial_facts, max_iterations=100):
     RETURN wm
 ```
 
-### 4.3 Dry Run — Forward Chaining Trace Table
+### 4.3 Dry Run â€” Forward Chaining Trace Table
 
 
 **Rule Set:** Animal classification
@@ -669,12 +669,12 @@ FUNCTION forward_chain(rules, initial_facts, max_iterations=100):
 
 | Cycle | Conflict Set | Selected | WM Before | WM After |
 |-------|-------------|----------|-----------|----------|
-| 0 | — | — | has_hair, eats_meat, has_stripes | (initial) |
+| 0 | â€” | â€” | has_hair, eats_meat, has_stripes | (initial) |
 | 1 | R1(spec=1), R2(spec=1) | R1 (tie) | has_hair, eats_meat, has_stripes | +is_mammal |
 | 2 | R4(spec=2), R5(spec=2), R2 | R4 (spec=2) | +is_mammal | +is_carnivore |
 | 3 | R5(spec=2), R7(spec=3), R2 | R7 (spec=3) | +is_carnivore | +animal=tiger |
 | 4 | R5(spec=2), R2 | R5 (spec=2) | +animal=tiger | +is_tiger |
-| 5 | ∅ | — | Done | Done |
+| 5 | âˆ… | â€” | Done | Done |
 
 **Final WM:** {has_hair, eats_meat, has_stripes, is_mammal, is_carnivore, animal=tiger}
 
@@ -776,13 +776,13 @@ Diagnosis: ['battery_dead', 'car_wont_start', 'headlights_dim', 'replace_battery
 
 | Aspect | Complexity | Why |
 |--------|-----------|-----|
-| Time per cycle (naive) | O(R × C × F) | Each R rule checks C antecedents against F facts |
-| Time per cycle (Rete) | O(ΔF × M) | Only ΔF new facts propagate; M matches |
-| Total time (naive) | O(D × R × C × F) | D cycles × match cost |
+| Time per cycle (naive) | O(R Ã— C Ã— F) | Each R rule checks C antecedents against F facts |
+| Time per cycle (Rete) | O(Î”F Ã— M) | Only Î”F new facts propagate; M matches |
+| Total time (naive) | O(D Ã— R Ã— C Ã— F) | D cycles Ã— match cost |
 | Space (naive) | O(F + R) | Store facts and rules |
-| Space (Rete) | O(R × C × 2^(C-1)) | Alpha/beta memory nodes |
+| Space (Rete) | O(R Ã— C Ã— 2^(C-1)) | Alpha/beta memory nodes |
 
-**Why Rete wins:** With 500+ rules, naive checks 500×5×50=125,000 conditions/cycle. Rete checks only ~50 affected rules → ~250 evaluations.
+**Why Rete wins:** With 500+ rules, naive checks 500Ã—5Ã—50=125,000 conditions/cycle. Rete checks only ~50 affected rules â†’ ~250 evaluations.
 
 ### 4.6 Advantages & Disadvantages
 
@@ -790,7 +790,7 @@ Diagnosis: ['battery_dead', 'car_wont_start', 'headlights_dim', 'replace_battery
 | Advantages | Disadvantages |
 |-----------|--------------|
 | Works with any initial facts | May generate irrelevant conclusions |
-| Complete — derives all possible facts | Inefficient without goal direction |
+| Complete â€” derives all possible facts | Inefficient without goal direction |
 | Naturally handles multiple goals | Rule ordering affects performance |
 | Responsive to new information | Termination not guaranteed |
 
@@ -801,15 +801,15 @@ Diagnosis: ['battery_dead', 'car_wont_start', 'headlights_dim', 'replace_battery
 |-----------|---------|----------|
 | No rules match | Facts have no corresponding rules | Halt immediately |
 | Explosive chaining | Each fact matches 3 more rules | Set max_cycles limit |
-| Idempotent facts | A→B, B→C, C→B (B exists) | Refraction prevents re-firing |
-| Conflicting conclusions | R1: A→X, R2: A→¬X | CF values; priority decides |
-| Empty antecedent rule | R1: TRUE → always_fire | Fires once (refraction) |
+| Idempotent facts | Aâ†’B, Bâ†’C, Câ†’B (B exists) | Refraction prevents re-firing |
+| Conflicting conclusions | R1: Aâ†’X, R2: Aâ†’Â¬X | CF values; priority decides |
+| Empty antecedent rule | R1: TRUE â†’ always_fire | Fires once (refraction) |
 
 ---
 
 ## 5. Backward Chaining (Goal-Driven Reasoning)
 
-**Real-World Analogy:** A doctor starts with "Does the patient have strep throat?" then checks evidence: fever? sore throat? Each question supports or refutes the hypothesis. If insufficient, sub-hypotheses form. This is backward chaining — start with a goal, work backward to evidence.
+**Real-World Analogy:** A doctor starts with "Does the patient have strep throat?" then checks evidence: fever? sore throat? Each question supports or refutes the hypothesis. If insufficient, sub-hypotheses form. This is backward chaining â€” start with a goal, work backward to evidence.
 
 ### 5.1 Algorithm (Steps)
 
@@ -828,14 +828,14 @@ WHILE STACK NOT EMPTY:
         PROVED.add(current); CONTINUE
     IF current IN PROVED:
         CONTINUE
-    candidate_rules = [r ∈ R | current ∈ consequents(r)]
+    candidate_rules = [r âˆˆ R | current âˆˆ consequents(r)]
     IF candidate_rules IS EMPTY:
         response = ASK_USER(current)
         IF response: F.add(current); PROVED.add(current)
         ELSE: RETURN FALSE
     FOR each rule IN candidate_rules:
         PUSH antecedents(rule) ONTO STACK
-        IF ALL antecedents IN (F ∪ PROVED):
+        IF ALL antecedents IN (F âˆª PROVED):
             PROVED.add(current)
 RETURN (G IN PROVED)
 ```
@@ -874,7 +874,7 @@ FUNCTION backward_chain(goal, rules, facts, depth=0):
     RETURN False
 ```
 
-### 5.3 Dry Run — Backward Chaining Trace Table
+### 5.3 Dry Run â€” Backward Chaining Trace Table
 
 
 **Goal:** animal = tiger
@@ -883,17 +883,17 @@ FUNCTION backward_chain(goal, rules, facts, depth=0):
 
 | Step | Goal Stack | Current Goal | Rule | Action | Facts Used |
 |------|-----------|-------------|------|--------|------------|
-| 0 | [animal=tiger] | animal=tiger | — | Start | {} |
+| 0 | [animal=tiger] | animal=tiger | â€” | Start | {} |
 | 1 | [is_mammal, carnivore, stripes] | is_mammal | R7 | Push R7 ante | {} |
 | 2 | [has_hair], [carnivore, stripes] | has_hair | R1 | Push R1 ante | {} |
-| 3 | [], [carnivore, stripes] | has_hair | — | Known ✓ | {has_hair} |
-| 4 | [carnivore, stripes] | is_carnivore | — | Need subgoal | {has_hair} |
+| 3 | [], [carnivore, stripes] | has_hair | â€” | Known âœ“ | {has_hair} |
+| 4 | [carnivore, stripes] | is_carnivore | â€” | Need subgoal | {has_hair} |
 | 5 | [eats_meat], [stripes] | eats_meat | R4 | Push R4 ante | {has_hair} |
-| 6 | [], [stripes] | eats_meat | — | Known ✓ | +eats_meat |
-| 7 | [stripes] | has_stripes | — | Known ✓ | +has_stripes |
-| 8 | [] | animal=tiger | R7 | All proved ✓ | DONE |
+| 6 | [], [stripes] | eats_meat | â€” | Known âœ“ | +eats_meat |
+| 7 | [stripes] | has_stripes | â€” | Known âœ“ | +has_stripes |
+| 8 | [] | animal=tiger | R7 | All proved âœ“ | DONE |
 
-**Result:** animal=tiger = True (chain: R7 ← R4 ← R1)
+**Result:** animal=tiger = True (chain: R7 â† R4 â† R1)
 
 ### 5.4 Python Implementation
 
@@ -923,11 +923,11 @@ class BackwardChainingEngine:
             return True
         candidates = [r for r in self.rules if goal in r['cons']]
         if not candidates:
-            print(f"{indent}  Cannot prove — not in facts")
+            print(f"{indent}  Cannot prove â€” not in facts")
             return False
         for rule in candidates:
             print(f"{indent}  Try: {rule['name']} "
-                  f"({rule['ante']} → {rule['cons']})")
+                  f"({rule['ante']} â†’ {rule['cons']})")
             all_proved = all(self.prove(ant, depth+1)
                              for ant in rule['ante'])
             if all_proved:
@@ -941,7 +941,7 @@ class BackwardChainingEngine:
     def query(self, goal: str) -> bool:
         print(f"=== BC: prove '{goal}' ===\n")
         result = self.prove(goal)
-        chain = " → ".join(reversed(self.explanation))
+        chain = " â†’ ".join(reversed(self.explanation))
         print(f"\nResult: {goal} = {result}")
         print(f"Chain: {chain}")
         return result
@@ -961,7 +961,7 @@ engine.query("battery_dead")
 === BC: prove 'battery_dead' ===
 
 Goal: battery_dead
-  Try: R2 (['car_wont_start', 'headlights_dim'] → ['battery_dead'])
+  Try: R2 (['car_wont_start', 'headlights_dim'] â†’ ['battery_dead'])
     Goal: car_wont_start
       Known fact
     Goal: headlights_dim
@@ -977,7 +977,7 @@ Chain: R2
 
 | Aspect | Complexity | Why |
 |--------|-----------|-----|
-| Time (best case) | O(D × B) | D depth × B branching factor |
+| Time (best case) | O(D Ã— B) | D depth Ã— B branching factor |
 | Time (worst case) | O(B^D) | Explores all rules at each level |
 | Space (call stack) | O(D) | Recursion depth = chain length |
 | Space (memoization) | O(G) | Cache proved/failed subgoals |
@@ -989,7 +989,7 @@ Chain: R2
 
 | Criterion | Forward Chaining | Backward Chaining |
 |-----------|-----------------|-------------------|
-| Direction | Data → Goal | Goal → Data |
+| Direction | Data â†’ Goal | Goal â†’ Data |
 | Start | Known facts | Hypothesis |
 | Termination | Fixpoint (no rules match) | Goal proved/disproved |
 | Search | Breadth-first | Depth-first |
@@ -1012,7 +1012,7 @@ Chain: R2
 
 | Edge Case | Handling |
 |-----------|----------|
-| Circular rules A→B, B→C, C→A | Cycle detection (mark visited goals) |
+| Circular rules Aâ†’B, Bâ†’C, Câ†’A | Cycle detection (mark visited goals) |
 | Multiple rules same goal | Try R1 first, backtrack to R2 |
 | OR antecedents (IF A OR B THEN Z) | Try one at a time (backtrack) |
 | Negation (IF NOT A THEN Z) | Prove A; if fails, Z succeeds |
@@ -1021,14 +1021,14 @@ Chain: R2
 
 ## 6. Explanation Facility
 
-**Real-World Analogy:** When a doctor prescribes treatment, the patient asks "Why this?" The doctor explains: "Your fever and rash suggest measles." Expert systems provide the same transparency — a key advantage over neural networks.
+**Real-World Analogy:** When a doctor prescribes treatment, the patient asks "Why this?" The doctor explains: "Your fever and rash suggest measles." Expert systems provide the same transparency â€” a key advantage over neural networks.
 
 ### 6.1 Why and How Explanations
 
 
 | Question | Meaning | Example |
 |----------|---------|---------|
-| **How** was X derived? | Show rule chain | "R7: mammal ∧ carnivore ∧ stripes → tiger" |
+| **How** was X derived? | Show rule chain | "R7: mammal âˆ§ carnivore âˆ§ stripes â†’ tiger" |
 | **Why** ask for fact Y? | Show current goal | "To determine carnivore via R4" |
 
 ### 6.2 Pseudocode
@@ -1039,10 +1039,10 @@ FUNCTION ExplainHow(conclusion, rule_chain):
     PRINT "Conclusion:", conclusion
     PRINT "Derived using:"
     FOR EACH rule IN rule_chain:
-        PRINT "  Rule", rule.name, ":", rule.ante, "→", rule.cons
+        PRINT "  Rule", rule.name, ":", rule.ante, "â†’", rule.cons
     PRINT "Steps:"
     FOR i, step IN ENUMERATE(rule_chain):
-        PRINT f"  {i+1}. {step.name}: {step.ante} ✓ → {step.cons}"
+        PRINT f"  {i+1}. {step.name}: {step.ante} âœ“ â†’ {step.cons}"
 
 FUNCTION ExplainWhy(fact, current_goal, rule):
     PRINT "Asking about", fact, "because:"
@@ -1077,9 +1077,9 @@ class ExplanationFacility:
         for i, rn in enumerate(self.rule_chain, 1):
             d = self.rule_details[rn]
             print(f"  Step {i}: [{rn}] "
-                  f"IF {' ∧ '.join(d['ante'])} "
+                  f"IF {' âˆ§ '.join(d['ante'])} "
                   f"THEN {', '.join(d['cons'])}")
-        print(f"\nConclusion: {conclusion} ✓")
+        print(f"\nConclusion: {conclusion} âœ“")
 
     def explain_why(self, fact: str):
         print(f"=== WHY is '{fact}' needed? ===\n")
@@ -1087,7 +1087,7 @@ class ExplanationFacility:
             d = self.rule_details[rn]
             if fact in d['ante']:
                 print(f"To determine: {', '.join(d['cons'])}")
-                print(f"Need to check: {' ∧ '.join(d['ante'])}")
+                print(f"Need to check: {' âˆ§ '.join(d['ante'])}")
                 print(f"'{fact}' is one of those conditions.")
                 print(f"Rule: [{rn}] IF {ante} THEN {cons}")
                 return
@@ -1110,17 +1110,17 @@ exp.explain_why("eats_meat")
 === HOW was 'animal=tiger' derived? ===
 
   Step 1: [R1] IF has_hair THEN is_mammal
-  Step 2: [R4] IF is_mammal ∧ eats_meat THEN is_carnivore
-  Step 3: [R7] IF is_mammal ∧ is_carnivore ∧ has_stripes THEN animal=tiger
+  Step 2: [R4] IF is_mammal âˆ§ eats_meat THEN is_carnivore
+  Step 3: [R7] IF is_mammal âˆ§ is_carnivore âˆ§ has_stripes THEN animal=tiger
 
-Conclusion: animal=tiger ✓
+Conclusion: animal=tiger âœ“
 
 === WHY is 'eats_meat' needed? ===
 
 To determine: is_carnivore
-Need to check: is_mammal ∧ eats_meat
+Need to check: is_mammal âˆ§ eats_meat
 'eats_meat' is one of those conditions.
-Rule: [R4] IF is_mammal ∧ eats_meat THEN is_carnivore
+Rule: [R4] IF is_mammal âˆ§ eats_meat THEN is_carnivore
 ```
 
 ### 6.4 Complexity
@@ -1130,7 +1130,7 @@ Rule: [R4] IF is_mammal ∧ eats_meat THEN is_carnivore
 |-----------|-----------|-----|
 | How explanation | O(chain_length) | Walk and display rules |
 | Why explanation | O(chain_length) | Walk backward through chain |
-| Storage | O(R × (A + C)) | All rules with conditions/actions |
+| Storage | O(R Ã— (A + C)) | All rules with conditions/actions |
 
 ### 6.5 Advantages & Disadvantages
 
@@ -1150,13 +1150,13 @@ Rule: [R4] IF is_mammal ∧ eats_meat THEN is_carnivore
 | Long chains (50+ rules) | Summarize intermediate steps |
 | Multiple paths to conclusion | Show shortest or highest-CF path |
 | Conflicting evidence | Show both sides with CF |
-| User lacks technical background | Layer explanations (simple → detailed) |
+| User lacks technical background | Layer explanations (simple â†’ detailed) |
 
 ---
 
 ## 7. Uncertainty in Expert Systems
 
-**Real-World Analogy:** A doctor says "80% sure it's strep throat." Medical diagnosis has inherent uncertainty — symptoms overlap, tests have false positives. Expert systems need mechanisms to represent and propagate this uncertainty.
+**Real-World Analogy:** A doctor says "80% sure it's strep throat." Medical diagnosis has inherent uncertainty â€” symptoms overlap, tests have false positives. Expert systems need mechanisms to represent and propagate this uncertainty.
 
 ### 7.1 Sources of Uncertainty
 
@@ -1164,7 +1164,7 @@ Rule: [R4] IF is_mammal ∧ eats_meat THEN is_carnivore
 | Source | Example |
 |--------|---------|
 | Evidence uncertainty | "Mild fever" is subjective |
-| Rule uncertainty | "Fever + rash → measles (CF=0.8)" |
+| Rule uncertainty | "Fever + rash â†’ measles (CF=0.8)" |
 | Missing information | No blood test result |
 | Conflicting evidence | Fever suggests infection, WBC normal |
 | Temporal changes | Symptoms evolved since yesterday |
@@ -1180,12 +1180,12 @@ CF ranges from -1.0 (definitely false) to +1.0 (definitely true), 0 = unknown.
 
 | Operation | Formula |
 |-----------|---------|
-| AND | CF(A ∧ B) = min(CF(A), CF(B)) |
-| OR | CF(A ∨ B) = max(CF(A), CF(B)) |
-| NOT | CF(¬A) = -CF(A) |
-| Combine (both +) | CF₁ + CF₂ − CF₁·CF₂ |
-| Combine (both −) | CF₁ + CF₂ + CF₁·CF₂ |
-| Combine (mixed) | (CF₁ + CF₂) / (1 − min(|CF₁|, |CF₂|)) |
+| AND | CF(A âˆ§ B) = min(CF(A), CF(B)) |
+| OR | CF(A âˆ¨ B) = max(CF(A), CF(B)) |
+| NOT | CF(Â¬A) = -CF(A) |
+| Combine (both +) | CFâ‚ + CFâ‚‚ âˆ’ CFâ‚Â·CFâ‚‚ |
+| Combine (both âˆ’) | CFâ‚ + CFâ‚‚ + CFâ‚Â·CFâ‚‚ |
+| Combine (mixed) | (CFâ‚ + CFâ‚‚) / (1 âˆ’ min(|CFâ‚|, |CFâ‚‚|)) |
 
 #### Algorithm
 
@@ -1205,18 +1205,18 @@ FUNCTION CombineCF(cf1, cf2):
 ### 7.3 Dempster-Shafer Theory
 
 
-**Analogy:** A jury weighs evidence: fingerprints → 60% guilt, alibi → 70% innocence. Standard probability forces guilt + innocence = 1. DS allows "don't know" — remaining probability goes to ignorance.
+**Analogy:** A jury weighs evidence: fingerprints â†’ 60% guilt, alibi â†’ 70% innocence. Standard probability forces guilt + innocence = 1. DS allows "don't know" â€” remaining probability goes to ignorance.
 
 | Concept | Definition | Example |
 |---------|-----------|---------|
-| Frame Θ | All possible hypotheses | {Disease_A, B, C} |
-| Mass m | Belief in subsets of Θ | m({A,B}) = 0.3 |
+| Frame Î˜ | All possible hypotheses | {Disease_A, B, C} |
+| Mass m | Belief in subsets of Î˜ | m({A,B}) = 0.3 |
 | Belief Bel(A) | Sum of masses in subsets of A | Bel({A}) = m({A}) |
-| Plausibility Pl(A) | 1 − Bel(¬A) | Max possible belief |
-| Ignorance | Pl(A) − Bel(A) | Evidence gap |
+| Plausibility Pl(A) | 1 âˆ’ Bel(Â¬A) | Max possible belief |
+| Ignorance | Pl(A) âˆ’ Bel(A) | Evidence gap |
 
 **Dempster's Rule:**
-`(m₁ ⊕ m₂)(A) = (Σ_{B∩C=A} m₁(B) × m₂(C)) / (1 − Σ_{B∩C=∅} m₁(B) × m₂(C))`
+`(mâ‚ âŠ• mâ‚‚)(A) = (Î£_{Bâˆ©C=A} mâ‚(B) Ã— mâ‚‚(C)) / (1 âˆ’ Î£_{Bâˆ©C=âˆ…} mâ‚(B) Ã— mâ‚‚(C))`
 
 #### Pseudocode
 
@@ -1227,7 +1227,7 @@ FUNCTION DempsterCombine(m1, m2, frame):
     
     FOR EACH subset_A IN m1:
         FOR EACH subset_B IN m2:
-            intersection = subset_A ∩ subset_B
+            intersection = subset_A âˆ© subset_B
             product = m1[subset_A] * m2[subset_B]
             IF intersection IS EMPTY:
                 normalization += product
@@ -1346,18 +1346,18 @@ DS: Bel(Flu)=0.00, Pl(Flu)=0.80, Ignorance=0.80
 
 | Step | Fact | CF | Rule | Rule CF | Derived | Computed CF |
 |------|------|----|------|---------|---------|-------------|
-| 1 | fever | 0.8 | R1: fever→flu | 0.6 | flu | 0.8×0.6=0.48 |
-| 2 | cough | 0.7 | R2: cough→flu | 0.5 | flu(2nd) | 0.7×0.5=0.35 |
-| 3 | combine | 0.48+0.35 | — | — | flu final | 0.48+0.35-(0.48×0.35)=0.662 |
+| 1 | fever | 0.8 | R1: feverâ†’flu | 0.6 | flu | 0.8Ã—0.6=0.48 |
+| 2 | cough | 0.7 | R2: coughâ†’flu | 0.5 | flu(2nd) | 0.7Ã—0.5=0.35 |
+| 3 | combine | 0.48+0.35 | â€” | â€” | flu final | 0.48+0.35-(0.48Ã—0.35)=0.662 |
 
 ### 7.6 Complexity Analysis
 
 
 | Approach | Time | Space | Why |
 |----------|------|-------|-----|
-| CF propagation | O(R × A) | O(F) | Simple arithmetic per rule |
+| CF propagation | O(R Ã— A) | O(F) | Simple arithmetic per rule |
 | CF combine | O(1) per pair | O(1) | Single formula |
-| DS combine | O(|S₁| × |S₂|) | O(|Θ|²) | Mass cartesian product |
+| DS combine | O(|Sâ‚| Ã— |Sâ‚‚|) | O(|Î˜|Â²) | Mass cartesian product |
 | DS belief | O(|S|) | O(1) | Sum masses over subsets |
 
 **Why DS is exponential:** Frame with n elements has 2^n subsets. Infeasible for n > 20. Used with small frames or heuristic pruning.
@@ -1368,9 +1368,9 @@ DS: Bel(Flu)=0.00, Pl(Flu)=0.80, Ignorance=0.80
 | Criterion | Certainty Factors | Dempster-Shafer | Bayesian |
 |-----------|------------------|-----------------|----------|
 | Expressiveness | Single CF | Bel + Pl intervals | Single probability |
-| Ignorance | CF=0 | Pl − Bel > 0 | None |
-| Combination | CF₁ + CF₂ − CF₁·CF₂ | Dempster's rule | Bayes' theorem |
-| Computation | O(1) | O(|S₁|·|S₂|) | O(n) |
+| Ignorance | CF=0 | Pl âˆ’ Bel > 0 | None |
+| Combination | CFâ‚ + CFâ‚‚ âˆ’ CFâ‚Â·CFâ‚‚ | Dempster's rule | Bayes' theorem |
+| Computation | O(1) | O(|Sâ‚|Â·|Sâ‚‚|) | O(n) |
 | Theory | Heuristic | Evidence theory | Probability |
 | Counterintuitive? | Can exceed 1.0 | Conflict normalization | Coherent but needs priors |
 
@@ -1393,9 +1393,9 @@ DS: Bel(Flu)=0.00, Pl(Flu)=0.80, Ignorance=0.80
 | Linguistic terms | "likely," "rarely" | Map to numeric CF ranges |
 ---
 
-## 8. MYCIN — Medical Diagnosis Expert System
+## 8. MYCIN â€” Medical Diagnosis Expert System
 
-**Real-World Analogy:** MYCIN is like a specialist infectious disease doctor who has memorized 500 medical journal articles and can recall the exact diagnostic criteria for every bacterial infection at any hour of the day — but only for blood infections.
+**Real-World Analogy:** MYCIN is like a specialist infectious disease doctor who has memorized 500 medical journal articles and can recall the exact diagnostic criteria for every bacterial infection at any hour of the day â€” but only for blood infections.
 
 ### 8.1 Overview
 
@@ -1416,17 +1416,17 @@ MYCIN (Shortliffe, 1976) was developed at Stanford to diagnose bacterial infecti
 
 ```
 Patient Data (entered by physician)
-         ↓
+         â†“
    MYCIN Consultation System
-         ↓
+         â†“
    Inference Engine (backward chaining)
-         ↓
+         â†“
    Knowledge Base (~500 rules)
-         ↓
+         â†“
    Certainty Factor Calculator
-         ↓
+         â†“
    Explanation Facility (HOW / WHY)
-         ↓
+         â†“
    Diagnosis + Antibiotic Recommendation + Confidence
 ```
 
@@ -1478,7 +1478,7 @@ FUNCTION MYCIN_Diagnose(patient_data):
 
 FUNCTION MYCIN_CF(rule, evidence_cfs):
     // AND conditions
-    ante_cf = min(evidence_cfs)    // Conjunction → min
+    ante_cf = min(evidence_cfs)    // Conjunction â†’ min
     // Apply rule certainty
     conclusion_cf = ante_cf * rule.cf
     // Combine with existing CF for same conclusion
@@ -1488,7 +1488,7 @@ FUNCTION MYCIN_CF(rule, evidence_cfs):
         RETURN conclusion_cf
 ```
 
-### 8.5 Dry Run — MYCIN Diagnosis Trace
+### 8.5 Dry Run â€” MYCIN Diagnosis Trace
 
 
 **Goal:** Identify infecting organism
@@ -1497,11 +1497,11 @@ FUNCTION MYCIN_CF(rule, evidence_cfs):
 
 | Step | Goal | Rule | Evidence CF | Rule CF | Conclusion CF | WM Update |
 |------|------|------|-------------|---------|---------------|-----------|
-| 0 | identity=? | — | — | — | — | initial data |
+| 0 | identity=? | â€” | â€” | â€” | â€” | initial data |
 | 1 | identity=? | R050 match? | site=blood(1.0), stain=gramneg(1.0), morphology=rod(1.0), aerobicity=aerobic(1.0) | 0.8 | pseudomonas CF=0.8 | +identity=pseudomonas(0.8) |
-| 2 | identity=? | Check other rules | R064 stain=grampos fails | — | — | — |
-| 3 | identity | Confirm pseudomonas | — | — | 0.8 | Done |
-| 4 | therapy=? | R099: identity=pseudomonas(0.8), serious=true(0.7) | 0.8, 0.7 | 0.9 | therapy=gentamicin | min(0.8,0.7)=0.7 → 0.7×0.9=0.63 |
+| 2 | identity=? | Check other rules | R064 stain=grampos fails | â€” | â€” | â€” |
+| 3 | identity | Confirm pseudomonas | â€” | â€” | 0.8 | Done |
+| 4 | therapy=? | R099: identity=pseudomonas(0.8), serious=true(0.7) | 0.8, 0.7 | 0.9 | therapy=gentamicin | min(0.8,0.7)=0.7 â†’ 0.7Ã—0.9=0.63 |
 
 **Diagnosis:** Pseudomonas aeruginosa (CF=0.8)
 **Therapy:** Gentamicin (CF=0.63)
@@ -1556,7 +1556,7 @@ class MYCINEngine:
 
         best_cf = CertaintyFactor(0.0)
         for rule in candidates:
-            print(f"{indent}Try {rule['name']} → {key}")
+            print(f"{indent}Try {rule['name']} â†’ {key}")
             ante_cfs = []
             for ant_fact, ant_val in rule['ante'].items():
                 ant_cf = self.backward_chain(ant_fact, ant_val,
@@ -1575,7 +1575,7 @@ class MYCINEngine:
                     conclusion_cf = self.facts[key].combine(
                         conclusion_cf)
                 self.facts[key] = conclusion_cf
-                print(f"{indent}  ✓ {key} CF={conclusion_cf}")
+                print(f"{indent}  âœ“ {key} CF={conclusion_cf}")
                 if conclusion_cf.cf > best_cf.cf:
                     best_cf = conclusion_cf
 
@@ -1608,16 +1608,16 @@ if org_cf.cf >= 0.2:
 ```
 === MYCIN Diagnosis ===
 
-Try R050 → identity=pseudomonas
+Try R050 â†’ identity=pseudomonas
   Try stain=gramneg
   Try morphology=rod
   Try aerobicity=aerobic
-  ✓ identity=pseudomonas CF=CF(+0.80)
+  âœ“ identity=pseudomonas CF=CF(+0.80)
 
-Try R099 → therapy=gentamicin
+Try R099 â†’ therapy=gentamicin
   Try identity=pseudomonas
   Try infection_type=serious
-  ✓ therapy=gentamicin CF=CF(+0.63)
+  âœ“ therapy=gentamicin CF=CF(+0.63)
 
 Organism: Pseudomonas aeruginosa (CF=CF(+0.80))
 Therapy: Gentamicin (CF=CF(+0.63))
@@ -1628,10 +1628,10 @@ Therapy: Gentamicin (CF=CF(+0.63))
 
 | Operation | Complexity | Why |
 |-----------|-----------|-----|
-| Rule matching | O(R × A) | R rules, average A antecedents per rule |
+| Rule matching | O(R Ã— A) | R rules, average A antecedents per rule |
 | CF propagation | O(1) per rule | Simple multiplication |
 | CF combination | O(1) per conclusion | Single formula |
-| Backward chain | O(B^D × A) | B rules per goal, D depth |
+| Backward chain | O(B^D Ã— A) | B rules per goal, D depth |
 | Explanation | O(chain) | Linear in rule chain length |
 
 **Why MYCIN was fast:** With ~500 rules but small branching factor (typically 2-3 rules per goal), and shallow depth (3-5 levels), the search was manageable despite theoretical exponential worst case.
@@ -1660,7 +1660,7 @@ Therapy: Gentamicin (CF=CF(+0.63))
 
 ---
 
-## 9. DENDRAL — Chemical Analysis Expert System
+## 9. DENDRAL â€” Chemical Analysis Expert System
 
 **Real-World Analogy:** A chemist gets a mass spectrometry graph (peaks at various mass-to-charge ratios) and must figure out the molecule's structure. This is like identifying a building's floor plan by dropping a heavy ball on the roof and listening to the noises at each floor. DENDRAL automated this reasoning.
 
@@ -1682,17 +1682,17 @@ DENDRAL (Feigenbaum, Buchanan, Lederberg, 1969) at Stanford was the first expert
 
 ```
 FUNCTION DENDRAL(molecular_formula, mass_spectrum):
-    // Step 1: PLAN — Use mass spec to constrain structure space
+    // Step 1: PLAN â€” Use mass spec to constrain structure space
     constraints = PLAN(mass_spectrum)
     // constraints: functional groups present, molecular weight
     // constraints: likely substructures, impossible ones
     
-    // Step 2: GENERATE — Enumerate all candidate structures
+    // Step 2: GENERATE â€” Enumerate all candidate structures
     candidates = GENERATE(molecular_formula, constraints)
     // Use graph theory to enumerate all isomers
     // Prune with valence rules and stability heuristics
     
-    // Step 3: TEST — Predict and compare spectra
+    // Step 3: TEST â€” Predict and compare spectra
     best_candidate = NULL
     best_score = -INFINITY
     
@@ -1710,7 +1710,7 @@ FUNCTION DENDRAL(molecular_formula, mass_spectrum):
 
 
 ```
-1. INPUT: Molecular formula CₙHₘOₚ and mass spectrum (m/z peaks)
+1. INPUT: Molecular formula Câ‚™Hâ‚˜Oâ‚š and mass spectrum (m/z peaks)
 2. PLAN phase:
    a. Identify functional groups from characteristic peaks
    b. Determine molecular weight from parent peak
@@ -1727,24 +1727,24 @@ FUNCTION DENDRAL(molecular_formula, mass_spectrum):
 5. OUTPUT: Highest-ranked molecular structure + score
 ```
 
-### 9.4 Dry Run — DENDRAL Trace
+### 9.4 Dry Run â€” DENDRAL Trace
 
 
-**Input:** Formula C₂H₆O, Mass spectrum: peaks at m/z 46, 31, 15
+**Input:** Formula Câ‚‚Hâ‚†O, Mass spectrum: peaks at m/z 46, 31, 15
 
 | Phase | Step | Action | Result |
 |-------|------|--------|--------|
-| PLAN | 1 | Identify MW | Parent peak at m/z 46 → MW=46 |
-| PLAN | 2 | Check functional groups | Peak at m/z 31 → CH₂OH⁺ fragment (alcohol) |
+| PLAN | 1 | Identify MW | Parent peak at m/z 46 â†’ MW=46 |
+| PLAN | 2 | Check functional groups | Peak at m/z 31 â†’ CHâ‚‚OHâº fragment (alcohol) |
 | PLAN | 3 | Set constraints | Must contain OH group |
-| GENERATE | 1 | Enumerate isomers | C₂H₆O → ethanol (CH₃CH₂OH) and dimethyl ether (CH₃OCH₃) |
+| GENERATE | 1 | Enumerate isomers | Câ‚‚Hâ‚†O â†’ ethanol (CHâ‚ƒCHâ‚‚OH) and dimethyl ether (CHâ‚ƒOCHâ‚ƒ) |
 | GENERATE | 2 | Apply valence | Both valid |
-| GENERATE | 3 | Apply constraints | Ethanol has OH ✓, Dimethyl ether has no OH ✗ |
-| TEST | 1 | Predict ethanol spectrum | m/z 46 (parent), 31 (CH₂OH⁺), 15 (CH₃⁺) |
-| TEST | 2 | Match observed | All three peaks match ✓ |
-| TEST | 3 | Predict ether spectrum | m/z 46 (parent), 15 (CH₃⁺) but no m/z 31 |
+| GENERATE | 3 | Apply constraints | Ethanol has OH âœ“, Dimethyl ether has no OH âœ— |
+| TEST | 1 | Predict ethanol spectrum | m/z 46 (parent), 31 (CHâ‚‚OHâº), 15 (CHâ‚ƒâº) |
+| TEST | 2 | Match observed | All three peaks match âœ“ |
+| TEST | 3 | Predict ether spectrum | m/z 46 (parent), 15 (CHâ‚ƒâº) but no m/z 31 |
 | TEST | 4 | Score | Ethanol = 0.95, Ether = 0.40 |
-| OUTPUT | — | Best candidate | Ethanol (C₂H₅OH) |
+| OUTPUT | â€” | Best candidate | Ethanol (Câ‚‚Hâ‚…OH) |
 
 ### 9.5 Python DENDRAL Simulation
 
@@ -1787,13 +1787,13 @@ class DENDRAL_Simulation:
         """Generate candidate structures."""
         # Simplified: return predefined candidates
         candidates = [
-            {'name': 'Ethanol', 'formula': 'C₂H₆O',
-             'groups': ['OH', 'CH₃', 'CH₂'],
+            {'name': 'Ethanol', 'formula': 'Câ‚‚Hâ‚†O',
+             'groups': ['OH', 'CHâ‚ƒ', 'CHâ‚‚'],
              'atoms': {'C': 2, 'H': 6, 'O': 1},
              'MW': 46},
             {'name': 'Dimethyl Ether',
-             'formula': 'C₂H₆O',
-             'groups': ['OCH₃', 'CH₃'],
+             'formula': 'Câ‚‚Hâ‚†O',
+             'groups': ['OCHâ‚ƒ', 'CHâ‚ƒ'],
              'atoms': {'C': 2, 'H': 6, 'O': 1},
              'MW': 46},
         ]
@@ -1817,10 +1817,10 @@ class DENDRAL_Simulation:
         """Predict mass spectrum for a candidate."""
         spectrum = {molecule['MW']: 1.0}  # parent peak
         if 'alcohol' in str(molecule['groups']):
-            spectrum[31] = 0.8  # CH₂OH⁺
-        if 'CH₃' in molecule['groups']:
+            spectrum[31] = 0.8  # CHâ‚‚OHâº
+        if 'CHâ‚ƒ' in molecule['groups']:
             spectrum[15] = 0.6
-        if 'OCH₃' in molecule['groups']:
+        if 'OCHâ‚ƒ' in molecule['groups']:
             spectrum[15] = 0.7
             spectrum[29] = 0.3
         return spectrum
@@ -1888,12 +1888,12 @@ dendral.analyze({'C': 2, 'H': 6, 'O': 1}, spectrum)
 | Phase | Complexity | Why |
 |-------|-----------|-----|
 | PLAN | O(K) | K characteristic peaks checked |
-| GENERATE | O(N!) worst case | N atoms → N! possible bond graphs (isomer explosion) |
+| GENERATE | O(N!) worst case | N atoms â†’ N! possible bond graphs (isomer explosion) |
 | GENERATE (pruned) | O(exp(constraints)) | Constraints prune most branches |
-| TEST | O(C × P) | C candidates × P predicted peaks |
-| Total | O(exp(N)) worst, O(C × P) typical | Pruning makes it practical |
+| TEST | O(C Ã— P) | C candidates Ã— P predicted peaks |
+| Total | O(exp(N)) worst, O(C Ã— P) typical | Pruning makes it practical |
 
-**Why isomer explosion is hard:** For formula C₃₀H₆₂O, there are ~4 billion possible isomers. DENDRAL's heuristic pruning (functional group constraints, stability rules, valence checks) reduced this to hundreds.
+**Why isomer explosion is hard:** For formula Câ‚ƒâ‚€Hâ‚†â‚‚O, there are ~4 billion possible isomers. DENDRAL's heuristic pruning (functional group constraints, stability rules, valence checks) reduced this to hundreds.
 
 ### 9.7 Advantages & Disadvantages
 
@@ -1913,12 +1913,12 @@ dendral.analyze({'C': 2, 'H': 6, 'O': 1}, spectrum)
 |-----------|----------|
 | No matching candidate | Returns top N with low confidence scores |
 | Isomers with similar spectra | Reports all high-scoring candidates for manual review |
-| Unknown fragmentation pattern | Knowledge base may lack relevant rules → low score |
-| Large molecules (50+ atoms) | Combinatorial explosion → limited to substructure analysis |
+| Unknown fragmentation pattern | Knowledge base may lack relevant rules â†’ low score |
+| Large molecules (50+ atoms) | Combinatorial explosion â†’ limited to substructure analysis |
 | Multiple functional groups overlapping | Characteristic peaks used for each group independently |
 ---
 
-## 10. Expert Systems vs Machine Learning — Comparison Table
+## 10. Expert Systems vs Machine Learning â€” Comparison Table
 
 | Criterion | Expert Systems | Machine Learning |
 |-----------|---------------|-----------------|
@@ -1942,36 +1942,36 @@ dendral.analyze({'C': 2, 'H': 6, 'O': 1}, spectrum)
 
 ```
 USE Expert Systems WHEN:
-    ✓ Domain knowledge is well-understood and stable
-    ✓ Explainability is required (medical, legal, regulatory)
-    ✓ Training data is scarce or expensive
-    ✓ Rules can be articulated by experts
-    ✓ Consistency is critical (same input = same output)
-    ✓ Audit trail is required
+    âœ“ Domain knowledge is well-understood and stable
+    âœ“ Explainability is required (medical, legal, regulatory)
+    âœ“ Training data is scarce or expensive
+    âœ“ Rules can be articulated by experts
+    âœ“ Consistency is critical (same input = same output)
+    âœ“ Audit trail is required
 
 USE Machine Learning WHEN:
-    ✓ Large amounts of labeled data are available
-    ✓ Rules are unknown or too complex to articulate
-    ✓ The domain changes over time (fraud patterns, user preferences)
-    ✓ Approximate answers are acceptable
-    ✓ Pattern recognition from raw data (images, speech, text)
+    âœ“ Large amounts of labeled data are available
+    âœ“ Rules are unknown or too complex to articulate
+    âœ“ The domain changes over time (fraud patterns, user preferences)
+    âœ“ Approximate answers are acceptable
+    âœ“ Pattern recognition from raw data (images, speech, text)
 ```
 
 ---
 
-## 11. Knowledge Representation Methods — Comparison
+## 11. Knowledge Representation Methods â€” Comparison
 
 | Method | Representation | Inference | Expressiveness | Complexity | Best For |
 |--------|---------------|-----------|---------------|------------|----------|
-| **Production Rules** | IF condition THEN action | Forward/backward chaining | Medium | O(R×C) matching | Diagnostic systems |
+| **Production Rules** | IF condition THEN action | Forward/backward chaining | Medium | O(RÃ—C) matching | Diagnostic systems |
 | **Frames** | Object + slot + value + facet | Inheritance, method attachment | High | O(F) lookup | Hierarchical domains |
 | **Semantic Nets** | Nodes (concepts) + edges (relationships) | Spreading activation, inheritance | High | O(N+E) traversal | Taxonomies, ontologies |
-| **Predicate Logic** | ∀x (P(x) → Q(x)) | Resolution, unification | Very high | O(exp(N)) theorem proving | Mathematics, formal verification |
+| **Predicate Logic** | âˆ€x (P(x) â†’ Q(x)) | Resolution, unification | Very high | O(exp(N)) theorem proving | Mathematics, formal verification |
 | **Decision Trees** | Tree of IF-THEN-ELSE nodes | Traverse root to leaf | Medium | O(depth) classification | Classification with clear features |
 | **Bayesian Networks** | DAG + conditional probability tables | Probabilistic inference | High | O(exp(N)) exact | Uncertainty reasoning |
-| **Fuzzy Logic** | Linguistic variables + membership functions | Defuzzification | Medium | O(R × A) | Continuous control problems |
+| **Fuzzy Logic** | Linguistic variables + membership functions | Defuzzification | Medium | O(R Ã— A) | Continuous control problems |
 
-### 11.1 Production Rules — Detailed
+### 11.1 Production Rules â€” Detailed
 
 
 **Structure:** `IF <condition> THEN <action>`
@@ -1979,7 +1979,7 @@ USE Machine Learning WHEN:
 - Disadvantage: No inherent hierarchy, conflict resolution needed
 - Best for: Small to medium diagnostic systems (50-5000 rules)
 
-### 11.2 Frames — Detailed
+### 11.2 Frames â€” Detailed
 
 
 **Structure:**
@@ -1994,7 +1994,7 @@ Frame: MAMMAL
 - Disadvantage: Rigid hierarchy, exceptions hard to model
 - Best for: Classification with hierarchical structure
 
-### 11.3 Semantic Nets — Detailed
+### 11.3 Semantic Nets â€” Detailed
 
 
 **Structure:** `MAMMAL --is-a--> ANIMAL`, `WHALE --is-a--> MAMMAL`
@@ -2007,19 +2007,19 @@ Frame: MAMMAL
 
 ```
 IF domain has clear IF-THEN rules:
-    → Production Rules
+    â†’ Production Rules
 ELIF domain has hierarchical classification:
-    → Frames
+    â†’ Frames
 ELIF domain requires relationship modeling:
-    → Semantic Nets
+    â†’ Semantic Nets
 ELIF domain requires formal proofs:
-    → Predicate Logic
+    â†’ Predicate Logic
 ELIF domain has uncertainty + causality:
-    → Bayesian Networks
+    â†’ Bayesian Networks
 ELIF domain has continuous values + vagueness:
-    → Fuzzy Logic
+    â†’ Fuzzy Logic
 ELIF domain needs simplicity + interpretability:
-    → Decision Trees
+    â†’ Decision Trees
 ```
 
 ---
@@ -2035,7 +2035,7 @@ ELIF domain needs simplicity + interpretability:
 - **Protocol analysis:** Record experts solving real cases, analyze think-aloud protocols
 - **Machine induction:** Learn rules from example cases automatically
 - **Multiple experts:** Cross-validate knowledge from several experts
-- **Iterative refinement:** Prototype → expert review → refine cycle
+- **Iterative refinement:** Prototype â†’ expert review â†’ refine cycle
 - **Knowledge engineer training:** Teach engineers domain fundamentals
 
 **Q2: When would you choose a rule-based expert system over a machine learning model?**
@@ -2055,7 +2055,7 @@ Choose ML when:
 
 **Q3: Explain forward vs backward chaining with a real-world example.**
 
-**Answer:** Forward chaining = data-driven: "I have a fever and rash → check what diseases match." Used for monitoring (network intrusion detection starts from packet data, works toward alerts). Backward chaining = goal-driven: "Could this be measles? Check for fever, rash, Koplik spots." Used for diagnosis (MYCIN starts with "identify organism" and asks for specific data).
+**Answer:** Forward chaining = data-driven: "I have a fever and rash â†’ check what diseases match." Used for monitoring (network intrusion detection starts from packet data, works toward alerts). Backward chaining = goal-driven: "Could this be measles? Check for fever, rash, Koplik spots." Used for diagnosis (MYCIN starts with "identify organism" and asks for specific data).
 
 **Q4: What are the limitations of certainty factors?**
 
@@ -2063,9 +2063,9 @@ Choose ML when:
 
 **Q5: How does MYCIN handle uncertainty in medical diagnosis?**
 
-**Answer:** MYCIN uses certainty factors (CF) ranging from -1 to +1. Each rule has a CF (e.g., 0.8), and each fact has a CF from the physician. For AND conditions, MYCIN takes the minimum CF. The conclusion CF = min(antecedent CFs) × rule CF. If two rules support the same conclusion, MYCIN combines them: CF₁ + CF₂ − CF₁·CF₂ (when both positive). This allows MYCIN to reason with imperfect information.
+**Answer:** MYCIN uses certainty factors (CF) ranging from -1 to +1. Each rule has a CF (e.g., 0.8), and each fact has a CF from the physician. For AND conditions, MYCIN takes the minimum CF. The conclusion CF = min(antecedent CFs) Ã— rule CF. If two rules support the same conclusion, MYCIN combines them: CFâ‚ + CFâ‚‚ âˆ’ CFâ‚Â·CFâ‚‚ (when both positive). This allows MYCIN to reason with imperfect information.
 
-### 12.2 Rule-Based vs ML — Deep Dive
+### 12.2 Rule-Based vs ML â€” Deep Dive
 
 
 | Aspect | Rule-Based | ML |
@@ -2080,7 +2080,7 @@ Choose ML when:
 | **Debugging** | Trace rule chain | Feature importance, SHAP |
 | **Regulatory compliance** | Strong (explainable) | Challenging (black box) |
 
-### 12.3 Knowledge Acquisition Bottleneck — Detailed Strategies
+### 12.3 Knowledge Acquisition Bottleneck â€” Detailed Strategies
 
 
 | Strategy | Description | Time | Effort | Effectiveness |
@@ -2091,13 +2091,13 @@ Choose ML when:
 | Repertory grids | Experts rate cases on dimensions | Days | Medium | Medium-High |
 | Machine induction | Learn rules from case data | Automated | Low | High (if data exists) |
 | Document analysis | Extract rules from textbooks/manuals | Weeks | Medium | Medium |
-| Iterative refinement | Prototype → expert feedback → revise | Months | High | Very High |
+| Iterative refinement | Prototype â†’ expert feedback â†’ revise | Months | High | Very High |
 
 ---
 
 ## 13. Applications in Real Systems
 
-### 13.1 Medical Diagnosis — MYCIN
+### 13.1 Medical Diagnosis â€” MYCIN
 
 
 | Aspect | Detail |
@@ -2111,7 +2111,7 @@ Choose ML when:
 
 **Code Example:** See Section 8.6 (MYCIN Python simulation)
 
-### 13.2 Chemical Analysis — DENDRAL
+### 13.2 Chemical Analysis â€” DENDRAL
 
 
 | Aspect | Detail |
@@ -2125,13 +2125,13 @@ Choose ML when:
 
 **Code Example:** See Section 9.5 (DENDRAL Python simulation)
 
-### 13.3 Configuration — XCON/R1
+### 13.3 Configuration â€” XCON/R1
 
 
 | Aspect | Detail |
 |--------|--------|
 | **Problem** | DEC's VAX minicomputers had millions of possible component combinations; manual configuration took hours and had 35% error rate |
-| **Solution** | XCON (eXpert CONfigurer, also called R1) — ~10,000 production rules |
+| **Solution** | XCON (eXpert CONfigurer, also called R1) â€” ~10,000 production rules |
 | **Architecture** | Forward chaining with Rete algorithm |
 | **Input** | Customer order (CPU, memory, peripherals) |
 | **Output** | Complete system configuration with cabling, power, and layout |
@@ -2159,28 +2159,28 @@ Choose ML when:
 | **DIPMETER** | Oil well log analysis | ~300 | Interpreted geological formations |
 ---
 
-## 14. CLIPS — C Language Integrated Production System
+## 14. CLIPS â€” C Language Integrated Production System
 
-**Real-World Analogy:** CLIPS is like a programming language designed specifically for IF-THEN rules, similar to how SQL is designed specifically for database queries. You tell CLIPS "what are the rules" and "what are the facts" — it handles the engine.
+**Real-World Analogy:** CLIPS is like a programming language designed specifically for IF-THEN rules, similar to how SQL is designed specifically for database queries. You tell CLIPS "what are the rules" and "what are the facts" â€” it handles the engine.
 
 ### 14.1 CLIPS Architecture
 
 
 ```
 CLIPS Program
-  ├── Knowledge Base (rules + facts)
-  │     ├── Defrules (production rules)
-  │     ├── Deftemplates (fact structures)
-  │     └── Deffacts (initial facts)
-  ├── Inference Engine (Rete + forward chaining)
-  │     ├── Pattern matching
-  │     ├── Conflict resolution
-  │     └── Execution
-  └── User Interface
-        ├── (reset) — clear WM, load facts
-        ├── (run) — execute inference
-        ├── (facts) — display WM
-        └── (rules) — display rules
+  â”œâ”€â”€ Knowledge Base (rules + facts)
+  â”‚     â”œâ”€â”€ Defrules (production rules)
+  â”‚     â”œâ”€â”€ Deftemplates (fact structures)
+  â”‚     â””â”€â”€ Deffacts (initial facts)
+  â”œâ”€â”€ Inference Engine (Rete + forward chaining)
+  â”‚     â”œâ”€â”€ Pattern matching
+  â”‚     â”œâ”€â”€ Conflict resolution
+  â”‚     â””â”€â”€ Execution
+  â””â”€â”€ User Interface
+        â”œâ”€â”€ (reset) â€” clear WM, load facts
+        â”œâ”€â”€ (run) â€” execute inference
+        â”œâ”€â”€ (facts) â€” display WM
+        â””â”€â”€ (rules) â€” display rules
 ```
 
 ### 14.2 CLIPS Syntax
@@ -2254,7 +2254,7 @@ CLIPS uses the Rete algorithm internally. The Rete network has:
 - **Beta nodes:** Join conditions (AND across patterns)
 - **Terminal nodes:** Full rule matches (ready to fire)
 
-**Why Rete in CLIPS:** CLIPS was designed for real-time applications (NASA). The Rete algorithm provides predictable O(ΔF) performance per cycle instead of O(R×C×F).
+**Why Rete in CLIPS:** CLIPS was designed for real-time applications (NASA). The Rete algorithm provides predictable O(Î”F) performance per cycle instead of O(RÃ—CÃ—F).
 
 ---
 
@@ -2274,7 +2274,7 @@ The knowledge acquisition bottleneck is widely recognized as the primary obstacl
 |--------|-----------|------|------|
 | **Structured Interview** | Predefined questions | Systematic | May miss tacit knowledge |
 | **Unstructured Interview** | Free-form conversation | Uncovers unexpected insights | Time-consuming |
-| **Protocol Analysis** | Expert thinks aloud | Rich behavioral data | Expensive (1hr → 10hr analysis) |
+| **Protocol Analysis** | Expert thinks aloud | Rich behavioral data | Expensive (1hr â†’ 10hr analysis) |
 | **Repertory Grid** | Rate cases on dimensions | Quantifies conceptual structure | Abstract, hard for some experts |
 | **Machine Induction** | Learn rules from cases | Automated, rapid | Needs high-quality case data |
 | **Document Analysis** | Extract from manuals | Systematic coverage | May be outdated |
@@ -2316,7 +2316,7 @@ THEN diagnosis = meningitis
 
 // The system works for known cases.
 // But if a patient has meningitis with no fever (immunocompromised),
-// the rule never fires — system misses the diagnosis.
+// the rule never fires â€” system misses the diagnosis.
 // A human doctor would consider the context.
 ```
 
@@ -2334,7 +2334,7 @@ THEN diagnosis = meningitis
 
 ---
 
-## 17. Concept Comparison — Expert Systems Summary
+## 17. Concept Comparison â€” Expert Systems Summary
 
 | System | Domain | Reasoning | Uncertainty Model | Rules | Status |
 |--------|--------|:--------:|:-----------------:|:----:|:------:|
@@ -2345,26 +2345,26 @@ THEN diagnosis = meningitis
 | CLIPS | General purpose | Forward+backward+Rete | Programmable | User-defined | Open source (NASA) |
 | Prolog | Logic programming | Backward chaining (SLD resolution) | None | User-defined | General-purpose language |
 
-## 18. Quick Reference — Inference Engine Strategies
+## 18. Quick Reference â€” Inference Engine Strategies
 
 | Strategy | Direction | Mechanism | Start Point | Use Case |
 |:--------:|:---------:|:---------:|:-----------:|:--------:|
-| Forward Chaining | Data → Goal | Match → Fire → Repeat | Known facts | Configuration, monitoring |
-| Backward Chaining | Goal → Data | Hypothesize → Verify → Repeat | Hypothesis | Diagnosis, prescription |
-| Generate-and-Test | Data → Candidates → Verify | Enumerate → Predict → Score | Constraints | Design, structure elucidation |
+| Forward Chaining | Data â†’ Goal | Match â†’ Fire â†’ Repeat | Known facts | Configuration, monitoring |
+| Backward Chaining | Goal â†’ Data | Hypothesize â†’ Verify â†’ Repeat | Hypothesis | Diagnosis, prescription |
+| Generate-and-Test | Data â†’ Candidates â†’ Verify | Enumerate â†’ Predict â†’ Score | Constraints | Design, structure elucidation |
 | Hybrid (forward+backward) | Both directions | Switch based on task phase | Both | Complex problem solving |
 
 ## 19. Cross-Application Matrix
 
 | Technique | ML | Computer Vision | NLP | Research |
 |-----------|:---:|:---:|:---:|:--------:|
-| Rule-Based Systems | ⬜ | ⬜ | ✅ (regex, grammars) | ✅ (MYCIN, DENDRAL) |
-| Forward Chaining | ⬜ | ⬜ | ⬜ | ✅ |
-| Backward Chaining | ⬜ | ⬜ | ⬜ | ✅ |
-| Certainty Factors | ⬜ | ⬜ | ⬜ | ✅ |
-| Dempster-Shafer | ✅ (sensor fusion) | ⬜ | ⬜ | ✅ |
-| Frames | ⬜ | ⬜ | ✅ (semantic parsing) | ✅ |
-| Semantic Nets | ⬜ | ⬜ | ✅ (WordNet) | ✅ (ontologies) |
+| Rule-Based Systems | â¬œ | â¬œ | âœ… (regex, grammars) | âœ… (MYCIN, DENDRAL) |
+| Forward Chaining | â¬œ | â¬œ | â¬œ | âœ… |
+| Backward Chaining | â¬œ | â¬œ | â¬œ | âœ… |
+| Certainty Factors | â¬œ | â¬œ | â¬œ | âœ… |
+| Dempster-Shafer | âœ… (sensor fusion) | â¬œ | â¬œ | âœ… |
+| Frames | â¬œ | â¬œ | âœ… (semantic parsing) | âœ… |
+| Semantic Nets | â¬œ | â¬œ | âœ… (WordNet) | âœ… (ontologies) |
 
 ## 20. Chapter Quiz
 
@@ -2374,7 +2374,7 @@ THEN diagnosis = meningitis
 - C) Forward chaining uses rules; backward chaining uses frames
 - D) There is no difference
 
-<details><summary>Answer&lt;/summary&gt;B) Forward chaining is data-driven (facts → conclusions), while backward chaining is goal-driven (hypothesis → supporting evidence).</details>
+<details><summary>Answer&lt;/summary&gt;B) Forward chaining is data-driven (facts â†’ conclusions), while backward chaining is goal-driven (hypothesis â†’ supporting evidence).</details>
 
 **Q2:** MYCIN's certainty factors handle uncertainty by:
 - A) Using probability theory
@@ -2382,7 +2382,7 @@ THEN diagnosis = meningitis
 - C) Applying fuzzy logic
 - D) Using Bayesian networks
 
-<details><summary>Answer&lt;/summary&gt;B) MYCIN CF = MB − MD, ranging from -1 (definitely false) to +1 (definitely true). AND takes min CF; OR takes max CF; sequential combination uses CF₁ + CF₂ − CF₁·CF₂.</details>
+<details><summary>Answer&lt;/summary&gt;B) MYCIN CF = MB âˆ’ MD, ranging from -1 (definitely false) to +1 (definitely true). AND takes min CF; OR takes max CF; sequential combination uses CFâ‚ + CFâ‚‚ âˆ’ CFâ‚Â·CFâ‚‚.</details>
 
 **Q3:** The knowledge acquisition bottleneck refers to:
 - A) Computers are too slow for knowledge processing
@@ -2402,7 +2402,7 @@ THEN diagnosis = meningitis
 
 **Q5:** What distinguishes Dempster-Shafer theory from Bayesian probability?
 - A) DS is simpler
-- B) DS can model ignorance explicitly (Pl − Bel > 0), while Bayesian forces belief + disbelief = 1
+- B) DS can model ignorance explicitly (Pl âˆ’ Bel > 0), while Bayesian forces belief + disbelief = 1
 - C) DS is always faster
 - D) DS does not use probabilities
 
@@ -2426,7 +2426,7 @@ THEN diagnosis = meningitis
 
 **Q8:** What was the significance of XCON/R1?
 - A) First medical expert system
-- B) First commercially successful expert system — saved DEC $40M/year configuring VAX computers
+- B) First commercially successful expert system â€” saved DEC $40M/year configuring VAX computers
 - C) First system to use neural networks
 - D) First system for chemical analysis
 
@@ -2477,14 +2477,14 @@ THEN diagnosis = meningitis
 Expert systems were AI's first successful commercial paradigm, demonstrating that domain-specific knowledge could be encoded and applied to solve real problems. The architecture of knowledge base, inference engine, explanation facility, and working memory established principles still used in modern AI systems.
 
 Key takeaways:
-- **Forward chaining** works from data to conclusions — best for monitoring and configuration.
-- **Backward chaining** works from hypotheses to evidence — best for diagnosis and prescription.
+- **Forward chaining** works from data to conclusions â€” best for monitoring and configuration.
+- **Backward chaining** works from hypotheses to evidence â€” best for diagnosis and prescription.
 - **Certainty factors** and **Dempster-Shafer** provide uncertainty management with different trade-offs.
 - **MYCIN** proved rule-based systems could match human experts in narrow domains.
 - **DENDRAL** and **XCON** demonstrated commercial viability across different domains.
 - The **knowledge acquisition bottleneck** remains the primary limitation.
 - Expert systems excel where **explainability**, **consistency**, and **low data requirements** are critical.
-- Modern practice often combines expert systems with ML — rules for high-certainty cases, ML for pattern recognition.
+- Modern practice often combines expert systems with ML â€” rules for high-certainty cases, ML for pattern recognition.
 
 Expert systems did not disappear. They evolved into business rule engines, decision management systems, and hybrid AI architectures. The principles of explicit knowledge representation, transparent reasoning, and modular rule authoring remain foundational to AI engineering.
 

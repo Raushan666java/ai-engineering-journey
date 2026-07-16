@@ -1,4 +1,4 @@
-# DevOps and CI/CD
+﻿# DevOps and CI/CD
 
 ## Learning Objectives
 
@@ -14,16 +14,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/12-devops-cicd/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/software-engineering/12-devops-cicd/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/12-devops-cicd/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/software-engineering/12-devops-cicd/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/12-devops-cicd/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/software-engineering/12-devops-cicd/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/12-devops-cicd/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/software-engineering/12-devops-cicd/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/12-devops-cicd/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/software-engineering/12-devops-cicd/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/12-devops-cicd/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/software-engineering/12-devops-cicd/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -118,11 +118,11 @@ graph LR
 3. Fix broken builds immediately (stop the line)
 4. Run tests in isolation (containers)
 5. Maintain a single source repository
-6. Automate everything — no manual steps
+6. Automate everything â€” no manual steps
 
 ### Continuous Delivery (CD)
 
-Continuous Delivery ensures that every change passing all tests is potentially releasable to production. Continuous Deployment goes further — every passing change is automatically deployed.
+Continuous Delivery ensures that every change passing all tests is potentially releasable to production. Continuous Deployment goes further â€” every passing change is automatically deployed.
 
 | Practice | Frequency | Approval Gate | Risk Level |
 |----------|-----------|---------------|------------|
@@ -153,7 +153,7 @@ IaC manages infrastructure (networks, VMs, load balancers) through machine-reada
 |------|----------|------------------|----------|------|
 | **Terraform** | HCL (HashiCorp Language) | State file (remote) | Multi-cloud infrastructure | Declarative |
 | **Pulumi** | TypeScript, Python, Go, C# | State file (managed) | Developers wanting real languages | Declarative |
-| **AWS CDK** | TypeScript, Python, Java, C# | AWS CloudFormation | AWS-only infrastructure | Imperative → Declarative |
+| **AWS CDK** | TypeScript, Python, Java, C# | AWS CloudFormation | AWS-only infrastructure | Imperative â†’ Declarative |
 | **Ansible** | YAML playbooks | Agentless | Configuration management | Imperative |
 | **CloudFormation** | YAML/JSON | AWS-managed | AWS-native teams | Declarative |
 | **Chef** | Ruby DSL | Chef Server | Config mgmt at scale | Imperative |
@@ -303,7 +303,7 @@ graph LR
 
 ### Security in DevOps (DevSecOps)
 
-Shift security left — integrate security into every stage of DevOps:
+Shift security left â€” integrate security into every stage of DevOps:
 
 | Stage | Security Practice | Tools |
 |-------|-------------------|-------|
@@ -315,7 +315,7 @@ Shift security left — integrate security into every stage of DevOps:
 
 ## Examples
 
-### Example 1: CICDPipeline — Build, Test, Deploy Stages with Gates
+### Example 1: CICDPipeline â€” Build, Test, Deploy Stages with Gates
 
 A complete CI/CD pipeline implementation with stage management, parallel execution, quality gates, artifacts, deployment strategies, and rollback support.
 
@@ -494,21 +494,21 @@ class CICDPipeline {
 
   public generateReport(result: PipelineResult): string {
     const lines = [
-      '═══════════════════════════════════════════',
+      'â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•',
       `  Pipeline: ${this.context.buildId}`,
       `  Branch: ${this.context.branch}`,
       `  Version: ${this.context.version}`,
       `  Environment: ${this.context.environment}`,
-      `  Result: ${result.passed ? '✅ PASSED' : '❌ FAILED'}`,
+      `  Result: ${result.passed ? 'âœ… PASSED' : 'âŒ FAILED'}`,
       `  Duration: ${(result.totalDuration / 1000).toFixed(1)}s`,
-      '═══════════════════════════════════════════',
+      'â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•',
       '',
       '  Stages:',
       ...result.stages.map(s =>
-        `    ${s.passed ? '✅' : '❌'} ${s.name.padEnd(25)} ${(s.duration / 1000).toFixed(1)}s`
+        `    ${s.passed ? 'âœ…' : 'âŒ'} ${s.name.padEnd(25)} ${(s.duration / 1000).toFixed(1)}s`
       ),
       '',
-      ...(result.failedStage ? [`  ❌ Failed at: ${result.failedStage}`] : []),
+      ...(result.failedStage ? [`  âŒ Failed at: ${result.failedStage}`] : []),
     ];
     return lines.join('\n');
   }
@@ -589,7 +589,7 @@ pipeline.execute().then(result => {
 });
 ```
 
-### Example 2: DockerfileGenerator — Multi-Stage Dockerfile Generation
+### Example 2: DockerfileGenerator â€” Multi-Stage Dockerfile Generation
 
 A programmatic Dockerfile generator that produces optimised multi-stage Dockerfiles with security best practices, HEALTHCHECK, and production-ready configuration.
 
@@ -769,10 +769,10 @@ class DockerfileGenerator {
     const lines = content.split('\n').map(l => l.trim());
 
     if (!lines.some(l => l.startsWith('FROM '))) issues.push('Missing FROM instruction');
-    if (lines.some(l => l.startsWith('FROM ') && l.includes(':latest'))) issues.push('Avoid :latest tag in production — use specific version');
-    if (!lines.some(l => l.startsWith('HEALTHCHECK'))) issues.push('Missing HEALTHCHECK — container orchestration needs it');
+    if (lines.some(l => l.startsWith('FROM ') && l.includes(':latest'))) issues.push('Avoid :latest tag in production â€” use specific version');
+    if (!lines.some(l => l.startsWith('HEALTHCHECK'))) issues.push('Missing HEALTHCHECK â€” container orchestration needs it');
     if (!lines.some(l => l.startsWith('EXPOSE '))) issues.push('Missing EXPOSE instruction');
-    if (!lines.some(l => l.startsWith('USER '))) issues.push('Missing USER — running as root is a security risk');
+    if (!lines.some(l => l.startsWith('USER '))) issues.push('Missing USER â€” running as root is a security risk');
     if (content.includes('COPY . .') && !content.includes('.dockerignore')) issues.push('COPY . . without .dockerignore may include unnecessary files');
     if (lines.some(l => l.startsWith('RUN apt-get') && !l.includes('rm -rf /var/lib/apt/lists'))) issues.push('apt-get without cleaning apt cache increases image size');
 
@@ -802,7 +802,7 @@ console.log(dockerfile);
 console.log('Validation:', DockerfileGenerator.validate(dockerfile));
 ```
 
-### Example 3: ObservabilityStack — Logger, Metrics Collector, Span Tracer
+### Example 3: ObservabilityStack â€” Logger, Metrics Collector, Span Tracer
 
 A full observability stack implementation with structured logging, metrics collection (counters, gauges, histograms), distributed tracing, and health check endpoints.
 
@@ -902,7 +902,7 @@ class StructuredLogger {
 
   private formatPretty(entry: LogEntry): string {
     const icon: Record<LogLevel, string> = {
-      debug: '🔍', info: '📘', warn: '⚠️', error: '❌', fatal: '🔥',
+      debug: 'ðŸ”', info: 'ðŸ“˜', warn: 'âš ï¸', error: 'âŒ', fatal: 'ðŸ”¥',
     };
     return `${icon[entry.level]} [${entry.timestamp}] ${entry.service} ${entry.message}${entry.metadata ? ' ' + JSON.stringify(entry.metadata) : ''}`;
   }
@@ -1244,7 +1244,7 @@ class ObservabilityStack {
         this.metrics.recordRequestDuration(duration, endpoint, method, statusCode);
         this.tracer.addTag(span.spanId, 'status', String(statusCode));
         this.tracer.endSpan(span.spanId, statusCode < 500 ? 'ok' : 'error');
-        this.logger.info(`${method} ${endpoint} → ${statusCode} (${duration}ms)`, {
+        this.logger.info(`${method} ${endpoint} â†’ ${statusCode} (${duration}ms)`, {
           endpoint, method, statusCode, duration, traceId: span.traceId,
         });
       },
@@ -1426,7 +1426,7 @@ class DeploymentManager {
 
 ### Real-World Case Studies
 
-**Case Study 1: Etsy — Deploying 50+ Times Per Day**
+**Case Study 1: Etsy â€” Deploying 50+ Times Per Day**
 
 Etsy was an early DevOps adopter. In 2009, they deployed once every 2-3 weeks with 50+ people in the room. By 2012, they deployed 50+ times per day with fully automated pipelines. Key practices:
 - **Feature flags** for gradual rollout
@@ -1436,7 +1436,7 @@ Etsy was an early DevOps adopter. In 2009, they deployed once every 2-3 weeks wi
 - **"Deploy to production on Friday"** culture shift
 - **Monitoring dashboards** visible on screens throughout the office
 
-**Case Study 2: Netflix — Chaos Engineering at Scale**
+**Case Study 2: Netflix â€” Chaos Engineering at Scale**
 
 Netflix pioneered chaos engineering with Chaos Monkey (terminates random production instances to test resilience). Their DevOps journey:
 - **Full automation:** Deployments are fully automated through Spinnaker
@@ -1446,7 +1446,7 @@ Netflix pioneered chaos engineering with Chaos Monkey (terminates random product
 - **Observability:** Atlas (metrics), ELK (logs), Zipkin (tracing)
 - **Culture:** "Freedom and responsibility" with strong operational ownership
 
-**Case Study 3: Amazon — From Monolith to Microservices**
+**Case Study 3: Amazon â€” From Monolith to Microservices**
 
 Amazon's DevOps transformation (early 2000s) is legendary. Jeff Bezos mandated:
 1. All teams must expose data through service interfaces
@@ -1460,29 +1460,29 @@ This forced API-driven development, which required automated CI/CD, IaC, and ful
 
 DevOps represents a fundamental shift from siloed development and operations to a unified culture of collaboration, automation, and continuous improvement. The CALMS framework (Culture, Automation, Lean, Measurement, Sharing) provides a comprehensive lens for assessing DevOps maturity, while the DORA metrics (Deployment Frequency, Lead Time, Change Failure Rate, Time to Restore) offer quantitative benchmarks ranging from Low (< monthly deploys, > 30% failure rate) to Elite (multiple deploys/day, < 5% failure rate).
 
-CI/CD pipelines automate the path from commit to production, with quality gates at each stage (lint → unit tests → security scan → integration tests → deploy). Infrastructure as Code with tools like Terraform and Pulumi makes infrastructure versioned, reviewable, and idempotent. Containerisation with multi-stage Docker builds reduces image sizes by 90% while improving security through non-root users and HEALTHCHECK. Deployment strategies (rolling, blue-green, canary) balance deployment speed against risk. Observability (logging + metrics + tracing) moves beyond monitoring to answer what, why, and where simultaneously. The CICDPipeline, DockerfileGenerator, and ObservabilityStack implementations demonstrate how to build production-grade DevOps tooling that integrates quality gates, security scanning, structured logging, Prometheus-format metrics, distributed tracing, and health checks.
+CI/CD pipelines automate the path from commit to production, with quality gates at each stage (lint â†’ unit tests â†’ security scan â†’ integration tests â†’ deploy). Infrastructure as Code with tools like Terraform and Pulumi makes infrastructure versioned, reviewable, and idempotent. Containerisation with multi-stage Docker builds reduces image sizes by 90% while improving security through non-root users and HEALTHCHECK. Deployment strategies (rolling, blue-green, canary) balance deployment speed against risk. Observability (logging + metrics + tracing) moves beyond monitoring to answer what, why, and where simultaneously. The CICDPipeline, DockerfileGenerator, and ObservabilityStack implementations demonstrate how to build production-grade DevOps tooling that integrates quality gates, security scanning, structured logging, Prometheus-format metrics, distributed tracing, and health checks.
 
 ## Practical Takeaways
 
-1. **CI/CD is not optional** — manual deployment is the #1 source of production incidents; automate everything
-2. **Build once, deploy many** — the same immutable artifact moves through all environments; never rebuild for production
-3. **Fail fast** — the earlier a defect is caught, the cheaper it is to fix; invest in fast feedback
-4. **Infrastructure is code** — everything should be in version control, including network configs, databases, and CI definitions
-5. **Observability over monitoring** — understand WHY (logs), not just WHAT (metrics), and WHERE (traces)
-6. **Rollback is a feature** — every deployment must have a tested, documented rollback plan; practice it regularly
-7. **Shift security left** — scan dependencies, secrets, and containers in CI, not when already deployed
-8. **Measure everything** — DORA metrics, error budgets, four golden signals; data drives improvement
+1. **CI/CD is not optional** â€” manual deployment is the #1 source of production incidents; automate everything
+2. **Build once, deploy many** â€” the same immutable artifact moves through all environments; never rebuild for production
+3. **Fail fast** â€” the earlier a defect is caught, the cheaper it is to fix; invest in fast feedback
+4. **Infrastructure is code** â€” everything should be in version control, including network configs, databases, and CI definitions
+5. **Observability over monitoring** â€” understand WHY (logs), not just WHAT (metrics), and WHERE (traces)
+6. **Rollback is a feature** â€” every deployment must have a tested, documented rollback plan; practice it regularly
+7. **Shift security left** â€” scan dependencies, secrets, and containers in CI, not when already deployed
+8. **Measure everything** â€” DORA metrics, error budgets, four golden signals; data drives improvement
 
 ## Chapter Quiz
 
 | Question | Answer | Explanation |
 |----------|--------|-------------|
-| Q1: What does CI stand for in DevOps? | B | Continuous Integration — merging code frequently with automated verification |
-| Q2: In Gene Kim's Three Ways of DevOps, the First Way emphasises: | B | Systems thinking and flow — optimizing the end-to-end delivery pipeline |
-| Q3: Which deployment strategy involves maintaining two identical environments and switching traffic between them? | C | Blue-Green — two environments with load balancer traffic switch |
+| Q1: What does CI stand for in DevOps? | B | Continuous Integration â€” merging code frequently with automated verification |
+| Q2: In Gene Kim's Three Ways of DevOps, the First Way emphasises: | B | Systems thinking and flow â€” optimizing the end-to-end delivery pipeline |
+| Q3: Which deployment strategy involves maintaining two identical environments and switching traffic between them? | C | Blue-Green â€” two environments with load balancer traffic switch |
 | Q4: Which IaC tool allows you to write infrastructure definitions in TypeScript? | C | Pulumi supports TypeScript natively (also Python, Go, C#) |
-| Q5: The four golden signals of monitoring are: | B | Latency, Traffic, Errors, Saturation — from Google SRE |
-| Q6: The 'C' in CALMS stands for: | A | Culture — blameless postmortems, cross-functional collaboration, shared responsibility |
+| Q5: The four golden signals of monitoring are: | B | Latency, Traffic, Errors, Saturation â€” from Google SRE |
+| Q6: The 'C' in CALMS stands for: | A | Culture â€” blameless postmortems, cross-functional collaboration, shared responsibility |
 
 ## Exercises
 
@@ -1519,7 +1519,7 @@ class PipelineValidator {
       if (inStack.has(nodeName)) {
         const cycleIndex = path.indexOf(nodeName);
         const cycle = [...path.slice(cycleIndex), nodeName];
-        issues.push(`Circular dependency detected: ${cycle.join(' → ')}`);
+        issues.push(`Circular dependency detected: ${cycle.join(' â†’ ')}`);
         return false;
       }
       if (visited.has(nodeName)) return true;
@@ -1795,7 +1795,7 @@ class ChaosSimulator {
     const service = this.services.get(experiment.target);
     if (!service) throw new Error(`Service ${experiment.target} not found`);
 
-    console.log(`🧪 Injecting ${experiment.type} (${experiment.intensity}) into ${experiment.target} for ${experiment.duration}ms`);
+    console.log(`ðŸ§ª Injecting ${experiment.type} (${experiment.intensity}) into ${experiment.target} for ${experiment.duration}ms`);
 
     this.experiments.push(experiment);
 
@@ -1819,7 +1819,7 @@ class ChaosSimulator {
 
     const timer = setTimeout(() => {
       this.revert(experiment.target);
-      console.log(`✅ Reverted ${experiment.type} on ${experiment.target}`);
+      console.log(`âœ… Reverted ${experiment.type} on ${experiment.target}`);
     }, experiment.duration);
 
     this.activeExperiments.set(experiment.target, timer);
@@ -1940,10 +1940,10 @@ class DevSecOpsPipeline {
     const passed = policyViolations.length === 0 && results.every(r => r.passed);
     const summary = [
       '=== DevSecOps Pipeline Summary ===',
-      ...results.map(r => `  ${r.passed ? '✅' : '❌'} ${r.tool}: ${r.critical} critical, ${r.high} high, ${r.medium} medium, ${r.low} low`),
-      ...(policyViolations.length > 0 ? ['', '  Policy Violations:', ...policyViolations.map(v => `    ⚠ ${v}`)] : []),
+      ...results.map(r => `  ${r.passed ? 'âœ…' : 'âŒ'} ${r.tool}: ${r.critical} critical, ${r.high} high, ${r.medium} medium, ${r.low} low`),
+      ...(policyViolations.length > 0 ? ['', '  Policy Violations:', ...policyViolations.map(v => `    âš  ${v}`)] : []),
       '',
-      `  Result: ${passed ? '✅ PASSED — all security checks pass' : '❌ FAILED — security policy violation'}`,
+      `  Result: ${passed ? 'âœ… PASSED â€” all security checks pass' : 'âŒ FAILED â€” security policy violation'}`,
       '',
       '  Recommendation:',
       ...(passed

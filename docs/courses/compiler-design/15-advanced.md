@@ -1,4 +1,4 @@
-# Chapter 15: Advanced Topics in Compilation
+﻿# Chapter 15: Advanced Topics in Compilation
 
 ? Previous: [Chapter 14: Register Allocation](14-register-allocation.md) | **Next:** [Index](index.md)
 
@@ -9,16 +9,16 @@ After completing this chapter, students will be able to: explain the architectur
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/compiler-design/15-advanced/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/compiler-design/15-advanced/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/compiler-design/15-advanced/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/compiler-design/15-advanced/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/compiler-design/15-advanced/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/compiler-design/15-advanced/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/compiler-design/15-advanced/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/compiler-design/15-advanced/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/compiler-design/15-advanced/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/compiler-design/15-advanced/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/compiler-design/15-advanced/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/compiler-design/15-advanced/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>

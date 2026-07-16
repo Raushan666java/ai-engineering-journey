@@ -1,4 +1,4 @@
-# Chapter 5: Strings
+﻿# Chapter 5: Strings
 
 
 > **Previous:** [Loops and Iteration](./04-loops.md) | **Next:** [Lists](./06-lists.md)
@@ -15,16 +15,16 @@ By the end of this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/05-strings/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/05-strings/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/05-strings/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/05-strings/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/05-strings/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/05-strings/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/05-strings/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/05-strings/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/05-strings/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/05-strings/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/05-strings/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/05-strings/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -243,8 +243,8 @@ print(s.casefold())       # hello world (aggressive lower for caseless matching)
 `casefold()` is more aggressive than `lower()` for Unicode caseless comparison:
 
 ```python
-print("ß".lower())    # ß
-print("ß".casefold()) # ss
+print("ÃŸ".lower())    # ÃŸ
+print("ÃŸ".casefold()) # ss
 ```
 
 ### TypeScript Parallel
@@ -258,8 +258,8 @@ console.log(s.replace(/\b\w/g, c => c.toUpperCase()));  // title case (manual)
 
 // TypeScript does NOT have casefold() or swapcase()
 // Unicode normalization:
-console.log("ß".toLowerCase());    // ß
-console.log("ß".toLocaleLowerCase("de"));  // ß (no automatic decomposition)
+console.log("ÃŸ".toLowerCase());    // ÃŸ
+console.log("ÃŸ".toLocaleLowerCase("de"));  // ÃŸ (no automatic decomposition)
 ```
 
 ### 5.3.3 Stripping and Padding
@@ -368,7 +368,7 @@ print("abc123".isalnum())      # True
 print("   ".isspace())         # True
 print("Hello".istitle())       # True
 print("42".isdecimal())        # True
-print("42".isnumeric())        # True (also handles "⅕")
+print("42".isnumeric())        # True (also handles "â…•")
 print("hello".isidentifier())  # True
 print("True".isidentifier())   # True
 print("2fast".isidentifier())  # False (starts with digit)
@@ -541,11 +541,11 @@ b = b"hello"
 print(type(b))         # <class 'bytes'>
 print(b[0])            # 104  (int, not str)
 
-s = "café"
+s = "cafÃ©"
 encoded = s.encode("utf-8")
 print(encoded)         # b'caf\xc3\xa9'
 decoded = encoded.decode("utf-8")
-print(decoded)         # café
+print(decoded)         # cafÃ©
 ```
 
 Wrong encoding causes `UnicodeDecodeError`:
@@ -561,12 +561,12 @@ except UnicodeDecodeError as e:
 
 ```typescript
 // TypeScript: TextEncoder/TextDecoder for encode/decode
-const s: string = "café";
+const s: string = "cafÃ©";
 const encoded = new TextEncoder().encode(s);
 console.log(encoded);  // Uint8Array [99, 97, 102, 195, 169]
 
 const decoded = new TextDecoder().decode(encoded);
-console.log(decoded);  // "café"
+console.log(decoded);  // "cafÃ©"
 
 // TypeScript uses Uint8Array, not a separate bytes type
 ```
@@ -576,12 +576,12 @@ console.log(decoded);  // "café"
 > **One-Sentence Takeaway:** Python 3 strings are Unicode; use unicodedata.normalize() for robust comparison.
 
 ```python
-print("\u00e9")             # é
-print("\U0001F600")         # 😀
+print("\u00e9")             # Ã©
+print("\U0001F600")         # ðŸ˜€
 print(len("\U0001F600"))    # 1 (one code point)
 
 from unicodedata import normalize
-s1 = "caf\u00e9"            # composed: café
+s1 = "caf\u00e9"            # composed: cafÃ©
 s2 = "cafe\u0301"           # decomposed: cafe + combining accent
 print(s1 == s2)             # False
 print(normalize("NFC", s1) == normalize("NFC", s2))  # True
@@ -591,8 +591,8 @@ print(normalize("NFC", s1) == normalize("NFC", s2))  # True
 
 ```typescript
 // TypeScript: same Unicode support
-console.log("\u00e9");              // é
-console.log("\u{1F600}");           // 😀
+console.log("\u00e9");              // Ã©
+console.log("\u{1F600}");           // ðŸ˜€
 
 // Normalization:
 const s1: string = "caf\u00e9";          // composed
@@ -734,21 +734,21 @@ const greeting: string = "Hello";
 const name: string = "World";
 console.log(greeting + ", " + name + "!");  // "Hello, World!"
 
-// Python: f-strings → TypeScript: template literals
+// Python: f-strings â†’ TypeScript: template literals
 const age: number = 30;
 console.log(`Name: ${name}, Age: ${age}`);
 // Python equivalent: print(f"Name: {name}, Age: {age}")
 
-// Python: str.split() → TypeScript: .split()
+// Python: str.split() â†’ TypeScript: .split()
 const sentence: string = "Hello World Python";
 const words: string[] = sentence.split(" ");
 console.log(words);  // ["Hello", "World", "Python"]
 
-// Python: str.join() → TypeScript: .join()
+// Python: str.join() â†’ TypeScript: .join()
 console.log(words.join(", "));  // "Hello, World, Python"
 // Python: ", ".join(words)
 
-// Python: str.strip() → TypeScript: .trim()
+// Python: str.strip() â†’ TypeScript: .trim()
 const padded: string = "  hello  ";
 console.log(padded.trim());  // "hello"
 
@@ -756,21 +756,21 @@ console.log(padded.trim());  // "hello"
 console.log("Hello".toUpperCase());  // "HELLO"
 console.log("Hello".toLowerCase());  // "hello"
 
-// Python: str.replace() → TypeScript: .replaceAll()
+// Python: str.replace() â†’ TypeScript: .replaceAll()
 const text: string = "cat and dog and cat";
 console.log(text.replaceAll("cat", "bird"));  // "bird and dog and bird"
 // Note: Python uses .replace() (all occurrences by default)
 
-// Python: slicing (s[1:4]) → TypeScript: .slice()
+// Python: slicing (s[1:4]) â†’ TypeScript: .slice()
 const s: string = "hello";
 console.log(s.slice(1, 4));   // "ell"  (Python: s[1:4])
 console.log(s.slice(-3));     // "llo"  (Python: s[-3:])
 console.log(s.slice(0, -1));  // "hell" (Python: s[:-1])
 
-// Python: len(s) → TypeScript: .length
+// Python: len(s) â†’ TypeScript: .length
 console.log(s.length);  // 5
 
-// Python: str.find() → TypeScript: .indexOf()
+// Python: str.find() â†’ TypeScript: .indexOf()
 console.log("hello".indexOf("l"));  // 2
 
 // Python: str.startswith() / str.endswith()
@@ -782,21 +782,21 @@ console.log("hello".endsWith("lo"));    // true
 
 
 ```typescript
-// Python: regex sub → TypeScript: replace with RegExp
+// Python: regex sub â†’ TypeScript: replace with RegExp
 const phone = "Call me at 555-123-4567";
 const masked = phone.replace(/\d{4}$/, "XXXX");
 console.log(masked);  // "Call me at 555-123-XXXX"
 
-// Python: str.partition → TypeScript: split with limit
+// Python: str.partition â†’ TypeScript: split with limit
 const email = "user@example.com";
 const [local, domain] = email.split("@");
 console.log(local, domain);  // "user" "example.com"
 
-// Python: str.zfill → TypeScript: padStart
+// Python: str.zfill â†’ TypeScript: padStart
 console.log("42".padStart(5, "0"));  // "00042"
 // Python: "42".zfill(5)
 
-// Python: str.center → TypeScript: padStart + padEnd
+// Python: str.center â†’ TypeScript: padStart + padEnd
 function center(s: string, width: number, fill: string = " "): string {
   const left = Math.floor((width - s.length) / 2);
   const right = width - s.length - left;
@@ -804,7 +804,7 @@ function center(s: string, width: number, fill: string = " "): string {
 }
 console.log(center("hello", 11, "-"));  // "---hello---"
 
-// Python: str.translate → TypeScript: replace with callback
+// Python: str.translate â†’ TypeScript: replace with callback
 const leet = { a: "4", e: "3", l: "1", o: "0" };
 const translated = "hello world".replace(
   /[aelo]/g,
@@ -812,7 +812,7 @@ const translated = "hello world".replace(
 );
 console.log(translated);  // "h3ll0 w0rld"
 
-// Python: textwrap.wrap → TypeScript: manual wrapping
+// Python: textwrap.wrap â†’ TypeScript: manual wrapping
 function wrap(text: string, width: number): string[] {
   const words = text.split(" ");
   const lines: string[] = [];
@@ -830,7 +830,7 @@ function wrap(text: string, width: number): string[] {
 }
 console.log(wrap("This is a long sentence that needs wrapping", 20));
 
-// Python: str.format_map → TypeScript: template function
+// Python: str.format_map â†’ TypeScript: template function
 function template(str: string, data: Record<string, string>): string {
   return str.replace(/\{\{(\w+)\}\}/g, (_, key) => data[key] ?? `{{${key}}}`);
 }
@@ -862,7 +862,7 @@ type UnicodeForm = "NFC" | "NFD" | "NFKC" | "NFKD";
 function normalizeUnicode(s: string, form: UnicodeForm = "NFC"): string {
   return s.normalize(form);
 }
-const composed = "\u00E9";    // é (precomposed)
+const composed = "\u00E9";    // Ã© (precomposed)
 const decomposed = "\u0065\u0301"; // e + combining acute
 console.log(normalizeUnicode(decomposed) === composed); // true (NFC)
 

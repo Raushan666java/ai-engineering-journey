@@ -1,4 +1,4 @@
-# Chapter 3: Constructors and Destructors
+﻿# Chapter 3: Constructors and Destructors
 
 > **Previous:** [Classes and Objects](./02-classes-objects.md) | **Next:** [Inheritance](./04-inheritance.md)
 
@@ -9,16 +9,16 @@ After studying this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/oop-cpp/03-constructors/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/oop-cpp/03-constructors/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/03-constructors/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/oop-cpp/03-constructors/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/oop-cpp/03-constructors/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/oop-cpp/03-constructors/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/03-constructors/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/oop-cpp/03-constructors/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/oop-cpp/03-constructors/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/oop-cpp/03-constructors/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/03-constructors/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/oop-cpp/03-constructors/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -39,9 +39,9 @@ After studying this chapter, students will be able to:
 
 Constructors and destructors mirror the lifecycle of any real-world entity:
 
-**Constructor = Birth / Initialisation Ritual.** When a baby is born, a birth certificate is filled out (name, date, place). This is the constructor — it gives the object its initial state. Before the constructor runs, the object is raw memory. After it runs, the object is a valid, usable entity.
+**Constructor = Birth / Initialisation Ritual.** When a baby is born, a birth certificate is filled out (name, date, place). This is the constructor â€” it gives the object its initial state. Before the constructor runs, the object is raw memory. After it runs, the object is a valid, usable entity.
 
-**Destructor = Cleaning Crew.** When you check out of a hotel room, the cleaning crew comes in to strip the beds, empty the trash, and lock the doors. The destructor is that crew — it runs automatically when the object's lifetime ends, releasing any resources it acquired.
+**Destructor = Cleaning Crew.** When you check out of a hotel room, the cleaning crew comes in to strip the beds, empty the trash, and lock the doors. The destructor is that crew â€” it runs automatically when the object's lifetime ends, releasing any resources it acquired.
 
 **Move Constructor = Moving Truck.** Instead of copying all your furniture to a new house (expensive), a moving truck picks up your stuff and leaves your old house empty. The move constructor transfers ownership of resources from a source object to a new object, leaving the source in a valid-but-empty state.
 
@@ -51,12 +51,12 @@ Constructors and destructors mirror the lifecycle of any real-world entity:
 |-------------|-------------------|
 | Default constructor | Newborn with blank records |
 | Parameterised constructor | Custom order at a restaurant |
-| Copy constructor | Photocopy machine — creates independent duplicate |
-| Move constructor | Moving truck — transfers contents, leaves source empty |
+| Copy constructor | Photocopy machine â€” creates independent duplicate |
+| Move constructor | Moving truck â€” transfers contents, leaves source empty |
 | Destructor | Hotel cleaning crew after checkout |
-| Virtual destructor | Universal fire alarm — works for all building types |
+| Virtual destructor | Universal fire alarm â€” works for all building types |
 | Initialiser list | Filling passport details at issuance (not later) |
-| `explicit` keyword | Bouncer checking ID — no automatic entry |
+| `explicit` keyword | Bouncer checking ID â€” no automatic entry |
 
 ## Chapter at a Glance
 
@@ -99,7 +99,7 @@ flowchart LR
 ### Real-World Analogy
 
 
-A default constructor is like a **blank birth certificate**. When a baby is born in a hospital, the staff fills out a form with default values — date of birth, place, weight. These defaults are sensible starting points even without any custom input.
+A default constructor is like a **blank birth certificate**. When a baby is born in a hospital, the staff fills out a form with default values â€” date of birth, place, weight. These defaults are sensible starting points even without any custom input.
 
 ### Definition
 
@@ -112,7 +112,7 @@ A **default constructor** is a constructor that can be called with **no argument
 1. If a class declares **no constructors at all**, the compiler generates a default constructor that default-initialises all members.
 2. If **any** user-defined constructor exists, the compiler-supplied default is **suppressed**.
 3. Use `= default` to request the compiler-generated version explicitly.
-4. Built-in types (int, double, pointer) remain **uninitialised** in compiler-generated default constructors — reading them is undefined behaviour.
+4. Built-in types (int, double, pointer) remain **uninitialised** in compiler-generated default constructors â€” reading them is undefined behaviour.
 
 ### Pseudocode
 
@@ -186,7 +186,7 @@ Default constructor called for Unknown
 | 6 | Body: cout runs | s1 | "Unknown" | -1 | 0.0 |
 | 7 | `s1.display()` | s1 | "Unknown" | -1 | 0.0 |
 | 8 | `new Student` | *s2 | "Unknown" | -1 | 0.0 |
-| 9 | `delete s2` | *s2 | Destructor called | — | — |
+| 9 | `delete s2` | *s2 | Destructor called | â€” | â€” |
 | 10 | `Student arr[3]` | arr[0..2] | "Unknown" (x3) | -1 (x3) | 0.0 (x3) |
 
 ### Complexity Analysis
@@ -206,7 +206,7 @@ Default constructor called for Unknown
 class Widget {
 public:
     Widget(int id) : id_(id) {}
-    // NO default constructor — compiler suppresses
+    // NO default constructor â€” compiler suppresses
     // Widget w; is an error
 private:
     int id_;
@@ -242,7 +242,7 @@ private:
 };
 ```
 
-> **Pro Tip:** Always provide default member initialisers for built-in types. Without them, the compiler-generated default constructor leaves them uninitialised — reading them is undefined behaviour.
+> **Pro Tip:** Always provide default member initialisers for built-in types. Without them, the compiler-generated default constructor leaves them uninitialised â€” reading them is undefined behaviour.
 
 ---
 
@@ -251,7 +251,7 @@ private:
 ### Real-World Analogy
 
 
-A parameterised constructor is like a **custom order at a restaurant**. Instead of getting the chef's special (default), you specify exactly what you want — medium-rare steak, extra mushrooms, no onions. The kitchen (constructor) receives your parameters and prepares your specific dish.
+A parameterised constructor is like a **custom order at a restaurant**. Instead of getting the chef's special (default), you specify exactly what you want â€” medium-rare steak, extra mushrooms, no onions. The kitchen (constructor) receives your parameters and prepares your specific dish.
 
 ### Definition
 
@@ -323,7 +323,7 @@ Parameterised ctor: "Dune" by Frank Herbert
 | 4 | Init: `author_("George Orwell")` | b1 | "1984" | "George Orwell" | Raw |
 | 5 | Init: `year_(1949)` | b1 | "1984" | "George Orwell" | 1949 |
 | 6 | Body: cout runs | b1 | "1984" | "George Orwell" | 1949 |
-| 7 | `b1.display()` | b1 | Output printed | — | — |
+| 7 | `b1.display()` | b1 | Output printed | â€” | â€” |
 
 ### Parameterised with Default Arguments
 
@@ -379,7 +379,7 @@ Config(timeout=60, retries=5, logging=0)
 ### Real-World Analogy
 
 
-Constructor overloading is like a **multi-function remote control**. The same remote can control the TV, the soundbar, and the AC — you press different button sequences (different parameter lists) to achieve different results. Similarly, a class can have multiple constructors, each with a distinct parameter list.
+Constructor overloading is like a **multi-function remote control**. The same remote can control the TV, the soundbar, and the AC â€” you press different button sequences (different parameter lists) to achieve different results. Similarly, a class can have multiple constructors, each with a distinct parameter list.
 
 ### Definition
 
@@ -487,7 +487,7 @@ Message(initializer_list)
 
 | Call | Viable Ctors | Selected | Reason |
 |------|-------------|----------|--------|
-| `Message()` | (1) | (1) | Exact match — no args |
+| `Message()` | (1) | (1) | Exact match â€” no args |
 | `Message("Hello")` | (2), (3), (5) | (2) | Best match: char* -> string |
 | `Message("A","B")` | (3), (5) | (3) | Exact match, two strings |
 | `Message("A","B",5)` | (4) | (4) | Exact match, three args |
@@ -522,7 +522,7 @@ Ambiguous a3(1.0, 2);       // OK: second ctor
 ### Real-World Analogy
 
 
-An initialiser list is like **filling out passport details at issuance** — not later. When you get a passport, your name, DOB, and place of birth are set right then. You cannot "update" your place of birth later (like a `const` member). The initialiser list is the only chance to set certain values.
+An initialiser list is like **filling out passport details at issuance** â€” not later. When you get a passport, your name, DOB, and place of birth are set right then. You cannot "update" your place of birth later (like a `const` member). The initialiser list is the only chance to set certain values.
 
 ### Definition
 
@@ -541,7 +541,7 @@ public:
           const_member(value3),  // MUST be here
           ref_member(value4)     // MUST be here
     {
-        // Body — members already initialised
+        // Body â€” members already initialised
     }
 };
 ```
@@ -563,7 +563,7 @@ public:
 class Employee {
 public:
     Employee(const std::string& name, int id, double salary)
-        : kMinSalary_(30000),     // const — MUST be in init list
+        : kMinSalary_(30000),     // const â€” MUST be in init list
           name_(name),
           id_(id),
           salary_(salary)
@@ -604,7 +604,7 @@ Alice | ID: 1001 | $75000 | Min: $30000
 class Broken {
 public:
     Broken(int x) {
-        x_ = x;   // ASSIGNMENT — x_ was default-initialised (garbage) first
+        x_ = x;   // ASSIGNMENT â€” x_ was default-initialised (garbage) first
     }
 private:
     // const int cx_;  // ERROR: must be in init list
@@ -637,7 +637,7 @@ private:
 };
 ```
 
-`Slow`: One default construction + one assignment (potential second allocation). `Fast`: One direct construction — optimal.
+`Slow`: One default construction + one assignment (potential second allocation). `Fast`: One direct construction â€” optimal.
 
 ### Declaration Order Trap
 
@@ -657,7 +657,7 @@ public:
     }
 
 private:
-    int x_;    // DECLARED first — initialised FIRST
+    int x_;    // DECLARED first â€” initialised FIRST
     int y_;
 };
 
@@ -705,7 +705,7 @@ x_ = 32767, y_ = 10
 ### Real-World Analogy
 
 
-The `explicit` keyword is like a **bouncer checking ID**. Without a bouncer, anyone who looks old enough can walk in — that is implicit conversion. With a bouncer (explicit), only people with valid ID are allowed. The `explicit` keyword prevents the compiler from using a constructor for **implicit conversions**.
+The `explicit` keyword is like a **bouncer checking ID**. Without a bouncer, anyone who looks old enough can walk in â€” that is implicit conversion. With a bouncer (explicit), only people with valid ID are allowed. The `explicit` keyword prevents the compiler from using a constructor for **implicit conversions**.
 
 ### Definition
 
@@ -831,7 +831,7 @@ A **delegating constructor** calls another constructor of the same class from it
 
 class Employee {
 public:
-    // Primary constructor — does all the work
+    // Primary constructor â€” does all the work
     Employee(const std::string& name, int id, double salary)
         : name_(name), id_(id), salary_(salary) {
         std::cout << ">> Primary ctor: " << name_
@@ -921,7 +921,7 @@ For `Employee e2("Alice")`:
 | Step | Constructor | Action | name_ | id_ | salary_ |
 |------|-------------|--------|-------|-----|---------|
 | 1 | Delegating(1 arg) | Enter | Raw | Raw | Raw |
-| 2 | Delegating(1 arg) | Delegates to primary | — | — | — |
+| 2 | Delegating(1 arg) | Delegates to primary | â€” | â€” | â€” |
 | 3 | Primary ctor | Enter | Raw | Raw | Raw |
 | 4 | Primary ctor | Init `name_("Alice")` | "Alice" | Raw | Raw |
 | 5 | Primary ctor | Init `id_(-1)` | "Alice" | -1 | Raw |
@@ -936,7 +936,7 @@ For `Employee e2("Alice")`:
 ```cpp
 struct Cycle {
     Cycle() : Cycle(0) {}       // Delegates
-    Cycle(int x) : Cycle() {}   // back — CYCLE!
+    Cycle(int x) : Cycle() {}   // back â€” CYCLE!
 };
 // Compile error: delegation cycle
 ```
@@ -959,8 +959,8 @@ struct Cycle {
 
 A copy constructor is like a **photocopy machine**.
 
-- **Shallow copy**: Like giving someone a photocopy of a map that just says "look at my map" — both people think they have the map, but they are actually sharing the same physical paper. If one person draws on it, the other sees it too.
-- **Deep copy**: Like giving someone a fully independent photocopy of the actual map — each person has their own physical paper. Drawing on one does not affect the other.
+- **Shallow copy**: Like giving someone a photocopy of a map that just says "look at my map" â€” both people think they have the map, but they are actually sharing the same physical paper. If one person draws on it, the other sees it too.
+- **Deep copy**: Like giving someone a fully independent photocopy of the actual map â€” each person has their own physical paper. Drawing on one does not affect the other.
 
 ### Definition
 
@@ -993,7 +993,7 @@ public:
         std::cout << "Ctor: allocated at " << (void*)data_ << "\n";
     }
 
-    // NO copy constructor — compiler generates shallow copy!
+    // NO copy constructor â€” compiler generates shallow copy!
 
     ~ShallowString() {
         std::cout << "Dtor: deleting " << (void*)data_ << "\n";
@@ -1008,12 +1008,12 @@ private:
 
 int main() {
     ShallowString s1("Hello");
-    ShallowString s2 = s1;  // Shallow copy — s2.data_ points to SAME memory
+    ShallowString s2 = s1;  // Shallow copy â€” s2.data_ points to SAME memory
 
     std::cout << "s1: " << s1.c_str() << "\n";
     std::cout << "s2: " << s2.c_str() << "\n";
 
-    // Destructor runs for s2, then s1 — double free!
+    // Destructor runs for s2, then s1 â€” double free!
     return 0;
 }  // CRASH: double free or corruption
 ```
@@ -1045,7 +1045,7 @@ public:
         std::cout << "Ctor: " << (void*)data_ << " [" << data_ << "]\n";
     }
 
-    // COPY CONSTRUCTOR — deep copy
+    // COPY CONSTRUCTOR â€” deep copy
     DeepString(const DeepString& other)
         : size_(other.size_), data_(new char[other.size_ + 1]) {
         std::strcpy(data_, other.data_);
@@ -1073,7 +1073,7 @@ void printByValue(DeepString s) {
 
 int main() {
     DeepString s1("Hello");
-    DeepString s2 = s1;  // Copy ctor — independent copy
+    DeepString s2 = s1;  // Copy ctor â€” independent copy
 
     std::cout << "--- Calling printByValue ---\n";
     printByValue(s1);
@@ -1101,16 +1101,16 @@ Dtor: deleting 0x1a2b3c4d [Hello]
 
 **Shallow Copy:**
 ```
-s1.data_ ──> [ H | e | l | l | o | \0 ]  ←── s2.data_ (SAME block)
+s1.data_ â”€â”€> [ H | e | l | l | o | \0 ]  â†â”€â”€ s2.data_ (SAME block)
 ```
-Both `s1.data_` and `s2.data_` point to the identical memory address. When `s2` destructor runs, it deletes the block. When `s1` destructor runs, it deletes the **same** block → double free.
+Both `s1.data_` and `s2.data_` point to the identical memory address. When `s2` destructor runs, it deletes the block. When `s1` destructor runs, it deletes the **same** block â†’ double free.
 
 **Deep Copy:**
 ```
-s1.data_ ──> [ H | e | l | l | o | \0 ]
-s2.data_ ──> [ H | e | l | l | o | \0 ]  (DIFFERENT block, same content)
+s1.data_ â”€â”€> [ H | e | l | l | o | \0 ]
+s2.data_ â”€â”€> [ H | e | l | l | o | \0 ]  (DIFFERENT block, same content)
 ```
-Each object owns its own memory block. Destructors delete independent blocks — safe.
+Each object owns its own memory block. Destructors delete independent blocks â€” safe.
 
 ### Dry Run Trace: Deep Copy
 
@@ -1186,7 +1186,7 @@ Dtor         // ~h (the moved-from object)
 Dtor
 ```
 
-### `= delete` — Prohibiting Copy
+### `= delete` â€” Prohibiting Copy
 
 
 ```cpp
@@ -1207,7 +1207,7 @@ public:
 |-----------|------|-----|
 | Shallow copy (trivial) | O(1) | Copies pointer value only |
 | Deep copy (N bytes) | O(N) | Must allocate and copy N bytes |
-| Copy elision (RVO/NRVO) | O(0) | Zero copies — elided entirely |
+| Copy elision (RVO/NRVO) | O(0) | Zero copies â€” elided entirely |
 | Pass-by-value copy | O(N) | Full deep copy of resources |
 | `= delete` | O(1) compile-time | No runtime effect |
 
@@ -1218,7 +1218,7 @@ public:
 ### Real-World Analogy
 
 
-A move constructor is like a **moving truck**. Instead of copying all your furniture to a new house (expensive — like a deep copy), the truck picks up your furniture and leaves your old house empty. The new house now has all the furniture; the old house is empty. That is exactly what the move constructor does — it **transfers ownership** of resources, leaving the source in a **valid-but-empty** state.
+A move constructor is like a **moving truck**. Instead of copying all your furniture to a new house (expensive â€” like a deep copy), the truck picks up your furniture and leaves your old house empty. The new house now has all the furniture; the old house is empty. That is exactly what the move constructor does â€” it **transfers ownership** of resources, leaving the source in a **valid-but-empty** state.
 
 ### Definition
 
@@ -1232,7 +1232,7 @@ The **move constructor** transfers resources from a source (temporary) object to
 
 1. **Steals resources** from the source (copies the pointer, does not allocate new memory).
 2. **Leaves source in valid-but-empty state** (source pointer set to nullptr).
-3. **Must be `noexcept`** — critical for STL containers to use move instead of copy during reallocation.
+3. **Must be `noexcept`** â€” critical for STL containers to use move instead of copy during reallocation.
 4. **Automatically used** when the argument is an rvalue (temporary) or when `std::move()` is applied.
 
 ### C++ Code with Output
@@ -1251,14 +1251,14 @@ public:
         std::cout << "Ctor: " << size << " bytes at " << (void*)data_ << "\n";
     }
 
-    // Copy constructor (expensive — deep copy)
+    // Copy constructor (expensive â€” deep copy)
     DynamicBuffer(const DynamicBuffer& other)
         : size_(other.size_), data_(new char[other.size_]) {
         std::copy(other.data_, other.data_ + size_, data_);
         std::cout << "Copy ctor: " << size_ << " bytes\n";
     }
 
-    // Move constructor (cheap — pointer swap)
+    // Move constructor (cheap â€” pointer swap)
     DynamicBuffer(DynamicBuffer&& other) noexcept
         : size_(other.size_), data_(other.data_) {
         other.data_ = nullptr;   // Leave source empty
@@ -1283,7 +1283,7 @@ private:
 
 DynamicBuffer createBuffer(size_t n) {
     DynamicBuffer buf(n);
-    return buf;  // Move (or NRVO) — not copy
+    return buf;  // Move (or NRVO) â€” not copy
 }
 
 int main() {
@@ -1324,7 +1324,7 @@ Dtor: empty (nullptr)
 --- End of main ---
 Dtor: deleting 0x200     [~b4]
 Dtor: deleting 0x300     [~b3's copy of data]
-Dtor: empty (nullptr)    [~b1 — was moved-from]
+Dtor: empty (nullptr)    [~b1 â€” was moved-from]
 ```
 
 ### Move vs Copy: Performance Comparison
@@ -1371,12 +1371,12 @@ v.push_back(MaybeMove{});  // May copy instead of move during reallocation!
 ### Real-World Analogy
 
 
-A destructor is like the **hotel cleaning crew after checkout**. When you leave a hotel room, the cleaning crew automatically strips the beds, empties the trash, and secures the room. You do not need to call them — they come automatically. Similarly, a C++ destructor runs **automatically** when an object's lifetime ends, releasing any resources the object acquired.
+A destructor is like the **hotel cleaning crew after checkout**. When you leave a hotel room, the cleaning crew automatically strips the beds, empties the trash, and secures the room. You do not need to call them â€” they come automatically. Similarly, a C++ destructor runs **automatically** when an object's lifetime ends, releasing any resources the object acquired.
 
 ### Definition
 
 
-The **destructor** is a special member function called when an object is destroyed — when it goes out of scope (stack), when `delete` is invoked (heap), or when a container is destroyed. Its name is `~ClassName`, it takes no parameters, returns nothing, and must be `noexcept`.
+The **destructor** is a special member function called when an object is destroyed â€” when it goes out of scope (stack), when `delete` is invoked (heap), or when a container is destroyed. Its name is `~ClassName`, it takes no parameters, returns nothing, and must be `noexcept`.
 
 **Signature:** `~ClassName() noexcept;`
 
@@ -1440,7 +1440,7 @@ int main() {
 
     std::cout << "\n--- End of main ---\n";
     return 0;
-}  // c destroyed here — members destroyed in reverse order
+}  // c destroyed here â€” members destroyed in reverse order
 ```
 
 **Output:**
@@ -1471,9 +1471,9 @@ Logger [main.inner1] destroyed
 | 2 | Construct temp | Logger temp |
 | 3 | End of inner block | ~Logger(temp) |
 | 4 | End of main | ~Container (body runs first) |
-| 5 | Destroy members | ~Logger(inner2), ~Logger(inner1) — **reverse** order |
+| 5 | Destroy members | ~Logger(inner2), ~Logger(inner1) â€” **reverse** order |
 
-### RAII — Resource Acquisition Is Initialisation
+### RAII â€” Resource Acquisition Is Initialisation
 
 
 RAII is the most important idiom in C++. It binds resource lifetime to object lifetime: acquire in constructor, release in destructor.
@@ -1522,7 +1522,7 @@ private:
     std::mutex& mtx_;
 };
 
-// Usage — resources are automatically released
+// Usage â€” resources are automatically released
 void processFile() {
     FileRAII file("data.txt", "w");
     file.write("Hello RAII");
@@ -1532,7 +1532,7 @@ void processFile() {
 
 void threadSafeOp(std::mutex& m) {
     LockGuard lock(m);
-    // Critical section — mutex is automatically unlocked
+    // Critical section â€” mutex is automatically unlocked
     // Even if code here throws, ~LockGuard() unlocks!
 }
 ```
@@ -1573,7 +1573,7 @@ void demo() {
 ### Real-World Analogy
 
 
-A virtual destructor is like a **universal fire alarm**. Whether you are in a library, a factory, or an apartment building, the fire alarm must work correctly for that specific building type. If the alarm system only works for "buildings" but not for "libraries" (the specific type), people in the library would burn. Similarly, if you delete a derived object through a base pointer and the destructor is not virtual, only the base destructor runs — the derived part leaks.
+A virtual destructor is like a **universal fire alarm**. Whether you are in a library, a factory, or an apartment building, the fire alarm must work correctly for that specific building type. If the alarm system only works for "buildings" but not for "libraries" (the specific type), people in the library would burn. Similarly, if you delete a derived object through a base pointer and the destructor is not virtual, only the base destructor runs â€” the derived part leaks.
 
 ### The Problem: Non-Virtual Destructor
 
@@ -1615,7 +1615,7 @@ Derived constructed (allocated 100 ints)
 Base DESTROYED
 ```
 
-**Note:** `~Derived()` is **not called** — the 100 ints are leaked. This is **undefined behaviour** when deleting through a base pointer to a derived object with a non-virtual destructor.
+**Note:** `~Derived()` is **not called** â€” the 100 ints are leaked. This is **undefined behaviour** when deleting through a base pointer to a derived object with a non-virtual destructor.
 
 ### The Solution: Virtual Destructor
 
@@ -1644,7 +1644,7 @@ private:
 
 int main() {
     Base* ptr = new Derived();
-    delete ptr;  // ~Derived() runs first, then ~Base() — correct!
+    delete ptr;  // ~Derived() runs first, then ~Base() â€” correct!
     return 0;
 }
 ```
@@ -1668,7 +1668,7 @@ Base DESTROYED
 | 4 | ~Derived() complete | Calls ~Base() implicitly | Base destructor runs |
 | 5 | ~Base() body | cout | "Base DESTROYED" |
 
-Without virtual: step 2 calls ~Base() directly — ~Derived() is never reached.
+Without virtual: step 2 calls ~Base() directly â€” ~Derived() is never reached.
 
 ### Pure Virtual Destructor
 
@@ -1696,7 +1696,7 @@ public:
 
 int main() {
     AbstractBase* p = new Concrete();
-    delete p;  // ~Concrete() -> ~AbstractBase() — works!
+    delete p;  // ~Concrete() -> ~AbstractBase() â€” works!
     return 0;
 }
 ```
@@ -1742,29 +1742,29 @@ AbstractBase destructor
 
 The Rule of Three/Five is like a **three-legged stool**. If your class manages a resource (heap memory, file handle, socket), you need all the legs:
 
-1. **Destructor** — release the resource
-2. **Copy constructor** — create independent copy of the resource
-3. **Copy assignment** — assign independent copy of the resource
+1. **Destructor** â€” release the resource
+2. **Copy constructor** â€” create independent copy of the resource
+3. **Copy assignment** â€” assign independent copy of the resource
 
-If any leg is missing, the stool tips over — double-free, memory leaks, or dangling pointers.
+If any leg is missing, the stool tips over â€” double-free, memory leaks, or dangling pointers.
 
 With C++11, two more legs were added (Rule of Five):
-4. **Move constructor** — transfer resource ownership efficiently
-5. **Move assignment** — transfer resource ownership efficiently
+4. **Move constructor** â€” transfer resource ownership efficiently
+5. **Move assignment** â€” transfer resource ownership efficiently
 
 ### Rule of Three
 
 
 **Statement:** If a class requires a user-defined destructor, copy constructor, or copy assignment operator, it likely requires **all three**.
 
-**Why:** If you have a resource (raw pointer, FILE*, HANDLE, socket), the compiler-generated copy operations perform **member-wise copy** — they copy the pointer, not the resource. Both objects end up pointing to the same resource. When one object is destroyed, the resource is freed. When the other object is destroyed, it tries to free the same resource again — **double free**.
+**Why:** If you have a resource (raw pointer, FILE*, HANDLE, socket), the compiler-generated copy operations perform **member-wise copy** â€” they copy the pointer, not the resource. Both objects end up pointing to the same resource. When one object is destroyed, the resource is freed. When the other object is destroyed, it tries to free the same resource again â€” **double free**.
 
 ### Rule of Five
 
 
 **Statement:** With C++11, add the move constructor and move assignment operator to the Rule of Three.
 
-**Why:** Move operations provide efficient transfer of resources. When a temporary is moved instead of copied, no deep copy is needed — just pointer swaps. STL containers check for `noexcept` move constructors to use move during reallocation.
+**Why:** Move operations provide efficient transfer of resources. When a temporary is moved instead of copied, no deep copy is needed â€” just pointer swaps. STL containers check for `noexcept` move constructors to use move during reallocation.
 
 ### Complete Rule of Five Example
 
@@ -1895,7 +1895,7 @@ Dtor: "Hello"    [from s3's original data]
 === End ===
 Dtor: ""
 Dtor: "Hello"    [s4]
-Dtor: "Hello"    [s2 — moved-from, still has data? No, s2 was moved-from to s4]
+Dtor: "Hello"    [s2 â€” moved-from, still has data? No, s2 was moved-from to s4]
 Dtor: "Hello"    [s1]
 Dtor: ""
 ```
@@ -1977,32 +1977,32 @@ class Student {
 |--------|------------|-----------|
 | **Memory** | Copies pointer value only | Allocates new memory, copies content |
 | **Sharing** | Both objects share the same resource | Each object owns its own resource |
-| **Double-free** | YES — both destructors free same block | NO — each frees its own block |
-| **Performance** | O(1) — just copy a pointer | O(N) — allocate N + copy N bytes |
+| **Double-free** | YES â€” both destructors free same block | NO â€” each frees its own block |
+| **Performance** | O(1) â€” just copy a pointer | O(N) â€” allocate N + copy N bytes |
 | **When generated** | Compiler-generated copy ctor | User-defined copy ctor |
 | **Safe for POD** | Yes (no resources to share) | Overkill for POD |
-| **Safe for pointers** | NO — leads to dangling + double-free | YES — independent copies |
+| **Safe for pointers** | NO â€” leads to dangling + double-free | YES â€” independent copies |
 | **Exception safety** | Not relevant | May throw bad_alloc |
 
-**Memory Diagram — Shallow Copy:**
+**Memory Diagram â€” Shallow Copy:**
 ```
-obj1.data  ──> ┌───┬───┬───┬───┬───┐
-               │ H │ e │ l │ l │ o │
-               └───┴───┴───┴───┴───┘
-obj2.data  ──> └───┴───┴───┴───┴───┘  (SAME block)
-     ↑ Both pointers point to identical address
+obj1.data  â”€â”€> â”Œâ”€â”€â”€â”¬â”€â”€â”€â”¬â”€â”€â”€â”¬â”€â”€â”€â”¬â”€â”€â”€â”
+               â”‚ H â”‚ e â”‚ l â”‚ l â”‚ o â”‚
+               â””â”€â”€â”€â”´â”€â”€â”€â”´â”€â”€â”€â”´â”€â”€â”€â”´â”€â”€â”€â”˜
+obj2.data  â”€â”€> â””â”€â”€â”€â”´â”€â”€â”€â”´â”€â”€â”€â”´â”€â”€â”€â”´â”€â”€â”€â”˜  (SAME block)
+     â†‘ Both pointers point to identical address
 ```
 
-**Memory Diagram — Deep Copy:**
+**Memory Diagram â€” Deep Copy:**
 ```
-obj1.data  ──> ┌───┬───┬───┬───┬───┐
-               │ H │ e │ l │ l │ o │
-               └───┴───┴───┴───┴───┘
+obj1.data  â”€â”€> â”Œâ”€â”€â”€â”¬â”€â”€â”€â”¬â”€â”€â”€â”¬â”€â”€â”€â”¬â”€â”€â”€â”
+               â”‚ H â”‚ e â”‚ l â”‚ l â”‚ o â”‚
+               â””â”€â”€â”€â”´â”€â”€â”€â”´â”€â”€â”€â”´â”€â”€â”€â”´â”€â”€â”€â”˜
 
-obj2.data  ──> ┌───┬───┬───┬───┬───┐
-               │ H │ e │ l │ l │ o │
-               └───┴───┴───┴───┴───┘
-     ↑ Each pointer points to a DIFFERENT block with the same content
+obj2.data  â”€â”€> â”Œâ”€â”€â”€â”¬â”€â”€â”€â”¬â”€â”€â”€â”¬â”€â”€â”€â”¬â”€â”€â”€â”
+               â”‚ H â”‚ e â”‚ l â”‚ l â”‚ o â”‚
+               â””â”€â”€â”€â”´â”€â”€â”€â”´â”€â”€â”€â”´â”€â”€â”€â”´â”€â”€â”€â”˜
+     â†‘ Each pointer points to a DIFFERENT block with the same content
 ```
 
 ### Initialiser List vs Assignment
@@ -2029,7 +2029,7 @@ obj2.data  ──> ┌───┬───┬───┬───┬───�
 
 **Answer:** A shallow copy copies the pointer value, making two objects share the same resource. A deep copy allocates new memory and copies the content, giving each object independent ownership.
 
-Shallow copy is fast (O(1)) but causes double-free when both destructors try to delete the same memory. Deep copy is slower (O(N)) but safe — each object owns its own resource and can independently free it.
+Shallow copy is fast (O(1)) but causes double-free when both destructors try to delete the same memory. Deep copy is slower (O(N)) but safe â€” each object owns its own resource and can independently free it.
 
 ```cpp
 // Shallow copy (compiler-generated)
@@ -2058,7 +2058,7 @@ Since C++17, RVO is **guaranteed** for certain cases (prvalues). NRVO is still a
 ```cpp
 // Guaranteed RVO (C++17):
 T func() { return T(); }
-T obj = func(); // No copy — T() constructed directly in obj
+T obj = func(); // No copy â€” T() constructed directly in obj
 
 // NRVO (not guaranteed):
 T func() {
@@ -2076,7 +2076,7 @@ This is **undefined behaviour** (UB) per the C++ standard, not just a leak. The 
 
 ```cpp
 Base* p = new Derived();
-delete p; // Without virtual ~Base(): ~Derived() never called → UB + leak
+delete p; // Without virtual ~Base(): ~Derived() never called â†’ UB + leak
 ```
 
 ### Q4: What is the Rule of Three / Rule of Five?
@@ -2113,8 +2113,8 @@ public:
 void navigate(URL u);
 
 std::string s = "https://example.com";
-navigate(s); // ERROR without explicit — implicit conversion
-navigate(URL(s)); // OK — explicit construction
+navigate(s); // ERROR without explicit â€” implicit conversion
+navigate(URL(s)); // OK â€” explicit construction
 ```
 
 **Best practice:** Mark all single-argument constructors as `explicit` unless implicit conversion is specifically desired. Never mark copy/move constructors as `explicit`.
@@ -2124,16 +2124,16 @@ navigate(URL(s)); // OK — explicit construction
 
 **Answer:** Always prefer initialiser lists over body assignment because:
 
-1. **Required for const/reference members** — they cannot be assigned, only initialised.
-2. **Required for base classes** — base class constructors must be called via the initialiser list.
+1. **Required for const/reference members** â€” they cannot be assigned, only initialised.
+2. **Required for base classes** â€” base class constructors must be called via the initialiser list.
 3. **Performance**: Members are initialised once (direct construction) rather than twice (default construction + assignment).
 4. **Exception safety**: A fully initialised member can clean up after itself if the constructor body throws.
 
 ```cpp
-// Good — initialiser list
+// Good â€” initialiser list
 Good() : str_("hello"), vec_(100, 42) {}
 
-// Bad — assignment in body
+// Bad â€” assignment in body
 Bad() { str_ = "hello"; vec_ = std::vector<int>(100, 42); }
 ```
 
@@ -2167,7 +2167,7 @@ The target constructor runs first, then the delegating constructor's body. Cycle
 - **Constructor**: Allocates heap memory for the elements.
 - **Destructor**: Destroys all elements and deallocates the memory.
 - **Copy constructor**: Allocates new memory and copies all elements (deep copy).
-- **Move constructor**: Transfers the internal pointer from source to destination — O(1).
+- **Move constructor**: Transfers the internal pointer from source to destination â€” O(1).
 
 ```cpp
 // Conceptual implementation
@@ -2185,7 +2185,7 @@ public:
         ::operator delete(data_); // Deallocate memory
     }
 
-    // Deep copy — O(N)
+    // Deep copy â€” O(N)
     vector(const vector& other)
         : data_(static_cast<T*>(::operator new(other.capacity_ * sizeof(T)))),
           size_(other.size_), capacity_(other.capacity_) {
@@ -2193,7 +2193,7 @@ public:
             new (data_ + i) T(other.data_[i]); // Placement new
     }
 
-    // Move — O(1)
+    // Move â€” O(1)
     vector(vector&& other) noexcept
         : data_(other.data_), size_(other.size_), capacity_(other.capacity_) {
         other.data_ = nullptr;
@@ -2211,7 +2211,7 @@ public:
 - **Constructor**: Allocates buffer, copies or moves the content.
 - **Destructor**: Deallocates the buffer.
 - **Copy-on-write (COW)**: Historically used (pre-C++11), now abandoned because thread safety issues outweighed benefit.
-- **Small String Optimisation (SSO)**: Most implementations store short strings (≤15 chars) directly in the object without heap allocation.
+- **Small String Optimisation (SSO)**: Most implementations store short strings (â‰¤15 chars) directly in the object without heap allocation.
 
 ```cpp
 std::string s1 = "Hello, World!"; // Heap-allocated (if SSO threshold exceeded)
@@ -2248,13 +2248,13 @@ void processFile() {
 void demonstrateRAII() {
     auto p1 = std::make_unique<int>(42);
     // unique_ptr: exclusive ownership
-    // Cannot be copied — only moved
+    // Cannot be copied â€” only moved
     // auto p2 = p1;                // ERROR: no copy
     auto p2 = std::move(p1);        // OK: transfer ownership
     // ~unique_ptr calls delete automatically
 
     auto s1 = std::make_shared<std::string>("Shared");
-    auto s2 = s1;  // Shared ownership — reference count incremented
+    auto s2 = s1;  // Shared ownership â€” reference count incremented
     // ~shared_ptr decrements ref count; when 0, calls delete
 }
 ```
@@ -2271,7 +2271,7 @@ void threadSafeFunction() {
     std::lock_guard<std::mutex> lock(mtx);
     // Mutex is locked in the constructor
 
-    // Critical section — thread-safe code here
+    // Critical section â€” thread-safe code here
 
     // Mutex is automatically unlocked by the destructor
     // Even if an exception is thrown!
@@ -2333,7 +2333,7 @@ private:
    <details><summary>Answer&lt;/summary&gt;**B)** If any user-defined constructor exists, the compiler-supplied default constructor is suppressed. You must explicitly request it with `= default` or define it yourself.</details>
 
 2. Why must `const` and reference members be initialised in the initialiser list?
-   A) The compiler enforces it — they cannot be assigned after construction
+   A) The compiler enforces it â€” they cannot be assigned after construction
    B) It is more efficient but not required
    C) Only `const` members require this; references can be assigned
    D) They must be initialised in the constructor body
@@ -2404,7 +2404,7 @@ Constructors and destructors form the backbone of object lifecycle management in
 **Constructors** initialise objects in a controlled, guaranteed manner:
 - **Default constructors** create objects with standard initial values.
 - **Parameterised constructors** accept caller-specified arguments.
-- **Initialiser lists** provide efficient, correct initialisation for all member types — the only way to set `const` and reference members.
+- **Initialiser lists** provide efficient, correct initialisation for all member types â€” the only way to set `const` and reference members.
 - **Delegating constructors** avoid repetition across constructor overloads.
 - **The `explicit` keyword** prevents accidental implicit conversions.
 - **Copy constructors** enable value semantics but require deep copying for resource-managing classes.
@@ -2412,10 +2412,10 @@ Constructors and destructors form the backbone of object lifecycle management in
 
 **Destructors** perform deterministic cleanup:
 - **RAII** (Resource Acquisition Is Initialisation) binds resource lifetime to object lifetime.
-- **Virtual destructors** ensure correct polymorphic cleanup — required for all polymorphic base classes.
+- **Virtual destructors** ensure correct polymorphic cleanup â€” required for all polymorphic base classes.
 - Destructors must never throw exceptions.
 
-**The Rule of Three/Five** formalises the relationships between these special member functions. If a class manages resources, you must implement (or delete) all of them to avoid double-free, memory leaks, and dangling pointers. When possible, follow the **Rule of Zero** — use smart pointers and STL containers so the compiler-generated functions are correct.
+**The Rule of Three/Five** formalises the relationships between these special member functions. If a class manages resources, you must implement (or delete) all of them to avoid double-free, memory leaks, and dangling pointers. When possible, follow the **Rule of Zero** â€” use smart pointers and STL containers so the compiler-generated functions are correct.
 
 ---
 

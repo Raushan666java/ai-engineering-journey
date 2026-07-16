@@ -1,4 +1,4 @@
-# Chapter 19: Performance Tuning
+﻿# Chapter 19: Performance Tuning
 
 > **Prev:** [Chapter 18: Database Security](18-security.md) | **Next:** *(Last Chapter)*
 
@@ -9,16 +9,16 @@ After completing this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/19-performance-tuning/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/19-performance-tuning/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/19-performance-tuning/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/19-performance-tuning/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/19-performance-tuning/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/19-performance-tuning/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/19-performance-tuning/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/19-performance-tuning/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/19-performance-tuning/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/19-performance-tuning/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/19-performance-tuning/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/19-performance-tuning/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -97,19 +97,19 @@ Database performance tuning is like tuning a race car engine. The engine (databa
 - **Transmission = Connection Pool**: Gears (connections) must match speed (concurrency) to avoid stalling
 - **Exhaust = Query Logs**: Reveals what the engine is actually doing under load
 
-A bad query plan is like firing pistons out of order â†’ the engine misfires, loses power, and wastes fuel.
+A bad query plan is like firing pistons out of order Ã¢â€ â€™ the engine misfires, loses power, and wastes fuel.
 
 ### Steps for Systematic Performance Tuning
 
 
 ```
-Step 1: MEASURE â†’ Establish baseline metrics (response time, throughput, resource usage)
-Step 2: IDENTIFY â†’ Find slowest queries via logs (slow_query_log, pg_stat_statements)
-Step 3: ANALYZE â†’ Run EXPLAIN (ANALYZE, BUFFERS) to find the bottleneck node
-Step 4: HYPOTHESIZE â†’ Form hypothesis: missing index? bloated table? bad join order?
-Step 5: CHANGE â†’ Apply one change at a time (index, rewrite, config)
-Step 6: MEASURE AGAIN â†’ Compare against baseline; revert if no improvement
-Step 7: ITERATE â†’ Repeat until SLA is met or diminishing returns
+Step 1: MEASURE Ã¢â€ â€™ Establish baseline metrics (response time, throughput, resource usage)
+Step 2: IDENTIFY Ã¢â€ â€™ Find slowest queries via logs (slow_query_log, pg_stat_statements)
+Step 3: ANALYZE Ã¢â€ â€™ Run EXPLAIN (ANALYZE, BUFFERS) to find the bottleneck node
+Step 4: HYPOTHESIZE Ã¢â€ â€™ Form hypothesis: missing index? bloated table? bad join order?
+Step 5: CHANGE Ã¢â€ â€™ Apply one change at a time (index, rewrite, config)
+Step 6: MEASURE AGAIN Ã¢â€ â€™ Compare against baseline; revert if no improvement
+Step 7: ITERATE Ã¢â€ â€™ Repeat until SLA is met or diminishing returns
 ```
 
 ### Pseudocode: Performance Tuning Loop
@@ -205,7 +205,7 @@ Execution Time: 23.512 ms
 |------|------|----------|----------|-------------|---------------|---------|-------|
 | 1 | Seq Scan | 0.00..2341.00 | 1 | 15 | 23.451 | 840 | Scanned all 100K rows to find 15; 99,985 rows filtered out |
 
-**Analysis:** Estimated rows (1) Ã¢â€°Ë† actual rows (15) â†’ statistics OK. Problem: sequential scan on 100K rows for 15 results = 99.97% wasted I/O. Buffer hit: 840 pages scanned â†’ index would read ~3 pages.
+**Analysis:** Estimated rows (1) ÃƒÂ¢Ã¢â‚¬Â°Ã‹â€  actual rows (15) Ã¢â€ â€™ statistics OK. Problem: sequential scan on 100K rows for 15 results = 99.97% wasted I/O. Buffer hit: 840 pages scanned Ã¢â€ â€™ index would read ~3 pages.
 
 **EXPLAIN Output After Index:**
 
@@ -225,7 +225,7 @@ Execution Time: 0.134 ms
 |------|------|----------|----------|-------------|---------------|---------|-------|
 | 1 | Index Scan | 0.29..12.31 | 15 | 15 | 0.089 | 3 | Index lookup: cost drops from 2341 to 12, buffers from 840 to 3 |
 
-**Improvement:** 23.5 ms â†’ 0.13 ms (180x faster). Buffers: 840 â†’ 3 (280x less I/O).
+**Improvement:** 23.5 ms Ã¢â€ â€™ 0.13 ms (180x faster). Buffers: 840 Ã¢â€ â€™ 3 (280x less I/O).
 
 ### EXPLAIN ANALYZE Key Metrics Table
 
@@ -435,7 +435,7 @@ print(logger.generate_report())
 ```
 
 **Complexity Analysis:**
-- **Time:** O(L Ãƒâ€” P) where L = log lines, P = pattern count. Each line is matched against all patterns. Typically L &lt; 10000, P < 10 â†’ fine for batch analysis.
+- **Time:** O(L ÃƒÆ’Ã¢â‚¬â€ P) where L = log lines, P = pattern count. Each line is matched against all patterns. Typically L &lt; 10000, P < 10 Ã¢â€ â€™ fine for batch analysis.
 - **Space:** O(Q) where Q = slow queries stored. Each query stores ~500 bytes of metadata.
 - **WHY:** Pattern-matching is the fastest general approach for log parsing; regex engines are optimized with DFA compilation. For production at scale, stream the parser instead of storing all queries.
 
@@ -444,7 +444,7 @@ print(logger.generate_report())
 ### Real-World Analogy: Library Catalog System
 
 
-Indexes are like a library's catalog system. Without a catalog (full scan), you walk every aisle looking at every book. A **B-tree index** is the standard Dewey Decimal catalog â†’ fast for exact lookups and sorted ranges. A **covering index** is like a catalog card that includes the book's summary â†’ you don't need to pull the book off the shelf. An **index hint** is a librarian's recommendation: "Use the author catalog, not the title catalog, for this search."
+Indexes are like a library's catalog system. Without a catalog (full scan), you walk every aisle looking at every book. A **B-tree index** is the standard Dewey Decimal catalog Ã¢â€ â€™ fast for exact lookups and sorted ranges. A **covering index** is like a catalog card that includes the book's summary Ã¢â€ â€™ you don't need to pull the book off the shelf. An **index hint** is a librarian's recommendation: "Use the author catalog, not the title catalog, for this search."
 
 ### Covering Index
 
@@ -472,7 +472,7 @@ EXPLAIN ANALYZE SELECT email, name FROM users WHERE email = 'a@b.com';
 | Execution Time | 0.45 ms | 0.08 ms |
 | Buffers (hit) | 5 (index) + 3 (heap) = 8 | 3 (index only) |
 | Heap Fetches | 3 | 0 |
-| Improvement | â†’ | 5.6x faster, 62% less I/O |
+| Improvement | Ã¢â€ â€™ | 5.6x faster, 62% less I/O |
 
 ### Index Hints
 
@@ -502,7 +502,7 @@ WHERE customer_id = 42;
 |----------|-----------|-------------|----------|---------|
 | No hint, wrong index chosen | idx_orders_created | 50000 | 2.3s | Planner error (outdated stats) |
 | FORCE INDEX (idx_customer) | idx_orders_customer | 150 | 0.12s | 19x faster |
-| IGNORE INDEX (all) | Full scan | 200000 | 8.4s | Worst case â†’ no index at all |
+| IGNORE INDEX (all) | Full scan | 200000 | 8.4s | Worst case Ã¢â€ â€™ no index at all |
 | ANALYZE + no hint | idx_orders_customer | 150 | 0.11s | Correct plan without hint |
 
 **Rule of thumb:** Prefer fixing statistics over using hints. Hints mask the root problem (stale stats) and become tech debt.
@@ -744,19 +744,19 @@ for issue in issues:
 ```
 
 **Complexity Analysis:**
-- **Time:** O(NÃ‚Â²) for overlap detection where N = index count. Each index compared with every other. For typical systems (N &lt; 50), this is fast.
+- **Time:** O(NÃƒâ€šÃ‚Â²) for overlap detection where N = index count. Each index compared with every other. For typical systems (N &lt; 50), this is fast.
 - **Space:** O(N) for index metadata.
-- **WHY:** Overlap detection is inherently pairwise; no hash structure can avoid the comparison since column overlap is a set-intersection problem. N &lt; 50 makes NÃ‚Â² acceptable (2500 comparisons < 1ms).
+- **WHY:** Overlap detection is inherently pairwise; no hash structure can avoid the comparison since column overlap is a set-intersection problem. N &lt; 50 makes NÃƒâ€šÃ‚Â² acceptable (2500 comparisons < 1ms).
 
 ### Edge Cases in Index Optimization
 
 
 | Edge Case | Description | Impact | Solution |
 |-----------|-------------|--------|----------|
-| **Over-indexing** | 10+ indexes on one table | Write amplification: each INSERT updates ALL indexes. Bulk load drops to 1/10th throughput | Keep Ã¢â€°Â¤ 5 indexes per table; drop unused ones |
+| **Over-indexing** | 10+ indexes on one table | Write amplification: each INSERT updates ALL indexes. Bulk load drops to 1/10th throughput | Keep ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤ 5 indexes per table; drop unused ones |
 | **Stale Statistics** | `n_distinct` is wrong after large data change | Planner chooses wrong index or full scan | Run ANALYZE after bulk operations; increase `default_statistics_target` |
 | **Parameter Sniffing** | First execution caches plan for specific param values | Subsequent different params get suboptimal plan | Use plan guides (SQL Server), prepared statements with generic plans (PG), or forced parameterization |
-| **Index on Expression** | Index on `lower(email)` but query uses `email` | Index never used â†’ silent waste | Match query to index expression exactly |
+| **Index on Expression** | Index on `lower(email)` but query uses `email` | Index never used Ã¢â€ â€™ silent waste | Match query to index expression exactly |
 | **Composite Index Column Order** | `INDEX(a,b)` but query filters only on `b` | B-tree prefix rule: column order matters. Query on `b` alone cannot use the index | Create separate index on `(b)` or reorder columns |
 | **Nulls in Indexed Column** | `WHERE col IS NULL` may not use index | PostgreSQL can index NULLs; MySQL may not use index for IS NULL queries | Test with your database; consider functional index |
 | **Very Large Index Keys** | Index on TEXT column (up to 1KB per entry) | Index becomes large, slow, and fragmented | Use hash index for equality, or prefix compression |
@@ -766,7 +766,7 @@ for issue in issues:
 ### Real-World Analogy: GPS Route Planning
 
 
-Query optimization is like GPS route planning. A naive query is a GPS that recalculates from scratch at every intersection. An optimized query pre-computes the best route, avoids traffic (unnecessary rows), takes express lanes (indexes), and combines trips (batch operations). The query planner is the GPS algorithm â†’ it evaluates multiple routes and picks the cheapest based on its map (statistics).
+Query optimization is like GPS route planning. A naive query is a GPS that recalculates from scratch at every intersection. An optimized query pre-computes the best route, avoids traffic (unnecessary rows), takes express lanes (indexes), and combines trips (batch operations). The query planner is the GPS algorithm Ã¢â€ â€™ it evaluates multiple routes and picks the cheapest based on its map (statistics).
 
 ### Numbered Steps: Query Rewrite Methodology
 
@@ -813,9 +813,9 @@ GROUP BY p.id;
 | Metric | Before (Correlated) | After (JOIN) |
 |--------|-------------------|--------------|
 | Execution Time | 1,450 ms | 89 ms |
-| Rows Examined | 5,200,000 (10K Ãƒâ€” avg 520) | 520,000 |
+| Rows Examined | 5,200,000 (10K ÃƒÆ’Ã¢â‚¬â€ avg 520) | 520,000 |
 | IO Reads | 3,400 | 340 |
-| **Improvement** | â†’ | **16x faster** |
+| **Improvement** | Ã¢â€ â€™ | **16x faster** |
 
 **Technique 2: Replace OR with UNION**
 
@@ -834,7 +834,7 @@ SELECT * FROM users WHERE phone = '555-0001';
 |--------|-------------|---------------|
 | Execution Time | 12.4 ms | 0.8 ms |
 | Plan Type | Seq Scan or BitmapOr | Index Scan on email + Index Scan on phone |
-| **Improvement** | â†’ | **15x faster** |
+| **Improvement** | Ã¢â€ â€™ | **15x faster** |
 
 **Technique 3: Aggregation Pushdown**
 
@@ -858,21 +858,21 @@ JOIN (SELECT department_id, COUNT(*) AS cnt
 ```
 Query: SELECT * FROM orders WHERE customer_id = 42 AND status = 'shipped';
 
-Step 1 â†’ Original EXPLAIN:
+Step 1 Ã¢â€ â€™ Original EXPLAIN:
   Seq Scan on orders (cost=0.00..2341.00 rows=1)
   Filter: (customer_id = 42) AND (status = 'shipped'::text)
 
-Step 2 â†’ Add composite index:
+Step 2 Ã¢â€ â€™ Add composite index:
   CREATE INDEX idx_orders_cust_status ON orders (customer_id, status);
 
-Step 3 â†’ After index, re-EXPLAIN:
+Step 3 Ã¢â€ â€™ After index, re-EXPLAIN:
   Index Scan using idx_orders_cust_status on orders
   (cost=0.29..8.31 rows=5)
   Index Cond: (customer_id = 42) AND (status = 'shipped'::text)
 
-Step 4 â†’ Verify with ANALYZE:
+Step 4 Ã¢â€ â€™ Verify with ANALYZE:
   EXPLAIN ANALYZE SELECT * FROM orders ...;
-  Actual time=0.045ms (was 23.4ms â†’ 520x faster!)
+  Actual time=0.045ms (was 23.4ms Ã¢â€ â€™ 520x faster!)
 ```
 
 ### A&D Table: Query Rewrite Approaches
@@ -880,13 +880,13 @@ Step 4 â†’ Verify with ANALYZE:
 
 | Approach | Advantages | Disadvantages |
 |----------|-----------|---------------|
-| **Subquery â†’ JOIN** | Single scan, no correlation overhead | May change semantics with NULLs, duplicates need DISTINCT |
-| **OR â†’ UNION** | Uses separate indexes per branch | UNION deduplication overhead; use UNION ALL if no dupes |
-| **NOT IN â†’ NOT EXISTS** | Handles NULLs correctly, anti-join plan | Slightly less readable |
+| **Subquery Ã¢â€ â€™ JOIN** | Single scan, no correlation overhead | May change semantics with NULLs, duplicates need DISTINCT |
+| **OR Ã¢â€ â€™ UNION** | Uses separate indexes per branch | UNION deduplication overhead; use UNION ALL if no dupes |
+| **NOT IN Ã¢â€ â€™ NOT EXISTS** | Handles NULLs correctly, anti-join plan | Slightly less readable |
 | **Aggregation Pushdown** | Less data in JOIN, smaller intermediate sets | More nested subqueries, harder to debug |
 | **Window Functions** | Avoids self-joins, single scan | Higher memory for sort, not always faster |
-| **CTE Materialization** | Clearer logic, can materialize intermediate results | PostgreSQL Ã¢â€°Â¤11 materializes CTEs always; can prevent pushdown |
-| **EXISTS â†’ JOIN** | Early exit on first match | Must deduplicate if 1:M relationship |
+| **CTE Materialization** | Clearer logic, can materialize intermediate results | PostgreSQL ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤11 materializes CTEs always; can prevent pushdown |
+| **EXISTS Ã¢â€ â€™ JOIN** | Early exit on first match | Must deduplicate if 1:M relationship |
 
 ### Pseudocode: Query Rewrite Engine
 
@@ -992,7 +992,7 @@ FROM product_display WHERE id = 42;
 | Joins | 5 | 0 |
 | Storage | 6 tables, each with indexes | 1 table, 1 index |
 | Maintenance | Updates cascade across 6 tables | Single row update |
-| **Improvement** | â†’ | **20x faster** |
+| **Improvement** | Ã¢â€ â€™ | **20x faster** |
 
 ### Schema Optimization Patterns
 
@@ -1094,16 +1094,16 @@ LIMIT 10;
 
 
 ```
-Step 1: MEASURE baseline â†’ pg_stat_database buffer hit ratio, iostat, free -m
+Step 1: MEASURE baseline Ã¢â€ â€™ pg_stat_database buffer hit ratio, iostat, free -m
 Step 2: SET shared_buffers = 25% of RAM (but not exceed 8GB on Linux without huge pages)
 Step 3: SET effective_cache_size = 70% of remaining RAM (OS file cache estimate)
 Step 4: SET work_mem = (RAM - shared_buffers) / (max_connections * 16)
-         Example: (16GB - 4GB) / (100 * 16) = 12GB / 1600 = 7.6MB â†’ set to 8MB
+         Example: (16GB - 4GB) / (100 * 16) = 12GB / 1600 = 7.6MB Ã¢â€ â€™ set to 8MB
 Step 5: SET maintenance_work_mem = 5-10% of RAM for faster index/VACUUM
 Step 6: SET random_page_cost = 1.1 (SSD) or 4.0 (HDD)
 Step 7: SET wal_buffers = -1 (auto: 1/32 of shared_buffers, max 16MB)
-Step 8: MONITOR changes â†’ if buffer hit ratio < 95%, increase shared_buffers
-Step 9: ITERATE â†’ check pg_stat_statements for top wait events
+Step 8: MONITOR changes Ã¢â€ â€™ if buffer hit ratio < 95%, increase shared_buffers
+Step 9: ITERATE Ã¢â€ â€™ check pg_stat_statements for top wait events
 ```
 
 ### Python Implementation: Configuration Tuner
@@ -1221,8 +1221,8 @@ print(tuner_small.generate_report())
 ```
 
 **Complexity Analysis:**
-- **Time:** O(1) â†’ all calculations are arithmetic formulas with no iteration.
-- **Space:** O(1) â†’ fixed number of configuration parameters (~15).
+- **Time:** O(1) Ã¢â€ â€™ all calculations are arithmetic formulas with no iteration.
+- **Space:** O(1) Ã¢â€ â€™ fixed number of configuration parameters (~15).
 - **WHY:** Configuration tuning is a one-pass calculation based on hardware specs. No search, no iteration. Complexity is constant because the number of config parameters is fixed per database engine.
 
 ## 19.7 Connection Pooling
@@ -1427,7 +1427,7 @@ int main() {
 ```
 
 **Complexity Analysis:**
-- **Time:** O(1) for acquire/release â†’ queue operations are O(1) amortized. Condition variable wait is O(1). The pool size is bounded by `maxSize` (typically 10-50).
+- **Time:** O(1) for acquire/release Ã¢â€ â€™ queue operations are O(1) amortized. Condition variable wait is O(1). The pool size is bounded by `maxSize` (typically 10-50).
 - **Space:** O(maxSize) for storing connection objects. Each connection holds socket buffer (~200KB) and connection state (~100KB).
 - **WHY:** A queue is the natural structure for LIFO pool access (hot connections stay hot). Mutex contention is minimized because connections are held for query duration (5-500ms), not microseconds. Condition variable signals only one waiting thread (not broadcast).
 
@@ -1580,7 +1580,7 @@ asyncio.run(simulate_workload())
 ### Real-World Analogy: Filing Cabinet System
 
 
-Partitioning is like organizing documents into separate filing cabinets by year. Instead of one giant cabinet with 100,000 folders (one table), you have one cabinet per year (partition). When you need Q1 2026 documents, you open only that drawer (partition pruning). Range partitioning is "by year/month/day". List partitioning is "by department â†’ Sales/Engineering/HR". Hash partitioning is "by employee ID â†’ file cabinet 0-3" when there's no natural grouping.
+Partitioning is like organizing documents into separate filing cabinets by year. Instead of one giant cabinet with 100,000 folders (one table), you have one cabinet per year (partition). When you need Q1 2026 documents, you open only that drawer (partition pruning). Range partitioning is "by year/month/day". List partitioning is "by department Ã¢â€ â€™ Sales/Engineering/HR". Hash partitioning is "by employee ID Ã¢â€ â€™ file cabinet 0-3" when there's no natural grouping.
 
 ### Partitioning Types Comparison
 
@@ -1622,7 +1622,7 @@ WHERE ts >= '2026-01-01' AND ts < '2026-04-01';
 | Partitions Accessed | All (3) | 1 |
 | Execution Time | 3,450 ms | 890 ms |
 | I/O (Buffers) | 42,000 | 2,100 |
-| **Improvement** | â†’ | **3.9x faster, 20x less I/O** |
+| **Improvement** | Ã¢â€ â€™ | **3.9x faster, 20x less I/O** |
 
 ### C++ Implementation: Partition Pruning Simulator
 
@@ -1845,7 +1845,7 @@ class PartitionManager:
             pct = (p.row_count / max(total_rows, 1)) * 100
             report += f"  {p.name}: {p.row_count:,} rows ({pct:.1f}%)\n"
             if isinstance(p, RangePartition):
-                report += f"    Range: {p.start.date()} â†’ {p.end.date()}\n"
+                report += f"    Range: {p.start.date()} Ã¢â€ â€™ {p.end.date()}\n"
 
         return report
 
@@ -2092,7 +2092,7 @@ Query caching is like having coffee thermoses vs brewing fresh coffee each time.
 | Aspect | Database Query Cache | Application Cache |
 |--------|---------------------|-------------------|
 | **Location** | Inside DB memory (buffer pool) | Application tier (Redis, Memcached, in-memory) |
-| **Granularity** | Query text â†’ result | Arbitrary key â†’ value (can cache rendered HTML) |
+| **Granularity** | Query text Ã¢â€ â€™ result | Arbitrary key Ã¢â€ â€™ value (can cache rendered HTML) |
 | **Invalidation** | Table writes flush all related cache entries | Application-controlled TTL, event-driven eviction |
 | **Volatility** | In-memory, lost on restart | Configurable persistence |
 | **Hit Rate** | Limited to repeated identical queries | High for hot data with well-designed keys |
@@ -2264,7 +2264,7 @@ print(f"Hit rate: {cache.stats['hit_rate']:.1f}%")
 **Complexity Analysis:**
 - **Time:** O(1) for get/set (hash table lookup + OrderedDict move_to_end). O(E) for invalidation where E = entries matching table pattern.
 - **Space:** O(N) where N = cache entries. Each entry stores key (32 bytes hash), value (variable), and metadata (~80 bytes).
-- **WHY:** Hash table with MD5 key provides O(1) average-case lookup. OrderedDict enables O(1) LRU eviction. TTL expiry is checked on access (not background thread) to avoid overhead. Invalidation is O(E) because it scans all entries â†’ acceptable for small caches (< 10K entries).
+- **WHY:** Hash table with MD5 key provides O(1) average-case lookup. OrderedDict enables O(1) LRU eviction. TTL expiry is checked on access (not background thread) to avoid overhead. Invalidation is O(E) because it scans all entries Ã¢â€ â€™ acceptable for small caches (< 10K entries).
 
 ### Edge Cases in Caching
 
@@ -2297,8 +2297,8 @@ print(f"Hit rate: {cache.stats['hit_rate']:.1f}%")
 index_cost = index_height * random_page_cost + matching_pages * random_page_cost
 seq_cost = total_pages * seq_page_cost / parallel_workers
 
-If index_cost < seq_cost â†’ Index Scan
-Else â†’ Sequential Scan
+If index_cost < seq_cost Ã¢â€ â€™ Index Scan
+Else Ã¢â€ â€™ Sequential Scan
 ```
 
 ## Interview Corner
@@ -2321,10 +2321,10 @@ Step 4: Check join strategy:
   - Hash Join: good for medium tables
   - Merge Join: good for pre-sorted data
 Step 5: Check for problem patterns:
-  - Seq Scan on large table with WHERE filter â†’ missing index
-  - Rows Removed by Filter > 90% â†’ poor index selectivity
-  - Sort node without index â†’ consider index on ORDER BY columns
-  - Multiple nested loop joins â†’ check join order and indexes
+  - Seq Scan on large table with WHERE filter Ã¢â€ â€™ missing index
+  - Rows Removed by Filter > 90% Ã¢â€ â€™ poor index selectivity
+  - Sort node without index Ã¢â€ â€™ consider index on ORDER BY columns
+  - Multiple nested loop joins Ã¢â€ â€™ check join order and indexes
 ```
 
 ### 2. Slow Query Debugging Process
@@ -2345,20 +2345,20 @@ Step 5: Check for problem patterns:
    - Use pg_stat_statements normalization to see parameterized version
 
 4. DIAGNOSE: Look for these patterns:
-   - Seq Scan on large table â†’ missing index
-   - Row estimate 10x off â†’ stale statistics â†’ ANALYZE
-   - Nested Loop with large inner scan â†’ wrong join order
-   - Sort on large dataset â†’ missing index on sort columns
-   - Temp file for hash/hash aggregate â†’ increase work_mem
+   - Seq Scan on large table Ã¢â€ â€™ missing index
+   - Row estimate 10x off Ã¢â€ â€™ stale statistics Ã¢â€ â€™ ANALYZE
+   - Nested Loop with large inner scan Ã¢â€ â€™ wrong join order
+   - Sort on large dataset Ã¢â€ â€™ missing index on sort columns
+   - Temp file for hash/hash aggregate Ã¢â€ â€™ increase work_mem
 
 5. FIX: Apply the targeted fix:
-   - Missing index â†’ CREATE INDEX
-   - Stale stats â†’ ANALYZE
-   - Bad query plan â†’ rewrite query or update statistics
-   - Temp file sort â†’ increase work_mem (check per-operation limit)
+   - Missing index Ã¢â€ â€™ CREATE INDEX
+   - Stale stats Ã¢â€ â€™ ANALYZE
+   - Bad query plan Ã¢â€ â€™ rewrite query or update statistics
+   - Temp file sort Ã¢â€ â€™ increase work_mem (check per-operation limit)
 
 6. VERIFY: Re-run EXPLAIN ANALYZE, confirm improvement
-   - Before: 5.2s â†’ After: 0.015s
+   - Before: 5.2s Ã¢â€ â€™ After: 0.015s
 
 7. PREVENT: Add index to migration, schedule ANALYZE after bulk loads
 ```
@@ -2422,7 +2422,7 @@ WHERE o.customer_id = 42
 LIMIT 10;
 ```
 
-**Impact:** 10 orders Ãƒâ€” 5 items = 11 queries vs 1 query. 10-50ms per query = 110-550ms vs 5-15ms.
+**Impact:** 10 orders ÃƒÆ’Ã¢â‚¬â€ 5 items = 11 queries vs 1 query. 10-50ms per query = 110-550ms vs 5-15ms.
 
 **Detection:**
 - High `rows_examined` vs `rows_sent` ratio in slow query log
@@ -2589,7 +2589,7 @@ BRIN indexes are 100-1000x smaller than B-tree equivalents. For a 100 GB table, 
 - Columns with low cardinality (booleans, tiny enums)
 - Point lookups (BRIN always does a sequential scan of qualifying ranges)
 
-> **One-Sentence Takeaway:** BRIN indexes store min/max per page range â†’ ideal for append-heavy time-series and log data where physical order matches insertion order.
+> **One-Sentence Takeaway:** BRIN indexes store min/max per page range Ã¢â€ â€™ ideal for append-heavy time-series and log data where physical order matches insertion order.
 
 ### 19.11.2 GiST (Generalized Search Tree)
 
@@ -2689,7 +2689,7 @@ WHERE idx_scan > 0
 
 This query identifies indexes with low leaf density (high bloat). Indexes with >30% bloat are candidates for rebuilding.
 
-> **One-Sentence Takeaway:** Index bloat occurs from dead tuples and page fragmentation â†’ monitor with pg_stat_user_tables and rebuild periodically.
+> **One-Sentence Takeaway:** Index bloat occurs from dead tuples and page fragmentation Ã¢â€ â€™ monitor with pg_stat_user_tables and rebuild periodically.
 
 ### 19.12.2 Finding Unused Indexes
 
@@ -2710,7 +2710,7 @@ ORDER BY pg_relation_size(indexrelid) DESC;
 
 Unused indexes waste write overhead and cache space. Each index on a table adds write amplification -- every INSERT, UPDATE, and DELETE must update every index.
 
-> **One-Sentence Takeaway:** Unused indexes waste write performance and storage â†’ use pg_stat_user_indexes to identify and drop them safely.
+> **One-Sentence Takeaway:** Unused indexes waste write performance and storage Ã¢â€ â€™ use pg_stat_user_indexes to identify and drop them safely.
 
 ### 19.12.3 Rebuilding Indexes
 
@@ -2730,9 +2730,9 @@ DROP INDEX idx_orders_created;
 CREATE INDEX CONCURRENTLY idx_orders_created ON orders (created_at);
 ```
 
-Use CONCURRENTLY in production â†’ it allows reads and writes during the rebuild. The trade-off is it takes 2-3x longer and consumes more temporary storage.
+Use CONCURRENTLY in production Ã¢â€ â€™ it allows reads and writes during the rebuild. The trade-off is it takes 2-3x longer and consumes more temporary storage.
 
-> **One-Sentence Takeaway:** REINDEX CONCURRENTLY rebuilds indexes without blocking writes â†’ essential for production systems with uptime requirements.
+> **One-Sentence Takeaway:** REINDEX CONCURRENTLY rebuilds indexes without blocking writes Ã¢â€ â€™ essential for production systems with uptime requirements.
 
 ### 19.12.4 Zero-Downtime Index Creation
 
@@ -2773,7 +2773,7 @@ WHERE tablename = 'orders';
 
 PostgreSQL auto-analyzes when a table's pg_class.reltuples differs from actual count by more than the autovacuum_analyze_scale_factor (default 0.1, meaning 10% of rows changed).
 
-> **One-Sentence Takeaway:** EXPLAIN ANALYZE runs the query and shows actual vs. estimated row counts â†’ the most critical tool for understanding optimizer decisions.
+> **One-Sentence Takeaway:** EXPLAIN ANALYZE runs the query and shows actual vs. estimated row counts Ã¢â€ â€™ the most critical tool for understanding optimizer decisions.
 
 ### 19.13.2 Extended Statistics for Correlated Columns
 
@@ -2865,7 +2865,7 @@ CREATE TABLE sessions_1 PARTITION OF sessions
   FOR VALUES WITH (MODULUS 4, REMAINDER 1);
 ```
 
-> **One-Sentence Takeaway:** Table partitioning divides large tables into smaller physical pieces â†’ range, list, and hash partitions cover most use cases.
+> **One-Sentence Takeaway:** Table partitioning divides large tables into smaller physical pieces Ã¢â€ â€™ range, list, and hash partitions cover most use cases.
 
 ### 19.14.2 Partition Pruning
 
@@ -3060,7 +3060,7 @@ SET auto_explain.log_buffers = on;
 SET auto_explain.log_nested_statements = on;
 ```
 
-> **One-Sentence Takeaway:** auto_explain logs execution plans for slow queries automatically â†’ set log_min_duration to capture the right threshold.
+> **One-Sentence Takeaway:** auto_explain logs execution plans for slow queries automatically Ã¢â€ â€™ set log_min_duration to capture the right threshold.
 
 ### 19.18.2 PostgreSQL Log Analysis with pgBadger
 
@@ -3087,7 +3087,7 @@ Analyze with pt-query-digest:
 pt-query-digest /var/log/mysql/mysql-slow.log > slow_report.txt
 ```
 
-> **One-Sentence Takeaway:** The MySQL slow query log captures queries exceeding long_query_time â†’ enable it with log_queries_not_using_indexes for full coverage.
+> **One-Sentence Takeaway:** The MySQL slow query log captures queries exceeding long_query_time Ã¢â€ â€™ enable it with log_queries_not_using_indexes for full coverage.
 
 ### 19.18.4 Index Usage Metrics
 
@@ -3189,7 +3189,7 @@ The TypeScript code analyzes queries, suggests indexes, estimates performance ga
 
 ```typescript
 // ============================================================
-// Performance Advisor â€” TypeScript
+// Performance Advisor Ã¢â‚¬â€ TypeScript
 // ============================================================
 
 interface IndexRecommendation {
@@ -3260,19 +3260,19 @@ class PerformanceAdvisor {
 
     // Anti-pattern detection
     if (query.match(/SELECT \*/) && tables.length > 1) {
-      antiPatterns.push('SELECT * with JOINs â€” specify only needed columns');
+      antiPatterns.push('SELECT * with JOINs Ã¢â‚¬â€ specify only needed columns');
     }
     if (query.match(/LIKE '%.+%'/) || query.match(/LIKE '.+%[^%]'/) && !query.match(/LIKE '.+%'/)) {
-      antiPatterns.push('Leading wildcard LIKE â€” cannot use index efficiently');
+      antiPatterns.push('Leading wildcard LIKE Ã¢â‚¬â€ cannot use index efficiently');
     }
     if (query.match(/NOT IN\s*\(/)) {
-      antiPatterns.push('NOT IN with subquery â€” use NOT EXISTS or LEFT JOIN / NULL instead');
+      antiPatterns.push('NOT IN with subquery Ã¢â‚¬â€ use NOT EXISTS or LEFT JOIN / NULL instead');
     }
     if (query.match(/OR\s+[^\s]+\s+IN\s*\(/) || query.match(/OR\s+[^\s]+\s+=\s*\(/)) {
-      antiPatterns.push('Multiple OR conditions â€” consider UNION ALL or IN list');
+      antiPatterns.push('Multiple OR conditions Ã¢â‚¬â€ consider UNION ALL or IN list');
     }
     if (query.match(/ORDER BY RAND\(\)/)) {
-      antiPatterns.push('ORDER BY RAND() â€” sorts all rows; use random sampling instead');
+      antiPatterns.push('ORDER BY RAND() Ã¢â‚¬â€ sorts all rows; use random sampling instead');
     }
 
     return {
@@ -3496,32 +3496,32 @@ flowchart TD
 
 ## Pro Tips
 
-1. **EXPLAIN (ANALYZE, BUFFERS) is your primary diagnostic tool** â†’ run it on slow queries first. It shows actual vs. estimated rows, revealing bad statistics, missing indexes, and wrong join strategies.
-2. **BRIN indexes are magic for append-only time-series data** â†’ they are 100-1000Ãƒâ€” smaller than B-tree indexes on timestamp columns and just as fast for range queries on naturally ordered data.
-3. **Never wrap indexed columns in functions** â†’ `WHERE DATE(created_at) = '2026-01-01'` makes the index useless. Write `WHERE created_at >= '2026-01-01' AND created_at < '2026-01-02'` instead.
-4. **Monitor index bloat** â†’ over time, B-tree indexes accumulate empty pages from deletions and updates. Rebuild them with `REINDEX CONCURRENTLY` to reclaim space.
-5. **Use extended statistics for correlated columns** â†’ if `WHERE city = 'NYC' AND status = 'active'` has correlated columns, the optimizer assumes independence and underestimates. Extended statistics fix this.
-6. **Cache at the application tier, not just the database** â†’ 90% of repeated queries can be served from Redis/Memcached, reducing database connections and buffer pool pressure.
-7. **Partition before you need it** â†’ partitioning a 500 GB table takes hours. Set up partitions when the table reaches 10 GB.
-8. **Connection pool size is NOT max connections** â†’ set it to `(2 * core_count) + effective_spindle_count`. Too many connections causes context switching thrash.
-9. **Tune in this order**: queries â†’ indexes â†’ schema â†’ config â†’ hardware. Each step fixes 80% of remaining problems.
-10. **One change at a time** â†’ change â†’ measure â†’ revert if worse. Multiple simultaneous changes mask cause and effect.
+1. **EXPLAIN (ANALYZE, BUFFERS) is your primary diagnostic tool** Ã¢â€ â€™ run it on slow queries first. It shows actual vs. estimated rows, revealing bad statistics, missing indexes, and wrong join strategies.
+2. **BRIN indexes are magic for append-only time-series data** Ã¢â€ â€™ they are 100-1000ÃƒÆ’Ã¢â‚¬â€ smaller than B-tree indexes on timestamp columns and just as fast for range queries on naturally ordered data.
+3. **Never wrap indexed columns in functions** Ã¢â€ â€™ `WHERE DATE(created_at) = '2026-01-01'` makes the index useless. Write `WHERE created_at >= '2026-01-01' AND created_at < '2026-01-02'` instead.
+4. **Monitor index bloat** Ã¢â€ â€™ over time, B-tree indexes accumulate empty pages from deletions and updates. Rebuild them with `REINDEX CONCURRENTLY` to reclaim space.
+5. **Use extended statistics for correlated columns** Ã¢â€ â€™ if `WHERE city = 'NYC' AND status = 'active'` has correlated columns, the optimizer assumes independence and underestimates. Extended statistics fix this.
+6. **Cache at the application tier, not just the database** Ã¢â€ â€™ 90% of repeated queries can be served from Redis/Memcached, reducing database connections and buffer pool pressure.
+7. **Partition before you need it** Ã¢â€ â€™ partitioning a 500 GB table takes hours. Set up partitions when the table reaches 10 GB.
+8. **Connection pool size is NOT max connections** Ã¢â€ â€™ set it to `(2 * core_count) + effective_spindle_count`. Too many connections causes context switching thrash.
+9. **Tune in this order**: queries Ã¢â€ â€™ indexes Ã¢â€ â€™ schema Ã¢â€ â€™ config Ã¢â€ â€™ hardware. Each step fixes 80% of remaining problems.
+10. **One change at a time** Ã¢â€ â€™ change Ã¢â€ â€™ measure Ã¢â€ â€™ revert if worse. Multiple simultaneous changes mask cause and effect.
 
 ## One-Sentence Takeaways
 
-- **19.1:** Index type selection matters â†’ BRIN for time-series, GiST for geospatial, GIN for JSONB/full-text, SP-GiST for tree/prefix structures.
+- **19.1:** Index type selection matters Ã¢â€ â€™ BRIN for time-series, GiST for geospatial, GIN for JSONB/full-text, SP-GiST for tree/prefix structures.
 - **19.2:** Index maintenance (rebuild, bloat monitoring, unused index removal) is essential for sustained performance.
-- **19.3:** Accurate cardinality estimation depends on up-to-date statistics â†’ ANALYZE regularly and increase STATISTICS targets for skewed data.
+- **19.3:** Accurate cardinality estimation depends on up-to-date statistics Ã¢â€ â€™ ANALYZE regularly and increase STATISTICS targets for skewed data.
 - **19.4:** Table partitioning transforms large-table problems into small-table solutions with partition pruning.
 - **19.5:** Materialized views pre-compute expensive aggregations for reporting queries.
-- **19.6:** Performance diagnosis tools â†’ auto_explain, pg_stat_statements, pg_stat_user_indexes, and EXPLAIN (ANALYZE, BUFFERS) â†’ pinpoint the root cause of slowdowns.
+- **19.6:** Performance diagnosis tools Ã¢â€ â€™ auto_explain, pg_stat_statements, pg_stat_user_indexes, and EXPLAIN (ANALYZE, BUFFERS) Ã¢â€ â€™ pinpoint the root cause of slowdowns.
 
 ## Concept Comparison Table
 
 | Index Type | Size vs. B-tree | Best For | Supported Operations |
 |-----------|----------------|----------|---------------------|
 | **B-tree** | Baseline | General purpose | <, &lt;=, =, &gt;=, >, BETWEEN, LIKE (prefix) |
-| **BRIN** | 100-1000Ãƒâ€” smaller | Time-series, naturally ordered data | Range queries on correlated physical order |
+| **BRIN** | 100-1000ÃƒÆ’Ã¢â‚¬â€ smaller | Time-series, naturally ordered data | Range queries on correlated physical order |
 | **GiST** | Larger | Geospatial, full-text search, ranges | Geometric operators, @>, &lt;-> |
 | **GIN** | Larger | JSONB, full-text search, arrays | @>, ?, ?|, ?&, @@ |
 | **SP-GiST** | Moderate | Tree structures, prefix search, GIS | Quad-tree, k-d tree, radix tree operations |
@@ -3531,7 +3531,7 @@ flowchart TD
 |------------------|---------|-------------|-----|
 | **Slow SELECT** | High seq scan, low rows returned | Missing index | Add appropriate index |
 | **Slow INSERT** | High write latency | Too many indexes | Reduce indexes, use batch inserts |
-| **Bad plan** | Estimated rows Ã¢â€°Â  actual rows | Stale statistics | ANALYZE, increase STATISTICS target |
+| **Bad plan** | Estimated rows ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â  actual rows | Stale statistics | ANALYZE, increase STATISTICS target |
 | **Index bloat** | Large index, same row count | Deletes/updates without cleanup | REINDEX CONCURRENTLY |
 | **Slow reporting** | Full table scans on large tables | Missing materialized view | Create materialized view + refresh schedule |
 | **Connection exhaustion** | Queries stuck waiting for connection | Pool too small or connection leak | Increase pool size, fix leaks |
@@ -3553,14 +3553,14 @@ flowchart TD
 | **`work_mem`** | Memory for sorts and hash tables per operation |
 | **`maintenance_work_mem`** | Memory for VACUUM, CREATE INDEX (higher is faster) |
 | **`effective_cache_size`** | OS-level cache estimate for cost calculations |
-| **`random_page_cost`** | Cost of random I/O (lower for SSDs â†’ set to 1.1) |
+| **`random_page_cost`** | Cost of random I/O (lower for SSDs Ã¢â€ â€™ set to 1.1) |
 | **`default_statistics_target`** | Number of histogram buckets (default 100, raise to 1000) |
 
 ## Cross-Application Matrix
 
 | Tuning Technique | Applied In | Why It Matters |
 |-----------------|-----------|----------------|
-| **BRIN Indexes** | IoT sensor data, log tables, audit trails | 1000Ãƒâ€” smaller indexes for append-only timestamp data |
+| **BRIN Indexes** | IoT sensor data, log tables, audit trails | 1000ÃƒÆ’Ã¢â‚¬â€ smaller indexes for append-only timestamp data |
 | **Partitioning** | Event tables, time-series, multi-tenant | Fast partition pruning, easy old-data removal (DETACH) |
 | **Materialized Views** | BI dashboards, monthly reports | Pre-computed aggregates eliminate expensive runtime queries |
 | **Extended Statistics** | Correlated column filters | Accurate cardinality for city+status, age+salary combinations |

@@ -1,4 +1,4 @@
-# Chapter 30: Logistics & Supply Chain Agents
+﻿# Chapter 30: Logistics & Supply Chain Agents
 
 > **Previous:** [Education](./29-education.md) | **Next:** [HR Recruitment](./31-hr-recruitment.md)
 
@@ -19,16 +19,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/30-logistics/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/30-logistics/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/30-logistics/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/30-logistics/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/30-logistics/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/30-logistics/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/30-logistics/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/30-logistics/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/30-logistics/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/30-logistics/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/30-logistics/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/30-logistics/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -1412,7 +1412,7 @@ class RouteOptimizationAgent
     ): array {
         $legsSummary = collect($legs)->map(
             fn ($l) => sprintf(
-                '%s Ã¢â€ â€™ %s (%.1f km, %d min)',
+                '%s ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ %s (%.1f km, %d min)',
                 $l['from'], $l['to'], $l['distance_km'], $l['duration_minutes']
             )
         )->implode("\n");
@@ -1791,7 +1791,7 @@ class TrackingUpdate
 
 > **One-Sentence Takeaway:** Supplier agents evaluate supplier performance against KPIs and automate procurement workflows.
 
-Supplier management agents evaluate vendor performance across multiple dimensions Ã¢â‚¬â€ on-time delivery, product quality, pricing competitiveness, and communication responsiveness. The agent generates scorecards, identifies underperforming suppliers, and automates procurement decisions.
+Supplier management agents evaluate vendor performance across multiple dimensions ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â on-time delivery, product quality, pricing competitiveness, and communication responsiveness. The agent generates scorecards, identifies underperforming suppliers, and automates procurement decisions.
 
 ```php
 <?php
@@ -3322,7 +3322,7 @@ class SupplyChainReport
 
 In this chapter, we built a complete logistics and supply chain intelligence system using Laravel and AI agents:
 
-- **Data models** for shipments, inventory, suppliers, warehouses, purchase orders, and fleet vehicles Ã¢â‚¬â€ each with migrations, Eloquent relationships, casts, and query scopes that enforce domain invariants at the database level.
+- **Data models** for shipments, inventory, suppliers, warehouses, purchase orders, and fleet vehicles ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â each with migrations, Eloquent relationships, casts, and query scopes that enforce domain invariants at the database level.
 - **Inventory prediction agents** that calculate daily demand, standard deviation, safety stock, reorder points, and economic order quantities, then consult an AI model for natural-language recommendations.
 - **Route optimization agents** that solve nearest-neighbor traveling-salesperson problems with priority weighting, integrate with Google Maps APIs for real distance matrices, and surface AI-generated fuel and time savings tips.
 - **Shipment tracking automation** that polls carrier APIs, detects status changes and delivery exceptions, records tracking events, and dispatches notifications with AI-generated customer messages and escalation logic.

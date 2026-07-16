@@ -1,6 +1,6 @@
-# Chapter 18: Advanced Topics
+﻿# Chapter 18: Advanced Topics
 
-> **Prerequisites:** [Chapter 17: Randomized Algorithms](./17-randomized.md) — Probabilistic analysis and algorithm design | **Next:** Course Complete
+> **Prerequisites:** [Chapter 17: Randomized Algorithms](./17-randomized.md) â€” Probabilistic analysis and algorithm design | **Next:** Course Complete
 
 ## Learning Objectives
 
@@ -9,16 +9,16 @@ By the end of this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/algorithms/18-advanced/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/algorithms/18-advanced/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/algorithms/18-advanced/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/algorithms/18-advanced/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/algorithms/18-advanced/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/algorithms/18-advanced/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/algorithms/18-advanced/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/algorithms/18-advanced/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/algorithms/18-advanced/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/algorithms/18-advanced/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/algorithms/18-advanced/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/algorithms/18-advanced/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -42,8 +42,8 @@ By the end of this chapter, students will be able to:
 | Streaming Algorithms | Single-pass processing with limited memory | Sublinear space at cost of approximate answers |
 | Reservoir Sampling | Uniform random sample from unknown-length stream | O(k) space for k samples from arbitrary-length stream |
 | Bloom Filters | Probabilistic set membership | False positives possible; false negatives impossible |
-| Count-Min Sketch | Frequency estimation in sublinear space | Always overestimates; error bounded by εN |
-| Parallel Algorithms | Multiple processors for speedup | Work-depth model: T_P ≤ W/P + D |
+| Count-Min Sketch | Frequency estimation in sublinear space | Always overestimates; error bounded by ÎµN |
+| Parallel Algorithms | Multiple processors for speedup | Work-depth model: T_P â‰¤ W/P + D |
 
 ### Chapter Roadmap
 
@@ -68,21 +68,21 @@ flowchart LR
 
 ## Why Advanced Topics Matter
 
-**Real-world analogy:** A librarian managing a million-book collection does not rearrange every shelf when a new book arrives. Instead, she keeps a quick-reference card catalog (Bloom filter equivalent), a "recently returned" shelf near the entrance (LRU cache), and a filing system that groups books by category so only a few shelves need rearranging per book (B-tree / external memory). She does not need to know every book's exact location — she just needs fast answers with limited time and space.
+**Real-world analogy:** A librarian managing a million-book collection does not rearrange every shelf when a new book arrives. Instead, she keeps a quick-reference card catalog (Bloom filter equivalent), a "recently returned" shelf near the entrance (LRU cache), and a filing system that groups books by category so only a few shelves need rearranging per book (B-tree / external memory). She does not need to know every book's exact location â€” she just needs fast answers with limited time and space.
 
 This chapter covers the algorithms that make modern large-scale systems possible:
 
 - **Google Search:** Uses Bloom filters in Bigtable to avoid costly disk lookups for non-existent rows. A Bloom filter check costs microseconds; a disk seek costs milliseconds.
 - **Redis:** Uses skip lists for sorted sets (`ZADD`, `ZRANGE`). The skiplist's O(log n) operations with simple code beat balanced trees for concurrent access.
-- **Cassandra / HBase:** Use Bloom filters for all read paths. Before fetching a row from an SSTable on disk, check the Bloom filter — if it says "not present," skip the entire I/O.
+- **Cassandra / HBase:** Use Bloom filters for all read paths. Before fetching a row from an SSTable on disk, check the Bloom filter â€” if it says "not present," skip the entire I/O.
 - **Databases:** External merge sort sorts terabytes of data that cannot fit in RAM. B-trees organize on-disk indexes for O(log_B n) page accesses.
 - **Network monitoring:** Count-Min sketches track the heaviest flows through a router using tiny memory. Cisco and Juniper routers use sketches for traffic analysis.
 - **Stream processing:** Apache Flink and Kafka Streams use variants of reservoir sampling and Count-Min sketches for real-time analytics.
 - **Operating systems:** LRU paging decides which memory pages to keep in RAM. Every OS kernel implements some form of online paging algorithm.
 
-> **Warning:** Advanced algorithms trade one resource for another — Bloom filters trade accuracy for space, online algorithms trade optimality for immediacy, streaming algorithms trade exactness for memory. Always understand what you are giving up.
+> **Warning:** Advanced algorithms trade one resource for another â€” Bloom filters trade accuracy for space, online algorithms trade optimality for immediacy, streaming algorithms trade exactness for memory. Always understand what you are giving up.
 
-**One-Sentence Takeaway:** Advanced algorithm design tackles real-world constraints — limited memory, no future knowledge, and massive data sizes — through probabilistic, online, and external-memory techniques.
+**One-Sentence Takeaway:** Advanced algorithm design tackles real-world constraints â€” limited memory, no future knowledge, and massive data sizes â€” through probabilistic, online, and external-memory techniques.
 
 ## Theory
 
@@ -91,7 +91,7 @@ This chapter covers the algorithms that make modern large-scale systems possible
 ### 18.1 Online Algorithms
 
 
-**Real-world analogy:** You are day-trading stocks. You must decide whether to buy or sell now, without knowing tomorrow's price. Every decision is irrevocable. If you sell too early, you miss gains; if you hold too long, you lose everything. This is the essence of online algorithms — make decisions without future knowledge and accept that you will never match the optimal hindsight strategy.
+**Real-world analogy:** You are day-trading stocks. You must decide whether to buy or sell now, without knowing tomorrow's price. Every decision is irrevocable. If you sell too early, you miss gains; if you hold too long, you lose everything. This is the essence of online algorithms â€” make decisions without future knowledge and accept that you will never match the optimal hindsight strategy.
 
 **Definition 18.1.** An **online algorithm** processes input in sequence, making irrevocable decisions without knowledge of future inputs.
 
@@ -146,17 +146,17 @@ LRU(page_requests, k):
 
 **Dry Run:** k = 3 cache, requests = [1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5]
 
-| Step | Request | Cache State (MRU → LRU) | Hit/Miss | Evicted |
+| Step | Request | Cache State (MRU â†’ LRU) | Hit/Miss | Evicted |
 |------|---------|------------------------|----------|---------|
-| 1 | 1 | [1] | Miss | — |
-| 2 | 2 | [2, 1] | Miss | — |
-| 3 | 3 | [3, 2, 1] | Miss | — |
+| 1 | 1 | [1] | Miss | â€” |
+| 2 | 2 | [2, 1] | Miss | â€” |
+| 3 | 3 | [3, 2, 1] | Miss | â€” |
 | 4 | 4 | [4, 3, 2] | Miss | 1 |
 | 5 | 1 | [1, 4, 3] | Miss | 2 |
 | 6 | 2 | [2, 1, 4] | Miss | 3 |
 | 7 | 5 | [5, 2, 1] | Miss | 4 |
-| 8 | 1 | [1, 5, 2] | Hit | — |
-| 9 | 2 | [2, 1, 5] | Hit | — |
+| 8 | 1 | [1, 5, 2] | Hit | â€” |
+| 9 | 2 | [2, 1, 5] | Hit | â€” |
 | 10 | 3 | [3, 2, 1] | Miss | 5 |
 | 11 | 4 | [4, 3, 2] | Miss | 1 |
 | 12 | 5 | [5, 4, 3] | Miss | 2 |
@@ -173,7 +173,7 @@ LRU(page_requests, k):
 |------|--------|
 | **LRU worst-case** | k times optimal |
 | **Belady (optimal offline)** | Minimum possible |
-| **Random marking** | O(log k) × optimal |
+| **Random marking** | O(log k) Ã— optimal |
 
 **Advantages & Disadvantages:**
 
@@ -232,7 +232,7 @@ SkiRental(B, days_unknown):
 ### 18.2 Bloom Filters
 
 
-**Real-world analogy:** You are at a festival with 10,000 attendees. You want to check if a person is a VIP. Instead of carrying a full list of 500 VIP names, you give each VIP a colored wristband — but there are only 100 colors, so some non-VIPs might accidentally get a matching wristband (false positive). However, anyone without the correct color combination is guaranteed not to be a VIP (no false negatives).
+**Real-world analogy:** You are at a festival with 10,000 attendees. You want to check if a person is a VIP. Instead of carrying a full list of 500 VIP names, you give each VIP a colored wristband â€” but there are only 100 colors, so some non-VIPs might accidentally get a matching wristband (false positive). However, anyone without the correct color combination is guaranteed not to be a VIP (no false negatives).
 
 **Problem:** Test set membership with small space, allowing false positives but no false negatives.
 
@@ -265,11 +265,11 @@ BloomFilter:
 
 | Step | Action | Hash Outputs | Bit Array State |
 |------|--------|-------------|-----------------|
-| Init | Create filter | — | [0,0,0,0,0,0,0,0,0,0] |
-| 1 | Insert "cat" | h₁="cat"→2, h₂→5, h₃→8 | [0,0,1,0,0,1,0,0,1,0] |
-| 2 | Insert "dog" | h₁="dog"→3, h₂→5, h₃→9 | [0,0,1,1,0,1,0,0,1,1] |
-| 3 | Query "fox" | h₁="fox"→2, h₂→7, h₃→9 | Check: bits[2]=1, bits[7]=0 → **not present** (true) |
-| 4 | Query "cat" | h₁="cat"→2, h₂→5, h₃→8 | Check: bits[2]=1, bits[5]=1, bits[8]=1 → **probably present** (true) |
+| Init | Create filter | â€” | [0,0,0,0,0,0,0,0,0,0] |
+| 1 | Insert "cat" | hâ‚="cat"â†’2, hâ‚‚â†’5, hâ‚ƒâ†’8 | [0,0,1,0,0,1,0,0,1,0] |
+| 2 | Insert "dog" | hâ‚="dog"â†’3, hâ‚‚â†’5, hâ‚ƒâ†’9 | [0,0,1,1,0,1,0,0,1,1] |
+| 3 | Query "fox" | hâ‚="fox"â†’2, hâ‚‚â†’7, hâ‚ƒâ†’9 | Check: bits[2]=1, bits[7]=0 â†’ **not present** (true) |
+| 4 | Query "cat" | hâ‚="cat"â†’2, hâ‚‚â†’5, hâ‚ƒâ†’8 | Check: bits[2]=1, bits[5]=1, bits[8]=1 â†’ **probably present** (true) |
 
 **False positive probability:** After inserting \( n \) elements:
 
@@ -283,10 +283,10 @@ p = \left(1 - \left(1 - \frac{1}{m}\right)^{kn}\right)^k \approx \left(1 - e^{-k
 
 | Operation | Time |
 |-----------|------|
-| **Insert** | O(k) — compute k hashes, set k bits |
-| **Query** | O(k) — compute k hashes, check k bits |
+| **Insert** | O(k) â€” compute k hashes, set k bits |
+| **Query** | O(k) â€” compute k hashes, check k bits |
 | **Space** | O(m) bits |
-| **False positive rate** | ≈ (1 - e^{-kn/m})^k |
+| **False positive rate** | â‰ˆ (1 - e^{-kn/m})^k |
 
 **Advantages & Disadvantages:**
 
@@ -302,7 +302,7 @@ p = \left(1 - \left(1 - \frac{1}{m}\right)^{kn}\right)^k \approx \left(1 - e^{-k
 - **Empty filter:** Query of any element returns false.
 - **Full filter (all bits = 1):** Every query returns true. Useless.
 - **m too small:** False positive rate approaches 1.
-- **k = 0:** No bits set (if 0 hash functions — defined as never setting bits).
+- **k = 0:** No bits set (if 0 hash functions â€” defined as never setting bits).
 - **Single element:** Bits at k positions = 1; all other queries have false positive probability (1 - (1 - 1/m)^k)^k.
 
 **C++ Implementation:**
@@ -394,14 +394,14 @@ public class BloomFilter {
 }
 ```
 
-> **Pro Tip:** Bloom filters have zero false negatives — if a query says not present, it is guaranteed absent. Optimal hash count k = (m/n) * ln(2) minimizes the false positive rate.
+> **Pro Tip:** Bloom filters have zero false negatives â€” if a query says not present, it is guaranteed absent. Optimal hash count k = (m/n) * ln(2) minimizes the false positive rate.
 >
 > **Remember:** Choose m (bits) and k (hash functions) based on your target false positive rate p and expected element count n. m = -n ln(p) / (ln 2)^2 is the optimal bit count.
 
 ### 18.3 Skip Lists
 
 
-**Real-world analogy:** Imagine a multi-level highway system. On the ground level, you drive through every small town. On the express lane above, you skip every other town. On the top-level express, you skip most towns entirely. When you need to reach a specific town, you take the highest expressway that does not overshoot, then drop to lower levels for fine-grained navigation. This is exactly how skip lists work — multiple levels of "express lanes" over a sorted linked list.
+**Real-world analogy:** Imagine a multi-level highway system. On the ground level, you drive through every small town. On the express lane above, you skip every other town. On the top-level express, you skip most towns entirely. When you need to reach a specific town, you take the highest expressway that does not overshoot, then drop to lower levels for fine-grained navigation. This is exactly how skip lists work â€” multiple levels of "express lanes" over a sorted linked list.
 
 **Problem:** Implement a sorted dictionary with O(log n) expected search, insert, and delete.
 
@@ -449,9 +449,9 @@ SkipList:
 
 | Level | Node Walk | Action |
 |-------|-----------|--------|
-| 3 (top) | Head(∞) → 9 | 9 > 7 → drop to level 2 |
-| 2 | Head(∞) → 4 → 9 | 4 &lt; 7, move to 4; 9 &gt; 7 → drop to level 1 |
-| 1 | 4 → 7 | 7 == 7 → found! |
+| 3 (top) | Head(âˆž) â†’ 9 | 9 > 7 â†’ drop to level 2 |
+| 2 | Head(âˆž) â†’ 4 â†’ 9 | 4 &lt; 7, move to 4; 9 &gt; 7 â†’ drop to level 1 |
+| 1 | 4 â†’ 7 | 7 == 7 â†’ found! |
 
 **Complexity Analysis:**
 
@@ -475,7 +475,7 @@ SkipList:
 **Edge Cases:**
 - **Empty list:** No search can succeed.
 - **Single element:** One node at bottom and possibly higher levels.
-- **All elements at same level:** Degenerates to a linked list (rare — probability 2^-n).
+- **All elements at same level:** Degenerates to a linked list (rare â€” probability 2^-n).
 - **Duplicate keys:** Need a policy (allow or reject duplicates).
 
 **Python Implementation:**
@@ -536,14 +536,14 @@ Streaming algorithms process a sequence of elements using sublinear memory (typi
 
 **Problem:** Select \( k \) elements uniformly at random from a stream of unknown length \( n \).
 
-**Real-world analogy:** A radio station wants to select 10 random callers from an unknown number of callers. They cannot store all caller IDs. Instead, they keep 10 slots — when caller 37 calls, they place them in slot 1 with probability 10/37, etc. Remarkably, this gives each caller exactly equal probability of being in the final sample.
+**Real-world analogy:** A radio station wants to select 10 random callers from an unknown number of callers. They cannot store all caller IDs. Instead, they keep 10 slots â€” when caller 37 calls, they place them in slot 1 with probability 10/37, etc. Remarkably, this gives each caller exactly equal probability of being in the final sample.
 
 **Algorithm Steps:**
 
 1. Fill reservoir with first k elements.
 2. For element at position i (i > k):
    a. Generate j = random(1, i).
-   b. If j ≤ k, replace reservoir[j-1] with current element.
+   b. If j â‰¤ k, replace reservoir[j-1] with current element.
 
 **Correctness:** At step i, each of the first i elements has probability k/i of being in the reservoir. Proof by induction.
 
@@ -584,14 +584,14 @@ std::vector<int> reservoirSampling(const std::vector<int>& stream, int k) {
 
 **Problem:** Estimate the frequency of each element in a stream using sublinear space.
 
-**Real-world analogy:** A network router tracks which IP addresses are sending the most traffic. It cannot store a counter for every possible IP (2³²). Instead, it uses a 2D array of counters and hashes each IP to one counter per row. The minimum counter value across all rows gives a reliable (over)estimate of the true frequency.
+**Real-world analogy:** A network router tracks which IP addresses are sending the most traffic. It cannot store a counter for every possible IP (2Â³Â²). Instead, it uses a 2D array of counters and hashes each IP to one counter per row. The minimum counter value across all rows gives a reliable (over)estimate of the true frequency.
 
 **Data structure:** A 2D array of counters \( C[d][w] \), with \( d \) hash functions \( h_1, \ldots, h_d : [n] \to [w] \).
 
 **Algorithm Steps:**
 
 1. Initialize all counters to 0.
-2. **Update(x, Δ):** For each hash function h_i, increment C[i][h_i(x)] by Δ.
+2. **Update(x, Î”):** For each hash function h_i, increment C[i][h_i(x)] by Î”.
 3. **Query(x):** Return min over i of C[i][h_i(x)].
 
 **Pseudocode:**
@@ -619,7 +619,7 @@ CountMinSketch:
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Sublinear space: O((1/ε) log(1/δ)) | Only overestimates (never underestimates) |
+| Sublinear space: O((1/Îµ) log(1/Î´)) | Only overestimates (never underestimates) |
 | O(1) update and query time | Cannot support deletions (unless using Count-Mean-Min) |
 | Mergable across distributed nodes | Accuracy depends on stream length |
 | Works for massive streams | Cannot enumerate heavy hitters directly |
@@ -655,7 +655,7 @@ where B = block size, M = RAM size, N = total data size, k = merge fan-in.
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Handles data larger than RAM | I/O dominated — RAM speed irrelevant |
+| Handles data larger than RAM | I/O dominated â€” RAM speed irrelevant |
 | B-trees provide O(log_B n) tree operations | Complex to tune (block size, fan-in) |
 | External sort optimal in I/O model | Not suitable for random-access workloads |
 | Foundation of database operations | Overhead of managing disk storage |
@@ -695,7 +695,7 @@ T_P \le \frac{W}{P} + D.
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| O(log n) depth — excellent parallelism | Twice as many operations as sequential |
+| O(log n) depth â€” excellent parallelism | Twice as many operations as sequential |
 | Foundation for many parallel algorithms | Bank conflicts on GPU shared memory |
 | Works for any associative operator | Synchronization overhead at each tree level |
 
@@ -716,7 +716,7 @@ This table connects all 18 chapters of the algorithms course:
 
 | Paradigm | Chapter | Key Idea | When to Use |
 |----------|---------|----------|-------------|
-| **Brute Force** | 3 | Try all possibilities | Small input size (n ≤ 20) |
+| **Brute Force** | 3 | Try all possibilities | Small input size (n â‰¤ 20) |
 | **Divide & Conquer** | 4 | Split, solve recursively, combine | Independent subproblems, O(n log n) sorts |
 | **Greedy** | 5 | Locally optimal choice | Matroid problems, fractional knap, MST |
 | **Dynamic Programming** | 6-7 | Optimal substructure + overlapping subproblems | Optimization with dependencies |
@@ -737,13 +737,13 @@ This table connects all 18 chapters of the algorithms course:
 | Online | Ski rental (det.) | O(1) | 2-competitive | Buy at break-even |
 | Online | Ski rental (rand.) | O(1) | 1.58-competitive | Random threshold |
 | Probabilistic | Bloom filter | O(m) bits | O(k) per op | No false negatives |
-| Probabilistic | Count-Min sketch | O((1/ε) log(1/δ)) | O(1) per op | Only overestimates |
+| Probabilistic | Count-Min sketch | O((1/Îµ) log(1/Î´)) | O(1) per op | Only overestimates |
 | Probabilistic | Skip list | O(n) expected | O(log n) expected | Random levels |
 | Streaming | Reservoir sampling | O(k) | O(n) time | Uniform random sample |
 | External | B-tree | O(n/B) blocks | O(log_B n) I/O | Balanced tree on disk |
 | External | External sort | O(N/B) blocks | O((N/B) log(N/M)) I/O | Merge-based |
 | Parallel | Prefix sum | O(n) work | O(log n) depth | Balanced tree |
-| Parallel | Bitonic sort | O(n log² n) work | O(log² n) depth | Sorting network |
+| Parallel | Bitonic sort | O(n logÂ² n) work | O(logÂ² n) depth | Sorting network |
 
 ### Quick Reference
 
@@ -755,11 +755,11 @@ This table connects all 18 chapters of the algorithms course:
 | **Bloom Filter** | FP = (1 - e^{-kn/m})^k; optimal k = (m/n) ln 2 |
 | **Skip List** | Random level ~ Geo(1/2); search/insert/delete O(log n) expected |
 | **Reservoir** | Replace with prob k/i; O(k) space; exact uniform |
-| **Count-Min** | f(x) ≤ estimate ≤ f(x) + εN; min over d rows |
+| **Count-Min** | f(x) â‰¤ estimate â‰¤ f(x) + ÎµN; min over d rows |
 | **External Sort** | O((N/B) log_{k} (N/M)) I/O; B = block, M = RAM |
-| **Work-Depth** | W = total ops, D = critical path; T_P ≤ W/P + D |
+| **Work-Depth** | W = total ops, D = critical path; T_P â‰¤ W/P + D |
 | **Parallel Scan** | O(log n) depth via up-sweep + down-sweep |
-| **Parallel Sort** | Bitonic: O(log² n) depth; Sample sort: random splitters |
+| **Parallel Sort** | Bitonic: O(logÂ² n) depth; Sample sort: random splitters |
 
 ### Cross-Application Matrix
 
@@ -798,13 +798,13 @@ This table connects all 18 chapters of the algorithms course:
 **1. Bloom Filter Variations**
 
 - *Question:* "How would you implement a Bloom filter that supports deletions?"
-  *Answer:* Use a counting Bloom filter — replace each bit with a multi-bit counter. Insert increments, delete decrements, query checks > 0. Requires 2-4 bits per counter to avoid overflow.
+  *Answer:* Use a counting Bloom filter â€” replace each bit with a multi-bit counter. Insert increments, delete decrements, query checks > 0. Requires 2-4 bits per counter to avoid overflow.
 
 - *Question:* "How would you estimate the optimal filter size for 1M elements at 1% false positive rate?"
-  *Answer:* m = -n ln(p) / (ln 2)² = -10⁶ × ln(0.01) / (0.48) ≈ 10⁶ × 4.605 / 0.48 ≈ 9.6 million bits ≈ 1.15 MB. k = (m/n) ln 2 ≈ 6.6 → 7 hash functions.
+  *Answer:* m = -n ln(p) / (ln 2)Â² = -10â¶ Ã— ln(0.01) / (0.48) â‰ˆ 10â¶ Ã— 4.605 / 0.48 â‰ˆ 9.6 million bits â‰ˆ 1.15 MB. k = (m/n) ln 2 â‰ˆ 6.6 â†’ 7 hash functions.
 
 - *Question:* "Can you resize a Bloom filter dynamically?"
-  *Answer:* Use a scalable Bloom filter — maintain a series of filters with geometrically growing capacities. Query checks all filters; insert goes to the current one.
+  *Answer:* Use a scalable Bloom filter â€” maintain a series of filters with geometrically growing capacities. Query checks all filters; insert goes to the current one.
 
 **2. Skip List vs Balanced BST**
 
@@ -813,8 +813,8 @@ This table connects all 18 chapters of the algorithms course:
 | **Search** | O(log n) expected | O(log n) worst-case |
 | **Insert** | O(log n) expected | O(log n) worst-case |
 | **Delete** | O(log n) expected | O(log n) worst-case |
-| **Range query** | O(log n + k) — linked list at bottom | O(log n + k) — in-order traversal |
-| **Concurrency** | Excellent — lock-free variants exist | Difficult — rebalancing needs locks |
+| **Range query** | O(log n + k) â€” linked list at bottom | O(log n + k) â€” in-order traversal |
+| **Concurrency** | Excellent â€” lock-free variants exist | Difficult â€” rebalancing needs locks |
 | **Implementation complexity** | ~50 lines | ~150-200 lines |
 | **Memory** | O(n) expected | O(n) |
 | **Cache performance** | Poor (pointer chasing) | Poor (pointer chasing) |
@@ -829,9 +829,9 @@ This table connects all 18 chapters of the algorithms course:
 
 **4. External Memory Problems**
 
-- *Problem:* "Sort 100 GB of data with 1 GB of RAM." Walk through external merge sort: run generation (100 runs of 1 GB), then merge passes. Each merge pass with fan-in 100 produces 1 run per pass: ceil(log_100(100)) = 1 pass. Total I/O: 2 × 100 GB (run gen) + 2 × 100 GB (merge) = 400 GB read + 400 GB write.
+- *Problem:* "Sort 100 GB of data with 1 GB of RAM." Walk through external merge sort: run generation (100 runs of 1 GB), then merge passes. Each merge pass with fan-in 100 produces 1 run per pass: ceil(log_100(100)) = 1 pass. Total I/O: 2 Ã— 100 GB (run gen) + 2 Ã— 100 GB (merge) = 400 GB read + 400 GB write.
 
-- *Problem:* "Why does B-tree have height O(log_B n) instead of O(log₂ n)?"
+- *Problem:* "Why does B-tree have height O(log_B n) instead of O(logâ‚‚ n)?"
 
 **5. Streaming Algorithm Questions**
 
@@ -871,14 +871,14 @@ This table connects all 18 chapters of the algorithms course:
 
 ### Probabilistic Data Structures in Modern Systems
 
-- **Apache Cassandra:** Bloom filters on every SSTable. Each read first checks the Bloom filter — if it says "not present," Cassandra skips reading that SSTable entirely. This reduces disk I/O by 90%+ for random read workloads.
+- **Apache Cassandra:** Bloom filters on every SSTable. Each read first checks the Bloom filter â€” if it says "not present," Cassandra skips reading that SSTable entirely. This reduces disk I/O by 90%+ for random read workloads.
 - **Redis Stack (RedisBloom):** Native Bloom filter and Count-Min sketch modules for real-time analytics.
 - **PostgreSQL (pg_cmsketch):** Count-Min sketch extension for approximate query optimization.
 - **Google's Sawzall / BigQuery:** HyperLogLog (distinct count) and Count-Min sketch (frequency) for interactive analytics on petabytes of data.
 
 ### Parallel Algorithms in Modern Hardware
 
-- **GPU sorting:** Bitonic sort and GPU radix sort achieve 100-1000× speedup over CPU for sorting large arrays.
+- **GPU sorting:** Bitonic sort and GPU radix sort achieve 100-1000Ã— speedup over CPU for sorting large arrays.
 - **MapReduce / Hadoop:** Parallel merge sort on distributed data. The shuffle phase is essentially a parallel sort.
 - **TensorFlow / PyTorch:** Parallel prefix sum (scan) is used for softmax, cumulative sums, and attention mechanisms.
 
@@ -963,7 +963,7 @@ ParallelPrefixSum(A):
 - **Streaming algorithms** process massive data with sublinear memory, trading accuracy for space efficiency.
 - **External memory algorithms** (B-trees, external sort) minimize I/O cost for disk-bound data.
 - **Parallel algorithms** leverage multiple processors; the work-depth model captures both total operations and the critical path.
-- **Brent's theorem** bounds parallel execution time: T_P ≤ W/P + D.
+- **Brent's theorem** bounds parallel execution time: T_P â‰¤ W/P + D.
 
 ---
 
@@ -1002,7 +1002,7 @@ ParallelPrefixSum(A):
 
 <details>
 <summary>Answer&lt;/summary&gt;
-B) Rent for B-1 days then buy gives cost 2B-1 when N ≥ B, vs optimal of B, so ratio = 2 - 1/B.
+B) Rent for B-1 days then buy gives cost 2B-1 when N â‰¥ B, vs optimal of B, so ratio = 2 - 1/B.
 </details>
 
 **Q2.** What is the key property of a Bloom filter?
@@ -1014,13 +1014,13 @@ B) Rent for B-1 days then buy gives cost 2B-1 when N ≥ B, vs optimal of B, so 
 
 <details>
 <summary>Answer&lt;/summary&gt;
-B) Bloom filters have no false negatives — if a query returns false, the element is definitely absent. False positives are possible.
+B) Bloom filters have no false negatives â€” if a query returns false, the element is definitely absent. False positives are possible.
 </details>
 
 **Q3.** In the work-depth model, what does Brent's theorem state?
 
 - A) W(n) = O(D(n))
-- B) T_P ≤ W/P + D
+- B) T_P â‰¤ W/P + D
 - C) T_P = W * D
 - D) D must equal W
 

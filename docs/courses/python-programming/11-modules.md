@@ -1,4 +1,4 @@
-# Chapter 11: Modules and Packages
+﻿# Chapter 11: Modules and Packages
 
 
 > **Previous:** [Lambda and Functional Programming](./10-lambda.md) | **Next:** [Object-Oriented Programming](./12-oop.md)
@@ -15,16 +15,16 @@ By the end of this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/11-modules/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/11-modules/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/11-modules/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/11-modules/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/11-modules/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/11-modules/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/11-modules/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/11-modules/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/11-modules/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/11-modules/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/11-modules/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/11-modules/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -110,13 +110,13 @@ When a module is imported, Python executes all of its code. Subsequent imports u
 
 ```python
 import mymodule  # prints "mymodule loaded"
-import mymodule  # no output → already cached
+import mymodule  # no output â†’ already cached
 ```
 
 ## 11.2 Import Mechanisms
 
 > **One-Sentence Takeaway:** The `if __name__ == "__main__"` guard lets a file serve both as module and script.
-> **Warning:** Avoid `from module import *` — it pollutes the namespace and can silently override existing names.
+> **Warning:** Avoid `from module import *` â€” it pollutes the namespace and can silently override existing names.
 
 
 
@@ -180,7 +180,7 @@ def subtract(a, b):
     return a - b
 
 if __name__ == "__main__":
-    # Test code → runs only when executed directly
+    # Test code â†’ runs only when executed directly
     print(add(2, 3))       # 5
     print(subtract(10, 4)) # 6
 ```
@@ -271,9 +271,9 @@ from .. import parent_module      # parent package
 from ..other import something     # sibling of parent
 ```
 
-- `.` → current package
-- `..` → parent package
-- `...` → grandparent package
+- `.` â†’ current package
+- `..` â†’ parent package
+- `...` â†’ grandparent package
 
 Relative imports cannot be used in scripts executed directly (only in modules within a package).
 
@@ -304,7 +304,7 @@ sys.path.append("/path/to/my/modules")
 import mymodule  # now found
 ```
 
-This is fragile → prefer installing modules properly or using `PYTHONPATH`.
+This is fragile â†’ prefer installing modules properly or using `PYTHONPATH`.
 
 ## 11.7 Third-Party Packages with pip
 
@@ -359,7 +359,7 @@ python -m build
 
 This creates both `dist/mypackage-1.0.0.tar.gz` and `dist/mypackage-1.0.0-py3-none-any.whl`.
 
-Prioritise wheel packages → they install faster and avoid build-time dependency issues.
+Prioritise wheel packages â†’ they install faster and avoid build-time dependency issues.
 
 ## 11.9 Creating a Distributable Package
 
@@ -437,7 +437,7 @@ def get_x():
 
 3. Use a shared third module for common dependencies.
 
-Lazy imports are a workaround, not a design → restructure to eliminate cycles.
+Lazy imports are a workaround, not a design â†’ restructure to eliminate cycles.
 
 
 ## Concept Comparison Table
@@ -447,7 +447,7 @@ Lazy imports are a workaround, not a design → restructure to eliminate cycles.
 | Direct import | import math | Access via math.sqrt |
 | Selective import | from math import sqrt | Use sqrt directly |
 | Aliased import | import numpy as np | Shortened name |
-| Star import | from math import * | Discouraged — namespace pollution |
+| Star import | from math import * | Discouraged â€” namespace pollution |
 
 
 ## Quick Reference
@@ -511,7 +511,7 @@ print(module.greet("Alice"))
 ### TypeScript Package Management & Module Resolution
 
 ```typescript
-// Python: pip install requests → TypeScript: bun add express
+// Python: pip install requests â†’ TypeScript: bun add express
 // package.json dependencies:
 {
   "dependencies": {
@@ -525,19 +525,19 @@ print(module.greet("Alice"))
   }
 }
 
-// Python: from module import → TypeScript: dynamic imports
+// Python: from module import â†’ TypeScript: dynamic imports
 async function loadPlugin(name: string): Promise<unknown> {
   const mod = await import(`./plugins/${name}.js`);
   return mod.default;
 }
 // Python: importlib.import_module(f"plugins.{name}")
 
-// Python: __init__.py re-exports → TypeScript: barrel exports
+// Python: __init__.py re-exports â†’ TypeScript: barrel exports
 // index.ts (barrel file)
 export { add, subtract } from "./math.js";
 export type { User, Config } from "./types.js";
 
-// Python: sys.path → TypeScript: tsconfig paths
+// Python: sys.path â†’ TypeScript: tsconfig paths
 // tsconfig.json:
 // {
 //   "compilerOptions": {
@@ -549,10 +549,10 @@ export type { User, Config } from "./types.js";
 // }
 // Usage: import { format } from "@utils/format";
 
-// Python: circular imports → TypeScript: same problem
+// Python: circular imports â†’ TypeScript: same problem
 // Solution: extract shared types to a separate file, or use lazy imports
 
-// Python: if __name__ == "__main__" → TypeScript
+// Python: if __name__ == "__main__" â†’ TypeScript
 // Top-level await in modules (Node.js ESM + Bun)
 const isMain = process.argv[1]?.endsWith("script.ts");
 if (isMain) {
@@ -563,26 +563,26 @@ if (isMain) {
 ### TypeScript Module Re-export & Namespace Patterns
 
 ```typescript
-// Python: from package import * → TypeScript: namespace re-export
-// utils/index.ts — barrel file
+// Python: from package import * â†’ TypeScript: namespace re-export
+// utils/index.ts â€” barrel file
 export { formatDate } from "./date.js";
 export { validateEmail, sanitize } from "./validation.js";
 export type { User, Config } from "./types.js";
 
-// Python: package with __init__.py → TypeScript: index.ts convention
+// Python: package with __init__.py â†’ TypeScript: index.ts convention
 // src/
 //   index.ts          (re-exports from modules below)
 //   math.ts
 //   validation.ts
 //   types.ts
 
-// Python: namespace packages → TypeScript: module augmentation
+// Python: namespace packages â†’ TypeScript: module augmentation
 // Extending an existing module
 declare module "./math.js" {
   export function factorial(n: number): number;
 }
 
-// Python: sys.modules caching → TypeScript: module-level singletons
+// Python: sys.modules caching â†’ TypeScript: module-level singletons
 // TypeScript modules are cached after first import (same as Python)
 let instance: Database | null = null;
 export function getDatabase(): Database {
@@ -590,7 +590,7 @@ export function getDatabase(): Database {
   return instance;
 }
 
-// Python: importlib.reload → TypeScript: no direct equivalent
+// Python: importlib.reload â†’ TypeScript: no direct equivalent
 // Workaround for hot-reloading: dynamic import() with cache busting
 async function hotReload(modulePath: string): Promise<unknown> {
   const url = new URL(modulePath, import.meta.url);
@@ -598,14 +598,14 @@ async function hotReload(modulePath: string): Promise<unknown> {
   return await import(url.href);
 }
 
-// Python: module docstring → TypeScript: top-level JSDoc
+// Python: module docstring â†’ TypeScript: top-level JSDoc
 /**
  * @module utils
  * Utility functions for the application.
  * @packageDocumentation
  */
 
-// Python: __all__ → TypeScript: explicit exports
+// Python: __all__ â†’ TypeScript: explicit exports
 // In Python: __all__ = ["func1", "func2"]
 // In TypeScript: only exported names are visible:
 export { func1, func2 };  // private names are not exported
@@ -665,9 +665,9 @@ function findCircularDeps(graph: DepGraph): string[][] {
 const deps: DepGraph = {
   a: ["b", "c"],
   b: ["d"],
-  c: ["a"],    // c → a → c (circular)
+  c: ["a"],    // c â†’ a â†’ c (circular)
   d: ["e"],
-  e: ["b"],    // e → b → d → e (circular)
+  e: ["b"],    // e â†’ b â†’ d â†’ e (circular)
 };
 console.log(findCircularDeps(deps)); // [["c","a"], ["b","d","e"]]
 

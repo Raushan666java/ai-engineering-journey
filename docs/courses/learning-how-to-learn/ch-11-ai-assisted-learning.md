@@ -1,9 +1,9 @@
-# Chapter 11: AI-Assisted Learning
+﻿# Chapter 11: AI-Assisted Learning
 
 > **Prerequisites:** [Chapter 3: Active Recall & Spaced Repetition](./ch-03-active-recall-spaced-repetition.md)
 > **Next:** [Chapter 13: Learning Analytics & Self-Measurement](./ch-13-learning-analytics.md)
 
-This chapter teaches you how to use AI as a learning accelerator — not a crutch. You'll learn prompt patterns that turn LLMs into Socratic tutors, build AI-powered spaced-repetition tools, use AI for code review and debugging without becoming dependent, and design a personal learning system that combines AI with evidence-based techniques. By the end, you'll know exactly when to ask AI and when to struggle productively on your own.
+This chapter teaches you how to use AI as a learning accelerator â€” not a crutch. You'll learn prompt patterns that turn LLMs into Socratic tutors, build AI-powered spaced-repetition tools, use AI for code review and debugging without becoming dependent, and design a personal learning system that combines AI with evidence-based techniques. By the end, you'll know exactly when to ask AI and when to struggle productively on your own.
 
 ## Learning Objectives
 
@@ -18,16 +18,16 @@ This chapter teaches you how to use AI as a learning accelerator — not a crutc
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -42,7 +42,7 @@ This chapter teaches you how to use AI as a learning accelerator — not a crutc
 | Socratic AI Prompting | Ask AI to question you, not answer | Use "quiz me on X, give hints only" |
 | AI Spaced Repetition | LLMs generate varied review items on demand | Build an AI Anki scheduler with TypeScript |
 | AI Code Review | AI catches patterns you miss | Use structured review prompts, verify every claim |
-| Knowledge Gap Detection | AI maps what you know vs what you don't | Prompt for "topic X, I know A B C — what am I missing?" |
+| Knowledge Gap Detection | AI maps what you know vs what you don't | Prompt for "topic X, I know A B C â€” what am I missing?" |
 | Over-Reliance Prevention | Struggle is essential for encoding | Read-code-refactor cycle: AI only for stuck steps |
 | Study Dashboard | Data-driven learning optimization | Track sessions, knowledge coverage, review velocity |
 
@@ -61,7 +61,7 @@ flowchart LR
 ### Q1: How can AI serve as a Socratic tutor for active learning?
 
 
-**Answer:** The most effective way to use AI for learning is to reverse the typical dynamic — instead of asking AI for answers, ask AI to quiz you. This forces active recall, which is the single most powerful learning technique.
+**Answer:** The most effective way to use AI for learning is to reverse the typical dynamic â€” instead of asking AI for answers, ask AI to quiz you. This forces active recall, which is the single most powerful learning technique.
 
 The key is prompt design:
 
@@ -142,7 +142,7 @@ class SocraticTutor {
 
 **Try This:** Pick a topic from any course in this repository. Open an AI chat and paste the Socratic tutor prompt above with your topic. Complete 5 rounds of Q&A without asking for a direct answer.
 
-**One-Sentence Takeaway:** Reverse the AI dynamic — ask it to question you, not answer you — and turn every chat session into an active recall exercise.
+**One-Sentence Takeaway:** Reverse the AI dynamic â€” ask it to question you, not answer you â€” and turn every chat session into an active recall exercise.
 
 ---
 
@@ -201,7 +201,7 @@ function buildLearningPrompt(config: LearningPrompt): string {
 
 **Try This:** Pick one topic you're currently studying and run all five prompt patterns against it. For each, write a 2-sentence summary from memory before reading the AI's response.
 
-**One-Sentence Takeaway:** Match your prompt pattern to your learning goal — quiz for recall, compare for depth, examples for application, blind-spots for growth.
+**One-Sentence Takeaway:** Match your prompt pattern to your learning goal â€” quiz for recall, compare for depth, examples for application, blind-spots for growth.
 
 ---
 
@@ -240,7 +240,7 @@ class AISpacedRepetition {
         default: card.interval = Math.round(card.interval * card.easeFactor); break;
       }
     } else {
-      // Incorrect response — reset
+      // Incorrect response â€” reset
       card.repetitions = 0;
       card.interval = 1;
     }
@@ -296,7 +296,7 @@ Generate a DIFFERENT angle than previous reviews.`;
 ### Q4: How can AI improve your code review and debugging skills?
 
 
-**Answer:** AI is exceptional at pattern matching — it can spot null-pointer risks, type errors, and edge cases you might miss. But the goal isn't to fix bugs for you; it's to teach you to spot them yourself.
+**Answer:** AI is exceptional at pattern matching â€” it can spot null-pointer risks, type errors, and edge cases you might miss. But the goal isn't to fix bugs for you; it's to teach you to spot them yourself.
 
 Use this structured review cycle:
 
@@ -331,7 +331,7 @@ class AIAssistedCodeReview {
         line: this.findLine(code, '.'),
         severity: 'critical',
         category: 'logic',
-        description: 'Potential null reference — no optional chaining on object access',
+        description: 'Potential null reference â€” no optional chaining on object access',
         suggestedFix: 'Add ?. operator or guard with null check',
         accepted: false,
       });
@@ -349,14 +349,14 @@ class AIAssistedCodeReview {
       });
     }
 
-    // Pattern: O(n²) in loops
+    // Pattern: O(nÂ²) in loops
     const nestedLoops = (code.match(/for\s*\(/g) || []).length;
     if (nestedLoops >= 2) {
       findings.push({
         line: this.findLine(code, 'for'),
         severity: 'major',
         category: 'performance',
-        description: `Nested loop detected (${nestedLoops} levels) — possible O(n²)`,
+        description: `Nested loop detected (${nestedLoops} levels) â€” possible O(nÂ²)`,
         suggestedFix: 'Consider using a Map or Set for O(n) lookup',
         accepted: false,
       });
@@ -388,7 +388,7 @@ class AIAssistedCodeReview {
 
 **Try This:** Take a piece of code you wrote yesterday. Before running or testing it, ask AI to review it. Compare what AI found vs what you would have found on your own. For each finding you missed, write down what pattern you need to learn.
 
-**One-Sentence Takeaway:** AI code review is most effective when you've already struggled for 15 minutes — use AI to surface patterns you missed, not to avoid thinking.
+**One-Sentence Takeaway:** AI code review is most effective when you've already struggled for 15 minutes â€” use AI to surface patterns you missed, not to avoid thinking.
 
 ---
 
@@ -444,12 +444,12 @@ The solution must be correct and complete.`;
   }
 
   private validateProblem(problem: PracticeProblem): PracticeProblem {
-    // AI checks its own work — crucial quality gate
+    // AI checks its own work â€” crucial quality gate
     // In practice: ask a second LLM call to verify correctness
     const checks = [
       'Is the problem solvable with the given constraints?',
       'Is the model solution correct?',
-      'Are the hints progressive (vague → specific)?',
+      'Are the hints progressive (vague â†’ specific)?',
       'Do the common mistakes actually occur in practice?',
     ];
 
@@ -575,7 +575,7 @@ class KnowledgeGapAnalyzer {
 
   private deriveRootConcept(specific: string): string {
     // E.g., "Why does this DP solution use O(n) space?"
-    // → root concept: "space complexity analysis"
+    // â†’ root concept: "space complexity analysis"
     const prefix = specific.toLowerCase();
     if (prefix.includes('complexity') || prefix.includes('big-o') || prefix.includes('o(')) {
       return 'Computational Complexity Analysis';
@@ -627,7 +627,7 @@ function generateLearningPlan(currentState: KnowledgeNode[], target: string): Ga
 
 **Try This:** Take a topic where you have an exam coming up. Write down everything you know about it (no looking things up). Paste your list to an AI and ask: "I'm preparing for an exam on [topic]. Here's what I know: [your list]. What am I missing that commonly appears on exams?"
 
-**One-Sentence Takeaway:** AI gap detection reveals your blind spots by cross-referencing your declared knowledge against a complete topic map — focus your study where the gaps are largest.
+**One-Sentence Takeaway:** AI gap detection reveals your blind spots by cross-referencing your declared knowledge against a complete topic map â€” focus your study where the gaps are largest.
 
 ---
 
@@ -721,11 +721,11 @@ class ActiveRecallSummarizer {
 **The three-pass learning protocol:**
 1. **Read** the material once (focused mode, no distractions)
 2. **Write** a summary from memory (active recall)
-3. **Compare** — ask AI to evaluate your summary against key points
+3. **Compare** â€” ask AI to evaluate your summary against key points
 
 **Try This:** Read a chapter from any course in this repository. Close the file. Write a bullet-point summary from memory. Then ask AI: "Here's my summary of [topic]. Here are the key points from the source: [list]. Evaluate my summary for completeness and accuracy."
 
-**One-Sentence Takeaway:** Never let AI summarize for you — always write your own summary first, then use AI to evaluate what you missed.
+**One-Sentence Takeaway:** Never let AI summarize for you â€” always write your own summary first, then use AI to evaluate what you missed.
 
 ---
 
@@ -766,7 +766,7 @@ class LearningPathDesigner {
 
     // AI generates the optimal path based on:
     // - Prerequisite dependencies (you can't learn X without Y)
-    // - Difficulty progression (easy → medium → hard)
+    // - Difficulty progression (easy â†’ medium â†’ hard)
     // - Time constraints (how many hours per week)
     // - Learning style (project-based vs theory-first)
 
@@ -798,7 +798,7 @@ class LearningPathDesigner {
     ];
 
     return {
-      title: `${currentSkill} → ${targetSkill} in ${weeksAvailable} weeks`,
+      title: `${currentSkill} â†’ ${targetSkill} in ${weeksAvailable} weeks`,
       totalEstimatedHours: path.reduce((sum, n) => sum + n.estimatedHours, 0),
       nodes: path,
       weeklySchedule: this.generateWeeklySchedule(path, weeklyHours),
@@ -812,7 +812,7 @@ class LearningPathDesigner {
 
   private generateWeeklySchedule(nodes: LearningPathNode[], weeklyHours: number): string[] {
     return nodes.map(n =>
-      `${n.topic}: ${n.estimatedHours}h total — break into ${Math.ceil(n.estimatedHours / weeklyHours)} weeks`
+      `${n.topic}: ${n.estimatedHours}h total â€” break into ${Math.ceil(n.estimatedHours / weeklyHours)} weeks`
     );
   }
 }
@@ -820,7 +820,7 @@ class LearningPathDesigner {
 
 **Try This:** Pick a skill you want to learn next (a framework, language, or concept). Tell AI: "I know [current skills]. I want to learn [target skill]. I have [X] hours per week. Design a 12-week learning path with weekly milestones and project checkpoints."
 
-**One-Sentence Takeaway:** AI-generated learning paths optimize the sequence and pacing of what to learn, but you must execute the daily work — the path is a map, not the journey.
+**One-Sentence Takeaway:** AI-generated learning paths optimize the sequence and pacing of what to learn, but you must execute the daily work â€” the path is a map, not the journey.
 
 ---
 
@@ -892,10 +892,10 @@ class MockInterviewer {
         evaluation.push('Set up the Situation context before describing your action');
       }
       if (!answer.includes('Result') && !answer.includes('result')) {
-        evaluation.push('Always close with the Result — what actually happened?');
+        evaluation.push('Always close with the Result â€” what actually happened?');
       }
       if (answer.includes('we') && !answer.includes('I')) {
-        evaluation.push('Use "I" for your specific actions, not just "we" — they want to know YOUR contribution');
+        evaluation.push('Use "I" for your specific actions, not just "we" â€” they want to know YOUR contribution');
       }
     }
 
@@ -905,15 +905,15 @@ class MockInterviewer {
 ```
 
 **Mock interview protocol:**
-1. **Generate** — AI creates questions matching your target company and role
-2. **Answer** — You respond verbally or in writing (time-boxed)
-3. **Evaluate** — AI scores your answer and gives specific feedback
-4. **Iterate** — Re-answer the same question incorporating feedback
-5. **Track** — Maintain a log of questions and scores across sessions
+1. **Generate** â€” AI creates questions matching your target company and role
+2. **Answer** â€” You respond verbally or in writing (time-boxed)
+3. **Evaluate** â€” AI scores your answer and gives specific feedback
+4. **Iterate** â€” Re-answer the same question incorporating feedback
+5. **Track** â€” Maintain a log of questions and scores across sessions
 
 **Try This:** Pick 3 behavioral questions from above. Record yourself answering each in under 3 minutes. Transcribe the recording and ask AI to evaluate using the STAR framework (Situation, Task, Action, Result).
 
-**One-Sentence Takeaway:** AI mock interviews give you infinite practice with immediate feedback — the key is to re-answer questions after receiving feedback, not just move to the next question.
+**One-Sentence Takeaway:** AI mock interviews give you infinite practice with immediate feedback â€” the key is to re-answer questions after receiving feedback, not just move to the next question.
 
 ---
 
@@ -950,13 +950,13 @@ const PITFALLS: Pitfall[] = [
     name: 'Shallow Prompting',
     risk: 'high',
     symptom: 'Getting surface-level explanations that don\'t challenge you',
-    prevention: 'Use the five prompt patterns from Q2 — rotate them',
+    prevention: 'Use the five prompt patterns from Q2 â€” rotate them',
     recovery: 'Level-up prompts: "Explain this at the graduate level" or "What are the tradeoffs?"',
   },
   {
     name: 'Verification Failure',
     risk: 'critical',
-    symptom: 'You trust AI\'s answer without verifying — AI is wrong 10-30% of the time',
+    symptom: 'You trust AI\'s answer without verifying â€” AI is wrong 10-30% of the time',
     prevention: 'Always verify AI code by running it. Always verify AI facts against primary sources',
     recovery: 'Cite every AI claim: ask AI for sources, then check them yourself',
   },
@@ -987,19 +987,19 @@ class PitfallGuard {
     // Pattern: asking AI immediately without struggling first
     const quickAsks = recentActions.filter(a => a.action === 'ask_ai').length;
     if (quickAsks >= 3) {
-      console.warn('⚠️ Warning: You\'ve asked AI 3+ times recently. Try struggling for 15 minutes first.');
+      console.warn('âš ï¸ Warning: You\'ve asked AI 3+ times recently. Try struggling for 15 minutes first.');
     }
 
     // Pattern: never asking AI for sources
     const sourceChecks = recentActions.filter(a => a.action === 'verify_source').length;
     if (sourceChecks === 0 && quickAsks > 0) {
-      console.warn('⚠️ Warning: You haven\'t verified any AI claims. Verify facts against primary sources.');
+      console.warn('âš ï¸ Warning: You haven\'t verified any AI claims. Verify facts against primary sources.');
     }
 
     // Pattern: long conversation without fresh start
     const sessionLength = this.sessionLog.length;
     if (sessionLength > 20) {
-      console.warn('⚠️ Warning: Long session detected. AI context may be drifting. Consider starting fresh.');
+      console.warn('âš ï¸ Warning: Long session detected. AI context may be drifting. Consider starting fresh.');
     }
   }
 }
@@ -1016,7 +1016,7 @@ class PitfallGuard {
 
 **Try This:** Rate yourself on the checklist above. If you flagged 3+, implement a 24-hour AI detox: solve everything from scratch, no AI assistance. Write down how it feels and what you learned from the struggle.
 
-**One-Sentence Takeaway:** AI-assisted learning requires strong guardrails — the 15-minute struggle rule, teach-back protocol, and verification discipline are non-negotiable for deep learning.
+**One-Sentence Takeaway:** AI-assisted learning requires strong guardrails â€” the 15-minute struggle rule, teach-back protocol, and verification discipline are non-negotiable for deep learning.
 
 ---
 
@@ -1138,15 +1138,15 @@ class LearningDashboard {
     const weeklySessions = this.sessionHistory.filter(s => s.date >= weekAgo);
 
     return `
-📊 Learning Dashboard — Weekly Report
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ðŸ“Š Learning Dashboard â€” Weekly Report
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 Sessions: ${weeklySessions.length}
 Study Hours: ${Math.round(weeklySessions.reduce((sum, s) => sum + s.duration, 0) / 60)}
 Streak: ${this.metrics.streakDays} days
 Knowledge Coverage: ${this.metrics.knowledgeCoverage}%
 Average Quality: ${this.metrics.averageSessionQuality}/10
 Projected Mastery: ${this.metrics.projectedMasteryDate.toDateString()}
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`;
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”`;
   }
 }
 ```
@@ -1164,14 +1164,14 @@ Projected Mastery: ${this.metrics.projectedMasteryDate.toDateString()}
 
 **Try This:** Create a simple learning dashboard for this week. For every study session, log: date, topic, duration (min), quality (1-10). On Sunday, compute your weekly totals and identify one pattern to improve next week.
 
-**One-Sentence Takeaway:** What gets measured gets improved — a learning dashboard turns vague "I studied a lot" into precise metrics you can optimize.
+**One-Sentence Takeaway:** What gets measured gets improved â€” a learning dashboard turns vague "I studied a lot" into precise metrics you can optimize.
 
 ---
 
 ### Q12: How can you use AI for multi-modal learning (diagrams, code, text)?
 
 
-**Answer:** Different concepts are best understood through different modalities. AI can translate between modalities — turning text descriptions into diagrams, code into explanations, and vice versa — helping you build richer mental models.
+**Answer:** Different concepts are best understood through different modalities. AI can translate between modalities â€” turning text descriptions into diagrams, code into explanations, and vice versa â€” helping you build richer mental models.
 
 ```typescript
 type Modality = 'text' | 'code' | 'diagram' | 'analogy' | 'example';
@@ -1243,22 +1243,22 @@ ${concept}[specific characteristic] maps to ${domain}[analogous characteristic].
 
 | If you're stuck with... | Switch to... | Example |
 |-------------------------|--------------|---------|
-| Text explanation | Code implementation | Read about quicksort → implement it in TypeScript |
-| Code implementation | Diagram | Look at a codebase → draw the architecture |
+| Text explanation | Code implementation | Read about quicksort â†’ implement it in TypeScript |
+| Code implementation | Diagram | Look at a codebase â†’ draw the architecture |
 | Abstract concept | Analogy | "What is a hash table like in the real world?" |
 | Your own code | Teach someone | Explain your code to AI as if it's a junior developer |
 | Memorized definition | Novel example | "Generate 3 edge cases for this concept I've never seen" |
 
 **Try This:** Pick a concept you're studying right now. Ask AI to represent it in all five modalities (text, code, diagram, analogy, example). Which one clicks best for you?
 
-**One-Sentence Takeaway:** Different concepts need different modalities — use AI to translate between text, code, diagrams, and analogies until the concept clicks.
+**One-Sentence Takeaway:** Different concepts need different modalities â€” use AI to translate between text, code, diagrams, and analogies until the concept clicks.
 
 ---
 
 ### Q13: How can AI help with documentation comprehension?
 
 
-**Answer:** Technical documentation is often dense and assumes prior knowledge. AI can act as a documentation interpreter — filling in implicit prerequisites, providing concrete examples, and connecting abstract API docs to concrete use cases.
+**Answer:** Technical documentation is often dense and assumes prior knowledge. AI can act as a documentation interpreter â€” filling in implicit prerequisites, providing concrete examples, and connecting abstract API docs to concrete use cases.
 
 ```typescript
 interface DocComprehension {
@@ -1311,7 +1311,7 @@ class DocumentationInterpreter {
   private generateExample(apiName: string, docText: string): string {
     // AI generates a minimal working TypeScript example
     return `
-// ${apiName} — minimal working example
+// ${apiName} â€” minimal working example
 import { ${apiName} } from 'library';
 
 async function run() {
@@ -1335,13 +1335,13 @@ Not suitable for: [situations where it's overkill].`;
     const pitfalls: string[] = [];
 
     if (text.includes('optional') || text.includes('default')) {
-      pitfalls.push(`The default behavior of ${apiName} may not match your expectations — always test with explicit parameters first`);
+      pitfalls.push(`The default behavior of ${apiName} may not match your expectations â€” always test with explicit parameters first`);
     }
     if (text.includes('async') || text.includes('Promise')) {
-      pitfalls.push(`Error handling: ${apiName} may throw or return rejected Promises — always wrap in try-catch`);
+      pitfalls.push(`Error handling: ${apiName} may throw or return rejected Promises â€” always wrap in try-catch`);
     }
     if (text.includes('deprecated')) {
-      pitfalls.push(`WARNING: ${apiName} has deprecated features — check the changelog for migration paths`);
+      pitfalls.push(`WARNING: ${apiName} has deprecated features â€” check the changelog for migration paths`);
     }
 
     return pitfalls;
@@ -1361,7 +1361,7 @@ Not suitable for: [situations where it's overkill].`;
 1. **Read** the official docs once (surface understanding)
 2. **Ask AI** for prerequisites and concrete examples (fill gaps)
 3. **Implement** the example without looking at AI's version (active recall)
-4. **Compare** — find what you got wrong, re-read those parts of the docs
+4. **Compare** â€” find what you got wrong, re-read those parts of the docs
 5. **Build** a small project using the documented API (transfer)
 
 **Try This:** Pick any library's documentation page you've been meaning to read. Before diving deep, ask AI: "Here's the API docs for [library feature]. What prior knowledge does this assume? Give me a working TypeScript example and identify the top 3 things people misunderstand about it."
@@ -1471,11 +1471,11 @@ class TechniqueAugmenter {
 }
 ```
 
-**The golden rule:** AI enhances the input and output of learning (finding materials, generating practice, evaluating answers) but never replaces the core encoding process — the struggle of recall, the effort of understanding, the work of connecting new knowledge to existing mental models.
+**The golden rule:** AI enhances the input and output of learning (finding materials, generating practice, evaluating answers) but never replaces the core encoding process â€” the struggle of recall, the effort of understanding, the work of connecting new knowledge to existing mental models.
 
 **Try This:** Pick one chapter from this course (e.g., Ch 4: Pomodoro/Interleaving/Feynman). Design a study session where you use AI to augment EACH technique, not replace it. Write down your session plan.
 
-**One-Sentence Takeaway:** AI is an amplifier, not a substitute — every traditional learning technique can be augmented by AI, but the core encoding work must be done by you.
+**One-Sentence Takeaway:** AI is an amplifier, not a substitute â€” every traditional learning technique can be augmented by AI, but the core encoding work must be done by you.
 
 ---
 
@@ -1516,7 +1516,7 @@ class LifelongLearningSystem {
   async dailyRoutine(): Promise<void> {
     // Morning: Review due cards
     const dueCards = this.schedule.getDueCards();
-    console.log(`📚 ${dueCards.length} cards due for review today`);
+    console.log(`ðŸ“š ${dueCards.length} cards due for review today`);
 
     // Throughout: Capture gaps during work/study
     // Evening: Log and plan
@@ -1530,7 +1530,7 @@ class LifelongLearningSystem {
 
     // Adjust next day based on gaps
     this.streak++;
-    console.log(`🔥 ${this.streak}-day learning streak`);
+    console.log(`ðŸ”¥ ${this.streak}-day learning streak`);
   }
 
   weeklyReview(): void {
@@ -1539,11 +1539,11 @@ class LifelongLearningSystem {
 
     // Adjust schedule based on performance
     if (this.dashboard['metrics'].reviewCompliance < 80) {
-      console.log('⚠️ Review compliance below 80% — reduce new cards');
+      console.log('âš ï¸ Review compliance below 80% â€” reduce new cards');
     }
 
     if (this.dashboard['metrics'].averageSessionQuality < 6) {
-      console.log('💡 Session quality below 6/10 — try changing environment or time of day');
+      console.log('ðŸ’¡ Session quality below 6/10 â€” try changing environment or time of day');
     }
   }
 
@@ -1552,13 +1552,13 @@ class LifelongLearningSystem {
     // Adjust learning path based on progress
 
     const monthlyMetrics = `
-📈 Monthly Learning Report
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ðŸ“ˆ Monthly Learning Report
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 Total Hours: ${this.dashboard['metrics'].totalStudyHours}
 Concepts Mastered: ${this.dashboard['metrics'].conceptsMastered}
 Knowledge Coverage: ${this.dashboard['metrics'].knowledgeCoverage}%
 Average Quality: ${this.dashboard['metrics'].averageSessionQuality}/10
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 
 Adjustments for next month:
 1. Focus on bottom-3 gap areas
@@ -1578,14 +1578,14 @@ Adjustments for next month:
 | Daily | Log study session to dashboard | Tracks metrics automatically |
 | Weekly | Knowledge gap analysis | Identifies blind spots |
 | Weekly | Dashboard review + adjust | Suggests next week's focus |
-| Weekly | One AI-detox day | (None — struggle from scratch) |
+| Weekly | One AI-detox day | (None â€” struggle from scratch) |
 | Monthly | Learning path recalibration | Re-optimizes based on progress |
 | Quarterly | Full skill tree audit | Maps all knowledge areas |
 | Yearly | Annual learning retrospective | Analyzes year-long trends |
 
 **Try This:** Design your own daily 30-minute learning routine using the template above. Commit to it for 7 days. Use this chapter's TypeScript classes to build your personal learning tracker.
 
-**One-Sentence Takeaway:** A lifelong AI-assisted learning system combines daily routines, weekly reviews, and monthly recalibrations — AI amplifies every level but you own the discipline.
+**One-Sentence Takeaway:** A lifelong AI-assisted learning system combines daily routines, weekly reviews, and monthly recalibrations â€” AI amplifies every level but you own the discipline.
 
 ---
 
@@ -1598,7 +1598,7 @@ b) Ask AI to generate code you don't understand
 c) Ask AI to quiz you using Socratic questioning
 d) Ask AI to write your study notes
 
-**Answer:** c) Socratic questioning forces active recall, which is the single most effective learning technique — AI's role is to probe your understanding, not replace it.
+**Answer:** c) Socratic questioning forces active recall, which is the single most effective learning technique â€” AI's role is to probe your understanding, not replace it.
 
 **2. What should you do BEFORE asking AI for help with a bug?**
 a) Nothing, ask AI immediately to save time
@@ -1611,21 +1611,21 @@ d) Ask a colleague first
 **3. Which prompt pattern is best for identifying what you don't know?**
 a) "Explain this topic to me"
 b) "Quiz me on this topic"
-c) "Here's what I know — what am I missing?"
+c) "Here's what I know â€” what am I missing?"
 d) "Give me examples of this concept"
 
 **Answer:** c) The blind-spot pattern explicitly asks AI to cross-reference your knowledge against a complete topic map and return what you missed.
 
 **4. What is the biggest risk of AI-assisted learning?**
 a) AI is too slow
-b) Answer dependency — inability to solve problems without AI
+b) Answer dependency â€” inability to solve problems without AI
 c) AI costs too much
 d) AI doesn't understand your questions
 
-**Answer:** b) Answer dependency is the critical risk — if you can solve problems with AI but not without it, you haven't learned anything.
+**Answer:** b) Answer dependency is the critical risk â€” if you can solve problems with AI but not without it, you haven't learned anything.
 
 **5. How should you verify AI-generated information?**
-a) Trust it — AI is always correct
+a) Trust it â€” AI is always correct
 b) Check it against a second AI
 c) Verify against primary sources and run AI-generated code
 d) Ask AI to double-check itself
@@ -1633,7 +1633,7 @@ d) Ask AI to double-check itself
 **Answer:** c) AI is wrong 10-30% of the time. Always verify facts against primary sources and run AI-generated code. Asking AI to check itself creates circular reasoning.
 
 **6. How often should you do an AI detox?**
-a) Never — AI is always beneficial
+a) Never â€” AI is always beneficial
 b) At least once a week
 c) Once a month
 d) Only when you feel dependent
@@ -1646,7 +1646,7 @@ b) To prevent the illusion of understanding by explaining concepts in your own w
 c) To get better AI responses
 d) To save time
 
-**Answer:** b) The teach-back protocol exposes the illusion of understanding — if you can't explain it clearly, you don't really know it, even if it felt clear when AI explained it.
+**Answer:** b) The teach-back protocol exposes the illusion of understanding â€” if you can't explain it clearly, you don't really know it, even if it felt clear when AI explained it.
 
 **8. In AI-powered spaced repetition, what does AI add beyond standard Anki?**
 a) Better scheduling algorithm
@@ -1670,7 +1670,7 @@ b) Ask for a real-world analogy
 c) Re-read the same paragraph slower
 d) Skip the concept entirely
 
-**Answer:** b) Abstract concepts often click when translated to a concrete analogy from a domain you already understand — leveraging existing mental models for new knowledge.
+**Answer:** b) Abstract concepts often click when translated to a concrete analogy from a domain you already understand â€” leveraging existing mental models for new knowledge.
 
 ---
 
@@ -1695,7 +1695,7 @@ d) Skip the concept entirely
 | AI Code Review | Pattern-spotting in solutions | AI checks formula correctness | AI reviews config/code quality | AI evaluates solution efficiency |
 | AI Spaced Repetition | Variant algo problem angles | Variant theory question angles | Variant API usage questions | Variant behavioral questions |
 | Knowledge Gap Detection | Map known vs unknown DSA topics | Identify theory blind spots | Detect missing framework concepts | Identify weak interview categories |
-| Multi-Modal Learning | Code → diagram for algorithms | Text → mermaid for theory maps | Docs → code examples | Text → mock scenarios |
+| Multi-Modal Learning | Code â†’ diagram for algorithms | Text â†’ mermaid for theory maps | Docs â†’ code examples | Text â†’ mock scenarios |
 | AI Detox Days | Solve DSA from scratch | Answer theory from memory | Build features without AI | Full mock without AI |
 
 ## Quick Reference
@@ -1710,14 +1710,14 @@ d) Skip the concept entirely
 
 ## Chapter Summary
 
-- AI is most effective as a Socratic tutor that questions you rather than answering — use the 5 prompt patterns (quiz, ELI5, compare, examples, blind-spots) for different learning goals
+- AI is most effective as a Socratic tutor that questions you rather than answering â€” use the 5 prompt patterns (quiz, ELI5, compare, examples, blind-spots) for different learning goals
 - AI-powered spaced repetition generates varied question angles, preventing card memorization and forcing genuine understanding
 - The 15-minute struggle rule is non-negotiable: always try to solve, debug, or recall on your own before involving AI
 - Knowledge gap detection reveals blind spots by cross-referencing your declared knowledge against a complete topic map
 - Multi-modal learning (translating between text, code, diagrams, analogies) builds richer mental models
 - The five pitfalls of AI-assisted learning are answer dependency, illusion of understanding, shallow prompting, verification failure, and context window blindness
 - A weekly AI-detox day prevents dependency and strengthens independent problem-solving skills
-- A lifelong learning system integrates daily spaced repetition, weekly gap analysis, and monthly recalibration — AI amplifies every level
+- A lifelong learning system integrates daily spaced repetition, weekly gap analysis, and monthly recalibration â€” AI amplifies every level
 
 ## Exercises
 
@@ -1743,7 +1743,7 @@ d) Skip the concept entirely
 <details>
 <summary>Answer&lt;/summary&gt;
 
-**Answer:** B — When AI provides answers too quickly, it bypasses the struggle phase essential for memory encoding. The student recognized the pattern but couldn't reproduce it without AI's scaffolding.
+**Answer:** B â€” When AI provides answers too quickly, it bypasses the struggle phase essential for memory encoding. The student recognized the pattern but couldn't reproduce it without AI's scaffolding.
 </details>
 
 **Q2:** A learner asks AI "Compare REST and GraphQL across 5 dimensions" and studies the table. What should they do next to solidify understanding?
@@ -1755,7 +1755,7 @@ d) Skip the concept entirely
 <details>
 <summary>Answer&lt;/summary&gt;
 
-**Answer:** B — Active recall requires reproducing information from memory. Reading AI's comparison gives the illusion of understanding; teaching it back from memory reveals genuine gaps.
+**Answer:** B â€” Active recall requires reproducing information from memory. Reading AI's comparison gives the illusion of understanding; teaching it back from memory reveals genuine gaps.
 </details>
 
 **Q3:** Which metric best indicates genuine learning progress in an AI-assisted study system?
@@ -1767,11 +1767,11 @@ d) Skip the concept entirely
 <details>
 <summary>Answer&lt;/summary&gt;
 
-**Answer:** C — The only true measure of learning is independent performance. If you can only solve problems with AI assistance, you haven't learned — you've outsourced.
+**Answer:** C â€” The only true measure of learning is independent performance. If you can only solve problems with AI assistance, you haven't learned â€” you've outsourced.
 </details>
 
 **Q4:** A student has been using AI for 3 months and notices they feel anxious when attempting problems without AI. What should they do?
-- A) Push through the anxiety — it will pass
+- A) Push through the anxiety â€” it will pass
 - B) Implement a weekly AI-detox day with full no-AI practice sessions
 - C) Reduce AI use only for code generation, keep it for explanations
 - D) Switch to a different AI tool
@@ -1779,7 +1779,7 @@ d) Skip the concept entirely
 <details>
 <summary>Answer&lt;/summary&gt;
 
-**Answer:** B — Anxiety when learning without AI is a clear symptom of answer dependency. Scheduled detox days rebuild independent problem-solving confidence and prevent long-term skill degradation.
+**Answer:** B â€” Anxiety when learning without AI is a clear symptom of answer dependency. Scheduled detox days rebuild independent problem-solving confidence and prevent long-term skill degradation.
 </details>
 
 **Q5:** A developer feeds their code to AI for review and gets 5 findings. What is the most effective learning action?
@@ -1791,7 +1791,7 @@ d) Skip the concept entirely
 <details>
 <summary>Answer&lt;/summary&gt;
 
-**Answer:** B — Writing down the root cause for each finding forces understanding. Blindly applying fixes creates the illusion of learning without the neural encoding that comes from analysis.
+**Answer:** B â€” Writing down the root cause for each finding forces understanding. Blindly applying fixes creates the illusion of learning without the neural encoding that comes from analysis.
 </details>
 
 ## Further Reading

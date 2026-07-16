@@ -1,4 +1,4 @@
-# Chapter 9: Functions
+﻿# Chapter 9: Functions
 
 
 > **Previous:** [Dictionaries](./08-dictionaries.md) | **Next:** [Lambda and Functional Programming](./10-lambda.md)
@@ -15,16 +15,16 @@ By the end of this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/09-functions/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/09-functions/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/09-functions/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/09-functions/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/09-functions/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/09-functions/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/09-functions/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/09-functions/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/09-functions/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/09-functions/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/09-functions/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/09-functions/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -40,8 +40,8 @@ By the end of this chapter, students will be able to:
 |---------|-------|-------------|
 |9.1 Function Definition and Calling||Functions are defined with `def`; calling a function creates a local scope.|
 |9.2 Arguments and Parameters||Use `*args` for variable positional args, `**kwargs` for keyword args, and `None` for mutable defaults.|
-|9.3 Return Values||LEGB rule: Local → Enclosing → Global → Built-in resolves variable names.|
-|9.4 Docstrings||Closures capture enclosing variables by reference — watch out for late-binding in loops.|
+|9.3 Return Values||LEGB rule: Local â†’ Enclosing â†’ Global â†’ Built-in resolves variable names.|
+|9.4 Docstrings||Closures capture enclosing variables by reference â€” watch out for late-binding in loops.|
 |9.5 Scope and the LEGB Rule||Type annotations document expected types; mypy checks them statically.|
 |9.6 Type Annotations||undefined|
 |9.7 Nested Functions and Closures||undefined|
@@ -96,7 +96,7 @@ print(result)                # None
 ## 9.2 Arguments and Parameters
 
 > **One-Sentence Takeaway:** Use `*args` for variable positional args, `**kwargs` for keyword args, and `None` for mutable defaults.
-> **Warning:** Mutable default arguments are evaluated once at definition time — use `None` and create a new object each call.
+> **Warning:** Mutable default arguments are evaluated once at definition time â€” use `None` and create a new object each call.
 
 
 
@@ -148,7 +148,7 @@ def append_to(element, target=[]):
     return target
 
 print(append_to(1))   # [1]
-print(append_to(2))   # [1, 2]  → the default list is shared!
+print(append_to(2))   # [1, 2]  â†’ the default list is shared!
 
 # CORRECT pattern
 def append_to(element, target=None):
@@ -161,7 +161,7 @@ print(append_to(1))   # [1]
 print(append_to(2))   # [2]
 ```
 
-### 9.2.4 *args → Variable Positional Arguments
+### 9.2.4 *args â†’ Variable Positional Arguments
 
 
 `*args` captures extra positional arguments as a tuple:
@@ -183,7 +183,7 @@ log("INFO", "Starting", "Processing", "Done")
 # [INFO] Done
 ```
 
-### 9.2.5 **kwargs → Variable Keyword Arguments
+### 9.2.5 **kwargs â†’ Variable Keyword Arguments
 
 
 `**kwargs` captures extra keyword arguments as a dictionary:
@@ -257,7 +257,7 @@ print(process(1, 2, 3, 4, e=5, f=6))  # 21
 
 ## 9.3 Return Values
 
-> **One-Sentence Takeaway:** LEGB rule: Local → Enclosing → Global → Built-in resolves variable names.
+> **One-Sentence Takeaway:** LEGB rule: Local â†’ Enclosing â†’ Global â†’ Built-in resolves variable names.
 
 
 Functions can return multiple values as a tuple:
@@ -281,7 +281,7 @@ def factorial(n: int) -> int:
 
 ## 9.4 Docstrings
 
-> **One-Sentence Takeaway:** Closures capture enclosing variables by reference — watch out for late-binding in loops.
+> **One-Sentence Takeaway:** Closures capture enclosing variables by reference â€” watch out for late-binding in loops.
 
 
 Docstrings document the function's purpose, parameters, and return value:
@@ -318,10 +318,10 @@ help(fibonacci)  # prints the docstring
 
 Python resolves variable names following the LEGB order:
 
-1. **L**ocal → function scope
-2. **E**nclosing → outer function scope (for nested functions)
-3. **G**lobal → module level
-4. **B**uilt-in → Python's built-in namespace
+1. **L**ocal â†’ function scope
+2. **E**nclosing â†’ outer function scope (for nested functions)
+3. **G**lobal â†’ module level
+4. **B**uilt-in â†’ Python's built-in namespace
 
 ```python
 x = "global"         # G
@@ -375,7 +375,7 @@ Without `nonlocal`, assignment in `inner` creates a new local variable rather th
 ## 9.6 Type Annotations
 
 > **One-Sentence Takeaway:** undefined
-> **Remember:** Type annotations are not enforced at runtime — use mypy or pyright for static type checking.
+> **Remember:** Type annotations are not enforced at runtime â€” use mypy or pyright for static type checking.
 
 
 
@@ -451,7 +451,7 @@ def make_functions():
     return funcs
 
 for f in make_functions():
-    print(f(), end=" ")   # 4 4 4 4 4  → all see i=4
+    print(f(), end=" ")   # 4 4 4 4 4  â†’ all see i=4
 
 # Fix: capture the current value
 def make_functions_fixed():
@@ -469,7 +469,7 @@ for f in make_functions_fixed():
 > **One-Sentence Takeaway:** undefined
 
 
-Functions are first-class objects → they can be assigned, passed, and returned:
+Functions are first-class objects â†’ they can be assigned, passed, and returned:
 
 ```python
 def square(x):
@@ -625,13 +625,13 @@ console.log(counter());  // 11
 ### TypeScript Function Overloads & Advanced Patterns
 
 ```typescript
-// Python has *args → TypeScript: rest parameters
+// Python has *args â†’ TypeScript: rest parameters
 function sumAll(...numbers: number[]): number {
   return numbers.reduce((a, b) => a + b, 0);
 }
 console.log(sumAll(1, 2, 3, 4));  // 10
 
-// Python: **kwargs → TypeScript: destructured object parameter
+// Python: **kwargs â†’ TypeScript: destructured object parameter
 function createUser(name: string, options: { age?: number; email?: string }): string {
   const age = options.age ?? "unknown";
   const email = options.email ?? "no email";
@@ -639,7 +639,7 @@ function createUser(name: string, options: { age?: number; email?: string }): st
 }
 console.log(createUser("Alice", { age: 30, email: "alice@x.com" }));
 
-// Python: positional-only (/) and keyword-only (*) → TypeScript
+// Python: positional-only (/) and keyword-only (*) â†’ TypeScript
 function divide(dividend: number, divisor: number): number {
   // No positional-only distinction in TypeScript
   return dividend / divisor;
@@ -654,7 +654,7 @@ function addItem(item: string, list: string[] = []): string[] {
 }
 // Each call without list creates a new default array (same as Python with None)
 
-// Python: nonlocal → TypeScript: closures work the same
+// Python: nonlocal â†’ TypeScript: closures work the same
 function makeMultiplier(factor: number): (x: number) => number {
   return (x: number) => x * factor;  // captures factor
 }
@@ -665,7 +665,7 @@ function factorial(n: number): number {
   return n * factorial(n - 1);
 }
 
-// Python: function annotations → TypeScript: compulsory types
+// Python: function annotations â†’ TypeScript: compulsory types
 function process(value: string | number): string {
   if (typeof value === "string") return value.toUpperCase();
   return value.toFixed(2);  // TypeScript narrows type in each branch
@@ -675,7 +675,7 @@ function process(value: string | number): string {
 ### TypeScript Callback & Async Function Patterns
 
 ```typescript
-// Python: function as argument → TypeScript: callback
+// Python: function as argument â†’ TypeScript: callback
 function processArray<T, U>(
   items: T[],
   callback: (item: T, index: number) => U
@@ -695,7 +695,7 @@ function asyncSequence<T>(
   });
 }
 
-// Python: nested functions → TypeScript: closures
+// Python: nested functions â†’ TypeScript: closures
 function createLogger(prefix: string) {
   return {
     info: (msg: string) => console.log(`[${prefix} INFO] ${msg}`),
@@ -706,14 +706,14 @@ const logger = createLogger("App");
 logger.info("Started");  // [App INFO] Started
 logger.error("Failed");  // [App ERROR] Failed
 
-// Python: function attributes → TypeScript: function properties
+// Python: function attributes â†’ TypeScript: function properties
 function greet3(name: string): string {
   return `${greet3.prefix} ${name}!`;
 }
 greet3.prefix = "Hello";
 console.log(greet3("World"));  // Hello World!
 
-// Python: singledispatch → TypeScript: function overloads
+// Python: singledispatch â†’ TypeScript: function overloads
 function format(input: string): string;
 function format(input: number): string;
 function format(input: boolean): string;
@@ -908,7 +908,7 @@ function logCalls<T extends (...args: unknown[]) => unknown>(fn: T): T {
   }) as T;
 }
 const loggedAdd = logCalls((a: number, b: number) => a + b);
-loggedAdd(3, 4); // logs: Called (3, 4) → 7
+loggedAdd(3, 4); // logs: Called (3, 4) â†’ 7
 ```
 
 ### TypeScript Function Composition & Pipeline
@@ -991,7 +991,7 @@ console.log(executeStrategy("power", 2, 10)); // 1024
 ## Summary
 
 - Parameters: positional, keyword, default, `*args`, `**kwargs`, positional-only (`/`), keyword-only (`*`).
-- Default arguments are evaluated once â€" use `None` for mutable defaults.
+- Default arguments are evaluated once Ã¢â‚¬" use `None` for mutable defaults.
 - LEGB scope: Local, Enclosing, Global, Built-in.
 - `global` and `nonlocal` modify variables in outer scopes.
 - Docstrings and annotations document the function contract.

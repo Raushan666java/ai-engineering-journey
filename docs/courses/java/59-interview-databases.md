@@ -1,4 +1,4 @@
-# Chapter 59: Database Interview Q&A for Java & Spring Boot Developers
+﻿# Chapter 59: Database Interview Q&A for Java & Spring Boot Developers
 
 > **Previous:** [REST API Interview Q&amp;A](./58-interview-rest-api.md) | **Next:** [Databases Interview Q&amp;A (cont.)](./59-interview-databases-a.md)
 
@@ -12,16 +12,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/59-interview-databases/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/59-interview-databases/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/59-interview-databases/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/59-interview-databases/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/59-interview-databases/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/59-interview-databases/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/59-interview-databases/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/59-interview-databases/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/59-interview-databases/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/59-interview-databases/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/59-interview-databases/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/59-interview-databases/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -59,7 +59,7 @@ JDBC (Java Database Connectivity) is a low-level API that lets you execute raw S
 Use JDBC when you need fine-grained control over SQL, are doing bulk operations where ORM overhead hurts, or are interacting with database-specific features. Use JPA when you want to reduce boilerplate, need automatic dirty checking, lazy loading, or a unit-of-work pattern, and your queries are reasonably standard.
 
 ```java
-// ── JDBC approach ──
+// â”€â”€ JDBC approach â”€â”€
 public User findUserByIdJdbc(long id) {
     String sql = "SELECT id, name, email FROM users WHERE id = ?";
     try (Connection conn = dataSource.getConnection();
@@ -80,7 +80,7 @@ public User findUserByIdJdbc(long id) {
     return null;
 }
 
-// ── JPA approach ──
+// â”€â”€ JPA approach â”€â”€
 @Repository
 public class UserRepository {
     @PersistenceContext
@@ -102,8 +102,8 @@ JPA wraps JDBC under the hood. Every JPA operation translates to JDBC calls even
 
 These control how Hibernate synchronizes your entity mappings with the database schema:
 
-- `validate`: Checks that the database schema matches your entities. Throws an exception on mismatch. Safe for production → it never modifies the schema.
-- `update`: Automatically alters the schema to match your entities (adds new tables/columns, but never drops anything). **Not safe for production** → it can make destructive guesses in edge cases.
+- `validate`: Checks that the database schema matches your entities. Throws an exception on mismatch. Safe for production â†’ it never modifies the schema.
+- `update`: Automatically alters the schema to match your entities (adds new tables/columns, but never drops anything). **Not safe for production** â†’ it can make destructive guesses in edge cases.
 - `create`: Drops all existing tables and recreates them from your entities. Data loss guaranteed. Useful for testing only.
 - `create-drop`: Same as `create`, but also drops the schema when the session factory closes. Ideal for embedded databases in unit tests.
 
@@ -138,7 +138,7 @@ public class Post {
     private List<Comment> comments;
 }
 
-// âŒ Triggers N+1 queries:
+// Ã¢ÂÅ’ Triggers N+1 queries:
 // SELECT p FROM Post p                          -- 1 query
 // for each post: SELECT c FROM Comment c WHERE c.post_id = ?  -- N queries
 List<Post> posts = em.createQuery("SELECT p FROM Post p", Post.class)
@@ -150,15 +150,15 @@ for (Post p : posts) {
 
 Solutions, from best to worst:
 
-**1. JOIN FETCH → one query with a join:**
+**1. JOIN FETCH â†’ one query with a join:**
 ```java
-// âœ… Single query with LEFT JOIN FETCH
+// Ã¢Å“â€¦ Single query with LEFT JOIN FETCH
 TypedQuery<Post> q = em.createQuery(
     "SELECT p FROM Post p LEFT JOIN FETCH p.comments", Post.class);
 List<Post> posts = q.getResultList();
 ```
 
-**2. `@EntityGraph` → declarative fetch plan:**
+**2. `@EntityGraph` â†’ declarative fetch plan:**
 ```java
 @Entity
 @NamedEntityGraph(name = "Post.comments", attributeNodes = @NamedAttributeNode("comments"))
@@ -169,21 +169,21 @@ public class Post { /* ... */ }
 List<Post> findAll();
 ```
 
-**3. Hibernate `@BatchSize` → loads lazy proxies in batches:**
+**3. Hibernate `@BatchSize` â†’ loads lazy proxies in batches:**
 ```java
 @OneToMany(mappedBy = "post")
 @BatchSize(size = 20)
 private List<Comment> comments;
 ```
 
-**4. DTO projection → avoid entity loading entirely:**
+**4. DTO projection â†’ avoid entity loading entirely:**
 ```java
 List<PostSummary> summaries = em.createQuery(
     "SELECT new com.example.PostSummary(p.id, p.title, SIZE(p.comments)) FROM Post p",
     PostSummary.class).getResultList();
 ```
 
-JOIN FETCH is the most common fix. Watch for `MultipleBagFetchException` when fetching multiple collections → use `Set` instead of `List` or fetch one collection per query.
+JOIN FETCH is the most common fix. Watch for `MultipleBagFetchException` when fetching multiple collections â†’ use `Set` instead of `List` or fetch one collection per query.
 
 ---
 
@@ -210,8 +210,8 @@ public class Order {
 Rules of thumb:
 - Always prefer `LAZY` for `@OneToMany` and `@ManyToMany`. Eager loading a large collection can pull in the entire database.
 - `@ManyToOne` defaults to `EAGER`. Consider changing it to `LAZY` and using `JOIN FETCH` when you actually need the parent.
-- `@Basic` (scalar fields) is always `EAGER` → there is no lazy loading for simple columns unless you enable bytecode enhancement.
-- Eager loading via `@ManyToOne` can cascade into multiple joins: `Order → Customer → Address → Country`. One simple query becomes a 4-table Cartesian product.
+- `@Basic` (scalar fields) is always `EAGER` â†’ there is no lazy loading for simple columns unless you enable bytecode enhancement.
+- Eager loading via `@ManyToOne` can cascade into multiple joins: `Order â†’ Customer â†’ Address â†’ Country`. One simple query becomes a 4-table Cartesian product.
 
 The `@NamedEntityGraph` approach gives you the best of both worlds: LAZY by default, eager via explicit fetch graph when needed.
 
@@ -234,7 +234,7 @@ public class Account {
     private long version;  // incremented on every update
 }
 
-// Usage → retry on conflict:
+// Usage â†’ retry on conflict:
 @Transactional
 public void transfer(Long fromId, Long toId, BigDecimal amount) {
     try {
@@ -268,9 +268,9 @@ public void transfer(Long fromId, Long toId, BigDecimal amount) {
 ```
 
 Pessimistic lock modes:
-- `PESSIMISTIC_READ` → shared lock, others can read but not write
-- `PESSIMISTIC_WRITE` → exclusive lock, no one else can read or write
-- `PESSIMISTIC_FORCE_INCREMENT` → pessimistic lock + version increment on commit
+- `PESSIMISTIC_READ` â†’ shared lock, others can read but not write
+- `PESSIMISTIC_WRITE` â†’ exclusive lock, no one else can read or write
+- `PESSIMISTIC_FORCE_INCREMENT` â†’ pessimistic lock + version increment on commit
 
 Use optimistic for read-heavy workloads with rare writes. Use pessimistic for financial transactions, inventory reservations, and any operation where retry is expensive or unacceptable.
 
@@ -284,7 +284,7 @@ Use optimistic for read-heavy workloads with rare writes. Use pessimistic for fi
 `@Transactional` is declarative transaction management. Spring wraps the method in a proxy that begins a transaction before the method and commits (or rolls back) after it. Manual management uses `TransactionTemplate` or `PlatformTransactionManager` directly.
 
 ```java
-// ── Declarative with @Transactional ──
+// â”€â”€ Declarative with @Transactional â”€â”€
 @Service
 public class OrderService {
     @Transactional
@@ -295,7 +295,7 @@ public class OrderService {
     }
 }
 
-// ── Manual with TransactionTemplate ──
+// â”€â”€ Manual with TransactionTemplate â”€â”€
 @Service
 public class OrderService {
     private final TransactionTemplate txTemplate;
@@ -337,16 +337,16 @@ Key `@Transactional` attributes:
 
 **Answer:**
 
-**First-level cache** (L1) is the `EntityManager`/`Session`-scoped cache. Every entity loaded or persisted within a session is stored in L1. Subsequent lookups by the same ID within the same session hit the cache instead of the database. L1 is always enabled and cannot be disabled → it is a core part of the unit-of-work pattern.
+**First-level cache** (L1) is the `EntityManager`/`Session`-scoped cache. Every entity loaded or persisted within a session is stored in L1. Subsequent lookups by the same ID within the same session hit the cache instead of the database. L1 is always enabled and cannot be disabled â†’ it is a core part of the unit-of-work pattern.
 
 ```java
 // First-level cache in action:
 User u1 = em.find(User.class, 1L);  // SQL: SELECT ... WHERE id = 1
-User u2 = em.find(User.class, 1L);  // L1 cache hit → no SQL
+User u2 = em.find(User.class, 1L);  // L1 cache hit â†’ no SQL
 
 em.clear();  // clears L1 cache
 
-User u3 = em.find(User.class, 1L);  // SQL again → L1 was empty
+User u3 = em.find(User.class, 1L);  // SQL again â†’ L1 was empty
 ```
 
 **Second-level cache** (L2) is a `SessionFactory`-scoped cache shared across all sessions. You must explicitly enable it and configure a cache provider (Hazelcast, Redis, Ehcache, or the built-in `hibernate-jcache`).
@@ -382,7 +382,7 @@ Cache concurrency strategies:
 - `NONSTRICT_READ_WRITE`: for data that rarely conflicts. Weaker isolation.
 - `TRANSACTIONAL`: for JTA environments. Requires a transactional cache provider.
 
-L2 cache is not a replacement for a well-tuned database. Use it sparingly → cache only reference data (countries, status codes, configuration) and data that is expensive to compute but rarely changes.
+L2 cache is not a replacement for a well-tuned database. Use it sparingly â†’ cache only reference data (countries, status codes, configuration) and data that is expensive to compute but rarely changes.
 
 ---
 
@@ -451,7 +451,7 @@ List<User> findActiveUsersByEmailDomain(@Param("domain") String domain);
 `@ManyToMany` creates an implicit join table with only two columns (the foreign keys). You cannot add attributes to the relationship (like `createdAt`, `role`, `quantity`). A join entity (also called an association entity) creates an explicit third entity mapped to the join table, allowing you to add columns to the relationship itself.
 
 ```java
-// ── @ManyToMany (simple, no extra columns) ──
+// â”€â”€ @ManyToMany (simple, no extra columns) â”€â”€
 @Entity
 public class Student {
     @Id private Long id;
@@ -471,7 +471,7 @@ public class Course {
     private Set<Student> students;
 }
 
-// ── Join entity (extra columns possible) ──
+// â”€â”€ Join entity (extra columns possible) â”€â”€
 @Entity
 public class Enrollment {
     @Id private Long id;
@@ -494,7 +494,7 @@ public class Student {
 ```
 
 Rules:
-- Use `@ManyToMany` only when the relationship truly has no attributes → tags, categories, simple many-to-many labels
+- Use `@ManyToMany` only when the relationship truly has no attributes â†’ tags, categories, simple many-to-many labels
 - Use a join entity whenever the relationship carries metadata (timestamps, roles, quantities, status)
 - A join entity also makes it easier to query the relationship itself: `SELECT e FROM Enrollment e WHERE e.grade = 'A'`
 
@@ -507,7 +507,7 @@ Rules:
 
 JPA provides three inheritance strategies, each mapped via `@Inheritance`:
 
-**1. SINGLE_TABLE** (default) → one table for the entire hierarchy, with a discriminator column:
+**1. SINGLE_TABLE** (default) â†’ one table for the entire hierarchy, with a discriminator column:
 ```java
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
@@ -532,7 +532,7 @@ public class Truck extends Vehicle {
 // Result: single "vehicle" table with columns: id, manufacturer, doors, payload_capacity, vehicle_type
 ```
 
-**2. JOINED** → one table per class, with foreign keys to the parent:
+**2. JOINED** â†’ one table per class, with foreign keys to the parent:
 ```java
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
@@ -550,7 +550,7 @@ public class CreditCardPayment extends Payment {
 // Result: payment(id, amount), credit_card_payment(id, card_number, card_holder)
 ```
 
-**3. TABLE_PER_CLASS** → one complete table per concrete class:
+**3. TABLE_PER_CLASS** â†’ one complete table per concrete class:
 ```java
 @Entity
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
@@ -573,7 +573,7 @@ public class Dog extends Animal {
 | JOINED | Polymorphic queries need joins | Best (normalized) | Full FK support |
 | TABLE_PER_CLASS | Worst (UNION queries) | Moderate | No polymorphic FK |
 
-Use SINGLE_TABLE for simple hierarchies with few subclasses. Use JOINED when subclasses have many distinct columns. Avoid TABLE_PER_CLASS unless you have specific reasons → most databases struggle with polymorphic UNION queries at scale.
+Use SINGLE_TABLE for simple hierarchies with few subclasses. Use JOINED when subclasses have many distinct columns. Avoid TABLE_PER_CLASS unless you have specific reasons â†’ most databases struggle with polymorphic UNION queries at scale.
 
 ---
 
@@ -585,7 +585,7 @@ Use SINGLE_TABLE for simple hierarchies with few subclasses. Use JOINED when sub
 A projection is a subset of entity fields fetched instead of the full entity. DTO projections fetch only the columns you need, avoiding the overhead of loading large columns (BLOBs, TEXT) or eagerly-fetched associations.
 
 ```java
-// ── Interface-based projection ──
+// â”€â”€ Interface-based projection â”€â”€
 public interface UserSummary {
     String getName();
     String getEmail();
@@ -594,7 +594,7 @@ public interface UserSummary {
 @Query("SELECT u.name AS name, u.email AS email FROM User u WHERE u.active = true")
 List<UserSummary> findActiveUserSummaries();
 
-// ── Class-based DTO projection ──
+// â”€â”€ Class-based DTO projection â”€â”€
 public record UserDto(String name, String email, int orderCount) {}
 
 @Query("SELECT new com.example.UserDto(u.name, u.email, SIZE(u.orders)) " +
@@ -603,11 +603,11 @@ List<UserDto> findActiveUserDtos();
 ```
 
 Why use projections over entities:
-1. **Performance**: Select only needed columns → avoids fetching large TEXT/BLOB columns
-2. **Read-only**: No dirty checking overhead → Hibernate tracks changes only on managed entities
+1. **Performance**: Select only needed columns â†’ avoids fetching large TEXT/BLOB columns
+2. **Read-only**: No dirty checking overhead â†’ Hibernate tracks changes only on managed entities
 3. **Join efficiency**: DTOs can aggregate data from multiple entities without loading them
-4. **Safety**: No lazy-loading exceptions outside transactions → DTOs are plain objects
-5. **API boundary**: Expose only intended fields to REST clients → never accidentally serialize lazy proxies
+4. **Safety**: No lazy-loading exceptions outside transactions â†’ DTOs are plain objects
+5. **API boundary**: Expose only intended fields to REST clients â†’ never accidentally serialize lazy proxies
 
 EntityGraph can help with partial entity loading, but DTO projections give you the most control and the least overhead.
 
@@ -620,7 +620,7 @@ EntityGraph can help with partial entity loading, but DTO projections give you t
 
 Flyway manages schema changes as versioned SQL scripts. Spring Boot auto-configures Flyway when it finds `flyway-core` on the classpath.
 
-Step 1 → Add dependency:
+Step 1 â†’ Add dependency:
 ```xml
 <dependency>
     <groupId>org.flywaydb</groupId>
@@ -628,7 +628,7 @@ Step 1 → Add dependency:
 </dependency>
 ```
 
-Step 2 → Create migration scripts in `src/main/resources/db/migration/`:
+Step 2 â†’ Create migration scripts in `src/main/resources/db/migration/`:
 ```sql
 -- V1__create_users_table.sql
 CREATE TABLE users (
@@ -654,7 +654,7 @@ CREATE TABLE orders (
 CREATE INDEX idx_orders_user_id ON orders(user_id);
 ```
 
-Step 3 → Configure (minimal → Spring Boot auto-configures):
+Step 3 â†’ Configure (minimal â†’ Spring Boot auto-configures):
 ```yaml
 spring:
   flyway:
@@ -669,7 +669,7 @@ Naming convention: `V{version}__{description}.sql`
 - Versions can be integers (V1) or dotted (V1_2_3)
 - Repeatable migrations: `R__{description}.sql` (re-run if checksum changes)
 
-Flyway tracks applied migrations in a `flyway_schema_history` table. Never modify an already-applied migration → create a new one instead.
+Flyway tracks applied migrations in a `flyway_schema_history` table. Never modify an already-applied migration â†’ create a new one instead.
 
 ---
 
@@ -700,7 +700,7 @@ public class InventoryService {
         }
         item.setQuantity(item.getQuantity() - quantity);
         // Hibernate increments version on flush/commit
-        // If another transaction modified the row, version mismatch → OptimisticLockException
+        // If another transaction modified the row, version mismatch â†’ OptimisticLockException
     }
 }
 ```
@@ -715,7 +715,7 @@ Optional<InventoryItem> findByIdForUpdate(@Param("id") Long id);
 @Transactional
 public void deductStockPessimistic(Long itemId, int quantity) {
     InventoryItem item = repo.findByIdForUpdate(itemId).orElseThrow();
-    // Database row is locked → other transactions wait
+    // Database row is locked â†’ other transactions wait
     item.setQuantity(item.getQuantity() - quantity);
 }
 ```
@@ -727,7 +727,7 @@ For counters and atomic updates, use a single UPDATE statement to avoid the read
 @Query("UPDATE InventoryItem i SET i.quantity = i.quantity - :qty WHERE i.id = :id AND i.quantity >= :qty")
 int deductStockAtomic(@Param("id") Long id, @Param("qty") int qty);
 
-// Returns 0 if row didn't exist or quantity was insufficient → no race condition
+// Returns 0 if row didn't exist or quantity was insufficient â†’ no race condition
 ```
 
 The single-UPDATE approach is the most performant for high-contention counters because it avoids the round-trip for reading.
@@ -803,28 +803,28 @@ Add `@Testcontainers` + static `@Container` for a shared container across tests 
 - `JOIN FETCH`: A JPA-specific directive that tells Hibernate to **eagerly load** the association in the same query. Unlike plain `JOIN`, it populates the entity's persistence state so that lazy loading is not triggered later.
 
 ```java
-// INNER JOIN → only posts with at least one comment
-// Result: List<Object[]> → [Post, Comment] pairs
+// INNER JOIN â†’ only posts with at least one comment
+// Result: List<Object[]> â†’ [Post, Comment] pairs
 @Query("SELECT p, c FROM Post p JOIN p.comments c")
 List<Object[]> findPostsWithComments();
 
-// LEFT JOIN → all posts, comments may be null
+// LEFT JOIN â†’ all posts, comments may be null
 @Query("SELECT p, c FROM Post p LEFT JOIN p.comments c")
 List<Object[]> findAllPostsAndComments();
 
-// JOIN FETCH → eagerly loads comments, returns Post entities with comments populated
+// JOIN FETCH â†’ eagerly loads comments, returns Post entities with comments populated
 @Query("SELECT p FROM Post p LEFT JOIN FETCH p.comments")
 List<Post> findAllPostsWithComments();
 ```
 
-The critical difference: plain `JOIN` adds a WHERE/HAVING filter → it doesn't change how the entity is loaded. `JOIN FETCH` actually populates the entity's collection field, preventing N+1 queries for that association.
+The critical difference: plain `JOIN` adds a WHERE/HAVING filter â†’ it doesn't change how the entity is loaded. `JOIN FETCH` actually populates the entity's collection field, preventing N+1 queries for that association.
 
 ```java
-// âŒ Plain LEFT JOIN → comments are still lazy
+// Ã¢ÂÅ’ Plain LEFT JOIN â†’ comments are still lazy
 @Query("SELECT p FROM Post p LEFT JOIN p.comments c WHERE c.approved = true")
 List<Post> findApprovedCommentPosts(); // p.getComments() will still trigger lazy load!
 
-// âœ… JOIN FETCH → comments are loaded
+// Ã¢Å“â€¦ JOIN FETCH â†’ comments are loaded
 @Query("SELECT p FROM Post p LEFT JOIN FETCH p.comments")
 List<Post> findAllPostsWithComments(); // p.getComments() is already populated
 ```
@@ -840,7 +840,7 @@ List<Post> findAllPostsWithComments(); // p.getComments() is already populated
 Spring Data JPA provides `@CreatedDate`, `@LastModifiedDate`, `@CreatedBy`, and `@LastModifiedBy` annotations. Enable auditing with `@EnableJpaAuditing` and an `AuditorAware` bean.
 
 ```java
-// ── Enable auditing ──
+// â”€â”€ Enable auditing â”€â”€
 @Configuration
 @EnableJpaAuditing(auditorAwareRef = "auditorProvider")
 public class JpaConfig {
@@ -854,7 +854,7 @@ public class JpaConfig {
     }
 }
 
-// ── Base entity ──
+// â”€â”€ Base entity â”€â”€
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
 public abstract class BaseEntity {
@@ -874,7 +874,7 @@ public abstract class BaseEntity {
     private String lastModifiedBy;
 }
 
-// ── Usage ──
+// â”€â”€ Usage â”€â”€
 @Entity
 public class Product extends BaseEntity {
     @Id @GeneratedValue private Long id;
@@ -906,20 +906,20 @@ public class Document {
 
 **Answer:**
 
-OSIV keeps the Hibernate session open throughout the entire HTTP request, including during view rendering. This means lazy loading works in your templates → which sounds convenient → but it causes serious production problems.
+OSIV keeps the Hibernate session open throughout the entire HTTP request, including during view rendering. This means lazy loading works in your templates â†’ which sounds convenient â†’ but it causes serious production problems.
 
 ```yaml
-# Spring Boot default (enabled) → causes the anti-pattern:
+# Spring Boot default (enabled) â†’ causes the anti-pattern:
 
 > **Previous:** [REST API Interview Q&amp;A](./58-interview-rest-api.md) | **Next:** [Databases Interview Q&amp;A (cont.)](./59-interview-databases-a.md)
 spring:
   jpa:
-    open-in-view: true   # default is true → BAD for production
+    open-in-view: true   # default is true â†’ BAD for production
 ```
 
 Problems with OSIV:
 1. **Connection pool exhaustion**: The database connection is held for the entire request, including slow view rendering or network I/O. Each connection is unavailable for other requests.
-2. **Lazy loading in unexpected places**: Templates trigger N+1 queries silently → developers don't notice until production load.
+2. **Lazy loading in unexpected places**: Templates trigger N+1 queries silently â†’ developers don't notice until production load.
 3. **Transaction boundary confusion**: Developers think a transaction is open because entities are still accessible, but the transaction may have already committed.
 4. **Hard-to-debug performance issues**: A page that renders fine locally with 10 entities triggers 100 queries in production with real data.
 
@@ -941,7 +941,7 @@ public class OrderService {
         Order order = orderRepo.findByIdWithItemsAndCustomer(orderId);
         // All lazy associations are loaded inside the transaction
         // After this method returns, the session is closed
-        return OrderDto.from(order);  // DTO → no lazy loading during serialization
+        return OrderDto.from(order);  // DTO â†’ no lazy loading during serialization
     }
 }
 ```
@@ -962,7 +962,7 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
     List<Product> findByActiveTrue(Sort sort);
 }
 
-// ── Usage in service ──
+// â”€â”€ Usage in service â”€â”€
 @Service
 public class ProductService {
     public Page<ProductDto> getProductsByCategory(String category, int page, int size) {
@@ -976,7 +976,7 @@ public class ProductService {
     }
 }
 
-// ── REST controller with Spring MVC pagination ──
+// â”€â”€ REST controller with Spring MVC pagination â”€â”€
 @GetMapping("/products")
 public ResponseEntity<Page<ProductDto>> getProducts(
         @RequestParam(defaultValue = "0") int page,
@@ -1012,12 +1012,12 @@ Always set a maximum page size to prevent abuse: `@PageableDefault(size = 20, ma
 Specifications let you build dynamic, type-safe queries programmatically by composing `Specification` objects with logical operators. They are the JPA equivalent of the Query Object pattern.
 
 ```java
-// ── Step 1: Have your repository extend JpaSpecificationExecutor ──
+// â”€â”€ Step 1: Have your repository extend JpaSpecificationExecutor â”€â”€
 public interface UserRepository extends JpaRepository<User, Long>,
         JpaSpecificationExecutor<User> {
 }
 
-// ── Step 2: Create specification factory methods ──
+// â”€â”€ Step 2: Create specification factory methods â”€â”€
 public class UserSpecifications {
 
     public static Specification<User> hasName(String name) {
@@ -1049,7 +1049,7 @@ public class UserSpecifications {
     }
 }
 
-// ── Step 3: Compose specifications ──
+// â”€â”€ Step 3: Compose specifications â”€â”€
 @Service
 public class UserSearchService {
 
@@ -1084,7 +1084,7 @@ Use Specifications over `@Query` when:
 
 Multi-tenancy separates data across tenants (customers/organizations). Three approaches:
 
-**1. Separate Database** → each tenant has its own database:
+**1. Separate Database** â†’ each tenant has its own database:
 ```yaml
 # application.yml
 
@@ -1113,7 +1113,7 @@ public class TenantConnectionProvider
 }
 ```
 
-**2. Separate Schema** → same database, different schemas per tenant:
+**2. Separate Schema** â†’ same database, different schemas per tenant:
 ```java
 public class TenantSchemaResolver implements CurrentTenantIdentifierResolver {
     @Override
@@ -1125,7 +1125,7 @@ public class TenantSchemaResolver implements CurrentTenantIdentifierResolver {
 }
 ```
 
-**3. Discriminator Column** → same table, a `tenant_id` column on every row:
+**3. Discriminator Column** â†’ same table, a `tenant_id` column on every row:
 ```java
 @Entity
 @Where(clause = "tenant_id = current_tenant_id()")
@@ -1147,7 +1147,7 @@ public List<Document> getDocuments() {
 }
 ```
 
-Separate database is strongest isolation (best for compliance). Schema per tenant is a good middle ground. Discriminator column is simplest but riskiest → one bug can leak data between tenants. Never use discriminator-column tenancy for regulated data (HIPAA, GDPR financial).
+Separate database is strongest isolation (best for compliance). Schema per tenant is a good middle ground. Discriminator column is simplest but riskiest â†’ one bug can leak data between tenants. Never use discriminator-column tenancy for regulated data (HIPAA, GDPR financial).
 
 ---
 
@@ -1166,7 +1166,7 @@ Separate database is strongest isolation (best for compliance). Schema per tenan
 | Complexity | Simple | Moderate | Higher |
 
 ```java
-// ── NativeQuery: raw SQL, returns Object[] ──
+// â”€â”€ NativeQuery: raw SQL, returns Object[] â”€â”€
 @Query(value = "SELECT id, name, COUNT(*) OVER() as total " +
        "FROM users WHERE name ILIKE %:query% ORDER BY name " +
        "OFFSET :offset LIMIT :limit", nativeQuery = true)
@@ -1174,11 +1174,11 @@ List<Object[]> searchNative(@Param("query") String q,
                             @Param("offset") int offset,
                             @Param("limit") int limit);
 
-// ── JPQL: entity-based ──
+// â”€â”€ JPQL: entity-based â”€â”€
 @Query("SELECT u FROM User u WHERE u.name LIKE %:query% ORDER BY u.name")
 List<User> searchJpql(@Param("query") String q, Pageable pageable);
 
-// ── CriteriaQuery: programmatic, type-safe ──
+// â”€â”€ CriteriaQuery: programmatic, type-safe â”€â”€
 public List<User> searchCriteria(String name, String email, Boolean active) {
     CriteriaBuilder cb = em.getCriteriaBuilder();
     CriteriaQuery<User> cq = cb.createQuery(User.class);
@@ -1196,7 +1196,7 @@ public List<User> searchCriteria(String name, String email, Boolean active) {
 }
 ```
 
-Use NativeQuery for database-specific features (window functions, `ILike`, full-text search). Use JPQL for 80% of queries → it is expressive and portable. Use CriteriaQuery only when building dynamic queries with a combinatorial number of optional filters (but even then, Specifications are usually cleaner).
+Use NativeQuery for database-specific features (window functions, `ILike`, full-text search). Use JPQL for 80% of queries â†’ it is expressive and portable. Use CriteriaQuery only when building dynamic queries with a combinatorial number of optional filters (but even then, Specifications are usually cleaner).
 
 ---
 
@@ -1215,7 +1215,7 @@ Spring Data MongoDB follows the same repository pattern as JPA but maps document
 ```
 
 ```java
-// ── Document mapping ──
+// â”€â”€ Document mapping â”€â”€
 @Document(collection = "orders")
 public class Order {
     @Id private String id;
@@ -1226,7 +1226,7 @@ public class Order {
     private Address shippingAddress;
 }
 
-// ── Repository ──
+// â”€â”€ Repository â”€â”€
 public interface OrderRepository extends MongoRepository<Order, String> {
     List<Order> findByCustomerId(String customerId);
     List<Order> findByStatusOrderByOrderDateDesc(String status);
@@ -1247,9 +1247,9 @@ public interface OrderRepository extends MongoRepository<Order, String> {
 ```
 
 Key differences from JPA:
-- No joins → embed related data or reference by ID
+- No joins â†’ embed related data or reference by ID
 - No schema enforcement (unless you use schema validation)
-- Atomic operations on single documents only → no cross-document transactions (unless using replica sets)
+- Atomic operations on single documents only â†’ no cross-document transactions (unless using replica sets)
 - Indexes defined via `@Indexed`, `@CompoundIndex`, or programmatically
 
 ```java
@@ -1261,7 +1261,7 @@ public class Order {
     @Indexed
     private String customerId;
 
-    @Indexed(expireAfterSeconds = 7776000)  // TTL index → auto-delete after 90 days
+    @Indexed(expireAfterSeconds = 7776000)  // TTL index â†’ auto-delete after 90 days
     private LocalDateTime createdAt;
 }
 ```
@@ -1277,7 +1277,7 @@ Use MongoDB when your data is document-shaped (JSON-like, nested, varying schema
 
 Connection pooling reuses database connections instead of creating a new TCP connection for every request. Creating a connection is expensive (TCP handshake, SSL negotiation, authentication takes 10-100 ms). A pool maintains a set of open connections that are borrowed and returned.
 
-Spring Boot uses HikariCP by default → the fastest connection pool in the Java ecosystem.
+Spring Boot uses HikariCP by default â†’ the fastest connection pool in the Java ecosystem.
 
 ```yaml
 spring:
@@ -1299,8 +1299,8 @@ spring:
 Picking `maximum-pool-size`:
 - Formula: `(core_count * 2) + effective_spindle_count`
 - For a typical 8-core server: `(8 * 2) + 1 = 17`, rounded to 20
-- More connections do not mean more throughput → PostgreSQL (and most databases) scales poorly beyond 50-100 connections
-- Monitor `pool.Wait` time → if connections are waiting, increase the pool size gradually
+- More connections do not mean more throughput â†’ PostgreSQL (and most databases) scales poorly beyond 50-100 connections
+- Monitor `pool.Wait` time â†’ if connections are waiting, increase the pool size gradually
 
 ```java
 // Programmatic configuration (if needed):
@@ -1343,7 +1343,7 @@ Spring Boot's caching abstraction works with Redis as the backing store. Configu
 ```
 
 ```java
-// ── Configuration ──
+// â”€â”€ Configuration â”€â”€
 @Configuration
 @EnableCaching
 public class CacheConfig {
@@ -1362,7 +1362,7 @@ public class CacheConfig {
     }
 }
 
-// ── Usage ──
+// â”€â”€ Usage â”€â”€
 @Service
 public class ProductService {
 
@@ -1376,7 +1376,7 @@ public class ProductService {
     @CachePut(value = "products", key = "#product.id")
     public Product updateProduct(Product product) {
         return productRepo.save(product);
-        // Updates the cache → next read gets fresh data
+        // Updates the cache â†’ next read gets fresh data
     }
 
     @CacheEvict(value = "products", key = "#id")
@@ -1529,7 +1529,7 @@ The most impactful single change: **enable slow query logging in both Hibernate 
 Sharding (horizontal partitioning) splits a table across multiple database instances. Each shard holds a subset of rows based on a shard key. The application routes queries to the correct shard.
 
 ```java
-// ── Shard key routing with AbstractRoutingDataSource ──
+// â”€â”€ Shard key routing with AbstractRoutingDataSource â”€â”€
 public class ShardRouter {
     private final Map<String, DataSource> shards = Map.of(
         "shard-0", createDataSource("jdbc:postgresql://shard0.example.com:5432/db"),
@@ -1543,7 +1543,7 @@ public class ShardRouter {
     }
 }
 
-// ── Spring AbstractRoutingDataSource ──
+// â”€â”€ Spring AbstractRoutingDataSource â”€â”€
 public class TenantAwareRoutingSource extends AbstractRoutingDataSource {
     @Override
     protected Object determineCurrentLookupKey() {
@@ -1554,7 +1554,7 @@ public class TenantAwareRoutingSource extends AbstractRoutingDataSource {
 
 Key considerations:
 - Choose a shard key that evenly distributes data (user_id, tenant_id, region)
-- Cross-shard queries (JOINs across shards) are expensive or impossible → design aggregates per shard
+- Cross-shard queries (JOINs across shards) are expensive or impossible â†’ design aggregates per shard
 - Adding shards requires rebalancing or consistent hashing
 - Transactions cannot span shards (no distributed ACID without coordinator)
 - PostgreSQL Citus, MySQL Cluster, and Vitess provide automated sharding at the database layer
@@ -1571,7 +1571,7 @@ Sharding is the most complex scaling strategy. Exhaust read replicas, vertical s
 Use `@Transactional(readOnly = true)` to route read operations to a replica datasource. Implement this with `AbstractRoutingDataSource` and a `@Transactional` interceptor.
 
 ```java
-// ── Multi-datasource configuration ──
+// â”€â”€ Multi-datasource configuration â”€â”€
 @Configuration
 public class DataSourceConfig {
 
@@ -1599,7 +1599,7 @@ public class DataSourceConfig {
     }
 }
 
-// ── Routing datasource ──
+// â”€â”€ Routing datasource â”€â”€
 public class RoutingDataSource extends AbstractRoutingDataSource {
     @Override
     protected Object determineCurrentLookupKey() {
@@ -1608,7 +1608,7 @@ public class RoutingDataSource extends AbstractRoutingDataSource {
     }
 }
 
-// ── Usage ──
+// â”€â”€ Usage â”€â”€
 @Service
 public class UserService {
     @Transactional(readOnly = true)  // routes to REPLICA
@@ -1620,7 +1620,7 @@ public class UserService {
 ```
 
 Caveats:
-- Replica lag means read-after-write consistency is not guaranteed → a user may not see their own saved data immediately
+- Replica lag means read-after-write consistency is not guaranteed â†’ a user may not see their own saved data immediately
 - Use `@Transactional(readOnly = true)` only on queries where stale data is acceptable
 - For read-your-writes consistency, use the primary datasource within the same transaction
 - Connection pooling needs separate pools for primary and replica
@@ -1640,27 +1640,27 @@ public class Author {
     @Id @GeneratedValue private Long id;
     private String name;
 
-    // ── ALL: persist, merge, remove, refresh, detach ──
+    // â”€â”€ ALL: persist, merge, remove, refresh, detach â”€â”€
     @OneToMany(mappedBy = "author", cascade = CascadeType.ALL)
     private List<Book> books;
 
-    // ── PERSIST: saving Author saves Books ──
+    // â”€â”€ PERSIST: saving Author saves Books â”€â”€
     @OneToMany(mappedBy = "author", cascade = CascadeType.PERSIST)
     private List<Article> articles;
 
-    // ── MERGE: updating Author updates Books ──
+    // â”€â”€ MERGE: updating Author updates Books â”€â”€
     @OneToMany(mappedBy = "author", cascade = CascadeType.MERGE)
     private List<Book> editedBooks;
 
-    // ── REMOVE: deleting Author deletes Books ──
+    // â”€â”€ REMOVE: deleting Author deletes Books â”€â”€
     @OneToMany(mappedBy = "author", cascade = CascadeType.REMOVE)
     private List<Book> coAuthoredBooks;
 
-    // ── DETACH: detaching Author detaches Books ──
+    // â”€â”€ DETACH: detaching Author detaches Books â”€â”€
     @OneToMany(mappedBy = "author", cascade = CascadeType.DETACH)
     private List<Book> reviewedBooks;
 
-    // ── REFRESH: refreshing Author refreshes Books ──
+    // â”€â”€ REFRESH: refreshing Author refreshes Books â”€â”€
     @OneToMany(mappedBy = "author", cascade = CascadeType.REFRESH)
     private List<Book> proofreadBooks;
 }
@@ -1687,7 +1687,7 @@ INSERT INTO book (title, author_id) VALUES ('AI Engineering 101', 1);
 INSERT INTO book (title, author_id) VALUES ('Spring Boot in Practice', 1);
 ```
 
-Use `CascadeType.ALL` only when the child entity has no independent lifecycle. Never cascade `ALL` on `@ManyToMany` → it can delete entities that belong to other owners. Use `PERSIST` + `MERGE` for most `@OneToMany` relationships.
+Use `CascadeType.ALL` only when the child entity has no independent lifecycle. Never cascade `ALL` on `@ManyToMany` â†’ it can delete entities that belong to other owners. Use `PERSIST` + `MERGE` for most `@OneToMany` relationships.
 
 ---
 
@@ -1699,7 +1699,7 @@ Use `CascadeType.ALL` only when the child entity has no independent lifecycle. N
 `@Embedded` maps the fields of an embeddable class directly into the parent table (flat schema). `@OneToOne` creates a separate table with a foreign key relationship.
 
 ```java
-// ── @Embedded → fields in the same table ──
+// â”€â”€ @Embedded â†’ fields in the same table â”€â”€
 @Embeddable
 public class Address {
     private String street;
@@ -1714,12 +1714,12 @@ public class User {
     private String name;
 
     @Embedded
-    private Address address;  // columns: street, city, zip_code, country → in the users table
+    private Address address;  // columns: street, city, zip_code, country â†’ in the users table
 }
 
 // Result: single table "users" with columns: id, name, street, city, zip_code, country
 
-// ── @OneToOne → separate table with FK ──
+// â”€â”€ @OneToOne â†’ separate table with FK â”€â”€
 @Entity
 public class Profile {
     @Id private Long id;
@@ -1764,7 +1764,7 @@ private Address homeAddress;
 Batch processing inserts or updates thousands of rows efficiently by batching JDBC statements and flushing periodically.
 
 ```java
-// ── Configuration ──
+// â”€â”€ Configuration â”€â”€
 spring:
   jpa:
     properties:
@@ -1775,7 +1775,7 @@ spring:
         order_updates: true
         batch_versioned_data: true
 
-// ── Batch insert service ──
+// â”€â”€ Batch insert service â”€â”€
 @Service
 public class BatchImportService {
 
@@ -1793,7 +1793,7 @@ public class BatchImportService {
 
             if (i > 0 && i % batchSize == 0) {
                 em.flush();
-                em.clear();  // detaches all managed entities → frees memory
+                em.clear();  // detaches all managed entities â†’ frees memory
             }
         }
         em.flush();
@@ -1814,8 +1814,8 @@ For updates, `order_updates=true` groups statements by entity type:
 ```java
 @Transactional
 public void bulkStatusUpdate(List<Long> ids, String newStatus) {
-    // âŒ Without batching: N separate UPDATEs (one per entity)
-    // âœ… With order_updates: batched UPDATE ... WHERE id IN (...)
+    // Ã¢ÂÅ’ Without batching: N separate UPDATEs (one per entity)
+    // Ã¢Å“â€¦ With order_updates: batched UPDATE ... WHERE id IN (...)
 
     for (Long id : ids) {
         User u = em.find(User.class, id);
@@ -1832,7 +1832,7 @@ For truly large datasets (100K+ rows), use JDBC batch updates directly or a bulk
 @Query("UPDATE User u SET u.status = :status WHERE u.id IN :ids")
 int bulkUpdateStatus(@Param("ids") List<Long> ids, @Param("status") String status);
 
-// Returns the number of updated rows → no entity loading needed
+// Returns the number of updated rows â†’ no entity loading needed
 ```
 
 ---
@@ -1856,32 +1856,32 @@ CREATE INDEX idx_users_email ON users(email);
 CREATE INDEX idx_orders_user_status ON orders(user_id, status);
 -- Supports: WHERE user_id = ?  (uses first column)
 -- Supports: WHERE user_id = ? AND status = ?  (full index)
--- Does NOT support: WHERE status = ?  (cannot use index → status is second column)
+-- Does NOT support: WHERE status = ?  (cannot use index â†’ status is second column)
 
 -- Column order matters: put equality filters first, range filters last
 CREATE INDEX idx_orders_date_status ON orders(order_date, status);
--- WHERE order_date > '2024-01-01' AND status = 'ACTIVE'  → partial index usage (date column only)
+-- WHERE order_date > '2024-01-01' AND status = 'ACTIVE'  â†’ partial index usage (date column only)
 -- Better: put the equality column first
 CREATE INDEX idx_orders_status_date ON orders(status, order_date);
 ```
 
-**Partial index** (index only a subset of rows → smaller, faster):
+**Partial index** (index only a subset of rows â†’ smaller, faster):
 ```sql
 CREATE INDEX idx_active_users ON users(email) WHERE active = true;
--- Only indexes active users → 70% smaller if 30% of users are active
+-- Only indexes active users â†’ 70% smaller if 30% of users are active
 ```
 
-**Covering index** (includes all needed columns → no table lookup):
+**Covering index** (includes all needed columns â†’ no table lookup):
 ```sql
 CREATE INDEX idx_orders_covering ON orders(user_id, status, total, created_at);
 -- SELECT status, total FROM orders WHERE user_id = 123 ORDER BY created_at DESC
--- Entire query satisfied from index → zero table page reads
+-- Entire query satisfied from index â†’ zero table page reads
 ```
 
 **GIN index** (for JSONB, full-text search, arrays):
 ```sql
 CREATE INDEX idx_metadata ON products USING GIN (metadata jsonb_path_ops);
--- SELECT * FROM products WHERE metadata @> '{"color": "red"}'  → fast JSON containment search
+-- SELECT * FROM products WHERE metadata @> '{"color": "red"}'  â†’ fast JSON containment search
 ```
 
 **Indexing checklist per query:**
@@ -1912,8 +1912,8 @@ public class UserService {
         User u1 = userRepo.findById(id).orElseThrow();
         u1.setName(newName);
 
-        User u2 = userRepo.findById(id).orElseThrow();  // L1 cache hit → no SQL
-        System.out.println(u1 == u2);  // true → same Java object
+        User u2 = userRepo.findById(id).orElseThrow();  // L1 cache hit â†’ no SQL
+        System.out.println(u1 == u2);  // true â†’ same Java object
 
         u2.setEmail(newEmail);
 
@@ -1929,12 +1929,12 @@ Implications:
 2. **Dirty checking**: On flush, Hibernate compares every managed entity's current state with its snapshot. Changed fields generate UPDATE statements.
 3. **Read-after-write consistency**: Within the same transaction, you always see your own writes because the L1 cache serves the entity.
 
-Common mistake → calling `save()` is unnecessary for managed entities:
+Common mistake â†’ calling `save()` is unnecessary for managed entities:
 ```java
 @Transactional
 public void updateName(Long id, String name) {
     User u = userRepo.findById(id).orElseThrow();  // managed
-    u.setName(name);  // no save() needed → Hibernate auto-detects the change on flush
+    u.setName(name);  // no save() needed â†’ Hibernate auto-detects the change on flush
     // Hibernate generates: UPDATE users SET name = ? WHERE id = ?
 }
 ```
@@ -1952,7 +1952,7 @@ Database rollbacks are more complex than code rollbacks because the schema chang
 Every migration must have a corresponding "down" migration that reverses the change.
 
 ```java
-// ── Flyway with callback for rollback support ──
+// â”€â”€ Flyway with callback for rollback support â”€â”€
 public class FlywayRollbackService {
     public void undoLastMigration() {
         Flyway flyway = Flyway.configure()
@@ -1963,7 +1963,7 @@ public class FlywayRollbackService {
         var applied = flyway.info().applied();
         MigrationInfo last = applied[applied.length - 1];
 
-        // Execute the undo script (V{version}__{description}.sql → V{version}__{description}__undo.sql)
+        // Execute the undo script (V{version}__{description}.sql â†’ V{version}__{description}__undo.sql)
         String undoScript = "db/undomigrations/" + last.getVersion() + "__undo.sql";
         Resource undo = new ClassPathResource(undoScript);
         if (undo.exists()) {
@@ -1978,9 +1978,9 @@ DELETE FROM flyway_schema_history WHERE version = '2';
 ```
 
 **2. Expand-contract pattern (zero-downtime):**
-Phase 1 → expand: Add the new column/table. Both old and new code can run simultaneously.
-Phase 2 → migrate: Backfill data. Deploy new code that uses the new schema.
-Phase 3 → contract: Remove the old column/table after confirming the new code works.
+Phase 1 â†’ expand: Add the new column/table. Both old and new code can run simultaneously.
+Phase 2 â†’ migrate: Backfill data. Deploy new code that uses the new schema.
+Phase 3 â†’ contract: Remove the old column/table after confirming the new code works.
 
 ```sql
 -- Phase 1 (expand): Add nullable column

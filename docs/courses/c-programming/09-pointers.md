@@ -1,4 +1,4 @@
-# Chapter 9: Pointers
+﻿# Chapter 9: Pointers
 
 > **Previous:** [Functions](./08-functions.md) | **Next:** [Structures and Unions](./10-structures-unions.md)
 
@@ -19,16 +19,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/09-pointers/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/c-programming/09-pointers/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/09-pointers/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/c-programming/09-pointers/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/09-pointers/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/c-programming/09-pointers/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/09-pointers/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/c-programming/09-pointers/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/09-pointers/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/c-programming/09-pointers/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/09-pointers/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/c-programming/09-pointers/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -50,7 +50,7 @@ Before studying this chapter you should be familiar with:
 |-------|-------------|-------------------|
 | Pointer Basics | A pointer stores the memory address of another variable | Declare with `type *ptr;` and get an address with `&` |
 | Dereferencing | `*ptr` accesses the value at the stored address | Dereferencing an uninitialized or NULL pointer is undefined behavior |
-| Pointer Arithmetic | Adding N to a pointer advances by N × sizeof(type) | `ptr++` moves to the next element of the pointed-to type |
+| Pointer Arithmetic | Adding N to a pointer advances by N Ã— sizeof(type) | `ptr++` moves to the next element of the pointed-to type |
 | Array-Pointer Duality | Array names decay to pointers; `arr[i]` is `*(arr + i)` | The subscript operator works via pointer arithmetic |
 | Pointer to Array | A pointer that targets an entire array (`int (*p)[N]`) | `&arr + 1` skips the whole array, not just one element |
 | Array of Pointers | An array whose elements are pointers (`char *arr[N]`) | Used for string arrays, argv-style argument lists |
@@ -104,11 +104,11 @@ Think of memory as a large apartment building. Each apartment (variable) has a u
 ### Numbered Steps
 
 
-1. **Choose the target type** — the type of data the pointer will point to (e.g., `int`, `char`, `double`).
-2. **Write the type followed by `*` and the pointer name** — `int *p;` declares `p` as a pointer to `int`.
-3. **Obtain the address of a target variable** using the `&` operator — `&x` yields the memory address of `x`.
-4. **Assign the address to the pointer** — `p = &x;` stores the address in `p`.
-5. **Optionally combine steps 2 and 4** — `int *p = &x;` declares and initializes in one statement.
+1. **Choose the target type** â€” the type of data the pointer will point to (e.g., `int`, `char`, `double`).
+2. **Write the type followed by `*` and the pointer name** â€” `int *p;` declares `p` as a pointer to `int`.
+3. **Obtain the address of a target variable** using the `&` operator â€” `&x` yields the memory address of `x`.
+4. **Assign the address to the pointer** â€” `p = &x;` stores the address in `p`.
+5. **Optionally combine steps 2 and 4** â€” `int *p = &x;` declares and initializes in one statement.
 
 ```c
 int x = 42;       /* Step 1: create the target variable */
@@ -141,8 +141,8 @@ Assume `x` is stored at address `0x1000` and occupies bytes `0x1000-0x1003` (4-b
 
 | Step | Instruction | x (0x1000) | p (0x2000) | *p | Notes |
 |------|-------------|-----------|-----------|-----|-------|
-| 1 | `int x = 42;` | `42` | uninitialized | — | Memory at 0x1000 contains 42 |
-| 2 | `int *p;` | `42` | `0xDEADBEEF` (garbage) | — | p holds whatever was at 0x2000 |
+| 1 | `int x = 42;` | `42` | uninitialized | â€” | Memory at 0x1000 contains 42 |
+| 2 | `int *p;` | `42` | `0xDEADBEEF` (garbage) | â€” | p holds whatever was at 0x2000 |
 | 3 | `p = &x;` | `42` | `0x00001000` | `42` | p now holds address of x |
 | 4 | `*p = 100;` | `100` | `0x00001000` | `100` | Dereference writes 100 to x |
 | 5 | `printf("%d", *p);` | `100` | `0x00001000` | `100` | Reads 100 from x |
@@ -203,12 +203,12 @@ After *p = 100, x = 100
 ### Edge Cases
 
 
-- **Uninitialized pointer:** `int *p; *p = 42;` — dereferences garbage address leads to undefined behavior
-- **NULL dereference:** `int *p = NULL; *p = 42;` — segmentation fault on most systems
+- **Uninitialized pointer:** `int *p; *p = 42;` â€” dereferences garbage address leads to undefined behavior
+- **NULL dereference:** `int *p = NULL; *p = 42;` â€” segmentation fault on most systems
 - **Multiple declarations:** `int* p, q;` declares `p` as pointer, `q` as plain int
-- **Correct multi-declaration:** `int *p, *q;` — both are pointers
+- **Correct multi-declaration:** `int *p, *q;` â€” both are pointers
 
-> **One-Sentence Takeaway:** A pointer is a variable whose value is a memory address — & gets an address, * accesses the value.
+> **One-Sentence Takeaway:** A pointer is a variable whose value is a memory address â€” & gets an address, * accesses the value.
 
 ---
 
@@ -219,8 +219,8 @@ After *p = 100, x = 100
 
 | Operator | Real-World Analogy |
 |----------|-------------------|
-| `&` | Asking "What is your address?" — gives you the location |
-| `*` | Going to that address and opening the door — gives you what is inside |
+| `&` | Asking "What is your address?" â€” gives you the location |
+| `*` | Going to that address and opening the door â€” gives you what is inside |
 
 If your friend lives in Apartment 5B, `&friend` returns `"5B"` and `*ptr_to_friend` walks into Apartment 5B and sees your friend.
 
@@ -230,7 +230,7 @@ If your friend lives in Apartment 5B, `&friend` returns `"5B"` and `*ptr_to_frie
 1. **Using `&`:** Precede any variable with `&` to obtain its memory address: `int *p = &x;`
 2. **Using `*` on the left of assignment (write):** `*p = new_value;` modifies the variable p points to
 3. **Using `*` on the right of assignment (read):** `int val = *p;` reads the value p points to
-4. **Chaining:** `*&x` is equivalent to `x` — the operators cancel out
+4. **Chaining:** `*&x` is equivalent to `x` â€” the operators cancel out
 
 ### Pseudocode
 
@@ -254,7 +254,7 @@ int *ptr = &a;
 
 | Step | Instruction | a | b | ptr | *ptr |
 |------|-------------|---|---|-----|------|
-| 1 | `int a = 10, b = 20;` | `10` | `20` | — | — |
+| 1 | `int a = 10, b = 20;` | `10` | `20` | â€” | â€” |
 | 2 | `int *ptr = &a;` | `10` | `20` | `addr(a)` | `10` |
 | 3 | `*ptr = 99;` | `99` | `20` | `addr(a)` | `99` |
 | 4 | `ptr = &b;` | `99` | `20` | `addr(b)` | `20` |
@@ -318,11 +318,11 @@ pp  = 0x7fff5fbff710  (same as &p)
 ### Edge Cases
 
 
-- `*NULL` — dereferencing NULL is undefined behavior
-- `*uninitialized_pointer` — dereferences garbage address
-- `*cast_address` — `*(int*)0x1000` assumes address is valid and accessible
-- `&register_variable` — cannot take address of a `register` variable
-- `&bitfield` — cannot take address of a bit-field member
+- `*NULL` â€” dereferencing NULL is undefined behavior
+- `*uninitialized_pointer` â€” dereferences garbage address
+- `*cast_address` â€” `*(int*)0x1000` assumes address is valid and accessible
+- `&register_variable` â€” cannot take address of a `register` variable
+- `&bitfield` â€” cannot take address of a bit-field member
 
 > **One-Sentence Takeaway:** The & operator yields the address of its operand; the * operator accesses the value at the stored address; they are inverses.
 
@@ -333,7 +333,7 @@ pp  = 0x7fff5fbff710  (same as &p)
 ### Real-World Analogy
 
 
-A pointer is an apartment number on a long hallway. Adding 1 to the apartment number does not just increment by 1 — it moves to the *next apartment*. If each apartment is 100 square feet, moving one apartment over means advancing 100 feet down the hall, not 1 foot. Similarly, `p + 1` advances by `sizeof(*p)` bytes, not 1 byte.
+A pointer is an apartment number on a long hallway. Adding 1 to the apartment number does not just increment by 1 â€” it moves to the *next apartment*. If each apartment is 100 square feet, moving one apartment over means advancing 100 feet down the hall, not 1 foot. Similarly, `p + 1` advances by `sizeof(*p)` bytes, not 1 byte.
 
 ### Numbered Steps
 
@@ -342,7 +342,7 @@ A pointer is an apartment number on a long hallway. Adding 1 to the apartment nu
 2. **Identify the size of the pointed-to type** using `sizeof(*p)`.
 3. **To advance N elements**, compute `p + N` which adds `N * sizeof(*p)` bytes to the base address.
 4. **To compute the difference**, compute `p - q` which returns the number of elements between the two pointers (type `ptrdiff_t`).
-5. **Always verify bounds** — arithmetic beyond allocated memory (except one-past-the-end) is undefined behavior.
+5. **Always verify bounds** â€” arithmetic beyond allocated memory (except one-past-the-end) is undefined behavior.
 
 ### Pointer Arithmetic Rules
 
@@ -370,21 +370,21 @@ FUNCTION pointer_difference(p, q):
     RETURN element_count
 ```
 
-### Dry Run Trace Table — Full Walkthrough
+### Dry Run Trace Table â€” Full Walkthrough
 
 
 Assume `int arr[] = {10, 20, 30, 40, 50}` starting at address `0x1000` and `sizeof(int) = 4`.
 
 | Step | Expression | Address Calculation | Result Address | Value *(expr) | Notes |
 |------|-----------|-------------------|---------------|--------------|-------|
-| 1 | `int *p = arr;` | — | `0x1000` | `10` | p points to arr[0] |
+| 1 | `int *p = arr;` | â€” | `0x1000` | `10` | p points to arr[0] |
 | 2 | `p + 1` | `0x1000 + 1*4 = 0x1004` | `0x1004` | `20` | Next int element |
 | 3 | `p + 2` | `0x1000 + 2*4 = 0x1008` | `0x1008` | `30` | Two elements ahead |
 | 4 | `p + 3` | `0x1000 + 3*4 = 0x100C` | `0x100C` | `40` | Three elements ahead |
 | 5 | `p + 4` | `0x1000 + 4*4 = 0x1010` | `0x1010` | `50` | Last element |
 | 6 | `p + 5` | `0x1000 + 5*4 = 0x1014` | `0x1014` | Undefined | Past the end |
-| 7 | `p++` (post) | — | `0x1004` (after) | `20` | Read then advance |
-| 8 | `++p` (pre) | — | `0x1008` (after) | `30` | Advance then read |
+| 7 | `p++` (post) | â€” | `0x1004` (after) | `20` | Read then advance |
+| 8 | `++p` (pre) | â€” | `0x1008` (after) | `30` | Advance then read |
 
 ### Complete Code Examples
 
@@ -494,7 +494,7 @@ int main(void)
 
 | Advantages | Disadvantages |
 |------------|--------------|
-| Efficient sequential access | No bounds checking — out of bounds leads to UB |
+| Efficient sequential access | No bounds checking â€” out of bounds leads to UB |
 | Equivalent to array indexing | Arithmetic on different arrays is undefined |
 | Enables low-level memory manipulation | sizeof scaling can be confusing for beginners |
 | Used by all standard library memory functions | Pointer overflow is not detected |
@@ -509,7 +509,7 @@ int main(void)
 - **Different array subtraction:** `p_from_arrA - q_from_arrB` leads to undefined behavior
 - **void pointer arithmetic:** Not allowed in standard C (GCC extension treats it as byte-sized)
 
-> **One-Sentence Takeaway:** Pointer arithmetic automatically scales by sizeof(pointed-type) — p+N advances by N*sizeof(*p) bytes.
+> **One-Sentence Takeaway:** Pointer arithmetic automatically scales by sizeof(pointed-type) â€” p+N advances by N*sizeof(*p) bytes.
 > **Warning:** Dereferencing a pointer beyond allocated memory or performing arithmetic on pointers from different objects is undefined behavior.
 
 ---
@@ -519,7 +519,7 @@ int main(void)
 ### Real-World Analogy
 
 
-An array name is like the address of a street. If you live on "Oak Street", the name refers to the entire street. But when you tell a taxi driver your address, you give the street name and it points to the start of the street. Similarly, `arr` in C decays to `&arr[0]` in most contexts — it gives the starting address. Walking down the street is like pointer arithmetic: "Oak Street + 3 houses" gets you to the fourth house.
+An array name is like the address of a street. If you live on "Oak Street", the name refers to the entire street. But when you tell a taxi driver your address, you give the street name and it points to the start of the street. Similarly, `arr` in C decays to `&arr[0]` in most contexts â€” it gives the starting address. Walking down the street is like pointer arithmetic: "Oak Street + 3 houses" gets you to the fourth house.
 
 ### Numbered Steps
 
@@ -552,14 +552,14 @@ Assume `int arr[3] = {10, 20, 30}` at address `0x1000`.
 
 | Expression | Type | Address Computed | Raw Address | Dereferenced Value |
 |-----------|------|-----------------|------------|------------------|
-| `arr` | `int*` | — | `0x1000` | `10` |
+| `arr` | `int*` | â€” | `0x1000` | `10` |
 | `arr + 1` | `int*` | `0x1000 + 1*4` | `0x1004` | `20` |
 | `arr + 2` | `int*` | `0x1000 + 2*4` | `0x1008` | `30` |
-| `&arr` | `int(*)[3]` | — | `0x1000` | `{10,20,30}` |
+| `&arr` | `int(*)[3]` | â€” | `0x1000` | `{10,20,30}` |
 | `&arr + 1` | `int(*)[3]` | `0x1000 + 1*12` | `0x100C` | next object |
-| `&arr[0]` | `int*` | — | `0x1000` | `10` |
-| `arr[0]` | `int` | — | — | `10` |
-| `*(arr + 1)` | `int` | — | — | `20` |
+| `&arr[0]` | `int*` | â€” | `0x1000` | `10` |
+| `arr[0]` | `int` | â€” | â€” | `10` |
+| `*(arr + 1)` | `int` | â€” | â€” | `20` |
 
 ### Complete Code Example
 
@@ -636,7 +636,7 @@ int *q = arr;          /* valid: pointer to int (decayed) */
 |-----------|------|-------|-------|
 | Array indexing arr[i] | O(1) | O(1) | *(base + i * sizeof) |
 | Pointer dereference | O(1) | O(1) | Single memory access |
-| sizeof(arr) | O(1) | — | Compile-time constant |
+| sizeof(arr) | O(1) | â€” | Compile-time constant |
 
 ### Advantages and Disadvantages
 
@@ -653,12 +653,12 @@ int *q = arr;          /* valid: pointer to int (decayed) */
 
 - `sizeof(arr)` gives array size (in bytes), not pointer size
 - `&arr + 1` skips the entire array, not just one element
-- `arr++` is invalid — array name is not a modifiable lvalue
-- Decay to pointer loses size information — must track length separately
+- `arr++` is invalid â€” array name is not a modifiable lvalue
+- Decay to pointer loses size information â€” must track length separately
 - Function parameters declared as `int arr[]` are actually `int*`
 
 > **One-Sentence Takeaway:** In most contexts arr decays to &arr[0]; arr[i] is defined as *(arr + i); arr + 1 and &arr + 1 advance by different amounts.
-> **Pro Tip:** When you pass an array to a function, its size is lost — always pass the length as a separate parameter.
+> **Pro Tip:** When you pass an array to a function, its size is lost â€” always pass the length as a separate parameter.
 ---
 
 ## 9.5 Pointer to Array vs Array of Pointers
@@ -666,7 +666,7 @@ int *q = arr;          /* valid: pointer to int (decayed) */
 ### Real-World Analogy
 
 
-- **Pointer to array:** A single sticky note that references an entire row of lockers. The note says "Row B" — you look at the row as a whole unit.
+- **Pointer to array:** A single sticky note that references an entire row of lockers. The note says "Row B" â€” you look at the row as a whole unit.
 - **Array of pointers:** A row of sticky notes, each pointing to a different locker. This is like a filing cabinet where each drawer contains a folder label pointing to the actual files stored elsewhere.
 
 ### 9.5.1 Pointer to Array
@@ -679,14 +679,14 @@ int arr[5] = {1, 2, 3, 4, 5};
 int (*p)[5] = &arr;   /* p is a pointer to an array of 5 ints */
 ```
 
-Syntax breakdown: `int (*p)[5]` — parentheses are required. Without them, `int *p[5]` becomes an array of 5 pointers.
+Syntax breakdown: `int (*p)[5]` â€” parentheses are required. Without them, `int *p[5]` becomes an array of 5 pointers.
 
 ### Numbered Steps
 
 
 1. **Declare the array:** `int arr[5] = {1,2,3,4,5};`
 2. **Take the address of the whole array:** `&arr` yields `int(*)[5]`, not `int*`.
-3. **Declare a pointer-to-array:** `int (*p)[5] = &arr;` — `p` points to the whole array.
+3. **Declare a pointer-to-array:** `int (*p)[5] = &arr;` â€” `p` points to the whole array.
 4. **Access elements:** `(*p)[i]` dereferences `p` (getting the array) and indexes into it.
 
 ```c
@@ -809,8 +809,8 @@ ap[2] = &data[2];
 | Expression | pa (int(*)[3]) | ap (int*[3]) | (*pa)[i] | *ap[i] |
 |-----------|---------------|-------------|---------|-------|
 | `pa + 0`, `ap[0]` | addr of data | {addr[0],?,?} | `10` | `10` |
-| `(*pa)[1]`, `*ap[1]` | — | — | `20` | `20` |
-| `pa + 1` | data + 12 bytes | — | out of bounds | — |
+| `(*pa)[1]`, `*ap[1]` | â€” | â€” | `20` | `20` |
+| `pa + 1` | data + 12 bytes | â€” | out of bounds | â€” |
 
 ### Complexity Analysis
 
@@ -820,7 +820,7 @@ ap[2] = &data[2];
 | Access (*p)[i] | O(1) | O(1) | Dereference then index |
 | Access *p[i] | O(1) | O(1) | Index then dereference |
 
-> **One-Sentence Takeaway:** `int (*p)[N]` is a pointer to an array of N ints; `int *p[N]` is an array of N pointers to int — they are fundamentally different types.
+> **One-Sentence Takeaway:** `int (*p)[N]` is a pointer to an array of N ints; `int *p[N]` is an array of N pointers to int â€” they are fundamentally different types.
 
 ---
 
@@ -834,7 +834,7 @@ A pointer to pointer is like a receptionist who holds a sticky note with *your* 
 - Receptionist reads your business card (dereferences second pointer)
 - Now they have your address
 
-This is `**ptr` — first `*` gets the intermediate pointer, second `*` gets the final value.
+This is `**ptr` â€” first `*` gets the intermediate pointer, second `*` gets the final value.
 
 ### Numbered Steps
 
@@ -842,8 +842,8 @@ This is `**ptr` — first `*` gets the intermediate pointer, second `*` gets the
 1. **Declare a target variable:** `int x = 42;`
 2. **Declare a pointer to x:** `int *p = &x;`
 3. **Declare a pointer to p:** `int **pp = &p;`
-4. **Dereference once:** `*pp` gives the value of `p` — which is the address of `x`
-5. **Dereference twice:** `**pp` gives the value of `x` — which is `42`
+4. **Dereference once:** `*pp` gives the value of `p` â€” which is the address of `x`
+5. **Dereference twice:** `**pp` gives the value of `x` â€” which is `42`
 
 ### Pseudocode
 
@@ -863,15 +863,15 @@ READ **pp    -> returns the value 42 (same as *p and x)
 SET **pp = 99  -> x is now 99
 ```
 
-### Dry Run Trace Table — Full Dereference Chain
+### Dry Run Trace Table â€” Full Dereference Chain
 
 
 Assume addresses: x at `0x1000`, p at `0x2000`, pp at `0x3000`.
 
 | Step | Code | x (0x1000) | p (0x2000) | pp (0x3000) | *p | *pp | **pp |
 |------|------|-----------|-----------|------------|-----|-----|------|
-| 1 | `int x = 42;` | `42` | — | — | — | — | — |
-| 2 | `int *p = &x;` | `42` | `0x1000` | — | `42` | — | — |
+| 1 | `int x = 42;` | `42` | â€” | â€” | â€” | â€” | â€” |
+| 2 | `int *p = &x;` | `42` | `0x1000` | â€” | `42` | â€” | â€” |
 | 3 | `int **pp = &p;` | `42` | `0x1000` | `0x2000` | `42` | `0x1000` | `42` |
 | 4 | `**pp = 99;` | `99` | `0x1000` | `0x2000` | `99` | `0x1000` | `99` |
 | 5 | `*pp = NULL;` | `99` | `NULL` | `0x2000` | ERROR | `NULL` | ERROR |
@@ -1016,10 +1016,10 @@ After:  p1->20, p2->10
 ### Edge Cases
 
 
-- `**pp` where `pp = NULL` — dereference NULL leads to crash
-- `**pp` where `*pp = NULL` — first dereference works, second crashes
-- Triple pointer `***ppp` — possible but rarely needed beyond 2 levels
-- Memory leak when allocating jagged arrays — must free each row individually
+- `**pp` where `pp = NULL` â€” dereference NULL leads to crash
+- `**pp` where `*pp = NULL` â€” first dereference works, second crashes
+- Triple pointer `***ppp` â€” possible but rarely needed beyond 2 levels
+- Memory leak when allocating jagged arrays â€” must free each row individually
 
 > **One-Sentence Takeaway:** A double pointer (int**) stores the address of a pointer; **pp dereferences twice to reach the original variable.
 
@@ -1030,14 +1030,14 @@ After:  p1->20, p2->10
 ### Real-World Analogy
 
 
-A function pointer is like a remote control button. You can program the "action" button to do different things — play music, turn on lights, or start the coffee maker. The button label stays the same, but the function it triggers changes. Similarly, a function pointer lets you decide at runtime which function to call.
+A function pointer is like a remote control button. You can program the "action" button to do different things â€” play music, turn on lights, or start the coffee maker. The button label stays the same, but the function it triggers changes. Similarly, a function pointer lets you decide at runtime which function to call.
 
 ### Numbered Steps
 
 
 1. **Identify the function signature:** `int add(int a, int b)` returns `int`, takes two `int` parameters.
-2. **Write the pointer syntax:** `int (*ptr)(int, int)` — parentheses around `*ptr` are mandatory.
-3. **Assign a function address:** `ptr = add;` (or `ptr = &add;` — the `&` is optional).
+2. **Write the pointer syntax:** `int (*ptr)(int, int)` â€” parentheses around `*ptr` are mandatory.
+3. **Assign a function address:** `ptr = add;` (or `ptr = &add;` â€” the `&` is optional).
 4. **Call through the pointer:** `result = ptr(5, 3);` (or `result = (*ptr)(5, 3);`).
 
 ### Syntax Breakdown
@@ -1206,7 +1206,7 @@ Squared: 4 16 36 64 100
 
 - **NULL function pointer:** Calling a NULL function pointer leads to segmentation fault
 - **Signature mismatch:** Assigning a function with wrong signature leads to undefined behavior
-- **Returning function pointers:** `int (*get_op(char c))(int,int)` — readability suffers
+- **Returning function pointers:** `int (*get_op(char c))(int,int)` â€” readability suffers
 - **typedef helps:** `typedef int (*op_t)(int,int);` simplifies declarations
 
 > **One-Sentence Takeaway:** Function pointers store the address of a function, enabling callbacks, dispatch tables, and runtime polymorphism without OOP.
@@ -1227,7 +1227,7 @@ A void pointer is like a universal mailbox key. The key fits any mailbox (can po
 
 1. **Declare a void pointer:** `void *ptr;`
 2. **Assign any address:** `ptr = &x;` where x can be int, double, char, struct, etc.
-3. **Cast before dereferencing:** `int val = *(int*)ptr;` — the cast tells the compiler the type.
+3. **Cast before dereferencing:** `int val = *(int*)ptr;` â€” the cast tells the compiler the type.
 4. **Use with standard functions:** `malloc()`, `memcpy()`, `qsort()` all return or accept `void*`.
 
 ### Pseudocode
@@ -1328,7 +1328,7 @@ double: 9.9 1.5
 
 
 - **void pointer arithmetic:** Not allowed in standard C (unknown size). GCC extension allows it (treated as byte-sized)
-- **Dereferencing void*:** Not allowed without cast — compilation error
+- **Dereferencing void*:** Not allowed without cast â€” compilation error
 - **sizeof(void):** Not defined in standard C (GCC extension: 1)
 - **Pointer to function vs void*:** The C standard does not guarantee conversion between `void*` and function pointers
 
@@ -1343,12 +1343,12 @@ A NULL pointer is a pointer that explicitly points to nothing. It is a defined c
 ### Real-World Analogy
 
 
-A NULL pointer is like a business card that is intentionally left blank. It does not point to anyone. Trying to visit the person at a blank business card (dereferencing NULL) leads to confusion — you cannot visit "nothing". The guard will stop you (segmentation fault).
+A NULL pointer is like a business card that is intentionally left blank. It does not point to anyone. Trying to visit the person at a blank business card (dereferencing NULL) leads to confusion â€” you cannot visit "nothing". The guard will stop you (segmentation fault).
 
 ### Numbered Steps
 
 
-1. **Initialize to NULL:** `int *p = NULL;` — the pointer intentionally stores address 0.
+1. **Initialize to NULL:** `int *p = NULL;` â€” the pointer intentionally stores address 0.
 2. **NULL is a macro** defined in `<stddef.h>`, `<stdio.h>`, `<stdlib.h>`, `<string.h>`, `<time.h>`.
 3. **Always check before dereferencing:** `if (p != NULL) { /* safe to use *p */ }`
 4. **NULL is falsy:** `if (p)` is equivalent to `if (p != NULL)`; `if (!p)` checks for NULL.
@@ -1391,15 +1391,15 @@ p is NULL, cannot dereference
 | `NULL` | `void*` (or integer 0) | `((void*)0)` | Pointer invalidity |
 | `0` | `int` | `0` | Integer zero |
 | `'\0'` | `char` | `0` | Null character (string terminator) |
-| `nullptr` (C23) | `nullptr_t` | — | Type-safe null pointer constant |
+| `nullptr` (C23) | `nullptr_t` | â€” | Type-safe null pointer constant |
 
 ### Edge Cases
 
 
-- **Dereferencing NULL:** Undefined behavior — typically a segmentation fault
+- **Dereferencing NULL:** Undefined behavior â€” typically a segmentation fault
 - **Passing NULL to string functions:** `strlen(NULL)` leads to undefined behavior (crash)
 - **NULL in pointer arithmetic:** `NULL + 1` leads to undefined behavior
-- **free(NULL):** Explicitly allowed by the C standard — does nothing
+- **free(NULL):** Explicitly allowed by the C standard â€” does nothing
 - **NULL function pointer:** Calling a NULL function pointer leads to crash
 
 > **One-Sentence Takeaway:** NULL is an invalid pointer value; always check p != NULL before dereferencing p.
@@ -1413,7 +1413,7 @@ A **dangling pointer** is a pointer that continues to hold the address of memory
 ### Real-World Analogy
 
 
-You have a friend's apartment number on a sticky note. Your friend moves out and someone else moves in. The sticky note still says your old friend's apartment number — but the person living there now is a stranger. If you show up and start talking to the stranger (dereferencing a dangling pointer), the results are unpredictable and potentially dangerous.
+You have a friend's apartment number on a sticky note. Your friend moves out and someone else moves in. The sticky note still says your old friend's apartment number â€” but the person living there now is a stranger. If you show up and start talking to the stranger (dereferencing a dangling pointer), the results are unpredictable and potentially dangerous.
 
 ### Three Types of Dangling Pointers
 
@@ -1428,9 +1428,9 @@ You have a friend's apartment number on a sticky note. Your friend moves out and
 
 
 1. **Allocate memory:** `int *p = malloc(sizeof(int)); *p = 42;`
-2. **Free the memory:** `free(p);` — the memory is returned to the system.
-3. **p still contains the old address** — it is now a dangling pointer.
-4. **Accessing *p is undefined behavior** — the memory may be reused, corrupted, or cause a crash.
+2. **Free the memory:** `free(p);` â€” the memory is returned to the system.
+3. **p still contains the old address** â€” it is now a dangling pointer.
+4. **Accessing *p is undefined behavior** â€” the memory may be reused, corrupted, or cause a crash.
 
 ### Complete Code Example
 
@@ -1510,12 +1510,12 @@ int main(void)
 ### Edge Cases
 
 
-- **Double free:** `free(p); free(p);` — undefined behavior (heap corruption)
+- **Double free:** `free(p); free(p);` â€” undefined behavior (heap corruption)
 - **Use after free:** Writing to freed memory may corrupt the heap allocator's internal data structures
 - **Returning address of local variable:** The stack frame is destroyed after the function returns
 - **Scope of loop variable:** Pointers to loop variables that go out of scope require care
 
-> **One-Sentence Takeaway:** After free() or when a variable goes out of scope, all pointers to that memory become dangling — set them to NULL immediately.
+> **One-Sentence Takeaway:** After free() or when a variable goes out of scope, all pointers to that memory become dangling â€” set them to NULL immediately.
 
 ---
 
@@ -1526,15 +1526,15 @@ A **wild pointer** (also called an uninitialized pointer) is a pointer that has 
 ### Real-World Analogy
 
 
-A wild pointer is like finding a random address on a scrap of paper in the street. You have no idea whose address it is, whether anyone lives there, or what you will find if you go there. Going to that address is dangerous — you might walk into a police station, a hospital, or someone's private home.
+A wild pointer is like finding a random address on a scrap of paper in the street. You have no idea whose address it is, whether anyone lives there, or what you will find if you go there. Going to that address is dangerous â€” you might walk into a police station, a hospital, or someone's private home.
 
 ### Numbered Steps
 
 
 1. **Declare a pointer without initialization:** `int *p;`
-2. **p contains a garbage address** — whatever bits were at that memory location.
+2. **p contains a garbage address** â€” whatever bits were at that memory location.
 3. **Dereferencing p is undefined behavior:** `*p = 100;` writes to a random memory location.
-4. **The crash may not happen immediately** — making wild pointers extremely dangerous to debug.
+4. **The crash may not happen immediately** â€” making wild pointers extremely dangerous to debug.
 
 ### Complete Code Example
 
@@ -1544,9 +1544,9 @@ A wild pointer is like finding a random address on a scrap of paper in the stree
 
 int main(void)
 {
-    int *p;          /* wild pointer — uninitialized */
+    int *p;          /* wild pointer â€” uninitialized */
 
-    /* UNDEFINED BEHAVIOR — p could point anywhere */
+    /* UNDEFINED BEHAVIOR â€” p could point anywhere */
     /* *p = 100; */
 
     /* Prevention: always initialize */
@@ -1569,18 +1569,18 @@ int main(void)
 
 
 ```c
-/* BAD — wild pointer */
+/* BAD â€” wild pointer */
 int *p;
 *p = 42;
 
-/* GOOD — initialize to NULL */
+/* GOOD â€” initialize to NULL */
 int *p = NULL;
 
-/* GOOD — initialize with valid address */
+/* GOOD â€” initialize with valid address */
 int x;
 int *p = &x;
 
-/* GOOD — allocate on heap */
+/* GOOD â€” allocate on heap */
 int *p = malloc(sizeof(int));
 ```
 
@@ -1588,8 +1588,8 @@ int *p = malloc(sizeof(int));
 
 
 - **Conditional initialization:** `int *p; if (cond) { p = &x; } /* p still wild if !cond */`
-- **Partial initialization in structs:** `struct { int *p; int *q; } s = {NULL};` — s.q is wild
-- **Static and global pointers:** Zero-initialized by default — safer than local wild pointers
+- **Partial initialization in structs:** `struct { int *p; int *q; } s = {NULL};` â€” s.q is wild
+- **Static and global pointers:** Zero-initialized by default â€” safer than local wild pointers
 
 > **One-Sentence Takeaway:** A wild pointer has an indeterminate value; always initialize pointers to NULL or a valid address at declaration.
 
@@ -1610,11 +1610,11 @@ Pointer safety is like neighborhood safety rules for handling apartment addresse
 ### The Five Golden Rules
 
 
-1. **Always initialize** pointers — set to NULL or a valid address at declaration.
-2. **Always check for NULL** before dereferencing — guard every pointer access.
-3. **Set to NULL after free** — prevent dangling pointer access.
-4. **Never access beyond bounds** — know the allocated size.
-5. **Cast correctly** — ensure the cast type matches the actual data type.
+1. **Always initialize** pointers â€” set to NULL or a valid address at declaration.
+2. **Always check for NULL** before dereferencing â€” guard every pointer access.
+3. **Set to NULL after free** â€” prevent dangling pointer access.
+4. **Never access beyond bounds** â€” know the allocated size.
+5. **Cast correctly** â€” ensure the cast type matches the actual data type.
 
 ### Safety Checklist
 
@@ -1634,7 +1634,7 @@ int main(void)
 
     /* RULE 2: Check before dereference */
     if (p != NULL) {
-        printf("%d\n", *p);   /* never reached — p is NULL */
+        printf("%d\n", *p);   /* never reached â€” p is NULL */
     }
 
     /* RULE 3: NULL after free */
@@ -1652,7 +1652,7 @@ int main(void)
     /* RULE 5: Correct casting */
     void *vp = &x;
     int val = *(int*)vp;      /* correct cast */
-    /* double bad = *(double*)vp;  WRONG — type mismatch */
+    /* double bad = *(double*)vp;  WRONG â€” type mismatch */
 
     printf("val = %d\n", val);
 
@@ -1683,7 +1683,7 @@ int main(void)
 | Bounds guards | Prevents buffer overflow | Performance check on every access |
 | Correct casts | Prevents type confusion | Requires programmer discipline |
 
-> **One-Sentence Takeaway:** The five rules of pointer safety — initialize, NULL-check, NULL-after-free, bound-check, and cast correctly — prevent nearly all pointer-related bugs.
+> **One-Sentence Takeaway:** The five rules of pointer safety â€” initialize, NULL-check, NULL-after-free, bound-check, and cast correctly â€” prevent nearly all pointer-related bugs.
 ---
 
 ## 9.13 const and Pointers
@@ -1692,9 +1692,9 @@ int main(void)
 
 
 A `const` pointer is like a sealed envelope:
-- `const int *p` — someone gave you a sealed envelope and said "you can look at what is inside, but you cannot change it". You can put the envelope down and pick up a different one (change p).
-- `int * const p` — someone glued the envelope to your hand. You cannot put it down (cannot change p), but you can open the envelope and change the contents.
-- `const int * const p` — sealed envelope glued to your hand. You cannot change the contents and cannot put it down.
+- `const int *p` â€” someone gave you a sealed envelope and said "you can look at what is inside, but you cannot change it". You can put the envelope down and pick up a different one (change p).
+- `int * const p` â€” someone glued the envelope to your hand. You cannot put it down (cannot change p), but you can open the envelope and change the contents.
+- `const int * const p` â€” sealed envelope glued to your hand. You cannot change the contents and cannot put it down.
 
 ### The Four Combinations
 
@@ -1730,18 +1730,18 @@ int main(void)
 
     /* 1. Pointer to const int (can change pointer, cannot change value) */
     const int *p1 = &x;
-    p1 = &y;            /* OK — pointer is mutable */
-    /* *p1 = 30; — ERROR: cannot modify through const pointer */
+    p1 = &y;            /* OK â€” pointer is mutable */
+    /* *p1 = 30; â€” ERROR: cannot modify through const pointer */
 
     /* 2. Const pointer to int (can change value, cannot change pointer) */
     int * const p2 = &x;
-    *p2 = 30;           /* OK — value is mutable */
-    /* p2 = &y; — ERROR: pointer is const */
+    *p2 = 30;           /* OK â€” value is mutable */
+    /* p2 = &y; â€” ERROR: pointer is const */
 
     /* 3. Const pointer to const int (cannot change either) */
     const int * const p3 = &x;
-    /* *p3 = 40; — ERROR */
-    /* p3 = &y; — ERROR */
+    /* *p3 = 40; â€” ERROR */
+    /* p3 = &y; â€” ERROR */
 
     printf("x = %d, y = %d\n", x, y);
 
@@ -1780,8 +1780,8 @@ int main(void)
     int nums[] = {1, 2, 3, 4, 5};
     const int *cp = nums;
 
-    print_array(cp, 5);       /* OK — const int* to const int* */
-    /* bad_function(cp); — WARNING: discards const qualifier */
+    print_array(cp, 5);       /* OK â€” const int* to const int* */
+    /* bad_function(cp); â€” WARNING: discards const qualifier */
 
     return 0;
 }
@@ -1790,8 +1790,8 @@ int main(void)
 ### Edge Cases
 
 
-- **Casting away const:** `*(int*)const_ptr` — technically possible but leads to undefined behavior if the original object was declared const
-- **const and typedef:** `typedef int* ip; const ip p;` — this is `int * const p`, not `const int *p`
+- **Casting away const:** `*(int*)const_ptr` â€” technically possible but leads to undefined behavior if the original object was declared const
+- **const and typedef:** `typedef int* ip; const ip p;` â€” this is `int * const p`, not `const int *p`
 - **const correctness:** Always mark pointer parameters as `const` when the function does not modify the pointed-to data
 
 > **One-Sentence Takeaway:** const int *p protects the pointed-to data; int * const p protects the pointer itself; read the declaration right-to-left to decode.
@@ -1872,7 +1872,7 @@ If you find yourself writing `***` in application-level code, pause and ask:
 - Can I use typedef to clarify the intent?
 - Is there a simpler design?
 
-> **One-Sentence Takeaway:** Three-star programming (int***) is rarely necessary in application code — if you need triple indirection, reconsider the design.
+> **One-Sentence Takeaway:** Three-star programming (int***) is rarely necessary in application code â€” if you need triple indirection, reconsider the design.
 
 ---
 
@@ -1907,7 +1907,7 @@ If you find yourself writing `***` in application-level code, pause and ask:
 
 ---
 
-## 9.16 Array vs Pointer — Key Differences
+## 9.16 Array vs Pointer â€” Key Differences
 
 | Property | Array | Pointer |
 |----------|-------|---------|
@@ -1943,8 +1943,8 @@ int main(void)
 
     func(arr);
 
-    /* arr = p; — COMPILER ERROR: array name is not a modifiable lvalue */
-    p = arr;   /* OK — pointer can be reassigned */
+    /* arr = p; â€” COMPILER ERROR: array name is not a modifiable lvalue */
+    p = arr;   /* OK â€” pointer can be reassigned */
 
     return 0;
 }
@@ -1965,36 +1965,36 @@ sizeof(arr) in function: 8 (pointer size!)
 |----------|----------------|-------------|-------------|-------------|
 | **Definition** | Points to freed or out-of-scope memory | Uninitialized pointer with garbage address | Intentionally points to nothing | Type-erased pointer that can hold any address |
 | **Cause** | `free()` then use, or return of local address | Declared but not initialized | Explicit initialization: `p = NULL` | Declared as `void*` |
-| **Detection** | Hard — pointer address looks valid | Very hard — address is random | Easy — check `if (p == NULL)` | Easy — declared as void* |
+| **Detection** | Hard â€” pointer address looks valid | Very hard â€” address is random | Easy â€” check `if (p == NULL)` | Easy â€” declared as void* |
 | **Dereference result** | Undefined behavior (may crash, may corrupt) | Undefined behavior | Segmentation fault | Compiler error (must cast) |
 | **Prevention** | Set to NULL after free | Always initialize | Check before dereference | Cast before use |
 | **Catch at compile time** | No | No | No (but tools help) | No (but type mismatch caught) |
 | **Catch at runtime** | Sometimes (ASan, Valgrind) | Sometimes (segfault) | Yes (segfault) | N/A |
-| **Is it ever useful?** | Never | Never | Yes — sentinel value | Yes — generic programming |
+| **Is it ever useful?** | Never | Never | Yes â€” sentinel value | Yes â€” generic programming |
 
 ### Memory Diagram
 
 
 ```
      Memory Map
-     ┌─────────────┐
-     │ Valid Data  │  ◄── Valid pointer
-     ├─────────────┤
-     │ Freed/      │  ◄── Dangling pointer (was valid, now freed)
-     │ Unmapped    │
-     ├─────────────┤
-     │ Random      │  ◄── Wild pointer (never initialized)
-     │ Garbage     │
-     ├─────────────┤
-     │ Address 0   │  ◄── NULL pointer (intentionally invalid)
-     └─────────────┘
+     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+     â”‚ Valid Data  â”‚  â—„â”€â”€ Valid pointer
+     â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+     â”‚ Freed/      â”‚  â—„â”€â”€ Dangling pointer (was valid, now freed)
+     â”‚ Unmapped    â”‚
+     â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+     â”‚ Random      â”‚  â—„â”€â”€ Wild pointer (never initialized)
+     â”‚ Garbage     â”‚
+     â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+     â”‚ Address 0   â”‚  â—„â”€â”€ NULL pointer (intentionally invalid)
+     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 > **One-Sentence Takeaway:** Dangling = was valid now freed; Wild = never initialized; NULL = intentionally invalid; void = generic but requires cast.
 
 ---
 
-## 9.18 Pointer Arithmetic — Step-by-Step Deep Dive
+## 9.18 Pointer Arithmetic â€” Step-by-Step Deep Dive
 
 ### Step 1: Understand sizeof Scaling
 
@@ -2015,8 +2015,8 @@ int  *ip  [    10          ] [    20          ]
 ```
 
 For `int arr[] = {10, 20}`, `int *ip = arr`:
-- `ip` at 0x1000 → reads bytes 0x1000-0x1003 as an int → 10
-- `ip + 1` at 0x1004 → reads bytes 0x1004-0x1007 as an int → 20
+- `ip` at 0x1000 â†’ reads bytes 0x1000-0x1003 as an int â†’ 10
+- `ip + 1` at 0x1004 â†’ reads bytes 0x1004-0x1007 as an int â†’ 20
 
 ### Step 3: Pre-increment vs Post-increment on Pointers
 
@@ -2097,7 +2097,7 @@ int main(void)
     /* Comparing unrelated pointers is undefined behavior */
     int a, b;
     int *pa = &a, *pb = &b;
-    /* printf("%d\n", pa < pb); — unspecified behavior, avoid */
+    /* printf("%d\n", pa < pb); â€” unspecified behavior, avoid */
 
     return 0;
 }
@@ -2132,7 +2132,7 @@ p == q : 0  (different address)
 In C, no. `void*` is implicitly convertible to any pointer type without a cast.
 
 ```c
-int *p = malloc(sizeof(int));        /* OK in C — no cast needed */
+int *p = malloc(sizeof(int));        /* OK in C â€” no cast needed */
 int *q = (int*)malloc(sizeof(int));  /* Redundant in C; needed in C++ */
 ```
 
@@ -2236,7 +2236,7 @@ int main(void)
 }
 ```
 
-**Answer:** `30 40 50` — `p` points to `arr[3]` (value 40), so `p[-1]` is `arr[2]` = 30, `p[0]` = 40, `p[1]` = 50.
+**Answer:** `30 40 50` â€” `p` points to `arr[3]` (value 40), so `p[-1]` is `arr[2]` = 30, `p[0]` = 40, `p[1]` = 50.
 
 ---
 
@@ -2253,7 +2253,7 @@ struct list_head {
     struct list_head *next, *prev;
 };
 
-/* Traverse a list — pointer-based iteration */
+/* Traverse a list â€” pointer-based iteration */
 #define list_for_each(pos, head) \
     for (pos = (head)->next; pos != (head); pos = pos->next)
 
@@ -2263,7 +2263,7 @@ struct list_head {
     ((type*)((char*)(ptr) - offsetof(type, member)))
 ```
 
-The `container_of` macro subtracts the offset of the member from the member pointer to recover the enclosing struct address — a powerful pointer arithmetic trick used throughout the kernel (drivers, process lists, file systems, network stack).
+The `container_of` macro subtracts the offset of the member from the member pointer to recover the enclosing struct address â€” a powerful pointer arithmetic trick used throughout the kernel (drivers, process lists, file systems, network stack).
 
 ### 9.20.2 Function Pointers for Callbacks
 
@@ -2274,16 +2274,16 @@ The C standard library uses function pointers extensively:
 #include <stdio.h>
 #include <stdlib.h>
 
-/* qsort — generic sorting */
+/* qsort â€” generic sorting */
 int cmp(const void *a, const void *b)
 {
     return *(const int*)a - *(const int*)b;
 }
 
-/* atexit — register cleanup callback */
+/* atexit â€” register cleanup callback */
 void cleanup(void) { printf("Cleanup called\n"); }
 
-/* signal — install signal handler */
+/* signal â€” install signal handler */
 #include <signal.h>
 void handler(int sig) { printf("Signal %d caught\n", sig); }
 
@@ -2431,14 +2431,14 @@ Rex says: Woof!
 
 ---
 
-## Common Pointer Mistakes — Expanded
+## Common Pointer Mistakes â€” Expanded
 
 ### Mistake 1: Uninitialized Pointer (Wild Pointer)
 
 
 ```c
 int *p;
-*p = 42;    /* UNDEFINED — p could point anywhere */
+*p = 42;    /* UNDEFINED â€” p could point anywhere */
 ```
 
 **Fix:** `int *p = NULL; if (p) *p = 42;`
@@ -2449,7 +2449,7 @@ int *p;
 ```c
 int *p = malloc(sizeof(int));
 free(p);
-*p = 42;    /* UNDEFINED — memory may be reused */
+*p = 42;    /* UNDEFINED â€” memory may be reused */
 ```
 
 **Fix:** `free(p); p = NULL;`
@@ -2460,7 +2460,7 @@ free(p);
 ```c
 int arr[5];
 int *p = arr;
-*(p + 10) = 100;    /* UNDEFINED — writes past array bounds */
+*(p + 10) = 100;    /* UNDEFINED â€” writes past array bounds */
 ```
 
 **Fix:** Always verify index &lt; array length before access.
@@ -2471,7 +2471,7 @@ int *p = arr;
 ```c
 int* bad(void) {
     int x = 42;
-    return &x;       /* UNDEFINED — stack frame gone after return */
+    return &x;       /* UNDEFINED â€” stack frame gone after return */
 }
 ```
 
@@ -2494,7 +2494,7 @@ int *p = malloc(1000000000000 * sizeof(int));
 ```c
 int arr[3] = {1, 2, 3};
 int *p = arr;
-*(p + 3) = 4;    /* Writes past the end — arr[3] does not exist */
+*(p + 3) = 4;    /* Writes past the end â€” arr[3] does not exist */
 ```
 
 ### Mistake 7: Confusing Pointers and Arrays with sizeof
@@ -2523,7 +2523,7 @@ printf("%f\n", *(double*)vp);  /* WRONG: interprets int bits as double */
 
 ```c
 struct Node *p;
-/* p->data = 5; — ERROR if struct Node is only forward-declared */
+/* p->data = 5; â€” ERROR if struct Node is only forward-declared */
 ```
 
 ### Mistake 10: Double Free
@@ -2532,7 +2532,7 @@ struct Node *p;
 ```c
 int *p = malloc(sizeof(int));
 free(p);
-free(p);    /* UNDEFINED — double free corrupts heap */
+free(p);    /* UNDEFINED â€” double free corrupts heap */
 ```
 
 **Fix:** Set p = NULL after free; free(NULL) is safe.
@@ -2616,7 +2616,7 @@ free(p);    /* UNDEFINED — double free corrupts heap */
    - C) Address of p
    - D) Compiler error
 
-<details><summary>Answer&lt;/summary&gt;**B)** `&x` gets the address; `*` dereferences it — `*&x` is the same as `x`, which is 10.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** `&x` gets the address; `*` dereferences it â€” `*&x` is the same as `x`, which is 10.</details>
 
 4. What is the output of `printf("%td", q - p)` if p points to arr[2] and q points to arr[5]?
    - A) 3
@@ -2635,8 +2635,8 @@ free(p);    /* UNDEFINED — double free corrupts heap */
 <details><summary>Answer&lt;/summary&gt;**B)** The `[]` binds before `*`: `p` is an array of 10 `int*` elements.</details>
 
 6. What is wrong with this code: `int *p; *p = 5;`?
-   - A) Nothing — it works fine
-   - B) p is uninitialized — dereferencing garbage address is UB
+   - A) Nothing â€” it works fine
+   - B) p is uninitialized â€” dereferencing garbage address is UB
    - C) Syntax error
    - D) Cannot assign through a pointer
 
@@ -2646,9 +2646,9 @@ free(p);    /* UNDEFINED — double free corrupts heap */
    - A) The pointer p from being changed
    - B) The value *p from being changed through p
    - C) Both the pointer and the value
-   - D) Nothing — it is a warning only
+   - D) Nothing â€” it is a warning only
 
-<details><summary>Answer&lt;/summary&gt;**B)** `const int *p` means p points to a const int — you cannot change *p through p, but you can change p to point elsewhere.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** `const int *p` means p points to a const int â€” you cannot change *p through p, but you can change p to point elsewhere.</details>
 
 8. Which of these is NOT a valid operation on a void pointer in standard C?
    - A) Assigning an address to it
@@ -2663,7 +2663,7 @@ free(p);    /* UNDEFINED — double free corrupts heap */
 ## Summary
 
 - A **pointer** stores a memory address; `&` gets an address, `*` dereferences it.
-- **NULL pointers** indicate invalidity — always check before dereferencing.
+- **NULL pointers** indicate invalidity â€” always check before dereferencing.
 - **Pointer arithmetic** advances by `sizeof(pointed_type)` bytes; only valid within the same array.
 - **Array-pointer duality:** arr[i] is defined as *(arr + i); arrays decay to pointers in most contexts.
 - **Pointer to array** (int (*p)[N]) vs **array of pointers** (int *p[N]) are fundamentally different.
@@ -2719,10 +2719,10 @@ The function should sort any array type using a user-supplied comparison functio
 
 This mirrors the interface of the standard library's `qsort` function. For extra credit, optimize the sort to stop early if no swaps occur during a pass.
 
-> **Next Chapter:** [Structures and Unions](./10-structures-unions.md) — Group related data together and create complex data types.
+> **Next Chapter:** [Structures and Unions](./10-structures-unions.md) â€” Group related data together and create complex data types.
 ---
 
-## 9.21 Pointer Dereference Chain — Deep Anatomy
+## 9.21 Pointer Dereference Chain â€” Deep Anatomy
 
 Understanding what happens at the hardware level during a pointer dereference helps solidify the concept.
 
@@ -2735,12 +2735,12 @@ int *p = &x;    /* p is at address 0x2000, stores 0x1000 */
 ```
 
 **When the CPU executes `printf("%d", *p)`:**
-1. CPU reads p from memory address 0x2000 → gets value 0x1000
-2. CPU issues a memory read at address 0x1000 → gets value 42
+1. CPU reads p from memory address 0x2000 â†’ gets value 0x1000
+2. CPU issues a memory read at address 0x1000 â†’ gets value 42
 3. CPU passes 42 to printf
 
 **When the CPU executes `*p = 99`:**
-1. CPU reads p from memory address 0x2000 → gets value 0x1000
+1. CPU reads p from memory address 0x2000 â†’ gets value 0x1000
 2. CPU issues a memory write at address 0x1000, writing 99
 3. x is now 99
 
@@ -2756,12 +2756,12 @@ int ***ppp = &pp;       /* ppp at 0x4000, stores 0x3000 */
 
 | Expression | CPU Reads | CPU Reads Again | CPU Reads Again | Final Result |
 |-----------|----------|----------------|----------------|-------------|
-| `x` | — | — | — | `42` |
-| `p` | — | — | — | `0x1000` |
-| `*p` | p → `0x1000` | at 0x1000 → `42` | — | `42` |
-| `*pp` | pp → `0x2000` | at 0x2000 → `0x1000` | — | `0x1000` |
-| `**pp` | pp → `0x2000` | at 0x2000 → `0x1000` | at 0x1000 → `42` | `42` |
-| `***ppp` | ppp → `0x3000` | at 0x3000 → `0x2000` | at 0x2000 → `0x1000` then 0x1000 → `42` | `42` |
+| `x` | â€” | â€” | â€” | `42` |
+| `p` | â€” | â€” | â€” | `0x1000` |
+| `*p` | p â†’ `0x1000` | at 0x1000 â†’ `42` | â€” | `42` |
+| `*pp` | pp â†’ `0x2000` | at 0x2000 â†’ `0x1000` | â€” | `0x1000` |
+| `**pp` | pp â†’ `0x2000` | at 0x2000 â†’ `0x1000` | at 0x1000 â†’ `42` | `42` |
+| `***ppp` | ppp â†’ `0x3000` | at 0x3000 â†’ `0x2000` | at 0x2000 â†’ `0x1000` then 0x1000 â†’ `42` | `42` |
 
 Each star adds one memory read. Three stars = three pointer chases + one value read = four memory accesses.
 
@@ -2787,13 +2787,13 @@ int main(void)
     /* BAD: casting a char* to int* may violate alignment */
     char buf[8] = {0};
     int *p = (int*)&buf[1];  /* likely misaligned */
-    /* *p = 42; — UNDEFINED if buf+1 is not aligned to sizeof(int) */
+    /* *p = 42; â€” UNDEFINED if buf+1 is not aligned to sizeof(int) */
 
     return 0;
 }
 ```
 
-### Strict Aliasing Rule (C99 §6.5)
+### Strict Aliasing Rule (C99 Â§6.5)
 
 
 The compiler assumes that pointers of different types do not point to the same memory location. Violating this rule is undefined behavior.
@@ -2801,10 +2801,10 @@ The compiler assumes that pointers of different types do not point to the same m
 ```c
 int x = 42;
 float *fp = (float*)&x;
-/* *fp = 3.14f; — UNDEFINED: int object accessed as float */
+/* *fp = 3.14f; â€” UNDEFINED: int object accessed as float */
 ```
 
-The exception: any type can be accessed through `char*`, `signed char*`, or `unsigned char*`. This is why `memcpy` works with `void*` — it casts internally to `char*`.
+The exception: any type can be accessed through `char*`, `signed char*`, or `unsigned char*`. This is why `memcpy` works with `void*` â€” it casts internally to `char*`.
 
 ```c
 int x = 42;
@@ -2823,24 +2823,24 @@ Array-to-pointer decay happens in these contexts:
 | Assignment | Decays | `int *p = arr;` |
 | Function argument | Decays | `void f(int *p)` called with `f(arr)` |
 | Arithmetic | Decays | `arr + 1` |
-| Array subscript | Decays | `arr[i]` → `*(arr + i)` |
+| Array subscript | Decays | `arr[i]` â†’ `*(arr + i)` |
 | **sizeof** | **Does NOT decay** | `sizeof(arr)` gives array size |
 | **&** | **Does NOT decay** | `&arr` gives `int(*)[N]`, not `int**` |
-| **sizeof** in function param | Already decayed | `void f(int arr[])` → `arr` is `int*` |
+| **sizeof** in function param | Already decayed | `void f(int arr[])` â†’ `arr` is `int*` |
 
 ### Memory Layout Comparison
 
 
 ```
 Array:         [0]  [1]  [2]  [3]  [4]
-              ┌────┬────┬────┬────┬────┐
-              │ 10 │ 20 │ 30 │ 40 │ 50 │
-              └────┴────┴────┴────┴────┘
+              â”Œâ”€â”€â”€â”€â”¬â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”
+              â”‚ 10 â”‚ 20 â”‚ 30 â”‚ 40 â”‚ 50 â”‚
+              â””â”€â”€â”€â”€â”´â”€â”€â”€â”€â”´â”€â”€â”€â”€â”´â”€â”€â”€â”€â”´â”€â”€â”€â”€â”˜
 Address:      0x0  0x4  0x8  0xC  0x10
 
-Pointer:      ┌────────────┐
-              │   0x1000   │
-              └────────────┘
+Pointer:      â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+              â”‚   0x1000   â”‚
+              â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
               p (stores address of first element)
 ```
 
@@ -2880,7 +2880,7 @@ sum = 15
 
 ---
 
-## 9.24 Complex Pointer Declarations — Decoding
+## 9.24 Complex Pointer Declarations â€” Decoding
 
 ### The Right-Left (Spiral) Rule
 
@@ -2906,17 +2906,17 @@ int *(*(*fp)(int))[10];
 
 **Step-by-step:**
 1. Start at `fp`
-2. `*fp` — fp is a pointer
-3. `(*fp)(int)` — to a function taking int
-4. `*(*fp)(int)` — returning a pointer
-5. `(*(*fp)(int))[10]` — to an array of 10
-6. `int *` — pointers to int
+2. `*fp` â€” fp is a pointer
+3. `(*fp)(int)` â€” to a function taking int
+4. `*(*fp)(int)` â€” returning a pointer
+5. `(*(*fp)(int))[10]` â€” to an array of 10
+6. `int *` â€” pointers to int
 
 **Final:** `fp` is a pointer to a function that takes an int and returns a pointer to an array of 10 pointers to int.
 
 ---
 
-## Extended Quiz — Pointer Pitfalls
+## Extended Quiz â€” Pointer Pitfalls
 
 10. What is the output of this code?
 
@@ -2932,17 +2932,17 @@ int main(void) {
 
 A) 4    B) 5    C) 16    D) 20
 
-<details><summary>Answer&lt;/summary&gt;**A)** 4 — p points to arr[4], arr is arr[0], so p - arr = 4 elements apart.</details>
+<details><summary>Answer&lt;/summary&gt;**A)** 4 â€” p points to arr[4], arr is arr[0], so p - arr = 4 elements apart.</details>
 
 11. How many bytes does `&arr + 1` advance past for `int arr[5]` on a 4-byte int system?
 
 A) 4    B) 8    C) 20    D) 40
 
-<details><summary>Answer&lt;/summary&gt;**C)** 20 — `&arr` is int(*)[5], so +1 adds sizeof(arr) = 5 * 4 = 20 bytes.</details>
+<details><summary>Answer&lt;/summary&gt;**C)** 20 â€” `&arr` is int(*)[5], so +1 adds sizeof(arr) = 5 * 4 = 20 bytes.</details>
 
 12. What is wrong with `int *p = malloc(10);`?
 
-A) Nothing — it works
+A) Nothing â€” it works
 B) malloc takes no arguments
 C) No cast required but size should be `10 * sizeof(int)`
 D) Cannot assign void* to int*
@@ -2956,7 +2956,7 @@ B) `int (*f)(double);`
 C) `int (*f)(double*);`
 D) `(int*)f(double);`
 
-<details><summary>Answer&lt;/summary&gt;**B)** `int (*f)(double);` — parentheses around `*f` are mandatory; f is a pointer to function taking double and returning int.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** `int (*f)(double);` â€” parentheses around `*f` are mandatory; f is a pointer to function taking double and returning int.</details>
 
 14. What is the output?
 

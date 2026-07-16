@@ -1,4 +1,4 @@
-# Chapter 9: Company-Wise Preparation Strategy
+﻿# Chapter 9: Company-Wise Preparation Strategy
 
 ## Learning Objectives
 
@@ -12,16 +12,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/interview-preparation/09-company-wise-preparation/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/interview-preparation/09-company-wise-preparation/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/09-company-wise-preparation/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/interview-preparation/09-company-wise-preparation/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/interview-preparation/09-company-wise-preparation/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/interview-preparation/09-company-wise-preparation/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/09-company-wise-preparation/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/interview-preparation/09-company-wise-preparation/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/interview-preparation/09-company-wise-preparation/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/interview-preparation/09-company-wise-preparation/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/09-company-wise-preparation/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/interview-preparation/09-company-wise-preparation/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -78,7 +78,7 @@ flowchart TD
 ### Difficulty Spectrum
 
 ```
-Easier ─────────────────────────────────────────────── Harder
+Easier â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ Harder
     TCS, Wipro, HCL    Infosys, Accenture    Google, Microsoft, Amazon
     (Core CS basics)   (Moderate DSA)        (Advanced DSA + System Design)
 ```
@@ -113,7 +113,7 @@ Easier ────────────────────────�
 | Aspect | TCS Ninja | TCS Digital |
 |--------|-----------|-------------|
 | Who | All engineering graduates | Top performers (selected via NQT) |
-| Salary | ₹3.36 - ₹3.6 LPA | ₹7 - ₹10 LPA |
+| Salary | â‚¹3.36 - â‚¹3.6 LPA | â‚¹7 - â‚¹10 LPA |
 | Role | Developer, Support | Digital roles (AI, Cloud, DevOps) |
 | Training | Initial 3-month ILP | Initial training + specialization |
 | Coding test | Basic | Advanced (Medium LeetCode) |
@@ -143,7 +143,7 @@ Easier ────────────────────────�
 - Multithreading: Thread vs Runnable, synchronized keyword
 
 **SQL:**
-- JOINs — write queries using different JOINs
+- JOINs â€” write queries using different JOINs
 - GROUP BY with aggregate functions
 - Subqueries and correlated subqueries
 - Normalization (1NF to 3NF)
@@ -172,7 +172,7 @@ Easier ────────────────────────�
 | Know TCS products | BaNCS (banking), Ignio (AI), Quartz (blockchain) |
 | Be prepared for group discussion | TCS sometimes conducts GD for mass recruitment |
 
-> **Real Experience:** In my TCS interview, they asked me to write a SQL query with INNER JOIN and LEFT JOIN difference. Then they asked about HashMap internal working in Java. The HR round was very straightforward — mostly about relocation flexibility.
+> **Real Experience:** In my TCS interview, they asked me to write a SQL query with INNER JOIN and LEFT JOIN difference. Then they asked about HashMap internal working in Java. The HR round was very straightforward â€” mostly about relocation flexibility.
 </details>
 
 ---
@@ -288,7 +288,7 @@ function maxSubarraySum(arr: number[]): number {
 <details>
 <summary>Click to reveal</summary>
 
-1. OOPs concepts — define with examples
+1. OOPs concepts â€” define with examples
 2. Difference between C and Java
 3. What is inheritance? Types?
 4. SQL: GROUP BY, HAVING, ORDER BY differences
@@ -385,7 +385,7 @@ function maxSubarraySum(arr: number[]): number {
 | Founded | 1967 (France) |
 | India HQ | Mumbai |
 | Employees (India) | 150,000+ |
-| Revenue (Global) | ~€22 billion |
+| Revenue (Global) | ~â‚¬22 billion |
 | Key Offerings | AI, Cloud, Digital Engineering |
 
 **Capgemini Interview Process:**
@@ -400,7 +400,7 @@ function maxSubarraySum(arr: number[]): number {
 - Java/Spring Boot/React full-stack skills
 - Cloud certification (AWS/Azure) valued
 - Strong bias toward domain expertise (banking, insurance, manufacturing)
-- Technical communication — can you explain to non-tech stakeholders?
+- Technical communication â€” can you explain to non-tech stakeholders?
 - Design thinking and innovation mindset
 
 ---
@@ -550,13 +550,13 @@ function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
 | Tip | Why |
 |-----|-----|
 | Understand .NET/Azure ecosystem | Even if you don't use them, know the ecosystem |
-| Prepare for "fix my code" | Interviewer shares code with bugs — find and fix |
+| Prepare for "fix my code" | Interviewer shares code with bugs â€” find and fix |
 | Focus on customer impact | Microsoft values customer-centric thinking |
 | Use "we" not "I" for project stories | Shows collaborative culture alignment |
 | Prepare for pair programming | Some rounds involve coding together with interviewer |
 | Ask about team culture | Shows interest beyond technology |
 
-> **Real Experience:** The Microsoft interviewer shared a C# function with subtle null pointer bugs and asked me to identify and fix them. The "Aspirations" round was unique — they asked how I would design a feature to help differently-abled users. This tests customer obsession and inclusive design.
+> **Real Experience:** The Microsoft interviewer shared a C# function with subtle null pointer bugs and asked me to identify and fix them. The "Aspirations" round was unique â€” they asked how I would design a feature to help differently-abled users. This tests customer obsession and inclusive design.
 
 ---
 
@@ -651,9 +651,9 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 | Tip | Description |
 |-----|-------------|
 | Memoize 16 LPs | Every answer must connect to one or more |
-| Prepare metrics | Amazon loves numbers — quantify everything |
-| Bar Raiser round | This is the most important — they assess all LPs holistically |
-| System design | Amazon systems are typically large-scale — think warehouse-scale |
+| Prepare metrics | Amazon loves numbers â€” quantify everything |
+| Bar Raiser round | This is the most important â€” they assess all LPs holistically |
+| System design | Amazon systems are typically large-scale â€” think warehouse-scale |
 | "Why Amazon?" | Connect to customer obsession, not just "good company" |
 | Negotiate with other offers | Amazon values "competing offers" for better packages |
 
@@ -671,7 +671,7 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 | Role | Technology backbone of Government of India |
 | Hiring | GATE-based + Interview |
 | Position | Scientist-B |
-| Pay | Level 10 (₹56,100 - ₹1,77,500) |
+| Pay | Level 10 (â‚¹56,100 - â‚¹1,77,500) |
 
 **NIC Interview Focus:**
 | Area | Topics |
@@ -751,7 +751,7 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 
 ---
 
-## Section 9: PSUs — SAIL, ONGC, IOCL, BSNL, NTPC, BHEL
+## Section 9: PSUs â€” SAIL, ONGC, IOCL, BSNL, NTPC, BHEL
 
 ### Common PSU Interview Pattern
 
@@ -767,7 +767,7 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 | Aspect | Details |
 |--------|---------|
 | Sector | Steel |
-| Revenue | ~₹1.3 lakh crore |
+| Revenue | ~â‚¹1.3 lakh crore |
 | IT Focus | SAP, automation, industry 4.0 |
 | Hiring | GATE + Interview |
 
@@ -783,7 +783,7 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 | Aspect | Details |
 |--------|---------|
 | Sector | Oil & Gas |
-| Revenue | ~₹6.5 lakh crore |
+| Revenue | ~â‚¹6.5 lakh crore |
 | IT Focus | Seismic data processing, SCADA |
 | Hiring | GATE + Interview |
 
@@ -800,7 +800,7 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 | Aspect | Details |
 |--------|---------|
 | Sector | Oil refining & marketing |
-| Revenue | ~₹8.5 lakh crore |
+| Revenue | ~â‚¹8.5 lakh crore |
 | IT Focus | SAP, retail automation |
 | Hiring | GATE + Interview |
 
@@ -832,7 +832,7 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 | Aspect | Details |
 |--------|---------|
 | Sector | Power |
-| Revenue | ~₹1.5 lakh crore |
+| Revenue | ~â‚¹1.5 lakh crore |
 | IT Focus | SCADA, ERP, AI for predictive maintenance |
 | Hiring | GATE + Interview |
 
@@ -848,7 +848,7 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 | Aspect | Details |
 |--------|---------|
 | Sector | Power equipment manufacturing |
-| Revenue | ~₹25,000 crore |
+| Revenue | ~â‚¹25,000 crore |
 | IT Focus | PLM, CAD/CAM, ERP |
 | Hiring | GATE + Interview |
 
@@ -868,7 +868,7 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 | Aspect | Details |
 |--------|---------|
 | Rounds | Online Test + Technical + HR |
-| Salary | ~₹4 - ₹5 LPA (fresher) |
+| Salary | ~â‚¹4 - â‚¹5 LPA (fresher) |
 | Focus | Java, SQL, Mainframe, Cloud |
 | Known for | Strong training program |
 
@@ -878,7 +878,7 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 |--------|---------|
 | Process | Online Test + Coding + Technical + HR |
 | Focus | Java, .NET, React, Cloud |
-| Salary | ~₹5 - ₹7 LPA |
+| Salary | ~â‚¹5 - â‚¹7 LPA |
 | Known for | Product engineering |
 
 ### IBM India
@@ -887,7 +887,7 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 |--------|---------|
 | Rounds | Coding + Technical + Managerial + HR |
 | Focus | Java, Python, Cloud, AI |
-| Salary | ~₹6 - ₹12 LPA |
+| Salary | ~â‚¹6 - â‚¹12 LPA |
 | Known for | Research, consulting, technology |
 
 ### Byju's / Unacademy (EdTech)
@@ -896,7 +896,7 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 |--------|---------|
 | Rounds | Coding (Medium-hard) + System Design + HR |
 | Focus | Full-stack, scalability, personalization |
-| Salary | ~₹12 - ₹25 LPA |
+| Salary | ~â‚¹12 - â‚¹25 LPA |
 | Known for | Product-focused, startup culture |
 
 ### Paytm / Razorpay (Fintech)
@@ -905,7 +905,7 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 |--------|---------|
 | Rounds | Coding + System Design + Design + HR |
 | Focus | Payment systems, distributed systems, scale |
-| Salary | ~₹15 - ₹30 LPA |
+| Salary | ~â‚¹15 - â‚¹30 LPA |
 | Known for | High-scale systems, real transaction flow |
 
 ### Sprinklr
@@ -914,7 +914,7 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 |--------|---------|
 | Rounds | Coding + System Design + Product + HR |
 | Focus | Social media management, real-time analytics |
-| Salary | ~₹12 - ₹25 LPA |
+| Salary | ~â‚¹12 - â‚¹25 LPA |
 | Known for | Strong engineering culture, product company |
 
 ---
@@ -923,21 +923,21 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 
 | Company | Focus Area 1 | Focus Area 2 | Difficulty | Salary (Fresher) |
 |---------|-------------|-------------|------------|------------------|
-| TCS | Core CS basics | Communication | Easy | ₹3.36 - ₹10 LPA |
-| Infosys | Java + SQL | Project depth | Easy-Med | ₹3.6 - ₹9 LPA |
-| Wipro | C/Java basics | Aptitude | Easy | ₹3.5 - ₹5 LPA |
-| HCL | Engineering core | Networks | Easy-Med | ₹3.5 - ₹5.5 LPA |
-| Tech Mahindra | Telecom | Digital | Medium | ₹3.6 - ₹6 LPA |
-| Accenture | Java + Full-stack | Communication | Medium | ₹4.5 - ₹8 LPA |
-| Capgemini | Domain expertise | Cloud | Medium | ₹5 - ₹7 LPA |
-| Cognizant | Java + SQL | Training | Easy-Med | ₹4 - ₹5 LPA |
-| Google | DSA + System Design | Googleyness | Very Hard | ₹30 - ₹60 LPA |
-| Microsoft | DSA + Design | Aspirations | Very Hard | ₹25 - ₹50 LPA |
-| Amazon | DSA + LPs + System Design | Bar Raiser | Very Hard | ₹25 - ₹55 LPA |
-| NIC | Core CS + Project | e-Governance | Medium | ₹8 - ₹10 LPA |
-| DRDO | Networks + Security | Defense tech | Hard | ₹8 - ₹10 LPA |
-| ONGC/IOCL | Core CS + Domain | SAP/SCADA | Medium | ₹8 - ₹12 LPA |
-| BSNL | Telecom + Networks | OSS/BSS | Medium | ₹6 - ₹9 LPA |
+| TCS | Core CS basics | Communication | Easy | â‚¹3.36 - â‚¹10 LPA |
+| Infosys | Java + SQL | Project depth | Easy-Med | â‚¹3.6 - â‚¹9 LPA |
+| Wipro | C/Java basics | Aptitude | Easy | â‚¹3.5 - â‚¹5 LPA |
+| HCL | Engineering core | Networks | Easy-Med | â‚¹3.5 - â‚¹5.5 LPA |
+| Tech Mahindra | Telecom | Digital | Medium | â‚¹3.6 - â‚¹6 LPA |
+| Accenture | Java + Full-stack | Communication | Medium | â‚¹4.5 - â‚¹8 LPA |
+| Capgemini | Domain expertise | Cloud | Medium | â‚¹5 - â‚¹7 LPA |
+| Cognizant | Java + SQL | Training | Easy-Med | â‚¹4 - â‚¹5 LPA |
+| Google | DSA + System Design | Googleyness | Very Hard | â‚¹30 - â‚¹60 LPA |
+| Microsoft | DSA + Design | Aspirations | Very Hard | â‚¹25 - â‚¹50 LPA |
+| Amazon | DSA + LPs + System Design | Bar Raiser | Very Hard | â‚¹25 - â‚¹55 LPA |
+| NIC | Core CS + Project | e-Governance | Medium | â‚¹8 - â‚¹10 LPA |
+| DRDO | Networks + Security | Defense tech | Hard | â‚¹8 - â‚¹10 LPA |
+| ONGC/IOCL | Core CS + Domain | SAP/SCADA | Medium | â‚¹8 - â‚¹12 LPA |
+| BSNL | Telecom + Networks | OSS/BSS | Medium | â‚¹6 - â‚¹9 LPA |
 
 ---
 
@@ -1005,7 +1005,7 @@ function maxSumSubarray(arr: number[], k: number): number {
 // Pattern 2: Matrix spiral
 function spiralMatrix(matrix: number[][]): number[] {
   // Handle 4 boundaries (top, bottom, left, right)
-  // Move right → down → left → up, shrink boundaries
+  // Move right â†’ down â†’ left â†’ up, shrink boundaries
 }
 
 // Pattern 3: Anagram groups
@@ -1069,7 +1069,7 @@ Google asks harder problems, often combining multiple concepts:
 ```typescript
 // Pattern 1: Hard DP
 function minDistance(word1: string, word2: string): number {
-  // Edit distance — classic Google problem
+  // Edit distance â€” classic Google problem
 }
 
 // Pattern 2: Complex graphs
@@ -1098,20 +1098,20 @@ function nthUglyNumber(n: number): number {
 | Question | Strategy |
 |----------|----------|
 | Why TCS? | Mention TCS's global presence, learning opportunities, domain diversity |
-| Are you willing to relocate? | Say yes enthusiastically — TCS posts to any client location |
+| Are you willing to relocate? | Say yes enthusiastically â€” TCS posts to any client location |
 | Why should we hire you? | Connect your skills to TCS's client-facing needs |
 | What do you know about TCS? | Research TCS products: BaNCS, Ignio, Quartz, TCS iON |
-| Can you work in shifts? | TCS needs 24/7 support for global clients — say yes |
+| Can you work in shifts? | TCS needs 24/7 support for global clients â€” say yes |
 
 ### Google HR Questions
 
 | Question | Strategy |
 |----------|----------|
 | Why Google? | Mention specific products, engineering culture, impact at scale |
-| Tell us about a challenge | Use Googleyness round — show leadership and collaboration |
+| Tell us about a challenge | Use Googleyness round â€” show leadership and collaboration |
 | How do you handle ambiguity? | Google values comfort with unstructured problems |
-| What would you change at Google? | Thoughtful, constructive suggestion — not criticism |
-| Why leave current role? | Growth, impact, learning — never negative about current employer |
+| What would you change at Google? | Thoughtful, constructive suggestion â€” not criticism |
+| Why leave current role? | Growth, impact, learning â€” never negative about current employer |
 
 ### Amazon HR Questions
 
@@ -1128,10 +1128,10 @@ function nthUglyNumber(n: number): number {
 | Question | Strategy |
 |----------|----------|
 | Why government sector? | Service to nation, job stability, meaningful work |
-| Willing to relocate to remote location? | Yes — show flexibility and commitment |
+| Willing to relocate to remote location? | Yes â€” show flexibility and commitment |
 | Have you applied to private companies? | Be honest, but emphasize preference for PSU |
 | What if you don't like the posting? | Will work hard regardless, trust the system |
-| What do you know about this PSU? | Research thoroughly — production, products, IT initiatives |
+| What do you know about this PSU? | Research thoroughly â€” production, products, IT initiatives |
 
 ---
 
@@ -1182,7 +1182,7 @@ function nthUglyNumber(n: number): number {
 
 1. **One size doesn't fit all:** Your preparation strategy for TCS (core CS basics, good communication) is completely different from Google (LeetCode Hard, system design, behavioral).
 
-2. **For service companies:** Focus on Java, SQL, OOPs, and clear communication. Your project is important — they'll ask about it in detail.
+2. **For service companies:** Focus on Java, SQL, OOPs, and clear communication. Your project is important â€” they'll ask about it in detail.
 
 3. **For product companies:** DSA is king. Solve 200+ LeetCode problems (Medium+). System design separates senior from junior roles.
 
@@ -1192,7 +1192,7 @@ function nthUglyNumber(n: number): number {
 
 6. **Apply in batches:** Don't apply everywhere at once. Start with your "practice" companies (lower priority), then target your dream companies.
 
-7. **⭐ Must-Know:** For EVERY company, prepare "Tell me about yourself," "Why this company," and have 3 strong project stories ready.
+7. **â­ Must-Know:** For EVERY company, prepare "Tell me about yourself," "Why this company," and have 3 strong project stories ready.
 
 8. **Network with alumni:** Companies' alumni from your college can provide specific insights into their interview process and culture.
 

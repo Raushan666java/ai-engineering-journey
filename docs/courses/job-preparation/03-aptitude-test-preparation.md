@@ -1,4 +1,4 @@
-# Aptitude Test Preparation for IT Companies &amp; PSUs
+﻿# Aptitude Test Preparation for IT Companies &amp; PSUs
 
 ## Learning Objectives
 
@@ -7,16 +7,16 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/job-preparation/03-aptitude-test-preparation/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/job-preparation/03-aptitude-test-preparation/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/job-preparation/03-aptitude-test-preparation/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/job-preparation/03-aptitude-test-preparation/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/job-preparation/03-aptitude-test-preparation/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/job-preparation/03-aptitude-test-preparation/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/job-preparation/03-aptitude-test-preparation/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/job-preparation/03-aptitude-test-preparation/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/job-preparation/03-aptitude-test-preparation/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/job-preparation/03-aptitude-test-preparation/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/job-preparation/03-aptitude-test-preparation/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/job-preparation/03-aptitude-test-preparation/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -58,7 +58,7 @@ By the end of this chapter, you will be able to:
 | Technical Aptitude | 50-100 | 40-60 min | ~40-50 seconds |
 | General Awareness | 25-50 | 10-15 min | ~20-30 seconds |
 
-## Quantitative Aptitude — 100 Shortcut Formulas
+## Quantitative Aptitude â€” 100 Shortcut Formulas
 
 ### Number Systems and HCF-LCM
 
@@ -188,7 +188,7 @@ By the end of this chapter, you will be able to:
 | AP nth term = a + (n-1)d | AP |
 | AP sum = n/2[2a + (n-1)d] | AP sum |
 
-## Logical Reasoning — All Question Types
+## Logical Reasoning â€” All Question Types
 
 ### Classification
 
@@ -265,7 +265,7 @@ By the end of this chapter, you will be able to:
 | Paper Folding | Trace hole positions |
 | Dice/Cube | Adjacent faces tell opposite |
 
-## Verbal Ability — Quick Drills
+## Verbal Ability â€” Quick Drills
 
 ### Common Errors
 
@@ -305,7 +305,7 @@ By the end of this chapter, you will be able to:
 4. Answer questions (1-2 min)
 5. Review against passage (30 sec)
 
-## Technical Aptitude — CS Fundamentals
+## Technical Aptitude â€” CS Fundamentals
 
 ### Operating Systems
 

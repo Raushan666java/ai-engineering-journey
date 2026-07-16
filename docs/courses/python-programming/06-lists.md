@@ -1,4 +1,4 @@
-# Chapter 6: Lists
+﻿# Chapter 6: Lists
 
 
 > **Previous:** [Strings](./05-strings.md) | **Next:** [Tuples and Sets](./07-tuples-sets.md)
@@ -14,16 +14,16 @@ By the end of this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/06-lists/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/06-lists/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/06-lists/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/06-lists/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/06-lists/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/06-lists/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/06-lists/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/06-lists/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/06-lists/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/06-lists/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/06-lists/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/06-lists/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -598,20 +598,20 @@ deep = copy.deepcopy(items)
 const numbers: number[] = [1, 2, 3];
 // or: const numbers: Array<number> = [1, 2, 3];
 
-// Python: lst.append(x) → TypeScript: .push()
+// Python: lst.append(x) â†’ TypeScript: .push()
 numbers.push(4);  // [1, 2, 3, 4]
 
-// Python: lst.pop() → TypeScript: .pop()
+// Python: lst.pop() â†’ TypeScript: .pop()
 const last: number | undefined = numbers.pop();  // 4
 
-// Python: lst.insert(i, x) → TypeScript: .splice()
+// Python: lst.insert(i, x) â†’ TypeScript: .splice()
 numbers.splice(0, 0, 0);  // [0, 1, 2, 3]  (insert at index 0)
 
-// Python: lst.remove(x) → TypeScript: indexOf + splice
+// Python: lst.remove(x) â†’ TypeScript: indexOf + splice
 const idx: number = numbers.indexOf(2);
 if (idx !== -1) numbers.splice(idx, 1);  // [0, 1, 3]
 
-// Python: slicing (lst[1:3]) → TypeScript: .slice()
+// Python: slicing (lst[1:3]) â†’ TypeScript: .slice()
 const sliced: number[] = numbers.slice(1, 3);
 
 // Python: list comprehension [x*2 for x in range(5)]
@@ -621,20 +621,20 @@ const doubled: number[] = [0, 1, 2, 3, 4].map((x) => x * 2);
 // Python: filtered list [x for x in lst if x > 2]
 const filtered: number[] = numbers.filter((x) => x > 2);
 
-// Python: sorted(lst) → TypeScript: .toSorted() (ES2023+)
+// Python: sorted(lst) â†’ TypeScript: .toSorted() (ES2023+)
 const sorted: number[] = [3, 1, 2].toSorted((a, b) => a - b);
 
-// Python: lst.sort() → TypeScript: .sort()
+// Python: lst.sort() â†’ TypeScript: .sort()
 const mutable: number[] = [3, 1, 2];
 mutable.sort((a, b) => a - b);  // mutates in place
 
-// Python: copy.deepcopy() → TypeScript: structuredClone()
+// Python: copy.deepcopy() â†’ TypeScript: structuredClone()
 const nested: number[][] = [[1, 2], [3, 4]];
 const deepCopy: number[][] = structuredClone(nested);
 deepCopy[0][0] = 99;
 console.log(nested[0][0]);  // 1 (original unchanged)
 
-// Python: len(lst) → TypeScript: .length
+// Python: len(lst) â†’ TypeScript: .length
 console.log(numbers.length);
 ```
 
@@ -642,41 +642,41 @@ console.log(numbers.length);
 
 
 ```typescript
-// Python: 2D list (matrix) → TypeScript: nested arrays
+// Python: 2D list (matrix) â†’ TypeScript: nested arrays
 const matrix: number[][] = [
   [1, 2, 3],
   [4, 5, 6],
   [7, 8, 9],
 ];
-// Python: matrix[1][2] → TypeScript: matrix[1][2]
+// Python: matrix[1][2] â†’ TypeScript: matrix[1][2]
 console.log(matrix[1][2]);  // 6
 
-// Python: list flattening → TypeScript: flat()
+// Python: list flattening â†’ TypeScript: flat()
 const nested: number[][] = [[1, 2], [3, 4], [5]];
 console.log(nested.flat());  // [1, 2, 3, 4, 5]
 // Python: [item for sublist in nested for item in sublist]
 
-// Python: any() / all() → TypeScript: .some() / .every()
+// Python: any() / all() â†’ TypeScript: .some() / .every()
 const nums: number[] = [1, 2, 3, 4, 5];
 console.log(nums.some((x) => x > 4));   // true (Python: any(x > 4 for x in nums))
 console.log(nums.every((x) => x > 0));  // true (Python: all(x > 0 for x in nums))
 
-// Python: enumerate with start → TypeScript: entries + map
+// Python: enumerate with start â†’ TypeScript: entries + map
 for (const [i, val] of ["a", "b", "c"].entries()) {
   console.log(`${i}: ${val}`);  // 0: a, 1: b, 2: c
 }
 
-// Python: reversed list → TypeScript: toReversed() (ES2023+)
+// Python: reversed list â†’ TypeScript: toReversed() (ES2023+)
 console.log([1, 2, 3].toReversed());  // [3, 2, 1]
 
-// Python: list.find() → TypeScript: .find()
+// Python: list.find() â†’ TypeScript: .find()
 const found = nums.find((x) => x > 3);  // 4 (first match)
 console.log(found);
 
-// Python: in operator for list → TypeScript: .includes()
+// Python: in operator for list â†’ TypeScript: .includes()
 console.log(nums.includes(3));  // true (Python: 3 in nums)
 
-// Python: slice assignment → TypeScript: splice
+// Python: slice assignment â†’ TypeScript: splice
 const arr: number[] = [1, 2, 3, 4, 5];
 arr.splice(1, 2, 99, 100);  // replaces 2 elements starting at index 1
 console.log(arr);  // [1, 99, 100, 4, 5]
@@ -686,17 +686,17 @@ console.log(arr);  // [1, 99, 100, 4, 5]
 ### TypeScript Sorting & Searching Patterns
 
 ```typescript
-// Python: sorted with reverse → TypeScript: sort with comparator
+// Python: sorted with reverse â†’ TypeScript: sort with comparator
 const unsorted = [3, 1, 4, 1, 5, 9, 2, 6];
 unsorted.sort((a, b) => a - b);    // ascending [1, 1, 2, 3, 4, 5, 6, 9]
 unsorted.sort((a, b) => b - a);    // descending [9, 6, 5, 4, 3, 2, 1, 1]
 
-// Python: sorted with key=str.lower → TypeScript: sort with transform
+// Python: sorted with key=str.lower â†’ TypeScript: sort with transform
 const mixed = ["Banana", "apple", "Cherry"];
 mixed.sort((a, b) => a.localeCompare(b, undefined, { sensitivity: "base" }));
 console.log(mixed);  // ["apple", "Banana", "Cherry"]
 
-// Python: binary search (bisect) → TypeScript: manual implementation
+// Python: binary search (bisect) â†’ TypeScript: manual implementation
 function binarySearch<T>(sorted: T[], target: T): number {
   let left = 0, right = sorted.length - 1;
   while (left <= right) {
@@ -711,18 +711,18 @@ const sorted2 = [1, 3, 5, 7, 9, 11];
 console.log(binarySearch(sorted2, 7));   // 3
 console.log(binarySearch(sorted2, 4));   // -1
 
-// Python: list as stack → TypeScript: push/pop
+// Python: list as stack â†’ TypeScript: push/pop
 const stack: number[] = [];
 stack.push(1); stack.push(2); stack.push(3);
 console.log(stack.pop());  // 3 (LIFO)
 console.log(stack.pop());  // 2
 
-// Python: list as queue (deque preferred) → TypeScript: push/shift
+// Python: list as queue (deque preferred) â†’ TypeScript: push/shift
 const queue2: number[] = [];
 queue2.push(1); queue2.push(2); queue2.push(3);
 console.log(queue2.shift());  // 1 (FIFO)
 
-// Python: random.shuffle → TypeScript: Fisher-Yates
+// Python: random.shuffle â†’ TypeScript: Fisher-Yates
 function shuffle<T>(arr: T[]): T[] {
   const result = [...arr];
   for (let i = result.length - 1; i > 0; i--) {

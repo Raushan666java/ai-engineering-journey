@@ -1,6 +1,6 @@
-# Chapter 12: Capstone — AI Customer Support Platform
+﻿# Chapter 12: Capstone â€” AI Customer Support Platform
 
-> **Build a complete AI-powered customer support platform that integrates every concept from the course: data ingestion, RAG, agent orchestration, safety guardrails, evaluation, production deployment, monitoring, and A/B testing — all with production-grade TypeScript.**
+> **Build a complete AI-powered customer support platform that integrates every concept from the course: data ingestion, RAG, agent orchestration, safety guardrails, evaluation, production deployment, monitoring, and A/B testing â€” all with production-grade TypeScript.**
 
 ## Learning Objectives
 
@@ -9,16 +9,16 @@ After completing this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/modern-ai-engineering/12-capstone-customer-support-platform/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/modern-ai-engineering/12-capstone-customer-support-platform/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/modern-ai-engineering/12-capstone-customer-support-platform/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/modern-ai-engineering/12-capstone-customer-support-platform/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/modern-ai-engineering/12-capstone-customer-support-platform/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/modern-ai-engineering/12-capstone-customer-support-platform/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/modern-ai-engineering/12-capstone-customer-support-platform/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/modern-ai-engineering/12-capstone-customer-support-platform/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/modern-ai-engineering/12-capstone-customer-support-platform/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/modern-ai-engineering/12-capstone-customer-support-platform/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/modern-ai-engineering/12-capstone-customer-support-platform/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/modern-ai-engineering/12-capstone-customer-support-platform/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -1020,7 +1020,7 @@ class EvaluationPipeline {
       results.push(result);
 
       console.log(
-        `${result.passed ? "✓" : "✗"} ${sample.query.slice(0, 50)}... ` +
+        `${result.passed ? "âœ“" : "âœ—"} ${sample.query.slice(0, 50)}... ` +
         `relevance=${result.metrics.answerRelevance.toFixed(2)} ` +
         `faithfulness=${result.metrics.faithfulness.toFixed(2)} ` +
         `intent=${result.metrics.intentAccuracy}`
@@ -1056,7 +1056,7 @@ class EvaluationPipeline {
     const inputSafety = await this.guardrails.checkInput(sample.query);
     const outputSafety = await this.guardrails.checkOutput(result.response);
 
-    // Compute metrics (simplified — in production, use LLM-as-judge)
+    // Compute metrics (simplified â€” in production, use LLM-as-judge)
     const metrics = {
       answerRelevance: this.computeRelevance(result.response, sample.expectedAnswer),
       faithfulness: this.computeFaithfulness(result.response, sample.expectedAnswer),
@@ -1081,7 +1081,7 @@ class EvaluationPipeline {
   }
 
   private computeRelevance(generated: string, expected: string): number {
-    // Simplified relevance scoring — in production, use LLM-as-judge
+    // Simplified relevance scoring â€” in production, use LLM-as-judge
     const expectedWords = new Set(expected.toLowerCase().split(" "));
     const generatedWords = generated.toLowerCase().split(" ");
     const matched = generatedWords.filter((w) => expectedWords.has(w)).length;
@@ -1866,15 +1866,15 @@ class SupportAgent {
 
 ## Summary
 
-The AI Customer Support Platform capstone demonstrates how every concept from the course integrates into a production-grade system. The architecture consists of eight subsystems: knowledge base ingestion (document processing, chunking, embedding, vector indexing), RAG answer retrieval (query processing, dense/hybrid retrieval, re-ranking, citation-backed synthesis), agent orchestration (intent detection, tool calling for orders/returns, multi-step resolution workflows), safety guardrails (input filtering for harmful content and prompt injection, output moderation for PII and toxicity), evaluation pipeline (automated scoring with relevance, faithfulness, intent accuracy, and safety metrics), production deployment (Docker Compose with API replicas, pgvector, Redis, Prometheus, Grafana), monitoring (latency, cost, quality, safety metrics with alert rules), and A/B testing (variant assignment for prompts, models, and retrieval strategies with statistical analysis). The `SupportAgent` class ties everything together — it rate-limits, safety-checks, caches, routes through A/B variants, orchestrates the appropriate workflow, logs metrics, and tracks costs in a single unified handler. The system is designed for iterative improvement: every prompt, model, and retrieval strategy can be A/B tested; every response is evaluated against quality metrics; every incident triggers a defined playbook with immediate actions, investigation steps, and resolution procedures.
+The AI Customer Support Platform capstone demonstrates how every concept from the course integrates into a production-grade system. The architecture consists of eight subsystems: knowledge base ingestion (document processing, chunking, embedding, vector indexing), RAG answer retrieval (query processing, dense/hybrid retrieval, re-ranking, citation-backed synthesis), agent orchestration (intent detection, tool calling for orders/returns, multi-step resolution workflows), safety guardrails (input filtering for harmful content and prompt injection, output moderation for PII and toxicity), evaluation pipeline (automated scoring with relevance, faithfulness, intent accuracy, and safety metrics), production deployment (Docker Compose with API replicas, pgvector, Redis, Prometheus, Grafana), monitoring (latency, cost, quality, safety metrics with alert rules), and A/B testing (variant assignment for prompts, models, and retrieval strategies with statistical analysis). The `SupportAgent` class ties everything together â€” it rate-limits, safety-checks, caches, routes through A/B variants, orchestrates the appropriate workflow, logs metrics, and tracks costs in a single unified handler. The system is designed for iterative improvement: every prompt, model, and retrieval strategy can be A/B tested; every response is evaluated against quality metrics; every incident triggers a defined playbook with immediate actions, investigation steps, and resolution procedures.
 
 ## Practical Takeaways
 
-1. **Start with RAG for customer support** — a well-tuned RAG system resolves 60-80% of common customer inquiries with grounded, citation-backed answers. Reserve agent tool calling for actions that modify system state (orders, returns, refunds)
-2. **Implement guardrails at both input and output** — input filtering prevents harmful requests and prompt injection, while output filtering prevents PII leakage and toxic responses. Never trust either direction
-3. **A/B test everything systematically** — prompt style, model tier, retrieval strategy, and temperature all affect customer satisfaction. Run experiments with 100+ conversations per variant before declaring winners
-4. **Build the evaluation pipeline before launch** — a comprehensive eval dataset with 50-100 samples across all intents catches regressions before they reach customers. Run it as part of CI/CD
-5. **Monitor business metrics, not just technical metrics** — track resolution rate, customer satisfaction, human handoff rate, and cost per conversation alongside latency and error rates
+1. **Start with RAG for customer support** â€” a well-tuned RAG system resolves 60-80% of common customer inquiries with grounded, citation-backed answers. Reserve agent tool calling for actions that modify system state (orders, returns, refunds)
+2. **Implement guardrails at both input and output** â€” input filtering prevents harmful requests and prompt injection, while output filtering prevents PII leakage and toxic responses. Never trust either direction
+3. **A/B test everything systematically** â€” prompt style, model tier, retrieval strategy, and temperature all affect customer satisfaction. Run experiments with 100+ conversations per variant before declaring winners
+4. **Build the evaluation pipeline before launch** â€” a comprehensive eval dataset with 50-100 samples across all intents catches regressions before they reach customers. Run it as part of CI/CD
+5. **Monitor business metrics, not just technical metrics** â€” track resolution rate, customer satisfaction, human handoff rate, and cost per conversation alongside latency and error rates
 
 ## Chapter Quiz
 

@@ -1,4 +1,4 @@
-# Job Search Strategy for Indian IT Professionals
+﻿# Job Search Strategy for Indian IT Professionals
 
 ## Learning Objectives
 
@@ -7,16 +7,16 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/job-preparation/02-job-search-strategy/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/job-preparation/02-job-search-strategy/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/job-preparation/02-job-search-strategy/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/job-preparation/02-job-search-strategy/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/job-preparation/02-job-search-strategy/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/job-preparation/02-job-search-strategy/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/job-preparation/02-job-search-strategy/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/job-preparation/02-job-search-strategy/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/job-preparation/02-job-search-strategy/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/job-preparation/02-job-search-strategy/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/job-preparation/02-job-search-strategy/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/job-preparation/02-job-search-strategy/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -1136,7 +1136,7 @@ console.log('Source effectiveness:', myTracker.getSourceEffectiveness());
 
 ## Summary
 
-A successful job search in the Indian IT landscape requires a multi-channel approach combining job portals, networking, referrals, and direct outreach. For private sector roles, LinkedIn and Naukri should be your primary platforms, supplemented by referrals for the hidden job market. For government positions, maintain a rigorous notification tracking system and apply the moment vacancies are announced. Campus placement drives should be complemented with off-campus preparation as a backup. Track everything — applications, interviews, follow-ups — using the TypeScript tracker provided or a spreadsheet. The key metric is not just the number of applications, but the response rate, which improves dramatically with referrals, customization, and timely follow-ups.
+A successful job search in the Indian IT landscape requires a multi-channel approach combining job portals, networking, referrals, and direct outreach. For private sector roles, LinkedIn and Naukri should be your primary platforms, supplemented by referrals for the hidden job market. For government positions, maintain a rigorous notification tracking system and apply the moment vacancies are announced. Campus placement drives should be complemented with off-campus preparation as a backup. Track everything â€” applications, interviews, follow-ups â€” using the TypeScript tracker provided or a spreadsheet. The key metric is not just the number of applications, but the response rate, which improves dramatically with referrals, customization, and timely follow-ups.
 
 ## Practical Takeaways
 
@@ -1144,9 +1144,9 @@ A successful job search in the Indian IT landscape requires a multi-channel appr
 2. Spend 70% of your job search time on networking and referrals, 30% on portal applications
 3. Create and maintain a government job notification tracker (use the TypeScript tool provided)
 4. Send at least 5 personalized LinkedIn messages per day to recruiters and hiring managers at target companies
-5. Apply within 24-48 hours of job posting — early applicants get 3x more responses
-6. Maintain a 70% follow-up rate — most candidates give up after one email
+5. Apply within 24-48 hours of job posting â€” early applicants get 3x more responses
+6. Maintain a 70% follow-up rate â€” most candidates give up after one email
 7. Never accept a referral request without first researching the company and role thoroughly
 8. Balance campus placement preparation with off-campus applications to avoid dependence on one channel
 9. Use the application tracker to measure source effectiveness and double down on what works
-10. Government job applications require patience — set up alerts and check notifications daily without fail
+10. Government job applications require patience â€” set up alerts and check notifications daily without fail

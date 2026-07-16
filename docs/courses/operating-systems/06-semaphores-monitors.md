@@ -1,4 +1,4 @@
-# Chapter 6: Semaphores & Monitors
+﻿# Chapter 6: Semaphores & Monitors
 
 **<< [Process Synchronization](./05-synchronization.md)** | [**Next: Deadlocks**](./07-deadlocks.md) >>
 
@@ -21,16 +21,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/operating-systems/06-semaphores-monitors/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/operating-systems/06-semaphores-monitors/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/operating-systems/06-semaphores-monitors/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/operating-systems/06-semaphores-monitors/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/operating-systems/06-semaphores-monitors/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/operating-systems/06-semaphores-monitors/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/operating-systems/06-semaphores-monitors/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/operating-systems/06-semaphores-monitors/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/operating-systems/06-semaphores-monitors/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/operating-systems/06-semaphores-monitors/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/operating-systems/06-semaphores-monitors/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/operating-systems/06-semaphores-monitors/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -69,7 +69,7 @@ flowchart LR
 ### 1.1 What is a Semaphore?
 
 
-A **semaphore** is an integer variable `S` accessed exclusively through two atomic operations: `wait(S)` (P → _proberen_, "to test" in Dutch) and `signal(S)` (V → _verhogen_, "to increment" in Dutch). Edsger Dijkstra introduced semaphores in 1965 as a fundamental synchronization primitive.
+A **semaphore** is an integer variable `S` accessed exclusively through two atomic operations: `wait(S)` (P â†’ _proberen_, "to test" in Dutch) and `signal(S)` (V â†’ _verhogen_, "to increment" in Dutch). Edsger Dijkstra introduced semaphores in 1965 as a fundamental synchronization primitive.
 
 **Real-World Analogy: Online Ticket Booking System**
 
@@ -79,9 +79,9 @@ A concert venue has 100 seats. The ticketing system behaves exactly like a count
 - `wait(S)` = booking a seat (if one is available)
 - `signal(S)` = cancelling a booking (releasing a seat)
 
-**Numbered Steps → How a Semaphore Works:**
+**Numbered Steps â†’ How a Semaphore Works:**
 
-1. Thread calls `wait(S)` → operation enters the atomic critical section
+1. Thread calls `wait(S)` â†’ operation enters the atomic critical section
 2. System reads current value of `S`
 3. If `S > 0`: decrement `S` by 1, thread proceeds immediately
 4. If `S == 0`: thread is **blocked** and placed in the semaphore's waiting queue
@@ -132,7 +132,7 @@ signal(Semaphore S):
 
 **Key invariant**: When `S.value < 0`, `|S.value|` = number of processes blocked on that semaphore.
 
-**Dry Run Trace Table → Single Semaphore, Two Threads:**
+**Dry Run Trace Table â†’ Single Semaphore, Two Threads:**
 
 | Step | Thread | Operation | S (before) | Condition | S (after) | Blocked Queue | Ready Queue |
 |------|--------|-----------|-----------|-----------|-----------|--------------|-------------|
@@ -249,10 +249,10 @@ print(f"Final value: {shared}")
 
 | Advantages | Disadvantages |
 |-----------|--------------|
-| Simple integer API → easy to understand conceptually | No ownership → any thread can signal, enabling accidental wake-ups |
-| Efficient O(1) operations in uncontended case | Low-level → easy to forget signal() causing deadlock |
+| Simple integer API â†’ easy to understand conceptually | No ownership â†’ any thread can signal, enabling accidental wake-ups |
+| Efficient O(1) operations in uncontended case | Low-level â†’ easy to forget signal() causing deadlock |
 | Both mutual exclusion and synchronization in one primitive | Binary semaphore != mutex (lack of ownership causes subtle bugs) |
-| Counting variant naturally models resource pools | No compiler enforcement → errors are runtime-only |
+| Counting variant naturally models resource pools | No compiler enforcement â†’ errors are runtime-only |
 | Blocking (not busy-wait) conserves CPU | Prone to deadlock, starvation, and priority inversion |
 
 **Edge Cases:**
@@ -265,10 +265,10 @@ print(f"Final value: {shared}")
 | **Spurious wakeup** | OS wakes a thread waiting on semaphore | Thread proceeds even if count == 0 | Always re-check count in while() loop |
 | **Priority inversion** | High-prio thread blocks on low-prio thread holding sem | Low-prio thread may be preempted by medium-prio | Use priority inheritance protocol |
 
-### 1.2 Wait (P) and Signal (V) Operations → Deep Dive
+### 1.2 Wait (P) and Signal (V) Operations â†’ Deep Dive
 
 
-**Numbered Steps → wait(S) in the Blocking Variant:**
+**Numbered Steps â†’ wait(S) in the Blocking Variant:**
 
 1. Disable interrupts (or acquire internal spinlock)
 2. Decrement `S.value` by 1: `S.value = S.value - 1`
@@ -280,7 +280,7 @@ print(f"Final value: {shared}")
 8. Re-enable interrupts
 9. Invoke CPU scheduler to pick next ready thread
 
-**Numbered Steps → signal(S) in the Blocking Variant:**
+**Numbered Steps â†’ signal(S) in the Blocking Variant:**
 
 1. Disable interrupts (or acquire internal spinlock)
 2. Increment `S.value` by 1: `S.value = S.value + 1`
@@ -292,7 +292,7 @@ print(f"Final value: {shared}")
 8. Re-enable interrupts
 9. (Optional) If scheduler is preemptive, yield CPU to let the newly-ready thread run
 
-**Dry Run Trace → Producer-Consumer with Binary Semaphore:**
+**Dry Run Trace â†’ Producer-Consumer with Binary Semaphore:**
 
 Setup: `sem = 1` (binary). Two threads: T1 (producer), T2 (consumer).
 
@@ -306,7 +306,7 @@ Setup: `sem = 1` (binary). Two threads: T1 (producer), T2 (consumer).
 | 6 | T2 | signal(sem) | 0 | [] | T2 increments to 1 |
 | 7 | T1 | wait(sem) | 1 | [] | T1 decrements to 0, enters CS |
 
-### 1.3 Binary vs Counting Semaphore → Detailed Comparison
+### 1.3 Binary vs Counting Semaphore â†’ Detailed Comparison
 
 
 | Property | Binary Semaphore | Counting Semaphore |
@@ -317,7 +317,7 @@ Setup: `sem = 1` (binary). Two threads: T1 (producer), T2 (consumer).
 | **Resource model** | Single resource (one key, one door) | Multiple identical resources (N keys, one door) |
 | **wait() when 0** | Blocks thread | Blocks thread |
 | **signal() when 1** | No effect on value (stays 1) | May increase beyond 1 |
-| **Used as mutex?** | Yes, with caution (no ownership) | No → would allow >1 thread into CS |
+| **Used as mutex?** | Yes, with caution (no ownership) | No â†’ would allow >1 thread into CS |
 | **Implementation** | Can be built from counting semaphore with max=1 | Generalization of binary semaphore |
 | **Typical use** | Lock protection, thread rendezvous | Resource pools, bounded queues |
 
@@ -387,11 +387,11 @@ def park(car_id):
 
 ---
 
-## 2. Semaphore vs Mutex → Critical Comparison
+## 2. Semaphore vs Mutex â†’ Critical Comparison
 
 | Property | Semaphore (Binary) | Mutex |
 |----------|-------------------|-------|
-| **Ownership** | None → any thread can signal | Yes → only owning thread can unlock |
+| **Ownership** | None â†’ any thread can signal | Yes â†’ only owning thread can unlock |
 | **Initial state** | Configurable (0 or 1) | Always unlocked initially |
 | **Unlock by wrong thread** | Allowed (can cause bugs) | UB or error (checked in debug builds) |
 | **Reentrant (recursive)** | No | Yes (many implementations) |
@@ -402,9 +402,9 @@ def park(car_id):
 
 **When to use which?**
 
-Use a **mutex** when you need to protect shared data → only one thread should read/write at a time. Use a **semaphore** when you need to signal between threads or count available resources.
+Use a **mutex** when you need to protect shared data â†’ only one thread should read/write at a time. Use a **semaphore** when you need to signal between threads or count available resources.
 
-**Demonstration → Why Binary Semaphore Is Not a Mutex:**
+**Demonstration â†’ Why Binary Semaphore Is Not a Mutex:**
 
 ```cpp
 #include <iostream>
@@ -418,7 +418,7 @@ void bad_behavior() {
     // Thread 1 acquires the semaphore
     sem_wait(&sem);
     shared = 42;
-    // Thread 1 exits without signaling → DEADLOCK for others
+    // Thread 1 exits without signaling â†’ DEADLOCK for others
 }
 
 void wrong_thread_signals() {
@@ -431,7 +431,7 @@ int main() {
     sem_init(&sem, 0, 1);
     std::thread t1(bad_behavior);
     t1.join();
-    // Now sem == 0 permanently → any future thread is stuck
+    // Now sem == 0 permanently â†’ any future thread is stuck
     // THIS CANNOT HAPPEN WITH A MUTEX (unless buggy code)
     sem_destroy(&sem);
     return 0;
@@ -454,18 +454,18 @@ A mutex would detect this: unlocking from the wrong thread returns an error or c
 **Numbered Steps:**
 
 1. Producer creates an item
-2. Producer calls `wait(empty)` → decrements empty-slot counter
+2. Producer calls `wait(empty)` â†’ decrements empty-slot counter
 3. If no empty slots, producer blocks
-4. Producer calls `wait(mutex)` → locks buffer for exclusive access
+4. Producer calls `wait(mutex)` â†’ locks buffer for exclusive access
 5. Producer places item into buffer at position `in`
-6. Producer calls `signal(mutex)` → releases buffer lock
-7. Producer calls `signal(full)` → increments full-slot counter, wakes consumer
-8. Consumer calls `wait(full)` → decrements full-slot counter
+6. Producer calls `signal(mutex)` â†’ releases buffer lock
+7. Producer calls `signal(full)` â†’ increments full-slot counter, wakes consumer
+8. Consumer calls `wait(full)` â†’ decrements full-slot counter
 9. If no items available, consumer blocks
-10. Consumer calls `wait(mutex)` → locks buffer
+10. Consumer calls `wait(mutex)` â†’ locks buffer
 11. Consumer removes item from buffer at position `out`
-12. Consumer calls `signal(mutex)` → releases buffer
-13. Consumer calls `signal(empty)` → increments empty-slot counter, wakes producer
+12. Consumer calls `signal(mutex)` â†’ releases buffer
+13. Consumer calls `signal(empty)` â†’ increments empty-slot counter, wakes producer
 
 **Pseudocode:**
 
@@ -495,7 +495,7 @@ consumer():
         consume(item)
 ```
 
-**Dry Run Trace Table → Buffer Size N=3, 1 Producer, 1 Consumer:**
+**Dry Run Trace Table â†’ Buffer Size N=3, 1 Producer, 1 Consumer:**
 
 | Step | Action | empty | full | mutex | Buffer State | Queue (blocked) |
 |------|--------|-------|------|-------|-------------|-----------------|
@@ -670,27 +670,27 @@ for t in threads:
 
 | Metric | Value | Why |
 |--------|-------|-----|
-| **Time → produce (no contention)** | O(1) | Two wait + two signal = 4 O(1) ops |
-| **Time → produce (buffer full)** | O(1) block + O(n) wake | Blocked thread, scheduler overhead |
-| **Time → consume (no contention)** | O(1) | Same as above |
-| **Space → buffer** | O(N) | N slots for items |
-| **Space → semaphores** | O(1) | Three semaphore structures |
+| **Time â†’ produce (no contention)** | O(1) | Two wait + two signal = 4 O(1) ops |
+| **Time â†’ produce (buffer full)** | O(1) block + O(n) wake | Blocked thread, scheduler overhead |
+| **Time â†’ consume (no contention)** | O(1) | Same as above |
+| **Space â†’ buffer** | O(N) | N slots for items |
+| **Space â†’ semaphores** | O(1) | Three semaphore structures |
 | **Throughput bound** | O(1) per item | Linear in threads, constant per item |
 
 **Advantages & Disadvantages:**
 
 | Advantages | Disadvantages |
 |-----------|--------------|
-| Decouples producers from consumers (no direct knowledge) | Buffer size is fixed → may waste space or be insufficient |
-| Handles burst production/consumption | Semaphore ordering is critical → reversed wait() causes deadlock |
+| Decouples producers from consumers (no direct knowledge) | Buffer size is fixed â†’ may waste space or be insufficient |
+| Handles burst production/consumption | Semaphore ordering is critical â†’ reversed wait() causes deadlock |
 | Supports multiple producers and consumers | Must ensure mutex + empty/full ordering (wait(empty) before wait(mutex)) |
-| No busy-waiting → threads block efficiently | Not suitable for distributed systems |
+| No busy-waiting â†’ threads block efficiently | Not suitable for distributed systems |
 
 **Edge Cases:**
 
 | Case | Issue | Resolution |
 |------|-------|------------|
-| **Buffer full + mutex locked first** | Deadlock: Producer holds mutex, waits on empty → consumer can't get mutex to signal empty | Always wait(empty) before wait(mutex) |
+| **Buffer full + mutex locked first** | Deadlock: Producer holds mutex, waits on empty â†’ consumer can't get mutex to signal empty | Always wait(empty) before wait(mutex) |
 | **Spurious wakeup of producer** | Buffer may be full when producer resumes | Wrap wait in while() loop |
 | **Multiple consumers wake** | All consumers find buffer has 1 item; only one gets it | while(count==0) loop ensures re-check |
 | **Producer much faster than consumer** | Buffer stays full; producer blocks frequently | Increase buffer size or add more consumers |
@@ -705,22 +705,22 @@ for t in threads:
 
 **Real-World Analogy:** A library study room. Multiple people can read silently together (readers). If someone wants to reorganize the shelves (writer), everyone must leave and the door locks until the reorganization is complete.
 
-**Numbered Steps → Readers-Priority Variant:**
+**Numbered Steps â†’ Readers-Priority Variant:**
 
 1. Reader calls `wait(mutex)` to update reader count
 2. Reader increments `read_count`
-3. If this is the first reader (`read_count == 1`), reader calls `wait(rw_mutex)` → locks out writers
-4. Reader calls `signal(mutex)` → releases reader-count lock
+3. If this is the first reader (`read_count == 1`), reader calls `wait(rw_mutex)` â†’ locks out writers
+4. Reader calls `signal(mutex)` â†’ releases reader-count lock
 5. Reader reads the shared data (multiple readers can be here simultaneously)
 6. Reader calls `wait(mutex)` again to update reader count
 7. Reader decrements `read_count`
-8. If this is the last reader (`read_count == 0`), reader calls `signal(rw_mutex)` → lets writers in
-9. Reader calls `signal(mutex)` → releases reader-count lock
+8. If this is the last reader (`read_count == 0`), reader calls `signal(rw_mutex)` â†’ lets writers in
+9. Reader calls `signal(mutex)` â†’ releases reader-count lock
 
 **Writer Steps:**
-1. Writer calls `wait(rw_mutex)` → waits until no readers and no other writer
+1. Writer calls `wait(rw_mutex)` â†’ waits until no readers and no other writer
 2. Writer modifies shared data (exclusive access)
-3. Writer calls `signal(rw_mutex)` → releases exclusive access
+3. Writer calls `signal(rw_mutex)` â†’ releases exclusive access
 
 **Pseudocode:**
 
@@ -752,7 +752,7 @@ writer():
     signal(rw_mutex)
 ```
 
-**Dry Run Trace → Readers-Writers (Readers-Priority):**
+**Dry Run Trace â†’ Readers-Writers (Readers-Priority):**
 
 | Step | Thread | Op | read_count | rw_mutex | mutex | Queue |
 |------|--------|----|-----------|----------|-------|-------|
@@ -910,9 +910,9 @@ for t in threads: t.join()
 
 | Metric | Value | Why |
 |--------|-------|-----|
-| **Time → reader (no writer)** | O(1) | Two mutex lock/unlock, no writer semaphore wait |
-| **Time → reader (writer active)** | O(1) block | Blocked on rw_mutex until writer finishes |
-| **Time → writer (no contention)** | O(1) | Single wait/signal on rw_mutex |
+| **Time â†’ reader (no writer)** | O(1) | Two mutex lock/unlock, no writer semaphore wait |
+| **Time â†’ reader (writer active)** | O(1) block | Blocked on rw_mutex until writer finishes |
+| **Time â†’ writer (no contention)** | O(1) | Single wait/signal on rw_mutex |
 | **Space** | O(1) | Two semaphores + integer |
 
 **Advantages & Disadvantages:**
@@ -941,7 +941,7 @@ for t in threads: t.join()
 
 **Real-World Analogy:** Five people at a round dinner table sharing forks. Each person needs both their left and right fork to eat. They can't reach across the table. This models resource contention where processes need multiple resources simultaneously.
 
-**Numbered Steps → Naive (Deadlock-Prone) Version:**
+**Numbered Steps â†’ Naive (Deadlock-Prone) Version:**
 
 1. Philosopher thinks for a random amount of time
 2. Philosopher picks up left chopstick: `wait(chopsticks[left])`
@@ -953,7 +953,7 @@ for t in threads: t.join()
 
 **Deadlock Scenario:** All 5 philosophers pick up their left chopstick simultaneously. Each holds one chopstick and waits for the right one. Nobody releases. **Deadlock.**
 
-**Pseudocode → Deadlock-Free (Waiter/Asymmetric):**
+**Pseudocode â†’ Deadlock-Free (Waiter/Asymmetric):**
 
 ```
 // Solution: Limit to 4 philosophers eating simultaneously
@@ -971,7 +971,7 @@ philosopher(id):
         signal(chopsticks[right])
         signal(limit)        // Release permit
 
-// Alternative: Asymmetric → odd pick left first, even pick right first
+// Alternative: Asymmetric â†’ odd pick left first, even pick right first
 philosopher_asymmetric(id):
     while true:
         think()
@@ -986,7 +986,7 @@ philosopher_asymmetric(id):
         signal(chopsticks[right])
 ```
 
-**Dry Run Trace → Deadlock Scenario (All 5 pick up left):**
+**Dry Run Trace â†’ Deadlock Scenario (All 5 pick up left):**
 
 | Step | P0 | P1 | P2 | P3 | P4 | Chopsticks state | Blocked |
 |------|----|----|----|----|----|-----------------|---------|
@@ -997,7 +997,7 @@ philosopher_asymmetric(id):
 | 4 | pick L(0) | pick L(1) | pick L(2) | pick L(3) | think | [0,0,0,0,1] | |
 | 5 | pick L(0) | pick L(1) | pick L(2) | pick L(3) | pick L(4) | [0,0,0,0,0] | |
 | 6 | pick R(1) | pick R(2) | pick R(3) | pick R(4) | pick R(0) | [0,0,0,0,0] | ALL DEADLOCKED |
-**C++ Implementation (Dining Philosophers → Deadlock-Free):**
+**C++ Implementation (Dining Philosophers â†’ Deadlock-Free):**
 
 ```cpp
 #include <iostream>
@@ -1106,8 +1106,8 @@ for t in threads: t.join()
 
 | Metric | Value | Why |
 |--------|-------|-----|
-| **Time → eat (no contention)** | O(1) | Two wait + two signal on chopsticks |
-| **Time → eat (contention)** | O(n) block | At most N-1 philosophers may compete |
+| **Time â†’ eat (no contention)** | O(1) | Two wait + two signal on chopsticks |
+| **Time â†’ eat (contention)** | O(n) block | At most N-1 philosophers may compete |
 | **Space** | O(N) | N chopstick semaphores + limit semaphore |
 | **Deadlock prevention overhead** | O(1) per eat | Single extra semaphore check |
 
@@ -1115,7 +1115,7 @@ for t in threads: t.join()
 
 | Advantages | Disadvantages |
 |-----------|--------------|
-| Simple conceptual model for resource contention | Naive solution deadlocks → all can pick up left fork |
+| Simple conceptual model for resource contention | Naive solution deadlocks â†’ all can pick up left fork |
 | Can be solved without deadlock via 4 strategies | Starvation possible if some philosophers eat more often |
 | Illustrates circular wait condition | Does not model general resource allocation (only 2 resources per process) |
 | Multiple known correct solutions | Some solutions reduce concurrency (e.g., limit=4) |
@@ -1126,7 +1126,7 @@ for t in threads: t.join()
 |------|-------|------------|
 | **All pick up left simultaneously** | Circular wait deadlock | Limit to N-1 eaters OR asymmetric pickup |
 | **Fast eater, slow thinker** | Starvation of others (can grab chopsticks repeatedly) | Add fairness: must wait after eating |
-| **One philosopher holds both forever** | Neighbors starve | Add timeout → release if can't get both |
+| **One philosopher holds both forever** | Neighbors starve | Add timeout â†’ release if can't get both |
 | **Philosopher dies while holding** | Resource leak | RAII wrapper for chopsticks |
 
 ---
@@ -1136,7 +1136,7 @@ for t in threads: t.join()
 
 **Scenario:** A barbershop has one barber, one barber chair, and N waiting chairs. If no customers, the barber sleeps. If a customer arrives and all chairs are full, the customer leaves. If the barber is busy, the customer sits in a waiting chair. This models bounded-buffer with a single server.
 
-**Real-World Analogy:** A small barbershop. The barber sleeps when no one is there. Customers arrive → if a waiting seat is free, they sit. If the barber is asleep, the customer wakes them. If all seats are full, the customer leaves.
+**Real-World Analogy:** A small barbershop. The barber sleeps when no one is there. Customers arrive â†’ if a waiting seat is free, they sit. If the barber is asleep, the customer wakes them. If all seats are full, the customer leaves.
 
 **Numbered Steps:**
 
@@ -1146,19 +1146,19 @@ for t in threads: t.join()
    - Increment `waiting_customers`
    - Customer sits in waiting chair
    - Customer calls `signal(mutex)`
-   - Customer calls `wait(barber_ready)` → waits for barber
+   - Customer calls `wait(barber_ready)` â†’ waits for barber
    - Customer gets haircut
    - Customer calls `wait(mutex)` to update count
    - Decrement `waiting_customers`
-   - Customer calls `signal(customer_done)` → signals barber to accept next
+   - Customer calls `signal(customer_done)` â†’ signals barber to accept next
    - Customer calls `signal(mutex)`
    - Customer leaves
 4. If waiting customers >= N:
    - Customer calls `signal(mutex)` and leaves the shop
 
 **Barber Steps:**
-1. Barber calls `wait(customer_done)` → waits for a customer
-2. Barber signals `barber_ready` → invites next customer
+1. Barber calls `wait(customer_done)` â†’ waits for a customer
+2. Barber signals `barber_ready` â†’ invites next customer
 3. Barber gives haircut
 4. Go to step 1
 
@@ -1189,7 +1189,7 @@ customer():
         signal(customer_done) // Tell barber we're done
         signal(mutex)
     else:
-        signal(mutex)         // No chairs → leave
+        signal(mutex)         // No chairs â†’ leave
         // Customer leaves without haircut
 ```
 
@@ -1334,25 +1334,25 @@ time.sleep(0.5)
 
 | Metric | Value | Why |
 |--------|-------|-----|
-| **Time → haircut (no wait)** | O(1) | Single customer, barber idle |
-| **Time → customer arrival (chairs full)** | O(1) | Check and leave immediately |
-| **Time → customer arrival (chairs avail)** | O(1) block | May wait on barber_ready |
-| **Space → waiting chairs** | O(N) | N semaphore slots |
+| **Time â†’ haircut (no wait)** | O(1) | Single customer, barber idle |
+| **Time â†’ customer arrival (chairs full)** | O(1) | Check and leave immediately |
+| **Time â†’ customer arrival (chairs avail)** | O(1) block | May wait on barber_ready |
+| **Space â†’ waiting chairs** | O(N) | N semaphore slots |
 | **Maximum throughput** | 1 haircut / unit time | Single barber (bottleneck) |
 
 **Advantages & Disadvantages:**
 
 | Advantages | Disadvantages |
 |-----------|--------------|
-| Models bounded server with overflow handling | Single server → limited throughput |
-| No busy-waiting → barber sleeps | Customers may be turned away even if barber idle momentarily |
+| Models bounded server with overflow handling | Single server â†’ limited throughput |
+| No busy-waiting â†’ barber sleeps | Customers may be turned away even if barber idle momentarily |
 | Naturally prevents buffer overflow | Hard to extend to multiple barbers |
 
 **Edge Cases:**
 
 | Case | Issue | Resolution |
 |------|-------|------------|
-| **Customer arrives while barber cutting** | Must wait → handled by customer_done/barber_ready | Correct by design |
+| **Customer arrives while barber cutting** | Must wait â†’ handled by customer_done/barber_ready | Correct by design |
 | **Barber asleep, customer arrives** | Customer wakes barber via customer_done.signal() | Correct by design |
 | **All chairs full + barber idle** | Customer leaves unnecessarily | Unlikely with correct semaphore counts |
 | **Barber dies** | All future customers wait forever | Heartbeat/watchdog mechanism |
@@ -1418,7 +1418,7 @@ smoker_with_matches():
         signal(agent)
 ```
 
-**Key insight**: The agent generates ingredients non-deterministically. Only one smoker can proceed per round. The agent waits for the smoker to finish before generating more ingredients → otherwise ingredients would pile up.
+**Key insight**: The agent generates ingredients non-deterministically. Only one smoker can proceed per round. The agent waits for the smoker to finish before generating more ingredients â†’ otherwise ingredients would pile up.
 
 **C++ Implementation:**
 
@@ -1545,10 +1545,10 @@ for t in threads: t.join()
 
 | Metric | Value | Why |
 |--------|-------|-----|
-| **Time → one round** | O(1) | One agent + one smoker, constant ops |
+| **Time â†’ one round** | O(1) | One agent + one smoker, constant ops |
 | **Space** | O(1) | 4 semaphores |
 | **Throughput** | 1 cigarette per round | Agent waits for smoker to finish |
-| **Fairness** | Random → depends on RNG | All smokers eventually served |
+| **Fairness** | Random â†’ depends on RNG | All smokers eventually served |
 
 **Advantages & Disadvantages:**
 
@@ -1562,13 +1562,13 @@ for t in threads: t.join()
 
 | Case | Issue | Resolution |
 |------|-------|------------|
-| **Agent runs before smokers ready** | Ingredient signals lost if no smoker waiting | Signal is persistent → semaphore count increments |
-| **Two smokers share ingredient** | Not possible → each has unique ingredient | Design ensures exactly one smoker per ingredient combo |
-| **Agent starvation** | Agent blocked on agent_sem | Not possible → each smoker signals agent after smoking |
+| **Agent runs before smokers ready** | Ingredient signals lost if no smoker waiting | Signal is persistent â†’ semaphore count increments |
+| **Two smokers share ingredient** | Not possible â†’ each has unique ingredient | Design ensures exactly one smoker per ingredient combo |
+| **Agent starvation** | Agent blocked on agent_sem | Not possible â†’ each smoker signals agent after smoking |
 
 ---
 
-## 4. Semaphore vs Counting Semaphore → Comprehensive Comparison
+## 4. Semaphore vs Counting Semaphore â†’ Comprehensive Comparison
 
 | Property | Binary Semaphore | Counting Semaphore |
 |----------|-----------------|-------------------|
@@ -1595,7 +1595,7 @@ for t in threads: t.join()
 ### 5.1 Monitor Definition and Structure
 
 
-A **monitor** (Hoare, 1974; Brinch Hansen, 1973) is a high-level synchronization construct that encapsulates shared data, operations on that data, and synchronization into a single abstraction. A monitor guarantees **only one thread can be active inside the monitor at a time** → mutual exclusion is automatic.
+A **monitor** (Hoare, 1974; Brinch Hansen, 1973) is a high-level synchronization construct that encapsulates shared data, operations on that data, and synchronization into a single abstraction. A monitor guarantees **only one thread can be active inside the monitor at a time** â†’ mutual exclusion is automatic.
 
 **Formal Structure:**
 
@@ -1610,7 +1610,7 @@ monitor MonitorName {
         shared_data = 0;
     }
 
-    // Public procedures → mutual exclusion enforced by compiler
+    // Public procedures â†’ mutual exclusion enforced by compiler
     public void operation1() {
         // Automatically acquires monitor lock
         ...
@@ -1627,7 +1627,7 @@ monitor MonitorName {
 - Only one thread can execute inside the monitor at any time
 - Threads that call monitor procedures while another thread is inside are blocked
 - Condition variables provide scheduling synchronization inside the monitor
-- The compiler/runtime ensures mutual exclusion → programmer cannot forget lock/unlock
+- The compiler/runtime ensures mutual exclusion â†’ programmer cannot forget lock/unlock
 
 **Real-World Analogy:** A bank teller window. Only one customer at a time can stand at the window (mutual exclusion). If the customer needs a manager's approval (condition variable), they step aside, let other customers proceed, and wait until the manager is available.
 
@@ -1656,7 +1656,7 @@ A **condition variable** is a queue of threads waiting for a specific condition 
 | **Context switches** | 2 per signal (signaler out, waiter in, waiter out, signaler in) | 0-1 per signal (waiter may run later) |
 | **Implementation complexity** | Higher (need to save signaler's context) | Simpler |
 | **Used by** | Original Hoare monitor proposal | Java, POSIX threads, C++ std::condition_variable, most real systems |
-| **Condition check pattern** | `if (condition) wait(cv)` → safe | `while (condition) wait(cv)` → mandatory |
+| **Condition check pattern** | `if (condition) wait(cv)` â†’ safe | `while (condition) wait(cv)` â†’ mandatory |
 | **Performance** | More context switches | Fewer context switches |
 
 **Why Mesa is more popular:**
@@ -1665,7 +1665,7 @@ A **condition variable** is a queue of threads waiting for a specific condition 
 3. Eaiser to implement correctly (signal can be an optimization, not correctness-critical)
 4. The `while` re-check pattern is defensive even against spurious wakeups
 
-**Mesa Semantics → Detailed Execution:**
+**Mesa Semantics â†’ Detailed Execution:**
 
 ```
 Thread A (inside monitor):          Thread B (inside monitor):
@@ -1678,7 +1678,7 @@ Thread A (inside monitor):          Thread B (inside monitor):
 6. // proceed
 ```
 
-**Hoare Semantics → Detailed Execution:**
+**Hoare Semantics â†’ Detailed Execution:**
 
 ```
 Thread A (inside monitor):          Thread B (inside monitor):
@@ -1695,7 +1695,7 @@ Thread A (inside monitor):          Thread B (inside monitor):
 ### 5.4 Monitor-based Solutions
 
 
-**Bounded Buffer with Monitor (Mesa semantics → standard POSIX):**
+**Bounded Buffer with Monitor (Mesa semantics â†’ standard POSIX):**
 
 ```c
 #include <stdio.h>
@@ -1751,7 +1751,7 @@ monitor DiningPhilosophers {
         state[i] = HUNGRY;
         test(i);                    // Try to acquire forks
         if (state[i] != EATING)
-            self[i].wait();         // Block → forks not available
+            self[i].wait();         // Block â†’ forks not available
     }
 
     void putdown(int i) {
@@ -1807,7 +1807,7 @@ public:
         state[i] = HUNGRY;
         test(i);
         while (state[i] != EATING)
-            cv[i].wait(lock);   // Mesa semantics → re-check in while()
+            cv[i].wait(lock);   // Mesa semantics â†’ re-check in while()
     }
 
     void putdown(int i) {
@@ -1912,9 +1912,9 @@ struct semaphore sem;
 sema_init(&sem, 1);     // Initial value = 1 (binary semaphore)
 
 // Operations
-void down(struct semaphore *sem);     // P (wait) → blocking
-int down_interruptible(struct semaphore *sem); // P → can be interrupted by signal
-int down_trylock(struct semaphore *sem);       // P → non-blocking
+void down(struct semaphore *sem);     // P (wait) â†’ blocking
+int down_interruptible(struct semaphore *sem); // P â†’ can be interrupted by signal
+int down_trylock(struct semaphore *sem);       // P â†’ non-blocking
 void up(struct semaphore *sem);       // V (signal)
 ```
 
@@ -1989,12 +1989,12 @@ Java's built-in monitor mechanism uses `synchronized` blocks and `wait()`/`notif
 public class Counter {
     private int count = 0;
 
-    // synchronized method → entire method is monitor
+    // synchronized method â†’ entire method is monitor
     public synchronized void increment() {
         count++;
     }
 
-    // synchronized block → finer granularity
+    // synchronized block â†’ finer granularity
     public void decrement() {
         synchronized(this) {
             count--;
@@ -2003,7 +2003,7 @@ public class Counter {
 }
 ```
 
-**Java wait()/notify() → Mesa semantics:**
+**Java wait()/notify() â†’ Mesa semantics:**
 
 ```java
 public class BoundedBuffer {
@@ -2036,9 +2036,9 @@ public class BoundedBuffer {
 **Key Java points:**
 - `synchronized` any method = monitor entry (mutual exclusion)
 - `wait()` releases the intrinsic lock and blocks
-- `notify()` wakes one thread (arbitrary choice → JVM implementation specific)
+- `notify()` wakes one thread (arbitrary choice â†’ JVM implementation specific)
 - `notifyAll()` wakes all waiting threads (safer, but more context switches)
-- Always use `while()` loop → Java uses Mesa semantics → plus spurious wakeups are permitted
+- Always use `while()` loop â†’ Java uses Mesa semantics â†’ plus spurious wakeups are permitted
 - Java's `Lock` and `Condition` interfaces (java.util.concurrent.locks) provide more control:
 
 ```java
@@ -2119,13 +2119,13 @@ public:
 ```
 
 **Key features:**
-- `wait(lock, predicate)` → the predicate is checked before blocking and after wakeup; eliminates need for explicit while() loop
-- `notify_one()` → wake one waiting thread
-- `notify_all()` → wake all waiting threads
+- `wait(lock, predicate)` â†’ the predicate is checked before blocking and after wakeup; eliminates need for explicit while() loop
+- `notify_one()` â†’ wake one waiting thread
+- `notify_all()` â†’ wake all waiting threads
 - Works only with `std::unique_lock<std::mutex>` (not `lock_guard`)
 - Uses Mesa semantics
 
-**Complete example → reader-writer lock with condition variables:**
+**Complete example â†’ reader-writer lock with condition variables:**
 
 ```cpp
 class RWLock {
@@ -2203,32 +2203,32 @@ int main() {
 ### Q1: Can a binary semaphore be used as a mutex?
 
 
-**Short answer:** Yes, but with significant caveats. A binary semaphore initialized to 1 provides mutual exclusion → only one thread can pass `wait()` at a time. However:
+**Short answer:** Yes, but with significant caveats. A binary semaphore initialized to 1 provides mutual exclusion â†’ only one thread can pass `wait()` at a time. However:
 
 | Property | Binary Semaphore | Mutex |
 |----------|-----------------|-------|
-| **Ownership** | None → any thread can signal() | Only the locking thread can unlock() |
-| **Reentrancy** | No → second wait() by same thread deadlocks | Yes → many mutexes support recursive locking |
+| **Ownership** | None â†’ any thread can signal() | Only the locking thread can unlock() |
+| **Reentrancy** | No â†’ second wait() by same thread deadlocks | Yes â†’ many mutexes support recursive locking |
 | **Priority inheritance** | No | Yes (in RTOS/Linux) |
-| **Safety** | Lower → accidental signal() from wrong thread corrupts state | Higher → ownership check catches errors |
+| **Safety** | Lower â†’ accidental signal() from wrong thread corrupts state | Higher â†’ ownership check catches errors |
 | **Performance** | May be similar | Often faster (futex, no queue management in fast path) |
 
-**Interview tip:** Say "A binary semaphore can provide mutual exclusion but is not a mutex. The key difference is ownership → a mutex can only be unlocked by the thread that locked it, while a semaphore can be signaled by any thread. This makes semaphores more suitable for signaling patterns and mutexes more suitable for critical section protection."
+**Interview tip:** Say "A binary semaphore can provide mutual exclusion but is not a mutex. The key difference is ownership â†’ a mutex can only be unlocked by the thread that locked it, while a semaphore can be signaled by any thread. This makes semaphores more suitable for signaling patterns and mutexes more suitable for critical section protection."
 
 ### Q2: What is the difference between a semaphore and a condition variable?
 
 
 | Aspect | Semaphore | Condition Variable |
 |--------|-----------|-------------------|
-| **State** | Has internal integer counter | Has no state → just a queue of waiting threads |
-| **Signal persistence** | signal() increments counter → persists even if no thread waiting | signal() with no waiters has no effect → signal is lost |
+| **State** | Has internal integer counter | Has no state â†’ just a queue of waiting threads |
+| **Signal persistence** | signal() increments counter â†’ persists even if no thread waiting | signal() with no waiters has no effect â†’ signal is lost |
 | **Usage pattern** | Count resources, not conditions | Wait for specific predicates (data available, queue not full) |
 | **Mutex relationship** | Self-contained (no external mutex needed) | Must be paired with a mutex |
 | **Broadcast** | Not directly supported (must signal N times) | notify_all() / broadcast() wakes all |
 | **Spurious wakeup protection** | count ensures correctness even with spurious wakeup | Must use while() loop to re-check predicate |
 | **Conceptual level** | Lower-level | Higher-level (designed for monitors) |
 
-**Key interview insight:** A semaphore can simulate a condition variable (using a binary semaphore for signaling), and a condition variable can simulate a semaphore (using a counter + mutex + CV). But each has different strengths → semaphores for resource counting, condition variables for complex predicate waits.
+**Key interview insight:** A semaphore can simulate a condition variable (using a binary semaphore for signaling), and a condition variable can simulate a semaphore (using a counter + mutex + CV). But each has different strengths â†’ semaphores for resource counting, condition variables for complex predicate waits.
 
 ### Q3: What happens if you reverse the order of wait() operations in bounded buffer?
 
@@ -2241,9 +2241,9 @@ wait(empty);    // then check for empty slot
 
 When the buffer is full:
 1. Producer holds mutex (buffer locked)
-2. Producer blocks on `wait(empty)` → buffer is full
-3. Consumer can't run → needs mutex to consume
-4. **DEADLOCK** → producer holds mutex, consumer needs mutex
+2. Producer blocks on `wait(empty)` â†’ buffer is full
+3. Consumer can't run â†’ needs mutex to consume
+4. **DEADLOCK** â†’ producer holds mutex, consumer needs mutex
 
 Correct order: `wait(empty)` then `wait(mutex)`.
 
@@ -2251,11 +2251,11 @@ Correct order: `wait(empty)` then `wait(mutex)`.
 
 
 ```
-// WRONG → can cause data corruption:
+// WRONG â†’ can cause data corruption:
 if (count == 0)
     wait(&cond, &mutex);  // If spurious wakeup, proceeds with count == 0!
 
-// CORRECT → always re-checks:
+// CORRECT â†’ always re-checks:
 while (count == 0)
     wait(&cond, &mutex);  // Re-checks after wakeup
 ```
@@ -2271,7 +2271,7 @@ Reasons:
 | Solution | Mechanism | Concurrency | Complexity |
 |----------|-----------|-------------|------------|
 | Limit to N-1 eaters | Extra semaphore (limit=4) | N-1 | Low |
-| Asymmetric pickup | Odd: left→right, Even: right→left | N (no artificial limit) | Low |
+| Asymmetric pickup | Odd: leftâ†’right, Even: rightâ†’left | N (no artificial limit) | Low |
 | Waiter/arbitrator | Mutex around both pickups | N (serialized pickup) | Low |
 | Monitor + state array | Monitor tracks state (thinking/hungry/eating) | N | Medium |
 | Resource hierarchy | Number chopsticks, always pick lower number first | N | Low |
@@ -2295,11 +2295,11 @@ A **spurious wakeup** occurs when a thread waiting on a condition variable wakes
 
 **Always guard `wait()` calls with a `while()` loop testing the actual condition.**
 
-### Q8: Semaphore vs mutex → which is faster?
+### Q8: Semaphore vs mutex â†’ which is faster?
 
 
 In practice, **mutexes are faster** because:
-1. Mutexes use **futex** (fast userspace mutex) → the lock/unlock fast path is entirely in userspace with no syscall if uncontended
+1. Mutexes use **futex** (fast userspace mutex) â†’ the lock/unlock fast path is entirely in userspace with no syscall if uncontended
 2. Semaphore implementations often include queue management overhead
 3. Mutex ownership enables optimizations (e.g., priority inheritance, lock elision)
 
@@ -2307,13 +2307,13 @@ However, the difference is small for uncontended cases. For heavily contended ca
 
 ---
 
-## 8. Concept Comparison → Full Reference
+## 8. Concept Comparison â†’ Full Reference
 
 | Feature | Semaphore | Monitor |
 |---------|-----------|---------|
 | Primitive level | Low-level (integer + wait/signal) | High-level (class + condition variables) |
 | Mutual exclusion | Manual (binary semaphore) | Automatic (compiler/runtime enforces) |
-| Error-prone? | Yes (forget signal → deadlock, forget wait → race) | Less (structure enforced) |
+| Error-prone? | Yes (forget signal â†’ deadlock, forget wait â†’ race) | Less (structure enforced) |
 | Condition vars | Not built-in (simulate with semaphores) | Built-in (wait/signal on condition vars) |
 | Distributed? | No (shared memory required) | No (shared memory required) |
 | Ownership | None | Lock + CV association |
@@ -2343,7 +2343,7 @@ However, the difference is small for uncontended cases. For heavily contended ca
 | **Priority Inversion** | High-prio thread blocked by low-prio holding a needed lock |
 | **Deadlock** | Circular wait where each thread holds a resource another needs |
 | **Starvation** | Thread never gets access because others always go first |
-| **Futex** | Fast userspace mutex → Linux's efficient mutex implementation |
+| **Futex** | Fast userspace mutex â†’ Linux's efficient mutex implementation |
 
 ---
 
@@ -2351,7 +2351,7 @@ However, the difference is small for uncontended cases. For heavily contended ca
 
 | Concept | Web Server | Database | Embedded System | Smartphone OS |
 |---------|-----------|----------|-----------------|---------------|
-| **Bounded Buffer** | Request queue (producer=HTTP listener, consumer=worker thread) | Connection pool | ISR → task communication | Input event queue |
+| **Bounded Buffer** | Request queue (producer=HTTP listener, consumer=worker thread) | Connection pool | ISR â†’ task communication | Input event queue |
 | **Readers-Writers** | Config file access (many reads, rare writes) | Row-level locking (SELECT vs UPDATE) | Sensor calibration data | Contacts database |
 | **Dining Philosophers** | Lock ordering in resource manager | Transaction ordering | Shared peripheral access | Camera vs flashlight DMA |
 | **Sleeping Barber** | Thread pool with idle workers | Database connection pool | Power-saving idle mode | Background task scheduler |
@@ -2381,9 +2381,9 @@ class Semaphore {
   async wait(id: string): Promise<void> {
     this.value--;
     if (this.value < 0) {
-      this.log.push(`[${id}] BLOCKED — semaphore value=${this.value}`);
+      this.log.push(`[${id}] BLOCKED â€” semaphore value=${this.value}`);
       this.waitQueue.push(id);
-      // Simulate blocking — yield until signaled
+      // Simulate blocking â€” yield until signaled
       await new Promise<void>(resolve => {
         const check = () => {
           if (!this.waitQueue.includes(id)) {
@@ -2395,16 +2395,16 @@ class Semaphore {
         setImmediate(check);
       });
     }
-    this.log.push(`[${id}] ENTERED critical section — value=${this.value}`);
+    this.log.push(`[${id}] ENTERED critical section â€” value=${this.value}`);
   }
 
   signal(id: string): void {
     this.value++;
     if (this.waitQueue.length > 0) {
       const woken = this.waitQueue.shift()!;
-      this.log.push(`[${id}] SIGNAL — woke up ${woken}`);
+      this.log.push(`[${id}] SIGNAL â€” woke up ${woken}`);
     }
-    this.log.push(`[${id}] EXIT — semaphore value=${this.value}`);
+    this.log.push(`[${id}] EXIT â€” semaphore value=${this.value}`);
   }
 
   getValue(): number { return this.value; }
@@ -2542,7 +2542,7 @@ await Promise.all([
   dp.dine(0, 3), dp.dine(1, 3), dp.dine(2, 3),
   dp.dine(3, 3), dp.dine(4, 3)
 ]);
-console.log('  All philosophers finished eating — no deadlock');
+console.log('  All philosophers finished eating â€” no deadlock');
 ```
 
 ### Additional Chapter Quiz Questions
@@ -2600,14 +2600,14 @@ console.log('  All philosophers finished eating — no deadlock');
 - **Binary semaphores** (0/1) handle mutual exclusion and signaling; **counting semaphores** (0..N) manage resource pools
 - The **bounded buffer** problem uses three semaphores: `empty` (counts slots), `full` (counts items), `mutex` (protects buffer)
 - The **readers-writers** problem highlights fairness: readers-priority can starve writers, writers-priority can starve readers
-- The **dining philosophers** problem demonstrates deadlock → solutions include limiting concurrency, asymmetric pickup, and monitors
+- The **dining philosophers** problem demonstrates deadlock â†’ solutions include limiting concurrency, asymmetric pickup, and monitors
 - The **sleeping barber** problem models bounded servers with overflow handling
 - The **cigarette smokers** problem demonstrates multi-resource synchronization with a coordinator agent
 - **Monitors** provide automatic mutual exclusion with condition variables for scheduling
 - **Mesa semantics** (signaler keeps lock, waiter re-checks) is more common than **Hoare semantics** (immediate handoff)
 - POSIX condition variables, Java `synchronized`/`wait()`/`notify()`, and C++ `std::condition_variable` all use Mesa semantics
-- Always guard `wait()` with a `while()` loop → Mesa semantics and spurious wakeups require it
-- A binary semaphore is **not** a mutex → the key difference is ownership
+- Always guard `wait()` with a `while()` loop â†’ Mesa semantics and spurious wakeups require it
+- A binary semaphore is **not** a mutex â†’ the key difference is ownership
 
 ## 12. Exercises
 
@@ -2624,7 +2624,7 @@ console.log('  All philosophers finished eating — no deadlock');
 
 
 6. Implement the readers-writers problem with writer priority. A writer that arrives should block all subsequent readers until it completes.
-7. Solve the dining philosophers problem without using a waiter mutex → instead, change the pickup order so that philosophers with odd IDs pick up left first, even IDs pick up right first. Prove this prevents deadlock.
+7. Solve the dining philosophers problem without using a waiter mutex â†’ instead, change the pickup order so that philosophers with odd IDs pick up left first, even IDs pick up right first. Prove this prevents deadlock.
 8. Implement a reusable barrier using condition variables. The barrier should support a variable number of threads and be reusable across multiple phases.
 9. Modify the sleeping barber problem to support 3 barbers instead of 1, each with their own chair, sharing the same waiting room.
 10. Implement the cigarette smokers problem where the agent puts ingredients at random intervals and multiple smokers may compete.

@@ -1,4 +1,4 @@
-# Chapter 1: Introduction to C
+﻿# Chapter 1: Introduction to C
 
 > **Next:** [Variables and Data Types](./02-variables-datatypes.md)
 
@@ -9,21 +9,20 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/01-introduction/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/c-programming/01-introduction/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/01-introduction/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/c-programming/01-introduction/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/01-introduction/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/c-programming/01-introduction/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/01-introduction/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/c-programming/01-introduction/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/01-introduction/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/c-programming/01-introduction/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/01-introduction/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/c-programming/01-introduction/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
 <!-- End Image Gallery -->
-
 
 - Trace the historical evolution of C from BCPL to C23
 - List and explain 10+ features that make C a unique systems programming language
@@ -39,17 +38,17 @@ By the end of this chapter, you will be able to:
 
 | Topic | Key Insight | Practical Takeaway | Interview Weight |
 |-------|-------------|-------------------|------------------|
-| History of C | Created by Dennis Ritchie (1972) for Unix | Understanding C's origins explains its design philosophy | ★★ |
-| Features of C | Mid-level, procedural, portable, efficient | C gives you power and control —” use it wisely | ★★★ |
-| Structure of a C Program | Every program needs a `main` function | Master this skeleton —” it is the foundation | ★★★★ |
-| Hello, World | First program teaches you the toolchain | Write, compile, run —” the developer's loop | ★★★ |
-| Compilation Pipeline | Preprocessor → Compiler → Assembler → Linker | Use -E, -S, -c flags to inspect each stage | ★★★★★ |
-| Comments | `/* */` and `//` —” ignored by compiler | Comments are for humans, not machines | ★ |
-| Tokens in C | Smallest meaningful units: keywords, identifiers, constants, strings, operators | Everything in C is built from tokens | ★★★ |
-| Identifiers & Keywords | 32 reserved keywords, user-defined names | You cannot use keywords as identifiers | ★★ |
-| Constants | Fixed values: integer, float, char, string, symbolic (#define) | Constants make code readable and maintainable | ★★★ |
-| Basic I/O | printf outputs, scanf inputs | Format specifiers match types —” mismatch causes UB | ★★★★ |
-| C Standards | C89 → C99 → C11 → C17 → C23 | Newer standards add safety and features | ★★★ |
+| History of C | Created by Dennis Ritchie (1972) for Unix | Understanding C's origins explains its design philosophy | â˜…â˜… |
+| Features of C | Mid-level, procedural, portable, efficient | C gives you power and control â€”â€ use it wisely | â˜…â˜…â˜… |
+| Structure of a C Program | Every program needs a `main` function | Master this skeleton â€”â€ it is the foundation | â˜…â˜…â˜…â˜… |
+| Hello, World | First program teaches you the toolchain | Write, compile, run â€”â€ the developer's loop | â˜…â˜…â˜… |
+| Compilation Pipeline | Preprocessor â†’ Compiler â†’ Assembler â†’ Linker | Use -E, -S, -c flags to inspect each stage | â˜…â˜…â˜…â˜…â˜… |
+| Comments | `/* */` and `//` â€”â€ ignored by compiler | Comments are for humans, not machines | â˜… |
+| Tokens in C | Smallest meaningful units: keywords, identifiers, constants, strings, operators | Everything in C is built from tokens | â˜…â˜…â˜… |
+| Identifiers & Keywords | 32 reserved keywords, user-defined names | You cannot use keywords as identifiers | â˜…â˜… |
+| Constants | Fixed values: integer, float, char, string, symbolic (#define) | Constants make code readable and maintainable | â˜…â˜…â˜… |
+| Basic I/O | printf outputs, scanf inputs | Format specifiers match types â€”â€ mismatch causes UB | â˜…â˜…â˜…â˜… |
+| C Standards | C89 â†’ C99 â†’ C11 â†’ C17 â†’ C23 | Newer standards add safety and features | â˜…â˜…â˜… |
 
 ```mermaid
 flowchart LR
@@ -71,7 +70,6 @@ flowchart LR
 
 ### 1.1.1 The History of C
 
-
 C was developed between 1969 and 1973 by **Dennis Ritchie** at Bell Telephone Laboratories. It evolved from an earlier language called **B** (created by Ken Thompson), which itself was derived from **BCPL** (Basic Combined Programming Language, by Martin Richards). Ritchie designed C to implement the Unix operating system kernel, which had previously been written in assembly language.
 
 **Key Milestones:**
@@ -80,21 +78,20 @@ C was developed between 1969 and 1973 by **Dennis Ritchie** at Bell Telephone La
 |------|-------|-------------|
 | 1969 | Ken Thompson creates B language | Precursor to C, used for early Unix |
 | 1972 | Dennis Ritchie creates C | Designed for systems programming on PDP-11 |
-| 1973 | Unix rewritten in C | First OS written in a high-level language —” portability breakthrough |
+| 1973 | Unix rewritten in C | First OS written in a high-level language â€”â€ portability breakthrough |
 | 1978 | Kernighan & Ritchie publish *The C Programming Language* | "K&R C" becomes the informal standard |
-| 1989 | ANSI standardizes C (C89 / ANSI X3.159-1989) | First official standard —” function prototypes, `void`, `const` |
+| 1989 | ANSI standardizes C (C89 / ANSI X3.159-1989) | First official standard â€”â€ function prototypes, `void`, `const` |
 | 1990 | ISO adopts as ISO/IEC 9899:1990 (C90) | Minor editorial changes from C89 |
 | 1999 | C99 standard | Inline functions, variable-length arrays, `//` comments, `long long`, designated initializers |
 | 2011 | C11 standard | Multithreading (`<thread.h>`), anonymous structs/unions, `_Static_assert`, `_Generic`, `noreturn` |
-| 2018 | C17 / C18 | Bug-fix release —” no new language features, just defect fixes |
+| 2018 | C17 / C18 | Bug-fix release â€”â€ no new language features, just defect fixes |
 | 2024 | C23 standard | `bool` becomes a keyword, `typeof`, `#elifdef`, `#elifndef`, `constexpr`, `nullptr`, improved Unicode support |
 
 **Real-World Analogy: Evolution of Transportation**
 
-Just as transportation evolved from walking (assembly) → horse (BCPL) → steam engine (B) → modern car (C), the C language inherited the best ideas from its predecessors while adding new capabilities. BCPL was typeless like a horse-drawn cart —” functional but limited. B added some structure like early automobiles. C became the "modern sedan" —” powerful, reliable, and still the standard for getting real work done.
+Just as transportation evolved from walking (assembly) â†’ horse (BCPL) â†’ steam engine (B) â†’ modern car (C), the C language inherited the best ideas from its predecessors while adding new capabilities. BCPL was typeless like a horse-drawn cart â€”â€ functional but limited. B added some structure like early automobiles. C became the "modern sedan" â€”â€ powerful, reliable, and still the standard for getting real work done.
 
 ### 1.1.2 Features of C
-
 
 C is often called a **mid-level language** because it combines high-level language features (functions, loops, structures) with low-level capabilities (pointers, bit manipulation, memory addresses).
 
@@ -115,13 +112,12 @@ C is often called a **mid-level language** because it combines high-level langua
 
 **Real-World Analogy: Swiss Army Knife**
 
-C is the Swiss Army Knife of programming languages. Other languages are like specialized tools —” Java is a power drill (great for large construction projects), Python is a paintbrush (perfect for quick artistic work). But C is the knife you carry everywhere: it cuts (low-level), it screws (pointers), it files (bit manipulation), it opens bottles (I/O). It does everything adequately and some things exceptionally well. Every programmer should own one.
+C is the Swiss Army Knife of programming languages. Other languages are like specialized tools â€”â€ Java is a power drill (great for large construction projects), Python is a paintbrush (perfect for quick artistic work). But C is the knife you carry everywhere: it cuts (low-level), it screws (pointers), it files (bit manipulation), it opens bottles (I/O). It does everything adequately and some things exceptionally well. Every programmer should own one.
 
 ### 1.1.3 Why C is Still Relevant in 2024+
 
-
-1. **Operating Systems**: Linux (â‰ˆ95% C), Windows kernel, macOS kernel (XNU)
-2. **Embedded Systems**: Microcontrollers, firmware, IoT —” billions of devices run C
+1. **Operating Systems**: Linux (Ã¢â€°Ë†95% C), Windows kernel, macOS kernel (XNU)
+2. **Embedded Systems**: Microcontrollers, firmware, IoT â€”â€ billions of devices run C
 3. **Language Foundation**: C syntax influenced C++, C#, Java, JavaScript, Go, Rust, Swift
 4. **Performance-Critical Code**: Game engines, databases, compilers, real-time systems
 5. **Portability**: The C standard library is available everywhere
@@ -130,7 +126,6 @@ C is the Swiss Army Knife of programming languages. Other languages are like spe
 ## 1.2 Setting Up a C Development Environment
 
 ### GCC (GNU Compiler Collection)
-
 
 **Linux:**
 ```bash
@@ -151,16 +146,14 @@ scoop install gcc
 
 ### Clang
 
-
 ```bash
 # Linux
 sudo apt install clang              # Debian/Ubuntu
 
-# macOS —” already installed via Xcode Command Line Tools
+# macOS â€”â€ already installed via Xcode Command Line Tools
 ```
 
 ### Verify Installation
-
 
 ```bash
 gcc --version
@@ -172,46 +165,43 @@ A successful installation displays version information. If the command is not fo
 
 ### Real-World Analogy: House Blueprint
 
-
 A C program is like a house blueprint:
 - **Comments = Annotations on the blueprint**: Notes for the builder, ignored by the construction crew
 - **Preprocessor Directives = Building permits and material lists**: `#include <stdio.h>` is like ordering standard materials (windows, doors) from a catalog
 - **Global Declarations = Foundation and framing specifications**: These define the overall structure accessible to every room
-- **main() Function = The front door**: Every house needs an entrance —” every C program needs a `main()` entry point
+- **main() Function = The front door**: Every house needs an entrance â€”â€ every C program needs a `main()` entry point
 - **Function Definitions = Individual rooms**: Each room (function) has a specific purpose and can be reused
 
 ### Anatomy of a C Program
 
-
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│  /* File: program.c                                             │  ← Comments (annotations)
-│   * Purpose: Demonstrate C program structure                    │
-│   */                                                            │
-├─────────────────────────────────────────────────────────────────┤
-│  #include <stdio.h>    /* Standard I/O header */                │  ← Preprocessor Directives
-│  #include <stdlib.h>   /* Standard library header */            │     (permits & materials)
-│  #define PI 3.14159    /* Macro constant */                     │
-├─────────────────────────────────────────────────────────────────┤
-│  double area_of_circle(double radius);  /* Function prototype */│  ← Global Declarations
-├─────────────────────────────────────────────────────────────────┤
-│  int main(void)                                                 │  ← main() —” entry point
-│  {                                                              │     (front door)
-│      double r = 5.0;                                            │
-│      double a = area_of_circle(r);                              │
-│      printf("Area: %.2f\n", a);                                 │
-│      return 0;                                                  │
-│  }                                                              │
-├─────────────────────────────────────────────────────────────────┤
-│  double area_of_circle(double radius)  /* Function definition */│  ← Other Functions
-│  {                                                              │     (rooms)
-│      return PI * radius * radius;                               │
-│  }                                                              │
-└─────────────────────────────────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚  /* File: program.c                                             â”‚  â† Comments (annotations)
+â”‚   * Purpose: Demonstrate C program structure                    â”‚
+â”‚   */                                                            â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚  #include <stdio.h>    /* Standard I/O header */                â”‚  â† Preprocessor Directives
+â”‚  #include <stdlib.h>   /* Standard library header */            â”‚     (permits & materials)
+â”‚  #define PI 3.14159    /* Macro constant */                     â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚  double area_of_circle(double radius);  /* Function prototype */â”‚  â† Global Declarations
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚  int main(void)                                                 â”‚  â† main() â€”â€ entry point
+â”‚  {                                                              â”‚     (front door)
+â”‚      double r = 5.0;                                            â”‚
+â”‚      double a = area_of_circle(r);                              â”‚
+â”‚      printf("Area: %.2f\n", a);                                 â”‚
+â”‚      return 0;                                                  â”‚
+â”‚  }                                                              â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚  double area_of_circle(double radius)  /* Function definition */â”‚  â† Other Functions
+â”‚  {                                                              â”‚     (rooms)
+â”‚      return PI * radius * radius;                               â”‚
+â”‚  }                                                              â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### Complete Example
-
 
 ```c
 /*
@@ -220,15 +210,15 @@ A C program is like a house blueprint:
  * Description: Shows the complete structure of a C program
  */
 
-#include <stdio.h>    /* Standard I/O —” for printf */
-#include <stdlib.h>   /* Standard library —” for EXIT_SUCCESS */
+#include <stdio.h>    /* Standard I/O â€”â€ for printf */
+#include <stdlib.h>   /* Standard library â€”â€ for EXIT_SUCCESS */
 
 #define GREETING "Welcome to C Programming!"
 
 /* Function prototype */
 void print_greeting(void);
 
-/* Main function —” entry point */
+/* Main function â€”â€ entry point */
 int main(void)
 {
     print_greeting();
@@ -253,10 +243,9 @@ PI = 3.1416
 
 1. At least one function named `main`
 2. `main` must return `int`
-3. Either no parameters: `int main(void)` —” or two parameters: `int main(int argc, char *argv[])`
+3. Either no parameters: `int main(void)` â€”â€ or two parameters: `int main(int argc, char *argv[])`
 
 ### Edge Cases: Structure Violations
-
 
 | Violation | Code | Error Message |
 |-----------|------|---------------|
@@ -268,7 +257,6 @@ PI = 3.1416
 ## 1.4 Writing Your First C Program: Hello, World!
 
 ### Step-by-Step: Creating and Running hello.c
-
 
 **File: hello.c**
 ```c
@@ -287,45 +275,42 @@ int main(void)
 |------|--------|---------|-------------|
 | 1 | Create source file | Create `hello.c` with the code above | Text file with .c extension |
 | 2 | Preprocess | `gcc -E hello.c -o hello.i` | `#include` expanded, comments stripped |
-| 3 | Compile to assembly | `gcc -S hello.c -o hello.s` | C → assembly language |
-| 4 | Assemble | `gcc -c hello.c -o hello.o` | Assembly → machine code (object file) |
-| 5 | Link | `gcc hello.o -o hello` | Object + libraries → executable |
+| 3 | Compile to assembly | `gcc -S hello.c -o hello.s` | C â†’ assembly language |
+| 4 | Assemble | `gcc -c hello.c -o hello.o` | Assembly â†’ machine code (object file) |
+| 5 | Link | `gcc hello.o -o hello` | Object + libraries â†’ executable |
 | 6 | Run | `./hello` (Linux/macOS) or `hello.exe` (Windows) | Execute the program |
 
 ### Dry Run: What Happens Inside the Computer
 
-
 | Stage | Input | Process | Output | Key Action |
 |-------|-------|---------|--------|------------|
 | **Edit** | Ideas in your head | Type code in editor | `hello.c` | Save with .c extension |
-| **Preprocess** | `hello.c` | Expand `#include <stdio.h>` → ~800 lines of stdio declarations + your 5 lines | `hello.i` (~805 lines) | `#include` replaced by actual header content |
-| **Compile** | `hello.i` | Parse C syntax → generate assembly for your CPU | `hello.s` (~50 lines) | `printf(...)` → `call printf` (assembly) |
-| **Assemble** | `hello.s` | Convert mnemonics to binary opcodes | `hello.o` (binary) | `mov` → `b8 04 00 00 00` (x86-64) |
-| **Link** | `hello.o` + `libc.a` | Resolve `printf` → link to libc's implementation | `hello` (executable) | `call printf` now points to actual code |
+| **Preprocess** | `hello.c` | Expand `#include <stdio.h>` â†’ ~800 lines of stdio declarations + your 5 lines | `hello.i` (~805 lines) | `#include` replaced by actual header content |
+| **Compile** | `hello.i` | Parse C syntax â†’ generate assembly for your CPU | `hello.s` (~50 lines) | `printf(...)` â†’ `call printf` (assembly) |
+| **Assemble** | `hello.s` | Convert mnemonics to binary opcodes | `hello.o` (binary) | `mov` â†’ `b8 04 00 00 00` (x86-64) |
+| **Link** | `hello.o` + `libc.a` | Resolve `printf` â†’ link to libc's implementation | `hello` (executable) | `call printf` now points to actual code |
 | **Run** | `hello` | OS loads binary into memory, starts execution | **"Hello, World!"** on screen | `printf` writes to stdout |
 
 ### Explanation of Each Line
 
-
 ```c
-#include <stdio.h>      // Line 1: Preprocessor directive —” includes Standard I/O header
+#include <stdio.h>      // Line 1: Preprocessor directive â€”â€ includes Standard I/O header
                         //         Without this, printf() would be undeclared (compiler warning/error)
 
 int main(void)          // Line 3: Entry point. 'int' = returns integer. 'void' = no parameters
 {                       // Line 4: Opening brace marks start of function body
     printf("Hello, World!\n");  // Line 5: Calls printf with format string. \n = newline
-    return 0;           // Line 6: Returns 0 to OS —” convention for success
+    return 0;           // Line 6: Returns 0 to OS â€”â€ convention for success
 }                       // Line 7: Closing brace marks end of function body
 ```
 
 ### Common Compilation and Edge Cases
 
-
 **Edge Case 1: Missing semicolon**
 ```c
 int main(void)
 {
-    printf("Hello, World!\n")  // ← missing semicolon!
+    printf("Hello, World!\n")  // â† missing semicolon!
     return 0;
 }
 ```
@@ -348,7 +333,7 @@ int main(void)
 
 **Edge Case 3: Wrong parameter list**
 ```c
-int main()          // ← '()' means "unspecified parameters" in C, NOT "no parameters"
+int main()          // â† '()' means "unspecified parameters" in C, NOT "no parameters"
 {
     return 0;
 }
@@ -365,30 +350,28 @@ printf("Hello, World!");  // No \n
 
 ### Real-World Analogy: Building a House
 
-
 The C compilation process is like building a house from an architectural plan:
 
 | Compilation Stage | House Construction Analogy |
 |-------------------|---------------------------|
 | **Source Code (.c)** | Raw architectural blueprint |
 | **Preprocessor** | Surveyor interprets the blueprint: marks where doors (headers) go, adds standard specifications (macros), removes notes (comments) |
-| **Compiler** | Architect converts the marked-up blueprint into detailed construction drawings (assembly language) —” specific to the building style |
-| **Assembler** | Construction crew turns drawings into physical components —” bricks, beams, pipes (machine code object file) |
-| **Linker** | General contractor combines all components: your house frame + pre-built windows (libraries) + plumbing modules → finished house (executable) |
+| **Compiler** | Architect converts the marked-up blueprint into detailed construction drawings (assembly language) â€”â€ specific to the building style |
+| **Assembler** | Construction crew turns drawings into physical components â€”â€ bricks, beams, pipes (machine code object file) |
+| **Linker** | General contractor combines all components: your house frame + pre-built windows (libraries) + plumbing modules â†’ finished house (executable) |
 | **Loader** | Real estate agent places the family (program) in the house (memory) and opens the front door (starts execution) |
 
 ### Stage-by-Stage Breakdown
 
+#### Stage 1: Preprocessing (`.c` â†’ `.i`)
 
-#### Stage 1: Preprocessing (`.c` → `.i`)
-
-The preprocessor (`cpp` —” C Preprocessor) handles all directives starting with `#`.
+The preprocessor (`cpp` â€”â€ C Preprocessor) handles all directives starting with `#`.
 
 **What it does:**
 1. Removes all comments (replaces them with a single space)
-2. Expands `#include` —” pastes the entire contents of the referenced file
-3. Expands `#define` macros —” replaces `PI` with `3.14159` everywhere
-4. Processes conditional compilation —” `#ifdef`, `#ifndef`, `#if`, `#endif`
+2. Expands `#include` â€”â€ pastes the entire contents of the referenced file
+3. Expands `#define` macros â€”â€ replaces `PI` with `3.14159` everywhere
+4. Processes conditional compilation â€”â€ `#ifdef`, `#ifndef`, `#if`, `#endif`
 5. Expands `_Pragma` operators
 
 **View it:**
@@ -409,7 +392,7 @@ int main(void) {
 }
 ```
 
-After (`hello.i` —” showing just the expansion of our lines, actual file contains hundreds more from `<stdio.h>`):
+After (`hello.i` â€”â€ showing just the expansion of our lines, actual file contains hundreds more from `<stdio.h>`):
 ```c
 # 1 "hello.c"
 # 1 "<built-in>"
@@ -427,30 +410,30 @@ int main(void) {
 
 Notice: `#include <stdio.h>` is gone (replaced by its content), `MSG` is replaced by `"Hello"`, and comments are removed.
 
-#### Stage 2: Compilation (`.i` → `.s`)
+#### Stage 2: Compilation (`.i` â†’ `.s`)
 
 The compiler translates preprocessed C code into **assembly language** for the target CPU architecture.
 
 **What it does:**
-1. Lexical analysis —” tokenizes the input (breaks into tokens)
-2. Syntax analysis —” builds an Abstract Syntax Tree (AST)
-3. Semantic analysis —” checks type correctness
-4. Intermediate code generation —” produces a platform-independent representation
-5. Optimization —” applies transformations for speed, size, or power
-6. Code generation —” produces assembly instructions specific to the target CPU
+1. Lexical analysis â€”â€ tokenizes the input (breaks into tokens)
+2. Syntax analysis â€”â€ builds an Abstract Syntax Tree (AST)
+3. Semantic analysis â€”â€ checks type correctness
+4. Intermediate code generation â€”â€ produces a platform-independent representation
+5. Optimization â€”â€ applies transformations for speed, size, or power
+6. Code generation â€”â€ produces assembly instructions specific to the target CPU
 
 **View it:**
 ```bash
 gcc -S hello.c -o hello.s
 ```
 
-#### Stage 3: Assembly (`.s` → `.o`)
+#### Stage 3: Assembly (`.s` â†’ `.o`)
 
 The assembler (`as`) converts human-readable assembly mnemonics into **machine code** (binary) and produces a **relocatable object file** (`.o` on Linux, `.obj` on Windows).
 
 **What it does:**
 1. Parses assembly instructions (e.g., `mov`, `add`, `call`)
-2. Converts each mnemonic to its binary opcode (e.g., `mov` → `0xB8`)
+2. Converts each mnemonic to its binary opcode (e.g., `mov` â†’ `0xB8`)
 3. Resolves labels within the file (jump targets, variable addresses)
 4. Produces an object file containing machine code + symbol table + relocation entries
 
@@ -479,16 +462,16 @@ Disassembly of section .text:
   19:   c3                      retq
 ```
 
-Notice the `callq` at address `0xe` —” the target address is `0x00000000` (placeholder). The linker will fill this in.
+Notice the `callq` at address `0xe` â€”â€ the target address is `0x00000000` (placeholder). The linker will fill this in.
 
-#### Stage 4: Linking (`.o` → executable)
+#### Stage 4: Linking (`.o` â†’ executable)
 
 The linker (`ld`) combines one or more object files with libraries to produce a single executable.
 
 **What it does:**
-1. Resolves external references —” finds `printf` in the C standard library (`libc.a`)
-2. Relocates code —” adjusts addresses in each object file so they don't overlap
-3. Combines sections —” merges `.text`, `.data`, `.bss` sections from all inputs
+1. Resolves external references â€”â€ finds `printf` in the C standard library (`libc.a`)
+2. Relocates code â€”â€ adjusts addresses in each object file so they don't overlap
+3. Combines sections â€”â€ merges `.text`, `.data`, `.bss` sections from all inputs
 4. Produces the final executable format (ELF on Linux, PE on Windows, Mach-O on macOS)
 
 **View it:**
@@ -507,7 +490,6 @@ When you run `./hello`, the OS **loader**:
 6. Jumps to the entry point (`main`)
 
 ### Dry Run: Compilation of `hello.c` with Trace Table
-
 
 Let's trace a minimal `hello.c` through all four stages:
 
@@ -529,7 +511,6 @@ int main(void) {
 
 ### Pseudocode: The Compiler's Internal Phases
 
-
 ```
 PHASE 1: Lexical Analysis (Scanning)
     INPUT:  stream of characters
@@ -537,11 +518,11 @@ PHASE 1: Lexical Analysis (Scanning)
     ALGORITHM:
         while (not end of file):
             if char is letter or underscore:
-                read identifier/keyword → emit IDENTIFIER or KEYWORD token
+                read identifier/keyword â†’ emit IDENTIFIER or KEYWORD token
             if char is digit:
-                read number → emit CONSTANT token
+                read number â†’ emit CONSTANT token
             if char is '"':
-                read string literal → emit STRING_LITERAL token
+                read string literal â†’ emit STRING_LITERAL token
             if char is one of { }, ;, (, ), etc:
                 emit appropriate PUNCTUATOR token
             if char is '+' or '-' or '*' or '/' etc:
@@ -577,32 +558,31 @@ PHASE 3: Semantic Analysis
 PHASE 4: Intermediate Code Generation
     INPUT:  Annotated AST
     OUTPUT: Three-Address Code (TAC)
-    EXAMPLE:   printf("Hello\n") → t1 = &"Hello\n"; call printf(t1)
-               return 0        → ret 0
+    EXAMPLE:   printf("Hello\n") â†’ t1 = &"Hello\n"; call printf(t1)
+               return 0        â†’ ret 0
 
 PHASE 5: Optimization
     INPUT:  TAC
     OUTPUT: Optimized TAC
-    EXAMPLE:   constant folding: 2 + 3 → 5
+    EXAMPLE:   constant folding: 2 + 3 â†’ 5
                dead code elimination: remove unreachable code
                loop unrolling, inlining, etc.
 
 PHASE 6: Code Generation
     INPUT:  Optimized TAC
     OUTPUT: Assembly code
-    EXAMPLE:   call printf → mov edi, offset .LC0; xor eax, eax; call printf
-               ret 0       → xor eax, eax; ret
+    EXAMPLE:   call printf â†’ mov edi, offset .LC0; xor eax, eax; call printf
+               ret 0       â†’ xor eax, eax; ret
 ```
 
 ### Complexity Analysis of Compilation Stages
-
 
 | Stage | Time Complexity | Space Complexity | Why? |
 |-------|----------------|-----------------|------|
 | **Lexical Analysis** | O(n) | O(n) | Scans each character exactly once; stores tokens linearly |
 | **Syntax Analysis** | O(n) | O(n) | Recursive descent parsers run in linear time for LL(k) grammars; AST size is proportional to token count |
 | **Semantic Analysis** | O(n) | O(n) | Walks the AST once; symbol table size proportional to declarations |
-| **Optimization** | O(n log n) to O(nÂ²) | O(n) | Some optimizations (register allocation) use graph coloring —” NP-hard in general, but heuristics run near-linear |
+| **Optimization** | O(n log n) to O(nÃ‚Â²) | O(n) | Some optimizations (register allocation) use graph coloring â€”â€ NP-hard in general, but heuristics run near-linear |
 | **Code Generation** | O(n) | O(n) | Linear traversal of optimized IR; instruction selection is pattern matching |
 | **Overall** | O(n log n) typical | O(n) | Modern compilers use multi-pass architecture where each pass is linear or near-linear |
 
@@ -610,18 +590,16 @@ PHASE 6: Code Generation
 
 ### Advantages and Disadvantages of the Compilation Process
 
-
 | Advantage | Disadvantage |
 |-----------|-------------|
-| **Fast execution** —” compiled code runs directly on hardware | **Longer edit-compile-debug cycle** —” must recompile after every change |
-| **Early error detection** —” syntax and type errors caught at compile time | **Platform-specific** —” executables don't cross OS/CPU boundaries |
-| **Optimization opportunities** —” compiler can optimize across the entire program | **Takes more disk space** —” executables are larger than source code |
-| **No runtime dependency** —” no interpreter or VM needed | **Complex build process** —” multi-stage pipeline, Makefiles required for large projects |
-| **Full hardware access** —” can generate any CPU instruction | **Less portable source** —” some features are platform-dependent (e.g., `#pragma`) |
-| **Smaller memory footprint** —” no VM overhead | **Harder debugging** —” need debug info (-g flag) to map binary back to source |
+| **Fast execution** â€”â€ compiled code runs directly on hardware | **Longer edit-compile-debug cycle** â€”â€ must recompile after every change |
+| **Early error detection** â€”â€ syntax and type errors caught at compile time | **Platform-specific** â€”â€ executables don't cross OS/CPU boundaries |
+| **Optimization opportunities** â€”â€ compiler can optimize across the entire program | **Takes more disk space** â€”â€ executables are larger than source code |
+| **No runtime dependency** â€”â€ no interpreter or VM needed | **Complex build process** â€”â€ multi-stage pipeline, Makefiles required for large projects |
+| **Full hardware access** â€”â€ can generate any CPU instruction | **Less portable source** â€”â€ some features are platform-dependent (e.g., `#pragma`) |
+| **Smaller memory footprint** â€”â€ no VM overhead | **Harder debugging** â€”â€ need debug info (-g flag) to map binary back to source |
 
 ### Common Compilation Errors and What They Mean
-
 
 | Error | Stage | Cause | Fix |
 |-------|-------|-------|-----|
@@ -636,7 +614,7 @@ PHASE 6: Code Generation
 
 | Aspect | Compiled Languages (C, C++, Rust, Go) | Interpreted Languages (Python, JavaScript, Ruby, PHP) |
 |--------|--------------------------------------|------------------------------------------------------|
-| **Process** | Source → Compiler → Machine code → Execute | Source → Interpreter → Execute (line by line) |
+| **Process** | Source â†’ Compiler â†’ Machine code â†’ Execute | Source â†’ Interpreter â†’ Execute (line by line) |
 | **Translation** | Entire program translated at once | Translated line by line at runtime |
 | **Execution Speed** | Fast (native machine code) | Slower (translation overhead at runtime) |
 | **Startup Time** | Instant (binary is ready) | Slower (interpreter must initialize) |
@@ -652,17 +630,15 @@ PHASE 6: Code Generation
 
 ### Hybrid Approaches
 
-
 | Approach | How It Works | Examples |
 |----------|-------------|----------|
 | **Just-In-Time Compilation** | Interprets initially, then compiles hot paths | Java (JIT), JavaScript (V8), C# |
 | **Bytecode Compilation** | Compiles to platform-independent bytecode, then interprets/JIT-compiles | Java (JVM bytecode), Python (.pyc) |
-| **Transpilation** | Compiles one high-level language to another | TypeScript → JavaScript, C → WebAssembly |
+| **Transpilation** | Compiles one high-level language to another | TypeScript â†’ JavaScript, C â†’ WebAssembly |
 
 ## 1.7 Comments in C
 
 ### Types of Comments
-
 
 ```c
 /* This is a multi-line comment.
@@ -675,15 +651,13 @@ PHASE 6: Code Generation
 
 ### Rules and Important Notes
 
-
-1. **Comments are removed by the preprocessor** —” replaced with a single space
-2. **Multi-line comments do NOT nest** —” `/* outer /* inner */ outer */` causes an error
-3. **Single-line comments (`//`) require C99 or later** —” use `-std=c99` or higher
+1. **Comments are removed by the preprocessor** â€”â€ replaced with a single space
+2. **Multi-line comments do NOT nest** â€”â€ `/* outer /* inner */ outer */` causes an error
+3. **Single-line comments (`//`) require C99 or later** â€”â€ use `-std=c99` or higher
 4. **Comments can appear anywhere whitespace is allowed**
-5. **Do not put comments inside strings** —” `printf("/* not a comment */\n");` prints the text
+5. **Do not put comments inside strings** â€”â€ `printf("/* not a comment */\n");` prints the text
 
 ### Edge Cases
-
 
 ```c
 /* Valid: comment between tokens */
@@ -693,17 +667,16 @@ int x /* counter */ = 5;
 #define MAX(a, b) /* find max */ ((a) > (b) ? (a) : (b))
 
 /* INVALID: nested comments */
-/* outer /* inner */ ← this */  /* ← ERROR: this "ends" a comment that wasn't opened */
+/* outer /* inner */ â† this */  /* â† ERROR: this "ends" a comment that wasn't opened */
 
-/* Tricky: trigraph issue (C89 only —” removed in C23) */
-// ??/    ← trigraph for backslash, continues comment to next line!
+/* Tricky: trigraph issue (C89 only â€”â€ removed in C23) */
+// ??/    â† trigraph for backslash, continues comment to next line!
 
 /* The single-line comment // can contain multi-line comment delimiters: */
 // /* this is just text inside a single-line comment */
 ```
 
 ### Best Practices
-
 
 ```c
 /* Use block comments for:
@@ -722,36 +695,34 @@ int x /* counter */ = 5;
 
 ### Real-World Analogy: A Library
 
-
 A C program is like a library:
-- **Keywords** = Library rules (no food, quiet hours) —” fixed, unchangeable, predefined
-- **Identifiers** = Book titles —” you choose them, but they must follow naming conventions
-- **Constants** = Static exhibits (the displayed artifacts) —” their values don't change
-- **String Literals** = Quoted text in books —” sequences of characters
-- **Operators** = Library equipment (scanners, carts) —” they perform actions on objects
-- **Punctuators/Separators** = Shelf dividers, catalog cards —” they organize and separate items
+- **Keywords** = Library rules (no food, quiet hours) â€”â€ fixed, unchangeable, predefined
+- **Identifiers** = Book titles â€”â€ you choose them, but they must follow naming conventions
+- **Constants** = Static exhibits (the displayed artifacts) â€”â€ their values don't change
+- **String Literals** = Quoted text in books â€”â€ sequences of characters
+- **Operators** = Library equipment (scanners, carts) â€”â€ they perform actions on objects
+- **Punctuators/Separators** = Shelf dividers, catalog cards â€”â€ they organize and separate items
 
 A **token** is the smallest individual element of a C program that has meaning to the compiler. The compiler breaks your source code into tokens during the lexical analysis phase.
 
 ### Classification of Tokens
 
-
 ```
-                          ┌─────────────────────────┐
-                          │       TOKENS             │
-                          └─────────────────────────┘
-                                   │
-            ┌──────────────────────┼──────────────────────┐
-            │              │               │              │
-     ┌──────┴──────┐ ┌─────┴──────┐ ┌──────┴───────┐ ┌───┴────┐
-     │  Keywords   │ │ Identifiers│ │  Constants   │ │String  │
-     │ (32 total)  │ │ (names)    │ │  (literals)  │ │Literals│
-     └─────────────┘ └────────────┘ └──────────────┘ └────────┘
-            │
-     ┌──────┴──────┐
-     │  Operators  │
-     │ (45+ total) │
-     └─────────────┘
+                          â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                          â”‚       TOKENS             â”‚
+                          â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                                   â”‚
+            â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+            â”‚              â”‚               â”‚              â”‚
+     â”Œâ”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”´â”€â”€â”€â”€â”
+     â”‚  Keywords   â”‚ â”‚ Identifiersâ”‚ â”‚  Constants   â”‚ â”‚String  â”‚
+     â”‚ (32 total)  â”‚ â”‚ (names)    â”‚ â”‚  (literals)  â”‚ â”‚Literalsâ”‚
+     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+            â”‚
+     â”Œâ”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”
+     â”‚  Operators  â”‚
+     â”‚ (45+ total) â”‚
+     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### Example: Tokenizing a Line of Code
@@ -777,7 +748,6 @@ int count = 10 + 2 * 3;
 
 ### 1.8.1 Keywords
 
-
 **Keywords** are reserved words that have special meaning to the C compiler. They cannot be used as identifiers (variable names, function names, etc.).
 
 **C89/C90 Keywords (32 total):**
@@ -798,7 +768,6 @@ int count = 10 + 2 * 3;
 **C23 added:** `bool`, `true`, `false`, `static_assert`, `thread_local`, `alignas`, `alignof`, `typeof`, `typeof_unqual`, `nullptr`, `constexpr` (some were macros in C23, promoted to keywords)
 
 ### 1.8.2 Identifiers
-
 
 **Identifiers** are names given to variables, functions, structures, unions, and labels.
 
@@ -824,18 +793,16 @@ MAX_SIZE       // UPPER_CASE convention for constants
 ```c
 1st            // starts with digit
 my-var         // hyphen is not allowed
-int            // keyword —” reserved
+int            // keyword â€”â€ reserved
 float value    // space is not allowed in identifiers
 $money         // $ is not allowed (allowed in C23 via <cuchar> but not in identifiers)
 ```
 
 ### 1.8.3 Constants
 
-
 Constants are fixed values that do not change during program execution. (Covered in detail in Section 1.11.)
 
 ### 1.8.4 String Literals
-
 
 A **string literal** is a sequence of characters enclosed in double quotes.
 
@@ -845,10 +812,9 @@ A **string literal** is a sequence of characters enclosed in double quotes.
 "Line 1\nLine 2"  // string with escape sequence
 ```
 
-**Important:** String literals are automatically terminated with a null character (`\0`). `"Hello"` is actually stored as `{'H','e','l','l','o','\0'}` —” 6 bytes, not 5.
+**Important:** String literals are automatically terminated with a null character (`\0`). `"Hello"` is actually stored as `{'H','e','l','l','o','\0'}` â€”â€ 6 bytes, not 5.
 
 ### 1.8.5 Operators
-
 
 Operators are symbols that perform operations on operands. (45+ operators in C.)
 
@@ -866,20 +832,19 @@ Operators are symbols that perform operations on operands. (45+ operators in C.)
 sizeof                // Size-of operator
 ```
 
-## 1.9 Identifiers —” Naming Conventions
+## 1.9 Identifiers â€”â€ Naming Conventions
 
 ### Identifier Length and Scope
-
 
 ```c
 #include <stdio.h>
 
-int global_count = 0;       // Global identifier —” visible everywhere
+int global_count = 0;       // Global identifier â€”â€ visible everywhere
 
 void process_data(void) {
-    int local_temp = 5;     // Local identifier —” visible only inside this function
+    int local_temp = 5;     // Local identifier â€”â€ visible only inside this function
     {
-        int block_var = 10; // Block scope —” visible only inside this block
+        int block_var = 10; // Block scope â€”â€ visible only inside this block
         printf("%d\n", block_var);
     }
     // printf("%d\n", block_var);  // ERROR: block_var not in scope
@@ -893,19 +858,17 @@ int main(void) {
 
 ### Naming Conventions
 
-
 | Convention | Example | Usage |
 |-----------|---------|-------|
-| snake_case | `total_sum` | Variables, functions —” most common in C |
+| snake_case | `total_sum` | Variables, functions â€”â€ most common in C |
 | UPPER_CASE | `MAX_BUFFER_SIZE` | Constants (#define macros) |
 | CamelCase | `LinkedListNode` | Struct types (used in some projects) |
-| _leading_underscore | `_internal` | Reserved for implementation —” DO NOT USE |
+| _leading_underscore | `_internal` | Reserved for implementation â€”â€ DO NOT USE |
 | trailing_underscore_ | `name_` | Sometimes used to avoid conflicts |
 
-## 1.10 Keywords —” Complete Reference
+## 1.10 Keywords â€”â€ Complete Reference
 
 ### All 32 C89/C90 Keywords
-
 
 ```c
 // Data Types
@@ -931,7 +894,7 @@ extern    // external linkage (declared but defined elsewhere)
 register  // hint to store variable in CPU register (deprecated)
 
 // Type Qualifiers
-const     // read-only —” value cannot be modified
+const     // read-only â€”â€ value cannot be modified
 volatile  // may change unexpectedly (for hardware registers, signal handlers)
 
 // Control Flow
@@ -959,34 +922,32 @@ A **constant** is a fixed value that does not change during program execution.
 
 ### Types of Constants
 
-
 ```
-                    ┌──────────────────────┐
-                    │     CONSTANTS          │
-                    └──────────────────────┘
-                           │
-         ┌─────────────────┼─────────────────┐
-         │                 │                 │
-   ┌─────┴─────┐   ┌──────┴──────┐   ┌──────┴──────┐
-   │  Numeric  │   │ Character  │   │  Symbolic   │
-   │ Constants │   │ Constants  │   │  Constants  │
-   └───────────┘   └────────────┘   └─────────────┘
-         │                │
-   ┌─────┴─────┐    ┌─────┴──────┐
-   │ Integer   │    │ Single     │
-   │ Constants │    │ Character  │
-   │ Float/Dbl │    │ String     │
-   └───────────┘    └────────────┘
+                    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                    â”‚     CONSTANTS          â”‚
+                    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                           â”‚
+         â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+         â”‚                 â”‚                 â”‚
+   â”Œâ”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”
+   â”‚  Numeric  â”‚   â”‚ Character  â”‚   â”‚  Symbolic   â”‚
+   â”‚ Constants â”‚   â”‚ Constants  â”‚   â”‚  Constants  â”‚
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+         â”‚                â”‚
+   â”Œâ”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”
+   â”‚ Integer   â”‚    â”‚ Single     â”‚
+   â”‚ Constants â”‚    â”‚ Character  â”‚
+   â”‚ Float/Dbl â”‚    â”‚ String     â”‚
+   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### 1.11.1 Integer Constants
 
-
 ```c
 42          // Decimal (base 10)
-052         // Octal (base 8) —” starts with 0 —” value is 42 in decimal
-0x2A        // Hexadecimal (base 16) —” starts with 0x or 0X —” value is 42
-0b101010    // Binary (C23) —” starts with 0b or 0B —” value is 42
+052         // Octal (base 8) â€”â€ starts with 0 â€”â€ value is 42 in decimal
+0x2A        // Hexadecimal (base 16) â€”â€ starts with 0x or 0X â€”â€ value is 42
+0b101010    // Binary (C23) â€”â€ starts with 0b or 0B â€”â€ value is 42
 42U         // Unsigned suffix
 42L         // Long suffix
 42LL        // Long long suffix (C99)
@@ -995,7 +956,6 @@ A **constant** is a fixed value that does not change during program execution.
 ```
 
 ### 1.11.2 Floating-Point Constants
-
 
 ```c
 3.14159     // Double (default)
@@ -1009,21 +969,19 @@ A **constant** is a fixed value that does not change during program execution.
 
 ### 1.11.3 Character Constants
 
-
 ```c
-'A'         // Character constant —” value 65 in ASCII
-'a'         // Character constant —” value 97 in ASCII
-'0'         // Character constant —” value 48 in ASCII
-'\n'        // Escape sequence —” newline (value 10)
-'\t'        // Escape sequence —” tab (value 9)
-'\''        // Escape sequence —” single quote (value 39)
-'\\'        // Escape sequence —” backslash (value 92)
-'\x41'      // Hexadecimal escape —” character 'A' (ASCII 0x41)
-'\101'      // Octal escape —” character 'A' (ASCII 101 octal = 65 decimal)
+'A'         // Character constant â€”â€ value 65 in ASCII
+'a'         // Character constant â€”â€ value 97 in ASCII
+'0'         // Character constant â€”â€ value 48 in ASCII
+'\n'        // Escape sequence â€”â€ newline (value 10)
+'\t'        // Escape sequence â€”â€ tab (value 9)
+'\''        // Escape sequence â€”â€ single quote (value 39)
+'\\'        // Escape sequence â€”â€ backslash (value 92)
+'\x41'      // Hexadecimal escape â€”â€ character 'A' (ASCII 0x41)
+'\101'      // Octal escape â€”â€ character 'A' (ASCII 101 octal = 65 decimal)
 ```
 
 ### 1.11.4 String Constants (String Literals)
-
 
 ```c
 "Hello"         // String of 5 characters + null terminator = 6 bytes
@@ -1033,7 +991,6 @@ A **constant** is a fixed value that does not change during program execution.
 ```
 
 ### 1.11.5 Symbolic Constants (`#define`)
-
 
 ```c
 #include <stdio.h>
@@ -1052,7 +1009,6 @@ int main(void) {
 
 ### 1.11.6 The `const` Keyword
 
-
 ```c
 const int DAYS_IN_WEEK = 7;      // Read-only variable
 const float GRAVITY = 9.81;      // Cannot be modified after initialization
@@ -1066,7 +1022,6 @@ const int * const ptr3;          // Both pointer and data are const
 
 ### Difference: `#define` vs `const`
 
-
 | Aspect | `#define` | `const` |
 |--------|-----------|---------|
 | **Handled by** | Preprocessor | Compiler |
@@ -1078,7 +1033,6 @@ const int * const ptr3;          // Both pointer and data are const
 
 ### Edge Cases with Constants
 
-
 ```c
 /* Integer literal overflow */
 int x = 2147483648;       // UB if INT_MAX = 2147483647
@@ -1086,11 +1040,11 @@ int x = 2147483648;       // UB if INT_MAX = 2147483647
 /* Octal misinterpretation */
 int y = 010;              // This is 8 in decimal, NOT 10!
 
-/* String literal modification —” UB! */
+/* String literal modification â€”â€ UB! */
 char *s = "hello";
-s[0] = 'H';               // Undefined behavior —” modifying string literal
+s[0] = 'H';               // Undefined behavior â€”â€ modifying string literal
 
-/* const-qualified through a pointer —” UB! */
+/* const-qualified through a pointer â€”â€ UB! */
 const int c = 10;
 int *p = (int *)&c;       // Casting away const
 *p = 20;                  // Undefined behavior
@@ -1098,8 +1052,7 @@ int *p = (int *)&c;       // Casting away const
 
 ## 1.12 Basic Input and Output
 
-### 1.12.1 `printf()` —” Formatted Output
-
+### 1.12.1 `printf()` â€”â€ Formatted Output
 
 ```c
 int printf(const char *format, ...);
@@ -1108,7 +1061,6 @@ int printf(const char *format, ...);
 `printf()` writes a formatted string to the standard output (stdout). It returns the number of characters printed on success, or a negative value on error.
 
 ### Complete Format Specifier Table
-
 
 | Specifier | Type | Example Usage | Output |
 |-----------|------|--------------|--------|
@@ -1132,7 +1084,6 @@ int printf(const char *format, ...);
 
 ### Width and Precision Specifiers
 
-
 ```c
 printf("%10d", 42);       // Right-justified in field width 10: "        42"
 printf("%-10d", 42);      // Left-justified in field width 10: "42        "
@@ -1142,8 +1093,7 @@ printf("%10.3f", 3.14);   // Width 10, precision 3: "     3.140"
 printf("%-10.3f", 3.14);  // Left-justified, width 10, precision 3: "3.140     "
 ```
 
-### 1.12.2 `scanf()` —” Formatted Input
-
+### 1.12.2 `scanf()` â€”â€ Formatted Input
 
 ```c
 int scanf(const char *format, ...);
@@ -1162,13 +1112,13 @@ int main(void) {
     char name[50];
 
     printf("Enter your name: ");
-    scanf("%49s", name);          // No & for arrays —” name decays to pointer
+    scanf("%49s", name);          // No & for arrays â€”â€ name decays to pointer
 
     printf("Enter your age: ");
-    scanf("%d", &age);            // &age —” address of age
+    scanf("%d", &age);            // &age â€”â€ address of age
 
     printf("Enter your salary: ");
-    scanf("%lf", &salary);        // &salary —” address of salary
+    scanf("%lf", &salary);        // &salary â€”â€ address of salary
 
     printf("Name: %s, Age: %d, Salary: %.2f\n", name, age, salary);
     return 0;
@@ -1177,23 +1127,21 @@ int main(void) {
 
 ### Scanf Format Specifiers
 
-
 | Specifier | Reads | Example |
 |-----------|-------|---------|
 | `%d` | Signed decimal integer | `scanf("%d", &x)` |
-| `%i` | Signed integer (auto-detect octal/hex) | `scanf("%i", &x)` —” `010` reads as 8 |
+| `%i` | Signed integer (auto-detect octal/hex) | `scanf("%i", &x)` â€”â€ `010` reads as 8 |
 | `%u` | Unsigned decimal integer | `scanf("%u", &x)` |
-| `%f` | Float | `scanf("%f", &f)` —” for `float` (not double!) |
-| `%lf` | Double | `scanf("%lf", &d)` —” for `double` |
-| `%c` | Single character | `scanf(" %c", &ch)` —” note space before %c to skip whitespace |
-| `%s` | String (whitespace-terminated) | `scanf("%49s", buffer)` —” no & needed for arrays |
+| `%f` | Float | `scanf("%f", &f)` â€”â€ for `float` (not double!) |
+| `%lf` | Double | `scanf("%lf", &d)` â€”â€ for `double` |
+| `%c` | Single character | `scanf(" %c", &ch)` â€”â€ note space before %c to skip whitespace |
+| `%s` | String (whitespace-terminated) | `scanf("%49s", buffer)` â€”â€ no & needed for arrays |
 | `%x` | Hexadecimal integer | `scanf("%x", &x)` |
 | `%o` | Octal integer | `scanf("%o", &x)` |
-| `%[...]` | Scanset | `scanf("%[a-zA-Z]", str)` —” read only letters |
-| `%*d` | Suppress assignment | `scanf("%*d %d", &x)` —” read and discard first integer |
+| `%[...]` | Scanset | `scanf("%[a-zA-Z]", str)` â€”â€ read only letters |
+| `%*d` | Suppress assignment | `scanf("%*d %d", &x)` â€”â€ read and discard first integer |
 
 ### Escape Sequences Table
-
 
 | Sequence | ASCII Value | Meaning |
 |----------|-------------|---------|
@@ -1212,7 +1160,6 @@ int main(void) {
 | `\OOO` | OOO (octal) | Octal character |
 
 ### Complete I/O Examples
-
 
 ```c
 #include <stdio.h>
@@ -1263,12 +1210,11 @@ Previous printf printed 5 characters
 
 ### Common scanf Pitfalls
 
-
 ```c
 /* Pitfall 1: Trailing newline */
 int x;
 char ch;
-scanf("%d", &x);           // User types 42 and presses Enter —” "42\n" in buffer
+scanf("%d", &x);           // User types 42 and presses Enter â€”â€ "42\n" in buffer
 scanf("%c", &ch);          // Reads '\n' (leftover), not the next character!
 /* Fix: Add space before %c */
 scanf(" %c", &ch);         // Space skips whitespace before %c
@@ -1282,8 +1228,8 @@ scanf("%4s", buf);         // Reads at most 4 chars + null terminator
 /* Pitfall 3: %f vs %lf in scanf */
 float f;
 double d;
-scanf("%f", &f);           // %f for float —” CORRECT
-scanf("%lf", &d);          // %lf for double —” CORRECT (NOT %f!)
+scanf("%f", &f);           // %f for float â€”â€ CORRECT
+scanf("%lf", &d);          // %lf for double â€”â€ CORRECT (NOT %f!)
 /* Note: In printf, %f works for BOTH float and double (float promotes to double) */
 ```
 
@@ -1291,46 +1237,44 @@ scanf("%lf", &d);          // %lf for double —” CORRECT (NOT %f!)
 
 ### Timeline and Feature Comparison
 
-
 | Feature | K&R (1978) | C89/C90 | C99 | C11 | C17 | C23 |
 |---------|-----------|---------|-----|-----|-----|-----|
 | **Year** | 1978 | 1989/1990 | 1999 | 2011 | 2018 | 2024 |
-| **Function prototypes** | âŒ | âœ… | âœ… | âœ… | âœ… | âœ… |
-| **`//` comments** | âŒ | âŒ | âœ… | âœ… | âœ… | âœ… |
-| **`long long` type** | âŒ | âŒ | âœ… | âœ… | âœ… | âœ… |
-| **`_Bool` / `bool`** | âŒ | âŒ | `_Bool` | `_Bool` | `_Bool` | âœ… keyword |
-| **Inline functions** | âŒ | âŒ | âœ… | âœ… | âœ… | âœ… |
-| **Variable-length arrays** | âŒ | âŒ | âœ… | optional | optional | âœ… (mandatory) |
-| **Designated initializers** | âŒ | âŒ | âœ… | âœ… | âœ… | âœ… |
-| **Compound literals** | âŒ | âŒ | âœ… | âœ… | âœ… | âœ… |
-| **`restrict` keyword** | âŒ | âŒ | âœ… | âœ… | âœ… | âœ… |
-| **Anonymous structs/unions** | âŒ | âŒ | âŒ | âœ… | âœ… | âœ… |
-| **`_Static_assert`** | âŒ | âŒ | âŒ | âœ… | âœ… | âœ… (keyword) |
-| **`_Generic`** | âŒ | âŒ | âŒ | âœ… | âœ… | âœ… |
-| **Multithreading** | âŒ | âŒ | âŒ | `_Thread_local`, `<threads.h>` | same | enhanced |
-| **`noreturn`** | âŒ | âŒ | âŒ | `_Noreturn` | `_Noreturn` | `[[noreturn]]` |
-| **`alignas` / `alignof`** | âŒ | âŒ | âŒ | `_Alignas`, `_Alignof` | same | keywords |
-| **`constexpr`** | âŒ | âŒ | âŒ | âŒ | âŒ | âœ… |
-| **`typeof`** | âŒ | âŒ | âŒ | âŒ | âŒ | âœ… |
-| **`nullptr`** | âŒ | âŒ | âŒ | âŒ | âŒ | âœ… |
-| **`#elifdef` / `#elifndef`** | âŒ | âŒ | âŒ | âŒ | âŒ | âœ… |
-| **`bool` as keyword** | âŒ | âŒ | âŒ | âŒ | âŒ | âœ… |
-| **True/false as keywords** | âŒ | âŒ | âŒ | âŒ | âŒ | âœ… |
-| **Binary literals (0b...)** | âŒ | âŒ | âŒ | âŒ | âŒ | âœ… |
-| **`memset_s`** | âŒ | âŒ | âŒ | âŒ | âŒ | âœ… |
-| **Digit separators (`'`)** | âŒ | âŒ | âŒ | âŒ | âŒ | âœ… |
-| **`[[deprecated]]`** | âŒ | âŒ | âŒ | âŒ | âŒ | âœ… |
-| **Trigraphs** | âŒ | âœ… | âœ… | âœ… | âœ… | âŒ removed |
+| **Function prototypes** | Ã¢ÂÅ’ | Ã¢Å“â€¦ | Ã¢Å“â€¦ | Ã¢Å“â€¦ | Ã¢Å“â€¦ | Ã¢Å“â€¦ |
+| **`//` comments** | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢Å“â€¦ | Ã¢Å“â€¦ | Ã¢Å“â€¦ | Ã¢Å“â€¦ |
+| **`long long` type** | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢Å“â€¦ | Ã¢Å“â€¦ | Ã¢Å“â€¦ | Ã¢Å“â€¦ |
+| **`_Bool` / `bool`** | Ã¢ÂÅ’ | Ã¢ÂÅ’ | `_Bool` | `_Bool` | `_Bool` | Ã¢Å“â€¦ keyword |
+| **Inline functions** | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢Å“â€¦ | Ã¢Å“â€¦ | Ã¢Å“â€¦ | Ã¢Å“â€¦ |
+| **Variable-length arrays** | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢Å“â€¦ | optional | optional | Ã¢Å“â€¦ (mandatory) |
+| **Designated initializers** | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢Å“â€¦ | Ã¢Å“â€¦ | Ã¢Å“â€¦ | Ã¢Å“â€¦ |
+| **Compound literals** | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢Å“â€¦ | Ã¢Å“â€¦ | Ã¢Å“â€¦ | Ã¢Å“â€¦ |
+| **`restrict` keyword** | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢Å“â€¦ | Ã¢Å“â€¦ | Ã¢Å“â€¦ | Ã¢Å“â€¦ |
+| **Anonymous structs/unions** | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢Å“â€¦ | Ã¢Å“â€¦ | Ã¢Å“â€¦ |
+| **`_Static_assert`** | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢Å“â€¦ | Ã¢Å“â€¦ | Ã¢Å“â€¦ (keyword) |
+| **`_Generic`** | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢Å“â€¦ | Ã¢Å“â€¦ | Ã¢Å“â€¦ |
+| **Multithreading** | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | `_Thread_local`, `<threads.h>` | same | enhanced |
+| **`noreturn`** | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | `_Noreturn` | `_Noreturn` | `[[noreturn]]` |
+| **`alignas` / `alignof`** | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | `_Alignas`, `_Alignof` | same | keywords |
+| **`constexpr`** | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢Å“â€¦ |
+| **`typeof`** | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢Å“â€¦ |
+| **`nullptr`** | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢Å“â€¦ |
+| **`#elifdef` / `#elifndef`** | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢Å“â€¦ |
+| **`bool` as keyword** | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢Å“â€¦ |
+| **True/false as keywords** | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢Å“â€¦ |
+| **Binary literals (0b...)** | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢Å“â€¦ |
+| **`memset_s`** | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢Å“â€¦ |
+| **Digit separators (`'`)** | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢Å“â€¦ |
+| **`[[deprecated]]`** | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢ÂÅ’ | Ã¢Å“â€¦ |
+| **Trigraphs** | Ã¢ÂÅ’ | Ã¢Å“â€¦ | Ã¢Å“â€¦ | Ã¢Å“â€¦ | Ã¢Å“â€¦ | Ã¢ÂÅ’ removed |
 
 ### Why C Standards Matter
-
 
 ```c
 // This code compiles in C99+ but NOT in C89:
 #include <stdio.h>
 int main(void) {
-    // Single-line comment —” C99 feature
-    for (int i = 0; i < 5; i++) {  // Declare in for —” C99 feature
+    // Single-line comment â€”â€ C99 feature
+    for (int i = 0; i < 5; i++) {  // Declare in for â€”â€ C99 feature
         printf("%d\n", i);
     }
     return 0;
@@ -1353,10 +1297,10 @@ int main(void) {
 #include <stdio.h>
 int main(void) {
     bool flag = true;               // bool is now a keyword (was _Bool in C99/C11/C17)
-    int x = 0b101010;               // Binary literal —” C23 only
-    typeof(x) y = 42;               // typeof operator —” C23 only
+    int x = 0b101010;               // Binary literal â€”â€ C23 only
+    typeof(x) y = 42;               // typeof operator â€”â€ C23 only
     int arr[3] = { [0] = 1, [1] = 2, [2] = 3 };  // Designated initializers
-    nullptr_t n = nullptr;          // nullptr —” C23 only
+    nullptr_t n = nullptr;          // nullptr â€”â€ C23 only
 
     printf("flag = %d, x = %d, y = %d\n", flag, x, y);
     return 0;
@@ -1366,7 +1310,6 @@ int main(void) {
 ## 1.14 Interview Corner
 
 ### Q1: What is the difference between C and C++?
-
 
 | Aspect | C | C++ |
 |--------|---|-----|
@@ -1380,24 +1323,22 @@ int main(void) {
 | **`new`/`delete`** | `malloc()`/`free()` | `new`/`delete` operators |
 | **Virtual Functions** | Not supported | Virtual function tables (vtables) |
 | **Standard Library** | Small (stdio, stdlib, string, math) | Large (STL: containers, algorithms, iterators) |
-| **C++ Compatibility** | —” | C++ is (mostly) a superset of C |
+| **C++ Compatibility** | â€”â€ | C++ is (mostly) a superset of C |
 | **Use Cases** | Embedded, OS kernels, firmware | Game engines, GUI applications, systems software |
 
 ### Q2: Explain the four stages of compilation in detail.
 
-
 **Answer:** See Section 1.5. Key interview points:
-1. **Preprocessor**: Text processing —” `#include`, `#define`, conditional compilation
-2. **Compiler**: C → assembly —” lexical analysis, parsing, optimization, code generation
-3. **Assembler**: Assembly → machine code (relocatable object file)
-4. **Linker**: Object files + libraries → executable
+1. **Preprocessor**: Text processing â€”â€ `#include`, `#define`, conditional compilation
+2. **Compiler**: C â†’ assembly â€”â€ lexical analysis, parsing, optimization, code generation
+3. **Assembler**: Assembly â†’ machine code (relocatable object file)
+4. **Linker**: Object files + libraries â†’ executable
 
 **Follow-up:** "What is the difference between static and dynamic linking?"
 - **Static linking** (`-static`): Library code is copied into the executable at link time. Larger binary, but no runtime dependency.
 - **Dynamic linking** (default on most systems): References to shared libraries (`.so` / `.dll` / `.dylib`) are resolved at load time. Smaller binary, but requires libraries present at runtime.
 
 ### Q3: What does `printf()` return?
-
 
 ```c
 int printf(const char *format, ...);
@@ -1418,25 +1359,23 @@ int main(void) {
 
 ### Q4: What does `main()` return and why?
 
-
 ```c
-int main(void)       // Returns int —” conventional
+int main(void)       // Returns int â€”â€ conventional
 ```
 
 `main()` returns an **integer status code** to the operating system:
-- `0` or `EXIT_SUCCESS` —” program succeeded
-- Non-zero or `EXIT_FAILURE` —” program failed
+- `0` or `EXIT_SUCCESS` â€”â€ program succeeded
+- Non-zero or `EXIT_FAILURE` â€”â€ program failed
 
 The return value is captured by the shell:
 ```bash
 ./myprogram
-echo $?    # On Linux/macOS —” prints the return value
+echo $?    # On Linux/macOS â€”â€ prints the return value
 ```
 
 **Why `int`?** Historical convention from Unix: every process has an exit status. `0` = success, non-zero = error code. This allows shell scripts to chain commands with `&&` and `||`.
 
 ### Q5: What is the difference between `int main()` and `int main(void)`?
-
 
 ```c
 int main()       // In C: accepts any number of arguments (unspecified)
@@ -1447,20 +1386,18 @@ int main(void)   // In C: accepts exactly zero arguments
 
 ### Q6: Is `sizeof` a function or an operator?
 
-
 `sizeof` is a **compile-time unary operator**, not a function. Parentheses are only needed when the operand is a type name:
 
 ```c
-sizeof(int)       // âœ” Parentheses required for types
-sizeof x          // âœ” Parentheses optional for expressions
-sizeof(x + y)     // âœ” Parentheses optional but common
-sizeof int        // âŒ Syntax error: parentheses required for type names
+sizeof(int)       // Ã¢Å“â€ Parentheses required for types
+sizeof x          // Ã¢Å“â€ Parentheses optional for expressions
+sizeof(x + y)     // Ã¢Å“â€ Parentheses optional but common
+sizeof int        // Ã¢ÂÅ’ Syntax error: parentheses required for type names
 ```
 
 ### Q7: What is undefined behavior (UB) in C?
 
-
-**Undefined behavior** means the C standard imposes no requirements on what happens. The program may crash, produce wrong results, or appear to work correctly —” until it doesn't.
+**Undefined behavior** means the C standard imposes no requirements on what happens. The program may crash, produce wrong results, or appear to work correctly â€”â€ until it doesn't.
 
 **Common UB examples:**
 ```c
@@ -1472,7 +1409,6 @@ int y = 5; y = y++;     // UB: multiple side effects on same variable between se
 ```
 
 ### Q8: Explain sequence points in C.
-
 
 A **sequence point** is a point in the execution where all side effects of previous evaluations are complete. Between sequence points, you can modify a variable at most once.
 
@@ -1492,25 +1428,13 @@ i = ++i + 1;    // UB in C (ok in C++11+)
 
 ### Q9: Can you compile a C program without `main()`?
 
-
-**No** for executables —” the linker will report `undefined reference to 'main'`. **Yes** for libraries, kernel modules, and object files:
+**No** for executables â€”â€ the linker will report `undefined reference to 'main'`. **Yes** for libraries, kernel modules, and object files:
 ```bash
 gcc -c library.c -o library.o    # Compiles without main
-gcc -shared library.c -o lib.so   # Shared library —” no main needed
+gcc -shared library.c -o lib.so   # Shared library â€”â€ no main needed
 ```
 
 ### Q10: What is the difference between `#include "file"` and `#include <file>`?
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/what-is-the-difference-between-include-file-and-include-file-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/what-is-the-difference-between-include-file-and-include-file-handwritten.svg" alt="Handwritten: What is the difference between `#include "file"` and `#include <file>`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/what-is-the-difference-between-include-file-and-include-file-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/what-is-the-difference-between-include-file-and-include-file-diagram.svg" alt="Diagram: What is the difference between `#include "file"` and `#include <file>`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/what-is-the-difference-between-include-file-and-include-file-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/what-is-the-difference-between-include-file-and-include-file-sticky.svg" alt="Sticky Note: What is the difference between `#include "file"` and `#include <file>`?" width="30%">
-</a>
-
 
 | Form | Search Path | Usage |
 |------|-------------|-------|
@@ -1520,7 +1444,6 @@ gcc -shared library.c -o lib.so   # Shared library —” no main needed
 ## 1.15 Applications of C in Real Systems
 
 ### Operating Systems
-
 
 | System | Written In | C's Role |
 |--------|-----------|----------|
@@ -1543,7 +1466,6 @@ struct kmem_cache {
 
 ### Embedded Systems
 
-
 C dominates embedded programming due to its efficiency, low memory footprint, and direct hardware access:
 
 ```c
@@ -1565,7 +1487,6 @@ int main(void) {
 
 ### Databases
 
-
 | Database | C Usage | Key Component |
 |----------|---------|---------------|
 | **SQLite** | Entirely in C (~150K lines) | B-tree storage engine, virtual machine for bytecode |
@@ -1573,7 +1494,6 @@ int main(void) {
 | **Redis** | C | In-memory data store, event loop, network layer |
 
 ### Compilers and Interpreters
-
 
 | Tool | Written In | Role |
 |------|-----------|------|
@@ -1583,7 +1503,6 @@ int main(void) {
 | **Node.js (V8)** | C++ | JavaScript engine (core data structures) |
 
 ### Game Engines
-
 
 ```c
 // Simplified game loop in C
@@ -1667,7 +1586,7 @@ Game shutdown
 | Compilers | GCC, Clang, LLVM core | GCC ~15M lines (C/C++) |
 | Game engines | Unreal Engine, Godot (core runtime) | Id Tech engines (Doom, Quake) |
 | Networking | Network drivers, TCP/IP stacks | Linux networking stack |
-| Automotive | ECU firmware, CAN bus controllers | AUTOSAR standard —” C-based |
+| Automotive | ECU firmware, CAN bus controllers | AUTOSAR standard â€”â€ C-based |
 | Aerospace | Flight control systems, avionics | DO-178C certifiable code written in C |
 
 ## Chapter Quiz
@@ -1754,7 +1673,7 @@ Game shutdown
 
 11. What happens when you compile `void main() { }` in C99 or later?
     A) It compiles without errors
-    B) It produces a warning or error —” `main` must return `int`
+    B) It produces a warning or error â€”â€ `main` must return `int`
     C) It prints "Hello"
     D) It causes a segmentation fault
 
@@ -1796,18 +1715,18 @@ Game shutdown
 
 ## Summary
 
-- **C was created by Dennis Ritchie at Bell Labs (1969—“1973)** and remains foundational to modern systems programming
-- **C is a mid-level language** —” combines high-level constructs with low-level memory access
+- **C was created by Dennis Ritchie at Bell Labs (1969â€”â€œ1973)** and remains foundational to modern systems programming
+- **C is a mid-level language** â€”â€ combines high-level constructs with low-level memory access
 - **GCC and Clang** are the two primary C compilers; use `-std=c11 -Wall -Wextra` for robust compilation
-- **The compilation pipeline** consists of preprocessing (handles directives), compilation (C → assembly), assembly (→ machine code), and linking (resolves library references)
-- **Compilation differs from interpretation** —” C is fully compiled to native code for speed and efficiency, while interpreted languages trade speed for portability and dynamic features
-- **C programs follow a consistent structure**: comments → preprocessor directives → global declarations → main function → other function definitions
+- **The compilation pipeline** consists of preprocessing (handles directives), compilation (C â†’ assembly), assembly (â†’ machine code), and linking (resolves library references)
+- **Compilation differs from interpretation** â€”â€ C is fully compiled to native code for speed and efficiency, while interpreted languages trade speed for portability and dynamic features
+- **C programs follow a consistent structure**: comments â†’ preprocessor directives â†’ global declarations â†’ main function â†’ other function definitions
 - **Every C program must contain exactly one `main` function**, which returns an integer status code
 - **Tokens are the building blocks** of C programs: keywords (32 reserved words), identifiers (user-defined names), constants (fixed values), string literals, and operators (45+)
-- **The C language has evolved through multiple standards**: K&R → C89 → C99 → C11 → C17 → C23, each adding features while maintaining backward compatibility
-- **printf and scanf** are the primary I/O functions —” format specifiers must match the variable types or undefined behavior occurs
-- **Undefined behavior (UB)** is a critical concept in C —” operations like division by zero, buffer overflow, and uninitialized variable access have no guaranteed outcome
-- **C powers most of the digital world** —” from operating systems (Linux, Windows) to databases (SQLite, PostgreSQL) to embedded systems (Arduino, automotive ECUs)
+- **The C language has evolved through multiple standards**: K&R â†’ C89 â†’ C99 â†’ C11 â†’ C17 â†’ C23, each adding features while maintaining backward compatibility
+- **printf and scanf** are the primary I/O functions â€”â€ format specifiers must match the variable types or undefined behavior occurs
+- **Undefined behavior (UB)** is a critical concept in C â€”â€ operations like division by zero, buffer overflow, and uninitialized variable access have no guaranteed outcome
+- **C powers most of the digital world** â€”â€ from operating systems (Linux, Windows) to databases (SQLite, PostgreSQL) to embedded systems (Arduino, automotive ECUs)
 
 ## Exercises
 
@@ -1821,7 +1740,7 @@ Game shutdown
 6. List five C keywords and explain what each one does.
 7. What is a token? Give three examples of different token types.
 8. What is undefined behavior and why is it dangerous?
-9. Compare `#define` and `const` —” which one should you use and when?
+9. Compare `#define` and `const` â€”â€ which one should you use and when?
 10. What is the difference between `%f` and `%lf` in `scanf`?
 
 ### Application Problems
@@ -1838,5 +1757,5 @@ Game shutdown
 1. **Printf Chain:** Write a program that uses nested `printf` calls to print a number. Example: `printf("%d", printf("Test"))`. Predict the output before running.
 2. **Mini Preprocessor:** Write a C program (without using the standard preprocessor) that reads a C source file, strips all `/* */` and `//` comments, and outputs the result. This simulates what the preprocessor's comment removal phase does. (Hint: Handle both comment styles, including strings that contain comment-like text.)
 3. **Standard Detector:** Write a program that detects at compile time which C standard is being used (C89, C99, C11, C17, or C23) using the `__STDC_VERSION__` macro, and prints the detected standard.
-4. **Token Counter:** Write a program that reads a C source file and counts how many tokens it contains. At minimum, count identifiers, keywords, constants, and operators. (You don't need a full parser —” simple heuristics are sufficient.)
+4. **Token Counter:** Write a program that reads a C source file and counts how many tokens it contains. At minimum, count identifiers, keywords, constants, and operators. (You don't need a full parser â€”â€ simple heuristics are sufficient.)
 

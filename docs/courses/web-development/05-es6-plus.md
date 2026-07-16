@@ -1,4 +1,4 @@
-# Chapter 5 — ES6+ JavaScript
+﻿# Chapter 5 â€” ES6+ JavaScript
 
 > **Previous:** [04-js-dom](./04-js-dom.md) | **Next:** [06-react-basics](./06-react-basics.md)
 
@@ -9,16 +9,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/web-development/05-es6-plus/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/web-development/05-es6-plus/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/web-development/05-es6-plus/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/web-development/05-es6-plus/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/web-development/05-es6-plus/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/web-development/05-es6-plus/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/web-development/05-es6-plus/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/web-development/05-es6-plus/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/web-development/05-es6-plus/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/web-development/05-es6-plus/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/web-development/05-es6-plus/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/web-development/05-es6-plus/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -92,7 +92,7 @@ ES6 introduced `let` and `const` to address the function-scoping pitfalls of `va
 if (true) {
   var message = 'Hello';
 }
-console.log(message); // 'Hello' — leaks
+console.log(message); // 'Hello' â€” leaks
 
 // let respects block scope
 if (true) {
@@ -134,7 +134,7 @@ const now = () => Date.now();
 // Returning an object literal (parenthesize)
 const createUser = (name) => ({ name, role: 'user' });
 
-// Lexical this — critical for callbacks
+// Lexical this â€” critical for callbacks
 class Timer {
   constructor() {
     this.seconds = 0;
@@ -172,7 +172,7 @@ const html = `
   </div>
 `;
 
-// Tagged templates — custom processing
+// Tagged templates â€” custom processing
 function highlight(strings, ...values) {
   return strings.reduce((result, str, i) => {
     const value = values[i] ? `<strong>${values[i]}</strong>` : '';
@@ -229,7 +229,7 @@ const { data: { items, total } } = response;
 
 // Function parameter destructuring
 function renderUser({ name, email, role = 'user' }) {
-  return `${name} (${email}) — ${role}`;
+  return `${name} (${email}) â€” ${role}`;
 }
 ```
 
@@ -321,7 +321,7 @@ class Dog extends Animal {
 const dog = new Dog('Rex', 'German Shepherd');
 console.log(dog.speak()); // 'Rex barks.'
 console.log(dog.breed);   // 'German Shepherd'
-// console.log(dog.#breed); // SyntaxError — private
+// console.log(dog.#breed); // SyntaxError â€” private
 ```
 
 ### 5.7 Modules
@@ -415,18 +415,18 @@ fetchUser(1)
 const p1 = fetch('/api/users');
 const p2 = fetch('/api/roles');
 
-// All — wait for all to settle, reject if any reject
+// All â€” wait for all to settle, reject if any reject
 const [users, roles] = await Promise.all([p1, p2]);
 
-// allSettled — wait for all, never reject
+// allSettled â€” wait for all, never reject
 const results = await Promise.allSettled([p1, p2]);
 const fulfilled = results.filter((r) => r.status === 'fulfilled').map((r) => r.value);
 const rejected = results.filter((r) => r.status === 'rejected').map((r) => r.reason);
 
-// race — first settled (reject or resolve)
+// race â€” first settled (reject or resolve)
 const fastest = await Promise.race([p1, p2]);
 
-// any — first fulfilled, reject only if all reject (ES2021)
+// any â€” first fulfilled, reject only if all reject (ES2021)
 const firstSuccess = await Promise.any([p1, p2]);
 ```
 
@@ -441,7 +441,7 @@ async function loadDashboard() {
     const user = await fetchUser(1);
     const posts = await fetch(`/api/users/${user.id}/posts`);
     const data = await posts.json();
-    // Sequential — each waits for the previous
+    // Sequential â€” each waits for the previous
   } catch (error) {
     console.error('Failed to load dashboard:', error);
   }
@@ -477,7 +477,7 @@ const obj = {
 Object.getOwnPropertySymbols(obj); // [Symbol(id)]
 ```
 
-**Map** — key-value collections with any type as key:
+**Map** â€” key-value collections with any type as key:
 
 ```javascript
 const userRoles = new Map();
@@ -493,7 +493,7 @@ for (const [user, role] of userRoles) {
 }
 ```
 
-**Set** — unique values:
+**Set** â€” unique values:
 
 ```javascript
 const tags = new Set(['react', 'javascript', 'react', 'css']);
@@ -506,7 +506,7 @@ console.log(tags.has('react')); // true
 const unique = [...tags];
 ```
 
-**WeakMap** — keys must be objects, held weakly (no memory leak):
+**WeakMap** â€” keys must be objects, held weakly (no memory leak):
 
 ```javascript
 const cache = new WeakMap();
@@ -850,10 +850,10 @@ export { Processor, Task }
 ### Challenge Problem
 
 8. Implement an `EventBus` class (typed publish-subscribe system) using `Map` and `Symbol` that supports:
-   - `on(event, handler)` — subscribe with optional symbol-based wildcard patterns
-   - `off(event, handler)` — unsubscribe specific handler
-   - `emit(event, payload)` — publish to all matching subscribers synchronously
-   - `once(event, handler)` — auto-unsubscribe after first emission
+   - `on(event, handler)` â€” subscribe with optional symbol-based wildcard patterns
+   - `off(event, handler)` â€” unsubscribe specific handler
+   - `emit(event, payload)` â€” publish to all matching subscribers synchronously
+   - `once(event, handler)` â€” auto-unsubscribe after first emission
    - Priority ordering: handlers with higher priority execute first
    - Middleware: `use(middlewareFn)` to intercept all events
    - Context: subscribers should not be able to affect each other through shared mutable state in the payload

@@ -1,18 +1,18 @@
-# Chapter 7: DSA & Coding Interview Prep
+﻿# Chapter 7: DSA & Coding Interview Prep
 
 
 
-> **Prerequisites:** [Chapter 6: Procrastination, Habits & Deep Work](./ch-06-procrastination-habits-deep-work.md) — Emotional regulation and focus management.
+> **Prerequisites:** [Chapter 6: Procrastination, Habits & Deep Work](./ch-06-procrastination-habits-deep-work.md) â€” Emotional regulation and focus management.
 
-> **Next:** [Chapter 8: GATE & Theory Exam Prep](./ch-08-gate-theory-prep.md) — Strategic preparation for theory-heavy exams.
-
-
-
-> **Apply every learning technique from Chapters 1–6 specifically to DSA and coding interview preparation. Bridge the gap between knowing a concept and solving it under a whiteboard.**
+> **Next:** [Chapter 8: GATE & Theory Exam Prep](./ch-08-gate-theory-prep.md) â€” Strategic preparation for theory-heavy exams.
 
 
 
-This chapter teaches you how to learn data structures and algorithms efficiently for coding interviews — not by grinding 500 problems blindly, but by applying the cognitive science you've already mastered. You'll learn the 3-pass method that top candidates use, how to classify problems into patterns that reduce novel questions to familiar templates, and how to build a spaced-repetition system for DSA that actually works. Domain-specific workflows for dynamic programming, complexity analysis, system design, and low-level design are covered with concrete Java examples. By the end, you'll have a complete interview preparation system that replaces panic with process.
+> **Apply every learning technique from Chapters 1â€“6 specifically to DSA and coding interview preparation. Bridge the gap between knowing a concept and solving it under a whiteboard.**
+
+
+
+This chapter teaches you how to learn data structures and algorithms efficiently for coding interviews â€” not by grinding 500 problems blindly, but by applying the cognitive science you've already mastered. You'll learn the 3-pass method that top candidates use, how to classify problems into patterns that reduce novel questions to familiar templates, and how to build a spaced-repetition system for DSA that actually works. Domain-specific workflows for dynamic programming, complexity analysis, system design, and low-level design are covered with concrete Java examples. By the end, you'll have a complete interview preparation system that replaces panic with process.
 
 
 
@@ -25,16 +25,16 @@ This chapter teaches you how to learn data structures and algorithms efficiently
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -84,13 +84,13 @@ This chapter teaches you how to learn data structures and algorithms efficiently
 
 |-------|-------------|-------------------|
 
-| 3-Pass Method | Understand ? Plan ? Code replaces panic with process | Do not write code until the Plan phase is complete — trace examples first |
+| 3-Pass Method | Understand ? Plan ? Code replaces panic with process | Do not write code until the Plan phase is complete â€” trace examples first |
 
-| Pattern Classification | ~500 LeetCode problems reduce to ~20 recurring patterns | Train yourself to classify the pattern before solving — under 30 seconds per problem |
+| Pattern Classification | ~500 LeetCode problems reduce to ~20 recurring patterns | Train yourself to classify the pattern before solving â€” under 30 seconds per problem |
 
 | DSA Anki Decks | Four card types test pattern recognition, not solution memorization | Create cards for Problem?Approach, Approach?Complexity, Pattern?Problems, Buggy Code?Fix |
 
-| DP Workflow | State ? Recurrence ? Base ? Iteration — the universal DP template | Write only steps 1-4 on paper for 5 DP problems before writing any code |
+| DP Workflow | State ? Recurrence ? Base ? Iteration â€” the universal DP template | Write only steps 1-4 on paper for 5 DP problems before writing any code |
 
 | Big O Matcher | Pattern recognition for time/space complexity across common structures | Use the complexity tier table to estimate bounds before coding |
 
@@ -98,7 +98,7 @@ This chapter teaches you how to learn data structures and algorithms efficiently
 
 | LLD Workflow | 5-step design: clarify ? identify objects ? define contracts ? implement ? test | Write the full Java implementation without looking at references |
 
-| Interview Workflow | Warm-up ? Clarify ? Plan ? Code ? Test ? Follow-up | Verbalize your reasoning even when stuck — silence makes interviewers nervous |
+| Interview Workflow | Warm-up ? Clarify ? Plan ? Code ? Test ? Follow-up | Verbalize your reasoning even when stuck â€” silence makes interviewers nervous |
 
 | Meta-Learning Loop | Interview ? Reflect ? Adjust ? Practice compounds every experience | After every mock interview, write down exactly one thing to practice tomorrow |
 
@@ -128,7 +128,7 @@ flowchart LR
 
 
 
-**One-Sentence Takeaway:** The 3-pass method enforces understanding before coding — 6 minutes for Pass 1 (plan in plain English) followed by Pass 2 (code with plan visible) and Pass 3 (review and optimize).
+**One-Sentence Takeaway:** The 3-pass method enforces understanding before coding â€” 6 minutes for Pass 1 (plan in plain English) followed by Pass 2 (code with plan visible) and Pass 3 (review and optimize).
 
 
 
@@ -175,13 +175,13 @@ flowchart LR
 
 - Restate the problem in your own words
 
-- Walk through examples — including edge cases (empty input, single element, duplicates, overflow)
+- Walk through examples â€” including edge cases (empty input, single element, duplicates, overflow)
 
 - Ask clarifying questions: input size bounds, memory constraints, character set, mutability
 
 - Brainstorm approaches out loud: brute force first, then ask "can we do better?"
 
-- Time: 3–5 minutes. No code.
+- Time: 3â€“5 minutes. No code.
 
 
 
@@ -213,7 +213,7 @@ flowchart LR
 
 - Test edge cases explicitly: send empty, null, single element
 
-- If there's a bug, explain what went wrong, fix it, and move on — do not spiral
+- If there's a bug, explain what went wrong, fix it, and move on â€” do not spiral
 
 
 
@@ -295,7 +295,7 @@ The 3-pass method works because it matches how your brain solves problems: diffu
 
 
 
-**One-Sentence Takeaway:** The bottleneck for most interview problems is understanding, not coding — if you can't explain the approach in 6 minutes, you're not ready to write code.
+**One-Sentence Takeaway:** The bottleneck for most interview problems is understanding, not coding â€” if you can't explain the approach in 6 minutes, you're not ready to write code.
 
 
 
@@ -350,9 +350,9 @@ Pattern recognition is the single highest-leverage skill for DSA interviews. The
 
 | 13 | Greedy | Locally optimal choice, sorting first | Jump Game II, Activity Selection |
 
-| 14 | DP — 1D | Single variable state | Climbing Stairs, House Robber |
+| 14 | DP â€” 1D | Single variable state | Climbing Stairs, House Robber |
 
-| 15 | DP — 2D | Matrix, two strings | Longest Common Subsequence, Edit Distance |
+| 15 | DP â€” 2D | Matrix, two strings | Longest Common Subsequence, Edit Distance |
 
 | 16 | Trie | Prefix matching, autocomplete | Implement Trie, Word Search II |
 
@@ -430,7 +430,7 @@ public int maxSubArray(int[] nums) {
 
 
 
-**Try This:** Go through the last 10 LeetCode problems you solved. Write down which pattern each one belongs to. If you haven't solved any, go to LeetCode's "Top Interview Questions" and classify the first 10 by reading only the description — not the solution.
+**Try This:** Go through the last 10 LeetCode problems you solved. Write down which pattern each one belongs to. If you haven't solved any, go to LeetCode's "Top Interview Questions" and classify the first 10 by reading only the description â€” not the solution.
 
 
 
@@ -438,7 +438,7 @@ public int maxSubArray(int[] nums) {
 
 
 
-**One-Sentence Takeaway:** Solving 10 problems while actively classifying them into patterns teaches you the framework — the classification step IS the learning, not the repetition.
+**One-Sentence Takeaway:** Solving 10 problems while actively classifying them into patterns teaches you the framework â€” the classification step IS the learning, not the repetition.
 
 
 
@@ -507,9 +507,9 @@ Why can't it be O(n) time?
 
 Back:
 
-Time: O(n log n) — divide step is log n levels, merge step is O(n) per level
+Time: O(n log n) â€” divide step is log n levels, merge step is O(n) per level
 
-Space: O(n) — auxiliary array for merging
+Space: O(n) â€” auxiliary array for merging
 
 Why not O(n)? Comparison-based sorting has a proven lower bound of O(n log n)
 
@@ -593,7 +593,7 @@ but left <= right would be the standard binary search variant.
 
 - Tags: `#dsa::pattern::sliding-window`, `#dsa::difficulty::medium`, `#dsa::topic::array`
 
-- New cards per day: 10–15 (higher than general knowledge because you'll review solutions as you practice)
+- New cards per day: 10â€“15 (higher than general knowledge because you'll review solutions as you practice)
 
 - Maximum 20 cards per subdeck or split it
 
@@ -607,9 +607,9 @@ but left <= right would be the standard binary search variant.
 
 - Next day: recall the approach from memory before looking at your notes
 
-- Day 4: solve a variant (not the same problem — a new problem in the same pattern)
+- Day 4: solve a variant (not the same problem â€” a new problem in the same pattern)
 
-- Day 7: speed round — write the approach in 30 seconds
+- Day 7: speed round â€” write the approach in 30 seconds
 
 - Day 30: classify 5 random problems into patterns
 
@@ -619,11 +619,11 @@ but left <= right would be the standard binary search variant.
 
 
 
-> **Warning:** The most common DSA Anki mistake is testing recognition instead of recall. A card that shows "Two Pointers: [full explanation]" tests only reading comprehension. A good card shows a problem description on the front and asks "Which pattern? Why?" — forcing you to retrieve the classification from memory.
+> **Warning:** The most common DSA Anki mistake is testing recognition instead of recall. A card that shows "Two Pointers: [full explanation]" tests only reading comprehension. A good card shows a problem description on the front and asks "Which pattern? Why?" â€” forcing you to retrieve the classification from memory.
 
 
 
-**One-Sentence Takeaway:** DSA Anki cards must test recall, not recognition — show the problem description and ask "Which pattern? Why?" instead of listing the pattern name.
+**One-Sentence Takeaway:** DSA Anki cards must test recall, not recognition â€” show the problem description and ask "Which pattern? Why?" instead of listing the pattern name.
 
 
 
@@ -662,7 +662,7 @@ flowchart TD
 
 
 
-**DP Workflow — 5 Steps**
+**DP Workflow â€” 5 Steps**
 
 
 
@@ -818,7 +818,7 @@ public int minPathSumOptimized(int[][] grid) {
 
 
 
-1. Solve every DP problem on paper using the 5-step workflow — no code allowed until step 5
+1. Solve every DP problem on paper using the 5-step workflow â€” no code allowed until step 5
 
 2. After solving, mutate the problem (e.g., "what if we could also move left?") and re-derive
 
@@ -834,7 +834,7 @@ public int minPathSumOptimized(int[][] grid) {
 
 
 
-**One-Sentence Takeaway:** The 5-step DP workflow (state ? recurrence ? base ? order ? code) prevents the most common mistake — if you can't state the recurrence in plain English, you're not ready to code.
+**One-Sentence Takeaway:** The 5-step DP workflow (state ? recurrence ? base ? order ? code) prevents the most common mistake â€” if you can't state the recurrence in plain English, you're not ready to code.
 
 
 
@@ -859,7 +859,7 @@ The most common mistake in DSA preparation is reading the solution immediately a
 
 
 
-**Step 0: Fight (15–30 minutes)**
+**Step 0: Fight (15â€“30 minutes)**
 
 
 
@@ -879,7 +879,7 @@ The most common mistake in DSA preparation is reading the solution immediately a
 
 - Read only the first sentence of the solution (pattern name)
 
-- Example: "This problem uses two pointers" — then stop reading
+- Example: "This problem uses two pointers" â€” then stop reading
 
 - Try to derive the full solution from just the pattern name
 
@@ -971,7 +971,7 @@ public int subarraySum(int[] nums, int k) {
 
 - You're revisiting a problem you already solved ? write from memory, then check
 
-- You're studying a new pattern ? read the explanation for 2–3 examples, then solve the next 5 yourself
+- You're studying a new pattern ? read the explanation for 2â€“3 examples, then solve the next 5 yourself
 
 
 
@@ -987,11 +987,11 @@ After reading a solution, you must re-solve the same problem from scratch within
 
 
 
-> **Pro Tip:** The stair-step protocol works because it prevents the "solution spoiler" problem. Most learners read the solution too early and fool themselves into thinking they understand. By forcing yourself through graduated hints, you maximize the time spent in productive struggle — which is where real learning happens.
+> **Pro Tip:** The stair-step protocol works because it prevents the "solution spoiler" problem. Most learners read the solution too early and fool themselves into thinking they understand. By forcing yourself through graduated hints, you maximize the time spent in productive struggle â€” which is where real learning happens.
 
 
 
-**One-Sentence Takeaway:** The stair-step protocol (graduated hints) maximizes productive struggle — learning happens during the effort, not from reading the solution early.
+**One-Sentence Takeaway:** The stair-step protocol (graduated hints) maximizes productive struggle â€” learning happens during the effort, not from reading the solution early.
 
 
 
@@ -1100,7 +1100,7 @@ int fib(int n) {
 
 
 
-// Example E:  (answer: O(n), O(1) space — tail recursion optimizable)
+// Example E:  (answer: O(n), O(1) space â€” tail recursion optimizable)
 
 int factorial(int n, int acc) {
 
@@ -1126,11 +1126,11 @@ int factorial(int n, int acc) {
 
 3. Common traps to develop intuition for:
 
-   - `O(n)` inside `O(n)` is `O(n^2)` — but only if the inner loop's work grows with n
+   - `O(n)` inside `O(n)` is `O(n^2)` â€” but only if the inner loop's work grows with n
 
-   - `O(n/2)` is `O(n)` — constants don't matter
+   - `O(n/2)` is `O(n)` â€” constants don't matter
 
-   - `O(n + n log n)` simplifies to `O(n log n)` — keep the dominant term
+   - `O(n + n log n)` simplifies to `O(n log n)` â€” keep the dominant term
 
    - String concatenation in a loop is `O(n * k)` not `O(n)` if strings are immutable
 
@@ -1166,11 +1166,11 @@ public String joinStrings(List<String> words) {
 
 
 
-> **Remember:** Big-O analysis in interviews is less about exact calculation and more about recognizing common patterns. Nested loops over the same data ? O(n²). Divide-and-conquer recursion ? O(n log n). Single pass with constant work per element ? O(n). Learn to spot the pattern, not compute the math.
+> **Remember:** Big-O analysis in interviews is less about exact calculation and more about recognizing common patterns. Nested loops over the same data ? O(nÂ²). Divide-and-conquer recursion ? O(n log n). Single pass with constant work per element ? O(n). Learn to spot the pattern, not compute the math.
 
 
 
-**One-Sentence Takeaway:** Big-O analysis in interviews is about pattern recognition — nested loops = O(n²), divide-and-conquer = O(n log n), single pass = O(n) — not about computing exact math.
+**One-Sentence Takeaway:** Big-O analysis in interviews is about pattern recognition â€” nested loops = O(nÂ²), divide-and-conquer = O(n log n), single pass = O(n) â€” not about computing exact math.
 
 
 
@@ -1221,7 +1221,7 @@ public boolean containsDuplicate(int[] nums) {
 
 
 
-// O(n) time, O(n) space — trade memory for speed
+// O(n) time, O(n) space â€” trade memory for speed
 
 public boolean containsDuplicate(int[] nums) {
 
@@ -1321,7 +1321,7 @@ public int maxDepth(TreeNode root) {
 
 
 
-// Iterative BFS: O(w) queue space (w = max width) — trades stack space for queue space
+// Iterative BFS: O(w) queue space (w = max width) â€” trades stack space for queue space
 
 public int maxDepth(TreeNode root) {
 
@@ -1423,11 +1423,11 @@ public char[] reverseCopy(char[] s) {
 
 
 
-> **Pro Tip:** In an interview, don't just state the tradeoff — show you can make a decision. Say "For this specific case, the input arrays are small and I don't know the data distribution, so I'll start with the hashset approach for best average-case time. If memory becomes an issue, I can fall back to sort + two pointers." This demonstrates engineering judgment.
+> **Pro Tip:** In an interview, don't just state the tradeoff â€” show you can make a decision. Say "For this specific case, the input arrays are small and I don't know the data distribution, so I'll start with the hashset approach for best average-case time. If memory becomes an issue, I can fall back to sort + two pointers." This demonstrates engineering judgment.
 
 
 
-**One-Sentence Takeaway:** In interview tradeoff discussions, don't just state the options — make a decision justified by specific constraints, with a fallback plan.
+**One-Sentence Takeaway:** In interview tradeoff discussions, don't just state the options â€” make a decision justified by specific constraints, with a fallback plan.
 
 
 
@@ -1538,7 +1538,7 @@ Ask these questions in order:
 
 // Answer structure:
 
-// "For the relational parts — trip history with driver and rider details —
+// "For the relational parts â€” trip history with driver and rider details â€”
 
 //  I'd use PostgreSQL because trips have a fixed schema and need ACID for payments.
 
@@ -1612,7 +1612,7 @@ CREATE TABLE trips (
 
 
 
-**One-Sentence Takeaway:** System design requires a structured framework — assess requirements, estimate scale, design data model, plan components, and evaluate tradeoffs at each step.
+**One-Sentence Takeaway:** System design requires a structured framework â€” assess requirements, estimate scale, design data model, plan components, and evaluate tradeoffs at each step.
 
 
 
@@ -1637,7 +1637,7 @@ System design interviews test your ability to architect scalable systems, not yo
 
 
 
-**Step 1: Scope & Requirements (2–3 minutes)**
+**Step 1: Scope & Requirements (2â€“3 minutes)**
 
 
 
@@ -1649,7 +1649,7 @@ System design interviews test your ability to architect scalable systems, not yo
 
 
 
-**Step 2: High-Level Design (3–5 minutes)**
+**Step 2: High-Level Design (3â€“5 minutes)**
 
 
 
@@ -1659,11 +1659,11 @@ System design interviews test your ability to architect scalable systems, not yo
 
 
 
-**Step 3: Deep Dive (10–15 minutes)**
+**Step 3: Deep Dive (10â€“15 minutes)**
 
 
 
-- Go deeper on 1–2 components the interviewer cares about
+- Go deeper on 1â€“2 components the interviewer cares about
 
 - Database schema, caching strategy, data partitioning, consistency model
 
@@ -1689,7 +1689,7 @@ System design interviews test your ability to architect scalable systems, not yo
 
 - Summarize the architecture
 
-- Mention 1–2 things you'd improve with more time
+- Mention 1â€“2 things you'd improve with more time
 
 
 
@@ -1719,7 +1719,7 @@ System design interviews test your ability to architect scalable systems, not yo
 
 
 
-// Step 3: Deep Dive — Key Generation
+// Step 3: Deep Dive â€” Key Generation
 
 // We need 62^7 = ~3.5 trillion unique keys.
 
@@ -1777,7 +1777,7 @@ System design interviews test your ability to architect scalable systems, not yo
 
 
 
-**One-Sentence Takeaway:** Practice system design with realistic scenarios like Twitter's timeline feed — focus on the core use case and apply a consistent 5-step framework.
+**One-Sentence Takeaway:** Practice system design with realistic scenarios like Twitter's timeline feed â€” focus on the core use case and apply a consistent 5-step framework.
 
 
 
@@ -1832,11 +1832,11 @@ Design pattern questions in interviews don't test whether you can recite the GoF
 
 
 
-- Day 1–2: Singleton + Factory Method
+- Day 1â€“2: Singleton + Factory Method
 
-- Day 3–4: Strategy + Observer
+- Day 3â€“4: Strategy + Observer
 
-- Day 5–6: Decorator + Adapter
+- Day 5â€“6: Decorator + Adapter
 
 - Day 7: Builder + State + Review
 
@@ -2000,7 +2000,7 @@ class ShoppingCart {
 
 
 
-**One-Sentence Takeaway:** Study design patterns by implementing them from memory for a real scenario — connection to SOLID principles and tradeoff awareness matters more than memorizing definitions.
+**One-Sentence Takeaway:** Study design patterns by implementing them from memory for a real scenario â€” connection to SOLID principles and tradeoff awareness matters more than memorizing definitions.
 
 
 
@@ -2053,11 +2053,11 @@ Code review and debugging are separate skills from writing code, and they need s
 
 ```java
 
-// Bug hunt drill — find the bugs:
+// Bug hunt drill â€” find the bugs:
 
 class BuggyCode {
 
-    // Bug 1: Off-by-one — missing last element
+    // Bug 1: Off-by-one â€” missing last element
 
     static int sum(int[] arr) {
 
@@ -2071,7 +2071,7 @@ class BuggyCode {
 
 
 
-    // Bug 2: Integer overflow — use long
+    // Bug 2: Integer overflow â€” use long
 
     static long factorial(int n) {
 
@@ -2083,7 +2083,7 @@ class BuggyCode {
 
     }
 
-    // (Actually correct for long — but test n=21 and it overflows silently)
+    // (Actually correct for long â€” but test n=21 and it overflows silently)
 
 
 
@@ -2143,7 +2143,7 @@ class BuggyCode {
 
 2. **Isolate:** Where in my code does the behavior diverge from expectations? Use binary search on print statements or breakpoints.
 
-3. **Hypothesize:** What could cause this? List 2–3 possible root causes.
+3. **Hypothesize:** What could cause this? List 2â€“3 possible root causes.
 
 4. **Test:** Write a minimal test case for each hypothesis.
 
@@ -2165,7 +2165,7 @@ public int binarySearch(int[] arr, int target) {
 
     int left = 0, right = arr.length - 1;
 
-    while (left < right) {  // Step 2: Isolate — is this condition correct?
+    while (left < right) {  // Step 2: Isolate â€” is this condition correct?
 
         int mid = left + (right - left) / 2;
 
@@ -2177,15 +2177,15 @@ public int binarySearch(int[] arr, int target) {
 
     }
 
-    // Step 3: Hypothesize — "left < right" fails when we narrow to a single element.
+    // Step 3: Hypothesize â€” "left < right" fails when we narrow to a single element.
 
     // If arr[left] == target, we never check it because the loop exits before returning.
 
-    // Step 4: Test — pass arr = [1, 2], target = 1. left=0, right=1, mid=0, match at 0 returns.
+    // Step 4: Test â€” pass arr = [1, 2], target = 1. left=0, right=1, mid=0, match at 0 returns.
 
     // But for arr = [1], target = 1: left=0, right=0, loop doesn't execute. Returns -1. Confirmed.
 
-    // Step 5: Fix — use left <= right, or add the final check outside the loop.
+    // Step 5: Fix â€” use left <= right, or add the final check outside the loop.
 
     return arr[left] == target ? left : -1;  // or change condition to left <= right
 
@@ -2199,7 +2199,7 @@ public int binarySearch(int[] arr, int target) {
 
 
 
-**One-Sentence Takeaway:** Develop code review skills by finding bugs in others' solutions — deliberate practice at reading and critiquing code builds debugging intuition faster than writing perfect code.
+**One-Sentence Takeaway:** Develop code review skills by finding bugs in others' solutions â€” deliberate practice at reading and critiquing code builds debugging intuition faster than writing perfect code.
 
 
 
@@ -2216,7 +2216,7 @@ public int binarySearch(int[] arr, int target) {
 
 
 
-LLD rounds test your ability to design object-oriented systems — class hierarchies, interfaces, design patterns, and clean abstractions. Unlike system design (which is about distributed systems), LLD is about in-memory object models for a single process.
+LLD rounds test your ability to design object-oriented systems â€” class hierarchies, interfaces, design patterns, and clean abstractions. Unlike system design (which is about distributed systems), LLD is about in-memory object models for a single process.
 
 
 
@@ -2286,7 +2286,7 @@ LLD rounds test your ability to design object-oriented systems — class hierarc
 
 
 
-// Step 1: Entities — Vehicle, ParkingSpot, ParkingFloor, ParkingLot, Ticket
+// Step 1: Entities â€” Vehicle, ParkingSpot, ParkingFloor, ParkingLot, Ticket
 
 // Actions: park vehicle, unpark vehicle, check availability, calculate fee
 
@@ -2470,7 +2470,7 @@ class ParkingLot {
 
 
 
-- Parking Lot (most classic — practice this until fluent)
+- Parking Lot (most classic â€” practice this until fluent)
 
 - Vending Machine
 
@@ -2492,7 +2492,7 @@ class ParkingLot {
 
 
 
-**One-Sentence Takeaway:** Low-Level Design practice requires hands-on implementation of realistic systems — follow a structured workflow from class definition through complete working code.
+**One-Sentence Takeaway:** Low-Level Design practice requires hands-on implementation of realistic systems â€” follow a structured workflow from class definition through complete working code.
 
 
 
@@ -2527,7 +2527,7 @@ Code is thread-safe if it works correctly when accessed by multiple threads simu
 
 ```java
 
-// NOT thread-safe — race condition
+// NOT thread-safe â€” race condition
 
 class Counter {
 
@@ -2539,7 +2539,7 @@ class Counter {
 
 
 
-// Thread-safe — synchronized
+// Thread-safe â€” synchronized
 
 class Counter {
 
@@ -2553,7 +2553,7 @@ class Counter {
 
 
 
-// Thread-safe — Lock
+// Thread-safe â€” Lock
 
 class Counter {
 
@@ -2609,7 +2609,7 @@ class Counter {
 
 ```java
 
-// volatile example — used for flags where only one thread writes
+// volatile example â€” used for flags where only one thread writes
 
 class TaskRunner {
 
@@ -2623,7 +2623,7 @@ class TaskRunner {
 
         while (running) {                      // Read by another thread
 
-            // do work — guaranteed to see the update to 'running'
+            // do work â€” guaranteed to see the update to 'running'
 
         }
 
@@ -2659,7 +2659,7 @@ class BlockingQueue<T> {
 
     public synchronized void produce(T item) throws InterruptedException {
 
-        while (queue.size() == capacity) wait();  // Busy wait avoided — releases lock
+        while (queue.size() == capacity) wait();  // Busy wait avoided â€” releases lock
 
         queue.add(item);
 
@@ -2701,7 +2701,7 @@ class BlockingQueue<T> {
 
 
 
-Modern Java concurrency for interviews — demonstrate this to show you know current APIs.
+Modern Java concurrency for interviews â€” demonstrate this to show you know current APIs.
 
 
 
@@ -2757,7 +2757,7 @@ CompletableFuture.supplyAsync(() -> fetchData())
 
 
 
-**One-Sentence Takeaway:** Prepare for concurrency questions by implementing classic thread-safe patterns — a structured weekly plan builds progressively from fundamentals to complex problems.
+**One-Sentence Takeaway:** Prepare for concurrency questions by implementing classic thread-safe patterns â€” a structured weekly plan builds progressively from fundamentals to complex problems.
 
 
 
@@ -2784,7 +2784,7 @@ Most candidates focus only on the technical portion and neglect everything else.
 
 - **48 hours before:** Review your Anki deck (DSA patterns, complexity cheat sheet, concurrency). Do a 30-minute mock interview with a friend or recording yourself.
 
-- **12 hours before:** Get a full night's sleep. The single biggest performance predictor is sleep quality the night before — it consolidates your DSA pattern memory (Chapters 1 and 5).
+- **12 hours before:** Get a full night's sleep. The single biggest performance predictor is sleep quality the night before â€” it consolidates your DSA pattern memory (Chapters 1 and 5).
 
 - **1 hour before:** Light review of your personal "cheat sheet" (one page of patterns and complexities). No deep problem-solving.
 
@@ -2800,13 +2800,13 @@ Most candidates focus only on the technical portion and neglect everything else.
 
 - Listen carefully to the problem statement
 
-- Ask 2–3 clarifying questions: "Should I handle empty input?" "What are the size constraints?"
+- Ask 2â€“3 clarifying questions: "Should I handle empty input?" "What are the size constraints?"
 
 - Confirm with the interviewer: "Does that cover the requirements?"
 
 
 
-**Phase 3: Problem Solving (25–35 Minutes)**
+**Phase 3: Problem Solving (25â€“35 Minutes)**
 
 
 
@@ -2826,7 +2826,7 @@ Most candidates focus only on the technical portion and neglect everything else.
 
 
 
-- Questions to ask the interviewer (prepare 2–3):
+- Questions to ask the interviewer (prepare 2â€“3):
 
   - "What does a typical day look like on your team?"
 
@@ -2854,7 +2854,7 @@ Most candidates focus only on the technical portion and neglect everything else.
 
   - What should I review tonight?
 
-- Add 1–2 Anki cards for the gaps you identified
+- Add 1â€“2 Anki cards for the gaps you identified
 
 - Continue practicing. One interview failure is data, not identity.
 
@@ -2892,7 +2892,7 @@ Before you hit "submit" or "I'm done":
 
 
 
-**One-Sentence Takeaway:** The meta-skill of learning through interviews — treat each interview as a data point, maintain learning streaks, and conduct weekly retrospectives to compound growth.
+**One-Sentence Takeaway:** The meta-skill of learning through interviews â€” treat each interview as a data point, maintain learning streaks, and conduct weekly retrospectives to compound growth.
 
 
 
@@ -2925,7 +2925,7 @@ Interview ? Reflect ? Adjust System ? Practice ? Next Interview
 
 
 
-Each interview produces data. Every rejection, every question you couldn't answer, every moment of panic — it's all data for your learning system.
+Each interview produces data. Every rejection, every question you couldn't answer, every moment of panic â€” it's all data for your learning system.
 
 
 
@@ -3027,7 +3027,7 @@ The most important meta-lesson of this entire course:
 
 
 
-> **Learning how to learn is a compound skill. Every interview you take — pass or fail — compounds your knowledge if you reflect on it.**
+> **Learning how to learn is a compound skill. Every interview you take â€” pass or fail â€” compounds your knowledge if you reflect on it.**
 
 
 
@@ -3115,19 +3115,19 @@ flowchart LR
 
 
 
-Chapters 1–6 gave you the tools. This chapter gave you the domain application. The remaining chapters will give you more domain applications (GATE, frameworks, lifelong learning). But the tool is the same:
+Chapters 1â€“6 gave you the tools. This chapter gave you the domain application. The remaining chapters will give you more domain applications (GATE, frameworks, lifelong learning). But the tool is the same:
 
 
 
-1. **Active recall** — test yourself, don't re-read
+1. **Active recall** â€” test yourself, don't re-read
 
-2. **Spaced repetition** — review at expanding intervals
+2. **Spaced repetition** â€” review at expanding intervals
 
-3. **Pomodoro** — focused sprints prevent burnout
+3. **Pomodoro** â€” focused sprints prevent burnout
 
-4. **Interleaving** — mix patterns, don't block-practice
+4. **Interleaving** â€” mix patterns, don't block-practice
 
-5. **Feynman** — teach it to understand it
+5. **Feynman** â€” teach it to understand it
 
 
 
@@ -3135,7 +3135,7 @@ Everything else is just the domain wrapping. You now know how to learn DSA. Go p
 
 
 
-**Try This:** Write down your "interview learning system" as code or pseudocode — the way you'll handle the next 30 days of preparation. Include: daily practice structure, weekly review cadence, Anki settings, and the retro template you'll use after each mock interview. This becomes your personal playbook.
+**Try This:** Write down your "interview learning system" as code or pseudocode â€” the way you'll handle the next 30 days of preparation. Include: daily practice structure, weekly review cadence, Anki settings, and the retro template you'll use after each mock interview. This becomes your personal playbook.
 
 
 
@@ -3218,13 +3218,13 @@ d) Identify DP ? Base ? State ? Recurrence ? Iteration
 
 
 
-a) NoSQL Document DB (MongoDB) — because schema evolves rapidly  
+a) NoSQL Document DB (MongoDB) â€” because schema evolves rapidly  
 
-b) NoSQL Key-Value (Redis) — because reads need to be fast  
+b) NoSQL Key-Value (Redis) â€” because reads need to be fast  
 
-c) SQL (PostgreSQL) — because trip data has a fixed schema and needs ACID for payments  
+c) SQL (PostgreSQL) â€” because trip data has a fixed schema and needs ACID for payments  
 
-d) NoSQL Graph (Neo4j) — because riders and drivers have relationships
+d) NoSQL Graph (Neo4j) â€” because riders and drivers have relationships
 
 
 
@@ -3250,7 +3250,7 @@ d) Step 4: Scale & Optimize
 
 
 
-**Answer:** c. Step 3 (Deep Dive) is where you go into detail on 1–2 components the interviewer cares about — database schema, caching strategy, sharding, consistency model — and explicitly discuss tradeoffs. Step 4 (Scale & Optimize) adds CDNs, read replicas, queues for 10x scale.
+**Answer:** c. Step 3 (Deep Dive) is where you go into detail on 1â€“2 components the interviewer cares about â€” database schema, caching strategy, sharding, consistency model â€” and explicitly discuss tradeoffs. Step 4 (Scale & Optimize) adds CDNs, read replicas, queues for 10x scale.
 
 
 
@@ -3294,7 +3294,7 @@ d) Copy the solution and re-submit it
 
 
 
-**Answer:** b. Step 1 is to read only the first sentence (the pattern name), then try to derive the full solution yourself. If that fails, proceed to Step 2 (skeleton/bullet points). Never read full code first — it trains pattern-matching to existing code, not problem-solving.
+**Answer:** b. Step 1 is to read only the first sentence (the pattern name), then try to derive the full solution yourself. If that fails, proceed to Step 2 (skeleton/bullet points). Never read full code first â€” it trains pattern-matching to existing code, not problem-solving.
 
 
 
@@ -3382,7 +3382,7 @@ d) Skip sleep to maximize study time
 
 
 
-**Answer:** b. Forty-eight hours before is review and consolidation time — run your Anki deck, do a 30-minute mock, get a full night's sleep. Learning new material at this point causes interference. Sleep is the single biggest performance predictor (it consolidates pattern memory, per Chapters 1 and 5).
+**Answer:** b. Forty-eight hours before is review and consolidation time â€” run your Anki deck, do a 30-minute mock, get a full night's sleep. Learning new material at this point causes interference. Sleep is the single biggest performance predictor (it consolidates pattern memory, per Chapters 1 and 5).
 
 
 
@@ -3404,7 +3404,7 @@ d) Start coding the first thing that comes to mind
 
 
 
-**Answer:** c. Silent thinking makes interviewers nervous. Verbalizing your reasoning — even when stuck — shows your problem-solving process. The recommended fallback is to try brute force or walk through a smaller example. Never stay silent, never jump to code without a plan.
+**Answer:** c. Silent thinking makes interviewers nervous. Verbalizing your reasoning â€” even when stuck â€” shows your problem-solving process. The recommended fallback is to try brute force or walk through a smaller example. Never stay silent, never jump to code without a plan.
 
 
 
@@ -3420,9 +3420,9 @@ d) Start coding the first thing that comes to mind
 
 |---------|-----------|---------------|---------|
 
-| 3-Pass Method | Understand (examples) ? Plan (approach + complexity) ? Code (implement + test) | Every LeetCode problem you attempt | Jumping to code before the plan is clear — this is the #1 interview killer |
+| 3-Pass Method | Understand (examples) ? Plan (approach + complexity) ? Code (implement + test) | Every LeetCode problem you attempt | Jumping to code before the plan is clear â€” this is the #1 interview killer |
 
-| Pattern Classification | Mapping problems to ~20 recurring algorithmic patterns | When facing an unfamiliar problem — classify before you solve | Overfitting: treating a problem as pattern X when it's actually pattern Y |
+| Pattern Classification | Mapping problems to ~20 recurring algorithmic patterns | When facing an unfamiliar problem â€” classify before you solve | Overfitting: treating a problem as pattern X when it's actually pattern Y |
 
 | DSA Anki Cards | Atomic flashcards that test pattern recognition and complexity tradeoffs | Daily review to maintain DSA pattern memory | Writing solution code on cards instead of high-level approach + tradeoffs |
 
@@ -3434,9 +3434,9 @@ d) Start coding the first thing that comes to mind
 
 | LLD 5-Step | Clarify ? Identify Objects ? Contracts ? Implementation ? Test | Low-level design rounds in interviews | Making classes too abstract or over-engineering the design upfront |
 
-| Interview Workflow | Structured 40-minute process: warm-up through follow-up | Every mock interview or real coding interview | Staying silent when stuck — always verbalize your thought process |
+| Interview Workflow | Structured 40-minute process: warm-up through follow-up | Every mock interview or real coding interview | Staying silent when stuck â€” always verbalize your thought process |
 
-| Meta-Learning Loop | Post-interview reflection that feeds the next practice session | After every interview or mock regardless of outcome | Ignoring the reflection step — the real growth comes from the loop, not the interview |
+| Meta-Learning Loop | Post-interview reflection that feeds the next practice session | After every interview or mock regardless of outcome | Ignoring the reflection step â€” the real growth comes from the loop, not the interview |
 
 
 
@@ -3474,7 +3474,7 @@ d) Start coding the first thing that comes to mind
 
 |----------|-----------|
 
-| Problem Solving | - Use the 3-pass method: Understand ? Plan ? Code - Classify every problem into one of ~20 patterns - Never jump to code without a clear plan - Verbalize your thinking — silence makes interviewers nervous |
+| Problem Solving | - Use the 3-pass method: Understand ? Plan ? Code - Classify every problem into one of ~20 patterns - Never jump to code without a clear plan - Verbalize your thinking â€” silence makes interviewers nervous |
 
 | Pattern Classification | - 20 patterns cover 500+ LeetCode problems - Focus on Arrays, Trees, DP (48% of problem bank) - Train classification in under 30 seconds per problem - Use stair-step protocol: read pattern name ? derive solution |
 
@@ -3516,7 +3516,7 @@ d) Start coding the first thing that comes to mind
 
 
 
-3. **DP Workflow Drill:** Take 5 DP problems (Knapsack, LCS, LIS, Coin Change, Edit Distance). For each, write only Steps 1–4 of the DP workflow on paper. No code. Then check against known solutions.
+3. **DP Workflow Drill:** Take 5 DP problems (Knapsack, LCS, LIS, Coin Change, Edit Distance). For each, write only Steps 1â€“4 of the DP workflow on paper. No code. Then check against known solutions.
 
 
 
@@ -3546,7 +3546,7 @@ d) Start coding the first thing that comes to mind
 
 **Q1:** In a coding interview, a candidate immediately starts coding after reading a problem. According to the chapter, what mistake are they making?
 
-- A) No mistake — fast coders impress interviewers
+- A) No mistake â€” fast coders impress interviewers
 
 - B) They skipped the Understand and Plan phases, which is the #1 interview killer
 
@@ -3562,7 +3562,7 @@ d) Start coding the first thing that comes to mind
 
 
 
-**Answer:** B — The 3-pass method (Understand ? Plan ? Code) is designed to prevent jumping to code. The Plan phase ensures the approach is correct before implementation. Jumping to code without a plan is the single most common and most costly interview mistake.
+**Answer:** B â€” The 3-pass method (Understand ? Plan ? Code) is designed to prevent jumping to code. The Plan phase ensures the approach is correct before implementation. Jumping to code without a plan is the single most common and most costly interview mistake.
 
 </details>
 
@@ -3586,7 +3586,7 @@ d) Start coding the first thing that comes to mind
 
 
 
-**Answer:** B — Pattern classification is a separate skill from solving. The chapter recommends training to classify a problem in under 30 seconds before solving, using a stair-step protocol. Without explicit classification practice, 200 blocked-practice problems do not build discrimination skills.
+**Answer:** B â€” Pattern classification is a separate skill from solving. The chapter recommends training to classify a problem in under 30 seconds before solving, using a stair-step protocol. Without explicit classification practice, 200 blocked-practice problems do not build discrimination skills.
 
 </details>
 
@@ -3610,7 +3610,7 @@ d) Start coding the first thing that comes to mind
 
 
 
-**Answer:** B — Mock interviews simulate the social pressure and time constraints of real interviews. The meta-learning loop (Interview ? Reflect ? Adjust ? Practice) compounds every experience into system improvement. Without mocks and structured reflection, practice does not transfer to performance.
+**Answer:** B â€” Mock interviews simulate the social pressure and time constraints of real interviews. The meta-learning loop (Interview ? Reflect ? Adjust ? Practice) compounds every experience into system improvement. Without mocks and structured reflection, practice does not transfer to performance.
 
 </details>
 
@@ -3620,15 +3620,15 @@ d) Start coding the first thing that comes to mind
 
 
 
-- **Previous:** [Chapter 6: Procrastination, Habits & Deep Work](ch-06-procrastination-habits-deep-work.md) — Master the focus and discipline that make DSA practice productive.
+- **Previous:** [Chapter 6: Procrastination, Habits & Deep Work](ch-06-procrastination-habits-deep-work.md) â€” Master the focus and discipline that make DSA practice productive.
 
-- **Next:** [Chapter 8: GATE & Theory Prep](ch-08-gate-theory-prep.md) — Apply the same learning techniques to GATE CS theory preparation with formula cheat sheets, PYQ strategies, and 30-day study plans.
+- **Next:** [Chapter 8: GATE & Theory Prep](ch-08-gate-theory-prep.md) â€” Apply the same learning techniques to GATE CS theory preparation with formula cheat sheets, PYQ strategies, and 30-day study plans.
 
-- **DSA Problem Bank:** [Problem Bank](../placement-preparation/02-dsa-problem-bank.md) — 100+ solved DSA problems with explanations across all 20 patterns.
+- **DSA Problem Bank:** [Problem Bank](../placement-preparation/02-dsa-problem-bank.md) â€” 100+ solved DSA problems with explanations across all 20 patterns.
 
-- **Concurrency:** [Java Concurrency Course](../java/02-concurrency.md) — Deeper dive into threads, locks, and concurrent data structures.
+- **Concurrency:** [Java Concurrency Course](../java/02-concurrency.md) â€” Deeper dive into threads, locks, and concurrent data structures.
 
-- **Design Patterns:** [Java Design Patterns Course](../java/64-interview-design-patterns.md) — Complete coverage of GoF patterns with Java examples and interview questions.
+- **Design Patterns:** [Java Design Patterns Course](../java/64-interview-design-patterns.md) â€” Complete coverage of GoF patterns with Java examples and interview questions.
 
-- **System Design:** [Java System Design Course](../java/65-interview-system-design.md) — Distributed systems fundamentals with design deep-dives.
+- **System Design:** [Java System Design Course](../java/65-interview-system-design.md) â€” Distributed systems fundamentals with design deep-dives.
 

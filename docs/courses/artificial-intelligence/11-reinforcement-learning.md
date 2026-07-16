@@ -1,4 +1,4 @@
-# Chapter 11: Reinforcement Learning
+﻿# Chapter 11: Reinforcement Learning
 
 **Previous:** [Chapter 10: Probabilistic Reasoning Over Time](10-probabilistic-reasoning.md) | **Next:** [Chapter 12: Natural Language Processing](12-nlp.md)
 
@@ -9,16 +9,16 @@ By the end of this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/11-reinforcement-learning/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/11-reinforcement-learning/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/11-reinforcement-learning/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/11-reinforcement-learning/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/11-reinforcement-learning/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/11-reinforcement-learning/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/11-reinforcement-learning/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/11-reinforcement-learning/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/11-reinforcement-learning/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/11-reinforcement-learning/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/11-reinforcement-learning/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/11-reinforcement-learning/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -34,7 +34,7 @@ By the end of this chapter, students will be able to:
 
 ## Why Reinforcement Learning Matters
 
-Imagine training a puppy. When it sits on command, you give it a treat. When it chews your shoe, you scold it. The puppy doesn't know the "right" thing to do — it discovers through trial and error that sitting leads to treats and chewing leads to trouble. Over time, it learns a policy: *when I hear "sit," my muscles contract in sequence, and I earn a reward.*
+Imagine training a puppy. When it sits on command, you give it a treat. When it chews your shoe, you scold it. The puppy doesn't know the "right" thing to do â€” it discovers through trial and error that sitting leads to treats and chewing leads to trouble. Over time, it learns a policy: *when I hear "sit," my muscles contract in sequence, and I earn a reward.*
 
 Reinforcement learning is this exact process, formalized mathematically. The agent (puppy) interacts with an environment (your living room), takes actions (sit, chew, run), receives rewards (treat, scold), and learns to maximize cumulative reward over time.
 
@@ -42,13 +42,13 @@ Reinforcement learning is this exact process, formalized mathematically. The age
 
 | Domain | RL Problem | Why It's Revolutionary |
 |--------|-----------|----------------------|
-| **Game playing** | AlphaGo defeated world champion Lee Sedol (2016) | No programmed strategy — learned entirely from self-play |
-| **Robotics** | Robot learns to grasp objects it has never seen | No explicit grasp planner — learns from trial and error |
+| **Game playing** | AlphaGo defeated world champion Lee Sedol (2016) | No programmed strategy â€” learned entirely from self-play |
+| **Robotics** | Robot learns to grasp objects it has never seen | No explicit grasp planner â€” learns from trial and error |
 | **Autonomous driving** | Waymo's cars learn to merge into traffic | Models human-like merging behavior from millions of miles |
 | **Healthcare** | AI learns optimal drug dosing for sepsis patients | Discovers treatment policies better than static protocols |
 | **Recommendation** | YouTube recommends your next video | Maximizes engagement as a reward signal over time |
 
-> **One-Sentence Takeaway:** Reinforcement learning enables machines to learn optimal sequential decisions through interaction — no teacher, no pre-programmed rules, just reward signals and experience.
+> **One-Sentence Takeaway:** Reinforcement learning enables machines to learn optimal sequential decisions through interaction â€” no teacher, no pre-programmed rules, just reward signals and experience.
 
 ---
 
@@ -112,10 +112,10 @@ where $\gamma \in [0, 1]$ is the **discount factor**. A small $\gamma$ makes the
 ### 11.1.1 Key Components
 
 
-- **Policy** $\pi(a \mid s)$: The agent's behavior — a mapping from states to action probabilities. $\pi$ is what the agent learns.
+- **Policy** $\pi(a \mid s)$: The agent's behavior â€” a mapping from states to action probabilities. $\pi$ is what the agent learns.
 - **Value function** $V_\pi(s) = \mathbb{E}_\pi[G_t \mid S_t = s]$: How good is it to be in state $s$ under policy $\pi$?
 - **Action-value function** $Q_\pi(s, a) = \mathbb{E}_\pi[G_t \mid S_t = s, A_t = a]$: How good is it to take action $a$ from state $s$ under policy $\pi$?
-- **Model:** The agent's internal representation of how the environment works — transition probabilities $P(s' \mid s, a)$ and expected rewards $R(s, a)$.
+- **Model:** The agent's internal representation of how the environment works â€” transition probabilities $P(s' \mid s, a)$ and expected rewards $R(s, a)$.
 
 ### 11.1.2 How RL Differs from Other Learning Paradigms
 
@@ -152,7 +152,7 @@ $$P(S_{t+1} \mid S_t, A_t, S_{t-1}, A_{t-1}, \dots) = P(S_{t+1} \mid S_t, A_t)$$
 ### Real-World Analogy: Navigation Robot
 
 
-> A robot navigating a warehouse: states are grid cells, actions are {up, down, left, right}, rewards are +10 at the goal, -1 per step, and -5 for bumping into shelves. The robot doesn't know the transition probabilities — it learns by moving. The MDP captures exactly this: the robot's goal is to find a policy (path to goal) that maximizes cumulative reward (shortest safe path).
+> A robot navigating a warehouse: states are grid cells, actions are {up, down, left, right}, rewards are +10 at the goal, -1 per step, and -5 for bumping into shelves. The robot doesn't know the transition probabilities â€” it learns by moving. The MDP captures exactly this: the robot's goal is to find a policy (path to goal) that maximizes cumulative reward (shortest safe path).
 
 ### 11.2.1 Bellman Expectation Equation
 
@@ -161,7 +161,7 @@ The value function for a given policy $\pi$ satisfies a recursive relationship:
 
 $$V_\pi(s) = \sum_{a} \pi(a \mid s) \left[ R(s, a) + \gamma \sum_{s'} P(s' \mid s, a) V_\pi(s') \right]$$
 
-This is the **Bellman expectation equation** — it relates the value of a state to the values of its successor states. For the action-value function:
+This is the **Bellman expectation equation** â€” it relates the value of a state to the values of its successor states. For the action-value function:
 
 $$Q_\pi(s, a) = R(s, a) + \gamma \sum_{s'} P(s' \mid s, a) \sum_{a'} \pi(a' \mid s') Q_\pi(s', a')$$
 
@@ -174,7 +174,7 @@ $$V^*(s) = \max_{a} \left[ R(s, a) + \gamma \sum_{s'} P(s' \mid s, a) V^*(s') \r
 
 $$Q^*(s, a) = R(s, a) + \gamma \sum_{s'} P(s' \mid s, a) \max_{a'} Q^*(s', a')$$
 
-These are **Bellman optimality equations** — they define the fixed-point equations for $V^*$ and $Q^*$.
+These are **Bellman optimality equations** â€” they define the fixed-point equations for $V^*$ and $Q^*$.
 
 > **Pro Tip:** Think of Bellman equations as a "one-step lookahead." The value of the current state is the immediate reward plus the discounted value of wherever you end up next.
 

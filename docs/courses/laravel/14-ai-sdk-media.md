@@ -1,4 +1,4 @@
-# Chapter 14: Laravel AI SDK → Images, Audio, Transcriptions & Embeddings
+﻿# Chapter 14: Laravel AI SDK â†’ Images, Audio, Transcriptions & Embeddings
 > **Previous:** [Laravel AI SDK -- Tools, MCP Tools & Provider Tools](./13-ai-sdk-tools) | **Next:** [Laravel MCP -- Model Context Protocol](./15-mcp)
 
 ---
@@ -14,16 +14,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/14-ai-sdk-media/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/14-ai-sdk-media/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/14-ai-sdk-media/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/14-ai-sdk-media/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/14-ai-sdk-media/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/14-ai-sdk-media/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/14-ai-sdk-media/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/14-ai-sdk-media/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/14-ai-sdk-media/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/14-ai-sdk-media/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/14-ai-sdk-media/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/14-ai-sdk-media/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -133,7 +133,7 @@ class ImageController extends Controller
 
         return ['url' => Storage::disk('public')->url($filename)];
 
-> **Pro Tip:** Always validate and sanitize image prompts before sending to the API. Provider content policies vary — what works on OpenAI may be rejected by Gemini. Append style guidance ('photorealistic', 'digital art') for consistent results.
+> **Pro Tip:** Always validate and sanitize image prompts before sending to the API. Provider content policies vary â€” what works on OpenAI may be rejected by Gemini. Append style guidance ('photorealistic', 'digital art') for consistent results.
     }
 }
 ```
@@ -289,7 +289,7 @@ class IndexDocuments extends Command
                 $text = $document->title . "\n\n" . $document->content;
                 $embedding = Str::of($text)->toEmbeddings();
 
-> **Remember:** Embedding API calls are stateless — generating the same text twice costs twice. Always implement caching with content-hash keys (md5 of the input text) to avoid redundant API costs.
+> **Remember:** Embedding API calls are stateless â€” generating the same text twice costs twice. Always implement caching with content-hash keys (md5 of the input text) to avoid redundant API costs.
                 $document->forceFill([
                     'embedding' => $embedding,
                     'embedding_indexed_at' => now(),
@@ -304,7 +304,7 @@ class IndexDocuments extends Command
 
 #### 14.4.2 The `Embeddings` Class
 
-For batch operations, use `Embeddings` → it sends all texts in a single API request:
+For batch operations, use `Embeddings` â†’ it sends all texts in a single API request:
 
 ```php
 <?php
@@ -810,7 +810,7 @@ class MultiModalAnalyzer
 | Efficiency | Lower (per-text call) | Higher (batched) |
 | Use Case | Real-time search query | Batch document indexing |
 
-## Quick Reference — AI SDK Media Methods
+## Quick Reference â€” AI SDK Media Methods
 
 | Method | Purpose |
 |--------|---------|

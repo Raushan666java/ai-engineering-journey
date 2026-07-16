@@ -1,4 +1,4 @@
-# Chapter 16: Design Patterns → The Gang of Four
+﻿# Chapter 16: Design Patterns â†’ The Gang of Four
 
 > **Previous:** [15-concurrency](./15-concurrency.md) | **Next:** None
 
@@ -9,16 +9,16 @@ After studying this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/oop-cpp/16-design-patterns/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/oop-cpp/16-design-patterns/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/16-design-patterns/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/oop-cpp/16-design-patterns/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/oop-cpp/16-design-patterns/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/oop-cpp/16-design-patterns/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/16-design-patterns/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/oop-cpp/16-design-patterns/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/oop-cpp/16-design-patterns/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/oop-cpp/16-design-patterns/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/16-design-patterns/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/oop-cpp/16-design-patterns/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -100,25 +100,25 @@ The Gang of Four (Gamma, Helm, Johnson, Vlissides, 1994) catalogued 23 patterns 
 
 
 ```
-  Factory Method ──specialises──> Abstract Factory
-  Abstract Factory ──uses──> Singleton (for factory instances)
-  Builder ──uses──> Composite (build tree structures)
-  Prototype ──alternative──> Factory Method (clone vs create)
-  Adapter ──similar──> Bridge (different intent)
-  Composite ──works with──> Iterator, Visitor
-  Decorator ──alternative──> Adapter (adds vs converts)
-  Facade ──simplifies──> any subsystem pattern
-  Flyweight ──renders──> Composite (shared leaf nodes)
-  Proxy ──similar──> Decorator (controls vs adds)
-  Chain of Resp. ──uses──> Composite (handler tree)
-  Command ──stored in──> Memento (undo history)
-  Iterator ──traverses──> Composite
-  Mediator ──centralises──> Observer (colleagues ↔ mediator)
-  Memento ──used by──> Command (undo)
-  Observer ──alternative──> Mediator (broadcast vs hub)
-  State ──like──> Strategy (same structure, different intent)
-  Template Method ──related──> Strategy (inheritance vs composition)
-  Visitor ──traverses──> Composite
+  Factory Method â”€â”€specialisesâ”€â”€> Abstract Factory
+  Abstract Factory â”€â”€usesâ”€â”€> Singleton (for factory instances)
+  Builder â”€â”€usesâ”€â”€> Composite (build tree structures)
+  Prototype â”€â”€alternativeâ”€â”€> Factory Method (clone vs create)
+  Adapter â”€â”€similarâ”€â”€> Bridge (different intent)
+  Composite â”€â”€works withâ”€â”€> Iterator, Visitor
+  Decorator â”€â”€alternativeâ”€â”€> Adapter (adds vs converts)
+  Facade â”€â”€simplifiesâ”€â”€> any subsystem pattern
+  Flyweight â”€â”€rendersâ”€â”€> Composite (shared leaf nodes)
+  Proxy â”€â”€similarâ”€â”€> Decorator (controls vs adds)
+  Chain of Resp. â”€â”€usesâ”€â”€> Composite (handler tree)
+  Command â”€â”€stored inâ”€â”€> Memento (undo history)
+  Iterator â”€â”€traversesâ”€â”€> Composite
+  Mediator â”€â”€centralisesâ”€â”€> Observer (colleagues â†” mediator)
+  Memento â”€â”€used byâ”€â”€> Command (undo)
+  Observer â”€â”€alternativeâ”€â”€> Mediator (broadcast vs hub)
+  State â”€â”€likeâ”€â”€> Strategy (same structure, different intent)
+  Template Method â”€â”€relatedâ”€â”€> Strategy (inheritance vs composition)
+  Visitor â”€â”€traversesâ”€â”€> Composite
 ```
 
 ## 16.2 Design Principles
@@ -316,7 +316,7 @@ std::mutex Singleton::mtx;
 
 **Analysis & Design (A&D):**
 - Violates Single Responsibility (manages own lifecycle + business logic)
-- Introduces global state → hidden dependencies, hard to test
+- Introduces global state â†’ hidden dependencies, hard to test
 - Cannot be subclassed
 - Meyers variant is the gold standard in modern C++
 
@@ -333,7 +333,7 @@ std::mutex Singleton::mtx;
 
 ## 16.3.2 Factory Method
 
-**Real-World Analogy:** A restaurant serves many dishes but you order from a menu. The kitchen (creator) decides which specific dish (product) to prepare based on your order. The restaurant doesn't need to change its process when adding new dishes → just extend the menu.
+**Real-World Analogy:** A restaurant serves many dishes but you order from a menu. The kitchen (creator) decides which specific dish (product) to prepare based on your order. The restaurant doesn't need to change its process when adding new dishes â†’ just extend the menu.
 
 **Intent:** Define an interface for creating an object, but let subclasses decide which class to instantiate.
 
@@ -481,7 +481,7 @@ Result: "Logistics: Delivering by land in a truck"
 
 ## 16.3.3 Abstract Factory
 
-**Real-World Analogy:** A furniture store sells modern and Victorian collections. Each collection includes a chair, sofa, and coffee table. You buy a complete collection → you never mix a modern chair with a Victorian sofa. The store (Abstract Factory) guarantees product-family consistency.
+**Real-World Analogy:** A furniture store sells modern and Victorian collections. Each collection includes a chair, sofa, and coffee table. You buy a complete collection â†’ you never mix a modern chair with a Victorian sofa. The store (Abstract Factory) guarantees product-family consistency.
 
 **Intent:** Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
 
@@ -558,7 +558,7 @@ public:
     virtual void lieOn() const = 0;
 };
 
-// Concrete Products → Modern
+// Concrete Products â†’ Modern
 class ModernChair : public Chair {
 public:
     std::string style() const override { return "Modern"; }
@@ -576,7 +576,7 @@ public:
     }
 };
 
-// Concrete Products → Victorian
+// Concrete Products â†’ Victorian
 class VictorianChair : public Chair {
 public:
     std::string style() const override { return "Victorian"; }
@@ -681,7 +681,7 @@ furnishRoom(victorian):
 
 ---
 
-### Factory Method vs Abstract Factory → Comparison
+### Factory Method vs Abstract Factory â†’ Comparison
 
 
 | Aspect | Factory Method | Abstract Factory |
@@ -734,9 +734,9 @@ furnishRoom(victorian):
 **Steps:**
 1. Define the Product class with setters for each part
 2. Declare the Builder interface with build-step methods
-3. Implement ConcreteBuilder(s) → each builds a specific variant
+3. Implement ConcreteBuilder(s) â†’ each builds a specific variant
 4. Implement the Director that orchestrates the build steps
-5. Client creates Director + ConcreteBuilder → Director::construct() → Product
+5. Client creates Director + ConcreteBuilder â†’ Director::construct() â†’ Product
 
 **Pseudocode:**
 ```
@@ -875,7 +875,7 @@ hb.result().show() -> prints "Pizza [pan dough, sweet sauce, toppings: ham, pine
 - Separates construction logic from product representation
 - Same construction process yields different products
 - Finer control than Factory Method (step-by-step)
-- Director is optional → clients can call builder steps directly
+- Director is optional â†’ clients can call builder steps directly
 - Fluent builder returns `*this` for method chaining
 
 **When to Use:**
@@ -891,7 +891,7 @@ hb.result().show() -> prints "Pizza [pan dough, sweet sauce, toppings: ham, pine
 
 ## 16.3.5 Prototype
 
-**Real-World Analogy:** When a cell divides (mitosis), it creates an exact copy of itself → a clone. In software, instead of instantiating a new object from scratch, you clone an existing one and optionally customise it.
+**Real-World Analogy:** When a cell divides (mitosis), it creates an exact copy of itself â†’ a clone. In software, instead of instantiating a new object from scratch, you clone an existing one and optionally customise it.
 
 **Intent:** Specify the kinds of objects to create using a prototypical instance, and create new objects by copying this prototype.
 
@@ -1078,11 +1078,11 @@ All five creational patterns abstract away object creation. Singleton controls i
 
 ## 16.4.1 Adapter
 
-**Real-World Analogy:** A travel plug adapter converts a US plug (two flat pins) to fit into a European socket (two round holes). The adapter doesn't change the electrical device → it translates the interface.
+**Real-World Analogy:** A travel plug adapter converts a US plug (two flat pins) to fit into a European socket (two round holes). The adapter doesn't change the electrical device â†’ it translates the interface.
 
 **Intent:** Convert the interface of a class into another interface that clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.
 
-**Structure (UML-like ASCII) → Object Adapter:**
+**Structure (UML-like ASCII) â†’ Object Adapter:**
 ```
 +-----------+          +-------------+
 |  Client   |--------->|   Target    |
@@ -1132,7 +1132,7 @@ public:
     virtual void draw(int x, int y, int w, int h) const = 0;
 };
 
-// Adaptee → incompatible interface
+// Adaptee â†’ incompatible interface
 class LegacyRectangle {
 public:
     void display(int x, int y, int w, int h) const {
@@ -1141,7 +1141,7 @@ public:
     }
 };
 
-// Adapter → makes LegacyRectangle fit Shape
+// Adapter â†’ makes LegacyRectangle fit Shape
 class RectangleAdapter : public Shape {
 public:
     RectangleAdapter(int x, int y, int w, int h)
@@ -1357,7 +1357,7 @@ Muted
 
 ## 16.4.3 Composite
 
-**Real-World Analogy:** An army consists of soldiers and units. A unit can contain individual soldiers or smaller units. Giving an order to a unit is the same as giving it to a soldier → the unit propagates the order to all its members. Individual and composite are treated uniformly.
+**Real-World Analogy:** An army consists of soldiers and units. A unit can contain individual soldiers or smaller units. Giving an order to a unit is the same as giving it to a soldier â†’ the unit propagates the order to all its members. Individual and composite are treated uniformly.
 
 **Intent:** Compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
 
@@ -1381,8 +1381,8 @@ Muted
 
 **Steps:**
 1. Declare the Component interface with common operations
-2. Implement Leaf → simple objects with no children
-3. Implement Composite → stores children, delegates to them
+2. Implement Leaf â†’ simple objects with no children
+3. Implement Composite â†’ stores children, delegates to them
 4. Client works with Component interface uniformly
 
 **Pseudocode:**
@@ -1517,7 +1517,7 @@ Directory("root")::display(0):
 - The structure is recursive (directories with files and subdirectories)
 
 **When to Avoid:**
-- The tree structure is shallow (1-2 levels) → over-abstracted
+- The tree structure is shallow (1-2 levels) â†’ over-abstracted
 - Leaf and Composite have fundamentally different operations
 
 ---
@@ -1688,7 +1688,7 @@ coffee->cost():
 
 ## 16.4.5 Facade
 
-**Real-World Analogy:** A restaurant waiter takes your order and brings your food. You don't interact with the kitchen, the chefs, the pantry, or the dishwasher. The waiter is the facade → a simple interface to a complex subsystem.
+**Real-World Analogy:** A restaurant waiter takes your order and brings your food. You don't interact with the kitchen, the chefs, the pantry, or the dishwasher. The waiter is the facade â†’ a simple interface to a complex subsystem.
 
 **Intent:** Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use.
 
@@ -1812,7 +1812,7 @@ Computer started successfully
 
 ## 16.4.6 Flyweight
 
-**Real-World Analogy:** A word processor displays thousands of characters on screen. Each character 'a' doesn't need its own font data and glyph → the shared font object is reused across all 'a' characters. The intrinsic state (the glyph shape) is shared; the extrinsic state (position, size) varies.
+**Real-World Analogy:** A word processor displays thousands of characters on screen. Each character 'a' doesn't need its own font data and glyph â†’ the shared font object is reused across all 'a' characters. The intrinsic state (the glyph shape) is shared; the extrinsic state (position, size) varies.
 
 **Intent:** Use sharing to support large numbers of fine-grained objects efficiently.
 
@@ -1864,7 +1864,7 @@ class Tree:                  // Context (extrinsic)
 #include <string>
 #include <unordered_map>
 
-// Flyweight → intrinsic state shared across many objects
+// Flyweight â†’ intrinsic state shared across many objects
 class TreeType {
 public:
     TreeType(std::string name, std::string color, std::string texture)
@@ -1957,10 +1957,10 @@ getTreeType("Oak", "Green", "Rough"):  // second time
   key found -> return existing shared_ptr
 ```
 
-**Complexity:** O(1) type lookup (amortised). Memory: O(t + n) where t = types, n = contexts. Without Flyweight: O(t Ã— n).
+**Complexity:** O(1) type lookup (amortised). Memory: O(t + n) where t = types, n = contexts. Without Flyweight: O(t Ãƒâ€” n).
 
 **A&D:**
-- Memory savings can be enormous (1000 trees Ã— 2 types vs 1000 separate tree objects)
+- Memory savings can be enormous (1000 trees Ãƒâ€” 2 types vs 1000 separate tree objects)
 - Intrinsic state is immutable and shared; extrinsic state is mutable and stored externally
 - Adds complexity: must clearly separate intrinsic/extrinsic state
 - Factory ensures flyweight uniqueness and reuse
@@ -2023,7 +2023,7 @@ class ProxyImage: Image
         real.display()
 ```
 
-**C++ Implementation (Virtual Proxy → lazy loading):**
+**C++ Implementation (Virtual Proxy â†’ lazy loading):**
 
 ```cpp
 #include <iostream>
@@ -2508,7 +2508,7 @@ Text: ""
 #include <string>
 #include <sstream>
 
-// Context → maps variables to values
+// Context â†’ maps variables to values
 class Context {
     std::map<std::string, int> vars_;
 public:
@@ -2602,7 +2602,7 @@ expr->interpret(ctx):
 
 **A&D:**
 - Well-suited for simple grammars (regular expression, arithmetic, small DSLs)
-- Each grammar rule becomes a class → easy to extend
+- Each grammar rule becomes a class â†’ easy to extend
 - Grammar changes require new classes and potentially new interface methods
 - For complex grammars, use parser generators (ANTLR, Bison) instead
 
@@ -2620,7 +2620,7 @@ expr->interpret(ctx):
 
 ## 16.5.4 Iterator
 
-**Real-World Analogy:** A TV remote has "next channel" and "previous channel" buttons. You don't need to know how the channels are stored internally → you just navigate forward and backward. The remote is an iterator.
+**Real-World Analogy:** A TV remote has "next channel" and "previous channel" buttons. You don't need to know how the channels are stored internally â†’ you just navigate forward and backward. The remote is an iterator.
 
 **Intent:** Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
 
@@ -2787,7 +2787,7 @@ tree.begin():
 **Complexity:** O(n) full traversal. O(1) increment (amortised). Memory O(h) where h = tree height.
 
 **A&D:**
-- The STL's iterator model IS the Iterator pattern → the canonical C++ implementation
+- The STL's iterator model IS the Iterator pattern â†’ the canonical C++ implementation
 - Range-based for loops consume iterators via `begin()`/`end()`
 - Separates traversal from container (Single Responsibility)
 - Supports multiple concurrent traversals (each iterator has its own state)
@@ -2806,7 +2806,7 @@ tree.begin():
 
 ## 16.5.5 Mediator
 
-**Real-World Analogy:** An air traffic control tower is the mediator between planes. Planes don't talk to each other directly → they communicate via the tower. The tower coordinates takeoffs, landings, and taxiing, preventing collisions. If one plane changes its route, the tower manages the impact on all other planes.
+**Real-World Analogy:** An air traffic control tower is the mediator between planes. Planes don't talk to each other directly â†’ they communicate via the tower. The tower coordinates takeoffs, landings, and taxiing, preventing collisions. If one plane changes its route, the tower manages the impact on all other planes.
 
 **Intent:** Define an object that encapsulates how a set of objects interact. Mediator promotes loose coupling by keeping objects from referring to each other explicitly.
 
@@ -2932,7 +2932,7 @@ Charlie received from Bob: Hey Alice!
 
 **A&D:**
 - Centralises control (mediator becomes the hub)
-- Colleagues are decoupled → they only know the mediator
+- Colleagues are decoupled â†’ they only know the mediator
 - Simplifies colleague protocols (one-to-many becomes one-to-one to mediator)
 - Mediator complexity can grow large (God object risk)
 
@@ -2950,7 +2950,7 @@ Charlie received from Bob: Hey Alice!
 
 ## 16.5.6 Memento
 
-**Real-World Analogy:** A text editor saves your document history. You press Ctrl+Z and the editor restores the previous state. The saved state (memento) is opaque → you can't inspect it directly, but the editor can use it to restore the document.
+**Real-World Analogy:** A text editor saves your document history. You press Ctrl+Z and the editor restores the previous state. The saved state (memento) is opaque â†’ you can't inspect it directly, but the editor can use it to restore the document.
 
 **Intent:** Without violating encapsulation, capture and externalise an object's internal state so that the object can be restored to this state later.
 
@@ -2966,7 +2966,7 @@ Charlie received from Bob: Hey Alice!
 
 **Steps:**
 1. Originator creates Memento containing a snapshot of its state
-2. Memento is opaque → no one except Originator can access its internals
+2. Memento is opaque â†’ no one except Originator can access its internals
 3. Caretaker stores and manages Mementos without inspecting them
 4. Originator uses Memento to restore previous state
 
@@ -2995,7 +2995,7 @@ class Caretaker:
 #include <string>
 #include <vector>
 
-// Memento → opaque snapshot
+// Memento â†’ opaque snapshot
 class Memento {
     friend class Editor;
     std::string content_;
@@ -3087,13 +3087,13 @@ Content: "Hello World", cursor: 11
 Content: "Hello", cursor: 5
 ```
 
-**Complexity:** O(n) save/restore where n = state size. Memory O(s Ã— h) where s = snapshot size, h = history depth.
+**Complexity:** O(n) save/restore where n = state size. Memory O(s Ãƒâ€” h) where s = snapshot size, h = history depth.
 
 **A&D:**
 - Preserves encapsulation boundaries (Memento is opaque to Caretaker)
 - Originator owns the state and knows how to save/restore it
 - Caretaker manages the lifecycle of Mementos
-- Large Mementos consume memory → consider incremental snapshots or compression
+- Large Mementos consume memory â†’ consider incremental snapshots or compression
 
 **When to Use:**
 - Undo/redo functionality needed
@@ -3109,7 +3109,7 @@ Content: "Hello", cursor: 5
 
 ## 16.5.7 Observer
 
-**Real-World Analogy:** A YouTube channel posts a video. All subscribers (observers) get notified. Subscribers can subscribe (attach) or unsubscribe (detach) at any time. The channel doesn't know who its subscribers are individually → it just broadcasts to all of them.
+**Real-World Analogy:** A YouTube channel posts a video. All subscribers (observers) get notified. Subscribers can subscribe (attach) or unsubscribe (detach) at any time. The channel doesn't know who its subscribers are individually â†’ it just broadcasts to all of them.
 
 **Intent:** Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
 
@@ -3344,7 +3344,7 @@ public:
     void pause() { currentState_->pause(*this); }
 };
 
-// Concrete States → forward declared for circular references
+// Concrete States â†’ forward declared for circular references
 class PlayingState : public State {
 public:
     void play(MediaPlayer&) override {
@@ -3402,7 +3402,7 @@ Resuming playback
 - Eliminates large if-else/switch statement blocks
 - Each state is a separate class (Single Responsibility)
 - Adding new states doesn't affect existing states (Open/Closed)
-- State objects are often shared (no own state) → Flyweight-like
+- State objects are often shared (no own state) â†’ Flyweight-like
 
 **When to Use:**
 - Object behaviour depends on its state and changes at runtime
@@ -3600,9 +3600,9 @@ Used std::sort
 | AbstractClass   |
 +-----------------+
 | + templateMethod|   // calls step1(), step2(), step3()
-| - step1()       |   // primitive → must override
-| - step2()       |   // primitive → must override
-| - step3()       |   // hook → optional override
+| - step1()       |   // primitive â†’ must override
+| - step2()       |   // primitive â†’ must override
+| - step3()       |   // hook â†’ optional override
 +-----------------+
         ^
         |
@@ -3731,7 +3731,7 @@ Saving processed JSON
 **Complexity:** O(1) algorithm framework overhead.
 
 **A&D:**
-- Hollywood Principle: "Don't call us, we'll call you" → the abstract class calls subclass methods
+- Hollywood Principle: "Don't call us, we'll call you" â†’ the abstract class calls subclass methods
 - Inverted control: the parent controls the algorithm, children fill in details
 - Hook methods provide optional extension points
 - Related to Strategy (inheritance vs composition)
@@ -3750,7 +3750,7 @@ Saving processed JSON
 
 ## 16.5.11 Visitor
 
-**Real-World Analogy:** A tax consultant visits different types of properties → residential, commercial, industrial. Each property type has a different tax calculation, audit procedure, and deduction check. Instead of modifying each property class to add tax logic, the consultant (Visitor) visits each property and applies the correct tax logic. Adding a new operation (e.g., energy audit) means adding a new visitor, not modifying all property classes.
+**Real-World Analogy:** A tax consultant visits different types of properties â†’ residential, commercial, industrial. Each property type has a different tax calculation, audit procedure, and deduction check. Instead of modifying each property class to add tax logic, the consultant (Visitor) visits each property and applies the correct tax logic. Adding a new operation (e.g., energy audit) means adding a new visitor, not modifying all property classes.
 
 **Intent:** Represent an operation to be performed on the elements of an object structure. Visitor lets you define a new operation without changing the classes of the elements on which it operates.
 
@@ -3775,7 +3775,7 @@ Saving processed JSON
 **Steps:**
 1. Define Visitor interface with a `visit(ConcreteElement)` method per element type
 2. Define Element interface with `accept(Visitor)` method
-3. Each ConcreteElement implements `accept(visitor)` → `visitor.visit(this)`
+3. Each ConcreteElement implements `accept(visitor)` â†’ `visitor.visit(this)`
 4. ConcreteVisitor implements all visit methods with the operation logic
 
 **Pseudocode:**
@@ -3924,7 +3924,7 @@ shapes[1] = Rectangle(3,4)
 - Double dispatch: the operation performed depends on both the Element type and Visitor type
 - Adding new operations = adding new Visitor classes (Open/Closed)
 - Adding new Element types = modifying all Visitor interfaces (violates Open/Closed)
-- Separates data structures from operations → clean separation of concerns
+- Separates data structures from operations â†’ clean separation of concerns
 - Often paired with Composite and Iterator for structure traversal
 
 **When to Use:**
@@ -3951,7 +3951,7 @@ shapes[1] = Rectangle(3,4)
 | **Used When** | Construction is complex or decoupled from client | Building large structures from smaller parts | Algorithms or responsibilities vary |
 | **Common Pattern** | Factory Method (class-level), Abstract Factory (family-level) | Adapter (interface bridge), Composite (tree) | Strategy (algorithm), Observer (notification) |
 | **Structure Size** | Few classes (2-5) | Many classes (complex hierarchies) | Variable (depends on object graph) |
-| **Direction** | Client → Creator | Multiple objects composed together | Objects message each other |
+| **Direction** | Client â†’ Creator | Multiple objects composed together | Objects message each other |
 | **C++ Idioms** | `std::make_unique`, `std::make_shared` | PImpl idiom, type erasure | `std::function`, signals/slots, `std::visit` |
 | **When Overused** | Every object doesn't need a factory | Not everything needs a separate interface | Not every behaviour needs a Strategy class |
 | **GoF Count** | 5 patterns | 7 patterns | 11 patterns |
@@ -3968,7 +3968,7 @@ shapes[1] = Rectangle(3,4)
 
 **Recommendation:** Always use Meyers Singleton in C++11 and later. It's the simplest, fastest, and provably thread-safe.
 
-## 16.6.3 Factory Method vs Abstract Factory → Comparison
+## 16.6.3 Factory Method vs Abstract Factory â†’ Comparison
 
 | Aspect | Factory Method | Abstract Factory |
 |--------|---------------|-----------------|
@@ -3979,15 +3979,15 @@ shapes[1] = Rectangle(3,4)
 | **Family Consistency** | Not applicable | Guarantees all products belong to same family |
 | **Adding a Product Type** | No change (single product) | Changes factory interface (hard) |
 | **Adding a Product Family** | New Creator subclass | New ConcreteFactory class (easy) |
-| **C++ Example** | `Document::createPage()` → `Resume::createPage()` | `GUIFactory::createButton()` + `createCheckbox()` → `WinFactory` |
+| **C++ Example** | `Document::createPage()` â†’ `Resume::createPage()` | `GUIFactory::createButton()` + `createCheckbox()` â†’ `WinFactory` |
 | **Complexity** | Low | Medium |
 
 **Which to Choose?**
-- One product, variations in subclass → Factory Method
-- Families of related products needing consistency → Abstract Factory
+- One product, variations in subclass â†’ Factory Method
+- Families of related products needing consistency â†’ Abstract Factory
 - Most Abstract Factories start as Factory Methods and evolve
 
-## 16.6.4 Strategy vs State → Comparison
+## 16.6.4 Strategy vs State â†’ Comparison
 
 | Aspect | Strategy | State |
 |--------|----------|-------|
@@ -4004,7 +4004,7 @@ shapes[1] = Rectangle(3,4)
 
 **When They Overlap:** Both use composition to change behaviour. Clean distinction: Strategy is about *how* (algorithm), State is about *when* (permitted operations based on current mode).
 
-## 16.6.5 Template Method vs Strategy → Comparison
+## 16.6.5 Template Method vs Strategy â†’ Comparison
 
 | Aspect | Template Method | Strategy |
 |--------|----------------|----------|
@@ -4020,7 +4020,7 @@ shapes[1] = Rectangle(3,4)
 
 **Mnemonic:** Template Method = skeleton (some parts fixed); Strategy = whole algorithm swapped.
 
-## 16.6.6 Iterator vs Composite → Relationship
+## 16.6.6 Iterator vs Composite â†’ Relationship
 
 The Iterator and Composite patterns are naturally related:
 
@@ -4060,18 +4060,18 @@ In practice, Composite structures are often traversed using Iterators. The `disp
 
 # 16.7 Design Patterns in Real C++ Systems
 
-## 16.7.1 iostreams → Decorator Pattern
+## 16.7.1 iostreams â†’ Decorator Pattern
 
 The C++ iostream library is the canonical example of the Decorator pattern:
 
 ```
-std::filebuf        (provides raw file I/O → ConcreteComponent)
-std::streambuf      (abstract buffer → Component)
-std::istream        (adds formatted input → Decorator base)
-std::ostream        (adds formatted output → Decorator base)
-std::ifstream       (file input stream → ConcreteDecorator)
-std::ofstream       (file output stream → ConcreteDecorator)
-std::stringstream   (string-based stream → ConcreteDecorator)
+std::filebuf        (provides raw file I/O â†’ ConcreteComponent)
+std::streambuf      (abstract buffer â†’ Component)
+std::istream        (adds formatted input â†’ Decorator base)
+std::ostream        (adds formatted output â†’ Decorator base)
+std::ifstream       (file input stream â†’ ConcreteDecorator)
+std::ofstream       (file output stream â†’ ConcreteDecorator)
+std::stringstream   (string-based stream â†’ ConcreteDecorator)
 ```
 
 Each stream layer wraps a buffer and adds formatting, buffering, and error-checking behaviour:
@@ -4095,9 +4095,9 @@ int main() {
 }
 ```
 
-**Pattern match:** `std::ofstream` wraps `std::filebuf` (or `std::stringbuf`) and adds: formatted output, locale awareness, state flags, error checking. You can wrap any buffer with any stream → the behaviour is composed at runtime.
+**Pattern match:** `std::ofstream` wraps `std::filebuf` (or `std::stringbuf`) and adds: formatted output, locale awareness, state flags, error checking. You can wrap any buffer with any stream â†’ the behaviour is composed at runtime.
 
-## 16.7.2 std::algorithm → Strategy Pattern
+## 16.7.2 std::algorithm â†’ Strategy Pattern
 
 The STL algorithm library uses the Strategy pattern via function objects and `std::function`:
 
@@ -4131,7 +4131,7 @@ int main() {
 
 **Pattern match:** `std::sort`, `std::find_if`, `std::transform` all accept a callable (Strategy) that customises the algorithm. The algorithm (Context) is fixed; the comparator/transformer (Strategy) is interchangeable. The introduction of `std::function` and lambdas in C++11 made this pattern even more natural.
 
-## 16.7.3 STL Iterators → Iterator Pattern
+## 16.7.3 STL Iterators â†’ Iterator Pattern
 
 The entire STL is built on the Iterator pattern:
 
@@ -4161,14 +4161,14 @@ int main() {
         std::cout << "Found: " << *it << "\n";
 
     // Iterator categories map to container capabilities
-    // Input/Output  ← istream_iterator / ostream_iterator
-    // Forward       ← forward_list
-    // Bidirectional ← list, set, map
-    // Random Access ← vector, deque, array
+    // Input/Output  â† istream_iterator / ostream_iterator
+    // Forward       â† forward_list
+    // Bidirectional â† list, set, map
+    // Random Access â† vector, deque, array
 }
 ```
 
-**Pattern match:** STL containers provide `begin()`/`end()` (Aggregate), iterators provide `operator*`, `operator++`, `operator!=` (Iterator interface). Algorithms consume iterators without knowing the container structure → exactly the GoF Iterator pattern.
+**Pattern match:** STL containers provide `begin()`/`end()` (Aggregate), iterators provide `operator*`, `operator++`, `operator!=` (Iterator interface). Algorithms consume iterators without knowing the container structure â†’ exactly the GoF Iterator pattern.
 
 ## 16.7.4 Additional Real-World Examples
 
@@ -4226,14 +4226,14 @@ Despite its criticisms, Singleton is appropriate when a class genuinely needs on
 **Decision Flow:**
 ```
 Does the object require multi-step construction?
-  Yes → Builder
-  No  → Are there multiple related product families?
-    Yes → Abstract Factory
-    No  → Is the concrete product determined by subclass?
-      Yes → Factory Method
-      No  → Is cloning from existing instances preferred?
-        Yes → Prototype
-        No  → Direct constructor
+  Yes â†’ Builder
+  No  â†’ Are there multiple related product families?
+    Yes â†’ Abstract Factory
+    No  â†’ Is the concrete product determined by subclass?
+      Yes â†’ Factory Method
+      No  â†’ Is cloning from existing instances preferred?
+        Yes â†’ Prototype
+        No  â†’ Direct constructor
 ```
 
 ---
@@ -4281,7 +4281,7 @@ History (Caretaker):
 ```
 
 **Why this combination?**
-- Command encapsulates each user action as an object → enables queuing, logging, and macro recording
+- Command encapsulates each user action as an object â†’ enables queuing, logging, and macro recording
 - Memento snapshot preserves the Editor's internal state without violating encapsulation
 - History (Caretaker) manages the lifecycle of saved states and commands
 
@@ -4300,20 +4300,20 @@ History (Caretaker):
 | `shared_ptr<T>` + `weak_ptr<T>` | **Observer** | `weak_ptr` prevents cycles in observer lists |
 | `unique_ptr<T>` | **Composite** | Tree structures with ownership at each node |
 | `shared_ptr<T>` | **Flyweight** | Shared intrinsic state across multiple contexts |
-| `unique_ptr<T>` | **Bridge** | PImpl idiom → holds the implementation |
+| `unique_ptr<T>` | **Bridge** | PImpl idiom â†’ holds the implementation |
 
 Smart pointers eliminate explicit memory management, making pattern implementations safer and more expressive in modern C++. The `weak_ptr` is especially important for patterns with non-owning references (Observer, Composite parent pointers) where raw pointers would risk dangling.
 
 ---
 
-## Q6: The Decorator pattern in C++ → when should you use `unique_ptr` vs `shared_ptr` for the wrapped object?
+## Q6: The Decorator pattern in C++ â†’ when should you use `unique_ptr` vs `shared_ptr` for the wrapped object?
 
 **Answer:**
 
 ```
 unique_ptr<T> (recommended):
   - Decorator owns the wrapped object exclusively
-  - No sharing → one decorator chain owns the component
+  - No sharing â†’ one decorator chain owns the component
   - Lighter weight (no reference count)
   - Preferred in single-ownership scenarios
   - Example: Coffee decorator chain
@@ -4334,29 +4334,29 @@ shared_ptr<T>:
 **Answer:** A thread pool uses multiple patterns:
 
 ```
-Worker Threads ── Singleton (ThreadPool class)
-  │
-  ├── ThreadPool (Singleton)
-  │     ├── stores queue of Tasks
-  │     ├── manages worker threads
-  │     └── provides submit() interface
-  │
-  ├── Task ── Command pattern
-  │     ├── encapsulates function + arguments
-  │     ├── stored in std::queue<std::packaged_task<>>
-  │     └── returns std::future for result retrieval
-  │
-  └── Task Queue ── Producer-Consumer (Adapter pattern)
-        ├── std::mutex + std::condition_variable
-        ├── producer threads submit tasks
-        └── consumer (worker) threads execute tasks
+Worker Threads â”€â”€ Singleton (ThreadPool class)
+  â”‚
+  â”œâ”€â”€ ThreadPool (Singleton)
+  â”‚     â”œâ”€â”€ stores queue of Tasks
+  â”‚     â”œâ”€â”€ manages worker threads
+  â”‚     â””â”€â”€ provides submit() interface
+  â”‚
+  â”œâ”€â”€ Task â”€â”€ Command pattern
+  â”‚     â”œâ”€â”€ encapsulates function + arguments
+  â”‚     â”œâ”€â”€ stored in std::queue<std::packaged_task<>>
+  â”‚     â””â”€â”€ returns std::future for result retrieval
+  â”‚
+  â””â”€â”€ Task Queue â”€â”€ Producer-Consumer (Adapter pattern)
+        â”œâ”€â”€ std::mutex + std::condition_variable
+        â”œâ”€â”€ producer threads submit tasks
+        â””â”€â”€ consumer (worker) threads execute tasks
 ```
 
 **Pattern mapping:**
-1. **Singleton** → One thread pool instance per application
-2. **Command** → `std::packaged_task` encapsulates operation + arguments
-3. **Strategy** → Work-stealing strategies vary between implementations
-4. **Proxy** → `std::future` is a proxy for the result
+1. **Singleton** â†’ One thread pool instance per application
+2. **Command** â†’ `std::packaged_task` encapsulates operation + arguments
+3. **Strategy** â†’ Work-stealing strategies vary between implementations
+4. **Proxy** â†’ `std::future` is a proxy for the result
 
 ```cpp
 #include <iostream>
@@ -4438,18 +4438,18 @@ Task 2: 30
 
 Design patterns are proven solutions to recurring design problems. The GoF catalogued 23 patterns into three categories:
 
-- **Creational (5):** Singleton, Factory Method, Abstract Factory, Builder, Prototype → abstracting object creation
-- **Structural (7):** Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy → composing classes and objects
-- **Behavioral (11):** Chain of Responsibility, Command, Interpreter, Iterator, Mediator, Memento, Observer, State, Strategy, Template Method, Visitor → defining interaction and responsibility
+- **Creational (5):** Singleton, Factory Method, Abstract Factory, Builder, Prototype â†’ abstracting object creation
+- **Structural (7):** Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy â†’ composing classes and objects
+- **Behavioral (11):** Chain of Responsibility, Command, Interpreter, Iterator, Mediator, Memento, Observer, State, Strategy, Template Method, Visitor â†’ defining interaction and responsibility
 
 **Key Takeaways:**
-1. **Patterns are guides, not prescriptions** → adapt them to your context rather than forcing them in
-2. **Prefer composition over inheritance** → most patterns use delegation, not subclassing
-3. **Program to interfaces, not implementations** → Depend on abstractions; patterns enable this
-4. **Design for change** → patterns help localise the impact of change
-5. **Start simple** → introduce patterns when a genuine problem emerges, not preemptively
-6. **Modern C++ features** → smart pointers, `std::function`, lambdas, and templates make pattern implementations safer and more idiomatic
-7. **Patterns interact** → Composite + Iterator + Visitor, Command + Memento, Strategy + Factory Method are natural combinations
+1. **Patterns are guides, not prescriptions** â†’ adapt them to your context rather than forcing them in
+2. **Prefer composition over inheritance** â†’ most patterns use delegation, not subclassing
+3. **Program to interfaces, not implementations** â†’ Depend on abstractions; patterns enable this
+4. **Design for change** â†’ patterns help localise the impact of change
+5. **Start simple** â†’ introduce patterns when a genuine problem emerges, not preemptively
+6. **Modern C++ features** â†’ smart pointers, `std::function`, lambdas, and templates make pattern implementations safer and more idiomatic
+7. **Patterns interact** â†’ Composite + Iterator + Visitor, Command + Memento, Strategy + Factory Method are natural combinations
 
 **When Not to Use Patterns:**
 - The solution is already simple and clear
@@ -4457,7 +4457,7 @@ Design patterns are proven solutions to recurring design problems. The GoF catal
 - The anticipated variation never materialises
 - A language feature provides a simpler solution (lambdas replace some Command/Strategy needs)
 
-> **Final Thought:** The best design is often the simplest one that works. Design patterns are tools in your toolbox → use them when they solve a problem, not because they're "correct." Mastery is knowing when to apply a pattern AND when to leave it out.
+> **Final Thought:** The best design is often the simplest one that works. Design patterns are tools in your toolbox â†’ use them when they solve a problem, not because they're "correct." Mastery is knowing when to apply a pattern AND when to leave it out.
 
 ## Quick Reference: All 23 GoF Patterns
 
@@ -4512,7 +4512,7 @@ Design patterns are proven solutions to recurring design problems. The GoF catal
 ### Challenge Problem
 
 **Dependency Injection Container (Factory Method + Builder + Singleton):** Implement a minimal DI container that:
-- Registers type mappings (interface → concrete implementation) using Factory Methods
+- Registers type mappings (interface â†’ concrete implementation) using Factory Methods
 - Supports Singleton and Transient lifetimes (Builder constructs lifetime policy)
 - Resolves constructor dependencies recursively
 - Uses `std::type_index` and `std::any` for type erasure

@@ -1,4 +1,4 @@
-# Chapter 6: Operator Overloading
+﻿# Chapter 6: Operator Overloading
 
 > **Previous:** [Polymorphism](./05-polymorphism.md) | **Next:** [Templates](./07-templates.md)
 
@@ -11,21 +11,20 @@ After studying this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/oop-cpp/06-operator-overloading/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/oop-cpp/06-operator-overloading/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/06-operator-overloading/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/oop-cpp/06-operator-overloading/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/oop-cpp/06-operator-overloading/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/oop-cpp/06-operator-overloading/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/06-operator-overloading/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/oop-cpp/06-operator-overloading/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/oop-cpp/06-operator-overloading/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/oop-cpp/06-operator-overloading/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/06-operator-overloading/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/oop-cpp/06-operator-overloading/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
 <!-- End Image Gallery -->
-
 
 - Explain the rules and constraints of C++ operator overloading
 - Implement binary and unary operators as member and non-member functions
@@ -84,14 +83,12 @@ flowchart LR
 
 ### Real-World Analogy --- The Piano Keyboard
 
-
 Think of C++ operators like the keys on a piano. The key labeled "middle C" always plays middle C --- its position, feel, and behavior are fixed by the instrument's design. Operator overloading is like a synthesizer that changes *what sound* that key produces while keeping the key itself in the same place. You cannot:
 - Move the key to a different position on the keyboard (change precedence)
 - Make the key play two notes at once by pressing it alone (change arity)
 - Add a new key between two existing ones (invent a new operator)
 
 ### Fundamental Rules
-
 
 **Rule 1 --- At Least One User-Defined Operand**
 You cannot redefine operators on built-in types alone. `int + int` is forever `int + int`.
@@ -110,7 +107,6 @@ You cannot create `**` for exponentiation, `<>` for spaceship, or any novel symb
 
 ### Complexity Analysis
 
-
 | Aspect | Complexity | Why |
 |--------|-----------|-----|
 | Overload resolution | O(k) where k = candidate functions | Compiler enumerates viable overloads and selects best match |
@@ -118,7 +114,6 @@ You cannot create `**` for exponentiation, `<>` for spaceship, or any novel symb
 | Cognitive cost for reader | O(n) where n = number of overloads | Each overload is a new contract the reader must learn |
 
 ### Golden Rule
-
 
 > **"When in doubt, do as the ints do."** --- If your overloaded `+` does something surprising, you have violated the Principle of Least Surprise. An operator should mean what users expect it to mean based on its built-in behavior.
 
@@ -128,11 +123,9 @@ You cannot create `**` for exponentiation, `<>` for spaceship, or any novel symb
 
 ### Real-World Analogy --- Function with a Special Name
 
-
 An operator is a function whose name is `operator` followed by the operator symbol. Think of it as a function that gets called with a special syntax. `a + b` is really `a.operator+(b)` or `operator+(a, b)`.
 
 ### Numbered Steps for Writing an Operator Overload
-
 
 1. **Identify the operator** you want to overload (e.g., `+`, `==`, `<<`)
 2. **Decide member or non-member**: If the operator must modify left operand or access its private data, prefer member. If left operand is not your class type, non-member is required
@@ -141,7 +134,6 @@ An operator is a function whose name is `operator` followed by the operator symb
 5. **Test with natural syntax**: Verify `a + b` compiles and produces correct results
 
 ### Generic Syntax Template
-
 
 ```
 // Member function form
@@ -192,7 +184,6 @@ private:
 
 ### Dry Run --- Operator Resolution
 
-
 | Expression | Resolved As | Return Type | Mechanism |
 |-----------|-------------|-------------|-----------|
 | `p1 + p2` | `p1.operator+(p2)` | `Point` by value | Member function, rhs as parameter |
@@ -207,11 +198,9 @@ private:
 
 ### Real-World Analogy --- Two Doors to the Same Room
 
-
 A member operator is like a door in your own house --- you walk through it directly (your class, your control). A non-member operator is like a door in a shared building --- you need a key (friend declaration) to access private rooms.
 
 ### Comprehensive Comparison Table
-
 
 | Criterion | Member Function | Non-Member Function |
 |-----------|----------------|---------------------|
@@ -228,7 +217,6 @@ A member operator is like a door in your own house --- you walk through it direc
 | Typical use | `+=`, `++`, `--`, `[]`, `()`, `->`, `=` | `<<`, `>>`, `+`, `-`, `==`, `<` |
 
 ### Code Example --- Symmetric Conversion
-
 
 ```cpp
 #include <iostream>
@@ -272,7 +260,6 @@ int main() {
 
 ### Decision Flowchart
 
-
 ```
 Is the operator one of =, (), [], ->, T() ?
     -> YES -> Must be member
@@ -291,7 +278,6 @@ Use member (simpler, direct access)
 
 ### Dry Run --- Resolution for Mixed Types
 
-
 | Expression | Candidates Considered | Best Match | Reason |
 |-----------|---------------------|------------|--------|
 | `m1 + m2` | `Meter::operator+(Meter)`, `operator+(Meter, Meter)` | Member | Exact match, no conversion needed |
@@ -306,11 +292,9 @@ Use member (simpler, direct access)
 
 ### Real-World Analogy --- A Cash Register
 
-
 Adding two prices on a cash register (`item1 + item2`) produces a new total without modifying either item. Adding an item to an existing total (`total += item`) modifies the register's running total. The first creates a new value; the second changes the existing one.
 
 ### Numbered Steps for Arithmetic Overloads
-
 
 1. Decide which operators are meaningful (+, -, *, /, %)
 2. Implement compound assignment versions as members returning `T&`
@@ -319,7 +303,6 @@ Adding two prices on a cash register (`item1 + item2`) produces a new total with
 5. For mixed-type operations, provide overloads for both orderings
 
 ### Pseudocode
-
 
 ```
 class T {
@@ -345,7 +328,6 @@ non-member operator-(T lhs, T rhs) -> T:
 ```
 
 ### Full Code --- Complex Number Arithmetic
-
 
 ```cpp
 #include <iostream>
@@ -455,7 +437,6 @@ c after +=: 3+3i
 
 ### Dry Run --- Operator Resolution for Complex Arithmetic
 
-
 | Step | Expression | Resolved As | Intermediate State |
 |------|-----------|-------------|-------------------|
 | 1 | `a + b` | `operator+(a, b)` | lhs = copy of a |
@@ -466,7 +447,6 @@ c after +=: 3+3i
 
 ### Complexity Analysis
 
-
 | Operation | Time Complexity | Space Complexity | Why |
 |-----------|---------------|------------------|-----|
 | `operator+` (binary) | O(n) for container-like types; O(1) for simple types | O(1) extra (temporary) | Copy + compound; copy dominates for large objects |
@@ -475,7 +455,6 @@ c after +=: 3+3i
 | `operator/` (complex division) | O(1) arithmetic | O(1) | 6 multiplications, 3 additions, 1 division |
 
 ### WHY Complexity Matters
-
 
 Always prefer `+=` over `+` when modifying an existing object. The expression `a = a + b` creates a temporary (costly for large types like `std::string` or `std::vector`), while `a += b` modifies directly. For `std::string`, `+` allocates a new buffer (O(n) memory), while `+=` may reuse existing capacity.
 
@@ -487,11 +466,9 @@ Always prefer `+=` over `+` when modifying an existing object. The expression `a
 
 ### Real-World Analogy --- A Weighing Scale
 
-
 A weighing scale compares two objects and tells you their relationship: equal weight, heavier, lighter, heavier-or-equal, lighter-or-equal, or not-equal. Comparison operators are the six ways to read this relationship.
 
 ### Numbered Steps for Comparison Overloads
-
 
 1. Define `operator==` --- the primary equality check
 2. Define `operator<` --- the primary ordering check
@@ -502,7 +479,6 @@ A weighing scale compares two objects and tells you their relationship: equal we
 7. (C++17) Use `<` and `==` for all six; (C++20) Use `<=>` for all six
 
 ### Pseudocode
-
 
 ```
 non-member operator==(T lhs, T rhs) -> bool:
@@ -527,7 +503,6 @@ non-member operator>=(T lhs, T rhs) -> bool:
 ```
 
 ### Full Code --- Fraction with Comparisons
-
 
 ```cpp
 #include <iostream>
@@ -619,7 +594,6 @@ Sorted: 1/3 1/2 3/4 5/6
 
 ### Dry Run --- Comparison of `1/2` and `3/4`
 
-
 | Step | Expression | Resolved As | Computation | Result |
 |------|-----------|-------------|-------------|--------|
 | 1 | `f1 == f3` | `operator==(f1, f3)` | num=1==2? No; actually 1/2 vs 2/4 normalized = 1/2 == 1/2 -> true | true |
@@ -629,7 +603,6 @@ Sorted: 1/3 1/2 3/4 5/6
 
 ### Complexity Analysis
 
-
 | Operation | Time Complexity | Why |
 |-----------|---------------|-----|
 | `operator==` (Fraction) | O(1) | Two integer comparisons after normalization |
@@ -638,7 +611,6 @@ Sorted: 1/3 1/2 3/4 5/6
 | Derived operators (`!=`, `>`, `<=`, `>=`) | O(1) | Single negation of base comparison |
 
 ### WHY Derive `!=` from `==`
-
 
 Duplicating logic across all six operators violates DRY. If the equality check ever changes (e.g., adding epsilon-tolerance for floating-point fields), every operator would need updating. Deriving ensures consistency: change `==`, and all five others automatically follow.
 
@@ -650,11 +622,9 @@ Duplicating logic across all six operators violates DRY. If the equality check e
 
 ### Real-World Analogy --- Odometer vs Snapshot
 
-
 Prefix `++` is like a car odometer --- it advances and you see the new value immediately. Postfix `++` is like taking a photograph first, then advancing the odometer --- you keep the old value as a record.
 
 ### Numbered Steps
-
 
 1. Prefix `++`: Take no parameters, increment, return `*this` by reference
 2. Postfix `++`: Take a dummy `int` parameter (unused), save a copy, increment via prefix, return the saved copy
@@ -662,7 +632,6 @@ Prefix `++` is like a car odometer --- it advances and you see the new value imm
 4. Postfix `--`: Same as postfix `++` but decrement
 
 ### Pseudocode
-
 
 ```
 class T {
@@ -687,7 +656,6 @@ class T {
 ```
 
 ### Full Code --- Custom Iterator-Like Counter
-
 
 ```cpp
 #include <iostream>
@@ -767,7 +735,6 @@ Iterator style:
 
 ### Dry Run --- Prefix vs Postfix
 
-
 | Step | Expression | What Happens | c.value() |
 |------|-----------|-------------|-----------|
 | 1 | Initial state | --- | 10 |
@@ -777,7 +744,6 @@ Iterator style:
 
 ### Complexity Analysis
 
-
 | Operation | Time Complexity | Space Complexity | Why |
 |-----------|---------------|------------------|-----|
 | Prefix `++` | O(1) | O(1) | Direct increment, no copy |
@@ -786,7 +752,6 @@ Iterator style:
 | Postfix `--` | O(1) + copy | O(1) + sizeof(T) | Same as postfix `++` |
 
 ### WHY Prefer Prefix
-
 
 For a simple `int`, the cost difference is negligible. But for an iterator walking a `std::list` node-by-node, postfix `++` copies the iterator (a pointer + some state), while prefix does not. In tight loops, this matters.
 
@@ -800,18 +765,15 @@ For a simple `int`, the cost difference is negligible. But for an iterator walki
 
 ### Real-World Analogy --- A Factory Assembly Line
 
-
 Think of `<<` as putting an object onto a conveyor belt (output stream) --- the belt keeps moving, and you can put more objects after it. `>>` is like taking raw materials off the belt to build an object --- the belt hands you pieces one at a time.
 
 ### Numbered Steps
-
 
 1. **Output `<<`**: Accept `std::ostream&` and `const T&`; write to the stream; return `std::ostream&`
 2. **Input `>>`**: Accept `std::istream&` and `T&` (non-const); read from the stream into the object; return `std::istream&`
 3. **Friend declaration**: Declare both as `friend` inside the class if they need private member access
 
 ### Pseudocode
-
 
 ```
 // Output
@@ -826,7 +788,6 @@ non-member operator>>(istream& is, T& obj) -> istream&:
 ```
 
 ### Full Code --- Date with Stream I/O
-
 
 ```cpp
 #include <iostream>
@@ -896,7 +857,6 @@ String: 2024-12-25
 
 ### Dry Run --- Stream Operations
 
-
 | Step | Expression | Stream State | Return Value |
 |------|-----------|-------------|--------------|
 | 1 | `std::cout << d` | Writes "2024-12-25" | `std::cout` (reference) |
@@ -907,7 +867,6 @@ String: 2024-12-25
 
 ### Complexity Analysis
 
-
 | Operation | Time Complexity | Why |
 |-----------|---------------|-----|
 | `operator<<` (simple) | O(k) where k = output length | Formatted output per field |
@@ -915,7 +874,6 @@ String: 2024-12-25
 | Chaining N operators | O(N*k) | Each op writes/reads independently |
 
 ### WHY Stream Operators Must Be Non-Members
-
 
 The left operand of `<<` is `std::ostream&`, not your class type. If `operator<<` were a member of `Date`, the call would be `d << std::cout` --- backwards from the natural `std::cout << d`. Non-member form fixes the operand order.
 
@@ -927,11 +885,9 @@ The left operand of `<<` is `std::ostream&`, not your class type. If `operator<<
 
 ### Real-World Analogy --- A Mailbox Array
 
-
 An apartment building has numbered mailboxes. You write `mailboxes[3]` to access mailbox #3. You can both read what's inside (`cout << mailboxes[3]`) and put something inside (`mailboxes[3] = "letter"`). This read-write duality is exactly what `operator[]` enables.
 
 ### Numbered Steps
-
 
 1. Non-const version returns `T&` --- enables both reading and writing
 2. Const version returns `const T&` --- enables reading-only on const objects
@@ -939,7 +895,6 @@ An apartment building has numbered mailboxes. You write `mailboxes[3]` to access
 4. For associative containers, `[]` may create entries on access (like `std::map`)
 
 ### Pseudocode
-
 
 ```
 class T {
@@ -954,7 +909,6 @@ class T {
 ```
 
 ### Full Code --- SafeArray with Subscript
-
 
 ```cpp
 #include <iostream>
@@ -1041,7 +995,6 @@ Exception: Index 100 out of range [0, 5)
 
 ### Dry Run --- Subscript Operator Resolution
 
-
 | Step | Expression | Overload Selected | Returns | Effect |
 |------|-----------|------------------|---------|--------|
 | 1 | `arr[i] = i*10` | `int& operator[](size_t)` | Reference to data_[i] | Write: modifies array |
@@ -1051,7 +1004,6 @@ Exception: Index 100 out of range [0, 5)
 
 ### Complexity Analysis
 
-
 | Operation | Time Complexity | Why |
 |-----------|---------------|-----|
 | `operator[]` (bounded) | O(1) | Single bounds check + pointer arithmetic |
@@ -1059,7 +1011,6 @@ Exception: Index 100 out of range [0, 5)
 | Bounds check overhead | O(1) | Single integer comparison + conditional |
 
 ### WHY Return a Reference
-
 
 Without a reference return, `arr[i] = value` would modify a temporary copy. The expression `arr[i]` must be an *lvalue* (something that can appear on the left side of `=`). Returning `int&` makes it an lvalue; returning `int` makes it an rvalue.
 
@@ -1071,11 +1022,9 @@ Without a reference return, `arr[i] = value` would modify a temporary copy. The 
 
 ### Real-World Analogy --- A Coffee Machine with Presets
 
-
 A coffee machine remembers your settings (strength, size, temperature). Every time you press the brew button `()`, it uses the stored settings to make coffee. The machine itself is a "function object" --- stateful, reusable, customizable.
 
 ### Numbered Steps
-
 
 1. Define `operator()` with desired parameters and return type
 2. Store configuration in the object's member variables
@@ -1083,7 +1032,6 @@ A coffee machine remembers your settings (strength, size, temperature). Every ti
 4. Use with STL algorithms that accept callables
 
 ### Pseudocode
-
 
 ```
 class T {
@@ -1094,7 +1042,6 @@ class T {
 ```
 
 ### Full Code --- Functor Examples
-
 
 ```cpp
 #include <iostream>
@@ -1165,7 +1112,6 @@ Lambda: multiplier(6, 7) = 42
 
 ### Dry Run --- Adder Functor
 
-
 | Step | Expression | What Happens | Result |
 |------|-----------|-------------|--------|
 | 1 | `Adder add5(5)` | Constructor: increment_ = 5 | add5 object created |
@@ -1175,7 +1121,6 @@ Lambda: multiplier(6, 7) = 42
 
 ### Complexity Analysis
 
-
 | Operation | Time Complexity | Why |
 |-----------|---------------|-----|
 | `operator()(int)` (Adder) | O(1) | Single addition |
@@ -1183,7 +1128,6 @@ Lambda: multiplier(6, 7) = 42
 | Custom sort with comparator | O(N log N) | Comparator called for each comparison |
 
 ### WHY Functors Over Function Pointers
-
 
 Functors can store state (configuration, counters, cached values), while function pointers carry zero state. STL algorithms inline functor calls better because the compiler sees the complete type, not just a pointer. Lambdas in C++11+ are syntactic sugar that compile to anonymous functors.
 
@@ -1195,11 +1139,9 @@ Functors can store state (configuration, counters, cached values), while functio
 
 ### Real-World Analogy --- A Universal Adapter
 
-
 A universal power adapter converts the plug shape from one standard to another. It works automatically (implicitly) when you plug in, but you need a physical switch (`explicit`/`static_cast`) for dangerous conversions that could damage equipment.
 
 ### Numbered Steps
-
 
 1. Decide which target types are safe for implicit conversion
 2. For safe targets, define `operator TargetType() const` --- implicit
@@ -1208,7 +1150,6 @@ A universal power adapter converts the plug shape from one standard to another. 
 5. Provide `static_cast` as the escape hatch for explicit conversions
 
 ### Pseudocode
-
 
 ```
 class T {
@@ -1223,7 +1164,6 @@ class T {
 ```
 
 ### Full Code --- Safe Conversions
-
 
 ```cpp
 #include <iostream>
@@ -1299,7 +1239,6 @@ Sum: 75
 
 ### Dry Run --- Conversion Resolution
 
-
 | Step | Expression | Conversion Path | Result | Why |
 |------|-----------|-----------------|--------|-----|
 | 1 | `double d = pct` | `operator double()` called | 75.3 | Implicit, safe |
@@ -1310,7 +1249,6 @@ Sum: 75
 
 ### Complexity Analysis
 
-
 | Operation | Time Complexity | Why |
 |-----------|---------------|-----|
 | `operator double()` | O(1) | Read member, return |
@@ -1319,7 +1257,6 @@ Sum: 75
 | Arithmetic via conversion | O(1) | Convert both operands, then built-in op |
 
 ### WHY Mark `operator bool()` Explicit
-
 
 Without `explicit`, `operator bool()` enables a cascade of unintended promotions: `bool` -> `int` -> `float` -> `double`. This means `pct + 5` would compile (converting the object to bool, then to int), producing garbage. `explicit operator bool()` restricts usage to boolean contexts (conditions in `if`, `while`, `for`, `&&`, `||`, `!`).
 
@@ -1331,14 +1268,11 @@ Without `explicit`, `operator bool()` enables a cascade of unintended promotions
 
 ### 6.11.1 Assignment Operator `=`
 
-
 ### Real-World Analogy --- Copying a Document
-
 
 When you copy a document (a = b), you want the copy to be independent of the original --- changes to one should not affect the other. This is deep copying. Shallow copying (just sharing a pointer) is like giving someone a link to your Google Doc instead of an actual copy.
 
 ### Numbered Steps
-
 
 1. **Self-assignment check**: Guard against `a = a`
 2. **Release old resources**: Delete existing allocated memory
@@ -1346,7 +1280,6 @@ When you copy a document (a = b), you want the copy to be independent of the ori
 4. **Return `*this`**: By reference for chaining (`a = b = c`)
 
 ### Pseudocode
-
 
 ```
 class T {
@@ -1359,7 +1292,6 @@ class T {
 ```
 
 ### Full Code --- String with Assignment
-
 
 ```cpp
 #include <iostream>
@@ -1432,14 +1364,11 @@ Self-assignment: C++
 
 ### 6.11.2 Overloading `new` and `delete`
 
-
 ### Real-World Analogy --- A Custom Locker System
-
 
 Instead of using the school's general storage room (global heap), a sports club installs its own lockers (custom pool) sized for sports equipment. Members (`operator new`) get a locker from this custom pool, and returning equipment (`operator delete`) puts the locker back.
 
 ### Numbered Steps
-
 
 1. Declare `static void* operator new(size_t size)` --- allocates memory
 2. Declare `static void operator delete(void* ptr)` --- deallocates memory
@@ -1447,7 +1376,6 @@ Instead of using the school's general storage room (global heap), a sports club 
 4. Useful for memory pooling, alignment control, or tracking
 
 ### Full Code --- Class-Specific Allocator
-
 
 ```cpp
 #include <iostream>
@@ -1501,7 +1429,6 @@ Total deallocations: 2
 
 ### Dry Run --- Assignment Operator
 
-
 | Step | Expression | State Before | Action | State After |
 |------|-----------|-------------|--------|-------------|
 | 1 | `s1 = s2` | s1="Hello", s2="World" | Self-check: `&s1 != &s2` true | --- |
@@ -1512,7 +1439,6 @@ Total deallocations: 2
 | 6 | `s1 = s1` | s1 = same | Self-check: `this == &other` true | No-op, safe |
 
 ### Complexity Analysis
-
 
 | Operation | Time Complexity | Why |
 |-----------|---------------|-----|
@@ -1525,7 +1451,6 @@ Total deallocations: 2
 
 ### WHY Assignment Returns `T&`
 
-
 Returning a reference enables `a = b = c`, which evaluates right-to-left: `b = c` returns `T&` referring to `b`, then `a = b`. Returning by value would require an extra copy. Returning `void` would break the pattern entirely.
 ---
 
@@ -1535,11 +1460,9 @@ Returning a reference enables `a = b = c`, which evaluates right-to-left: `b = c
 
 ### Real-World Analogy --- Traffic Rules
 
-
 You can customize your car (paint, wheels, sound system) --- that's operator overloading. But you cannot change the rules of the road: red means stop, you drive on the right side, speed limits apply. The language's operator rules are the rules of the road.
 
 ### Numbered Limitations
-
 
 1. **Cannot change precedence**: `a + b * c` always multiplies first
 2. **Cannot change associativity**: `a - b - c` always groups left-to-right
@@ -1553,7 +1476,6 @@ You can customize your car (paint, wheels, sound system) --- that's operator ove
 10. **Cannot control implicit conversion sequences**: Conversion operators participate in standard rank-based overload resolution
 
 ### The Short-Circuit Trap
-
 
 ```cpp
 #include <iostream>
@@ -1588,7 +1510,6 @@ Both `a` and `b` are fully evaluated before `Guard::operator&&` executes. The sh
 
 ### Complexity Analysis
 
-
 | Limitation | Impact | Mitigation |
 |-----------|--------|------------|
 | No new operators | Some domains (regex, matrix) lack natural syntax | Use named functions: `a.dot(b)` instead of `a * b` |
@@ -1603,7 +1524,6 @@ Both `a` and `b` are fully evaluated before `Guard::operator&&` executes. The sh
 > **One-Sentence Takeaway:** The operators `::`, `.`, `.*`, `?:`, `sizeof`, `typeid`, `alignof`, `static_cast`, `dynamic_cast`, `const_cast`, `reinterpret_cast`, and `noexcept` cannot be overloaded --- they preserve core language safety and identity semantics.
 
 ### Comprehensive Table with Reasons
-
 
 | Operator | Name | Reason It Cannot Be Overloaded |
 |----------|------|-------------------------------|
@@ -1623,7 +1543,6 @@ Both `a` and `b` are fully evaluated before `Guard::operator&&` executes. The sh
 | `.` (dot) | C++ member access | Unlike `->` (which can be overloaded), direct `.` access is an invariant of the language's type system. |
 
 ### Deep Reasoning for Each
-
 
 #### `::` --- Scope Resolution
 ```cpp
@@ -1659,7 +1578,6 @@ Template code universally assumes `sizeof(T)` is the actual object size. Overloa
 
 ### Code Example --- Dangerous Toys (If These Could Be Overloaded)
 
-
 ```cpp
 // THIS CODE IS ILLUSTRATIVE --- overloads would NOT compile
 // Showing why the prohibition exists
@@ -1676,7 +1594,6 @@ struct Dangerous {
 ```
 
 ### When Attempting to Overload
-
 
 ```cpp
 struct S {
@@ -1695,7 +1612,6 @@ Each of these produces a compiler error: "cannot overload the unoverloadable."
 > **One-Sentence Takeaway:** Return type conventions signal intent --- references for lvalue semantics, values for rvalue semantics, `bool` for comparisons, `void` for side-effect-only operators.
 
 ### Comprehensive Table
-
 
 | Operator Category | Operators | Return Type Convention | Why |
 |------------------|-----------|----------------------|-----|
@@ -1721,7 +1637,6 @@ Each of these produces a compiler error: "cannot overload the unoverloadable."
 
 ### Why These Conventions Exist
 
-
 **Returning `T&` (reference)** signals that the returned value is an *lvalue* --- it has an identity, an address, and can be assigned to. Used for operators that modify the object (`+=`, `=`, prefix `++`).
 
 **Returning `T` (value)** signals that the returned value is an *rvalue* --- a temporary that may be moved or copied. Used for operators that compute new values (`+`, postfix `++`).
@@ -1729,7 +1644,6 @@ Each of these produces a compiler error: "cannot overload the unoverloadable."
 **Returning `bool`** signals a predicate --- the operator checks a condition but does not produce a meaningful value beyond true/false.
 
 ### Anti-Pattern --- Wrong Return Type
-
 
 ```cpp
 struct Bad {
@@ -1752,7 +1666,6 @@ struct Bad {
 
 ### Guideline 1 --- When in Doubt, Do as the Ints Do
 
-
 If your `+` operator doesn't behave like built-in `+`, your users will be confused. The built-in operators define the contract.
 
 ```cpp
@@ -1766,7 +1679,6 @@ Money operator+(Money& a, const Money& b) { return a += b; }  // side effect!
 
 ### Guideline 2 --- Implement `+` in Terms of `+=`
 
-
 The binary version is a non-member that copies, applies compound, and returns the copy. This avoids code duplication and ensures consistent behavior.
 
 ```cpp
@@ -1779,7 +1691,6 @@ T operator+(T lhs, const T& rhs) { lhs += rhs; return lhs; }
 
 ### Guideline 3 --- Provide `const` and Non-`const` Overloads
 
-
 For subscript `[]` and dereference `*`, both versions are needed for full usability.
 
 ```cpp
@@ -1788,7 +1699,6 @@ const T& operator[](size_t i) const { return data_[i]; }
 ```
 
 ### Guideline 4 --- Prefer Non-Member for Symmetric Operators
-
 
 Operators with symmetric operands (`==`, `<`, `+` --- when both sides can convert) should be non-members to allow left-side conversions.
 
@@ -1802,13 +1712,11 @@ bool operator==(const String& a, const String& b);
 
 ### Guideline 5 --- Never Overload `&&`, `||`, or `,`
 
-
 These operators lose their special semantics when overloaded:
 - `&&` and `||` lose short-circuit evaluation
 - `,` loses left-to-right evaluation order
 
 ### Guideline 6 --- Always Handle Self-Assignment
-
 
 ```cpp
 T& T::operator=(const T& other) {
@@ -1830,7 +1738,6 @@ T& T::operator=(T other) {  // copy passed by value
 
 ### Guideline 7 --- Keep `operator bool()` Explicit
 
-
 ```cpp
 explicit operator bool() const { return valid_; }
 ```
@@ -1839,16 +1746,13 @@ This prevents unintended promotion to `int` while allowing boolean context usage
 
 ### Guideline 8 --- Don't Overload Operators for Unrelated Semantics
 
-
 Using `+` for string concatenation is fine (it's associative, commutative-adjacent). Using `+` for set union is questionable (union is more like `|`). Using `+` for database connection is wrong.
 
 ### Guideline 9 --- Provide `operator!=` Alongside `operator==`
 
-
 Even with C++20's `<=>`, it's good practice to ensure `!=` is available and consistent with `==`.
 
 ### Guideline 10 --- Document Non-Standard Semantics
-
 
 If your operator must deviate from built-in behavior, document it explicitly. Users reading `if (a == b)` assume equality, not approximate fuzzy matching.
 
@@ -1859,7 +1763,6 @@ If your operator must deviate from built-in behavior, document it explicitly. Us
 > **One-Sentence Takeaway:** The C++ standard library's core types (std::string, std::complex, std::vector) demonstrate operator overloading done right --- intuitive, consistent, and powerful.
 
 ### 6.16.1 `std::string` --- The Reference Model
-
 
 `std::string` is arguably the best example of operator overloading in the standard library. Every operator is intuitive:
 
@@ -1930,7 +1833,6 @@ hello, C++ rocks!
 
 ### 6.16.2 `std::complex` --- Mathematical Precision
 
-
 `std::complex` demonstrates operator overloading for mathematical types where every arithmetic operator is defined with exact semantics.
 
 ```cpp
@@ -1994,7 +1896,6 @@ a + b * c;  // natural math notation
 ```
 
 ### 6.16.3 `std::vector` --- Container Access
-
 
 `std::vector` demonstrates subscript `[]`, assignment, and comparison operators for containers.
 
@@ -2069,7 +1970,6 @@ public:
 
 ### Comparison Table --- std::string vs std::complex vs std::vector
 
-
 | Feature | `std::string` | `std::complex` | `std::vector` |
 |---------|---------------|----------------|---------------|
 | `+` | Concatenation | Complex addition | Not defined (use `insert`) |
@@ -2082,7 +1982,6 @@ public:
 | `->` | Via iterator | Via smart pointer? | Via iterator |
 
 ### Why These Types Succeed
-
 
 Each type asks: "Does this operator make intuitive sense for what this type represents?"
 
@@ -2097,7 +1996,6 @@ This is the Principle of Least Surprise in action.
 ## 6.17 Interview Corner
 
 ### Q1: When should you implement an operator as a member function vs a non-member function?
-
 
 **Answer:**
 
@@ -2131,17 +2029,6 @@ public:
 
 ### Q2: Why are `operator<<` and `operator>>` for streams always implemented as non-member functions?
 
-<a href="../../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-are-operator-and-operator-for-streams-always-implemented-as-non-member-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-are-operator-and-operator-for-streams-always-implemented-as-non-member-functions-handwritten.svg" alt="Handwritten: Why are `operator<<` and `operator>>` for streams always implemented as non-member functions?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-are-operator-and-operator-for-streams-always-implemented-as-non-member-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-are-operator-and-operator-for-streams-always-implemented-as-non-member-functions-diagram.svg" alt="Diagram: Why are `operator<<` and `operator>>` for streams always implemented as non-member functions?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-are-operator-and-operator-for-streams-always-implemented-as-non-member-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/06-operator-overloading/why-are-operator-and-operator-for-streams-always-implemented-as-non-member-functions-sticky.svg" alt="Sticky Note: Why are `operator<<` and `operator>>` for streams always implemented as non-member functions?" width="30%">
-</a>
-
-
 **Answer:** Because the left operand is `std::ostream&`, not your class type. If `<<` were a member, the call would be `myObj << std::cout`, which is backwards from natural usage `std::cout << myObj`. As a non-member, both operands are explicit parameters, so the natural order works. They typically need `friend` status to access private members.
 
 ```cpp
@@ -2157,7 +2044,6 @@ std::ostream& operator<<(std::ostream& os, const MyClass& obj) {
 ```
 
 ### Q3: Explain the difference between prefix and postfix `++` in terms of implementation and performance.
-
 
 **Answer:**
 
@@ -2189,7 +2075,6 @@ for (auto it = v.begin(); it != v.end(); it++)  // works, but copies
 ```
 
 ### Q4: What is the copy-and-swap idiom and why is it useful for `operator=`?
-
 
 **Answer:** Copy-and-swap is a technique that implements copy assignment by passing the source by value (creating a copy), then swapping the contents of `*this` with the copy. The copy's destructor then cleans up the old resources.
 
@@ -2230,7 +2115,6 @@ public:
 
 ### Q5: How do you decide which operators to overload for a custom class?
 
-
 **Answer:** Use this decision framework:
 
 1. **Is the operator semantically meaningful?** Would a user naturally write `a + b` for this type? If not, don't overload. Use named functions instead.
@@ -2255,7 +2139,6 @@ Matrix Database::mergeWith(const Database& other);
 
 ### Q6: What is the problem with overloading `operator&` (address-of)?
 
-
 **Answer:** Overloading `operator&` changes the behavior of the unary `&` operator, which normally returns the address of the object. This can break templates and smart pointers that rely on `&` returning a raw pointer.
 
 ```cpp
@@ -2273,17 +2156,6 @@ Tricky* ptr = &t;  // ptr = 0xDEADBEEF, not actual address!
 This is why standard library smart pointers provide `std::addressof()` --- a helper that obtains the real address even when `operator&` is overloaded.
 
 ### Q7: How does C++20's `<=>` (spaceship operator) change operator overloading?
-
-<a href="../../../assets/images/diagrams/oop-cpp/06-operator-overloading/how-does-c-20-s-spaceship-operator-change-operator-overloading-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/06-operator-overloading/how-does-c-20-s-spaceship-operator-change-operator-overloading-handwritten.svg" alt="Handwritten: How does C++20's `<=>` (spaceship operator) change operator overloading?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/06-operator-overloading/how-does-c-20-s-spaceship-operator-change-operator-overloading-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/06-operator-overloading/how-does-c-20-s-spaceship-operator-change-operator-overloading-diagram.svg" alt="Diagram: How does C++20's `<=>` (spaceship operator) change operator overloading?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/06-operator-overloading/how-does-c-20-s-spaceship-operator-change-operator-overloading-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/06-operator-overloading/how-does-c-20-s-spaceship-operator-change-operator-overloading-sticky.svg" alt="Sticky Note: How does C++20's `<=>` (spaceship operator) change operator overloading?" width="30%">
-</a>
-
 
 **Answer:** C++20 introduces the three-way comparison operator `<=>` that can auto-generate all six comparison operators (`==`, `!=`, `<`, `<=`, `>`, `>=`).
 
@@ -2329,7 +2201,6 @@ struct Point {
 
 ### Q8: How does operator overloading affect move semantics?
 
-
 **Answer:** Move semantics interact with operator overloading primarily through `operator=` and rvalue reference overloads.
 
 ```cpp
@@ -2367,7 +2238,6 @@ a = Buffer(100);  // move (prvalue)
 
 ### Q9: Why must `operator[]` return a reference? What happens if it returns by value?
 
-
 **Answer:** `operator[]` must return a reference to make `arr[i] = value` work. If it returned by value, the expression `arr[i] = value` would modify a temporary copy, not the actual array element.
 
 ```cpp
@@ -2388,7 +2258,6 @@ struct GoodArray {
 
 ### Q10: Should you overload `operator&&` and `operator||`? Why or why not?
 
-
 **Answer:** Generally no. The built-in `&&` and `||` have short-circuit semantics: if the left operand determines the result, the right operand is never evaluated. Overloaded versions always evaluate both operands before calling the operator function. This breaks expected behavior and can mask bugs.
 
 ```cpp
@@ -2407,7 +2276,6 @@ If you must overload them, document the non-short-circuiting behavior explicitly
 
 ### Member vs Non-Member Decision Matrix
 
-
 | Scenario | Member | Non-Member | Friend Needed? |
 |----------|--------|------------|---------------|
 | `operator=` | [Y] Required | [N] | N/A |
@@ -2422,7 +2290,6 @@ If you must overload them, document the non-short-circuiting behavior explicitly
 | `operator<<` | [N] Wrong | [Y] Required | Usually yes |
 
 ### Return Type Quick Reference
-
 
 | Operator | Return Type | Category |
 |----------|------------|----------|
@@ -2439,7 +2306,6 @@ If you must overload them, document the non-short-circuiting behavior explicitly
 | `operator T()` | `T` | Converted value |
 
 ### Can't Overload Summary
-
 
 | Operator | Name | Reason |
 |----------|------|--------|
@@ -2465,7 +2331,6 @@ Operator overloading integrates user-defined types into C++'s expression syntax 
 
 ### Key Takeaways
 
-
 1. **Rules**: At least one user-defined operand; no new operators; fixed precedence/associativity/arity; `::`, `.`, `.*`, `?:`, `sizeof`, `typeid`, casts, and `alignof` cannot be overloaded.
 
 2. **Member vs Non-Member**: `=` `()` `[]` `->` `T()` must be members. Compound assignment (`+=`) should be members. Non-members enable symmetric conversion. Stream operators must be non-members.
@@ -2489,7 +2354,6 @@ Operator overloading integrates user-defined types into C++'s expression syntax 
 11. **Guidelines**: "When in doubt, do as the ints do." Implement `+` in terms of `+=`. Don't overload `&&`, `||`, or `,`. Document non-standard semantics.
 
 ### Why Operator Overloading Matters
-
 
 Operator overloading transforms user-defined types from "data containers" into "types with meaning." `std::string` without `+` is just a character buffer; `std::complex` without `+` is just a pair of doubles. The operators are what make these types *feel* like language primitives. Judicious use produces elegant, readable code. Overuse produces confusion. The balance is the mark of an experienced C++ developer.
 

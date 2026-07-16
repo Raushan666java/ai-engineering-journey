@@ -1,6 +1,6 @@
-# Chapter 17: Randomized Algorithms
+﻿# Chapter 17: Randomized Algorithms
 
-> **Prerequisites:** [Chapter 16: Approximation Algorithms](./16-approximation.md) — Algorithm design for hard problems | **Next:** [Chapter 18: Advanced Topics](./18-advanced.md) — From randomized methods to online and streaming algorithms
+> **Prerequisites:** [Chapter 16: Approximation Algorithms](./16-approximation.md) â€” Algorithm design for hard problems | **Next:** [Chapter 18: Advanced Topics](./18-advanced.md) â€” From randomized methods to online and streaming algorithms
 
 ## Learning Objectives
 
@@ -9,16 +9,16 @@ By the end of this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/algorithms/17-randomized/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/algorithms/17-randomized/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/algorithms/17-randomized/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/algorithms/17-randomized/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/algorithms/17-randomized/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/algorithms/17-randomized/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/algorithms/17-randomized/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/algorithms/17-randomized/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/algorithms/17-randomized/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/algorithms/17-randomized/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/algorithms/17-randomized/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/algorithms/17-randomized/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -38,9 +38,9 @@ By the end of this chapter, students will be able to:
 |-------|-------------|-------------------|
 | Monte Carlo | May give wrong answer with bounded probability | Probability of error can be made arbitrarily small |
 | Las Vegas | Always correct; running time is random | Expected time analysis, not worst case |
-| Randomized Quicksort | Random pivot avoids worst case | O(n log n) expected; O(n²) worst case with vanishing probability |
+| Randomized Quicksort | Random pivot avoids worst case | O(n log n) expected; O(nÂ²) worst case with vanishing probability |
 | Randomized Quickselect | Random pivot for k-th smallest | O(n) expected time selection |
-| Miller-Rabin | Probabilistic primality test | O(log³ n); composite detected with probability ≥ 3/4 |
+| Miller-Rabin | Probabilistic primality test | O(logÂ³ n); composite detected with probability â‰¥ 3/4 |
 
 ### Chapter Roadmap
 
@@ -57,9 +57,9 @@ flowchart LR
 
 ## Why Randomized Algorithms Matter
 
-**Real-world analogy:** Imagine you are the receptionist at a busy clinic with one waiting room and five doctors. If patients arrive in a fixed order (alphabetically), the first doctor gets all the A-L patients while the others sit idle. If you randomly assign patients to doctors, the load balances naturally — no single doctor gets overwhelmed. This is exactly why Google's load balancers random-shuffle requests across servers: randomness prevents systematic worst-case behavior.
+**Real-world analogy:** Imagine you are the receptionist at a busy clinic with one waiting room and five doctors. If patients arrive in a fixed order (alphabetically), the first doctor gets all the A-L patients while the others sit idle. If you randomly assign patients to doctors, the load balances naturally â€” no single doctor gets overwhelmed. This is exactly why Google's load balancers random-shuffle requests across servers: randomness prevents systematic worst-case behavior.
 
-Randomized algorithms are not a niche curiosity — they power:
+Randomized algorithms are not a niche curiosity â€” they power:
 
 - **Cryptography:** RSA key generation relies on Miller-Rabin to find large primes. Without randomized primality testing, SSL/TLS would not exist.
 - **Load balancing:** Randomly assigning requests to servers avoids hot spots with high probability.
@@ -97,26 +97,26 @@ Randomized algorithms are classified into two types:
 |--------|-----------|-------------|
 | **Correctness** | Always correct | May be wrong with bounded probability |
 | **Running time** | Random variable (expected time) | Deterministic (always fixed) |
-| **Error source** | None — answer is always right | Random coins may produce wrong answer |
+| **Error source** | None â€” answer is always right | Random coins may produce wrong answer |
 | **Amplification** | Run many times (always same result) | Run many times, take majority vote to reduce error |
 | **Typical use** | Sorting, selection | Primality, minimum cut |
 | **Analysis** | Expected time complexity | Probability of correctness |
 | **Example** | Randomized Quicksort | Miller-Rabin |
 | **Risk profile** | Slow execution is the only risk | Wrong answer is a risk |
-| **Conversion** | Can convert Monte Carlo → Las Vegas if verification is fast | Cannot easily convert Las Vegas → Monte Carlo |
+| **Conversion** | Can convert Monte Carlo â†’ Las Vegas if verification is fast | Cannot easily convert Las Vegas â†’ Monte Carlo |
 
 ### 17.3 Randomized Quickselect (Las Vegas)
 
 
 **Problem:** Find the \( k \)-th smallest element in an unsorted array.
 
-**Real-world analogy:** You have 1,000 unsorted exam scores and want the median (500th smallest). Instead of sorting all 1,000, you randomly pick a score, arrange others around it, and recursively search only the relevant half. This is like guessing a number between 1 and 1000 — each random guess eliminates roughly half the remaining range.
+**Real-world analogy:** You have 1,000 unsorted exam scores and want the median (500th smallest). Instead of sorting all 1,000, you randomly pick a score, arrange others around it, and recursively search only the relevant half. This is like guessing a number between 1 and 1000 â€” each random guess eliminates roughly half the remaining range.
 
 **Algorithm Steps:**
 
 1. If the subarray has one element, return it.
 2. Pick a random pivot index between `low` and `high`.
-3. Partition the array so elements ≤ pivot are on the left, > pivot on the right.
+3. Partition the array so elements â‰¤ pivot are on the left, > pivot on the right.
 4. If `k` equals the pivot's final position, return `A[k]`.
 5. If `k < pivotIndex`, recurse on the left subarray.
 6. If `k > pivotIndex`, recurse on the right subarray.
@@ -152,9 +152,9 @@ Find the 4th smallest element (k=3, 0-indexed) in array `[7, 10, 4, 3, 20, 15]`.
 
 | Step | Subarray | Pivot | After Partition | k | Action |
 |------|----------|-------|-----------------|---|--------|
-| 1 | [7,10,4,3,20,15] | Random → index 2 (value 4) | [3,4,7,10,20,15] pivotIndex=1 | 3 | k > 1 → recurse right |
-| 2 | [7,10,20,15] | Random → index 0 of subarray (value 7) | [7,10,20,15] pivotIndex=0 (relative) | Need: k - pivot - 1 = 3-1-1=1 | k=1 in this subarray, pivotIndex=0 → recurse right |
-| 3 | [10,20,15] | Random → index 2 of subarray (value 15) | [10,15,20] pivotIndex=1 | 1 | k == 1 → return 15 |
+| 1 | [7,10,4,3,20,15] | Random â†’ index 2 (value 4) | [3,4,7,10,20,15] pivotIndex=1 | 3 | k > 1 â†’ recurse right |
+| 2 | [7,10,20,15] | Random â†’ index 0 of subarray (value 7) | [7,10,20,15] pivotIndex=0 (relative) | Need: k - pivot - 1 = 3-1-1=1 | k=1 in this subarray, pivotIndex=0 â†’ recurse right |
+| 3 | [10,20,15] | Random â†’ index 2 of subarray (value 15) | [10,15,20] pivotIndex=1 | 1 | k == 1 â†’ return 15 |
 
 **Result:** 15 is the 4th smallest element.
 
@@ -177,10 +177,10 @@ E[T(n)] \le cn + E[T(3n/4)] \implies E[T(n)] = O(n).
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Expected linear time — faster than sorting | Worst-case O(n²) (vanishing probability) |
-| In-place partitioning (O(1) extra space) | Unstable — equal elements may reorder |
+| Expected linear time â€” faster than sorting | Worst-case O(nÂ²) (vanishing probability) |
+| In-place partitioning (O(1) extra space) | Unstable â€” equal elements may reorder |
 | Simple implementation | Random number generation overhead |
-| Good cache performance | Recursive — stack overflow on large arrays |
+| Good cache performance | Recursive â€” stack overflow on large arrays |
 
 **Edge Cases:**
 - **k = 0:** Returns minimum element.
@@ -282,7 +282,7 @@ public class QuickSelect {
 ### 17.4 Randomized Quicksort (Las Vegas)
 
 
-**Real-world analogy:** Imagine organizing a deck of cards by repeatedly picking a random card and splitting the deck around it. Even if you pick unlucky splits occasionally, the expected number of comparisons is remarkably small — about 1.39 n log₂ n. This is why real-world sort implementations (Java's `Arrays.sort`, Python's `sorted`) use randomized pivot selection.
+**Real-world analogy:** Imagine organizing a deck of cards by repeatedly picking a random card and splitting the deck around it. Even if you pick unlucky splits occasionally, the expected number of comparisons is remarkably small â€” about 1.39 n logâ‚‚ n. This is why real-world sort implementations (Java's `Arrays.sort`, Python's `sorted`) use randomized pivot selection.
 
 **Algorithm Steps:**
 
@@ -307,10 +307,10 @@ Sort array `[10, 7, 8, 9, 1, 5]`.
 
 | Step | Subarray | Pivot (value) | After Partition | Recursive Calls |
 |------|----------|---------------|-----------------|-----------------|
-| 1 | [10,7,8,9,1,5] | Random → idx 4 (value 1) | [1,7,8,9,10,5] pivotIdx=0 | left=[] right=[7,8,9,10,5] |
-| 2 | [7,8,9,10,5] | Random → idx 2 (value 9) | [7,8,5,9,10] pivotIdx=3 | left=[7,8,5] right=[10] |
-| 3 | [7,8,5] | Random → idx 1 (value 8) | [7,5,8] pivotIdx=2 | left=[7,5] right=[] |
-| 4 | [7,5] | Random → idx 0 (value 7) | [5,7] pivotIdx=1 | left=[5] right=[] |
+| 1 | [10,7,8,9,1,5] | Random â†’ idx 4 (value 1) | [1,7,8,9,10,5] pivotIdx=0 | left=[] right=[7,8,9,10,5] |
+| 2 | [7,8,9,10,5] | Random â†’ idx 2 (value 9) | [7,8,5,9,10] pivotIdx=3 | left=[7,8,5] right=[10] |
+| 3 | [7,8,5] | Random â†’ idx 1 (value 8) | [7,5,8] pivotIdx=2 | left=[7,5] right=[] |
+| 4 | [7,5] | Random â†’ idx 0 (value 7) | [5,7] pivotIdx=1 | left=[5] right=[] |
 
 **Result:** `[1, 5, 7, 8, 9, 10]`
 
@@ -335,15 +335,15 @@ The constant factor is small: \( E[\text{comparisons}] = 2n \ln n \approx 1.39 n
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Expected O(n log n) — avoids deterministic worst case | Random number generation overhead |
+| Expected O(n log n) â€” avoids deterministic worst case | Random number generation overhead |
 | In-place sorting (O(log n) stack space) | Not stable |
-| Excellent cache performance (sequential access) | Recursive — may overflow stack |
-| Simpler than deterministic pivot schemes | Worst-case O(n²) still possible (though unlikely) |
+| Excellent cache performance (sequential access) | Recursive â€” may overflow stack |
+| Simpler than deterministic pivot schemes | Worst-case O(nÂ²) still possible (though unlikely) |
 
 **Edge Cases:**
-- **Already sorted:** Random pivot avoids O(n²) behavior.
+- **Already sorted:** Random pivot avoids O(nÂ²) behavior.
 - **All equal elements:** Every pivot splits evenly; O(n log n).
-- **Reverse sorted:** Same as sorted — random pivot protects.
+- **Reverse sorted:** Same as sorted â€” random pivot protects.
 - **Array of size 0 or 1:** Trivially sorted.
 
 **C++ Implementation:**
@@ -387,7 +387,7 @@ public static void quickSort(int[] A, int low, int high) {
 
 **Problem:** Determine if a number \( n \) is prime or composite.
 
-**Real-world analogy:** You are a bouncer at an exclusive club. Instead of checking every ID thoroughly, you randomly ask a few questions. If someone fails a question, you know they are underage for sure. If they pass all questions, they are probably of age. The more questions you ask, the more certain you become. This is exactly how SSL/TLS generates RSA primes — the Miller-Rabin test quickly identifies composites with exponentially small error probability.
+**Real-world analogy:** You are a bouncer at an exclusive club. Instead of checking every ID thoroughly, you randomly ask a few questions. If someone fails a question, you know they are underage for sure. If they pass all questions, they are probably of age. The more questions you ask, the more certain you become. This is exactly how SSL/TLS generates RSA primes â€” the Miller-Rabin test quickly identifies composites with exponentially small error probability.
 
 **Key insight (Fermat's little theorem):** If \( n \) is prime, then for any \( a \) not divisible by \( n \), \( a^{n-1} \equiv 1 \pmod{n} \). However, there exist Carmichael numbers (e.g., 561) for which the converse fails.
 
@@ -420,13 +420,13 @@ MillerRabin(n, k):
 
 Test if n = 221 is prime with k = 2 rounds.
 
-| Step | a | d | s | x₀ = a^d mod n | x₁ = x₀² mod n | x₂ = x₁² mod n | Result |
+| Step | a | d | s | xâ‚€ = a^d mod n | xâ‚ = xâ‚€Â² mod n | xâ‚‚ = xâ‚Â² mod n | Result |
 |------|---|----|---|----------------|----------------|----------------|--------|
-| n-1 = 220 = 2² × 55 | — | d=55 | s=2 | — | — | — | Initial |
-| Round 1 | 174 | 55 | 2 | 174⁵⁵ mod 221 = 47 | 47² mod 221 = 220 ≡ -1 | — | Pass (found -1) |
-| Round 2 | 85 | 55 | 2 | 85⁵⁵ mod 221 = 168 | 168² mod 221 = 157 | 157² mod 221 = 130 ≠ -1 | **FAIL** — 221 is composite |
+| n-1 = 220 = 2Â² Ã— 55 | â€” | d=55 | s=2 | â€” | â€” | â€” | Initial |
+| Round 1 | 174 | 55 | 2 | 174âµâµ mod 221 = 47 | 47Â² mod 221 = 220 â‰¡ -1 | â€” | Pass (found -1) |
+| Round 2 | 85 | 55 | 2 | 85âµâµ mod 221 = 168 | 168Â² mod 221 = 157 | 157Â² mod 221 = 130 â‰  -1 | **FAIL** â€” 221 is composite |
 
-**Result:** 221 = 13 × 17. Correctly identified as composite.
+**Result:** 221 = 13 Ã— 17. Correctly identified as composite.
 
 **Error probability:** At most \( 4^{-k} \) for a composite \( n \). After \( k \) rounds, if \( n \) passes all tests, it is prime with probability \( 1 - 4^{-k} \). For \( k = 20 \), the error probability is \( 4^{-20} \approx 10^{-12} \).
 
@@ -436,7 +436,7 @@ Test if n = 221 is prime with k = 2 rounds.
 
 | Metric | Value |
 |--------|-------|
-| **Time (per round)** | \( O(\log^3 n) \) — modular exponentiation |
+| **Time (per round)** | \( O(\log^3 n) \) â€” modular exponentiation |
 | **Time (k rounds)** | \( O(k \log^3 n) \) |
 | **Space** | \( O(1) \) |
 | **Error prob. (k rounds)** | \( \le 4^{-k} \) |
@@ -445,9 +445,9 @@ Test if n = 221 is prime with k = 2 rounds.
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Fast for large numbers (polylog time) | Probabilistic — not 100% certain |
+| Fast for large numbers (polylog time) | Probabilistic â€” not 100% certain |
 | Error probability tunable via k | Slower than deterministic sieve for small n |
-| Works for any size n | Deterministic variants limited to n &lt; 2⁶⁴ |
+| Works for any size n | Deterministic variants limited to n &lt; 2â¶â´ |
 | Foundation of RSA key generation | Carmichael numbers need more rounds |
 
 **Edge Cases:**
@@ -455,7 +455,7 @@ Test if n = 221 is prime with k = 2 rounds.
 - **n = 2, 3:** Return true.
 - **Even numbers > 2:** Return false immediately.
 - **Carmichael numbers (e.g., 561, 1105):** Pass Fermat test but fail Miller-Rabin with high probability.
-- **n &lt; 2⁶⁴:** Use deterministic base set.
+- **n &lt; 2â¶â´:** Use deterministic base set.
 
 **C++ Implementation:**
 ```cpp
@@ -607,16 +607,16 @@ Graph: A-B, A-C, A-D, B-C, C-D (5 edges). The min cut is {B, D} with 2 edges.
 
 | Iteration | Random Edge | After Contraction | Remaining Vertices | Cut Size |
 |-----------|-------------|-------------------|-------------------|----------|
-| 1 | A-B | {AB}, C, D; edges: (AB)-C × 2, (AB)-D, C-D | {ABC}, D with 2 edges | 2 ✓ |
-| 2 | C-D | A, B, {CD}; edges: A-B, A-{CD} × 2, B-{CD} | {AB}, {CD} with 2 edges | 2 ✓ |
-| 3 | A-C | {AC}, B, D; edges: B-{AC} × 2, D-{AC}, B-D | {ACB}, D with 2 edges | 2 ✓ |
+| 1 | A-B | {AB}, C, D; edges: (AB)-C Ã— 2, (AB)-D, C-D | {ABC}, D with 2 edges | 2 âœ“ |
+| 2 | C-D | A, B, {CD}; edges: A-B, A-{CD} Ã— 2, B-{CD} | {AB}, {CD} with 2 edges | 2 âœ“ |
+| 3 | A-C | {AC}, B, D; edges: B-{AC} Ã— 2, D-{AC}, B-D | {ACB}, D with 2 edges | 2 âœ“ |
 
 **Complexity Analysis:**
 
 | Case | Value |
 |------|-------|
 | **One trial** | \( O(m) \) using adjacency list |
-| **Total (n² log n trials)** | \( O(n^2 m \log n) \) |
+| **Total (nÂ² log n trials)** | \( O(n^2 m \log n) \) |
 | **Space** | \( O(n + m) \) |
 | **Success probability (one trial)** | \( \ge 2/n^2 \) |
 | **Overall success probability** | \( 1 - 1/n \) |
@@ -625,7 +625,7 @@ Graph: A-B, A-C, A-D, B-C, C-D (5 edges). The min cut is {B, D} with 2 edges.
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Elegant and simple | Slow — O(n² m log n) |
+| Elegant and simple | Slow â€” O(nÂ² m log n) |
 | High-probability guarantee | Needs many trials for certainty |
 | Handles parallel edges naturally | May destroy min cut in early contractions |
 | Easy to parallelize | Overkill for small graphs |
@@ -633,15 +633,15 @@ Graph: A-B, A-C, A-D, B-C, C-D (5 edges). The min cut is {B, D} with 2 edges.
 ### 17.7 Freivalds' Algorithm for Matrix Verification (Monte Carlo)
 
 
-**Real-world analogy:** You are grading 100 student submissions for a matrix multiplication. Instead of recomputing the full product for each student, you pick a random test vector. If the result is wrong, you will catch it with high probability — and if it passes, the student is almost certainly correct.
+**Real-world analogy:** You are grading 100 student submissions for a matrix multiplication. Instead of recomputing the full product for each student, you pick a random test vector. If the result is wrong, you will catch it with high probability â€” and if it passes, the student is almost certainly correct.
 
 **Problem:** Verify if \( A \times B = C \) for \( n \times n \) matrices.
 
 **Algorithm Steps:**
 
 1. Generate a random vector \( r \) of 0s and 1s.
-2. Compute \( A \cdot (B \cdot r) \) — two matrix-vector multiplications: O(n²).
-3. Compare with \( C \cdot r \) — one matrix-vector multiplication: O(n²).
+2. Compute \( A \cdot (B \cdot r) \) â€” two matrix-vector multiplications: O(nÂ²).
+3. Compare with \( C \cdot r \) â€” one matrix-vector multiplication: O(nÂ²).
 4. If equal, return true; otherwise, return false.
 
 **Pseudocode:**
@@ -661,8 +661,8 @@ Freivalds(A, B, C, n):
 
 | Metric | Value |
 |--------|-------|
-| **Time** | \( O(n^2) \) — three matrix-vector multiplications |
-| **Space** | \( O(n) \) — just the vectors |
+| **Time** | \( O(n^2) \) â€” three matrix-vector multiplications |
+| **Space** | \( O(n) \) â€” just the vectors |
 | **Error prob. (one trial)** | \( \le 1/2 \) |
 | **Error prob. (k trials)** | \( \le 2^{-k} \) |
 
@@ -670,14 +670,14 @@ Freivalds(A, B, C, n):
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| O(n²) vs O(n³) for naive re-computation | Probabilistic — small chance of false positive |
+| O(nÂ²) vs O(nÂ³) for naive re-computation | Probabilistic â€” small chance of false positive |
 | Extremely simple | Only works for matrices over fields |
-| Error probability reduces exponentially | Zero false negatives — always catches errors |
+| Error probability reduces exponentially | Zero false negatives â€” always catches errors |
 
 ### 17.8 Reservoir Sampling (Las Vegas / Monte Carlo variant)
 
 
-**Real-world analogy:** You work at a streaming service and want to show users 5 random songs from an infinitely long playlist. You cannot store the entire playlist in memory. Reservoir sampling lets you maintain a perfectly uniform random sample of size 5 using only 5 slots — no matter how long the stream.
+**Real-world analogy:** You work at a streaming service and want to show users 5 random songs from an infinitely long playlist. You cannot store the entire playlist in memory. Reservoir sampling lets you maintain a perfectly uniform random sample of size 5 using only 5 slots â€” no matter how long the stream.
 
 **Problem:** Select \( k \) elements uniformly at random from a stream of unknown length \( n \).
 
@@ -686,7 +686,7 @@ Freivalds(A, B, C, n):
 1. Fill the reservoir with the first k elements.
 2. For each subsequent element at position i (1-indexed):
    a. Generate a random number j between 1 and i.
-   b. If j ≤ k, replace reservoir[j-1] with the current element.
+   b. If j â‰¤ k, replace reservoir[j-1] with the current element.
 
 **Pseudocode:**
 ```
@@ -703,12 +703,12 @@ ReservoirSampling(stream, k):
 
 **Dry Run:** Sample k=2 from stream [A, B, C, D, E].
 
-| Step | i | Element | j (rand 1..i) | j ≤ k? | Reservoir Before | Reservoir After |
+| Step | i | Element | j (rand 1..i) | j â‰¤ k? | Reservoir Before | Reservoir After |
 |------|---|---------|---------------|--------|-----------------|-----------------|
-| Init | k=2 | A, B | — | — | — | [A, B] |
-| 1 | 3 | C | 2 | Yes (2 ≤ 2) | [A, B] | [A, C] |
+| Init | k=2 | A, B | â€” | â€” | â€” | [A, B] |
+| 1 | 3 | C | 2 | Yes (2 â‰¤ 2) | [A, B] | [A, C] |
 | 2 | 4 | D | 4 | No (4 > 2) | [A, C] | [A, C] |
-| 3 | 5 | E | 1 | Yes (1 ≤ 2) | [A, C] | [E, C] |
+| 3 | 5 | E | 1 | Yes (1 â‰¤ 2) | [A, C] | [E, C] |
 
 **Correctness:** At step i, each of the first i elements has probability k/i of being in the reservoir. Proof by induction.
 
@@ -724,14 +724,14 @@ ReservoirSampling(stream, k):
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Exact uniform sampling | Sequential — cannot parallelize easily |
+| Exact uniform sampling | Sequential â€” cannot parallelize easily |
 | O(k) space regardless of n | Requires k to be known in advance |
 | Only one pass over data | Each element needs one random number |
 | Works for infinite streams | Cannot produce weighted samples |
 
 **Edge Cases:**
 - **k = 1:** Simplifies to "keep current element with probability 1/i".
-- **k ≥ n:** Reservoir contains the entire stream.
+- **k â‰¥ n:** Reservoir contains the entire stream.
 - **Empty stream:** Return empty reservoir.
 
 **C++ Implementation:**
@@ -787,9 +787,9 @@ public class ReservoirSampling {
 |-----------|------|------|-------------|---------------|
 | Randomized Quicksort | Las Vegas | O(n log n) expected | Always | Random pivot avoids worst case |
 | Randomized Quickselect | Las Vegas | O(n) expected | Always | Random pivot gives linear expected time |
-| Miller-Rabin | Monte Carlo | O(k log^3 n) | Error ≤ 4^-k | Strong pseudoprime check, k rounds |
+| Miller-Rabin | Monte Carlo | O(k log^3 n) | Error â‰¤ 4^-k | Strong pseudoprime check, k rounds |
 | Karger Min-Cut | Monte Carlo | O(n^4 log n) | High probability | Random edge contraction |
-| Freivalds | Monte Carlo | O(n²) per trial | Error ≤ 2^-k | Random vector verification |
+| Freivalds | Monte Carlo | O(nÂ²) per trial | Error â‰¤ 2^-k | Random vector verification |
 | Reservoir Sampling | Exact | O(n) time, O(k) space | Exact | Replace with prob k/i |
 
 ### Quick Reference
@@ -799,10 +799,10 @@ public class ReservoirSampling {
 | **Las Vegas** | Always correct; expected time analysis; examples: quicksort, quickselect |
 | **Monte Carlo** | Bounded error; deterministic time; amplify via repetition; examples: Miller-Rabin, Karger |
 | **Quickselect** | Expected O(n); probability of worst case is 1/n! |
-| **Quicksort** | Expected O(n log n); ~1.39 n log₂ n comparisons |
-| **Miller-Rabin** | Error ≤ 4^-k; strong pseudoprime; deterministic for n &lt; 2^64 |
-| **Karger** | O(n² log n) trials; success prob ≥ 1 - 1/n |
-| **Freivalds** | O(n²) verification vs O(n³) compute; error &lt; 2^-k with k trials |
+| **Quicksort** | Expected O(n log n); ~1.39 n logâ‚‚ n comparisons |
+| **Miller-Rabin** | Error â‰¤ 4^-k; strong pseudoprime; deterministic for n &lt; 2^64 |
+| **Karger** | O(nÂ² log n) trials; success prob â‰¥ 1 - 1/n |
+| **Freivalds** | O(nÂ²) verification vs O(nÂ³) compute; error &lt; 2^-k with k trials |
 | **Reservoir** | Replace with prob k/i; O(k) space; exact uniform |
 | **Other Techniques** | Karger min-cut, Freivalds matrix check, birthday paradox |
 
@@ -835,7 +835,7 @@ public class ReservoirSampling {
 
 *Problem:* Generate a uniformly random permutation of an array.
 
-*Solution:* Fisher-Yates shuffle — iterate from the end, swapping each element with a random element before it (inclusive).
+*Solution:* Fisher-Yates shuffle â€” iterate from the end, swapping each element with a random element before it (inclusive).
 
 ```python
 import random
@@ -855,19 +855,19 @@ def fisher_yates(arr):
 
 **4. Karger Min-Cut Variations**
 
-- *Variation 1:* Karger-Stein algorithm — recursively run two trials and pick the better result. Reduces total time to O(n² log² n).
-- *Variation 2:* Weighted min-cut — edge probabilities proportional to weight for weighted graphs.
+- *Variation 1:* Karger-Stein algorithm â€” recursively run two trials and pick the better result. Reduces total time to O(nÂ² logÂ² n).
+- *Variation 2:* Weighted min-cut â€” edge probabilities proportional to weight for weighted graphs.
 
 **5. Reservoir Sampling Variations**
 
-- *Variation 1:* **Weighted reservoir sampling** — each element has weight wᵢ; sample proportional to weight.
-- *Variation 2:* **Distributed reservoir sampling** — sample independently per partition, then merge.
-- *Variation 3:* **Exponential reservoir** — for time-decayed sampling from streams.
+- *Variation 1:* **Weighted reservoir sampling** â€” each element has weight wáµ¢; sample proportional to weight.
+- *Variation 2:* **Distributed reservoir sampling** â€” sample independently per partition, then merge.
+- *Variation 3:* **Exponential reservoir** â€” for time-decayed sampling from streams.
 
 **6. Las Vegas vs Monte Carlo in Interview Questions**
 
-- *Question:* "Is Quickselect a Las Vegas or Monte Carlo algorithm?" — Las Vegas (always correct, random time).
-- *Question:* "Can you convert Miller-Rabin to Las Vegas?" — Only with a deterministic primality certificate (impossible for large n).
+- *Question:* "Is Quickselect a Las Vegas or Monte Carlo algorithm?" â€” Las Vegas (always correct, random time).
+- *Question:* "Can you convert Miller-Rabin to Las Vegas?" â€” Only with a deterministic primality certificate (impossible for large n).
 
 ---
 
@@ -907,12 +907,12 @@ def fisher_yates(arr):
 
 ### General Applications
 
-- **Monte Carlo simulation** — financial risk modeling, physics simulations.
-- **Randomized rounding** — approximation algorithms for integer programming.
-- **Skip lists** — randomized data structure for balanced BST-like performance.
-- **Randomized dimensionality reduction** — Johnson-Lindenstrauss lemma for ML.
-- **Property testing** — verify graph properties with sublinear queries.
-- **Fingerprinting** — Rabin-Karp string matching, polynomial identity testing.
+- **Monte Carlo simulation** â€” financial risk modeling, physics simulations.
+- **Randomized rounding** â€” approximation algorithms for integer programming.
+- **Skip lists** â€” randomized data structure for balanced BST-like performance.
+- **Randomized dimensionality reduction** â€” Johnson-Lindenstrauss lemma for ML.
+- **Property testing** â€” verify graph properties with sublinear queries.
+- **Fingerprinting** â€” Rabin-Karp string matching, polynomial identity testing.
 
 ---
 
@@ -1008,7 +1008,7 @@ bool millerRabin(int64_t n, int k) {
 ### Review Questions
 
 1. Distinguish between Monte Carlo and Las Vegas algorithms with examples.
-2. Why does randomized quicksort avoid the worst-case O(n²) behavior?
+2. Why does randomized quicksort avoid the worst-case O(nÂ²) behavior?
 3. What is the source of error in the Miller-Rabin test?
 4. How does reservoir sampling guarantee uniform distribution?
 5. Why is Karger's algorithm a Monte Carlo algorithm?
@@ -1044,11 +1044,11 @@ B) Las Vegas algorithms are always correct (running time is random); Monte Carlo
 - A) O(log n)
 - B) O(n)
 - C) O(n log n)
-- D) O(n²)
+- D) O(nÂ²)
 
 <details>
 <summary>Answer&lt;/summary&gt;
-B) O(n) expected. The recurrence T(n) ≤ T(3n/4) + O(n) solves to O(n).
+B) O(n) expected. The recurrence T(n) â‰¤ T(3n/4) + O(n) solves to O(n).
 </details>
 
 **Q3.** What is the source of error in the Miller-Rabin primality test?
@@ -1084,5 +1084,5 @@ B) At step i, the current element replaces a reservoir element with probability 
 
 <details>
 <summary>Answer&lt;/summary&gt;
-C) e/(e-1) ≈ 1.58, achieved by choosing a random threshold according to a specific exponential distribution.
+C) e/(e-1) â‰ˆ 1.58, achieved by choosing a random threshold according to a specific exponential distribution.
 </details>

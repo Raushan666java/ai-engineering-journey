@@ -1,4 +1,4 @@
-# Chapter 5: Game Playing and Adversarial Search
+﻿# Chapter 5: Game Playing and Adversarial Search
 
 **Previous:** [Chapter 5: Constraint Satisfaction Problems](05-csp.md) | **Next:** [Chapter 6: Logical Agents and Propositional Logic](06-logic.md)
 
@@ -9,16 +9,16 @@ By the conclusion of this chapter, the student will be able to: (1) formulate ga
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/05-game-playing/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/05-game-playing/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/05-game-playing/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/05-game-playing/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/05-game-playing/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/05-game-playing/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/05-game-playing/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/05-game-playing/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/05-game-playing/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/05-game-playing/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/05-game-playing/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/05-game-playing/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -27,16 +27,16 @@ By the conclusion of this chapter, the student will be able to: (1) formulate ga
 
 ## Why Game Playing in AI Matters
 
-**Real-World Analogy:** Imagine a chess grandmaster sitting across from a worthy opponent. The grandmaster doesn't just react to the last move — she visualizes 15–20 moves ahead, evaluating thousands of possible sequences, anticipating the opponent's best responses, and selecting the move that maximizes her winning chances. Every move says, "I've thought about what you'll do, and I'm ready."
+**Real-World Analogy:** Imagine a chess grandmaster sitting across from a worthy opponent. The grandmaster doesn't just react to the last move â€” she visualizes 15â€“20 moves ahead, evaluating thousands of possible sequences, anticipating the opponent's best responses, and selecting the move that maximizes her winning chances. Every move says, "I've thought about what you'll do, and I'm ready."
 
 This is the core of **adversarial search** in AI. Unlike standard search (pathfinding, puzzle solving), game playing has an **active opponent** who works against you. Game-playing algorithms model this competition formally, enabling AI systems to:
 
-- **Plan against adversaries** — from chess engines to military strategy simulators
-- **Handle uncertainty** — when dice rolls or hidden cards introduce chance
-- **Scale to massive spaces** — games like Go have more states than atoms in the universe
-- **Make real-time decisions** — when you have seconds, not hours, to decide
+- **Plan against adversaries** â€” from chess engines to military strategy simulators
+- **Handle uncertainty** â€” when dice rolls or hidden cards introduce chance
+- **Scale to massive spaces** â€” games like Go have more states than atoms in the universe
+- **Make real-time decisions** â€” when you have seconds, not hours, to decide
 
-The techniques here — minimax, alpha-beta pruning, MCTS — power everything from Deep Blue's 1997 chess victory to AlphaGo's 2016 Go triumph and modern poker AI like Pluribus.
+The techniques here â€” minimax, alpha-beta pruning, MCTS â€” power everything from Deep Blue's 1997 chess victory to AlphaGo's 2016 Go triumph and modern poker AI like Pluribus.
 
 ## Chapter at a Glance
 
@@ -44,7 +44,7 @@ The techniques here — minimax, alpha-beta pruning, MCTS — power everything f
 |---------|-----------|-----------|
 | Game Theory & Trees | State space, utility, terminal test | Game tree, zero-sum, perfect info |
 | Minimax Algorithm | Optimal play, MAX/MIN, depth-limited | Evaluation function, backup |
-| Alpha-Beta Pruning | α/β bounds, move ordering | Killer heuristic, iterative deepening |
+| Alpha-Beta Pruning | Î±/Î² bounds, move ordering | Killer heuristic, iterative deepening |
 | Games of Chance | Expectiminimax, chance nodes | Stochastic games, expected value |
 | MCTS | Selection, expansion, simulation, backprop | UCT, exploration constant |
 | Imperfect Information | Belief states, determinization | Nash equilibrium, CFR |
@@ -70,15 +70,15 @@ flowchart LR
 ### Real-World Analogy
 
 
-Think of a chessboard at the start of a match. The board is the **state**, the rules define legal **actions**, each move transitions to a new **state**, and checkmate is the **terminal** condition. The entire set of possible move sequences — every game that could ever be played — forms a tree rooted at the starting position. This tree is the **game tree**, and navigating it intelligently is the central challenge of game-playing AI.
+Think of a chessboard at the start of a match. The board is the **state**, the rules define legal **actions**, each move transitions to a new **state**, and checkmate is the **terminal** condition. The entire set of possible move sequences â€” every game that could ever be played â€” forms a tree rooted at the starting position. This tree is the **game tree**, and navigating it intelligently is the central challenge of game-playing AI.
 
 ### Formal Definition of a Game
 
 
 A **game** is formally defined by six components:
 
-- **State space** $\mathcal{S}$; initial state $s_0$ — the board position
-- **Player function** $\text{Player}(s)$ indicating whose turn it is — MAX or MIN
+- **State space** $\mathcal{S}$; initial state $s_0$ â€” the board position
+- **Player function** $\text{Player}(s)$ indicating whose turn it is â€” MAX or MIN
 - **Actions** $\text{Actions}(s)$, the set of legal moves from state $s$
 - **Transition model** $\text{Result}(s, a)$, the state after taking action $a$
 - **Terminal test** $\text{Terminal}(s)$, determining whether the game has ended
@@ -86,7 +86,7 @@ A **game** is formally defined by six components:
 
 The **game tree** represents all possible play sequences. The root is the initial state; edges represent moves; leaves are terminal states with associated utilities.
 
-> **One-Sentence Takeaway:** A game is formally defined by its state space, player function, actions, transition model, terminal test, and utility function — forming a game tree of all possible play sequences.
+> **One-Sentence Takeaway:** A game is formally defined by its state space, player function, actions, transition model, terminal test, and utility function â€” forming a game tree of all possible play sequences.
 
 ### 5.1.1 Types of Games
 
@@ -107,11 +107,11 @@ Games in AI are classified along three axes:
 
 | Game | Branching Factor (b) | Game Depth (d) | Approximate Tree Size | AI Method |
 |------|:---:|:---:|:---:|:---:|
-| Tic-Tac-Toe | ~4 | 9 | ~10⁵ | Full minimax |
-| Checkers | ~10 | ~70 | ~10⁷⁰ | Alpha-beta + eval |
-| Chess | ~35 | ~100 | ~10¹⁵⁴ | Alpha-beta + DNN eval |
-| Go (19×19) | ~250 | ~150 | ~10³⁶⁰ | MCTS + DNN |
-| Poker (no-limit) | ~10⁴ | Variable | N/A | CFR / MCTS |
+| Tic-Tac-Toe | ~4 | 9 | ~10âµ | Full minimax |
+| Checkers | ~10 | ~70 | ~10â·â° | Alpha-beta + eval |
+| Chess | ~35 | ~100 | ~10Â¹âµâ´ | Alpha-beta + DNN eval |
+| Go (19Ã—19) | ~250 | ~150 | ~10Â³â¶â° | MCTS + DNN |
+| Poker (no-limit) | ~10â´ | Variable | N/A | CFR / MCTS |
 
 ---
 
@@ -120,16 +120,16 @@ Games in AI are classified along three axes:
 ### Real-World Analogy
 
 
-A chess grandmaster doesn't just ask "what's my best move?" — she asks "if I move here, what will my opponent do?" then "if my opponent does that, what can I do next?" This recursive reasoning continues until the end of the game is reached or the player runs out of time. Minimax formalizes this: **MAX chooses the move leading to the highest-value position assuming MIN will always choose the move that leaves MAX with the lowest-value position.**
+A chess grandmaster doesn't just ask "what's my best move?" â€” she asks "if I move here, what will my opponent do?" then "if my opponent does that, what can I do next?" This recursive reasoning continues until the end of the game is reached or the player runs out of time. Minimax formalizes this: **MAX chooses the move leading to the highest-value position assuming MIN will always choose the move that leaves MAX with the lowest-value position.**
 
 ### Algorithm Steps
 
 
-1. **Check for terminal state** — if the current state is terminal, return its utility value
-2. **Determine the current player** — if it's MAX's turn, compute the max over all successor states; if it's MIN's turn, compute the min
-3. **Generate all legal actions** — enumerate Actions(state) for the current player
-4. **Evaluate each successor** — recursively call MINIMAX on Result(state, a) for each action
-5. **Select extremum** — MAX picks the maximum value; MIN picks the minimum value
+1. **Check for terminal state** â€” if the current state is terminal, return its utility value
+2. **Determine the current player** â€” if it's MAX's turn, compute the max over all successor states; if it's MIN's turn, compute the min
+3. **Generate all legal actions** â€” enumerate Actions(state) for the current player
+4. **Evaluate each successor** â€” recursively call MINIMAX on Result(state, a) for each action
+5. **Select extremum** â€” MAX picks the maximum value; MIN picks the minimum value
 6. **Return the value** (or the action associated with the optimal value)
 
 ### Pseudocode
@@ -137,27 +137,27 @@ A chess grandmaster doesn't just ask "what's my best move?" — she asks "if I m
 
 ```
 function MINIMAX(state) returns action
-    best_action ← null
-    best_value ← -∞
+    best_action â† null
+    best_value â† -âˆž
     for each a in ACTIONS(state) do
-        value ← MIN-VALUE(RESULT(state, a))
+        value â† MIN-VALUE(RESULT(state, a))
         if value > best_value then
-            best_value ← value
-            best_action ← a
+            best_value â† value
+            best_action â† a
     return best_action
 
 function MAX-VALUE(state) returns value
     if TERMINAL(state) then return UTILITY(state)
-    v ← -∞
+    v â† -âˆž
     for each a in ACTIONS(state) do
-        v ← MAX(v, MIN-VALUE(RESULT(state, a)))
+        v â† MAX(v, MIN-VALUE(RESULT(state, a)))
     return v
 
 function MIN-VALUE(state) returns value
     if TERMINAL(state) then return UTILITY(state)
-    v ← +∞
+    v â† +âˆž
     for each a in ACTIONS(state) do
-        v ← MIN(v, MAX-VALUE(RESULT(state, a)))
+        v â† MIN(v, MAX-VALUE(RESULT(state, a)))
     return v
 ```
 
@@ -167,7 +167,7 @@ function MIN-VALUE(state) returns value
 Consider this game tree. The MAX player moves first, followed by MIN:
 
 ```
-        MAX ── [A]
+        MAX â”€â”€ [A]
               /    \
          MIN [B]  [C]
             / \    / \
@@ -284,19 +284,19 @@ def tic_tac_toe_example():
 
 **Time Complexity:** $O(b^d)$ where $b$ is the branching factor and $d$ is the maximum depth of the game tree.
 
-**Why $O(b^d)$?** At the root, we evaluate up to $b$ children. Each child leads to another layer of up to $b$ grandchildren, and so on for $d$ levels. This exponential growth makes full minimax impractical for games like chess ($b \approx 35$, $d \approx 100$ → $35^{100}$ states).
+**Why $O(b^d)$?** At the root, we evaluate up to $b$ children. Each child leads to another layer of up to $b$ grandchildren, and so on for $d$ levels. This exponential growth makes full minimax impractical for games like chess ($b \approx 35$, $d \approx 100$ â†’ $35^{100}$ states).
 
-**Space Complexity:** $O(b \times d)$ — the algorithm is depth-first, storing at most $b$ branches at each of $d$ levels on the call stack.
+**Space Complexity:** $O(b \times d)$ â€” the algorithm is depth-first, storing at most $b$ branches at each of $d$ levels on the call stack.
 
 ### Advantages & Disadvantages
 
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Produces **optimal play** against a perfect opponent | **Exponential time** — infeasible for deep games |
+| Produces **optimal play** against a perfect opponent | **Exponential time** â€” infeasible for deep games |
 | Simple, provably correct recursion | Cannot handle **chance** (dice, shuffled cards) |
-| No randomness — deterministic and stable | Requires full game tree — impossible for Go or chess |
-| Foundation for all advanced game algorithms | **Memoryless** — revisits same states via different paths |
+| No randomness â€” deterministic and stable | Requires full game tree â€” impossible for Go or chess |
+| Foundation for all advanced game algorithms | **Memoryless** â€” revisits same states via different paths |
 | Works for any two-player zero-sum game | Pure version cannot **stop early** for time-limited play |
 
 ### Depth-Limited Minimax & Evaluation Functions
@@ -324,7 +324,7 @@ The evaluation function `EVAL(state)` estimates the utility without exploring to
 |-----------|-------------|----------|
 | **Terminal state at root** | Game already ended | Return utility immediately, no actions |
 | **Draw / stalemate** | No winner | Utility = 0 (or small draw-preferred value) |
-| **Time limit exceeded** | Cannot complete search | Use iterative deepening — search depth 1, 2, 3... until time runs out |
+| **Time limit exceeded** | Cannot complete search | Use iterative deepening â€” search depth 1, 2, 3... until time runs out |
 | **No legal actions** | Player is stuck | Treat as terminal with utility = 0 or opponent-win |
 | **Repetition detection** | Same state reached via different sequences | Store in transposition table; assign draw if repeated |
 
@@ -335,47 +335,47 @@ The evaluation function `EVAL(state)` estimates the utility without exploring to
 ### Real-World Analogy
 
 
-A detective investigating a crime doesn't need to read every page of every document — once she finds conclusive evidence of guilt, she stops reading and moves on. Alpha-beta pruning does exactly this: **if a branch of the game tree is provably worse than something already found, it is discarded without full exploration.** It's the difference between reading every book in the library cover-to-cover versus scanning the table of contents and putting most back on the shelf.
+A detective investigating a crime doesn't need to read every page of every document â€” once she finds conclusive evidence of guilt, she stops reading and moves on. Alpha-beta pruning does exactly this: **if a branch of the game tree is provably worse than something already found, it is discarded without full exploration.** It's the difference between reading every book in the library cover-to-cover versus scanning the table of contents and putting most back on the shelf.
 
 ### Algorithm Steps
 
 
-1. **Initialize α = -∞, β = +∞** at the root
-2. At **MAX nodes**, update α to the maximum value found so far; if α ≥ β, prune (return α immediately)
-3. At **MIN nodes**, update β to the minimum value found so far; if β ≤ α, prune (return β immediately)
-4. **Recurse** depth-first, passing the current α and β to children
-5. A child node receives its **parent's α and β** and may tighten them based on its own evaluation
+1. **Initialize Î± = -âˆž, Î² = +âˆž** at the root
+2. At **MAX nodes**, update Î± to the maximum value found so far; if Î± â‰¥ Î², prune (return Î± immediately)
+3. At **MIN nodes**, update Î² to the minimum value found so far; if Î² â‰¤ Î±, prune (return Î² immediately)
+4. **Recurse** depth-first, passing the current Î± and Î² to children
+5. A child node receives its **parent's Î± and Î²** and may tighten them based on its own evaluation
 
 ### Pseudocode
 
 
 ```
 function ALPHA-BETA-SEARCH(state) returns action
-    best_action ← null
-    best_value ← -∞
+    best_action â† null
+    best_value â† -âˆž
     for each a in ACTIONS(state) do
-        value ← MIN-VALUE(RESULT(state, a), -∞, +∞)
+        value â† MIN-VALUE(RESULT(state, a), -âˆž, +âˆž)
         if value > best_value then
-            best_value ← value
-            best_action ← a
+            best_value â† value
+            best_action â† a
     return best_action
 
-function MAX-VALUE(state, α, β) returns value
+function MAX-VALUE(state, Î±, Î²) returns value
     if TERMINAL(state) then return UTILITY(state)
-    v ← -∞
+    v â† -âˆž
     for each a in ACTIONS(state) do
-        v ← MAX(v, MIN-VALUE(RESULT(state, a), α, β))
-        if v ≥ β then return v     // β prune
-        α ← MAX(α, v)
+        v â† MAX(v, MIN-VALUE(RESULT(state, a), Î±, Î²))
+        if v â‰¥ Î² then return v     // Î² prune
+        Î± â† MAX(Î±, v)
     return v
 
-function MIN-VALUE(state, α, β) returns value
+function MIN-VALUE(state, Î±, Î²) returns value
     if TERMINAL(state) then return UTILITY(state)
-    v ← +∞
+    v â† +âˆž
     for each a in ACTIONS(state) do
-        v ← MIN(v, MAX-VALUE(RESULT(state, a), α, β))
-        if v ≤ α then return v     // α prune
-        β ← MIN(β, v)
+        v â† MIN(v, MAX-VALUE(RESULT(state, a), Î±, Î²))
+        if v â‰¤ Î± then return v     // Î± prune
+        Î² â† MIN(Î², v)
     return v
 ```
 
@@ -385,7 +385,7 @@ function MIN-VALUE(state, α, β) returns value
 Consider the same tree, evaluated left-to-right:
 
 ```
-        MAX ── [A]
+        MAX â”€â”€ [A]
               /    \
          MIN [B]  [C]
             / \    / \
@@ -394,42 +394,42 @@ Consider the same tree, evaluated left-to-right:
           3   5 6  2 9 1
 ```
 
-**Step 1: Evaluate D (MAX under B, α=-∞, β=+∞)**
+**Step 1: Evaluate D (MAX under B, Î±=-âˆž, Î²=+âˆž)**
 ```
 MAX-VALUE(D) = max(3, 5) = 3
-Now B has candidate = 3. At MIN node B: α=-∞, β=3
+Now B has candidate = 3. At MIN node B: Î±=-âˆž, Î²=3
 ```
 
-**Step 2: Enter E with α=-∞, β=3**
+**Step 2: Enter E with Î±=-âˆž, Î²=3**
 ```
 MAX-VALUE(E) evaluates child: value = 6
-6 ≥ β (6 ≥ 3) → PRUNE! Return 6 immediately.
+6 â‰¥ Î² (6 â‰¥ 3) â†’ PRUNE! Return 6 immediately.
 Because MIN at B already has a candidate value 3, and E returns 6
 (the MAX would prefer 6 over 3), MIN will never choose this branch.
 ```
 
 Trace table:
 
-| Node | α (entering) | β (entering) | Children Evaluated | Result | Pruned? |
+| Node | Î± (entering) | Î² (entering) | Children Evaluated | Result | Pruned? |
 |------|:---:|:---:|:---|:---:|:---:|
-| D (MAX) | -∞ | +∞ | 3, 5 | 3 | No |
-| B (MIN) | -∞ | +∞ | D=3 | — | No |
-| E (MAX) | -∞ | **3** | [6 ≥ 3 → prune] | 6 (pruned) | **Yes** |
-| B after E | -∞ | 3 | (pruned) | 3 | — |
-| F (MAX) | -∞ | +∞ | 2 | 2 | No |
-| G (MAX) | -∞ | +∞ | 9, 1 | 1 | No |
-| C (MIN) | -∞ | +∞ | F=2, G=1 | 1 | No |
-| A (MAX) | -∞ | +∞ | B=3, C=1 | **3** | — |
+| D (MAX) | -âˆž | +âˆž | 3, 5 | 3 | No |
+| B (MIN) | -âˆž | +âˆž | D=3 | â€” | No |
+| E (MAX) | -âˆž | **3** | [6 â‰¥ 3 â†’ prune] | 6 (pruned) | **Yes** |
+| B after E | -âˆž | 3 | (pruned) | 3 | â€” |
+| F (MAX) | -âˆž | +âˆž | 2 | 2 | No |
+| G (MAX) | -âˆž | +âˆž | 9, 1 | 1 | No |
+| C (MIN) | -âˆž | +âˆž | F=2, G=1 | 1 | No |
+| A (MAX) | -âˆž | +âˆž | B=3, C=1 | **3** | â€” |
 
-**Result:** Only 5 leaf nodes evaluated (vs. 7 without pruning). Alpha-beta selects action leading to B with value 3 — wait, this differs from the pure minimax result of 6! That's because with left-to-right evaluation, the pruning at E changed the result at B.
+**Result:** Only 5 leaf nodes evaluated (vs. 7 without pruning). Alpha-beta selects action leading to B with value 3 â€” wait, this differs from the pure minimax result of 6! That's because with left-to-right evaluation, the pruning at E changed the result at B.
 
-Actually, let me re-examine. At B (MIN): D gave 3. Then E was pruned (returned 6 immediately because child value 6 ≥ β=3). So B = min(3, 6) = 3. So B=3. At A (MAX): B=3, C=1 → A=3.
+Actually, let me re-examine. At B (MIN): D gave 3. Then E was pruned (returned 6 immediately because child value 6 â‰¥ Î²=3). So B = min(3, 6) = 3. So B=3. At A (MAX): B=3, C=1 â†’ A=3.
 
-But pure minimax gave A=6 (since B=6). What happened? The pruning changed the value at E. Actually no — E returns 6 (pruned), and B = min(D=3, E=6) = 3. But in pure minimax, E would have been evaluated as min(6) = 6, and B = max(D=3, E=6) = 6.
+But pure minimax gave A=6 (since B=6). What happened? The pruning changed the value at E. Actually no â€” E returns 6 (pruned), and B = min(D=3, E=6) = 3. But in pure minimax, E would have been evaluated as min(6) = 6, and B = max(D=3, E=6) = 6.
 
 **The issue:** Alpha-beta with a poor move ordering (left-to-right with no move ordering) can prune suboptimally. Wait, actually alpha-beta should always produce the same result as minimax. Let me re-check.
 
-B is a MIN node. D = max(3,5) = 3. B's current β = min(+∞, 3) = 3. Now E is called with α=-∞, β=3. E evaluates its child: 6. At MAX node, v=6, then v ≥ β (6 ≥ 3) → return 6. But this is wrong! At MAX node, the prune condition is v ≥ β. v=6, β=3 → return 6.
+B is a MIN node. D = max(3,5) = 3. B's current Î² = min(+âˆž, 3) = 3. Now E is called with Î±=-âˆž, Î²=3. E evaluates its child: 6. At MAX node, v=6, then v â‰¥ Î² (6 â‰¥ 3) â†’ return 6. But this is wrong! At MAX node, the prune condition is v â‰¥ Î². v=6, Î²=3 â†’ return 6.
 
 B gets child values 3 and 6, so B = min(3, 6) = 3.
 
@@ -437,7 +437,7 @@ But pure minimax: D = max(3,5) = 3. E = min(6, ... wait, E is a MAX node? Let me
 
 Looking at the tree:
 ```
-        MAX ── [A]
+        MAX â”€â”€ [A]
               /    \
          MIN [B]  [C]
             / \    / \
@@ -477,36 +477,36 @@ Actually, looking at this more carefully, in the tree I need to decide whether t
 - Level 2: MAX (D, E, F, G)
 - Level 3: leaves
 
-So D children = 3, 5. D = max(3,5) = 3. ✓
-E child = 6. E = max(6) = 6. ✓
-F child = 2. F = max(2) = 2. ✓
-G children = 9, 1. G = max(9,1) = 9. ✓
+So D children = 3, 5. D = max(3,5) = 3. âœ“
+E child = 6. E = max(6) = 6. âœ“
+F child = 2. F = max(2) = 2. âœ“
+G children = 9, 1. G = max(9,1) = 9. âœ“
 
-B = min(3, 6) = 3. ✓
-C = min(2, 9) = 2. ✓
-A = max(3, 2) = 3. ✓
+B = min(3, 6) = 3. âœ“
+C = min(2, 9) = 2. âœ“
+A = max(3, 2) = 3. âœ“
 
 And with alpha-beta (left-to-right):
-- D: α=-∞, β=+∞, v = max(3,5) = 3. B's β = min(+∞, 3) = 3.
-- E: α=-∞, β=3, evaluates child = 6. v = 6 ≥ β=3 → PRUNE. Return 6.
+- D: Î±=-âˆž, Î²=+âˆž, v = max(3,5) = 3. B's Î² = min(+âˆž, 3) = 3.
+- E: Î±=-âˆž, Î²=3, evaluates child = 6. v = 6 â‰¥ Î²=3 â†’ PRUNE. Return 6.
 - B = min(3, 6) = 3. Now C...
-- F: α=-∞, β=+∞ (fresh from root). v = 2. C's β = min(+∞, 2) = 2.
-- G: α=-∞, β=2, evaluates child = 9. v = 9 ≥ β=2 → PRUNE. Return 9.
+- F: Î±=-âˆž, Î²=+âˆž (fresh from root). v = 2. C's Î² = min(+âˆž, 2) = 2.
+- G: Î±=-âˆž, Î²=2, evaluates child = 9. v = 9 â‰¥ Î²=2 â†’ PRUNE. Return 9.
 - C = min(2, 9) = 2.
 - A = max(3, 2) = 3.
 
-Both give 3. Result with pruning also gives 3. So α,β = 3.
+Both give 3. Result with pruning also gives 3. So Î±,Î² = 3.
 
-Actually I messed up the G pruning. G is MAX. v=9 first child value. v ≥ β (9 ≥ 2) → prune. Return 9. C = min(F=2, G=9) = 2. Correct.
+Actually I messed up the G pruning. G is MAX. v=9 first child value. v â‰¥ Î² (9 â‰¥ 2) â†’ prune. Return 9. C = min(F=2, G=9) = 2. Correct.
 
-A = max(B=3, C=2) = 3. Same as pure minimax. ✓
+A = max(B=3, C=2) = 3. Same as pure minimax. âœ“
 
 Now for the dry run with *optimal move ordering*:
 
 D (value=3) is evaluated first. Then E (value=6) but gets pruned.
 Better ordering: process best moves first. If E was evaluated before D:
-- E: α=-∞, β=+∞, v = max(6) = 6. B's β = min(+∞, 6) = 6.
-- D: α=-∞, β=6, v = max(3, 5) = 3. No pruning (3 &lt; 6).
+- E: Î±=-âˆž, Î²=+âˆž, v = max(6) = 6. B's Î² = min(+âˆž, 6) = 6.
+- D: Î±=-âˆž, Î²=6, v = max(3, 5) = 3. No pruning (3 &lt; 6).
 - B = min(6, 3) = 3.
 
 Hmm, with this ordering we get 3 leaf evaluations vs 4 before. Not a huge difference for this tiny tree.
@@ -516,7 +516,7 @@ Let me revise my dry run to keep it accurate. I'll use a cleaner tree where the 
 Let me use a different tree for the alpha-beta example:
 
 ```
-        MAX ── [A]
+        MAX â”€â”€ [A]
               /    \
          MIN [B]  [C]
             /    / | \
@@ -540,47 +540,47 @@ Pure minimax:
 - A = max(3, 4) = 4
 
 Alpha-beta left-to-right:
-- B enters: α=-∞, β=+∞ from root. D (MAX): v=3. β = min(+∞,3) = 3 at B.
-- C enters: α=3, β=+∞ (since B returned 3, A has candidate v=3).
-- E (under C, with α=3, β=+∞): first child = 2. v=2. α = max(3,2) = 3. Second child = 4. v=4. v ≥ β? 4 ≥ +∞? No. α = max(3,4) = 4. Return 4. C's candidate = 4. β = min(+∞, 4) = 4.
-- F (under C, α=3, β=4): v = 8. v ≥ β (8 ≥ 4) → PRUNE. Return 8.
-- G (under C, α=3, β=4): v = 5. v ≥ β (5 ≥ 4) → PRUNE. Return 5.
-Wait, that's not right. After F returns 8, C already has candidate min candidate = min(4, 8) = 4... actually C is MIN. So C's β should be updated after each child.
+- B enters: Î±=-âˆž, Î²=+âˆž from root. D (MAX): v=3. Î² = min(+âˆž,3) = 3 at B.
+- C enters: Î±=3, Î²=+âˆž (since B returned 3, A has candidate v=3).
+- E (under C, with Î±=3, Î²=+âˆž): first child = 2. v=2. Î± = max(3,2) = 3. Second child = 4. v=4. v â‰¥ Î²? 4 â‰¥ +âˆž? No. Î± = max(3,4) = 4. Return 4. C's candidate = 4. Î² = min(+âˆž, 4) = 4.
+- F (under C, Î±=3, Î²=4): v = 8. v â‰¥ Î² (8 â‰¥ 4) â†’ PRUNE. Return 8.
+- G (under C, Î±=3, Î²=4): v = 5. v â‰¥ Î² (5 â‰¥ 4) â†’ PRUNE. Return 5.
+Wait, that's not right. After F returns 8, C already has candidate min candidate = min(4, 8) = 4... actually C is MIN. So C's Î² should be updated after each child.
 
 Let me redo:
 
-A calls MIN-VALUE(B, -∞, +∞). B calls MAX-VALUE(D, -∞, +∞).
+A calls MIN-VALUE(B, -âˆž, +âˆž). B calls MAX-VALUE(D, -âˆž, +âˆž).
 - D: v = max(3) = 3. Return 3.
-- B: has child value 3. v = 3. β = min(+∞, 3) = 3. Return 3.
-- A: has candidate 3. α = max(-∞, 3) = 3.
+- B: has child value 3. v = 3. Î² = min(+âˆž, 3) = 3. Return 3.
+- A: has candidate 3. Î± = max(-âˆž, 3) = 3.
 
-A calls MIN-VALUE(C, α=3, β=+∞).
-- C calls MAX-VALUE(E, α=3, β=+∞).
-  - E: first child = 2. v = 2. α = max(3,2) = 3. (no change)
-  - E: second child = 4. v = 4. α = max(3,4) = 4. Return 4.
-- C: candidate = 4. v = 4. β = min(+∞, 4) = 4.
-- C calls MAX-VALUE(F, α=3, β=4).
-  - F: v = 8. v ≥ β (8 ≥ 4) → PRUNE. Return 8.
-- C: candidate = min(4, 8) = 4. β = min(4, 8) = 4. (no change since min)
-- C calls MAX-VALUE(G, α=3, β=4).
-  - G: first child = 5. v = 5. v ≥ β (5 ≥ 4) → PRUNE. Return 5.
+A calls MIN-VALUE(C, Î±=3, Î²=+âˆž).
+- C calls MAX-VALUE(E, Î±=3, Î²=+âˆž).
+  - E: first child = 2. v = 2. Î± = max(3,2) = 3. (no change)
+  - E: second child = 4. v = 4. Î± = max(3,4) = 4. Return 4.
+- C: candidate = 4. v = 4. Î² = min(+âˆž, 4) = 4.
+- C calls MAX-VALUE(F, Î±=3, Î²=4).
+  - F: v = 8. v â‰¥ Î² (8 â‰¥ 4) â†’ PRUNE. Return 8.
+- C: candidate = min(4, 8) = 4. Î² = min(4, 8) = 4. (no change since min)
+- C calls MAX-VALUE(G, Î±=3, Î²=4).
+  - G: first child = 5. v = 5. v â‰¥ Î² (5 â‰¥ 4) â†’ PRUNE. Return 5.
 - C: candidate = min(4, 5) = 4. Return 4.
 
-A: α = max(3, 4) = 4. Return 4.
+A: Î± = max(3, 4) = 4. Return 4.
 
 **Nodes evaluated:** D (1 leaf), E (2 leaves), F (pruned after 1 leaf: 8), G (pruned after 1 leaf: 5). Total: **4 leaf evaluations** vs 7 without pruning.
 
 Now let me revise the dry run trace:
 
-| Node | α (entering) | β (entering) | Children Evaluated | Result | Pruned? |
+| Node | Î± (entering) | Î² (entering) | Children Evaluated | Result | Pruned? |
 |------|:---:|:---:|:---|:---:|:---:|
-| D (MAX) | -∞ | +∞ | 3 | 3 | No |
-| B (MIN) | -∞ | +∞ | D=3 | 3 | No |
-| E (MAX) | 3 | +∞ | 2, 4 | 4 | No |
-| C → F (MAX) | 3 | **4** | 8 | (pruned) | **Yes — 8 ≥ 4** |
-| C → G (MAX) | 3 | **4** | 5 | (pruned) | **Yes — 5 ≥ 4** |
-| C after prunes | 3 | 4 | E=4, F:pruned, G:pruned | 4 | — |
-| A (MAX) | -∞ | +∞ | B=3, C=4 | **4** | — |
+| D (MAX) | -âˆž | +âˆž | 3 | 3 | No |
+| B (MIN) | -âˆž | +âˆž | D=3 | 3 | No |
+| E (MAX) | 3 | +âˆž | 2, 4 | 4 | No |
+| C â†’ F (MAX) | 3 | **4** | 8 | (pruned) | **Yes â€” 8 â‰¥ 4** |
+| C â†’ G (MAX) | 3 | **4** | 5 | (pruned) | **Yes â€” 5 â‰¥ 4** |
+| C after prunes | 3 | 4 | E=4, F:pruned, G:pruned | 4 | â€” |
+| A (MAX) | -âˆž | +âˆž | B=3, C=4 | **4** | â€” |
 
 ### Python Implementation
 
@@ -601,7 +601,7 @@ def alphabeta(state, depth, alpha, beta, is_maximizing,
             value = max(value, alphabeta(next_state, depth + 1, alpha, beta, False,
                                         terminal_fn, utility_fn, actions_fn, result_fn))
             if value >= beta:
-                return value  # β prune
+                return value  # Î² prune
             alpha = max(alpha, value)
         return value
     else:
@@ -611,7 +611,7 @@ def alphabeta(state, depth, alpha, beta, is_maximizing,
             value = min(value, alphabeta(next_state, depth + 1, alpha, beta, True,
                                         terminal_fn, utility_fn, actions_fn, result_fn))
             if value <= alpha:
-                return value  # α prune
+                return value  # Î± prune
             beta = min(beta, value)
         return value
 
@@ -634,22 +634,22 @@ def best_action_alphabeta(state, utility_fn, terminal_fn, actions_fn, result_fn)
 
 
 **Time Complexity:**
-- Best case (optimal move ordering): $O(b^{d/2})$ — doubling the searchable depth
+- Best case (optimal move ordering): $O(b^{d/2})$ â€” doubling the searchable depth
 - Average case: $O(b^{3d/4})$
-- Worst case (worst ordering): $O(b^d)$ — no improvement over minimax
+- Worst case (worst ordering): $O(b^d)$ â€” no improvement over minimax
 
-**Why $O(b^{d/2})$ in the best case?** When the best moves are examined first, the pruning is maximally effective. At each MIN node, once the first child returns a value, all remaining children are pruned if the MIN's best-so-far is ≤ α (which was set by MAX's best-so-far). This effectively cuts the effective branching factor from $b$ to $\sqrt{b}$, halving the search depth in the exponent.
+**Why $O(b^{d/2})$ in the best case?** When the best moves are examined first, the pruning is maximally effective. At each MIN node, once the first child returns a value, all remaining children are pruned if the MIN's best-so-far is â‰¤ Î± (which was set by MAX's best-so-far). This effectively cuts the effective branching factor from $b$ to $\sqrt{b}$, halving the search depth in the exponent.
 
-**Space Complexity:** $O(b \times d)$ — same depth-first traversal as minimax, with two extra scalar parameters (α, β) per call.
+**Space Complexity:** $O(b \times d)$ â€” same depth-first traversal as minimax, with two extra scalar parameters (Î±, Î²) per call.
 
 ### Advantages & Disadvantages
 
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| **Preserves optimality** — same result as minimax | Performance depends **heavily on move ordering** |
+| **Preserves optimality** â€” same result as minimax | Performance depends **heavily on move ordering** |
 | Best case **doubles searchable depth** | Worst case gives **zero benefit** |
-| Simple to implement — just two extra parameters | Still exponential — cannot handle Go-sized branching |
+| Simple to implement â€” just two extra parameters | Still exponential â€” cannot handle Go-sized branching |
 | No memory overhead for pruning | Doesn't help with **stochastic** or **imperfect info** games |
 | Works with any evaluation function | Transposition tables add complexity |
 
@@ -658,7 +658,7 @@ def best_action_alphabeta(state, utility_fn, terminal_fn, actions_fn, result_fn)
 
 Pruning efficiency depends critically on the order moves are examined. The three key heuristics:
 
-- **Killer heuristic:** Maintain a table of "killer moves" that caused prunings at each depth — try these moves first
+- **Killer heuristic:** Maintain a table of "killer moves" that caused prunings at each depth â€” try these moves first
 - **History heuristic:** Track how often each move has caused prunings across the entire search
 - **Iterative deepening:** Search to depth $d$, then order moves at depth $d+1$ by their values from depth $d$
 
@@ -667,7 +667,7 @@ Pruning efficiency depends critically on the order moves are examined. The three
 
 | Edge Case | Description | Handling |
 |-----------|-------------|----------|
-| **α or β overflow** | Values exceed integer bounds | Use ±∞ sentinel (math.inf in Python) |
+| **Î± or Î² overflow** | Values exceed integer bounds | Use Â±âˆž sentinel (math.inf in Python) |
 | **No pruning possible** | Worst-case ordering (opponent's best move last) | Fallback to pure minimax complexity |
 | **Evaluation function dominates** | Deep search is too slow | Limit depth; use better eval function |
 | **Transpositions** | Same state via different move orders | Zobrist hashing transposition table |
@@ -680,17 +680,17 @@ Pruning efficiency depends critically on the order moves are examined. The three
 ### Real-World Analogy
 
 
-A backgammon player doesn't know what numbers the dice will show, but they know the probability distribution — each of the 36 die-roll pairs has a known chance. Good play means averaging over all possibilities: "if I move here, there's a 1/36 chance my opponent gets a double, a 5/36 chance I block their runner, etc." **Expectiminimax** formalizes this by adding **chance nodes** where the value is the weighted average (expectation) over all random outcomes.
+A backgammon player doesn't know what numbers the dice will show, but they know the probability distribution â€” each of the 36 die-roll pairs has a known chance. Good play means averaging over all possibilities: "if I move here, there's a 1/36 chance my opponent gets a double, a 5/36 chance I block their runner, etc." **Expectiminimax** formalizes this by adding **chance nodes** where the value is the weighted average (expectation) over all random outcomes.
 
 ### Algorithm Steps
 
 
-1. **Check for terminal state** — return utility if the game is over
+1. **Check for terminal state** â€” return utility if the game is over
 2. **Determine node type:**
    - **MAX node:** take the maximum of successor values
    - **MIN node:** take the minimum of successor values
    - **CHANCE node:** compute the weighted sum (expectation) over all possible outcomes
-3. **Expand successors** — for chance nodes, generate all probabilistic outcomes with their probabilities
+3. **Expand successors** â€” for chance nodes, generate all probabilistic outcomes with their probabilities
 4. **Recurse** down the tree
 5. **Propagate values upward** using max, min, or weighted sum depending on node type
 
@@ -702,21 +702,21 @@ function EXPECTIMINIMAX(state) returns value
     if TERMINAL(state) then return UTILITY(state)
     
     if PLAYER(state) = MAX then
-        v ← -∞
+        v â† -âˆž
         for each a in ACTIONS(state) do
-            v ← MAX(v, EXPECTIMINIMAX(RESULT(state, a)))
+            v â† MAX(v, EXPECTIMINIMAX(RESULT(state, a)))
         return v
     
     if PLAYER(state) = MIN then
-        v ← +∞
+        v â† +âˆž
         for each a in ACTIONS(state) do
-            v ← MIN(v, EXPECTIMINIMAX(RESULT(state, a)))
+            v â† MIN(v, EXPECTIMINIMAX(RESULT(state, a)))
         return v
     
     if PLAYER(state) = CHANCE then
-        v ← 0
+        v â† 0
         for each outcome o in OUTCOMES(state) do
-            v ← v + PROBABILITY(o) × EXPECTIMINIMAX(RESULT(state, o))
+            v â† v + PROBABILITY(o) Ã— EXPECTIMINIMAX(RESULT(state, o))
         return v
 ```
 
@@ -726,7 +726,7 @@ function EXPECTIMINIMAX(state) returns value
 Consider a simple game where MAX moves, then CHANCE rolls a die, then MIN moves:
 
 ```
-         MAX ── [A]
+         MAX â”€â”€ [A]
                /    \
           CHANCE [B] [C]
              / \     / \
@@ -735,8 +735,8 @@ Consider a simple game where MAX moves, then CHANCE rolls a die, then MIN moves:
              4  9    5  2
 ```
 
-Dice probabilities: P(B→D) = 0.6, P(B→E) = 0.4
-P(C→F) = 0.3, P(C→G) = 0.7
+Dice probabilities: P(Bâ†’D) = 0.6, P(Bâ†’E) = 0.4
+P(Câ†’F) = 0.3, P(Câ†’G) = 0.7
 
 **Step 1: Evaluate D (MIN)**
 ```
@@ -750,7 +750,7 @@ EXPECTIMINIMAX(E) = 9
 
 **Step 3: Evaluate B (CHANCE)**
 ```
-EXPECTIMINIMAX(B) = 0.6 × 4 + 0.4 × 9 = 2.4 + 3.6 = 6.0
+EXPECTIMINIMAX(B) = 0.6 Ã— 4 + 0.4 Ã— 9 = 2.4 + 3.6 = 6.0
 ```
 
 **Step 4: Evaluate F (MIN)**
@@ -765,7 +765,7 @@ EXPECTIMINIMAX(G) = 2
 
 **Step 6: Evaluate C (CHANCE)**
 ```
-EXPECTIMINIMAX(C) = 0.3 × 5 + 0.7 × 2 = 1.5 + 1.4 = 2.9
+EXPECTIMINIMAX(C) = 0.3 Ã— 5 + 0.7 Ã— 2 = 1.5 + 1.4 = 2.9
 ```
 
 **Step 7: Evaluate A (MAX)**
@@ -779,10 +779,10 @@ Trace table:
 |------|------|------|-------------|-------|
 | 1 | D | MIN | min(4) | 4 |
 | 2 | E | MIN | min(9) | 9 |
-| 3 | B | CHANCE | 0.6×4 + 0.4×9 | 6.0 |
+| 3 | B | CHANCE | 0.6Ã—4 + 0.4Ã—9 | 6.0 |
 | 4 | F | MIN | min(5) | 5 |
 | 5 | G | MIN | min(2) | 2 |
-| 6 | C | CHANCE | 0.3×5 + 0.7×2 | 2.9 |
+| 6 | C | CHANCE | 0.3Ã—5 + 0.7Ã—2 | 2.9 |
 | 7 | A | MAX | max(6.0, 2.9) | **6.0** |
 
 **Result:** MAX chooses action leading to B, with expected utility 6.0.
@@ -837,8 +837,8 @@ def dice_game_example():
     A simplified game:
     - MAX chooses a pile (A or B)
     - A dice is rolled: P(high)=0.4, P(low)=0.6
-    - For pile A: high→4, low→9
-    - For pile B: high→1, low→3
+    - For pile A: highâ†’4, lowâ†’9
+    - For pile B: highâ†’1, lowâ†’3
     MAX should choose pile A (expected value = 0.4*4 + 0.6*9 = 7.0)
     vs pile B (expected value = 0.4*1 + 0.6*3 = 2.2)
     """
@@ -850,17 +850,17 @@ def dice_game_example():
 
 **Time Complexity:** $O(b^d \times c^d)$ where $b$ is the action branching factor and $c$ is the number of chance outcomes per node.
 
-**Why so expensive?** At every chance node, the branching factor multiplies by the number of possible chance outcomes (e.g., 36 in backgammon). If a game has alternating action and chance nodes, the total states explored is $(b \times c)^d$ — much larger than $b^d$ for deterministic games. This is why expectiminimax is impractical for games with deep trees and many chance outcomes.
+**Why so expensive?** At every chance node, the branching factor multiplies by the number of possible chance outcomes (e.g., 36 in backgammon). If a game has alternating action and chance nodes, the total states explored is $(b \times c)^d$ â€” much larger than $b^d$ for deterministic games. This is why expectiminimax is impractical for games with deep trees and many chance outcomes.
 
-**Space Complexity:** $O(b \times d \times c)$ — same depth-first structure, but each level may need to store chance outcomes.
+**Space Complexity:** $O(b \times d \times c)$ â€” same depth-first structure, but each level may need to store chance outcomes.
 
 ### Advantages & Disadvantages
 
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| **Principled handling of randomness** — uses exact probability distributions | **Extremely expensive** — branching factor multiplies by chance outcomes |
-| Optimal for stochastic games (backgammon, dice games) | Cannot prune chance nodes easily — alpha-beta doesn't directly apply |
+| **Principled handling of randomness** â€” uses exact probability distributions | **Extremely expensive** â€” branching factor multiplies by chance outcomes |
+| Optimal for stochastic games (backgammon, dice games) | Cannot prune chance nodes easily â€” alpha-beta doesn't directly apply |
 | Foundation for all stochastic game algorithms | Requires known probability distributions |
 | Can be combined with depth-limiting | Evaluation functions harder to design for stochastic games |
 
@@ -882,7 +882,7 @@ def dice_game_example():
 ### Real-World Analogy
 
 
-Imagine learning to play a new board game. You don't read the rulebook cover-to-cover and compute every possible sequence (that's minimax). Instead, you play the game against yourself hundreds of times in your head, trying different moves, and noticing which ones lead to wins. Over time, you develop an intuition: "when I open with the center gambit, I seem to win more." **MCTS** is exactly this — it builds a search tree by **simulating random playouts** from promising states, then **focusing more simulations** where they've been most successful.
+Imagine learning to play a new board game. You don't read the rulebook cover-to-cover and compute every possible sequence (that's minimax). Instead, you play the game against yourself hundreds of times in your head, trying different moves, and noticing which ones lead to wins. Over time, you develop an intuition: "when I open with the center gambit, I seem to win more." **MCTS** is exactly this â€” it builds a search tree by **simulating random playouts** from promising states, then **focusing more simulations** where they've been most successful.
 
 ### The Four-Phase MCTS Loop
 
@@ -917,53 +917,53 @@ The first term (exploitation / win rate) favors moves that have performed well. 
 ### Algorithm Steps
 
 
-1. **Initialize** — create a root node for the current game state
+1. **Initialize** â€” create a root node for the current game state
 2. **Repeat** until time/iteration budget runs out:
-   a. **SELECT** — walk from root to leaf using UCT, always choosing the child with the highest UCT value
-   b. **EXPAND** — if the leaf is not terminal, add one unvisited child
-   c. **SIMULATE** — from the new child, play random moves to a terminal state
-   d. **BACKPROPAGATE** — update win counts and visit counts for all nodes along the path
-3. **Return** — the action with the highest visit count (or win rate) at the root
+   a. **SELECT** â€” walk from root to leaf using UCT, always choosing the child with the highest UCT value
+   b. **EXPAND** â€” if the leaf is not terminal, add one unvisited child
+   c. **SIMULATE** â€” from the new child, play random moves to a terminal state
+   d. **BACKPROPAGATE** â€” update win counts and visit counts for all nodes along the path
+3. **Return** â€” the action with the highest visit count (or win rate) at the root
 
 ### Pseudocode
 
 
 ```
 function MCTS(state, budget) returns action
-    root ← Node(state)
+    root â† Node(state)
     for i = 1 to budget do
-        node ← SELECT(root)
+        node â† SELECT(root)
         if not TERMINAL(node.state) then
-            child ← EXPAND(node)
-            result ← SIMULATE(child.state)
+            child â† EXPAND(node)
+            result â† SIMULATE(child.state)
         else
-            result ← UTILITY(node.state)
+            result â† UTILITY(node.state)
         BACKPROPAGATE(node, result)
     return argmax over children of root.VISITS
 
 function SELECT(node) returns leaf
     while node is fully expanded and not terminal do
-        node ← argmax over children of UCT(child)
+        node â† argmax over children of UCT(child)
     return node
 
 function EXPAND(node) returns new_node
-    action ← an untried action from node.state
-    new_state ← RESULT(node.state, action)
-    new_node ← Node(new_state)
+    action â† an untried action from node.state
+    new_state â† RESULT(node.state, action)
+    new_node â† Node(new_state)
     add new_node as child of node
     return new_node
 
 function SIMULATE(state) returns result
     while not TERMINAL(state) do
-        action ← random(ACTIONS(state))
-        state ← RESULT(state, action)
+        action â† random(ACTIONS(state))
+        state â† RESULT(state, action)
     return UTILITY(state)
 
 function BACKPROPAGATE(node, result)
-    while node ≠ null do
-        node.visits ← node.visits + 1
-        node.wins ← node.wins + result
-        node ← node.parent
+    while node â‰  null do
+        node.visits â† node.visits + 1
+        node.wins â† node.wins + result
+        node â† node.parent
 ```
 
 ### Step-by-Step Dry Run
@@ -975,25 +975,25 @@ Initial state: root A (MAX) has 3 possible actions.
 
 **Iteration 1:**
 ```
-1. SELECT: Root A (unexpanded) → go to EXPAND
+1. SELECT: Root A (unexpanded) â†’ go to EXPAND
 2. EXPAND: Add child node B under A
-3. SIMULATE from B: random play → result = WIN (+1)
+3. SIMULATE from B: random play â†’ result = WIN (+1)
 4. BACKPROP: B: visits=1, wins=1. A: visits=1, wins=1
 ```
 
 **Iteration 2:**
 ```
-1. SELECT: Root A (not fully expanded yet) → go to EXPAND
+1. SELECT: Root A (not fully expanded yet) â†’ go to EXPAND
 2. EXPAND: Add child node C under A
-3. SIMULATE from C: random play → result = LOSS (0)
+3. SIMULATE from C: random play â†’ result = LOSS (0)
 4. BACKPROP: C: visits=1, wins=0. A: visits=2, wins=1
 ```
 
 **Iteration 3:**
 ```
-1. SELECT: Root A (not fully expanded yet) → go to EXPAND
+1. SELECT: Root A (not fully expanded yet) â†’ go to EXPAND
 2. EXPAND: Add child node D under A
-3. SIMULATE from D: random play → result = WIN (+1)
+3. SIMULATE from D: random play â†’ result = WIN (+1)
 4. BACKPROP: D: visits=1, wins=1. A: visits=3, wins=2
 ```
 
@@ -1001,23 +1001,23 @@ Initial state: root A (MAX) has 3 possible actions.
 ```
 Root A is now fully expanded (all 3 children exist).
 1. SELECT: Compute UCT for B, C, D:
-   UCT(B) = 1/1 + c√(ln 3/1) = 1 + c·1.048
-   UCT(C) = 0/1 + c√(ln 3/1) = 0 + c·1.048
-   UCT(D) = 1/1 + c√(ln 3/1) = 1 + c·1.048
-   Suppose c=1 → B and D tie at 2.048. Pick B (first).
-2. B is a leaf (not expanded yet) → EXPAND: add child E
-3. SIMULATE from E → LOSS (0)
+   UCT(B) = 1/1 + câˆš(ln 3/1) = 1 + cÂ·1.048
+   UCT(C) = 0/1 + câˆš(ln 3/1) = 0 + cÂ·1.048
+   UCT(D) = 1/1 + câˆš(ln 3/1) = 1 + cÂ·1.048
+   Suppose c=1 â†’ B and D tie at 2.048. Pick B (first).
+2. B is a leaf (not expanded yet) â†’ EXPAND: add child E
+3. SIMULATE from E â†’ LOSS (0)
 4. BACKPROP: E: v=1,w=0. B: v=2,w=1. A: v=4,w=2
 ```
 
 **Iteration 5:**
 ```
 1. SELECT: UCT values at root:
-   UCT(B) = 1/2 + 1·√(ln 4/2) = 0.5 + 0.833 = 1.333
-   UCT(C) = 0/1 + 1·√(ln 4/1) = 0 + 1.386 = 1.386
-   UCT(D) = 1/1 + 1·√(ln 4/1) = 1 + 1.386 = 2.386
-   → Select D. D is leaf → EXPAND child F.
-2. SIMULATE from F → WIN (+1)
+   UCT(B) = 1/2 + 1Â·âˆš(ln 4/2) = 0.5 + 0.833 = 1.333
+   UCT(C) = 0/1 + 1Â·âˆš(ln 4/1) = 0 + 1.386 = 1.386
+   UCT(D) = 1/1 + 1Â·âˆš(ln 4/1) = 1 + 1.386 = 2.386
+   â†’ Select D. D is leaf â†’ EXPAND child F.
+2. SIMULATE from F â†’ WIN (+1)
 3. BACKPROP: F: v=1,w=1. D: v=2,w=2. A: v=5,w=3
 ```
 
@@ -1025,12 +1025,12 @@ Trace table after 5 iterations:
 
 | Node | Visits | Wins | Win Rate | UCT (iteration 5 at root) |
 |------|--------|------|----------|--------------------------|
-| A (root) | 5 | 3 | 0.600 | — |
+| A (root) | 5 | 3 | 0.600 | â€” |
 | B | 2 | 1 | 0.500 | 1.333 |
 | C | 1 | 0 | 0.000 | 1.386 |
 | D | 2 | 2 | 1.000 | **2.386** |
-| E (under B) | 1 | 0 | 0.000 | — |
-| F (under D) | 1 | 1 | 1.000 | — |
+| E (under B) | 1 | 0 | 0.000 | â€” |
+| F (under D) | 1 | 1 | 1.000 | â€” |
 
 **Result after 5 iterations:** Choose D (highest UCT at root). As iterations increase, the visit counts converge toward optimality.
 
@@ -1120,19 +1120,19 @@ def mcts_search(root_state, iterations, actions_fn, result_fn,
 
 **Time Complexity:** $O(I \times (L + S))$ where $I$ is the number of iterations, $L$ is the average selection path length, and $S$ is the average simulation length.
 
-**Why this matters:** Unlike minimax's $b^d$, MCTS complexity is controlled by the **iteration budget**, not the tree size. With 10,000 iterations and games averaging 50 moves deep, MCTS performs roughly 500,000 node evaluations — trivial compared to $250^{150}$ for full Go search. This makes MCTS **anytime** — it can return a reasonable answer after 100 iterations and improve with more.
+**Why this matters:** Unlike minimax's $b^d$, MCTS complexity is controlled by the **iteration budget**, not the tree size. With 10,000 iterations and games averaging 50 moves deep, MCTS performs roughly 500,000 node evaluations â€” trivial compared to $250^{150}$ for full Go search. This makes MCTS **anytime** â€” it can return a reasonable answer after 100 iterations and improve with more.
 
-**Space Complexity:** $O(I \times \log I)$ — only expanded nodes are stored. The tree grows linearly with iterations, not exponentially with depth.
+**Space Complexity:** $O(I \times \log I)$ â€” only expanded nodes are stored. The tree grows linearly with iterations, not exponentially with depth.
 
 ### Advantages & Disadvantages
 
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| **Handles massive branching factors** — Go, general game playing | **No optimality guarantee** — result is approximate |
-| **Anytime algorithm** — returns a (good) answer at any point | Needs **many iterations** for strong play |
-| **No evaluation function needed** — uses random playouts | **Random simulations are noisy** — high variance |
-| **Asymmetric tree growth** — focuses on promising branches | **Exploration constant $c$ must be tuned** |
+| **Handles massive branching factors** â€” Go, general game playing | **No optimality guarantee** â€” result is approximate |
+| **Anytime algorithm** â€” returns a (good) answer at any point | Needs **many iterations** for strong play |
+| **No evaluation function needed** â€” uses random playouts | **Random simulations are noisy** â€” high variance |
+| **Asymmetric tree growth** â€” focuses on promising branches | **Exploration constant $c$ must be tuned** |
 | Works with **any game** (deterministic, stochastic, imperfect info) | Difficult to **parallelize** effectively (but possible) |
 
 ### Edge Cases
@@ -1152,14 +1152,14 @@ def mcts_search(root_state, iterations, actions_fn, result_fn,
 
 Modern MCTS (AlphaGo, Lc0, KataGo) replaces the random simulation policy with a **neural network** that predicts:
 
-1. **Policy head:** $p(s, a)$ — probability that action $a$ is good in state $s$
-2. **Value head:** $v(s)$ — estimated win probability from state $s$
+1. **Policy head:** $p(s, a)$ â€” probability that action $a$ is good in state $s$
+2. **Value head:** $v(s)$ â€” estimated win probability from state $s$
 
 The UCT formula becomes:
 
 $$\text{UCT}(i) = \frac{w_i}{n_i} + c \cdot p(s, a) \sqrt{\frac{\ln N}{n_i + 1}}$$
 
-This dramatically improves simulation quality — the network provides **learned heuristics** rather than random play.
+This dramatically improves simulation quality â€” the network provides **learned heuristics** rather than random play.
 
 ---
 
@@ -1174,20 +1174,20 @@ In games with hidden information (poker, bridge, Stratego), players cannot see t
 
 ---
 
-## Minimax vs Alpha-Beta vs MCTS — Comparison
+## Minimax vs Alpha-Beta vs MCTS â€” Comparison
 
 | Aspect | Minimax | Alpha-Beta Pruning | MCTS |
 |--------|---------|-------------------|------|
 | **Core idea** | Full recursive search | Prune irrelevant branches | Selective sampling |
 | **Tree explored** | Entire tree | Entire tree (with pruning) | Sampled, asymmetric |
-| **Optimality** | ✅ Guaranteed optimal | ✅ Guaranteed optimal | ❌ Asymptotically optimal |
-| **Branching factor tolerance** | Low (b ≤ 10) | Medium (b ≤ 40) | High (b ≤ 10⁴+) |
-| **Search depth** | Full depth | Effectively 2× minimax | Variable, guided by simulations |
-| **Needs evaluation function** | ✅ Yes (depth-limited) | ✅ Yes (depth-limited) | ❌ No (uses rollouts) |
-| **Anytime** | ❌ No | ❌ No | ✅ Yes |
-| **Handles chance** | ❌ No | ❌ No | ✅ Yes (implicitly) |
-| **Stochastic optimal** | ❌ | ❌ | ✅ (with enough samples) |
-| **Memory usage** | O(b·d) | O(b·d) | O(iterations·log iterations) |
+| **Optimality** | âœ… Guaranteed optimal | âœ… Guaranteed optimal | âŒ Asymptotically optimal |
+| **Branching factor tolerance** | Low (b â‰¤ 10) | Medium (b â‰¤ 40) | High (b â‰¤ 10â´+) |
+| **Search depth** | Full depth | Effectively 2Ã— minimax | Variable, guided by simulations |
+| **Needs evaluation function** | âœ… Yes (depth-limited) | âœ… Yes (depth-limited) | âŒ No (uses rollouts) |
+| **Anytime** | âŒ No | âŒ No | âœ… Yes |
+| **Handles chance** | âŒ No | âŒ No | âœ… Yes (implicitly) |
+| **Stochastic optimal** | âŒ | âŒ | âœ… (with enough samples) |
+| **Memory usage** | O(bÂ·d) | O(bÂ·d) | O(iterationsÂ·log iterations) |
 | **Best use case** | Small perfect-info games | Medium perfect-info games | Large perfect/stochastic games |
 | **Example success** | Tic-Tac-Toe, Connect Four | Chess (Deep Blue, Stockfish) | Go (AlphaGo, KataGo) |
 | **Parallelization** | Easy (tree is static) | Moderate | Hard (shared tree) |
@@ -1198,36 +1198,36 @@ In games with hidden information (poker, bridge, Stratego), players cannot see t
 
 | Algorithm | Type | State Space | Optimality | Key Metric |
 |-----------|:---:|:---:|:---:|:---:|
-| Minimax | Deterministic | Full tree | ✅ | Utility value |
-| Alpha-Beta | Deterministic | Pruned tree | ✅ | α/β bounds |
-| Expectiminimax | Stochastic | Full tree | ✅ (expected) | Expected value |
+| Minimax | Deterministic | Full tree | âœ… | Utility value |
+| Alpha-Beta | Deterministic | Pruned tree | âœ… | Î±/Î² bounds |
+| Expectiminimax | Stochastic | Full tree | âœ… (expected) | Expected value |
 | MCTS | Anytime | Sampled tree | Asymptotic | Visit count, win rate |
 | UCT | Anytime | Sampled tree | Asymptotic | Upper confidence bound |
 
-## Quick Reference — Game Complexity
+## Quick Reference â€” Game Complexity
 
 | Game | Branching Factor (b) | Game Depth (d) | Tree Size (b^d) | Feasible Method |
 |------|:---:|:---:|:---:|:---:|
-| Tic-Tac-Toe | ~4 | 9 | ~4×10⁵ | Minimax (full) |
-| Chess | ~35 | ~100 | ~10¹⁵⁴ | Alpha-Beta + Eval |
-| Go (19×19) | ~250 | ~150 | ~10³⁶⁰ | MCTS + DNN |
-| Poker (no-limit) | ~10⁴ | Variable | N/A | CFR + MCTS |
+| Tic-Tac-Toe | ~4 | 9 | ~4Ã—10âµ | Minimax (full) |
+| Chess | ~35 | ~100 | ~10Â¹âµâ´ | Alpha-Beta + Eval |
+| Go (19Ã—19) | ~250 | ~150 | ~10Â³â¶â° | MCTS + DNN |
+| Poker (no-limit) | ~10â´ | Variable | N/A | CFR + MCTS |
 
 ## Cross-Application Matrix
 
 | Technique | ML Engineering | Computer Vision | NLP | Research |
 |-----------|:---:|:---:|:---:|:---:|
-| Minimax | ⬜ | ⬜ | ⬜ | ✅ |
-| Alpha-Beta | ⬜ | ⬜ | ⬜ | ✅ |
-| MCTS | ✅ | ⬜ | ⬜ | ✅ |
-| Expectiminimax | ⬜ | ⬜ | ⬜ | ✅ |
-| CFR (Game Theory) | ⬜ | ⬜ | ⬜ | ✅ |
+| Minimax | â¬œ | â¬œ | â¬œ | âœ… |
+| Alpha-Beta | â¬œ | â¬œ | â¬œ | âœ… |
+| MCTS | âœ… | â¬œ | â¬œ | âœ… |
+| Expectiminimax | â¬œ | â¬œ | â¬œ | âœ… |
+| CFR (Game Theory) | â¬œ | â¬œ | â¬œ | âœ… |
 
 ## Interview Corner
 
 **Q1: When would you choose MCTS over alpha-beta for a new game?**
 
-MCTS is preferred when (a) the branching factor is very large (>50), (b) the game has stochastic elements (dice, random cards), (c) a good evaluation function is hard to design, or (d) you need an anytime algorithm that can return answers under time pressure. Alpha-beta is better when the game is deterministic, the branching factor is moderate, and you have a strong evaluation function — you get guaranteed optimality and faster convergence.
+MCTS is preferred when (a) the branching factor is very large (>50), (b) the game has stochastic elements (dice, random cards), (c) a good evaluation function is hard to design, or (d) you need an anytime algorithm that can return answers under time pressure. Alpha-beta is better when the game is deterministic, the branching factor is moderate, and you have a strong evaluation function â€” you get guaranteed optimality and faster convergence.
 
 **Q2: How do you design a good evaluation function for alpha-beta search?**
 
@@ -1235,11 +1235,11 @@ A good evaluation function should: (1) correlate strongly with the actual game o
 
 **Q3: What is the game complexity of chess vs Go vs poker?**
 
-Chess has ~10⁴³ unique positions (~10¹⁵⁴ game tree size) — dominated by a branching factor of ~35 and depth of ~80-100. Go has ~10¹⁷⁰ unique positions (~10³⁶⁰ tree size) — the branching factor of ~250 makes alpha-beta infeasible, requiring MCTS. Poker has even larger effective complexity due to hidden information — even the simplified heads-up limit variant was only solved in 2015 using CFR after 10¹² iterations.
+Chess has ~10â´Â³ unique positions (~10Â¹âµâ´ game tree size) â€” dominated by a branching factor of ~35 and depth of ~80-100. Go has ~10Â¹â·â° unique positions (~10Â³â¶â° tree size) â€” the branching factor of ~250 makes alpha-beta infeasible, requiring MCTS. Poker has even larger effective complexity due to hidden information â€” even the simplified heads-up limit variant was only solved in 2015 using CFR after 10Â¹Â² iterations.
 
 **Q4: Explain the exploration-exploitation tradeoff in MCTS and how UCT handles it.**
 
-UCT's formula has two terms: exploitation ($w_i/n_i$ — the win rate, encouraging moves that have performed well) and exploration ($c\sqrt{\ln N / n_i}$ — encouraging moves not yet tried). As $n_i$ increases, the exploitation term becomes more reliable. As $N$ grows, the exploration bonus for unvisited children increases, ensuring all branches are eventually explored. The constant $c$ controls the balance: higher $c$ favors exploration.
+UCT's formula has two terms: exploitation ($w_i/n_i$ â€” the win rate, encouraging moves that have performed well) and exploration ($c\sqrt{\ln N / n_i}$ â€” encouraging moves not yet tried). As $n_i$ increases, the exploitation term becomes more reliable. As $N$ grows, the exploration bonus for unvisited children increases, ensuring all branches are eventually explored. The constant $c$ controls the balance: higher $c$ favors exploration.
 
 **Q5: Why can't alpha-beta pruning be directly applied to stochastic games?**
 
@@ -1247,7 +1247,7 @@ Alpha-beta pruning relies on the **order-preserving** property of min and max ov
 
 ## Applications in Real Systems
 
-### Chess — Stockfish & Leela Chess Zero (Lc0)
+### Chess â€” Stockfish & Leela Chess Zero (Lc0)
 
 
 | System | Method | Key Innovation |
@@ -1258,7 +1258,7 @@ Alpha-beta pruning relies on the **order-preserving** property of min and max ov
 
 Stockfish uses alpha-beta with **negamax** framework, **iterative deepening**, **transposition tables** (Zobrist hashing), and the **NNUE** (Efficiently Updatable Neural Network) evaluation function that computes board evaluation in O(1) after each move. It achieves an ELO of ~3600, far surpassing any human.
 
-### Go — AlphaGo, AlphaGo Zero, KataGo
+### Go â€” AlphaGo, AlphaGo Zero, KataGo
 
 
 | System | Method | Breakthrough |
@@ -1269,19 +1269,19 @@ Stockfish uses alpha-beta with **negamax** framework, **iterative deepening**, *
 
 AlphaGo's MCTS used a **dual neural network**: a policy network (suggesting good moves) and a value network (evaluating positions). The policy network guided the expansion phase (replacing random selection), and the value network guided the backpropagation. AlphaGo Zero unified both into a single network with two output heads, and trained entirely through self-play without any human game data.
 
-### Poker — Pluribus (2019)
+### Poker â€” Pluribus (2019)
 
 
-Pluribus achieved superhuman performance in six-player no-limit Texas Hold'em using **Monte Carlo CFR (MCCFR)** — an MCTS variant applied to counterfactual regret minimization. Unlike chess and Go, poker has **imperfect information** (hidden cards) and **multiple players** (not two-player zero-sum). Pluribus used:
+Pluribus achieved superhuman performance in six-player no-limit Texas Hold'em using **Monte Carlo CFR (MCCFR)** â€” an MCTS variant applied to counterfactual regret minimization. Unlike chess and Go, poker has **imperfect information** (hidden cards) and **multiple players** (not two-player zero-sum). Pluribus used:
 
 - **Blueprint strategy:** Precomputed via MCCFR
 - **Real-time search:** MCTS-like lookahead at decision time
-- **Abstraction:** Reduced 10¹⁶¹ information sets to manageable clusters
+- **Abstraction:** Reduced 10Â¹â¶Â¹ information sets to manageable clusters
 
-### Atari — DQN and Beyond
+### Atari â€” DQN and Beyond
 
 
-Deep Q-Networks (DQN, 2015) used **deep reinforcement learning** to play 49 Atari games directly from pixel input. While not using game-tree search per se, DQN's Q-learning approximates the minimax value function — learning to evaluate state-action pairs without explicit tree construction. AlphaZero's framework later unified MCTS with learned neural networks across chess, shogi, and Go.
+Deep Q-Networks (DQN, 2015) used **deep reinforcement learning** to play 49 Atari games directly from pixel input. While not using game-tree search per se, DQN's Q-learning approximates the minimax value function â€” learning to evaluate state-action pairs without explicit tree construction. AlphaZero's framework later unified MCTS with learned neural networks across chess, shogi, and Go.
 
 | Application | Technique | Key Result |
 |-------------|-----------|-----------|
@@ -1295,7 +1295,7 @@ Deep Q-Networks (DQN, 2015) used **deep reinforcement learning** to play 49 Atar
 
 ## 5.7 Summary
 
-Game-playing algorithms provide a framework for adversarial decision-making. Minimax with alpha-beta pruning is effective for deterministic games with manageable branching factors, achieving optimal play by exploring the full game tree while cutting irrelevant branches. MCTS handles massive state spaces through selective sampling guided by UCT, sacrificing optimality guarantees for practicality in games like Go. Expectiminimax extends adversarial search to stochastic environments by computing expected values over chance outcomes. Imperfect information games require additional machinery — belief states, determinization, and counterfactual regret minimization — to handle hidden information. These techniques form the backbone of modern game AI, from Stockfish's chess dominance to AlphaGo's Go mastery and Pluribus's poker breakthrough.
+Game-playing algorithms provide a framework for adversarial decision-making. Minimax with alpha-beta pruning is effective for deterministic games with manageable branching factors, achieving optimal play by exploring the full game tree while cutting irrelevant branches. MCTS handles massive state spaces through selective sampling guided by UCT, sacrificing optimality guarantees for practicality in games like Go. Expectiminimax extends adversarial search to stochastic environments by computing expected values over chance outcomes. Imperfect information games require additional machinery â€” belief states, determinization, and counterfactual regret minimization â€” to handle hidden information. These techniques form the backbone of modern game AI, from Stockfish's chess dominance to AlphaGo's Go mastery and Pluribus's poker breakthrough.
 
 ## Chapter Quiz
 
@@ -1315,7 +1315,7 @@ Game-playing algorithms provide a framework for adversarial decision-making. Min
 - C) Tree depth and node count
 - D) Win rate and time remaining
 
-<details><summary>Answer&lt;/summary&gt;B) UCT balances exploitation (win rate w_i/n_i) with exploration (c√(ln N/n_i)) through its two-term formula.</details>
+<details><summary>Answer&lt;/summary&gt;B) UCT balances exploitation (win rate w_i/n_i) with exploration (câˆš(ln N/n_i)) through its two-term formula.</details>
 
 **Q3:** How does expectiminimax differ from minimax?
 
@@ -1328,12 +1328,12 @@ Game-playing algorithms provide a framework for adversarial decision-making. Min
 
 **Q4:** In alpha-beta pruning, when does pruning occur at a MAX node?
 
-- A) When α ≤ β
-- B) When the current value v ≥ β
+- A) When Î± â‰¤ Î²
+- B) When the current value v â‰¥ Î²
 - C) When evaluation function returns 0
 - D) When depth limit is reached
 
-<details><summary>Answer&lt;/summary&gt;B) At a MAX node, pruning occurs when v ≥ β — because MIN would never allow the game to reach this branch since it already has a better option (β) elsewhere.</details>
+<details><summary>Answer&lt;/summary&gt;B) At a MAX node, pruning occurs when v â‰¥ Î² â€” because MIN would never allow the game to reach this branch since it already has a better option (Î²) elsewhere.</details>
 
 **Q5:** Which game's AI primarily uses Counterfactual Regret Minimization (CFR)?
 
@@ -1362,7 +1362,7 @@ Game-playing algorithms provide a framework for adversarial decision-making. Min
 
 ### Challenge Problem
 
-9. **AlphaZero-style MCTS:** Implement MCTS with a neural network policy head for a simple game (e.g., Connect Four on a 4×4 board). Train the network using self-play. Compare the learning curve of pure MCTS vs MCTS+policy vs MCTS+policy+value networks.
+9. **AlphaZero-style MCTS:** Implement MCTS with a neural network policy head for a simple game (e.g., Connect Four on a 4Ã—4 board). Train the network using self-play. Compare the learning curve of pure MCTS vs MCTS+policy vs MCTS+policy+value networks.
 
 ---
 

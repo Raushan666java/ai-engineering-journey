@@ -1,4 +1,4 @@
-# Chapter 11: Recovery System
+﻿# Chapter 11: Recovery System
 
 > **Previous:** [Chapter 10: Concurrency Control](./10-concurrency.md) | **Next:** [Chapter 12: Indexing](./12-indexing.md)
 
@@ -17,16 +17,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/11-recovery/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/11-recovery/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/11-recovery/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/11-recovery/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/11-recovery/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/11-recovery/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/11-recovery/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/11-recovery/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/11-recovery/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/11-recovery/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/11-recovery/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/11-recovery/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -506,7 +506,7 @@ for rec in stable.log:
 | Write | O(1) | O(1) + disk write latency | O(1) append |
 | Crash recovery cost | 0 (lost entirely) | O(D) scan dirty pages | O(L) log replay |
 
-**Why this complexity matters:** Volatile operations are essentially free for recovery purposes because they disappear on crash. The bottleneck is stable storage log replay, which is O(L) where L is the number of log records since the last checkpoint. This is why checkpoints exist â†’ to reduce L.
+**Why this complexity matters:** Volatile operations are essentially free for recovery purposes because they disappear on crash. The bottleneck is stable storage log replay, which is O(L) where L is the number of log records since the last checkpoint. This is why checkpoints exist Ã¢â€ â€™ to reduce L.
 
 #### 11.2.7 Advantages & Disadvantages
 
@@ -565,8 +565,8 @@ Buffer management policies determine when modified pages are written from the vo
 #### 11.3.4 Why STEAL/NO-FORCE Dominates
 
 Most commercial DBMS use **STEAL/NO-FORCE** because:
-1. **STEAL** allows the buffer pool to operate with limited memory â†’ dirty pages can be evicted under memory pressure
-2. **NO-FORCE** batches writes â†’ multiple updates to the same page in different transactions are written once
+1. **STEAL** allows the buffer pool to operate with limited memory Ã¢â€ â€™ dirty pages can be evicted under memory pressure
+2. **NO-FORCE** batches writes Ã¢â€ â€™ multiple updates to the same page in different transactions are written once
 3. The combination requires both UNDO and REDO, but ARIES handles both efficiently
 
 #### 11.3.5 C++: Buffer Policy Simulator
@@ -748,11 +748,11 @@ Every log record has this structure:
 **PrevLSN:** Points to the previous log record of the same transaction, forming a backward chain per transaction.
 
 **Log Record Types:**
-- `<T1, BEGIN>` â†’ Transaction start
-- `<T1, UPDATE, P, Old=X, New=Y>` â†’ Page modification
-- `<T1, COMMIT>` â†’ Transaction commit
-- `<T1, ABORT>` â†’ Transaction abort
-- `<CLR, T1, UndoNext=L, P, RedoInfo>` â†’ Compensation Log Record (undo tracking)
+- `<T1, BEGIN>` Ã¢â€ â€™ Transaction start
+- `<T1, UPDATE, P, Old=X, New=Y>` Ã¢â€ â€™ Page modification
+- `<T1, COMMIT>` Ã¢â€ â€™ Transaction commit
+- `<T1, ABORT>` Ã¢â€ â€™ Transaction abort
+- `<CLR, T1, UndoNext=L, P, RedoInfo>` Ã¢â€ â€™ Compensation Log Record (undo tracking)
 
 #### 11.4.3 Log Buffer vs. Write-Ahead Log
 
@@ -770,7 +770,7 @@ Every log record has this structure:
 2. At commit time (or when the buffer is full), the log buffer is flushed to the **WAL file** (synchronous fsync)
 3. The WAL file on stable storage is the source of truth during recovery
 
-**Real-World Analogy:** The log buffer is like a waiter's notepad â†’ quick to scribble orders on. The WAL on disk is the kitchen's order ticket â†’ once the ticket is in the kitchen, the order is guaranteed to be cooked even if the waiter loses their notepad.
+**Real-World Analogy:** The log buffer is like a waiter's notepad Ã¢â€ â€™ quick to scribble orders on. The WAL on disk is the kitchen's order ticket Ã¢â€ â€™ once the ticket is in the kitchen, the order is guaranteed to be cooked even if the waiter loses their notepad.
 
 #### 11.4.4 Physical vs. Logical vs. Physiological Logging
 
@@ -982,17 +982,17 @@ for rec in wal.read_log():
 
 **UNDO Logging:**
 - Only stores the **before-image** (old value)
-- Used when dirty pages cannot be stolen (NO-STEAL) â†’ because uncommitted dirty pages are never on disk, we only need to undo committed-but-not-yet-flushed changes
+- Used when dirty pages cannot be stolen (NO-STEAL) Ã¢â€ â€™ because uncommitted dirty pages are never on disk, we only need to undo committed-but-not-yet-flushed changes
 - During recovery: scan backward, restore old values for uncommitted transactions
 
 **REDO Logging:**
 - Only stores the **after-image** (new value)
-- Used when dirty pages are never forced to disk at commit (NO-FORCE absence) â†’ because all committed pages are on disk, we only need to redo the ones that didn't make it
+- Used when dirty pages are never forced to disk at commit (NO-FORCE absence) Ã¢â€ â€™ because all committed pages are on disk, we only need to redo the ones that didn't make it
 - During recovery: scan forward, apply new values for committed transactions
 
 **UNDO/REDO Combined:**
 - Stores both **before and after images**
-- Required for STEAL (undo needed) + NO-FORCE (redo needed) â†’ the most common combination
+- Required for STEAL (undo needed) + NO-FORCE (redo needed) Ã¢â€ â€™ the most common combination
 - During recovery: redo all forward, then undo losers backward
 
 #### 11.4.8 Deferred vs Immediate Update Comparison
@@ -1009,7 +1009,7 @@ for rec in wal.read_log():
 | **Recovery complexity** | Low (no undo) | Higher (must undo losers) |
 
 **Real-World Analogy:**
-- **Deferred Update:** A chef writes orders on sticky notes. When the customer pays (commits), only then does the chef start cooking. If the order is canceled (aborts), the chef just throws away the sticky note â†’ no food wasted.
+- **Deferred Update:** A chef writes orders on sticky notes. When the customer pays (commits), only then does the chef start cooking. If the order is canceled (aborts), the chef just throws away the sticky note Ã¢â€ â€™ no food wasted.
 - **Immediate Update:** The chef starts cooking immediately when the order arrives. If the customer cancels, the chef must scrape the half-cooked food into the trash (undo).
 
 #### 11.4.9 Complexity Analysis of WAL Operations
@@ -1081,7 +1081,7 @@ PROCEDURE UndoLogRecovery():
         WriteLogRecord(tid, ABORT)
 ```
 
-**Dry Run Trace Table â†’ UNDO Recovery:**
+**Dry Run Trace Table Ã¢â€ â€™ UNDO Recovery:**
 
 Initial state: A=100, B=200 (both on disk).
 
@@ -1098,11 +1098,11 @@ Initial state: A=100, B=200 (both on disk).
 
 Recovery scan backward:
 - LSN 6: T2 active? YES. Restore A=50.
-- LSN 5: BEGIN â†’ skip.
-- LSN 4: T1 committed â†’ remove from losers.
-- LSN 3: T1 committed â†’ skip.
-- LSN 2: T1 committed â†’ skip.
-- LSN 1: BEGIN â†’ skip.
+- LSN 5: BEGIN Ã¢â€ â€™ skip.
+- LSN 4: T1 committed Ã¢â€ â€™ remove from losers.
+- LSN 3: T1 committed Ã¢â€ â€™ skip.
+- LSN 2: T1 committed Ã¢â€ â€™ skip.
+- LSN 1: BEGIN Ã¢â€ â€™ skip.
 
 Final state: A=50, B=250. T2's change to A is undone. T1's changes are fully applied.
 
@@ -1239,7 +1239,7 @@ PROCEDURE RedoLogRecovery():
             ApplyUpdate(record.pageID, record.newValue)
 ```
 
-**Dry Run Trace Table â†’ REDO Recovery:**
+**Dry Run Trace Table Ã¢â€ â€™ REDO Recovery:**
 
 Initial state: A=100, B=200.
 
@@ -1362,7 +1362,7 @@ print(f"Final: {disk}")
 Combined logging records **both old and new values**. During recovery, the system redoes all transactions (to bring the database to crash-time state), then undoes only the losers.
 
 **When UNDO/REDO Is Used:**
-- Buffer policy: STEAL / NO-FORCE (most common â†’ used by PostgreSQL, Oracle, SQL Server)
+- Buffer policy: STEAL / NO-FORCE (most common Ã¢â€ â€™ used by PostgreSQL, Oracle, SQL Server)
 - Dirty pages can be written to disk before commit (need UNDO)
 - Committed pages may not have reached disk (need REDO)
 
@@ -1371,9 +1371,9 @@ Combined logging records **both old and new values**. During recovery, the syste
 **Numbered Steps:**
 1. Before modifying page P: write `<T, P, old_value, new_value>` to log
 2. When the transaction commits: write `<T, COMMIT>` and flush log to stable storage
-3. During recovery â†’ Analysis Phase: scan log to find winners and losers
-4. During recovery â†’ Redo Phase: scan forward, reapply all changes (both winners and losers)
-5. During recovery â†’ Undo Phase: scan backward, undo losers using old values
+3. During recovery Ã¢â€ â€™ Analysis Phase: scan log to find winners and losers
+4. During recovery Ã¢â€ â€™ Redo Phase: scan forward, reapply all changes (both winners and losers)
+5. During recovery Ã¢â€ â€™ Undo Phase: scan backward, undo losers using old values
 6. Write CLRs for each undo step to ensure idempotency
 
 **Pseudocode:**
@@ -1410,7 +1410,7 @@ PROCEDURE Undo(tt):
     Write ABORT for each loser
 ```
 
-**Dry Run Trace Table â†’ UNDO/REDO Combined Recovery:**
+**Dry Run Trace Table Ã¢â€ â€™ UNDO/REDO Combined Recovery:**
 
 Initial state: A=100, B=200.
 
@@ -1439,15 +1439,15 @@ Scan forward from LSN 1:
 **Redo Phase (LSN 2 to end):**
 - LSN 2: Page A dirty? YES. Page LSN (0) &lt; 2? YES. Redo: A=50.
 - LSN 3: Page B dirty? YES. Page LSN (0) &lt; 3? YES. Redo: B=250.
-- LSN 4: COMMIT â†’ no data change.
-- LSN 5: BEGIN â†’ no data change.
+- LSN 4: COMMIT Ã¢â€ â€™ no data change.
+- LSN 5: BEGIN Ã¢â€ â€™ no data change.
 - LSN 6: Page A dirty? YES. Page LSN (50) &lt; 6? YES. Redo: A=70.
 
 After Redo: A=70, B=250.
 
 **Undo Phase (backward from LSN 6):**
 - LSN 6: T2 active? YES. Undo: A=50. Write CLR: &lt;7, CLR, T2, UndoNext=5, A, 70, 50&gt;
-- LSN 5: BEGIN â†’ skip.
+- LSN 5: BEGIN Ã¢â€ â€™ skip.
 - Write &lt;T2, ABORT&gt;.
 
 Final state: A=50, B=250. Correct!
@@ -1714,7 +1714,7 @@ PROCEDURE FuzzyCheckpoint():
 | **Log space needed** | Minimal (one record) | More (BEGIN + END + metadata) | Medium |
 | **Frequency** | Infrequent (avoid blocking) | Frequent (low overhead) | Medium |
 
-#### 11.6.5 Dry Run Trace Table â†’ Fuzzy Checkpoint Recovery
+#### 11.6.5 Dry Run Trace Table Ã¢â€ â€™ Fuzzy Checkpoint Recovery
 
 Scenario: Two checkpoints occurred. Crash after CP2.
 
@@ -1925,7 +1925,7 @@ ARIES (Algorithm for Recovery and Isolation Exploiting Semantics) is the industr
 
 1. **Write-Ahead Logging:** Log records precede data page writes. This is non-negotiable.
 2. **Repeating History During Redo:** On recovery, re-process all operations from the last known good state (checkpoint), even for transactions that will eventually be undone. This "repeat history" approach is simpler and more reliable than trying to skip uncommitted work.
-3. **Logging During Undo:** Every undo action is itself logged via Compensation Log Records (CLRs). This makes recovery idempotent â†’ if the system crashes during recovery, the next recovery attempt knows exactly how far undo progressed.
+3. **Logging During Undo:** Every undo action is itself logged via Compensation Log Records (CLRs). This makes recovery idempotent Ã¢â€ â€™ if the system crashes during recovery, the next recovery attempt knows exactly how far undo progressed.
 
 #### 11.7.2 ARIES Data Structures
 
@@ -1957,7 +1957,7 @@ ARIES (Algorithm for Recovery and Isolation Exploiting Semantics) is the industr
 
 #### 11.7.4 ARIES Recovery Phases in Detail
 
-**Phase 1 â†’ Analysis:**
+**Phase 1 Ã¢â€ â€™ Analysis:**
 1. Start from the most recent BEGIN_CHECKPOINT record
 2. Load the Transaction Table and Dirty Page Table saved in the checkpoint
 3. Scan forward from the checkpoint to the end of the log
@@ -1966,7 +1966,7 @@ ARIES (Algorithm for Recovery and Isolation Exploiting Semantics) is the industr
 6. For each COMMIT/ABORT record: update transaction status in TT
 7. Determine the REDO LSN = min(RecLSN of all entries in DPT)
 
-**Phase 2 â†’ Redo:**
+**Phase 2 Ã¢â€ â€™ Redo:**
 1. Start from the REDO LSN (determined in Analysis)
 2. Scan forward to the end of the log
 3. For each UPDATE record:
@@ -1975,7 +1975,7 @@ ARIES (Algorithm for Recovery and Isolation Exploiting Semantics) is the industr
    - Otherwise: reapply the change (write new value and update PageLSN)
 4. No need to redo COMMIT/ABORT/BEGIN records
 
-**Phase 3 â†’ Undo:**
+**Phase 3 Ã¢â€ â€™ Undo:**
 1. Collect all ACTIVE transactions from the TT (the losers)
 2. Build a list of log records to undo (starting from each loser's LastLSN)
 3. Process records in LSN order (descending):
@@ -1985,7 +1985,7 @@ ARIES (Algorithm for Recovery and Isolation Exploiting Semantics) is the industr
 4. Skip CLR records (they were already processed in a previous recovery attempt)
 5. Write ABORT END record when all losers are fully undone
 
-#### 11.7.5 Full Dry Run Trace Table â†’ ARIES Recovery
+#### 11.7.5 Full Dry Run Trace Table Ã¢â€ â€™ ARIES Recovery
 
 Initial disk state: P1=100, P2=200, P3=300.
 
@@ -2003,7 +2003,7 @@ Initial disk state: P1=100, P2=200, P3=300.
 | 100 | <T3, UPDATE, P3, 300, 150> | 75 | 250 | 150(dirty) | | | |
 | --- CRASH --- | | LOST | LOST | LOST | 100 | 200 | 300 |
 
-**Phase 1 â†’ Analysis:**
+**Phase 1 Ã¢â€ â€™ Analysis:**
 Read last BEGIN_CHECKPOINT (LSN 10). Load TT={}, DPT={}.
 Scan forward from LSN 10:
 - LSN 30: T1 BEGIN -> TT: {T1: ACTIVE, lastLSN=30}
@@ -2015,10 +2015,10 @@ Scan forward from LSN 10:
 - LSN 90: T3 BEGIN -> TT: {T1: C, T2: ACTIVE, lastLSN=80, T3: ACTIVE, lastLSN=90}
 - LSN 100: T3 UPDATE P3 -> TT: {T1: C, T2: A, lastLSN=80, T3: A, lastLSN=100}, DPT: {P1: 40, P2: 50, P3: 100}
 - REDO LSN = min(40, 50, 100) = **40**
-- Winners (REDO set): {T1, T2, T3} â†’ all transactions are redone
-- Losers (UNDO set): {T2, T3} â†’ active at crash time
+- Winners (REDO set): {T1, T2, T3} Ã¢â€ â€™ all transactions are redone
+- Losers (UNDO set): {T2, T3} Ã¢â€ â€™ active at crash time
 
-**Phase 2 â†’ Redo:**
+**Phase 2 Ã¢â€ â€™ Redo:**
 Start from LSN 40. For each UPDATE, check DPT and page LSN.
 
 | LSN | Page | In DPT? | Current PageLSN | Action | New Disk Value |
@@ -2030,7 +2030,7 @@ Start from LSN 40. For each UPDATE, check DPT and page LSN.
 
 After Redo: P1=75, P2=250, P3=150.
 
-**Phase 3 â†’ Undo:**
+**Phase 3 Ã¢â€ â€™ Undo:**
 Losers: T2 (lastLSN=80), T3 (lastLSN=100).
 Process in descending LSN order.
 
@@ -2039,9 +2039,9 @@ Undo T2 and T3, starting from highest LastLSN (T3=100):
 | Step | LSN | TID | Action | New Disk Value | CLR Written |
 |------|-----|-----|--------|----------------|-------------|
 | 1 | 100 | T3 | Undo: P3=300 | P3=300 | <110, CLR, T3, UndoNext=90, P3, Redo=150> |
-| 2 | 90 | T3 | BEGIN â†’ skip | | |
+| 2 | 90 | T3 | BEGIN Ã¢â€ â€™ skip | | |
 | 3 | 80 | T2 | Undo: P1=50 | P1=50 | <120, CLR, T2, UndoNext=70, P1, Redo=75> |
-| 4 | 70 | T2 | BEGIN â†’ skip | | |
+| 4 | 70 | T2 | BEGIN Ã¢â€ â€™ skip | | |
 | 5 | | T2 | ABORT END | | <T2, ABORT> |
 | 6 | | T3 | ABORT END | | <T3, ABORT> |
 
@@ -2301,7 +2301,7 @@ If the system crashes during recovery itself, ARIES starts over from the beginni
 
 | Advantage | Disadvantage |
 |-----------|-------------|
-| Industry standard, well-proven | Complexity â†’ three phases, multiple data structures |
+| Industry standard, well-proven | Complexity Ã¢â€ â€™ three phases, multiple data structures |
 | Idempotent recovery via CLRs | CLRs add log volume |
 | Works with STEAL/NO-FORCE (best perf) | Analysis phase must scan from checkpoint |
 | Repeating history is simple and robust | Undo of long-running transactions is slow |
@@ -2331,7 +2331,7 @@ Shadow paging is an alternative to log-based recovery that uses **copy-on-write*
 1. The database maintains a **current page table** pointing to the current versions of all pages
 2. When a page is modified, a new copy is written to a free disk block
 3. The current page table is updated atomically to point to the new copy
-4. The old page remains on disk as the "shadow" â†’ if the transaction aborts, the page table is simply reverted
+4. The old page remains on disk as the "shadow" Ã¢â€ â€™ if the transaction aborts, the page table is simply reverted
 
 **Real-World Analogy:** Insurance adjusters handle claims by making photocopies of every document before writing notes on them. If the adjuster makes a mistake, the original is still in the file. Only when the claim is finalized (committed) do they replace the originals with the annotated copies.
 
@@ -2374,7 +2374,7 @@ PROCEDURE ShadowPaging_Abort():
     currentPageTablePtr = shadowPtr
 ```
 
-#### 11.8.2 Dry Run Trace Table â†’ Shadow Paging
+#### 11.8.2 Dry Run Trace Table Ã¢â€ â€™ Shadow Paging
 
 Initial state: Page table at disk address 1000, pointing to P1@block5 (value=100), P2@block10 (value=200).
 
@@ -2644,7 +2644,7 @@ Shadow paging wins only in specialized scenarios where instant recovery is param
 
 ARIES is designed for exactly this scenario. The recovery process is **idempotent**:
 1. On the first attempt, some pages are redone and some CLRs are written during undo
-2. Crash occurs during undo â†’ some CLRs on disk, some not
+2. Crash occurs during undo Ã¢â€ â€™ some CLRs on disk, some not
 3. On restart, Analysis finds both the original log and the CLRs
 4. Redo phase reapplies everything, including the CLRs (which restore correct post-undo state)
 5. Undo phase skips CLRs and uses UndoNextLSN to continue from where it left off
@@ -2705,7 +2705,7 @@ recovery_target_xid = '1234567'
 1. Take base backup: `pg_basebackup -D /backup/2026-06-09`
 2. Configure `restore_command` to fetch WAL archives
 3. Configure `recovery_target_time` to the desired point
-4. Start the server â†’ it enters recovery mode automatically
+4. Start the server Ã¢â€ â€™ it enters recovery mode automatically
 5. Server reaches target time, stops recovery, promotes to normal mode
 
 #### 11.11.2 MySQL InnoDB Redo Log
@@ -2731,8 +2731,8 @@ MySQL's InnoDB storage engine uses a redo log for crash recovery:
 4. **Undo rollback:** The undo log (stored in the tablespace, not separate) is used to roll back uncommitted transactions
 
 **InnoDB vs. PostgreSQL WAL differences:**
-- InnoDB uses a circular redo log (fixed size) â†’ old records are overwritten by checkpoints
-- PostgreSQL uses append-only WAL segments â†’ old segments are recycled or archived
+- InnoDB uses a circular redo log (fixed size) Ã¢â€ â€™ old records are overwritten by checkpoints
+- PostgreSQL uses append-only WAL segments Ã¢â€ â€™ old segments are recycled or archived
 - InnoDB's undo is stored in the tablespace files; PostgreSQL stores undo information in the WAL itself
 
 #### 11.11.3 Oracle Undo and Redo
@@ -2746,7 +2746,7 @@ Oracle Database has separate redo and undo subsystems:
 - Redo is managed by Log Writer (LGWR) background process
 
 **Undo Segments:**
-- Separate from redo â†’ undo data is stored in undo tablespaces
+- Separate from redo Ã¢â€ â€™ undo data is stored in undo tablespaces
 - Undo records for transaction rollback, read consistency (MVCC), and flashback queries
 - Managed by background processes (SMON for recovery, PMON for transaction cleanup)
 
@@ -2808,19 +2808,19 @@ COMMIT;
 -- mysqlbinlog mysql-bin.000001 | mysql -u root
 ```
 
-> **One-Sentence Takeaway:** SQL recovery commands â†’ SAVEPOINT, ROLLBACK TO, and COMMIT â†’ give developers fine-grained control over transaction boundaries without waiting for crashes.
+> **One-Sentence Takeaway:** SQL recovery commands Ã¢â€ â€™ SAVEPOINT, ROLLBACK TO, and COMMIT Ã¢â€ â€™ give developers fine-grained control over transaction boundaries without waiting for crashes.
 
 ### 11.14 Recovery in Distributed Systems
 
 
 Distributed transactions require the **Two-Phase Commit (2PC)** protocol:
 
-**Phase 1 â†’ Prepare:**
+**Phase 1 Ã¢â€ â€™ Prepare:**
 1. Coordinator sends PREPARE to all participants
 2. Each participant writes prepare log record
 3. Each participant responds YES (ready) or NO (abort)
 
-**Phase 2 â†’ Commit/Abort:**
+**Phase 2 Ã¢â€ â€™ Commit/Abort:**
 1. If ALL responded YES: Coordinator writes COMMIT log record, sends COMMIT to all
 2. If ANY responded NO: Coordinator writes ABORT log record, sends ABORT to all
 3. Participants write the final log record and acknowledge
@@ -2897,7 +2897,7 @@ The code below simulates crash recovery using Write-Ahead Logging (WAL) with RED
 
 ```typescript
 // ============================================================
-// WAL Crash Recovery Simulator â€” TypeScript
+// WAL Crash Recovery Simulator Ã¢â‚¬â€ TypeScript
 // ============================================================
 
 enum LogEntryType { BEGIN, UPDATE, COMMIT, ABORT, CHECKPOINT }
@@ -2943,7 +2943,7 @@ class WALSimulator {
 
   abort(txId: number): void {
     this.writeLog(LogEntryType.ABORT, txId);
-    console.log('[WAL] TX ' + txId + ' ABORTED â€” UNDO in progress');
+    console.log('[WAL] TX ' + txId + ' ABORTED Ã¢â‚¬â€ UNDO in progress');
     // UNDO: revert all changes by this transaction (reverse scan)
     for (let i = this.log.length - 1; i >= 0; i--) {
       const entry = this.log[i];
@@ -2964,7 +2964,7 @@ class WALSimulator {
 
   recover(): void {
     console.log('=== CRASH RECOVERY START ===');
-    // Phase 1: Analysis â€” find dirty pages and in-flight transactions
+    // Phase 1: Analysis Ã¢â‚¬â€ find dirty pages and in-flight transactions
     const dirtyPages = new Map<string, number>();
     const activeTxs = new Set<number>();
     let lastCheckpointLSN = 0;
@@ -2980,7 +2980,7 @@ class WALSimulator {
     console.log(' Dirty pages: ' + [...dirtyPages.keys()].join(', '));
     console.log(' Active transactions at crash: ' + (activeTxs.size > 0 ? [...activeTxs].join(', ') : 'none'));
 
-    // Phase 2: REDO â€” replay all changes from the earliest dirty page LSN
+    // Phase 2: REDO Ã¢â‚¬â€ replay all changes from the earliest dirty page LSN
     console.log('\n--- REDO Phase ---');
     for (const entry of this.log) {
       if (entry.type === LogEntryType.UPDATE && entry.afterImage !== undefined) {
@@ -2990,7 +2990,7 @@ class WALSimulator {
     }
     this.flushLog();
 
-    // Phase 3: UNDO â€” roll back all uncommitted transactions
+    // Phase 3: UNDO Ã¢â‚¬â€ roll back all uncommitted transactions
     console.log('\n--- UNDO Phase ---');
     for (const txId of activeTxs) {
       this.abort(txId);
@@ -3083,11 +3083,11 @@ flowchart TD
 
 - **11.1:** Database failures fall into four categories: transaction, system, media, and catastrophic.
 - **11.2:** Storage hierarchy (volatile, non-volatile, stable) determines what survives crashes.
-- **11.3:** The STEAL/NO-FORCE buffer policy requires both undo and redo â†’ and is used by all major DBMS.
+- **11.3:** The STEAL/NO-FORCE buffer policy requires both undo and redo Ã¢â€ â€™ and is used by all major DBMS.
 - **11.4:** Write-Ahead Logging ensures the log record is written to stable storage before the data page.
 - **11.5:** UNDO logging reverts losers; REDO logging replays winners; UNDO/REDO does both.
 - **11.6:** Checkpoints limit recovery time by establishing a known-safe restart point.
-- **11.7:** ARIES uses three phases â†’ Analysis, Redo, Undo â†’ with CLRs for idempotent recovery.
+- **11.7:** ARIES uses three phases Ã¢â€ â€™ Analysis, Redo, Undo Ã¢â€ â€™ with CLRs for idempotent recovery.
 - **11.8:** Shadow paging trades concurrency for instant recovery via copy-on-write.
 - **11.9:** Media recovery combines full backups with WAL archives for point-in-time recovery.
 - **11.10:** ARIES is the industry standard because it balances performance, concurrency, and recoverability.

@@ -1,4 +1,4 @@
-# Chapter 20: Zero Trust & Enterprise Security Architecture
+﻿# Chapter 20: Zero Trust & Enterprise Security Architecture
 
 ## Learning Objectives
 
@@ -7,31 +7,31 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/cyber-security/20-zero-trust-architecture/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/cyber-security/20-zero-trust-architecture/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/20-zero-trust-architecture/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/cyber-security/20-zero-trust-architecture/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/cyber-security/20-zero-trust-architecture/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/cyber-security/20-zero-trust-architecture/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/20-zero-trust-architecture/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/cyber-security/20-zero-trust-architecture/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/cyber-security/20-zero-trust-architecture/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/cyber-security/20-zero-trust-architecture/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/20-zero-trust-architecture/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/cyber-security/20-zero-trust-architecture/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
 <!-- End Image Gallery -->
 
 1.  **Trace** the historical evolution of Zero Trust from Forrester's 2010 initiative through NIST SP 800-207 and industry adoption at Google BeyondCorp.
-2.  **Explain** the seven core principles of Zero Trust—never trust/always verify, assume breach, least privilege, microsegmentation, and continuous validation.
+2.  **Explain** the seven core principles of Zero Trustâ€”never trust/always verify, assume breach, least privilege, microsegmentation, and continuous validation.
 3.  **Diagram** the NIST SP 800-207 logical architecture including the Policy Engine (PE), Policy Administrator (PA), and Policy Enforcement Point (PEP).
 4.  **Differentiate** between the control plane and data plane in a Zero Trust architecture and describe their separation.
 5.  **Analyze** the SASE framework as the convergence of SD-WAN and SSE (CASB, SWG, ZTNA) and evaluate its role in enterprise security.
 6.  **Implement** a working Zero Trust Policy Engine in TypeScript that evaluates user, device, location, and behavioral context before granting access.
 7.  **Design** a microsegmentation policy generator that translates service dependencies into concrete firewall rule sets.
 8.  **Construct** a continuous trust score algorithm that follows the NIST SP 800-077 guidance for attribute-based validation.
-9.  **Compare** major Zero Trust vendors—Zscaler, Palo Alto Networks, Cloudflare, and Microsoft—across ZTNA, SASE, and microsegmentation capabilities.
-10. **Assess** an organization's Zero Trust maturity using the CISA Zero Trust Maturity Model (Traditional → Advanced → Optimal).
+9.  **Compare** major Zero Trust vendorsâ€”Zscaler, Palo Alto Networks, Cloudflare, and Microsoftâ€”across ZTNA, SASE, and microsegmentation capabilities.
+10. **Assess** an organization's Zero Trust maturity using the CISA Zero Trust Maturity Model (Traditional â†’ Advanced â†’ Optimal).
 
 ---
 
@@ -39,7 +39,7 @@ By the end of this chapter, you will be able to:
 
 ### 20.1.1 The Perimeter Security Paradigm
 
-For decades, enterprise security followed the **castle-and-moat** model. A hardened perimeter (firewalls, VPNs, IDS/IPS) protected internal resources, while anything inside the network was implicitly trusted. Once an attacker breached the perimeter—through a phishing email, a compromised VPN credential, or an insider threat—they could move laterally with little resistance.
+For decades, enterprise security followed the **castle-and-moat** model. A hardened perimeter (firewalls, VPNs, IDS/IPS) protected internal resources, while anything inside the network was implicitly trusted. Once an attacker breached the perimeterâ€”through a phishing email, a compromised VPN credential, or an insider threatâ€”they could move laterally with little resistance.
 
 This model collapsed under three converging pressures:
 
@@ -53,11 +53,11 @@ This model collapsed under three converging pressures:
 
 The term **Zero Trust** was coined in 2010 by **John Kindervag**, then a principal analyst at Forrester Research. In his seminal report *"No More Chewy Centers: Introducing The Zero Trust Model Of Information Security"*, Kindervag argued that organizations must eliminate the concept of trust from their networks entirely.
 
-> *"Zero Trust is not about making the network trust users and devices; it is about eliminating trust altogether."* — John Kindervag
+> *"Zero Trust is not about making the network trust users and devices; it is about eliminating trust altogether."* â€” John Kindervag
 
-Kindervag's original model centered on the **Zero Trust network** concept, which used next-generation firewalls (NGFWs) as the primary enforcement point. All traffic—regardless of source—had to pass through inspection, logging, and policy evaluation.
+Kindervag's original model centered on the **Zero Trust network** concept, which used next-generation firewalls (NGFWs) as the primary enforcement point. All trafficâ€”regardless of sourceâ€”had to pass through inspection, logging, and policy evaluation.
 
-### 20.1.3 Google BeyondCorp (2011–2014)
+### 20.1.3 Google BeyondCorp (2011â€“2014)
 
 In 2011, Google began developing **BeyondCorp**, an internal initiative to enable employees to work from any untrusted network without a traditional VPN. The project was motivated by a sophisticated attack (Operation Aurora) that exploited VPN trust.
 
@@ -81,7 +81,7 @@ Key NIST SP 800-207 contributions:
 - Trust algorithm concept based on multiple attribute sources
 - Deployment scenario guidance: macro-segmentation, micro-segmentation, and agent-based models
 
-### 20.1.5 CISA Zero Trust Maturity Model (2021–2023)
+### 20.1.5 CISA Zero Trust Maturity Model (2021â€“2023)
 
 The **Cybersecurity and Infrastructure Security Agency (CISA)** published its **Zero Trust Maturity Model** in 2021 (updated 2023), providing a government-focused roadmap.
 
@@ -106,7 +106,7 @@ The model defines five pillars across three maturity levels:
 
 ### 20.2.1 Never Trust, Always Verify
 
-No entity—user, device, application, or network—is trusted by default. Every access request must be authenticated, authorized, and validated before granting access. Verification occurs continuously throughout the session, not just at login.
+No entityâ€”user, device, application, or networkâ€”is trusted by default. Every access request must be authenticated, authorized, and validated before granting access. Verification occurs continuously throughout the session, not just at login.
 
 ```typescript
 // Principle: Never trust, always verify
@@ -133,7 +133,7 @@ interface VerificationResult {
 }
 
 function verifyAccess(request: AccessRequest): VerificationResult {
-  // No implicit trust — every attribute is evaluated
+  // No implicit trust â€” every attribute is evaluated
   const trustScore = calculateTrustScore(request);
 
   const requiredSteps: string[] = [];
@@ -324,9 +324,9 @@ NIST SP 800-207 defines seven logical components that together form a Zero Trust
 | Policy Administrator | PA | Establishes and revokes sessions based on PE decisions |
 | Policy Enforcement Point | PEP | Enforces access (allow/deny/inspect) at the communication path |
 | Identity Provider | IdP | Manages user identities and authentication |
-| Data Access Policies | — | Rules governing access to resources |
+| Data Access Policies | â€” | Rules governing access to resources |
 | Public Key Infrastructure | PKI | Issues and manages certificates |
-| SIEM / Logging | — | Collects and analyzes telemetry for continuous validation |
+| SIEM / Logging | â€” | Collects and analyzes telemetry for continuous validation |
 
 ### 20.3.2 Policy Engine, Administrator, and Enforcement Point
 
@@ -398,7 +398,7 @@ interface DataPlaneMessage {
   payload: Record<string, unknown>;
 }
 
-// The PEP only speaks to the PA — never directly to the PE
+// The PEP only speaks to the PA â€” never directly to the PE
 class PolicyEnforcementPoint {
   private paEndpoint: string;
   private pepId: string;
@@ -413,7 +413,7 @@ class PolicyEnforcementPoint {
       payload: { ...request },
     };
 
-    // Send to PA (control plane) — NOT to PE directly
+    // Send to PA (control plane) â€” NOT to PE directly
     const response = await fetch(`${this.paEndpoint}/evaluate`, {
       method: "POST",
       body: JSON.stringify(dataPlaneMsg),
@@ -459,18 +459,18 @@ class PolicyEnforcementPoint {
 **Secure Access Service Edge (SASE)** was introduced by Gartner in 2019. It converges wide-area networking (WAN) with network security services into a single, cloud-delivered platform.
 
 ```
-┌─────────────────────────────────────────────────────┐
-│                    SASE Platform                       │
-├───────────────────┬─────────────────────────────────┤
-│   SD-WAN Layer     │        SSE Layer                  │
-│   (Networking)     │   (Security Service Edge)         │
-├───────────────────┼─────────────────────────────────┤
-│  • WAN optimization │  • ZTNA (Zero Trust Access)       │
-│  • Bandwidth mgmt   │  • CASB (Cloud Access Broker)    │
-│  • Traffic steering │  • SWG (Secure Web Gateway)      │
-│  • QoS              │  • FWaaS (Firewall as a Service) │
-│  • Last-mile mgmt   │  • DLP (Data Loss Prevention)    │
-└───────────────────┴─────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚                    SASE Platform                       â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚   SD-WAN Layer     â”‚        SSE Layer                  â”‚
+â”‚   (Networking)     â”‚   (Security Service Edge)         â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚  â€¢ WAN optimization â”‚  â€¢ ZTNA (Zero Trust Access)       â”‚
+â”‚  â€¢ Bandwidth mgmt   â”‚  â€¢ CASB (Cloud Access Broker)    â”‚
+â”‚  â€¢ Traffic steering â”‚  â€¢ SWG (Secure Web Gateway)      â”‚
+â”‚  â€¢ QoS              â”‚  â€¢ FWaaS (Firewall as a Service) â”‚
+â”‚  â€¢ Last-mile mgmt   â”‚  â€¢ DLP (Data Loss Prevention)    â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### 20.4.2 SD-WAN (Software-Defined WAN)
@@ -706,7 +706,7 @@ class SasePolicyEnforcer {
 
 ### 20.5.3 Identity-Aware Proxy
 
-The core of ZTNA is the **identity-aware proxy**—a reverse proxy that authenticates every request before routing it to the application.
+The core of ZTNA is the **identity-aware proxy**â€”a reverse proxy that authenticates every request before routing it to the application.
 
 ```typescript
 interface IdentityAwareProxyConfig {
@@ -845,7 +845,7 @@ class IdentityAwareProxy {
 
 ### 20.6.1 The Problem with Flat Networks
 
-In a traditional flat network, an attacker who compromises a single web server can use that server as a pivot point to reach database servers, Active Directory, or backup systems—all on the same L2/L3 network segment.
+In a traditional flat network, an attacker who compromises a single web server can use that server as a pivot point to reach database servers, Active Directory, or backup systemsâ€”all on the same L2/L3 network segment.
 
 ### 20.6.2 Microsegmentation Approaches
 
@@ -1890,7 +1890,7 @@ class TokenValidationService {
 Zero Trust policies must be machine-readable, version-controlled, and automatically testable. **Policy as code** (pioneered by Open Policy Agent / OPA) enables this.
 
 ```typescript
-// ─── AST (Abstract Syntax Tree) for policy language ───
+// â”€â”€â”€ AST (Abstract Syntax Tree) for policy language â”€â”€â”€
 
 type PolicyValue =
   | { type: "string"; value: string }
@@ -1923,7 +1923,7 @@ interface PolicyDocument {
   defaultEffect: "allow" | "deny";
 }
 
-// ─── Context for policy evaluation ───
+// â”€â”€â”€ Context for policy evaluation â”€â”€â”€
 
 interface EvaluationContext {
   user: {
@@ -1952,7 +1952,7 @@ interface EvaluationContext {
   };
 }
 
-// ─── Policy Parser and Evaluator ───
+// â”€â”€â”€ Policy Parser and Evaluator â”€â”€â”€
 
 class PolicyEngine {
   private documents: PolicyDocument[] = [];
@@ -2070,7 +2070,7 @@ class PolicyEngine {
   }
 }
 
-// ─── Example Policy ───
+// â”€â”€â”€ Example Policy â”€â”€â”€
 
 const policy: PolicyDocument = {
   apiVersion: "ztp/v1",
@@ -2125,7 +2125,7 @@ const policy: PolicyDocument = {
   defaultEffect: "deny",
 };
 
-// ─── Evaluation Example ───
+// â”€â”€â”€ Evaluation Example â”€â”€â”€
 
 const engine = new PolicyEngine();
 engine.loadPolicy(policy);
@@ -2181,7 +2181,7 @@ console.log("Matched Rule:", result.matchedRule);
 
 ## 20.13 Zero Trust Implementation Roadmap
 
-### Phase 1: Foundation (Months 1–3)
+### Phase 1: Foundation (Months 1â€“3)
 
 | Activity | Deliverable |
 |----------|-------------|
@@ -2191,7 +2191,7 @@ console.log("Matched Rule:", result.matchedRule);
 | Create device health baseline | Device attestation policies |
 | Define data classification tiers | Data sensitivity matrix |
 
-### Phase 2: Access Control (Months 4–6)
+### Phase 2: Access Control (Months 4â€“6)
 
 | Activity | Deliverable |
 |----------|-------------|
@@ -2201,7 +2201,7 @@ console.log("Matched Rule:", result.matchedRule);
 | Implement microsegmentation for critical tiers | East-west traffic rules |
 | Deploy SASE for branch office connectivity | SD-WAN + SSE |
 
-### Phase 3: Continuous Validation (Months 7–9)
+### Phase 3: Continuous Validation (Months 7â€“9)
 
 | Activity | Deliverable |
 |----------|-------------|
@@ -2211,7 +2211,7 @@ console.log("Matched Rule:", result.matchedRule);
 | Deploy DLP for sensitive data | Data loss prevention |
 | Conduct Zero Trust penetration test | Security validation |
 
-### Phase 4: Optimization (Months 10–12)
+### Phase 4: Optimization (Months 10â€“12)
 
 | Activity | Deliverable |
 |----------|-------------|
@@ -2285,8 +2285,8 @@ Score interpretation:
 
 ## Summary
 
-- **Zero Trust** originated with John Kindervag at Forrester in 2010, was operationalized by Google BeyondCorp (2011–2014), standardized by **NIST SP 800-207** (2020), and organized into maturity tiers by **CISA**.
-- The five core principles—**never trust/always verify, assume breach, least privilege, microsegmentation, and continuous validation**—form the philosophical foundation of every Zero Trust implementation.
+- **Zero Trust** originated with John Kindervag at Forrester in 2010, was operationalized by Google BeyondCorp (2011â€“2014), standardized by **NIST SP 800-207** (2020), and organized into maturity tiers by **CISA**.
+- The five core principlesâ€”**never trust/always verify, assume breach, least privilege, microsegmentation, and continuous validation**â€”form the philosophical foundation of every Zero Trust implementation.
 - **NIST SP 800-207** defines a logical architecture with seven components, centered on the Policy Engine (PE), Policy Administrator (PA), and Policy Enforcement Point (PEP), with strict **control plane / data plane separation**.
 - **SASE** converges SD-WAN with SSE (CASB, SWG, ZTNA, FWaaS) into a single cloud-delivered platform, eliminating the distinction between network and security teams.
 - **ZTNA** replaces VPNs with identity-aware, per-session application access. Two models dominate: **client-initiated** (Zscaler, Cloudflare) and **service-initiated** (Appgate, Microsoft Entra).
@@ -2294,7 +2294,7 @@ Score interpretation:
 - **IAM** in Zero Trust extends beyond SSO to include **continuous authentication** (behavioral biometrics) and **risk-based conditional access** that adapts in real time.
 - **Device health attestation** leveraging **TPM 2.0**, secure boot, and confidential computing provides hardware-rooted assurance that endpoints are trustworthy.
 - **Policy as code** (OPA-style) enables version-controlled, automatically tested security policies that integrate into CI/CD pipelines.
-- The **CISA Zero Trust Maturity Model** provides a structured assessment across five pillars (Identity, Device, Network, Application, Data) and three maturity levels (Traditional → Advanced → Optimal).
+- The **CISA Zero Trust Maturity Model** provides a structured assessment across five pillars (Identity, Device, Network, Application, Data) and three maturity levels (Traditional â†’ Advanced â†’ Optimal).
 
 ---
 
@@ -2321,7 +2321,7 @@ Score interpretation:
 <summary>Solution</summary>
 
 ### Exercise 1: Implement a Risk Score Aggregator
-Extend the `NistTrustAlgorithm` class to support **temporal decay**—attributes older than a configurable threshold should contribute less to the overall trust score. Use a half-life formula where the attribute weight decays exponentially.
+Extend the `NistTrustAlgorithm` class to support **temporal decay**â€”attributes older than a configurable threshold should contribute less to the overall trust score. Use a half-life formula where the attribute weight decays exponentially.
 
 ### Exercise 2: Multi-Cloud Microsegmentation
 Extend the `MicrosegmentationPolicyEngine` to generate firewall rules for multiple cloud providers simultaneously. Add a `cloudProvider` field to `ServiceDependency` and generate separate rule sets for AWS (Security Groups), Azure (NSGs), and GCP (Firewall Rules).

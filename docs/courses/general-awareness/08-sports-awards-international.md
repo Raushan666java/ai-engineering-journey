@@ -1,4 +1,4 @@
-# Chapter 8: Sports, Awards & International Organizations
+﻿# Chapter 8: Sports, Awards & International Organizations
 
 ## Learning Objectives
 
@@ -7,35 +7,35 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/general-awareness/08-sports-awards-international/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/general-awareness/08-sports-awards-international/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/general-awareness/08-sports-awards-international/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/general-awareness/08-sports-awards-international/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/general-awareness/08-sports-awards-international/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/general-awareness/08-sports-awards-international/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/general-awareness/08-sports-awards-international/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/general-awareness/08-sports-awards-international/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/general-awareness/08-sports-awards-international/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/general-awareness/08-sports-awards-international/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/general-awareness/08-sports-awards-international/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/general-awareness/08-sports-awards-international/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
 <!-- End Image Gallery -->
 
-- Recall winners of major sports tournaments — Olympics, Cricket World Cup, FIFA, Asian Games, Commonwealth Games
-- Identify India's national awards — Bharat Ratna, Padma awards, Gallantry awards, and their recent recipients
-- List international awards — Nobel Prize, Oscar, Booker Prize, Pulitzer, Fields Medal, and 2024–2026 winners
+- Recall winners of major sports tournaments â€” Olympics, Cricket World Cup, FIFA, Asian Games, Commonwealth Games
+- Identify India's national awards â€” Bharat Ratna, Padma awards, Gallantry awards, and their recent recipients
+- List international awards â€” Nobel Prize, Oscar, Booker Prize, Pulitzer, Fields Medal, and 2024â€“2026 winners
 - Describe the structure and organs of the United Nations and its specialised agencies
 - Explain the roles of IMF, World Bank, WTO, and other international financial institutions
-- Distinguish between regional organisations — NATO, SAARC, BRICS, G20, SCO, ASEAN
-- Recall major global reports — HDI, GHI, WEF Global Competitiveness, WJP Rule of Law
+- Distinguish between regional organisations â€” NATO, SAARC, BRICS, G20, SCO, ASEAN
+- Recall major global reports â€” HDI, GHI, WEF Global Competitiveness, WJP Rule of Law
 - Solve exam-level MCQs on sports, awards, and international organisations with confidence
 
 ---
 
 ## Theory
 
-### 8.1 Sports Tournaments — Major Events
+### 8.1 Sports Tournaments â€” Major Events
 
 #### 8.1.1 Olympics
 
@@ -43,11 +43,11 @@ The Olympic Games are the world's foremost multi-sport event, held every four ye
 
 | Edition | Year | Host City | Key Highlights for India |
 |---------|------|-----------|--------------------------|
-| Paris Olympics | 2024 | Paris, France | India won 6 medals (1 Silver, 5 Bronze) — Neeraj Chopra (Silver, Javelin), Manu Bhaker (2 Bronze, Shooting), Swapnil Kusale (Bronze, Shooting), Sarabjot Singh (Bronze, Shooting), Hockey Team (Bronze) |
+| Paris Olympics | 2024 | Paris, France | India won 6 medals (1 Silver, 5 Bronze) â€” Neeraj Chopra (Silver, Javelin), Manu Bhaker (2 Bronze, Shooting), Swapnil Kusale (Bronze, Shooting), Sarabjot Singh (Bronze, Shooting), Hockey Team (Bronze) |
 | Los Angeles | 2028 | Los Angeles, USA | Next Summer Olympics; cricket included as new sport |
 | Brisbane | 2032 | Brisbane, Australia | Future Summer Olympics |
 
-**Medal Tally — Paris 2024 (Top 5):**
+**Medal Tally â€” Paris 2024 (Top 5):**
 
 | Rank | Country | Gold | Silver | Bronze | Total |
 |------|---------|------|--------|--------|-------|
@@ -56,7 +56,7 @@ The Olympic Games are the world's foremost multi-sport event, held every four ye
 | 3 | Japan | 20 | 12 | 13 | 45 |
 | 4 | Australia | 18 | 19 | 16 | 53 |
 | 5 | France | 16 | 26 | 22 | 64 |
-| — | India | 0 | 1 | 5 | 6 |
+| â€” | India | 0 | 1 | 5 | 6 |
 
 #### 8.1.2 Cricket World Cups
 
@@ -67,7 +67,7 @@ The Olympic Games are the world's foremost multi-sport event, held every four ye
 | ODI World Cup | 2027 | TBD | TBD | South Africa / Zimbabwe / Namibia |
 | T20 World Cup | 2026 | TBD | TBD | India / Sri Lanka |
 
-**ICC T20 World Cup 2024 — Key Facts:**
+**ICC T20 World Cup 2024 â€” Key Facts:**
 - India defeated South Africa by 7 runs in the final (Bridgetown, Barbados)
 - Virat Kohli scored 76 in the final and was Player of the Match
 - Jasprit Bumrah was Player of the Tournament (15 wickets, economy 4.17)
@@ -96,7 +96,7 @@ The Olympic Games are the world's foremost multi-sport event, held every four ye
 | Edition | Year | Host | India's Medal Count | Rank |
 |---------|------|------|--------------------|------|
 | Birmingham | 2022 | England | 61 (22G, 16S, 23B) | 4th |
-| Victoria | 2026 | Australia (cancelled) | — | — |
+| Victoria | 2026 | Australia (cancelled) | â€” | â€” |
 | Glasgow | 2026 | Scotland (new host) | TBD | TBD |
 
 #### 8.1.6 Other Major Tournaments
@@ -141,10 +141,10 @@ India's highest civilian award, awarded for exceptional service in any field.
 
 | Award | Purpose | Notable Recent |
 |-------|---------|----------------|
-| Param Vir Chakra | Highest gallantry award (wartime) | — |
-| Ashok Chakra | Highest gallantry award (peacetime) | — |
-| Shaurya Chakra | Third-highest peacetime gallantry | — |
-| Vir Chakra | Wartime gallantry | — |
+| Param Vir Chakra | Highest gallantry award (wartime) | â€” |
+| Ashok Chakra | Highest gallantry award (peacetime) | â€” |
+| Shaurya Chakra | Third-highest peacetime gallantry | â€” |
+| Vir Chakra | Wartime gallantry | â€” |
 
 **Key Facts:**
 - Param Vir Chakra has been awarded 21 times, 20 posthumously
@@ -185,12 +185,12 @@ India's highest civilian award, awarded for exceptional service in any field.
 
 | Category | Winner(s) | Work / Contribution |
 |----------|-----------|---------------------|
-| Physics | — | — |
-| Chemistry | — | — |
-| Medicine | — | — |
-| Literature | — | — |
-| Peace | — | — |
-| Economics | — | — |
+| Physics | â€” | â€” |
+| Chemistry | â€” | â€” |
+| Medicine | â€” | â€” |
+| Literature | â€” | â€” |
+| Peace | â€” | â€” |
+| Economics | â€” | â€” |
 
 #### 8.3.3 Other Major International Awards
 
@@ -204,7 +204,7 @@ India's highest civilian award, awarded for exceptional service in any field.
 | Turing Award | Computer Science | 2023: Avi Wigderson (computational complexity) |
 | Templeton Prize | Religion/Spirituality | 2024: Pumla Gobodo-Madikizela (racial healing) |
 | Magsaysay Award | Public Service | 2024: Farwiza Farhan (conservation), The Tokyo Rebels (activism) |
-| Grammy Awards | Music | 2024: Taylor Swift (Album of Year — "Midnights") |
+| Grammy Awards | Music | 2024: Taylor Swift (Album of Year â€” "Midnights") |
 | Man Booker International | Translated Fiction | 2024: "Kairos" by Jenny Erpenbeck (tr. Michael Hofmann) |
 
 ### 8.4 United Nations
@@ -231,7 +231,7 @@ flowchart TD
     ICJ --> ICJ1[15 Judges, 9-year terms]
     ICJ --> ICJ2[Hague, Netherlands]
     SEC --> SEC1[Secretary-General]
-    SEC1 --> SG[António Guterres<br/>Term: 2017-2026]
+    SEC1 --> SG[AntÃ³nio Guterres<br/>Term: 2017-2026]
 ```
 
 #### 8.4.2 Principal Organs
@@ -277,7 +277,7 @@ flowchart TD
 
 **India & UN Agencies:**
 - India was a founding member of the UN (1945)
-- India has served 8 times as a non-permanent member of the Security Council (most recently 2021–22)
+- India has served 8 times as a non-permanent member of the Security Council (most recently 2021â€“22)
 - India contributes the third-largest troop contingent to UN Peacekeeping (after Bangladesh and Nepal)
 - India's permanent representative to the UN: Ruchira Kamboj (as of 2024)
 
@@ -301,7 +301,7 @@ flowchart TD
 - **Global Financial Stability Report (GFSR):** Assessment of financial markets
 - **Article IV Consultation:** Bilateral assessment of each member's economy
 
-**India GDP Growth Forecast (IMF WEO — 2024–25):**
+**India GDP Growth Forecast (IMF WEO â€” 2024â€“25):**
 - 2024-25: ~6.5%
 - 2025-26: ~6.3%
 - India is the fastest-growing major economy
@@ -317,7 +317,7 @@ flowchart TD
 | ICSID (Int. Centre for Settlement of Investment Disputes) | Dispute resolution |
 
 **Key Facts:**
-- President: Ajay Banga (first Indian-American to head the World Bank, 2023–present)
+- President: Ajay Banga (first Indian-American to head the World Bank, 2023â€“present)
 - HQ: Washington DC
 - India is the largest recipient of IDA funds historically
 
@@ -329,9 +329,9 @@ flowchart TD
 | HQ | Geneva, Switzerland |
 | Director-General | Ngozi Okonjo-Iweala (first African, first woman) |
 | Membership | 164 countries |
-| Principle | Most-Favoured-Nation (MFN) — equal treatment for all trading partners |
+| Principle | Most-Favoured-Nation (MFN) â€” equal treatment for all trading partners |
 | Decision-making | Consensus-based (one country, one vote) |
-| Dispute Settlement | Binding mechanism — Dispute Settlement Body (DSB) |
+| Dispute Settlement | Binding mechanism â€” Dispute Settlement Body (DSB) |
 
 **Key WTO Concepts:**
 - **MFN (Most Favoured Nation):** Any trade advantage given to one member must be given to all
@@ -351,11 +351,11 @@ flowchart TD
 |--------|--------|
 | Founded | 4 April 1949 (North Atlantic Treaty) |
 | HQ | Brussels, Belgium |
-| Members | 32 (as of 2024 — Finland joined 2023, Sweden joined 2024) |
-| Principle | Collective defence (Article 5 — an attack on one is an attack on all) |
+| Members | 32 (as of 2024 â€” Finland joined 2023, Sweden joined 2024) |
+| Principle | Collective defence (Article 5 â€” an attack on one is an attack on all) |
 | Secretary General | Mark Rutte (as of 2024) |
 
-**Article 5 Invoked: Only once** — after 9/11 attacks (2001) in support of the USA.
+**Article 5 Invoked: Only once** â€” after 9/11 attacks (2001) in support of the USA.
 
 #### 8.6.2 SAARC (South Asian Association for Regional Cooperation)
 
@@ -418,7 +418,7 @@ flowchart TD
 | OPEC+ | 2016 | Vienna | 23 (OPEC + allies) | Broader oil market influence |
 | African Union | 2002 | Addis Ababa | 55 | Continental cooperation |
 | Commonwealth of Nations | 1931 | London | 56 | Former British colonies |
-| NAM (Non-Aligned Movement) | 1961 | — | 120 | Neutral during Cold War |
+| NAM (Non-Aligned Movement) | 1961 | â€” | 120 | Neutral during Cold War |
 | IORA (Indian Ocean Rim Assoc.) | 1997 | Ebene (Mauritius) | 23 | Indian Ocean cooperation |
 
 ### 8.7 Major Global Reports & Indices
@@ -438,7 +438,7 @@ flowchart TD
 | Global Innovation Index (GII) | WIPO | Innovation ecosystem | 39th |
 | Environmental Performance Index (EPI) | Yale & Columbia | Environmental health | 176th |
 | Sustainable Development Goals (SDG) Index | UN / SDSN | SDG progress | 112th |
-| Global Terrorism Index (GTI) | IEP | Terrorism impact | — |
+| Global Terrorism Index (GTI) | IEP | Terrorism impact | â€” |
 | Passport Index | Henley & Partners | Visa-free travel | 85th (62 destinations) |
 
 **Key Trend for India:**
@@ -494,9 +494,9 @@ class InternationalOrgQuiz {
       {
         id: 2,
         question: 'Who is the current Secretary-General of the United Nations?',
-        options: ['Ban Ki-moon', 'António Guterres', 'Kofi Annan', 'Kristalina Georgieva'],
+        options: ['Ban Ki-moon', 'AntÃ³nio Guterres', 'Kofi Annan', 'Kristalina Georgieva'],
         correctIndex: 1,
-        explanation: 'António Guterres (Portugal) has been UN Secretary-General since 1 January 2017. His second term runs through 31 December 2026.'
+        explanation: 'AntÃ³nio Guterres (Portugal) has been UN Secretary-General since 1 January 2017. His second term runs through 31 December 2026.'
       },
       {
         id: 3,
@@ -553,7 +553,7 @@ Q1: Which of the following is NOT a permanent member of the UN Security Council?
 
 Q2: Who is the current Secretary-General of the United Nations?
   A. Ban Ki-moon
-  B. António Guterres
+  B. AntÃ³nio Guterres
   C. Kofi Annan
   D. Kristalina Georgieva
 
@@ -622,7 +622,7 @@ class SportsAwardsQuiz {
   showResults(): void {
     console.log('Sports & Awards Quiz Results:');
     this.questions.forEach(q => {
-      console.log(`Q${q.id}: ✅ ${q.explanation}`);
+      console.log(`Q${q.id}: âœ… ${q.explanation}`);
     });
   }
 }
@@ -635,11 +635,11 @@ saQuiz.showResults();
 **Output:**
 ```
 Sports & Awards Quiz Results:
-Q1: ✅ India defeated South Africa by 7 runs in the final...
-Q2: ✅ Bharat Ratna is India's highest civilian award...
-Q3: ✅ India won 6 medals at Paris 2024...
-Q4: ✅ John Hopfield and Geoffrey Hinton won the 2024 Nobel Prize in Physics...
-Q5: ✅ Argentina defeated France 4-2 on penalties...
+Q1: âœ… India defeated South Africa by 7 runs in the final...
+Q2: âœ… Bharat Ratna is India's highest civilian award...
+Q3: âœ… India won 6 medals at Paris 2024...
+Q4: âœ… John Hopfield and Geoffrey Hinton won the 2024 Nobel Prize in Physics...
+Q5: âœ… Argentina defeated France 4-2 on penalties...
 ```
 
 ---
@@ -719,7 +719,7 @@ D) Satwik-Chirag
 <summary>Answer</summary>
 **Answer: B) Neeraj Chopra**
 
-Neeraj Chopra won the Silver medal in Javelin Throw at Paris 2024 with a best throw of 89.45m, finishing behind Pakistan's Arshad Nadeem (92.97m — Olympic Record).
+Neeraj Chopra won the Silver medal in Javelin Throw at Paris 2024 with a best throw of 89.45m, finishing behind Pakistan's Arshad Nadeem (92.97m â€” Olympic Record).
 </details>
 
 ---
@@ -950,9 +950,9 @@ Australia defeated India in the 2023 WTC Final at The Oval. The 2025 WTC Final (
 
 **Q20:** Which of the following correctly matches the UN agency with its headquarters?
 
-A) WHO — Geneva
-B) UNESCO — New York
-C) FAO — Rome
+A) WHO â€” Geneva
+B) UNESCO â€” New York
+C) FAO â€” Rome
 D) Both A and C
 
 <details>
@@ -964,7 +964,7 @@ WHO is headquartered in Geneva, Switzerland. FAO is headquartered in Rome, Italy
 
 ---
 
-### 8.9 Sports — Playgrounds, Number of Players, and Stadiums
+### 8.9 Sports â€” Playgrounds, Number of Players, and Stadiums
 
 #### 8.7.1 National Sports of Selected Countries
 
@@ -1013,7 +1013,7 @@ WHO is headquartered in Geneva, Switzerland. FAO is headquartered in Rome, Italy
 | Lord's Cricket Ground | London, England | 31,100 | Cricket | MCC (The "Home of Cricket") |
 | Wembley Stadium | London, England | 90,000 | Football | England national team |
 | Camp Nou | Barcelona, Spain | 99,354 | Football | FC Barcelona |
-| Maracanã | Rio de Janeiro, Brazil | 78,838 | Football | Brazil national team |
+| MaracanÃ£ | Rio de Janeiro, Brazil | 78,838 | Football | Brazil national team |
 | Old Trafford | Manchester, England | 74,310 | Football | Manchester United |
 | Bird's Nest | Beijing, China | 80,000 | Multi-purpose | 2008 Olympics |
 | Madison Square Garden | New York, USA | 20,789 | Basketball, Concerts | NY Knicks |
@@ -1021,7 +1021,7 @@ WHO is headquartered in Geneva, Switzerland. FAO is headquartered in Rome, Italy
 | Arthur Ashe Stadium | New York, USA | 23,771 | Tennis | US Open |
 | Stade de France | Paris, France | 81,338 | Rugby, Football | France national teams |
 
-### 8.10 Books and Authors — Exam Reference
+### 8.10 Books and Authors â€” Exam Reference
 
 | Book | Author | Year | Subject/Theme |
 |------|--------|------|---------------|
@@ -1068,9 +1068,9 @@ WHO is headquartered in Geneva, Switzerland. FAO is headquartered in Rome, Italy
 | Petra | Jordan | Rock-cut architecture; "Rose City" |
 | Christ the Redeemer | Rio de Janeiro, Brazil | 38m statue atop Corcovado mountain |
 | Machu Picchu | Peru | Incan citadel in the Andes (2,430 m) |
-| Chichén Itzá | Mexico | Mayan pyramid (El Castillo) |
+| ChichÃ©n ItzÃ¡ | Mexico | Mayan pyramid (El Castillo) |
 | Colosseum | Rome, Italy | Ancient Roman amphitheatre (80 CE) |
-| Taj Mahal | Agra, India | Mughal marble mausoleum (1632–1653) |
+| Taj Mahal | Agra, India | Mughal marble mausoleum (1632â€“1653) |
 
 **UNESCO World Heritage Sites in India (Selected Tallies):**
 - **Total:** 43 (as of 2024)
@@ -1079,7 +1079,7 @@ WHO is headquartered in Geneva, Switzerland. FAO is headquartered in Rome, Italy
 - **Mixed:** 1 site
 - **Latest additions:** Santiniketan (2023), Sacred Ensembles of the Hoysalas (2023), Moidams of Ahom Dynasty (2024)
 
-### 8.12 Sobriquets (Nicknames) — Exam Quick Reference
+### 8.12 Sobriquets (Nicknames) â€” Exam Quick Reference
 
 | Name/Nickname | Person/Place | Reason |
 |---------------|--------------|--------|
@@ -1182,14 +1182,14 @@ console.log(`\nIndia total medals: 6 (0 Gold, 1 Silver, 5 Bronze)`);
 console.log(`USA Gold%: ${olympicData.goldToTotalRatio('USA')}`);
 ```
 
-**Example 2: Economy Data Interpretation — Budget Allocation Analysis**
+**Example 2: Economy Data Interpretation â€” Budget Allocation Analysis**
 
-The following table shows India's Union Budget 2025-26 allocation by sector (in ₹ lakh crore). A typical DI question would ask: "What percentage of total expenditure is allocated to Defence?"
+The following table shows India's Union Budget 2025-26 allocation by sector (in â‚¹ lakh crore). A typical DI question would ask: "What percentage of total expenditure is allocated to Defence?"
 
 ```typescript
 interface BudgetAllocation {
   sector: string;
-  allocation: number; // in ₹ lakh crore
+  allocation: number; // in â‚¹ lakh crore
 }
 
 const budget2025: BudgetAllocation[] = [
@@ -1204,7 +1204,7 @@ const budget2025: BudgetAllocation[] = [
 ];
 
 const totalBudget = budget2025.reduce((sum, item) => sum + item.allocation, 0);
-console.log(`Total Budget 2025-26: ₹${totalBudget} lakh crore`);
+console.log(`Total Budget 2025-26: â‚¹${totalBudget} lakh crore`);
 budget2025.forEach(item => {
   const pct = ((item.allocation / totalBudget) * 100).toFixed(1);
   console.log(`${item.sector}: ${pct}% of total`);
@@ -1291,7 +1291,7 @@ The Arjuna Award (for outstanding performance in sports) was instituted in 1961.
 - **Sports:** India won 6 medals at Paris Olympics 2024 (1 Silver, 5 Bronze); won T20 World Cup 2024; Hangzhou Asian Games yielded 107 medals
 - **National Awards:** Bharat Ratna is India's highest civilian award; Padma awards are given in three categories; Maj Dhyan Chand Khel Ratna is the highest sporting honour
 - **International Awards:** Nobel Prizes for 2024 recognised AI (Physics), protein design (Chemistry), microRNA (Medicine); "Orbital" won Booker 2024
-- **United Nations:** 6 principal organs, 193 member states, 5 permanent SC members with veto power, Secretary-General António Guterres
+- **United Nations:** 6 principal organs, 193 member states, 5 permanent SC members with veto power, Secretary-General AntÃ³nio Guterres
 - **Financial Institutions:** IMF (Washington DC, Kristalina Georgieva), World Bank (Washington DC, Ajay Banga), WTO (Geneva, Ngozi Okonjo-Iweala)
 - **Regional Bodies:** BRICS expanded to 10 members in 2024; G20 Rio 2024 launched Global Alliance Against Hunger; NATO expanded to 32 members (Sweden joined 2024)
 - **Reports:** India ranks 134th in HDI, 39th in Global Innovation Index, 93rd in Corruption Perceptions Index
@@ -1301,11 +1301,11 @@ The Arjuna Award (for outstanding performance in sports) was instituted in 1961.
 ## Practical Takeaways
 
 1. **Sports Questions in Exams:** Most questions focus on winners of recent tournaments (last 2 years), India's medal count in Olympics/Asian Games, and first-of categories (first Indian to win X, first woman to Y).
-2. **Nobel Prize Trick:** Memorise the category, winner(s), and ONE-line reason. Use mnemonics: "PHY-CHEM-MED-LIT-PEACE-ECO" — note that Economics is technically the "Sveriges Riksbank Prize."
-3. **UN Agencies HQ Mnemonic:** "GPS-New, WHO-Geneva, FAO-Rome, UNESCO-Paris, UNEP-Nairobi" — learn these 5 and you cover 80% of exam questions.
-4. **WTO vs IMF vs World Bank:** IMF = short-term balance of payments; World Bank = long-term development loans; WTO = trade rules. They never overlap in exam questions — distinguish by purpose.
+2. **Nobel Prize Trick:** Memorise the category, winner(s), and ONE-line reason. Use mnemonics: "PHY-CHEM-MED-LIT-PEACE-ECO" â€” note that Economics is technically the "Sveriges Riksbank Prize."
+3. **UN Agencies HQ Mnemonic:** "GPS-New, WHO-Geneva, FAO-Rome, UNESCO-Paris, UNEP-Nairobi" â€” learn these 5 and you cover 80% of exam questions.
+4. **WTO vs IMF vs World Bank:** IMF = short-term balance of payments; World Bank = long-term development loans; WTO = trade rules. They never overlap in exam questions â€” distinguish by purpose.
 5. **SAARC vs BRICS vs G20:** G20 includes both developed and developing nations (largest). BRICS is emerging economies. SAARC is South Asia only. NATO is military alliance.
-6. **Reports & Indices:** Match report → publishing body. HDI → UNDP. GHI → Concern Worldwide. CPI → Transparency International. GII → WIPO. This is a high-yield area.
+6. **Reports & Indices:** Match report â†’ publishing body. HDI â†’ UNDP. GHI â†’ Concern Worldwide. CPI â†’ Transparency International. GII â†’ WIPO. This is a high-yield area.
 7. **National Awards Order:** Bharat Ratna > Padma Vibhushan > Padma Bhushan > Padma Shri. Param Vir Chakra > Ashok Chakra > Shaurya Chakra. Remember the hierarchy.
 
 ---
@@ -1483,7 +1483,7 @@ D) Security Council Organisation
 **15.** Who is the current Director-General of the WTO?
 A) Kristalina Georgieva
 B) Ngozi Okonjo-Iweala
-C) Roberto Azevêdo
+C) Roberto AzevÃªdo
 D) Pascal Lamy
 
 **16.** Which Indian shooter won two Bronze medals at Paris 2024?

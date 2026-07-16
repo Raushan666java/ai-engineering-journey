@@ -1,8 +1,8 @@
-# Resume Building, LinkedIn Optimization & Aptitude Crash Course
+﻿# Resume Building, LinkedIn Optimization & Aptitude Crash Course
 
 > **Previous:** None (First Chapter) | **Next:** [Chapter 2: DSA Coding Problem Bank](./02-dsa-problem-bank.md)
 
-> **Module 1 of Placement Preparation Series** — Your complete guide to getting shortlisted, impressing on LinkedIn, and cracking aptitude rounds.
+> **Module 1 of Placement Preparation Series** â€” Your complete guide to getting shortlisted, impressing on LinkedIn, and cracking aptitude rounds.
 
 ---
 
@@ -10,16 +10,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/placement-preparation/01-resume-aptitude/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/placement-preparation/01-resume-aptitude/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/placement-preparation/01-resume-aptitude/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/placement-preparation/01-resume-aptitude/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/placement-preparation/01-resume-aptitude/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/placement-preparation/01-resume-aptitude/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/placement-preparation/01-resume-aptitude/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/placement-preparation/01-resume-aptitude/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/placement-preparation/01-resume-aptitude/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/placement-preparation/01-resume-aptitude/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/placement-preparation/01-resume-aptitude/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/placement-preparation/01-resume-aptitude/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -32,7 +32,7 @@
 | Resume Building | 6-second recruiter scan decides shortlisting | Quantify achievements, use action verbs, single-column ATS-friendly format |
 | LinkedIn Optimization | Recruiters actively search LinkedIn for candidates | Complete profile, post content, build network strategically |
 | Aptitude Crash Course | Quantitative, logical, and verbal sections test speed | Pattern recognition and time management matter more than advanced math |
-| Cover Letter Writing | Differentiates you when GPAs are similar | 4-paragraph formula: Hook → Relevance → Differentiation → Close |
+| Cover Letter Writing | Differentiates you when GPAs are similar | 4-paragraph formula: Hook â†’ Relevance â†’ Differentiation â†’ Close |
 | GitHub Profile | Second thing recruiters check after resume | Pin 6 best repos, maintain contribution graph, write good READMEs |
 | ATS Optimization | Automated filters reject 75% of resumes | Use standard headers, no tables, optimize keywords from JD |
 
@@ -75,10 +75,10 @@ Recruiters and ATS (Applicant Tracking Systems) decide in 6 seconds:
 
 **The 6-second rule in practice:**
 - Top third of page must contain: Name, Skills, Education CGPA, and one strong project
-- ATS parses before a human sees it → use standard section headers (no fancy icons)
+- ATS parses before a human sees it â†’ use standard section headers (no fancy icons)
 - Font size: 10-12pt body, 14-16pt name. Margins: 0.5-0.75 inches
 
-### 1.3 Quantifying Achievements (Before → After)
+### 1.3 Quantifying Achievements (Before â†’ After)
 
 
 Recruiters don't read responsibilities; they read impact. Every bullet should follow:
@@ -125,14 +125,14 @@ Recruiters don't read responsibilities; they read impact. Every bullet should fo
 | Team player, client handling | High availability, CI/CD | Concurrency, performance |
 | Analytical skills | Product thinking | Research, innovation |
 
-> **Pro Tip:** Tailor your skills section to each job description → if the posting emphasizes Redis and microservices, those should be listed prominently, not buried at the bottom. ATS systems weight keywords by position and frequency. Keep your master list long, but trim to 8â€“12 relevant technologies per application.
+> **Pro Tip:** Tailor your skills section to each job description â†’ if the posting emphasizes Redis and microservices, those should be listed prominently, not buried at the bottom. ATS systems weight keywords by position and frequency. Keep your master list long, but trim to 8Ã¢â‚¬â€œ12 relevant technologies per application.
 
 ### 1.5 Common Mistakes (And How to Fix Them)
 
 
 | Mistake | Why It Hurts | Fix |
 |---------|-------------|-----|
-| Spelling/grammar errors | Looks careless → instant reject | Read aloud, use Grammarly, get 2 friends to proofread |
+| Spelling/grammar errors | Looks careless â†’ instant reject | Read aloud, use Grammarly, get 2 friends to proofread |
 | Including photo, age, gender | Biases hiring decisions, wastes space | Remove completely |
 | "Responsible for" bullets | Passive, boring, vague | Start with action verbs, quantify |
 | CGPA &lt; 7.0 with no explanation | Red flag | Omit or explain (e.g., "major GPA: 8.2") |
@@ -141,7 +141,7 @@ Recruiters don't read responsibilities; they read impact. Every bullet should fo
 | PDF with password/permissions | ATS cannot read it | Save as standard PDF without restrictions |
 | Including irrelevant high school data | Filler | Remove unless exceptional achievement |
 | Font inconsistencies | Looks unprofessional | Use one font throughout (Calibri, Roboto, Garamond) |
-| Exaggerating or lying | Caught in interview → blacklisted | Always honest; frame modest achievements well |
+| Exaggerating or lying | Caught in interview â†’ blacklisted | Always honest; frame modest achievements well |
 
 ### 1.6 Sample Resume 1: Service-Based Company (TCS, Infosys, Wipro)
 
@@ -172,31 +172,31 @@ Platforms:       AWS (EC2, S3), Heroku
 PROJECTS
 
 Student Portal Backend  |  Java, Spring Boot, MySQL  |  Jan 2024 - Apr 2024
-â€¢ Architected RESTful APIs for a college portal serving 5,000+ users with role-based
+Ã¢â‚¬Â¢ Architected RESTful APIs for a college portal serving 5,000+ users with role-based
   access (Admin, Faculty, Student)
-â€¢ Implemented JWT authentication, OTP-based password reset, and paginated course listings
-â€¢ Reduced API response time by 35% through connection pooling and query optimization
-â€¢ Deployed on AWS EC2 with automated CI/CD via GitHub Actions and Docker
+Ã¢â‚¬Â¢ Implemented JWT authentication, OTP-based password reset, and paginated course listings
+Ã¢â‚¬Â¢ Reduced API response time by 35% through connection pooling and query optimization
+Ã¢â‚¬Â¢ Deployed on AWS EC2 with automated CI/CD via GitHub Actions and Docker
 
 E-Commerce Inventory Service  |  Python, Flask, PostgreSQL  |  Aug 2023 - Nov 2023
-â€¢ Built an inventory management microservice handling 10,000+ product records
-â€¢ Designed normalized database schema with 8 tables and implemented CRUD endpoints
-â€¢ Added barcode scanning integration and inventory threshold alerts via email
-â€¢ Achieved 95% test coverage using Pytest with unit and integration tests
+Ã¢â‚¬Â¢ Built an inventory management microservice handling 10,000+ product records
+Ã¢â‚¬Â¢ Designed normalized database schema with 8 tables and implemented CRUD endpoints
+Ã¢â‚¬Â¢ Added barcode scanning integration and inventory threshold alerts via email
+Ã¢â‚¬Â¢ Achieved 95% test coverage using Pytest with unit and integration tests
 
 INTERNSHIP
 
 TechCorp Solutions, Mumbai  |  Software Developer Intern  |  Jun 2024 - Aug 2024
-â€¢ Developed 12 REST API endpoints for an internal HRMS module using Spring Boot
-â€¢ Wrote JUnit tests achieving 85% code coverage on the leave-management service
-â€¢ Automated monthly report generation using Python scripts, saving 8 hours/cycle
-â€¢ Participated in daily stand-ups and sprint planning in an Agile team of 6
+Ã¢â‚¬Â¢ Developed 12 REST API endpoints for an internal HRMS module using Spring Boot
+Ã¢â‚¬Â¢ Wrote JUnit tests achieving 85% code coverage on the leave-management service
+Ã¢â‚¬Â¢ Automated monthly report generation using Python scripts, saving 8 hours/cycle
+Ã¢â‚¬Â¢ Participated in daily stand-ups and sprint planning in an Agile team of 6
 
 ACHIEVEMENTS
-â€¢ Secured top 5% in InfyTQ certification (All India Rank 1,240 among 80,000+)
-â€¢ CodeChef Rating 1,650 (3-star) | LeetCode Solved 180+ problems
-â€¢ NPTEL Elite certification: "Database Management Systems" (81% score)
-â€¢ Organized college techfest with 2,000+ attendees as Event Lead
+Ã¢â‚¬Â¢ Secured top 5% in InfyTQ certification (All India Rank 1,240 among 80,000+)
+Ã¢â‚¬Â¢ CodeChef Rating 1,650 (3-star) | LeetCode Solved 180+ problems
+Ã¢â‚¬Â¢ NPTEL Elite certification: "Database Management Systems" (81% score)
+Ã¢â‚¬Â¢ Organized college techfest with 2,000+ attendees as Event Lead
 ```
 
 ### 1.7 Sample Resume 2: Product-Based Company (Flipkart, Uber, Swiggy)
@@ -226,37 +226,37 @@ Infrastructure:  Docker, Kubernetes, AWS (ECS, RDS, ElastiCache), Terraform
 EXPERIENCE
 
 Razorpay  |  Software Engineering Intern  |  May 2024 - Jul 2024
-â€¢ Engineered a payment dispute resolution service in Go, processing 500+ disputes/day
+Ã¢â‚¬Â¢ Engineered a payment dispute resolution service in Go, processing 500+ disputes/day
   across 3 payment gateways with automated evidence submission
-â€¢ Reduced manual intervention by 60% via rule-based auto-escalation engine
-â€¢ Designed PostgreSQL sharding strategy handling 2M+ dispute records with <50ms P99 reads
-â€¢ Wrote comprehensive unit + integration tests achieving 92% coverage
+Ã¢â‚¬Â¢ Reduced manual intervention by 60% via rule-based auto-escalation engine
+Ã¢â‚¬Â¢ Designed PostgreSQL sharding strategy handling 2M+ dispute records with <50ms P99 reads
+Ã¢â‚¬Â¢ Wrote comprehensive unit + integration tests achieving 92% coverage
 
 Flipkart Grid 4.0  |  SDE Intern (Won)  |  Jan 2024 - Mar 2024
-â€¢ Built a real-time price intelligence dashboard tracking 100K+ products across 5 platforms
-â€¢ Implemented WebSocket-based live updates consuming 5M+ events/day via Kafka
-â€¢ Optimized React rendering reducing re-renders by 70% using virtualization and memoization
-â€¢ Awarded 2nd place nationally among 4,500+ teams
+Ã¢â‚¬Â¢ Built a real-time price intelligence dashboard tracking 100K+ products across 5 platforms
+Ã¢â‚¬Â¢ Implemented WebSocket-based live updates consuming 5M+ events/day via Kafka
+Ã¢â‚¬Â¢ Optimized React rendering reducing re-renders by 70% using virtualization and memoization
+Ã¢â‚¬Â¢ Awarded 2nd place nationally among 4,500+ teams
 
 PROJECTS
 
 URL Shortener (NanoLink)  |  Go, Redis, PostgreSQL, Docker  |  Sep 2024
-â€¢ Designed a distributed URL shortener supporting 10M+ redirects/day with base62 encoding
-â€¢ Achieved <5ms redirect latency using Redis caching with LRU eviction (hit rate: 94%)
-â€¢ Implemented rate limiting (token bucket), custom slugs, and click analytics dashboard
-â€¢ Load tested with k6: 15K RPS sustained at P99 latency of 12ms
+Ã¢â‚¬Â¢ Designed a distributed URL shortener supporting 10M+ redirects/day with base62 encoding
+Ã¢â‚¬Â¢ Achieved <5ms redirect latency using Redis caching with LRU eviction (hit rate: 94%)
+Ã¢â‚¬Â¢ Implemented rate limiting (token bucket), custom slugs, and click analytics dashboard
+Ã¢â‚¬Â¢ Load tested with k6: 15K RPS sustained at P99 latency of 12ms
 
 Real-Time Chat Platform  |  TypeScript, Node.js, WebSocket, Redis  |  Jun 2024
-â€¢ Built WebSocket-based chat handling 10K concurrent connections on a single node
-â€¢ Implemented horizontal scaling via Redis Pub/Sub across 4 instances
-â€¢ Added typing indicators, read receipts, offline message queuing (Redis streams)
-â€¢ Deployed on AWS ECS Fargate with auto-scaling based on connection count
+Ã¢â‚¬Â¢ Built WebSocket-based chat handling 10K concurrent connections on a single node
+Ã¢â‚¬Â¢ Implemented horizontal scaling via Redis Pub/Sub across 4 instances
+Ã¢â‚¬Â¢ Added typing indicators, read receipts, offline message queuing (Redis streams)
+Ã¢â‚¬Â¢ Deployed on AWS ECS Fargate with auto-scaling based on connection count
 
 ACHIEVEMENTS
-â€¢ CodeChef Rating 1,950 (5-star) | LeetCode: Knight badge (1,900+ rating, 350+ problems)
-â€¢ ICPC Regionals 2023: Rank 124 (team of 3) among 3,000+ teams
-â€¢ Google Code Jam 2024: Round 2 qualifier (Global Rank 1,850)
-â€¢ Published article: "Scaling WebSockets with Redis Pub/Sub" on Medium (2.5K+ reads)
+Ã¢â‚¬Â¢ CodeChef Rating 1,950 (5-star) | LeetCode: Knight badge (1,900+ rating, 350+ problems)
+Ã¢â‚¬Â¢ ICPC Regionals 2023: Rank 124 (team of 3) among 3,000+ teams
+Ã¢â‚¬Â¢ Google Code Jam 2024: Round 2 qualifier (Global Rank 1,850)
+Ã¢â‚¬Â¢ Published article: "Scaling WebSockets with Redis Pub/Sub" on Medium (2.5K+ reads)
 ```
 
 ### 1.8 Sample Resume 3: FAANG (Google, Microsoft, Amazon)
@@ -285,47 +285,47 @@ Infrastructure: Kubernetes, Istio, Prometheus, Grafana, Envoy
 
 EXPERIENCE
 
-Google Summer of Code → Apache Cassandra  |  Contributor  |  May 2024 - Aug 2024
-â€¢ Implemented an asynchronous compaction strategy in C++ that reduced write stalls by 40%
+Google Summer of Code â†’ Apache Cassandra  |  Contributor  |  May 2024 - Aug 2024
+Ã¢â‚¬Â¢ Implemented an asynchronous compaction strategy in C++ that reduced write stalls by 40%
   on write-heavy workloads by overlapping compaction with incoming mutations
-â€¢ Added comprehensive metrics via JMX for SSTable compaction progress tracking
-â€¢ Reviewed and merged 12 PRs; benchmarked against existing strategies using YCSB workloads
-â€¢ Mentored by PMC member; code shipped in Cassandra 5.1 release
+Ã¢â‚¬Â¢ Added comprehensive metrics via JMX for SSTable compaction progress tracking
+Ã¢â‚¬Â¢ Reviewed and merged 12 PRs; benchmarked against existing strategies using YCSB workloads
+Ã¢â‚¬Â¢ Mentored by PMC member; code shipped in Cassandra 5.1 release
 
 Amazon  |  SDE Intern (AWS Lambda)  |  Jan 2024 - Apr 2024
-â€¢ Optimized cold-start latency for Java Lambda functions by implementing a snap-start
+Ã¢â‚¬Â¢ Optimized cold-start latency for Java Lambda functions by implementing a snap-start
   mechanism that reduced init time from 1.2s to 180ms (85% improvement)
-â€¢ Built a profiling pipeline using async-profiler + FlameGraphs to identify
+Ã¢â‚¬Â¢ Built a profiling pipeline using async-profiler + FlameGraphs to identify
   ClassLoader bottlenecks in the sandbox bootstrap sequence
-â€¢ Delivered design doc, load-test results (1K concurrent invocations), and monitoring
+Ã¢â‚¬Â¢ Delivered design doc, load-test results (1K concurrent invocations), and monitoring
   dashboards to the team before shipping to 50% canary
 
 PROJECTS
 
 Distributed KV Store (GekkoDB)  |  C++, Raft, RocksDB  |  Sep 2024
-â€¢ Implemented a strongly-consistent distributed key-value store using the Raft consensus
+Ã¢â‚¬Â¢ Implemented a strongly-consistent distributed key-value store using the Raft consensus
   algorithm with leader election, log replication, and snapshotting
-â€¢ Achieved 22K writes/sec across 5 nodes with linearizable semantics verified by Jepsen
-â€¢ Added MVCC-based snapshot isolation and point-in-time recovery from WAL
-â€¢ Integration-tested with custom failure injection (network partitions, leader crashes)
+Ã¢â‚¬Â¢ Achieved 22K writes/sec across 5 nodes with linearizable semantics verified by Jepsen
+Ã¢â‚¬Â¢ Added MVCC-based snapshot isolation and point-in-time recovery from WAL
+Ã¢â‚¬Â¢ Integration-tested with custom failure injection (network partitions, leader crashes)
 
 Concurrent Web Server  |  Rust, Tokio, mio  |  Jun 2024
-â€¢ Built an event-driven HTTP/1.1 server from scratch using epoll (mio) with a
+Ã¢â‚¬Â¢ Built an event-driven HTTP/1.1 server from scratch using epoll (mio) with a
   thread-per-core architecture handling 50K+ concurrent connections
-â€¢ Implemented connection pooling, keep-alive, and graceful shutdown with SIGINT handling
-â€¢ Benchmarked at 120K req/s (static file) on a c5.large, outperforming nginx by 15%
+Ã¢â‚¬Â¢ Implemented connection pooling, keep-alive, and graceful shutdown with SIGINT handling
+Ã¢â‚¬Â¢ Benchmarked at 120K req/s (static file) on a c5.large, outperforming nginx by 15%
 
 POSITIONS OF RESPONSIBILITY
-â€¢ Teaching Assistant → CS302 (Data Structures), IIT Kanpur: Conducted tutorials for 80+
+Ã¢â‚¬Â¢ Teaching Assistant â†’ CS302 (Data Structures), IIT Kanpur: Conducted tutorials for 80+
   students, designed problem sets, graded exams (Spring 2024)
-â€¢ Competitive Programming Lead → Programming Club: Organized 8 intra-college contests
+Ã¢â‚¬Â¢ Competitive Programming Lead â†’ Programming Club: Organized 8 intra-college contests
   with 500+ participants; mentored junior teams for ACM ICPC
 
 ACHIEVEMENTS
-â€¢ ICPC Asia West Regionals 2023: Rank 47 | 2022: Rank 63
-â€¢ Google Code Jam 2024: Round 3 qualifier (Global Rank 412)
-â€¢ Codeforces: Candidate Master (Rating 1,902) | LeetCode: Guardian (2,100+)
-â€¢ Published research: "Efficient Cold-Start Mitigation in Serverless Computing" →
+Ã¢â‚¬Â¢ ICPC Asia West Regionals 2023: Rank 47 | 2022: Rank 63
+Ã¢â‚¬Â¢ Google Code Jam 2024: Round 3 qualifier (Global Rank 412)
+Ã¢â‚¬Â¢ Codeforces: Candidate Master (Rating 1,902) | LeetCode: Guardian (2,100+)
+Ã¢â‚¬Â¢ Published research: "Efficient Cold-Start Mitigation in Serverless Computing" â†’
   ACM SYSTOR 2024 (Poster, acceptance rate: 28%)
 ```
 
@@ -338,7 +338,7 @@ Before you submit, verify every item:
 [ ] Single page (unless >5 years experience)
 [ ] PDF format, file name: FirstName_LastName_CompanyName.pdf
 [ ] No spelling or grammar errors
-[ ] Font size â‰¥ 10pt body, consistent throughout
+[ ] Font size Ã¢â€°Â¥ 10pt body, consistent throughout
 [ ] Contact info: phone, email, LinkedIn, GitHub (links clickable in PDF)
 [ ] CGPA clearly listed (omit if < 6.5 unless asked)
 [ ] Education section: degree, college, CGPA, year
@@ -348,7 +348,7 @@ Before you submit, verify every item:
 [ ] No "I", "me", "my", "we", "our"
 [ ] No irrelevant hobbies (unless unique/impressive)
 [ ] No photo, age, gender, religion
-[ ] Consistent bullet style (all same delimiter: â€¢ or â€“)
+[ ] Consistent bullet style (all same delimiter: Ã¢â‚¬Â¢ or Ã¢â‚¬â€œ)
 [ ] Dates right-aligned or consistently formatted (Mon YYYY)
 [ ] GitHub links to projects that are well-documented (README, clean code)
 [ ] LinkedIn profile matches resume details
@@ -358,7 +358,7 @@ Before you submit, verify every item:
 
 ---
 
-> **One-Sentence Takeaway:** A strong resume quantifies achievements, uses action verbs, and follows ATS-friendly single-column formatting — the 6-second scan determines whether you advance.
+> **One-Sentence Takeaway:** A strong resume quantifies achievements, uses action verbs, and follows ATS-friendly single-column formatting â€” the 6-second scan determines whether you advance.
 
 ---
 
@@ -369,7 +369,7 @@ Your LinkedIn profile is your always-on resume. Recruiters search LinkedIn befor
 ### 2.1 Headline
 
 
-Your headline appears everywhere → search results, comments, messages. Don't just write "Student at ABC College".
+Your headline appears everywhere â†’ search results, comments, messages. Don't just write "Student at ABC College".
 
 **Formula:** `[Current Role] | [Key Skill 1] + [Key Skill 2] | [Target Role] | [What You Build]`
 
@@ -400,7 +400,7 @@ PARA 3: What you're looking for + call to action
 
 > I'm a final-year CS student at NIT Surathkal building distributed systems and full-stack applications. I specialize in Go, Java, and TypeScript with a focus on high-throughput, low-latency backend services.
 >
-> During my internship at Razorpay, I engineered a payment dispute resolution service handling 500+ daily cases across 3 gateways, reducing manual intervention by 60%. At Flipkart Grid 4.0, I built a real-time price dashboard processing 5M+ events/day via Kafka → winning 2nd place nationally.
+> During my internship at Razorpay, I engineered a payment dispute resolution service handling 500+ daily cases across 3 gateways, reducing manual intervention by 60%. At Flipkart Grid 4.0, I built a real-time price dashboard processing 5M+ events/day via Kafka â†’ winning 2nd place nationally.
 >
 > I'm seeking SDE-1 roles in product engineering teams working on scalable infrastructure or developer tooling. Open to Bangalore, Hyderabad, and remote opportunities. Feel free to connect or DM for referrals!
 
@@ -415,7 +415,7 @@ PARA 3: What you're looking for + call to action
 ### 2.3 Experience & Projects Section
 
 
-Same rules as resume → quantified, action-verb-driven → but LinkedIn allows more context.
+Same rules as resume â†’ quantified, action-verb-driven â†’ but LinkedIn allows more context.
 
 - **Write 2-3 bullets per entry** (not the full resume, but enough to interest)
 - **Include media** (screenshots, demo links, GitHub repos, articles)
@@ -429,7 +429,7 @@ Same rules as resume → quantified, action-verb-driven → but LinkedIn allows 
 |----------|-----|
 | List max 50 skills (LinkedIn limit) | More skills = more search keywords |
 | Pin top 3 skills | These appear first in search results |
-| Skill assessment badges | Take LinkedIn assessments for Java, SQL, Python → badges boost credibility |
+| Skill assessment badges | Take LinkedIn assessments for Java, SQL, Python â†’ badges boost credibility |
 | Ask peers to endorse specific skills | Higher endorsement counts = higher search ranking |
 | Prioritize in-demand skills | Java, Spring Boot, SQL, React, C++, Python, AWS, Docker, Kubernetes |
 
@@ -442,22 +442,22 @@ Posting on LinkedIn builds your brand. You don't need to be an influencer; 1-2 p
 
 | Type | Example Topics | Best Time |
 |------|---------------|-----------|
-| Project showcase | "Built a URL shortener handling 10M+ redirects → here's the architecture" | When you finish a project |
-| Interview experience | "My Google interview journey → 4 rounds, what I learned" | During placement season |
-| Learning in public | "Today I learned about Raft consensus → visual explanation" | Weekly |
-| Achievement | "Won Flipkart Grid 4.0 → here's what we built" | When you win |
+| Project showcase | "Built a URL shortener handling 10M+ redirects â†’ here's the architecture" | When you finish a project |
+| Interview experience | "My Google interview journey â†’ 4 rounds, what I learned" | During placement season |
+| Learning in public | "Today I learned about Raft consensus â†’ visual explanation" | Weekly |
+| Achievement | "Won Flipkart Grid 4.0 â†’ here's what we built" | When you win |
 | Repost + insight | Share a tech article + your 2-line take | 2-3x/week |
 | Referral request | "Looking for SDE referrals at [Company]" | During hiring season |
 
 **Post template (project showcase):**
 
-> [Hook → 1 sentence on the problem]
+> [Hook â†’ 1 sentence on the problem]
 >
 > Built [Project Name] using [Tech Stack]. It does [what] and achieved [metric].
 >
 > Key challenges I solved:
-> â€¢ [Challenge 1] → [solution]
-> â€¢ [Challenge 2] → [solution]
+> Ã¢â‚¬Â¢ [Challenge 1] â†’ [solution]
+> Ã¢â‚¬Â¢ [Challenge 2] â†’ [solution]
 >
 > Results: [N users | X% improvement | Y latency]
 >
@@ -474,28 +474,28 @@ A referral multiplies your resume visibility by 10x at most companies.
 
 ```
 Step 1: Find the person
-  → LinkedIn search: "SDE [Company]" → filter by 1st/2nd degree
-  → Target: alumni from your college or mutual connections
+  â†’ LinkedIn search: "SDE [Company]" â†’ filter by 1st/2nd degree
+  â†’ Target: alumni from your college or mutual connections
 
 Step 2: Connection request (no referral ask yet)
-  → "Hi [Name] → I'm a [year] student at [College] also pursuing SDE roles.
+  â†’ "Hi [Name] â†’ I'm a [year] student at [College] also pursuing SDE roles.
      Would love to connect and learn about your experience at [Company]."
 
 Step 3: After they accept (wait 2-3 days)
-  → "Hi [Name], thanks for connecting! I'm preparing for SDE interviews and
+  â†’ "Hi [Name], thanks for connecting! I'm preparing for SDE interviews and
      noticed you're at [Company]. Would you have 10 minutes this week for a
      quick chat about your team and interview process?"
 
 Step 4: After the chat (within 24 hours)
-  → Thank them. Then (if they offered): "Based on our conversation, I'm
+  â†’ Thank them. Then (if they offered): "Based on our conversation, I'm
      excited about [Team/Role]. Would you be comfortable referring me?"
 
 Step 5: Send them your resume + job ID + 2-line pitch
-  → Make it as easy as possible for them to forward
+  â†’ Make it as easy as possible for them to forward
 ```
 
 **Golden rules:**
-- Never ask for a referral in the first message → build a tiny relationship first
+- Never ask for a referral in the first message â†’ build a tiny relationship first
 - Always research the person's role and team before messaging
 - Apply to the job *before* asking for referral (check the portal)
 - Have your resume ready in the format they ask for
@@ -519,12 +519,12 @@ This is a **quick reference** for campus placement aptitude tests. For the GATE-
 
 | Concept | Formula |
 |---------|---------|
-| Percentage change | `((New - Old) / Old) Ã— 100` |
-| Successive increase | `a + b + (ab/100)` → two increments of a% and b% |
-| Discount | `MP Ã— (100 - D%) / 100 = SP` |
-| Profit % | `(Profit / CP) Ã— 100` |
-| Population after n years | `P Ã— (1 + r/100)^n` |
-| Depreciation after n years | `P Ã— (1 - r/100)^n` |
+| Percentage change | `((New - Old) / Old) Ãƒâ€” 100` |
+| Successive increase | `a + b + (ab/100)` â†’ two increments of a% and b% |
+| Discount | `MP Ãƒâ€” (100 - D%) / 100 = SP` |
+| Profit % | `(Profit / CP) Ãƒâ€” 100` |
+| Population after n years | `P Ãƒâ€” (1 + r/100)^n` |
+| Depreciation after n years | `P Ãƒâ€” (1 - r/100)^n` |
 
 #### Time, Speed & Distance
 
@@ -533,8 +533,8 @@ This is a **quick reference** for campus placement aptitude tests. For the GATE-
 | Speed | `Distance / Time` |
 | Relative speed (same direction) | `|S1 - S2|` |
 | Relative speed (opposite) | `S1 + S2` |
-| Average speed (equal distances) | `(2ab) / (a + b)` → harmonic mean |
-| Time to meet (two bodies) | `Distance / (S1 + S2)` → opposite |
+| Average speed (equal distances) | `(2ab) / (a + b)` â†’ harmonic mean |
+| Time to meet (two bodies) | `Distance / (S1 + S2)` â†’ opposite |
 | Train crossing pole | `Length / Speed` |
 | Train crossing platform | `(Train Length + Platform Length) / Speed` |
 | Boat upstream | `Speed(b) - Speed(r)` |
@@ -544,16 +544,16 @@ This is a **quick reference** for campus placement aptitude tests. For the GATE-
 
 - If `A : B = x : y` and `B : C = p : q`, then `A : B : C = xp : yp : yq`
 - If `A : B = p : q` and `B : C = r : s`, then `A : C = pr : qs`
-- If `A = kB` (A directly proportional to B) → `A1/B1 = A2/B2`
-- If `A = k/B` (A inversely proportional to B) → `A1 Ã— B1 = A2 Ã— B2`
+- If `A = kB` (A directly proportional to B) â†’ `A1/B1 = A2/B2`
+- If `A = k/B` (A inversely proportional to B) â†’ `A1 Ãƒâ€” B1 = A2 Ãƒâ€” B2`
 
 #### Averages
 
 | Concept | Formula |
 |---------|---------|
 | Average | `Sum / Count` |
-| Weighted average | `(w1Ã—a1 + w2Ã—a2 + ...) / (w1 + w2 + ...)` |
-| Combined average (two groups) | `(n1Ã—a1 + n2Ã—a2) / (n1 + n2)` |
+| Weighted average | `(w1Ãƒâ€”a1 + w2Ãƒâ€”a2 + ...) / (w1 + w2 + ...)` |
+| Combined average (two groups) | `(n1Ãƒâ€”a1 + n2Ãƒâ€”a2) / (n1 + n2)` |
 | Age average (after n years) | Each person's age increases by n |
 
 #### Profit, Loss & Discount
@@ -562,29 +562,29 @@ This is a **quick reference** for campus placement aptitude tests. For the GATE-
 |---------|---------|
 | Profit | `SP - CP` (when SP > CP) |
 | Loss | `CP - SP` (when CP > SP) |
-| Profit % | `(Profit / CP) Ã— 100` |
-| Loss % | `(Loss / CP) Ã— 100` |
+| Profit % | `(Profit / CP) Ãƒâ€” 100` |
+| Loss % | `(Loss / CP) Ãƒâ€” 100` |
 | Discount | `MP - SP` |
-| Discount % | `(Discount / MP) Ã— 100` |
+| Discount % | `(Discount / MP) Ãƒâ€” 100` |
 | Successive discount | `a + b - (ab/100)` for two discounts a% and b% |
 
 #### Simple & Compound Interest
 
 | Concept | Formula |
 |---------|---------|
-| Simple Interest | `SI = (P Ã— R Ã— T) / 100` |
+| Simple Interest | `SI = (P Ãƒâ€” R Ãƒâ€” T) / 100` |
 | Amount (SI) | `P + SI` |
-| Compound Interest | `CI = P Ã— (1 + R/100)^T - P` |
-| Amount (CI) | `P Ã— (1 + R/100)^T` |
-| Half-yearly CI | `P Ã— (1 + R/200)^(2T)` |
-| Quarterly CI | `P Ã— (1 + R/400)^(4T)` |
+| Compound Interest | `CI = P Ãƒâ€” (1 + R/100)^T - P` |
+| Amount (CI) | `P Ãƒâ€” (1 + R/100)^T` |
+| Half-yearly CI | `P Ãƒâ€” (1 + R/200)^(2T)` |
+| Quarterly CI | `P Ãƒâ€” (1 + R/400)^(4T)` |
 
 #### Permutations & Combinations
 
 | Concept | Formula |
 |---------|---------|
 | nPr | `n! / (n-r)!` |
-| nCr | `n! / (r! Ã— (n-r)!)` |
+| nCr | `n! / (r! Ãƒâ€” (n-r)!)` |
 | Circular permutation (n distinct) | `(n-1)!` |
 | Arrangements with repetition | `n^k` |
 
@@ -594,8 +594,8 @@ This is a **quick reference** for campus placement aptitude tests. For the GATE-
 |---------|---------|
 | Probability of event | `Favorable Outcomes / Total Outcomes` |
 | P(Not E) | `1 - P(E)` |
-| P(A or B) | `P(A) + P(B) - P(Aâˆ©B)` |
-| P(A and B) independent | `P(A) Ã— P(B)` |
+| P(A or B) | `P(A) + P(B) - P(AÃ¢Ë†Â©B)` |
+| P(A and B) independent | `P(A) Ãƒâ€” P(B)` |
 
 #### Number System Quick Facts
 
@@ -605,17 +605,17 @@ This is a **quick reference** for campus placement aptitude tests. For the GATE-
 - Divisibility by 8: Last three digits divisible by 8
 - Divisibility by 9: Sum of digits divisible by 9
 - Divisibility by 11: Difference of (sum of odd-placed digits) and (sum of even-placed digits) = 0 or multiple of 11
-- HCF Ã— LCM = Product of numbers
+- HCF Ãƒâ€” LCM = Product of numbers
 - HCF of fractions = `HCF of numerators / LCM of denominators`
 - LCM of fractions = `LCM of numerators / HCF of denominators`
 
 ---
 
-#> **Remember:** The 20 problems below cover every major aptitude pattern tested in campus placements. Attempt each problem on your own first → covering the answer before solving defeats the purpose. If you get stuck, trace the formula back to section 3.1.
+#> **Remember:** The 20 problems below cover every major aptitude pattern tested in campus placements. Attempt each problem on your own first â†’ covering the answer before solving defeats the purpose. If you get stuck, trace the formula back to section 3.1.
 
 ## 3.2 20 Solved Problems
 
-#### Problem 1: Percentage → Successive Increase
+#### Problem 1: Percentage â†’ Successive Increase
 
 > The salary of an employee is first increased by 20%, then decreased by 10%, and then increased by 25%. What is the net percentage change?
 
@@ -623,22 +623,22 @@ This is a **quick reference** for campus placement aptitude tests. For the GATE-
 
 Using successive percentage formula: `a + b + c + (ab + bc + ca)/100 + (abc)/10000`
 
-First two changes: `20 - 10 + (20 Ã— (-10))/100 = 10 - 2 = 8%`
-Now apply 25% on 108: `8 + 25 + (8 Ã— 25)/100 = 33 + 2 = 35%`
+First two changes: `20 - 10 + (20 Ãƒâ€” (-10))/100 = 10 - 2 = 8%`
+Now apply 25% on 108: `8 + 25 + (8 Ãƒâ€” 25)/100 = 33 + 2 = 35%`
 
 **Answer: 35% increase**
 
 ---
 
-#### Problem 2: Time, Speed & Distance → Relative Speed
+#### Problem 2: Time, Speed & Distance â†’ Relative Speed
 
 > Two trains, 140m and 160m long, run at 60 km/h and 40 km/h respectively in opposite directions on parallel tracks. How long do they take to cross each other completely?
 
 **Solution:**
 
-Relative speed = `60 + 40 = 100 km/h = 100 Ã— 5/18 = 250/9 m/s`
+Relative speed = `60 + 40 = 100 km/h = 100 Ãƒâ€” 5/18 = 250/9 m/s`
 Total distance to cover = `140 + 160 = 300m`
-Time = `Distance / Speed = 300 / (250/9) = 300 Ã— 9/250 = 2700/250 = 10.8 seconds`
+Time = `Distance / Speed = 300 / (250/9) = 300 Ãƒâ€” 9/250 = 2700/250 = 10.8 seconds`
 
 **Answer: 10.8 seconds**
 
@@ -654,8 +654,8 @@ Time = `Distance / Speed = 300 / (250/9) = 300 Ã— 9/250 = 2700/250 = 10.8 sec
 A : B = 2 : 3
 B : C = 5 : 7
 Make B equal: LCM of 3 and 5 = 15
-A : B = 2Ã—5 : 3Ã—5 = 10 : 15
-B : C = 5Ã—3 : 7Ã—3 = 15 : 21
+A : B = 2Ãƒâ€”5 : 3Ãƒâ€”5 = 10 : 15
+B : C = 5Ãƒâ€”3 : 7Ãƒâ€”3 = 15 : 21
 A : B : C = 10 : 15 : 21
 ```
 
@@ -663,14 +663,14 @@ A : B : C = 10 : 15 : 21
 
 ---
 
-#### Problem 4: Averages → Weighted Average
+#### Problem 4: Averages â†’ Weighted Average
 
 > The average marks of 20 students in a class is 72. The average marks of 12 boys is 68. What is the average marks of the girls?
 
 **Solution:**
 
-Total marks of 20 students = `20 Ã— 72 = 1440`
-Total marks of 12 boys = `12 Ã— 68 = 816`
+Total marks of 20 students = `20 Ãƒâ€” 72 = 1440`
+Total marks of 12 boys = `12 Ãƒâ€” 68 = 816`
 Total marks of 8 girls = `1440 - 816 = 624`
 Average of girls = `624 / 8 = 78`
 
@@ -700,17 +700,17 @@ Profit = 119 - 100 = 19%
 
 **Solution:**
 
-`CI = P Ã— (1 + R/200)^(2T) - P`
-`CI = 10,000 Ã— (1 + 10/200)^(4) - 10,000`
-`CI = 10,000 Ã— (1.05)^4 - 10,000`
-`CI = 10,000 Ã— 1.21550625 - 10,000`
+`CI = P Ãƒâ€” (1 + R/200)^(2T) - P`
+`CI = 10,000 Ãƒâ€” (1 + 10/200)^(4) - 10,000`
+`CI = 10,000 Ãƒâ€” (1.05)^4 - 10,000`
+`CI = 10,000 Ãƒâ€” 1.21550625 - 10,000`
 `CI = 12,155.06 - 10,000 = 2,155.06`
 
 **Answer: Rs. 2,155.06**
 
 ---
 
-#### Problem 7: Permutation → Arrangements
+#### Problem 7: Permutation â†’ Arrangements
 
 > How many distinct 4-letter words can be formed from the letters of the word "MATHEMATICS"?
 
@@ -723,20 +723,20 @@ This requires casework by letter usage patterns:
 **Case 1:** All 4 letters distinct
 Choose 4 from 8 distinct letters: `C(8,4) = 70` ways
 Arrange each: 4! = 24
-Total = `70 Ã— 24 = 1680`
+Total = `70 Ãƒâ€” 24 = 1680`
 
 **Case 2:** 1 letter repeated twice, 2 distinct
 Repeated can be M, A, or T (3 options)
 Choose 2 distinct from remaining 7: `C(7,2) = 21`
 Arrange: 4!/2! = 12
-Total = `3 Ã— 21 Ã— 12 = 756`
+Total = `3 Ãƒâ€” 21 Ãƒâ€” 12 = 756`
 
 **Case 3:** 2 letters repeated twice
 Choose 2 from {M, A, T}: `C(3,2) = 3`
-Arrange: 4!/(2!Ã—2!) = 6
-Total = `3 Ã— 6 = 18`
+Arrange: 4!/(2!Ãƒâ€”2!) = 6
+Total = `3 Ãƒâ€” 6 = 18`
 
-**Case 4:** 1 letter repeated 3 times → not possible (max frequency = 2)
+**Case 4:** 1 letter repeated 3 times â†’ not possible (max frequency = 2)
 
 Total = `1680 + 756 + 18 = 2454`
 
@@ -744,7 +744,7 @@ Total = `1680 + 756 + 18 = 2454`
 
 ---
 
-#### Problem 8: Probability → Card Selection
+#### Problem 8: Probability â†’ Card Selection
 
 > Two cards are drawn from a well-shuffled deck of 52 cards. Find the probability that both are kings.
 
@@ -766,10 +766,10 @@ Probability = `6 / 1326 = 1 / 221`
 
 Work done per day: A = 1/12, B = 1/15, C = 1/20
 Combined (A+B+C) = `1/12 + 1/15 + 1/20 = (5+4+3)/60 = 12/60 = 1/5`
-Work done in 3 days = `3 Ã— 1/5 = 3/5`
+Work done in 3 days = `3 Ãƒâ€” 1/5 = 3/5`
 Remaining work = `1 - 3/5 = 2/5`
 B + C per day = `1/15 + 1/20 = (4+3)/60 = 7/60`
-Days needed = `(2/5) / (7/60) = (2/5) Ã— (60/7) = 120/35 = 24/7 = 3 3/7`
+Days needed = `(2/5) / (7/60) = (2/5) Ãƒâ€” (60/7) = 120/35 = 24/7 = 3 3/7`
 
 **Answer: 3 3/7 days**
 
@@ -795,22 +795,22 @@ So milk : water = 4 : 1
 
 ---
 
-#### Problem 11: Number System → HCF & LCM
+#### Problem 11: Number System â†’ HCF & LCM
 
 > Find the smallest number that leaves a remainder of 5 when divided by 8, 12, and 15.
 
 **Solution:**
 
-The number N must satisfy: N â‰¡ 5 (mod 8), N â‰¡ 5 (mod 12), N â‰¡ 5 (mod 15)
-So N = LCM(8, 12, 15) Ã— k + 5
-LCM(8, 12, 15) = 2Â³ Ã— 3 Ã— 5 = 120
+The number N must satisfy: N Ã¢â€°Â¡ 5 (mod 8), N Ã¢â€°Â¡ 5 (mod 12), N Ã¢â€°Â¡ 5 (mod 15)
+So N = LCM(8, 12, 15) Ãƒâ€” k + 5
+LCM(8, 12, 15) = 2Ã‚Â³ Ãƒâ€” 3 Ãƒâ€” 5 = 120
 Smallest number (k=0): N = 120 + 5 = 125
 
 **Answer: 125**
 
 ---
 
-#### Problem 12: Permutation → Seating Arrangement
+#### Problem 12: Permutation â†’ Seating Arrangement
 
 > In how many ways can 5 boys and 3 girls be seated such that no two girls sit together?
 
@@ -820,20 +820,20 @@ First seat the 5 boys: 5! = 120 ways
 This creates 6 gaps (4 between + 2 at ends): _ B _ B _ B _ B _ B _
 Choose 3 gaps for girls: `C(6,3) = 20` ways
 Arrange girls in chosen gaps: 3! = 6
-Total = `120 Ã— 20 Ã— 6 = 14,400`
+Total = `120 Ãƒâ€” 20 Ãƒâ€” 6 = 14,400`
 
 **Answer: 14,400**
 
 ---
 
-#### Problem 13: Probability → Dice
+#### Problem 13: Probability â†’ Dice
 
 > Two unbiased dice are thrown. Find the probability that the sum is at least 10.
 
 **Solution:**
 
-Total outcomes = 6 Ã— 6 = 36
-Favorable (sum â‰¥ 10):
+Total outcomes = 6 Ãƒâ€” 6 = 36
+Favorable (sum Ã¢â€°Â¥ 10):
 (4,6), (5,5), (5,6), (6,4), (6,5), (6,6) = 6 outcomes
 Probability = 6/36 = 1/6
 
@@ -841,7 +841,7 @@ Probability = 6/36 = 1/6
 
 ---
 
-#### Problem 14: Time, Speed & Distance → Boat & Stream
+#### Problem 14: Time, Speed & Distance â†’ Boat & Stream
 
 > A boat travels 30 km upstream and 30 km downstream in 8 hours. If the speed of the stream is 5 km/h, find the speed of the boat in still water.
 
@@ -851,12 +851,12 @@ Let boat speed = x km/h
 Upstream speed = (x - 5), Time = 30/(x-5)
 Downstream speed = (x + 5), Time = 30/(x+5)
 Total time: `30/(x-5) + 30/(x+5) = 8`
-`30(x+5 + x-5) / (xÂ²-25) = 8`
-`30(2x) / (xÂ²-25) = 8`
-`60x = 8(xÂ²-25)`
-`60x = 8xÂ² - 200`
-`8xÂ² - 60x - 200 = 0`
-`2xÂ² - 15x - 50 = 0`
+`30(x+5 + x-5) / (xÃ‚Â²-25) = 8`
+`30(2x) / (xÃ‚Â²-25) = 8`
+`60x = 8(xÃ‚Â²-25)`
+`60x = 8xÃ‚Â² - 200`
+`8xÃ‚Â² - 60x - 200 = 0`
+`2xÃ‚Â² - 15x - 50 = 0`
 `(2x + 5)(x - 10) = 0`
 x = 10 (x = -2.5 invalid)
 
@@ -871,45 +871,45 @@ x = 10 (x = -2.5 invalid)
 **Solution:**
 
 If sum doubles, Interest = P (the original amount)
-`SI = (P Ã— R Ã— T) / 100`
-`P = (P Ã— R Ã— 8) / 100`
+`SI = (P Ãƒâ€” R Ãƒâ€” T) / 100`
+`P = (P Ãƒâ€” R Ãƒâ€” 8) / 100`
 `R = 100/8 = 12.5%`
 
 **Answer: 12.5% per annum**
 
 ---
 
-#### Problem 16: Percentage → Population
+#### Problem 16: Percentage â†’ Population
 
 > The population of a town increases by 5% annually. If the current population is 80,000, what will it be after 3 years?
 
 **Solution:**
 
-`P = 80,000 Ã— (1 + 5/100)Â³`
-`P = 80,000 Ã— (1.05)Â³`
-`P = 80,000 Ã— 1.157625`
+`P = 80,000 Ãƒâ€” (1 + 5/100)Ã‚Â³`
+`P = 80,000 Ãƒâ€” (1.05)Ã‚Â³`
+`P = 80,000 Ãƒâ€” 1.157625`
 `P = 92,610`
 
 **Answer: 92,610**
 
 ---
 
-#### Problem 17: Ratio → Partnership
+#### Problem 17: Ratio â†’ Partnership
 
 > A and B invest in a business in the ratio 3:5. A withdraws his capital after 8 months. If the total annual profit is Rs. 56,000, find A's share.
 
 **Solution:**
 
-A's investment = 3 Ã— 8 = 24 (units Ã— months)
-B's investment = 5 Ã— 12 = 60
+A's investment = 3 Ãƒâ€” 8 = 24 (units Ãƒâ€” months)
+B's investment = 5 Ãƒâ€” 12 = 60
 Profit ratio A:B = 24:60 = 2:5
-A's share = `(2/7) Ã— 56,000 = Rs. 16,000`
+A's share = `(2/7) Ãƒâ€” 56,000 = Rs. 16,000`
 
 **Answer: Rs. 16,000**
 
 ---
 
-#### Problem 18: Time & Work → Pipes
+#### Problem 18: Time & Work â†’ Pipes
 
 > Two pipes A and B can fill a tank in 20 and 30 minutes respectively. A third pipe C can empty it in 15 minutes. If all three are opened together, how long will it take to fill the tank?
 
@@ -923,22 +923,22 @@ Time = 60 minutes
 
 ---
 
-#### Problem 19: Averages → Age Problem
+#### Problem 19: Averages â†’ Age Problem
 
 > The average age of a family of 5 members is 25 years. If the grandfather is included, the average increases by 4 years. Find the grandfather's age.
 
 **Solution:**
 
-Total age of 5 members = 5 Ã— 25 = 125
+Total age of 5 members = 5 Ãƒâ€” 25 = 125
 New average = 25 + 4 = 29
-Total age of 6 members = 6 Ã— 29 = 174
+Total age of 6 members = 6 Ãƒâ€” 29 = 174
 Grandfather's age = 174 - 125 = 49
 
 **Answer: 49 years**
 
 ---
 
-#### Problem 20: Probability → Ball Selection
+#### Problem 20: Probability â†’ Ball Selection
 
 > A bag contains 4 red, 5 blue, and 6 green balls. Three balls are drawn at random. Find the probability that all three are of different colors.
 
@@ -946,7 +946,7 @@ Grandfather's age = 174 - 125 = 49
 
 Total balls = 15
 Total outcomes = `C(15,3) = 455`
-Favorable = 1 red Ã— 1 blue Ã— 1 green = `C(4,1) Ã— C(5,1) Ã— C(6,1) = 4 Ã— 5 Ã— 6 = 120`
+Favorable = 1 red Ãƒâ€” 1 blue Ãƒâ€” 1 green = `C(4,1) Ãƒâ€” C(5,1) Ãƒâ€” C(6,1) = 4 Ãƒâ€” 5 Ãƒâ€” 6 = 120`
 Probability = `120/455 = 24/91`
 
 **Answer: 24/91**
@@ -993,7 +993,7 @@ Probability = `120/455 = 24/91`
 
 **Shortcuts for solving:**
 - Draw a family tree top-down (oldest on top)
-- Use + for male, - for female, ↔ for marriage, → for children
+- Use + for male, - for female, â†” for marriage, â†’ for children
 - Replace pronouns with actual names
 - Work backwards from the question to find the relationship
 
@@ -1022,10 +1022,10 @@ Probability = `120/455 = 24/91`
 
 | Type | Example | Logic |
 |------|---------|-------|
-| Letter shift | CAT → DDU | Each letter +1 position (+1,+1,+1) |
-| Reverse | ABC → CBA | Reverse the string |
-| Vowel replacement | CAT → C_T | Vowels coded as numbers (A=1, E=2, etc.) |
-| Pattern-based | 123 → 236 | Each digit Ã— 2 |
+| Letter shift | CAT â†’ DDU | Each letter +1 position (+1,+1,+1) |
+| Reverse | ABC â†’ CBA | Reverse the string |
+| Vowel replacement | CAT â†’ C_T | Vowels coded as numbers (A=1, E=2, etc.) |
+| Pattern-based | 123 â†’ 236 | Each digit Ãƒâ€” 2 |
 
 ---
 
@@ -1084,12 +1084,12 @@ Probability = `120/455 = 24/91`
 | Zealous | Fervent, enthusiastic | "A zealous supporter of the cause." |
 
 **Prefix/Suffix shortcuts:**
-- `un-`, `in-`, `im-`, `il-`, `ir-`, `dis-`, `non-` → means NOT
-- `pre-`, `ante-`, `fore-` → means BEFORE
-- `post-` → means AFTER
-- `mal-`, `mis-` → means BAD/WRONG
-- `bene-` → means GOOD
-- `-less` → means WITHOUT
+- `un-`, `in-`, `im-`, `il-`, `ir-`, `dis-`, `non-` â†’ means NOT
+- `pre-`, `ante-`, `fore-` â†’ means BEFORE
+- `post-` â†’ means AFTER
+- `mal-`, `mis-` â†’ means BAD/WRONG
+- `bene-` â†’ means GOOD
+- `-less` â†’ means WITHOUT
 
 ---
 
@@ -1116,7 +1116,7 @@ Probability = `120/455 = 24/91`
 **Q6.** In a bag containing only red and blue balls, 40% are red. If 10 more red balls are added, the percentage of red becomes 50%. How many blue balls are there?
   a) 30   b) 40   c) 50   d) 60
 
-**Q7.** If `logâ‚â‚€ 5 = 0.6990`, find `logâ‚â‚€ 20`.
+**Q7.** If `logÃ¢â€šÂÃ¢â€šâ‚¬ 5 = 0.6990`, find `logÃ¢â€šÂÃ¢â€šâ‚¬ 20`.
   a) 1.3010   b) 1.3980   c) 0.6990   d) 1.0000
 
 **Q8.** A man covers a distance at 60 km/h and returns at 40 km/h. Find his average speed.
@@ -1158,7 +1158,7 @@ Probability = `120/455 = 24/91`
 **Q17.** Five friends A, B, C, D, E sit in a row. C is between A and E. B is to the immediate left of A. D is not at either end. Who is at the left end?
   a) A   b) B   c) C   d) D
 
-**Q18.** If 7 Ã— 3 = 28, 8 Ã— 4 = 48, 9 Ã— 5 = 72, then 6 Ã— 2 = ?
+**Q18.** If 7 Ãƒâ€” 3 = 28, 8 Ãƒâ€” 4 = 48, 9 Ãƒâ€” 5 = 72, then 6 Ãƒâ€” 2 = ?
   a) 12   b) 18   c) 20   d) 16
 
 #### Section C: Verbal Ability (Q19-Q25)
@@ -1194,42 +1194,42 @@ Probability = `120/455 = 24/91`
 
 | Q | Answer | Explanation |
 |---|--------|-------------|
-| 1 | a) Rs. 800 | SP = MP Ã— (100-10)/100; 720 = MP Ã— 0.9; MP = 800 |
+| 1 | a) Rs. 800 | SP = MP Ãƒâ€” (100-10)/100; 720 = MP Ãƒâ€” 0.9; MP = 800 |
 | 2 | b) 41 | Let numbers be x-4, x-2, x, x+2, x+4. Sum = 5x = 185; x = 37; Largest = 37+4 = 41 |
-| 3 | b) 72 | Speed = 180/9 = 20 m/s = 20 Ã— 18/5 = 72 km/h |
-| 4 | b) 18 | M1 Ã— D1 = M2 Ã— D2; 15 Ã— 24 = 20 Ã— D2; D2 = 360/20 = 18 |
-| 5 | d) Rs. 2,648 | CI = 8000 Ã— (1 + 10/100)Â³ - 8000 = 10,648 - 8000 = 2,648 |
-| 6 | a) 30 | Let total = x. Red = 0.4x. After adding 10: (0.4x+10)/(x+10) = 0.5; 0.4x+10 = 0.5x+5; 0.1x = 5; x = 50. Blue = 0.6 Ã— 50 = 30 |
+| 3 | b) 72 | Speed = 180/9 = 20 m/s = 20 Ãƒâ€” 18/5 = 72 km/h |
+| 4 | b) 18 | M1 Ãƒâ€” D1 = M2 Ãƒâ€” D2; 15 Ãƒâ€” 24 = 20 Ãƒâ€” D2; D2 = 360/20 = 18 |
+| 5 | d) Rs. 2,648 | CI = 8000 Ãƒâ€” (1 + 10/100)Ã‚Â³ - 8000 = 10,648 - 8000 = 2,648 |
+| 6 | a) 30 | Let total = x. Red = 0.4x. After adding 10: (0.4x+10)/(x+10) = 0.5; 0.4x+10 = 0.5x+5; 0.1x = 5; x = 50. Blue = 0.6 Ãƒâ€” 50 = 30 |
 | 7 | a) 1.3010 | log 20 = log(100/5) = log 100 - log 5 = 2 - 0.6990 = 1.3010 |
-| 8 | a) 48 | Avg = 2ab/(a+b) = 2Ã—60Ã—40/(100) = 4800/100 = 48 km/h |
-| 9 | c) 20 | x + y = 32, xy = 240. Solve: xÂ² - 32x + 240 = 0; (x-12)(x-20) = 0; numbers 12 and 20 |
+| 8 | a) 48 | Avg = 2ab/(a+b) = 2Ãƒâ€”60Ãƒâ€”40/(100) = 4800/100 = 48 km/h |
+| 9 | c) 20 | x + y = 32, xy = 240. Solve: xÃ‚Â² - 32x + 240 = 0; (x-12)(x-20) = 0; numbers 12 and 20 |
 | 10 | c) 6 | A works 8 min: fills 8/12 = 2/3. B works t min: fills t/18. (2/3) + (t/18) = 1; t/18 = 1/3; t = 6 |
 
 #### Section B: Logical Reasoning
 
 | Q | Answer | Explanation |
 |---|--------|-------------|
-| 11 | a) RATTEM | The pattern reverses the word. TOGETHER → REHTEGOT → ROETSEHT (also swaps middle pairs). MATTER → RETTAM |
+| 11 | a) RATTEM | The pattern reverses the word. TOGETHER â†’ REHTEGOT â†’ ROETSEHT (also swaps middle pairs). MATTER â†’ RETTAM |
 | 12 | a) Son | Mother's only daughter = Priya herself. Her son is the man. |
 | 13 | b) Only II | Some intelligent people are rich = Some rich people are intelligent (converse). No link between doctors and rich. |
-| 14 | b) 2, 5, 1, 3, 4 | Infant → Toddler → Child → Adolescent → Adult |
-| 15 | c) 42 | Pattern: 1Ã—2, 2Ã—3, 3Ã—4, 4Ã—5, 5Ã—6, 6Ã—7 = 42 |
+| 14 | b) 2, 5, 1, 3, 4 | Infant â†’ Toddler â†’ Child â†’ Adolescent â†’ Adult |
+| 15 | c) 42 | Pattern: 1Ãƒâ€”2, 2Ãƒâ€”3, 3Ãƒâ€”4, 4Ãƒâ€”5, 5Ãƒâ€”6, 6Ãƒâ€”7 = 42 |
 | 16 | b) 23 | Total = Left + Right - 1 = 15 + 9 - 1 = 23 |
 | 17 | b) B | Order: B A C E D (B at left end, D at right end, C between A and E) |
-| 18 | d) 16 | Pattern: a Ã— b = a Ã— (a+b-2). 7Ã—3 = 7Ã—4=28, 8Ã—4 = 8Ã—6=48, 6Ã—2 = 6Ã—6=36... Wait. Let me recheck. 7Ã—3=28 = (7+3)Ã—2+8? No. 7Ã—4=28? 7Ã—(3+1)? Pattern: a Ã— (b+1)? 7Ã—4=28, 8Ã—5=40 no. Actually: 7Ã—3=21+7=28, 8Ã—4=32+16=48, 9Ã—5=45+27=72. So aÃ—b + aÃ—? No. Pattern: aÃ—b + aÃ—(b-1)? 7Ã—3+7Ã—1=28, 8Ã—4+8Ã—2=48, 9Ã—5+9Ã—3=72. So formula: aÃ—b + aÃ—(b-1) = a(2b-1). 6Ã—2 = 6(4-1) = 18. Hmm. Let me try another: 7Ã—3 = 7+3=10, middle? No. 7Ã—3=28 → (7-2)Ã—(3+? ). Pattern: 7Ã—3=(7-3)Ã—7? = 4Ã—7=28. 8Ã—4=(8-4)Ã—8=4Ã—8=32 (no). Another: aÃ—b = (a-1)Ã—(b+1)? 6Ã—4=24 no. Let me look at outputs: 28, 48, 72. These are 4Ã—7=28, 6Ã—8=48, 8Ã—9=72... 7-3=4, 7Ã—4=28. 8-4=4, 8Ã—4=32 not 48. Hmm. Pattern: 7Ã—3=28 (7Ã—4). 8Ã—4=48 (8Ã—6). 9Ã—5=72 (9Ã—8). So the multiplier goes 4,6,8 = +2 each time. 3→4(+1), 4→6(+2), 5→8(+3). So 2→? The next is +4 → 6. So 6Ã—6=... But that doesn't match pattern. Actually: 7Ã—(3+1)=28. 8Ã—(4+2)=48. 9Ã—(5+3)=72. So multiplier = aÃ—b + (b-2)? No. aÃ—b + aÃ—(b-3)? 7Ã—3+7Ã—1=28 yes. 8Ã—4+8Ã—2=48 yes. 9Ã—5+9Ã—3=72 yes. So formula: aÃ—b + aÃ—(b-3) = a(2b-3). 6Ã—2 = 6(4-3)=6. Not matching options.
+| 18 | d) 16 | Pattern: a Ãƒâ€” b = a Ãƒâ€” (a+b-2). 7Ãƒâ€”3 = 7Ãƒâ€”4=28, 8Ãƒâ€”4 = 8Ãƒâ€”6=48, 6Ãƒâ€”2 = 6Ãƒâ€”6=36... Wait. Let me recheck. 7Ãƒâ€”3=28 = (7+3)Ãƒâ€”2+8? No. 7Ãƒâ€”4=28? 7Ãƒâ€”(3+1)? Pattern: a Ãƒâ€” (b+1)? 7Ãƒâ€”4=28, 8Ãƒâ€”5=40 no. Actually: 7Ãƒâ€”3=21+7=28, 8Ãƒâ€”4=32+16=48, 9Ãƒâ€”5=45+27=72. So aÃƒâ€”b + aÃƒâ€”? No. Pattern: aÃƒâ€”b + aÃƒâ€”(b-1)? 7Ãƒâ€”3+7Ãƒâ€”1=28, 8Ãƒâ€”4+8Ãƒâ€”2=48, 9Ãƒâ€”5+9Ãƒâ€”3=72. So formula: aÃƒâ€”b + aÃƒâ€”(b-1) = a(2b-1). 6Ãƒâ€”2 = 6(4-1) = 18. Hmm. Let me try another: 7Ãƒâ€”3 = 7+3=10, middle? No. 7Ãƒâ€”3=28 â†’ (7-2)Ãƒâ€”(3+? ). Pattern: 7Ãƒâ€”3=(7-3)Ãƒâ€”7? = 4Ãƒâ€”7=28. 8Ãƒâ€”4=(8-4)Ãƒâ€”8=4Ãƒâ€”8=32 (no). Another: aÃƒâ€”b = (a-1)Ãƒâ€”(b+1)? 6Ãƒâ€”4=24 no. Let me look at outputs: 28, 48, 72. These are 4Ãƒâ€”7=28, 6Ãƒâ€”8=48, 8Ãƒâ€”9=72... 7-3=4, 7Ãƒâ€”4=28. 8-4=4, 8Ãƒâ€”4=32 not 48. Hmm. Pattern: 7Ãƒâ€”3=28 (7Ãƒâ€”4). 8Ãƒâ€”4=48 (8Ãƒâ€”6). 9Ãƒâ€”5=72 (9Ãƒâ€”8). So the multiplier goes 4,6,8 = +2 each time. 3â†’4(+1), 4â†’6(+2), 5â†’8(+3). So 2â†’? The next is +4 â†’ 6. So 6Ãƒâ€”6=... But that doesn't match pattern. Actually: 7Ãƒâ€”(3+1)=28. 8Ãƒâ€”(4+2)=48. 9Ãƒâ€”(5+3)=72. So multiplier = aÃƒâ€”b + (b-2)? No. aÃƒâ€”b + aÃƒâ€”(b-3)? 7Ãƒâ€”3+7Ãƒâ€”1=28 yes. 8Ãƒâ€”4+8Ãƒâ€”2=48 yes. 9Ãƒâ€”5+9Ãƒâ€”3=72 yes. So formula: aÃƒâ€”b + aÃƒâ€”(b-3) = a(2b-3). 6Ãƒâ€”2 = 6(4-3)=6. Not matching options.
 
-Let me try: (a-1)Ã—(b+3)? 6Ã—6=36 no. aÃ—b = aÂ² - (a-b)Â²? 49-16=33 no.
+Let me try: (a-1)Ãƒâ€”(b+3)? 6Ãƒâ€”6=36 no. aÃƒâ€”b = aÃ‚Â² - (a-b)Ã‚Â²? 49-16=33 no.
 
-Actually: 7Ã—3 = 28. 7+3=10, 7-3=4, 10+... hmm.
-Maybe: (a+b)Ã—(a-b+? )... (7+3)Ã—(7-3+? ) =10Ã—4=40 no.
+Actually: 7Ãƒâ€”3 = 28. 7+3=10, 7-3=4, 10+... hmm.
+Maybe: (a+b)Ãƒâ€”(a-b+? )... (7+3)Ãƒâ€”(7-3+? ) =10Ãƒâ€”4=40 no.
 
 Let me try the simplest recurring pattern: 
-7Ã—3 = 28 = 7Ã—(3) + 7Ã—1 = 7Ã—3 + 7
-8Ã—4 = 48 = 8Ã—4 + 8Ã—2 = 8Ã—4 + 16
-9Ã—5 = 72 = 9Ã—5 + 9Ã—3 = 9Ã—5 + 27
+7Ãƒâ€”3 = 28 = 7Ãƒâ€”(3) + 7Ãƒâ€”1 = 7Ãƒâ€”3 + 7
+8Ãƒâ€”4 = 48 = 8Ãƒâ€”4 + 8Ãƒâ€”2 = 8Ãƒâ€”4 + 16
+9Ãƒâ€”5 = 72 = 9Ãƒâ€”5 + 9Ãƒâ€”3 = 9Ãƒâ€”5 + 27
 
-So: a Ã— b + a Ã— (b-2) = a(2b-2)
-6Ã—2 = 6(4-2) = 12
+So: a Ãƒâ€” b + a Ãƒâ€” (b-2) = a(2b-2)
+6Ãƒâ€”2 = 6(4-2) = 12
 
 Answer: 12 (a)
 
@@ -1243,11 +1243,11 @@ Answer: 12 (a)
 
 ---
 
-> **One-Sentence Takeaway:** Aptitude tests measure speed and pattern recognition → mastering formula shortcuts, logical reasoning frameworks, and time management is far more critical than advanced mathematical ability. Consistent timed practice is the only path to improvement.
+> **One-Sentence Takeaway:** Aptitude tests measure speed and pattern recognition â†’ mastering formula shortcuts, logical reasoning frameworks, and time management is far more critical than advanced mathematical ability. Consistent timed practice is the only path to improvement.
 
 ---
 
-> **Next chapter:** [`06-hr-gd-soft-skills.md`](06-hr-gd-soft-skills.md) → Group Discussions, Case Studies, and HR Interview preparation.
+> **Next chapter:** [`06-hr-gd-soft-skills.md`](06-hr-gd-soft-skills.md) â†’ Group Discussions, Case Studies, and HR Interview preparation.
 
 ---
 
@@ -1285,19 +1285,19 @@ Answer: 12 (a)
 25. If the side of a square increases by 10%, find the percentage increase in area.
 26. A number when multiplied by 5/3 gives 45. Find the number.
 27. Find the value of 1 + 1/2 + 1/4 + 1/8.
-28. Simplify: 25 - 5 Ã— 3 + 8 Ã· 4.
+28. Simplify: 25 - 5 Ãƒâ€” 3 + 8 ÃƒÂ· 4.
 29. Convert 7/12 to decimal.
 30. What is the unit digit of 7^105?
 31. The sum of digits of a two-digit number is 9. When digits are reversed, the number decreases by 45. Find the number.
 32. Find the smallest prime number greater than 50.
 33. Classify 0.123123123... as rational or irrational.
-34. Find the value of âˆš(256) + âˆš(169).
+34. Find the value of Ã¢Ë†Å¡(256) + Ã¢Ë†Å¡(169).
 35. What is the remainder when 2^50 is divided by 5?
 36. Simplify: (27)^(2/3).
-37. If a+b = 12 and ab = 35, find aÂ² + bÂ².
+37. If a+b = 12 and ab = 35, find aÃ‚Â² + bÃ‚Â².
 38. Find the decimal expansion of 53/99.
 39. Arrange in ascending order: 3/5, 5/8, 7/12, 11/15.
-40. If x = 3 + 2âˆš2, find 1/x.
+40. If x = 3 + 2Ã¢Ë†Å¡2, find 1/x.
 41. 2 hours 15 minutes is what percentage of 1 day?
 42. In a mixture of 60 litres, milk and water are in ratio 7:5. How much water must be added to reverse the ratio?
 43. If the marked price is Rs. 800 and discount is 15%, find selling price.
@@ -1412,7 +1412,7 @@ Answer: 12 (a)
 146. A man rows 20 km downstream in 2 hours and 12 km upstream in 3 hours. Find boat speed and stream speed.
 147. A car travels up a hill at 30 km/h and down at 50 km/h. Total time 4 hours. Find one-way distance.
 148. Two cyclists start at same time from opposite ends of 35 km road and meet in 42 minutes. If one is 5 km/h faster, find speeds.
-149. A metro train runs at 80 km/h between stations 2 km apart. Acceleration and deceleration are 1 m/sÂ². Find shortest travel time.
+149. A metro train runs at 80 km/h between stations 2 km apart. Acceleration and deceleration are 1 m/sÃ‚Â². Find shortest travel time.
 150. A man runs around a circular track of 600 m at 10 m/s and another at 15 m/s in opposite direction. Find meeting time.
 
 **Permutation-Combination / Probability / Data Interpretation (Q151-Q200)**
@@ -1435,7 +1435,7 @@ Answer: 12 (a)
 166. Two coins tossed. Find probability of at least one head.
 167. A box has 4 defective and 6 good items. Two drawn without replacement. Find both defective probability.
 168. A die rolled twice. Find probability sum > 9.
-169. P(A) = 0.4, P(B) = 0.3, P(Aâˆ©B) = 0.1. Find P(AâˆªB).
+169. P(A) = 0.4, P(B) = 0.3, P(AÃ¢Ë†Â©B) = 0.1. Find P(AÃ¢Ë†ÂªB).
 170. A card is drawn from 52 cards. Find probability of red king or queen.
 171. Find the median of: 12, 15, 18, 22, 25, 30.
 172. Find the mode of: 2, 3, 5, 3, 7, 8, 3, 9.
@@ -1468,7 +1468,7 @@ Answer: 12 (a)
 199. Probability of hitting a target is 1/4. 5 shots fired. Find probability hitting at least 3 times.
 200. A letter is chosen from "PROBABILITY". Find probability it is a vowel.
 
-**Answer Key → Quantitative Aptitude**
+**Answer Key â†’ Quantitative Aptitude**
 
 | Q# | Answer | Q# | Answer | Q# | Answer | Q# | Answer |
 |----|--------|----|--------|----|--------|----|--------|
@@ -1481,7 +1481,7 @@ Answer: 12 (a)
 | 25 | 21% | 26 | 27 | 27 | 15/8 | 28 | 13 |
 | 29 | 0.5833 | 30 | 7 | 31 | 72 | 32 | 53 |
 | 33 | Rational | 34 | 29 | 35 | 4 | 36 | 9 |
-| 37 | 74 | 38 | 0.5353 | 39 | 7/12,3/5,5/8,11/15 | 40 | 3-2âˆš2 |
+| 37 | 74 | 38 | 0.5353 | 39 | 7/12,3/5,5/8,11/15 | 40 | 3-2Ã¢Ë†Å¡2 |
 | 41 | 9.375% | 42 | 24 L | 43 | Rs. 680 | 44 | 50% |
 | 45 | 0% | 46 | 3960 | 47 | 1:2 | 48 | 6:5 |
 | 49 | 80% | 50 | 28% | 51 | 25% | 52 | Rs. 510 |
@@ -1628,7 +1628,7 @@ Answer: 12 (a)
 92. In a code, "CROW" is 69, "BIRD" is 40, then "FISH" is?
 93. If "MILK" = 49, "BREAD" = 36, then "WATER" = ?
 94. If "JAN" is coded as "25", "FEB" as "11", then "MAR" as?
-95. If "ROSE" → "SPTF", what is "LILY"?
+95. If "ROSE" â†’ "SPTF", what is "LILY"?
 96. If "2" is "5", "3" is "10", "4" is "17", what is "7"?
 97. If "ABCD" = 10, "EFGH" = 26, "IJKL" = ?
 98. In code, "TRAIN" is "UQZHM". What is "PLANE"?
@@ -1688,7 +1688,7 @@ Answer: 12 (a)
 149. Statement: "The company's profits have fallen for three consecutive quarters." Inference: The company may be in trouble.
 150. Statement: "Time and tide wait for no man." Meaning: Opportunities once lost may not return.
 
-**Answer Key → Logical Reasoning**
+**Answer Key â†’ Logical Reasoning**
 
 | Q# | Answer | Q# | Answer | Q# | Answer | Q# | Answer |
 |----|--------|----|--------|----|--------|----|--------|
@@ -1707,7 +1707,7 @@ Answer: 12 (a)
 | 49 | 6th | 50 | 9 | 51 | Green | 52 | Black |
 | 53 | A | 54 | G | 55 | R | 56 | 15 |
 | 57 | 10 | 58 | 17 | 59 | 40 | 60 | A or D |
-| 61 | Sunday | 62 | 7.5Â° | 63 | 11 | 64 | Wednesday |
+| 61 | Sunday | 62 | 7.5Ã‚Â° | 63 | 11 | 64 | Wednesday |
 | 65 | Thursday | 66 | 8 years | 67 | 10 years | 68 | 35 years |
 | 69 | 25:12 | 70 | 25 L | 71 | 36 days | 72 | 14 days |
 | 73 | 15 L | 74 | Rs. 1500 | 75 | 5:2 | 76 | 30 |
@@ -1734,7 +1734,7 @@ Answer: 12 (a)
 ### Verbal Ability Practice
 
 
-**Vocabulary → Synonyms & Antonyms (Q1-Q30)**
+**Vocabulary â†’ Synonyms & Antonyms (Q1-Q30)**
 
 1. Synonym of ABANDON
 2. Synonym of BRIEF
@@ -1767,7 +1767,7 @@ Answer: 12 (a)
 29. Fill blank: The new ___ will improve traffic. (bridal / bridle / bridge)
 30. Choose correct: The ___ (principal / principle) of the school.
 
-**Grammar → Error Spotting & Sentence Correction (Q31-Q60)**
+**Grammar â†’ Error Spotting & Sentence Correction (Q31-Q60)**
 
 31. Spot the error: He / have gone / to the market / yesterday.
 32. Spot the error: She / don't like / coffee / in the morning.
@@ -1857,7 +1857,7 @@ Passage 4: "Entrepreneurship drives economic growth by creating jobs, fostering 
 99. Choose the best fit: He was accused ___ theft. (of/for/with)
 100. Choose the best fit: She succeeded ___ hard work. (by/through/with)
 
-**Answer Key → Verbal Ability**
+**Answer Key â†’ Verbal Ability**
 
 | Q# | Answer | Q# | Answer | Q# | Answer | Q# | Answer |
 |----|--------|----|--------|----|--------|----|--------|
@@ -1868,9 +1868,9 @@ Passage 4: "Entrepreneurship drives economic growth by creating jobs, fostering 
 | 17 | Displease | 18 | Real | 19 | Changeable | 20 | Mature |
 | 21 | ACCOMMODATE | 22 | EMBARRASS | 23 | OCCURRENCE | 24 | PRIVILEGE |
 | 25 | SEIZE | 26 | breathtaking | 27 | flair | 28 | site |
-| 29 | bridge | 30 | principal | 31 | have → has | 32 | don't → doesn't |
-| 33 | are → is | 34 | since → for | 35 | was → were | 36 | are → is |
-| 37 | then → than | 38 | will → would | 39 | than → to | 40 | scenery |
+| 29 | bridge | 30 | principal | 31 | have â†’ has | 32 | don't â†’ doesn't |
+| 33 | are â†’ is | 34 | since â†’ for | 35 | was â†’ were | 36 | are â†’ is |
+| 37 | then â†’ than | 38 | will â†’ would | 39 | than â†’ to | 40 | scenery |
 | 41 | has | 42 | were | 43 | has gone | 44 | are |
 | 45 | has | 46 | believe | 47 | had known | 48 | but also |
 | 49 | was built | 50 | being ill | 51 | I saw him yesterday | 52 | He asked what your name is |
@@ -1880,7 +1880,7 @@ Passage 4: "Entrepreneurship drives economic growth by creating jobs, fostering 
 | 65 | Environment vs economic growth | 66 | Helps diagnose and treat diseases | 67 | Data privacy and algorithmic bias | 68 | Completely changed |
 | 69 | Balance innovation with ethics | 70 | Algorithms may have unfair bias | 71 | Connects billions worldwide | 72 | Misinformation and privacy concerns |
 | 73 | Never seen before | 74 | Screen addiction | 75 | Information travels fast | 76 | Creates jobs, fosters innovation |
-| 77 | Identify gaps and take risks | 78 | Filled with (problems) | 79 | Employee retention | 80 | Positive → powerful engine |
+| 77 | Identify gaps and take risks | 78 | Filled with (problems) | 79 | Employee retention | 80 | Positive â†’ powerful engine |
 | 81 | R-P-S-Q | 82 | P-Q-R-S | 83 | P-Q-R-S | 84 | P-Q-R-S |
 | 85 | P-Q-R-S | 86 | key | 87 | weight | 88 | thrilled |
 | 89 | halted | 90 | fulfilled | 91 | an | 92 | went |
@@ -1893,27 +1893,27 @@ Passage 4: "Entrepreneurship drives economic growth by creating jobs, fostering 
 **Pattern Recognition / Series Completion (Q1-Q25)**
 
 1. Find the next figure in series: Circle, Square, Triangle, Circle, Square, ?
-2. Identify the odd one: ○, △, □, â˜†, ◇
-3. Complete pattern: (↑↓), (←→), (↕↔), (↑↓), (←→), ?
-4. In a sequence of shapes, each shape rotates 90Â° clockwise. If current shape is ▲, what is next?
-5. Pattern: ■, □, ■■, □□, ■■■, ?
+2. Identify the odd one: â—‹, â–³, â–¡, Ã¢Ëœâ€ , â—‡
+3. Complete pattern: (â†‘â†“), (â†â†’), (â†•â†”), (â†‘â†“), (â†â†’), ?
+4. In a sequence of shapes, each shape rotates 90Ã‚Â° clockwise. If current shape is â–², what is next?
+5. Pattern: â– , â–¡, â– â– , â–¡â–¡, â– â– â– , ?
 6. Find next: 0, 1, 1, 2, 3, 5, 8, ?
 7. Find missing term: 1, 4, 9, 16, ?, 36
 8. Shape pattern: Triangle has 3 lines, Square has 4, Pentagon has 5, Hexagon has ?
 9. Pattern: Z, Y, X, W, V, ?
 10. Find next: 1A, 2B, 3C, 4D, ?
-11. Series: â˜…, â˜…â˜…, â˜…â˜…â˜…, ?, â˜…â˜…â˜…â˜…â˜…
-12. Which figure completes the matrix? [◐, ◑, ◒] [◓, ?, ◐]
-13. Pattern: (↗), (↘), (↙), (↖), (↗), ?
-14. Find the odd image out: Red circle, Blue square, Green triangle, Red square → all same size. Which is different?
+11. Series: Ã¢Ëœâ€¦, Ã¢Ëœâ€¦Ã¢Ëœâ€¦, Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦, ?, Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦
+12. Which figure completes the matrix? [â—, â—‘, â—’] [â—“, ?, â—]
+13. Pattern: (â†—), (â†˜), (â†™), (â†–), (â†—), ?
+14. Find the odd image out: Red circle, Blue square, Green triangle, Red square â†’ all same size. Which is different?
 15. Complete: 2, 6, 18, 54, ?
-16. Pattern: █, ▓, ▒, ░, █, ?
-17. Identify the missing shape in a 3Ã—3 grid where first row has circles, second row has squares, third row has ?
-18. Series: ● ○ ○ ● ● ○ ○ ○ ● ● ●. What comes next?
+16. Pattern: â–ˆ, â–“, â–’, â–‘, â–ˆ, ?
+17. Identify the missing shape in a 3Ãƒâ€”3 grid where first row has circles, second row has squares, third row has ?
+18. Series: â— â—‹ â—‹ â— â— â—‹ â—‹ â—‹ â— â— â—. What comes next?
 19. Pattern: All figures have 4 sides except one. Which is the exception?
-20. Next pattern: □ ▣ ▣ □ □ ▣ ▣ ▣ ▣ □ □ □ ?
+20. Next pattern: â–¡ â–£ â–£ â–¡ â–¡ â–£ â–£ â–£ â–£ â–¡ â–¡ â–¡ ?
 21. Find the missing domino: [3|4], [2|5], [6|1], [4|?]
-22. Complete the sequence: âˆŽ, âˆŽâˆŽ, âˆŽâˆŽâˆŽ, âˆŽâˆŽâˆŽâˆŽ, ?
+22. Complete the sequence: Ã¢Ë†Å½, Ã¢Ë†Å½Ã¢Ë†Å½, Ã¢Ë†Å½Ã¢Ë†Å½Ã¢Ë†Å½, Ã¢Ë†Å½Ã¢Ë†Å½Ã¢Ë†Å½Ã¢Ë†Å½, ?
 23. Pattern: 1, 2, 2, 4, 8, 32, ?
 24. A cube has how many faces?
 25. A square rotated in 3D around one edge forms a?
@@ -1924,18 +1924,18 @@ Passage 4: "Entrepreneurship drives economic growth by creating jobs, fostering 
 27. What is the mirror image of "b" on horizontal axis?
 28. Mirror image of "AMBULANCE" on a horizontal mirror?
 29. If the time in a clock is 3:00, what will be its mirror image time?
-30. Which of the following is a mirror image: (A) → (A), (B) → (Æ†), (C) → (O)? Identify correct mapping.
+30. Which of the following is a mirror image: (A) â†’ (A), (B) â†’ (Ã†â€ ), (C) â†’ (O)? Identify correct mapping.
 31. Mirror image of number 2 0 2 4 on vertical axis?
 32. Figure X is folded to form a cube. Which of A, B, C, D matches?
 33. A sheet of paper with a hole is folded. Where does the hole appear on the unfolded sheet?
 34. Count the number of triangles in a given figure with 3 horizontal lines and 4 vertical lines.
-35. How many squares in a 4Ã—4 grid?
-36. A cube with 1 cm sides has each face painted. It is cut into 1 cmÂ³ cubes. How many have paint on exactly 2 faces?
-37. How many cubes in a 3Ã—3Ã—3 structure (all visible)?
+35. How many squares in a 4Ãƒâ€”4 grid?
+36. A cube with 1 cm sides has each face painted. It is cut into 1 cmÃ‚Â³ cubes. How many have paint on exactly 2 faces?
+37. How many cubes in a 3Ãƒâ€”3Ãƒâ€”3 structure (all visible)?
 38. The figure below has how many lines of symmetry? (square with both diagonals)
 39. Which shape has more lines of symmetry: square or rectangle?
 40. A net of a cube has how many squares?
-41. Count the number of rectangles in a 3Ã—3 grid.
+41. Count the number of rectangles in a 3Ãƒâ€”3 grid.
 42. Figure classification: Circle, Ellipse, Square, Rectangle. Which does not belong?
 43. Which of these letters is symmetrical: A, B, F, G?
 44. How many faces, edges, and vertices does a rectangular prism have?
@@ -1943,26 +1943,26 @@ Passage 4: "Entrepreneurship drives economic growth by creating jobs, fostering 
 46. A die has numbers 1-6 with opposite faces summing to 7. If 1 is on top and 2 is in front, what number is on the right?
 47. Which Venn diagram correctly shows the relationship between Squares, Rectangles, and Rhombuses?
 48. Count the number of straight lines used to form the letter "E" in block capitals.
-49. How many cubes in a 4Ã—3Ã—2 cuboid?
+49. How many cubes in a 4Ãƒâ€”3Ãƒâ€”2 cuboid?
 50. A figure has rotational symmetry of order 4. How many degrees must it rotate to match its original?
 
-**Answer Key → Spatial Ability**
+**Answer Key â†’ Spatial Ability**
 
 | Q# | Answer | Q# | Answer | Q# | Answer | Q# | Answer |
 |----|--------|----|--------|----|--------|----|--------|
-| 1 | Triangle | 2 | â˜† (non-geometric shape) | 3 | (↕↔) | 4 | ▼ (rotated) |
-| 5 | □□□ | 6 | 13 | 7 | 25 | 8 | 6 |
-| 9 | U | 10 | 5E | 11 | â˜…â˜…â˜…â˜… | 12 | ◒ |
-| 13 | (↘) | 14 | Red square (color-shape mismatch) | 15 | 162 | 16 | ▓ |
-| 17 | Triangles | 18 | ○ (count of circles increasing) | 19 | Triangle (3 sides) | 20 | ▣ (pattern follows Fibonacci) |
-| 21 | 3 (sum = 7) | 22 | âˆŽâˆŽâˆŽâˆŽâˆŽ | 23 | 256 | 24 | 6 |
-| 25 | Cylinder | 26 | d (reverse) | 27 | q | 28 | 3Æ†Ð˜Aâ…ƒUá—ºMA |
-| 29 | 9:00 | 30 | (B) → (Æ†) | 31 | hOShO | 32 | Depends on configuration |
+| 1 | Triangle | 2 | Ã¢Ëœâ€  (non-geometric shape) | 3 | (â†•â†”) | 4 | â–¼ (rotated) |
+| 5 | â–¡â–¡â–¡ | 6 | 13 | 7 | 25 | 8 | 6 |
+| 9 | U | 10 | 5E | 11 | Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦Ã¢Ëœâ€¦ | 12 | â—’ |
+| 13 | (â†˜) | 14 | Red square (color-shape mismatch) | 15 | 162 | 16 | â–“ |
+| 17 | Triangles | 18 | â—‹ (count of circles increasing) | 19 | Triangle (3 sides) | 20 | â–£ (pattern follows Fibonacci) |
+| 21 | 3 (sum = 7) | 22 | Ã¢Ë†Å½Ã¢Ë†Å½Ã¢Ë†Å½Ã¢Ë†Å½Ã¢Ë†Å½ | 23 | 256 | 24 | 6 |
+| 25 | Cylinder | 26 | d (reverse) | 27 | q | 28 | 3Ã†â€ ÃËœAÃ¢â€¦Æ’UÃ¡â€”ÂºMA |
+| 29 | 9:00 | 30 | (B) â†’ (Ã†â€ ) | 31 | hOShO | 32 | Depends on configuration |
 | 33 | All holes appear symmetrically | 34 | 18 | 35 | 30 | 36 | 12 |
 | 37 | 27 | 38 | 4 | 39 | Square (4 vs 2) | 40 | 6 |
 | 41 | 36 | 42 | Circle (no straight lines) | 43 | A (vertical symmetry) | 44 | 6, 12, 8 |
-| 45 | 2 | 46 | 3 | 47 | Square inside Rectangle inside Rhombus? No → all are subtypes of parallelogram | 48 | 4 |
-| 49 | 24 | 50 | 90Â° |
+| 45 | 2 | 46 | 3 | 47 | Square inside Rectangle inside Rhombus? No â†’ all are subtypes of parallelogram | 48 | 4 |
+| 49 | 24 | 50 | 90Ã‚Â° |
 
 ## Complete Resume Templates (Markdown)
 
@@ -1982,7 +1982,7 @@ Bengaluru, Karnataka | +91 98765 43210 | rahul.sharma@email.com | linkedin.com/i
 ## EDUCATION
 
 **National Institute of Technology, Surathkal** | B.Tech in Computer Science and Engineering
-*CGPA: 8.72 / 10.0* | *Nov 2022 â€“ May 2026*
+*CGPA: 8.72 / 10.0* | *Nov 2022 Ã¢â‚¬â€œ May 2026*
 
 **Relevant Coursework:** Data Structures and Algorithms, Operating Systems, Database Management Systems,
 Computer Networks, Object-Oriented Programming, Machine Learning, Distributed Systems, Compiler Design
@@ -1994,13 +1994,13 @@ Computer Networks, Object-Oriented Programming, Machine Learning, Distributed Sy
 
 ## INTERNSHIPS
 
-**TechCorp India Pvt. Ltd.** | Software Engineering Intern | *Bengaluru (Remote)* | *May 2025 â€“ Jul 2025*
+**TechCorp India Pvt. Ltd.** | Software Engineering Intern | *Bengaluru (Remote)* | *May 2025 Ã¢â‚¬â€œ Jul 2025*
 - Designed and implemented a real-time chat microservice handling **10,000+ concurrent WebSocket connections** using Spring Boot, Redis Pub/Sub, and WebSocket STOMP protocol, reducing message delivery latency to under **50ms**
 - Built a distributed rate-limiting layer using Redis Sliding Window algorithm, preventing API abuse and reducing 429 errors by **85%** across 12 internal services
 - Wrote comprehensive unit and integration tests using JUnit 5 and Mockito, achieving **92% code coverage** on the messaging module
 - Containerized the chat service using Docker and deployed on AWS ECS with auto-scaling policies, handling 3x traffic spikes during production load tests
 
-**AlphaStart (Fintech Startup)** | Software Development Intern | *Remote* | *Dec 2024 â€“ Jan 2025*
+**AlphaStart (Fintech Startup)** | Software Development Intern | *Remote* | *Dec 2024 Ã¢â‚¬â€œ Jan 2025*
 - Developed RESTful APIs for a loan origination system using Node.js, Express, and PostgreSQL, reducing document processing time by **60%** through automated validation pipelines
 - Integrated Redis caching for frequently accessed customer data, reducing database query load by **70%** and improving API response times from 400ms to 120ms
 
@@ -2041,36 +2041,36 @@ Computer Networks, Object-Oriented Programming, Machine Learning, Distributed Sy
 
 ## ACHIEVEMENTS
 
-- **CodeChef Rating 2100+ (6â˜…)** → Global rank #47 in CodeChef Starters 124, highest rating among college batch
-- **LeetCode Guardian (2400+ rating)** → Solved **850+ problems** including 250+ hard; weekly contest global rank #132
-- **ACM ICPC 2024 Regionalist** → Secured rank #128 among 3,500+ teams in ICPC Asia-Kanpur regionals
-- **Google Kick Start** → Global rank #256 in Round F 2024
-- **Dean's List Award** → Awarded for academic excellence in all 6 semesters (top 5% of cohort)
+- **CodeChef Rating 2100+ (6Ã¢Ëœâ€¦)** â†’ Global rank #47 in CodeChef Starters 124, highest rating among college batch
+- **LeetCode Guardian (2400+ rating)** â†’ Solved **850+ problems** including 250+ hard; weekly contest global rank #132
+- **ACM ICPC 2024 Regionalist** â†’ Secured rank #128 among 3,500+ teams in ICPC Asia-Kanpur regionals
+- **Google Kick Start** â†’ Global rank #256 in Round F 2024
+- **Dean's List Award** â†’ Awarded for academic excellence in all 6 semesters (top 5% of cohort)
 
 ---
 
 ## POSITIONS OF RESPONSIBILITY
 
-**Competitive Programming Lead, Coding Club → NIT Surathkal** | *Aug 2024 â€“ Present*
+**Competitive Programming Lead, Coding Club â†’ NIT Surathkal** | *Aug 2024 Ã¢â‚¬â€œ Present*
 - Mentor 60+ juniors in DSA and competitive programming; conduct weekly training sessions covering advanced graph algorithms, dynamic programming, and segment trees
 - Organized **CodeSprint 2025**, a 24-hour inter-college hackathon with 500+ participants and 120 teams
 
-**Teaching Assistant → Data Structures & Algorithms** | *Jan 2025 â€“ Apr 2025*
+**Teaching Assistant â†’ Data Structures & Algorithms** | *Jan 2025 Ã¢â‚¬â€œ Apr 2025*
 - Conducted weekly tutorial sessions for 80+ second-year students; designed lab assignments on trees, graphs, and sorting algorithms; average student feedback score: 4.6/5.0
 
 ---
 
 ## CERTIFICATIONS
 
-- **AWS Certified Cloud Practitioner** → Amazon Web Services (May 2025)
-- **Meta Backend Developer Professional Certificate** → Coursera (Jan 2025)
-- **Google Cybersecurity Professional Certificate** → Coursera (Mar 2025)
+- **AWS Certified Cloud Practitioner** â†’ Amazon Web Services (May 2025)
+- **Meta Backend Developer Professional Certificate** â†’ Coursera (Jan 2025)
+- **Google Cybersecurity Professional Certificate** â†’ Coursera (Mar 2025)
 
 ---
 
 ## LANGUAGES
 
-- **English** (Fluent → IELTS 8.0)
+- **English** (Fluent â†’ IELTS 8.0)
 - **Hindi** (Native)
 - **Kannada** (Conversational)
 
@@ -2089,7 +2089,7 @@ Mumbai, Maharashtra | +91 87654 32109 | priya.verma@email.com | linkedin.com/in/
 ## EDUCATION
 
 **Veermata Jijabai Technological Institute (VJTI), Mumbai** | B.Tech in Computer Engineering
-*CGPA: 8.45 / 10.0* | *Aug 2022 â€“ Jun 2026*
+*CGPA: 8.45 / 10.0* | *Aug 2022 Ã¢â‚¬â€œ Jun 2026*
 
 **Relevant Coursework:** Data Structures, Algorithms, Web Development, Software Engineering, DBMS, Computer Networks,
 Operating Systems, Cloud Computing, UI/UX Design
@@ -2104,16 +2104,16 @@ Operating Systems, Cloud Computing, UI/UX Design
 **Distributed Task Scheduler** | *TypeScript, Node.js, PostgreSQL, Redis, Docker, Kubernetes*
 - Architected a distributed cron-job scheduler supporting **10,000+ scheduled tasks/hour** with fault-tolerant execution across a 5-node cluster
 - Implemented leader election using Redis SETNX with heartbeat-based failure detection, achieving **sub-2-second failover** on node crashes
-- Built a monitoring dashboard with real-time metrics → task success/failure rates, execution latency, queue depth → using WebSocket push updates
+- Built a monitoring dashboard with real-time metrics â†’ task success/failure rates, execution latency, queue depth â†’ using WebSocket push updates
 - Containerized the entire stack with Docker Compose and deployed on a 3-node Kubernetes cluster with horizontal pod autoscaling
 - *GitHub: github.com/priyaverma/dist-scheduler* | *Stars: 340+*\*
 - *Blog post: "Building a Distributed Scheduler from Scratch" on dev.to/priyaverma (12K+ views)*
 
 **Open Source: Apache ECharts Contributor** | *JavaScript, TypeScript, SVG Rendering*
-- Contributed 14 merged pull requests to the Apache ECharts visualization library → added sankey diagram node sorting, improved heatmap rendering performance by **35%** , and fixed 6 accessibility-related issues
+- Contributed 14 merged pull requests to the Apache ECharts visualization library â†’ added sankey diagram node sorting, improved heatmap rendering performance by **35%** , and fixed 6 accessibility-related issues
 - Authored a community documentation chapter on "Custom Series Development" accepted into the official wiki
 - Reviewed 28 PRs from other contributors as a project maintainer
-- *GitHub: github.com/apache/echarts → Commits: 42*
+- *GitHub: github.com/apache/echarts â†’ Commits: 42*
 
 **Event Management Platform (Ticketing System)** | *Next.js, TypeScript, Prisma, PostgreSQL, Stripe, TailwindCSS*
 - Built a full-stack event ticketing platform supporting event creation, ticket tiering, payment processing, and QR-code check-in
@@ -2132,17 +2132,17 @@ Operating Systems, Cloud Computing, UI/UX Design
 
 ## HACKATHONS
 
-**HackMIT 2025 → Finalist (Top 20)** | *Cambridge, MA (Virtual)* | *Sep 2025*
-- Built "DocuSignAI" → an AI-powered document review tool using GPT-4 for clause extraction and risk scoring
+**HackMIT 2025 â†’ Finalist (Top 20)** | *Cambridge, MA (Virtual)* | *Sep 2025*
+- Built "DocuSignAI" â†’ an AI-powered document review tool using GPT-4 for clause extraction and risk scoring
 - Tech: React, Python FastAPI, OpenAI API, PostgreSQL. Presented working demo to judges after 36 hours
 - Won the **"Best Use of AI"** category track prize
 
-**HackDTU 2025 → Winner (1st Place)** | *Delhi* | *Mar 2025*
-- Developed "MediTrack" → a blockchain-based vaccine supply chain tracker ensuring cold-chain compliance
+**HackDTU 2025 â†’ Winner (1st Place)** | *Delhi* | *Mar 2025*
+- Developed "MediTrack" â†’ a blockchain-based vaccine supply chain tracker ensuring cold-chain compliance
 - Implemented smart contracts on Ethereum testnet for immutable audit logs with QR-based verification
-- Prize: â‚¹50,000 and incubation opportunity
+- Prize: Ã¢â€šÂ¹50,000 and incubation opportunity
 
-**Flipkart Grid 4.0 → National Semi-Finalist** | *Online* | *Jun 2025*
+**Flipkart Grid 4.0 â†’ National Semi-Finalist** | *Online* | *Jun 2025*
 - Designed a real-time product recommendation engine using collaborative filtering and approximate nearest neighbor search
 - Achieved **87% precision@10** on a subset of the Amazon Reviews dataset
 
@@ -2172,32 +2172,32 @@ Operating Systems, Cloud Computing, UI/UX Design
 
 ## ACHIEVEMENTS
 
-- **GitHub Arctic Code Vault Contributor** → Code included in the GitHub Arctic Code Vault (ECharts commits)
-- **Postman Student Leader** → Conducted 8 API workshops reaching 400+ students across 5 colleges
-- **LeetCode 1950+ rating** → Solved 600+ problems; Knight badge holder
-- **Google Cloud Skill Boost** → Completed 25+ hands-on labs in cloud architecture and data engineering
+- **GitHub Arctic Code Vault Contributor** â†’ Code included in the GitHub Arctic Code Vault (ECharts commits)
+- **Postman Student Leader** â†’ Conducted 8 API workshops reaching 400+ students across 5 colleges
+- **LeetCode 1950+ rating** â†’ Solved 600+ problems; Knight badge holder
+- **Google Cloud Skill Boost** â†’ Completed 25+ hands-on labs in cloud architecture and data engineering
 - **Published 12 technical blog posts** on dev.to and Medium (total 45K+ reads, 800+ reactions)
 
 ---
 
 ## POSITIONS OF RESPONSIBILITY
 
-**Technical Lead, Open Source Club → VJTI** | *Jul 2024 â€“ Present*
+**Technical Lead, Open Source Club â†’ VJTI** | *Jul 2024 Ã¢â‚¬â€œ Present*
 - Lead team of 25 students contributing to open-source projects; organized monthly "Hacktoberfest Prep" workshops
 - Spearheaded the college's first GitHub Campus Program application, securing free GitHub Team access for 200+ students
 
-**Student Coordinator, TechFest 2025** | *VJTI* | *Jan 2025 â€“ Mar 2025*
+**Student Coordinator, TechFest 2025** | *VJTI* | *Jan 2025 Ã¢â‚¬â€œ Mar 2025*
 - Coordinated the "Code Wars" track with 300+ registrants; managed a team of 15 volunteers for event execution
-- Raised â‚¹2.5L in sponsorships from GitHub, Postman, and DigitalOcean
+- Raised Ã¢â€šÂ¹2.5L in sponsorships from GitHub, Postman, and DigitalOcean
 
 ---
 
 ## CERTIFICATIONS
 
-- **Docker Certified Associate** → Docker Inc. (Aug 2025)
-- **Google Cloud Digital Leader** → Google Cloud (Jun 2025)
-- **Meta Front-End Developer Professional Certificate** → Coursera (Feb 2025)
-- **HashiCorp Terraform Associate** → HashiCorp (Apr 2025)
+- **Docker Certified Associate** â†’ Docker Inc. (Aug 2025)
+- **Google Cloud Digital Leader** â†’ Google Cloud (Jun 2025)
+- **Meta Front-End Developer Professional Certificate** â†’ Coursera (Feb 2025)
+- **HashiCorp Terraform Associate** â†’ HashiCorp (Apr 2025)
 
 ---
 
@@ -2222,7 +2222,7 @@ Lucknow, Uttar Pradesh | +91 76543 21098 | aman.gupta@email.com | linkedin.com/i
 ## EDUCATION
 
 **Ajay Kumar Garg Engineering College, Ghaziabad** | B.Tech in Information Technology
-*CGPA: 7.65 / 10.0* | *Oct 2022 â€“ Jun 2026* | *No active backlogs*
+*CGPA: 7.65 / 10.0* | *Oct 2022 Ã¢â‚¬â€œ Jun 2026* | *No active backlogs*
 
 **Relevant Coursework:** Programming in C, Object-Oriented Programming, Database Management Systems, Computer Networks,
 Operating Systems, Software Engineering, Web Technologies, Discrete Mathematics
@@ -2238,7 +2238,7 @@ Operating Systems, Software Engineering, Web Technologies, Discrete Mathematics
 - Developed a full-stack e-commerce platform with user authentication, product catalog, shopping cart, and order management
 - Implemented JWT-based authentication with role-based access (Admin / Customer), including session management and token refresh
 - Designed normalized MySQL database schema with 12 tables (User, Product, Category, Order, OrderItem, Cart, Address, Payment, Review, Wishlist, Coupon, Inventory) and optimized JOIN queries reducing page load time by **40%**
-- Added product search with category filters, price sorting, and pagination → supporting **500+ products** across 15 categories
+- Added product search with category filters, price sorting, and pagination â†’ supporting **500+ products** across 15 categories
 - Integrated Razorpay payment gateway for order processing with webhook-based order status updates
 - Deployed on AWS EC2 with MySQL hosted on RDS; configured Nginx as reverse proxy with SSL termination
 - *GitHub: github.com/amangupta/shophub*
@@ -2292,32 +2292,32 @@ Operating Systems, Software Engineering, Web Technologies, Discrete Mathematics
 
 ## TRAINING & WORKSHOPS
 
-**Java Full Stack Development → Internshala Training** | *Jun 2024 â€“ Aug 2024*
+**Java Full Stack Development â†’ Internshala Training** | *Jun 2024 Ã¢â‚¬â€œ Aug 2024*
 - Completed 8-week online training covering Java, Spring Boot, Hibernate, REST APIs, HTML/CSS, and JavaScript
-- Built a library management system as capstone project → awarded **"Outstanding Project"** among 500+ trainees
+- Built a library management system as capstone project â†’ awarded **"Outstanding Project"** among 500+ trainees
 
-**TCS iON Career Edge → Young Professional** | *May 2024*
+**TCS iON Career Edge â†’ Young Professional** | *May 2024*
 - Completed 15-day course on communication skills, professional etiquette, resume writing, and interview preparation
 
 ---
 
 ## ACHIEVEMENTS
 
-- **NPTEL Elite Certificate** in Python for Data Science → scored **71%** (top 5% of course)
-- **HackerRank 5â˜…** in Java, **4â˜…** in SQL, **3â˜…** in Problem Solving
-- **College Tech Fest Winner** → 2nd place in Web Development competition (2024)
-- **National Service Scheme (NSS)** → Completed 120+ hours of community service; organized blood donation camp with 80+ donors
-- **Class Representative** for IT Department (2024-25) → Liaised between faculty and 65 students
+- **NPTEL Elite Certificate** in Python for Data Science â†’ scored **71%** (top 5% of course)
+- **HackerRank 5Ã¢Ëœâ€¦** in Java, **4Ã¢Ëœâ€¦** in SQL, **3Ã¢Ëœâ€¦** in Problem Solving
+- **College Tech Fest Winner** â†’ 2nd place in Web Development competition (2024)
+- **National Service Scheme (NSS)** â†’ Completed 120+ hours of community service; organized blood donation camp with 80+ donors
+- **Class Representative** for IT Department (2024-25) â†’ Liaised between faculty and 65 students
 
 ---
 
 ## POSITIONS OF RESPONSIBILITY
 
-**Event Coordinator → TechVibes 2025** | *AKGEC Ghaziabad* | *Feb 2025 â€“ Apr 2025*
+**Event Coordinator â†’ TechVibes 2025** | *AKGEC Ghaziabad* | *Feb 2025 Ã¢â‚¬â€œ Apr 2025*
 - Coordinated the "Web Weavers" web development competition with 120+ participants from 15 colleges
 - Managed event logistics, created problem statements, and led a team of 8 volunteers
 
-**Student Mentor → First-Year Induction Program** | *Aug 2024*
+**Student Mentor â†’ First-Year Induction Program** | *Aug 2024*
 - Mentored 30 freshmen students during the 2-week induction program on academic expectations and campus resources
 - Conducted basic programming workshops in C language for new students
 
@@ -2333,7 +2333,7 @@ Operating Systems, Software Engineering, Web Technologies, Discrete Mathematics
 
 ## ADDITIONAL INFORMATION
 
-- **Willing to relocate** → Open to working across any location in India
+- **Willing to relocate** â†’ Open to working across any location in India
 - **Passport:** Valid (expires 2034)
 - **Hobbies:** Chess (1500+ rating on Chess.com), Badminton, Reading technology blogs, Cooking
 - **Driving License:** Valid LMV license
@@ -2352,7 +2352,7 @@ Pune, Maharashtra | +91 65432 10987 | neha.patel@email.com | linkedin.com/in/neh
 ## EDUCATION
 
 **College of Engineering, Pune (COEP)** | B.Tech in Computer Science and Engineering (AI/ML Specialization)
-*CGPA: 9.12 / 10.0* | *Aug 2022 â€“ Jun 2026*
+*CGPA: 9.12 / 10.0* | *Aug 2022 Ã¢â‚¬â€œ Jun 2026*
 
 **Relevant Coursework:** Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, Probability &
 Statistics, Linear Algebra, Optimization, Reinforcement Learning, Data Mining, Database Systems
@@ -2366,7 +2366,7 @@ Statistics, Linear Algebra, Optimization, Reinforcement Learning, Data Mining, D
 
 **BERT-Based Financial Sentiment Classifier** | *Python, PyTorch, Hugging Face Transformers, FastAPI, Docker*
 - Fine-tuned `BERT-base-uncased` on the Financial PhraseBank (4,845 sentences) achieving **92.3% accuracy** and **0.91 F1-score** for positive/negative/neutral sentiment classification
-- Implemented data augmentation using back-translation (English → French → English) improving minority-class recall by **12%**
+- Implemented data augmentation using back-translation (English â†’ French â†’ English) improving minority-class recall by **12%**
 - Deployed as a REST API using FastAPI with ONNX Runtime quantization for **3x inference speedup** (from 180ms to 60ms per prediction)
 - Created an interactive Streamlit demo for stakeholder presentations; containerized with Docker
 - *GitHub: github.com/nehapatel/finbert-sentiment*
@@ -2387,7 +2387,7 @@ Statistics, Linear Algebra, Optimization, Reinforcement Learning, Data Mining, D
 **News Article Summarization with T5** | *Python, PyTorch, Hugging Face, Streamlit, AWS Lambda*
 - Fine-tuned T5-small on the CNN/DailyMail dataset (300K articles) for abstractive text summarization, achieving **ROUGE-1: 41.2, ROUGE-L: 38.7**
 - Implemented beam search decoding with length penalties and n-gram blocking to reduce repetitive outputs
-- Created a serverless inference pipeline using AWS Lambda with container image support → responds within **800ms** for articles under 1,000 tokens
+- Created a serverless inference pipeline using AWS Lambda with container image support â†’ responds within **800ms** for articles under 1,000 tokens
 - *GitHub: github.com/nehapatel/news-summarizer*
 
 ---
@@ -2396,7 +2396,7 @@ Statistics, Linear Algebra, Optimization, Reinforcement Learning, Data Mining, D
 
 | Competition | Rank | Problem Type | Approach |
 |---|---|---|---|
-| **House Prices: Advanced Regression** | Top 5% (321 / 8,000+) | Regression | Ensemble: XGBoost + LightGBM + CatBoost; feature engineering (combined 79 → 146 features) |
+| **House Prices: Advanced Regression** | Top 5% (321 / 8,000+) | Regression | Ensemble: XGBoost + LightGBM + CatBoost; feature engineering (combined 79 â†’ 146 features) |
 | **Titanic: Machine Learning from Disaster** | Top 3% (286 / 12,000+) | Classification | Feature engineering on Name/Title, Cabin, FamilySize; Stacking classifier |
 | **Digit Recognizer (MNIST)** | Top 4% (412 / 10,500+) | Image Classification | CNN with 3 conv layers + dropout + batch norm; 99.67% accuracy |
 | **TMDB Box Office Prediction** | Top 8% (750 / 9,000+) | Regression | NLP on movie overviews (TF-IDF + SVD); XGBoost with Bayesian optimization |
@@ -2431,21 +2431,21 @@ Statistics, Linear Algebra, Optimization, Reinforcement Learning, Data Mining, D
 
 ## ACHIEVEMENTS
 
-- **Kaggle Notebooks Master** → 6 gold medals (4 solo), 14 silver; 2 notebooks featured on Kaggle homepage
+- **Kaggle Notebooks Master** â†’ 6 gold medals (4 solo), 14 silver; 2 notebooks featured on Kaggle homepage
 - **Published 2 research papers** (1 journal, 1 conference under review)
-- **LeetCode SQL 5â˜…** → Top 2% in database problems
-- **Harvard CS50x Puzzle Day Winner** → Completed all puzzles in under 4 hours (2024)
-- **Best Project Award** → COEP TechFest 2024 for the Traffic Sign Recognition project
+- **LeetCode SQL 5Ã¢Ëœâ€¦** â†’ Top 2% in database problems
+- **Harvard CS50x Puzzle Day Winner** â†’ Completed all puzzles in under 4 hours (2024)
+- **Best Project Award** â†’ COEP TechFest 2024 for the Traffic Sign Recognition project
 
 ---
 
 ## POSITIONS OF RESPONSIBILITY
 
-**Co-Lead, Data Science Club → COEP** | *Jul 2024 â€“ Present*
+**Co-Lead, Data Science Club â†’ COEP** | *Jul 2024 Ã¢â‚¬â€œ Present*
 - Organize weekly paper-reading sessions covering recent NeurIPS, ICML, and ICLR publications; average attendance: 40+ students
 - Mentored 5 teams for Kaggle competitions; 2 teams achieved top 10% finishes
 
-**Teaching Assistant → Machine Learning (UG Course)** | *Jan 2025 â€“ May 2025*
+**Teaching Assistant â†’ Machine Learning (UG Course)** | *Jan 2025 Ã¢â‚¬â€œ May 2025*
 - Graded assignments and projects for 120+ students; conducted Python and scikit-learn lab sessions
 - Created 3 hands-on assignments on regression, classification, and clustering used across semester
 
@@ -2453,16 +2453,16 @@ Statistics, Linear Algebra, Optimization, Reinforcement Learning, Data Mining, D
 
 ## CERTIFICATIONS
 
-- **Deep Learning Specialization** → deeplearning.ai / Coursera (Andrew Ng, May 2025)
-- **TensorFlow Developer Certificate** → Google (Mar 2025)
-- **AWS Certified Machine Learning → Specialty** → Amazon (Aug 2025)
-- **Data Scientist with Python Track** → DataCamp (Dec 2024)
+- **Deep Learning Specialization** â†’ deeplearning.ai / Coursera (Andrew Ng, May 2025)
+- **TensorFlow Developer Certificate** â†’ Google (Mar 2025)
+- **AWS Certified Machine Learning â†’ Specialty** â†’ Amazon (Aug 2025)
+- **Data Scientist with Python Track** â†’ DataCamp (Dec 2024)
 
 ---
 
 ## LANGUAGES
 
-- **English** (Fluent → TOEFL 112)
+- **English** (Fluent â†’ TOEFL 112)
 - **Hindi** (Native)
 - **Marathi** (Native)
 - **Gujarati** (Conversational)
@@ -2490,7 +2490,7 @@ Jaipur, Rajasthan | +91 54321 09876 | arjun.singh@email.com | linkedin.com/in/ar
 ## EDUCATION
 
 **Manipal Institute of Technology, Manipal** | B.Tech in Computer Science and Engineering
-*CGPA: 8.21 / 10.0* | *Aug 2022 â€“ Jun 2026*
+*CGPA: 8.21 / 10.0* | *Aug 2022 Ã¢â‚¬â€œ Jun 2026*
 
 **Relevant Coursework:** Web Technologies, Database Systems, Computer Networks, Software Engineering, Operating Systems,
 Object-Oriented Programming, User Interface Design, Cloud Computing
@@ -2502,15 +2502,15 @@ Object-Oriented Programming, User Interface Design, Cloud Computing
 
 ## WORK EXPERIENCE
 
-**Freelance Full-Stack Developer | Self-Employed** | *Remote* | *Jun 2024 â€“ Present*
+**Freelance Full-Stack Developer | Self-Employed** | *Remote* | *Jun 2024 Ã¢â‚¬â€œ Present*
 *Clients include: 2 funded startups, 3 small businesses, 1 NGO*
 - Architected and built a MERN-stack SaaS application (TaskFlow) serving **5,000+ daily active users** with team collaboration features including real-time boards, file sharing, and activity feeds
 - Designed RESTful + GraphQL hybrid API architecture handling **200+ requests/second** with rate limiting and caching layers
 - Migrated a client's monolithic Ruby on Rails e-commerce platform to a microservices architecture using Node.js and Docker, reducing deployment time by **80%** and enabling independent service scaling
-- Delivered projects end-to-end: requirements gathering, UI/UX design (Figma → React), backend development, cloud deployment, and post-launch maintenance
-- Earned **â‚¹4.2L+** in freelance revenue over 18 months across 7 completed projects
+- Delivered projects end-to-end: requirements gathering, UI/UX design (Figma â†’ React), backend development, cloud deployment, and post-launch maintenance
+- Earned **Ã¢â€šÂ¹4.2L+** in freelance revenue over 18 months across 7 completed projects
 
-**Upwork → Top Rated Plus Freelancer** | *Remote* | *Jan 2024 â€“ Present*
+**Upwork â†’ Top Rated Plus Freelancer** | *Remote* | *Jan 2024 Ã¢â‚¬â€œ Present*
 - Completed 35+ projects with **100% job success score**; earned "Top Rated Plus" status within 12 months
 - Built custom CRM dashboards, booking systems, inventory management portals, and real-time analytics platforms
 - Average client rating: 4.97 / 5.00 across 42 reviews
@@ -2519,7 +2519,7 @@ Object-Oriented Programming, User Interface Design, Cloud Computing
 
 ## FULL-STACK PROJECTS
 
-**TaskFlow → Team Collaboration Platform** | *MongoDB, Express.js, React, Node.js, Socket.IO, Redis, AWS*
+**TaskFlow â†’ Team Collaboration Platform** | *MongoDB, Express.js, React, Node.js, Socket.IO, Redis, AWS*
 - Built a Trello/Asana-inspired project management platform supporting **5,000 DAU** with drag-and-drop boards, real-time collaboration, and file attachments
 - Implemented WebSocket-based real-time updates using Socket.IO with Redis adapter for horizontal scaling across 3 Node.js instances
 - Added file upload system with AWS S3 pre-signed URLs and Sharp-based image compression (reduce upload size by **70%** )
@@ -2531,19 +2531,19 @@ Object-Oriented Programming, User Interface Design, Cloud Computing
 - Developed a cross-platform food ordering app with real-time order tracking, push notifications, and in-app chat
 - Integrated Google Maps API for live delivery tracking with ETA calculation and route optimization; reduced delivery time estimation error by **25%**
 - Built admin dashboard showing real-time order flow, revenue analytics, and delivery performance metrics
-- Implemented Firebase Cloud Messaging for push notifications → 3,500+ daily push notifications with **88% delivery rate**
+- Implemented Firebase Cloud Messaging for push notifications â†’ 3,500+ daily push notifications with **88% delivery rate**
 - PostgreSQL schema optimized with materialized views for daily sales reports, aggregating **2,000+ orders/day**
 - *GitHub: github.com/arjunsingh/foodie-app* | *Product Hunt launch: 180+ upvotes*
 
-**DevBlog → Markdown Blogging Platform** | *Next.js, TypeScript, Prisma, PlanetScale, Cloudinary, Vercel*
+**DevBlog â†’ Markdown Blogging Platform** | *Next.js, TypeScript, Prisma, PlanetScale, Cloudinary, Vercel*
 - Built a developer-focused blogging platform with MDX support, syntax highlighting (Shiki), and auto-generated table of contents
-- Implemented server-side rendering with Incremental Static Regeneration → **300ms average TTFB** and **98 Lighthouse score**
+- Implemented server-side rendering with Incremental Static Regeneration â†’ **300ms average TTFB** and **98 Lighthouse score**
 - Added Ghost CMS-like publishing experience with draft/preview/published workflows, scheduling, and analytics dashboard
 - Integrated Cloudinary for image optimization with automatic WebP conversion and CDN delivery
 - Handles **12,000+ monthly active visitors** with PlanetScale serverless database and auto-scaling
 
 **URL Shortener + QR Code Generator** | *Go, PostgreSQL, React, Docker, Nginx*
-- Rebuilt a URL shortener in Go for high throughput → handles **5,000+ requests/second** with Redis caching layer
+- Rebuilt a URL shortener in Go for high throughput â†’ handles **5,000+ requests/second** with Redis caching layer
 - Added QR code generation API using go-qrcode library with customizable colors, sizes, and embedded logos
 - Implemented analytics tracking (clicks, geolocation, device type, referrer) using PostgreSQL event store with batch inserts
 - Reduced 95th percentile latency to **12ms** with connection pooling and prepared statement caching
@@ -2577,22 +2577,22 @@ Object-Oriented Programming, User Interface Design, Cloud Computing
 
 ## ACHIEVEMENTS
 
-- **Upwork Top Rated Plus** → Top 3% of freelancers on the platform; maintained for 12+ consecutive months
-- **Product Hunt #3 Product of the Day** → For DevBlog launch with 180+ upvotes
+- **Upwork Top Rated Plus** â†’ Top 3% of freelancers on the platform; maintained for 12+ consecutive months
+- **Product Hunt #3 Product of the Day** â†’ For DevBlog launch with 180+ upvotes
 - **GitHub 1,200+ total stars** across 8 open-source repositories
-- **SIH 2024 Finalist** → Smart India Hackathon 2024; built a waste management tracking system for municipal corporation
-- **Polyglot Programmer** → Active on 5 technology stacks (MERN, Go+React, Next.js+Prisma, Python+FastAPI, React Native)
+- **SIH 2024 Finalist** â†’ Smart India Hackathon 2024; built a waste management tracking system for municipal corporation
+- **Polyglot Programmer** â†’ Active on 5 technology stacks (MERN, Go+React, Next.js+Prisma, Python+FastAPI, React Native)
 
 ---
 
 ## POSITIONS OF RESPONSIBILITY
 
-**Founder & Lead, Web Development Wing → MIT Manipal Coding Club** | *Aug 2024 â€“ Present*
+**Founder & Lead, Web Development Wing â†’ MIT Manipal Coding Club** | *Aug 2024 Ã¢â‚¬â€œ Present*
 - Established the Web Development wing with 30+ active members; conduct weekly hands-on workshops on React, Node.js, and deployment
 - Led the development of the club's official website (next.clubweb.mitm) serving as portfolio for 100+ members
-- Organized "ShipIt 2025" → a 2-week build sprint where 12 teams launched production-ready web apps
+- Organized "ShipIt 2025" â†’ a 2-week build sprint where 12 teams launched production-ready web apps
 
-**Technical Mentor → Google Developer Student Clubs (GDSC)** | *Sep 2024 â€“ Present*
+**Technical Mentor â†’ Google Developer Student Clubs (GDSC)** | *Sep 2024 Ã¢â‚¬â€œ Present*
 - Mentored 50+ students in web development; conducted 6 workshops on React, Firebase, and Cloud deployment
 - Guided 3 student teams to build and deploy full-stack projects for GDSC Solution Challenge
 
@@ -2600,16 +2600,16 @@ Object-Oriented Programming, User Interface Design, Cloud Computing
 
 ## CERTIFICATIONS
 
-- **AWS Certified Solutions Architect → Associate** → Amazon Web Services (Jul 2025)
-- **Meta Front-End Developer Professional Certificate** → Coursera (Mar 2025)
-- **Kubernetes for Developers (CKAD Prep)** → Udemy (Dec 2024)
-- **MongoDB Associate Developer** → MongoDB University (Oct 2024)
+- **AWS Certified Solutions Architect â†’ Associate** â†’ Amazon Web Services (Jul 2025)
+- **Meta Front-End Developer Professional Certificate** â†’ Coursera (Mar 2025)
+- **Kubernetes for Developers (CKAD Prep)** â†’ Udemy (Dec 2024)
+- **MongoDB Associate Developer** â†’ MongoDB University (Oct 2024)
 
 ---
 
 ## LANGUAGES
 
-- **English** (Fluent → IELTS 7.5)
+- **English** (Fluent â†’ IELTS 7.5)
 - **Hindi** (Native)
 - **Rajasthani** (Native)
 
@@ -2640,19 +2640,19 @@ Object-Oriented Programming, User Interface Design, Cloud Computing
 
 | Topic | Key Resource | Time Investment | Impact |
 |-------|------------|-----------------|--------|
-| Resume | Single-column ATS format, quantified bullets | 2â€“3 days to draft + iterate | High (shortlisting gate) |
-| LinkedIn | Complete profile + weekly posts | 1â€“2 hours initial + 30 min/week | Medium (referral source) |
-| Aptitude | Formula sheets + timed practice | 2â€“4 hours/week for 4 weeks | High (first-round filter) |
-| Cover Letter | 4-paragraph template | 1 hour per application | Lowâ€“Medium (tiebreaker) |
-| GitHub | 6 pinned repos with clean READMEs | 1â€“2 days initial setup | Medium (product companies) |
+| Resume | Single-column ATS format, quantified bullets | 2Ã¢â‚¬â€œ3 days to draft + iterate | High (shortlisting gate) |
+| LinkedIn | Complete profile + weekly posts | 1Ã¢â‚¬â€œ2 hours initial + 30 min/week | Medium (referral source) |
+| Aptitude | Formula sheets + timed practice | 2Ã¢â‚¬â€œ4 hours/week for 4 weeks | High (first-round filter) |
+| Cover Letter | 4-paragraph template | 1 hour per application | LowÃ¢â‚¬â€œMedium (tiebreaker) |
+| GitHub | 6 pinned repos with clean READMEs | 1Ã¢â‚¬â€œ2 days initial setup | Medium (product companies) |
 
 ## Cross-Application Matrix
 
 | Preparation Area | Service-Based (TCS, Infy) | Product-Based (Flipkart, Uber) | FAANG (Google, Microsoft) |
 |-----------------|--------------------------|-------------------------------|---------------------------|
 | Resume Focus | CGPA, skills, certifications | Projects, internships, impact metrics | Publications, open-source, competitive programming |
-| LinkedIn Priority | Lowâ€“Medium | Mediumâ€“High | High (referrals) |
-| Aptitude Weight | High (mandatory section) | Medium (initial filter) | Lowâ€“Medium (Google assessment) |
+| LinkedIn Priority | LowÃ¢â‚¬â€œMedium | MediumÃ¢â‚¬â€œHigh | High (referrals) |
+| Aptitude Weight | High (mandatory section) | Medium (initial filter) | LowÃ¢â‚¬â€œMedium (Google assessment) |
 | Cover Letter | Rarely read | Sometimes read | Usually required for off-campus |
 | ATS Sensitivity | Very High | High | Moderate |
 
@@ -2665,7 +2665,7 @@ Test your understanding of placement preparation fundamentals.
 <details>
 <summary>Show Answer&lt;/summary&gt;
 
-**Answer:** The top third of the page → which must contain your name, skills, education CGPA, and one strong project. Recruiters decide whether to continue reading in those first 6 seconds based on what they see in this prime real estate.
+**Answer:** The top third of the page â†’ which must contain your name, skills, education CGPA, and one strong project. Recruiters decide whether to continue reading in those first 6 seconds based on what they see in this prime real estate.
 
 </details>
 
@@ -2674,7 +2674,7 @@ Test your understanding of placement preparation fundamentals.
 <details>
 <summary>Show Answer&lt;/summary&gt;
 
-**Answer:** Build a relationship first → connect with a personalized note, learn about their experience, then ask for the referral after a conversation. Never ask for a referral in the first connection request.
+**Answer:** Build a relationship first â†’ connect with a personalized note, learn about their experience, then ask for the referral after a conversation. Never ask for a referral in the first connection request.
 
 </details>
 
@@ -2692,7 +2692,7 @@ Test your understanding of placement preparation fundamentals.
 <details>
 <summary>Show Answer&lt;/summary&gt;
 
-**Answer:** Speed and pattern recognition. Time management → knowing when to skip a problem and which formula to apply → is more critical than solving complex mathematical problems under time pressure.
+**Answer:** Speed and pattern recognition. Time management â†’ knowing when to skip a problem and which formula to apply â†’ is more critical than solving complex mathematical problems under time pressure.
 
 </details>
 
@@ -2700,17 +2700,17 @@ Test your understanding of placement preparation fundamentals.
 
 ## 6. Cover Letter Writing
 
-A well-written cover letter can differentiate you when 200+ candidates have identical GPAs and similar project lists. Service-based companies rarely read them, but product companies and startups often do → especially for off-campus applications.
+A well-written cover letter can differentiate you when 200+ candidates have identical GPAs and similar project lists. Service-based companies rarely read them, but product companies and startups often do â†’ especially for off-campus applications.
 
 ### 6.1 The 4-Paragraph Formula
 
 
 | Paragraph | Purpose | Length |
 |-----------|---------|--------|
-| 1 → Hook | Express interest in the specific role/company. Name the product or team. | 2-3 sentences |
-| 2 → Relevance | Connect your strongest project/internship to the role's requirements. | 3-4 sentences |
-| 3 → Differentiation | Highlight one unique skill or experience that sets you apart. | 2-3 sentences |
-| 4 → Close | Restate enthusiasm, mention attached resume, thank them. | 2 sentences |
+| 1 â†’ Hook | Express interest in the specific role/company. Name the product or team. | 2-3 sentences |
+| 2 â†’ Relevance | Connect your strongest project/internship to the role's requirements. | 3-4 sentences |
+| 3 â†’ Differentiation | Highlight one unique skill or experience that sets you apart. | 2-3 sentences |
+| 4 â†’ Close | Restate enthusiasm, mention attached resume, thank them. | 2 sentences |
 
 ### 6.2 Cover Letter Templates
 
@@ -2720,7 +2720,7 @@ A well-written cover letter can differentiate you when 200+ candidates have iden
 >
 > I am a final-year Computer Science student at [College Name] with a strong foundation in data structures, algorithms, and full-stack development. I am writing to express my interest in the Software Development Engineer role at [Company].
 >
-> During my internship at [Company], I built a [project description] that reduced [metric] by [X]%. This experience taught me to write production-grade code, collaborate across teams, and ship under deadlines → skills I am eager to bring to [Company].
+> During my internship at [Company], I built a [project description] that reduced [metric] by [X]%. This experience taught me to write production-grade code, collaborate across teams, and ship under deadlines â†’ skills I am eager to bring to [Company].
 >
 > I am particularly drawn to [Company]'s work on [specific product/tech]. As someone who [relevant side project / open source contribution], I would love the opportunity to contribute to [Team/Product].
 >
@@ -2734,7 +2734,7 @@ A well-written cover letter can differentiate you when 200+ candidates have iden
 >
 > I have been following [Company]'s engineering blog and was impressed by your recent work on [specific article/feature]. As a final-year CS student who has built [relevant project], I believe I could contribute meaningfully to your team.
 >
-> In my recent project, [Project Name], I [describe achievement with metrics]. This required [relevant skills] → the same technologies your team uses based on the job description.
+> In my recent project, [Project Name], I [describe achievement with metrics]. This required [relevant skills] â†’ the same technologies your team uses based on the job description.
 >
 > I understand you are hiring for [Role]. I have attached my resume detailing my experience. I would welcome the opportunity to discuss how my skills align with [Company]'s needs.
 >
@@ -2767,19 +2767,19 @@ Your GitHub profile is often the second thing a recruiter looks at after your re
 - **Profile README**: Create a `[username]/[username]` repository with a README that summarizes your skills, pinned projects, and GitHub stats. Use GitHub Actions to auto-update with recent activity.
 - **Professional Photo**: Use the same photo as LinkedIn/resume for consistency.
 - **Bio**: 1-2 lines summarizing your focus area (e.g., "Full-stack engineer building developer tools. GATE 2025 aspirant. Open-source contributor.")
-- **Pinned Repositories**: Pin your best 6 repos → at least 3 should be non-trivial projects (not tutorial clones).
+- **Pinned Repositories**: Pin your best 6 repos â†’ at least 3 should be non-trivial projects (not tutorial clones).
 
 **Example Profile README snippet:**
 ```markdown
-### Hi there ðŸ‘‹
+### Hi there Ã°Å¸â€˜â€¹
 
 
 I'm a Computer Science student passionate about distributed systems and developer tooling.
 
-ðŸ”­ Currently working on: [Project Name] → a real-time collaborative code editor
-ðŸŒ± Learning: System Design, Kubernetes, Apache Kafka
-ðŸ‘¯ Looking to collaborate on: Open-source developer tools
-ðŸ“« Reach me: [email] | [LinkedIn] | [Portfolio]
+Ã°Å¸â€Â­ Currently working on: [Project Name] â†’ a real-time collaborative code editor
+Ã°Å¸Å’Â± Learning: System Design, Kubernetes, Apache Kafka
+Ã°Å¸â€˜Â¯ Looking to collaborate on: Open-source developer tools
+Ã°Å¸â€œÂ« Reach me: [email] | [LinkedIn] | [Portfolio]
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=yourusername&layout=compact)
@@ -2820,7 +2820,7 @@ A green contribution graph signals consistency. Aim for:
 
 ## 8. ATS Optimization Strategy
 
-Applicant Tracking Systems (ATS) filter resumes before they reach human recruiters. Understanding how ATS works is critical → especially for service-based and large product companies.
+Applicant Tracking Systems (ATS) filter resumes before they reach human recruiters. Understanding how ATS works is critical â†’ especially for service-based and large product companies.
 
 ### 8.1 How ATS Parses Resumes
 
@@ -2842,7 +2842,7 @@ ATS software extracts the following fields from your resume:
 | No tables, columns, or text boxes | ATS reads left-to-right, top-to-bottom |
 | No headers/footers with critical info | Many ATS skip header/footer content |
 | Standard fonts only (Arial, Calibri, Times New Roman) | Unusual fonts may not render in ATS preview |
-| Bullet points using standard characters ( - * â€¢ ) | Custom bullet symbols may be skipped |
+| Bullet points using standard characters ( - * Ã¢â‚¬Â¢ ) | Custom bullet symbols may be skipped |
 | Spell out acronyms at least once (e.g., "AWS (Amazon Web Services)") | ATS may match "AWS" or "Amazon Web Services" |
 | Include a Keywords section or skill tags | Direct keyword matching is how ATS scores resumes |
 

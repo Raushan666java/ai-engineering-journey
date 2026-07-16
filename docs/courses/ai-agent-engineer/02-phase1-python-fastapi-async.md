@@ -1,4 +1,4 @@
-# Phase 1 — Python + FastAPI + AsyncIO
+﻿# Phase 1 â€” Python + FastAPI + AsyncIO
 
 **Duration:** Weeks 2-3, ~30 hours
 **Goal:** Write production Python with type hints, build FastAPI endpoints with proper DI and validation, understand asyncIO well enough to explain it in an interview.
@@ -9,16 +9,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/ai-agent-engineer/02-phase1-python-fastapi-async/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/ai-agent-engineer/02-phase1-python-fastapi-async/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-agent-engineer/02-phase1-python-fastapi-async/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/ai-agent-engineer/02-phase1-python-fastapi-async/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/ai-agent-engineer/02-phase1-python-fastapi-async/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/ai-agent-engineer/02-phase1-python-fastapi-async/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-agent-engineer/02-phase1-python-fastapi-async/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/ai-agent-engineer/02-phase1-python-fastapi-async/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/ai-agent-engineer/02-phase1-python-fastapi-async/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/ai-agent-engineer/02-phase1-python-fastapi-async/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-agent-engineer/02-phase1-python-fastapi-async/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/ai-agent-engineer/02-phase1-python-fastapi-async/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -111,13 +111,13 @@ from pydantic import BaseModel
 
 @dataclass
 class InternalConfig:
-    """Internal-only — no validation, no serialization needed."""
+    """Internal-only â€” no validation, no serialization needed."""
     host: str
     port: int
     debug: bool
 
 class APIRequest(BaseModel):
-    """API boundary — validation, serialization, OpenAPI generation needed."""
+    """API boundary â€” validation, serialization, OpenAPI generation needed."""
     name: str
     age: int
 
@@ -215,10 +215,10 @@ chunk_map = {c: len(c) for c in chunks}
 
 
 ```python
-# List — all in memory
+# List â€” all in memory
 all_scores = [compute_score(c) for c in huge_list]
 
-# Generator — one at a time
+# Generator â€” one at a time
 score_gen = (compute_score(c) for c in huge_list)
 for score in score_gen:
     process(score)
@@ -234,7 +234,7 @@ Take 5 for-loops from your existing Python code or tutorials and rewrite them as
 
 You've used `@app.get()`, `@limiter.limit()`. Now write your own.
 
-### `@retry(times=3)` — the one you'll actually reuse
+### `@retry(times=3)` â€” the one you'll actually reuse
 
 
 ```python
@@ -320,7 +320,7 @@ Scaffold a FastAPI app in your project repo with `POST /leads` and `GET /leads/{
 
 ## 1.7 FastAPI Dependency Injection
 
-Dependencies are how FastAPI handles shared logic — authentication, DB sessions, rate limiting.
+Dependencies are how FastAPI handles shared logic â€” authentication, DB sessions, rate limiting.
 
 ```python
 from fastapi import Depends, HTTPException, status
@@ -509,15 +509,15 @@ import asyncio
 
 async def task(name: str, delay: float):
     print(f"{name}: start")
-    await asyncio.sleep(delay)  # Correct — yields to event loop
+    await asyncio.sleep(delay)  # Correct â€” yields to event loop
     print(f"{name}: end")
 
 async def main():
-    # Sequential — takes 3 seconds
+    # Sequential â€” takes 3 seconds
     await task("A", 1)
     await task("B", 2)
 
-    # Concurrent — takes 2 seconds
+    # Concurrent â€” takes 2 seconds
     await asyncio.gather(
         task("C", 1),
         task("D", 2),
@@ -549,18 +549,18 @@ async def fetch_embedding(text: str) -> list[float]:
 async def main():
     texts = ["cat", "dog", "car"]
 
-    # Sequential — 3 * latency = ~1.5s
+    # Sequential â€” 3 * latency = ~1.5s
     results_seq = []
     for t in texts:
         results_seq.append(await fetch_embedding(t))
 
-    # Concurrent — 1 * latency = ~0.5s
+    # Concurrent â€” 1 * latency = ~0.5s
     results_con = await asyncio.gather(*[fetch_embedding(t) for t in texts])
 ```
 
 ### Exercise
 
-Take 3 outbound API calls (OpenAI, or any free public API). Run them sequentially and with `asyncio.gather`. Time both. The speedup is your actual latency improvement — write it down, it's an interview talking point.
+Take 3 outbound API calls (OpenAI, or any free public API). Run them sequentially and with `asyncio.gather`. Time both. The speedup is your actual latency improvement â€” write it down, it's an interview talking point.
 
 ---
 
@@ -585,14 +585,14 @@ async def call_llm(prompt: str, client: httpx.AsyncClient) -> str:
 async def main():
     prompts = ["Write a haiku", "Write a limerick", "Write a tanka"]
     async with httpx.AsyncClient() as client:
-        # 3 concurrent LLM calls — ~3x faster than sequential
+        # 3 concurrent LLM calls â€” ~3x faster than sequential
         results = await asyncio.gather(*[call_llm(p, client) for p in prompts])
         print(results)
 ```
 
 ### Exercise
 
-Make 3 concurrent outbound API calls — one to OpenAI, one to a weather API, one to a free joke API — without blocking each other. Use `httpx.AsyncClient` as a context manager.
+Make 3 concurrent outbound API calls â€” one to OpenAI, one to a weather API, one to a free joke API â€” without blocking each other. Use `httpx.AsyncClient` as a context manager.
 
 ---
 
@@ -605,12 +605,12 @@ Make 3 concurrent outbound API calls — one to OpenAI, one to a weather API, on
 import requests
 
 async def bad_route():
-    # BAD: requests.get() is synchronous — blocks the entire event loop
+    # BAD: requests.get() is synchronous â€” blocks the entire event loop
     resp = requests.get("https://api.example.com/data")
     return resp.json()
 
 async def good_route():
-    # GOOD: httpx.AsyncClient is async — yields to event loop
+    # GOOD: httpx.AsyncClient is async â€” yields to event loop
     async with httpx.AsyncClient() as client:
         resp = await client.get("https://api.example.com/data")
         return resp.json()
@@ -620,7 +620,7 @@ async def good_route():
 
 
 ```python
-import psycopg2  # Sync — blocks
+import psycopg2  # Sync â€” blocks
 
 async def bad_query():
     conn = psycopg2.connect("...")
@@ -652,7 +652,7 @@ async def compute_something_heavy():
 
 ### Exercise
 
-Write a FastAPI route that deliberately calls `time.sleep(3)` inside an async function. Hit it 3 times in parallel — observe it takes 9 seconds. Replace with `await asyncio.sleep(3)` — observe it takes 3 seconds. This is the single lesson that makes async click permanently.
+Write a FastAPI route that deliberately calls `time.sleep(3)` inside an async function. Hit it 3 times in parallel â€” observe it takes 9 seconds. Replace with `await asyncio.sleep(3)` â€” observe it takes 3 seconds. This is the single lesson that makes async click permanently.
 
 ---
 
@@ -712,7 +712,7 @@ GET    /bookings/{id}/documents  List documents for a booking
 
 ## 1.16 pytest for FastAPI: Fixtures, DI, httpx
 
-Testing FastAPI requires more than unit tests — you need to test endpoints with real request/response cycles.
+Testing FastAPI requires more than unit tests â€” you need to test endpoints with real request/response cycles.
 
 ### Basic FastAPI test
 
@@ -900,10 +900,10 @@ alembic history        # View migration history
 ### Best practices
 
 
-1. **Always review autogenerated migrations** — Alembic misses some changes (table renames, column type changes)
-2. **Never edit a migration that's already been applied** — create a new one
+1. **Always review autogenerated migrations** â€” Alembic misses some changes (table renames, column type changes)
+2. **Never edit a migration that's already been applied** â€” create a new one
 3. **Test both upgrade and downgrade** before deploying
-4. **Commit migration files to git** — they're part of your schema history
+4. **Commit migration files to git** â€” they're part of your schema history
 
 ### Exercise
 
@@ -965,4 +965,4 @@ Before moving to Phase 2, you should be able to:
 
 **Estimated time to checkpoint:** 28-34 hours over 2 weeks.
 
-[Next: Phase 2 — LLM Fundamentals + RAG Theory](03-phase2-llm-rag-theory.md)
+[Next: Phase 2 â€” LLM Fundamentals + RAG Theory](03-phase2-llm-rag-theory.md)

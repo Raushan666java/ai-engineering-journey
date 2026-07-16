@@ -1,4 +1,4 @@
-# Chapter 7: API Development & Integration
+﻿# Chapter 7: API Development & Integration
 > **Previous:** [Queues, Jobs, Notifications & Mail](./06-queues-notifications) | **Next:** [Broadcasting, Events & Real-Time Features](./08-broadcasting-realtime)
 
 ---
@@ -15,16 +15,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/07-api-development/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/07-api-development/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/07-api-development/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/07-api-development/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/07-api-development/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/07-api-development/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/07-api-development/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/07-api-development/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/07-api-development/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/07-api-development/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/07-api-development/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/07-api-development/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -79,7 +79,7 @@ REST treats server data as resources accessed through a uniform interface. API e
 | GET       | `/users/{id}`  | Show a specific user |
 | PUT       | `/users/{id}`  | Full user update     |
 
-> **Remember:** PUT replaces the entire resource — missing fields are set to null. PATCH only applies partial modifications. Use PUT sparingly; PATCH is almost always the better choice for update endpoints.
+> **Remember:** PUT replaces the entire resource â€” missing fields are set to null. PATCH only applies partial modifications. Use PUT sparingly; PATCH is almost always the better choice for update endpoints.
 | PATCH     | `/users/{id}`  | Partial user update  |
 | DELETE    | `/users/{id}`  | Delete a user        |
 
@@ -322,7 +322,7 @@ Response::macro('api', function (mixed $data, string $message = '', int $status 
 
 
 ```php
-Post::paginate(20);       // LengthAwarePaginator → knows total pages
+Post::paginate(20);       // LengthAwarePaginator â†’ knows total pages
 Post::simplePaginate(20); // Only "next" and "prev"
 Post::cursorPaginate(20); // Cursor-based for large datasets
 ```
@@ -559,7 +559,7 @@ Route::prefix('v1')->group(function () {
 | Caching | HTTP caching (ETag, Last-Modified) | Complex (per-query) |
 | Tooling | Swagger/OpenAPI | GraphiQL, Apollo DevTools |
 
-## Quick Reference — HTTP Status Codes
+## Quick Reference â€” HTTP Status Codes
 
 | Code | Meaning | Use Case |
 |------|---------|----------|

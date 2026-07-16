@@ -1,6 +1,6 @@
-# Chapter 3: Informed Search and Heuristics
+﻿# Chapter 3: Informed Search and Heuristics
 
-> **Prerequisites:** [Chapter 2: Problem Solving by Searching](./02-problem-solving.md) — Uninformed search strategies | **Next:** [Chapter 4: Adversarial Search and Games](./04-adversarial-search.md) — Game-playing and minimax
+> **Prerequisites:** [Chapter 2: Problem Solving by Searching](./02-problem-solving.md) â€” Uninformed search strategies | **Next:** [Chapter 4: Adversarial Search and Games](./04-adversarial-search.md) â€” Game-playing and minimax
 
 ## Learning Objectives
 
@@ -9,16 +9,16 @@ By the end of this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/03-informed-search/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/03-informed-search/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/03-informed-search/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/03-informed-search/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/03-informed-search/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/03-informed-search/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/03-informed-search/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/03-informed-search/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/03-informed-search/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/03-informed-search/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/03-informed-search/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/03-informed-search/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -40,7 +40,7 @@ By the end of this chapter, students will be able to:
 - **Blind search (BFS/DFS):** Drive every possible street systematically until you stumble upon the restaurant. You might find it, but you'll waste hours exploring dead ends.
 - **Informed search (A* / GPS):** Your GPS knows traffic conditions. It estimates travel time using distance (how far each road goes) + traffic data (current congestion). It combines **what you've already traveled** (g) with **an intelligent guess of what's left** (h) to pick the fastest route.
 
-The GPS never tries every street — it uses **domain knowledge** (heuristics) to focus on promising paths. This is exactly what informed search algorithms do. They convert raw exploration into directed, efficient problem-solving, reducing exponential explosion to near-linear performance when the heuristic is good.
+The GPS never tries every street â€” it uses **domain knowledge** (heuristics) to focus on promising paths. This is exactly what informed search algorithms do. They convert raw exploration into directed, efficient problem-solving, reducing exponential explosion to near-linear performance when the heuristic is good.
 
 > **Key Insight:** Without a heuristic, search is blind. The difference between BFS and A* on a 20-city traveling salesman problem is the difference between checking 3 billion routes and checking a few hundred.
 
@@ -84,16 +84,16 @@ flowchart TD
 
 ## 3.1 Heuristics
 
-**Real-World Analogy:** When your GPS estimates "15 minutes to destination", it's using a heuristic — an approximate, educated guess based on distance and average speed. It doesn't know about every traffic light or construction zone, but the estimate is good enough to guide decision-making. A perfect prediction is impossible (and computationally expensive), but a reasonable lower bound tells you which direction to go.
+**Real-World Analogy:** When your GPS estimates "15 minutes to destination", it's using a heuristic â€” an approximate, educated guess based on distance and average speed. It doesn't know about every traffic light or construction zone, but the estimate is good enough to guide decision-making. A perfect prediction is impossible (and computationally expensive), but a reasonable lower bound tells you which direction to go.
 
 ### Definition
 
 
-A **heuristic function** $h(n)$ estimates the cost of the cheapest path from node $n$ to a goal state. Unlike the cost-so-far $g(n)$ (which is exact), $h(n)$ is an estimate — domain knowledge injected into the search to prune unpromising branches.
+A **heuristic function** $h(n)$ estimates the cost of the cheapest path from node $n$ to a goal state. Unlike the cost-so-far $g(n)$ (which is exact), $h(n)$ is an estimate â€” domain knowledge injected into the search to prune unpromising branches.
 
 $$h(n) \approx \text{cost}(n \rightarrow \text{goal})$$
 
-### Algorithm Steps — Designing a Heuristic
+### Algorithm Steps â€” Designing a Heuristic
 
 
 1. Identify the state space and goal condition.
@@ -103,7 +103,7 @@ $$h(n) \approx \text{cost}(n \rightarrow \text{goal})$$
 5. Optionally verify consistency: $h(n) \leq c(n, a, n') + h(n')$ for all successors.
 6. Compare against a baseline heuristic to confirm **dominance** ($h_2(n) \geq h_1(n)$ for all $n$).
 
-### Pseudocode — Heuristic Function Template
+### Pseudocode â€” Heuristic Function Template
 
 
 ```
@@ -116,7 +116,7 @@ function HEURISTIC(state, goal):
     return distance
 ```
 
-### Step-by-Step Dry Run — 8-Puzzle Heuristic Computation
+### Step-by-Step Dry Run â€” 8-Puzzle Heuristic Computation
 
 
 **State:**
@@ -141,7 +141,7 @@ function HEURISTIC(state, goal):
 +---+---+---+
 ```
 
-#### h1 — Misplaced Tiles (excluding blank)
+#### h1 â€” Misplaced Tiles (excluding blank)
 
 | Tile | Current | Goal | Misplaced? |
 |------|---------|------|:----------:|
@@ -156,7 +156,7 @@ function HEURISTIC(state, goal):
 
 **h1 = 4** (tiles 1, 2, 6, 8 misplaced)
 
-#### h2 — Manhattan Distance
+#### h2 â€” Manhattan Distance
 
 | Tile | Current | Goal | dx | dy | Distance |
 |------|---------|------|:--:|:--:|:--------:|
@@ -214,14 +214,14 @@ print("Manhattan distance (h2):", manhattan_distance(state, goal))  # 5
 | Space per call | $O(1)$ | Only a running total and optional lookup table. No recursion or dynamic structures. |
 | Design cost | Problem-dependent | Deriving a relaxed problem requires domain expertise. Once built, evaluating is cheap. |
 
-**Why O(N)?** For the 8-puzzle, we visit each of the 9 positions once. For each non-blank tile, we compute an absolute difference (constant time). With n tiles, the total is O(n). For the N-puzzle, this is O(N^2) scan — still fast for any practical puzzle size.
+**Why O(N)?** For the 8-puzzle, we visit each of the 9 positions once. For each non-blank tile, we compute an absolute difference (constant time). With n tiles, the total is O(n). For the N-puzzle, this is O(N^2) scan â€” still fast for any practical puzzle size.
 
 ### Advantages & Disadvantages of Heuristic Functions
 
 
 | Advantages | Disadvantages |
 |-----------|--------------|
-| Dramatically reduces search space — exponential speedup possible | Requires domain expertise to design well |
+| Dramatically reduces search space â€” exponential speedup possible | Requires domain expertise to design well |
 | Enables optimal search (A* with admissible heuristics) | Poor heuristic can be worse than no heuristic (misleading) |
 | Can be automatically derived via relaxation | Tension between informedness and computational cost |
 | Multiple heuristics can be combined (max, sum for disjoint) | Memory overhead for pattern databases |
@@ -229,7 +229,7 @@ print("Manhattan distance (h2):", manhattan_distance(state, goal))  # 5
 ### Edge Cases
 
 
-- **Zero heuristic (h(n) = 0):** A* degenerates to uniform-cost search (Dijkstra's). Admissible but completely uninformed — no pruning.
+- **Zero heuristic (h(n) = 0):** A* degenerates to uniform-cost search (Dijkstra's). Admissible but completely uninformed â€” no pruning.
 - **Overestimating heuristic:** Destroys optimality. If h(n) > h*(n), A* may return a suboptimal solution.
 - **Heuristic much cheaper than true cost:** A* expands nearly as many nodes as UCS. Information gain is minimal.
 - **Inconsistent heuristic:** Graph search may miss optimal paths or re-explore nodes. Tree search remains optimal with admissibility alone.
@@ -239,7 +239,7 @@ print("Manhattan distance (h2):", manhattan_distance(state, goal))  # 5
 
 ## 3.2 Greedy Best-First Search
 
-**Real-World Analogy:** You're in a hedge maze and can see the castle tower above the walls. You always walk in the direction that makes the tower look closest. This gets you near the tower quickly, but you might hit a wall and have to backtrack. Greedy best-first is like a tourist who always walks toward the Eiffel Tower — it works until a building blocks the path.
+**Real-World Analogy:** You're in a hedge maze and can see the castle tower above the walls. You always walk in the direction that makes the tower look closest. This gets you near the tower quickly, but you might hit a wall and have to backtrack. Greedy best-first is like a tourist who always walks toward the Eiffel Tower â€” it works until a building blocks the path.
 
 ### Definition
 
@@ -375,15 +375,15 @@ print("Greedy path:", path)
 | Best | $O(bd)$ | $O(bd)$ | With perfect heuristic, expands only nodes along solution path; d = depth |
 | Average | Between best and worst | Same | Highly dependent on heuristic quality |
 
-**Why exponential?** Greedy best-first is still a form of DFS — it can explore an exponential number of nodes because it has no mechanism to recover from bad heuristic choices. Unlike A*, it doesn't use path cost to correct course.
+**Why exponential?** Greedy best-first is still a form of DFS â€” it can explore an exponential number of nodes because it has no mechanism to recover from bad heuristic choices. Unlike A*, it doesn't use path cost to correct course.
 
 ### Advantages & Disadvantages
 
 
 | Advantages | Disadvantages |
 |-----------|--------------|
-| Very fast when heuristic is accurate | **Not optimal** — may return suboptimal path |
-| Simple to implement — only needs h(n) | **Not complete** — can get stuck in infinite loops |
+| Very fast when heuristic is accurate | **Not optimal** â€” may return suboptimal path |
+| Simple to implement â€” only needs h(n) | **Not complete** â€” can get stuck in infinite loops |
 | Low memory variant possible | May oscillate between promising regions |
 | Useful subroutine in complex algorithms | Performance entirely heuristic-dependent |
 
@@ -393,13 +393,13 @@ print("Greedy path:", path)
 - **Misleading heuristic:** If h(n) wrongly favors a region with no goal, greedy explores that area exhaustively.
 - **Cyclic graphs without explored set:** Greedy may loop indefinitely between two nodes with low h-values.
 - **Zero heuristic (h=0):** Greedy becomes random search among frontier nodes. No meaningful direction.
-- **Goal unreachable:** Greedy explores all reachable states before returning failure — exponential worst case.
+- **Goal unreachable:** Greedy explores all reachable states before returning failure â€” exponential worst case.
 
 ---
 
 ## 3.3 A* Search
 
-**Real-World Analogy:** Your GPS navigation calculates arrival time as: **time already driven (g) + estimated remaining time based on traffic (h)**. If you've already spent 20 minutes in traffic (g=20) and the remaining distance estimates 10 more minutes (h=10), the total estimate is 30 minutes (f=30). A* always considers **both** how far you've come and how far you have to go — unlike greedy, which only looks ahead.
+**Real-World Analogy:** Your GPS navigation calculates arrival time as: **time already driven (g) + estimated remaining time based on traffic (h)**. If you've already spent 20 minutes in traffic (g=20) and the remaining distance estimates 10 more minutes (h=10), the total estimate is 30 minutes (f=30). A* always considers **both** how far you've come and how far you have to go â€” unlike greedy, which only looks ahead.
 
 ### Definition
 
@@ -548,7 +548,7 @@ print("A* path:", path)
 | Best (perfect heuristic) | $O(bd)$ | $O(bd)$ | With h(n) = h*(n), A* expands only nodes on the optimal path |
 | With good heuristic | Sub-exponential | $O(b^d)$ | Error |h(n) - h*(n)| is small; expansion is near-linear in solution length |
 
-**Why exponential in worst case?** The number of distinct f-values below the optimal cost C* can still be exponential. A* stores all generated nodes in memory — the space bottleneck usually hits before the time bottleneck. With b=10 and d=20, A* may store 10^20 nodes.
+**Why exponential in worst case?** The number of distinct f-values below the optimal cost C* can still be exponential. A* stores all generated nodes in memory â€” the space bottleneck usually hits before the time bottleneck. With b=10 and d=20, A* may store 10^20 nodes.
 
 **Why sub-exponential with good heuristic?** If |h(n) - h*(n)| is in O(log h*(n)), the number of expanded nodes is polynomial rather than exponential.
 
@@ -557,9 +557,9 @@ print("A* path:", path)
 
 | Advantages | Disadvantages |
 |-----------|--------------|
-| **Optimal** — guarantees cheapest solution with admissible h | **Exponential space** — stores all generated nodes |
-| **Complete** — always finds solution if one exists | Performance degrades with poor heuristic |
-| **Optimally efficient** — no other optimal algorithm using same heuristic expands fewer nodes | Cycle checking adds overhead |
+| **Optimal** â€” guarantees cheapest solution with admissible h | **Exponential space** â€” stores all generated nodes |
+| **Complete** â€” always finds solution if one exists | Performance degrades with poor heuristic |
+| **Optimally efficient** â€” no other optimal algorithm using same heuristic expands fewer nodes | Cycle checking adds overhead |
 | Works on any graph (directed, undirected, weighted) | Requires admissible heuristic for optimality |
 
 ### Edge Cases
@@ -577,7 +577,7 @@ print("A* path:", path)
 ### 3.3.1 Admissibility
 
 
-**Real-World Analogy:** A taxi driver tells you the fare will be "at most $25". When you arrive, the meter reads $22. The estimate was **admissible** — it never overestimated. If they'd said "at most $20" and the meter read $22, they would have underestimated, and you'd be short on cash.
+**Real-World Analogy:** A taxi driver tells you the fare will be "at most $25". When you arrive, the meter reads $22. The estimate was **admissible** â€” it never overestimated. If they'd said "at most $20" and the meter read $22, they would have underestimated, and you'd be short on cash.
 
 **Definition:** A heuristic $h$ is **admissible** if for every node $n$:
 
@@ -593,7 +593,7 @@ where $h^*(n)$ is the true optimal cost from $n$ to the nearest goal. In other w
 | $h(\text{goal}) = 0$ | Goal state has zero remaining cost |
 | $h(n) = 0$ for all $n$ | Trivially admissible (degenerates to UCS) |
 
-**Checking admissibility:** For the 8-puzzle, h2 (Manhattan distance) is admissible because any tile must move at least its Manhattan distance to reach its goal position — it's a physical lower bound. Euclidean distance is always admissible for grid movement because the straight line is the shortest possible path.
+**Checking admissibility:** For the 8-puzzle, h2 (Manhattan distance) is admissible because any tile must move at least its Manhattan distance to reach its goal position â€” it's a physical lower bound. Euclidean distance is always admissible for grid movement because the straight line is the shortest possible path.
 
 **Edge Cases:**
 - **Overconfident heuristic:** Overestimates for even one node invalidates admissibility. A* may return suboptimal path.
@@ -615,11 +615,11 @@ where $c(n, a, n')$ is the step cost. This is the **triangle inequality** applie
 
 **Consistency implies admissibility** (but not vice versa). Proof: by induction from the goal, where h(goal) = 0.
 
-**Key property — Non-decreasing f:** If h is consistent, then along any path, f(n) never decreases:
+**Key property â€” Non-decreasing f:** If h is consistent, then along any path, f(n) never decreases:
 
 $$f(n') = g(n') + h(n') = g(n) + c(n,n') + h(n') \geq g(n) + h(n) = f(n)$$
 
-This means A* **never re-opens nodes** from the explored set — when a node is first expanded, it has been reached via the optimal path.
+This means A* **never re-opens nodes** from the explored set â€” when a node is first expanded, it has been reached via the optimal path.
 
 | Property | Admissibility | Consistency |
 |----------|:------------:|:-----------:|
@@ -645,11 +645,11 @@ This means A* **never re-opens nodes** from the explored set — when a node is 
 
 $$f(n) = g(n) + h(n) \leq g(n) + h^*(n) = C^*$$
 
-Since A* expands nodes in order of increasing f, and the goal G has f(G) = C > C*, node n would be expanded before G — a contradiction. Thus, A* must return an optimal solution.
+Since A* expands nodes in order of increasing f, and the goal G has f(G) = C > C*, node n would be expanded before G â€” a contradiction. Thus, A* must return an optimal solution.
 
 **Intuitive Explanation:** A* never expands a node with f(n) > C* as long as any node on the optimal path (f &lt;= C*) remains on the frontier. The search frontier forms a "contour" of nodes with f < C* that are all expanded before any suboptimal goal is reached.
 
-**Optimal Efficiency:** A* is **optimally efficient** — no other optimal algorithm using the same heuristic expands fewer nodes than A*. Formally, any algorithm that guarantees optimality must expand every node that A* expands.
+**Optimal Efficiency:** A* is **optimally efficient** â€” no other optimal algorithm using the same heuristic expands fewer nodes than A*. Formally, any algorithm that guarantees optimality must expand every node that A* expands.
 
 **Graph Search vs Tree Search:**
 
@@ -712,7 +712,7 @@ function DFS-CONTOUR(node, g, bound) returns (solution or cutoff, new_bound)
 
 Same graph. Heuristic: S=5, A=4, B=3, C=3, D=3, E=2, F=2, G=0.
 
-#### Iteration 1 — bound = h(S) = 5
+#### Iteration 1 â€” bound = h(S) = 5
 
 | DFS Step | Node | g | h | f | f &lt;= 5? | Action |
 |:--------:|:----:|:-:|:-:|:-:|:-------:|--------|
@@ -725,7 +725,7 @@ Same graph. Heuristic: S=5, A=4, B=3, C=3, D=3, E=2, F=2, G=0.
 
 Min pruned f = 6. New bound = 6. No solution found in iteration 1.
 
-#### Iteration 2 — bound = 6
+#### Iteration 2 â€” bound = 6
 
 | DFS Step | Node | g | h | f | f &lt;= 6? | Action |
 |:--------:|:----:|:-:|:-:|:-:|:-------:|--------|
@@ -789,7 +789,7 @@ print("IDA* path:", path)   # S -> B -> F -> G
 
 | Advantages | Disadvantages |
 |-----------|--------------|
-| **Linear memory** — O(bd) vs A* exponential O(b^d) | **Re-expands nodes** — nodes visited in every iteration |
+| **Linear memory** â€” O(bd) vs A* exponential O(b^d) | **Re-expands nodes** â€” nodes visited in every iteration |
 | Complete and optimal (admissible heuristic) | Can be slow for problems with large f-value ranges |
 | Works well for integer step costs | Loses A*'s optimal efficiency guarantee |
 | No priority queue overhead | Struggles when many nodes share the same f-cost |
@@ -910,8 +910,8 @@ print("RBFS path:", path)   # S -> B -> F -> G
 
 | Advantages | Disadvantages |
 |-----------|--------------|
-| **Linear memory** — O(bd) vs A* exponential | **Re-explores nodes** — can revisit previously explored regions |
-| Complete and optimal (admissible h) | Complex implementation — tracking successor f-values |
+| **Linear memory** â€” O(bd) vs A* exponential | **Re-explores nodes** â€” can revisit previously explored regions |
+| Complete and optimal (admissible h) | Complex implementation â€” tracking successor f-values |
 | Often faster than IDA* (less re-expansion) | Overhead from sorting successors at each node |
 | Works on graphs and trees | Degrades when h is not informative |
 
@@ -953,13 +953,13 @@ print("RBFS path:", path)   # S -> B -> F -> G
 
 | Feature | Uninformed Search (BFS, DFS, UCS) | Informed Search (A*, Greedy) |
 |---------|:--------------------------------:|:---------------------------:|
-| Domain knowledge | None — explores blindly | Uses heuristic function h(n) |
+| Domain knowledge | None â€” explores blindly | Uses heuristic function h(n) |
 | Evaluation function | g(n) or nothing | f(n) = g(n) + h(n) or h(n) |
 | Optimality | BFS/UCS: yes; DFS: no | A*: yes (admissible h); Greedy: no |
 | Completeness | BFS/UCS/DFS: yes (finite graphs) | A*/IDA*/RBFS: yes; Greedy: no |
 | Space complexity | BFS: O(b^d); DFS: O(bm) | A*: O(b^d); IDA*/RBFS: O(bd) |
 | Time complexity | O(b^d) or O(b^m) | O(b^d) worst; much better with good h |
-| Scalability | Poor — exponential in all cases | Good — heuristic dramatically prunes search |
+| Scalability | Poor â€” exponential in all cases | Good â€” heuristic dramatically prunes search |
 | When to use | Small state spaces, no heuristic | Large state spaces, domain knowledge available |
 | Examples | Puzzle solving without hints | GPS, game AI, robotics pathfinding |
 
@@ -983,7 +983,7 @@ print("RBFS path:", path)   # S -> B -> F -> G
 2. Remove (relax) one or more constraints to create a simpler problem.
 3. The exact optimal cost of the relaxed problem is an admissible heuristic for the original problem (fewer constraints = cheaper or equal cost).
 
-**Example — 8-puzzle:**
+**Example â€” 8-puzzle:**
 - Relax "tiles cannot occupy same square" -> **misplaced tiles heuristic**
 - Relax "tiles can only move to empty adjacent square" -> **Manhattan distance**
 - Relax both constraints -> **0 heuristic** (trivially admissible, useless)
@@ -1019,12 +1019,12 @@ print("RBFS path:", path)   # S -> B -> F -> G
 
 
 Major GPS platforms (Google Maps, Waze, Apple Maps) use A*-like algorithms augmented with:
-- **Landmark heuristics (ALT):** Precomputed distances to landmark nodes provide tight lower bounds — often within 1% of true distance.
+- **Landmark heuristics (ALT):** Precomputed distances to landmark nodes provide tight lower bounds â€” often within 1% of true distance.
 - **Hierarchical search:** Road networks are preprocessed into levels (highways -> arterial -> local). A* searches at the highest level first.
-- **Traffic-aware costs:** Edge weights are dynamic — updated from real-time traffic data.
+- **Traffic-aware costs:** Edge weights are dynamic â€” updated from real-time traffic data.
 - **Bidirectional A*:** Two simultaneous searches (start->goal and goal->start) meet in the middle.
 
-Modern GPS computes optimal routes across 50 million nodes in **milliseconds** — a problem BFS would take hours to solve.
+Modern GPS computes optimal routes across 50 million nodes in **milliseconds** â€” a problem BFS would take hours to solve.
 
 ### Video Game Pathfinding (A* on Navigation Meshes)
 
@@ -1069,7 +1069,7 @@ Robots use **D* Lite** (A* variant with incremental replanning):
 
 ---
 
-## Quick Reference — Heuristic Design
+## Quick Reference â€” Heuristic Design
 
 | Technique | Method | Example | How It Works |
 |-----------|--------|---------|:------------|
@@ -1138,7 +1138,7 @@ B. h2(n) >= h1(n) for all n means h2 is closer to h*(n), so A* with h2 expands f
 
 <details>
 <summary>Answer&lt;/summary&gt;
-B. Greedy best-first uses only h(n) — it ignores g(n). A cheap-looking heuristic path may actually be very long when cumulative cost is considered.
+B. Greedy best-first uses only h(n) â€” it ignores g(n). A cheap-looking heuristic path may actually be very long when cumulative cost is considered.
 </details>
 
 **Q5:** What happens if A* uses an overestimating heuristic?
@@ -1210,4 +1210,4 @@ B. IDA* uses only O(bd) memory vs A*'s O(b^d). For large state spaces where memo
 
 ---
 
-> **Summary:** Informed search uses heuristic functions to dramatically reduce search effort. A* is optimally efficient and optimal with admissible/consistent heuristics. Memory-bounded variants (IDA*, RBFS) extend A* to large state spaces. The quality of the heuristic determines the algorithm's performance — invest effort in designing well-informed heuristics via relaxation and pattern databases.
+> **Summary:** Informed search uses heuristic functions to dramatically reduce search effort. A* is optimally efficient and optimal with admissible/consistent heuristics. Memory-bounded variants (IDA*, RBFS) extend A* to large state spaces. The quality of the heuristic determines the algorithm's performance â€” invest effort in designing well-informed heuristics via relaxation and pattern databases.

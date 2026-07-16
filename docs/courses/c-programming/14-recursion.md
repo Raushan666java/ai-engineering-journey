@@ -1,4 +1,4 @@
-# Chapter 14: Recursion
+﻿# Chapter 14: Recursion
 
 > **Previous:** [The Preprocessor](./13-preprocessor.md) | **Next:** [Linked Lists](./15-linked-lists.md)
 
@@ -15,24 +15,22 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/14-recursion/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/c-programming/14-recursion/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/14-recursion/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/c-programming/14-recursion/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/14-recursion/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/c-programming/14-recursion/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/14-recursion/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/c-programming/14-recursion/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/14-recursion/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/c-programming/14-recursion/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/14-recursion/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/c-programming/14-recursion/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
 <!-- End Image Gallery -->
 
-
 ### Chapter at a Glance
-
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
@@ -67,8 +65,7 @@ flowchart LR
 
 ### Real-World Analogy: Russian Nesting Dolls (Matryoshka)
 
-
-Imagine a set of Russian nesting dolls. You open the largest doll, and inside is a smaller doll. You open that one, and inside is an even smaller doll. You continue until you reach the smallest doll, which cannot be opened → that is the **base case**. Then you close each doll in reverse order.
+Imagine a set of Russian nesting dolls. You open the largest doll, and inside is a smaller doll. You open that one, and inside is an even smaller doll. You continue until you reach the smallest doll, which cannot be opened â†’ that is the **base case**. Then you close each doll in reverse order.
 
 | Step | Action | Analogy Part |
 |------|--------|-------------|
@@ -82,14 +79,12 @@ Recursion follows the exact same pattern: a function calls itself on a smaller v
 
 ### Definition
 
-
 A **recursive function** is one that calls itself, directly or indirectly, to solve a smaller instance of the same problem. Every recursive function consists of two mandatory parts:
 
-1. **Base case** → a condition under which the function returns without recursing (the "smallest doll")
-2. **Recursive case** → the function calls itself with modified arguments that move toward the base case
+1. **Base case** â†’ a condition under which the function returns without recursing (the "smallest doll")
+2. **Recursive case** â†’ the function calls itself with modified arguments that move toward the base case
 
 ### Generalized Pseudocode
-
 
 ```
 function recursive(input):
@@ -107,7 +102,6 @@ function recursive(input):
 ```
 
 ### Simple C Example: Countdown
-
 
 ```c
 #include <stdio.h>
@@ -142,21 +136,19 @@ Liftoff!
 
 ### Full Dry Run Trace
 
-
 | Call# | Function Call | n | Base Case? | Action | Next Call / Return |
 |-------|--------------|---|-----------|--------|-------------------|
 | 1 | countdown(3) | 3 | No | print "3... " | calls countdown(2) |
 | 2 | countdown(2) | 2 | No | print "2... " | calls countdown(1) |
 | 3 | countdown(1) | 1 | No | print "1... " | calls countdown(0) |
 | 4 | countdown(0) | 0 | **Yes** | print "Go!" | returns to call 3 |
-| 3 | (resumed) | 1 | → | print "[1]" | returns to call 2 |
-| 2 | (resumed) | 2 | → | print "[2]" | returns to call 1 |
-| 1 | (resumed) | 3 | → | print "[3]" | returns to main() |
+| 3 | (resumed) | 1 | â†’ | print "[1]" | returns to call 2 |
+| 2 | (resumed) | 2 | â†’ | print "[2]" | returns to call 1 |
+| 1 | (resumed) | 3 | â†’ | print "[3]" | returns to main() |
 
 **Key observation:** The prints happening *before* the recursive call execute in forward order (3, 2, 1). The prints happening *after* execute in reverse (1, 2, 3) because they run during the unwinding phase.
 
 ### Complexity Analysis
-
 
 | Complexity | Value | Why |
 |------------|-------|-----|
@@ -165,7 +157,6 @@ Liftoff!
 | Auxiliary space | O(1) | No extra data structures beyond local variables per frame |
 
 ### Advantages & Disadvantages
-
 
 | Aspect | Description |
 |--------|------------|
@@ -177,7 +168,6 @@ Liftoff!
 | **Disadvantage: Debugging** | Stack traces can be deep and confusing |
 
 ### Edge Cases
-
 
 | Edge Case | Behavior | Mitigation |
 |-----------|----------|-----------|
@@ -193,11 +183,9 @@ Liftoff!
 
 ### Detailed Breakdown
 
-
 Every recursive function must have precisely these two components. One without the other is broken.
 
 ### The Base Case
-
 
 The **base case** is the condition that stops the recursion. It:
 - Does NOT make a recursive call
@@ -224,7 +212,6 @@ int fibonacci(int n)
 
 ### The Recursive Case
 
-
 The **recursive case** is the part where the function calls itself. It must:
 - Call the same function (direct recursion) or another function that eventually calls back (indirect)
 - Pass modified arguments that move toward the base case
@@ -241,15 +228,13 @@ int sum(int n)
 
 ### What Happens When Each Is Missing
 
-
 | Scenario | Code | Behavior |
 |----------|------|----------|
-| **Missing base case** | `void inf(int n) { inf(n + 1); }` | Infinite recursion → stack overflow → crash |
+| **Missing base case** | `void inf(int n) { inf(n + 1); }` | Infinite recursion â†’ stack overflow â†’ crash |
 | **Missing recursive case** | `int bad(int n) { if (n==0) return 0; return 1; }` | Not recursive at all (no self-call) |
 | **Base case never reached** | `int bad(int n) { if (n==0) return 0; return n + bad(n + 1); }` | Infinite recursion (moves away from base) |
 
 ### Dry Run: Base Case Check
-
 
 For `sum(3)` with implementation `if (n <= 0) return 0; else return n + sum(n - 1);`:
 
@@ -261,7 +246,6 @@ For `sum(3)` with implementation `if (n <= 0) return 0; else return n + sum(n - 
 | sum(0) | 0 | **true** | return 0 | 0 |
 
 ### Multiple Base Cases in One Function
-
 
 ```c
 #include <stdio.h>
@@ -300,13 +284,12 @@ trib(10) = 81
 
 ### Edge Cases for Base/Recursive Cases
 
-
 | Issue | Example | Result |
 |-------|---------|--------|
 | Base case too permissive | `if (n < 0) return 0;` combined with `rec(n-1)` | Negative input works but large positive fails |
 | Base case too restrictive | `if (n == 0) return 0;` with `rec(n-2)` | Odd inputs skip base case entirely |
-| Recursive case doesn't shrink | `return n + rec(n);` | Infinite recursion → argument never changes |
-| Recursive case grows | `return n + rec(n+1);` | Infinite recursion → moves away from base |
+| Recursive case doesn't shrink | `return n + rec(n);` | Infinite recursion â†’ argument never changes |
+| Recursive case grows | `return n + rec(n+1);` | Infinite recursion â†’ moves away from base |
 
 ---
 
@@ -314,15 +297,13 @@ trib(10) = 81
 
 ### Real-World Analogy: Stack of Plates
 
-
 Think of a spring-loaded stack of cafeteria plates. You can only:
 - **Push** a plate onto the top (function call)
 - **Pop** a plate from the top (function return)
 
-The last plate pushed is always the first plate popped → this is **LIFO** (Last In, First Out). Recursion uses the call stack the same way.
+The last plate pushed is always the first plate popped â†’ this is **LIFO** (Last In, First Out). Recursion uses the call stack the same way.
 
 ### Stack Frame Layout
-
 
 Each function call creates a **stack frame** containing:
 
@@ -335,7 +316,6 @@ Each function call creates a **stack frame** containing:
 | Saved registers | Callee-saved register values | Depends on ABI |
 
 ### Visualization of countdown(3) Call Stack
-
 
 ```
       HIGH ADDRESSES (top of stack)
@@ -367,7 +347,6 @@ Each function call creates a **stack frame** containing:
 ```
 
 ### Code to Visualize Stack Frame Addresses
-
 
 ```c
 #include <stdio.h>
@@ -413,7 +392,6 @@ Depth 1: returning, &depth = 0x7fff5fbff6dc
 
 ### Stack Overflow Demonstration
 
-
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -445,7 +423,6 @@ Segmentation fault (core dumped)
 
 ### Stack Size Limits by Platform
 
-
 | Platform | Default Stack Size | Max Safe Recursion Depth (~32 byte frames) |
 |----------|-------------------|-------------------------------------------|
 | Linux (pthread default) | 8 MB | ~262,000 calls |
@@ -455,7 +432,6 @@ Segmentation fault (core dumped)
 | ESP32 (FreeRTOS task) | 3-10 KB | ~100-300 calls |
 
 ### Understanding Stack Growth and Return
-
 
 ```c
 #include <stdio.h>
@@ -493,14 +469,12 @@ UNWINDING: leaving frame n=3
 
 ### Winding vs Unwinding Phase
 
-
 | Phase | Direction | What Happens |
 |-------|-----------|-------------|
 | **Winding** | Forward (n=3 -> 0) | Pushing frames, executing code before recursive call |
 | **Unwinding** | Backward (n=0 -> 3) | Popping frames, executing code after recursive call |
 
 ### Edge Cases for Call Stack
-
 
 | Scenario | Impact |
 |----------|--------|
@@ -511,10 +485,9 @@ UNWINDING: leaving frame n=3
 | Recursive mutex lock | Deadlock if same thread tries to lock non-recursive mutex |
 ---
 
-## 14.4 Recursion Types → Complete Comparison
+## 14.4 Recursion Types â†’ Complete Comparison
 
 ### Six Types of Recursion
-
 
 | Type | Definition | Example |
 |------|-----------|---------|
@@ -526,7 +499,6 @@ UNWINDING: leaving frame n=3
 | **Tree** | Each invocation makes multiple recursive calls | Fibonacci, merge sort |
 
 ### 1. Direct Recursion
-
 
 The function calls itself directly within its own body.
 
@@ -541,7 +513,6 @@ int factorial(int n)
 **Call graph:** `factorial -> factorial -> factorial -> ...`
 
 ### 2. Indirect Recursion (Mutual Recursion)
-
 
 Function A calls function B, which calls function A again.
 
@@ -596,7 +567,6 @@ is_even(4) -> is_odd(3) -> is_even(2) -> is_odd(1) -> is_even(0) -> true
 
 ### 3. Tail Recursion
 
-
 The recursive call is the **last statement** executed, and its return value is directly returned without further computation.
 
 ```c
@@ -607,10 +577,9 @@ int tail_fact(int n, int acc)
 }
 ```
 
-**Property:** With tail-call optimization (TCO), the compiler reuses the current frame → O(1) stack space.
+**Property:** With tail-call optimization (TCO), the compiler reuses the current frame â†’ O(1) stack space.
 
 ### 4. Head Recursion
-
 
 The recursive call is the **first statement** before any other processing. All work happens during the unwinding phase.
 
@@ -639,7 +608,6 @@ void non_head_print(int n)
 
 ### 5. Linear Recursion
 
-
 Each invocation makes **at most one** recursive call. The call tree is a straight line.
 
 ```c
@@ -652,10 +620,9 @@ int linear_sum(int n)
 
 **Call shape:** `linear_sum(5) -> linear_sum(4) -> linear_sum(3) -> linear_sum(2) -> linear_sum(1) -> linear_sum(0)`
 
-**Time complexity:** O(n) → linear in input size.
+**Time complexity:** O(n) â†’ linear in input size.
 
 ### 6. Tree Recursion
-
 
 Each invocation makes **multiple** recursive calls. The call graph branches like a tree.
 
@@ -678,10 +645,9 @@ int tree_fib(int n)
     fib(1)  fib(0)
 ```
 
-**Time complexity:** O(2^n) → exponential.
+**Time complexity:** O(2^n) â†’ exponential.
 
 ### Recursion Types Comparison Table
-
 
 | Type | Self-Calls per Invocation | Tail Call Optimization Possible? | Typical Space Complexity | Typical Time Complexity | Debugging Difficulty |
 |------|--------------------------|--------------------------------|-------------------------|----------------------|---------------------|
@@ -694,10 +660,9 @@ int tree_fib(int n)
 
 ---
 
-## 14.5 Head Recursion vs Tail Recursion → Detailed Comparison
+## 14.5 Head Recursion vs Tail Recursion â†’ Detailed Comparison
 
 ### Definition Side by Side
-
 
 | Aspect | Head Recursion | Tail Recursion |
 |--------|---------------|----------------|
@@ -708,7 +673,6 @@ int tree_fib(int n)
 | Natural use | Reverse-order processing | Forward-accumulation algorithms |
 
 ### Head Recursion Example: Print Numbers Ascending
-
 
 ```c
 #include <stdio.h>
@@ -749,7 +713,6 @@ int main(void)
 
 ### Tail Recursion Example: Print Numbers Ascending (Accumulator Style)
 
-
 ```c
 #include <stdio.h>
 
@@ -774,11 +737,10 @@ int main(void)
 
 ### Memory Comparison
 
-
 ```c
 #include <stdio.h>
 
-/* HEAD recursion → prints 1..n */
+/* HEAD recursion â†’ prints 1..n */
 unsigned long long head_sum(int n)
 {
     if (n <= 0) return 0;
@@ -786,7 +748,7 @@ unsigned long long head_sum(int n)
     return n + sub;                             /* work after call */
 }
 
-/* TAIL recursion → prints 1..n */
+/* TAIL recursion â†’ prints 1..n */
 unsigned long long tail_sum(int n, unsigned long long acc)
 {
     if (n <= 0) return acc;                     /* return accumulated */
@@ -811,17 +773,6 @@ int main(void)
 - `tail_sum(100000)` with TCO uses O(1) stack and succeeds
 
 ### Transformation Pattern: Head -> Tail
-
-<a href="../../../assets/images/diagrams/c-programming/14-recursion/transformation-pattern-head-tail-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/14-recursion/transformation-pattern-head-tail-handwritten.svg" alt="Handwritten: Transformation Pattern: Head -> Tail" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/14-recursion/transformation-pattern-head-tail-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/14-recursion/transformation-pattern-head-tail-diagram.svg" alt="Diagram: Transformation Pattern: Head -> Tail" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/14-recursion/transformation-pattern-head-tail-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/14-recursion/transformation-pattern-head-tail-sticky.svg" alt="Sticky Note: Transformation Pattern: Head -> Tail" width="30%">
-</a>
-
 
 **Original (head recursion):**
 ```c
@@ -849,7 +800,6 @@ int factorial(int n)
 
 ### When to Use Each
 
-
 | Use Case | Preferred Type | Reason |
 |----------|---------------|--------|
 | Process list from tail to head | Head recursion | Work after base case provides natural reversal |
@@ -864,7 +814,6 @@ int factorial(int n)
 ## 14.6 Direct vs Indirect Recursion
 
 ### Direct Recursion
-
 
 Function A calls function A. Simple, traceable, most common.
 
@@ -883,7 +832,6 @@ direct(5) -> direct(4) -> direct(3) -> direct(2) -> direct(1) -> direct(0) -> re
 ```
 
 ### Indirect Recursion (Mutual Recursion)
-
 
 Function A calls function B, which calls function A again. Creates a cycle across 2+ functions.
 
@@ -933,7 +881,6 @@ Base A
 
 ### Three-Function Mutual Recursion
 
-
 ```c
 #include <stdio.h>
 
@@ -982,19 +929,17 @@ Done!
 
 ### Comparison Table
 
-
 | Aspect | Direct Recursion | Indirect Recursion |
 |--------|-----------------|-------------------|
 | Definition | Function calls itself | Function calls another function that calls back |
 | Number of functions | 1 | 2 or more |
-| Traceability | Easy → single function to watch | Harder → must track multiple functions |
+| Traceability | Easy â†’ single function to watch | Harder â†’ must track multiple functions |
 | Base case location | Inside the function | Any of the participating functions |
 | Common use cases | Factorial, Fibonacci, tree traversal | State machines, parity checking, alternating patterns |
 | Stack depth | O(n) same function | O(n) across N functions |
 | Debugging complexity | Low | Medium-High |
 
 ### Detecting Recursion Cycles
-
 
 Indirect recursion can create subtle cycles. A compiler must detect these to avoid infinite loops. In practice:
 - **Forward declarations** are required (C requires prototypes before use)
@@ -1022,10 +967,9 @@ int is_odd(int n) {
 
 ### 14.7.1 Factorial
 
-
 #### Real-World Analogy: Seating Arrangements
 
-You have n people to seat in n chairs. The first person can sit in any of n chairs. Once seated, the remaining (n-1) people need to be arranged in (n-1) chairs → which is exactly (n-1)! possibilities. So n! = n x (n-1)!.
+You have n people to seat in n chairs. The first person can sit in any of n chairs. Once seated, the remaining (n-1) people need to be arranged in (n-1) chairs â†’ which is exactly (n-1)! possibilities. So n! = n x (n-1)!.
 
 #### Numbered Steps for factorial(5)
 
@@ -1104,7 +1048,7 @@ int main(void)
 | factorial(4) | 4 | false | 4 x factorial(3) | 4 x 6 | 24 |
 | factorial(3) | 3 | false | 3 x factorial(2) | 3 x 2 | 6 |
 | factorial(2) | 2 | false | 2 x factorial(1) | 2 x 1 | 2 |
-| factorial(1) | 1 | **true** | → | 1 | 1 |
+| factorial(1) | 1 | **true** | â†’ | 1 | 1 |
 
 #### Call Stack Visualization for factorial(5)
 
@@ -1147,14 +1091,13 @@ Step 1 (winding):                Step 2 (unwinding):
 |---|--------|-------|
 | 0 | 1 | Correct by definition (0! = 1) |
 | 1 | 1 | Base case triggers immediately |
-| -1 | 1 | Negative input treated as base case → may be incorrect |
-| -5 | 1 | Same issue → consider `if (n < 0) return 0;` for invalid |
+| -1 | 1 | Negative input treated as base case â†’ may be incorrect |
+| -5 | 1 | Same issue â†’ consider `if (n < 0) return 0;` for invalid |
 | 20 | 2,432,902,008,176,640,000 | Fits in 64-bit unsigned |
 | 21 | Overflow | Exceeds 64-bit range |
 | 100000 | Stack overflow | Too deep for default stack |
 
 ### 14.7.2 Fibonacci Sequence
-
 
 #### Real-World Analogy: Rabbit Breeding
 
@@ -1186,7 +1129,7 @@ function fib(n):
 ```c
 #include <stdio.h>
 
-/* Naive recursive → O(2^n) time, O(n) stack */
+/* Naive recursive â†’ O(2^n) time, O(n) stack */
 unsigned long long fib_recursive(int n)
 {
     if (n == 0) return 0;
@@ -1194,7 +1137,7 @@ unsigned long long fib_recursive(int n)
     return fib_recursive(n - 1) + fib_recursive(n - 2);
 }
 
-/* Iterative → O(n) time, O(1) space */
+/* Iterative â†’ O(n) time, O(1) space */
 unsigned long long fib_iterative(int n)
 {
     if (n == 0) return 0;
@@ -1209,7 +1152,7 @@ unsigned long long fib_iterative(int n)
     return b;
 }
 
-/* Memoized recursive → O(n) time, O(n) space */
+/* Memoized recursive â†’ O(n) time, O(n) space */
 #define MAX_MEMO 1000
 unsigned long long memo[MAX_MEMO];
 
@@ -1332,16 +1275,16 @@ fib(90) = 2880067194370816120
 | fib(4) | 4 | fib(3) + fib(2) | 2 + 1 | 3 |
 | fib(3) [L1] | 3 | fib(2) + fib(1) | 1 + 1 | 2 |
 | fib(2) [L1] | 2 | fib(1) + fib(0) | 1 + 0 | 1 |
-| fib(1) [L1] | 1 | → | 1 | 1 |
-| fib(0) [L1] | 0 | → | 0 | 0 |
+| fib(1) [L1] | 1 | â†’ | 1 | 1 |
+| fib(0) [L1] | 0 | â†’ | 0 | 0 |
 | fib(2) [L2] | 2 | fib(1) + fib(0) | 1 + 0 | 1 |
-| fib(1) [L2] | 1 | → | 1 | 1 |
-| fib(0) [L2] | 0 | → | 0 | 0 |
+| fib(1) [L2] | 1 | â†’ | 1 | 1 |
+| fib(0) [L2] | 0 | â†’ | 0 | 0 |
 | fib(3) [L2] | 3 | fib(2) + fib(1) | 1 + 1 | 2 |
 | fib(2) [L3] | 2 | fib(1) + fib(0) | 1 + 0 | 1 |
-| fib(1) [L3] | 1 | → | 1 | 1 |
-| fib(0) [L3] | 0 | → | 0 | 0 |
-| fib(1) [L4] | 1 | → | 1 | 1 |
+| fib(1) [L3] | 1 | â†’ | 1 | 1 |
+| fib(0) [L3] | 0 | â†’ | 0 | 0 |
+| fib(1) [L4] | 1 | â†’ | 1 | 1 |
 
 **Note:** fib(3) is computed twice, fib(2) three times, fib(1) five times. This explosion is why naive recursive Fibonacci is O(2^n).
 
@@ -1353,7 +1296,7 @@ fib(90) = 2880067194370816120
 | Iterative | O(n) | O(1) | Single loop, fixed variables |
 | Memoized recursive | O(n) | O(n) | Each n computed once; memo stores n values |
 
-**Why O(2^n)?** Each call to fib(n) generates two calls: fib(n-1) and fib(n-2). The recursion tree has 2^n nodes at the bottom level. For n=50, that's ~1.125 quadrillion calls → impossible.
+**Why O(2^n)?** Each call to fib(n) generates two calls: fib(n-1) and fib(n-2). The recursion tree has 2^n nodes at the bottom level. For n=50, that's ~1.125 quadrillion calls â†’ impossible.
 
 **Why O(n) for memoized?** Each value of n from 0 to input is computed exactly once. The recursive structure ensures memo[n] is filled on first access; subsequent accesses are O(1) lookup.
 
@@ -1369,19 +1312,18 @@ fib(90) = 2880067194370816120
 
 | n | Result | Issue |
 |---|--------|-------|
-| 0 | 0 | Base case → correct |
-| 1 | 1 | Base case → correct |
-| -1 | → | Undefined; naive version recurses infinitely |
+| 0 | 0 | Base case â†’ correct |
+| 1 | 1 | Base case â†’ correct |
+| -1 | â†’ | Undefined; naive version recurses infinitely |
 | 47 | 2,971,215,073 | Within 32-bit signed int range |
 | 93 | 12,200,160,415,121,874,738 | Fits in 64-bit unsigned; fib(94) overflows |
 | 50 (naive) | Would take ~1000 years | Exponential complexity makes it infeasible |
 
 ### 14.7.3 Tower of Hanoi
 
-
 #### Real-World Analogy: The Legend
 
-In the Temple of Benares, priests move 64 golden disks between three diamond needles. The prophecy says the world will end when they complete the task. With 2^64 - 1 moves required at one move per second, that's about 585 billion years → the recursion naturally matches the problem structure.
+In the Temple of Benares, priests move 64 golden disks between three diamond needles. The prophecy says the world will end when they complete the task. With 2^64 - 1 moves required at one move per second, that's about 585 billion years â†’ the recursion naturally matches the problem structure.
 
 #### Problem Statement
 
@@ -1437,7 +1379,7 @@ void hanoi(int n, char from, char to, char aux)
 int main(void)
 {
     int n = 4;
-    printf("Tower of Hanoi → %d disks:\n\n", n);
+    printf("Tower of Hanoi â†’ %d disks:\n\n", n);
     hanoi(n, 'A', 'C', 'B');
     printf("\nTotal moves: %lld (2^%d - 1 = %lld)\n",
            move_count, n, (1LL << n) - 1);
@@ -1447,7 +1389,7 @@ int main(void)
 
 **Output:**
 ```
-Tower of Hanoi → 4 disks:
+Tower of Hanoi â†’ 4 disks:
 
 Move disk 1 from A to B
 Move disk 2 from A to C
@@ -1472,18 +1414,18 @@ Total moves: 15 (2^4 - 1 = 15)
 
 | Call | n | from | to | aux | Action | Output |
 |------|---|------|----|-----|--------|--------|
-| hanoi(3, A, C, B) | 3 | A | C | B | Calls hanoi(2, A, B, C) | → |
-| hanoi(2, A, B, C) | 2 | A | B | C | Calls hanoi(1, A, C, B) | → |
+| hanoi(3, A, C, B) | 3 | A | C | B | Calls hanoi(2, A, B, C) | â†’ |
+| hanoi(2, A, B, C) | 2 | A | B | C | Calls hanoi(1, A, C, B) | â†’ |
 | hanoi(1, A, C, B) | 1 | A | C | B | Base: prints move | "Move disk 1 from A to C" |
 | hanoi(2, A, B, C) | 2 | A | B | C | Prints move | "Move disk 2 from A to B" |
-| hanoi(2, A, B, C) | 2 | A | B | C | Calls hanoi(1, C, B, A) | → |
+| hanoi(2, A, B, C) | 2 | A | B | C | Calls hanoi(1, C, B, A) | â†’ |
 | hanoi(1, C, B, A) | 1 | C | B | A | Base: prints move | "Move disk 1 from C to B" |
 | hanoi(3, A, C, B) | 3 | A | C | B | Prints move | "Move disk 3 from A to C" |
-| hanoi(3, A, C, B) | 3 | A | C | B | Calls hanoi(2, B, C, A) | → |
-| hanoi(2, B, C, A) | 2 | B | C | A | Calls hanoi(1, B, A, C) | → |
+| hanoi(3, A, C, B) | 3 | A | C | B | Calls hanoi(2, B, C, A) | â†’ |
+| hanoi(2, B, C, A) | 2 | B | C | A | Calls hanoi(1, B, A, C) | â†’ |
 | hanoi(1, B, A, C) | 1 | B | A | C | Base: prints move | "Move disk 1 from B to A" |
 | hanoi(2, B, C, A) | 2 | B | C | A | Prints move | "Move disk 2 from B to C" |
-| hanoi(2, B, C, A) | 2 | B | C | A | Calls hanoi(1, A, C, B) | → |
+| hanoi(2, B, C, A) | 2 | B | C | A | Calls hanoi(1, A, C, B) | â†’ |
 | hanoi(1, A, C, B) | 1 | A | C | B | Base: prints move | "Move disk 1 from A to C" |
 
 #### Call Stack at Deepest Point
@@ -1519,7 +1461,7 @@ Total moves: 15 (2^4 - 1 = 15)
 
 | Advantage | Disadvantage |
 |-----------|-------------|
-| Code exactly mirrors the recursive definition | Exponential time → infeasible for large n |
+| Code exactly mirrors the recursive definition | Exponential time â†’ infeasible for large n |
 | Extremely concise (3 lines of logic) | Understanding requires tracing many calls |
 | Generalizes to n pegs (Reve's puzzle) | Not useful for practical computation |
 
@@ -1527,12 +1469,11 @@ Total moves: 15 (2^4 - 1 = 15)
 
 | n | Result | Issue |
 |---|--------|-------|
-| 0 | 0 moves (no output) | No disks to move → edge case |
+| 0 | 0 moves (no output) | No disks to move â†’ edge case |
 | 1 | 1 move | Trivial case: direct move |
 | 2 | 3 moves | Smallest non-trivial case |
 | 64 | 1.8 x 10^19 moves | Would take 585 billion years at 1 move/sec |
 ### 14.7.4 Binary Search (Recursive)
-
 
 #### Real-World Analogy: Dictionary Lookup
 
@@ -1636,7 +1577,7 @@ Array: 2 5 8 12 16 23 38 45 56 72
 | bs(arr, 0, 9, 1) | 0 | 9 | 4 | 16 > 1 | left, mid-1 |
 | bs(arr, 0, 3, 1) | 0 | 3 | 1 | 5 > 1 | left, mid-1 |
 | bs(arr, 0, 0, 1) | 0 | 0 | 0 | 2 > 1 | left, mid-1 |
-| bs(arr, 0, -1, 1) | 0 | -1 | → | → | left > right -> return -1 |
+| bs(arr, 0, -1, 1) | 0 | -1 | â†’ | â†’ | left > right -> return -1 |
 
 #### Complexity Analysis
 
@@ -1654,7 +1595,7 @@ Array: 2 5 8 12 16 23 38 45 56 72
 | Advantage | Disadvantage |
 |-----------|-------------|
 | Optimal O(log n) search for sorted arrays | Requires sorted input |
-| Very concise recursive implementation | Stack depth O(log n) → minimal for any practical n |
+| Very concise recursive implementation | Stack depth O(log n) â†’ minimal for any practical n |
 | Works on any random-access data structure | Not suitable for linked lists (requires O(1) mid access) |
 
 #### Edge Cases
@@ -1664,12 +1605,11 @@ Array: 2 5 8 12 16 23 38 45 56 72
 | Empty array | left=0, right=-1 | Base case triggers immediately, returns -1 |
 | Single element | left=0, right=0 | Checks mid=0; found or returns -1 |
 | Target at ends | arr[0] or arr[n-1] | Requires full search to converge to endpoint |
-| Target not present | → | Eventually left > right, returns -1 |
+| Target not present | â†’ | Eventually left > right, returns -1 |
 | Duplicate values | [1, 2, 2, 2, 3] | Returns one occurrence (not guaranteed which) |
 | Very large array | 2^31 elements | mid = (left+right)/2 could overflow; using left + (right-left)/2 prevents this |
 
 ### 14.7.5 Merge Sort (Recursive)
-
 
 #### Real-World Analogy: Sorting a Deck of Cards
 
@@ -1793,17 +1733,17 @@ Sorted:   3 9 10 27 38 43 82
 | 1 | ms(0,6) | 0 | 3 | 6 | Split at 3, call ms(0,3) |
 | 2 | ms(0,3) | 0 | 1 | 3 | Split at 1, call ms(0,1) |
 | 3 | ms(0,1) | 0 | 0 | 1 | Split at 0, call ms(0,0) |
-| 4 | ms(0,0) | 0 | → | → | Base (left==right), return |
-| 4 | ms(1,1) | 1 | → | → | Base (left==right), return |
-| 3 | merge(0,0,1) | → | → | → | Merge [38] and [27] -> [27, 38] |
+| 4 | ms(0,0) | 0 | â†’ | â†’ | Base (left==right), return |
+| 4 | ms(1,1) | 1 | â†’ | â†’ | Base (left==right), return |
+| 3 | merge(0,0,1) | â†’ | â†’ | â†’ | Merge [38] and [27] -> [27, 38] |
 | 3 | ms(2,3) | 2 | 2 | 3 | Split at 2, call ms(2,2) |
-| 4 | ms(2,2) | 2 | → | → | Base, return |
-| 4 | ms(3,3) | 3 | → | → | Base, return |
-| 3 | merge(2,2,3) | → | → | → | Merge [43] and [3] -> [3, 43] |
-| 2 | merge(0,1,3) | → | → | → | Merge [27,38] and [3,43] -> [3,27,38,43] |
+| 4 | ms(2,2) | 2 | â†’ | â†’ | Base, return |
+| 4 | ms(3,3) | 3 | â†’ | â†’ | Base, return |
+| 3 | merge(2,2,3) | â†’ | â†’ | â†’ | Merge [43] and [3] -> [3, 43] |
+| 2 | merge(0,1,3) | â†’ | â†’ | â†’ | Merge [27,38] and [3,43] -> [3,27,38,43] |
 | 2 | ms(4,6) | 4 | 5 | 6 | Split at 5 |
 | ... | ... | ... | ... | ... | (Similar pattern for right half) |
-| 1 | merge(0,3,6) | → | → | → | Merge [3,27,38,43] and [9,10,82] -> [3,9,10,27,38,43,82] |
+| 1 | merge(0,3,6) | â†’ | â†’ | â†’ | Merge [3,27,38,43] and [9,10,82] -> [3,9,10,27,38,43,82] |
 
 #### Merge Operation Detail for merge(0, 3, 6)
 
@@ -1846,8 +1786,8 @@ Sorted:   3 9 10 27 38 43 82
 |----------|-------|----------|
 | Empty array | [] | Base case (left > right), no sorting |
 | Single element | [5] | Base case (left == right), no sorting |
-| Already sorted | [1, 2, 3, 4] | Still does all splits and merges → O(n log n) |
-| Reverse sorted | [4, 3, 2, 1] | Same performance as sorted → O(n log n) |
+| Already sorted | [1, 2, 3, 4] | Still does all splits and merges â†’ O(n log n) |
+| Reverse sorted | [4, 3, 2, 1] | Same performance as sorted â†’ O(n log n) |
 | All duplicates | [7, 7, 7, 7] | Merge handles correctly; stable |
 | Very large | 10 million | ~24 levels of recursion, ~230 MB temp space |
 
@@ -1857,8 +1797,7 @@ Sorted:   3 9 10 27 38 43 82
 
 ### Definition
 
-
-A function is **tail-recursive** if the recursive call is the **final operation** performed, and the function returns the result of that call directly → with no pending computation after it returns.
+A function is **tail-recursive** if the recursive call is the **final operation** performed, and the function returns the result of that call directly â†’ with no pending computation after it returns.
 
 ```c
 /* NOT tail-recursive: multiplication waits for recursive result */
@@ -1875,7 +1814,6 @@ int fact_tail(int n, int acc) {
 ```
 
 ### Tail-Call Optimization (TCO)
-
 
 With TCO, the compiler transforms the recursive call into a jump, reusing the current stack frame.
 
@@ -1895,7 +1833,7 @@ int fact_tail_optimized(int n, int acc) {
     // Instead of pushing new frame, just update and jump:
     acc = n * acc;
     n = n - 1;
-    goto start;                // jump to function start → no stack growth
+    goto start;                // jump to function start â†’ no stack growth
 }
 ```
 
@@ -1908,7 +1846,7 @@ factorial:
     b.le .Lbase
     stp x29, x30, [sp, -32]!   // push frame
     sub w0, w0, #1
-    bl factorial                // function call → new frame
+    bl factorial                // function call â†’ new frame
     ldp x29, x30, [sp], 32     // pop frame
     mul w0, w0, w1             // multiply after return
     ret
@@ -1924,7 +1862,7 @@ fact_tail:
     b.le .Lbase
     mul w1, w0, w1             // update accumulator
     sub w0, w0, #1             // update n
-    b fact_tail                 // jump (not call) → same frame!
+    b fact_tail                 // jump (not call) â†’ same frame!
 .Lbase:
     mov w0, w1
     ret
@@ -1933,7 +1871,6 @@ fact_tail:
 **Key difference:** The tail version uses `b` (branch/jump) instead of `bl` (branch-and-link/call). No stack frame is created.
 
 ### Compiler Support for TCO
-
 
 | Compiler | Flag | TCO Enabled? | Notes |
 |----------|------|-------------|-------|
@@ -1946,11 +1883,10 @@ fact_tail:
 
 ### Verifying TCO in GCC/Clang
 
-
 ```c
 #include <stdio.h>
 
-/* Tail recursive → GCC should optimize this */
+/* Tail recursive â†’ GCC should optimize this */
 int tail_sum(int n, int acc)
 {
     if (n <= 0) return acc;
@@ -1976,7 +1912,6 @@ gcc -O0 -o tail_test tail_test.c && ./tail_test
 
 ### Tail Recursion in Non-Void Functions
 
-
 The recursive call must be in **tail position**:
 - The return statement must be `return func(args);`
 - NOT `return 1 + func(args);`
@@ -1984,7 +1919,6 @@ The recursive call must be in **tail position**:
 - NOT `int x = func(args); return x;`
 
 ### Converting Any Recursion to Tail Recursion
-
 
 **Pattern:** Add an **accumulator parameter** that carries the partial result.
 
@@ -1997,17 +1931,15 @@ The recursive call must be in **tail position**:
 
 ### When TCO Cannot Be Applied
 
-
-1. **Multiple recursive calls** (tree recursion): `return fib(n-1) + fib(n-2)` → can't tail-optimize both calls
-2. **Work after recursion**: `int x = f(n-1); return x + n` → work after call
+1. **Multiple recursive calls** (tree recursion): `return fib(n-1) + fib(n-2)` â†’ can't tail-optimize both calls
+2. **Work after recursion**: `int x = f(n-1); return x + n` â†’ work after call
 3. **Recursion in non-tail context**: Ternary with branching around recursive call
 4. **Function pointer recursion**: Compiler can't prove self-call at compile time
 ---
 
-## 14.9 Recursion vs Iteration → Comprehensive Comparison
+## 14.9 Recursion vs Iteration â†’ Comprehensive Comparison
 
 ### Side-by-Side Code Comparison
-
 
 **Factorial:**
 ```c
@@ -2053,13 +1985,12 @@ int bs_iter(int arr[], int n, int t) {
 
 ### 15-Dimension Comparison Table
 
-
 | Dimension | Recursion | Iteration |
 |-----------|-----------|-----------|
 | **Definition** | Function calls itself | Loop constructs (for, while, do-while) |
 | **Code size** | Usually shorter, more concise | Usually longer, more explicit |
 | **Readability** | Natural for recursive structures (trees, divide-and-conquer) | Natural for linear, sequential operations |
-| **Stack usage** | O(depth) stack frames → risk of overflow | O(1) stack → single frame reused |
+| **Stack usage** | O(depth) stack frames â†’ risk of overflow | O(1) stack â†’ single frame reused |
 | **Space complexity** | Higher (stack frames per level) | Lower (fixed overhead) |
 | **Time overhead** | Function call overhead (push/pop frame) | Minimal (jump instruction) |
 | **Termination** | Base case condition checked each call | Loop condition checked each iteration |
@@ -2073,7 +2004,6 @@ int bs_iter(int arr[], int n, int t) {
 | **Memory fragmentation** | Stack is contiguous; overflow is catastrophic | Heap allocation (if needed) is more flexible |
 
 ### Performance Benchmark Comparison
-
 
 ```c
 #include <stdio.h>
@@ -2139,7 +2069,6 @@ Speedup: 7.42x
 
 ### When to Choose Which
 
-
 #### Choose Recursion When:
 - The problem is naturally recursive (tree traversal, divide-and-conquer)
 - The recursive solution is significantly clearer
@@ -2161,16 +2090,13 @@ Speedup: 7.42x
 
 ### Concept: What Is Backtracking?
 
-
 **Backtracking** is a systematic trial-and-error approach to solving constraint-satisfaction problems. It incrementally builds candidates and abandons them ("backtracks") as soon as it determines the candidate cannot lead to a valid solution.
 
 ### Real-World Analogy: Maze Solving
 
-
 You walk through a maze. At each intersection, you choose a path. If you hit a dead end, you retrace your steps to the last intersection and try a different path. This retracing is backtracking.
 
 ### General Backtracking Algorithm
-
 
 ```
 function backtrack(candidate):
@@ -2182,7 +2108,7 @@ function backtrack(candidate):
         if move is valid (constraints satisfied):
             make the move
             backtrack(extended_candidate)
-            undo the move    // BACKTRACK → critical step
+            undo the move    // BACKTRACK â†’ critical step
 ```
 
 ### Example 1: N-Queens Problem
@@ -2236,7 +2162,7 @@ void print_board(int board[])
 
 void solve_nqueens(int board[], int row)
 {
-    if (row == N) {                      /* all queens placed → solution found */
+    if (row == N) {                      /* all queens placed â†’ solution found */
         print_board(board);
         return;
     }
@@ -2245,7 +2171,7 @@ void solve_nqueens(int board[], int row)
         if (is_safe(board, row, col)) {
             board[row] = col;            /* place queen */
             solve_nqueens(board, row + 1);  /* recurse to next row */
-            /* board[row] is overwritten on next iteration → implicit backtrack */
+            /* board[row] is overwritten on next iteration â†’ implicit backtrack */
         }
     }
 }
@@ -2308,9 +2234,9 @@ Total solutions: 92
 | 2 | 1 | No (diag) | [0, 2, _] | Skip |
 | 2 | 2 | No (col 2) | [0, 2, _] | Skip |
 | 2 | 3 | No (diag) | [0, 2, _] | Skip |
-| 2 | → | No valid column | [0, 2] | **Backtrack** to row 1 |
+| 2 | â†’ | No valid column | [0, 2] | **Backtrack** to row 1 |
 | 1 | 3 | No (diag) | [0, _] | Skip |
-| 1 | → | No valid column | [0] | **Backtrack** to row 0 |
+| 1 | â†’ | No valid column | [0] | **Backtrack** to row 0 |
 | 0 | 1 | Yes | [1] | Place, recurse row 1 |
 | ... | ... | ... | ... | continues... |
 
@@ -2424,7 +2350,6 @@ P P . # .
 
 ### Backtracking vs Brute Force
 
-
 | Aspect | Backtracking | Brute Force |
 |--------|-------------|-------------|
 | Approach | Try, check, abandon early | Generate all, then check |
@@ -2434,7 +2359,6 @@ P P . # .
 | Example | N-Queens prunes by checking | Generate all 64!/(56!8!) placements for 8-Queens |
 
 ### Applications of Backtracking
-
 
 | Problem | Approach |
 |---------|----------|
@@ -2452,9 +2376,8 @@ P P . # .
 
 ### Pitfall 1: Missing or Incorrect Base Case
 
-
 ```c
-/* PITFALL: No base case → infinite recursion */
+/* PITFALL: No base case â†’ infinite recursion */
 void infinite_recursion(int n)
 {
     printf("%d\n", n);
@@ -2479,7 +2402,6 @@ int fixed_base(int n)
 
 ### Pitfall 2: Stack Overflow from Deep Recursion
 
-
 ```c
 /* WARNING: factorial(100000) will crash */
 unsigned long long factorial(int n)
@@ -2499,7 +2421,6 @@ unsigned long long factorial_iter(int n)
 
 ### Pitfall 3: Exponential Blowup (Naive Fibonacci)
 
-
 ```c
 /* fib(50) requires ~2^50 ~ 10^15 operations */
 int fib(int n)
@@ -2513,7 +2434,6 @@ int fib(int n)
 
 ### Pitfall 4: Side Effects in Recursive Functions
 
-
 ```c
 /* PITFALL: Modifying global state inside recursion */
 int count = 0;
@@ -2523,11 +2443,10 @@ int bad_recursion(int n)
     count++;                    /* side effect */
     return n + bad_recursion(n - 1);
 }
-/* count will be n after call → but value depends on call order */
+/* count will be n after call â†’ but value depends on call order */
 ```
 
 ### Pitfall 5: Using Recursion Where Iteration Is Better
-
 
 ```c
 /* BAD: Iterating through array with recursion */
@@ -2548,7 +2467,6 @@ int sum_array_iter(int arr[], int n)
 
 ### Edge Cases Checklist
 
-
 | Edge Case | Potential Problem | Preventive Measure |
 |-----------|------------------|-------------------|
 | Negative input | Base case may not handle it | Use `if (n <= 0)` not `if (n == 0)` |
@@ -2565,7 +2483,6 @@ int sum_array_iter(int arr[], int n)
 
 ### Top Recursion Interview Questions
 
-
 | Question | Difficulty | Key Concept |
 |----------|-----------|-------------|
 | Implement factorial recursively | Easy | Base case, recursion structure |
@@ -2581,16 +2498,14 @@ int sum_array_iter(int arr[], int n)
 
 ### Common Interview Mistakes
 
-
-1. **Missing base case** → Always verify the base case exists and is reachable
-2. **Wrong base case condition** → `if (n == 0)` fails for negative `n`; use `if (n <= 0)`
-3. **Forgetting return in base case** → Non-void function must return a value in ALL paths
-4. **Not making progress** → Recursive call must modify arguments toward base
-5. **Exponential without memoization** → Interviewers expect you to identify and fix this
-6. **Stack overflow blind spot** → Always discuss space complexity of stack
+1. **Missing base case** â†’ Always verify the base case exists and is reachable
+2. **Wrong base case condition** â†’ `if (n == 0)` fails for negative `n`; use `if (n <= 0)`
+3. **Forgetting return in base case** â†’ Non-void function must return a value in ALL paths
+4. **Not making progress** â†’ Recursive call must modify arguments toward base
+5. **Exponential without memoization** â†’ Interviewers expect you to identify and fix this
+6. **Stack overflow blind spot** â†’ Always discuss space complexity of stack
 
 ### Key Concepts to Demonstrate in Interviews
-
 
 | Concept | Why It Matters | How to Show It |
 |---------|---------------|----------------|
@@ -2603,10 +2518,9 @@ int sum_array_iter(int arr[], int n)
 
 ### Discussion Questions
 
-
 **Q: Why is the base case the most important part of a recursive function?**
 
-A: Without a correct base case, recursion never terminates → it either recurses infinitely until stack overflow or returns incorrect results. The base case is the guarantee that the function will eventually stop. It's the fundamental contract that makes recursion safe.
+A: Without a correct base case, recursion never terminates â†’ it either recurses infinitely until stack overflow or returns incorrect results. The base case is the guarantee that the function will eventually stop. It's the fundamental contract that makes recursion safe.
 
 **Q: When would you prefer recursion over iteration in production code?**
 
@@ -2629,7 +2543,6 @@ A: TCO transforms a tail-recursive call into a jump, reusing the current stack f
 A: Memoization is top-down (recursive with caching), computing values on demand. Tabulation is bottom-up (iterative), filling a table from base cases upward. Both achieve the same time complexity, but memoization only computes needed values while tabulation computes all values up to the target.
 
 ### Quick Code Snippets for Interviews
-
 
 **Reverse a string using recursion:**
 ```c
@@ -2679,7 +2592,7 @@ int main(void)
 ```c
 #include <stdio.h>
 
-/* Exponentiation by squaring → O(log n) recursive */
+/* Exponentiation by squaring â†’ O(log n) recursive */
 long long power(int base, int exp)
 {
     if (exp == 0) return 1;
@@ -2704,8 +2617,7 @@ int main(void)
 
 ## 14.13 Applications in Real Systems
 
-### 1. Operating Systems → File System Traversal
-
+### 1. Operating Systems â†’ File System Traversal
 
 ```c
 /* Simplified recursive directory traversal (Unix style) */
@@ -2743,8 +2655,7 @@ void traverse_directory(const char *path, int depth)
 }
 ```
 
-### 2. Compilers → Recursive Descent Parsing
-
+### 2. Compilers â†’ Recursive Descent Parsing
 
 Expression grammar: E -> E + T | T; T -> T * F | F; F -> (E) | id
 
@@ -2812,8 +2723,7 @@ int main(void)
 
 **Output:** `3+4*2 = 11`
 
-### 3. Graphics → Subdivision Surfaces
-
+### 3. Graphics â†’ Subdivision Surfaces
 
 ```c
 /* Recursive midpoint subdivision for a line segment */
@@ -2858,8 +2768,7 @@ Line from (5.0, 0.0) to (7.5, 0.0)
 Line from (7.5, 0.0) to (10.0, 0.0)
 ```
 
-### 4. Artificial Intelligence → Minimax Game Tree
-
+### 4. Artificial Intelligence â†’ Minimax Game Tree
 
 ```c
 /* Simplified Minimax for tic-tac-toe (conceptual) */
@@ -2894,7 +2803,7 @@ int is_full(char board[3][3])
     return 1;
 }
 
-/* Recursive minimax → returns best score for current player */
+/* Recursive minimax â†’ returns best score for current player */
 int minimax(char board[3][3], int is_maximizing)
 {
     int score = evaluate(board);
@@ -2930,15 +2839,13 @@ int minimax(char board[3][3], int is_maximizing)
 }
 ```
 
-### 5. Network Routing → Bellman-Ford Algorithm
-
+### 5. Network Routing â†’ Bellman-Ford Algorithm
 
 The Bellman-Ford shortest-path algorithm has a natural recursive formulation:
 - `dist(v, k)` = shortest path from source to v using at most k edges
 - `dist(v, k) = min(dist(v, k-1), min_{u neighbor of v} (dist(u, k-1) + w(u,v)))`
 
 ### Real-World Recursion Use Cases Summary
-
 
 | Domain | Application | Recursion Pattern |
 |--------|------------|-------------------|
@@ -2962,7 +2869,7 @@ The Bellman-Ford shortest-path algorithm has a natural recursive formulation:
 - **Direct recursion** (function calls itself) vs **indirect recursion** (function calls another that calls back).
 - **Linear recursion** (one call per invocation, O(n) time) vs **tree recursion** (multiple calls, potentially O(2^n) time).
 - Classic recursive problems: factorial (O(n)), Fibonacci (naive O(2^n), memoized O(n)), Tower of Hanoi (O(2^n) moves), binary search (O(log n)), merge sort (O(n log n)).
-- **Backtracking** is recursive trial-and-error: try, check constraints, recurse, undo → used in N-Queens, Sudoku, maze solving.
+- **Backtracking** is recursive trial-and-error: try, check constraints, recurse, undo â†’ used in N-Queens, Sudoku, maze solving.
 - Recursion excels for **naturally recursive structures** (trees, divide-and-conquer); iteration is preferred for simple linear problems.
 - **Memoization** transforms exponential recursion into polynomial time by caching computed results.
 
@@ -3050,7 +2957,7 @@ The Bellman-Ford shortest-path algorithm has a natural recursive formulation:
 
 2. **GCD:** Implement `int gcd(int a, int b)` using Euclid's algorithm recursively.
 
-3. **Reverse Print:** Implement `void print_reverse(const char *s)` that prints a string in reverse without loops → recurse until '\0', then print on unwinding.
+3. **Reverse Print:** Implement `void print_reverse(const char *s)` that prints a string in reverse without loops â†’ recurse until '\0', then print on unwinding.
 
 4. **Power:** Implement `int power(int base, int exp)` for non-negative exponents. Then optimize with **exponentiation by squaring**: if exp is even, `power(base, exp/2)^2`; if odd, `base x power(base, exp-1)`.
 

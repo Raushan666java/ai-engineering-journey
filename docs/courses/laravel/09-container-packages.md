@@ -1,4 +1,4 @@
-# Chapter 9: Service Container, Facades & Package Development
+﻿# Chapter 9: Service Container, Facades & Package Development
 > **Previous:** [Broadcasting, Events & Real-Time Features](./08-broadcasting-realtime) | **Next:** [Testing, Debugging & Observability](./10-testing-observability)
 
 ---
@@ -15,16 +15,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/09-container-packages/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/09-container-packages/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/09-container-packages/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/09-container-packages/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/09-container-packages/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/09-container-packages/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/09-container-packages/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/09-container-packages/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/09-container-packages/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/09-container-packages/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/09-container-packages/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/09-container-packages/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -141,8 +141,8 @@ $this->app->afterResolving(PaymentGateway::class, function ($gateway, $app) { /*
 
 Providers bootstrap all framework components through two phases:
 
-1. **`register()`** → Only container bindings. Never use events, routes, or middleware here.
-2. **`boot()`** → Runs after all providers are registered. Safe to use registered services.
+1. **`register()`** â†’ Only container bindings. Never use events, routes, or middleware here.
+2. **`boot()`** â†’ Runs after all providers are registered. Safe to use registered services.
 
 ```php
 class PaymentServiceProvider extends ServiceProvider
@@ -211,7 +211,7 @@ $resolved->get('key');
 ```php
 use Facades\App\Services\PaymentService;
 
-> **Pro Tip:** Real-time facades (prefixing any class with Facades) are excellent for prototyping. But for production, create explicit facades — they provide better IDE support and are more discoverable by other developers.
+> **Pro Tip:** Real-time facades (prefixing any class with Facades) are excellent for prototyping. But for production, create explicit facades â€” they provide better IDE support and are more discoverable by other developers.
 
 PaymentService::charge(5000);
 ```
@@ -582,7 +582,7 @@ $schedule->command('report:daily --email=admin@example.com')
 | Use Case | Stateless services | Stateful services, config | Pre-configured objects |
 | Memory | Higher (multiple instances) | Lower (shared instance) | Same as singleton |
 
-## Quick Reference — Container Methods
+## Quick Reference â€” Container Methods
 
 | Method | Purpose |
 |--------|---------|
@@ -657,7 +657,7 @@ $schedule->command('report:daily --email=admin@example.com')
 
 ### Application Problems
 
-1. **Contextual Payment Resolution**: Configure `InvoiceController` → Stripe, `RefundController` → Braintree, `PayoutController` → PayPal through the same `PaymentGateway` interface, with `extend()` adding logging to all calls.
+1. **Contextual Payment Resolution**: Configure `InvoiceController` â†’ Stripe, `RefundController` â†’ Braintree, `PayoutController` â†’ PayPal through the same `PaymentGateway` interface, with `extend()` adding logging to all calls.
 
 2. **Feature Flag Package**: Create a package with config, migration, facade, Artisan command to toggle flags, and Blade directive to check them. Use automatic provider discovery.
 

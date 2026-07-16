@@ -1,4 +1,4 @@
-# Chapter 5: Properties of Regular Languages
+﻿# Chapter 5: Properties of Regular Languages
 
 > **Previous:** [Regular Expressions](./04-regex.md) | **Next:** [Context-Free Grammars](./06-cfg.md)
 
@@ -16,16 +16,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/theory-of-computation/05-regular-languages/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/theory-of-computation/05-regular-languages/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/theory-of-computation/05-regular-languages/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/theory-of-computation/05-regular-languages/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/theory-of-computation/05-regular-languages/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/theory-of-computation/05-regular-languages/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/theory-of-computation/05-regular-languages/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/theory-of-computation/05-regular-languages/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/theory-of-computation/05-regular-languages/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/theory-of-computation/05-regular-languages/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/theory-of-computation/05-regular-languages/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/theory-of-computation/05-regular-languages/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -37,7 +37,7 @@
 | Topic | Key Insight | Practical Takeaway |
 |-------|------------|-------------------|
 | Pumping Lemma | Long strings have pumpable substring | Proves languages are not regular |
-| Closure Properties | Regular langs closed under ?, n, ¬, etc. | Build complex languages from simple |
+| Closure Properties | Regular langs closed under ?, n, Â¬, etc. | Build complex languages from simple |
 | Myhill-Nerode | Characterizes regularity via equivalence | Finds minimal DFA uniquely |
 | DFA Minimization | Table-filling merges equivalent states | Most efficient language recognizer |
 | Decision Properties | Membership, emptiness, equivalence decidable | Algorithms exist for regular langs |
@@ -62,17 +62,17 @@ flowchart LR
 ### 4.1 The Pumping Lemma for Regular Languages
 
 
-The pumping lemma is a powerful tool for proving that certain languages are **not regular**. It captures a fundamental property: any sufficiently long string in a regular language can be "pumped" → a middle section can be repeated any number of times → and the resulting string remains in the language.
+The pumping lemma is a powerful tool for proving that certain languages are **not regular**. It captures a fundamental property: any sufficiently long string in a regular language can be "pumped" â†’ a middle section can be repeated any number of times â†’ and the resulting string remains in the language.
 
 **Pumping Lemma (for Regular Languages):**
 
-If L is a regular language, then there exists an integer **p â‰¥ 1** (the pumping length) such that every string s âˆˆ L with |s| â‰¥ p can be written as s = xyz satisfying:
+If L is a regular language, then there exists an integer **p Ã¢â€°Â¥ 1** (the pumping length) such that every string s Ã¢Ë†Ë† L with |s| Ã¢â€°Â¥ p can be written as s = xyz satisfying:
 
-1. xyâ±z âˆˆ L for all i â‰¥ 0.
-2. |y| â‰¥ 1 (y is non-empty).
-3. |xy| â‰¤ p (the pumpable portion occurs within the first p symbols).
+1. xyÃ¢ÂÂ±z Ã¢Ë†Ë† L for all i Ã¢â€°Â¥ 0.
+2. |y| Ã¢â€°Â¥ 1 (y is non-empty).
+3. |xy| Ã¢â€°Â¤ p (the pumpable portion occurs within the first p symbols).
 
-**Proof sketch:** If L is regular, there exists a DFA M with, say, p states that recognizes L. Consider a string s of length â‰¥ p. When M processes s, it visits p+1 states (including the start). By the pigeonhole principle, some state is repeated. The loop between the first and second occurrence of this state is y. Since |xy| â‰¤ p and |y| â‰¥ 1, the loop occurs within the first p symbols.
+**Proof sketch:** If L is regular, there exists a DFA M with, say, p states that recognizes L. Consider a string s of length Ã¢â€°Â¥ p. When M processes s, it visits p+1 states (including the start). By the pigeonhole principle, some state is repeated. The loop between the first and second occurrence of this state is y. Since |xy| Ã¢â€°Â¤ p and |y| Ã¢â€°Â¥ 1, the loop occurs within the first p symbols.
 
 ### 4.2 Using the Pumping Lemma to Prove Non-Regularity
 
@@ -80,49 +80,49 @@ If L is a regular language, then there exists an integer **p â‰¥ 1** (the pu
 To prove L is not regular:
 1. Assume L is regular (for contradiction).
 2. Let p be the pumping length.
-3. Choose s âˆˆ L with |s| â‰¥ p (strategically chosen).
-4. Show that for **every** decomposition s = xyz with |y| â‰¥ 1 and |xy| â‰¤ p, there exists some i â‰¥ 0 such that xyâ±z âˆ‰ L.
+3. Choose s Ã¢Ë†Ë† L with |s| Ã¢â€°Â¥ p (strategically chosen).
+4. Show that for **every** decomposition s = xyz with |y| Ã¢â€°Â¥ 1 and |xy| Ã¢â€°Â¤ p, there exists some i Ã¢â€°Â¥ 0 such that xyÃ¢ÂÂ±z Ã¢Ë†â€° L.
 5. This contradicts the pumping lemma, so L is not regular.
 
 ### 4.3 Closure Properties of Regular Languages
 
 
-The class of regular languages is closed under the following operations. If Lâ‚ and Lâ‚‚ are regular:
+The class of regular languages is closed under the following operations. If LÃ¢â€šÂ and LÃ¢â€šâ€š are regular:
 
 | Operation | Definition | Construction |
 |-----------|------------|-------------|
-| Union | Lâ‚ âˆª Lâ‚‚ | NFA with Îµ from new start to both DFAs |
-| Intersection | Lâ‚ âˆ© Lâ‚‚ | Product DFA: (qâ‚,qâ‚‚) with Fâ‚ Ã— Fâ‚‚ as accept |
-| Complement | LÌ… = Î£* âˆ’ L | Swap accepting and non-accepting states |
-| Concatenation | Lâ‚Lâ‚‚ | NFA with Îµ from Lâ‚'s accept to Lâ‚‚'s start |
-| Kleene star | L* | NFA with Îµ-loop |
-| Reversal | LÊ€ = { wÊ€ | w âˆˆ L } | Reverse transitions, swap start/accept |
-| Homomorphism | h(L) = { h(w) | w âˆˆ L } | Replace each symbol via h |
-| Inverse homomorphism | hâ»Â¹(L) | Straightforward DFA construction |
-| Difference | Lâ‚ âˆ’ Lâ‚‚ | Lâ‚ âˆ© LÌ…â‚‚ |
-| Symmetric difference | Lâ‚ âŠ• Lâ‚‚ | (Lâ‚ âˆª Lâ‚‚) âˆ’ (Lâ‚ âˆ© Lâ‚‚) |
+| Union | LÃ¢â€šÂ Ã¢Ë†Âª LÃ¢â€šâ€š | NFA with ÃŽÂµ from new start to both DFAs |
+| Intersection | LÃ¢â€šÂ Ã¢Ë†Â© LÃ¢â€šâ€š | Product DFA: (qÃ¢â€šÂ,qÃ¢â€šâ€š) with FÃ¢â€šÂ Ãƒâ€” FÃ¢â€šâ€š as accept |
+| Complement | LÃŒâ€¦ = ÃŽÂ£* Ã¢Ë†â€™ L | Swap accepting and non-accepting states |
+| Concatenation | LÃ¢â€šÂLÃ¢â€šâ€š | NFA with ÃŽÂµ from LÃ¢â€šÂ's accept to LÃ¢â€šâ€š's start |
+| Kleene star | L* | NFA with ÃŽÂµ-loop |
+| Reversal | LÃŠâ‚¬ = { wÃŠâ‚¬ | w Ã¢Ë†Ë† L } | Reverse transitions, swap start/accept |
+| Homomorphism | h(L) = { h(w) | w Ã¢Ë†Ë† L } | Replace each symbol via h |
+| Inverse homomorphism | hÃ¢ÂÂ»Ã‚Â¹(L) | Straightforward DFA construction |
+| Difference | LÃ¢â€šÂ Ã¢Ë†â€™ LÃ¢â€šâ€š | LÃ¢â€šÂ Ã¢Ë†Â© LÃŒâ€¦Ã¢â€šâ€š |
+| Symmetric difference | LÃ¢â€šÂ Ã¢Å â€¢ LÃ¢â€šâ€š | (LÃ¢â€šÂ Ã¢Ë†Âª LÃ¢â€šâ€š) Ã¢Ë†â€™ (LÃ¢â€šÂ Ã¢Ë†Â© LÃ¢â€šâ€š) |
 
-**Key insight:** Closure under complement and intersection follow from DFA properties. For complement, simply flip accepting and non-accepting states in the DFA. For intersection, build a product DFA where state (qáµ¢, pâ±¼) transitions to (Î´â‚(qáµ¢,a), Î´â‚‚(pâ±¼,a)) and accepts iff both coordinates are accepting.
+**Key insight:** Closure under complement and intersection follow from DFA properties. For complement, simply flip accepting and non-accepting states in the DFA. For intersection, build a product DFA where state (qÃ¡ÂµÂ¢, pÃ¢Â±Â¼) transitions to (ÃŽÂ´Ã¢â€šÂ(qÃ¡ÂµÂ¢,a), ÃŽÂ´Ã¢â€šâ€š(pÃ¢Â±Â¼,a)) and accepts iff both coordinates are accepting.
 
 ### 4.4 Myhill-Nerode Theorem
 
 
 The Myhill-Nerode theorem characterizes the regular languages in terms of an equivalence relation on strings and provides a method to find the minimal DFA.
 
-Define an equivalence relation â‰¡â‚— on strings over Î£:
-x â‰¡â‚— y iff for all z âˆˆ Î£*, xz âˆˆ L ⇔ yz âˆˆ L
+Define an equivalence relation Ã¢â€°Â¡Ã¢â€šâ€” on strings over ÃŽÂ£:
+x Ã¢â€°Â¡Ã¢â€šâ€” y iff for all z Ã¢Ë†Ë† ÃŽÂ£*, xz Ã¢Ë†Ë† L â‡” yz Ã¢Ë†Ë† L
 
-Two strings are equivalent if they have the same "future" with respect to L → appending any suffix z to both either keeps both in L or both out of L.
+Two strings are equivalent if they have the same "future" with respect to L â†’ appending any suffix z to both either keeps both in L or both out of L.
 
 **Myhill-Nerode Theorem:**
 The following three statements are equivalent:
 1. L is regular.
 2. L is the union of some equivalence classes of a right-invariant equivalence relation of finite index.
-3. The relation â‰¡â‚— has finitely many equivalence classes.
+3. The relation Ã¢â€°Â¡Ã¢â€šâ€” has finitely many equivalence classes.
 
-When L is regular, the number of equivalence classes of â‰¡â‚— equals the number of states in the **minimal** DFA for L.
+When L is regular, the number of equivalence classes of Ã¢â€°Â¡Ã¢â€šâ€” equals the number of states in the **minimal** DFA for L.
 
-**Practical use:** To prove L is not regular, show that â‰¡â‚— has infinitely many classes by finding an infinite set of pairwise inequivalent strings.
+**Practical use:** To prove L is not regular, show that Ã¢â€°Â¡Ã¢â€šâ€” has infinitely many classes by finding an infinite set of pairwise inequivalent strings.
 
 ### 4.5 DFA Minimization
 
@@ -131,9 +131,9 @@ The **table-filling algorithm** (also called the Moore or Hopcroft-Ullman algori
 
 **Algorithm:**
 1. Remove any unreachable states (states not reachable from the start state).
-2. Mark pairs (p, q) where p âˆˆ F and q âˆ‰ F as distinguishable.
-3. For each unmarked pair (p, q) and each symbol a âˆˆ Î£:
-   - If (Î´(p, a), Î´(q, a)) is marked, then mark (p, q).
+2. Mark pairs (p, q) where p Ã¢Ë†Ë† F and q Ã¢Ë†â€° F as distinguishable.
+3. For each unmarked pair (p, q) and each symbol a Ã¢Ë†Ë† ÃŽÂ£:
+   - If (ÃŽÂ´(p, a), ÃŽÂ´(q, a)) is marked, then mark (p, q).
 4. Repeat Step 3 until no more pairs are marked.
 5. Remaining unmarked pairs are indistinguishable and can be merged.
 
@@ -147,61 +147,61 @@ These problems are decidable for regular languages:
 | Problem | Description | Algorithm |
 |---------|-------------|-----------|
 | Membership | Given DFA M and string w, does M accept w? | Simulate M on w |
-| Emptiness | Is L(M) = âˆ…? | Check if any accept state is reachable |
+| Emptiness | Is L(M) = Ã¢Ë†â€¦? | Check if any accept state is reachable |
 | Finiteness | Is L(M) finite? | Check for cycles that can reach accept |
-| Equivalence | Do Mâ‚ and Mâ‚‚ recognize the same language? | Minimize both and check isomorphism |
-| Inclusion | Is L(Mâ‚) âŠ† L(Mâ‚‚)? | Check L(Mâ‚) âˆ© L(Mâ‚‚)Ì… = âˆ… |
+| Equivalence | Do MÃ¢â€šÂ and MÃ¢â€šâ€š recognize the same language? | Minimize both and check isomorphism |
+| Inclusion | Is L(MÃ¢â€šÂ) Ã¢Å â€  L(MÃ¢â€šâ€š)? | Check L(MÃ¢â€šÂ) Ã¢Ë†Â© L(MÃ¢â€šâ€š)ÃŒâ€¦ = Ã¢Ë†â€¦ |
 
 ## Examples
 
-### Example 4.1: Pumping Lemma → Prove L = {0â¿1â¿ | n â‰¥ 0} is Not Regular
+### Example 4.1: Pumping Lemma â†’ Prove L = {0Ã¢ÂÂ¿1Ã¢ÂÂ¿ | n Ã¢â€°Â¥ 0} is Not Regular
 
-**Proof:** Assume L is regular. Let p be the pumping length. Choose s = 0áµ–1áµ–. Since |s| â‰¥ p, s = xyz with |y| â‰¥ 1 and |xy| â‰¤ p.
+**Proof:** Assume L is regular. Let p be the pumping length. Choose s = 0Ã¡Âµâ€“1Ã¡Âµâ€“. Since |s| Ã¢â€°Â¥ p, s = xyz with |y| Ã¢â€°Â¥ 1 and |xy| Ã¢â€°Â¤ p.
 
-Since |xy| â‰¤ p, y consists only of 0s (the first p characters are all 0). Let y = 0áµ where k â‰¥ 1.
+Since |xy| Ã¢â€°Â¤ p, y consists only of 0s (the first p characters are all 0). Let y = 0Ã¡ÂµÂ where k Ã¢â€°Â¥ 1.
 
-Now pump: xyÂ²z = 0áµ–âºáµ1áµ–. This string has more 0s than 1s, so it is not in L. Contradiction. Therefore, L is not regular.
+Now pump: xyÃ‚Â²z = 0Ã¡Âµâ€“Ã¢ÂÂºÃ¡ÂµÂ1Ã¡Âµâ€“. This string has more 0s than 1s, so it is not in L. Contradiction. Therefore, L is not regular.
 
-### Example 4.2: Pumping Lemma → Prove L = { w âˆˆ {a,b}* | w = wÊ€ (palindromes) } is Not Regular
+### Example 4.2: Pumping Lemma â†’ Prove L = { w Ã¢Ë†Ë† {a,b}* | w = wÃŠâ‚¬ (palindromes) } is Not Regular
 
-**Proof:** Assume L is regular with pumping length p. Choose s = aáµ– b aáµ– âˆˆ L. Since |xy| â‰¤ p, y contains only a's from the first block. So y = aáµ for some k â‰¥ 1. Then xyÂ²z = aáµ–âºáµ b aáµ–. This is not a palindrome (the first half has more a's than the second half). Contradiction.
+**Proof:** Assume L is regular with pumping length p. Choose s = aÃ¡Âµâ€“ b aÃ¡Âµâ€“ Ã¢Ë†Ë† L. Since |xy| Ã¢â€°Â¤ p, y contains only a's from the first block. So y = aÃ¡ÂµÂ for some k Ã¢â€°Â¥ 1. Then xyÃ‚Â²z = aÃ¡Âµâ€“Ã¢ÂÂºÃ¡ÂµÂ b aÃ¡Âµâ€“. This is not a palindrome (the first half has more a's than the second half). Contradiction.
 
 ### Example 4.3: Proving Closure Under Intersection
 
-Given DFA Mâ‚ = (Qâ‚, Î£, Î´â‚, qâ‚, Fâ‚) for Lâ‚ and Mâ‚‚ = (Qâ‚‚, Î£, Î´â‚‚, qâ‚‚, Fâ‚‚) for Lâ‚‚:
+Given DFA MÃ¢â€šÂ = (QÃ¢â€šÂ, ÃŽÂ£, ÃŽÂ´Ã¢â€šÂ, qÃ¢â€šÂ, FÃ¢â€šÂ) for LÃ¢â€šÂ and MÃ¢â€šâ€š = (QÃ¢â€šâ€š, ÃŽÂ£, ÃŽÂ´Ã¢â€šâ€š, qÃ¢â€šâ€š, FÃ¢â€šâ€š) for LÃ¢â€šâ€š:
 
-Construct M = (Q, Î£, Î´, qâ‚€, F) for Lâ‚ âˆ© Lâ‚‚:
-- Q = Qâ‚ Ã— Qâ‚‚ (Cartesian product)
-- Î´((p, q), a) = (Î´â‚(p, a), Î´â‚‚(q, a))
-- qâ‚€ = (qâ‚, qâ‚‚)
-- F = Fâ‚ Ã— Fâ‚‚
+Construct M = (Q, ÃŽÂ£, ÃŽÂ´, qÃ¢â€šâ‚¬, F) for LÃ¢â€šÂ Ã¢Ë†Â© LÃ¢â€šâ€š:
+- Q = QÃ¢â€šÂ Ãƒâ€” QÃ¢â€šâ€š (Cartesian product)
+- ÃŽÂ´((p, q), a) = (ÃŽÂ´Ã¢â€šÂ(p, a), ÃŽÂ´Ã¢â€šâ€š(q, a))
+- qÃ¢â€šâ‚¬ = (qÃ¢â€šÂ, qÃ¢â€šâ€š)
+- F = FÃ¢â€šÂ Ãƒâ€” FÃ¢â€šâ€š
 
-A string w is accepted by M iff Î´Ì‚â‚(qâ‚, w) âˆˆ Fâ‚ and Î´Ì‚â‚‚(qâ‚‚, w) âˆˆ Fâ‚‚, meaning w âˆˆ Lâ‚ âˆ© Lâ‚‚.
+A string w is accepted by M iff ÃŽÂ´ÃŒâ€šÃ¢â€šÂ(qÃ¢â€šÂ, w) Ã¢Ë†Ë† FÃ¢â€šÂ and ÃŽÂ´ÃŒâ€šÃ¢â€šâ€š(qÃ¢â€šâ€š, w) Ã¢Ë†Ë† FÃ¢â€šâ€š, meaning w Ã¢Ë†Ë† LÃ¢â€šÂ Ã¢Ë†Â© LÃ¢â€šâ€š.
 
-### Example 4.4: Myhill-Nerode for L = {0â¿1â¿ | n â‰¥ 0}
+### Example 4.4: Myhill-Nerode for L = {0Ã¢ÂÂ¿1Ã¢ÂÂ¿ | n Ã¢â€°Â¥ 0}
 
-Consider strings 0â± and 0Ê² with i â‰  j. Let z = 1â±. Then 0â±Â·1â± = 0â±1â± âˆˆ L, but 0Ê²Â·1â± = 0Ê²1â± âˆ‰ L (since j â‰  i). Therefore, 0â± and 0Ê² are distinguishable for all i â‰  j. This gives infinitely many equivalence classes, proving L is not regular by Myhill-Nerode.
+Consider strings 0Ã¢ÂÂ± and 0ÃŠÂ² with i Ã¢â€°Â  j. Let z = 1Ã¢ÂÂ±. Then 0Ã¢ÂÂ±Ã‚Â·1Ã¢ÂÂ± = 0Ã¢ÂÂ±1Ã¢ÂÂ± Ã¢Ë†Ë† L, but 0ÃŠÂ²Ã‚Â·1Ã¢ÂÂ± = 0ÃŠÂ²1Ã¢ÂÂ± Ã¢Ë†â€° L (since j Ã¢â€°Â  i). Therefore, 0Ã¢ÂÂ± and 0ÃŠÂ² are distinguishable for all i Ã¢â€°Â  j. This gives infinitely many equivalence classes, proving L is not regular by Myhill-Nerode.
 
 ### Example 4.5: DFA Minimization
 
 Consider a DFA over {a,b} with:
 - States: A (start, accept), B, C, D (accept), E
-- Î´: A-a→B, A-b→C; B-a→A, B-b→D; C-a→E, C-b→D; D-a→E, D-b→C; E-a→E, E-b→E
+- ÃŽÂ´: A-aâ†’B, A-bâ†’C; B-aâ†’A, B-bâ†’D; C-aâ†’E, C-bâ†’D; D-aâ†’E, D-bâ†’C; E-aâ†’E, E-bâ†’E
 
-**Step 1:** Remove unreachable states → all reachable from A.
+**Step 1:** Remove unreachable states â†’ all reachable from A.
 
 **Step 2:** Initial marking: accept (A, D) vs non-accept (B, C, E). Mark: (A,B), (A,C), (A,E), (D,B), (D,C), (D,E).
 
-**Step 3:** Iterate. Consider (B,C): Î´(B,a)=A, Î´(C,a)=E → (A,E) is unmarked, so don't mark yet. Î´(B,b)=D, Î´(C,b)=D → same. So (B,C) stays unmarked.
+**Step 3:** Iterate. Consider (B,C): ÃŽÂ´(B,a)=A, ÃŽÂ´(C,a)=E â†’ (A,E) is unmarked, so don't mark yet. ÃŽÂ´(B,b)=D, ÃŽÂ´(C,b)=D â†’ same. So (B,C) stays unmarked.
 
 Continue until stable. Unmarked pairs indicate equivalent states.
 
 ### Example 4.6: Decision Procedure for Emptiness
 
-To check if L(M) = âˆ… for DFA M with states Q, start qâ‚€, accept F:
-- Run graph reachability algorithm (DFS/BFS) from qâ‚€.
-- If any accept state is reachable, L(M) â‰  âˆ….
-- Otherwise, L(M) = âˆ….
+To check if L(M) = Ã¢Ë†â€¦ for DFA M with states Q, start qÃ¢â€šâ‚¬, accept F:
+- Run graph reachability algorithm (DFS/BFS) from qÃ¢â€šâ‚¬.
+- If any accept state is reachable, L(M) Ã¢â€°Â  Ã¢Ë†â€¦.
+- Otherwise, L(M) = Ã¢Ë†â€¦.
 
 
 
@@ -278,7 +278,7 @@ graph TD
     end
 ```
 
-The algorithm runs in O(|Q|²|S|) time. After minimization, the DFA is unique up to state renaming — the canonical representation of the regular language.
+The algorithm runs in O(|Q|Â²|S|) time. After minimization, the DFA is unique up to state renaming â€” the canonical representation of the regular language.
 
 ## The Pumping Lemma in Game Form
 
@@ -291,17 +291,17 @@ View the pumping lemma as an adversarial game:
 5. You pick i = 0.
 6. If xy?z ? L, you win (L is not regular). Otherwise, the opponent wins.
 
-To prove non-regularity, you need a strategy that beats every possible decomposition — this is why the universal quantifier "for every decomposition" is the key challenge.
+To prove non-regularity, you need a strategy that beats every possible decomposition â€” this is why the universal quantifier "for every decomposition" is the key challenge.
 
 ## Practical Takeaways
 
-1. **The pumping lemma is a non-regularity tool.** It gives a necessary condition for regularity, so violating it proves non-regularity. But some non-regular languages can still be "pumped" — use Myhill-Nerode for certainty.
+1. **The pumping lemma is a non-regularity tool.** It gives a necessary condition for regularity, so violating it proves non-regularity. But some non-regular languages can still be "pumped" â€” use Myhill-Nerode for certainty.
 
 2. **Closure properties are construction recipes.** When building a language processor, use union, intersection, and complement to compose complex recognizers from simple ones. Product construction is the key implementation technique.
 
 3. **DFA minimization saves resources.** A minimized DFA requires the fewest possible states and transitions. In embedded systems or high-throughput pattern matching, this directly reduces memory and power consumption.
 
-4. **Decision algorithms exist for regular languages.** Questions like "does this DFA accept any string?" or "are these two DFAs equivalent?" have efficient algorithms — a rare luxury not shared by more powerful models.
+4. **Decision algorithms exist for regular languages.** Questions like "does this DFA accept any string?" or "are these two DFAs equivalent?" have efficient algorithms â€” a rare luxury not shared by more powerful models.
 
 ## Concept Comparison Table
 | Property | Regular? | Construction |
@@ -394,7 +394,7 @@ This decision tree illustrates the relationship between the pumping lemma (neces
 
 <details>
 <summary>Answer&lt;/summary&gt;
-**B)** Finite-index right-invariant equivalence relation — number of classes = minimal DFA states.
+**B)** Finite-index right-invariant equivalence relation â€” number of classes = minimal DFA states.
 </details>
 
 **Q4.** DFA minimization merges:
@@ -459,7 +459,7 @@ console.log(result.isRegular === false
 
 ```typescript
 class DecisionProcedures {
-  // Emptiness: Is L(M) = Ø?
+  // Emptiness: Is L(M) = Ã˜?
   static isEmpty(Q: Set<string>, delta: Map<string, string>,
                   q0: string, F: Set<string>): boolean {
     const visited = new Set<string>();
@@ -495,7 +495,7 @@ class DecisionProcedures {
         if (!visited.has(next)) {
           if (dfs(next)) return true;
         } else if (recStack.has(next)) {
-          // Found cycle — check if it can reach accept
+          // Found cycle â€” check if it can reach accept
           return canReachAccept(next, new Set(), delta, F);
         }
       }
@@ -550,15 +550,15 @@ class DecisionProcedures {
 
 ## Practical Takeaways
 
-1. **The pumping lemma is a negative tool.** Use it to prove that a language is NOT regular, never to prove regularity. The lemma gives a necessary condition, not a sufficient one — some non-regular languages satisfy it.
+1. **The pumping lemma is a negative tool.** Use it to prove that a language is NOT regular, never to prove regularity. The lemma gives a necessary condition, not a sufficient one â€” some non-regular languages satisfy it.
 
 2. **Closure properties simplify proofs.** Instead of directly applying the pumping lemma to a complex language, try to prove non-regularity by reduction: if L were regular, then applying a closure property (intersection with a regular language, homomorphism) would produce a known non-regular language.
 
-3. **DFA minimization guarantees optimality.** The table-filling algorithm produces the unique minimal DFA for any regular language. This is the gold standard: minimal DFAs are canonical representations — two regular expressions are equivalent iff their minimized DFAs are isomorphic.
+3. **DFA minimization guarantees optimality.** The table-filling algorithm produces the unique minimal DFA for any regular language. This is the gold standard: minimal DFAs are canonical representations â€” two regular expressions are equivalent iff their minimized DFAs are isomorphic.
 
 4. **Decidability means automation.** Membership, emptiness, finiteness, and equivalence are all decidable for regular languages. This enables automated tools like regex testers, lexer generators, and pattern matchers that can reason about regular languages without human intervention.
 
-5. **The pumping lemma as a game.** Understanding the adversarial game formulation helps construct correct proofs — the key is that you must beat every possible decomposition, not just the obvious ones.
+5. **The pumping lemma as a game.** Understanding the adversarial game formulation helps construct correct proofs â€” the key is that you must beat every possible decomposition, not just the obvious ones.
 
 6. **Closure under complement is unique to regular languages.** For CFLs and above, complement closure fails spectacularly. This makes regular languages exceptionally well-behaved for verification tasks.
 
@@ -619,16 +619,16 @@ class PumpingLemma {
         const x = s.slice(0, yStart);
         const y = s.slice(yStart, yStart + yLen);
         const z = s.slice(yStart + yLen);
-        // Pump with i=2: xy²z has more a's than b's
+        // Pump with i=2: xyÂ²z has more a's than b's
         const pumped = x + y.repeat(2) + z;
         if (!language(pumped)) {
           proof.push(`All splits: x=${x}, y=${y}, z=${z}.`);
-          proof.push(`Then xy²z = ${pumped} ? ${languageName} => contradiction.`);
+          proof.push(`Then xyÂ²z = ${pumped} ? ${languageName} => contradiction.`);
           return proof;
         }
       }
     }
-    proof.push("No contradiction found — language may be regular.");
+    proof.push("No contradiction found â€” language may be regular.");
     return proof;
   }
 }
@@ -775,7 +775,7 @@ class MyhillNerodeClassifier {
 }
 
 // -----------------------------------------------------
-// DFA Equivalence Checker — verifies whether two DFAs
+// DFA Equivalence Checker â€” verifies whether two DFAs
 // recognize the same language by checking if the symmetric
 // difference of their languages is empty.
 // -----------------------------------------------------
@@ -785,7 +785,7 @@ class DFAEquivalenceChecker {
     dfa1: { states: Set&lt;string&gt;; alphabet: Set&lt;string&gt;; transitions: Map&lt;string, string&gt;; start: string; accept: Set&lt;string&gt; },
     dfa2: { states: Set&lt;string&gt;; alphabet: Set&lt;string&gt;; transitions: Map&lt;string, string&gt;; start: string; accept: Set&lt;string&gt; }
   ): boolean {
-    // BFS over pairs of states — search for a distinguishing string
+    // BFS over pairs of states â€” search for a distinguishing string
     const visited = new Set&lt;string&gt;();
     const queue: [string, string][] = [[dfa1.start, dfa2.start]];
 
@@ -885,34 +885,34 @@ export { Processor, Task }
 - The table-filling algorithm produces the minimal (unique) DFA for any regular language.
 - Membership, emptiness, finiteness, and equivalence are decidable for regular languages.
 - Product construction is the key technique for closure under intersection and difference.
-- **Decision procedures** exist for all major questions about regular languages — a property not shared by more powerful language classes.
+- **Decision procedures** exist for all major questions about regular languages â€” a property not shared by more powerful language classes.
 - The **adversarial game formulation** of the pumping lemma clarifies the quantifier structure of non-regularity proofs.
 
 ## Exercises
 
 ### Basic
 
-1. Prove that L = { aâ¿bâ¿ | n â‰¥ 0 } is not regular using the pumping lemma.
-2. Prove that L = { w âˆˆ {a,b}* | w has an equal number of a's and b's } is not regular.
+1. Prove that L = { aÃ¢ÂÂ¿bÃ¢ÂÂ¿ | n Ã¢â€°Â¥ 0 } is not regular using the pumping lemma.
+2. Prove that L = { w Ã¢Ë†Ë† {a,b}* | w has an equal number of a's and b's } is not regular.
 3. Minimize the DFA from Example 1.2 (exactly two 1s) using the table-filling algorithm.
 4. Show that regular languages are closed under reversal by construction.
 5. For DFA with 3 states, how many distinct equivalence relations (potential minimized DFAs) could there be?
 
 ### Intermediate
 
-6. Prove that L = { 0â¿ | n is a perfect square } is not regular.
-7. Prove that L = { w âˆˆ {0,1}* | |w|â‚€ = |w|â‚ } is not regular using both the pumping lemma and Myhill-Nerode.
-8. Given a DFA M with n states, prove that L(M) is infinite iff there exists a string w with |w| between n and 2n-1 such that w âˆˆ L(M).
+6. Prove that L = { 0Ã¢ÂÂ¿ | n is a perfect square } is not regular.
+7. Prove that L = { w Ã¢Ë†Ë† {0,1}* | |w|Ã¢â€šâ‚¬ = |w|Ã¢â€šÂ } is not regular using both the pumping lemma and Myhill-Nerode.
+8. Given a DFA M with n states, prove that L(M) is infinite iff there exists a string w with |w| between n and 2n-1 such that w Ã¢Ë†Ë† L(M).
 9. Construct product DFAs for the union and intersection of the languages from Examples 1.1 and 1.2.
-10. Show that the regular languages are closed under the operation shuffle(Lâ‚, Lâ‚‚) = { wâ‚vâ‚wâ‚‚vâ‚‚â€¦wâ‚™vâ‚™ | wâ‚â€¦wâ‚™ âˆˆ Lâ‚, vâ‚â€¦vâ‚™ âˆˆ Lâ‚‚ }.
+10. Show that the regular languages are closed under the operation shuffle(LÃ¢â€šÂ, LÃ¢â€šâ€š) = { wÃ¢â€šÂvÃ¢â€šÂwÃ¢â€šâ€švÃ¢â€šâ€šÃ¢â‚¬Â¦wÃ¢â€šâ„¢vÃ¢â€šâ„¢ | wÃ¢â€šÂÃ¢â‚¬Â¦wÃ¢â€šâ„¢ Ã¢Ë†Ë† LÃ¢â€šÂ, vÃ¢â€šÂÃ¢â‚¬Â¦vÃ¢â€šâ„¢ Ã¢Ë†Ë† LÃ¢â€šâ€š }.
 
 ### Advanced
 
-11. Prove the Myhill-Nerode theorem: L is regular iff â‰¡â‚— has finite index.
+11. Prove the Myhill-Nerode theorem: L is regular iff Ã¢â€°Â¡Ã¢â€šâ€” has finite index.
 12. Design an algorithm to check whether two regular expressions denote the same language. What is its complexity?
-13. Let Lâ‚ = { aâ¿báµ | n â‰  m } and Lâ‚‚ = { aâ¿bÂ²â¿ | n â‰¥ 0 }. Prove Lâ‚ is regular (construct a DFA) and Lâ‚‚ is not regular.
-14. Prove that the language L = { aâ¿ | n is prime } is not regular using the pumping lemma. (Hint: use properties of prime numbers → if y = aáµ, then xyâ±á¨Â¹z has length p + (i-1)k. Choose i appropriately to get a composite number.)
-15. Implement the table-filling algorithm for a DFA with up to 100 states. Show that the algorithm runs in O(|Q|Â² |Î£|) time.
+13. Let LÃ¢â€šÂ = { aÃ¢ÂÂ¿bÃ¡ÂµÂ | n Ã¢â€°Â  m } and LÃ¢â€šâ€š = { aÃ¢ÂÂ¿bÃ‚Â²Ã¢ÂÂ¿ | n Ã¢â€°Â¥ 0 }. Prove LÃ¢â€šÂ is regular (construct a DFA) and LÃ¢â€šâ€š is not regular.
+14. Prove that the language L = { aÃ¢ÂÂ¿ | n is prime } is not regular using the pumping lemma. (Hint: use properties of prime numbers â†’ if y = aÃ¡ÂµÂ, then xyÃ¢ÂÂ±Ã¡ÂÂ¨Ã‚Â¹z has length p + (i-1)k. Choose i appropriately to get a composite number.)
+15. Implement the table-filling algorithm for a DFA with up to 100 states. Show that the algorithm runs in O(|Q|Ã‚Â² |ÃŽÂ£|) time.
 16. Write a TypeScript function that implements the adversarial game formulation of the pumping lemma. Given a language L described as a TypeScript predicate, determine (as far as possible) whether L is non-regular.
 17. Prove that the language L = { ww | w ? {0,1}* } is not regular using both (a) the pumping lemma and (b) the Myhill-Nerode theorem.
 18. Show that regular languages are closed under the operation prefix(L) = { w | wx ? L for some x } by constructing a DFA that accepts prefix(L).
@@ -923,7 +923,7 @@ export { Processor, Task }
 
 ## Practical Takeaways
 
-1. **The pumping lemma is a negative tool.** Use it to prove that a language is NOT regular, never to prove regularity. It gives a necessary condition — some non-regular languages satisfy it, making Myhill-Nerode the definitive method.
+1. **The pumping lemma is a negative tool.** Use it to prove that a language is NOT regular, never to prove regularity. It gives a necessary condition â€” some non-regular languages satisfy it, making Myhill-Nerode the definitive method.
 
 2. **Closure properties simplify proofs.** Instead of directly applying the pumping lemma to a complex language, try to prove non-regularity by reduction: if L were regular, then applying a closure property (intersection with a regular language, homomorphism) would produce a known non-regular language.
 

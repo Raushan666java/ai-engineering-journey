@@ -1,6 +1,6 @@
-# Chapter 1: Fundamentals of Algorithm Analysis
+﻿# Chapter 1: Fundamentals of Algorithm Analysis
 
-> **Prerequisites:** None | **Next:** [Chapter 2: Searching](./02-searching.md) — From measuring efficiency to finding elements
+> **Prerequisites:** None | **Next:** [Chapter 2: Searching](./02-searching.md) â€” From measuring efficiency to finding elements
 
 ## Learning Objectives
 
@@ -9,16 +9,16 @@ By the end of this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/algorithms/01-analysis/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/algorithms/01-analysis/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/algorithms/01-analysis/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/algorithms/01-analysis/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/algorithms/01-analysis/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/algorithms/01-analysis/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/algorithms/01-analysis/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/algorithms/01-analysis/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/algorithms/01-analysis/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/algorithms/01-analysis/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/algorithms/01-analysis/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/algorithms/01-analysis/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -32,14 +32,14 @@ By the end of this chapter, students will be able to:
 
 ## Why Algorithm Analysis Matters
 
-Imagine choosing a route to work. Walking works for 1 block (linear in distance) but fails at 10 miles. A bicycle handles neighborhood errands, but a car cruises at constant speed once on the highway. Algorithm analysis is the same science — it predicts how your code behaves before input grows.
+Imagine choosing a route to work. Walking works for 1 block (linear in distance) but fails at 10 miles. A bicycle handles neighborhood errands, but a car cruises at constant speed once on the highway. Algorithm analysis is the same science â€” it predicts how your code behaves before input grows.
 
-Consider Google: it processes 40,000+ queries per second. If search were O(n²) instead of O(n log n), each query would take years instead of milliseconds. Facebook's News Feed ranks billions of posts in real time. Amazon recommends from 350+ million products. Without algorithm analysis, engineers build bridges without load-testing them.
+Consider Google: it processes 40,000+ queries per second. If search were O(nÂ²) instead of O(n log n), each query would take years instead of milliseconds. Facebook's News Feed ranks billions of posts in real time. Amazon recommends from 350+ million products. Without algorithm analysis, engineers build bridges without load-testing them.
 
 **Three reasons every developer needs algorithm analysis:**
-1. **Scalability prediction** — Code that runs fine on 100 items may crash on 100,000.
-2. **Tool selection** — HashMap (O(1)) vs. TreeMap (O(log n)) trades speed for ordering.
-3. **Bottleneck hunting** — A single O(n³) loop can dominate an entire system's runtime.
+1. **Scalability prediction** â€” Code that runs fine on 100 items may crash on 100,000.
+2. **Tool selection** â€” HashMap (O(1)) vs. TreeMap (O(log n)) trades speed for ordering.
+3. **Bottleneck hunting** â€” A single O(nÂ³) loop can dominate an entire system's runtime.
 
 > **Pro Tip:** Always ask "What happens when n is 10? 1000? 1,000,000?" If you can't answer, you need asymptotic analysis.
 
@@ -51,7 +51,7 @@ Consider Google: it processes 40,000+ queries per second. If search were O(n²) 
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| Asymptotic Notation | Big-O, Θ, Ω describe upper, tight, and lower bounds | Always express algorithm efficiency using Big-O for worst-case analysis |
+| Asymptotic Notation | Big-O, Î˜, Î© describe upper, tight, and lower bounds | Always express algorithm efficiency using Big-O for worst-case analysis |
 | Recurrence Relations | Recursive algorithms modeled as T(n) = aT(n/b) + f(n) | Master theorem solves most common recurrences in one step |
 | Substitution Method | Guess + induction proves asymptotic bounds | Use when master theorem doesn't apply; guess from experience |
 | Recursion-Tree Method | Visualize recursion as levels with per-level costs | Builds intuition for why divide-and-conquer algorithms have log factors |
@@ -113,43 +113,43 @@ Big-Theta is an asymptotically *tight* bound.
 O(1) \subset O(\log n) \subset O(n) \subset O(n \log n) \subset O(n^2) \subset O(2^n) \subset O(n!)
 \]
 
-> **Pro Tip:** Always find the *tightest* Big-O bound. Saying an algorithm is O(n³) might be technically correct, but if it's actually O(n log n), the looser bound hides the algorithm's true efficiency.
+> **Pro Tip:** Always find the *tightest* Big-O bound. Saying an algorithm is O(nÂ³) might be technically correct, but if it's actually O(n log n), the looser bound hides the algorithm's true efficiency.
 
 **One-Sentence Takeaway:** Asymptotic notation gives a precise language to describe how runtime grows with input size, abstracting away constants and lower-order terms.
 
-> **Real-World Analogy (Shipping):** Choosing a Big-O bound is like picking a delivery method. A bicycle (O(1)) is perfect for one package downtown. A delivery van (O(n)) handles suburban routes. A freight train (O(n log n)) moves cross-country cargo. A fleet covering every route combination (O(n²)) is wasteful. The right vehicle depends on how many packages you carry.
+> **Real-World Analogy (Shipping):** Choosing a Big-O bound is like picking a delivery method. A bicycle (O(1)) is perfect for one package downtown. A delivery van (O(n)) handles suburban routes. A freight train (O(n log n)) moves cross-country cargo. A fleet covering every route combination (O(nÂ²)) is wasteful. The right vehicle depends on how many packages you carry.
 
 #### Algorithm Steps: How to Find the Asymptotic Bound
 
-1. **Identify the dominant operation** — the most frequent instruction (comparisons, swaps, memory accesses).
-2. **Count executions** — express the number of times the dominant operation runs as a function of input size n.
-3. **Drop constant factors** — `3n²` becomes `n²`; `1000n` becomes `n`.
-4. **Drop lower-order terms** — `n² + 100n + 50000` becomes `n²`.
-5. **Classify into a growth rate** — match the result to a known complexity class.
+1. **Identify the dominant operation** â€” the most frequent instruction (comparisons, swaps, memory accesses).
+2. **Count executions** â€” express the number of times the dominant operation runs as a function of input size n.
+3. **Drop constant factors** â€” `3nÂ²` becomes `nÂ²`; `1000n` becomes `n`.
+4. **Drop lower-order terms** â€” `nÂ² + 100n + 50000` becomes `nÂ²`.
+5. **Classify into a growth rate** â€” match the result to a known complexity class.
 
-**Example walkthrough:** `f(n) = 12n² + 300n + 5`
-- n = 10: 12(100) + 3000 + 5 = 4205 — both terms matter
-- n = 100: 12(10000) + 30000 + 5 = 150005 — n² already dominant
-- n = 1000: 12(1,000,000) + 300,000 + 5 = 12,300,005 — n² overwhelms everything
-- n = 10,000: n² term contributes ~99.9% of total
+**Example walkthrough:** `f(n) = 12nÂ² + 300n + 5`
+- n = 10: 12(100) + 3000 + 5 = 4205 â€” both terms matter
+- n = 100: 12(10000) + 30000 + 5 = 150005 â€” nÂ² already dominant
+- n = 1000: 12(1,000,000) + 300,000 + 5 = 12,300,005 â€” nÂ² overwhelms everything
+- n = 10,000: nÂ² term contributes ~99.9% of total
 
 #### Dry Run: Visualizing Bound Relations
 
-| n | f(n) = 2n² + 3n | g(n) = n² | f(n) ≤ 3·g(n)? | f(n) ≤ 3·g(n) from n₀ ≥? |
+| n | f(n) = 2nÂ² + 3n | g(n) = nÂ² | f(n) â‰¤ 3Â·g(n)? | f(n) â‰¤ 3Â·g(n) from nâ‚€ â‰¥? |
 |---|-----------------|-----------|----------------|----------------------|
-| 1 | 5 | 1 | No (5 > 3) | — |
-| 2 | 14 | 4 | No (14 > 12) | — |
-| 3 | 27 | 9 | Yes (27 ≤ 27) | 3 |
-| 4 | 44 | 16 | Yes (44 ≤ 48) | 3 |
-| 5 | 65 | 25 | Yes (65 ≤ 75) | 3 |
-| 10 | 230 | 100 | Yes (230 ≤ 300) | 3 |
-| 100 | 20,300 | 10,000 | Yes (20,300 ≤ 30,000) | 3 |
+| 1 | 5 | 1 | No (5 > 3) | â€” |
+| 2 | 14 | 4 | No (14 > 12) | â€” |
+| 3 | 27 | 9 | Yes (27 â‰¤ 27) | 3 |
+| 4 | 44 | 16 | Yes (44 â‰¤ 48) | 3 |
+| 5 | 65 | 25 | Yes (65 â‰¤ 75) | 3 |
+| 10 | 230 | 100 | Yes (230 â‰¤ 300) | 3 |
+| 100 | 20,300 | 10,000 | Yes (20,300 â‰¤ 30,000) | 3 |
 
-Thus 2n² + 3n = O(n²) with c = 3, n₀ = 3.
+Thus 2nÂ² + 3n = O(nÂ²) with c = 3, nâ‚€ = 3.
 
 #### Code Examples: Complexity in Practice
 
-**Linear Search — O(n):**
+**Linear Search â€” O(n):**
 
 <details>
 <summary>C++</summary>
@@ -195,7 +195,7 @@ public static int linearSearch(int[] arr, int target) {
 
 </details>
 
-**Binary Search — O(log n):**
+**Binary Search â€” O(log n):**
 
 <details>
 <summary>C++</summary>
@@ -203,7 +203,7 @@ public static int linearSearch(int[] arr, int target) {
 ```cpp
 int binarySearch(const vector<int>& arr, int target) {
     int lo = 0, hi = arr.size() - 1;
-    while (lo <= hi) {                        // log₂(n) iterations
+    while (lo <= hi) {                        // logâ‚‚(n) iterations
         int mid = lo + (hi - lo) / 2;
         if (arr[mid] == target) return mid;
         else if (arr[mid] < target) lo = mid + 1;
@@ -222,7 +222,7 @@ int binarySearch(const vector<int>& arr, int target) {
 ```python
 def binary_search(arr, target):
     lo, hi = 0, len(arr) - 1
-    while lo <= hi:                          # log₂(n) iterations
+    while lo <= hi:                          # logâ‚‚(n) iterations
         mid = (lo + hi) // 2
         if arr[mid] == target:
             return mid
@@ -231,7 +231,7 @@ def binary_search(arr, target):
         else:
             hi = mid - 1
     return -1
-# Each step eliminates half the remaining elements → O(log n)
+# Each step eliminates half the remaining elements â†’ O(log n)
 ```
 
 </details>
@@ -242,7 +242,7 @@ def binary_search(arr, target):
 ```java
 public static int binarySearch(int[] arr, int target) {
     int lo = 0, hi = arr.length - 1;
-    while (lo <= hi) {                        // log₂(n) iterations
+    while (lo <= hi) {                        // logâ‚‚(n) iterations
         int mid = lo + (hi - lo) / 2;
         if (arr[mid] == target) return mid;
         else if (arr[mid] < target) lo = mid + 1;
@@ -259,7 +259,7 @@ public static int binarySearch(int[] arr, int target) {
 
 | Advantage | Disadvantage |
 |-----------|-------------|
-| Hardware-independent — pure mathematical growth | Hides constant factors that matter in practice |
+| Hardware-independent â€” pure mathematical growth | Hides constant factors that matter in practice |
 | Enables direct algorithm comparison | Ignores low-input-size behavior (n &lt; 100) |
 | Works for any input size n | Misleading when hidden constants are large |
 | Established standard in CS literature | Ignores cache misses, I/O, and parallelism |
@@ -268,11 +268,11 @@ public static int binarySearch(int[] arr, int target) {
 
 | Edge Case | Example | Explanation |
 |-----------|---------|-------------|
-| **Constant functions** | f(n) = 10, g(n) = 20 | Both O(1) — even a constant of 10²⁰ is still O(1) |
-| **Oscillating functions** | f(n) = n·(1 + sin n) | Big-O cannot capture oscillating growth cleanly; Θ may not exist |
-| **Very small n** | Sorting n = 3 items | O(n²) bubble sort can beat O(n log n) quick sort for n &lt; 10 |
-| **Equal growth class** | f(n) = 3n², g(n) = 5n² | Both Θ(n²) — constants differ but class is same |
-| **Multi-variable** | f(n, m) = n + m² | Two-dimensional; which variable dominates depends on context |
+| **Constant functions** | f(n) = 10, g(n) = 20 | Both O(1) â€” even a constant of 10Â²â° is still O(1) |
+| **Oscillating functions** | f(n) = nÂ·(1 + sin n) | Big-O cannot capture oscillating growth cleanly; Î˜ may not exist |
+| **Very small n** | Sorting n = 3 items | O(nÂ²) bubble sort can beat O(n log n) quick sort for n &lt; 10 |
+| **Equal growth class** | f(n) = 3nÂ², g(n) = 5nÂ² | Both Î˜(nÂ²) â€” constants differ but class is same |
+| **Multi-variable** | f(n, m) = n + mÂ² | Two-dimensional; which variable dominates depends on context |
 
 ### 1.2 Recurrence Relations
 
@@ -285,7 +285,7 @@ T(n) = aT(n/b) + f(n),
 
 where \( a \) is the number of subproblems, \( n/b \) is the size of each subproblem, and \( f(n) \) is the cost to divide and combine.
 
-> **Real-World Analogy (Russian Nesting Dolls):** A recurrence is like a set of matryoshka dolls. Each doll contains a smaller copy of itself. To compute the total paint volume, you paint the outer doll (pay f(n)), then recursively paint each inner doll (pay a × T(n/b)). The total depends on how many dolls exist (a) and how much smaller each one gets (b).
+> **Real-World Analogy (Russian Nesting Dolls):** A recurrence is like a set of matryoshka dolls. Each doll contains a smaller copy of itself. To compute the total paint volume, you paint the outer doll (pay f(n)), then recursively paint each inner doll (pay a Ã— T(n/b)). The total depends on how many dolls exist (a) and how much smaller each one gets (b).
 
 #### 1.2.1 Substitution Method
 
@@ -311,40 +311,40 @@ T(n) &\le 2 \cdot c (n/2) \lg (n/2) + n \\
 
 ##### Algorithm Steps for Substitution Method
 
-1. **Guess the form** — based on similar recurrences you've encountered.
-2. **State the inductive hypothesis** — assume T(k) ≤ c·g(k) for all k &lt; n.
-3. **Substitute** — replace T(n/b) with the inductive bound.
-4. **Simplify** — expand algebra until the desired form emerges.
-5. **Choose constants** — pick c and n₀ to make the induction hold.
-6. **Verify the base case** — check that n₀ and c satisfy small values.
+1. **Guess the form** â€” based on similar recurrences you've encountered.
+2. **State the inductive hypothesis** â€” assume T(k) â‰¤ cÂ·g(k) for all k &lt; n.
+3. **Substitute** â€” replace T(n/b) with the inductive bound.
+4. **Simplify** â€” expand algebra until the desired form emerges.
+5. **Choose constants** â€” pick c and nâ‚€ to make the induction hold.
+6. **Verify the base case** â€” check that nâ‚€ and c satisfy small values.
 
-##### Dry Run Trace Table: T(n) = 2T(n/2) + n with guess T(n) ≤ cn lg n
+##### Dry Run Trace Table: T(n) = 2T(n/2) + n with guess T(n) â‰¤ cn lg n
 
 Assume T(1) = 1. Test the guess for increasing n:
 
-| n | 2T(n/2) | + n | = T(n) | cn lg₂n (c = 2) | Valid? |
+| n | 2T(n/2) | + n | = T(n) | cn lgâ‚‚n (c = 2) | Valid? |
 |---|---------|-----|--------|-----------------|--------|
-| 2 | 2·T(1) = 2 | +2 | 4 | 2·2·1 = 4 | Yes |
-| 4 | 2·T(2) = 8 | +4 | 12 | 2·4·2 = 16 | Yes |
-| 8 | 2·T(4) = 24 | +8 | 32 | 2·8·3 = 48 | Yes |
-| 16 | 2·T(8) = 64 | +16 | 80 | 2·16·4 = 128 | Yes |
+| 2 | 2Â·T(1) = 2 | +2 | 4 | 2Â·2Â·1 = 4 | Yes |
+| 4 | 2Â·T(2) = 8 | +4 | 12 | 2Â·4Â·2 = 16 | Yes |
+| 8 | 2Â·T(4) = 24 | +8 | 32 | 2Â·8Â·3 = 48 | Yes |
+| 16 | 2Â·T(8) = 64 | +16 | 80 | 2Â·16Â·4 = 128 | Yes |
 
-For c = 2, the bound holds for all n ≥ 1. The inequality becomes progressively tighter as n grows.
+For c = 2, the bound holds for all n â‰¥ 1. The inequality becomes progressively tighter as n grows.
 
 ##### Advantages & Disadvantages of Substitution Method
 
 | Advantage | Disadvantage |
 |-----------|-------------|
-| Works for any recurrence form | Requires accurate guess — bad guess = wasted effort |
+| Works for any recurrence form | Requires accurate guess â€” bad guess = wasted effort |
 | Yields exact constants, not just order | Becomes algebraically heavy for complex recurrences |
-| Builds deep understanding of induction proofs | Not systematic — no guaranteed procedure |
+| Builds deep understanding of induction proofs | Not systematic â€” no guaranteed procedure |
 
 ##### Edge Cases in Substitution Method
 
-- **Floor/ceiling functions:** Asymptotic analysis usually ignores ⌊n/2⌋ vs. n/2, but rigorous proofs must handle them.
+- **Floor/ceiling functions:** Asymptotic analysis usually ignores âŒŠn/2âŒ‹ vs. n/2, but rigorous proofs must handle them.
 - **Non-integer n:** Recurrences are defined on integers; treat n/2 with floor/ceil.
 - **Unequal subproblems:** T(n) = T(2n/3) + T(n/3) + n needs Akra-Bazzi, not standard substitution.
-- **Tightness verification:** Proving O(·) alone is insufficient; you may also need Ω(·) for a Θ result.
+- **Tightness verification:** Proving O(Â·) alone is insufficient; you may also need Î©(Â·) for a Î˜ result.
 
 #### 1.2.2 Recursion-Tree Method
 
@@ -358,16 +358,16 @@ The recursion-tree method visualizes each recursive call as a node, with the cos
 - Depth: \( \log_4 n \).
 - Total: \( cn^2 \sum_{i=0}^{\log_4 n} (3/16)^i \le cn^2 \cdot \frac{1}{1 - 3/16} = (16/13)cn^2 = O(n^2) \).
 
-##### Dry Run Trace Table: T(n) = 3T(n/4) + cn²
+##### Dry Run Trace Table: T(n) = 3T(n/4) + cnÂ²
 
 | Level i | Nodes | Node Cost | Level Cost | Running Sum |
 |---------|-------|-----------|------------|-------------|
-| 0 | 1 = 3⁰ | c(n/4⁰)² = cn² | cn² | cn² |
-| 1 | 3 = 3¹ | c(n/4¹)² = cn²/16 | (3/16)cn² | (1 + 3/16)cn² |
-| 2 | 9 = 3² | c(n/4²)² = cn²/256 | (9/256)cn² | (1 + 3/16 + 9/256)cn² |
-| 3 | 27 = 3³ | c(n/4³)² = cn²/4096 | (27/4096)cn² | (continued) |
-| … | … | … | … | … |
-| log₄ n | n^{log₄ 3} | c(1)² = c | c·n^{log₄ 3} | Total &lt; (16/13)cn² |
+| 0 | 1 = 3â° | c(n/4â°)Â² = cnÂ² | cnÂ² | cnÂ² |
+| 1 | 3 = 3Â¹ | c(n/4Â¹)Â² = cnÂ²/16 | (3/16)cnÂ² | (1 + 3/16)cnÂ² |
+| 2 | 9 = 3Â² | c(n/4Â²)Â² = cnÂ²/256 | (9/256)cnÂ² | (1 + 3/16 + 9/256)cnÂ² |
+| 3 | 27 = 3Â³ | c(n/4Â³)Â² = cnÂ²/4096 | (27/4096)cnÂ² | (continued) |
+| â€¦ | â€¦ | â€¦ | â€¦ | â€¦ |
+| logâ‚„ n | n^{logâ‚„ 3} | c(1)Â² = c | cÂ·n^{logâ‚„ 3} | Total &lt; (16/13)cnÂ² |
 
 The geometric ratio r = 3/16 &lt; 1, so the series converges. The deepest level contributes negligible cost.
 
@@ -383,7 +383,7 @@ The geometric ratio r = 3/16 &lt; 1, so the series converges. The deepest level 
 
 - **Uneven depth:** In quicksort's worst case, the tree is highly unbalanced; computing level costs is harder.
 - **Non-constant branching:** Algorithms that branch on data values rather than fixed ratios produce irregular trees.
-- **Fractional nodes:** Floor/ceil effects create slightly irregular tree shapes — usually safe to ignore.
+- **Fractional nodes:** Floor/ceil effects create slightly irregular tree shapes â€” usually safe to ignore.
 
 #### 1.2.3 Master Theorem
 
@@ -402,7 +402,7 @@ The geometric ratio r = 3/16 &lt; 1, so the series converges. The deepest level 
 | \( T(n) = 4T(n/2) + n^3 \) | 4 | 2 | 2 | \( n^3 \) | 3 | \( \Theta(n^3) \) |
 | \( T(n) = 4T(n/2) + n^2 \) | 4 | 2 | 2 | \( n^2 \) | 2 | \( \Theta(n^2 \log n) \) |
 
-> **Pro Tip:** When applying the master theorem, first compute log_b a, then compare f(n) to n^{log_b a} — these are the two critical numbers that determine the case.
+> **Pro Tip:** When applying the master theorem, first compute log_b a, then compare f(n) to n^{log_b a} â€” these are the two critical numbers that determine the case.
 >
 > **Warning:** The master theorem only works for recurrences of the exact form T(n) = aT(n/b) + f(n). If the subproblem sizes differ (e.g., T(n) = T(n-1) + n), you must use other methods.
 
@@ -411,23 +411,23 @@ The geometric ratio r = 3/16 &lt; 1, so the series converges. The deepest level 
 ##### Algorithm Steps: How to Apply the Master Theorem
 
 1. **Identify a, b, and f(n)** from the recurrence T(n) = aT(n/b) + f(n).
-2. **Compute ρ = log_b a** — the critical exponent.
-3. **Compare f(n) to n^ρ**:
-   - **Case 1:** f(n) = O(n^{ρ-ε}) for ε > 0 → recursion dominates → T(n) = Θ(n^ρ).
-   - **Case 2:** f(n) = Θ(n^ρ) → equal weight → T(n) = Θ(n^ρ log n).
-   - **Case 3:** f(n) = Ω(n^{ρ+ε}) for ε > 0 AND af(n/b) ≤ cf(n) for c &lt; 1 → divide/combine dominates → T(n) = Θ(f(n)).
-4. **Verify regularity (Case 3 only)** — check af(n/b) ≤ cf(n) holds.
+2. **Compute Ï = log_b a** â€” the critical exponent.
+3. **Compare f(n) to n^Ï**:
+   - **Case 1:** f(n) = O(n^{Ï-Îµ}) for Îµ > 0 â†’ recursion dominates â†’ T(n) = Î˜(n^Ï).
+   - **Case 2:** f(n) = Î˜(n^Ï) â†’ equal weight â†’ T(n) = Î˜(n^Ï log n).
+   - **Case 3:** f(n) = Î©(n^{Ï+Îµ}) for Îµ > 0 AND af(n/b) â‰¤ cf(n) for c &lt; 1 â†’ divide/combine dominates â†’ T(n) = Î˜(f(n)).
+4. **Verify regularity (Case 3 only)** â€” check af(n/b) â‰¤ cf(n) holds.
 
 ##### Dry Run: Comparing f(n) with n^{log_b a}
 
 | Recurrence | a | b | log_b a | f(n) | Compare f(n) to n^{log_b a} | Case | Solution |
 |-----------|---|---|---------|------|---------------------------|------|----------|
-| T(n) = 2T(n/2) + n | 2 | 2 | 1 | n | n = Θ(n¹) → equal | 2 | Θ(n log n) |
-| T(n) = 2T(n/2) + 1 | 2 | 2 | 1 | 1 | 1 = O(n^{1-ε}) → smaller | 1 | Θ(n) |
-| T(n) = 4T(n/2) + n³ | 4 | 2 | 2 | n³ | n³ = Ω(n^{2+ε}) → larger | 3 | Θ(n³) |
-| T(n) = 4T(n/2) + n² | 4 | 2 | 2 | n² | n² = Θ(n²) → equal | 2 | Θ(n² log n) |
-| T(n) = 3T(n/3) + n | 3 | 3 | 1 | n | n = Θ(n¹) → equal | 2 | Θ(n log n) |
-| T(n) = 2T(n/4) + √n | 2 | 4 | 0.5 | √n | √n = Θ(n^{0.5}) → equal | 2 | Θ(√n log n) |
+| T(n) = 2T(n/2) + n | 2 | 2 | 1 | n | n = Î˜(nÂ¹) â†’ equal | 2 | Î˜(n log n) |
+| T(n) = 2T(n/2) + 1 | 2 | 2 | 1 | 1 | 1 = O(n^{1-Îµ}) â†’ smaller | 1 | Î˜(n) |
+| T(n) = 4T(n/2) + nÂ³ | 4 | 2 | 2 | nÂ³ | nÂ³ = Î©(n^{2+Îµ}) â†’ larger | 3 | Î˜(nÂ³) |
+| T(n) = 4T(n/2) + nÂ² | 4 | 2 | 2 | nÂ² | nÂ² = Î˜(nÂ²) â†’ equal | 2 | Î˜(nÂ² log n) |
+| T(n) = 3T(n/3) + n | 3 | 3 | 1 | n | n = Î˜(nÂ¹) â†’ equal | 2 | Î˜(n log n) |
+| T(n) = 2T(n/4) + âˆšn | 2 | 4 | 0.5 | âˆšn | âˆšn = Î˜(n^{0.5}) â†’ equal | 2 | Î˜(âˆšn log n) |
 
 ##### Advantages & Disadvantages of the Master Theorem
 
@@ -436,21 +436,21 @@ The geometric ratio r = 3/16 &lt; 1, so the series converges. The deepest level 
 | Solves common recurrences in seconds | Only works for T(n) = aT(n/b) + f(n) form |
 | No induction or heavy algebra required | Fails when f(n) and n^{log_b a} differ by non-polynomial factor (e.g., log n) |
 | Three clear, memorizable cases | Case 3 requires verifying the regularity condition |
-| Industry standard — used in CLRS and papers | Cannot handle T(n) = T(n-1) + n or other non-divide-and-conquer forms |
+| Industry standard â€” used in CLRS and papers | Cannot handle T(n) = T(n-1) + n or other non-divide-and-conquer forms |
 
 ##### Edge Cases Where the Master Theorem Fails
 
 | Edge Case | Example | Why It Fails | Alternative |
 |-----------|---------|-------------|-------------|
-| Non-polynomial gap | T(n) = 2T(n/2) + n/log n | f(n) differs by log factor, not n^ε | Recursion-tree / substitution |
+| Non-polynomial gap | T(n) = 2T(n/2) + n/log n | f(n) differs by log factor, not n^Îµ | Recursion-tree / substitution |
 | Unbalanced subproblems | T(n) = T(n-1) + n | Sizes don't divide evenly | Iteration method |
 | Different subproblem sizes | T(n) = T(2n/3) + T(n/3) + n | Not of the form aT(n/b) | Akra-Bazzi method |
-| Non-constant a or b | T(n) = √n·T(√n) + n | a depends on n | Substitution |
+| Non-constant a or b | T(n) = âˆšnÂ·T(âˆšn) + n | a depends on n | Substitution |
 | Gap between cases | T(n) = 2T(n/2) + n/lg n | f(n) is polynomially smaller? | Extended master theorem |
 
 #### Code Implementations: Merge Sort (Divide and Conquer)
 
-**Merge Sort — O(n log n):**
+**Merge Sort â€” O(n log n):**
 
 <details>
 <summary>C++</summary>
@@ -467,13 +467,13 @@ void merge(vector<int>& arr, int l, int m, int r) {
 }
 
 void mergeSort(vector<int>& arr, int l, int r) {
-    if (l >= r) return;                     // O(1) — base case
+    if (l >= r) return;                     // O(1) â€” base case
     int m = l + (r - l) / 2;
     mergeSort(arr, l, m);                    // T(n/2)
     mergeSort(arr, m + 1, r);                // T(n/2)
     merge(arr, l, m, r);                     // O(n)
 }
-// Recurrence: T(n) = 2T(n/2) + n → Θ(n log n)
+// Recurrence: T(n) = 2T(n/2) + n â†’ Î˜(n log n)
 ```
 
 </details>
@@ -483,12 +483,12 @@ void mergeSort(vector<int>& arr, int l, int r) {
 
 ```python
 def merge_sort(arr):
-    if len(arr) <= 1:                       # O(1) — base case
+    if len(arr) <= 1:                       # O(1) â€” base case
         return arr
     mid = len(arr) // 2
     left = merge_sort(arr[:mid])             # T(n/2)
     right = merge_sort(arr[mid:])            # T(n/2)
-    # Merge — O(n)
+    # Merge â€” O(n)
     result = []
     i = j = 0
     while i < len(left) and j < len(right):
@@ -497,7 +497,7 @@ def merge_sort(arr):
         else:
             result.append(right[j]); j += 1
     return result + left[i:] + right[j:]
-# Recurrence: T(n) = 2T(n/2) + n → Θ(n log n)
+# Recurrence: T(n) = 2T(n/2) + n â†’ Î˜(n log n)
 ```
 
 </details>
@@ -507,7 +507,7 @@ def merge_sort(arr):
 
 ```java
 public static void mergeSort(int[] arr, int l, int r) {
-    if (l >= r) return;                      // O(1) — base case
+    if (l >= r) return;                      // O(1) â€” base case
     int m = l + (r - l) / 2;
     mergeSort(arr, l, m);                     // T(n/2)
     mergeSort(arr, m + 1, r);                 // T(n/2)
@@ -523,7 +523,7 @@ private static void merge(int[] arr, int l, int m, int r) {
     while (i < L.length) arr[k++] = L[i++];
     while (j < R.length) arr[k++] = R[j++];
 }
-// Recurrence: T(n) = 2T(n/2) + n → Master Theorem Case 2 → Θ(n log n)
+// Recurrence: T(n) = 2T(n/2) + n â†’ Master Theorem Case 2 â†’ Î˜(n log n)
 ```
 
 </details>
@@ -541,7 +541,7 @@ private static void merge(int[] arr, int l, int m, int r) {
 
 Amortized analysis gives the average performance of each operation in the worst case over a sequence of operations. Three methods exist.
 
-> **Real-World Analogy (Netflix Subscription):** A Netflix subscription costs $15/month regardless of how many movies you watch. Watch 1 movie → cost is $15. Watch 30 movies → amortized cost is $0.50/movie. Renting individually costs $5/movie — cheaper for 1 movie but far more expensive for 30. A dynamic array is the same: occasional O(n) "rental" costs are absorbed into cheap O(1) "subscription" payments.
+> **Real-World Analogy (Netflix Subscription):** A Netflix subscription costs $15/month regardless of how many movies you watch. Watch 1 movie â†’ cost is $15. Watch 30 movies â†’ amortized cost is $0.50/movie. Renting individually costs $5/movie â€” cheaper for 1 movie but far more expensive for 30. A dynamic array is the same: occasional O(n) "rental" costs are absorbed into cheap O(1) "subscription" payments.
 
 #### 1.3.1 Aggregate Method
 
@@ -575,7 +575,7 @@ where \( c \) is the actual cost and \( D_i \) is the state after the \( i \)-th
 
 > **Pro Tip:** The potential method is the most powerful amortized technique because a well-chosen potential function can handle complex data structures where aggregate and accounting become unwieldy.
 >
-> **Remember:** Amortized analysis is not the same as average-case analysis — amortized guarantees hold for *every* sequence of operations, not just on average.
+> **Remember:** Amortized analysis is not the same as average-case analysis â€” amortized guarantees hold for *every* sequence of operations, not just on average.
 
 **One-Sentence Takeaway:** Amortized analysis reveals that data structures with occasional expensive operations can still guarantee constant average cost per operation across any sequence.
 
@@ -583,18 +583,18 @@ where \( c \) is the actual cost and \( D_i \) is the state after the \( i \)-th
 
 **Aggregate Method:**
 1. Trace the sequence of m operations.
-2. Sum all actual costs: total = Σc_i.
+2. Sum all actual costs: total = Î£c_i.
 3. Divide by m: amortized cost = total / m.
 
 **Accounting Method:**
-1. Assign an amortized cost (≥ actual) to each operation type.
-2. Track the credit balance: credit_i = Σ(amortized_j − actual_j) for j ≤ i.
+1. Assign an amortized cost (â‰¥ actual) to each operation type.
+2. Track the credit balance: credit_i = Î£(amortized_j âˆ’ actual_j) for j â‰¤ i.
 3. Prove credit never goes negative.
 
 **Potential Method:**
-1. Define Φ(D_i) — a non-negative potential function on the data structure state.
-2. Compute amortized cost: â = actual + Φ(D_i) − Φ(D_{i-1}).
-3. Show Φ(D_0) = 0 and Φ(D_i) ≥ 0 for all i.
+1. Define Î¦(D_i) â€” a non-negative potential function on the data structure state.
+2. Compute amortized cost: Ã¢ = actual + Î¦(D_i) âˆ’ Î¦(D_{i-1}).
+3. Show Î¦(D_0) = 0 and Î¦(D_i) â‰¥ 0 for all i.
 
 #### Dry Run: Dynamic Array Insertions (Aggregate Method)
 
@@ -627,7 +627,7 @@ int main() {
     for (int i = 0; i < 1'000'000; i++) {
         v.push_back(i);                     // amortized O(1)
         // When capacity exhausted, vector doubles its buffer
-        // and copies all existing elements — O(n) but rare
+        // and copies all existing elements â€” O(n) but rare
     }
     // Total cost across all push_backs: O(n)
     // Amortized per push_back: O(1)
@@ -643,7 +643,7 @@ int main() {
 arr = []                                    # dynamic array
 for i in range(1_000_000):
     arr.append(i)                           # amortized O(1)
-# Python's list uses geometric growth (~1.125×)
+# Python's list uses geometric growth (~1.125Ã—)
 # Overall: O(n) total, O(1) amortized per append
 ```
 
@@ -660,7 +660,7 @@ public class DynamicArrayDemo {
         ArrayList<Integer> list = new ArrayList<>();
         for (int i = 0; i < 1_000_000; i++) {
             list.add(i);                    // amortized O(1)
-        }                                   // ArrayList grows by 50% (1.5×)
+        }                                   // ArrayList grows by 50% (1.5Ã—)
     }
 }
 ```
@@ -680,10 +680,10 @@ public class DynamicArrayDemo {
 
 | Edge Case | Example | Explanation |
 |-----------|---------|-------------|
-| **Shrink as well as grow** | Dynamic array shrink on delete | Simple doubling fails; use halving at ¼ capacity |
+| **Shrink as well as grow** | Dynamic array shrink on delete | Simple doubling fails; use halving at Â¼ capacity |
 | **Non-geometric growth** | Fibonacci heap | More complex potential functions required |
 | **Concurrent operations** | Lock contention | Standard analysis assumes sequential execution |
-| **Real-time constraints** | Audio / video processing | O(1) amortized ≠ O(1) per op; individual ops may be slow |
+| **Real-time constraints** | Audio / video processing | O(1) amortized â‰  O(1) per op; individual ops may be slow |
 | **Shrink-resistant structures** | Hash table with deletions | Frequent insert/delete cycles can break amortized bounds |
 
 ---
@@ -714,24 +714,24 @@ Solve \( T(n) = T(\sqrt{n}) + O(\log \log n) \) using substitution.
 
 ## Interview Corner
 
-Algorithm analysis is the most frequently tested topic in technical interviews — every solution requires complexity analysis.
+Algorithm analysis is the most frequently tested topic in technical interviews â€” every solution requires complexity analysis.
 
 ### Top 10 Interview Questions
 
-1. **What is the difference between O, Ω, and Θ?**
-   *O = upper bound, Ω = lower bound, Θ = tight bound (both upper and lower).*
+1. **What is the difference between O, Î©, and Î˜?**
+   *O = upper bound, Î© = lower bound, Î˜ = tight bound (both upper and lower).*
 
 2. **Solve T(n) = 2T(n/2) + n using the master theorem.**
-   *a=2, b=2, log_b a=1, f(n)=n=n¹ → Case 2 → Θ(n log n).*
+   *a=2, b=2, log_b a=1, f(n)=n=nÂ¹ â†’ Case 2 â†’ Î˜(n log n).*
 
 3. **What is the amortized cost of n insertions into a dynamic array?**
-   *O(1) amortized — total = 3n, divided by n = O(1).*
+   *O(1) amortized â€” total = 3n, divided by n = O(1).*
 
-4. **Prove that 2ⁿ⁺¹ = O(2ⁿ).**
-   *2ⁿ⁺¹ = 2·2ⁿ ≤ c·2ⁿ for c = 2, n₀ = 1.*
+4. **Prove that 2â¿âºÂ¹ = O(2â¿).**
+   *2â¿âºÂ¹ = 2Â·2â¿ â‰¤ cÂ·2â¿ for c = 2, nâ‚€ = 1.*
 
-5. **Is n² = Ω(n log n)? Is n² = ω(n log n)?**
-   *Yes to both: n²/(n log n) → ∞, so n² = ω(n log n) ⊆ Ω(n log n).*
+5. **Is nÂ² = Î©(n log n)? Is nÂ² = Ï‰(n log n)?**
+   *Yes to both: nÂ²/(n log n) â†’ âˆž, so nÂ² = Ï‰(n log n) âŠ† Î©(n log n).*
 
 6. **When does the master theorem fail?**
    *When f(n) and n^{log_b a} differ by a non-polynomial factor, or when the recurrence is not of the form T(n) = aT(n/b) + f(n).*
@@ -743,23 +743,23 @@ Algorithm analysis is the most frequently tested topic in technical interviews �
    *Use a pair of stacks or a finger structure; prove the bound via the accounting method.*
 
 9. **Why do we ignore constants in asymptotic analysis?**
-   *As n → ∞, constants become negligible compared to the growth rate. They matter for profiling but not for scalability classification.*
+   *As n â†’ âˆž, constants become negligible compared to the growth rate. They matter for profiling but not for scalability classification.*
 
 10. **What is the regularity condition in Master Theorem Case 3?**
-    *af(n/b) ≤ cf(n) for some c &lt; 1 — ensures cost decreases down the recursion tree.*
+    *af(n/b) â‰¤ cf(n) for some c &lt; 1 â€” ensures cost decreases down the recursion tree.*
 
 ### Common Pitfalls Table
 
 | Pitfall | Why It's Wrong | Right Approach |
 |---------|---------------|----------------|
-| Writing "O(n) = O(n²)" | Big-O is a set relation, not equality | Write "f(n) = O(n²)" meaning f ∈ O(n²) |
-| Applying master theorem to T(n) = T(n-1) + n | Subproblem must divide, not decrement | Use iteration: T(n) = Σ(i) = Θ(n²) |
+| Writing "O(n) = O(nÂ²)" | Big-O is a set relation, not equality | Write "f(n) = O(nÂ²)" meaning f âˆˆ O(nÂ²) |
+| Applying master theorem to T(n) = T(n-1) + n | Subproblem must divide, not decrement | Use iteration: T(n) = Î£(i) = Î˜(nÂ²) |
 | Confusing amortized with average-case | Amortized = worst-case bound over any sequence | Both have different mathematical guarantees |
 | Ignoring constants for small n | Constants dominate for n &lt; 100 | Profile and benchmark when n is small |
-| Claiming binary search is O(n) | It halves each step → log₂ n iterations | Each comparison eliminates half the array |
-| Forgetting regularity in Master Case 3 | Without it, the series may not converge | Always verify af(n/b) ≤ cf(n) |
+| Claiming binary search is O(n) | It halves each step â†’ logâ‚‚ n iterations | Each comparison eliminates half the array |
+| Forgetting regularity in Master Case 3 | Without it, the series may not converge | Always verify af(n/b) â‰¤ cf(n) |
 | Wrong log base in Master Theorem | Case 2 requires exact polynomial comparison | log_b a is the only exponent that matters |
-| Using Big-O when Θ is needed | O says "at most" but doesn't guarantee tightness | Prefer Θ when you know the exact bound |
+| Using Big-O when Î˜ is needed | O says "at most" but doesn't guarantee tightness | Prefer Î˜ when you know the exact bound |
 
 ## Applications in Real Systems
 
@@ -767,15 +767,15 @@ Algorithm analysis is the most frequently tested topic in technical interviews �
 |-------------------|----------------|---------------|
 | **Google Search** | Big-O, recursion-tree | PageRank converges in O(log n) iterations; indexing requires O(n) crawl pass |
 | **PostgreSQL / MySQL** | Amortized analysis | B-tree node splits are amortized O(1); buffer pool management uses potential method |
-| **Python list** | Amortized O(1) append | Geometric growth (~1.125×); append is O(1) amortized, O(n) worst-case |
-| **Java ArrayList** | Amortized analysis | Grows 50% (1.5×) when full; add() is O(1) amortized |
+| **Python list** | Amortized O(1) append | Geometric growth (~1.125Ã—); append is O(1) amortized, O(n) worst-case |
+| **Java ArrayList** | Amortized analysis | Grows 50% (1.5Ã—) when full; add() is O(1) amortized |
 | **Redis** | Big-O documentation | Every command documents Big-O complexity (e.g., ZADD = O(log n)) |
-| **Linux CFS scheduler** | O(log n) | Red-black tree for task management — O(log n) enqueue/dequeue |
+| **Linux CFS scheduler** | O(log n) | Red-black tree for task management â€” O(log n) enqueue/dequeue |
 | **Uber / Google Maps** | O((V+E) log V) | Dijkstra's shortest path on road networks |
 | **Apache Kafka** | O(1) sequential I/O | Log-structured storage appends in O(1); index lookups in O(log n) |
-| **TensorFlow / PyTorch** | O(n³) complexity | Matrix multiplication limits model scaling; motivates sparse methods |
+| **TensorFlow / PyTorch** | O(nÂ³) complexity | Matrix multiplication limits model scaling; motivates sparse methods |
 | **Git** | O(log n) graph ops | Merge-base computation in O(log n) via binary search on DAG |
-| **MongoDB** | O(log n) queries | Default B-tree index on _id — all indexed lookups are O(log n) |
+| **MongoDB** | O(log n) queries | Default B-tree index on _id â€” all indexed lookups are O(log n) |
 | **Elasticsearch** | O(log n) + scoring | Inverted index lookup O(1) per term; TF-IDF scoring O(k) per document |
 | **AWS DynamoDB** | O(1) amortized | Consistent hash ring; partition splits are amortized O(1) |
 | **Facebook News Feed** | O(n log n) ranking | EdgeRank / ML ranking sorts billions of candidate posts per user |
@@ -795,10 +795,10 @@ Algorithm analysis is the most frequently tested topic in technical interviews �
 
 | Category | Key Points |
 |----------|------------|
-| **Notation** | O = upper bound, Ω = lower bound, Θ = tight bound, o = strict upper, ω = strict lower |
-| **Growth Rates** | 1 &lt; log n < n < n log n < n² < 2ⁿ < n! — memorize this ordering |
-| **Master Theorem** | Case 1: f(n) &lt; n^{log_b a} → Θ(n^{log_b a}); Case 2: f(n) = n^{log_b a} → Θ(n^{log_b a} log n); Case 3: f(n) &gt; n^{log_b a} → Θ(f(n)) |
-| **Amortized Methods** | Aggregate: total ÷ n; Accounting: prepay credit; Potential: energy function |
+| **Notation** | O = upper bound, Î© = lower bound, Î˜ = tight bound, o = strict upper, Ï‰ = strict lower |
+| **Growth Rates** | 1 &lt; log n < n < n log n < nÂ² < 2â¿ < n! â€” memorize this ordering |
+| **Master Theorem** | Case 1: f(n) &lt; n^{log_b a} â†’ Î˜(n^{log_b a}); Case 2: f(n) = n^{log_b a} â†’ Î˜(n^{log_b a} log n); Case 3: f(n) &gt; n^{log_b a} â†’ Î˜(f(n)) |
+| **Amortized Methods** | Aggregate: total Ã· n; Accounting: prepay credit; Potential: energy function |
 | **Common Pitfalls** | Forget the regularity condition in Master Case 3; Use master theorem on unbalanced recurrences |
 
 ### Cross-Application Matrix
@@ -834,19 +834,19 @@ Algorithm analysis is the most frequently tested topic in technical interviews �
 
 <details>
 <summary>Answer&lt;/summary&gt;
-C) Big-Theta — it requires both an upper and lower bound match.
+C) Big-Theta â€” it requires both an upper and lower bound match.
 </details>
 
 **Q2.** Solve T(n) = 2T(n/4) + n^{0.5} using the master theorem.
 
-- A) Θ(n)
-- B) Θ(√n log n)
-- C) Θ(√n)
-- D) Θ(log n)
+- A) Î˜(n)
+- B) Î˜(âˆšn log n)
+- C) Î˜(âˆšn)
+- D) Î˜(log n)
 
 <details>
 <summary>Answer&lt;/summary&gt;
-C) Θ(√n). Here a=2, b=4, log_b a = 0.5, f(n) = n^{0.5} = n^{log_b a}. This is Case 2, so T(n) = Θ(n^{0.5} log n)... Wait — f(n) = √n = n^{1/2}, and log_b a = log_4 2 = 1/2. They match, so Case 2 gives Θ(√n log n). The correct answer is B.
+C) Î˜(âˆšn). Here a=2, b=4, log_b a = 0.5, f(n) = n^{0.5} = n^{log_b a}. This is Case 2, so T(n) = Î˜(n^{0.5} log n)... Wait â€” f(n) = âˆšn = n^{1/2}, and log_b a = log_4 2 = 1/2. They match, so Case 2 gives Î˜(âˆšn log n). The correct answer is B.
 </details>
 
 **Q3.** A dynamic array that doubles when full has what amortized insertion cost?
@@ -854,7 +854,7 @@ C) Θ(√n). Here a=2, b=4, log_b a = 0.5, f(n) = n^{0.5} = n^{log_b a}. This is
 - A) O(n)
 - B) O(log n)
 - C) O(1)
-- D) O(n²)
+- D) O(nÂ²)
 
 <details>
 <summary>Answer&lt;/summary&gt;

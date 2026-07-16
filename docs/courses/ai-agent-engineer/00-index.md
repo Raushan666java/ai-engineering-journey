@@ -1,21 +1,21 @@
-# Laravel Backend Developer → AI Agent Engineer
+﻿# Laravel Backend Developer â†’ AI Agent Engineer
 
-> **Prerequisite:** [Modern AI Engineering](../modern-ai-engineering/index.md) — Covers Genkit, LangGraph, LlamaIndex, MCP, and production AI deployment. Complete that first for foundational AI engineering skills before diving into this agent-focused curriculum.
+> **Prerequisite:** [Modern AI Engineering](../modern-ai-engineering/index.md) â€” Covers Genkit, LangGraph, LlamaIndex, MCP, and production AI deployment. Complete that first for foundational AI engineering skills before diving into this agent-focused curriculum.
 
 
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/ai-agent-engineer/00-index/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/ai-agent-engineer/00-index/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-agent-engineer/00-index/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/ai-agent-engineer/00-index/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/ai-agent-engineer/00-index/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/ai-agent-engineer/00-index/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-agent-engineer/00-index/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/ai-agent-engineer/00-index/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/ai-agent-engineer/00-index/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/ai-agent-engineer/00-index/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-agent-engineer/00-index/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/ai-agent-engineer/00-index/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -23,7 +23,7 @@
 
 ## Course Overview
 
-A 12-week, 6-phase transition curriculum for experienced Laravel/PHP backend developers who want to pivot into AI Agent Engineering. Builds on your existing production experience — multi-tenant ERPs, payment systems, WhatsApp AI bots, n8n automation, Docker, Redis — and fills the gaps in Python async, LLM fundamentals, RAG theory, LangGraph orchestration, MCP protocol, and production hardening for AI workloads.
+A 12-week, 6-phase transition curriculum for experienced Laravel/PHP backend developers who want to pivot into AI Agent Engineering. Builds on your existing production experience â€” multi-tenant ERPs, payment systems, WhatsApp AI bots, n8n automation, Docker, Redis â€” and fills the gaps in Python async, LLM fundamentals, RAG theory, LangGraph orchestration, MCP protocol, and production hardening for AI workloads.
 
 By the end of this course, you will have three production-grade portfolio projects, a rewritten professional profile, and a repeatable job-search system targeting AI Agent Engineer roles in Dubai, remote globally, and freelance on Upwork.
 
@@ -75,23 +75,23 @@ By the end of this course, you will have three production-grade portfolio projec
 
 Upon completion of this course, you will be able to:
 
-1. **Ship production Python/FastAPI** — Type-hinted, async, Pydantic-validated APIs with Alembic migrations and pytest coverage.
-2. **Build and defend a RAG pipeline** — From chunking strategy through embedding, vector search, re-ranking, and guardrails. You can explain every design decision in a technical interview.
-3. **Orchestrate AI agents with LangGraph** — State machines with conditional routing, persistence, human-in-the-loop, and multi-agent crews.
-4. **Implement MCP (Model Context Protocol)** — Build an MCP server with tools, resources, and prompts; connect it to any MCP-compatible client.
-5. **Production-harden AI workloads** — Cost controls, rate limiting, observability, load testing, and containerized deployment with CI/CD.
-6. **Position yourself as an AI Agent Engineer** — Optimized LinkedIn, Upwork, and portfolio that gets you interviews and freelance projects.
+1. **Ship production Python/FastAPI** â€” Type-hinted, async, Pydantic-validated APIs with Alembic migrations and pytest coverage.
+2. **Build and defend a RAG pipeline** â€” From chunking strategy through embedding, vector search, re-ranking, and guardrails. You can explain every design decision in a technical interview.
+3. **Orchestrate AI agents with LangGraph** â€” State machines with conditional routing, persistence, human-in-the-loop, and multi-agent crews.
+4. **Implement MCP (Model Context Protocol)** â€” Build an MCP server with tools, resources, and prompts; connect it to any MCP-compatible client.
+5. **Production-harden AI workloads** â€” Cost controls, rate limiting, observability, load testing, and containerized deployment with CI/CD.
+6. **Position yourself as an AI Agent Engineer** â€” Optimized LinkedIn, Upwork, and portfolio that gets you interviews and freelance projects.
 
 ---
 
 ## Advanced Chapters (Beyond the 12-Week Course)
 
-The following chapters cover advanced production AI topics. These are standalone references — study them in any order as needed for your projects or interview prep.
+The following chapters cover advanced production AI topics. These are standalone references â€” study them in any order as needed for your projects or interview prep.
 
-### Chapter 09 — AI System Design
+### Chapter 09 â€” AI System Design
 
 
-**Goal:** Design production AI architectures that scale — RAG at 10K QPS, multi-region agents, cost-optimized model tiering.
+**Goal:** Design production AI architectures that scale â€” RAG at 10K QPS, multi-region agents, cost-optimized model tiering.
 
 **Topics:** RAG architecture patterns (naive, multi-hop, agentic), 3-tier caching (semantic + response + KV cache), cost optimization (model tiering, prompt compression, batching), latency profiling (TTFT, TPOT, end-to-end), scaling strategies (horizontal, vertical, partitioning), multi-region deployment, agent infrastructure patterns, ingestion pipelines, AI gateway design, system design interview prep for AI roles.
 
@@ -99,10 +99,10 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ---
 
-### Chapter 10 — Prompt Engineering Mastery
+### Chapter 10 â€” Prompt Engineering Mastery
 
 
-**Goal:** Move beyond basic prompts — master chain-of-thought, structured output, prompt management, and production evaluation.
+**Goal:** Move beyond basic prompts â€” master chain-of-thought, structured output, prompt management, and production evaluation.
 
 **Topics:** CoT/ToT/self-consistency, structured output (JSON mode, tool calling, constrained decoding), prompt management and versioning, few-shot optimization, system prompt design, multi-turn conversation patterns, prompt compression, evaluation frameworks (BLEU, ROUGE, METEOR, BERTScore, LLM-as-judge), A/B testing, injection defense strategies.
 
@@ -110,10 +110,10 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ---
 
-### Chapter 11 — AI Testing & Evaluation
+### Chapter 11 â€” AI Testing & Evaluation
 
 
-**Goal:** Build a robust evaluation pipeline for AI systems — unit tests for agents, integration tests for RAG, LLM-as-judge, and CI/CD integration.
+**Goal:** Build a robust evaluation pipeline for AI systems â€” unit tests for agents, integration tests for RAG, LLM-as-judge, and CI/CD integration.
 
 **Topics:** Unit testing for agents (tool call assertions, state transitions), integration testing for RAG (chunk quality, retrieval relevance), LLM-as-judge (rubric design, calibration, bias mitigation), trajectory evaluation, hallucination detection, eval datasets (construction, curation, versioning), CI/CD eval gates, quality metrics dashboards, A/B model testing.
 
@@ -121,10 +121,10 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ---
 
-### Chapter 12 — AI Observability & Debugging
+### Chapter 12 â€” AI Observability & Debugging
 
 
-**Goal:** See inside your AI system — trace every LLM call, track costs, detect drift, and debug agent failures systematically.
+**Goal:** See inside your AI system â€” trace every LLM call, track costs, detect drift, and debug agent failures systematically.
 
 **Topics:** Custom tracing (OpenTelemetry spans per agent step), LangSmith integration, OpenTelemetry GenAI conventions, token tracking and cost attribution, latency profiling (per-tool, per-LLM-call), quality monitoring (hallucination rate, retrieval relevance), structured agent logging (JSON, correlation IDs, log levels), anomaly detection and alerting, debugging agent failures (stuck loops, tool errors, context overflow), drift detection (embedding drift, response distribution shift).
 
@@ -132,10 +132,10 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ---
 
-### Chapter 13 — Advanced Vector Search
+### Chapter 13 â€” Advanced Vector Search
 
 
-**Goal:** Go beyond basic cosine similarity — hybrid search, multi-vector retrieval, quantized indexes, and multi-modal RAG.
+**Goal:** Go beyond basic cosine similarity â€” hybrid search, multi-vector retrieval, quantized indexes, and multi-modal RAG.
 
 **Topics:** Hybrid search (BM25 + dense + sparse embeddings + RRF), multi-vector retrieval (ColBERT-style late interaction), HyDE and query expansion, cross-encoder reranking, HNSW tuning (M, efConstruction, efSearch), metadata filtering (pre-filtering vs post-filtering), quantization (PQ + SQ + binary), multi-modal RAG (text + image + table), graph RAG (entity extraction + relationship graph), streaming ingestion, vector DB comparison and migration strategies.
 
@@ -148,28 +148,28 @@ The following chapters cover advanced production AI topics. These are standalone
 
 | Chapter | When to Study | Prerequisites |
 |---------|--------------|-------------|
-| 09 — System Design | Before AI system design interviews | Phase 2 (RAG) + Phase 4 (hardening) |
-| 10 — Prompt Engineering | Ongoing, reference during all phases | Phase 2 (prompt basics) |
-| 11 — Testing & Evaluation | Before production deployment | Phase 4 (testing basics) |
-| 12 — Observability | During Phase 4 hardening | Phase 4 (logging + metrics) |
-| 13 — Advanced Vector Search | When optimizing RAG quality | Phase 2 (vector search basics) |
+| 09 â€” System Design | Before AI system design interviews | Phase 2 (RAG) + Phase 4 (hardening) |
+| 10 â€” Prompt Engineering | Ongoing, reference during all phases | Phase 2 (prompt basics) |
+| 11 â€” Testing & Evaluation | Before production deployment | Phase 4 (testing basics) |
+| 12 â€” Observability | During Phase 4 hardening | Phase 4 (logging + metrics) |
+| 13 â€” Advanced Vector Search | When optimizing RAG quality | Phase 2 (vector search basics) |
 
 ---
 
-## Phase 0 — Backend Gap-Fill (Week 1, ~16 hours)
+## Phase 0 â€” Backend Gap-Fill (Week 1, ~16 hours)
 
-### Phase 0 — Backend Gap-Fill (Week 1, ~16 hours)
+### Phase 0 â€” Backend Gap-Fill (Week 1, ~16 hours)
 
 
-**Goal:** Fill the gaps between your Laravel knowledge and what AI engineering expects from Python backends. No project code — pure concepts and exercises.
+**Goal:** Fill the gaps between your Laravel knowledge and what AI engineering expects from Python backends. No project code â€” pure concepts and exercises.
 
 **Topics:**
-- Redis beyond cache — queues, pub/sub, rate limiter data structures (token bucket, sliding window, leaky bucket)
-- Async first principles — event loop analogy to Node.js, coroutines vs threads, when async helps and when it doesn't
-- REST API design patterns — versioning strategies (URL path, header, query param), pagination, error envelope format
-- API authentication — API key rotation, JWT refresh token rotation, scoped access tokens
-- WebSocket basics — connection lifecycle, message framing, reconnection strategies
-- Idempotency keys — why they matter for payment/booking systems, key generation, expiry, idempotency response caching
+- Redis beyond cache â€” queues, pub/sub, rate limiter data structures (token bucket, sliding window, leaky bucket)
+- Async first principles â€” event loop analogy to Node.js, coroutines vs threads, when async helps and when it doesn't
+- REST API design patterns â€” versioning strategies (URL path, header, query param), pagination, error envelope format
+- API authentication â€” API key rotation, JWT refresh token rotation, scoped access tokens
+- WebSocket basics â€” connection lifecycle, message framing, reconnection strategies
+- Idempotency keys â€” why they matter for payment/booking systems, key generation, expiry, idempotency response caching
 - Rate limiting at proxy vs application layer
 
 **Key takeaway:** You can explain async, rate limiting, idempotency, and WebSocket patterns in Python terms before writing a single FastAPI route.
@@ -178,28 +178,28 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ---
 
-### Phase 1 — Python + FastAPI + AsyncIO (Weeks 2-3, ~30 hours)
+### Phase 1 â€” Python + FastAPI + AsyncIO (Weeks 2-3, ~30 hours)
 
 
 **Goal:** Write production Python with type hints, build FastAPI endpoints with proper dependency injection and validation, understand asyncIO well enough to explain it in an interview.
 
 **Topics:**
-- Python type hints — `Optional`, `Union`, generics, `TypeVar`, `Protocol` for duck typing
-- Dataclasses vs Pydantic models — when to use each, Pydantic v2 validators, `model_validator`, `field_validator`
-- Context managers — custom `__enter__`/`__exit__`, `contextlib.contextmanager`, database connection lifecycle
+- Python type hints â€” `Optional`, `Union`, generics, `TypeVar`, `Protocol` for duck typing
+- Dataclasses vs Pydantic models â€” when to use each, Pydantic v2 validators, `model_validator`, `field_validator`
+- Context managers â€” custom `__enter__`/`__exit__`, `contextlib.contextmanager`, database connection lifecycle
 - List/dict comprehensions, generator expressions, and when the readable alternative is better
-- Custom decorators — `@retry(times=3, delay=1)`, `@timed`, decorators with arguments
-- FastAPI path/query/body parameter validation — `Query(min_length=3)`, `Path(gt=0)`, nested body models
-- Dependency injection with `Depends` — DB sessions, `get_current_user`, reusable dependencies
-- FastAPI middleware — request timing, CORS, request ID injection, error handling middleware
-- Background tasks vs Celery — why `BackgroundTasks` aren't durable, when to reach for a real queue
-- Pydantic v2 deep-dive — `BaseModel`, `Field`, custom validators, model serialization, `model_dump`
-- Pydantic settings — typed `.env` loading instead of scattered `os.environ` calls
-- AsyncIO fundamentals — event loop, coroutines, tasks, `asyncio.gather` vs `asyncio.create_task`
-- `httpx.AsyncClient` — concurrent outbound API calls, connection pooling, timeout management
-- Async pitfalls — mixing sync and async, blocking the event loop, `requests` in async endpoints
-- pytest for FastAPI — `TestClient`, fixtures, dependency overrides, mocking external services
-- Alembic migrations — autogenerate, upgrade/downgrade, merge branches
+- Custom decorators â€” `@retry(times=3, delay=1)`, `@timed`, decorators with arguments
+- FastAPI path/query/body parameter validation â€” `Query(min_length=3)`, `Path(gt=0)`, nested body models
+- Dependency injection with `Depends` â€” DB sessions, `get_current_user`, reusable dependencies
+- FastAPI middleware â€” request timing, CORS, request ID injection, error handling middleware
+- Background tasks vs Celery â€” why `BackgroundTasks` aren't durable, when to reach for a real queue
+- Pydantic v2 deep-dive â€” `BaseModel`, `Field`, custom validators, model serialization, `model_dump`
+- Pydantic settings â€” typed `.env` loading instead of scattered `os.environ` calls
+- AsyncIO fundamentals â€” event loop, coroutines, tasks, `asyncio.gather` vs `asyncio.create_task`
+- `httpx.AsyncClient` â€” concurrent outbound API calls, connection pooling, timeout management
+- Async pitfalls â€” mixing sync and async, blocking the event loop, `requests` in async endpoints
+- pytest for FastAPI â€” `TestClient`, fixtures, dependency overrides, mocking external services
+- Alembic migrations â€” autogenerate, upgrade/downgrade, merge branches
 
 **Project:** Port your real estate booking module from Laravel to FastAPI with the same business logic but fully async, Pydantic-validated, and Alembic-migrated.
 
@@ -207,98 +207,98 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ---
 
-### Phase 2 — LLM Fundamentals + RAG Theory (Weeks 4-5, ~25 hours)
+### Phase 2 â€” LLM Fundamentals + RAG Theory (Weeks 4-5, ~25 hours)
 
 
 **Goal:** Understand embeddings, vector search, chunking strategies, and RAG architecture well enough to defend every design decision in a technical interview. Build a public RAG demo API.
 
 **Topics:**
-- Tokens and tokenization — BPE algorithm, `tiktoken`, estimating token counts, why token count drives cost
-- Context window mechanics — why multi-turn chat resends the whole history, KV cache, attention complexity
-- Embeddings — what a vector represents geometrically, cosine similarity intuition, embedding dimensionality cost/quality tradeoff (text-embedding-3-small vs large: 512 vs 1536 vs 3072 dims)
-- Prompt engineering — zero-shot, few-shot (with worked examples), chain-of-thought, system prompt structuring
-- Structured output / function calling — tool-call schemas for OpenAI and Anthropic, response format enforcement
-- Vector search math — dot product vs cosine vs L2, why cosine wins for text embeddings, normalization
-- ANN indexes — HNSW algorithm, search speed vs accuracy tradeoff, index parameters (M, efConstruction, efSearch)
-- RAG architecture end-to-end — ingestion pipeline, retrieval pipeline, generation pipeline, every component labeled
-- Chunking strategies — fixed-size, recursive split, semantic split, document-aware chunking; failure modes of naive chunking (context loss, irrelevant retrieval)
-- Retrieval ranking + re-ranking — bi-encoder vs cross-encoder, why re-rankers improve results even with good initial retrieval, Cohere Rerank API
-- Vector DB comparison — ChromaDB vs Qdrant vs pgvector vs Pinecone: honest tradeoffs (setup complexity, scalability, cost, feature set)
-- Hallucination in RAG — causes (irrelevant retrieval, missing context, model overconfidence), mitigation strategies
-- Fine-tuning — LoRA, QLoRA, full fine-tuning; when fine-tuning beats RAG and vice versa; what each approach costs
-- Model evaluation — eval harnesses, LLM-as-judge, comparing GPT-4o vs Claude 3.5 Sonnet vs local models (Llama 3, Mistral) on the same test set
-- Guardrails / content moderation — input guardrails (topic filtering, PII detection), output guardrails (factual consistency, tone), OpenAI content filter, custom classifier
+- Tokens and tokenization â€” BPE algorithm, `tiktoken`, estimating token counts, why token count drives cost
+- Context window mechanics â€” why multi-turn chat resends the whole history, KV cache, attention complexity
+- Embeddings â€” what a vector represents geometrically, cosine similarity intuition, embedding dimensionality cost/quality tradeoff (text-embedding-3-small vs large: 512 vs 1536 vs 3072 dims)
+- Prompt engineering â€” zero-shot, few-shot (with worked examples), chain-of-thought, system prompt structuring
+- Structured output / function calling â€” tool-call schemas for OpenAI and Anthropic, response format enforcement
+- Vector search math â€” dot product vs cosine vs L2, why cosine wins for text embeddings, normalization
+- ANN indexes â€” HNSW algorithm, search speed vs accuracy tradeoff, index parameters (M, efConstruction, efSearch)
+- RAG architecture end-to-end â€” ingestion pipeline, retrieval pipeline, generation pipeline, every component labeled
+- Chunking strategies â€” fixed-size, recursive split, semantic split, document-aware chunking; failure modes of naive chunking (context loss, irrelevant retrieval)
+- Retrieval ranking + re-ranking â€” bi-encoder vs cross-encoder, why re-rankers improve results even with good initial retrieval, Cohere Rerank API
+- Vector DB comparison â€” ChromaDB vs Qdrant vs pgvector vs Pinecone: honest tradeoffs (setup complexity, scalability, cost, feature set)
+- Hallucination in RAG â€” causes (irrelevant retrieval, missing context, model overconfidence), mitigation strategies
+- Fine-tuning â€” LoRA, QLoRA, full fine-tuning; when fine-tuning beats RAG and vice versa; what each approach costs
+- Model evaluation â€” eval harnesses, LLM-as-judge, comparing GPT-4o vs Claude 3.5 Sonnet vs local models (Llama 3, Mistral) on the same test set
+- Guardrails / content moderation â€” input guardrails (topic filtering, PII detection), output guardrails (factual consistency, tone), OpenAI content filter, custom classifier
 
-**Project:** A public RAG Memory API — upload documents, query them with cited sources, see chunk boundaries and relevance scores. Deployed behind Cloudflare Tunnel on your VPS.
+**Project:** A public RAG Memory API â€” upload documents, query them with cited sources, see chunk boundaries and relevance scores. Deployed behind Cloudflare Tunnel on your VPS.
 
 **Phase file:** `03-phase2-llm-rag-theory.md` (890 lines)
 
 ---
 
-### Phase 3 — AI Agents: LangGraph, CrewAI, MCP (Weeks 6-8, ~35 hours)
+### Phase 3 â€” AI Agents: LangGraph, CrewAI, MCP (Weeks 6-8, ~35 hours)
 
 
 **Goal:** Build agent state machines with LangGraph, multi-agent crews with CrewAI, and MCP clients that connect LLMs to tools. Rebuild your Purvanchal Flow Studio orchestration layer from n8n to LangGraph.
 
 **Topics:**
-- ReAct pattern — think → act → observe → repeat; why a single LLM call returns text but an agent returns actions
-- Tool calling deep-dive — tool schema design (name, description, parameters JSON Schema), nested object parameters, tool selection heuristics
-- LangGraph: StateGraph — nodes, edges, state schema (`TypedDict` or dataclass), graph compilation, `invoke` vs `astream`
-- Conditional edges — routing based on state fields, `Route` enums, dynamic routing with custom functions
-- LangGraph persistence — checkpointer (`MemorySaver`, `SqliteSaver`, `PostgresSaver`), thread IDs, resuming interrupted graphs
-- Human-in-the-loop — interrupt/resume, `interrupt()` command, approval gates, use cases (transaction confirmation, content review)
-- CrewAI — Agent, Task, Crew, Process; hierarchical vs sequential processes; role-based agent design
-- MCP protocol spec — three primitives: tools (fire-and-forget), resources (stateful reads), prompts (templates); transport: stdio vs SSE
-- Building an MCP client — client handshake, tool discovery, calling tools via the protocol, handling errors
-- Agent memory patterns — short-term (conversation window), long-term (vector store summaries), entity memory (knowledge graph extraction); how to combine them
-- Multi-agent orchestration patterns — supervisor pattern (one agent routes tasks), round-robin (parallel workers), debate pattern (agents critique each other), swarm pattern (dynamic agent spawning)
-- Agent evaluation — scenario-based testing, trajectory evaluation, rubric scoring, cost/latency measurement per run
-- Cost/latency in multi-step agents — estimating per-run cost for a 4-step chain, caching strategies, model tiering (cheap model for simple steps, expensive model for complex reasoning)
-- OpenAI Agents SDK — guardrails, handoffs, built-in tools (file search, code interpreter, web browsing); comparison to LangGraph
-- Advanced MCP server — resources (file system, DB tables, API wrappers), prompts (templated task descriptions), tool composition
+- ReAct pattern â€” think â†’ act â†’ observe â†’ repeat; why a single LLM call returns text but an agent returns actions
+- Tool calling deep-dive â€” tool schema design (name, description, parameters JSON Schema), nested object parameters, tool selection heuristics
+- LangGraph: StateGraph â€” nodes, edges, state schema (`TypedDict` or dataclass), graph compilation, `invoke` vs `astream`
+- Conditional edges â€” routing based on state fields, `Route` enums, dynamic routing with custom functions
+- LangGraph persistence â€” checkpointer (`MemorySaver`, `SqliteSaver`, `PostgresSaver`), thread IDs, resuming interrupted graphs
+- Human-in-the-loop â€” interrupt/resume, `interrupt()` command, approval gates, use cases (transaction confirmation, content review)
+- CrewAI â€” Agent, Task, Crew, Process; hierarchical vs sequential processes; role-based agent design
+- MCP protocol spec â€” three primitives: tools (fire-and-forget), resources (stateful reads), prompts (templates); transport: stdio vs SSE
+- Building an MCP client â€” client handshake, tool discovery, calling tools via the protocol, handling errors
+- Agent memory patterns â€” short-term (conversation window), long-term (vector store summaries), entity memory (knowledge graph extraction); how to combine them
+- Multi-agent orchestration patterns â€” supervisor pattern (one agent routes tasks), round-robin (parallel workers), debate pattern (agents critique each other), swarm pattern (dynamic agent spawning)
+- Agent evaluation â€” scenario-based testing, trajectory evaluation, rubric scoring, cost/latency measurement per run
+- Cost/latency in multi-step agents â€” estimating per-run cost for a 4-step chain, caching strategies, model tiering (cheap model for simple steps, expensive model for complex reasoning)
+- OpenAI Agents SDK â€” guardrails, handoffs, built-in tools (file search, code interpreter, web browsing); comparison to LangGraph
+- Advanced MCP server â€” resources (file system, DB tables, API wrappers), prompts (templated task descriptions), tool composition
 
-**Project:** Purvanchal Flow Studio rebuilt as a LangGraph state machine — agent nodes for web search, document query, data transformation, and report generation. Each node is a tool-calling LLM step. Conditional edges route between them. MCP server exposes the same tools externally.
+**Project:** Purvanchal Flow Studio rebuilt as a LangGraph state machine â€” agent nodes for web search, document query, data transformation, and report generation. Each node is a tool-calling LLM step. Conditional edges route between them. MCP server exposes the same tools externally.
 
 **Phase file:** `04-phase3-agents-langgraph-mcp.md` (1044 lines)
 
 ---
 
-### Phase 4 — Production Hardening (Weeks 9-10, ~24 hours)
+### Phase 4 â€” Production Hardening (Weeks 9-10, ~24 hours)
 
 
-**Goal:** Take both projects (RAG API + LangGraph agent) and make them production-grade — containerized, monitored, load-tested, cost-controlled, and deployed with CI/CD.
+**Goal:** Take both projects (RAG API + LangGraph agent) and make them production-grade â€” containerized, monitored, load-tested, cost-controlled, and deployed with CI/CD.
 
 **Topics:**
-- Docker optimization — multi-stage builds, layer caching, slim base images, Docker Compose for microservice stacking
-- Sqlite vs Postgres persistence — when Sqlite suffices (single-server agents), when you need Postgres (multi-replica, concurrent writes)
-- Message queues — Celery + Redis, task routing, retry with exponential backoff, dead-letter queues, task result backends
-- Structured logging — Python `logging` → JSON logs, log levels, correlation IDs, log aggregation (Loki / ELK / Axiom)
-- Error tracking — Sentry integration for AI-specific errors (token limit exceeded, rate limited, tool call failures, timeout)
-- CI/CD for AI projects — GitHub Actions: lint → test → build → deploy; secrets management; environment-specific configs
-- Load testing — `locust` for async endpoints, simulating concurrent users, measuring p50/p95/p99 latency under load
-- Cost tracking — per-request token accounting, daily cost budgets, model tier fallback (gpt-4o-mini when gpt-4o would be wasteful)
-- Rate limiting for AI APIs — per-user, per-IP, per-token sliding windows; Redis-backed rate limiters; graceful degradation (queue vs reject vs degrade quality)
-- Metrics — Prometheus + Grafana for AI-specific metrics (embedding latency, retrieval latency, hallucination rate, tool success rate)
-- Security — API key rotation, environment injection vs file-based secrets, rate limiting as DoS protection, prompt injection mitigation
+- Docker optimization â€” multi-stage builds, layer caching, slim base images, Docker Compose for microservice stacking
+- Sqlite vs Postgres persistence â€” when Sqlite suffices (single-server agents), when you need Postgres (multi-replica, concurrent writes)
+- Message queues â€” Celery + Redis, task routing, retry with exponential backoff, dead-letter queues, task result backends
+- Structured logging â€” Python `logging` â†’ JSON logs, log levels, correlation IDs, log aggregation (Loki / ELK / Axiom)
+- Error tracking â€” Sentry integration for AI-specific errors (token limit exceeded, rate limited, tool call failures, timeout)
+- CI/CD for AI projects â€” GitHub Actions: lint â†’ test â†’ build â†’ deploy; secrets management; environment-specific configs
+- Load testing â€” `locust` for async endpoints, simulating concurrent users, measuring p50/p95/p99 latency under load
+- Cost tracking â€” per-request token accounting, daily cost budgets, model tier fallback (gpt-4o-mini when gpt-4o would be wasteful)
+- Rate limiting for AI APIs â€” per-user, per-IP, per-token sliding windows; Redis-backed rate limiters; graceful degradation (queue vs reject vs degrade quality)
+- Metrics â€” Prometheus + Grafana for AI-specific metrics (embedding latency, retrieval latency, hallucination rate, tool success rate)
+- Security â€” API key rotation, environment injection vs file-based secrets, rate limiting as DoS protection, prompt injection mitigation
 
 **Phase file:** `05-phase4-production-hardening.md` (511 lines)
 
 ---
 
-### Phase 5 — Portfolio + Market Positioning (Weeks 11-12, ~15 hours)
+### Phase 5 â€” Portfolio + Market Positioning (Weeks 11-12, ~15 hours)
 
 
 **Goal:** Package your projects into something a recruiter understands in 60 seconds. Rewrite profiles. Start applying.
 
 **Topics:**
-- README structure that gets read — 60-second skim design, architecture diagram, key design decisions, tradeoffs considered
-- Demo video (90 seconds) — result-first structure, OBS recording, CapCut/DaVinci editing, unlisted YouTube hosting
-- Upwork profile rewrite — outcome-first overview, skill tags (LangGraph, CrewAI, FastAPI, ChromaDB, pgvector), portfolio links
-- LinkedIn profile rewrite — headline optimization for search, About section keyword placement, skill endorsements
-- Case-study post — one published write-up on LinkedIn or dev.to showing architecture, results, and lessons learned
-- Technical interview prep — explain RAG pipeline (ingestion → retrieval → generation), ReAct loop (think → act → observe), MCP protocol (tools/resources/prompts) from memory without notes
-- Salary negotiation for Dubai market — rate ranges for role types, walk-away number, negotiation script
-- Freelance pricing strategy — rate card for hourly, fixed-price, and retainer engagements; how to estimate project scope
+- README structure that gets read â€” 60-second skim design, architecture diagram, key design decisions, tradeoffs considered
+- Demo video (90 seconds) â€” result-first structure, OBS recording, CapCut/DaVinci editing, unlisted YouTube hosting
+- Upwork profile rewrite â€” outcome-first overview, skill tags (LangGraph, CrewAI, FastAPI, ChromaDB, pgvector), portfolio links
+- LinkedIn profile rewrite â€” headline optimization for search, About section keyword placement, skill endorsements
+- Case-study post â€” one published write-up on LinkedIn or dev.to showing architecture, results, and lessons learned
+- Technical interview prep â€” explain RAG pipeline (ingestion â†’ retrieval â†’ generation), ReAct loop (think â†’ act â†’ observe), MCP protocol (tools/resources/prompts) from memory without notes
+- Salary negotiation for Dubai market â€” rate ranges for role types, walk-away number, negotiation script
+- Freelance pricing strategy â€” rate card for hourly, fixed-price, and retainer engagements; how to estimate project scope
 
 **Phase file:** `06-phase5-portfolio-positioning.md` (299 lines)
 
@@ -306,7 +306,7 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ## Project Portfolio
 
-### Project 1 — Real Estate Booking Module (FastAPI)
+### Project 1 â€” Real Estate Booking Module (FastAPI)
 
 
 | Aspect | Detail |
@@ -317,7 +317,7 @@ The following chapters cover advanced production AI topics. These are standalone
 | **Key design challenges** | Replace Eloquent ORM patterns with async SQLAlchemy, adapt Laravel's pipeline/events to FastAPI middleware + dependency injection |
 | **Deployment** | Docker Compose on VPS behind Cloudflare Tunnel |
 
-### Project 2 — RAG Memory API
+### Project 2 â€” RAG Memory API
 
 
 | Aspect | Detail |
@@ -328,7 +328,7 @@ The following chapters cover advanced production AI topics. These are standalone
 | **Key design challenges** | Chunking strategy selection, embedding model tradeoffs, retrieval quality tuning, relevance scoring |
 | **Deployment** | Docker Compose with ChromaDB sidecar, Redis for caching, rate limiting middleware |
 
-### Project 3 — LangGraph Agent (Purvanchal Rebuild)
+### Project 3 â€” LangGraph Agent (Purvanchal Rebuild)
 
 
 | Aspect | Detail |
@@ -344,18 +344,18 @@ The following chapters cover advanced production AI topics. These are standalone
 
 | Idea | Skills exercised | Complexity |
 |------|-----------------|------------|
-| **AI Customer Support Agent** — LangGraph with ticket triage, knowledge base search, escalation to human | Multi-agent orchestration, human-in-the-loop, context window management | Medium |
-| **Meeting Transcript Analyzer** — Whisper transcription → RAG search → summary + action items | Audio processing, RAG, structured output | Medium |
-| **Personal AI Research Assistant** — Daily paper scraping → embedding → personalized newsletter | Scheduled ingestion, content deduplication, email delivery | Medium |
-| **Multi-Platform Content Repurposer** — Blog → LinkedIn/Twitter/Newsletter adapters with agent pipeline | Prompt chaining, format conversion, tone adaptation | Easy-Medium |
-| **Code Review Agent (MCP)** — MCP server that reviews PRs via configured rules and returns structured feedback | MCP server, tool design, async processing | Hard |
-| **WhatsApp AI Agent** — WhatsApp Webhook → agent pipeline → response via LangGraph | Webhook integration, session management, async worker | Medium-Hard |
+| **AI Customer Support Agent** â€” LangGraph with ticket triage, knowledge base search, escalation to human | Multi-agent orchestration, human-in-the-loop, context window management | Medium |
+| **Meeting Transcript Analyzer** â€” Whisper transcription â†’ RAG search â†’ summary + action items | Audio processing, RAG, structured output | Medium |
+| **Personal AI Research Assistant** â€” Daily paper scraping â†’ embedding â†’ personalized newsletter | Scheduled ingestion, content deduplication, email delivery | Medium |
+| **Multi-Platform Content Repurposer** â€” Blog â†’ LinkedIn/Twitter/Newsletter adapters with agent pipeline | Prompt chaining, format conversion, tone adaptation | Easy-Medium |
+| **Code Review Agent (MCP)** â€” MCP server that reviews PRs via configured rules and returns structured feedback | MCP server, tool design, async processing | Hard |
+| **WhatsApp AI Agent** â€” WhatsApp Webhook â†’ agent pipeline â†’ response via LangGraph | Webhook integration, session management, async worker | Medium-Hard |
 
 ---
 
 ## End-to-End Preparation Roadmap
 
-### Month 1 — Foundation (Weeks 1-4)
+### Month 1 â€” Foundation (Weeks 1-4)
 
 
 | Week | Focus | Deliverable | Hours |
@@ -365,7 +365,7 @@ The following chapters cover advanced production AI topics. These are standalone
 | 3 | Phase 1: FastAPI middleware, Alembic, httpx, concurrency patterns, advanced Pydantic | Booking module port complete | 16-18 |
 | 4 | Phase 2: Tokens, embeddings, prompt engineering, vector search, chunking strategies | Can explain RAG architecture from memory | 14-16 |
 
-### Month 2 — Core AI (Weeks 5-8)
+### Month 2 â€” Core AI (Weeks 5-8)
 
 
 | Week | Focus | Deliverable | Hours |
@@ -375,7 +375,7 @@ The following chapters cover advanced production AI topics. These are standalone
 | 7 | Phase 3: Persistence, human-in-the-loop, CrewAI, MCP client, multi-agent patterns | Purvanchal LangGraph rebuild + MCP server | 16-18 |
 | 8 | Phase 3: OpenAI Agents SDK, advanced MCP, agent evaluation, cost analysis | All 3 projects code-complete locally | 12-14 |
 
-### Month 3 — Hardening + Market (Weeks 9-12)
+### Month 3 â€” Hardening + Market (Weeks 9-12)
 
 
 | Week | Focus | Deliverable | Hours |
@@ -385,7 +385,7 @@ The following chapters cover advanced production AI topics. These are standalone
 | 11 | Phase 5: READMEs, demo videos, Upwork + LinkedIn profiles, case study | All profile assets ready | 8-10 |
 | 12 | Phase 5: Job search start, interview prep, salary negotiation prep | 5+ applications sent, interview prep script memorized | 8-10 |
 
-### Post-Course — Ongoing (Weeks 13+)
+### Post-Course â€” Ongoing (Weeks 13+)
 
 
 | Activity | Cadence | Goal |
@@ -428,12 +428,12 @@ The following chapters cover advanced production AI topics. These are standalone
 
 
 **Weekly routine (2-3 hours):**
-1. Scan LinkedIn saved searches (3 saved searches, daily email) — 15 min
-2. Find 5-10 new postings matching your criteria — 20 min
-3. For each: customize CV (match keywords from job description) — 10 min each
-4. Apply + note application in tracker — 5 min each
-5. Engage with 3-5 posts from target company engineers on LinkedIn — 15 min
-6. Send 3-5 connection requests to engineers/talent teams — 10 min
+1. Scan LinkedIn saved searches (3 saved searches, daily email) â€” 15 min
+2. Find 5-10 new postings matching your criteria â€” 20 min
+3. For each: customize CV (match keywords from job description) â€” 10 min each
+4. Apply + note application in tracker â€” 5 min each
+5. Engage with 3-5 posts from target company engineers on LinkedIn â€” 15 min
+6. Send 3-5 connection requests to engineers/talent teams â€” 10 min
 
 **Follow-up cadence:**
 - Day 0: Apply
@@ -446,15 +446,15 @@ The following chapters cover advanced production AI topics. These are standalone
 
 **Must-know topics (memorize these explanations):**
 
-1. **RAG pipeline** — "Documents → chunking strategy → embedding → vector DB storage → query embedding → ANN search → re-ranking → LLM generation with context. I chose semantic chunking over fixed-size because [reason], and cosine similarity over dot product because [reason]."
+1. **RAG pipeline** â€” "Documents â†’ chunking strategy â†’ embedding â†’ vector DB storage â†’ query embedding â†’ ANN search â†’ re-ranking â†’ LLM generation with context. I chose semantic chunking over fixed-size because [reason], and cosine similarity over dot product because [reason]."
 
-2. **ReAct agent loop** — "The LLM receives a prompt plus conversation history. It generates a thought describing what to do next, then an action (tool call). The tool result feeds back as an observation. This loops until the agent decides to provide a final answer."
+2. **ReAct agent loop** â€” "The LLM receives a prompt plus conversation history. It generates a thought describing what to do next, then an action (tool call). The tool result feeds back as an observation. This loops until the agent decides to provide a final answer."
 
-3. **MCP protocol** — "Three primitives: tools (callable functions the LLM can invoke), resources (stateful data the LLM can read), prompts (templated task descriptions). Transport layer is JSON-RPC over stdio or SSE. Every MCP server communicates capability during handshake."
+3. **MCP protocol** â€” "Three primitives: tools (callable functions the LLM can invoke), resources (stateful data the LLM can read), prompts (templated task descriptions). Transport layer is JSON-RPC over stdio or SSE. Every MCP server communicates capability during handshake."
 
-4. **LangGraph vs CrewAI** — "LangGraph gives you full control over the state machine — every edge and node is explicit, with conditional routing, checkpointing, and human interrupts. CrewAI is higher-level — you define agents and tasks, and the framework handles orchestration. LangGraph for complex stateful agents, CrewAI for straightforward multi-agent crews."
+4. **LangGraph vs CrewAI** â€” "LangGraph gives you full control over the state machine â€” every edge and node is explicit, with conditional routing, checkpointing, and human interrupts. CrewAI is higher-level â€” you define agents and tasks, and the framework handles orchestration. LangGraph for complex stateful agents, CrewAI for straightforward multi-agent crews."
 
-5. **Scaling RAG** — "Chunk size tuning (empirically determined per corpus), re-ranker integration (cross-encoder improves top-k accuracy by 15-25%), query rewriting (HyDE or multi-query expansion), and hybrid search (BM25 + vector with reciprocal rank fusion)."
+5. **Scaling RAG** â€” "Chunk size tuning (empirically determined per corpus), re-ranker integration (cross-encoder improves top-k accuracy by 15-25%), query rewriting (HyDE or multi-query expansion), and hybrid search (BM25 + vector with reciprocal rank fusion)."
 
 ---
 
@@ -462,12 +462,12 @@ The following chapters cover advanced production AI topics. These are standalone
 
 | Phase | Weeks | Hours | Type |
 |-------|-------|-------|------|
-| 0 — Backend gap-fill | 1 | 14-18 | Concepts, no project code |
-| 1 — Python/FastAPI/Async | 2 | 32-34 | Project: booking module port |
-| 2 — LLM + RAG | 2 | 28-32 | Project: RAG demo API |
-| 3 — Agents/LangGraph/MCP | 3 | 35-40 | Project: Purvanchal rebuild |
-| 4 — Production hardening | 2 | 24-26 | Both projects retrofitted |
-| 5 — Portfolio + positioning | 2 + ongoing | 16-20 + applications | Profile rewrite + outreach |
+| 0 â€” Backend gap-fill | 1 | 14-18 | Concepts, no project code |
+| 1 â€” Python/FastAPI/Async | 2 | 32-34 | Project: booking module port |
+| 2 â€” LLM + RAG | 2 | 28-32 | Project: RAG demo API |
+| 3 â€” Agents/LangGraph/MCP | 3 | 35-40 | Project: Purvanchal rebuild |
+| 4 â€” Production hardening | 2 | 24-26 | Both projects retrofitted |
+| 5 â€” Portfolio + positioning | 2 + ongoing | 16-20 + applications | Profile rewrite + outreach |
 
 **Total: ~150-170 hours, 12 weeks with buffer.** Plus ongoing job search.
 
@@ -584,7 +584,7 @@ flowchart LR
     C4 --> D3
 ```
 
-## TypeScript — Course Curriculum Type System
+## TypeScript â€” Course Curriculum Type System
 
 While the course itself uses Python/FastAPI, the following TypeScript types model the curriculum structure for tooling around enrollment tracking, progress dashboards, or CLI planners:
 
@@ -687,7 +687,7 @@ const PHASES: Phase[] = [
   },
   {
     id: "phase-3",
-    name: "AI Agents — LangGraph, CrewAI, MCP",
+    name: "AI Agents â€” LangGraph, CrewAI, MCP",
     weeks: 3,
     hoursMin: 35,
     hoursMax: 40,
@@ -784,16 +784,16 @@ const sampleEnrollment: Enrollment = {
 
 const current = currentPhase(sampleEnrollment, PHASES);
 if (current) {
-  console.log(`Current phase: ${current.name} — ${totalHours(current)}`);
+  console.log(`Current phase: ${current.name} â€” ${totalHours(current)}`);
   console.log(`Eligible for next: ${isEligible(sampleEnrollment, PHASES[2], PHASES)}`);
 }
 ```
 
-## Learning Path — Weekly Rhythms
+## Learning Path â€” Weekly Rhythms
 
 ```mermaid
 flowchart LR
-    W["Monday – Thursday<br/>New Topics + Code"] --> F["Friday<br/>Catch-up"]
+    W["Monday â€“ Thursday<br/>New Topics + Code"] --> F["Friday<br/>Catch-up"]
     F --> S["Saturday<br/>Checkpoint Review"]
     S --> SUN["Sunday<br/>Rest / Preview"]
     SUN --> W
@@ -805,20 +805,20 @@ flowchart LR
 
 | File | Phase | Lines | What's Inside |
 |------|-------|-------|--------------|
-| [`01-phase0-backend-hardening.md`](01-phase0-backend-hardening.md) | 0 — Hardening | 363 | Redis cache/queue/pub/sub, rate limiting, idempotency, JWT rotation, API versioning, WebSocket patterns |
-| [`02-phase1-python-fastapi-async.md`](02-phase1-python-fastapi-async.md) | 1 — Python/FastAPI | 885 | Types, Pydantic v2, context managers, decorators, FastAPI CRUD/DI/middleware, asyncIO, pytest, Alembic |
-| [`03-phase2-llm-rag-theory.md`](03-phase2-llm-rag-theory.md) | 2 — LLM/RAG | 890 | Tokenization, embeddings, vector search, chunking, RAG pipeline, fine-tuning, eval, guardrails |
-| [`04-phase3-agents-langgraph-mcp.md`](04-phase3-agents-langgraph-mcp.md) | 3 — Agents | 1,044 | ReAct, LangGraph state machines, CrewAI, MCP protocol, agent memory, multi-agent patterns, cost analysis |
-| [`05-phase4-production-hardening.md`](05-phase4-production-hardening.md) | 4 — Hardening | 511 | Docker, Celery, logging, Sentry, CI/CD, load testing, cost controls, Prometheus/Grafana, security |
-| [`06-phase5-portfolio-positioning.md`](06-phase5-portfolio-positioning.md) | 5 — Portfolio | 520+ | README design, demo videos, profiles, case study, interview prep, negotiation, pricing, GitHub profile, portfolio site, content strategy, certs, networking |
-| [`07-day-by-day-plan.md`](07-day-by-day-plan.md) | — Schedule | 250+ | Day-by-day schedule for all 12 weeks with daily rhythm, progress tracking, buffer week playbook |
-| [`08-job-search-playbook.md`](08-job-search-playbook.md) | — Job Search | 552 | Market landscape, platform deep-dives, outreach sequences, interview prep, Dubai market, visa process |
-| [`09-ai-system-design.md`](09-ai-system-design.md) | Advanced — System Design | 450 | 3-tier caching, model tiering, latency profiling, scaling, multi-region, AI gateway, ingestion pipelines |
-| [`10-prompt-engineering-mastery.md`](10-prompt-engineering-mastery.md) | Advanced — Prompt Eng | 430 | CoT/ToT, structured output, prompt management, few-shot optimization, eval frameworks, injection defense |
-| [`11-ai-testing-evaluation.md`](11-ai-testing-evaluation.md) | Advanced — Testing | 380 | Unit/integration/eval for AI, LLM-as-judge, hallucination detection, CI/CD eval gates |
-| [`12-ai-observability-debugging.md`](12-ai-observability-debugging.md) | Advanced — Observability | 380 | OpenTelemetry tracing, cost tracking, latency profiling, drift detection, anomaly alerting |
-| [`13-advanced-vector-search.md`](13-advanced-vector-search.md) | Advanced — Vector Search | 410 | Hybrid search, multi-vector, HyDE, reranking, HNSW tuning, quantization, graph RAG |
+| [`01-phase0-backend-hardening.md`](01-phase0-backend-hardening.md) | 0 â€” Hardening | 363 | Redis cache/queue/pub/sub, rate limiting, idempotency, JWT rotation, API versioning, WebSocket patterns |
+| [`02-phase1-python-fastapi-async.md`](02-phase1-python-fastapi-async.md) | 1 â€” Python/FastAPI | 885 | Types, Pydantic v2, context managers, decorators, FastAPI CRUD/DI/middleware, asyncIO, pytest, Alembic |
+| [`03-phase2-llm-rag-theory.md`](03-phase2-llm-rag-theory.md) | 2 â€” LLM/RAG | 890 | Tokenization, embeddings, vector search, chunking, RAG pipeline, fine-tuning, eval, guardrails |
+| [`04-phase3-agents-langgraph-mcp.md`](04-phase3-agents-langgraph-mcp.md) | 3 â€” Agents | 1,044 | ReAct, LangGraph state machines, CrewAI, MCP protocol, agent memory, multi-agent patterns, cost analysis |
+| [`05-phase4-production-hardening.md`](05-phase4-production-hardening.md) | 4 â€” Hardening | 511 | Docker, Celery, logging, Sentry, CI/CD, load testing, cost controls, Prometheus/Grafana, security |
+| [`06-phase5-portfolio-positioning.md`](06-phase5-portfolio-positioning.md) | 5 â€” Portfolio | 520+ | README design, demo videos, profiles, case study, interview prep, negotiation, pricing, GitHub profile, portfolio site, content strategy, certs, networking |
+| [`07-day-by-day-plan.md`](07-day-by-day-plan.md) | â€” Schedule | 250+ | Day-by-day schedule for all 12 weeks with daily rhythm, progress tracking, buffer week playbook |
+| [`08-job-search-playbook.md`](08-job-search-playbook.md) | â€” Job Search | 552 | Market landscape, platform deep-dives, outreach sequences, interview prep, Dubai market, visa process |
+| [`09-ai-system-design.md`](09-ai-system-design.md) | Advanced â€” System Design | 450 | 3-tier caching, model tiering, latency profiling, scaling, multi-region, AI gateway, ingestion pipelines |
+| [`10-prompt-engineering-mastery.md`](10-prompt-engineering-mastery.md) | Advanced â€” Prompt Eng | 430 | CoT/ToT, structured output, prompt management, few-shot optimization, eval frameworks, injection defense |
+| [`11-ai-testing-evaluation.md`](11-ai-testing-evaluation.md) | Advanced â€” Testing | 380 | Unit/integration/eval for AI, LLM-as-judge, hallucination detection, CI/CD eval gates |
+| [`12-ai-observability-debugging.md`](12-ai-observability-debugging.md) | Advanced â€” Observability | 380 | OpenTelemetry tracing, cost tracking, latency profiling, drift detection, anomaly alerting |
+| [`13-advanced-vector-search.md`](13-advanced-vector-search.md) | Advanced â€” Vector Search | 410 | Hybrid search, multi-vector, HyDE, reranking, HNSW tuning, quantization, graph RAG |
 
 ---
 
-> **Next step:** Start with Phase 0 — [Backend Gap-Fill](01-phase0-backend-hardening.md) to solidify your async and Redis patterns before touching Python.
+> **Next step:** Start with Phase 0 â€” [Backend Gap-Fill](01-phase0-backend-hardening.md) to solidify your async and Redis patterns before touching Python.

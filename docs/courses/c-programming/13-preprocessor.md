@@ -1,4 +1,4 @@
-# Chapter 13: The Preprocessor
+﻿# Chapter 13: The Preprocessor
 
 > **Previous:** [File Handling](./12-file-handling.md) | **Next:** [Recursion](./14-recursion.md)
 
@@ -17,16 +17,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/13-preprocessor/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/c-programming/13-preprocessor/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/13-preprocessor/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/c-programming/13-preprocessor/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/13-preprocessor/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/c-programming/13-preprocessor/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/13-preprocessor/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/c-programming/13-preprocessor/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/13-preprocessor/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/c-programming/13-preprocessor/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/13-preprocessor/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/c-programming/13-preprocessor/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -69,12 +69,12 @@ flowchart LR
 
 ## 13.1 The Preprocessor's Role
 
-The preprocessor runs as the first stage of compilation. It processes directives — lines beginning with `#` — before the compiler sees the code. It is a **textual transformation engine**, not a language parser.
+The preprocessor runs as the first stage of compilation. It processes directives â€” lines beginning with `#` â€” before the compiler sees the code. It is a **textual transformation engine**, not a language parser.
 
 ### Real-World Analogy: Kitchen Prep Station
 
 
-A chef does not cook raw ingredients directly. First, vegetables are washed and chopped, spices are measured, and meat is marinated. These prep steps happen before any cooking begins. The preprocessor is the **prep station** of compilation — it arranges, substitutes, and conditions the source text before the compiler (the chef) starts cooking (compiling).
+A chef does not cook raw ingredients directly. First, vegetables are washed and chopped, spices are measured, and meat is marinated. These prep steps happen before any cooking begins. The preprocessor is the **prep station** of compilation â€” it arranges, substitutes, and conditions the source text before the compiler (the chef) starts cooking (compiling).
 
 | Kitchen Prep | Preprocessor Equivalent |
 |---|---|
@@ -87,11 +87,11 @@ A chef does not cook raw ingredients directly. First, vegetables are washed and 
 ### Numbered Steps of Preprocessing
 
 
-1. **Trigraph replacement** — Replace trigraph sequences (deprecated in C17).
-2. **Line splicing** — Join lines ending with `\` (backslash-newline).
-3. **Tokenization** — Split source into preprocessing tokens.
-4. **Directive processing and macro expansion** — Execute `#include`, `#define`, `#if`, etc., and expand macros.
-5. **Whitespace stripping** — Remove comment tokens, trim whitespace.
+1. **Trigraph replacement** â€” Replace trigraph sequences (deprecated in C17).
+2. **Line splicing** â€” Join lines ending with `\` (backslash-newline).
+3. **Tokenization** â€” Split source into preprocessing tokens.
+4. **Directive processing and macro expansion** â€” Execute `#include`, `#define`, `#if`, etc., and expand macros.
+5. **Whitespace stripping** â€” Remove comment tokens, trim whitespace.
 
 ### Pseudocode
 
@@ -157,28 +157,28 @@ double c = DOUBLE(r) * PI;
 
 | Step | Current Token | Action | Output |
 |------|---------------|--------|--------|
-| 1 | `#define` | Enter directive mode | — |
-| 2 | `PI` | Add to macro table: PI → `3.14159` | — |
-| 3 | `3.14159` | Replacement text stored | — |
-| 4 | `#define` | Enter directive mode | — |
-| 5 | `DOUBLE` | Add to macro table: DOUBLE(x) → `((x) * 2)` | — |
-| 6 | `(x)` | Parameter list `x` stored | — |
-| 7 | `((x) * 2)` | Replacement text stored | — |
+| 1 | `#define` | Enter directive mode | â€” |
+| 2 | `PI` | Add to macro table: PI â†’ `3.14159` | â€” |
+| 3 | `3.14159` | Replacement text stored | â€” |
+| 4 | `#define` | Enter directive mode | â€” |
+| 5 | `DOUBLE` | Add to macro table: DOUBLE(x) â†’ `((x) * 2)` | â€” |
+| 6 | `(x)` | Parameter list `x` stored | â€” |
+| 7 | `((x) * 2)` | Replacement text stored | â€” |
 | 8 | `int` | Not a macro, not directive | `int` |
-| 9 | `r` | Check macro table — not found | `r` |
+| 9 | `r` | Check macro table â€” not found | `r` |
 | 10 | `=` | Not a macro | `=` |
 | 11 | `5` | Not a macro | `5` |
 | 12 | `;` | Not a macro | `;` |
 | 13 | `double` | Not a macro | `double` |
 | 14 | `c` | Not a macro | `c` |
 | 15 | `=` | Not a macro | `=` |
-| 16 | `DOUBLE` | Found in macro table! Enter expansion | — |
-| 17 | `(` | Begin argument collection | — |
-| 18 | `r` | Argument `a` = `r` | — |
-| 19 | `)` | End arguments | — |
+| 16 | `DOUBLE` | Found in macro table! Enter expansion | â€” |
+| 17 | `(` | Begin argument collection | â€” |
+| 18 | `r` | Argument `a` = `r` | â€” |
+| 19 | `)` | End arguments | â€” |
 | 20 | Expand | Replace `DOUBLE(r)` with `((r) * 2)` | `((r) * 2)` |
 | 21 | `*` | Not a macro | `*` |
-| 22 | `PI` | Found in macro table! | — |
+| 22 | `PI` | Found in macro table! | â€” |
 | 23 | Expand | Replace `PI` with `3.14159` | `3.14159` |
 
 **Final output:**
@@ -196,7 +196,7 @@ double c = ((r) * 2) * 3.14159;
 | Tokenization | O(n) | O(n) |
 | Macro table insertion | O(1) avg | O(m) for m macros |
 | Macro expansion (single) | O(k) for k chars | O(k) |
-| Macro expansion (recursive) | O(∞) without guard | O(stack depth) |
+| Macro expansion (recursive) | O(âˆž) without guard | O(stack depth) |
 | #include resolution | O(f) for f file size | O(f) |
 | Conditional compilation | O(n) | O(d) for d nesting depth |
 
@@ -205,11 +205,11 @@ double c = ((r) * 2) * 3.14159;
 
 | Advantage | Disadvantage |
 |-----------|--------------|
-| Zero runtime overhead — all substitution happens at compile time | Debugging is hard — error messages reference expanded code, not source |
+| Zero runtime overhead â€” all substitution happens at compile time | Debugging is hard â€” error messages reference expanded code, not source |
 | Cross-platform code via conditional compilation | No type safety in function-like macros |
 | Can create compile-time constants | Side effects from argument re-evaluation |
 | Token pasting enables code generation | Missing parentheses cause precedence bugs |
-| Stringification for log/assert macros | No scoping — macros are global and leak across files |
+| Stringification for log/assert macros | No scoping â€” macros are global and leak across files |
 | Variadic macros for flexible logging | Cannot be pointed to (no function pointers to macros) |
 | Header guards prevent redefinition errors | Recursive expansion risk (most compilers stop after one level) |
 
@@ -218,23 +218,23 @@ double c = ((r) * 2) * 3.14159;
 
 1. **Trigraphs** (removed in C17): `??=` becomes `#`, `??/` becomes `\`. Rare but can confuse old code.
 2. **Backslash-newline splicing**: A `\` at end of line joins with next line. Inside `//` comments, this can swallow the next line.
-3. **Empty macro**: `#define EMPTY` — expands to nothing. Useful for conditional checks without value.
+3. **Empty macro**: `#define EMPTY` â€” expands to nothing. Useful for conditional checks without value.
 4. **Macro redefinition**: Most compilers allow redefinition if the replacement text is identical; otherwise warning/error.
 5. **Maximum line length**: C standard requires 4095 characters per logical line after splicing.
 
-## 13.2 `#include` — File Inclusion
+## 13.2 `#include` â€” File Inclusion
 
 ### Real-World Analogy: Copy-Paste from Reference Book
 
 
-Imagine writing a report and needing the definition of "binary search tree." Instead of rewriting it by hand, you photocopy the page from a textbook and paste it into your report. `#include` does exactly this — it copies the entire contents of a file and pastes them into your source file at the exact point of the `#include` directive.
+Imagine writing a report and needing the definition of "binary search tree." Instead of rewriting it by hand, you photocopy the page from a textbook and paste it into your report. `#include` does exactly this â€” it copies the entire contents of a file and pastes them into your source file at the exact point of the `#include` directive.
 
 ### Search Path Rules
 
 
 ```c
-#include <stdio.h>      /* system header — searches standard include paths */
-#include "myheader.h"    /* user header — searches current directory first */
+#include <stdio.h>      /* system header â€” searches standard include paths */
+#include "myheader.h"    /* user header â€” searches current directory first */
 ```
 
 | Form | Search Path | Typical Use Case |
@@ -294,28 +294,28 @@ Header file `config.h`:
 
 | Step | File | Directive | Action |
 |------|------|-----------|--------|
-| 1 | `main.c` | — | Start preprocessing |
-| 2 | `main.c` | `#include "config.h"` | Search current dir → found |
-| 3 | `config.h` | — | Open and start preprocessing |
-| 4 | `config.h` | `#ifndef CONFIG_H` | CONFIG_H not defined → enter block |
+| 1 | `main.c` | â€” | Start preprocessing |
+| 2 | `main.c` | `#include "config.h"` | Search current dir â†’ found |
+| 3 | `config.h` | â€” | Open and start preprocessing |
+| 4 | `config.h` | `#ifndef CONFIG_H` | CONFIG_H not defined â†’ enter block |
 | 5 | `config.h` | `#define CONFIG_H` | Add CONFIG_H to macro table |
-| 6 | `config.h` | `#define VERSION 42` | Add VERSION → 42 |
+| 6 | `config.h` | `#define VERSION 42` | Add VERSION â†’ 42 |
 | 7 | `config.h` | `#endif` | End conditional block |
 | 8 | `config.h` | EOF | Close file, return to main.c |
-| 9 | `main.c` | — | Resume: `int main() { return VERSION; }` |
-| 10 | `main.c` | — | Expand `VERSION` → `42` |
-| 11 | — | — | **Final:** `int main() { return 42; }` |
+| 9 | `main.c` | â€” | Resume: `int main() { return VERSION; }` |
+| 10 | `main.c` | â€” | Expand `VERSION` â†’ `42` |
+| 11 | â€” | â€” | **Final:** `int main() { return 42; }` |
 
 ### Nested Include Resolution
 
 
 ```c
-/* a.h */ #include "b.h"  → finds b.h → processes → returns
-/* b.h */ #include "c.h"  → finds c.h → processes → returns
+/* a.h */ #include "b.h"  â†’ finds b.h â†’ processes â†’ returns
+/* b.h */ #include "c.h"  â†’ finds c.h â†’ processes â†’ returns
 /* c.h */ #define LIMIT 100
 ```
 
-The preprocessor maintains a **file stack** — each `#include` pushes a new file context; EOF pops back.
+The preprocessor maintains a **file stack** â€” each `#include` pushes a new file context; EOF pops back.
 
 ### Example with Output
 
@@ -338,18 +338,18 @@ Hello from mydefs!
 ### Edge Cases
 
 
-1. **Circular includes**: `a.h` includes `b.h` which includes `a.h` — causes infinite recursion without header guards. The preprocessor would stack-overflow or hit file-descriptor limits.
-2. **Missing file**: `#include "nonexistent.h"` → compilation error.
-3. **Non-header files**: `#include "data.txt"` — valid but poor practice. The preprocessor doesn't care about file extension.
+1. **Circular includes**: `a.h` includes `b.h` which includes `a.h` â€” causes infinite recursion without header guards. The preprocessor would stack-overflow or hit file-descriptor limits.
+2. **Missing file**: `#include "nonexistent.h"` â†’ compilation error.
+3. **Non-header files**: `#include "data.txt"` â€” valid but poor practice. The preprocessor doesn't care about file extension.
 4. **Maximum nesting**: C99 requires at least 15 levels of nested inclusion.
-5. **Include guard collision**: Two different headers using `#ifndef HEADER_H` — the first included "wins" and the second gets silently skipped.
+5. **Include guard collision**: Two different headers using `#ifndef HEADER_H` â€” the first included "wins" and the second gets silently skipped.
 
-## 13.3 `#define` — Object-like Macros
+## 13.3 `#define` â€” Object-like Macros
 
 ### Real-World Analogy: Find-and-Replace All
 
 
-Your teacher tells the class "whenever I say 'device', write 'mobile phone'." Every time you hear "device," you automatically substitute "mobile phone" in your notes. This is an **object-like macro** — wherever the preprocessor sees the macro name, it replaces it with the replacement text.
+Your teacher tells the class "whenever I say 'device', write 'mobile phone'." Every time you hear "device," you automatically substitute "mobile phone" in your notes. This is an **object-like macro** â€” wherever the preprocessor sees the macro name, it replaces it with the replacement text.
 
 ```c
 #define PI 3.1415926535
@@ -398,14 +398,14 @@ int v = API_VERSION;
 
 | Step | Token | Action | Output |
 |------|-------|--------|--------|
-| 1 | `#define` | Start directive | — |
-| 2 | `API_VERSION` | Store in table: `API_VERSION` → `2024` | — |
-| 3 | `#define` | Start directive | — |
-| 4 | `MSG` | Store in table: `MSG` → `"Welcome v"` | — |
+| 1 | `#define` | Start directive | â€” |
+| 2 | `API_VERSION` | Store in table: `API_VERSION` â†’ `2024` | â€” |
+| 3 | `#define` | Start directive | â€” |
+| 4 | `MSG` | Store in table: `MSG` â†’ `"Welcome v"` | â€” |
 | 5 | `int` | Not a macro | `int` |
 | 6 | `v` | Not a macro | `v` |
 | 7 | `=` | Not a macro | `=` |
-| 8 | `API_VERSION` | Macro found! Look up → `2024` | `2024` |
+| 8 | `API_VERSION` | Macro found! Look up â†’ `2024` | `2024` |
 | 9 | `;` | Not a macro | `;` |
 
 **Expanded output:**
@@ -450,27 +450,27 @@ Area = 78.54
 
 | Advantage | Disadvantage |
 |-----------|--------------|
-| Compile-time constant — no runtime cost | No type safety |
+| Compile-time constant â€” no runtime cost | No type safety |
 | Works in preprocessor conditions (`#if`) | Cannot be scoped to a block |
-| Can be undefined and redefined | Global — affects entire translation unit |
+| Can be undefined and redefined | Global â€” affects entire translation unit |
 | Useful for include guards | Not visible to debugger symbols |
 | Zero overhead abstraction | Can cause hard-to-find bugs with unintended substitution |
 
 ### Edge Cases
 
 
-1. **Recursive macro (stopped)**: `#define REC REC` — the preprocessor will not expand `REC` recursively. It marks it as "currently expanding" and stops. No infinite loop.
-2. **Redefinition**: `#define X 1` then `#define X 2` — most compilers warn unless the definition is identical.
-3. **Empty definition**: `#define FLAG` — defines FLAG as empty. Useful with `#ifdef` for feature detection.
-4. **Macro in macro replacement**: `#define TWO 2` then `#define FOUR TWO` — `FOUR` expands to `TWO` then to `2`.
-5. **Semicolon in macro**: `#define PI 3.14;` — now `x = PI * 2;` becomes `x = 3.14; * 2;` — syntax error.
+1. **Recursive macro (stopped)**: `#define REC REC` â€” the preprocessor will not expand `REC` recursively. It marks it as "currently expanding" and stops. No infinite loop.
+2. **Redefinition**: `#define X 1` then `#define X 2` â€” most compilers warn unless the definition is identical.
+3. **Empty definition**: `#define FLAG` â€” defines FLAG as empty. Useful with `#ifdef` for feature detection.
+4. **Macro in macro replacement**: `#define TWO 2` then `#define FOUR TWO` â€” `FOUR` expands to `TWO` then to `2`.
+5. **Semicolon in macro**: `#define PI 3.14;` â€” now `x = PI * 2;` becomes `x = 3.14; * 2;` â€” syntax error.
 
-## 13.4 `#define` — Function-like Macros
+## 13.4 `#define` â€” Function-like Macros
 
 ### Real-World Analogy: Recipe Template with Blanks
 
 
-A recipe card says "Bake at ___ degrees for ___ minutes." You fill in the blanks: "Bake at 350 degrees for 30 minutes." The recipe is a **function-like macro** — it has parameters (blanks) that get filled in with actual arguments each time the macro is used.
+A recipe card says "Bake at ___ degrees for ___ minutes." You fill in the blanks: "Bake at 350 degrees for 30 minutes." The recipe is a **function-like macro** â€” it has parameters (blanks) that get filled in with actual arguments each time the macro is used.
 
 ```c
 #define SQUARE(x) ((x) * (x))
@@ -482,7 +482,7 @@ A recipe card says "Bake at ___ degrees for ___ minutes." You fill in the blanks
 
 
 1. Preprocessor encounters `#define MACRO(params) replacement`.
-2. Parses the parameter list; spaces before `(` matter — `#define MACRO (x)` is an object-like macro named `MACRO` with expansion `(x)`.
+2. Parses the parameter list; spaces before `(` matter â€” `#define MACRO (x)` is an object-like macro named `MACRO` with expansion `(x)`.
 3. Stores macro with parameter list and replacement text.
 4. On invocation, collects comma-separated arguments inside parentheses.
 5. Substitutes each parameter textually with its argument.
@@ -511,7 +511,7 @@ With parentheses:
 SQUARE(2 + 3)  /* expands to: ((2 + 3) * (2 + 3)) = 25 */
 ```
 
-### Dry Run Trace — With vs Without Parentheses
+### Dry Run Trace â€” With vs Without Parentheses
 
 
 **Without parentheses:**
@@ -537,7 +537,7 @@ int y = SQUARE(2 + 3);
 |------|-------|--------|
 | 1 | `SQUARE` | Found in macro table |
 | 2 | `(2 + 3)` | Collect arguments: a = `2 + 3` |
-| 3 | Substitute | Replace `x` with `2 + 3` → `((2 + 3) * (2 + 3))` |
+| 3 | Substitute | Replace `x` with `2 + 3` â†’ `((2 + 3) * (2 + 3))` |
 | 4 | Evaluate | `(5 * 5)` = `25` |
 
 ### Example with Output
@@ -603,7 +603,7 @@ Why `do { ... } while (0)`? Without it:
 #define BAD_SWAP(a, b, t)  t _t = a; a = b; b = _t
 if (x < y)
     BAD_SWAP(x, y, int);  /* expands to: if (x < y) t _t = x; x = y; y = _t; */
-/* Only first statement is conditional — x = y and y = _t always execute! */
+/* Only first statement is conditional â€” x = y and y = _t always execute! */
 ```
 
 ### Variadic Macros (C99)
@@ -637,8 +637,8 @@ The `##__VA_ARGS__` GNU extension allows omitting the variadic argument (makes t
 | Operation | Complexity |
 |-----------|------------|
 | Parameter collection | O(p) where p = chars in argument list |
-| Substitution into body | O(b × p) worst-case |
-| Multi-argument macro | O(k × p) for k parameters |
+| Substitution into body | O(b Ã— p) worst-case |
+| Multi-argument macro | O(k Ã— p) for k parameters |
 | Nested macro expansion | O(m) total for m expansions |
 
 ### A&D Table
@@ -646,16 +646,16 @@ The `##__VA_ARGS__` GNU extension allows omitting the variadic argument (makes t
 
 | Advantage | Disadvantage |
 |-----------|--------------|
-| Type-agnostic — works with any type | No type checking — int and pointer both accepted |
-| Zero runtime overhead | Arguments evaluated multiple times → side effects |
+| Type-agnostic â€” works with any type | No type checking â€” int and pointer both accepted |
+| Zero runtime overhead | Arguments evaluated multiple times â†’ side effects |
 | Can generate code via `##` | Cannot be recursive in any useful way |
-| Variadic macros for logging | Hard to debug — line numbers point to expansion |
+| Variadic macros for logging | Hard to debug â€” line numbers point to expansion |
 | `do { } while (0)` pattern works in all contexts | Cannot return a value from inside a statement expr |
 
 ### Edge Cases
 
 
-1. **Side effects — the classic bug:**
+1. **Side effects â€” the classic bug:**
    ```c
    #define MAX(a, b) ((a) > (b) ? (a) : (b))
    int x = 1, y = 2;
@@ -681,31 +681,31 @@ The `##__VA_ARGS__` GNU extension allows omitting the variadic argument (makes t
 
 4. **Whitespace between macro name and `(`:** `#define MAX (a,b)` is an object-like macro named `MAX` expanding to `(a,b)`.
 
-5. **Recursion guard:** `#define DOUBLE(x) (2 * DOUBLE(x))` — the preprocessor stops after detecting the recursive expansion, producing `(2 * DOUBLE(x))` as text output (which will likely cause a compilation error).
+5. **Recursion guard:** `#define DOUBLE(x) (2 * DOUBLE(x))` â€” the preprocessor stops after detecting the recursive expansion, producing `(2 * DOUBLE(x))` as text output (which will likely cause a compilation error).
 
-## 13.5 Macros vs Functions — Comparison
+## 13.5 Macros vs Functions â€” Comparison
 
 ### Real-World Analogy
 
 
-**Macro** is like having a personal assistant who, every time you say "double-check," physically does the two checks right there, writing them down in your notebook. **Function** is like having a reference desk — you go there, ask, get an answer, and return.
+**Macro** is like having a personal assistant who, every time you say "double-check," physically does the two checks right there, writing them down in your notebook. **Function** is like having a reference desk â€” you go there, ask, get an answer, and return.
 
 | Aspect | Macro | Function |
 |--------|-------|----------|
 | **When substitution happens** | Before compilation (preprocessor) | At runtime (call and return) |
-| **Code size** | Inlined at every call site — can bloat binary | Single copy of code — called via call instruction |
+| **Code size** | Inlined at every call site â€” can bloat binary | Single copy of code â€” called via call instruction |
 | **Speed** | No call overhead | Call/return overhead (small, usually negligible) |
-| **Type checking** | None — purely textual substitution | Full type checking of parameters and return |
+| **Type checking** | None â€” purely textual substitution | Full type checking of parameters and return |
 | **Side effects** | Arguments re-evaluated each time used | Arguments evaluated once, then passed |
 | **Can be recursive** | No (preprocessor stops recursive expansion) | Yes |
-| **Can have address** | No — cannot point to a macro | Yes — function pointers work |
-| **Scope** | Global — visible from point of definition to `#undef` | Block scope, file scope, or global |
+| **Can have address** | No â€” cannot point to a macro | Yes â€” function pointers work |
+| **Scope** | Global â€” visible from point of definition to `#undef` | Block scope, file scope, or global |
 | **Debugging** | Error messages refer to expanded code | Debugger shows original source line |
-| **Variadic** | Yes — `__VA_ARGS__` since C99 | Yes — `...` and `va_arg` |
-| **Return type** | N/A — expands to expression that must be valid C | Explicit return type |
-| **Can contain complex control flow** | Awkward — needs `do { } while (0)` | Natural — any control flow works |
-| **Compile-time evaluation** | Yes — can be used in `#if` | No — runtime only |
-| **Token pasting / stringification** | Yes — `##` and `#` operators | No |
+| **Variadic** | Yes â€” `__VA_ARGS__` since C99 | Yes â€” `...` and `va_arg` |
+| **Return type** | N/A â€” expands to expression that must be valid C | Explicit return type |
+| **Can contain complex control flow** | Awkward â€” needs `do { } while (0)` | Natural â€” any control flow works |
+| **Compile-time evaluation** | Yes â€” can be used in `#if` | No â€” runtime only |
+| **Token pasting / stringification** | Yes â€” `##` and `#` operators | No |
 
 ### Decision Guide
 
@@ -722,21 +722,21 @@ double sqrt(double x);                                         /* Recursive, com
 void sort(int* arr, size_t n);                                 /* Multi-statement, side effects */
 ```
 
-## 13.6 `#define` vs `const` vs `enum` — Comparison
+## 13.6 `#define` vs `const` vs `enum` â€” Comparison
 
 ### Real-World Analogy
 
 
-- `#define`: A sticky note on your desk that says "PI = 3.14" — you have to rewrite it everywhere you need it.
-- `const`: A document in a filing cabinet labeled "PI = 3.14" — you look it up when needed.
-- `enum`: A predefined list of related constants — like a restaurant menu with numbered items.
+- `#define`: A sticky note on your desk that says "PI = 3.14" â€” you have to rewrite it everywhere you need it.
+- `const`: A document in a filing cabinet labeled "PI = 3.14" â€” you look it up when needed.
+- `enum`: A predefined list of related constants â€” like a restaurant menu with numbered items.
 
 | Aspect | `#define` | `const` | `enum` |
 |--------|-----------|---------|--------|
-| **When evaluated** | Preprocessor — textual substitution | Compile-time initialization | Compile-time integral constant |
+| **When evaluated** | Preprocessor â€” textual substitution | Compile-time initialization | Compile-time integral constant |
 | **Type safety** | None | Full type checking | Integral type only |
 | **Scope** | Global from definition to `#undef` | Block, file, or global scope | File or block scope |
-| **Memory** | None — substitution only | Stored in memory (may be optimized out) | Integral constant, no storage |
+| **Memory** | None â€” substitution only | Stored in memory (may be optimized out) | Integral constant, no storage |
 | **Debugger visibility** | Not visible in debugger | Visible in debugger | Visible in debugger |
 | **Can be used in `#if`** | Yes | No | No |
 | **Can be used in switch** | Yes (integral) | No (unless constexpr in C23) | Yes |
@@ -751,13 +751,13 @@ void sort(int* arr, size_t n);                                 /* Multi-statemen
 
 #define PI_DEF  3.14159        /* No type, no address, no scope */
 const double PI_CONST = 3.14159; /* Typed, scoped, addressable */
-enum { PI_ENUM = 3 };           /* Integer only — 3, not 3.14159 */
+enum { PI_ENUM = 3 };           /* Integer only â€” 3, not 3.14159 */
 
 int main(void)
 {
-    printf("#define: %f\n", PI_DEF);      /* works — substituted */
-    printf("const:   %f\n", PI_CONST);    /* works — stored variable */
-    printf("enum:    %d\n", PI_ENUM);      /* works — integral constant */
+    printf("#define: %f\n", PI_DEF);      /* works â€” substituted */
+    printf("const:   %f\n", PI_CONST);    /* works â€” stored variable */
+    printf("enum:    %d\n", PI_ENUM);      /* works â€” integral constant */
 
     /* What you CANNOT do: */
     // #undef PI_CONST     /* error: undef on non-macro */
@@ -786,7 +786,7 @@ int main(void)
 ### Real-World Analogy
 
 
-You told your assistant "whenever I say 'current', write '2024'." Later you say "I changed my mind — stop doing that." `#undef` cancels a previous `#define`.
+You told your assistant "whenever I say 'current', write '2024'." Later you say "I changed my mind â€” stop doing that." `#undef` cancels a previous `#define`.
 
 Removes a previously defined macro from the symbol table:
 
@@ -835,16 +835,16 @@ int b = MAX;     /* b = 20 */
 
 | Step | Directive | Macro Table | Code Output |
 |------|-----------|-------------|-------------|
-| 1 | `#define MAX 10` | MAX → 10 | — |
-| 2 | — | MAX → 10 | `int a = 10;` |
-| 3 | `#undef MAX` | (empty) | — |
-| 4 | `#define MAX 20` | MAX → 20 | — |
-| 5 | — | MAX → 20 | `int b = 20;` |
+| 1 | `#define MAX 10` | MAX â†’ 10 | â€” |
+| 2 | â€” | MAX â†’ 10 | `int a = 10;` |
+| 3 | `#undef MAX` | (empty) | â€” |
+| 4 | `#define MAX 20` | MAX â†’ 20 | â€” |
+| 5 | â€” | MAX â†’ 20 | `int b = 20;` |
 
 ### Edge Cases
 
 
-- `#undef` on an undefined macro is **safe** — no error.
+- `#undef` on an undefined macro is **safe** â€” no error.
 - After `#undef`, `#ifdef MACRO` evaluates to false.
 
 ## 13.8 Conditional Compilation
@@ -852,7 +852,7 @@ int b = MAX;     /* b = 20 */
 ### Real-World Analogy: Light Switch / Router Configuration
 
 
-A factory assembly line can produce slightly different products depending on which switches are toggled. If SWITCH_A is on, include feature A. If SWITCH_B is on, include feature B. The factory doesn't build both features and then choose — it only builds what the switches allow. Conditional compilation works the same way: only the code that passes the condition is compiled.
+A factory assembly line can produce slightly different products depending on which switches are toggled. If SWITCH_A is on, include feature A. If SWITCH_B is on, include feature B. The factory doesn't build both features and then choose â€” it only builds what the switches allow. Conditional compilation works the same way: only the code that passes the condition is compiled.
 
 ### 13.8.1 Directives Overview
 
@@ -887,7 +887,7 @@ skip_depth = 0        // how many levels deep we are skipping
 
 function process_conditional(directive, condition):
     if skip_depth > 0:
-        // Inside a skipped block — only track nesting
+        // Inside a skipped block â€” only track nesting
         if directive in ['#if', '#ifdef', '#ifndef']:
             skip_depth++
         elif directive == '#endif':
@@ -932,11 +932,11 @@ function process_conditional(directive, condition):
 int main(void)
 {
 #ifdef DEBUG
-    printf("Debug mode enabled — verbose output active\n");
+    printf("Debug mode enabled â€” verbose output active\n");
 #endif
 
 #ifndef RELEASE
-    printf("Release mode is NOT defined — using debug settings\n");
+    printf("Release mode is NOT defined â€” using debug settings\n");
 #endif
 
     return 0;
@@ -945,22 +945,22 @@ int main(void)
 
 **Output:**
 ```
-Debug mode enabled — verbose output active
-Release mode is NOT defined — using debug settings
+Debug mode enabled â€” verbose output active
+Release mode is NOT defined â€” using debug settings
 ```
 
-### Dry Run Trace — `#ifdef`/`#ifndef`
+### Dry Run Trace â€” `#ifdef`/`#ifndef`
 
 
 | Step | Directive | Macro Table | Keep? | Output |
 |------|-----------|-------------|-------|--------|
-| 1 | `#define DEBUG` | DEBUG | — | — |
-| 2 | `#ifdef DEBUG` | DEBUG | YES (DEBUG defined) | — |
-| 3 | — | — | — | `printf("Debug mode...");` |
-| 4 | `#endif` | — | End conditional | — |
-| 5 | `#ifndef RELEASE` | — | YES (RELEASE not defined) | — |
-| 6 | — | — | — | `printf("Release mode...");` |
-| 7 | `#endif` | — | End conditional | — |
+| 1 | `#define DEBUG` | DEBUG | â€” | â€” |
+| 2 | `#ifdef DEBUG` | DEBUG | YES (DEBUG defined) | â€” |
+| 3 | â€” | â€” | â€” | `printf("Debug mode...");` |
+| 4 | `#endif` | â€” | End conditional | â€” |
+| 5 | `#ifndef RELEASE` | â€” | YES (RELEASE not defined) | â€” |
+| 6 | â€” | â€” | â€” | `printf("Release mode...");` |
+| 7 | `#endif` | â€” | End conditional | â€” |
 
 ### 13.8.3 `#if` and `#elif`
 
@@ -989,15 +989,15 @@ int main(void)
 Version 2
 ```
 
-### Dry Run Trace — `#if`/`#elif`/`#else`
+### Dry Run Trace â€” `#if`/`#elif`/`#else`
 
 
 | Step | Directive | Evaluation | Keep? | Output |
 |------|-----------|------------|-------|--------|
-| 1 | `#if VERSION >= 3` | `2 >= 3` = 0 | NO | — |
-| 2 | `#elif VERSION >= 2` | `2 >= 2` = 1 | YES | — |
-| 3 | — | — | — | `printf("Version 2\n");` |
-| 4 | `#endif` | — | End | — |
+| 1 | `#if VERSION >= 3` | `2 >= 3` = 0 | NO | â€” |
+| 2 | `#elif VERSION >= 2` | `2 >= 2` = 1 | YES | â€” |
+| 3 | â€” | â€” | â€” | `printf("Version 2\n");` |
+| 4 | `#endif` | â€” | End | â€” |
 
 ### 13.8.4 `#if defined(...)`
 
@@ -1059,12 +1059,12 @@ int main(void)
 #ifndef MY_HEADER_H
 #define MY_HEADER_H
 
-/* header content — only processed once per translation unit */
+/* header content â€” only processed once per translation unit */
 
 #endif /* MY_HEADER_H */
 ```
 
-### 13.8.6 `#pragma once` vs `#ifndef` — Comparison
+### 13.8.6 `#pragma once` vs `#ifndef` â€” Comparison
 
 
 | Aspect | `#pragma once` | `#ifndef` Guard |
@@ -1075,7 +1075,7 @@ int main(void)
 | **Speed** | Faster on some compilers (no file open needed) | Opens file to check guard macro |
 | **Portability** | Not supported by all compilers | Works on every conforming compiler |
 | **Duplicated headers** | Detects same file via inode/file identity | Detects by macro name only |
-| **Different paths, same file** | Works (same inode) | Fails (different paths → different `#include`) |
+| **Different paths, same file** | Works (same inode) | Fails (different paths â†’ different `#include`) |
 
 ```c
 /* Method 1: #pragma once (modern, concise) */
@@ -1125,9 +1125,9 @@ int main(void)
 
 
 1. **`#ifdef` vs `#if defined()`**: Functionally identical for single conditions. `#if defined()` allows `||` and `&&`.
-2. **Empty `#if`**: `#if 0` ... `#endif` — classic comment-out block (works even when comments nest poorly).
-3. **Evaluating undefined macro in `#if`**: `#if UNDEFINED > 0` — undefined macros evaluate to `0`.
-4. **Mismatched `#endif`**: Compilation error — "unterminated conditional."
+2. **Empty `#if`**: `#if 0` ... `#endif` â€” classic comment-out block (works even when comments nest poorly).
+3. **Evaluating undefined macro in `#if`**: `#if UNDEFINED > 0` â€” undefined macros evaluate to `0`.
+4. **Mismatched `#endif`**: Compilation error â€” "unterminated conditional."
 5. **Nesting limit**: C99 mandates at least 63 levels of nesting.
 
 ## 13.9 `#pragma`
@@ -1135,7 +1135,7 @@ int main(void)
 ### Real-World Analogy
 
 
-A recipe might include a note: "If using a convection oven, reduce temperature by 25°F." This is a **compiler-specific instruction** — it only applies if you're using a convection oven (specific compiler). Other ovens (other compilers) may ignore it.
+A recipe might include a note: "If using a convection oven, reduce temperature by 25Â°F." This is a **compiler-specific instruction** â€” it only applies if you're using a convection oven (specific compiler). Other ovens (other compilers) may ignore it.
 
 `#pragma` provides compiler-specific instructions. Unrecognized pragmas are silently ignored.
 
@@ -1213,7 +1213,7 @@ Normal struct: 8 bytes
 
 | Advantage | Disadvantage |
 |-----------|--------------|
-| Access to compiler-specific optimizations | Non-portable — code may not compile on other compilers |
+| Access to compiler-specific optimizations | Non-portable â€” code may not compile on other compilers |
 | Can suppress false-positive warnings | Unrecognized pragmas silently ignored (bugs hide) |
 | Structure packing for binary protocols | Can cause alignment faults on some architectures |
 | `#pragma once` is cleaner than header guards | `#pragma once` not in standard (but universally supported) |
@@ -1223,7 +1223,7 @@ Normal struct: 8 bytes
 ### Real-World Analogy
 
 
-A factory assembly line has a security checkpoint. If a part doesn't meet specifications, the line stops immediately with an alarm. `#error` is that alarm — it halts compilation with a message.
+A factory assembly line has a security checkpoint. If a part doesn't meet specifications, the line stops immediately with an alarm. `#error` is that alarm â€” it halts compilation with a message.
 
 ### Syntax and Example
 
@@ -1234,7 +1234,7 @@ A factory assembly line has a security checkpoint. If a part doesn't meet specif
 #endif
 
 #if !defined(__linux__) && !defined(_WIN32) && !defined(__APPLE__)
-#error "Unsupported operating system — only Linux, Windows, and macOS are supported"
+#error "Unsupported operating system â€” only Linux, Windows, and macOS are supported"
 #endif
 
 #if __STDC_VERSION__ < 199901L
@@ -1278,7 +1278,7 @@ error: #error "REQUIRED_FEATURE must be defined to compile this program"
 
 | Advantage | Disadvantage |
 |-----------|--------------|
-| Catches configuration errors at compile time | Crude — unconditional halt only |
+| Catches configuration errors at compile time | Crude â€” unconditional halt only |
 | Prevents silent miscompilation | Cannot be conditional on runtime state |
 | Clear error message for users | Must be combined with `#if` for conditional use |
 
@@ -1340,7 +1340,7 @@ These operators are only meaningful inside function-like macro definitions.
 ### Real-World Analogy
 
 
-You're filling out a form. The blank says "Name: _____." The `#` operator is like writing the label "Name" onto the form — it takes the field name and turns it into a printed label.
+You're filling out a form. The blank says "Name: _____." The `#` operator is like writing the label "Name" onto the form â€” it takes the field name and turns it into a printed label.
 
 The `#` operator converts a macro parameter to a **string literal**:
 
@@ -1370,17 +1370,17 @@ value + 1 = 43
 ```c
 #define STR(x) #x
 
-STR(hello)        → "hello"
-STR(42)           → "42"
-STR(x y z)        → "x y z"
-STR(text)         → "text"
+STR(hello)        â†’ "hello"
+STR(42)           â†’ "42"
+STR(x y z)        â†’ "x y z"
+STR(text)         â†’ "text"
 
 /* With macro argument: */
 #define FOO 123
-STR(FOO)          → "FOO"   /* NOT "123" — # prevents expansion of the parameter */
+STR(FOO)          â†’ "FOO"   /* NOT "123" â€” # prevents expansion of the parameter */
 ```
 
-### Dry Run Trace — Stringification
+### Dry Run Trace â€” Stringification
 
 
 ```c
@@ -1393,7 +1393,7 @@ SHOW(count);
 |------|-------|--------|
 | 1 | `SHOW` | Found in macro table |
 | 2 | `(count)` | Collect argument: `var` = `count` |
-| 3 | `#var` | Apply `#`: `#count` → `"count"` |
+| 3 | `#var` | Apply `#`: `#count` â†’ `"count"` |
 | 4 | `var` | Substitute: `count` |
 | 5 | Result | `printf("count" " = %d\n", count)` |
 
@@ -1404,7 +1404,7 @@ SHOW(count);
 
 ```c
 #define STR(x) #x
-STR(  hello   world  )    → "hello   world"
+STR(  hello   world  )    â†’ "hello   world"
 ```
 
 Multiple spaces between tokens in the argument are collapsed to a single space, but leading/trailing whitespace is removed.
@@ -1538,10 +1538,10 @@ Name:  x
 ### Edge Cases
 
 
-1. **Invalid token result**: `#define CAT(a, b) a ## b` — `CAT(1, 2)` produces `12` (valid). But `CAT(1, 2x)` produces `12x` (valid); `CAT(+, =)` produces `+=` (valid). `CAT(1, 2.3)` produces `12.3` (valid). However, `CAT(., 2)` produces `.2` which might not be valid depending on context.
-2. **Empty macro argument**: `#define F(x) #x` — `F()` produces `""`.
-3. **`##` with empty argument**: `#define CAT(a, b) a ## b` — `CAT(prefix, )` produces `prefix` (empty argument yields just the other token). This behavior is compiler-dependent.
-4. **Space before `##`**: `name ## num` and `name##num` are equivalent — spaces don't affect the paste.
+1. **Invalid token result**: `#define CAT(a, b) a ## b` â€” `CAT(1, 2)` produces `12` (valid). But `CAT(1, 2x)` produces `12x` (valid); `CAT(+, =)` produces `+=` (valid). `CAT(1, 2.3)` produces `12.3` (valid). However, `CAT(., 2)` produces `.2` which might not be valid depending on context.
+2. **Empty macro argument**: `#define F(x) #x` â€” `F()` produces `""`.
+3. **`##` with empty argument**: `#define CAT(a, b) a ## b` â€” `CAT(prefix, )` produces `prefix` (empty argument yields just the other token). This behavior is compiler-dependent.
+4. **Space before `##`**: `name ## num` and `name##num` are equivalent â€” spaces don't affect the paste.
 5. **`#` prevents expansion**: In `#x`, the parameter `x` is NOT expanded further. In `a ## b`, both `a` and `b` are fully expanded before pasting.
 
 ## 13.13 Predefined Macros
@@ -1637,7 +1637,7 @@ STATIC_ASSERT(sizeof(int) == 4, int_must_be_4_bytes);
     /* C99 features available */
     #define inline inline
 #else
-    /* C89 — limited features */
+    /* C89 â€” limited features */
     #define inline /* no inline */
 #endif
 ```
@@ -1663,7 +1663,7 @@ void c_function(int x);
 - `__FILE__` is the current file name, not the `#include`'ing file.
 - `__DATE__` and `__TIME__` reflect when compilation started, not the current time.
 - `__STDC_VERSION__` values: `199409L` (C95), `199901L` (C99), `201112L` (C11), `201710L` (C17), `202311L` (C23).
-- `__func__` is not a macro but an implicit identifier — it cannot be used in `#if`.
+- `__func__` is not a macro but an implicit identifier â€” it cannot be used in `#if`.
 
 ## 13.14 Macro Pitfalls
 
@@ -1686,7 +1686,7 @@ int main(void)
 
 **Expansion:** `((++x) > (y) ? (++x) : (y))`
 
-**Output:** `z = 3, x = 3` — `x` was incremented twice!
+**Output:** `z = 3, x = 3` â€” `x` was incremented twice!
 
 ### 2. Missing Parentheses
 
@@ -1725,7 +1725,7 @@ y = temp;           /* error: temp not in scope */
 
 ```c
 #define SQUARE(x) ((x) * (x))
-SQUARE("hello")    /* compiles! "hello" * "hello" → garbage error */
+SQUARE("hello")    /* compiles! "hello" * "hello" â†’ garbage error */
 ```
 
 ### 5. Debugging Difficulty
@@ -1756,7 +1756,7 @@ else
 
 ```c
 #include "some_lib.h"    /* some_lib.h might define MIN, MAX */
-#define MIN(a, b) ...    /* redefinition warning/error — or worse, silent override */
+#define MIN(a, b) ...    /* redefinition warning/error â€” or worse, silent override */
 ```
 
 ### Pitfalls at a Glance
@@ -1764,8 +1764,8 @@ else
 
 | Pitfall | Example | Consequence | Fix |
 |---------|---------|-------------|-----|
-| Double eval | `MAX(++x, y)` | Side effects — increment twice | Use inline function |
-| Missing parens | `SQUARE(2+3)` | Wrong precedence — 11 vs 25 | `((x)*(x))` |
+| Double eval | `MAX(++x, y)` | Side effects â€” increment twice | Use inline function |
+| Missing parens | `SQUARE(2+3)` | Wrong precedence â€” 11 vs 25 | `((x)*(x))` |
 | Semicolon | `BAD_SWAP` | Only first statement conditional | `do { } while (0)` |
 | No types | `SQUARE("hello")` | Garbage error | Use inline function |
 | Global scope | `#define MAX` | Collides with library headers | Use `INTPLUS_MAX` prefix |
@@ -1780,11 +1780,11 @@ else
 
 | Aspect | Macro | `static inline` Function |
 |--------|-------|-------------------------|
-| Substitution point | Preprocessor — textual | Compiler — semantic |
+| Substitution point | Preprocessor â€” textual | Compiler â€” semantic |
 | Type checking | None | Full type checking |
-| Side effect protection | None — double evaluation | Safe — arguments evaluated once |
+| Side effect protection | None â€” double evaluation | Safe â€” arguments evaluated once |
 | Can use `#` / `##` | Yes | No |
-| Debugging | Poor — expanded code shown | Normal — function name visible |
+| Debugging | Poor â€” expanded code shown | Normal â€” function name visible |
 | Can be recursive | No | Yes |
 | Can return a value | Yes (expression result) | Yes (return statement) |
 | Scope | From `#define` to `#undef` | Block or file scope |
@@ -1801,7 +1801,7 @@ else
 
 int i = 2;
 int result = SQUARE(++i);
-/* Expands to: ((++i) * (++i)) — i incremented twice! */
+/* Expands to: ((++i) * (++i)) â€” i incremented twice! */
 ```
 
 **Prevention strategies:**
@@ -1823,16 +1823,16 @@ int result = SQUARE(++i);
 **`#` (Stringification):**
 ```c
 #define STR(x) #x
-STR(hello)   → "hello"
-STR(42)      → "42"
+STR(hello)   â†’ "hello"
+STR(42)      â†’ "42"
 ```
 Turns the parameter into a string literal. The parameter is NOT expanded before stringification.
 
 **`##` (Token Pasting):**
 ```c
 #define CONCAT(a, b) a ## b
-CONCAT(var, 123)   → var123
-CONCAT(prefix, _suffix)   → prefix_suffix
+CONCAT(var, 123)   â†’ var123
+CONCAT(prefix, _suffix)   â†’ prefix_suffix
 ```
 Concatenates two tokens into one new token. Both operands are fully expanded before pasting.
 
@@ -1855,7 +1855,7 @@ MAKE_VAR(int, counter)
 `#pragma once` is supported by all major compilers (GCC, Clang, MSVC, ICC, etc.) but is **not ISO C standard**. It is safe for most projects because:
 - Every modern compiler supports it.
 - It eliminates naming collisions that `#ifndef` guards suffer from.
-- It can be faster — the compiler avoids opening the file entirely.
+- It can be faster â€” the compiler avoids opening the file entirely.
 
 **Recommendation:** Use `#pragma once` for new projects. Use `#ifndef` guards only if you need to support obscure or legacy compilers.
 
@@ -1887,22 +1887,22 @@ int fruit_prices[] = { FRUIT_TABLE };
 #undef X
 ```
 
-**Advantages:** Single source of truth — adding a fruit updates enum, name array, and price array simultaneously.
+**Advantages:** Single source of truth â€” adding a fruit updates enum, name array, and price array simultaneously.
 
 ### Q6: Can macros be recursive?
 
 
-No. The C preprocessor has an **expansion barrier** — when a macro is currently being expanded, it is marked and not expanded again. This prevents infinite recursion:
+No. The C preprocessor has an **expansion barrier** â€” when a macro is currently being expanded, it is marked and not expanded again. This prevents infinite recursion:
 
 ```c
-#define REC REC   /* Expands once to REC, then stops — REC stays as text */
+#define REC REC   /* Expands once to REC, then stops â€” REC stays as text */
 ```
 
 There is one level of indirect recursion allowed:
 ```c
 #define A B
 #define B A
-A   /* Expands: A → B → A (stops here) */
+A   /* Expands: A â†’ B â†’ A (stops here) */
 ```
 
 ### Q7: What is the difference between `#ifdef MACRO` and `#if defined(MACRO)`?
@@ -1918,9 +1918,9 @@ Functionally identical for a single condition. The difference:
 | Cannot use `defined()` in `#elif` before C99 | `#elif defined(MACRO)` works |
 
 ```c
-#ifdef A              ←→  #if defined(A)
-#ifndef A             ←→  #if !defined(A)
-                         #if defined(A) || defined(B)   ← can't do with #ifdef
+#ifdef A              â†â†’  #if defined(A)
+#ifndef A             â†â†’  #if !defined(A)
+                         #if defined(A) || defined(B)   â† can't do with #ifdef
 ```
 
 ### Q8: How do you create a debug print macro that includes file and line info?
@@ -1972,7 +1972,7 @@ The `do { } while (0)` requires a semicolon, consumes it, and wraps all statemen
 
 ## 13.16 Applications in Real Systems
 
-### 13.16.1 The Linux Kernel — `container_of` Macro
+### 13.16.1 The Linux Kernel â€” `container_of` Macro
 
 
 One of the most famous macros in systems programming:
@@ -2209,8 +2209,8 @@ MYLIB_API int MYLIB_API_CALL mylib_function(int x);
 | Debug print | `#ifdef DEBUG` / `#define LOG(fmt,...) printf(fmt,__VA_ARGS__)` / `#endif` |
 | Platform check | `#ifdef _WIN32` / `#elif defined(__linux__)` / `#endif` |
 | Assert | `#define ASSERT(x) if(!(x)){fprintf(stderr,"...");abort();}` |
-| Stringify | `#define STR(x) #x` → `STR(hello)` → `"hello"` |
-| Token paste | `#define CAT(a,b) a ## b` → `CAT(x,1)` → `x1` |
+| Stringify | `#define STR(x) #x` â†’ `STR(hello)` â†’ `"hello"` |
+| Token paste | `#define CAT(a,b) a ## b` â†’ `CAT(x,1)` â†’ `x1` |
 | Comment-out | `#if 0` ... `#endif` |
 | Empty macro for flag | `#define FEATURE_X` |
 | Multi-statement | `#define F(x) do { ... } while (0)` |
@@ -2240,7 +2240,7 @@ MYLIB_API int MYLIB_API_CALL mylib_function(int x);
    C) 15
    D) Undefined
 
-<details><summary>Answer&lt;/summary&gt;**B)** `DOUBLE(3)*5` expands to `3+3*5` = `3+15` = 18 — not `(3+3)*5` = 30. This is why parentheses are essential.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** `DOUBLE(3)*5` expands to `3+3*5` = `3+15` = 18 â€” not `(3+3)*5` = 30. This is why parentheses are essential.</details>
 
 2. Which directive stops compilation with a user-defined message?
    A) `#pragma`
@@ -2264,7 +2264,7 @@ MYLIB_API int MYLIB_API_CALL mylib_function(int x);
    C) Deletes the token `TEST`
    D) Creates a function called `TEST`
 
-<details><summary>Answer&lt;/summary&gt;**B)** The `#` operator stringifies the parameter, so `STR(TEST)` → `"TEST"`.</details>
+<details><summary>Answer&lt;/summary&gt;**B)** The `#` operator stringifies the parameter, so `STR(TEST)` â†’ `"TEST"`.</details>
 
 5. What does `CAT(1, 2)` expand to with `#define CAT(a, b) a ## b`?
    A) `1 2`
@@ -2272,7 +2272,7 @@ MYLIB_API int MYLIB_API_CALL mylib_function(int x);
    C) `12`
    D) Error
 
-<details><summary>Answer&lt;/summary&gt;**C)** The `##` operator pastes tokens: `1 ## 2` → `12` (a single integer token).</details>
+<details><summary>Answer&lt;/summary&gt;**C)** The `##` operator pastes tokens: `1 ## 2` â†’ `12` (a single integer token).</details>
 
 6. Why is `do { ... } while (0)` used in multi-statement macros?
    A) To create an infinite loop
@@ -2356,9 +2356,9 @@ MYLIB_API int MYLIB_API_CALL mylib_function(int x);
 
 Write a program that uses the preprocessor to implement a **unit test framework** with the following macros:
 
-- `TEST(name)` — begins a test case.
-- `ASSERT_EQ(actual, expected)` — checks equality; prints file, line, and failure message if not equal.
-- `ASSERT_TRUE(expr)` — checks that expression is true.
-- `TEST_REPORT()` — prints summary of passed/failed tests.
+- `TEST(name)` â€” begins a test case.
+- `ASSERT_EQ(actual, expected)` â€” checks equality; prints file, line, and failure message if not equal.
+- `ASSERT_TRUE(expr)` â€” checks that expression is true.
+- `TEST_REPORT()` â€” prints summary of passed/failed tests.
 
 Use counters (static variables or object-like macros) to track the number of passed and failed tests. Write test cases for a function `factorial` and report the results. *(Hint: use `__LINE__` and `__FILE__` in your assertion macros.)*

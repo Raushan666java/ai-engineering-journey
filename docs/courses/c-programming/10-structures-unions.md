@@ -1,4 +1,4 @@
-# Chapter 10: Structures and Unions
+﻿# Chapter 10: Structures and Unions
 
 > **Previous:** [Pointers](./09-pointers.md) | **Next:** [Dynamic Memory Allocation](./11-dma.md)
 
@@ -18,16 +18,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/10-structures-unions/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/c-programming/10-structures-unions/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/10-structures-unions/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/c-programming/10-structures-unions/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/10-structures-unions/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/c-programming/10-structures-unions/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/10-structures-unions/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/c-programming/10-structures-unions/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/10-structures-unions/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/c-programming/10-structures-unions/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/10-structures-unions/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/c-programming/10-structures-unions/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -75,12 +75,12 @@ flowchart LR
 
 
 Think of a **structure** as an employee record form. The form has fields for:
-- **Employee ID** (integer — 4 bytes)
-- **Full Name** (string — 50 bytes)
-- **Department Code** (character — 1 byte)
-- **Annual Salary** (floating-point — 8 bytes)
+- **Employee ID** (integer â€” 4 bytes)
+- **Full Name** (string â€” 50 bytes)
+- **Department Code** (character â€” 1 byte)
+- **Annual Salary** (floating-point â€” 8 bytes)
 
-When HR designs the blank form (the **struct definition**), they decide what slots exist but fill in no values. When they fill out a specific employee's form (the **struct variable**), each slot gets an actual value. If they print 100 blank forms and stack them in a binder, that is an **array of structures** — each form identical in layout, each holding different data.
+When HR designs the blank form (the **struct definition**), they decide what slots exist but fill in no values. When they fill out a specific employee's form (the **struct variable**), each slot gets an actual value. If they print 100 blank forms and stack them in a binder, that is an **array of structures** â€” each form identical in layout, each holding different data.
 
 ```
 +--------------------------------------------+
@@ -106,9 +106,9 @@ struct tag_name {
 };    /* semicolon mandatory */
 ```
 
-- `struct` — keyword that begins the definition
-- `tag_name` — name of this structure type (optional if `typedef` is used)
-- `member1`, `member2` — members (fields) of possibly different types
+- `struct` â€” keyword that begins the definition
+- `tag_name` â€” name of this structure type (optional if `typedef` is used)
+- `member1`, `member2` â€” members (fields) of possibly different types
 - The closing `}` is followed by a **semicolon** (this is a statement)
 
 ### Declaring Structure Variables
@@ -121,7 +121,7 @@ struct employee {
     char name[50];
     char dept_code;
     double salary;
-};   /* definition — zero memory allocated */
+};   /* definition â€” zero memory allocated */
 
 struct employee emp1;    /* 64 bytes allocated (plus padding) */
 struct employee emp2;    /* another 64 bytes */
@@ -132,7 +132,7 @@ struct point {
     int y;
 } p1, p2;   /* p1 and p2 are global/scope-level variables of type struct point */
 
-/* Method 3: Anonymous struct (no tag) — one-shot type */
+/* Method 3: Anonymous struct (no tag) â€” one-shot type */
 struct {
     int x;
     int y;
@@ -157,10 +157,10 @@ struct employee {
 ### Numbered Steps to Define and Use a Struct
 
 
-1. **Identify the logical grouping** — what real-world entity are you modeling? (student, book, point, packet header)
+1. **Identify the logical grouping** â€” what real-world entity are you modeling? (student, book, point, packet header)
 2. **List the fields** with their C data types and intended sizes
-3. **Write the struct definition** — `struct name { type1 field1; type2 field2; ... };`
-4. **Add typedef** (optional) — `typedef struct name Name;` or combine
+3. **Write the struct definition** â€” `struct name { type1 field1; type2 field2; ... };`
+4. **Add typedef** (optional) â€” `typedef struct name Name;` or combine
 5. **Declare variables** of the struct type
 6. **Initialize** using an initializer list or designated initializers
 7. **Access members** with `.` (dot) operator for direct access or `->` (arrow) for pointers
@@ -263,9 +263,9 @@ Total: 4 + 50 + 1 + 1(pad) + 8 = **64 bytes**
 |-----------|----------------|-----------------|
 | Struct definition | O(1) | O(1) blueprint |
 | Variable declaration | O(1) | O(size of struct) |
-| Member access (assign/read) | O(1) | — |
+| Member access (assign/read) | O(1) | â€” |
 | Struct copy (`=`) | O(n) where n = size of struct | O(size of struct) |
-| `sizeof(struct)` | O(1) compile-time | — |
+| `sizeof(struct)` | O(1) compile-time | â€” |
 
 ### Advantages and Disadvantages
 
@@ -283,11 +283,11 @@ Total: 4 + 50 + 1 + 1(pad) + 8 = **64 bytes**
 
 
 1. **Empty struct:** In C, `struct empty {};` has a size of 0 (GCC extension); standard C forbids empty structs.
-2. **Flexible array member (C99):** The last member of a struct can be an incomplete array type `type flex[];` — `sizeof` excludes the flexible array.
-3. **Self-referential:** `struct node { int data; struct node *next; };` — uses a pointer, not an embedded struct, since the size must be known.
-4. **Incomplete type:** `struct employee;` — a forward declaration. The struct body is not yet visible; only pointers to it can be declared.
+2. **Flexible array member (C99):** The last member of a struct can be an incomplete array type `type flex[];` â€” `sizeof` excludes the flexible array.
+3. **Self-referential:** `struct node { int data; struct node *next; };` â€” uses a pointer, not an embedded struct, since the size must be known.
+4. **Incomplete type:** `struct employee;` â€” a forward declaration. The struct body is not yet visible; only pointers to it can be declared.
 5. **Tag namespace:** Struct tags live in a separate namespace from variable names. `struct foo { int x; }; int foo;` is valid but confusing.
-6. **Anonymous struct (C11):** `struct { int x; int y; };` inside another struct — members are accessed directly without an intermediate name.
+6. **Anonymous struct (C11):** `struct { int x; int y; };` inside another struct â€” members are accessed directly without an intermediate name.
 
 ---
 
@@ -308,7 +308,7 @@ struct employee {
     double salary;
 };
 
-/* Positional initializer — order must match declaration */
+/* Positional initializer â€” order must match declaration */
 struct employee emp1 = {1001, "Alice Johnson", 'E', 75000.50};
 ```
 
@@ -392,7 +392,7 @@ int main(void)
     /* 2. Designated initializer (C99) */
     Employee e2 = {.id = 1002, .name = "Bob Smith", .dept_code = 'M', .salary = 82000.00};
 
-    /* 3. Partial designated — omitted fields zeroed */
+    /* 3. Partial designated â€” omitted fields zeroed */
     Employee e3 = {.id = 1003, .name = "Carol Lee"};
     /* e3.dept_code = 0 ('\0'), e3.salary = 0.0 */
 
@@ -712,7 +712,7 @@ Offset: 0    4                   54      56               212   216       224
 ### Real-World Analogy: Library Catalog
 
 
-A library has hundreds of books. Each book has a title, author, ISBN, and year. Rather than creating separate variables `book1`, `book2`, ..., `book500`, you create an **array of structures** — a single collection of identical records.
+A library has hundreds of books. Each book has a title, author, ISBN, and year. Rather than creating separate variables `book1`, `book2`, ..., `book500`, you create an **array of structures** â€” a single collection of identical records.
 
 ```
 +------------------------------------------------------------------+
@@ -863,7 +863,7 @@ Step 5: Read null-terminated string from that address -> "Frank Herbert"
 ### Real-World Analogy: Business Card Pointer
 
 
-You have a business card (the struct) on a table. Someone gives you a slip of paper with the table coordinates ("3rd row, 2nd column") — that's a **pointer to the struct**. To read the name on the card, you follow the coordinates (dereference) and then look at the name field:
+You have a business card (the struct) on a table. Someone gives you a slip of paper with the table coordinates ("3rd row, 2nd column") â€” that's a **pointer to the struct**. To read the name on the card, you follow the coordinates (dereference) and then look at the name field:
 
 - Coordinates -> card -> name field: `(*ptr).name`
 - Shortcut: pointer-arrow-name: `ptr->name`
@@ -900,13 +900,13 @@ typedef struct {
     double salary;
 } Employee;
 
-/* Pass by pointer — efficient, modifiable */
+/* Pass by pointer â€” efficient, modifiable */
 void give_raise(Employee *e, double amount)
 {
     e->salary += amount;   /* modifies the original */
 }
 
-/* Pass by value — slow, creates copy */
+/* Pass by value â€” slow, creates copy */
 void print_employee(Employee e)
 {
     printf("ID: %u, Name: %s, Salary: %.2f\n", e.id, e.name, e.salary);
@@ -984,7 +984,7 @@ Step 4: Read 8 bytes from 0x7FFD3A38 as a double -> 75000.00
 
 | Operation | Time | Notes |
 |-----------|------|-------|
-| `ptr->member` | O(1) | Dereference + offset — one or two instructions |
+| `ptr->member` | O(1) | Dereference + offset â€” one or two instructions |
 | Pass struct by pointer | O(1) | 8 bytes copied (the pointer) |
 | Pass struct by value | O(size) | All bytes copied |
 | `*ptr` dereference | O(1) | Direct memory read |
@@ -1013,11 +1013,11 @@ void safe_print(Employee *ptr) {
 ### Real-World Analogy: Mailbox Sizes
 
 
-Imagine a post office where mailboxes come in fixed sizes: small (1 slot), medium (4 slots), and large (8 slots). If you have a letter that needs the small slot, you could put it in the large slot too — but you would waste 7 slots. The CPU is like this post office: it prefers to read data from addresses that are multiples of the data size. A 4-byte integer reads fastest when its address is a multiple of 4. When a struct member falls at an address that's not a multiple of its size, the compiler inserts **padding bytes** as filler to push it to the next aligned address.
+Imagine a post office where mailboxes come in fixed sizes: small (1 slot), medium (4 slots), and large (8 slots). If you have a letter that needs the small slot, you could put it in the large slot too â€” but you would waste 7 slots. The CPU is like this post office: it prefers to read data from addresses that are multiples of the data size. A 4-byte integer reads fastest when its address is a multiple of 4. When a struct member falls at an address that's not a multiple of its size, the compiler inserts **padding bytes** as filler to push it to the next aligned address.
 
 ```
 CPU reads 4-byte chunks fastest at addresses 0, 4, 8, 12, ...
-If an int is at address 2, the CPU must do TWO reads and merge — slow!
+If an int is at address 2, the CPU must do TWO reads and merge â€” slow!
 
 +------+------+------+------+
 |   0  |   1  |   2  |   3  | <- address
@@ -1096,14 +1096,14 @@ struct badly_ordered {
 };
 
 struct well_ordered {
-    double d;     /* 8 — largest first */
+    double d;     /* 8 â€” largest first */
     int i;        /* 4 */
     short s;      /* 2 */
     char c;       /* 1 */
     /* 1 byte padding at end to make total multiple of alignof(double)=8 */
 };
 
-/* Packed version — no padding (GCC/Clang) */
+/* Packed version â€” no padding (GCC/Clang) */
 struct __attribute__((packed)) packed_struct {
     char c;
     int i;
@@ -1178,7 +1178,7 @@ Offset: 0                         7  8        11 12 13 14 15
         +--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
 ```
 
-**packed_struct (15 bytes — no padding):**
+**packed_struct (15 bytes â€” no padding):**
 ```
 Offset: 0  1  2  3  4  5  6  7  8  9  10 11 12 13 14
         +--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
@@ -1239,7 +1239,7 @@ struct my_packed_msvc {
 ### Real-World Analogy: Luggage Tags
 
 
-An airport luggage tag has multiple pieces of information: flight number (needs ~5 decimal digits = 17 bits), destination gate (A-Z = 5 bits), bag count (0-9 = 4 bits), priority flag (yes/no = 1 bit). Instead of using separate integers (4 bytes each = 16 bytes total), you pack all this into a single 32-bit integer. That's exactly what bit fields do — they let you specify the **exact number of bits** each field occupies.
+An airport luggage tag has multiple pieces of information: flight number (needs ~5 decimal digits = 17 bits), destination gate (A-Z = 5 bits), bag count (0-9 = 4 bits), priority flag (yes/no = 1 bit). Instead of using separate integers (4 bytes each = 16 bytes total), you pack all this into a single 32-bit integer. That's exactly what bit fields do â€” they let you specify the **exact number of bits** each field occupies.
 
 ```
 Without bit fields (16 bytes):
@@ -1270,7 +1270,7 @@ Where `type` must be `int`, `unsigned int`, `signed int`, or `_Bool` (C99). Some
 ```c
 #include <stdio.h>
 
-/* Device control register — packed into 16 bits */
+/* Device control register â€” packed into 16 bits */
 typedef struct {
     unsigned int power    : 1;   /* bit 0:  1 = on */
     unsigned int mode     : 3;   /* bits 1-3: mode (0-7) */
@@ -1280,7 +1280,7 @@ typedef struct {
     unsigned int reserved : 2;   /* bits 14-15: reserved */
 } DeviceControl;
 
-/* Date compact — store in 4 bytes */
+/* Date compact â€” store in 4 bytes */
 typedef struct {
     unsigned int day   : 5;    /* 1-31   */
     unsigned int month : 4;    /* 1-12   */
@@ -1308,7 +1308,7 @@ int main(void)
     printf("\nDate: %u-%02u-%04u\n", today.month, today.day, 2000 + today.year);
     printf("Size: %zu bytes (vs 12 bytes for 3 ints)\n", sizeof(today));
 
-    /* Bit field overflow — truncated to width */
+    /* Bit field overflow â€” truncated to width */
     ctrl.mode = 8;   /* 8 = 1000 binary, only 3 bits -> 000 = 0 */
     printf("\nAfter overflow: mode = %u (expected 0)\n", ctrl.mode);
 
@@ -1362,7 +1362,7 @@ typedef struct {
 | **Signedness** | `int` bit field may be signed or unsigned depending on compiler. Always use `unsigned int` for portability. |
 | **Storage unit** | Whether fields can cross storage-unit boundaries is implementation-defined. |
 | **Alignment** | The address alignment of the struct containing bit fields is not guaranteed. |
-| **Atomic access** | Reading/writing individual bit fields is NOT atomic — adjacent fields in the same byte may be corrupted by concurrent access. |
+| **Atomic access** | Reading/writing individual bit fields is NOT atomic â€” adjacent fields in the same byte may be corrupted by concurrent access. |
 | **`offsetof`** | `offsetof` cannot be used on bit fields. |
 
 ### Edge Cases
@@ -1371,7 +1371,7 @@ typedef struct {
 1. **Overflow:** Assigning a value larger than the bit width truncates to the lower bits
 2. **Signed bit fields:** `signed int x : 2;` can hold -2 to 1 (not -3 to 3 as one might assume)
 3. **Array of bit fields:** Not possible. `struct { int a : 4; } arr[10];` is legal (allocates 10 ints each using 4 bits)
-4. **Pointer to bit field:** Not possible. `int *p = &ctrl.mode;` is illegal — you must access through the struct
+4. **Pointer to bit field:** Not possible. `int *p = &ctrl.mode;` is illegal â€” you must access through the struct
 
 ---
 
@@ -1477,7 +1477,7 @@ Rect: 100x50
 ### Real-World Analogy: Parking Spot
 
 
-A parking spot can hold **one vehicle at a time** — a compact car (4 bytes), an SUV (8 bytes), or a motorcycle (2 bytes). The spot size is determined by the largest vehicle it can accommodate (8 bytes for the SUV). At any moment, only ONE vehicle is in the spot. If you park an SUV, you cannot also park a car there unless you first remove the SUV. That's exactly how a **union** works: all members share the same memory, and the total size is that of the **largest member**.
+A parking spot can hold **one vehicle at a time** â€” a compact car (4 bytes), an SUV (8 bytes), or a motorcycle (2 bytes). The spot size is determined by the largest vehicle it can accommodate (8 bytes for the SUV). At any moment, only ONE vehicle is in the spot. If you park an SUV, you cannot also park a car there unless you first remove the SUV. That's exactly how a **union** works: all members share the same memory, and the total size is that of the **largest member**.
 
 ```
 Parking spot analogy:
@@ -1547,15 +1547,15 @@ int main(void)
     /* Store an integer */
     d.i = 42;
     printf("As int:    %d\n", d.i);
-    printf("As float:  %f (garbage — int was last written)\n", d.f);
+    printf("As float:  %f (garbage â€” int was last written)\n", d.f);
     printf("Bytes:     %02x %02x %02x %02x\n",
            d.bytes[0], d.bytes[1], d.bytes[2], d.bytes[3]);
 
-    /* Store a float — overwrites the int */
+    /* Store a float â€” overwrites the int */
     d.f = 3.14f;
     printf("\nAfter d.f = 3.14f:\n");
     printf("As float:  %f\n", d.f);
-    printf("As int:    %d (garbage — float was last written)\n", d.i);
+    printf("As int:    %d (garbage â€” float was last written)\n", d.i);
     printf("Bytes:     %02x %02x %02x %02x\n",
            d.bytes[0], d.bytes[1], d.bytes[2], d.bytes[3]);
 
@@ -1565,7 +1565,7 @@ int main(void)
     printf("&d.i     = %p\n", (void*)&d.i);
     printf("&d.f     = %p\n", (void*)&d.f);
     printf("&d.bytes = %p\n", (void*)&d.bytes);
-    printf("All addresses are IDENTICAL — same storage.\n");
+    printf("All addresses are IDENTICAL â€” same storage.\n");
 
     /* Size */
     printf("\nsizeof(Data) = %zu bytes\n", sizeof(Data));
@@ -1577,12 +1577,12 @@ int main(void)
 **Output (x86-64 little-endian):**
 ```
 As int:    42
-As float:  0.000000 (garbage — int was last written)
+As float:  0.000000 (garbage â€” int was last written)
 Bytes:     2a 00 00 00
 
 After d.f = 3.14f:
 As float:  3.140000
-As int:    1078523331 (garbage — float was last written)
+As int:    1078523331 (garbage â€” float was last written)
 Bytes:     c3 f5 48 40
 
 Address check:
@@ -1590,7 +1590,7 @@ Address check:
 &d.i     = 0x7FFD3A00
 &d.f     = 0x7FFD3A00
 &d.bytes = 0x7FFD3A00
-All addresses are IDENTICAL — same storage.
+All addresses are IDENTICAL â€” same storage.
 
 sizeof(Data) = 4 bytes
 ```
@@ -1599,18 +1599,18 @@ sizeof(Data) = 4 bytes
 
 
 ```
-Step 1: union Data d;    — 4 bytes reserved at 0x7FFD3A00. Uninitialized.
+Step 1: union Data d;    â€” 4 bytes reserved at 0x7FFD3A00. Uninitialized.
 
-Step 2: d.i = 42;       — writes 0x0000002A at 0x7FFD3A00-0x7FFD3A03
+Step 2: d.i = 42;       â€” writes 0x0000002A at 0x7FFD3A00-0x7FFD3A03
                           Memory: [2a 00 00 00]
 
-Step 3: printf("%d", d.i); — reads 4 bytes from 0x7FFD3A00 -> 42 OK
+Step 3: printf("%d", d.i); â€” reads 4 bytes from 0x7FFD3A00 -> 42 OK
 
-Step 4: d.f = 3.14f;    — writes IEEE 754 float 0x4048F5C3 at same address
+Step 4: d.f = 3.14f;    â€” writes IEEE 754 float 0x4048F5C3 at same address
                           Memory: [c3 f5 48 40] (little-endian)
 
-Step 5: printf("%d", d.i); — reads 4 bytes -> 0x4048F5C3 = 1078523331
-                          The int value 42 is GONE — overwritten by float bytes
+Step 5: printf("%d", d.i); â€” reads 4 bytes -> 0x4048F5C3 = 1078523331
+                          The int value 42 is GONE â€” overwritten by float bytes
 ```
 
 ### Type Punning (Legal and Illegal Uses)
@@ -1625,9 +1625,9 @@ union {
     uint32_t i;
 } u;
 u.f = 3.14f;
-uint32_t bits = u.i;   /* read the raw IEEE 754 bits — implementation-defined */
+uint32_t bits = u.i;   /* read the raw IEEE 754 bits â€” implementation-defined */
 
-/* ILLEGAL type punning — violates strict aliasing */
+/* ILLEGAL type punning â€” violates strict aliasing */
 float f = 3.14f;
 uint32_t bits = *(uint32_t*)&f;   /* UNDEFINED BEHAVIOR */
 ```
@@ -1646,7 +1646,7 @@ uint32_t bits = *(uint32_t*)&f;   /* UNDEFINED BEHAVIOR */
 
 | Advantages | Disadvantages |
 |-----------|--------------|
-| Saves memory when only one variant is active at a time | No type safety — must track active member manually |
+| Saves memory when only one variant is active at a time | No type safety â€” must track active member manually |
 | Enables type punning (portable) | Reading inactive member gives garbage |
 | Useful for protocol parsing (same bytes, different interpretations) | Cannot have constructors/destructors for individual members (C only) |
 | Discriminated union pattern provides tagged type safety | Bit-level layout may not match network byte order without manual conversion |
@@ -1676,7 +1676,7 @@ uint32_t bits = *(uint32_t*)&f;   /* UNDEFINED BEHAVIOR */
 |--------|----------|---------|
 | **Memory** | Sum of all members + padding | Size of largest member |
 | **Member accessibility** | All members accessible at any time | Only one member active at a time |
-| **Member addresses** | Different — each member gets unique offset | Identical — all members start at offset 0 |
+| **Member addresses** | Different â€” each member gets unique offset | Identical â€” all members start at offset 0 |
 | **Initialization** | `{val1, val2, ...}` initializes each member in order | `{val}` initializes only the FIRST member |
 | **Copy behavior** | Copies all members | Copies all bytes of the largest member |
 | **Use case** | Record/entity with multiple attributes | Variant/option that can be one of several types |
@@ -1713,14 +1713,14 @@ int main(void)
     printf("sizeof(StructExample) = %zu\n", sizeof(StructExample));
     printf("sizeof(UnionExample)  = %zu\n", sizeof(UnionExample));
 
-    printf("\n=== STRUCT — all members valid ===\n");
+    printf("\n=== STRUCT â€” all members valid ===\n");
     printf("s.i = %d\n", s.i);
     printf("s.f = %f\n", s.f);
     printf("s.c = %c\n", s.c);
 
-    printf("\n=== UNION — only last written member valid ===\n");
+    printf("\n=== UNION â€” only last written member valid ===\n");
     printf("u.f = %f (valid)\n", u.f);
-    printf("u.i = %d (garbage — same bytes interpreted as int)\n", u.i);
+    printf("u.i = %d (garbage â€” same bytes interpreted as int)\n", u.i);
     printf("u.c = %d (garbage)\n", u.c);
 
     printf("\n=== ADDRESSES ===\n");
@@ -1739,14 +1739,14 @@ int main(void)
 sizeof(StructExample) = 12
 sizeof(UnionExample)  = 4
 
-=== STRUCT — all members valid ===
+=== STRUCT â€” all members valid ===
 s.i = 42
 s.f = 3.140000
 s.c = A
 
-=== UNION — only last written member valid ===
+=== UNION â€” only last written member valid ===
 u.f = 3.140000 (valid)
-u.i = 1078523331 (garbage — same bytes interpreted as int)
+u.i = 1078523331 (garbage â€” same bytes interpreted as int)
 u.c = -61 (garbage)
 
 === ADDRESSES ===
@@ -1776,7 +1776,7 @@ typedef struct {
 } Value;
 
 Value v;
-v.i = 42;    /* access i directly — not v.union.i */
+v.i = 42;    /* access i directly â€” not v.union.i */
 v.type = 'i';
 ```
 
@@ -1790,7 +1790,7 @@ typedef struct {
     union {
         unsigned char bytes[4];
         unsigned int word;
-    };                   /* anonymous — both accessed directly */
+    };                   /* anonymous â€” both accessed directly */
     char label[20];
 } Register;
 
@@ -1863,8 +1863,8 @@ Circle: radius=25
 | Member offsets | Each at unique offset increasing by member size | All at offset 0 |
 | sizeof(...) | Sum + padding | Max member size |
 | Use case | Record with multiple attributes | Variant that holds one type at a time |
-| Initialization | `{v1, v2, ...}` — one value per member | `{v}` — initializes first member only |
-| Overlap risk | None — members are disjoint | Writing one member overwrites others |
+| Initialization | `{v1, v2, ...}` â€” one value per member | `{v}` â€” initializes first member only |
+| Overlap risk | None â€” members are disjoint | Writing one member overwrites others |
 | Copy behavior | Member-by-member or `memcpy` | `memcpy` the largest member |
 | Address of members | All different (base + offset) | All identical (same as base) |
 | Array of | Each element has the full struct size | Each element has the max member size |
@@ -1877,7 +1877,7 @@ Circle: radius=25
 | Aspect | Default (Padded) | Packed |
 |--------|-----------------|--------|
 | Memory usage | Larger (typically 1.5-2x sum of members) | Exact sum of member sizes |
-| Access speed | Fast — aligned loads/writes | Slower — may require unaligned loads |
+| Access speed | Fast â€” aligned loads/writes | Slower â€” may require unaligned loads |
 | Hardware compatibility | Preferred for performance-critical code | Required for network protocols, file formats |
 | Portability | Same struct defined in different compilers may have different layout | `__attribute__((packed))` is GCC-specific; MSVC uses `#pragma pack` |
 | `sizeof` | Larger than expected | Exactly sum of member sizes |
@@ -1983,7 +1983,7 @@ A flexible array member is an array without a specified size as the **last membe
 ```c
 typedef struct {
     int length;
-    double data[];    /* flexible array member — no size */
+    double data[];    /* flexible array member â€” no size */
 } Vector;
 
 /* Allocation */
@@ -2178,7 +2178,7 @@ typedef struct {
     /* 7 bytes padding at end */
 } Record;
 
-/* Binary file I/O — write/read entire records */
+/* Binary file I/O â€” write/read entire records */
 void write_record(FILE *fp, const Record *r)
 {
     fwrite(r, sizeof(Record), 1, fp);
@@ -2230,7 +2230,7 @@ void serialize_record(const Record *r, unsigned char *buf)
 | Disable padding (MSVC) | `#pragma pack(push, 1)` / `#pragma pack(pop)` |
 | Get member offset | `offsetof(struct_type, member)` |
 | Flexible array member | `struct { int len; int data[]; };` |
-| Forward declaration | `struct Node;` — declare pointer before full definition |
+| Forward declaration | `struct Node;` â€” declare pointer before full definition |
 
 ## Cross-Application Matrix
 
@@ -2261,7 +2261,7 @@ void serialize_record(const Record *r, unsigned char *buf)
    C) 8 bytes
    D) 13 bytes
 
-<details><summary>Answer&lt;/summary&gt;**C)** 8 bytes — the size of the largest member (`double`).</details>
+<details><summary>Answer&lt;/summary&gt;**C)** 8 bytes â€” the size of the largest member (`double`).</details>
 
 3. Which operator is shorthand for `(*ptr).member`?
    A) `ptr->member`
@@ -2297,7 +2297,7 @@ void serialize_record(const Record *r, unsigned char *buf)
 
 7. Can you take the address of a bit field member?
    A) Yes, with the `&` operator
-   B) No — bit fields do not have byte addresses
+   B) No â€” bit fields do not have byte addresses
    C) Yes, but only with `volatile`
    D) Only in C++, not in C
 
@@ -2352,5 +2352,5 @@ void serialize_record(const Record *r, unsigned char *buf)
 
 ### Challenge Problem
 
-Implement a simple tagged variant type — a `struct Variant` that can hold an `int`, `double`, `char*`, or another `Variant` (recursive). Use a union with a type tag. Write functions `variant_print`, `variant_add` (add two variants if they are numeric), and `variant_to_string`. Demonstrate nesting by creating a Variant that holds an array of Variants (use a `Variant*` pointer and a count).
+Implement a simple tagged variant type â€” a `struct Variant` that can hold an `int`, `double`, `char*`, or another `Variant` (recursive). Use a union with a type tag. Write functions `variant_print`, `variant_add` (add two variants if they are numeric), and `variant_to_string`. Demonstrate nesting by creating a Variant that holds an array of Variants (use a `Variant*` pointer and a count).
 

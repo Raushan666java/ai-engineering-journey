@@ -1,4 +1,4 @@
-# Chapter 4: CI/CD
+﻿# Chapter 4: CI/CD
 
 > **Prev:** [Build Tools](./03-build-tools.md)
 > **Next:** [Continuous Integration](./04-continuous-integration.md)
@@ -17,16 +17,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/04-cicd/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/04-cicd/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/04-cicd/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/04-cicd/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/04-cicd/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/04-cicd/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/04-cicd/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/04-cicd/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/04-cicd/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/04-cicd/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/04-cicd/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/04-cicd/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -771,7 +771,7 @@ class PipelineCostEstimator {
 
     const recommendations: string[] = [
       totalMinutes > 30 ? 'Consider self-hosted runners for cost savings' : 'Runner costs are within acceptable range',
-      cacheSavings > 0 ? `Cache saves ~$${cacheSavings.toFixed(2)} per build — maintain cache hygiene` : 'Enable caching to reduce costs',
+      cacheSavings > 0 ? `Cache saves ~$${cacheSavings.toFixed(2)} per build â€” maintain cache hygiene` : 'Enable caching to reduce costs',
       slowestStage ? `Optimize "${slowestStage.name}" stage (${slowestStage.durationMinutes}min) with parallel execution` : '',
     ].filter(Boolean);
 
@@ -849,7 +849,7 @@ class GateOrchestrator {
     const failedGates: string[] = [];
 
     for (const gate of relevantGates) {
-      console.log(`?? Gate: ${to} — ${gate.checks.length} check(s)`);
+      console.log(`?? Gate: ${to} â€” ${gate.checks.length} check(s)`);
 
       for (const check of gate.checks) {
         const result = await Promise.race([

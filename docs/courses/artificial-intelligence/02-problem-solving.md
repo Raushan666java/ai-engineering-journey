@@ -1,4 +1,4 @@
-# Chapter 2: Problem-Solving by Search
+﻿# Chapter 2: Problem-Solving by Search
 
 **Previous:** [Chapter 1: Introduction to AI](01-introduction.md) | **Next:** [Chapter 3: Informed Search and Heuristics](03-informed-search.md)
 
@@ -9,16 +9,16 @@ By the conclusion of this chapter, the student will be able to: (1) formulate a 
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/02-problem-solving/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/02-problem-solving/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/02-problem-solving/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/02-problem-solving/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/02-problem-solving/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/02-problem-solving/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/02-problem-solving/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -29,9 +29,9 @@ By the conclusion of this chapter, the student will be able to: (1) formulate a 
 
 ## Why Problem Solving in AI Matters
 
-> **Real-World Analogy — GPS Navigation**
+> **Real-World Analogy â€” GPS Navigation**
 
-Imagine you are driving in an unfamiliar city and need to reach a specific restaurant. You have a map (the state space), you know your current location (initial state), and you know the restaurant's address (goal state). Each road you can turn onto is an **action**, and the new intersection you arrive at is the **resulting state**. A GPS navigation system solves exactly this problem — it searches through millions of possible routes, evaluates which ones are shortest or fastest, and presents you with the optimal path. Every time you use Google Maps, Waze, or Apple Maps, you are relying on **search algorithms** that were born in AI research. The same ideas power chess engines, robot motion planning, and even the way your email spam filter classifies messages. Problem-solving by search is the **foundation of intelligent decision-making** in AI.
+Imagine you are driving in an unfamiliar city and need to reach a specific restaurant. You have a map (the state space), you know your current location (initial state), and you know the restaurant's address (goal state). Each road you can turn onto is an **action**, and the new intersection you arrive at is the **resulting state**. A GPS navigation system solves exactly this problem â€” it searches through millions of possible routes, evaluates which ones are shortest or fastest, and presents you with the optimal path. Every time you use Google Maps, Waze, or Apple Maps, you are relying on **search algorithms** that were born in AI research. The same ideas power chess engines, robot motion planning, and even the way your email spam filter classifies messages. Problem-solving by search is the **foundation of intelligent decision-making** in AI.
 
 ---
 
@@ -65,7 +65,7 @@ flowchart LR
 
 ## 2.1 Problem Formulation
 
-> **Real-World Analogy — Planning a Road Trip**
+> **Real-World Analogy â€” Planning a Road Trip**
 
 Suppose you are planning a road trip from New York to Los Angeles. You need to decide:
 - **Initial state:** New York City (where you start)
@@ -90,25 +90,25 @@ Problem formulation is the process of abstracting a real-world situation into a 
 
 > **Key Insight:** A **solution** is a sequence of actions that transforms the initial state into a goal state. An **optimal solution** minimizes the total path cost.
 
-### 2.1.2 Algorithm — Problem Formulation Steps
+### 2.1.2 Algorithm â€” Problem Formulation Steps
 
 
 ```
 ALGORITHM: FormulateProblem(realWorldSituation)
-1. Identify the agent's possible starting configurations → Initial state
-2. Define the set of all reachable configurations → State space
-3. For each state, list all legal moves → Actions(s)
-4. Define Result(s, a) for every state–action pair → Transition model
-5. Specify the condition that identifies success → Goal test
-6. Assign a cost to each action → Path cost
+1. Identify the agent's possible starting configurations â†’ Initial state
+2. Define the set of all reachable configurations â†’ State space
+3. For each state, list all legal moves â†’ Actions(s)
+4. Define Result(s, a) for every stateâ€“action pair â†’ Transition model
+5. Specify the condition that identifies success â†’ Goal test
+6. Assign a cost to each action â†’ Path cost
 7. RETURN a tuple (S, s0, Actions, Result, GoalTest, Cost)
 ```
 
-### 2.1.3 Dry Run — Formulating the 8-Puzzle
+### 2.1.3 Dry Run â€” Formulating the 8-Puzzle
 
 
 ```
-Situation: A 3×3 sliding puzzle with tiles 1-8 and one blank.
+Situation: A 3Ã—3 sliding puzzle with tiles 1-8 and one blank.
 
 Step 1: Initial state s0 = [[5,1,3],[8,2,4],[7,6,blank]]
 Step 2: State space S = all 9!/2 = 181,440 valid tile arrangements
@@ -189,9 +189,9 @@ class EightPuzzle(Problem):
 
 | Aspect | Analysis |
 |--------|----------|
-| **Time** | O(1) to formulate — the problem is defined once at the start. |
+| **Time** | O(1) to formulate â€” the problem is defined once at the start. |
 | **Space** | O(\|S\|) in the worst case, where \|S\| is the size of the state space. For the 8-puzzle, \|S\| = 181,440 states. |
-| **Why?** | Problem formulation is a one-time setup cost. The state space may be huge (e.g., chess has ~10^43 states), but we only define the rules — we don't generate all states at once. |
+| **Why?** | Problem formulation is a one-time setup cost. The state space may be huge (e.g., chess has ~10^43 states), but we only define the rules â€” we don't generate all states at once. |
 
 ### 2.1.6 Advantages & Disadvantages
 
@@ -218,9 +218,9 @@ class EightPuzzle(Problem):
 
 ## 2.2 Search Space and State-Space Graph
 
-> **Real-World Analogy — The Subway Map**
+> **Real-World Analogy â€” The Subway Map**
 
-A subway map shows every station and every connecting line. Given your current station and a destination, the map defines the **search space**: all possible sequences of train rides you could take. Some routes are direct, others require transfers. The subway map is your **state-space graph** — stations are states, train lines between them are actions. Your job (and the AI's) is to find a sequence of rides that gets you to your destination.
+A subway map shows every station and every connecting line. Given your current station and a destination, the map defines the **search space**: all possible sequences of train rides you could take. Some routes are direct, others require transfers. The subway map is your **state-space graph** â€” stations are states, train lines between them are actions. Your job (and the AI's) is to find a sequence of rides that gets you to your destination.
 
 ### 2.2.1 Formal Definition
 
@@ -247,9 +247,9 @@ flowchart TD
     end
 ```
 
-> **Key Insight:** The state-space graph may be **implicit** — we generate states on-the-fly using the transition model rather than storing the entire graph. An explicit graph is stored in memory; an implicit one is generated lazily.
+> **Key Insight:** The state-space graph may be **implicit** â€” we generate states on-the-fly using the transition model rather than storing the entire graph. An explicit graph is stored in memory; an implicit one is generated lazily.
 
-### 2.2.2 Algorithm — Building the State-Space Graph
+### 2.2.2 Algorithm â€” Building the State-Space Graph
 
 
 ```
@@ -258,9 +258,9 @@ ALGORITHM: BuildStateSpaceGraph(problem)
 2. Add problem.INITIAL as a vertex in G
 3. Initialize a queue Q with problem.INITIAL
 4. WHILE Q is not empty:
-5.     current ← POP(Q)
+5.     current â† POP(Q)
 6.     FOR each action in problem.ACTIONS(current):
-7.         next ← problem.RESULT(current, action)
+7.         next â† problem.RESULT(current, action)
 8.         IF next is not a vertex in G:
 9.             Add next as a vertex in G
 10.            ENQUEUE next into Q
@@ -268,7 +268,7 @@ ALGORITHM: BuildStateSpaceGraph(problem)
 12. RETURN G
 ```
 
-### 2.2.3 Dry Run — Romanian Road Map (Partial)
+### 2.2.3 Dry Run â€” Romanian Road Map (Partial)
 
 
 **Initial state:** Arad
@@ -277,15 +277,15 @@ ALGORITHM: BuildStateSpaceGraph(problem)
 
 | Step | Current State | Frontier (Q) | Vertices Added | Edges Added |
 |------|---------------|--------------|----------------|-------------|
-| 0 | — | [Arad] | {Arad} | — |
-| 1 | Arad | [Zerind, Sibiu, Timisoara] | {Arad, Zerind, Sibiu, Timisoara} | A→Z, A→S, A→T |
-| 2 | Zerind | [Sibiu, Timisoara, Oradea] | {…, Oradea} | Z→O |
-| 3 | Sibiu | [Timisoara, Oradea, Fagaras, Rimnicu] | {…, Fagaras, Rimnicu} | S→F, S→R |
-| 4 | Timisoara | [Oradea, Fagaras, Rimnicu, Lugoj] | {…, Lugoj} | T→L |
-| 5 | Oradea | [Fagaras, Rimnicu, Lugoj] | {…} | O→S (exists) |
-| 6 | Fagaras | [Rimnicu, Lugoj, Bucharest] | {…, Bucharest} | F→B |
-| 7 | Rimnicu | [Lugoj, Bucharest, Pitesti] | {…, Pitesti} | R→P |
-| 8 | Lugoj | [Bucharest, Pitesti, Mehadia] | {…, Mehadia} | L→M |
+| 0 | â€” | [Arad] | {Arad} | â€” |
+| 1 | Arad | [Zerind, Sibiu, Timisoara] | {Arad, Zerind, Sibiu, Timisoara} | Aâ†’Z, Aâ†’S, Aâ†’T |
+| 2 | Zerind | [Sibiu, Timisoara, Oradea] | {â€¦, Oradea} | Zâ†’O |
+| 3 | Sibiu | [Timisoara, Oradea, Fagaras, Rimnicu] | {â€¦, Fagaras, Rimnicu} | Sâ†’F, Sâ†’R |
+| 4 | Timisoara | [Oradea, Fagaras, Rimnicu, Lugoj] | {â€¦, Lugoj} | Tâ†’L |
+| 5 | Oradea | [Fagaras, Rimnicu, Lugoj] | {â€¦} | Oâ†’S (exists) |
+| 6 | Fagaras | [Rimnicu, Lugoj, Bucharest] | {â€¦, Bucharest} | Fâ†’B |
+| 7 | Rimnicu | [Lugoj, Bucharest, Pitesti] | {â€¦, Pitesti} | Râ†’P |
+| 8 | Lugoj | [Bucharest, Pitesti, Mehadia] | {â€¦, Mehadia} | Lâ†’M |
 
 **Result:** Complete graph with 10 cities and 12 road connections discovered.
 
@@ -352,9 +352,9 @@ print(f"Transitions: {len(graph['edges'])}")
 
 | Aspect | Analysis |
 |--------|----------|
-| **Time** | O(\|S\| × b) where \|S\| is the number of states and b is the branching factor |
+| **Time** | O(\|S\| Ã— b) where \|S\| is the number of states and b is the branching factor |
 | **Space** | O(\|S\| + \|E\|) to store the explicit graph |
-| **Why?** | Every state must be visited once, and for each state we generate all b successors. For the 8-puzzle, that is 181,440 × ~2.67 ≈ 484,000 operations. For chess, building the full graph is impossible (~10^43 states). |
+| **Why?** | Every state must be visited once, and for each state we generate all b successors. For the 8-puzzle, that is 181,440 Ã— ~2.67 â‰ˆ 484,000 operations. For chess, building the full graph is impossible (~10^43 states). |
 
 ### 2.2.6 Advantages & Disadvantages
 
@@ -380,9 +380,9 @@ print(f"Transitions: {len(graph['edges'])}")
 
 ## 2.3 Tree Search vs. Graph Search
 
-> **Real-World Analogy — Exploring a Maze vs. Exploring a City**
+> **Real-World Analogy â€” Exploring a Maze vs. Exploring a City**
 
-**Tree search** is like exploring a maze where you have no memory of where you have been — you might revisit the same intersection multiple times. **Graph search** is like exploring a city with a smartphone that marks every street you have already walked — you never waste time retracing your steps.
+**Tree search** is like exploring a maze where you have no memory of where you have been â€” you might revisit the same intersection multiple times. **Graph search** is like exploring a city with a smartphone that marks every street you have already walked â€” you never waste time retracing your steps.
 
 ### 2.3.1 Tree Search
 
@@ -391,12 +391,12 @@ Tree search treats the state space as a tree, ignoring the possibility that the 
 
 ```
 ALGORITHM: TreeSearch(problem)
-1. frontier ← {Node(problem.INITIAL)}
+1. frontier â† {Node(problem.INITIAL)}
 2. LOOP:
 3.     IF frontier is empty: RETURN failure
-4.     node ← REMOVE-CHOICE(frontier)
+4.     node â† REMOVE-CHOICE(frontier)
 5.     IF problem.GOAL-TEST(node.STATE): RETURN SOLUTION(node)
-6.     frontier ← frontier ∪ EXPAND(problem, node)
+6.     frontier â† frontier âˆª EXPAND(problem, node)
 ```
 
 ### 2.3.2 Graph Search
@@ -406,22 +406,22 @@ Graph search tracks visited states in an **explored set** (closed list), prevent
 
 ```
 ALGORITHM: GraphSearch(problem)
-1. frontier ← {Node(problem.INITIAL)}
-2. explored ← ∅
+1. frontier â† {Node(problem.INITIAL)}
+2. explored â† âˆ…
 3. LOOP:
 4.     IF frontier is empty: RETURN failure
-5.     node ← REMOVE-CHOICE(frontier)
+5.     node â† REMOVE-CHOICE(frontier)
 6.     IF problem.GOAL-TEST(node.STATE): RETURN SOLUTION(node)
 7.     ADD node.STATE to explored
 8.     FOR each child in EXPAND(problem, node):
 9.         IF child.STATE not in explored AND child.STATE not in frontier:
-10.            frontier ← frontier ∪ {child}
+10.            frontier â† frontier âˆª {child}
 ```
 
-### 2.3.3 Dry Run — Tree Search vs. Graph Search
+### 2.3.3 Dry Run â€” Tree Search vs. Graph Search
 
 
-**Problem:** Simple graph with states A–B–C–D–E, start = A, goal = E, BFS order.
+**Problem:** Simple graph with states Aâ€“Bâ€“Câ€“Dâ€“E, start = A, goal = E, BFS order.
 
 **Tree Search Trace:**
 
@@ -430,12 +430,12 @@ ALGORITHM: GraphSearch(problem)
 | 1 | [A] | A | B, C | No |
 | 2 | [B, C] | B | A, D | No |
 | 3 | [C, A, D] | C | A, E | No |
-| 4 | [A, D, A, E] | A | — | No (repeat) |
+| 4 | [A, D, A, E] | A | â€” | No (repeat) |
 | 5 | [D, A, E] | D | B, E | No |
-| 6 | [A, E, B, E] | A | — | No (repeat) |
-| 7 | [E, B, E] | E | — | **Yes** |
+| 6 | [A, E, B, E] | A | â€” | No (repeat) |
+| 7 | [E, B, E] | E | â€” | **Yes** |
 
-> **Note:** A, B are expanded multiple times in tree search — wasted work.
+> **Note:** A, B are expanded multiple times in tree search â€” wasted work.
 
 **Graph Search Trace (with explored set):**
 
@@ -444,8 +444,8 @@ ALGORITHM: GraphSearch(problem)
 | 1 | [A] | {} | A | B, C | No |
 | 2 | [B, C] | {A} | B | D | No |
 | 3 | [C, D] | {A, B} | C | E | No |
-| 4 | [D, E] | {A, B, C} | D | — (B explored) | No |
-| 5 | [E] | {A, B, C, D} | E | — | **Yes** |
+| 4 | [D, E] | {A, B, C} | D | â€” (B explored) | No |
+| 5 | [E] | {A, B, C, D} | E | â€” | **Yes** |
 
 > **Key Difference:** Graph search expands 5 nodes; tree search expands 7+ nodes for the same problem. The savings grow exponentially with problem size.
 
@@ -515,11 +515,11 @@ def solution(node):
 
 | Aspect | Tree Search | Graph Search |
 |--------|-------------|--------------|
-| **Time** | O(b^d) — may revisit states | O(b^d) — but typically less due to pruning |
-| **Space** | O(bd) for DFS, O(b^d) for BFS | O(b^d) — explored set adds overhead |
+| **Time** | O(b^d) â€” may revisit states | O(b^d) â€” but typically less due to pruning |
+| **Space** | O(bd) for DFS, O(b^d) for BFS | O(b^d) â€” explored set adds overhead |
 | **Why?** | Tree search generates b children per node for d levels. Graph search avoids revisiting, so effective branching factor is lower in graphs with many paths to the same state. |
 
-### 2.3.6 Tree Search vs. Graph Search — Comparison Table
+### 2.3.6 Tree Search vs. Graph Search â€” Comparison Table
 
 
 | Feature | Tree Search | Graph Search |
@@ -557,9 +557,9 @@ def solution(node):
 
 ## 2.4 Uninformed Search Algorithms
 
-> **Real-World Analogy — Searching a Dark Warehouse**
+> **Real-World Analogy â€” Searching a Dark Warehouse**
 
-Imagine you are in a pitch-black warehouse looking for a specific box. You have no map, no labels, no hints. You must systematically search every aisle. This is **uninformed (blind) search** — you have no information beyond the problem definition to guide your choices.
+Imagine you are in a pitch-black warehouse looking for a specific box. You have no map, no labels, no hints. You must systematically search every aisle. This is **uninformed (blind) search** â€” you have no information beyond the problem definition to guide your choices.
 
 ### 2.4.1 Breadth-First Search (BFS)
 
@@ -568,24 +568,24 @@ BFS expands nodes in order of their depth from the root. All nodes at depth $d$ 
 
 ```
 ALGORITHM: BFS(problem)
-1. node ← Node(problem.INITIAL)
+1. node â† Node(problem.INITIAL)
 2. IF problem.GOAL-TEST(node.STATE): RETURN SOLUTION(node)
-3. frontier ← FIFO queue containing node
-4. explored ← empty set
+3. frontier â† FIFO queue containing node
+4. explored â† empty set
 5. LOOP:
 6.     IF EMPTY(frontier): RETURN failure
-7.     node ← POP(frontier)
+7.     node â† POP(frontier)
 8.     ADD node.STATE to explored
 9.     FOR each action in problem.ACTIONS(node.STATE):
-10.        child ← CHILD-NODE(problem, node, action)
+10.        child â† CHILD-NODE(problem, node, action)
 11.        IF child.STATE not in explored AND child.STATE not in frontier:
 12.            IF problem.GOAL-TEST(child.STATE): RETURN SOLUTION(child)
-13.            frontier ← INSERT(child, frontier)
+13.            frontier â† INSERT(child, frontier)
 ```
 
-**Dry Run — BFS on the Romania Graph**
+**Dry Run â€” BFS on the Romania Graph**
 
-Start: Arad → Goal: Bucharest
+Start: Arad â†’ Goal: Bucharest
 
 | Step | Frontier (FIFO) | Explored | Current | Generated | Goal? |
 |------|-----------------|----------|---------|-----------|-------|
@@ -593,10 +593,10 @@ Start: Arad → Goal: Bucharest
 | 2 | [Zerind, Sibiu, Timisoara] | {Arad} | Zerind | Oradea | No |
 | 3 | [Sibiu, Timisoara, Oradea] | {Arad, Zerind} | Sibiu | Fagaras, Rimnicu | No |
 | 4 | [Timisoara, Oradea, Fagaras, Rimnicu] | {Arad, Zerind, Sibiu} | Timisoara | Lugoj | No |
-| 5 | [Oradea, Fagaras, Rimnicu, Lugoj] | {…, Timisoara} | Oradea | — (Zerind explored) | No |
-| 6 | [Fagaras, Rimnicu, Lugoj] | {…, Oradea} | Fagaras | Bucharest | **Yes** |
+| 5 | [Oradea, Fagaras, Rimnicu, Lugoj] | {â€¦, Timisoara} | Oradea | â€” (Zerind explored) | No |
+| 6 | [Fagaras, Rimnicu, Lugoj] | {â€¦, Oradea} | Fagaras | Bucharest | **Yes** |
 
-**Solution:** Arad → Sibiu → Fagaras → Bucharest (is this optimal? No — Arad → Sibiu → Rimnicu → Pitesti → Bucharest is shorter).
+**Solution:** Arad â†’ Sibiu â†’ Fagaras â†’ Bucharest (is this optimal? No â€” Arad â†’ Sibiu â†’ Rimnicu â†’ Pitesti â†’ Bucharest is shorter).
 
 **Python Implementation:**
 
@@ -604,7 +604,7 @@ Start: Arad → Goal: Bucharest
 from collections import deque
 
 def bfs(problem):
-    """Breadth-First Search — returns solution path or None."""
+    """Breadth-First Search â€” returns solution path or None."""
     initial_node = Node(problem.initial)
     if problem.goal_test(initial_node.state):
         return solution(initial_node)
@@ -636,38 +636,38 @@ DFS expands the deepest unexpanded node first using a LIFO stack.
 
 ```
 ALGORITHM: DFS(problem)
-1. node ← Node(problem.INITIAL)
+1. node â† Node(problem.INITIAL)
 2. IF problem.GOAL-TEST(node.STATE): RETURN SOLUTION(node)
-3. frontier ← LIFO stack containing node
-4. explored ← empty set
+3. frontier â† LIFO stack containing node
+4. explored â† empty set
 5. LOOP:
 6.     IF EMPTY(frontier): RETURN failure
-7.     node ← POP(frontier)
+7.     node â† POP(frontier)
 8.     IF problem.GOAL-TEST(node.STATE): RETURN SOLUTION(node)
 9.     ADD node.STATE to explored
 10.    FOR each action in problem.ACTIONS(node.STATE):
-11.        child ← CHILD-NODE(problem, node, action)
+11.        child â† CHILD-NODE(problem, node, action)
 12.        IF child.STATE not in explored AND child.STATE not in frontier:
-13.            frontier ← INSERT(child, frontier)
+13.            frontier â† INSERT(child, frontier)
 ```
 
-**Dry Run — DFS on Romania Graph**
+**Dry Run â€” DFS on Romania Graph**
 
 | Step | Frontier (LIFO) | Explored | Current | Generated | Goal? |
 |------|-----------------|----------|---------|-----------|-------|
 | 1 | [Arad] | {} | Arad | Zerind, Sibiu, Timisoara | No |
 | 2 | [Sibiu, Timisoara, Zerind] | {Arad} | Sibiu | Fagaras, Rimnicu | No |
 | 3 | [Rimnicu, Fagaras, Timisoara, Zerind] | {Arad, Sibiu} | Rimnicu | Pitesti | No |
-| 4 | [Pitesti, Fagaras, Timisoara, Zerind] | {…, Rimnicu} | Pitesti | Bucharest | No |
-| 5 | [Bucharest, Fagaras, Timisoara, Zerind] | {…, Pitesti} | Bucharest | — | **Yes** |
+| 4 | [Pitesti, Fagaras, Timisoara, Zerind] | {â€¦, Rimnicu} | Pitesti | Bucharest | No |
+| 5 | [Bucharest, Fagaras, Timisoara, Zerind] | {â€¦, Pitesti} | Bucharest | â€” | **Yes** |
 
-> **Note:** DFS found a different path: Arad → Sibiu → Rimnicu → Pitesti → Bucharest (optimal at 418 km).
+> **Note:** DFS found a different path: Arad â†’ Sibiu â†’ Rimnicu â†’ Pitesti â†’ Bucharest (optimal at 418 km).
 
 **Python Implementation:**
 
 ```python
 def dfs(problem):
-    """Depth-First Search — returns solution path or None."""
+    """Depth-First Search â€” returns solution path or None."""
     frontier = [Node(problem.initial)]
     explored = set()
 
@@ -694,9 +694,9 @@ IDDFS combines DFS's linear space with BFS's completeness and optimality.
 
 ```
 ALGORITHM: IDDFS(problem)
-1. FOR depth = 0 TO ∞:
-2.     result ← DEPTH-LIMITED-SEARCH(problem, depth)
-3.     IF result ≠ cutoff: RETURN result
+1. FOR depth = 0 TO âˆž:
+2.     result â† DEPTH-LIMITED-SEARCH(problem, depth)
+3.     IF result â‰  cutoff: RETURN result
 
 SUBROUTINE: DLS(problem, limit)
 1. RETURN DLS-RECURSIVE(Node(problem.INITIAL), problem, limit)
@@ -704,16 +704,16 @@ SUBROUTINE: DLS(problem, limit)
 SUBROUTINE: DLS-RECURSIVE(node, problem, limit)
 1. IF problem.GOAL-TEST(node.STATE): RETURN SOLUTION(node)
 2. IF limit = 0: RETURN cutoff
-3. cutoff-occurred ← false
+3. cutoff-occurred â† false
 4. FOR each action in problem.ACTIONS(node.STATE):
-5.     child ← CHILD-NODE(problem, node, action)
-6.     result ← DLS-RECURSIVE(child, problem, limit - 1)
-7.     IF result = cutoff: cutoff-occurred ← true
-8.     ELSE IF result ≠ failure: RETURN result
+5.     child â† CHILD-NODE(problem, node, action)
+6.     result â† DLS-RECURSIVE(child, problem, limit - 1)
+7.     IF result = cutoff: cutoff-occurred â† true
+8.     ELSE IF result â‰  failure: RETURN result
 9. RETURN cutoff if cutoff-occurred else failure
 ```
 
-**Dry Run — IDDFS on a Simple Tree**
+**Dry Run â€” IDDFS on a Simple Tree**
 
 Tree: root(G), children(A, B), grandchildren(C, D, E).
 
@@ -766,23 +766,23 @@ UCS expands the node with the lowest path cost $g(n)$. It is Dijkstra's algorith
 
 ```
 ALGORITHM: UCS(problem)
-1. node ← Node(problem.INITIAL)
-2. frontier ← priority queue ordered by node.PATH-COST
-3. explored ← empty set
+1. node â† Node(problem.INITIAL)
+2. frontier â† priority queue ordered by node.PATH-COST
+3. explored â† empty set
 4. LOOP:
 5.     IF EMPTY(frontier): RETURN failure
-6.     node ← POP(frontier)
+6.     node â† POP(frontier)
 7.     IF problem.GOAL-TEST(node.STATE): RETURN SOLUTION(node)
 8.     ADD node.STATE to explored
 9.     FOR each action in problem.ACTIONS(node.STATE):
-10.        child ← CHILD-NODE(problem, node, action)
+10.        child â† CHILD-NODE(problem, node, action)
 11.        IF child.STATE not in explored AND child.STATE not in frontier:
-12.            frontier ← INSERT(child, frontier)
+12.            frontier â† INSERT(child, frontier)
 13.        ELSE IF child.STATE in frontier with higher cost:
 14.            REPLACE frontier node with child
 ```
 
-**Dry Run — UCS on Romania Graph** (costs in km)
+**Dry Run â€” UCS on Romania Graph** (costs in km)
 
 | Step | Frontier (cost) | Explored | Current | Expanded | Goal? |
 |------|-----------------|----------|---------|----------|-------|
@@ -790,15 +790,15 @@ ALGORITHM: UCS(problem)
 | 2 | Zerind(75), Timisoara(118), Sibiu(140) | {Arad} | Zerind | Oradea(75+71=146) | No |
 | 3 | Timisoara(118), Sibiu(140), Oradea(146) | {Arad,Zerind} | Timisoara | Lugoj(118+111=229) | No |
 | 4 | Sibiu(140), Oradea(146), Lugoj(229) | {Arad,Zerind,Timisoara} | Sibiu | Fagaras(239), Rimnicu(220) | No |
-| 5 | Rimnicu(220), Oradea(146), Lugoj(229), Fagaras(239) | {…,Sibiu} | Rimnicu | Pitesti(220+97=317) | No |
-| 6 | Oradea(146), Lugoj(229), Fagaras(239), Pitesti(317) | {…,Rimnicu} | Oradea | — (Sibiu explored) | No |
-| 7 | Lugoj(229), Fagaras(239), Pitesti(317) | {…,Oradea} | Lugoj | Mehadia(229+70=299) | No |
-| 8 | Fagaras(239), Mehadia(299), Pitesti(317) | {…,Lugoj} | Fagaras | Bucharest(239+211=450) | No |
-| 9 | Mehadia(299), Pitesti(317), Bucharest(450) | {…,Fagaras} | Mehadia | … | No |
-| 10 | Pitesti(317), Bucharest(450) | {…,Mehadia} | Pitesti | **Bucharest(317+101=418)** | No |
-| 11 | **Bucharest(418)**, Bucharest(450) | {…,Pitesti} | Bucharest | — | **Yes** |
+| 5 | Rimnicu(220), Oradea(146), Lugoj(229), Fagaras(239) | {â€¦,Sibiu} | Rimnicu | Pitesti(220+97=317) | No |
+| 6 | Oradea(146), Lugoj(229), Fagaras(239), Pitesti(317) | {â€¦,Rimnicu} | Oradea | â€” (Sibiu explored) | No |
+| 7 | Lugoj(229), Fagaras(239), Pitesti(317) | {â€¦,Oradea} | Lugoj | Mehadia(229+70=299) | No |
+| 8 | Fagaras(239), Mehadia(299), Pitesti(317) | {â€¦,Lugoj} | Fagaras | Bucharest(239+211=450) | No |
+| 9 | Mehadia(299), Pitesti(317), Bucharest(450) | {â€¦,Fagaras} | Mehadia | â€¦ | No |
+| 10 | Pitesti(317), Bucharest(450) | {â€¦,Mehadia} | Pitesti | **Bucharest(317+101=418)** | No |
+| 11 | **Bucharest(418)**, Bucharest(450) | {â€¦,Pitesti} | Bucharest | â€” | **Yes** |
 
-**Solution:** Arad → Sibiu → Rimnicu → Pitesti → Bucharest (418 km) — the **optimal** route.
+**Solution:** Arad â†’ Sibiu â†’ Rimnicu â†’ Pitesti â†’ Bucharest (418 km) â€” the **optimal** route.
 
 **Python Implementation:**
 
@@ -806,7 +806,7 @@ ALGORITHM: UCS(problem)
 import heapq
 
 def ucs(problem):
-    """Uniform-Cost Search — optimal for non-negative costs."""
+    """Uniform-Cost Search â€” optimal for non-negative costs."""
     start_node = Node(problem.initial)
     if problem.goal_test(start_node.state):
         return solution(start_node)
@@ -842,9 +842,9 @@ def ucs(problem):
 
 ## 2.5 Measuring Search Performance
 
-> **Real-World Analogy — Choosing a Search Strategy**
+> **Real-World Analogy â€” Choosing a Search Strategy**
 
-Different search strategies are like different tools in a toolbox. BFS is like a **metal detector** — thorough but slow, guaranteed to find everything. DFS is like a **flashlight beam** — fast and focused but can miss things in the shadows. IDDFS is like a **search party that expands its radius** each hour — thorough like the metal detector but without carrying all the heavy equipment.
+Different search strategies are like different tools in a toolbox. BFS is like a **metal detector** â€” thorough but slow, guaranteed to find everything. DFS is like a **flashlight beam** â€” fast and focused but can miss things in the shadows. IDDFS is like a **search party that expands its radius** each hour â€” thorough like the metal detector but without carrying all the heavy equipment.
 
 ### 2.5.1 The Four Evaluation Dimensions
 
@@ -856,32 +856,32 @@ Every search algorithm is evaluated along four dimensions:
 | **Completeness** | Does it guarantee finding a solution if one exists? | Without completeness, the algorithm may run forever or fail despite a solution existing |
 | **Optimality** | Does it guarantee the lowest-cost solution? | Without optimality, you may waste time, fuel, or money on suboptimal paths |
 | **Time Complexity** | How many nodes are generated? | Determines whether the algorithm finishes in a reasonable time |
-| **Space Complexity** | How many nodes must be stored simultaneously? | Often the binding constraint — memory is usually scarcer than time |
+| **Space Complexity** | How many nodes must be stored simultaneously? | Often the binding constraint â€” memory is usually scarcer than time |
 
-### 2.5.2 Complexity Analysis — The "Why" Behind Each Formula
+### 2.5.2 Complexity Analysis â€” The "Why" Behind Each Formula
 
 
 | Algorithm | Time | Space | Why Time? | Why Space? |
 |-----------|------|-------|-----------|------------|
-| **BFS** | $O(b^{d+1})$ | $O(b^{d+1})$ | Expands every node at depth $d$ and generates all children of depth-$d$ nodes before detecting the goal. The $+1$ accounts for generating one extra level. | The frontier holds all nodes at the current depth — there are $b^d$ of them, and each has $b$ children, hence $b^{d+1}$. |
-| **DFS** | $O(b^m)$ | $O(bm)$ | In the worst case, DFS goes to maximum depth $m$, exploring $b$ branches per level. $m$ may be much larger than $d$ (solution depth). | Only stores one path from root to leaf ($m$ nodes) plus $b-1$ siblings at each level — hence $O(bm)$. |
-| **IDDFS** | $O(b^d)$ | $O(bd)$ | Root generated $d$ times, children $(d-1)$ times… total = $b^d(1 + \frac{1}{b} + \frac{1}{b^2} + \cdots) \approx b^d \cdot \frac{b}{b-1}$. | Same as DFS: $O(bd)$. Only stores one path plus siblings. |
+| **BFS** | $O(b^{d+1})$ | $O(b^{d+1})$ | Expands every node at depth $d$ and generates all children of depth-$d$ nodes before detecting the goal. The $+1$ accounts for generating one extra level. | The frontier holds all nodes at the current depth â€” there are $b^d$ of them, and each has $b$ children, hence $b^{d+1}$. |
+| **DFS** | $O(b^m)$ | $O(bm)$ | In the worst case, DFS goes to maximum depth $m$, exploring $b$ branches per level. $m$ may be much larger than $d$ (solution depth). | Only stores one path from root to leaf ($m$ nodes) plus $b-1$ siblings at each level â€” hence $O(bm)$. |
+| **IDDFS** | $O(b^d)$ | $O(bd)$ | Root generated $d$ times, children $(d-1)$ timesâ€¦ total = $b^d(1 + \frac{1}{b} + \frac{1}{b^2} + \cdots) \approx b^d \cdot \frac{b}{b-1}$. | Same as DFS: $O(bd)$. Only stores one path plus siblings. |
 | **UCS** | $O(b^{1 + \lfloor C^*/\epsilon \rfloor})$ | $O(b^{1 + \lfloor C^*/\epsilon \rfloor})$ | Explores all nodes with cost $\leq C^*$ (optimal cost). Depth $d$ becomes $C^*/\epsilon$ where $\epsilon$ is the minimum step cost. | Same as BFS with depth replaced by cost layers. |
 
-> **Critical Insight — Why Space Matters More Than Time:** A BFS with $b = 10$ and $d = 12$ generates ~10^13 nodes. At 1 byte per node, that is **10 TB** of RAM — impossible. DFS would use only ~120 nodes. This is why IDDFS is preferred for large problems.
+> **Critical Insight â€” Why Space Matters More Than Time:** A BFS with $b = 10$ and $d = 12$ generates ~10^13 nodes. At 1 byte per node, that is **10 TB** of RAM â€” impossible. DFS would use only ~120 nodes. This is why IDDFS is preferred for large problems.
 
-### 2.5.3 Algorithm — Performance Evaluation
+### 2.5.3 Algorithm â€” Performance Evaluation
 
 
 ```
 ALGORITHM: EvaluatePerformance(algorithm, problem)
-1. start_time ← CURRENT-TIME()
-2. start_memory ← CURRENT-MEMORY-USAGE()
-3. nodes_expanded ← 0
-4. max_frontier_size ← 0
-5. result ← RUN(algorithm, problem, track_nodes_count)
-6. end_time ← CURRENT-TIME()
-7. end_memory ← CURRENT-MEMORY-USAGE()
+1. start_time â† CURRENT-TIME()
+2. start_memory â† CURRENT-MEMORY-USAGE()
+3. nodes_expanded â† 0
+4. max_frontier_size â† 0
+5. result â† RUN(algorithm, problem, track_nodes_count)
+6. end_time â† CURRENT-TIME()
+7. end_memory â† CURRENT-MEMORY-USAGE()
 8. RETURN {
 9.     "solution": result,
 10.    "time": end_time - start_time,
@@ -958,7 +958,7 @@ class SearchMetrics:
 | Edge Case | How to Handle |
 |-----------|---------------|
 | **Variable branching factor** | Use average branching factor $b$ for complexity estimates |
-| **Known solution depth** | Use IDDFS — linear space with BFS-like completeness |
+| **Known solution depth** | Use IDDFS â€” linear space with BFS-like completeness |
 | **Unknown step costs** | Cannot use UCS; fall back to BFS if uniform assumption holds |
 | **Memory-limited environment** | Eliminate BFS and UCS; choose DFS or IDDFS |
 | **Goal at depth 0** | All algorithms detect this in the initial check |
@@ -985,7 +985,7 @@ Problems are classified along three principal dimensions:
 
 | Component | 8-Puzzle | Route Finding (Romania) | Vacuum World |
 |-----------|----------|------------------------|--------------|
-| **State space** | All 9!/2 = 181,440 tile arrangements | All cities in Romania (~20 cities) | All possible dirt + position combos (~2^2 × 2 = 8 states) |
+| **State space** | All 9!/2 = 181,440 tile arrangements | All cities in Romania (~20 cities) | All possible dirt + position combos (~2^2 Ã— 2 = 8 states) |
 | **Initial state** | Given scrambled arrangement | Arad (or any start city) | Any arrangement (e.g., both rooms dirty, agent in left) |
 | **Actions(s)** | {UP, DOWN, LEFT, RIGHT} for blank | {Drive to each neighboring city} | {Left, Right, Suck} |
 | **Result(s,a)** | Blank swaps with adjacent tile | Agent moves to neighboring city | Left/Right moves agent; Suck cleans current room |
@@ -1000,15 +1000,15 @@ Problems are classified along three principal dimensions:
 
 | Algorithm | Complete? | Optimal? | Time | Space | Strategy |
 |-----------|:---:|:---:|:---:|:---:|----------|
-| BFS | ✅ | ✅ (uniform cost) | O(b^{d+1}) | O(b^{d+1}) | FIFO queue |
-| DFS | ❌ (without cycle check) | ❌ | O(b^m) | O(bm) | LIFO stack |
-| IDDFS | ✅ | ✅ (uniform cost) | O(b^d) | O(bd) | Depth-limited iterations |
-| UCS | ✅ | ✅ (positive costs) | O(b^{1+⌊C*/ε⌋}) | O(b^{1+⌊C*/ε⌋}) | Priority queue by g(n) |
-| Bidirectional | ✅ | ✅ | O(b^{d/2}) | O(b^{d/2}) | Two simultaneous searches |
+| BFS | âœ… | âœ… (uniform cost) | O(b^{d+1}) | O(b^{d+1}) | FIFO queue |
+| DFS | âŒ (without cycle check) | âŒ | O(b^m) | O(bm) | LIFO stack |
+| IDDFS | âœ… | âœ… (uniform cost) | O(b^d) | O(bd) | Depth-limited iterations |
+| UCS | âœ… | âœ… (positive costs) | O(b^{1+âŒŠC*/ÎµâŒ‹}) | O(b^{1+âŒŠC*/ÎµâŒ‹}) | Priority queue by g(n) |
+| Bidirectional | âœ… | âœ… | O(b^{d/2}) | O(b^{d/2}) | Two simultaneous searches |
 
 ---
 
-## 2.9 Quick Reference — State-Space Search Components
+## 2.9 Quick Reference â€” State-Space Search Components
 
 | Component | Definition | Example (8-Puzzle) |
 |-----------|-----------|-------------------|
@@ -1025,11 +1025,11 @@ Problems are classified along three principal dimensions:
 
 | Search Method | ML Engineering | Computer Vision | NLP | Research |
 |--------------|:---:|:---:|:---:|:---:|
-| BFS | ⬜ | ⬜ | ⬜ | ✅ |
-| DFS | ⬜ | ⬜ | ✅ | ✅ |
-| IDDFS | ⬜ | ⬜ | ⬜ | ✅ |
-| UCS / Dijkstra | ✅ | ✅ | ⬜ | ✅ |
-| Bidirectional | ⬜ | ⬜ | ⬜ | ⬜ |
+| BFS | â¬œ | â¬œ | â¬œ | âœ… |
+| DFS | â¬œ | â¬œ | âœ… | âœ… |
+| IDDFS | â¬œ | â¬œ | â¬œ | âœ… |
+| UCS / Dijkstra | âœ… | âœ… | â¬œ | âœ… |
+| Bidirectional | â¬œ | â¬œ | â¬œ | â¬œ |
 
 ---
 
@@ -1040,7 +1040,7 @@ Problems are classified along three principal dimensions:
 ### Q1: Explain search space explosion and how to handle it.
 
 
-**The Problem:** In a problem with branching factor $b = 10$ and solution depth $d = 15$, BFS generates $10^{16}$ nodes. At 1 microsecond per node, that is **$10^{10}$ seconds ≈ 317 years**. This is **search space explosion** — the state space grows exponentially with depth, making brute-force search infeasible.
+**The Problem:** In a problem with branching factor $b = 10$ and solution depth $d = 15$, BFS generates $10^{16}$ nodes. At 1 microsecond per node, that is **$10^{10}$ seconds â‰ˆ 317 years**. This is **search space explosion** â€” the state space grows exponentially with depth, making brute-force search infeasible.
 
 **Solutions:**
 - **Heuristic search (A\*):** Guides the search toward promising states, reducing the effective branching factor.
@@ -1083,7 +1083,7 @@ The explored set prevents revisiting states, reducing the effective branching fa
 ### GPS Navigation (Google Maps, Waze, Apple Maps)
 
 
-Route-finding algorithms (A\* with graph search) power every turn-by-turn navigation system. The road network is a graph — intersections are states, roads are edges weighted by distance or travel time. Real-time traffic data dynamically updates edge weights. When you search for "restaurants near me," a variant of BFS explores the graph outward from your location (breadth-first by distance).
+Route-finding algorithms (A\* with graph search) power every turn-by-turn navigation system. The road network is a graph â€” intersections are states, roads are edges weighted by distance or travel time. Real-time traffic data dynamically updates edge weights. When you search for "restaurants near me," a variant of BFS explores the graph outward from your location (breadth-first by distance).
 
 **Why search matters:** Without efficient search algorithms, Google Maps would need minutes (not milliseconds) to compute routes across 100+ million miles of roads.
 
@@ -1151,12 +1151,12 @@ Robots use search to plan physical movements:
 <details><summary>Answer&lt;/summary&gt;B) Graph search requires storing every visited state in the explored set, which can be memory-intensive for large state spaces.</details>
 
 **Q5:** In the Romanian route-finding problem, which path does UCS find from Arad to Bucharest?
-- A) Arad → Sibiu → Fagaras → Bucharest
-- B) Arad → Sibiu → Rimnicu → Pitesti → Bucharest
-- C) Arad → Zerind → Oradea → Sibiu → Bucharest
-- D) Arad → Timisoara → Lugoj → Mehadia → Bucharest
+- A) Arad â†’ Sibiu â†’ Fagaras â†’ Bucharest
+- B) Arad â†’ Sibiu â†’ Rimnicu â†’ Pitesti â†’ Bucharest
+- C) Arad â†’ Zerind â†’ Oradea â†’ Sibiu â†’ Bucharest
+- D) Arad â†’ Timisoara â†’ Lugoj â†’ Mehadia â†’ Bucharest
 
-<details><summary>Answer&lt;/summary&gt;B) UCS finds the optimal path of 418 km: Arad → Sibiu (140) → Rimnicu (220) → Pitesti (317) → Bucharest (418).</details>
+<details><summary>Answer&lt;/summary&gt;B) UCS finds the optimal path of 418 km: Arad â†’ Sibiu (140) â†’ Rimnicu (220) â†’ Pitesti (317) â†’ Bucharest (418).</details>
 
 ---
 
@@ -1169,7 +1169,7 @@ This chapter presented the state-space formulation of search problems and five u
 3. **Tree search** is simple but may revisit states; **graph search** adds an explored set to prevent redundancy.
 4. **BFS** is complete and optimal (uniform costs) but memory-intensive.
 5. **DFS** uses little memory but is neither complete nor optimal.
-6. **IDDFS** combines the best of BFS and DFS — the most practical uninformed strategy.
+6. **IDDFS** combines the best of BFS and DFS â€” the most practical uninformed strategy.
 7. **UCS** finds optimal solutions for any positive-cost problem.
 8. **Performance evaluation** (completeness, optimality, time, space) is essential for algorithm selection.
 

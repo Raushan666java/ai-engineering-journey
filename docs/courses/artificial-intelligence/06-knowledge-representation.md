@@ -1,4 +1,4 @@
-# Chapter 6: Knowledge Representation
+﻿# Chapter 6: Knowledge Representation
 
 **Previous:** [Chapter 6: Logical Agents and Propositional Logic](06-logic.md) | **Next:** [Chapter 7: First-Order Logic and Inference](07-fol.md)
 
@@ -9,16 +9,16 @@ By the conclusion of this chapter, the student will be able to: (1) explain the 
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -27,17 +27,17 @@ By the conclusion of this chapter, the student will be able to: (1) explain the 
 
 ## Why Knowledge Representation Matters
 
-> **Real-World Analogy:** Think of a library cataloging system. A library contains thousands of books, each with a subject, author, publication year, and location. Without a structured catalog (Dewey Decimal System, card catalogs, digital databases), finding a specific book would require searching every shelf. Knowledge representation is the AI equivalent — it provides the schema, categories, and relationships that allow an intelligent system to store, index, retrieve, and infer new knowledge efficiently.
+> **Real-World Analogy:** Think of a library cataloging system. A library contains thousands of books, each with a subject, author, publication year, and location. Without a structured catalog (Dewey Decimal System, card catalogs, digital databases), finding a specific book would require searching every shelf. Knowledge representation is the AI equivalent â€” it provides the schema, categories, and relationships that allow an intelligent system to store, index, retrieve, and infer new knowledge efficiently.
 
 **The Two Core Problems KR Solves:**
 
-1. **Storage & Retrieval** — How do we encode facts about the world so a program can look them up quickly? A semantic network storing "all birds can fly" + "Tweety is a bird" lets us retrieve "Tweety can fly" without storing it explicitly.
-2. **Inference & Discovery** — How do we derive new knowledge from existing facts? If we know "every professor teaches at least one course" and "Dr. Smith is a professor," we can infer "Dr. Smith teaches some course X" without being told explicitly.
+1. **Storage & Retrieval** â€” How do we encode facts about the world so a program can look them up quickly? A semantic network storing "all birds can fly" + "Tweety is a bird" lets us retrieve "Tweety can fly" without storing it explicitly.
+2. **Inference & Discovery** â€” How do we derive new knowledge from existing facts? If we know "every professor teaches at least one course" and "Dr. Smith is a professor," we can infer "Dr. Smith teaches some course X" without being told explicitly.
 
 **Why It Matters for AI:**
-- **Expert Systems** (1980s boom) — MYCIN diagnosed blood infections using ~600 rules encoded as IF-THEN production rules. It outperformed junior doctors.
-- **Semantic Web** (2000s–present) — Google Knowledge Graph powers ~5 billion entity-relationship facts used in search, answering "When was Leonardo da Vinci born?" by traversing structured knowledge.
-- **LLMs + Knowledge Graphs** (2020s) — Hybrid systems combine neural language models with symbolic knowledge bases to ground responses in verified facts, reducing hallucination.
+- **Expert Systems** (1980s boom) â€” MYCIN diagnosed blood infections using ~600 rules encoded as IF-THEN production rules. It outperformed junior doctors.
+- **Semantic Web** (2000sâ€“present) â€” Google Knowledge Graph powers ~5 billion entity-relationship facts used in search, answering "When was Leonardo da Vinci born?" by traversing structured knowledge.
+- **LLMs + Knowledge Graphs** (2020s) â€” Hybrid systems combine neural language models with symbolic knowledge bases to ground responses in verified facts, reducing hallucination.
 
 Without KR, an AI system is just a pattern matcher. With KR, it becomes a reasoner.
 
@@ -70,7 +70,7 @@ flowchart LR
     A --> L[Event Calculus]
 ```
 
-## 6.1 The Ontological Commitment — Ontologies
+## 6.1 The Ontological Commitment â€” Ontologies
 
 > **Real-World Analogy:** An ontology is like the blueprint of a building. Before construction, architects define the floor plan, room types, doorways, and load-bearing walls. Similarly, an ontology defines the categories (rooms), relations (doorways connect rooms), and constraints (walls cannot overlap) that structure a knowledge domain.
 
@@ -81,12 +81,12 @@ Knowledge representation languages vary in their **expressiveness** (what can be
 ### Steps to Build an Ontology
 
 
-1. **Define the domain and scope** — What area of knowledge are we modeling? (e.g., University domain)
-2. **Identify key concepts/classes** — List the important categories (Person, Student, Professor, Course)
-3. **Define class hierarchy** — Arrange classes in a taxonomy (Student ⊑ Person, Professor ⊑ Person)
-4. **Identify relationships (properties/roles)** — Define how classes relate (teaches, enrolledIn)
-5. **Add constraints (axioms)** — Specify logical restrictions (Professor ⊓ Student ⊑ ⊥ — disjointness)
-6. **Populate instances (individuals)** — Add concrete facts (Student(Alice), teaches(Dr.Smith, CS101))
+1. **Define the domain and scope** â€” What area of knowledge are we modeling? (e.g., University domain)
+2. **Identify key concepts/classes** â€” List the important categories (Person, Student, Professor, Course)
+3. **Define class hierarchy** â€” Arrange classes in a taxonomy (Student âŠ‘ Person, Professor âŠ‘ Person)
+4. **Identify relationships (properties/roles)** â€” Define how classes relate (teaches, enrolledIn)
+5. **Add constraints (axioms)** â€” Specify logical restrictions (Professor âŠ“ Student âŠ‘ âŠ¥ â€” disjointness)
+6. **Populate instances (individuals)** â€” Add concrete facts (Student(Alice), teaches(Dr.Smith, CS101))
 
 ### Pseudocode for Ontology Construction
 
@@ -96,12 +96,12 @@ ALGORITHM: BuildOntology
 INPUT: Domain description D
 OUTPUT: Ontology O = (Classes, Hierarchy, Properties, Axioms, Instances)
 
-1. Classes ← ExtractNouns(D)                    // Extract candidate class names
-2. Hierarchy ← InitializeTaxonomy(Classes)       // SubClassOf relationships
-3. Properties ← ExtractRelations(D)              // Object and data properties
-4. DomainRange ← MapProperties(Properties)       // domain/range constraints
-5. Axioms ← GenerateConstraints(Classes, Properties) // disjointness, equivalence
-6. Instances ← PopulateFromData(D)               // Add known individuals
+1. Classes â† ExtractNouns(D)                    // Extract candidate class names
+2. Hierarchy â† InitializeTaxonomy(Classes)       // SubClassOf relationships
+3. Properties â† ExtractRelations(D)              // Object and data properties
+4. DomainRange â† MapProperties(Properties)       // domain/range constraints
+5. Axioms â† GenerateConstraints(Classes, Properties) // disjointness, equivalence
+6. Instances â† PopulateFromData(D)               // Add known individuals
 7. RETURN O = (Classes, Hierarchy, Properties, Axioms, Instances)
 
 // Check consistency using a DL reasoner
@@ -119,12 +119,12 @@ FUNCTION IsConsistent(O):
 |------|--------|----------------|
 | 1 | Define scope: University domain | Domain = {university} |
 | 2 | Identify concepts | Classes = {Person, Student, Professor, Course, Department} |
-| 3 | Define hierarchy | Student ⊑ Person, Professor ⊑ Person, Course ⊑ Object |
+| 3 | Define hierarchy | Student âŠ‘ Person, Professor âŠ‘ Person, Course âŠ‘ Object |
 | 4 | Define relationships | teaches(Domain: Professor, Range: Course), enrolledIn(Domain: Student, Range: Course) |
-| 5 | Add constraints | Professor ⊓ Student ⊑ ⊥ (disjoint), Professor ⊑ ∃teaches.Course (every prof teaches) |
+| 5 | Add constraints | Professor âŠ“ Student âŠ‘ âŠ¥ (disjoint), Professor âŠ‘ âˆƒteaches.Course (every prof teaches) |
 | 6 | Add individuals | Student(Alice), Professor(Dr.Smith), enrolledIn(Alice, CS101) |
-| 7 | Consistency check | All axioms satisfiable ✓ — ontology is consistent |
-| 8 | Inference | Query: Who teaches Alice? → Dr.Smith (via enrolledIn + teaches chain) |
+| 7 | Consistency check | All axioms satisfiable âœ“ â€” ontology is consistent |
+| 8 | Inference | Query: Who teaches Alice? â†’ Dr.Smith (via enrolledIn + teaches chain) |
 
 ### Python Implementation: Basic Ontology Class
 
@@ -204,12 +204,12 @@ print(uni.query_by_class("Person"))             # ['Alice', 'DrSmith']
 
 | Operation | Time Complexity | Space Complexity | Why? |
 |-----------|----------------|-----------------|------|
-| Class insertion | O(1) amortized | O(C) | Hash map append — no traversal |
+| Class insertion | O(1) amortized | O(C) | Hash map append â€” no traversal |
 | Instance insertion | O(1) amortized | O(I) | Hash map append |
 | Ancestor lookup | O(H) | O(H) recursion stack | Traverse hierarchy depth H |
-| Instance-of check | O(I × H) worst | O(1) | Check each of I instances, H levels deep |
-| Query by class | O(I × H) | O(1) | Linear scan of all instances |
-| Consistency check | O(C × R) | O(C + R) | Check each of C classes × R relations |
+| Instance-of check | O(I Ã— H) worst | O(1) | Check each of I instances, H levels deep |
+| Query by class | O(I Ã— H) | O(1) | Linear scan of all instances |
+| Consistency check | O(C Ã— R) | O(C + R) | Check each of C classes Ã— R relations |
 
 Where C = number of classes, I = number of instances, H = hierarchy depth, R = number of relations.
 
@@ -227,17 +227,17 @@ Where C = number of classes, I = number of instances, H = hierarchy depth, R = n
 ### Edge Cases
 
 
-- **Empty ontology:** All queries return empty lists — always validate that classes exist before adding instances.
-- **Cyclic hierarchy:** A ⊑ B, B ⊑ C, C ⊑ A causes infinite recursion in ancestor lookup — use a visited set to detect cycles.
-- **Multiple inheritance with conflict:** Student ⊑ Person, Employee ⊑ Person, TeachingAssistant ⊑ {Student, Employee}. If both Student and Employee define `status`, resolution strategy (depth-first, linearization) matters.
-- **Nominal (singleton) classes:** {Alice} as a class with exactly one instance — queries must handle one-of constructs.
-- **Unsatisfiable concepts:** Person ⊓ ¬Person — the empty concept. Reasoners must detect and report unsat without crashing.
+- **Empty ontology:** All queries return empty lists â€” always validate that classes exist before adding instances.
+- **Cyclic hierarchy:** A âŠ‘ B, B âŠ‘ C, C âŠ‘ A causes infinite recursion in ancestor lookup â€” use a visited set to detect cycles.
+- **Multiple inheritance with conflict:** Student âŠ‘ Person, Employee âŠ‘ Person, TeachingAssistant âŠ‘ {Student, Employee}. If both Student and Employee define `status`, resolution strategy (depth-first, linearization) matters.
+- **Nominal (singleton) classes:** {Alice} as a class with exactly one instance â€” queries must handle one-of constructs.
+- **Unsatisfiable concepts:** Person âŠ“ Â¬Person â€” the empty concept. Reasoners must detect and report unsat without crashing.
 
 ## 6.2 Logic-Based Representation
 
-> **One-Sentence Takeaway:** Knowledge representation languages trade off expressiveness (how much you can say) against tractability (how fast you can reason) — choose the least expressive language that can express your problem.
+> **One-Sentence Takeaway:** Knowledge representation languages trade off expressiveness (how much you can say) against tractability (how fast you can reason) â€” choose the least expressive language that can express your problem.
 
-> **💡 Pro Tip:** Description Logic (DL) sits at the sweet spot of the expressiveness-tractability trade-off. That is why OWL (based on DL) is the W3C standard for the Semantic Web — it is decidable and has polynomial-time classification algorithms.
+> **ðŸ’¡ Pro Tip:** Description Logic (DL) sits at the sweet spot of the expressiveness-tractability trade-off. That is why OWL (based on DL) is the W3C standard for the Semantic Web â€” it is decidable and has polynomial-time classification algorithms.
 
 ### 6.2.1 Propositional Logic
 
@@ -265,7 +265,7 @@ FOL is expressive enough to represent most commonsense knowledge, but inference 
 
 ## 6.3 Semantic Networks
 
-> **Real-World Analogy:** A semantic network is like a family tree. Each node is a person (or concept), and each connecting line is a relationship (parent-of, married-to, sibling-of). If you know your grandfather is a doctor, you can infer your mother's father is a doctor — without being told explicitly. That is inheritance through a semantic network.
+> **Real-World Analogy:** A semantic network is like a family tree. Each node is a person (or concept), and each connecting line is a relationship (parent-of, married-to, sibling-of). If you know your grandfather is a doctor, you can infer your mother's father is a doctor â€” without being told explicitly. That is inheritance through a semantic network.
 
 A **semantic network** is a directed graph where nodes represent concepts or individuals and edges represent relations. Common edge types include:
 - **is-a:** Indicates class membership (Fido is-a Dog).
@@ -277,13 +277,13 @@ A **semantic network** is a directed graph where nodes represent concepts or ind
 ### Steps for Building and Querying a Semantic Network
 
 
-1. **Identify all concepts and individuals** — List the entities (Person, Animal, Dog, Fido, Tweety, Bird)
-2. **Establish is-a hierarchy** — Define class membership (Fido is-a Dog, Dog is-a Animal)
-3. **Add property edges** — Attach attributes (Dog has-property Mammal, Bird can-fly True)
-4. **Add part-of edges** — Define composition (Wing part-of Bird, Tail part-of Dog)
-5. **Inherit properties** — Propagate properties upward/downward (Fido inherits Mammal from Dog)
-6. **Query the network** — Traverse edges to answer questions (Is Fido a mammal?)
-7. **Handle conflicts** — In multiple inheritance, define resolution (e.g., depth-first, linearization)
+1. **Identify all concepts and individuals** â€” List the entities (Person, Animal, Dog, Fido, Tweety, Bird)
+2. **Establish is-a hierarchy** â€” Define class membership (Fido is-a Dog, Dog is-a Animal)
+3. **Add property edges** â€” Attach attributes (Dog has-property Mammal, Bird can-fly True)
+4. **Add part-of edges** â€” Define composition (Wing part-of Bird, Tail part-of Dog)
+5. **Inherit properties** â€” Propagate properties upward/downward (Fido inherits Mammal from Dog)
+6. **Query the network** â€” Traverse edges to answer questions (Is Fido a mammal?)
+7. **Handle conflicts** â€” In multiple inheritance, define resolution (e.g., depth-first, linearization)
 
 ### Pseudocode for Semantic Network Inference
 
@@ -293,10 +293,10 @@ ALGORITHM: SemanticNetworkInference
 INPUT: Network G = (Nodes, Edges), Query Q = (subject, relation)
 OUTPUT: Value or set of values
 
-FUNCTION InheritProperty(node, property, visited=∅):
+FUNCTION InheritProperty(node, property, visited=âˆ…):
     IF node IN visited:
         RETURN None                           // Cycle detected
-    visited ← visited ∪ {node}
+    visited â† visited âˆª {node}
     
     // Direct property check
     IF (node, property, value) IN Edges:
@@ -304,8 +304,8 @@ FUNCTION InheritProperty(node, property, visited=∅):
     
     // Traverse is-a links upward
     FOR each parent WHERE (node, is-a, parent) IN Edges:
-        result ← InheritProperty(parent, property, visited)
-        IF result ≠ None:
+        result â† InheritProperty(parent, property, visited)
+        IF result â‰  None:
             RETURN result
     
     RETURN None                                // Not found
@@ -317,8 +317,8 @@ FUNCTION Query(subject, relation):
         RETURN InheritProperty(subject, relation)
 
 // Shortcut inheritance:
-// For "Fido can-fly": check Fido → Dog → Animal → Mammal → can-fly? → None
-// For "Fido has-property Mammal": check Fido → Dog → Mammal → True
+// For "Fido can-fly": check Fido â†’ Dog â†’ Animal â†’ Mammal â†’ can-fly? â†’ None
+// For "Fido has-property Mammal": check Fido â†’ Dog â†’ Mammal â†’ True
 ```
 
 ### Step-by-Step Dry Run: Animal Kingdom Semantic Network
@@ -336,16 +336,16 @@ FUNCTION Query(subject, relation):
 
 | Query | Step | Node | Property Check | Inherited From | Result |
 |-------|------|------|---------------|----------------|--------|
-| Query(Fido, WarmBlooded) | 1 | Fido | Direct? No | — | Continue |
-| | 2 | Dog | Direct? No | — | Continue |
+| Query(Fido, WarmBlooded) | 1 | Fido | Direct? No | â€” | Continue |
+| | 2 | Dog | Direct? No | â€” | Continue |
 | | 3 | Mammal | Direct? Yes (has-property) | Mammal | **True** |
-| Query(Tweety, Barks) | 1 | Tweety | Direct? No | — | Continue |
-| | 2 | Bird | Direct? No | — | Continue |
-| | 3 | Animal | Direct? No | — | Continue |
-| | 4 | — | None | — | **None** |
-| Query(Tweety, can-fly) | 1 | Tweety | Direct? No | — | Continue |
+| Query(Tweety, Barks) | 1 | Tweety | Direct? No | â€” | Continue |
+| | 2 | Bird | Direct? No | â€” | Continue |
+| | 3 | Animal | Direct? No | â€” | Continue |
+| | 4 | â€” | None | â€” | **None** |
+| Query(Tweety, can-fly) | 1 | Tweety | Direct? No | â€” | Continue |
 | | 2 | Bird | Direct? Yes (can-fly) | Bird | **True** |
-| Query(Fido, Animal) | 1 | Fido | is-a? Yes | Fido → Dog → Mammal → Animal | **True** |
+| Query(Fido, Animal) | 1 | Fido | is-a? Yes | Fido â†’ Dog â†’ Mammal â†’ Animal | **True** |
 
 ### Python Implementation: Semantic Network
 
@@ -424,9 +424,9 @@ print(net.query("Tweety", "can-fly"))        # True
 |-----------|----------------|-----------------|------|
 | Add node | O(1) | O(N) | Hash set insertion |
 | Add edge | O(1) | O(E) | List append |
-| Inheritance lookup | O(E × H) | O(H) recursion | Traverse up to H edges per level |
-| Query property | O(E × H) | O(H) | Follows is-a chain checking E edges |
-| Instance-of check | O(E × H) | O(H) | Same traversal pattern |
+| Inheritance lookup | O(E Ã— H) | O(H) recursion | Traverse up to H edges per level |
+| Query property | O(E Ã— H) | O(H) | Follows is-a chain checking E edges |
+| Instance-of check | O(E Ã— H) | O(H) | Same traversal pattern |
 
 Where N = number of nodes, E = number of edges, H = hierarchy depth.
 
@@ -437,36 +437,36 @@ Where N = number of nodes, E = number of edges, H = hierarchy depth.
 |------------|---------------|
 | Intuitive visual representation | Semantics are not formally defined in early versions |
 | Fast inheritance-based reasoning | Ambiguity in edge types (is-a vs instance-of confusion) |
-| Easy to extend with new nodes | Cannot represent negation (¬) or disjunction (∨) easily |
+| Easy to extend with new nodes | Cannot represent negation (Â¬) or disjunction (âˆ¨) easily |
 | Natural for taxonomies | Multiple inheritance conflicts need arbitrary resolution |
 | Low implementation overhead | No standard for quantifier representation |
 
 ### Edge Cases
 
 
-- **Cyclic is-a:** is-a(A, B), is-a(B, A) — infinite loop. Always use a visited set.
-- **Diamond problem:** B ⊑ A, C ⊑ A, D ⊑ {B, C}. If B and C both define property P differently, which does D inherit? Resolution: depth-first (prefer first parent chain), breadth-first, or explicit override.
-- **No root concept:** Nodes without any is-a link — property lookups return None immediately.
-- **Disconnected subgraphs:** Some nodes may be unreachable from a query start — the traversal simply returns None.
-- **Quacking duck:** If Duck inherits can-quack from Bird but Penguin (also a Bird) does not quack — explicit override at Penguin must block inheritance.
+- **Cyclic is-a:** is-a(A, B), is-a(B, A) â€” infinite loop. Always use a visited set.
+- **Diamond problem:** B âŠ‘ A, C âŠ‘ A, D âŠ‘ {B, C}. If B and C both define property P differently, which does D inherit? Resolution: depth-first (prefer first parent chain), breadth-first, or explicit override.
+- **No root concept:** Nodes without any is-a link â€” property lookups return None immediately.
+- **Disconnected subgraphs:** Some nodes may be unreachable from a query start â€” the traversal simply returns None.
+- **Quacking duck:** If Duck inherits can-quack from Bird but Penguin (also a Bird) does not quack â€” explicit override at Penguin must block inheritance.
 
 ## 6.4 Frames
 
-> **Real-World Analogy:** A frame is like a job application form. The form has empty fields (slots): Name, Age, Education, Experience. Each field has a type (text, number, date) and optionally a default value ("N/A"). When you fill it out, you create an instance. Some fields have validation rules (demons) that trigger when you enter a value — "if Age &lt; 18, flag for parental consent."
+> **Real-World Analogy:** A frame is like a job application form. The form has empty fields (slots): Name, Age, Education, Experience. Each field has a type (text, number, date) and optionally a default value ("N/A"). When you fill it out, you create an instance. Some fields have validation rules (demons) that trigger when you enter a value â€” "if Age &lt; 18, flag for parental consent."
 
 A **frame** (Minsky, 1975) is a structured representation of a concept or object with named **slots** that hold values, procedures, or default information. Frames support **inheritance** through a hierarchy and **procedural attachment**: demons (when-needed, when-changed procedures) trigger computation upon slot access.
 
 ### Steps for Frame-Based Knowledge Representation
 
 
-1. **Define the frame class** — Create a template with named slots and their types
-2. **Set default values** — Specify what each slot contains if not explicitly provided
-3. **Define procedural attachments** — Attach demons: when-needed (compute on access), when-changed (validate on update), when-removed (cleanup)
-4. **Establish frame hierarchy** — Sub-frames inherit slots from parent frames
-5. **Create instances** — Fill slot values for specific individuals
-6. **Attach constraints** — Define restrictions (e.g., age must be non-negative)
-7. **Query slot values** — Retrieve, possibly triggering when-needed demons
-8. **Handle defaults override** — Instance values override class defaults; class defaults override parent defaults
+1. **Define the frame class** â€” Create a template with named slots and their types
+2. **Set default values** â€” Specify what each slot contains if not explicitly provided
+3. **Define procedural attachments** â€” Attach demons: when-needed (compute on access), when-changed (validate on update), when-removed (cleanup)
+4. **Establish frame hierarchy** â€” Sub-frames inherit slots from parent frames
+5. **Create instances** â€” Fill slot values for specific individuals
+6. **Attach constraints** â€” Define restrictions (e.g., age must be non-negative)
+7. **Query slot values** â€” Retrieve, possibly triggering when-needed demons
+8. **Handle defaults override** â€” Instance values override class defaults; class defaults override parent defaults
 
 ### Pseudocode for Frame System
 
@@ -483,18 +483,18 @@ FUNCTION GetSlotValue(F, S):
     
     // Check default values in class definition
     IF S IN F.class_slots:
-        IF F.class_slots[S].default ≠ None:
+        IF F.class_slots[S].default â‰  None:
             RETURN F.class_slots[S].default
     
     // Check parent frame via inheritance
     FOR each parent P IN F.parents:
-        V ← GetSlotValue(P, S)
-        IF V ≠ None:
+        V â† GetSlotValue(P, S)
+        IF V â‰  None:
             RETURN V
     
     // Check when-needed demon
     IF "when-needed" IN F.procedures[S]:
-        V ← Execute(F.procedures[S]["when-needed"])
+        V â† Execute(F.procedures[S]["when-needed"])
         RETURN V
     
     RETURN None
@@ -504,7 +504,7 @@ FUNCTION SetSlotValue(F, S, V):
     IF "when-changed" IN F.procedures[S]:
         Execute(F.procedures[S]["when-changed"], F, S, V)
     
-    F.instance_slots[S] ← V
+    F.instance_slots[S] â† V
 ```
 
 ### Step-by-Step Dry Run: University Course Frame
@@ -519,16 +519,16 @@ Frame: Person
     age: Integer (default: 0)
     email: String
 
-Frame: Student ⊑ Person
+Frame: Student âŠ‘ Person
   Slots:
     student_id: String (default: "TBD")
     gpa: Float (default: 0.0)
     enrolled_courses: List
   Procedures:
-    when-changed(gpa): if gpa < 0 or gpa > 4.0 → raise error
+    when-changed(gpa): if gpa < 0 or gpa > 4.0 â†’ raise error
     when-needed(gpa): compute from grade records
 
-Frame: GraduateStudent ⊑ Student
+Frame: GraduateStudent âŠ‘ Student
   Slots:
     advisor: Person
     thesis_topic: String (default: "TBD")
@@ -540,14 +540,14 @@ Frame: GraduateStudent ⊑ Student
 |------|--------|-------------|
 | 1 | Create frame Person | Person {name: None, age: None, email: None} |
 | 2 | Set defaults | Person {name: "Unknown", age: 0, email: None} |
-| 3 | Create Student ⊑ Person | Student {student_id: "TBD", gpa: 0.0, courses: []} + inherited {name: "Unknown", age: 0} |
-| 4 | Create GraduateStudent ⊑ Student | GradStudent {advisor: None, thesis: "TBD"} + inherited chain |
-| 5 | Create instance: Alice ⊑ Student | Alice.student_id = "S001", Alice.gpa = 3.7, Alice.name = "Alice" |
-| 6 | Query Alice.age | Inherited default → 0 |
-| 7 | Query Alice.name | Instance slot → "Alice" (overrides default "Unknown") |
-| 8 | Set Alice.gpa = -1 | when-changed demon fires → Error: GPA out of range |
-| 9 | Create Bob ⊑ GraduateStudent | Bob.advisor = Dr.Smith, Bob.thesis = "NLP" |
-| 10 | Query Bob.name | Inherited default → "Unknown" (no instance value) |
+| 3 | Create Student âŠ‘ Person | Student {student_id: "TBD", gpa: 0.0, courses: []} + inherited {name: "Unknown", age: 0} |
+| 4 | Create GraduateStudent âŠ‘ Student | GradStudent {advisor: None, thesis: "TBD"} + inherited chain |
+| 5 | Create instance: Alice âŠ‘ Student | Alice.student_id = "S001", Alice.gpa = 3.7, Alice.name = "Alice" |
+| 6 | Query Alice.age | Inherited default â†’ 0 |
+| 7 | Query Alice.name | Instance slot â†’ "Alice" (overrides default "Unknown") |
+| 8 | Set Alice.gpa = -1 | when-changed demon fires â†’ Error: GPA out of range |
+| 9 | Create Bob âŠ‘ GraduateStudent | Bob.advisor = Dr.Smith, Bob.thesis = "NLP" |
+| 10 | Query Bob.name | Inherited default â†’ "Unknown" (no instance value) |
 
 ### Python Implementation: Frame System
 
@@ -668,7 +668,7 @@ alice.set_slot("gpa", 3.9)          # Prints: [DEMON] GPA changing to 3.9 for Al
 | Add slot | O(1) | O(S) | Dictionary insertion |
 | Create instance | O(1) | O(S_I) | New frame, shallow copy of parents |
 | Get slot (instance only) | O(1) | O(1) | Hash lookup |
-| Get slot (with inheritance) | O(D × P) | O(D) | Traverse D ancestors, P parents each |
+| Get slot (with inheritance) | O(D Ã— P) | O(D) | Traverse D ancestors, P parents each |
 | Set slot (with demon) | O(1 + C) | O(1) | Value update + constraint C checks |
 | Slot type check | O(1) | O(1) | isinstance check |
 
@@ -681,22 +681,22 @@ Where S = slots, D = hierarchy depth, P = parents per frame, C = constraint coun
 |------------|---------------|
 | Intuitive object-like structure (precursor to OOP) | No formal semantics in original formulation |
 | Default values reduce storage for common cases | Defaults may cause unexpected inferences |
-| Procedural attachment enables dynamic computation | Demons introduce side effects — hard to debug |
+| Procedural attachment enables dynamic computation | Demons introduce side effects â€” hard to debug |
 | Inheritance reuses knowledge across frames | Multiple inheritance still has conflict issues |
 | Constraints enforce data integrity | No standard reasoning algorithm across implementations |
 
 ### Edge Cases
 
 
-- **Circular inheritance:** GradStudent ⊑ Student ⊑ Person ⊑ GradStudent — use a visited set in get_slot.
-- **Missing slot in demon:** Querying a slot with a when-needed demon that raises an exception — wrap in try/except.
-- **Override ambiguity:** Person has default name = "Unknown", Student overrides name = "Student", instance sets nothing — which is inherited? Instance → class → parent chain resolves it, but some systems use depth-first (Student wins), others use breadth-first.
-- **Demon infinite recursion:** when-needed demon for gpa calls get_slot("gpa") internally — stack overflow. Ensure demons access raw storage, not the getter.
-- **Constraint on default:** Default gpa = 0.0 with constraint [0.0, 4.0] passes; but if later default changes to 5.0, constraint violation — validate defaults at definition time.
+- **Circular inheritance:** GradStudent âŠ‘ Student âŠ‘ Person âŠ‘ GradStudent â€” use a visited set in get_slot.
+- **Missing slot in demon:** Querying a slot with a when-needed demon that raises an exception â€” wrap in try/except.
+- **Override ambiguity:** Person has default name = "Unknown", Student overrides name = "Student", instance sets nothing â€” which is inherited? Instance â†’ class â†’ parent chain resolves it, but some systems use depth-first (Student wins), others use breadth-first.
+- **Demon infinite recursion:** when-needed demon for gpa calls get_slot("gpa") internally â€” stack overflow. Ensure demons access raw storage, not the getter.
+- **Constraint on default:** Default gpa = 0.0 with constraint [0.0, 4.0] passes; but if later default changes to 5.0, constraint violation â€” validate defaults at definition time.
 
 ## 6.5 Conceptual Graphs
 
-> **Real-World Analogy:** A conceptual graph is like a sentence diagram from grammar class. In a sentence diagram, nouns are on one level (concepts) and verbs are connecting lines (relations). "The cat sat on the mat" becomes [Cat] ← (Agent) ← [Sat] → (Location) → [Mat]. Just as sentence diagrams reveal sentence structure, conceptual graphs reveal knowledge structure.
+> **Real-World Analogy:** A conceptual graph is like a sentence diagram from grammar class. In a sentence diagram, nouns are on one level (concepts) and verbs are connecting lines (relations). "The cat sat on the mat" becomes [Cat] â† (Agent) â† [Sat] â†’ (Location) â†’ [Mat]. Just as sentence diagrams reveal sentence structure, conceptual graphs reveal knowledge structure.
 
 **Conceptual graphs** (Sowa, 1984) provide a visual representation equivalent to FOL. Rectangles represent concepts; ovals represent conceptual relations. A conceptual graph is a bipartite graph of concept and relation nodes. The formalism includes:
 - **Canonical formation rules:** Copy, restrict, join, simplify.
@@ -705,12 +705,12 @@ Where S = slots, D = hierarchy depth, P = parents per frame, C = constraint coun
 ### Steps to Build and Reason with Conceptual Graphs
 
 
-1. **Identify concepts** — Extract noun phrases (Person, Book, Library)
-2. **Identify conceptual relations** — Extract verb phrases (borrows, located-in)
-3. **Build the bipartite graph** — Concepts as rectangles, relations as ovals, alternating edges
-4. **Apply canonical formation rules** — Specialize or combine graphs
-5. **Check projection** — Determine if one graph is a specialization of another
-6. **Perform inference** — Derive new graphs via projection or join
+1. **Identify concepts** â€” Extract noun phrases (Person, Book, Library)
+2. **Identify conceptual relations** â€” Extract verb phrases (borrows, located-in)
+3. **Build the bipartite graph** â€” Concepts as rectangles, relations as ovals, alternating edges
+4. **Apply canonical formation rules** â€” Specialize or combine graphs
+5. **Check projection** â€” Determine if one graph is a specialization of another
+6. **Perform inference** â€” Derive new graphs via projection or join
 
 ### Pseudocode for Conceptual Graph Operations
 
@@ -720,18 +720,18 @@ ALGORITHM: ConceptualGraphProjection
 INPUT: Graphs G = (C_G, R_G, E_G) and H = (C_H, R_H, E_H)
 OUTPUT: True if H projects into G (G subsumes H)
 
-FUNCTION Projection(G, H, mapping=∅):
+FUNCTION Projection(G, H, mapping=âˆ…):
     // Every concept in H must map to a concept in G
     FOR each concept c_H IN C_H:
-        IF NOT ∃ c_G IN C_G such that:
-            type(c_H) ⊑ type(c_G) AND
+        IF NOT âˆƒ c_G IN C_G such that:
+            type(c_H) âŠ‘ type(c_G) AND
             referent(c_H) == referent(c_G) (if not generic):
             RETURN False
-        mapping[c_H] ← c_G
+        mapping[c_H] â† c_G
     
     // Every relation in H must map to a relation in G
     FOR each relation r_H IN R_H:
-        IF NOT ∃ r_G IN R_G such that:
+        IF NOT âˆƒ r_G IN R_G such that:
             type(r_H) == type(r_G) AND
             FOR each neighbor n of r_H:
                 mapping[n] is neighbor of r_G:
@@ -741,14 +741,14 @@ FUNCTION Projection(G, H, mapping=∅):
 
 // Canonical formation: Restrict a concept type
 FUNCTION Restrict(G, concept, new_type):
-    IF new_type ⊑ type(concept):
-        G' ← Copy(G)
-        type(concept_G') ← new_type
+    IF new_type âŠ‘ type(concept):
+        G' â† Copy(G)
+        type(concept_G') â† new_type
         RETURN G'
 
 // Canonical formation: Join two graphs on a common concept
 FUNCTION Join(G1, G2, concept_c):
-    G' ← Union(G1, G2)
+    G' â† Union(G1, G2)
     Merge(concept_c_in_G1, concept_c_in_G2)
     RETURN G'
 ```
@@ -757,19 +757,19 @@ FUNCTION Join(G1, G2, concept_c):
 
 
 **Initial Facts:**
-- [Person: Alice] ← (Borrower) ← [Borrow] → (Object) → [Book: "Dune"]
-- [Book: "Dune"] ← (Location) ← [LocatedIn] → (Place) → [Library: Central]
+- [Person: Alice] â† (Borrower) â† [Borrow] â†’ (Object) â†’ [Book: "Dune"]
+- [Book: "Dune"] â† (Location) â† [LocatedIn] â†’ (Place) â†’ [Library: Central]
 
 **Graph 1: "Alice borrows Dune"**
 
 ```
-[Person: Alice] ← (Borrower) ← [Borrow] → (Object) → [Book: "Dune"]
+[Person: Alice] â† (Borrower) â† [Borrow] â†’ (Object) â†’ [Book: "Dune"]
 ```
 
 **Graph 2: "Dune is at Central Library"**
 
 ```
-[Book: "Dune"] ← (Location) ← [LocatedIn] → (Place) → [Library: Central]
+[Book: "Dune"] â† (Location) â† [LocatedIn] â†’ (Place) â†’ [Library: Central]
 ```
 
 | Step | Action | Graph State |
@@ -778,9 +778,9 @@ FUNCTION Join(G1, G2, concept_c):
 | 2 | Identify relation Borrower | R = {Borrower} |
 | 3 | Identify concept Borrow (event) | C = {Person:Alice, Borrow, Book:"Dune"} |
 | 4 | Build edges | E = {(Borrower, Person:Alice), (Borrower, Borrow), (Object, Borrow), (Object, Book:"Dune")} |
-| 5 | Restrict concept: Alice ⊑ Student | C_Alice' = Student:Alice (specialize) |
+| 5 | Restrict concept: Alice âŠ‘ Student | C_Alice' = Student:Alice (specialize) |
 | 6 | Join with Location graph on Book:"Dune" | Combined graph: infer Alice can find Dune at Central |
-| 7 | Query: Can Alice get Dune at Central? | Traverse: Alice → Borrower → Borrow → Object → Book → Location → Place → Central → **Yes** |
+| 7 | Query: Can Alice get Dune at Central? | Traverse: Alice â†’ Borrower â†’ Borrow â†’ Object â†’ Book â†’ Location â†’ Place â†’ Central â†’ **Yes** |
 
 ### Python Implementation: Conceptual Graph
 
@@ -942,8 +942,8 @@ print(f"\nGeneralization match: {g.projection(g2)}")  # True
 | Add concept/relation | O(1) | O(C + R) | Set insertion |
 | Add edge | O(1) | O(E) | Dictionary insertion |
 | Restrict (copy) | O(C + R + E) | O(C + R + E) | Deep copy of entire graph |
-| Projection check | O(C² + R × E²) | O(C) | Nested concept matching × neighbor checks |
-| Join graphs | O(N₁ + N₂) | O(N₁ + N₂) | Set union + merge |
+| Projection check | O(CÂ² + R Ã— EÂ²) | O(C) | Nested concept matching Ã— neighbor checks |
+| Join graphs | O(Nâ‚ + Nâ‚‚) | O(Nâ‚ + Nâ‚‚) | Set union + merge |
 
 Where C = concepts, R = relations, E = edges, N = total graph size.
 
@@ -952,7 +952,7 @@ Where C = concepts, R = relations, E = edges, N = total graph size.
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Visually intuitive — bipartite structure maps to natural language | More verbose than frames or semantic nets for simple hierarchies |
+| Visually intuitive â€” bipartite structure maps to natural language | More verbose than frames or semantic nets for simple hierarchies |
 | Equivalent to FOL with clear formal semantics | Projection (subsumption) is computationally expensive |
 | Canonical formation rules provide principled graph construction | No built-in support for negation or disjunction |
 | Projection directly implements specialization reasoning | Graph size grows quickly with complex knowledge |
@@ -961,11 +961,11 @@ Where C = concepts, R = relations, E = edges, N = total graph size.
 ### Edge Cases
 
 
-- **Disconnected relation:** A relation node with only one edge — semantically invalid (relation must connect at least two concepts).
-- **Generic referent:** [Book] (no specific book) vs [Book: "Dune"] — projection matching treats generic as wildcard.
-- **Cyclic graph:** [Person: Alice] ← (Parent) → [Person: Bob] ← (Parent) → [Person: Alice] — possible in family trees; projection handles via structure, not loops.
-- **Type mismatch in restrict:** Attempting to restrict [Person] to [Book] — rejected if type hierarchy is enforced.
-- **Empty graph:** No concepts or relations — trivially subsumes all graphs but practically useless; guards needed in projection.
+- **Disconnected relation:** A relation node with only one edge â€” semantically invalid (relation must connect at least two concepts).
+- **Generic referent:** [Book] (no specific book) vs [Book: "Dune"] â€” projection matching treats generic as wildcard.
+- **Cyclic graph:** [Person: Alice] â† (Parent) â†’ [Person: Bob] â† (Parent) â†’ [Person: Alice] â€” possible in family trees; projection handles via structure, not loops.
+- **Type mismatch in restrict:** Attempting to restrict [Person] to [Book] â€” rejected if type hierarchy is enforced.
+- **Empty graph:** No concepts or relations â€” trivially subsumes all graphs but practically useless; guards needed in projection.
 
 ## 6.6 Description Logic
 
@@ -986,13 +986,13 @@ A DL knowledge base consists of:
 ### Steps for Description Logic Reasoning
 
 
-1. **Define the TBox** — Declare atomic concepts (Person, Animal) and roles (hasChild, eats)
-2. **Add concept definitions** — Define complex concepts (Mother ≡ Woman ⊓ ∃hasChild.Person)
-3. **Add concept hierarchy** — Declare subsumption axioms (Dog ⊑ Animal)
-4. **Populate the ABox** — Add individual assertions (Person(Alice), hasChild(Alice, Bob))
-5. **Classify the TBox** — Compute full concept hierarchy using subsumption reasoning
-6. **Realize the ABox** — Determine all concept memberships for each individual
-7. **Answer queries** — Instance check, retrieval, subsumption queries
+1. **Define the TBox** â€” Declare atomic concepts (Person, Animal) and roles (hasChild, eats)
+2. **Add concept definitions** â€” Define complex concepts (Mother â‰¡ Woman âŠ“ âˆƒhasChild.Person)
+3. **Add concept hierarchy** â€” Declare subsumption axioms (Dog âŠ‘ Animal)
+4. **Populate the ABox** â€” Add individual assertions (Person(Alice), hasChild(Alice, Bob))
+5. **Classify the TBox** â€” Compute full concept hierarchy using subsumption reasoning
+6. **Realize the ABox** â€” Determine all concept memberships for each individual
+7. **Answer queries** â€” Instance check, retrieval, subsumption queries
 
 ### Pseudocode for DL Tableau Reasoner (Satisfiability)
 
@@ -1003,26 +1003,26 @@ INPUT: Concept C, TBox T
 OUTPUT: SAT or UNSAT
 
 FUNCTION IsSatisfiable(C, T):
-    A ← {C(x)} for a fresh individual x   // Initial ABox assertion
-    A ← ApplyTBoxUnfolding(A, T)          // Expand definitions
-    A ← ApplyCompletionRules(A)           // Apply ⊓, ⊔, ∃, ∀ rules
-    IF NoClash(A):                         // Check for ⊥ or A(x) ∧ ¬A(x)
+    A â† {C(x)} for a fresh individual x   // Initial ABox assertion
+    A â† ApplyTBoxUnfolding(A, T)          // Expand definitions
+    A â† ApplyCompletionRules(A)           // Apply âŠ“, âŠ”, âˆƒ, âˆ€ rules
+    IF NoClash(A):                         // Check for âŠ¥ or A(x) âˆ§ Â¬A(x)
         RETURN SAT
     ELSE:
         RETURN UNSAT
 
 FUNCTION ApplyCompletionRules(A):
     REPEAT:
-        // ⊓-rule: if (C ⊓ D)(x) in A, add C(x), D(x)
-        // ⊔-rule: if (C ⊔ D)(x) in A, branch C(x) or D(x)
-        // ∃-rule: if (∃R.C)(x) in A, add R(x,y), C(y) for fresh y
-        // ∀-rule: if (∀R.C)(x) and R(x,y) in A, add C(y)
+        // âŠ“-rule: if (C âŠ“ D)(x) in A, add C(x), D(x)
+        // âŠ”-rule: if (C âŠ” D)(x) in A, branch C(x) or D(x)
+        // âˆƒ-rule: if (âˆƒR.C)(x) in A, add R(x,y), C(y) for fresh y
+        // âˆ€-rule: if (âˆ€R.C)(x) and R(x,y) in A, add C(y)
     UNTIL no rule applies OR clash detected
     RETURN A
 
 FUNCTION NoClash(A):
-    // No individual has both C(x) and ¬C(x)
-    // No individual has ⊥(x)
+    // No individual has both C(x) and Â¬C(x)
+    // No individual has âŠ¥(x)
     RETURN True if neither condition holds
 ```
 
@@ -1030,13 +1030,13 @@ FUNCTION NoClash(A):
 
 
 **TBox:**
-- Person ⊑ ⊤
-- Woman ≡ Person ⊓ Female
-- Man ≡ Person ⊓ ¬Female
-- Mother ≡ Woman ⊓ ∃hasChild.Person
-- Father ≡ Man ⊓ ∃hasChild.Person
-- Parent ≡ Mother ⊔ Father
-- Grandparent ≡ Parent ⊓ ∃hasChild.Parent
+- Person âŠ‘ âŠ¤
+- Woman â‰¡ Person âŠ“ Female
+- Man â‰¡ Person âŠ“ Â¬Female
+- Mother â‰¡ Woman âŠ“ âˆƒhasChild.Person
+- Father â‰¡ Man âŠ“ âˆƒhasChild.Person
+- Parent â‰¡ Mother âŠ” Father
+- Grandparent â‰¡ Parent âŠ“ âˆƒhasChild.Parent
 
 **ABox:**
 - Person(Alice), Female(Alice)
@@ -1046,14 +1046,14 @@ FUNCTION NoClash(A):
 | Step | Rule Applied | Knowledge Base State |
 |------|-------------|---------------------|
 | 0 | Initial ABox | Person(Alice), Female(Alice), Person(Bob), Person(Charlie), hasChild(Alice, Bob), hasChild(Bob, Charlie) |
-| 1 | ⊓-rule on Woman? | Woman ≡ Person ⊓ Female → need both Person(x) and Female(x) |
-| 2 | Instance check: Alice ∈ Woman? | Person(Alice) ✓, Female(Alice) ✓ → **Alice is a Woman** |
-| 3 | Instance check: Alice ∈ Mother? | Mother ≡ Woman ⊓ ∃hasChild.Person → Woman(Alice) ✓, hasChild(Alice, Bob), Person(Bob) ✓ → **Alice is a Mother** |
-| 4 | Instance check: Bob ∈ Parent? | Parent ≡ Mother ⊔ Father. Bob is Man (Person(Bob), no Female(Bob)). Bob has child Charlie? hasChild(Bob, Charlie) ✓, Person(Charlie) ✓ → Bob ∈ ∃hasChild.Person |
-| 5 | Bob ∈ Father? | Father ≡ Man ⊓ ∃hasChild.Person → Man(Bob), hasChild(Bob, Charlie) ✓ → **Bob is a Father** |
-| 6 | Alice ∈ Grandparent? | Grandparent ≡ Parent ⊓ ∃hasChild.Parent. Parent(Alice) ✓. hasChild(Alice, Bob), Parent(Bob) ✓ → **Alice is a Grandparent** |
-| 7 | Subsumption: Mother ⊑ ? | Mother ⊑ Woman, Mother ⊑ Person, Mother ⊑ ∃hasChild.Person, Mother ⊑ Parent |
-| 8 | Retrieval: Who is a Parent? | Alice (Mother ✓), Bob (Father ✓) → {Alice, Bob} |
+| 1 | âŠ“-rule on Woman? | Woman â‰¡ Person âŠ“ Female â†’ need both Person(x) and Female(x) |
+| 2 | Instance check: Alice âˆˆ Woman? | Person(Alice) âœ“, Female(Alice) âœ“ â†’ **Alice is a Woman** |
+| 3 | Instance check: Alice âˆˆ Mother? | Mother â‰¡ Woman âŠ“ âˆƒhasChild.Person â†’ Woman(Alice) âœ“, hasChild(Alice, Bob), Person(Bob) âœ“ â†’ **Alice is a Mother** |
+| 4 | Instance check: Bob âˆˆ Parent? | Parent â‰¡ Mother âŠ” Father. Bob is Man (Person(Bob), no Female(Bob)). Bob has child Charlie? hasChild(Bob, Charlie) âœ“, Person(Charlie) âœ“ â†’ Bob âˆˆ âˆƒhasChild.Person |
+| 5 | Bob âˆˆ Father? | Father â‰¡ Man âŠ“ âˆƒhasChild.Person â†’ Man(Bob), hasChild(Bob, Charlie) âœ“ â†’ **Bob is a Father** |
+| 6 | Alice âˆˆ Grandparent? | Grandparent â‰¡ Parent âŠ“ âˆƒhasChild.Parent. Parent(Alice) âœ“. hasChild(Alice, Bob), Parent(Bob) âœ“ â†’ **Alice is a Grandparent** |
+| 7 | Subsumption: Mother âŠ‘ ? | Mother âŠ‘ Woman, Mother âŠ‘ Person, Mother âŠ‘ âˆƒhasChild.Person, Mother âŠ‘ Parent |
+| 8 | Retrieval: Who is a Parent? | Alice (Mother âœ“), Bob (Father âœ“) â†’ {Alice, Bob} |
 
 ### Python Implementation: Description Logic Reasoner
 
@@ -1069,11 +1069,11 @@ class DLReasoner:
         self.abox_roles = {}     # (individual, role_name) -> set of individuals
 
     def add_concept_definition(self, name: str, definition):
-        """Define a concept (e.g., Mother ≡ Woman ⊓ ∃hasChild.Person)."""
+        """Define a concept (e.g., Mother â‰¡ Woman âŠ“ âˆƒhasChild.Person)."""
         self.tbox[name] = definition
 
     def add_subsumption(self, sub: str, super_concept: str):
-        """Declare sub ⊑ super."""
+        """Declare sub âŠ‘ super."""
         self.hierarchy.setdefault(sub, set()).add(super_concept)
 
     def add_concept_assertion(self, individual: str, concept: str):
@@ -1182,11 +1182,11 @@ print(dl.subsumes("Person", "Woman"))          # True (Person subsumes Woman)
 |-----------|----------------|-----------------|------|
 | TBox assertion | O(1) | O(C) | Hash map insert |
 | ABox assertion | O(1) | O(I) | Hash map insert |
-| Instance check (atomic) | O(A × H) | O(H) | Ancestor traversal through hierarchy |
-| Instance check (defined) | O(D × F) | O(D) | Recursive definition evaluation up to depth D, F fillers |
-| Retrieval | O(I × A × H) | O(1) | Linear scan of all individuals |
+| Instance check (atomic) | O(A Ã— H) | O(H) | Ancestor traversal through hierarchy |
+| Instance check (defined) | O(D Ã— F) | O(D) | Recursive definition evaluation up to depth D, F fillers |
+| Retrieval | O(I Ã— A Ã— H) | O(1) | Linear scan of all individuals |
 | Subsumption | O(H) | O(H) | Ancestor lookup in hierarchy |
-| Classification (full) | O(C² × H) | O(C²) | Pairwise subsumption of all concepts |
+| Classification (full) | O(CÂ² Ã— H) | O(CÂ²) | Pairwise subsumption of all concepts |
 
 Where C = concepts, A = atomic concepts per individual, H = hierarchy depth, I = individuals, D = definition depth, F = role fillers. Full classification for expressive DL (ALC) is EXPTIME-complete but highly optimized in practice (Pellet, HermiT).
 
@@ -1195,21 +1195,21 @@ Where C = concepts, A = atomic concepts per individual, H = hierarchy depth, I =
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Decidable — always terminates with an answer | Less expressive than FOL (cannot represent n-ary relations directly) |
+| Decidable â€” always terminates with an answer | Less expressive than FOL (cannot represent n-ary relations directly) |
 | Formal model-theoretic semantics | Open-world assumption may surprise users expecting closed-world (SQL) |
 | Polynomial-time classification for core languages | Complexity ranges from PTIME to EXPTIME/NEXPTIME depending on constructors |
 | OWL standard enables tooling ecosystem | Non-monotonic reasoning (defaults, negation-as-failure) not natively supported |
-| Compositional concept constructors (⊓, ⊔, ¬, ∃, ∀) | Learning curve for domain experts unfamiliar with formal logic |
+| Compositional concept constructors (âŠ“, âŠ”, Â¬, âˆƒ, âˆ€) | Learning curve for domain experts unfamiliar with formal logic |
 
 ### Edge Cases
 
 
-- **Unsatisfiable concept:** Person ⊓ ¬Person — the empty concept. Reasoner must report inconsistency without crashing.
-- **Empty domain:** TBox with no ABox — reasoning about concept satisfiability is still meaningful (a concept is satisfiable if there exists a model).
-- **Role cycling:** hasChild(Alice, Bob), hasChild(Bob, Alice) — cyclic roles are allowed; ∀hasChild.Person still holds if both Bob and Alice are Person.
-- **Nominals (singleton concepts):** {Alice} ≡ Person ⊓ ∀hasFriend.{Bob} — only Alice can satisfy this. Requires equality reasoning.
-- **Bottom concept:** Concept(⊥) — always empty. Queries for instances return empty set.
-- **Top concept:** Concept(⊤) — contains all individuals. Instance check always returns True.
+- **Unsatisfiable concept:** Person âŠ“ Â¬Person â€” the empty concept. Reasoner must report inconsistency without crashing.
+- **Empty domain:** TBox with no ABox â€” reasoning about concept satisfiability is still meaningful (a concept is satisfiable if there exists a model).
+- **Role cycling:** hasChild(Alice, Bob), hasChild(Bob, Alice) â€” cyclic roles are allowed; âˆ€hasChild.Person still holds if both Bob and Alice are Person.
+- **Nominals (singleton concepts):** {Alice} â‰¡ Person âŠ“ âˆ€hasFriend.{Bob} â€” only Alice can satisfy this. Requires equality reasoning.
+- **Bottom concept:** Concept(âŠ¥) â€” always empty. Queries for instances return empty set.
+- **Top concept:** Concept(âŠ¤) â€” contains all individuals. Instance check always returns True.
 
 ## 6.7 Categories and Actions
 
@@ -1247,18 +1247,18 @@ A knowledge-based system consists of:
 3. **Explanation facility:** Justifies conclusions.
 4. **Knowledge acquisition module:** Supports KB construction and maintenance.
 
-## Knowledge Representation Schemes — Comparison
+## Knowledge Representation Schemes â€” Comparison
 
 | Scheme | Expressiveness | Decidable? | Inference Complexity | Data Structure | Typical Use |
 |--------|:---:|:---:|:---:|---|---------|
-| **Propositional Logic** | Low | ✅ | O(2ⁿ) SAT | Boolean formulas | Simple facts, hardware verification |
-| **First-Order Logic** | Very High | ❌ (semi) | Undecidable | Formulas with quantifiers | General domain axioms |
-| **Semantic Networks** | Low–Medium | Varies | O(E × H) inheritance | Directed graph | Taxonomies, animal hierarchies |
-| **Frames** | Medium–High | Varies | O(D × P) slot lookup | Object with slots | Structured objects, common sense |
-| **Conceptual Graphs** | High | Varies | O(C² + R × E²) projection | Bipartite graph | Natural language semantics |
-| **Description Logic** | Medium | ✅ (ALC) | PTIME–EXPTIME | TBox + ABox | OWL ontologies, Semantic Web |
-| **Production Rules** | Medium | ❌ | O(R × F) forward chain | IF-THEN rules | Expert systems (MYCIN) |
-| **Fuzzy Logic** | Medium | ✅ | O(n) per rule | Membership functions | Control systems, uncertainty |
+| **Propositional Logic** | Low | âœ… | O(2â¿) SAT | Boolean formulas | Simple facts, hardware verification |
+| **First-Order Logic** | Very High | âŒ (semi) | Undecidable | Formulas with quantifiers | General domain axioms |
+| **Semantic Networks** | Lowâ€“Medium | Varies | O(E Ã— H) inheritance | Directed graph | Taxonomies, animal hierarchies |
+| **Frames** | Mediumâ€“High | Varies | O(D Ã— P) slot lookup | Object with slots | Structured objects, common sense |
+| **Conceptual Graphs** | High | Varies | O(CÂ² + R Ã— EÂ²) projection | Bipartite graph | Natural language semantics |
+| **Description Logic** | Medium | âœ… (ALC) | PTIMEâ€“EXPTIME | TBox + ABox | OWL ontologies, Semantic Web |
+| **Production Rules** | Medium | âŒ | O(R Ã— F) forward chain | IF-THEN rules | Expert systems (MYCIN) |
+| **Fuzzy Logic** | Medium | âœ… | O(n) per rule | Membership functions | Control systems, uncertainty |
 
 **Key Insight:** No single scheme dominates all applications. The choice depends on whether you prioritize expressiveness (FOL), decidability (DL), computational efficiency (semantic nets), or structured representation (frames).
 
@@ -1269,26 +1269,26 @@ A knowledge-based system consists of:
 
 | Aspect | Database (SQL) | Knowledge Representation |
 |--------|---------------|-------------------------|
-| **Assumption** | Closed-world — what isn't in DB is false | Open-world — what isn't stated is unknown |
+| **Assumption** | Closed-world â€” what isn't in DB is false | Open-world â€” what isn't stated is unknown |
 | **Inference** | None (query returns stored data) | Derives new facts from existing ones |
 | **Schema** | Fixed tables and columns | Flexible, hierarchical concepts |
 | **Reasoning** | No built-in reasoning | Subsumption, inheritance, consistency |
 | **Negation** | Negation-as-failure | Explicit negation with semantics |
-| **Example** | SELECT * FROM Person WHERE age > 30 | Subsumption: Student ⊑ Person → if Alice is Student, she is Person |
+| **Example** | SELECT * FROM Person WHERE age > 30 | Subsumption: Student âŠ‘ Person â†’ if Alice is Student, she is Person |
 
 **The critical difference:** A database tells you what you stored. A KR system tells you what follows from what you stored.
 
 ### Q2: How do you design an ontology for a new domain?
 
 
-1. **Competency questions first** — Write questions the ontology must answer (e.g., "Which drugs interact with aspirin?").
-2. **Identify key terms** — Extract nouns (classes) and verbs (properties) from competency questions.
-3. **Reuse existing ontologies** — Check Bioportal, Schema.org, or DBPedia for domain coverage before building from scratch.
-4. **Choose expressiveness level** — RDFS for simple hierarchy, OWL DL for complex constraints, OWL 2 RL for scalable rules.
-5. **Validate with reasoners** — Run consistency checks with Pellet or HermiT.
-6. **Iterate** — Ontology design is never one-shot; add axioms as new competency questions emerge.
+1. **Competency questions first** â€” Write questions the ontology must answer (e.g., "Which drugs interact with aspirin?").
+2. **Identify key terms** â€” Extract nouns (classes) and verbs (properties) from competency questions.
+3. **Reuse existing ontologies** â€” Check Bioportal, Schema.org, or DBPedia for domain coverage before building from scratch.
+4. **Choose expressiveness level** â€” RDFS for simple hierarchy, OWL DL for complex constraints, OWL 2 RL for scalable rules.
+5. **Validate with reasoners** â€” Run consistency checks with Pellet or HermiT.
+6. **Iterate** â€” Ontology design is never one-shot; add axioms as new competency questions emerge.
 
-**Common mistake:** Over-engineering the hierarchy. Start shallow (3–4 levels); add depth only when reasoning requires it.
+**Common mistake:** Over-engineering the hierarchy. Start shallow (3â€“4 levels); add depth only when reasoning requires it.
 
 ### Q3: How does inference work in semantic networks?
 
@@ -1303,20 +1303,20 @@ Semantic network inference is primarily **inheritance-based**. When querying whe
    - **Linearization:** C3 linearization (used in Python MRO) produces a deterministic order.
    - **Explicit override:** Allow the instance value to override any inherited value.
 
-**Important:** Early semantic networks suffered from ambiguous semantics — is "Clyde is-a Elephant" class membership or instance-of? Modern systems (RDFS, OWL) resolve this by distinguishing classes from individuals at the language level.
+**Important:** Early semantic networks suffered from ambiguous semantics â€” is "Clyde is-a Elephant" class membership or instance-of? Modern systems (RDFS, OWL) resolve this by distinguishing classes from individuals at the language level.
 
 ### Q4: What are the limitations of Description Logic vs First-Order Logic?
 
 
 | Cannot express in DL | Can express in FOL |
 |---------------------|-------------------|
-| n-ary relations (≥ 3 arguments) | `teaches(Prof, Course, Semester)` |
-| Equality reasoning (complex) | `x = y ∧ f(x) ≠ f(y)` |
-| Role chains with arbitrary length | `ancestor(x,y) ≡ parent(x,y) ∨ ∃z(parent(x,z) ∧ ancestor(z,y))` |
-| Quantification over roles | `∀R ∃S.R(x,y) ⇒ S(y,x)` |
+| n-ary relations (â‰¥ 3 arguments) | `teaches(Prof, Course, Semester)` |
+| Equality reasoning (complex) | `x = y âˆ§ f(x) â‰  f(y)` |
+| Role chains with arbitrary length | `ancestor(x,y) â‰¡ parent(x,y) âˆ¨ âˆƒz(parent(x,z) âˆ§ ancestor(z,y))` |
+| Quantification over roles | `âˆ€R âˆƒS.R(x,y) â‡’ S(y,x)` |
 | Meta-modeling (classes as instances) | OWL 2 Full allows this |
 
-**The trade-off:** Every constructor that makes FOL undecidable is excluded from DL deliberately. DL gives up FOL's full expressiveness to guarantee decidable reasoning — the exact property needed for the Semantic Web.
+**The trade-off:** Every constructor that makes FOL undecidable is excluded from DL deliberately. DL gives up FOL's full expressiveness to guarantee decidable reasoning â€” the exact property needed for the Semantic Web.
 
 ### Q5: How do you handle inconsistency in a knowledge base?
 
@@ -1325,8 +1325,8 @@ Semantic network inference is primarily **inheritance-based**. When querying whe
 2. **Diagnosis:** Use axiom pinpointing (glass-box approach) to identify minimal inconsistent subsets (MUPS).
 3. **Repair options:**
    - **Remove** the offending axioms.
-   - **Weaken** (replace ⊑ with weaker condition).
-   - **Prioritize** — apply defeasible reasoning (some axioms are defaults, not strict).
+   - **Weaken** (replace âŠ‘ with weaker condition).
+   - **Prioritize** â€” apply defeasible reasoning (some axioms are defaults, not strict).
 4. **Prevention:** Validate new axioms against the KB before adding them.
 
 ## Applications in Real Systems
@@ -1357,11 +1357,11 @@ SNOMED CT is the world's largest clinical ontology, with ~350,000 concepts and ~
 
 - **Used in:** 50+ countries, mandated in US EHR systems (Meaningful Use)
 - **KR formalism:** Description Logic (EL++ profile)
-- **Example concept:** `Pneumonia (disorder) ⊑ Lung disease ⊓ ∃causative-agent.Infectious-agent`
-- **Inference used:** Classification — SNOMED's reasoner automatically places new concepts in the correct hierarchy
+- **Example concept:** `Pneumonia (disorder) âŠ‘ Lung disease âŠ“ âˆƒcausative-agent.Infectious-agent`
+- **Inference used:** Classification â€” SNOMED's reasoner automatically places new concepts in the correct hierarchy
 - **Clinical decision support:** If a patient has `Bacterial pneumonia (disorder)`, the system infers they have `Lung disease`, `Infectious disease`, and `Disorder of thorax`
 
-**Why DL matters for SNOMED:** The ontology is too large (350K concepts) for manual maintenance. DL classification ensures that when a new concept is added with its defining properties, the reasoner automatically computes all 350K subsumption relationships — saving thousands of person-hours per release.
+**Why DL matters for SNOMED:** The ontology is too large (350K concepts) for manual maintenance. DL classification ensures that when a new concept is added with its defining properties, the reasoner automatically computes all 350K subsumption relationships â€” saving thousands of person-hours per release.
 
 ### Google Knowledge Graph
 
@@ -1370,22 +1370,22 @@ Google's Knowledge Graph powers search results with structured knowledge:
 
 - **Size:** ~7 billion facts covering ~500 million entities (as of 2020)
 - **Source:** Freebase (legacy), Wikidata, crawled structured data, manual curation
-- **KR style:** Property graph (similar to frames — entities with typed attribute-value pairs)
-- **Inference used:** Relationship traversal — "When was Leonardo da Vinci born?" traverses: da Vinci → birthDate → 1452-04-15
+- **KR style:** Property graph (similar to frames â€” entities with typed attribute-value pairs)
+- **Inference used:** Relationship traversal â€” "When was Leonardo da Vinci born?" traverses: da Vinci â†’ birthDate â†’ 1452-04-15
 - **Search impact:** Knowledge panels shown for ~30% of queries; 20%+ of mobile searches are voice-driven entity queries
 - **Beyond search:** Google Assistant, Google Maps, Lens, and Photos all consume the Knowledge Graph
 
 **Example inference chain:**
 ```
 Query: "Mona Lisa painter nationality"
-1. Mona Lisa → createdBy → Leonardo da Vinci
-2. Leonardo da Vinci → nationality → Italian
+1. Mona Lisa â†’ createdBy â†’ Leonardo da Vinci
+2. Leonardo da Vinci â†’ nationality â†’ Italian
 3. Answer: Italian
 ```
 
-This is a semantic network traversal — three edges in the Knowledge Graph, no explicit "Mona Lisa" to "Italian" path stored.
+This is a semantic network traversal â€” three edges in the Knowledge Graph, no explicit "Mona Lisa" to "Italian" path stored.
 
-### MYCIN (Historical — First Major Expert System)
+### MYCIN (Historical â€” First Major Expert System)
 
 
 - **Domain:** Bacterial blood infection diagnosis (1970s)
@@ -1398,18 +1398,18 @@ This is a semantic network traversal — three edges in the Knowledge Graph, no 
 
 | Language/Formalism | Expressiveness | Decidable? | Inference Complexity | Best For |
 |-------------------|:---:|:---:|:---:|---------|
-| Propositional Logic | Low | ✅ | O(2ⁿ) SAT | Simple facts |
-| First-Order Logic | High | ❌ (semi) | Undecidable | General domain axioms |
-| Description Logic | Medium | ✅ | PTIME/EXPTIME | Taxonomies, OWL |
+| Propositional Logic | Low | âœ… | O(2â¿) SAT | Simple facts |
+| First-Order Logic | High | âŒ (semi) | Undecidable | General domain axioms |
+| Description Logic | Medium | âœ… | PTIME/EXPTIME | Taxonomies, OWL |
 | Semantic Networks | Medium | Varies | Linear (inheritance) | Quick prototyping |
 | Frames | Medium-High | Varies | Linear (with defaults) | Structured objects |
 
-## Quick Reference — Ontology Concepts
+## Quick Reference â€” Ontology Concepts
 
 | Concept | Definition | Example |
 |---------|-----------|---------|
 | Ontology | Formal specification of a conceptualization | Domain model |
-| TBox | Terminology (concepts and roles) | Mother ≡ Woman ⊓ ∃hasChild.Person |
+| TBox | Terminology (concepts and roles) | Mother â‰¡ Woman âŠ“ âˆƒhasChild.Person |
 | ABox | Assertions about individuals | Woman(Alice) |
 | Fluents | Situation-dependent predicates | On(x, y, s) |
 | Frame Problem | Need to specify what stays the same | Successor-state axioms |
@@ -1419,11 +1419,11 @@ This is a semantic network traversal — three edges in the Knowledge Graph, no 
 
 | Technique | ML | CV | NLP | Research |
 |-----------|:---:|:---:|:---:|:---:|
-| Ontology Engineering | ✅ | ✅ | ✅ | ✅ |
-| Description Logic | ⬜ | ✅ | ✅ | ✅ |
-| Semantic Networks | ⬜ | ✅ | ✅ | ✅ |
-| Situation Calculus | ⬜ | ⬜ | ⬜ | ✅ |
-| Frames | ⬜ | ✅ | ✅ | ✅ |
+| Ontology Engineering | âœ… | âœ… | âœ… | âœ… |
+| Description Logic | â¬œ | âœ… | âœ… | âœ… |
+| Semantic Networks | â¬œ | âœ… | âœ… | âœ… |
+| Situation Calculus | â¬œ | â¬œ | â¬œ | âœ… |
+| Frames | â¬œ | âœ… | âœ… | âœ… |
 
 ## Chapter Quiz
 
@@ -1469,7 +1469,7 @@ This is a semantic network traversal — three edges in the Knowledge Graph, no 
 
 ## 6.9 Summary
 
-Knowledge representation is concerned with encoding domain knowledge in a form that supports automated reasoning. The choice of representation language involves trade-offs between expressiveness and computational tractability. This chapter covered five major representation schemes — semantic networks, frames, conceptual graphs, description logic, and ontology-based representations — each with different strengths in expressiveness, decidability, and reasoning efficiency. Modern knowledge representation forms the backbone of the Semantic Web (OWL, RDF), enterprise knowledge graphs (Google Knowledge Graph), and medical ontologies (SNOMED CT), with hybrid neural-symbolic approaches emerging as a frontier combining deep learning with structured knowledge.
+Knowledge representation is concerned with encoding domain knowledge in a form that supports automated reasoning. The choice of representation language involves trade-offs between expressiveness and computational tractability. This chapter covered five major representation schemes â€” semantic networks, frames, conceptual graphs, description logic, and ontology-based representations â€” each with different strengths in expressiveness, decidability, and reasoning efficiency. Modern knowledge representation forms the backbone of the Semantic Web (OWL, RDF), enterprise knowledge graphs (Google Knowledge Graph), and medical ontologies (SNOMED CT), with hybrid neural-symbolic approaches emerging as a frontier combining deep learning with structured knowledge.
 
 ## Exercises
 
@@ -1490,4 +1490,4 @@ Knowledge representation is concerned with encoding domain knowledge in a form t
 ### Challenge Problem
 
 9. Implement a forward-chaining reasoner for a propositional KB containing Horn clauses. Apply it to a simple diagnosis domain (e.g., car fault diagnosis). Explain how the system handles the case where multiple rules apply simultaneously.
-10. Design a small OWL ontology for a smart home domain (devices, rooms, sensors, automation rules). Write the TBox and ABox, then describe what inferences a DL reasoner would derive automatically (e.g., "If the temperature sensor in the living room exceeds 30°C, the system should infer 'overheating' and trigger the AC").
+10. Design a small OWL ontology for a smart home domain (devices, rooms, sensors, automation rules). Write the TBox and ABox, then describe what inferences a DL reasoner would derive automatically (e.g., "If the temperature sensor in the living room exceeds 30Â°C, the system should infer 'overheating' and trigger the AC").

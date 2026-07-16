@@ -1,6 +1,6 @@
-# Chapter 9: TCP Congestion Control
+﻿# Chapter 9: TCP Congestion Control
 
-> **Prerequisites:** [Chapter 8: Transport Layer](./08-transport-layer.md) — TCP basics and connection management | **Next:** [Chapter 10: Application Layer](./10-application-layer.md) — From transport to user-facing protocols
+> **Prerequisites:** [Chapter 8: Transport Layer](./08-transport-layer.md) â€” TCP basics and connection management | **Next:** [Chapter 10: Application Layer](./10-application-layer.md) â€” From transport to user-facing protocols
 
 ## Learning Objectives
 
@@ -9,16 +9,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/computer-networks/09-tcp-congestion/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/computer-networks/09-tcp-congestion/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/computer-networks/09-tcp-congestion/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/computer-networks/09-tcp-congestion/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/computer-networks/09-tcp-congestion/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/computer-networks/09-tcp-congestion/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/computer-networks/09-tcp-congestion/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/computer-networks/09-tcp-congestion/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/computer-networks/09-tcp-congestion/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/computer-networks/09-tcp-congestion/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/computer-networks/09-tcp-congestion/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/computer-networks/09-tcp-congestion/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -121,27 +121,27 @@ flowchart TD
 
 **Congestion control** prevents a sender from overwhelming the network. When routers become overloaded, packets are dropped or queued excessively. TCP detects congestion through packet loss (duplicate ACKs or timeout) and reduces its sending rate accordingly. The sender maintains a congestion window (cwnd), and the actual window used is min(cwnd, rwnd).
 
-The key distinction: flow control addresses receiver capacity — a known, static constraint communicated explicitly via TCP headers. Congestion control addresses network capacity — a shared, dynamic constraint inferred implicitly through loss signals.
+The key distinction: flow control addresses receiver capacity â€” a known, static constraint communicated explicitly via TCP headers. Congestion control addresses network capacity â€” a shared, dynamic constraint inferred implicitly through loss signals.
 
 ### Advantages & Disadvantages
 
 
 | Aspect | Flow Control | Congestion Control |
 |--------|-------------|-------------------|
-| Scope | End-to-end (sender ↔ receiver) | Path-wide (sender → network → receiver) |
+| Scope | End-to-end (sender â†” receiver) | Path-wide (sender â†’ network â†’ receiver) |
 | Signal | Explicit (rwnd field in TCP header) | Implicit (loss, RTT, ECN) |
 | Mechanism | Receiver advertises free buffer space | Sender manages cwnd via AIMD |
 | Responsiveness | Immediate (per-segment updates) | Delayed (requires loss detection cycle) |
-| Failure mode | Receiver overflow → data loss | Network collapse → congestion collapse |
+| Failure mode | Receiver overflow â†’ data loss | Network collapse â†’ congestion collapse |
 | Control type | Preventive | Reactive (loss-based) or proactive (model-based) |
 
 ### Edge Cases
 
 
 - **rwnd = 0 persist**: Sender enters persist state, sending 1-byte probes. If probes are lost, deadlock can occur without the persist timer.
-- **rwnd = 0 with cwnd > 0**: Effective window is 0 — receiver is the bottleneck, not the network.
+- **rwnd = 0 with cwnd > 0**: Effective window is 0 â€” receiver is the bottleneck, not the network.
 - **Silent rwnd shrinkage**: Receiver can shrink rwnd at any time (discouraged by RFC but possible). Sender must respect the new limit.
-- **Congestion without loss**: Deep buffers absorb bursts without dropping packets — loss-based algorithms (Reno, Cubic) keep increasing, causing bufferbloat.
+- **Congestion without loss**: Deep buffers absorb bursts without dropping packets â€” loss-based algorithms (Reno, Cubic) keep increasing, causing bufferbloat.
 
 ## 9.2 Sliding Window and Flow Control
 
@@ -159,7 +159,7 @@ rwnd = RcvBuffer - (LastByteRcvd - LastByteRead)
 
 If the receiver stops reading data, rwnd shrinks to zero. The sender stops transmitting but periodically sends one-byte probes (persist timer) to detect window reopening.
 
-### Congestion Window vs Receive Window — Detailed Comparison
+### Congestion Window vs Receive Window â€” Detailed Comparison
 
 
 | Property | Congestion Window (cwnd) | Receive Window (rwnd) |
@@ -171,7 +171,7 @@ If the receiver stops reading data, rwnd shrinks to zero. The sender stops trans
 | Initial value | 10 MSS (RFC 6928) | OS-dependent (64 KB typical, up to 16 MB with window scaling) |
 | Responsiveness | Dynamic, responds to network state | Static relative to connection duration |
 | Interaction | min(cwnd, rwnd) determines actual window | Independent but interacts through window calculation |
-| Impact of wrong value | Too high → congestion collapse; Too low → underutilization | Too high → slow receiver overlow; Too low → throughput cap |
+| Impact of wrong value | Too high â†’ congestion collapse; Too low â†’ underutilization | Too high â†’ slow receiver overlow; Too low â†’ throughput cap |
 | Algorithmic driver | AIMD, Cubic, BBR | Application read rate + buffer sizing |
 
 ### Why the Effective Window Is min(cwnd, rwnd)
@@ -184,7 +184,7 @@ EffectiveWindow = min(cwnd, rwnd)
 ```
 
 - If cwnd = 32 KB and rwnd = 64 KB: the network is the tighter constraint, so the sender can send up to 32 KB unacknowledged.
-- If cwnd = 100 KB and rwnd = 16 KB: the receiver is the tighter constraint — even though the network could handle more, the receiver's buffer caps throughput.
+- If cwnd = 100 KB and rwnd = 16 KB: the receiver is the tighter constraint â€” even though the network could handle more, the receiver's buffer caps throughput.
 - If cwnd = 100 KB and rwnd = 100 KB: neither is binding; throughput is limited by the path's bandwidth-delay product.
 
 ## 9.3 Congestion Control: Causes and Effects
@@ -197,8 +197,8 @@ Imagine a multi-lane highway connecting two cities. Cars (packets) travel from C
 - **No traffic**: Cars flow freely at speed limit (high throughput, low latency).
 - **Rush hour begins**: More cars enter than the highway can drain. Cars accumulate on on-ramps and in travel lanes (queuing at router buffers).
 - **Gridlock**: On-ramps are completely full. Cars cannot merge (packet drop). Traffic collapses to a standstill (congestion collapse).
-- **Ramp metering**: Traffic lights control how many cars enter per minute (AIMD — additive increase of inflow, multiplicative decrease when congestion detected).
-- **Variable speed limits**: Electronic signs slow cars before they hit the jam (ECN — explicit congestion notification before drop).
+- **Ramp metering**: Traffic lights control how many cars enter per minute (AIMD â€” additive increase of inflow, multiplicative decrease when congestion detected).
+- **Variable speed limits**: Electronic signs slow cars before they hit the jam (ECN â€” explicit congestion notification before drop).
 
 **Key insight**: Just as building more highway lanes (bigger buffers) doesn't solve gridlock without ramp metering, adding router memory doesn't solve congestion without intelligent window management. Bufferbloat = highway with no on-ramp control.
 
@@ -222,7 +222,7 @@ Imagine a multi-lane highway connecting two cities. Cars (packets) travel from C
 - **Reduced throughput**: Goodput collapses due to retransmissions and window reduction.
 - **Congestion collapse**: Network spends most resources moving retransmitted packets (pathological in early TCP without congestion control).
 - **Spurious timeouts**: Delayed ACKs due to queuing trigger unnecessary RTO.
-- **Global synchronization**: All TCP flows lose packets simultaneously and reduce window together, then increase together — creating synchronized sawtooth patterns that underutilize the link.
+- **Global synchronization**: All TCP flows lose packets simultaneously and reduce window together, then increase together â€” creating synchronized sawtooth patterns that underutilize the link.
 
 ### Complexity Analysis
 
@@ -248,7 +248,7 @@ When you get a new car, you don't floor it immediately. You take short trips to 
 - **Trip 1**: Drive 10 blocks, return. (Send 10 packets, get ACKs.)
 - **Trip 2**: Drive 20 blocks, return. (Send 20 packets.)
 - **Trip 3**: Drive 40 blocks, return. (Send 40 packets.)
-- **Trip 4**: Drive 80 blocks — hit a traffic jam. (cwnd exceeds network capacity; loss detected.)
+- **Trip 4**: Drive 80 blocks â€” hit a traffic jam. (cwnd exceeds network capacity; loss detected.)
 
 ### Numbered Steps
 
@@ -298,38 +298,38 @@ OnLoss(timeout_or_3dup):
             state = CONGESTION_AVOIDANCE
 ```
 
-### Dry Run Trace Table — Slow Start (cwnd evolution)
+### Dry Run Trace Table â€” Slow Start (cwnd evolution)
 
 
-Parameters: MSS = 1460 bytes, initial cwnd = 10 MSS, ssthresh = 64 KB (≈ 44 MSS), no loss.
+Parameters: MSS = 1460 bytes, initial cwnd = 10 MSS, ssthresh = 64 KB (â‰ˆ 44 MSS), no loss.
 
 | RTT | cwnd (MSS) | cwnd (bytes) | Packets Sent | ACKs Received | Phase |
 |-----|-----------|-------------|-------------|--------------|-------|
-| 0 | 10 | 14,600 | 10 | — | Slow Start |
+| 0 | 10 | 14,600 | 10 | â€” | Slow Start |
 | 1 | 20 | 29,200 | 20 | 10 | Slow Start |
 | 2 | 40 | 58,400 | 40 | 20 | Slow Start |
-| 3 | 80 | 116,800 | 80 | 40 | Slow Start (cwnd > ssthresh ≈ 44) |
+| 3 | 80 | 116,800 | 80 | 40 | Slow Start (cwnd > ssthresh â‰ˆ 44) |
 
 At RTT 3, cwnd (80 MSS) exceeds ssthresh (~44 MSS), so TCP transitions to Congestion Avoidance.
 
-### Dry Run Trace — Slow Start with Loss
+### Dry Run Trace â€” Slow Start with Loss
 
 
 Parameters: initial cwnd = 10 MSS, ssthresh = 64 MSS, loss occurs at RTT 4 (cwnd = 160).
 
 | RTT | Event | cwnd Before | cwnd After | ssthresh | Phase |
 |-----|-------|------------|-----------|---------|-------|
-| 0 | Start | — | 10 | 64 | Slow Start |
+| 0 | Start | â€” | 10 | 64 | Slow Start |
 | 1 | ACK burst | 10 | 20 | 64 | Slow Start |
 | 2 | ACK burst | 20 | 40 | 64 | Slow Start |
 | 3 | ACK burst | 40 | 80 | 64 | Slow Start |
 | 4 | 3 dup ACKs | 80 | 1 (Tahoe) | 40 | Slow Start (restart) |
 | 5 | ACK burst | 1 | 2 | 40 | Slow Start |
 | 6 | ACK burst | 2 | 4 | 40 | Slow Start |
-| ... | ... | 4 → 8 → 16 → 32 | ... | 40 | Slow Start until cwnd = 40 |
-| N | cwnd = 40 | 40 | — | 40 | Transition to Congestion Avoidance |
+| ... | ... | 4 â†’ 8 â†’ 16 â†’ 32 | ... | 40 | Slow Start until cwnd = 40 |
+| N | cwnd = 40 | 40 | â€” | 40 | Transition to Congestion Avoidance |
 
-### C++ Implementation — Slow Start and Congestion Avoidance
+### C++ Implementation â€” Slow Start and Congestion Avoidance
 
 
 ```cpp
@@ -461,7 +461,7 @@ int main() {
 }
 ```
 
-### Python Implementation — TCP Reno Cwnd Simulator
+### Python Implementation â€” TCP Reno Cwnd Simulator
 
 
 ```python
@@ -609,7 +609,7 @@ class TCPCubicSimulator:
 # Run simulations
 if __name__ == "__main__":
     print("=" * 70)
-    print("TCP RENO SIMULATION — Loss at RTT 5")
+    print("TCP RENO SIMULATION â€” Loss at RTT 5")
     print("=" * 70)
     reno = TCPRenoSimulator()
     reno.simulate(rtts=15, loss_rtts=[5])
@@ -618,14 +618,14 @@ if __name__ == "__main__":
           f"{reno.throughput_estimate(0.1)/1e6:.2f} Mbps")
 
     print("\n" + "=" * 70)
-    print("TCP CUBIC SIMULATION — Loss at RTT 5 and RTT 12")
+    print("TCP CUBIC SIMULATION â€” Loss at RTT 5 and RTT 12")
     print("=" * 70)
     cubic = TCPCubicSimulator()
     cubic.simulate(rtts=18, loss_rtts=[5, 12])
     cubic.print_trace()
 ```
 
-### Complexity Analysis — Slow Start
+### Complexity Analysis â€” Slow Start
 
 
 | Operation | Complexity | Why |
@@ -636,7 +636,7 @@ if __name__ == "__main__":
 | Total work per RTT (bytes) | O(cwnd) | Each packet in the window generates one ACK |
 | Memory for outstanding packets | O(cwnd) | Retransmission queue scales with window size |
 
-**Why exponential growth matters**: Slow start grows cwnd as 2^(RTT), reaching available bandwidth in O(log BDP) round trips. Without exponential growth, a BDP of 1000 packets would take 1000 RTTs to fill the pipe using linear growth. With slow start, it takes ≈10 RTTs.
+**Why exponential growth matters**: Slow start grows cwnd as 2^(RTT), reaching available bandwidth in O(log BDP) round trips. Without exponential growth, a BDP of 1000 packets would take 1000 RTTs to fill the pipe using linear growth. With slow start, it takes â‰ˆ10 RTTs.
 
 ### TypeScript Implementation: CongestionWindowSimulator
 
@@ -690,7 +690,7 @@ class CongestionWindowSimulator {
 
 You're loading an elevator with unknown weight capacity.
 
-- **Slow start equivalent**: Add people in doubling groups — 1, 2, 4, 8 — until the elevator creaks.
+- **Slow start equivalent**: Add people in doubling groups â€” 1, 2, 4, 8 â€” until the elevator creaks.
 - **Congestion avoidance**: Once you hit the warning threshold, add one person at a time. If the elevator alarms (loss), everyone exits and you start at half the previous count.
 
 The sawtooth pattern in performance: load increases linearly until a failure forces a sharp reduction, then the cycle repeats.
@@ -707,7 +707,7 @@ The sawtooth pattern in performance: load increases linearly until a failure for
    - For Tahoe: set cwnd = 1 MSS, enter slow start.
 5. **Return**: After recovery, resume congestion avoidance from ssthresh (Reno) or after slow start reaches ssthresh (Tahoe).
 
-### AIMD Sawtooth Pattern — Dry Run Trace
+### AIMD Sawtooth Pattern â€” Dry Run Trace
 
 
 Parameters: MSS = 1460, initial cwnd = 10, ssthresh = 32.
@@ -715,18 +715,18 @@ Parameters: MSS = 1460, initial cwnd = 10, ssthresh = 32.
 | RTT | Phase | cwnd Start | cwnd End | ssthresh | Events |
 |-----|-------|-----------|---------|---------|--------|
 | 1 | SS | 10 | 20 | 32 | Double |
-| 2 | SS | 20 | 40 | 32 | Double, cwnd > ssthresh → CA |
+| 2 | SS | 20 | 40 | 32 | Double, cwnd > ssthresh â†’ CA |
 | 3 | CA | 40 | 41 | 32 | +1 MSS |
 | 4 | CA | 41 | 42 | 32 | +1 MSS |
 | 5 | CA | 42 | 43 | 32 | +1 MSS |
 | 6 | CA | 43 | 44 | 32 | +1 MSS |
-| 7 | LOSS | 44 | — | 22 | ssthresh = 44/2 = 22, cwnd = 25 (22+3) |
-| 8 | FR | 25 | 22 | 22 | Partial ACK → exit recovery |
+| 7 | LOSS | 44 | â€” | 22 | ssthresh = 44/2 = 22, cwnd = 25 (22+3) |
+| 8 | FR | 25 | 22 | 22 | Partial ACK â†’ exit recovery |
 | 9 | CA | 22 | 23 | 22 | +1 MSS |
 | 10 | CA | 23 | 24 | 22 | +1 MSS |
 | 11 | CA | 24 | 25 | 22 | +1 MSS |
 | 12 | CA | 25 | 26 | 22 | +1 MSS |
-| 13 | LOSS | 26 | — | 13 | ssthresh = 13, cwnd = 16 |
+| 13 | LOSS | 26 | â€” | 13 | ssthresh = 13, cwnd = 16 |
 | 14 | FR | 16 | 13 | 13 | Exit recovery |
 
 Note the sawtooth pattern: each loss event cuts cwnd in half, then it grows linearly by 1 MSS per RTT until the next loss.
@@ -751,7 +751,7 @@ OnLoss():
         cwnd = ssthresh + 3 * MSS  // fast recovery (Reno)
 ```
 
-### Congestion Avoidance vs Slow Start — Phase Comparison
+### Congestion Avoidance vs Slow Start â€” Phase Comparison
 
 
 | Aspect | Slow Start | Congestion Avoidance |
@@ -765,7 +765,7 @@ OnLoss():
 | RTT penalty | None (doubling is RTT-independent) | Shorter-RTT flows grow faster (Reno unfairness) |
 | Phase after loss | Slow start again (Tahoe) or fast recovery (Reno) | Fast recovery then congestion avoidance |
 
-### Complexity Analysis — Congestion Avoidance
+### Complexity Analysis â€” Congestion Avoidance
 
 
 | Operation | Complexity | Why |
@@ -845,11 +845,11 @@ class AIMDSimulator {
 You're on a conference call. Speaker A says segment 1, 2, 3, 4, 5.
 
 - You hear 1, 2, but not 3. You hear 4, 5.
-- You interrupt: "Say again after statement 2?" (Duplicate ACK for segment 2 — "I'm still waiting for 3").
-- After three requests: "I STILL haven't heard 3!" (3 duplicate ACKs → fast retransmit).
+- You interrupt: "Say again after statement 2?" (Duplicate ACK for segment 2 â€” "I'm still waiting for 3").
+- After three requests: "I STILL haven't heard 3!" (3 duplicate ACKs â†’ fast retransmit).
 - The speaker skips to re-say 3 without waiting for a pause in the conversation (no RTO wait).
 
-### Fast Retransmit — Numbered Steps
+### Fast Retransmit â€” Numbered Steps
 
 
 1. **Receiver detects gap**: Receives out-of-order segment. Immediately sends duplicate ACK for the last in-order byte.
@@ -857,7 +857,7 @@ You're on a conference call. Speaker A says segment 1, 2, 3, 4, 5.
 3. **Threshold reached**: After 3 duplicate ACKs (4 total ACKs for the same sequence), sender retransmits the missing segment immediately.
 4. **No RTO wait**: Retransmission happens without waiting for the retransmission timer.
 
-### Fast Recovery — Numbered Steps (Reno)
+### Fast Recovery â€” Numbered Steps (Reno)
 
 
 1. **On 3rd dup ACK**: ssthresh = cwnd / 2. cwnd = ssthresh + 3 (inflated for the 3 dup ACKs that have left the network).
@@ -865,7 +865,7 @@ You're on a conference call. Speaker A says segment 1, 2, 3, 4, 5.
 3. **Transmit**: If allowed by cwnd, send a new packet.
 4. **On partial ACK** (ACKs the retransmitted segment but not all data sent before loss): cwnd = ssthresh. Enter congestion avoidance.
 
-### Fast Retransmit/Recovery — Dry Run Trace
+### Fast Retransmit/Recovery â€” Dry Run Trace
 
 
 Parameters: cwnd = 48 MSS, packets 1-48 in flight. Packet 10 is lost.
@@ -873,7 +873,7 @@ Parameters: cwnd = 48 MSS, packets 1-48 in flight. Packet 10 is lost.
 | Step | Event | cwnd | Action |
 |------|-------|------|--------|
 | 0 | Transmit P1-P48 | 48 | Normal send |
-| 1 | P10 dropped at router | — | Buffer overflow |
+| 1 | P10 dropped at router | â€” | Buffer overflow |
 | 2 | P11 arrives at receiver | 48 | Sender gets dup ACK#1 (for P9) |
 | 3 | P12 arrives at receiver | 48 | Sender gets dup ACK#2 (for P9) |
 | 4 | P13 arrives at receiver | 48 | Sender gets dup ACK#3 (for P9) |
@@ -883,16 +883,16 @@ Parameters: cwnd = 48 MSS, packets 1-48 in flight. Packet 10 is lost.
 | ... | ... | ... | ... |
 | N | Partial ACK for P10 (ACKs up to P48) | 24 | cwnd = ssthresh, enter CA |
 
-### Pseudocode — Fast Retransmit and Recovery
+### Pseudocode â€” Fast Retransmit and Recovery
 
 
 ```
 OnDupAck(dup_count):
     if dup_count == 1:
-        // First duplicate — just note it
+        // First duplicate â€” just note it
         return
     if dup_count == 3:
-        // Third duplicate — fast retransmit
+        // Third duplicate â€” fast retransmit
         ssthresh = max(cwnd / 2, 2 * MSS)
         RetransmitPacket(missing_seqno)
         if variant == RENO:
@@ -921,7 +921,7 @@ OnPartialAck(ack):
             state = CONGESTION_AVOIDANCE
 ```
 
-### Complexity Analysis — Fast Retransmit/Recovery
+### Complexity Analysis â€” Fast Retransmit/Recovery
 
 
 | Operation | Complexity | Why |
@@ -943,7 +943,7 @@ OnPartialAck(ack):
 | Spurious retransmission | Retransmitting segments that weren't lost (delay spike) | F-RTO (Forward RTO-Recovery) algorithm detects spurious timeouts |
 | Multiple losses in one window | Reno recovery fails on >1 loss | NewReno retransmits one lost packet per partial ACK |
 | Late ACK causes window stall | Receiver ACK delayed, sender window stalls | Delayed ACK timer (max 500 ms) ensures ACK eventually sent |
-| ACK loss | Lost ACK reduces effective cwnd growth | Cumulative ACKs cover lost ACKs — only the latest ACK matters |
+| ACK loss | Lost ACK reduces effective cwnd growth | Cumulative ACKs cover lost ACKs â€” only the latest ACK matters |
 
 ### TypeScript Implementation: RetransmissionTimer
 
@@ -1017,7 +1017,7 @@ TCP Tahoe predates fast recovery. On triple duplicate ACK:
 3. Enter slow start.
 4. Slow start continues until cwnd reaches the new ssthresh, then enters congestion avoidance.
 
-### Tahoe Dry Run — Loss at cwnd = 48
+### Tahoe Dry Run â€” Loss at cwnd = 48
 
 
 | RTT | Event | cwnd | ssthresh | Action |
@@ -1032,17 +1032,17 @@ TCP Tahoe predates fast recovery. On triple duplicate ACK:
 | 7 | ACK | 4 | 32 | Slow start |
 | 8 | ACK | 8 | 32 | Slow start |
 | 9 | ACK | 16 | 32 | Slow start |
-| 10 | ACK | 32 | 32 | At ssthresh → CA |
+| 10 | ACK | 32 | 32 | At ssthresh â†’ CA |
 | 11 | +1 MSS | 33 | 32 | CA |
 | ... | ... | +1/RTT | 32 | CA until next loss |
 
 **Observation**: Tahoe wastes significant throughput after loss because it re-probes from cwnd = 1. This motivated Reno's fast recovery.
 
-## 9.8 TCP Reno — Detailed Analysis
+## 9.8 TCP Reno â€” Detailed Analysis
 
 TCP Reno improved Tahoe by adding fast recovery. Instead of resetting to cwnd = 1 on triple duplicate ACK, Reno sets cwnd = ssthresh + 3 and deflates cwnd back to ssthresh on partial ACK.
 
-### Reno Dry Run — Single Loss at cwnd = 48
+### Reno Dry Run â€” Single Loss at cwnd = 48
 
 
 | RTT | Event | cwnd | ssthresh | Phase | Packets Sent |
@@ -1050,7 +1050,7 @@ TCP Reno improved Tahoe by adding fast recovery. Instead of resetting to cwnd = 
 | 0 | Init | 10 | 64 | SS | 10 |
 | 1 | ACK | 20 | 64 | SS | 20 |
 | 2 | ACK | 40 | 64 | SS | 40 |
-| 3 | ACK | 64 | 64 | SS→CA | 64 |
+| 3 | ACK | 64 | 64 | SSâ†’CA | 64 |
 | 4 | +1 MSS | 65 | 64 | CA | 65 |
 | 5 | 3 dup ACK | 35 | 32 | FR | ssthresh=32, cwnd=35 |
 | 6 | dup ACK | 36 | 32 | FR | +1 cwnd per dup |
@@ -1062,10 +1062,10 @@ TCP Reno improved Tahoe by adding fast recovery. Instead of resetting to cwnd = 
 
 
 1. **Multiple losses in one window**: If multiple packets are lost, the partial ACK (which ACKs the retransmitted packet + some later packets) doesn't provide enough information to retransmit the remaining losses. Reno exits recovery after the first partial ACK.
-2. **RTT unfairness**: Throughput ≈ (1/RTT) * sqrt(3/(2p)) for Reno. Shorter RTT flows get proportionally higher throughput.
+2. **RTT unfairness**: Throughput â‰ˆ (1/RTT) * sqrt(3/(2p)) for Reno. Shorter RTT flows get proportionally higher throughput.
 3. **Loss-signal dependency**: Reno relies entirely on packet loss as congestion signal. In deep-buffer networks, loss occurs long after queues are full (bufferbloat).
 
-### Complexity Analysis — TCP Reno
+### Complexity Analysis â€” TCP Reno
 
 
 | Metric | Value | Why |
@@ -1073,7 +1073,7 @@ TCP Reno improved Tahoe by adding fast recovery. Instead of resetting to cwnd = 
 | Steady-state throughput | (MSS/RTT) * (1/sqrt(p)) | Classic square-root formula; p = loss rate |
 | Convergence time | O(RTT/packets) | AIMD requires many RTTs to reach equilibrium |
 | Fairness index | 1/n for n identical flows | Jain's fairness index: Reno converges to equal sharing |
-| Buffer requirement | Bandwidth × RTT / 2 | Window reduction from W to W/2 requires buffer for in-flight packets |
+| Buffer requirement | Bandwidth Ã— RTT / 2 | Window reduction from W to W/2 requires buffer for in-flight packets |
 
 ## 9.9 TCP NewReno
 
@@ -1096,7 +1096,7 @@ Instead of exiting fast recovery on the first partial ACK, NewReno retransmits t
    - Set cwnd = ssthresh.
    - Enter congestion avoidance.
 
-### NewReno Dry Run — Multiple Losses
+### NewReno Dry Run â€” Multiple Losses
 
 
 Scenario: Packets 10, 12, 14 lost in a window of cwnd = 48.
@@ -1106,11 +1106,11 @@ Scenario: Packets 10, 12, 14 lost in a window of cwnd = 48.
 | 0 | 3 dup ACK for P9 | 27 | 24 | FR: retransmit P10 |
 | 1 | Partial ACK (P10 okay, still missing P12) | 24 | 24 | Retransmit P12, stay in FR |
 | 2 | Partial ACK (P12 okay, still missing P14) | 24 | 24 | Retransmit P14, stay in FR |
-| 3 | Full ACK | 24 | 24 | Exit FR → CA |
+| 3 | Full ACK | 24 | 24 | Exit FR â†’ CA |
 
 **Reno comparison**: At step 1, Reno would exit fast recovery and enter CA with cwnd = 24. Packets 12 and 14 would remain unretransmitted, eventually causing an RTO.
 
-### Complexity Analysis — NewReno vs Reno
+### Complexity Analysis â€” NewReno vs Reno
 
 
 | Aspect | Reno | NewReno |
@@ -1130,7 +1130,7 @@ Scenario: Packets 10, 12, 14 lost in a window of cwnd = 48.
 Cubic is like a race car accelerating on a straightaway:
 
 - **Just after a pit stop (loss)**: The car accelerates rapidly back toward its previous speed (fast growth toward Wmax).
-- **Near top speed**: The car shifts to fine-grained speed adjustments — tiny throttle changes to find the optimal speed without overshooting (plateau near Wmax).
+- **Near top speed**: The car shifts to fine-grained speed adjustments â€” tiny throttle changes to find the optimal speed without overshooting (plateau near Wmax).
 - **Beyond previous best**: The car pushes past its old record, accelerating faster as it explores new territory (accelerating growth above Wmax).
 
 ### Detailed Cubic Mechanism
@@ -1151,13 +1151,13 @@ Where:
 
 
 1. **After loss** ($t \approx 0$): Window drops to $W_{max} \cdot \beta$. Then grows rapidly because the cubic function is steepest far from $K$.
-2. **Near $W_{max}$** ($t \approx K$): Growth plateaus — the cubic function flattens. The flow "hovers" near the previously known congestion point, gently probing whether bandwidth has increased.
+2. **Near $W_{max}$** ($t \approx K$): Growth plateaus â€” the cubic function flattens. The flow "hovers" near the previously known congestion point, gently probing whether bandwidth has increased.
 3. **Above $W_{max}$** ($t > K$): Growth accelerates (convex portion of cubic). The flow aggressively explores new bandwidth.
 
 ### RTT Independence
 
 
-Since $t$ is measured in seconds (not RTTs), Cubic's growth rate is independent of the flow's RTT. Two Cubic flows with different RTTs achieve similar throughput — unlike Reno where a 10 ms RTT flow gets 5x the throughput of a 50 ms RTT flow.
+Since $t$ is measured in seconds (not RTTs), Cubic's growth rate is independent of the flow's RTT. Two Cubic flows with different RTTs achieve similar throughput â€” unlike Reno where a 10 ms RTT flow gets 5x the throughput of a 50 ms RTT flow.
 
 ### Cubic Dry Run Trace
 
@@ -1179,7 +1179,7 @@ Parameters: C = 0.4, beta = 0.7, initial Wmax = 100 MSS, loss at RTT 0.
 | 35 | 3.5 | 4.22 | 103.4 | Starting to exceed Wmax |
 | 40 | 4.0 | 4.22 | 110.0 | Accelerating above Wmax |
 
-### Complexity Analysis — Cubic
+### Complexity Analysis â€” Cubic
 
 
 | Operation | Complexity | Why |
@@ -1189,7 +1189,7 @@ Parameters: C = 0.4, beta = 0.7, initial Wmax = 100 MSS, loss at RTT 0.
 | Time tracking | O(1) | Monotonic timestamp delta |
 | Floating-point math | O(1) | CPU cost &lt; ADD operation on modern hardware |
 
-**Why Cubic's complexity is acceptable**: Although cubic involves floating-point operations, it's called only once per ACK (typically &lt; 100K times/second on a 10 Gbps link). Modern CPUs handle this in under 100 ns. The kernel's TCP fast path remains the bottleneck — Cubic's per-packet cost is negligible relative to interrupt handling and memory operations.
+**Why Cubic's complexity is acceptable**: Although cubic involves floating-point operations, it's called only once per ACK (typically &lt; 100K times/second on a 10 Gbps link). Modern CPUs handle this in under 100 ns. The kernel's TCP fast path remains the bottleneck â€” Cubic's per-packet cost is negligible relative to interrupt handling and memory operations.
 
 ## 9.11 TCP BBR (Bottleneck Bandwidth and Round-trip propagation time)
 
@@ -1225,14 +1225,14 @@ BBR has four phases that cycle continuously:
 | CPU overhead | Higher (pacing, filtering) | Minimal (per-ACK counter) |
 | Deployment | Google's B4 WAN, YouTube | Linux default before BBR |
 
-### Complexity Analysis — BBR
+### Complexity Analysis â€” BBR
 
 
 | Operation | Complexity | Why |
 |-----------|-----------|-----|
 | Bandwidth estimation | O(1) per ACK | Max of delivered/elapsed over window |
 | RTT tracking | O(1) per ACK | Min over window |
-| Pacing rate calculation | O(1) | Multiplication: pacing_gain × BtlBw |
+| Pacing rate calculation | O(1) | Multiplication: pacing_gain Ã— BtlBw |
 | Gain cycling | O(1) | Round-robin gain values |
 | State machine | O(1) | Simple phase transitions |
 
@@ -1257,20 +1257,20 @@ Sent packets: 1 through 20. Lost: 5, 10, 15.
 
 | Step | Sender Action | ACK Received | SACK Blocks | Missing |
 |------|-------------|-------------|------------|---------|
-| 1 | Send P1-P20 | — | — | — |
-| 2 | ACK for P4 | ACK 4 | — | — |
+| 1 | Send P1-P20 | â€” | â€” | â€” |
+| 2 | ACK for P4 | ACK 4 | â€” | â€” |
 | 3 | dup ACK for P4 | ACK 4 | 6-6 | 5 |
 | 4 | dup ACK for P4 | ACK 4 | 6-7 | 5 |
 | 5 | dup ACK for P4 (3rd) | ACK 4 | 6-8 | 5 |
-| 6 | Retransmit P5 | — | — | — |
+| 6 | Retransmit P5 | â€” | â€” | â€” |
 | 7 | ACK for P5, but P10 lost | ACK 9 | 11-11 | 10 |
 | 8 | dup ACK for P9 | ACK 9 | 11-12 | 10 |
 | 9 | dup ACK for P9 (3rd) | ACK 9 | 11-14 | 10 |
-| 10 | Retransmit P10 | — | — | — |
+| 10 | Retransmit P10 | â€” | â€” | â€” |
 | 11 | ACK for P10, but P15 lost | ACK 14 | 16-16 | 15 |
-| 12 | 3 dup ACK for P14 | — | — | — |
-| 13 | Retransmit P15 | — | — | — |
-| 14 | Full ACK | ACK 20 | — | All received |
+| 12 | 3 dup ACK for P14 | â€” | â€” | â€” |
+| 13 | Retransmit P15 | â€” | â€” | â€” |
+| 14 | Full ACK | ACK 20 | â€” | All received |
 
 Without SACK, Reno would retransmit only P10 and then exit fast recovery on the partial ACK. Packets 15 and 20 would require a timeout. With SACK, all three lost packets are retransmitted precisely.
 
@@ -1282,21 +1282,21 @@ Without SACK, Reno would retransmit only P10 and then exit fast recovery on the 
 | Multiple loss recovery | 1 loss per RTT (NewReno) or timeout (Reno) | All losses in one RTT |
 | RTO avoidance | Incomplete for burst losses | Near-complete |
 | Complexity | Low (no scoreboard) | Medium (scoreboard + block tracking) |
-| Header overhead | 0 bytes | Up to 40 bytes (4 blocks × 8 bytes + 2 type/length) |
+| Header overhead | 0 bytes | Up to 40 bytes (4 blocks Ã— 8 bytes + 2 type/length) |
 | CPU cost per ACK | O(1) | O(S) where S = number of SACK blocks |
 | Performance on lossy links | Degrades significantly | Maintains throughput |
 
-### Complexity Analysis — SACK
+### Complexity Analysis â€” SACK
 
 
 | Operation | Complexity | Why |
 |-----------|-----------|-----|
-| SACK block parsing | O(B) per ACK (B ≤ 4 blocks) | Max 4 blocks per option |
+| SACK block parsing | O(B) per ACK (B â‰¤ 4 blocks) | Max 4 blocks per option |
 | Scoreboard update | O(B log N) for red-black tree, O(W) for bitmap | Depends on implementation |
 | Retransmission decision | O(L) where L = lost segments | Scan outstanding for gaps in scoreboard |
 | Memory (scoreboard) | O(W) where W = window in packets | Bitmap: W bits; segment list: W nodes |
 
-## 9.13 Tahoe vs Reno vs NewReno — Detailed Comparison
+## 9.13 Tahoe vs Reno vs NewReno â€” Detailed Comparison
 
 ### Recovery Behavior on Loss
 
@@ -1307,7 +1307,7 @@ Without SACK, Reno would retransmit only P10 and then exit fast recovery on the 
 | Reno | cwnd = cwnd/2, fast recovery | Poor (exit FR on first partial ACK) | cwnd = 1, slow start | High |
 | NewReno | cwnd = cwnd/2, stay in FR | Good (1 loss/RTT, stay until full ACK) | cwnd = 1, slow start | High |
 
-### Cwnd Graph — Tahoe vs Reno Recovery
+### Cwnd Graph â€” Tahoe vs Reno Recovery
 
 
 Scenario: cwnd = 48 MSS, loss at RTT 10.
@@ -1360,12 +1360,12 @@ $$T = \frac{MSS}{RTT} \cdot \frac{1}{\sqrt{p}} \cdot \sqrt{\frac{3}{2}}$$
 Where p = packet loss rate. The derivation:
 
 1. In CA, cwnd increases by 1 MSS per RTT. Between losses at W and W + W/2:
-   - Total packets sent = sum from W to W + W/2 = (W)(W/2) + (1/2)(W/2)(W/2) ≈ (3/8)W²
+   - Total packets sent = sum from W to W + W/2 = (W)(W/2) + (1/2)(W/2)(W/2) â‰ˆ (3/8)WÂ²
    - At most 1 packet lost (when cwnd = W).
-   - Loss rate p = 1 / ((3/8)W²) = 8/(3W²).
+   - Loss rate p = 1 / ((3/8)WÂ²) = 8/(3WÂ²).
    - Solving: W = sqrt(8/(3p)).
-   - Average cwnd ≈ (W + W/2)/2 = 3W/4 = (3/4)sqrt(8/(3p)).
-   - Throughput = avg_cwnd × MSS / RTT = (MSS / RTT) × sqrt(3/(2p)).
+   - Average cwnd â‰ˆ (W + W/2)/2 = 3W/4 = (3/4)sqrt(8/(3p)).
+   - Throughput = avg_cwnd Ã— MSS / RTT = (MSS / RTT) Ã— sqrt(3/(2p)).
 
 ### Sawtooth Pattern Dry Run (30 RTTs)
 
@@ -1375,7 +1375,7 @@ Where p = packet loss rate. The derivation:
 | 1 | 10 | SS | |
 | 2 | 20 | SS | |
 | 3 | 40 | SS | |
-| 4 | 64 | SS→CA | |
+| 4 | 64 | SSâ†’CA | |
 | 5 | 65 | CA | |
 | 6 | 66 | CA | |
 | 7 | 67 | CA | |
@@ -1384,7 +1384,7 @@ Where p = packet loss rate. The derivation:
 | 10 | 70 | CA | |
 | 11 | 71 | CA | |
 | 12 | 72 | CA | |
-| 13 | 73 | CA | ✓ Loss (ssthresh=36) |
+| 13 | 73 | CA | âœ“ Loss (ssthresh=36) |
 | 14 | 39 | FR | |
 | 15 | 36 | CA | |
 | 16 | 37 | CA | |
@@ -1395,7 +1395,7 @@ Where p = packet loss rate. The derivation:
 | 21 | 42 | CA | |
 | 22 | 43 | CA | |
 | 23 | 44 | CA | |
-| 24 | 45 | CA | ✓ Loss (ssthresh=22) |
+| 24 | 45 | CA | âœ“ Loss (ssthresh=22) |
 | 25 | 25 | FR | |
 | 26 | 22 | CA | |
 | 27 | 23 | CA | |
@@ -1414,14 +1414,14 @@ The sawtooth: each loss event cuts cwnd in half, then it grows linearly at +1/RT
 |----------|-------|------|---------|-------|-----|
 | RFC | Not standardized | RFC 5681 | RFC 6675 | RFC 8312 | draft-cardwell-iccrg-bbr-congestion-control |
 | Loss signal | 3 dup ACK, RTO | 3 dup ACK, RTO | 3 dup ACK, RTO | 3 dup ACK, RTO | RTT/model (not loss) |
-| cwnd after loss | 1 MSS | cwnd/2 | cwnd/2 | cwnd × 0.7 | No cwnd; pacing rate = BtlBw |
-| Growth function | Exponential → Linear | Exponential → Linear | Exponential → Linear | Cubic | Gain-cycled pacing |
+| cwnd after loss | 1 MSS | cwnd/2 | cwnd/2 | cwnd Ã— 0.7 | No cwnd; pacing rate = BtlBw |
+| Growth function | Exponential â†’ Linear | Exponential â†’ Linear | Exponential â†’ Linear | Cubic | Gain-cycled pacing |
 | Multiple loss recovery | Poor | Poor | Good (1/RTT) | Good (independent) | Good (model-based) |
 | RTT fairness | No | No | No | Yes | Yes (within model) |
 | Buffer requirement | Low | Moderate | Moderate | Moderate | Minimal |
 | Deployment | Obsolete | Legacy | Moderate | Linux default (~40% of Internet) | Google B4, YouTube, Cloud CDN |
 | Complexity | Minimal | Low | Low | Medium | Medium-High |
-| Throughput formula | (MSS/RTT) × sqrt(3/(2p)) | Same | Same | (MSS/RTT) × Cubic(K) | BtlBw (loss-independent) |
+| Throughput formula | (MSS/RTT) Ã— sqrt(3/(2p)) | Same | Same | (MSS/RTT) Ã— Cubic(K) | BtlBw (loss-independent) |
 | ECN support | No | Limited | Limited | Yes | Yes |
 
 ### Pros and Cons of Each Variant
@@ -1463,13 +1463,13 @@ The sawtooth: each loss event cuts cwnd in half, then it grows linearly at +1/RT
 ### Q4: Why does CUBIC have better fairness than Reno across different RTTs?
 
 
-**Answer**: Reno's congestion avoidance growth depends on RTT: cwnd increases by 1 MSS per RTT, so a 10 ms RTT flow adds 100 MSS/second while a 100 ms RTT flow adds only 10 MSS/second. This gives short-RTT flows 10x the throughput. Cubic measures time in seconds (not RTTs) using the cubic function W(t) = C·(t-K)³ + Wmax. Since t is wall-clock time, two Cubic flows with different RTTs grow identically over time, achieving similar throughput regardless of RTT.
+**Answer**: Reno's congestion avoidance growth depends on RTT: cwnd increases by 1 MSS per RTT, so a 10 ms RTT flow adds 100 MSS/second while a 100 ms RTT flow adds only 10 MSS/second. This gives short-RTT flows 10x the throughput. Cubic measures time in seconds (not RTTs) using the cubic function W(t) = CÂ·(t-K)Â³ + Wmax. Since t is wall-clock time, two Cubic flows with different RTTs grow identically over time, achieving similar throughput regardless of RTT.
 
 ### Q5: What is global synchronization and how do modern algorithms avoid it?
 
 
 **Answer**: Global synchronization occurs when multiple TCP flows sharing a bottleneck all lose packets simultaneously (e.g., when the router buffer overflows). All flows halve their windows at once, the link underutilizes, they all increase together, hit the same buffer limit again, and repeat. This creates synchronized sawtooth patterns that waste up to 50% of bandwidth. Mitigations:
-1. **RED (Random Early Detection)**: Drops packets probabilistically before buffer full — flows with larger windows get dropped more often, desynchronizing responses.
+1. **RED (Random Early Detection)**: Drops packets probabilistically before buffer full â€” flows with larger windows get dropped more often, desynchronizing responses.
 2. **CoDel (Controlled Delay)**: Manages queue latency instead of queue length, keeping buffers shallow.
 3. **FQ (Fair Queuing)**: Per-flow queuing isolates flows so one flow's loss doesn't affect others.
 4. **Cubic's plateau**: Slower growth near Wmax means flows don't all peak simultaneously.
@@ -1478,7 +1478,7 @@ The sawtooth: each loss event cuts cwnd in half, then it grows linearly at +1/RT
 ### Q6: What happens when BBR and Reno share a bottleneck link?
 
 
-**Answer**: BBR can be aggressive toward loss-based flows (Reno/Cubic) in certain configurations. BBR paces at estimated BtlBw and doesn't reduce on loss. When Reno loses packets and halves its window, BBR doesn't yield bandwidth — it continues sending at BtlBw, potentially starving Reno. The mitigation:
+**Answer**: BBR can be aggressive toward loss-based flows (Reno/Cubic) in certain configurations. BBR paces at estimated BtlBw and doesn't reduce on loss. When Reno loses packets and halves its window, BBR doesn't yield bandwidth â€” it continues sending at BtlBw, potentially starving Reno. The mitigation:
 1. Pair BBR with FQ (fair queuing) at the bottleneck to enforce per-flow isolation.
 2. BBR's ProbeRTT phase periodically drains to measure RTprop, which briefly creates capacity for other flows.
 3. In practice, BBR with FQ provides good multi-flow fairness. BBR without FQ can be 2-5x more aggressive than Reno.
@@ -1486,24 +1486,24 @@ The sawtooth: each loss event cuts cwnd in half, then it grows linearly at +1/RT
 ### Q7: Describe the TCP throughput formula and its implications.
 
 
-**Answer**: For Reno: T = (MSS / RTT) × sqrt(3 / (2p)). Key implications:
+**Answer**: For Reno: T = (MSS / RTT) Ã— sqrt(3 / (2p)). Key implications:
 1. **Inverse square root of loss rate**: To halve throughput impact, loss rate must be 4x worse. TCP is surprisingly resilient to moderate loss.
 2. **Inverse of RTT**: Halving RTT doubles throughput. Geographic distance directly penalizes throughput.
 3. **Linear with MSS**: Jumbo frames (9000 bytes) enable 6x higher throughput than standard 1500-byte frames.
-4. **1 Mbps link with 1% loss at 100 ms RTT**: T = (1500 × 8 / 0.1) × sqrt(1.5 / 0.01) = 120,000 × 12.25 = 1.47 Mbps — near line rate.
-5. **100 Mbps link with same loss/RTT**: T = same formula — but max at 100 Mbps. Loss limits prevent hitting line rate.
+4. **1 Mbps link with 1% loss at 100 ms RTT**: T = (1500 Ã— 8 / 0.1) Ã— sqrt(1.5 / 0.01) = 120,000 Ã— 12.25 = 1.47 Mbps â€” near line rate.
+5. **100 Mbps link with same loss/RTT**: T = same formula â€” but max at 100 Mbps. Loss limits prevent hitting line rate.
 
 ### Q8: What is the difference between packet loss and congestion ambiguity?
 
 
-**Answer**: Packet loss ≠ always congestion. Loss can occur from:
+**Answer**: Packet loss â‰  always congestion. Loss can occur from:
 | Cause | TCP Interpretation | Correct Behavior |
 |-------|-------------------|-----------------|
-| Router buffer overflow | Congestion (✓) | Reduce window |
-| Bit errors (noisy link) | Not congestion (✗) | Retransmit only, keep window |
+| Router buffer overflow | Congestion (âœ“) | Reduce window |
+| Bit errors (noisy link) | Not congestion (âœ—) | Retransmit only, keep window |
 | Packet reordering | False loss signal | Don't reduce window (DSACK helps) |
 | Transient radio fade (WiFi/cellular) | False loss signal | Keep window (RTO recovery too aggressive) |
-| Tail-drop at shallow buffer | Congestion (✓) | Reduce window |
+| Tail-drop at shallow buffer | Congestion (âœ“) | Reduce window |
 
 **Solution**: ECN (Explicit Congestion Notification) routers mark packets instead of dropping them, providing an unambiguous congestion signal. BBR avoids the ambiguity entirely by using RTT and bandwidth models rather than loss.
 
@@ -1536,7 +1536,7 @@ Available algorithms vary by kernel:
 - **Vegas**: Delay-based, rarely used alone.
 - **HTCP**: High-speed TCP for long-fat pipes.
 
-### C++ Implementation — Multi-Variant Cwnd Simulator
+### C++ Implementation â€” Multi-Variant Cwnd Simulator
 
 
 ```cpp
@@ -1679,7 +1679,7 @@ int main() {
 }
 ```
 
-### Python Implementation — Complete Multi-Variant Simulator
+### Python Implementation â€” Complete Multi-Variant Simulator
 
 
 ```python
@@ -1821,12 +1821,12 @@ class NewReno(Reno):
         """NewReno stays in FR on partial ACK, retransmits next lost."""
         self.cwnd = self.ssthresh  # Deflate
         self.partial_acks += 1
-        # Stay in fast recovery — retransmit next lost segment
+        # Stay in fast recovery â€” retransmit next lost segment
         # (in real implementation, triggered by partial ACK)
         self.phase = f'FAST_RECOVERY (partial ACK #{self.partial_acks})'
 
     def on_full_ack(self):
-        """Full ACK — all data before loss acknowledged, exit FR."""
+        """Full ACK â€” all data before loss acknowledged, exit FR."""
         self.fast_recovery = False
         self.cwnd = self.ssthresh
         self.phase = 'CONGESTION_AVOIDANCE'
@@ -1898,7 +1898,7 @@ class BBRModel(TCPVariant):
             self.phase = 'PROBE_BW (cruise)'
 
     def on_loss(self):
-        # BBR doesn't reduce on loss — it relies on model
+        # BBR doesn't reduce on loss â€” it relies on model
         # Loss may trigger a requeue or ProbeRTT, but no window reduction
         self.phase = 'PROBE_RTT'
 
@@ -1913,7 +1913,7 @@ def run_comparison():
     ]
 
     print("\n" + "=" * 70)
-    print("TCP CONGESTION CONTROL — 5-VARIANT COMPARISON")
+    print("TCP CONGESTION CONTROL â€” 5-VARIANT COMPARISON")
     print("Loss at RTT = 8")
     print("=" * 70)
 
@@ -1986,9 +1986,9 @@ sysctl -w net.core.default_qdisc=fq_codel    # Fair queuing + CoDel
 
 | Feature | Tahoe | Reno | NewReno | Cubic | BBR |
 |---------|-------|------|---------|-------|-----|
-| RFC | — | 5681 | 6675 | 8312 | Draft |
+| RFC | â€” | 5681 | 6675 | 8312 | Draft |
 | Type | Loss-based | Loss-based | Loss-based | Loss-based | Model-based |
-| cwnd after triple ACK | 1 | cwnd/2 | cwnd/2 | cwnd×0.7 | No change |
+| cwnd after triple ACK | 1 | cwnd/2 | cwnd/2 | cwndÃ—0.7 | No change |
 | cwnd after RTO | 1 | 1 | 1 | 1 | 1 |
 | Growth in CA | Linear | Linear | Linear | Cubic | Gain-cycled BtlBw |
 | RTT fairness | Low | Low | Low | High | High |
@@ -2008,7 +2008,7 @@ sysctl -w net.core.default_qdisc=fq_codel    # Fair queuing + CoDel
 | Purpose | Network capacity estimation | Receiver buffer protection |
 | Initial value | 10 MSS (RFC 6928) | OS-dependent (up to 1 MB with window scaling) |
 | Effect on throughput | Primary limiter on uncongested paths | Limiter when receiver is slow or buffer is small |
-| Relationship to BDP | Should be ≈ BDP for full utilization | Must be ≥ BDP for full utilization |
+| Relationship to BDP | Should be â‰ˆ BDP for full utilization | Must be â‰¥ BDP for full utilization |
 
 ### AIMD Sawtooth Pattern Properties
 
@@ -2017,9 +2017,9 @@ sysctl -w net.core.default_qdisc=fq_codel    # Fair queuing + CoDel
 |----------|-------|-------------|
 | Peak cwnd (W) | sqrt(8/(3p)) | Inverse square root of loss rate |
 | Average cwnd | 0.75W | 75% of peak |
-| Throughput | (MSS/RTT) × sqrt(3/(2p)) | Halving RTT doubles throughput |
-| Loss events per second | p × throughput | 1% loss at 100 Mbps = 1 loss/second |
-| Recovery time after loss | W/2 RTTs | 50-packet window → 25 RTTs to recover |
+| Throughput | (MSS/RTT) Ã— sqrt(3/(2p)) | Halving RTT doubles throughput |
+| Loss events per second | p Ã— throughput | 1% loss at 100 Mbps = 1 loss/second |
+| Recovery time after loss | W/2 RTTs | 50-packet window â†’ 25 RTTs to recover |
 
 ## Case Study: CDN Congestion Control Tuning for Global Video Delivery
 
@@ -2027,7 +2027,7 @@ sysctl -w net.core.default_qdisc=fq_codel    # Fair queuing + CoDel
 
 **Solution:** The CDN engineering team deployed a multi-strategy approach across their edge servers. First, they switched from Cubic to BBR for all video delivery (BBR is model-based and does not reduce cwnd on random loss). Across 15,000 edge servers, they configured `net.ipv4.tcp_congestion_control=bbr` and tuned `net.core.default_qdisc=fq` for fair queuing. Second, they implemented Forward Error Correction (FEC) at the application layer, adding 10% parity data to each video chunk, allowing the client to recover from up to 10% packet loss without requesting retransmissions. Third, they deployed a custom loss discrimination module that classified losses as congestion vs. corruption using inter-arrival time variance: sudden RTT increases indicated bufferbloat/congestion, while isolated losses with stable RTT indicated corruption.
 
-**Outcome:** Rebuffering ratios dropped from 22% to 4% in high-loss regions. BBR's model-based control achieved 2.3× throughput compared to Cubic on lossy paths (1.5% loss, 100ms RTT). The FEC layer added 12% bandwidth overhead but eliminated retransmission delays entirely for 90% of loss events. Total CDN egress costs increased by 8% (FEC overhead), but customer retention improved by 14 percentage points in affected markets, more than offsetting the bandwidth cost. The loss discrimination module proved critical: BBR+Cubic hybrid deployment used Cubic in low-loss data centers (better RTT fairness) and BBR at lossy edge egress points.
+**Outcome:** Rebuffering ratios dropped from 22% to 4% in high-loss regions. BBR's model-based control achieved 2.3Ã— throughput compared to Cubic on lossy paths (1.5% loss, 100ms RTT). The FEC layer added 12% bandwidth overhead but eliminated retransmission delays entirely for 90% of loss events. Total CDN egress costs increased by 8% (FEC overhead), but customer retention improved by 14 percentage points in affected markets, more than offsetting the bandwidth cost. The loss discrimination module proved critical: BBR+Cubic hybrid deployment used Cubic in low-loss data centers (better RTT fairness) and BBR at lossy edge egress points.
 
 ## Practical Takeaways
 
@@ -2083,7 +2083,7 @@ Slow start doubles cwnd every RTT because each ACK received increases cwnd by 1 
 
 <details>
 <summary>Solution</summary>
-Fast retransmit uses duplicate ACKs as a loss signal instead of waiting for RTO expiry. When the sender receives 3 duplicate ACKs for the same sequence number, it retransmits the missing segment immediately. Since duplicate ACKs arrive within one RTT of the loss (not the minimum 200ms RTO), fast retransmit detects loss 10-100× faster than timeout-based recovery.
+Fast retransmit uses duplicate ACKs as a loss signal instead of waiting for RTO expiry. When the sender receives 3 duplicate ACKs for the same sequence number, it retransmits the missing segment immediately. Since duplicate ACKs arrive within one RTT of the loss (not the minimum 200ms RTO), fast retransmit detects loss 10-100Ã— faster than timeout-based recovery.
 </details>
 
 4. What problem does TCP Cubic solve that Reno does not?
@@ -2118,7 +2118,7 @@ Cumulative ACKs acknowledge the highest in-order byte received. SACK (Selective 
 
 <details>
 <summary>Solution</summary>
-BBR estimates the bottleneck bandwidth (BtlBw) by tracking the maximum delivery rate observed over a sliding window. It periodically probes by pacing at 1.25× the current BtlBw estimate. If the delivery rate doesn't increase, the bottleneck link is saturated. RTprop (round-trip propagation time) is estimated as the minimum RTT observed over a time window. BBR paces at rate = BtlBw and keeps inflight = BtlBw × RTprop.
+BBR estimates the bottleneck bandwidth (BtlBw) by tracking the maximum delivery rate observed over a sliding window. It periodically probes by pacing at 1.25Ã— the current BtlBw estimate. If the delivery rate doesn't increase, the bottleneck link is saturated. RTprop (round-trip propagation time) is estimated as the minimum RTT observed over a time window. BBR paces at rate = BtlBw and keeps inflight = BtlBw Ã— RTprop.
 </details>
 
 ### Application Problems
@@ -2127,21 +2127,21 @@ BBR estimates the bottleneck bandwidth (BtlBw) by tracking the maximum delivery 
 
 <details>
 <summary>Solution</summary>
-RTT 1: cwnd = 10 (slow start, starts at 10). RTT 2: cwnd = 20. RTT 3: cwnd = 40. RTT 4: cwnd = 80 (exceeds ssthresh=64, so transition to congestion avoidance). RTT 5: cwnd = 80 + MSS²/80 ≈ 80 + 26.6 = 106.6. RTT 6: cwnd ≈ 107 + 19.9 = 126.9. RTT 7: cwnd ≈ 127 + 16.8 = 143.8. RTT 8: cwnd ≈ 144 + 14.8 = 158.8. RTT 9: cwnd ≈ 159 + 13.4 = 172.4. RTT 10: cwnd ≈ 172 + 12.4 = 184.4. Transition happens at RTT 4 (cwnd exceeds ssthresh).
+RTT 1: cwnd = 10 (slow start, starts at 10). RTT 2: cwnd = 20. RTT 3: cwnd = 40. RTT 4: cwnd = 80 (exceeds ssthresh=64, so transition to congestion avoidance). RTT 5: cwnd = 80 + MSSÂ²/80 â‰ˆ 80 + 26.6 = 106.6. RTT 6: cwnd â‰ˆ 107 + 19.9 = 126.9. RTT 7: cwnd â‰ˆ 127 + 16.8 = 143.8. RTT 8: cwnd â‰ˆ 144 + 14.8 = 158.8. RTT 9: cwnd â‰ˆ 159 + 13.4 = 172.4. RTT 10: cwnd â‰ˆ 172 + 12.4 = 184.4. Transition happens at RTT 4 (cwnd exceeds ssthresh).
 </details>
 
 10. A Reno connection experiences triple duplicate ACK at cwnd = 48. Show cwnd evolution through fast recovery and congestion avoidance for the next 5 RTTs.
 
 <details>
 <summary>Solution</summary>
-On triple duplicate ACK: ssthresh = 48/2 = 24, cwnd = 24 + 3 = 27 (fast recovery). RTT 1: cwnd = 27 (retransmit lost packet, wait for ACK). Partial ACK: exit fast recovery, cwnd = ssthresh = 24. RTT 2: additive increase, cwnd ≈ 24 + MSS²/24 ≈ 24 + 88.9 = 112.9 for MSS=1460 (wait, that's wrong — in MSS terms: RTT 2: cwnd = 25, RTT 3: 26, RTT 4: 27, RTT 5: 28 MSS). In MSS units: after recovery, cwnd = 24 MSS. Each CA RTT: cwnd += 1 MSS. So RTT 2-5: 25, 26, 27, 28 MSS.
+On triple duplicate ACK: ssthresh = 48/2 = 24, cwnd = 24 + 3 = 27 (fast recovery). RTT 1: cwnd = 27 (retransmit lost packet, wait for ACK). Partial ACK: exit fast recovery, cwnd = ssthresh = 24. RTT 2: additive increase, cwnd â‰ˆ 24 + MSSÂ²/24 â‰ˆ 24 + 88.9 = 112.9 for MSS=1460 (wait, that's wrong â€” in MSS terms: RTT 2: cwnd = 25, RTT 3: 26, RTT 4: 27, RTT 5: 28 MSS). In MSS units: after recovery, cwnd = 24 MSS. Each CA RTT: cwnd += 1 MSS. So RTT 2-5: 25, 26, 27, 28 MSS.
 </details>
 
 11. Two TCP Reno connections share a 100 Mbps bottleneck link with 50 ms RTT.
 
 <details>
 <summary>Solution</summary>
-For Reno, throughput ≈ (MSS/RTT) × sqrt(3/(2p)). At equilibrium with 2 flows, each gets ~50 Mbps. With infinite data, the AIMD sawtooth gives each flow roughly equal bandwidth share (Reno converges to fairness). If one connection has 100 ms RTT, its throughput is halved (inversely proportional to RTT). The shorter-RTT flow gets ~67 Mbps, the longer-RTT flow gets ~33 Mbps — Reno's RTT unfairness in action.
+For Reno, throughput â‰ˆ (MSS/RTT) Ã— sqrt(3/(2p)). At equilibrium with 2 flows, each gets ~50 Mbps. With infinite data, the AIMD sawtooth gives each flow roughly equal bandwidth share (Reno converges to fairness). If one connection has 100 ms RTT, its throughput is halved (inversely proportional to RTT). The shorter-RTT flow gets ~67 Mbps, the longer-RTT flow gets ~33 Mbps â€” Reno's RTT unfairness in action.
 </details>
 
 12. A NewReno connection with cwnd = 64 loses packets 10, 20, and 30 in the same window.
@@ -2172,7 +2172,7 @@ for t in range(0, 21):
 
 <details>
 <summary>Solution</summary>
-Without FQ: BBR achieves highest throughput because it doesn't reduce cwnd on packet loss. Cubic has moderate throughput (RTT-fair, loss-dependent). Reno has the lowest throughput (loss-based, aggressive cwnd reduction). On a 1 Gbps link with 500-packet queue and 20 ms RTT, Reno fills the queue before detecting loss (bufferbloat). BBR maintains BtlBw ≈ 900 Mbps (target rate). With FQ: all flows get ~250 Mbps each. A fair queuing mechanism like `fq_codel` at the bottleneck assigns each flow a separate queue with weighted round-robin scheduling, ensuring equal throughput regardless of congestion algorithm.
+Without FQ: BBR achieves highest throughput because it doesn't reduce cwnd on packet loss. Cubic has moderate throughput (RTT-fair, loss-dependent). Reno has the lowest throughput (loss-based, aggressive cwnd reduction). On a 1 Gbps link with 500-packet queue and 20 ms RTT, Reno fills the queue before detecting loss (bufferbloat). BBR maintains BtlBw â‰ˆ 900 Mbps (target rate). With FQ: all flows get ~250 Mbps each. A fair queuing mechanism like `fq_codel` at the bottleneck assigns each flow a separate queue with weighted round-robin scheduling, ensuring equal throughput regardless of congestion algorithm.
 </details>
 
 **Hints:**

@@ -1,4 +1,4 @@
-# Chapter 18: The Python Standard Library
+﻿# Chapter 18: The Python Standard Library
 
 
 > **Previous:** [Exceptions and File I/O](./17-exceptions-files.md) | **Next:** [APIs and Testing](./19-apis-testing.md)
@@ -19,16 +19,16 @@ By the end of this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/18-stdlib/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/18-stdlib/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/18-stdlib/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/18-stdlib/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/18-stdlib/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/18-stdlib/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/18-stdlib/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/18-stdlib/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/18-stdlib/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/18-stdlib/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/18-stdlib/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/18-stdlib/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -42,20 +42,20 @@ By the end of this chapter, students will be able to:
 
 | Section | Topic | Key Concept |
 |---------|-------|-------------|
-|18.1 os — Operating System Interface||`pathlib` provides modern object-oriented filesystem paths, replacing most `os.path` use.|
-|18.2 sys — System-Specific Parameters||`datetime` handles dates and times; `time` offers low-level time access and `perf_counter`.|
-|18.3 pathlib — Object-Oriented Filesystem||`re` provides regex matching; compile patterns with `re.compile()` for repeated use.|
-|18.4 shutil — High-Level File Operations||`collections` extends built-in types with `deque`, `ChainMap`, `defaultdict`, and `Counter`.|
-|18.5 datetime — Dates and Times||`argparse` builds CLI interfaces; `logging` provides structured, configurable logging.|
-|18.6 time — Low-Level Time Access||undefined|
-|18.7 re — Regular Expressions||undefined|
+|18.1 os â€” Operating System Interface||`pathlib` provides modern object-oriented filesystem paths, replacing most `os.path` use.|
+|18.2 sys â€” System-Specific Parameters||`datetime` handles dates and times; `time` offers low-level time access and `perf_counter`.|
+|18.3 pathlib â€” Object-Oriented Filesystem||`re` provides regex matching; compile patterns with `re.compile()` for repeated use.|
+|18.4 shutil â€” High-Level File Operations||`collections` extends built-in types with `deque`, `ChainMap`, `defaultdict`, and `Counter`.|
+|18.5 datetime â€” Dates and Times||`argparse` builds CLI interfaces; `logging` provides structured, configurable logging.|
+|18.6 time â€” Low-Level Time Access||undefined|
+|18.7 re â€” Regular Expressions||undefined|
 |18.8 json and csv||undefined|
 |18.9 collections||undefined|
 |18.10 itertools||undefined|
 |18.11 functools||undefined|
 |18.12 math, random, statistics||undefined|
 |18.13 typing||undefined|
-|18.14 argparse — Command-Line Arguments||undefined|
+|18.14 argparse â€” Command-Line Arguments||undefined|
 |18.15 logging||undefined|
 
 
@@ -63,20 +63,20 @@ By the end of this chapter, students will be able to:
 
 ```mermaid
 flowchart LR
-    S0[os — Operating System Interface]
-    S1[sys — System-Specific Parameters]
-    S2[pathlib — Object-Oriented Filesystem]
-    S3[shutil — High-Level File Operations]
-    S4[datetime — Dates and Times]
-    S5[time — Low-Level Time Access]
-    S6[re — Regular Expressions]
+    S0[os â€” Operating System Interface]
+    S1[sys â€” System-Specific Parameters]
+    S2[pathlib â€” Object-Oriented Filesystem]
+    S3[shutil â€” High-Level File Operations]
+    S4[datetime â€” Dates and Times]
+    S5[time â€” Low-Level Time Access]
+    S6[re â€” Regular Expressions]
     S7[json and csv]
     S8[collections]
     S9[itertools]
     S10[functools]
     S11[math, random, statistics]
     S12[typing]
-    S13[argparse — Command-Line Arguments]
+    S13[argparse â€” Command-Line Arguments]
     S14[logging]
     S0 --> S1
     S1 --> S2
@@ -93,7 +93,7 @@ flowchart LR
     S12 --> S13
     S13 --> S14
 ```
-## 18.1 os → Operating System Interface
+## 18.1 os â†’ Operating System Interface
 
 ```python
 import os
@@ -109,7 +109,7 @@ print(entries[:5])
 print(os.environ.get("HOME"))
 print(os.environ.get("PATH")[:50])
 
-# Path operations (legacy → prefer pathlib)
+# Path operations (legacy â†’ prefer pathlib)
 print(os.path.join("dir", "subdir", "file.txt"))
 print(os.path.expanduser("~/documents"))
 print(os.path.exists("test.txt"))
@@ -131,7 +131,7 @@ for root, dirs, files in os.walk("."):
             print(os.path.join(root, file))
 ```
 
-## 18.2 sys → System-Specific Parameters
+## 18.2 sys â†’ System-Specific Parameters
 
 ```python
 import sys
@@ -156,9 +156,9 @@ sys.stdout.write("Using stdout directly\n")
 sys.exit(0)  # 0 = success, non-zero = error
 ```
 
-## 18.3 pathlib → Object-Oriented Filesystem
+## 18.3 pathlib â†’ Object-Oriented Filesystem
 
-Already covered in depth in Chapter 17 → here is a quick reference:
+Already covered in depth in Chapter 17 â†’ here is a quick reference:
 
 ```python
 from pathlib import Path
@@ -172,7 +172,7 @@ for py_file in Path(".").rglob("*.py"):
     pass
 ```
 
-## 18.4 shutil → High-Level File Operations
+## 18.4 shutil â†’ High-Level File Operations
 
 ```python
 import shutil
@@ -200,7 +200,7 @@ shutil.make_archive("backup", "zip", "my_project")
 shutil.unpack_archive("backup.zip", "extracted")
 ```
 
-## 18.5 datetime → Dates and Times
+## 18.5 datetime â†’ Dates and Times
 
 ```python
 from datetime import datetime, date, time, timedelta, timezone
@@ -239,7 +239,7 @@ utc_now = datetime.now(timezone.utc)
 print(utc_now)
 ```
 
-## 18.6 time → Low-Level Time Access
+## 18.6 time â†’ Low-Level Time Access
 
 ```python
 import time
@@ -260,7 +260,7 @@ elapsed = time.perf_counter() - start
 print(f"Took {elapsed:.4f}s")
 ```
 
-## 18.7 re → Regular Expressions
+## 18.7 re â†’ Regular Expressions
 
 ```python
 import re
@@ -325,7 +325,7 @@ r"<[^>]+>"
 > **One-Sentence Takeaway:** undefined
 
 
-Already covered in Chapter 17 → quick reference:
+Already covered in Chapter 17 â†’ quick reference:
 
 ```python
 import json
@@ -352,15 +352,15 @@ with open("data.csv", newline="") as f:
 ```python
 from collections import defaultdict, Counter, OrderedDict, deque, ChainMap
 
-# defaultdict → already covered
+# defaultdict â†’ already covered
 d = defaultdict(list)
 d["key"].append(1)
 
-# Counter → already covered
+# Counter â†’ already covered
 c = Counter("mississippi")
 print(c.most_common(2))  # [('i', 4), ('s', 4)]
 
-# deque → double-ended queue
+# deque â†’ double-ended queue
 queue = deque([1, 2, 3])
 queue.append(4)          # [1, 2, 3, 4]
 queue.appendleft(0)      # [0, 1, 2, 3, 4]
@@ -368,7 +368,7 @@ queue.pop()              # 4
 queue.popleft()          # 0
 print(queue)             # [1, 2, 3]
 
-# ChainMap → combine multiple dictionaries
+# ChainMap â†’ combine multiple dictionaries
 defaults = {"theme": "light", "font": "Arial"}
 user_settings = {"theme": "dark"}
 settings = ChainMap(user_settings, defaults)
@@ -381,7 +381,7 @@ print(settings["font"])   # Arial
 > **One-Sentence Takeaway:** undefined
 
 
-Already covered in Chapter 16 → quick reference:
+Already covered in Chapter 16 â†’ quick reference:
 
 ```python
 from itertools import count, cycle, permutations, combinations, product, chain, groupby
@@ -395,16 +395,16 @@ from itertools import count, cycle, permutations, combinations, product, chain, 
 ```python
 from functools import partial, reduce, lru_cache, singledispatch
 
-# partial → already covered
+# partial â†’ already covered
 def multiply(a, b): return a * b
 double = partial(multiply, 2)
 
-# lru_cache → least recently used cache
+# lru_cache â†’ least recently used cache
 @lru_cache(maxsize=128)
 def expensive(n: int) -> int:
     return n ** n
 
-# singledispatch → function overloading by type
+# singledispatch â†’ function overloading by type
 @singledispatch
 def format_item(item):
     return str(item)
@@ -475,7 +475,7 @@ def process(items: list[int]) -> dict[str, int]:
 # Optional
 def find_user(user_id: int) -> Optional[str]:
     db = {1: "Alice", 2: "Bob"}
-    return db.get(user_id)  # Optional[str] → str or None
+    return db.get(user_id)  # Optional[str] â†’ str or None
 
 # Union (or | in 3.10+)
 def parse(value: Union[int, str]) -> int | str:
@@ -496,7 +496,7 @@ def first(items: list[T]) -> T | None:
 print(first([1, 2, 3]))  # 1
 ```
 
-## 18.14 argparse → Command-Line Arguments
+## 18.14 argparse â†’ Command-Line Arguments
 
 ```python
 import argparse
@@ -628,35 +628,35 @@ logging.basicConfig(level=logging.INFO)
 
 ```typescript
 // Chapter 18: TypeScript Standard Library Equivalents
-// Python: os.getcwd() → Node: process.cwd()
+// Python: os.getcwd() â†’ Node: process.cwd()
 import * as fs from "node:fs";
 import * as path from "node:path";
 import * as os from "node:os";
 
 console.log(process.cwd());   // Equivalent: os.getcwd()
 
-// Python: os.listdir() / pathlib.iterdir() → Node: fs.readdirSync()
+// Python: os.listdir() / pathlib.iterdir() â†’ Node: fs.readdirSync()
 const files: string[] = fs.readdirSync(".");
 console.log(files);
 
-// Python: pathlib.Path.stat() → Node: fs.statSync()
+// Python: pathlib.Path.stat() â†’ Node: fs.statSync()
 const stats = fs.statSync(".");
 console.log(stats.size, stats.mtime);
 
-// Python: datetime → TypeScript: Date
+// Python: datetime â†’ TypeScript: Date
 const now: Date = new Date();
 console.log(now.toISOString());  // Equivalent: datetime.now().isoformat()
 
-// Python: re module → TypeScript: RegExp
+// Python: re module â†’ TypeScript: RegExp
 const pattern: RegExp = /hello/i;
 console.log(pattern.test("Hello World"));  // true
 
-// Python: collections.deque → TypeScript: Array (shift/unshift/push/pop)
+// Python: collections.deque â†’ TypeScript: Array (shift/unshift/push/pop)
 const queue: number[] = [];
 queue.push(1); queue.push(2);
 console.log(queue.shift());  // 1  (like deque.popleft())
 
-// Python: functools.lru_cache → TypeScript: Map-based memoization
+// Python: functools.lru_cache â†’ TypeScript: Map-based memoization
 function memoize<A, B>(fn: (arg: A) => B): (arg: A) => B {
   const cache = new Map<A, B>();
   return (arg: A): B => {
@@ -667,16 +667,16 @@ function memoize<A, B>(fn: (arg: A) => B): (arg: A) => B {
   };
 }
 
-// Python: math module → TypeScript: Math global
+// Python: math module â†’ TypeScript: Math global
 console.log(Math.sqrt(16));      // Equivalent: math.sqrt(16)
 console.log(Math.PI);            // Equivalent: math.pi
 console.log(Math.random());      // Equivalent: random.random()
 
-// Python: argparse → TypeScript: process.argv or yargs/commander
+// Python: argparse â†’ TypeScript: process.argv or yargs/commander
 const args = process.argv.slice(2);
 console.log("CLI args:", args);
 
-// Python: logging → TypeScript: console or pino/winston
+// Python: logging â†’ TypeScript: console or pino/winston
 console.error("Error message");  // Equivalent: logging.error()
 console.warn("Warning");
 ```
@@ -684,35 +684,35 @@ console.warn("Warning");
 ### TypeScript Standard Library: More Equivalents
 
 ```typescript
-// Python: os.environ → TypeScript: process.env
+// Python: os.environ â†’ TypeScript: process.env
 const homeDir: string | undefined = process.env.HOME;
 const nodeEnv: string = process.env.NODE_ENV ?? "development";
 
-// Python: sys.argv → TypeScript: process.argv
+// Python: sys.argv â†’ TypeScript: process.argv
 const scriptName: string = process.argv[1] ?? "";
 const cliArgs: string[] = process.argv.slice(2);
 console.log(`Script: ${scriptName}, Args: ${cliArgs}`);
 
-// Python: shutil.copy → TypeScript: fs.cpSync
+// Python: shutil.copy â†’ TypeScript: fs.cpSync
 fs.cpSync("source.txt", "dest.txt", { recursive: false });
 
-// Python: glob.glob → TypeScript: fs.globSync (Node 22+)
+// Python: glob.glob â†’ TypeScript: fs.globSync (Node 22+)
 // or: const globbed = fs.readdirSync(".").filter(f => f.endsWith(".ts"));
 
-// Python: datetime.timedelta → TypeScript: milliseconds
+// Python: datetime.timedelta â†’ TypeScript: milliseconds
 const oneHour = 60 * 60 * 1000;  // hours * minutes * seconds * ms
 const future = new Date(Date.now() + oneHour);
 
-// Python: re.search / re.match → TypeScript: RegExp
+// Python: re.search / re.match â†’ TypeScript: RegExp
 const emailRegex = /^[\w.-]+@[\w.-]+\.\w+$/;
 console.log(emailRegex.test("alice@example.com"));  // true
 
-// Python: json.dumps / json.loads → TypeScript: JSON.stringify / JSON.parse
+// Python: json.dumps / json.loads â†’ TypeScript: JSON.stringify / JSON.parse
 const data = { name: "Alice", scores: [90, 85] };
 const json = JSON.stringify(data, null, 2);
 const parsed = JSON.parse(json);
 
-// Python: statistics.mean / stdev → TypeScript: manual
+// Python: statistics.mean / stdev â†’ TypeScript: manual
 function mean(arr: number[]): number {
   return arr.reduce((a, b) => a + b, 0) / arr.length;
 }
@@ -722,7 +722,7 @@ function stdev(arr: number[]): number {
 }
 console.log(mean([1, 2, 3, 4, 5]), stdev([1, 2, 3, 4, 5]));
 
-// Python: random.choice → TypeScript: random index
+// Python: random.choice â†’ TypeScript: random index
 const choice = (arr: unknown[]) => arr[Math.floor(Math.random() * arr.length)];
 ```
 
@@ -969,7 +969,7 @@ function counter<T>(items: T[]): Map<T, number> {
   return counts;
 }
 
-console.log("=== Python stdlib × TypeScript equivalents ===");
+console.log("=== Python stdlib Ã— TypeScript equivalents ===");
 pathOps(); fileOps(); jsonOps(); csvOps(); hashOps(); dateOps();
 console.log(counter(["a","b","a","c","b","a"]));
 ```

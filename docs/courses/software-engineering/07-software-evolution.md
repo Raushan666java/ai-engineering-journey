@@ -1,32 +1,32 @@
-# Software Evolution
+﻿# Software Evolution
 
 ## Learning Objectives
 
 ```
-✓ Distinguish between the four categories of software maintenance: corrective, adaptive, perfective, preventive
-✓ Explain Lehman's eight laws of software evolution and their practical implications
-✓ Distinguish reverse engineering, reengineering, and forward engineering
-✓ Apply refactoring techniques with before/after TypeScript code
-✓ Identify characteristics of legacy systems and select appropriate management strategies
-✓ Quantify technical debt and analyse it using Fowler's quadrant model
-✓ Perform impact analysis for proposed changes using dependency graphs
-✓ Calculate software entropy and understand its relationship to maintenance cost
-✓ Implement version migration strategies with semantic versioning and breaking change detection
+âœ“ Distinguish between the four categories of software maintenance: corrective, adaptive, perfective, preventive
+âœ“ Explain Lehman's eight laws of software evolution and their practical implications
+âœ“ Distinguish reverse engineering, reengineering, and forward engineering
+âœ“ Apply refactoring techniques with before/after TypeScript code
+âœ“ Identify characteristics of legacy systems and select appropriate management strategies
+âœ“ Quantify technical debt and analyse it using Fowler's quadrant model
+âœ“ Perform impact analysis for proposed changes using dependency graphs
+âœ“ Calculate software entropy and understand its relationship to maintenance cost
+âœ“ Implement version migration strategies with semantic versioning and breaking change detection
 ```
 
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/07-software-evolution/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/software-engineering/07-software-evolution/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/07-software-evolution/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/software-engineering/07-software-evolution/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/07-software-evolution/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/software-engineering/07-software-evolution/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/07-software-evolution/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/software-engineering/07-software-evolution/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/07-software-evolution/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/software-engineering/07-software-evolution/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/07-software-evolution/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/software-engineering/07-software-evolution/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -77,7 +77,7 @@ Lehman formulated eight laws based on empirical studies of large systems over de
 | Law | Statement | Implication | Practical Example |
 |-----|-----------|-------------|-------------------|
 | **I. Continuing Change** | A system must be continually adapted or it becomes progressively less satisfactory | Software that isn't changed becomes irrelevant | A 10-year-old e-commerce platform without mobile support loses market share |
-| **II. Increasing Complexity** | As a system evolves, its complexity increases unless work is performed to reduce it | Without deliberate refactoring, entropy increases | A 1M LOC system grows to 2M LOC with same team — more bugs per LOC |
+| **II. Increasing Complexity** | As a system evolves, its complexity increases unless work is performed to reduce it | Without deliberate refactoring, entropy increases | A 1M LOC system grows to 2M LOC with same team â€” more bugs per LOC |
 | **III. Self-Regulation** | The evolution process is self-regulating with statistically regular distributions | Process metrics follow predictable patterns | Defect arrival rate stabilizes at ~5 per sprint regardless of system size |
 | **IV. Conservation of Organisational Stability** | The average effective global activity rate is invariant over the product lifetime | Team productivity tends to stabilise | A team of 5 delivers ~8 story points per sprint consistently |
 | **V. Conservation of Familiarity** | The incremental growth of each release is statistically invariant | Release sizes tend to remain consistent | Each release adds 20-30 features, never 200 |
@@ -90,7 +90,7 @@ Lehman formulated eight laws based on empirical studies of large systems over de
 Software entropy is a measure of the disorder or degradation in a software system. Just as the second law of thermodynamics states that entropy in an isolated system tends to increase, software entropy inevitably increases unless deliberate effort (refactoring) is applied.
 
 **Contributors to software entropy:**
-- **Accumulated quick fixes:** "We'll fix it properly later" — but later never comes
+- **Accumulated quick fixes:** "We'll fix it properly later" â€” but later never comes
 - **Inconsistent coding styles:** Different developers, different conventions
 - **Dead code:** Unused functions, classes, and modules that clutter the codebase
 - **Duplicated logic:** Copy-pasted code that diverges over time
@@ -157,9 +157,9 @@ graph LR
     end
 ```
 
-**Forward Engineering** follows the traditional waterfall: requirements → design → implementation. It starts with abstractions and produces concrete code.
+**Forward Engineering** follows the traditional waterfall: requirements â†’ design â†’ implementation. It starts with abstractions and produces concrete code.
 
-**Reverse Engineering** goes the opposite direction: code → design → requirements. It recovers design information from existing code to understand how a system works. This is essential for legacy systems where documentation is missing.
+**Reverse Engineering** goes the opposite direction: code â†’ design â†’ requirements. It recovers design information from existing code to understand how a system works. This is essential for legacy systems where documentation is missing.
 
 **Reengineering** combines both: reverse engineering to understand the current system, then forward engineering to produce an improved version. This is the most common approach for modernizing legacy systems.
 
@@ -295,14 +295,14 @@ class TechnicalDebtCalculator {
       '=== Technical Debt Report ===',
       `Generated: ${new Date().toISOString()}`,
       '',
-      '┌─────────────────────────────────┬─────────────┐',
-      '│ Metric                          │ Value       │',
-      '├─────────────────────────────────┼─────────────┤',
-      `│ Total Items                     │ ${this.debtItems.length.toString().padStart(11)} │`,
-      `│ Principal (Fix Hours)           │ ${report.totalDebtHours.toString().padStart(11)} │`,
-      `│ Interest (Hours Paid)           │ ${report.totalInterestHours.toString().padStart(11)} │`,
-      `│ Debt Ratio (Interest/Principal) │ ${report.debtRatio.toFixed(2).padStart(9)}    │`,
-      '└─────────────────────────────────┴─────────────┘',
+      'â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”',
+      'â”‚ Metric                          â”‚ Value       â”‚',
+      'â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤',
+      `â”‚ Total Items                     â”‚ ${this.debtItems.length.toString().padStart(11)} â”‚`,
+      `â”‚ Principal (Fix Hours)           â”‚ ${report.totalDebtHours.toString().padStart(11)} â”‚`,
+      `â”‚ Interest (Hours Paid)           â”‚ ${report.totalInterestHours.toString().padStart(11)} â”‚`,
+      `â”‚ Debt Ratio (Interest/Principal) â”‚ ${report.debtRatio.toFixed(2).padStart(9)}    â”‚`,
+      'â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜',
       '',
       '--- By Quadrant ---',
     ];
@@ -517,10 +517,10 @@ graph TD
     classDef lowQual fill:#fff3e0,stroke:#e65100
 
     subgraph "Legacy System Portfolio Analysis"
-        Q1[QUADRANT I<br>High Business Value<br>Low Technical Quality<br>→ TRANSFORM / REARCHITECT]:::highVal
-        Q2[QUADRANT II<br>High Business Value<br>High Technical Quality<br>→ MAINTAIN / EVOLVE]:::highVal
-        Q3[QUADRANT III<br>Low Business Value<br>Low Technical Quality<br>→ SCRAP & REBUILD]:::lowVal
-        Q4[QUADRANT IV<br>Low Business Value<br>High Technical Quality<br>→ FREEZE / WRAP]:::lowVal
+        Q1[QUADRANT I<br>High Business Value<br>Low Technical Quality<br>â†’ TRANSFORM / REARCHITECT]:::highVal
+        Q2[QUADRANT II<br>High Business Value<br>High Technical Quality<br>â†’ MAINTAIN / EVOLVE]:::highVal
+        Q3[QUADRANT III<br>Low Business Value<br>Low Technical Quality<br>â†’ SCRAP & REBUILD]:::lowVal
+        Q4[QUADRANT IV<br>Low Business Value<br>High Technical Quality<br>â†’ FREEZE / WRAP]:::lowVal
     end
     
     Q1 --> STR1[Strangler Fig Pattern<br>Incremental replacement]:::highQual
@@ -646,12 +646,12 @@ class VersionManager {
       (c) => c.affectedComponents.some((comp) => comp.includes('*'))
     );
     const lines: string[] = [
-      `=== Migration Guide: ${this.toString(from)} → ${this.toString(to)} ===`,
+      `=== Migration Guide: ${this.toString(from)} â†’ ${this.toString(to)} ===`,
       '',
       'Summary of Breaking Changes:',
     ];
     for (const change of relevantChanges) {
-      lines.push(`  • ${change.description}`);
+      lines.push(`  â€¢ ${change.description}`);
       lines.push('    Migration steps:');
       for (const step of change.migrationSteps) {
         lines.push(`    - ${step}`);
@@ -676,11 +676,11 @@ A major retail bank operated a 35-year-old COBOL-based core banking system proce
 
 **Challenge:** Modernize without interrupting operations. The COBOL system had no test suite, and business rules were embedded in procedural code with no documentation.
 
-**Approach — Strangler Fig Pattern:**
-1. **Phase 1 (Months 1-6):** API encapsulation — wrapped COBOL transactions behind REST APIs. All new development targeted the API layer.
-2. **Phase 2 (Months 7-18):** Transaction strangling — migrated high-volume transactions (account lookup, balance inquiry) to new microservices. Used feature flags to route traffic.
-3. **Phase 3 (Months 19-30):** Domain strangling — migrated complex domains (loans, mortgages) to event-driven services.
-4. **Phase 4 (Months 31-36):** Decommission — retired the COBOL system after verifying all traffic was routed to new services.
+**Approach â€” Strangler Fig Pattern:**
+1. **Phase 1 (Months 1-6):** API encapsulation â€” wrapped COBOL transactions behind REST APIs. All new development targeted the API layer.
+2. **Phase 2 (Months 7-18):** Transaction strangling â€” migrated high-volume transactions (account lookup, balance inquiry) to new microservices. Used feature flags to route traffic.
+3. **Phase 3 (Months 19-30):** Domain strangling â€” migrated complex domains (loans, mortgages) to event-driven services.
+4. **Phase 4 (Months 31-36):** Decommission â€” retired the COBOL system after verifying all traffic was routed to new services.
 
 **Results:** Zero downtime during migration. 40% reduction in per-transaction cost. Ability to launch new products in weeks instead of months. Preservation of all business rules through automated regression testing comparing old vs. new system outputs.
 
@@ -703,11 +703,11 @@ A SaaS company with 500K+ lines of TypeScript had accumulated significant techni
 
 **Results:** Release cycle reduced from 2 weeks to 2 days. Developer onboarding time cut from 4 weeks to 1 week. Bug rate dropped 60%.
 
-### Case Study 3: Healthcare SaaS — Reengineering for Compliance
+### Case Study 3: Healthcare SaaS â€” Reengineering for Compliance
 
 A healthcare SaaS platform needed HIPAA compliance. The system had grown organically over 10 years with no architectural oversight.
 
-**Approach — Incremental Migration:**
+**Approach â€” Incremental Migration:**
 1. **Security layer:** Implemented encryption at rest and in transit, access controls, and audit logging without changing business logic.
 2. **Data isolation:** Separated patient data from application code using repository pattern.
 3. **Architecture transformation:** Migrated from monolithic PHP to TypeScript microservices, one domain at a time.
@@ -762,7 +762,7 @@ function checkLehmanLaws(history: { version: string; loc: number; modules: numbe
   const observations: string[] = [];
   if (history.length >= 2) {
     const first = history[0], last = history[history.length - 1];
-    if (last.loc > first.loc) observations.push("Law I (Continuing Change): system is evolving — LOC grew");
+    if (last.loc > first.loc) observations.push("Law I (Continuing Change): system is evolving â€” LOC grew");
     if (last.modules > first.modules) observations.push("Law II (Increasing Complexity): module count increased");
     if (last.defects > 0 && last.defects < first.defects) observations.push("Law III (Self-Regulation): defect rate stabilizing");
     if (last.defects > 0 && last.defects >= first.defects) observations.push("Law VII (Declining Quality): defect rate not improving");
@@ -799,7 +799,7 @@ class EvolutionAnalyzer {
       recommendations.push(`Resolve ${circularDeps.length} circular dependencies by extracting shared interfaces`);
     }
     if (averageAgeMonths > 24) {
-      recommendations.push('Average dependency age exceeds 24 months — schedule dependency audit');
+      recommendations.push('Average dependency age exceeds 24 months â€” schedule dependency audit');
     }
     const health = deprecatedCount > 3 || circularDeps.length > 2 ? 'critical' : averageAgeMonths > 18 ? 'aging' : 'healthy';
     return { health, deprecatedCount, averageAgeMonths: Math.round(averageAgeMonths), circularDependencies: circularDeps, recommendations };
@@ -926,14 +926,14 @@ graph TD
         
         REFACTOR2 --> FIX2[Refactor & Reduce Debt]:::fix
         FIX2 --> VALIDATE[Validate with Tests]:::fix
-        VALIDATE --> RETIRE[Retire Debt Item<br>✓ Closed]:::fix
+        VALIDATE --> RETIRE[Retire Debt Item<br>âœ“ Closed]:::fix
     end
     
     subgraph "Lehman's Feedback Loops"
         CHANGE[System Change]:::commit --> COMPLEXITY[Increasing Complexity<br>Law II]:::debt
         COMPLEXITY --> REFACTOR3[Refactoring Required]:::review
         REFACTOR3 -->|Without Refactoring| DECLINE[Quality Decline<br>Law VII]:::debt
-        REFACTOR3 -->|With Refactoring| STABILITY[Controlled Evolution<br>✓ Sustainable]:::fix
+        REFACTOR3 -->|With Refactoring| STABILITY[Controlled Evolution<br>âœ“ Sustainable]:::fix
     end
 ```
 
@@ -941,20 +941,20 @@ graph TD
 
 Software evolution consumes the majority of lifecycle costs (60-80%). Maintenance is classified into four categories: corrective (fixing defects), adaptive (environmental changes), perfective (enhancements), and preventive (refactoring). Perfective maintenance dominates at ~55% of all maintenance activity.
 
-Lehman's eight laws describe the empirical dynamics of evolution. The most critical are Law I (Continuing Change — systems must constantly adapt), Law II (Increasing Complexity — entropy grows without deliberate refactoring), and Law VII (Declining Quality — quality drops without rigorous maintenance). These laws highlight that evolution is not optional but inevitable.
+Lehman's eight laws describe the empirical dynamics of evolution. The most critical are Law I (Continuing Change â€” systems must constantly adapt), Law II (Increasing Complexity â€” entropy grows without deliberate refactoring), and Law VII (Declining Quality â€” quality drops without rigorous maintenance). These laws highlight that evolution is not optional but inevitable.
 
-Reverse engineering recovers design information from existing code, while reengineering combines reverse and forward engineering to modernize systems. The technical debt quadrant (reckless/prudent × deliberate/inadvertent) helps prioritize improvement work. Legacy systems require context-appropriate strategies ranging from scrapping to wrapping, with the strangler fig pattern offering the lowest-risk modernization path. Impact analysis quantifies change consequences through dependency graph traversal. Regression testing is essential throughout evolution to preserve existing behavior. Semantic versioning provides clear communication about change impact, and systematic debt tracking ensures that improvement work is visible, measurable, and prioritized.
+Reverse engineering recovers design information from existing code, while reengineering combines reverse and forward engineering to modernize systems. The technical debt quadrant (reckless/prudent Ã— deliberate/inadvertent) helps prioritize improvement work. Legacy systems require context-appropriate strategies ranging from scrapping to wrapping, with the strangler fig pattern offering the lowest-risk modernization path. Impact analysis quantifies change consequences through dependency graph traversal. Regression testing is essential throughout evolution to preserve existing behavior. Semantic versioning provides clear communication about change impact, and systematic debt tracking ensures that improvement work is visible, measurable, and prioritized.
 
 ## Practical Takeaways
 
-1. **Refactoring is not optional** — without it, Lehman's Law of Increasing Complexity guarantees degradation. Invest 20% of each sprint in preventive maintenance.
-2. **Track technical debt explicitly** — quantify principal and interest, prioritize by debt ratio, and schedule repayment alongside features.
-3. **The strangler fig pattern is safer than big-bang rewrites** — incremental replacement preserves business continuity and allows course correction.
-4. **Automated tests are essential for evolution** — without them, refactoring is just "changing code and hoping." Maintain a comprehensive regression suite.
-5. **Document decisions, not just code** — future maintainers need to know why things were done, not just what was done. Architecture Decision Records (ADRs) are invaluable.
-6. **Legacy systems are valuable** — they represent years of accumulated business logic and domain knowledge. Treat them with respect and extract their value.
-7. **Software entropy is measurable** — track complexity metrics, duplicate code, dead code, and dependency cycles. Use them to guide improvement investment.
-8. **Impact analysis prevents surprises** — before making changes, trace the dependency graph to identify all affected components. Estimate effort from the ripple effect.
+1. **Refactoring is not optional** â€” without it, Lehman's Law of Increasing Complexity guarantees degradation. Invest 20% of each sprint in preventive maintenance.
+2. **Track technical debt explicitly** â€” quantify principal and interest, prioritize by debt ratio, and schedule repayment alongside features.
+3. **The strangler fig pattern is safer than big-bang rewrites** â€” incremental replacement preserves business continuity and allows course correction.
+4. **Automated tests are essential for evolution** â€” without them, refactoring is just "changing code and hoping." Maintain a comprehensive regression suite.
+5. **Document decisions, not just code** â€” future maintainers need to know why things were done, not just what was done. Architecture Decision Records (ADRs) are invaluable.
+6. **Legacy systems are valuable** â€” they represent years of accumulated business logic and domain knowledge. Treat them with respect and extract their value.
+7. **Software entropy is measurable** â€” track complexity metrics, duplicate code, dead code, and dependency cycles. Use them to guide improvement investment.
+8. **Impact analysis prevents surprises** â€” before making changes, trace the dependency graph to identify all affected components. Estimate effort from the ripple effect.
 
 ## Chapter Quiz
 
@@ -1008,7 +1008,7 @@ Reverse engineering recovers design information from existing code, while reengi
 
 4. What distinguishes reverse engineering from reengineering?
 
-5. What is the principal constraint on refactoring — what must be preserved?
+5. What is the principal constraint on refactoring â€” what must be preserved?
 
 6. Describe the strangler fig pattern for legacy system replacement.
 
@@ -1025,9 +1025,9 @@ Reverse engineering recovers design information from existing code, while reengi
 
 **Given:**
 - Current maintenance cost: $1.2M/year
-- Current change rate: 15% → $1.2M / 0.15 = $8M total value
+- Current change rate: 15% â†’ $1.2M / 0.15 = $8M total value
 - After refactoring change rate: 10%
-- New maintenance cost: $8M × 0.10 = $0.8M/year
+- New maintenance cost: $8M Ã— 0.10 = $0.8M/year
 - Annual savings: $1.2M - $0.8M = $0.4M/year
 - Refactoring investment: $300K
 - Break-even: $300K / $400K = 0.75 years = 9 months
@@ -1185,7 +1185,7 @@ class CodeSmellDetector {
 | Law | Application to ERP System |
 |-----|--------------------------|
 | I. Continuing Change | Must support new tax regulations annually or become non-compliant |
-| II. Increasing Complexity | Codebase grew from 200K to 2M LOC without refactoring — bug fix time doubled |
+| II. Increasing Complexity | Codebase grew from 200K to 2M LOC without refactoring â€” bug fix time doubled |
 | III. Self-Regulation | Defect rate stabilizes at ~50 per release regardless of system size |
 | IV. Conservation of Stability | Team of 8 delivers consistent 30 story points per sprint |
 | V. Conservation of Familiarity | Each release adds 5-8 modules, never 50 |
@@ -1202,23 +1202,23 @@ class CodeSmellDetector {
 
 **Strategy: Knowledge Recovery + Strangler Fig + API Encapsulation**
 
-**Phase 1 (Months 1-4) — Knowledge Recovery:**
+**Phase 1 (Months 1-4) â€” Knowledge Recovery:**
 1. Deploy runtime monitoring to capture all business rules from production behavior
 2. Create automated tests comparing old vs. new outputs (characterization tests)
 3. Document discovered business rules in an Architecture Decision Record (ADR) log
 4. Interview SMEs and document legacy knowledge before retirement
 
-**Phase 2 (Months 5-8) — API Encapsulation:**
+**Phase 2 (Months 5-8) â€” API Encapsulation:**
 1. Wrap legacy system behind REST APIs (without modifying legacy code)
 2. Build the citizen portal as a new frontend consuming these APIs
 3. Add request/response logging for full traceability
 
-**Phase 3 (Months 9-16) — Legislation Implementation:**
+**Phase 3 (Months 9-16) â€” Legislation Implementation:**
 1. Implement new eligibility rules in a new service alongside the legacy system
 2. Use feature flags to route between old and new implementations
 3. Compare results from both systems in production shadow mode
 
-**Phase 4 (Months 17-30) — Incremental Replacement:**
+**Phase 4 (Months 17-30) â€” Incremental Replacement:**
 1. Use strangler fig pattern to replace legacy modules one by one
 2. Each replacement module must pass 1,000+ regression tests comparing with legacy
 3. Migrate data incrementally, preserving full audit trail
@@ -1234,7 +1234,7 @@ class ModernizationPlanner {
   wrapModule(name: string, apiEndpoint: string): void {
     const module = this.modules.find(m => m.name === name);
     if (module) module.status = 'wrapped';
-    console.log(`[API Encapsulation] ${name} → ${apiEndpoint}`);
+    console.log(`[API Encapsulation] ${name} â†’ ${apiEndpoint}`);
   }
 
   migrateModule(name: string, shadowPercentage: number): void {
@@ -1246,7 +1246,7 @@ class ModernizationPlanner {
   retireModule(name: string): void {
     const module = this.modules.find(m => m.name === name);
     if (module) module.status = 'retired';
-    console.log(`[Retired] ${name} — legacy system module decommissioned`);
+    console.log(`[Retired] ${name} â€” legacy system module decommissioned`);
   }
 
   getProgress(): string {

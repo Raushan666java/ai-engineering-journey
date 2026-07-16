@@ -1,4 +1,4 @@
-# Chapter 10: Probabilistic Reasoning
+﻿# Chapter 10: Probabilistic Reasoning
 
 **Previous:** [Chapter 9: Reasoning Under Uncertainty](09-uncertainty.md) | **Next:** [Chapter 11: Reinforcement Learning](11-reinforcement-learning.md)
 
@@ -9,16 +9,16 @@ By the conclusion of this chapter, the student will be able to: (1) construct Ba
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/10-probabilistic-reasoning/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -383,19 +383,19 @@ P(J=true, M=true | A=true)  = P(J=true | A=true) * P(M=true | A=true)
 
 P(J=true | A=true)           = 0.90
 P(M=true | A=true)           = 0.70
-P(J=true | A=true) * P(M=true | A=true) = 0.63 ✓
+P(J=true | A=true) * P(M=true | A=true) = 0.63 âœ“
 ```
 
 Now check if **JohnCalls** and **MaryCalls** are independent **without** conditioning on Alarm:
 
 ```
-P(J=true, M=true) = Σ_A P(J=true|A) P(M=true|A) P(A)
+P(J=true, M=true) = Î£_A P(J=true|A) P(M=true|A) P(A)
                  = 0.90 * 0.70 * 0.002516 + 0.05 * 0.01 * 0.997484
                  = 0.001585 + 0.000499 = 0.002084
 
 P(J=true) * P(M=true) = 0.05214 * 0.01174 = 0.000612
 
-0.002084 ≠ 0.000612 -> Not independent without conditioning ✓
+0.002084 â‰  0.000612 -> Not independent without conditioning âœ“
 ```
 
 ### Python Implementation

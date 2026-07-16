@@ -1,4 +1,4 @@
-# Chapter 1: Introduction to Python
+﻿# Chapter 1: Introduction to Python
 
 ## Learning Objectives
 
@@ -13,16 +13,16 @@ By the end of this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/01-introduction/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/01-introduction/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/01-introduction/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/01-introduction/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/01-introduction/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/01-introduction/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/01-introduction/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/01-introduction/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/01-introduction/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/01-introduction/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/01-introduction/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/01-introduction/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -623,7 +623,7 @@ server.listen(3000);
 ### TypeScript Development Environment
 
 ```typescript
-// package.json — project setup
+// package.json â€” project setup
 {
   "name": "ts-project",
   "version": "1.0.0",
@@ -640,7 +640,7 @@ server.listen(3000);
 ```
 
 ```typescript
-// tsconfig.json — TypeScript compiler configuration
+// tsconfig.json â€” TypeScript compiler configuration
 {
   "compilerOptions": {
     "target": "ES2023",
@@ -656,7 +656,7 @@ server.listen(3000);
 }
 ```
 
-### Python → TypeScript Quick Reference
+### Python â†’ TypeScript Quick Reference
 
 
 | Python Concept | TypeScript Equivalent | Key Difference |
@@ -689,9 +689,9 @@ const greeting: string = hello("World");
 
 
 ```typescript
-// Execution model: Interpreted (Python) vs Compiled (TypeScript → JavaScript)
+// Execution model: Interpreted (Python) vs Compiled (TypeScript â†’ JavaScript)
 // Python: python script.py  (interpreted line by line)
-// TypeScript: tsc → node dist/script.js  (compiled, then run)
+// TypeScript: tsc â†’ node dist/script.js  (compiled, then run)
 // Bun: bun run script.ts  (transpiled and run JIT)
 
 // Type safety: Dynamic (Python) vs Static (TypeScript)
@@ -815,7 +815,7 @@ Write a script that creates a virtual environment, installs the `requests` and `
 ### TypeScript Practical Applications
 
 ```typescript
-// === Python ↔ TypeScript Syntax Equivalence Table ===
+// === Python â†” TypeScript Syntax Equivalence Table ===
 const equivTable = [
   { python: "print('hello')", ts: "console.log('hello')", note: "Console output" },
   { python: "len(list)", ts: "list.length", note: "Length property" },
@@ -848,7 +848,7 @@ const equivTable = [
   { python: "all(list)", ts: "array.every(Boolean)", note: "All true" },
   { python: "sum(list)", ts: "array.reduce((a,b)=>a+b, 0)", note: "Summation" },
 ];
-equivTable.forEach(e => console.log(`${e.python.padEnd(25)} → ${e.ts.padEnd(35)} # ${e.note}`));
+equivTable.forEach(e => console.log(`${e.python.padEnd(25)} â†’ ${e.ts.padEnd(35)} # ${e.note}`));
 
 // === Python Interop Pattern: Config Parser in Both ===
 interface PythonConfig {

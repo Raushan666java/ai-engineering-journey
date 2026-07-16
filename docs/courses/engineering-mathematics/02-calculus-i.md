@@ -1,4 +1,4 @@
-# Chapter 2: Single Variable Calculus
+﻿# Chapter 2: Single Variable Calculus
 
 > **Previous:** [Chapter 1: Linear Algebra](01-linear-algebra.md) | **Next:** [Chapter 3: Multivariable Calculus](03-calculus-ii.md)
 
@@ -9,16 +9,16 @@ After completing this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/engineering-mathematics/02-calculus-i/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/engineering-mathematics/02-calculus-i/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/engineering-mathematics/02-calculus-i/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/engineering-mathematics/02-calculus-i/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/engineering-mathematics/02-calculus-i/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/engineering-mathematics/02-calculus-i/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/engineering-mathematics/02-calculus-i/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/engineering-mathematics/02-calculus-i/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/engineering-mathematics/02-calculus-i/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/engineering-mathematics/02-calculus-i/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/engineering-mathematics/02-calculus-i/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/engineering-mathematics/02-calculus-i/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>

@@ -1,4 +1,4 @@
-# Chapter 2: Banking System & Regulations
+﻿# Chapter 2: Banking System & Regulations
 
 ## Learning Objectives
 
@@ -14,16 +14,16 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/banking-financial-awareness/02-banking-system-regulations/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/banking-financial-awareness/02-banking-system-regulations/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/banking-financial-awareness/02-banking-system-regulations/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/banking-financial-awareness/02-banking-system-regulations/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/banking-financial-awareness/02-banking-system-regulations/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/banking-financial-awareness/02-banking-system-regulations/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/banking-financial-awareness/02-banking-system-regulations/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/banking-financial-awareness/02-banking-system-regulations/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/banking-financial-awareness/02-banking-system-regulations/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/banking-financial-awareness/02-banking-system-regulations/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/banking-financial-awareness/02-banking-system-regulations/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/banking-financial-awareness/02-banking-system-regulations/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -74,7 +74,7 @@ mindmap
 
 #### A. Public Sector Banks (PSBs)
 
-Banks where the **Government of India holds majority stake** (≥51%). PSBs are covered under the **Banking Companies (Acquisition and Transfer of Undertakings) Acts of 1970 and 1980**.
+Banks where the **Government of India holds majority stake** (â‰¥51%). PSBs are covered under the **Banking Companies (Acquisition and Transfer of Undertakings) Acts of 1970 and 1980**.
 
 | Category | Examples | Key Feature |
 |----------|----------|-------------|
@@ -124,7 +124,7 @@ Organised under the **Cooperative Societies Acts** of respective states. Regulat
 | Urban | Urban Cooperative Banks (UCBs) | Operate in urban/semi-urban areas |
 | State | State Cooperative Banks (StCBs) | Apex cooperative institution in each state |
 | District | District Central Cooperative Banks (DCCBs) | Intermediate level |
-| Village | Primary Agricultural Credit Societies (PACS) | Grassroots level — villages |
+| Village | Primary Agricultural Credit Societies (PACS) | Grassroots level â€” villages |
 
 #### F. Payment Banks
 
@@ -132,7 +132,7 @@ A category of banks licensed by RBI in 2015 to promote **financial inclusion** b
 
 **Key restrictions:**
 - Cannot lend (no credit products)
-- Maximum deposit per customer: ₹2,00,000 (increased from ₹1,00,000)
+- Maximum deposit per customer: â‚¹2,00,000 (increased from â‚¹1,00,000)
 - Must invest 75% of deposits in government securities/T-bills
 - Can offer current accounts, savings accounts, remittance services, mobile payments
 
@@ -144,7 +144,7 @@ Licensed in 2015 to extend **financial inclusion** by providing basic banking se
 
 **Key features:**
 - Must lend at least 75% of Adjusted Net Bank Credit (ANBC) to priority sector
-- Minimum 50% of loan portfolio must consist of loans up to ₹25 lakh
+- Minimum 50% of loan portfolio must consist of loans up to â‚¹25 lakh
 - Can offer all basic banking services (deposits, loans, remittances)
 
 **Examples:** AU Small Finance Bank, Equitas Small Finance Bank, Ujjivan Small Finance Bank, ESAF Small Finance Bank, Jana Small Finance Bank, Suryoday Small Finance Bank.
@@ -157,13 +157,13 @@ The **Banking Regulation Act, 1949** (as amended) provides the legal framework f
 
 | Section | Provision |
 |---------|-----------|
-| Section 5(b) | Definition of "banking" — accepting deposits for lending/investment, repayable on demand |
+| Section 5(b) | Definition of "banking" â€” accepting deposits for lending/investment, repayable on demand |
 | Section 6 | Permissible activities for a banking company |
 | Section 7 | Use of "bank", "banker", or "banking" restricted to licensed entities |
 | Section 10 | Prohibition of trading activities by banks |
 | Section 10A | Board of Directors must have at least 51% members with special knowledge/practical experience |
 | Section 11 | Minimum capital and reserve requirements |
-| Section 17 | **Reserve Fund** — every bank must transfer at least 20% of profit to reserve fund before declaring dividend |
+| Section 17 | **Reserve Fund** â€” every bank must transfer at least 20% of profit to reserve fund before declaring dividend |
 | Section 18 | Cash Reserve Ratio (CRR) |
 | Section 21 | RBI's power to control advances |
 | Section 22 | **Licensing** of banking companies by RBI |
@@ -193,9 +193,9 @@ The **Banking Regulation Act, 1949** (as amended) provides the legal framework f
 | Section 13(4) | If borrower fails to comply, bank can take possession of secured assets, sell/lease/assign them |
 | Section 14 | Magistrate's assistance to take physical possession |
 | Section 17 | Borrower can appeal to Debt Recovery Tribunal (DRT) |
-| Section 31 | Exemptions — assets under certain categories (e.g., agricultural land) |
+| Section 31 | Exemptions â€” assets under certain categories (e.g., agricultural land) |
 
-**Applicable to:** All scheduled banks, some FIs, and NBFCs with asset size of ₹500 crore+ (since 2014).
+**Applicable to:** All scheduled banks, some FIs, and NBFCs with asset size of â‚¹500 crore+ (since 2014).
 
 **Related bodies:**
 - **DRT (Debt Recovery Tribunal):** Adjudication of disputes under SARFAESI
@@ -210,12 +210,12 @@ Established in 1978 through the merger of Deposit Insurance Corporation (1962) a
 
 | Feature | Current Status |
 |---------|----------------|
-| Insurance limit | ₹5,00,000 per depositor per bank (raised from ₹1,00,000 in 2020) |
+| Insurance limit | â‚¹5,00,000 per depositor per bank (raised from â‚¹1,00,000 in 2020) |
 | Coverage | All commercial banks, RRBs, local area banks, cooperative banks |
 | Premium | Paid by the bank (not depositor) |
 | Rate | 0.10% of total deposits per annum (revised periodically) |
 
-**Recent development:** In 2020, the insurance limit was raised from ₹1 lakh to ₹5 lakh after PMC Bank crisis. The DICGC Act was amended in 2021 to ensure faster payout (within 90 days of bank closure).
+**Recent development:** In 2020, the insurance limit was raised from â‚¹1 lakh to â‚¹5 lakh after PMC Bank crisis. The DICGC Act was amended in 2021 to ensure faster payout (within 90 days of bank closure).
 
 ### 2.6 Basel Norms
 
@@ -223,7 +223,7 @@ The **Basel Committee on Banking Supervision (BCBS)** under the **Bank for Inter
 
 | Basel Accord | Year | Key Focus | Implementation in India |
 |-------------|------|-----------|------------------------|
-| Basel I | 1988 | Credit risk → 8% capital adequacy | Fully implemented by 1999 |
+| Basel I | 1988 | Credit risk â†’ 8% capital adequacy | Fully implemented by 1999 |
 | Basel II | 2004 | Three pillars: Minimum capital, Supervisory review, Market discipline | Implemented from 2008 |
 | Basel III | 2010 | Enhanced capital quality, leverage ratio, liquidity ratios | Implemented from 2013, fully by 2023 |
 | Basel IV / Final Reforms | 2017 | Output floor, standardised approaches | Implementation from 2024 |
@@ -232,15 +232,15 @@ The **Basel Committee on Banking Supervision (BCBS)** under the **Bank for Inter
 
 | Metric | Requirement | Definition |
 |--------|-------------|------------|
-| Common Equity Tier 1 (CET1) | ≥ 5.5% of RWA | Highest quality capital (equity shares, retained earnings) |
-| Tier 1 Capital | ≥ 7% of RWA | CET1 + Additional Tier 1 (AT1 bonds) |
-| Total Capital (Tier 1 + Tier 2) | ≥ 9% of RWA | Total regulatory capital |
+| Common Equity Tier 1 (CET1) | â‰¥ 5.5% of RWA | Highest quality capital (equity shares, retained earnings) |
+| Tier 1 Capital | â‰¥ 7% of RWA | CET1 + Additional Tier 1 (AT1 bonds) |
+| Total Capital (Tier 1 + Tier 2) | â‰¥ 9% of RWA | Total regulatory capital |
 | Capital Conservation Buffer (CCB) | 2.5% of RWA | Above minimum requirement |
-| **Total Capital + CCB** | **≥ 11.5%** | Effective minimum for PSBs |
-| Countercyclical Buffer | 0–2.5% | Discretionary buffer during credit booms |
-| Leverage Ratio | ≥ 4% | Tier 1 capital / Total exposure |
-| Liquidity Coverage Ratio (LCR) | ≥ 100% | High-quality liquid assets / 30-day net cash outflows |
-| Net Stable Funding Ratio (NSFR) | ≥ 100% | Available stable funding / Required stable funding |
+| **Total Capital + CCB** | **â‰¥ 11.5%** | Effective minimum for PSBs |
+| Countercyclical Buffer | 0â€“2.5% | Discretionary buffer during credit booms |
+| Leverage Ratio | â‰¥ 4% | Tier 1 capital / Total exposure |
+| Liquidity Coverage Ratio (LCR) | â‰¥ 100% | High-quality liquid assets / 30-day net cash outflows |
+| Net Stable Funding Ratio (NSFR) | â‰¥ 100% | Available stable funding / Required stable funding |
 
 **Capital Adequacy Ratio (CAR) formula:**
 ```
@@ -256,7 +256,7 @@ Introduced by RBI in **2002** (revised in 2017) to **supervise and discipline** 
 | Parameter | Threshold 1 | Threshold 2 | Threshold 3 |
 |-----------|-------------|-------------|-------------|
 | CRAR | < 10.25% | < 7.25% | < 5.25% |
-| Net NPA Ratio | ≥ 6% | ≥ 9% | ≥ 12% |
+| Net NPA Ratio | â‰¥ 6% | â‰¥ 9% | â‰¥ 12% |
 | Return on Assets (RoA) | Negative for 2 years | Negative for 3 years | Negative for 4 years |
 
 **Restrictions imposed under PCA (escalating):**
@@ -319,8 +319,8 @@ flowchart TD
 | S | Sensitivity to Market Risk |
 
 **Inspection frequency:**
-- **Large banks** (assets > ₹25,000 crore): Annual
-- **Small banks** (assets < ₹25,000 crore): Every 2 years
+- **Large banks** (assets > â‚¹25,000 crore): Annual
+- **Small banks** (assets < â‚¹25,000 crore): Every 2 years
 - **NBFCs:** Risk-based cycle
 
 **Asset Quality Review (AQR) 2015:** RBI conducted a special inspection drive to clean up bank balance sheets by identifying and recognising hidden NPAs. This led to a sharp spike in reported NPAs from 2015-2017 and was the precursor to the Insolvency and Bankruptcy Code (IBC) 2016.
@@ -333,7 +333,7 @@ Mandated under the **Prevention of Money Laundering Act (PMLA), 2002** and RBI M
 
 | Tier | Type | Requirement |
 |------|------|-------------|
-| 1 | Simplified KYC | Small accounts (up to ₹50,000) with limited transactions |
+| 1 | Simplified KYC | Small accounts (up to â‚¹50,000) with limited transactions |
 | 2 | Basic KYC | Official valid documents (Aadhaar, Voter ID, Passport, Driving Licence) |
 | 3 | Full KYC | In-person verification, photograph, address proof |
 | 4 | Enhanced Due Diligence | High-risk customers, politically exposed persons (PEPs) |
@@ -344,7 +344,7 @@ Mandated under the **Prevention of Money Laundering Act (PMLA), 2002** and RBI M
 
 Banks must:
 - File **Suspicious Transaction Reports (STRs)** with Financial Intelligence Unit (FIU-IND)
-- Maintain **Cash Transaction Reports (CTRs)** for transactions above ₹10 lakh
+- Maintain **Cash Transaction Reports (CTRs)** for transactions above â‚¹10 lakh
 - Appoint a **Principal Officer** for AML compliance
 - Conduct **Employee Training** on AML procedures
 
@@ -437,7 +437,7 @@ a) Capital Adequacy Ratio b) Net NPA Ratio c) Return on Assets d) Net Interest M
 <summary>Answer</summary>
 **Answer:** d) Net Interest Margin
 
-PCA is triggered based on three parameters: CRAR (< 10.25%), Net NPA Ratio (≥ 6%), and RoA (negative for 2+ years). Net Interest Margin is not a PCA trigger.
+PCA is triggered based on three parameters: CRAR (< 10.25%), Net NPA Ratio (â‰¥ 6%), and RoA (negative for 2+ years). Net Interest Margin is not a PCA trigger.
 </details>
 
 ---
@@ -475,19 +475,19 @@ function calculateDepositInsurance(
 }
 
 const coverage = calculateDepositInsurance("Ravi Sharma", [350000, 200000, 100000], 500000);
-console.log(`Insured: ₹${coverage.insuredAmount}, Uninsured: ₹${coverage.uninsuredAmount}`);
-// Output: Insured: ₹500000, Uninsured: ₹150000
+console.log(`Insured: â‚¹${coverage.insuredAmount}, Uninsured: â‚¹${coverage.uninsuredAmount}`);
+// Output: Insured: â‚¹500000, Uninsured: â‚¹150000
 ```
 
 **Q4.** What is the current deposit insurance limit provided by DICGC?
 
-a) ₹1,00,000 b) ₹2,00,000 c) ₹5,00,000 d) ₹10,00,000
+a) â‚¹1,00,000 b) â‚¹2,00,000 c) â‚¹5,00,000 d) â‚¹10,00,000
 
 <details>
 <summary>Answer</summary>
-**Answer:** c) ₹5,00,000
+**Answer:** c) â‚¹5,00,000
 
-The DICGC insurance limit was raised from ₹1,00,000 to ₹5,00,000 per depositor per bank in 2020 following the PMC Bank crisis.
+The DICGC insurance limit was raised from â‚¹1,00,000 to â‚¹5,00,000 per depositor per bank in 2020 following the PMC Bank crisis.
 </details>
 
 ---
@@ -544,34 +544,34 @@ function assessPCA(
 
   // Check CRAR
   if (carPercent < 5.25) {
-    restrictions.push("Threshold 3: CRAR — All mandatory + additional restrictions");
+    restrictions.push("Threshold 3: CRAR â€” All mandatory + additional restrictions");
     triggerLevel = Math.max(triggerLevel, 3);
   } else if (carPercent < 7.25) {
-    restrictions.push("Threshold 2: CRAR — Limit on lending, no dividend");
+    restrictions.push("Threshold 2: CRAR â€” Limit on lending, no dividend");
     triggerLevel = Math.max(triggerLevel, 2);
   } else if (carPercent < 10.25) {
-    restrictions.push("Threshold 1: CRAR — Limit on dividend, management strengthening");
+    restrictions.push("Threshold 1: CRAR â€” Limit on dividend, management strengthening");
     triggerLevel = Math.max(triggerLevel, 1);
   }
 
   // Check NPA
   if (netNpaPercent >= 12) {
-    restrictions.push("Threshold 3: NPA — Stringent NPA recovery measures");
+    restrictions.push("Threshold 3: NPA â€” Stringent NPA recovery measures");
     triggerLevel = Math.max(triggerLevel, 3);
   } else if (netNpaPercent >= 9) {
-    restrictions.push("Threshold 2: NPA — Restrict branch expansion");
+    restrictions.push("Threshold 2: NPA â€” Restrict branch expansion");
     triggerLevel = Math.max(triggerLevel, 2);
   } else if (netNpaPercent >= 6) {
-    restrictions.push("Threshold 1: NPA — Higher provisioning");
+    restrictions.push("Threshold 1: NPA â€” Higher provisioning");
     triggerLevel = Math.max(triggerLevel, 1);
   }
 
   // Check RoA
   if (roaPercent < -1 && roaPercent >= -2) {
-    restrictions.push("Threshold 2: RoA — Management compensation restrictions");
+    restrictions.push("Threshold 2: RoA â€” Management compensation restrictions");
     triggerLevel = Math.max(triggerLevel, 2);
   } else if (roaPercent < -2) {
-    restrictions.push("Threshold 3: RoA — Capital restructuring plan");
+    restrictions.push("Threshold 3: RoA â€” Capital restructuring plan");
     triggerLevel = Math.max(triggerLevel, 3);
   }
 
@@ -631,13 +631,13 @@ SFBs must lend at least 75% of their Adjusted Net Bank Credit (ANBC) to the prio
 
 **Q10.** What is the maximum deposit limit for Payment Banks?
 
-a) ₹1,00,000 b) ₹2,00,000 c) ₹5,00,000 d) ₹10,00,000
+a) â‚¹1,00,000 b) â‚¹2,00,000 c) â‚¹5,00,000 d) â‚¹10,00,000
 
 <details>
 <summary>Answer</summary>
-**Answer:** b) ₹2,00,000
+**Answer:** b) â‚¹2,00,000
 
-Payment banks can accept deposits up to ₹2,00,000 per customer (increased from ₹1,00,000 in 2021). They cannot lend money.
+Payment banks can accept deposits up to â‚¹2,00,000 per customer (increased from â‚¹1,00,000 in 2021). They cannot lend money.
 </details>
 
 ---
@@ -790,8 +790,8 @@ function checkPrioritySectorTarget(
 }
 
 const psl = checkPrioritySectorTarget(100000, 18000, 12000, 3000, 5000, 4000);
-console.log(`PSL: ${psl.currentPercent}%, Shortfall: ₹${psl.shortfall}`);
-// Output: PSL: 42%, Shortfall: ₹0 (meets target)
+console.log(`PSL: ${psl.currentPercent}%, Shortfall: â‚¹${psl.shortfall}`);
+// Output: PSL: 42%, Shortfall: â‚¹0 (meets target)
 ```
 
 **Q16.** What is the priority sector lending target for domestic commercial banks?
@@ -886,7 +886,7 @@ d) K. M. Chandrasekhar Committee
 <summary>Answer</summary>
 **Answer:** b) Narasimham Committee
 
-LABs were introduced in 1996 based on the Narasimham Committee recommendations to serve in 2-3 contiguous districts with a minimum capital of ₹5 crore.
+LABs were introduced in 1996 based on the Narasimham Committee recommendations to serve in 2-3 contiguous districts with a minimum capital of â‚¹5 crore.
 </details>
 
 ---
@@ -957,16 +957,16 @@ PACS are the grassroots-level institutions in the cooperative credit structure, 
 
 **Q27.** The minimum capital requirement for setting up a Local Area Bank is:
 
-a) ₹1 crore
-b) ₹5 crore
-c) ₹10 crore
-d) ₹25 crore
+a) â‚¹1 crore
+b) â‚¹5 crore
+c) â‚¹10 crore
+d) â‚¹25 crore
 
 <details>
 <summary>Answer</summary>
-**Answer:** b) ₹5 crore
+**Answer:** b) â‚¹5 crore
 
-LABs require minimum capital of ₹5 crore and operate within a contiguous area of 2-3 districts.
+LABs require minimum capital of â‚¹5 crore and operate within a contiguous area of 2-3 districts.
 </details>
 
 ---
@@ -1106,7 +1106,7 @@ console.log(`Recommendations: ${bankHealth.recommendations.join(", ")}`);
 
 | Aspect | Public Sector Banks | Private Sector Banks |
 |--------|-------------------|---------------------|
-| **Majority Ownership** | Government of India (≥51%) | Private shareholders |
+| **Majority Ownership** | Government of India (â‰¥51%) | Private shareholders |
 | **Regulation** | RBI + Government (under BR Act) | RBI (under BR Act) |
 | **Interest Rates** | Generally lower lending rates | Competitive, market-driven |
 | **Branch Network** | Extensive rural reach | Concentrated in urban/semi-urban |
@@ -1164,7 +1164,7 @@ flowchart TD
 - Operates the **Export Credit Guarantee Corporation (ECGC)** interface
 
 **SIDBI Key Initiatives:**
-- Manages the **Fund of Funds** for Startups (₹10,000 crore)
+- Manages the **Fund of Funds** for Startups (â‚¹10,000 crore)
 - Implements the **Stand-Up India** scheme (nodal agency)
 - Provides refinance to banks/MFIs for MSME lending
 - Promotes the **Credit Guarantee Fund Trust for Micro and Small Enterprises (CGTMSE)**
@@ -1175,7 +1175,7 @@ flowchart TD
 
 | Feature | Details |
 |---------|---------|
-| **Minimum capital** | ₹5 crore |
+| **Minimum capital** | â‚¹5 crore |
 | **Area of operation** | 2-3 contiguous districts |
 | **Target beneficiaries** | Small farmers, small-scale industries, tiny enterprises |
 | **Status** | Only a few remain (e.g., Coastal Local Area Bank) |
@@ -1183,16 +1183,16 @@ flowchart TD
 
 LABs were intended to bridge the gap between RRBs/commercial banks and the informal credit sector in rural and semi-urban areas.
 
-### 2.13 SLR — Deeper Understanding
+### 2.13 SLR â€” Deeper Understanding
 
 Statutory Liquidity Ratio (SLR) under **Section 24 of the Banking Regulation Act, 1949** requires banks to maintain a portion of their NDTL in approved securities.
 
-**SLR vs CRR — Comparison:**
+**SLR vs CRR â€” Comparison:**
 
 | Aspect | SLR | CRR |
 |--------|-----|-----|
 | **Maintained in** | Approved securities (G-Secs, gold) | Cash with RBI |
-| **Interest earned** | Yes — banks earn coupon on G-Secs | No interest paid |
+| **Interest earned** | Yes â€” banks earn coupon on G-Secs | No interest paid |
 | **Purpose** | Ensures solvency; funds government borrowing | Direct liquidity control |
 | **Section** | Section 24 of BR Act | Section 18 of BR Act |
 | **Current level** | 18% of NDTL | 4.5% of NDTL |
@@ -1210,14 +1210,14 @@ flowchart LR
     E --> F[Lower bond yields]
     F --> G[Fiscal deficit more<br/>manageable]
     
-    B --> H[Banks' assets become<br/>safer → higher solvency]
+    B --> H[Banks' assets become<br/>safer â†’ higher solvency]
     
     style A fill:#1a73e8,color:#fff
     style D fill:#e83737,color:#fff
     style G fill:#4CAF50,color:#fff
 ```
 
-### 2.14 Cooperative Banking — Deeper Dive
+### 2.14 Cooperative Banking â€” Deeper Dive
 
 Cooperative banks in India follow a **three-tier structure** for short-term credit and a separate structure for long-term credit.
 
@@ -1231,7 +1231,7 @@ Cooperative banks in India follow a **three-tier structure** for short-term cred
 
 **Urban Cooperative Banks (UCBs):**
 - Regulated by RBI (banking functions) and State Registrars (registration)
-- Categorised into Tier 1 (deposits < ₹100 crore) and Tier 2 (deposits > ₹100 crore)
+- Categorised into Tier 1 (deposits < â‚¹100 crore) and Tier 2 (deposits > â‚¹100 crore)
 - **Umbrella organisation:** National Federation of Urban Cooperative Banks and Credit Societies (NAFCUB)
 
 **Challenges faced by cooperative banks:**
@@ -1290,8 +1290,8 @@ function simulateReserveChange(
 }
 
 const sim = simulateReserveChange(100000000, 4.5, 4.0, 18, 18);
-console.log(`Locked: ₹${sim.lockedFunds}, Lendable: ₹${sim.lendableFunds}, Change: ₹${sim.lendingCapacityChange}`);
-// Output: Locked: ₹22000000, Lendable: ₹78000000, Change: ₹500000 (more lending capacity)
+console.log(`Locked: â‚¹${sim.lockedFunds}, Lendable: â‚¹${sim.lendableFunds}, Change: â‚¹${sim.lendingCapacityChange}`);
+// Output: Locked: â‚¹22000000, Lendable: â‚¹78000000, Change: â‚¹500000 (more lending capacity)
 ```
 
 ---
@@ -1300,9 +1300,9 @@ console.log(`Locked: ₹${sim.lockedFunds}, Lendable: ₹${sim.lendableFunds}, C
 
 - **Indian banking system** comprises scheduled commercial banks (PSBs, private, foreign, RRBs), cooperative banks, development banks (NABARD, SIDBI, NHB), payment banks, small finance banks, and NBFCs.
 - **Public sector banks** are those with majority government ownership. Major consolidation occurred in 2019-2020 reducing PSB count from 27 to 12.
-- **Payment banks** offer deposit (up to ₹2 lakh) and payment services but cannot lend. **Small finance banks** focus on underserved segments with 75% priority sector lending requirement.
+- **Payment banks** offer deposit (up to â‚¹2 lakh) and payment services but cannot lend. **Small finance banks** focus on underserved segments with 75% priority sector lending requirement.
 - The **Banking Regulation Act, 1949** governs licensing, management, and operations of banks. Section 35 gives RBI inspection powers.
-- The **SARFAESI Act, 2002** enables NPA recovery without court intervention. **DICGC** insures deposits up to ₹5 lakh per depositor per bank.
+- The **SARFAESI Act, 2002** enables NPA recovery without court intervention. **DICGC** insures deposits up to â‚¹5 lakh per depositor per bank.
 - **Basel III norms** mandate minimum CAR of 11.5% (including CCB), CET1 of 5.5%, and introduce LCR and NSFR for liquidity risk management.
 - **PCA framework** uses CRAR, NPA ratio, and RoA triggers to discipline weak banks with escalating restrictions.
 - The **CAMELS rating system** is used for supervisory assessment with six components.
@@ -1313,16 +1313,16 @@ console.log(`Locked: ₹${sim.lockedFunds}, Lendable: ₹${sim.lendableFunds}, C
 
 | Exam Topic | Key Fact | Mnemonic / Tip |
 |------------|----------|----------------|
-| Banking Reg Act Year | 1949 | "BR Act same as RBI nationalisation — 1949" |
-| DICGC Limit | ₹5 lakh per depositor | Raised from ₹1 lakh in 2020 |
-| Basel III CAR | 11.5% (9% + 2.5% CCB) | "9 + 2.5 = 11.5 — Always remember the Buffer" |
+| Banking Reg Act Year | 1949 | "BR Act same as RBI nationalisation â€” 1949" |
+| DICGC Limit | â‚¹5 lakh per depositor | Raised from â‚¹1 lakh in 2020 |
+| Basel III CAR | 11.5% (9% + 2.5% CCB) | "9 + 2.5 = 11.5 â€” Always remember the Buffer" |
 | SARFAESI Notice | 60 days to borrower | "SARFAESI gives 60 days before seizure" |
-| Payment Bank Limit | ₹2 lakh deposit | "Payments = Pay only = 2 lakh limit" |
+| Payment Bank Limit | â‚¹2 lakh deposit | "Payments = Pay only = 2 lakh limit" |
 | SFB Priority Sector | 75% of ANBC | "Small banks = Big priority (75%)" |
-| PCA Parameters | CRAR, NPA, RoA | "C-N-R — Capital, NPA, Return" |
-| CAMELS | 6 components | "CAMSEL — Camel without the 'L' but with 'S' before 'E'" |
+| PCA Parameters | CRAR, NPA, RoA | "C-N-R â€” Capital, NPA, Return" |
+| CAMELS | 6 components | "CAMSEL â€” Camel without the 'L' but with 'S' before 'E'" |
 | RBI Inspection Power | Section 35 of BR Act | "Section 35 = RBI enters the bank" |
-| Reserve Fund | 20% profit transfer | "Section 17 = 17% → actually 20%!" |
+| Reserve Fund | 20% profit transfer | "Section 17 = 17% â†’ actually 20%!" |
 
 ---
 
@@ -1362,33 +1362,33 @@ Basel III minimum capital is 9% plus the 2.5% Capital Conservation Buffer, total
 **Q3.** Which of the following correctly describes a Payment Bank?
 
 a) Can lend and accept deposits without limit
-b) Cannot lend but can accept deposits up to ₹2 lakh
+b) Cannot lend but can accept deposits up to â‚¹2 lakh
 c) Can only accept current accounts
 d) Is regulated by SEBI
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** b) Cannot lend but can accept deposits up to ₹2 lakh
+**Answer:** b) Cannot lend but can accept deposits up to â‚¹2 lakh
 
-Payment banks are licensed to promote financial inclusion. They can accept savings/current deposits (up to ₹2 lakh) and offer remittance/payment services, but cannot lend.
+Payment banks are licensed to promote financial inclusion. They can accept savings/current deposits (up to â‚¹2 lakh) and offer remittance/payment services, but cannot lend.
 </details>
 
 ---
 
 **Q4.** The DICGC deposit insurance cover is:
 
-a) ₹1,00,000 per depositor per bank
-b) ₹5,00,000 per depositor per bank
-c) ₹5,00,000 per account per bank
-d) ₹10,00,000 per depositor across all banks
+a) â‚¹1,00,000 per depositor per bank
+b) â‚¹5,00,000 per depositor per bank
+c) â‚¹5,00,000 per account per bank
+d) â‚¹10,00,000 per depositor across all banks
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** b) ₹5,00,000 per depositor per bank
+**Answer:** b) â‚¹5,00,000 per depositor per bank
 
-DICGC covers up to ₹5 lakh per depositor (unique depositor identity) per bank, not per account. The limit was raised from ₹1 lakh in 2020.
+DICGC covers up to â‚¹5 lakh per depositor (unique depositor identity) per bank, not per account. The limit was raised from â‚¹1 lakh in 2020.
 </details>
 
 ---
@@ -1427,7 +1427,7 @@ In the 2019-2020 mega merger, Canara Bank absorbed Syndicate Bank. PNB absorbed 
    a) Banking Regulation Act b) RRB Act, 1976 c) NABARD Act d) Cooperative Societies Act
 
 5. What is the maximum deposit limit for Payment Banks per customer?
-   a) ₹50,000 b) ₹1,00,000 c) ₹2,00,000 d) ₹5,00,000
+   a) â‚¹50,000 b) â‚¹1,00,000 c) â‚¹2,00,000 d) â‚¹5,00,000
 
 6. Under Section 13(4) of SARFAESI, what can a bank do if the borrower fails to comply with the notice?
    a) File a court case b) Take possession of secured assets c) Write off the loan d) Issue a fresh notice
@@ -1459,13 +1459,13 @@ In the 2019-2020 mega merger, Canara Bank absorbed Syndicate Bank. PNB absorbed 
 21. IDBI was established in the year _________ as an apex institution for industrial finance.
 22. SIDBI was established in _________ as a wholly-owned subsidiary of IDBI.
 23. EXIM Bank was established in _________ under the EXIM Bank Act, 1981.
-24. Local Area Banks (LABs) minimum capital requirement is ₹_________ crore.
+24. Local Area Banks (LABs) minimum capital requirement is â‚¹_________ crore.
 25. The grassroots-level institution in the cooperative credit structure is called _________.
 
 ### Section C: True or False
 
 26. Payment banks can offer credit cards to customers. (True/False)
-27. The DICGC insurance limit is ₹5 lakh per bank account. (True/False)
+27. The DICGC insurance limit is â‚¹5 lakh per bank account. (True/False)
 28. Old private sector banks were established after 1991. (True/False)
 29. Cooperative banks are regulated by both RBI and state registrars. (True/False)
 30. The SARFAESI Act does NOT apply to agricultural land. (True/False)
@@ -1486,7 +1486,7 @@ In the 2019-2020 mega merger, Canara Bank absorbed Syndicate Bank. PNB absorbed 
 |---|--------|---|--------|---|--------|---|--------|---|--------|
 | Q | Answer | Q | Answer | Q | Answer | Q | Answer | Q | Answer |
 |---|--------|---|--------|---|--------|---|--------|---|--------|
-| 1 | b (1949) | 2 | c (Canara Bank) | 3 | c (14) | 4 | b (RRB Act, 1976) | 5 | c (₹2,00,000) |
+| 1 | b (1949) | 2 | c (Canara Bank) | 3 | c (14) | 4 | b (RRB Act, 1976) | 5 | c (â‚¹2,00,000) |
 | 6 | b (Take possession) | 7 | b (Threshold 2) | 8 | b (7%) | 9 | b (DNBS) | 10 | c (2015) |
 | 11 | Deposit Insurance and Credit Guarantee Corporation | 12 | 1998 | 13 | 6% | 14 | 75% | 15 | 75% |
 | 16 | 35% | 17 | 35 | 18 | 100% | 19 | Basel, Switzerland | 20 | SARFAESI |
@@ -1497,4 +1497,4 @@ In the 2019-2020 mega merger, Canara Bank absorbed Syndicate Bank. PNB absorbed 
 
 ---
 
-*Proceed to Chapter 3 — Financial Markets & Instruments*
+*Proceed to Chapter 3 â€” Financial Markets & Instruments*

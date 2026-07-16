@@ -1,4 +1,4 @@
-# Chapter 2: Sales Management and Distribution
+﻿# Chapter 2: Sales Management and Distribution
 
 ## Learning Objectives
 
@@ -13,16 +13,16 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/marketing-aptitude/02-sales-distribution/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/marketing-aptitude/02-sales-distribution/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/marketing-aptitude/02-sales-distribution/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/marketing-aptitude/02-sales-distribution/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/marketing-aptitude/02-sales-distribution/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/marketing-aptitude/02-sales-distribution/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/marketing-aptitude/02-sales-distribution/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/marketing-aptitude/02-sales-distribution/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/marketing-aptitude/02-sales-distribution/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/marketing-aptitude/02-sales-distribution/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/marketing-aptitude/02-sales-distribution/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/marketing-aptitude/02-sales-distribution/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -90,10 +90,10 @@ flowchart TD
 
 The AIDA model describes the stages a customer goes through during a sales presentation:
 
-- **Attention** — Grab the prospect's attention (opening statement, question, demonstration)
-- **Interest** — Build interest by highlighting relevant benefits
-- **Desire** — Create desire by showing how the product solves specific needs
-- **Action** — Motivate the prospect to take action (buy, sign up, commit)
+- **Attention** â€” Grab the prospect's attention (opening statement, question, demonstration)
+- **Interest** â€” Build interest by highlighting relevant benefits
+- **Desire** â€” Create desire by showing how the product solves specific needs
+- **Action** â€” Motivate the prospect to take action (buy, sign up, commit)
 
 ### 2.3 Sales Forecasting
 
@@ -107,7 +107,7 @@ Sales forecasting estimates future sales over a specific period. It is essential
 | **Jury of Executive Opinion** | Subjective | Top executives estimate based on experience | Panel of VPs gives consensus |
 | **Delphi Method** | Subjective | Repeated rounds of expert estimates with feedback | Anonymised expert panel |
 | **Time Series Analysis** | Quantitative | Using historical data to project future | Moving averages, exponential smoothing |
-| **Regression Analysis** | Quantitative | Relating sales to independent variables | "Sales = a + b × Advertising spend" |
+| **Regression Analysis** | Quantitative | Relating sales to independent variables | "Sales = a + b Ã— Advertising spend" |
 | **Market Test** | Quantitative | Test product in limited market to gauge demand | Test launch in one city |
 
 ```typescript
@@ -151,7 +151,7 @@ console.log("3-Month MA:", SalesForecaster.movingAverage(monthlySales, 3));
 
 const weights = [0.5, 0.3, 0.2];
 console.log("Weighted 3-Month MA:", SalesForecaster.weightedMovingAverage(monthlySales, weights));
-// (150 × 0.5 + 140 × 0.3 + 145 × 0.2) / 1.0 = 146
+// (150 Ã— 0.5 + 140 Ã— 0.3 + 145 Ã— 0.2) / 1.0 = 146
 
 const smoothed = SalesForecaster.exponentialSmoothing(monthlySales, 0.3);
 console.log("Exponential Smoothing:", smoothed);
@@ -167,7 +167,7 @@ A sales quota is the performance goal assigned to a salesperson, territory, or b
 | Quota Type | Description | Example |
 |------------|-------------|---------|
 | **Volume Quota** | Unit sales or revenue target | Sell 1,000 units this quarter |
-| **Profit Quota** | Gross margin or net profit target | Achieve ₹5 lakh gross margin |
+| **Profit Quota** | Gross margin or net profit target | Achieve â‚¹5 lakh gross margin |
 | **Activity Quota** | Specific selling activities | Make 50 calls, 20 demos per week |
 | **Combination Quota** | Mix of multiple quota types | Volume + profit + activity |
 
@@ -210,10 +210,10 @@ flowchart TD
 
 | Level | Participants | When Used |
 |-------|-------------|-----------|
-| **Zero-level (Direct)** | Manufacturer → Consumer | D2C brands, online sales, services |
-| **One-level** | Manufacturer → Retailer → Consumer | Large retailers, exclusive stores |
-| **Two-level** | Manufacturer → Wholesaler → Retailer → Consumer | Fast-moving consumer goods (FMCG) |
-| **Three-level** | Manufacturer → Agent → Wholesaler → Retailer → Consumer | Fragmented markets, small producers |
+| **Zero-level (Direct)** | Manufacturer â†’ Consumer | D2C brands, online sales, services |
+| **One-level** | Manufacturer â†’ Retailer â†’ Consumer | Large retailers, exclusive stores |
+| **Two-level** | Manufacturer â†’ Wholesaler â†’ Retailer â†’ Consumer | Fast-moving consumer goods (FMCG) |
+| **Three-level** | Manufacturer â†’ Agent â†’ Wholesaler â†’ Retailer â†’ Consumer | Fragmented markets, small producers |
 
 ### 2.7 Distribution Intensity
 
@@ -292,7 +292,7 @@ graph LR
 EOQ is the optimal order quantity that minimises total inventory costs.
 
 ```
-EOQ = √(2DS / H)
+EOQ = âˆš(2DS / H)
 
 Where:
 D = Annual demand (units)
@@ -352,12 +352,12 @@ Direct-to-Consumer (D2C) brands bypass traditional intermediaries, selling direc
 Logistics involves planning, implementing, and controlling the physical flow of goods, services, and information from point of origin to point of consumption.
 
 **Logistics functions:**
-- **Transportation** — Mode selection (road, rail, air, water, pipeline)
-- **Warehousing** — Storage, cross-docking, consolidation
-- **Inventory management** — Stock optimisation, safety stock
-- **Order processing** — Order entry, picking, packing, shipping
-- **Material handling** — Movement of goods within warehouse
-- **Packaging** — Protective packaging for transit
+- **Transportation** â€” Mode selection (road, rail, air, water, pipeline)
+- **Warehousing** â€” Storage, cross-docking, consolidation
+- **Inventory management** â€” Stock optimisation, safety stock
+- **Order processing** â€” Order entry, picking, packing, shipping
+- **Material handling** â€” Movement of goods within warehouse
+- **Packaging** â€” Protective packaging for transit
 
 #### Transportation Mode Comparison
 
@@ -390,7 +390,7 @@ graph TD
 | Structure | Description | Advantages | Disadvantages |
 |-----------|-------------|------------|---------------|
 | **Territorial** | Each salesperson assigned a geographic area | Lowest cost, clear accountability, local relationships | Works only if products and customers are similar |
-| **Product** | Salespeople specialise by product line | Deep product knowledge, better cross-selling | Duplication of effort — two salespeople call same customer |
+| **Product** | Salespeople specialise by product line | Deep product knowledge, better cross-selling | Duplication of effort â€” two salespeople call same customer |
 | **Market/Customer** | Salespeople specialise by industry/segment | Deep customer understanding, tailored solutions | Higher cost, complex coordination |
 | **Complex** | Combination of territory + product + market | Maximum flexibility and coverage | Highest cost, coordination challenges |
 
@@ -419,11 +419,11 @@ graph TD
 | **Multi-channel** | Company's own website undercuts its retail partners | Different SKUs for each channel, price parity policies |
 
 **Channel power types:**
-- **Coercive power** — Threat of punishment (termination, reduced supply)
-- **Reward power** — Offering incentives for compliance
-- **Legitimate power** — Contractual rights
-- **Expert power** — Knowledge and expertise valued by channel partners
-- **Referent power** — Prestige of working with a well-known brand
+- **Coercive power** â€” Threat of punishment (termination, reduced supply)
+- **Reward power** â€” Offering incentives for compliance
+- **Legitimate power** â€” Contractual rights
+- **Expert power** â€” Knowledge and expertise valued by channel partners
+- **Referent power** â€” Prestige of working with a well-known brand
 
 ### 2.13 Push vs Pull Distribution Strategies
 
@@ -484,7 +484,7 @@ class ChannelAnalyzer {
               partner2: b.name,
               conflictType: "horizontal",
               severity: Math.abs(a.price - b.price) / a.price > 0.2 ? "high" : "medium",
-              description: `Price difference of ₹${Math.abs(a.price - b.price)} on ${overlap.join(", ")} in ${a.territory}`,
+              description: `Price difference of â‚¹${Math.abs(a.price - b.price)} on ${overlap.join(", ")} in ${a.territory}`,
             });
           }
         }
@@ -499,7 +499,7 @@ const partners: ChannelPartner[] = [
   { id: "D2", name: "City Distributors", type: "distributor", territory: "Mumbai", price: 88, volume: 600, assignedBrands: ["BrandA", "BrandC"] },
 ];
 console.log(ChannelAnalyzer.detectHorizontalConflict(partners));
-// Conflict: BrandA, price difference of ₹12 (12%) — medium severity
+// Conflict: BrandA, price difference of â‚¹12 (12%) â€” medium severity
 ```
 
 ---
@@ -510,14 +510,14 @@ console.log(ChannelAnalyzer.detectHorizontalConflict(partners));
 
 **Q1.** The correct sequence of steps in the personal selling process is:
 
-a) Prospecting → Pre-approach → Approach → Presentation → Closing → Handling objections → Follow-up
-b) Prospecting → Pre-approach → Approach → Presentation → Handling objections → Closing → Follow-up
-c) Pre-approach → Prospecting → Approach → Presentation → Handling objections → Closing → Follow-up
-d) Prospecting → Approach → Pre-approach → Presentation → Handling objections → Closing → Follow-up
+a) Prospecting â†’ Pre-approach â†’ Approach â†’ Presentation â†’ Closing â†’ Handling objections â†’ Follow-up
+b) Prospecting â†’ Pre-approach â†’ Approach â†’ Presentation â†’ Handling objections â†’ Closing â†’ Follow-up
+c) Pre-approach â†’ Prospecting â†’ Approach â†’ Presentation â†’ Handling objections â†’ Closing â†’ Follow-up
+d) Prospecting â†’ Approach â†’ Pre-approach â†’ Presentation â†’ Handling objections â†’ Closing â†’ Follow-up
 
 <details>
 <summary>Answer</summary>
-**b) Prospecting → Pre-approach → Approach → Presentation → Handling objections → Closing → Follow-up.** Objections must be handled BEFORE closing, not after. Understanding the correct sequence is critical for exam questions.
+**b) Prospecting â†’ Pre-approach â†’ Approach â†’ Presentation â†’ Handling objections â†’ Closing â†’ Follow-up.** Objections must be handled BEFORE closing, not after. Understanding the correct sequence is critical for exam questions.
 </details>
 
 ---
@@ -615,16 +615,16 @@ console.log("Delphi convergence:", roundResults);
 
 ---
 
-**Q6.** A company uses last year's sales of ₹50 lakh and advertising spend of ₹10 lakh to predict this year's sales. The relationship is Sales = 20 + 3 × Advertising. What is the forecasted sales?
+**Q6.** A company uses last year's sales of â‚¹50 lakh and advertising spend of â‚¹10 lakh to predict this year's sales. The relationship is Sales = 20 + 3 Ã— Advertising. What is the forecasted sales?
 
-a) ₹20 lakh
-b) ₹30 lakh
-c) ₹50 lakh
-d) ₹80 lakh
+a) â‚¹20 lakh
+b) â‚¹30 lakh
+c) â‚¹50 lakh
+d) â‚¹80 lakh
 
 <details>
 <summary>Answer</summary>
-**c) ₹50 lakh.** Sales = 20 + 3 × 10 = 20 + 30 = ₹50 lakh. This is a regression-based forecast where advertising spend is the independent variable.
+**c) â‚¹50 lakh.** Sales = 20 + 3 Ã— 10 = 20 + 30 = â‚¹50 lakh. This is a regression-based forecast where advertising spend is the independent variable.
 </details>
 
 ---
@@ -698,7 +698,7 @@ d) Zero-level channel
 
 <details>
 <summary>Answer</summary>
-**b) Two-level channel.** Manufacturer → Wholesaler → Retailer → Consumer: two intermediaries (wholesaler and retailer) between manufacturer and consumer.
+**b) Two-level channel.** Manufacturer â†’ Wholesaler â†’ Retailer â†’ Consumer: two intermediaries (wholesaler and retailer) between manufacturer and consumer.
 </details>
 
 ---
@@ -714,7 +714,7 @@ d) Mass
 
 <details>
 <summary>Answer</summary>
-**c) Exclusive distribution.** Luxury car makers use exclusive distribution — very few dealerships in a region — to maintain brand prestige, provide personalised service, and control the customer experience.
+**c) Exclusive distribution.** Luxury car makers use exclusive distribution â€” very few dealerships in a region â€” to maintain brand prestige, provide personalised service, and control the customer experience.
 </details>
 
 ---
@@ -728,7 +728,7 @@ d) Restricted distribution
 
 <details>
 <summary>Answer</summary>
-**a) Intensive distribution.** Soft drinks are convenience goods that consumers buy frequently with minimal effort. They need to be available in every possible outlet — intensive distribution.
+**a) Intensive distribution.** Soft drinks are convenience goods that consumers buy frequently with minimal effort. They need to be available in every possible outlet â€” intensive distribution.
 </details>
 
 ---
@@ -796,12 +796,12 @@ const discounts: DiscountTier[] = [
   { minQty: 1000, unitPrice: 85 },
 ];
 const result = eoqWithDiscounts(10000, 300, 0.2, discounts);
-console.log(`Order ${result.orderQty} units at ₹${result.unitPrice} each — Total: ₹${result.totalCost}`);
+console.log(`Order ${result.orderQty} units at â‚¹${result.unitPrice} each â€” Total: â‚¹${result.totalCost}`);
 ```
 
 <details>
 <summary>Answer</summary>
-**b) The optimal order quantity minimising total inventory costs.** EOQ (Economic Order Quantity) balances ordering costs and holding costs to find the most cost-effective order quantity. Formula: √(2DS/H).
+**b) The optimal order quantity minimising total inventory costs.** EOQ (Economic Order Quantity) balances ordering costs and holding costs to find the most cost-effective order quantity. Formula: âˆš(2DS/H).
 </details>
 
 ---
@@ -875,12 +875,12 @@ d) Using a single distribution channel
 
 <details>
 <summary>Answer</summary>
-**c) Integrating online and offline channels seamlessly.** Omni-channel retail provides a unified customer experience across all channels — buy online, pick up in store; browse in store, order online for home delivery; etc.
+**c) Integrating online and offline channels seamlessly.** Omni-channel retail provides a unified customer experience across all channels â€” buy online, pick up in store; browse in store, order online for home delivery; etc.
 </details>
 
 ---
 
-### Example 10: Sales Force Structure (Q21–Q22)
+### Example 10: Sales Force Structure (Q21â€“Q22)
 
 **Q21.** A company manufacturing both industrial machinery and consumer appliances should ideally use which sales force structure?
 
@@ -905,12 +905,12 @@ d) Complex
 
 <details>
 <summary>Answer</summary>
-**a) Territorial.** Territorial structure is simplest and most cost-effective — each salesperson covers a defined geographic area. It avoids duplication (only one rep per territory) and travel costs are minimised. However, it works best when products and customers are homogeneous.
+**a) Territorial.** Territorial structure is simplest and most cost-effective â€” each salesperson covers a defined geographic area. It avoids duplication (only one rep per territory) and travel costs are minimised. However, it works best when products and customers are homogeneous.
 </details>
 
 ---
 
-### Example 11: Channel Conflict (Q23–Q25)
+### Example 11: Channel Conflict (Q23â€“Q25)
 
 **Q23.** When two retailers in the same city compete by slashing prices on the same brand, the conflict is called:
 
@@ -935,7 +935,7 @@ d) Reward power
 
 <details>
 <summary>Answer</summary>
-**c) Coercive power.** Coercive power is based on the threat of punishment — in this case, discontinuing supply. Reward power (offering incentives) is the positive counterpart. Expert and referent powers are non-coercive and build long-term relationships.
+**c) Coercive power.** Coercive power is based on the threat of punishment â€” in this case, discontinuing supply. Reward power (offering incentives) is the positive counterpart. Expert and referent powers are non-coercive and build long-term relationships.
 </details>
 
 ---
@@ -954,7 +954,7 @@ d) A company and its competitors
 
 ---
 
-### Example 12: Push vs Pull & Distribution Strategy (Q26–Q28)
+### Example 12: Push vs Pull & Distribution Strategy (Q26â€“Q28)
 
 **Q26.** A company that spends most of its marketing budget on trade discounts and retailer incentives is following a:
 
@@ -998,7 +998,7 @@ d) Expert power
 
 ---
 
-### Example 13: SCM & Logistics (Q29–Q30)
+### Example 13: SCM & Logistics (Q29â€“Q30)
 
 **Q29.** Reverse logistics deals with:
 
@@ -1009,7 +1009,7 @@ d) Order processing from customers
 
 <details>
 <summary>Answer</summary>
-**b) Managing returned goods and recycling.** Reverse logistics is the process of moving goods from their final destination back to the manufacturer for returns, repairs, recycling, or disposal. It is increasingly important in e-commerce where return rates are high (20–30%).
+**b) Managing returned goods and recycling.** Reverse logistics is the process of moving goods from their final destination back to the manufacturer for returns, repairs, recycling, or disposal. It is increasingly important in e-commerce where return rates are high (20â€“30%).
 </details>
 
 ---
@@ -1045,9 +1045,9 @@ d) Qualify for volume discounts
 
 1. **For exams**: Memorise the 7-step selling process sequence and the three intensity strategies with examples
 2. **For interviews**: Be prepared to explain a sales situation using the AIDA model
-3. **For business**: Use the EOQ formula to optimise inventory — it directly impacts cash flow and profitability
+3. **For business**: Use the EOQ formula to optimise inventory â€” it directly impacts cash flow and profitability
 4. **For channel strategy**: Match distribution intensity to product type (intensive for convenience, selective for shopping, exclusive for specialty goods)
-5. **For SCM**: Focus on the "total cost" approach — cheap transportation may lead to higher inventory costs
+5. **For SCM**: Focus on the "total cost" approach â€” cheap transportation may lead to higher inventory costs
 
 ## Chapter Quiz
 
@@ -1092,10 +1092,10 @@ d) Qualify for volume discounts
 
 <details>
 <summary>Answer</summary>
-**B) Determine optimal inventory order quantity.** EOQ = √(2DS/H) balances ordering and holding costs.
+**B) Determine optimal inventory order quantity.** EOQ = âˆš(2DS/H) balances ordering and holding costs.
 </details>
 
-5. A channel with Manufacturer → Agent → Wholesaler → Retailer → Consumer has how many levels?
+5. A channel with Manufacturer â†’ Agent â†’ Wholesaler â†’ Retailer â†’ Consumer has how many levels?
    - A) One-level
    - B) Two-level
    - C) Three-level
@@ -1108,7 +1108,7 @@ d) Qualify for volume discounts
 
 ## Exercises
 
-### Section A: Conceptual Questions (Q1–Q10)
+### Section A: Conceptual Questions (Q1â€“Q10)
 
 1. List and explain the seven steps of the personal selling process in sequence.
 2. What is the difference between a sales quota and a sales forecast?
@@ -1121,24 +1121,24 @@ d) Qualify for volume discounts
 9. What is the difference between a wholesaler and an agent in distribution?
 10. Explain the concept of "total cost approach" in logistics management.
 
-### Section B: Application Problems (Q11–Q20)
+### Section B: Application Problems (Q11â€“Q20)
 
-11. A company has annual demand of 24,000 units, ordering cost of ₹400 per order, and holding cost of ₹80 per unit per year. Calculate the EOQ and total inventory cost at EOQ.
-12. Monthly sales data for six months: Jan (200), Feb (220), Mar (210), Apr (240), May (230), Jun (250). Forecast July sales using 3-month moving average and exponential smoothing (α = 0.4).
-13. A pharma company uses a distribution channel: Manufacturer → Stockist → Wholesaler → Retailer → Consumer. Identify the number of levels and suggest how to shorten the channel.
+11. A company has annual demand of 24,000 units, ordering cost of â‚¹400 per order, and holding cost of â‚¹80 per unit per year. Calculate the EOQ and total inventory cost at EOQ.
+12. Monthly sales data for six months: Jan (200), Feb (220), Mar (210), Apr (240), May (230), Jun (250). Forecast July sales using 3-month moving average and exponential smoothing (Î± = 0.4).
+13. A pharma company uses a distribution channel: Manufacturer â†’ Stockist â†’ Wholesaler â†’ Retailer â†’ Consumer. Identify the number of levels and suggest how to shorten the channel.
 14. A startup is launching premium organic snacks. Recommend a distribution strategy and justify.
 15. A salesperson has 120 A-customers (visit monthly), 200 B-customers (visit quarterly), and 400 C-customers (visit half-yearly). How many sales calls per year? If a salesperson makes 20 calls per week (48 working weeks), how many salespeople are needed?
 16. An FMCG company is launching a new soap. Should it use intensive, selective, or exclusive distribution? Why?
-17. A furniture manufacturer uses the regression equation Sales = 50 + 4 × Advertising (₹ lakh). If advertising spend is ₹15 lakh, what is the forecasted sales?
+17. A furniture manufacturer uses the regression equation Sales = 50 + 4 Ã— Advertising (â‚¹ lakh). If advertising spend is â‚¹15 lakh, what is the forecasted sales?
 18. Compare the cost, speed, and capacity of road, rail, air, and water transportation for a cement company shipping from plant to 500 km away.
 19. A D2C apparel brand wants to expand to offline retail. What channel strategy would you recommend?
-20. A salesperson has a volume quota of ₹20 lakh per quarter and an activity quota of 100 calls per month. Suggest a weekly plan.
+20. A salesperson has a volume quota of â‚¹20 lakh per quarter and an activity quota of 100 calls per month. Suggest a weekly plan.
 
-### Section C: Advanced Questions (Q21–Q30)
+### Section C: Advanced Questions (Q21â€“Q30)
 
 21. Design a complete distribution strategy for a company launching home care products across rural India, considering infrastructure challenges.
 22. "The shortest channel is not always the most efficient." Explain with examples.
-23. A manufacturer currently uses Manufacturer → Wholesaler → Retailer → Consumer. They are considering Manufacturer → Consumer (D2C). Analyse the trade-offs.
+23. A manufacturer currently uses Manufacturer â†’ Wholesaler â†’ Retailer â†’ Consumer. They are considering Manufacturer â†’ Consumer (D2C). Analyse the trade-offs.
 24. How does e-commerce affect traditional distribution channels? Discuss disintermediation with examples.
 25. A company has 10 sales territories. One territory generates 30% of total revenue but has the lowest customer satisfaction. Diagnose and recommend solutions.
 26. Explain the concept of "channel conflict." When does it occur and how can it be resolved?
@@ -1151,7 +1151,7 @@ d) Qualify for volume discounts
 
 | Q | Ans | Key Explanation |
 |---|-----|-----------------|
-| 1 | Prospecting → Pre-approach → Approach → Presentation → Handling objections → Closing → Follow-up | 7-step process |
+| 1 | Prospecting â†’ Pre-approach â†’ Approach â†’ Presentation â†’ Handling objections â†’ Closing â†’ Follow-up | 7-step process |
 | 2 | Forecast projects future sales; quota is the target/goal assigned | Forecast informs quota |
 | 3 | AIDA: Attention, Interest, Desire, Action | Sales presentation framework |
 | 4 | Intensive (soap), Selective (TV), Exclusive (Rolex) | Based on customer effort and price |
@@ -1161,24 +1161,24 @@ d) Qualify for volume discounts
 | 8 | 5 functions: Transport, Warehousing, Inventory, Order processing, Material handling | Physical distribution management |
 | 9 | Wholesaler takes title to goods; Agent does not take title | Agent earns commission |
 | 10 | Minimising total logistics cost, not just one component | Transportation + inventory + warehousing |
-| 11 | EOQ = √(2×24000×400/80) = 490 units. TC = 24000/490×400 + 490/2×80 = ₹39,184 | JIT reduces inventory |
-| 12 | 3-MA = (240+230+250)/3 = 240. ES: 250×0.4 + 240×0.6 = 244 | July forecasts |
+| 11 | EOQ = âˆš(2Ã—24000Ã—400/80) = 490 units. TC = 24000/490Ã—400 + 490/2Ã—80 = â‚¹39,184 | JIT reduces inventory |
+| 12 | 3-MA = (240+230+250)/3 = 240. ES: 250Ã—0.4 + 240Ã—0.6 = 244 | July forecasts |
 | 13 | 3-level channel. Shorten by removing stockist | Channel rationalisation |
-| 14 | Selective distribution — premium product needs curated outlets | Not mass market, not exclusive |
-| 15 | Calls/year = 120×12 + 200×4 + 400×2 = 3,040. Salespeople = 3,040/(20×48) = 3.17 ≈ 4 | Territory workload calculation |
-| 16 | Intensive — soap is a low-involvement convenience good | Maximum availability needed |
-| 17 | Sales = 50 + 4×15 = ₹110 lakh | Simple linear regression |
+| 14 | Selective distribution â€” premium product needs curated outlets | Not mass market, not exclusive |
+| 15 | Calls/year = 120Ã—12 + 200Ã—4 + 400Ã—2 = 3,040. Salespeople = 3,040/(20Ã—48) = 3.17 â‰ˆ 4 | Territory workload calculation |
+| 16 | Intensive â€” soap is a low-involvement convenience good | Maximum availability needed |
+| 17 | Sales = 50 + 4Ã—15 = â‚¹110 lakh | Simple linear regression |
 | 18 | Rail best for 500 km bulk cement (low cost, adequate speed) | Mode selection by distance and weight |
 | 19 | Selective distribution in premium malls, maintain D2C website | Omnichannel strategy |
-| 20 | Weekly: ₹5 lakh revenue + 25 calls. A-customers get priority | Break down quota to daily/weekly |
+| 20 | Weekly: â‚¹5 lakh revenue + 25 calls. A-customers get priority | Break down quota to daily/weekly |
 | 21 | Use distributor + rural wholesaler + local retailer. Partner with FMCG distribution networks | Rural strategy |
 | 22 | Direct may be costly per customer; intermediaries add efficiency for small orders | Channel economies |
 | 23 | D2C: higher margin, better data, but logistics cost and brand awareness challenges | Channel trade-off analysis |
 | 24 | E-commerce enables disintermediation (removing middlemen) | Example: Books (Amazon vs traditional) |
 | 25 | High-revenue territory may be under-served. Add salesperson or restructure | Territory imbalance |
 | 26 | Channel conflict: when one channel cannibalises another. Resolve through clear roles | Multi-channel management |
-| 27 | Yes, safety stock = Z × σ × √L (Z = service level factor, σ = demand variability, L = lead time) | Buffer against uncertainty |
-| 28 | Demand-driven (pull) is better for fast fashion — responds to trends | Push vs pull supply chain |
+| 27 | Yes, safety stock = Z Ã— Ïƒ Ã— âˆšL (Z = service level factor, Ïƒ = demand variability, L = lead time) | Buffer against uncertainty |
+| 28 | Demand-driven (pull) is better for fast fashion â€” responds to trends | Push vs pull supply chain |
 | 29 | Multi-channel: farmers' markets (direct), website (D2C), Amazon (marketplace) | Omnichannel with distinct roles |
 | 30 | Define lead ownership rules, non-compete clauses, joint incentive programmes | Channel conflict resolution |
 
@@ -1258,7 +1258,7 @@ d) Qualify for volume discounts
 
 <details>
 <summary>Answer</summary>
-**b) Removing intermediaries to connect directly with consumers.** Disintermediation eliminates middlemen (wholesalers, retailers) from the distribution channel. E-commerce has accelerated disintermediation — manufacturers can now sell directly to consumers through websites.
+**b) Removing intermediaries to connect directly with consumers.** Disintermediation eliminates middlemen (wholesalers, retailers) from the distribution channel. E-commerce has accelerated disintermediation â€” manufacturers can now sell directly to consumers through websites.
 </details>
 
 **38.** A sales territory with high potential but low penetration requires:
@@ -1294,7 +1294,7 @@ d) Qualify for volume discounts
 **a) Lower per-unit distribution cost at scale.** Distribution networks achieve economies of scale by aggregating products from multiple manufacturers and spreading logistics costs across larger volumes. Direct selling has higher per-unit costs but offers better control.
 </details>
 
-### Section D: Exam-Oriented Questions (Q31–Q40)
+### Section D: Exam-Oriented Questions (Q31â€“Q40)
 
 31. "Channel conflict is inevitable in multi-channel distribution." Do you agree? Discuss with strategies to manage channel conflict.
 32. A pharmaceutical company wants to distribute medicines to rural areas with poor infrastructure. Design a distribution channel strategy.
@@ -1303,6 +1303,6 @@ d) Qualify for volume discounts
 35. A consumer electronics brand faces channel conflict between its own online store and its retail partners. Propose a resolution strategy.
 36. How does the rise of e-commerce affect the role of wholesalers in the distribution channel? Are wholesalers becoming obsolete?
 37. A new entrant in the beverage industry must decide between intensive and selective distribution. Analyse the trade-offs and recommend a strategy for the first year.
-38. Calculate the total logistics cost for a company that spends ₹15 lakh on transportation, ₹8 lakh on warehousing, ₹3 lakh on inventory holding, and ₹2 lakh on order processing. What percentage is transportation of the total?
-39. Design a sales territory allocation plan for a company with 4 salespeople covering a state with 3 distinct regions (Metro: ₹10 cr potential, Urban: ₹6 cr, Rural: ₹4 cr).
+38. Calculate the total logistics cost for a company that spends â‚¹15 lakh on transportation, â‚¹8 lakh on warehousing, â‚¹3 lakh on inventory holding, and â‚¹2 lakh on order processing. What percentage is transportation of the total?
+39. Design a sales territory allocation plan for a company with 4 salespeople covering a state with 3 distinct regions (Metro: â‚¹10 cr potential, Urban: â‚¹6 cr, Rural: â‚¹4 cr).
 40. A start-up wants to launch a D2C brand of handmade chocolates. Should they use a direct channel only or partner with retailers? Analyse using the factors discussed in this chapter.

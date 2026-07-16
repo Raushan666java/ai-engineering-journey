@@ -1,4 +1,4 @@
-# Chapter 4: Verbal Ability
+﻿# Chapter 4: Verbal Ability
 
 ## Learning Objectives
 
@@ -13,16 +13,16 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/english-language/04-verbal-ability/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/english-language/04-verbal-ability/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/english-language/04-verbal-ability/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/english-language/04-verbal-ability/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/english-language/04-verbal-ability/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/english-language/04-verbal-ability/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/english-language/04-verbal-ability/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/english-language/04-verbal-ability/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/english-language/04-verbal-ability/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/english-language/04-verbal-ability/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/english-language/04-verbal-ability/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/english-language/04-verbal-ability/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -34,7 +34,7 @@ By the end of this chapter, you will be able to:
 
 ### 4.1 What Is Verbal Ability?
 
-Verbal Ability in government exams is a broad category that tests your command over sentence structure, logical sequencing, and contextual appropriateness. In IBPS SO Prelims, **4–5 questions** are typically drawn from this area.
+Verbal Ability in government exams is a broad category that tests your command over sentence structure, logical sequencing, and contextual appropriateness. In IBPS SO Prelims, **4â€“5 questions** are typically drawn from this area.
 
 **Topics Covered:**
 - Para Jumbles (Sentence Rearrangement)
@@ -46,24 +46,24 @@ Verbal Ability in government exams is a broad category that tests your command o
 
 ### 4.2 Para Jumbles (Sentence Rearrangement)
 
-Para Jumbles present 4–6 sentences labelled (A), (B), (C), (D), etc. in a random order. You must arrange them into a logical paragraph.
+Para Jumbles present 4â€“6 sentences labelled (A), (B), (C), (D), etc. in a random order. You must arrange them into a logical paragraph.
 
 #### Strategic Approach
 
-**Step 1 — Identify the Opening Sentence**
+**Step 1 â€” Identify the Opening Sentence**
 Look for a sentence that:
 - Introduces a subject or concept for the first time
 - Does NOT begin with conjunctions (However, But, Therefore, Hence)
 - Does NOT contain pronouns referring to something not yet introduced (it, they, this, these, such)
 - Does NOT start with transitional phrases (On the other hand, In addition, Moreover)
 
-**Step 2 — Identify the Closing Sentence**
+**Step 2 â€” Identify the Closing Sentence**
 Look for a sentence that:
 - Concludes or summarises the discussion
 - May start with "Thus", "Therefore", "Hence", "In conclusion"
 - Does NOT leave the thought incomplete
 
-**Step 3 — Look for Logical Linkers**
+**Step 3 â€” Look for Logical Linkers**
 
 | Linker Type | Examples | Purpose |
 |-------------|----------|---------|
@@ -73,10 +73,10 @@ Look for a sentence that:
 | Sequential | Firstly, Secondly, Then, Next, Finally | Shows order |
 | Illustrative | For example, For instance, Such as | Provides examples |
 
-**Step 4 — Pronoun Reference**
+**Step 4 â€” Pronoun Reference**
 A sentence with "This", "These", "Such", "It", "They" must follow a sentence that introduces the noun these words refer to.
 
-**Step 5 — Chronological/Causal Order**
+**Step 5 â€” Chronological/Causal Order**
 If the sentences describe a process or sequence, arrange them in the order of events.
 
 #### Example Walkthrough
@@ -90,13 +90,13 @@ If the sentences describe a process or sequence, arrange them in the order of ev
 (E) The system uses AI to verify documents and assess creditworthiness.
 
 **Step-by-Step:**
-1. (B) introduces the subject (new automated workflow system) — likely opening
-2. (E) describes the system (uses AI) — follows (B)
-3. (A) "This" refers to the system described in (E) — follows (E)
-4. (C) contrasts with the new system (mentions previous timeline) — follows (A)
-5. (D) "As a result" connects the reduction in time (A) to improved satisfaction — closing
+1. (B) introduces the subject (new automated workflow system) â€” likely opening
+2. (E) describes the system (uses AI) â€” follows (B)
+3. (A) "This" refers to the system described in (E) â€” follows (E)
+4. (C) contrasts with the new system (mentions previous timeline) â€” follows (A)
+5. (D) "As a result" connects the reduction in time (A) to improved satisfaction â€” closing
 
-**Correct Sequence:** B → E → A → C → D
+**Correct Sequence:** B â†’ E â†’ A â†’ C â†’ D
 
 ---
 
@@ -109,10 +109,10 @@ Q: Each block in the chain contains a cryptographic hash of the previous block.
 R: However, scalability remains a significant challenge for widespread adoption.
 S: This makes it practically impossible to alter transaction records without detection.
 
-a) P → Q → S → R
-b) P → R → Q → S
-c) Q → P → S → R
-d) S → Q → P → R
+a) P â†’ Q â†’ S â†’ R
+b) P â†’ R â†’ Q â†’ S
+c) Q â†’ P â†’ S â†’ R
+d) S â†’ Q â†’ P â†’ R
 
 **Answer:** a (P introduces topic, Q explains how it works, S explains the result, R introduces a contrasting challenge)
 
@@ -135,7 +135,7 @@ Fillers test your vocabulary and grammatical knowledge in context. The difficult
 
 a) issued   b) issued from   c) issued to   d) issued with
 
-**Answer:** a ("issued" is transitive and takes a direct object — "guidelines")
+**Answer:** a ("issued" is transitive and takes a direct object â€” "guidelines")
 
 #### Double Filler Strategy
 
@@ -153,8 +153,8 @@ c) constituting / investigated
 d) constituted / investigated
 
 **Explanation:**
-First blank: "has" + past participle = "has constituted" ✓
-Second blank: "to" + base verb = "to investigate" ✓
+First blank: "has" + past participle = "has constituted" âœ“
+Second blank: "to" + base verb = "to investigate" âœ“
 Only option (a) gives us [constituted + investigate].
 
 **Answer:** a
@@ -172,7 +172,7 @@ c) modern / adequate / facilitating
 d) obsolete / inadequate / enhancing
 
 **Explanation:**
-Context suggests a negative tone (problems with systems). Option (a): "obsolete" + "adequate" is contradictory — obsolete systems are not adequate. Option (b): "obsolete" + "inadequate" + "hindering" — consistent negative tone. Option (c): positive tone, doesn't fit the implied problem. Option (d): "obsolete" + "inadequate" + "enhancing" is contradictory.
+Context suggests a negative tone (problems with systems). Option (a): "obsolete" + "adequate" is contradictory â€” obsolete systems are not adequate. Option (b): "obsolete" + "inadequate" + "hindering" â€” consistent negative tone. Option (c): positive tone, doesn't fit the implied problem. Option (d): "obsolete" + "inadequate" + "enhancing" is contradictory.
 
 **Answer:** b
 
@@ -180,12 +180,12 @@ Context suggests a negative tone (problems with systems). Option (a): "obsolete"
 
 ### 4.4 Odd One Out (Sentence)
 
-In this question type, you are given 4–5 sentences. Three or four form a coherent paragraph. One sentence does NOT belong — it is either thematically different, chronologically out of place, or logically inconsistent.
+In this question type, you are given 4â€“5 sentences. Three or four form a coherent paragraph. One sentence does NOT belong â€” it is either thematically different, chronologically out of place, or logically inconsistent.
 
 **Strategy:**
 1. Read all sentences to identify the overall theme
 2. Look for the sentence that breaks the logical flow
-3. Check for pronoun references — the odd sentence may have no antecedent
+3. Check for pronoun references â€” the odd sentence may have no antecedent
 4. Check for chronological inconsistency
 
 **Example:**
@@ -194,19 +194,19 @@ In this question type, you are given 4–5 sentences. Three or four form a coher
 (C) The new branch opened in a prime location.
 (D) Training programmes for employees on phishing attacks are now mandatory.
 
-**Answer:** C (All other sentences are about cybersecurity. Sentence C is about branch location — unrelated theme.)
+**Answer:** C (All other sentences are about cybersecurity. Sentence C is about branch location â€” unrelated theme.)
 
 ---
 
 ### 4.5 Odd One Out (Word)
 
-Given 4–5 words, identify the word that does NOT belong to the group.
+Given 4â€“5 words, identify the word that does NOT belong to the group.
 
 **Types of Word Odd-One-Out:**
-1. **Synonym groups** — three synonyms, one antonym
-2. **Thematic groups** — three related to one domain, one from another
-3. **Grammatical groups** — three of one part of speech, one different
-4. **Prefix/Suffix groups** — three with same prefix, one different
+1. **Synonym groups** â€” three synonyms, one antonym
+2. **Thematic groups** â€” three related to one domain, one from another
+3. **Grammatical groups** â€” three of one part of speech, one different
+4. **Prefix/Suffix groups** â€” three with same prefix, one different
 
 **Example:**
 a) Benevolent   b) Malevolent   c) Benign   d) Beneficial
@@ -242,7 +242,7 @@ Verbal analogies test your ability to recognise relationships between words.
 **Strategy:**
 1. Establish the relationship between the first pair
 2. Find the option with the SAME relationship
-3. Apply the "sentence test": "A is to B as C is to D" — your sentence should make sense
+3. Apply the "sentence test": "A is to B as C is to D" â€” your sentence should make sense
 
 **Example:**
 *Doctor : Hospital :: Teacher : ?*
@@ -266,36 +266,36 @@ a) Chapter    b) Book    c) Introduction    d) Author
 
 ### 4.7 Sentence Correction / Improvement
 
-This topic overlaps with grammar but tests broader verbal ability — logic, conciseness, and style.
+This topic overlaps with grammar but tests broader verbal ability â€” logic, conciseness, and style.
 
 **Common Errors in Sentence Correction:**
 
 1. **Wordiness / Redundancy**
-   - ✗ *The reason is because the system failed.*
-   - ✓ *The reason is that the system failed.*
-   - ✗ *The two different systems are similar to each other.*
-   - ✓ *The two systems are similar.*
+   - âœ— *The reason is because the system failed.*
+   - âœ“ *The reason is that the system failed.*
+   - âœ— *The two different systems are similar to each other.*
+   - âœ“ *The two systems are similar.*
 
 2. **Dangling Modifiers**
-   - ✗ *Having completed the audit, the report was filed.* (Who completed the audit?)
-   - ✓ *Having completed the audit, the accountant filed the report.*
+   - âœ— *Having completed the audit, the report was filed.* (Who completed the audit?)
+   - âœ“ *Having completed the audit, the accountant filed the report.*
 
 3. **Faulty Parallelism**
-   - ✗ *The training covers compliance, security, and how to handle customers.*
-   - ✓ *The training covers compliance, security, and customer handling.*
+   - âœ— *The training covers compliance, security, and how to handle customers.*
+   - âœ“ *The training covers compliance, security, and customer handling.*
 
 4. **Ambiguous Pronoun Reference**
-   - ✗ *The manager told the clerk that his application was rejected.* (Whose application?)
-   - ✓ *The manager told the clerk that the clerk's application was rejected.*
+   - âœ— *The manager told the clerk that his application was rejected.* (Whose application?)
+   - âœ“ *The manager told the clerk that the clerk's application was rejected.*
 
 5. **Illogical Comparison**
-   - ✗ *The profits of bank A are higher than bank B.* (Comparing profits to bank)
-   - ✓ *The profits of bank A are higher than those of bank B.*
+   - âœ— *The profits of bank A are higher than bank B.* (Comparing profits to bank)
+   - âœ“ *The profits of bank A are higher than those of bank B.*
 
 6. **Wrong Tense Sequence**
-   - ✗ *If the system detects fraud, it would trigger an alert.*
-   - ✓ *If the system detects fraud, it triggers an alert.* (Zero conditional)
-   - ✓ *If the system detected fraud, it would trigger an alert.* (Type 2)
+   - âœ— *If the system detects fraud, it would trigger an alert.*
+   - âœ“ *If the system detects fraud, it triggers an alert.* (Zero conditional)
+   - âœ“ *If the system detected fraud, it would trigger an alert.* (Type 2)
 
 ---
 
@@ -332,18 +332,18 @@ R: This resistance came primarily from small merchants who lack digital infrastr
 S: Many stakeholders were reluctant to adopt the new system.
 
 **Options:**
-a) Q → P → S → R
-b) Q → S → P → R
-c) P → Q → R → S
-d) S → R → Q → P
+a) Q â†’ P â†’ S â†’ R
+b) Q â†’ S â†’ P â†’ R
+c) P â†’ Q â†’ R â†’ S
+d) S â†’ R â†’ Q â†’ P
 
 **Explanation:**
-- Q introduces the topic (government announced policy) — opening sentence
-- P "However" introduces contrast — policy faced obstacles
-- S "Many stakeholders reluctant" — explains the obstacles
-- R "This resistance came from..." — elaborates on who resisted
+- Q introduces the topic (government announced policy) â€” opening sentence
+- P "However" introduces contrast â€” policy faced obstacles
+- S "Many stakeholders reluctant" â€” explains the obstacles
+- R "This resistance came from..." â€” elaborates on who resisted
 
-**Correct sequence:** Q → P → S → R
+**Correct sequence:** Q â†’ P â†’ S â†’ R
 
 **Answer:** a
 
@@ -430,13 +430,13 @@ c) removal / flawless / creating
 d) installation / seamless / causing
 
 **Explanation:**
-"Generating widespread dissatisfaction" is a negative outcome. This requires a negative first half. "Implementation...flawed" (negative) → "generating dissatisfaction" (negative result). Option (a) is contradictory (smooth → dissatisfaction doesn't make sense). Options (c) and (d) have positive first parts that don't match the negative outcome.
+"Generating widespread dissatisfaction" is a negative outcome. This requires a negative first half. "Implementation...flawed" (negative) â†’ "generating dissatisfaction" (negative result). Option (a) is contradictory (smooth â†’ dissatisfaction doesn't make sense). Options (c) and (d) have positive first parts that don't match the negative outcome.
 
 **Answer:** b
 
 ---
 
-## 📝 Solved Examples (20 MCQs)
+## ðŸ“ Solved Examples (20 MCQs)
 
 ### Section A: Para Jumbles (Q1-Q8)
 
@@ -447,11 +447,11 @@ Q: The bank has deployed a new fraud detection system across all its branches.
 R: The system automatically flags suspicious transactions for manual review.
 S: It captures real-time transaction data from multiple sources.
 
-a) Q → S → P → R   b) Q → P → S → R   c) S → Q → P → R   d) P → S → Q → R
+a) Q â†’ S â†’ P â†’ R   b) Q â†’ P â†’ S â†’ R   c) S â†’ Q â†’ P â†’ R   d) P â†’ S â†’ Q â†’ R
 
 <details>
 <summary>Answer</summary>
-a) Q → S → P → R. Q introduces the subject (new fraud detection system). S explains what the system does (captures data). P follows logically (data is analysed). R concludes (flags suspicious transactions).
+a) Q â†’ S â†’ P â†’ R. Q introduces the subject (new fraud detection system). S explains what the system does (captures data). P follows logically (data is analysed). R concludes (flags suspicious transactions).
 </details>
 
 ---
@@ -463,11 +463,11 @@ Q: The government has set an ambitious target of 30% electric vehicle sales by 2
 R: The lack of charging stations in urban and rural areas remains a critical bottleneck.
 S: Battery technology and range anxiety are additional consumer concerns.
 
-a) Q → P → R → S   b) P → Q → R → S   c) Q → R → P → S   d) R → Q → P → S
+a) Q â†’ P â†’ R â†’ S   b) P â†’ Q â†’ R â†’ S   c) Q â†’ R â†’ P â†’ S   d) R â†’ Q â†’ P â†’ S
 
 <details>
 <summary>Answer</summary>
-a) Q → P → R → S. Q introduces the target. P introduces contrast (However...challenges). R and S elaborate on the challenges. R (charging stations) and S (battery concerns) — both are specific challenges following P.
+a) Q â†’ P â†’ R â†’ S. Q introduces the target. P introduces contrast (However...challenges). R and S elaborate on the challenges. R (charging stations) and S (battery concerns) â€” both are specific challenges following P.
 </details>
 
 ---
@@ -479,11 +479,11 @@ Q: Based on this assessment, controls are designed to mitigate the identified ri
 R: A robust risk management framework is essential for any financial institution.
 S: Regular monitoring and review ensure that controls remain effective.
 
-a) P → Q → R → S   b) R → P → Q → S   c) R → Q → P → S   d) S → R → P → Q
+a) P â†’ Q â†’ R â†’ S   b) R â†’ P â†’ Q â†’ S   c) R â†’ Q â†’ P â†’ S   d) S â†’ R â†’ P â†’ Q
 
 <details>
 <summary>Answer</summary>
-b) R → P → Q → S. R introduces the topic (risk management framework). P describes the first step (identifying risks). Q follows (designing controls based on assessment). S concludes (monitoring and review).
+b) R â†’ P â†’ Q â†’ S. R introduces the topic (risk management framework). P describes the first step (identifying risks). Q follows (designing controls based on assessment). S concludes (monitoring and review).
 </details>
 
 ---
@@ -495,11 +495,11 @@ Q: The sharp rise in retail credit has raised concerns about asset quality.
 R: Banks have been asked to increase their provisioning for such loans.
 S: Unsecured personal loans have grown at over 25% annually in recent years.
 
-a) Q → P → R → S   b) S → Q → P → R   c) P → Q → R → S   d) Q → S → P → R
+a) Q â†’ P â†’ R â†’ S   b) S â†’ Q â†’ P â†’ R   c) P â†’ Q â†’ R â†’ S   d) Q â†’ S â†’ P â†’ R
 
 <details>
 <summary>Answer</summary>
-b) S → Q → P → R. S presents data (personal loans grew 25%). Q interprets (sharp rise raises concerns). P describes the response (RBI tightened norms). R elaborates on the response (increased provisioning).
+b) S â†’ Q â†’ P â†’ R. S presents data (personal loans grew 25%). Q interprets (sharp rise raises concerns). P describes the response (RBI tightened norms). R elaborates on the response (increased provisioning).
 </details>
 
 ---
@@ -511,11 +511,11 @@ Q: Artificial intelligence is transforming banking operations in multiple ways.
 R: For instance, chatbots handle customer queries round the clock.
 S: These technologies have significantly improved operational efficiency.
 
-a) Q → R → P → S   b) Q → P → R → S   c) R → Q → P → S   d) S → Q → R → P
+a) Q â†’ R â†’ P â†’ S   b) Q â†’ P â†’ R â†’ S   c) R â†’ Q â†’ P â†’ S   d) S â†’ Q â†’ R â†’ P
 
 <details>
 <summary>Answer</summary>
-a) Q → R → P → S. Q introduces the broad topic (AI transforming banking). R gives first example (chatbots — "For instance"). P gives second example ("Similarly" — ML for fraud). S concludes (improved efficiency).
+a) Q â†’ R â†’ P â†’ S. Q introduces the broad topic (AI transforming banking). R gives first example (chatbots â€” "For instance"). P gives second example ("Similarly" â€” ML for fraud). S concludes (improved efficiency).
 </details>
 
 ---
@@ -527,11 +527,11 @@ Q: This is achieved through APIs that enable secure data sharing with customer c
 R: However, concerns about data privacy and security remain significant.
 S: Customers can benefit from personalised financial products and services.
 
-a) P → Q → S → R   b) Q → P → S → R   c) P → S → Q → R   d) R → P → Q → S
+a) P â†’ Q â†’ S â†’ R   b) Q â†’ P â†’ S â†’ R   c) P â†’ S â†’ Q â†’ R   d) R â†’ P â†’ Q â†’ S
 
 <details>
 <summary>Answer</summary>
-a) P → Q → S → R. P introduces open banking. Q explains how it works (through APIs). S describes benefits for customers. R introduces contrast (However...concerns).
+a) P â†’ Q â†’ S â†’ R. P introduces open banking. Q explains how it works (through APIs). S describes benefits for customers. R introduces contrast (However...concerns).
 </details>
 
 ---
@@ -543,11 +543,11 @@ Q: Banks have moved their core banking systems to the cloud for better scalabili
 R: This shift has reduced infrastructure costs significantly.
 S: Additionally, cloud platforms enable faster deployment of new features.
 
-a) Q → P → R → S   b) P → Q → R → S   c) P → R → Q → S   d) S → P → Q → R
+a) Q â†’ P â†’ R â†’ S   b) P â†’ Q â†’ R â†’ S   c) P â†’ R â†’ Q â†’ S   d) S â†’ P â†’ Q â†’ R
 
 <details>
 <summary>Answer</summary>
-b) P → Q → R → S. P introduces cloud computing as a key enabler. Q explains the action (banks moved to cloud). R presents cost benefit. S adds another benefit ("Additionally").
+b) P â†’ Q â†’ R â†’ S. P introduces cloud computing as a key enabler. Q explains the action (banks moved to cloud). R presents cost benefit. S adds another benefit ("Additionally").
 </details>
 
 ---
@@ -559,11 +559,11 @@ Q: Physical risks include damage to assets from extreme weather events.
 R: Transition risks arise from the shift to a low-carbon economy.
 S: Financial institutions must incorporate both types of risks into their assessments.
 
-a) P → Q → R → S   b) P → R → Q → S   c) Q → P → R → S   d) S → P → Q → R
+a) P â†’ Q â†’ R â†’ S   b) P â†’ R â†’ Q â†’ S   c) Q â†’ P â†’ R â†’ S   d) S â†’ P â†’ Q â†’ R
 
 <details>
 <summary>Answer</summary>
-a) P → Q → R → S. P introduces the main idea (climate change risks). Q explains "physical risks." R explains "transition risks." S concludes by stating what institutions must do.
+a) P â†’ Q â†’ R â†’ S. P introduces the main idea (climate change risks). Q explains "physical risks." R explains "transition risks." S concludes by stating what institutions must do.
 </details>
 
 ---
@@ -631,7 +631,7 @@ a) growth / reduced / boosting   b) decline / increased / hindering   c) growth 
 
 <details>
 <summary>Answer</summary>
-a) growth / reduced / boosting. Growth of digital payments → reduced need for cash → boosting financial inclusion. This causal chain is logical.
+a) growth / reduced / boosting. Growth of digital payments â†’ reduced need for cash â†’ boosting financial inclusion. This causal chain is logical.
 </details>
 
 ---
@@ -652,13 +652,13 @@ d) Encryption. Phishing, ransomware, and malware are all types of cyber threats.
 **Q16.** Which sentence is the odd one out?
 
 a) The bank's net profit increased by 18% this quarter.
-b) The board has approved a dividend of ₹5 per share.
+b) The board has approved a dividend of â‚¹5 per share.
 c) The bank launched a new mobile banking application.
 d) The return on equity improved to 14.5%.
 
 <details>
 <summary>Answer</summary>
-c) The bank launched a new mobile banking application. Sentences (a), (b), and (d) are all financial performance metrics. Sentence (c) is a product launch — a different category.
+c) The bank launched a new mobile banking application. Sentences (a), (b), and (d) are all financial performance metrics. Sentence (c) is a product launch â€” a different category.
 </details>
 
 ---
@@ -669,7 +669,7 @@ a) Benevolent   b) Malevolent   c) Benign   d) Beneficial
 
 <details>
 <summary>Answer</summary>
-b) Malevolent. Benevolent, benign, and beneficial all have positive connotations. Malevolent (wishing harm) is negative — the odd one out.
+b) Malevolent. Benevolent, benign, and beneficial all have positive connotations. Malevolent (wishing harm) is negative â€” the odd one out.
 </details>
 
 ---
@@ -682,7 +682,7 @@ a) Risk   b) Premium   c) Policy   d) Claim
 
 <details>
 <summary>Answer</summary>
-a) Risk. Cryptography provides security (protection). Insurance provides risk mitigation. Both are protective measures — cryptography against breaches, insurance against financial loss.
+a) Risk. Cryptography provides security (protection). Insurance provides risk mitigation. Both are protective measures â€” cryptography against breaches, insurance against financial loss.
 </details>
 
 ---
@@ -706,7 +706,7 @@ a) The data collected by the server were corrupted.   b) The committee have deci
 
 <details>
 <summary>Answer</summary>
-d) Neither the manager nor his colleagues were present at the briefing. "Colleagues" (plural) is nearest to the verb → "were" is correct. In (a), "data" as singular → "was" (or treat it differently by context). In (b), "committee" as singular → "has." In (c), "One...has" not "have."
+d) Neither the manager nor his colleagues were present at the briefing. "Colleagues" (plural) is nearest to the verb â†’ "were" is correct. In (a), "data" as singular â†’ "was" (or treat it differently by context). In (b), "committee" as singular â†’ "has." In (c), "One...has" not "have."
 </details>
 
 ---
@@ -874,13 +874,13 @@ flowchart TD
     D --> E3[Provides result or recommendation]
     
     A --> F[Look for LINKERS]
-    F --> G1[However/But → Contrast with previous]
-    F --> G2[Moreover/Furthermore → Adds to previous]
-    F --> G3[Therefore/Thus → Result of previous]
-    F --> G4[For example/For instance → Illustrates previous]
+    F --> G1[However/But â†’ Contrast with previous]
+    F --> G2[Moreover/Furthermore â†’ Adds to previous]
+    F --> G3[Therefore/Thus â†’ Result of previous]
+    F --> G4[For example/For instance â†’ Illustrates previous]
     
     A --> H[Check PRONOUN REFERENCES]
-    H --> I[This/These/It/They → must refer to noun<br/>in previous sentence]
+    H --> I[This/These/It/They â†’ must refer to noun<br/>in previous sentence]
     
     J[Test Sequence] --> K{Does it flow logically?}
     K -->|Yes| L[Select option]
@@ -908,7 +908,7 @@ flowchart LR
 
 ---
 
-## 📖 Exercise Bank (30 Questions)
+## ðŸ“– Exercise Bank (30 Questions)
 
 ### Section A: Para Jumbles (Q1-Q8)
 
@@ -1045,8 +1045,8 @@ Identify the incorrect sentence and correct it:
 
 | Q | Answer | Q | Answer | Q | Answer | Q | Answer | Q | Answer |
 |---|--------|---|--------|---|--------|---|--------|---|--------|
-| 1 | Q → R → S → P | 2 | Q → S → P → R | 3 | Q → P → S → R | 4 | Q → P → R → S | 5 | Q → P → S → R |
-| 6 | S → Q → P → R | 7 | Q → P → R → S | 8 | Q → P → R → S | 9 | a) decided / diversify | 10 | a) examined / found |
+| 1 | Q â†’ R â†’ S â†’ P | 2 | Q â†’ S â†’ P â†’ R | 3 | Q â†’ P â†’ S â†’ R | 4 | Q â†’ P â†’ R â†’ S | 5 | Q â†’ P â†’ S â†’ R |
+| 6 | S â†’ Q â†’ P â†’ R | 7 | Q â†’ P â†’ R â†’ S | 8 | Q â†’ P â†’ R â†’ S | 9 | a) decided / diversify | 10 | a) examined / found |
 | 11 | a) announced / to promote | 12 | a) designed / and | 13 | a) upgraded / to enable / access | 14 | a) replacement / smooth / minimising | 15 | b) technical / identified / implemented |
 | 16 | c) Pessimistic | 17 | d) Breach | 18 | c) bank launched credit card | 19 | d) Sluggish | 20 | c) AGM on Friday |
 | 21 | b) College | 22 | b) Transaction | 23 | a) Clear | 24 | a) Book | 25 | b) committee has reached |
@@ -1056,7 +1056,7 @@ Identify the incorrect sentence and correct it:
 
 ## Summary
 
-- Verbal Ability encompasses **4–5 questions** in IBPS SO Prelims
+- Verbal Ability encompasses **4â€“5 questions** in IBPS SO Prelims
 - **Para Jumbles**: Identify the opening sentence (introduces subject), look for linker words, check pronoun references
 - **Fillers**: Read the entire sentence first, identify part of speech, use contextual elimination
 - **Odd One Out**: Find the sentence/word that breaks the theme, logic, or chronology
@@ -1074,7 +1074,7 @@ Identify the incorrect sentence and correct it:
 | Triple Filler | Use elimination; all three blanks must fit together |
 | Odd One Out | Identify the common theme first, then find the exception |
 | Analogy | Build a sentence connecting the first pair; apply to all options |
-| Sentence Correction | Read aloud — if it sounds wrong, it probably is wrong |
+| Sentence Correction | Read aloud â€” if it sounds wrong, it probably is wrong |
 
 ---
 
@@ -1126,7 +1126,7 @@ d) Confident
 
 **Answer:** b) Pessimistic
 
-Optimistic, hopeful, and confident all have positive connotations (expecting good outcomes). Pessimistic means expecting the worst — negative connotation.
+Optimistic, hopeful, and confident all have positive connotations (expecting good outcomes). Pessimistic means expecting the worst â€” negative connotation.
 </details>
 
 ---
@@ -1160,7 +1160,7 @@ d) One of the employees have been promoted.
 
 **Answer:** d) One of the employees have been promoted.
 
-"One of the employees" — the subject is "one" (singular), so the verb should be "has" (singular), not "have" (plural). The correct sentence: "One of the employees has been promoted."
+"One of the employees" â€” the subject is "one" (singular), so the verb should be "has" (singular), not "have" (plural). The correct sentence: "One of the employees has been promoted."
 </details>
 
 ---
@@ -1227,4 +1227,4 @@ Correct the following sentences:
 
 ---
 
-*Proceed to Chapter 5 — Descriptive English*
+*Proceed to Chapter 5 â€” Descriptive English*

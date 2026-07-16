@@ -1,4 +1,4 @@
-# Chapter 1: RBI & Monetary Policy
+﻿# Chapter 1: RBI & Monetary Policy
 
 ## Learning Objectives
 
@@ -14,16 +14,16 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/banking-financial-awareness/01-rbi-monetary-policy/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/banking-financial-awareness/01-rbi-monetary-policy/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/banking-financial-awareness/01-rbi-monetary-policy/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/banking-financial-awareness/01-rbi-monetary-policy/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/banking-financial-awareness/01-rbi-monetary-policy/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/banking-financial-awareness/01-rbi-monetary-policy/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/banking-financial-awareness/01-rbi-monetary-policy/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/banking-financial-awareness/01-rbi-monetary-policy/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/banking-financial-awareness/01-rbi-monetary-policy/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/banking-financial-awareness/01-rbi-monetary-policy/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/banking-financial-awareness/01-rbi-monetary-policy/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/banking-financial-awareness/01-rbi-monetary-policy/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -35,7 +35,7 @@ By the end of this chapter, you will be able to:
 
 ### 1.1 History of the Reserve Bank of India
 
-The Reserve Bank of India (RBI) was established on **April 1, 1935**, under the **Reserve Bank of India Act, 1934**. It was originally constituted as a private shareholders' bank with a paid-up capital of ₹5 crore. Following India's independence, the RBI was **nationalised on January 1, 1949**, under the Reserve Bank (Transfer of Public Ownership) Act, 1948.
+The Reserve Bank of India (RBI) was established on **April 1, 1935**, under the **Reserve Bank of India Act, 1934**. It was originally constituted as a private shareholders' bank with a paid-up capital of â‚¹5 crore. Following India's independence, the RBI was **nationalised on January 1, 1949**, under the Reserve Bank (Transfer of Public Ownership) Act, 1948.
 
 **Key milestones:**
 
@@ -100,7 +100,7 @@ flowchart TD
 #### D. Banker to Banks
 - Maintains current accounts of all scheduled banks
 - Provides **settlement and clearing** services
-- Acts as **lender of last resort** — provides liquidity to banks facing temporary fund shortages
+- Acts as **lender of last resort** â€” provides liquidity to banks facing temporary fund shortages
 
 #### E. Regulator of the Financial System
 - Regulates and supervises commercial banks, cooperative banks, NBFCs, and payments systems
@@ -135,20 +135,20 @@ flowchart TD
     C --> M[Moral Suasion]
     C --> N[Selective Credit Controls]
     
-    D --> O[Repo Rate ↑ → Borrowing Cost ↑ → Demand ↓ → Inflation ↓]
-    D --> P[Repo Rate ↓ → Borrowing Cost ↓ → Demand ↑ → Growth ↑]
+    D --> O[Repo Rate â†‘ â†’ Borrowing Cost â†‘ â†’ Demand â†“ â†’ Inflation â†“]
+    D --> P[Repo Rate â†“ â†’ Borrowing Cost â†“ â†’ Demand â†‘ â†’ Growth â†‘]
 ```
 
 #### A. Repo Rate
 The **Repurchase Option (Repo) Rate** is the rate at which the RBI lends short-term money (overnight) to commercial banks against approved government securities. It is the **key policy rate** and signals the RBI's monetary policy stance.
 
-- **Increase:** Makes borrowing costly → reduces money supply → controls inflation
-- **Decrease:** Makes borrowing cheaper → increases money supply → boosts growth
+- **Increase:** Makes borrowing costly â†’ reduces money supply â†’ controls inflation
+- **Decrease:** Makes borrowing cheaper â†’ increases money supply â†’ boosts growth
 
 #### B. Reverse Repo Rate
 The rate at which the RBI **borrows** money from commercial banks. It is the **lower bound** of the LAF corridor.
 
-- Always lower than the repo rate (currently repo rate − 0.25% to 0.65%)
+- Always lower than the repo rate (currently repo rate âˆ’ 0.25% to 0.65%)
 - Banks park surplus funds with RBI to earn this interest
 
 #### C. Cash Reserve Ratio (CRR)
@@ -158,7 +158,7 @@ The portion of bank deposits that banks must keep with the RBI in **cash** form 
 |--------|---------|
 | Current (2025) | 4.5% of Net Demand and Time Liabilities (NDTL) |
 | Purpose | Controls liquidity directly |
-| Impact | Higher CRR → less money for lending → inflation control |
+| Impact | Higher CRR â†’ less money for lending â†’ inflation control |
 | Interest | **No interest** is paid on CRR balances |
 
 #### D. Statutory Liquidity Ratio (SLR)
@@ -168,7 +168,7 @@ The portion of deposits that banks must invest in **approved securities** (gold,
 |--------|---------|
 | Current (2025) | 18% of NDTL |
 | Purpose | Ensures bank solvency, funds government borrowing |
-| Impact | Higher SLR → lower lending capacity |
+| Impact | Higher SLR â†’ lower lending capacity |
 | Interest | Banks **earn interest** on SLR securities |
 
 #### E. Marginal Standing Facility (MSF)
@@ -191,7 +191,7 @@ The primary tool for managing day-to-day liquidity in the banking system:
 | Component | Rate | Direction | Purpose |
 |-----------|------|-----------|---------|
 | Repo | Policy rate | RBI lends to banks | Inject liquidity |
-| Reverse Repo | Policy rate − margin | RBI borrows from banks | Absorb liquidity |
+| Reverse Repo | Policy rate âˆ’ margin | RBI borrows from banks | Absorb liquidity |
 | MSF | Policy rate + 0.25% | RBI lends to banks | Emergency borrowing |
 
 The LAF corridor is bounded by:
@@ -234,7 +234,7 @@ Established under the **RBI Act, 1934** (as amended in 2016), the MPC is a **6-m
 **Key features:**
 - **Meeting frequency:** At least **4 meetings per year** (bi-monthly schedule)
 - **Decision rule:** Each member has one vote; Governor has **casting vote** in case of a tie
-- **Inflation target:** 4% CPI inflation with a tolerance band of ±2% (i.e., 2%–6%)
+- **Inflation target:** 4% CPI inflation with a tolerance band of Â±2% (i.e., 2%â€“6%)
 - **Primary mandate:** Maintain price stability while keeping growth in mind
 - **Failure clause:** If inflation stays outside the band for **3 consecutive quarters**, RBI must submit a report to the government explaining reasons, remedial actions, and timeline
 
@@ -284,12 +284,12 @@ flowchart LR
 
 The transmission of monetary policy operates through multiple channels:
 
-1. **Interest Rate Channel:** Policy rate change → bank lending rates → investment and consumption demand → inflation/growth
-2. **Credit Channel:** Policy rate → credit availability → spending decisions
-3. **Exchange Rate Channel:** Rate differential → capital flows → rupee exchange rate → export/import prices → inflation
-4. **Asset Price Channel:** Rate change → bond/equity/real estate prices → wealth effect → consumption
+1. **Interest Rate Channel:** Policy rate change â†’ bank lending rates â†’ investment and consumption demand â†’ inflation/growth
+2. **Credit Channel:** Policy rate â†’ credit availability â†’ spending decisions
+3. **Exchange Rate Channel:** Rate differential â†’ capital flows â†’ rupee exchange rate â†’ export/import prices â†’ inflation
+4. **Asset Price Channel:** Rate change â†’ bond/equity/real estate prices â†’ wealth effect â†’ consumption
 
-**Transmission lag:** Policy changes typically take **6–12 months** to fully transmit through the economy.
+**Transmission lag:** Policy changes typically take **6â€“12 months** to fully transmit through the economy.
 
 ### 1.8 Monetary Policy Stances
 
@@ -360,8 +360,8 @@ function calculateRepoRateImpact(
 }
 
 const result = calculateRepoRateImpact(5000000, 240, 6.5, 6.75);
-console.log(`Old EMI: ₹${result.oldEMI}, New EMI: ₹${result.newEMI}, Increase: ₹${result.emiDifference}`);
-// Output: Old EMI: ₹37285, New EMI: ₹37980, Increase: ₹695
+console.log(`Old EMI: â‚¹${result.oldEMI}, New EMI: â‚¹${result.newEMI}, Increase: â‚¹${result.emiDifference}`);
+// Output: Old EMI: â‚¹37285, New EMI: â‚¹37980, Increase: â‚¹695
 ```
 
 **Q1.** If the repo rate is increased from 6.50% to 6.75%, what is the likely impact on the economy?
@@ -375,7 +375,7 @@ d) Bank deposits decrease
 <summary>Answer</summary>
 **Answer:** b) Borrowing becomes costlier, demand reduces, inflation falls
 
-Repo rate increase → banks pass on higher costs via lending rates → loans become expensive → demand for credit falls → aggregate demand reduces → inflationary pressures ease.
+Repo rate increase â†’ banks pass on higher costs via lending rates â†’ loans become expensive â†’ demand for credit falls â†’ aggregate demand reduces â†’ inflationary pressures ease.
 </details>
 
 ---
@@ -445,8 +445,8 @@ function calculateCRRImpact(
 }
 
 const impact = calculateCRRImpact(100000000, 4.5, 0.1);
-console.log(`CRR: ₹${impact.crrAmount}, Lendable: ₹${impact.lendableAmount}, Multiplier: ${impact.moneyMultiplier}`);
-// Output: CRR: ₹4500000, Lendable: ₹95500000, Multiplier: 6.45
+console.log(`CRR: â‚¹${impact.crrAmount}, Lendable: â‚¹${impact.lendableAmount}, Multiplier: ${impact.moneyMultiplier}`);
+// Output: CRR: â‚¹4500000, Lendable: â‚¹95500000, Multiplier: 6.45
 ```
 
 **Q4.** If the RBI increases CRR from 4% to 4.5%, what is the effect?
@@ -492,7 +492,7 @@ d) 4% to 8%
 <summary>Answer</summary>
 **Answer:** b) 2% to 6%
 
-The CPI inflation target is 4% with a tolerance band of ±2%, making the acceptable range 2% to 6%. If inflation stays outside this band for 3 consecutive quarters, RBI must report to the government.
+The CPI inflation target is 4% with a tolerance band of Â±2%, making the acceptable range 2% to 6%. If inflation stays outside this band for 3 consecutive quarters, RBI must report to the government.
 </details>
 
 ---
@@ -625,8 +625,8 @@ function moneyMultiplier(
 }
 
 const mm = moneyMultiplier(4.5, 0.1, 100000);
-console.log(`Multiplier: ${mm.multiplier}x, Total Money: ₹${mm.totalMoneyCreation}`);
-// Output: Multiplier: 6.45x, Total Money: ₹645161
+console.log(`Multiplier: ${mm.multiplier}x, Total Money: â‚¹${mm.totalMoneyCreation}`);
+// Output: Multiplier: 6.45x, Total Money: â‚¹645161
 ```
 
 **Q11.** What happens to the money multiplier when CRR is increased?
@@ -656,7 +656,7 @@ d) Securities and Exchange Board of India
 <summary>Answer</summary>
 **Answer:** c) Reserve Bank of India
 
-RBI has the sole right to issue banknotes of all denominations. The one-rupee note is an exception — it is issued by the Ministry of Finance but bears the signature of the RBI Governor.
+RBI has the sole right to issue banknotes of all denominations. The one-rupee note is an exception â€” it is issued by the Ministry of Finance but bears the signature of the RBI Governor.
 </details>
 
 ---
@@ -744,8 +744,8 @@ function simulateOMO(
 }
 
 const omo = simulateOMO('Purchase', 100000, 500000, 2000);
-console.log(`Liquidity: ${omo.initialLiquidity} → ${omo.finalLiquidity}, Bond prices ${omo.bondPriceChange}%`);
-// Output: Liquidity: 500000 → 600000, Bond prices 50%
+console.log(`Liquidity: ${omo.initialLiquidity} â†’ ${omo.finalLiquidity}, Bond prices ${omo.bondPriceChange}%`);
+// Output: Liquidity: 500000 â†’ 600000, Bond prices 50%
 ```
 
 **Q16.** Open Market Operations involve the buying and selling of:
@@ -839,7 +839,7 @@ d) Increase by 20%
 <summary>Answer</summary>
 **Answer:** c) Increase by 10%
 
-MV = PT. If V and T are constant, ΔM = ΔP. A 10% increase in M leads to a proportional 10% increase in P.
+MV = PT. If V and T are constant, Î”M = Î”P. A 10% increase in M leads to a proportional 10% increase in P.
 </details>
 
 ---
@@ -910,16 +910,16 @@ CTS is regulated by the Reserve Bank of India. Under CTS, physical cheques are n
 
 **Q26.** Under the Positive Pay System introduced by RBI, re-confirmation of cheque details is mandatory for amounts of:
 
-a) ₹25,000 and above
-b) ₹50,000 and above
-c) ₹1,00,000 and above
-d) ₹5,00,000 and above
+a) â‚¹25,000 and above
+b) â‚¹50,000 and above
+c) â‚¹1,00,000 and above
+d) â‚¹5,00,000 and above
 
 <details>
 <summary>Answer</summary>
-**Answer:** b) ₹50,000 and above
+**Answer:** b) â‚¹50,000 and above
 
-The Positive Pay System (2021) requires re-confirmation of cheque details for amounts of ₹50,000 and above to prevent cheque fraud.
+The Positive Pay System (2021) requires re-confirmation of cheque details for amounts of â‚¹50,000 and above to prevent cheque fraud.
 </details>
 
 ---
@@ -975,8 +975,8 @@ In a liquidity trap, interest rates are so low that people prefer to hold cash r
 **Q30.** The Fisher Effect states that the nominal interest rate equals:
 
 a) Real interest rate + Expected inflation
-b) Real interest rate — Expected inflation
-c) Real interest rate × Inflation rate
+b) Real interest rate â€” Expected inflation
+c) Real interest rate Ã— Inflation rate
 d) Real interest rate / Inflation rate
 
 <details>
@@ -1069,11 +1069,11 @@ Money is any generally accepted medium of exchange, measure of value, store of v
 
 | Function | Description |
 |----------|-------------|
-| **Medium of Exchange** | Eliminates the inefficiency of barter trade — no double coincidence of wants needed |
+| **Medium of Exchange** | Eliminates the inefficiency of barter trade â€” no double coincidence of wants needed |
 | **Measure of Value** | Provides a common unit to compare worth of diverse goods and services |
 | **Store of Value** | Enables intertemporal transfer of purchasing power |
 | **Standard of Deferred Payment** | Facilitates credit transactions and future contracts |
-| **Liquidity** | Most liquid asset — universally accepted for transactions |
+| **Liquidity** | Most liquid asset â€” universally accepted for transactions |
 
 #### B. Evils of Money
 
@@ -1101,7 +1101,7 @@ Where:
 
 **Implications:**
 - If V and T are constant, changes in M lead to **proportional changes in P** (inflation)
-- ΔM% + ΔV% ≈ ΔP% + ΔT% (growth rate form)
+- Î”M% + Î”V% â‰ˆ Î”P% + Î”T% (growth rate form)
 - **Criticism:** V is not constant in the short run; T does not remain constant at full employment
 
 **Cambridge Version (Marshall - Pigou):**
@@ -1117,12 +1117,12 @@ flowchart LR
     A[Increase in<br/>Money Supply M] --> B[More Spending<br/>Power with People]
     B --> C[Increased Aggregate<br/>Demand for Goods]
     C --> D{Is Economy at<br/>Full Capacity?}
-    D -->|Yes: Supply<br/>Cannot Increase| E[Price Level<br/>Rises → Inflation]
-    D -->|No: Idle<br/>Capacity Exists| F[Output Increases<br/>→ Growth]
+    D -->|Yes: Supply<br/>Cannot Increase| E[Price Level<br/>Rises â†’ Inflation]
+    D -->|No: Idle<br/>Capacity Exists| F[Output Increases<br/>â†’ Growth]
     
     G[Decrease in<br/>Money Supply] --> H[Reduced Spending]
     H --> I[Falling Demand]
-    I --> J[Price Level Falls<br/>→ Deflation Risk]
+    I --> J[Price Level Falls<br/>â†’ Deflation Risk]
     
     style A fill:#1a73e8,color:#fff
     style E fill:#e83737,color:#fff
@@ -1138,10 +1138,10 @@ A **cheque** is a bill of exchange drawn on a specified banker, payable on deman
 | **Definition** | Unconditional order in writing, signed by the drawer, directing a bank to pay a sum to a specified person |
 | **Parties** | Drawer (account holder), Drawee (bank), Payee (recipient) |
 | **CTS (Cheque Truncation System)** | Physical cheque not moved; electronic image transmitted for clearing |
-| **Positive Pay System** | Since 2021, re-confirmation of cheque details for amounts ≥ ₹50,000 |
+| **Positive Pay System** | Since 2021, re-confirmation of cheque details for amounts â‰¥ â‚¹50,000 |
 | **Validity** | Cheques valid for 3 months from date of issue (reduced from 6 months in 2012) |
 
-### 1.12 Quantitative vs Qualitative Tools — Comparison
+### 1.12 Quantitative vs Qualitative Tools â€” Comparison
 
 | Aspect | Quantitative Tools | Qualitative Tools |
 |--------|-------------------|-------------------|
@@ -1225,9 +1225,9 @@ console.log(`New Price Level: ${qt.priceLevel}, Predicted Inflation: ${qt.predic
 - **CRR** (portion of deposits kept with RBI in cash, no interest) and **SLR** (portion invested in approved securities, earns interest) are reserve requirements that impact lending capacity.
 - **LAF corridor** is bounded by the MSF rate (upper), repo rate (middle), and reverse repo rate (lower).
 - **MCLR** replaced the Base Rate system in 2016 for computing lending rates based on marginal cost of funds, negative carry on CRR, operating costs, and tenor premium.
-- The **MPC** is a 6-member body that sets the repo rate with a mandate to keep CPI inflation at 4% (±2% tolerance band).
+- The **MPC** is a 6-member body that sets the repo rate with a mandate to keep CPI inflation at 4% (Â±2% tolerance band).
 - **Open Market Operations** involve purchase/sale of government securities to regulate systemic liquidity.
-- Policy transmission takes **6–12 months** to fully impact the economy.
+- Policy transmission takes **6â€“12 months** to fully impact the economy.
 
 ---
 
@@ -1238,11 +1238,11 @@ console.log(`New Price Level: ${qt.priceLevel}, Predicted Inflation: ${qt.predic
 | RBI Established | April 1, 1935 | "RBI starts at 35" |
 | Nationalisation | January 1, 1949 | "RBI is Gov-owned since 49" |
 | MPC Members | 6 members | Governor + 1 Deputy + 1 Board nominee + 3 external |
-| Inflation Target | 4% ± 2% (2–6% range) | "4 is the target, 2-6 is the range" |
+| Inflation Target | 4% Â± 2% (2â€“6% range) | "4 is the target, 2-6 is the range" |
 | CRR | No interest paid | "C = Cash = Costly" |
 | SLR | Interest earned | "S = Securities = Saver" |
 | MSF | Repo + 0.25% | "M = More than Repo" |
-| LAF Corridor | MSF (top) > Repo (mid) > Reverse Repo (bottom) | "MRR — MSF, Repo, Reverse Repo" |
+| LAF Corridor | MSF (top) > Repo (mid) > Reverse Repo (bottom) | "MRR â€” MSF, Repo, Reverse Repo" |
 | MCLR (2016) | Base rate replacement | "MCLR = Marginal Cost Lending Rate" |
 | OMO Purpose | Liquidity management | "Buy = Inject, Sell = Absorb" |
 
@@ -1252,17 +1252,17 @@ console.log(`New Price Level: ${qt.priceLevel}, Predicted Inflation: ${qt.predic
 
 **Q1.** What is the current inflation target set for the Monetary Policy Committee?
 
-a) 5% with ±1% tolerance
-b) 4% with ±2% tolerance
-c) 3% with ±2% tolerance
-d) 6% with ±1% tolerance
+a) 5% with Â±1% tolerance
+b) 4% with Â±2% tolerance
+c) 3% with Â±2% tolerance
+d) 6% with Â±1% tolerance
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** b) 4% with ±2% tolerance
+**Answer:** b) 4% with Â±2% tolerance
 
-The MPC targets CPI inflation of 4% with a tolerance band of ±2 percentage points (i.e., 2% to 6%).
+The MPC targets CPI inflation of 4% with a tolerance band of Â±2 percentage points (i.e., 2% to 6%).
 </details>
 
 ---
@@ -1385,7 +1385,7 @@ Income tax rates are set by the government through the Finance Act. RBI's develo
 22. The _________ version of the Quantity Theory of Money is represented by M_d = kPY.
 23. The cheque clearing system that uses electronic image transmission instead of physical movement is called _________.
 24. The validity period of a cheque in India is _________ months from the date of issue.
-25. Under the Positive Pay System, re-confirmation is mandatory for cheques of ₹_________ and above.
+25. Under the Positive Pay System, re-confirmation is mandatory for cheques of â‚¹_________ and above.
 
 ### Section C: True or False
 
@@ -1415,11 +1415,11 @@ Income tax rates are set by the government through the Finance Act. RBI's develo
 | 6 | b (Banker to banks) | 7 | a (Marginal Standing Facility) | 8 | b (Repo Rate) | 9 | b (RBI pays no interest) | 10 | b (2%) |
 | 11 | Hilton Young | 12 | Reverse Repo | 13 | Marginal Cost of Funds-based Lending Rate | 14 | 2016 | 15 | Minimum Reserve |
 | 16 | long-term | 17 | 90 | 18 | 0.25% (or market determined margin) | 19 | October | 20 | Overnight |
-| 21 | Equation of Exchange | 22 | Cambridge | 23 | Cheque Truncation System (CTS) | 24 | 3 | 25 | ₹50,000 |
+| 21 | Equation of Exchange | 22 | Cambridge | 23 | Cheque Truncation System (CTS) | 24 | 3 | 25 | â‚¹50,000 |
 | 26 | False (1949) | 27 | False (NDTL) | 28 | True | 29 | False (higher) | 30 | True |
 | 31 | False (4%) | 32 | True | 33 | True | 34 | False (2016) | 35 | False (6 members) |
 | 36 | False (money is not a measure of inequality) | 37 | True | 38 | False (qualitative) | 39 | False (monetary policy becomes ineffective) | 40 | True |
 
 ---
 
-*Proceed to Chapter 2 — Banking System & Regulations*
+*Proceed to Chapter 2 â€” Banking System & Regulations*

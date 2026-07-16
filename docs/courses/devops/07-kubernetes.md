@@ -1,4 +1,4 @@
-# Chapter 7: Kubernetes
+﻿# Chapter 7: Kubernetes
 
 > **Prev:** [Infrastructure as Code](./07-infrastructure-as-code.md)
 > **Next:** [Configuration Management](./08-configuration-management.md)
@@ -17,16 +17,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/07-kubernetes/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/07-kubernetes/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/07-kubernetes/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/07-kubernetes/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/07-kubernetes/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/07-kubernetes/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/07-kubernetes/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/07-kubernetes/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/07-kubernetes/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/07-kubernetes/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/07-kubernetes/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/07-kubernetes/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -863,15 +863,15 @@ class PDBAnalyzer {
       riskLevel = 'safe';
     } else if (allowedDisruptions === 1) {
       riskLevel = 'caution';
-      recommendations.push('Only 1 pod can be disrupted at a time — rolling updates will be slow');
-      if (podsOnSingleNode > 0) recommendations.push(`${podsOnSingleNode} node(s) run more than allowed disruptions — consider pod anti-affinity`);
+      recommendations.push('Only 1 pod can be disrupted at a time â€” rolling updates will be slow');
+      if (podsOnSingleNode > 0) recommendations.push(`${podsOnSingleNode} node(s) run more than allowed disruptions â€” consider pod anti-affinity`);
     } else {
       riskLevel = 'risky';
-      recommendations.push('Zero disruptions allowed — consider increasing minAvailable or adding replicas');
+      recommendations.push('Zero disruptions allowed â€” consider increasing minAvailable or adding replicas');
     }
 
     if (podsOnSingleNode > 0 && allowedDisruptions > 0) {
-      recommendations.push(`Spread pods across nodes — ${podsOnSingleNode} node(s) are single points of failure`);
+      recommendations.push(`Spread pods across nodes â€” ${podsOnSingleNode} node(s) are single points of failure`);
     }
 
     return {

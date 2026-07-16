@@ -1,4 +1,4 @@
-# Agile Methodologies
+﻿# Agile Methodologies
 
 ## Learning Objectives
 
@@ -14,16 +14,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/11-agile-methodologies/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/software-engineering/11-agile-methodologies/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/11-agile-methodologies/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/software-engineering/11-agile-methodologies/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/11-agile-methodologies/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/software-engineering/11-agile-methodologies/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/11-agile-methodologies/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/software-engineering/11-agile-methodologies/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/11-agile-methodologies/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/software-engineering/11-agile-methodologies/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/11-agile-methodologies/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/software-engineering/11-agile-methodologies/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -68,7 +68,7 @@ graph TD
 7. Working software is the primary measure of progress.
 8. Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.
 9. Continuous attention to technical excellence and good design enhances agility.
-10. Simplicity — the art of maximizing the amount of work not done — is essential.
+10. Simplicity â€” the art of maximizing the amount of work not done â€” is essential.
 11. The best architectures, requirements, and designs emerge from self-organizing teams.
 12. At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.
 
@@ -393,8 +393,8 @@ flowchart TD
 | Metric | Formula | Target | Usage |
 |--------|---------|--------|-------|
 | **Velocity** | Sprint points completed | Consistent trend | Forecasting |
-| **Cycle time** | Date done − Date started | < 3 days | Process improvement |
-| **Lead time** | Date done − Date requested | < 5 days | Customer satisfaction |
+| **Cycle time** | Date done âˆ’ Date started | < 3 days | Process improvement |
+| **Lead time** | Date done âˆ’ Date requested | < 5 days | Customer satisfaction |
 | **Throughput** | Items / time period | Increasing trend | Capacity |
 | **Defect leakage** | Production defects / total defects | < 5% | Quality |
 | **Happiness metric** | Team survey (1-5) | > 4.0 | Team health |
@@ -414,7 +414,7 @@ graph TD
 
 ## Examples
 
-### Example 1: SprintBoard — Backlog, Sprint Planning, Task Tracking, Velocity
+### Example 1: SprintBoard â€” Backlog, Sprint Planning, Task Tracking, Velocity
 
 A complete sprint board implementation with backlog management, sprint planning with capacity-based selection, task tracking, and velocity computation.
 
@@ -580,11 +580,11 @@ class SprintBoard {
     const totalTasks = sprint.stories.reduce((s, st) => s + st.tasks.length, 0);
     const doneTasks = sprint.stories.reduce((s, st) => s + st.tasks.filter(t => t.status === 'done').length, 0);
     return [
-      `═══════════════════════════════════════`,
+      `â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•`,
       `  Sprint ${sprint.id}: ${sprint.name}`,
       `  Goal: ${sprint.goal}`,
-      `  Period: ${sprint.startDate.toISOString().split('T')[0]} → ${sprint.endDate.toISOString().split('T')[0]}`,
-      `═══════════════════════════════════════`,
+      `  Period: ${sprint.startDate.toISOString().split('T')[0]} â†’ ${sprint.endDate.toISOString().split('T')[0]}`,
+      `â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•`,
       `  Capacity: ${sprint.capacity} points`,
       `  Stories: ${sprint.stories.length} (${completed} completed)`,
       `  Tasks: ${doneTasks}/${totalTasks}`,
@@ -641,7 +641,7 @@ console.log(board.getVelocity());
 console.log(board.generateSprintReport(sprint.id));
 ```
 
-### Example 2: AgileMetrics — Velocity, Cycle Time, Burndown Computation
+### Example 2: AgileMetrics â€” Velocity, Cycle Time, Burndown Computation
 
 A comprehensive agile metrics calculator that computes velocity, cycle time statistics, burndown data, cumulative flow, and generates formatted reports.
 
@@ -773,8 +773,8 @@ class AgileMetrics {
       '=== Velocity Report ===',
       `Average Velocity: ${v.average} points/sprint`,
       `Median Velocity: ${v.median} points/sprint`,
-      `Trend: ${v.trend === 'up' ? '📈 Improving' : v.trend === 'down' ? '📉 Declining' : '📊 Stable'}`,
-      `Recent: ${v.data.join(' → ')}`,
+      `Trend: ${v.trend === 'up' ? 'ðŸ“ˆ Improving' : v.trend === 'down' ? 'ðŸ“‰ Declining' : 'ðŸ“Š Stable'}`,
+      `Recent: ${v.data.join(' â†’ ')}`,
       `Forecast (50 pts): ~${v.average > 0 ? Math.ceil(50 / v.average) : 'N/A'} sprints`,
     ].join('\n');
   }
@@ -784,13 +784,13 @@ class AgileMetrics {
     const lt = this.getLeadTime();
     return [
       '=== Flow Metrics Report ===',
-      '── Cycle Time (days) ──',
+      'â”€â”€ Cycle Time (days) â”€â”€',
       `  Average: ${ct.average}`,
       `  Median:  ${ct.median}`,
       `  P85:     ${ct.p85}`,
       `  P95:     ${ct.p95}`,
       `  Max:     ${ct.max}`,
-      '── Lead Time (days) ──',
+      'â”€â”€ Lead Time (days) â”€â”€',
       `  Average: ${lt.average}`,
       `  Median:  ${lt.median}`,
       `  Throughput (7d): ${this.getThroughput(7)} items`,
@@ -830,7 +830,7 @@ const burndown = metrics.computeBurndown(50, 10, [6, 4, 5, 7, 3, 5, 6, 4, 5, 5])
 console.log(`Sprint on track: ${burndown.onTrack}`);
 ```
 
-### Example 3: ScaledAgileConfig — SAFe/LeSS/Nexus Configuration
+### Example 3: ScaledAgileConfig â€” SAFe/LeSS/Nexus Configuration
 
 A scaled agile framework configurator that supports SAFe, LeSS, and Nexus with team setup, ART configuration, PI planning, and dependency management.
 
@@ -950,12 +950,12 @@ class ScaledAgileConfig {
       : 0;
 
     const lines = [
-      `═══════════════════════════════════════════`,
+      `â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•`,
       `  PI ${piNumber} Planning Board`,
       `  Start: ${piStart.toISOString().split('T')[0]}`,
       `  ART Velocity: ${velocity.totalVelocity} points/PI`,
       `  Sprints in PI: ${sprintCount}`,
-      `═══════════════════════════════════════════`,
+      `â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•`,
       '',
       '  Teams:',
       ...Object.entries(velocity.teamVelocities).map(([name, vel]) =>
@@ -964,8 +964,8 @@ class ScaledAgileConfig {
       '',
       '  Critical Dependencies:',
       ...(criticalDeps.length > 0
-        ? criticalDeps.map(d => `    ⚠ ${d.from} → ${d.to}: ${d.description} (due: ${d.milestone.toISOString().split('T')[0]})`)
-        : ['    ✅ No critical dependencies']),
+        ? criticalDeps.map(d => `    âš  ${d.from} â†’ ${d.to}: ${d.description} (due: ${d.milestone.toISOString().split('T')[0]})`)
+        : ['    âœ… No critical dependencies']),
       '',
       '  PI Objectives: (to be filled during PI Planning)',
       '    1. ____________________________________________',
@@ -1051,9 +1051,9 @@ class BurndownCalculator {
 }
 ```
 
-### Example 5: TDD in TypeScript — String Calculator Kata
+### Example 5: TDD in TypeScript â€” String Calculator Kata
 
-**Step 1 — Write the failing test (Red):**
+**Step 1 â€” Write the failing test (Red):**
 
 ```typescript
 // StringCalculator.test.ts
@@ -1075,7 +1075,7 @@ describe('StringCalculator', () => {
 });
 ```
 
-**Step 2 — Implement to pass (Green) and refactor:**
+**Step 2 â€” Implement to pass (Green) and refactor:**
 
 ```typescript
 class StringCalculator {
@@ -1166,7 +1166,7 @@ class StoryManager {
 
 ### Real-World Case Studies
 
-**Case Study 1: Spotify — Agile at Scale with Squads, Tribes, Chapters, and Guilds**
+**Case Study 1: Spotify â€” Agile at Scale with Squads, Tribes, Chapters, and Guilds**
 
 Spotify's famous engineering culture organizes 1,000+ engineers into autonomous squads (like Scrum teams) that form tribes (like mini-startups). Chapters promote skill development across squads, and guilds spread knowledge across tribes. Key practices:
 - Squads own a mission (e.g., "search"), not a component
@@ -1175,7 +1175,7 @@ Spotify's famous engineering culture organizes 1,000+ engineers into autonomous 
 - Guilds (e.g., "Testing Guild") form organically around topics
 - "You build it, you run it" philosophy with full DevOps ownership
 
-**Case Study 2: ING Netherlands — Agile Transformation of a Bank**
+**Case Study 2: ING Netherlands â€” Agile Transformation of a Bank**
 
 ING restructured 3,500 employees into 350 squads organized in 13 tribes. The transformation took 18 months and involved:
 - Breaking down silos between business and IT
@@ -1184,10 +1184,10 @@ ING restructured 3,500 employees into 350 squads organized in 13 tribes. The tra
 - Removing traditional job titles (everyone is an "engineer")
 - Measuring success by time-to-market (from 6 months to 2 weeks)
 
-**Case Study 3: Salesforce — Scaling Agile with SAFe**
+**Case Study 3: Salesforce â€” Scaling Agile with SAFe**
 
 Salesforce adopted SAFe to coordinate 5,000+ engineers across 80+ Scrum teams. Results:
-- Predictable quarterly releases (3x/year → quarterly)
+- Predictable quarterly releases (3x/year â†’ quarterly)
 - Reduced integration time from 45 days to 5 days
 - 30% increase in productivity per team
 - Improved cross-team dependency management through PI Planning
@@ -1200,14 +1200,14 @@ User stories in INVEST-compliant format with Given-When-Then acceptance criteria
 
 ## Practical Takeaways
 
-1. **Agile is not a methodology, it is a mindset** — values and principles matter more than ceremony
-2. **Short feedback loops** — the shorter the cycle, the faster you learn and adapt; aim for 2-week sprints
-3. **Self-organising teams outperform directed teams** — trust the team to find the best way; micromanagement destroys agility
-4. **Velocity is unique to each team** — never compare velocities across teams; use velocity for forecasting, not evaluation
-5. **TDD reduces defect density by 40-80%** — the investment in tests pays for itself within 6 months
-6. **Done means "potentially shippable"** — if it is not tested, documented, and integrated, it is not done
-7. **Scrum without technical practices is cargo cult agile** — TDD, CI, refactoring, and pair programming are essential for real agility
-8. **Scale only when necessary** — most teams should not scale beyond 9 people; use LeSS before SAFe
+1. **Agile is not a methodology, it is a mindset** â€” values and principles matter more than ceremony
+2. **Short feedback loops** â€” the shorter the cycle, the faster you learn and adapt; aim for 2-week sprints
+3. **Self-organising teams outperform directed teams** â€” trust the team to find the best way; micromanagement destroys agility
+4. **Velocity is unique to each team** â€” never compare velocities across teams; use velocity for forecasting, not evaluation
+5. **TDD reduces defect density by 40-80%** â€” the investment in tests pays for itself within 6 months
+6. **Done means "potentially shippable"** â€” if it is not tested, documented, and integrated, it is not done
+7. **Scrum without technical practices is cargo cult agile** â€” TDD, CI, refactoring, and pair programming are essential for real agility
+8. **Scale only when necessary** â€” most teams should not scale beyond 9 people; use LeSS before SAFe
 
 ## Chapter Quiz
 
@@ -1215,7 +1215,7 @@ User stories in INVEST-compliant format with Given-When-Then acceptance criteria
 |----------|--------|-------------|
 | Q1: Which of the following is NOT one of the four values of the Agile Manifesto? | C | The Manifesto values responding to change over following a plan, not strict plan adherence |
 | Q2: In Scrum, who is responsible for maximising the value of the Product Backlog? | C | The Product Owner owns the Product Backlog and makes priority decisions |
-| Q3: What does the 'S' in INVEST stand for? | C | Small — stories should fit within a single sprint |
+| Q3: What does the 'S' in INVEST stand for? | C | Small â€” stories should fit within a single sprint |
 | Q4: The Red-Green-Refactor cycle is associated with: | B | TDD: Red (failing test), Green (passing test), Refactor (improve code) |
 | Q5: What is the recommended WIP limit in Kanban designed to do? | B | WIP limits expose bottlenecks, reduce context switching, and improve flow |
 
@@ -1368,15 +1368,15 @@ class RetrospectiveAnalyzer {
     const overdue = this.actions.filter(a => a.status !== 'done' && a.dueDate < new Date());
     const inProgress = this.actions.filter(a => a.status === 'in_progress');
     const health = this.completionRate();
-    const status = health >= 70 ? '✅ Healthy' : health >= 40 ? '⚠ Needs Attention' : '❌ Critical';
+    const status = health >= 70 ? 'âœ… Healthy' : health >= 40 ? 'âš  Needs Attention' : 'âŒ Critical';
     return [
       '=== Team Improvement Health ===',
-      `  Action Completion: ${health}% — ${status}`,
+      `  Action Completion: ${health}% â€” ${status}`,
       `  Overdue Items: ${overdue.length}`,
       `  In Progress: ${inProgress.length}`,
       '',
       '  Overdue Actions:',
-      ...(overdue.length > 0 ? overdue.map(a => `    ⚠ ${a.description} (${a.owner})`) : ['    ✅ None']),
+      ...(overdue.length > 0 ? overdue.map(a => `    âš  ${a.description} (${a.owner})`) : ['    âœ… None']),
       '',
       '  Recommendations:',
       '    1. Review overdue items in next retro',
@@ -1417,13 +1417,13 @@ class TeamMaturityModel {
 
     const roadmap = [
       `=== Team Maturity Assessment ===`,
-      `  Overall: ${overall}/5.0 — Level: ${level}`,
+      `  Overall: ${overall}/5.0 â€” Level: ${level}`,
       `  Strengths: ${strengths.join(', ') || 'None'}`,
       `  Areas to Improve: ${weaknesses.join(', ') || 'None'}`,
       '',
       '  Improvement Plan:',
       ...dimensions.filter(d => d.score < 3).flatMap(d => [
-        `  📌 ${d.dimension} (${d.score}/5):`,
+        `  ðŸ“Œ ${d.dimension} (${d.score}/5):`,
         ...d.recommendations.map(r => `     - ${r}`),
       ]),
     ].join('\n');
@@ -1509,7 +1509,7 @@ class KanbanBoard {
     const columns: ColumnName[] = ['backlog', 'analysis', 'in_progress', 'review', 'done'];
     return columns.map(col => {
       const items = this.cards.filter(c => c.column === col);
-      const wipStatus = items.length > this.wipLimits[col] ? '⚠ OVER WIP' : `(${items.length}/${this.wipLimits[col]})`;
+      const wipStatus = items.length > this.wipLimits[col] ? 'âš  OVER WIP' : `(${items.length}/${this.wipLimits[col]})`;
       const swimlanes = [...new Set(items.map(c => c.swimlane))];
       return `[${col.toUpperCase()}] ${wipStatus}\n${swimlanes.map(sl => `  ${sl}:\n    ${items.filter(c => c.swimlane === sl).map(c => `${c.id}: ${c.title} (${c.assignee})`).join('\n    ')}`).join('\n')}`;
     }).join('\n\n');

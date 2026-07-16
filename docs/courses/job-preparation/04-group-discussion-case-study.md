@@ -1,4 +1,4 @@
-# Group Discussion and Case Study Interview Preparation
+﻿# Group Discussion and Case Study Interview Preparation
 
 ## Learning Objectives
 
@@ -7,16 +7,16 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/job-preparation/04-group-discussion-case-study/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/job-preparation/04-group-discussion-case-study/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/job-preparation/04-group-discussion-case-study/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/job-preparation/04-group-discussion-case-study/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/job-preparation/04-group-discussion-case-study/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/job-preparation/04-group-discussion-case-study/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/job-preparation/04-group-discussion-case-study/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/job-preparation/04-group-discussion-case-study/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/job-preparation/04-group-discussion-case-study/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/job-preparation/04-group-discussion-case-study/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/job-preparation/04-group-discussion-case-study/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/job-preparation/04-group-discussion-case-study/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -291,15 +291,15 @@ flowchart TD
 ### Framework 5: Profitability Framework
 
 ```
-Revenue = Price × Volume
+Revenue = Price Ã— Volume
 Profit = Revenue - Costs
 
 Costs = Fixed Costs + Variable Costs
-     = (Fixed Cost per unit + Variable Cost per unit) × Volume
+     = (Fixed Cost per unit + Variable Cost per unit) Ã— Volume
 
 For declining profit, analyze:
-1. Revenue decreasing? → Price issue? Volume issue? Product mix?
-2. Costs increasing? → Fixed costs up? Variable costs up?
+1. Revenue decreasing? â†’ Price issue? Volume issue? Product mix?
+2. Costs increasing? â†’ Fixed costs up? Variable costs up?
 3. Competition? Economic factors? Internal inefficiencies?
 ```
 
@@ -366,7 +366,7 @@ flowchart TD
 
 **Porter's Analysis:**
 - **New Entrants**: Low barrier (content + app), many have tried and failed
-- **Buyer Power**: High — many free/cheap alternatives exist
+- **Buyer Power**: High â€” many free/cheap alternatives exist
 - **Substitutes**: Traditional coaching, YouTube tutorials
 - **Rivalry**: Extremely high
 
@@ -425,15 +425,15 @@ flowchart TD
 
 **Recommendation**: Launch as a premium product in top 10 cities first. Price at Rs. 30/bottle (vs Rs. 10 for regular drinks). Target health-conscious urban millennials through digital marketing.
 
-### Case Study 6: Market Sizing — How Many Petrol Pumps in India?
+### Case Study 6: Market Sizing â€” How Many Petrol Pumps in India?
 
 **Approach: Top-down estimation**
 
 ```
 Population of India: 140 crore (1.4B)
-Average household size: 4 → 350M households
-Vehicle-owning households: ~30% → 105M households
-Average vehicles per owning household: 1.5 → 157M vehicles
+Average household size: 4 â†’ 350M households
+Vehicle-owning households: ~30% â†’ 105M households
+Average vehicles per owning household: 1.5 â†’ 157M vehicles
 
 Assuming each petrol pump serves 5,000 vehicles:
 Petrol pumps = 157M / 5,000 = 31,400
@@ -461,12 +461,12 @@ System update (45 min): Integrated barcode scanning, automated updates
 ```
 
 **Recommendations:**
-1. Implement zone-based picking: Reduce pick time by 30% (45 → 32 min)
-2. Automation: Auto-taping machines reduce pack time by 40% (90 → 54 min)
-3. Sampling: Check 20% of orders instead of 100% (60 → 12 min)
-4. Integrated systems: Barcode scanning at each step (45 → 15 min)
+1. Implement zone-based picking: Reduce pick time by 30% (45 â†’ 32 min)
+2. Automation: Auto-taping machines reduce pack time by 40% (90 â†’ 54 min)
+3. Sampling: Check 20% of orders instead of 100% (60 â†’ 12 min)
+4. Integrated systems: Barcode scanning at each step (45 â†’ 15 min)
 
-**Estimated improvement**: 240 → 113 min (exceeds target of 120 min)
+**Estimated improvement**: 240 â†’ 113 min (exceeds target of 120 min)
 
 ### Case Study 8: Should a Company Acquire a Competitor?
 
@@ -490,7 +490,7 @@ System update (45 min): Integrated barcode scanning, automated updates
 **Problem**: A telecom company has seen revenue decline as voice revenues fall. Data usage is growing but ARPU is flat. How to grow?
 
 **Analysis:**
-1. Industry trend: Voice → Data transition
+1. Industry trend: Voice â†’ Data transition
 2. ARPU stagnation despite 30% data growth (price per GB falling)
 3. New revenue opportunities: digital services, enterprise cloud, IoT
 
@@ -521,9 +521,9 @@ System update (45 min): Integrated barcode scanning, automated updates
 2. Create self-service API documentation and integration marketplace
 3. Introduce a "Starter" plan at half the price with limited features
 4. Assign customer success managers to accounts with spending > $500/month
-5. Implement early warning system (usage drops below threshold → trigger outreach)
+5. Implement early warning system (usage drops below threshold â†’ trigger outreach)
 
-### Case Study 11: Public Sector — Improving Government Service Delivery
+### Case Study 11: Public Sector â€” Improving Government Service Delivery
 
 **Problem**: A government department takes 60 days to process passport applications. Target is 7 days.
 
@@ -574,7 +574,7 @@ Bottlenecks: Police verification (30 days - 50% of total time)
 - Management overhead: 15%
 
 **Analysis:**
-- Delivery density is low (2 deliveries/km² vs 5 for competition)
+- Delivery density is low (2 deliveries/kmÂ² vs 5 for competition)
 - High return rate (25% vs industry 15%)
 - Inefficient routing (manual vs algorithm-based)
 
@@ -636,7 +636,7 @@ Bottlenecks: Police verification (30 days - 50% of total time)
 | Mobile app | 100K users | 5 | 70% | 12 weeks | 29,167 |
 | Analytics dashboard | 20K users | 3 | 85% | 4 weeks | 12,750 |
 
-**RICE = (Reach × Impact × Confidence) / Effort**
+**RICE = (Reach Ã— Impact Ã— Confidence) / Effort**
 
 **Top 5 by RICE:**
 1. Dark mode (40,000)
@@ -645,7 +645,7 @@ Bottlenecks: Police verification (30 days - 50% of total time)
 4. API integration (6,000)
 5. (Next highest)
 
-### Case Study 17: Crisis Management — Data Breach
+### Case Study 17: Crisis Management â€” Data Breach
 
 **Problem**: A company discovers that customer data (names, emails, hashed passwords) has been leaked. How should they respond?
 
@@ -668,14 +668,14 @@ Bottlenecks: Police verification (30 days - 50% of total time)
 **Problem**: A software product has 10,000 users paying $10/month. Revenue: $100K/month. Costs: $150K/month (60% engineering, 25% cloud, 15% support).
 
 **Options Analysis:**
-1. **Increase price**: Raise to $15/month → may lose 20% users → Revenue: 8,000 × $15 = $120K (still not profitable)
-2. **Reduce costs**: Cloud optimization (25% savings → $112.5K total costs), automation in support
-3. **Tiered pricing**: $10 basic, $25 pro (convert 20% to pro) → 8,000 × $10 + 2,000 × $25 = $130K
+1. **Increase price**: Raise to $15/month â†’ may lose 20% users â†’ Revenue: 8,000 Ã— $15 = $120K (still not profitable)
+2. **Reduce costs**: Cloud optimization (25% savings â†’ $112.5K total costs), automation in support
+3. **Tiered pricing**: $10 basic, $25 pro (convert 20% to pro) â†’ 8,000 Ã— $10 + 2,000 Ã— $25 = $130K
 4. **Enterprise focus**: Higher price, fewer support costs
 
 **Recommendation**: Combined approach: Cloud cost optimization (-$9K/month), introduce tiered pricing with AI-powered self-service support. Path to profitability in 6 months.
 
-### Case Study 19: Market Entry — EV Charging in India
+### Case Study 19: Market Entry â€” EV Charging in India
 
 **Problem**: An energy company is considering entering the EV charging station market in India. Evaluate.
 
@@ -700,14 +700,14 @@ Bottlenecks: Police verification (30 days - 50% of total time)
 
 | Department | Investment Request | Expected ROI | Strategic Priority |
 |------------|-------------------|--------------|-------------------|
-| Product | $1.8M (15 engineers) | Feature completion → 80% faster development | Critical |
+| Product | $1.8M (15 engineers) | Feature completion â†’ 80% faster development | Critical |
 | Sales | $1.2M (10 people) | 3x revenue growth in 12 months | High |
 | Marketing | $2M (campaigns + tools) | 2x lead generation | Medium |
 
 **Recommendation:**
-1. Fund Product: $1.5M (12 engineers) — product is the core asset
-2. Fund Sales: $1.0M (8 people) — revenue generation is next priority
-3. Fund Marketing: $0.5M — targeted digital campaigns only
+1. Fund Product: $1.5M (12 engineers) â€” product is the core asset
+2. Fund Sales: $1.0M (8 people) â€” revenue generation is next priority
+3. Fund Marketing: $0.5M â€” targeted digital campaigns only
 4. Total allocated: $3.0M (within budget)
 
 ## TypeScript: Case Study Analysis Tool
@@ -785,7 +785,7 @@ class CaseStudySolver {
     ]);
 
     this.frameworks.set('profitability', [
-      'Break down revenue (price × volume)',
+      'Break down revenue (price Ã— volume)',
       'Break down costs (fixed + variable)',
       'Identify revenue drivers',
       'Identify cost drivers',
@@ -1072,11 +1072,11 @@ Group Discussions and Case Study interviews test your ability to think, communic
 
 1. Read one newspaper editorial daily and summarize it in 60 seconds to build content for GDs
 2. Learn 3 frameworks deeply (SWOT, Profitability Tree, 4Ps) rather than memorizing 10 superficially
-3. Practice the structured case study approach: Restate → Structure → Analyze → Recommend → Summarize
+3. Practice the structured case study approach: Restate â†’ Structure â†’ Analyze â†’ Recommend â†’ Summarize
 4. Record 5 mock GD sessions and analyze your speaking time, content quality, and body language
 5. Build a personal bank of 20 relevant statistics (GDP, internet users, EV penetration, etc.) to reference
 6. In case studies, always start with clarifying questions before jumping to recommendations
-7. Never interrupt in a GD — wait for a natural pause and then enter politely
+7. Never interrupt in a GD â€” wait for a natural pause and then enter politely
 8. Target speaking 3-5 times in a 20-minute GD, with each contribution adding distinct value
 9. Prepare 2-minute opening statements for 50 common GD topics in advance
 10. For case studies, always end with a clear recommendation and implementation plan

@@ -1,6 +1,6 @@
-# Chapter 8: The Transport Layer
+﻿# Chapter 8: The Transport Layer
 
-> **Prerequisites:** [Chapter 7: Routing](./07-routing.md) — Path selection between hosts | **Next:** [Chapter 9: TCP Congestion Control](./09-tcp-congestion.md) — From basic TCP to congestion management
+> **Prerequisites:** [Chapter 7: Routing](./07-routing.md) â€” Path selection between hosts | **Next:** [Chapter 9: TCP Congestion Control](./09-tcp-congestion.md) â€” From basic TCP to congestion management
 
 ## Learning Objectives
 
@@ -15,16 +15,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/computer-networks/08-transport-layer/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/computer-networks/08-transport-layer/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/computer-networks/08-transport-layer/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/computer-networks/08-transport-layer/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/computer-networks/08-transport-layer/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/computer-networks/08-transport-layer/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/computer-networks/08-transport-layer/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/computer-networks/08-transport-layer/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/computer-networks/08-transport-layer/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/computer-networks/08-transport-layer/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/computer-networks/08-transport-layer/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/computer-networks/08-transport-layer/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -38,11 +38,11 @@
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| UDP | 8-byte header, connectionless, no reliability | Use for DNS, VoIP, streaming — applications handle loss |
+| UDP | 8-byte header, connectionless, no reliability | Use for DNS, VoIP, streaming â€” applications handle loss |
 | TCP | 20-byte header, connection-oriented, reliable | Three-way handshake establishes; four-way handshake tears down |
 | Ports | 16-bit (0-65535): well-known, registered, dynamic | Sockets = (IP, Port) uniquely identify a connection |
 | Flow Control | Sliding window prevents receiver overflow | rwnd advertised in every segment |
-| State Machine | 11 states from CLOSED to TIME_WAIT | TIME_WAIT (2×MSL) prevents delayed segment confusion |
+| State Machine | 11 states from CLOSED to TIME_WAIT | TIME_WAIT (2Ã—MSL) prevents delayed segment confusion |
 | SCTP | Message-oriented, multi-homing, multi-streaming | Used in telecommunication signaling (SS7 over IP) |
 | QUIC | UDP-based, built-in encryption, 0-RTT handshake | HTTP/3 transport, reduces latency vs TCP+TLS |
 
@@ -186,7 +186,7 @@ Transport protocols offer two service models:
 | Aspect | UDP | TCP | SCTP | QUIC |
 |--------|-----|-----|------|------|
 | **Header overhead** | 8 bytes (low) | 20-60 bytes (moderate) | 12 bytes common (moderate) | Variable (typically ~30-50 bytes) |
-| **Reliability** | None — application must handle | Built-in ACK + retransmission | Built-in with selective ACK | Built-in with ACK + retransmission |
+| **Reliability** | None â€” application must handle | Built-in ACK + retransmission | Built-in with selective ACK | Built-in with ACK + retransmission |
 | **Ordering** | None | Strict byte ordering | Per-stream ordering | Per-stream ordering |
 | **Head-of-line blocking** | None | Yes (all streams blocked by one loss) | No (independent streams) | No (independent streams) |
 | **Encryption** | None | Optional (TLS) | Optional (TLS) | Mandatory (TLS 1.3) |
@@ -195,7 +195,7 @@ Transport protocols offer two service models:
 
 ---
 
-## 8.2 UDP — User Datagram Protocol
+## 8.2 UDP â€” User Datagram Protocol
 
 ### 8.2.1 UDP Segment Format
 
@@ -281,11 +281,11 @@ function udp_checksum(udp_segment, src_ip, dest_ip):
 | 3 | Data "Hi!\n" (4 bytes) | `4869 210A` |
 | 4 | Concatenate all | `C0A8 0101 C0A8 0102 0011 000C C081 0035 000C 0000 4869 210A` |
 | 5 | Sum (one's complement) | Compute: `C0A8+0101+C0A8+0102+0011+000C+C081+0035+000C+0000+4869+210A` |
-| 6 | Result | ~result & 0xFFFF → stored in checksum field |
+| 6 | Result | ~result & 0xFFFF â†’ stored in checksum field |
 
 **Complexity analysis:**
 - Time: O(N) where N = number of 16-bit words in the segment.
-- Space: O(1) — only the accumulator and carry are stored.
+- Space: O(1) â€” only the accumulator and carry are stored.
 - **WHY O(N)?** Every byte must be processed once to compute the checksum. Hardware offload (checksum offloading in NICs) makes this effectively free.
 
 ### 8.2.3 UDP Applications (Expanded)
@@ -312,7 +312,7 @@ import socket
 
 def udp_echo_server(host='0.0.0.0', port=8080):
     """
-    UDP echo server — echoes back any received datagram.
+    UDP echo server â€” echoes back any received datagram.
     
     Complexity: O(1) per datagram. No connection state maintained.
     WHY linear scaling: UDP is stateless; each datagram is independent.
@@ -336,7 +336,7 @@ import socket
 
 def udp_echo_client(message=b"Hello UDP", host='127.0.0.1', port=8080):
     """
-    UDP echo client — sends a message and waits for echo.
+    UDP echo client â€” sends a message and waits for echo.
     
     Edge case: recvfrom may block indefinitely if packet is lost.
     Solution: settimeout() for application-level timeout.
@@ -352,7 +352,7 @@ def udp_echo_client(message=b"Hello UDP", host='127.0.0.1', port=8080):
         print(f"Received echo: {data}")
         
     except socket.timeout:
-        print("Timeout — packet likely lost")
+        print("Timeout â€” packet likely lost")
     finally:
         sock.close()
 ```
@@ -369,7 +369,7 @@ def udp_echo_client(message=b"Hello UDP", host='127.0.0.1', port=8080):
 #include <unistd.h>
 
 /**
- * UDP echo server — C++ implementation.
+ * UDP echo server â€” C++ implementation.
  * 
  * Complexity: O(1) per datagram. No per-connection state.
  * WHY O(1): recvfrom/sendto are stateless I/O operations.
@@ -433,7 +433,7 @@ public:
 | **Checksum mismatch** | Corrupted data detected | Segment silently dropped |
 | **Port unreachable** | No application listens on destination port | ICMP Port Unreachable sent, datagram dropped |
 | **Broadcast/multicast** | UDP supports broadcast (255.255.255.255) | Application must handle multiple responses |
-| **Zero checksum** | IPv4 allows checksum = 0 (not computed) | Risky — no integrity verification |
+| **Zero checksum** | IPv4 allows checksum = 0 (not computed) | Risky â€” no integrity verification |
 | **Fragmentation** | UDP datagram > MTU causes IP fragmentation | Application should keep datagrams under MTU - IP header - UDP header |
 | **UDP flood DoS** | Attacker sends many UDP packets to random ports | Rate limiting, firewall rules, port filtering |
 | **Amplification attack** | UDP services with large response-to-request ratio | Disable open recursive resolvers, response rate limiting |
@@ -503,7 +503,7 @@ class UDPDatagramHandler {
 
 ---
 
-## 8.3 TCP — Transmission Control Protocol
+## 8.3 TCP â€” Transmission Control Protocol
 
 ### 8.3.1 TCP Segment Format (Bit-Level Layout)
 
@@ -543,7 +543,7 @@ The TCP header is **20 bytes minimum**, up to **60 bytes** with options. Here is
 | Data Offset | 4 bits | Header length in 32-bit words. Minimum 5 (20 bytes), maximum 15 (60 bytes). |
 | Reserved | 3 bits | Reserved for future use. Must be zero. |
 | Flags | 9 bits | Control flags: CWR, ECE, URG, ACK, PSH, RST, SYN, FIN, NS. |
-| Window Size | 16 bits | Advertised receive window — number of bytes the receiver is willing to accept. |
+| Window Size | 16 bits | Advertised receive window â€” number of bytes the receiver is willing to accept. |
 | Checksum | 16 bits | Error detection over pseudo-header + TCP header + data (mandatory). |
 | Urgent Pointer | 16 bits | Offset to urgent data. Valid only when URG flag = 1. |
 | Options | variable | Up to 40 bytes. Common: MSS, Window Scale, SACK, Timestamps, NOP. |
@@ -570,16 +570,16 @@ The TCP header is **20 bytes minimum**, up to **60 bytes** with options. Here is
 
 **Real-world analogy:** TCP is like a registered mail service with return receipt. Every package is numbered (sequence number), delivery is confirmed (ACK), lost packages are resent (retransmission), and packages arrive in order (reordering buffer).
 
-### 8.3.2 TCP Connection Establishment — Three-Way Handshake
+### 8.3.2 TCP Connection Establishment â€” Three-Way Handshake
 
 
 The three-way handshake establishes a TCP connection by synchronizing sequence numbers between client and server.
 
 **Numbered steps:**
 
-1. **Client → Server: SYN** — Client sends a TCP segment with SYN flag = 1, choosing a random initial sequence number `x`. Client enters SYN_SENT state.
-2. **Server → Client: SYN+ACK** — Server receives the SYN, allocates resources, chooses its own random initial sequence number `y`, and sends SYN+ACK with `ack = x+1`. Server enters SYN_RCVD state.
-3. **Client → Server: ACK** — Client receives SYN+ACK, sends ACK with `seq = x+1` and `ack = y+1`. Client enters ESTABLISHED state. Server receives ACK and enters ESTABLISHED state.
+1. **Client â†’ Server: SYN** â€” Client sends a TCP segment with SYN flag = 1, choosing a random initial sequence number `x`. Client enters SYN_SENT state.
+2. **Server â†’ Client: SYN+ACK** â€” Server receives the SYN, allocates resources, chooses its own random initial sequence number `y`, and sends SYN+ACK with `ack = x+1`. Server enters SYN_RCVD state.
+3. **Client â†’ Server: ACK** â€” Client receives SYN+ACK, sends ACK with `seq = x+1` and `ack = y+1`. Client enters ESTABLISHED state. Server receives ACK and enters ESTABLISHED state.
 
 **Full packet trace:**
 
@@ -602,13 +602,13 @@ CLIENT (Port A)                    SERVER (Port B)
 
 | Step | Actor | Action | Seq # | Ack # | Flags | State (Client) | State (Server) |
 |------|-------|--------|-------|-------|-------|----------------|----------------|
-| 0 | — | Initial | — | — | — | CLOSED | LISTEN |
+| 0 | â€” | Initial | â€” | â€” | â€” | CLOSED | LISTEN |
 | 1 | Client | Send SYN | 1000 | 0 | SYN | SYN_SENT | LISTEN |
-| 2 | Server | Receive SYN | (1000) | (1001) | — | SYN_SENT | SYN_RCVD |
+| 2 | Server | Receive SYN | (1000) | (1001) | â€” | SYN_SENT | SYN_RCVD |
 | 3 | Server | Send SYN+ACK | 5000 | 1001 | SYN+ACK | SYN_SENT | SYN_RCVD |
-| 4 | Client | Receive SYN+ACK | — | — | — | ESTABLISHED | SYN_RCVD |
+| 4 | Client | Receive SYN+ACK | â€” | â€” | â€” | ESTABLISHED | SYN_RCVD |
 | 5 | Client | Send ACK | 1001 | 5001 | ACK | ESTABLISHED | SYN_RCVD |
-| 6 | Server | Receive ACK | — | — | — | ESTABLISHED | ESTABLISHED |
+| 6 | Server | Receive ACK | â€” | â€” | â€” | ESTABLISHED | ESTABLISHED |
 
 **Pseudocode for three-way handshake:**
 
@@ -654,17 +654,17 @@ function tcp_listen(port):
 - **Latency:** Minimum 1 RTT before data can be sent.
 - **WHY 3 segments?** Two segments would leave the server unable to verify the client received its SYN. One segment is clearly insufficient (no bidirectional agreement). Three is the mathematical minimum for reliable bidirectional sequence number synchronization in an unreliable network (due to the "general's problem").
 
-### 8.3.3 TCP Connection Teardown — Four-Way Handshake
+### 8.3.3 TCP Connection Teardown â€” Four-Way Handshake
 
 
 Each direction of a TCP connection is closed independently. Either endpoint can initiate close.
 
 **Numbered steps:**
 
-1. **Client → Server: FIN** — Client's application calls close(). Client sends FIN with `seq = u`. Client enters FIN_WAIT_1.
-2. **Server → Client: ACK** — Server receives FIN, sends ACK `ack = u+1`. Server enters CLOSE_WAIT. Client receives ACK and enters FIN_WAIT_2.
-3. **Server → Client: FIN** — Server's application calls close(). Server sends FIN with `seq = v`. Server enters LAST_ACK.
-4. **Client → Server: ACK** — Client receives FIN, sends ACK `ack = v+1`. Client enters TIME_WAIT. Server receives ACK and enters CLOSED.
+1. **Client â†’ Server: FIN** â€” Client's application calls close(). Client sends FIN with `seq = u`. Client enters FIN_WAIT_1.
+2. **Server â†’ Client: ACK** â€” Server receives FIN, sends ACK `ack = u+1`. Server enters CLOSE_WAIT. Client receives ACK and enters FIN_WAIT_2.
+3. **Server â†’ Client: FIN** â€” Server's application calls close(). Server sends FIN with `seq = v`. Server enters LAST_ACK.
+4. **Client â†’ Server: ACK** â€” Client receives FIN, sends ACK `ack = v+1`. Client enters TIME_WAIT. Server receives ACK and enters CLOSED.
 
 ```
 CLIENT                          SERVER
@@ -676,7 +676,7 @@ CLIENT                          SERVER
    |  <-- FIN (SEQ=v, CTL=FIN) --- |  Step 3: Server closes its side
    |                               |  Server: LAST_ACK
    |  --- ACK (SEQ=u+1, ACK=v+1)-> |  Step 4: Client final ACK
-   |                               |  Client: TIME_WAIT (2×MSL)
+   |                               |  Client: TIME_WAIT (2Ã—MSL)
    |                               |  Server: CLOSED
 ```
 
@@ -684,18 +684,18 @@ CLIENT                          SERVER
 
 | Step | Actor | Action | Seq # | Ack # | Flags | State (Client) | State (Server) |
 |------|-------|--------|-------|-------|-------|----------------|----------------|
-| 0 | — | Established | p | q | — | ESTABLISHED | ESTABLISHED |
-| 1 | Client | close() | — | — | — | FIN_WAIT_1 | ESTABLISHED |
-| 2 | Client | Send FIN | u=p | — | FIN | FIN_WAIT_1 | ESTABLISHED |
-| 3 | Server | Receive FIN | — | — | — | FIN_WAIT_1 | CLOSE_WAIT |
+| 0 | â€” | Established | p | q | â€” | ESTABLISHED | ESTABLISHED |
+| 1 | Client | close() | â€” | â€” | â€” | FIN_WAIT_1 | ESTABLISHED |
+| 2 | Client | Send FIN | u=p | â€” | FIN | FIN_WAIT_1 | ESTABLISHED |
+| 3 | Server | Receive FIN | â€” | â€” | â€” | FIN_WAIT_1 | CLOSE_WAIT |
 | 4 | Server | Send ACK | v=q | u+1 | ACK | FIN_WAIT_1 | CLOSE_WAIT |
-| 5 | Client | Receive ACK | — | — | — | FIN_WAIT_2 | CLOSE_WAIT |
-| 6 | Server | close() | — | — | — | FIN_WAIT_2 | LAST_ACK |
+| 5 | Client | Receive ACK | â€” | â€” | â€” | FIN_WAIT_2 | CLOSE_WAIT |
+| 6 | Server | close() | â€” | â€” | â€” | FIN_WAIT_2 | LAST_ACK |
 | 7 | Server | Send FIN | v | u+1 | FIN | FIN_WAIT_2 | LAST_ACK |
-| 8 | Client | Receive FIN | — | — | — | TIME_WAIT | LAST_ACK |
+| 8 | Client | Receive FIN | â€” | â€” | â€” | TIME_WAIT | LAST_ACK |
 | 9 | Client | Send ACK | u+1 | v+1 | ACK | TIME_WAIT | LAST_ACK |
-| 10 | Server | Receive ACK | — | — | — | TIME_WAIT | CLOSED |
-| 11 | — | 2×MSL expires | — | — | — | CLOSED | CLOSED |
+| 10 | Server | Receive ACK | â€” | â€” | â€” | TIME_WAIT | CLOSED |
+| 11 | â€” | 2Ã—MSL expires | â€” | â€” | â€” | CLOSED | CLOSED |
 
 **Pseudocode for connection teardown (client-initiated):**
 
@@ -727,14 +727,14 @@ function tcp_close():
         else if state == TIME_WAIT:
             if timer_expired:
                 state = CLOSED
-            // Delayed FIN retransmission — re-send ACK
+            // Delayed FIN retransmission â€” re-send ACK
             if segment.flags == FIN:
                 send_segment(ACK, seq=segment.ack - 1, ack=segment.seq + 1)
 ```
 
 **Complexity analysis:**
 - **Time:** O(1) RTT for each direction, total ~1 RTT typically.
-- **Space:** O(1) — connection state maintained in TIME_WAIT (2×MSL).
+- **Space:** O(1) â€” connection state maintained in TIME_WAIT (2Ã—MSL).
 - **WHY 4 segments?** TCP closes each direction independently. The server's ACK and FIN cannot be combined because the server may need to send more data after receiving the client's FIN (half-close). Only when the server also finishes does it send its FIN.
 
 ### 8.3.4 TCP State Diagram (11 States)
@@ -796,7 +796,7 @@ TCP has 11 states in its state machine:
          | TIME_WAIT|
          +----------+
                |
-          (2×MSL timeout)
+          (2Ã—MSL timeout)
                |
                v
           +----------+
@@ -818,7 +818,7 @@ TCP has 11 states in its state machine:
 | CLOSE_WAIT | Received FIN from remote; waiting for local application close. | Application-dependent |
 | CLOSING | Both sides sent FIN simultaneously; waiting for ACK. | RTT (milliseconds) |
 | LAST_ACK | Sent FIN after CLOSE_WAIT; waiting for final ACK. | RTT (milliseconds) |
-| TIME_WAIT | Connection closed; waiting 2×MSL for delayed packets. | 60-120 seconds |
+| TIME_WAIT | Connection closed; waiting 2Ã—MSL for delayed packets. | 60-120 seconds |
 
 **TCP state machine (C++ implementation):**
 
@@ -839,7 +839,7 @@ enum class TCPEvent : uint8_t {
 };
 
 /**
- * TCP State Machine — implements RFC 793 state transitions.
+ * TCP State Machine â€” implements RFC 793 state transitions.
  * Complexity: O(1) per transition (hash map lookup).
  * WHY O(1): Each (state, event) pair maps to exactly one next state.
  * No iteration or search needed.
@@ -1008,7 +1008,7 @@ class TCPStateMachine:
         self.state = TCPState.CLOSED
 ```
 
-**State diagram dry run — client connects and disconnects:**
+**State diagram dry run â€” client connects and disconnects:**
 
 | Step | Event | Before | After |
 |------|-------|--------|-------|
@@ -1017,7 +1017,7 @@ class TCPStateMachine:
 | 3 | CLOSE | ESTABLISHED | FIN_WAIT_1 |
 | 4 | RECV_ACK | FIN_WAIT_1 | FIN_WAIT_2 |
 | 5 | RECV_FIN | FIN_WAIT_2 | TIME_WAIT |
-| 6 | TIMEOUT (2×MSL) | TIME_WAIT | CLOSED |
+| 6 | TIMEOUT (2Ã—MSL) | TIME_WAIT | CLOSED |
 
 **Edge cases in TCP state machine:**
 
@@ -1090,10 +1090,10 @@ class TCPConnectionStateMachine {
 // tcpFSM.processEvent(TCPEvent.TIMEOUT);         // TIME_WAIT -> CLOSED
 ```
 
-### 8.3.5 TCP Flow Control — Sliding Window
+### 8.3.5 TCP Flow Control â€” Sliding Window
 
 
-**Real-world analogy:** A factory (sender) ships products to a warehouse (receiver). The warehouse sends back a card saying "I have room for 100 more boxes" (window advertisement). The factory keeps shipping until the warehouse says "I'm full — stop" (zero window). When the warehouse clears space, it sends "I now have room for 50 boxes" (window update).
+**Real-world analogy:** A factory (sender) ships products to a warehouse (receiver). The warehouse sends back a card saying "I have room for 100 more boxes" (window advertisement). The factory keeps shipping until the warehouse says "I'm full â€” stop" (zero window). When the warehouse clears space, it sends "I now have room for 50 boxes" (window update).
 
 **Sliding window concept:**
 
@@ -1119,11 +1119,11 @@ Sender side:
 4. Receiver reads data from buffer, freeing space, and sends new ACK with updated `rwnd`.
 5. If `rwnd = 0`, the sender stops transmitting and enters persist mode (periodically probes with 1-byte segments).
 
-**Dry run trace — sliding window with rwnd = 4000 bytes, MSS = 1000 bytes:**
+**Dry run trace â€” sliding window with rwnd = 4000 bytes, MSS = 1000 bytes:**
 
 | Seq # | Event | LastByteAcked | LastByteSent | rwnd (from ACK) | Effective Window | Action |
 |-------|-------|---------------|--------------|-----------------|-----------------|--------|
-| — | Initial | 0 | 0 | 4000 | 4000 | Can send 4 segments |
+| â€” | Initial | 0 | 0 | 4000 | 4000 | Can send 4 segments |
 | 1 | Send seg1 (bytes 1-1000) | 0 | 1000 | 4000 | 3000 | Can send 3 more |
 | 2 | Send seg2 (bytes 1001-2000) | 0 | 2000 | 4000 | 2000 | Can send 2 more |
 | 3 | Send seg3 (bytes 2001-3000) | 0 | 3000 | 4000 | 1000 | Can send 1 more |
@@ -1141,7 +1141,7 @@ class SlidingWindow:
     Simulates TCP sliding window flow control.
     
     Complexity:
-    - Send: O(1) — just checks window bounds.
+    - Send: O(1) â€” just checks window bounds.
     - Receive ACK: O(W) worst-case where W = segments ACKed cumulatively.
     - WHY O(W)? Cumulative ACK may advance window by many segments at once.
     - Space: O(W) for outstanding segment buffer.
@@ -1177,7 +1177,7 @@ class SlidingWindow:
     def receive_ack(self, ack_num, new_window):
         """
         Process cumulative ACK.
-        Edge case: ACK for data not yet sent (duplicate/forged) — ignored.
+        Edge case: ACK for data not yet sent (duplicate/forged) â€” ignored.
         """
         if ack_num > self.last_byte_sent:
             print(f"Invalid ACK: {ack_num} > LastByteSent {self.last_byte_sent}")
@@ -1220,7 +1220,7 @@ class SlidingWindow:
  * TCP Sliding Window Simulator.
  * 
  * Complexity:
- * - send_data(): O(1) — bounds check only.
+ * - send_data(): O(1) â€” bounds check only.
  * - receive_ack(): O(k) where k = acknowledged segments cleaned.
  * - WHY not O(W)? std::unordered_map erase by iterator is O(1) average.
  */
@@ -1277,17 +1277,17 @@ public:
 
 | Property | Flow Control | Congestion Control |
 |----------|-------------|-------------------|
-| **Scope** | End-to-end (receiver → sender) | Network-wide (router → sender) |
+| **Scope** | End-to-end (receiver â†’ sender) | Network-wide (router â†’ sender) |
 | **Problem** | Receiver overwhelmed by sender's rate | Routers overwhelmed by aggregate traffic |
 | **Mechanism** | Advertised window (rwnd) | Congestion window (cwnd), AIMD, slow start |
 | **Signaled by** | Receiver sets `rwnd` in every segment | Packet loss (dupACKs, timeout) or ECN |
-| **Window used** | `min(cwnd, rwnd)` — effective send window | cwnd is the congestion component |
+| **Window used** | `min(cwnd, rwnd)` â€” effective send window | cwnd is the congestion component |
 | **Responsiveness** | Reacts immediately per ACK | Reacts slowly (AIMD: additive increase, multiplicative decrease) |
 | **Real-world analogy** | "Factory stops shipping when warehouse full" | "Factory slows shipping during traffic jam on highways" |
 
 **Complexity analysis:**
-- Flow control: O(1) per ACK — simple min() comparison.
-- Congestion control: O(1) per ACK/loss event — window adjustment is arithmetic.
+- Flow control: O(1) per ACK â€” simple min() comparison.
+- Congestion control: O(1) per ACK/loss event â€” window adjustment is arithmetic.
 - **WHY O(1)?** Both mechanisms only update a window variable per event; no per-packet processing beyond the update rule.
 
 ### 8.3.7 TCP Timers
@@ -1300,15 +1300,15 @@ TCP uses multiple timers for reliable operation:
 | **Retransmission Timer (RTO)** | Detect lost segments | Based on measured RTT (typically 200ms-120s) | Retransmit earliest unACKed segment; exponential backoff |
 | **Persist Timer** | Prevent deadlock when rwnd=0 | Start 5s, double up to 60s | Send 1-byte window probe |
 | **Keepalive Timer** | Detect dead peer | Typically 2 hours | Send keepalive probe; if no response, close connection |
-| **TIME_WAIT Timer** | Wait after connection close | 2×MSL (typically 60s) | Transition from TIME_WAIT to CLOSED |
+| **TIME_WAIT Timer** | Wait after connection close | 2Ã—MSL (typically 60s) | Transition from TIME_WAIT to CLOSED |
 | **Delayed ACK Timer** | Wait to piggyback ACK on data | Typically 200ms | Send standalone ACK |
 
 **RTO calculation (Jacobson's algorithm):**
 
 ```
-Srtt = (1 - α) × Srtt + α × RTT_sample    // α = 1/8
-Rttvar = (1 - β) × Rttvar + β × |Srtt - RTT_sample|  // β = 1/4
-RTO = Srtt + 4 × Rttvar
+Srtt = (1 - Î±) Ã— Srtt + Î± Ã— RTT_sample    // Î± = 1/8
+Rttvar = (1 - Î²) Ã— Rttvar + Î² Ã— |Srtt - RTT_sample|  // Î² = 1/4
+RTO = Srtt + 4 Ã— Rttvar
 ```
 
 **Pseudocode for retransmission:**
@@ -1339,7 +1339,7 @@ function retransmission_timeout():
 | Maximum Segment Size (MSS) | 2 | 4 | Largest data chunk sender can receive (e.g., 1460 for Ethernet) |
 | Window Scale | 3 | 3 | Shift factor (0-14) for window field; enables 1GB window |
 | Selective ACK Permitted | 4 | 2 | SACK capability negotiation |
-| SACK | 5 | 10 × N | Reports non-contiguous blocks received |
+| SACK | 5 | 10 Ã— N | Reports non-contiguous blocks received |
 | Timestamp | 8 | 10 | RTT measurement + PAWS (Protection Against Wrapped Sequences) |
 | User Timeout | 28 | 4 | Abort connection if data unACKed for specified time |
 
@@ -1348,7 +1348,7 @@ function retransmission_timeout():
 - IP header (20 bytes) + TCP header (20 bytes) = 40 bytes overhead
 - MSS = 1500 - 40 = **1460 bytes** for typical Ethernet TCP connections
 
-### 8.3.9 TCP Reliability Mechanisms — Detailed
+### 8.3.9 TCP Reliability Mechanisms â€” Detailed
 
 
 TCP achieves reliability through five cooperating mechanisms:
@@ -1377,9 +1377,9 @@ Receiver:|ACK2000|ACK2000|ACK2000|ACK2000|  <-- 3 duplicate ACKs
 ```
 
 **Complexity analysis of TCP reliability:**
-- **Normal case (no loss):** O(1) per segment — generate ACK, update SND.NXT.
+- **Normal case (no loss):** O(1) per segment â€” generate ACK, update SND.NXT.
 - **Packet loss recovery:** O(W) where W = outstanding window size (due to iterating retransmission queue).
-- **Space:** O(W × MSS) for retransmission buffer.
+- **Space:** O(W Ã— MSS) for retransmission buffer.
 
 ### 8.3.10 TCP Performance Overhead Analysis
 
@@ -1441,7 +1441,7 @@ Added to TCP Options, making base header 20+10=30 bytes minimum
 
 ---
 
-## 8.4 SCTP — Stream Control Transmission Protocol
+## 8.4 SCTP â€” Stream Control Transmission Protocol
 
 **Real-world analogy:** A shipping company has multiple independent conveyor belts (streams) between two warehouses. If one belt jams, the others keep running. Each package (message) is tracked individually.
 
@@ -1507,7 +1507,7 @@ SCTP endpoints can be associated with multiple IP addresses. If the primary path
 
 ---
 
-## 8.5 QUIC — Quick UDP Internet Connections
+## 8.5 QUIC â€” Quick UDP Internet Connections
 
 **Real-world analogy:** QUIC is like starting a secure conversation by already knowing the other person's public key. You can send a secret message immediately (0-RTT) rather than going through introductions and security checks first.
 
@@ -1532,7 +1532,7 @@ QUIC (RFC 9000) is a transport protocol developed by Google, now standardized by
 |----------|-----|-----------|------|
 | **Crypto handshake** | Separate TLS handshake | 1-2 RTT extra | Built-in, 1 RTT (0 RTT repeat) |
 | **Total setup time (new)** | 3 RTT (SYN, SYN-ACK, ACK + TLS) | 2-3 RTT | 1 RTT |
-| **Total setup time (repeat)** | — | 2 RTT | 0 RTT (session resumption) |
+| **Total setup time (repeat)** | â€” | 2 RTT | 0 RTT (session resumption) |
 | **Head-of-line blocking** | Yes (single stream) | Yes | No (independent streams) |
 | **Connection migration** | Breaks on IP change | Breaks on IP change | Seamless (connection ID based) |
 | **Encryption** | None (optional TLS) | Mandatory | Mandatory (always on) |
@@ -1550,7 +1550,7 @@ QUIC Client (0-RTT):
    |  <-- Handshake + 1-RTT data (early) ----- |
    |  --- 1-RTT data ----------------------->  |
 
-QUIC Client (1-RTT — first connection):
+QUIC Client (1-RTT â€” first connection):
    |  --- Initial + Crypto (ClientHello) --->  |  1 RTT
    |  <-- Initial + Crypto (ServerHello, ...)   |
    |  ============= DATA CAN FLOW ===========> |
@@ -1573,7 +1573,7 @@ TCP:  src=(192.168.1.5:45000), dst=(10.0.0.1:443)
 
 QUIC: Connection ID = 0xABCD1234, any IP any port
       // WiFi disconnects, switches to cellular
-      Same Connection ID, different IP — connection continues
+      Same Connection ID, different IP â€” connection continues
 ```
 
 ### 8.5.5 QUIC Packet Format
@@ -1627,7 +1627,7 @@ QUIC packets have a variable-length header. The **Long Header** is used during h
 
 ---
 
-## 8.6 TCP vs UDP — Comprehensive Comparison
+## 8.6 TCP vs UDP â€” Comprehensive Comparison
 
 | Criterion | TCP | UDP |
 |-----------|-----|-----|
@@ -1804,11 +1804,11 @@ class PortManager {
 
 | Technique | How it works | Effectiveness |
 |-----------|-------------|---------------|
-| **SYN cookies** (RFC 4987) | Server encodes ISN as `hash(src_ip, src_port, server_secret)`; no state stored until ACK received | High — built into Linux kernel |
-| **SYN backlog tuning** | Increase `tcp_max_syn_backlog` and `tcp_synack_retries` | Moderate — delays exhaustion |
-| **Rate limiting** | Limit SYNs per second per source IP (iptables, nginx `limit_req`) | Moderate — blocks large floods |
-| **SYN proxy** | Reverse proxy completes handshake with client before proxying to backend | High — used by Cloudflare, AWS |
-| **Reduce SYN_RCVD timeout** | Lower `tcp_synack_retries` to 1-2 | Low — reduces window of vulnerability |
+| **SYN cookies** (RFC 4987) | Server encodes ISN as `hash(src_ip, src_port, server_secret)`; no state stored until ACK received | High â€” built into Linux kernel |
+| **SYN backlog tuning** | Increase `tcp_max_syn_backlog` and `tcp_synack_retries` | Moderate â€” delays exhaustion |
+| **Rate limiting** | Limit SYNs per second per source IP (iptables, nginx `limit_req`) | Moderate â€” blocks large floods |
+| **SYN proxy** | Reverse proxy completes handshake with client before proxying to backend | High â€” used by Cloudflare, AWS |
+| **Reduce SYN_RCVD timeout** | Lower `tcp_synack_retries` to 1-2 | Low â€” reduces window of vulnerability |
 
 **SYN cookie logic (simplified):**
 
@@ -1839,10 +1839,10 @@ Port numbers enable process-to-process communication (demultiplexing). The netwo
 
 TIME_WAIT serves two critical purposes:
 
-1. **Delayed segment elimination:** Ensures any segments still in flight from the closed connection expire (in 2×MSL) before a new connection using the same 4-tuple can be created. Prevents old data from being misinterpreted as new data.
+1. **Delayed segment elimination:** Ensures any segments still in flight from the closed connection expire (in 2Ã—MSL) before a new connection using the same 4-tuple can be created. Prevents old data from being misinterpreted as new data.
 2. **Final ACK retransmission:** If the server's FIN ACK is lost, the server will retransmit its FIN. TIME_WAIT allows the client to retransmit the final ACK.
 
-**Why 2×MSL?** One MSL for the FIN to reach the server from our side, one MSL for the ACK to reach the server. This bounds the maximum time any segment can survive in the network.
+**Why 2Ã—MSL?** One MSL for the FIN to reach the server from our side, one MSL for the ACK to reach the server. This bounds the maximum time any segment can survive in the network.
 
 **Problem with TIME_WAIT:** On busy servers, many connections in TIME_WAIT exhaust ephemeral ports. Solutions: SO_REUSEADDR socket option, increasing ephemeral port range, or using TCP timestamps (PAWS) to safely reuse tuples sooner.
 
@@ -1875,7 +1875,7 @@ else:
 
 **Zero-window:** Receiver's buffer is full, so it advertises `rwnd = 0`. The sender must stop transmitting.
 
-**Problem:** The receiver's window update (ACK with nonzero rwnd) could be lost, causing both sides to wait indefinitely — a **deadlock**.
+**Problem:** The receiver's window update (ACK with nonzero rwnd) could be lost, causing both sides to wait indefinitely â€” a **deadlock**.
 
 **Solution (Persist Timer):**
 
@@ -1883,7 +1883,7 @@ else:
 2. When timer expires, sender sends a **window probe** (1-byte segment with `seq = LastByteSent`).
 3. Receiver responds with current rwnd (even if still 0).
 4. If nonzero, sender resumes transmission.
-5. Timer doubles each time (5s → 10s → 20s → max 60s).
+5. Timer doubles each time (5s â†’ 10s â†’ 20s â†’ max 60s).
 
 ### Q6: Can TCP and UDP use the same port number?
 
@@ -1907,7 +1907,7 @@ Silly Window Syndrome occurs when the receiver advertises a very small window (e
 **SWS avoidance algorithm (receiver-side):**
 
 ```
-// Clark's solution — receiver-side SWS avoidance
+// Clark's solution â€” receiver-side SWS avoidance
 function update_window(application_bytes_read, current_buffer):
     free_space = buffer_total - current_buffer + application_bytes_read
     
@@ -1929,7 +1929,7 @@ Actual arrival order:      [SEQ=1] [SEQ=2001] [SEQ=1001]
 Receiver buffer:           [1-1000]           [2001-3000]
                                           
 When SEQ=1001 arrives:     [1-1000] [1001-2000] [2001-3000]
-                          contiguous block formed → deliver to application
+                          contiguous block formed â†’ deliver to application
 ```
 
 **Reordering buffer behavior:**
@@ -1956,7 +1956,7 @@ function receive_segment(segment):
         buffer.store(segment)
         send_dup_ack(expected_seq)  // Duplicate ACK
     else:
-        // Duplicate — discard
+        // Duplicate â€” discard
         discard(segment)
 ```
 
@@ -1991,7 +1991,7 @@ The **TCP melting point** occurs when TCP tunnels through another TCP connection
 
 **Why it happens:**
 - Outer TCP loses a segment due to network congestion.
-- Outer TCP retransmits — but the inner TCP already ACKed that data.
+- Outer TCP retransmits â€” but the inner TCP already ACKed that data.
 - Outer TCP's retransmission duplicates data, confusing RTT estimation.
 - Both TCP layers independently back off, causing throughput to approach zero.
 
@@ -2032,7 +2032,7 @@ Complete transition table from RFC 793:
 | CLOSE_WAIT | CLOSE | LAST_ACK | Send FIN |
 | CLOSING | RECV_ACK | TIME_WAIT | Continuation |
 | LAST_ACK | RECV_ACK | CLOSED | Delete TCB |
-| TIME_WAIT | TIMEOUT (2×MSL) | CLOSED | Delete TCB |
+| TIME_WAIT | TIMEOUT (2Ã—MSL) | CLOSED | Delete TCB |
 
 ### TCP Segment Retransmission Trace
 
@@ -2041,18 +2041,18 @@ Scenario: 4 segments sent, segment 2 is lost.
 
 | Time | Action | SEQ | ACK | Window | Notes |
 |------|--------|-----|-----|--------|-------|
-| T+0 | Send seg1 | 1000 | — | 4000 | seg1 (1000 bytes) |
-| T+0 | Send seg2 | 2000 | — | 4000 | seg2 (1000 bytes) — LOST |
-| T+0 | Send seg3 | 3000 | — | 4000 | seg3 (1000 bytes) |
-| T+0 | Send seg4 | 4000 | — | 4000 | seg4 (1000 bytes) |
-| T+10ms | Recv ACK for seg1 | — | 2000 | 4000 | ACK for seg1 only |
-| T+10ms | Send dupACK seg3, seg4 trigger | — | 2000 | 4000 | seg3 arrives out of order |
-| T+20ms | Recv ACK for seg1 (dup) | — | 2000 | 4000 | 1st duplicate ACK |
-| T+30ms | Recv ACK for seg1 (dup) | — | 2000 | 4000 | 2nd duplicate ACK |
-| T+40ms | Recv ACK for seg1 (dup) | — | 2000 | 4000 | 3rd duplicate ACK → fast retransmit |
-| T+40ms | **Retransmit** seg2 | 2000 | — | 4000 | Fast retransmit triggered |
-| T+50ms | Recv ACK for all data | — | 5000 | 4000 | Cumulative ACK covers everything |
-| T+50ms | Send seg5, seg6 | 5000 | — | 4000 | New data after recovery |
+| T+0 | Send seg1 | 1000 | â€” | 4000 | seg1 (1000 bytes) |
+| T+0 | Send seg2 | 2000 | â€” | 4000 | seg2 (1000 bytes) â€” LOST |
+| T+0 | Send seg3 | 3000 | â€” | 4000 | seg3 (1000 bytes) |
+| T+0 | Send seg4 | 4000 | â€” | 4000 | seg4 (1000 bytes) |
+| T+10ms | Recv ACK for seg1 | â€” | 2000 | 4000 | ACK for seg1 only |
+| T+10ms | Send dupACK seg3, seg4 trigger | â€” | 2000 | 4000 | seg3 arrives out of order |
+| T+20ms | Recv ACK for seg1 (dup) | â€” | 2000 | 4000 | 1st duplicate ACK |
+| T+30ms | Recv ACK for seg1 (dup) | â€” | 2000 | 4000 | 2nd duplicate ACK |
+| T+40ms | Recv ACK for seg1 (dup) | â€” | 2000 | 4000 | 3rd duplicate ACK â†’ fast retransmit |
+| T+40ms | **Retransmit** seg2 | 2000 | â€” | 4000 | Fast retransmit triggered |
+| T+50ms | Recv ACK for all data | â€” | 5000 | 4000 | Cumulative ACK covers everything |
+| T+50ms | Send seg5, seg6 | 5000 | â€” | 4000 | New data after recovery |
 
 ### TCP Half-Close Trace
 
@@ -2140,7 +2140,7 @@ netsh interface tcp set global autotuninglevel=normal
 
 | Platform | Status |
 |----------|--------|
-| **Google** | YouTube, Search, Gmail — QUIC since 2013 |
+| **Google** | YouTube, Search, Gmail â€” QUIC since 2013 |
 | **Cloudflare** | All plans support HTTP/3 by default |
 | **Facebook** | Instagram, Facebook app use QUIC |
 | **Netflix** | Streaming uses QUIC for video delivery |
@@ -2158,7 +2158,7 @@ netsh interface tcp set global autotuninglevel=normal
 
 **Challenges of QUIC:**
 - UDP 443 must be open in firewalls (often rate-limited).
-- User-space implementation (quiche, msquic, lsquic) — less mature than kernel TCP.
+- User-space implementation (quiche, msquic, lsquic) â€” less mature than kernel TCP.
 - Increased CPU usage per packet vs kernel TCP.
 - Debugging is harder (encrypted payloads, no tcpdump-friendly format).
 
@@ -2175,7 +2175,7 @@ netsh interface tcp set global autotuninglevel=normal
 | **C10K problem** | Use epoll (Linux), kqueue (BSD), IOCP (Windows) | Event-driven I/O scales to 10K+ concurrent connections |
 | **HTTP keepalive** | Reuse TCP connections for multiple HTTP requests | Reduce handshake overhead, improve page load |
 
-### 8.9.5 TCP in Wireshark — Packet Analysis
+### 8.9.5 TCP in Wireshark â€” Packet Analysis
 
 
 Key Wireshark filters for transport layer analysis:
@@ -2197,7 +2197,7 @@ udp.length > 1000  // Large UDP datagrams (fragmentation risk)
 ```
 
 **Reading a TCP stream in Wireshark:**
-1. Right-click a packet → Follow → TCP Stream.
+1. Right-click a packet â†’ Follow â†’ TCP Stream.
 2. The conversation is displayed as text (client in red, server in blue).
 3. Wireshark shows SEQ/ACK numbers relative to ISN (not absolute) by default.
 
@@ -2205,9 +2205,9 @@ udp.length > 1000  // Large UDP datagrams (fragmentation risk)
 
 ```
 No.  Time        Source          Destination     Protocol Info
-1    0.000000    10.0.0.1        10.0.0.2        TCP      80 → 8080 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=64 SACK_PERM=1
-2    0.001234    10.0.0.2        10.0.0.1        TCP      8080 → 80 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460 WS=64 SACK_PERM=1
-3    0.001567    10.0.0.1        10.0.0.2        TCP      80 → 8080 [ACK] Seq=1 Ack=1 Win=131072 Len=0
+1    0.000000    10.0.0.1        10.0.0.2        TCP      80 â†’ 8080 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=64 SACK_PERM=1
+2    0.001234    10.0.0.2        10.0.0.1        TCP      8080 â†’ 80 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460 WS=64 SACK_PERM=1
+3    0.001567    10.0.0.1        10.0.0.2        TCP      80 â†’ 8080 [ACK] Seq=1 Ack=1 Win=131072 Len=0
 4    0.002000    10.0.0.1        10.0.0.2        TCP      [TCP segment of reassembled PDU] Seq=1 Ack=1 Win=131072 Len=100
 
 // Note: Wireshark shows Seq=0 and Ack=0 as relative sequence numbers by default.
@@ -2231,8 +2231,8 @@ TLS operates above TCP but below application protocols:
 +-----------+
 
 TLS handshake over TCP:
-1. TCP three-way handshake (SYN, SYN+ACK, ACK) — 1 RTT
-2. TLS 1.3 handshake (ClientHello, ServerHello+Finished, ClientFinished) — 1 RTT
+1. TCP three-way handshake (SYN, SYN+ACK, ACK) â€” 1 RTT
+2. TLS 1.3 handshake (ClientHello, ServerHello+Finished, ClientFinished) â€” 1 RTT
    Total: ~2 RTT before application data
 ```
 
@@ -2251,7 +2251,7 @@ QUIC eliminates this layering by integrating TLS into the transport handshake, a
 #include <thread>
 
 /**
- * TCP Echo Server — multi-threaded.
+ * TCP Echo Server â€” multi-threaded.
  * 
  * Complexity: O(N) threads for N clients (or O(1) with event loop).
  * WHY O(N) per thread? Each thread blocks on recv() independently.
@@ -2398,14 +2398,14 @@ iptables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-port 5353
 ```
 Link speed: 100 Gbps
 Sequence space: 2^32 = 4,294,967,296 bytes
-Time to wrap = 4,294,967,296 / (100 × 10^9 / 8) = 4,294,967,296 / 12.5 × 10^9 ≈ 0.344 seconds
+Time to wrap = 4,294,967,296 / (100 Ã— 10^9 / 8) = 4,294,967,296 / 12.5 Ã— 10^9 â‰ˆ 0.344 seconds
 
 Without PAWS (Timestamp option), segments from 0.34 seconds ago could
 be confused with new segments in the same connection.
 ```
 
 **PAWS (Protection Against Wrapped Sequences):**
-Linux enables PAWS via TCP Timestamps option. Each segment carries a timestamp value. If a segment has a timestamp older than the last received timestamp, it's discarded — even if the sequence number is valid.
+Linux enables PAWS via TCP Timestamps option. Each segment carries a timestamp value. If a segment has a timestamp older than the last received timestamp, it's discarded â€” even if the sequence number is valid.
 
 ```
 // PAWS check (simplified)
@@ -2417,7 +2417,7 @@ function paws_check(segment_timestamp, last_timestamp):
         process_segment()
 ```
 
-### 8.9.11 BSD Socket API — Transport Layer Interface
+### 8.9.11 BSD Socket API â€” Transport Layer Interface
 
 
 The BSD socket API is the standard interface between applications and the transport layer:
@@ -2439,12 +2439,12 @@ The BSD socket API is the standard interface between applications and the transp
 **Event-driven I/O models for high concurrency:**
 
 ```
-// select() — portable, limited to FD_SETSIZE (1024)
-// epoll (Linux) — scales to millions of connections
-// kqueue (BSD/macOS) — similar to epoll
-// IOCP (Windows) — completion ports
+// select() â€” portable, limited to FD_SETSIZE (1024)
+// epoll (Linux) â€” scales to millions of connections
+// kqueue (BSD/macOS) â€” similar to epoll
+// IOCP (Windows) â€” completion ports
 
-// epoll example (simplified — Linux)
+// epoll example (simplified â€” Linux)
 int epfd = epoll_create1(0);
 struct epoll_event ev;
 ev.events = EPOLLIN | EPOLLET;  // Edge-triggered
@@ -2471,7 +2471,7 @@ The SO_LINGER socket option controls behavior on close() when there is pending d
 | Setting | Behavior on close() |
 |---------|-------------------|
 | **l_onoff = 0 (default)** | close() returns immediately; kernel delivers remaining data in background |
-| **l_onoff = 1, l_linger = 0** | close() sends RST — abrupt termination. Any pending data is discarded. No TIME_WAIT. |
+| **l_onoff = 1, l_linger = 0** | close() sends RST â€” abrupt termination. Any pending data is discarded. No TIME_WAIT. |
 | **l_onoff = 1, l_linger > 0** | close() blocks until all data acknowledged or timeout expires |
 
 ```cpp
@@ -2495,9 +2495,9 @@ close(sock_fd);  // Blocks until data sent or 30s timeout
 
 **Problem:** A high-frequency trading (HFT) firm running a distributed trading engine across two data centers (Chicago and New York, 800 km apart, ~8ms RTT) experienced 15-20ms per trade round-trip latency using default TCP settings. The firm's colocated servers ran Linux with default kernel TCP parameters that prioritized throughput over latency. With thousands of trades per second, each millisecond of delay in the 8ms baseline meant tens of millions in lost revenue annually.
 
-**Solution:** The engineering team applied transport-layer tuning across three layers. First, they minimized TCP segment size to match individual trade messages (MSS of 256 bytes instead of 1460), eliminating Nagle's algorithm delay by enabling `TCP_NODELAY`. Second, they disabled delayed ACKs via `tcp_delack_min` sysctl, ensuring immediate ACK responses for every trade confirmation. Third, they reduced the initial retransmission timeout from 3 seconds to 200ms (`tcp_rto_min`) and pinned application processes to dedicated CPU cores using SO_INCOMING_CPU to avoid context-switch jitter on the accept queue. For the inter-data-center link, they bypassed the kernel TCP stack entirely by implementing a custom reliable transport over UDP using kernel bypass (DPDK), achieving sub-10µs application-level latency.
+**Solution:** The engineering team applied transport-layer tuning across three layers. First, they minimized TCP segment size to match individual trade messages (MSS of 256 bytes instead of 1460), eliminating Nagle's algorithm delay by enabling `TCP_NODELAY`. Second, they disabled delayed ACKs via `tcp_delack_min` sysctl, ensuring immediate ACK responses for every trade confirmation. Third, they reduced the initial retransmission timeout from 3 seconds to 200ms (`tcp_rto_min`) and pinned application processes to dedicated CPU cores using SO_INCOMING_CPU to avoid context-switch jitter on the accept queue. For the inter-data-center link, they bypassed the kernel TCP stack entirely by implementing a custom reliable transport over UDP using kernel bypass (DPDK), achieving sub-10Âµs application-level latency.
 
-**Outcome:** End-to-end trade latency dropped from 18ms to 9.2ms — a 49% reduction. The UDP-based bypass layer for inter-DC traffic achieved 99.997% reliability with a custom selective-ACK mechanism at 1/10th the latency of kernel TCP. The tuned TCP stack remained for external client connections (non-colocated), where the optimized parameters still yielded a 30% improvement. The firm estimated a $12M annual revenue gain per millisecond saved.
+**Outcome:** End-to-end trade latency dropped from 18ms to 9.2ms â€” a 49% reduction. The UDP-based bypass layer for inter-DC traffic achieved 99.997% reliability with a custom selective-ACK mechanism at 1/10th the latency of kernel TCP. The tuned TCP stack remained for external client connections (non-colocated), where the optimized parameters still yielded a 30% improvement. The firm estimated a $12M annual revenue gain per millisecond saved.
 
 ## Practical Takeaways
 
@@ -2506,16 +2506,16 @@ close(sock_fd);  // Blocks until data sent or 30s timeout
 | **TCP_NODELAY** disables Nagle's algorithm for latency-sensitive apps | Enable on all interactive or real-time socket connections |
 | **Delayed ACKs** increase throughput but add up to 200ms latency per ACK | Disable (`tcp_delack_min=1`) for latency-critical, low-bandwidth flows |
 | **Smaller MSS** avoids fragmentation and reduces serialization delay | Match segment size to application message size (256-512 bytes for trading) |
-| **Kernel bypass (DPDK)** eliminates TCP/IP stack overhead for extreme performance | Use for sub-10µs requirements; not justified for typical web services |
+| **Kernel bypass (DPDK)** eliminates TCP/IP stack overhead for extreme performance | Use for sub-10Âµs requirements; not justified for typical web services |
 | **TIME_WAIT socket exhaustion** occurs under high connection rates | Enable `tcp_tw_reuse` and increase `tcp_max_tw_buckets` on busy servers |
 | **SYN cookies** prevent state allocation during SYN floods | Enable by default (`tcp_syncookies=1`) on internet-facing servers |
 | **TCP timestamps** enable PAWS and more accurate RTT estimation | Enable (`tcp_timestamps=1`) for high-speed WAN links |
 
 ## 8.10 Summary
 
-The transport layer provides process-to-process communication through multiplexing and demultiplexing. UDP offers lightweight, connectionless transport with minimal overhead — 8-byte header, optional checksum, suitable for loss-tolerant and delay-sensitive applications. TCP provides reliable, in-order, connection-oriented delivery through sequence numbers, cumulative acknowledgments, retransmission timers, and sliding window flow control. The three-way handshake establishes connections with synchronized sequence numbers; four-way handshake tears down each direction independently. The 11-state TCP state machine governs connection lifecycle from CLOSED to TIME_WAIT.
+The transport layer provides process-to-process communication through multiplexing and demultiplexing. UDP offers lightweight, connectionless transport with minimal overhead â€” 8-byte header, optional checksum, suitable for loss-tolerant and delay-sensitive applications. TCP provides reliable, in-order, connection-oriented delivery through sequence numbers, cumulative acknowledgments, retransmission timers, and sliding window flow control. The three-way handshake establishes connections with synchronized sequence numbers; four-way handshake tears down each direction independently. The 11-state TCP state machine governs connection lifecycle from CLOSED to TIME_WAIT.
 
-SCTP extends transport with multi-homing and multi-streaming for telecom. QUIC (HTTP/3) builds reliable transport over UDP with mandatory encryption, 0-RTT handshake, and connection migration — reflecting the evolution of transport protocols for modern internet.
+SCTP extends transport with multi-homing and multi-streaming for telecom. QUIC (HTTP/3) builds reliable transport over UDP with mandatory encryption, 0-RTT handshake, and connection migration â€” reflecting the evolution of transport protocols for modern internet.
 
 ---
 
@@ -2527,7 +2527,7 @@ SCTP extends transport with multi-homing and multi-streaming for telecom. QUIC (
 
 <details>
 <summary>Solution</summary>
-The pseudo-header (src IP, dst IP, protocol, UDP length) binds the UDP datagram to the specific IP connection. This prevents misdirected delivery — if a router delivers the packet to the wrong IP, the checksum verification fails at the receiver.
+The pseudo-header (src IP, dst IP, protocol, UDP length) binds the UDP datagram to the specific IP connection. This prevents misdirected delivery â€” if a router delivers the packet to the wrong IP, the checksum verification fails at the receiver.
 </details>
 
 2. What is the purpose of the three-way handshake's third ACK?
@@ -2541,28 +2541,28 @@ The third ACK confirms the client received the server's SYN+ACK, completing bidi
 
 <details>
 <summary>Solution</summary>
-Cumulative ACKs reduce overhead — one ACK can acknowledge all segments up to a given sequence number. They also simplify retransmission: the sender only needs to track the highest in-order byte acknowledged (SND.UNA). Individual ACKs would require per-segment tracking and increase header overhead with no benefit for in-order delivery.
+Cumulative ACKs reduce overhead â€” one ACK can acknowledge all segments up to a given sequence number. They also simplify retransmission: the sender only needs to track the highest in-order byte acknowledged (SND.UNA). Individual ACKs would require per-segment tracking and increase header overhead with no benefit for in-order delivery.
 </details>
 
-4. What is the TIME_WAIT state, and why does it last 2×MSL?
+4. What is the TIME_WAIT state, and why does it last 2Ã—MSL?
 
 <details>
 <summary>Solution</summary>
-TIME_WAIT ensures delayed segments from a closed connection expire before the 4-tuple is reused for a new connection. 2×MSL (typically 60-120s) is the maximum time a segment can survive in the network. It also allows retransmission of the final ACK if it was lost.
+TIME_WAIT ensures delayed segments from a closed connection expire before the 4-tuple is reused for a new connection. 2Ã—MSL (typically 60-120s) is the maximum time a segment can survive in the network. It also allows retransmission of the final ACK if it was lost.
 </details>
 
 5. How does window scaling allow TCP to exceed the 65,535-byte advertised window?
 
 <details>
 <summary>Solution</summary>
-The TCP Window Scale option (RFC 7323) adds a shift factor (0-14) to the 16-bit window field. The effective window becomes window_field << shift_factor. A scale factor of 14 allows window sizes up to 65535 × 2^14 = 1,073,725,440 bytes (~1 GB). Both sides must advertise the option during the three-way handshake.
+The TCP Window Scale option (RFC 7323) adds a shift factor (0-14) to the 16-bit window field. The effective window becomes window_field << shift_factor. A scale factor of 14 allows window sizes up to 65535 Ã— 2^14 = 1,073,725,440 bytes (~1 GB). Both sides must advertise the option during the three-way handshake.
 </details>
 
 6. What is the difference between flow control and congestion control?
 
 <details>
 <summary>Solution</summary>
-Flow control prevents the sender from overwhelming the receiver (rwnd — receiver's buffer space). Congestion control prevents the sender from overwhelming the network (cwnd — inferred network capacity). TCP's actual sending window is min(cwnd, rwnd). Flow control is end-to-end; congestion control is network-aware.
+Flow control prevents the sender from overwhelming the receiver (rwnd â€” receiver's buffer space). Congestion control prevents the sender from overwhelming the network (cwnd â€” inferred network capacity). TCP's actual sending window is min(cwnd, rwnd). Flow control is end-to-end; congestion control is network-aware.
 </details>
 
 7. Explain how SYN cookies work and why they prevent SYN flood attacks.
@@ -2576,7 +2576,7 @@ SYN cookies encode the connection parameters (MSS, window scale, SACK permitted)
 
 <details>
 <summary>Solution</summary>
-QUIC offers: (1) 0-RTT handshake for returning clients vs TCP+TLS 1–3 RTT; (2) connection migration — survives IP address changes; (3) built-in encryption; (4) no head-of-line blocking at the transport layer (since it runs over UDP); (5) stream multiplexing within a single connection without HOL blocking.
+QUIC offers: (1) 0-RTT handshake for returning clients vs TCP+TLS 1â€“3 RTT; (2) connection migration â€” survives IP address changes; (3) built-in encryption; (4) no head-of-line blocking at the transport layer (since it runs over UDP); (5) stream multiplexing within a single connection without HOL blocking.
 </details>
 
 ### Application Problems
@@ -2592,21 +2592,21 @@ Total bytes for checksum: pseudo-header (12) + UDP header (8) + data (100) = 120
 
 <details>
 <summary>Solution</summary>
-Random ISNs prevent spoofing attacks where an attacker guesses the sequence number to inject fraudulent segments. Without randomization, an attacker could send RST segments to terminate connections. Time to wrap: 2^32 bytes / (10 Gbps / 8) = 4,294,967,296 / 1.25×10^9 ≈ 3.44 seconds. This is why PAWS (Protection Against Wrapped Sequences) is needed with high-speed links.
+Random ISNs prevent spoofing attacks where an attacker guesses the sequence number to inject fraudulent segments. Without randomization, an attacker could send RST segments to terminate connections. Time to wrap: 2^32 bytes / (10 Gbps / 8) = 4,294,967,296 / 1.25Ã—10^9 â‰ˆ 3.44 seconds. This is why PAWS (Protection Against Wrapped Sequences) is needed with high-speed links.
 </details>
 
 11. A client connects to a server. Draw the complete TCP state diagram for both client and server through:
 
 <details>
 <summary>Solution</summary>
-Client: CLOSED → (ACTIVE_OPEN) → SYN_SENT → (RECV_SYN+ACK) → ESTABLISHED → (CLOSE) → FIN_WAIT_1 → (RECV_ACK) → FIN_WAIT_2 → (RECV_FIN) → TIME_WAIT → (TIMEOUT) → CLOSED. Server: CLOSED → (PASSIVE_OPEN) → LISTEN → (RECV_SYN) → SYN_RCVD → (SEND_SYN+ACK) → (RECV_ACK) → ESTABLISHED → (RECV_FIN) → CLOSE_WAIT → (CLOSE) → LAST_ACK → (RECV_ACK) → CLOSED.
+Client: CLOSED â†’ (ACTIVE_OPEN) â†’ SYN_SENT â†’ (RECV_SYN+ACK) â†’ ESTABLISHED â†’ (CLOSE) â†’ FIN_WAIT_1 â†’ (RECV_ACK) â†’ FIN_WAIT_2 â†’ (RECV_FIN) â†’ TIME_WAIT â†’ (TIMEOUT) â†’ CLOSED. Server: CLOSED â†’ (PASSIVE_OPEN) â†’ LISTEN â†’ (RECV_SYN) â†’ SYN_RCVD â†’ (SEND_SYN+ACK) â†’ (RECV_ACK) â†’ ESTABLISHED â†’ (RECV_FIN) â†’ CLOSE_WAIT â†’ (CLOSE) â†’ LAST_ACK â†’ (RECV_ACK) â†’ CLOSED.
 </details>
 
 12. A TCP connection has `rwnd = 24000 bytes` and `MSS = 1000 bytes`. The sender sends 20 segments. The receiver reads 8000 bytes after receiving all data. Show the sliding window evolution.
 
 <details>
 <summary>Solution</summary>
-Initially: rwnd = 24000, can send 24 segments (24000/1000). Sends 20 segments, window fills to 20,000 used, 4,000 remaining. After receiver reads 8000 bytes, rwnd increases by 8000 → rwnd = 12,000. Sender can now send 12 more segments (if needed). The window slides forward as ACKs arrive. At each ACK, SND.UNA advances, potentially allowing more data to be sent. Actual cwnd from congestion control would also constrain the window.
+Initially: rwnd = 24000, can send 24 segments (24000/1000). Sends 20 segments, window fills to 20,000 used, 4,000 remaining. After receiver reads 8000 bytes, rwnd increases by 8000 â†’ rwnd = 12,000. Sender can now send 12 more segments (if needed). The window slides forward as ACKs arrive. At each ACK, SND.UNA advances, potentially allowing more data to be sent. Actual cwnd from congestion control would also constrain the window.
 </details>
 
 ### Coding Problems
@@ -2766,7 +2766,7 @@ def visualize(transitions):
 
 <details>
 <summary>Solution</summary>
-Interplanetary links have 5-20 minute one-way delay and BER of 10^{-4}. A suitable design uses: (1) **File delivery** instead of stream — a CFDP-like protocol treats data as files. (2) **Selective NAK** instead of cumulative ACK — the receiver reports missing chunks, avoiding slow-start. (3) **FEC (Reed-Solomon)** to correct bit errors without retransmission. (4) **Large windows** — BDP at 1 Mbps with 10-min RTT = 75 MB. For 50% utilization, window = 150 MB. Header: 4-byte sequence number, 4-byte offset, 2-byte length, 1-byte type, variable FEC parity. This achieves high utilization despite extreme RTT.
+Interplanetary links have 5-20 minute one-way delay and BER of 10^{-4}. A suitable design uses: (1) **File delivery** instead of stream â€” a CFDP-like protocol treats data as files. (2) **Selective NAK** instead of cumulative ACK â€” the receiver reports missing chunks, avoiding slow-start. (3) **FEC (Reed-Solomon)** to correct bit errors without retransmission. (4) **Large windows** â€” BDP at 1 Mbps with 10-min RTT = 75 MB. For 50% utilization, window = 150 MB. Header: 4-byte sequence number, 4-byte offset, 2-byte length, 1-byte type, variable FEC parity. This achieves high utilization despite extreme RTT.
 </details>
 
 ---
@@ -2778,10 +2778,10 @@ Interplanetary links have 5-20 minute one-way delay and BER of 10^{-4}. A suitab
 | **UDP Header** | SrcPort(16) + DstPort(16) + Length(16) + Checksum(16) = 64 bits |
 | **TCP Header** | SrcPort(16) + DstPort(16) + SeqNum(32) + AckNum(32) + Offset(4) + Reserved(3) + Flags(9) + Window(16) + Checksum(16) + Urgent(16) + Options(variable) |
 | **TCP Flags** | NS, CWR, ECE, URG, ACK, PSH, RST, SYN, FIN |
-| **Connection** | Establish: SYN → SYN+ACK → ACK; Terminate: FIN → ACK → FIN → ACK |
+| **Connection** | Establish: SYN â†’ SYN+ACK â†’ ACK; Terminate: FIN â†’ ACK â†’ FIN â†’ ACK |
 | **Port Ranges** | Well-known (0-1023), Registered (1024-49151), Dynamic (49152-65535) |
-| **Socket** | 4-tuple: (src_ip, src_port, dst_ip, dst_port) — uniquely identifies a TCP connection |
-| **TIME_WAIT** | 2×MSL (typically 60-120s) — ensures delayed segments don't corrupt new connections |
+| **Socket** | 4-tuple: (src_ip, src_port, dst_ip, dst_port) â€” uniquely identifies a TCP connection |
+| **TIME_WAIT** | 2Ã—MSL (typically 60-120s) â€” ensures delayed segments don't corrupt new connections |
 | **Sliding window** | Sender cannot exceed min(cwnd, rwnd). Zero-window triggers persist timer |
 | **QUIC** | UDP-based, 0-1 RTT handshake, built-in encryption, connection migration |
 | **SCTP** | 4-way handshake with cookie, multi-homing, multi-streaming, no HoL blocking |
@@ -2803,9 +2803,9 @@ Interplanetary links have 5-20 minute one-way delay and BER of 10^{-4}. A suitab
 
 | # | Question | Options | Answer | Explanation |
 |---|----------|---------|--------|-------------|
-| 1 | How many bytes is the fixed TCP header? | A) 8, B) 16, C) 20, D) 60 | **C** | TCP Data Offset field (4 bits) specifies header length in 32-bit words. Minimum is 5 words × 4 = 20 bytes. Maximum is 15 words × 4 = 60 bytes with options. |
+| 1 | How many bytes is the fixed TCP header? | A) 8, B) 16, C) 20, D) 60 | **C** | TCP Data Offset field (4 bits) specifies header length in 32-bit words. Minimum is 5 words Ã— 4 = 20 bytes. Maximum is 15 words Ã— 4 = 60 bytes with options. |
 | 2 | What is the purpose of the three-way handshake's third ACK? | A) Authenticate, B) Confirm client received SYN, C) Negotiate window, D) Begin data | **B** | The third ACK confirms the client received the server's SYN+ACK, completing bidirectional ISN agreement. Without it, the server would not know its SYN+ACK was received. |
-| 3 | Why does TIME_WAIT last 2×MSL? | A) Retransmit lost FIN, B) Let delayed segments expire, C) Application cleanup, D) Sync with server | **B** | 2×MSL guarantees any segments still in flight will expire before the 4-tuple can be reused for a new connection. Also allows retransmission of the final ACK if lost. |
+| 3 | Why does TIME_WAIT last 2Ã—MSL? | A) Retransmit lost FIN, B) Let delayed segments expire, C) Application cleanup, D) Sync with server | **B** | 2Ã—MSL guarantees any segments still in flight will expire before the 4-tuple can be reused for a new connection. Also allows retransmission of the final ACK if lost. |
 | 4 | What prevents deadlock when the receiver's advertised window is zero? | A) Retransmission timer, B) Persist timer, C) Keepalive timer, D) Delayed ACK timer | **B** | The persist timer periodically sends 1-byte window probes. When the receiver's rwnd is zero, the sender cannot send data, so it relies on probes to detect when the window reopens. |
 | 5 | How many states does the TCP state machine have? | A) 7, B) 9, C) 11, D) 13 | **C** | 11 states: CLOSED, LISTEN, SYN_SENT, SYN_RCVD, ESTABLISHED, FIN_WAIT_1, FIN_WAIT_2, CLOSE_WAIT, CLOSING, LAST_ACK, TIME_WAIT. |
 
@@ -2850,22 +2850,22 @@ Byte 26:      [UrgentPtr LSB]
 
 ## 8.15 Chapter Key Takeaways
 
-1. **Transport layer provides process-to-process communication** via multiplexing/demultiplexing using port numbers — extending the network layer's host-to-host delivery.
+1. **Transport layer provides process-to-process communication** via multiplexing/demultiplexing using port numbers â€” extending the network layer's host-to-host delivery.
 
-2. **UDP is connectionless and lightweight** — 8-byte header, optional checksum, no reliability. Best for loss-tolerant, latency-sensitive applications (DNS, VoIP, gaming, QUIC).
+2. **UDP is connectionless and lightweight** â€” 8-byte header, optional checksum, no reliability. Best for loss-tolerant, latency-sensitive applications (DNS, VoIP, gaming, QUIC).
 
-3. **TCP is connection-oriented and reliable** — 20-byte minimum header, sequence numbers for ordering, ACKs for reliability, sliding window for flow control, multiple timers for edge cases.
+3. **TCP is connection-oriented and reliable** â€” 20-byte minimum header, sequence numbers for ordering, ACKs for reliability, sliding window for flow control, multiple timers for edge cases.
 
-4. **The three-way handshake** (SYN → SYN+ACK → ACK) synchronizes sequence numbers. The third ACK is mathematically required for reliable bidirectional agreement in an unreliable network.
+4. **The three-way handshake** (SYN â†’ SYN+ACK â†’ ACK) synchronizes sequence numbers. The third ACK is mathematically required for reliable bidirectional agreement in an unreliable network.
 
-5. **TCP's 11-state machine** governs connection lifecycle: CLOSED → LISTEN → SYN_RCVD → ESTABLISHED → FIN_WAIT_1 → FIN_WAIT_2 → TIME_WAIT → CLOSED (client); CLOSED → LISTEN → SYN_RCVD → ESTABLISHED → CLOSE_WAIT → LAST_ACK → CLOSED (server).
+5. **TCP's 11-state machine** governs connection lifecycle: CLOSED â†’ LISTEN â†’ SYN_RCVD â†’ ESTABLISHED â†’ FIN_WAIT_1 â†’ FIN_WAIT_2 â†’ TIME_WAIT â†’ CLOSED (client); CLOSED â†’ LISTEN â†’ SYN_RCVD â†’ ESTABLISHED â†’ CLOSE_WAIT â†’ LAST_ACK â†’ CLOSED (server).
 
 6. **Flow control** prevents receiver overflow (rwnd, sliding window). **Congestion control** prevents network overload (cwnd, AIMD). The effective window is `min(cwnd, rwnd)`.
 
-7. **TIME_WAIT** (2×MSL = 60-120s) prevents delayed segments from corrupting new connections and allows final ACK retransmission.
+7. **TIME_WAIT** (2Ã—MSL = 60-120s) prevents delayed segments from corrupting new connections and allows final ACK retransmission.
 
 8. **SCTP and QUIC** evolved to address TCP's limitations: SCTP for multi-homing/multi-streaming in telecom; QUIC for 0-RTT handshake, connection migration, and built-in encryption in HTTP/3.
 
 ---
 
-> **Next:** [Chapter 9: TCP Congestion Control](./09-tcp-congestion.md) — AIMD, slow start, fast retransmit, BBR, Cubic
+> **Next:** [Chapter 9: TCP Congestion Control](./09-tcp-congestion.md) â€” AIMD, slow start, fast retransmit, BBR, Cubic

@@ -1,6 +1,6 @@
-# Chapter 12: Minimum Spanning Trees
+﻿# Chapter 12: Minimum Spanning Trees
 
-> **Prerequisites:** [Chapter 11: Graph Shortest Paths](./11-graph-shortest.md) — Graph algorithms, priority queues, relaxation | **Next:** [Chapter 13: Network Flow](./13-graph-flow.md) — From tree structures to flow networks
+> **Prerequisites:** [Chapter 11: Graph Shortest Paths](./11-graph-shortest.md) â€” Graph algorithms, priority queues, relaxation | **Next:** [Chapter 13: Network Flow](./13-graph-flow.md) â€” From tree structures to flow networks
 
 ## Learning Objectives
 
@@ -9,16 +9,16 @@ By the end of this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/algorithms/12-graph-mst/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/algorithms/12-graph-mst/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/algorithms/12-graph-mst/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/algorithms/12-graph-mst/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/algorithms/12-graph-mst/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/algorithms/12-graph-mst/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/algorithms/12-graph-mst/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/algorithms/12-graph-mst/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/algorithms/12-graph-mst/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/algorithms/12-graph-mst/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/algorithms/12-graph-mst/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/algorithms/12-graph-mst/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -32,11 +32,11 @@ By the end of this chapter, students will be able to:
 
 ## Why MST Matters
 
-Imagine you are a telecom engineer tasked with connecting 15 cities with fiber-optic cable. Each pair of cities has a quoted cost for digging trenches and laying cable. Your goal: connect every city into a single network using the **minimum total cable length**. This is not about finding the shortest path between two cities — it is about building the cheapest skeleton that connects everything.
+Imagine you are a telecom engineer tasked with connecting 15 cities with fiber-optic cable. Each pair of cities has a quoted cost for digging trenches and laying cable. Your goal: connect every city into a single network using the **minimum total cable length**. This is not about finding the shortest path between two cities â€” it is about building the cheapest skeleton that connects everything.
 
-This is the Minimum Spanning Tree (MST) problem in action. Every dollar you save by not running redundant cable is pure profit. A naive approach (connecting cities in a star or a ring) could cost **30–50% more** than the optimal MST solution. In a real 2016 project connecting 12 data centers across Europe, one cloud provider saved an estimated **$2.4 million** by applying MST principles to their fiber-optic backbone layout. The same math governs electrical grid design, computer network topology, transportation routing, and even clustering genes in bioinformatics.
+This is the Minimum Spanning Tree (MST) problem in action. Every dollar you save by not running redundant cable is pure profit. A naive approach (connecting cities in a star or a ring) could cost **30â€“50% more** than the optimal MST solution. In a real 2016 project connecting 12 data centers across Europe, one cloud provider saved an estimated **$2.4 million** by applying MST principles to their fiber-optic backbone layout. The same math governs electrical grid design, computer network topology, transportation routing, and even clustering genes in bioinformatics.
 
-> **Pro Tip:** MST is one of the few problems in computer science where a simple greedy algorithm is **provably optimal** — no backtracking, no dynamic programming, no approximation needed. That is why it is a cornerstone of every algorithms curriculum.
+> **Pro Tip:** MST is one of the few problems in computer science where a simple greedy algorithm is **provably optimal** â€” no backtracking, no dynamic programming, no approximation needed. That is why it is a cornerstone of every algorithms curriculum.
 
 ---
 
@@ -286,7 +286,7 @@ Since \(E \le V^2\) in the worst case, \(O(E \log E) = O(E \log V)\) because \(\
 | Advantages | Disadvantages |
 |------------|---------------|
 | Easy to implement and understand | Requires all edges to be sorted first (not online) |
-| Excellent for sparse graphs (E ≈ V) | Less efficient on dense graphs (V² edges to sort) |
+| Excellent for sparse graphs (E â‰ˆ V) | Less efficient on dense graphs (VÂ² edges to sort) |
 | DSU operations are nearly O(1) amortized | Sorting is memory-intensive for huge edge sets |
 | Naturally works with disconnected graphs | Must store all edges explicitly |
 | Easy to parallelize the sorting step | --- |
@@ -297,10 +297,10 @@ Since \(E \le V^2\) in the worst case, \(O(E \log E) = O(E \log V)\) because \(\
 |----------|----------|
 | **Disconnected graph** | Kruskal terminates with fewer than V-1 edges in T; no spanning tree exists |
 | **Single vertex (V=1)** | No edges needed; MST has weight 0 |
-| **Complete graph (E = V(V-1)/2)** | Sorting cost becomes O(V² log V); consider Prim on dense graphs |
+| **Complete graph (E = V(V-1)/2)** | Sorting cost becomes O(VÂ² log V); consider Prim on dense graphs |
 | **All edges equal weight** | Multiple valid MSTs; Kruskal selects lexicographically smallest set based on input order |
 | **Duplicate edge weights** | Multiple valid MSTs possible; any valid MST is acceptable |
-| **Pre-sorted edges** | DSU operations dominate; complexity reduces to O(E α(V)) |
+| **Pre-sorted edges** | DSU operations dominate; complexity reduces to O(E Î±(V)) |
 
 > **Pro Tip:** Kruskal's algorithm is preferred for sparse graphs (E = O(V)) where sorting dominates. The union-find with path compression and union by rank makes the find operations nearly O(1) amortized.
 >
@@ -466,9 +466,9 @@ With a simple array (dense graphs): extract-min scans \(V\) elements in \(O(V)\)
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Excellent for dense graphs (E ≈ V²) | Requires an explicit starting vertex |
+| Excellent for dense graphs (E â‰ˆ VÂ²) | Requires an explicit starting vertex |
 | Naturally grows a single connected tree | Binary heap has O(log V) factor |
-| Array-based version is O(V²) -- ideal for complete graphs | Lazy deletion in heap wastes memory |
+| Array-based version is O(VÂ²) -- ideal for complete graphs | Lazy deletion in heap wastes memory |
 | Never processes an edge twice | Less intuitive than Kruskal for beginners |
 | Can stop early if target vertex is reached | Fibonacci heap is complex to implement |
 
@@ -478,14 +478,14 @@ With a simple array (dense graphs): extract-min scans \(V\) elements in \(O(V)\)
 |----------|----------|
 | **Disconnected graph** | PQ empties before all vertices visited; key[v] stays INF for unreachable vertices |
 | **Single vertex (V=1)** | PQ has one element; total weight = 0 |
-| **Complete graph (E = V(V-1)/2)** | Array-based O(V²) implementation is optimal |
+| **Complete graph (E = V(V-1)/2)** | Array-based O(VÂ²) implementation is optimal |
 | **All edges equal weight** | Prim produces one valid MST; shape depends on the starting vertex |
 | **Multiple edges between same vertices** | Keep only the minimum-weight edge |
 | **Large-weight edges (int overflow)** | Use long/INF sentinel with half of INT_MAX to avoid overflow |
 
 > **Pro Tip:** Prim's algorithm looks almost identical to Dijkstra. The difference is that Prim's key is the minimum edge weight to the current tree, while Dijkstra's key is the total distance from the source.
 >
-> **Remember:** Prim's is better for dense graphs (E ≈ V²) where the priority queue operations dominate. For dense graphs, an O(V²) array-based implementation can outperform a binary heap.
+> **Remember:** Prim's is better for dense graphs (E â‰ˆ VÂ²) where the priority queue operations dominate. For dense graphs, an O(VÂ²) array-based implementation can outperform a binary heap.
 
 **One-Sentence Takeaway:** Prim's algorithm grows an MST from a seed vertex using a priority queue, always adding the cheapest edge connecting the tree to a new vertex -- O(E log V).
 
@@ -739,8 +739,8 @@ ReverseDelete(G):
 |---------|---------|-------------------|-------------|---------|----------------|
 | **Strategy** | Add smallest non-cycle edge | Grow tree from seed | Same | Component cheapest edges | Remove heaviest non-bridge |
 | **Data Structure** | Union-Find DSU | Priority Queue | Array | Per-component arrays | DFS/BFS for connectivity |
-| **Time Complexity** | O(E log E) | O(E log V) | O(V²) | O(E log V) | O(E(V+E)) naive |
-| **Best For** | Sparse graphs (E≈V) | Moderate density | Dense/complete graphs | Parallel/distributed | Educational (dual view) |
+| **Time Complexity** | O(E log E) | O(E log V) | O(VÂ²) | O(E log V) | O(E(V+E)) naive |
+| **Best For** | Sparse graphs (Eâ‰ˆV) | Moderate density | Dense/complete graphs | Parallel/distributed | Educational (dual view) |
 | **Sorting Required** | Yes | No | No | No | Yes |
 | **Space Complexity** | O(E) | O(V) | O(V) | O(V) | O(E) |
 | **Parallelizable** | Sort step only | Limited | Limited | Highly parallel | Limited |
@@ -853,9 +853,9 @@ Starting from vertex 0:
 
 | Algorithm | Strategy | Data Structure | Best For | Complexity |
 |-----------|----------|---------------|----------|------------|
-| Kruskal | Add smallest non-cycle edge | Union-Find DSU | Sparse graphs (E ≈ V) | O(E log E) |
+| Kruskal | Add smallest non-cycle edge | Union-Find DSU | Sparse graphs (E â‰ˆ V) | O(E log E) |
 | Prim (binary heap) | Grow tree from seed | Priority Queue | Moderate density | O(E log V) |
-| Prim (array) | Grow tree from seed | Array | Dense graphs (E ≈ V²) | O(V²) |
+| Prim (array) | Grow tree from seed | Array | Dense graphs (E â‰ˆ VÂ²) | O(VÂ²) |
 | Boruvka | Component cheapest edges | Per-component arrays | Parallel/Distributed | O(E log V) |
 | Reverse-Delete | Remove heaviest non-bridge | DFS connectivity check | Educational | O(E(V+E)) naive |
 
@@ -899,7 +899,7 @@ Starting from vertex 0:
 
 ### Chapter Quiz
 
-**Q1.** Which MST algorithm is best for a sparse graph with E ≈ V?
+**Q1.** Which MST algorithm is best for a sparse graph with E â‰ˆ V?
 
 - A) Prim with binary heap
 - B) Boruvka
@@ -975,12 +975,12 @@ B) For each non-MST edge (u,v,w), find the maximum-weight edge on the u-v path i
 
 - A) Kruskal with union-find
 - B) Prim with binary heap
-- C) Prim with array (O(V²))
+- C) Prim with array (O(VÂ²))
 - D) Boruvka
 
 <details>
 <summary>Answer&lt;/summary&gt;
-C) Prim with array O(V²) = 10⁶ operations, vs Kruskal O(V² log V) ≈ 10⁷ operations. The array version scans linearly for the minimum key -- ideal for complete graphs.
+C) Prim with array O(VÂ²) = 10â¶ operations, vs Kruskal O(VÂ² log V) â‰ˆ 10â· operations. The array version scans linearly for the minimum key -- ideal for complete graphs.
 </details>
 
 **Q8.** True or False: The edge with minimum weight in the entire graph must belong to every MST.

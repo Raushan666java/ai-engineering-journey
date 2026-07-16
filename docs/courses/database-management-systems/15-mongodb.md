@@ -1,4 +1,4 @@
-# Chapter 15: MongoDB
+﻿# Chapter 15: MongoDB
 
 > **Prev:** [Chapter 14: NoSQL](14-nosql.md) | **Next:** [Chapter 16: Redis](16-redis.md)
 
@@ -15,16 +15,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/15-mongodb/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/15-mongodb/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/15-mongodb/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/15-mongodb/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/15-mongodb/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/15-mongodb/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/15-mongodb/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/15-mongodb/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/15-mongodb/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/15-mongodb/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/15-mongodb/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/15-mongodb/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -35,12 +35,12 @@
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| **Document Model** | JSON-like documents with embedded arrays and nested objects | Design for read patterns â†’ embed what's accessed together |
+| **Document Model** | JSON-like documents with embedded arrays and nested objects | Design for read patterns Ã¢â€ â€™ embed what's accessed together |
 | **MongoDB Query Language** | Rich query operators ($match, $group, $sort, $lookup) | Use aggregation pipeline for multi-stage transformations |
 | **Indexing in MongoDB** | B-tree indexes: single, compound, text, geospatial, TTL | Index fields used in query filters, sort, and join conditions |
 | **Replication** | Primary-secondary with automatic failover via election | Deploy with at least 3 voting replica nodes for HA |
 | **Sharding** | Horizontal partition across shard keys with mongos routing | Choose shard key with high cardinality to avoid hotspots |
-| **Aggregation Pipeline** | Stage-based data processing ($match â†’ $group â†’ $sort â†’ $project) | Push $match early to reduce data flowing through pipeline |
+| **Aggregation Pipeline** | Stage-based data processing ($match Ã¢â€ â€™ $group Ã¢â€ â€™ $sort Ã¢â€ â€™ $project) | Push $match early to reduce data flowing through pipeline |
 | **Atomicity** | Document-level atomic operations in MongoDB | Use embedded documents for transactional consistency |
 
 ## Chapter Roadmap
@@ -79,25 +79,25 @@ MongoDB is a **document-oriented NoSQL database** released in 2009 by MongoDB In
 | _id | Primary Key | Unique immutable identifier |
 | Index | Index | Data structure for fast lookups |
 | Aggregation Pipeline | GROUP BY / JOIN | Multi-stage data processing |
-| Replica Set | â†’ | High-availability group of mongod instances |
+| Replica Set | Ã¢â€ â€™ | High-availability group of mongod instances |
 | Shard | Partition | Horizontal data split across servers |
 
 **Real-World Analogy: Filing Cabinet System**
 
 Think of MongoDB as a modern **filing cabinet system** where each drawer (database) contains folders (collections), and each folder contains individual forms (documents).
 
-- **Filing Cabinet** â†’ MongoDB Server
-- **Drawer** â†’ Database (e.g., `ecommerce`, `analytics`)
-- **Tabbed Folder** â†’ Collection (e.g., `users`, `orders`, `products`)
-- **Form/Sheet** â†’ Document (a single JSON-like record)
-- **Form Fields** â†’ Document Fields (name, age, email)
-- **Color-coded Tabs** â†’ Indexes (fast lookup by field)
-- **Photo-copier** â†’ Replication (copies of the same data)
-- **File Room Expansion** â†’ Sharding (adding more cabinets)
+- **Filing Cabinet** Ã¢â€ â€™ MongoDB Server
+- **Drawer** Ã¢â€ â€™ Database (e.g., `ecommerce`, `analytics`)
+- **Tabbed Folder** Ã¢â€ â€™ Collection (e.g., `users`, `orders`, `products`)
+- **Form/Sheet** Ã¢â€ â€™ Document (a single JSON-like record)
+- **Form Fields** Ã¢â€ â€™ Document Fields (name, age, email)
+- **Color-coded Tabs** Ã¢â€ â€™ Indexes (fast lookup by field)
+- **Photo-copier** Ã¢â€ â€™ Replication (copies of the same data)
+- **File Room Expansion** Ã¢â€ â€™ Sharding (adding more cabinets)
 
 Each form (document) can have a different set of fields. One user form might have `name`, `email`, `phone` while another might have `name`, `email`, `twitter_handle`, `address`. In a relational database, you'd need nullable columns or separate tables. In MongoDB, you just include the fields that apply.
 
-#### 15.1.2 Key Concepts â†’ Detailed
+#### 15.1.2 Key Concepts Ã¢â€ â€™ Detailed
 
 **Database:**
 ```javascript
@@ -161,19 +161,19 @@ show collections
 | String | 2 | `"hello"` | string |
 | Object | 3 | `{a: 1}` | object |
 | Array | 4 | `[1, 2, 3]` | array |
-| Binary | 5 | `BinData(0, "SGVsbG8=")` | â†’ |
-| ObjectId | 7 | `ObjectId("507f1f77bcf86cd799439011")` | â†’ |
+| Binary | 5 | `BinData(0, "SGVsbG8=")` | Ã¢â€ â€™ |
+| ObjectId | 7 | `ObjectId("507f1f77bcf86cd799439011")` | Ã¢â€ â€™ |
 | Boolean | 8 | `true` | boolean |
-| Date | 9 | `ISODate("2024-01-01")` | â†’ |
+| Date | 9 | `ISODate("2024-01-01")` | Ã¢â€ â€™ |
 | Null | 10 | `null` | null |
-| Regular Expression | 11 | `/pattern/i` | â†’ |
-| JavaScript | 13 | `Code("function(x) { return x; }")` | â†’ |
+| Regular Expression | 11 | `/pattern/i` | Ã¢â€ â€™ |
+| JavaScript | 13 | `Code("function(x) { return x; }")` | Ã¢â€ â€™ |
 | 32-bit Integer | 16 | `NumberInt(42)` | number |
-| Timestamp | 17 | `Timestamp(0, 1)` | â†’ |
-| 64-bit Integer | 18 | `NumberLong(4294967295)` | â†’ |
-| Decimal128 | 19 | `NumberDecimal("10.99")` | â†’ |
-| Min Key | -1 | `MinKey` | â†’ |
-| Max Key | 127 | `MaxKey` | â†’ |
+| Timestamp | 17 | `Timestamp(0, 1)` | Ã¢â€ â€™ |
+| 64-bit Integer | 18 | `NumberLong(4294967295)` | Ã¢â€ â€™ |
+| Decimal128 | 19 | `NumberDecimal("10.99")` | Ã¢â€ â€™ |
+| Min Key | -1 | `MinKey` | Ã¢â€ â€™ |
+| Max Key | 127 | `MaxKey` | Ã¢â€ â€™ |
 
 **BSON Binary Encoding Example:**
 
@@ -189,11 +189,11 @@ world\x00                  // string value (C-string)
 ```
 
 Each field in BSON encodes:
-1. **Type** (1 byte) â†’ identifies the BSON data type
+1. **Type** (1 byte) Ã¢â€ â€™ identifies the BSON data type
 2. **Field name** (C-string, null-terminated)
-3. **Value** â†’ type-specific encoding with length prefix for variable-length types
+3. **Value** Ã¢â€ â€™ type-specific encoding with length prefix for variable-length types
 
-This makes BSON **traversable** â†’ you can skip unknown fields without parsing them, unlike JSON where you must parse the entire structure.
+This makes BSON **traversable** Ã¢â€ â€™ you can skip unknown fields without parsing them, unlike JSON where you must parse the entire structure.
 
 #### 15.1.4 BSON vs JSON Comparison
 
@@ -202,7 +202,7 @@ This makes BSON **traversable** â†’ you can skip unknown fields without par
 | **Encoding** | Binary | Text (UTF-8/UTF-16) |
 | **Data types** | 20+ types incl. Date, ObjectId, Binary, Decimal128 | 6 types: string, number, object, array, boolean, null |
 | **Size efficiency** | More compact for binary data, less compact for simple strings | Compact for text-only data |
-| **Parsing speed** | Fast â†’ type and length pre-encoded, traversable | Slower â†’ must scan and parse character by character |
+| **Parsing speed** | Fast Ã¢â€ â€™ type and length pre-encoded, traversable | Slower Ã¢â€ â€™ must scan and parse character by character |
 | **Schema flexibility** | Supports schema-less documents | Schema-less |
 | **Numeric precision** | Int32, Int64, Double, Decimal128 | Single "number" type (IEEE-754 double precision) |
 | **Date handling** | Native Date type (milliseconds since epoch) | Must store as string or number convention |
@@ -222,17 +222,17 @@ This makes BSON **traversable** â†’ you can skip unknown fields without par
 **Step-by-step document insertion:**
 ```
 STEP 1: Client connects to mongos or primary mongod
-        â†’ mongos:port (default 27017)
+        Ã¢â€ â€™ mongos:port (default 27017)
 STEP 2: Client sends insert command { insert: "users", documents: [...] }
-STEP 3: Server validates document size Ã¢â€°Â¤ 16MB BSON limit
-        â†’ If exceeded, returns "BSON object too large" error
+STEP 3: Server validates document size ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤ 16MB BSON limit
+        Ã¢â€ â€™ If exceeded, returns "BSON object too large" error
 STEP 4: Server generates _id if missing (ObjectId generation)
-        â†’ ObjectId = 4-byte timestamp + 5-byte random + 3-byte counter
+        Ã¢â€ â€™ ObjectId = 4-byte timestamp + 5-byte random + 3-byte counter
 STEP 5: Server serializes document to BSON binary format
 STEP 6: WiredTiger storage engine writes to journal (write-ahead log)
 STEP 7: Document is written to data files in memory-mapped storage
 STEP 8: If indexed fields exist, B-tree index entries are updated
-        â†’ Each index key points to the document's RecordId
+        Ã¢â€ â€™ Each index key points to the document's RecordId
 STEP 9: Acknowledgment sent back to client (write concern satisfied)
 STEP 10: If part of a replica set, oplog entry is created for replication
 ```
@@ -241,16 +241,16 @@ STEP 10: If part of a replica set, oplog entry is created for replication
 ```
 STEP 1: Client sends find command { find: "users", filter: { email: "..." } }
 STEP 2: Query planner analyzes the filter and available indexes
-        â†’ Checks viable indexes via IndexStats and query shape
+        Ã¢â€ â€™ Checks viable indexes via IndexStats and query shape
 STEP 3: If matching index exists, index scan is performed on B-tree
-        â†’ Navigates B-tree from root â†’ internal nodes â†’ leaf
-STEP 4: Index leaf returns RecordId â†’ data file offset
+        Ã¢â€ â€™ Navigates B-tree from root Ã¢â€ â€™ internal nodes Ã¢â€ â€™ leaf
+STEP 4: Index leaf returns RecordId Ã¢â€ â€™ data file offset
 STEP 5: Document is fetched from storage engine using RecordId
 STEP 6: If no matching index, collection scan (COLLSCAN) is performed
-        â†’ Scans every BSON document in collection sequentially
+        Ã¢â€ â€™ Scans every BSON document in collection sequentially
 STEP 7: BSON document is deserialized into MongoDB's internal representation
 STEP 8: Projection is applied (if specified)
-        â†’ Only requested fields are materialized
+        Ã¢â€ â€™ Only requested fields are materialized
 STEP 9: Document is serialized to BSON for network transport
 STEP 10: Client receives response with result set
 ```
@@ -323,11 +323,11 @@ FUNCTION FindDocument(collection, filter, projection):
 | Operation | Time Complexity | Space Complexity | Why |
 |-----------|----------------|-----------------|-----|
 | **Document Insert (no index)** | O(1) | O(d) | Appending to storage is constant time; d = document size |
-| **Document Insert (k indexes)** | O(k log n) | O(d + k * log n) | Each index requires B-tree insertion O(log n); k indexes â†’ O(k log n) |
-| **Find by _id (hashed index)** | O(1) expected | O(1) | _id has unique hashed index â†’ direct lookup |
+| **Document Insert (k indexes)** | O(k log n) | O(d + k * log n) | Each index requires B-tree insertion O(log n); k indexes Ã¢â€ â€™ O(k log n) |
+| **Find by _id (hashed index)** | O(1) expected | O(1) | _id has unique hashed index Ã¢â€ â€™ direct lookup |
 | **Find by indexed field (equality)** | O(log n) | O(1) | B-tree traversal from root to leaf: height = log_fanout(n) |
 | **Find by indexed field (range)** | O(log n + m) | O(1) | O(log n) to find start + O(m) to scan m results |
-| **Find by compound index** | O(log n + m) | O(1) | Same as single index â†’ compound index is one B-tree |
+| **Find by compound index** | O(log n + m) | O(1) | Same as single index Ã¢â€ â€™ compound index is one B-tree |
 | **Collection scan (no index)** | O(n) | O(1) | Scans all n documents sequentially |
 | **Aggregation $match** | O(n) or O(log n) | O(1) | O(n) if no index; O(log n + m) if indexed filter |
 | **Aggregation $group** | O(n) | O(g) | Scans all n docs; stores g groups in hash table |
@@ -336,18 +336,18 @@ FUNCTION FindDocument(collection, filter, projection):
 
 **Why B-tree in MongoDB?**
 - MongoDB uses B-trees (not B+ trees like MySQL) because B-trees store values at every node, making single-document lookups faster when the key is found at a non-leaf level.
-- The fanout factor (Ã¢â€°Ë† 100-500 keys per node for 8KB pages) keeps tree height at 3-4 levels for billions of documents.
+- The fanout factor (ÃƒÂ¢Ã¢â‚¬Â°Ã‹â€  100-500 keys per node for 8KB pages) keeps tree height at 3-4 levels for billions of documents.
 
 #### 15.1.8 Advantages & Disadvantages of MongoDB Document Model
 
 | Advantages | Disadvantages |
 |------------|---------------|
 | **Schema flexibility**: Different documents can have different fields | **No built-in referential integrity**: No foreign key constraints |
-| **Natural object mapping**: Documents map directly to application objects (JSON â†’ object) | **Data duplication**: Embedding leads to data redundancy |
+| **Natural object mapping**: Documents map directly to application objects (JSON Ã¢â€ â€™ object) | **Data duplication**: Embedding leads to data redundancy |
 | **Reduced joins**: Related data can be embedded in one document | **16MB document limit**: Large blobs must be stored via GridFS |
 | **Fast reads**: Single document read fetches all related data | **Complex updates**: Updating data in multiple embedded documents is expensive |
 | **Horizontal scaling**: Built-in sharding for distributed data | **Write amplification**: Multi-index updates increase write cost |
-| **Rich query language**: Aggregation pipeline, geospatial, text search | **No SQL**: Different query paradigm â†’ learning curve for SQL developers |
+| **Rich query language**: Aggregation pipeline, geospatial, text search | **No SQL**: Different query paradigm Ã¢â€ â€™ learning curve for SQL developers |
 | **High availability**: Replica sets with automatic failover | **Memory pressure**: Working set must fit in RAM for best performance |
 
 #### 15.1.9 Edge Cases in MongoDB Document Model
@@ -368,7 +368,7 @@ FUNCTION FindDocument(collection, filter, projection):
 ### 15.2 Document Model and Schema Design
 
 
-#### 15.2.1 Embedding vs Referencing â†’ Decision Framework
+#### 15.2.1 Embedding vs Referencing Ã¢â€ â€™ Decision Framework
 
 **Real-World Analogy:**
 
@@ -769,7 +769,7 @@ TRACE:
 | Step   | Operation                                | State            |
 +--------+------------------------------------------+------------------+
 | 1      | Receive insert command                   | Pending          |
-| 2      | Validate document (size Ã¢â€°Â¤ 16MB)          | 112 bytes â†’ OK   |
+| 2      | Validate document (size ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤ 16MB)          | 112 bytes Ã¢â€ â€™ OK   |
 | 3      | Generate _id if missing                  | ObjectId(64a1..) |
 | 4      | Serialize to BSON                        | Binary blob      |
 | 5      | WiredTiger: begin transaction            | Txn#1 started    |
@@ -789,7 +789,7 @@ TRACE:
 **If the email index detects a duplicate:**
 ```
 +--------+------------------------------------------+------------------+
-| 9a     | Email index insert â†’ key exists          | E11000 error     |
+| 9a     | Email index insert Ã¢â€ â€™ key exists          | E11000 error     |
 | 10a    | WiredTiger: abort transaction            | Txn#1 rolled back|
 | 11a    | Return { acknowledged: false, error:     | Error response   |
 |        |   "E11000 duplicate key" }               |                  |
@@ -797,7 +797,7 @@ TRACE:
 ```
 ---
 
-### 15.3 CRUD Operations â†’ Complete Reference
+### 15.3 CRUD Operations Ã¢â€ â€™ Complete Reference
 
 
 #### 15.3.1 CRUD Operations Summary Table
@@ -816,7 +816,7 @@ TRACE:
 | **Delete Many** | `deleteMany()` | DELETE FROM ... WHERE | Delete all matching documents | Batch (not multi-doc atomic) | O(m log n) |
 | **Bulk Write** | `bulkWrite()` | Batch INSERT/UPDATE/DELETE | Execute mixed operations in batch | Configurable ordered/unordered | Varies |
 
-#### 15.3.2 Create (Insert) â†’ Detailed with Variations
+#### 15.3.2 Create (Insert) Ã¢â€ â€™ Detailed with Variations
 
 **Real-World Analogy:** Adding a new patient form to the filing cabinet. You fill out the form (document) and place it in the patient folder (collection).
 
@@ -847,7 +847,7 @@ db.users.insertOne({
     name: "Alice Chen",
     email: "alice@example.com"
 })
-// If _id "user_alice_001" already exists â†’ E11000 duplicate key error
+// If _id "user_alice_001" already exists Ã¢â€ â€™ E11000 duplicate key error
 
 // === INSERT WITH ORDERED FALSE ===
 // Continue inserting even if some documents fail
@@ -913,7 +913,7 @@ db.orders.insertMany([
 ])
 ```
 
-#### 15.3.4 Read (Query) â†’ Query Operators Reference
+#### 15.3.4 Read (Query) Ã¢â€ â€™ Query Operators Reference
 
 ```javascript
 // === BASIC FILTERS ===
@@ -924,20 +924,20 @@ db.orders.find({ status: "shipped" })
 
 // Comparison operators
 db.orders.find({ total: { $gte: 500, $lt: 2000 } })
-// Output: Returns orders #1 ($1549.97) and #3 ($499.99 â†’ no, $499.99 < 500)
-// Wait: $gte: 500 â†’ $1499.99 and $1549.97 but $499.99 not included
+// Output: Returns orders #1 ($1549.97) and #3 ($499.99 Ã¢â€ â€™ no, $499.99 < 500)
+// Wait: $gte: 500 Ã¢â€ â€™ $1499.99 and $1549.97 but $499.99 not included
 // Only order #1 ($1549.97)
 
 // $in and $nin
 db.orders.find({ status: { $in: ["shipped", "delivered"] } })
 // Output: Returns orders #1 (delivered) and #2 (shipped)
 
-// $exists â†’ check if field exists
+// $exists Ã¢â€ â€™ check if field exists
 db.orders.find({ delivered_at: { $exists: true } })
 // Output: Returns orders #1 (has delivered_at) and #2 (delivered_at is null but field exists)
 // Note: $exists checks for field presence, not null
 
-// $type â†’ match by BSON type
+// $type Ã¢â€ â€™ match by BSON type
 db.orders.find({ delivered_at: { $type: "date" } })
 // Output: Returns order #1 only (delivered_at is Date; order #2 has null type)
 
@@ -969,11 +969,11 @@ db.orders.find({ "shipping_address.city": "San Francisco" })
 
 // === ELEMENT OPERATORS ===
 
-// $expr â†’ use aggregation expressions in queries (4.2+)
+// $expr Ã¢â€ â€™ use aggregation expressions in queries (4.2+)
 db.orders.find({ $expr: { $gt: ["$total", 500] } })
 // Output: Returns orders #1 and #2
 
-// $regex â†’ pattern matching
+// $regex Ã¢â€ â€™ pattern matching
 db.users.find({ name: { $regex: /^A/, $options: "i" } })
 // Output: Returns Alice Chen
 
@@ -996,7 +996,7 @@ db.orders.find(
 // { total: 499.99, status: "pending", items: [{ name: "Monitor" }] }
 ```
 
-#### 15.3.5 Update â†’ Update Operators Reference
+#### 15.3.5 Update Ã¢â€ â€™ Update Operators Reference
 
 ```javascript
 // === $set: Set/overwrite field values ===
@@ -1053,7 +1053,7 @@ db.users.updateOne(
 // $addToSet: Add element only if not already present (no duplicates)
 db.users.updateOne(
     { email: "alice@example.com" },
-    { $addToSet: { interests: "hiking" } }  // Already exists â†’ no-op
+    { $addToSet: { interests: "hiking" } }  // Already exists Ã¢â€ â€™ no-op
 )
 
 // $pull: Remove all occurrences matching condition
@@ -1094,7 +1094,7 @@ db.orders.updateOne(
 )
 ```
 
-#### 15.3.6 Delete â†’ Variations
+#### 15.3.6 Delete Ã¢â€ â€™ Variations
 
 ```javascript
 // === deleteOne: Remove a single document ===
@@ -1128,7 +1128,7 @@ STEP 2: Server validates document BSON size (max 16MB per doc, max 48MB per batc
 STEP 3: Server generates ObjectId for documents missing _id
 STEP 4: For each document, WiredTiger begins internal transaction
 STEP 5: Document serialized to BSON, written to data files
-STEP 6: All indexes updated â†’ each index is a B-tree insert O(log n)
+STEP 6: All indexes updated Ã¢â€ â€™ each index is a B-tree insert O(log n)
 STEP 7: Oplog entry written (replica set only)
 STEP 8: Write concern satisfied (default: acknowledged by primary)
 STEP 9: Transaction committed
@@ -1143,8 +1143,8 @@ STEP 3: Planner evaluates all viable indexes using:
         - IndexStats (cardinality, distribution)
         - Query shape (equality vs range vs sort)
 STEP 4: Winning plan selected (lowest estimated cost)
-STEP 5: B-tree index traversed: root â†’ internal â†’ leaf node
-        Ã¢â€°Ë† 3-4 I/O operations for billions of documents
+STEP 5: B-tree index traversed: root Ã¢â€ â€™ internal Ã¢â€ â€™ leaf node
+        ÃƒÂ¢Ã¢â‚¬Â°Ã‹â€  3-4 I/O operations for billions of documents
 STEP 6: RecordIds extracted from index leaf entries
 STEP 7: Documents fetched from storage engine
 STEP 8: Projection applied, results serialized to BSON
@@ -1251,17 +1251,17 @@ TRACE:
 | 6     | Update email index:                        |                     |
 | 6a    | Remove old key from email B-tree           | "alice@example.com" |
 | 6b    | Check new key doesn't violate uniqueness   | "alice.new@ex.."    |
-| 6c    | Insert new key into email B-tree           | â†’ "alice.new@ex.."  |
+| 6c    | Insert new key into email B-tree           | Ã¢â€ â€™ "alice.new@ex.."  |
 | 7     | Write oplog entry                          | "u" opcode          |
 | 8     | Commit transaction                         | Txn#5 committed     |
 | 9     | Return { matchedCount: 1, modifiedCount:1} |                     |
 +-------+--------------------------------------------+---------------------+
 
 Index states during step 6:
-  Before: [..., "alice@example.com" â†’ RID=1001, "bob@example.com" â†’ RID=1002]
-  Step 6a: Remove "alice@example.com" â†’ RID=1001
-  Step 6b: Check "alice.new@example.com" not in tree Ã¢Å“â€œ
-  Step 6c: [..., "alice.new@example.com" â†’ RID=1001, "bob@example.com" â†’ RID=1002]
+  Before: [..., "alice@example.com" Ã¢â€ â€™ RID=1001, "bob@example.com" Ã¢â€ â€™ RID=1002]
+  Step 6a: Remove "alice@example.com" Ã¢â€ â€™ RID=1001
+  Step 6b: Check "alice.new@example.com" not in tree ÃƒÂ¢Ã…â€œÃ¢â‚¬Å“
+  Step 6c: [..., "alice.new@example.com" Ã¢â€ â€™ RID=1001, "bob@example.com" Ã¢â€ â€™ RID=1002]
 ```
 
 #### 15.3.10 Edge Cases in CRUD Operations
@@ -1270,9 +1270,9 @@ Index states during step 6:
 |-----------|---------|----------|
 | **Upsert creates document with partial fields** | Upsert only sets fields in the update, not the full document | Initialize with defaults before upsert |
 | **Large batch insert ( > 100MB )** | insertMany with 1000+ large documents may exceed batch limits | Split into smaller batches (500 docs or 48MB) |
-| **Update reordering** | $push and $pull in same update â†’ order of operations defined by operator precedence | Use two separate updates or $each with $position |
+| **Update reordering** | $push and $pull in same update Ã¢â€ â€™ order of operations defined by operator precedence | Use two separate updates or $each with $position |
 | **Array field with $ and $elemMatch interaction** | Positional operator $ targets the first match from query, not from arrayFilters | Use filtered positional $[identifier] for precision |
-| **findOneAndDelete with no matching doc** | Returns null â†’ must handle client-side | Check return value before accessing |
+| **findOneAndDelete with no matching doc** | Returns null Ã¢â€ â€™ must handle client-side | Check return value before accessing |
 | **Immutable _id field** | $set on _id returns "Modification on _id is not allowed" | Use replaceOne with new document (but better to avoid changing _id) |
 | **Time-series with unbounded arrays** | $push on a time-series field creates ever-growing document | Use bucketing: store 1-hour summaries, not raw events |
 | **Concurrent update conflicts** | WiredTiger uses document-level locking; concurrent writes to same doc cause WriteConflict | Retry on WriteConflict; design for low contention |
@@ -1288,18 +1288,18 @@ Index states during step 6:
 | **Single Field** | Index on one field | Equality, range, sort on a single field | Single key per entry | One field | Only optimizes queries filtered on this field |
 | **Compound** | Index on 2+ fields | Multi-field queries, covering indexes | Lexicographic ordering of combined key | 32 fields | Order of fields matters (ESR rule) |
 | **Multikey** | Index on array field | Queries filtering on array elements | One index entry per array element | One array field per index | Cannot be compound with another multikey field |
-| **Text** | Full-text search on string fields | Text search with stemming and stop words | Tokenized terms â†’ inverted index | Multiple text fields | One text index per collection; no exact match |
+| **Text** | Full-text search on string fields | Text search with stemming and stop words | Tokenized terms Ã¢â€ â€™ inverted index | Multiple text fields | One text index per collection; no exact match |
 | **Geospatial (2d)** | 2D coordinate index | Flat-earth geo queries | Quadtree / geohash | One coordinate field | Limited to flat-earth calculations |
 | **Geospatial (2dsphere)** | Spherical geo index | Earth-like geo queries on GeoJSON | Geohash on sphere | One GeoJSON field | Requires valid GeoJSON |
 | **TTL** | Auto-expire documents after time | Session stores, logs, temp data | Single field (usually Date) with expireAt | One field | Cannot be compound; no guarantee on deletion timing |
-| **Hashed** | Hash of field value for sharding | Shard key distribution | Hash â†’ bucket | One field | Only equality queries; no range queries |
+| **Hashed** | Hash of field value for sharding | Shard key distribution | Hash Ã¢â€ â€™ bucket | One field | Only equality queries; no range queries |
 | **Unique** | Enforces unique values on field | Email, username uniqueness | Any index + unique constraint | Per index creation | Cannot be applied to existing dupes |
 | **Partial** | Indexes only matching documents | Sparse query patterns | Standard + filter expression | One per index | Query must match filter to use index |
 | **Sparse** | Only indexes docs with field | Optional field queries | Standard + null skip | One per index | Can cause inconsistent results if not understood |
 
 #### 15.4.2 Single Field Index
 
-**Real-World Analogy:** A book's index at the back â†’ one entry per topic, alphabetically sorted. You find the topic, jump to the page.
+**Real-World Analogy:** A book's index at the back Ã¢â€ â€™ one entry per topic, alphabetically sorted. You find the topic, jump to the page.
 
 ```javascript
 // Create ascending index on email field
@@ -1324,7 +1324,7 @@ db.users.find().sort({ email: 1 })                       // Sort
 //          /  |  \   /  \    /  \
 //        a.. d.. f.. h.. k.. n.. q..
 // Email entries as leaf nodes:
-// ["alice@ex.." â†’ RID1, "bob@ex.." â†’ RID2, ...]
+// ["alice@ex.." Ã¢â€ â€™ RID1, "bob@ex.." Ã¢â€ â€™ RID2, ...]
 ```
 
 #### 15.4.3 Compound Index
@@ -1342,8 +1342,8 @@ db.orders.createIndex({ customer_id: 1, created_at: -1 })
 
 // This optimizes:
 db.orders.find({ customer_id: "user1" }).sort({ created_at: -1 })
-// Step 1: B-tree equality lookup on customer_id â†’ narrows to all user1 orders
-// Step 2: Within that subtree, created_at is already sorted desc â†’ no extra sort
+// Step 1: B-tree equality lookup on customer_id Ã¢â€ â€™ narrows to all user1 orders
+// Step 2: Within that subtree, created_at is already sorted desc Ã¢â€ â€™ no extra sort
 
 // Compound index: status (equality) + created_at (sort) + total (range)
 db.orders.createIndex({ status: 1, created_at: -1, total: 1 })
@@ -1355,12 +1355,12 @@ db.orders.find({
     total: { $gte: 100 }
 }).sort({ created_at: -1 })
 
-// Covering query (all fields in index â†’ no document fetch needed)
+// Covering query (all fields in index Ã¢â€ â€™ no document fetch needed)
 db.orders.find(
     { customer_id: "user1" },
     { customer_id: 1, created_at: 1, _id: 0 }
 ).sort({ created_at: -1 })
-// "totalDocsExamined": 0  â† FETCH stage might be skipped!
+// "totalDocsExamined": 0  Ã¢â€ Â FETCH stage might be skipped!
 ```
 
 #### 15.4.4 Multikey Index
@@ -1374,17 +1374,17 @@ db.users.createIndex({ interests: 1 })
 // MongoDB creates an index entry for EACH array element
 // Document: { name: "Alice", interests: ["reading", "hiking", "photography"] }
 // Index entries:
-//   "hiking" â†’ RID1
-//   "photography" â†’ RID1
-//   "reading" â†’ RID1
+//   "hiking" Ã¢â€ â€™ RID1
+//   "photography" Ã¢â€ â€™ RID1
+//   "reading" Ã¢â€ â€™ RID1
 
 // This query uses the multikey index:
 db.users.find({ interests: "hiking" })
-// B-tree lookup for "hiking" â†’ finds RID1 (Alice), RID5 (Eve)
+// B-tree lookup for "hiking" Ã¢â€ â€™ finds RID1 (Alice), RID5 (Eve)
 
 // Compound multikey: only ONE field can be an array
-// OK: db.articles.createIndex({ author: 1, tags: 1 })  â† tags is array, author is not
-// Error: db.articles.createIndex({ tags: 1, categories: 1 })  â† both arrays
+// OK: db.articles.createIndex({ author: 1, tags: 1 })  Ã¢â€ Â tags is array, author is not
+// Error: db.articles.createIndex({ tags: 1, categories: 1 })  Ã¢â€ Â both arrays
 // "Cannot create index with parallel arrays [tags] [categories]"
 ```
 
@@ -1415,12 +1415,12 @@ db.articles.find({ $text: { $search: "\"aggregation pipeline\"" } })
 
 **How Text Index Works:**
 ```
-STEP 1: Tokenization: "MongoDB aggregation pipeline" â†’ ["mongodb", "aggregation", "pipeline"]
-STEP 2: Stemming: "running" â†’ "run", "pipeline" â†’ "pipelin" (Porter stemmer)
+STEP 1: Tokenization: "MongoDB aggregation pipeline" Ã¢â€ â€™ ["mongodb", "aggregation", "pipeline"]
+STEP 2: Stemming: "running" Ã¢â€ â€™ "run", "pipeline" Ã¢â€ â€™ "pipelin" (Porter stemmer)
 STEP 3: Stop words removed: "the", "a", "an", "is", ... (language-specific)
 STEP 4: Inverted index built:
-         "mongodb"     â†’ [{doc1, weight:10}, {doc3, weight:1}]
-         "aggregation" â†’ [{doc1, weight:10}, {doc2, weight:1}]
+         "mongodb"     Ã¢â€ â€™ [{doc1, weight:10}, {doc3, weight:1}]
+         "aggregation" Ã¢â€ â€™ [{doc1, weight:10}, {doc2, weight:1}]
 STEP 5: TextScore = sum(weight * frequency) / document_length_factor
 ```
 
@@ -1467,7 +1467,7 @@ db.places.find({
 #### 15.4.7 TTL Index
 
 ```javascript
-// TTL index â†’ documents auto-delete after 3600 seconds (1 hour)
+// TTL index Ã¢â€ â€™ documents auto-delete after 3600 seconds (1 hour)
 db.sessions.createIndex(
     { created_at: 1 },
     { expireAfterSeconds: 3600 }
@@ -1487,7 +1487,7 @@ db.adminCommand({ currentOp: true, "desc": "TTLMonitor" })
 // TTL behavior:
 // - Runs every 60 seconds (default interval)
 // - Deletes documents where created_at + expireAfterSeconds < now
-// - Not real-time â†’ up to 60s delay in deletion
+// - Not real-time Ã¢â€ â€™ up to 60s delay in deletion
 // - Cannot be compound index
 // - Only works on date fields (ISODate, Date)
 ```
@@ -1506,7 +1506,7 @@ STEP 6: Key + RecordId inserted into B-tree (sorted position)
 STEP 7: Progress reported to client periodically
 STEP 8: When scan completes, index statistics computed
 STEP 9: Index marked as "ready" in collection metadata
-STEP 10: Lock released â†’ collection now visible for queries via this index
+STEP 10: Lock released Ã¢â€ â€™ collection now visible for queries via this index
 ```
 
 **Query Planner Index Selection:**
@@ -1595,15 +1595,15 @@ Trace of B-tree traversal (conceptual):
 Index entries sorted lexicographically by (customer_id, status, created_at):
 
 Leaf Node Layout:
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚ ("user0","pending",Mar20) â†’ RID7                                    â”‚
-â”‚ ("user1","delivered",Mar15) â†’ RID1                                  â”‚
-â”‚ ("user1","pending",Mar25) â†’ RID3                                    â”‚
-â”‚ ("user1","shipped",Mar22) â†’ RID2      â† exact match found here      â”‚
-â”‚ ("user2","cancelled",Mar10) â†’ RID4                                   â”‚
-â”‚ ("user2","shipped",Mar18) â†’ RID5                                    â”‚
-â”‚ ("user3","shipped",Mar12) â†’ RID6                                    â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
+Ã¢â€â€š ("user0","pending",Mar20) Ã¢â€ â€™ RID7                                    Ã¢â€â€š
+Ã¢â€â€š ("user1","delivered",Mar15) Ã¢â€ â€™ RID1                                  Ã¢â€â€š
+Ã¢â€â€š ("user1","pending",Mar25) Ã¢â€ â€™ RID3                                    Ã¢â€â€š
+Ã¢â€â€š ("user1","shipped",Mar22) Ã¢â€ â€™ RID2      Ã¢â€ Â exact match found here      Ã¢â€â€š
+Ã¢â€â€š ("user2","cancelled",Mar10) Ã¢â€ â€™ RID4                                   Ã¢â€â€š
+Ã¢â€â€š ("user2","shipped",Mar18) Ã¢â€ â€™ RID5                                    Ã¢â€â€š
+Ã¢â€â€š ("user3","shipped",Mar12) Ã¢â€ â€™ RID6                                    Ã¢â€â€š
+Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
 
 Execution Trace:
 +--------+----------------------------------------------+------------------+
@@ -1620,8 +1620,8 @@ Execution Trace:
 | 5      | B-tree traversal:                              |                   |
 | 5a     | Root node: find "user1" range                 | [u0-u5] range    |
 | 5b     | Internal node: narrow by "user1"+"shipped"    | Exact prefix     |
-| 5c     | Leaf node: scan backwards for -1 sort         | â† backward scan  |
-| 6      | Found: ("user1","shipped",Mar22) â†’ RID2       | 1 key examined   |
+| 5c     | Leaf node: scan backwards for -1 sort         | Ã¢â€ Â backward scan  |
+| 6      | Found: ("user1","shipped",Mar22) Ã¢â€ â€™ RID2       | 1 key examined   |
 | 7      | Fetch document at RID2                        | 1 doc fetched    |
 | 8      | Apply projection (none specified)             | Full doc         |
 | 9      | Return result set of 1 document               | Done             |
@@ -1744,7 +1744,7 @@ class MongoDBIndexManager:
             ("age", DESCENDING)
         ], background=True)
 
-        # Orders indexes â†’ ESR pattern
+        # Orders indexes Ã¢â€ â€™ ESR pattern
         self.db.orders.create_index([
             ("customer_id", ASCENDING),
             ("status", ASCENDING),
@@ -1802,7 +1802,7 @@ class MongoDBIndexManager:
 
         # Check if index was used
         if execution.get("totalDocsExamined", 0) > execution.get("nReturned", 0) * 2:
-            print("WARNING: High document examination ratio â†’ consider adding/improving index")
+            print("WARNING: High document examination ratio Ã¢â€ â€™ consider adding/improving index")
 
     def list_indexes(self, collection_name):
         """List all indexes on a collection."""
@@ -1839,7 +1839,7 @@ if __name__ == "__main__":
 | Operation | Time Complexity | Space Complexity | Why |
 |-----------|----------------|-----------------|-----|
 | **Single index creation** | O(n log n) | O(n) | Full collection scan + B-tree insert per document |
-| **Index lookup (equality)** | O(log n) | O(1) | B-tree height Ã¢â€°Ë† log_f(n); f = fanout (Ã¢â€°Ë† 500) |
+| **Index lookup (equality)** | O(log n) | O(1) | B-tree height ÃƒÂ¢Ã¢â‚¬Â°Ã‹â€  log_f(n); f = fanout (ÃƒÂ¢Ã¢â‚¬Â°Ã‹â€  500) |
 | **Index lookup (range)** | O(log n + m) | O(m) | B-tree to find start + sequential scan of m leaves |
 | **Compound index lookup** | O(log n + m) | O(m) | Single B-tree traversal regardless of fields count |
 | **Index insert (write)** | O(log n) | O(1) | B-tree insert at leaf; potential rebalance |
@@ -1882,7 +1882,7 @@ if __name__ == "__main__":
 
 #### 15.5.1 Aggregation Pipeline Stages Reference
 
-The aggregation pipeline is MongoDB's equivalent of SQL's GROUP BY, JOIN, and complex transformations â†’ but more powerful. Documents pass through a sequence of **stages**, where each stage transforms the document stream.
+The aggregation pipeline is MongoDB's equivalent of SQL's GROUP BY, JOIN, and complex transformations Ã¢â€ â€™ but more powerful. Documents pass through a sequence of **stages**, where each stage transforms the document stream.
 
 **Real-World Analogy:** An assembly line in a car factory.
 - **Stage 1 ($match)**: Inspect parts, keep only those that meet specs
@@ -1905,24 +1905,24 @@ db.collection.aggregate([
 |-------|----------------|---------|------------------|
 | **$match** | WHERE / HAVING | Filter documents by conditions | Reduces pipeline size (place first!) |
 | **$group** | GROUP BY + aggregate functions | Group documents by key, compute aggregates | O(n) memory for groups |
-| **$sort** | ORDER BY | Sort document stream | O(n log n) â†’ may spill to disk |
+| **$sort** | ORDER BY | Sort document stream | O(n log n) Ã¢â€ â€™ may spill to disk |
 | **$project** | SELECT (columns + expressions) | Reshape documents, include/exclude fields, compute expressions | Per-document transformation |
 | **$lookup** | LEFT JOIN (outer) | Join with another collection | May be slow without indexes on foreignField |
 | **$unwind** | UNNEST / LATERAL VIEW | Deconstruct array into multiple documents | Multiplies document count |
 | **$limit** | LIMIT | Pass first N documents | Truncates stream |
 | **$skip** | OFFSET / SKIP | Skip first N documents | Must still process all skipped docs |
 | **$count** | COUNT(*) | Return count of documents | Returns single document |
-| **$addFields** | â†’ | Add new fields to documents | Per-document |
+| **$addFields** | Ã¢â€ â€™ | Add new fields to documents | Per-document |
 | **$bucket** | WIDTH_BUCKET / CASE WHEN | Categorize into buckets | Groups into ranges |
-| **$facet** | â†’ | Multiple pipelines in parallel | Parallel branching |
+| **$facet** | Ã¢â€ â€™ | Multiple pipelines in parallel | Parallel branching |
 | **$unionWith** | UNION ALL | Combine results from same collection | Appends streams |
 | **$setWindowFields** | Window functions (RANK, ROW_NUMBER) | Rank, running total, moving average | 5.2+ feature; requires sort |
 | **$out** | SELECT INTO | Write results to new collection | Materializes pipeline |
 | **$merge** | MERGE INTO | Merge results into existing collection | Upserts into target |
 
-#### 15.5.2 Key Stages â†’ Detailed Examples
+#### 15.5.2 Key Stages Ã¢â€ â€™ Detailed Examples
 
-**$match â†’ Filter documents (always push this first):**
+**$match Ã¢â€ â€™ Filter documents (always push this first):**
 ```javascript
 // Place $match as the FIRST stage for optimal performance
 // If there's an index on the filtered field, $match uses it
@@ -1936,7 +1936,7 @@ db.orders.aggregate([
 // With $match first: Only ~20% of documents continue downstream
 ```
 
-**$group â†’ Group and aggregate:**
+**$group Ã¢â€ â€™ Group and aggregate:**
 ```javascript
 // Compute customer purchase statistics
 db.orders.aggregate([
@@ -1958,7 +1958,7 @@ db.orders.aggregate([
 // $addToSet (unique array), $push (all values array)
 ```
 
-**$sort â†’ Order documents:**
+**$sort Ã¢â€ â€™ Order documents:**
 ```javascript
 // Sort uses index if $match provides equality on the sort key's prefix
 // Otherwise, in-memory or disk-based sort
@@ -1973,7 +1973,7 @@ db.orders.aggregate([
 ], { allowDiskUse: true })
 ```
 
-**$project â†’ Reshape documents with expressions:**
+**$project Ã¢â€ â€™ Reshape documents with expressions:**
 ```javascript
 // $project controls which fields pass through and can compute new fields
 db.orders.aggregate([
@@ -2009,7 +2009,7 @@ db.orders.aggregate([
 //   delivery_days: 3 }
 ```
 
-**$lookup â†’ Join collections:**
+**$lookup Ã¢â€ â€™ Join collections:**
 ```javascript
 // === BASIC LOOKUP (LEFT JOIN) ===
 // Join orders with customers
@@ -2056,7 +2056,7 @@ db.customers.aggregate([
 // { _id: ObjectId("..."), name: "Alice", recent_orders: [{ total: 1549.97, ... }, { total: 499.99, ... }] }
 ```
 
-**$unwind â†’ Deconstruct arrays:**
+**$unwind Ã¢â€ â€™ Deconstruct arrays:**
 ```javascript
 // Deconstruct items array so each item becomes a separate document
 db.orders.aggregate([
@@ -2107,7 +2107,7 @@ db.orders.aggregate([
 STEP 1: Client sends aggregate command with pipeline stages array
 STEP 2: mongod validates each stage's syntax and operator availability
 STEP 3: Query planner analyzes early stages:
-        - $match at position 0? Can use index â†’ IXSCAN
+        - $match at position 0? Can use index Ã¢â€ â€™ IXSCAN
         - $sort at position 0 or 1? Can use index for sort
 STEP 4: If $match is not first, MongoDB may optimize by reordering:
         - Automatic $match optimization: $match moves before $project
@@ -2202,7 +2202,7 @@ FUNCTION OptimizePipeline(stages):
 
 #### 15.5.6 Dry Run Trace: Aggregation Pipeline Stages
 
-**Pipeline:** Sales report by city â†’ $match â†’ $unwind â†’ $lookup â†’ $group â†’ $sort â†’ $limit
+**Pipeline:** Sales report by city Ã¢â€ â€™ $match Ã¢â€ â€™ $unwind Ã¢â€ â€™ $lookup Ã¢â€ â€™ $group Ã¢â€ â€™ $sort Ã¢â€ â€™ $limit
 
 ```javascript
 db.orders.aggregate([
@@ -2250,7 +2250,7 @@ Initial Collection: 3 orders (2 delivered, 1 pending)
 |        |                                         |  price:400}],city:NY}      |
 +--------+-----------------------------------------+----------------------------+
 | $unwind| Deconstruct items array                  | {_id:1, items:{pid:A,qty:1,|
-|        | Output: 3 docs (order1â†’2, order2â†’1)      |  price:100},city:SF}       |
+|        | Output: 3 docs (order1Ã¢â€ â€™2, order2Ã¢â€ â€™1)      |  price:100},city:SF}       |
 |        |                                         | {_id:1, items:{pid:B,qty:2,|
 |        |                                         |  price:25},city:SF}        |
 |        |                                         | {_id:2, items:{pid:C,qty:1,|
@@ -2274,7 +2274,7 @@ Initial Collection: 3 orders (2 delivered, 1 pending)
 |         | lookup on _id)                          | object, not array          |
 +--------+-----------------------------------------+----------------------------+
 | $group | Group by product.category                | {_id:"Electronics",        |
-|        | revenue=ÃŽÂ£(qty*price), units=ÃŽÂ£(qty)      |  revenue:500, units:2}     |
+|        | revenue=ÃƒÅ½Ã‚Â£(qty*price), units=ÃƒÅ½Ã‚Â£(qty)      |  revenue:500, units:2}     |
 |        | Output: 2 groups                         | {_id:"Accessories",        |
 |        |                                         |  revenue:50, units:2}      |
 +--------+-----------------------------------------+----------------------------+
@@ -2607,7 +2607,7 @@ if __name__ == "__main__":
 |------------|---------------|
 | **Powerful transformations**: Multi-stage processing without leaving DB | **Memory-bound**: 100MB limit per stage (allowDiskUse for spillover) |
 | **Index-aware**: $match and $sort leverage indexes | **No recursive operations**: Can't process hierarchical/tree data easily |
-| **Streaming**: Lazy evaluation â†’ results available incrementally | **Debugging**: Hard to debug â†’ can't inspect intermediate stages |
+| **Streaming**: Lazy evaluation Ã¢â€ â€™ results available incrementally | **Debugging**: Hard to debug Ã¢â€ â€™ can't inspect intermediate stages |
 | **$facet parallel**: Multiple pipelines in one pass | **Write bottleneck**: $out and $merge stages lock collections |
 | **Expressions**: Rich expression language ($cond, $map, $reduce) | ****Complexity**: Deeply nested pipelines become unreadable |
 | **Schema evolution**: Handles varying document structures | **Stage ordering**: Wrong order (e.g., $group before $match) kills performance |
@@ -2637,38 +2637,38 @@ A **replica set** is a group of MongoDB servers that maintain the same data set,
 **Real-World Analogy:** A team of scribes in a medieval scriptorium.
 - **Primary Scribe**: The master scribe who writes the original manuscript (all writes).
 - **Secondary Scribes**: Apprentices copying the manuscript (read-only replicas).
-- **Oplog**: The master's dictation notes â†’ each scribe reads these to create their copy.
+- **Oplog**: The master's dictation notes Ã¢â€ â€™ each scribe reads these to create their copy.
 - **Election**: When the master scribe falls ill, the apprentices vote to choose a new master.
 
 ```
 Replica Set Architecture (3-node):
 
-                     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                     â”‚      Client Application       â”‚
-                     â”‚  Write: primary only          â”‚
-                     â”‚  Read: configurable pref      â”‚
-                     â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                              â”‚
-                    writes â”€â”€â”€â”¤ reads (optional)
-                              â”‚
-                â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                â”‚       PRIMARY (mongod)          â”‚
-                â”‚  State: PRIMARY                 â”‚
-                â”‚  Priority: 2                    â”‚
-                â”‚  Oplog: last 24h or 10% disk    â”‚
-                â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                           â”‚ oplog replication
-               â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-               â”‚           â”‚               â”‚
-               â–¼           â–¼               â–¼
-    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-    â”‚  SECONDARY 1     â”‚ â”‚  SECONDARY 2     â”‚ â”‚  ARBITER         â”‚
-    â”‚  State: SECONDARYâ”‚ â”‚  State: SECONDARYâ”‚ â”‚  State: ARBITER  â”‚
-    â”‚  Priority: 1     â”‚ â”‚  Priority: 1     â”‚ â”‚  Priority: 0     â”‚
-    â”‚  Votes: 1        â”‚ â”‚  Votes: 1        â”‚ â”‚  Votes: 1        â”‚
-    â”‚  Hidden: false   â”‚ â”‚  Hidden: true    â”‚ â”‚  Data: none      â”‚
-    â”‚  Reads: allowed  â”‚ â”‚  Reads: no       â”‚ â”‚  Reads: no       â”‚
-    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                     Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
+                     Ã¢â€â€š      Client Application       Ã¢â€â€š
+                     Ã¢â€â€š  Write: primary only          Ã¢â€â€š
+                     Ã¢â€â€š  Read: configurable pref      Ã¢â€â€š
+                     Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
+                              Ã¢â€â€š
+                    writes Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¤ reads (optional)
+                              Ã¢â€â€š
+                Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€“Â¼Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
+                Ã¢â€â€š       PRIMARY (mongod)          Ã¢â€â€š
+                Ã¢â€â€š  State: PRIMARY                 Ã¢â€â€š
+                Ã¢â€â€š  Priority: 2                    Ã¢â€â€š
+                Ã¢â€â€š  Oplog: last 24h or 10% disk    Ã¢â€â€š
+                Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
+                           Ã¢â€â€š oplog replication
+               Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¼Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
+               Ã¢â€â€š           Ã¢â€â€š               Ã¢â€â€š
+               Ã¢â€“Â¼           Ã¢â€“Â¼               Ã¢â€“Â¼
+    Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
+    Ã¢â€â€š  SECONDARY 1     Ã¢â€â€š Ã¢â€â€š  SECONDARY 2     Ã¢â€â€š Ã¢â€â€š  ARBITER         Ã¢â€â€š
+    Ã¢â€â€š  State: SECONDARYÃ¢â€â€š Ã¢â€â€š  State: SECONDARYÃ¢â€â€š Ã¢â€â€š  State: ARBITER  Ã¢â€â€š
+    Ã¢â€â€š  Priority: 1     Ã¢â€â€š Ã¢â€â€š  Priority: 1     Ã¢â€â€š Ã¢â€â€š  Priority: 0     Ã¢â€â€š
+    Ã¢â€â€š  Votes: 1        Ã¢â€â€š Ã¢â€â€š  Votes: 1        Ã¢â€â€š Ã¢â€â€š  Votes: 1        Ã¢â€â€š
+    Ã¢â€â€š  Hidden: false   Ã¢â€â€š Ã¢â€â€š  Hidden: true    Ã¢â€â€š Ã¢â€â€š  Data: none      Ã¢â€â€š
+    Ã¢â€â€š  Reads: allowed  Ã¢â€â€š Ã¢â€â€š  Reads: no       Ã¢â€â€š Ã¢â€â€š  Reads: no       Ã¢â€â€š
+    Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
 ```
 
 #### 15.6.2 Replica Set Components
@@ -2681,7 +2681,7 @@ Replica Set Architecture (3-node):
 | **Delayed Secondary** | Replicates with time delay (e.g., 1 hour) | Full data set (delayed) | No (priority 0) | For point-in-time recovery |
 | **Hidden Secondary** | Not visible to application queries | Full data set | Yes | For analytics, backup, reporting |
 
-#### 15.6.3 Replica Set Election Process â†’ Numbered Steps
+#### 15.6.3 Replica Set Election Process Ã¢â€ â€™ Numbered Steps
 
 The election process determines which secondary becomes the new primary when the current primary becomes unavailable.
 
@@ -2702,10 +2702,10 @@ STEP 3: CANDIDATE ANNOUNCEMENT
 
 STEP 4: VOTING
         Each voting member evaluates the candidate:
-        - Am I aware of a higher-term primary? â†’ Vote NO
-        - Is candidate's oplog ahead of mine? â†’ Vote NO (lagging secondary)
-        - Has candidate's oplog advanced far enough to be primary? â†’ Check freshness
-        - Am I within the same network partition? â†’ Basic health check
+        - Am I aware of a higher-term primary? Ã¢â€ â€™ Vote NO
+        - Is candidate's oplog ahead of mine? Ã¢â€ â€™ Vote NO (lagging secondary)
+        - Has candidate's oplog advanced far enough to be primary? Ã¢â€ â€™ Check freshness
+        - Am I within the same network partition? Ã¢â€ â€™ Basic health check
 
         Voting rules:
         - A node votes YES if:
@@ -2717,9 +2717,9 @@ STEP 4: VOTING
 STEP 5: VOTE COUNT
         Candidate needs a MAJORITY of all voting members to win
         Majority = floor(total_voting_members / 2) + 1
-        Example: 3 voting members â†’ majority = 2 votes needed
-        Example: 5 voting members â†’ majority = 3 votes needed
-        Example: 7 voting members â†’ majority = 4 votes needed
+        Example: 3 voting members Ã¢â€ â€™ majority = 2 votes needed
+        Example: 5 voting members Ã¢â€ â€™ majority = 3 votes needed
+        Example: 7 voting members Ã¢â€ â€™ majority = 4 votes needed
 
 STEP 6: PRIMARY TRANSITION (if won)
         Candidate transitions to PRIMARY state
@@ -2745,59 +2745,59 @@ STEP 8: SPLIT BRAIN PREVENTION
 
 ```
 Time 0: Normal operation
-+â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+
++Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+
 | Node   | State    | Details                                  |
-+â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+
++Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+
 | P1     | PRIMARY  | Accepts writes. Oplog: term 1, last opt=100|
 | S1     | SECONDARY| Replicating from P1. Oplog term 1, opt=100|
 | S2     | SECONDARY| Replicating from P1. Oplog term 1, opt=100|
-+â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+
++Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+
 
-Time 5s: Network partition â†’ P1 can't reach S1, S2
-+â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+
+Time 5s: Network partition Ã¢â€ â€™ P1 can't reach S1, S2
++Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+
 | P1     | PRIMARY  | Still primary (no heartbeat response)    |
 | S1     | SECONDARY| Heartbeat to P1: TIMEOUT (2s elapsed)   |
 | S2     | SECONDARY| Heartbeat to P1: TIMEOUT                 |
-+â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+
++Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+
 
 Time 10s: Election timeout reached
-+â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+
++Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+
 | P1     | PRIMARY  | Still accepting writes (isolated)        |
 | S1     | CANDIDATE| electionTimeoutMillis=10s elapsed        |
 | S2     | CANDIDATE| Also detecting absence and starting       |
-+â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+
++Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+
 
 Time 10.5s: Vote exchange
-+â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+
++Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+
 | S1     | CANDIDATE| Sends voteRequest to S2                  |
 | S2     | CANDIDATE| Receives S1's request. Check:             |
 |        |          | - Can't see P1? YES (vote YES)           |
 |        |          | - S1's oplog as fresh? YES (both opt=100) |
 |        |          | - Already voted this term? NO             |
-|        |          | â†’ Votes YES for S1                        |
+|        |          | Ã¢â€ â€™ Votes YES for S1                        |
 |        |          | Sends own voteRequest to S1               |
-+â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+
++Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+
 
 Time 11s: Vote count
-+â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+
++Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+
 | S1     | PRIMARY  | Votes: S1 (self) = 1, S2 = 1 = 2 votes  |
 |        |          | Majority needed: floor(3/2)+1 = 2         |
-|        |          | Has 2 â†’ ELECTED! Name: "rs0:27018"        |
-| S2     | SECONDARY| S1 already elected â†’ returns to SECONDARY |
+|        |          | Has 2 Ã¢â€ â€™ ELECTED! Name: "rs0:27018"        |
+| S2     | SECONDARY| S1 already elected Ã¢â€ â€™ returns to SECONDARY |
 |        |          | Starts replicating from S1 (now primary)   |
 | P1     | PRIMARY  | Still isolated, still accepting writes    |
 |        |          | (writes will be rolled back on reconnect)  |
-+â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+
++Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+
 
 Time 30s: Partition heals
-+â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+
++Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+
 | P1     |          | Detects S1 as PRIMARY with higher term    |
 |        | ROLLBACK | P1 was term 1, S1 is term 2              |
 |        |          | P1 must roll back any writes not in S1's  |
 |        |          | oplog (opt > 100 if any writes happened)   |
 |        | SECONDARY| Rollback complete. Becomes SECONDARY.     |
 |        |          | Starts replicating from S1                 |
-+â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€+
++Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬+
 ```
 
 #### 15.6.5 Numbered Steps: Oplog Replication
@@ -2817,7 +2817,7 @@ STEP 5: Secondary applies oplog entries to its own data files
         - Each operation is idempotent (can be safely re-applied)
 STEP 6: Secondary updates its lastAppliedOpTime
 STEP 7: Secondary reports its oplog lag back to primary
-        - Lag = primary's last optime Ã¢Ë†â€™ secondary's last optime
+        - Lag = primary's last optime ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ secondary's last optime
         - Warning threshold: 10 seconds (rs.printSecondaryReplicationInfo())
 ```
 
@@ -3007,14 +3007,14 @@ if __name__ == "__main__":
 | **Initial sync** | O(n) | O(n) | Full data copy from primary to secondary |
 | **Election** | O(V) | O(1) | V = voting members; messages exchanged |
 | **Rollback** | O(r) | O(r) | r = rolled-back operations |
-| **Heartbeat** | O(VÃ‚Â²) network | O(1) | Every node heartbeats every other node |
+| **Heartbeat** | O(VÃƒâ€šÃ‚Â²) network | O(1) | Every node heartbeats every other node |
 
 #### 15.6.10 Advantages & Disadvantages of Replication
 
 | Advantages | Disadvantages |
 |------------|---------------|
 | **High availability**: Automatic failover within 10-15s | **Write latency**: Majority write concern requires network round-trip |
-| **Data redundancy**: Multiple copies of data | **Replication lag**: Async by default â†’ stale reads possible |
+| **Data redundancy**: Multiple copies of data | **Replication lag**: Async by default Ã¢â€ â€™ stale reads possible |
 | **Read scaling**: Distribute reads to secondaries | **Rollback**: Unreplicated writes lost on primary failure |
 | **Disaster recovery**: Delayed secondary for point-in-time recovery | **Complexity**: Requires minimum 3 nodes for production |
 | **No downtime maintenance**: Rolling upgrades | **Network overhead**: Heartbeats and oplog transfer |
@@ -3039,7 +3039,7 @@ if __name__ == "__main__":
 
 #### 15.7.1 Sharding Architecture
 
-**Sharding** is MongoDB's approach to **horizontal scaling** â†’ distributing data across multiple servers (shards) so that the database can handle datasets and throughput that exceed a single server's capacity.
+**Sharding** is MongoDB's approach to **horizontal scaling** Ã¢â€ â€™ distributing data across multiple servers (shards) so that the database can handle datasets and throughput that exceed a single server's capacity.
 
 **Real-World Analogy:** A library that has outgrown one building.
 - **Librarian (mongos)**: The router that knows which book is in which building.
@@ -3050,42 +3050,42 @@ if __name__ == "__main__":
 ```
 Sharded Cluster Architecture:
 
-                     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                     â”‚       Client Application      â”‚
-                     â”‚  Connects to mongos router    â”‚
-                     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                                    â”‚
-                           â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”
-                           â”‚    mongos (x2)  â”‚
-                           â”‚  Query Router   â”‚
-                           â”‚  Routes queries â”‚
-                           â”‚  to correct shardâ”‚
-                           â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                                    â”‚
-              â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-              â”‚                     â”‚                      â”‚
-              â–¼                     â–¼                      â–¼
-     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-     â”‚   Shard A     â”‚   â”‚   Shard B     â”‚    â”‚   Shard C     â”‚
-     â”‚  (ReplicaSet) â”‚   â”‚  (ReplicaSet) â”‚    â”‚  (ReplicaSet) â”‚
-     â”‚  P â”€â”€ S1      â”‚   â”‚  P â”€â”€ S1      â”‚    â”‚  P â”€â”€ S1      â”‚
-     â”‚  â””â”€â”€ S2       â”‚   â”‚  â””â”€â”€ S2       â”‚    â”‚  â””â”€â”€ S2       â”‚
-     â”‚  chunks:      â”‚   â”‚  chunks:      â”‚    â”‚  chunks:      â”‚
-     â”‚  user_0000-   â”‚   â”‚  user_1M-2M   â”‚    â”‚  user_2M-3M   â”‚
-     â”‚  1M           â”‚   â”‚               â”‚    â”‚               â”‚
-     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-              â”‚                     â”‚                      â”‚
-              â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                                    â”‚
-                           â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”
-                           â”‚ Config Server   â”‚
-                           â”‚ (ReplicaSet)    â”‚
-                           â”‚ Metadata store  â”‚
-                           â”‚ routing info    â”‚
-                           â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                     Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
+                     Ã¢â€â€š       Client Application      Ã¢â€â€š
+                     Ã¢â€â€š  Connects to mongos router    Ã¢â€â€š
+                     Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
+                                    Ã¢â€â€š
+                           Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€“Â¼Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
+                           Ã¢â€â€š    mongos (x2)  Ã¢â€â€š
+                           Ã¢â€â€š  Query Router   Ã¢â€â€š
+                           Ã¢â€â€š  Routes queries Ã¢â€â€š
+                           Ã¢â€â€š  to correct shardÃ¢â€â€š
+                           Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
+                                    Ã¢â€â€š
+              Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¼Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
+              Ã¢â€â€š                     Ã¢â€â€š                      Ã¢â€â€š
+              Ã¢â€“Â¼                     Ã¢â€“Â¼                      Ã¢â€“Â¼
+     Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â   Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â    Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
+     Ã¢â€â€š   Shard A     Ã¢â€â€š   Ã¢â€â€š   Shard B     Ã¢â€â€š    Ã¢â€â€š   Shard C     Ã¢â€â€š
+     Ã¢â€â€š  (ReplicaSet) Ã¢â€â€š   Ã¢â€â€š  (ReplicaSet) Ã¢â€â€š    Ã¢â€â€š  (ReplicaSet) Ã¢â€â€š
+     Ã¢â€â€š  P Ã¢â€â‚¬Ã¢â€â‚¬ S1      Ã¢â€â€š   Ã¢â€â€š  P Ã¢â€â‚¬Ã¢â€â‚¬ S1      Ã¢â€â€š    Ã¢â€â€š  P Ã¢â€â‚¬Ã¢â€â‚¬ S1      Ã¢â€â€š
+     Ã¢â€â€š  Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ S2       Ã¢â€â€š   Ã¢â€â€š  Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ S2       Ã¢â€â€š    Ã¢â€â€š  Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ S2       Ã¢â€â€š
+     Ã¢â€â€š  chunks:      Ã¢â€â€š   Ã¢â€â€š  chunks:      Ã¢â€â€š    Ã¢â€â€š  chunks:      Ã¢â€â€š
+     Ã¢â€â€š  user_0000-   Ã¢â€â€š   Ã¢â€â€š  user_1M-2M   Ã¢â€â€š    Ã¢â€â€š  user_2M-3M   Ã¢â€â€š
+     Ã¢â€â€š  1M           Ã¢â€â€š   Ã¢â€â€š               Ã¢â€â€š    Ã¢â€â€š               Ã¢â€â€š
+     Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ    Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
+              Ã¢â€â€š                     Ã¢â€â€š                      Ã¢â€â€š
+              Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¼Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
+                                    Ã¢â€â€š
+                           Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€“Â¼Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
+                           Ã¢â€â€š Config Server   Ã¢â€â€š
+                           Ã¢â€â€š (ReplicaSet)    Ã¢â€â€š
+                           Ã¢â€â€š Metadata store  Ã¢â€â€š
+                           Ã¢â€â€š routing info    Ã¢â€â€š
+                           Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
 ```
 
-#### 15.7.2 Shard Key Selection â†’ Detailed Analysis
+#### 15.7.2 Shard Key Selection Ã¢â€ â€™ Detailed Analysis
 
 **What is a shard key?** A field (or compound fields) MongoDB uses to distribute documents across shards. The shard key determines which chunk a document belongs to.
 
@@ -3099,40 +3099,40 @@ Sharded Cluster Architecture:
 
 | Criterion | Why It Matters | Good Example | Bad Example |
 |-----------|---------------|--------------|-------------|
-| **Cardinality** | More unique values â†’ better distribution | `user_id` (10M users) | `gender` (2 values) |
+| **Cardinality** | More unique values Ã¢â€ â€™ better distribution | `user_id` (10M users) | `gender` (2 values) |
 | **Frequency** | Avoid values that dominate writes | Hashed `_id` | `country: "USA"` for 60% of users |
-| **Monotonic change** | Monotonically increasing â†’ all writes to last chunk | Regular `_id` (auto-increment) | Use hashed instead |
+| **Monotonic change** | Monotonically increasing Ã¢â€ â€™ all writes to last chunk | Regular `_id` (auto-increment) | Use hashed instead |
 | **Write distribution** | Writes should spread across all shards | Hashed email domain | `created_at` (all today's data on one shard) |
 | **Query isolation** | Queries should target few shards | `customer_id` for customer queries | `status` (scatter-gather queries) |
 
 **Shard Key Selection Decision Tree:**
 ```
 Q1: Do queries always include shard key?
-    YES â†’ Range-based sharding (good query locality)
-    NO â†’ Hashed sharding (better write distribution)
+    YES Ã¢â€ â€™ Range-based sharding (good query locality)
+    NO Ã¢â€ â€™ Hashed sharding (better write distribution)
 
 Q2: Is the shard key monotonically increasing?
-    YES â†’ Use hashed sharding (avoid hotspotting)
-    NO â†’ Range sharding may be acceptable
+    YES Ã¢â€ â€™ Use hashed sharding (avoid hotspotting)
+    NO Ã¢â€ â€™ Range sharding may be acceptable
 
 Q3: High cardinality (> 1000 unique values)?
-    YES â†’ Suitable for shard key
-    NO â†’ Use compound shard key (add another field)
+    YES Ã¢â€ â€™ Suitable for shard key
+    NO Ã¢â€ â€™ Use compound shard key (add another field)
 
 Q4: Does shard key support targeted queries?
-    YES â†’ Queries go to 1-2 shards (scatter-gather avoided)
-    NO â†’ All queries broadcast to all shards
+    YES Ã¢â€ â€™ Queries go to 1-2 shards (scatter-gather avoided)
+    NO Ã¢â€ â€™ All queries broadcast to all shards
 ```
 
-#### 15.7.3 Hashed vs Ranged Sharding â†’ Comparison
+#### 15.7.3 Hashed vs Ranged Sharding Ã¢â€ â€™ Comparison
 
 | Aspect | Hashed Sharding | Ranged Sharding |
 |--------|----------------|-----------------|
-| **Distribution** | Hash function maps key â†’ evenly distributed | Key ranges split across shards |
+| **Distribution** | Hash function maps key Ã¢â€ â€™ evenly distributed | Key ranges split across shards |
 | **Write distribution** | Uniform (no hotspots) | May hotspot on monotonically increasing keys |
 | **Range queries** | Not supported (hash destroys ordering) | Efficient (range query targets few shards) |
 | **Sort queries** | Scatter-gather (no ordering per shard) | Can use index-based sort per shard |
-| **Targeted queries** | Exact match â†’ single shard | Exact match â†’ single shard |
+| **Targeted queries** | Exact match Ã¢â€ â€™ single shard | Exact match Ã¢â€ â€™ single shard |
 | **Shard splitting** | Chunks split when full (stable) | Range chunks split at boundaries |
 | **Best for** | High-write, no range queries | Reporting, analytics, range-based queries |
 | **Config example** | `{ _id: "hashed" }` | `{ customer_id: 1, date: -1 }` |
@@ -3149,7 +3149,7 @@ sh.shardCollection("ecommerce.orders", { _id: "hashed" })
 // Best for: range queries, reporting
 sh.shardCollection("ecommerce.users", { country: 1, user_id: 1 })
 // Data organized by (country, user_id) ranges
-// Chunks: [("AF",-Ã¢Ë†Å¾) â†’ ("AF","user5")], [("AF","user5") â†’ ("IN","user100")], ...
+// Chunks: [("AF",-ÃƒÂ¢Ã‹â€ Ã…Â¾) Ã¢â€ â€™ ("AF","user5")], [("AF","user5") Ã¢â€ â€™ ("IN","user100")], ...
 // Pros: Efficient range queries on shard key prefix
 // Cons: Hotspot risks with monotonically increasing keys
 ```
@@ -3167,15 +3167,15 @@ STEP 2: mongos extracts shard key value from the query
 
 STEP 3: mongos queries config server for chunk metadata
         Config server has the chunk distribution map:
-        Chunk 1: ["" â†’ "user_999999"]     â†’ Shard A
-        Chunk 2: ["user_1000000" â†’ ...]   â†’ Shard B
+        Chunk 1: ["" Ã¢â€ â€™ "user_999999"]     Ã¢â€ â€™ Shard A
+        Chunk 2: ["user_1000000" Ã¢â€ â€™ ...]   Ã¢â€ â€™ Shard B
         
-        But wait â†’ the chunk map is cached locally by mongos
+        But wait Ã¢â€ â€™ the chunk map is cached locally by mongos
         for performance (refreshed on miss)
 
 STEP 4: mongos determines target shard(s)
-        "user_abc123" falls in Chunk 1 â†’ target Shard A
-        (Single targeted query â†’ only one shard contacted)
+        "user_abc123" falls in Chunk 1 Ã¢â€ â€™ target Shard A
+        (Single targeted query Ã¢â€ â€™ only one shard contacted)
 
 STEP 5: mongos forwards query to the target shard's primary
 STEP 6: Shard A's primary executes the query on its local replica set
@@ -3187,15 +3187,15 @@ STEP 9: mongos returns final results to client
 **Scatter-gather query (no shard key in filter):**
 ```
 STEP 1: Client sends: db.orders.find({ status: "active" })
-                                          â†‘ no shard key in filter!
+                                          Ã¢â€ â€˜ no shard key in filter!
 
 STEP 2: mongos determines this is a scatter-gather query
         (cannot route to a single shard)
 
 STEP 3: mongos broadcasts query to ALL shards in parallel
-        â†’ Shard A primary
-        â†’ Shard B primary
-        â†’ Shard C primary
+        Ã¢â€ â€™ Shard A primary
+        Ã¢â€ â€™ Shard B primary
+        Ã¢â€ â€™ Shard C primary
 
 STEP 4: Each shard executes the query on its local data
 
@@ -3213,29 +3213,29 @@ STEP 7: mongos returns merged results to client
 ```
 Initial Shard Key Distribution:
   Shard A (chunks): 
-    [country:"AF", user_id:MinKey â†’ country:"IN", user_id:MaxKey]
-    [country:"IN", user_id:MinKey â†’ country:"US", user_id:MaxKey]
+    [country:"AF", user_id:MinKey Ã¢â€ â€™ country:"IN", user_id:MaxKey]
+    [country:"IN", user_id:MinKey Ã¢â€ â€™ country:"US", user_id:MaxKey]
   Shard B (chunks):
-    [country:"US", user_id:MinKey â†’ country:"ZW", user_id:MaxKey]
-    [country:"ZW", user_id:MinKey â†’ country:MaxKey, user_id:MaxKey]
+    [country:"US", user_id:MinKey Ã¢â€ â€™ country:"ZW", user_id:MaxKey]
+    [country:"ZW", user_id:MinKey Ã¢â€ â€™ country:MaxKey, user_id:MaxKey]
 
 Chunk metadata (on config server):
 +-------------+------------------------------+--------------+-----------+
 | Chunk ID    | Range                         | Shard        | Size      |
 +-------------+------------------------------+--------------+-----------+
-| C001        | {"AF",Min}â†’{"IN",Max}        | Shard A      | 512MB     |
-| C002        | {"IN",Min}â†’{"US",Max}        | Shard A      | 800MB  â†  |
-| C003        | {"US",Min}â†’{"ZW",Max}        | Shard B      | 256MB     |
-| C004        | {"ZW",Min}â†’{MaxKey,Max}      | Shard B      | 200MB     |
+| C001        | {"AF",Min}Ã¢â€ â€™{"IN",Max}        | Shard A      | 512MB     |
+| C002        | {"IN",Min}Ã¢â€ â€™{"US",Max}        | Shard A      | 800MB  Ã¢â€ Â  |
+| C003        | {"US",Min}Ã¢â€ â€™{"ZW",Max}        | Shard B      | 256MB     |
+| C004        | {"ZW",Min}Ã¢â€ â€™{MaxKey,Max}      | Shard B      | 200MB     |
 +-------------+------------------------------+--------------+-----------+
 
 Chunk C002 on Shard A has exceeded the recommended chunk size (default: 128MB, 
 shown here as larger for illustration). The balancer will split it.
 
 STEP 1 (Balancer): C002 exceeds maximum chunk size (e.g., 800MB vs target ~128MB)
-STEP 2 (Split): C002 split at midpoint â†’ C002a and C002b
-    C002a: {"IN",Min} â†’ {"IN","user_500000"}
-    C002b: {"IN","user_500000"} â†’ {"US",Max}
+STEP 2 (Split): C002 split at midpoint Ã¢â€ â€™ C002a and C002b
+    C002a: {"IN",Min} Ã¢â€ â€™ {"IN","user_500000"}
+    C002b: {"IN","user_500000"} Ã¢â€ â€™ {"US",Max}
 STEP 3 (Migrate): Balancer decides to move C002b to Shard B (load balancing)
 STEP 4: C002b data is copied from Shard A to Shard B
 STEP 5: Metadata updated on config server
@@ -3253,10 +3253,10 @@ FUNCTION RouteQuery(mongos, query):
     shard_key = ExtractShardKey(query)
     
     IF shard_key IS NOT NULL:
-        // Targeted query â†’ route to specific shard
+        // Targeted query Ã¢â€ â€™ route to specific shard
         chunk = FindContainingChunk(mongos.chunkCache, shard_key)
         IF chunk IS NULL:
-            // Cache miss â†’ refresh from config server
+            // Cache miss Ã¢â€ â€™ refresh from config server
             mongos.chunkCache = RefreshChunkCache(configServer)
             chunk = FindContainingChunk(mongos.chunkCache, shard_key)
         
@@ -3265,7 +3265,7 @@ FUNCTION RouteQuery(mongos, query):
         RETURN result
     
     ELSE:
-        // Scatter-gather â†’ query all shards
+        // Scatter-gather Ã¢â€ â€™ query all shards
         results = Parallel.ForEach(mongos.shards, shard => {
             return ForwardToShard(shard, query)
         })
@@ -3557,11 +3557,11 @@ if __name__ == "__main__":
 | **Cross-shard join ($lookup)** | Slow; data must be broadcast to all shards | Avoid $lookup across shards; embed related data |
 | **Shard key with low cardinality** | Only a few chunks; can't split further | Use compound shard key with high-cardinality suffix |
 | **Adding shard doesn't immediately rebalance** | Existing chunk distribution unchanged | Enable balancer; chunks migrate slowly over time |
-| **Missing shard key in insert** | MongoDB adds null shard key â†’ all nulls go to same chunk | Always include shard key; validate at application level |
+| **Missing shard key in insert** | MongoDB adds null shard key Ã¢â€ â€™ all nulls go to same chunk | Always include shard key; validate at application level |
 | **Remove shard (drain)** | Draining a shard requires migrating all its chunks | Draining is slow; plan hours or days for large shards |
 ---
 
-### 15.8 MongoDB vs RDBMS â†’ Comprehensive Comparison
+### 15.8 MongoDB vs RDBMS Ã¢â€ â€™ Comprehensive Comparison
 
 
 | Aspect | MongoDB | RDBMS (MySQL, PostgreSQL) |
@@ -3588,7 +3588,7 @@ if __name__ == "__main__":
 
 | Use Case | Why MongoDB? | Example |
 |----------|-------------|---------|
-| **Content Management** | Schema-flexible â†’ different content types have different fields | CMS, blogs, product catalogs |
+| **Content Management** | Schema-flexible Ã¢â€ â€™ different content types have different fields | CMS, blogs, product catalogs |
 | **Real-time Analytics** | Aggregation pipeline for fast, in-database analysis | User behavior tracking, clickstream |
 | **IoT / Sensor Data** | High write throughput, TTL indexes for auto-expiry | Sensor readings, device logs |
 | **Mobile Apps** | JSON-like documents map naturally to mobile objects | User profiles, social feeds |
@@ -3626,7 +3626,7 @@ if __name__ == "__main__":
 
 #### 15.9.1 Document-Level Atomicity
 
-In MongoDB, **write operations are atomic at the document level**. When you update a single document, either all fields are updated or none are â†’ even if the server crashes mid-operation.
+In MongoDB, **write operations are atomic at the document level**. When you update a single document, either all fields are updated or none are Ã¢â€ â€™ even if the server crashes mid-operation.
 
 ```javascript
 // This update is atomic at the document level
@@ -3678,7 +3678,7 @@ try {
     session.commitTransaction();
     print("Order placed and inventory updated atomically");
 } catch (error) {
-    // Any operation fails â†’ ALL changes rolled back
+    // Any operation fails Ã¢â€ â€™ ALL changes rolled back
     session.abortTransaction();
     print("Transaction aborted: " + error);
 } finally {
@@ -3734,7 +3734,7 @@ def transfer_funds(from_id, to_id, amount):
 - **Max 1000 documents modified** in a single transaction
 - **Multiple collections allowed** but within same replica set
 - **Sharded transactions**: 4.2+ supports multi-shard transactions (with limitations)
-- **Performance overhead**: ~2-5x slower than individual operations â†’ use only when needed
+- **Performance overhead**: ~2-5x slower than individual operations Ã¢â€ â€™ use only when needed
 
 ---
 
@@ -3756,17 +3756,17 @@ Avoid MongoDB when you need complex multi-table joins, strict ACID across many e
 #### Q2: How do you design a good shard key?
 
 **Answer:** A good shard key must have:
-1. **High cardinality** â†’ Many unique values (millions, not boolean)
-2. **Low frequency** â†’ No single value dominates writes
-3. **Monotonically distributed** â†’ Not monotonically increasing (or use hashed)
-4. **Write distribution** â†’ Writes spread evenly across shards
-5. **Query isolation** â†’ Most queries include the shard key (targeted queries)
+1. **High cardinality** Ã¢â€ â€™ Many unique values (millions, not boolean)
+2. **Low frequency** Ã¢â€ â€™ No single value dominates writes
+3. **Monotonically distributed** Ã¢â€ â€™ Not monotonically increasing (or use hashed)
+4. **Write distribution** Ã¢â€ â€™ Writes spread evenly across shards
+5. **Query isolation** Ã¢â€ â€™ Most queries include the shard key (targeted queries)
 
 **Good:** `{ customer_id: "hashed" }` (high cardinality, even writes, targeted queries)
-**Bad:** `{ status: 1 }` (only 3-5 values â†’ 3-5 chunks â†’ 3-5 shards max)
+**Bad:** `{ status: 1 }` (only 3-5 values Ã¢â€ â€™ 3-5 chunks Ã¢â€ â€™ 3-5 shards max)
 **Better:** `{ country: 1, user_id: 1 }` (range on country, high-card suffix)
 
-#### Q3: Aggregation Pipeline vs Map-Reduce â†’ which to use?
+#### Q3: Aggregation Pipeline vs Map-Reduce Ã¢â€ â€™ which to use?
 
 | Aspect | Aggregation Pipeline | Map-Reduce |
 |--------|---------------------|------------|
@@ -3791,11 +3791,11 @@ Avoid MongoDB when you need complex multi-table joins, strict ACID across many e
 #### Q5: How does MongoDB ensure data durability in a replica set?
 
 **Answer:** Through a combination of:
-1. **Write concern** â†’ `{ w: "majority" }` waits for acknowledgment from majority of voting members
-2. **Journaling** â†’ `{ j: true }` forces write to the on-disk journal before acknowledgment
-3. **Oplog replication** â†’ Operations are replayed on secondaries asynchronously
-4. **Election protocol** â†’ Automatic failover when primary fails
-5. **Rollback** â†’ Old primary rolls back unreplicated writes on rejoin
+1. **Write concern** Ã¢â€ â€™ `{ w: "majority" }` waits for acknowledgment from majority of voting members
+2. **Journaling** Ã¢â€ â€™ `{ j: true }` forces write to the on-disk journal before acknowledgment
+3. **Oplog replication** Ã¢â€ â€™ Operations are replayed on secondaries asynchronously
+4. **Election protocol** Ã¢â€ â€™ Automatic failover when primary fails
+5. **Rollback** Ã¢â€ â€™ Old primary rolls back unreplicated writes on rejoin
 
 #### Q6: What causes the "N+1 problem" in MongoDB and how to avoid it?
 
@@ -3805,7 +3805,7 @@ Avoid MongoDB when you need complex multi-table joins, strict ACID across many e
 // BAD: N+1 queries
 const users = db.users.find({}).toArray();
 for (const user of users) {
-    // 1 query per user â†’ N additional queries
+    // 1 query per user Ã¢â€ â€™ N additional queries
     const orders = db.orders.find({ customer_id: user._id }).toArray();
 }
 
@@ -3826,10 +3826,10 @@ db.users.find({}).toArray();  // If orders are embedded, no extra query
 #### Q7: How do you handle schema migration in MongoDB?
 
 **Answer:** Since MongoDB is schema-flexible, you handle migrations in application code:
-1. **Lazy migration** â†’ When reading a document, check its schema version and upgrade in place
-2. **Background migration** â†’ Script that finds old-format documents and updates them incrementally
-3. **Dual-write** â†’ Write both old and new formats during transition
-4. **Schema version field** â†’ Each document has a `schema_version` field for the app to check
+1. **Lazy migration** Ã¢â€ â€™ When reading a document, check its schema version and upgrade in place
+2. **Background migration** Ã¢â€ â€™ Script that finds old-format documents and updates them incrementally
+3. **Dual-write** Ã¢â€ â€™ Write both old and new formats during transition
+4. **Schema version field** Ã¢â€ â€™ Each document has a `schema_version` field for the app to check
 
 ```javascript
 // App code handles both old and new schema
@@ -3848,15 +3848,15 @@ function getDisplayName(user) {
 #### Q8: What is the ESR (Equality-Sort-Range) rule for compound indexes?
 
 **Answer:** The ESR rule governs the order of fields in a compound index:
-1. **Equality fields first** â†’ Fields with exact-match filters (`=`)
-2. **Sort fields next** â†’ Fields used in `.sort()` 
-3. **Range fields last** â†’ Fields with range filters (`$gt`, `$lt`, `$gte`, `$lte`)
+1. **Equality fields first** Ã¢â€ â€™ Fields with exact-match filters (`=`)
+2. **Sort fields next** Ã¢â€ â€™ Fields used in `.sort()` 
+3. **Range fields last** Ã¢â€ â€™ Fields with range filters (`$gt`, `$lt`, `$gte`, `$lte`)
 
 ```javascript
 // Query: db.orders.find({ status: "shipped", total: { $gte: 100 } })
 //                 .sort({ created_at: -1 })
 // Index: { status: 1, created_at: -1, total: 1 }
-//         â†‘E         â†‘S               â†‘R
+//         Ã¢â€ â€˜E         Ã¢â€ â€˜S               Ã¢â€ â€˜R
 ```
 
 This order lets MongoDB find the exact equality value in the B-tree, then iterate in sort order, applying the range filter without needing an in-memory sort.
@@ -3864,7 +3864,7 @@ This order lets MongoDB find the exact equality value in the B-tree, then iterat
 #### Q9: Difference between MongoDB and traditional database scaling?
 
 **Answer:**
-- **MongoDB**: Scales horizontally via **sharding** â†’ add more commodity servers, data auto-distributes
+- **MongoDB**: Scales horizontally via **sharding** Ã¢â€ â€™ add more commodity servers, data auto-distributes
 - **RDBMS**: Scales vertically (more CPU, RAM, SSD on one server) or requires manual sharding (vitess, citus)
 
 MongoDB's sharding is built-in and automatic (balancer splits and migrates chunks). RDBMS sharding requires application-level changes or middleware.
@@ -3984,7 +3984,7 @@ db.scores.updateOne(
 ### 15.12 Schema Design Best Practices
 
 
-#### 15.12.1 Embedding vs. Referencing â†’ Decision Table
+#### 15.12.1 Embedding vs. Referencing Ã¢â€ â€™ Decision Table
 
 ```javascript
 // EMBEDDING (preferred when data is accessed together)
@@ -4016,20 +4016,20 @@ db.scores.updateOne(
 | Read-heavy access pattern | Write-heavy on sub-document |
 | Sub-document size &lt; 16MB | Sub-document content shared across parents |
 
-#### 15.12.2 Design Principles â†’ Numbered
+#### 15.12.2 Design Principles Ã¢â€ â€™ Numbered
 
 ```
-1. DATA TOGETHER â†’ STORE TOGETHER
+1. DATA TOGETHER Ã¢â€ â€™ STORE TOGETHER
    Embed sub-documents that are always read with the parent.
    Example: Address embedded in User (always need both).
 
 2. ARRAYS MUST NOT GROW UNBOUNDEDLY
    Limit embedded arrays to ~100-200 elements.
-   Example: User's orders â†’ separate collection; User's phone numbers â†’ embed.
+   Example: User's orders Ã¢â€ â€™ separate collection; User's phone numbers Ã¢â€ â€™ embed.
 
 3. USE REFERENCES FOR SHARED OR HOT DATA
    Frequently updated shared data should be a separate collection.
-   Example: Product details referenced in orders (product info changes â†’ all orders update).
+   Example: Product details referenced in orders (product info changes Ã¢â€ â€™ all orders update).
 
 4. PREFER $lookup OVER APPLICATION-SIDE JOINS
    If you must join, let MongoDB do it. App-side joins are N+1.
@@ -4040,11 +4040,11 @@ db.scores.updateOne(
 
 6. ONE COLLECTION PER "AGGREGATE ROOT"
    An aggregate root (DDD) is the entity that's accessed as a unit.
-   User + Profile â†’ embed. User + Orders â†’ reference.
+   User + Profile Ã¢â€ â€™ embed. User + Orders Ã¢â€ â€™ reference.
 
 7. USE BUCKETING FOR TIME-SERIES DATA
    Group time-series readings into fixed-size buckets.
-   Avoid one document per reading â†’ use 100-readings per document.
+   Avoid one document per reading Ã¢â€ â€™ use 100-readings per document.
 
 8. USE POLYMORPHIC SCHEMA FOR SIMILAR-YET-DIFFERENT DATA
    Different document shapes in the same collection.
@@ -4122,7 +4122,7 @@ db.orders.aggregate([
 ])
 ```
 
-**Example 15.3: Change Streams (MongoDB 3.6+) â†’ Real-time Notifications**
+**Example 15.3: Change Streams (MongoDB 3.6+) Ã¢â€ â€™ Real-time Notifications**
 
 ```javascript
 // Watch for changes on a collection (replica set required)
@@ -4139,23 +4139,23 @@ changeStream.on("change", (change) => {
 
 ## Pro Tips
 
-1. **Design your schema around your application's access patterns** â†’ In MongoDB, how you query determines how you structure your data (unlike SQL where normalization rules come first).
-2. **Embedding is usually better than referencing** â†’ MongoDB can read an entire embedded document in one I/O operation. Joins ($lookup) are expensive.
-3. **Only embed what is accessed together** â†’ If you often need a user but not their orders, keep them in separate collections.
-4. **Choose your shard key carefully** â†’ A bad shard key (low cardinality, monotonically increasing) creates "hot spots" where all writes go to one shard. Hashed shard keys are often safer.
-5. **Use TTL indexes for expiring data** â†’ They automatically delete documents after a configured time, perfect for session data, logs, and temporary caches.
-6. **Always use .explain("executionStats")** â†’ Verify your queries use indexes. A COLLSCAN on a large collection is the #1 performance killer.
-7. **Push $match to the start of the pipeline** â†’ Filter early to reduce the number of documents flowing through subsequent stages.
-8. **Monitor replication lag** â†’ Use `rs.printSecondaryReplicationInfo()` to ensure secondaries aren't falling behind.
-9. **Use write concern "majority" for critical data** â†’ This ensures data is replicated to a majority of nodes before acknowledging the write.
-10. **Enable retryable writes** â†’ The driver can automatically retry write operations that fail due to network errors or replica set elections.
+1. **Design your schema around your application's access patterns** Ã¢â€ â€™ In MongoDB, how you query determines how you structure your data (unlike SQL where normalization rules come first).
+2. **Embedding is usually better than referencing** Ã¢â€ â€™ MongoDB can read an entire embedded document in one I/O operation. Joins ($lookup) are expensive.
+3. **Only embed what is accessed together** Ã¢â€ â€™ If you often need a user but not their orders, keep them in separate collections.
+4. **Choose your shard key carefully** Ã¢â€ â€™ A bad shard key (low cardinality, monotonically increasing) creates "hot spots" where all writes go to one shard. Hashed shard keys are often safer.
+5. **Use TTL indexes for expiring data** Ã¢â€ â€™ They automatically delete documents after a configured time, perfect for session data, logs, and temporary caches.
+6. **Always use .explain("executionStats")** Ã¢â€ â€™ Verify your queries use indexes. A COLLSCAN on a large collection is the #1 performance killer.
+7. **Push $match to the start of the pipeline** Ã¢â€ â€™ Filter early to reduce the number of documents flowing through subsequent stages.
+8. **Monitor replication lag** Ã¢â€ â€™ Use `rs.printSecondaryReplicationInfo()` to ensure secondaries aren't falling behind.
+9. **Use write concern "majority" for critical data** Ã¢â€ â€™ This ensures data is replicated to a majority of nodes before acknowledging the write.
+10. **Enable retryable writes** Ã¢â€ â€™ The driver can automatically retry write operations that fail due to network errors or replica set elections.
 
 ## One-Sentence Takeaways
 
-- **15.1:** MongoDB stores data as BSON documents in collections â†’ schema-flexible, self-describing, and easy to map to application objects.
+- **15.1:** MongoDB stores data as BSON documents in collections Ã¢â€ â€™ schema-flexible, self-describing, and easy to map to application objects.
 - **15.2:** CRUD operations use a JSON-like query syntax with rich operators for filtering, projection, sorting, and aggregation.
-- **15.3:** Indexes in MongoDB include single, compound, multikey (arrays), text, geospatial, TTL, and partial types â†’ each designed for specific query patterns.
-- **15.4:** The aggregation pipeline processes documents through sequential stages ($match, $group, $lookup, $unwind, $project) â†’ MongoDB's equivalent of SQL's GROUP BY and JOIN.
+- **15.3:** Indexes in MongoDB include single, compound, multikey (arrays), text, geospatial, TTL, and partial types Ã¢â€ â€™ each designed for specific query patterns.
+- **15.4:** The aggregation pipeline processes documents through sequential stages ($match, $group, $lookup, $unwind, $project) Ã¢â€ â€™ MongoDB's equivalent of SQL's GROUP BY and JOIN.
 - **15.5:** Replica sets provide high availability with automatic failover; reads can be distributed to secondaries for load balancing.
 - **15.6:** Sharding horizontally partitions data using a shard key across multiple servers for near-linear horizontal scaling.
 - **15.7:** Schema design in MongoDB favors embedding for co-accessed data and referencing for shared/growing/independently-updated data.
@@ -4199,7 +4199,7 @@ changeStream.on("change", (change) => {
 
 | MongoDB Feature | Applied In | Why It Matters |
 |----------------|-----------|----------------|
-| **Document Model** | Product catalogs, CMS | Products have varying attributes â†’ no EAV pattern needed |
+| **Document Model** | Product catalogs, CMS | Products have varying attributes Ã¢â€ â€™ no EAV pattern needed |
 | **Aggregation Pipeline** | Analytics, reporting dashboards | Complex data processing without leaving the database |
 | **Replica Sets** | Production HA systems | Automatic failover, read scaling to secondaries |
 | **Sharding** | Applications exceeding single-node cap | Horizontal scaling with range/hashed shard keys |
@@ -4214,7 +4214,7 @@ The code below simulates the MongoDB query and aggregation pipeline mechanics wi
 
 ```typescript
 // ============================================================
-// MongoDB Query & Aggregation Simulator â€” TypeScript
+// MongoDB Query & Aggregation Simulator Ã¢â‚¬â€ TypeScript
 // ============================================================
 
 interface Document {
@@ -4318,7 +4318,7 @@ class MongoCollection {
     return result;
   }
 
-  // Create index (conceptual â€” marks fields)
+  // Create index (conceptual Ã¢â‚¬â€ marks fields)
   createIndex(fields: Record<string, 1 | -1>): void {
     console.log('[Index] Created on: ' + Object.keys(fields).join(', '));
   }
@@ -4416,12 +4416,12 @@ result.forEach(d => console.log('  ' + d._id + ': avg=' + Number(d.avgSalary).to
 
 ## Summary
 
-- MongoDB stores documents in **BSON format** within collections â†’ schema-flexible with up to 20+ native data types.
+- MongoDB stores documents in **BSON format** within collections Ã¢â€ â€™ schema-flexible with up to 20+ native data types.
 - **CRUD operations** use a JSON-like query syntax with rich operators ($set, $inc, $push, $pull, $elemMatch).
-- **Indexes** include single, compound, multikey, text, geospatial, TTL, partial, and hashed â†’ each optimized for specific query patterns.
+- **Indexes** include single, compound, multikey, text, geospatial, TTL, partial, and hashed Ã¢â€ â€™ each optimized for specific query patterns.
 - The **aggregation pipeline** provides powerful multi-stage data processing with $match, $group, $lookup, $unwind, $project, $sort, $bucket, and $facet.
 - **Replica sets** provide high availability via primary-secondary replication with automatic failover elections.
-- **Sharding** horizontally partitions data across servers using a shard key â†’ with built-in balancer for automatic chunk distribution.
+- **Sharding** horizontally partitions data across servers using a shard key Ã¢â€ â€™ with built-in balancer for automatic chunk distribution.
 - **Schema design** favors embedding for co-accessed data and referencing for shared/growing data.
 - **MongoDB vs RDBMS**: MongoDB for flexible schemas and horizontal scaling; RDBMS for complex relationships and strong consistency.
 - **Atomicity**: Document-level atomic writes are free; multi-document ACID transactions available from 4.0+ with performance cost.

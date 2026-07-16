@@ -1,4 +1,4 @@
-# Chapter 10: Capstone — Build a Production-Grade Coding Agent
+﻿# Chapter 10: Capstone â€” Build a Production-Grade Coding Agent
 
 ---
 
@@ -9,23 +9,23 @@ After completing this chapter you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/loop-engineering/ch10-capstone/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/loop-engineering/ch10-capstone/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/loop-engineering/ch10-capstone/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/loop-engineering/ch10-capstone/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/loop-engineering/ch10-capstone/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/loop-engineering/ch10-capstone/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/loop-engineering/ch10-capstone/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/loop-engineering/ch10-capstone/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/loop-engineering/ch10-capstone/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/loop-engineering/ch10-capstone/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/loop-engineering/ch10-capstone/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/loop-engineering/ch10-capstone/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
 <!-- End Image Gallery -->
 
 
-- Combine all loop concepts from Chapters 1–9 into a single production agent system
+- Combine all loop concepts from Chapters 1â€“9 into a single production agent system
 - Implement a Plan-Act-Observe (ReAct) main loop with a full tool surface
 - Design human-in-the-loop approval gates with auto-approve heuristics
 - Build eval-driven self-improvement with self-critique and retry
@@ -42,42 +42,42 @@ A production-grade coding agent is the integration of every concept in this cour
 | Chapter | Concept | Role in Capstone |
 |---------|---------|------------------|
 | 1 | Loop foundations | The outer `while` loop with convergence check |
-| 2 | ReAct pattern | Plan → Act → Observe as the core cycle |
+| 2 | ReAct pattern | Plan â†’ Act â†’ Observe as the core cycle |
 | 3 | Human-in-the-loop | Approval gates before destructive file operations |
 | 4 | Feedback loops | Eval-driven retry when the agent detects its own error |
 | 5 | Self-improvement | LLM critiques its own output and revises |
 | 6 | Production loops | Cost governor, budget enforcement, termination |
 | 7 | Loop safety | Max iterations, kill switch, rollback on failure |
-| 8 | Multi-agent loops | (Not directly used — reserved for future tool delegation) |
+| 8 | Multi-agent loops | (Not directly used â€” reserved for future tool delegation) |
 | 9 | Loop tooling | Durable execution, checkpoint/restore, tracing, chaos testing |
 
 **The architecture.** The capstone agent is a single TypeScript class that orchestrates these layers:
 
 ```
-┌──────────────────────────────────────────────┐
-│              CodingAgentLoop                  │
-│                                              │
-│  ┌─────────┐  loop  ┌─────────┐              │
-│  │  Plan   │ ──────→ │  Act    │ ──────┐     │
-│  │ (LLM +  │         │ (tool   │       │     │
-│  │  prompt)│         │  call)  │       │     │
-│  └─────────┘         └─────────┘       │     │
-│       ↑                                 │     │
-│       │  ┌──────────┐                  │     │
-│       └──│ Observe  │ ←────────────────┘     │
-│          │ (parse   │                        │
-│          │  result) │                        │
-│          └──────────┘                        │
-│                                              │
-│  Cross-cutting: HITL | Budget | Checkpoint   │
-└──────────────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚              CodingAgentLoop                  â”‚
+â”‚                                              â”‚
+â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”  loop  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”              â”‚
+â”‚  â”‚  Plan   â”‚ â”€â”€â”€â”€â”€â”€â†’ â”‚  Act    â”‚ â”€â”€â”€â”€â”€â”€â”     â”‚
+â”‚  â”‚ (LLM +  â”‚         â”‚ (tool   â”‚       â”‚     â”‚
+â”‚  â”‚  prompt)â”‚         â”‚  call)  â”‚       â”‚     â”‚
+â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜         â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜       â”‚     â”‚
+â”‚       â†‘                                 â”‚     â”‚
+â”‚       â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”                  â”‚     â”‚
+â”‚       â””â”€â”€â”‚ Observe  â”‚ â†â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜     â”‚
+â”‚          â”‚ (parse   â”‚                        â”‚
+â”‚          â”‚  result) â”‚                        â”‚
+â”‚          â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜                        â”‚
+â”‚                                              â”‚
+â”‚  Cross-cutting: HITL | Budget | Checkpoint   â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 **Plan phase.** The LLM receives the current state (conversation history + tool results) and decides what to do next. It outputs a structured plan: either a tool call command or a final answer.
 
 **Act phase.** The agent executes the chosen tool. Before execution, the HITL gate checks whether the operation is risky. Low-risk operations (read, grep) auto-approve. Destructive operations (write, delete) pause for human confirmation.
 
-**Observe phase.** The tool result is appended to the conversation. The agent optionally critiques its own output — if the result contains an error or looks wrong, it can retry with a refined approach.
+**Observe phase.** The tool result is appended to the conversation. The agent optionally critiques its own output â€” if the result contains an error or looks wrong, it can retry with a refined approach.
 
 **Cross-cutting concerns.** After each cycle, the agent checks budgets, saves a checkpoint, and records trace spans.
 
@@ -177,7 +177,7 @@ class CodingAgentLoop {
     if (config?.maxCostUsd) this.maxCostUsd = config.maxCostUsd;
   }
 
-  // ─── Tool definitions exposed to the LLM ───
+  // â”€â”€â”€ Tool definitions exposed to the LLM â”€â”€â”€
 
   getToolDefinitions(): ToolDefinition[] {
     return [
@@ -214,7 +214,7 @@ class CodingAgentLoop {
     ];
   }
 
-  // ─── Tool execution — the Act phase ───
+  // â”€â”€â”€ Tool execution â€” the Act phase â”€â”€â”€
 
   private async executeTool(tc: ToolCall): Promise<ToolResult> {
     const start = Date.now();
@@ -274,7 +274,7 @@ class CodingAgentLoop {
     }
   }
 
-  // ─── HITL approval gate ───
+  // â”€â”€â”€ HITL approval gate â”€â”€â”€
 
   private riskLevel(tc: ToolCall): "low" | "medium" | "high" {
     switch (tc.name) {
@@ -298,20 +298,20 @@ class CodingAgentLoop {
     if (risk === "low") return true;
 
     if (risk === "medium") {
-      console.log(`\n⚠  Tool call requires approval:`);
+      console.log(`\nâš   Tool call requires approval:`);
       console.log(`   ${tc.name}(${JSON.stringify(tc.args)})`);
       // Simulate auto-approve for demo
       return true;
     }
 
-    // High risk — destructive operation
-    console.log(`\n🔴 DESTRUCTIVE operation: ${tc.name}(${JSON.stringify(tc.args)})`);
+    // High risk â€” destructive operation
+    console.log(`\nðŸ”´ DESTRUCTIVE operation: ${tc.name}(${JSON.stringify(tc.args)})`);
     console.log(`   Enter 'y' to approve, anything else to deny:`);
     // In production this would use stdin or a callback
     return true;
   }
 
-  // ─── Self-critique (eval-driven improvement) ───
+  // â”€â”€â”€ Self-critique (eval-driven improvement) â”€â”€â”€
 
   private async critiqueStep(tc: ToolCall, result: ToolResult): Promise<EvalResult> {
     if (result.success) {
@@ -325,9 +325,9 @@ Arguments: ${JSON.stringify(tc.args)}
 Error: ${result.error}
 
 Analyze the failure. Is it:
-a) A transient error (network, timeout, resource contention) — RETRY
-b) A logical error (wrong arguments, bad path) — REFINE
-c) A fatal error (permission denied, missing tool) — GIVE UP
+a) A transient error (network, timeout, resource contention) â€” RETRY
+b) A logical error (wrong arguments, bad path) â€” REFINE
+c) A fatal error (permission denied, missing tool) â€” GIVE UP
 
 Respond with JSON: { "analysis": string, "shouldRetry": boolean, "refinedArgs": object | null }
 `;
@@ -345,7 +345,7 @@ Respond with JSON: { "analysis": string, "shouldRetry": boolean, "refinedArgs": 
     };
   }
 
-  // ─── Plan phase — call LLM to decide next action ───
+  // â”€â”€â”€ Plan phase â€” call LLM to decide next action â”€â”€â”€
 
   private async planNextAction(): Promise<ToolCall | null> {
     const planningPrompt = this.buildPlanningPrompt();
@@ -378,10 +378,10 @@ Respond with JSON: { "analysis": string, "shouldRetry": boolean, "refinedArgs": 
     if (this.step < demoTasks.length) {
       return demoTasks[this.step];
     }
-    return null; // No more actions — loop ends
+    return null; // No more actions â€” loop ends
   }
 
-  // ─── Checkpointing ───
+  // â”€â”€â”€ Checkpointing â”€â”€â”€
 
   private async saveCheckpoint(): Promise<void> {
     const cp: AgentCheckpoint = {
@@ -421,7 +421,7 @@ Respond with JSON: { "analysis": string, "shouldRetry": boolean, "refinedArgs": 
     }
   }
 
-  // ─── Budget enforcement ───
+  // â”€â”€â”€ Budget enforcement â”€â”€â”€
 
   private checkBudget(): boolean {
     if (this.tokensUsed >= this.maxTokens) {
@@ -444,7 +444,7 @@ Respond with JSON: { "analysis": string, "shouldRetry": boolean, "refinedArgs": 
     this.costUsedUsd += tokens * 0.00001; // ~$0.01 per 1K tokens
   }
 
-  // ─── Main Loop ───
+  // â”€â”€â”€ Main Loop â”€â”€â”€
 
   async run(): Promise<{
     success: boolean;
@@ -461,47 +461,47 @@ Respond with JSON: { "analysis": string, "shouldRetry": boolean, "refinedArgs": 
 
     while (this.checkBudget()) {
       this.step++;
-      console.log(`\n═══ Cycle ${this.step} ═══`);
+      console.log(`\nâ•â•â• Cycle ${this.step} â•â•â•`);
 
-      // ─── PLAN ───
+      // â”€â”€â”€ PLAN â”€â”€â”€
       const plan = await this.planNextAction();
       if (plan === null) {
-        console.log("  [plan] no more actions — task complete");
+        console.log("  [plan] no more actions â€” task complete");
         break;
       }
       console.log(`  [plan] ${plan.name}(${JSON.stringify(plan.args)})`);
       this.messages.push({ role: "assistant", content: `I will call ${plan.name} with ${JSON.stringify(plan.args)}` });
 
-      // ─── HITL GATE ───
+      // â”€â”€â”€ HITL GATE â”€â”€â”€
       const approved = await this.approveGate(plan);
       if (!approved) {
-        console.log(`  [gate] user denied ${plan.name} — skipping`);
+        console.log(`  [gate] user denied ${plan.name} â€” skipping`);
         this.messages.push({ role: "user", content: `Operation ${plan.name} was denied.` });
         await this.saveCheckpoint();
         continue;
       }
 
-      // ─── ACT ───
+      // â”€â”€â”€ ACT â”€â”€â”€
       const result = await this.executeTool(plan);
       const duration = "(timing available via tracer)";
 
       if (result.success) {
-        console.log(`  [act] ✓ ${result.data.slice(0, 120)}${result.data.length > 120 ? "…" : ""}`);
+        console.log(`  [act] âœ“ ${result.data.slice(0, 120)}${result.data.length > 120 ? "â€¦" : ""}`);
       } else {
-        console.log(`  [act] ✗ ${result.error}`);
+        console.log(`  [act] âœ— ${result.error}`);
       }
 
       // Simulate token usage
       const tokens = 100 + Math.floor(Math.random() * 200);
       this.updateBudget(tokens);
 
-      // ─── OBSERVE ───
+      // â”€â”€â”€ OBSERVE â”€â”€â”€
       const obsMsg = result.success
         ? `Tool ${plan.name} returned:\n${result.data}`
         : `Tool ${plan.name} failed:\n${result.error}`;
       this.messages.push({ role: "tool", content: obsMsg, toolCallId: plan.id });
 
-      // ─── SELF-CRITIQUE ───
+      // â”€â”€â”€ SELF-CRITIQUE â”€â”€â”€
       const evalResult = await this.critiqueStep(plan, result);
       if (!result.success && evalResult.shouldRetry) {
         console.log(`  [critique] will retry: ${evalResult.critique}`);
@@ -515,10 +515,10 @@ Respond with JSON: { "analysis": string, "shouldRetry": boolean, "refinedArgs": 
       }
 
       if (!result.success && !evalResult.shouldRetry) {
-        console.log(`  [critique] fatal error — giving up on this step: ${evalResult.critique}`);
+        console.log(`  [critique] fatal error â€” giving up on this step: ${evalResult.critique}`);
       }
 
-      // ─── CHECKPOINT ───
+      // â”€â”€â”€ CHECKPOINT â”€â”€â”€
       await this.saveCheckpoint();
     }
 
@@ -530,7 +530,7 @@ Respond with JSON: { "analysis": string, "shouldRetry": boolean, "refinedArgs": 
       filesModified: [...this.filesModified],
     };
 
-    console.log(`\n═══ Agent finished ═══`);
+    console.log(`\nâ•â•â• Agent finished â•â•â•`);
     console.log(`Steps: ${result.stepsCompleted}, Tokens: ${result.tokensUsed}, Cost: $${result.costUsd.toFixed(4)}`);
     if (result.filesModified.length > 0) {
       console.log(`Files modified: ${result.filesModified.join(", ")}`);
@@ -570,40 +570,40 @@ await main();
 ```
 [agent] fresh start
 
-═══ Cycle 1 ═══
+â•â•â• Cycle 1 â•â•â•
   [plan] glob({"pattern":"src/**/*.ts"})
-  [act] ✓ (no files match)
+  [act] âœ“ (no files match)
   [checkpoint] saved step 1
 
-═══ Cycle 2 ═══
+â•â•â• Cycle 2 â•â•â•
   [plan] read({"path":"package.json"})
-  [act] ✓ {contents of package.json}
+  [act] âœ“ {contents of package.json}
   [checkpoint] saved step 2
 
-═══ Cycle 3 ═══
+â•â•â• Cycle 3 â•â•â•
   [plan] grep({"pattern":"class.*Loop","include":"*.ts"})
-  [act] ✓ (no matches)
+  [act] âœ“ (no matches)
   [checkpoint] saved step 3
 
-═══ Cycle 4 ═══
+â•â•â• Cycle 4 â•â•â•
   [plan] read({"path":"README.md"})
-  [act] ✓ {contents of README.md}
+  [act] âœ“ {contents of README.md}
   [checkpoint] saved step 4
 
-═══ Cycle 5 ═══
+â•â•â• Cycle 5 â•â•â•
   [plan] ask({"question":"Should I add a test file?"})
-  [act] ✓ User responded: approved
+  [act] âœ“ User responded: approved
   [checkpoint] saved step 5
 
-═══ Agent finished ═══
+â•â•â• Agent finished â•â•â•
 Steps: 5, Tokens: 838, Cost: $0.0084
 ```
 
 ---
 
-## MultiFileCodingAgent — File Operations with Human Gates
+## MultiFileCodingAgent â€” File Operations with Human Gates
 
-The `MultiFileCodingAgent` extends the base agent with structured file operations. Each file change goes through a propose → review → commit pipeline with human approval at the commit stage.
+The `MultiFileCodingAgent` extends the base agent with structured file operations. Each file change goes through a propose â†’ review â†’ commit pipeline with human approval at the commit stage.
 
 ```typescript
 // multifile-coding-agent.ts
@@ -629,7 +629,7 @@ class MultiFileCodingAgent extends CodingAgentLoop {
     super(loopId, config);
   }
 
-  // ─── Multi-edit proposal (called by the LLM) ───
+  // â”€â”€â”€ Multi-edit proposal (called by the LLM) â”€â”€â”€
 
   async proposeEdit(path: string, newContent: string, reason: string): Promise<void> {
     let originalContent: string | null = null;
@@ -653,7 +653,7 @@ class MultiFileCodingAgent extends CodingAgentLoop {
     console.log(`  [propose] DELETE ${path} (${reason})`);
   }
 
-  // ─── Review and commit with human gate ───
+  // â”€â”€â”€ Review and commit with human gate â”€â”€â”€
 
   private async reviewChanges(): Promise<ProposedChanges> {
     const edits = [...this.pendingEdits];
@@ -664,9 +664,9 @@ class MultiFileCodingAgent extends CodingAgentLoop {
     }).join("\n");
 
     const impact = edits.map((e) => {
-      if (e.originalContent === null) return `Create ${e.path} — ${e.reason}`;
+      if (e.originalContent === null) return `Create ${e.path} â€” ${e.reason}`;
       const added = e.newContent.length - (e.originalContent?.length ?? 0);
-      return `${e.path}: ${added > 0 ? `+${added}` : added} bytes — ${e.reason}`;
+      return `${e.path}: ${added > 0 ? `+${added}` : added} bytes â€” ${e.reason}`;
     }).join("\n");
 
     return { edits, summary, estimatedImpact: impact };
@@ -723,28 +723,28 @@ class MultiFileCodingAgent extends CodingAgentLoop {
     }
   }
 
-  // ─── Override the HITL gate for bulk commits ───
+  // â”€â”€â”€ Override the HITL gate for bulk commits â”€â”€â”€
 
   async reviewAndCommitGate(): Promise<boolean> {
     if (this.pendingEdits.length === 0) return true;
 
     const changes = await this.reviewChanges();
 
-    console.log(`\n📋 Proposed changes:`);
+    console.log(`\nðŸ“‹ Proposed changes:`);
     console.log(changes.summary);
     console.log(`\nImpact analysis:`);
     console.log(changes.estimatedImpact);
 
     if (this.pendingEdits.every((e) => e.originalContent !== null && e.newContent !== "")) {
       // All edits are modifications (no deletes)
-      console.log("   → Auto-approved (low risk, modifications only)");
+      console.log("   â†’ Auto-approved (low risk, modifications only)");
       await this.commitChanges();
       return true;
     }
 
     const hasDeletes = this.pendingEdits.some((e) => e.newContent === "");
     if (hasDeletes) {
-      console.log(`\n🔴 Contains ${this.pendingEdits.filter((e) => e.newContent === "").length} deletion(s) — requires approval`);
+      console.log(`\nðŸ”´ Contains ${this.pendingEdits.filter((e) => e.newContent === "").length} deletion(s) â€” requires approval`);
       console.log("   Enter 'y' to commit:");
     }
 
@@ -753,7 +753,7 @@ class MultiFileCodingAgent extends CodingAgentLoop {
     return true;
   }
 
-  // ─── Override run to add review/commit step ───
+  // â”€â”€â”€ Override run to add review/commit step â”€â”€â”€
 
   async run(): Promise<{
     success: boolean;
@@ -797,7 +797,7 @@ async function runMultiFile() {
 
   const result = await agent.run();
 
-  console.log(`\n═══ MultiFile agent complete ═══`);
+  console.log(`\nâ•â•â• MultiFile agent complete â•â•â•`);
   console.log(`Steps: ${result.stepsCompleted}`);
   console.log(`Files modified by tools: ${result.filesModified.length}`);
   console.log(`Edits committed via review: ${result.editsCommitted}`);
@@ -813,26 +813,26 @@ await runMultiFile();
 ```
 [agent] fresh start
 
-═══ Cycle 1 ═══
+â•â•â• Cycle 1 â•â•â•
   [plan] glob({"pattern":"src/**/*.ts"})
-  [act] ✓ (no files match)
+  [act] âœ“ (no files match)
   [checkpoint] saved step 1
 ...
 
-═══ MultiFile agent complete ═══
+â•â•â• MultiFile agent complete â•â•â•
 Steps: 5
 Files modified by tools: 0
   [propose] /tmp/demo-output.txt (Create output file with agent results)
   [propose] /tmp/demo-summary.json (Save execution summary as JSON)
 
-📋 Proposed changes:
+ðŸ“‹ Proposed changes:
 + /tmp/demo-output.txt (new)
 + /tmp/demo-summary.json (new)
 
 Impact analysis:
-Create /tmp/demo-output.txt — Create output file with agent results
-Create /tmp/demo-summary.json — Save execution summary as JSON
-   → Auto-approved (low risk, modifications only)
+Create /tmp/demo-output.txt â€” Create output file with agent results
+Create /tmp/demo-summary.json â€” Save execution summary as JSON
+   â†’ Auto-approved (low risk, modifications only)
   [commit] wrote 37 bytes to /tmp/demo-output.txt
   [commit] wrote 257 bytes to /tmp/demo-summary.json
 Edits committed via review: 2
@@ -850,7 +850,7 @@ The true power of the capstone architecture is multi-step recovery. Here is a st
 ```typescript
 // recovery-demo.ts
 async function demonstrateMultiStepRecovery() {
-  console.log("═══ Multi-Step Recovery Demo ═══\n");
+  console.log("â•â•â• Multi-Step Recovery Demo â•â•â•\n");
 
   // Phase 1: agent does some work, checkpoints
   console.log("Phase 1: Normal execution with checkpoints\n");
@@ -864,10 +864,10 @@ async function demonstrateMultiStepRecovery() {
   await agent1.run();
 
   // Phase 2: simulate crash by clearing in-memory state
-  console.log("\nPhase 2: 💥 Process crash — all in-memory state lost\n");
+  console.log("\nPhase 2: ðŸ’¥ Process crash â€” all in-memory state lost\n");
 
-  // Phase 3: create a new agent with same loopId — it resumes
-  console.log("Phase 3: Restart — agent discovers checkpoint\n");
+  // Phase 3: create a new agent with same loopId â€” it resumes
+  console.log("Phase 3: Restart â€” agent discovers checkpoint\n");
 
   const agent2 = new CodingAgentLoop("recovery-demo", {
     maxSteps: 5,
@@ -894,7 +894,7 @@ async function demonstrateMultiStepRecovery() {
   console.log("\nRolling back last commit...");
   await fileAgent.rollbackLastCommit();
 
-  console.log("\nRecovery demo complete — both restart and rollback work");
+  console.log("\nRecovery demo complete â€” both restart and rollback work");
 }
 
 await demonstrateMultiStepRecovery();
@@ -908,7 +908,7 @@ The `LoopComposer` orchestrates all prior components into a deployable system. I
 ```typescript
 // complete-loop-system-assembly.ts
 
-// ─── 1. Component Registry — every sub-loop has a slot ───
+// â”€â”€â”€ 1. Component Registry â€” every sub-loop has a slot â”€â”€â”€
 
 interface SubLoopDescriptor {
   name: string;
@@ -932,7 +932,7 @@ interface LoopContext {
   startTime: number;
 }
 
-// ─── 2. Metrics Aggregator — collects and reports across all sub-loops ───
+// â”€â”€â”€ 2. Metrics Aggregator â€” collects and reports across all sub-loops â”€â”€â”€
 
 interface MetricPoint {
   subLoop: string;
@@ -973,7 +973,7 @@ class MetricsAggregator {
 
   /** Generate a human-readable report */
   generateReport(): string {
-    const lines: string[] = ["═══ Loop Metrics Report ═══\n"];
+    const lines: string[] = ["â•â•â• Loop Metrics Report â•â•â•\n"];
     const byLoop = this.bySubLoop();
     for (const [name, pts] of byLoop) {
       const label = this.labels.get(name) ?? "";
@@ -1006,7 +1006,7 @@ class MetricsAggregator {
   }
 }
 
-// ─── 3. SystemValidator — pre-flight checks and integration tests ───
+// â”€â”€â”€ 3. SystemValidator â€” pre-flight checks and integration tests â”€â”€â”€
 
 interface ValidationCheck {
   name: string;
@@ -1026,7 +1026,7 @@ class SystemValidator {
     passed: boolean;
     results: Array<{ name: string; severity: string; passed: boolean; message: string }>;
   }> {
-    console.log("═══ Pre-flight validation ═══\n");
+    console.log("â•â•â• Pre-flight validation â•â•â•\n");
     const results: Array<{ name: string; severity: string; passed: boolean; message: string }> = [];
 
     for (const check of this.checks) {
@@ -1034,15 +1034,15 @@ class SystemValidator {
       try {
         const result = await check.run();
         results.push({ name: check.name, severity: check.severity, passed: result.passed, message: result.message });
-        console.log(result.passed ? "✓" : `✗ — ${result.message}`);
+        console.log(result.passed ? "âœ“" : `âœ— â€” ${result.message}`);
       } catch (err) {
         results.push({ name: check.name, severity: check.severity, passed: false, message: String(err) });
-        console.log(`✗ — ${err}`);
+        console.log(`âœ— â€” ${err}`);
       }
     }
 
     const criticalFails = results.filter((r) => r.severity === "critical" && !r.passed);
-    console.log(`\n${criticalFails.length > 0 ? "❌ PRE-FLIGHT FAILED" : "✅ Pre-flight passed"}`);
+    console.log(`\n${criticalFails.length > 0 ? "âŒ PRE-FLIGHT FAILED" : "âœ… Pre-flight passed"}`);
     console.log(`  ${results.filter((r) => r.passed).length}/${results.length} checks passed`);
     return { passed: criticalFails.length === 0, results };
   }
@@ -1056,7 +1056,7 @@ class SystemValidator {
       teardown?: () => Promise<void>;
     }>,
   ): Promise<{ passed: number; failed: number; results: Array<{ name: string; passed: boolean }> }> {
-    console.log("\n═══ Integration tests ═══\n");
+    console.log("\nâ•â•â• Integration tests â•â•â•\n");
     const results: Array<{ name: string; passed: boolean }> = [];
     for (const scenario of scenarios) {
       process.stdout.write(`  ${scenario.name}... `);
@@ -1064,11 +1064,11 @@ class SystemValidator {
         if (scenario.setup) await scenario.setup();
         const passed = await scenario.run();
         results.push({ name: scenario.name, passed });
-        console.log(passed ? "✓" : "✗");
+        console.log(passed ? "âœ“" : "âœ—");
         if (scenario.teardown) await scenario.teardown();
       } catch (err) {
         results.push({ name: scenario.name, passed: false });
-        console.log(`✗ (${err})`);
+        console.log(`âœ— (${err})`);
       }
     }
     const passed = results.filter((r) => r.passed).length;
@@ -1078,7 +1078,7 @@ class SystemValidator {
   }
 }
 
-// ─── 4. LoopComposer — assembles sub-loops into a complete system ───
+// â”€â”€â”€ 4. LoopComposer â€” assembles sub-loops into a complete system â”€â”€â”€
 
 class LoopComposer {
   private subLoops: SubLoopDescriptor[] = [];
@@ -1127,7 +1127,7 @@ class LoopComposer {
   /** Execute all sub-loops in dependency order */
   async execute(): Promise<{ success: boolean; results: SubLoopResult[]; elapsedMs: number }> {
     const order = this.resolveOrder();
-    console.log(`═══ LoopComposer: ${order.length} sub-loops in dependency order ═══\n`);
+    console.log(`â•â•â• LoopComposer: ${order.length} sub-loops in dependency order â•â•â•\n`);
     for (const sl of order) {
       console.log(`  Running: ${sl.name} (timeout: ${sl.timeoutMs}ms)`);
       const start = Date.now();
@@ -1141,7 +1141,7 @@ class LoopComposer {
         this.results.push(result);
         this.metrics.record(sl.name, "durationMs", result.durationMs);
         this.metrics.record(sl.name, "success", result.success ? 1 : 0);
-        console.log(`    → ${result.success ? "✓" : "✗"} (${result.durationMs}ms)`);
+        console.log(`    â†’ ${result.success ? "âœ“" : "âœ—"} (${result.durationMs}ms)`);
       } catch (err) {
         this.results.push({
           name: sl.name,
@@ -1152,7 +1152,7 @@ class LoopComposer {
         });
         this.metrics.record(sl.name, "durationMs", Date.now() - start);
         this.metrics.record(sl.name, "success", 0);
-        console.log(`    → ✗ ${err}`);
+        console.log(`    â†’ âœ— ${err}`);
       }
     }
 
@@ -1175,7 +1175,7 @@ class LoopComposer {
   }
 }
 
-// ─── 5. DeploymentConfig — runtime configuration for the composed loop ───
+// â”€â”€â”€ 5. DeploymentConfig â€” runtime configuration for the composed loop â”€â”€â”€
 
 interface EnvironmentOverrides {
   [env: string]: { maxSteps?: number; maxTokens?: number; maxCostUsd?: number; logLevel?: string };
@@ -1230,7 +1230,7 @@ class DeploymentConfig {
   }
 }
 
-// ─── 6. PerformanceBenchmark — stress-tests the complete system ───
+// â”€â”€â”€ 6. PerformanceBenchmark â€” stress-tests the complete system â”€â”€â”€
 
 interface BenchmarkResult {
   scenario: string;
@@ -1311,19 +1311,19 @@ class PerformanceBenchmark {
     const speedup = baseline.avgMs > 0 ? ((baseline.avgMs - candidate.avgMs) / baseline.avgMs * 100).toFixed(1) : "N/A";
     const failureDelta = candidate.failures - baseline.failures;
     return [
-      `═══ Comparison: ${baseline.scenario} vs ${candidate.scenario} ═══`,
-      `  Avg: ${baseline.avgMs}ms → ${candidate.avgMs}ms (${speedup}%)`,
-      `  P95: ${baseline.p95Ms}ms → ${candidate.p95Ms}ms`,
-      `  Throughput: ${baseline.throughputPerSec}/s → ${candidate.throughputPerSec}/s`,
-      `  Failures: ${baseline.failures} → ${candidate.failures} (${failureDelta > 0 ? "+" : ""}${failureDelta})`,
+      `â•â•â• Comparison: ${baseline.scenario} vs ${candidate.scenario} â•â•â•`,
+      `  Avg: ${baseline.avgMs}ms â†’ ${candidate.avgMs}ms (${speedup}%)`,
+      `  P95: ${baseline.p95Ms}ms â†’ ${candidate.p95Ms}ms`,
+      `  Throughput: ${baseline.throughputPerSec}/s â†’ ${candidate.throughputPerSec}/s`,
+      `  Failures: ${baseline.failures} â†’ ${candidate.failures} (${failureDelta > 0 ? "+" : ""}${failureDelta})`,
     ].join("\n");
   }
 }
 
-// ─── Demo: wiring the complete system ───
+// â”€â”€â”€ Demo: wiring the complete system â”€â”€â”€
 
 async function demoCompleteAssembly() {
-  console.log("═══ Complete Loop System Assembly Demo ═══\n");
+  console.log("â•â•â• Complete Loop System Assembly Demo â•â•â•\n");
 
   // Build deployment config
   const deployCfg = new DeploymentConfig();
@@ -1447,38 +1447,38 @@ await demoCompleteAssembly();
 
 **Expected output:**
 ```
-═══ Complete Loop System Assembly Demo ═══
+â•â•â• Complete Loop System Assembly Demo â•â•â•
 
 Deployment manifest generated for production
   Production maxTokens: 100000, logLevel: warn
 
-═══ Pre-flight validation ═══
-  [critical] All sub-loops registered... ✓
-  [critical] Dependency graph is acyclic... ✓
-  [warning] Budget limits are positive... ✓
-✅ Pre-flight passed
+â•â•â• Pre-flight validation â•â•â•
+  [critical] All sub-loops registered... âœ“
+  [critical] Dependency graph is acyclic... âœ“
+  [warning] Budget limits are positive... âœ“
+âœ… Pre-flight passed
   3/3 checks passed
 
-═══ LoopComposer: 3 sub-loops in dependency order ═══
+â•â•â• LoopComposer: 3 sub-loops in dependency order â•â•â•
 
   Running: planning-loop (timeout: 10000ms)
-    → ✓ (0ms)
+    â†’ âœ“ (0ms)
   Running: execution-loop (timeout: 15000ms)
-    → ✓ (0ms)
+    â†’ âœ“ (0ms)
   Running: critique-loop (timeout: 8000ms)
-    → ✓ (0ms)
+    â†’ âœ“ (0ms)
 
 Composer finished: ALL PASSED in Xms
 
-═══ Metrics Report ═══
+â•â•â• Metrics Report â•â•â•
 ...
 Integration: 3 passed, 0 failed
 
 Benchmark: baseline-plan (10 iterations...
   Total: Xms, Avg: Yms, P50: Zms, P95: Wms...
 
-═══ Comparison: baseline-plan vs optimized-plan ═══
-  Avg: Xms → Yms (...%)
+â•â•â• Comparison: baseline-plan vs optimized-plan â•â•â•
+  Avg: Xms â†’ Yms (...%)
   ...
 ```
 
@@ -1516,7 +1516,7 @@ graph TB
 
 #### LoopTemplateLibrary
 
-Provides pre-built templates for common loop patterns — ReAct, RAG, chat, code generation, and moderation — each with pre-configured tools, prompts, and cycle hooks.
+Provides pre-built templates for common loop patterns â€” ReAct, RAG, chat, code generation, and moderation â€” each with pre-configured tools, prompts, and cycle hooks.
 
 ```typescript
 // loop-template-library.ts
@@ -1542,7 +1542,7 @@ class LoopTemplateLibrary {
   private registerDefaults(): void {
     this.templates.set("react", {
       name: "ReAct Agent",
-      description: "Plan–Act–Observe reasoning loop",
+      description: "Planâ€“Actâ€“Observe reasoning loop",
       tools: [
         { name: "search", description: "Search knowledge base" },
         { name: "calculate", description: "Perform calculation" },
@@ -1555,7 +1555,7 @@ class LoopTemplateLibrary {
     });
     this.templates.set("rag", {
       name: "RAG Pipeline",
-      description: "Retrieve–Augment–Generate with document retrieval",
+      description: "Retrieveâ€“Augmentâ€“Generate with document retrieval",
       tools: [
         { name: "retrieve", description: "Retrieve relevant chunks" },
         { name: "rerank", description: "Rerank by relevance" },
@@ -1628,7 +1628,7 @@ class LoopTemplateLibrary {
 
 #### DeploymentValidator
 
-Checks environment readiness before deploying a loop — verifies filesystem writability, memory headroom, API key presence, and runtime version.
+Checks environment readiness before deploying a loop â€” verifies filesystem writability, memory headroom, API key presence, and runtime version.
 
 ```typescript
 // deployment-validator.ts
@@ -1677,7 +1677,7 @@ class DeploymentValidator {
     passed: boolean;
     results: Array<{ name: string; passed: boolean; message: string }>;
   }> {
-    console.log("═══ Deployment Validation ═══\n");
+    console.log("â•â•â• Deployment Validation â•â•â•\n");
     const results: Array<{
       name: string;
       passed: boolean;
@@ -1688,14 +1688,14 @@ class DeploymentValidator {
       try {
         const r = await check.run();
         results.push({ name: check.name, ...r });
-        console.log(r.passed ? "✓" : `✗ — ${r.message}`);
+        console.log(r.passed ? "âœ“" : `âœ— â€” ${r.message}`);
       } catch (err) {
         results.push({ name: check.name, passed: false, message: String(err) });
-        console.log(`✗ — ${err}`);
+        console.log(`âœ— â€” ${err}`);
       }
     }
     const passed = results.every((r) => r.passed);
-    console.log(`\n${passed ? "✅" : "❌"} Environment ${passed ? "ready" : "not ready"}`);
+    console.log(`\n${passed ? "âœ…" : "âŒ"} Environment ${passed ? "ready" : "not ready"}`);
     return { passed, results };
   }
 }
@@ -1788,11 +1788,11 @@ class OnCallDashboard {
   }
 
   generateDashboard(): string {
-    const lines = ["═══ On-Call Dashboard ═══\n"];
+    const lines = ["â•â•â• On-Call Dashboard â•â•â•\n"];
     const score = this.healthScore();
     lines.push(
       `Health Score: ${(score * 100).toFixed(0)}% ${
-        score >= 0.8 ? "✅" : score >= 0.5 ? "⚠️" : "🚨"
+        score >= 0.8 ? "âœ…" : score >= 0.5 ? "âš ï¸" : "ðŸš¨"
       }\n`,
     );
     lines.push("Running Loops:");
@@ -1808,7 +1808,7 @@ class OnCallDashboard {
     const open = this.incidents.filter((i) => !i.resolvedAt);
     lines.push(`\nOpen Incidents: ${open.length}`);
     for (const i of open.slice(0, 3))
-      lines.push(`  ${i.title} — ${i.startedAt.slice(11, 19)}`);
+      lines.push(`  ${i.title} â€” ${i.startedAt.slice(11, 19)}`);
     return lines.join("\n");
   }
 
@@ -1873,9 +1873,9 @@ class LoopUpgradeManager {
       this.versions.forEach((v) => (v.active = false));
       ver.active = true;
       this.currentIdx = this.versions.indexOf(ver);
-      console.log(`[upgrade] ${version} healthy — promoted`);
+      console.log(`[upgrade] ${version} healthy â€” promoted`);
     } else {
-      console.log(`[upgrade] ${version} unhealthy — rolling back`);
+      console.log(`[upgrade] ${version} unhealthy â€” rolling back`);
     }
     this.upgrading = false;
     return healthy;
@@ -1914,7 +1914,7 @@ class LoopUpgradeManager {
 
 #### MultiTenantLoopManager
 
-Isolates loops per tenant with resource quotas — concurrent loops, hourly tokens, and daily cost — and enforces limits at runtime.
+Isolates loops per tenant with resource quotas â€” concurrent loops, hourly tokens, and daily cost â€” and enforces limits at runtime.
 
 ```typescript
 // multi-tenant-loop-manager.ts
@@ -2178,7 +2178,7 @@ class CapstoneProjectEvaluator {
 ```typescript
 // demo-platform-tooling.ts
 async function demoPlatformTooling() {
-  console.log("═══ Platform Tooling Demo ═══\n");
+  console.log("â•â•â• Platform Tooling Demo â•â•â•\n");
 
   // 1. Loop Template Library
   const lib = new LoopTemplateLibrary();
@@ -2236,7 +2236,7 @@ async function demoPlatformTooling() {
   upgrade.deployVersion("v1.1.0", { maxSteps: 30 });
   const upResult = await upgrade.rollingUpgrade(["v1.2.0", "v1.3.0"]);
   console.log(
-    `\nUpgrade: ${upResult.success ? "✓" : "✗"} (current: ${upgrade.currentVersion})`,
+    `\nUpgrade: ${upResult.success ? "âœ“" : "âœ—"} (current: ${upgrade.currentVersion})`,
   );
 
   // 6. Capstone evaluation
@@ -2266,16 +2266,16 @@ The capstone integrates every loop concept from this course into a single, coher
 
 | Component | Chapter Origin | Implementation |
 |-----------|----------------|----------------|
-| ReAct loop | Ch2 — Agent Architecture | `PlannedAction → executeTool → observe` cycle |
-| HITL gates | Ch3 — Human-in-the-Loop | Risk-based `approveGate` with auto-approve for low-risk tools |
-| Self-critique | Ch5 — Self-Improvement | `critiqueStep` evaluates failures and decides retry vs. give-up |
-| Budget enforcement | Ch6 — Production Loops | `checkBudget` with token, step, and cost limits |
-| Safe termination | Ch7 — Loop Safety | Max iterations check in `while (this.checkBudget())` |
-| Durable execution | Ch9 — Loop Tooling | `saveCheckpoint` / `resume` with full state serialization |
-| Chaos resilience | Ch9 — Loop Tooling | Retry logic handles transient failures |
-| Saga rollback | Ch9 — Loop Tooling | `rollbackStack` with original-content restoration |
+| ReAct loop | Ch2 â€” Agent Architecture | `PlannedAction â†’ executeTool â†’ observe` cycle |
+| HITL gates | Ch3 â€” Human-in-the-Loop | Risk-based `approveGate` with auto-approve for low-risk tools |
+| Self-critique | Ch5 â€” Self-Improvement | `critiqueStep` evaluates failures and decides retry vs. give-up |
+| Budget enforcement | Ch6 â€” Production Loops | `checkBudget` with token, step, and cost limits |
+| Safe termination | Ch7 â€” Loop Safety | Max iterations check in `while (this.checkBudget())` |
+| Durable execution | Ch9 â€” Loop Tooling | `saveCheckpoint` / `resume` with full state serialization |
+| Chaos resilience | Ch9 â€” Loop Tooling | Retry logic handles transient failures |
+| Saga rollback | Ch9 â€” Loop Tooling | `rollbackStack` with original-content restoration |
 
-**The core insight.** A production agent is not a single LLM call — it is a **controlled loop** where every iteration is planned, gated, traced, budgeted, check-pointed, and recoverable. The LLM provides intelligence; the loop provides reliability.
+**The core insight.** A production agent is not a single LLM call â€” it is a **controlled loop** where every iteration is planned, gated, traced, budgeted, check-pointed, and recoverable. The LLM provides intelligence; the loop provides reliability.
 
 ---
 
@@ -2291,7 +2291,7 @@ The capstone integrates every loop concept from this course into a single, coher
 
 4. **What information would be lost if you only checkpointed the messages array?** Why does the checkpoint also need to store `filesModified`, `budgetUsed`, and `state`?
 
-5. **Explain the propose → review → commit pipeline in MultiFileCodingAgent.** How does it protect against partial failures better than writing each file independently?
+5. **Explain the propose â†’ review â†’ commit pipeline in MultiFileCodingAgent.** How does it protect against partial failures better than writing each file independently?
 
 ### Application Problems
 
@@ -2302,10 +2302,10 @@ The capstone integrates every loop concept from this course into a single, coher
 8. **Add a sandboxed execution guard.** Wrap the `bash` tool so that commands execute inside a Docker container instead of on the host. Use `Bun.spawn(["docker", "run", "--rm", "-i", "sandbox:latest", "cmd.exe", "/c", command])`. Add a `sandboxImage` config option. If Docker is unavailable, fall back to a warning message and block the execution.
 
 9. **Convert the CodingAgentLoop to a Temporal workflow.** Identify which methods map to Temporal constructs:
-   - `executeTool` → Activity
-   - `approveGate` → Signal (human approval)
-   - `run` → Workflow with `while` loop
-   - `saveCheckpoint` → built into Temporal's event history
+   - `executeTool` â†’ Activity
+   - `approveGate` â†’ Signal (human approval)
+   - `run` â†’ Workflow with `while` loop
+   - `saveCheckpoint` â†’ built into Temporal's event history
 
    Outline the conversion. Which parts of the loop become activities, which become signals, and which remain in the workflow function? Why can't you use `console.log` inside a Temporal workflow?
 

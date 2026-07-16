@@ -1,4 +1,4 @@
-# Chapter 15: Decorators
+﻿# Chapter 15: Decorators
 
 
 > **Previous:** [Magic Methods](./14-magic-methods.md) | **Next:** [Generators and itertools](./16-generators.md)
@@ -15,16 +15,16 @@ By the end of this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/15-decorators/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/15-decorators/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/15-decorators/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/15-decorators/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/15-decorators/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/15-decorators/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/15-decorators/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/15-decorators/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/15-decorators/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/15-decorators/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/15-decorators/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/15-decorators/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -403,7 +403,7 @@ class Database:
         print("Database instance created")
 
 db1 = Database()  # Database instance created
-db2 = Database()  # no output → reuses instance
+db2 = Database()  # no output â†’ reuses instance
 print(db1 is db2)  # True
 ```
 
@@ -609,7 +609,7 @@ with timing("compute"):
 ```
 ```typescript
 // Chapter 15: TypeScript Decorator & Higher-Order Function Equivalents
-// Python: decorators wrap functions → TypeScript: higher-order functions
+// Python: decorators wrap functions â†’ TypeScript: higher-order functions
 
 // Simple function wrapper (like a decorator without @ syntax)
 function timer<Args extends unknown[], Return>(
@@ -632,7 +632,7 @@ const slowSum = (a: number, b: number): number => {
 const timedSum = timer(slowSum);
 console.log(timedSum(3, 4));  // logs timing, returns 7
 
-// Python: @lru_cache → TypeScript: memoization wrapper
+// Python: @lru_cache â†’ TypeScript: memoization wrapper
 function memoize<Args extends unknown[], Return>(
   fn: (...args: Args) => Return
 ): (...args: Args) => Return {
@@ -665,7 +665,7 @@ function Logged(target: any, propertyKey: string, descriptor: PropertyDescriptor
 ### TypeScript Higher-Order Function Patterns
 
 ```typescript
-// Python: retry decorator → TypeScript: retry wrapper
+// Python: retry decorator â†’ TypeScript: retry wrapper
 async function retry<T>(
   fn: () => Promise<T>,
   maxAttempts: number = 3,
@@ -683,7 +683,7 @@ async function retry<T>(
   throw new Error("Unreachable");
 }
 
-// Python: @validate_args → TypeScript: runtime type check wrapper
+// Python: @validate_args â†’ TypeScript: runtime type check wrapper
 function validateTypes(fn: Function, paramTypes: string[]): Function {
   return (...args: unknown[]) => {
     for (let i = 0; i < args.length; i++) {
@@ -700,18 +700,18 @@ const safeAdd = validateTypes((a: number, b: number) => a + b, ["number", "numbe
 console.log(safeAdd(2, 3));  // 5
 // safeAdd(2, "3");  // TypeError
 
-// Python: @deprecated → TypeScript: deprecation wrapper
+// Python: @deprecated â†’ TypeScript: deprecation wrapper
 function deprecated(message: string) {
   return (_target: any, propertyKey: string, descriptor: PropertyDescriptor) => {
     const original = descriptor.value;
     descriptor.value = function (...args: unknown[]) {
-      console.warn(`Deprecated: ${propertyKey} — ${message}`);
+      console.warn(`Deprecated: ${propertyKey} â€” ${message}`);
       return original.apply(this, args);
     };
   };
 }
 
-// Python: @singleton → TypeScript: Singleton pattern
+// Python: @singleton â†’ TypeScript: Singleton pattern
 class Singleton {
   private static instance: Singleton;
   private constructor() {}
@@ -822,7 +822,7 @@ function logCalls<T extends (...args: unknown[]) => unknown>(fn: T): T {
   }) as T;
 }
 const add = logCalls((a: number, b: number) => a + b);
-console.log(add(3, 4)); // Logs: Called (3, 4) → 7
+console.log(add(3, 4)); // Logs: Called (3, 4) â†’ 7
 
 // === Timing decorator ===
 function timed<T extends (...args: unknown[]) => unknown>(fn: T): T {

@@ -1,4 +1,4 @@
-# Chapter 2: Grammar Essentials
+﻿# Chapter 2: Grammar Essentials
 
 ## Learning Objectives
 
@@ -12,16 +12,16 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/english-language/02-grammar-essentials/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/english-language/02-grammar-essentials/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/english-language/02-grammar-essentials/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/english-language/02-grammar-essentials/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/english-language/02-grammar-essentials/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/english-language/02-grammar-essentials/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/english-language/02-grammar-essentials/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/english-language/02-grammar-essentials/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/english-language/02-grammar-essentials/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/english-language/02-grammar-essentials/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/english-language/02-grammar-essentials/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/english-language/02-grammar-essentials/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -33,14 +33,14 @@ By the end of this chapter, you will be able to:
 
 ### 2.1 Importance of Grammar in Govt Exams
 
-Grammar questions account for **5–7 questions** in IBPS SO IT Officer Prelims. These appear in multiple formats:
+Grammar questions account for **5â€“7 questions** in IBPS SO IT Officer Prelims. These appear in multiple formats:
 
 | Format | Typical Count | Skill Tested |
 |--------|---------------|--------------|
-| Spotting Errors | 1–2 questions (5 sentences each) | Error identification |
-| Sentence Improvement | 2–3 questions | Correction ability |
-| Fillers (Single/Double) | 2–3 questions | Contextual grammar |
-| Sentence Correction | 1–2 questions | Syntax & structure |
+| Spotting Errors | 1â€“2 questions (5 sentences each) | Error identification |
+| Sentence Improvement | 2â€“3 questions | Correction ability |
+| Fillers (Single/Double) | 2â€“3 questions | Contextual grammar |
+| Sentence Correction | 1â€“2 questions | Syntax & structure |
 
 Grammar is the **most scoring section** in English. Rules are finite and predictable. Unlike RC or vocabulary, consistent practice guarantees accuracy.
 
@@ -48,41 +48,41 @@ Grammar is the **most scoring section** in English. Rules are finite and predict
 
 The verb must agree with its subject in **number and person**.
 
-**Rule 1:** Singular subject → singular verb. Plural subject → plural verb.
+**Rule 1:** Singular subject â†’ singular verb. Plural subject â†’ plural verb.
 
 - *The manager **is** reviewing the report.* (singular)
 - *The managers **are** reviewing the report.* (plural)
 
 **Rule 2:** Subjects joined by "and" are plural.
-- *Ravi **and** his colleague **are** presenting.* ✓
-- *Ravi **and** his colleague **is** presenting.* ✗
+- *Ravi **and** his colleague **are** presenting.* âœ“
+- *Ravi **and** his colleague **is** presenting.* âœ—
 
 **Exception:** If the subjects form a single unit:
 - *Bread **and** butter **is** my favourite breakfast.* (single unit)
 
-**Rule 3:** With "either...or", "neither...nor" — the verb agrees with the subject NEAREST to it.
-- *Neither the manager **nor** his assistants **are** present.* (assistants → are)
-- *Neither the assistants **nor** the manager **is** present.* (manager → is)
+**Rule 3:** With "either...or", "neither...nor" â€” the verb agrees with the subject NEAREST to it.
+- *Neither the manager **nor** his assistants **are** present.* (assistants â†’ are)
+- *Neither the assistants **nor** the manager **is** present.* (manager â†’ is)
 
 **Rule 4:** "Each", "every", "either", "neither", "one of" take singular verbs.
-- *Each of the employees **has** been trained.* ✓
-- *Every candidate **appears** for the interview.* ✓
+- *Each of the employees **has** been trained.* âœ“
+- *Every candidate **appears** for the interview.* âœ“
 
 **Common Trick in Exams:**
-- *One of the branches **have** closed.* ✗ (Incorrect)
-- *One of the branches **has** closed.* ✓ (Correct — "one" is the subject)
+- *One of the branches **have** closed.* âœ— (Incorrect)
+- *One of the branches **has** closed.* âœ“ (Correct â€” "one" is the subject)
 
 **Rule 5:** Collective nouns (team, committee, audience, staff) can be singular or plural depending on meaning.
 - *The team **is** united.* (team as a single unit)
 - *The team **are** divided in their opinions.* (team as individuals)
 
 **Rule 6:** Words like "a number of" take plural; "the number of" takes singular.
-- *A number of issues **have** been resolved.* ✓
-- *The number of issues **has** decreased.* ✓
+- *A number of issues **have** been resolved.* âœ“
+- *The number of issues **has** decreased.* âœ“
 
 **Rule 7:** Amounts, distances, time periods are singular.
-- *Five thousand rupees **is** a reasonable price.* ✓
-- *Ten kilometres **is** a long distance to walk.* ✓
+- *Five thousand rupees **is** a reasonable price.* âœ“
+- *Ten kilometres **is** a long distance to walk.* âœ“
 
 ### 2.3 Tenses
 
@@ -101,17 +101,17 @@ The verb must agree with its subject in **number and person**.
 | Future Perfect | Action completed by a future time | *We **will have completed** the project by Friday.* |
 
 **Exam Trap:** Watch for tense inconsistency in compound sentences.
-- *He **joined** the bank in 2020 and **works** there since then.* ✗
-- *He **joined** the bank in 2020 and **has been working** there since then.* ✓
+- *He **joined** the bank in 2020 and **works** there since then.* âœ—
+- *He **joined** the bank in 2020 and **has been working** there since then.* âœ“
 
 #### Sequence of Tenses in Narrations
 
-- Past tense in main clause → past tense in subordinate clause
-  - *He said that he **was** coming.* ✓
-  - *He said that he **is** coming.* ✗
+- Past tense in main clause â†’ past tense in subordinate clause
+  - *He said that he **was** coming.* âœ“
+  - *He said that he **is** coming.* âœ—
 
-- Universal truth — always present tense
-  - *The teacher said that the Earth **revolves** around the Sun.* ✓
+- Universal truth â€” always present tense
+  - *The teacher said that the Earth **revolves** around the Sun.* âœ“
 
 ### 2.4 Articles (A, An, The)
 
@@ -129,8 +129,8 @@ The verb must agree with its subject in **number and person**.
 - NOT used before uncountable nouns in general sense: *Water is essential* (not *The water is essential*)
 
 **Common Error in Exams:**
-- *He is **an** honest officer.* ✓ (honest begins with vowel sound)
-- *She is **a** European delegate.* ✓ (European begins with consonant sound /y/)
+- *He is **an** honest officer.* âœ“ (honest begins with vowel sound)
+- *She is **a** European delegate.* âœ“ (European begins with consonant sound /y/)
 
 ### 2.5 Prepositions
 
@@ -190,9 +190,9 @@ Prepositions show relationships in time, place, direction, and manner.
 | Hardly...when | Immediate sequence | *Hardly had he arrived when the meeting started.* |
 | Not only...but also | Addition | *He is not only smart but also hardworking.* |
 
-**Common Error:** Using "than" with "no sooner" instead of "than" — actually "than" is correct with "no sooner".
-- *No sooner did he speak **than** everyone listened.* ✓
-- *No sooner did he speak **when** everyone listened.* ✗
+**Common Error:** Using "than" with "no sooner" instead of "than" â€” actually "than" is correct with "no sooner".
+- *No sooner did he speak **than** everyone listened.* âœ“
+- *No sooner did he speak **when** everyone listened.* âœ—
 
 ### 2.7 Commonly Confused Words
 
@@ -228,30 +228,30 @@ Prepositions show relationships in time, place, direction, and manner.
 
 | Direct | Indirect |
 |--------|----------|
-| Simple Present → Simple Past | *He said, "I work here." → He said that he worked there.* |
-| Present Continuous → Past Continuous | *He said, "I am working." → He said that he was working.* |
-| Present Perfect → Past Perfect | *He said, "I have worked." → He said that he had worked.* |
-| Simple Past → Past Perfect | *He said, "I worked." → He said that he had worked.* |
-| Will → Would | *He said, "I will come." → He said that he would come.* |
-| Can → Could | *He said, "I can do it." → He said that he could do it.* |
-| May → Might | *He said, "I may go." → He said that he might go.* |
-| Must → Had to | *He said, "I must leave." → He said that he had to leave.* |
+| Simple Present â†’ Simple Past | *He said, "I work here." â†’ He said that he worked there.* |
+| Present Continuous â†’ Past Continuous | *He said, "I am working." â†’ He said that he was working.* |
+| Present Perfect â†’ Past Perfect | *He said, "I have worked." â†’ He said that he had worked.* |
+| Simple Past â†’ Past Perfect | *He said, "I worked." â†’ He said that he had worked.* |
+| Will â†’ Would | *He said, "I will come." â†’ He said that he would come.* |
+| Can â†’ Could | *He said, "I can do it." â†’ He said that he could do it.* |
+| May â†’ Might | *He said, "I may go." â†’ He said that he might go.* |
+| Must â†’ Had to | *He said, "I must leave." â†’ He said that he had to leave.* |
 
 **Reporting Verb Changes:**
-- "said to" → "told" (with object)
-- "said" → "said" (without object)
+- "said to" â†’ "told" (with object)
+- "said" â†’ "said" (without object)
 
 **Interrogative Sentences:**
 - Reporting verb changes to "asked/inquired/enquired"
 - Remove question mark, use "if/whether" for yes/no questions
-- *He said to me, "Are you coming?" → He asked me **whether** I was coming.*
+- *He said to me, "Are you coming?" â†’ He asked me **whether** I was coming.*
 - For WH-questions, use the WH-word as conjunction
-- *He asked, "Where do you work?" → He asked **where** I worked.*
+- *He asked, "Where do you work?" â†’ He asked **where** I worked.*
 
 **Imperative Sentences:**
 - Reporting verb changes to "ordered/requested/advised/forbade"
 - Use "to + verb" instead of "that"
-- *The manager said, "Submit the report." → The manager **ordered** me **to submit** the report.*
+- *The manager said, "Submit the report." â†’ The manager **ordered** me **to submit** the report.*
 
 ### 2.10 Conditional Sentences
 
@@ -264,36 +264,36 @@ Prepositions show relationships in time, place, direction, and manner.
 
 **Exam Note:** "Were" is used instead of "was" in Type 2 conditionals, especially with "if I were you" (which is fixed).
 
-- *If I **was** the manager, I would approve it.* ✗
-- *If I **were** the manager, I would approve it.* ✓
+- *If I **was** the manager, I would approve it.* âœ—
+- *If I **were** the manager, I would approve it.* âœ“
 
 ### 2.11 Key Error Detection Patterns
 
-**Pattern 1 — Noun-Pronoun Agreement:**
-- *Each of the officers must submit **their** report.* ✗
-- *Each of the officers must submit **his/her** report.* ✓
+**Pattern 1 â€” Noun-Pronoun Agreement:**
+- *Each of the officers must submit **their** report.* âœ—
+- *Each of the officers must submit **his/her** report.* âœ“
 - Recent trend: Some exams accept "their" as gender-neutral. But in conservative grammar, "his" or "his/her" is preferred.
 
-**Pattern 2 — Parallelism:**
-- *He likes swimming, running, and **to cycle**.* ✗
-- *He likes **swimming**, **running**, and **cycling**.* ✓
+**Pattern 2 â€” Parallelism:**
+- *He likes swimming, running, and **to cycle**.* âœ—
+- *He likes **swimming**, **running**, and **cycling**.* âœ“
 
-**Pattern 3 — Redundancy:**
-- *He returned **back** to the office.* ✗ (returned = came back)
-- *He returned to the office.* ✓
-- *The reason is **because** the system failed.* ✗
-- *The reason is **that** the system failed.* ✓
-- ***Repeat** the process **again**.* ✗
-- *Repeat the process.* ✓
+**Pattern 3 â€” Redundancy:**
+- *He returned **back** to the office.* âœ— (returned = came back)
+- *He returned to the office.* âœ“
+- *The reason is **because** the system failed.* âœ—
+- *The reason is **that** the system failed.* âœ“
+- ***Repeat** the process **again**.* âœ—
+- *Repeat the process.* âœ“
 
-**Pattern 4 — Misplaced Modifiers:**
-- *Walking down the street, the building looked impressive.* ✗ (building is not walking)
-- *Walking down the street, **I** found the building impressive.* ✓
+**Pattern 4 â€” Misplaced Modifiers:**
+- *Walking down the street, the building looked impressive.* âœ— (building is not walking)
+- *Walking down the street, **I** found the building impressive.* âœ“
 
-**Pattern 5 — Double Negatives:**
-- *He **didn't** give **nothing** to the fund.* ✗
-- *He **didn't** give **anything** to the fund.* ✓
-- *He gave **nothing** to the fund.* ✓
+**Pattern 5 â€” Double Negatives:**
+- *He **didn't** give **nothing** to the fund.* âœ—
+- *He **didn't** give **anything** to the fund.* âœ“
+- *He gave **nothing** to the fund.* âœ“
 
 ---
 
@@ -306,11 +306,11 @@ Prepositions show relationships in time, place, direction, and manner.
 *The committee have (A) / decided to implement (B) / the new policy (C) / with immediate effect. (D) / No error (E)*
 
 **Step-by-Step:**
-1. Subject: "The committee" — a collective noun
+1. Subject: "The committee" â€” a collective noun
 2. If the committee acts as a single unit, verb should be singular: "has"
 3. However, if the committee members are acting individually, "have" could work
 4. In standard exam context, "committee" as a collective noun takes "has" in formal English
-5. Error is in part (A) — "have" should be "has"
+5. Error is in part (A) â€” "have" should be "has"
 
 **Answer:** A
 
@@ -346,7 +346,7 @@ c) verified
 d) verifying
 
 **Explanation:**
-"Asked to" is followed by the base form of the verb (infinitive without "to" — actually "asked to" is followed by the base verb: "asked to verify"). "To verify" is the correct infinitive form.
+"Asked to" is followed by the base form of the verb (infinitive without "to" â€” actually "asked to" is followed by the base verb: "asked to verify"). "To verify" is the correct infinitive form.
 
 **Answer:** a
 
@@ -364,11 +364,11 @@ c) affect / changing
 d) impact / changed
 
 **Explanation:**
-"Will" requires the base form: "will impact/affect". The second blank needs a participle to describe the manner: "changing the way..." Option (a): "impact" is a verb here, "changing" is correct. Option (c): "affect" works too, but "changing" also works. Let's check: "will affect...changing" — yes, this is grammatically correct.
+"Will" requires the base form: "will impact/affect". The second blank needs a participle to describe the manner: "changing the way..." Option (a): "impact" is a verb here, "changing" is correct. Option (c): "affect" works too, but "changing" also works. Let's check: "will affect...changing" â€” yes, this is grammatically correct.
 
 Wait, let's re-evaluate. The sentence structure: "The new regulation will ____ the banking sector, ____ the way loans are disbursed." The comma suggests the second part is a participial phrase modifying the first part. "changing" works. "changes" (b) would not work because it creates a parallel structure error. "changed" (d) is past tense and doesn't fit.
 
-Between (a) and (c): "affect" is a verb meaning to influence. "impact" can also be a verb. Both are acceptable nouns/verbs. However, traditionally "affect" is preferred as a verb and "effect" as a noun. "impact" as a verb is widely accepted now. Both (a) and (c) seem potentially valid. Let's check (c): "affect" is a verb — correct. "changing" is present participle — correct. Same for (a).
+Between (a) and (c): "affect" is a verb meaning to influence. "impact" can also be a verb. Both are acceptable nouns/verbs. However, traditionally "affect" is preferred as a verb and "effect" as a noun. "impact" as a verb is widely accepted now. Both (a) and (c) seem potentially valid. Let's check (c): "affect" is a verb â€” correct. "changing" is present participle â€” correct. Same for (a).
 
 The more traditional and safe answer is (c) because "impact" as a verb is still considered informal by some exam boards. In IBPS, "affect" is the preferred verb.
 
@@ -385,11 +385,11 @@ The more traditional and safe answer is (c) because "impact" as a verb is still 
 **Explanation:**
 The correct phrase is "prefer...to..." not "prefer...rather than...". "Prefer" is always followed by "to" when comparing two things.
 
-**Answer:** B (rather than → to)
+**Answer:** B (rather than â†’ to)
 
 ---
 
-## 📝 Solved Examples (20 MCQs)
+## ðŸ“ Solved Examples (20 MCQs)
 
 ### Section A: Spotting Errors (Q1-Q8)
 
@@ -424,7 +424,7 @@ B. "Each of" takes a singular verb. "Each...has been provided" is correct, not "
 
 <details>
 <summary>Answer</summary>
-C. In formal/academic usage, "data" is the plural of "datum," so "suggest" is actually correct for plural. However, many exam boards accept "data" as singular or plural. In IBPS context, if the error is marked, it might be about other issues. Actually, "data" can take either verb. Let's reconsider — if no other error exists, answer could be "No error (E)." However, the standard rule: "data" as plural → "suggest" is correct. But some formal exams treat "data" as singular. For IBPS SO, "data" is generally treated as singular, so "suggests" would be correct. Answer: C — "suggest" should be "suggests."
+C. In formal/academic usage, "data" is the plural of "datum," so "suggest" is actually correct for plural. However, many exam boards accept "data" as singular or plural. In IBPS context, if the error is marked, it might be about other issues. Actually, "data" can take either verb. Let's reconsider â€” if no other error exists, answer could be "No error (E)." However, the standard rule: "data" as plural â†’ "suggest" is correct. But some formal exams treat "data" as singular. For IBPS SO, "data" is generally treated as singular, so "suggests" would be correct. Answer: C â€” "suggest" should be "suggests."
 </details>
 
 ---
@@ -442,7 +442,7 @@ C. In "one of the + plural noun + who/that," the relative pronoun refers to the 
 
 <details>
 <summary>Answer</summary>
-B. "The number of" takes a singular verb. The correct form is "The number...is increasing." Compare: "A number of attacks are increasing" (plural — "a number of" = many).
+B. "The number of" takes a singular verb. The correct form is "The number...is increasing." Compare: "A number of attacks are increasing" (plural â€” "a number of" = many).
 </details>
 
 ---
@@ -473,7 +473,7 @@ a) revised   b) reversed   c) revolved   d) revived
 
 <details>
 <summary>Answer</summary>
-a) revised. Banks "revise" (adjust) lending rates. "Reversed" means changed to opposite, "revolved" means rotated, "revived" means brought back to life — none fit the context.
+a) revised. Banks "revise" (adjust) lending rates. "Reversed" means changed to opposite, "revolved" means rotated, "revived" means brought back to life â€” none fit the context.
 </details>
 
 ---
@@ -587,7 +587,7 @@ a) The manager said that he will approve my leave request tomorrow.   b) The man
 
 <details>
 <summary>Answer</summary>
-b) The manager said that he would approve my leave request the next day. In indirect speech: "will" → "would," "your" → "my" (from the listener's perspective), "tomorrow" → "the next day."
+b) The manager said that he would approve my leave request the next day. In indirect speech: "will" â†’ "would," "your" â†’ "my" (from the listener's perspective), "tomorrow" â†’ "the next day."
 </details>
 
 ---
@@ -777,7 +777,7 @@ flowchart LR
 
 ---
 
-## 📖 Exercise Bank (30 Questions)
+## ðŸ“– Exercise Bank (30 Questions)
 
 ### Section A: Spotting Errors (Q1-Q10)
 
@@ -837,7 +837,7 @@ Identify the error in each sentence:
 | Q | Answer | Q | Answer | Q | Answer | Q | Answer | Q | Answer |
 |---|--------|---|--------|---|--------|---|--------|---|--------|
 | 1 | A (was) | 2 | C (are) | 3 | E (No error) | 4 | C (has) | 5 | B (how) |
-| 6 | B (caught) | 7 | B (smarter) | 8 | E (No error — ambiguous) | 9 | C (when) | 10 | A (has been suffering) |
+| 6 | B (caught) | 7 | B (smarter) | 8 | E (No error â€” ambiguous) | 9 | C (when) | 10 | A (has been suffering) |
 | 11 | a) directed | 12 | a) expand | 13 | a) questions | 14 | a) applicable | 15 | a) launched / promote |
 | 16 | b) responsible / ignoring | 17 | a) introduced / to streamline | 18 | a) approved / after | 19 | a) I have been working | 20 | a) If I were |
 | 21 | a) requested that he see | 22 | c) No sooner had he arrived than | 23 | a) prefers coffee to tea | 24 | a) She lost not only her wallet but also her phone | 25 | c) She said that she was leaving for Delhi the next day |
@@ -847,7 +847,7 @@ Identify the error in each sentence:
 
 ## Summary
 
-- Grammar carries **5–7 questions** in IBPS SO Prelims — high scoring with practice
+- Grammar carries **5â€“7 questions** in IBPS SO Prelims â€” high scoring with practice
 - **Subject-Verb Agreement**: Identify the true subject; ignore intervening phrases
 - **Tenses**: Maintain consistency; watch for time adverbs (since, for, ago)
 - **Articles**: "A" before consonant sound, "An" before vowel sound; "The" for specific references
@@ -1029,4 +1029,4 @@ Convert the following sentences:
 
 ---
 
-*Proceed to Chapter 3 — Vocabulary & Word Usage*
+*Proceed to Chapter 3 â€” Vocabulary & Word Usage*

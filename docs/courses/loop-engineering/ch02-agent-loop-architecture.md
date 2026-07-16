@@ -1,10 +1,10 @@
-# Chapter 2: Agent Loop Architecture
+﻿# Chapter 2: Agent Loop Architecture
 
 > **Last Updated:** June 2026 | **Estimated Reading Time:** 90 minutes
 
-Chapter 1 taught you that every agent is a feedback loop. But *what kind* of loop? The ReAct pattern (Thought → Action → Observation) is the most famous, but it is far from the only one — and not always the best.
+Chapter 1 taught you that every agent is a feedback loop. But *what kind* of loop? The ReAct pattern (Thought â†’ Action â†’ Observation) is the most famous, but it is far from the only one â€” and not always the best.
 
-This chapter surveys the major agent loop architectures in the literature, implements each in TypeScript, and gives you a decision framework for choosing the right one. By the end you will understand four patterns — ReAct, ReWoo, Reflexion, and Tree-of-Thoughts — as distinct points in a design space defined by **plan depth**, **feedback granularity**, and **search breadth**.
+This chapter surveys the major agent loop architectures in the literature, implements each in TypeScript, and gives you a decision framework for choosing the right one. By the end you will understand four patterns â€” ReAct, ReWoo, Reflexion, and Tree-of-Thoughts â€” as distinct points in a design space defined by **plan depth**, **feedback granularity**, and **search breadth**.
 
 ---
 
@@ -15,34 +15,34 @@ After completing this chapter you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/loop-engineering/ch02-agent-loop-architecture/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/loop-engineering/ch02-agent-loop-architecture/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/loop-engineering/ch02-agent-loop-architecture/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/loop-engineering/ch02-agent-loop-architecture/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/loop-engineering/ch02-agent-loop-architecture/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/loop-engineering/ch02-agent-loop-architecture/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/loop-engineering/ch02-agent-loop-architecture/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/loop-engineering/ch02-agent-loop-architecture/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/loop-engineering/ch02-agent-loop-architecture/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/loop-engineering/ch02-agent-loop-architecture/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/loop-engineering/ch02-agent-loop-architecture/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/loop-engineering/ch02-agent-loop-architecture/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
 <!-- End Image Gallery -->
 
 
-1.  **Implement the ReAct loop** — the canonical Thought → Action → Observation cycle — with typed tool calls and structured observations.
+1.  **Implement the ReAct loop** â€” the canonical Thought â†’ Action â†’ Observation cycle â€” with typed tool calls and structured observations.
 2.  **Distinguish ReWoo from ReAct** by its separation of planning from execution, and explain why that matters for long-horizon tasks.
 3.  **Build a Reflexion agent** that generates output, critiques itself, and refines iteratively.
 4.  **Compare Tree-of-Thoughts and LLM Compiler** as breadth-first vs depth-first loop topologies.
 5.  **Choose the correct pattern** for a given task using the decision framework in the comparison table.
-6.  **Compose patterns** — for example, using ReAct *inside* a ReWoo plan step — to handle complex real-world requirements.
+6.  **Compose patterns** â€” for example, using ReAct *inside* a ReWoo plan step â€” to handle complex real-world requirements.
 
 ---
 
 ## Theory
 
-### 1. The ReAct Pattern (Thought → Action → Observation)
+### 1. The ReAct Pattern (Thought â†’ Action â†’ Observation)
 
 
 The ReAct pattern, introduced by Yao et al. (2023), interleaves **reasoning** (thoughts) with **acting** (tool calls) and **perception** (observations). The loop is:
@@ -52,36 +52,36 @@ repeat:
   1. Thought: reason about current state and what to do next
   2. Action: invoke a tool, query a database, or call an API
   3. Observation: ingest the result (structured data, error, etc.)
-  4. → repeat until the task is complete or a terminal action is taken
+  4. â†’ repeat until the task is complete or a terminal action is taken
 ```
 
 ReAct is the **default pattern** for most agentic AI systems because it tightly couples reasoning with evidence. Each thought is immediately grounded by an observation, preventing hallucination drift.
 
 **When ReAct shines:**
-- Short-horizon tasks (2–10 steps)
+- Short-horizon tasks (2â€“10 steps)
 - Tasks requiring frequent tool use with immediate feedback
 - Situations where the plan cannot be known in advance
 
 **When ReAct struggles:**
-- Long-horizon tasks (20+ steps) — the agent forgets the original goal
-- Tasks requiring global optimization — the greedy per-step reasoning misses better long-term paths
-- Cost-sensitive deployments — every cycle burns an LLM call
+- Long-horizon tasks (20+ steps) â€” the agent forgets the original goal
+- Tasks requiring global optimization â€” the greedy per-step reasoning misses better long-term paths
+- Cost-sensitive deployments â€” every cycle burns an LLM call
 
 ```
-┌─────────────────────────────────────────────────────┐
-│              ReAct Loop                              │
-│                                                      │
-│  Task ──► Thought ──► Action ──► Observation ──► Done? │
-│              ▲                          │             │
-│              └────────── loop ──────────┘             │
-│                                                      │
-│  Each cycle: 1 LLM call (thought + action generation) │
-│              1 tool call (action execution)           │
-│              1 LLM call (observation interpretation)  │
-└─────────────────────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚              ReAct Loop                              â”‚
+â”‚                                                      â”‚
+â”‚  Task â”€â”€â–º Thought â”€â”€â–º Action â”€â”€â–º Observation â”€â”€â–º Done? â”‚
+â”‚              â–²                          â”‚             â”‚
+â”‚              â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ loop â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜             â”‚
+â”‚                                                      â”‚
+â”‚  Each cycle: 1 LLM call (thought + action generation) â”‚
+â”‚              1 tool call (action execution)           â”‚
+â”‚              1 LLM call (observation interpretation)  â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
-### 2. The ReWoo Pattern (Plan → Execute)
+### 2. The ReWoo Pattern (Plan â†’ Execute)
 
 
 ReWoo (Reasoning WithOut Observation), introduced by Xu et al. (2023), separates the loop into two phases:
@@ -90,32 +90,32 @@ ReWoo (Reasoning WithOut Observation), introduced by Xu et al. (2023), separates
 2. **Execute:** The executor runs each step in order; it does not re-invoke the LLM between steps. Results are aggregated and returned to a final summarizer.
 
 ```
-              ┌──────────────────────┐
-  Task ──►    │      Planner         │ ──► Step 1, Step 2, ..., Step N
-              │  (one LLM call,      │
-              │   full plan)         │
-              └──────────────────────┘
-                         │
-                         ▼
-              ┌──────────────────────┐
-              │      Executor         │ ──► Tool results
-              │  (no LLM between      │
-              │   steps, just tools)  │
-              └──────────────────────┘
-                         │
-                         ▼
-              ┌──────────────────────┐
-              │      Summarizer       │ ──► Final answer
-              │  (one LLM call,       │
-              │   all observations)   │
-              └──────────────────────┘
+              â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+  Task â”€â”€â–º    â”‚      Planner         â”‚ â”€â”€â–º Step 1, Step 2, ..., Step N
+              â”‚  (one LLM call,      â”‚
+              â”‚   full plan)         â”‚
+              â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                         â”‚
+                         â–¼
+              â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+              â”‚      Executor         â”‚ â”€â”€â–º Tool results
+              â”‚  (no LLM between      â”‚
+              â”‚   steps, just tools)  â”‚
+              â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                         â”‚
+                         â–¼
+              â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+              â”‚      Summarizer       â”‚ â”€â”€â–º Final answer
+              â”‚  (one LLM call,       â”‚
+              â”‚   all observations)   â”‚
+              â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
-**Key advantage:** The executor is cheap — it runs tools but no LLM calls. For tasks where the plan is correct (e.g., "get weather for 5 cities, then summarize"), ReWoo uses 1/Nth the LLM cost of ReAct.
+**Key advantage:** The executor is cheap â€” it runs tools but no LLM calls. For tasks where the plan is correct (e.g., "get weather for 5 cities, then summarize"), ReWoo uses 1/Nth the LLM cost of ReAct.
 
 **Key risk:** If a step fails, there is no replanning mid-execution. The executor blindly passes bad data to the next step. Mitigations include pre-execution validation and fallback handlers.
 
-### 3. The Reflexion Pattern (Critique → Refine)
+### 3. The Reflexion Pattern (Critique â†’ Refine)
 
 
 Reflexion, introduced by Shinn et al. (2023), adds a **self-critique** step after each attempt. The agent generates a candidate solution, reflects on its quality, and refines. The loop is:
@@ -125,29 +125,29 @@ repeat:
   1. Generate: produce a candidate (code, text, plan, etc.)
   2. Critique: evaluate the candidate against a rubric
   3. Refine: produce an improved version informed by the critique
-  4. → repeat until critique passes or max iterations reached
+  4. â†’ repeat until critique passes or max iterations reached
 ```
 
 ```
-┌──────────────────────────────────────────────────────────┐
-│                  Reflexion Loop                            │
-│                                                            │
-│  Task ──► Generate ──► Critique ──► Pass? ──yes──► Output  │
-│               ▲              │        │                    │
-│               │              │   no   │                    │
-│               │              ▼        │                    │
-│               │         Refine ───────┘                    │
-│               │                                            │
-│               └─────────── loop ───────────────────────────┘
-│                                                            │
-│  Each cycle: 1 generate LLM call + 1 critique LLM call     │
-│              (+ 1 refine LLM call if critique fails)        │
-└──────────────────────────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚                  Reflexion Loop                            â”‚
+â”‚                                                            â”‚
+â”‚  Task â”€â”€â–º Generate â”€â”€â–º Critique â”€â”€â–º Pass? â”€â”€yesâ”€â”€â–º Output  â”‚
+â”‚               â–²              â”‚        â”‚                    â”‚
+â”‚               â”‚              â”‚   no   â”‚                    â”‚
+â”‚               â”‚              â–¼        â”‚                    â”‚
+â”‚               â”‚         Refine â”€â”€â”€â”€â”€â”€â”€â”˜                    â”‚
+â”‚               â”‚                                            â”‚
+â”‚               â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ loop â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+â”‚                                                            â”‚
+â”‚  Each cycle: 1 generate LLM call + 1 critique LLM call     â”‚
+â”‚              (+ 1 refine LLM call if critique fails)        â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 **Key insight:** Reflexion treats the *critique* as the feedback signal in the control loop. The error is not "distance to correct answer" (which is often unknown) but "score on a rubric" (which is always measurable). This makes it applicable to open-ended tasks like creative writing, architecture design, and code review.
 
-**Failure mode:** The agent overfits to the rubric — it learns to maximize the critique score rather than the true objective (Goodhart's law).
+**Failure mode:** The agent overfits to the rubric â€” it learns to maximize the critique score rather than the true objective (Goodhart's law).
 
 ### 4. Tree-of-Thoughts and LLM Compiler
 
@@ -155,23 +155,23 @@ repeat:
 **Tree-of-Thoughts (ToT)**, introduced by Yao et al. (2023), explores multiple reasoning paths in parallel. At each step, the LLM generates several candidate "thoughts," evaluates each, and selects the most promising branches for further exploration. This is a **breadth-first** loop.
 
 ```
-                    ┌── thought A1 ── thought A2 ── ...
-                   │
-  Task ──► root ───┼── thought B1 ── thought B2 ── ...
-                   │
-                    └── thought C1 ── thought C2 ── ...
+                    â”Œâ”€â”€ thought A1 â”€â”€ thought A2 â”€â”€ ...
+                   â”‚
+  Task â”€â”€â–º root â”€â”€â”€â”¼â”€â”€ thought B1 â”€â”€ thought B2 â”€â”€ ...
+                   â”‚
+                    â””â”€â”€ thought C1 â”€â”€ thought C2 â”€â”€ ...
 
-  At each level: generate K candidates → evaluate → keep top B → recurse
+  At each level: generate K candidates â†’ evaluate â†’ keep top B â†’ recurse
 ```
 
 **LLM Compiler**, introduced by Google (2024), inverts the topology. It produces a single, long-horizon plan and then **executes steps in parallel** where dependencies allow, using a scheduler to track completion. This is a **depth-first+parallel** loop optimized for latency.
 
 ```
-                   ┌── Step 1 ──► output_1
-                  │
-  Plan ──► Scheduler ─── Step 2 ──► output_2 ──► Join ──► Final
-                  │          └── Step 3 ──► output_3
-                   └── Step 4 ──► output_4
+                   â”Œâ”€â”€ Step 1 â”€â”€â–º output_1
+                  â”‚
+  Plan â”€â”€â–º Scheduler â”€â”€â”€ Step 2 â”€â”€â–º output_2 â”€â”€â–º Join â”€â”€â–º Final
+                  â”‚          â””â”€â”€ Step 3 â”€â”€â–º output_3
+                   â””â”€â”€ Step 4 â”€â”€â–º output_4
 
   Parallel execution where dependencies are absent
 ```
@@ -179,7 +179,7 @@ repeat:
 | Property | Tree-of-Thoughts | LLM Compiler |
 |----------|-----------------|--------------|
 | Search strategy | Breadth-first | Depth-first (with parallelization) |
-| LLM calls per cycle | K candidates × eval | 1 planner + N parallel executors |
+| LLM calls per cycle | K candidates Ã— eval | 1 planner + N parallel executors |
 | Best for | Creative / exploratory tasks | Deterministic multi-step pipelines |
 | Cost | High (many parallel calls) | Moderate (shares LLM calls across paths) |
 | Error recovery | Prune bad branches | Replan on dependency failure |
@@ -196,8 +196,8 @@ repeat:
 | **LLM Compiler** | Multi-step pipeline, parallelizable steps | "Generate, test, lint, and format a module" |
 
 **Real-world agents compose patterns.** A common architecture is:
-- **Outer loop:** ReWoo (plan → execute)
-- **Inner loop per step:** ReAct (thought → action → observation) for steps that need exploration
+- **Outer loop:** ReWoo (plan â†’ execute)
+- **Inner loop per step:** ReAct (thought â†’ action â†’ observation) for steps that need exploration
 - **Post-execution:** Reflexion (critique the overall output)
 - **On failure:** Tree-of-Thoughts (explore alternative approaches)
 
@@ -205,7 +205,7 @@ repeat:
 
 ## Examples
 
-### Example 1: ReActAgent — Thought, Action, Observation Cycle
+### Example 1: ReActAgent â€” Thought, Action, Observation Cycle
 
 This is a complete, runnable ReAct agent. It simulates three tools (web search, calculator, code executor) and loops until the task is done or maxCycles is reached.
 
@@ -232,7 +232,7 @@ interface ReActConfig {
   tools: ToolName[];
 }
 
-// ─── Simulated Tools ───────────────────────────────────────────
+// â”€â”€â”€ Simulated Tools â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 function simulateTool(tool: ToolName, args: Record<string, string>): string {
   switch (tool) {
@@ -274,7 +274,7 @@ function simulateTool(tool: ToolName, args: Record<string, string>): string {
   }
 }
 
-// ─── Simulated LLM ────────────────────────────────────────────
+// â”€â”€â”€ Simulated LLM â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 function simulateLLM(prompt: string): { thought: string; tool: ToolName | null; args: Record<string, string> } {
   const lines = prompt.toLowerCase();
@@ -319,7 +319,7 @@ function extractQuery(prompt: string): string {
   return taskMatch?.[1]?.trim() ?? "general information";
 }
 
-// ─── ReAct Agent ───────────────────────────────────────────────
+// â”€â”€â”€ ReAct Agent â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 class ReActAgent {
   private steps: Step[] = [];
@@ -392,7 +392,7 @@ class ReActAgent {
   }
 }
 
-// ─── Demo ──────────────────────────────────────────────────────
+// â”€â”€â”€ Demo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 async function main() {
   console.log("=== ReAct Agent Demo ===\n");
@@ -406,7 +406,7 @@ async function main() {
   const result = await agent.run();
   const metrics = agent.getMetrics();
 
-  console.log("\n── Metrics ──");
+  console.log("\nâ”€â”€ Metrics â”€â”€");
   console.log(`Cycles used: ${result.totalCycles}`);
   console.log(`Tool calls: ${metrics.toolCalls}`);
   console.log(`Avg cycle time: ${metrics.avgCycleTime.toFixed(1)}ms`);
@@ -419,9 +419,9 @@ await main();
 **What to observe:**
 - The agent generates a thought, picks a tool, receives an observation, and uses that observation in the next thought
 - When the agent has sufficient information, it emits a terminal action (`tool: null`)
-- The prompt accumulates the full step history — this is the loop's "state variable"
+- The prompt accumulates the full step history â€” this is the loop's "state variable"
 
-### Example 2: ReflexionAgent — Generate, Critique, Refine
+### Example 2: ReflexionAgent â€” Generate, Critique, Refine
 
 This agent generates a solution, critiques it against a rubric, and refines it iteratively. The critique output is the feedback signal.
 
@@ -449,7 +449,7 @@ interface ReflexionStep {
   refinedSolution: string | null;
 }
 
-// ─── Simulated LLM calls ───────────────────────────────────────
+// â”€â”€â”€ Simulated LLM calls â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 function generateSolution(task: string, previousCritique?: string): string {
   // Simulate improvement over iterations
@@ -483,7 +483,7 @@ function generateSolution(task: string, previousCritique?: string): string {
 }`;
   }
 
-  // First generation — has known issues
+  // First generation â€” has known issues
   return `function maxSubarraySum(nums: number[]) {
   let max = 0;
   let sum = 0;
@@ -527,18 +527,18 @@ function critiqueSolution(solution: string, rubric: Rubric): CritiqueResult {
 
   const feedback = scores.map((s, i) => {
     if (s === rubric.maxScore) {
-      return `✅ ${rubric.criteria[i]}: excellent`;
+      return `âœ… ${rubric.criteria[i]}: excellent`;
     }
     if (s === 0) {
-      return `❌ ${rubric.criteria[i]}: needs work`;
+      return `âŒ ${rubric.criteria[i]}: needs work`;
     }
-    return `⚠️ ${rubric.criteria[i]}: adequate but improvable`;
+    return `âš ï¸ ${rubric.criteria[i]}: adequate but improvable`;
   }).join("\n");
 
   return { scores, totalScore, maxScore, feedback, passed };
 }
 
-// ─── Reflexion Agent ───────────────────────────────────────────
+// â”€â”€â”€ Reflexion Agent â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 class ReflexionAgent {
   private steps: ReflexionStep[] = [];
@@ -558,7 +558,7 @@ class ReflexionAgent {
     let previousCritique: string | undefined;
 
     for (let i = 0; i < this.maxIterations; i++) {
-      console.log(`\n── Iteration ${i + 1} ──`);
+      console.log(`\nâ”€â”€ Iteration ${i + 1} â”€â”€`);
 
       // 1. Generate
       const solution = generateSolution(this.task, previousCritique);
@@ -586,7 +586,7 @@ class ReflexionAgent {
         };
       }
 
-      // 3. Refine — generate improved version
+      // 3. Refine â€” generate improved version
       const refined = generateSolution(this.task, critique.feedback);
       step.refinedSolution = refined;
 
@@ -617,7 +617,7 @@ class ReflexionAgent {
   }
 }
 
-// ─── Demo ──────────────────────────────────────────────────────
+// â”€â”€â”€ Demo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 async function main() {
   const agent = new ReflexionAgent(
@@ -637,7 +637,7 @@ async function main() {
 
   const result = await agent.run();
 
-  console.log("\n═══ Final Result ═══");
+  console.log("\nâ•â•â• Final Result â•â•â•");
   console.log(`Converged: ${result.converged}`);
   console.log(`Final score: ${result.finalScore}/10`);
   console.log("Final solution:");
@@ -648,12 +648,12 @@ await main();
 ```
 
 **Key design decisions:**
-- **Critique is structured** — rubric criteria with explicit scores, not free-text. This makes convergence check deterministic.
-- **Refine generates a new solution informed by critique** — the critique string is passed to the generator as context.
-- **Two critiques per iteration** — one for the original, one for the refinement. This prevents false convergence from a lucky first draft.
-- **The convergence gate is `totalScore >= 80%`** — adjustable per deployment.
+- **Critique is structured** â€” rubric criteria with explicit scores, not free-text. This makes convergence check deterministic.
+- **Refine generates a new solution informed by critique** â€” the critique string is passed to the generator as context.
+- **Two critiques per iteration** â€” one for the original, one for the refinement. This prevents false convergence from a lucky first draft.
+- **The convergence gate is `totalScore >= 80%`** â€” adjustable per deployment.
 
-### Example 3: PlanningAgent — Plan, Execute, Replan
+### Example 3: PlanningAgent â€” Plan, Execute, Replan
 
 This agent creates a plan, executes steps with error handling, and replans on failure. It demonstrates the ReWoo pattern with adaptive replanning.
 
@@ -677,7 +677,7 @@ interface Plan {
   steps: PlanStep[];
 }
 
-// ─── Simulated LLM Planner ─────────────────────────────────────
+// â”€â”€â”€ Simulated LLM Planner â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 function createPlan(task: string): Plan {
   if (task.toLowerCase().includes("research")) {
@@ -712,7 +712,7 @@ function createPlan(task: string): Plan {
   };
 }
 
-// ─── Simulated Tool Executor ────────────────────────────────────
+// â”€â”€â”€ Simulated Tool Executor â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 function executeTool(tool: string, args: Record<string, string>): { success: boolean; result: string } {
   // Simulate random failures for testing replanning
@@ -738,7 +738,7 @@ function executeTool(tool: string, args: Record<string, string>): { success: boo
   return { success: false, result: `Unknown tool: ${tool}` };
 }
 
-// ─── Planning Agent ─────────────────────────────────────────────
+// â”€â”€â”€ Planning Agent â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 class PlanningAgent {
   private plan: Plan;
@@ -774,7 +774,7 @@ class PlanningAgent {
         if (!depsMet) continue;
 
         step.status = "running";
-        console.log(`\n▶ Executing ${step.id}: ${step.description}`);
+        console.log(`\nâ–¶ Executing ${step.id}: ${step.description}`);
 
         let attempt = 0;
         let success = false;
@@ -789,25 +789,25 @@ class PlanningAgent {
             step.status = "success";
             step.result = result;
             success = true;
-            console.log(`  ✅ ${step.id} succeeded (attempt ${attempt}): ${result.slice(0, 60)}`);
+            console.log(`  âœ… ${step.id} succeeded (attempt ${attempt}): ${result.slice(0, 60)}`);
           } else {
             step.error = result;
-            console.log(`  ❌ ${step.id} failed (attempt ${attempt}): ${result}`);
+            console.log(`  âŒ ${step.id} failed (attempt ${attempt}): ${result}`);
 
             if (attempt <= maxRetries) {
-              console.log(`  ↻ Retrying ${step.id}...`);
+              console.log(`  â†» Retrying ${step.id}...`);
             }
           }
         }
 
         if (!success) {
           step.status = "failed";
-          console.log(`  ✗ ${step.id} failed after ${maxRetries + 1} attempts`);
+          console.log(`  âœ— ${step.id} failed after ${maxRetries + 1} attempts`);
 
           // Replan: regenerate the plan from this point
           if (replanCount < maxReplans) {
             replanCount++;
-            console.log(`\n── Replanning (attempt ${replanCount}/${maxReplans}) ──`);
+            console.log(`\nâ”€â”€ Replanning (attempt ${replanCount}/${maxReplans}) â”€â”€`);
 
             // Mark remaining steps as pending for replanning
             const failedIndex = this.plan.steps.indexOf(step);
@@ -838,7 +838,7 @@ class PlanningAgent {
   }
 
   summarize(): void {
-    console.log("\n═══ Execution Summary ═══");
+    console.log("\nâ•â•â• Execution Summary â•â•â•");
     console.log(`Plan goal: ${this.plan.goal}`);
     console.log(`Steps: ${this.plan.steps.length}`);
     console.log(`Successful: ${this.plan.steps.filter((s) => s.status === "success").length}`);
@@ -847,13 +847,13 @@ class PlanningAgent {
     console.log(`Success rate: ${(this.executionHistory.filter((e) => e.success).length / this.executionHistory.length * 100).toFixed(0)}%`);
 
     for (const step of this.plan.steps) {
-      const icon = step.status === "success" ? "✅" : step.status === "failed" ? "❌" : "⏳";
+      const icon = step.status === "success" ? "âœ…" : step.status === "failed" ? "âŒ" : "â³";
       console.log(`  ${icon} ${step.id}: ${step.description}`);
     }
   }
 }
 
-// ─── Demo ──────────────────────────────────────────────────────
+// â”€â”€â”€ Demo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 async function main() {
   console.log("=== Planning Agent Demo ===\n");
@@ -867,7 +867,7 @@ await main();
 ```
 
 **Demonstrated patterns:**
-- **Plan → Execute separation:** The plan is created upfront; execution proceeds step by step
+- **Plan â†’ Execute separation:** The plan is created upfront; execution proceeds step by step
 - **Dependency resolution:** Steps only execute after their dependencies succeed
 - **Automatic replanning:** When a step fails, the agent creates a new plan from the failure point
 - **Retry budget:** Each step gets `maxRetries` attempts before triggering replan
@@ -880,13 +880,13 @@ await main();
 | Property | ReAct | ReWoo | Reflexion | Tree-of-Thoughts | LLM Compiler |
 |----------|-------|-------|-----------|-----------------|--------------|
 | **Origin** | Yao et al. 2023 | Xu et al. 2023 | Shinn et al. 2023 | Yao et al. 2023 | Google 2024 |
-| **Loop topology** | Tight cycle | Two-phase pipeline | Generate→Critique→Refine | Tree search breadth-first | Plan→Schedule→Execute |
-| **LLM calls per cycle** | 1 (thought+action) | 1 per phase (N steps = 2 calls) | 2–3 (gen+critique+refine) | K candidates × level | 1 planner + parallel executors |
+| **Loop topology** | Tight cycle | Two-phase pipeline | Generateâ†’Critiqueâ†’Refine | Tree search breadth-first | Planâ†’Scheduleâ†’Execute |
+| **LLM calls per cycle** | 1 (thought+action) | 1 per phase (N steps = 2 calls) | 2â€“3 (gen+critique+refine) | K candidates Ã— level | 1 planner + parallel executors |
 | **Tool call density** | 1 per cycle | All tools between phases | 0 (critique is internal) | 0 (thoughts only) | 1 per parallel path |
 | **Feedback granularity** | Per-step (tight) | Post-execution | Per-critique cycle | Per-thought (score) | Per-step (dependency check) |
 | **Error recovery** | Next thought adapts | None (blind execution) | Critique fixes next iteration | Prune bad branches | Replan on dependency failure |
 | **Cost profile** | High (many LLM calls) | Low (few LLM calls) | Medium (critique adds cost) | Very high (parallel LLM calls) | Medium (shares context) |
-| **Best task horizon** | Short (2–10 steps) | Medium (5–50 steps) | Any (quality-focused) | Short (exploratory) | Long (10–100+ steps) |
+| **Best task horizon** | Short (2â€“10 steps) | Medium (5â€“50 steps) | Any (quality-focused) | Short (exploratory) | Long (10â€“100+ steps) |
 | **Parallelism** | Sequential | Sequential tools | Sequential iterations | Parallel candidates | Parallel independent branches |
 | **Self-correction** | Implicit (via observation) | None | Explicit (via critique) | Implicit (via pruning) | Explicit (replan on fail) |
 | **Production readiness** | High | High | Medium (cost) | Low (cost + reliability) | Medium (complexity) |
@@ -901,7 +901,7 @@ This section builds production-grade agent loop infrastructure: a multi-stage pi
 // ch02-advanced-architecture.ts
 // bun run ch02-advanced-architecture.ts
 
-// ─── Tool Registry with Schema Validation ──────────────────────────────
+// â”€â”€â”€ Tool Registry with Schema Validation â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 interface ToolSchema {
   type: "string" | "number" | "boolean" | "object";
@@ -955,7 +955,7 @@ class ToolRegistry {
   }
 }
 
-// ─── Loop State Machine ────────────────────────────────────────────────
+// â”€â”€â”€ Loop State Machine â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 type LoopState = "IDLE" | "THINKING" | "ACTING" | "OBSERVING" | "EVALUATING" | "DONE" | "ERROR";
 type LoopEvent = "START" | "THOUGHT_READY" | "ACTION_READY" | "OBSERVATION_READY" | "EVAL_COMPLETE" | "RETRY" | "FAIL" | "ABORT";
@@ -1014,7 +1014,7 @@ class LoopStateMachine {
   }
 }
 
-// ─── Multi-Stage Pipeline Orchestrator ─────────────────────────────────
+// â”€â”€â”€ Multi-Stage Pipeline Orchestrator â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 interface StageConfig {
   name: string;
@@ -1099,7 +1099,7 @@ class PipelineOrchestrator {
   }
 }
 
-// ─── ReAct Pattern Generic Executor ────────────────────────────────────
+// â”€â”€â”€ ReAct Pattern Generic Executor â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 interface ReActStep {
   thought: string;
@@ -1164,7 +1164,7 @@ class ReActExecutor {
   }
 }
 
-// ─── Parallel Agent Executor ───────────────────────────────────────────
+// â”€â”€â”€ Parallel Agent Executor â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 interface AgentTask {
   id: string;
@@ -1225,7 +1225,7 @@ class ParallelAgentExecutor {
   }
 }
 
-// ─── Hierarchical Loop Controller (Supervisor + Worker) ────────────────
+// â”€â”€â”€ Hierarchical Loop Controller (Supervisor + Worker) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 interface SupervisorConfig {
   decompose: (task: string) => string[];
@@ -1290,7 +1290,7 @@ class HierarchicalController {
   }
 }
 
-// ─── Demo ──────────────────────────────────────────────────────────────
+// â”€â”€â”€ Demo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 async function main() {
   console.log("=== Extended Architecture Demo ===\n");
@@ -1389,7 +1389,7 @@ await main();
 
 **Key concepts demonstrated:**
 - **ToolRegistry** with JSON Schema parameter validation prevents malformed tool calls at the boundary
-- **LoopStateMachine** formalizes the agent lifecycle — every transition is explicit and auditable
+- **LoopStateMachine** formalizes the agent lifecycle â€” every transition is explicit and auditable
 - **PipelineOrchestrator** chains multi-stage processing with per-stage retry budgets and fallback handlers
 - **ReActExecutor** wraps the generic executor around a state machine, tool registry, and pluggable LLM
 - **ParallelAgentExecutor** fans out N tasks across configurable concurrency with result aggregation
@@ -1430,7 +1430,7 @@ graph LR
 ```
 */
 
-// ─── AgentLoopBenchmark ────────────────────────────────────────────────
+// â”€â”€â”€ AgentLoopBenchmark â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 interface BenchmarkConfig {
   architectures: string[];
@@ -1540,7 +1540,7 @@ class AgentLoopBenchmark {
   }
 }
 
-// ─── StatePersistenceManager (Checkpoint/Restore) ──────────────────────
+// â”€â”€â”€ StatePersistenceManager (Checkpoint/Restore) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 interface LoopCheckpoint {
   id: string;
@@ -1605,7 +1605,7 @@ class StatePersistenceManager {
   }
 }
 
-// ─── MemoryAwareLoop (Context Window Pruning) ─────────────────────────
+// â”€â”€â”€ MemoryAwareLoop (Context Window Pruning) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 interface Observation {
   cycle: number;
@@ -1680,7 +1680,7 @@ class MemoryAwareLoop {
   }
 }
 
-// ─── StreamingObservationProcessor ─────────────────────────────────────
+// â”€â”€â”€ StreamingObservationProcessor â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 interface StreamChunk {
   sequence: number;
@@ -1756,7 +1756,7 @@ class StreamingObservationProcessor {
   }
 }
 
-// ─── LoopMetricsCollector ──────────────────────────────────────────────
+// â”€â”€â”€ LoopMetricsCollector â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 interface CycleMetrics {
   cycle: number;
@@ -1831,7 +1831,7 @@ class LoopMetricsCollector {
   }
 }
 
-// ─── Demo ──────────────────────────────────────────────────────────────
+// â”€â”€â”€ Demo â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 async function main() {
   console.log("=== Production-Grade Loop Infrastructure Demo ===\n");
@@ -1909,11 +1909,11 @@ await main();
 
 1.  **ReAct** is the default pattern for good reason: tight feedback between thought and observation prevents hallucination drift. Use it for most tool-using agents with &lt; 10 steps.
 
-2.  **ReWoo** separates planning from execution, saving LLM calls when the plan is predictable. The trade-off is brittle error recovery — use it when tasks are routine and well-understood.
+2.  **ReWoo** separates planning from execution, saving LLM calls when the plan is predictable. The trade-off is brittle error recovery â€” use it when tasks are routine and well-understood.
 
 3.  **Reflexion** adds a self-critique loop that converges toward a rubric score. It is the pattern of choice for quality-critical code generation, writing, and design tasks where the correct answer is unknown but measurable.
 
-4.  **Tree-of-Thoughts** explores multiple reasoning paths in parallel. It is powerful for creative and exploratory tasks but expensive — use it sparingly, or as a fallback when other patterns fail.
+4.  **Tree-of-Thoughts** explores multiple reasoning paths in parallel. It is powerful for creative and exploratory tasks but expensive â€” use it sparingly, or as a fallback when other patterns fail.
 
 5.  **LLM Compiler** optimizes for latency by scheduling parallel execution of independent plan steps. It fits multi-step CI/CD pipelines, data processing workflows, and code generation with independent modules.
 
@@ -1945,7 +1945,7 @@ await main();
 
 3.  **AP3:** Build a **composed agent** that:
     - Uses REACT for initial information gathering (3 cycles max)
-    - Falls back to Tree-of-Thoughts (3 branches × 2 levels) if ReAct stalls
+    - Falls back to Tree-of-Thoughts (3 branches Ã— 2 levels) if ReAct stalls
     - Finishes with Reflexion (2 iterations) to polish the answer
 
 4.  **AP4:** Implement a **cost governor** for the `PlanningAgent` (Example 3) that tracks estimated LLM tokens and tool execution costs, and forces a replan if the projected remaining cost exceeds budget.
@@ -1968,8 +1968,8 @@ SmartAgent(task, budget, tools):
      - Exploratory (high uncertainty): Tree-of-Thoughts
   3. Execute with the selected pattern
   4. Monitor error per cycle:
-     - If error stagnates for 3 cycles → switch to a different pattern
-     - If error increases → switch immediately
+     - If error stagnates for 3 cycles â†’ switch to a different pattern
+     - If error increases â†’ switch immediately
   5. Track cumulative cost. If budget is 50% exhausted and not converged:
      - Switch to the cheapest remaining untried pattern
 ```
@@ -1983,5 +1983,5 @@ Your submission must include:
 
 **Hints:**
 - Pattern switching requires state transfer: the observations from pattern A must inform pattern B's initial prompt
-- Track cumulative cost carefully — pattern switches are expensive (two LLM calls plus history reconstruction)
+- Track cumulative cost carefully â€” pattern switches are expensive (two LLM calls plus history reconstruction)
 - The hardest part is deciding *when* to switch, not *what* to switch to. Use the convergence metrics from Chapter 1.

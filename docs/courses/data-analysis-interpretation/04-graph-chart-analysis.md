@@ -1,4 +1,4 @@
-# Chapter 4: Graph and Chart Analysis
+﻿# Chapter 4: Graph and Chart Analysis
 
 ## Learning Objectives
 
@@ -13,16 +13,16 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -33,7 +33,7 @@ By the end of this chapter, you will be able to:
 
 ## Theory
 
-### 4.1 Advanced Graph Types — Overview
+### 4.1 Advanced Graph Types â€” Overview
 
 
 ```mermaid
@@ -76,7 +76,7 @@ A radar chart displays multivariate data on axes starting from the same point. E
 - A larger enclosed area generally indicates higher overall values
 - Symmetrical shapes indicate balanced performance across categories
 - Comparing two entities: overlap of shapes shows relative strengths
-- Scale must be checked — axes may start at values other than zero
+- Scale must be checked â€” axes may start at values other than zero
 
 ### 4.3 Bubble Charts
 
@@ -176,7 +176,7 @@ flowchart LR
 **Key calculations:**
 - **Range:** Maximum - Minimum
 - **Interquartile Range (IQR):** Q3 - Q1
-- **Outlier threshold:** Below Q1 - 1.5×IQR or above Q3 + 1.5×IQR
+- **Outlier threshold:** Below Q1 - 1.5Ã—IQR or above Q3 + 1.5Ã—IQR
 
 ### 4.8 Scatter Plots with Trend Lines
 
@@ -193,7 +193,7 @@ A scatter plot shows the relationship between two continuous variables. A trend 
 - **Strong negative correlation:** Points close to downward-sloping line
 - **Weak/no correlation:** Points scattered randomly around the line
 - **Outliers:** Points far from the trend line
-- **R² value:** Proportion of variance explained (closer to 1 = stronger fit)
+- **RÂ² value:** Proportion of variance explained (closer to 1 = stronger fit)
 
 ### 4.9 Logarithmic Scales
 
@@ -218,14 +218,14 @@ A logarithmic scale uses powers of 10 (or other base) instead of linear incremen
 
 **Index numbers** express data relative to a base year value of 100.
 
-**Formula:** Index = (Current Year Value / Base Year Value) × 100
+**Formula:** Index = (Current Year Value / Base Year Value) Ã— 100
 
 **Example:**
 | Year | Value | Index (Base 2020 = 100) |
 |------|-------|------------------------|
-| 2020 | 50 | (50/50) × 100 = 100 |
-| 2021 | 60 | (60/50) × 100 = 120 |
-| 2022 | 75 | (75/50) × 100 = 150 |
+| 2020 | 50 | (50/50) Ã— 100 = 100 |
+| 2021 | 60 | (60/50) Ã— 100 = 120 |
+| 2022 | 75 | (75/50) Ã— 100 = 150 |
 
 **Base year shift:** Changing the reference year.
 
@@ -236,8 +236,8 @@ A logarithmic scale uses powers of 10 (or other base) instead of linear incremen
 **Example: Shift base from 2020 to 2021:**
 - 2021 index in old base = 120
 - New 2021 index = 100 (by definition)
-- New 2020 index = (100 / 120) × 100 = 83.33
-- New 2022 index = (150 / 120) × 100 = 125
+- New 2020 index = (100 / 120) Ã— 100 = 83.33
+- New 2022 index = (150 / 120) Ã— 100 = 125
 
 ### 4.11 Line + Bar Combo Charts with Dual Axes
 
@@ -250,7 +250,7 @@ Combo charts combine a bar graph (usually for volume/frequency) with a line char
 - X-axis: time periods or categories
 
 **Interpretation tips:**
-- The two scales are independent — do not compare bar height to line position directly
+- The two scales are independent â€” do not compare bar height to line position directly
 - Focus on trends: Is the line going up while bars go down?
 - Check which scale applies to which data series (usually shown in legend)
 
@@ -480,7 +480,7 @@ d) 125.00
 <summary>Answer</summary>
 b) 115.38
 
-New 2022 index = (150 / 130) × 100 = 115.38.
+New 2022 index = (150 / 130) Ã— 100 = 115.38.
 </details>
 
 ---
@@ -496,7 +496,7 @@ d) Cannot be determined
 <summary>Answer</summary>
 d) Cannot be determined
 
-We know units sold (400) and profit margin (20%), but not the selling price per unit. Profit = Units × Price × Margin%. Price unknown.
+We know units sold (400) and profit margin (20%), but not the selling price per unit. Profit = Units Ã— Price Ã— Margin%. Price unknown.
 </details>
 
 ---
@@ -528,7 +528,7 @@ d) 10,000
 <summary>Answer</summary>
 c) 1,000
 
-Equal distances on log scale = equal multiplicative factors. 10?100 = 10×, so 100?1,000 = 10×.
+Equal distances on log scale = equal multiplicative factors. 10?100 = 10Ã—, so 100?1,000 = 10Ã—.
 </details>
 
 ---
@@ -551,16 +551,16 @@ B runs 3-8, C runs 6-12 (overlap 6-8), D runs 9-14 (overlaps C 9-12). B does not
 
 **Q11.** In a box plot, an outlier is typically beyond:
 
-a) Q1 - 1.5×IQR or Q3 + 1.5×IQR
+a) Q1 - 1.5Ã—IQR or Q3 + 1.5Ã—IQR
 b) Q1 - IQR or Q3 + IQR
 c) Min or Max
-d) Mean ± SD
+d) Mean Â± SD
 
 <details>
 <summary>Answer</summary>
-a) Q1 - 1.5×IQR or Q3 + 1.5×IQR
+a) Q1 - 1.5Ã—IQR or Q3 + 1.5Ã—IQR
 
-Standard outlier definition uses 1.5×IQR beyond the quartiles.
+Standard outlier definition uses 1.5Ã—IQR beyond the quartiles.
 </details>
 
 ---
@@ -710,7 +710,7 @@ Purple is a blend of blue and red, representing a value between extremes.
 ---
 
 
-### 4.13 Bar Chart Theory — TutorialsPoint Approach
+### 4.13 Bar Chart Theory â€” TutorialsPoint Approach
 
 A bar chart or bar graph represents grouped data with rectangular bars where lengths are proportional to the values they represent. Bars can be plotted vertically or horizontally.
 
@@ -721,7 +721,7 @@ A bar chart or bar graph represents grouped data with rectangular bars where len
 | **Base line** | The line from which bars originate | Usually the x-axis |
 | **Scale** | The measurement unit on the axis | 1 cm = 10,000 units |
 | **Legend** | Identifies what different bar colours/shades represent | Blue = Boys, Red = Girls |
-| **Gap between bars** | Usually uniform for clarity | 0.5× bar width |
+| **Gap between bars** | Usually uniform for clarity | 0.5Ã— bar width |
 | **Stacked bar segments** | Parts of a single bar representing sub-categories | Cost split: Material+Labour+Overhead |
 
 #### Bar Chart Calculation Shortcuts
@@ -731,7 +731,7 @@ A bar chart or bar graph represents grouped data with rectangular bars where len
 | Total of all bars | Sum individual bar heights |
 | Average bar height | Total / Number of bars |
 | Ratio of two bars | Compare heights directly (with scale check) |
-| Percentage contribution | (Bar value / Total) × 100 |
+| Percentage contribution | (Bar value / Total) Ã— 100 |
 | Difference between bars | Subtract smaller from larger |
 
 #### TutorialsPoint-Style Solved Examples
@@ -775,7 +775,7 @@ d) 92.0%
 b) 83.3%
 
 D+E girls = 30 + 32.5 = 62.5 thousand. A+B+C girls = 25 + 30 + 20 = 75 thousand.
-Required % = (62.5 / 75) × 100 = 83.3%.
+Required % = (62.5 / 75) Ã— 100 = 83.3%.
 </details>
 
 **Q23.** What is the ratio of boys from College D to boys from College B?
@@ -804,7 +804,7 @@ d) 25.0%
 c) 24.5%
 
 Total boys = (22.5 + 25 + 30 + 22.5 + 22.5) thousand = 122.5 thousand.
-Boys C = 30 thousand. Percentage = (30/122.5) × 100 = 24.49% ˜ 24.5%.
+Boys C = 30 thousand. Percentage = (30/122.5) Ã— 100 = 24.49% Ëœ 24.5%.
 </details>
 
 **Q25.** What is the difference between total girls and total boys across all colleges?
@@ -821,7 +821,7 @@ d) 15,000
 Total girls = 137,500. Total boys = 122,500. Difference = 15,000.
 </details>
 
-### 4.14 Production Data Bar Chart — TutorialsPoint Style
+### 4.14 Production Data Bar Chart â€” TutorialsPoint Style
 
 **Direction (Q26-Q30): Study the bar graph below and answer the questions.**
 
@@ -863,9 +863,9 @@ d) 2005
 <summary>Answer</summary>
 a) 2002
 
-2001: (200-175)/175 × 100 = 14.3%. 2002: (275-200)/200 × 100 = 37.5%.
-2003: (150-275)/275 × 100 = -45.5% (decrease). 2004: (200-150)/150 × 100 = 33.5%.
-2005: (175-200)/200 × 100 = -12.5%. 2006: (125-175)/175 × 100 = -28.5%.
+2001: (200-175)/175 Ã— 100 = 14.3%. 2002: (275-200)/200 Ã— 100 = 37.5%.
+2003: (150-275)/275 Ã— 100 = -45.5% (decrease). 2004: (200-150)/150 Ã— 100 = 33.5%.
+2005: (175-200)/200 Ã— 100 = -12.5%. 2006: (125-175)/175 Ã— 100 = -28.5%.
 Maximum increase was in 2002 at 37.5%.
 </details>
 
@@ -881,7 +881,7 @@ d) 250 lakh tons
 b) 200 lakh tons
 
 Total Y = (225+150+250+200+250+200+175) = 1,450 lakh tons.
-Average = 1,450 / 7 ˜ 207.1 lakh tons. Let me recount:
+Average = 1,450 / 7 Ëœ 207.1 lakh tons. Let me recount:
 225+150 = 375; +250 = 625; +200 = 825; +250 = 1,075; +200 = 1,275; +175 = 1,450.
 1,450/7 = 207.14. Not matching options exactly. Let me recheck the data.
 
@@ -923,17 +923,17 @@ a) 17:15
 Ratio = 1,275:1,125 = 1275:1125 = 51:45 = 17:15.
 </details>
 
-### 4.15 Pie Chart — Construction Cost Example (TutorialsPoint Style)
+### 4.15 Pie Chart â€” Construction Cost Example (TutorialsPoint Style)
 
 **Pie Chart: Cost Breakup of House Construction (Total Cost = ?6,00,000)**
 
 | Component | Central Angle | Percentage |
 |-----------|--------------|-----------|
-| Cement | 72° | 20% |
-| Steel | 54° | 15% |
-| Labour | 90° | 25% |
-| Supervision | 54° | 15% |
-| Other | 90° | 25% |
+| Cement | 72Â° | 20% |
+| Steel | 54Â° | 15% |
+| Labour | 90Â° | 25% |
+| Supervision | 54Â° | 15% |
+| Other | 90Â° | 25% |
 
 **Q31.** The amount spent on cement is:
 
@@ -946,7 +946,7 @@ d) ?1,50,000
 <summary>Answer</summary>
 c) ?1,20,000
 
-Cement = (72°/360°) × 6,00,000 = 0.20 × 6,00,000 = ?1,20,000.
+Cement = (72Â°/360Â°) Ã— 6,00,000 = 0.20 Ã— 6,00,000 = ?1,20,000.
 </details>
 
 **Q32.** Labour cost exceeds steel cost by what percent of total cost?
@@ -960,8 +960,8 @@ d) 15%
 <summary>Answer</summary>
 b) 10%
 
-Labour = (90/360) × 6,00,000 = ?1,50,000. Steel = (54/360) × 6,00,000 = ?90,000.
-Excess = ?60,000. % of total = (60,000/6,00,000) × 100 = 10%.
+Labour = (90/360) Ã— 6,00,000 = ?1,50,000. Steel = (54/360) Ã— 6,00,000 = ?90,000.
+Excess = ?60,000. % of total = (60,000/6,00,000) Ã— 100 = 10%.
 </details>
 
 **Q33.** Amount spent on cement, steel, and supervision together is what percent of total cost?
@@ -975,7 +975,7 @@ d) 55%
 <summary>Answer</summary>
 c) 50%
 
-Cement+Steel+Supervision = (72+54+54)/360 × 100 = 180/360 × 100 = 50%.
+Cement+Steel+Supervision = (72+54+54)/360 Ã— 100 = 180/360 Ã— 100 = 50%.
 </details>
 
 **Q34.** Labour amount exceeds supervision amount by:
@@ -989,18 +989,18 @@ d) ?75,000
 <summary>Answer</summary>
 c) ?60,000
 
-Labour - Supervision = (90-54)/360 × 6,00,000 = 36/360 × 6,00,000 = ?60,000.
+Labour - Supervision = (90-54)/360 Ã— 6,00,000 = 36/360 Ã— 6,00,000 = ?60,000.
 </details>
 
 ### 4.16 Additional Graph & Chart Exercises (Q35-Q45)
 
-**35.** Radar chart: Five parameters — Quality=92, Efficiency=78, Innovation=88, Service=85, Reach=82. Average score?
+**35.** Radar chart: Five parameters â€” Quality=92, Efficiency=78, Innovation=88, Service=85, Reach=82. Average score?
 
 **36.** Box plot: Min=15, Q1=28, Median=42, Q3=58, Max=85. Find IQR and outlier thresholds.
 
 **37.** Index series (Base 2020=100): 2020=100, 2021=112, 2022=126, 2023=145. Shift base to 2022. Find new 2021 index.
 
-**38.** Scatter plot: Data points have r = 0.72. What is r² and what does it mean?
+**38.** Scatter plot: Data points have r = 0.72. What is rÂ² and what does it mean?
 
 **39.** Waterfall chart: Start cash = ?500 lakhs. Operations = +?180, Investments = -?95, Financing = +?45, Dividend = -?30. Find end cash.
 
@@ -1012,7 +1012,7 @@ Labour - Supervision = (90-54)/360 × 6,00,000 = 36/360 × 6,00,000 = ?60,000.
 
 **43.** Combo chart: Sales bars (left axis, 0-1000 units) and profit% line (right axis, 0-25%). In Q2, bar=600, line=18%. If price/unit=?50, find profit in Q2.
 
-**44.** Heat map: 4 products × 4 quarters. Values range from 20 (light) to 95 (dark). Product P is dark in Q1,Q2 and light in Q3,Q4. What does this indicate?
+**44.** Heat map: 4 products Ã— 4 quarters. Values range from 20 (light) to 95 (dark). Product P is dark in Q1,Q2 and light in Q3,Q4. What does this indicate?
 
 **45.** Multiple line chart: Fund A (2019=100, 2020=130, 2021=145, 2022=180) and Fund B (2019=100, 2020=115, 2021=140, 2022=160). Which fund had higher CAGR?
 
@@ -1057,7 +1057,7 @@ class PieChartAnalyzer {
     return Math.abs(sum - 100) < 0.01;
   }
 
-  /** Verify if pie chart angles sum to 360° */
+  /** Verify if pie chart angles sum to 360Â° */
   static verifyAngles(angles: number[]): boolean {
     const sum = angles.reduce((a, b) => a + b, 0);
     return Math.abs(sum - 360) < 0.01;
@@ -1066,7 +1066,7 @@ class PieChartAnalyzer {
 
 // Example
 console.log("45% in degrees:", PieChartAnalyzer.percentageToAngle(45));
-console.log("90° as %:", PieChartAnalyzer.angleToPercentage(90));
+console.log("90Â° as %:", PieChartAnalyzer.angleToPercentage(90));
 console.log("Verify [25, 35, 20, 20]:", PieChartAnalyzer.verifyPercentages([25, 35, 20, 20]));
 `
 

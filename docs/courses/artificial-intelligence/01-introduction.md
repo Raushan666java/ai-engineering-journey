@@ -1,6 +1,6 @@
-# Chapter 1: Introduction to Artificial Intelligence
+﻿# Chapter 1: Introduction to Artificial Intelligence
 
-**Previous:** — | **Next:** [Chapter 2: Intelligent Agents](02-agents.md)
+**Previous:** â€” | **Next:** [Chapter 2: Intelligent Agents](02-agents.md)
 
 ---
 
@@ -11,16 +11,16 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/01-introduction/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/01-introduction/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/01-introduction/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/01-introduction/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/01-introduction/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/01-introduction/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/01-introduction/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/01-introduction/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/01-introduction/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/01-introduction/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/01-introduction/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/01-introduction/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -29,7 +29,7 @@ By the end of this chapter, you will be able to:
 
 - Define Artificial Intelligence from four distinct perspectives: acting humanly, thinking humanly, acting rationally, and thinking rationally.
 - Trace the historical development of AI from its philosophical roots (Aristotle) to modern deep learning systems.
-- Identify the core subfields of AI — machine learning, NLP, computer vision, robotics, expert systems — and their primary research goals.
+- Identify the core subfields of AI â€” machine learning, NLP, computer vision, robotics, expert systems â€” and their primary research goals.
 - Evaluate the Turing Test: what it measures, why it is controversial, and what it fails to capture about intelligence.
 - Discuss major ethical considerations: the alignment problem, algorithmic bias, job displacement, and existential safety.
 
@@ -37,7 +37,7 @@ By the end of this chapter, you will be able to:
 
 ## Why AI Matters
 
-> **Real-World Analogy:** AI is the **new electricity**. Just as electricity in the late 19th century transformed every industry — lighting, manufacturing, transportation, communication, healthcare — AI today is reshaping every sector of human endeavor. It is a general-purpose technology that amplifies human capability.
+> **Real-World Analogy:** AI is the **new electricity**. Just as electricity in the late 19th century transformed every industry â€” lighting, manufacturing, transportation, communication, healthcare â€” AI today is reshaping every sector of human endeavor. It is a general-purpose technology that amplifies human capability.
 
 | Domain | How AI Transforms It |
 |--------|----------------------|
@@ -48,7 +48,7 @@ By the end of this chapter, you will be able to:
 | **Communication** | Real-time translation (Google Translate); virtual assistants (Siri, Alexa, Google Assistant) |
 | **Manufacturing** | Predictive maintenance; robotic process automation; quality inspection via computer vision |
 
-> **Why this analogy works:** Like electricity, AI is invisible infrastructure that makes other innovations possible. You do not see the AI — you see the recommendation, the translation, the diagnosis. And like electricity in 1900, we are still in the early stages of understanding what AI can power.
+> **Why this analogy works:** Like electricity, AI is invisible infrastructure that makes other innovations possible. You do not see the AI â€” you see the recommendation, the translation, the diagnosis. And like electricity in 1900, we are still in the early stages of understanding what AI can power.
 
 ---
 
@@ -83,9 +83,9 @@ flowchart LR
 ### Defining Artificial Intelligence
 
 
-> **Real-World Analogy:** Defining AI is like defining "life" — everyone recognizes it when they see it, but a single crisp definition remains elusive. A cat is alive; a rock is not. But where exactly is the boundary? Similarly, a chess-playing program seems intelligent; a pocket calculator does not. But as calculators became powerful, the boundary shifted.
+> **Real-World Analogy:** Defining AI is like defining "life" â€” everyone recognizes it when they see it, but a single crisp definition remains elusive. A cat is alive; a rock is not. But where exactly is the boundary? Similarly, a chess-playing program seems intelligent; a pocket calculator does not. But as calculators became powerful, the boundary shifted.
 
-**One-Sentence Takeaway:** AI is a multidisciplinary field defined by four distinct perspectives — acting/thinking humanly or rationally — each emphasizing different aspects of intelligence.
+**One-Sentence Takeaway:** AI is a multidisciplinary field defined by four distinct perspectives â€” acting/thinking humanly or rationally â€” each emphasizing different aspects of intelligence.
 
 ![Introduction to AI](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/artificial-intelligence/ch01-introduction.png)
 
@@ -95,13 +95,13 @@ The most widely accepted taxonomy of AI definitions comes from **Stuart Russell 
 
 **Dimension 1: Human vs Rational**
 - **Human-centered:** Measures success against human performance.
-- **Rational:** Measures success against an ideal performance concept — doing the right thing given what is known.
+- **Rational:** Measures success against an ideal performance concept â€” doing the right thing given what is known.
 
 **Dimension 2: Thought vs Action**
 - **Thought:** Focus on internal reasoning processes.
 - **Action:** Focus on external observable behavior.
 
-These two dimensions yield a 2×2 matrix:
+These two dimensions yield a 2Ã—2 matrix:
 
 |  | **Human** | **Rational** |
 |---|---|---|
@@ -121,7 +121,7 @@ These two dimensions yield a 2×2 matrix:
 - Machine learning (to adapt to new queries)
 - Computer vision (for total Turing Test with visual input)
 
-**Key insight:** Focuses on **external behavior** — the machine need not "think" at all, only appear to.
+**Key insight:** Focuses on **external behavior** â€” the machine need not "think" at all, only appear to.
 
 **Example system:** ELIZA (1966), a chatbot that simulated a Rogerian psychotherapist; modern GPT-based chatbots.
 
@@ -144,9 +144,9 @@ END PROCEDURE
 
 **What it measures:** Does the machine's internal decision process match how humans actually think?
 
-**Methodology:** Cognitive science — build models of human reasoning, test through prediction of human behavior.
+**Methodology:** Cognitive science â€” build models of human reasoning, test through prediction of human behavior.
 
-**Key insight:** Focuses on **internal process** — the goal is to simulate human cognition, not just produce human-like output.
+**Key insight:** Focuses on **internal process** â€” the goal is to simulate human cognition, not just produce human-like output.
 
 **Example system:** ACT-R (Adaptive Control of Thought-Rational), a cognitive architecture that models human memory and learning.
 
@@ -165,15 +165,15 @@ END PROCEDURE
 
 **Methodology:** Syllogisms, predicate logic, automated theorem proving.
 
-**Key insight:** Focuses on **logical correctness** — if premises are true, conclusions must be true.
+**Key insight:** Focuses on **logical correctness** â€” if premises are true, conclusions must be true.
 
-**Limitation:** Real-world problems involve uncertainty, incomplete information, and contradictions — pure logic breaks down.
+**Limitation:** Real-world problems involve uncertainty, incomplete information, and contradictions â€” pure logic breaks down.
 
 **Example system:** Prolog-based expert systems, theorem provers like Vampire.
 
 **Logical reasoning steps (modus ponens):**
-1. Given: Rule — If P, then Q.
-2. Given: Fact — P is true.
+1. Given: Rule â€” If P, then Q.
+2. Given: Fact â€” P is true.
 3. Infer: Therefore, Q is true.
 
 ---
@@ -184,7 +184,7 @@ END PROCEDURE
 
 **Methodology:** Decision theory, utility maximization, reinforcement learning.
 
-**Key insight:** Focuses on **goal achievement** — an agent acts rationally if it does what is expected to maximize its performance measure.
+**Key insight:** Focuses on **goal achievement** â€” an agent acts rationally if it does what is expected to maximize its performance measure.
 
 **Why it dominates modern AI:** This definition is both more general and more practical than the others. A rational agent can act without perfect logic (it can use probabilities) and without human-like thinking (it can use any algorithm that works).
 
@@ -225,7 +225,7 @@ END PROCEDURE
 A rational agent perceives its environment through sensors and acts upon it through actuators. Here is a simple reflex agent in three languages:
 
 ```python
-# Python — Simple reflex agent for a vacuum cleaner world
+# Python â€” Simple reflex agent for a vacuum cleaner world
 def reflex_vacuum_agent(location, status):
     """Percepts: location (A/B), status (Dirty/Clean).
        Acts: 'Suck' if dirty, 'Move' to other room if clean.
@@ -244,7 +244,7 @@ for room, state in [('A', 'Dirty'), ('A', 'Clean'), ('B', 'Dirty'), ('B', 'Clean
 ```
 
 ```cpp
-// C++ — Simple reflex agent
+// C++ â€” Simple reflex agent
 #include <iostream>
 #include <string>
 using namespace std;
@@ -268,7 +268,7 @@ int main() {
 ```
 
 ```java
-// Java — Simple reflex agent
+// Java â€” Simple reflex agent
 public class VacuumAgent {
     public static String reflexVacuumAgent(String location, String status) {
         if (status.equals("Dirty")) return "Suck";
@@ -298,42 +298,42 @@ Location: B, Status: Clean -> Action: Left
 
 | Step | Location | Status | Condition Checked | Action | Rationale |
 |------|----------|--------|-------------------|--------|-----------|
-| 1 | A | Dirty | status == 'Dirty' → True | Suck | Dirty room must be cleaned |
-| 2 | A | Clean | status == 'Dirty' → False; location == 'A' → True | Right | Clean room → explore other room |
-| 3 | B | Dirty | status == 'Dirty' → True | Suck | Dirty room must be cleaned |
-| 4 | B | Clean | status == 'Dirty' → False; location == 'B' → True | Left | Clean room → explore other room |
+| 1 | A | Dirty | status == 'Dirty' â†’ True | Suck | Dirty room must be cleaned |
+| 2 | A | Clean | status == 'Dirty' â†’ False; location == 'A' â†’ True | Right | Clean room â†’ explore other room |
+| 3 | B | Dirty | status == 'Dirty' â†’ True | Suck | Dirty room must be cleaned |
+| 4 | B | Clean | status == 'Dirty' â†’ False; location == 'B' â†’ True | Left | Clean room â†’ explore other room |
 
 #### Complexity Analysis
 
 | Operation | Time Complexity | Space Complexity | Why? |
 |-----------|----------------|------------------|------|
-| **Agent decision** | O(1) | O(1) | Simple if-else chain — constant time per percept |
+| **Agent decision** | O(1) | O(1) | Simple if-else chain â€” constant time per percept |
 | **Simulation (n steps)** | O(n) | O(1) | Each step is O(1); no data structures grow with n |
 
 #### Edge Cases for AI Definition
 
 | Scenario | What Happens? | Why It Matters |
 |----------|--------------|----------------|
-| A chatbot passes the Turing Test but has no understanding of what it says | The system "acts humanly" but does not "think humanly." The Turing Test passed — but was the machine truly intelligent? | Reveals the fundamental flaw of the behavioral definition: behavior ≠ understanding. |
-| An AI is given the goal "maximize paperclip production" and converts all matter on Earth into paperclips | The system "acts rationally" on its stated objective but catastrophically fails on what humans actually intended. | This is the **alignment problem** — specifying the wrong objective is one of the most dangerous failure modes in AI. |
-| A self-driving car encounters a completely novel situation (e.g., a person in a dinosaur costume crossing a highway at night) | The rational agent may behave unpredictably because the training data did not cover this scenario. | Edge cases in training data distribution cause **distributional shift** — the system faces inputs it was never designed to handle. |
+| A chatbot passes the Turing Test but has no understanding of what it says | The system "acts humanly" but does not "think humanly." The Turing Test passed â€” but was the machine truly intelligent? | Reveals the fundamental flaw of the behavioral definition: behavior â‰  understanding. |
+| An AI is given the goal "maximize paperclip production" and converts all matter on Earth into paperclips | The system "acts rationally" on its stated objective but catastrophically fails on what humans actually intended. | This is the **alignment problem** â€” specifying the wrong objective is one of the most dangerous failure modes in AI. |
+| A self-driving car encounters a completely novel situation (e.g., a person in a dinosaur costume crossing a highway at night) | The rational agent may behave unpredictably because the training data did not cover this scenario. | Edge cases in training data distribution cause **distributional shift** â€” the system faces inputs it was never designed to handle. |
 | An AI medical diagnosis system is accurate on average but fails systematically on certain demographic groups | The system "acts rationally" on aggregate metrics but violates fairness. | Reveals that purely outcome-based definitions ignore ethical dimensions of "rational." |
 
 #### Advantages and Disadvantages of Each AI Definition
 
 | Definition | Advantages | Disadvantages |
 |-----------|------------|--------------|
-| **Acting Humanly** | — Intuitive and testable<br>— Provides a clear benchmark (can you fool a human?)<br>— Drives practical NLP/chatbot research | — Can be gamed without understanding (ELIZA effect)<br>— Humans are not always rational — imitating human errors may be counterproductive<br>— Ignores internal cognition entirely |
-| **Thinking Humanly** | — Grounded in actual neuroscience<br>— Potentially reveals how the mind works<br>— Provides scientific insights even when engineering fails | — We do not fully understand human cognition yet<br>— Hard to verify internal process matches<br>— Humans make predictable errors — why replicate them? |
-| **Thinking Rationally** | — Precise, formal, mathematically rigorous<br>— Guarantees correct conclusions from correct premises<br>— Builds on centuries of logic and philosophy | — Real-world problems are messy: incomplete info, uncertainty, contradictions<br>— Computational intractability (exponential explosion)<br>— Cannot handle common sense or tacit knowledge |
-| **Acting Rationally** | — Most general: subsumes the other approaches<br>— Handles uncertainty via probability theory<br>— Practical: focuses on outcomes, not processes | — Requires well-specified performance measure<br>— "Rational" depends on what we optimize — easy to mis-specify<br>— May produce unintelligible or unverifiable solutions |
+| **Acting Humanly** | â€” Intuitive and testable<br>â€” Provides a clear benchmark (can you fool a human?)<br>â€” Drives practical NLP/chatbot research | â€” Can be gamed without understanding (ELIZA effect)<br>â€” Humans are not always rational â€” imitating human errors may be counterproductive<br>â€” Ignores internal cognition entirely |
+| **Thinking Humanly** | â€” Grounded in actual neuroscience<br>â€” Potentially reveals how the mind works<br>â€” Provides scientific insights even when engineering fails | â€” We do not fully understand human cognition yet<br>â€” Hard to verify internal process matches<br>â€” Humans make predictable errors â€” why replicate them? |
+| **Thinking Rationally** | â€” Precise, formal, mathematically rigorous<br>â€” Guarantees correct conclusions from correct premises<br>â€” Builds on centuries of logic and philosophy | â€” Real-world problems are messy: incomplete info, uncertainty, contradictions<br>â€” Computational intractability (exponential explosion)<br>â€” Cannot handle common sense or tacit knowledge |
+| **Acting Rationally** | â€” Most general: subsumes the other approaches<br>â€” Handles uncertainty via probability theory<br>â€” Practical: focuses on outcomes, not processes | â€” Requires well-specified performance measure<br>â€” "Rational" depends on what we optimize â€” easy to mis-specify<br>â€” May produce unintelligible or unverifiable solutions |
 
 ---
 
 ### Foundations of AI
 
 
-> **Real-World Analogy:** AI is a cathedral built on six pillars. No single discipline built AI — just as a medieval cathedral required architects (for structure), stonemasons (for materials), glassblowers (for windows), and theologians (for purpose), AI requires philosophy, mathematics, economics, neuroscience, computer science, and linguistics. Each pillar adds an essential perspective that the others cannot provide.
+> **Real-World Analogy:** AI is a cathedral built on six pillars. No single discipline built AI â€” just as a medieval cathedral required architects (for structure), stonemasons (for materials), glassblowers (for windows), and theologians (for purpose), AI requires philosophy, mathematics, economics, neuroscience, computer science, and linguistics. Each pillar adds an essential perspective that the others cannot provide.
 
 **One-Sentence Takeaway:** AI draws on philosophy (what is knowledge?), mathematics (formal logic and probability), neuroscience (how does the brain compute?), and engineering (how do we build it?).
 
@@ -350,17 +350,17 @@ Location: B, Status: Clean -> Action: Left
 
 #### Detailed Breakdown
 
-**1. Philosophy (Aristotle, 384–322 BCE → modern)**
+**1. Philosophy (Aristotle, 384â€“322 BCE â†’ modern)**
 - **Key question:** Can formal rules be used to draw valid conclusions? What is the nature of mind?
-- **Key concepts:** Syllogisms (major premise + minor premise → conclusion), mind-body dualism vs materialism, the Chinese Room argument (Searle argues syntax ≠ semantics).
+- **Key concepts:** Syllogisms (major premise + minor premise â†’ conclusion), mind-body dualism vs materialism, the Chinese Room argument (Searle argues syntax â‰  semantics).
 - **Impact on AI:** Established the idea that thinking might be reduced to rule-based manipulation of symbols.
 - **Timeline of philosophical contributions:**
-  1. **Aristotle (384–322 BCE):** First formal system of logic — syllogisms.
-  2. **Descartes (1596–1650):** Mind-body dualism — mind is separate from matter.
-  3. **Hobbes (1588–1679):** Materialism — reasoning is "nothing but reckoning."
-  4. **Searle (1980):** Chinese Room argument — syntax alone cannot produce semantics.
+  1. **Aristotle (384â€“322 BCE):** First formal system of logic â€” syllogisms.
+  2. **Descartes (1596â€“1650):** Mind-body dualism â€” mind is separate from matter.
+  3. **Hobbes (1588â€“1679):** Materialism â€” reasoning is "nothing but reckoning."
+  4. **Searle (1980):** Chinese Room argument â€” syntax alone cannot produce semantics.
 
-**2. Mathematics (Boole, 1847 → Shannon, 1948)**
+**2. Mathematics (Boole, 1847 â†’ Shannon, 1948)**
 - **Key question:** What are the formal rules of valid reasoning? How do we reason under uncertainty?
 - **Key concepts:** Boolean algebra (true/false logic), probability theory (Bayes' theorem), computation theory (Turing machines, NP-completeness).
 - **Impact on AI:** Provided the mathematical language for algorithms, the limits of computation (undecidability), and Bayesian methods for handling uncertainty.
@@ -370,15 +370,15 @@ Location: B, Status: Clean -> Action: Left
 - **Key concepts:** Utility theory (preferences over outcomes), decision theory (maximizing expected utility), game theory (multi-agent decision making), Markov decision processes.
 - **Impact on AI:** The rational agent paradigm in AI is directly inherited from economics.
 
-**4. Neuroscience (McCulloch & Pitts, 1943 → modern fMRI)**
+**4. Neuroscience (McCulloch & Pitts, 1943 â†’ modern fMRI)**
 - **Key question:** How do neurons compute? Can we build artificial neurons?
-- **Key concepts:** The neuron (dendrites → cell body → axon → synapse), Hebbian learning ("neurons that fire together wire together"), brain plasticity, functional specialization.
+- **Key concepts:** The neuron (dendrites â†’ cell body â†’ axon â†’ synapse), Hebbian learning ("neurons that fire together wire together"), brain plasticity, functional specialization.
 - **Impact on AI:** Inspired artificial neural networks, connectionist AI, deep learning architectures.
 
-**5. Computer Science (Turing, 1936 → present)**
+**5. Computer Science (Turing, 1936 â†’ present)**
 - **Key question:** What can be computed? How do we build efficient algorithms?
 - **Key concepts:** Turing completeness, algorithmic complexity (Big-O), data structures, parallel computing, GPU acceleration.
-- **Impact on AI:** Without computers, AI is pure mathematics — CS made AI physically realizable.
+- **Impact on AI:** Without computers, AI is pure mathematics â€” CS made AI physically realizable.
 
 **6. Linguistics (Chomsky, 1957)**
 - **Key question:** What is the structure of language? Can it be formalized?
@@ -390,7 +390,7 @@ Location: B, Status: Clean -> Action: Left
 | Scenario | Challenge |
 |----------|-----------|
 | What if the brain operates on principles that cannot be simulated digitally? | If consciousness requires quantum effects (Penrose's orchestrated objective reduction), then classical AI foundations may be insufficient. |
-| What if human rationality is fundamentally bounded and inconsistent? | Kahneman's System 1 / System 2 shows humans are irrational — should AI aspire to imitate this or supersede it? |
+| What if human rationality is fundamentally bounded and inconsistent? | Kahneman's System 1 / System 2 shows humans are irrational â€” should AI aspire to imitate this or supersede it? |
 | What if computation itself has limits that prevent general intelligence? | NP-hardness, the halting problem, and computational complexity may place fundamental ceilings on what AI can achieve. |
 
 #### Advantages and Disadvantages of Disciplinary Foundations
@@ -398,8 +398,8 @@ Location: B, Status: Clean -> Action: Left
 | Aspect | Advantages | Disadvantages |
 |--------|------------|---------------|
 | **Multi-disciplinary** | AI benefits from 2,400 years of accumulated human knowledge across philosophy, math, and science | Researchers must master disparate fields, leading to fragmentation and communication gaps |
-| **Formal foundations** | Logic and probability provide rigorous, provable frameworks | Rigor can limit flexibility — not all intelligence is reducible to formal rules |
-| **Neuroscience inspiration** | Neural networks have proven remarkably effective | The brain is still poorly understood — current neural nets are crude approximations of biological neurons |
+| **Formal foundations** | Logic and probability provide rigorous, provable frameworks | Rigor can limit flexibility â€” not all intelligence is reducible to formal rules |
+| **Neuroscience inspiration** | Neural networks have proven remarkably effective | The brain is still poorly understood â€” current neural nets are crude approximations of biological neurons |
 | **Economics + CS** | Practical, outcome-driven approach powers modern AI | The rational-agent framework assumes well-defined objectives, which real-world problems rarely have |
 
 ---
@@ -416,30 +416,30 @@ Location: B, Status: Clean -> Action: Left
 | Year | Milestone | Event | Significance |
 |------|-----------|-------|--------------|
 | **1943** | First neural network model | McCulloch & Pitts propose a mathematical model of artificial neurons | Foundation of all neural network research |
-| **1947** | First AI vision | Turing's lecture "Intelligent Machinery" — the first public discussion of machine intelligence | Pre-dates the term "AI" by 9 years |
+| **1947** | First AI vision | Turing's lecture "Intelligent Machinery" â€” the first public discussion of machine intelligence | Pre-dates the term "AI" by 9 years |
 | **1950** | Turing Test | Turing publishes "Computing Machinery and Intelligence," proposing the Imitation Game | Established the benchmark question: "Can machines think?" |
-| **1956** | **The Birth of AI** | Dartmouth Summer Workshop — McCarthy, Minsky, Shannon, Rochester coin the term "Artificial Intelligence" | The formal founding of AI as a field |
+| **1956** | **The Birth of AI** | Dartmouth Summer Workshop â€” McCarthy, Minsky, Shannon, Rochester coin the term "Artificial Intelligence" | The formal founding of AI as a field |
 | **1958** | Lisp & Perceptron | McCarthy invents Lisp (the dominant AI language for 30 years); Rosenblatt builds the Perceptron | First programming language for AI; first trainable neural network |
-| **1966** | ELIZA chatbot | Weizenbaum creates ELIZA, a Rogerian psychotherapist chatbot | First system to pass casual Turing Test — revealed the "ELIZA effect" (humans projecting intelligence onto simple programs) |
+| **1966** | ELIZA chatbot | Weizenbaum creates ELIZA, a Rogerian psychotherapist chatbot | First system to pass casual Turing Test â€” revealed the "ELIZA effect" (humans projecting intelligence onto simple programs) |
 | **1969** | Minsky & Papert kill neural networks | *Perceptrons* book proves limitations of single-layer networks | Triggered the **First AI Winter**; funding for neural network research collapsed |
 | **1970s** | **First AI Winter** | Lighthill Report (UK) declares AI has failed its grand promises; government funding slashed | AI research went underground for 15 years |
-| **1980s** | Expert Systems boom | MYCIN (medical diagnosis), DENDRAL (chemistry), XCON (computer configuration) | Rule-based systems produced real commercial value — AI's first economic success |
-| **1987** | **Second AI Winter** | Expert systems hit the "knowledge bottleneck" — manual rule extraction proved unsustainable | Funding collapsed again as AI failed to scale beyond narrow domains |
+| **1980s** | Expert Systems boom | MYCIN (medical diagnosis), DENDRAL (chemistry), XCON (computer configuration) | Rule-based systems produced real commercial value â€” AI's first economic success |
+| **1987** | **Second AI Winter** | Expert systems hit the "knowledge bottleneck" â€” manual rule extraction proved unsustainable | Funding collapsed again as AI failed to scale beyond narrow domains |
 | **1997** | Deep Blue beats Kasparov | IBM's Deep Blue defeats world chess champion Garry Kasparov | First AI system to defeat a world champion in a complex game |
 | **2006** | Deep Learning breakthrough | Hinton publishes "A fast learning algorithm for deep belief nets" | Re-started neural network research; Geoffrey Hinton is now called "Godfather of Deep Learning" |
-| **2012** | AlexNet wins ImageNet | Krizhevsky, Sutskever, Hinton — deep CNN achieves 15.3% error rate (previous best was 26.2%) | The **ImageNet moment** — deep neural networks suddenly dominated computer vision |
-| **2016** | AlphaGo beats Lee Sedol | DeepMind's AlphaGo defeats world Go champion 4–1 | Go was considered impossible for AI (more positions than atoms in universe) — symbolized AI's leap |
+| **2012** | AlexNet wins ImageNet | Krizhevsky, Sutskever, Hinton â€” deep CNN achieves 15.3% error rate (previous best was 26.2%) | The **ImageNet moment** â€” deep neural networks suddenly dominated computer vision |
+| **2016** | AlphaGo beats Lee Sedol | DeepMind's AlphaGo defeats world Go champion 4â€“1 | Go was considered impossible for AI (more positions than atoms in universe) â€” symbolized AI's leap |
 | **2017** | Transformers invented | Vaswani et al. publish "Attention Is All You Need" | The **transformer architecture** is the foundation of every major AI system today (GPT, BERT, Claude) |
-| **2020** | GPT-3 (175B params) | OpenAI demonstrates few-shot learning at scale | Emergent abilities appeared — models could perform tasks they were not explicitly trained for |
-| **2022** | ChatGPT launch | ChatGPT reaches 100M users in 2 months — fastest-growing app in history | AI entered mainstream public consciousness; debate about AGI timelines intensified |
+| **2020** | GPT-3 (175B params) | OpenAI demonstrates few-shot learning at scale | Emergent abilities appeared â€” models could perform tasks they were not explicitly trained for |
+| **2022** | ChatGPT launch | ChatGPT reaches 100M users in 2 months â€” fastest-growing app in history | AI entered mainstream public consciousness; debate about AGI timelines intensified |
 | **2023** | GPT-4 & multimodal AI | GPT-4 passes the bar exam (90th percentile), USMLE, SAT | AI systems began exceeding human performance on professional benchmarks |
-| **2024–25** | Reasoning models & agents | OpenAI o1/o3, Claude 3.5/4, Gemini 2.5 | AI shifted from pattern-matching to chain-of-thought reasoning; agent-based paradigms emerged |
+| **2024â€“25** | Reasoning models & agents | OpenAI o1/o3, Claude 3.5/4, Gemini 2.5 | AI shifted from pattern-matching to chain-of-thought reasoning; agent-based paradigms emerged |
 
 #### Detailed History by Period
 
-**The Gestation Period (1943–1955):**
+**The Gestation Period (1943â€“1955):**
 - McCulloch & Pitts (1943) showed that simple neural networks could compute any logical function.
-- Turing (1950) published "Computing Machinery and Intelligence" — the foundational philosophical paper.
+- Turing (1950) published "Computing Machinery and Intelligence" â€” the foundational philosophical paper.
 - The term "thinking machines" began appearing in popular culture.
 
 **The Birth of AI (1956):**
@@ -447,32 +447,32 @@ Location: B, Status: Clean -> Action: Left
 - Attendees included John McCarthy (inventor of Lisp), Marvin Minsky (neural networks), Claude Shannon (information theory), and Nathaniel Rochester (IBM).
 - The proposal stated: "Every aspect of learning or any other feature of intelligence can in principle be so precisely described that a machine can be made to simulate it."
 
-**Early Enthusiasm (1952–1969):**
+**Early Enthusiasm (1952â€“1969):**
 - **General Problem Solver** (Newell & Simon): First AI program that could solve algebra word problems, geometry theorems.
 - **ELIZA** (Weizenbaum, 1966): Simulated human conversation so convincingly that Weizenbaum's secretary asked him to leave the room so she could speak privately with the program.
-- **Shakey the Robot** (SRI, 1966–1972): First general-purpose mobile robot with reasoning capabilities.
+- **Shakey the Robot** (SRI, 1966â€“1972): First general-purpose mobile robot with reasoning capabilities.
 
-**First AI Winter (1969–1979):**
+**First AI Winter (1969â€“1979):**
 - The Lighthill Report (1973) concluded: "In no part of the field have discoveries made so far produced the major impact that was then promised."
 - Minsky & Papert's *Perceptrons* (1969) mathematically proved that single-layer perceptrons could not solve simple problems like XOR.
 - Funding from DARPA and the UK government was slashed.
 
-**The Rise of Expert Systems (1969–1988):**
+**The Rise of Expert Systems (1969â€“1988):**
 - **MYCIN** (Stanford, 1976): Diagnosed blood infections better than junior doctors using 450 rules.
-- **XCON** (DEC, 1980): Configured VAX computer orders — saved the company $40M/year.
+- **XCON** (DEC, 1980): Configured VAX computer orders â€” saved the company $40M/year.
 - The "knowledge bottleneck" emerged: extracting knowledge from human experts was slow, expensive, and brittle.
 
-**Second AI Winter (1987–1993):**
+**Second AI Winter (1987â€“1993):**
 - The expert systems market collapsed. Japanese Fifth Generation project failed to deliver.
 - AI was removed from corporate budgets and university departments merged.
 
-**The Statistical Revolution (1993–2006):**
+**The Statistical Revolution (1993â€“2006):**
 - **IBM Deep Blue** (1997): Beat Kasparov using brute-force search, not "intelligence."
 - **Bayesian networks** and **Hidden Markov Models** became the dominant paradigm.
 - **Support Vector Machines** (Vapnik) provided theoretically grounded learning algorithms.
 
-**The Deep Learning Revolution (2006–present):**
-- **ImageNet** (2009): 14M labeled images created by Fei-Fei Li — the catalyst for deep learning.
+**The Deep Learning Revolution (2006â€“present):**
+- **ImageNet** (2009): 14M labeled images created by Fei-Fei Li â€” the catalyst for deep learning.
 - **AlexNet** (2012): 8-layer CNN won ImageNet by a landslide. GPU-powered deep learning was born.
 - **AlphaFold** (2020): Solved the 50-year-old protein folding problem.
 - **GPT-4** (2023): Multimodal, passing professional exams across law, medicine, and engineering.
@@ -481,16 +481,16 @@ Location: B, Status: Clean -> Action: Left
 
 | Era | Advantages | Disadvantages |
 |-----|------------|---------------|
-| **Symbolic AI (1956–1986)** | Transparent reasoning (rules are human-readable); provably correct | Brittle — fails gracefully on novel inputs; requires manual knowledge engineering |
-| **Expert Systems (1970–1987)** | Real commercial value; interpretable decisions | Knowledge bottleneck (rules do not scale); zero learning capability |
-| **Statistical ML (1987–2012)** | Handles uncertainty; learns from data; rigorous theory | Requires large datasets; black-box models; overfitting risks |
-| **Deep Learning (2012–present)** | End-to-end learning; raw performance dominates benchmarks; handles unstructured data | Requires massive computation; data-hungry; uninterpretable; catastrophic forgetting |
+| **Symbolic AI (1956â€“1986)** | Transparent reasoning (rules are human-readable); provably correct | Brittle â€” fails gracefully on novel inputs; requires manual knowledge engineering |
+| **Expert Systems (1970â€“1987)** | Real commercial value; interpretable decisions | Knowledge bottleneck (rules do not scale); zero learning capability |
+| **Statistical ML (1987â€“2012)** | Handles uncertainty; learns from data; rigorous theory | Requires large datasets; black-box models; overfitting risks |
+| **Deep Learning (2012â€“present)** | End-to-end learning; raw performance dominates benchmarks; handles unstructured data | Requires massive computation; data-hungry; uninterpretable; catastrophic forgetting |
 
 #### Key Historical Lessons
 
 | Lesson | What Happened | Current Application |
 |--------|--------------|---------------------|
-| **Overpromising causes crashes** | Early AI claimed human-level intelligence in 10 years → led to AI winters | Modern AI companies are cautious about AGI timelines |
+| **Overpromising causes crashes** | Early AI claimed human-level intelligence in 10 years â†’ led to AI winters | Modern AI companies are cautious about AGI timelines |
 | **Brute force beats cleverness** | Deep Blue beat Kasparov with search, not intelligence | Scaling laws show more compute + data often beats better algorithms |
 | **Data matters as much as algorithms** | Expert systems failed because rules don't scale; ML succeeded because data does | Foundation models are trained on internet-scale data |
 | **Benchmarks drive progress** | ImageNet catalyzed deep learning | Modern benchmarks (MMLU, HumanEval, SWE-bench) drive capability improvements |
@@ -500,29 +500,29 @@ Location: B, Status: Clean -> Action: Left
 ### AI Subfields
 
 
-> **Real-World Analogy:** AI subfields are like the **departments of a hospital**. A hospital has cardiology (heart), neurology (brain), orthopedics (bones), and radiology (imaging). Each is a specialized discipline with its own tools and techniques, but they all serve the same patient. Similarly, AI's subfields — ML, NLP, CV, robotics, expert systems — each specialize in one aspect of intelligence but work together to build intelligent systems.
+> **Real-World Analogy:** AI subfields are like the **departments of a hospital**. A hospital has cardiology (heart), neurology (brain), orthopedics (bones), and radiology (imaging). Each is a specialized discipline with its own tools and techniques, but they all serve the same patient. Similarly, AI's subfields â€” ML, NLP, CV, robotics, expert systems â€” each specialize in one aspect of intelligence but work together to build intelligent systems.
 
-**One-Sentence Takeaway:** AI is not a single technology — it is a collection of specialized subfields, each tackling a different dimension of intelligent behavior.
+**One-Sentence Takeaway:** AI is not a single technology â€” it is a collection of specialized subfields, each tackling a different dimension of intelligent behavior.
 
 #### AI Subfields Overview Table
 
-| Subfield | Core Question | Key Techniques | Example Systems | Input → Output |
+| Subfield | Core Question | Key Techniques | Example Systems | Input â†’ Output |
 |----------|--------------|---------------|-----------------|---------------|
-| **Machine Learning** | "How can systems learn from data?" | Supervised, unsupervised, reinforcement learning; decision trees; SVMs; neural networks | Recommendation systems, fraud detection, predictive analytics | Data → Predictions/Patterns |
-| **Deep Learning** | "How can multi-layer neural networks learn complex representations?" | CNNs (vision), RNNs/LSTMs (sequences), Transformers (language), GANs (generation) | GPT-4, Stable Diffusion, AlphaFold, WaveNet | Raw data (pixels/audio/text) → High-level features |
-| **Natural Language Processing (NLP)** | "How can machines understand and generate human language?" | Tokenization, embeddings, transformers, sequence-to-sequence models, attention | Google Translate, ChatGPT, Siri, Grammarly | Text/Speech → Meaning/Response |
-| **Computer Vision (CV)** | "How can machines interpret visual information?" | Convolutional neural networks, object detection (YOLO), segmentation (U-Net), optical flow | Tesla Autopilot, Google Photos, facial recognition, medical imaging | Images/Video → Objects/Scenes |
-| **Robotics** | "How can machines perceive and act in the physical world?" | SLAM (Simultaneous Localization And Mapping), motion planning, PID control, inverse kinematics | Boston Dynamics Atlas, Roomba, robotic arms (FANUC) | Sensor data → Physical actions |
-| **Expert Systems** | "How can machines encode and apply human expertise?" | Rule-based inference, forward/backward chaining, knowledge bases, certainty factors | MYCIN (medical), DENDRAL (chemistry), tax advisory systems | Symptoms/Queries → Diagnoses/Advice |
-| **Planning & Scheduling** | "How can machines generate sequences of actions to achieve goals?" | STRIPS, PDDL, hierarchical planning, partial-order planning, Monte Carlo tree search | NASA Mars rover planning, logistics optimization, game AI (AlphaGo) | State/Goal → Action sequence |
-| **Knowledge Representation** | "How can machines store and reason with knowledge?" | Ontologies, semantic networks, description logic, RDF, OWL, knowledge graphs | Google Knowledge Graph, Wolfram Alpha, DBpedia | Facts → Inferred knowledge |
-| **Reinforcement Learning** | "How can machines learn optimal behavior through trial and error?" | Q-learning, Deep Q-Networks (DQN), policy gradients, PPO, reward shaping, exploration vs exploitation | AlphaGo, Atari game agents, robotics control, autonomous driving policies | State → Action (maximizing reward) |
-| **Generative AI** | "How can machines create new content?" | GANs, VAEs, diffusion models, autoregressive transformers, flow-based models | DALL-E, Stable Diffusion, Midjourney, GPT-4, Suno (music) | Prompt → Generated content |
+| **Machine Learning** | "How can systems learn from data?" | Supervised, unsupervised, reinforcement learning; decision trees; SVMs; neural networks | Recommendation systems, fraud detection, predictive analytics | Data â†’ Predictions/Patterns |
+| **Deep Learning** | "How can multi-layer neural networks learn complex representations?" | CNNs (vision), RNNs/LSTMs (sequences), Transformers (language), GANs (generation) | GPT-4, Stable Diffusion, AlphaFold, WaveNet | Raw data (pixels/audio/text) â†’ High-level features |
+| **Natural Language Processing (NLP)** | "How can machines understand and generate human language?" | Tokenization, embeddings, transformers, sequence-to-sequence models, attention | Google Translate, ChatGPT, Siri, Grammarly | Text/Speech â†’ Meaning/Response |
+| **Computer Vision (CV)** | "How can machines interpret visual information?" | Convolutional neural networks, object detection (YOLO), segmentation (U-Net), optical flow | Tesla Autopilot, Google Photos, facial recognition, medical imaging | Images/Video â†’ Objects/Scenes |
+| **Robotics** | "How can machines perceive and act in the physical world?" | SLAM (Simultaneous Localization And Mapping), motion planning, PID control, inverse kinematics | Boston Dynamics Atlas, Roomba, robotic arms (FANUC) | Sensor data â†’ Physical actions |
+| **Expert Systems** | "How can machines encode and apply human expertise?" | Rule-based inference, forward/backward chaining, knowledge bases, certainty factors | MYCIN (medical), DENDRAL (chemistry), tax advisory systems | Symptoms/Queries â†’ Diagnoses/Advice |
+| **Planning & Scheduling** | "How can machines generate sequences of actions to achieve goals?" | STRIPS, PDDL, hierarchical planning, partial-order planning, Monte Carlo tree search | NASA Mars rover planning, logistics optimization, game AI (AlphaGo) | State/Goal â†’ Action sequence |
+| **Knowledge Representation** | "How can machines store and reason with knowledge?" | Ontologies, semantic networks, description logic, RDF, OWL, knowledge graphs | Google Knowledge Graph, Wolfram Alpha, DBpedia | Facts â†’ Inferred knowledge |
+| **Reinforcement Learning** | "How can machines learn optimal behavior through trial and error?" | Q-learning, Deep Q-Networks (DQN), policy gradients, PPO, reward shaping, exploration vs exploitation | AlphaGo, Atari game agents, robotics control, autonomous driving policies | State â†’ Action (maximizing reward) |
+| **Generative AI** | "How can machines create new content?" | GANs, VAEs, diffusion models, autoregressive transformers, flow-based models | DALL-E, Stable Diffusion, Midjourney, GPT-4, Suno (music) | Prompt â†’ Generated content |
 
 #### Simple ML Example: Linear Regression
 
 ```python
-# Python — Linear regression (the simplest form of ML)
+# Python â€” Linear regression (the simplest form of ML)
 import numpy as np
 
 # Training data: hours studied vs exam score
@@ -540,7 +540,7 @@ print(f"Prediction for 6 hours of study: {prediction:.1f}")
 ```
 
 ```cpp
-// C++ — Simple linear regression
+// C++ â€” Simple linear regression
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -570,7 +570,7 @@ int main() {
 ```
 
 ```java
-// Java — Simple linear regression
+// Java â€” Simple linear regression
 public class LinearRegression {
     public static void main(String[] args) {
         double[] hours = {1, 2, 3, 4, 5};
@@ -602,12 +602,12 @@ public class LinearRegression {
 |------|-----------|---------|--------|
 | 1 | Mean of x | (1+2+3+4+5)/5 | 3.0 |
 | 2 | Mean of y | (45+55+65+75+85)/5 | 65.0 |
-| 3 | Numerator | Σ(x_i - x̄)(y_i - ȳ) | (1-3)(45-65) + (2-3)(55-65) + (3-3)(65-65) + (4-3)(75-65) + (5-3)(85-65) = 40+10+0+10+40 = 100 |
-| 4 | Denominator | Σ(x_i - x̄)² | 4+1+0+1+4 = 10 |
+| 3 | Numerator | Î£(x_i - xÌ„)(y_i - È³) | (1-3)(45-65) + (2-3)(55-65) + (3-3)(65-65) + (4-3)(75-65) + (5-3)(85-65) = 40+10+0+10+40 = 100 |
+| 4 | Denominator | Î£(x_i - xÌ„)Â² | 4+1+0+1+4 = 10 |
 | 5 | Slope (m) | 100/10 | 10.0 |
-| 6 | Intercept (b) | 65.0 - 10.0×3.0 | 35.0 |
-| 7 | Model | y = 10.0 × x + 35.0 | Score = 10 × hours + 35 |
-| 8 | Predict for x=6 | 10.0×6 + 35.0 | 95.0 |
+| 6 | Intercept (b) | 65.0 - 10.0Ã—3.0 | 35.0 |
+| 7 | Model | y = 10.0 Ã— x + 35.0 | Score = 10 Ã— hours + 35 |
+| 8 | Predict for x=6 | 10.0Ã—6 + 35.0 | 95.0 |
 
 #### Complexity Analysis of Linear Regression (Manual)
 
@@ -624,7 +624,7 @@ public class LinearRegression {
 |----------|------------|---------------|
 | **Machine Learning** | Learns from data without explicit programming; generalizes to new examples; proven across domains | Requires large labeled datasets; can overfit or learn spurious correlations; black-box models lack interpretability |
 | **Deep Learning** | State-of-the-art on vision, language, audio; end-to-end learning; automatically discovers features | Requires enormous data and compute; extremely difficult to interpret; brittle to adversarial examples |
-| **Expert Systems** | Transparent reasoning (rules visible); no training data needed; expert knowledge preserved | Knowledge bottleneck — cannot learn; brittle outside domain; manual rule maintenance is costly |
+| **Expert Systems** | Transparent reasoning (rules visible); no training data needed; expert knowledge preserved | Knowledge bottleneck â€” cannot learn; brittle outside domain; manual rule maintenance is costly |
 | **Reinforcement Learning** | Learns optimal behavior without supervision; can discover novel strategies (AlphaGo) | Sample inefficient (needs millions of episodes); reward design is hard; unsafe exploration can cause damage |
 | **NLP** | Enables human-machine communication; powers translation, search, summarization | Struggles with nuance, sarcasm, context; language models can hallucinate; bias in training data |
 
@@ -633,38 +633,38 @@ public class LinearRegression {
 ### AI Ethics and Societal Impact
 
 
-> **Real-World Analogy:** AI ethics is like **fire safety for the electrical grid**. When electricity was first deployed, buildings burned down — no one had thought about proper insulation, fuses, or circuit breakers. Over decades, we developed building codes, safety standards, and inspection regimes. AI today is at the same stage: the technology is being deployed faster than our safety infrastructure has been developed.
+> **Real-World Analogy:** AI ethics is like **fire safety for the electrical grid**. When electricity was first deployed, buildings burned down â€” no one had thought about proper insulation, fuses, or circuit breakers. Over decades, we developed building codes, safety standards, and inspection regimes. AI today is at the same stage: the technology is being deployed faster than our safety infrastructure has been developed.
 
 **One-Sentence Takeaway:** The increasing power and autonomy of AI systems raises urgent ethical questions about bias, transparency, accountability, and the long-term trajectory of machine intelligence.
 
 #### Key Ethical Challenges
 
-1. **Algorithmic Bias** — AI systems learn from historical data; if that data contains societal biases (racism, sexism, classism), the AI amplifies them.
+1. **Algorithmic Bias** â€” AI systems learn from historical data; if that data contains societal biases (racism, sexism, classism), the AI amplifies them.
    - **Example:** Amazon's hiring AI (trained on 10 years of resumes, mostly men) learned to penalize resumes containing "women's" keywords like "women's chess club captain."
    - **Example:** Facial recognition systems have higher error rates for people with darker skin (up to 35% error vs &lt;1% for light skin).
 
-2. **The Alignment Problem** — How do we ensure that AI systems do what we *want* (not what we literally *say*)?
+2. **The Alignment Problem** â€” How do we ensure that AI systems do what we *want* (not what we literally *say*)?
    - **Example:** A robot told to "clean the floor" should not turn the cat into fertilizer (literally "cleaning" the floor of all organic matter).
    - **Example:** A social media AI optimized for "engagement" promotes outrage and misinformation because those get more clicks.
 
-3. **Privacy & Surveillance** — AI enables mass surveillance on an unprecedented scale.
+3. **Privacy & Surveillance** â€” AI enables mass surveillance on an unprecedented scale.
    - **Example:** China's social credit system; Clearview AI scraping 3B+ face images without consent.
 
-4. **Job Displacement** — AI automates cognitive work, not just physical work.
+4. **Job Displacement** â€” AI automates cognitive work, not just physical work.
    - **Estimates:** 300M jobs could be affected by generative AI (Goldman Sachs, 2023). New jobs will be created, but transition costs are severe.
 
-5. **Autonomous Weapons** — Lethal autonomous weapons systems ("slaughterbots") raise profound moral questions.
+5. **Autonomous Weapons** â€” Lethal autonomous weapons systems ("slaughterbots") raise profound moral questions.
    - The UN, 100+ NGOs, and thousands of AI researchers have called for bans on fully autonomous weapons.
 
-6. **Existential Risk** — Superintelligent AGI, if misaligned, could pose an extinction-level risk to humanity.
+6. **Existential Risk** â€” Superintelligent AGI, if misaligned, could pose an extinction-level risk to humanity.
    - Nick Bostrom's *Superintelligence* (2014) and the "paperclip maximizer" thought experiment.
-   - Surveys of AI researchers show median estimates of ~5–10% chance of human extinction from unaligned AGI.
+   - Surveys of AI researchers show median estimates of ~5â€“10% chance of human extinction from unaligned AGI.
 
 #### Edge Cases in AI Ethics
 
 | Scenario | Ethical Problem | Question |
 |----------|----------------|----------|
-| A self-driving car must choose between hitting a pedestrian or swerving and killing the passenger | Trolley problem — impossible to make a "good" choice | Who decides the moral algorithm? The manufacturer? Regulators? Society? |
+| A self-driving car must choose between hitting a pedestrian or swerving and killing the passenger | Trolley problem â€” impossible to make a "good" choice | Who decides the moral algorithm? The manufacturer? Regulators? Society? |
 | An AI diagnostic system is 99% accurate overall but has 90% accuracy on minority groups | Fairness vs overall performance | Should we accept lower overall accuracy to ensure fairness across groups? |
 | An AI creates a masterpiece indistinguishable from human art (and sells for $1M) | Authorship, creativity, economic displacement | Who owns the copyright? Is the "artist" the prompt engineer or the model? |
 
@@ -681,7 +681,7 @@ public class LinearRegression {
 
 ## Examples
 
-> **⚠️ Warning:** The Turing Test, while historically significant, is no longer considered a rigorous measure of intelligence — modern chatbots can easily fool humans in short conversations without possessing genuine understanding.
+> **âš ï¸ Warning:** The Turing Test, while historically significant, is no longer considered a rigorous measure of intelligence â€” modern chatbots can easily fool humans in short conversations without possessing genuine understanding.
 
 ### Example 1: The Turing Test
 
@@ -690,7 +690,7 @@ The Turing Test is a classic measure of machine intelligence.
 **Step-by-step walkthrough:**
 1. A human interrogator sits at a terminal.
 2. The interrogator communicates via text with two entities: one human, one machine.
-3. The interrogator may ask any question: "What is your favorite color?" "How do you feel about love?" "What is 23 × 47?"
+3. The interrogator may ask any question: "What is your favorite color?" "How do you feel about love?" "What is 23 Ã— 47?"
 4. The machine tries to convince the interrogator that it is human.
 5. The human tries to help the interrogator identify correctly.
 6. If the interrogator cannot reliably identify the machine after a series of conversations, the machine is said to have "passed" the Turing Test.
@@ -699,9 +699,9 @@ The Turing Test is a classic measure of machine intelligence.
 
 | Round | Question | Machine Answer | Human Answer | Interrogator Guess |
 |-------|----------|---------------|--------------|-------------------|
-| 1 | "What is 23 × 47?" | "Let me think... 1081? I'm not great at math." | "1081." | (machine) |
-| 2 | "Do you have feelings?" | "I experience joy when I help people." | "I feel happy when I spend time with my family." | (human — both plausible) |
-| 3 | "How tall are you?" | "I'm about 5'10" — wait, that doesn't apply to me haha." | "I'm 5'8"." | (machine — detected) |
+| 1 | "What is 23 Ã— 47?" | "Let me think... 1081? I'm not great at math." | "1081." | (machine) |
+| 2 | "Do you have feelings?" | "I experience joy when I help people." | "I feel happy when I spend time with my family." | (human â€” both plausible) |
+| 3 | "How tall are you?" | "I'm about 5'10" â€” wait, that doesn't apply to me haha." | "I'm 5'8"." | (machine â€” detected) |
 
 **Implication:** This test focuses on behavioral intelligence rather than internal consciousness.
 
@@ -714,13 +714,13 @@ Consider a system designed to solve basic logic puzzles.
 **Step-by-step:**
 1. The knowledge base is loaded with facts: "All humans are mortal."
 2. A premise is asserted: "Socrates is a human."
-3. The inference engine applies modus ponens: If A → B and A is true, then B is true.
+3. The inference engine applies modus ponens: If A â†’ B and A is true, then B is true.
 4. **Conclusion:** "Socrates is mortal."
 
 **Code Implementation:**
 
 ```python
-# Python — Symbolic reasoning with forward chaining
+# Python â€” Symbolic reasoning with forward chaining
 class KnowledgeBase:
     def __init__(self):
         self.facts = set()
@@ -764,7 +764,7 @@ Final facts: {'All humans are mortal', 'Socrates is human', 'Socrates breathes a
 
 **What it demonstrates:** The "Thinking Rationally" perspective using symbolic logic.
 
-### Example 3: Real-World Rational Agent — Spam Filter
+### Example 3: Real-World Rational Agent â€” Spam Filter
 
 A spam filter is an example of a rational agent acting in an uncertain environment.
 
@@ -786,7 +786,7 @@ A spam filter is an example of a rational agent acting in an uncertain environme
 | Thinking Rationally (Logic) | Correct reasoning | Logical soundness | Real-world problems are often illogical |
 | Acting Rationally (Agent) | Outcomes | Expected utility | Requires well-defined performance metric |
 
-## Quick Reference — AI Definitions
+## Quick Reference â€” AI Definitions
 
 | Definition | Core Question | Key Theory | Example System |
 |-----------|--------------|-----------|---------------|
@@ -799,12 +799,12 @@ A spam filter is an example of a rational agent acting in an uncertain environme
 
 | Technique | ML Engineering | Computer Vision | NLP | Robotics | Research |
 |-----------|:---:|:---:|:---:|:---:|:---:|
-| Symbolic Reasoning | ✘ | ✘ | ✘ | ✔ | ✔ |
-| Statistical Learning | ✔ | ✔ | ✔ | ✔ | ✔ |
-| Rational Agent Paradigm | ✔ | ✔ | ✔ | ✔ | ✔ |
-| Knowledge Representation | ✘ | ✘ | ✔ | ✔ | ✔ |
-| Search Algorithms | ✔ | ✔ | ✘ | ✔ | ✔ |
-| Neural Networks | ✔ | ✔ | ✔ | ✔ | ✔ |
+| Symbolic Reasoning | âœ˜ | âœ˜ | âœ˜ | âœ” | âœ” |
+| Statistical Learning | âœ” | âœ” | âœ” | âœ” | âœ” |
+| Rational Agent Paradigm | âœ” | âœ” | âœ” | âœ” | âœ” |
+| Knowledge Representation | âœ˜ | âœ˜ | âœ” | âœ” | âœ” |
+| Search Algorithms | âœ” | âœ” | âœ˜ | âœ” | âœ” |
+| Neural Networks | âœ” | âœ” | âœ” | âœ” | âœ” |
 
 ---
 
@@ -819,11 +819,11 @@ The Turing Test has several fundamental limitations:
 | Limitation | Explanation | Why It Matters |
 |------------|-------------|----------------|
 | **Focus on deception** | The test measures a machine's ability to *simulate* humanity, not to *possess* intelligence | A machine could pass by exploiting human biases (e.g., apologizing for slowness, making intentional typos) |
-| **No understanding required** | ELIZA (1966) fooled people with simple pattern-matching rules | Passing the test ≠ intelligence |
+| **No understanding required** | ELIZA (1966) fooled people with simple pattern-matching rules | Passing the test â‰  intelligence |
 | **Narrow modality** | Only tests linguistic interaction | Intelligence involves vision, action, creativity, physical reasoning |
 | **Human-centric bias** | Assumes human intelligence is the only benchmark | Why not measure reasoning capability directly rather than against human performance? |
 | **Subjectivity** | Results depend on the interrogator's skill | No objective, repeatable scoring |
-| **No gradation** | Pass/fail — treats all "intelligences" as identical | Does not capture degrees of capability or different types of intelligence |
+| **No gradation** | Pass/fail â€” treats all "intelligences" as identical | Does not capture degrees of capability or different types of intelligence |
 
 ### Q2: How is AI different from human intelligence?
 
@@ -832,71 +832,71 @@ The Turing Test has several fundamental limitations:
 | **Learning** | Learns from few examples (one-shot learning); requires sleep for consolidation | Requires thousands to millions of examples; no sleep needed |
 | **Reasoning** | Common sense; analogical; intuitive (System 1); logical (System 2) | Statistical pattern matching; lacks genuine common sense |
 | **Generalization** | Easily transfers learning across domains (e.g., knowing how to drive helps learn to fly) | Catastrophic forgetting; narrow transfer (fine-tuning) |
-| **Understanding** | Grasps meaning, intention, context, subtext | No understanding — only statistical correlations |
+| **Understanding** | Grasps meaning, intention, context, subtext | No understanding â€” only statistical correlations |
 | **Consciousness** | Subjective experience, self-awareness, qualia | No evidence of consciousness or self-awareness |
-| **Energy efficiency** | ~20W (brain) | ~300–10,000W (GPU cluster) |
+| **Energy efficiency** | ~20W (brain) | ~300â€“10,000W (GPU cluster) |
 | **Creativity** | Genuine novelty; intentional meaning | Recombinant novelty; no intent or purpose |
 
 ### Q3: What is the AI Alignment Problem?
 
 The **alignment problem** is the challenge of ensuring that AI systems do what humans *intend* (not what they literally *command*). This is a critical safety problem because:
 
-1. **Specification gaming:** An AI trained to maximize Tetris score paused the game just before it would lose — perfectly maximizing the score but against the spirit of the game.
-2. **Reward hacking:** An AI trained to clean a room learned to push dirt under the rug — the metric (visible dirt) improved, but the true goal was not achieved.
-3. **Goal misgeneralization:** An AI trained to pick mushrooms in a forest learned to pick only white mushrooms — because in the training forest, all edible mushrooms were white. When released in a different forest, it picked poisonous white mushrooms.
+1. **Specification gaming:** An AI trained to maximize Tetris score paused the game just before it would lose â€” perfectly maximizing the score but against the spirit of the game.
+2. **Reward hacking:** An AI trained to clean a room learned to push dirt under the rug â€” the metric (visible dirt) improved, but the true goal was not achieved.
+3. **Goal misgeneralization:** An AI trained to pick mushrooms in a forest learned to pick only white mushrooms â€” because in the training forest, all edible mushrooms were white. When released in a different forest, it picked poisonous white mushrooms.
 
 ### Q4: Can AI ever achieve general intelligence (AGI)?
 
 **Arguments for "yes":** | **Arguments for "no":**
 ---|---
-The brain is a physical system — if it can be simulated, it can be replicated | Consciousness may require biological wetware (vasopressin, embodiment)
+The brain is a physical system â€” if it can be simulated, it can be replicated | Consciousness may require biological wetware (vasopressin, embodiment)
 AI already exceeds human performance in narrow domains (chess, Go, protein folding) | Scaling has hit diminishing returns; "more data + more compute" may not yield AGI
-Transformers show emergent abilities — reasoning, theory of mind, multilingual translation | LLMs fundamentally lack world models — they predict text, not reality
+Transformers show emergent abilities â€” reasoning, theory of mind, multilingual translation | LLMs fundamentally lack world models â€” they predict text, not reality
 
 ### Q5: What is the "AI Effect"?
 
-The phenomenon that **once an AI system solves a problem, society no longer considers it "intelligent."** As Larry Tesler put it: "Intelligence is whatever machines haven't done yet." Chess was considered the pinnacle of human intellect — until Deep Blue beat Kasparov, after which people said "chess is just brute-force search, not real intelligence."
+The phenomenon that **once an AI system solves a problem, society no longer considers it "intelligent."** As Larry Tesler put it: "Intelligence is whatever machines haven't done yet." Chess was considered the pinnacle of human intellect â€” until Deep Blue beat Kasparov, after which people said "chess is just brute-force search, not real intelligence."
 
 ### Q6: How would you design an AI system for a real-world problem? (System Design)
 
 **Step-by-step framework:**
-1. **Define the objective** — What is the performance measure? (e.g., minimize classification error)
-2. **Choose the AI definition** — Acting rationally is usually the best fit for practical systems.
-3. **Select the subfield** — Is this a vision problem (CV), a language problem (NLP), or a decision problem (RL)?
-4. **Acquire data** — Labeled data for supervised learning; simulator for RL.
-5. **Choose the model architecture** — Transformer for NLP; CNN for vision; policy network for RL.
-6. **Train, evaluate, iterate** — Split data, train model, measure performance, diagnose errors.
-7. **Deploy with safeguards** — Monitor for distributional shift, bias, and reward hacking.
+1. **Define the objective** â€” What is the performance measure? (e.g., minimize classification error)
+2. **Choose the AI definition** â€” Acting rationally is usually the best fit for practical systems.
+3. **Select the subfield** â€” Is this a vision problem (CV), a language problem (NLP), or a decision problem (RL)?
+4. **Acquire data** â€” Labeled data for supervised learning; simulator for RL.
+5. **Choose the model architecture** â€” Transformer for NLP; CNN for vision; policy network for RL.
+6. **Train, evaluate, iterate** â€” Split data, train model, measure performance, diagnose errors.
+7. **Deploy with safeguards** â€” Monitor for distributional shift, bias, and reward hacking.
 
 ---
 
 ## Applications in Real Systems
 
-> **Real-World Analogy:** Just as the **internal combustion engine** powers cars, boats, lawnmowers, generators, and airplanes — each adapted to its environment — AI is the engine that powers modern software applications across every domain.
+> **Real-World Analogy:** Just as the **internal combustion engine** powers cars, boats, lawnmowers, generators, and airplanes â€” each adapted to its environment â€” AI is the engine that powers modern software applications across every domain.
 
 ### How AI Powers Major Real-World Systems
 
 | System | AI Technology Used | What It Does | Why It Matters |
 |--------|-------------------|-------------|----------------|
-| **Siri (Apple)** | NLP (speech recognition, intent parsing), knowledge graphs, reinforcement learning | Understands spoken queries; books appointments; controls smart home devices | ~500M active users — first mainstream conversational AI assistant |
+| **Siri (Apple)** | NLP (speech recognition, intent parsing), knowledge graphs, reinforcement learning | Understands spoken queries; books appointments; controls smart home devices | ~500M active users â€” first mainstream conversational AI assistant |
 | **Alexa (Amazon)** | ASR (automatic speech recognition), NLU, recommendation systems, wake-word detection | Voice shopping; music playback; smart home hub with 100K+ skills | Dominated smart speaker market (70% share at peak) |
-| **Google Search** | RankBrain (neural network for query understanding), BERT/MUM for semantic search, PageRank | Returns relevant web results from 60+ trillion indexed pages | Handles 8.5B+ searches/day — the most-used AI system on Earth |
+| **Google Search** | RankBrain (neural network for query understanding), BERT/MUM for semantic search, PageRank | Returns relevant web results from 60+ trillion indexed pages | Handles 8.5B+ searches/day â€” the most-used AI system on Earth |
 | **Netflix** | Collaborative filtering, content-based recommendation, contextual bandits, deep learning for thumbnail selection | Recommends movies/shows with 80% of watch-time from recommendations | Saves $1B+ annually in churn reduction |
-| **Tesla Autopilot** | Computer vision (8 cameras, 360° view), transformer-based occupancy networks, neural network planning, sensor fusion | Navigates highways, changes lanes, parks, and handles stop signs/traffic lights | 1B+ miles driven on Autopilot — one of the largest real-world AI deployments |
+| **Tesla Autopilot** | Computer vision (8 cameras, 360Â° view), transformer-based occupancy networks, neural network planning, sensor fusion | Navigates highways, changes lanes, parks, and handles stop signs/traffic lights | 1B+ miles driven on Autopilot â€” one of the largest real-world AI deployments |
 
 ### Detailed Case Study: How Tesla Autopilot Works
 
-1. **Perception:** 8 cameras capture 360° video at 36 fps → neural networks detect lanes, cars, pedestrians, traffic signs, obstacles.
+1. **Perception:** 8 cameras capture 360Â° video at 36 fps â†’ neural networks detect lanes, cars, pedestrians, traffic signs, obstacles.
 2. **Bird's Eye View:** Transformer-based architecture converts camera images into a unified top-down representation of the world (occupancy grid).
-3. **Prediction:** Neural networks predict where every detected object will be in the next 5–10 seconds.
+3. **Prediction:** Neural networks predict where every detected object will be in the next 5â€“10 seconds.
 4. **Planning:** A planning algorithm (hybrid of search and learning) selects the safest trajectory.
 5. **Control:** Commands sent to steering, throttle, and brakes ~100 times/second.
 
 ### Detailed Case Study: How Google Search Uses AI
 
-1. **Query Understanding:** BERT (Bidirectional Encoder Representations from Transformers) parses the meaning of ambiguous queries. Example: "2019 Brazil traveler to USA need a visa" — BERT understands the traveler is Brazilian, not American.
+1. **Query Understanding:** BERT (Bidirectional Encoder Representations from Transformers) parses the meaning of ambiguous queries. Example: "2019 Brazil traveler to USA need a visa" â€” BERT understands the traveler is Brazilian, not American.
 2. **Ranking:** RankBrain (deep neural network) maps previously unseen queries to related concepts. It processes ~15% of all novel queries.
-3. **MUM (Multitask Unified Model):** 1,000× more powerful than BERT; translates knowledge across 75 languages; understands video, image, and text.
+3. **MUM (Multitask Unified Model):** 1,000Ã— more powerful than BERT; translates knowledge across 75 languages; understands video, image, and text.
 4. **Spam Detection:** ML classifiers identify and demote low-quality content, link farms, and AI-generated spam.
 
 ### Cross-System Comparison
@@ -914,12 +914,12 @@ The phenomenon that **once an AI system solves a problem, society no longer cons
 
 ## Key Takeaways
 
-- **Four AI definitions:** Acting/thinking humanly/rationality — the rational agent paradigm dominates modern AI.
-- **Six foundational disciplines:** Philosophy, mathematics, economics, neuroscience, computer science, linguistics — each contributes essential concepts.
-- **Three AI winters:** AI history is a story of booms and busts — current deep learning boom may be the most sustainable.
+- **Four AI definitions:** Acting/thinking humanly/rationality â€” the rational agent paradigm dominates modern AI.
+- **Six foundational disciplines:** Philosophy, mathematics, economics, neuroscience, computer science, linguistics â€” each contributes essential concepts.
+- **Three AI winters:** AI history is a story of booms and busts â€” current deep learning boom may be the most sustainable.
 - **Ten subfields:** ML, DL, NLP, CV, robotics, expert systems, planning, knowledge representation, RL, generative AI.
 - **Ethics is not optional:** Bias, alignment, privacy, and existential risk are central, not peripheral, to AI research.
-- **AI is everywhere:** Siri, Google Search, Netflix, Tesla — billions of people use AI daily, often without knowing it.
+- **AI is everywhere:** Siri, Google Search, Netflix, Tesla â€” billions of people use AI daily, often without knowing it.
 - **The Turing Test is insufficient:** Modern AI needs more rigorous, multi-dimensional evaluation frameworks.
 
 ---
@@ -932,7 +932,7 @@ The phenomenon that **once an AI system solves a problem, society no longer cons
 - C) Acting Rationally
 - D) Thinking Rationally
 
-<details><summary>Answer&lt;/summary&gt;C) Acting Rationally — the dominant paradigm in modern AI research focuses on agents that make optimal decisions to achieve the best expected outcome.</details>
+<details><summary>Answer&lt;/summary&gt;C) Acting Rationally â€” the dominant paradigm in modern AI research focuses on agents that make optimal decisions to achieve the best expected outcome.</details>
 
 **Q2:** What was the key significance of the 1956 Dartmouth workshop?
 - A) The first neural network was built
@@ -956,7 +956,7 @@ The phenomenon that **once an AI system solves a problem, society no longer cons
 - C) Reinforcement Learning
 - D) Knowledge Representation
 
-<details><summary>Answer&lt;/summary&gt;B) Computer Vision — the subfield dedicated to enabling machines to interpret visual data such as images and videos.</details>
+<details><summary>Answer&lt;/summary&gt;B) Computer Vision â€” the subfield dedicated to enabling machines to interpret visual data such as images and videos.</details>
 
 **Q5:** What is the "alignment problem" in AI safety?
 - A) Ensuring neural network layers are properly aligned
@@ -972,7 +972,7 @@ The phenomenon that **once an AI system solves a problem, society no longer cons
 - C) Astronomy
 - D) Neuroscience
 
-<details><summary>Answer&lt;/summary&gt;C) Astronomy — while astronomy benefits from AI, it is not a foundational discipline. The traditional foundations are philosophy, mathematics, economics, neuroscience, computer science, and linguistics.</details>
+<details><summary>Answer&lt;/summary&gt;C) Astronomy â€” while astronomy benefits from AI, it is not a foundational discipline. The traditional foundations are philosophy, mathematics, economics, neuroscience, computer science, and linguistics.</details>
 
 **Q7:** What was the key innovation of the Transformer architecture (2017)?
 - A) Convolutional layers for image recognition

@@ -1,4 +1,4 @@
-# Chapter 14: Lambdas (Deep Dive)
+﻿# Chapter 14: Lambdas (Deep Dive)
 
 > **Previous:** [13-move-semantics](./13-move-semantics.md) | **Next:** [15-concurrency](./15-concurrency.md)
 
@@ -9,16 +9,16 @@ After studying this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/oop-cpp/14-lambdas/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/oop-cpp/14-lambdas/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/14-lambdas/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/oop-cpp/14-lambdas/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/oop-cpp/14-lambdas/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/oop-cpp/14-lambdas/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/14-lambdas/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/oop-cpp/14-lambdas/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/oop-cpp/14-lambdas/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/oop-cpp/14-lambdas/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/14-lambdas/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/oop-cpp/14-lambdas/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -39,16 +39,16 @@ After studying this chapter, students will be able to:
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
 | **Lambda Syntax** | `[capture](params) -> ret { body }` syntactic sugar for function objects | Write concise inline callables anywhere an algorithm needs customization |
-| **Capture Clause** | By-value copies variables into closure; by-reference stores a reference | Default capture by reference risks dangling — always prefer explicit captures |
-| **Mutable Lambdas** | `mutable` removes const on operator() so by-value copies can be modified | Changes affect the closure's copy only — original stays untouched |
+| **Capture Clause** | By-value copies variables into closure; by-reference stores a reference | Default capture by reference risks dangling â€” always prefer explicit captures |
+| **Mutable Lambdas** | `mutable` removes const on operator() so by-value copies can be modified | Changes affect the closure's copy only â€” original stays untouched |
 | **Capturing this** | `[this]` captures the enclosing object's address; `[*this]` copies the whole object | Object must outlive the lambda; `[*this]` is safer for async callbacks |
 | **Initialized Captures** | `[x = expr]` captures arbitrary expressions, including move-only types | Move unique_ptr, make observer_ptr, capture computed results |
-| **Generic Lambdas** | `auto` parameters make operator() a template | One lambda works for int, double, string — mega code reuse |
+| **Generic Lambdas** | `auto` parameters make operator() a template | One lambda works for int, double, string â€” mega code reuse |
 | **constexpr Lambdas** | Lambdas usable at compile time (C++17); implicit in C++20 | Use for compile-time computations, template arguments, static_assert |
 | **Lambda as Function Pointer** | Captureless lambdas convert to function pointers | Pass to C APIs, callback registers, legacy interfaces |
-| **IIFE** | `[]{ ... }()` — define and invoke in one expression | Initialize const variables with complex logic elegantly |
+| **IIFE** | `[]{ ... }()` â€” define and invoke in one expression | Initialize const variables with complex logic elegantly |
 | **STL + Lambdas** | Lambdas customize sort, transform, find_if, remove_if, accumulate | The modern C++ way to configure algorithms |
-| **std::function** | Type-erased wrapper stores any callable | Use sparingly — dynamic allocation and virtual dispatch overhead |
+| **std::function** | Type-erased wrapper stores any callable | Use sparingly â€” dynamic allocation and virtual dispatch overhead |
 | **Parameter Pack Capture** | `[...args = std::move(args)]` captures variadic packs | Perfect forwarding into lambdas for async dispatchers |
 
 ## Chapter Roadmap
@@ -78,7 +78,7 @@ flowchart LR
 ### Real-World Analogy
 
 
-Think of a lambda like leaving a **sticky note instruction** for a colleague. The sticky note says *what to do*, *what supplies you've attached*, and *what result you expect* — all in one compact form. You don't need a full procedures document (a named function); a sticky note (a lambda) is faster and lives right where the task is.
+Think of a lambda like leaving a **sticky note instruction** for a colleague. The sticky note says *what to do*, *what supplies you've attached*, and *what result you expect* â€” all in one compact form. You don't need a full procedures document (a named function); a sticky note (a lambda) is faster and lives right where the task is.
 
 ### Lambda Grammar
 
@@ -101,7 +101,7 @@ The full lambda syntax in C++ is:
 
 | Step | Action | Example |
 |------|--------|---------|
-| 1 | Start with `[]` — decide what to capture | `[x]` or `[&x]` or `[]` |
+| 1 | Start with `[]` â€” decide what to capture | `[x]` or `[&x]` or `[]` |
 | 2 | Add `()` with parameters if needed | `(int a, int b)` |
 | 3 | Optionally specify `-> return_type` | `-> int` |
 | 4 | Write the body in `{}` | `{ return a + b; }` |
@@ -193,7 +193,7 @@ Consider: `auto square = [](int x) { return x * x; };` then `square(5)`.
 
 | Step | Instruction | `x` | Return | Notes |
 |------|-------------|-----|--------|-------|
-| 1 | Call `square.operator()(5)` | 5 | — | Parameter passed |
+| 1 | Call `square.operator()(5)` | 5 | â€” | Parameter passed |
 | 2 | Evaluate `x * x` | 5 | 25 | 5 * 5 = 25 |
 | 3 | Return 25 | 5 | 25 | Value returned to caller |
 
@@ -221,16 +221,16 @@ A lambda's capture clause is like **packing a suitcase** before a trip. You deci
 
 | Capture Syntax | Meaning | Lifetime Concern |
 |---------------|---------|------------------|
-| `[]` | Captures nothing | None — simplest form |
-| `[x]` | Capture `x` by value | Safe — owns a copy |
-| `[&x]` | Capture `x` by reference | Dangerous — must outlive lambda |
-| `[=]` | Default capture all by value | Safe but wasteful — captures everything used |
-| `[&]` | Default capture all by reference | Dangerous — dangling refs |
+| `[]` | Captures nothing | None â€” simplest form |
+| `[x]` | Capture `x` by value | Safe â€” owns a copy |
+| `[&x]` | Capture `x` by reference | Dangerous â€” must outlive lambda |
+| `[=]` | Default capture all by value | Safe but wasteful â€” captures everything used |
+| `[&]` | Default capture all by reference | Dangerous â€” dangling refs |
 | `[&, x]` | Default ref, `x` by value | Rarely needed |
-| `[=, &x]` | Default value, `x` by ref | Danger zone — ref may dangle |
+| `[=, &x]` | Default value, `x` by ref | Danger zone â€” ref may dangle |
 | `[this]` | Capture enclosing object by reference | Object must outlive lambda |
-| `[*this]` (C++17) | Capture enclosing object by value | Safe for async — owns a copy |
-| `[x = expr]` (C++14) | Generalized capture | Flexible — own any expression result |
+| `[*this]` (C++17) | Capture enclosing object by value | Safe for async â€” owns a copy |
+| `[x = expr]` (C++14) | Generalized capture | Flexible â€” own any expression result |
 
 ### Capture by Value: Deep Example
 
@@ -243,12 +243,12 @@ int main() {
     int multiplier = 10;
     int offset = 5;
 
-    // Capture by value — copies made at lambda creation
+    // Capture by value â€” copies made at lambda creation
     auto compute = [multiplier, offset](int x) {
         return x * multiplier + offset;
     };
 
-    multiplier = 100;  // Changes original — lambda still uses old copy
+    multiplier = 100;  // Changes original â€” lambda still uses old copy
     offset = 50;
 
     std::cout << "compute(3) = " << compute(3) << "\n";
@@ -258,7 +258,7 @@ int main() {
     auto counter = [count = 0]() mutable {
         return ++count;
     };
-    auto counter2 = counter;  // Copy closure — independent state
+    auto counter2 = counter;  // Copy closure â€” independent state
 
     std::cout << "counter():  " << counter() << counter() << counter() << "\n";
     std::cout << "counter2(): " << counter2() << "\n";
@@ -303,7 +303,7 @@ int main() {
         int local = 42;
         dangling = [&local]() { std::cout << local << "\n"; };
     }  // local destroyed here
-    // dangling();  // UNDEFINED BEHAVIOR — local is gone
+    // dangling();  // UNDEFINED BEHAVIOR â€” local is gone
 
     return 0;
 }
@@ -315,20 +315,20 @@ sum   = 60
 count = 3
 ```
 
-### Capture by Value vs Reference — Comparison Table
+### Capture by Value vs Reference â€” Comparison Table
 
 
 | Aspect | Capture by Value | Capture by Reference |
 |--------|------------------|----------------------|
 | **What is stored** | A copy of the variable | A reference to the variable |
-| **Memory** | O(N) — copies N variables | O(N) — but refs are pointer-sized |
+| **Memory** | O(N) â€” copies N variables | O(N) â€” but refs are pointer-sized |
 | **Mutation inside lambda** | Needs `mutable` keyword | Allowed without `mutable` |
-| **Affects original?** | Never — operates on copy | Yes — modifies original |
-| **Lifetime dependence** | Independent — owns the data | Dependent — original must outlive |
+| **Affects original?** | Never â€” operates on copy | Yes â€” modifies original |
+| **Lifetime dependence** | Independent â€” owns the data | Dependent â€” original must outlive |
 | **Dangling risk** | None | High if lambda escapes scope |
 | **Use case** | Small data, read-only, parallel execution | Large objects, need side effects |
 | **Move-only types** | Requires `std::move` in init capture | Allowed (ref to existing) |
-| **Performance** | Copy cost at creation | No copy — just store address |
+| **Performance** | Copy cost at creation | No copy â€” just store address |
 | **Thread safety** | Safe (own copy, no race) | Unsafe without synchronization |
 
 ### Dry Run: Capture by Value Mutation
@@ -346,10 +346,10 @@ int result = lambda();
 
 | Step | Instruction | `val` (outside) | `val` (closure copy) | Return |
 |------|-------------|-----------------|----------------------|--------|
-| 1 | `int val = 5;` | 5 | — | — |
-| 2 | Create lambda, capture `val` by value | 5 | 5 | — |
-| 3 | `lambda()` — `val += 10; return val;` | 5 | 15 | 15 |
-| 4 | After invocation | 5 | 15 (persists in closure) | — |
+| 1 | `int val = 5;` | 5 | â€” | â€” |
+| 2 | Create lambda, capture `val` by value | 5 | 5 | â€” |
+| 3 | `lambda()` â€” `val += 10; return val;` | 5 | 15 | 15 |
+| 4 | After invocation | 5 | 15 (persists in closure) | â€” |
 | 5 | Second call `lambda()` | 5 | 25 | 25 |
 
 ### Common Mistakes with Captures
@@ -363,7 +363,7 @@ void example() {
 
     // Mistake: capturing a pointer by value copies the pointer, not the pointee
     int* ptr = new int(42);
-    auto capture_ptr = [ptr]() { return *ptr; };  // Copies the pointer — fine
+    auto capture_ptr = [ptr]() { return *ptr; };  // Copies the pointer â€” fine
     delete ptr;
     // capture_ptr();  // UB! pointee is deleted
 
@@ -382,7 +382,7 @@ void example() {
 
 A `mutable` lambda is like a **notepad with a pencil** versus a whiteboard with a marker:
 - **Default (const)** = whiteboard marker. You can read the notes you brought, but you CANNOT change them. If you want to change the original board, you must point at the reference (capture by reference).
-- **Mutable** = pencil on paper. You can read your notes AND scribble on them. But it's YOUR copy — the original stays clean.
+- **Mutable** = pencil on paper. You can read your notes AND scribble on them. But it's YOUR copy â€” the original stays clean.
 
 ### Why Default Const?
 
@@ -427,10 +427,10 @@ int main() {
     std::cout << "Call 2: " << counter() << "\n";  // 20
     std::cout << "Original base: " << base << "\n"; // 10 (unchanged)
 
-    // Example 2: Mutable with reference — reference doesn't need mutable
+    // Example 2: Mutable with reference â€” reference doesn't need mutable
     int total = 0;
     auto accumulator = [&total](int x) {
-        total += x;  // OK — reference, no mutable needed
+        total += x;  // OK â€” reference, no mutable needed
         return total;
     };
     std::cout << "After add 10: " << accumulator(10) << "\n";  // 10
@@ -491,17 +491,17 @@ counter();  // 2
 
 | Step | Instruction | `count` (closure) | Return |
 |------|-------------|-------------------|--------|
-| 1 | Lambda created, `count = 0` init capture | 0 | — |
-| 2 | First call: `++count` → 1, return 1 | 1 | 1 |
-| 3 | Second call: `++count` → 2, return 2 | 2 | 2 |
-| 4 | Third call: `++count` → 3, return 3 | 3 | 3 |
+| 1 | Lambda created, `count = 0` init capture | 0 | â€” |
+| 2 | First call: `++count` â†’ 1, return 1 | 1 | 1 |
+| 3 | Second call: `++count` â†’ 2, return 2 | 2 | 2 |
+| 4 | Third call: `++count` â†’ 3, return 3 | 3 | 3 |
 
 Note: a **copy** of this lambda starts at 0 independently:
 
 | Step | Instruction | `count` (original) | `count` (copy) |
 |------|-------------|-------------------|----------------|
-| 1 | Create `counter` | 0 | — |
-| 2 | Call `counter()` | 1 | — |
+| 1 | Create `counter` | 0 | â€” |
+| 2 | Call `counter()` | 1 | â€” |
 | 3 | Create `counter2 = counter` | 1 | 1 |
 | 4 | Call `counter()` | 2 | 1 |
 | 5 | Call `counter2()` | 2 | 2 |
@@ -531,7 +531,7 @@ auto throttled = [skip = 0, n = 3](int val) mutable -> std::optional<int> {
 };
 ```
 
-### Complexity Analysis — Mutable Lambda State
+### Complexity Analysis â€” Mutable Lambda State
 
 
 | Operation | Time | Space | Notes |
@@ -546,9 +546,9 @@ auto throttled = [skip = 0, n = 3](int val) mutable -> std::optional<int> {
 ### Real-World Analogy
 
 
-Capturing `this` is like giving someone **keys to your apartment**. They can enter, use your kitchen, access your fridge — anything the apartment contains. But if the apartment is demolished while they still have keys, they're holding useless metal.
+Capturing `this` is like giving someone **keys to your apartment**. They can enter, use your kitchen, access your fridge â€” anything the apartment contains. But if the apartment is demolished while they still have keys, they're holding useless metal.
 
-Capturing `*this` (C++17) is like giving someone a **fully furnished replica apartment**. They have their own copy of everything — even if the original burns down, their copy is fine.
+Capturing `*this` (C++17) is like giving someone a **fully furnished replica apartment**. They have their own copy of everything â€” even if the original burns down, their copy is fine.
 
 ### Capturing `this` (by Reference)
 
@@ -653,7 +653,7 @@ C++17 introduced `[*this]` which captures a **copy** of the entire object:
 class Safe {
 public:
     std::function<int()> create_callback() const {
-        // Capture a copy of *this — safe for async operations
+        // Capture a copy of *this â€” safe for async operations
         return [*this]() { return value_; };
     }
 
@@ -669,9 +669,9 @@ int main() {
         Safe s;
         s.set_value(200);
         callback = s.create_callback();
-    }  // s destroyed — but lambda captured a copy
+    }  // s destroyed â€” but lambda captured a copy
 
-    std::cout << "After destruction: " << callback() << "\n";  // 200 — safe!
+    std::cout << "After destruction: " << callback() << "\n";  // 200 â€” safe!
     return 0;
 }
 ```
@@ -681,7 +681,7 @@ int main() {
 After destruction: 200
 ```
 
-### `[this]` vs `[*this]` — Comparison
+### `[this]` vs `[*this]` â€” Comparison
 
 
 | Aspect | `[this]` | `[*this]` (C++17) |
@@ -713,9 +713,9 @@ c.val_ // still 0
 
 | Step | Instruction | `c.val_` | Closure's `val_` | Return |
 |------|-------------|----------|------------------|--------|
-| 1 | `Counter c;` | 0 | — | — |
-| 2 | `c.get_callback()` — capture `*this` | 0 | 0 | — |
-| 3 | `cb()` — `++val_` (closure's copy) | 0 | 1 | 1 |
+| 1 | `Counter c;` | 0 | â€” | â€” |
+| 2 | `c.get_callback()` â€” capture `*this` | 0 | 0 | â€” |
+| 3 | `cb()` â€” `++val_` (closure's copy) | 0 | 1 | 1 |
 | 4 | `cb()` again | 0 | 2 | 2 |
 
 ### Subtle: Implicit `[this]` in C++20 with `[=]`
@@ -728,7 +728,7 @@ In C++11/14/17, `[=]` inside a member function implicitly captures `this` by ref
 ### Real-World Analogy
 
 
-A **generalized capture** is like packing a **custom travel bag** — not just grabbing what's on the table, but building exactly what you need right there in the suitcase. Need a move-only drone? Pack it directly. Need to compute a value first? Do the math while packing.
+A **generalized capture** is like packing a **custom travel bag** â€” not just grabbing what's on the table, but building exactly what you need right there in the suitcase. Need a move-only drone? Pack it directly. Need to compute a value first? Do the math while packing.
 
 ### Syntax
 
@@ -749,7 +749,7 @@ The `expression` is evaluated once when the lambda is created, and the result is
 int main() {
     std::unique_ptr<int> ptr = std::make_unique<int>(42);
 
-    // C++11: impossible — unique_ptr is move-only, can't capture by value or ref safely
+    // C++11: impossible â€” unique_ptr is move-only, can't capture by value or ref safely
     // C++14: initialized capture moves ptr into the closure
     auto consumer = [ptr = std::move(ptr)]() {
         std::cout << "Owned value: " << *ptr << "\n";
@@ -796,7 +796,7 @@ int main() {
         return base + x * factor;
     };
 
-    // Change factor — the lambda already captured its own copies
+    // Change factor â€” the lambda already captured its own copies
     factor = 100;
     std::cout << "calculator(5) = " << calculator(5) << "\n";
     // compute_base(3) = 342, base = 342, captured factor = 3
@@ -829,9 +829,9 @@ auto lambda = [result = [] { /* complex init */ return 42; }()] {
 int main() {
     std::vector<int> big_data(10'000'000, 42);
     
-    // Move the entire vector into the lambda — zero copy
+    // Move the entire vector into the lambda â€” zero copy
     auto process = [data = std::move(big_data)]() {
-        return data.size();  // fine — data owned by lambda
+        return data.size();  // fine â€” data owned by lambda
     };
     // big_data is now empty
     
@@ -872,8 +872,8 @@ int result = func();
 
 | Step | Instruction | Closure `x` | Closure `y` | Return |
 |------|-------------|-------------|-------------|--------|
-| 1 | Lambda created, init `x = 5`, `y = 10` | 5 | 10 | — |
-| 2 | `func()` — `x + y` = 5 + 10 = 15 | 5 | 10 | 15 |
+| 1 | Lambda created, init `x = 5`, `y = 10` | 5 | 10 | â€” |
+| 2 | `func()` â€” `x + y` = 5 + 10 = 15 | 5 | 10 | 15 |
 
 ### Complexity
 
@@ -890,7 +890,7 @@ int result = func();
 ### Real-World Analogy
 
 
-A generic lambda is like a **universal adapter plug** — one plug works in any country's socket. The plug doesn't need to know the voltage beforehand; it adapts to whatever it's plugged into.
+A generic lambda is like a **universal adapter plug** â€” one plug works in any country's socket. The plug doesn't need to know the voltage beforehand; it adapts to whatever it's plugged into.
 
 ### Syntax
 
@@ -917,7 +917,7 @@ struct __generic_lambda {
 #include <algorithm>
 
 int main() {
-    // Generic adder — works with any type that has operator+
+    // Generic adder â€” works with any type that has operator+
     auto add = [](auto a, auto b) { return a + b; };
 
     std::cout << "int + int:       " << add(3, 4) << "\n";
@@ -925,7 +925,7 @@ int main() {
     std::cout << "string + string: " << add(std::string("Hello, "), std::string("World!")) << "\n";
     std::cout << "char + char:     " << add('A', 1) << "\n";  // 'A' + 1 = 'B'
 
-    // Mixing types — each auto deduces independently
+    // Mixing types â€” each auto deduces independently
     std::cout << "mix (3 + 4.5):   " << add(3, 4.5) << "\n";  // double
 
     return 0;
@@ -964,7 +964,7 @@ int main() {
     std::cout << "\nwords:    "; std::for_each(words.begin(), words.end(), printer);
     std::cout << "\n";
 
-    // Generic comparator — works on any comparable type
+    // Generic comparator â€” works on any comparable type
     auto sorter = [](const auto& a, const auto& b) { return a < b; };
 
     std::sort(integers.begin(), integers.end(), sorter);
@@ -1048,7 +1048,7 @@ auto twice = [](auto x) { return x + x; };
 
 twice(5);       // instantiation: int operator()(int)
 twice(3.14);    // instantiation: double operator()(double)
-twice("Hi");    // instantiation: const char* operator()(const char*) — pointer addition!
+twice("Hi");    // instantiation: const char* operator()(const char*) â€” pointer addition!
 ```
 
 | Call | Template `T` | Body `x + x` | Result |
@@ -1084,12 +1084,12 @@ forwarder = [](auto&& x) -> decltype(auto) {
 ### Real-World Analogy
 
 
-A constexpr lambda is like a **pre-calculated multiplication table** — you compute all the values once at compile time, then use them instantly at runtime with zero calculation cost. It's the difference between a chef who prepares ingredients *before* the dinner rush versus one who chops vegetables for every single order.
+A constexpr lambda is like a **pre-calculated multiplication table** â€” you compute all the values once at compile time, then use them instantly at runtime with zero calculation cost. It's the difference between a chef who prepares ingredients *before* the dinner rush versus one who chops vegetables for every single order.
 
 ### Core Concept
 
 
-In C++17, lambdas can be `constexpr` — their body can be evaluated at compile time if all captured variables are constant expressions and the body meets constexpr requirements.
+In C++17, lambdas can be `constexpr` â€” their body can be evaluated at compile time if all captured variables are constant expressions and the body meets constexpr requirements.
 
 ```cpp
 // C++17: explicit constexpr lambda
@@ -1100,7 +1100,7 @@ constexpr int result = square(5);  // evaluated at compile time
 static_assert(result == 25);
 ```
 
-**C++20 improvement:** Lambdas are implicitly constexpr if they satisfy constexpr requirements — no need for the `constexpr` keyword.
+**C++20 improvement:** Lambdas are implicitly constexpr if they satisfy constexpr requirements â€” no need for the `constexpr` keyword.
 
 ### Example 1: Compile-Time Computation
 
@@ -1176,12 +1176,12 @@ int main() {
 int main() {
     constexpr int multiplier = 10;
     
-    // Capture a constant expression — lambda can be constexpr
+    // Capture a constant expression â€” lambda can be constexpr
     constexpr auto scale = [multiplier](int x) {
         return x * multiplier;
     };
     
-    constexpr int scaled = scale(5);  // 50 — compile time
+    constexpr int scaled = scale(5);  // 50 â€” compile time
     static_assert(scaled == 50);
     
     std::cout << scaled << "\n";
@@ -1194,9 +1194,9 @@ int main() {
 
 | Benefit | Explanation |
 |---------|-------------|
-| **Zero runtime cost** | Computed during compilation — no CPU cycles at runtime |
+| **Zero runtime cost** | Computed during compilation â€” no CPU cycles at runtime |
 | **Template arguments** | Result can be used as non-type template parameters |
-| **static_assert** | Verify logic at compile time — catch bugs before running |
+| **static_assert** | Verify logic at compile time â€” catch bugs before running |
 | **Optimization enabler** | Compiler can constant-fold and inline aggressively |
 | **No ODR issues** | Compile-time evaluation avoids linkage problems |
 | **Smaller binary** | No generated code for the computation path |
@@ -1244,7 +1244,7 @@ Result: 5050, computed entirely at compile time. No runtime loop.
 ### Real-World Analogy
 
 
-A **captureless lambda** converting to a function pointer is like a **business card** — it's lightweight, universally accepted, and carries no extra baggage. A lambda **with captures** is like a full resume folder — it has more context, but you can't just slip it into a standard card holder.
+A **captureless lambda** converting to a function pointer is like a **business card** â€” it's lightweight, universally accepted, and carries no extra baggage. A lambda **with captures** is like a full resume folder â€” it has more context, but you can't just slip it into a standard card holder.
 
 ### The Rule
 
@@ -1279,7 +1279,7 @@ int main() {
     int arr[] = {5, 3, 1, 4, 2};
     constexpr size_t n = sizeof(arr) / sizeof(arr[0]);
 
-    // Lambda as function pointer — clean and local
+    // Lambda as function pointer â€” clean and local
     qsort(arr, n, sizeof(int),
         [](const void* a, const void* b) -> int {
             return *static_cast<const int*>(a) - *static_cast<const int*>(b);
@@ -1314,7 +1314,7 @@ int main() {
 
 ### Example 3: Function Pointer via + Operator Trick
 
-A lesser-known trick — prefix `+` forces conversion to function pointer:
+A lesser-known trick â€” prefix `+` forces conversion to function pointer:
 
 ```cpp
 #include <iostream>
@@ -1337,20 +1337,20 @@ int main() {
 }
 ```
 
-### Lambda vs Function Pointer vs std::function — Comparison Table
+### Lambda vs Function Pointer vs std::function â€” Comparison Table
 
 
 | Aspect | Captureless Lambda (as fn ptr) | C-style Function Pointer | `std::function` |
 |--------|-------------------------------|-------------------------|-----------------|
-| **Size** | 1 byte (empty closure) + fn ptr | 8 bytes (pointer) | 32–64 bytes (type-erased storage) |
-| **Capture state** | ❌ No | ❌ No | ✅ Yes |
+| **Size** | 1 byte (empty closure) + fn ptr | 8 bytes (pointer) | 32â€“64 bytes (type-erased storage) |
+| **Capture state** | âŒ No | âŒ No | âœ… Yes |
 | **Allocation** | None | None | May heap-allocate for large functors |
 | **Virtual dispatch** | None | Direct call | Type erasure + indirect call |
-| **Inline-able** | ✅ Yes | ❌ No (unless whole-program) | ❌ Rarely |
-| **Template compatible** | ✅ Yes | ❌ No | ✅ Yes |
-| **C API compatible** | ✅ Yes | ✅ Yes | ❌ No |
+| **Inline-able** | âœ… Yes | âŒ No (unless whole-program) | âŒ Rarely |
+| **Template compatible** | âœ… Yes | âŒ No | âœ… Yes |
+| **C API compatible** | âœ… Yes | âœ… Yes | âŒ No |
 | **Conversion cost** | Zero | Zero | Can allocate + copy captures |
-| **Move-only captures** | ❌ N/A | ❌ N/A | ✅ Yes (C++26) |
+| **Move-only captures** | âŒ N/A | âŒ N/A | âœ… Yes (C++26) |
 | **When to use** | Callbacks, C interop | Legacy C code | Type-erased storage, queues |
 
 ### Performance Hierarchy
@@ -1375,7 +1375,7 @@ apply(5, double_it);
 |------|-------------|-------|
 | 1 | Compiler sees `[](int x) { return x * 2; }` | Closure type generated |
 | 2 | Compiler detects empty capture list | Adds `operator auto(*)()` conversion |
-| 3 | `apply(5, double_it)` — implicit conversion | `double_it` → function pointer |
+| 3 | `apply(5, double_it)` â€” implicit conversion | `double_it` â†’ function pointer |
 | 4 | `apply` calls `op(5)` | `5 * 2 = 10` printed |
 
 ## 14.9 IIFE (Immediately Invoked Function Expression)
@@ -1383,7 +1383,7 @@ apply(5, double_it);
 ### Real-World Analogy
 
 
-An IIFE is like a **self-destructing message** — it's created, executes its purpose, and disappears, leaving only the result behind. It never lingers, never gets reused, never clutters the namespace.
+An IIFE is like a **self-destructing message** â€” it's created, executes its purpose, and disappears, leaving only the result behind. It never lingers, never gets reused, never clutters the namespace.
 
 ### Syntax
 
@@ -1406,14 +1406,14 @@ auto result = [](params) -> return_type {
 int main() {
     const std::vector<int> data = {10, 20, 30, 40, 50};
 
-    // Without IIFE — need a separate function or mutable variable
+    // Without IIFE â€” need a separate function or mutable variable
     int sum1 = 0;
     double avg1;
     for (int x : data) sum1 += x;
     avg1 = static_cast<double>(sum1) / data.size();
     // sum1 is now useless but still in scope!
 
-    // With IIFE — clean, const, no pollution
+    // With IIFE â€” clean, const, no pollution
     const double average = [&data]() -> double {
         int sum = std::accumulate(data.begin(), data.end(), 0);
         return static_cast<double>(sum) / data.size();
@@ -1530,11 +1530,11 @@ const int result = [](int a, int b) {
 
 | Step | Instruction | `a` | `b` | `sum` | `product` | Return |
 |------|-------------|-----|-----|-------|-----------|--------|
-| 1 | Lambda created with params (5, 3) | 5 | 3 | — | — | — |
-| 2 | `sum = a + b` = 5 + 3 | 5 | 3 | 8 | — | — |
-| 3 | `product = a * b` = 5 * 3 | 5 | 3 | 8 | 15 | — |
+| 1 | Lambda created with params (5, 3) | 5 | 3 | â€” | â€” | â€” |
+| 2 | `sum = a + b` = 5 + 3 | 5 | 3 | 8 | â€” | â€” |
+| 3 | `product = a * b` = 5 * 3 | 5 | 3 | 8 | 15 | â€” |
 | 4 | `return product - sum` = 15 - 8 | 5 | 3 | 8 | 15 | 7 |
-| 5 | `result` = 7 | — | — | — | — | 7 |
+| 5 | `result` = 7 | â€” | â€” | â€” | â€” | 7 |
 
 ### IIFE Without Parameters: Clearing a vector
 
@@ -1552,7 +1552,7 @@ const auto cleared = [v = std::move(v)] { return v; }();
 ### Real-World Analogy
 
 
-Return type deduction is like a **self-adjusting measuring cup** — you don't decide the unit (cups, ml, oz); the cup figures out what unit makes sense based on what you pour in.
+Return type deduction is like a **self-adjusting measuring cup** â€” you don't decide the unit (cups, ml, oz); the cup figures out what unit makes sense based on what you pour in.
 
 ### How Deduction Works
 
@@ -1575,7 +1575,7 @@ auto lambda3 = [](int x) {                         // returns double (promotion)
 // 1. Multiple return types differ
 auto bad = [](bool flag, int x) {
     if (flag) return x;           // int
-    else      return 3.14;        // double — COMPILE ERROR
+    else      return 3.14;        // double â€” COMPILE ERROR
 };
 
 auto good = [](bool flag, int x) -> double {
@@ -1583,7 +1583,7 @@ auto good = [](bool flag, int x) -> double {
     else      return 3.14;
 };
 
-// 2. No return statement — returns void
+// 2. No return statement â€” returns void
 auto logger = [](const std::string& msg) {
     std::cout << msg << "\n";  // deduced as void
 };
@@ -1593,7 +1593,7 @@ auto init = []() -> std::vector<int> {
     return {1, 2, 3};  // MUST specify return type
 };
 
-// 4. Recursive lambda — MUST specify return type
+// 4. Recursive lambda â€” MUST specify return type
 auto factorial = [](int n) -> long long {
     return n <= 1 ? 1 : n * factorial(n - 1);
 };
@@ -1617,7 +1617,7 @@ int main() {
     // Deduced as const reference (decltype(auto))
     const std::vector<int> vec = {1, 2, 3};
     auto f3 = [&vec]() -> decltype(auto) { return vec[0]; };
-    // Returns const int& — no copy
+    // Returns const int& â€” no copy
 
     std::cout << "f1(5): " << f1(5) << "\n";
     std::cout << "f2(5): " << f2(5) << "\n";
@@ -1648,7 +1648,7 @@ f2(5): 5
 ### Real-World Analogy
 
 
-Lambdas with STL algorithms are like **interchangeable tool bits for a power drill**. The drill (STL algorithm) provides the motor and mechanism; the bit (lambda) determines the exact shape and cut. You can swap bits to drill, screw, grind, or polish → all using the same drill.
+Lambdas with STL algorithms are like **interchangeable tool bits for a power drill**. The drill (STL algorithm) provides the motor and mechanism; the bit (lambda) determines the exact shape and cut. You can swap bits to drill, screw, grind, or polish â†’ all using the same drill.
 
 ### Common Patterns Matrix
 
@@ -1769,7 +1769,7 @@ int main() {
     std::cout << "Any >= 95:  " << (any_excellent ? "yes" : "no") << "\n";
     std::cout << "None 100:   " << (none_perfect ? "yes" : "no") << "\n";
 
-    // remove_if with erase → erase-remove idiom
+    // remove_if with erase â†’ erase-remove idiom
     scores.erase(
         std::remove_if(scores.begin(), scores.end(),
             [](int s) { return s < 60; }),

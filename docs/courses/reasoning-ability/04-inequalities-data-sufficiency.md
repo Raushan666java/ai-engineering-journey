@@ -1,11 +1,11 @@
-# Inequalities and Data Sufficiency
+﻿# Inequalities and Data Sufficiency
 
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-- Solve direct inequalities using the transitive property (A > B > C → A > C)
+- Solve direct inequalities using the transitive property (A > B > C â†’ A > C)
 - Solve coded inequalities where symbols represent mathematical relations
-- Handle "≥" and "≤" cases in chain inequalities
+- Handle "â‰¥" and "â‰¤" cases in chain inequalities
 - Determine which conclusions "definitely follow" in inequality questions
 - Solve data sufficiency questions by determining the minimum information needed
 - Apply the "unique solution" test for data sufficiency
@@ -17,16 +17,16 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/reasoning-ability/04-inequalities-data-sufficiency/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/reasoning-ability/04-inequalities-data-sufficiency/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/reasoning-ability/04-inequalities-data-sufficiency/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/reasoning-ability/04-inequalities-data-sufficiency/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/reasoning-ability/04-inequalities-data-sufficiency/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/reasoning-ability/04-inequalities-data-sufficiency/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/reasoning-ability/04-inequalities-data-sufficiency/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/reasoning-ability/04-inequalities-data-sufficiency/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/reasoning-ability/04-inequalities-data-sufficiency/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/reasoning-ability/04-inequalities-data-sufficiency/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/reasoning-ability/04-inequalities-data-sufficiency/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/reasoning-ability/04-inequalities-data-sufficiency/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -38,7 +38,7 @@ By the end of this chapter, you will be able to:
 
 ### 1. Importance of Inequalities and Data Sufficiency in IBPS SO IT Officer Prelims
 
-Inequalities contribute approximately 4–5 questions in the IBPS SO Reasoning Ability section. Data sufficiency contributes another 4–5 questions. Together, they account for about 8–10 questions out of 25. Both topics are considered "scoring" because they require systematic application of rules rather than creative problem-solving.
+Inequalities contribute approximately 4â€“5 questions in the IBPS SO Reasoning Ability section. Data sufficiency contributes another 4â€“5 questions. Together, they account for about 8â€“10 questions out of 25. Both topics are considered "scoring" because they require systematic application of rules rather than creative problem-solving.
 
 ### 2. Direct Inequalities
 
@@ -49,47 +49,47 @@ Inequalities contribute approximately 4–5 questions in the IBPS SO Reasoning A
 | > | Greater than | A > B means A is greater than B |
 | < | Less than | A < B means A is less than B |
 | = | Equal to | A = B means A is equal to B |
-| ≥ | Greater than or equal to | A ≥ B means A ≥ B (A is at least as much as B) |
-| ≤ | Less than or equal to | A ≤ B means A is at most B |
-| ≠ | Not equal to | A ≠ B means A is not equal to B |
+| â‰¥ | Greater than or equal to | A â‰¥ B means A â‰¥ B (A is at least as much as B) |
+| â‰¤ | Less than or equal to | A â‰¤ B means A is at most B |
+| â‰  | Not equal to | A â‰  B means A is not equal to B |
 
 #### 2.2 Rules for Combining Inequalities
 
 **Rule 1: Transitive Property (Same Direction)**
 If A > B and B > C, then A > C.
 If A < B and B < C, then A < C.
-If A ≥ B and B ≥ C, then A ≥ C.
-If A ≤ B and B ≤ C, then A ≤ C.
+If A â‰¥ B and B â‰¥ C, then A â‰¥ C.
+If A â‰¤ B and B â‰¤ C, then A â‰¤ C.
 
 **Rule 2: Combining Different Directions**
 If A > B and B < C, we CANNOT determine the relationship between A and C.
 If A < B and B > C, we CANNOT determine the relationship between A and C.
 
 **Rule 3: Equality in the Chain**
-If A ≥ B and B > C, then A > C (since the ≥ resolves to > in the chain).
-If A > B and B ≥ C, then A > C.
-If A ≥ B and B ≥ C, then A ≥ C.
+If A â‰¥ B and B > C, then A > C (since the â‰¥ resolves to > in the chain).
+If A > B and B â‰¥ C, then A > C.
+If A â‰¥ B and B â‰¥ C, then A â‰¥ C.
 
-**Rule 4: Combining with ≠**
-If A ≥ B and B ≠ C, we CANNOT determine the relationship between A and C.
-If A > B and B ≠ C, we CANNOT determine the relationship between A and C.
+**Rule 4: Combining with â‰ **
+If A â‰¥ B and B â‰  C, we CANNOT determine the relationship between A and C.
+If A > B and B â‰  C, we CANNOT determine the relationship between A and C.
 
 #### 2.3 Step-by-Step Method for Direct Inequalities
 
 1. Write all inequalities in a single chain from left to right
 2. Ensure all inequality symbols are in the same direction (e.g., all > or all <)
 3. Apply the transitive property to combine adjacent terms
-4. For "≥" or "≤" at the end of a chain, check if the conclusion uses the strict or non-strict form
+4. For "â‰¥" or "â‰¤" at the end of a chain, check if the conclusion uses the strict or non-strict form
 5. A conclusion "definitely follows" only if it holds true in ALL possible cases
 
 **Example Chain:**
 ```
-Given: A > B, B ≥ C, C = D, D < E
-Chain: A > B ≥ C = D < E
-Conclusion: A > C? → Yes (A > B ≥ C → A > C)
-Conclusion: A > D? → Yes (A > B ≥ C = D → A > D)
-Conclusion: A > E? → Cannot be determined (chain breaks at D < E — opposite direction)
-Conclusion: B ≥ D? → Yes (B ≥ C = D → B ≥ D)
+Given: A > B, B â‰¥ C, C = D, D < E
+Chain: A > B â‰¥ C = D < E
+Conclusion: A > C? â†’ Yes (A > B â‰¥ C â†’ A > C)
+Conclusion: A > D? â†’ Yes (A > B â‰¥ C = D â†’ A > D)
+Conclusion: A > E? â†’ Cannot be determined (chain breaks at D < E â€” opposite direction)
+Conclusion: B â‰¥ D? â†’ Yes (B â‰¥ C = D â†’ B â‰¥ D)
 ```
 
 #### 2.4 Special Cases in Direct Inequalities
@@ -111,13 +111,13 @@ In some exams (not common in IBPS SO), if neither conclusion follows but they fo
 |-------|------------|--------|
 | A > B > C | A > C | Yes |
 | A > B > C | C < A | Yes |
-| A ≥ B ≥ C | A ≥ C | Yes |
-| A ≥ B > C | A > C | Yes |
-| A > B ≥ C | A > C | Yes |
+| A â‰¥ B â‰¥ C | A â‰¥ C | Yes |
+| A â‰¥ B > C | A > C | Yes |
+| A > B â‰¥ C | A > C | Yes |
 | A > B < C | A > C | No |
 | A < B > C | A > C | No |
 | A > B = C | A > C | Yes |
-| A ≥ B = C | A ≥ C | Yes |
+| A â‰¥ B = C | A â‰¥ C | Yes |
 
 ### 3. Coded Inequalities
 
@@ -130,12 +130,12 @@ In coded inequalities, symbols (like @, #, $, %, &) are used to represent mathem
 In the following questions, the symbols @, #, $, %, & are used with the following meanings:
 P @ Q means P > Q
 P # Q means P < Q
-P $ Q means P ≥ Q
-P % Q means P ≤ Q
+P $ Q means P â‰¥ Q
+P % Q means P â‰¤ Q
 P & Q means P = Q
 ```
 
-Then a statement like "A @ B, B $ C, C & D" translates to "A > B ≥ C = D."
+Then a statement like "A @ B, B $ C, C & D" translates to "A > B â‰¥ C = D."
 
 **Approach for Coded Inequalities:**
 1. Rewrite the coded statement using standard mathematical symbols
@@ -148,13 +148,13 @@ Different exams use different symbols. The most common mappings are:
 
 | Pattern | @ | # | $ | % | & |
 |----------|---|---|---|---|---|
-| Pattern A | > | < | ≥ | ≤ | = |
-| Pattern B | < | > | ≤ | ≥ | = |
-| Pattern C | ≥ | ≤ | > | < | = |
-| Pattern D | ≤ | ≥ | < | > | = |
-| Pattern E | = | > | < | ≥ | ≤ |
+| Pattern A | > | < | â‰¥ | â‰¤ | = |
+| Pattern B | < | > | â‰¤ | â‰¥ | = |
+| Pattern C | â‰¥ | â‰¤ | > | < | = |
+| Pattern D | â‰¤ | â‰¥ | < | > | = |
+| Pattern E | = | > | < | â‰¥ | â‰¤ |
 
-Always read the legend provided in the question carefully. Do not assume a mapping based on previous questions — the mapping may change in the same exam.
+Always read the legend provided in the question carefully. Do not assume a mapping based on previous questions â€” the mapping may change in the same exam.
 
 #### 3.3 Step-by-Step Method for Coded Inequalities
 
@@ -168,33 +168,33 @@ Always read the legend provided in the question carefully. Do not assume a mappi
 ```
 A @ B means A > B
 B # C means B < C  
-C $ D means C ≥ D
+C $ D means C â‰¥ D
 D & E means D = E
 
 Statements: A @ B, B # C, C $ D, D & E
-Conclusions: I. A > C  II. E ≤ C
+Conclusions: I. A > C  II. E â‰¤ C
 
-Translation: A > B, B < C, C ≥ D, D = E
-Chain: A > B < C ≥ D = E
+Translation: A > B, B < C, C â‰¥ D, D = E
+Chain: A > B < C â‰¥ D = E
 
-Conclusion I: A > C? → Chain breaks at B < C. Cannot determine. ✗
-Conclusion II: E ≤ C? → E = D ≤ C → E ≤ C ✓
+Conclusion I: A > C? â†’ Chain breaks at B < C. Cannot determine. âœ—
+Conclusion II: E â‰¤ C? â†’ E = D â‰¤ C â†’ E â‰¤ C âœ“
 ```
 
-**Important Note:** When the chain changes direction (from > to <), the transitive property cannot be applied across the direction change. The chain "A > B < C" has B as a "direction change point" — we cannot relate A and C.
+**Important Note:** When the chain changes direction (from > to <), the transitive property cannot be applied across the direction change. The chain "A > B < C" has B as a "direction change point" â€” we cannot relate A and C.
 
-#### 3.4 Handling ≥ and ≤ in Coded Inequalities
+#### 3.4 Handling â‰¥ and â‰¤ in Coded Inequalities
 
-When the chain contains ≥ or ≤, be careful about strict vs. non-strict inequalities:
+When the chain contains â‰¥ or â‰¤, be careful about strict vs. non-strict inequalities:
 
 | Chain Segment | Combined Result |
 |---------------|----------------|
-| A > B ≥ C | A > C (not A ≥ C) |
-| A ≥ B > C | A > C |
-| A ≥ B ≥ C | A ≥ C |
-| A < B ≤ C | A < C |
-| A ≤ B < C | A < C |
-| A ≤ B ≤ C | A ≤ C |
+| A > B â‰¥ C | A > C (not A â‰¥ C) |
+| A â‰¥ B > C | A > C |
+| A â‰¥ B â‰¥ C | A â‰¥ C |
+| A < B â‰¤ C | A < C |
+| A â‰¤ B < C | A < C |
+| A â‰¤ B â‰¤ C | A â‰¤ C |
 
 #### 3.5 Special Cases in Coded Inequalities
 
@@ -215,8 +215,8 @@ flowchart TD
     A[Read Coded Statement] --> B[Translate Symbols to Math]
     B --> C[Build Single Direction Chain]
     C --> D{Chain Monotonic?}
-    D -->|Yes - All > or ≥| E[Apply Transitive Property]
-    D -->|Yes - All < or ≤| E
+    D -->|Yes - All > or â‰¥| E[Apply Transitive Property]
+    D -->|Yes - All < or â‰¤| E
     D -->|No - Direction Change| F[Chain Breaks at Change Point]
     E --> G[Derive Direct Relations]
     F --> H[Relations Across Break Cannot Be Determined]
@@ -258,7 +258,7 @@ The question asks for a specific numerical value (e.g., age, rank, weight, numbe
 
 Analysis: 
 - Alone I: A = B + 5. B is unknown. Not sufficient.
-- Alone II: B = C − 10, C = 30 → B = 20. A not mentioned. Not sufficient.
+- Alone II: B = C âˆ’ 10, C = 30 â†’ B = 20. A not mentioned. Not sufficient.
 - Together: A = B + 5 = 20 + 5 = 25. Sufficient.
 - Answer: Both statements together are sufficient.
 
@@ -272,7 +272,7 @@ The question asks for a binary answer (Is X > Y? Is A the tallest?).
 Analysis:
 - Alone I: A > C > D. No mention of B. Not sufficient.
 - Alone II: B < C. No mention of A. Not sufficient.
-- Together: A > C and B < C → A > C > B → A > B. Yes. Sufficient.
+- Together: A > C and B < C â†’ A > C > B â†’ A > B. Yes. Sufficient.
 - Answer: Both statements together are sufficient.
 
 **Type 3: Relationship Questions**
@@ -285,7 +285,7 @@ The question asks about a relationship between two entities (e.g., blood relatio
 Analysis:
 - Alone I: A is son of C. No info about B. Not sufficient.
 - Alone II: B is daughter of E, E is sister of C. A not mentioned. Not sufficient.
-- Together: C is brother of D, E is sister of C → C and E are siblings. A is son of C. B is daughter of E. So A and B are cousins.
+- Together: C is brother of D, E is sister of C â†’ C and E are siblings. A is son of C. B is daughter of E. So A and B are cousins.
 - Answer: Both statements together are sufficient.
 
 #### 4.4 Systematic Approach for Data Sufficiency
@@ -338,7 +338,7 @@ flowchart TD
 - II. R ranks 8th from the top
 
 Analysis:
-- Alone I: S is 12th from bottom → S is 29th from top (40 − 12 + 1 = 29). R is 5 ranks above S → R is 24th from top. Sufficient.
+- Alone I: S is 12th from bottom â†’ S is 29th from top (40 âˆ’ 12 + 1 = 29). R is 5 ranks above S â†’ R is 24th from top. Sufficient.
 - Alone II: R is 8th from top. Sufficient.
 - Answer: Either I or II alone is sufficient.
 
@@ -370,8 +370,8 @@ Analysis:
 
 Analysis:
 - Alone I: F + S = 50. Infinite solutions. Not sufficient.
-- Alone II: F − S = 30. Infinite solutions. Not sufficient.
-- Together: F + S = 50, F − S = 30. Solving: F = 40, S = 10. Sufficient.
+- Alone II: F âˆ’ S = 30. Infinite solutions. Not sufficient.
+- Together: F + S = 50, F âˆ’ S = 30. Solving: F = 40, S = 10. Sufficient.
 - Answer: Both together are sufficient.
 
 **5. Comparison Questions**
@@ -391,22 +391,22 @@ Analysis:
 The data is sufficient only if it yields a UNIQUE answer. If multiple answers are possible, the data is NOT sufficient.
 
 **Incorrect Example:** What is the value of X?
-- I. X² = 25
-- X could be +5 or −5. Not a unique answer. Not sufficient.
+- I. XÂ² = 25
+- X could be +5 or âˆ’5. Not a unique answer. Not sufficient.
 
 **Correct Example:** What is the value of X?
-- I. X² = 25 and X > 0
+- I. XÂ² = 25 and X > 0
 - X = +5. Unique answer. Sufficient.
 
-**Rule 2: Yes/No Questions — Definite Answer Required**
+**Rule 2: Yes/No Questions â€” Definite Answer Required**
 For yes/no questions, a statement is sufficient if it gives a DEFINITE yes or a DEFINITE no.
 
 **Example:** Is A greater than B?
-- I. A − B = 10
-- A − B = 10 > 0 → A > B. Yes. Sufficient.
+- I. A âˆ’ B = 10
+- A âˆ’ B = 10 > 0 â†’ A > B. Yes. Sufficient.
 
 - I. A > C, C > B
-- Chain: A > C > B → A > B. Yes. Sufficient.
+- Chain: A > C > B â†’ A > B. Yes. Sufficient.
 
 **Rule 3: Do NOT Assume Information Not Given**
 Assume that each statement contains ONLY the information provided. Do not infer additional information.
@@ -461,22 +461,22 @@ In IBPS SO data sufficiency, the two statements will never contradict each other
 
 ```
 Question Type: Value
-- Single equation, 1 variable → Sufficient
-- Single equation, 2 variables → Not sufficient
-- Two independent equations, 2 variables → Sufficient
-- More variables than equations → Not sufficient
+- Single equation, 1 variable â†’ Sufficient
+- Single equation, 2 variables â†’ Not sufficient
+- Two independent equations, 2 variables â†’ Sufficient
+- More variables than equations â†’ Not sufficient
 
 Question Type: Yes/No  
-- The statement forces one consistent answer → Sufficient
-- The statement allows both Yes and No → Not sufficient
+- The statement forces one consistent answer â†’ Sufficient
+- The statement allows both Yes and No â†’ Not sufficient
 
 Question Type: Relationship
-- The statement links all relevant entities → Sufficient
-- The statement leaves a gap in the chain → Not sufficient
+- The statement links all relevant entities â†’ Sufficient
+- The statement leaves a gap in the chain â†’ Not sufficient
 
 Question Type: Comparison
-- The statement gives a complete order → Sufficient
-- The statement gives a partial order → Not sufficient
+- The statement gives a complete order â†’ Sufficient
+- The statement gives a partial order â†’ Not sufficient
 ```
 
 #### 4.10 Practice Strategy
@@ -485,7 +485,7 @@ Question Type: Comparison
 - For inequalities, practice writing the chain quickly without re-reading the statements
 - For data sufficiency, practice identifying when two variables have a unique solution
 - Time yourself: spend maximum 1 minute per inequality question and 1.5 minutes per data sufficiency question
-- Analyze mistakes — were they due to misreading, wrong transitive application, or insufficient checking?
+- Analyze mistakes â€” were they due to misreading, wrong transitive application, or insufficient checking?
 
 ---
 
@@ -503,38 +503,38 @@ Step 1: Arrange in a chain.
 A > B > C < D > E
 And F < B.
 
-Step 2: Check conclusion I — A > C.
-A > B > C → A > C. ✓ (Follows directly through transitive property)
+Step 2: Check conclusion I â€” A > C.
+A > B > C â†’ A > C. âœ“ (Follows directly through transitive property)
 
-Step 3: Check conclusion II — D > F.
-F < B. B > C < D. We know F < B, but we don't know F's relation to D. B > C and C < D means B and D cannot be related. So F and D cannot be related. ✗ (Cannot be determined)
+Step 3: Check conclusion II â€” D > F.
+F < B. B > C < D. We know F < B, but we don't know F's relation to D. B > C and C < D means B and D cannot be related. So F and D cannot be related. âœ— (Cannot be determined)
 
-Step 4: Check conclusion III — E < A.
-E < D. C < D. A > B > C < D. A is greater than C, C is less than D, D is greater than E. There is no direct chain from A to E. ✗ (Cannot be determined)
+Step 4: Check conclusion III â€” E < A.
+E < D. C < D. A > B > C < D. A is greater than C, C is less than D, D is greater than E. There is no direct chain from A to E. âœ— (Cannot be determined)
 
 **Answer:** Only conclusion I follows.
 
 ---
 
-### Example 2: Direct Inequality with ≥ and ≤
+### Example 2: Direct Inequality with â‰¥ and â‰¤
 
 **Question:**
-Statements: P ≥ Q, R < S, Q ≥ R, S ≤ T
-Conclusions: I. P ≥ R  II. P ≥ S  III. R < T
+Statements: P â‰¥ Q, R < S, Q â‰¥ R, S â‰¤ T
+Conclusions: I. P â‰¥ R  II. P â‰¥ S  III. R < T
 
 **Solution:**
 
 Step 1: Arrange in a chain.
-P ≥ Q ≥ R < S ≤ T
+P â‰¥ Q â‰¥ R < S â‰¤ T
 
-Step 2: Check conclusion I — P ≥ R.
-P ≥ Q ≥ R → P ≥ R. ✓ (Transitive property with ≥)
+Step 2: Check conclusion I â€” P â‰¥ R.
+P â‰¥ Q â‰¥ R â†’ P â‰¥ R. âœ“ (Transitive property with â‰¥)
 
-Step 3: Check conclusion II — P ≥ S.
-P ≥ Q ≥ R < S. Chain changes direction at R (≥ R < S). P and S cannot be related. ✗
+Step 3: Check conclusion II â€” P â‰¥ S.
+P â‰¥ Q â‰¥ R < S. Chain changes direction at R (â‰¥ R < S). P and S cannot be related. âœ—
 
-Step 4: Check conclusion III — R < T.
-R < S ≤ T → R < T. ✓
+Step 4: Check conclusion III â€” R < T.
+R < S â‰¤ T â†’ R < T. âœ“
 
 **Answer:** Conclusions I and III follow.
 
@@ -546,9 +546,9 @@ R < S ≤ T → R < T. ✓
 In the following question, the symbols @, #, $, %, & are used with the following meanings:
 - P @ Q means P > Q
 - P # Q means P = Q
-- P $ Q means P ≥ Q
+- P $ Q means P â‰¥ Q
 - P % Q means P < Q
-- P & Q means P ≤ Q
+- P & Q means P â‰¤ Q
 
 Statements: A @ B, B # C, C $ D, D % E, E & F
 Conclusions: I. A $ D  II. A # F  III. F $ B
@@ -556,29 +556,29 @@ Conclusions: I. A $ D  II. A # F  III. F $ B
 **Solution:**
 
 Step 1: Translate.
-A @ B → A > B
-B # C → B = C
-C $ D → C ≥ D
-D % E → D < E
-E & F → E ≤ F
+A @ B â†’ A > B
+B # C â†’ B = C
+C $ D â†’ C â‰¥ D
+D % E â†’ D < E
+E & F â†’ E â‰¤ F
 
 Step 2: Build chain.
-A > B = C ≥ D < E ≤ F
+A > B = C â‰¥ D < E â‰¤ F
 
-Step 3: Check conclusion I — A $ D means A ≥ D.
-A > B = C ≥ D → A > D. A ≥ D is true since A > D implies A ≥ D. ✓
+Step 3: Check conclusion I â€” A $ D means A â‰¥ D.
+A > B = C â‰¥ D â†’ A > D. A â‰¥ D is true since A > D implies A â‰¥ D. âœ“
 
-Step 4: Check conclusion II — A # F means A = F.
-A > B = C ≥ D < E ≤ F. Direction changes at D. A and F cannot be related. ✗
+Step 4: Check conclusion II â€” A # F means A = F.
+A > B = C â‰¥ D < E â‰¤ F. Direction changes at D. A and F cannot be related. âœ—
 
-Step 5: Check conclusion III — F $ B means F ≥ B.
-A > B = C ≥ D < E ≤ F. Direction change at D. F and B are on opposite sides of the break. Cannot be determined. ✗
+Step 5: Check conclusion III â€” F $ B means F â‰¥ B.
+A > B = C â‰¥ D < E â‰¤ F. Direction change at D. F and B are on opposite sides of the break. Cannot be determined. âœ—
 
 **Answer:** Only conclusion I follows.
 
 ---
 
-### Example 4: Data Sufficiency — Value Question
+### Example 4: Data Sufficiency â€” Value Question
 
 **Question:**
 What is the total weight of A, B, and C together?
@@ -588,18 +588,18 @@ What is the total weight of A, B, and C together?
 **Solution:**
 
 Step 1: Analyze Statement I alone.
-A + B = 2 × 45 = 90 kg. C is unknown. Not sufficient.
+A + B = 2 Ã— 45 = 90 kg. C is unknown. Not sufficient.
 
 Step 2: Analyze Statement II alone.
-B + C = 2 × 50 = 100 kg. A = C + 10. But we need A + B + C. From B + C = 100 and A = C + 10, A + B + C = (C + 10) + 100 = C + 110. C is unknown. Not sufficient.
+B + C = 2 Ã— 50 = 100 kg. A = C + 10. But we need A + B + C. From B + C = 100 and A = C + 10, A + B + C = (C + 10) + 100 = C + 110. C is unknown. Not sufficient.
 
 Step 3: Combine both statements.
 From I: A + B = 90
 From II: B + C = 100 and A = C + 10
 From A + B = 90 and A = C + 10:
-(C + 10) + B = 90 → B + C = 80. But from II, B + C = 100. Contradiction!
+(C + 10) + B = 90 â†’ B + C = 80. But from II, B + C = 100. Contradiction!
 
-Hmm, this contradicts. Wait — let me recheck:
+Hmm, this contradicts. Wait â€” let me recheck:
 A + B = 90 (from I)
 B + C = 100 (from II)
 A = C + 10 (from II)
@@ -615,11 +615,11 @@ But from II alone: B + C = 100. So we have B + C = 90 AND B + C = 100. Contradic
 
 This doesn't make sense. Either I made an error, or the statements are designed to be contradictory (which doesn't happen in IBPS SO). Let me re-analyze:
 
-From I: A + B = 90. So A = 90 − B.
-From II: B + C = 100. So C = 100 − B.
-From II: A = C + 10 = (100 − B) + 10 = 110 − B.
+From I: A + B = 90. So A = 90 âˆ’ B.
+From II: B + C = 100. So C = 100 âˆ’ B.
+From II: A = C + 10 = (100 âˆ’ B) + 10 = 110 âˆ’ B.
 
-But A = 90 − B from I. So 90 − B = 110 − B → 90 = 110. Contradiction!
+But A = 90 âˆ’ B from I. So 90 âˆ’ B = 110 âˆ’ B â†’ 90 = 110. Contradiction!
 
 This demonstrates why exam questions are carefully designed. In a proper exam question, the statements would be consistent. Let me provide a corrected version:
 
@@ -629,15 +629,15 @@ What is the total weight of A, B, and C together?
 - II. A weighs 40 kg, and the average weight of B and C is 55 kg.
 
 **Solution:**
-From I alone: A + B = 2 × 45 = 90. A + B + C = 3 × 50 = 150. So C = 60. Total weight = 150. Sufficient.
+From I alone: A + B = 2 Ã— 45 = 90. A + B + C = 3 Ã— 50 = 150. So C = 60. Total weight = 150. Sufficient.
 
-From II alone: A = 40. B + C = 2 × 55 = 110. Total = 40 + 110 = 150. Sufficient.
+From II alone: A = 40. B + C = 2 Ã— 55 = 110. Total = 40 + 110 = 150. Sufficient.
 
 **Answer:** Either statement I or II alone is sufficient.
 
 ---
 
-### Example 5: Data Sufficiency — Yes/No Question
+### Example 5: Data Sufficiency â€” Yes/No Question
 
 **Question:**
 Is X greater than Y?
@@ -647,16 +647,16 @@ Is X greater than Y?
 **Solution:**
 
 Step 1: Analyze Statement I alone.
-X > Z > Y → X > Y. Yes. Sufficient.
+X > Z > Y â†’ X > Y. Yes. Sufficient.
 
 Step 2: Analyze Statement II alone.
-Y < W < X → X > Y. Yes. Sufficient.
+Y < W < X â†’ X > Y. Yes. Sufficient.
 
 **Answer:** Either statement I or II alone is sufficient.
 
 ---
 
-### Example 6: Data Sufficiency — Ordering
+### Example 6: Data Sufficiency â€” Ordering
 
 **Question:**
 Who is the tallest among five friends A, B, C, D, E?
@@ -676,7 +676,7 @@ E > C. B > D. No relationship between A and others, or between E and A/B/D. Not 
 
 ---
 
-### Example 7: Data Sufficiency — Blood Relation
+### Example 7: Data Sufficiency â€” Blood Relation
 
 **Question:**
 How is P related to Q?
@@ -693,7 +693,7 @@ Q is daughter of U. U is brother of V. V is wife of R. P is not mentioned. Not s
 
 Step 3: Combine both statements.
 From I: P is son of R. R is sister of S (so R is female, married to V from II).
-From II: V is wife of R → R is husband of V (contradiction: I says R is female, II implies R is male since V is wife of R).
+From II: V is wife of R â†’ R is husband of V (contradiction: I says R is female, II implies R is male since V is wife of R).
 
 Wait, "V is the wife of R" means R is the husband. But from I, "R is the sister of S" means R is female. Contradiction! In a properly designed exam question, this would not happen.
 
@@ -711,7 +711,7 @@ From II: Q is daughter of U. U is sister of V. V is wife of R. No P. Not suffici
 
 From I + II:
 R is brother of S (I). V is wife of R (II). U is sister of V (II).
-P is son of R and V (I tells P is son of R, II tells V is wife of R → P is son of V too).
+P is son of R and V (I tells P is son of R, II tells V is wife of R â†’ P is son of V too).
 Q is daughter of U (II). U is sister of V (II). So U is aunt of P (sister of P's mother).
 Q is daughter of U, so U is mother of Q.
 So P and Q are cousins (children of sisters V and U). P is the cousin of Q.
@@ -720,7 +720,7 @@ So P and Q are cousins (children of sisters V and U). P is the cousin of Q.
 
 ---
 
-### Example 8: Data Sufficiency — Distance and Direction
+### Example 8: Data Sufficiency â€” Distance and Direction
 
 **Question:**
 What is the shortest distance between point A and point B?
@@ -731,7 +731,7 @@ What is the shortest distance between point A and point B?
 
 Step 1: Analyze Statement I alone.
 A is 6 km east of C. B is 8 km north of C.
-From A to B: go west 6 km, then north 8 km. The shortest distance is the hypotenuse: √(6² + 8²) = √(36 + 64) = √100 = 10 km. Sufficient.
+From A to B: go west 6 km, then north 8 km. The shortest distance is the hypotenuse: âˆš(6Â² + 8Â²) = âˆš(36 + 64) = âˆš100 = 10 km. Sufficient.
 
 Step 2: Analyze Statement II alone.
 C is 5 km east of D. B is 10 km south of D. A is not mentioned. Not sufficient.
@@ -740,64 +740,64 @@ C is 5 km east of D. B is 10 km south of D. A is not mentioned. Not sufficient.
 
 ---
 
-## 📝 Solved Examples (20 MCQs)
+## ðŸ“ Solved Examples (20 MCQs)
 
-### Section A: Direct Inequalities — Questions 1–7
+### Section A: Direct Inequalities â€” Questions 1â€“7
 
-**Q1:** Statements: P > Q, Q ≥ R, R < S, S = T. Which conclusion definitely follows?
+**Q1:** Statements: P > Q, Q â‰¥ R, R < S, S = T. Which conclusion definitely follows?
 (a) P > R (b) Q < S (c) P > S (d) P > T
 
 <details>
 <summary>Show Answer</summary>
 **Answer: (a) P > R**  
 
-Chain: P > Q ≥ R < S = T.  
-P > Q ≥ R → P > R ✓ (through transitive property).  
-Q ≥ R < S → direction change at R, Q and S cannot be related. ✗  
-P > Q ≥ R < S → direction change, P and S cannot be related. P > T also cannot be determined. ✗  
+Chain: P > Q â‰¥ R < S = T.  
+P > Q â‰¥ R â†’ P > R âœ“ (through transitive property).  
+Q â‰¥ R < S â†’ direction change at R, Q and S cannot be related. âœ—  
+P > Q â‰¥ R < S â†’ direction change, P and S cannot be related. P > T also cannot be determined. âœ—  
 
 Only P > R definitely follows.
 </details>
 
-**Q2:** Statements: A ≥ B, B ≤ C, C = D, D > E. Which is definitely true?
-(a) A > E (b) B < D (c) A ≥ C (d) C > E
+**Q2:** Statements: A â‰¥ B, B â‰¤ C, C = D, D > E. Which is definitely true?
+(a) A > E (b) B < D (c) A â‰¥ C (d) C > E
 
 <details>
 <summary>Show Answer</summary>
 **Answer: (d) C > E**  
 
-Chain: A ≥ B ≤ C = D > E.  
-A ≥ B ≤ C → direction change at B, A and C cannot be related. A > E cannot be determined. ✗  
-B ≤ C = D → B ≤ D. "B < D" is not definitely true (B could equal D). ✗  
-A ≥ C: direction change at B, cannot be determined. ✗  
-C = D > E → C > E ✓.
+Chain: A â‰¥ B â‰¤ C = D > E.  
+A â‰¥ B â‰¤ C â†’ direction change at B, A and C cannot be related. A > E cannot be determined. âœ—  
+B â‰¤ C = D â†’ B â‰¤ D. "B < D" is not definitely true (B could equal D). âœ—  
+A â‰¥ C: direction change at B, cannot be determined. âœ—  
+C = D > E â†’ C > E âœ“.
 </details>
 
-**Q3:** Statements: X > Y, Y = Z, Z ≥ W, W < V. Which is true?
-(a) X > V (b) Z ≥ V (c) X ≥ W (d) Y ≥ W
+**Q3:** Statements: X > Y, Y = Z, Z â‰¥ W, W < V. Which is true?
+(a) X > V (b) Z â‰¥ V (c) X â‰¥ W (d) Y â‰¥ W
 
 <details>
 <summary>Show Answer</summary>
-**Answer: (d) Y ≥ W**  
+**Answer: (d) Y â‰¥ W**  
 
-Chain: X > Y = Z ≥ W < V.  
-X > Y = Z ≥ W → X > W (not X ≥ W). X > V: direction change at W, cannot determine. ✗  
-Z ≥ W < V → Z and V separated by direction change. ✗  
-Y = Z ≥ W → Y ≥ W ✓.
+Chain: X > Y = Z â‰¥ W < V.  
+X > Y = Z â‰¥ W â†’ X > W (not X â‰¥ W). X > V: direction change at W, cannot determine. âœ—  
+Z â‰¥ W < V â†’ Z and V separated by direction change. âœ—  
+Y = Z â‰¥ W â†’ Y â‰¥ W âœ“.
 </details>
 
-**Q4:** Statements: L ≥ M, M > N, N = O, O ≤ P, P < Q. Which are true?
-I. L > N  II. N ≤ P  III. M > P
+**Q4:** Statements: L â‰¥ M, M > N, N = O, O â‰¤ P, P < Q. Which are true?
+I. L > N  II. N â‰¤ P  III. M > P
 (a) I only (b) I and II (c) II and III (d) All three
 
 <details>
 <summary>Show Answer</summary>
 **Answer: (b) I and II**  
 
-Chain: L ≥ M > N = O ≤ P < Q.  
-I: L ≥ M > N → L > N ✓  
-II: N = O ≤ P → N ≤ P ✓  
-III: M > N = O ≤ P → direction change at O/N. M and P cannot be related. ✗  
+Chain: L â‰¥ M > N = O â‰¤ P < Q.  
+I: L â‰¥ M > N â†’ L > N âœ“  
+II: N = O â‰¤ P â†’ N â‰¤ P âœ“  
+III: M > N = O â‰¤ P â†’ direction change at O/N. M and P cannot be related. âœ—  
 
 I and II follow.
 </details>
@@ -810,81 +810,81 @@ I and II follow.
 **Answer: (d) A < E**  
 
 Chain: A > B > C = D < E.  
-A > B > C → A > C ✓.  
-A > B > C = D → A > D ✓.  
-B > C = D → B > D ✓.  
-A > B > C = D < E → A and E separated by direction change at D. We cannot relate A and E. "A < E" is not definitely true, but we also can't say it's definitely false. However, the question asks for the conclusion that IS definitely false. Since we cannot determine the relation, (d) is not necessarily false — it's just not provably true.  
+A > B > C â†’ A > C âœ“.  
+A > B > C = D â†’ A > D âœ“.  
+B > C = D â†’ B > D âœ“.  
+A > B > C = D < E â†’ A and E separated by direction change at D. We cannot relate A and E. "A < E" is not definitely true, but we also can't say it's definitely false. However, the question asks for the conclusion that IS definitely false. Since we cannot determine the relation, (d) is not necessarily false â€” it's just not provably true.  
 
-Actually, the question asks "which is definitely false?" None of the options contradict the chain. (d) says A < E — this could be true or false. Not definitely false.
+Actually, the question asks "which is definitely false?" None of the options contradict the chain. (d) says A < E â€” this could be true or false. Not definitely false.
 
-Let me reconsider. If A = 5, B = 4, C = 3, D = 3, E = 10 → A < E ✓. So A < E is possible, not false. Only a conclusion that contradicts the chain would be definitely false. Since none do, the answer must be based on definitiveness of truth, not falsity.  
+Let me reconsider. If A = 5, B = 4, C = 3, D = 3, E = 10 â†’ A < E âœ“. So A < E is possible, not false. Only a conclusion that contradicts the chain would be definitely false. Since none do, the answer must be based on definitiveness of truth, not falsity.  
 
-The chain A > B > C = D < E does not give us A vs E. So (d) "A < E" cannot be confirmed (and also cannot be denied). Since the question asks for "definitely false" — none are. But if forced to pick the one that MIGHT be false... actually in exam context, they mean "which conclusion does NOT follow." None of (a), (b), (c) follow?  
+The chain A > B > C = D < E does not give us A vs E. So (d) "A < E" cannot be confirmed (and also cannot be denied). Since the question asks for "definitely false" â€” none are. But if forced to pick the one that MIGHT be false... actually in exam context, they mean "which conclusion does NOT follow." None of (a), (b), (c) follow?  
 
 Let me re-read: A > B > C = D < E.  
-A > C ✓ follows from A > B > C.  
-A > D ✓ from A > B > C = D.  
-B > D ✓ from B > C = D.  
-A < E — cannot determine.  
+A > C âœ“ follows from A > B > C.  
+A > D âœ“ from A > B > C = D.  
+B > D âœ“ from B > C = D.  
+A < E â€” cannot determine.  
 
 So (d) is the only one that does not follow. In many exam questions, "definitely false" means "cannot be established as true" or "may be false."
 
-**Answer: (d) A < E** — This is the only conclusion that cannot be established as definitely true.
+**Answer: (d) A < E** â€” This is the only conclusion that cannot be established as definitely true.
 </details>
 
-**Q6:** Statements: R ≥ S, S = T, T < U, U ≤ V, V > W. How many conclusions definitely follow?
-I. R ≥ T  II. S < V  III. R < U  IV. U > W
+**Q6:** Statements: R â‰¥ S, S = T, T < U, U â‰¤ V, V > W. How many conclusions definitely follow?
+I. R â‰¥ T  II. S < V  III. R < U  IV. U > W
 (a) 1 (b) 2 (c) 3 (d) 4
 
 <details>
 <summary>Show Answer</summary>
-**Answer: (c) 3 — Conclusions I, II, and IV follow**  
+**Answer: (c) 3 â€” Conclusions I, II, and IV follow**  
 
-Chain: R ≥ S = T < U ≤ V > W.  
-I: R ≥ S = T → R ≥ T ✓  
-II: S = T < U ≤ V → S < V ✓  
-III: R ≥ S = T < U → direction change at T. R and U cannot be related. ✗  
-IV: U ≤ V > W → direction change at V. But U ≤ V and V > W doesn't give U vs W directly. However, U ≤ V and V > W: if U = V, then U > W. If U < V, still U could be > or < W. Chain: T < U ≤ V > W. U ≤ V > W breaks at V. U and W cannot be definitively related. ✗  
+Chain: R â‰¥ S = T < U â‰¤ V > W.  
+I: R â‰¥ S = T â†’ R â‰¥ T âœ“  
+II: S = T < U â‰¤ V â†’ S < V âœ“  
+III: R â‰¥ S = T < U â†’ direction change at T. R and U cannot be related. âœ—  
+IV: U â‰¤ V > W â†’ direction change at V. But U â‰¤ V and V > W doesn't give U vs W directly. However, U â‰¤ V and V > W: if U = V, then U > W. If U < V, still U could be > or < W. Chain: T < U â‰¤ V > W. U â‰¤ V > W breaks at V. U and W cannot be definitively related. âœ—  
 
-Wait, I need to re-examine IV. The chain is T < U ≤ V > W. U and W are on opposite sides of V. We cannot relate U and W. So IV doesn't follow either?
+Wait, I need to re-examine IV. The chain is T < U â‰¤ V > W. U and W are on opposite sides of V. We cannot relate U and W. So IV doesn't follow either?
 
-Hmm: U ≤ V → U is less than or equal to V. V > W → V is greater than W.  
-If U = 5, V = 5, W = 3: U > W ✓.  
-If U = 5, V = 10, W = 3: U > W ✓.  
+Hmm: U â‰¤ V â†’ U is less than or equal to V. V > W â†’ V is greater than W.  
+If U = 5, V = 5, W = 3: U > W âœ“.  
+If U = 5, V = 10, W = 3: U > W âœ“.  
 If U = 5, V = 10, W = 8: U < W.  
 If U = 5, V = 10, W = 5: U = W.  
 
 Since U can be less than, equal to, or greater than W depending on values, U > W does NOT definitely follow. So IV is false.
 
-Let me recount: I ✓, II ✓, III ✗, IV ✗.  
+Let me recount: I âœ“, II âœ“, III âœ—, IV âœ—.  
 
-Actually wait, I need to check II more carefully. S = T < U ≤ V. S < T? No, S = T. T < U. U ≤ V. So S = T < U ≤ V → S < U ≤ V → S < V ✓. Yes.
+Actually wait, I need to check II more carefully. S = T < U â‰¤ V. S < T? No, S = T. T < U. U â‰¤ V. So S = T < U â‰¤ V â†’ S < U â‰¤ V â†’ S < V âœ“. Yes.
 
 So only I and II follow. That's 2 conclusions.
 
-But wait: for II, S < V requires that S < U and U ≤ V. S < U is true (S = T < U). U ≤ V. So S < V is true. ✓.
+But wait: for II, S < V requires that S < U and U â‰¤ V. S < U is true (S = T < U). U â‰¤ V. So S < V is true. âœ“.
 
-**Answer: (b) 2 — Only I and II follow.**
+**Answer: (b) 2 â€” Only I and II follow.**
 </details>
 
-**Q7:** Statements: M ≥ N, O < P, N ≥ O, P ≤ Q. Conclusions: I. M ≥ P  II. M ≥ O  III. O < Q
+**Q7:** Statements: M â‰¥ N, O < P, N â‰¥ O, P â‰¤ Q. Conclusions: I. M â‰¥ P  II. M â‰¥ O  III. O < Q
 (a) I only (b) II only (c) II and III (d) I and III
 
 <details>
 <summary>Show Answer</summary>
 **Answer: (c) II and III**  
 
-Chain: M ≥ N ≥ O < P ≤ Q.  
-I: M ≥ N ≥ O < P → direction change at O. M and P cannot be related. ✗  
-II: M ≥ N ≥ O → M ≥ O ✓  
-III: O < P ≤ Q → O < Q ✓  
+Chain: M â‰¥ N â‰¥ O < P â‰¤ Q.  
+I: M â‰¥ N â‰¥ O < P â†’ direction change at O. M and P cannot be related. âœ—  
+II: M â‰¥ N â‰¥ O â†’ M â‰¥ O âœ“  
+III: O < P â‰¤ Q â†’ O < Q âœ“  
 
 II and III follow.
 </details>
 
-### Section B: Coded Inequalities — Questions 8–12
+### Section B: Coded Inequalities â€” Questions 8â€“12
 
-**Common Code for Q8–Q10:** P @ Q means P > Q, P # Q means P = Q, P $ Q means P < Q, P % Q means P ≥ Q, P & Q means P ≤ Q.
+**Common Code for Q8â€“Q10:** P @ Q means P > Q, P # Q means P = Q, P $ Q means P < Q, P % Q means P â‰¥ Q, P & Q means P â‰¤ Q.
 
 **Q8:** Statements: A @ B, B # C, C $ D, D % E, E & F. Which follows?
 (a) A > D (b) C = F (c) D > F (d) None
@@ -893,29 +893,29 @@ II and III follow.
 <summary>Show Answer</summary>
 **Answer: (d) None**  
 
-Translation: A > B, B = C, C < D, D ≥ E, E ≤ F.  
-Chain: A > B = C < D ≥ E ≤ F.  
+Translation: A > B, B = C, C < D, D â‰¥ E, E â‰¤ F.  
+Chain: A > B = C < D â‰¥ E â‰¤ F.  
 Direction changes at C and E.  
-A > D: A > C < D breaks at C. Cannot determine. ✗  
-C = F: C < D ≥ E ≤ F. Multiple breaks. Cannot determine. ✗  
-D > F: D ≥ E ≤ F, direction change at E. Cannot determine. ✗  
+A > D: A > C < D breaks at C. Cannot determine. âœ—  
+C = F: C < D â‰¥ E â‰¤ F. Multiple breaks. Cannot determine. âœ—  
+D > F: D â‰¥ E â‰¤ F, direction change at E. Cannot determine. âœ—  
 
 None follow.
 </details>
 
 **Q9:** Statements: X % Y, Y $ Z, Z # W, W @ V. Which follows?
-(a) X ≥ Z (b) Y < W (c) X ≥ W (d) X > V
+(a) X â‰¥ Z (b) Y < W (c) X â‰¥ W (d) X > V
 
 <details>
 <summary>Show Answer</summary>
 **Answer: (b) Y < W**  
 
-Translation: X ≥ Y, Y < Z, Z = W, W > V.  
-Chain: X ≥ Y < Z = W > V.  
-X ≥ Z: direction change at Y. Cannot determine. ✗  
-Y < Z = W → Y < W ✓  
-X ≥ W: direction change. Cannot determine. ✗  
-X > V: chain breaks at two points. Cannot determine. ✗  
+Translation: X â‰¥ Y, Y < Z, Z = W, W > V.  
+Chain: X â‰¥ Y < Z = W > V.  
+X â‰¥ Z: direction change at Y. Cannot determine. âœ—  
+Y < Z = W â†’ Y < W âœ“  
+X â‰¥ W: direction change. Cannot determine. âœ—  
+X > V: chain breaks at two points. Cannot determine. âœ—  
 
 Only Y < W follows.
 </details>
@@ -927,12 +927,12 @@ Only Y < W follows.
 <summary>Show Answer</summary>
 **Answer: (d) Q = S**  
 
-Translation: P = Q, Q < R, R > S, S ≥ T, T ≤ U.  
-Chain: P = Q < R > S ≥ T ≤ U.  
-P < R: P = Q < R → P < R ✓ (definitely true)  
-R > S: directly from statement R @ S meaning R > S ✓  
-R > T: R > S ≥ T → R > T ✓  
-Q = S: Q < R > S → Q and S separated by direction change at R. Cannot determine. Not definitely true, and the question asks for "definitely false." Since Q = S is possible (if values allow), it's not definitely false.
+Translation: P = Q, Q < R, R > S, S â‰¥ T, T â‰¤ U.  
+Chain: P = Q < R > S â‰¥ T â‰¤ U.  
+P < R: P = Q < R â†’ P < R âœ“ (definitely true)  
+R > S: directly from statement R @ S meaning R > S âœ“  
+R > T: R > S â‰¥ T â†’ R > T âœ“  
+Q = S: Q < R > S â†’ Q and S separated by direction change at R. Cannot determine. Not definitely true, and the question asks for "definitely false." Since Q = S is possible (if values allow), it's not definitely false.
 
 Actually, Q < R > S means Q is less than R, and S is also less than R. But Q and S could be equal (e.g., Q = 3, R = 10, S = 3). So Q = S is possible, not definitely false.
 
@@ -940,72 +940,72 @@ The question asks for which is definitely false. Let me re-examine: P < R is def
 
 Hmm, in exam context, "definitely false" means the conclusion contradicts the chain. None of (a), (b), (c) contradict. And (d) Q = S doesn't contradict either (it's possible). So maybe none are definitely false.
 
-Wait: R > S ≥ T means R > S and R > T. But S ≥ T, so R > T is not directly comparable. R > S and S ≥ T → R > T ✓. So (c) is definitely true.
+Wait: R > S â‰¥ T means R > S and R > T. But S â‰¥ T, so R > T is not directly comparable. R > S and S â‰¥ T â†’ R > T âœ“. So (c) is definitely true.
 
 Hmm, all of (a), (b), (c) are definitely true. (d) is not definitely true but also not definitely false. The question likely means "which is not definitely true?" or "which is false?"
 
-**Answer: (d) Q = S** — This is the only conclusion that is NOT guaranteed by the statements.
+**Answer: (d) Q = S** â€” This is the only conclusion that is NOT guaranteed by the statements.
 </details>
 
-**Q11 (Coded — Different Mapping):** P α Q means P ≤ Q, P β Q means P > Q, P γ Q means P = Q, P δ Q means P ≥ Q, P ε Q means P < Q. Statements: A α B, B β C, C γ D, D ε E. Which follows?
-(a) A ≤ C (b) B > D (c) A > E (d) B ≤ E
+**Q11 (Coded â€” Different Mapping):** P Î± Q means P â‰¤ Q, P Î² Q means P > Q, P Î³ Q means P = Q, P Î´ Q means P â‰¥ Q, P Îµ Q means P < Q. Statements: A Î± B, B Î² C, C Î³ D, D Îµ E. Which follows?
+(a) A â‰¤ C (b) B > D (c) A > E (d) B â‰¤ E
 
 <details>
 <summary>Show Answer</summary>
 **Answer: (b) B > D**  
 
-Translation: A ≤ B, B > C, C = D, D < E.  
-Chain: A ≤ B > C = D < E.  
-A ≤ C: direction change at B. Cannot determine. ✗  
-B > C = D → B > D ✓  
-A > E: chain breaks at two points. Cannot determine. ✗  
-B ≤ E: B > D < E, direction change. Cannot determine. ✗  
+Translation: A â‰¤ B, B > C, C = D, D < E.  
+Chain: A â‰¤ B > C = D < E.  
+A â‰¤ C: direction change at B. Cannot determine. âœ—  
+B > C = D â†’ B > D âœ“  
+A > E: chain breaks at two points. Cannot determine. âœ—  
+B â‰¤ E: B > D < E, direction change. Cannot determine. âœ—  
 
 Only B > D follows.
 </details>
 
-**Q12 (Coded — Mixed):** P ! Q means P ≥ Q, P @ Q means P ≤ Q, P # Q means P > Q, P $ Q means P < Q, P % Q means P = Q. Statements: A ! B, B # C, C % D, D $ E, E @ F. How many follow?
-I. A ≥ C  II. B > D  III. C < E  IV. D ≤ F
+**Q12 (Coded â€” Mixed):** P ! Q means P â‰¥ Q, P @ Q means P â‰¤ Q, P # Q means P > Q, P $ Q means P < Q, P % Q means P = Q. Statements: A ! B, B # C, C % D, D $ E, E @ F. How many follow?
+I. A â‰¥ C  II. B > D  III. C < E  IV. D â‰¤ F
 (a) 1 (b) 2 (c) 3 (d) 4
 
 <details>
 <summary>Show Answer</summary>
-**Answer: (b) 2 — II and IV follow**  
+**Answer: (b) 2 â€” II and IV follow**  
 
-Translation: A ≥ B, B > C, C = D, D < E, E ≤ F.  
-Chain: A ≥ B > C = D < E ≤ F.  
-I: A ≥ B > C → A > C (not A ≥ C). Since A ≥ B > C, we know A > C, but does A ≥ C follow? Yes, if A > C then A ≥ C is also true (≥ includes >). So I follows.  
-II: B > C = D → B > D ✓  
-III: C = D < E → C < E ✓  
-IV: D < E ≤ F → D < F, not D ≤ F. "D ≤ F" is weaker than D < F, so D < F implies D ≤ F. ✓  
+Translation: A â‰¥ B, B > C, C = D, D < E, E â‰¤ F.  
+Chain: A â‰¥ B > C = D < E â‰¤ F.  
+I: A â‰¥ B > C â†’ A > C (not A â‰¥ C). Since A â‰¥ B > C, we know A > C, but does A â‰¥ C follow? Yes, if A > C then A â‰¥ C is also true (â‰¥ includes >). So I follows.  
+II: B > C = D â†’ B > D âœ“  
+III: C = D < E â†’ C < E âœ“  
+IV: D < E â‰¤ F â†’ D < F, not D â‰¤ F. "D â‰¤ F" is weaker than D < F, so D < F implies D â‰¤ F. âœ“  
 
 All four follow! Let me re-examine:  
-I: A ≥ B > C. Since A could equal B, and B > C, A must be ≥ B > C → A > C. But the conclusion says A ≥ C. If A > C, then certainly A ≥ C (since > implies ≥). So I follows.  
-IV: D < E ≤ F → D < F. Conclusion says D ≤ F. D < F implies D ≤ F. So IV follows.
+I: A â‰¥ B > C. Since A could equal B, and B > C, A must be â‰¥ B > C â†’ A > C. But the conclusion says A â‰¥ C. If A > C, then certainly A â‰¥ C (since > implies â‰¥). So I follows.  
+IV: D < E â‰¤ F â†’ D < F. Conclusion says D â‰¤ F. D < F implies D â‰¤ F. So IV follows.
 
 Wait, I made an error in my initial thinking. Let me recalculate:  
-I: A ≥ B > C → A > C → A ≥ C follows ✓  
-II: B > C = D → B > D ✓  
-III: C = D < E → C < E ✓  
-IV: D < E ≤ F → D < F → D ≤ F follows ✓  
+I: A â‰¥ B > C â†’ A > C â†’ A â‰¥ C follows âœ“  
+II: B > C = D â†’ B > D âœ“  
+III: C = D < E â†’ C < E âœ“  
+IV: D < E â‰¤ F â†’ D < F â†’ D â‰¤ F follows âœ“  
 
 All 4 follow. But the answer choices are (a) 1, (b) 2, (c) 3, (d) 4. So (d) 4.
 
-**Answer: (d) 4 — All four conclusions follow.**
+**Answer: (d) 4 â€” All four conclusions follow.**
 </details>
 
-### Section C: Data Sufficiency — Questions 13–20
+### Section C: Data Sufficiency â€” Questions 13â€“20
 
 **Q13:** What is the value of X?
-I. X² = 64  II. X³ = 512
+I. XÂ² = 64  II. XÂ³ = 512
 (a) I alone sufficient (b) II alone sufficient (c) Both needed (d) Either alone
 
 <details>
 <summary>Show Answer</summary>
 **Answer: (b) II alone sufficient**  
 
-From I: X² = 64 → X = +8 or −8. Not unique. Not sufficient.  
-From II: X³ = 512 → X = 8 (unique). Sufficient.  
+From I: XÂ² = 64 â†’ X = +8 or âˆ’8. Not unique. Not sufficient.  
+From II: XÂ³ = 512 â†’ X = 8 (unique). Sufficient.  
 
 Only II alone is sufficient.
 </details>
@@ -1035,22 +1035,22 @@ II. The ratio of P's age to Q's age is 4:3.
 **Answer: (c) Both together needed**  
 
 From I: P = Q + 5. One equation, two unknowns. Not sufficient.  
-From II: P/Q = 4/3 → 3P = 4Q. One equation, two unknowns. Not sufficient.  
-Together: P = Q + 5 and 3P = 4Q. Substituting: 3(Q+5) = 4Q → 3Q + 15 = 4Q → Q = 15, P = 20. Total = 35. Sufficient.
+From II: P/Q = 4/3 â†’ 3P = 4Q. One equation, two unknowns. Not sufficient.  
+Together: P = Q + 5 and 3P = 4Q. Substituting: 3(Q+5) = 4Q â†’ 3Q + 15 = 4Q â†’ Q = 15, P = 20. Total = 35. Sufficient.
 
 Both statements together are needed.
 </details>
 
 **Q16:** Is A greater than B?
-I. A + B = 30  II. A − B = 10
+I. A + B = 30  II. A âˆ’ B = 10
 (a) I alone (b) II alone (c) Both (d) Either
 
 <details>
 <summary>Show Answer</summary>
 **Answer: (b) II alone sufficient**  
 
-From I: A + B = 30. A could be 20, B = 10 → A > B. Or A = 10, B = 20 → A < B. Not sufficient.  
-From II: A − B = 10 → A = B + 10 → A > B (always). Sufficient.  
+From I: A + B = 30. A could be 20, B = 10 â†’ A > B. Or A = 10, B = 20 â†’ A < B. Not sufficient.  
+From II: A âˆ’ B = 10 â†’ A = B + 10 â†’ A > B (always). Sufficient.  
 
 Only II alone is sufficient.
 </details>
@@ -1064,10 +1064,10 @@ II. R is 15 ranks below T, and T is 10th from the top.
 <summary>Show Answer</summary>
 **Answer: (d) Either I or II alone is sufficient**  
 
-From I: S is 20th from bottom → S is 50−20+1 = 31st from top. R is 5 ranks above S → R is 31−5 = 26th from top. Sufficient.  
-From II: T is 10th from top. R is 15 ranks below T → R is 10+15 = 25th from top. Wait, "below" means lower rank (higher number). So R = 10+15 = 25th from top. Sufficient.  
+From I: S is 20th from bottom â†’ S is 50âˆ’20+1 = 31st from top. R is 5 ranks above S â†’ R is 31âˆ’5 = 26th from top. Sufficient.  
+From II: T is 10th from top. R is 15 ranks below T â†’ R is 10+15 = 25th from top. Wait, "below" means lower rank (higher number). So R = 10+15 = 25th from top. Sufficient.  
 
-Either statement alone is sufficient. (Note: I gives R=26, II gives R=25 — this discrepancy wouldn't happen in a real exam. Both would give the same answer.)
+Either statement alone is sufficient. (Note: I gives R=26, II gives R=25 â€” this discrepancy wouldn't happen in a real exam. Both would give the same answer.)
 </details>
 
 **Q18:** How is P related to Q?
@@ -1079,8 +1079,8 @@ II. Q is the sister of T. T is the daughter of R.
 <summary>Show Answer</summary>
 **Answer: (c) Both together needed**  
 
-From I: P(□) brother of R(?). R is father of S. No Q mentioned. Not sufficient.  
-From II: Q(○) sister of T(○). T is daughter of R. No P mentioned. Not sufficient.  
+From I: P(â–¡) brother of R(?). R is father of S. No Q mentioned. Not sufficient.  
+From II: Q(â—‹) sister of T(â—‹). T is daughter of R. No P mentioned. Not sufficient.  
 Together: P is brother of R. R has children T and S. Q is sister of T, so Q is also child of R. Therefore, P is the brother of R, and Q is the child of R. So P is the uncle of Q. Sufficient.
 
 Both statements together are needed.
@@ -1095,7 +1095,7 @@ II. Z is 4 km west of W. Y is 3 km south of W.
 <summary>Show Answer</summary>
 **Answer: (a) I alone sufficient**  
 
-From I: X is 8 km east of Z. Y is 6 km north of Z. So XY = √(8²+6²) = √100 = 10 km. Sufficient.  
+From I: X is 8 km east of Z. Y is 6 km north of Z. So XY = âˆš(8Â²+6Â²) = âˆš100 = 10 km. Sufficient.  
 From II: Z is 4 km west of W. Y is 3 km south of W. X not mentioned. Not sufficient.  
 
 Only I alone is sufficient.
@@ -1110,11 +1110,11 @@ II. The average of the last three is 22. The sum of the first two is 35.
 <summary>Show Answer</summary>
 **Answer: (c) Both together needed**  
 
-From I: Sum of 5 = 100. Sum of first 3 = 54. Last 2 = 100−54 = 46. Middle number alone not determinable. Not sufficient.  
+From I: Sum of 5 = 100. Sum of first 3 = 54. Last 2 = 100âˆ’54 = 46. Middle number alone not determinable. Not sufficient.  
 From II: Sum of last 3 = 66. Sum of first 2 = 35. Middle number = sum of first 2 + middle + last 2... Not sufficient alone.  
 Together: Let numbers be a,b,c,d,e (ascending). Sum of first 3 = a+b+c = 54. Sum of last 3 = c+d+e = 66. Total = a+b+c+d+e = 100.  
 (a+b+c) + (c+d+e) = 54+66 = 120.  
-But (a+b+c+d+e) + c = 100 + c = 120 → c = 20.  
+But (a+b+c+d+e) + c = 100 + c = 120 â†’ c = 20.  
 So middle number = 20. Sufficient.
 
 Both together needed.
@@ -1240,7 +1240,7 @@ const stmts: InequalityStatement[] = [
 ];
 
 const rels = buildChain(stmts);
-console.log("P > R?", checkConclusion(rels, "P", ">", "R")); // true (P > Q >= R → P > R)
+console.log("P > R?", checkConclusion(rels, "P", ">", "R")); // true (P > Q >= R â†’ P > R)
 console.log("P > S?", checkConclusion(rels, "P", ">", "S")); // false (break at R)
 
 // Data sufficiency example
@@ -1257,21 +1257,21 @@ console.log("Sufficiency:", result); // "both"
 
 ---
 
-## 📖 Exercise Bank (30 Questions)
+## ðŸ“– Exercise Bank (30 Questions)
 
-1. **Direct Inequality:** Statements: A > B, B ≥ C, C = D, D < E. Which follow? I. A > C II. B ≥ D III. C < E
+1. **Direct Inequality:** Statements: A > B, B â‰¥ C, C = D, D < E. Which follow? I. A > C II. B â‰¥ D III. C < E
 
-2. **Direct Inequality:** Statements: X ≤ Y, Y > Z, Z = W, W ≥ V. Which follow? I. X < Z II. Y > W III. X > V
+2. **Direct Inequality:** Statements: X â‰¤ Y, Y > Z, Z = W, W â‰¥ V. Which follow? I. X < Z II. Y > W III. X > V
 
-3. **Coded Inequality:** P @ Q → P > Q, P # Q → P ≤ Q, P $ Q → P = Q, P % Q → P ≥ Q. Statements: A @ B, B # C, C $ D. Which follow? I. A > C II. A ≥ D III. B > D
+3. **Coded Inequality:** P @ Q â†’ P > Q, P # Q â†’ P â‰¤ Q, P $ Q â†’ P = Q, P % Q â†’ P â‰¥ Q. Statements: A @ B, B # C, C $ D. Which follow? I. A > C II. A â‰¥ D III. B > D
 
-4. **Coded Inequality:** P α Q → P < Q, P β Q → P ≥ Q, P γ Q → P > Q, P δ Q → P ≤ Q. Statements: X α Y, Y β Z, Z γ W. Which follow? I. X < Z II. Y > W III. X > W
+4. **Coded Inequality:** P Î± Q â†’ P < Q, P Î² Q â†’ P â‰¥ Q, P Î³ Q â†’ P > Q, P Î´ Q â†’ P â‰¤ Q. Statements: X Î± Y, Y Î² Z, Z Î³ W. Which follow? I. X < Z II. Y > W III. X > W
 
 5. **Data Sufficiency (Value):** What is X?
-I. 2X + 3Y = 20  II. 3X − Y = 8
+I. 2X + 3Y = 20  II. 3X âˆ’ Y = 8
 
 6. **Data Sufficiency (Yes/No):** Is P greater than Q?
-I. P + Q = 15  II. P − Q = 5
+I. P + Q = 15  II. P âˆ’ Q = 5
 
 7. **Data Sufficiency (Ordering):** Who is the heaviest among A, B, C, D?
 I. A > B, C > D  II. B > C, D < A
@@ -1279,13 +1279,13 @@ I. A > B, C > D  II. B > C, D < A
 8. **Data Sufficiency (Value):** What is the two-digit number?
 I. Sum of digits is 12  II. Product of digits is 32
 
-9. **Direct Inequality:** Statements: L > M, M = N, N ≥ O, O < P. Which are true? I. L > O II. M ≥ O III. N < P
+9. **Direct Inequality:** Statements: L > M, M = N, N â‰¥ O, O < P. Which are true? I. L > O II. M â‰¥ O III. N < P
 
-10. **Direct Inequality:** Statements: R ≥ S, S < T, T = U, U ≥ V. Which follow? I. R > T II. S < U III. R ≥ V
+10. **Direct Inequality:** Statements: R â‰¥ S, S < T, T = U, U â‰¥ V. Which follow? I. R > T II. S < U III. R â‰¥ V
 
-11. **Coded Inequality:** A & B → A ≤ B, A * B → A > B, A $ B → A = B, A % B → A < B. Statements: P & Q, Q * R, R $ S. Which follow? I. P ≤ R II. Q > S III. P < S
+11. **Coded Inequality:** A & B â†’ A â‰¤ B, A * B â†’ A > B, A $ B â†’ A = B, A % B â†’ A < B. Statements: P & Q, Q * R, R $ S. Which follow? I. P â‰¤ R II. Q > S III. P < S
 
-12. **Coded Inequality:** New symbols: A ↑ B → A > B, A ↓ B → A < B, A → B → A ≥ B, A ← B → A ≤ B, A ↔ B → A = B. Statements: X ↑ Y, Y ← Z, Z ↔ W. Which follow? I. X > Z II. Y ≤ W III. X > W
+12. **Coded Inequality:** New symbols: A â†‘ B â†’ A > B, A â†“ B â†’ A < B, A â†’ B â†’ A â‰¥ B, A â† B â†’ A â‰¤ B, A â†” B â†’ A = B. Statements: X â†‘ Y, Y â† Z, Z â†” W. Which follow? I. X > Z II. Y â‰¤ W III. X > W
 
 13. **Data Sufficiency (Blood Relation):** How is A related to B?
 I. A is the son of C. C is the brother of D. II. B is the daughter of E. E is the sister of C.
@@ -1296,21 +1296,21 @@ I. P is 5 km east of R. Q is 12 km south of R. II. R is 3 km west of S. Q is 4 k
 15. **Data Sufficiency (Age):** What is the age of the mother?
 I. The sum of ages of mother and daughter is 50. II. The daughter is 20 years younger than the mother.
 
-16. **Direct Inequality:** Statements: A > B, B ≥ C, C ≥ D, D = E. Which follow? I. A > D II. B ≥ E III. A > E
+16. **Direct Inequality:** Statements: A > B, B â‰¥ C, C â‰¥ D, D = E. Which follow? I. A > D II. B â‰¥ E III. A > E
 
-17. **Coded Inequality:** P ! Q → P ≥ Q, P ? Q → P ≤ Q, P ~ Q → P > Q, P ^ Q → P < Q. Statements: M ! N, N ~ O, O ? P. Which follow? I. M ≥ O II. N > P III. M > P
+17. **Coded Inequality:** P ! Q â†’ P â‰¥ Q, P ? Q â†’ P â‰¤ Q, P ~ Q â†’ P > Q, P ^ Q â†’ P < Q. Statements: M ! N, N ~ O, O ? P. Which follow? I. M â‰¥ O II. N > P III. M > P
 
 18. **Data Sufficiency (Comparison):** Who scored the highest?
 I. A > B, C < D II. B > C, D < A
 
 19. **Data Sufficiency (Value):** What is the value of X + Y?
-I. X² − Y² = 36  II. X − Y = 6
+I. XÂ² âˆ’ YÂ² = 36  II. X âˆ’ Y = 6
 
-20. **Direct Inequality:** Statements: P < Q, Q ≤ R, R > S, S ≥ T. Which are definitely false? I. P > S II. Q ≥ T III. R ≤ T
+20. **Direct Inequality:** Statements: P < Q, Q â‰¤ R, R > S, S â‰¥ T. Which are definitely false? I. P > S II. Q â‰¥ T III. R â‰¤ T
 
-21. **Direct Inequality:** Statements: M ≥ N, N = O, O > P, P ≤ Q. Which follow? I. M ≥ O II. M > P III. O > Q
+21. **Direct Inequality:** Statements: M â‰¥ N, N = O, O > P, P â‰¤ Q. Which follow? I. M â‰¥ O II. M > P III. O > Q
 
-22. **Coded Inequality:** A # B → A = B, A @ B → A > B, A $ B → A < B, A % B → A ≥ B, A & B → A ≤ B. Statements: X & Y, Y % Z, Z # W. Which follow? I. X ≤ Z II. Y ≥ W III. X < W
+22. **Coded Inequality:** A # B â†’ A = B, A @ B â†’ A > B, A $ B â†’ A < B, A % B â†’ A â‰¥ B, A & B â†’ A â‰¤ B. Statements: X & Y, Y % Z, Z # W. Which follow? I. X â‰¤ Z II. Y â‰¥ W III. X < W
 
 23. **Data Sufficiency (Ranking):** In a class of 40, what is R's rank?
 I. R is 5 ranks above S. S ranks 12th from bottom. II. R is 8th from top.
@@ -1318,11 +1318,11 @@ I. R is 5 ranks above S. S ranks 12th from bottom. II. R is 8th from top.
 24. **Data Sufficiency (Comparison):** Is A taller than B?
 I. C is shorter than A but taller than B. II. D is taller than B but shorter than A.
 
-25. **Direct Inequality:** Statements: A ≥ B, B > C, C = D, D ≤ E. Which IS true? I. A > D II. B > E III. C ≤ E
+25. **Direct Inequality:** Statements: A â‰¥ B, B > C, C = D, D â‰¤ E. Which IS true? I. A > D II. B > E III. C â‰¤ E
 
-26. **Direct Inequality:** Statements: X < Y, Y = Z, Z ≥ W, W > V. Which follow? I. X < Z II. Y > V III. X > V
+26. **Direct Inequality:** Statements: X < Y, Y = Z, Z â‰¥ W, W > V. Which follow? I. X < Z II. Y > V III. X > V
 
-27. **Coded Inequality (Complex):** P @ Q → P ≥ Q, P # Q → P ≤ Q, P $ Q → P > Q, P % Q → P < Q, P ^ Q → P = Q. Statements: A $ B, B ^ C, C % D, D # E. Which follow? I. A > C II. A ≥ D III. B < E
+27. **Coded Inequality (Complex):** P @ Q â†’ P â‰¥ Q, P # Q â†’ P â‰¤ Q, P $ Q â†’ P > Q, P % Q â†’ P < Q, P ^ Q â†’ P = Q. Statements: A $ B, B ^ C, C % D, D # E. Which follow? I. A > C II. A â‰¥ D III. B < E
 
 28. **Data Sufficiency (Distance):** Is point X north of point Y?
 I. X is 10 km east of Z. Z is 5 km north of Y. II. Y is 8 km west of W. W is 12 km south of X.
@@ -1338,34 +1338,34 @@ I. A is older than B and C. D is older than E. II. C is older than D. B is young
 <details>
 <summary>View Answer Key</summary>
 
-1. I: A > C (A > B ≥ C) ✓. II: B ≥ D (B ≥ C = D) ✓. III: C < E (C = D < E) ✓. All three follow.  
-2. I: X < Z — direction change ✗. II: Y > W (Y > Z = W) ✓. III: X > V — chain breaks ✗. Only II follows.  
-3. I: A > C (A > B ≤ C not possible) ✗. II: A ≥ D ✗. III: B > D ✗. None follow.  
-4. I: X < Z (X < Y and Y ≥ Z direction change) ✗. II: Y > W (Y ≥ Z > W → Y > W) ✓. III: X > W ✗. Only II follows.  
+1. I: A > C (A > B â‰¥ C) âœ“. II: B â‰¥ D (B â‰¥ C = D) âœ“. III: C < E (C = D < E) âœ“. All three follow.  
+2. I: X < Z â€” direction change âœ—. II: Y > W (Y > Z = W) âœ“. III: X > V â€” chain breaks âœ—. Only II follows.  
+3. I: A > C (A > B â‰¤ C not possible) âœ—. II: A â‰¥ D âœ—. III: B > D âœ—. None follow.  
+4. I: X < Z (X < Y and Y â‰¥ Z direction change) âœ—. II: Y > W (Y â‰¥ Z > W â†’ Y > W) âœ“. III: X > W âœ—. Only II follows.  
 5. Both needed (2 equations, 2 unknowns).  
-6. II alone sufficient (P − Q = 5 → P > Q).  
+6. II alone sufficient (P âˆ’ Q = 5 â†’ P > Q).  
 7. Both needed. From I + II: A > B > C > D. A heaviest.  
-8. Both needed: digits 4 and 8 → number is 48 or 84. Not unique unless more given.  
-9. I ✓, II ✓, III ✗ (N ≥ O < P direction change). I and II follow.  
-10. I ✗, II ✓ (S < T = U → S < U), III ✗. Only II follows.  
-11. I ✓, II ✗, III ✗. Only I follows.  
-12. I ✓ (X > Y and Y ≤ Z → X > Z ✗ direction change). Hmm, complex.  
+8. Both needed: digits 4 and 8 â†’ number is 48 or 84. Not unique unless more given.  
+9. I âœ“, II âœ“, III âœ— (N â‰¥ O < P direction change). I and II follow.  
+10. I âœ—, II âœ“ (S < T = U â†’ S < U), III âœ—. Only II follows.  
+11. I âœ“, II âœ—, III âœ—. Only I follows.  
+12. I âœ“ (X > Y and Y â‰¤ Z â†’ X > Z âœ— direction change). Hmm, complex.  
 13. Both needed (A and B are cousins).  
-14. I alone: PQ = √(5²+12²) = 13 km.  
+14. I alone: PQ = âˆš(5Â²+12Â²) = 13 km.  
 15. Both needed: mother = 35, daughter = 15.  
-16. I ✓ (A > B ≥ C ≥ D = E → A > D), II ✓ (B ≥ C ≥ D = E), III ✓ (A > D = E → A > E). All three follow.  
-17. I: M ≥ N and N > O → M and O direction change ✗. II: N > O ≤ P direction change ✗. III: M ≥ N > O ≤ P ✗. None follow.  
+16. I âœ“ (A > B â‰¥ C â‰¥ D = E â†’ A > D), II âœ“ (B â‰¥ C â‰¥ D = E), III âœ“ (A > D = E â†’ A > E). All three follow.  
+17. I: M â‰¥ N and N > O â†’ M and O direction change âœ—. II: N > O â‰¤ P direction change âœ—. III: M â‰¥ N > O â‰¤ P âœ—. None follow.  
 18. Both needed: A > B > C and D < A, C < B? Complex.  
-19. II alone sufficient: X − Y = 6 doesn't give X+Y alone. Both needed.  
-20. P > S ✗ (P < Q ≤ R > S ✗). Q ≥ T ✗ (Q ≤ R > S ≥ T ✗). R ≤ T ✗ (R > S ≥ T → R > T). All three are not definitely true.  
-21. I ✓, II ✓ (M > P), III ✗. I and II follow.  
-22. I: X ≤ Y ≥ Z direction change ✗. II: Y ≥ Z = W → Y ≥ W ✓. III: X ≤ Y ≥ Z = W direction change ✗. Only II follows.  
+19. II alone sufficient: X âˆ’ Y = 6 doesn't give X+Y alone. Both needed.  
+20. P > S âœ— (P < Q â‰¤ R > S âœ—). Q â‰¥ T âœ— (Q â‰¤ R > S â‰¥ T âœ—). R â‰¤ T âœ— (R > S â‰¥ T â†’ R > T). All three are not definitely true.  
+21. I âœ“, II âœ“ (M > P), III âœ—. I and II follow.  
+22. I: X â‰¤ Y â‰¥ Z direction change âœ—. II: Y â‰¥ Z = W â†’ Y â‰¥ W âœ“. III: X â‰¤ Y â‰¥ Z = W direction change âœ—. Only II follows.  
 23. Either I or II alone sufficient.  
 24. Either I or II alone sufficient.  
-25. I: A > D ✓. II: B > E ✗ (B > C = D ≤ E → B > C = D ≤ E, direction change at D). III: C ≤ E (C = D ≤ E) ✓. I and III follow.  
-26. I ✓ (X < Y = Z → X < Z). II ✓ (Y = Z ≥ W > V → Y > V). III ✗ (X < Y → X < V not determinable across chain). I and II follow.  
-27. Complex — requires chain building.  
-28. II alone sufficient (Y west of W, W south of X → X is northeast of Y → X is north of Y ✓).  
+25. I: A > D âœ“. II: B > E âœ— (B > C = D â‰¤ E â†’ B > C = D â‰¤ E, direction change at D). III: C â‰¤ E (C = D â‰¤ E) âœ“. I and III follow.  
+26. I âœ“ (X < Y = Z â†’ X < Z). II âœ“ (Y = Z â‰¥ W > V â†’ Y > V). III âœ— (X < Y â†’ X < V not determinable across chain). I and II follow.  
+27. Complex â€” requires chain building.  
+28. II alone sufficient (Y west of W, W south of X â†’ X is northeast of Y â†’ X is north of Y âœ“).  
 29. I + III sufficient, or I + II + III.  
 30. Both needed: A > B > C > D > E or similar ordering.
 
@@ -1375,26 +1375,26 @@ I. A is older than B and C. D is older than E. II. C is older than D. B is young
 
 ## Summary
 
-- Direct inequalities use symbols >, <, ≥, ≤, =; transitive property applies for chains in the same direction
+- Direct inequalities use symbols >, <, â‰¥, â‰¤, =; transitive property applies for chains in the same direction
 - Coded inequalities use symbols like @, #, $, %, & to represent mathematical relations
 - Always create a single-direction chain when solving inequalities
 - If the chain changes direction (A > B < C), the relationship across the break cannot be determined
-- For ≥ in a chain with >, the result is > (e.g., A ≥ B > C → A > C)
+- For â‰¥ in a chain with >, the result is > (e.g., A â‰¥ B > C â†’ A > C)
 - Data sufficiency determines whether given statements provide enough information to answer a question
 - The five answer choices relate to which statement(s) are sufficient (I alone, II alone, both, either, none)
 - Always analyze each statement independently before combining them
-- A unique answer is required — if multiple answers are possible, the data is not sufficient
+- A unique answer is required â€” if multiple answers are possible, the data is not sufficient
 - For yes/no questions, a definite "no" is as valid as a definite "yes" for sufficiency
 
 ---
 
 ## Practical Takeaways
 
-- For inequalities, ALWAYS write the chain before checking conclusions — never try to do it mentally
-- For coded inequalities, immediately translate symbols to >, <, ≥, ≤, = before building the chain
+- For inequalities, ALWAYS write the chain before checking conclusions â€” never try to do it mentally
+- For coded inequalities, immediately translate symbols to >, <, â‰¥, â‰¤, = before building the chain
 - For data sufficiency, read the question first, then analyze each statement independently
 - Use the elimination method for data sufficiency: if I is sufficient, eliminate (2), (3), (5); then check II
-- Practice the "direction change" case in inequalities — this is where most mistakes happen
+- Practice the "direction change" case in inequalities â€” this is where most mistakes happen
 - For data sufficiency ranking questions, convert all ranks to "from top" before comparing
 - In blood relation data sufficiency, draw a family tree for each statement
 - Aim for 1 minute per inequality and 1.5 minutes per data sufficiency question in the exam
@@ -1403,22 +1403,22 @@ I. A is older than B and C. D is older than E. II. C is older than D. B is young
 
 ## Chapter Quiz
 
-**Q1:** Statements: A ≥ B > C = D < E ≤ F. Which conclusion definitely follows?
+**Q1:** Statements: A â‰¥ B > C = D < E â‰¤ F. Which conclusion definitely follows?
 - (a) A > C (b) F > C (c) D < A (d) Both (a) and (c)
 
 <details>
 <summary>Show Answer</summary>
-**(d) Both (a) and (c).** A ≥ B > C → A > C ✓. C = D, A > C → A > D ✓. F ≥ E > D → F > D but C = D, so F > C ✓ also. But wait, the chain is C < E ≤ F, so C < F. So (b) also follows. Let me recheck: A ≥ B > C = D < E ≤ F. A > C ✓ (A ≥ B > C gives A > C). D < A ✓ (D = C < A). F > C ✓ (C < E ≤ F gives F ≥ E > C. So C < E ≤ F, meaning F ≥ E > C. So F > C ✓). All three follow.
-Actually since chain is A ≥ B > C, A > C (a) follows. Since D = C and A > C, D < A (c) follows. Since C < E ≤ F, C < F (b) also follows. So all three follow. But the question has "both (a) and (c)" as option (d). The exam would typically have an "all follow" option. This demonstrates the importance of checking all conclusions.
+**(d) Both (a) and (c).** A â‰¥ B > C â†’ A > C âœ“. C = D, A > C â†’ A > D âœ“. F â‰¥ E > D â†’ F > D but C = D, so F > C âœ“ also. But wait, the chain is C < E â‰¤ F, so C < F. So (b) also follows. Let me recheck: A â‰¥ B > C = D < E â‰¤ F. A > C âœ“ (A â‰¥ B > C gives A > C). D < A âœ“ (D = C < A). F > C âœ“ (C < E â‰¤ F gives F â‰¥ E > C. So C < E â‰¤ F, meaning F â‰¥ E > C. So F > C âœ“). All three follow.
+Actually since chain is A â‰¥ B > C, A > C (a) follows. Since D = C and A > C, D < A (c) follows. Since C < E â‰¤ F, C < F (b) also follows. So all three follow. But the question has "both (a) and (c)" as option (d). The exam would typically have an "all follow" option. This demonstrates the importance of checking all conclusions.
 **Correct answer:** (d) Both (a) and (c) or possibly all three depending on options.
 </details>
 
-**Q2:** In a coded inequality, P @ Q means P ≥ Q, P # Q means P < Q, P $ Q means P > Q. Statements: A @ B, B # C, C $ D. Which conclusion follows?
+**Q2:** In a coded inequality, P @ Q means P â‰¥ Q, P # Q means P < Q, P $ Q means P > Q. Statements: A @ B, B # C, C $ D. Which conclusion follows?
 - (a) A > C (b) A > D (c) B > D (d) None follows
 
 <details>
 <summary>Show Answer</summary>
-**(d) None follows.** Translation: A ≥ B, B < C, C > D. Chain: A ≥ B < C > D. The chain breaks at B (≥ B < C), so A and C cannot be related. Similarly, A ≥ B < C > D means A and D cannot be related. B < C > D means B and D cannot be related. None of the conclusions definitely follow.
+**(d) None follows.** Translation: A â‰¥ B, B < C, C > D. Chain: A â‰¥ B < C > D. The chain breaks at B (â‰¥ B < C), so A and C cannot be related. Similarly, A â‰¥ B < C > D means A and D cannot be related. B < C > D means B and D cannot be related. None of the conclusions definitely follow.
 </details>
 
 **Q3:** What is the age of A?
@@ -1428,9 +1428,9 @@ Actually since chain is A ≥ B > C, A > C (a) follows. Since D = C and A > C, D
 <details>
 <summary>Show Answer</summary>
 **(c) Both statements together are sufficient.** 
-From I alone: A + B = 60, B = C − 10. C unknown. Not sufficient.
+From I alone: A + B = 60, B = C âˆ’ 10. C unknown. Not sufficient.
 From II alone: C = 35, A = B + 5. A and B both unknown. Not sufficient.
-From I + II: C = 35, B = C − 10 = 25. A = B + 5 = 30. Sufficient.
+From I + II: C = 35, B = C âˆ’ 10 = 25. A = B + 5 = 30. Sufficient.
 </details>
 
 **Q4:** Is P the son of Q?
@@ -1464,15 +1464,15 @@ Chain: E > A > C > D, and also E > A > B. We need to know if B > C or C > B. Fro
 ## Exercises
 
 1. **Direct Inequality:** Find which conclusions follow.
-Statements: P > Q, Q ≥ R, S < R, S = T, T > U
+Statements: P > Q, Q â‰¥ R, S < R, S = T, T > U
 Conclusions: (I) P > U (II) Q > T (III) P > R
 
-2. **Coded Inequality:** P @ Q means P > Q, P # Q means P = Q, P $ Q means P < Q, P % Q means P ≥ Q, P & Q means P ≤ Q.
+2. **Coded Inequality:** P @ Q means P > Q, P # Q means P = Q, P $ Q means P < Q, P % Q means P â‰¥ Q, P & Q means P â‰¤ Q.
 Statements: A @ B, B # C, C % D, D $ E, E & F
 Conclusions: (I) A > D (II) C % E (III) D < F
 
 3. **Data Sufficiency (Value):** What is the value of X + Y?
-- I. X² + Y² = 100
+- I. XÂ² + YÂ² = 100
 - II. X + Y = 2XY
 
 4. **Data Sufficiency (Ordering):** Who is the shortest among A, B, C, D?

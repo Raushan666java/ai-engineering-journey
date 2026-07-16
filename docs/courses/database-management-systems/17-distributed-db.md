@@ -1,6 +1,6 @@
-# Chapter 17: Distributed Database Systems
+﻿# Chapter 17: Distributed Database Systems
 
-> **Prev:** [Chapter 16 â†’ Redis](16-redis.md) | **Next:** [Chapter 18 â†’ Security](18-security.md)
+> **Prev:** [Chapter 16 Ã¢â€ â€™ Redis](16-redis.md) | **Next:** [Chapter 18 Ã¢â€ â€™ Security](18-security.md)
 
 ## Learning Objectives
 
@@ -16,16 +16,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/17-distributed-db/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/17-distributed-db/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/17-distributed-db/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/17-distributed-db/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/17-distributed-db/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/17-distributed-db/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/17-distributed-db/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/17-distributed-db/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/17-distributed-db/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/17-distributed-db/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/17-distributed-db/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/17-distributed-db/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -36,9 +36,9 @@
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| **Distributed DB Overview** | Logically related DBs across a network appear as one system | Design for failure â†’ any node can go down at any time |
+| **Distributed DB Overview** | Logically related DBs across a network appear as one system | Design for failure Ã¢â€ â€™ any node can go down at any time |
 | **Data Fragmentation** | Split data by rows (horizontal), columns (vertical), or both (hybrid) | Choose fragmentation based on query access patterns |
-| **Data Replication** | Full copy vs subset copy across nodes | Full replication â†’ fast reads, slow writes; partial â†’ balanced |
+| **Data Replication** | Full copy vs subset copy across nodes | Full replication Ã¢â€ â€™ fast reads, slow writes; partial Ã¢â€ â€™ balanced |
 | **Transparency** | Hide distribution details from users | Users write queries without knowing where data lives |
 | **2PC / 3PC** | Two-phase and three-phase commit for distributed transactions | 2PC blocks on coordinator failure; 3PC is non-blocking but slower |
 | **Query Processing** | Decompose global queries into site-local sub-queries | Semi-joins minimize network data transfer |
@@ -79,7 +79,7 @@ Imagine a retail chain with stores in New York, London, and Tokyo. Each store ha
 - **Tokyo store**: Sells electronics and local goods for Asian market
 - **Headquarters**: Runs global queries like "total revenue across all stores" without caring where each sale was recorded
 
-This is exactly how a distributed database works â†’ each node (store) has autonomy over its local data, but from the user's perspective it appears as one logical database.
+This is exactly how a distributed database works Ã¢â€ â€™ each node (store) has autonomy over its local data, but from the user's perspective it appears as one logical database.
 
 #### Key Properties (Date's 12 Rules for DDBMS)
 
@@ -131,19 +131,19 @@ Fragmentation splits a table into smaller pieces (fragments) stored at different
 
 A department store doesn't put all items in one pile. Instead:
 - **Horizontal fragmentation**: Each section (Menswear, Womenswear, Electronics) has its own rack with a subset of products (rows)
-- **Vertical fragmentation**: Customer information is split â†’ basic info (name, email) at the checkout counter, sensitive info (credit card, SSN) in the secure back office
+- **Vertical fragmentation**: Customer information is split Ã¢â€ â€™ basic info (name, email) at the checkout counter, sensitive info (credit card, SSN) in the secure back office
 - **Hybrid fragmentation**: Electronics section further splits TVs and laptops into sub-sections, and within each, only publicly visible specs vs internal pricing
 
 #### Horizontal Fragmentation
 
-Splits a table by rows â†’ each fragment contains a subset of tuples based on a selection condition.
+Splits a table by rows Ã¢â€ â€™ each fragment contains a subset of tuples based on a selection condition.
 
 **Real-World Analogy**: A global hotel chain stores booking records for each region at the regional headquarters. North American bookings stay in New York, European bookings in London, Asian bookings in Singapore.
 
 **Numbered Steps**:
 1. Identify the fragmentation attribute (e.g., region, dept_id)
 2. Define partitioning predicate for each fragment (e.g., region = 'NA', region = 'EU')
-3. Apply selection operation (ÃÆ’) to create each fragment
+3. Apply selection operation (ÃƒÂÃ†â€™) to create each fragment
 4. Assign each fragment to a site based on access patterns
 5. Create a fragmentation schema mapping each row to its home site
 
@@ -178,16 +178,16 @@ Input table `employees`:
 | 5 | Eve | Sales | 62000 |
 | 6 | Frank | Eng | 90000 |
 
-Partition rule: `dept = 'Sales'` â†’ Site 1, `dept = 'Eng'` â†’ Site 2
+Partition rule: `dept = 'Sales'` Ã¢â€ â€™ Site 1, `dept = 'Eng'` Ã¢â€ â€™ Site 2
 
 | Step | Action | Fragment Size | Destination |
 |------|--------|---------------|-------------|
-| 1 | Read table employees | 6 rows | â†’ |
-| 2 | Evaluate ÃÆ’(dept='Sales') | 3 rows (id:1,2,5) | Site 1 |
-| 3 | Evaluate ÃÆ’(dept='Eng') | 3 rows (id:3,4,6) | Site 2 |
+| 1 | Read table employees | 6 rows | Ã¢â€ â€™ |
+| 2 | Evaluate ÃƒÂÃ†â€™(dept='Sales') | 3 rows (id:1,2,5) | Site 1 |
+| 3 | Evaluate ÃƒÂÃ†â€™(dept='Eng') | 3 rows (id:3,4,6) | Site 2 |
 | 4 | Transfer fragment to Site 1 | 3 rows | Site 1 |
 | 5 | Transfer fragment to Site 2 | 3 rows | Site 2 |
-| 6 | Update global catalog | â†’ | Catalog server |
+| 6 | Update global catalog | Ã¢â€ â€™ | Catalog server |
 
 Result at Site 1 (Sales):
 
@@ -324,12 +324,12 @@ if __name__ == "__main__":
 
 | Metric | Value | Why |
 |--------|-------|-----|
-| **Time** | O(N Ãƒâ€” S) | N = total rows, S = number of sites. Each row is evaluated against each site's predicate (worst case). |
+| **Time** | O(N ÃƒÆ’Ã¢â‚¬â€ S) | N = total rows, S = number of sites. Each row is evaluated against each site's predicate (worst case). |
 | **Space** | O(N) | Total storage across all fragments equals original table size + metadata overhead. |
-| **Network** | O(N Ãƒâ€” avg_row_size Ãƒâ€” S) | Each row is transmitted to at most one site (if predicates are disjoint). |
+| **Network** | O(N ÃƒÆ’Ã¢â‚¬â€ avg_row_size ÃƒÆ’Ã¢â‚¬â€ S) | Each row is transmitted to at most one site (if predicates are disjoint). |
 | **Query cost** | O(N/S) per site | After fragmentation, queries only scan local fragment (S fragments of avg N/S rows). |
 
-**Why O(N Ãƒâ€” S)?** Each of the N rows must be tested against up to S predicates to determine its destination. If predicates are mutually exclusive and exhaustive, we can optimize to O(N) by using a hash function.
+**Why O(N ÃƒÆ’Ã¢â‚¬â€ S)?** Each of the N rows must be tested against up to S predicates to determine its destination. If predicates are mutually exclusive and exhaustive, we can optimize to O(N) by using a hash function.
 
 **Advantages & Disadvantages Table**:
 
@@ -342,22 +342,22 @@ if __name__ == "__main__":
 | **Scalability** | Simple to add new fragments (e.g., new region) | Rebalancing requires predicate changes |
 
 **Edge Cases**:
-1. **NULL values in fragmentation attribute**: Rows with NULL dept don't match any predicate â†’ orphans
-2. **Overlapping predicates**: Row matches multiple predicates â†’ duplication or ambiguity
+1. **NULL values in fragmentation attribute**: Rows with NULL dept don't match any predicate Ã¢â€ â€™ orphans
+2. **Overlapping predicates**: Row matches multiple predicates Ã¢â€ â€™ duplication or ambiguity
 3. **Non-disjoint predicates**: Data redundancy if a row matches >1 site
 4. **Empty fragments**: A site with no matching rows wastes resources
 5. **Dynamic repartitioning**: When access patterns shift, redistributing rows is expensive
 
 #### Vertical Fragmentation
 
-Splits a table by columns â†’ each fragment contains a subset of attributes, always including the primary key for reconstruction.
+Splits a table by columns Ã¢â€ â€™ each fragment contains a subset of attributes, always including the primary key for reconstruction.
 
 **Real-World Analogy**: Hospital patient records where basic demographics (name, age, blood type) are accessible to all nurses, while diagnosis and prescription details are restricted to doctors only. Both fragments share the patient ID to link them.
 
 **Numbered Steps**:
 1. Identify attribute groups based on access patterns (frequency, sensitivity)
 2. Ensure each fragment includes the primary key
-3. Apply projection operation (Ãâ‚¬) for each attribute group
+3. Apply projection operation (ÃƒÂÃ¢â€šÂ¬) for each attribute group
 4. Assign fragments to sites with appropriate access controls
 5. Create reconstruction view using JOIN on primary key
 
@@ -395,17 +395,17 @@ Input table `employees`:
 | 2 | Bob | Sales | 55000 | 444-55-6666 |
 | 3 | Carol | Eng | 80000 | 777-88-9999 |
 
-Group 1 (Site 1 â†’ public): {name, dept}
-Group 2 (Site 2 â†’ sensitive): {salary, ssn}
+Group 1 (Site 1 Ã¢â€ â€™ public): {name, dept}
+Group 2 (Site 2 Ã¢â€ â€™ sensitive): {salary, ssn}
 
 | Step | Action | Fragment | Destination |
 |------|--------|----------|-------------|
-| 1 | Identify key = id | â†’ | â†’ |
-| 2 | Project Ãâ‚¬(id, name, dept) | (id, name, dept) | Site 1 |
-| 3 | Project Ãâ‚¬(id, salary, ssn) | (id, salary, ssn) | Site 2 |
-| 4 | Transfer fragment | 3 cols Ãƒâ€” 3 rows | Site 1 |
-| 5 | Transfer fragment | 3 cols Ãƒâ€” 3 rows | Site 2 |
-| 6 | Record reconstruction: NATURAL JOIN on id | â†’ | Catalog |
+| 1 | Identify key = id | Ã¢â€ â€™ | Ã¢â€ â€™ |
+| 2 | Project ÃƒÂÃ¢â€šÂ¬(id, name, dept) | (id, name, dept) | Site 1 |
+| 3 | Project ÃƒÂÃ¢â€šÂ¬(id, salary, ssn) | (id, salary, ssn) | Site 2 |
+| 4 | Transfer fragment | 3 cols ÃƒÆ’Ã¢â‚¬â€ 3 rows | Site 1 |
+| 5 | Transfer fragment | 3 cols ÃƒÆ’Ã¢â‚¬â€ 3 rows | Site 2 |
+| 6 | Record reconstruction: NATURAL JOIN on id | Ã¢â€ â€™ | Catalog |
 
 Site 1 (Public):
 
@@ -531,12 +531,12 @@ if __name__ == "__main__":
 
 | Metric | Value | Why |
 |--------|-------|-----|
-| **Time** | O(N Ãƒâ€” C) | N = rows, C = total columns. Each cell is copied into its fragment. |
-| **Space** | O(N Ãƒâ€” C) | Total storage equals original + key duplication in each fragment. |
-| **Reconstruction** | O(N Ãƒâ€” C) | Join on key requires hash lookup or sort-merge across fragments. |
-| **Query benefit** | O(N Ãƒâ€” C/S) | Queries only access relevant columns, reducing I/O. |
+| **Time** | O(N ÃƒÆ’Ã¢â‚¬â€ C) | N = rows, C = total columns. Each cell is copied into its fragment. |
+| **Space** | O(N ÃƒÆ’Ã¢â‚¬â€ C) | Total storage equals original + key duplication in each fragment. |
+| **Reconstruction** | O(N ÃƒÆ’Ã¢â‚¬â€ C) | Join on key requires hash lookup or sort-merge across fragments. |
+| **Query benefit** | O(N ÃƒÆ’Ã¢â‚¬â€ C/S) | Queries only access relevant columns, reducing I/O. |
 
-**Why O(N Ãƒâ€” C)?** Every cell in the table must be read and placed into exactly one fragment. Each fragment copies the key column, so total stored data = original data Ãƒâ€” (1 + (F-1) Ãƒâ€” key_size/C) where F = number of fragments.
+**Why O(N ÃƒÆ’Ã¢â‚¬â€ C)?** Every cell in the table must be read and placed into exactly one fragment. Each fragment copies the key column, so total stored data = original data ÃƒÆ’Ã¢â‚¬â€ (1 + (F-1) ÃƒÆ’Ã¢â‚¬â€ key_size/C) where F = number of fragments.
 
 **Advantages & Disadvantages Table**:
 
@@ -544,7 +544,7 @@ if __name__ == "__main__":
 |-----------|-----------|--------------|
 | **Privacy** | Sensitive columns stored separately with access controls | Key column is duplicated in every fragment |
 | **Performance** | Queries scan only needed columns | Reconstruction joins across fragments are expensive |
-| **Cache efficiency** | Row width is smaller â†’ more rows per page | Update must touch multiple fragments |
+| **Cache efficiency** | Row width is smaller Ã¢â€ â€™ more rows per page | Update must touch multiple fragments |
 | **Security** | Column-level access without DBMS support | Referential integrity across fragments is complex |
 
 **Edge Cases**:
@@ -556,7 +556,7 @@ if __name__ == "__main__":
 
 #### Hybrid (Mixed) Fragmentation
 
-Combines horizontal and vertical fragmentation â†’ first split by rows, then by columns (or vice versa).
+Combines horizontal and vertical fragmentation Ã¢â€ â€™ first split by rows, then by columns (or vice versa).
 
 **Real-World Analogy**: An international bank fragments customer accounts horizontally by region (NA, EU, APAC). Within each region, basic account info (name, balance) goes to the customer-facing app, while transaction history and KYC docs go to the secure compliance system.
 
@@ -588,9 +588,9 @@ END PROCEDURE
 **Dry Run Trace: Hybrid Fragmentation**
 
 Input: `employees` table with 6 rows and 5 columns.
-Step 1: Horizontal by `dept` â†’ 2 fragments (Sales: 3 rows, Eng: 3 rows)
-Step 2: Vertical on Sales â†’ public (id, name) + sensitive (id, salary, ssn)
-Step 2: Vertical on Eng â†’ public (id, name) + sensitive (id, salary, ssn)
+Step 1: Horizontal by `dept` Ã¢â€ â€™ 2 fragments (Sales: 3 rows, Eng: 3 rows)
+Step 2: Vertical on Sales Ã¢â€ â€™ public (id, name) + sensitive (id, salary, ssn)
+Step 2: Vertical on Eng Ã¢â€ â€™ public (id, name) + sensitive (id, salary, ssn)
 
 Result: 4 fragments total.
 
@@ -619,7 +619,7 @@ CREATE VIEW eng_sensitive AS SELECT id, salary, ssn FROM eng_emp;
 | Property | Horizontal | Vertical | Hybrid |
 |----------|------------|----------|--------|
 | **Splits by** | Rows (tuples) | Columns (attributes) | Both rows and columns |
-| **Operation** | ÃÆ’ (selection) | Ãâ‚¬ (projection) | ÃÆ’ then Ãâ‚¬, or Ãâ‚¬ then ÃÆ’ |
+| **Operation** | ÃƒÂÃ†â€™ (selection) | ÃƒÂÃ¢â€šÂ¬ (projection) | ÃƒÂÃ†â€™ then ÃƒÂÃ¢â€šÂ¬, or ÃƒÂÃ¢â€šÂ¬ then ÃƒÂÃ†â€™ |
 | **Key preserved** | Yes (all columns) | Yes (key in each fragment) | Yes (key in all vertical sub-fragments) |
 | **Reconstruction** | UNION | NATURAL JOIN | JOIN of UNIONs |
 | **Parallelism** | High (independent row sets) | Medium (column groups) | High (fine-grained splits) |
@@ -652,7 +652,7 @@ Every site stores the complete database.
 
 **Real-World Analogy**: A cloud document service (like Google Docs) stores your document on servers in the US, EU, and Asia. Any user can read/edit from anywhere, and the service syncs changes across all regions.
 
-**Numbered Steps** (Full Replication â†’ Write Path):
+**Numbered Steps** (Full Replication Ã¢â€ â€™ Write Path):
 1. Client sends write request to any replica
 2. Coordinator propagates write to all replicas
 3. Each replica applies the write and acknowledges
@@ -684,11 +684,11 @@ END PROCEDURE
 
 | Metric | Sync Full Replication | Async Full Replication |
 |--------|----------------------|----------------------|
-| **Write time** | O(L) where L = max network latency to any replica | O(1) â†’ local write only |
-| **Read time** | O(1) â†’ read from nearest replica | O(1) |
+| **Write time** | O(L) where L = max network latency to any replica | O(1) Ã¢â€ â€™ local write only |
+| **Read time** | O(1) Ã¢â€ â€™ read from nearest replica | O(1) |
 | **Network messages** | O(N) per write (N = replicas) | O(1) synchronous + O(N) async |
 | **Consistency** | Strong (linearizable) | Eventual |
-| **Storage** | O(N Ãƒâ€” DB_size) per replica set | Same |
+| **Storage** | O(N ÃƒÆ’Ã¢â‚¬â€ DB_size) per replica set | Same |
 
 **Why O(L) for sync writes?** The coordinator must wait for the slowest replica's acknowledgment. Network latency across continents can be 100-300ms, so a sync write to 5 replicas takes at least the maximum RTT.
 
@@ -696,11 +696,11 @@ END PROCEDURE
 
 | Dimension | Advantage | Disadvantage |
 |-----------|-----------|--------------|
-| **Read availability** | Any replica can serve reads | â†’ |
-| **Write cost** | â†’ | Must write to ALL replicas |
-| **Consistency** | Sync â†’ strong; Async â†’ eventual | Sync is slow; Async has conflict risk |
+| **Read availability** | Any replica can serve reads | Ã¢â€ â€™ |
+| **Write cost** | Ã¢â€ â€™ | Must write to ALL replicas |
+| **Consistency** | Sync Ã¢â€ â€™ strong; Async Ã¢â€ â€™ eventual | Sync is slow; Async has conflict risk |
 | **Fault tolerance** | Losing any replica doesn't affect reads | Write fails if any replica is down (sync) |
-| **Storage** | â†’ | N Ãƒâ€” DB_size storage cost |
+| **Storage** | Ã¢â€ â€™ | N ÃƒÆ’Ã¢â‚¬â€ DB_size storage cost |
 | **Throughput** | Read throughput scales with replicas | Write throughput limited by slowest replica |
 
 #### Partial Replication
@@ -735,7 +735,7 @@ END PROCEDURE
 | Metric | Partial Replication | Full Replication |
 |--------|--------------------|-----------------|
 | **Write time** | O(L_max) to W replicas | O(L_max) to ALL replicas |
-| **Storage** | O(R Ãƒâ€” avg_data_per_site) | O(N Ãƒâ€” total_data) |
+| **Storage** | O(R ÃƒÆ’Ã¢â‚¬â€ avg_data_per_site) | O(N ÃƒÆ’Ã¢â‚¬â€ total_data) |
 | **Network** | O(R) messages per write | O(N) messages per write |
 | **Read availability** | R out of N sites have the data | All N sites have the data |
 | **Tunability** | Choose R, W, R for consistency | Fixed (W = N, R = 1) |
@@ -744,11 +744,11 @@ END PROCEDURE
 
 | Dimension | Advantage | Disadvantage |
 |-----------|-----------|--------------|
-| **Storage efficiency** | Proportional to R, not N | â†’ |
-| **Write performance** | Write to R replicas vs all N | â†’ |
+| **Storage efficiency** | Proportional to R, not N | Ã¢â€ â€™ |
+| **Write performance** | Write to R replicas vs all N | Ã¢â€ â€™ |
 | **Tunable consistency** | Choose R + W > N for strong | Configuration complexity |
 | **Read locality** | Replicate popular data widely | Cache placement decisions needed |
-| **Hotspots** | â†’ | Uneven access may require re-replication |
+| **Hotspots** | Ã¢â€ â€™ | Uneven access may require re-replication |
 
 #### Replication Protocols
 
@@ -766,7 +766,7 @@ END PROCEDURE
 | Criterion | Full Replication | Partial Replication |
 |-----------|------------------|--------------------|
 | **Data at each site** | Complete database | Subset of database |
-| **Storage cost** | N Ãƒâ€” total_data | R Ãƒâ€” avg_data_per_item |
+| **Storage cost** | N ÃƒÆ’Ã¢â‚¬â€ total_data | R ÃƒÆ’Ã¢â‚¬â€ avg_data_per_item |
 | **Read availability** | Every site can serve any query | Only sites with the data can serve |
 | **Write cost** | Highest (must update all N) | Moderate (update R sites) |
 | **Fault tolerance** | Losing any site is fine | Losing the only copy of an item is data loss |
@@ -785,17 +785,17 @@ Transparency hides the complexities of distribution from the user, making a dist
 #### Real-World Analogy: The Internet
 
 When you visit google.com, you don't know (or care) which data center serves your request:
-- **Location transparency**: You type `google.com` â†’ the DNS resolves to the nearest server automatically
-- **Replication transparency**: Google has multiple copies of search indexes globally â†’ you don't see which one is used
-- **Fragmentation transparency**: Google's index is split across thousands of machines â†’ your search query spans them invisibly
-- **Failure transparency**: If one Google server fails, your request routes to another â†’ you never notice
+- **Location transparency**: You type `google.com` Ã¢â€ â€™ the DNS resolves to the nearest server automatically
+- **Replication transparency**: Google has multiple copies of search indexes globally Ã¢â€ â€™ you don't see which one is used
+- **Fragmentation transparency**: Google's index is split across thousands of machines Ã¢â€ â€™ your search query spans them invisibly
+- **Failure transparency**: If one Google server fails, your request routes to another Ã¢â€ â€™ you never notice
 
 #### Types of Transparency
 
 | Transparency Type | What It Hides | Analogy | SQL/Practical Example |
 |------------------|---------------|---------|----------------------|
-| **Location transparency** | Physical location (which site, which server) | DNS hides which IP serves google.com | `SELECT * FROM employees` â†’ no site prefix needed |
-| **Fragmentation transparency** | Data is split into fragments | Google hides that the index is sharded | `SELECT * FROM employees` â†’ single logical table despite fragments |
+| **Location transparency** | Physical location (which site, which server) | DNS hides which IP serves google.com | `SELECT * FROM employees` Ã¢â€ â€™ no site prefix needed |
+| **Fragmentation transparency** | Data is split into fragments | Google hides that the index is sharded | `SELECT * FROM employees` Ã¢â€ â€™ single logical table despite fragments |
 | **Replication transparency** | Multiple copies of data exist | CDN hides which edge server delivers content | Reads return from any replica transparently |
 | **Failure transparency** | Node failures and recovery | Cloud load balancer hides failed servers | Queries complete despite node failures |
 | **Concurrency transparency** | Multiple users accessing simultaneously | ATM network handles concurrent withdrawals | Serializable isolation across sites |
@@ -839,7 +839,7 @@ UPDATE products SET price = 29.99 WHERE id = 100;
 ```sql
 -- User query completes despite node failure:
 SELECT * FROM orders;  -- System detects failed node, reroutes
--- User doesn't retry â†’ system handles failure internally
+-- User doesn't retry Ã¢â€ â€™ system handles failure internally
 ```
 
 ---
@@ -864,7 +864,7 @@ The standard atomic commitment protocol for distributed transactions.
 **Numbered Steps**:
 1. **Coordinator sends PREPARE** to all participants with transaction ID and data
 2. **Each participant** executes the transaction up to commit point, logs PREPARED state, votes YES or NO
-3. **Coordinator collects votes** â†’ if all YES, decides COMMIT; if any NO or timeout, decides ABORT
+3. **Coordinator collects votes** Ã¢â€ â€™ if all YES, decides COMMIT; if any NO or timeout, decides ABORT
 4. **Coordinator sends decision** (COMMIT or ABORT) to all participants
 5. **Each participant** applies the decision, logs DONE or ABORTED, releases locks
 6. **Participants send ACK** to coordinator
@@ -913,15 +913,15 @@ Transaction T1: Transfer $500 from Account A (Site 1) to Account B (Site 2).
 | 0 | INIT | IDLE | IDLE |
 | 1 | Send PREPARE to P1,P2 | Receives PREPARE | Receives PREPARE |
 | 1a | WAIT | Executes T1 locally (deduct $500), logs PREPARED | Executes T1 locally (credit $500), logs PREPARED |
-| 1b | â†’ | Sends YES | Sends YES |
-| 2 | Receives YES from both | â†’ | â†’ |
-| 2a | All YES â†’ decides COMMIT | â†’ | â†’ |
-| 2b | Logs COMMIT, sends COMMIT | â†’ | â†’ |
-| 3 | â†’ | Receives COMMIT | Receives COMMIT |
-| 3a | â†’ | Applies changes, releases locks, logs DONE | Applies changes, releases locks, logs DONE |
-| 3b | â†’ | Sends ACK | Sends ACK |
-| 4 | Receives both ACKs | â†’ | â†’ |
-| 4a | Logs DONE, transaction complete | â†’ | â†’ |
+| 1b | Ã¢â€ â€™ | Sends YES | Sends YES |
+| 2 | Receives YES from both | Ã¢â€ â€™ | Ã¢â€ â€™ |
+| 2a | All YES Ã¢â€ â€™ decides COMMIT | Ã¢â€ â€™ | Ã¢â€ â€™ |
+| 2b | Logs COMMIT, sends COMMIT | Ã¢â€ â€™ | Ã¢â€ â€™ |
+| 3 | Ã¢â€ â€™ | Receives COMMIT | Receives COMMIT |
+| 3a | Ã¢â€ â€™ | Applies changes, releases locks, logs DONE | Applies changes, releases locks, logs DONE |
+| 3b | Ã¢â€ â€™ | Sends ACK | Sends ACK |
+| 4 | Receives both ACKs | Ã¢â€ â€™ | Ã¢â€ â€™ |
+| 4a | Logs DONE, transaction complete | Ã¢â€ â€™ | Ã¢â€ â€™ |
 
 Final state: T1 committed. Account A: -$500, Account B: +$500.
 
@@ -932,12 +932,12 @@ Final state: T1 committed. Account A: -$500, Account B: +$500.
 | 0 | INIT | IDLE | IDLE |
 | 1 | Send PREPARE | PREPARE received | PREPARE received |
 | 1a | WAIT | Executes, logs PREPARED | Insufficient balance, logs ABORT |
-| 1b | â†’ | YES | NO |
-| 2 | Receives YES from P1, NO from P2 | â†’ | â†’ |
-| 2a | Has a NO â†’ decides ABORT | â†’ | â†’ |
-| 2b | Logs ABORT, sends ABORT | â†’ | â†’ |
-| 3 | â†’ | Receives ABORT, rolls back, releases locks | Receives ABORT (already aborted), releases locks |
-| 4 | Transaction ABORTED | â†’ | â†’ |
+| 1b | Ã¢â€ â€™ | YES | NO |
+| 2 | Receives YES from P1, NO from P2 | Ã¢â€ â€™ | Ã¢â€ â€™ |
+| 2a | Has a NO Ã¢â€ â€™ decides ABORT | Ã¢â€ â€™ | Ã¢â€ â€™ |
+| 2b | Logs ABORT, sends ABORT | Ã¢â€ â€™ | Ã¢â€ â€™ |
+| 3 | Ã¢â€ â€™ | Receives ABORT, rolls back, releases locks | Receives ABORT (already aborted), releases locks |
+| 4 | Transaction ABORTED | Ã¢â€ â€™ | Ã¢â€ â€™ |
 
 Final state: T1 aborted. Neither account modified.
 
@@ -1217,10 +1217,10 @@ if __name__ == "__main__":
 |--------|-------|-----|
 | **Message rounds** | 2 rounds | Prepare (1 round-trip) + Commit (1 round-trip) |
 | **Total messages** | 4N | Prepare (N), YES/NO (N), Decision (N), ACK (N) |
-| **Time (best case)** | 2 Ãƒâ€” max_latency + 2 Ãƒâ€” local_exec | Two network round-trips + local execution |
-| **Time (coordinator failure)** | Ã¢Ë†Å¾ (blocking) | Participants wait indefinitely if coordinator fails after PREPARE |
+| **Time (best case)** | 2 ÃƒÆ’Ã¢â‚¬â€ max_latency + 2 ÃƒÆ’Ã¢â‚¬â€ local_exec | Two network round-trips + local execution |
+| **Time (coordinator failure)** | ÃƒÂ¢Ã‹â€ Ã…Â¾ (blocking) | Participants wait indefinitely if coordinator fails after PREPARE |
 | **Log writes** | 3 per participant (PREPARE, COMMIT/ABORT, DONE) | Durability requires writing to stable storage |
-| **Blocking probability** | P(coord_fail) Ãƒâ€” P(uncertain_state) | Proportional to window between PREPARE and DECISION |
+| **Blocking probability** | P(coord_fail) ÃƒÆ’Ã¢â‚¬â€ P(uncertain_state) | Proportional to window between PREPARE and DECISION |
 
 **Why 2 rounds?** The protocol requires exactly 2 network round-trips: one to ask all participants if they can commit, and one to tell them the decision. No optimization can reduce it below 2 because the coordinator cannot know participants' states without asking.
 
@@ -1237,9 +1237,9 @@ if __name__ == "__main__":
 **Edge Cases**:
 1. **Coordinator failure after PREPARE but before decision**: Participants hold locks and resources indefinitely (blocking problem). Solution: timeout + heuristic abort, or 3PC.
 2. **Participant failure after voting YES**: Coordinator retries decision delivery. Participant logs allow recovery on restart.
-3. **Network partition**: Coordinator cannot reach some participants â†’ times out â†’ ABORT. Participants who voted YES and can't reach coordinator are blocked.
-4. **Concurrent transactions**: Deadlock across sites â†’ transaction T1 at Site A waiting for Site B's lock, T2 at Site B waiting for Site A's lock. Requires distributed deadlock detection.
-5. **Lost ACK**: Coordinator doesn't receive acknowledgment â†’ re-sends decision. Participants must handle duplicate COMMIT/ABORT messages idempotently.
+3. **Network partition**: Coordinator cannot reach some participants Ã¢â€ â€™ times out Ã¢â€ â€™ ABORT. Participants who voted YES and can't reach coordinator are blocked.
+4. **Concurrent transactions**: Deadlock across sites Ã¢â€ â€™ transaction T1 at Site A waiting for Site B's lock, T2 at Site B waiting for Site A's lock. Requires distributed deadlock detection.
+5. **Lost ACK**: Coordinator doesn't receive acknowledgment Ã¢â€ â€™ re-sends decision. Participants must handle duplicate COMMIT/ABORT messages idempotently.
 6. **Split-brain**: Network partition splits participants, each group thinks it's the primary. Requires consensus + fencing.
 
 #### Three-Phase Commit (3PC)
@@ -1248,7 +1248,7 @@ Non-blocking protocol that adds an extra phase to avoid the blocking problem of 
 
 **Numbered Steps**:
 1. **CanCommit**: Coordinator asks if participants can commit (similar to 2PC Prepare)
-2. **PreCommit**: After all YES, coordinator sends PreCommit â†’ participants must respond with ACK
+2. **PreCommit**: After all YES, coordinator sends PreCommit Ã¢â€ â€™ participants must respond with ACK
 3. **DoCommit**: After all PreCommit ACKs, coordinator sends DoCommit
 
 **Why 3PC avoids blocking**: Participants in the PreCommit state can unilaterally abort on timeout. The PreCommit phase ensures all participants are in agreement about the decision *before* the commit is final.
@@ -1316,7 +1316,7 @@ UPON RECEIVE "ABORT":
 
 UPON TIMEOUT:
     IF state == PRE_COMMIT:
-        // Unilaterally abort â†’ no blocking!
+        // Unilaterally abort Ã¢â€ â€™ no blocking!
         state = ABORTED, ABORT transaction
 ```
 
@@ -1325,14 +1325,14 @@ UPON TIMEOUT:
 | Step | Coordinator | Participant 1 | Participant 2 |
 |------|-------------|---------------|---------------|
 | 0 | INIT | IDLE | IDLE |
-| 1 | CanCommit â†’ P1,P2 | READY â†’ YES | READY â†’ YES |
-| 2 | All YES â†’ PreCommit | â†’ | â†’ |
-| 2a | PreCommit â†’ P1,P2 | PRE_COMMIT â†’ ACK | PRE_COMMIT â†’ ACK |
-| 3 | All ACK â†’ DoCommit | â†’ | â†’ |
-| 3a | DoCommit â†’ P1,P2 | COMMITTED | COMMITTED |
-| 4 | Done | â†’ | â†’ |
+| 1 | CanCommit Ã¢â€ â€™ P1,P2 | READY Ã¢â€ â€™ YES | READY Ã¢â€ â€™ YES |
+| 2 | All YES Ã¢â€ â€™ PreCommit | Ã¢â€ â€™ | Ã¢â€ â€™ |
+| 2a | PreCommit Ã¢â€ â€™ P1,P2 | PRE_COMMIT Ã¢â€ â€™ ACK | PRE_COMMIT Ã¢â€ â€™ ACK |
+| 3 | All ACK Ã¢â€ â€™ DoCommit | Ã¢â€ â€™ | Ã¢â€ â€™ |
+| 3a | DoCommit Ã¢â€ â€™ P1,P2 | COMMITTED | COMMITTED |
+| 4 | Done | Ã¢â€ â€™ | Ã¢â€ â€™ |
 
-**3PC Coordinator Failure Recovery**: If coordinator fails after PreCommit but before DoCommit, participants timeout and *abort* â†’ they are not blocked. If coordinator fails after DoCommit, participants *commit* on timeout if they received DoCommit, or *abort* if they only reached PreCommit.
+**3PC Coordinator Failure Recovery**: If coordinator fails after PreCommit but before DoCommit, participants timeout and *abort* Ã¢â€ â€™ they are not blocked. If coordinator fails after DoCommit, participants *commit* on timeout if they received DoCommit, or *abort* if they only reached PreCommit.
 
 #### 2PC vs 3PC Comparison
 
@@ -1341,14 +1341,14 @@ UPON TIMEOUT:
 | **Phases** | 2 (Prepare, Commit/Abort) | 3 (CanCommit, PreCommit, DoCommit) |
 | **Message rounds** | 2 | 3 |
 | **Total messages** | 4N | 6N |
-| **Blocking** | Yes â†’ coordinator failure blocks participants | No â†’ participants can abort on timeout |
+| **Blocking** | Yes Ã¢â€ â€™ coordinator failure blocks participants | No Ã¢â€ â€™ participants can abort on timeout |
 | **Network latency tolerance** | One extra round-trip vs 3PC | Higher latency due to extra round-trip |
 | **Complexity** | Low | Medium |
 | **Recovery** | Coordinator writes decision to log; participants probe on reconnect | Participants can unilaterally decide on timeout |
 | **Survivability** | Single coordinator failure can halt the system | Survives coordinator failure (within window) |
 | **Use case** | Short transactions, reliable network | Long transactions, unreliable network |
 | **Real-world adoption** | Widely used (PostgreSQL, Oracle, MS SQL) | Rare (needs precise timeout configuration) |
-| **Commit latency** | ~2 Ãƒâ€” RTT | ~3 Ãƒâ€” RTT |
+| **Commit latency** | ~2 ÃƒÆ’Ã¢â‚¬â€ RTT | ~3 ÃƒÆ’Ã¢â‚¬â€ RTT |
 | **State machine** | 3 states (INIT, PREPARED, COMMIT/ABORT) | 5 states (INIT, READY, PRE_COMMIT, COMMIT, ABORT) |
 
 **When to use 2PC vs 3PC**:
@@ -1421,12 +1421,12 @@ Catalog:
 
 | Step | Action | Data Transferred |
 |------|--------|-----------------|
-| 0 | Parse query, identify tables: employees (e), departments (d) | â†’ |
-| 1 | Catalog lookup: employees â†’ Site1 (Sales rows), Site2 (Eng rows) | â†’ |
-| 2 | Optimizer: use semi-join approach | â†’ |
+| 0 | Parse query, identify tables: employees (e), departments (d) | Ã¢â€ â€™ |
+| 1 | Catalog lookup: employees Ã¢â€ â€™ Site1 (Sales rows), Site2 (Eng rows) | Ã¢â€ â€™ |
+| 2 | Optimizer: use semi-join approach | Ã¢â€ â€™ |
 | 3 | Site1 sub-query: SELECT * FROM emp_sales WHERE salary > 100000 | Site1 processes locally |
 | 4 | Site2 sub-query: SELECT * FROM emp_eng WHERE salary > 100000 | Site2 processes locally |
-| 5 | Each site also queries local departments for names | â†’ |
+| 5 | Each site also queries local departments for names | Ã¢â€ â€™ |
 | 6 | Transfer results to coordinator | ~filtered rows only |
 | 7 | Coordinator merges and returns to client | Final result set |
 
@@ -1434,15 +1434,15 @@ Catalog:
 
 Without semi-join:
 ```
-Site1 sends entire emp_sales table to Site2 â†’ Network: 10MB
-Site2 does join locally â†’ Result returned
+Site1 sends entire emp_sales table to Site2 Ã¢â€ â€™ Network: 10MB
+Site2 does join locally Ã¢â€ â€™ Result returned
 ```
 
 With semi-join:
 ```
-Site1 sends only e.dept_id values (projection) to Site2 â†’ Network: 0.1MB
-Site2 returns only matching rows â†’ Network: 1MB
-Site1 joins received rows with local departments â†’ Total: 1.1MB (89% savings)
+Site1 sends only e.dept_id values (projection) to Site2 Ã¢â€ â€™ Network: 0.1MB
+Site2 returns only matching rows Ã¢â€ â€™ Network: 1MB
+Site1 joins received rows with local departments Ã¢â€ â€™ Total: 1.1MB (89% savings)
 ```
 
 **C++ Implementation** (Distributed Query Planner):
@@ -1653,14 +1653,14 @@ if __name__ == "__main__":
 
 | Phase | Time Complexity | Network Complexity | Why |
 |-------|----------------|-------------------|-----|
-| **Parsing** | O(Q) | â†’ | Q = query length |
+| **Parsing** | O(Q) | Ã¢â€ â€™ | Q = query length |
 | **Catalog lookup** | O(log C) | O(1) | C = catalog entries, indexed by table name |
-| **Decomposition** | O(S Ãƒâ€” T) | O(S) | S = sites, T = tables in query |
-| **Semi-join optimization** | O(S Ãƒâ€” J) | O(S Ãƒâ€” key_size) | J = join conditions; keys are much smaller than full rows |
-| **Local execution** | O(N_site Ãƒâ€” log N_site) | O(result_set) | Each site processes its fragment |
-| **Result assembly** | O(R Ãƒâ€” S) | O(R) | R = total result rows from all sites |
+| **Decomposition** | O(S ÃƒÆ’Ã¢â‚¬â€ T) | O(S) | S = sites, T = tables in query |
+| **Semi-join optimization** | O(S ÃƒÆ’Ã¢â‚¬â€ J) | O(S ÃƒÆ’Ã¢â‚¬â€ key_size) | J = join conditions; keys are much smaller than full rows |
+| **Local execution** | O(N_site ÃƒÆ’Ã¢â‚¬â€ log N_site) | O(result_set) | Each site processes its fragment |
+| **Result assembly** | O(R ÃƒÆ’Ã¢â‚¬â€ S) | O(R) | R = total result rows from all sites |
 
-**Why semi-join reduces network cost from O(rows Ãƒâ€” row_width) to O(rows_distinct Ãƒâ€” key_width)?** Instead of shipping full rows (say, 100 bytes each) across sites, semi-join ships only distinct join column values (say, 4 bytes each). For a table with 1M rows but only 10K distinct join keys, network savings = (100 Ãƒâ€” 1M) / (4 Ãƒâ€” 10K) = 2500Ãƒâ€” reduction.
+**Why semi-join reduces network cost from O(rows ÃƒÆ’Ã¢â‚¬â€ row_width) to O(rows_distinct ÃƒÆ’Ã¢â‚¬â€ key_width)?** Instead of shipping full rows (say, 100 bytes each) across sites, semi-join ships only distinct join column values (say, 4 bytes each). For a table with 1M rows but only 10K distinct join keys, network savings = (100 ÃƒÆ’Ã¢â‚¬â€ 1M) / (4 ÃƒÆ’Ã¢â‚¬â€ 10K) = 2500ÃƒÆ’Ã¢â‚¬â€ reduction.
 
 **Advantages & Disadvantages**:
 
@@ -1753,11 +1753,11 @@ Correctness rules for fragmentation:
 #### Replication Decisions
 
 Factors influencing replication:
-- **Read-to-write ratio**: High read frequency â†’ more replicas
-- **Consistency requirements**: Strong consistency â†’ synchronous replication
-- **Storage budget**: Limited storage â†’ partial replication
-- **Failure tolerance**: Critical data â†’ higher replication factor
-- **Network topology**: High bandwidth â†’ more aggressive replication
+- **Read-to-write ratio**: High read frequency Ã¢â€ â€™ more replicas
+- **Consistency requirements**: Strong consistency Ã¢â€ â€™ synchronous replication
+- **Storage budget**: Limited storage Ã¢â€ â€™ partial replication
+- **Failure tolerance**: Critical data Ã¢â€ â€™ higher replication factor
+- **Network topology**: High bandwidth Ã¢â€ â€™ more aggressive replication
 
 ---
 
@@ -1770,14 +1770,14 @@ Factors influencing replication:
 | PostgreSQL (streaming replicas) | RDBMS | CP/AP | Async replicas = AP; sync = CP |
 | Cassandra | Column-family | AP | Tunable consistency |
 | MongoDB | Document | CP (default) | Can be configured |
-| Redis Cluster | KV | CP | Partition â†’ some unavailable |
+| Redis Cluster | KV | CP | Partition Ã¢â€ â€™ some unavailable |
 | DynamoDB | KV | AP | Eventual consistency by default |
 | Google Spanner | NewSQL | CP | TrueTime + Paxos gives "effectively CA" |
 | CockroachDB | NewSQL | CP | Spanner-inspired with HLC |
 
 **PACELC Extension**: If partition (P), choose A or C; Else (E), choose L(atency) or C(onsistency).
-- Cassandra: PC/EC (partition â†’ availability; else â†’ latency)
-- Spanner: PC/EC (partition â†’ consistency; else â†’ latency via TrueTime)
+- Cassandra: PC/EC (partition Ã¢â€ â€™ availability; else Ã¢â€ â€™ latency)
+- Spanner: PC/EC (partition Ã¢â€ â€™ consistency; else Ã¢â€ â€™ latency via TrueTime)
 
 ---
 
@@ -1799,14 +1799,14 @@ Factors influencing replication:
 - Condition for strong consistency: R + W > N
 
 ```
-Example: N=3, W=2, R=2 â†’ Strong consistency (2+2=4 > 3)
-         N=3, W=1, R=1 â†’ Weak consistency (1+1=2 Ã¢â€°Â¤ 3)
+Example: N=3, W=2, R=2 Ã¢â€ â€™ Strong consistency (2+2=4 > 3)
+         N=3, W=1, R=1 Ã¢â€ â€™ Weak consistency (1+1=2 ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤ 3)
 ```
 
 **Consistency Model Spectrum**:
 ```
-Stronger â† -----------------------------------------------------------------â†’ Weaker
-         Linearizability â†’ Sequential â†’ Causal â†’ PRAM â†’ Read-Your-Writes â†’ Eventual
+Stronger Ã¢â€ Â -----------------------------------------------------------------Ã¢â€ â€™ Weaker
+         Linearizability Ã¢â€ â€™ Sequential Ã¢â€ â€™ Causal Ã¢â€ â€™ PRAM Ã¢â€ â€™ Read-Your-Writes Ã¢â€ â€™ Eventual
          (hardest)                                                       (easiest)
 ```
 
@@ -1822,7 +1822,7 @@ Stronger â† ---------------------------------------------------------------
 1. Coordinator sends PREPARE to all participants
 2. All participants vote YES and enter PREPARED state
 3. Coordinator crashes before sending COMMIT
-4. Each participant is blocked â†’ it has voted YES and cannot unilaterally abort (violates atomicity), but cannot commit without coordinator's decision
+4. Each participant is blocked Ã¢â€ â€™ it has voted YES and cannot unilaterally abort (violates atomicity), but cannot commit without coordinator's decision
 5. All resources locked by this transaction are unavailable until coordinator restarts and consults its log
 
 #### Q2: How does the CAP theorem apply to distributed databases?
@@ -1833,7 +1833,7 @@ Stronger â† ---------------------------------------------------------------
 - **AP systems**: Choose availability and partition tolerance. During a partition, all nodes remain available but may return stale data. Example: Cassandra, DynamoDB.
 - **CA systems**: Choose consistency and availability, but since partitions are inevitable in distributed systems, CA is only achievable in a single-node system.
 
-**Key insight**: Network partitions are not optional â†’ they will happen. So the real choice is between CP and AP, not CA. All distributed databases must handle P.
+**Key insight**: Network partitions are not optional Ã¢â€ â€™ they will happen. So the real choice is between CP and AP, not CA. All distributed databases must handle P.
 
 **PACELC extension**: Even without partitions (Else), there's a trade-off between Latency (L) and Consistency (C).
 
@@ -1851,9 +1851,9 @@ Transaction T1 at Site A locks X, waits for Y (locked by T2 at Site B)
 Transaction T2 at Site B locks Y, waits for X (locked by T1 at Site A)
 
 Centralized WFG:
-  T1(A) â†’ T2(B) (T1 waits for T2)
-  T2(B) â†’ T1(A) (T2 waits for T1)
-  Cycle detected â†’ abort one transaction (typically the youngest)
+  T1(A) Ã¢â€ â€™ T2(B) (T1 waits for T2)
+  T2(B) Ã¢â€ â€™ T1(A) (T2 waits for T1)
+  Cycle detected Ã¢â€ â€™ abort one transaction (typically the youngest)
 ```
 
 **Deadlock prevention** vs **detection**:
@@ -1880,9 +1880,9 @@ Centralized WFG:
 
 **Answer**: Eager (synchronous) replication updates all replicas within the same transaction, providing strong consistency but higher latency. Lazy (asynchronous) replication updates one replica and propagates changes later, providing eventual consistency but lower latency.
 
-**Eager**: Write to replica 1 â†’ Write to replica 2 â†’ Write to replica 3 â†’ All acknowledge â†’ Commit. Slower but consistent.
+**Eager**: Write to replica 1 Ã¢â€ â€™ Write to replica 2 Ã¢â€ â€™ Write to replica 3 Ã¢â€ â€™ All acknowledge Ã¢â€ â€™ Commit. Slower but consistent.
 
-**Lazy**: Write to replica 1 â†’ Commit immediately â†’ Background propagate to replicas 2, 3. Faster but temporary inconsistencies.
+**Lazy**: Write to replica 1 Ã¢â€ â€™ Commit immediately Ã¢â€ â€™ Background propagate to replicas 2, 3. Faster but temporary inconsistencies.
 
 ---
 
@@ -1896,12 +1896,12 @@ Spanner is Google's globally-distributed SQL database.
 | Feature | Implementation |
 |---------|---------------|
 | **Consistency** | External consistency (linearizability) across global deployments |
-| **Clock sync** | TrueTime API â†’ atomic clocks + GPS for globally-ordered timestamps |
+| **Clock sync** | TrueTime API Ã¢â€ â€™ atomic clocks + GPS for globally-ordered timestamps |
 | **Replication** | Paxos-based synchronous replication (configurable) |
 | **Concurrency** | Multi-version concurrency control with globally-ordered timestamps |
 | **Interface** | SQL with distributed joins, transactions, schema |
-| **CAP classification** | CP (partition â†’ refuse writes to minority) |
-| **Key insight** | TrueTime bounds clock uncertainty (ÃŽÂµ = 1-7ms), enabling commit ordering without centralized coordination |
+| **CAP classification** | CP (partition Ã¢â€ â€™ refuse writes to minority) |
+| **Key insight** | TrueTime bounds clock uncertainty (ÃƒÅ½Ã‚Âµ = 1-7ms), enabling commit ordering without centralized coordination |
 
 **Why Spanner matters**: Before Spanner, global-scale SQL with serializable transactions was considered impossible. TrueTime's bounded clock uncertainty allows Spanner to assign commit timestamps that respect real-time ordering, achieving "effectively CA" behavior.
 
@@ -1931,9 +1931,9 @@ Open-source, decentralized, wide-column NoSQL database.
 | **Replication** | Configurable per keyspace (SimpleStrategy, NetworkTopologyStrategy) |
 | **Partitioning** | Consistent hashing with virtual nodes |
 | **Cluster management** | Gossip protocol for peer discovery; no single point of failure |
-| **Write path** | Commit log â†’ MemTable â†’ SSTable (append-only) |
+| **Write path** | Commit log Ã¢â€ â€™ MemTable Ã¢â€ â€™ SSTable (append-only) |
 | **CAP classification** | AP (designed for availability + partition tolerance) |
-| **Key insight** | Every node is equal â†’ no master. Linear writes scale by adding nodes. |
+| **Key insight** | Every node is equal Ã¢â€ â€™ no master. Linear writes scale by adding nodes. |
 
 **Why Cassandra matters**: Cassandra demonstrated that a decentralized AP system can handle petabytes across hundreds of nodes with no downtime during node failures. Used by Netflix, Apple, Instagram.
 
@@ -1944,7 +1944,7 @@ Open-source, Spanner-inspired, distributed SQL database.
 | Feature | Implementation |
 |---------|---------------|
 | **Consistency** | Serializable isolation (strong) |
-| **Clock sync** | Hybrid Logical Clocks (HLC) â†’ no hardware clocks needed |
+| **Clock sync** | Hybrid Logical Clocks (HLC) Ã¢â€ â€™ no hardware clocks needed |
 | **Replication** | Raft consensus (synchronous) |
 | **Partitioning** | Range-based with automatic rebalancing |
 | **Interface** | PostgreSQL-compatible wire protocol and SQL dialect |
@@ -2040,21 +2040,21 @@ class TwoPhaseCommit:
 
 ## Pro Tips
 
-1. **Distributed transactions (2PC) are expensive** â†’ design data model for single-node locality in most operations.
-2. **Quorum-based systems give tunable consistency** â†’ R + W > N for strong, R + W &lt;= N for availability.
-3. **Horizontal for scale, vertical for security** â†’ horizontal fragmentation distributes load; vertical isolates sensitive columns.
-4. **Semi-joins are the distributed query superpower** â†’ they minimize network data transfer by sending only join keys.
-5. **Network partitions happen more often than you think** â†’ design for P by choosing CP or AP based on business requirements.
-6. **Full replication is expensive at scale** â†’ use partial replication with quorum for most workloads.
-7. **Heterogeneous systems need schema mapping** â†’ plan for semantic and syntactic translation overhead.
-8. **3PC avoids 2PC's blocking problem** â†’ but adds a round-trip of latency. Use it only when blocking risk outweighs latency cost.
+1. **Distributed transactions (2PC) are expensive** Ã¢â€ â€™ design data model for single-node locality in most operations.
+2. **Quorum-based systems give tunable consistency** Ã¢â€ â€™ R + W > N for strong, R + W &lt;= N for availability.
+3. **Horizontal for scale, vertical for security** Ã¢â€ â€™ horizontal fragmentation distributes load; vertical isolates sensitive columns.
+4. **Semi-joins are the distributed query superpower** Ã¢â€ â€™ they minimize network data transfer by sending only join keys.
+5. **Network partitions happen more often than you think** Ã¢â€ â€™ design for P by choosing CP or AP based on business requirements.
+6. **Full replication is expensive at scale** Ã¢â€ â€™ use partial replication with quorum for most workloads.
+7. **Heterogeneous systems need schema mapping** Ã¢â€ â€™ plan for semantic and syntactic translation overhead.
+8. **3PC avoids 2PC's blocking problem** Ã¢â€ â€™ but adds a round-trip of latency. Use it only when blocking risk outweighs latency cost.
 
 ## One-Sentence Takeaways
 
 - **17.1:** Distributed databases store data across multiple physical locations while presenting a single logical database to users.
 - **17.2:** Fragmentation splits data horizontally (by rows) or vertically (by columns) or both (hybrid) across sites.
 - **17.3:** Replication maintains copies of data (full or partial) across sites for availability and read scaling.
-- **17.4:** Transparency hides distribution details â†’ location, fragmentation, replication, and failure.
+- **17.4:** Transparency hides distribution details Ã¢â€ â€™ location, fragmentation, replication, and failure.
 - **17.5:** 2PC coordinates distributed transactions but blocks on coordinator failure; 3PC is non-blocking but slower.
 - **17.6:** Distributed query processing uses semi-joins to reduce network data transfer across nodes.
 - **17.7:** Homogeneous DDBs use the same DBMS everywhere; heterogeneous DDBs require translation between different systems.
@@ -2069,7 +2069,7 @@ class TwoPhaseCommit:
 | Criterion | Horizontal | Vertical | Hybrid |
 |-----------|------------|----------|--------|
 | **Splits by** | Rows | Columns (key preserved) | Rows then columns |
-| **Operation** | Selection (ÃÆ’) | Projection (Ãâ‚¬) | ÃÆ’ then Ãâ‚¬ |
+| **Operation** | Selection (ÃƒÂÃ†â€™) | Projection (ÃƒÂÃ¢â€šÂ¬) | ÃƒÂÃ†â€™ then ÃƒÂÃ¢â€šÂ¬ |
 | **Reconstruction** | UNION | Natural JOIN | Nested UNION + JOIN |
 | **Parallelism** | High | Medium | Very high |
 | **Privacy benefit** | None | High | Highest |
@@ -2083,7 +2083,7 @@ class TwoPhaseCommit:
 | Criterion | Full Replication | Partial Replication |
 |-----------|------------------|--------------------|
 | **Data per site** | Complete database | Subset of data |
-| **Storage cost** | N Ãƒâ€” total_data | R Ãƒâ€” avg_data |
+| **Storage cost** | N ÃƒÆ’Ã¢â‚¬â€ total_data | R ÃƒÆ’Ã¢â‚¬â€ avg_data |
 | **Read availability** | Every site serves any query | Only sites with data serve |
 | **Write cost** | Update all N replicas | Update R replicas |
 | **Fault tolerance** | Loss of any site is fine | Loss of only copy = data loss |
@@ -2139,13 +2139,13 @@ class TwoPhaseCommit:
 | **Replication** | Maintaining copies of data for availability |
 | **Transparency** | Hiding distribution details from users |
 | **2PC** | Two-phase commit protocol for distributed transactions |
-| **3PC** | Three-phase commit â†’ non-blocking alternative to 2PC |
+| **3PC** | Three-phase commit Ã¢â€ â€™ non-blocking alternative to 2PC |
 | **Semi-join** | Reduced data transfer by sending only join keys |
 | **CAP** | Consistency, Availability, Partition Tolerance |
 | **PACELC** | CAP extension: if partition (P) choose A/C; else choose L/C |
 | **Quorum** | Minimum nodes that must agree (R + W > N for strong) |
 | **TrueTime** | Google's GPS + atomic clock global time service |
-| **HLC** | Hybrid Logical Clock â†’ combines physical + logical time |
+| **HLC** | Hybrid Logical Clock Ã¢â€ â€™ combines physical + logical time |
 | **Gossip Protocol** | Peer-to-peer state dissemination (Cassandra) |
 | **Raft / Paxos** | Consensus algorithms for distributed agreement |
 
@@ -2169,7 +2169,7 @@ The code below simulates distributed database concepts: sharding, replication, q
 
 ```typescript
 // ============================================================
-// Distributed Database Simulator â€” TypeScript
+// Distributed Database Simulator Ã¢â‚¬â€ TypeScript
 // ============================================================
 
 interface ShardConfig {
@@ -2211,7 +2211,7 @@ class ShardManager {
     for (const nodeId of shard.nodeIds) {
       this.nodes.get(nodeId)!.set(key, value);
     }
-    return 'OK â€” written to ' + w + ' replica(s)';
+    return 'OK Ã¢â‚¬â€ written to ' + w + ' replica(s)';
   }
 
   read(key: string): string | null {
@@ -2240,7 +2240,7 @@ class ShardManager {
     for (const [val, count] of responses) {
       if (count >= quorum) return { value: val, consistency: true };
     }
-    // No quorum â€” return latest but mark inconsistent
+    // No quorum Ã¢â‚¬â€ return latest but mark inconsistent
     const latest = [...responses.entries()].sort((a, b) => b[1] - a[1])[0];
     return { value: latest?.[0] || null, consistency: false };
   }
@@ -2248,7 +2248,7 @@ class ShardManager {
   printDistribution(): void {
     console.log('Data Distribution:');
     for (const [nodeId, data] of this.nodes) {
-      console.log('  Node ' + nodeId + ': ' + data.size + ' keys â€” ' + [...data.keys()].join(', '));
+      console.log('  Node ' + nodeId + ': ' + data.size + ' keys Ã¢â‚¬â€ ' + [...data.keys()].join(', '));
     }
   }
 }

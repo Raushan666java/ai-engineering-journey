@@ -1,4 +1,4 @@
-# Chapter 4: Data Structures — Exam Quick Revision
+﻿# Chapter 4: Data Structures â€” Exam Quick Revision
 
 ## Learning Objectives
 - Compare linear data structures (arrays, linked lists, stacks, queues) with time complexities
@@ -13,16 +13,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/professional-knowledge/04-data-structures/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/professional-knowledge/04-data-structures/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/professional-knowledge/04-data-structures/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/professional-knowledge/04-data-structures/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/professional-knowledge/04-data-structures/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/professional-knowledge/04-data-structures/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/professional-knowledge/04-data-structures/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/professional-knowledge/04-data-structures/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/professional-knowledge/04-data-structures/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/professional-knowledge/04-data-structures/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/professional-knowledge/04-data-structures/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/professional-knowledge/04-data-structures/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -34,33 +34,33 @@
 
 | Operation | Array | Singly Linked List |
 |-----------|-------|--------------------|
-| Access (index) | O(1) | O(n) — must traverse |
-| Insert (beginning) | O(n) — shift elements | O(1) — update pointer |
+| Access (index) | O(1) | O(n) â€” must traverse |
+| Insert (beginning) | O(n) â€” shift elements | O(1) â€” update pointer |
 | Insert (end) | O(1) amortized (dynamic) | O(1) with tail pointer |
-| Delete (known position) | O(n) — shift | O(1) — pointer removal (prev known) |
+| Delete (known position) | O(n) â€” shift | O(1) â€” pointer removal (prev known) |
 | Search (unsorted) | O(n) | O(n) |
-| Memory | Contiguous — fixed size | Dynamic — extra pointer overhead |
+| Memory | Contiguous â€” fixed size | Dynamic â€” extra pointer overhead |
 | Cache locality | Excellent (spatial locality) | Poor (nodes scattered) |
 
-**Exam tip:** Linked list advantages — dynamic size, O(1) insertion/deletion at ends. Array advantages — O(1) random access, cache-friendly.
+**Exam tip:** Linked list advantages â€” dynamic size, O(1) insertion/deletion at ends. Array advantages â€” O(1) random access, cache-friendly.
 
 ---
 
-## 2. Stack — Applications
+## 2. Stack â€” Applications
 
-### Stack Operations: push, pop, peek, isEmpty — all O(1)
+### Stack Operations: push, pop, peek, isEmpty â€” all O(1)
 
-### Infix → Postfix (Shunting-Yard Algorithm)
+### Infix â†’ Postfix (Shunting-Yard Algorithm)
 
-**Operator precedence:** ^ (highest, right-assoc), * / (middle, left-assoc), + − (lowest, left-assoc)
+**Operator precedence:** ^ (highest, right-assoc), * / (middle, left-assoc), + âˆ’ (lowest, left-assoc)
 
 **Algorithm:**
-1. Operands → output directly
-2. '(' → push to stack
-3. ')' → pop to output until '('
+1. Operands â†’ output directly
+2. '(' â†’ push to stack
+3. ')' â†’ pop to output until '('
 4. Operator: while (stack top has higher/equal precedence) pop to output; then push operator
 
-**Example:** `A + (B * C − D) / E`
+**Example:** `A + (B * C âˆ’ D) / E`
 ```
 Symbol | Stack    | Output
 A      |          | A
@@ -69,19 +69,19 @@ A      |          | A
 B      | + (      | A B
 *      | + ( *    | A B
 C      | + ( *    | A B C
-−      | + ( −    | A B C *    (* popped due to higher precedence)
-D      | + ( −    | A B C * D
-)      | +        | A B C * D −
-/      | + /      | A B C * D −
-E      | + /      | A B C * D − E
-end    |          | A B C * D − E / +
+âˆ’      | + ( âˆ’    | A B C *    (* popped due to higher precedence)
+D      | + ( âˆ’    | A B C * D
+)      | +        | A B C * D âˆ’
+/      | + /      | A B C * D âˆ’
+E      | + /      | A B C * D âˆ’ E
+end    |          | A B C * D âˆ’ E / +
 ```
 
-**Postfix evaluation:** Scan left to right; operand → push; operator → pop two operands, apply, push result.
+**Postfix evaluation:** Scan left to right; operand â†’ push; operator â†’ pop two operands, apply, push result.
 
 ### Balanced Parentheses
 
-- Scan string: '(' → push; ')' → if stack empty ⇒ unbalanced, else pop
+- Scan string: '(' â†’ push; ')' â†’ if stack empty â‡’ unbalanced, else pop
 - At end: stack should be empty
 
 ---
@@ -92,7 +92,7 @@ end    |          | A B C * D − E / +
 |------|-------------|----------|
 | **Simple Queue** | FIFO (front dequeue, rear enqueue) | BFS, print spooler |
 | **Circular Queue** | Front wraps to beginning when rear reaches end | Memory-efficient fixed-size buffer |
-| **Deque** | Double-ended — insert/delete at both ends | Palindrome checking, sliding window max |
+| **Deque** | Double-ended â€” insert/delete at both ends | Palindrome checking, sliding window max |
 | **Priority Queue** | Elements removed by priority, not FIFO | Dijkstra, Huffman coding, heap-based |
 
 ---
@@ -102,9 +102,9 @@ end    |          | A B C * D − E / +
 ### Properties
 
 - **Maximum nodes at level i:** 2^i (0-indexed level)
-- **Maximum nodes in tree of height h:** 2^(h+1) − 1 (height = levels − 1)
-- **Minimum height for n nodes:** ⌈log2(n+1)⌉ − 1
-- **Height of n-node complete binary tree:** ⌊log2 n⌋
+- **Maximum nodes in tree of height h:** 2^(h+1) âˆ’ 1 (height = levels âˆ’ 1)
+- **Minimum height for n nodes:** âŒˆlog2(n+1)âŒ‰ âˆ’ 1
+- **Height of n-node complete binary tree:** âŒŠlog2 nâŒ‹
 
 ### Tree Types
 
@@ -113,7 +113,7 @@ end    |          | A B C * D − E / +
 | Full/Strict | Every node has 0 or 2 children |
 | Complete | All levels full except possibly last, which is filled left to right |
 | Perfect | All internal nodes have 2 children and all leaves at same level |
-| Degenerate | Each node has at most 1 child (skewed — O(n) height) |
+| Degenerate | Each node has at most 1 child (skewed â€” O(n) height) |
 
 ### Binary Search Tree (BST)
 
@@ -135,9 +135,9 @@ graph TD
 
 | Traversal | Order | Result |
 |-----------|-------|--------|
-| Preorder (VLR) | Root → Left → Right | 1, 2, 4, 5, 3, 6 |
-| Inorder (LVR) | Left → Root → Right | 4, 2, 5, 1, 6, 3 |
-| Postorder (LRV) | Left → Right → Root | 4, 5, 2, 6, 3, 1 |
+| Preorder (VLR) | Root â†’ Left â†’ Right | 1, 2, 4, 5, 3, 6 |
+| Inorder (LVR) | Left â†’ Root â†’ Right | 4, 2, 5, 1, 6, 3 |
+| Postorder (LRV) | Left â†’ Right â†’ Root | 4, 5, 2, 6, 3, 1 |
 | Level-order | By level, left to right | 1, 2, 3, 4, 5, 6 |
 
 ---
@@ -151,13 +151,13 @@ graph TD
 | **LR** | Left-right imbalance (inserted in right subtree of left child) | Left rotate on child, then right rotate on parent |
 | **RL** | Right-left imbalance (inserted in left subtree of right child) | Right rotate on child, then left rotate on parent |
 
-**Balance factor:** height(left) − height(right) ∈ {−1, 0, +1}
+**Balance factor:** height(left) âˆ’ height(right) âˆˆ {âˆ’1, 0, +1}
 
-**Solved Example — LL Rotation:**
+**Solved Example â€” LL Rotation:**
 ```
 Insert: 30, 20, 10
   30                   20
- /          →         /  \
+ /          â†’         /  \
 20           LL      10   30
 /
 10
@@ -170,8 +170,8 @@ Insert: 30, 20, 10
 ### Binary Heap Properties
 
 - Complete binary tree (filled left to right)
-- **Max heap:** Parent ≥ children. **Min heap:** Parent ≤ children.
-- **Array representation:** left(i) = 2i+1, right(i) = 2i+2, parent(i) = ⌊(i−1)/2⌋
+- **Max heap:** Parent â‰¥ children. **Min heap:** Parent â‰¤ children.
+- **Array representation:** left(i) = 2i+1, right(i) = 2i+2, parent(i) = âŒŠ(iâˆ’1)/2âŒ‹
 
 ### Operations
 
@@ -186,7 +186,7 @@ Insert: 30, 20, 10
 
 ```c
 Build max-heap (O(n))
-For i = n−1 down to 1:
+For i = nâˆ’1 down to 1:
     swap A[0] with A[i]
     heap-size--
     max-heapify(A, 0)    // O(log n)
@@ -202,7 +202,7 @@ For i = n−1 down to 1:
 | **Adjacency Matrix** | O(V^2) | O(1) | O(V) |
 | **Adjacency List** | O(V + E) | O(degree(V)) | O(degree(V)) |
 
-**When to use which:** Dense graphs (E ≈ V^2) → matrix. Sparse graphs (E ≪ V^2) → list.
+**When to use which:** Dense graphs (E â‰ˆ V^2) â†’ matrix. Sparse graphs (E â‰ª V^2) â†’ list.
 
 ### BFS vs DFS
 
@@ -216,16 +216,16 @@ For i = n−1 down to 1:
 
 ---
 
-## 8. Sorting Algorithms — Comparison Table
+## 8. Sorting Algorithms â€” Comparison Table
 
 | Algorithm | Best | Average | Worst | Space | Stable | In-place |
 |-----------|------|---------|-------|-------|--------|----------|
-| **Bubble Sort** | Ω(n) | Θ(n^2) | O(n^2) | O(1) | ✅ | ✅ |
-| **Selection Sort** | Ω(n^2) | Θ(n^2) | O(n^2) | O(1) | ❌ | ✅ |
-| **Insertion Sort** | Ω(n) | Θ(n^2) | O(n^2) | O(1) | ✅ | ✅ |
-| **Merge Sort** | Ω(n log n) | Θ(n log n) | O(n log n) | O(n) | ✅ | ❌ |
-| **Quick Sort** | Ω(n log n) | Θ(n log n) | O(n^2) | O(log n) | ❌ | ✅ |
-| **Heap Sort** | Ω(n log n) | Θ(n log n) | O(n log n) | O(1) | ❌ | ✅ |
+| **Bubble Sort** | Î©(n) | Î˜(n^2) | O(n^2) | O(1) | âœ… | âœ… |
+| **Selection Sort** | Î©(n^2) | Î˜(n^2) | O(n^2) | O(1) | âŒ | âœ… |
+| **Insertion Sort** | Î©(n) | Î˜(n^2) | O(n^2) | O(1) | âœ… | âœ… |
+| **Merge Sort** | Î©(n log n) | Î˜(n log n) | O(n log n) | O(n) | âœ… | âŒ |
+| **Quick Sort** | Î©(n log n) | Î˜(n log n) | O(n^2) | O(log n) | âŒ | âœ… |
+| **Heap Sort** | Î©(n log n) | Î˜(n log n) | O(n log n) | O(1) | âŒ | âœ… |
 
 **Key points for exams:**
 - **Quick sort worst case:** Already sorted (if pivot = first/last). **Solution:** Randomized pivot.
@@ -241,7 +241,7 @@ For i = n−1 down to 1:
 ### Hash Functions
 
 - **Division method:** h(k) = k mod m (m prime recommended)
-- **Multiplication method:** h(k) = ⌊m × (kA mod 1)⌋, A = (√5−1)/2 ≈ 0.618
+- **Multiplication method:** h(k) = âŒŠm Ã— (kA mod 1)âŒ‹, A = (âˆš5âˆ’1)/2 â‰ˆ 0.618
 
 ### Collision Resolution
 
@@ -252,14 +252,14 @@ For i = n−1 down to 1:
 
 ### Open Addressing Techniques
 
-- **Linear probing:** h(k,i) = (h(k) + i) mod m — primary clustering
-- **Quadratic probing:** h(k,i) = (h(k) + c1i + c2i^2) mod m — secondary clustering
-- **Double hashing:** h(k,i) = (h1(k) + i×h2(k)) mod m — best performance
+- **Linear probing:** h(k,i) = (h(k) + i) mod m â€” primary clustering
+- **Quadratic probing:** h(k,i) = (h(k) + c1i + c2i^2) mod m â€” secondary clustering
+- **Double hashing:** h(k,i) = (h1(k) + iÃ—h2(k)) mod m â€” best performance
 
-### Load Factor α = n/m (n = keys, m = table size)
+### Load Factor Î± = n/m (n = keys, m = table size)
 
-- Chaining: α can exceed 1; average chain length = α
-- Open addressing: α must be &lt; 1; too high → probe count explodes
+- Chaining: Î± can exceed 1; average chain length = Î±
+- Open addressing: Î± must be &lt; 1; too high â†’ probe count explodes
 
 ---
 
@@ -273,13 +273,13 @@ For i = n−1 down to 1:
 
 **Answer:** (b) Inorder. Inorder traversal visits left subtree then root then right subtree, producing keys in ascending order.
 
-**Q2:** Postfix expression: 5 3 + 8 2 − * 4 /
+**Q2:** Postfix expression: 5 3 + 8 2 âˆ’ * 4 /
 - (a) 8
 - (b) 12
 - (c) 16
 - (d) 24
 
-**Answer:** (b) 12. 5+3=8. 8−2=6. 8×6=48. 48/4=12.
+**Answer:** (b) 12. 5+3=8. 8âˆ’2=6. 8Ã—6=48. 48/4=12.
 
 **Q3:** In a complete binary tree with 1000 nodes, the number of leaf nodes is:
 - (a) 500
@@ -287,7 +287,7 @@ For i = n−1 down to 1:
 - (c) 489
 - (d) 512
 
-**Answer:** (a) 500. In a complete binary tree, leaf count = ⌈n/2⌉ = ⌈1000/2⌉ = 500.
+**Answer:** (a) 500. In a complete binary tree, leaf count = âŒˆn/2âŒ‰ = âŒˆ1000/2âŒ‰ = 500.
 
 **Q4:** Which sorting algorithm makes the minimum number of comparisons in the worst case?
 - (a) Quick sort
@@ -295,7 +295,7 @@ For i = n−1 down to 1:
 - (c) Insertion sort
 - (d) Selection sort
 
-**Answer:** (b) Merge sort. Worst-case comparisons = n log n − n + 1 ≈ n log n. Quick sort worst case is O(n^2). Lower bound for comparison-based sorting is Ω(n log n), and merge sort achieves it.
+**Answer:** (b) Merge sort. Worst-case comparisons = n log n âˆ’ n + 1 â‰ˆ n log n. Quick sort worst case is O(n^2). Lower bound for comparison-based sorting is Î©(n log n), and merge sort achieves it.
 
 ---
 
@@ -309,7 +309,7 @@ For i = n−1 down to 1:
 | 4 | Red node's children must be BLACK (no two consecutive reds) |
 | 5 | Every path from root to leaf has same number of BLACK nodes (black-height) |
 
-**Height guarantee:** h ≤ 2 × log₂(n+1) — O(log n) operations guaranteed.
+**Height guarantee:** h â‰¤ 2 Ã— logâ‚‚(n+1) â€” O(log n) operations guaranteed.
 
 **Insertion:** Recolor and rotate (up to 2 rotations)
 **Deletion:** Recolor and rotate (up to 3 rotations)
@@ -317,7 +317,7 @@ For i = n−1 down to 1:
 **AVL vs Red-Black:**
 | Aspect | AVL | Red-Black |
 |--------|-----|-----------|
-| Balance | Stricter (BF ±1) | Relaxed (black-height) |
+| Balance | Stricter (BF Â±1) | Relaxed (black-height) |
 | Lookup | Faster (more balanced) | Slightly slower |
 | Insert/Delete | Slower (more rotations) | Faster (fewer rotations) |
 | Use case | Read-heavy workloads | Write-heavy workloads |
@@ -335,22 +335,22 @@ For i = n−1 down to 1:
 
 | Algorithm | Strategy | Time | Data Structure |
 |-----------|----------|------|----------------|
-| **Prim's** | Greedy — grow tree from a vertex | O((V+E) log V) | Priority queue |
-| **Kruskal's** | Greedy — pick smallest edge, no cycle | O(E log E) | Union-Find (DSU) |
+| **Prim's** | Greedy â€” grow tree from a vertex | O((V+E) log V) | Priority queue |
+| **Kruskal's** | Greedy â€” pick smallest edge, no cycle | O(E log E) | Union-Find (DSU) |
 
 ### Topological Sort
 
-- DAG (Directed Acyclic Graph) vertices in order: for every edge u→v, u appears before v
+- DAG (Directed Acyclic Graph) vertices in order: for every edge uâ†’v, u appears before v
 - **Methods:** DFS-based (push post-order) or Kahn's algorithm (in-degree queue)
 
 ### Graph Cycle Detection
 
 | Graph Type | Method |
 |-------------|--------|
-| Undirected | DFS with parent tracking — visited and not parent = cycle |
-| Directed | DFS with recursion stack — vertex in current recursion stack = cycle |
+| Undirected | DFS with parent tracking â€” visited and not parent = cycle |
+| Directed | DFS with recursion stack â€” vertex in current recursion stack = cycle |
 
-## 12. Advanced Sorting — Non-Comparison Based
+## 12. Advanced Sorting â€” Non-Comparison Based
 
 ### Counting Sort
 
@@ -363,21 +363,21 @@ For i = n−1 down to 1:
 
 - Sort digit by digit (LSD first or MSD first)
 - Uses counting sort as subroutine
-- **Time:** O(d × (n + b)) where d = digits, b = base
+- **Time:** O(d Ã— (n + b)) where d = digits, b = base
 - **When:** Fixed-length keys (integers, strings)
 
 ### Bucket Sort
 
 - Distribute elements into buckets, sort each bucket (insertion sort)
-- **Average:** O(n), **Worst:** O(n²)
+- **Average:** O(n), **Worst:** O(nÂ²)
 - **When:** Uniformly distributed data
 
 ## 13. Additional Hash Techniques
 
 ### Rehashing
 
-- When load factor α exceeds threshold, create larger table, rehash all entries
-- Typically double table size (prime near 2×)
+- When load factor Î± exceeds threshold, create larger table, rehash all entries
+- Typically double table size (prime near 2Ã—)
 - **Cost:** O(n) but amortized O(1) per insertion
 
 ### Perfect Hashing
@@ -398,7 +398,7 @@ For i = n−1 down to 1:
 
 - Multi-level linked list with "express lanes"
 - Each node promoted to higher level with probability p (typically 0.5)
-- **Operations:** O(log n) average — search, insert, delete
+- **Operations:** O(log n) average â€” search, insert, delete
 - **Space:** O(n) expected
 - **Advantage over balanced trees:** Simpler, no rotations
 - **Used in:** Redis sorted sets, LevelDB memtable
@@ -407,9 +407,9 @@ For i = n−1 down to 1:
 
 ---
 
-## 📌 Extended Theory — Deep Dive for IBPS SO Mains (2024–2026 Trends)
+## ðŸ“Œ Extended Theory â€” Deep Dive for IBPS SO Mains (2024â€“2026 Trends)
 
-### Sorting Algorithm Visualizer — TypeScript
+### Sorting Algorithm Visualizer â€” TypeScript
 
 ```typescript
 type SortStep = { array: number[]; comparing: [number, number]; swapped: boolean };
@@ -459,7 +459,7 @@ function quickSortSteps(arr: number[]): SortStep[] {
 }
 ```
 
-### BST Implementation — TypeScript
+### BST Implementation â€” TypeScript
 
 ```typescript
 class BSTNode {
@@ -534,7 +534,7 @@ class BST {
 }
 ```
 
-### AVL Tree — TypeScript
+### AVL Tree â€” TypeScript
 
 ```typescript
 class AVLNode {
@@ -607,7 +607,7 @@ class AVLTree {
 }
 ```
 
-### Graph Traversal — BFS / DFS TypeScript
+### Graph Traversal â€” BFS / DFS TypeScript
 
 ```typescript
 class Graph {
@@ -657,24 +657,24 @@ class Graph {
 
 > **PYQ 2024:** Given inorder: D B E A F C G and preorder: A B D E C F G, reconstruct the binary tree.
 
-**Solution:** Preorder first element = A (root). Find A in inorder → left subtree: DBE, right subtree: FCG.
-- Left: preorder BDE, inorder DBE → root B → left D, right E
-- Right: preorder CFG, inorder FCG → root C → left F, right G
+**Solution:** Preorder first element = A (root). Find A in inorder â†’ left subtree: DBE, right subtree: FCG.
+- Left: preorder BDE, inorder DBE â†’ root B â†’ left D, right E
+- Right: preorder CFG, inorder FCG â†’ root C â†’ left F, right G
 Final tree: A(B(D,E), C(F,G))
 
-### Complexity Analysis — Master Theorem
+### Complexity Analysis â€” Master Theorem
 
 **Master Theorem:** For T(n) = aT(n/b) + f(n):
-1. If f(n) = O(n^(log_b a - ε)) → T(n) = Θ(n^(log_b a))
-2. If f(n) = Θ(n^(log_b a) × log^k n) → T(n) = Θ(n^(log_b a) × log^(k+1) n)
-3. If f(n) = Ω(n^(log_b a + ε)) and af(n/b) ≤ cf(n) → T(n) = Θ(f(n))
+1. If f(n) = O(n^(log_b a - Îµ)) â†’ T(n) = Î˜(n^(log_b a))
+2. If f(n) = Î˜(n^(log_b a) Ã— log^k n) â†’ T(n) = Î˜(n^(log_b a) Ã— log^(k+1) n)
+3. If f(n) = Î©(n^(log_b a + Îµ)) and af(n/b) â‰¤ cf(n) â†’ T(n) = Î˜(f(n))
 
 **Examples:**
-- T(n) = 2T(n/2) + n → a=2, b=2, log_b a = 1, f(n)=n^1 → Case 2: T(n) = Θ(n log n)
-- T(n) = 2T(n/2) + 1 → Case 1: T(n) = Θ(n)
-- T(n) = T(n/2) + n → a=1, b=2, log_b a = 0, f(n)=n^1 → Case 3: T(n) = Θ(n)
+- T(n) = 2T(n/2) + n â†’ a=2, b=2, log_b a = 1, f(n)=n^1 â†’ Case 2: T(n) = Î˜(n log n)
+- T(n) = 2T(n/2) + 1 â†’ Case 1: T(n) = Î˜(n)
+- T(n) = T(n/2) + n â†’ a=1, b=2, log_b a = 0, f(n)=n^1 â†’ Case 3: T(n) = Î˜(n)
 
-### Heap Operations — Detailed Tracing
+### Heap Operations â€” Detailed Tracing
 
 **Max-Heap Insert:** Insert 15 into [20, 14, 17, 10, 8, 12, 6]
 ```
@@ -684,27 +684,27 @@ Initial:      20(0)
         /    \      /   \
       10(3) 8(4) 12(5) 6(6)
 
-Insert 15 at position 7 → parent = ⌊(7-1)/2⌋ = 3 → 10
-Compare 15 > 10 → swap: [20,14,17,15,8,12,6,10]
-Parent of 15 now at index 3 → parent = ⌊(3-1)/2⌋ = 1 → 14
-15 > 14 → swap: [20,15,17,14,8,12,6,10]
-Parent at index 1 → parent = 0 → 20
-15 < 20 → stop.
+Insert 15 at position 7 â†’ parent = âŒŠ(7-1)/2âŒ‹ = 3 â†’ 10
+Compare 15 > 10 â†’ swap: [20,14,17,15,8,12,6,10]
+Parent of 15 now at index 3 â†’ parent = âŒŠ(3-1)/2âŒ‹ = 1 â†’ 14
+15 > 14 â†’ swap: [20,15,17,14,8,12,6,10]
+Parent at index 1 â†’ parent = 0 â†’ 20
+15 < 20 â†’ stop.
 Final: [20, 15, 17, 14, 8, 12, 6, 10]
 ```
 
-## 📝 Solved Examples (20 MCQs)
+## ðŸ“ Solved Examples (20 MCQs)
 
 <details>
 <summary>Q1: What is the time complexity of accessing the k-th element in a singly linked list?</summary>
 (a) O(1) (b) O(log n) (c) O(n) (d) O(n log n)
-**Answer:** (c) O(n). Linked lists do not support random access — must traverse from head to k-th node.
+**Answer:** (c) O(n). Linked lists do not support random access â€” must traverse from head to k-th node.
 </details>
 
 <details>
-<summary>Q2: Postfix expression 6 2 3 + − 3 8 2 / + * evaluates to:</summary>
+<summary>Q2: Postfix expression 6 2 3 + âˆ’ 3 8 2 / + * evaluates to:</summary>
 (a) 15 (b) 18 (c) 21 (d) 24
-**Answer:** (b) 18. 6−5=1, 8/2=4, 3+4=7, 1*7=7? Wait: 6 2 3 + − → stack: [6], [6,2], [6,2,3] → pop 2,3 → 2+3=5 → push 5: [6,5] → pop 6,5 → 6-5=1 → push 1. 3 8 2 / + → push 3: [1,3], push 8: [1,3,8], push 2: [1,3,8,2] → pop 8,2 → 8/2=4 → push 4: [1,3,4] → pop 3,4 → 3+4=7 → push 7: [1,7] → pop 1,7 → 1*7=7. So 7.
+**Answer:** (b) 18. 6âˆ’5=1, 8/2=4, 3+4=7, 1*7=7? Wait: 6 2 3 + âˆ’ â†’ stack: [6], [6,2], [6,2,3] â†’ pop 2,3 â†’ 2+3=5 â†’ push 5: [6,5] â†’ pop 6,5 â†’ 6-5=1 â†’ push 1. 3 8 2 / + â†’ push 3: [1,3], push 8: [1,3,8], push 2: [1,3,8,2] â†’ pop 8,2 â†’ 8/2=4 â†’ push 4: [1,3,4] â†’ pop 3,4 â†’ 3+4=7 â†’ push 7: [1,7] â†’ pop 1,7 â†’ 1*7=7. So 7.
 </details>
 
 <details>
@@ -714,21 +714,21 @@ Final: [20, 15, 17, 14, 8, 12, 6, 10]
 </details>
 
 <details>
-<summary>Q4: In an AVL tree, the balance factor of a node after insertion is −2. Which rotation is needed?</summary>
+<summary>Q4: In an AVL tree, the balance factor of a node after insertion is âˆ’2. Which rotation is needed?</summary>
 (a) LL (b) RR (c) LR (d) RL
-**Answer:** (b) RR. Balance factor = height(left) − height(right) = −2 means right subtree is 2 taller. This is a right-right imbalance, solved by left rotation on the unbalanced node.
+**Answer:** (b) RR. Balance factor = height(left) âˆ’ height(right) = âˆ’2 means right subtree is 2 taller. This is a right-right imbalance, solved by left rotation on the unbalanced node.
 </details>
 
 <details>
 <summary>Q5: Which sorting algorithm has the best asymptotic worst-case time complexity?</summary>
 (a) Quick Sort (b) Bubble Sort (c) Merge Sort (d) Insertion Sort
-**Answer:** (c) Merge Sort. O(n log n) in worst case. Quick sort worst-case O(n²).
+**Answer:** (c) Merge Sort. O(n log n) in worst case. Quick sort worst-case O(nÂ²).
 </details>
 
 <details>
 <summary>Q6: In a complete binary tree with 500 nodes, the number of internal nodes is:</summary>
 (a) 249 (b) 250 (c) 251 (d) 499
-**Answer:** (b) 250. In a complete binary tree, internal nodes = ⌊n/2⌋ = ⌊500/2⌋ = 250.
+**Answer:** (b) 250. In a complete binary tree, internal nodes = âŒŠn/2âŒ‹ = âŒŠ500/2âŒ‹ = 250.
 </details>
 
 <details>
@@ -746,7 +746,7 @@ Final: [20, 15, 17, 14, 8, 12, 6, 10]
 <details>
 <summary>Q9: What is the minimum height of a binary tree with 100 nodes?</summary>
 (a) 6 (b) 7 (c) 99 (d) 100
-**Answer:** (a) 6. Minimum height = ⌈log2(n+1)⌉ − 1 = ⌈log2(101)⌉ − 1 = ⌈6.66⌉ − 1 = 7 − 1 = 6.
+**Answer:** (a) 6. Minimum height = âŒˆlog2(n+1)âŒ‰ âˆ’ 1 = âŒˆlog2(101)âŒ‰ âˆ’ 1 = âŒˆ6.66âŒ‰ âˆ’ 1 = 7 âˆ’ 1 = 6.
 </details>
 
 <details>
@@ -764,13 +764,13 @@ Final: [20, 15, 17, 14, 8, 12, 6, 10]
 <details>
 <summary>Q12: In a max-heap, parent of element at index 7 (0-based) is at:</summary>
 (a) 1 (b) 2 (c) 3 (d) 4
-**Answer:** (c) 3. Parent index = ⌊(i−1)/2⌋ = ⌊(7−1)/2⌋ = 3.
+**Answer:** (c) 3. Parent index = âŒŠ(iâˆ’1)/2âŒ‹ = âŒŠ(7âˆ’1)/2âŒ‹ = 3.
 </details>
 
 <details>
 <summary>Q13: How many edges in a complete graph with 10 vertices?</summary>
 (a) 45 (b) 90 (c) 100 (d) 10
-**Answer:** (a) 45. E = n(n−1)/2 = 10×9/2 = 45.
+**Answer:** (a) 45. E = n(nâˆ’1)/2 = 10Ã—9/2 = 45.
 </details>
 
 <details>
@@ -781,7 +781,7 @@ Final: [20, 15, 17, 14, 8, 12, 6, 10]
 
 <details>
 <summary>Q15: What is the worst-case time complexity of building a heap?</summary>
-(a) O(log n) (b) O(n) (c) O(n log n) (d) O(n²)
+(a) O(log n) (b) O(n) (c) O(n log n) (d) O(nÂ²)
 **Answer:** (b) O(n). Although heapify is O(log n) and called n/2 times, mathematical analysis shows build-heap is O(n) (tight bound).
 </details>
 
@@ -794,7 +794,7 @@ Final: [20, 15, 17, 14, 8, 12, 6, 10]
 <details>
 <summary>Q17: For an array of nearly sorted elements, which algorithm performs best?</summary>
 (a) Quick Sort (b) Merge Sort (c) Insertion Sort (d) Selection Sort
-**Answer:** (c) Insertion Sort. O(n) best case for nearly sorted data (each element moves only a few positions). Quick sort would be O(n²) if pivot selection is poor.
+**Answer:** (c) Insertion Sort. O(n) best case for nearly sorted data (each element moves only a few positions). Quick sort would be O(nÂ²) if pivot selection is poor.
 </details>
 
 <details>
@@ -810,25 +810,25 @@ Final: [20, 15, 17, 14, 8, 12, 6, 10]
 </details>
 
 <details>
-<summary>Q20: In hashing, load factor α = 0.75 with chaining means:</summary>
+<summary>Q20: In hashing, load factor Î± = 0.75 with chaining means:</summary>
 (a) 75% of slots are empty (b) Average chain length = 0.75 (c) Maximum chain length = 0.75 (d) Table is 75% full
-**Answer:** (b) Average chain length = 0.75. Load factor = n/m (keys/slots). With chaining, average per-slot chain length = α = 0.75.
+**Answer:** (b) Average chain length = 0.75. Load factor = n/m (keys/slots). With chaining, average per-slot chain length = Î± = 0.75.
 </details>
 
-## 📖 Exercise Bank (30 Questions)
+## ðŸ“– Exercise Bank (30 Questions)
 
-1. Convert infix: A * (B + C / D) − E to postfix. Show stack state at each step.
-2. Evaluate postfix: 10 5 + 6 2 − * 4 2 / +
+1. Convert infix: A * (B + C / D) âˆ’ E to postfix. Show stack state at each step.
+2. Evaluate postfix: 10 5 + 6 2 âˆ’ * 4 2 / +
 3. Sort [64, 34, 25, 12, 22, 11, 90] using merge sort. Show the divide and merge steps.
 4. Insert 50, 30, 70, 20, 40, 60, 80 into an empty BST. Delete 20, then 30. Show tree after each operation.
 5. Construct AVL tree by inserting: 10, 20, 30, 40, 50, 25. Show balance factor at each step.
 6. Build a max-heap from [4, 10, 3, 5, 1, 8, 7, 6]. Show heap after each heapify.
-7. Traverse the graph with adjacency: A→B,C; B→D,E; C→F; D→G; E→G; F→G using BFS and DFS starting from A.
+7. Traverse the graph with adjacency: Aâ†’B,C; Bâ†’D,E; Câ†’F; Dâ†’G; Eâ†’G; Fâ†’G using BFS and DFS starting from A.
 8. For hash table of size 11, insert keys [22, 1, 13, 11, 24, 33, 44] using linear probing. Show final table.
 9. Write a TypeScript function to detect a cycle in an undirected graph using DFS.
 10. Given preorder: A B C D E F G and inorder: C B D A F E G, reconstruct the binary tree.
 11. Implement a queue using two stacks in TypeScript.
-12. Solve T(n) = 4T(n/2) + n² using the Master Theorem.
+12. Solve T(n) = 4T(n/2) + nÂ² using the Master Theorem.
 13. Find the minimum spanning tree for graph with edges: (A,B,4), (A,C,3), (B,C,1), (B,D,2), (C,D,5) using Kruskal's.
 14. Write TypeScript code for Radix Sort.
 15. Given sorted arrays A=[1,3,5,7] and B=[2,4,6,8,10], find the median in O(log(min(n,m))).
@@ -850,38 +850,38 @@ Final: [20, 15, 17, 14, 8, 12, 6, 10]
 
 **Answer Key:**
 
-1. Postfix: A B C D / + * E −
-2. (10+5)=15, (6−2)=4, 15*4=60, 4/2=2, 60+2=62
-3. [64,34,25,12] [22,11,90] → [34,64][12,25] [11,22][90] → [12,25,34,64] [11,22,90] → [11,12,22,25,34,64,90]
+1. Postfix: A B C D / + * E âˆ’
+2. (10+5)=15, (6âˆ’2)=4, 15*4=60, 4/2=2, 60+2=62
+3. [64,34,25,12] [22,11,90] â†’ [34,64][12,25] [11,22][90] â†’ [12,25,34,64] [11,22,90] â†’ [11,12,22,25,34,64,90]
 4. After del 20: [50, 40, 70, null, 60, 80] (30's successor 40 replaces 30)
-5. AVL: 10→20 (RR→rotate left at 10): [20,10]. 30→RR at 20: [20,10,30] → rotate left: 30 becomes root with children 20, null. 40→RR at 30: [30,20,40] with 10 child of 20... complex trace
-6. [10,4,3,5,1,8,7,6] → build-heap → [10,6,8,5,1,3,7,4]
+5. AVL: 10â†’20 (RRâ†’rotate left at 10): [20,10]. 30â†’RR at 20: [20,10,30] â†’ rotate left: 30 becomes root with children 20, null. 40â†’RR at 30: [30,20,40] with 10 child of 20... complex trace
+6. [10,4,3,5,1,8,7,6] â†’ build-heap â†’ [10,6,8,5,1,3,7,4]
 7. BFS: A,B,C,D,E,F,G. DFS: A,B,D,G,E,C,F (or A,C,F,G,B,D,E depending on adjacency order)
-8. Linear: slot 0→11, 1→22, 2→1→13? 13%11=2 → collision → try 3→13, 4→24, 6→33, 7→44
-9. DFS with parent check: if visited neighbor ≠ parent → cycle detected
+8. Linear: slot 0â†’11, 1â†’22, 2â†’1â†’13? 13%11=2 â†’ collision â†’ try 3â†’13, 4â†’24, 6â†’33, 7â†’44
+9. DFS with parent check: if visited neighbor â‰  parent â†’ cycle detected
 10. Root A. Inorder left: CBD, right: FEG. Preorder left: BCD, right: EFG. A(B(C,,D), E(F,G))
 11. Push: enqueue into s1. Pop: if s2 empty, pop all from s1 to s2, then pop from s2
-12. a=4, b=2, log_b a = 2, f(n)=n² → Case 2: T(n) = Θ(n² log n)
+12. a=4, b=2, log_b a = 2, f(n)=nÂ² â†’ Case 2: T(n) = Î˜(nÂ² log n)
 13. Sort edges: (B,C,1), (B,D,2), (A,C,3), (A,B,4), (C,D,5). MST: (B,C), (B,D), (A,C). Total = 6
 15. Pivot on smaller array, binary search for correct partition. Median = (4+5)/2 = 4.5
 16. HashMap + Doubly linked list. Get: move to head. Put: add to head, evict tail if full
-17. 10(B), 20(R) → insert 20 as right child of 10(R). 30(R) → uncle is null (B) → RR rotation. 10 left of 20, recolor... complex. Standard RB tree with rotations
+17. 10(B), 20(R) â†’ insert 20 as right child of 10(R). 30(R) â†’ uncle is null (B) â†’ RR rotation. 10 left of 20, recolor... complex. Standard RB tree with rotations
 19. Pick middle element as root, recursively build left and right halves
 20. DFS each unvisited '1', mark visited. Count DFS calls
 21. DP: LCS = "BCBD" or "BDAB"? length = 4. Table: compare all prefixes
-22. Compute indegree. Enqueue 0-indegree nodes. Process: pop → decrement neighbor indegrees → enqueue new 0-indegree
+22. Compute indegree. Enqueue 0-indegree nodes. Process: pop â†’ decrement neighbor indegrees â†’ enqueue new 0-indegree
 23. DP[i] = min(DP[i-coin] + 1) for each coin
 24. Boyer-Moore: candidate count = 0, if count==0 pick current, if current==candidate inc else dec
-25. Random heights: 5→L1,3,2; 10→L1; 15→L1,2; 20→L1; 25→L1,3 (typical distribution)
+25. Random heights: 5â†’L1,3,2; 10â†’L1; 15â†’L1,2; 20â†’L1; 25â†’L1,3 (typical distribution)
 26. Trie: each node has children map + isEnd flag. Insert: traverse/create nodes. Search: traverse
-27. Hash set: track seen. If seen → skip node by linking prev.next = curr.next
-28. If lengths differ by >1 → false. If same length → count differences ≤ 1. If length differs by 1 → check insert/delete
+27. Hash set: track seen. If seen â†’ skip node by linking prev.next = curr.next
+28. If lengths differ by >1 â†’ false. If same length â†’ count differences â‰¤ 1. If length differs by 1 â†’ check insert/delete
 29. Place queen per row. Check column + diagonal conflicts. Backtrack on conflict. 92 solutions for N=8
 30. Build tree: leaf = array element, internal = sum of children. Update: traverse to leaf, update, propagate up. Query: range sum via divide/merge
 
 ---
 
-## 📌 Additional PYQ Integration (2024–2026 Analysis)
+## ðŸ“Œ Additional PYQ Integration (2024â€“2026 Analysis)
 
 > **PYQ 2025:** Given inorder sequence: 4, 2, 5, 1, 6, 3 and preorder sequence: 1, 2, 4, 5, 3, 6. Construct the unique binary tree and write its postorder traversal.
 
@@ -893,37 +893,37 @@ Final: [20, 15, 17, 14, 8, 12, 6, 10]
 - Postorder: 4, 5, 2, 6, 3, 1
 
 > **PYQ 2024:** You have a hash table of size 11. Insert keys 12, 22, 32, 42, 52, 62 using:
-> (a) Linear probing (b) Quadratic probing with c1=0, c2=1 (c) Double hashing with h2(k) = 7 − (k mod 7)
+> (a) Linear probing (b) Quadratic probing with c1=0, c2=1 (c) Double hashing with h2(k) = 7 âˆ’ (k mod 7)
 
 **Solution (Linear probing):**
-- 12 mod 11 = 1 → slot 1
-- 22 mod 11 = 0 → slot 0
-- 32 mod 11 = 10 → slot 10
-- 42 mod 11 = 9 → slot 9
-- 52 mod 11 = 8 → slot 8
-- 62 mod 11 = 7 → slot 7
+- 12 mod 11 = 1 â†’ slot 1
+- 22 mod 11 = 0 â†’ slot 0
+- 32 mod 11 = 10 â†’ slot 10
+- 42 mod 11 = 9 â†’ slot 9
+- 52 mod 11 = 8 â†’ slot 8
+- 62 mod 11 = 7 â†’ slot 7
 Final: [22, 12, _, _, _, _, _, 62, 52, 42, 32] (no collisions surprisingly since all hash to different slots)
 
 **Let me try with colliding keys:** 22, 33, 44, 55, 66:
-- 22 mod 11 = 0 → slot 0
-- 33 mod 11 = 0 → collision → linear: slot 1
-- 44 mod 11 = 0 → linear: slot 2
-- 55 mod 11 = 0 → slot 3
-- 66 mod 11 = 0 → slot 4
+- 22 mod 11 = 0 â†’ slot 0
+- 33 mod 11 = 0 â†’ collision â†’ linear: slot 1
+- 44 mod 11 = 0 â†’ linear: slot 2
+- 55 mod 11 = 0 â†’ slot 3
+- 66 mod 11 = 0 â†’ slot 4
 Final: [22, 33, 44, 55, 66, _, _, _, _, _, _] (primary clustering visible!)
 
 > **PYQ 2026:** Sort the array [10, 80, 30, 90, 40, 50, 70] using Quick Sort with the last element as pivot. Show the partition step and final sorted array.
 
 **Solution (Hoare partition with last pivot=70):**
 - Partition: i=0, j=5 (70 not included)
-- 10<70 → i=1. 80>70 → stop. j=5: 50<70 → stop. Swap 80 and 50: [10,50,30,90,40,80,70]
+- 10<70 â†’ i=1. 80>70 â†’ stop. j=5: 50<70 â†’ stop. Swap 80 and 50: [10,50,30,90,40,80,70]
 - Continue: i=2 (30<70), i=3 (90>70 stop). j=4: 40<70 stop. Swap 90,40: [10,50,30,40,90,80,70]
-- Continue: i=4 (90>70 stop). j=3 (40<70). i>j → stop.
+- Continue: i=4 (90>70 stop). j=3 (40<70). i>j â†’ stop.
 - Swap A[4] and pivot: [10,50,30,40,70,80,90]. Pivot 70 at correct position.
 - Recursively sort left [10,50,30,40] and right [80,90]
 - Left pivot=40: [10,30,40,50] ... Final: [10,30,40,50,70,80,90]
 
-## 📌 Topic-wise Weightage Analysis for IBPS SO IT Mains
+## ðŸ“Œ Topic-wise Weightage Analysis for IBPS SO IT Mains
 
 | Topic | Weightage | Frequency | Difficulty |
 |-------|-----------|-----------|------------|
@@ -939,7 +939,7 @@ Final: [22, 33, 44, 55, 66, _, _, _, _, _, _] (primary clustering visible!)
 
 ## Summary
 - **Linear DS:** Arrays (O(1) access), linked lists (O(1) insert at ends), stacks (LIFO), queues (FIFO)
-- **Trees:** Binary tree properties, BST (sorted inorder), AVL (balance factor ±1, 4 rotations)
+- **Trees:** Binary tree properties, BST (sorted inorder), AVL (balance factor Â±1, 4 rotations)
 - **Heap:** Complete binary tree, min/max heap, build O(n), extract O(log n)
 - **Graphs:** Matrix (dense) vs list (sparse), BFS (queue), DFS (stack/recursion)
 - **Sorting:** Bubble (slow), Selection (min swaps), Insertion (near-sorted), Merge (stable O(n log n)), Quick (average O(n log n)), Heap (in-place O(n log n))
@@ -948,19 +948,19 @@ Final: [22, 33, 44, 55, 66, _, _, _, _, _, _] (primary clustering visible!)
 - **Graph algos:** Dijkstra (shortest path), Prim/Kruskal (MST), Topological sort (DAG)
 - **Non-comparison sorts:** Counting sort (O(n+k)), Radix sort (O(dn)), Bucket sort (O(n))
 - **Advanced hashing:** Rehashing (amortized O(1)), Perfect hashing (O(1) worst), Consistent hashing (rings)
-- **Skip list:** Probabilistic balanced structure — O(log n) operations
+- **Skip list:** Probabilistic balanced structure â€” O(log n) operations
 
 ---
 
 ## HOT Topics (Frequently Asked in IBPS SO IT Mains)
-1. Infix to postfix conversion — operator precedence and stack state
-2. Tree traversal sequences — given inorder + preorder, reconstruct the binary tree
+1. Infix to postfix conversion â€” operator precedence and stack state
+2. Tree traversal sequences â€” given inorder + preorder, reconstruct the binary tree
 3. AVL tree insertion/deletion with balance factor after each step
-4. Heap insertion and deletion — show array state after each operation
-5. Sorting algorithm selection — identify algorithm from intermediate array state
-6. Hash table insertion with linear/quadratic probing — show final table state
-7. BFS/DFS on graph — give traversal order starting from a given vertex
-8. BST deletion cases — node with 0/1/2 children
+4. Heap insertion and deletion â€” show array state after each operation
+5. Sorting algorithm selection â€” identify algorithm from intermediate array state
+6. Hash table insertion with linear/quadratic probing â€” show final table state
+7. BFS/DFS on graph â€” give traversal order starting from a given vertex
+8. BST deletion cases â€” node with 0/1/2 children
 
 ---
 
@@ -968,12 +968,12 @@ Final: [22, 33, 44, 55, 66, _, _, _, _, _, _] (primary clustering visible!)
 
 <details>
 <summary>Q1: The minimum number of comparisons required to find the minimum and maximum of n elements is:</summary>
-A1: ⌈3n/2⌉ − 2. Using tournament method, compare in pairs: 3 comparisons per 2 elements, minus 2 for the last comparison.
+A1: âŒˆ3n/2âŒ‰ âˆ’ 2. Using tournament method, compare in pairs: 3 comparisons per 2 elements, minus 2 for the last comparison.
 </details>
 
 <details>
 <summary>Q2: In an AVL tree, what are the possible balance factor values?</summary>
-A2: −1, 0, +1. If any node's balance factor goes outside this range, a rotation is required to rebalance.
+A2: âˆ’1, 0, +1. If any node's balance factor goes outside this range, a rotation is required to rebalance.
 </details>
 
 <details>
@@ -982,8 +982,8 @@ A3: Adjacency list with priority queue. Matrix would use O(V^2) = 10^10 memory, 
 </details>
 
 <details>
-<summary>Q4: How many nodes does a perfect binary tree of height 5 have (height counted as levels − 1)?</summary>
-A4: 63 nodes. 2^(h+1) − 1 = 2^6 − 1 = 64 − 1 = 63.
+<summary>Q4: How many nodes does a perfect binary tree of height 5 have (height counted as levels âˆ’ 1)?</summary>
+A4: 63 nodes. 2^(h+1) âˆ’ 1 = 2^6 âˆ’ 1 = 64 âˆ’ 1 = 63.
 </details>
 
 <details>

@@ -1,4 +1,4 @@
-# Chapter 9: Terraform & Infrastructure as Code
+﻿# Chapter 9: Terraform & Infrastructure as Code
 
 > **Prev:** [Continuous Delivery](./09-continuous-delivery.md)
 > **Next:** [Advanced Configuration Mgmt](./10-configuration-mgmt.md)
@@ -17,16 +17,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/09-iac/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/09-iac/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/09-iac/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/09-iac/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/09-iac/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/09-iac/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/09-iac/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/09-iac/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/09-iac/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/09-iac/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/09-iac/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/09-iac/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -138,7 +138,7 @@ resource "aws_ecs_service" "app" {
 ### Terraform Provisioners
 
 
-Provisioners execute scripts on resources after creation (use sparingly — prefer user_data or configuration management):
+Provisioners execute scripts on resources after creation (use sparingly â€” prefer user_data or configuration management):
 
 ```hcl
 resource "aws_instance" "web" {
@@ -490,7 +490,7 @@ console.log(ts);
 
 ### Drift Remediation Engine
 
-Infrastructure drift — when actual infrastructure state diverges from declared configuration — is a leading cause of configuration drift incidents. The following tool detects, analyzes, and proposes remediation for drift.
+Infrastructure drift â€” when actual infrastructure state diverges from declared configuration â€” is a leading cause of configuration drift incidents. The following tool detects, analyzes, and proposes remediation for drift.
 
 ```typescript
 // drift-remediation.ts

@@ -1,7 +1,7 @@
-# Chapter 6: Identity & Access Management
+﻿# Chapter 6: Identity & Access Management
 
-> **Prereq:** Chapter 5 (Web Security) → OAuth 2.0 and SAML secure web authentication.
-> **Next:** Chapter 7 (Cloud & Mobile Security) → cloud IAM extends enterprise identity to cloud providers.
+> **Prereq:** Chapter 5 (Web Security) â†’ OAuth 2.0 and SAML secure web authentication.
+> **Next:** Chapter 7 (Cloud & Mobile Security) â†’ cloud IAM extends enterprise identity to cloud providers.
 
 ---
 
@@ -20,16 +20,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/cyber-security/06-iam/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/cyber-security/06-iam/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/06-iam/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/cyber-security/06-iam/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/cyber-security/06-iam/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/cyber-security/06-iam/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/06-iam/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/cyber-security/06-iam/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/cyber-security/06-iam/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/cyber-security/06-iam/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/06-iam/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/cyber-security/06-iam/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -177,7 +177,7 @@ Biometrics: fingerprint, face, iris, voice, gait, keystroke dynamics.
 **Edge Cases:**
 - **Fallback mechanisms:** MFA with SMS fallback undermines security (SIM swap attacks)
 - **Recovery codes:** printed backup codes are a possession factor on paper
-- **Wearable devices:** Smartwatch as possession factor → proximity-based unlock chains
+- **Wearable devices:** Smartwatch as possession factor â†’ proximity-based unlock chains
 
 ---
 
@@ -198,7 +198,7 @@ Biometrics: fingerprint, face, iris, voice, gait, keystroke dynamics.
 | **Reversible** | No (preimage resistance) | Yes (with correct key) |
 | **Examples** | SHA-256, bcrypt, argon2 | AES, RSA, ChaCha20 |
 
-**Numbered Steps → Password Storage:**
+**Numbered Steps â†’ Password Storage:**
 1. User creates password `P@ssw0rd!`
 2. System generates unique random salt: `s = random(16 bytes)` -> `a1b2c3d4e5f6g7h8`
 3. System computes hash: `h = hash(password || salt)` with work factor
@@ -244,14 +244,14 @@ Salt:        "abcdefghijklmnopqrstuv" (22 chars base64)
 Cost:        12 (2^12 = 4096 iterations)
 
 Step 1:  Initialize Blowfish with salt-derived subkeys
-Step 2:  ExpandKey(password) → 4096 iterations
+Step 2:  ExpandKey(password) â†’ 4096 iterations
 Step 3:  Encrypt "OrpheanBeholderScryDoubt" 64 times with EksBlowfish
 Output:   $2b$12$abcdefghijklmnopqrstuv.9E6uGX7YvZ8W2rN5qL3mT...
 ```
 
 **Complexity:**
-- Time: O(2^cost) → exponential in cost factor
-- Memory: ~4 KB (fixed, low → weakness against GPU/ASIC attacks)
+- Time: O(2^cost) â†’ exponential in cost factor
+- Memory: ~4 KB (fixed, low â†’ weakness against GPU/ASIC attacks)
 - Cost 12 on modern CPU: ~250ms per hash
 
 **Advantages & Disadvantages:**
@@ -286,9 +286,9 @@ Designed to be memory-hard (requires large memory), making GPU/ASIC attacks expe
 Winner of the 2015 Password Hashing Competition (PHC). Gold standard for new implementations.
 
 **Variants:**
-- **argon2id** (RECOMMENDED): Hybrid → side-channel resistance + GPU resistance
-- **argon2i:** Data-independent → side-channel resistant
-- **argon2d:** Data-dependent → GPU resistant
+- **argon2id** (RECOMMENDED): Hybrid â†’ side-channel resistance + GPU resistance
+- **argon2i:** Data-independent â†’ side-channel resistant
+- **argon2d:** Data-dependent â†’ GPU resistant
 
 **Parameters:**
 - t: Time cost (iterations)
@@ -315,7 +315,7 @@ NIST-approved (FIPS 140). Used in WPA2, iOS, many legacy systems.
 - dkLen: Desired output length
 
 **Advantage:** FIPS-approved, widely available.
-**Disadvantage:** Not memory-hard → trivial to parallelize on GPU (billions of hash/sec).
+**Disadvantage:** Not memory-hard â†’ trivial to parallelize on GPU (billions of hash/sec).
 
 ### Password Hash Comparison
 
@@ -334,9 +334,9 @@ NIST-approved (FIPS 140). Used in WPA2, iOS, many legacy systems.
 
 | Policy | Old Approach (Deprecated) | NIST 800-63B Approach |
 |--------|--------------------------|----------------------|
-| **Length** | 8+ chars, mixed case | **MIN 8, recommend 15+** → length > complexity |
-| **Composition** | Must have upper, lower, digit, symbol | **NO composition rules** → allow any printable ASCII |
-| **Expiration** | Expire every 90 days | **No periodic expiration** → only on compromise suspicion |
+| **Length** | 8+ chars, mixed case | **MIN 8, recommend 15+** â†’ length > complexity |
+| **Composition** | Must have upper, lower, digit, symbol | **NO composition rules** â†’ allow any printable ASCII |
+| **Expiration** | Expire every 90 days | **No periodic expiration** â†’ only on compromise suspicion |
 | **History** | Remember 24 previous passwords | **Check against known breach databases** (HIBP) |
 | **Hints** | Allow password hints | **No hints, no security questions** |
 | **Reset** | Security questions | **Out-of-band verification** (email, SMS, authenticator) |
@@ -408,7 +408,7 @@ MFA requires two or more **different** authentication factors. 2FA uses exactly 
 
 **Real-World Analogy:** Entering a high-security lab. **Step 1:** PIN at door (know). **Step 2:** Badge swipe (have). **Step 3:** Fingerprint scan (are). All three must match.
 
-### 4.1 TOTP (Time-based OTP) → RFC 6238
+### 4.1 TOTP (Time-based OTP) â†’ RFC 6238
 
 
 **Algorithm:** `TOTP = HOTP(K, T)` where `T = floor((time - T0) / X)`
@@ -429,7 +429,7 @@ Secret base32: JBSWY3DPEHPK3PXP
 HMAC-SHA1 result -> dynamic truncation -> mod 10^6 = 123456
 ```
 
-**Complexity:** O(1) time, O(1) space → single HMAC computation.
+**Complexity:** O(1) time, O(1) space â†’ single HMAC computation.
 
 **Advantages & Disadvantages:**
 
@@ -442,7 +442,7 @@ HMAC-SHA1 result -> dynamic truncation -> mod 10^6 = 123456
 
 **Edge Cases:** Clock drift (>30s = all codes fail), secret compromise via QR shoulder-surfing, recovery codes needed for lost device.
 
-### 4.2 HOTP (HMAC-based OTP) → RFC 4226
+### 4.2 HOTP (HMAC-based OTP) â†’ RFC 4226
 
 
 `HOTP(K, C) = Truncate(HMAC-SHA1(K, C))` where C is a counter.
@@ -512,7 +512,7 @@ function New-TOTPCode {
 
 **SMS:** NIST deprecated as "restricted" (SP 800-63B). Risks: SIM swap, SS7 interception.
 
-**Push:** Better than SMS (device binding + signature). Risk: Push fatigue → users approve without verifying.
+**Push:** Better than SMS (device binding + signature). Risk: Push fatigue â†’ users approve without verifying.
 
 ### 4.5 Hardware Tokens (U2F / FIDO2 / WebAuthn Passkeys)
 
@@ -541,7 +541,7 @@ User --[login+password]--> Website
 2. Browser calls `navigator.credentials.get({publicKey: {...}})`
 3. User authenticates via FaceID/fingerprint/PIN
 4. Authenticator signs challenge with sk
-5. Server verifies with pk → user is authenticated
+5. Server verifies with pk â†’ user is authenticated
 
 **Security:** Phishing-resistant (origin-bound), no shared secrets, device binding.
 
@@ -594,11 +594,11 @@ pamu2fcfg -u $USER -n -o /etc/u2f_mappings
 
 | Metric | Definition |
 |--------|-----------|
-| **FAR** | False Accept Rate → impostor incorrectly accepted |
-| **FRR** | False Reject Rate → legitimate user incorrectly rejected |
-| **EER** | Equal Error Rate → where FAR == FRR |
-| **FTC** | Failure to Capture → system cannot capture input |
-| **FTE** | Failure to Enroll → system cannot create template |
+| **FAR** | False Accept Rate â†’ impostor incorrectly accepted |
+| **FRR** | False Reject Rate â†’ legitimate user incorrectly rejected |
+| **EER** | Equal Error Rate â†’ where FAR == FRR |
+| **FTC** | Failure to Capture â†’ system cannot capture input |
+| **FTE** | Failure to Enroll â†’ system cannot create template |
 
 **FAR/FRR Trade-off:** Lower threshold = lower FRR (fewer rejections) but higher FAR (more false accepts). EER is the single comparison point.
 
@@ -753,7 +753,7 @@ openssl dgst -sha256 -verify saml-signing.pub -signature request.sig request.xml
 5. Client POSTs `code + code_verifier` to token endpoint
 6. AS verifies `SHA256(verifier) == challenge`, returns access_token + refresh_token
 
-**PKCE prevents** authorization code interception → attacker with code cannot exchange without verifier.
+**PKCE prevents** authorization code interception â†’ attacker with code cannot exchange without verifier.
 
 #### Client Credentials (Machine-to-Machine)
 
@@ -964,7 +964,7 @@ SELECT EXISTS (
 | Advantage | Disadvantage |
 |-----------|-------------|
 | Simple to understand | Role explosion (hundreds of narrow roles) |
-| Easy to audit | Static → no time/location expressions |
+| Easy to audit | Static â†’ no time/location expressions |
 | Well-supported | Permission creep over time |
 | Hierarchical | Coarse-grained |
 
@@ -1201,10 +1201,10 @@ New-ADServiceAccount -Name "SVC-WebApp" -DNSHostName "webapp.company.com" `
 | Term | Description |
 |------|------------|
 | **KDC** | Key Distribution Center = AS + TGS |
-| **AS** | Authentication Server → validates credentials, issues TGT |
-| **TGS** | Ticket Granting Service → issues service tickets |
-| **TGT** | Ticket Granting Ticket → proves authentication |
-| **ST** | Service Ticket → for specific service |
+| **AS** | Authentication Server â†’ validates credentials, issues TGT |
+| **TGS** | Ticket Granting Service â†’ issues service tickets |
+| **TGT** | Ticket Granting Ticket â†’ proves authentication |
+| **ST** | Service Ticket â†’ for specific service |
 | **Principal** | Unique identity: `user@REALM` or `HTTP/server.company.com@REALM` |
 | **Realm** | Kerberos domain: `COMPANY.COM` |
 
@@ -1221,8 +1221,8 @@ New-ADServiceAccount -Name "SVC-WebApp" -DNSHostName "webapp.company.com" `
 ```
 
 **Key Points:**
-- TGT encrypted with KDC's key → **client cannot decrypt TGT**
-- Service Ticket encrypted with service's key → **client cannot decrypt ST**
+- TGT encrypted with KDC's key â†’ **client cannot decrypt TGT**
+- Service Ticket encrypted with service's key â†’ **client cannot decrypt ST**
 - Session keys are what client actually uses
 - Mutual authentication: service proves it knows its own key
 
@@ -1298,20 +1298,20 @@ klist purge              # Purge all tickets
 ### 15.1 Principles (NIST SP 800-207)
 
 
-1. **Never trust, always verify** → every request authenticated and authorized
-2. **Assume breach** → design for compromise, limit blast radius
-3. **Least privilege** → minimum access necessary, time-bound
-4. **Micro-segmentation** → all communication encrypted and authenticated
-5. **Continuous validation** → re-evaluate trust at every request
+1. **Never trust, always verify** â†’ every request authenticated and authorized
+2. **Assume breach** â†’ design for compromise, limit blast radius
+3. **Least privilege** â†’ minimum access necessary, time-bound
+4. **Micro-segmentation** â†’ all communication encrypted and authenticated
+5. **Continuous validation** â†’ re-evaluate trust at every request
 
 ### 15.2 Google BeyondCorp
 
 
 **Key Concepts:**
-- **No VPN** → all access via internet, no corporate network boundary
-- **Device Inventory** → every device tracked, must be managed
-- **Access Proxy** → IAP (Identity-Aware Proxy) in front of all apps
-- **Trust scoring** → device state + user identity + context -> access decision
+- **No VPN** â†’ all access via internet, no corporate network boundary
+- **Device Inventory** â†’ every device tracked, must be managed
+- **Access Proxy** â†’ IAP (Identity-Aware Proxy) in front of all apps
+- **Trust scoring** â†’ device state + user identity + context -> access decision
 
 ```
 User --[Managed Device + SSO]--> Internet --[IAP]--> App
@@ -1452,7 +1452,7 @@ CREATION --> ACTIVE --> EXPIRATION --> TERMINATION
 
 ## 19. Case Studies
 
-### Case Study 1: Okta 2022 → LAPSUS$ Breach
+### Case Study 1: Okta 2022 â†’ LAPSUS$ Breach
 
 
 **Timeline:**
@@ -1466,7 +1466,7 @@ CREATION --> ACTIVE --> EXPIRATION --> TERMINATION
 - Third-party support engineer (Sitel/OneLogin employee) used personal Google account
 - Google account contained Okta credentials/session tokens for support portal
 - LAPSUS$ obtained access via credential theft / SIM swap
-- Support portal had **superuser** access level → could impersonate any customer admin
+- Support portal had **superuser** access level â†’ could impersonate any customer admin
 - **MFA was NOT enforced** on the third-party syslog access
 
 **Root Causes:**
@@ -1492,7 +1492,7 @@ CREATION --> ACTIVE --> EXPIRATION --> TERMINATION
 
 ---
 
-### Case Study 2: SolarWinds MFA Bypass → Orion Build Pipeline
+### Case Study 2: SolarWinds MFA Bypass â†’ Orion Build Pipeline
 
 
 **Timeline:**
@@ -1507,19 +1507,19 @@ CREATION --> ACTIVE --> EXPIRATION --> TERMINATION
 - Build agents (TeamCity) used **standalone Windows accounts** with local admin
 - These accounts had **NO MFA** (machine accounts cannot do interactive MFA)
 - Attacker compromised build system, stole build agent credentials
-- Injected code into build process → code signing certs on same server
+- Injected code into build process â†’ code signing certs on same server
 
 **Why MFA Did Not Help:**
-- Build agents are **non-interactive** → cannot respond to MFA prompts
+- Build agents are **non-interactive** â†’ cannot respond to MFA prompts
 - This was a **pipeline compromise**, not a user login
 - The attacker never authenticated as a human user
 - MFA protects logins, not build pipelines
 
 **Root Causes:**
 - **MFA not applicable** to non-human accounts
-- **Signing keys co-located** with compilation server → no separation of duties
-- **Build pipeline integrity** → no attestation or reproducible builds
-- **Code review blind spot** → injected code looked legitimate
+- **Signing keys co-located** with compilation server â†’ no separation of duties
+- **Build pipeline integrity** â†’ no attestation or reproducible builds
+- **Code review blind spot** â†’ injected code looked legitimate
 
 **Remediations:**
 - **Separation of duties:** Build server != signing server; HSM for signing
@@ -1535,7 +1535,7 @@ CREATION --> ACTIVE --> EXPIRATION --> TERMINATION
 
 ---
 
-### Case Study 3: Microsoft 2024 → Midnight Blizzard Nation-State Attack
+### Case Study 3: Microsoft 2024 â†’ Midnight Blizzard Nation-State Attack
 
 
 **Timeline:**
@@ -1546,23 +1546,23 @@ CREATION --> ACTIVE --> EXPIRATION --> TERMINATION
 
 **Attack Vector (Password Spray + Token Theft):**
 
-**Phase 1 → Password Spray:** Attacker sprayed passwords against a **non-production test tenant**. Legacy test account compromised.
+**Phase 1 â†’ Password Spray:** Attacker sprayed passwords against a **non-production test tenant**. Legacy test account compromised.
 
-**Phase 2 → Token Theft:** Compromised account had OAuth apps with **delegated permissions** granting access to corporate email.
+**Phase 2 â†’ Token Theft:** Compromised account had OAuth apps with **delegated permissions** granting access to corporate email.
 
-**Phase 3 → Pivot:** Attacker accessed C-suite, cybersecurity, and legal email via OAuth tokens.
+**Phase 3 â†’ Pivot:** Attacker accessed C-suite, cybersecurity, and legal email via OAuth tokens.
 
-**Phase 4 → Source Code:** OAuth permissions also allowed access to source code repositories.
+**Phase 4 â†’ Source Code:** OAuth permissions also allowed access to source code repositories.
 
 **Why MFA / Identity Controls Failed:**
 - **Test tenants exempt** from baseline policies (no MFA, no Conditional Access)
-- **OAuth token theft:** Stolen **tokens** are valid until expiry → MFA at login doesn't help
+- **OAuth token theft:** Stolen **tokens** are valid until expiry â†’ MFA at login doesn't help
 - **Excessive OAuth permissions:** Legacy app had `mail.read`, `Sites.Read.All`
 - **No token binding:** Tokens not bound to device or location
 
 **Root Causes:**
 - **Inconsistent policy enforcement:** Test tenant had no MFA
-- **OAuth token theft:** Tokens are bearer tokens → possession = access
+- **OAuth token theft:** Tokens are bearer tokens â†’ possession = access
 - **Detection delay:** Password spray in November, not detected until January
 
 **Remediations:**
@@ -1575,7 +1575,7 @@ CREATION --> ACTIVE --> EXPIRATION --> TERMINATION
 - **Configuration drift:** Non-production environments with weaker security are entry points
 - **Token theft is the new perimeter:** MFA does not help against stolen tokens
 - **Continuous token validation:** Short TTLs, evaluate risk continuously
-- **Token binding:** DPoP (RFC 9449) → Demonstrating Proof of Possession
+- **Token binding:** DPoP (RFC 9449) â†’ Demonstrating Proof of Possession
 - **Scoped access:** Minimal OAuth scopes per application
 
 ### Case Studies Summary
@@ -1598,7 +1598,7 @@ CREATION --> ACTIVE --> EXPIRATION --> TERMINATION
 ### Q1: What is the difference between authentication and authorization?
 
 
-**Answer:** Authentication (AuthN) verifies identity → "who are you?" Authorization (AuthZ) determines access → "what are you allowed to do?" At airport security, passport check = authentication. Boarding pass check = authorization.
+**Answer:** Authentication (AuthN) verifies identity â†’ "who are you?" Authorization (AuthZ) determines access â†’ "what are you allowed to do?" At airport security, passport check = authentication. Boarding pass check = authorization.
 
 ```java
 // Authentication
@@ -1616,7 +1616,7 @@ public boolean authorize(String username, String resource, String action) {
 ### Q2: Explain OAuth 2.0 Authorization Code flow with PKCE. Why PKCE?
 
 
-**Answer:** Auth Code flow exchanges a temporary code for tokens. PKCE prevents authorization code interception → even if attacker intercepts the code, they cannot exchange it without the `code_verifier`.
+**Answer:** Auth Code flow exchanges a temporary code for tokens. PKCE prevents authorization code interception â†’ even if attacker intercepts the code, they cannot exchange it without the `code_verifier`.
 
 ```
 code_verifier = CSPRNG(64 chars)
@@ -1639,7 +1639,7 @@ code_challenge = SHA256(code_verifier)
 ### Q4: What is the N+1 problem in RBAC?
 
 
-**Answer:** Role explosion → creating too many granular roles (e.g., `Editor-DocTypeA-NorthAmerica`, `Editor-DocTypeB-Europe`). Mitigations: ABAC attributes, role hierarchies, automated role mining.
+**Answer:** Role explosion â†’ creating too many granular roles (e.g., `Editor-DocTypeA-NorthAmerica`, `Editor-DocTypeB-Europe`). Mitigations: ABAC attributes, role hierarchies, automated role mining.
 
 ### Q5: Explain Kerberos delegation types.
 
@@ -1665,7 +1665,7 @@ code_challenge = SHA256(code_verifier)
 5. **mTLS:** Certificate-based auth between services
 6. **Centralized policy:** OPA (Open Policy Agent) for ABAC
 
-### Q8: JWT vs opaque session tokens → security implications?
+### Q8: JWT vs opaque session tokens â†’ security implications?
 
 
 | Aspect | JWT | Opaque |
@@ -1677,7 +1677,7 @@ code_challenge = SHA256(code_verifier)
 
 **Recommendation:** JWT for API access (15-min TTL), opaque for UI sessions.
 
-### Q9: SAML vs OAuth 2.0 → security boundaries?
+### Q9: SAML vs OAuth 2.0 â†’ security boundaries?
 
 
 **Answer:** SAML = federated identity (IdP tells SP who you are). OAuth = delegated authorization (app gets limited access to your resources on another service). SAML: "I trust my IdP to tell me who you are." OAuth: "This app can view your Drive files if you approve."
@@ -1725,7 +1725,7 @@ const assertion = await navigator.credentials.get({
 
 **Answer:** Monitor Event ID 4769 (TGS request) with:
 - Service name NOT ending in `$` (not machine account)
-- `Ticket Encryption Type: 0x17` (RC4-HMAC → crackable)
+- `Ticket Encryption Type: 0x17` (RC4-HMAC â†’ crackable)
 - Same user requesting multiple different service tickets
 
 ### Q14: Compare password hashing algorithms for production.
@@ -1787,7 +1787,7 @@ const assertion = await navigator.credentials.get({
 | Takeaway | Application |
 |----------|-------------|
 | Multi-Factor Authentication | Deploy FIDO2/WebAuthn passkeys for phishing resistance, TOTP as fallback, eliminate SMS-based MFA where possible |
-| Password Security | Hash with argon2id (t=3, m=65536, p=4) or bcrypt (cost=12); follow NIST SP 800-63B — no periodic expiration, check against breach databases |
+| Password Security | Hash with argon2id (t=3, m=65536, p=4) or bcrypt (cost=12); follow NIST SP 800-63B â€” no periodic expiration, check against breach databases |
 | Federation (SAML 2.0 + OIDC) | Use SAML for enterprise SSO (Salesforce, Workday), OIDC for consumer-facing apps, always validate signatures and audience restrictions |
 | OAuth 2.0 Grant Selection | Use Authorization Code + PKCE for web/mobile apps, Client Credentials for machine-to-machine, never use Implicit or ROPC grants |
 | Access Control Models | Start with RBAC for simplicity, evolve to ABAC for fine-grained control, consider ReBAC for social/collaboration platforms |
@@ -1803,7 +1803,7 @@ const assertion = await navigator.credentials.get({
 | **Authentication Factors** | You need at least two of: something you know, have, and are |
 | **Password Security** | Hash with argon2id, salt each password, never expire without cause (NIST 800-63B) |
 | **MFA** | FIDO2/Passkeys are phish-resistant; TOTP is good; SMS is restricted per NIST |
-| **Biometrics** | Great UX, cannot be revoked → FAR/FRR/EER tell you accuracy |
+| **Biometrics** | Great UX, cannot be revoked â†’ FAR/FRR/EER tell you accuracy |
 | **SSO** | Centralized authentication; fewer passwords, single point of failure |
 | **SAML 2.0** | XML enterprise federation; XML Signature Wrapping is top attack |
 | **OAuth 2.0** | 6 grant types; always use Auth Code + PKCE for user-facing apps |
@@ -1814,7 +1814,7 @@ const assertion = await navigator.credentials.get({
 | **ReBAC** | Relationship-based; natural for sharing apps; Zanzibar at scale |
 | **LDAP/AD** | Directory services; AD = LDAP + Kerberos + GPOs |
 | **Kerberos** | Ticket-based protocol; Kerberoasting and Golden/Silver tickets are key attacks |
-| **Zero Trust** | Never trust, always verify → BeyondCorp removes network from trust equation |
+| **Zero Trust** | Never trust, always verify â†’ BeyondCorp removes network from trust equation |
 | **PAM** | Vault privileged credentials, rotate frequently, record sessions |
 | **JIT Access** | Temporary elevation; reduces standing privilege surface |
 | **Session Management** | Short TTLs, secure cookies, refresh token rotation, device binding |
@@ -1836,14 +1836,14 @@ const assertion = await navigator.credentials.get({
 
 <details>
 <summary>Solution</summary>
-Components: Client, Authorization Server (AS), Resource Server. Flow: 1) Client generates code_verifier + code_challenge. 2) Client → AS: authorize?response_type=code&code_challenge=... 3) AS → User: authenticate + consent. 4) AS → Client: authorization code (via redirect). 5) Client → AS: POST /token?code=...&code_verifier=... 6) AS → Client: access_token + refresh_token. 7) Client → RS: GET /resource (Authorization: Bearer token).
+Components: Client, Authorization Server (AS), Resource Server. Flow: 1) Client generates code_verifier + code_challenge. 2) Client â†’ AS: authorize?response_type=code&code_challenge=... 3) AS â†’ User: authenticate + consent. 4) AS â†’ Client: authorization code (via redirect). 5) Client â†’ AS: POST /token?code=...&code_verifier=... 6) AS â†’ Client: access_token + refresh_token. 7) Client â†’ RS: GET /resource (Authorization: Bearer token).
 </details>
 
 3. What is the difference between TOTP and HOTP? When would you use each?
 
 <details>
 <summary>Solution</summary>
-HOTP (HMAC-based): counter-based — OTP changes after each successful use. TOTP (Time-based): time-window-based — OTP changes every 30 seconds. Use TOTP for most MFA scenarios (authenticator apps). Use HOTP when time synchronization is unreliable (offline systems, hardware tokens with no clock).
+HOTP (HMAC-based): counter-based â€” OTP changes after each successful use. TOTP (Time-based): time-window-based â€” OTP changes every 30 seconds. Use TOTP for most MFA scenarios (authenticator apps). Use HOTP when time synchronization is unreliable (offline systems, hardware tokens with no clock).
 </details>
 
 4. Explain the FAR/FRR/EER trade-off in biometric systems.
@@ -1857,56 +1857,56 @@ FAR (False Acceptance Rate): impostor incorrectly accepted. FRR (False Rejection
 
 <details>
 <summary>Solution</summary>
-PKCE prevents the authorization code interception attack. In mobile/native apps, the redirect URI (e.g., custom scheme) can be intercepted by a malicious app on the same device. PKCE uses a code verifier (cryptographically random) that only the original client knows — the intercepted code alone is useless without the verifier.
+PKCE prevents the authorization code interception attack. In mobile/native apps, the redirect URI (e.g., custom scheme) can be intercepted by a malicious app on the same device. PKCE uses a code verifier (cryptographically random) that only the original client knows â€” the intercepted code alone is useless without the verifier.
 </details>
 
 6. Compare Kerberos TGT vs Service Ticket. Who can decrypt each?
 
 <details>
 <summary>Solution</summary>
-TGT (Ticket-Granting Ticket): encrypted with the KDC's krbtgt key — only KDC can decrypt. Contains session key SK1. Service Ticket: encrypted with the target service's key — only the service can decrypt. Contains session key SK2. TGT proves identity to KDC; Service Ticket proves identity to the specific service.
+TGT (Ticket-Granting Ticket): encrypted with the KDC's krbtgt key â€” only KDC can decrypt. Contains session key SK1. Service Ticket: encrypted with the target service's key â€” only the service can decrypt. Contains session key SK2. TGT proves identity to KDC; Service Ticket proves identity to the specific service.
 </details>
 
 7. What is the SAML `AudienceRestriction` condition for?
 
 <details>
 <summary>Solution</summary>
-`AudienceRestriction` specifies the intended recipient (service provider) of a SAML assertion. If the SP receiving the assertion is not in the audience list, it must reject it. This prevents assertion replay across different SPs — an assertion issued for SP-A cannot be used to authenticate at SP-B.
+`AudienceRestriction` specifies the intended recipient (service provider) of a SAML assertion. If the SP receiving the assertion is not in the audience list, it must reject it. This prevents assertion replay across different SPs â€” an assertion issued for SP-A cannot be used to authenticate at SP-B.
 </details>
 
 8. Explain unconstrained vs constrained Kerberos delegation.
 
 <details>
 <summary>Solution</summary>
-Unconstrained delegation (legacy): the service can impersonate the user to any other service — extremely dangerous if the service is compromised. Constrained delegation: the service can only impersonate the user to specifically configured services. Resource-based constrained delegation: the target service controls who can delegate to it (Windows Server 2012+).
+Unconstrained delegation (legacy): the service can impersonate the user to any other service â€” extremely dangerous if the service is compromised. Constrained delegation: the service can only impersonate the user to specifically configured services. Resource-based constrained delegation: the target service controls who can delegate to it (Windows Server 2012+).
 </details>
 
 9. How does Google BeyondCorp implement Zero Trust without a VPN?
 
 <details>
 <summary>Solution</summary>
-BeyondCorp moves access control from the network perimeter to the device and user. All access is authenticated and authorized based on: device inventory (managed + patch level), user identity + group, and context (location, time). An access proxy enforces policy before allowing connections to internal applications — there is no trusted internal network.
+BeyondCorp moves access control from the network perimeter to the device and user. All access is authenticated and authorized based on: device inventory (managed + patch level), user identity + group, and context (location, time). An access proxy enforces policy before allowing connections to internal applications â€” there is no trusted internal network.
 </details>
 
 10. What are the three case studies and what IAM lessons does each teach?
 
 <details>
 <summary>Solution</summary>
-1) SolarWinds: build agents need MFA (non-interactive auth must be secured differently). 2) Okta (2022): support portal with weak access control → contractor breached and viewed customer data. 3) Microsoft Midnight Blizzard: password spray attack against legacy non-MFA accounts. Lesson: all accounts must have MFA, including service accounts and contractors.
+1) SolarWinds: build agents need MFA (non-interactive auth must be secured differently). 2) Okta (2022): support portal with weak access control â†’ contractor breached and viewed customer data. 3) Microsoft Midnight Blizzard: password spray attack against legacy non-MFA accounts. Lesson: all accounts must have MFA, including service accounts and contractors.
 </details>
 
 11. Explain why NIST SP 800-63B deprecated periodic password expiration.
 
 <details>
 <summary>Solution</summary>
-Research shows users respond to forced rotation by choosing predictable patterns (Password1! → Password2!). The cost (help desk calls, weaker passwords) outweighs the benefit. NIST now recommends: no periodic expiration, check passwords against known breach databases, enforce minimum 8 characters, and use MFA as the primary protection.
+Research shows users respond to forced rotation by choosing predictable patterns (Password1! â†’ Password2!). The cost (help desk calls, weaker passwords) outweighs the benefit. NIST now recommends: no periodic expiration, check passwords against known breach databases, enforce minimum 8 characters, and use MFA as the primary protection.
 </details>
 
 12. What is the difference between SAML and OAuth 2.0 in terms of primary purpose?
 
 <details>
 <summary>Solution</summary>
-SAML is primarily an authentication protocol — it asserts identity (who you are) using XML assertions. OAuth 2.0 is an authorization framework — it grants delegated access (what you can do) using tokens. SAML is about single sign-on; OAuth is about API access delegation. OpenID Connect bridges this by providing authentication on top of OAuth 2.0.
+SAML is primarily an authentication protocol â€” it asserts identity (who you are) using XML assertions. OAuth 2.0 is an authorization framework â€” it grants delegated access (what you can do) using tokens. SAML is about single sign-on; OAuth is about API access delegation. OpenID Connect bridges this by providing authentication on top of OAuth 2.0.
 </details>
 
 13. How does a FIDO2 passkey prevent phishing attacks?
@@ -1927,7 +1927,7 @@ Push fatigue occurs when users receive too many push MFA notifications and accid
 
 <details>
 <summary>Solution</summary>
-Build agents and CI/CD pipelines run non-interactively — they cannot respond to MFA prompts (no human in the loop). The attacker compromised credentials or code-signing certificates used in automated builds. Solutions: hardware-bound ephemeral credentials (OIDC), short-lived tokens, code signing with HSM, and build attestation.
+Build agents and CI/CD pipelines run non-interactively â€” they cannot respond to MFA prompts (no human in the loop). The attacker compromised credentials or code-signing certificates used in automated builds. Solutions: hardware-bound ephemeral credentials (OIDC), short-lived tokens, code signing with HSM, and build attestation.
 </details>
 
 ### Application Problems
@@ -1936,7 +1936,7 @@ Build agents and CI/CD pipelines run non-interactively — they cannot respond t
 
 <details>
 <summary>Solution</summary>
-Minimum 8 characters (no complexity rules — users pick longer phrases). Check against breach databases (HaveIBeenPwned API). No periodic expiration. Allow paste in password fields (enables password managers). MFA required for all accounts. Justification: NIST research shows complexity rules produce weaker passwords, and periodic rotation causes predictable patterns. Breach checking and MFA are more effective.
+Minimum 8 characters (no complexity rules â€” users pick longer phrases). Check against breach databases (HaveIBeenPwned API). No periodic expiration. Allow paste in password fields (enables password managers). MFA required for all accounts. Justification: NIST research shows complexity rules produce weaker passwords, and periodic rotation causes predictable patterns. Breach checking and MFA are more effective.
 </details>
 
 2. **ABAC policy for healthcare:** A hospital wants access to patient records based on: doctor-patient relationship, time of day, location, emergency override. Write ABAC policies for: scheduled visit, emergency, remote consultation.
@@ -1950,7 +1950,7 @@ Scheduled visit: `allow if user.role == "doctor" AND patient.assignedDoctor == u
 
 <details>
 <summary>Solution</summary>
-Phase 1 (Month 1-2): Enable TOTP via authenticator app for all accounts — low friction, no hardware cost. Phase 2 (Month 3-4): Require MFA for admin roles, deploy push-based MFA (Okta Verify/MS Authenticator). Phase 3 (Month 5-6): FIDO2 hardware keys for admins, WebAuthn passkeys for all users — goal of 50% passwordless logins. Communication: weekly email tips, help desk training, dedicated Slack channel.
+Phase 1 (Month 1-2): Enable TOTP via authenticator app for all accounts â€” low friction, no hardware cost. Phase 2 (Month 3-4): Require MFA for admin roles, deploy push-based MFA (Okta Verify/MS Authenticator). Phase 3 (Month 5-6): FIDO2 hardware keys for admins, WebAuthn passkeys for all users â€” goal of 50% passwordless logins. Communication: weekly email tips, help desk training, dedicated Slack channel.
 </details>
 
 4. **OAuth token theft scenario:** A web app uses OAuth 2.0 tokens valid 24h with offline access. Describe what happens if tokens are stolen. Propose mitigations: token binding, rotation, shorter TTL.
@@ -1964,7 +1964,7 @@ Stolen tokens can be used for 24h to access the API and refresh for new tokens. 
 
 <details>
 <summary>Solution</summary>
-Stage 1: Enroll all devices in MDM (Intune/Jamf), deploy device certificates. Stage 2: Deploy identity-aware proxy (Pomerium/Cloudflare Access) for web apps. Stage 3: Migrate non-web apps to use mTLS or WireGuard + device auth. Stage 4: Remove VPN — all access goes through the proxy with policy evaluation at every request. Stage 5: Continuous monitoring and policy refinement.
+Stage 1: Enroll all devices in MDM (Intune/Jamf), deploy device certificates. Stage 2: Deploy identity-aware proxy (Pomerium/Cloudflare Access) for web apps. Stage 3: Migrate non-web apps to use mTLS or WireGuard + device auth. Stage 4: Remove VPN â€” all access goes through the proxy with policy evaluation at every request. Stage 5: Continuous monitoring and policy refinement.
 </details>
 
 ### Challenge Problems
@@ -1973,7 +1973,7 @@ Stage 1: Enroll all devices in MDM (Intune/Jamf), deploy device certificates. St
 
 <details>
 <summary>Solution</summary>
-/authorize: authenticate user, generate authorization code. /token: exchange code for ID token (JWT signed with RS256) + access token (opaque or JWT). /userinfo: return claims from access token. JWKS: publish public keys at /.well-known/jwks.json for token verification. Crypto: RS256 (RSA-2048 with SHA-256) — widely supported; ES256 (ECDSA P-256) for smaller tokens. Rotate signing keys every 90 days.
+/authorize: authenticate user, generate authorization code. /token: exchange code for ID token (JWT signed with RS256) + access token (opaque or JWT). /userinfo: return claims from access token. JWKS: publish public keys at /.well-known/jwks.json for token verification. Crypto: RS256 (RSA-2048 with SHA-256) â€” widely supported; ES256 (ECDSA P-256) for smaller tokens. Rotate signing keys every 90 days.
 </details>
 
 2. **Multi-cloud SaaS IAM:** A SaaS runs on AWS, uses GCP BigQuery, integrates with customer Azure AD for SSO. Design IAM for: internal service-to-service auth, end-user auth, customer federation, cloud provider access controls.
@@ -1987,7 +1987,7 @@ Internal: service mesh with mTLS (SPIFFE/SPIRE for workload identity). End-user:
 
 <details>
 <summary>Solution</summary>
-Establish a two-way cross-realm trust. Configure both KDCs with trust relationship (shared inter-realm key). User obtains TGT from COMPANY-A.COM KDC, then requests a referral ticket to COMPANY-B.COM, then requests a service ticket from COMPANY-B.COM KDC for the target service. The trust path is COMPANY-A → COMPANY-B (direct trust). The service ticket is encrypted with the target service's key in COMPANY-B.
+Establish a two-way cross-realm trust. Configure both KDCs with trust relationship (shared inter-realm key). User obtains TGT from COMPANY-A.COM KDC, then requests a referral ticket to COMPANY-B.COM, then requests a service ticket from COMPANY-B.COM KDC for the target service. The trust path is COMPANY-A â†’ COMPANY-B (direct trust). The service ticket is encrypted with the target service's key in COMPANY-B.
 </details>
 
 ## Chapter Quiz
@@ -2007,25 +2007,25 @@ Establish a two-way cross-realm trust. Configure both KDCs with trust relationsh
 
 ## References
 
-- NIST SP 800-63B: Digital Identity Guidelines → Authentication and Lifecycle Management
+- NIST SP 800-63B: Digital Identity Guidelines â†’ Authentication and Lifecycle Management
 - NIST SP 800-207: Zero Trust Architecture
-- RFC 6238: TOTP → Time-Based One-Time Password Algorithm
-- RFC 4226: HOTP → HMAC-Based One-Time Password Algorithm
-- RFC 7636: PKCE → Proof Key for Code Exchange
+- RFC 6238: TOTP â†’ Time-Based One-Time Password Algorithm
+- RFC 4226: HOTP â†’ HMAC-Based One-Time Password Algorithm
+- RFC 7636: PKCE â†’ Proof Key for Code Exchange
 - RFC 7519: JSON Web Token (JWT)
 - RFC 7515: JSON Web Signature (JWS)
-- WebAuthn: W3C Recommendation → Web Authentication
+- WebAuthn: W3C Recommendation â†’ Web Authentication
 - BeyondCorp: Google's Zero Trust Implementation (USENIX ;login: 2014-2020)
 - Google Zanzibar: Consistent, Global Authorization System (USENIX ATC 2019)
-- Okta Security Incident → March 2022 (okta.com/security)
-- SolarWinds SUNBURST → FireEye/Mandiant Reports (2020-2021)
-- Microsoft Midnight Blizzard → Microsoft Security Response Center (2024)
+- Okta Security Incident â†’ March 2022 (okta.com/security)
+- SolarWinds SUNBURST â†’ FireEye/Mandiant Reports (2020-2021)
+- Microsoft Midnight Blizzard â†’ Microsoft Security Response Center (2024)
 - OWASP Password Storage Cheat Sheet
 - OAuth 2.0 Security Best Current Practice (RFC 9700)
 
 ---
 
-## Appendix A: Deep Dive → Password Hashing Algorithm Internals
+## Appendix A: Deep Dive â†’ Password Hashing Algorithm Internals
 
 ### bcrypt Internal Algorithm (EksBlowfish)
 
@@ -2039,7 +2039,7 @@ Establish a two-way cross-realm trust. Configure both KDCs with trust relationsh
 6. Repeat entire process 2^cost times (cost=12 -> 4096 rounds)
 7. Final state = encrypted "OrpheanBeholderScryDoubt" (24 bytes) 64 times
 
-**Memory usage:** ~4 KB (fixed) → all data in P-array and S-boxes fits in L1 cache
+**Memory usage:** ~4 KB (fixed) â†’ all data in P-array and S-boxes fits in L1 cache
 
 **Why this matters for security:** The fixed 4 KB memory footprint means an ASIC can pack many cores. A modern ASIC for bcrypt achieves ~100x speedup over CPU. Contrast with argon2id's 64 MB requirement which makes ASIC impractical.
 
@@ -2107,7 +2107,7 @@ public boolean constantTimeCompare(byte[] a, byte[] b) {
 
 ---
 
-## Appendix B: Deep Dive → OAuth 2.0 Token Handling
+## Appendix B: Deep Dive â†’ OAuth 2.0 Token Handling
 
 ### Access Token vs Refresh Token Lifecycle
 
@@ -2172,13 +2172,13 @@ Browser -(HttpOnly Cookie)-> BFF (Backend) -(OAuth 2.0)-> Authorization Server
 **Benefits:**
 - Tokens never touch browser
 - BFF handles PKCE + token refresh
-- BFF runs in same domain → no CORS
+- BFF runs in same domain â†’ no CORS
 - Refresh token rotation hidden from client
 - Token theft from browser is impossible
 
 ---
 
-## Appendix C: Deep Dive → WebAuthn/FIDO2 Protocol Detail
+## Appendix C: Deep Dive â†’ WebAuthn/FIDO2 Protocol Detail
 
 ### Authenticator Attachment Modalities
 
@@ -2225,7 +2225,7 @@ Browser -(HttpOnly Cookie)-> BFF (Backend) -(OAuth 2.0)-> Authorization Server
 
 ---
 
-## Appendix D: Deep Dive → Kerberos Protocol Messages
+## Appendix D: Deep Dive â†’ Kerberos Protocol Messages
 
 ### AS-REQ Message Structure
 
@@ -2329,7 +2329,7 @@ SK2 (Service Session Key from TGS):
 
 ---
 
-## Appendix E: Deep Dive → LDAP Operations and Schema
+## Appendix E: Deep Dive â†’ LDAP Operations and Schema
 
 ### LDAP Operations List
 
@@ -2407,7 +2407,7 @@ SK2 (Service Session Key from TGS):
 
 ---
 
-## Appendix F: Deep Dive → FIDO2 / WebAuthn CBOR Encoding
+## Appendix F: Deep Dive â†’ FIDO2 / WebAuthn CBOR Encoding
 
 ### CTAP2 Message Structure (CBOR)
 
@@ -2477,7 +2477,7 @@ Credential Data format:
 
 ## Appendix G: Comparison Tables
 
-### Password Change Policies → Historical vs NIST
+### Password Change Policies â†’ Historical vs NIST
 
 
 | Aspect | 90-Day Rotation | NIST 800-63B |
@@ -2488,7 +2488,7 @@ Credential Data format:
 | **Breach detection** | Reactive (rotation assumes eventual breach) | Proactive (check against known breaches) |
 | **MFA requirement** | Somewhat mitigated rotation need | MFA independent of password policy |
 
-### Identity Protocols → Transport Security
+### Identity Protocols â†’ Transport Security
 
 
 | Protocol | Default Port | Encryption | Mutual Auth | Channel Binding |
@@ -2513,7 +2513,7 @@ Credential Data format:
 | **Session revocation** | Yes | Yes (seed) | Yes (cred ID) | Yes (cert) | No |
 | **Backup/recovery** | Email reset | Recovery codes | iCloud/Google sync | Backup key | Password fallback |
 
-### Enterprise SSO Protocols → Feature Matrix
+### Enterprise SSO Protocols â†’ Feature Matrix
 
 
 | Feature | SAML 2.0 | OIDC | CAS | WS-Federation |
@@ -2582,7 +2582,7 @@ Machine identity:
   - SPIFFE: Workload identity for containers
 ```
 
-**Numbered Steps → New Employee Onboarding:**
+**Numbered Steps â†’ New Employee Onboarding:**
 
 1. HR system creates employee record (Workday)
 2. HR triggers SCIM provisioning to Azure AD
@@ -2723,7 +2723,7 @@ Set-Cookie: session=abc123;
 
 ---
 
-## Appendix L: Comparison → Cloud Identity Providers
+## Appendix L: Comparison â†’ Cloud Identity Providers
 
 | Feature | Azure AD (Entra ID) | AWS IAM Identity Center | Okta | Auth0 | Google Workspace |
 |---------|-------------------|----------------------|------|-------|-----------------|
@@ -2744,12 +2744,12 @@ Set-Cookie: session=abc123;
 
 ### Password Security
 
-- [ ] bcrypt/argon2id with cost â‰¥ 12 / t=2,m=19456
+- [ ] bcrypt/argon2id with cost Ã¢â€°Â¥ 12 / t=2,m=19456
 - [ ] Password policy: minimum 12 characters (not complexity rules)
 - [ ] Check passwords against breached password list (HaveIBeenPwned API)
 - [ ] No password hints, no security questions (use recovery codes/email reset)
 - [ ] Rate limiting: 5 attempts before 30-second cooldown
-- [ ] Account lockout: 10 attempts → 15-minute lockout (with CAPTCHA after 3)
+- [ ] Account lockout: 10 attempts â†’ 15-minute lockout (with CAPTCHA after 3)
 
 ### Multi-Factor Authentication
 
@@ -2878,10 +2878,10 @@ The following TypeScript class implements a full Role-Based Access Control (RBAC
 
 ```typescript
 /**
- * User — represents an authenticated entity in the system.
- * @property id — unique identifier
- * @property roles — list of role names assigned directly to the user
- * @property attributes — key-value map for attribute-based extensions (ABAC bridging)
+ * User â€” represents an authenticated entity in the system.
+ * @property id â€” unique identifier
+ * @property roles â€” list of role names assigned directly to the user
+ * @property attributes â€” key-value map for attribute-based extensions (ABAC bridging)
  */
 interface User {
   id: string;
@@ -2890,9 +2890,9 @@ interface User {
 }
 
 /**
- * Permission — a specific action on a resource.
- * @property resource — the target resource or pattern (supports glob: "document:*")
- * @property action — the operation type
+ * Permission â€” a specific action on a resource.
+ * @property resource â€” the target resource or pattern (supports glob: "document:*")
+ * @property action â€” the operation type
  */
 interface Permission {
   resource: string;
@@ -2900,10 +2900,10 @@ interface Permission {
 }
 
 /**
- * Role — a named collection of permissions with optional inheritance.
- * @property name — unique role identifier
- * @property permissions — direct permissions assigned to this role
- * @property inherits — parent role names from which permissions are inherited
+ * Role â€” a named collection of permissions with optional inheritance.
+ * @property name â€” unique role identifier
+ * @property permissions â€” direct permissions assigned to this role
+ * @property inherits â€” parent role names from which permissions are inherited
  */
 interface Role {
   name: string;
@@ -2912,7 +2912,7 @@ interface Role {
 }
 
 /**
- * RBACEngine — provides permission checking with role hierarchy resolution,
+ * RBACEngine â€” provides permission checking with role hierarchy resolution,
  * effective-permissions aggregation, and audit-friendly decision logging.
  *
  * Features:
@@ -3138,12 +3138,12 @@ const alice: User = { id: 'alice', roles: ['viewer'], attributes: {} };
 const bob: User = { id: 'bob', roles: ['editor'], attributes: {} };
 const charlie: User = { id: 'charlie', roles: ['admin'], attributes: {} };
 
-console.log(`Alice can read document:report → ${engine.hasPermission(alice, 'document:report', 'read')}`);
-console.log(`Alice can delete document:report → ${engine.hasPermission(alice, 'document:report', 'delete')}`);
-console.log(`Bob can update document:draft → ${engine.hasPermission(bob, 'document:draft', 'update')}`);
-console.log(`Bob can delete document:final → ${engine.hasPermission(bob, 'document:final', 'delete')}`);
-console.log(`Charlie can delete document:anything → ${engine.hasPermission(charlie, 'document:anything', 'delete')}`);
-console.log(`Charlie can read document:secret → ${engine.hasPermission(charlie, 'document:secret', 'read')}`);
+console.log(`Alice can read document:report â†’ ${engine.hasPermission(alice, 'document:report', 'read')}`);
+console.log(`Alice can delete document:report â†’ ${engine.hasPermission(alice, 'document:report', 'delete')}`);
+console.log(`Bob can update document:draft â†’ ${engine.hasPermission(bob, 'document:draft', 'update')}`);
+console.log(`Bob can delete document:final â†’ ${engine.hasPermission(bob, 'document:final', 'delete')}`);
+console.log(`Charlie can delete document:anything â†’ ${engine.hasPermission(charlie, 'document:anything', 'delete')}`);
+console.log(`Charlie can read document:secret â†’ ${engine.hasPermission(charlie, 'document:secret', 'read')}`);
 
 // Effective permissions
 console.log(`\nAlice's effective permissions: ${engine.getEffectivePermissions(alice).length}`);
@@ -3157,12 +3157,12 @@ This TypeScript implementation provides a production-grade JWT authentication se
 
 ```typescript
 /**
- * TokenPayload — the decoded contents of a JWT.
- * @property sub — subject (typically user ID)
- * @property roles — array of role names for authorization
- * @property iat — issued-at timestamp (seconds since epoch, set automatically)
- * @property exp — expiration timestamp (seconds since epoch, computed from TTL)
- * @property iss — issuer claim (validates token provenance)
+ * TokenPayload â€” the decoded contents of a JWT.
+ * @property sub â€” subject (typically user ID)
+ * @property roles â€” array of role names for authorization
+ * @property iat â€” issued-at timestamp (seconds since epoch, set automatically)
+ * @property exp â€” expiration timestamp (seconds since epoch, computed from TTL)
+ * @property iss â€” issuer claim (validates token provenance)
  */
 interface TokenPayload {
   sub: string;
@@ -3173,7 +3173,7 @@ interface TokenPayload {
 }
 
 /**
- * TokenPair — returned by token generation and refresh operations.
+ * TokenPair â€” returned by token generation and refresh operations.
  */
 interface TokenPair {
   accessToken: string;
@@ -3190,7 +3190,7 @@ interface JWTHeader {
 }
 
 /**
- * Base64URL encoding utilities (RFC 4648 §5).
+ * Base64URL encoding utilities (RFC 4648 Â§5).
  * Uses URL-safe characters and omits padding.
  */
 function base64URLEncode(data: Uint8Array): string {
@@ -3207,7 +3207,7 @@ function base64URLDecode(str: string): Uint8Array {
 }
 
 /**
- * JWTService — complete HS256-based JWT management with
+ * JWTService â€” complete HS256-based JWT management with
  * generation, verification, and refresh-token rotation.
  *
  * Security features:
@@ -3229,10 +3229,10 @@ class JWTService {
   > = new Map();
 
   /**
-   * @param secret — raw key material (must be at least 32 bytes for HS256)
-   * @param issuer — the "iss" claim value (e.g., "https://auth.example.com")
-   * @param accessTokenTTL — access token lifetime in seconds (default 900 = 15 min)
-   * @param refreshTokenTTL — refresh token lifetime in seconds (default 86400 = 24 h)
+   * @param secret â€” raw key material (must be at least 32 bytes for HS256)
+   * @param issuer â€” the "iss" claim value (e.g., "https://auth.example.com")
+   * @param accessTokenTTL â€” access token lifetime in seconds (default 900 = 15 min)
+   * @param refreshTokenTTL â€” refresh token lifetime in seconds (default 86400 = 24 h)
    */
   constructor(
     secret: string,
@@ -3360,10 +3360,10 @@ class JWTService {
     }
 
     if (stored.rotated) {
-      // Token reuse detected — potential theft. Invalidate ALL tokens for this user.
+      // Token reuse detected â€” potential theft. Invalidate ALL tokens for this user.
       this.invalidateAllForUser(stored.userId);
       throw new Error(
-        'Refresh token reuse detected — all tokens for this user have been revoked'
+        'Refresh token reuse detected â€” all tokens for this user have been revoked'
       );
     }
 
@@ -3480,7 +3480,7 @@ async function demoJWT() {
     iss: 'https://auth.example.com',
   });
 
-  console.log('Access Token:', tokens.accessToken.slice(0, 50) + '…');
+  console.log('Access Token:', tokens.accessToken.slice(0, 50) + 'â€¦');
   console.log('Refresh Token:', tokens.refreshToken);
   console.log('Expires At:', new Date(tokens.expiresAt * 1000).toISOString());
 
@@ -3496,7 +3496,7 @@ async function demoJWT() {
   try {
     const newTokens = jwtService.refreshToken(tokens.refreshToken);
     console.log('\nToken refreshed successfully');
-    console.log('New Access Token:', newTokens.accessToken.slice(0, 50) + '…');
+    console.log('New Access Token:', newTokens.accessToken.slice(0, 50) + 'â€¦');
     console.log('New Refresh Token:', newTokens.refreshToken);
 
     // Old refresh token should now be invalid
@@ -3581,7 +3581,7 @@ sequenceDiagram
     rect rgb(240, 248, 255)
     Note over User,SP: Step 1 - Access Request
     User->>SP: Navigate to https://app.example.com/dashboard
-    SP->>SP: Check for existing session — none found
+    SP->>SP: Check for existing session â€” none found
     end
 
     rect rgb(255, 245, 240)
@@ -3631,9 +3631,9 @@ sequenceDiagram
     SP->>SP: Extract attributes from AttributeStatement
     SP->>SP: Create local session for user
     SP->>User: Redirect to https://app.example.com/dashboard
-    User->>SP: Access dashboard — session established
-    SP->>User: 200 OK — Dashboard rendered
+    User->>SP: Access dashboard â€” session established
+    SP->>User: 200 OK â€” Dashboard rendered
     end
 
-    Note over User,SP: SSO Complete — user is logged in without separate credentials at SP
+    Note over User,SP: SSO Complete â€” user is logged in without separate credentials at SP
 ```

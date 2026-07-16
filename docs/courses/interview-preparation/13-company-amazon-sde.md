@@ -1,4 +1,4 @@
-# Chapter 13: Amazon SDE — Company-Specific Question Bank
+﻿# Chapter 13: Amazon SDE â€” Company-Specific Question Bank
 
 ## Learning Objectives
 
@@ -12,16 +12,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/interview-preparation/13-company-amazon-sde/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/interview-preparation/13-company-amazon-sde/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/13-company-amazon-sde/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/interview-preparation/13-company-amazon-sde/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/interview-preparation/13-company-amazon-sde/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/interview-preparation/13-company-amazon-sde/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/13-company-amazon-sde/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/interview-preparation/13-company-amazon-sde/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/interview-preparation/13-company-amazon-sde/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/interview-preparation/13-company-amazon-sde/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/13-company-amazon-sde/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/interview-preparation/13-company-amazon-sde/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -38,14 +38,14 @@ flowchart TB
         B --> B3[Coding Problem 3<br/>Medium/Hard]
         B --> B4[Work Style Assessment<br/>Behavioral]
         B --> C{Result}
-        C -->|Pass| D[Phone Screen<br/>45 mins • Coding + LP]
+        C -->|Pass| D[Phone Screen<br/>45 mins â€¢ Coding + LP]
         D --> E{Result}
         E -->|Pass| F[Onsite Interview<br/>4-5 Rounds]
-        F --> G[Round 1: Data Structures<br/>60 mins • 2 Coding Problems]
-        F --> H[Round 2: Algorithms<br/>60 mins • 1-2 Coding Problems]
-        F --> I[Round 3: System Design<br/>60 mins • SDE2+ Only]
-        F --> J[Round 4: Bar Raiser<br/>75 mins • Coding + LP Depth]
-        F --> K[Round 5: Hiring Manager<br/>45 mins • LP + Team Fit]
+        F --> G[Round 1: Data Structures<br/>60 mins â€¢ 2 Coding Problems]
+        F --> H[Round 2: Algorithms<br/>60 mins â€¢ 1-2 Coding Problems]
+        F --> I[Round 3: System Design<br/>60 mins â€¢ SDE2+ Only]
+        F --> J[Round 4: Bar Raiser<br/>75 mins â€¢ Coding + LP Depth]
+        F --> K[Round 5: Hiring Manager<br/>45 mins â€¢ LP + Team Fit]
         G --> L[Debrief & Loop Review]
         H --> L
         I --> L
@@ -110,7 +110,7 @@ Output: [1, 2]
 ```
 
 <details>
-<summary><b>Solution: Bucket Sort — O(n) time, O(n) space</b></summary>
+<summary><b>Solution: Bucket Sort â€” O(n) time, O(n) space</b></summary>
 
 ```typescript
 function topKFrequent(nums: number[], k: number): number[] {
@@ -139,8 +139,8 @@ function topKFrequent(nums: number[], k: number): number[] {
 }
 ```
 
-**Time:** O(n) — building map O(n), bucket distribution O(n), collection O(n)
-**Space:** O(n) — frequency map + bucket array
+**Time:** O(n) â€” building map O(n), bucket distribution O(n), collection O(n)
+**Space:** O(n) â€” frequency map + bucket array
 
 **Why bucket sort here:** Instead of using a min-heap (O(n log k)), we exploit the fact that the maximum frequency is n. Buckets give us O(n) overall.
 </details>
@@ -151,7 +151,7 @@ function topKFrequent(nums: number[], k: number): number[] {
 
 **Problem:** Given an `m x n` 2D binary grid of `'1'` (land) and `'0'` (water), count the number of islands. An island is surrounded by water and formed by connecting adjacent lands horizontally or vertically.
 
-**Amazon Context:** Graph traversal is a staple of Amazon OA — they expect DFS/BFS fluency.
+**Amazon Context:** Graph traversal is a staple of Amazon OA â€” they expect DFS/BFS fluency.
 
 **Example:**
 ```
@@ -164,7 +164,7 @@ Output: 1
 ```
 
 <details>
-<summary><b>Solution: DFS — O(m×n) time, O(m×n) space</b></summary>
+<summary><b>Solution: DFS â€” O(mÃ—n) time, O(mÃ—n) space</b></summary>
 
 ```typescript
 function numIslands(grid: string[][]): number {
@@ -201,7 +201,7 @@ function numIslands(grid: string[][]): number {
 ```
 
 <details>
-<summary><b>BFS Alternative — O(m×n) time, O(min(m,n)) space</b></summary>
+<summary><b>BFS Alternative â€” O(mÃ—n) time, O(min(m,n)) space</b></summary>
 
 ```typescript
 function numIslandsBFS(grid: string[][]): number {
@@ -236,7 +236,7 @@ function numIslandsBFS(grid: string[][]): number {
 }
 ```
 
-**Time:** O(m×n), **Space:** O(min(m,n)) — BFS queue size in worst case
+**Time:** O(mÃ—n), **Space:** O(min(m,n)) â€” BFS queue size in worst case
 </details>
 
 **Amazon tip:** Always discuss the trade-off between DFS (deep recursion risk on large grid) and BFS (iterative, safe for large inputs).
@@ -248,10 +248,10 @@ function numIslandsBFS(grid: string[][]): number {
 
 **Problem:** Design and implement an LRU (Least Recently Used) cache with `get(key)` and `put(key, value)` in O(1) average time.
 
-**Amazon Context:** LRU Cache is one of Amazon's most frequently asked problems — tests combined use of HashMap and Doubly Linked List.
+**Amazon Context:** LRU Cache is one of Amazon's most frequently asked problems â€” tests combined use of HashMap and Doubly Linked List.
 
 <details>
-<summary><b>Solution: HashMap + Doubly Linked List — O(1) time</b></summary>
+<summary><b>Solution: HashMap + Doubly Linked List â€” O(1) time</b></summary>
 
 ```typescript
 class LRUCache {
@@ -328,7 +328,7 @@ class DoublyLinkedListNode {
 ```
 
 **Time:** O(1) for both get and put
-**Space:** O(capacity) — hash map + linked list nodes
+**Space:** O(capacity) â€” hash map + linked list nodes
 
 **Key insights for interview:**
 - Sentinels (dummy head/tail) eliminate null checks
@@ -343,7 +343,7 @@ class DoublyLinkedListNode {
 
 **Problem:** Given an `m x n` grid where 0 = empty, 1 = fresh orange, 2 = rotten orange. Every minute, any fresh orange adjacent (4-direction) to a rotten orange becomes rotten. Return the minimum minutes until no cell has a fresh orange, or -1 if impossible.
 
-**Amazon Context:** Multi-source BFS — Amazon tests BFS variants frequently in OA.
+**Amazon Context:** Multi-source BFS â€” Amazon tests BFS variants frequently in OA.
 
 **Example:**
 ```
@@ -352,7 +352,7 @@ Output: 4
 ```
 
 <details>
-<summary><b>Solution: Multi-Source BFS — O(m×n) time, O(m×n) space</b></summary>
+<summary><b>Solution: Multi-Source BFS â€” O(mÃ—n) time, O(mÃ—n) space</b></summary>
 
 ```typescript
 function orangesRotting(grid: number[][]): number {
@@ -395,15 +395,15 @@ function orangesRotting(grid: number[][]): number {
 }
 ```
 
-**Time:** O(m×n) — each cell visited once
-**Space:** O(m×n) — queue in worst case
+**Time:** O(mÃ—n) â€” each cell visited once
+**Space:** O(mÃ—n) â€” queue in worst case
 
 **Why multi-source BFS?** All initially rotten oranges spread simultaneously. BFS level-by-level propagation naturally models the minute-by-minute spread.
 </details>
 
 ---
 
-## Section 2: Technical Round 1 — Data Structures (4 Problems)
+## Section 2: Technical Round 1 â€” Data Structures (4 Problems)
 
 ### Problem TR1-1: Merge K Sorted Lists
 
@@ -412,7 +412,7 @@ function orangesRotting(grid: number[][]): number {
 **Amazon Context:** Amazon loves divide-and-conquer and heap approaches for merging sorted data.
 
 <details>
-<summary><b>Solution: Min-Heap (Priority Queue) — O(N log k) time, O(k) space</b></summary>
+<summary><b>Solution: Min-Heap (Priority Queue) â€” O(N log k) time, O(k) space</b></summary>
 
 ```typescript
 class ListNode {
@@ -503,7 +503,7 @@ class MinHeap {
 ```
 
 **Time:** O(N log k) where N = total nodes, k = number of lists
-**Space:** O(k) — heap stores k nodes at any time
+**Space:** O(k) â€” heap stores k nodes at any time
 </details>
 
 ---
@@ -512,10 +512,10 @@ class MinHeap {
 
 **Problem:** Return the level order traversal of a binary tree (left to right, level by level).
 
-**Amazon Context:** Tree BFS is fundamental — Amazon tests this as a warm-up to harder tree problems.
+**Amazon Context:** Tree BFS is fundamental â€” Amazon tests this as a warm-up to harder tree problems.
 
 <details>
-<summary><b>Solution: BFS with Queue — O(n) time, O(n) space</b></summary>
+<summary><b>Solution: BFS with Queue â€” O(n) time, O(n) space</b></summary>
 
 ```typescript
 class TreeNode {
@@ -550,8 +550,8 @@ function levelOrder(root: TreeNode | null): number[][] {
 }
 ```
 
-**Time:** O(n) — each node visited once
-**Space:** O(n) — queue stores nodes at the widest level
+**Time:** O(n) â€” each node visited once
+**Space:** O(n) â€” queue stores nodes at the widest level
 
 **Variations Amazon asks:**
 - Zigzag level order (alternating direction each level)
@@ -565,10 +565,10 @@ function levelOrder(root: TreeNode | null): number[][] {
 
 **Problem:** Given an array of strings, group anagrams together.
 
-**Amazon Context:** HashMap with creative keys — Amazon tests hash function design.
+**Amazon Context:** HashMap with creative keys â€” Amazon tests hash function design.
 
 <details>
-<summary><b>Solution: Sorted String Key — O(N * K log K) time, O(NK) space</b></summary>
+<summary><b>Solution: Sorted String Key â€” O(N * K log K) time, O(NK) space</b></summary>
 
 ```typescript
 function groupAnagrams(strs: string[]): string[][] {
@@ -587,7 +587,7 @@ function groupAnagrams(strs: string[]): string[][] {
 ```
 
 <details>
-<summary><b>Optimized: Character Count Key — O(N * K) time, O(NK) space</b></summary>
+<summary><b>Optimized: Character Count Key â€” O(N * K) time, O(NK) space</b></summary>
 
 ```typescript
 function groupAnagramsOptimized(strs: string[]): string[][] {
@@ -610,7 +610,7 @@ function groupAnagramsOptimized(strs: string[]): string[][] {
 ```
 
 **Time:** O(N * K) where N = number of strings, K = max string length
-**Space:** O(NK) — storing all strings in groups
+**Space:** O(NK) â€” storing all strings in groups
 </details>
 
 **Amazon interview tip:** The character count approach avoids sorting overhead. Discuss trade-offs: sorted key is simpler, count array is faster for long strings.
@@ -622,10 +622,10 @@ function groupAnagramsOptimized(strs: string[]): string[][] {
 
 **Problem:** Given an array `nums`, return an array `output` where `output[i]` is the product of all elements except `nums[i]`. Solve without division.
 
-**Amazon Context:** This problem is asked in nearly every Amazon SDE interview loop — tests prefix/suffix product pattern.
+**Amazon Context:** This problem is asked in nearly every Amazon SDE interview loop â€” tests prefix/suffix product pattern.
 
 <details>
-<summary><b>Solution: Prefix and Suffix Products — O(n) time, O(1) space (excluding output)</b></summary>
+<summary><b>Solution: Prefix and Suffix Products â€” O(n) time, O(1) space (excluding output)</b></summary>
 
 ```typescript
 function productExceptSelf(nums: number[]): number[] {
@@ -650,8 +650,8 @@ function productExceptSelf(nums: number[]): number[] {
 }
 ```
 
-**Time:** O(n) — two passes
-**Space:** O(1) — excluding the output array
+**Time:** O(n) â€” two passes
+**Space:** O(1) â€” excluding the output array
 
 **Why no division?** Division fails with zeros in the array. The prefix-suffix approach elegantly handles zeros and avoids overflow issues.
 
@@ -662,16 +662,16 @@ function productExceptSelf(nums: number[]): number[] {
 
 ---
 
-## Section 3: Technical Round 2 — Algorithms & Design (4 Problems)
+## Section 3: Technical Round 2 â€” Algorithms & Design (4 Problems)
 
 ### Problem TR2-1: Word Ladder
 
 **Problem:** Given `beginWord`, `endWord`, and `wordList`, find the length of the shortest transformation sequence from `beginWord` to `endWord`. Each transformation changes exactly one letter, and each intermediate word must be in `wordList`.
 
-**Amazon Context:** BFS on implicit graph — tests graph modeling skills.
+**Amazon Context:** BFS on implicit graph â€” tests graph modeling skills.
 
 <details>
-<summary><b>Solution: BFS — O(M² × N) time, O(M × N) space</b></summary>
+<summary><b>Solution: BFS â€” O(MÂ² Ã— N) time, O(M Ã— N) space</b></summary>
 
 ```typescript
 function ladderLength(beginWord: string, endWord: string, wordList: string[]): number {
@@ -706,10 +706,10 @@ function ladderLength(beginWord: string, endWord: string, wordList: string[]): n
 }
 ```
 
-**Time:** O(M² × N) where M = word length, N = word list size
-**Space:** O(M × N) — word set + queue
+**Time:** O(MÂ² Ã— N) where M = word length, N = word list size
+**Space:** O(M Ã— N) â€” word set + queue
 
-**Optimization tip:** Bidirectional BFS can reduce the search space exponentially — mention this in your interview.
+**Optimization tip:** Bidirectional BFS can reduce the search space exponentially â€” mention this in your interview.
 </details>
 
 ---
@@ -718,10 +718,10 @@ function ladderLength(beginWord: string, endWord: string, wordList: string[]): n
 
 **Problem:** Given `n` non-negative integers representing an elevation map where width of each bar is 1, compute how much water it can trap after raining.
 
-**Amazon Context:** Hard-level problem testing two-pointer technique — Amazon's most asked hard problem.
+**Amazon Context:** Hard-level problem testing two-pointer technique â€” Amazon's most asked hard problem.
 
 <details>
-<summary><b>Solution: Two Pointers — O(n) time, O(1) space</b></summary>
+<summary><b>Solution: Two Pointers â€” O(n) time, O(1) space</b></summary>
 
 ```typescript
 function trap(height: number[]): number {
@@ -753,8 +753,8 @@ function trap(height: number[]): number {
 }
 ```
 
-**Time:** O(n) — single pass
-**Space:** O(1) — constant space
+**Time:** O(n) â€” single pass
+**Space:** O(1) â€” constant space
 
 **Why two pointers work:** Water trapped at position i depends on min(maxLeft, maxRight) - height[i]. By tracking running maxes from both ends, we compute water without extra arrays.
 </details>
@@ -765,10 +765,10 @@ function trap(height: number[]): number {
 
 **Problem:** Design a data structure that supports adding words and searching for words with the ability to use '.' as a wildcard character matching any letter.
 
-**Amazon Context:** Trie with DFS — tests advanced tree data structure design.
+**Amazon Context:** Trie with DFS â€” tests advanced tree data structure design.
 
 <details>
-<summary><b>Solution: Trie with DFS Search — O(N) add, O(26^M) worst search</b></summary>
+<summary><b>Solution: Trie with DFS Search â€” O(N) add, O(26^M) worst search</b></summary>
 
 ```typescript
 class WordDictionary {
@@ -818,7 +818,7 @@ class TrieNode {
 ```
 
 **Time:** O(N) for add (N = word length), O(26^M) worst-case for search with wildcards (M = word length)
-**Space:** O(W × L) where W = words, L = average length
+**Space:** O(W Ã— L) where W = words, L = average length
 
 **Amazon interview tip:** The '.' wildcard creates the complexity. Discuss how to optimize with BFS for shorter search times.
 </details>
@@ -832,7 +832,7 @@ class TrieNode {
 **Amazon Context:** Calculator problems test stack usage and operator precedence handling.
 
 <details>
-<summary><b>Solution: Stack with Operator Precedence — O(n) time, O(n) space</b></summary>
+<summary><b>Solution: Stack with Operator Precedence â€” O(n) time, O(n) space</b></summary>
 
 ```typescript
 function calculate(s: string): number {
@@ -924,11 +924,11 @@ Cart {
 
 **Key APIs:**
 ```
-GET /cart/{cartId} → Cart
-POST /cart → Cart (create new)
+GET /cart/{cartId} â†’ Cart
+POST /cart â†’ Cart (create new)
 PUT /cart/{cartId}/items (add/update item)
 DELETE /cart/{cartId}/items/{productId}
-POST /cart/{cartId}/checkout → OrderId
+POST /cart/{cartId}/checkout â†’ OrderId
 ```
 
 **Scaling Strategy:**
@@ -971,7 +971,7 @@ flowchart LR
 
 | Aspect | Decision | Rationale |
 |--------|----------|-----------|
-| **Key Generation** | Base62 encoding of auto-increment ID | 6-7 chars for 62^6 ≈ 56B URLs |
+| **Key Generation** | Base62 encoding of auto-increment ID | 6-7 chars for 62^6 â‰ˆ 56B URLs |
 | **Storage** | DynamoDB (PK: shortCode) | Fast lookups, auto-scaling |
 | **Cache** | Redis (TTL: 24h hot URLs) | Reduce DB load for popular URLs |
 | **Redirect** | HTTP 301 (permanent) | Browser caches, reduces redirect load |
@@ -1001,9 +1001,9 @@ function decode(shortUrl: string): number {
 
 **APIs:**
 ```
-POST /shorten { url, customAlias?, ttl? } → { shortUrl, expiresAt }
-GET /{shortCode} → 301 Redirect to original URL
-GET /{shortCode}/stats → { clicks, lastAccessed, referrers }
+POST /shorten { url, customAlias?, ttl? } â†’ { shortUrl, expiresAt }
+GET /{shortCode} â†’ 301 Redirect to original URL
+GET /{shortCode}/stats â†’ { clicks, lastAccessed, referrers }
 ```
 
 **Scaling:**
@@ -1014,7 +1014,7 @@ GET /{shortCode}/stats → { clicks, lastAccessed, referrers }
 
 ---
 
-## Section 5: Behavioral Questions — Amazon Leadership Principles (10 Questions)
+## Section 5: Behavioral Questions â€” Amazon Leadership Principles (10 Questions)
 
 ### Q1: Tell me about a time you went above and beyond for a customer. (Customer Obsession)
 
@@ -1049,7 +1049,7 @@ GET /{shortCode}/stats → { clicks, lastAccessed, referrers }
 
 **Task:** Convince the team to consider the right database choice without causing delays.
 
-**Action:** I built a comparison matrix: MongoDB vs PostgreSQL for our specific access patterns. I highlighted that our data had strict relational integrity (orders → items → payments), and PostgreSQL's ACID compliance would prevent data inconsistencies. I presented this in the design review with benchmarks from a small POC.
+**Action:** I built a comparison matrix: MongoDB vs PostgreSQL for our specific access patterns. I highlighted that our data had strict relational integrity (orders â†’ items â†’ payments), and PostgreSQL's ACID compliance would prevent data inconsistencies. I presented this in the design review with benchmarks from a small POC.
 
 **Result:** After discussion, my lead agreed PostgreSQL was better for this use case. However, when the team decided to proceed with MongoDB for faster prototyping (with eventual consistency), I committed fully and implemented compensating transactions for data integrity.
 </details>
@@ -1084,7 +1084,7 @@ Amazon values speed over perfection. Show that you:
 <details>
 <summary><b>Strategy</b></summary>
 
-Pick a project with clear obstacles — technical, team, or timeline related. Show:
+Pick a project with clear obstacles â€” technical, team, or timeline related. Show:
 1. What made it challenging (specific, quantified)
 2. How you broke it down into manageable pieces
 3. The measurable outcome
@@ -1130,7 +1130,7 @@ Demonstrate intellectual humility:
 <summary><b>Sample Response Framework</b></summary>
 
 1. **Gather data:** What are the deadlines, dependencies, and impacts?
-2. **Prioritize:** Use impact × urgency matrix
+2. **Prioritize:** Use impact Ã— urgency matrix
 3. **Communicate:** Inform stakeholders about trade-offs
 4. **Execute:** Focus on one task at a time
 5. **Escalate:** When impossible, raise red flags early
@@ -1147,7 +1147,7 @@ Amazon values bold ideas. Show:
 3. How you executed and what happened
 4. What you would do differently
 
-**Format for every LP answer:** Use the STAR method (Situation, Task, Action, Result) religiously. Quantify everything. Amazon interviewers take detailed notes — make them easy to write down.
+**Format for every LP answer:** Use the STAR method (Situation, Task, Action, Result) religiously. Quantify everything. Amazon interviewers take detailed notes â€” make them easy to write down.
 </details>
 
 ---
@@ -1159,7 +1159,7 @@ Amazon values bold ideas. Show:
 | Difficulty | LeetCode Problems | Target |
 |------------|------------------|--------|
 | Easy | 50+ | Warm-up, array/string basics |
-| Medium | 100+ | Core Amazon patterns — hash maps, BFS/DFS, two pointers |
+| Medium | 100+ | Core Amazon patterns â€” hash maps, BFS/DFS, two pointers |
 | Hard | 25+ | DP, complex graphs, advanced trees |
 
 ### System Design (SDE2+)
@@ -1191,7 +1191,7 @@ This chapter presented a comprehensive Amazon SDE question bank covering all sta
 1. **OA is the gatekeeper:** Your performance on the online assessment determines whether you get interviews. Focus heavily on hash maps, BFS/DFS, and sliding window.
 2. **Leadership Principles are scored:** Each behavioral answer maps to 1-2 LPs. Interviewers evaluate each answer against specific LP rubrics.
 3. **The Bar Raiser has veto power:** The Bar Raiser round (Round 4) is the most important. They evaluate long-term potential and ensure the hire raises the bar.
-4. **⭐ Must-Know Coding:** Top 5 Amazon problems — Two Sum, LRU Cache, Number of Islands, Trapping Rain Water, Merge K Sorted Lists.
+4. **â­ Must-Know Coding:** Top 5 Amazon problems â€” Two Sum, LRU Cache, Number of Islands, Trapping Rain Water, Merge K Sorted Lists.
 5. **System Design for SDE2+:** Practice 10+ design problems before your interview. Focus on data flow, scaling, and trade-off discussions.
 6. **Prepare 12+ STAR stories:** You'll need stories covering at least 8 of the 14 Leadership Principles. Have 2 deep stories and 10 supporting stories ready.
 
@@ -1241,8 +1241,8 @@ The two-pointer approach uses O(1) space unlike DP (O(n)) or stack (O(n)).
 
 ## Exercises
 
-1. **Coding:** Solve "Longest Substring Without Repeating Characters" (LeetCode 3) — Amazon top question.
-2. **Coding:** Implement "Copy List with Random Pointer" (LeetCode 138) — Amazon favorite.
+1. **Coding:** Solve "Longest Substring Without Repeating Characters" (LeetCode 3) â€” Amazon top question.
+2. **Coding:** Implement "Copy List with Random Pointer" (LeetCode 138) â€” Amazon favorite.
 3. **System Design:** Design Amazon's product recommendation system.
 4. **Behavioral:** Write a STAR response for "Tell me about a time you failed" using Learn and Be Curious.
 5. **System Design:** Design a real-time collaborative document editor (like Google Docs).

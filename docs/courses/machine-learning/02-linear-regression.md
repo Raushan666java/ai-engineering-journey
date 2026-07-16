@@ -1,4 +1,4 @@
-# Chapter 2: Linear Regression
+﻿# Chapter 2: Linear Regression
 
 > **Previous:** [Introduction](./01-introduction.md) | **Next:** [Logistic Regression](./03-logistic-regression.md)
 
@@ -16,16 +16,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/machine-learning/02-linear-regression/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/machine-learning/02-linear-regression/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/machine-learning/02-linear-regression/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/machine-learning/02-linear-regression/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/machine-learning/02-linear-regression/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/machine-learning/02-linear-regression/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/machine-learning/02-linear-regression/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/machine-learning/02-linear-regression/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/machine-learning/02-linear-regression/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/machine-learning/02-linear-regression/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/machine-learning/02-linear-regression/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/machine-learning/02-linear-regression/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>

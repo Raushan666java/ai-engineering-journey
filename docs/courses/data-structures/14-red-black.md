@@ -1,4 +1,4 @@
-# Chapter 14: Red-Black Trees
+﻿# Chapter 14: Red-Black Trees
 
 **Prev:** [Chapter 13: AVL Trees](13-avl.md) | **Next:** [Chapter 15: B-Trees and B+ Trees](15-b-trees.md)
 
@@ -9,16 +9,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-structures/14-red-black/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/data-structures/14-red-black/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/14-red-black/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/data-structures/14-red-black/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-structures/14-red-black/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/data-structures/14-red-black/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/14-red-black/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/data-structures/14-red-black/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-structures/14-red-black/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/data-structures/14-red-black/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/14-red-black/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/data-structures/14-red-black/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -32,23 +32,23 @@
 
 ## Why Red-Black Trees Matter
 
-> **Real-World Analogy:** Imagine a busy intersection managed by a **traffic light system**. The lights (colors) enforce a strict rule: if one direction has a green light (red node), the crossing direction must have a red light (black node). This prevents collisions. Similarly, Red-Black trees use a color invariant to prevent degenerate paths — ensuring no road (root-to-leaf path) becomes more than twice as long as any other. Without these color rules, the tree could degrade into a linked list, just like an intersection without traffic lights would descend into chaos.
+> **Real-World Analogy:** Imagine a busy intersection managed by a **traffic light system**. The lights (colors) enforce a strict rule: if one direction has a green light (red node), the crossing direction must have a red light (black node). This prevents collisions. Similarly, Red-Black trees use a color invariant to prevent degenerate paths â€” ensuring no road (root-to-leaf path) becomes more than twice as long as any other. Without these color rules, the tree could degrade into a linked list, just like an intersection without traffic lights would descend into chaos.
 
 Red-Black trees are one of the most widely used self-balancing BSTs in practice. They appear in:
-- **C++ `std::map` and `std::set`** — ordered associative containers
-- **Java `TreeMap` and `TreeSet`** — the standard sorted-map implementation
-- **Linux Completely Fair Scheduler (CFS)** — manages run queues of processes
-- **jemalloc** — memory allocator uses RB trees for free-block management
-- **Computational geometry** — interval trees, segment intersection algorithms
+- **C++ `std::map` and `std::set`** â€” ordered associative containers
+- **Java `TreeMap` and `TreeSet`** â€” the standard sorted-map implementation
+- **Linux Completely Fair Scheduler (CFS)** â€” manages run queues of processes
+- **jemalloc** â€” memory allocator uses RB trees for free-block management
+- **Computational geometry** â€” interval trees, segment intersection algorithms
 
-The key insight: by adding a single bit of color per node and enforcing five structural properties, Red-Black trees guarantee O(log n) worst-case search, insertion, and deletion — with **fewer rotations** than AVL trees, making them faster when write operations are frequent.
+The key insight: by adding a single bit of color per node and enforcing five structural properties, Red-Black trees guarantee O(log n) worst-case search, insertion, and deletion â€” with **fewer rotations** than AVL trees, making them faster when write operations are frequent.
 
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
 | Five properties | Color, root, leaf, red-child, black-height | The invariant set that guarantees balance |
-| Black-height | Number of black nodes on any root-to-leaf path | Longest path ≤ 2 × shortest path |
+| Black-height | Number of black nodes on any root-to-leaf path | Longest path â‰¤ 2 Ã— shortest path |
 | Insertion fix-up | Three cases based on uncle color | At most 2 rotations per insertion |
 | Deletion fix-up | Four cases, more complex than insertion | Hardest part of RB-tree implementation |
 | Height bound | \(h \leq 2 \log(n+1)\) | Slightly looser than AVL, still logarithmic |
@@ -60,16 +60,16 @@ The key insight: by adding a single bit of color per node and enforcing five str
 flowchart TD
     A[Red-Black Tree] --> B[BST Insert]
     B --> C{Parent Color?}
-    C --> D[Black → Done]
-    C --> E[Red → Fix]
+    C --> D[Black â†’ Done]
+    C --> E[Red â†’ Fix]
     E --> F{Uncle Color?}
-    F --> G[Red Uncle → Recolor]
-    F --> H[Black Uncle → Rotate]
+    F --> G[Red Uncle â†’ Recolor]
+    F --> H[Black Uncle â†’ Rotate]
     G --> I[Move up]
     I --> C
     H --> J[LL/RR/LR/RL Rotation]
     J --> K[Recolor + Done]
-    D --> L[Root→Black]
+    D --> L[Rootâ†’Black]
     K --> L
 ```
 
@@ -83,7 +83,7 @@ Think of a **corporate hierarchy with two employee tiers**: Red (interns, associ
 1. Everyone is classified as either intern or manager.
 2. The CEO (root) must be a manager.
 3. Every empty desk (NIL leaf) is treated as a manager-level position.
-4. No intern reports directly to another intern — at least one manager must be between them.
+4. No intern reports directly to another intern â€” at least one manager must be between them.
 5. Every department (root-to-leaf path) must have the same number of managers.
 
 Just as these rules prevent any department from having too many junior employees in a row, the Red-Black properties prevent any path from being more than twice as long as any other.
@@ -96,7 +96,7 @@ A **Red-Black tree** is a self-balancing BST with one extra attribute per node: 
 2. **The root is black.**
 3. **Every leaf (nullptr, or NIL) is black.**
 4. **If a node is red, both its children are black.** (No two consecutive reds.)
-5. **For each node, all paths from the node to descendant leaves contain the same number of black nodes** — the **black-height**.
+5. **For each node, all paths from the node to descendant leaves contain the same number of black nodes** â€” the **black-height**.
 
 ### Black-Height and Height Bound
 
@@ -145,12 +145,12 @@ CHECK-BLACK-HEIGHT(node):
 | Step | Insert | Tree After (Preorder) | Colors | Violation? | Fix Applied |
 |------|--------|----------------------|--------|------------|-------------|
 | 1 | 10 | 10 | B | None | Root made black |
-| 2 | 20 | 10 → 20 | B → R | None (parent B) | — |
-| 3 | 30 | 20 → 10(L) 30(R) | B → R → R | Red parent, red uncle (NIL=black) → Case 3 | Left rotate + recolor |
+| 2 | 20 | 10 â†’ 20 | B â†’ R | None (parent B) | â€” |
+| 3 | 30 | 20 â†’ 10(L) 30(R) | B â†’ R â†’ R | Red parent, red uncle (NIL=black) â†’ Case 3 | Left rotate + recolor |
 
 **Final tree:** 20(B), 10(R), 30(R). This is a valid RB tree with black-height 1.
 
-## C++ Implementation — Property Verification
+## C++ Implementation â€” Property Verification
 
 ```cpp
 #include <iostream>
@@ -189,7 +189,7 @@ bool verifyRB(RBNode<T>* root, RBNode<T>* nil) {
 }
 ```
 
-## Python Implementation — Property Verification
+## Python Implementation â€” Property Verification
 
 ```python
 class Color:
@@ -224,7 +224,7 @@ def verify_rb(root):
     return black_height(root) != -1
 ```
 
-## Java Implementation — Property Verification
+## Java Implementation â€” Property Verification
 
 ```java
 enum Color { RED, BLACK }
@@ -288,11 +288,11 @@ class RBTree<T extends Comparable<T>> {
 
 ## Edge Cases
 
-- **Empty tree**: Root is nil (black) — vacuously satisfies all properties.
+- **Empty tree**: Root is nil (black) â€” vacuously satisfies all properties.
 - **Single node**: Must be black. Both children are nil (black).
 - **All black tree**: A complete binary tree of black nodes is valid (black-height = h).
 - **Root is red after fix-up**: Always recolor root to black as final step.
-- **NIL sentinel color**: Must always be black — never recolor the sentinel.
+- **NIL sentinel color**: Must always be black â€” never recolor the sentinel.
 
 ---
 
@@ -301,7 +301,7 @@ class RBTree<T extends Comparable<T>> {
 ## Real-World Analogy
 
 Inserting into a Red-Black tree is like **adding a new hire to a company with a strict reporting-chain policy**. The new hire starts as an intern (red). If their manager is a manager (black), no problem. If their manager is also an intern (red), you have a "two interns in a row" violation. Depending on the other team members (uncle), you either:
-- **Recolor everyone up the chain** (if the grandparent's other direct report — the uncle — is also an intern), or
+- **Recolor everyone up the chain** (if the grandparent's other direct report â€” the uncle â€” is also an intern), or
 - **Reorganize the team structure** (rotate) to eliminate the consecutive intern violation.
 
 You repeat this check up the chain until the entire org follows the rules, then make sure the CEO (root) is always a manager (black).
@@ -380,18 +380,18 @@ RB-INSERT-FIXUP(T, z):
 
 | # | Insert | Tree State (Preorder with colors) | Violation | Case | Fix |
 |---|--------|----------------------------------|-----------|------|-----|
-| 1 | 10 | 10(B) | Root red | — | Recolor root to black |
-| 2 | 20 | 10(B) → 20(R) | None | — | — |
-| 3 | 30 | 10(B) → 20(R) → 30(R) | Red parent, NIL uncle | Case 3 (RR) | Left rotate + recolor |
-| | After fix | 20(B) → 10(R), 30(R) | None | — | — |
-| 4 | 5 | 20(B) → 10(R) → 5(R) | Red parent, 30(R)=red uncle | Case 1 | Recolor parent/uncle, move up |
-| | After fix | 20(B) → 10(R)→5(R), 30(R) | None | — | — |
-| 5 | 25 | 20(B)→10(R)→5(R), 30(R)→25(R) | Red parent, NIL uncle (10's other side) | Case 2(RL)→Case 3(RR) | Right rotate 25, left rotate 20 |
-| | After fix | 25(B)→20(R)→5(R), 30(B)? | — | — | 25 becomes new root... |
+| 1 | 10 | 10(B) | Root red | â€” | Recolor root to black |
+| 2 | 20 | 10(B) â†’ 20(R) | None | â€” | â€” |
+| 3 | 30 | 10(B) â†’ 20(R) â†’ 30(R) | Red parent, NIL uncle | Case 3 (RR) | Left rotate + recolor |
+| | After fix | 20(B) â†’ 10(R), 30(R) | None | â€” | â€” |
+| 4 | 5 | 20(B) â†’ 10(R) â†’ 5(R) | Red parent, 30(R)=red uncle | Case 1 | Recolor parent/uncle, move up |
+| | After fix | 20(B) â†’ 10(R)â†’5(R), 30(R) | None | â€” | â€” |
+| 5 | 25 | 20(B)â†’10(R)â†’5(R), 30(R)â†’25(R) | Red parent, NIL uncle (10's other side) | Case 2(RL)â†’Case 3(RR) | Right rotate 25, left rotate 20 |
+| | After fix | 25(B)â†’20(R)â†’5(R), 30(B)? | â€” | â€” | 25 becomes new root... |
 
-*(Full dry run continues — key insight: at most 2 rotations per insertion)*
+*(Full dry run continues â€” key insight: at most 2 rotations per insertion)*
 
-## C++ Implementation — Full RB Tree with Insertion
+## C++ Implementation â€” Full RB Tree with Insertion
 
 ```cpp
 #include <iostream>
@@ -539,7 +539,7 @@ public:
 };
 ```
 
-## Python Implementation — Red-Black Tree Insertion
+## Python Implementation â€” Red-Black Tree Insertion
 
 ```python
 class Color:
@@ -664,7 +664,7 @@ rbt.inorder()  # 5 10 20 25 30
 print()
 ```
 
-## Java Implementation — Red-Black Tree Insertion
+## Java Implementation â€” Red-Black Tree Insertion
 
 ```java
 enum Color { RED, BLACK }
@@ -792,7 +792,7 @@ class RBTree<T extends Comparable<T>> {
 | Fix-up | O(log n) | Loop walks up tree; at most O(log n) iterations |
 | Rotations | O(1) per case | Each rotation is pointer reassignment |
 | Total Insert | **O(log n)** | BST search + fix-up along height |
-| Rotations per insert | **≤ 2** | Unlike AVL (max 2), same bound; but fewer total recolorings |
+| Rotations per insert | **â‰¤ 2** | Unlike AVL (max 2), same bound; but fewer total recolorings |
 
 **Why O(log n)?** The fix-up loop moves `z` up one level per iteration (grandparent becomes new `z`). The tree height is O(log n), so at most O(log n) recolorings occur. Each case does at most 2 rotations total. This is the same asymptotic bound as AVL, but with fewer structural changes on average.
 
@@ -820,9 +820,9 @@ class RBTree<T extends Comparable<T>> {
 
 ## Real-World Analogy
 
-Deleting from a Red-Black tree is like **removing a manager from a department** and ensuring the remaining team still has the same number of managers on every career path. If you remove a manager (black node), you create a "manager gap" — all paths through that spot are now short one manager. You fix this by "borrowing" manager status from a sibling department or moving managers around. The process involves four distinct scenarios, like union contract renegotiations with different clauses depending on who remains.
+Deleting from a Red-Black tree is like **removing a manager from a department** and ensuring the remaining team still has the same number of managers on every career path. If you remove a manager (black node), you create a "manager gap" â€” all paths through that spot are now short one manager. You fix this by "borrowing" manager status from a sibling department or moving managers around. The process involves four distinct scenarios, like union contract renegotiations with different clauses depending on who remains.
 
-A "double-black" node represents a position that owes one manager to the path — it's a temporary IOU that must be resolved.
+A "double-black" node represents a position that owes one manager to the path â€” it's a temporary IOU that must be resolved.
 
 ## Algorithm: Deletion with Fix-Up
 
@@ -957,17 +957,17 @@ RB-DELETE-FIXUP(T, x):
 
 | Step | Action | Tree State | Color Change? | Note |
 |------|--------|-----------|---------------|------|
-| 1 | Delete 10 (has 2 children) | Find successor = 15 | — | Copy 15 → 10, mark 15 for removal |
-| 2 | Transplant 15 with NIL | 15(B) → 5(R) | 15 was RED → no fix needed | Done! |
+| 1 | Delete 10 (has 2 children) | Find successor = 15 | â€” | Copy 15 â†’ 10, mark 15 for removal |
+| 2 | Transplant 15 with NIL | 15(B) â†’ 5(R) | 15 was RED â†’ no fix needed | Done! |
 
 **More complex example: Delete root 10 from tree with black-height 2.**
 
 | Step | Action | Tree State | Case | Fix |
 |------|--------|-----------|------|-----|
-| 1 | Delete 10 (2 children) | Find successor = 12 | — | Copy data, remove 12 (RED, no fix) |
+| 1 | Delete 10 (2 children) | Find successor = 12 | â€” | Copy data, remove 12 (RED, no fix) |
 | etc. | | | | |
 
-## C++ Implementation — Deletion
+## C++ Implementation â€” Deletion
 
 ```cpp
 template <typename T>
@@ -1078,7 +1078,7 @@ RBNode<T>* RBTree<T>::minimum(RBNode<T>* node) const {
 }
 ```
 
-## Python Implementation — Deletion
+## Python Implementation â€” Deletion
 
 ```python
 def _transplant(self, u, v):
@@ -1181,7 +1181,7 @@ def _search(self, value, node):
     return self._search(value, node.right)
 ```
 
-## Java Implementation — Deletion
+## Java Implementation â€” Deletion
 
 ```java
 private void transplant(RBNode<T> u, RBNode<T> v) {
@@ -1290,10 +1290,10 @@ public void delete(T value) {
 |--------|-----------|-----|
 | BST Delete | O(log n) | Find node + find successor |
 | Fix-up loop | O(log n) | Walks toward root; at most O(log n) iterations |
-| Rotations per delete | **≤ 3** | Cases 1,3,4 each do 1 rotation; at most 3 total |
+| Rotations per delete | **â‰¤ 3** | Cases 1,3,4 each do 1 rotation; at most 3 total |
 | Total Delete | **O(log n)** | Search + fix-up along height |
 
-**Why is deletion harder than insertion?** Deletion can create a "black deficit" anywhere in the tree. The fix-up must restore black-height globally. While insertion only has 3 cases (and at most 2 rotations), deletion has 4 cases with more complex interactions. However, deletion still requires at most 3 rotations vs. AVL's O(log n) rotations for deletion — a key advantage.
+**Why is deletion harder than insertion?** Deletion can create a "black deficit" anywhere in the tree. The fix-up must restore black-height globally. While insertion only has 3 cases (and at most 2 rotations), deletion has 4 cases with more complex interactions. However, deletion still requires at most 3 rotations vs. AVL's O(log n) rotations for deletion â€” a key advantage.
 
 ## Advantages & Disadvantages
 
@@ -1310,7 +1310,7 @@ public void delete(T value) {
 - **Deleting a red leaf**: No fix-up needed (black-height unchanged).
 - **Deleting black root with no children**: Tree becomes empty (nil root).
 - **Deleting a black node with one red child**: Replace with red child, recolor to black.
-- **Sibling is nil (black)**: Treated as black with two black NIL children → Case 2.
+- **Sibling is nil (black)**: Treated as black with two black NIL children â†’ Case 2.
 - **Double-black propagation to root**: Absorbed by recoloring root black.
 - **Deleting the minimum**: May trigger fix-up if the minimum is black.
 
@@ -1320,9 +1320,9 @@ public void delete(T value) {
 
 ## Real-World Analogy
 
-A Left-Leaning Red-Black tree is like a **mono-directional traffic rule**: "all left turns must yield" — by enforcing that all red nodes must be left children, we eliminate half the possible violation patterns. This is like a company rule that says "interns only sit to the left of their manager." It's a simpler set of policies that achieves the same structural guarantees.
+A Left-Leaning Red-Black tree is like a **mono-directional traffic rule**: "all left turns must yield" â€” by enforcing that all red nodes must be left children, we eliminate half the possible violation patterns. This is like a company rule that says "interns only sit to the left of their manager." It's a simpler set of policies that achieves the same structural guarantees.
 
-LLRB trees are a variant introduced by Robert Sedgewick that map directly to 2-3 trees, making the implementation simpler — especially for insertion.
+LLRB trees are a variant introduced by Robert Sedgewick that map directly to 2-3 trees, making the implementation simpler â€” especially for insertion.
 
 ## Algorithm: LLRB Insertion
 
@@ -1340,9 +1340,9 @@ LLRB trees add one extra constraint: **no red node can be a right child** (equiv
 
 1. Insert node as RED (standard BST insert).
 2. While fix-up needed:
-   - **If** right child is RED and left child is BLACK → **rotate left**.
-   - **If** left child is RED and left-left grandchild is RED → **rotate right**.
-   - **If** both children are RED → **flip colors**.
+   - **If** right child is RED and left child is BLACK â†’ **rotate left**.
+   - **If** left child is RED and left-left grandchild is RED â†’ **rotate right**.
+   - **If** both children are RED â†’ **flip colors**.
 3. Color root BLACK.
 
 ## Pseudocode
@@ -1396,12 +1396,12 @@ FLIP-COLORS(h):
 
 | Step | Insert | Tree After Fix | Colors | Fix Applied |
 |------|--------|---------------|--------|-------------|
-| 1 | 10 | 10 | R → B | Root → flip to black |
-| 2 | 20 | 10 → 20(R) | B→R | Right child is red, left is nil → rotate left |
-| 3 | After fix | 20(B) → 10(R) | — | 20 is new root |
-| 4 | 30 | 20(B)→10(R) → 30(R) | — | Insert 30 as right of 10 |
-| 5 | After fix | 20(B)→10(R)→30(R) → 10 has two red children → flip | — | 10(R), 20(R), 30(R) → flip |
-| 6 | After flip | 20(B)→10(B), 30(B) | — | Valid LLRB |
+| 1 | 10 | 10 | R â†’ B | Root â†’ flip to black |
+| 2 | 20 | 10 â†’ 20(R) | Bâ†’R | Right child is red, left is nil â†’ rotate left |
+| 3 | After fix | 20(B) â†’ 10(R) | â€” | 20 is new root |
+| 4 | 30 | 20(B)â†’10(R) â†’ 30(R) | â€” | Insert 30 as right of 10 |
+| 5 | After fix | 20(B)â†’10(R)â†’30(R) â†’ 10 has two red children â†’ flip | â€” | 10(R), 20(R), 30(R) â†’ flip |
+| 6 | After flip | 20(B)â†’10(B), 30(B) | â€” | Valid LLRB |
 
 ## Complexity Analysis
 
@@ -1415,9 +1415,9 @@ FLIP-COLORS(h):
 
 | Advantages | Disadvantages |
 |-----------|---------------|
-| Simpler insertion code (3 checks vs 3 cases) | More rotations on average per insert (O(log n) vs ≤ 2) |
+| Simpler insertion code (3 checks vs 3 cases) | More rotations on average per insert (O(log n) vs â‰¤ 2) |
 | Direct correspondence to 2-3 trees | No deletion implementation in standard form |
-| Easier to reason about | Non-standard — fewer community resources |
+| Easier to reason about | Non-standard â€” fewer community resources |
 | Recursive implementation is natural | Requires recursion (stack depth concerns) |
 
 ## Edge Cases
@@ -1435,10 +1435,10 @@ FLIP-COLORS(h):
 | Property | Red-Black Tree | AVL Tree | B-Tree |
 |----------|---------------|----------|--------|
 | **Balance** | Color-based (5 properties) | Height balance (-1, 0, 1) | Node capacity-based |
-| **Height bound** | ≤ 2 log₂(n+1) | ≤ 1.44 log₂(n) | ≤ logₘ(n), m = order |
-| **Search** | O(log n) | O(log n) — ~30% faster | O(log n) — faster due to cache |
-| **Insert rotations** | ≤ 2 | ≤ 2 | Node splits (no rotations) |
-| **Delete rotations** | ≤ 3 | O(log n) | Node merges |
+| **Height bound** | â‰¤ 2 logâ‚‚(n+1) | â‰¤ 1.44 logâ‚‚(n) | â‰¤ logâ‚˜(n), m = order |
+| **Search** | O(log n) | O(log n) â€” ~30% faster | O(log n) â€” faster due to cache |
+| **Insert rotations** | â‰¤ 2 | â‰¤ 2 | Node splits (no rotations) |
+| **Delete rotations** | â‰¤ 3 | O(log n) | Node merges |
 | **Memory per node** | 1 bit color | 2-bit balance factor | Multiple keys + child pointers |
 | **Cache friendliness** | Low (pointer chasing) | Low (pointer chasing) | High (array of keys) |
 | **Disk I/O efficiency** | Poor | Poor | Excellent (wide nodes) |
@@ -1473,11 +1473,11 @@ FLIP-COLORS(h):
 
 
 **Answer:** 
-- AVL trees are more strictly balanced (height difference ≤ 1), giving faster searches (~1.44 log n vs ~2 log n height bound).
-- Red-Black trees require fewer rotations on insertion (≤ 2) and especially deletion (≤ 3 vs O(log n) for AVL).
+- AVL trees are more strictly balanced (height difference â‰¤ 1), giving faster searches (~1.44 log n vs ~2 log n height bound).
+- Red-Black trees require fewer rotations on insertion (â‰¤ 2) and especially deletion (â‰¤ 3 vs O(log n) for AVL).
 - **Use AVL** when search is the dominant operation and insert/delete are rare.
-- **Use Red-Black** when insert/delete frequency is high — the slight search penalty is worth the faster modifications.
-- This is exactly why C++ `std::map` (Red-Black) and not AVL — generic containers must perform well across varying access patterns.
+- **Use Red-Black** when insert/delete frequency is high â€” the slight search penalty is worth the faster modifications.
+- This is exactly why C++ `std::map` (Red-Black) and not AVL â€” generic containers must perform well across varying access patterns.
 
 ### Q3: Verify if a given tree is a valid Red-Black tree.
 
@@ -1492,12 +1492,12 @@ FLIP-COLORS(h):
 ### Q4: How many rotations can a Red-Black insertion require?
 
 
-**Answer:** At most 2 rotations. Case 1 (red uncle) does 0 rotations — only recoloring. Cases 2 and 3 combined do at most 2 rotations. This is a key advantage of Red-Black trees over alternatives.
+**Answer:** At most 2 rotations. Case 1 (red uncle) does 0 rotations â€” only recoloring. Cases 2 and 3 combined do at most 2 rotations. This is a key advantage of Red-Black trees over alternatives.
 
 ### Q5: What is the "black-height" of a Red-Black tree with n nodes?
 
 
-**Answer:** The black-height is at least ⌊log₂(n+1)⌋ — because a subtree with black-height b contains at least 2^b - 1 nodes (a perfectly balanced all-black tree).
+**Answer:** The black-height is at least âŒŠlogâ‚‚(n+1)âŒ‹ â€” because a subtree with black-height b contains at least 2^b - 1 nodes (a perfectly balanced all-black tree).
 
 ## Quick Reference: RB Property Verification
 
@@ -1540,7 +1540,7 @@ Java's `java.util.TreeMap` and `java.util.TreeSet` are the canonical Java implem
 - Navigable methods: `lowerKey()`, `floorKey()`, `ceilingKey()`, `higherKey()`.
 
 ```java
-// Java TreeMap — backed by Red-Black tree
+// Java TreeMap â€” backed by Red-Black tree
 TreeMap<String, Integer> map = new TreeMap<>();
 map.put("alice", 1);
 map.put("bob", 2);
@@ -1554,7 +1554,7 @@ System.out.println(map.ceilingKey("bb")); // "bob"
 The C++ standard template library specifies that `std::map`, `std::set`, `std::multimap`, and `std::multiset` are **ordered associative containers** with O(log n) operation complexity. Most implementations (libstdc++, libc++) use Red-Black trees internally.
 
 ```cpp
-// C++ std::map — typically a Red-Black tree
+// C++ std::map â€” typically a Red-Black tree
 #include <map>
 std::map<std::string, int> m;
 m["alice"] = 1;
@@ -1573,7 +1573,7 @@ The Linux kernel's Completely Fair Scheduler uses a Red-Black tree (in `kernel/s
 - Inserts tasks when they become runnable.
 - Picks the leftmost node (smallest `vruntime`) for execution.
 - Removes tasks when they block or terminate.
-- Requires O(log n) operations per context switch — acceptable with thousands of processes.
+- Requires O(log n) operations per context switch â€” acceptable with thousands of processes.
 
 The choice of Red-Black tree over AVL is deliberate: the scheduler needs fast insert/delete for frequently waking/blocking tasks, and the balance guarantee prevents any single operation from taking too long (important for real-time responsiveness).
 
@@ -1610,9 +1610,9 @@ Red-Black trees power:
 |----------|---------------|----------|
 | Balance criteria | Color-based (5 properties) | Height balance (-1, 0, 1) |
 | Height bound | \(2 \log(n+1)\) | \(1.44 \log n\) |
-| Search speed | \(O(\log n)\) | \(O(\log n)\) — ~30% faster typically |
-| Insert rotations | ≤ 2 | ≤ 2 |
-| Delete rotations | ≤ 3 | \(O(\log n)\) |
+| Search speed | \(O(\log n)\) | \(O(\log n)\) â€” ~30% faster typically |
+| Insert rotations | â‰¤ 2 | â‰¤ 2 |
+| Delete rotations | â‰¤ 3 | \(O(\log n)\) |
 | Memory per node | 1 bit color | Balance factor (2 bits) |
 | Library use | std::map, TreeMap | No standard library use |
 
@@ -1621,7 +1621,7 @@ Red-Black trees power:
 | Case | Uncle Color | Node Position | Action |
 |------|-------------|---------------|--------|
 | 1 | Red | Any | Recolor parent, uncle, grandparent; move up |
-| 2 | Black | Child is inside (LR or RL) | Rotate to make it outside (RL → LL, LR → RR) |
+| 2 | Black | Child is inside (LR or RL) | Rotate to make it outside (RL â†’ LL, LR â†’ RR) |
 | 3 | Black | Child is outside (LL or RR) | Rotate grandparent, recolor |
 
 # Quick Reference: Red-Black Deletion Cases
@@ -1648,49 +1648,49 @@ Red-Black trees power:
 
 1. **What color must the root of a Red-Black tree be?**
    - a) Red
-   - b) Black ✅
+   - b) Black âœ…
    - c) Either
    - d) None (null)
 
 2. **What is the height bound of a Red-Black tree?**
    - a) \(1.44 \log n\)
-   - b) \(2 \log(n+1)\) ✅
+   - b) \(2 \log(n+1)\) âœ…
    - c) \(n\)
    - d) \(\log n\)
 
 3. **How many rotations are needed for Red-Black insertion?**
-   - a) At most 2 ✅
+   - a) At most 2 âœ…
    - b) At most 1
    - c) \(O(\log n)\)
    - d) 0
 
 4. **Which C++ standard container uses a Red-Black tree?**
    - a) std::vector
-   - b) std::map ✅
+   - b) std::map âœ…
    - c) std::unordered_map
    - d) std::queue
 
 5. **Red-Black trees have ___ insert/delete rotations than AVL**
    - a) More
-   - b) Fewer ✅
+   - b) Fewer âœ…
    - c) Same
    - d) Zero
 
 6. **What is the maximum number of deletion fix-up cases in a Red-Black tree?**
    - a) 2
    - b) 3
-   - c) 4 ✅
+   - c) 4 âœ…
    - d) 5
 
 7. **Which of the following is NOT a Red-Black tree property?**
    - a) Root is black
    - b) Red nodes have black children
    - c) All paths have same black height
-   - d) Height difference ≤ 1 ✅
+   - d) Height difference â‰¤ 1 âœ…
 
 8. **In a Left-Leaning Red-Black tree, red nodes must be:**
    - a) Right children only
-   - b) Left children only ✅
+   - b) Left children only âœ…
    - c) Both sides allowed
    - d) The root only
 
@@ -1705,10 +1705,10 @@ Red-Black trees power:
 |---------|----------------|------------------|
 | Violating the red-child property during insertion | Inserting a red node under a red parent creates two consecutive reds | Always apply fix-up: recolor if uncle is red, rotate if uncle is black |
 | Forgetting to recolor the root to black after fix-up | Fix-up may turn the root red, violating property 2 | After each insertion fix-up loop, set `root.color = BLACK` |
-| Confusing deletion cases (4 cases vs 3 in insertion) | Deletion has 4 cases based on sibling and its children; harder to memorize | Use a decision tree: sibling color → sibling child colors → rotate/recolor |
+| Confusing deletion cases (4 cases vs 3 in insertion) | Deletion has 4 cases based on sibling and its children; harder to memorize | Use a decision tree: sibling color â†’ sibling child colors â†’ rotate/recolor |
 | Not maintaining black-height during deletion | Removing a black node reduces black-height on that path | The fix-up loop restores black-height by transferring a "black token" up the tree |
 | Implementing rotations without preserving BST property | Rotation swaps parent/child relationship; wrong implementation loses ordering | Left rotation: right child becomes new parent; right rotation: left child becomes new parent |
-| Using the same fix-up for insertion and deletion | Deletion fix-up is the mirror-image of insertion but with different semantics | Study deletion fix-up cases separately — they handle a "double-black" node |
+| Using the same fix-up for insertion and deletion | Deletion fix-up is the mirror-image of insertion but with different semantics | Study deletion fix-up cases separately â€” they handle a "double-black" node |
 | Assuming LLRB trees handle all cases the same as standard RB trees | LLRB restricts red nodes to left children, simplifying to 2 cases instead of 3 | LLRB insert has only 2 cases: flipColors (both children red) and rotate |
 
 ### TypeScript Red-Black Tree (with color simulation)
@@ -1828,10 +1828,10 @@ class RedBlackTree {
     // Verify the 5 Red-Black properties
     verifyRBProperties(): string[] {
         const violations: string[] = [];
-        // Property 1: Every node is either red or black — trivially true
+        // Property 1: Every node is either red or black â€” trivially true
         // Property 2: Root is black
         if (this.root?.color !== Color.BLACK) violations.push("Root is not black");
-        // Property 3: All leaves (null) are black — trivially true
+        // Property 3: All leaves (null) are black â€” trivially true
         // Property 4: Red nodes have black children
         const checkRedChildren = (node: RBNode | null): void => {
             if (!node) return;
@@ -1878,38 +1878,38 @@ class RedBlackTree {
 
 
 9. **What is the maximum number of red nodes on any path from root to leaf in a Red-Black tree?**
-   - a) ⌊log₂n⌋
-   - b) ⌊height/2⌋
-   - c) h/2 where h = height ✓
+   - a) âŒŠlogâ‚‚nâŒ‹
+   - b) âŒŠheight/2âŒ‹
+   - c) h/2 where h = height âœ“
    - d) n/2
 
 10. **A Red-Black tree of height 10 has at least how many black nodes on any root-to-leaf path?**
     - a) 3
-    - b) 5 ✓
+    - b) 5 âœ“
     - c) 10
     - d) 1
 
 11. **In Red-Black tree deletion, the "double-black" concept arises when:**
     - a) A red node is deleted
-    - b) A black node is deleted, leaving its child as "double black" ✓
+    - b) A black node is deleted, leaving its child as "double black" âœ“
     - c) Two red nodes are consecutive
     - d) The root is black
 
 12. **Which of the following trees is also a valid Red-Black tree?**
-    - a) A perfectly balanced BST with all nodes black ✓
+    - a) A perfectly balanced BST with all nodes black âœ“
     - b) A tree with a red root
     - c) A tree with a red node having a red child
     - d) A tree with unequal black heights on different paths
 
 13. **The transformation between a Red-Black tree and a 2-3-4 tree maps:**
     - a) Red nodes to 2-nodes
-    - b) Black nodes + red children to 3-nodes and 4-nodes ✓
+    - b) Black nodes + red children to 3-nodes and 4-nodes âœ“
     - c) Black nodes only to 4-nodes
     - d) There is no relationship
 
 14. **Why do Java's TreeMap and C++'s std::map use Red-Black trees instead of AVL?**
     - a) Faster search
-    - b) Fewer rotations during insert/delete ✓
+    - b) Fewer rotations during insert/delete âœ“
     - c) Easier to implement
     - d) Less memory
 
@@ -1926,22 +1926,22 @@ class RedBlackTree {
 
 17. **Count black-height in O(n)**: Write a function to compute and annotate every node with its black-height. Verify all paths have the same black-height.
 
-18. **Red-Black tree with rank/select**: Augment each node with subtree size. Implement `rank(k)` (number of elements ≤ k) and `select(i)` (i-th smallest element) in O(log n).
+18. **Red-Black tree with rank/select**: Augment each node with subtree size. Implement `rank(k)` (number of elements â‰¤ k) and `select(i)` (i-th smallest element) in O(log n).
 
 19. **AVL vs Red-Black experiment**: Insert 10,000 random elements into both an AVL and Red-Black tree. Count total rotations performed by each. Which one needs fewer?
 
 20. **Interval tree with Red-Black tree**: Implement an interval tree using a Red-Black tree as the underlying balanced BST, with `insertInterval`, `deleteInterval`, and `findOverlapping` operations.
 
-21. **Convert RB tree to AVL tree**: Given a valid Red-Black tree, convert it to a valid AVL tree by rebuilding (flatten to array → build balanced).
+21. **Convert RB tree to AVL tree**: Given a valid Red-Black tree, convert it to a valid AVL tree by rebuilding (flatten to array â†’ build balanced).
 
 ### Advanced Comparison: RB vs AVL vs B-Tree
 
 
 | Criterion | Red-Black | AVL | B-Tree (order m) |
 |-----------|-----------|-----|------------------|
-| Height bound | ≤ 2 log₂(n+1) | ≤ 1.44 log₂n | ≤ log_{⌈m/2⌉} ((n+1)/2) |
+| Height bound | â‰¤ 2 logâ‚‚(n+1) | â‰¤ 1.44 logâ‚‚n | â‰¤ log_{âŒˆm/2âŒ‰} ((n+1)/2) |
 | Search speed | Slower (taller) | Faster (shorter) | Comparable (block access dominates) |
-| Insert rotations | ≤ 2 | ≤ 2 | Node splits (0 rotations) |
+| Insert rotations | â‰¤ 2 | â‰¤ 2 | Node splits (0 rotations) |
 | Delete complexity | 4 cases (hardest) | 4 rotation patterns | Node merges/redistribution |
 | Memory/node | 1 color bit | height field (int) | m keys + m+1 pointers |
 | Practical speed | Best for write-heavy | Best for read-heavy | Best for disk-based storage |
@@ -1954,7 +1954,7 @@ class RedBlackTree {
 2. Why must the root be black?
 3. How does property 4 (red nodes have black children) prevent degenerate paths?
 4. Explain why deletion is harder than insertion in Red-Black trees.
-5. Why does the Black-Height property guarantee h ≤ 2 log(n+1)?
+5. Why does the Black-Height property guarantee h â‰¤ 2 log(n+1)?
 
 ## Application Problems
 
@@ -1968,7 +1968,7 @@ class RedBlackTree {
 
 11. Implement an **interval tree** using a Red-Black tree as the underlying balanced BST. Each node stores an interval \([low, high]\) and the maximum high in its subtree. Support insert, delete, and interval overlap queries in \( O(\log n) \).
 
-12. Implement a **Red-Black tree with persistence** — each insertion creates a new version while preserving the old one (copy-on-write). Analyze the space complexity.
+12. Implement a **Red-Black tree with persistence** â€” each insertion creates a new version while preserving the old one (copy-on-write). Analyze the space complexity.
 
 13. Prove that any Red-Black tree can be transformed into a valid 2-3-4 tree by merging consecutive red nodes with their parent, and vice versa.
 

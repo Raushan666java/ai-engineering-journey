@@ -1,4 +1,4 @@
-# Chapter 15: Microsoft SDE — Company-Specific Question Bank
+﻿# Chapter 15: Microsoft SDE â€” Company-Specific Question Bank
 
 ## Learning Objectives
 
@@ -11,16 +11,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -31,11 +31,11 @@
 ```mermaid
 flowchart TB
     subgraph "Microsoft SDE Interview Loop"
-        A[Application] --> B[Recruiter Screen<br/>30 mins • Background + Interest]
+        A[Application] --> B[Recruiter Screen<br/>30 mins â€¢ Background + Interest]
         B --> C{Shortlisted?}
-        C -->|Yes| D[Phone Screen<br/>45-60 mins • Coding + System Design]
+        C -->|Yes| D[Phone Screen<br/>45-60 mins â€¢ Coding + System Design]
         D --> E{Final Round}
-        E -->|Onsite / Virtual| F[4-5 Rounds • 45-60 mins each]
+        E -->|Onsite / Virtual| F[4-5 Rounds â€¢ 45-60 mins each]
         F --> G1[Round 1: Coding & Algorithms]
         F --> G2[Round 2: Data Structures]
         F --> G3[Round 3: System Design<br/>SDE2+ Only]
@@ -83,13 +83,13 @@ flowchart LR
 
 ---
 
-## Section 1: Coding Problems — Microsoft Pattern (6 Problems)
+## Section 1: Coding Problems â€” Microsoft Pattern (6 Problems)
 
 ### Problem 1: Lowest Common Ancestor of a Binary Tree
 
 **Problem:** Given a binary tree and two node values, find their lowest common ancestor (LCA). The LCA is the deepest node that has both nodes as descendants.
 
-**Microsoft Context:** Microsoft LOVES tree problems — LCA is asked in nearly every SDE interview loop.
+**Microsoft Context:** Microsoft LOVES tree problems â€” LCA is asked in nearly every SDE interview loop.
 
 **Example:**
 ```
@@ -99,7 +99,7 @@ Explanation: LCA of 5 and 1 is 3
 ```
 
 <details>
-<summary><b>Solution: Recursive DFS — O(n) time, O(n) space</b></summary>
+<summary><b>Solution: Recursive DFS â€” O(n) time, O(n) space</b></summary>
 
 ```typescript
 class TreeNode {
@@ -120,8 +120,8 @@ function lowestCommonAncestor(root: TreeNode | null, p: TreeNode, q: TreeNode): 
 }
 ```
 
-**Time:** O(n) — each node visited once
-**Space:** O(n) — recursion stack in worst case (skewed tree)
+**Time:** O(n) â€” each node visited once
+**Space:** O(n) â€” recursion stack in worst case (skewed tree)
 
 **Why this works:** The LCA is the first node where p and q are found in different subtrees (or one is the node itself). The recursion propagates found nodes upward.
 
@@ -134,7 +134,7 @@ function lowestCommonAncestor(root: TreeNode | null, p: TreeNode, q: TreeNode): 
 
 **Problem:** Reverse a linked list from position `left` to `right`. Do it in one pass and in-place.
 
-**Microsoft Context:** Linked list manipulations with precise pointer handling — Microsoft tests attention to detail.
+**Microsoft Context:** Linked list manipulations with precise pointer handling â€” Microsoft tests attention to detail.
 
 **Example:**
 ```
@@ -143,7 +143,7 @@ Output: [1,4,3,2,5]
 ```
 
 <details>
-<summary><b>Solution: Iterative with Dummy Node — O(n) time, O(1) space</b></summary>
+<summary><b>Solution: Iterative with Dummy Node â€” O(n) time, O(1) space</b></summary>
 
 ```typescript
 class ListNode {
@@ -166,7 +166,7 @@ function reverseBetween(head: ListNode | null, left: number, right: number): Lis
   const start = prev.next; // First node to reverse
   let next = start!.next;   // Node that will move
 
-  // Example: 1 → 2 → 3 → 4 → 5, left=2, right=4
+  // Example: 1 â†’ 2 â†’ 3 â†’ 4 â†’ 5, left=2, right=4
   // prev=1, start=2, next=3
   for (let i = 0; i < right - left; i++) {
     start!.next = next!.next;
@@ -179,8 +179,8 @@ function reverseBetween(head: ListNode | null, left: number, right: number): Lis
 }
 ```
 
-**Time:** O(n) — single pass
-**Space:** O(1) — in-place modification
+**Time:** O(n) â€” single pass
+**Space:** O(1) â€” in-place modification
 
 **Key insight:** The three-pointer technique (prev, start, next) with the dummy node eliminates edge cases for head reversal. Each iteration moves one node from its position to right after `prev`.
 </details>
@@ -189,7 +189,7 @@ function reverseBetween(head: ListNode | null, left: number, right: number): Lis
 
 ### Problem 3: Find All Duplicates in an Array
 
-**Problem:** Given an array of integers, 1 ≤ a[i] ≤ n (n = array size), some elements appear twice and others once. Find all elements that appear twice without using extra space.
+**Problem:** Given an array of integers, 1 â‰¤ a[i] â‰¤ n (n = array size), some elements appear twice and others once. Find all elements that appear twice without using extra space.
 
 **Microsoft Context:** Microsoft tests array manipulation with the "mark by negation" technique.
 
@@ -200,7 +200,7 @@ Output: [2, 3]
 ```
 
 <details>
-<summary><b>Solution: Mark by Negation — O(n) time, O(1) space</b></summary>
+<summary><b>Solution: Mark by Negation â€” O(n) time, O(1) space</b></summary>
 
 ```typescript
 function findDuplicates(nums: number[]): number[] {
@@ -210,7 +210,7 @@ function findDuplicates(nums: number[]): number[] {
     const index = Math.abs(nums[i]) - 1;
 
     if (nums[index] < 0) {
-      // Already visited — this is a duplicate
+      // Already visited â€” this is a duplicate
       result.push(Math.abs(nums[i]));
     } else {
       // Mark visited by negating
@@ -222,8 +222,8 @@ function findDuplicates(nums: number[]): number[] {
 }
 ```
 
-**Time:** O(n) — single pass
-**Space:** O(1) — excluding output array
+**Time:** O(n) â€” single pass
+**Space:** O(1) â€” excluding output array
 
 **Why this works:** Since all values are in range [1, n], each value maps to a unique index. By negating the number at that index, we mark it as "seen." If we encounter a number whose mapped index is already negative, it's a duplicate.
 
@@ -236,10 +236,10 @@ function findDuplicates(nums: number[]): number[] {
 
 **Problem:** Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
-**Microsoft Context:** Stack design problems test data structure composition — a Microsoft favorite.
+**Microsoft Context:** Stack design problems test data structure composition â€” a Microsoft favorite.
 
 <details>
-<summary><b>Solution: Two-Stack Approach — O(1) time, O(n) space</b></summary>
+<summary><b>Solution: Two-Stack Approach â€” O(1) time, O(n) space</b></summary>
 
 ```typescript
 class MinStack {
@@ -276,7 +276,7 @@ class MinStack {
 ```
 
 <details>
-<summary><b>Optimized: Single Stack with Pair — O(1) time, O(n) space</b></summary>
+<summary><b>Optimized: Single Stack with Pair â€” O(1) time, O(n) space</b></summary>
 
 ```typescript
 class MinStackOptimized {
@@ -300,7 +300,7 @@ class MinStackOptimized {
 ```
 
 **Time:** O(1) for all operations
-**Space:** O(n) — auxiliary stack
+**Space:** O(n) â€” auxiliary stack
 
 **Microsoft discussion point:** The two-stack approach saves space when min values appear infrequently. The pair approach is simpler but stores redundant data.
 </details>
@@ -309,9 +309,9 @@ class MinStackOptimized {
 
 ### Problem 5: Binary Tree Zigzag Level Order Traversal
 
-**Problem:** Return the zigzag level order traversal of a binary tree — left to right at even levels, right to left at odd levels.
+**Problem:** Return the zigzag level order traversal of a binary tree â€” left to right at even levels, right to left at odd levels.
 
-**Microsoft Context:** Tree traversal variations are Microsoft staples — tests BFS mastery with a twist.
+**Microsoft Context:** Tree traversal variations are Microsoft staples â€” tests BFS mastery with a twist.
 
 **Example:**
 ```
@@ -320,7 +320,7 @@ Output: [[3], [20,9], [15,7]]
 ```
 
 <details>
-<summary><b>Solution: BFS with Level Flag — O(n) time, O(n) space</b></summary>
+<summary><b>Solution: BFS with Level Flag â€” O(n) time, O(n) space</b></summary>
 
 ```typescript
 function zigzagLevelOrder(root: TreeNode | null): number[][] {
@@ -354,7 +354,7 @@ function zigzagLevelOrder(root: TreeNode | null): number[][] {
 ```
 
 <details>
-<summary><b>Optimized: Deque to Avoid Reverse — O(n) time, O(n) space</b></summary>
+<summary><b>Optimized: Deque to Avoid Reverse â€” O(n) time, O(n) space</b></summary>
 
 ```typescript
 function zigzagLevelOrderOptimized(root: TreeNode | null): number[][] {
@@ -385,8 +385,8 @@ function zigzagLevelOrderOptimized(root: TreeNode | null): number[][] {
 }
 ```
 
-**Time:** O(n) — each node processed once
-**Space:** O(n) — queue stores widest level
+**Time:** O(n) â€” each node processed once
+**Space:** O(n) â€” queue stores widest level
 </details>
 
 ---
@@ -404,7 +404,7 @@ Output: 5
 ```
 
 <details>
-<summary><b>Solution 1: Sorting — O(n log n) time, O(1) space</b></summary>
+<summary><b>Solution 1: Sorting â€” O(n log n) time, O(1) space</b></summary>
 
 ```typescript
 function findKthLargestSort(nums: number[], k: number): number {
@@ -417,7 +417,7 @@ Simple, but Microsoft expects the QuickSelect optimization.
 </details>
 
 <details>
-<summary><b>Solution 2: QuickSelect (Hoare's Selection) — O(n) avg, O(n²) worst</b></summary>
+<summary><b>Solution 2: QuickSelect (Hoare's Selection) â€” O(n) avg, O(nÂ²) worst</b></summary>
 
 ```typescript
 function findKthLargest(nums: number[], k: number): number {
@@ -450,8 +450,8 @@ function partition(nums: number[], left: number, right: number): number {
 }
 ```
 
-**Time:** O(n) average, O(n²) worst-case (rare with random pivot selection)
-**Space:** O(log n) — recursion stack
+**Time:** O(n) average, O(nÂ²) worst-case (rare with random pivot selection)
+**Space:** O(log n) â€” recursion stack
 
 **Why QuickSelect:** Unlike sorting (O(n log n)), QuickSelect partially sorts only until the kth element is in place. Average O(n) makes it optimal for this problem.
 </details>
@@ -576,7 +576,7 @@ flowchart TB
 
 | Decision | Choice | Rationale |
 |----------|--------|-----------|
-| **Sync Unit** | File chunk (4MB) | Only upload changed chunks — saves bandwidth |
+| **Sync Unit** | File chunk (4MB) | Only upload changed chunks â€” saves bandwidth |
 | **Conflict Resolution** | Keep both versions | When two edits conflict, save both with timestamps |
 | **Versioning** | 30-day version history | Delete old versions after 30 days (or longer for paid) |
 | **Delta encoding** | Binary diff (xdelta) | Efficient for small changes in large files |
@@ -585,13 +585,13 @@ flowchart TB
 
 **API Design:**
 ```
-GET    /files/{fileId}           → File metadata
-GET    /files/{fileId}/content   → Download file
-PUT    /files/{fileId}/content   → Upload new version
-GET    /files/{fileId}/changes   → Delta sync (changes since token)
-POST   /files/{fileId}/share     → Generate share link
-DELETE /files/{fileId}           → Move to recycle bin
-GET    /files/{fileId}/versions  → Version history
+GET    /files/{fileId}           â†’ File metadata
+GET    /files/{fileId}/content   â†’ Download file
+PUT    /files/{fileId}/content   â†’ Upload new version
+GET    /files/{fileId}/changes   â†’ Delta sync (changes since token)
+POST   /files/{fileId}/share     â†’ Generate share link
+DELETE /files/{fileId}           â†’ Move to recycle bin
+GET    /files/{fileId}/versions  â†’ Version history
 ```
 
 **Delta Sync Protocol:**
@@ -623,7 +623,7 @@ interface FileChange {
 - Geo-redundant storage (GRS) for disaster recovery
 - Rate limiting per user (throttle excessive sync operations)
 
-**Microsoft-specific:** OneDrive integrates deeply with Office 365 — co-authoring requires real-time sync of cursor positions, comments, and changes via Operational Transformation.
+**Microsoft-specific:** OneDrive integrates deeply with Office 365 â€” co-authoring requires real-time sync of cursor positions, comments, and changes via Operational Transformation.
 </details>
 
 ---
@@ -643,7 +643,7 @@ interface FileChange {
 | **Creation** | Heavyweight (new PCB, memory allocation) | Lightweight (shares memory) |
 | **Communication** | IPC (pipes, sockets, shared memory) | Direct memory access |
 | **Context switch** | Slow (TLB flush, page table switch) | Fast (same address space) |
-| **Fault isolation** | Isolated — one crash doesn't affect others | One thread crash can crash the process |
+| **Fault isolation** | Isolated â€” one crash doesn't affect others | One thread crash can crash the process |
 | **Resources** | Owns resources (file handles, sockets) | Shares process resources |
 </details>
 
@@ -672,7 +672,7 @@ Virtual memory is a memory management technique that gives each process its own 
 - Virtual addresses are divided into fixed-size pages (typically 4KB)
 - Physical memory is divided into page frames of the same size
 - A page table maps virtual pages to physical frames
-- When a process accesses an unmapped page → **page fault**
+- When a process accesses an unmapped page â†’ **page fault**
 - OS loads the page from disk (swap) into a free frame
 - Page replacement algorithms (LRU, Clock, NRU) decide which page to evict when memory is full
 
@@ -701,10 +701,10 @@ Virtual memory is a memory management technique that gives each process its own 
 <summary><b>Answer</b></summary>
 
 ```
-New → Ready → Running → Terminated
-         ↓        ↓
+New â†’ Ready â†’ Running â†’ Terminated
+         â†“        â†“
        Waiting   Waiting
-         ↓        ↓
+         â†“        â†“
        Ready     Ready
 ```
 
@@ -733,8 +733,8 @@ New → Ready → Running → Terminated
 | Normal Form | Condition | Example Violation |
 |-------------|-----------|-------------------|
 | 1NF | Atomic values | Column "PhoneNumbers" storing "555-0100, 555-0200" |
-| 2NF | Full FD on PK | Table {StudentID, CourseID, InstructorName} — InstructorName depends only on CourseID |
-| 3NF | No transitive FD | Table {EmployeeID, DepartmentID, DepartmentHead} — DepartmentHead depends on DepartmentID |
+| 2NF | Full FD on PK | Table {StudentID, CourseID, InstructorName} â€” InstructorName depends only on CourseID |
+| 3NF | No transitive FD | Table {EmployeeID, DepartmentID, DepartmentHead} â€” DepartmentHead depends on DepartmentID |
 </details>
 
 **Q7.** What is an index? Explain B-tree vs hash indexes.
@@ -747,7 +747,7 @@ An index is a data structure that speeds up data retrieval at the cost of additi
 | Aspect | B-Tree Index | Hash Index |
 |--------|-------------|------------|
 | **Structure** | Balanced tree, sorted keys | Hash table |
-| **Lookup** | O(log n) — supports range queries | O(1) — equality only |
+| **Lookup** | O(log n) â€” supports range queries | O(1) â€” equality only |
 | **Range queries** | Yes (efficient with in-order traversal) | No |
 | **Ordering** | Maintains sorted order | No ordering |
 | **Use case** | General purpose, most common | Key-value lookups, exact match |
@@ -798,8 +798,8 @@ Transaction isolation levels define how transaction changes are visible to other
 | Level | Dirty Read | Non-repeatable Read | Phantom Read | Performance |
 |-------|-----------|---------------------|-------------|-------------|
 | **Read Uncommitted** | Possible | Possible | Possible | Highest |
-| **Read Committed** | Prevented | Possible | Possible | ↑ |
-| **Repeatable Read** | Prevented | Prevented | Possible | ↓ |
+| **Read Committed** | Prevented | Possible | Possible | â†‘ |
+| **Repeatable Read** | Prevented | Prevented | Possible | â†“ |
 | **Serializable** | Prevented | Prevented | Prevented | Lowest |
 
 **Dirty Read:** Reading uncommitted data from another transaction.
@@ -842,8 +842,8 @@ Transaction isolation levels define how transaction changes are visible to other
 | **Header size** | 20-60 bytes | 8 bytes |
 | **Use cases** | Web (HTTP), email, file transfer | Streaming, DNS, VoIP, gaming |
 
-**3-way handshake:** SYN → SYN-ACK → ACK
-**4-way termination:** FIN → ACK → FIN → ACK
+**3-way handshake:** SYN â†’ SYN-ACK â†’ ACK
+**4-way termination:** FIN â†’ ACK â†’ FIN â†’ ACK
 </details>
 
 **Q13.** What is DNS and how does it work?
@@ -856,7 +856,7 @@ DNS (Domain Name System) translates human-readable domain names (google.com) to 
 **Resolution Process:**
 1. Browser checks local DNS cache
 2. If not found, queries configured DNS resolver (ISP or 8.8.8.8)
-3. Resolver recursively queries: Root server → TLD server (.com) → Authoritative server
+3. Resolver recursively queries: Root server â†’ TLD server (.com) â†’ Authoritative server
 4. Response flows back with IP address
 5. Browser establishes connection to the IP
 
@@ -895,28 +895,28 @@ DNS (Domain Name System) translates human-readable domain names (google.com) to 
 <details>
 <summary><b>Answer</b></summary>
 
-1. **Browser parses URL** → identifies protocol (HTTPS), domain, path
-2. **DNS lookup** → resolves domain to IP (checking browser cache → OS cache → router cache → ISP DNS → recursive resolution)
-3. **TCP connection** → 3-way handshake with the IP on port 443 (HTTPS)
-4. **TLS handshake** → certificate verification, session key exchange
-5. **HTTP request** → GET /path with headers (User-Agent, Accept, Cookies)
-6. **Server processes** → handles request, queries DB, generates response
-7. **HTTP response** → 200 OK with HTML content in body
-8. **Browser renders** → HTML parsed → DOM tree built → CSSOM built → Layout → Paint
-9. **Additional resources** → CSS, JS, images fetched (cached where possible)
-10. **JavaScript executes** → interactive features activated
+1. **Browser parses URL** â†’ identifies protocol (HTTPS), domain, path
+2. **DNS lookup** â†’ resolves domain to IP (checking browser cache â†’ OS cache â†’ router cache â†’ ISP DNS â†’ recursive resolution)
+3. **TCP connection** â†’ 3-way handshake with the IP on port 443 (HTTPS)
+4. **TLS handshake** â†’ certificate verification, session key exchange
+5. **HTTP request** â†’ GET /path with headers (User-Agent, Accept, Cookies)
+6. **Server processes** â†’ handles request, queries DB, generates response
+7. **HTTP response** â†’ 200 OK with HTML content in body
+8. **Browser renders** â†’ HTML parsed â†’ DOM tree built â†’ CSSOM built â†’ Layout â†’ Paint
+9. **Additional resources** â†’ CSS, JS, images fetched (cached where possible)
+10. **JavaScript executes** â†’ interactive features activated
 </details>
 
 ---
 
-## Section 4: Behavioral Questions — Microsoft STAR-Based (10 Questions)
+## Section 4: Behavioral Questions â€” Microsoft STAR-Based (10 Questions)
 
 ### Q1: Tell me about a time you had to learn a new technology quickly. (Growth Mindset)
 
 <details>
 <summary><b>Sample STAR Response</b></summary>
 
-**Situation:** My team needed to migrate from a monolithic ASP.NET application to a microservices architecture using Node.js and Docker — technologies I had never used.
+**Situation:** My team needed to migrate from a monolithic ASP.NET application to a microservices architecture using Node.js and Docker â€” technologies I had never used.
 
 **Task:** I needed to become productive in Node.js within 2 weeks while still meeting my sprint commitments.
 
@@ -1010,7 +1010,7 @@ Microsoft wants to see how you handle failure:
 I communicate with my manager and stakeholders about trade-offs. If I feel I can't deliver everything, I raise the flag early with options and recommendations, not just problems."
 </details>
 
-### Q9: Describe your experience with code reviews — both giving and receiving. (Quality)
+### Q9: Describe your experience with code reviews â€” both giving and receiving. (Quality)
 
 <details>
 <summary><b>Strategy</b></summary>
@@ -1070,7 +1070,7 @@ Be specific. Avoid generic "Microsoft is a great company" responses. Instead:
 
 ## Summary
 
-This chapter provided a comprehensive Microsoft SDE question bank covering all interview stages. The 6 coding problems focus on Microsoft's favorite patterns: tree traversal (LCA, zigzag), linked list manipulation, array tricks, and data structure design (Min Stack, Kth Largest). The 2 system design problems cover Teams and OneDrive — core Microsoft products you should be familiar with. The 15 computer fundamentals questions cover OS, DBMS, and CN at the depth Microsoft expects. The 10 behavioral questions follow Microsoft's STAR-based competency framework with Growth Mindset and Collaboration as key themes.
+This chapter provided a comprehensive Microsoft SDE question bank covering all interview stages. The 6 coding problems focus on Microsoft's favorite patterns: tree traversal (LCA, zigzag), linked list manipulation, array tricks, and data structure design (Min Stack, Kth Largest). The 2 system design problems cover Teams and OneDrive â€” core Microsoft products you should be familiar with. The 15 computer fundamentals questions cover OS, DBMS, and CN at the depth Microsoft expects. The 10 behavioral questions follow Microsoft's STAR-based competency framework with Growth Mindset and Collaboration as key themes.
 
 ## Practical Takeaways
 
@@ -1078,13 +1078,13 @@ This chapter provided a comprehensive Microsoft SDE question bank covering all i
 2. **System design for SDE2+:** Be ready to whiteboard components, data flow, and trade-offs. Microsoft values pragmatic design over theoretical purity.
 3. **STAR stories must be prepared.** For each story, write down: Situation (2 sentences), Task (1 sentence), Action (4-5 sentences), Result (2 sentences with numbers).
 4. **Computer fundamentals matter.** Microsoft explicitly tests OS, DBMS, and CN knowledge in interviews. Review these topics thoroughly.
-5. **⭐ Must-Know:** Lowest Common Ancestor, Reverse Linked List, Min Stack, Kth Largest Element — these appear consistently across Microsoft interview loops.
+5. **â­ Must-Know:** Lowest Common Ancestor, Reverse Linked List, Min Stack, Kth Largest Element â€” these appear consistently across Microsoft interview loops.
 6. **ASK (Azreska-Shankar-Kemp) round:** The final round with a senior leader evaluates your engineering judgment, communication, and strategic thinking. Be ready for broader questions about technology and product decisions.
 
 ## Chapter Quiz
 
 **Q1.** What is the time complexity of finding the Lowest Common Ancestor in a binary tree?
-a) O(log n)  b) O(n)  c) O(n log n)  d) O(n²)
+a) O(log n)  b) O(n)  c) O(n log n)  d) O(nÂ²)
 
 <details>
 <summary>Answer: b) O(n)</summary>
@@ -1096,7 +1096,7 @@ a) SYN  b) SYN-ACK  c) ACK  d) FIN
 
 <details>
 <summary>Answer: c) ACK</summary>
-SYN → SYN-ACK → ACK
+SYN â†’ SYN-ACK â†’ ACK
 </details>
 
 **Q3.** Which normalization form eliminates transitive dependencies?
@@ -1116,7 +1116,7 @@ Growth Mindset, championed by Satya Nadella, emphasizes that abilities can be de
 </details>
 
 **Q5.** In the Min Stack problem, what is the space complexity of the two-stack approach?
-a) O(1)  b) O(log n)  c) O(n)  d) O(n²)
+a) O(1)  b) O(log n)  c) O(n)  d) O(nÂ²)
 
 <details>
 <summary>Answer: c) O(n)</summary>
@@ -1127,9 +1127,9 @@ The auxiliary min stack can store up to n elements in the worst case.
 
 ## Exercises
 
-1. **Coding:** Solve "Binary Tree Maximum Path Sum" (LeetCode 124) — Microsoft favorite.
+1. **Coding:** Solve "Binary Tree Maximum Path Sum" (LeetCode 124) â€” Microsoft favorite.
 2. **Coding:** Implement "Serialize and Deserialize BST" (LeetCode 449).
 3. **System Design:** Design Azure DevOps Pipelines (CI/CD system).
 4. **Behavioral:** Write a full STAR response for a time you had to make a decision with incomplete information.
-5. **Fundamentals:** Explain how a SQL query executes step-by-step (parser → optimizer → executor → storage engine).
+5. **Fundamentals:** Explain how a SQL query executes step-by-step (parser â†’ optimizer â†’ executor â†’ storage engine).
 </details>

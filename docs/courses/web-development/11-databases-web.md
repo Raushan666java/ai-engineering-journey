@@ -1,4 +1,4 @@
-# Chapter 11: Databases in Web Applications
+﻿# Chapter 11: Databases in Web Applications
 
 > **Previous:** [10-auth](./10-auth.md) | **Next:** [12-deployment](./12-deployment.md)
 
@@ -9,16 +9,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/web-development/11-databases-web/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/web-development/11-databases-web/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/web-development/11-databases-web/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/web-development/11-databases-web/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/web-development/11-databases-web/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/web-development/11-databases-web/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/web-development/11-databases-web/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/web-development/11-databases-web/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/web-development/11-databases-web/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/web-development/11-databases-web/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/web-development/11-databases-web/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/web-development/11-databases-web/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -36,7 +36,7 @@ By the end of this chapter, you will be able to:
 |SQL vs NoSQL|SQL enforces schemas and relationships; NoSQL offers flexible documents|Use SQL for structured relational data, NoSQL for high-velocity unstructured or denormalized data|
 |Prisma ORM|Type-safe query builder with auto-generated client and migrations|Define models in schema.prisma, run `prisma generate` for the typed client|
 |Migrations|Version-controlled schema changes applied in order across environments|Write descriptive migration names, test down migrations, never edit applied migrations|
-|Raw SQL|Parameterized queries with the `pg` library prevent injection|Always use `$1`, `$2` placeholders — never string interpolation for values|
+|Raw SQL|Parameterized queries with the `pg` library prevent injection|Always use `$1`, `$2` placeholders â€” never string interpolation for values|
 |Indexing|Database indexes speed up reads at the cost of write performance|Create composite indexes matching query filter/sort patterns, use partial indexes for filtered queries|
 |N+1 Problem|Fetching parent rows then querying children individually causes N extra queries|Always eager-load relations with `include` in Prisma or JOIN in raw SQL|
 |Redis Caching|In-memory key-value store reduces database load for frequent queries|Set TTLs appropriate to data freshness needs, invalidate cache on writes|
@@ -355,7 +355,7 @@ app.get("/api/posts", async (req, res) => {
 
 
 > [!TIP]
-> Use `prisma.$transaction([])` for operations that must all succeed or all fail — it wraps multiple queries in a database transaction with automatic rollback.
+> Use `prisma.$transaction([])` for operations that must all succeed or all fail â€” it wraps multiple queries in a database transaction with automatic rollback.
 
 > [!WARNING]
 > Never edit an applied migration file. Always create a new migration for schema changes. Editing applied migrations leads to inconsistent database states across environments.
@@ -366,7 +366,7 @@ app.get("/api/posts", async (req, res) => {
 
 ## 11.8 Transactions and Batch Operations
 
-Database transactions ensure atomicity — a group of operations either all succeed or all fail.
+Database transactions ensure atomicity â€” a group of operations either all succeed or all fail.
 
 ```typescript
 import { PrismaClient } from "@prisma/client";
@@ -421,7 +421,7 @@ const pool = new Pool({
   connectionTimeoutMillis: 5000, // Fail if can't connect in 5s
 });
 
-// Query using pool — automatically acquires and releases connections
+// Query using pool â€” automatically acquires and releases connections
 async function getUsers() {
   const client = await pool.connect();
   try {
@@ -589,7 +589,7 @@ Test your understanding with these quick questions.
 
 <details><summary>Answer&lt;/summary&gt;
 
-**A) The N+1 problem occurs when code fetches a list of N parent entities, then executes N additional queries to fetch related child entities — instead of one query with a JOIN.**
+**A) The N+1 problem occurs when code fetches a list of N parent entities, then executes N additional queries to fetch related child entities â€” instead of one query with a JOIN.**
 
 </details>
 
@@ -935,8 +935,8 @@ Build a database layer for an e-commerce platform with products, categories, inv
 ### Practical Takeaways
 
 
-1. **Always use parameterized queries** — never interpolate user input into SQL strings, even in internal tools.
-2. **Model first, then migrate** — define your Prisma schema completely before generating the first migration to minimize schema drift.
-3. **Index with intent** — add indexes only for actual query patterns, not speculatively. Use `EXPLAIN ANALYZE` to verify index usage.
-4. **Cache judiciously** — cache only data that is expensive to compute and frequently read. Set TTLs and invalidate on writes.
-5. **Batch in transactions** — wrap multi-row operations in `$transaction` to ensure atomicity and improve throughput.
+1. **Always use parameterized queries** â€” never interpolate user input into SQL strings, even in internal tools.
+2. **Model first, then migrate** â€” define your Prisma schema completely before generating the first migration to minimize schema drift.
+3. **Index with intent** â€” add indexes only for actual query patterns, not speculatively. Use `EXPLAIN ANALYZE` to verify index usage.
+4. **Cache judiciously** â€” cache only data that is expensive to compute and frequently read. Set TTLs and invalidate on writes.
+5. **Batch in transactions** â€” wrap multi-row operations in `$transaction` to ensure atomicity and improve throughput.

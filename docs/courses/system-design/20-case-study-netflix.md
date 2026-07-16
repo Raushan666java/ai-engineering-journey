@@ -1,4 +1,4 @@
-# Chapter 20: Case Study — Netflix and Video Streaming
+﻿# Chapter 20: Case Study â€” Netflix and Video Streaming
 > **Previous:** [19 Case Study Whatsapp](./19-case-study-whatsapp.md) | **Next:** [21 Case Study Uber](./21-case-study-uber.md)
 
 ---
@@ -15,16 +15,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/system-design/20-case-study-netflix/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/system-design/20-case-study-netflix/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/system-design/20-case-study-netflix/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/system-design/20-case-study-netflix/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/system-design/20-case-study-netflix/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/system-design/20-case-study-netflix/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/system-design/20-case-study-netflix/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/system-design/20-case-study-netflix/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/system-design/20-case-study-netflix/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/system-design/20-case-study-netflix/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/system-design/20-case-study-netflix/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/system-design/20-case-study-netflix/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -45,7 +45,7 @@ flowchart LR
 ```
 |--------|---------|
 | **Scope** | Netflix architecture: microservices, chaos engineering, CDN, recommendation |
-| **Key Concepts** | Core topics covered in Chapter 20: Case Study — Netflix and Video Streaming |
+| **Key Concepts** | Core topics covered in Chapter 20: Case Study â€” Netflix and Video Streaming |
 | **Design Skills** | Chaos engineering, microservices decomposition, CDN strategy |
 | **Interview Angle** | Frequently tested in system design interviews |
 
@@ -53,7 +53,7 @@ flowchart LR
 
 | Aspect | Details |
 |--------|---------|
-| **Scope** | Core concepts covered in Chapter 20: Case Study — Netflix and Video Streaming |
+| **Scope** | Core concepts covered in Chapter 20: Case Study â€” Netflix and Video Streaming |
 | **Key Concepts** | Theory, Case Study: Netflix Playback Startup, Case Study: Netflix Content Ingestion and Processing Pipeline, Concept Comparison |
 | **Design Skills** | Concept mastery and practical application |
 | **Interview Angle** | Common system design interview topic |
@@ -139,15 +139,15 @@ Netflix streams over 100 million hours of content daily across 190+ countries. T
 - 100M hours/day = ~1.16M hours/sec peak
 - Average bitrate: ~5 Mbps (mix of SD/HD/4K)
 - Peak concurrent streams: ~20M (prime time)
-- Total peak bandwidth: 20M × 5 Mbps = 100,000 Gbps = 100 Tbps
+- Total peak bandwidth: 20M Ã— 5 Mbps = 100,000 Gbps = 100 Tbps
 - Daily data transfer: ~2.5 exabytes (2.5M TB)
 
 **Storage**
 
-- Master library: 1M hours × 50 GB/hour (4K source) = 50 PB of source content
+- Master library: 1M hours Ã— 50 GB/hour (4K source) = 50 PB of source content
 - Encoded output: each title encoded at 200+ bitrate/resolution combinations
 - Per-title encoded size: ~10 GB (all profiles)
-- Total encoded catalog: 17,000 × 10 GB = 170 TB
+- Total encoded catalog: 17,000 Ã— 10 GB = 170 TB
 - CDN cache: additional ~5 PB (most popular 10% of catalog cached at all OCAs)
 
 **Encoding Pipeline**
@@ -159,7 +159,7 @@ Netflix streams over 100 million hours of content daily across 190+ countries. T
 
 **Recommendation System**
 
-- 260M profiles × thousands of titles = 10^12 potential user-title pairs
+- 260M profiles Ã— thousands of titles = 10^12 potential user-title pairs
 - Model training: terabytes of watch history data
 - Feature vectors: 10,000+ dimensions per user and per title
 - Real-time inference: &lt;500ms per personalized page load
@@ -298,12 +298,12 @@ The encoding ladder is the set of bitrate-resolution pairs available for a title
 
 | Profile | Resolution | Bitrate | Codec |
 |---------|------------|---------|-------|
-| Low | 235p (416×234) | 235 Kbps | H.264/AVC |
-| Medium | 360p (640×360) | 560 Kbps | H.264/AVC |
-| Standard | 480p (854×480) | 1 Mbps | H.264/AVC |
-| High | 720p (1280×720) | 3 Mbps | H.264/AVC |
-| Full HD | 1080p (1920×1080) | 6 Mbps | H.264/AVC |
-| UHD | 2160p (3840×2160) | 16 Mbps | HEVC/H.265 |
+| Low | 235p (416Ã—234) | 235 Kbps | H.264/AVC |
+| Medium | 360p (640Ã—360) | 560 Kbps | H.264/AVC |
+| Standard | 480p (854Ã—480) | 1 Mbps | H.264/AVC |
+| High | 720p (1280Ã—720) | 3 Mbps | H.264/AVC |
+| Full HD | 1080p (1920Ã—1080) | 6 Mbps | H.264/AVC |
+| UHD | 2160p (3840Ã—2160) | 16 Mbps | HEVC/H.265 |
 | HDR | 2160p (HDR10/DV) | 20 Mbps | HEVC/H.265 |
 
 Video content is divided into chunks (typically 2-4 seconds). The client's manifest file lists all available chunks at all bitrates. The client-side adaptive bitrate (ABR) algorithm selects the optimal bitrate based on:
@@ -339,7 +339,7 @@ The encoding pipeline is a large-scale distributed system:
 ```
 Source (IMF/J2K 4K) ? Step 1: Pre-processing
   ? Step 2: Detection (scene cuts, black frames, audio sync)
-  ? Step 3: Parallel Chunk Encoding (N chunks × M profiles)
+  ? Step 3: Parallel Chunk Encoding (N chunks Ã— M profiles)
   ? Step 4: Quality Validation (VMAF per chunk)
   ? Step 5: Manifest Generation (MPD for DASH, M3U8 for HLS)
   ? Step 6: Packaging (fMP4/CMAF segments)
@@ -347,8 +347,8 @@ Source (IMF/J2K 4K) ? Step 1: Pre-processing
 ```
 
 A single 2-hour movie at 200 encoding profiles with 2-second chunks produces:
-- 3,600 chunks per profile (2 hours × 60 min × 30 chunks/min)
-- 3,600 × 200 = 720,000 total chunks to encode
+- 3,600 chunks per profile (2 hours Ã— 60 min Ã— 30 chunks/min)
+- 3,600 Ã— 200 = 720,000 total chunks to encode
 - Each chunk is encoded independently ? massive parallelism
 
 Netflix runs this pipeline on AWS Spot instances (preemptible EC2 instances at 60-90% discount). The risk of spot termination is managed:
@@ -401,9 +401,9 @@ The ranking and re-ranking stages together execute in under 500ms per user page 
 
 **Chaos Engineering**
 
-Netflix pioneered chaos engineering — the practice of intentionally injecting failures into production systems to build confidence in resilience.
+Netflix pioneered chaos engineering â€” the practice of intentionally injecting failures into production systems to build confidence in resilience.
 
-**Chaos Monkey**: Randomly terminates EC2 instances in production. If the system survives, auto-scaling and retry mechanisms work correctly. If not, the team fixes the gap. Runs during business hours (not overnight — the goal is learning, not disruption).
+**Chaos Monkey**: Randomly terminates EC2 instances in production. If the system survives, auto-scaling and retry mechanisms work correctly. If not, the team fixes the gap. Runs during business hours (not overnight â€” the goal is learning, not disruption).
 
 **Latency Monkey**: Introduces artificial delays between services. Tests circuit breaker configurations and timeout handling. If Hystrix circuits open correctly, the system degrades gracefully. If not, cascading failures propagate.
 
@@ -427,7 +427,7 @@ The lifecycle of a chaos experiment at Netflix:
 
 1. **Design**: The engineer defines the experiment parameters: which service, what failure type (instance termination, latency injection, DNS failure), duration (typically 15-30 minutes), and the steady state hypothesis (error rate &lt; 0.1%, P99 latency < 500ms).
 
-2. **Schedule**: The experiment is scheduled via the Chaos Platform (FIT — Failure Injection Testing). The platform checks that no other experiments are running in the same service, no production incidents are active, and it is within business hours.
+2. **Schedule**: The experiment is scheduled via the Chaos Platform (FIT â€” Failure Injection Testing). The platform checks that no other experiments are running in the same service, no production incidents are active, and it is within business hours.
 
 3. **Execute**: The platform injects the failure into a small subset of instances (e.g., 1% of the autoscaling group). Monitoring dashboards stream live metrics.
 
@@ -470,7 +470,7 @@ Netflix operates in multiple AWS regions with an active-active architecture. All
 
 Key components:
 
-- **Cassandra for cross-region data**: User profiles, viewing history, ratings, and My List are stored in Cassandra with cross-region replication. Each write is replicated asynchronously to other regions. Read-your-write consistency is maintained via a "local quorum" — the user's primary region is determined by geolocation.
+- **Cassandra for cross-region data**: User profiles, viewing history, ratings, and My List are stored in Cassandra with cross-region replication. Each write is replicated asynchronously to other regions. Read-your-write consistency is maintained via a "local quorum" â€” the user's primary region is determined by geolocation.
 
 - **EVCache for cross-region caching**: EVCache stores frequently accessed data. Cross-region replication is enabled for critical caches. If a region fails, the new primary region has warm caches via replication.
 
@@ -701,16 +701,16 @@ A new 4K HDR movie is delivered to Netflix. It must be encoded, packaged, subtit
 
 ```
 Source Media (IMF package, 4K HDR, 5.1 audio)
-  ? Step 1: Ingest — Validate format, checksum, metadata (24-bit audio, color space, frame rate)
-  ? Step 2: QC — Automated quality checks (black frames, audio sync, freeze frames, audio loudness)
-  ? Step 3: Mezzanine — Transcode to intermediate format (ProRes 4444 or JPEG 2000) for encoding
-  ? Step 4: Analysis — Scene detection, complexity analysis (SI/TI), audio track detection
-  ? Step 5: Encoding — Per-title optimized encoding into 200+ profiles
-  ? Step 6: Quality Validation — VMAF scoring per chunk, minimum score gate
-  ? Step 7: Packaging — CMAF segments, MPD/M3U8 manifests per language/audio combination
-  ? Step 8: Subtitle Processing — OCR for burned-in subtitles, timed-text conversion (TTML ? WebVTT)
-  ? Step 9: CDN Pre-population — Fill command to all Open Connect appliances
-  ? Step 10: Catalog Activation — Title appears in search and recommendations
+  ? Step 1: Ingest â€” Validate format, checksum, metadata (24-bit audio, color space, frame rate)
+  ? Step 2: QC â€” Automated quality checks (black frames, audio sync, freeze frames, audio loudness)
+  ? Step 3: Mezzanine â€” Transcode to intermediate format (ProRes 4444 or JPEG 2000) for encoding
+  ? Step 4: Analysis â€” Scene detection, complexity analysis (SI/TI), audio track detection
+  ? Step 5: Encoding â€” Per-title optimized encoding into 200+ profiles
+  ? Step 6: Quality Validation â€” VMAF scoring per chunk, minimum score gate
+  ? Step 7: Packaging â€” CMAF segments, MPD/M3U8 manifests per language/audio combination
+  ? Step 8: Subtitle Processing â€” OCR for burned-in subtitles, timed-text conversion (TTML ? WebVTT)
+  ? Step 9: CDN Pre-population â€” Fill command to all Open Connect appliances
+  ? Step 10: Catalog Activation â€” Title appears in search and recommendations
 ```
 
 ### Subtitle and Audio Pipeline
@@ -733,9 +733,9 @@ A critical quality issue: subtitles that render differently on different devices
 
 | Concept | Definition | Key Metric |
 |---------|-----------|------------|
-| Theory | Core topic covered in Chapter 20: Case Study — Netflix and Video Streaming | Defined by specific measurable attributes |
-| Case Study: Netflix Playback Startup | Core topic covered in Chapter 20: Case Study — Netflix and Video Streaming | Defined by specific measurable attributes |
-| Case Study: Netflix Content Ingestion and Processing Pipeline | Core topic covered in Chapter 20: Case Study — Netflix and Video Streaming | Defined by specific measurable attributes |
+| Theory | Core topic covered in Chapter 20: Case Study â€” Netflix and Video Streaming | Defined by specific measurable attributes |
+| Case Study: Netflix Playback Startup | Core topic covered in Chapter 20: Case Study â€” Netflix and Video Streaming | Defined by specific measurable attributes |
+| Case Study: Netflix Content Ingestion and Processing Pipeline | Core topic covered in Chapter 20: Case Study â€” Netflix and Video Streaming | Defined by specific measurable attributes |
 
 ---
 
@@ -744,9 +744,9 @@ A critical quality issue: subtitles that render differently on different devices
 
 | Topic | Key Point |
 |-------|-----------|
-| Theory | Fundamental concept for Chapter 20: Case Study — Netflix and Video Streaming |
-| Case Study: Netflix Playback Startup | Fundamental concept for Chapter 20: Case Study — Netflix and Video Streaming |
-| Case Study: Netflix Content Ingestion and Processing Pipeline | Fundamental concept for Chapter 20: Case Study — Netflix and Video Streaming |
+| Theory | Fundamental concept for Chapter 20: Case Study â€” Netflix and Video Streaming |
+| Case Study: Netflix Playback Startup | Fundamental concept for Chapter 20: Case Study â€” Netflix and Video Streaming |
+| Case Study: Netflix Content Ingestion and Processing Pipeline | Fundamental concept for Chapter 20: Case Study â€” Netflix and Video Streaming |
 
 ---
 
@@ -766,7 +766,7 @@ A critical quality issue: subtitles that render differently on different devices
 |---|----------|---------|--------|
 | 1 | What is the primary advantage of Netflix's Open Connect CDN over commercial CDNs? | A) Lower latency, B) Cost savings at scale + control over cache policy, C) Better codec support, D) Simpler deployment | B |
 | 2 | How does per-title encoding optimization reduce bandwidth without quality loss? | A) Fixed bitrate for all titles, B) Probe encodes with VMAF scoring build custom ladders per title, C) Use only H.265 codec, D) Reduce resolution uniformly | B |
-| 3 | What is the correct sequence of the three-stage recommendation pipeline? | A) Ranking → Re-ranking → Candidate Generation, B) Candidate Generation → Ranking → Re-ranking, C) Re-ranking → Candidate Generation → Ranking, D) Candidate Generation → Re-ranking → Ranking | B |
+| 3 | What is the correct sequence of the three-stage recommendation pipeline? | A) Ranking â†’ Re-ranking â†’ Candidate Generation, B) Candidate Generation â†’ Ranking â†’ Re-ranking, C) Re-ranking â†’ Candidate Generation â†’ Ranking, D) Candidate Generation â†’ Re-ranking â†’ Ranking | B |
 | 4 | How does Chaos Kong differ from Chaos Monkey in blast radius? | A) Chaos Kong terminates instances, Chaos Monkey fails regions, B) Chaos Monkey terminates instances, Chaos Kong simulates entire region failure, C) Both are identical, D) Chaos Monkey is for databases only | B |
 | 5 | What mechanism prevents cascading failures across Netflix's 800+ microservices? | A) Synchronous calls only, B) Hystrix circuit breakers with thread pool isolation, C) Single database for all services, D) Manual failover | B |
 
@@ -1141,7 +1141,7 @@ graph TB
 |----------|-------------|
 | Custom CDN at ISP peering points saves hundreds of millions in bandwidth costs | Deploy Open Connect-style appliances at ISP peer points; pre-populate popular content; use tiered cache architecture |
 | Per-title encoding optimization reduces bandwidth 30-50% without quality loss | Run probe encodes with VMAF scoring; build convex hull per title; use only encoding ladder points on the Pareto frontier |
-| Three-stage recommendation pipeline drives 80% of watch time | Candidate generation (narrow 10K→500), neural ranking (score), re-ranking (diversity + freshness) |
+| Three-stage recommendation pipeline drives 80% of watch time | Candidate generation (narrow 10Kâ†’500), neural ranking (score), re-ranking (diversity + freshness) |
 | Chaos engineering builds confidence in production resilience | Start with Chaos Monkey (instance termination), escalate to Chaos Kong (region failover); always define a steady state hypothesis |
 | Hystrix circuit breakers with thread pool isolation prevent cascading failures | Wrap every inter-service call; use timeout per tier (10/50/100ms); fail fast with fallback responses |
 | Multi-region active-active with Cassandra cross-region replication enables rapid failover | Run all regions active; use local quorum for reads; async cross-region replication; chaos-test region failures quarterly |
@@ -1153,7 +1153,7 @@ Netflix enters the live sports streaming market with a championship boxing match
 
 The live ingest architecture uses a regional edge encoder in Las Vegas that receives the 8K source feed. The encoder runs the per-title analysis on-the-fly, detecting scene complexity from the first 5 seconds of each camera angle and constructing an optimized encoding ladder. Instead of 200 profiles, the live encoder uses 8 profiles (240p through 4K HDR) because the latency budget does not allow for exhaustive encoding. Each 2-second chunk is encoded in parallel across GPU-equipped workers. The first chunk (lowest resolution) is available at T+8 seconds; the full ladder completes by T+20 seconds. Chunks propagate through a "live cascade" from the venue OCA to regional OCAs to ISP OCAs using UDP multicast for the backbone hops and TCP for the last mile.
 
-The failover plan spans three redundant ingest paths: the primary fiber link (latency 5ms), a secondary 5G bonding link (latency 20ms), and a satellite backup (latency 600ms — degraded quality only). When the primary link drops at T+15 minutes, the system switches to the secondary path within 3 seconds. Viewers see a momentary quality downgrade from 4K to 1080p as the encoder restarts on the secondary path. Chaos Kong validates the failover quarterly by simulating the loss of the US-West region, confirming that EU and APAC viewers continue streaming from their regional OCAs without interruption.
+The failover plan spans three redundant ingest paths: the primary fiber link (latency 5ms), a secondary 5G bonding link (latency 20ms), and a satellite backup (latency 600ms â€” degraded quality only). When the primary link drops at T+15 minutes, the system switches to the secondary path within 3 seconds. Viewers see a momentary quality downgrade from 4K to 1080p as the encoder restarts on the secondary path. Chaos Kong validates the failover quarterly by simulating the loss of the US-West region, confirming that EU and APAC viewers continue streaming from their regional OCAs without interruption.
 
 ## Case Study: Personalized Home Page for a New User
 
@@ -1188,16 +1188,16 @@ After the user watches 10 titles, the system transitions to hybrid recommendatio
 
 3. **Chaos Monkey** terminates individual EC2 instances in production to validate auto-scaling and retry mechanisms. **Chaos Kong** simulates an entire AWS region failure to validate active-active failover. Chaos Monkey's blast radius is a single instance; Chaos Kong's is an entire region. Chaos Monkey runs continuously; Chaos Kong runs quarterly with cross-org coordination.
 
-4. **Hystrix** wraps every inter-service call with a circuit breaker. When failures exceed a threshold, the circuit opens and requests fail fast instead of waiting for timeout. **Thread pool isolation** ensures each downstream dependency has its own thread pool — a failure in one service cannot exhaust the caller's resources. In **HALF-OPEN** state, one test request is allowed; success closes the circuit, failure re-opens it.
+4. **Hystrix** wraps every inter-service call with a circuit breaker. When failures exceed a threshold, the circuit opens and requests fail fast instead of waiting for timeout. **Thread pool isolation** ensures each downstream dependency has its own thread pool â€” a failure in one service cannot exhaust the caller's resources. In **HALF-OPEN** state, one test request is allowed; success closes the circuit, failure re-opens it.
 
-5. **Open Connect** appliances are purpose-built servers (100TB+ NVMe, 100Gbps NICs) deployed inside ISP data centers. Unlike commercial CDNs, OCAs are pre-populated with popular content via fill commands, use custom FreeBSD caching software with popularity-weighted eviction, and serve 95%+ of traffic from ISP peer points. Content is tiered: Tier 1 (ISP POP) → Tier 2 (colo) → S3 origin.
+5. **Open Connect** appliances are purpose-built servers (100TB+ NVMe, 100Gbps NICs) deployed inside ISP data centers. Unlike commercial CDNs, OCAs are pre-populated with popular content via fill commands, use custom FreeBSD caching software with popularity-weighted eviction, and serve 95%+ of traffic from ISP peer points. Content is tiered: Tier 1 (ISP POP) â†’ Tier 2 (colo) â†’ S3 origin.
 </details>
 
 ### Application Problems
 
-<details><summary>Solution</summary>1. **Cost-Optimized Encoding**: Encode all content to at least 720p (standard ladder, $2/hr). For 4K TV content (20% of watch time), also encode at 4K using per-title optimization ($2.50/hr). Current library (50K hrs): 80% × $2 + 20% × $2.50 = $1.60 + $0.50 = $2.10/hr avg = $105K/year. New content (5K hrs/year) = $10.5K/year. Total: $115.5K/year vs $250K/year for all-4K → saving $134.5K/year (54%).
+<details><summary>Solution</summary>1. **Cost-Optimized Encoding**: Encode all content to at least 720p (standard ladder, $2/hr). For 4K TV content (20% of watch time), also encode at 4K using per-title optimization ($2.50/hr). Current library (50K hrs): 80% Ã— $2 + 20% Ã— $2.50 = $1.60 + $0.50 = $2.10/hr avg = $105K/year. New content (5K hrs/year) = $10.5K/year. Total: $115.5K/year vs $250K/year for all-4K â†’ saving $134.5K/year (54%).
 
-2. **Global CDN**: Use a scoring function: `cache_priority = global_popularity^0.4 × regional_popularity^0.6 × freshness_boost`. Pre-populate all content with score > 0.8 in every OCA. For local content, boost regional_popularity to 1.0 in home region. Use 100TB per OCA: top 10% of global catalog (17K titles × 10GB = 170TB) exceeds single OCA capacity, so per-region subsets are needed based on regional popularity.
+2. **Global CDN**: Use a scoring function: `cache_priority = global_popularity^0.4 Ã— regional_popularity^0.6 Ã— freshness_boost`. Pre-populate all content with score > 0.8 in every OCA. For local content, boost regional_popularity to 1.0 in home region. Use 100TB per OCA: top 10% of global catalog (17K titles Ã— 10GB = 170TB) exceeds single OCA capacity, so per-region subsets are needed based on regional popularity.
 
 3. **Cold-Start Strategy**: During onboarding, users select 3+ genres. Use content-based filtering with genre feature vectors for initial candidates. Apply demographic features (country, inferred age, device type) as ranking weights. Reserve 20% of slots for exploration titles. After 10 views, transition to hybrid: 70% collaborative filtering (ALS on implicit signals from viewing behavior) + 30% content-based. Use multivariate A/B testing to validate cold-start algorithm variants.
 </details>
@@ -1207,7 +1207,7 @@ After the user watches 10 titles, the system transitions to hybrid recommendatio
 <details><summary>Solution>
 **Live Streaming at Netflix Scale**
 
-Use 2-second chunks (balancing latency vs encoding efficiency). Parallelize encoding across GPU workers: each chunk is independently encoded at 8 profiles. First chunk (lowest resolution) available at T+6s; full ladder at T+20s. Use a "live cascade" from venue → regional OCA (UDP multicast) → ISP OCA (TCP). Time to first byte for Australia viewer: venue→US West (50ms) + transpacific fiber (150ms) + Australia OCA (10ms) = ~210ms.
+Use 2-second chunks (balancing latency vs encoding efficiency). Parallelize encoding across GPU workers: each chunk is independently encoded at 8 profiles. First chunk (lowest resolution) available at T+6s; full ladder at T+20s. Use a "live cascade" from venue â†’ regional OCA (UDP multicast) â†’ ISP OCA (TCP). Time to first byte for Australia viewer: venueâ†’US West (50ms) + transpacific fiber (150ms) + Australia OCA (10ms) = ~210ms.
 
-**Ingest failover**: Three redundant paths — primary fiber (5ms), secondary 5G bonding (20ms), satellite backup (600ms degraded). Automatic switchover within 3 seconds on primary loss. **Time-shifted viewing**: Maintain a rolling buffer of the last 2 hours in HLS format. Live viewers get the 2s latest segment; late joiners start from an earlier segment. Transition live→on-demand at event end: finalize manifests, trigger regular CDN pre-population. **C3 ad insertion**: Use HLS interstitials (EXT-X-DATERANGE) to mark ad breaks. Server-side ad insertion replaces segments during manifest generation, ensuring frame-accurate transitions.
+**Ingest failover**: Three redundant paths â€” primary fiber (5ms), secondary 5G bonding (20ms), satellite backup (600ms degraded). Automatic switchover within 3 seconds on primary loss. **Time-shifted viewing**: Maintain a rolling buffer of the last 2 hours in HLS format. Live viewers get the 2s latest segment; late joiners start from an earlier segment. Transition liveâ†’on-demand at event end: finalize manifests, trigger regular CDN pre-population. **C3 ad insertion**: Use HLS interstitials (EXT-X-DATERANGE) to mark ad breaks. Server-side ad insertion replaces segments during manifest generation, ensuring frame-accurate transitions.
 </details>

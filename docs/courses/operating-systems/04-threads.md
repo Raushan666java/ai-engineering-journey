@@ -1,4 +1,4 @@
-# Chapter 4: Threads
+﻿# Chapter 4: Threads
 
 **<< [CPU Scheduling](./03-cpu-scheduling.md)** | [**Next: Process Synchronization**](./05-synchronization.md) >>
 
@@ -17,16 +17,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/operating-systems/04-threads/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/operating-systems/04-threads/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/operating-systems/04-threads/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/operating-systems/04-threads/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/operating-systems/04-threads/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/operating-systems/04-threads/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/operating-systems/04-threads/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/operating-systems/04-threads/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/operating-systems/04-threads/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/operating-systems/04-threads/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/operating-systems/04-threads/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/operating-systems/04-threads/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -37,9 +37,9 @@
 
 ## Why Threads Matter
 
-Imagine an office with **10 workers sharing one desk**. Each worker has their own notebook (stack) and pen (registers), but they share the same desk, reference books (code section), filing cabinet (data section), and phone line (file descriptors). When one worker gets a call (blocking I/O), the others keep working. If they each had their own separate desk (process), they would need 10 desks — costly space, slow to set up, and they can't easily share information.
+Imagine an office with **10 workers sharing one desk**. Each worker has their own notebook (stack) and pen (registers), but they share the same desk, reference books (code section), filing cabinet (data section), and phone line (file descriptors). When one worker gets a call (blocking I/O), the others keep working. If they each had their own separate desk (process), they would need 10 desks â€” costly space, slow to set up, and they can't easily share information.
 
-**Threads are those workers sharing one desk.** A process is the desk itself. Threads within the same process share the address space but have their own stack and registers. This makes thread creation 10–100× faster than process creation because we don't duplicate the entire desk — just the notebook.
+**Threads are those workers sharing one desk.** A process is the desk itself. Threads within the same process share the address space but have their own stack and registers. This makes thread creation 10â€“100Ã— faster than process creation because we don't duplicate the entire desk â€” just the notebook.
 
 In modern computing:
 - A **web server** handles 10,000+ concurrent connections using thread pools
@@ -47,7 +47,7 @@ In modern computing:
 - A **database** uses threads for parallel query execution
 - Your **OS** uses kernel threads to keep the UI responsive while background tasks run
 
-Without threads, every concurrent task would require a separate process — more memory, slower creation, harder communication. Threads make concurrency practical.
+Without threads, every concurrent task would require a separate process â€” more memory, slower creation, harder communication. Threads make concurrency practical.
 
 ---
 
@@ -95,15 +95,15 @@ flowchart LR
 
 #### Real-World Analogy
 
-> **Office workers sharing a single desk.** Each worker gets their own notepad (stack) and pen (registers), but they all share the same desk surface (heap), reference library (code section), filing cabinet (global data), and office phone (file descriptors). Hiring a new worker just means handing them a fresh notepad — no need to buy a new desk.
+> **Office workers sharing a single desk.** Each worker gets their own notepad (stack) and pen (registers), but they all share the same desk surface (heap), reference library (code section), filing cabinet (global data), and office phone (file descriptors). Hiring a new worker just means handing them a fresh notepad â€” no need to buy a new desk.
 
 #### Definition
 
 A **thread** is the basic unit of CPU utilization. It consists of:
-- **Thread ID** — unique identifier
-- **Program Counter (PC)** — points to the next instruction to execute
-- **Register Set** — CPU register state
-- **Stack** — local variables and function call frames
+- **Thread ID** â€” unique identifier
+- **Program Counter (PC)** â€” points to the next instruction to execute
+- **Register Set** â€” CPU register state
+- **Stack** â€” local variables and function call frames
 
 Threads **share** with sibling threads within the same process:
 - Code section (text)
@@ -117,23 +117,23 @@ Threads **share** with sibling threads within the same process:
 
 ```
 Process Address Space
-┌────────────────────────────────────┐
-│          Code (text)               │  ← shared by all threads
-├────────────────────────────────────┤
-│          Data (globals)            │  ← shared by all threads
-├────────────────────────────────────┤
-│          Heap (dynamic)            │  ← shared by all threads
-├──────────┬──────────┬──────────────┤
-│ T1 Stack │ T2 Stack │ T3 Stack     │  ← each thread has its own
-│ T1 PC/R  │ T2 PC/R  │ T3 PC/R      │
-└──────────┴──────────┴──────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚          Code (text)               â”‚  â† shared by all threads
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚          Data (globals)            â”‚  â† shared by all threads
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚          Heap (dynamic)            â”‚  â† shared by all threads
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚ T1 Stack â”‚ T2 Stack â”‚ T3 Stack     â”‚  â† each thread has its own
+â”‚ T1 PC/R  â”‚ T2 PC/R  â”‚ T3 PC/R      â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 #### Numbered Steps of Thread Creation
 
 1. Allocate a new thread control block (TCB) in the process's thread table
 2. Assign a unique thread ID
-3. Allocate a stack region (typically 1–8 MB for user threads)
+3. Allocate a stack region (typically 1â€“8 MB for user threads)
 4. Initialize the stack with the thread function's arguments
 5. Set the program counter to the start of the thread function
 6. Set the thread's register state to initial values
@@ -163,23 +163,23 @@ Assume a single-core CPU. We create two threads that each print "Hello from thre
 
 | Step | Action | Running | Ready Queue | Output |
 |------|--------|---------|-------------|--------|
-| 1 | T_main calls CreateThread("print_hello", arg1) | T_main | — | — |
-| 2 | Allocate TCB for T1, stack=0x7f00, assign ID=1 | T_main | — | — |
-| 3 | T1 state = READY, enqueue T1 | T_main | T1 | — |
-| 4 | T_main calls CreateThread("print_hello", arg2) | T_main | T1 | — |
-| 5 | Allocate TCB for T2, stack=0x8f00, assign ID=2 | T_main | T1 | — |
-| 6 | T2 state = READY, enqueue T2 | T_main | T1, T2 | — |
-| 7 | Timer interrupt → context switch needed | T_main | T1, T2 | — |
-| 8 | Save T_main registers to its TCB | T_main | T1, T2 | — |
-| 9 | Dequeue T1 from ready queue | T_main | T2 | — |
-| 10 | Restore T1 registers from its TCB | T1 | T2 | — |
-| 11 | T1 runs: set PC to print_hello | T1 | T2 | — |
+| 1 | T_main calls CreateThread("print_hello", arg1) | T_main | â€” | â€” |
+| 2 | Allocate TCB for T1, stack=0x7f00, assign ID=1 | T_main | â€” | â€” |
+| 3 | T1 state = READY, enqueue T1 | T_main | T1 | â€” |
+| 4 | T_main calls CreateThread("print_hello", arg2) | T_main | T1 | â€” |
+| 5 | Allocate TCB for T2, stack=0x8f00, assign ID=2 | T_main | T1 | â€” |
+| 6 | T2 state = READY, enqueue T2 | T_main | T1, T2 | â€” |
+| 7 | Timer interrupt â†’ context switch needed | T_main | T1, T2 | â€” |
+| 8 | Save T_main registers to its TCB | T_main | T1, T2 | â€” |
+| 9 | Dequeue T1 from ready queue | T_main | T2 | â€” |
+| 10 | Restore T1 registers from its TCB | T1 | T2 | â€” |
+| 11 | T1 runs: set PC to print_hello | T1 | T2 | â€” |
 | 12 | T1 loads arg into register, calls printf | T1 | T2 | "Hello from thread 1" |
-| 13 | T1 returns, state = TERMINATED | T1 | T2 | — |
-| 14 | Scheduler picks T2 | T1→T2 | — | — |
-| 15 | Restore T2 registers | T2 | — | — |
-| 16 | T2 runs print_hello | T2 | — | "Hello from thread 2" |
-| 17 | T2 returns, state = TERMINATED | T2 | — | — |
+| 13 | T1 returns, state = TERMINATED | T1 | T2 | â€” |
+| 14 | Scheduler picks T2 | T1â†’T2 | â€” | â€” |
+| 15 | Restore T2 registers | T2 | â€” | â€” |
+| 16 | T2 runs print_hello | T2 | â€” | "Hello from thread 2" |
+| 17 | T2 returns, state = TERMINATED | T2 | â€” | â€” |
 
 #### C++ Implementation (std::thread)
 
@@ -239,36 +239,36 @@ print("Main: All threads done.")
 
 | Operation | Time Complexity | Why |
 |-----------|----------------|-----|
-| Thread creation | O(1) | Allocate TCB + stack — fixed-size operations |
+| Thread creation | O(1) | Allocate TCB + stack â€” fixed-size operations |
 | Thread termination | O(1) | Mark TCB as free, release stack |
-| Thread context switch | O(1) | Save/restore ~20 registers — constant time |
+| Thread context switch | O(1) | Save/restore ~20 registers â€” constant time |
 | Thread join | O(1) | Check termination flag, block if not done |
 | Thread creation (kernel-level) | O(n) where n = threads in process | Kernel must update scheduler data structures |
-| Memory overhead per thread | O(S) where S = stack size | Typically 1–8 MB for user stack, ~16 KB for kernel stack |
+| Memory overhead per thread | O(S) where S = stack size | Typically 1â€“8 MB for user stack, ~16 KB for kernel stack |
 
 #### Advantages of Threads
 
 | Advantage | Explanation |
 |-----------|-------------|
 | Responsiveness | Program stays responsive even if one thread blocks (e.g., UI thread while network thread waits) |
-| Resource Sharing | Threads automatically share address space — no need for IPC mechanisms |
-| Economy | Thread creation is 10–100× cheaper than process creation; context switch is 5–10× faster |
+| Resource Sharing | Threads automatically share address space â€” no need for IPC mechanisms |
+| Economy | Thread creation is 10â€“100Ã— cheaper than process creation; context switch is 5â€“10Ã— faster |
 | Scalability | Threads can execute in parallel on multiple CPU cores |
-| Communication | Threads communicate via shared memory — no pipes, sockets, or shared memory syscalls needed |
+| Communication | Threads communicate via shared memory â€” no pipes, sockets, or shared memory syscalls needed |
 
 #### Disadvantages of Threads
 
 | Disadvantage | Explanation |
 |--------------|-------------|
 | No protection between threads | One thread's wild pointer can corrupt another thread's stack |
-| Synchronization complexity | Shared data requires locks, mutexes, semaphores — easy to introduce deadlocks |
+| Synchronization complexity | Shared data requires locks, mutexes, semaphores â€” easy to introduce deadlocks |
 | Debugging difficulty | Non-deterministic interleaving makes bugs hard to reproduce |
 | Signal handling ambiguity | Which thread receives an asynchronous signal? |
-| Stack size limitation | Thread stacks are fixed-size — recursion-heavy code can overflow |
+| Stack size limitation | Thread stacks are fixed-size â€” recursion-heavy code can overflow |
 
 #### Edge Cases
 
-1. **Thread safety**: If two threads write to the same global variable without synchronization, the result is undefined (data race). Example: `counter++` compiles to load-increment-store — two threads can interleave and lose one update.
+1. **Thread safety**: If two threads write to the same global variable without synchronization, the result is undefined (data race). Example: `counter++` compiles to load-increment-store â€” two threads can interleave and lose one update.
 
 2. **Race condition**: The outcome depends on the non-deterministic ordering of thread execution. A classic race: thread A checks if a file exists, thread B deletes it, then thread A tries to open it.
 
@@ -276,7 +276,7 @@ print("Main: All threads done.")
 
 4. **Thread creation failure**: If the system runs out of memory or reaches the thread limit (`/proc/sys/kernel/threads-max`), `pthread_create()` returns EAGAIN.
 
-5. **Detached threads**: If a detached thread's function throws an unhandled exception (C++) or raises an exception (Python), the program terminates — there is no way to join and retrieve the exception.
+5. **Detached threads**: If a detached thread's function throws an unhandled exception (C++) or raises an exception (Python), the program terminates â€” there is no way to join and retrieve the exception.
 
 6. **False sharing**: Two threads modify different variables that happen to share the same cache line. The cache coherency protocol forces constant invalidation, killing performance (this is not a correctness bug but a performance disaster).
 
@@ -293,7 +293,7 @@ print("Main: All threads done.")
 | Communication | IPC (pipes, shared memory, sockets, signals) | Direct memory access (shared globals) |
 | Protection | OS-enforced isolation (segfault in one process doesn't affect others) | Programmer-managed (one thread crash = whole process crash) |
 | Resource overhead | High (PCB, page tables, file descriptor table, signal table) | Low (just TCB + stack) |
-| Multiprocessor scaling | Yes — processes can run on different cores | Yes — threads can run on different cores |
+| Multiprocessor scaling | Yes â€” processes can run on different cores | Yes â€” threads can run on different cores |
 | Ownership | Owns resources (files, sockets, signals) | Shares process resources |
 | Number limit | Lower (constrained by memory for address space) | Higher (thousands per process possible) |
 
@@ -304,7 +304,7 @@ print("Main: All threads done.")
 
 #### Real-World Analogy
 
-> **A library with self-organizing reading groups.** A librarian (kernel) sees only one "group" checking in. Inside, the group coordinator (thread library) splits readers into smaller circles (threads). When one reader wants a new book, the coordinator quickly swaps them — no librarian needed. But if the whole group needs to check out together (blocking syscall), everyone waits.
+> **A library with self-organizing reading groups.** A librarian (kernel) sees only one "group" checking in. Inside, the group coordinator (thread library) splits readers into smaller circles (threads). When one reader wants a new book, the coordinator quickly swaps them â€” no librarian needed. But if the whole group needs to check out together (blocking syscall), everyone waits.
 
 #### Definition
 
@@ -325,7 +325,7 @@ User-level threads are managed entirely by a **thread library in user space** wi
 4. Library initializes the stack frame with the thread function and arguments
 5. Library sets the thread state to READY
 6. Library adds the thread to its internal ready queue
-7. No system call is made — the kernel is not involved
+7. No system call is made â€” the kernel is not involved
 
 #### User-Level Thread Context Switch (Numbered Steps)
 
@@ -336,7 +336,7 @@ User-level threads are managed entirely by a **thread library in user space** wi
 5. Library sets the next thread's state to RUNNING
 6. Library restores the next thread's registers from the thread table
 7. Library executes a `ret` or `jmp` instruction to the next thread's saved PC
-8. The next thread resumes execution — **no system call, no kernel trap, no mode switch**
+8. The next thread resumes execution â€” **no system call, no kernel trap, no mode switch**
 
 #### Pseudocode
 
@@ -370,15 +370,15 @@ Two user-level threads T1 and T2 are managed by the thread library. No kernel-le
 | Step | Action | Running | Ready Queue | Syscall? | Time |
 |------|--------|---------|-------------|----------|------|
 | 1 | T1 calls `thread_yield()` | T1 | T2 | No | t=10 |
-| 2 | Library saves T1's registers (eax=0x5, ebx=0x... , esp=0x7f00, eip=0x4012) | T1→save | T2 | No | t=10 |
-| 3 | Library sets T1.state = READY | — | T2, T1 | No | t=10 |
-| 4 | Library dequeues T2 from ready queue | — | T1 | No | t=10 |
-| 5 | Library sets T2.state = RUNNING | — | T1 | No | t=11 |
-| 6 | Library restores T2's registers (eax=0x0, esp=0x8f00, eip=0x402a) | — | T1 | No | t=11 |
+| 2 | Library saves T1's registers (eax=0x5, ebx=0x... , esp=0x7f00, eip=0x4012) | T1â†’save | T2 | No | t=10 |
+| 3 | Library sets T1.state = READY | â€” | T2, T1 | No | t=10 |
+| 4 | Library dequeues T2 from ready queue | â€” | T1 | No | t=10 |
+| 5 | Library sets T2.state = RUNNING | â€” | T1 | No | t=11 |
+| 6 | Library restores T2's registers (eax=0x0, esp=0x8f00, eip=0x402a) | â€” | T1 | No | t=11 |
 | 7 | Library jumps to T2's saved PC (0x402a) | T2 | T1 | No | t=11 |
 | 8 | T2 resumes execution | T2 | T1 | No | t=11 |
 
-**Key observation:** Total context switch time ≈ 5–10 μs (just register save/restore + queue operations). No system call. No mode switch (user→kernel→user).
+**Key observation:** Total context switch time â‰ˆ 5â€“10 Î¼s (just register save/restore + queue operations). No system call. No mode switch (userâ†’kernelâ†’user).
 
 #### C++ Simulation (User-Level Threads using ucontext)
 
@@ -425,7 +425,7 @@ int main() {
 }
 ```
 
-#### Python Implementation (user-level — threading module)
+#### Python Implementation (user-level â€” threading module)
 
 Python threads are user-level from the language perspective (managed by the Python interpreter) but are backed by kernel threads in CPython:
 
@@ -457,45 +457,45 @@ for line in result:
 
 | Operation | Time Complexity | Why |
 |-----------|----------------|-----|
-| User-level thread creation | O(1) | Just malloc TCB + stack — no syscall |
-| User-level context switch | O(1) | Save/restore ~20 registers — no kernel trap |
+| User-level thread creation | O(1) | Just malloc TCB + stack â€” no syscall |
+| User-level context switch | O(1) | Save/restore ~20 registers â€” no kernel trap |
 | User-level thread join | O(1) | Check a flag in the TCB, busy-wait or yield |
-| Blocking on I/O in one ULT | Blocks all — kernel unaware of individual ULTs |
+| Blocking on I/O in one ULT | Blocks all â€” kernel unaware of individual ULTs |
 | Creating N user-level threads | O(N) | N allocations, no kernel involvement per thread |
 
 #### Advantages of User-Level Threads
 
 | Advantage | Explanation |
 |-----------|-------------|
-| Ultra-fast creation | No system call — pure user-space allocation |
-| Ultra-fast context switch | Save/restore registers — ~5–10 μs vs ~50–100 μs for kernel threads |
+| Ultra-fast creation | No system call â€” pure user-space allocation |
+| Ultra-fast context switch | Save/restore registers â€” ~5â€“10 Î¼s vs ~50â€“100 Î¼s for kernel threads |
 | OS-independent | Works on any OS that supports processes |
 | Custom scheduling | Library can implement application-specific scheduling policies (e.g., priority, deadline) |
-| Low memory overhead | Only a TCB and a stack — no kernel stack or kernel TCB |
-| No kernel involvement | No traps, no mode switches — all operations in user space |
+| Low memory overhead | Only a TCB and a stack â€” no kernel stack or kernel TCB |
+| No kernel involvement | No traps, no mode switches â€” all operations in user space |
 
 #### Disadvantages of User-Level Threads
 
 | Disadvantage | Explanation |
 |--------------|-------------|
-| No true parallelism | Kernel schedules the process, not individual threads — one thread at a time |
-| Blocking syscall blocks all | If one thread calls read(), the entire process blocks — kernel doesn't know about other threads |
+| No true parallelism | Kernel schedules the process, not individual threads â€” one thread at a time |
+| Blocking syscall blocks all | If one thread calls read(), the entire process blocks â€” kernel doesn't know about other threads |
 | Page fault blocks all | When one thread causes a page fault, the entire process waits for the page I/O |
 | Cannot leverage multi-core | Only one kernel thread = only one CPU core used |
-| Thread library complexity | Custom scheduler, timer management, signal handling — all in user space |
+| Thread library complexity | Custom scheduler, timer management, signal handling â€” all in user space |
 | Priority inversion awareness | No way to signal the kernel about thread priorities |
 
 #### Edge Cases
 
-1. **Deadlock in user space**: If the thread library's scheduler holds a lock while yielding, other threads can't acquire it — the library must be reentrant.
+1. **Deadlock in user space**: If the thread library's scheduler holds a lock while yielding, other threads can't acquire it â€” the library must be reentrant.
 
 2. **Blocking I/O in one thread**: If T1 calls `read(fd, buf, 1024)` and the file descriptor blocks, the kernel puts the entire process to sleep. T2 never runs even if it has work to do. Solution: use non-blocking I/O or check `select()` before reading.
 
 3. **Timer signal race**: If the thread library uses SIGVTALRM for preemption, a signal arriving during a library function can corrupt the thread table unless signals are masked during critical sections.
 
-4. **Stack exhaustion**: With thousands of threads, total stack memory can exhaust the address space. Each thread's stack is allocated from the process heap — no swap or kernel stack to fall back on.
+4. **Stack exhaustion**: With thousands of threads, total stack memory can exhaust the address space. Each thread's stack is allocated from the process heap â€” no swap or kernel stack to fall back on.
 
-5. **Non-preemptive library**: If the library is cooperative (yield-based), one thread in an infinite loop halts all others — no preemption mechanism exists.
+5. **Non-preemptive library**: If the library is cooperative (yield-based), one thread in an infinite loop halts all others â€” no preemption mechanism exists.
 
 ---
 
@@ -506,7 +506,7 @@ for line in result:
 
 > **A restaurant with individual waitstaff.** Each waiter (kernel thread) is separately employed and managed by the manager (kernel). If one waiter takes a long time at a table, the others keep serving. The manager can assign waiters to different sections (CPU cores). Each waiter has their own notepad and apron (stack + registers) but shares the restaurant's kitchen (process resources).
 
-Waitstaff can serve different tables in parallel (parallelism) and each waiter works independently — if one is slow, it doesn't affect others (independent blocking).
+Waitstaff can serve different tables in parallel (parallelism) and each waiter works independently â€” if one is slow, it doesn't affect others (independent blocking).
 
 #### Definition
 
@@ -534,15 +534,15 @@ Kernel-level threads are managed directly by the **operating system kernel**. Ea
 
 #### Kernel-Level Thread Context Switch (Numbered Steps)
 
-1. Timer interrupt fires → CPU enters kernel mode (mode switch)
+1. Timer interrupt fires â†’ CPU enters kernel mode (mode switch)
 2. Kernel saves the current thread's registers onto its kernel stack
 3. Kernel saves the kernel stack pointer into the TCB
 4. Kernel calls the scheduler to pick the next thread
 5. Scheduler selects the next thread (may be from a different process)
-6. If switching processes: switch page table (CR3 register) — TLB flush needed
+6. If switching processes: switch page table (CR3 register) â€” TLB flush needed
 7. Kernel loads the next thread's kernel stack pointer from its TCB
 8. Kernel restores the next thread's saved registers from its kernel stack
-9. CPU returns to user mode (mode switch) — thread resumes
+9. CPU returns to user mode (mode switch) â€” thread resumes
 
 #### Pseudocode
 
@@ -581,18 +581,18 @@ Two kernel threads K1 and K2 in the same process on a single-core CPU.
 | Step | Action | Mode | Running | Ready Queue | Time |
 |------|--------|------|---------|-------------|------|
 | 1 | K1 is running user code | User | K1 | K2 | t=50 |
-| 2 | Timer interrupt fires → CPU enters kernel mode | Kernel | K1 | K2 | t=50 |
+| 2 | Timer interrupt fires â†’ CPU enters kernel mode | Kernel | K1 | K2 | t=50 |
 | 3 | CPU pushes registers (eax, ebx, ecx, edx, esi, edi, ebp, esp, eip, eflags) onto K1's kernel stack | Kernel | K1 | K2 | t=51 |
 | 4 | Kernel saves kernel_stack_pointer to K1's TCB | Kernel | K1 | K2 | t=51 |
-| 5 | Scheduler called → selects K2 | Kernel | K1 | K2 | t=51 |
-| 6 | K1.state = READY, enqueue K1 | Kernel | — | K2, K1 | t=52 |
-| 7 | K2.state = RUNNING, dequeue K2 | Kernel | — | K1 | t=52 |
-| 8 | Load K2's kernel_stack_pointer from K2's TCB | Kernel | — | K1 | t=52 |
-| 9 | Pop registers from K2's kernel stack | Kernel | — | K1 | t=53 |
-| 10 | `iret` instruction → return to user mode | User | K2 | K1 | t=53 |
+| 5 | Scheduler called â†’ selects K2 | Kernel | K1 | K2 | t=51 |
+| 6 | K1.state = READY, enqueue K1 | Kernel | â€” | K2, K1 | t=52 |
+| 7 | K2.state = RUNNING, dequeue K2 | Kernel | â€” | K1 | t=52 |
+| 8 | Load K2's kernel_stack_pointer from K2's TCB | Kernel | â€” | K1 | t=52 |
+| 9 | Pop registers from K2's kernel stack | Kernel | â€” | K1 | t=53 |
+| 10 | `iret` instruction â†’ return to user mode | User | K2 | K1 | t=53 |
 | 11 | K2 resumes execution | User | K2 | K1 | t=53 |
 
-**Key observation:** Total context switch ≈ 50–100 μs. Includes two mode switches (user→kernel→user), two stack operations, and scheduler dispatch. The TLB flush is avoided here because K1 and K2 share the same address space.
+**Key observation:** Total context switch â‰ˆ 50â€“100 Î¼s. Includes two mode switches (userâ†’kernelâ†’user), two stack operations, and scheduler dispatch. The TLB flush is avoided here because K1 and K2 share the same address space.
 
 #### C++ Implementation (kernel threads via std::thread)
 
@@ -634,7 +634,7 @@ int main() {
 }
 ```
 
-#### Python Implementation (threading — actually kernel-backed)
+#### Python Implementation (threading â€” actually kernel-backed)
 
 ```python
 import threading
@@ -664,22 +664,22 @@ print("Main: All threads done.")
 
 | Operation | Time Complexity | Why |
 |-----------|----------------|-----|
-| Kernel thread creation | O(1) | System call, allocate TCB + stacks — ~100× slower than user-level |
-| Kernel context switch | O(1) | Save/restore registers + mode switch (user↔kernel) — ~50–100 μs |
+| Kernel thread creation | O(1) | System call, allocate TCB + stacks â€” ~100Ã— slower than user-level |
+| Kernel context switch | O(1) | Save/restore registers + mode switch (userâ†”kernel) â€” ~50â€“100 Î¼s |
 | Scheduler dispatch | O(n) or O(1) | Depends on scheduler (O(1) in Linux CFS, O(n) in older schedulers) |
 | Page table switch | O(1) | Single CR3 register write, but **TLB flush invalidates all cached translations** |
 | Thread join (kernel) | O(1) | Wait on kernel-managed futex/event object |
-| Blocking I/O | Only the calling thread blocks — other threads in process continue |
-| Multiprocessor parallelism | Full — each kernel thread can run on a different CPU core |
+| Blocking I/O | Only the calling thread blocks â€” other threads in process continue |
+| Multiprocessor parallelism | Full â€” each kernel thread can run on a different CPU core |
 
 #### Advantages of Kernel-Level Threads
 
 | Advantage | Explanation |
 |-----------|-------------|
-| True parallelism | Kernel schedules each thread independently — can run on multiple cores simultaneously |
+| True parallelism | Kernel schedules each thread independently â€” can run on multiple cores simultaneously |
 | Independent blocking | One thread blocking on I/O doesn't affect others in the same process |
-| Preemption | Kernel can preempt any thread at any time via timer interrupt — no cooperative yielding needed |
-| System call safety | Each thread has its own kernel stack — simultaneous system calls from different threads are safe |
+| Preemption | Kernel can preempt any thread at any time via timer interrupt â€” no cooperative yielding needed |
+| System call safety | Each thread has its own kernel stack â€” simultaneous system calls from different threads are safe |
 | Priority scheduling | Kernel can prioritize threads by type (UI thread gets higher priority than background computation) |
 | Signal handling | Kernel can deliver signals to specific threads (synchronous signals go to the offending thread) |
 
@@ -687,35 +687,35 @@ print("Main: All threads done.")
 
 | Disadvantage | Explanation |
 |--------------|-------------|
-| Slow creation and switching | Requires system call (mode switch) — 50–100 μs vs 5–10 μs for user-level |
+| Slow creation and switching | Requires system call (mode switch) â€” 50â€“100 Î¼s vs 5â€“10 Î¼s for user-level |
 | Higher memory overhead | Each thread needs a kernel stack (~16 KB) and a TCB in non-swappable kernel memory |
-| OS-specific API | pthreads (POSIX), Windows Thread API, Solaris threads — not portable at system-call level |
+| OS-specific API | pthreads (POSIX), Windows Thread API, Solaris threads â€” not portable at system-call level |
 | Scalability limits | Creating 10,000 kernel threads consumes significant kernel memory and scheduler overhead |
-| Context switch penalty | Full register save/restore + mode switch = ~10× slower than user-level |
+| Context switch penalty | Full register save/restore + mode switch = ~10Ã— slower than user-level |
 | Portability | Kernel threading models differ between OSes (Linux one-to-one, older Solaris many-to-many) |
 
 #### Edge Cases
 
 1. **Thread limits**: Linux limits threads per user (`/proc/sys/kernel/threads-max`, typically ~100,000) and per process (`/proc/sys/vm/max_map_count`). Exceeding these causes `EAGAIN`.
 
-2. **Stack overflow**: Kernel thread stack overflow writes into the guard page → SIGSEGV → whole process crashes. The kernel can detect this if guard pages are enabled (`/proc/sys/vm/mmap_min_addr`).
+2. **Stack overflow**: Kernel thread stack overflow writes into the guard page â†’ SIGSEGV â†’ whole process crashes. The kernel can detect this if guard pages are enabled (`/proc/sys/vm/mmap_min_addr`).
 
 3. **Priority inversion**: A high-priority thread waits for a lock held by a low-priority thread that's been preempted by medium-priority threads. Linux addresses this with priority inheritance (RT mutexes).
 
-4. **Thread explosion**: Creating too many kernel threads causes scheduler thrashing — the kernel spends more time switching between threads than doing useful work.
+4. **Thread explosion**: Creating too many kernel threads causes scheduler thrashing â€” the kernel spends more time switching between threads than doing useful work.
 
-5. **fork() in threaded programs**: Linux's `fork()` duplicates only the calling thread in the child process. If the child doesn't call `exec()` immediately, the other threads' states are lost — mutexes they held become permanently locked.
+5. **fork() in threaded programs**: Linux's `fork()` duplicates only the calling thread in the child process. If the child doesn't call `exec()` immediately, the other threads' states are lost â€” mutexes they held become permanently locked.
 
 6. **setuid() in threads**: When one thread calls `setuid()`, should all threads in the process change their UID? POSIX says yes, but signal delivery semantics become ambiguous.
 
-### User-Level vs Kernel-Level Threads — Full Comparison
+### User-Level vs Kernel-Level Threads â€” Full Comparison
 
 
 | Feature | User-Level Threads | Kernel-Level Threads |
 |---------|-------------------|---------------------|
 | **Managed by** | Thread library in user space | OS kernel |
-| **Creation speed** | ~5–10 μs (no system call) | ~50–200 μs (clone syscall) |
-| **Context switch speed** | ~5–10 μs (register save/restore only) | ~50–100 μs (mode switch + register save/restore) |
+| **Creation speed** | ~5â€“10 Î¼s (no system call) | ~50â€“200 Î¼s (clone syscall) |
+| **Context switch speed** | ~5â€“10 Î¼s (register save/restore only) | ~50â€“100 Î¼s (mode switch + register save/restore) |
 | **Parallelism** | None (kernel sees one process) | Full (kernel schedules each thread independently) |
 | **Blocking I/O** | Blocks ALL threads in the process | Blocks only the calling thread |
 | **Memory overhead** | Low (TCB + user stack only) | High (TCB + kernel stack + user stack) |
@@ -726,7 +726,7 @@ print("Main: All threads done.")
 | **Thread count limit** | Can create thousands (limited by heap memory) | Limited by kernel memory and process limits |
 | **System call overhead** | System call blocks entire process | System call affects only the calling thread |
 | **Portability** | Works on any OS with process support | OS-specific APIs (pthreads is portable library interface) |
-| **Debugging** | Harder — debugger sees only the process | Easier — OS debugger sees individual threads |
+| **Debugging** | Harder â€” debugger sees only the process | Easier â€” OS debugger sees individual threads |
 | **Preemption** | Requires timer signal (SIGVTALRM) or cooperative yield | Full kernel preemption via timer interrupt |
 | **Priority inheritance** | Not possible (kernel doesn't know about thread states) | Possible (kernel can boost priority of lock holder) |
 | **Examples** | GNU Pth, early Solaris threads, fibers | Linux NPTL, Windows threads, Solaris 9+ |
@@ -771,7 +771,7 @@ Kernel space:       K1          (single kernel entity)
 
 1. Thread library creates N user-level threads
 2. All N threads are mapped to the single kernel thread
-3. The kernel sees one process with one PC — it cannot distinguish threads
+3. The kernel sees one process with one PC â€” it cannot distinguish threads
 4. The thread library handles scheduling in user space
 5. When any thread makes a blocking system call, the kernel blocks the entire process (all threads)
 6. The thread library can use non-blocking I/O to mitigate blocking
@@ -790,7 +790,7 @@ FUNCTION ManyToOneCreate(T count):
 FUNCTION ManyToOneSchedule():
     next = user_lib.ready_queue.DEQUEUE()
     user_lib.SWITCH_TO(next)
-    // no kernel involvement — pure user space
+    // no kernel involvement â€” pure user space
 ```
 
 ##### Dry Run: Many-to-One Blocking Behavior
@@ -799,13 +799,13 @@ Two user threads T1 (doing file read) and T2 (computation). Single kernel thread
 
 | Step | Action | User Running | Kernel Running | Output |
 |------|--------|-------------|----------------|--------|
-| 1 | T1 runs, calls read(fd, buf, 1024) | T1 | K1 | — |
-| 2 | Library sees T1 will block | T1 | K1 | — |
-| 3 | Library switches to T2 (user space) | T1→T2 | K1 | — |
+| 1 | T1 runs, calls read(fd, buf, 1024) | T1 | K1 | â€” |
+| 2 | Library sees T1 will block | T1 | K1 | â€” |
+| 3 | Library switches to T2 (user space) | T1â†’T2 | K1 | â€” |
 | 4 | T2 runs computation | T2 | K1 | "Computing..." |
-| 5 | T2 eventually calls read() — library has no choice but to use kernel read | T2 | K1 | — |
-| 6 | **Kernel blocks K1** (single kernel thread) → **T1 and T2 both block** | blocked | blocked | — |
-| 7 | **No progress possible** until the file read completes | blocked | blocked | — |
+| 5 | T2 eventually calls read() â€” library has no choice but to use kernel read | T2 | K1 | â€” |
+| 6 | **Kernel blocks K1** (single kernel thread) â†’ **T1 and T2 both block** | blocked | blocked | â€” |
+| 7 | **No progress possible** until the file read completes | blocked | blocked | â€” |
 
 **This is the fundamental problem:** even though T1 was ready, it got blocked because T2 made a blocking call. In one-to-one, T2 would block alone and T1 would continue.
 
@@ -816,7 +816,7 @@ Two user threads T1 (doing file read) and T2 (computation). Single kernel thread
 #include <thread>
 #include <atomic>
 
-// Simulates many-to-one model — all threads share a single worker thread
+// Simulates many-to-one model â€” all threads share a single worker thread
 class ManyToOnePool {
     std::thread worker;
     std::atomic<bool> running{false};
@@ -870,7 +870,7 @@ print(f"Final shared: {shared_resource}")
 
 | Operation | Complexity | Why |
 |-----------|------------|-----|
-| Thread creation | O(1) | Just alloc user TCB — no kernel involvement |
+| Thread creation | O(1) | Just alloc user TCB â€” no kernel involvement |
 | Context switch | O(1) | Pure user-space register save/restore |
 | Blocking I/O impact | Blocks N threads | Single kernel thread means any block stops all |
 | Parallelism | None | One kernel thread = one CPU core |
@@ -882,17 +882,17 @@ print(f"Final shared: {shared_resource}")
 |------------|---------------|
 | Very fast thread creation and switching | No true parallelism on multi-core |
 | Minimal memory overhead | Blocking system call blocks ALL threads |
-| OS-independent — works anywhere | Page fault blocks entire process |
+| OS-independent â€” works anywhere | Page fault blocks entire process |
 | Custom scheduling policy | Cannot preempt threads (unless SIGVTALRM) |
 | Can create thousands of threads | Thread library complexity increases |
 
 ##### Edge Cases
 
-1. **Cooperative vs preemptive scheduling**: If threads are cooperative (yield-based), one thread in an infinite loop blocks everyone — even if other threads have urgent work.
+1. **Cooperative vs preemptive scheduling**: If threads are cooperative (yield-based), one thread in an infinite loop blocks everyone â€” even if other threads have urgent work.
 
 2. **Non-blocking I/O requirement**: To mitigate the "block all" problem, the thread library must wrap blocking syscalls with non-blocking variants or use `select()`/`epoll()` to check availability first.
 
-3. **GIL interaction**: Python's Global Interpreter Lock behaves similarly to many-to-one for CPU-bound tasks — only one thread runs Python bytecode at a time, but I/O operations release the GIL.
+3. **GIL interaction**: Python's Global Interpreter Lock behaves similarly to many-to-one for CPU-bound tasks â€” only one thread runs Python bytecode at a time, but I/O operations release the GIL.
 
 ---
 
@@ -906,7 +906,7 @@ User space:    T1    T2    T3    T4
 Kernel space:  K1    K2    K3    K4
 ```
 
-**Real-World Analogy:** Each employee has their own manager. If an employee makes a mistake (blocks), their manager handles it — other employees continue working. Hire 10 people, hire 10 managers. Expensive, but independent.
+**Real-World Analogy:** Each employee has their own manager. If an employee makes a mistake (blocks), their manager handles it â€” other employees continue working. Hire 10 people, hire 10 managers. Expensive, but independent.
 
 ##### Numbered Steps
 
@@ -939,13 +939,13 @@ Two kernel threads K1 (file read) and K2 (computation). Dual-core CPU.
 
 | Step | Action | Core 0 | Core 1 | Output |
 |------|--------|--------|--------|--------|
-| 1 | K1 starts file read | K1 | K2 | — |
-| 2 | K1 calls `read()` → syscall → K1 blocks on I/O | idle | K2 | — |
-| 3 | Kernel moves K1 to wait queue | idle | K2 | — |
-| 4 | Kernel picks another thread (none available) for core 0 | idle | K2 | — |
+| 1 | K1 starts file read | K1 | K2 | â€” |
+| 2 | K1 calls `read()` â†’ syscall â†’ K1 blocks on I/O | idle | K2 | â€” |
+| 3 | Kernel moves K1 to wait queue | idle | K2 | â€” |
+| 4 | Kernel picks another thread (none available) for core 0 | idle | K2 | â€” |
 | 5 | K2 runs computation | idle | K2 | "Computing..." |
-| 6 | File read completes → K1 moves to ready queue | idle | K2 | — |
-| 7 | Kernel schedules K1 on core 0 | K1 | K2 | — |
+| 6 | File read completes â†’ K1 moves to ready queue | idle | K2 | â€” |
+| 7 | Kernel schedules K1 on core 0 | K1 | K2 | â€” |
 | 8 | K1 processes read data | K1 | K2 | "Got data!" |
 
 **Key:** K2 was never blocked by K1's I/O. Both threads made independent progress. With many-to-one, step 2 would have blocked everything.
@@ -1016,8 +1016,8 @@ print(f"Total time: {elapsed:.2f}s (would be ~3s with many-to-one, {elapsed:.2f}
 
 | Operation | Complexity | Why |
 |-----------|------------|-----|
-| Thread creation | O(1) | System call, allocate TCB + 2 stacks — ~100× slower than many-to-one |
-| Context switch | O(1) | Mode switch + registers — ~50–100 μs |
+| Thread creation | O(1) | System call, allocate TCB + 2 stacks â€” ~100Ã— slower than many-to-one |
+| Context switch | O(1) | Mode switch + registers â€” ~50â€“100 Î¼s |
 | Memory per thread | ~8 MB user stack + ~16 KB kernel stack | Plus kernel TCB in non-swappable memory |
 | Parallelism | Full | N kernel threads can run on N cores simultaneously |
 | Blocking impact | 1/N | Only the blocked thread is affected |
@@ -1035,7 +1035,7 @@ print(f"Total time: {elapsed:.2f}s (would be ~3s with many-to-one, {elapsed:.2f}
 
 ##### Edge Cases
 
-1. **Thread explosion**: Creating 10,000 threads triggers all 10,000 system calls. Each thread needs ~8 MB virtual address space for its stack = 80 GB virtual memory. The kernel's scheduler also needs to manage 10,000 entities — O(10,000) scheduling overhead.
+1. **Thread explosion**: Creating 10,000 threads triggers all 10,000 system calls. Each thread needs ~8 MB virtual address space for its stack = 80 GB virtual memory. The kernel's scheduler also needs to manage 10,000 entities â€” O(10,000) scheduling overhead.
 
 2. **Priority inversion with real-time threads**: A high-priority RT thread waiting for a lock held by a low-priority thread. Medium-priority threads preempt the low-priority holder. Linux addresses this with priority inheritance (`PTHREAD_PRIO_INHERIT`).
 
@@ -1054,15 +1054,15 @@ User space:   T1   T2   T3   T4   T5   T6
 Kernel space:    K1           K2         K3
 ```
 
-**Real-World Analogy:** A consulting firm with senior partners (kernel threads) and junior consultants (user threads). Multiple juniors report to each senior. If one senior is busy in a meeting, other seniors keep working. The juniors under the busy senior are blocked, but juniors under other seniors continue. Efficient — fewer managers than employees, but each manager handles their own team independently.
+**Real-World Analogy:** A consulting firm with senior partners (kernel threads) and junior consultants (user threads). Multiple juniors report to each senior. If one senior is busy in a meeting, other seniors keep working. The juniors under the busy senior are blocked, but juniors under other seniors continue. Efficient â€” fewer managers than employees, but each manager handles their own team independently.
 
 ##### Numbered Steps
 
 1. The application creates N user-level threads
-2. The thread library creates M kernel threads (LWPs — LightWeight Processes), where M ≤ N
+2. The thread library creates M kernel threads (LWPs â€” LightWeight Processes), where M â‰¤ N
 3. The library maps user threads to available LWPs dynamically
 4. When a user thread is ready, the library assigns it to an idle LWP
-5. If a user thread blocks, the LWP enters the kernel — but other LWPs continue
+5. If a user thread blocks, the LWP enters the kernel â€” but other LWPs continue
 6. The library can also "bind" critical threads to dedicated LWPs (one-to-one for priority threads)
 
 ##### Pseudocode
@@ -1092,14 +1092,14 @@ FUNCTION ManyToManySchedule():
 
 | Step | Action | K1 | K2 | K3 | Blocked |
 |------|--------|------|------|------|---------|
-| 1 | Initial mapping | T1 | T2 | T3 | — |
+| 1 | Initial mapping | T1 | T2 | T3 | â€” |
 | 2 | T4 ready, K3 idle (T3 blocked on I/O) | T1 | T2 | T4 | T3 |
 | 3 | T5 ready, K2 idle (T2 blocked) | T1 | T5 | T4 | T3,T2 |
-| 4 | T3 unblocks → library finds all LWPs busy → T3 queued | T1 | T5 | T4 | — |
-| 5 | T1 completes → library maps T3 to K1 | T3 | T5 | T4 | — |
-| 6 | T6 ready, no idle LWPs → T6 queued | T3 | T5 | T4 | — |
+| 4 | T3 unblocks â†’ library finds all LWPs busy â†’ T3 queued | T1 | T5 | T4 | â€” |
+| 5 | T1 completes â†’ library maps T3 to K1 | T3 | T5 | T4 | â€” |
+| 6 | T6 ready, no idle LWPs â†’ T6 queued | T3 | T5 | T4 | â€” |
 
-**Key:** 3 kernel threads serve 6 user threads. Blocking doesn't stop all work — only the threads on the blocking LWP wait.
+**Key:** 3 kernel threads serve 6 user threads. Blocking doesn't stop all work â€” only the threads on the blocking LWP wait.
 
 ##### C++ Simulation (Many-to-Many Thread Pool)
 
@@ -1221,7 +1221,7 @@ print("Many-to-Many: Complete")
 
 | Operation | Complexity | Why |
 |-----------|------------|-----|
-| Thread creation (user) | O(1) | User-level TCB allocation — same as many-to-one |
+| Thread creation (user) | O(1) | User-level TCB allocation â€” same as many-to-one |
 | Thread creation (LWP) | O(M) | M system calls to create kernel threads |
 | Scheduling | O(N/M) | User scheduler maps N threads to M LWPs |
 | Blocking impact | ~1/M | Only threads on the blocking LWP are affected |
@@ -1232,7 +1232,7 @@ print("Many-to-Many: Complete")
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Multiplexes many user threads onto few kernel threads | Complex to implement — two schedulers |
+| Multiplexes many user threads onto few kernel threads | Complex to implement â€” two schedulers |
 | More parallelism than many-to-one | Can still have convoys (threads on same LWP) |
 | Less kernel overhead than one-to-one | Kernel scheduler doesn't know user thread priorities |
 | Can bind critical threads to dedicated LWPs | Only a few OSes implement it (Solaris, IRIX) |
@@ -1240,11 +1240,11 @@ print("Many-to-Many: Complete")
 
 ##### Edge Cases
 
-1. **Convoy problem**: If N user threads are mapped to M LWPs and one LWP has a long-running user thread, other user threads waiting for that LWP are delayed — even if other LWPs are idle.
+1. **Convoy problem**: If N user threads are mapped to M LWPs and one LWP has a long-running user thread, other user threads waiting for that LWP are delayed â€” even if other LWPs are idle.
 
 2. **Starvation**: The user-level scheduler must ensure fairness. A user thread that always gets selected by the user scheduler can monopolize an LWP.
 
-3. **Binding critical threads**: Some implementations allow "bound" threads (one user thread → one dedicated kernel thread). This complicates the scheduling model — bound and unbound threads coexist.
+3. **Binding critical threads**: Some implementations allow "bound" threads (one user thread â†’ one dedicated kernel thread). This complicates the scheduling model â€” bound and unbound threads coexist.
 
 4. **Upcall complexity**: When a kernel thread blocks, the user-level scheduler needs an "upcall" from the kernel to reassign the blocking thread's user threads to other LWPs. This requires kernel support that most modern OSes don't provide.
 
@@ -1255,15 +1255,15 @@ print("Many-to-Many: Complete")
 
 #### Real-World Analogy
 
-> **A toolbox for building desks.** You could build a desk from raw lumber (raw kernel syscalls), or you could use a toolkit with pre-cut pieces and instructions (thread library). The toolkit hides the complexity of measurements and cuts — you just assemble. Different toolkits exist for different purposes: pthreads is the universal handyman's toolkit, C++ std::thread is the modern power-tool kit, Python threading is the "quick assembly" kit.
+> **A toolbox for building desks.** You could build a desk from raw lumber (raw kernel syscalls), or you could use a toolkit with pre-cut pieces and instructions (thread library). The toolkit hides the complexity of measurements and cuts â€” you just assemble. Different toolkits exist for different purposes: pthreads is the universal handyman's toolkit, C++ std::thread is the modern power-tool kit, Python threading is the "quick assembly" kit.
 
 #### Overview
 
 A thread library provides an API for creating, managing, and synchronizing threads. Three main approaches:
 
-1. **Library entirely in user space** — no kernel support (GNU Pth)
-2. **Library backed by kernel threads** — each library thread maps to a kernel thread (pthreads with NPTL)
-3. **Hybrid** — library manages user threads on top of kernel threads (older Solaris threads)
+1. **Library entirely in user space** â€” no kernel support (GNU Pth)
+2. **Library backed by kernel threads** â€” each library thread maps to a kernel thread (pthreads with NPTL)
+3. **Hybrid** â€” library manages user threads on top of kernel threads (older Solaris threads)
 
 ---
 
@@ -1313,13 +1313,13 @@ FUNCTION pthread_create(tid, attr, start_func, arg):
 
 | Step | Action | T1 State | T2 State | Main State |
 |------|--------|----------|----------|------------|
-| 1 | Main creates T1 | READY | — | RUNNING |
+| 1 | Main creates T1 | READY | â€” | RUNNING |
 | 2 | Main creates T2 | READY | READY | RUNNING |
 | 3 | Main calls `pthread_join(T1)` | RUNNING | READY | **BLOCKED** |
-| 4 | T1 finishes → T1 TERMINATED | TERMINATED | READY | BLOCKED |
+| 4 | T1 finishes â†’ T1 TERMINATED | TERMINATED | READY | BLOCKED |
 | 5 | Thread join unblocks main | TERMINATED | READY | RUNNING |
 | 6 | Main calls `pthread_join(T2)` | TERMINATED | RUNNING | BLOCKED |
-| 7 | T2 finishes → main unblocked | TERMINATED | TERMINATED | RUNNING |
+| 7 | T2 finishes â†’ main unblocked | TERMINATED | TERMINATED | RUNNING |
 
 **C++ Implementation (pthreads C API)**
 
@@ -1412,7 +1412,7 @@ Modern C++ thread support since C++11. Wraps pthreads (or Windows threads) with 
 
 1. Include `<thread>` header
 2. Write a callable (function, lambda, or functor)
-3. Create `std::thread t(func, args...)` — thread starts immediately
+3. Create `std::thread t(func, args...)` â€” thread starts immediately
 4. Call `t.join()` to wait for completion, or `t.detach()` to release
 5. Always join or detach before thread object destructor runs (or `std::terminate()` is called)
 
@@ -1470,7 +1470,7 @@ int main() {
 | Type-safe and portable (POSIX + Windows) | Somewhat verbose for simple tasks |
 | RAII with lock_guard for exception safety | No built-in thread pool |
 | Lambda support makes inline threading natural | Thread destruction rules can surprise beginners |
-| Part of the standard — no external dependencies | No built-in async/await pattern |
+| Part of the standard â€” no external dependencies | No built-in async/await pattern |
 
 **Edge Cases**
 
@@ -1504,7 +1504,7 @@ Python's `threading` module provides thread support with a higher-level interfac
 1. Import the `threading` module
 2. Define a function or callable class
 3. Create a `Thread` object: `t = threading.Thread(target=func, args=(arg,))`
-4. Call `t.start()` — thread begins execution
+4. Call `t.start()` â€” thread begins execution
 5. Optionally call `t.join()` to wait for completion
 
 **Python Implementation**
@@ -1548,7 +1548,7 @@ print(f"Final counter: {counter} (expected: 50000)")
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Very easy to use — simple API | GIL prevents true parallelism for CPU-bound Python code |
+| Very easy to use â€” simple API | GIL prevents true parallelism for CPU-bound Python code |
 | Thread-local storage via `threading.local()` | I/O-bound tasks benefit despite GIL |
 | Built-in synchronization primitives (Lock, RLock, Semaphore, Event, Condition) | Thread lifecycle errors can be silent |
 | Daemon threads for background tasks | No built-in thread pool (use `concurrent.futures`) |
@@ -1559,7 +1559,7 @@ print(f"Final counter: {counter} (expected: 50000)")
 
 2. **I/O-bound is fine**: The GIL is released during I/O operations (`read()`, `write()`, `sleep()`, `select()`). Python threading excels for I/O-bound workloads.
 
-3. **Daemon threads**: A `daemon=True` thread is killed abruptly when the main thread exits — resources may be left in an inconsistent state.
+3. **Daemon threads**: A `daemon=True` thread is killed abruptly when the main thread exits â€” resources may be left in an inconsistent state.
 
 4. **Deadlock with multiple locks**: Acquiring locks in different orders across threads causes deadlock. Use `with lock:` and acquire locks in a consistent global order.
 
@@ -1570,7 +1570,7 @@ print(f"Final counter: {counter} (expected: 50000)")
 
 #### Real-World Analogy
 
-> **A taxi fleet at an airport.** Instead of building a new car for every passenger (create thread per task), the taxi company keeps a fleet of 10 cars ready at the stand (thread pool). Passengers arrive and take the next available taxi. If all taxis are busy, passengers wait. When a taxi returns from a trip, it goes to the back of the queue — ready for the next passenger. No time wasted building cars.
+> **A taxi fleet at an airport.** Instead of building a new car for every passenger (create thread per task), the taxi company keeps a fleet of 10 cars ready at the stand (thread pool). Passengers arrive and take the next available taxi. If all taxis are busy, passengers wait. When a taxi returns from a trip, it goes to the back of the queue â€” ready for the next passenger. No time wasted building cars.
 
 #### Definition
 
@@ -1628,8 +1628,8 @@ Pool: 2 worker threads (W1, W2). Tasks: T1 (2s), T2 (1s), T3 (1s), T4 (2s).
 | t=1 | W2 picks T2 | **T1(2s)** | **T2(1s)** | empty |
 | t=2 | Submit T3 | **T1(2s)** | **T2(1s)** | T3 |
 | t=2 | Submit T4 | **T1(2s)** | **T2(1s)** | T3,T4 |
-| t=3 | T2 done → W2 picks T3 | **T1(2s)** | **T3(1s)** | T4 |
-| t=3 | T1 done → W1 picks T4 | **T4(2s)** | **T3(1s)** | empty |
+| t=3 | T2 done â†’ W2 picks T3 | **T1(2s)** | **T3(1s)** | T4 |
+| t=3 | T1 done â†’ W1 picks T4 | **T4(2s)** | **T3(1s)** | empty |
 | t=4 | T3 done | **T4(2s)** | idle | empty |
 | t=6 | T4 done | idle | idle | empty |
 
@@ -1738,8 +1738,8 @@ print(f"Results: {results}")
 | Operation | Complexity | Why |
 |-----------|------------|-----|
 | Pool initialization | O(P) | Create P worker threads once |
-| Task submission | O(1) amortized | Lock + queue push + signal — queue may resize |
-| Task execution | O(task) | Actual work — no overhead from thread creation |
+| Task submission | O(1) amortized | Lock + queue push + signal â€” queue may resize |
+| Task execution | O(task) | Actual work â€” no overhead from thread creation |
 | Task throughput | O(P) | P workers execute up to P tasks in parallel |
 | Memory (idle pool) | O(P) * stack size | P threads * ~8 MB virtual stack each |
 | Pool shutdown | O(P) | Signal + join all P workers |
@@ -1756,11 +1756,11 @@ print(f"Results: {results}")
 
 #### Edge Cases
 
-1. **Pool sizing**: Too few workers → tasks queue up (underutilization). Too many workers → context switch overhead dominates (CPU thrashing). Rule of thumb: `pool_size = num_cores * (1 + wait_time/service_time)` for I/O-bound, `pool_size = num_cores` for CPU-bound.
+1. **Pool sizing**: Too few workers â†’ tasks queue up (underutilization). Too many workers â†’ context switch overhead dominates (CPU thrashing). Rule of thumb: `pool_size = num_cores * (1 + wait_time/service_time)` for I/O-bound, `pool_size = num_cores` for CPU-bound.
 
-2. **Starvation**: If one task blocks indefinitely (infinite loop, deadlock), it ties up a worker forever → all workers eventually consumed → pool can't make progress. Consider task timeouts or cancellation mechanisms.
+2. **Starvation**: If one task blocks indefinitely (infinite loop, deadlock), it ties up a worker forever â†’ all workers eventually consumed â†’ pool can't make progress. Consider task timeouts or cancellation mechanisms.
 
-3. **Task queue overflow**: If tasks arrive faster than workers can process them, the queue grows indefinitely → memory exhaustion. Use a bounded queue with rejection or backpressure.
+3. **Task queue overflow**: If tasks arrive faster than workers can process them, the queue grows indefinitely â†’ memory exhaustion. Use a bounded queue with rejection or backpressure.
 
 4. **Graceful shutdown**: Workers must finish their current task before exiting. Interrupting a worker mid-task can leave shared state inconsistent. Set a stop flag and allow the current task to complete.
 
@@ -1779,14 +1779,14 @@ If one thread calls `fork()`, the child process should duplicate only the callin
 - If `exec()` is called immediately after fork(), only duplicating the calling thread is sufficient
 - If the child does not call `exec()`, all threads should be duplicated
 
-**Danger:** If a non-forking thread holds a mutex, the mutex is duplicated in the locked state in the child — but the lock-holder thread doesn't exist in the child. The mutex is permanently locked. Solution: call `pthread_atfork()` to register prepare/parent/child handlers.
+**Danger:** If a non-forking thread holds a mutex, the mutex is duplicated in the locked state in the child â€” but the lock-holder thread doesn't exist in the child. The mutex is permanently locked. Solution: call `pthread_atfork()` to register prepare/parent/child handlers.
 
 #### Thread Cancellation
 
 A thread can be **cancelled** before it finishes:
 
 - **Deferred cancellation**: Target thread periodically checks if it should cancel (safe, default). Thread must reach a cancellation point (`pthread_testcancel()`, `read()`, `write()`, `sleep()`, etc.)
-- **Asynchronous cancellation**: Target thread is cancelled immediately (dangerous — could leave resources in inconsistent state, memory leaks)
+- **Asynchronous cancellation**: Target thread is cancelled immediately (dangerous â€” could leave resources in inconsistent state, memory leaks)
 
 ```c
 pthread_cancel(thread_id);  // Request cancellation (deferred by default)
@@ -1809,7 +1809,7 @@ A function is **thread-safe** if it works correctly when called simultaneously b
 1. Use mutexes to protect shared data
 2. Use thread-local storage (`__thread` in C, `thread_local` in C++, `threading.local()` in Python)
 3. Use atomic operations for simple increments/updates
-4. Make functions **reentrant** — rely only on parameters and local variables, not global state
+4. Make functions **reentrant** â€” rely only on parameters and local variables, not global state
 
 **Common non-thread-safe functions:** `strtok()`, `rand()`, `gmtime()`, `ctime()` (they use static buffers). Use reentrant versions: `strtok_r()`, `rand_r()`, `gmtime_r()`, `ctime_r()`.
 
@@ -1821,11 +1821,11 @@ A **race condition** occurs when the behavior of a program depends on the relati
 
 ```
 Thread A: load counter (value = 5)
-Thread B: load counter (value = 5)      ← B loaded before A stored!
+Thread B: load counter (value = 5)      â† B loaded before A stored!
 Thread A: increment (value = 6)
 Thread A: store counter (= 6)
-Thread B: increment (value = 6)          ← should be 7!
-Thread B: store counter (= 6)            ← LOST UPDATE!
+Thread B: increment (value = 6)          â† should be 7!
+Thread B: store counter (= 6)            â† LOST UPDATE!
 ```
 
 **Prevention:** Use mutexes, atomic operations, or lock-free data structures.
@@ -1835,11 +1835,11 @@ Thread B: store counter (= 6)            ← LOST UPDATE!
 
 | Feature | Many-to-One | One-to-One | Many-to-Many | Two-Level |
 |---------|-------------|------------|--------------|-----------|
-| **Mapping** | N user : 1 kernel | 1 user : 1 kernel | N user : M kernel (M ≤ N) | N user : M kernel + bound 1:1 |
+| **Mapping** | N user : 1 kernel | 1 user : 1 kernel | N user : M kernel (M â‰¤ N) | N user : M kernel + bound 1:1 |
 | **Parallelism** | None | Full | Partial (up to M cores) | Full for bound, partial for unbound |
 | **Blocking impact** | All threads block | Only one thread blocks | Threads on same LWP block | Varies by mapping |
-| **Creation speed** | Fastest (~5 μs) | Slow (~100 μs + syscall) | Moderate (fast user + M syscalls) | Moderate |
-| **Context switch** | ~5 μs (user space) | ~50–100 μs (kernel) | ~5 μs (user) + occasional kernel | Varies |
+| **Creation speed** | Fastest (~5 Î¼s) | Slow (~100 Î¼s + syscall) | Moderate (fast user + M syscalls) | Moderate |
+| **Context switch** | ~5 Î¼s (user space) | ~50â€“100 Î¼s (kernel) | ~5 Î¼s (user) + occasional kernel | Varies |
 | **Memory overhead** | Lowest (~8 KB/thread) | Highest (~8 MB/thread) | Medium (M kernel stacks) | Medium-High |
 | **Implementation complexity** | Low | Low | High | Very High |
 | **Scalability (10K threads)** | Excellent | Poor (kernel overload) | Good | Good |
@@ -1856,54 +1856,54 @@ Thread B: store counter (= 6)            ← LOST UPDATE!
 
 #### Q1: What is the difference between a thread and a process?
 
-**Answer:** A process is an independent execution entity with its own address space, resources, and IPC requirements. A thread is a lightweight execution unit within a process that shares the address space with sibling threads. Key differences: threads are cheaper to create (10–100× faster), communicate via shared memory (no IPC needed), and context switching is faster (no TLB flush within same process). However, threads lack protection boundaries — one thread crash kills the entire process.
+**Answer:** A process is an independent execution entity with its own address space, resources, and IPC requirements. A thread is a lightweight execution unit within a process that shares the address space with sibling threads. Key differences: threads are cheaper to create (10â€“100Ã— faster), communicate via shared memory (no IPC needed), and context switching is faster (no TLB flush within same process). However, threads lack protection boundaries â€” one thread crash kills the entire process.
 
 #### Q2: How do you choose the optimal thread pool size?
 
 **Answer:** It depends on the workload type:
 
 - **CPU-bound tasks** (computation-heavy, no waiting): `pool_size = number_of_cores` (or `num_cores + 1` to compensate for page faults)
-- **I/O-bound tasks** (network, disk, database): `pool_size = num_cores * (1 + wait_time / service_time)`. If the I/O wait is 10× the compute time on 8 cores: `8 * (1 + 10) = 88 threads`
+- **I/O-bound tasks** (network, disk, database): `pool_size = num_cores * (1 + wait_time / service_time)`. If the I/O wait is 10Ã— the compute time on 8 cores: `8 * (1 + 10) = 88 threads`
 - **Mixed workload**: Profile with different pool sizes and measure throughput. Start with `num_cores * 2` and tune.
-- **Rule of thumb for web servers**: 200–400 threads for 8 cores with typical I/O workloads
+- **Rule of thumb for web servers**: 200â€“400 threads for 8 cores with typical I/O workloads
 
 **Formula derivation:** For an I/O-bound task, a thread spends `W` seconds waiting and `S` seconds computing. Each core can handle `(W+S)/S` threads without contention. Total: `cores * (W+S)/S = cores * (1 + W/S)`.
 
 #### Q3: What is thread safety? How do you achieve it?
 
 **Answer:** A function or data structure is thread-safe if it behaves correctly when accessed by multiple threads simultaneously. Achieved through:
-1. **Mutex exclusion** — lock shared data before access
-2. **Atomic operations** — hardware-guaranteed indivisible operations (CAS, fetch-and-add)
-3. **Thread-local storage** — each thread has its own copy of data
-4. **Immutable data** — read-only data is inherently thread-safe
-5. **Lock-free data structures** — use atomic operations without mutexes (complex but high-performance)
-6. **Reentrant functions** — no internal static state, only use stack variables and parameters
+1. **Mutex exclusion** â€” lock shared data before access
+2. **Atomic operations** â€” hardware-guaranteed indivisible operations (CAS, fetch-and-add)
+3. **Thread-local storage** â€” each thread has its own copy of data
+4. **Immutable data** â€” read-only data is inherently thread-safe
+5. **Lock-free data structures** â€” use atomic operations without mutexes (complex but high-performance)
+6. **Reentrant functions** â€” no internal static state, only use stack variables and parameters
 
 #### Q4: Explain deadlock and its four necessary conditions (Coffman conditions).
 
 **Answer:** Deadlock occurs when two or more threads are blocked forever, each waiting for a resource the other holds. Four necessary conditions (all must hold):
-1. **Mutual exclusion** — resources cannot be shared
-2. **Hold and wait** — a thread holds resources while waiting for others
-3. **No preemption** — resources cannot be forcibly taken from threads
-4. **Circular wait** — there exists a cycle of threads each waiting for the next
+1. **Mutual exclusion** â€” resources cannot be shared
+2. **Hold and wait** â€” a thread holds resources while waiting for others
+3. **No preemption** â€” resources cannot be forcibly taken from threads
+4. **Circular wait** â€” there exists a cycle of threads each waiting for the next
 
 **Prevention:** Break any one condition (e.g., enforce lock ordering to break circular wait).
 
 #### Q5: What is false sharing? How do you prevent it?
 
-**Answer:** False sharing occurs when two threads modify different variables that reside on the same CPU cache line (typically 64 bytes). The cache coherency protocol invalidates the entire cache line, forcing memory re-reads — even though the threads modify unrelated data. This causes 10–100× performance degradation.
+**Answer:** False sharing occurs when two threads modify different variables that reside on the same CPU cache line (typically 64 bytes). The cache coherency protocol invalidates the entire cache line, forcing memory re-reads â€” even though the threads modify unrelated data. This causes 10â€“100Ã— performance degradation.
 
 **Prevention:** Pad data structures to cache-line boundaries (64-byte alignment). In C++: `alignas(64)` or use `std::hardware_destructive_interference_size`. In C: `__attribute__((aligned(64)))`.
 
 #### Q6: What happens when you call `fork()` in a multithreaded program?
 
 **Answer:** POSIX defines that `fork()` duplicates only the calling thread in the child process. This creates several problems:
-1. Other threads' mutexes are duplicated in locked state — lock-holder thread doesn't exist in child
+1. Other threads' mutexes are duplicated in locked state â€” lock-holder thread doesn't exist in child
 2. Memory locks (`mlockall()`) are inherited but unlock semantics are unclear
 3. `pthread_atfork()` handlers can help: prepare (acquire all locks in parent), parent (release in parent), child (release in child)
 4. If `exec()` follows immediately, only duplicating the calling thread is sufficient
 
-#### Q7: User-level threads vs kernel-level threads — which is better?
+#### Q7: User-level threads vs kernel-level threads â€” which is better?
 
 **Answer:** Neither is universally better; they serve different needs:
 - **User-level**: Best for applications needing fast creation/switching of many threads (10,000+) with cooperative scheduling and no parallelism requirement. Used in legacy systems, library-level threading, some runtime systems.
@@ -1936,7 +1936,7 @@ With 8 cores and 10% serial code: `Speedup = 1 / (0.1 + 0.9/8) = 4.7x`. Even wit
 ### Applications in Real Systems
 
 
-#### Linux (NPTL — Native POSIX Threads Library)
+#### Linux (NPTL â€” Native POSIX Threads Library)
 
 Linux uses the **one-to-one model** via NPTL (Native POSIX Thread Library), introduced in glibc 2.3.2 (Linux kernel 2.6).
 
@@ -1948,12 +1948,12 @@ Linux uses the **one-to-one model** via NPTL (Native POSIX Thread Library), intr
 - Thread group concept: all threads in a process share the same PID (TGID = thread group ID) but have unique TIDs
 
 **Limitations of LinuxThreads (pre-NPTL):**
-- Each thread had a unique PID → signal delivery was broken (signals went to only one PID)
+- Each thread had a unique PID â†’ signal delivery was broken (signals went to only one PID)
 - `getpid()` returned different values in different threads
 - Thread limits were low (due to PID namespace exhaustion)
 
 **NPTL improvements:**
-- Threads share a TGID → signals work correctly
+- Threads share a TGID â†’ signals work correctly
 - `getpid()` returns the same value in all threads of a process
 - Thread limit raised to ~100,000
 - Futex (fast userspace mutex) for efficient synchronization
@@ -1971,7 +1971,7 @@ int main() {
         std::cout << "Thread TID: " << syscall(SYS_gettid)
                   << " PID: " << getpid()
                   << " TGID: " << getpid()
-                  << " (same as PID — one-to-one model)" << std::endl;
+                  << " (same as PID â€” one-to-one model)" << std::endl;
     });
     t.join();
     std::cout << "Main TID: " << syscall(SYS_gettid)
@@ -1987,7 +1987,7 @@ Windows uses the **one-to-one model**. Each Windows thread is a kernel-managed e
 **Key details:**
 - Created via `CreateThread()` kernel32 API
 - Each thread has a `_ETHREAD` (executive thread block) and `_KTHREAD` (kernel thread block)
-- Threads are scheduled by the **Windows Dispatcher** (priority-based, 32 levels: 0–31)
+- Threads are scheduled by the **Windows Dispatcher** (priority-based, 32 levels: 0â€“31)
 - Fiber API allows user-level threading on top of kernel threads (similar to many-to-many)
 - Windows supports **thread pools** natively via `ThreadPool.h` (C++17) or the older `QueueUserWorkItem()`
 
@@ -2026,9 +2026,9 @@ int main() {
 
 Java threads have evolved across JVM implementations:
 
-- **Original JDK 1.1 (Solaris)**: Green threads (user-level, many-to-one) — no parallelism
-- **HotSpot JVM (Linux/Windows)**: Native threads — one-to-one mapping to OS threads
-- **Java 21+ Virtual Threads**: User-level threads (fibers) managed by the JVM — millions of threads possible. When a virtual thread blocks, it "parks" rather than blocking the underlying carrier thread.
+- **Original JDK 1.1 (Solaris)**: Green threads (user-level, many-to-one) â€” no parallelism
+- **HotSpot JVM (Linux/Windows)**: Native threads â€” one-to-one mapping to OS threads
+- **Java 21+ Virtual Threads**: User-level threads (fibers) managed by the JVM â€” millions of threads possible. When a virtual thread blocks, it "parks" rather than blocking the underlying carrier thread.
 
 **Key details:**
 - `java.lang.Thread` wraps an OS thread (pre-Java 21)
@@ -2043,13 +2043,13 @@ import java.util.concurrent.*;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        // Virtual thread — user-level, millions possible
+        // Virtual thread â€” user-level, millions possible
         Thread vt = Thread.startVirtualThread(() -> {
             System.out.println("Virtual thread: " + Thread.currentThread());
         });
         vt.join();
 
-        // Platform thread — OS-backed
+        // Platform thread â€” OS-backed
         Thread pt = new Thread(() -> {
             System.out.println("Platform thread: " + Thread.currentThread());
         });
@@ -2061,11 +2061,11 @@ public class Main {
 
 #### Go Goroutines
 
-Go uses a custom **M:N scheduling model** — M goroutines (user-level) multiplexed onto N OS threads (kernel-level). This is essentially a many-to-many implementation.
+Go uses a custom **M:N scheduling model** â€” M goroutines (user-level) multiplexed onto N OS threads (kernel-level). This is essentially a many-to-many implementation.
 
 **Key details:**
 - Goroutines are user-level threads (lightweight, ~2 KB stack initial)
-- Go runtime creates OS threads (`M`) that run a scheduler (`P` — processor context)
+- Go runtime creates OS threads (`M`) that run a scheduler (`P` â€” processor context)
 - `GOMAXPROCS` controls the number of OS threads used (default: number of CPU cores)
 - Goroutines are scheduled cooperatively and preemptively by the Go runtime
 - Channels provide safe communication between goroutines (CSP model)
@@ -2091,7 +2091,7 @@ func main() {
     var wg sync.WaitGroup
     for i := 0; i < 10; i++ {
         wg.Add(1)
-        go worker(i, &wg)  // goroutine — user-level
+        go worker(i, &wg)  // goroutine â€” user-level
     }
     wg.Wait()
     fmt.Println("All goroutines done.")
@@ -2106,8 +2106,8 @@ func main() {
 | **Thread type** | Kernel | Kernel | Kernel | User (fiber) | User |
 | **Min stack** | ~8 MB VM | ~1 MB | Platform-dependent | ~10 KB | ~2 KB |
 | **Max threads** | ~100K | ~16K per process | ~16K | Millions | Millions |
-| **Creation speed** | ~100 μs | ~150 μs | ~150 μs | ~1 μs | ~0.2 μs |
-| **Context switch** | ~50–100 μs | ~50–100 μs | ~50–100 μs | ~0.1 μs | ~0.1 μs |
+| **Creation speed** | ~100 Î¼s | ~150 Î¼s | ~150 Î¼s | ~1 Î¼s | ~0.2 Î¼s |
+| **Context switch** | ~50â€“100 Î¼s | ~50â€“100 Î¼s | ~50â€“100 Î¼s | ~0.1 Î¼s | ~0.1 Î¼s |
 | **Scheduling** | CFS (kernel) | Priority (kernel) | CFS (kernel) | Work-stealing (JVM) | Work-stealing (runtime) |
 | **Language integration** | C/POSIX | Win32 API | JVM bytecode | JVM | Native (Go compiler) |
 | **Best for** | System programming | Desktop apps | Enterprise apps | High-concurrency servers | Cloud-native services |
@@ -2196,7 +2196,7 @@ Even with infinite cores, the speedup cannot exceed 1/S = 10x.
 | 8 | 5.9x | 4.7x | 2.9x | 1.8x |
 | 16 | 9.1x | 6.4x | 3.4x | 1.9x |
 | 64 | 13.6x | 8.3x | 3.8x | 2.0x |
-| ∞ | 20.0x | 10.0x | 4.0x | 2.0x |
+| âˆž | 20.0x | 10.0x | 4.0x | 2.0x |
 
 ### Example 3: Producer-Consumer with Condition Variables
 
@@ -2273,7 +2273,7 @@ int main() {
 ---
 
 > [TIP]
-> Threads share the **same address space** — communication between threads is trivial (just read/write shared variables), but this introduces synchronization challenges. Thread creation is 10-100x faster than process creation.
+> Threads share the **same address space** â€” communication between threads is trivial (just read/write shared variables), but this introduces synchronization challenges. Thread creation is 10-100x faster than process creation.
 
 > [WARNING]
 > User-level threads cannot take advantage of multiple CPU cores because the kernel sees only one process. Use kernel-level threads (one-to-one model) for true parallelism on multi-core systems.
@@ -2291,10 +2291,10 @@ int main() {
 | Feature | User-Level Threads | Kernel-Level Threads |
 |-------|------------------|--------------------|
 | Managed by | Thread library (user space) | OS kernel |
-| Context Switch | Fast (no system call) ~5 μs | Slower (system call) ~50–100 μs |
+| Context Switch | Fast (no system call) ~5 Î¼s | Slower (system call) ~50â€“100 Î¼s |
 | Parallelism | None (kernel sees one process) | Full (kernel schedules each thread) |
-| Blocking | One thread blocks → all block | Independent blocking |
-| Creation time | ~5–10 μs | ~50–200 μs |
+| Blocking | One thread blocks â†’ all block | Independent blocking |
+| Creation time | ~5â€“10 Î¼s | ~50â€“200 Î¼s |
 | Memory per thread | ~8 KB stack + TCB | ~8 MB user stack + ~16 KB kernel stack |
 | Multi-core | Cannot utilize | Full utilization |
 | Max threads | Thousands (heap-limited) | Thousands (kernel-limited) |
@@ -2304,7 +2304,7 @@ int main() {
 
 | Feature | Many-to-One | One-to-One | Many-to-Many | Two-Level |
 |---------|-------------|------------|--------------|-----------|
-| User : Kernel | N : 1 | 1 : 1 | N : M (M ≤ N) | N : M + 1:1 bound |
+| User : Kernel | N : 1 | 1 : 1 | N : M (M â‰¤ N) | N : M + 1:1 bound |
 | Parallelism | None | Full | Partial | Full (bound) |
 | Blocking | All block | One blocks | LWP group blocks | Varies |
 | Complexity | Low | Low | High | Very High |
@@ -2326,12 +2326,12 @@ int main() {
 | **Deadlock** | Two or more threads blocked forever waiting for each other's resources |
 | **False Sharing** | Performance degradation when threads modify different variables on the same cache line |
 | **Amdahl's Law** | Formula for theoretical speedup from parallelization: `1/(S + (1-S)/N)` |
-| **TCB** | Thread Control Block — kernel data structure containing thread state, registers, stack pointer |
-| **LWP** | LightWeight Process — kernel thread used as an intermediate entity in many-to-many models |
-| **NPTL** | Native POSIX Threads Library — Linux's high-performance threading implementation |
-| **GIL** | Global Interpreter Lock — Python's mechanism that serializes bytecode execution |
-| **Futex** | Fast userspace mutex — Linux's efficient hybrid user/kernel synchronization primitive |
-| **Pthreads** | POSIX threads API — portable threading interface on Unix-like systems |
+| **TCB** | Thread Control Block â€” kernel data structure containing thread state, registers, stack pointer |
+| **LWP** | LightWeight Process â€” kernel thread used as an intermediate entity in many-to-many models |
+| **NPTL** | Native POSIX Threads Library â€” Linux's high-performance threading implementation |
+| **GIL** | Global Interpreter Lock â€” Python's mechanism that serializes bytecode execution |
+| **Futex** | Fast userspace mutex â€” Linux's efficient hybrid user/kernel synchronization primitive |
+| **Pthreads** | POSIX threads API â€” portable threading interface on Unix-like systems |
 | **Fiber** | User-level thread that is cooperatively scheduled, typically manually yielded |
 | **Goroutine** | Go language's lightweight user-level thread managed by the Go runtime |
 | **Virtual Thread** | Java 21+ user-level thread (Project Loom) for massive concurrency |
@@ -2423,15 +2423,15 @@ int main() {
 ## Summary
 
 - A **thread** is a lightweight unit of CPU execution sharing address space with sibling threads
-- **Why threads matter**: Responsiveness, resource sharing, economy, scalability — they make concurrent programming practical
+- **Why threads matter**: Responsiveness, resource sharing, economy, scalability â€” they make concurrent programming practical
 - **User-level threads** are fast (no kernel involvement) but cannot utilize multiple cores or handle blocking calls well
 - **Kernel-level threads** support parallelism and independent blocking but have higher creation/switch overhead
 - **Four threading models**: Many-to-One (simple, no parallelism), One-to-One (full parallelism, expensive), Many-to-Many (flexible, complex), Two-Level (hybrid, legacy)
-- **Thread pools** amortize creation cost and bound resource usage — size based on workload type
+- **Thread pools** amortize creation cost and bound resource usage â€” size based on workload type
 - **pthreads** is the standard POSIX API; **std::thread** is C++11's portable wrapper; **Python threading** is easy but GIL-limited for CPU-bound work
 - **Interview essentials**: thread vs process, pool sizing formula, deadlock conditions, Amdahl's Law, race conditions
 - **Real-world**: Linux uses NPTL (one-to-one), Windows uses one-to-one, Java evolved from green threads to native to virtual threads, Go uses M:N goroutine scheduling
-- **Amdahl's Law** governs the theoretical speedup: `1/(S + (1-S)/N)` — the serial portion is the bottleneck
+- **Amdahl's Law** governs the theoretical speedup: `1/(S + (1-S)/N)` â€” the serial portion is the bottleneck
 - **Threading issues**: fork() in threaded programs is dangerous, cancellation can leak resources, signal handling requires care
 
 ---
@@ -2522,7 +2522,7 @@ class ThreadPool {
           workerLoads[w] -= minWork;
           if (workerLoads[w] === 0) {
             this.completed++;
-            this.log.push(`[t=${this.time}] Worker ${w} completed task — ${this.completed}/${this.totalTasks}`);
+            this.log.push(`[t=${this.time}] Worker ${w} completed task â€” ${this.completed}/${this.totalTasks}`);
           }
         }
       }
@@ -2639,7 +2639,7 @@ class RaceConditionDetector {
       lostUpdates,
       details: raceDetected
         ? `${lostUpdates} increments lost due to race condition`
-        : 'No data race — all increments preserved'
+        : 'No data race â€” all increments preserved'
     }, null, 2);
   }
 }
@@ -2703,10 +2703,10 @@ main();
 
 ## Further Reading
 
-- **Silberschatz, Galvin, Gagne** — Operating System Concepts (Chapter 4: Threads & Concurrency)
-- **Tanenbaum** — Modern Operating Systems (Chapter 2: Processes and Threads)
-- **Goetz et al.** — Java Concurrency in Practice
-- **Williams** — C++ Concurrency in Action
+- **Silberschatz, Galvin, Gagne** â€” Operating System Concepts (Chapter 4: Threads & Concurrency)
+- **Tanenbaum** â€” Modern Operating Systems (Chapter 2: Processes and Threads)
+- **Goetz et al.** â€” Java Concurrency in Practice
+- **Williams** â€” C++ Concurrency in Action
 - **Linux man pages**: `pthread_create(3)`, `clone(2)`, `futex(2)`, `sched(7)`
 - **NPTL Design**: https://www.kernel.org/doc/ols/2002/ols2002-pages-286-296.pdf
 - **Amdahl's Law**: https://en.wikipedia.org/wiki/Amdahl%27s_law

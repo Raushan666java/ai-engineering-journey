@@ -1,4 +1,4 @@
-# Chapter 2: Arrays
+﻿# Chapter 2: Arrays
 
 > **Previous:** [Chapter 1: Complexity Analysis](./01-complexity.md) | **Next:** [Singly Linked List](./03-singly-linked-list.md)
 
@@ -12,16 +12,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-structures/02-arrays/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/data-structures/02-arrays/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/02-arrays/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/data-structures/02-arrays/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-structures/02-arrays/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/data-structures/02-arrays/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/02-arrays/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/data-structures/02-arrays/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-structures/02-arrays/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/data-structures/02-arrays/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/02-arrays/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/data-structures/02-arrays/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -30,7 +30,7 @@
 
 ## Why Arrays Matter
 
-Imagine a row of cinema seats numbered 0 to n-1. Each seat holds exactly one person — just like an array slot holds one element. You can instantly tell anyone to "go to seat 7" (O(1) random access), but if a new person needs to sit in seat 2, everyone from seat 2 onward must shift right by one (O(n) insertion). If someone leaves seat 4, everyone to the right shifts left (O(n) deletion). This trade-off — instant lookup vs. costly insertion/deletion — is the defining character of arrays and the reason they power everything from image buffers to dynamic language runtimes.
+Imagine a row of cinema seats numbered 0 to n-1. Each seat holds exactly one person â€” just like an array slot holds one element. You can instantly tell anyone to "go to seat 7" (O(1) random access), but if a new person needs to sit in seat 2, everyone from seat 2 onward must shift right by one (O(n) insertion). If someone leaves seat 4, everyone to the right shifts left (O(n) deletion). This trade-off â€” instant lookup vs. costly insertion/deletion â€” is the defining character of arrays and the reason they power everything from image buffers to dynamic language runtimes.
 
 ## Chapter at a Glance
 
@@ -38,7 +38,7 @@ Imagine a row of cinema seats numbered 0 to n-1. Each seat holds exactly one per
 |-------|-------------|-------------------|
 | Static Arrays | Contiguous memory block, fixed size at allocation | Use when element count is known and constant |
 | Dynamic Arrays | Grows by doubling when capacity exhausted | Default choice for general-purpose sequential data |
-| Two-Pointer Technique | Two indices scan from opposite ends | Reduces pair-sum from O(n²) to O(n) on sorted arrays |
+| Two-Pointer Technique | Two indices scan from opposite ends | Reduces pair-sum from O(nÂ²) to O(n) on sorted arrays |
 | 2D Arrays / Matrices | Row-major or column-major storage | Row-major traversal is cache-friendly in C/C++ |
 | Prefix Sums | Precomputed running total for O(1) range queries | Essential for repeated subarray-sum problems |
 | Sliding Window | Expand/contract window over contiguous elements | Solves max subarray and substring problems in O(n) |
@@ -62,10 +62,10 @@ flowchart LR
 
 
 A **vending machine** is an array of slots. Each slot has a fixed position (index 0, 1, 2, ...) and stores one item.
-- **Access**: Press B3 → instantly get the item at slot B3 → O(1)
-- **Search**: Look at each slot until you find a Sprite → O(n)
-- **Insert**: Staff adds a new item at position 2 — everything from 2 onward gets shifted right → O(n)
-- **Delete**: An item is sold from position 4 — everything from 4 onward shifts left → O(n)
+- **Access**: Press B3 â†’ instantly get the item at slot B3 â†’ O(1)
+- **Search**: Look at each slot until you find a Sprite â†’ O(n)
+- **Insert**: Staff adds a new item at position 2 â€” everything from 2 onward gets shifted right â†’ O(n)
+- **Delete**: An item is sold from position 4 â€” everything from 4 onward shifts left â†’ O(n)
 
 ### Definition
 
@@ -91,13 +91,13 @@ The **Array ADT** is a collection of elements of the same type stored in contigu
 
 ```
 ALGORITHM read(arr, i)
-    IF i < 0 OR i ≥ length(arr) THEN
+    IF i < 0 OR i â‰¥ length(arr) THEN
         THROW IndexOutOfBounds
     RETURN arr[i]
 
 ALGORITHM insert(arr, i, val, n, capacity)
     // n = current size, capacity = allocated size
-    IF n ≥ capacity THEN
+    IF n â‰¥ capacity THEN
         THROW Overflow
     IF i < 0 OR i > n THEN
         THROW IndexOutOfBounds
@@ -107,7 +107,7 @@ ALGORITHM insert(arr, i, val, n, capacity)
     n = n + 1
 
 ALGORITHM delete(arr, i, n)
-    IF i < 0 OR i ≥ n THEN
+    IF i < 0 OR i â‰¥ n THEN
         THROW IndexOutOfBounds
     FOR j = i TO n-2:
         arr[j] = arr[j+1]
@@ -117,25 +117,25 @@ ALGORITHM delete(arr, i, n)
 ### Step-by-Step Dry Run
 
 
-**Insert** — Insert value 25 at index 2 in arr = [10, 20, 30, 40, 50], n=5, capacity=6
+**Insert** â€” Insert value 25 at index 2 in arr = [10, 20, 30, 40, 50], n=5, capacity=6
 
 | Step | Operation | Array State | n |
 |------|-----------|-------------|---|
 | 0 | Initial | [10, 20, 30, 40, 50, _] | 5 |
-| 1 | Shift j=5→2 : arr[5]=arr[4] | [10, 20, 30, 40, 50, 50] | 5 |
-| 2 | Shift j=4→2 : arr[4]=arr[3] | [10, 20, 30, 40, 40, 50] | 5 |
-| 3 | Shift j=3→2 : arr[3]=arr[2] | [10, 20, 30, 30, 40, 50] | 5 |
+| 1 | Shift j=5â†’2 : arr[5]=arr[4] | [10, 20, 30, 40, 50, 50] | 5 |
+| 2 | Shift j=4â†’2 : arr[4]=arr[3] | [10, 20, 30, 40, 40, 50] | 5 |
+| 3 | Shift j=3â†’2 : arr[3]=arr[2] | [10, 20, 30, 30, 40, 50] | 5 |
 | 4 | arr[2] = 25 | [10, 20, 25, 30, 40, 50] | 5 |
 | 5 | n = n + 1 | [10, 20, 25, 30, 40, 50] | 6 |
 
-**Delete** — Delete element at index 1 from arr = [10, 20, 30, 40, 50], n=5
+**Delete** â€” Delete element at index 1 from arr = [10, 20, 30, 40, 50], n=5
 
 | Step | Operation | Array State | n |
 |------|-----------|-------------|---|
 | 0 | Initial | [10, 20, 30, 40, 50] | 5 |
-| 1 | Shift j=1→3 : arr[1]=arr[2] | [10, 30, 30, 40, 50] | 5 |
-| 2 | Shift j=2→3 : arr[2]=arr[3] | [10, 30, 40, 40, 50] | 5 |
-| 3 | Shift j=3→3 : arr[3]=arr[4] | [10, 30, 40, 50, 50] | 5 |
+| 1 | Shift j=1â†’3 : arr[1]=arr[2] | [10, 30, 30, 40, 50] | 5 |
+| 2 | Shift j=2â†’3 : arr[2]=arr[3] | [10, 30, 40, 40, 50] | 5 |
+| 3 | Shift j=3â†’3 : arr[3]=arr[4] | [10, 30, 40, 50, 50] | 5 |
 | 4 | n = n - 1 | [10, 30, 40, 50, 50] | 4 |
 
 ### C++ Implementation
@@ -335,12 +335,12 @@ public class ArrayADT {
 }
 ```
 
-### Complexity Analysis — Why?
+### Complexity Analysis â€” Why?
 
 
 | Operation | Time | Space | Why? |
 |-----------|------|-------|------|
-| `read(i)` | O(1) | O(1) | Address computed directly as base + i × sizeof(element). No loops. |
+| `read(i)` | O(1) | O(1) | Address computed directly as base + i Ã— sizeof(element). No loops. |
 | `update(i, val)` | O(1) | O(1) | Same direct-address computation as read. |
 | `search(val)` | O(n) | O(1) | Worst case: val at last index or absent; must visit all n elements. |
 | `insert(i, val)` | O(n) | O(1) | Worst case (i=0): all n elements shift right by 1. |
@@ -352,7 +352,7 @@ public class ArrayADT {
 | Advantages | Disadvantages |
 |------------|---------------|
 | O(1) random access by index | Fixed capacity (static) or amortized-cost resize (dynamic) |
-| Excellent cache locality — contiguous memory | O(n) insertion/deletion in middle |
+| Excellent cache locality â€” contiguous memory | O(n) insertion/deletion in middle |
 | Minimal memory overhead (no pointers) | O(n) search in unsorted array |
 | Simple, familiar interface | Size must be known or guessable at allocation |
 | Language-native in C/C++/Java/Python | Wasted space when capacity > size (dynamic) |
@@ -360,14 +360,14 @@ public class ArrayADT {
 ### Edge Cases
 
 
-1. **Empty array** (n = 0) — read/delete/search on empty array throws IndexOutOfBounds or returns -1
-2. **Single element** (n = 1) — insert at end works, delete at 0 leaves empty array
-3. **Full array** (n = capacity) — insert raises overflow; resize needed in dynamic arrays
-4. **Index out of bounds** — insert i &lt; 0 or i &gt; n, delete/read i &lt; 0 or i &gt;= n
-5. **Insert at end** (i = n) — valid, no elements shift; best-case insertion
-6. **Insert at front** (i = 0) — worst case, all n elements shift right
-7. **Delete from end** (i = n-1) — valid, no elements shift
-8. **Duplicate values** — search returns first match; insertion creates duplicates
+1. **Empty array** (n = 0) â€” read/delete/search on empty array throws IndexOutOfBounds or returns -1
+2. **Single element** (n = 1) â€” insert at end works, delete at 0 leaves empty array
+3. **Full array** (n = capacity) â€” insert raises overflow; resize needed in dynamic arrays
+4. **Index out of bounds** â€” insert i &lt; 0 or i &gt; n, delete/read i &lt; 0 or i &gt;= n
+5. **Insert at end** (i = n) â€” valid, no elements shift; best-case insertion
+6. **Insert at front** (i = 0) â€” worst case, all n elements shift right
+7. **Delete from end** (i = n-1) â€” valid, no elements shift
+8. **Duplicate values** â€” search returns first match; insertion creates duplicates
 
 ---
 
@@ -392,16 +392,16 @@ int* arr2 = new int[20]; // Heap-allocated, fixed at 20
 ### Dynamic Array
 
 
-A dynamic array (also called *resizeable array*, *vector*, *ArrayList*) starts with a small capacity and grows by a **growth factor** (typically ×2) when full.
+A dynamic array (also called *resizeable array*, *vector*, *ArrayList*) starts with a small capacity and grows by a **growth factor** (typically Ã—2) when full.
 
 **Growth Pattern (capacity doubling):**
 
 | Insertion # | Size (n) | Capacity | Resize Cost |
 |------------|---------|----------|-------------|
-| 1 | 1 | 1 | — |
+| 1 | 1 | 1 | â€” |
 | 2 | 2 | 2 | Copy 1 element |
 | 3 | 3 | 4 | Copy 2 elements |
-| 4 | 4 | 4 | — |
+| 4 | 4 | 4 | â€” |
 | 5 | 5 | 8 | Copy 4 elements |
 | ... | ... | ... | ... |
 | 9 | 9 | 16 | Copy 8 elements |
@@ -410,9 +410,9 @@ A dynamic array (also called *resizeable array*, *vector*, *ArrayList*) starts w
 
 
 Total copies after n insertions (where n = 2^k + 1):
-1 + 2 + 4 + 8 + ... + 2^k = 2^(k+1) - 1 ≈ 2n
+1 + 2 + 4 + 8 + ... + 2^k = 2^(k+1) - 1 â‰ˆ 2n
 
-**Amortized cost per insertion** = Total work / n ≈ 2n / n = **O(1)**
+**Amortized cost per insertion** = Total work / n â‰ˆ 2n / n = **O(1)**
 
 ### C++ Implementation (std::vector behavior)
 
@@ -558,7 +558,7 @@ public class DynamicArray<T> {
 }
 ```
 
-### Static vs Dynamic — Comparison
+### Static vs Dynamic â€” Comparison
 
 
 | Feature | Static Array | Dynamic Array |
@@ -571,12 +571,12 @@ public class DynamicArray<T> {
 | Memory overhead | None | cap - n unused slots |
 | Use case | Known, constant size | Unknown or growing data |
 
-### Complexity — Why?
+### Complexity â€” Why?
 
 
-- **Static array: Access O(1)** — arithmetic: base + i * sizeof(T), one multiplication, one addition.
-- **Dynamic array: push_back amortized O(1)** — the rare O(n) resize cost is spread across all insertions. Each element is copied at most log₂(n) times during its lifetime.
-- **Dynamic array: pop_back O(1)** — just decrement n, no resize (some implementations shrink at cap/4).
+- **Static array: Access O(1)** â€” arithmetic: base + i * sizeof(T), one multiplication, one addition.
+- **Dynamic array: push_back amortized O(1)** â€” the rare O(n) resize cost is spread across all insertions. Each element is copied at most logâ‚‚(n) times during its lifetime.
+- **Dynamic array: pop_back O(1)** â€” just decrement n, no resize (some implementations shrink at cap/4).
 
 ### Advantages & Disadvantages
 
@@ -594,7 +594,7 @@ public class DynamicArray<T> {
 - **Empty dynamic array**: push_back works (if cap=0, resize to 1); pop_back throws
 - **Single element**: push_back triggers first resize; pop_back leaves empty
 - **Very large growth**: capacity doubling can cause memory exhaustion (growth factor 1.5 is more memory-efficient)
-- **Shrinking**: Repeated pop_back does not reduce capacity — some implementations shrink at n ≤ cap/4
+- **Shrinking**: Repeated pop_back does not reduce capacity â€” some implementations shrink at n â‰¤ cap/4
 
 ---
 
@@ -613,8 +613,8 @@ public class DynamicArray<T> {
 Insert value `val` at position `pos`, shifting all elements from `pos` to `n-1` right by one.
 
 **Algorithm Steps:**
-1. Check if array is full (n ≥ capacity) — if so, report overflow
-2. Check if pos is valid (0 ≤ pos ≤ n) — if not, report out of bounds
+1. Check if array is full (n â‰¥ capacity) â€” if so, report overflow
+2. Check if pos is valid (0 â‰¤ pos â‰¤ n) â€” if not, report out of bounds
 3. Shift all elements from index n-1 down to pos by one position right
 4. Place val at arr[pos]
 5. Increment n
@@ -622,7 +622,7 @@ Insert value `val` at position `pos`, shifting all elements from `pos` to `n-1` 
 **Pseudocode:**
 ```
 ALGORITHM insert(arr, n, capacity, pos, val)
-    IF n ≥ capacity THEN
+    IF n â‰¥ capacity THEN
         PRINT "Array full"
         RETURN
     IF pos < 0 OR pos > n THEN
@@ -651,8 +651,8 @@ ALGORITHM insert(arr, n, capacity, pos, val)
 Remove element at position `pos`, shifting all elements from `pos+1` to `n-1` left by one.
 
 **Algorithm Steps:**
-1. Check if array is empty — if so, report underflow
-2. Check if pos is valid (0 ≤ pos &lt; n) — if not, report out of bounds
+1. Check if array is empty â€” if so, report underflow
+2. Check if pos is valid (0 â‰¤ pos &lt; n) â€” if not, report out of bounds
 3. Shift all elements from pos+1 to n-1 by one position left
 4. Decrement n
 
@@ -662,7 +662,7 @@ ALGORITHM delete(arr, n, pos)
     IF n == 0 THEN
         PRINT "Array empty"
         RETURN NULL
-    IF pos < 0 OR pos ≥ n THEN
+    IF pos < 0 OR pos â‰¥ n THEN
         PRINT "Invalid position"
         RETURN NULL
     val = arr[pos]
@@ -832,7 +832,7 @@ public class ArrayOps {
 }
 ```
 
-### Complexity — Why?
+### Complexity â€” Why?
 
 
 | Operation | Time | Space | Why |
@@ -856,13 +856,13 @@ public class ArrayOps {
 ### Edge Cases
 
 
-- **Insert at n (end)**: arr[n] = val, n++, O(1) — simplest case
+- **Insert at n (end)**: arr[n] = val, n++, O(1) â€” simplest case
 - **Insert at 0 (front)**: worst case, all n shift right
 - **Delete at n-1 (last)**: just n--, O(1)
 - **Insert into empty array** (n=0): pos must be 0; arr[0] = val
 - **Delete from single-element array**: n becomes 0
-- **Insert when n = capacity**: overflow — caller must resize first
-- **Delete invalid index**: pos ≥ n or pos &lt; 0 → throw/return error
+- **Insert when n = capacity**: overflow â€” caller must resize first
+- **Delete invalid index**: pos â‰¥ n or pos &lt; 0 â†’ throw/return error
 
 ---
 
@@ -871,19 +871,19 @@ public class ArrayOps {
 ### Real-World Analogy
 
 
-A **revolving door** has four compartments. When the door rotates by one position, what was in compartment 0 moves to compartment 1, 1→2, 2→3, 3→0. Rotating an array works the same way: elements cycle around.
+A **revolving door** has four compartments. When the door rotates by one position, what was in compartment 0 moves to compartment 1, 1â†’2, 2â†’3, 3â†’0. Rotating an array works the same way: elements cycle around.
 
 ### Problem
 
 
 Given an array `arr` of size n and integer `k`, rotate the array **left** by k positions.
-- Left rotation by 1: `[1,2,3,4,5]` → `[2,3,4,5,1]`
+- Left rotation by 1: `[1,2,3,4,5]` â†’ `[2,3,4,5,1]`
 - Left rotation by k is equivalent to left rotation by k % n
 
-### Algorithm (Reversal Method — O(n) time, O(1) space)
+### Algorithm (Reversal Method â€” O(n) time, O(1) space)
 
 
-1. k = k % n (handle k ≥ n)
+1. k = k % n (handle k â‰¥ n)
 2. Reverse the first k elements (0 to k-1)
 3. Reverse the remaining n-k elements (k to n-1)
 4. Reverse the entire array (0 to n-1)
@@ -921,19 +921,19 @@ Rotate left by k=3, arr=[1, 2, 3, 4, 5, 6, 7], n=7, k=3
 
 **Reversal Step 1 in detail (reverse 0..2):**
 
-| i | j | Swap arr[i]↔arr[j] | Array |
+| i | j | Swap arr[i]â†”arr[j] | Array |
 |---|---|--------------------|-------|
-| 0 | 2 | 1 ↔ 3 | **[3**, 2, **1**, 4, 5, 6, 7] |
-| 1 | 1 | (i≥j, stop) | [3, 2, 1, 4, 5, 6, 7] |
+| 0 | 2 | 1 â†” 3 | **[3**, 2, **1**, 4, 5, 6, 7] |
+| 1 | 1 | (iâ‰¥j, stop) | [3, 2, 1, 4, 5, 6, 7] |
 
 **Reversal Step 3 in detail (reverse 0..6):**
 
-| i | j | Swap arr[i]↔arr[j] | Array |
+| i | j | Swap arr[i]â†”arr[j] | Array |
 |---|---|--------------------|-------|
-| 0 | 6 | 3 ↔ 4 | [**4**, 2, 1, 7, 6, 5, **3**] |
-| 1 | 5 | 2 ↔ 5 | [4, **5**, 1, 7, 6, **2**, 3] |
-| 2 | 4 | 1 ↔ 6 | [4, 5, **6**, 7, **1**, 2, 3] |
-| 3 | 3 | (i≥j, stop) | [4, 5, 6, 7, 1, 2, 3] ✓ |
+| 0 | 6 | 3 â†” 4 | [**4**, 2, 1, 7, 6, 5, **3**] |
+| 1 | 5 | 2 â†” 5 | [4, **5**, 1, 7, 6, **2**, 3] |
+| 2 | 4 | 1 â†” 6 | [4, 5, **6**, 7, **1**, 2, 3] |
+| 3 | 3 | (iâ‰¥j, stop) | [4, 5, 6, 7, 1, 2, 3] âœ“ |
 
 ### C++ Implementation
 
@@ -1058,12 +1058,12 @@ public class ArrayRotation {
 }
 ```
 
-### Complexity — Why?
+### Complexity â€” Why?
 
 
 | Approach | Time | Space | Why |
 |----------|------|-------|-----|
-| Brute (shift 1 by 1, k times) | O(n×k) | O(1) | Each of k rotations shifts n elements |
+| Brute (shift 1 by 1, k times) | O(nÃ—k) | O(1) | Each of k rotations shifts n elements |
 | Extra array | O(n) | O(n) | Copy to new array at rotated positions |
 | **Reversal** | **O(n)** | **O(1)** | Each element is swapped exactly twice |
 | Juggling (GCD) | O(n) | O(1) | Cycle decomposition; tricky to implement |
@@ -1075,8 +1075,8 @@ The reversal method is optimal: each element is visited and swapped exactly twic
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| O(n) time, O(1) space — optimal | Not stable (relative order within segments is reversed, then restored) |
-| Elegant — three lines of logic | Modulo arithmetic complexity for beginners |
+| O(n) time, O(1) space â€” optimal | Not stable (relative order within segments is reversed, then restored) |
+| Elegant â€” three lines of logic | Modulo arithmetic complexity for beginners |
 | Works in-place without extra array | Left and right rotation are inverses; easy to confuse |
 
 ### Edge Cases
@@ -1084,7 +1084,7 @@ The reversal method is optimal: each element is visited and swapped exactly twic
 
 - **k = 0**: no rotation, array unchanged
 - **k = n**: rotation by full size returns original array (k % n = 0)
-- **k > n**: k % n handles it; e.g., k = 10, n = 7 → k = 3
+- **k > n**: k % n handles it; e.g., k = 10, n = 7 â†’ k = 3
 - **Empty array** (n = 0): return immediately, nothing to rotate
 - **Single element** (n = 1): any k returns same array
 - **Negative k**: treat as right rotation = left rotation by n - |k|
@@ -1096,14 +1096,14 @@ The reversal method is optimal: each element is visited and swapped exactly twic
 ### Real-World Analogy
 
 
-A **deck of cards** held face-down. You flip the entire deck: the top card becomes the bottom, the second becomes second-last, etc. Array reversal is exactly this — mirror the array around its center.
+A **deck of cards** held face-down. You flip the entire deck: the top card becomes the bottom, the second becomes second-last, etc. Array reversal is exactly this â€” mirror the array around its center.
 
 ### Algorithm (Two-Pointer Swap)
 
 
 1. Initialize left = 0, right = n - 1
 2. While left &lt; right: swap arr[left] and arr[right], then left++, right--
-3. When left ≥ right, stop (middle element stays in place for odd n)
+3. When left â‰¥ right, stop (middle element stays in place for odd n)
 
 ### Pseudocode
 
@@ -1128,16 +1128,16 @@ Reverse arr = [1, 2, 3, 4, 5, 6]
 | 0 | 0 | 5 | 1 | 6 | [**6**, 2, 3, 4, 5, **1**] |
 | 1 | 1 | 4 | 2 | 5 | [6, **5**, 3, 4, **2**, 1] |
 | 2 | 2 | 3 | 3 | 4 | [6, 5, **4**, **3**, 2, 1] |
-| 3 | 3 | 2 | — | — | Stop (left ≥ right) |
+| 3 | 3 | 2 | â€” | â€” | Stop (left â‰¥ right) |
 
 Result: [6, 5, 4, 3, 2, 1]
 
-**Odd-length case** — Reverse arr = [1, 2, 3, 4, 5]
+**Odd-length case** â€” Reverse arr = [1, 2, 3, 4, 5]
 
 | Step | left | right | Swap | Array |
 |------|------|-------|------|-------|
-| 0 | 0 | 4 | 1↔5 | [**5**, 2, 3, 4, **1**] |
-| 1 | 1 | 3 | 2↔4 | [5, **4**, 3, **2**, 1] |
+| 0 | 0 | 4 | 1â†”5 | [**5**, 2, 3, 4, **1**] |
+| 1 | 1 | 3 | 2â†”4 | [5, **4**, 3, **2**, 1] |
 | 2 | 2 | 2 | Stop | [5, 4, 3, 2, 1] |
 
 Middle element (3) stays in place.
@@ -1223,7 +1223,7 @@ public class ArrayReverse {
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| O(n) time, O(1) space — optimal | Modifies input array (in-place) |
+| O(n) time, O(1) space â€” optimal | Modifies input array (in-place) |
 | Simple, intuitive logic | Does not work on singly linked lists (bidirectional needed) |
 | Cache-friendly sequential access | Must reverse entire array; no partial-reverse shortcut |
 
@@ -1250,7 +1250,7 @@ A **cash register receipt tape** shows running totals. If you want to know how m
 
 The **prefix sum array** `prefix` is defined as:
 - `prefix[0] = arr[0]`
-- `prefix[i] = prefix[i-1] + arr[i]` for i ≥ 1
+- `prefix[i] = prefix[i-1] + arr[i]` for i â‰¥ 1
 
 Subarray sum from `l` to `r`:
 - `sum(l, r) = prefix[r] - prefix[l-1]` (if l > 0)
@@ -1298,10 +1298,10 @@ Build prefix sum for arr = [3, 1, 4, 1, 5, 9, 2, 6]
 | 7 | 6 | prefix[7] = 25 + 6 = 31 | [3, 4, 8, 9, 14, 23, 25, 31] |
 
 **Query: Sum of subarray [2, 5]** = arr[2] + arr[3] + arr[4] + arr[5] = 4 + 1 + 5 + 9 = 19
-= prefix[5] - prefix[1] = 23 - 4 = 19 ✓
+= prefix[5] - prefix[1] = 23 - 4 = 19 âœ“
 
 **Query: Sum of subarray [0, 4]** = arr[0..4] = 3 + 1 + 4 + 1 + 5 = 14
-= prefix[4] = 14 ✓
+= prefix[4] = 14 âœ“
 
 ### C++ Implementation
 
@@ -1391,7 +1391,7 @@ public class PrefixSum {
 }
 ```
 
-### Complexity — Why?
+### Complexity â€” Why?
 
 
 | Operation | Time | Space | Why |
@@ -1400,7 +1400,7 @@ public class PrefixSum {
 | Range sum query | O(1) | O(1) | Single subtraction prefix[r] - prefix[l-1] |
 | Naive range sum | O(n) | O(1) | Loop from l to r each time |
 
-Without prefix sums, each range query costs O(n). For q queries, total = O(n×q). With prefix sums: O(n + q).
+Without prefix sums, each range query costs O(n). For q queries, total = O(nÃ—q). With prefix sums: O(n + q).
 
 ### Advantages & Disadvantages
 
@@ -1408,7 +1408,7 @@ Without prefix sums, each range query costs O(n). For q queries, total = O(n×q)
 | Advantages | Disadvantages |
 |------------|---------------|
 | O(1) range sum queries after O(n) build | Extra O(n) space |
-| Simple — one pass, one formula | Does not handle updates well (update at i = O(n) rebuild) |
+| Simple â€” one pass, one formula | Does not handle updates well (update at i = O(n) rebuild) |
 | Extends to 2D (prefix sum matrix) | Prefix sum values can overflow for large arrays |
 
 ### Edge Cases
@@ -1482,26 +1482,26 @@ Find pair summing to 12 in arr = [1, 3, 5, 7, 9, 11]
 
 | Step | left | right | arr[left] | arr[right] | sum | Action |
 |------|------|-------|-----------|------------|-----|--------|
-| 0 | 0 | 5 | 1 | 11 | 12 | ✅ Found! |
+| 0 | 0 | 5 | 1 | 11 | 12 | âœ… Found! |
 
 Quick success. Let's try target = 10:
 
 | Step | left | right | arr[left] | arr[right] | sum | Action |
 |------|------|-------|-----------|------------|-----|--------|
-| 0 | 0 | 5 | 1 | 11 | 12 | sum > 10 → right-- |
-| 1 | 0 | 4 | 1 | 9 | 10 | ✅ Found! |
+| 0 | 0 | 5 | 1 | 11 | 12 | sum > 10 â†’ right-- |
+| 1 | 0 | 4 | 1 | 9 | 10 | âœ… Found! |
 
 Now try target = 16 with arr = [1, 2, 3, 4, 5, 6, 7]:
 
 | Step | left | right | arr[left] | arr[right] | sum | Action |
 |------|------|-------|-----------|------------|-----|--------|
-| 0 | 0 | 6 | 1 | 7 | 8 | sum &lt; 16 → left++ |
-| 1 | 1 | 6 | 2 | 7 | 9 | sum &lt; 16 → left++ |
-| 2 | 2 | 6 | 3 | 7 | 10 | sum &lt; 16 → left++ |
-| 3 | 3 | 6 | 4 | 7 | 11 | sum &lt; 16 → left++ |
-| 4 | 4 | 6 | 5 | 7 | 12 | sum &lt; 16 → left++ |
-| 5 | 5 | 6 | 6 | 7 | 13 | sum &lt; 16 → left++ |
-| 6 | 6 | 6 | left ≥ right → stop, no pair |
+| 0 | 0 | 6 | 1 | 7 | 8 | sum &lt; 16 â†’ left++ |
+| 1 | 1 | 6 | 2 | 7 | 9 | sum &lt; 16 â†’ left++ |
+| 2 | 2 | 6 | 3 | 7 | 10 | sum &lt; 16 â†’ left++ |
+| 3 | 3 | 6 | 4 | 7 | 11 | sum &lt; 16 â†’ left++ |
+| 4 | 4 | 6 | 5 | 7 | 12 | sum &lt; 16 â†’ left++ |
+| 5 | 5 | 6 | 6 | 7 | 13 | sum &lt; 16 â†’ left++ |
+| 6 | 6 | 6 | left â‰¥ right â†’ stop, no pair |
 
 ### C++ Implementation
 
@@ -1580,7 +1580,7 @@ public class TwoPointer {
 }
 ```
 
-### Complexity — Why?
+### Complexity â€” Why?
 
 
 | Metric | Value | Why |
@@ -1588,14 +1588,14 @@ public class TwoPointer {
 | Time | O(n) | Each step moves left or right by 1; at most n steps total |
 | Space | O(1) | Only two integer variables (left, right) |
 
-**Why O(n) and not O(n²)?** Unlike the naive nested-loop approach (for each i, try all j > i), the two-pointer technique exploits sorting: the monotonic property means we never revisit a pair. Each step excludes either an entire row or column from the search space.
+**Why O(n) and not O(nÂ²)?** Unlike the naive nested-loop approach (for each i, try all j > i), the two-pointer technique exploits sorting: the monotonic property means we never revisit a pair. Each step excludes either an entire row or column from the search space.
 
 ### Advantages & Disadvantages
 
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Reduces O(n²) nested loops to O(n) | Requires sorted array (otherwise sort first = O(n log n)) |
+| Reduces O(nÂ²) nested loops to O(n) | Requires sorted array (otherwise sort first = O(n log n)) |
 | O(1) space | Only for pairwise or triplet problems |
 | Elegant and simple to code | Cannot handle duplicates without modification |
 | Extends to 3-sum, container-with-most-water | Not applicable for arbitrary sets (use hash map) |
@@ -1605,28 +1605,28 @@ public class TwoPointer {
 
 - **Empty array**: loop not entered, return (-1, -1)
 - **Single element**: left = right = 0, loop not entered
-- **Target smaller than any pair**: left moves toward right until left ≥ right
-- **Target larger than any pair**: right moves toward left until left ≥ right
+- **Target smaller than any pair**: left moves toward right until left â‰¥ right
+- **Target larger than any pair**: right moves toward left until left â‰¥ right
 - **Exactly one pair**: algorithm finds it; early exit
 - **Multiple pairs**: returns the first (leftmost) pair found
 - **Duplicate values**: works, but may return adjacent duplicates if they form the sum
 
 ---
 
-## Array vs Linked List — Detailed Comparison
+## Array vs Linked List â€” Detailed Comparison
 
 | Feature | Array | Linked List |
 |---------|-------|-------------|
 | **Memory layout** | Contiguous block | Scattered nodes (each with pointer) |
-| **Random access** | O(1) — compute address directly | O(n) — traverse from head |
-| **Insert at front** | O(n) — shift all elements right | O(1) — update head pointer |
-| **Insert at middle** | O(n) — shift half the array avg | O(1) — update 2 pointers (if node known) |
+| **Random access** | O(1) â€” compute address directly | O(n) â€” traverse from head |
+| **Insert at front** | O(n) â€” shift all elements right | O(1) â€” update head pointer |
+| **Insert at middle** | O(n) â€” shift half the array avg | O(1) â€” update 2 pointers (if node known) |
 | **Insert at end** | O(1) static / O(1) amortized dynamic | O(1) with tail ptr, O(n) without |
-| **Delete at front** | O(n) — shift all left | O(1) — update head, free node |
-| **Delete at middle** | O(n) — shift | O(1) — update 2 pointers (if node known) |
+| **Delete at front** | O(n) â€” shift all left | O(1) â€” update head, free node |
+| **Delete at middle** | O(n) â€” shift | O(1) â€” update 2 pointers (if node known) |
 | **Search** | O(n) unsorted, O(log n) sorted (binary search) | O(n) always |
 | **Memory per element** | Size of element only | Size of element + pointer(s) |
-| **Cache locality** | Excellent — sequential cache lines | Poor — nodes scattered across heap |
+| **Cache locality** | Excellent â€” sequential cache lines | Poor â€” nodes scattered across heap |
 | **CPU cache misses** | Rare (prefetch-friendly) | Frequent (pointer chasing) |
 | **Size flexibility** | Fixed (static) or doubling (dynamic) | Grows/shrinks one node at a time |
 | **Memory fragmentation** | Minimal (one contiguous block) | High (many small allocations) |
@@ -1642,7 +1642,7 @@ public class TwoPointer {
 
 **Problem:** Find the contiguous subarray with the largest sum in O(n).
 
-**Real-world analogy:** A stock trader wants the best consecutive days to buy and sell — the period with the maximum cumulative profit.
+**Real-world analogy:** A stock trader wants the best consecutive days to buy and sell â€” the period with the maximum cumulative profit.
 
 **Logic:** Keep a running `current_sum`. If it drops below 0, reset to 0 (starting fresh is better than carrying negative). Track the maximum ever seen.
 
@@ -1696,13 +1696,13 @@ int kadane(const vector<int>& arr) {
 
 **Logic (Two-Pointer):**
 1. left = 0, right = n-1, left_max = right_max = 0, water = 0
-2. While left ≤ right:
-   - If height[left] ≤ height[right]:
-     - If height[left] ≥ left_max: update left_max
+2. While left â‰¤ right:
+   - If height[left] â‰¤ height[right]:
+     - If height[left] â‰¥ left_max: update left_max
      - Else: water += left_max - height[left]
      - left++
    - Else:
-     - If height[right] ≥ right_max: update right_max
+     - If height[right] â‰¥ right_max: update right_max
      - Else: water += right_max - height[right]
      - right--
 
@@ -1721,9 +1721,9 @@ int kadane(const vector<int>& arr) {
 | 8 | 7 | 10 | 3 | 2 | 3 | 2 | 0 | 5 |
 | 9 | 7 | 9 | 3 | 1 | 3 | 1 | 0 | 5 |
 | 10 | 7 | 8 | 3 | 2 | 3 | 2 | 0 | 5 |
-| 11 | 8 | 8 | left ≥ right → stop | | | | | 6 |
+| 11 | 8 | 8 | left â‰¥ right â†’ stop | | | | | 6 |
 
-Total water trapped = 6 ✓
+Total water trapped = 6 âœ“
 
 **Complexity:** O(n) time, O(1) space.
 
@@ -1734,12 +1734,12 @@ Total water trapped = 6 ✓
 
 **Problem:** Given n vertical lines where the i-th line has height height[i], find two lines that together with the x-axis form a container holding the most water.
 
-**Real-world analogy:** You have wooden planks of different heights. Pick two to form a water container — capacity is limited by the shorter plank, and wider spacing increases capacity.
+**Real-world analogy:** You have wooden planks of different heights. Pick two to form a water container â€” capacity is limited by the shorter plank, and wider spacing increases capacity.
 
 **Logic (Two-Pointer):**
 1. left = 0, right = n-1, max_area = 0
 2. While left &lt; right:
-   - area = min(height[left], height[right]) × (right - left)
+   - area = min(height[left], height[right]) Ã— (right - left)
    - max_area = max(max_area, area)
    - If height[left] &lt; height[right]: left++ (move the shorter wall)
    - Else: right--
@@ -1757,7 +1757,7 @@ Total water trapped = 6 ✓
 | 5 | 3 | 6 | 2 | 8 | 2 | 3 | 6 | 49 | left++ |
 | 6 | 4 | 6 | 5 | 8 | 5 | 2 | 10 | 49 | left++ |
 | 7 | 5 | 6 | 4 | 8 | 4 | 1 | 4 | 49 | left++ |
-| 8 | 6 | 6 | left ≥ right → stop | | | | | 49 | |
+| 8 | 6 | 6 | left â‰¥ right â†’ stop | | | | | 49 | |
 
 Max area = 49 (lines at indices 1 and 8, height 8 and 7, width 7)
 
@@ -1785,12 +1785,12 @@ def rotate(arr, k):
 
 ---
 
-### Problem 5: Two Sum (Unsorted — LeetCode 1)
+### Problem 5: Two Sum (Unsorted â€” LeetCode 1)
 
 
 **Problem:** Given an unsorted array, find two indices such that their values sum to target.
 
-**Logic (Hash Map):** Store each element's value → index. For each element, check if (target - element) exists in the map.
+**Logic (Hash Map):** Store each element's value â†’ index. For each element, check if (target - element) exists in the map.
 
 ```python
 def two_sum(arr, target):
@@ -1822,10 +1822,10 @@ def two_sum(arr, target):
 Digital images are stored as 2D arrays (matrices) of pixels. Each pixel is an RGB triple stored in a contiguous buffer.
 
 ```cpp
-// Grayscale image as 2D array — row-major stride
+// Grayscale image as 2D array â€” row-major stride
 struct Image {
     int width, height;
-    std::vector<unsigned char> pixels; // size = width × height
+    std::vector<unsigned char> pixels; // size = width Ã— height
 
     unsigned char& at(int row, int col) {
         return pixels[row * width + col];
@@ -1867,14 +1867,14 @@ class CSRSparseMatrix:
 ### 4. CPU Cache Line Optimization
 
 
-Modern CPUs load memory in 64-byte cache lines. Consecutive array access causes hardware prefetching to predict and load future data before it is requested — giving near-L1-cache speeds even for main-memory arrays.
+Modern CPUs load memory in 64-byte cache lines. Consecutive array access causes hardware prefetching to predict and load future data before it is requested â€” giving near-L1-cache speeds even for main-memory arrays.
 
 ```
-Cache line (64 bytes) — holds 16 ints:
-| arr[0] | arr[1] | ... | arr[15] |  ← loaded in ~10ns
+Cache line (64 bytes) â€” holds 16 ints:
+| arr[0] | arr[1] | ... | arr[15] |  â† loaded in ~10ns
 ```
 
-Row-major traversal of a 2D array accesses adjacent memory addresses → prefetcher hits. Column-major traversal jumps by stride = row count → cache misses on every access → 10-100× slower.
+Row-major traversal of a 2D array accesses adjacent memory addresses â†’ prefetcher hits. Column-major traversal jumps by stride = row count â†’ cache misses on every access â†’ 10-100Ã— slower.
 
 ### 5. Buffer and Stream I/O
 
@@ -1891,11 +1891,11 @@ ssize_t bytes = read(fd, buffer, BUFFER_SIZE);
 ### 6. Hash Table Bucket Arrays
 
 
-Hash tables use an array as the primary bucket structure — the hash function maps keys to array indices in O(1):
+Hash tables use an array as the primary bucket structure â€” the hash function maps keys to array indices in O(1):
 
 ```
 Bucket array: [0: list, 1: list, 2: list, ..., M-1: list]
-                         ↓
+                         â†“
            Each bucket is a linked list (chaining)
 ```
 
@@ -1904,12 +1904,12 @@ Bucket array: [0: list, 1: list, 2: list, ..., M-1: list]
 ## Pro Tips
 
 - **Prefer `std::vector` over raw arrays**: C++ vectors provide dynamic resizing, bounds checking in debug mode, and STL algorithm compatibility. Raw arrays are error-prone and inflexible.
-- **Row-major vs column-major traversal order** can make a 10× performance difference on large 2D arrays due to CPU cache line behavior.
-- **Cache-friendly traversal**: Iterate 2D arrays in row-major order (outer loop = row, inner loop = column). Column-major traversal causes cache misses that can slow access by 10-100×.
-- **Two-pointer is your secret weapon**: For sorted arrays, two pointers from opposite ends can solve pair-sum, triplet, and container-with-most-water problems in O(n) instead of O(n²).
+- **Row-major vs column-major traversal order** can make a 10Ã— performance difference on large 2D arrays due to CPU cache line behavior.
+- **Cache-friendly traversal**: Iterate 2D arrays in row-major order (outer loop = row, inner loop = column). Column-major traversal causes cache misses that can slow access by 10-100Ã—.
+- **Two-pointer is your secret weapon**: For sorted arrays, two pointers from opposite ends can solve pair-sum, triplet, and container-with-most-water problems in O(n) instead of O(nÂ²).
 - **Prefix sums turn range queries into O(1)**: Precompute prefix sums once (O(n)), then any subarray sum is prefix[r] - prefix[l-1].
-- **Kadane's algorithm** is the classic O(n) solution for maximum subarray — memorize it for interviews.
-- **The reversal method** for rotation is the only O(1)-space approach — three reverses and you're done.
+- **Kadane's algorithm** is the classic O(n) solution for maximum subarray â€” memorize it for interviews.
+- **The reversal method** for rotation is the only O(1)-space approach â€” three reverses and you're done.
 
 ## One-Sentence Takeaways
 
@@ -2056,38 +2056,38 @@ class PrefixSum {
 9. **What is the worst-case time complexity of inserting at the beginning of a dynamic array?**
    - a) O(1)
    - b) O(log n)
-   - c) O(n) ✓
-   - d) O(n²)
+   - c) O(n) âœ“
+   - d) O(nÂ²)
 
 10. **The prefix sum technique is most useful for:**
     - a) Sorting arrays faster
-    - b) Answering multiple range sum queries efficiently ✓
+    - b) Answering multiple range sum queries efficiently âœ“
     - c) Finding duplicates
     - d) Rotating arrays
 
-11. **What is the space complexity of a 2D prefix sum matrix for an m×n input?**
+11. **What is the space complexity of a 2D prefix sum matrix for an mÃ—n input?**
     - a) O(1)
     - b) O(m + n)
-    - c) O(m × n) ✓
+    - c) O(m Ã— n) âœ“
     - d) O(max(m, n))
 
 12. **Which of the following is NOT a valid growth factor for dynamic arrays?**
     - a) 1.5
     - b) 2
-    - c) 1 ✓ (no growth)
+    - c) 1 âœ“ (no growth)
     - d) 3
 
 13. **Sliding window technique is most appropriate for:**
     - a) Unsorted array pair sum
-    - b) Contiguous subarray problems with monotonic property ✓
+    - b) Contiguous subarray problems with monotonic property âœ“
     - c) Finding median
     - d) Sorting
 
 14. **What is the minimum number of swaps required to reverse an array of n elements?**
     - a) n
-    - b) n/2 ✓
+    - b) n/2 âœ“
     - c) log n
-    - d) n²
+    - d) nÂ²
 
 **Answers:** 9-c, 10-b, 11-c, 12-c, 13-b, 14-b
 
@@ -2108,7 +2108,7 @@ class PrefixSum {
 
 22. **Maximum product subarray**: Similar to Kadane's but tracking both max and min (due to negative numbers).
 
-23. **Find the smallest subarray whose sum is ≥ target** (minimum size subarray sum). Use sliding window.
+23. **Find the smallest subarray whose sum is â‰¥ target** (minimum size subarray sum). Use sliding window.
 
 24. **Merge two sorted arrays without extra space**: Use insertion-sort style merging from the end.
 
@@ -2123,7 +2123,7 @@ class PrefixSum {
 ### Real-World Analogy
 
 
-A **conveyor belt** in a factory moves products past inspection stations. You want to find the longest section of the belt where every product passes quality checks. This is a subarray problem — finding a contiguous segment satisfying a property.
+A **conveyor belt** in a factory moves products past inspection stations. You want to find the longest section of the belt where every product passes quality checks. This is a subarray problem â€” finding a contiguous segment satisfying a property.
 
 ### Subarray Problem Taxonomy
 
@@ -2132,7 +2132,7 @@ A **conveyor belt** in a factory moves products past inspection stations. You wa
 flowchart TD
     SP["Subarray Problems"] --> MaxSum["Maximum Sum Subarray<br/>Kadane's Algorithm<br/>O(n) time, O(1) space"]
     SP --> MaxLen["Maximum Length Subarray<br/>with Given Sum<br/>Hash Map + Prefix Sum"]
-    SP --> MinLen["Minimum Length Subarray<br/>with Sum ≥ Target<br/>Sliding Window O(n)"]
+    SP --> MinLen["Minimum Length Subarray<br/>with Sum â‰¥ Target<br/>Sliding Window O(n)"]
     SP --> SubDiv["Subarray Sum Divisible<br/>by K<br/>Prefix Sum + Mod Hash"]
     SP --> SubEq["Subarrays with Equal<br/>0s and 1s<br/>Treat 0 as -1"]
     SP --> MaxProd["Maximum Product<br/>Subarray<br/>Track Min & Max"]
@@ -2142,7 +2142,7 @@ flowchart TD
     MinLen --> KeyInsight3["Key: Expand right,<br/>shrink left"]
     SubDiv --> KeyInsight4["Key: Same modulo =<br/>divisible subarray"]
     SubEq --> KeyInsight5["Key: Same prefix sum =<br/>equal 0s and 1s"]
-    MaxProd --> KeyInsight6["Key: Negative × negative = positive"]
+    MaxProd --> KeyInsight6["Key: Negative Ã— negative = positive"]
 ```
 
 ### Maximum Product Subarray (LeetCode 152)
@@ -2164,14 +2164,14 @@ flowchart TD
 
 | i | x | currMax (before) | currMin (before) | Swapped? | currMax (after) | currMin (after) | maxProd |
 |---|---|-----------------|-----------------|----------|----------------|----------------|---------|
-| 0 | 2 | — | — | — | 2 | 2 | 2 |
+| 0 | 2 | â€” | â€” | â€” | 2 | 2 | 2 |
 | 1 | 3 | 2 | 2 | No | max(3, 6)=6 | min(3, 6)=3 | 6 |
 | 2 | -2 | 6 | 3 | Yes | max(-2, -12)=-2 | min(-2, -4)=-4 | 6 |
 | 3 | 4 | -2 | -4 | No | max(4, -8)=4 | min(4, -16)=-16 | max(6, 4)=6 |
 
 Result: 6 (subarray [2, 3])
 
-### TypeScript — Maximum Product Subarray
+### TypeScript â€” Maximum Product Subarray
 
 ```typescript
 function maxProduct(nums: number[]): number {
@@ -2208,7 +2208,7 @@ console.log(maxProduct([-2, 3, -4]));      // 24
 ### Real-World Analogy
 
 
-You need to find the **median** score from 1 million exam results. Sorting all 1 million takes O(n log n), but Quick Select uses partitioning to find the k-th smallest element in O(n) average time — like repeatedly dividing a phone book in half until you reach the right page.
+You need to find the **median** score from 1 million exam results. Sorting all 1 million takes O(n log n), but Quick Select uses partitioning to find the k-th smallest element in O(n) average time â€” like repeatedly dividing a phone book in half until you reach the right page.
 
 ### Quick Select Algorithm
 
@@ -2229,14 +2229,14 @@ Find the 3rd smallest (k=2) in arr = [7, 2, 1, 6, 8, 5, 3, 4]
 
 | Step | Subarray | Pivot | Partitioned | pivotIndex | Action |
 |------|----------|-------|-------------|------------|--------|
-| 1 | [7,2,1,6,8,5,3,4] | 4 | [2,1,3,4,8,5,7,6] | 3 | k=2 < 3 → go left |
-| 2 | [2,1,3] | 3 | [2,1,3] | 2 | k=2 < 2 → go left |
-| 3 | [2,1] | 1 | [1,2] | 1 | k=2 > 1 → go right |
-| 4 | [2] | — | — | — | Return 2 |
+| 1 | [7,2,1,6,8,5,3,4] | 4 | [2,1,3,4,8,5,7,6] | 3 | k=2 < 3 â†’ go left |
+| 2 | [2,1,3] | 3 | [2,1,3] | 2 | k=2 < 2 â†’ go left |
+| 3 | [2,1] | 1 | [1,2] | 1 | k=2 > 1 â†’ go right |
+| 4 | [2] | â€” | â€” | â€” | Return 2 |
 
-Result: 3rd smallest element = 3 ✓
+Result: 3rd smallest element = 3 âœ“
 
-### TypeScript — Quick Select
+### TypeScript â€” Quick Select
 
 ```typescript
 function quickSelect(arr: number[], left: number, right: number, k: number): number {
@@ -2275,7 +2275,7 @@ console.log(findKthSmallest([7, 2, 1, 6], 2));              // 2
 | Metric | Time | Space | Why |
 |--------|------|-------|-----|
 | Average case | O(n) | O(log n) | Each partition halves expected search space; recursion depth log n |
-| Worst case | O(n²) | O(n) | Bad pivot choice (already sorted array, pivot is always extreme) |
+| Worst case | O(nÂ²) | O(n) | Bad pivot choice (already sorted array, pivot is always extreme) |
 | Optimized (median-of-3) | O(n) | O(log n) | Choose pivot as median of first, middle, last elements |
 
 **Why O(n) average?** The expected partition size decreases geometrically: n + n/2 + n/4 + ... = 2n = O(n).
@@ -2285,25 +2285,25 @@ console.log(findKthSmallest([7, 2, 1, 6], 2));              // 2
 
 27. **Maximum product subarray must track both max and min because:**
     - a) Min values are always negative
-    - b) A negative number can flip min into new max ✓
+    - b) A negative number can flip min into new max âœ“
     - c) The answer is always positive
     - d) Kadane's algorithm doesn't work for products
 
 28. **Quick Select average time complexity is:**
     - a) O(n log n)
-    - b) O(n) ✓
+    - b) O(n) âœ“
     - c) O(log n)
-    - d) O(n²)
+    - d) O(nÂ²)
 
 29. **For an array of 1 million elements, finding the median using Quick Select vs sorting:**
-    - a) Quick Select is faster by ~log n factor ✓
+    - a) Quick Select is faster by ~log n factor âœ“
     - b) Sorting is always faster
     - c) Both are O(n log n)
-    - d) Quick Select is O(n²) worst-case
+    - d) Quick Select is O(nÂ²) worst-case
 
 30. **What is the key property that makes Maximum Product Subarray different from Maximum Sum Subarray?**
     - a) Multiplication is commutative
-    - b) Negative × negative yields positive ✓
+    - b) Negative Ã— negative yields positive âœ“
     - c) Products grow faster than sums
     - d) Division is not allowed
 
@@ -2332,11 +2332,11 @@ console.log(findKthSmallest([7, 2, 1, 6], 2));              // 2
 - **Array ADT**: Abstract data type providing O(1) random access, O(n) search/insert/delete.
 - **Static vs Dynamic**: Static arrays have fixed size; dynamic arrays grow by a factor (typically 2) when full, giving amortized O(1) push_back.
 - **Operations**: Insert/delete at end cost O(1); in the middle cost O(n) due to shifting.
-- **Rotation**: Reversal method — three reverses achieve O(n) time, O(1) space.
-- **Reversal**: Two-pointer swap from ends — O(n) time, O(1) space.
+- **Rotation**: Reversal method â€” three reverses achieve O(n) time, O(1) space.
+- **Reversal**: Two-pointer swap from ends â€” O(n) time, O(1) space.
 - **Prefix Sum**: Build once (O(n)), query any range sum in O(1).
-- **Two-Pointer**: Reduce pair-sum from O(n²) to O(n) on sorted arrays.
-- **Interview Corner**: Kadane's algorithm (max subarray), trapping rain water, container with most water, rotate array, two-sum — all O(n) or O(n log n) solutions.
+- **Two-Pointer**: Reduce pair-sum from O(nÂ²) to O(n) on sorted arrays.
+- **Interview Corner**: Kadane's algorithm (max subarray), trapping rain water, container with most water, rotate array, two-sum â€” all O(n) or O(n log n) solutions.
 
 ## Exercises
 
@@ -2352,7 +2352,7 @@ console.log(findKthSmallest([7, 2, 1, 6], 2));              // 2
 
 6. **Merge sorted arrays**: Implement a function to merge two sorted arrays into one sorted array in O(n + m) time.
 7. **Majority element**: Write a program to find the majority element (appears more than n/2 times) in O(n) time and O(1) space (Boyer-Moore voting algorithm).
-8. **Matrix multiplication**: Implement a function for two m×n and n×p matrices.
+8. **Matrix multiplication**: Implement a function for two mÃ—n and nÃ—p matrices.
 9. **Remove duplicates from sorted array**: Write an O(n) in-place algorithm.
 10. **Move zeros to end**: Move all zeros in an array to the end while preserving relative order of non-zero elements.
 

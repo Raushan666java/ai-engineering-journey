@@ -1,4 +1,4 @@
-# Chapter 8: Exception Handling
+﻿# Chapter 8: Exception Handling
 
 > **Previous:** [07-templates](./07-templates.md) | **Next:** [09-stl-containers](./09-stl-containers.md)
 
@@ -9,16 +9,16 @@ After studying this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/oop-cpp/08-exceptions/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/oop-cpp/08-exceptions/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/08-exceptions/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/oop-cpp/08-exceptions/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/oop-cpp/08-exceptions/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/oop-cpp/08-exceptions/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/08-exceptions/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/oop-cpp/08-exceptions/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/oop-cpp/08-exceptions/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/oop-cpp/08-exceptions/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/08-exceptions/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/oop-cpp/08-exceptions/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -40,9 +40,9 @@ After studying this chapter, students will be able to:
 |-------|-------------|-------------------|
 | **Traditional Error Handling** | Return codes are fragile; exceptions provide structured propagation | Use exceptions for exceptional conditions, not control flow |
 | **Throw, Try, Catch** | Three-keyword mechanism separates detection from handling | Always catch by reference to avoid slicing |
-| **Stack Unwinding** | Destructors run automatically during scope rollback | Keep destructors noexcept — exceptions during unwinding terminate |
+| **Stack Unwinding** | Destructors run automatically during scope rollback | Keep destructors noexcept â€” exceptions during unwinding terminate |
 | **Catch by Value vs Reference** | Value catches slice the exception object | Catch by `const&` always |
-| **RAII** | Resource acquisition is initialization — deterministic cleanup | Prefer RAII wrappers over manual try/catch |
+| **RAII** | Resource acquisition is initialization â€” deterministic cleanup | Prefer RAII wrappers over manual try/catch |
 | **noexcept** | Declares functions that never throw, enabling optimization | Mark move operations and swap as noexcept |
 | **Exception Hierarchy** | `std::exception` base class for polymorphic catching | Derive custom exceptions from `std::runtime_error` |
 | **Constructor Exceptions** | Partially-constructed objects leak resources | Use RAII members to avoid manual cleanup |
@@ -149,7 +149,7 @@ int find_in_array(const int* arr, size_t size, int value) {
 Traditional:           Exceptions:
 Step 1: check return   Step 1: just climb
 Step 2: check return   Step 2: just climb
-Step 3: check return   Step 3: fall → net catches
+Step 3: check return   Step 3: fall â†’ net catches
 Step 4: check return   Step 4: just climb
 ```
 ## 8.2 Throw, Try, Catch
@@ -1670,31 +1670,31 @@ The C++ standard library defines a rich exception hierarchy rooted at `std::exce
 
 ```
 std::exception
-├── std::logic_error
-│   ├── std::invalid_argument
-│   ├── std::domain_error
-│   ├── std::length_error
-│   └── std::out_of_range
-├── std::runtime_error
-│   ├── std::range_error
-│   ├── std::overflow_error
-│   └── std::underflow_error
-├── std::bad_alloc
-│   └── std::bad_array_new_length
-├── std::bad_cast
-├── std::bad_typeid
-├── std::bad_exception
-├── std::bad_function_call
-├── std::bad_weak_ptr
-├── std::bad_optional_access
-├── std::bad_any_cast
-└── std::bad_variant_access
+â”œâ”€â”€ std::logic_error
+â”‚   â”œâ”€â”€ std::invalid_argument
+â”‚   â”œâ”€â”€ std::domain_error
+â”‚   â”œâ”€â”€ std::length_error
+â”‚   â””â”€â”€ std::out_of_range
+â”œâ”€â”€ std::runtime_error
+â”‚   â”œâ”€â”€ std::range_error
+â”‚   â”œâ”€â”€ std::overflow_error
+â”‚   â””â”€â”€ std::underflow_error
+â”œâ”€â”€ std::bad_alloc
+â”‚   â””â”€â”€ std::bad_array_new_length
+â”œâ”€â”€ std::bad_cast
+â”œâ”€â”€ std::bad_typeid
+â”œâ”€â”€ std::bad_exception
+â”œâ”€â”€ std::bad_function_call
+â”œâ”€â”€ std::bad_weak_ptr
+â”œâ”€â”€ std::bad_optional_access
+â”œâ”€â”€ std::bad_any_cast
+â””â”€â”€ std::bad_variant_access
 ```
 
 ### 8.9.2 Exception Categories
 
 
-**Logic errors** (`std::logic_error`): Errors detectable before program execution — precondition violations.
+**Logic errors** (`std::logic_error`): Errors detectable before program execution â€” precondition violations.
 
 | Exception | When Thrown | Typical Cause |
 |-----------|-------------|---------------|
@@ -2093,13 +2093,13 @@ The three levels, from weakest to strongest:
 
 ```
                   NEVER THROWS
-                  ┌──────────────────────────────┐
-                  │  No-throw (swap, move, dtor) │
-                  │──────────────────────────────│
-                  │  Strong (commit or rollback) │
-                  │──────────────────────────────│
-     MAY THROW    │  Basic (no leaks, valid)     │
-                  └──────────────────────────────┘
+                  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                  â”‚  No-throw (swap, move, dtor) â”‚
+                  â”‚â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”‚
+                  â”‚  Strong (commit or rollback) â”‚
+                  â”‚â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”‚
+     MAY THROW    â”‚  Basic (no leaks, valid)     â”‚
+                  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 > **Q5: What is the difference between `noexcept`, `throw()`, and no exception specification?**
@@ -2516,29 +2516,29 @@ private:
 
 
 ```
-                    ┌─────────────┐
-                    │ Function    │
-                    └──────┬──────┘
-                           │
-                    ┌──────┴──────┐
-                    │ Destructor? │─── Yes ──► noexcept (implicit)
-                    └──────┬──────┘
-                           │ No
-                    ┌──────┴──────┐
-                    │ Move/Swap?  │─── Yes ──► noexcept (for optimization)
-                    └──────┬──────┘
-                           │ No
-                    ┌──────┴──────────┐
-                    │ Simple getter?  │─── Yes ──► noexcept
-                    └──────┬──────────┘
-                           │ No
-                    ┌──────┴────────────────────┐
-                    │ Uses throwing operations? │─── Yes ──► noexcept(false)
-                    └──────┬────────────────────┘
-                           │ No
-                    ┌──────┴──────┐
-                    │ noexcept    │ (carefully consider)
-                    └─────────────┘
+                    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                    â”‚ Function    â”‚
+                    â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”˜
+                           â”‚
+                    â”Œâ”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”
+                    â”‚ Destructor? â”‚â”€â”€â”€ Yes â”€â”€â–º noexcept (implicit)
+                    â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”˜
+                           â”‚ No
+                    â”Œâ”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”
+                    â”‚ Move/Swap?  â”‚â”€â”€â”€ Yes â”€â”€â–º noexcept (for optimization)
+                    â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”˜
+                           â”‚ No
+                    â”Œâ”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                    â”‚ Simple getter?  â”‚â”€â”€â”€ Yes â”€â”€â–º noexcept
+                    â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                           â”‚ No
+                    â”Œâ”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                    â”‚ Uses throwing operations? â”‚â”€â”€â”€ Yes â”€â”€â–º noexcept(false)
+                    â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                           â”‚ No
+                    â”Œâ”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”
+                    â”‚ noexcept    â”‚ (carefully consider)
+                    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### Quick Reference

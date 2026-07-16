@@ -1,4 +1,4 @@
-# Chapter 5: Stacks
+﻿# Chapter 5: Stacks
 
 > **Previous:** [Chapter 4: Doubly Linked List](./04-doubly-linked-list.md) | **Next:** [Queues](./06-queues.md)
 
@@ -12,16 +12,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-structures/05-stacks/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/data-structures/05-stacks/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/05-stacks/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/data-structures/05-stacks/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-structures/05-stacks/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/data-structures/05-stacks/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/05-stacks/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/data-structures/05-stacks/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-structures/05-stacks/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/data-structures/05-stacks/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/05-stacks/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/data-structures/05-stacks/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -30,7 +30,7 @@
 
 ## Why Stacks Matter
 
-**Real-world analogy:** Imagine a stack of plates in a cafeteria. You place clean plates on top (push), and when someone needs a plate, they take the topmost one (pop). The plate at the bottom came first but gets used last. This is exactly Last-In-First-Out (LIFO). Another example — a Pringles can: you can only remove the chip that was inserted last. Stacks appear everywhere in computing: the Call Stack tracks where each function should return after it finishes; the Undo stack (Ctrl+Z) remembers your last edit; your browser's Back button pops the previous page off a navigation stack. Without stacks, recursion, expression evaluation, and depth-first search simply would not work.
+**Real-world analogy:** Imagine a stack of plates in a cafeteria. You place clean plates on top (push), and when someone needs a plate, they take the topmost one (pop). The plate at the bottom came first but gets used last. This is exactly Last-In-First-Out (LIFO). Another example â€” a Pringles can: you can only remove the chip that was inserted last. Stacks appear everywhere in computing: the Call Stack tracks where each function should return after it finishes; the Undo stack (Ctrl+Z) remembers your last edit; your browser's Back button pops the previous page off a navigation stack. Without stacks, recursion, expression evaluation, and depth-first search simply would not work.
 
 ## Chapter at a Glance
 
@@ -1747,37 +1747,37 @@ function isValidParentheses(s: string): boolean {
 
 8. **What is the minimum number of stacks needed to implement a queue?**
    - a) 1
-   - b) 2 ✓
+   - b) 2 âœ“
    - c) 3
    - d) 4
 
 9. **Which of the following is NOT an application of stacks?**
    - a) Function call management
-   - b) Breadth-First Search ✓
+   - b) Breadth-First Search âœ“
    - c) Expression evaluation
    - d) Undo operation
 
 10. **In the linked-list stack implementation, where does push insert the new node?**
     - a) At the tail
-    - b) At the head ✓
+    - b) At the head âœ“
     - c) At the middle
     - d) After traversing to the end
 
 11. **What is the time complexity of the `getMin()` operation in the MinStack design?**
     - a) O(n)
     - b) O(log n)
-    - c) O(1) ✓
-    - d) O(n²)
+    - c) O(1) âœ“
+    - d) O(nÂ²)
 
 12. **The postfix expression `23*54*+` evaluates to:**
-    - a) 26 ✓
+    - a) 26 âœ“
     - b) 30
     - c) 17
     - d) 22
 
 13. **Stack overflow typically occurs when:**
     - a) The linked stack runs out of heap memory
-    - b) The recursion depth exceeds the call stack limit ✓
+    - b) The recursion depth exceeds the call stack limit âœ“
     - c) The array stack is full
     - d) Both a and c
 
@@ -1791,7 +1791,7 @@ function isValidParentheses(s: string): boolean {
 
 16. **Reverse a stack using recursion**: Reverse the contents of a stack without using any loop or extra stack. Use only recursion and the stack's own push/pop operations.
 
-17. **Check for balanced brackets with multiple types**: Extend the bracket matching to handle `()`, `{}`, `[]`, `<>`, `«»` — any set of matching pairs.
+17. **Check for balanced brackets with multiple types**: Extend the bracket matching to handle `()`, `{}`, `[]`, `<>`, `Â«Â»` â€” any set of matching pairs.
 
 18. **Infix to prefix conversion**: Modify the shunting-yard algorithm to produce prefix (Polish) notation instead of postfix.
 
@@ -1853,14 +1853,14 @@ Think of a **maze explorer** who places breadcrumbs at each fork. When they hit 
 
 ### Problem: N-Queens
 
-Place N queens on an N×N chessboard such that no two queens attack each other. Queens attack along rows, columns, and diagonals.
+Place N queens on an NÃ—N chessboard such that no two queens attack each other. Queens attack along rows, columns, and diagonals.
 
 ### Algorithm (Iterative Backtracking with Stack)
 
 1. Push an empty board state (row = 0, no queens placed).
 2. While the stack is not empty:
    - Pop the current state (row, column placements).
-   - If row == N: a solution is found — print and continue.
+   - If row == N: a solution is found â€” print and continue.
    - For each column c from 0 to N-1:
      - If placing a queen at (row, c) is safe (no conflicts with existing queens):
        - Push (row + 1, placements + [c]) onto the stack.
@@ -1869,21 +1869,21 @@ Place N queens on an N×N chessboard such that no two queens attack each other. 
 flowchart TD
     Start["Start: row = 0"] --> TryCol["Try column c = 0..N-1"]
     TryCol --> Safe{"Is (row, c) safe?<br/>Check col, diag1, diag2"}
-    Safe -->|No| NextCol["c++ → try next column"]
+    Safe -->|No| NextCol["c++ â†’ try next column"]
     NextCol --> TryCol
     Safe -->|Yes| Place["Place queen at (row, c)"]
     Place --> Check{"row == N-1?"}
     Check -->|Yes| Solution["Print solution<br/>(Found!)"]
-    Check -->|No| NextRow["row++ → recurse/push"]
+    Check -->|No| NextRow["row++ â†’ recurse/push"]
     NextRow --> TryCol
     Solution --> Backtrack["Backtrack: pop state,<br/>try next column"]
     Backtrack --> TryCol
     NextCol --> LastCol{"All columns tried?"}
-    LastCol -->|Yes| DeadEnd["Dead end → backtrack"]
+    LastCol -->|Yes| DeadEnd["Dead end â†’ backtrack"]
     DeadEnd --> Backtrack
 ```
 
-### TypeScript — N-Queens with Iterative Stack
+### TypeScript â€” N-Queens with Iterative Stack
 
 ```typescript
 function solveNQueens(n: number): string[][] {
@@ -1949,7 +1949,7 @@ solutions.forEach((board, idx) => {
 | Metric | Value | Why |
 |--------|-------|-----|
 | Time (N-Queens) | O(N!) | First queen: N choices, second: N-2, third: N-4... ~N!/2 |
-| Space (stack) | O(N²) | Stack may hold multiple partial states; depth at most N |
+| Space (stack) | O(NÂ²) | Stack may hold multiple partial states; depth at most N |
 | Pruning effect | Much better in practice | Early conflict detection eliminates most branches |
 
 ### Additional MCQs (GFG Pattern)
@@ -1957,18 +1957,18 @@ solutions.forEach((board, idx) => {
 14. **What does the stack in iterative N-Queens backtracking store?**
     - a) Only the current row number
     - b) All board configurations
-    - c) Partial placements (row + column choices) ✓
+    - c) Partial placements (row + column choices) âœ“
     - d) The number of conflicts
 
 15. **Which of the following is NOT a valid use of backtracking with stacks?**
     - a) Maze solving
     - b) Sudoku solver
-    - c) Sorting an array ✓
+    - c) Sorting an array âœ“
     - d) Generating all permutations
 
 16. **In the N-Queens problem, the isSafe check ensures:**
     - a) No two queens share the same row
-    - b) No two queens share the same column or diagonal ✓
+    - b) No two queens share the same column or diagonal âœ“
     - c) Queens are in ascending order
     - d) The board is symmetric
 
@@ -1976,15 +1976,15 @@ solutions.forEach((board, idx) => {
 
 ### Additional Exercises (GFG Pattern)
 
-16. **Rat in a Maze**: Given an N×N maze with blocked cells (0) and open cells (1), find a path from (0,0) to (N-1,N-1) using stack-based backtracking. The rat can move in four directions.
+16. **Rat in a Maze**: Given an NÃ—N maze with blocked cells (0) and open cells (1), find a path from (0,0) to (N-1,N-1) using stack-based backtracking. The rat can move in four directions.
 
-17. **Generate all valid parentheses combinations**: Given n pairs of parentheses, generate all valid combinations (e.g., n=3 → ["((()))", "(()())", "(())()", "()(())", "()()()"]). Use a stack to track the current string.
+17. **Generate all valid parentheses combinations**: Given n pairs of parentheses, generate all valid combinations (e.g., n=3 â†’ ["((()))", "(()())", "(())()", "()(())", "()()()"]). Use a stack to track the current string.
 
 18. **Knight's tour**: Place a knight on an empty chessboard and visit every square exactly once using Warnsdorff's heuristic and a stack for backtracking.
 
 19. **Subset sum using stack**: Given a set of integers and a target sum, find all subsets that sum to the target using an explicit stack instead of recursion.
 
-20. **Hamiltonian path in a graph**: Find a path that visits every vertex exactly once using stack-based backtracking. For a small graph (≤10 vertices), this is feasible.
+20. **Hamiltonian path in a graph**: Find a path that visits every vertex exactly once using stack-based backtracking. For a small graph (â‰¤10 vertices), this is feasible.
 
 21. **Implement a stack-based Sudoku solver**: Use a stack to try cell values. On conflict, backtrack by popping the last choice and trying the next value.
 

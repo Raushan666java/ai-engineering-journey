@@ -1,4 +1,4 @@
-# Chapter 2: Linux Basics for DevOps
+﻿# Chapter 2: Linux Basics for DevOps
 
 > **Next:** [Advanced Git](./02-git.md)
 
@@ -16,16 +16,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/02-linux-basics/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/02-linux-basics/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/02-linux-basics/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/02-linux-basics/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/02-linux-basics/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/02-linux-basics/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/02-linux-basics/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/02-linux-basics/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/02-linux-basics/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/02-linux-basics/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/02-linux-basics/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/02-linux-basics/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -91,38 +91,38 @@ Understanding this hierarchy is crucial for DevOps work because logs live in `/v
 
 
 **Navigation and File Operations:**
-- `pwd` — Print working directory
-- `ls -la` — List all files with details
-- `cd ~/project` — Change directory
-- `cp -r src/ dest/` — Copy recursively
-- `mv old new` — Move or rename
-- `rm -rf dir/` — Remove directory recursively (dangerous)
-- `mkdir -p a/b/c` — Create nested directories
-- `touch file.txt` — Create empty file or update timestamp
-- `find /path -name "*.log"` — Search for files
+- `pwd` â€” Print working directory
+- `ls -la` â€” List all files with details
+- `cd ~/project` â€” Change directory
+- `cp -r src/ dest/` â€” Copy recursively
+- `mv old new` â€” Move or rename
+- `rm -rf dir/` â€” Remove directory recursively (dangerous)
+- `mkdir -p a/b/c` â€” Create nested directories
+- `touch file.txt` â€” Create empty file or update timestamp
+- `find /path -name "*.log"` â€” Search for files
 
 **File Viewing:**
-- `cat file` — Display entire file
-- `less file` — Scroll through file (press `q` to quit)
-- `head -20 file` — First 20 lines
-- `tail -f file` — Follow file in real-time (crucial for logs)
-- `nl file` — Numbered lines
+- `cat file` â€” Display entire file
+- `less file` â€” Scroll through file (press `q` to quit)
+- `head -20 file` â€” First 20 lines
+- `tail -f file` â€” Follow file in real-time (crucial for logs)
+- `nl file` â€” Numbered lines
 
 **Process Management:**
-- `ps aux` — All processes with details
-- `top` or `htop` — Interactive process viewer
-- `kill -9 PID` — Force kill process
-- `pgrep -f pattern` — Search processes by name
-- `pkill -f pattern` — Kill processes by pattern
-- `nice -n 10 command` — Run with lower priority
+- `ps aux` â€” All processes with details
+- `top` or `htop` â€” Interactive process viewer
+- `kill -9 PID` â€” Force kill process
+- `pgrep -f pattern` â€” Search processes by name
+- `pkill -f pattern` â€” Kill processes by pattern
+- `nice -n 10 command` â€” Run with lower priority
 
 **System Information:**
-- `uname -a` — Kernel version and system info
-- `df -h` — Disk space usage
-- `du -sh /path` — Directory size
-- `free -h` — Memory usage
-- `uptime` — System uptime and load average
-- `lscpu` — CPU information
+- `uname -a` â€” Kernel version and system info
+- `df -h` â€” Disk space usage
+- `du -sh /path` â€” Directory size
+- `free -h` â€” Memory usage
+- `uptime` â€” System uptime and load average
+- `lscpu` â€” CPU information
 
 ### File Permissions
 
@@ -156,9 +156,9 @@ chmod -R 755 directory/  # Recursively set permissions
 
 
 Linux uses three standard I/O streams:
-- **stdin** (0) — Input to command
-- **stdout** (1) — Normal output
-- **stderr** (2) — Error output
+- **stdin** (0) â€” Input to command
+- **stdout** (1) â€” Normal output
+- **stderr** (2) â€” Error output
 
 **Redirection operators:**
 ```text
@@ -179,7 +179,7 @@ cat access.log | cut -d' ' -f1 | sort | uniq -c | sort -rn | head -10
 ### Text Processing Power Tools
 
 
-**`grep` — Pattern searching:**
+**`grep` â€” Pattern searching:**
 ```text
 grep "ERROR" app.log                    # Find lines containing ERROR
 grep -v "DEBUG" app.log                 # Exclude DEBUG lines
@@ -190,7 +190,7 @@ grep -c "pattern" file                  # Count matches
 grep -A 5 -B 5 "ERROR" log              # 5 lines after and before match
 ```
 
-**`sed` — Stream editor:**
+**`sed` â€” Stream editor:**
 ```text
 sed -i 's/old/new/g' file               # Replace all occurrences in-place
 sed -n '/ERROR/p' log                   # Print only ERROR lines
@@ -199,7 +199,7 @@ sed '1,10d' file                        # Delete first 10 lines
 sed 's/  */,/g' data                    # Convert spaces to commas
 ```
 
-**`awk` — Pattern scanning and processing:**
+**`awk` â€” Pattern scanning and processing:**
 ```text
 awk '{print $1}' file                   # Print first column
 awk -F: '{print $1, $3}' /etc/passwd   # Use : as delimiter

@@ -1,4 +1,4 @@
-# Chapter 12: Infosys SP & DSE — Company-Specific Question Bank
+﻿# Chapter 12: Infosys SP & DSE â€” Company-Specific Question Bank
 
 ## Learning Objectives
 
@@ -11,16 +11,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/interview-preparation/12-company-infosys-sp/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/interview-preparation/12-company-infosys-sp/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/12-company-infosys-sp/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/interview-preparation/12-company-infosys-sp/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/interview-preparation/12-company-infosys-sp/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/interview-preparation/12-company-infosys-sp/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/12-company-infosys-sp/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/interview-preparation/12-company-infosys-sp/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/interview-preparation/12-company-infosys-sp/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/interview-preparation/12-company-infosys-sp/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/12-company-infosys-sp/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/interview-preparation/12-company-infosys-sp/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -52,9 +52,9 @@ flowchart TB
         F2 --> G
         
         G --> H{Offer}
-        H -->|SP Role| I[Specialist Programmer<br/>₹ 6.5 - 9 LPA]
-        H -->|DSE Role| J[Digital Specialist Engineer<br/>₹ 5 - 6.5 LPA]
-        H -->|SE Role| K[Systems Engineer<br/>₹ 3.6 - 4.5 LPA]
+        H -->|SP Role| I[Specialist Programmer<br/>â‚¹ 6.5 - 9 LPA]
+        H -->|DSE Role| J[Digital Specialist Engineer<br/>â‚¹ 5 - 6.5 LPA]
+        H -->|SE Role| K[Systems Engineer<br/>â‚¹ 3.6 - 4.5 LPA]
     end
 
     style A fill:#4a90d9,color:#fff
@@ -79,11 +79,11 @@ pie showData
 
 ## Section 1: Coding Problems (Infosys Pattern)
 
-### Problem 1: InfyTQ — Find the Missing Number
+### Problem 1: InfyTQ â€” Find the Missing Number
 
 **Problem:** Given an array containing `n-1` numbers from 1 to `n` with one number missing, find the missing number.
 
-**Infosys Pattern Context:** This is a classic Infosys InfyTQ/SP coding question. They often ask it with a twist — numbers may not be sorted.
+**Infosys Pattern Context:** This is a classic Infosys InfyTQ/SP coding question. They often ask it with a twist â€” numbers may not be sorted.
 
 **Example 1:**
 ```
@@ -97,10 +97,10 @@ Input:  [3, 7, 1, 2, 8, 4, 5]
 Output: 6
 ```
 
-**Constraints:** 2 ≤ n ≤ 10^5, array elements are distinct
+**Constraints:** 2 â‰¤ n â‰¤ 10^5, array elements are distinct
 
 <details>
-<summary><b>Approach 1: Sum Formula — O(n) time, O(1) space</b></summary>
+<summary><b>Approach 1: Sum Formula â€” O(n) time, O(1) space</b></summary>
 
 ```typescript
 function findMissingNumber(nums: number[]): number {
@@ -113,14 +113,14 @@ function findMissingNumber(nums: number[]): number {
 
 **Why this works:** The sum of 1 to n is n(n+1)/2. The missing number is simply the difference between expected and actual sums.
 
-**Time:** O(n) — single pass to compute sum
-**Space:** O(1) — constant space
+**Time:** O(n) â€” single pass to compute sum
+**Space:** O(1) â€” constant space
 
 **Caveat:** For very large n, the sum might overflow. A safer alternative is XOR.
 </details>
 
 <details>
-<summary><b>Approach 2: XOR Method — O(n) time, O(1) space</b></summary>
+<summary><b>Approach 2: XOR Method â€” O(n) time, O(1) space</b></summary>
 
 ```typescript
 function findMissingNumberXOR(nums: number[]): number {
@@ -141,8 +141,8 @@ function findMissingNumberXOR(nums: number[]): number {
 }
 ```
 
-**Time:** O(n) — two passes
-**Space:** O(1) — single variable
+**Time:** O(n) â€” two passes
+**Space:** O(1) â€” single variable
 
 **Why XOR works:** a ^ a = 0 and a ^ 0 = a. Since we XOR every number 1..n and every element in the array, the missing number appears once while all others appear twice (cancelling out).
 </details>
@@ -159,18 +159,18 @@ function findMissingNumberXOR(nums: number[]): number {
 ```
 Input:  s = "egg", t = "add"
 Output: true
-Explanation: e→a, g→d (both consistent)
+Explanation: eâ†’a, gâ†’d (both consistent)
 ```
 
 **Example 2:**
 ```
 Input:  s = "foo", t = "bar"
 Output: false
-Explanation: f→b, o→a, but o also maps to r — conflict
+Explanation: fâ†’b, oâ†’a, but o also maps to r â€” conflict
 ```
 
 <details>
-<summary><b>Solution: Bi-directional HashMap — O(n) time, O(1) space</b></summary>
+<summary><b>Solution: Bi-directional HashMap â€” O(n) time, O(1) space</b></summary>
 
 ```typescript
 function isIsomorphic(s: string, t: string): boolean {
@@ -183,11 +183,11 @@ function isIsomorphic(s: string, t: string): boolean {
     const charS = s[i];
     const charT = t[i];
 
-    // Check s→t mapping
+    // Check sâ†’t mapping
     if (mapST.has(charS) && mapST.get(charS) !== charT) {
       return false;
     }
-    // Check t→s mapping (bijection)
+    // Check tâ†’s mapping (bijection)
     if (mapTS.has(charT) && mapTS.get(charT) !== charS) {
       return false;
     }
@@ -200,13 +200,13 @@ function isIsomorphic(s: string, t: string): boolean {
 }
 ```
 
-**Time:** O(n) — single pass through string
-**Space:** O(1) — at most 256 ASCII characters in each map
+**Time:** O(n) â€” single pass through string
+**Space:** O(1) â€” at most 256 ASCII characters in each map
 
 **Edge cases:**
-- Empty strings → true
-- Different lengths → false
-- Single character → true
+- Empty strings â†’ true
+- Different lengths â†’ false
+- Single character â†’ true
 - Case-sensitive comparisons
 </details>
 
@@ -225,7 +225,7 @@ Output: 2
 ```
 
 <details>
-<summary><b>Approach 1: Set Method — O(n) time, O(n) space</b></summary>
+<summary><b>Approach 1: Set Method â€” O(n) time, O(n) space</b></summary>
 
 ```typescript
 function findDuplicateSet(nums: number[]): number {
@@ -242,7 +242,7 @@ function findDuplicateSet(nums: number[]): number {
 </details>
 
 <details>
-<summary><b>Approach 2: Floyd's Tortoise and Hare — O(n) time, O(1) space</b></summary>
+<summary><b>Approach 2: Floyd's Tortoise and Hare â€” O(n) time, O(1) space</b></summary>
 
 ```typescript
 function findDuplicate(nums: number[]): number {
@@ -266,8 +266,8 @@ function findDuplicate(nums: number[]): number {
 }
 ```
 
-**Time:** O(n) — linear time
-**Space:** O(1) — constant space
+**Time:** O(n) â€” linear time
+**Space:** O(1) â€” constant space
 
 **Why this works:** The array represents a linked list where index i points to nums[i]. Since there's a duplicate, there must be a cycle. Floyd's algorithm detects the cycle start.
 </details>
@@ -278,7 +278,7 @@ function findDuplicate(nums: number[]): number {
 
 **Problem:** Find the contiguous subarray with the largest sum within a given integer array.
 
-**Infosys Pattern Context:** Kadane's algorithm is a frequently asked Infosys coding problem testing optimization from O(n³) → O(n).
+**Infosys Pattern Context:** Kadane's algorithm is a frequently asked Infosys coding problem testing optimization from O(nÂ³) â†’ O(n).
 
 **Example 1:**
 ```
@@ -294,7 +294,7 @@ Output: 1
 ```
 
 <details>
-<summary><b>Solution: Kadane's Algorithm — O(n) time, O(1) space</b></summary>
+<summary><b>Solution: Kadane's Algorithm â€” O(n) time, O(1) space</b></summary>
 
 ```typescript
 function maxSubarraySum(nums: number[]): number {
@@ -365,7 +365,7 @@ Output: false
 ```
 
 <details>
-<summary><b>Solution: Stack — O(n) time, O(n) space</b></summary>
+<summary><b>Solution: Stack â€” O(n) time, O(n) space</b></summary>
 
 ```typescript
 function isValidParentheses(s: string): boolean {
@@ -393,13 +393,13 @@ function isValidParentheses(s: string): boolean {
 }
 ```
 
-**Time:** O(n) — single pass
-**Space:** O(n) — stack stores opening brackets
+**Time:** O(n) â€” single pass
+**Space:** O(n) â€” stack stores opening brackets
 
 **Edge cases:**
-- Empty string → true
-- Odd length → false (one unmatched)
-- Closing without opening → false
+- Empty string â†’ true
+- Odd length â†’ false (one unmatched)
+- Closing without opening â†’ false
 </details>
 
 ---
@@ -412,30 +412,30 @@ function isValidParentheses(s: string): boolean {
 <summary><b>Solution</b></summary>
 
 Steps:
-1. Fill 5L jug → (3L: 0, 5L: 5)
-2. Pour 5L → 3L jug → (3L: 3, 5L: 2)
-3. Empty 3L jug → (3L: 0, 5L: 2)
-4. Pour 5L → 3L jug → (3L: 2, 5L: 0)
-5. Fill 5L jug → (3L: 2, 5L: 5)
-6. Pour 5L → 3L jug (until full, 1L from 5L) → (3L: 3, 5L: 4)
+1. Fill 5L jug â†’ (3L: 0, 5L: 5)
+2. Pour 5L â†’ 3L jug â†’ (3L: 3, 5L: 2)
+3. Empty 3L jug â†’ (3L: 0, 5L: 2)
+4. Pour 5L â†’ 3L jug â†’ (3L: 2, 5L: 0)
+5. Fill 5L jug â†’ (3L: 2, 5L: 5)
+6. Pour 5L â†’ 3L jug (until full, 1L from 5L) â†’ (3L: 3, 5L: 4)
 
 Now the 5L jug has exactly 4 liters.
 </details>
 
-**Q2.** A bat and a ball cost ₹110 in total. The bat costs ₹100 more than the ball. How much does the ball cost?
+**Q2.** A bat and a ball cost â‚¹110 in total. The bat costs â‚¹100 more than the ball. How much does the ball cost?
 
 <details>
 <summary><b>Solution</b></summary>
 
-Let ball = ₹x, bat = ₹(x + 100)
+Let ball = â‚¹x, bat = â‚¹(x + 100)
 x + (x + 100) = 110
 2x + 100 = 110
 2x = 10
 x = 5
 
-The ball costs ₹5. (Common mistake: saying ₹10 — that would make the bat ₹100, total ₹110, but then bat is only ₹90 more than ball.)
+The ball costs â‚¹5. (Common mistake: saying â‚¹10 â€” that would make the bat â‚¹100, total â‚¹110, but then bat is only â‚¹90 more than ball.)
 
-**Answer: ₹5**
+**Answer: â‚¹5**
 </details>
 
 **Q3.** If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets?
@@ -443,9 +443,9 @@ The ball costs ₹5. (Common mistake: saying ₹10 — that would make the bat �
 <details>
 <summary><b>Solution</b></summary>
 
-5 machines → 5 widgets in 5 minutes
-1 machine → 1 widget in 5 minutes (each machine takes 5 min per widget)
-100 machines → 100 widgets in 5 minutes (they all work in parallel)
+5 machines â†’ 5 widgets in 5 minutes
+1 machine â†’ 1 widget in 5 minutes (each machine takes 5 min per widget)
+100 machines â†’ 100 widgets in 5 minutes (they all work in parallel)
 
 **Answer: 5 minutes**
 </details>
@@ -458,9 +458,9 @@ The ball costs ₹5. (Common mistake: saying ₹10 — that would make the bat �
 1. Turn on switch 1 and leave it on for 5 minutes.
 2. Turn off switch 1 and turn on switch 2.
 3. Enter the room with bulbs.
-   - Bulb that's ON → switch 2
-   - Bulb that's OFF but WARM → switch 1
-   - Bulb that's OFF and COLD → switch 3
+   - Bulb that's ON â†’ switch 2
+   - Bulb that's OFF but WARM â†’ switch 1
+   - Bulb that's OFF and COLD â†’ switch 3
 </details>
 
 **Q5.** A farmer has 17 sheep. All but 9 die. How many are left?
@@ -491,7 +491,7 @@ You can subtract 5 from 25 exactly **once**. After that, you're subtracting 5 fr
 - Take 1st pill at time 0
 - Take 2nd pill at time 30 min
 - Take 3rd pill at time 60 min
-Total duration = 60 minutes (1 hour) — from first pill to last pill.
+Total duration = 60 minutes (1 hour) â€” from first pill to last pill.
 
 **Answer: 1 hour**
 </details>
@@ -504,7 +504,7 @@ Total duration = 60 minutes (1 hour) — from first pill to last pill.
 Trains approach each other at combined speed of 50 + 50 = 100 km/h.
 Time to meet = 100 / 100 = 1 hour.
 The bee flies at 75 km/h for 1 hour.
-Distance flown = 75 × 1 = 75 km.
+Distance flown = 75 Ã— 1 = 75 km.
 
 **Answer: 75 km**
 </details>
@@ -542,16 +542,16 @@ If you overtake the person in second place, you take their position.
 
 ### Number Systems
 
-**Q1.** Find the remainder when 7²⁵ is divided by 5.
+**Q1.** Find the remainder when 7Â²âµ is divided by 5.
 
 <details>
 <summary><b>Solution</b></summary>
 
 7 mod 5 = 2
-We need 2²⁵ mod 5
-Cycle of 2ⁿ mod 5: 2, 4, 3, 1 (cycle of 4)
+We need 2Â²âµ mod 5
+Cycle of 2â¿ mod 5: 2, 4, 3, 1 (cycle of 4)
 25 mod 4 = 1
-2²⁵ mod 5 = 2¹ mod 5 = 2
+2Â²âµ mod 5 = 2Â¹ mod 5 = 2
 
 **Answer: 2**
 </details>
@@ -561,8 +561,8 @@ Cycle of 2ⁿ mod 5: 2, 4, 3, 1 (cycle of 4)
 <details>
 <summary><b>Solution</b></summary>
 
-Numbers divisible by 3: ⌊200/3⌋ = 66
-Numbers divisible by both 3 and 7 (i.e., 21): ⌊200/21⌋ = 9
+Numbers divisible by 3: âŒŠ200/3âŒ‹ = 66
+Numbers divisible by both 3 and 7 (i.e., 21): âŒŠ200/21âŒ‹ = 9
 Numbers divisible by 3 but not by 7: 66 - 9 = 57
 
 **Answer: 57**
@@ -573,36 +573,36 @@ Numbers divisible by 3 but not by 7: 66 - 9 = 57
 <details>
 <summary><b>Solution</b></summary>
 
-144 = 2⁴ × 3²
-180 = 2² × 3² × 5
-252 = 2² × 3² × 7
-HCF = 2² × 3² = 4 × 9 = 36
+144 = 2â´ Ã— 3Â²
+180 = 2Â² Ã— 3Â² Ã— 5
+252 = 2Â² Ã— 3Â² Ã— 7
+HCF = 2Â² Ã— 3Â² = 4 Ã— 9 = 36
 
 **Answer: 36**
 </details>
 
 ### Simple and Compound Interest
 
-**Q4.** A sum of ₹10,000 invested at 10% p.a. for 2 years. Find the difference between CI and SI.
+**Q4.** A sum of â‚¹10,000 invested at 10% p.a. for 2 years. Find the difference between CI and SI.
 
 <details>
 <summary><b>Solution</b></summary>
 
-SI = (P × R × T) / 100 = (10000 × 10 × 2) / 100 = ₹2000
-CI = P × (1 + R/100)^T - P = 10000 × (1.1)² - 10000 = 12100 - 10000 = ₹2100
-Difference = 2100 - 2000 = ₹100
+SI = (P Ã— R Ã— T) / 100 = (10000 Ã— 10 Ã— 2) / 100 = â‚¹2000
+CI = P Ã— (1 + R/100)^T - P = 10000 Ã— (1.1)Â² - 10000 = 12100 - 10000 = â‚¹2100
+Difference = 2100 - 2000 = â‚¹100
 
-**Answer: ₹100**
+**Answer: â‚¹100**
 </details>
 
-**Q5.** At what rate % per annum will ₹800 amount to ₹1000 in 2 years at SI?
+**Q5.** At what rate % per annum will â‚¹800 amount to â‚¹1000 in 2 years at SI?
 
 <details>
 <summary><b>Solution</b></summary>
 
-SI = 1000 - 800 = ₹200
-SI = (P × R × T) / 100
-200 = (800 × R × 2) / 100
+SI = 1000 - 800 = â‚¹200
+SI = (P Ã— R Ã— T) / 100
+200 = (800 Ã— R Ã— 2) / 100
 200 = 16R
 R = 200/16 = 12.5%
 
@@ -619,7 +619,7 @@ R = 200/16 = 12.5%
 A's 1 day work = 1/12
 B's 1 day work = 1/15
 Both together 1 day = 1/12 + 1/15 = (5+4)/60 = 9/60 = 3/20
-Work in 5 days = 5 × 3/20 = 15/20 = 3/4
+Work in 5 days = 5 Ã— 3/20 = 15/20 = 3/4
 Remaining = 1/4
 B's time for remaining = (1/4) / (1/15) = 15/4 = 3.75 days
 
@@ -631,7 +631,7 @@ B's time for remaining = (1/4) / (1/15) = 15/4 = 3.75 days
 <details>
 <summary><b>Solution</b></summary>
 
-Total work = 15 × 24 = 375... wait, let me recalculate: 15 × 24 = 360 man-days
+Total work = 15 Ã— 24 = 375... wait, let me recalculate: 15 Ã— 24 = 360 man-days
 For 18 days: Men needed = 360 / 18 = 20
 Additional men = 20 - 15 = 5
 
@@ -645,7 +645,7 @@ Additional men = 20 - 15 = 5
 <details>
 <summary><b>Solution</b></summary>
 
-Total outcomes = 6 × 6 = 36
+Total outcomes = 6 Ã— 6 = 36
 Favorable outcomes (sum = 7): (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) = 6 outcomes
 Probability = 6/36 = 1/6
 
@@ -658,8 +658,8 @@ Probability = 6/36 = 1/6
 <summary><b>Solution</b></summary>
 
 Total balls = 12
-Ways to draw 3 from 12 = ¹²C₃ = 220
-Ways to draw 3 reds from 5 = ⁵C₃ = 10
+Ways to draw 3 from 12 = Â¹Â²Câ‚ƒ = 220
+Ways to draw 3 reds from 5 = âµCâ‚ƒ = 10
 Probability = 10/220 = 1/22
 
 **Answer: 1/22**
@@ -672,10 +672,10 @@ Probability = 10/220 = 1/22
 <details>
 <summary><b>Solution</b></summary>
 
-First digit: 1-9 (cannot be 0) → 9 choices
-Second digit: remaining 9 (including 0) → 9 choices
+First digit: 1-9 (cannot be 0) â†’ 9 choices
+Second digit: remaining 9 (including 0) â†’ 9 choices
 Third: 8 choices, Fourth: 7 choices
-Total = 9 × 9 × 8 × 7 = 4536
+Total = 9 Ã— 9 Ã— 8 Ã— 7 = 4536
 
 **Answer: 4536**
 </details>
@@ -687,22 +687,22 @@ Total = 9 × 9 × 8 × 7 = 4536
 
 First arrange 5 boys: 5! = 120 ways
 This creates 6 gaps (including ends): _B_B_B_B_B_
-Choose 3 gaps for 3 girls: ⁶C₃ = 20 ways
+Choose 3 gaps for 3 girls: â¶Câ‚ƒ = 20 ways
 Arrange girls in those gaps: 3! = 6 ways
-Total = 120 × 20 × 6 = 14,400
+Total = 120 Ã— 20 Ã— 6 = 14,400
 
 **Answer: 14,400 ways**
 </details>
 
 ### Mixtures and Allegations
 
-**Q12.** In what ratio must water be mixed with milk costing ₹40/L to get a mixture worth ₹35/L?
+**Q12.** In what ratio must water be mixed with milk costing â‚¹40/L to get a mixture worth â‚¹35/L?
 
 <details>
 <summary><b>Solution</b></summary>
 
 Using allegation:
-Milk (40)   ────   35 ────   Water (0)
+Milk (40)   â”€â”€â”€â”€   35 â”€â”€â”€â”€   Water (0)
                   / \
         (35-0)=35   (40-35)=5
 Ratio = 35 : 5 = 7 : 1 (Milk : Water)
@@ -717,9 +717,9 @@ Ratio = 35 : 5 = 7 : 1 (Milk : Water)
 <details>
 <summary><b>Solution</b></summary>
 
-Area = (√3/4) × side² = (√3/4) × 144 = 36√3 cm²
+Area = (âˆš3/4) Ã— sideÂ² = (âˆš3/4) Ã— 144 = 36âˆš3 cmÂ²
 
-**Answer: 36√3 cm²**
+**Answer: 36âˆš3 cmÂ²**
 </details>
 
 **Q14.** Two circles of radii 8 cm and 6 cm intersect such that the distance between centers is 10 cm. Find the length of the common chord.
@@ -727,33 +727,33 @@ Area = (√3/4) × side² = (√3/4) × 144 = 36√3 cm²
 <details>
 <summary><b>Solution</b></summary>
 
-Let centers be O₁ and O₂, distance = 10.
-Radii r₁ = 8, r₂ = 6.
+Let centers be Oâ‚ and Oâ‚‚, distance = 10.
+Radii râ‚ = 8, râ‚‚ = 6.
 Using intersecting chords: The line joining centers is perpendicular to the common chord.
-Let the chord intersect O₁O₂ at M, O₁M = x, O₂M = 10-x
-r₁² - x² = r₂² - (10-x)²
-64 - x² = 36 - (100 - 20x + x²)
-64 - x² = 36 - 100 + 20x - x²
+Let the chord intersect Oâ‚Oâ‚‚ at M, Oâ‚M = x, Oâ‚‚M = 10-x
+râ‚Â² - xÂ² = râ‚‚Â² - (10-x)Â²
+64 - xÂ² = 36 - (100 - 20x + xÂ²)
+64 - xÂ² = 36 - 100 + 20x - xÂ²
 64 = -64 + 20x
 128 = 20x
 x = 6.4
-Half chord length = √(r₁² - x²) = √(64 - 40.96) = √23.04 = 4.8
-Full chord length = 2 × 4.8 = 9.6 cm
+Half chord length = âˆš(râ‚Â² - xÂ²) = âˆš(64 - 40.96) = âˆš23.04 = 4.8
+Full chord length = 2 Ã— 4.8 = 9.6 cm
 
 **Answer: 9.6 cm**
 </details>
 
 ### Data Interpretation
 
-**Q15.** A company's revenue in 2022 was ₹500 Cr, growing by 10% in 2023. If costs were ₹350 Cr in 2022 and increased by 8% in 2023, find the profit percentage in 2023.
+**Q15.** A company's revenue in 2022 was â‚¹500 Cr, growing by 10% in 2023. If costs were â‚¹350 Cr in 2022 and increased by 8% in 2023, find the profit percentage in 2023.
 
 <details>
 <summary><b>Solution</b></summary>
 
-Revenue 2023 = 500 × 1.1 = ₹550 Cr
-Costs 2023 = 350 × 1.08 = ₹378 Cr
-Profit 2023 = 550 - 378 = ₹172 Cr
-Profit % = (172 / 550) × 100 = 31.27%
+Revenue 2023 = 500 Ã— 1.1 = â‚¹550 Cr
+Costs 2023 = 350 Ã— 1.08 = â‚¹378 Cr
+Profit 2023 = 550 - 378 = â‚¹172 Cr
+Profit % = (172 / 550) Ã— 100 = 31.27%
 
 **Answer: 31.27%**
 </details>
@@ -766,7 +766,7 @@ Profit % = (172 / 550) × 100 = 31.27%
 
 **Q1-3.** Read the following passage and answer:
 
-*"Artificial Intelligence is transforming the global economy at an unprecedented pace. While automation has historically affected manufacturing jobs, recent advances in generative AI are now impacting knowledge workers. A McKinsey report suggests that by 2030, up to 30% of current work activities could be automated. However, the same report emphasizes that AI will also create new job categories, much like the internet created roles that didn't exist in the 1990s. The key challenge is reskilling — preparing the workforce for the jobs of tomorrow."*
+*"Artificial Intelligence is transforming the global economy at an unprecedented pace. While automation has historically affected manufacturing jobs, recent advances in generative AI are now impacting knowledge workers. A McKinsey report suggests that by 2030, up to 30% of current work activities could be automated. However, the same report emphasizes that AI will also create new job categories, much like the internet created roles that didn't exist in the 1990s. The key challenge is reskilling â€” preparing the workforce for the jobs of tomorrow."*
 
 **Q1.** According to the passage, what is the key challenge posed by AI?
 
@@ -774,7 +774,7 @@ Profit % = (172 / 550) × 100 = 31.27%
 <summary><b>Solution</b></summary>
 
 **Answer: Reskilling the workforce for future jobs.**
-The passage states: "The key challenge is reskilling — preparing the workforce for the jobs of tomorrow."
+The passage states: "The key challenge is reskilling â€” preparing the workforce for the jobs of tomorrow."
 </details>
 
 **Q2.** How does the author describe AI's impact on knowledge workers compared to past automation?
@@ -817,7 +817,7 @@ a) a  b) an  c) the  d) no article
 <summary><b>Solution</b></summary>
 
 **Answer: a) a**
-"University" begins with a consonant sound (/juː/), so we use "a" not "an."
+"University" begins with a consonant sound (/juË/), so we use "a" not "an."
 </details>
 
 **Q6.** Identify the error: "Neither the manager nor his team members was present at the meeting."
@@ -851,7 +851,7 @@ S: Early mobile phones had physical keyboards and small screens
 <details>
 <summary><b>Solution</b></summary>
 
-Correct sequence: S → Q → P → R
+Correct sequence: S â†’ Q â†’ P â†’ R
 S: Early mobile phones had physical keyboards and small screens (starting point)
 Q: The introduction of touchscreens revolutionized mobile interfaces (change)
 P: This led to widespread adoption of smartphones (result)
@@ -889,32 +889,32 @@ Benevolent means well-meaning and kindly. Malevolent means having or showing a w
 <details>
 <summary><b>Solution</b></summary>
 
-A=1, P=16, P=16, L=12, E=5 → 1+16+16+12+5 = 50
-M=13, A=1, N=14, G=7, O=15 → 13+1+14+7+15 = 50
+A=1, P=16, P=16, L=12, E=5 â†’ 1+16+16+12+5 = 50
+M=13, A=1, N=14, G=7, O=15 â†’ 13+1+14+7+15 = 50
 
 Wait, that's 50, not 52. Let me re-examine.
-Actually, A=1, P=16, P=16, L=12, E=5 → Sum = 50. That's correct.
-M=13, A=1, N=14, G=7, O=15 → Sum = 50. Hmm...
+Actually, A=1, P=16, P=16, L=12, E=5 â†’ Sum = 50. That's correct.
+M=13, A=1, N=14, G=7, O=15 â†’ Sum = 50. Hmm...
 
 Alternate pattern: Letters could be numbered from Z=1, Y=2... or position doubled.
-A=1×2=2, P=16×2=32, P=32, L=12×2=24, E=5×2=10 → 2+32+32+24+10 = 100. No.
+A=1Ã—2=2, P=16Ã—2=32, P=32, L=12Ã—2=24, E=5Ã—2=10 â†’ 2+32+32+24+10 = 100. No.
 
-Let me try: A=1²=1, P=16²=256... too large.
+Let me try: A=1Â²=1, P=16Â²=256... too large.
 
 Another approach - number of straight lines:
-APPLE: A=3, P=2, P=2, L=2, E=4 → 3+2+2+2+4 = 13. No.
+APPLE: A=3, P=2, P=2, L=2, E=4 â†’ 3+2+2+2+4 = 13. No.
 
 Actually the common Infosys coding pattern: A=1, B=2... sum of positions.
 APPLE = 1+16+16+12+5 = 50
 MANGO = 13+1+14+7+15 = 50
 
 Both sum to 50... Perhaps MANGO should give 52 based on a different rule.
-Maybe: Vowels count as double. A=1×2=2, E=5×2=10, I=9×2=18, O=15×2=30, U=21×2=42.
+Maybe: Vowels count as double. A=1Ã—2=2, E=5Ã—2=10, I=9Ã—2=18, O=15Ã—2=30, U=21Ã—2=42.
 
 APPLE: A(2) + P(16) + P(16) + L(12) + E(10) = 56. No.
 
 Let me try a well-known Infosys puzzle: Values are A=1, B=2, etc., but multiplied differently.
-Actually, the common answer is: In APPLE, A=1, P=16, P=16, L=12, E=5 → 1+16+16+12+5 = 50. In MANGO, M=13, A=1, N=14, G=7, O=15 → 13+1+14+7+15 = 50. So both are 50. But the question says MANGO=52. So there must be a different encoding.
+Actually, the common answer is: In APPLE, A=1, P=16, P=16, L=12, E=5 â†’ 1+16+16+12+5 = 50. In MANGO, M=13, A=1, N=14, G=7, O=15 â†’ 13+1+14+7+15 = 50. So both are 50. But the question says MANGO=52. So there must be a different encoding.
 
 If we use A=1, B=2... but with vowel positions doubled: A(1), E(5), I(9), O(15), U(21) treated as is. Then the sum for MANGO = 13+1+14+7+15 = 50. Still not 52.
 
@@ -922,7 +922,7 @@ Given the puzzle constraint, let's consider each letter's value = position in al
 APPLE: A(1+1=2) + P(16) + P(16) + L(12) + E(5+1=6) = 52... no, that's 52 for APPLE.
 
 Let me just accept the common answer approach: Standard alphabet position sum.
-APPLE = 50, MANGO = 50. ORANGE: O=15, R=18, A=1, N=14, G=7, E=5 → 15+18+1+14+7+5 = 60.
+APPLE = 50, MANGO = 50. ORANGE: O=15, R=18, A=1, N=14, G=7, E=5 â†’ 15+18+1+14+7+5 = 60.
 
 **Answer: 60** (based on standard alphabet position sum)
 </details>
@@ -941,11 +941,11 @@ Given conditions:
 Let's try D at position 1:
 Positions: 1=D, 2=?, 3=?, 4=?, 5=?
 A_C pattern means A and C are two consecutive positions. Possible: (2,3) or (3,4) or (4,5)
-If A=2, C=3: E is left of C = position 1 (but D is there) → impossible
+If A=2, C=3: E is left of C = position 1 (but D is there) â†’ impossible
 If A=3, C=4: E left of C = position 1 or 2. E can't be at 1 (D is there). E=2.
-Then A=3, B!=2 (A not next to B — A=3, so B≠2 and B≠4). B=5.
+Then A=3, B!=2 (A not next to B â€” A=3, so Bâ‰ 2 and Bâ‰ 4). B=5.
 Positions: D, E, A, C, B = D, E, A, C, B
-Check: A not next to B (A=3, B=5 ✓), E left of C (E=2, C=4 ✓), C right of A (A=3, C=4 ✓)
+Check: A not next to B (A=3, B=5 âœ“), E left of C (E=2, C=4 âœ“), C right of A (A=3, C=4 âœ“)
 Middle position (3) = A
 
 **Answer: A**
@@ -958,7 +958,7 @@ Middle position (3) = A
 
 From 8 AM to 2 PM next day = 30 hours
 Clock gains 10 min in 24 hours = 10/24 min per hour = 5/12 min per hour
-In 30 hours, gain = 30 × 5/12 = 150/12 = 12.5 minutes
+In 30 hours, gain = 30 Ã— 5/12 = 150/12 = 12.5 minutes
 Clock shows 2:00 PM but it has gained 12.5 minutes
 True time = 2:00 PM - 12.5 min = 1:47:30 PM
 
@@ -985,9 +985,9 @@ Neither = 150 - 120 = 30
 <details>
 <summary><b>Solution</b></summary>
 
-3 cats → 3 rats in 3 minutes
-1 cat → 1 rat in 3 minutes
-1 cat → 1/3 rat per minute
+3 cats â†’ 3 rats in 3 minutes
+1 cat â†’ 1 rat in 3 minutes
+1 cat â†’ 1/3 rat per minute
 For 100 rats in 100 minutes: Rate needed = 100/100 = 1 rat per minute
 Cats needed = 1 / (1/3) = 3 cats
 
@@ -1002,16 +1002,16 @@ Cats needed = 1 / (1/3) = 3 cats
 
 | Area | Strategy |
 |------|----------|
-| **Coding** | Focus on DSA — LeetCode Medium. Infosys SP coding is harder than regular InfyTQ |
+| **Coding** | Focus on DSA â€” LeetCode Medium. Infosys SP coding is harder than regular InfyTQ |
 | **Technical Interview** | Be ready for deep dives into your projects, especially any live projects |
-| **CS Fundamentals** | OOPs concepts, DBMS normalization, OS processes — expect detailed questions |
+| **CS Fundamentals** | OOPs concepts, DBMS normalization, OS processes â€” expect detailed questions |
 
 ### For Digital Specialist Engineer (DSE):
 
 | Area | Strategy |
 |------|----------|
-| **Generic Test** | Speed matters — answer all questions, no negative marking |
-| **Coding** | 2 problems in 60 min — focus on arrays, strings, and hash maps |
+| **Generic Test** | Speed matters â€” answer all questions, no negative marking |
+| **Coding** | 2 problems in 60 min â€” focus on arrays, strings, and hash maps |
 | **Technical Interview** | Java/Python proficiency, basic DBMS, project discussion |
 
 ### For Systems Engineer (SE):
@@ -1019,24 +1019,24 @@ Cats needed = 1 / (1/3) = 3 cats
 | Area | Strategy |
 |------|----------|
 | **Quantitative** | Practice 10-15 questions daily. Focus on time-speed-distance, percentages |
-| **Reasoning** | Puzzles and logical reasoning — Infosys loves puzzle questions |
+| **Reasoning** | Puzzles and logical reasoning â€” Infosys loves puzzle questions |
 | **Verbal** | Reading comprehension and grammar basics |
-| **HR** | "Why Infosys?" — mention Infosys' training programs, global exposure |
+| **HR** | "Why Infosys?" â€” mention Infosys' training programs, global exposure |
 
 ---
 
 ## Summary
 
-This chapter provided a comprehensive Infosys SP & DSE question bank with 5 coding problems covering arrays, strings, stacks, and DP — mirroring the Infosys coding test difficulty. The 10 puzzles represent the unique logical reasoning style Infosys uses in their selection process. The 15 quant questions span number systems, interest, work-time, probability, P&C, and geometry — all Infosys-tested topics. The 10 verbal questions cover comprehension, grammar, and vocabulary essentials.
+This chapter provided a comprehensive Infosys SP & DSE question bank with 5 coding problems covering arrays, strings, stacks, and DP â€” mirroring the Infosys coding test difficulty. The 10 puzzles represent the unique logical reasoning style Infosys uses in their selection process. The 15 quant questions span number systems, interest, work-time, probability, P&C, and geometry â€” all Infosys-tested topics. The 10 verbal questions cover comprehension, grammar, and vocabulary essentials.
 
 ## Practical Takeaways
 
 1. **For SP role:** Master DSA (Medium level). Your coding round score determines your role.
-2. **For DSE/SE:** The generic test is a speed game — practice with 45-second-per-question discipline.
+2. **For DSE/SE:** The generic test is a speed game â€” practice with 45-second-per-question discipline.
 3. **Puzzles set Infosys apart:** No other company tests puzzles as consistently. Practice 50+ puzzles before the exam.
 4. **Project preparation is crucial:** Infosys technical interviews focus heavily on your projects. Prepare 2-3 projects in depth.
-5. **⭐ Must-Know:** Infosys values communication skills. Even in technical rounds, explain your approach clearly before writing code.
-6. **Resume matters:** Infosys SP role specifically looks at your resume for live projects and internships — ensure they are prominently listed.
+5. **â­ Must-Know:** Infosys values communication skills. Even in technical rounds, explain your approach clearly before writing code.
+6. **Resume matters:** Infosys SP role specifically looks at your resume for live projects and internships â€” ensure they are prominently listed.
 
 ## Chapter Quiz
 
@@ -1045,7 +1045,7 @@ a) 45  b) 63  c) 55  d) 61
 
 <details>
 <summary>Answer: b) 63</summary>
-Pattern: Each term = previous × 2 + 1. 31×2+1 = 63.
+Pattern: Each term = previous Ã— 2 + 1. 31Ã—2+1 = 63.
 </details>
 
 **Q2.** A sum doubles in 5 years at SI. In how many years will it become 4 times?
@@ -1053,7 +1053,7 @@ a) 10  b) 15  c) 20  d) 12
 
 <details>
 <summary>Answer: b) 15</summary>
-SI: P→2P in 5 years means R = (P×100)/(P×5) = 20%. To become 4P: P grows by 3P. 3P = (P×20×T)/100 → T = 15 years.
+SI: Pâ†’2P in 5 years means R = (PÃ—100)/(PÃ—5) = 20%. To become 4P: P grows by 3P. 3P = (PÃ—20Ã—T)/100 â†’ T = 15 years.
 </details>
 
 **Q3.** In a code language, "able was ere saw elba" reversed is?
@@ -1061,7 +1061,7 @@ a) able was ere saw elba  b) elba saw ere was able  c) ablewaseresawelba  d) Pal
 
 <details>
 <summary>Answer: b) elba saw ere was able</summary>
-The phrase is a palindrome — it reads the same forwards and backwards when spaces are removed. Reversing the word order gives "elba saw ere was able."
+The phrase is a palindrome â€” it reads the same forwards and backwards when spaces are removed. Reversing the word order gives "elba saw ere was able."
 </details>
 
 **Q4.** What is the probability of getting at least one head when tossing 3 unbiased coins?
@@ -1151,7 +1151,7 @@ function longestPalindrome(s: string): string {
 }
 ```
 
-**Time:** O(n²), **Space:** O(1)
+**Time:** O(nÂ²), **Space:** O(1)
 
 **Infosys context:** This expand-around-center approach is elegant and doesn't need extra DP space.
 </details>
@@ -1160,9 +1160,9 @@ function longestPalindrome(s: string): string {
 
 ## Exercises
 
-1. **Coding:** Solve "Rotate Array" (LeetCode 189) — Infosys SP pattern.
+1. **Coding:** Solve "Rotate Array" (LeetCode 189) â€” Infosys SP pattern.
 2. **Puzzle:** Three ants are on the vertices of a triangle. Each ant moves along the edge with equal probability. What is the probability they never collide?
 3. **Quant:** The ratio of ages of A and B is 3:4. In 12 years, the ratio becomes 5:6. Find their present ages.
 4. **Verbal:** Write a precis (summary) of a 150-word passage on cloud computing in 50 words.
-5. **Coding:** Implement a function to check if two strings are anagrams — Infosys frequent question.
+5. **Coding:** Implement a function to check if two strings are anagrams â€” Infosys frequent question.
 </details>

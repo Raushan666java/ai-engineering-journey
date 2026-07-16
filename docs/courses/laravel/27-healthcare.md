@@ -1,4 +1,4 @@
-# Chapter 27: Healthcare AI Agents
+﻿# Chapter 27: Healthcare AI Agents
 
 > **Previous:** [Business Automation Agents](./26-business-automation-agents.md) | **Next:** [Finance](./28-finance.md)
 
@@ -13,22 +13,22 @@
 - Automate appointment scheduling with an agent that checks slot availability, books, reschedules, and sends reminders
 - Build a claims processing agent that validates, flags fraud, submits, and tracks insurance claims through a multi-stage workflow
 - Develop a lab-review diagnostic assistance agent that flags critical values and notifies providers
-- Create a medication management agent that checks drugÃ¢â‚¬â€œdrug interactions and schedules refill reminders
+- Create a medication management agent that checks drugÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“drug interactions and schedules refill reminders
 - Generate weekly healthcare analytics reports via an AI agent that summarizes patient outcomes and clinic efficiency
 
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/27-healthcare/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/27-healthcare/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/27-healthcare/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/27-healthcare/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/27-healthcare/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/27-healthcare/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/27-healthcare/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/27-healthcare/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/27-healthcare/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/27-healthcare/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/27-healthcare/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/27-healthcare/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -87,7 +87,7 @@ Healthcare applications operate under strict regulatory requirements. The Health
 
 #### The Five Core Models
 
-Every healthcare domain starts with five foundational entities Ã¢â‚¬â€ Patient, Provider, Appointment, MedicalRecord, and Claim. Each model must enforce encryption for Protected Health Information (PHI), maintain a complete audit trail, and respect role-based access.
+Every healthcare domain starts with five foundational entities ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Patient, Provider, Appointment, MedicalRecord, and Claim. Each model must enforce encryption for Protected Health Information (PHI), maintain a complete audit trail, and respect role-based access.
 
 #### Migration for the Patients Table with Encrypted Fields
 
@@ -616,7 +616,7 @@ class PatientController extends Controller
 
 > **One-Sentence Takeaway:** Patient agents handle CRUD operations on patient records with role-based access and audit logging.
 
-A patient intake agent automates the registration pipeline: it ingests unstructured referral documents (emails, PDF text, fax transcripts), extracts structured patient data, creates the patient record, and schedules an initial appointment Ã¢â‚¬â€ all without manual data entry.
+A patient intake agent automates the registration pipeline: it ingests unstructured referral documents (emails, PDF text, fax transcripts), extracts structured patient data, creates the patient record, and schedules an initial appointment ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â all without manual data entry.
 
 ```php
 <?php
@@ -643,7 +643,7 @@ class PatientIntakeAgent implements Agent
         return <<<PROMPT
 You are a patient intake agent in a healthcare system.
 
-You receive unstructured referral data Ã¢â‚¬â€ text extracted from referral forms,
+You receive unstructured referral data ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â text extracted from referral forms,
 emails, or fax documents. Your job is to extract structured patient information
 and schedule an initial appointment.
 
@@ -929,12 +929,12 @@ You are a clinical decision support agent. Your role is to analyze patient sympt
 and suggest possible diagnoses with supporting evidence from medical literature.
 
 Use the following tools:
-1. `analyze_symptoms` Ã¢â‚¬â€ structure the free-text symptom description
-2. `search_literature` Ã¢â‚¬â€ retrieve relevant medical literature by vector similarity
-3. `suggest_diagnoses` Ã¢â‚¬â€ synthesize findings into ranked differential diagnoses
+1. `analyze_symptoms` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â structure the free-text symptom description
+2. `search_literature` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â retrieve relevant medical literature by vector similarity
+3. `suggest_diagnoses` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â synthesize findings into ranked differential diagnoses
 
 Always cite the medical literature you use. Note that you are a decision support
-tool Ã¢â‚¬â€ your output must be reviewed by a licensed clinician. Never present
+tool ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â your output must be reviewed by a licensed clinician. Never present
 output as definitive medical advice.
 PROMPT;
     }
@@ -1159,7 +1159,7 @@ Rules:
 - Base your answer ONLY on the retrieved records.
 - If the records do not contain enough information, say so.
 - Always cite the specific records you used.
-- Preserve medical terminology Ã¢â‚¬â€ do not oversimplify.
+- Preserve medical terminology ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â do not oversimplify.
 - Flag any information that appears contradictory across records.
 PROMPT;
     }
@@ -1407,11 +1407,11 @@ booking new appointments, rescheduling existing ones, and processing
 cancellations.
 
 Available actions:
-- "check_availability" Ã¢â‚¬â€ Find open slots for a provider and date range
-- "book" Ã¢â‚¬â€ Book an appointment in a specific slot
-- "reschedule" Ã¢â‚¬â€ Move an existing appointment to a new slot
-- "cancel" Ã¢â‚¬â€ Cancel an existing appointment
-- "suggest_slots" Ã¢â‚¬â€ Recommend the best slots based on patient preference
+- "check_availability" ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Find open slots for a provider and date range
+- "book" ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Book an appointment in a specific slot
+- "reschedule" ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Move an existing appointment to a new slot
+- "cancel" ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Cancel an existing appointment
+- "suggest_slots" ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Recommend the best slots based on patient preference
 
 Always confirm the action was successful and return details the patient
 or staff would need.
@@ -1685,11 +1685,11 @@ You are a claims processing agent. Your job is to validate, assess risk,
 and manage insurance claims through their lifecycle.
 
 Stages:
-1. VALIDATION Ã¢â‚¬â€ Check claim data against payer rules
-2. FRAUD_ASSESSMENT Ã¢â‚¬â€ Score the claim for fraud indicators
-3. SUBMISSION Ã¢â‚¬â€ Submit to the clearinghouse or payer
-4. FOLLOW_UP Ã¢â‚¬â€ Check on the status of submitted claims
-5. ADJUDICATION Ã¢â‚¬â€ Process the payer's response
+1. VALIDATION ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Check claim data against payer rules
+2. FRAUD_ASSESSMENT ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Score the claim for fraud indicators
+3. SUBMISSION ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Submit to the clearinghouse or payer
+4. FOLLOW_UP ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Check on the status of submitted claims
+5. ADJUDICATION ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Process the payer's response
 
 At each stage, provide clear reasoning and structured output.
 PROMPT;
@@ -2186,7 +2186,7 @@ class ReviewLabResultsCommand extends Command
 
 > **One-Sentence Takeaway:** Medication agents check for drug interactions, allergies, and dosage compliance.
 
-Medication agents check for drugÃ¢â‚¬â€œdrug interactions, ensure appropriate dosing, schedule refill reminders, and alert providers about potential issues.
+Medication agents check for drugÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“drug interactions, ensure appropriate dosing, schedule refill reminders, and alert providers about potential issues.
 
 ```php
 <?php
@@ -2214,7 +2214,7 @@ class MedicationAgent implements Agent
         return <<<PROMPT
 You are a medication management agent. Your role is to:
 
-1. Check for drugÃ¢â‚¬â€œdrug interactions between medications
+1. Check for drugÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“drug interactions between medications
 2. Verify appropriate dosing for the patient's age, weight, and conditions
 3. Schedule refill reminders based on prescription duration
 4. Flag medications that may interact with the patient's known allergies
@@ -2444,10 +2444,10 @@ class HealthcareAnalyticsAgent implements Agent
         return <<<PROMPT
 You are a healthcare analytics agent. Generate comprehensive reports on:
 
-1. PATIENT OUTCOMES Ã¢â‚¬â€ Appointment completion rates, no-show trends, patient status
-2. CLINIC EFFICIENCY Ã¢â‚¬â€ Provider utilization, average wait times, slot utilization
-3. FINANCIAL METRICS Ã¢â‚¬â€ Claims processed, approval rates, total billed vs collected
-4. OPERATIONAL TRENDS Ã¢â‚¬â€ Seasonal patterns, peak hours, popular visit types
+1. PATIENT OUTCOMES ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Appointment completion rates, no-show trends, patient status
+2. CLINIC EFFICIENCY ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Provider utilization, average wait times, slot utilization
+3. FINANCIAL METRICS ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Claims processed, approval rates, total billed vs collected
+4. OPERATIONAL TRENDS ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Seasonal patterns, peak hours, popular visit types
 
 Present data as structured summaries with trends, anomalies, and
 actionable recommendations.
@@ -2819,7 +2819,7 @@ class Kernel extends ConsoleKernel
 
 ## Summary
 
-Chapter 27 built a complete healthcare intelligence system on Laravel 13, bridging HIPAA-compliant data architecture with AI agents that automate clinical and administrative workflows. The five foundational models Ã¢â‚¬â€ Patient, Provider, Appointment, MedicalRecord, and Claim Ã¢â‚¬â€ enforce encryption-at-rest for PHI fields via Eloquent accessors, track every data change through the `AuditTrail` trait, and gate access behind Laravel's authorization system.
+Chapter 27 built a complete healthcare intelligence system on Laravel 13, bridging HIPAA-compliant data architecture with AI agents that automate clinical and administrative workflows. The five foundational models ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Patient, Provider, Appointment, MedicalRecord, and Claim ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â enforce encryption-at-rest for PHI fields via Eloquent accessors, track every data change through the `AuditTrail` trait, and gate access behind Laravel's authorization system.
 
 Nine agent classes, each implementing the `Agent` contract, demonstrate the full spectrum of healthcare automation:
 
@@ -2860,4 +2860,4 @@ HIPAA compliance is woven throughout: all PHI is encrypted at the model layer, e
 
 9. **Analytics Dashboard API**: Build a Laravel API endpoint at `GET /api/analytics/dashboard` that returns the latest analytics report data formatted for a frontend charting library (Recharts or Chart.js), including patient outcomes, no-show rates, and financial summaries.
 
-10. **End-to-End Claim Workflow Command**: Write an Artisan command `healthcare:process-claim {claim_id}` that runs the full `ClaimsProcessingAgent` pipeline (validate Ã¢â€ â€™ fraud assess Ã¢â€ â€™ submit Ã¢â€ â€™ check status) and prints a summary of each stage with timing.
+10. **End-to-End Claim Workflow Command**: Write an Artisan command `healthcare:process-claim {claim_id}` that runs the full `ClaimsProcessingAgent` pipeline (validate ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ fraud assess ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ submit ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ check status) and prints a summary of each stage with timing.

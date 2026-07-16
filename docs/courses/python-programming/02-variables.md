@@ -1,4 +1,4 @@
-# Chapter 2: Variables, Types, and Operators
+﻿# Chapter 2: Variables, Types, and Operators
 
 
 > **Previous:** [Introduction to Python](./01-introduction.md) | **Next:** [Control Flow](./03-control-flow.md)
@@ -14,16 +14,16 @@ By the end of this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/02-variables/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/02-variables/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/02-variables/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/02-variables/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/02-variables/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/02-variables/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/02-variables/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/02-variables/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/02-variables/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/02-variables/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/02-variables/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/02-variables/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -783,13 +783,13 @@ const isValid: boolean = true;
 // Python: dynamic typing lets variables change type
 // TypeScript: static typing catches type mismatches at compile time
 let value: number = 10;
-// value = "hello";  // ❌ TypeScript error: Type 'string' not assignable to 'number'
+// value = "hello";  // âŒ TypeScript error: Type 'string' not assignable to 'number'
 
 // Python: type() vs TypeScript: typeof
 console.log(typeof x);                 // "number"
 console.log(typeof name);              // "string"
 
-// Python: isinstance(x, int) → TypeScript: typeof / instanceof
+// Python: isinstance(x, int) â†’ TypeScript: typeof / instanceof
 console.log(typeof x === "number");    // true
 
 // Python: None vs TypeScript: null / undefined
@@ -807,11 +807,11 @@ console.log(`Name: ${name}, Age: ${age}`);
 // Equivalent Python: print(f"Name: {name}, Age: {age}")
 
 // Python: chained comparisons are not available in TypeScript
-// Python: 1 < x < 10  →  TypeScript: x > 1 && x < 10
+// Python: 1 < x < 10  â†’  TypeScript: x > 1 && x < 10
 const checkRange = (x: number): boolean => x > 1 && x < 10;
 
 // Python: walrus operator (:=) has no TypeScript equivalent
-// Python: if (n := len(x)) > 0:  →  TypeScript: const n = x.length; if (n > 0)
+// Python: if (n := len(x)) > 0:  â†’  TypeScript: const n = x.length; if (n > 0)
 ```
 
 ### TypeScript Utilities

@@ -1,6 +1,6 @@
-# Chapter 36: Manufacturing & Industrial → AI-Powered Factory Agents
+﻿# Chapter 36: Manufacturing & Industrial â†’ AI-Powered Factory Agents
 
-> **Previous:** [Legal & Compliance Agents](./35-legal.md) | **Next:** [Enterprise Capstone — Multi-Agent Platform](./37-enterprise-capstone.md)
+> **Previous:** [Legal & Compliance Agents](./35-legal.md) | **Next:** [Enterprise Capstone â€” Multi-Agent Platform](./37-enterprise-capstone.md)
 
 
 
@@ -21,16 +21,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/36-manufacturing/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/36-manufacturing/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/36-manufacturing/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/36-manufacturing/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/36-manufacturing/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/36-manufacturing/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/36-manufacturing/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/36-manufacturing/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/36-manufacturing/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/36-manufacturing/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/36-manufacturing/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/36-manufacturing/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -136,10 +136,10 @@ flowchart LR
 ---
 
 ## Theory
-> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
 
 ![Manufacturing Domain](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/36-manufacturing.png)
 
@@ -1080,7 +1080,7 @@ class QualityControlAgent
 ### 36.4 IoT Data Ingestion & Processing
 
 
-Industrial IoT sensors generate millions of data points per day → temperature, vibration, pressure, RPM, energy consumption, and dozens of other metrics. The IoTDataIngestionAgent handles the ingestion pipeline: parsing raw sensor payloads, validating against thresholds, detecting statistical anomalies, and routing alerts to the appropriate teams.
+Industrial IoT sensors generate millions of data points per day â†’ temperature, vibration, pressure, RPM, energy consumption, and dozens of other metrics. The IoTDataIngestionAgent handles the ingestion pipeline: parsing raw sensor payloads, validating against thresholds, detecting statistical anomalies, and routing alerts to the appropriate teams.
 
 ```php
 <?php
@@ -1577,7 +1577,7 @@ class ProductionSchedulingAgent
 ### 36.6 Safety Compliance Monitoring
 
 
-Manufacturing facilities operate under strict safety regulations → OSHA, ISO 45001, and industry-specific standards. A SafetyComplianceAgent monitors incident reports, tracks safety metrics, analyzes near-miss patterns, and generates compliance documentation automatically.
+Manufacturing facilities operate under strict safety regulations â†’ OSHA, ISO 45001, and industry-specific standards. A SafetyComplianceAgent monitors incident reports, tracks safety metrics, analyzes near-miss patterns, and generates compliance documentation automatically.
 
 ```php
 <?php
@@ -1797,7 +1797,7 @@ class SafetyComplianceAgent
     protected function escalateCriticalFindings(array $criticalFindings): void
     {
         foreach ($criticalFindings as $finding) {
-            Log::critical("SafetyComplianceAgent: Critical finding → {$finding['description']}");
+            Log::critical("SafetyComplianceAgent: Critical finding â†’ {$finding['description']}");
         }
     }
 }
@@ -1808,7 +1808,7 @@ class SafetyComplianceAgent
 ### 36.7 Inventory Automation
 
 
-Manufacturing inventory is complex → raw materials, work-in-progress, finished goods, and consumables each have different reorder patterns. An InventoryAutomationAgent monitors stock levels across all categories, calculates reorder quantities using demand forecasts, and generates purchase orders automatically when stock falls below threshold.
+Manufacturing inventory is complex â†’ raw materials, work-in-progress, finished goods, and consumables each have different reorder patterns. An InventoryAutomationAgent monitors stock levels across all categories, calculates reorder quantities using demand forecasts, and generates purchase orders automatically when stock falls below threshold.
 
 ```php
 <?php
@@ -2005,7 +2005,7 @@ class InventoryAutomationAgent
 ### 36.8 Equipment Lifecycle Management
 
 
-Industrial equipment represents a significant capital investment that must be managed across its entire lifecycle → from purchase and commissioning through maintenance, calibration, and eventual retirement. An EquipmentLifecycleAgent tracks depreciation, warranty status, calibration schedules, and total cost of ownership to optimize replacement timing and budget planning.
+Industrial equipment represents a significant capital investment that must be managed across its entire lifecycle â†’ from purchase and commissioning through maintenance, calibration, and eventual retirement. An EquipmentLifecycleAgent tracks depreciation, warranty status, calibration schedules, and total cost of ownership to optimize replacement timing and budget planning.
 
 ```php
 <?php
@@ -2649,7 +2649,7 @@ class EquipmentLifecycleAgent
 
 ## Summary
 
-This chapter demonstrated how to build AI-powered manufacturing agents across eight critical domains of factory operations. The **manufacturing data models** provide the relational foundation → Equipment, ProductionOrder, QualityCheck, MaintenanceLog, InventoryItem, and IoTReading → with proper migrations and Eloquent relationships. The **PredictiveMaintenanceAgent** analyzes sensor trends and maintenance history to forecast equipment failures and schedule preventative maintenance before breakdowns occur. The **QualityControlAgent** inspects production data for defects, tracks quality trends over time, and detects parameter drift that signals process degradation. The **IoTDataIngestionAgent** handles the high-volume sensor telemetry pipeline with payload validation, statistical anomaly detection, and automatic alerting. The **ProductionSchedulingAgent** solves the constrained scheduling problem by optimizing order-to-equipment assignments against capacity and priority. The **SafetyComplianceAgent** monitors incident reports, tracks compliance scores, and escalates critical safety findings. The **InventoryAutomationAgent** manages raw material stock levels with demand estimation and automatic reorder calculation. Finally, the **EquipmentLifecycleAgent** tracks the full asset lifecycle → from commissioning through end-of-life → with depreciation modeling, warranty monitoring, and total-cost-of-ownership analysis.
+This chapter demonstrated how to build AI-powered manufacturing agents across eight critical domains of factory operations. The **manufacturing data models** provide the relational foundation â†’ Equipment, ProductionOrder, QualityCheck, MaintenanceLog, InventoryItem, and IoTReading â†’ with proper migrations and Eloquent relationships. The **PredictiveMaintenanceAgent** analyzes sensor trends and maintenance history to forecast equipment failures and schedule preventative maintenance before breakdowns occur. The **QualityControlAgent** inspects production data for defects, tracks quality trends over time, and detects parameter drift that signals process degradation. The **IoTDataIngestionAgent** handles the high-volume sensor telemetry pipeline with payload validation, statistical anomaly detection, and automatic alerting. The **ProductionSchedulingAgent** solves the constrained scheduling problem by optimizing order-to-equipment assignments against capacity and priority. The **SafetyComplianceAgent** monitors incident reports, tracks compliance scores, and escalates critical safety findings. The **InventoryAutomationAgent** manages raw material stock levels with demand estimation and automatic reorder calculation. Finally, the **EquipmentLifecycleAgent** tracks the full asset lifecycle â†’ from commissioning through end-of-life â†’ with depreciation modeling, warranty monitoring, and total-cost-of-ownership analysis.
 
 ---
 

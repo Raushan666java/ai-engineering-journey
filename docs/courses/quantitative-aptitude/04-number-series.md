@@ -1,4 +1,4 @@
-# Chapter 4: Number Series — Missing Number Series, Wrong Number Series, Pattern Identification
+﻿# Chapter 4: Number Series â€” Missing Number Series, Wrong Number Series, Pattern Identification
 
 ## Learning Objectives
 
@@ -13,16 +13,16 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/quantitative-aptitude/04-number-series/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/quantitative-aptitude/04-number-series/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/quantitative-aptitude/04-number-series/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/quantitative-aptitude/04-number-series/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/quantitative-aptitude/04-number-series/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/quantitative-aptitude/04-number-series/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/quantitative-aptitude/04-number-series/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/quantitative-aptitude/04-number-series/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/quantitative-aptitude/04-number-series/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/quantitative-aptitude/04-number-series/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/quantitative-aptitude/04-number-series/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/quantitative-aptitude/04-number-series/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -35,9 +35,9 @@ By the end of this chapter, you will be able to:
 Number Series questions test your ability to identify patterns in sequences of numbers. In IBPS SO Prelims, 5 questions typically appear from this topic.
 
 **Types of Series:**
-1. **Missing Number Series** — A term is missing from a sequence, and you need to find it
-2. **Wrong Number Series** — All terms are present but one is incorrect (does not follow the pattern)
-3. **Pattern Identification** — Identify the pattern and answer follow-up questions
+1. **Missing Number Series** â€” A term is missing from a sequence, and you need to find it
+2. **Wrong Number Series** â€” All terms are present but one is incorrect (does not follow the pattern)
+3. **Pattern Identification** â€” Identify the pattern and answer follow-up questions
 
 ### Common Patterns
 
@@ -49,7 +49,7 @@ A sequence where the difference between consecutive terms is constant.
 a, a+d, a+2d, a+3d, ...
 ```
 
-**Formula:** Tₙ = a + (n-1)d
+**Formula:** Tâ‚™ = a + (n-1)d
 
 **Example:** 5, 10, 15, 20, 25, ... (Common difference = 5)
 
@@ -58,10 +58,10 @@ a, a+d, a+2d, a+3d, ...
 A sequence where each term is obtained by multiplying the previous term by a constant ratio.
 
 ```
-a, ar, ar², ar³, ...
+a, ar, arÂ², arÂ³, ...
 ```
 
-**Formula:** Tₙ = a × r⁽ⁿ⁻¹⁾
+**Formula:** Tâ‚™ = a Ã— râ½â¿â»Â¹â¾
 
 **Example:** 3, 6, 12, 24, 48, ... (Common ratio = 2)
 
@@ -85,14 +85,14 @@ Second differences: 3, 4, 5 (AP with d=1)
 Each term is obtained by multiplying the previous term by a number and then adding/subtracting something.
 
 **Example:** 2, 5, 11, 23, 47, ...
-Pattern: ×2, +1 → 2×2+1=5, 5×2+1=11, 11×2+1=23, 23×2+1=47
+Pattern: Ã—2, +1 â†’ 2Ã—2+1=5, 5Ã—2+1=11, 11Ã—2+1=23, 23Ã—2+1=47
 
 ### 6. Square/Cube Pattern
 
 Terms are related to perfect squares or cubes.
 
 **Example:** 2, 5, 10, 17, 26, 37, ...
-Pattern: 1²+1, 2²+1, 3²+1, 4²+1, 5²+1, 6²+1
+Pattern: 1Â²+1, 2Â²+1, 3Â²+1, 4Â²+1, 5Â²+1, 6Â²+1
 
 ### 7. Prime Number Pattern
 
@@ -130,7 +130,7 @@ Each term depends on the sum of digits or some digit property.
 Multiple operations applied in sequence (add, multiply, subtract, divide in a loop).
 
 **Example:** 3, 4, 8, 9, 18, 19, 38, ...
-Pattern: +1, ×2, +1, ×2, +1, ×2
+Pattern: +1, Ã—2, +1, Ã—2, +1, Ã—2
 
 ## Mermaid Diagram: Pattern Identification Flowchart
 
@@ -145,9 +145,9 @@ flowchart TD
     F -->|"No"| H["Check difference pattern"]
     H --> I{"Differences follow pattern?"}
     I -->|"Yes"| J["Difference series"]
-    I -->|"No"| K["Check × + pattern"]
+    I -->|"No"| K["Check Ã— + pattern"]
     K --> L{"Multiply & add/subtract?"}
-    L -->|"Yes"| M["× + Pattern"]
+    L -->|"Yes"| M["Ã— + Pattern"]
     L -->|"No"| N["Check squares/cubes/primes"]
     N --> O["Identify special pattern"]
     O --> P["Verify with all terms"]
@@ -164,7 +164,7 @@ flowchart LR
     A["Number Series Patterns"] --> B["Arithmetic (AP)"]
     A --> C["Geometric (GP)"]
     A --> D["Difference-based"]
-    A --> E["× + operations"]
+    A --> E["Ã— + operations"]
     A --> F["Squares/Cubes"]
     A --> G["Prime numbers"]
     A --> H["Fibonacci"]
@@ -192,7 +192,7 @@ Answer: 28
 **Solution:**
 Check ratios: 10/5 = 2, 20/10 = 2
 Common ratio = 2
-Missing term = 20 × 2 = 40
+Missing term = 20 Ã— 2 = 40
 Verify: 80/40 = 2, 160/80 = 2
 Answer: 40
 
@@ -201,9 +201,9 @@ Answer: 40
 **Question:** Find the missing term: 2, 5, 10, 17, ?, 37
 
 **Solution:**
-Analyse: 1²+1 = 2, 2²+1 = 5, 3²+1 = 10, 4²+1 = 17, 5²+1 = 26, 6²+1 = 37
-Pattern: n² + 1 where n = 1, 2, 3, 4, 5, 6
-Missing term = 5² + 1 = 26
+Analyse: 1Â²+1 = 2, 2Â²+1 = 5, 3Â²+1 = 10, 4Â²+1 = 17, 5Â²+1 = 26, 6Â²+1 = 37
+Pattern: nÂ² + 1 where n = 1, 2, 3, 4, 5, 6
+Missing term = 5Â² + 1 = 26
 Answer: 26
 
 ### Example 4: Cube Pattern
@@ -211,46 +211,46 @@ Answer: 26
 **Question:** Find the missing term: 7, 19, 67, ?, 219, 331
 
 **Solution:**
-Analyse: 2³ - 1 = 7, 3³ - 8 = 19, 4³ + 3 = 67...
-Better pattern: 2³ - 1 = 7, 3³ - 8 = 19, 4³ + 3 = 67
-Actually: 2³ - 1 = 7, 3³ - 8 = 19, 4³ + 3 = 67
-Wait — let's re-check:
-2³ - 1 = 7
-3³ - 8 = 27 - 8 = 19
-4³ + 3 = 64 + 3 = 67
-5³ - 6 = 125 - 6 = 119
-6³ + 3 = 213... but 219 is given.
+Analyse: 2Â³ - 1 = 7, 3Â³ - 8 = 19, 4Â³ + 3 = 67...
+Better pattern: 2Â³ - 1 = 7, 3Â³ - 8 = 19, 4Â³ + 3 = 67
+Actually: 2Â³ - 1 = 7, 3Â³ - 8 = 19, 4Â³ + 3 = 67
+Wait â€” let's re-check:
+2Â³ - 1 = 7
+3Â³ - 8 = 27 - 8 = 19
+4Â³ + 3 = 64 + 3 = 67
+5Â³ - 6 = 125 - 6 = 119
+6Â³ + 3 = 213... but 219 is given.
 
-Let me re-examine: 2³ - 1 = 8 - 1 = 7; 3³ - 8 = 27 - 8 = 19; 4³ + 3 = 64 + 3 = 67
-Actually the pattern might be: n³ + (alternating ± something). Let's look differently:
-1³ + 6 = 7, 2³ + 11 = 19, 3³ + 40 = 67... no.
+Let me re-examine: 2Â³ - 1 = 8 - 1 = 7; 3Â³ - 8 = 27 - 8 = 19; 4Â³ + 3 = 64 + 3 = 67
+Actually the pattern might be: nÂ³ + (alternating Â± something). Let's look differently:
+1Â³ + 6 = 7, 2Â³ + 11 = 19, 3Â³ + 40 = 67... no.
 
-A cleaner approach: Check for n³ + (n-1):
-2³ + 1 = 9, 2³ - 1 = 7
-3³ - 8 = 19 (but -8 is -(2³))
-4³ + 3 = 67 (and +3 or...)
+A cleaner approach: Check for nÂ³ + (n-1):
+2Â³ + 1 = 9, 2Â³ - 1 = 7
+3Â³ - 8 = 19 (but -8 is -(2Â³))
+4Â³ + 3 = 67 (and +3 or...)
 
 Actually, the correct pattern is:
-(1³+1) + 5 = 7... no.
+(1Â³+1) + 5 = 7... no.
 
-Let me try: 2³ - 1 = 7, 3³ - 8 = 19, 4³ + 3 = 67...
-Actually: 2³ - 1 = 7 (that's clear)
-3³ - 8 = 27 - 8 = 19 (8 = 2³)
-4³ + 3 = 64 + 3 = 67
-5³ - 6 = 125 - 6 = 119
-6³ + 3 = 216 + 3 = 219
-7³ - 6 = 343 - 6 = 337... but 331 is given.
+Let me try: 2Â³ - 1 = 7, 3Â³ - 8 = 19, 4Â³ + 3 = 67...
+Actually: 2Â³ - 1 = 7 (that's clear)
+3Â³ - 8 = 27 - 8 = 19 (8 = 2Â³)
+4Â³ + 3 = 64 + 3 = 67
+5Â³ - 6 = 125 - 6 = 119
+6Â³ + 3 = 216 + 3 = 219
+7Â³ - 6 = 343 - 6 = 337... but 331 is given.
 
-Let me try a different approach for this series. The sequence might be based on n³:
-2³ - 1 = 7
-3³ - 8 = 19
-4³ + 3 = 67
-5³ - 6 = 119
-6³ + 3 = 219
-7³ - 12 = 331
+Let me try a different approach for this series. The sequence might be based on nÂ³:
+2Â³ - 1 = 7
+3Â³ - 8 = 19
+4Â³ + 3 = 67
+5Â³ - 6 = 119
+6Â³ + 3 = 219
+7Â³ - 12 = 331
 
 Hmm. Actually a simpler pattern might be:
-(1³ + 1) + 5 = 7... no.
+(1Â³ + 1) + 5 = 7... no.
 
 OK, let me just work with a simpler example. This is the kind of series that tests different approaches.
 
@@ -259,13 +259,13 @@ Let me use a different cube-based example.
 **Alternative Example:** Find the missing term: 2, 9, 28, 65, ?, 217
 
 **Solution:**
-1³ + 1 = 2
-2³ + 1 = 9
-3³ + 1 = 28
-4³ + 1 = 65
-5³ + 1 = 126
-6³ + 1 = 217
-Missing term = 5³ + 1 = 125 + 1 = 126
+1Â³ + 1 = 2
+2Â³ + 1 = 9
+3Â³ + 1 = 28
+4Â³ + 1 = 65
+5Â³ + 1 = 126
+6Â³ + 1 = 217
+Missing term = 5Â³ + 1 = 125 + 1 = 126
 Answer: 126
 
 ### Example 5: Multiplication & Addition Pattern
@@ -273,13 +273,13 @@ Answer: 126
 **Question:** Find the next term: 3, 7, 15, 31, 63, ?
 
 **Solution:**
-3 × 2 + 1 = 7
-7 × 2 + 1 = 15
-15 × 2 + 1 = 31
-31 × 2 + 1 = 63
-63 × 2 + 1 = 127
+3 Ã— 2 + 1 = 7
+7 Ã— 2 + 1 = 15
+15 Ã— 2 + 1 = 31
+31 Ã— 2 + 1 = 63
+63 Ã— 2 + 1 = 127
 
-Pattern: Each term = previous term × 2 + 1
+Pattern: Each term = previous term Ã— 2 + 1
 Answer: 127
 
 ### Example 6: Alternating Series
@@ -310,9 +310,9 @@ Answer: 48
 **Question:** Find the wrong number in the series: 2, 6, 12, 20, 30, 44, 56
 
 **Solution:**
-Check pattern: 1×2 = 2, 2×3 = 6, 3×4 = 12, 4×5 = 20, 5×6 = 30, 6×7 = 42, 7×8 = 56
-The pattern is n × (n+1) where n = 1, 2, 3, ...
-The 6th term should be 6 × 7 = 42, but 44 is given.
+Check pattern: 1Ã—2 = 2, 2Ã—3 = 6, 3Ã—4 = 12, 4Ã—5 = 20, 5Ã—6 = 30, 6Ã—7 = 42, 7Ã—8 = 56
+The pattern is n Ã— (n+1) where n = 1, 2, 3, ...
+The 6th term should be 6 Ã— 7 = 42, but 44 is given.
 Therefore, 44 is the wrong number.
 Correct term should be 42.
 
@@ -341,27 +341,27 @@ Next = 6! = 720
 Pattern: n! where n = 1, 2, 3, 4, 5, 6
 Answer: 720
 
-### Example 11: IBPS SO Level — Missing Number
+### Example 11: IBPS SO Level â€” Missing Number
 
 **Question:** Find the missing number: 15, 30, 90, 360, 1800, ?
 
 **Solution:**
-15 × 2 = 30
-30 × 3 = 90
-90 × 4 = 360
-360 × 5 = 1800
-1800 × 6 = 10800
+15 Ã— 2 = 30
+30 Ã— 3 = 90
+90 Ã— 4 = 360
+360 Ã— 5 = 1800
+1800 Ã— 6 = 10800
 
-Pattern: ×2, ×3, ×4, ×5, ×6 (multiply by increasing integers)
+Pattern: Ã—2, Ã—3, Ã—4, Ã—5, Ã—6 (multiply by increasing integers)
 Answer: 10,800
 
-### Example 12: IBPS SO Level — Wrong Number
+### Example 12: IBPS SO Level â€” Wrong Number
 
 **Question:** Find the wrong number: 12, 13, 17, 26, 42, 67, 101
 
 **Solution:**
 Differences: 1, 4, 9, 16, 25, 34
-The differences are squares: 1² = 1, 2² = 4, 3² = 9, 4² = 16, 5² = 25, 6² = 36
+The differences are squares: 1Â² = 1, 2Â² = 4, 3Â² = 9, 4Â² = 16, 5Â² = 25, 6Â² = 36
 The last difference should be 36, not 34.
 So the last term should be 67 + 36 = 103, not 101.
 Wrong number = 101
@@ -372,9 +372,9 @@ Correct term = 103
 **Question:** Find the next term: 3, 10, 8, 17, 15, 26, 24, ?
 
 **Solution:**
-Odd positions: 3, 8, 15, 24 (differences: 5, 7, 9 — AP of odd numbers)
+Odd positions: 3, 8, 15, 24 (differences: 5, 7, 9 â€” AP of odd numbers)
 Even positions: 10, 17, 26, ? (differences: 7, 9, ?)
-For even positions, differences are 7, 9 — so next difference is 11.
+For even positions, differences are 7, 9 â€” so next difference is 11.
 Missing even term = 26 + 11 = 37
 
 Alternate view: Even terms = odd terms + 7, +9, +11, ...
@@ -385,45 +385,45 @@ Answer: 37
 **Question:** Find the missing term: 3, 8, 35, 204, ?
 
 **Solution:**
-3 = 2² - 1 = 4 - 1
-8 = 3² - 1 = 9 - 1... No, 8 = 3² - 1.
+3 = 2Â² - 1 = 4 - 1
+8 = 3Â² - 1 = 9 - 1... No, 8 = 3Â² - 1.
 
 Let me check differently:
-3 = 1² + 2
-8 = 2² + 4... no.
+3 = 1Â² + 2
+8 = 2Â² + 4... no.
 
 Pattern: 
-3 = 1² - 1 + 3... no.
+3 = 1Â² - 1 + 3... no.
 
 Let me use: 
-3 = 2² - 1
-8 = 3² - 1
-35 = 6² - 1... no.
+3 = 2Â² - 1
+8 = 3Â² - 1
+35 = 6Â² - 1... no.
 
 Actually: 
-2² - 1 = 3
-3² - 1 = 8
-6² - 1 = 35
+2Â² - 1 = 3
+3Â² - 1 = 8
+6Â² - 1 = 35
 Second differences: 2, 3, 6... Let me think differently.
 
 Better approach:
-1 × 2 + 1 = 3
-2 × 3 + 2 = 8
-3 × 11 + 2 = 35... doesn't work.
+1 Ã— 2 + 1 = 3
+2 Ã— 3 + 2 = 8
+3 Ã— 11 + 2 = 35... doesn't work.
 
 Let me use a cleaner example.
 
 **Revised Example:** Find the missing term: 0, 7, 26, 63, 124, ?
 
 **Solution:**
-1³ - 1 = 0
-2³ - 1 = 7
-3³ - 1 = 26
-4³ - 1 = 63
-5³ - 1 = 124
-6³ - 1 = 215
+1Â³ - 1 = 0
+2Â³ - 1 = 7
+3Â³ - 1 = 26
+4Â³ - 1 = 63
+5Â³ - 1 = 124
+6Â³ - 1 = 215
 
-Pattern: n³ - 1
+Pattern: nÂ³ - 1
 Answer: 215
 
 ### Example 15: Difference in Differences (Advanced)
@@ -434,15 +434,15 @@ Answer: 215
 Differences: 11, 33, 99, 297
 Ratio of differences: 33/11 = 3, 99/33 = 3, 297/99 = 3
 The differences themselves form a GP with r = 3.
-Next difference = 297 × 3 = 891
+Next difference = 297 Ã— 3 = 891
 Next term = 445 + 891 = 1336
 
-Pattern: Each term = previous term × 3 + 1
-5 × 3 + 1 = 16
-16 × 3 + 1 = 49
-49 × 3 + 1 = 148
-148 × 3 + 1 = 445
-445 × 3 + 1 = 1336
+Pattern: Each term = previous term Ã— 3 + 1
+5 Ã— 3 + 1 = 16
+16 Ã— 3 + 1 = 49
+49 Ã— 3 + 1 = 148
+148 Ã— 3 + 1 = 445
+445 Ã— 3 + 1 = 1336
 Answer: 1336
 
 ## Shortcut Methods
@@ -457,7 +457,7 @@ If the numbers are growing rapidly (doubling, tripling), check if it's a GP by d
 
 ### Shortcut 3: Look for Perfect Squares/Cubes Nearby
 
-If terms are close to perfect squares (1, 4, 9, 16, 25, 36, ...) or cubes (1, 8, 27, 64, 125, ...), the pattern likely involves n² or n³.
+If terms are close to perfect squares (1, 4, 9, 16, 25, 36, ...) or cubes (1, 8, 27, 64, 125, ...), the pattern likely involves nÂ² or nÂ³.
 
 ### Shortcut 4: For Wrong Number Series
 
@@ -469,7 +469,7 @@ If the series has numbers that seem to alternate between two patterns (one set o
 
 ### Shortcut 6: Multiplication Plus Addition
 
-For exponential-looking series that are not pure GP, try the × k + c pattern.
+For exponential-looking series that are not pure GP, try the Ã— k + c pattern.
 
 ### Shortcut 7: Verify With Multiple Terms
 
@@ -478,10 +478,10 @@ A pattern must hold for ALL given terms, not just the first few. Always verify w
 ### Shortcut 8: Common IBPS Patterns
 
 Memorise these common patterns:
-- n², n²±1, n²±n
-- n³, n³±1
+- nÂ², nÂ²Â±1, nÂ²Â±n
+- nÂ³, nÂ³Â±1
 - n(n+1)/2 (triangular numbers)
-- 2ⁿ, 2ⁿ±1
+- 2â¿, 2â¿Â±1
 - n! (factorial)
 
 ### Shortcut 9: Process of Elimination for Wrong Number
@@ -516,18 +516,18 @@ flowchart TD
     B -->|No| D{Ratios constant?}
     D -->|Yes| E["GP"]
     D -->|No| F{Square/Cube nearby?}
-    F -->|Yes| G["n²/n³ pattern"]
+    F -->|Yes| G["nÂ²/nÂ³ pattern"]
     F -->|No| H{Alternating?}
     H -->|Yes| I["Split into two series"]
     H -->|No| J{Prime/Fibonacci?}
     J -->|Yes| K["Special series"]
-    J -->|No| L["×,+ mixed operations"]
+    J -->|No| L["Ã—,+ mixed operations"]
 ```
 
 ## TypeScript Implementation: Series Pattern Detector
 
 ```typescript
-// series-pattern-detector.ts — Number Series pattern identification
+// series-pattern-detector.ts â€” Number Series pattern identification
 
 type SeriesPattern = {
   name: string;
@@ -615,7 +615,7 @@ class SeriesDetector {
       if (i % 2 === 0) odd.push(seq[i]);
       else even.push(seq[i]);
     }
-    return null; // Simplified — would need recursive pattern detection
+    return null; // Simplified â€” would need recursive pattern detection
   }
 
   static findNextTerm(seq: number[]): { pattern: string; next: number } | null {
@@ -637,7 +637,7 @@ class SeriesDetector {
     // Try multiply-add
     const ma = this.detectMultiplyAdd(seq);
     if (ma) {
-      return { pattern: "× + Pattern", next: seq[seq.length - 1] * ma.k + ma.c };
+      return { pattern: "Ã— + Pattern", next: seq[seq.length - 1] * ma.k + ma.c };
     }
     return null;
   }
@@ -687,18 +687,18 @@ const wrongSeries2 = [12, 13, 17, 26, 42, 67, 101];
 console.log(SeriesDetector.findWrongTerm(wrongSeries2));
 ```
 
-## 📝 Solved Examples (20 MCQs)
+## ðŸ“ Solved Examples (20 MCQs)
 
-### Set 1: Missing Number Series (Questions 1–10)
+### Set 1: Missing Number Series (Questions 1â€“10)
 
 **Question 1:** Find the missing term: 3, 9, 27, ?, 243, 729
 
 <details>
 <summary>Answer & Solution</summary>
-**Formula:** GP with common ratio r = T₂/T₁
+**Formula:** GP with common ratio r = Tâ‚‚/Tâ‚
 
 Ratio = 9/3 = 3
-Missing term = 27 × 3 = 81
+Missing term = 27 Ã— 3 = 81
 Verify: 243/81 = 3, 729/243 = 3
 Answer: 81
 
@@ -709,13 +709,13 @@ Answer: 81
 
 <details>
 <summary>Answer & Solution</summary>
-**Formula:** Pattern: ×2 + 2
+**Formula:** Pattern: Ã—2 + 2
 
-7 × 2 + 2 = 16
-16 × 2 + 2 = 34
-34 × 2 + 2 = 70
-70 × 2 + 2 = 142
-142 × 2 + 2 = 286
+7 Ã— 2 + 2 = 16
+16 Ã— 2 + 2 = 34
+34 Ã— 2 + 2 = 70
+70 Ã— 2 + 2 = 142
+142 Ã— 2 + 2 = 286
 Missing = 142
 
 **Answer:** 142
@@ -727,10 +727,10 @@ Missing = 142
 <summary>Answer & Solution</summary>
 **Formula:** Decreasing difference pattern
 
-Differences: 95−100 = −5, 85−95 = −10, 70−85 = −15
+Differences: 95âˆ’100 = âˆ’5, 85âˆ’95 = âˆ’10, 70âˆ’85 = âˆ’15
 Pattern: subtract 5, 10, 15, 20, 25
-Missing = 70 − 20 = 50
-Verify: 35 − 50 = 25 ✓
+Missing = 70 âˆ’ 20 = 50
+Verify: 35 âˆ’ 50 = 25 âœ“
 
 **Answer:** 50
 </details>
@@ -739,13 +739,13 @@ Verify: 35 − 50 = 25 ✓
 
 <details>
 <summary>Answer & Solution</summary>
-**Formula:** ×1 + 1, ×2 + 2, ×3 + 3, ×4 + 4, ×5 + 5
+**Formula:** Ã—1 + 1, Ã—2 + 2, Ã—3 + 3, Ã—4 + 4, Ã—5 + 5
 
-5 × 1 + 1 = 6
-6 × 2 + 2 = 14
-14 × 3 + 3 = 45
-45 × 4 + 4 = 184
-184 × 5 + 5 = 925
+5 Ã— 1 + 1 = 6
+6 Ã— 2 + 2 = 14
+14 Ã— 3 + 3 = 45
+45 Ã— 4 + 4 = 184
+184 Ã— 5 + 5 = 925
 Missing = 184
 
 **Answer:** 184
@@ -755,12 +755,12 @@ Missing = 184
 
 <details>
 <summary>Answer & Solution</summary>
-**Formula:** ×5 + 5, ×5 + 5, ...
+**Formula:** Ã—5 + 5, Ã—5 + 5, ...
 
-5 × 5 + 5 = 30
-30 × 5 + 5 = 155
-155 × 5 + 5 = 780
-780 × 5 + 5 = 3905
+5 Ã— 5 + 5 = 30
+30 Ã— 5 + 5 = 155
+155 Ã— 5 + 5 = 780
+780 Ã— 5 + 5 = 3905
 Missing = 780
 
 **Answer:** 780
@@ -770,35 +770,35 @@ Missing = 780
 
 <details>
 <summary>Answer & Solution</summary>
-**Formula:** ×1+2, ×2+3, ×3+6, ×4+9, ×5+12 (multiplier increases by 1, addition increases by 3 after first step)
+**Formula:** Ã—1+2, Ã—2+3, Ã—3+6, Ã—4+9, Ã—5+12 (multiplier increases by 1, addition increases by 3 after first step)
 
-1 × 1 + 2 = 3
-3 × 2 + 3 = 9
-9 × 3 + 6 = 33
-33 × 4 + 9 = 141
-141 × 5 + 12 = 717
+1 Ã— 1 + 2 = 3
+3 Ã— 2 + 3 = 9
+9 Ã— 3 + 6 = 33
+33 Ã— 4 + 9 = 141
+141 Ã— 5 + 12 = 717
 
-But 717 ≠ 633. Let me find the correct pattern.
-Pattern: ×2+1, ×2+3, ×2+15, ...
-Actually: 1×2+1=3, 3×2+3=9, 9×3+6=33, 33×4+9=141, 141×4+69=633
-Multipliers: 2,2,3,4,4; Additions: 1,3,6,9,69 — not consistent.
+But 717 â‰  633. Let me find the correct pattern.
+Pattern: Ã—2+1, Ã—2+3, Ã—2+15, ...
+Actually: 1Ã—2+1=3, 3Ã—2+3=9, 9Ã—3+6=33, 33Ã—4+9=141, 141Ã—4+69=633
+Multipliers: 2,2,3,4,4; Additions: 1,3,6,9,69 â€” not consistent.
 
 Better to use: 1, 3, 9, 33, 153, 633
 Differences: 2, 6, 24, 120, 480
-Difference ratios: 3,4,5,4 — almost a pattern.
+Difference ratios: 3,4,5,4 â€” almost a pattern.
 
-The intended pattern: ×2+1, ×2+3, ×2+15 — No. The correct pattern is: multiply by increasing integers and add increasing numbers:
-×1+2=3, ×2+3=9, ×3+6=33, ×4+9=141, ×5+12=717
+The intended pattern: Ã—2+1, Ã—2+3, Ã—2+15 â€” No. The correct pattern is: multiply by increasing integers and add increasing numbers:
+Ã—1+2=3, Ã—2+3=9, Ã—3+6=33, Ã—4+9=141, Ã—5+12=717
 Given last term is 633 which doesn't match this pattern, the question has an issue. Let me just provide the clean solution for the correct version:
-Pattern: T(n) = T(n−1) × n − (n−1)
-1×2−1=1 (would be wrong). Let me try: T(n) = T(n−1) × (n−1) + n
-3 = 1×1+2✓, 9 = 3×2+3✓, 33 = 9×3+6✓, 141 = 33×4+9✓, 717 = 141×5+12
+Pattern: T(n) = T(nâˆ’1) Ã— n âˆ’ (nâˆ’1)
+1Ã—2âˆ’1=1 (would be wrong). Let me try: T(n) = T(nâˆ’1) Ã— (nâˆ’1) + n
+3 = 1Ã—1+2âœ“, 9 = 3Ã—2+3âœ“, 33 = 9Ã—3+6âœ“, 141 = 33Ã—4+9âœ“, 717 = 141Ã—5+12
 
 For the given series 1,3,9,33,?,633, the missing term is 153:
 Differences: 2,6,24,120,480
-Pattern for differences: ×3, ×4, ×5, ×4 — after 24, ×5=120, then ×4=480
+Pattern for differences: Ã—3, Ã—4, Ã—5, Ã—4 â€” after 24, Ã—5=120, then Ã—4=480
 So missing = 33 + 120 = 153
-Verify: 153 + 480 = 633 ✓
+Verify: 153 + 480 = 633 âœ“
 
 **Answer:** 153
 </details>
@@ -807,9 +807,9 @@ Verify: 153 + 480 = 633 ✓
 
 <details>
 <summary>Answer & Solution</summary>
-**Formula:** Pattern: 2²−1=3, 4²−4=12, 6²−3=33... Better: 1³+2=3, 2³+4=12, 3³+6=33, 4³+8=72, 5³+10=135, 6³+12=228
+**Formula:** Pattern: 2Â²âˆ’1=3, 4Â²âˆ’4=12, 6Â²âˆ’3=33... Better: 1Â³+2=3, 2Â³+4=12, 3Â³+6=33, 4Â³+8=72, 5Â³+10=135, 6Â³+12=228
 
-Missing = 5³ + 10 = 125 + 10 = 135
+Missing = 5Â³ + 10 = 125 + 10 = 135
 
 **Answer:** 135
 </details>
@@ -818,13 +818,13 @@ Missing = 5³ + 10 = 125 + 10 = 135
 
 <details>
 <summary>Answer & Solution</summary>
-**Formula:** ×2 + 2 pattern
+**Formula:** Ã—2 + 2 pattern
 
-1 × 2 + 2 = 4
-4 × 2 + 2 = 10
-10 × 2 + 2 = 22
-22 × 2 + 2 = 46
-46 × 2 + 2 = 94
+1 Ã— 2 + 2 = 4
+4 Ã— 2 + 2 = 10
+10 Ã— 2 + 2 = 22
+22 Ã— 2 + 2 = 46
+46 Ã— 2 + 2 = 94
 Next term = 94
 
 **Answer:** 94
@@ -834,13 +834,13 @@ Next term = 94
 
 <details>
 <summary>Answer & Solution</summary>
-**Formula:** ×2, ×3, ×4, ×5, ×6 (multiply by increasing integers)
+**Formula:** Ã—2, Ã—3, Ã—4, Ã—5, Ã—6 (multiply by increasing integers)
 
-2 × 2 = 4
-4 × 3 = 12
-12 × 4 = 48
-48 × 5 = 240
-240 × 6 = 1440
+2 Ã— 2 = 4
+4 Ã— 3 = 12
+12 Ã— 4 = 48
+48 Ã— 5 = 240
+240 Ã— 6 = 1440
 Missing = 240
 
 **Answer:** 240
@@ -852,13 +852,13 @@ Missing = 240
 <summary>Answer & Solution</summary>
 **Formula:** Increasing differences: +5, +10, +15, +20, +25
 
-Differences: 7−2=5, 17−7=10, 32−17=15, 52−32=20, 77−52=25
+Differences: 7âˆ’2=5, 17âˆ’7=10, 32âˆ’17=15, 52âˆ’32=20, 77âˆ’52=25
 Missing = 32 + 20 = 52
 
 **Answer:** 52
 </details>
 
-### Set 2: Wrong Number Series (Questions 11–20)
+### Set 2: Wrong Number Series (Questions 11â€“20)
 
 **Question 11:** Find the wrong term: 5, 10, 20, 40, 85, 160
 
@@ -867,7 +867,7 @@ Missing = 32 + 20 = 52
 **Formula:** GP with r=2 would give: 5, 10, 20, 40, 80, 160
 
 Given: 5, 10, 20, 40, 85, 160
-Expected 5th term = 40 × 2 = 80, but 85 is given.
+Expected 5th term = 40 Ã— 2 = 80, but 85 is given.
 Wrong term = 85, correct = 80
 
 **Answer:** 85 (correct: 80)
@@ -877,7 +877,7 @@ Wrong term = 85, correct = 80
 
 <details>
 <summary>Answer & Solution</summary>
-**Formula:** n² − 1 pattern: 2²−1=3, 3²−1=8, 4²−1=15, 5²−1=24, 6²−1=35, 7²−1=48, 8²−1=63
+**Formula:** nÂ² âˆ’ 1 pattern: 2Â²âˆ’1=3, 3Â²âˆ’1=8, 4Â²âˆ’1=15, 5Â²âˆ’1=24, 6Â²âˆ’1=35, 7Â²âˆ’1=48, 8Â²âˆ’1=63
 
 Given 6th term = 49, but it should be 48.
 Wrong term = 49, correct = 48
@@ -889,7 +889,7 @@ Wrong term = 49, correct = 48
 
 <details>
 <summary>Answer & Solution</summary>
-**Formula:** 0²+1=1, 2²+1=5, 4²+1=13, 6²+1=25, 8²+1=41, 10²+1=61, 12²+1=85
+**Formula:** 0Â²+1=1, 2Â²+1=5, 4Â²+1=13, 6Â²+1=25, 8Â²+1=41, 10Â²+1=61, 12Â²+1=85
 
 Given 6th term = 62, but it should be 61.
 Wrong term = 62, correct = 61
@@ -904,7 +904,7 @@ Wrong term = 62, correct = 61
 **Formula:** Differences should be odd numbers: +3, +5, +7, +9, +11, +13
 
 4+3=7, 7+5=12, 12+7=19, 19+9=28, 28+11=39, 39+13=52
-Given: 28, 41, 44 — 28+11=39 (but 41 given), 41+3=44 (makes no sense)
+Given: 28, 41, 44 â€” 28+11=39 (but 41 given), 41+3=44 (makes no sense)
 Wrong term = 41, correct = 39
 Then 39+13=52, but 44 is also wrong.
 Actually two errors. Let me reconsider.
@@ -932,19 +932,19 @@ Wrong term = 194, correct = 192
 <summary>Answer & Solution</summary>
 **Formula:** Decreasing by 2, 4, 6, 8, 10, 12
 
-50−2=48, 48−4=44, 44−6=38, 38−8=30, 30−10=20, 20−12=8
-Actual: 50, 48, 44, 38, 28, 20, 8 — but given has 30.
-Wait, checking: 38−8=30 ✓, 30−10=20 ✓, 20−12=8 ✓
+50âˆ’2=48, 48âˆ’4=44, 44âˆ’6=38, 38âˆ’8=30, 30âˆ’10=20, 20âˆ’12=8
+Actual: 50, 48, 44, 38, 28, 20, 8 â€” but given has 30.
+Wait, checking: 38âˆ’8=30 âœ“, 30âˆ’10=20 âœ“, 20âˆ’12=8 âœ“
 The given series seems correct! Let me re-examine.
-Given: 50, 48, 44, 38, 28, 20, 8 — but the problem says 30 is there.
+Given: 50, 48, 44, 38, 28, 20, 8 â€” but the problem says 30 is there.
 Let me re-read: 50, 48, 44, 38, 30, 20, 8
-50−2=48, 48−4=44, 44−6=38, 38−8=30 ✓, 30−10=20 ✓, 20−12=8 ✓
+50âˆ’2=48, 48âˆ’4=44, 44âˆ’6=38, 38âˆ’8=30 âœ“, 30âˆ’10=20 âœ“, 20âˆ’12=8 âœ“
 This also works! Differences: 2,4,6,8,10,12
 Wait, both 30 and 28 work but with different patterns. With 30, the pattern is subtract 2,4,6,8,10,12.
 With 28, the pattern would be subtract 2,4,6,10,10,12 which doesn't work.
 
 Hmm, the original answer key said 28 was wrong. Let me reconsider:
-With 30: differences = 2,4,6,8,10,12 — beautiful AP of differences.
+With 30: differences = 2,4,6,8,10,12 â€” beautiful AP of differences.
 So 30 is CORRECT in this series. The answer key might be wrong, or I'm misreading.
 Actually looking at the original exercise, the answer key says "Wrong term: 28 (should be 30)".
 So the original series is: 50, 48, 44, 38, 28, 20, 8
@@ -970,7 +970,7 @@ Wrong term = 19, correct = 18
 
 <details>
 <summary>Answer & Solution</summary>
-**Formula:** n³ + n pattern: 1³+1=2, 2³+2=10, 3³+3=30, 4³+4=68, 5³+5=130, 6³+6=222
+**Formula:** nÂ³ + n pattern: 1Â³+1=2, 2Â³+2=10, 3Â³+3=30, 4Â³+4=68, 5Â³+5=130, 6Â³+6=222
 
 Given 6th = 224, but correct should be 222.
 Wrong term = 224, correct = 222
@@ -984,9 +984,9 @@ Wrong term = 224, correct = 222
 <summary>Answer & Solution</summary>
 **Formula:** Alternating cubes (odd positions) and squares (even positions)
 
-Odd positions: 1³=1, 3³=27, 5³=125 ✓
-Even positions: 2²=4, 4²=16, 8²=64
-Given 4th term = 64 (which is 8²), but pattern requires 4²=16.
+Odd positions: 1Â³=1, 3Â³=27, 5Â³=125 âœ“
+Even positions: 2Â²=4, 4Â²=16, 8Â²=64
+Given 4th term = 64 (which is 8Â²), but pattern requires 4Â²=16.
 Wrong term = 64, correct = 16
 
 **Answer:** 64 (correct: 16)
@@ -996,18 +996,18 @@ Wrong term = 64, correct = 16
 
 <details>
 <summary>Answer & Solution</summary>
-**Formula:** ×3 − 1 pattern: 3×3−1=8, 8×3−2=22, 22×3−3=63, 63×3−4=185, 185×3−5=550
+**Formula:** Ã—3 âˆ’ 1 pattern: 3Ã—3âˆ’1=8, 8Ã—3âˆ’2=22, 22Ã—3âˆ’3=63, 63Ã—3âˆ’4=185, 185Ã—3âˆ’5=550
 
-Actually: 3×3−1=8, 8×3−2=22, 22×3−3=63, 63×3−4=185, 185×3−5=550
+Actually: 3Ã—3âˆ’1=8, 8Ã—3âˆ’2=22, 22Ã—3âˆ’3=63, 63Ã—3âˆ’4=185, 185Ã—3âˆ’5=550
 Given 6th = 548, correct = 550
 Wrong term = 548, correct = 550
 
 **Answer:** 548 (correct: 550)
 </details>
 
-## 📖 Exercise Bank (30 Questions)
+## ðŸ“– Exercise Bank (30 Questions)
 
-### Missing Number Series (1–15)
+### Missing Number Series (1â€“15)
 
 **1.** Find the missing: 4, 12, 36, ?, 324, 972
 **2.** Find the missing: 11, 15, 24, 40, 65, ?
@@ -1025,7 +1025,7 @@ Wrong term = 548, correct = 550
 **14.** Find the missing: 8, 40, 200, 1000, ?, 25000
 **15.** Find the next: 5, 16, 49, 148, 445, ?
 
-### Wrong Number Series (16–30)
+### Wrong Number Series (16â€“30)
 
 **16.** Find the wrong: 2, 9, 28, 65, 126, 216, 344
 **17.** Find the wrong: 7, 12, 22, 42, 82, 162, 322
@@ -1046,53 +1046,53 @@ Wrong term = 548, correct = 550
 **Answer Key:**
 1. 108 (GP r=3)
 2. 101 (differences: +4,+9,+16,+25,+36)
-3. 1045 (×1+1, ×2+2, ×3+3, ×4+4, ×5+5)
-4. 548 (×3−1)
-5. 63 (×2+1)
-6. 75 (differences: −5,−10,−15,−20,−25)
-7. 132 (1×2, 3×4, 5×6, 7×8, 9×10, 11×12)
-8. 215 (2³−1, 3³−1, 4³−1, 5³−1, 6³−1, 7³−1)
-9. 216 (n³)
-10. 180 (n × (n+1)²: 1×2²=4, 2×3²=18, 3×4²=48, 4×5²=100, 5×6²=180, 6×7²=294)
-11. 130 (×2−2)
-12. 445 (×1+1, ×2+2, ×3+3, ×4+4, ×5+5)
-13. 365 (×3−1)
-14. 5000 (×5)
-15. 1336 (×3+1)
-16. Wrong: 216, correct: 217 (6³+1=217)
-17. Wrong: 12, correct: 11 (×2−3 pattern)
+3. 1045 (Ã—1+1, Ã—2+2, Ã—3+3, Ã—4+4, Ã—5+5)
+4. 548 (Ã—3âˆ’1)
+5. 63 (Ã—2+1)
+6. 75 (differences: âˆ’5,âˆ’10,âˆ’15,âˆ’20,âˆ’25)
+7. 132 (1Ã—2, 3Ã—4, 5Ã—6, 7Ã—8, 9Ã—10, 11Ã—12)
+8. 215 (2Â³âˆ’1, 3Â³âˆ’1, 4Â³âˆ’1, 5Â³âˆ’1, 6Â³âˆ’1, 7Â³âˆ’1)
+9. 216 (nÂ³)
+10. 180 (n Ã— (n+1)Â²: 1Ã—2Â²=4, 2Ã—3Â²=18, 3Ã—4Â²=48, 4Ã—5Â²=100, 5Ã—6Â²=180, 6Ã—7Â²=294)
+11. 130 (Ã—2âˆ’2)
+12. 445 (Ã—1+1, Ã—2+2, Ã—3+3, Ã—4+4, Ã—5+5)
+13. 365 (Ã—3âˆ’1)
+14. 5000 (Ã—5)
+15. 1336 (Ã—3+1)
+16. Wrong: 216, correct: 217 (6Â³+1=217)
+17. Wrong: 12, correct: 11 (Ã—2âˆ’3 pattern)
 18. Wrong: 129, correct: 128 (GP with r=2)
-19. Wrong: 60, correct: 63 (×2+1)
-20. Wrong: 10, correct: 12 (alternating: odd +5, even ×2)
-21. Wrong: 10, correct: 11 (2→3→6→11→18→34→66: differences +1,+3,+5,+7,+16,+32)
-22. Wrong: 62, correct: 60 (n² + (2n−3): 1²−1=0, 2²+1=5, 3²+3=12, 4²+5=21, 5²+7=32, 6²+9=45, 7²+11=60)
-23. Wrong: 84, correct: 88 (×1+1, ×2+2, ×3+3, ×4+4...)
-24. Wrong: 630, correct: 636 (×2+4)
-25. Wrong: 220, correct: 289 (squares of primes: 17²=289)
+19. Wrong: 60, correct: 63 (Ã—2+1)
+20. Wrong: 10, correct: 12 (alternating: odd +5, even Ã—2)
+21. Wrong: 10, correct: 11 (2â†’3â†’6â†’11â†’18â†’34â†’66: differences +1,+3,+5,+7,+16,+32)
+22. Wrong: 62, correct: 60 (nÂ² + (2nâˆ’3): 1Â²âˆ’1=0, 2Â²+1=5, 3Â²+3=12, 4Â²+5=21, 5Â²+7=32, 6Â²+9=45, 7Â²+11=60)
+23. Wrong: 84, correct: 88 (Ã—1+1, Ã—2+2, Ã—3+3, Ã—4+4...)
+24. Wrong: 630, correct: 636 (Ã—2+4)
+25. Wrong: 220, correct: 289 (squares of primes: 17Â²=289)
 26. Wrong: 60, correct: 59 (differences: +6,+8,+10,+12,+14,+16)
-27. Wrong: 102, correct: 96 (×2−2, ×2−4, ×2−8, ×2−16, ×2−32)
+27. Wrong: 102, correct: 96 (Ã—2âˆ’2, Ã—2âˆ’4, Ã—2âˆ’8, Ã—2âˆ’16, Ã—2âˆ’32)
 28. Wrong: 57, correct: 58 (differences: +1,+4,+9,+16,+25,+36 = squares)
-29. Wrong: 244, correct: 242 (×3+2)
-30. Wrong: 22, correct: 21 (differences: −1,+3,+7,+11,+15,+19, AP with d=4)
+29. Wrong: 244, correct: 242 (Ã—3+2)
+30. Wrong: 22, correct: 21 (differences: âˆ’1,+3,+7,+11,+15,+19, AP with d=4)
 
-## Mermaid Diagram: Common Series Patterns — Visual Reference
+## Mermaid Diagram: Common Series Patterns â€” Visual Reference
 
 ```mermaid
 flowchart TD
     A["Number Series"] --> B["Check First Difference"]
     A --> C["Check Ratio"]
     A --> D["Check Square/Cube"]
-    A --> E["Check × + pattern"]
+    A --> E["Check Ã— + pattern"]
     A --> F["Check Alternating"]
-    B --> G["Constant? → AP"]
-    B --> H["Differences form AP/GP? → Difference Pattern"]
-    C --> I["Constant? → GP"]
-    D --> J["n² ± k or n³ ± k"]
-    E --> K["T(n) = T(n−1)×k + c"]
+    B --> G["Constant? â†’ AP"]
+    B --> H["Differences form AP/GP? â†’ Difference Pattern"]
+    C --> I["Constant? â†’ GP"]
+    D --> J["nÂ² Â± k or nÂ³ Â± k"]
+    E --> K["T(n) = T(nâˆ’1)Ã—k + c"]
     F --> L["Two interleaved series"]
 ```
 
-## Mermaid Diagram: Series Pattern — Wrong Number Detection
+## Mermaid Diagram: Series Pattern â€” Wrong Number Detection
 
 ```mermaid
 flowchart TD
@@ -1109,7 +1109,7 @@ flowchart TD
 
 ## Summary
 
-- **Number Series** tests pattern recognition ability — a key skill for IBPS SO
+- **Number Series** tests pattern recognition ability â€” a key skill for IBPS SO
 - **Arithmetic Progression (AP):** Constant difference between terms
 - **Geometric Progression (GP):** Constant ratio between terms
 - **Difference-based patterns:** The differences themselves form a sequence
@@ -1127,10 +1127,10 @@ flowchart TD
 |-------------|----------------|---------|
 | AP | Constant difference | 5, 10, 15, 20 |
 | GP | Constant ratio | 3, 6, 12, 24 |
-| Square | Close to n² values | 1, 4, 9, 16, 25 |
-| Cube | Close to n³ values | 1, 8, 27, 64 |
+| Square | Close to nÂ² values | 1, 4, 9, 16, 25 |
+| Cube | Close to nÂ³ values | 1, 8, 27, 64 |
 | Difference | Differences form AP/GP | 3, 6, 11, 18 (diffs: 3,5,7) |
-| × + | Each is k × prev + c | 2, 5, 11, 23 (×2+1) |
+| Ã— + | Each is k Ã— prev + c | 2, 5, 11, 23 (Ã—2+1) |
 | Alternating | Two patterns interlaced | 2, 10, 4, 20, 6, 30 |
 | Fibonacci | Sum of two previous | 0, 1, 1, 2, 3, 5 |
 | Factorial | n! pattern | 1, 2, 6, 24, 120 |
@@ -1144,7 +1144,7 @@ Find the missing number: 2, 5, 10, 17, ?, 37
 
 <details>
 <summary>Answer</summary>
-Pattern: n² + 1 (1²+1=2, 2²+1=5, 3²+1=10, 4²+1=17, 5²+1=26, 6²+1=37)
+Pattern: nÂ² + 1 (1Â²+1=2, 2Â²+1=5, 3Â²+1=10, 4Â²+1=17, 5Â²+1=26, 6Â²+1=37)
 Missing = 26
 </details>
 
@@ -1154,7 +1154,7 @@ Find the wrong number: 3, 8, 15, 24, 35, 49, 63
 
 <details>
 <summary>Answer</summary>
-Pattern: n² - 1 (2²-1=3, 3²-1=8, 4²-1=15, 5²-1=24, 6²-1=35, 7²-1=48, 8²-1=63)
+Pattern: nÂ² - 1 (2Â²-1=3, 3Â²-1=8, 4Â²-1=15, 5Â²-1=24, 6Â²-1=35, 7Â²-1=48, 8Â²-1=63)
 Wrong term: 49, correct should be 48
 </details>
 
@@ -1165,7 +1165,7 @@ Find the next term: 2, 6, 18, 54, 162, ?
 <details>
 <summary>Answer</summary>
 Ratio: 6/2=3, 18/6=3, 54/18=3, 162/54=3
-GP with r=3, next = 162 × 3 = 486
+GP with r=3, next = 162 Ã— 3 = 486
 </details>
 
 ### Question 4
@@ -1184,46 +1184,46 @@ Find the next term: 10, 9, 17, 50, 199, ?
 
 <details>
 <summary>Answer</summary>
-10 × 1 - 1 = 9
-9 × 2 - 1 = 17
-17 × 3 - 1 = 50
-50 × 4 - 1 = 199
-199 × 5 - 1 = 994
-Pattern: ×n - 1
+10 Ã— 1 - 1 = 9
+9 Ã— 2 - 1 = 17
+17 Ã— 3 - 1 = 50
+50 Ã— 4 - 1 = 199
+199 Ã— 5 - 1 = 994
+Pattern: Ã—n - 1
 Answer: 994
 </details>
 
 ## Exercises
 
-### Exercise 1 (Beginner — AP)
+### Exercise 1 (Beginner â€” AP)
 
 Find the missing term: 15, 22, 29, ?, 43, 50
 
-### Exercise 2 (Beginner — GP)
+### Exercise 2 (Beginner â€” GP)
 
 Find the missing term: 7, 21, 63, ?, 567, 1701
 
-### Exercise 3 (Beginner — Square)
+### Exercise 3 (Beginner â€” Square)
 
 Find the missing term: 1, 1, 2, 4, 7, 11, 16, ?
 
-### Exercise 4 (Intermediate — Difference Pattern)
+### Exercise 4 (Intermediate â€” Difference Pattern)
 
 Find the next term: 5, 7, 11, 17, 25, 35, ?
 
-### Exercise 5 (Intermediate — Mixed)
+### Exercise 5 (Intermediate â€” Mixed)
 
 Find the next term: 4, 6, 12, 30, 84, ?
 
-### Exercise 6 (Intermediate — Wrong Number)
+### Exercise 6 (Intermediate â€” Wrong Number)
 
 Find the wrong number: 50, 48, 44, 38, 28, 20, 8
 
-### Exercise 7 (Advanced — Cube Pattern)
+### Exercise 7 (Advanced â€” Cube Pattern)
 
 Find the missing term: 8, 27, 64, 125, 216, ?, 512
 
-### Exercise 8 (Advanced — Alternating)
+### Exercise 8 (Advanced â€” Alternating)
 
 Find the missing term: 3, 7, 6, 11, 9, 15, 12, ?
 
@@ -1231,7 +1231,7 @@ Find the missing term: 3, 7, 6, 11, 9, 15, 12, ?
 
 Find the next term: 3, 4, 10, 33, 136, ?
 
-### Exercise 10 (IBPS SO Level — Wrong Number)
+### Exercise 10 (IBPS SO Level â€” Wrong Number)
 
 Find the wrong number: 6, 12, 24, 48, 96, 194, 384
 
@@ -1242,14 +1242,14 @@ Find the wrong number: 6, 12, 24, 48, 96, 194, 384
 2. 189
 3. 22 (differences: 0, 1, 2, 3, 4, 5, 6)
 4. 47 (differences: 2, 4, 6, 8, 10, 12)
-5. 246 (×2-2, ×2+0, ×2+6, ×2+24... actually pattern: ×2-2, ×2+0, ×2+6, ×2+24, ×2+78 where the added amounts are 2, 0, 6, 24... the pattern is ×1, ×3, ×4, ... Better: 4×1+2=6, 6×2+0=12, 12×3-6=30... hmm. Let me re-examine: 4×1.5=6, 6×2=12, 12×2.5=30, 30×2.8=84... The multipliers are 1.5, 2, 2.5, 2.8... Actually: 4×(3/2)=6, 6×(4/2)=12, 12×(5/2)=30, 30×(6/2)=90... nope.)
+5. 246 (Ã—2-2, Ã—2+0, Ã—2+6, Ã—2+24... actually pattern: Ã—2-2, Ã—2+0, Ã—2+6, Ã—2+24, Ã—2+78 where the added amounts are 2, 0, 6, 24... the pattern is Ã—1, Ã—3, Ã—4, ... Better: 4Ã—1+2=6, 6Ã—2+0=12, 12Ã—3-6=30... hmm. Let me re-examine: 4Ã—1.5=6, 6Ã—2=12, 12Ã—2.5=30, 30Ã—2.8=84... The multipliers are 1.5, 2, 2.5, 2.8... Actually: 4Ã—(3/2)=6, 6Ã—(4/2)=12, 12Ã—(5/2)=30, 30Ã—(6/2)=90... nope.)
 
 Let me re-examine Exercise 5: 4, 6, 12, 30, 84, ?
-4 = 1 × 4
-6 = 2 × 3
-12 = 3 × 4
-30 = 5 × 6
-84 = 7 × 12... hmm.
+4 = 1 Ã— 4
+6 = 2 Ã— 3
+12 = 3 Ã— 4
+30 = 5 Ã— 6
+84 = 7 Ã— 12... hmm.
 
 Actually: 4, 6, 12, 30, 84
 4 + 2 = 6
@@ -1260,8 +1260,8 @@ Actually: 4, 6, 12, 30, 84
 Added terms: 2, 6, 18, 54, 162 (GP with r=3)
 Answer: 246
 
-6. Wrong term: 28 (should be 30 — differences decrease by 2 each time: 2, 4, 6, 8, 10, 12)
-7. 343 (7³)
-8. 19 (even positions: 7, 11, 15, 19 — AP with d=4)
-9. 685 (×1+1=4, ×2+2=10, ×3+3=33, ×4+4=136, ×5+5=685)
-10. 194 is wrong (should be 192 — GP with r=2, 96×2=192)
+6. Wrong term: 28 (should be 30 â€” differences decrease by 2 each time: 2, 4, 6, 8, 10, 12)
+7. 343 (7Â³)
+8. 19 (even positions: 7, 11, 15, 19 â€” AP with d=4)
+9. 685 (Ã—1+1=4, Ã—2+2=10, Ã—3+3=33, Ã—4+4=136, Ã—5+5=685)
+10. 194 is wrong (should be 192 â€” GP with r=2, 96Ã—2=192)

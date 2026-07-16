@@ -1,4 +1,4 @@
-# Chapter 3: The Relational Model
+﻿# Chapter 3: The Relational Model
 
 > **Previous:** [Chapter 2: Entity-Relationship Model](./02-er-model.md) | **Next:** [Chapter 4: SQL Basics](./04-sql-basics.md)
 
@@ -15,16 +15,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/03-relational-model/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/03-relational-model/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/03-relational-model/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/03-relational-model/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/03-relational-model/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/03-relational-model/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/03-relational-model/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/03-relational-model/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/03-relational-model/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/03-relational-model/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/03-relational-model/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/03-relational-model/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -38,8 +38,8 @@
 | **Relation Structure** | A relation is a set of tuples with atomic values | Every cell holds exactly one value (1NF) |
 | **Keys** | Superkey, candidate, primary, foreign key hierarchy | Choose minimal candidate keys as primary keys |
 | **Integrity Constraints** | Domain, entity, and referential rules | Enforce at DB level, not in application code |
-| **Relational Algebra** | Procedural query language with closure property | Every operation outputs a relation â€” enabling composition |
-| **Relational Calculus** | Declarative alternative â€” specify WHAT not HOW | Understand both for complete query mastery |
+| **Relational Algebra** | Procedural query language with closure property | Every operation outputs a relation Ã¢â‚¬â€ enabling composition |
+| **Relational Calculus** | Declarative alternative Ã¢â‚¬â€ specify WHAT not HOW | Understand both for complete query mastery |
 
 ## Chapter Roadmap
 
@@ -90,11 +90,11 @@ Think of a **spreadsheet** like Microsoft Excel or Google Sheets:
 - **Relation** = The entire spreadsheet (table)
 - **Tuple** = One row (one student's data)
 - **Attribute** = One column header (e.g., "Name")
-- **Domain** = The type of data allowed in a column (e.g., GPA must be 0.0â€“4.0)
+- **Domain** = The type of data allowed in a column (e.g., GPA must be 0.0Ã¢â‚¬â€œ4.0)
 - **Cardinality** = Number of data rows (3 students)
 - **Degree** = Number of columns (4 columns)
 
-A spreadsheet is *almost* a relation, but spreadsheets allow duplicate rows, formulas, and multi-cell merges â€” pure relations reject all of these.
+A spreadsheet is *almost* a relation, but spreadsheets allow duplicate rows, formulas, and multi-cell merges Ã¢â‚¬â€ pure relations reject all of these.
 
 #### 3.2.2 Formal Definitions
 
@@ -124,7 +124,7 @@ Each element of \( R \) is an n-tuple \( (v_1, v_2, \ldots, v_n) \) where each \
 
 | Concept | Definition | Example |
 |---------|-----------|---------|
-| **Schema (intension)** | Logical definition â€” name + attribute names + domains | `STUDENT(sid: INT, name: VARCHAR(50), major: VARCHAR(30))` |
+| **Schema (intension)** | Logical definition Ã¢â‚¬â€ name + attribute names + domains | `STUDENT(sid: INT, name: VARCHAR(50), major: VARCHAR(30))` |
 | **Instance (extension)** | Actual data at a point in time | The set of currently enrolled students |
 
 The schema is stable (changes rarely), while the instance changes with every INSERT, UPDATE, DELETE.
@@ -296,7 +296,7 @@ class Relation:
         return len(self.attributes)
 
     def select(self, predicate: Callable[[TupleType[Any, ...]], bool]) -> 'Relation':
-        result = Relation(f"Ïƒ({self.name})", self.attributes)
+        result = Relation(f"ÃÆ’({self.name})", self.attributes)
         for t in self.tuples:
             if predicate(t):
                 result.tuples.add(t)
@@ -304,7 +304,7 @@ class Relation:
 
     def project(self, attr_indices: List[int]) -> 'Relation':
         new_attrs = [self.attributes[i] for i in attr_indices]
-        result = Relation(f"Ï€({self.name})", new_attrs)
+        result = Relation(f"Ãâ‚¬({self.name})", new_attrs)
         for t in self.tuples:
             result.tuples.add(tuple(t[i] for i in attr_indices))
         return result
@@ -317,7 +317,7 @@ class Relation:
     def union(self, other: 'Relation') -> 'Relation':
         if self.attributes != other.attributes:
             raise ValueError("Relations must be union-compatible")
-        result = Relation(f"{self.name} âˆª {other.name}", self.attributes)
+        result = Relation(f"{self.name} Ã¢Ë†Âª {other.name}", self.attributes)
         result.tuples = self.tuples | other.tuples
         return result
 
@@ -355,11 +355,11 @@ class Relation:
 
 Think of a country's passport system:
 
-- **Superkey:** Any combination of identifiers that uniquely finds a person. (Passport#), (Passport#, Name), (SSN), (SSN, BirthDate) â€” all are superkeys.
+- **Superkey:** Any combination of identifiers that uniquely finds a person. (Passport#), (Passport#, Name), (SSN), (SSN, BirthDate) Ã¢â‚¬â€ all are superkeys.
 - **Candidate Key:** The minimal identifiers. Passport# alone works. SSN alone works. (Passport#, Name) is NOT a candidate key because Name is redundant.
 - **Primary Key:** The one chosen as the official identifier. The government chooses Passport# as the primary lookup key.
 - **Foreign Key:** A visa stamp in your passport references another country's record system.
-- **Alternate Key:** SSN is a valid identifier but wasn't chosen as primary â€” it's an alternate key.
+- **Alternate Key:** SSN is a valid identifier but wasn't chosen as primary Ã¢â‚¬â€ it's an alternate key.
 - **Composite Key:** (Passport#, CountryCode) together uniquely identify you globally.
 - **Surrogate Key:** An auto-generated internal ID like a database row number that has no real-world meaning.
 
@@ -379,7 +379,7 @@ Think of a country's passport system:
 
 #### 3.3.3 Candidate Key
 
-**Definition:** A minimal superkey â€” no proper subset is a superkey.
+**Definition:** A minimal superkey Ã¢â‚¬â€ no proper subset is a superkey.
 
 **Formal:** \( K \) is a candidate key iff:
 1. \( K \) is a superkey, AND
@@ -388,14 +388,14 @@ Think of a country's passport system:
 **Step-by-step to find candidate keys:**
 1. List all attributes of the relation
 2. Identify all functional dependencies
-3. Start with single attributes â€” check each for uniqueness
+3. Start with single attributes Ã¢â‚¬â€ check each for uniqueness
 4. If no single attribute is a key, try pairs, then triples, etc.
 5. Remove any key that contains another key as a subset
 
 **Example:** In STUDENT(sid, name, email):
-- `{sid}` â€” unique, no subset â†’ candidate key âœ“
-- `{email}` â€” unique, no subset â†’ candidate key âœ“
-- `{name}` â€” not unique â†’ not a candidate key âœ—
+- `{sid}` Ã¢â‚¬â€ unique, no subset Ã¢â€ â€™ candidate key Ã¢Å“â€œ
+- `{email}` Ã¢â‚¬â€ unique, no subset Ã¢â€ â€™ candidate key Ã¢Å“â€œ
+- `{name}` Ã¢â‚¬â€ not unique Ã¢â€ â€™ not a candidate key Ã¢Å“â€”
 - Candidate keys: `{sid}`, `{email}`
 
 #### 3.3.4 Primary Key
@@ -647,7 +647,7 @@ def find_candidate_keys(all_attrs: Set[str],
 
 **Why exponential:** Finding candidate keys is NP-hard in general (the hypergraph transversal problem). In practice, n is small (typically &lt; 20 attributes per relation).
 
-**Edge case:** If no subset produces full closure (incomplete FD set), no candidate key exists â€” the relation cannot exist in practice.
+**Edge case:** If no subset produces full closure (incomplete FD set), no candidate key exists Ã¢â‚¬â€ the relation cannot exist in practice.
 
 ---
 
@@ -676,7 +676,7 @@ CREATE TABLE Student (
 
 **Rule:** No attribute that is part of the primary key can be NULL.
 
-**Why:** If the primary key were NULL, the tuple would not be uniquely identifiable â€” the definition of "key" would break.
+**Why:** If the primary key were NULL, the tuple would not be uniquely identifiable Ã¢â‚¬â€ the definition of "key" would break.
 
 **Example:**
 ```sql
@@ -729,32 +729,32 @@ RULE: salary_check
 ### 3.5 Relational Algebra
 
 
-Relational algebra is a **procedural query language** â€” it describes *how* to compute a result by applying operations to relations. Every operation takes one or two relations as input and produces a **new relation** as output (the **closure property**).
+Relational algebra is a **procedural query language** Ã¢â‚¬â€ it describes *how* to compute a result by applying operations to relations. Every operation takes one or two relations as input and produces a **new relation** as output (the **closure property**).
 
 **Core operators:**
 
 | Category | Operators |
 |----------|-----------|
-| **Basic (unary)** | Selection (Ïƒ), Projection (Ï€), Rename (Ï) |
-| **Basic (binary)** | Union (âˆª), Set Difference (âˆ’), Cartesian Product (Ã—) |
-| **Derived (binary)** | Intersection (âˆ©), Join (â¨), Division (Ã·) |
+| **Basic (unary)** | Selection (ÃÆ’), Projection (Ãâ‚¬), Rename (ÃÂ) |
+| **Basic (binary)** | Union (Ã¢Ë†Âª), Set Difference (Ã¢Ë†â€™), Cartesian Product (Ãƒâ€”) |
+| **Derived (binary)** | Intersection (Ã¢Ë†Â©), Join (Ã¢Â¨Â), Division (ÃƒÂ·) |
 
 #### 3.5.1 Real-World Analogy: Recipe Instructions
 
-Relational algebra is like a **recipe** â€” it gives step-by-step instructions:
+Relational algebra is like a **recipe** Ã¢â‚¬â€ it gives step-by-step instructions:
 1. "Take all students" (relation)
 2. "Filter to those with GPA > 3.5" (selection)
 3. "Keep only their names" (projection)
 4. "Combine with their course enrollments" (join)
 5. "Serve the result" (final relation)
 
-SQL, by contrast, is like a **meal order** â€” "Give me the names of high-GPA students and their courses." The database figures out the steps.
+SQL, by contrast, is like a **meal order** Ã¢â‚¬â€ "Give me the names of high-GPA students and their courses." The database figures out the steps.
 
-#### 3.5.2 SELECT Operation (Ïƒ)
+#### 3.5.2 SELECT Operation (ÃÆ’)
 
 **Purpose:** Filter rows (tuples) based on a condition.
 
-**Syntax:** `Ïƒ<predicate>(R)`
+**Syntax:** `ÃÆ’<predicate>(R)`
 
 **Step-by-step:**
 1. Start with relation R
@@ -763,28 +763,28 @@ SQL, by contrast, is like a **meal order** â€” "Give me the names of high-G
 4. If P(t) is FALSE or NULL, exclude t
 
 **Example:** Find students with GPA > 3.5:
-`Ïƒ<GPA > 3.5>(STUDENT)`
+`ÃÆ’<GPA > 3.5>(STUDENT)`
 
 **Trace Table:**
 
 | Step | Operation | Intermediate Result |
 |------|-----------|-------------------|
 | Input | STUDENT | { (1, Alice, CS, 3.8), (2, Bob, Math, 3.2), (3, Charlie, CS, 3.5), (4, Diana, CS, 3.9) } |
-| 1 | Evaluate tâ‚: GPA=3.8 > 3.5? | TRUE â†’ Keep |
-| 2 | Evaluate tâ‚‚: GPA=3.2 > 3.5? | FALSE â†’ Drop |
-| 3 | Evaluate tâ‚ƒ: GPA=3.5 > 3.5? | FALSE â†’ Drop (not strictly greater) |
-| 4 | Evaluate tâ‚„: GPA=3.9 > 3.5? | TRUE â†’ Keep |
+| 1 | Evaluate tÃ¢â€šÂ: GPA=3.8 > 3.5? | TRUE Ã¢â€ â€™ Keep |
+| 2 | Evaluate tÃ¢â€šâ€š: GPA=3.2 > 3.5? | FALSE Ã¢â€ â€™ Drop |
+| 3 | Evaluate tÃ¢â€šÆ’: GPA=3.5 > 3.5? | FALSE Ã¢â€ â€™ Drop (not strictly greater) |
+| 4 | Evaluate tÃ¢â€šâ€ž: GPA=3.9 > 3.5? | TRUE Ã¢â€ â€™ Keep |
 | Output | Result | { (1, Alice, CS, 3.8), (4, Diana, CS, 3.9) } |
 
 **Properties:**
-- Commutative: `Ïƒ<cond1>(Ïƒ<cond2>(R)) = Ïƒ<cond2>(Ïƒ<cond1>(R))`
-- Cascading: `Ïƒ<cond1>(Ïƒ<cond2>(R)) = Ïƒ<cond1 âˆ§ cond2>(R)`
-- Idempotent: `Ïƒ<cond>(Ïƒ<cond>(R)) = Ïƒ<cond>(R)`
+- Commutative: `ÃÆ’<cond1>(ÃÆ’<cond2>(R)) = ÃÆ’<cond2>(ÃÆ’<cond1>(R))`
+- Cascading: `ÃÆ’<cond1>(ÃÆ’<cond2>(R)) = ÃÆ’<cond1 Ã¢Ë†Â§ cond2>(R)`
+- Idempotent: `ÃÆ’<cond>(ÃÆ’<cond>(R)) = ÃÆ’<cond>(R)`
 
 **C++ Implementation:**
 ```cpp
 Relation Relation::select(std::function<bool(const Tuple&)> pred) const {
-    Relation result("Ïƒ(" + name + ")", attrs);
+    Relation result("ÃÆ’(" + name + ")", attrs);
     for (const auto& t : tuples) {
         if (pred(t)) result.insert(t);
     }
@@ -795,7 +795,7 @@ Relation Relation::select(std::function<bool(const Tuple&)> pred) const {
 **Python Implementation:**
 ```python
 def select(relation: Relation, predicate) -> Relation:
-    result = Relation(f"Ïƒ({relation.name})", relation.attributes)
+    result = Relation(f"ÃÆ’({relation.name})", relation.attributes)
     for t in relation.tuples:
         if predicate(t):
             result.tuples.add(t)
@@ -804,11 +804,11 @@ def select(relation: Relation, predicate) -> Relation:
 
 **Complexity:** O(n) time, O(k) space where n = |R|, k = number of tuples satisfying predicate.
 
-#### 3.5.3 PROJECT Operation (Ï€)
+#### 3.5.3 PROJECT Operation (Ãâ‚¬)
 
 **Purpose:** Select specific columns (attributes). Remove duplicates.
 
-**Syntax:** `Ï€<attribute_list>(R)`
+**Syntax:** `Ãâ‚¬<attribute_list>(R)`
 
 **Step-by-step:**
 1. Identify the attributes to keep
@@ -816,7 +816,7 @@ def select(relation: Relation, predicate) -> Relation:
 3. Remove any duplicate tuples in the result
 
 **Example:** Get names and majors:
-`Ï€<name, major>(STUDENT)`
+`Ãâ‚¬<name, major>(STUDENT)`
 
 **Trace Table:**
 
@@ -835,17 +835,17 @@ def select(relation: Relation, predicate) -> Relation:
 
 **Complexity:** O(n) to scan, O(m) for dedup where m = unique output tuples.
 
-#### 3.5.4 RENAME Operation (Ï)
+#### 3.5.4 RENAME Operation (ÃÂ)
 
 **Purpose:** Rename a relation or its attributes. Essential for self-joins and disambiguation.
 
-**Syntax:** `Ï<new_name>(R)` or `Ï<new_name(attr1, ..., attrN)>(R)`
+**Syntax:** `ÃÂ<new_name>(R)` or `ÃÂ<new_name(attr1, ..., attrN)>(R)`
 
-**Example:** `Ï<EMP(empID, empName)>(EMPLOYEE)` renames both the relation and its attributes.
+**Example:** `ÃÂ<EMP(empID, empName)>(EMPLOYEE)` renames both the relation and its attributes.
 
 **Usage in queries:** Allows joining a table with itself:
 ```
-Ï<E1>(EMPLOYEE) â¨<E1.manager_id = E2.emp_id> Ï<E2>(EMPLOYEE)
+ÃÂ<E1>(EMPLOYEE) Ã¢Â¨Â<E1.manager_id = E2.emp_id> ÃÂ<E2>(EMPLOYEE)
 ```
 Finds employee-manager pairs.
 
@@ -864,7 +864,7 @@ Relation Relation::rename(const std::string& newName,
 }
 ```
 
-#### 3.5.5 UNION Operation (âˆª)
+#### 3.5.5 UNION Operation (Ã¢Ë†Âª)
 
 **Purpose:** Combine tuples from two relations.
 
@@ -872,7 +872,7 @@ Relation Relation::rename(const std::string& newName,
 1. Same number of attributes (same degree)
 2. Corresponding attributes must be from the same domain
 
-**Syntax:** `R âˆª S`
+**Syntax:** `R Ã¢Ë†Âª S`
 
 **Step-by-step:**
 1. Verify union-compatibility (same degree, matching domains)
@@ -880,7 +880,7 @@ Relation Relation::rename(const std::string& newName,
 3. Add all tuples from S (set semantics removes duplicates)
 
 **Example:** Find employees who are managers OR engineers:
-`Ï€<emp_id>(MANAGER) âˆª Ï€<emp_id>(ENGINEER)`
+`Ãâ‚¬<emp_id>(MANAGER) Ã¢Ë†Âª Ãâ‚¬<emp_id>(ENGINEER)`
 
 **Trace Table:**
 
@@ -893,16 +893,16 @@ Relation Relation::rename(const std::string& newName,
 
 **Complexity:** O(n + m) with hash sets.
 
-#### 3.5.6 SET DIFFERENCE Operation (âˆ’)
+#### 3.5.6 SET DIFFERENCE Operation (Ã¢Ë†â€™)
 
 **Purpose:** Find tuples in R that are NOT in S.
 
-**Syntax:** `R âˆ’ S`
+**Syntax:** `R Ã¢Ë†â€™ S`
 
 **Requirement:** Relations must be union-compatible.
 
 **Example:** Find employees who are NOT managers:
-`Ï€<emp_id>(EMPLOYEE) âˆ’ Ï€<emp_id>(MANAGER)`
+`Ãâ‚¬<emp_id>(EMPLOYEE) Ã¢Ë†â€™ Ãâ‚¬<emp_id>(MANAGER)`
 
 **Trace Table:**
 
@@ -916,20 +916,20 @@ Relation Relation::rename(const std::string& newName,
 
 **Complexity:** O(n + m) with hash sets.
 
-#### 3.5.7 CARTESIAN PRODUCT Operation (Ã—)
+#### 3.5.7 CARTESIAN PRODUCT Operation (Ãƒâ€”)
 
 **Purpose:** Combine every tuple of R with every tuple of S.
 
-**Syntax:** `R Ã— S`
+**Syntax:** `R Ãƒâ€” S`
 
-**Warning:** If R has n tuples and S has m tuples, result has n Ã— m tuples. This is expensive.
+**Warning:** If R has n tuples and S has m tuples, result has n Ãƒâ€” m tuples. This is expensive.
 
 **Example:** Combine all students with all courses (useful before selection):
-`STUDENT Ã— COURSE`
+`STUDENT Ãƒâ€” COURSE`
 
 **Trace Table:**
 
-| R (STUDENT) | | S (COURSE) | | R Ã— S (4 Ã— 3 = 12 tuples) |
+| R (STUDENT) | | S (COURSE) | | R Ãƒâ€” S (4 Ãƒâ€” 3 = 12 tuples) |
 |---|---|---|---|---|
 | sid | name | cid | title | sid | name | cid | title |
 | 1 | Alice | C1 | DBMS | 1 | Alice | C1 | DBMS |
@@ -939,21 +939,21 @@ Relation Relation::rename(const std::string& newName,
 | | | | | 2 | Bob | C2 | OS |
 | | | | | 2 | Bob | C3 | Networks |
 
-**Complexity:** O(n Ã— m) time and space â€” never use raw Cartesian product without a selection.
+**Complexity:** O(n Ãƒâ€” m) time and space Ã¢â‚¬â€ never use raw Cartesian product without a selection.
 
-#### 3.5.8 INTERSECTION Operation (âˆ©)
+#### 3.5.8 INTERSECTION Operation (Ã¢Ë†Â©)
 
-**Definition (derived):** `R âˆ© S = R âˆ’ (R âˆ’ S)`
+**Definition (derived):** `R Ã¢Ë†Â© S = R Ã¢Ë†â€™ (R Ã¢Ë†â€™ S)`
 
 **Step-by-step breakdown:**
-1. Find tuples in R not in S: `R âˆ’ S`
-2. Subtract those from R: `R âˆ’ (R âˆ’ S)`
+1. Find tuples in R not in S: `R Ã¢Ë†â€™ S`
+2. Subtract those from R: `R Ã¢Ë†â€™ (R Ã¢Ë†â€™ S)`
 3. Result is tuples in both R and S
 
-**Alternative derivation:** `R âˆ© S = S âˆ’ (S âˆ’ R)`
+**Alternative derivation:** `R Ã¢Ë†Â© S = S Ã¢Ë†â€™ (S Ã¢Ë†â€™ R)`
 
 **Example:** Employees who are BOTH managers and engineers:
-`Ï€<emp_id>(MANAGER) âˆ© Ï€<emp_id>(ENGINEER)`
+`Ãâ‚¬<emp_id>(MANAGER) Ã¢Ë†Â© Ãâ‚¬<emp_id>(ENGINEER)`
 
 **Trace Table:**
 
@@ -961,9 +961,9 @@ Relation Relation::rename(const std::string& newName,
 |------|-----------|--------|
 | 1 | MANAGER ids M | {101, 102, 104} |
 | 2 | ENGINEER ids E | {102, 103, 105} |
-| 3 | M âˆ’ E | {101, 104} |
-| 4 | M âˆ’ (M âˆ’ E) = M âˆ’ {101, 104} | {102} |
-| Output | M âˆ© E | {102} |
+| 3 | M Ã¢Ë†â€™ E | {101, 104} |
+| 4 | M Ã¢Ë†â€™ (M Ã¢Ë†â€™ E) = M Ã¢Ë†â€™ {101, 104} | {102} |
+| Output | M Ã¢Ë†Â© E | {102} |
 
 **Complexity:** O(n + m) via hash sets.
 
@@ -971,55 +971,55 @@ Relation Relation::rename(const std::string& newName,
 
 | Operation | Symbol | Arity | Unary/Binary | Input | Output | Removes Dups? | Set Semantics? |
 |-----------|--------|-------|-------------|-------|--------|---------------|----------------|
-| **Select** | Ïƒ | 1 | Unary | 1 relation | 1 relation | No | No (filters) |
-| **Project** | Ï€ | Varies | Unary | 1 relation | 1 relation | Yes | Yes |
-| **Rename** | Ï | 1 | Unary | 1 relation | 1 relation | No | No |
-| **Union** | âˆª | Varies | Binary | 2 relations | 1 relation | Yes | Yes |
-| **Difference** | âˆ’ | Varies | Binary | 2 relations | 1 relation | Yes | Yes |
-| **Product** | Ã— | Sum | Binary | 2 relations | 1 relation | No | No |
-| **Intersection** | âˆ© | Varies | Binary | 2 relations | 1 relation | Yes | Yes |
-| **Theta Join** | â¨_Î¸ | Sum | Binary | 2 relations | 1 relation | No | No |
-| **Natural Join** | â¨ | Varies | Binary | 2 relations | 1 relation | No | No |
-| **Division** | Ã· | Diff | Binary | 2 relations | 1 relation | Yes | Yes |
+| **Select** | ÃÆ’ | 1 | Unary | 1 relation | 1 relation | No | No (filters) |
+| **Project** | Ãâ‚¬ | Varies | Unary | 1 relation | 1 relation | Yes | Yes |
+| **Rename** | ÃÂ | 1 | Unary | 1 relation | 1 relation | No | No |
+| **Union** | Ã¢Ë†Âª | Varies | Binary | 2 relations | 1 relation | Yes | Yes |
+| **Difference** | Ã¢Ë†â€™ | Varies | Binary | 2 relations | 1 relation | Yes | Yes |
+| **Product** | Ãƒâ€” | Sum | Binary | 2 relations | 1 relation | No | No |
+| **Intersection** | Ã¢Ë†Â© | Varies | Binary | 2 relations | 1 relation | Yes | Yes |
+| **Theta Join** | Ã¢Â¨Â_ÃŽÂ¸ | Sum | Binary | 2 relations | 1 relation | No | No |
+| **Natural Join** | Ã¢Â¨Â | Varies | Binary | 2 relations | 1 relation | No | No |
+| **Division** | ÃƒÂ· | Diff | Binary | 2 relations | 1 relation | Yes | Yes |
 
 ---
 
 ### 3.6 Join Operations
 
 
-Joins combine tuples from two relations based on a condition. They are the most important derived operations â€” the heart of multi-table querying.
+Joins combine tuples from two relations based on a condition. They are the most important derived operations Ã¢â‚¬â€ the heart of multi-table querying.
 
-#### 3.6.1 Theta Join (â¨_Î¸)
+#### 3.6.1 Theta Join (Ã¢Â¨Â_ÃŽÂ¸)
 
-**Definition:** `R â¨_Î¸ S = Ïƒ_Î¸(R Ã— S)`
+**Definition:** `R Ã¢Â¨Â_ÃŽÂ¸ S = ÃÆ’_ÃŽÂ¸(R Ãƒâ€” S)`
 
-A Cartesian product followed by a selection on condition Î¸.
+A Cartesian product followed by a selection on condition ÃŽÂ¸.
 
 **Step-by-step:**
-1. Compute R Ã— S (all pairs)
-2. Apply selection Ïƒ_Î¸ to keep only pairs satisfying Î¸
+1. Compute R Ãƒâ€” S (all pairs)
+2. Apply selection ÃÆ’_ÃŽÂ¸ to keep only pairs satisfying ÃŽÂ¸
 
-**Example:** R â¨_{R.A &lt; S.B} S
+**Example:** R Ã¢Â¨Â_{R.A &lt; S.B} S
 
-**Complexity:** O(|R| Ã— |S|) for the product, then a scan. Never implement as product-then-select â€” always push the selection into the join.
+**Complexity:** O(|R| Ãƒâ€” |S|) for the product, then a scan. Never implement as product-then-select Ã¢â‚¬â€ always push the selection into the join.
 
 #### 3.6.2 Equi Join
 
-**Definition:** A theta join where the condition Î¸ contains only equality comparisons (=).
+**Definition:** A theta join where the condition ÃŽÂ¸ contains only equality comparisons (=).
 
-**Example:** `R â¨_{R.sid = S.sid} S`
+**Example:** `R Ã¢Â¨Â_{R.sid = S.sid} S`
 
 **Key distinction from Natural Join:** Equi join keeps both join attributes (R.sid and S.sid appear in output). Natural join removes the duplicate.
 
-#### 3.6.3 Natural Join (â¨)
+#### 3.6.3 Natural Join (Ã¢Â¨Â)
 
 **Definition:** An equi join over *all* attributes with the same name, with duplicate columns removed.
 
 **Automatic matching:** No explicit join condition. The system finds all pairs of attributes with the same name in R and S, and joins on their equality.
 
 **Step-by-step:**
-1. Identify common attributes: C = attr_names(R) âˆ© attr_names(S)
-2. Form join condition: âˆ§_{c âˆˆ C} R.c = S.c
+1. Identify common attributes: C = attr_names(R) Ã¢Ë†Â© attr_names(S)
+2. Form join condition: Ã¢Ë†Â§_{c Ã¢Ë†Ë† C} R.c = S.c
 3. Compute equi join on condition
 4. Remove the duplicate S.C columns (keep only one copy of each common attribute)
 
@@ -1027,7 +1027,7 @@ A Cartesian product followed by a selection on condition Î¸.
 ```
 STUDENT(sid, name, dept_id)
 DEPARTMENT(dept_id, dept_name)
-STUDENT â¨ DEPARTMENT â†’ (sid, name, dept_id, dept_name)
+STUDENT Ã¢Â¨Â DEPARTMENT Ã¢â€ â€™ (sid, name, dept_id, dept_name)
 ```
 
 **Trace Table:**
@@ -1037,7 +1037,7 @@ STUDENT â¨ DEPARTMENT â†’ (sid, name, dept_id, dept_name)
 | sid | name | dept_id | dept_id | dept_name | | sid | name | dept_id | dept_name |
 | 1 | Alice | 10 | 10 | CS | | 1 | Alice | 10 | CS |
 | 2 | Bob | 20 | 20 | Math | | 2 | Bob | 20 | Math |
-| 3 | Charlie | 10 | | | â†’ | 3 | Charlie | 10 | CS |
+| 3 | Charlie | 10 | | | Ã¢â€ â€™ | 3 | Charlie | 10 | CS |
 
 **Edge case:** If no common attributes, Natural Join degenerates to Cartesian Product.
 
@@ -1045,65 +1045,65 @@ STUDENT â¨ DEPARTMENT â†’ (sid, name, dept_id, dept_name)
 
 Outer joins preserve tuples from one or both relations that don't have matching tuples. Missing values become NULL.
 
-**LEFT OUTER JOIN (â¨_L):** Preserves all tuples from left relation R.
+**LEFT OUTER JOIN (Ã¢Â¨Â_L):** Preserves all tuples from left relation R.
 
 ```
 R = {(1, A), (2, B)}
 S = {(1, X), (3, Y)}
-R â¨_L S = {(1, A, X), (2, B, NULL)}
+R Ã¢Â¨Â_L S = {(1, A, X), (2, B, NULL)}
 ```
 
-**RIGHT OUTER JOIN (â¨_R):** Preserves all tuples from right relation S.
+**RIGHT OUTER JOIN (Ã¢Â¨Â_R):** Preserves all tuples from right relation S.
 
 ```
-R â¨_R S = {(1, A, X), (3, NULL, Y)}
+R Ã¢Â¨Â_R S = {(1, A, X), (3, NULL, Y)}
 ```
 
-**FULL OUTER JOIN (â¨_F):** Preserves all tuples from both relations.
+**FULL OUTER JOIN (Ã¢Â¨Â_F):** Preserves all tuples from both relations.
 
 ```
-R â¨_F S = {(1, A, X), (2, B, NULL), (3, NULL, Y)}
+R Ã¢Â¨Â_F S = {(1, A, X), (2, B, NULL), (3, NULL, Y)}
 ```
 
 **Step-by-step for Left Outer Join:**
-1. Compute natural join: J = R â¨ S
-2. Find unmatched R tuples: U = R âˆ’ Ï€_attrs(R)(J)
+1. Compute natural join: J = R Ã¢Â¨Â S
+2. Find unmatched R tuples: U = R Ã¢Ë†â€™ Ãâ‚¬_attrs(R)(J)
 3. Extend U with NULLs for S's attributes
-4. Result: J âˆª extended_U
+4. Result: J Ã¢Ë†Âª extended_U
 
-**Trace Table â€” Left Outer Join:**
+**Trace Table Ã¢â‚¬â€ Left Outer Join:**
 
 | Step | Operation | Result |
 |------|-----------|--------|
-| 1 | R â¨ S | {(1, A, X)} |
-| 2 | Ï€_sid(R) âˆ’ Ï€_sid(J) | {2} |
-| 3 | Get tuples: Ïƒ_sid=2(R) | {(2, B)} |
+| 1 | R Ã¢Â¨Â S | {(1, A, X)} |
+| 2 | Ãâ‚¬_sid(R) Ã¢Ë†â€™ Ãâ‚¬_sid(J) | {2} |
+| 3 | Get tuples: ÃÆ’_sid=2(R) | {(2, B)} |
 | 4 | Extend with NULL | {(2, B, NULL)} |
-| Output | J âˆª Extended | {(1, A, X), (2, B, NULL)} |
+| Output | J Ã¢Ë†Âª Extended | {(1, A, X), (2, B, NULL)} |
 
-#### 3.6.5 Semi Join (â‹‰)
+#### 3.6.5 Semi Join (Ã¢â€¹â€°)
 
 **Definition:** Returns tuples from R that have at least one matching tuple in S. Like a join but only returns R's attributes.
 
-**Syntax:** `R â‹‰ S`
+**Syntax:** `R Ã¢â€¹â€° S`
 
 **Example:** Find students who are enrolled in at least one course:
-`STUDENT â‹‰ ENROLLED`
+`STUDENT Ã¢â€¹â€° ENROLLED`
 
-**Key property:** Semi join is *not* associative. `R â‹‰ (S â‹‰ T) â‰  (R â‹‰ S) â‹‰ T` in general.
+**Key property:** Semi join is *not* associative. `R Ã¢â€¹â€° (S Ã¢â€¹â€° T) Ã¢â€°Â  (R Ã¢â€¹â€° S) Ã¢â€¹â€° T` in general.
 
-**Can be expressed as:** `R â‹‰ S = Ï€_attrs(R)(R â¨ S)`
+**Can be expressed as:** `R Ã¢â€¹â€° S = Ãâ‚¬_attrs(R)(R Ã¢Â¨Â S)`
 
-#### 3.6.6 Anti Join (â–·)
+#### 3.6.6 Anti Join (Ã¢â€“Â·)
 
 **Definition:** Returns tuples from R that have NO matching tuple in S.
 
-**Syntax:** `R â–· S` (also written as `R â‹‰Ì… S`)
+**Syntax:** `R Ã¢â€“Â· S` (also written as `R Ã¢â€¹â€°ÃŒâ€¦ S`)
 
 **Example:** Find students not enrolled in any course:
-`STUDENT â–· ENROLLED`
+`STUDENT Ã¢â€“Â· ENROLLED`
 
-**Can be expressed as:** `R â–· S = R âˆ’ Ï€_attrs(R)(R â¨ S)`
+**Can be expressed as:** `R Ã¢â€“Â· S = R Ã¢Ë†â€™ Ãâ‚¬_attrs(R)(R Ã¢Â¨Â S)`
 
 **Trace Table:**
 
@@ -1111,10 +1111,10 @@ R â¨_F S = {(1, A, X), (2, B, NULL), (3, NULL, Y)}
 |------|-----------|--------|
 | Input | R = STUDENT | {(1, Alice), (2, Bob), (3, Charlie)} |
 | Input | S = ENROLLED | {(1, CS101), (1, CS102), (2, CS101)} |
-| 1 | R â¨ S | {(1, Alice, CS101), (1, Alice, CS102), (2, Bob, CS101)} |
-| 2 | Ï€(R â¨ S) over R attrs | {(1, Alice), (2, Bob)} |
-| 3 | R âˆ’ Ï€(R â¨ S) | {(3, Charlie)} |
-| Output | R â–· S | {(3, Charlie)} |
+| 1 | R Ã¢Â¨Â S | {(1, Alice, CS101), (1, Alice, CS102), (2, Bob, CS101)} |
+| 2 | Ãâ‚¬(R Ã¢Â¨Â S) over R attrs | {(1, Alice), (2, Bob)} |
+| 3 | R Ã¢Ë†â€™ Ãâ‚¬(R Ã¢Â¨Â S) | {(3, Charlie)} |
+| Output | R Ã¢â€“Â· S | {(3, Charlie)} |
 
 #### 3.6.7 Self Join
 
@@ -1122,11 +1122,11 @@ R â¨_F S = {(1, A, X), (2, B, NULL), (3, NULL, Y)}
 
 **Example:** Find pairs of employees where one earns more than the other:
 ```
-Ï<E1>(EMPLOYEE) â¨_{E1.salary < E2.salary} Ï<E2>(EMPLOYEE)
+ÃÂ<E1>(EMPLOYEE) Ã¢Â¨Â_{E1.salary < E2.salary} ÃÂ<E2>(EMPLOYEE)
 ```
 
 **Step-by-step:**
-1. Create two copies via rename: Ï&lt;E1>(EMPLOYEE), Ï<E2&gt;(EMPLOYEE)
+1. Create two copies via rename: ÃÂ&lt;E1>(EMPLOYEE), ÃÂ<E2&gt;(EMPLOYEE)
 2. Join on condition involving attributes from both copies
 3. Project desired attributes
 
@@ -1134,15 +1134,15 @@ R â¨_F S = {(1, A, X), (2, B, NULL), (3, NULL, Y)}
 
 | Join Type | Condition | Duplicate Columns | Preserves Unmatched | Symbol | Use Case |
 |-----------|-----------|-------------------|--------------------|--------|----------|
-| **Theta** | Any predicate Î¸ | Yes | No | â¨_Î¸ | General purpose |
-| **Equi** | Equality only | Yes | No | â¨_{=} | Most common join |
-| **Natural** | Equality on same-named attrs | Removed | No | â¨ | Simple FK joins |
-| **Left Outer** | Equality on same-named attrs | Removed | Left side | âŸ• | "All from A, match B if exists" |
-| **Right Outer** | Equality on same-named attrs | Removed | Right side | âŸ– | "All from B, match A if exists" |
-| **Full Outer** | Equality on same-named attrs | Removed | Both sides | âŸ— | "All from both, match if possible" |
-| **Semi** | Equality on same-named attrs | R's attrs only | No | â‹‰ | "Exists" subqueries |
-| **Anti** | Equality on same-named attrs | R's attrs only | R's unmatched | â–· | "Not exists" subqueries |
-| **Self** | Any predicate | Yes (with aliases) | No | â¨ via Ï | Hierarchical/recursive |
+| **Theta** | Any predicate ÃŽÂ¸ | Yes | No | Ã¢Â¨Â_ÃŽÂ¸ | General purpose |
+| **Equi** | Equality only | Yes | No | Ã¢Â¨Â_{=} | Most common join |
+| **Natural** | Equality on same-named attrs | Removed | No | Ã¢Â¨Â | Simple FK joins |
+| **Left Outer** | Equality on same-named attrs | Removed | Left side | Ã¢Å¸â€¢ | "All from A, match B if exists" |
+| **Right Outer** | Equality on same-named attrs | Removed | Right side | Ã¢Å¸â€“ | "All from B, match A if exists" |
+| **Full Outer** | Equality on same-named attrs | Removed | Both sides | Ã¢Å¸â€” | "All from both, match if possible" |
+| **Semi** | Equality on same-named attrs | R's attrs only | No | Ã¢â€¹â€° | "Exists" subqueries |
+| **Anti** | Equality on same-named attrs | R's attrs only | R's unmatched | Ã¢â€“Â· | "Not exists" subqueries |
+| **Self** | Any predicate | Yes (with aliases) | No | Ã¢Â¨Â via ÃÂ | Hierarchical/recursive |
 
 #### 3.6.9 C++ Join Implementation
 
@@ -1170,7 +1170,7 @@ Relation naturalJoin(const Relation& R, const Relation& S) {
         if (!duplicate) outAttrs.push_back(S.getAttrs()[j]);
     }
 
-    Relation result("R â¨ S", outAttrs);
+    Relation result("R Ã¢Â¨Â S", outAttrs);
 
     for (const auto& tR : R.getTuples()) {
         for (const auto& tS : S.getTuples()) {
@@ -1215,7 +1215,7 @@ def natural_join(R: Relation, S: Relation) -> Relation:
             out_attrs.append((name, domain))
             seen.add(name)
 
-    result = Relation(f"{R.name} â¨ {S.name}", out_attrs)
+    result = Relation(f"{R.name} Ã¢Â¨Â {S.name}", out_attrs)
 
     for tR in R.tuples:
         for tS in S.tuples:
@@ -1254,10 +1254,10 @@ def left_outer_join(R: Relation, S: Relation) -> Relation:
 
 | Join Type | Time Complexity | Why |
 |-----------|----------------|-----|
-| **Nested Loop Join** | O(n Ã— m) | For each tuple in R, scan all of S |
+| **Nested Loop Join** | O(n Ãƒâ€” m) | For each tuple in R, scan all of S |
 | **Hash Join** | O(n + m) average | Build hash on S, probe with R tuples |
 | **Sort-Merge Join** | O(n log n + m log m) | Sort both, then merge |
-| **Index Nested Loop** | O(n Ã— log m) | Use B-tree on S for each R tuple |
+| **Index Nested Loop** | O(n Ãƒâ€” log m) | Use B-tree on S for each R tuple |
 
 **Why hash join is usually fastest:** It avoids the sorting step. Build a hash table on the smaller relation, then scan the larger one probing the hash table.
 
@@ -1270,63 +1270,63 @@ def left_outer_join(R: Relation, S: Relation) -> Relation:
 
 | Edge Case | Behavior | Example |
 |-----------|----------|---------|
-| **NULL in join attribute** | Not equal to anything (even another NULL) | Ïƒ_{R.a = S.a} skips NULL-NULL pairs |
-| **No common attributes (natural join)** | Degenerates to Cartesian product | R(a,b) â¨ S(c,d) â†’ R Ã— S |
-| **Duplicate join values** | All combinations appear in output | R={(1),(1)} â¨ S={(1),(1)} â†’ 4 tuples |
-| **Empty relation** | Result is empty | R = âˆ… â†’ R â¨ S = âˆ… |
+| **NULL in join attribute** | Not equal to anything (even another NULL) | ÃÆ’_{R.a = S.a} skips NULL-NULL pairs |
+| **No common attributes (natural join)** | Degenerates to Cartesian product | R(a,b) Ã¢Â¨Â S(c,d) Ã¢â€ â€™ R Ãƒâ€” S |
+| **Duplicate join values** | All combinations appear in output | R={(1),(1)} Ã¢Â¨Â S={(1),(1)} Ã¢â€ â€™ 4 tuples |
+| **Empty relation** | Result is empty | R = Ã¢Ë†â€¦ Ã¢â€ â€™ R Ã¢Â¨Â S = Ã¢Ë†â€¦ |
 | **All tuples match** | Result = Cartesian product | R.sid = S.sid covers all |
 
 **A&D Considerations for Join Algorithms:**
 
 | Algorithm | Advantage | Disadvantage |
 |-----------|-----------|--------------|
-| **Nested Loop** | Works on any condition, low overhead | O(nÃ—m) worst case |
+| **Nested Loop** | Works on any condition, low overhead | O(nÃƒâ€”m) worst case |
 | **Hash Join** | Fastest for equi-joins | Only works for equality, needs memory |
 | **Sort-Merge** | Good for large sorted data, range joins | Sorting cost, not incremental |
 | **Index NL** | Great when S is indexed | Useless without index |
 
 ---
 
-### 3.7 Division Operation (Ã·)
+### 3.7 Division Operation (ÃƒÂ·)
 
 
 The division operation answers **"all" queries**: "Find X that are associated with ALL Y."
 
 #### 3.7.1 Purpose and Formal Definition
 
-**Definition:** R Ã· S returns tuples from R that are associated with *every* tuple of S.
+**Definition:** R ÃƒÂ· S returns tuples from R that are associated with *every* tuple of S.
 
 **Requirements:**
 - S's attributes must be a subset of R's attributes
-- Result attributes = R's attributes âˆ’ S's attributes
+- Result attributes = R's attributes Ã¢Ë†â€™ S's attributes
 
-**Notation:** Let Z = attrs(R) âˆ’ attrs(S). Then:
+**Notation:** Let Z = attrs(R) Ã¢Ë†â€™ attrs(S). Then:
 ```
-R Ã· S = { t[Z] | t âˆˆ R âˆ§ âˆ€ s âˆˆ S, âˆƒ t' âˆˆ R such that t'[Z] = t[Z] âˆ§ t'[attrs(S)] = s }
+R ÃƒÂ· S = { t[Z] | t Ã¢Ë†Ë† R Ã¢Ë†Â§ Ã¢Ë†â‚¬ s Ã¢Ë†Ë† S, Ã¢Ë†Æ’ t' Ã¢Ë†Ë† R such that t'[Z] = t[Z] Ã¢Ë†Â§ t'[attrs(S)] = s }
 ```
 
 In English: Find all Z-values in R that appear paired with every s in S.
 
 #### 3.7.2 Real-World Analogy: All-You-Can-Eat Buffet
 
-You have a menu of dishes (S = {pizza, pasta, salad}). You want customers (R = customer Ã— dish ordered) who ordered EVERY dish. A customer who ordered pizza and pasta but not salad â†’ NOT in the result. Only customers who ordered all three are included.
+You have a menu of dishes (S = {pizza, pasta, salad}). You want customers (R = customer Ãƒâ€” dish ordered) who ordered EVERY dish. A customer who ordered pizza and pasta but not salad Ã¢â€ â€™ NOT in the result. Only customers who ordered all three are included.
 
 #### 3.7.3 Step-by-Step Procedure
 
-**Given:** R(sid, cid) â€” which students took which courses. S(cid) â€” all courses.
+**Given:** R(sid, cid) Ã¢â‚¬â€ which students took which courses. S(cid) Ã¢â‚¬â€ all courses.
 
 **Goal:** Find students who took ALL courses.
 
-**Step 1:** Project R onto the non-S attributes: `Ï€<sid>(R)` â†’ all student IDs
-**Step 2:** Compute `Ï€<sid>(R) Ã— S` â†’ all possible (student, course) pairs
-**Step 3:** Subtract R from the above â†’ (student, course) pairs that DON'T exist:
-`(Ï€<sid>(R) Ã— S) âˆ’ R`
-**Step 4:** Project onto sid: `Ï€<sid>((Ï€<sid>(R) Ã— S) âˆ’ R)` â†’ students missing at least one course
-**Step 5:** Subtract from all students: `Ï€<sid>(R) âˆ’ Ï€<sid>((Ï€<sid>(R) Ã— S) âˆ’ R)`
+**Step 1:** Project R onto the non-S attributes: `Ãâ‚¬<sid>(R)` Ã¢â€ â€™ all student IDs
+**Step 2:** Compute `Ãâ‚¬<sid>(R) Ãƒâ€” S` Ã¢â€ â€™ all possible (student, course) pairs
+**Step 3:** Subtract R from the above Ã¢â€ â€™ (student, course) pairs that DON'T exist:
+`(Ãâ‚¬<sid>(R) Ãƒâ€” S) Ã¢Ë†â€™ R`
+**Step 4:** Project onto sid: `Ãâ‚¬<sid>((Ãâ‚¬<sid>(R) Ãƒâ€” S) Ã¢Ë†â€™ R)` Ã¢â€ â€™ students missing at least one course
+**Step 5:** Subtract from all students: `Ãâ‚¬<sid>(R) Ã¢Ë†â€™ Ãâ‚¬<sid>((Ãâ‚¬<sid>(R) Ãƒâ€” S) Ã¢Ë†â€™ R)`
 
 **Final expression:**
 ```
-R Ã· S = Ï€<Z>(R) âˆ’ Ï€<Z>((Ï€<Z>(R) Ã— S) âˆ’ R)
+R ÃƒÂ· S = Ãâ‚¬<Z>(R) Ã¢Ë†â€™ Ãâ‚¬<Z>((Ãâ‚¬<Z>(R) Ãƒâ€” S) Ã¢Ë†â€™ R)
 ```
 
 #### 3.7.4 Dry Run Trace Table
@@ -1340,28 +1340,28 @@ S (ALL COURSES): cid = {C1, C2, C3}
 
 | Step | Expression | Result | Explanation |
 |------|-----------|--------|-------------|
-| 1 | Z = {sid} | â€” | attrs(R) âˆ’ attrs(S) |
-| 2 | Ï€&lt;sid&gt;(R) | {1, 2, 3} | All student IDs |
-| 3 | Ï€&lt;sid&gt;(R) Ã— S | (1,C1),(1,C2),(1,C3),(2,C1),(2,C2),(2,C3),(3,C1),(3,C2),(3,C3) | All possible enrollments |
-| 4 | (Step 3) âˆ’ R | (2,C3),(3,C2),(3,C3) | Missing enrollments |
-| 5 | Ï€&lt;sid&gt;(Step 4) | {2, 3} | Students missing at least one course |
-| 6 | Ï€&lt;sid&gt;(R) âˆ’ Step 5 | {1} | Students missing zero courses |
-| **Output** | R Ã· S | {1} | Only student 1 took ALL courses |
+| 1 | Z = {sid} | Ã¢â‚¬â€ | attrs(R) Ã¢Ë†â€™ attrs(S) |
+| 2 | Ãâ‚¬&lt;sid&gt;(R) | {1, 2, 3} | All student IDs |
+| 3 | Ãâ‚¬&lt;sid&gt;(R) Ãƒâ€” S | (1,C1),(1,C2),(1,C3),(2,C1),(2,C2),(2,C3),(3,C1),(3,C2),(3,C3) | All possible enrollments |
+| 4 | (Step 3) Ã¢Ë†â€™ R | (2,C3),(3,C2),(3,C3) | Missing enrollments |
+| 5 | Ãâ‚¬&lt;sid&gt;(Step 4) | {2, 3} | Students missing at least one course |
+| 6 | Ãâ‚¬&lt;sid&gt;(R) Ã¢Ë†â€™ Step 5 | {1} | Students missing zero courses |
+| **Output** | R ÃƒÂ· S | {1} | Only student 1 took ALL courses |
 
 **Verification:**
-- Student 1: took C1, C2, C3 â†’ âœ“ ALL
-- Student 2: took C1, C2 â†’ âœ— missing C3
-- Student 3: took C1 only â†’ âœ— missing C2, C3
+- Student 1: took C1, C2, C3 Ã¢â€ â€™ Ã¢Å“â€œ ALL
+- Student 2: took C1, C2 Ã¢â€ â€™ Ã¢Å“â€” missing C3
+- Student 3: took C1 only Ã¢â€ â€™ Ã¢Å“â€” missing C2, C3
 
 #### 3.7.5 Alternative Expression
 
 Division can also be expressed using set difference and rename:
 
 ```
-R Ã· S = Ï€<Z>(R) âˆ’ Ï€<Z>((Ï€<Z>(R) Ã— S) âˆ’ R)
+R ÃƒÂ· S = Ãâ‚¬<Z>(R) Ã¢Ë†â€™ Ãâ‚¬<Z>((Ãâ‚¬<Z>(R) Ãƒâ€” S) Ã¢Ë†â€™ R)
 ```
 
-Where Z = attrs(R) âˆ’ attrs(S).
+Where Z = attrs(R) Ã¢Ë†â€™ attrs(S).
 
 #### 3.7.6 C++ Division Implementation
 
@@ -1378,19 +1378,19 @@ Relation division(const Relation& R, const Relation& S) {
         }
     }
 
-    // Step 1: Ï€<Z>(R)
+    // Step 1: Ãâ‚¬<Z>(R)
     Relation piZ_R = R.project(zIndices);
 
-    // Step 2: Ï€<Z>(R) Ã— S (Cartesian product needs compatible schemas)
+    // Step 2: Ãâ‚¬<Z>(R) Ãƒâ€” S (Cartesian product needs compatible schemas)
     // In practice, we check that S's attrs are subset of R's attrs
 
-    // Step 3: (Ï€<Z>(R) Ã— S) âˆ’ R
-    // Step 4: Ï€<Z> of step 3
-    // Step 5: Ï€<Z>(R) âˆ’ step 4
+    // Step 3: (Ãâ‚¬<Z>(R) Ãƒâ€” S) Ã¢Ë†â€™ R
+    // Step 4: Ãâ‚¬<Z> of step 3
+    // Step 5: Ãâ‚¬<Z>(R) Ã¢Ë†â€™ step 4
 
     // Simplified direct implementation:
     // For each Z-value in R, check it appears with every S tuple
-    Relation result("R Ã· S", {R.getAttrs()[i] for i in zIndices});
+    Relation result("R ÃƒÂ· S", {R.getAttrs()[i] for i in zIndices});
 
     // Build index: Z-value -> set of S-tuples it pairs with
     std::map<Tuple, std::set<Tuple>> pairs;
@@ -1424,7 +1424,7 @@ Relation division(const Relation& R, const Relation& S) {
 ```python
 def division(R: Relation, S: Relation) -> Relation:
     """
-    R Ã· S: Find Z-values in R associated with ALL S tuples.
+    R ÃƒÂ· S: Find Z-values in R associated with ALL S tuples.
     Z = attrs(R) - attrs(S)
     """
     # Determine Z indices (attributes in R but not in S)
@@ -1437,7 +1437,7 @@ def division(R: Relation, S: Relation) -> Relation:
     if not s_indices:
         raise ValueError("S's attributes must be a subset of R's attributes")
 
-    # Build mapping: Z-value â†’ set of S-values it pairs with
+    # Build mapping: Z-value Ã¢â€ â€™ set of S-values it pairs with
     from collections import defaultdict
     z_to_s_pairs = defaultdict(set)
 
@@ -1451,7 +1451,7 @@ def division(R: Relation, S: Relation) -> Relation:
 
     # Keep Z-values that pair with ALL S tuples
     z_attrs = [R.attributes[i] for i in z_indices]
-    result = Relation(f"{R.name} Ã· {S.name}", z_attrs)
+    result = Relation(f"{R.name} ÃƒÂ· {S.name}", z_attrs)
 
     for z_val, paired_s in z_to_s_pairs.items():
         if paired_s == all_s_tuples:
@@ -1479,10 +1479,10 @@ Let |R| = n, |S| = m, |Z| = k (distinct Z-values).
 
 | Step | Operation | Complexity | Why |
 |------|-----------|------------|-----|
-| 1 | Build Zâ†’S map | O(n) | One pass through R |
+| 1 | Build ZÃ¢â€ â€™S map | O(n) | One pass through R |
 | 2 | Store S tuples | O(m) | Read all of S |
-| 3 | Compare each Z | O(k Ã— m) | For each Z, check against all S tuples |
-| **Total** | â€” | O(n + k Ã— m) | Typically dominated by k Ã— m |
+| 3 | Compare each Z | O(k Ãƒâ€” m) | For each Z, check against all S tuples |
+| **Total** | Ã¢â‚¬â€ | O(n + k Ãƒâ€” m) | Typically dominated by k Ãƒâ€” m |
 
 **Space complexity:** O(n + m) for the hash maps.
 
@@ -1490,10 +1490,10 @@ Let |R| = n, |S| = m, |Z| = k (distinct Z-values).
 
 | Edge Case | Behavior | Example |
 |-----------|----------|---------|
-| **S = âˆ…** | R Ã· âˆ… = Ï€_Z(R) | By convention, all Z-values qualify |
-| **R = âˆ…** | Result is empty | No data to divide |
-| **No Z-values** | R Ã· S = {âŸ¨âŸ©} or âˆ… | Result is a single empty tuple if all S exist |
-| **S has tuples not in R** | Works normally â€” those S tuples are part of "all" |
+| **S = Ã¢Ë†â€¦** | R ÃƒÂ· Ã¢Ë†â€¦ = Ãâ‚¬_Z(R) | By convention, all Z-values qualify |
+| **R = Ã¢Ë†â€¦** | Result is empty | No data to divide |
+| **No Z-values** | R ÃƒÂ· S = {Ã¢Å¸Â¨Ã¢Å¸Â©} or Ã¢Ë†â€¦ | Result is a single empty tuple if all S exist |
+| **S has tuples not in R** | Works normally Ã¢â‚¬â€ those S tuples are part of "all" |
 | **Duplicate S tuples** | Set semantics removes duplicates naturally |
 
 #### 3.7.9 A&D Table for Division
@@ -1501,16 +1501,16 @@ Let |R| = n, |S| = m, |Z| = k (distinct Z-values).
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
 | **Expressiveness** | Answers "all" queries directly | Rarely needed; confusing |
-| **Performance** | Hash-based O(n + kÃ—m) | Can't use standard indexes |
+| **Performance** | Hash-based O(n + kÃƒâ€”m) | Can't use standard indexes |
 | **Implementation** | 5-10 lines of real code | Error-prone to get right |
-| **SQL alternative** | No direct SQL Ã· | Use NOT EXISTS or GROUP BY/HAVING |
+| **SQL alternative** | No direct SQL ÃƒÂ· | Use NOT EXISTS or GROUP BY/HAVING |
 
 ---
 
 ### 3.8 Relational Calculus
 
 
-Relational calculus is a **declarative** query language â€” you specify *what* to retrieve, not *how* to compute it. The database system figures out the execution plan.
+Relational calculus is a **declarative** query language Ã¢â‚¬â€ you specify *what* to retrieve, not *how* to compute it. The database system figures out the execution plan.
 
 #### 3.8.1 Tuple Relational Calculus (TRC)
 
@@ -1521,29 +1521,29 @@ The set of all tuples t satisfying CONDITION(t).
 **Building blocks:**
 - **Tuple variable:** t ranges over tuples of a relation
 - **Condition:** Predicate involving tuple attributes
-- **Quantifiers:** âˆƒ (there exists), âˆ€ (for all)
-- **Connectors:** âˆ§ (AND), âˆ¨ (OR), Â¬ (NOT), â‡’ (implies)
+- **Quantifiers:** Ã¢Ë†Æ’ (there exists), Ã¢Ë†â‚¬ (for all)
+- **Connectors:** Ã¢Ë†Â§ (AND), Ã¢Ë†Â¨ (OR), Ã‚Â¬ (NOT), Ã¢â€¡â€™ (implies)
 
-**Example â€” Find students with GPA > 3.5:**
+**Example Ã¢â‚¬â€ Find students with GPA > 3.5:**
 ```
-{ t | t âˆˆ STUDENT âˆ§ t.gpa > 3.5 }
+{ t | t Ã¢Ë†Ë† STUDENT Ã¢Ë†Â§ t.gpa > 3.5 }
 ```
 
 **Step-by-step to write a TRC query:**
-1. Identify the tuple variable and its relation: t âˆˆ R
+1. Identify the tuple variable and its relation: t Ã¢Ë†Ë† R
 2. Add selection conditions: t.attr op value
-3. Add join conditions using âˆƒ: âˆƒ e âˆˆ ENROLLED (e.sid = t.sid âˆ§ ...)
-4. Add "all" conditions using âˆ€ ... â‡’ ...
+3. Add join conditions using Ã¢Ë†Æ’: Ã¢Ë†Æ’ e Ã¢Ë†Ë† ENROLLED (e.sid = t.sid Ã¢Ë†Â§ ...)
+4. Add "all" conditions using Ã¢Ë†â‚¬ ... Ã¢â€¡â€™ ...
 
-**Example â€” Find names of students in courses taught by Dr. Smith:**
+**Example Ã¢â‚¬â€ Find names of students in courses taught by Dr. Smith:**
 ```
-{ s.name | s âˆˆ STUDENT âˆ§ âˆƒ e âˆˆ ENROLLED (e.sid = s.sid âˆ§
-           âˆƒ c âˆˆ COURSE (c.cid = e.cid âˆ§ c.instructor = 'Dr. Smith')) }
+{ s.name | s Ã¢Ë†Ë† STUDENT Ã¢Ë†Â§ Ã¢Ë†Æ’ e Ã¢Ë†Ë† ENROLLED (e.sid = s.sid Ã¢Ë†Â§
+           Ã¢Ë†Æ’ c Ã¢Ë†Ë† COURSE (c.cid = e.cid Ã¢Ë†Â§ c.instructor = 'Dr. Smith')) }
 ```
 
-**Example â€” Find students who take ALL courses (using âˆ€):**
+**Example Ã¢â‚¬â€ Find students who take ALL courses (using Ã¢Ë†â‚¬):**
 ```
-{ t.sid | t âˆˆ ENROLLED âˆ§ âˆ€ c âˆˆ COURSE (âˆƒ e âˆˆ ENROLLED (e.sid = t.sid âˆ§ e.cid = c.cid))}
+{ t.sid | t Ã¢Ë†Ë† ENROLLED Ã¢Ë†Â§ Ã¢Ë†â‚¬ c Ã¢Ë†Ë† COURSE (Ã¢Ë†Æ’ e Ã¢Ë†Ë† ENROLLED (e.sid = t.sid Ã¢Ë†Â§ e.cid = c.cid))}
 ```
 
 #### 3.8.2 Domain Relational Calculus (DRC)
@@ -1552,41 +1552,41 @@ The set of all tuples t satisfying CONDITION(t).
 
 Uses **domain variables** (individual values) instead of tuple variables. Each variable ranges over a domain rather than over a relation.
 
-**Example â€” Find student IDs and names:**
+**Example Ã¢â‚¬â€ Find student IDs and names:**
 ```
-{ <i, n> | âˆƒ m, g (<i, n, m, g> âˆˆ STUDENT) }
-```
-
-**Example â€” Find names of CS students with GPA > 3.5:**
-```
-{ <n> | âˆƒ i, m, g (<i, n, m, g> âˆˆ STUDENT âˆ§ m = 'CS' âˆ§ g > 3.5) }
+{ <i, n> | Ã¢Ë†Æ’ m, g (<i, n, m, g> Ã¢Ë†Ë† STUDENT) }
 ```
 
-**Example â€” Find students in Dr. Smith's courses (DRC):**
+**Example Ã¢â‚¬â€ Find names of CS students with GPA > 3.5:**
 ```
-{ <n> | âˆƒ i, m, g (<i, n, m, g> âˆˆ STUDENT) âˆ§
-        âˆƒ c, t, cr (<c, t, cr> âˆˆ COURSE âˆ§ t = 'Dr. Smith') âˆ§
-        âˆƒ sem, gr (<i, c, sem, gr> âˆˆ ENROLLED) }
+{ <n> | Ã¢Ë†Æ’ i, m, g (<i, n, m, g> Ã¢Ë†Ë† STUDENT Ã¢Ë†Â§ m = 'CS' Ã¢Ë†Â§ g > 3.5) }
+```
+
+**Example Ã¢â‚¬â€ Find students in Dr. Smith's courses (DRC):**
+```
+{ <n> | Ã¢Ë†Æ’ i, m, g (<i, n, m, g> Ã¢Ë†Ë† STUDENT) Ã¢Ë†Â§
+        Ã¢Ë†Æ’ c, t, cr (<c, t, cr> Ã¢Ë†Ë† COURSE Ã¢Ë†Â§ t = 'Dr. Smith') Ã¢Ë†Â§
+        Ã¢Ë†Æ’ sem, gr (<i, c, sem, gr> Ã¢Ë†Ë† ENROLLED) }
 ```
 
 **Step-by-step to convert TRC to DRC:**
 1. Replace each tuple variable with individual domain variables
 2. Replace t.attr with the corresponding domain variable
-3. Add the membership condition: &lt;domain_vars&gt; âˆˆ Relation
-4. Adjust quantifiers: âˆƒ ranges over the domain vars of the relation
+3. Add the membership condition: &lt;domain_vars&gt; Ã¢Ë†Ë† Relation
+4. Adjust quantifiers: Ã¢Ë†Æ’ ranges over the domain vars of the relation
 
 #### 3.8.3 Safety of Relational Calculus Expressions
 
 **Problem:** Some calculus expressions can produce infinite results.
 
-**Unsafe example:** `{ t | Â¬(t âˆˆ STUDENT) }` â€” the set of ALL tuples NOT in STUDENT. This includes every conceivable tuple not in the database â€” infinite!
+**Unsafe example:** `{ t | Ã‚Â¬(t Ã¢Ë†Ë† STUDENT) }` Ã¢â‚¬â€ the set of ALL tuples NOT in STUDENT. This includes every conceivable tuple not in the database Ã¢â‚¬â€ infinite!
 
 **Safe expression rule:** All values in the result must appear in the database (or be constants in the query). This is called **domain independence**.
 
 A TRC expression is **safe** if:
 1. It doesn't produce values not in the active domain
-2. Every âˆ€-quantified variable is range-restricted
-3. Every Â¬-condition can be evaluated finitely
+2. Every Ã¢Ë†â‚¬-quantified variable is range-restricted
+3. Every Ã‚Â¬-condition can be evaluated finitely
 
 #### 3.8.4 RA vs RC vs SQL Comparison
 
@@ -1595,8 +1595,8 @@ A TRC expression is **safe** if:
 | **Paradigm** | Procedural | Declarative | Mostly declarative |
 | **What you write** | How to compute | What you want | What you want (with some how) |
 | **Variables** | None (operators only) | Tuple/domain variables | Range variables (aliases) |
-| **Quantifiers** | None | âˆƒ, âˆ€ | EXISTS, NOT EXISTS |
-| **Set ops** | âˆª, âˆ’, Ã—, âˆ© | Logical âˆ§, âˆ¨, Â¬ | UNION, EXCEPT, CROSS JOIN, INTERSECT |
+| **Quantifiers** | None | Ã¢Ë†Æ’, Ã¢Ë†â‚¬ | EXISTS, NOT EXISTS |
+| **Set ops** | Ã¢Ë†Âª, Ã¢Ë†â€™, Ãƒâ€”, Ã¢Ë†Â© | Logical Ã¢Ë†Â§, Ã¢Ë†Â¨, Ã‚Â¬ | UNION, EXCEPT, CROSS JOIN, INTERSECT |
 | **Composition** | Nested expressions | Nested quantifiers | Subqueries, CTEs |
 | **Optimizer role** | User plans the steps | System plans all steps | System optimizes the query |
 | **Turing complete?** | No (relational complete) | No (if safe) | Yes (with extensions) |
@@ -1610,9 +1610,9 @@ A TRC expression is **safe** if:
 
 | Language | Expression |
 |----------|-----------|
-| **RA** | `Ï€<name>(Ïƒ<cid='CS101'>(ENROLLED) â¨ STUDENT)` |
-| **TRC** | `{ s.name | s âˆˆ STUDENT âˆ§ âˆƒ e âˆˆ ENROLLED (e.sid = s.sid âˆ§ e.cid = 'CS101') }` |
-| **DRC** | `{ <n> | âˆƒ i, m, g (<i, n, m, g> âˆˆ STUDENT) âˆ§ âˆƒ sem, gr (<i, 'CS101', sem, gr> âˆˆ ENROLLED) }` |
+| **RA** | `Ãâ‚¬<name>(ÃÆ’<cid='CS101'>(ENROLLED) Ã¢Â¨Â STUDENT)` |
+| **TRC** | `{ s.name | s Ã¢Ë†Ë† STUDENT Ã¢Ë†Â§ Ã¢Ë†Æ’ e Ã¢Ë†Ë† ENROLLED (e.sid = s.sid Ã¢Ë†Â§ e.cid = 'CS101') }` |
+| **DRC** | `{ <n> | Ã¢Ë†Æ’ i, m, g (<i, n, m, g> Ã¢Ë†Ë† STUDENT) Ã¢Ë†Â§ Ã¢Ë†Æ’ sem, gr (<i, 'CS101', sem, gr> Ã¢Ë†Ë† ENROLLED) }` |
 | **SQL** | `SELECT s.name FROM Student s WHERE s.sid IN (SELECT e.sid FROM Enrolled e WHERE e.cid = 'CS101')` |
 
 ---
@@ -1626,31 +1626,31 @@ Understanding equivalences is crucial for **query optimization**. The database q
 
 | Rule | Expression | Why It Helps |
 |------|-----------|-------------|
-| **Cascading Selection** | Ïƒ_c1(Ïƒ_c2(R)) = Ïƒ_{c1 âˆ§ c2}(R) | Combine multiple filters into one |
-| **Commuting Selection** | Ïƒ_c1(Ïƒ_c2(R)) = Ïƒ_c2(Ïƒ_c1(R)) | Reorder for earlier filtering |
-| **Cascading Projection** | Ï€_A(Ï€_B(R)) = Ï€_A(R) if A âŠ† B | Remove redundant projections |
-| **Selection + Projection** | Ï€_A(Ïƒ_c(R)) = Ïƒ_c(Ï€_A(R)) if c involves only A | Push project before select |
-| **Selection over Product** | Ïƒ_c(R Ã— S) = Ïƒ_c(R) Ã— S if c involves only R | Reduce product size early |
-| **Selection over Union** | Ïƒ_c(R âˆª S) = Ïƒ_c(R) âˆª Ïƒ_c(S) | Push select into both branches |
-| **Projection over Product** | Ï€_{AâˆªB}(R Ã— S) = Ï€_A(R) Ã— Ï€_B(S) | Reduce columns before product |
-| **Selection over Join** | Ïƒ_c(R â¨ S) = Ïƒ_c(R) â¨ S if c involves only R | Reduce tuples before join |
-| **Join Commutativity** | R â¨ S = S â¨ R | Choose smaller as inner |
-| **Join Associativity** | (R â¨ S) â¨ T = R â¨ (S â¨ T) | Choose join order |
+| **Cascading Selection** | ÃÆ’_c1(ÃÆ’_c2(R)) = ÃÆ’_{c1 Ã¢Ë†Â§ c2}(R) | Combine multiple filters into one |
+| **Commuting Selection** | ÃÆ’_c1(ÃÆ’_c2(R)) = ÃÆ’_c2(ÃÆ’_c1(R)) | Reorder for earlier filtering |
+| **Cascading Projection** | Ãâ‚¬_A(Ãâ‚¬_B(R)) = Ãâ‚¬_A(R) if A Ã¢Å â€  B | Remove redundant projections |
+| **Selection + Projection** | Ãâ‚¬_A(ÃÆ’_c(R)) = ÃÆ’_c(Ãâ‚¬_A(R)) if c involves only A | Push project before select |
+| **Selection over Product** | ÃÆ’_c(R Ãƒâ€” S) = ÃÆ’_c(R) Ãƒâ€” S if c involves only R | Reduce product size early |
+| **Selection over Union** | ÃÆ’_c(R Ã¢Ë†Âª S) = ÃÆ’_c(R) Ã¢Ë†Âª ÃÆ’_c(S) | Push select into both branches |
+| **Projection over Product** | Ãâ‚¬_{AÃ¢Ë†ÂªB}(R Ãƒâ€” S) = Ãâ‚¬_A(R) Ãƒâ€” Ãâ‚¬_B(S) | Reduce columns before product |
+| **Selection over Join** | ÃÆ’_c(R Ã¢Â¨Â S) = ÃÆ’_c(R) Ã¢Â¨Â S if c involves only R | Reduce tuples before join |
+| **Join Commutativity** | R Ã¢Â¨Â S = S Ã¢Â¨Â R | Choose smaller as inner |
+| **Join Associativity** | (R Ã¢Â¨Â S) Ã¢Â¨Â T = R Ã¢Â¨Â (S Ã¢Â¨Â T) | Choose join order |
 
 #### 3.9.2 Why Equivalences Matter: Example
 
 **Original query (naive):**
 ```
-Ï€<name>(Ïƒ<gpa > 3.5>(STUDENT â¨ ENROLLED))
+Ãâ‚¬<name>(ÃÆ’<gpa > 3.5>(STUDENT Ã¢Â¨Â ENROLLED))
 ```
 
 **Optimized (using equivalences):**
-1. Push selection into STUDENT: `Ï€<name>((Ïƒ<gpa>3.5>(STUDENT)) â¨ ENROLLED)`
-2. Reduce STUDENT rows before join â€” fewer tuple comparisons
+1. Push selection into STUDENT: `Ãâ‚¬<name>((ÃÆ’<gpa>3.5>(STUDENT)) Ã¢Â¨Â ENROLLED)`
+2. Reduce STUDENT rows before join Ã¢â‚¬â€ fewer tuple comparisons
 3. With proper indexes, the optimizer may find an even better plan
 
-**Without optimization:** Join 10,000 students Ã— 50,000 enrollments, then filter
-**With optimization:** Filter 10,000 â†’ 2,000 students, then join 2,000 Ã— 50,000
+**Without optimization:** Join 10,000 students Ãƒâ€” 50,000 enrollments, then filter
+**With optimization:** Filter 10,000 Ã¢â€ â€™ 2,000 students, then join 2,000 Ãƒâ€” 50,000
 
 **Saving:** 80% fewer join comparisons.
 
@@ -1677,7 +1677,7 @@ Understanding equivalences is crucial for **query optimization**. The database q
 
 SQL: `SELECT sname FROM Student WHERE sid IN (SELECT sid FROM Enrolled WHERE grade = 'A')`
 
-RA: `Ï€<sname>(Ïƒ<grade='A'>(Enrolled) â¨ Student)`
+RA: `Ãâ‚¬<sname>(ÃÆ’<grade='A'>(Enrolled) Ã¢Â¨Â Student)`
 
 #### 3.10.2 Codd's 12 Rules
 
@@ -1706,19 +1706,19 @@ E.F. Codd defined 12 rules that a database system must satisfy to be considered 
 **How to choose a primary key from candidate keys:**
 
 1. **Stability:** Choose attributes that never change
-   - âŒ Email (people change email providers)
-   - âœ“ Employee ID (never changes)
+   - Ã¢ÂÅ’ Email (people change email providers)
+   - Ã¢Å“â€œ Employee ID (never changes)
 
 2. **Simplicity:** Prefer single attribute over composite
-   - âŒ (first_name, last_name, birth_date) â€” composite, may collide
-   - âœ“ Auto-increment ID
+   - Ã¢ÂÅ’ (first_name, last_name, birth_date) Ã¢â‚¬â€ composite, may collide
+   - Ã¢Å“â€œ Auto-increment ID
 
 3. **Familiarity:** Use natural keys when stable and simple
-   - âœ“ ISBN for books
-   - âœ“ SSN for US persons (with privacy caveats)
+   - Ã¢Å“â€œ ISBN for books
+   - Ã¢Å“â€œ SSN for US persons (with privacy caveats)
 
 4. **Performance:** Prefer small, numeric keys
-   - âœ“ INTEGER (4 bytes) over VARCHAR(100) â€” faster index, less storage
+   - Ã¢Å“â€œ INTEGER (4 bytes) over VARCHAR(100) Ã¢â‚¬â€ faster index, less storage
 
 5. **Surrogate when in doubt:** If no stable natural key exists
    - Add an auto-increment column as surrogate PK
@@ -1733,7 +1733,7 @@ A relation is in **First Normal Form (1NF)** if:
 
 **Violation:** `STUDENT(sid, name, phones)` where phones = "555-0100, 555-0200"
 
-**Fix â€” Separate relation:**
+**Fix Ã¢â‚¬â€ Separate relation:**
 ```
 STUDENT(sid, name)
 PHONE(sid, phone_number)
@@ -1756,7 +1756,7 @@ STUDENT(sid, name, phone1, phone2)
 
 **Q2: Can you express division using basic operations?**
 
-*Answer:* Yes. R Ã· S = Ï€<sub>Z&lt;/sub&gt;(R) âˆ’ Ï€<sub>Z&lt;/sub&gt;((Ï€<sub>Z&lt;/sub&gt;(R) Ã— S) âˆ’ R), where Z = attrs(R) âˆ’ attrs(S).
+*Answer:* Yes. R ÃƒÂ· S = Ãâ‚¬<sub>Z&lt;/sub&gt;(R) Ã¢Ë†â€™ Ãâ‚¬<sub>Z&lt;/sub&gt;((Ãâ‚¬<sub>Z&lt;/sub&gt;(R) Ãƒâ€” S) Ã¢Ë†â€™ R), where Z = attrs(R) Ã¢Ë†â€™ attrs(S).
 
 **Q3: What's the difference between a primary key and a unique key?**
 
@@ -1766,13 +1766,13 @@ STUDENT(sid, name, phone1, phone2)
 - Primary key is the clustered index by default in many DBMS
 - Foreign keys reference primary keys, not unique keys
 
-**Q4: Natural join vs equi join â€” what's the difference?**
+**Q4: Natural join vs equi join Ã¢â‚¬â€ what's the difference?**
 
 *Answer:* Natural join automatically joins on all same-named attributes and removes duplicate columns. Equi join requires an explicit equality condition and keeps both copies of the join columns. Natural join is syntactic sugar; equi join is explicit.
 
 **Q5: Your query is slow. How does knowing relational algebra help?**
 
-*Answer:* I look at the query execution plan â€” it shows operators like Seq Scan (full table scan = Ïƒ without index), Hash Join (â¨), Nested Loop (â¨ without index). Using equivalence rules, I can mentally rewrite the query: push filters down, reorder joins to put smaller tables first, avoid Cartesian products. RA knowledge lets me read the plan and know what to change.
+*Answer:* I look at the query execution plan Ã¢â‚¬â€ it shows operators like Seq Scan (full table scan = ÃÆ’ without index), Hash Join (Ã¢Â¨Â), Nested Loop (Ã¢Â¨Â without index). Using equivalence rules, I can mentally rewrite the query: push filters down, reorder joins to put smaller tables first, avoid Cartesian products. RA knowledge lets me read the plan and know what to change.
 
 ---
 
@@ -1786,20 +1786,20 @@ PostgreSQL's optimizer internally represents every query as a tree of **Relation
 ```
 Seq Scan on student  (cost=0.00..35.50 rows=10 width=40)
   Filter: (gpa > 3.5)
-  â†’ Ïƒ<gpa>3.5>(student)
+  Ã¢â€ â€™ ÃÆ’<gpa>3.5>(student)
 
 Hash Join  (cost=72.50..135.20 rows=50 width=80)
   Hash Cond: (enrolled.sid = student.sid)
-  â†’ Seq Scan on enrolled
-  â†’ Hash
-      â†’ Seq Scan on student
-  â†’ Ï€<...>(Ïƒ<...>(enrolled â¨ student))
+  Ã¢â€ â€™ Seq Scan on enrolled
+  Ã¢â€ â€™ Hash
+      Ã¢â€ â€™ Seq Scan on student
+  Ã¢â€ â€™ Ãâ‚¬<...>(ÃÆ’<...>(enrolled Ã¢Â¨Â student))
 ```
 
 PostgreSQL uses:
-- **Selection pushdown:** Moves Ïƒ closer to the data scan
+- **Selection pushdown:** Moves ÃÆ’ closer to the data scan
 - **Join ordering:** Estimates which join order minimizes cost
-- **Index selection:** Chooses between Ïƒ (filter) vs index scan
+- **Index selection:** Chooses between ÃÆ’ (filter) vs index scan
 - **Hash vs Merge vs Nested Loop:** Picks join algorithm per pair
 
 **EXPLAIN ANALYZE** output directly mirrors relational algebra trees.
@@ -1808,7 +1808,7 @@ PostgreSQL uses:
 
 MySQL's optimizer transforms SQL into **relational algebra expressions** during the **query rewrite phase**:
 
-1. **Parsing:** SQL â†’ parse tree
+1. **Parsing:** SQL Ã¢â€ â€™ parse tree
 2. **Preprocessing:** View expansion, constant folding
 3. **Query rewrite:** Convert to relational algebra
 4. **Optimization:** Apply equivalence rules, generate plans
@@ -1828,11 +1828,11 @@ Oracle's **Cost-Based Optimizer (CBO)** uses relational algebra internally:
 - **Plan Generator:** Generates alternative algebra trees, picks lowest cost
 
 Oracle's **EXPLAIN PLAN** output shows operators like:
-- `TABLE ACCESS FULL` â†’ Ïƒ without index
-- `TABLE ACCESS BY INDEX ROWID` â†’ Ïƒ with index
-- `HASH JOIN` â†’ â¨ using hash algorithm
-- `SORT JOIN` â†’ â¨ using sort-merge
-- `FILTER` â†’ Ïƒ with subquery
+- `TABLE ACCESS FULL` Ã¢â€ â€™ ÃÆ’ without index
+- `TABLE ACCESS BY INDEX ROWID` Ã¢â€ â€™ ÃÆ’ with index
+- `HASH JOIN` Ã¢â€ â€™ Ã¢Â¨Â using hash algorithm
+- `SORT JOIN` Ã¢â€ â€™ Ã¢Â¨Â using sort-merge
+- `FILTER` Ã¢â€ â€™ ÃÆ’ with subquery
 
 #### 3.11.4 How Query Optimizers Use Relational Algebra
 
@@ -1841,11 +1841,11 @@ SQL Query: SELECT s.name FROM Student s, Enrolled e
            WHERE s.sid = e.sid AND e.grade = 'A'
 
 Algebra Tree (canonical):          Optimized Algebra Tree:
-     Ï€<name>                            Ï€<name>
+     Ãâ‚¬<name>                            Ãâ‚¬<name>
         |                                  |
-     Ïƒ<grade='A'>                       â¨<s.sid=e.sid>
+     ÃÆ’<grade='A'>                       Ã¢Â¨Â<s.sid=e.sid>
         |                               /        \
-     â¨<s.sid=e.sid>                Ïƒ<grade='A'>    Student
+     Ã¢Â¨Â<s.sid=e.sid>                ÃÆ’<grade='A'>    Student
       /         \                      |
   Student     Enrolled              Enrolled
 ```
@@ -1853,7 +1853,7 @@ Algebra Tree (canonical):          Optimized Algebra Tree:
 **Optimizer steps:**
 1. Cartesian product is replaced with join
 2. Selection (grade='A') is pushed to Enrolled first
-3. Join order is chosen (smaller result of Ïƒ(Enrolled) first if Student is larger)
+3. Join order is chosen (smaller result of ÃÆ’(Enrolled) first if Student is larger)
 4. Index scan replaces Seq Scan if beneficial indexes exist
 
 ---
@@ -1874,11 +1874,11 @@ ENROLLED(sid, course)
 
 | Step | Expression | Cardinality | Explanation |
 |------|-----------|-------------|-------------|
-| 1 | Ïƒ&lt;course='DBMS' âˆ¨ course='OS'&gt;(ENROLLED) | e | Filter enrollments to relevant courses |
-| 2 | STUDENT â¨ (Step 1) | e (â‰¤|STUDENT|) | Join to get student names |
-| 3 | Ï€&lt;sname&gt;(Step 2) | â‰¤ e | Project only names |
+| 1 | ÃÆ’&lt;course='DBMS' Ã¢Ë†Â¨ course='OS'&gt;(ENROLLED) | e | Filter enrollments to relevant courses |
+| 2 | STUDENT Ã¢Â¨Â (Step 1) | e (Ã¢â€°Â¤|STUDENT|) | Join to get student names |
+| 3 | Ãâ‚¬&lt;sname&gt;(Step 2) | Ã¢â€°Â¤ e | Project only names |
 
-**Final:** `Ï€<sname>(STUDENT â¨ Ïƒ<course='DBMS' âˆ¨ course='OS'>(ENROLLED))`
+**Final:** `Ãâ‚¬<sname>(STUDENT Ã¢Â¨Â ÃÆ’<course='DBMS' Ã¢Ë†Â¨ course='OS'>(ENROLLED))`
 
 ### Example 2: Division with Dry Run
 
@@ -1905,9 +1905,9 @@ STORE(sid, sname)
 
 | Step | Expression | Result | Size |
 |------|-----------|--------|------|
-| 1 | Ï€&lt;pid&gt;(PRODUCT) | {P1, P2, P3} | 3 |
-| 2 | Ï€&lt;sid,pid&gt;(SALE) Ã· Step 1 | {S1} | 1 |
-| 3 | Ï€&lt;sname&gt;(STORE â¨ Step 2) | {Amazon} | 1 |
+| 1 | Ãâ‚¬&lt;pid&gt;(PRODUCT) | {P1, P2, P3} | 3 |
+| 2 | Ãâ‚¬&lt;sid,pid&gt;(SALE) ÃƒÂ· Step 1 | {S1} | 1 |
+| 3 | Ãâ‚¬&lt;sname&gt;(STORE Ã¢Â¨Â Step 2) | {Amazon} | 1 |
 
 **Verification:** Only S1 (Amazon) sells all three products (P1, P2, P3).
 
@@ -1917,19 +1917,19 @@ STORE(sid, sname)
 
 **Query:** Find supplier names who ship red parts.
 
-**RA:** `Ï€<sname>(Ïƒ<color='red'>(PART) â¨ SHIPMENT â¨ SUPPLIER)`
+**RA:** `Ãâ‚¬<sname>(ÃÆ’<color='red'>(PART) Ã¢Â¨Â SHIPMENT Ã¢Â¨Â SUPPLIER)`
 
 **Execution plan:**
-1. Ïƒ&lt;color='red'&gt;(PART) â€” filter parts
-2. Result â¨ SHIPMENT â€” get shipment records for those parts
-3. Result â¨ SUPPLIER â€” get supplier details
-4. Ï€&lt;sname&gt; â€” extract names
+1. ÃÆ’&lt;color='red'&gt;(PART) Ã¢â‚¬â€ filter parts
+2. Result Ã¢Â¨Â SHIPMENT Ã¢â‚¬â€ get shipment records for those parts
+3. Result Ã¢Â¨Â SUPPLIER Ã¢â‚¬â€ get supplier details
+4. Ãâ‚¬&lt;sname&gt; Ã¢â‚¬â€ extract names
 
 ### Example 4: Anti-Join (Not Exists)
 
 **Query:** Find products that have never been sold.
 
-**RA:** `Ï€<pid>(PRODUCT) âˆ’ Ï€<pid>(SALE)`
+**RA:** `Ãâ‚¬<pid>(PRODUCT) Ã¢Ë†â€™ Ãâ‚¬<pid>(SALE)`
 
 **SQL equivalent:** `SELECT pid FROM Product WHERE pid NOT IN (SELECT pid FROM Sale)`
 
@@ -1937,9 +1937,9 @@ STORE(sid, sname)
 
 | Step | Expression | Result |
 |------|-----------|--------|
-| 1 | Ï€&lt;pid&gt;(PRODUCT) | {P1, P2, P3, P4} |
-| 2 | Ï€&lt;pid&gt;(SALE) | {P1, P2, P3} |
-| 3 | Step 1 âˆ’ Step 2 | {P4} |
+| 1 | Ãâ‚¬&lt;pid&gt;(PRODUCT) | {P1, P2, P3, P4} |
+| 2 | Ãâ‚¬&lt;pid&gt;(SALE) | {P1, P2, P3} |
+| 3 | Step 1 Ã¢Ë†â€™ Step 2 | {P4} |
 
 ---
 
@@ -1947,14 +1947,14 @@ STORE(sid, sname)
 
 - **3.1:** The relational model, proposed by E.F. Codd in 1970, provides a mathematically rigorous framework for data organization using set theory and predicate logic.
 - **3.2:** A relation is a set of tuples (rows) with attributes (columns) drawn from domains (data types), with properties including atomic values, unique tuples, and unordered rows/columns.
-- **3.3:** Keys â€” superkey, candidate, primary, foreign, alternate, composite, surrogate â€” provide unique identification and establish relationships between relations.
-- **3.4:** Integrity constraints â€” domain, entity, referential, and semantic â€” ensure data correctness and consistency.
+- **3.3:** Keys Ã¢â‚¬â€ superkey, candidate, primary, foreign, alternate, composite, surrogate Ã¢â‚¬â€ provide unique identification and establish relationships between relations.
+- **3.4:** Integrity constraints Ã¢â‚¬â€ domain, entity, referential, and semantic Ã¢â‚¬â€ ensure data correctness and consistency.
 - **3.5:** Relational algebra is a procedural language where every operation takes relations as input and produces a new relation (closure property).
-- **3.6:** Basic operations include selection (Ïƒ), projection (Ï€), union (âˆª), set difference (âˆ’), Cartesian product (Ã—), and rename (Ï).
-- **3.7:** Derived operations â€” join types (theta, equi, natural, outer, semi, anti), intersection, and division â€” provide powerful querying capabilities built from basic operations.
+- **3.6:** Basic operations include selection (ÃÆ’), projection (Ãâ‚¬), union (Ã¢Ë†Âª), set difference (Ã¢Ë†â€™), Cartesian product (Ãƒâ€”), and rename (ÃÂ).
+- **3.7:** Derived operations Ã¢â‚¬â€ join types (theta, equi, natural, outer, semi, anti), intersection, and division Ã¢â‚¬â€ provide powerful querying capabilities built from basic operations.
 - **3.8:** Algebraic equivalence rules (pushing selection through join, commuting projection with product) are the foundation of query optimization.
-- **3.9:** Relational calculus takes a declarative approach â€” specifying WHAT to retrieve, not HOW.
-- **3.10:** Division (Ã·) answers "all" queries: find X-values associated with EVERY Y-value.
+- **3.9:** Relational calculus takes a declarative approach Ã¢â‚¬â€ specifying WHAT to retrieve, not HOW.
+- **3.10:** Division (ÃƒÂ·) answers "all" queries: find X-values associated with EVERY Y-value.
 
 ---
 
@@ -1962,16 +1962,16 @@ STORE(sid, sname)
 
 | Operation | Symbol | Arity | What It Does | Example | Closure? |
 |-----------|--------|-------|-------------|---------|----------|
-| **Selection** | Ïƒ | 1 | Filters rows by condition | Ïƒ&lt;gpa&gt;3.5>(STUDENT) | Yes |
-| **Projection** | Ï€ | Varies | Selects columns | Ï€&lt;name,major&gt;(STUDENT) | Yes |
-| **Union** | âˆª | Varies | Combines rows from two relations | R âˆª S | Yes |
-| **Set Difference** | âˆ’ | Varies | Rows in first but not second | R âˆ’ S | Yes |
-| **Cartesian Product** | Ã— | Sum | Every row of R paired with every row of S | R Ã— S | Yes |
-| **Rename** | Ï | 1 | Changes relation or attribute name | Ï&lt;new&gt;(R) | Yes |
-| **Intersection** | âˆ© | Varies | Rows in both relations | R âˆ© S | Yes |
-| **Theta Join** | â¨_Î¸ | Sum | Product + selection | Ïƒ&lt;cond&gt;(R Ã— S) | Yes |
-| **Natural Join** | â¨ | Varies | Equijoin on common attributes, deduplicated | R â¨ S | Yes |
-| **Division** | Ã· | Diff | Rows in R associated with ALL rows in S | R Ã· S | Yes |
+| **Selection** | ÃÆ’ | 1 | Filters rows by condition | ÃÆ’&lt;gpa&gt;3.5>(STUDENT) | Yes |
+| **Projection** | Ãâ‚¬ | Varies | Selects columns | Ãâ‚¬&lt;name,major&gt;(STUDENT) | Yes |
+| **Union** | Ã¢Ë†Âª | Varies | Combines rows from two relations | R Ã¢Ë†Âª S | Yes |
+| **Set Difference** | Ã¢Ë†â€™ | Varies | Rows in first but not second | R Ã¢Ë†â€™ S | Yes |
+| **Cartesian Product** | Ãƒâ€” | Sum | Every row of R paired with every row of S | R Ãƒâ€” S | Yes |
+| **Rename** | ÃÂ | 1 | Changes relation or attribute name | ÃÂ&lt;new&gt;(R) | Yes |
+| **Intersection** | Ã¢Ë†Â© | Varies | Rows in both relations | R Ã¢Ë†Â© S | Yes |
+| **Theta Join** | Ã¢Â¨Â_ÃŽÂ¸ | Sum | Product + selection | ÃÆ’&lt;cond&gt;(R Ãƒâ€” S) | Yes |
+| **Natural Join** | Ã¢Â¨Â | Varies | Equijoin on common attributes, deduplicated | R Ã¢Â¨Â S | Yes |
+| **Division** | ÃƒÂ· | Diff | Rows in R associated with ALL rows in S | R ÃƒÂ· S | Yes |
 
 ## Quick Reference
 
@@ -2030,7 +2030,7 @@ STORE(sid, sname)
    c) Operations cannot be combined
    d) Results are always closed to modification
 
-6. Division (Ã·) is used for:
+6. Division (ÃƒÂ·) is used for:
    a) Finding rows in R that match all rows in S
    b) Splitting a relation into two parts
    c) Dividing attribute values
@@ -2081,11 +2081,11 @@ STORE(sid, sname)
 - A **relation** is a set of tuples; every attribute has a domain; every tuple is unique.
 - **Keys** (superkey, candidate, primary, foreign, alternate, composite, surrogate) provide identity and relationships.
 - **Integrity constraints** (domain, entity, referential) maintain data correctness.
-- **Relational algebra** is a procedural query language with operations: selection (Ïƒ), projection (Ï€), union (âˆª), difference (âˆ’), product (Ã—), join (â¨), and division (Ã·).
+- **Relational algebra** is a procedural query language with operations: selection (ÃÆ’), projection (Ãâ‚¬), union (Ã¢Ë†Âª), difference (Ã¢Ë†â€™), product (Ãƒâ€”), join (Ã¢Â¨Â), and division (ÃƒÂ·).
 - Each operation takes relations as input and produces a new relation (**closure**).
-- **Relational calculus** provides a declarative alternative â€” TRC uses tuple variables, DRC uses domain variables.
+- **Relational calculus** provides a declarative alternative Ã¢â‚¬â€ TRC uses tuple variables, DRC uses domain variables.
 - **Equivalence rules** let query optimizers transform queries into faster forms.
-- **Division (Ã·)** answers "all" queries and can be expressed using basic operations.
+- **Division (ÃƒÂ·)** answers "all" queries and can be expressed using basic operations.
 - Major DBMS (PostgreSQL, MySQL, Oracle) internally use relational algebra trees for query optimization.
 
 ---
@@ -2117,9 +2117,9 @@ STORE(sid, sname)
    ```
 
    Compute the result of:
-   a) `Ï€<sname>(Ïƒ<sid=1>(STUDENT))`
-   b) `Ï€<sid>(TAKES) âˆ’ Ï€<sid>(Ïƒ<course='OS'>(TAKES))`
-   c) `STUDENT â¨ TAKES`
+   a) `Ãâ‚¬<sname>(ÃÆ’<sid=1>(STUDENT))`
+   b) `Ãâ‚¬<sid>(TAKES) Ã¢Ë†â€™ Ãâ‚¬<sid>(ÃÆ’<course='OS'>(TAKES))`
+   c) `STUDENT Ã¢Â¨Â TAKES`
 
 7. Write relational algebra for: "Find employee IDs of employees who work on ALL projects."
    Schema: `WORKS_ON(emp_id, proj_id)`, `PROJECT(proj_id, name)`
@@ -2134,14 +2134,14 @@ STORE(sid, sname)
 
 ### Advanced
 
-11. Prove the equivalence: `Ïƒ<cond>(R â¨ S) = Ïƒ<cond>(R) â¨ S` when cond involves only attributes of R.
+11. Prove the equivalence: `ÃÆ’<cond>(R Ã¢Â¨Â S) = ÃÆ’<cond>(R) Ã¢Â¨Â S` when cond involves only attributes of R.
 
-12. Given the relational algebra expression `Ï€<course>(Ïƒ<grade='F'>(ENROLLED))`, explain what it returns. Write the equivalent SQL query and a real-world scenario where this query would be useful.
+12. Given the relational algebra expression `Ãâ‚¬<course>(ÃÆ’<grade='F'>(ENROLLED))`, explain what it returns. Write the equivalent SQL query and a real-world scenario where this query would be useful.
 
-13. For the division operation R Ã· S:
-    a) Explain the condition under which R Ã· S is defined (attribute compatibility)
+13. For the division operation R ÃƒÂ· S:
+    a) Explain the condition under which R ÃƒÂ· S is defined (attribute compatibility)
     b) Show that division can be expressed using basic operations:
-       `R Ã· S = Ï€<Z>(R) âˆ’ Ï€<Z>((Ï€<Z>(R) Ã— S) âˆ’ R)`
+       `R ÃƒÂ· S = Ãâ‚¬<Z>(R) Ã¢Ë†â€™ Ãâ‚¬<Z>((Ãâ‚¬<Z>(R) Ãƒâ€” S) Ã¢Ë†â€™ R)`
     c) Trace this expression with R = {(1,a), (1,b), (2,a), (2,b), (3,a)} and S = {(a), (b)}
 
 14. Design a C++ class that can represent any relational algebra operation as an expression tree (composite pattern). Show how the tree can be optimized using pushdown rules.
@@ -2161,7 +2161,7 @@ STORE(sid, sname)
 17. Given the following relation and functional dependencies, find all candidate keys:
     ```
     R(A, B, C, D, E)
-    FDs: A â†’ B, BC â†’ D, D â†’ E, E â†’ A
+    FDs: A Ã¢â€ â€™ B, BC Ã¢â€ â€™ D, D Ã¢â€ â€™ E, E Ã¢â€ â€™ A
     ```
 
 18. Write a Python program that implements the division operation correctly for all edge cases (empty S, no Z-values, duplicate tuples). Include unit tests.
@@ -2178,11 +2178,11 @@ While not part of the original relational algebra, **aggregation** (GROUP BY) is
 
 **Operations:** SUM, COUNT, AVG, MIN, MAX, GROUP BY
 
-**Syntax:** `ð’¢<agg_func_list>(R)` â€” group by with aggregation
+**Syntax:** `Ã°Ââ€™Â¢<agg_func_list>(R)` Ã¢â‚¬â€ group by with aggregation
 
 **Example:** Count students per major:
 ```
-ð’¢<major, COUNT(sid)>(STUDENT)
+Ã°Ââ€™Â¢<major, COUNT(sid)>(STUDENT)
 ```
 
 **Step-by-step:**
@@ -2190,7 +2190,7 @@ While not part of the original relational algebra, **aggregation** (GROUP BY) is
 2. For each group, compute the aggregate functions
 3. Output one tuple per group
 
-**Trace Table â€” Count per major:**
+**Trace Table Ã¢â‚¬â€ Count per major:**
 
 | STUDENT | | | | Count per major | |
 |---------|---|---|---|---|---|
@@ -2258,7 +2258,7 @@ class RelationalAlgebraEngine:
     @staticmethod
     def cross_product(R: Relation, S: Relation) -> Relation:
         out_attrs = R.attributes + S.attributes
-        result = Relation(f"{R.name}Ã—{S.name}", out_attrs)
+        result = Relation(f"{R.name}Ãƒâ€”{S.name}", out_attrs)
         for tR in R.tuples:
             for tS in S.tuples:
                 result.tuples.add(tR + tS)
@@ -2349,19 +2349,19 @@ public:
 };
 ```
 
-## Applications in Real Systems â€” Extended
+## Applications in Real Systems Ã¢â‚¬â€ Extended
 
 ### MongoDB's Journey Toward Relational Concepts
 
 While MongoDB is document-based (NoSQL), recent versions (5.0+) have added:
-- **$lookup** aggregation stage â€” equivalent to LEFT OUTER JOIN
-- **ACID transactions** â€” multi-document atomicity
-- **Schema validation** â€” domain constraints
-- **Unique indexes** â€” superkey enforcement
+- **$lookup** aggregation stage Ã¢â‚¬â€ equivalent to LEFT OUTER JOIN
+- **ACID transactions** Ã¢â‚¬â€ multi-document atomicity
+- **Schema validation** Ã¢â‚¬â€ domain constraints
+- **Unique indexes** Ã¢â‚¬â€ superkey enforcement
 
 This shows that even NoSQL systems are converging on relational model guarantees.
 
-### Apache Spark SQL â€” Catalyst Optimizer
+### Apache Spark SQL Ã¢â‚¬â€ Catalyst Optimizer
 
 Spark SQL's Catalyst optimizer is a **rule-based + cost-based** optimizer built on relational algebra:
 
@@ -2374,8 +2374,8 @@ case class Join(left: LogicalPlan, right: LogicalPlan,
 ```
 
 Catalyst applies 200+ optimization rules including:
-- Predicate pushdown (Ïƒ before â¨)
-- Projection pruning (Ï€ before scan)
+- Predicate pushdown (ÃÆ’ before Ã¢Â¨Â)
+- Projection pruning (Ãâ‚¬ before scan)
 - Constant folding
 - Join reordering
 
@@ -2386,7 +2386,7 @@ SQLite uses a simpler but effective approach:
 - **Automatic index creation** for foreign keys
 - **WHERE clause analysis** to pick the best scan
 
-Its optimizer is minimalist but sufficient for embedded use â€” the RA principles still apply.
+Its optimizer is minimalist but sufficient for embedded use Ã¢â‚¬â€ the RA principles still apply.
 
 ---
 
@@ -2400,7 +2400,7 @@ Write RA for: "Find customer names who ordered products priced over $100."
 
 **Solution:**
 ```
-Ï€<name>(Ïƒ<price>100>(PRODUCT) â¨ LINEITEM â¨ ORDER â¨ CUSTOMER)
+Ãâ‚¬<name>(ÃÆ’<price>100>(PRODUCT) Ã¢Â¨Â LINEITEM Ã¢Â¨Â ORDER Ã¢Â¨Â CUSTOMER)
 ```
 
 **Result attributes:** {name}
@@ -2409,16 +2409,16 @@ Write RA for: "Find customer names who ordered products priced over $100."
 
 Find pairs of employees in the same department:
 ```
-Ï<E1>(EMPLOYEE) â¨_{E1.dept = E2.dept âˆ§ E1.id < E2.id} Ï<E2>(EMPLOYEE)
+ÃÂ<E1>(EMPLOYEE) Ã¢Â¨Â_{E1.dept = E2.dept Ã¢Ë†Â§ E1.id < E2.id} ÃÂ<E2>(EMPLOYEE)
 ```
 
 Why `E1.id < E2.id`? To avoid duplicate pairs (A,B) and (B,A), and self-pairs (A,A).
 
 ### Exercise C: Division with Empty Divisor
 
-Given R = {(1,a), (1,b), (2,a)} and S = {} (empty), compute R Ã· S.
+Given R = {(1,a), (1,b), (2,a)} and S = {} (empty), compute R ÃƒÂ· S.
 
-**Answer:** R Ã· âˆ… = Ï€_Z(R) = {1, 2}. Every Z-value trivially pairs with all (zero) S-tuples.
+**Answer:** R ÃƒÂ· Ã¢Ë†â€¦ = Ãâ‚¬_Z(R) = {1, 2}. Every Z-value trivially pairs with all (zero) S-tuples.
 
 ### Exercise D: NULL Handling in Joins
 
@@ -2426,7 +2426,7 @@ R = {(1, NULL), (2, 'A')}, S = {(NULL, 'X'), (3, 'Y')}
 
 Natural join on first attribute: Result = {} (empty)
 
-**Why:** NULL â‰  NULL in SQL semantics. Even though both relations contain NULL in the join attribute, they don't match.
+**Why:** NULL Ã¢â€°Â  NULL in SQL semantics. Even though both relations contain NULL in the join attribute, they don't match.
 
 ---
 
@@ -2434,7 +2434,7 @@ Natural join on first attribute: Result = {} (empty)
 
 | Relational Algebra Concept | Applied In | Why It Matters |
 |---------------------------|-----------|----------------|
-| **Selection + Projection** | Every SQL SELECT with WHERE | Filters rows and columns â€” the most common operations |
+| **Selection + Projection** | Every SQL SELECT with WHERE | Filters rows and columns Ã¢â‚¬â€ the most common operations |
 | **Natural Join** | Multi-table queries | Combines related data from normalized tables |
 | **Division** | "All" queries in any domain | Students taking all courses, stores selling all products |
 | **Set Difference** | Anti-joins, missing records | Customers without orders, products never sold |
@@ -2449,11 +2449,11 @@ Natural join on first attribute: Result = {} (empty)
 
 ### 3.15 TypeScript Relational Algebra Engine
 
-The following code implements a relational algebra engine in TypeScript â€” supporting selection, projection, join, set operations, and division.
+The following code implements a relational algebra engine in TypeScript Ã¢â‚¬â€ supporting selection, projection, join, set operations, and division.
 
 ```typescript
 // ============================================================
-// Relational Algebra Engine â€” TypeScript
+// Relational Algebra Engine Ã¢â‚¬â€ TypeScript
 // ============================================================
 
 class Tuple {
@@ -2475,12 +2475,12 @@ class Tuple {
 class Relation {
   constructor(public name: string, public attributes: string[], public tuples: Tuple[]) {}
 
-  // Selection (sigma) â€” filter rows by predicate
+  // Selection (sigma) Ã¢â‚¬â€ filter rows by predicate
   select(predicate: (t: Tuple) => boolean): Relation {
     return new Relation('sigma(' + this.name + ')', this.attributes, this.tuples.filter(predicate));
   }
 
-  // Projection (pi) â€” keep only specified columns, remove duplicates
+  // Projection (pi) Ã¢â‚¬â€ keep only specified columns, remove duplicates
   project(attrs: string[]): Relation {
     const seen = new Set<string>();
     const result: Tuple[] = [];
@@ -2554,7 +2554,7 @@ class Relation {
         }
       }
     }
-    return new Relation(this.name + ' â¨ ' + other.name, allAttrs, result);
+    return new Relation(this.name + ' Ã¢Â¨Â ' + other.name, allAttrs, result);
   }
 
   // Division: find tuples in this that match ALL tuples in other
@@ -2587,7 +2587,7 @@ class Relation {
       }
       if (allFound) result.push(new Tuple(zVals));
     }
-    return new Relation(this.name + ' Ã· ' + other.name, zAttrs, result);
+    return new Relation(this.name + ' ÃƒÂ· ' + other.name, zAttrs, result);
   }
 
   display(): void {
@@ -2630,9 +2630,9 @@ graph TD
                AND major = 'CS' AND course = 'DBMS'"]
     end
     subgraph "Relational Algebra Tree"
-        P["Ï€ sname"] --> J["â¨ Student.sid = Enrolled.sid"]
-        J --> S1["Ïƒ major='CS' (Student)"]
-        J --> S2["Ïƒ course='DBMS' (Enrolled)"]
+        P["Ãâ‚¬ sname"] --> J["Ã¢Â¨Â Student.sid = Enrolled.sid"]
+        J --> S1["ÃÆ’ major='CS' (Student)"]
+        J --> S2["ÃÆ’ course='DBMS' (Enrolled)"]
     end
     Q -.-> P
 ```
@@ -2686,15 +2686,15 @@ graph TD
 
 ## Pro Tips
 
-1. **Master relational algebra first** â€” it is the theoretical foundation of SQL query optimization. Every SQL query is a relational algebra expression under the hood.
-2. **Division is the trickiest operation** â€” it answers "all" queries ("students who take ALL courses"). Practice it with simple examples to build intuition.
-3. **Keys are not just constraints â€” they are query design tools** â€” understanding which columns are keys tells you where to join and what results to expect.
-4. **The closure property is why you can nest queries** â€” because every algebra operation produces a relation, you can compose them arbitrarily.
-5. **Learn the equivalence rules** â€” they are what the query optimizer uses to transform your slow query into a fast one.
-6. **Hash join beats nested loop for large datasets** â€” but only works for equi-joins. Know when to use each.
-7. **Always check your division queries** â€” test with small datasets first. It's the most error-prone operation.
-8. **NULLs break everything** â€” in joins, in comparisons, in aggregates. Design your schema to minimize nullable columns.
+1. **Master relational algebra first** Ã¢â‚¬â€ it is the theoretical foundation of SQL query optimization. Every SQL query is a relational algebra expression under the hood.
+2. **Division is the trickiest operation** Ã¢â‚¬â€ it answers "all" queries ("students who take ALL courses"). Practice it with simple examples to build intuition.
+3. **Keys are not just constraints Ã¢â‚¬â€ they are query design tools** Ã¢â‚¬â€ understanding which columns are keys tells you where to join and what results to expect.
+4. **The closure property is why you can nest queries** Ã¢â‚¬â€ because every algebra operation produces a relation, you can compose them arbitrarily.
+5. **Learn the equivalence rules** Ã¢â‚¬â€ they are what the query optimizer uses to transform your slow query into a fast one.
+6. **Hash join beats nested loop for large datasets** Ã¢â‚¬â€ but only works for equi-joins. Know when to use each.
+7. **Always check your division queries** Ã¢â‚¬â€ test with small datasets first. It's the most error-prone operation.
+8. **NULLs break everything** Ã¢â‚¬â€ in joins, in comparisons, in aggregates. Design your schema to minimize nullable columns.
 
 ---
 
-> **Final Thought:** The relational model turned data management from an art into a science. Its 1970-era insights â€” set-based operations, declarative queries, physical data independence â€” remain the foundation of virtually every modern data system. Understanding relational algebra is not academic; it's the single best investment you can make in understanding how databases actually work.
+> **Final Thought:** The relational model turned data management from an art into a science. Its 1970-era insights Ã¢â‚¬â€ set-based operations, declarative queries, physical data independence Ã¢â‚¬â€ remain the foundation of virtually every modern data system. Understanding relational algebra is not academic; it's the single best investment you can make in understanding how databases actually work.

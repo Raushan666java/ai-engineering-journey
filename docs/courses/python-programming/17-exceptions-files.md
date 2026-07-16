@@ -1,4 +1,4 @@
-# Chapter 17: Exceptions and File I/O
+﻿# Chapter 17: Exceptions and File I/O
 
 
 > **Previous:** [Generators and itertools](./16-generators.md) | **Next:** [The Python Standard Library](./18-stdlib.md)
@@ -16,16 +16,16 @@ By the end of this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/17-exceptions-files/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/17-exceptions-files/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/17-exceptions-files/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/17-exceptions-files/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/17-exceptions-files/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/17-exceptions-files/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/17-exceptions-files/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/17-exceptions-files/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/17-exceptions-files/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/17-exceptions-files/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/17-exceptions-files/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/17-exceptions-files/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -157,7 +157,7 @@ def safe_divide(a: float, b: float) -> float:
         print(f"Division successful")
         return result
     finally:
-        # Always runs → even if there's a return in try/except
+        # Always runs â†’ even if there's a return in try/except
         print("Cleanup complete")
 
 print(safe_divide(10, 2))  # Division successful, Cleanup complete, 5.0
@@ -277,7 +277,7 @@ print(calculate_discount(100, 0.2))  # 80.0
 # calculate_discount(-50, 0.2)  # AssertionError: Price must be positive
 ```
 
-Assertions can be disabled with `-O` (optimize) flag: `python -O script.py`. Do not use assertions for input validation in production code → use proper error handling.
+Assertions can be disabled with `-O` (optimize) flag: `python -O script.py`. Do not use assertions for input validation in production code â†’ use proper error handling.
 
 ## 17.5 File Operations
 
@@ -448,12 +448,12 @@ with open("data.pkl", "rb") as f:
 print(loaded)  # {'key': [1, 2, 3], 'nested': {'a': 1}}
 ```
 
-Security warning: never `pickle.load()` untrusted data → it can execute arbitrary code during deserialization. Prefer JSON for cross-language or untrusted data.
+Security warning: never `pickle.load()` untrusted data â†’ it can execute arbitrary code during deserialization. Prefer JSON for cross-language or untrusted data.
 
 ## 17.9 pathlib
 
 > **One-Sentence Takeaway:** undefined
-> **Warning:** `pickle.loads()` executes arbitrary code during deserialisation — never unpickle untrusted data.
+> **Warning:** `pickle.loads()` executes arbitrary code during deserialisation â€” never unpickle untrusted data.
 
 
 
@@ -678,7 +678,7 @@ const content = fs.readFileSync(
 ### TypeScript Error Handling Patterns
 
 ```typescript
-// Python: try/except/else/finally → TypeScript: try/catch/finally
+// Python: try/except/else/finally â†’ TypeScript: try/catch/finally
 function readConfig(path: string): string {
   try {
     const data = fs.readFileSync(path, "utf-8");
@@ -700,7 +700,7 @@ function readConfig(path: string): string {
 }
 // Python: try/except FileNotFoundError / except PermissionError / finally
 
-// Python: custom exception → TypeScript: custom Error class
+// Python: custom exception â†’ TypeScript: custom Error class
 class ValidationError extends Error {
   constructor(message: string, public readonly field: string) {
     super(message);
@@ -713,12 +713,12 @@ function validateEmail(email: string): void {
   }
 }
 
-// Python: assert → TypeScript: if + throw
+// Python: assert â†’ TypeScript: if + throw
 function assert(condition: boolean, message: string): asserts condition {
   if (!condition) throw new AssertionError(message);
 }
 
-// Python: with statement → TypeScript: Disposable (TS 5.2+)
+// Python: with statement â†’ TypeScript: Disposable (TS 5.2+)
 class FileHandler implements Disposable {
   constructor(private path: string) {
     console.log(`Opening ${path}`);
@@ -1014,7 +1014,7 @@ console.log(boundary.hasErrors()); // false
 
 1. Write a program that reads a CSV file of student scores, computes averages, and writes a new CSV with summary statistics. Handle `FileNotFoundError`, `PermissionError`, and malformed rows.
 2. Implement a recursive directory listing tool using `pathlib` that prints a tree structure like the Unix `tree` command. Indent subdirectories and files. Skip hidden files.
-3. Write a custom `ConfigError(Exception)` hierarchy: `ConfigError` → `ConfigParseError`, `ConfigValidationError`, `ConfigMissingError`. Write a config parser that raises these appropriately when parsing a simple INI-style file.
+3. Write a custom `ConfigError(Exception)` hierarchy: `ConfigError` â†’ `ConfigParseError`, `ConfigValidationError`, `ConfigMissingError`. Write a config parser that raises these appropriately when parsing a simple INI-style file.
 
 ### Challenge Problem
 

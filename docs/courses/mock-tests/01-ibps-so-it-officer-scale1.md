@@ -1,6 +1,6 @@
-# IBPS SO IT Officer Scale 1 — Full-Length Mock Test
+﻿# IBPS SO IT Officer Scale 1 â€” Full-Length Mock Test
 
-> **Exam:** IBPS Specialist Officer (SO) — IT Officer Scale 1  
+> **Exam:** IBPS Specialist Officer (SO) â€” IT Officer Scale 1  
 > **Total Questions:** 175 | **Duration:** 120 minutes | **Max Marks:** 175  
 > **Negative Marking:** 0.25 per wrong answer
 
@@ -9,16 +9,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/mock-tests/01-ibps-so-it-officer-scale1/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/mock-tests/01-ibps-so-it-officer-scale1/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/mock-tests/01-ibps-so-it-officer-scale1/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/mock-tests/01-ibps-so-it-officer-scale1/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/mock-tests/01-ibps-so-it-officer-scale1/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/mock-tests/01-ibps-so-it-officer-scale1/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/mock-tests/01-ibps-so-it-officer-scale1/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/mock-tests/01-ibps-so-it-officer-scale1/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/mock-tests/01-ibps-so-it-officer-scale1/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/mock-tests/01-ibps-so-it-officer-scale1/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/mock-tests/01-ibps-so-it-officer-scale1/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/mock-tests/01-ibps-so-it-officer-scale1/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -56,7 +56,7 @@
 | Reasoning | 35 min | 47 sec | Puzzles first, then quick topics |
 | English | 20 min | 34 sec | RC first, grammar next |
 | Quantitative Aptitude | 25 min | 43 sec | DI first, arithmetic next |
-| Buffer | 10 min | — | Review marked questions |
+| Buffer | 10 min | â€” | Review marked questions |
 
 
 ---
@@ -83,7 +83,7 @@ D) BCNF
 
 **Explanation:** 3NF requires that every non-prime attribute is non-transitively dependent on every candidate key. If there is a transitive dependency (A -> B -> C where C is non-prime, B is non-prime, and A is a candidate key), then 3NF is violated. The table is in 2NF but not in 3NF.
 
-**Key Takeaway:** 3NF eliminates transitive dependencies of non-prime attributes on candidate keys. BCNF is stricter — it requires every determinant to be a candidate key.
+**Key Takeaway:** 3NF eliminates transitive dependencies of non-prime attributes on candidate keys. BCNF is stricter â€” it requires every determinant to be a candidate key.
 </details>
 
 ---
@@ -167,7 +167,7 @@ D) R1(A), R2(A), R2(B), R1(B)
 
 **Explanation:** In schedule B, R1(A) and W2(A) conflict -> T1 -> T2. R2(A) and W1(A) conflict -> T2 -> T1. This creates a cycle T1 -> T2 and T2 -> T1, so the schedule is NOT conflict serializable.
 
-**Key Takeaway:** Check conflict serializability using a precedence graph — a cycle means the schedule is not conflict serializable.
+**Key Takeaway:** Check conflict serializability using a precedence graph â€” a cycle means the schedule is not conflict serializable.
 </details>
 
 ---
@@ -188,7 +188,7 @@ D) Integration
 
 **Explanation:** ACID stands for Atomicity, Consistency, Isolation, Durability. "Integration" is not an ACID property.
 
-**Key Takeaway:** ACID = Atomicity, Consistency, Isolation, Durability — the four fundamental properties of database transactions.
+**Key Takeaway:** ACID = Atomicity, Consistency, Isolation, Durability â€” the four fundamental properties of database transactions.
 </details>
 
 ---
@@ -501,7 +501,7 @@ D) Priority (non-preemptive)
 
 **Answer:** C) Round Robin
 
-**Explanation:** Round Robin is preemptive — the CPU is taken away after the time quantum expires. FCFS is non-preemptive. SJF and Priority can be either.
+**Explanation:** Round Robin is preemptive â€” the CPU is taken away after the time quantum expires. FCFS is non-preemptive. SJF and Priority can be either.
 
 **Key Takeaway:** Preemptive = can interrupt running process; Non-preemptive = waits for voluntary release.
 </details>

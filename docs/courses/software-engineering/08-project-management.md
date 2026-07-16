@@ -1,31 +1,31 @@
-# Project Management
+﻿# Project Management
 
 ## Learning Objectives
 
 ```
-✓ Explain the key activities involved in software project planning and their interdependencies
-✓ Estimate software project effort using function points, COCOMO II, and expert judgement
-✓ Construct a project schedule using PERT, CPM, and Gantt charts
-✓ Identify, analyse, and respond to project risks with a structured risk register
-✓ Understand and apply earned value management (EVM) with worked calculations
-✓ Describe team organisation patterns and their appropriate contexts
-✓ Implement TypeScript tools for EVM, risk tracking, estimation, and scheduling
-✓ Apply planning poker and Delphi techniques for collaborative estimation
+âœ“ Explain the key activities involved in software project planning and their interdependencies
+âœ“ Estimate software project effort using function points, COCOMO II, and expert judgement
+âœ“ Construct a project schedule using PERT, CPM, and Gantt charts
+âœ“ Identify, analyse, and respond to project risks with a structured risk register
+âœ“ Understand and apply earned value management (EVM) with worked calculations
+âœ“ Describe team organisation patterns and their appropriate contexts
+âœ“ Implement TypeScript tools for EVM, risk tracking, estimation, and scheduling
+âœ“ Apply planning poker and Delphi techniques for collaborative estimation
 ```
 
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/08-project-management/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/software-engineering/08-project-management/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/08-project-management/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/software-engineering/08-project-management/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/08-project-management/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/software-engineering/08-project-management/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/08-project-management/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/software-engineering/08-project-management/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/08-project-management/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/software-engineering/08-project-management/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/08-project-management/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/software-engineering/08-project-management/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -66,7 +66,7 @@ graph TD
 
 ### Project Planning
 
-Project planning begins with defining the project scope — the boundary between what the project will deliver and what it will not. The scope is documented in a **project charter** or **statement of work**.
+Project planning begins with defining the project scope â€” the boundary between what the project will deliver and what it will not. The scope is documented in a **project charter** or **statement of work**.
 
 **Key planning activities:**
 1. Define project objectives and success criteria (SMART goals)
@@ -146,7 +146,7 @@ Function points measure the functional size of a system from the user's perspect
 |---------------|-------------|--------|---------|---------|
 | External Inputs | Screens/forms that enter data | 3 | 4 | 6 |
 | External Outputs | Reports, screens that display data | 4 | 5 | 7 |
-| External Inquiries | Queries with input → output | 3 | 4 | 6 |
+| External Inquiries | Queries with input â†’ output | 3 | 4 | 6 |
 | Internal Logical Files | Internal data stores maintained by system | 7 | 10 | 15 |
 | External Interface Files | Files referenced from external systems | 5 | 7 | 10 |
 
@@ -157,7 +157,7 @@ Function points measure the functional size of a system from the user's perspect
 - VAF = 0.65 + (sum of ratings / 100)
 - Range: 0.65 to 1.35
 
-**Final FP = UFP × VAF**
+**Final FP = UFP Ã— VAF**
 
 **Example calculation:**
 
@@ -224,7 +224,7 @@ COCOMO II addresses modern development practices with three submodels:
 2. **Early Design:** For architectural design stage estimation (limited detail available)
 3. **Post-Architecture:** For detailed estimation (full project knowledge)
 
-**Effort equation:** `Effort = A × Size^B × M`
+**Effort equation:** `Effort = A Ã— Size^B Ã— M`
 
 Where:
 - A = constant (2.94 for post-architecture, 2.45 for early design)
@@ -232,7 +232,7 @@ Where:
 - B = scale exponent (combines 5 scale factors: precedentedness, flexibility, architecture/risk resolution, team cohesion, process maturity)
 - M = product of 17 effort multipliers for post-architecture (e.g., required reliability, database size, product complexity, etc.)
 
-**Schedule equation:** `Duration = C × Effort^D`
+**Schedule equation:** `Duration = C Ã— Effort^D`
 
 Where:
 - C = 3.67 for post-architecture
@@ -303,7 +303,7 @@ PERT (Program Evaluation and Review Technique) uses three time estimates per act
 
 **Variance:** `((P - O) / 6)^2`
 
-**Critical Path:** The longest path through the network — determines minimum project duration. Activities on the critical path have zero float (slack).
+**Critical Path:** The longest path through the network â€” determines minimum project duration. Activities on the critical path have zero float (slack).
 
 **Float (Slack):** The amount of time an activity can be delayed without affecting the project completion date.
 
@@ -366,8 +366,8 @@ EVM integrates scope, schedule, and cost data into a unified performance measure
 A project has a Budget at Completion (BAC) of $500,000. At month 6, planned completion is 50%. Actual work completed is 40%. Actual costs incurred are $230,000.
 
 ```
-PV = 50% × $500,000 = $250,000
-EV = 40% × $500,000 = $200,000
+PV = 50% Ã— $500,000 = $250,000
+EV = 40% Ã— $500,000 = $200,000
 AC = $230,000
 
 SV = $200,000 - $250,000 = -$50,000 (behind schedule)
@@ -391,7 +391,7 @@ graph LR
     classDef pr fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
     classDef pl fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
 
-    ID[Risk Identification<br>Brainstorming, Checklists]:::id --> AN[Risk Analysis<br>Probability × Impact]:::an
+    ID[Risk Identification<br>Brainstorming, Checklists]:::id --> AN[Risk Analysis<br>Probability Ã— Impact]:::an
     AN --> PR[Risk Prioritisation<br>Exposure Ranking]:::pr
     PR --> PL[Risk Planning<br>Response Strategy]:::pl
     PL --> MO[Risk Monitoring<br>Regular Review]:::pr
@@ -408,7 +408,7 @@ graph LR
 | R-004 | Third-party API deprecation | 0.3 | 0.5 | 0.15 | Transfer: contract SLA | Legal |
 | R-005 | Schedule overrun due to estimation error | 0.4 | 0.7 | 0.28 | Mitigate: buffer management | PM |
 
-**Exposure = Probability × Impact**
+**Exposure = Probability Ã— Impact**
 
 **Response Strategies:**
 - **Avoidance:** Change approach to eliminate the risk entirely (e.g., use proven technology instead of experimental)
@@ -481,7 +481,7 @@ class PlanningPokerSimulator {
 
 ## Case Studies
 
-### Case Study 1: Large Government IT Project — Estimation and Recovery
+### Case Study 1: Large Government IT Project â€” Estimation and Recovery
 
 A government agency contracted a $50M benefits management system. After 18 months, the project was 60% over budget and 12 months behind schedule.
 
@@ -498,7 +498,7 @@ A government agency contracted a $50M benefits management system. After 18 month
 
 **Result:** Project completed 8 months late (instead of forecast 18+ months). Final cost $62M (instead of forecast $85M). Delivered core functionality; Phase 2 addressed deferred scope.
 
-### Case Study 2: Startup MVP — Planning Poker and Agile Estimation
+### Case Study 2: Startup MVP â€” Planning Poker and Agile Estimation
 
 A 5-person startup building a fintech mobile app used planning poker for all sprint estimates.
 
@@ -514,13 +514,13 @@ A 5-person startup building a fintech mobile app used planning poker for all spr
 
 **Results:** Delivered MVP in 6 months (within 10% of revised estimate). Raised $5M Series A. Used EVM-like tracking to show investors objective progress metrics.
 
-### Case Study 3: Enterprise Migration — Risk Management
+### Case Study 3: Enterprise Migration â€” Risk Management
 
 A Fortune 500 company migrating from legacy ERP to SAP. Budget: $100M. Timeline: 24 months.
 
 **Risk Management Approach:**
 1. **Risk identification:** Workshop with 30 stakeholders identified 85 risks
-2. **Risk assessment:** Probability × Impact scoring. Top 5 risks had exposure > 0.5
+2. **Risk assessment:** Probability Ã— Impact scoring. Top 5 risks had exposure > 0.5
 3. **Risk response:**
    - Data migration corruption (exposure 0.72): Mitigated with parallel runs and reconciliation scripts
    - Key staff attrition (exposure 0.56): Mitigated with knowledge retention program and 3-month notice period
@@ -607,19 +607,19 @@ class EarnedValueManager {
     const lines: string[] = [
       '=== Earned Value Management Report ===',
       '',
-      '┌─────────────────────────────────┬─────────────┐',
-      '│ Metric                          │ Value       │',
-      '├─────────────────────────────────┼─────────────┤',
-      `│ Planned Value (PV)              │ $${data.plannedValue.toLocaleString().padStart(11)} │`,
-      `│ Earned Value (EV)               │ $${data.earnedValue.toLocaleString().padStart(11)} │`,
-      `│ Actual Cost (AC)                │ $${data.actualCost.toLocaleString().padStart(11)} │`,
-      `│ Schedule Variance (SV)          │ $${results.scheduleVariance.toLocaleString().padStart(11)} │`,
-      `│ Cost Variance (CV)              │ $${results.costVariance.toLocaleString().padStart(11)} │`,
-      `│ SPI                             │ ${results.schedulePerformanceIndex.toFixed(2).padStart(11)} │`,
-      `│ CPI                             │ ${results.costPerformanceIndex.toFixed(2).padStart(11)} │`,
-      `│ EAC                             │ $${results.estimateAtCompletion.toLocaleString().padStart(11)} │`,
-      `│ VAC                             │ $${results.varianceAtCompletion.toLocaleString().padStart(11)} │`,
-      '└─────────────────────────────────┴─────────────┘',
+      'â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”',
+      'â”‚ Metric                          â”‚ Value       â”‚',
+      'â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤',
+      `â”‚ Planned Value (PV)              â”‚ $${data.plannedValue.toLocaleString().padStart(11)} â”‚`,
+      `â”‚ Earned Value (EV)               â”‚ $${data.earnedValue.toLocaleString().padStart(11)} â”‚`,
+      `â”‚ Actual Cost (AC)                â”‚ $${data.actualCost.toLocaleString().padStart(11)} â”‚`,
+      `â”‚ Schedule Variance (SV)          â”‚ $${results.scheduleVariance.toLocaleString().padStart(11)} â”‚`,
+      `â”‚ Cost Variance (CV)              â”‚ $${results.costVariance.toLocaleString().padStart(11)} â”‚`,
+      `â”‚ SPI                             â”‚ ${results.schedulePerformanceIndex.toFixed(2).padStart(11)} â”‚`,
+      `â”‚ CPI                             â”‚ ${results.costPerformanceIndex.toFixed(2).padStart(11)} â”‚`,
+      `â”‚ EAC                             â”‚ $${results.estimateAtCompletion.toLocaleString().padStart(11)} â”‚`,
+      `â”‚ VAC                             â”‚ $${results.varianceAtCompletion.toLocaleString().padStart(11)} â”‚`,
+      'â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜',
       '',
       `Status: Schedule is ${results.status.schedule}, Cost is ${results.status.cost}`,
       `Forecast: ${forecast.estimatedCompletionDays} days total (${forecast.varianceDays > 0 ? '+' : ''}${forecast.varianceDays} days variance)`,
@@ -640,7 +640,7 @@ const report = evm.generateReport({
 console.log(report);
 ```
 
-### Risk Register — Risk Tracking with Probability/Impact
+### Risk Register â€” Risk Tracking with Probability/Impact
 
 ```typescript
 type RiskResponse = 'avoid' | 'mitigate' | 'transfer' | 'accept';
@@ -711,21 +711,21 @@ class RiskRegister {
       '=== Risk Register Report ===',
       `Generated: ${new Date().toISOString()}`,
       '',
-      '┌──────────────────────────────┬────────────┐',
-      '│ Metric                       │ Value      │',
-      '├──────────────────────────────┼────────────┤',
-      `│ Total Risks                  │ ${this.risks.length.toString().padStart(10)} │`,
-      `│ Open Risks                   │ ${openRisks.length.toString().padStart(10)} │`,
-      `│ Total Exposure               │ ${(totalExposure * 100).toFixed(1).padStart(8)}%  │`,
-      `│ High Exposure (>=0.5)        │ ${this.risks.filter(r => r.exposure >= 0.5).length.toString().padStart(10)} │`,
-      '└──────────────────────────────┴────────────┘',
+      'â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”',
+      'â”‚ Metric                       â”‚ Value      â”‚',
+      'â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤',
+      `â”‚ Total Risks                  â”‚ ${this.risks.length.toString().padStart(10)} â”‚`,
+      `â”‚ Open Risks                   â”‚ ${openRisks.length.toString().padStart(10)} â”‚`,
+      `â”‚ Total Exposure               â”‚ ${(totalExposure * 100).toFixed(1).padStart(8)}%  â”‚`,
+      `â”‚ High Exposure (>=0.5)        â”‚ ${this.risks.filter(r => r.exposure >= 0.5).length.toString().padStart(10)} â”‚`,
+      'â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜',
       '',
       '--- Top 5 Risks by Exposure ---',
     ];
     
     for (const risk of this.getTopRisks(5)) {
       lines.push(`  [${risk.id}] ${risk.description}`);
-      lines.push(`    P=${risk.probability} × I=${risk.impact} = ${(risk.exposure * 100).toFixed(0)}% exposure`);
+      lines.push(`    P=${risk.probability} Ã— I=${risk.impact} = ${(risk.exposure * 100).toFixed(0)}% exposure`);
       lines.push(`    Response: ${risk.response} | Owner: ${risk.owner}`);
       lines.push(`    Status: ${risk.status} | Trigger: ${risk.trigger}`);
     }
@@ -768,7 +768,7 @@ riskReg.addRisk({
 console.log(riskReg.generateRiskReport());
 ```
 
-### Project Estimator — COCOMO II and Function Points
+### Project Estimator â€” COCOMO II and Function Points
 
 ```typescript
 interface ProjectEstimate {
@@ -832,15 +832,15 @@ class ProjectEstimator {
     const lines: string[] = [
       '=== Estimate Comparison ===',
       '',
-      '┌──────────────────┬──────────────────┬──────────────────┐',
-      '│ Metric           │ Function Points  │ COCOMO II        │',
-      '├──────────────────┼──────────────────┼──────────────────┤',
-      `│ Size             │ ${fp.size.toString().padEnd(14)} FP │ ${cocomo.size.toString().padEnd(14)} KSLOC │`,
-      `│ Effort           │ ${fp.effortPersonDays.toString().padEnd(14)} pd │ ${cocomo.effortPersonDays.toString().padEnd(14)} pd │`,
-      `│ Duration         │ ${fp.durationDays.toString().padEnd(14)}d  │ ${cocomo.durationDays.toString().padEnd(14)}d  │`,
-      `│ Team             │ ${fp.teamSize.toString().padEnd(14)}    │ ${cocomo.teamSize.toString().padEnd(14)}    │`,
-      `│ Range            │ ${fp.range.low}-${fp.range.high} pd      │ ${cocomo.range.low}-${cocomo.range.high} pd      │`,
-      '└──────────────────┴──────────────────┴──────────────────┘',
+      'â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”',
+      'â”‚ Metric           â”‚ Function Points  â”‚ COCOMO II        â”‚',
+      'â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤',
+      `â”‚ Size             â”‚ ${fp.size.toString().padEnd(14)} FP â”‚ ${cocomo.size.toString().padEnd(14)} KSLOC â”‚`,
+      `â”‚ Effort           â”‚ ${fp.effortPersonDays.toString().padEnd(14)} pd â”‚ ${cocomo.effortPersonDays.toString().padEnd(14)} pd â”‚`,
+      `â”‚ Duration         â”‚ ${fp.durationDays.toString().padEnd(14)}d  â”‚ ${cocomo.durationDays.toString().padEnd(14)}d  â”‚`,
+      `â”‚ Team             â”‚ ${fp.teamSize.toString().padEnd(14)}    â”‚ ${cocomo.teamSize.toString().padEnd(14)}    â”‚`,
+      `â”‚ Range            â”‚ ${fp.range.low}-${fp.range.high} pd      â”‚ ${cocomo.range.low}-${cocomo.range.high} pd      â”‚`,
+      'â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜',
       '',
       'Recommendation: Use weighted average for final estimate',
     ];
@@ -968,20 +968,20 @@ Scheduling methods include Gantt charts for visualisation, PERT for handling est
 
 ## Practical Takeaways
 
-1. **Estimates are ranges, not commitments** — always communicate confidence levels. Use three-point estimates (optimistic, most likely, pessimistic) to convey uncertainty.
-2. **Track EVM from the start** — you can't recover what you don't measure. Establish baseline PV, EV, and AC tracking in the first sprint.
-3. **Risk management is proactive** — the best risks are those you mitigated before they materialised. Spend 5% of project budget on risk prevention.
-4. **The critical path determines the project duration** — protect critical tasks with buffers. Monitor critical path tasks daily.
-5. **Planning is more important than the plan** — the process of planning creates shared understanding. Re-plan as knowledge improves.
-6. **Re-estimate regularly** — initial estimates are uncertain; update them as knowledge improves. Use actual velocity to calibrate future estimates.
-7. **Combine estimation methods** — use at least two independent techniques (e.g., function points + COCOMO) and reconcile the results.
-8. **Contingency reserves are essential** — hold 10-20% of budget as management reserve for unknown risks. Require formal approval to access.
+1. **Estimates are ranges, not commitments** â€” always communicate confidence levels. Use three-point estimates (optimistic, most likely, pessimistic) to convey uncertainty.
+2. **Track EVM from the start** â€” you can't recover what you don't measure. Establish baseline PV, EV, and AC tracking in the first sprint.
+3. **Risk management is proactive** â€” the best risks are those you mitigated before they materialised. Spend 5% of project budget on risk prevention.
+4. **The critical path determines the project duration** â€” protect critical tasks with buffers. Monitor critical path tasks daily.
+5. **Planning is more important than the plan** â€” the process of planning creates shared understanding. Re-plan as knowledge improves.
+6. **Re-estimate regularly** â€” initial estimates are uncertain; update them as knowledge improves. Use actual velocity to calibrate future estimates.
+7. **Combine estimation methods** â€” use at least two independent techniques (e.g., function points + COCOMO) and reconcile the results.
+8. **Contingency reserves are essential** â€” hold 10-20% of budget as management reserve for unknown risks. Require formal approval to access.
 
 ## Chapter Quiz
 
 | Question | Answer | Explanation |
 |----------|--------|-------------|
-| Q1 | B | SPI = EV/PV = 0.8 means only 80% of planned work completed → 20% behind schedule |
+| Q1 | B | SPI = EV/PV = 0.8 means only 80% of planned work completed â†’ 20% behind schedule |
 | Q2 | B | PERT expected duration = (O + 4M + P) / 6, a weighted average formula |
 | Q3 | C | The critical path is the longest path through the network, determining minimum project duration |
 | Q4 | C | Avoidance changes the project approach to eliminate the risk entirely |
@@ -1046,36 +1046,36 @@ Scheduling methods include Gantt charts for visualisation, PERT for handling est
 
 ```
 Level 1: Mobile Banking App V1.0
-├── 1. Project Management
-│   ├── 1.1 Project Planning
-│   ├── 1.2 Status Reporting
-│   └── 1.3 Quality Assurance
-├── 2. Requirements
-│   ├── 2.1 User Research
-│   ├── 2.2 Feature Specification
-│   └── 2.3 Security & Compliance Requirements
-├── 3. Design
-│   ├── 3.1 UX/UI Design
-│   ├── 3.2 API Design
-│   ├── 3.3 Database Design
-│   └── 3.4 Security Architecture
-├── 4. Development
-│   ├── 4.1 Account Management Module
-│   ├── 4.2 Fund Transfer Module
-│   ├── 4.3 Bill Payment Module
-│   ├── 4.4 Transaction History Module
-│   └── 4.5 Authentication & Security
-├── 5. Testing
-│   ├── 5.1 Unit Testing
-│   ├── 5.2 Integration Testing
-│   ├── 5.3 Security Penetration Testing
-│   ├── 5.4 User Acceptance Testing
-│   └── 5.5 Performance Testing
-└── 6. Deployment
-    ├── 6.1 App Store Submission (iOS)
-    ├── 6.2 Play Store Submission (Android)
-    ├── 6.3 Backend Infrastructure Setup
-    └── 6.4 Production Go-Live
+â”œâ”€â”€ 1. Project Management
+â”‚   â”œâ”€â”€ 1.1 Project Planning
+â”‚   â”œâ”€â”€ 1.2 Status Reporting
+â”‚   â””â”€â”€ 1.3 Quality Assurance
+â”œâ”€â”€ 2. Requirements
+â”‚   â”œâ”€â”€ 2.1 User Research
+â”‚   â”œâ”€â”€ 2.2 Feature Specification
+â”‚   â””â”€â”€ 2.3 Security & Compliance Requirements
+â”œâ”€â”€ 3. Design
+â”‚   â”œâ”€â”€ 3.1 UX/UI Design
+â”‚   â”œâ”€â”€ 3.2 API Design
+â”‚   â”œâ”€â”€ 3.3 Database Design
+â”‚   â””â”€â”€ 3.4 Security Architecture
+â”œâ”€â”€ 4. Development
+â”‚   â”œâ”€â”€ 4.1 Account Management Module
+â”‚   â”œâ”€â”€ 4.2 Fund Transfer Module
+â”‚   â”œâ”€â”€ 4.3 Bill Payment Module
+â”‚   â”œâ”€â”€ 4.4 Transaction History Module
+â”‚   â””â”€â”€ 4.5 Authentication & Security
+â”œâ”€â”€ 5. Testing
+â”‚   â”œâ”€â”€ 5.1 Unit Testing
+â”‚   â”œâ”€â”€ 5.2 Integration Testing
+â”‚   â”œâ”€â”€ 5.3 Security Penetration Testing
+â”‚   â”œâ”€â”€ 5.4 User Acceptance Testing
+â”‚   â””â”€â”€ 5.5 Performance Testing
+â””â”€â”€ 6. Deployment
+    â”œâ”€â”€ 6.1 App Store Submission (iOS)
+    â”œâ”€â”€ 6.2 Play Store Submission (Android)
+    â”œâ”€â”€ 6.3 Backend Infrastructure Setup
+    â””â”€â”€ 6.4 Production Go-Live
 ```
 </details>
 
@@ -1094,14 +1094,14 @@ const counts: FunctionPointCount = {
 };
 
 // UFP calculation:
-// External Inputs: 4×3 + 5×4 + 3×6 = 12 + 20 + 18 = 50
-// External Outputs: 3×4 + 3×5 + 2×7 = 12 + 15 + 14 = 41
-// External Inquiries: 2×3 + 2×4 + 1×6 = 6 + 8 + 6 = 20
-// Internal Logical Files: 1×7 + 0×10 + 2×15 = 7 + 0 + 30 = 37
-// External Interface Files: 1×5 + 1×7 + 0×10 = 5 + 7 + 0 = 12
+// External Inputs: 4Ã—3 + 5Ã—4 + 3Ã—6 = 12 + 20 + 18 = 50
+// External Outputs: 3Ã—4 + 3Ã—5 + 2Ã—7 = 12 + 15 + 14 = 41
+// External Inquiries: 2Ã—3 + 2Ã—4 + 1Ã—6 = 6 + 8 + 6 = 20
+// Internal Logical Files: 1Ã—7 + 0Ã—10 + 2Ã—15 = 7 + 0 + 30 = 37
+// External Interface Files: 1Ã—5 + 1Ã—7 + 0Ã—10 = 5 + 7 + 0 = 12
 // UFP = 50 + 41 + 20 + 37 + 12 = 160
 
-// FP = UFP × VAF = 160 × 1.10 = 176
+// FP = UFP Ã— VAF = 160 Ã— 1.10 = 176
 
 console.log('UFP: 160');
 console.log('FP: 176');
@@ -1115,13 +1115,13 @@ console.log('FP: 176');
 
 ```typescript
 // Network:
-// A(5) → B(8) → D(7) → F(6)
-// A(5) → C(3) → E(4) → F(6)
+// A(5) â†’ B(8) â†’ D(7) â†’ F(6)
+// A(5) â†’ C(3) â†’ E(4) â†’ F(6)
 
 // Path A-B-D-F: 5 + 8 + 7 + 6 = 26 days
 // Path A-C-E-F: 5 + 3 + 4 + 6 = 18 days
 
-// Critical Path: A → B → D → F (26 days)
+// Critical Path: A â†’ B â†’ D â†’ F (26 days)
 
 // Float on non-critical path:
 // Path A-C-E-F has 26 - 18 = 8 days total float
@@ -1134,7 +1134,7 @@ const criticalPathResult = criticalPath([
   { id: "E", name: "Activity E", effortDays: 4, dependencies: ["C"] },
   { id: "F", name: "Activity F", effortDays: 6, dependencies: ["D", "E"] },
 ]);
-console.log(`Critical Path: ${criticalPathResult.path.join(' → ')}`);
+console.log(`Critical Path: ${criticalPathResult.path.join(' â†’ ')}`);
 console.log(`Duration: ${criticalPathResult.duration} days`);
 ```
 </details>
@@ -1178,11 +1178,11 @@ console.log(`Final cost: $${forecast.estimatedFinalCost.toLocaleString()}`);
 
 **Options and Trade-offs:**
 
-1. **Crashing** (adding resources): Add 3 developers → reduces to ~10 months, increases cost 40%. Risk: Brooks' Law (communication overhead may negate gains).
+1. **Crashing** (adding resources): Add 3 developers â†’ reduces to ~10 months, increases cost 40%. Risk: Brooks' Law (communication overhead may negate gains).
 
-2. **Fast-tracking** (parallel tasks): Run design and implementation in parallel → saves 1.5 months. Risk: Rework from incomplete design.
+2. **Fast-tracking** (parallel tasks): Run design and implementation in parallel â†’ saves 1.5 months. Risk: Rework from incomplete design.
 
-3. **Process improvement:** Adopt CI/CD, automated testing, and pair programming → may save 1 month. Risk: Learning curve slows initial sprints.
+3. **Process improvement:** Adopt CI/CD, automated testing, and pair programming â†’ may save 1 month. Risk: Learning curve slows initial sprints.
 
 4. **Recommended hybrid approach:**
    - Add 2 experienced developers (not juniors)

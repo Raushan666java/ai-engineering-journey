@@ -1,4 +1,4 @@
-# Chapter 17: Laravel Boost Ã¢â‚¬â€ AI-Assisted Development
+﻿# Chapter 17: Laravel Boost ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â AI-Assisted Development
 
 > **Previous:** [Search & RAG](./16-search-rag.md) | **Next:** [Automation Patterns](./18-automation-patterns.md)
 
@@ -15,16 +15,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/17-boost/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/17-boost/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/17-boost/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/17-boost/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/17-boost/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/17-boost/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/17-boost/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/17-boost/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/17-boost/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/17-boost/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/17-boost/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/17-boost/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -70,22 +70,22 @@ flowchart LR
 
 > **One-Sentence Takeaway:** Boost provides tools, vectorized docs, and AI guidelines to make any AI agent Laravel-aware.
 
-Laravel Boost is a package that acts as a bridge between AI coding agents and your Laravel application. When an AI agent writes Laravel code without Boost, it relies on its training data Ã¢â‚¬â€ which may reference an older version of Laravel, use deprecated patterns, or miss framework-specific conventions. Boost solves this by providing three things:
+Laravel Boost is a package that acts as a bridge between AI coding agents and your Laravel application. When an AI agent writes Laravel code without Boost, it relies on its training data ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â which may reference an older version of Laravel, use deprecated patterns, or miss framework-specific conventions. Boost solves this by providing three things:
 
-1. **Laravel-specific tools** Ã¢â‚¬â€ 15+ executable tools that let the agent inspect your actual application
-2. **Vectorized documentation** Ã¢â‚¬â€ 17,000+ pieces of Laravel ecosystem documentation embedded for semantic search
-3. **AI guidelines** Ã¢â‚¬â€ Laravel-maintained guidance for framework conventions, testing patterns, and pitfalls
+1. **Laravel-specific tools** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â 15+ executable tools that let the agent inspect your actual application
+2. **Vectorized documentation** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â 17,000+ pieces of Laravel ecosystem documentation embedded for semantic search
+3. **AI guidelines** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Laravel-maintained guidance for framework conventions, testing patterns, and pitfalls
 
 The architecture works like this:
 
 ```
 AI Agent (Cursor, Claude Code, OpenCode, Copilot)
-    Ã¢â€â€š
-    Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Reads .ai/guidelines/* Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€“Âº Convention rules
-    Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Calls Boost tools Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€“Âº Live app introspection
-    Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ Queries docs vectors Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€“Âº Version-matched documentation
-    Ã¢â€â€š
-    Ã¢â€“Â¼
+    ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
+    ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Reads .ai/guidelines/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬â€œÃ‚Âº Convention rules
+    ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Calls Boost tools ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬â€œÃ‚Âº Live app introspection
+    ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬ÂÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Queries docs vectors ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬â€œÃ‚Âº Version-matched documentation
+    ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
+    ÃƒÂ¢Ã¢â‚¬â€œÃ‚Â¼
 Generates code that matches:
     - Correct Laravel version APIs
     - Your app's existing patterns
@@ -114,25 +114,25 @@ The installer is interactive. It detects your environment and asks targeted ques
 ```php
 $ php artisan boost:install
 
-Ã¢â€Å’ Laravel Boost Installer Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
-Ã¢â€â€š                                                    Ã¢â€â€š
-Ã¢â€â€š   Detected: Laravel 13.x, PHP 8.4                  Ã¢â€â€š
-Ã¢â€â€š   Detected IDE: Visual Studio Code                 Ã¢â€â€š
-Ã¢â€â€š   Detected OS: Windows                             Ã¢â€â€š
-Ã¢â€â€š                                                    Ã¢â€â€š
-Ã¢â€â€š   Ã¢→â€¡ Which AI coding agents do you use?             Ã¢â€â€š
-Ã¢â€â€š     Ã¢â€“Â  Cursor                                       Ã¢â€â€š
-Ã¢â€â€š     Ã¢â€“Â  Claude Code                                  Ã¢â€â€š
-Ã¢â€â€š     Ã¢â€“Â¡ OpenCode                                     Ã¢â€â€š
-Ã¢â€â€š     Ã¢â€“Â¡ GitHub Copilot                               Ã¢â€â€š
-Ã¢â€â€š                                                    Ã¢â€â€š
-Ã¢â€â€š   Ã¢→â€¡ Install example custom guidelines?  [Yes/No]   Ã¢â€â€š
-Ã¢â€â€š                                                    Ã¢â€â€š
-Ã¢â€â€š   Ã¢→â€¡ Generate Boost configuration?       [Yes/No]   Ã¢â€â€š
-Ã¢â€â€š                                                    Ã¢â€â€š
-Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
+ÃƒÂ¢Ã¢â‚¬ÂÃ…â€™ Laravel Boost Installer ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ‚Â
+ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡                                                    ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
+ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡   Detected: Laravel 13.x, PHP 8.4                  ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
+ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡   Detected IDE: Visual Studio Code                 ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
+ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡   Detected OS: Windows                             ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
+ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡                                                    ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
+ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡   ÃƒÂ¢â†’Ã¢â‚¬Â¡ Which AI coding agents do you use?             ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
+ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡     ÃƒÂ¢Ã¢â‚¬â€œÃ‚Â  Cursor                                       ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
+ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡     ÃƒÂ¢Ã¢â‚¬â€œÃ‚Â  Claude Code                                  ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
+ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡     ÃƒÂ¢Ã¢â‚¬â€œÃ‚Â¡ OpenCode                                     ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
+ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡     ÃƒÂ¢Ã¢â‚¬â€œÃ‚Â¡ GitHub Copilot                               ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
+ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡                                                    ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
+ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡   ÃƒÂ¢â†’Ã¢â‚¬Â¡ Install example custom guidelines?  [Yes/No]   ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
+ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡                                                    ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
+ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡   ÃƒÂ¢â†’Ã¢â‚¬Â¡ Generate Boost configuration?       [Yes/No]   ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
+ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡                                                    ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
+ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬ÂÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ‹Å“
 
-Ã¢Å“â€ Boost installed successfully!
+ÃƒÂ¢Ã…â€œÃ¢â‚¬Â Boost installed successfully!
 
   Next steps:
   1. Review .ai/guidelines/ for Laravel best practices
@@ -144,14 +144,14 @@ The installer creates the `.ai/` directory structure in your project root:
 
 ```
 .ai/
-Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ guidelines/
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ laravel-conventions.md
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ testing-standards.md
-Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ security-best-practices.md
-Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ elqouent-patterns.md
-Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ boost.json
-Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ tools/
-    Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ ...
+ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ guidelines/
+ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡   ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ laravel-conventions.md
+ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡   ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ testing-standards.md
+ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡   ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ security-best-practices.md
+ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡   ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬ÂÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ elqouent-patterns.md
+ÃƒÂ¢Ã¢â‚¬ÂÃ…â€œÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ boost.json
+ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬ÂÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ tools/
+    ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬ÂÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ ...
 ```
 
 The `boost.json` configuration file stores your preferences:
@@ -403,9 +403,9 @@ Custom guidelines go in the `.ai/guidelines/` directory and can be written as `.
 
 ## Branch Strategy
 
-- `main` Ã¢â‚¬â€ production-ready code only
-- `develop` Ã¢â‚¬â€ integration branch for feature work
-- `feature/{ticket-number}-{kebab-name}` Ã¢â‚¬â€ individual features
+- `main` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â production-ready code only
+- `develop` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â integration branch for feature work
+- `feature/{ticket-number}-{kebab-name}` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â individual features
 
 ## CI Requirements
 
@@ -435,7 +435,7 @@ Cursor reads the `.ai/guidelines/` directory automatically. Boost detects Cursor
 
 ```bash
 # Boost detects Cursor during install and generates:
-# .cursorrules Ã¢â€ â€™ references .ai/guidelines/*.md
+# .cursorrules ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ references .ai/guidelines/*.md
 ```
 
 **Claude Code**
@@ -481,7 +481,7 @@ This project uses Laravel 13. Follow Laravel conventions:
 ### 17.7 Custom Guidelines
 
 
-> **One-Sentence Takeaway:** Drop .md or .blade.php files into .ai/guidelines/ — Boost auto-includes them without manual registration.
+> **One-Sentence Takeaway:** Drop .md or .blade.php files into .ai/guidelines/ â€” Boost auto-includes them without manual registration.
 
 Adding project-specific guidelines is as simple as placing a file in `.ai/guidelines/`:
 
@@ -598,17 +598,17 @@ php artisan boost:install
 php artisan boost:check
 
 # Output:
-# Ã¢â€Å’ Laravel Boost Status Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
-# Ã¢â€â€š                                          Ã¢â€â€š
-# Ã¢â€â€š  Laravel Version:  13.x                  Ã¢â€â€š
-# Ã¢â€â€š  PHP Version:      8.4                   Ã¢â€â€š
-# Ã¢â€â€š  Guidelines:       4 files loaded        Ã¢â€â€š
-# Ã¢â€â€š  Tools:            15 available           Ã¢â€â€š
-# Ã¢â€â€š  Docs Vectors:     17,234 pieces          Ã¢â€â€š
-# Ã¢â€â€š  Agent:            Cursor (detected)     Ã¢â€â€š
-# Ã¢â€â€š  Status:           Ã¢Å“â€¦ All systems go    Ã¢â€â€š
-# Ã¢â€â€š                                          Ã¢â€â€š
-# Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
+# ÃƒÂ¢Ã¢â‚¬ÂÃ…â€™ Laravel Boost Status ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ‚Â
+# ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡                                          ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
+# ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡  Laravel Version:  13.x                  ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
+# ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡  PHP Version:      8.4                   ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
+# ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡  Guidelines:       4 files loaded        ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
+# ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡  Tools:            15 available           ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
+# ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡  Docs Vectors:     17,234 pieces          ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
+# ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡  Agent:            Cursor (detected)     ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
+# ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡  Status:           ÃƒÂ¢Ã…â€œÃ¢â‚¬Â¦ All systems go    ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
+# ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡                                          ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬Å¡
+# ÃƒÂ¢Ã¢â‚¬ÂÃ¢â‚¬ÂÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ‹Å“
 ```
 
 The AI agent now receives Boost's context. When the developer requests a feature, the agent follows this pipeline:
@@ -616,25 +616,25 @@ The AI agent now receives Boost's context. When the developer requests a feature
 ```php
 // Developer: "Create a product review system with ratings"
 
-// Phase 1 Ã¢â‚¬â€ Agent reads guidelines
+// Phase 1 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Agent reads guidelines
 // Reads: .ai/guidelines/laravel-conventions.md
 // Reads: .ai/guidelines/testing-standards.md
 // Reads: .ai/guidelines/eloquent-patterns.md
 
-// Phase 2 Ã¢â‚¬â€ Agent inspects existing codebase
+// Phase 2 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Agent inspects existing codebase
 $packages = Boost::tools()->detectPackages();
 // Laravel 13.x, spatie/laravel-permission, laravel/cashier
 
 $schema = Boost::tools()->getTableSchema('products');
 // Already has: id, name, description, price, user_id
 
-// Phase 3 Ã¢â‚¬â€ Agent queries version-matched docs
+// Phase 3 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Agent queries version-matched docs
 $docs = Boost::tools()->searchDocs(
     query: 'one-to-many relationship validation',
     version: '13.x'
 );
 
-// Phase 4 Ã¢â‚¬â€ Agent generates the feature
+// Phase 4 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Agent generates the feature
 
 // Migration
 Schema::create('reviews', function (Blueprint $table) {
@@ -704,7 +704,7 @@ class ProductReviewController extends Controller
     }
 }
 
-// Phase 5 Ã¢â‚¬â€ Agent generates tests (PEST style)
+// Phase 5 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Agent generates tests (PEST style)
 it('authenticated user can review a product', function () {
     $user = User::factory()->create();
     $product = Product::factory()->create();

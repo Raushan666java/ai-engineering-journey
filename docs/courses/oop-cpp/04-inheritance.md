@@ -1,4 +1,4 @@
-# Chapter 4: Inheritance
+﻿# Chapter 4: Inheritance
 
 > **Previous:** [Constructors](./03-constructors.md) | **Next:** [Polymorphism](./05-polymorphism.md)
 
@@ -9,16 +9,16 @@ After studying this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/oop-cpp/04-inheritance/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/oop-cpp/04-inheritance/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/04-inheritance/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/oop-cpp/04-inheritance/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/oop-cpp/04-inheritance/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/oop-cpp/04-inheritance/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/04-inheritance/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/oop-cpp/04-inheritance/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/oop-cpp/04-inheritance/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/oop-cpp/04-inheritance/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/04-inheritance/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/oop-cpp/04-inheritance/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -96,10 +96,10 @@ A **Dog is-an Animal**. Everything an Animal can do, a Dog can do (plus more). T
 ### Why Inheritance?
 
 
-1. **Code Reuse** → Write common functionality once in the base class
-2. **Extensibility** → Add new derived classes without modifying existing code
-3. **Polymorphism** → Treat derived objects uniformly through base pointers
-4. **Hierarchical Organization** → Model real-world taxonomies naturally
+1. **Code Reuse** â†’ Write common functionality once in the base class
+2. **Extensibility** â†’ Add new derived classes without modifying existing code
+3. **Polymorphism** â†’ Treat derived objects uniformly through base pointers
+4. **Hierarchical Organization** â†’ Model real-world taxonomies naturally
 
 ### Numbered Steps to Model Inheritance
 
@@ -173,7 +173,7 @@ Woof! Woof!
 
 ---
 
-## 4.2 Base and Derived Classes → Deep Dive
+## 4.2 Base and Derived Classes â†’ Deep Dive
 
 ### Syntax and Semantics
 
@@ -288,15 +288,15 @@ This table shows how base class members (with their original access level) appea
 
 | Base Member Access | Inheritance Specifier | Access in Derived | Access Outside (via Derived) |
 |--------------------|----------------------|-------------------|------------------------------|
-| `public` | `public` | `public` | âœ… Accessible |
-| `protected` | `public` | `protected` | âŒ Not accessible |
-| `private` | `public` | inaccessible | âŒ Not accessible |
-| `public` | `protected` | `protected` | âŒ Not accessible |
-| `protected` | `protected` | `protected` | âŒ Not accessible |
-| `private` | `protected` | inaccessible | âŒ Not accessible |
-| `public` | `private` | `private` | âŒ Not accessible |
-| `protected` | `private` | `private` | âŒ Not accessible |
-| `private` | `private` | inaccessible | âŒ Not accessible |
+| `public` | `public` | `public` | Ã¢Å“â€¦ Accessible |
+| `protected` | `public` | `protected` | Ã¢ÂÅ’ Not accessible |
+| `private` | `public` | inaccessible | Ã¢ÂÅ’ Not accessible |
+| `public` | `protected` | `protected` | Ã¢ÂÅ’ Not accessible |
+| `protected` | `protected` | `protected` | Ã¢ÂÅ’ Not accessible |
+| `private` | `protected` | inaccessible | Ã¢ÂÅ’ Not accessible |
+| `public` | `private` | `private` | Ã¢ÂÅ’ Not accessible |
+| `protected` | `private` | `private` | Ã¢ÂÅ’ Not accessible |
+| `private` | `private` | inaccessible | Ã¢ÂÅ’ Not accessible |
 
 ### Comprehensive Demo
 
@@ -371,12 +371,12 @@ Private derived: pub=1, prot=2
 
 | Feature | `public` inheritance | `protected` inheritance | `private` inheritance |
 |---------|---------------------|------------------------|----------------------|
-| Models is-a? | âœ… Yes | âŒ No | âŒ No |
-| Base pointers work? | âœ… Yes | âŒ No | âŒ No |
-| Polymorphism? | âœ… Yes | âŒ No | âŒ No |
+| Models is-a? | Ã¢Å“â€¦ Yes | Ã¢ÂÅ’ No | Ã¢ÂÅ’ No |
+| Base pointers work? | Ã¢Å“â€¦ Yes | Ã¢ÂÅ’ No | Ã¢ÂÅ’ No |
+| Polymorphism? | Ã¢Å“â€¦ Yes | Ã¢ÂÅ’ No | Ã¢ÂÅ’ No |
 | Frequency | 95%+ of use | <1% | ~4% |
-| Can further derive? | âœ… Normal | âœ… Protected access preserved | âŒ Further derived cannot access base |
-| Alternative | → | → | Composition (almost always better) |
+| Can further derive? | Ã¢Å“â€¦ Normal | Ã¢Å“â€¦ Protected access preserved | Ã¢ÂÅ’ Further derived cannot access base |
+| Alternative | â†’ | â†’ | Composition (almost always better) |
 
 ### Runtime Type Identification with Different Inheritances
 
@@ -410,12 +410,12 @@ Private: upcast does NOT work
 
 ---
 
-## 4.4 Types of Inheritance → Complete Coverage
+## 4.4 Types of Inheritance â†’ Complete Coverage
 
 ### One-Sentence Takeaway
 
 
-C++ supports five inheritance types: single, multilevel, multiple, hierarchical, and hybrid → each suited to different relationship structures.
+C++ supports five inheritance types: single, multilevel, multiple, hierarchical, and hybrid â†’ each suited to different relationship structures.
 
 ### Comprehensive Type Comparison Table
 
@@ -518,14 +518,14 @@ Beep beep!
 **Complexity:**
 - **Time:** O(1) for construction (no additional overhead over single class)
 - **Space:** Base size + derived members (no extra pointers)
-- **Why:** Single inheritance is the simplest form → the derived object layout is contiguous (base subobject followed by derived members)
+- **Why:** Single inheritance is the simplest form â†’ the derived object layout is contiguous (base subobject followed by derived members)
 
 ---
 
 ### 4.4.2 Multilevel Inheritance
 
 
-**Definition:** A chain of inheritance where a class derives from a derived class, forming A → B → C.
+**Definition:** A chain of inheritance where a class derives from a derived class, forming A â†’ B â†’ C.
 
 **Real-world analogy:** A Golden Retriever is a Dog is a Mammal is an Animal.
 
@@ -622,7 +622,7 @@ Golden Retriever says Woof!
 | 7 | Back to Dog | Initialises breed = "Golden Retriever" |
 | 8 | Dog body executes | Prints "Dog constructed: Golden Retriever Canine" |
 
-**Memory Layout (A→B→C):**
+**Memory Layout (Aâ†’Bâ†’C):**
 
 ```
 +------------------+
@@ -640,7 +640,7 @@ Golden Retriever says Woof!
 **Complexity:**
 - **Depth:** Each level adds one constructor call (O(depth) time for construction chain)
 - **Space:** Sum of all base members + own members
-- **Recommendation:** Keep depth â‰¤ 3. Deeper chains increase coupling and make maintenance harder. Prefer composition for deep abstraction layers.
+- **Recommendation:** Keep depth Ã¢â€°Â¤ 3. Deeper chains increase coupling and make maintenance harder. Prefer composition for deep abstraction layers.
 
 ---
 
@@ -915,7 +915,7 @@ Circle:               Rectangle:            Triangle:
 **Complexity:**
 - **Time:** Each derived constructed independently (O(1) per object)
 - **Space:** Each object has its own copy of base members
-- **Why useful:** Eliminates code duplication → shared functionality in Shape, specialised in each derived class
+- **Why useful:** Eliminates code duplication â†’ shared functionality in Shape, specialised in each derived class
 
 ---
 
@@ -938,10 +938,10 @@ Circle:               Rectangle:            Triangle:
          FlyingFish
 ```
 
-### 4.5.2 The Diamond Problem → Without Virtual Inheritance
+### 4.5.2 The Diamond Problem â†’ Without Virtual Inheritance
 
 
-**The Problem:** When a class inherits from two classes that share a common ancestor, two copies of the ancestor's members exist → causing ambiguity.
+**The Problem:** When a class inherits from two classes that share a common ancestor, two copies of the ancestor's members exist â†’ causing ambiguity.
 
 ```cpp
 #include <iostream>
@@ -978,7 +978,7 @@ public:
 
 int main() {
     D d;
-    // cout << d.value;     // ERROR: ambiguous → two copies of A::value
+    // cout << d.value;     // ERROR: ambiguous â†’ two copies of A::value
     cout << "d.B::value = " << d.B::value << endl;   // OK, explicit scope
     cout << "d.C::value = " << d.C::value << endl;   // OK, explicit scope
     cout << "Size of D: " << sizeof(D) << " bytes" << endl;
@@ -998,7 +998,7 @@ d.C::value = 0
 Size of D: 8 bytes    // two copies of A::value (4 + 4)
 ```
 
-**Notice:** "A constructed" appears **twice** → D contains **two separate A subobjects**.
+**Notice:** "A constructed" appears **twice** â†’ D contains **two separate A subobjects**.
 
 **Memory Layout without Virtual Inheritance:**
 
@@ -1023,7 +1023,7 @@ Object D:
 
 The two A subobjects are at different offsets, and `d.value` is ambiguous because the compiler cannot tell which `value` you mean.
 
-### 4.5.3 Virtual Inheritance → The Solution
+### 4.5.3 Virtual Inheritance â†’ The Solution
 
 
 **Virtual inheritance** uses a pointer (vbase pointer) to share a single instance of the common base class among all classes in the hierarchy.
@@ -1169,12 +1169,12 @@ d.value = 99
 
 | Step | Constructor | A's initialiser | Actual A init? | Effect |
 |------|-------------|-----------------|----------------|--------|
-| 1 | `D()` calls `A(99)` | D's init list | âœ… Yes (most-derived) | value = 99 |
-| 2 | `B()` attempts `A(10)` | B's init list | âŒ No (ignored) | Skipped |
-| 3 | `C()` attempts `A(20)` | C's init list | âŒ No (ignored) | Skipped |
-| 4 | `B()` body | → | → | Prints "B constructed" |
-| 5 | `C()` body | → | → | Prints "C constructed" |
-| 6 | `D()` body | → | → | Prints "D constructed" |
+| 1 | `D()` calls `A(99)` | D's init list | Ã¢Å“â€¦ Yes (most-derived) | value = 99 |
+| 2 | `B()` attempts `A(10)` | B's init list | Ã¢ÂÅ’ No (ignored) | Skipped |
+| 3 | `C()` attempts `A(20)` | C's init list | Ã¢ÂÅ’ No (ignored) | Skipped |
+| 4 | `B()` body | â†’ | â†’ | Prints "B constructed" |
+| 5 | `C()` body | â†’ | â†’ | Prints "C constructed" |
+| 6 | `D()` body | â†’ | â†’ | Prints "D constructed" |
 
 ### 4.5.6 Virtual Inheritance with Non-Default Constructor
 
@@ -1203,7 +1203,7 @@ public:
 
 class D : public B, public C {
 public:
-    D() : A(999), B(), C() {}   // MUST initialise A → most-derived
+    D() : A(999), B(), C() {}   // MUST initialise A â†’ most-derived
 };
 
 int main() {
@@ -1258,22 +1258,22 @@ Construction proceeds from base to derived (virtual bases first, then regular ba
 
 For a derived class object, constructors execute in this precise order:
 
-1. **Virtual base classes** → in depth-first, left-to-right order (most-derived initialises)
-2. **Non-virtual base classes** → in declaration order (left to right)
-3. **Member objects** → in declaration order (within the class)
-4. **Derived class constructor body** → executes last
+1. **Virtual base classes** â†’ in depth-first, left-to-right order (most-derived initialises)
+2. **Non-virtual base classes** â†’ in declaration order (left to right)
+3. **Member objects** â†’ in declaration order (within the class)
+4. **Derived class constructor body** â†’ executes last
 
 ### 4.6.2 Destruction Order Rules
 
 
 Destruction is the **exact reverse** of construction:
 
-1. **Derived class destructor body** → executes first
-2. **Member objects** → destroyed in reverse declaration order
-3. **Non-virtual base classes** → destroyed in reverse declaration order
-4. **Virtual base classes** → destroyed last
+1. **Derived class destructor body** â†’ executes first
+2. **Member objects** â†’ destroyed in reverse declaration order
+3. **Non-virtual base classes** â†’ destroyed in reverse declaration order
+4. **Virtual base classes** â†’ destroyed last
 
-### 4.6.3 Complete Demonstration → All Cases
+### 4.6.3 Complete Demonstration â†’ All Cases
 
 
 ```cpp
@@ -1347,7 +1347,7 @@ Base1 destroyed
 VB VirtualBase destroyed
 ```
 
-**Dry Run Trace Table → Construction:**
+**Dry Run Trace Table â†’ Construction:**
 
 | Phase | Order | What Runs | Output |
 |-------|-------|-----------|--------|
@@ -1358,7 +1358,7 @@ VB VirtualBase destroyed
 | 5 | Member #2 (in order) | Member("two") | `Member two constructed` |
 | 6 | Derived body | Derived::Derived() | `Derived body constructed` |
 
-**Dry Run Trace Table → Destruction:**
+**Dry Run Trace Table â†’ Destruction:**
 
 | Phase | Order | What Runs | Output |
 |-------|-------|-----------|--------|
@@ -1379,7 +1379,7 @@ VB VirtualBase destroyed
 | Member depends on base data | Base not initialised until base constructor runs | Order is guaranteed: base before members |
 | Exception in destructor | Stack unwinding may call terminate() | Never let exceptions escape destructors |
 
-### 4.6.5 Calling Virtual Functions in Constructor → Demonstration
+### 4.6.5 Calling Virtual Functions in Constructor â†’ Demonstration
 
 
 ```cpp
@@ -1410,7 +1410,7 @@ Base::print
 Derived::print
 ```
 
-**Why:** During Base constructor execution, the Derived object doesn't exist yet → the vtable points to Base's virtual functions. The override is not active until the Derived component is being constructed.
+**Why:** During Base constructor execution, the Derived object doesn't exist yet â†’ the vtable points to Base's virtual functions. The override is not active until the Derived component is being constructed.
 
 ---
 
@@ -1470,7 +1470,7 @@ public:
 };
 
 void letItFly(Bird& b) {
-    b.fly();    // polymorphic → works for any Bird
+    b.fly();    // polymorphic â†’ works for any Bird
 }
 
 int main() {
@@ -1546,10 +1546,10 @@ class Square : public Rectangle {
 public:
     void setWidth(int w) override {
         Rectangle::setWidth(w);
-        Rectangle::setHeight(w);   // violates LSP → changes height!
+        Rectangle::setHeight(w);   // violates LSP â†’ changes height!
     }
     void setHeight(int h) override {
-        Rectangle::setWidth(h);    // violates LSP → changes width!
+        Rectangle::setWidth(h);    // violates LSP â†’ changes width!
         Rectangle::setHeight(h);
     }
 };
@@ -1585,10 +1585,10 @@ public:
 
 ```
 Is it a true subtype?
-    ├── Yes → Public inheritance (IS-A)
-    └── No  → Does the class just need functionality?
-              ├── Yes → Composition (HAS-A)
-              └── No  → Neither; unrelated
+    â”œâ”€â”€ Yes â†’ Public inheritance (IS-A)
+    â””â”€â”€ No  â†’ Does the class just need functionality?
+              â”œâ”€â”€ Yes â†’ Composition (HAS-A)
+              â””â”€â”€ No  â†’ Neither; unrelated
 ```
 
 ### 4.7.7 IS-A vs HAS-A Code Comparison
@@ -1677,20 +1677,20 @@ Total payroll for Engineering: $101000
 ### One-Sentence Takeaway
 
 
-Upcasting (derived → base) is always safe and implicit; downcasting (base → derived) requires explicit casting and runtime checks via dynamic_cast for polymorphic types.
+Upcasting (derived â†’ base) is always safe and implicit; downcasting (base â†’ derived) requires explicit casting and runtime checks via dynamic_cast for polymorphic types.
 
 ### 4.8.1 Definitions
 
 
 | Term | Direction | Safety | Syntax |
 |------|-----------|--------|--------|
-| **Upcast** | Derived* → Base* | âœ… Always safe (implicit) | `Base* bp = &derived;` |
-| **Downcast** | Base* → Derived* | âš ï¸ Needs runtime check | `Derived* dp = dynamic_cast<Derived*>(bp);` |
+| **Upcast** | Derived* â†’ Base* | Ã¢Å“â€¦ Always safe (implicit) | `Base* bp = &derived;` |
+| **Downcast** | Base* â†’ Derived* | Ã¢Å¡Â Ã¯Â¸Â Needs runtime check | `Derived* dp = dynamic_cast<Derived*>(bp);` |
 
 ### 4.8.2 Why Upcasting is Safe
 
 
-A Derived object contains a complete Base subobject at a known offset. Converting a Derived* to Base* just adjusts the pointer to point to that subobject → no data is lost.
+A Derived object contains a complete Base subobject at a known offset. Converting a Derived* to Base* just adjusts the pointer to point to that subobject â†’ no data is lost.
 
 ```
 Derived object:
@@ -1717,7 +1717,7 @@ public:
 
 int main() {
     Derived d;
-    Base* bp = &d;         // implicit upcast → always works
+    Base* bp = &d;         // implicit upcast â†’ always works
     bp->baseFunc();        // OK
     // bp->derivedFunc();  // ERROR: Base* cannot see Derived members
     
@@ -1805,21 +1805,21 @@ Downcast to Derived succeeded: Derived-specific function
 ### 4.8.5 Downcasting with static_cast (Unsafe)
 
 
-`static_cast<Derived*>(basePtr)` performs no runtime check → the programmer guarantees correctness. Undefined behaviour if the pointer doesn't actually point to Derived.
+`static_cast<Derived*>(basePtr)` performs no runtime check â†’ the programmer guarantees correctness. Undefined behaviour if the pointer doesn't actually point to Derived.
 
 ```cpp
 Base* bp = new Base();
 // Derived* dp = static_cast<Derived*>(bp);  // Compiles, but UB!
-// dp->specificFunc();                        // CRASH → not actually a Derived
+// dp->specificFunc();                        // CRASH â†’ not actually a Derived
 ```
 
-### 4.8.6 Upcasting vs Downcasting → Complete Comparison
+### 4.8.6 Upcasting vs Downcasting â†’ Complete Comparison
 
 
 | Aspect | Upcast | Downcast (dynamic_cast) | Downcast (static_cast) |
 |--------|--------|------------------------|------------------------|
-| Direction | Derived → Base | Base → Derived | Base → Derived |
-| Safety | âœ… Always safe | âœ… Checked at runtime | âŒ Undefined if wrong |
+| Direction | Derived â†’ Base | Base â†’ Derived | Base â†’ Derived |
+| Safety | Ã¢Å“â€¦ Always safe | Ã¢Å“â€¦ Checked at runtime | Ã¢ÂÅ’ Undefined if wrong |
 | Syntax | Implicit or `static_cast` | `dynamic_cast<D*>(b)` | `static_cast<D*>(b)` |
 | Performance | Zero cost (compile-time) | Runtime cost (RTTI check) | Zero cost |
 | RTTI needed? | No | Yes (virtual function required) | No |
@@ -1877,7 +1877,7 @@ ap = 0x7ffd1230 (offset from c: 0)
 bp = 0x7ffd1234 (offset from c: 4)
 ```
 
-The compiler automatically adjusts the pointer when casting to B → the B subobject is at offset 4 within C.
+The compiler automatically adjusts the pointer when casting to B â†’ the B subobject is at offset 4 within C.
 
 ### 4.8.8 cross_cast Pattern
 
@@ -1988,14 +1988,14 @@ int main() {
     Derived d("secret");
     
     // SLICING HAPPENS HERE:
-    Base b = d;           // copy by value → slices!
+    Base b = d;           // copy by value â†’ slices!
     b.speak();            // calls Base::speak, NOT Derived::speak
     
     // NO SLICING (correct):
-    Base* bp = &d;        // pointer → no slicing
+    Base* bp = &d;        // pointer â†’ no slicing
     bp->speak();          // calls Derived::speak (virtual dispatch)
     
-    Base& br = d;         // reference → no slicing
+    Base& br = d;         // reference â†’ no slicing
     br.speak();           // calls Derived::speak
     return 0;
 }
@@ -2020,10 +2020,10 @@ Derived speaking with data: secret
 
 **Container pitfall:**
 ```cpp
-vector<Base> vec;    // BAD: stores Base by value → slices!
+vector<Base> vec;    // BAD: stores Base by value â†’ slices!
 vec.push_back(d);    // slices d to Base
 
-vector<Base*> vec2;  // GOOD: stores pointers → no slicing
+vector<Base*> vec2;  // GOOD: stores pointers â†’ no slicing
 vec2.push_back(&d);  // OK
 ```
 
@@ -2101,7 +2101,7 @@ d.A::x = 42;
 
 Yes, you can call virtual functions from constructors and destructors, but they **do NOT dispatch to overrides in derived classes**. The call resolves to the function version of the class currently being constructed/destroyed.
 
-**Why:** During base class construction, the derived portion doesn't exist yet → the vtable pointer (vptr) points to the base class's vtable, not the derived class's. The same applies during destruction in reverse.
+**Why:** During base class construction, the derived portion doesn't exist yet â†’ the vtable pointer (vptr) points to the base class's vtable, not the derived class's. The same applies during destruction in reverse.
 
 **Example:**
 ```cpp
@@ -2151,8 +2151,8 @@ Derived::print
 | Base public members become | public | protected | private |
 | Base protected members become | protected | protected | private |
 | Base private members | inaccessible | inaccessible | inaccessible |
-| Models is-a? | âœ… Yes | âŒ No | âŒ No |
-| Can upcast to base? | âœ… Implicitly | âŒ Only within derived hierarchy | âŒ No |
+| Models is-a? | Ã¢Å“â€¦ Yes | Ã¢ÂÅ’ No | Ã¢ÂÅ’ No |
+| Can upcast to base? | Ã¢Å“â€¦ Implicitly | Ã¢ÂÅ’ Only within derived hierarchy | Ã¢ÂÅ’ No |
 | Frequency of use | ~95% | <1% | ~4% |
 | Common use case | Subtype polymorphism | Rare; implementation sharing | Implemented-in-terms-of |
 
@@ -2215,7 +2215,7 @@ class FinalClass final : public Base {
 
 The Liskov Substitution Principle (LSP) states that **objects of a derived class should be substitutable for objects of the base class without altering the correctness of the program**. In other words, if `D` is a subtype of `B`, then any code using `B` should work correctly when `B` is replaced with `D`.
 
-**Violation → Classic Square/Rectangle:**
+**Violation â†’ Classic Square/Rectangle:**
 ```cpp
 class Rectangle {
 public:
@@ -2252,7 +2252,7 @@ void resize(Rectangle& r) {
 4. Make base classes abstract if behaviour contract is complex
 5. Favour composition over inheritance when behaviour differs
 
-**Correct approach → common abstract base:**
+**Correct approach â†’ common abstract base:**
 ```cpp
 class Shape {
 public:
@@ -2390,7 +2390,7 @@ Derived::isVirtual
 
 **Answer:**
 
-If a base class destructor is **not virtual**, deleting a derived object through a base pointer causes **undefined behaviour** → typically only the base destructor runs, and the derived part leaks resources.
+If a base class destructor is **not virtual**, deleting a derived object through a base pointer causes **undefined behaviour** â†’ typically only the base destructor runs, and the derived part leaks resources.
 
 ```cpp
 class Base {
@@ -2415,7 +2415,7 @@ int main() {
 }
 ```
 
-**Output:** `~Base` (Derived destructor never called → memory leak!)
+**Output:** `~Base` (Derived destructor never called â†’ memory leak!)
 
 **Fix: make destructor virtual:**
 ```cpp
@@ -2482,7 +2482,7 @@ QObject
 1. **Virtual base for signals/slots:** QObject provides the signal-slot mechanism via virtual functions
 2. **Overridden paintEvent():** Each widget override `QWidget::paintEvent()` to draw itself
 3. **Hierarchical ownership:** QObject parent-child tree manages memory (deleting parent deletes children)
-4. **Multilevel inheritance:** `QPushButton` inherits `QAbstractButton` → `QWidget` → `QObject` → nothing
+4. **Multilevel inheritance:** `QPushButton` inherits `QAbstractButton` â†’ `QWidget` â†’ `QObject` â†’ nothing
 5. **Virtual destructor:** `QObject` has a virtual destructor, ensuring proper cleanup
 
 ```cpp
@@ -2789,16 +2789,16 @@ public:
 ### Must-Remember Rules
 
 
-1. **Public inheritance models IS-A** → use it when a derived class truly is a kind of base class
+1. **Public inheritance models IS-A** â†’ use it when a derived class truly is a kind of base class
 2. **Make base destructors virtual** when a class is intended as a base
-3. **Virtual inheritance for diamonds** → ensures a single shared base subobject
-4. **Most-derived initialises virtual bases** → intermediate calls are ignored
-5. **Construction order:** virtual bases → non-virtual bases → members → body
+3. **Virtual inheritance for diamonds** â†’ ensures a single shared base subobject
+4. **Most-derived initialises virtual bases** â†’ intermediate calls are ignored
+5. **Construction order:** virtual bases â†’ non-virtual bases â†’ members â†’ body
 6. **Destruction order:** exact reverse of construction
 7. **dynamic_cast** for safe downcasting (requires RTTI / virtual functions)
 8. **Prefer composition over inheritance** for code reuse (HAS-A over IS-A)
 9. **Final class** prevents further inheritance; **final function** prevents further overriding
-10. **Object slicing** occurs when passing by value → use pointers or references
+10. **Object slicing** occurs when passing by value â†’ use pointers or references
 
 ### Common Pitfalls
 
@@ -2819,7 +2819,7 @@ public:
 - [ ] Is the relationship truly IS-A (LSP satisfied)?
 - [ ] Does the base class have a virtual destructor?
 - [ ] Are virtual functions avoided in constructors/destructors?
-- [ ] Is the inheritance depth manageable (â‰¤3 levels)?
+- [ ] Is the inheritance depth manageable (Ã¢â€°Â¤3 levels)?
 - [ ] Are diamond-shaped hierarchies using virtual inheritance?
 - [ ] Is the most-derived class initialising virtual bases?
 - [ ] Is dynamic_cast needed? If yes, RTTI is enabled?
@@ -2836,14 +2836,14 @@ public:
 | Base & Derived | IS-A relationship, base subobject | `class D : public B {}` |
 | Access Control | Visibility propagation via specifiers | `public`/`protected`/`private` inheritance |
 | Single Inheritance | 1 base, 1 derived | `class Car : public Vehicle` |
-| Multilevel Inheritance | A → B → C chain | `class C : public B` (B from A) |
+| Multilevel Inheritance | A â†’ B â†’ C chain | `class C : public B` (B from A) |
 | Multiple Inheritance | 2+ unrelated bases | `class C : public A, public B` |
 | Hierarchical Inheritance | 1 base, N derived | `class B, C, D : public A` |
 | Hybrid/Diamond | Combined forms with shared ancestor | `B virtual A, C virtual A, D : B, C` |
 | Virtual Inheritance | Single shared base subobject | `class B : virtual public A` |
-| Construction Order | VB → Bases → Members → Body | Chain calls in initialiser list |
-| Upcast | Derived* → Base* (implicit safe) | `Base* bp = &derived;` |
-| Downcast | Base* → Derived* (runtime check) | `dynamic_cast<Derived*>(bp)` |
+| Construction Order | VB â†’ Bases â†’ Members â†’ Body | Chain calls in initialiser list |
+| Upcast | Derived* â†’ Base* (implicit safe) | `Base* bp = &derived;` |
+| Downcast | Base* â†’ Derived* (runtime check) | `dynamic_cast<Derived*>(bp)` |
 | IS-A | Inheritance | `class D : public B` |
 | HAS-A | Composition | `class D { B member_; }` |
 | Diamond Problem | Two copies of shared ancestor | Solved via `virtual` inheritance |
@@ -2871,7 +2871,7 @@ public:
    B) Object slicing occurs when passing by reference
    C) Object slicing occurs when a derived object is copied to a base by value
    D) Object slicing only happens with multiple inheritance
-   <details><summary>Answer&lt;/summary&gt;**C)** Slicing happens on by-value copy → the derived portion is lost.</details>
+   <details><summary>Answer&lt;/summary&gt;**C)** Slicing happens on by-value copy â†’ the derived portion is lost.</details>
 
 4. Which cast is appropriate for safe downcasting?
    A) static_cast

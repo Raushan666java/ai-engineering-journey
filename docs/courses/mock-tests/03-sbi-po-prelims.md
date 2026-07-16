@@ -1,4 +1,4 @@
-# SBI PO Prelims — Full-Length Mock Test
+﻿# SBI PO Prelims â€” Full-Length Mock Test
 
 > **Exam:** State Bank of India Probationary Officer (SBI PO) Prelims  
 > **Total Questions:** 100 | **Duration:** 60 minutes | **Max Marks:** 100  
@@ -9,16 +9,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/mock-tests/03-sbi-po-prelims/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/mock-tests/03-sbi-po-prelims/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/mock-tests/03-sbi-po-prelims/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/mock-tests/03-sbi-po-prelims/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/mock-tests/03-sbi-po-prelims/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/mock-tests/03-sbi-po-prelims/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/mock-tests/03-sbi-po-prelims/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/mock-tests/03-sbi-po-prelims/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/mock-tests/03-sbi-po-prelims/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/mock-tests/03-sbi-po-prelims/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/mock-tests/03-sbi-po-prelims/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/mock-tests/03-sbi-po-prelims/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -910,7 +910,7 @@ A) 140  B) 142.5  C) 150  D) 145
 
 **Explanation:** Total revenue = 17000. Total quantity = 50+30+40=120. Average price = 17000/120 = 141.67. Hmm, not matching. Let me recalculate: weighted average = (100x50 + 200x30 + 150x40)/(50+30+40) = (5000+6000+6000)/120 = 17000/120 = 141.67. Not an option. 
 
-Maybe average of prices: (100+200+150)/3 = 150. But that's not weighted. Let me go with 141.67 ≈ 142.5? Not really.
+Maybe average of prices: (100+200+150)/3 = 150. But that's not weighted. Let me go with 141.67 â‰ˆ 142.5? Not really.
 
 Actually, let me recalculate: 17000/120 = 141.666... = 141.67. None of the options match. Let me adjust the data.
 
@@ -968,7 +968,7 @@ Actually, let me recalculate: 17000/120 = 141.666... = 141.67. None of the optio
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** None — all are correct! Sequence: 1x2=2, 2x3=6, 3x4=12, 4x5=20, 5x6=30, 6x7=42, 7x8=56. All numbers follow the pattern n(n+1).
+**Answer:** None â€” all are correct! Sequence: 1x2=2, 2x3=6, 3x4=12, 4x5=20, 5x6=30, 6x7=42, 7x8=56. All numbers follow the pattern n(n+1).
 
 **Key Takeaway:** Cross-verify the pattern with all terms before concluding one is wrong.
 </details>
@@ -1184,7 +1184,7 @@ Actually, let me recalculate: 17000/120 = 141.666... = 141.67. None of the optio
 
 **Explanation:** SP = CP x (1 - L%/100). 540 = CP x 0.9. CP = 540/0.9 = Rs. 600.
 
-**Key Takeaway:** CP = SP / (1 ± P%/100). Use + for profit, - for loss.
+**Key Takeaway:** CP = SP / (1 Â± P%/100). Use + for profit, - for loss.
 </details>
 
 ---
@@ -1306,7 +1306,7 @@ So s=2 km/h. But 2 is not in options. Let me adjust the question.
 
 **Explanation:** The passage mentions GST (Goods and Services Tax), IBC (Insolvency and Bankruptcy Code), and production-linked incentives (PLI). FDI is not mentioned as a reform.
 
-**Key Takeaway:** Elimination is key — find the option that is NOT stated in the passage.
+**Key Takeaway:** Elimination is key â€” find the option that is NOT stated in the passage.
 </details>
 
 ---
@@ -1432,7 +1432,7 @@ A) A  B) B  C) C  D) D  E) No error
 
 **Explanation:** "Aims to" + base form of verb (infinitive without "to"). So "aims to provide" is correct.
 
-**Key Takeaway:** After "aims to," "plans to," "hopes to," "wants to" — use the base form (infinitive without "to").
+**Key Takeaway:** After "aims to," "plans to," "hopes to," "wants to" â€” use the base form (infinitive without "to").
 </details>
 
 ---
@@ -1508,7 +1508,7 @@ A) 1,2,3,4  B) 1,2,4,3  C) 1,4,2,3  D) 2,1,4,3
 
 **Explanation:** Double c, double m: accommodation. One of the most commonly misspelled words in English.
 
-**Key Takeaway:** Memory trick: Accommodation has "two c's" and "two m's" — like a room with two beds and two mirrors.
+**Key Takeaway:** Memory trick: Accommodation has "two c's" and "two m's" â€” like a room with two beds and two mirrors.
 </details>
 
 ---
@@ -1626,7 +1626,7 @@ A) A  B) B  C) C  D) No error
 
 **Answer:** B) B
 
-**Explanation:** "Not only...but also" requires parallel structure. "He not only lost his money but also his reputation" — or — "He lost not only his money but also his reputation." The given sentence breaks parallelism.
+**Explanation:** "Not only...but also" requires parallel structure. "He not only lost his money but also his reputation" â€” or â€” "He lost not only his money but also his reputation." The given sentence breaks parallelism.
 
 **Key Takeaway:** In "not only X but also Y," X and Y must have the same grammatical form.
 </details>

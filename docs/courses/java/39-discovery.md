@@ -1,4 +1,4 @@
-# Service Discovery & Load Balancing
+﻿# Service Discovery & Load Balancing
 > **Previous:** [Microservices Principles](38-microservices-principles.md) | **Next:** [API Gateway](40-gateway.md)
 
 ## Learning Objectives
@@ -8,16 +8,16 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/39-discovery/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/39-discovery/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/39-discovery/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/39-discovery/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/39-discovery/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/39-discovery/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/39-discovery/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/39-discovery/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/39-discovery/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/39-discovery/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/39-discovery/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/39-discovery/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -38,9 +38,9 @@ By the end of this chapter, you will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|------------|-------------------|
-| Service Discovery → locate service instances dynamically | Client-side vs server-side discovery patterns |
-| Eureka → Netflix OSS service registry | `@EnableEurekaServer` for registry; `@EnableEurekaClient` for registration |
-| Health Checks → detect unhealthy instances | Eureka heartbeat mechanism; custom health indicators |
+| Service Discovery â†’ locate service instances dynamically | Client-side vs server-side discovery patterns |
+| Eureka â†’ Netflix OSS service registry | `@EnableEurekaServer` for registry; `@EnableEurekaClient` for registration |
+| Health Checks â†’ detect unhealthy instances | Eureka heartbeat mechanism; custom health indicators |
 
 ---
 ## Chapter Roadmap
@@ -64,9 +64,9 @@ flowchart TD
 
 | Concept | Description | Key Difference |
 |---------|-------------|----------------|
-| Eureka | Client-side discovery (REST) | AP in CAP theorem → prioritizes availability |
-| Consul | Client-side + server-side (DNS/HTTP) | CP → prioritizes consistency with Raft |
-| ZooKeeper | Server-side discovery | CP → strong consistency for distributed coordination |
+| Eureka | Client-side discovery (REST) | AP in CAP theorem â†’ prioritizes availability |
+| Consul | Client-side + server-side (DNS/HTTP) | CP â†’ prioritizes consistency with Raft |
+| ZooKeeper | Server-side discovery | CP â†’ strong consistency for distributed coordination |
 | Kubernetes DNS | Server-side via DNS SRV records | Native to K8s, no extra infra needed |
 
 ---
@@ -93,7 +93,7 @@ flowchart TD
 
 1. What is the difference between client-side and server-side discovery? **Answer:** Client-side: the client queries the registry directly. Server-side: a load balancer queries the registry for the client.
 2. Which Eureka CAP property does it prioritize? **Answer:** AP (Availability and Partition tolerance), not consistency
-3. How does Eureka detect unhealthy instances? **Answer:** Heartbeat → instances send renew requests every 30 seconds; 3 missed = evicted
+3. How does Eureka detect unhealthy instances? **Answer:** Heartbeat â†’ instances send renew requests every 30 seconds; 3 missed = evicted
 
 ## Theory
 
@@ -134,7 +134,7 @@ Spring Cloud LoadBalancer is the replacement for Netflix Ribbon. It provides:
 - Custom load balancers via `ReactorServiceInstanceLoadBalancer`
 
 > [!TIP]
-> Use Feign client with Eureka → Feign automatically resolves service names to instances via the registry.
+> Use Feign client with Eureka â†’ Feign automatically resolves service names to instances via the registry.
 
 > [!WARNING]
 > Eureka self-preservation mode prevents mass eviction during network partitions. In development, disable it with `eureka.server.enableSelfPreservation=false`.
@@ -400,7 +400,7 @@ public class DiscoveryController {
 }
 ```
 
-### Eureka Client Ã¢â‚¬â€ Order Service
+### Eureka Client ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Order Service
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -1831,7 +1831,7 @@ management:
 - **Eureka Server** acts as the service registry; services register with it and discover other services
 - **Eureka Client** handles self-registration, heartbeats, and instance lookup; configured via `@EnableDiscoveryClient`
 - **Self-Preservation** prevents premature instance eviction during network partitions
-- **Spring Cloud LoadBalancer** provides `RoundRobinLoadBalancer` and `RandomLoadBalancer` Ã¢â‚¬â€ the replacement for Netflix Ribbon
+- **Spring Cloud LoadBalancer** provides `RoundRobinLoadBalancer` and `RandomLoadBalancer` ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â the replacement for Netflix Ribbon
 - **@LoadBalanced RestTemplate** and **WebClient.Builder** enable load-balanced inter-service calls
 - **Client-Side Discovery** has the client query the registry; **Server-Side Discovery** uses an intermediary load balancer
 - **Self-Registration** is the default with Eureka Client; **Third-Party Registration** uses a separate registrar like Kubernetes

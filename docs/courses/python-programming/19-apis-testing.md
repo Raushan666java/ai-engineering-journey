@@ -1,4 +1,4 @@
-# Chapter 19: APIs and Testing
+﻿# Chapter 19: APIs and Testing
 
 
 > **Previous:** [The Python Standard Library](./18-stdlib.md) | **Next:** [NumPy and pandas](./20-numpy-pandas.md)
@@ -16,16 +16,16 @@ By the end of this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/19-apis-testing/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/19-apis-testing/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/19-apis-testing/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/19-apis-testing/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/19-apis-testing/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/19-apis-testing/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/19-apis-testing/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/19-apis-testing/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/19-apis-testing/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/19-apis-testing/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/19-apis-testing/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/19-apis-testing/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -41,7 +41,7 @@ By the end of this chapter, students will be able to:
 |---------|-------|-------------|
 |19.1 HTTP Requests||`requests` makes HTTP calls simple; use `Session` for connection reuse across requests.|
 |19.2 Building APIs with FastAPI||FastAPI builds type-validated APIs with automatic OpenAPI docs and interactive Swagger UI.|
-|19.3 Pydantic Validation||Pydantic validates data at runtime using Python type annotations — define schemas with classes.|
+|19.3 Pydantic Validation||Pydantic validates data at runtime using Python type annotations â€” define schemas with classes.|
 |19.4 Testing with unittest||pytest fixtures provide reusable setup/teardown; parametrize tests with `@pytest.mark.parametrize`.|
 |19.5 Testing with pytest||Mocking isolates code from external dependencies; use `unittest.mock` or `pytest-mock`.|
 |19.6 Doctests||undefined|
@@ -66,7 +66,7 @@ flowchart LR
 ## 19.1 HTTP Requests
 
 > **One-Sentence Takeaway:** `requests` makes HTTP calls simple; use `Session` for connection reuse across requests.
-> **Remember:** Always handle HTTP errors — check `response.status_code` or use `response.raise_for_status()`.
+> **Remember:** Always handle HTTP errors â€” check `response.status_code` or use `response.raise_for_status()`.
 
 
 
@@ -128,7 +128,7 @@ with requests.Session() as session:
         print(response.json()["description"])
 ```
 
-### 19.1.3 httpx → Async HTTP
+### 19.1.3 httpx â†’ Async HTTP
 
 
 ```python
@@ -230,7 +230,7 @@ Save as `main.py` and run with `uvicorn main:app --reload`. Visit `http://localh
 
 ## 19.3 Pydantic Validation
 
-> **One-Sentence Takeaway:** Pydantic validates data at runtime using Python type annotations — define schemas with classes.
+> **One-Sentence Takeaway:** Pydantic validates data at runtime using Python type annotations â€” define schemas with classes.
 
 
 Pydantic enforces type constraints on data models at runtime:
@@ -270,7 +270,7 @@ except Exception as e:
     # 3 validation errors: name (blank), email (invalid), age (too large)
 ```
 
-Pydantic integrates seamlessly with FastAPI → route parameters are automatically validated and documented in OpenAPI/Swagger.
+Pydantic integrates seamlessly with FastAPI â†’ route parameters are automatically validated and documented in OpenAPI/Swagger.
 
 ## 19.4 Testing with unittest
 
@@ -342,7 +342,7 @@ def test_add():
 ### 19.5.1 Assertions
 
 
-pytest uses plain `assert` → no need for `self.assertEqual`:
+pytest uses plain `assert` â†’ no need for `self.assertEqual`:
 
 ```python
 def test_strings():
@@ -621,7 +621,7 @@ def test_example():
 
 ```typescript
 // Chapter 19: TypeScript API & Testing Equivalents
-// Python: requests.get() → TypeScript: fetch()
+// Python: requests.get() â†’ TypeScript: fetch()
 async function fetchData(url: string): Promise<unknown> {
   const response = await fetch(url);
   if (!response.ok) {
@@ -631,7 +631,7 @@ async function fetchData(url: string): Promise<unknown> {
 }
 // Python equivalent: requests.get(url).json()
 
-// Python: FastAPI → TypeScript: Express / Hono / Elysia
+// Python: FastAPI â†’ TypeScript: Express / Hono / Elysia
 import { Hono } from "hono";
 const app = new Hono();
 
@@ -654,7 +654,7 @@ app.get("/books/:id", (c) => {
 });
 // Python equivalent: FastAPI with Pydantic models
 
-// Python: pytest → TypeScript: vitest
+// Python: pytest â†’ TypeScript: vitest
 import { describe, it, expect } from "vitest";
 
 function add(a: number, b: number): number {
@@ -672,7 +672,7 @@ describe("add", () => {
 });
 // Python equivalent: def test_add(): assert add(2, 3) == 5
 
-// Python: unittest.mock → TypeScript: vi.mock()
+// Python: unittest.mock â†’ TypeScript: vi.mock()
 // vi.mock("./database");
 // Python: mocker.patch("module.function")
 ```
@@ -680,7 +680,7 @@ describe("add", () => {
 ### TypeScript API Client & Mock Testing Patterns
 
 ```typescript
-// Python: requests.Session() → TypeScript: fetch with headers
+// Python: requests.Session() â†’ TypeScript: fetch with headers
 async function createApiClient(baseUrl: string) {
   const headers = new Headers({ "Content-Type": "application/json" });
   return {
@@ -700,7 +700,7 @@ async function createApiClient(baseUrl: string) {
   };
 }
 
-// Python: pytest fixtures → TypeScript: vi.setupFiles / beforeAll
+// Python: pytest fixtures â†’ TypeScript: vi.setupFiles / beforeAll
 // vitest.config.ts
 import { defineConfig } from "vitest/config";
 export default defineConfig({
@@ -710,14 +710,14 @@ export default defineConfig({
   },
 });
 
-// Python: unittest.mock → TypeScript: vi.mock
+// Python: unittest.mock â†’ TypeScript: vi.mock
 // __mocks__/database.ts
 export const db = {
   findUser: vi.fn().mockResolvedValue({ id: 1, name: "Alice" }),
   saveUser: vi.fn().mockResolvedValue(true),
 };
 
-// Python: parametrize → TypeScript: test.each
+// Python: parametrize â†’ TypeScript: test.each
 // Equivalent Python: @pytest.mark.parametrize("a,b,expected", [(1,2,3), (-1,1,0)])
 const cases = [
   { a: 1, b: 2, expected: 3 },
@@ -730,7 +730,7 @@ for (const { a, b, expected } of cases) {
   });
 }
 
-// Python: httpx async → TypeScript: fetch async
+// Python: httpx async â†’ TypeScript: fetch async
 async function concurrentRequests(): Promise<void> {
   const urls = ["/api/users", "/api/products", "/api/orders"];
   const results = await Promise.all(urls.map((u) => api.get(u)));

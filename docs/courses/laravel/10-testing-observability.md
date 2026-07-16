@@ -1,4 +1,4 @@
-# Chapter 10: Testing, Debugging & Observability
+﻿# Chapter 10: Testing, Debugging & Observability
 > **Previous:** [Service Container, Facades & Package Development](./09-container-packages) | **Next:** [Caching, Performance & Octane](./11-caching-performance)
 
 ---
@@ -15,16 +15,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/10-testing-observability/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/10-testing-observability/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/10-testing-observability/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/10-testing-observability/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/10-testing-observability/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/10-testing-observability/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/10-testing-observability/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/10-testing-observability/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/10-testing-observability/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/10-testing-observability/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/10-testing-observability/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/10-testing-observability/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -114,23 +114,23 @@ Laravel ships with PHPUnit as its default testing framework. PHPUnit's configura
 
 The `tests/` directory is organized into:
 
-- **`tests/Unit/`** → Tests that focus on a single class in isolation. No database, no HTTP request cycle. Fast execution.
-- **`tests/Feature/`** → Tests that exercise a full request/response cycle. These typically touch the database, middleware, routing, and controllers.
+- **`tests/Unit/`** â†’ Tests that focus on a single class in isolation. No database, no HTTP request cycle. Fast execution.
+- **`tests/Feature/`** â†’ Tests that exercise a full request/response cycle. These typically touch the database, middleware, routing, and controllers.
 
 ```
 tests/
-├── Feature/
-│   ├── Auth/
-│   │   └── AuthenticationTest.php
-│   ├── Api/
-│   │   └── PostControllerTest.php
-│   └── ExampleTest.php
-├── Unit/
-│   ├── Services/
-│   │   └── PaymentGatewayTest.php
-│   └── ExampleTest.php
-└── TestCase.php
-        └── DuskTestCase.php
+â”œâ”€â”€ Feature/
+â”‚   â”œâ”€â”€ Auth/
+â”‚   â”‚   â””â”€â”€ AuthenticationTest.php
+â”‚   â”œâ”€â”€ Api/
+â”‚   â”‚   â””â”€â”€ PostControllerTest.php
+â”‚   â””â”€â”€ ExampleTest.php
+â”œâ”€â”€ Unit/
+â”‚   â”œâ”€â”€ Services/
+â”‚   â”‚   â””â”€â”€ PaymentGatewayTest.php
+â”‚   â””â”€â”€ ExampleTest.php
+â””â”€â”€ TestCase.php
+        â””â”€â”€ DuskTestCase.php
 ```
 
 #### The Artisan Test Runner
@@ -197,7 +197,7 @@ class CalculatorTest extends TestCase
 
 Laravel provides three traits for managing database state between tests:
 
-**RefreshDatabase** → Migrates the database before the first test and wraps every test in a database transaction that is rolled back after each test. Best for SQLite in-memory and PostgreSQL.
+**RefreshDatabase** â†’ Migrates the database before the first test and wraps every test in a database transaction that is rolled back after each test. Best for SQLite in-memory and PostgreSQL.
 
 ```php
 <?php
@@ -224,9 +224,9 @@ class UserControllerTest extends TestCase
 }
 ```
 
-**DatabaseMigrations** → Runs `php artisan migrate:fresh` before each test. Slower than `RefreshDatabase` but useful for databases that do not support transactional rollback (some cloud DBAAS setups).
+**DatabaseMigrations** â†’ Runs `php artisan migrate:fresh` before each test. Slower than `RefreshDatabase` but useful for databases that do not support transactional rollback (some cloud DBAAS setups).
 
-**DatabaseTruncation** → Truncates all tables before each test. Faster than `DatabaseMigrations` but slower than `RefreshDatabase`. Specify tables to exclude via `$except` property.
+**DatabaseTruncation** â†’ Truncates all tables before each test. Faster than `DatabaseMigrations` but slower than `RefreshDatabase`. Specify tables to exclude via `$except` property.
 
 ```php
 use Illuminate\Foundation\Testing\DatabaseTruncation;
@@ -258,21 +258,21 @@ PEST is a test framework built on top of PHPUnit that provides a more expressive
 use App\Models\User;
 use function Pest\Laravel\get;
 
-// it() → describe what the test does
+// it() â†’ describe what the test does
 it('has a welcome page', function () {
     $response = get('/');
 
     $response->assertStatus(200);
 });
 
-// test() → alias for it()
+// test() â†’ alias for it()
 test('guests are redirected to login', function () {
     $response = get('/dashboard');
 
     $response->assertRedirect('/login');
 });
 
-// describe() → groups related tests
+// describe() â†’ groups related tests
 describe('authentication', function () {
     it('requires an email', function () {
         // ...
@@ -631,7 +631,7 @@ it('prevents unauthenticated creation', function () {
 | Scope | Full request/response cycle, middleware, routing, controller, database | Single class or method in isolation |
 | Speed | Slower (boot app, hit database, run middleware) | Fast (milliseconds) |
 | Database | Yes, typically with RefreshDatabase | No (mock/stub dependencies) |
-| Confidence | High → tests the system as a user would | Moderate → verifies unit logic |
+| Confidence | High â†’ tests the system as a user would | Moderate â†’ verifies unit logic |
 | Typical targets | Controllers, API endpoints, full workflows | Services, helpers, value objects, formatters |
 
 #### Decision Guide
@@ -651,7 +651,7 @@ Use **Unit tests** when:
 ```php
 <?php
 
-// Unit Test → pure logic, no Laravel boot
+// Unit Test â†’ pure logic, no Laravel boot
 namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
@@ -884,7 +884,7 @@ it('asserts exact requests were sent', function () {
 
 > **One-Sentence Takeaway:** Dusk provides browser-level testing with element interaction, page objects, and component objects driven by a real Chrome instance.
 
-Laravel Dusk provides browser testing using a real Chrome instance. It does not require JDK or Selenium → just Chrome and the ChromeDriver.
+Laravel Dusk provides browser testing using a real Chrome instance. It does not require JDK or Selenium â†’ just Chrome and the ChromeDriver.
 
 #### Installation
 
@@ -936,7 +936,7 @@ class LoginTest extends DuskTestCase
 ```php
 $browser->click('.selector')
 
-> **Remember:** Dusk tests run in a real Chrome instance. Use `->screenshot('name')` during test development to capture the browser state when tests fail — it's invaluable for debugging failing selectors or assertions.
+> **Remember:** Dusk tests run in a real Chrome instance. Use `->screenshot('name')` during test development to capture the browser state when tests fail â€” it's invaluable for debugging failing selectors or assertions.
     ->clickLink('Read More')
     ->click('#submit-btn')
     ->type('input[name="email"]', 'test@example.com')
@@ -1086,19 +1086,19 @@ Access Telescope at `/telescope`.
 
 #### Dashboard Tabs
 
-- **Requests** → Every HTTP request with status, duration, SQL queries, view data
-- **Commands** → Artisan commands with arguments, output, timing
-- **Scheduled Tasks** → Cron task execution details
-- **Jobs** → Queued job lifecycle (dispatched, processing, failed)
-- **Exceptions** → Stack traces, request context, user context
-- **Logs** → Log channel output, searchable and filterable
-- **Dumps** → Captures `dump()` output for later review
-- **Queries** → Slow query warnings, N+1 detection, full SQL bindings
-- **Models** → Model hydration counts, watched model events
-- **Mail** → Rendered mail preview, attachments, headers
-- **Notifications** → Notification delivery and content
-- **Cache** → Cache hits/misses, keys, TTL
-- **Redis** → Redis command monitoring
+- **Requests** â†’ Every HTTP request with status, duration, SQL queries, view data
+- **Commands** â†’ Artisan commands with arguments, output, timing
+- **Scheduled Tasks** â†’ Cron task execution details
+- **Jobs** â†’ Queued job lifecycle (dispatched, processing, failed)
+- **Exceptions** â†’ Stack traces, request context, user context
+- **Logs** â†’ Log channel output, searchable and filterable
+- **Dumps** â†’ Captures `dump()` output for later review
+- **Queries** â†’ Slow query warnings, N+1 detection, full SQL bindings
+- **Models** â†’ Model hydration counts, watched model events
+- **Mail** â†’ Rendered mail preview, attachments, headers
+- **Notifications** â†’ Notification delivery and content
+- **Cache** â†’ Cache hits/misses, keys, TTL
+- **Redis** â†’ Redis command monitoring
 
 #### Filtering
 
@@ -1112,7 +1112,7 @@ protected function gate(): void
 {
     Gate::define('viewTelescope', function (?User $user) {
 
-> **Warning:** Never deploy Telescope with the default access gate in production. Always restrict access to admin users only, and consider using Pulse instead for production monitoring — Telescope is designed for local development.
+> **Warning:** Never deploy Telescope with the default access gate in production. Always restrict access to admin users only, and consider using Pulse instead for production monitoring â€” Telescope is designed for local development.
         return $user?->isAdmin() ?? false;
     });
 }
@@ -1179,14 +1179,14 @@ Access Pulse at `/pulse`.
 
 #### Dashboard Cards
 
-- **Servers** → CPU, memory, disk, network usage
-- **Application Health** → Application uptime and health check results
-- **Slow Queries** → Top queries by execution time
-- **Slow Jobs** → Queued jobs exceeding thresholds
-- **Slow Requests** → Slowest HTTP requests
-- **Usage** → Top users, routes, countries
-- **Exceptions** → Exception frequency grouped by class
-- **Cache** → Cache hit/miss ratio
+- **Servers** â†’ CPU, memory, disk, network usage
+- **Application Health** â†’ Application uptime and health check results
+- **Slow Queries** â†’ Top queries by execution time
+- **Slow Jobs** â†’ Queued jobs exceeding thresholds
+- **Slow Requests** â†’ Slowest HTTP requests
+- **Usage** â†’ Top users, routes, countries
+- **Exceptions** â†’ Exception frequency grouped by class
+- **Cache** â†’ Cache hit/miss ratio
 
 #### Custom Cards
 
@@ -1239,13 +1239,13 @@ Pulse::record('user_signups', $count)
 #### dd() vs dump()
 
 ```php
-// Dump and die → halts execution
+// Dump and die â†’ halts execution
 dd($user, $request->all(), 'debug point');
 
-// Dump → continues execution
+// Dump â†’ continues execution
 dump($user);
 
-// Multi-user debugging → only dumps for specific users
+// Multi-user debugging â†’ only dumps for specific users
 dd()->where(auth()->user());
 dd()->where(request()->ip() === '192.168.1.1');
 ```
@@ -1318,7 +1318,7 @@ use function Pest\Laravel\deleteJson;
 
 uses(\Illuminate\Foundation\Testing\RefreshDatabase::class);
 
-// ─── List Posts ───────────────────────────────────────────────
+// â”€â”€â”€ List Posts â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 describe('GET /api/posts', function () {
     it('returns paginated posts', function () {
@@ -1348,7 +1348,7 @@ describe('GET /api/posts', function () {
     });
 });
 
-// ─── Create Post ──────────────────────────────────────────────
+// â”€â”€â”€ Create Post â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 describe('POST /api/posts', function () {
     it('creates a post when authenticated', function () {
@@ -1395,7 +1395,7 @@ describe('POST /api/posts', function () {
     });
 });
 
-// ─── Show Post ────────────────────────────────────────────────
+// â”€â”€â”€ Show Post â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 describe('GET /api/posts/{post}', function () {
     it('returns a single post with comments', function () {
@@ -1418,7 +1418,7 @@ describe('GET /api/posts/{post}', function () {
     });
 });
 
-// ─── Update Post ──────────────────────────────────────────────
+// â”€â”€â”€ Update Post â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 describe('PUT /api/posts/{post}', function () {
     it('updates own post', function () {
@@ -1451,7 +1451,7 @@ describe('PUT /api/posts/{post}', function () {
     });
 });
 
-// ─── Delete Post ──────────────────────────────────────────────
+// â”€â”€â”€ Delete Post â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 describe('DELETE /api/posts/{post}', function () {
     it('deletes own post', function () {
@@ -1475,7 +1475,7 @@ describe('DELETE /api/posts/{post}', function () {
     });
 });
 
-// ─── Arch rules ───────────────────────────────────────────────
+// â”€â”€â”€ Arch rules â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 arch('debug functions')
     ->expect(['dd', 'dump', 'var_dump', 'ray'])
@@ -1499,7 +1499,7 @@ arch('controllers')
 | Confidence | High (system as user would) | Moderate (unit logic only) |
 | Best For | Controllers, API, workflows | Services, helpers, formatters |
 
-## Quick Reference — Test Assertions
+## Quick Reference â€” Test Assertions
 
 | Assertion | Purpose |
 |-----------|---------|

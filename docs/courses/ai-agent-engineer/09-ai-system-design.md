@@ -1,7 +1,7 @@
-# Chapter 9 — AI System Design & Architecture
+﻿# Chapter 9 â€” AI System Design & Architecture
 
 **Duration:** 2 weeks, ~25 hours
-**Goal:** Architect production AI systems — RAG pipelines, agent infrastructures, and cost-optimized serving stacks. Make design decisions you can defend in a system-design interview.
+**Goal:** Architect production AI systems â€” RAG pipelines, agent infrastructures, and cost-optimized serving stacks. Make design decisions you can defend in a system-design interview.
 
 ---
 
@@ -9,16 +9,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/ai-agent-engineer/09-ai-system-design/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/ai-agent-engineer/09-ai-system-design/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-agent-engineer/09-ai-system-design/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/ai-agent-engineer/09-ai-system-design/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/ai-agent-engineer/09-ai-system-design/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/ai-agent-engineer/09-ai-system-design/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-agent-engineer/09-ai-system-design/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/ai-agent-engineer/09-ai-system-design/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/ai-agent-engineer/09-ai-system-design/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/ai-agent-engineer/09-ai-system-design/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-agent-engineer/09-ai-system-design/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/ai-agent-engineer/09-ai-system-design/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -45,7 +45,7 @@
 
 ## 9.1 RAG System Architecture Patterns
 
-### Pattern 1 — Naive RAG (Basic)
+### Pattern 1 â€” Naive RAG (Basic)
 
 
 ```
@@ -55,7 +55,7 @@ User Query ? Embed ? Vector Search ? Top-K Chunks ? LLM ? Response
 Simple, but every query pays the full cost. No query rewriting, no re-ranking, no context refinement.
 
 ```python
-# Naive RAG — one-shot retrieval + generation
+# Naive RAG â€” one-shot retrieval + generation
 from openai import OpenAI
 import chromadb
 
@@ -91,7 +91,7 @@ def naive_rag(query: str) -> str:
 
 **When to use:** Prototypes, internal tools, low QPS (< 10 req/min).
 
-### Pattern 2 — Agentic RAG (Advanced)
+### Pattern 2 â€” Agentic RAG (Advanced)
 
 
 ```
@@ -189,7 +189,7 @@ def agentic_rag(query: str) -> str:
     return response
 ```
 
-### Pattern 3 — Multi-Hop RAG
+### Pattern 3 â€” Multi-Hop RAG
 
 
 For questions that require synthesizing information from multiple documents where no single chunk contains the answer.
@@ -244,11 +244,11 @@ def multi_hop_rag(query: str) -> str:
 
 ```
 +----------------------------+
-¦  L1: Prompt Cache (in-memory) ¦ ? Exact query match, TTL seconds
-+----------------------------¦
-¦  L2: Semantic Cache (vector) ¦ ? Similar query match, cosine > 0.95
-+----------------------------¦
-¦  L3: KV Cache (model-level)  ¦ ? Reused across turns in same session
+Â¦  L1: Prompt Cache (in-memory) Â¦ ? Exact query match, TTL seconds
++----------------------------Â¦
+Â¦  L2: Semantic Cache (vector) Â¦ ? Similar query match, cosine > 0.95
++----------------------------Â¦
+Â¦  L3: KV Cache (model-level)  Â¦ ? Reused across turns in same session
 +----------------------------+
 ```
 
@@ -727,34 +727,34 @@ async def multi_region_search(
 
 ```
                          +-------------+
-                         ¦ API Gateway  ¦
-                         ¦ (rate limit, ¦
-                         ¦  auth, route)¦
+                         Â¦ API Gateway  Â¦
+                         Â¦ (rate limit, Â¦
+                         Â¦  auth, route)Â¦
                          +-------------+
-                                ¦
+                                Â¦
                     +-----------------------+
-                    ¦    Agent Supervisor    ¦
-                    ¦  (orchestration layer) ¦
+                    Â¦    Agent Supervisor    Â¦
+                    Â¦  (orchestration layer) Â¦
                     +-----------------------+
-                                ¦
+                                Â¦
          +----------------------+----------------------+
-         ¦                      ¦                      ¦
+         Â¦                      Â¦                      Â¦
     +---------+          +-----------+          +----------+
-    ¦ Agent A ¦          ¦  Agent B  ¦          ¦  Agent C  ¦
-    ¦(search) ¦          ¦ (analyze) ¦          ¦ (respond) ¦
+    Â¦ Agent A Â¦          Â¦  Agent B  Â¦          Â¦  Agent C  Â¦
+    Â¦(search) Â¦          Â¦ (analyze) Â¦          Â¦ (respond) Â¦
     +---------+          +-----------+          +----------+
-         ¦                     ¦                      ¦
+         Â¦                     Â¦                      Â¦
          +---------------------+----------------------+
-                               ¦
+                               Â¦
                     +---------------------+
-                    ¦     Message Bus      ¦
-                    ¦  (Redis / RabbitMQ)  ¦
-                    +---------------------¦
-                    ¦    State Store       ¦
-                    ¦  (Postgres / Redis)  ¦
-                    +---------------------¦
-                    ¦    Tool Registry     ¦
-                    ¦  (MCP server list)   ¦
+                    Â¦     Message Bus      Â¦
+                    Â¦  (Redis / RabbitMQ)  Â¦
+                    +---------------------Â¦
+                    Â¦    State Store       Â¦
+                    Â¦  (Postgres / Redis)  Â¦
+                    +---------------------Â¦
+                    Â¦    Tool Registry     Â¦
+                    Â¦  (MCP server list)   Â¦
                     +---------------------+
 ```
 

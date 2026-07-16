@@ -1,4 +1,4 @@
-# Chapter 2: Architecture, Routing, Middleware & Controllers
+﻿# Chapter 2: Architecture, Routing, Middleware & Controllers
 
 > **Previous:** [Introduction to Laravel 13](./01-introduction.md) | **Next:** [Blade Templating, Components & Frontend](./03-blade-frontend.md)
 
@@ -18,16 +18,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/02-architecture-routing/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/02-architecture-routing/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/02-architecture-routing/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/02-architecture-routing/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/02-architecture-routing/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/02-architecture-routing/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/02-architecture-routing/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/02-architecture-routing/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/02-architecture-routing/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/02-architecture-routing/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/02-architecture-routing/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/02-architecture-routing/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -41,8 +41,8 @@
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|--------------------|
-|Request Lifecycle|Request flows: index.php → kernel → router → middleware → controller|Understanding lifecycle helps debug performance and ordering|
-|Service Container|Auto-resolves dependencies via type-hints and providers|Use container — never use `new` for services manually|
+|Request Lifecycle|Request flows: index.php â†’ kernel â†’ router â†’ middleware â†’ controller|Understanding lifecycle helps debug performance and ordering|
+|Service Container|Auto-resolves dependencies via type-hints and providers|Use container â€” never use `new` for services manually|
 |Routing|Routes support params, constraints, names, and groups|Use route naming with ->name() for clean URL generation|
 |Middleware|Filters HTTP requests before controllers|Global for all, group for web/api, named for specific routes|
 |Controllers|Organize route logic into classes with DI|Resource controllers map to 7 RESTful actions|
@@ -79,7 +79,7 @@ Every HTTP request follows a precise path through the framework.
 
 ![Laravel Request Lifecycle](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/02-architecture-routing.png)
 
-**Step 1 → `public/index.php`**: This single entry point (configured in Nginx or Apache) records the start time, loads Composer's autoloader, bootstraps the application via `bootstrap/app.php`, and handles the request:
+**Step 1 â†’ `public/index.php`**: This single entry point (configured in Nginx or Apache) records the start time, loads Composer's autoloader, bootstraps the application via `bootstrap/app.php`, and handles the request:
 
 ```php
 $app = require_once __DIR__.'/../bootstrap/app.php';
@@ -88,9 +88,9 @@ $response = $kernel->handle($request = Request::capture())->send();
 $kernel->terminate($request, $response);
 ```
 
-**Step 2 → `bootstrap/app.php`**: Creates the `Illuminate\Foundation\Application` instance (the service container) and registers three core contracts as singletons: the HTTP kernel, console kernel, and exception handler.
+**Step 2 â†’ `bootstrap/app.php`**: Creates the `Illuminate\Foundation\Application` instance (the service container) and registers three core contracts as singletons: the HTTP kernel, console kernel, and exception handler.
 
-**Step 3 → Kernel**: `App\Http\Kernel` defines global middleware (runs on all requests), middleware groups (`web` for session/CSRF routes, `api` for stateless routes), and named route middleware:
+**Step 3 â†’ Kernel**: `App\Http\Kernel` defines global middleware (runs on all requests), middleware groups (`web` for session/CSRF routes, `api` for stateless routes), and named route middleware:
 
 ```php
 protected $middlewareGroups = [
@@ -110,13 +110,13 @@ protected $middlewareGroups = [
 ];
 ```
 
-**Step 4 → Service Providers**: The kernel boots the application, registering and booting all providers in `config/app.php`. Each provider has `register()` (called first) and `boot()` (called after all providers register). This deferral ensures that when one provider's `boot()` depends on another's bindings, those bindings exist.
+**Step 4 â†’ Service Providers**: The kernel boots the application, registering and booting all providers in `config/app.php`. Each provider has `register()` (called first) and `boot()` (called after all providers register). This deferral ensures that when one provider's `boot()` depends on another's bindings, those bindings exist.
 
-**Step 5 → Router**: `RouteServiceProvider` loads route files. Laravel matches the incoming URI and HTTP method against registered routes → first match wins.
+**Step 5 â†’ Router**: `RouteServiceProvider` loads route files. Laravel matches the incoming URI and HTTP method against registered routes â†’ first match wins.
 
-**Step 6 → Middleware Pipeline**: The request passes through the middleware stack like an onion. Each middleware can inspect, modify, or reject the request before it reaches the controller, and can modify the response on the way back out.
+**Step 6 â†’ Middleware Pipeline**: The request passes through the middleware stack like an onion. Each middleware can inspect, modify, or reject the request before it reaches the controller, and can modify the response on the way back out.
 
-**Step 7 → Controller**: The controller method returns a Response, which travels back through the middleware in reverse order, gets sent to the browser, and the kernel runs terminable middleware.
+**Step 7 â†’ Controller**: The controller method returns a Response, which travels back through the middleware in reverse order, gets sent to the browser, and the kernel runs terminable middleware.
 
 ### 2.2 Service Container
 
@@ -130,7 +130,7 @@ $calculator = app()->make(CalculatorService::class);
 // Interface binding
 app()->bind(PaymentGateway::class, StripeGateway::class);
 
-// Singleton → same instance per request
+// Singleton â†’ same instance per request
 app()->singleton(CartService::class, fn() => new CartService(session()->getId()));
 
 // Primitive binding
@@ -305,7 +305,7 @@ class EnsureRole
 Route::get('/admin', fn() => "...")->middleware('role:admin');
 ```
 
-**Terminable middleware**: Runs after the response is sent → ideal for logging, analytics, and webhooks that the user should not wait for:
+**Terminable middleware**: Runs after the response is sent â†’ ideal for logging, analytics, and webhooks that the user should not wait for:
 
 ```php
 class TerminateAfterResponse
@@ -317,7 +317,7 @@ class TerminateAfterResponse
 
     public function terminate(Request $request, Response $response): void
     {
-        // Response already sent → safe to do slow work here
+        // Response already sent â†’ safe to do slow work here
     }
 }
 ```
@@ -615,7 +615,7 @@ Route::resource('posts', PostController::class);
 
 | Concept | Description | Use Case |
 |---------|-------------|---------|
-|Implicit vs Explicit|Implicit: {user} → User; Explicit: custom resolver|Use implicit for id lookups, explicit for composite keys|
+|Implicit vs Explicit|Implicit: {user} â†’ User; Explicit: custom resolver|Use implicit for id lookups, explicit for composite keys|
 |Web vs API|Web: session+CSRF; API: stateless+rate-limit|Web for browser, API for mobile/clients|
 |Resource vs Single|Resource: 7 methods; Single: __invoke only|Resource for CRUD, single for dashboards|
 
@@ -678,7 +678,7 @@ Test your understanding with these questions.
 
 ## Summary
 
-- The HTTP request lifecycle follows `index.php` → `bootstrap/app.php` → Kernel → Service Providers → Router → Middleware → Controller → Response
+- The HTTP request lifecycle follows `index.php` â†’ `bootstrap/app.php` â†’ Kernel â†’ Service Providers â†’ Router â†’ Middleware â†’ Controller â†’ Response
 - The service container provides automatic dependency injection with zero configuration for most classes
 - Routes support all HTTP verbs, required and optional parameters, regex constraints, and naming
 - Route groups share prefixes, middleware, names, and domains across multiple routes

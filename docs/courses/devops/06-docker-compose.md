@@ -1,4 +1,4 @@
-# Chapter 6: Docker Compose
+﻿# Chapter 6: Docker Compose
 
 > **Prev:** [Docker](./05-docker.md)
 > **Next:** [Orchestration](./06-orchestration.md)
@@ -17,16 +17,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/06-docker-compose/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/06-docker-compose/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/06-docker-compose/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/06-docker-compose/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/06-docker-compose/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/06-docker-compose/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/06-docker-compose/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/06-docker-compose/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/06-docker-compose/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/06-docker-compose/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/06-docker-compose/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/06-docker-compose/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -202,7 +202,7 @@ services:
 
   db:
     image: postgres:16
-    # No profile — always starts
+    # No profile â€” always starts
 
   mailhog:
     image: mailhog/mailhog
@@ -216,10 +216,10 @@ Run: `docker compose --profile dev up`
 
 Split configuration across files for different environments:
 
-- `docker-compose.yml` — Base configuration
-- `docker-compose.override.yml` — Development overrides (auto-loaded)
-- `docker-compose.prod.yml` — Production overrides
-- `docker-compose.test.yml` — Test overrides
+- `docker-compose.yml` â€” Base configuration
+- `docker-compose.override.yml` â€” Development overrides (auto-loaded)
+- `docker-compose.prod.yml` â€” Production overrides
+- `docker-compose.test.yml` â€” Test overrides
 
 ```text
 # Development (override auto-loaded)
@@ -532,7 +532,7 @@ class ComposeValidator {
     if (service.volumes) {
       for (const vol of service.volumes) {
         if (vol.includes(':') && !vol.startsWith('.') && !vol.startsWith('/')) {
-          this.warnings.push(`Service "${name}": volume "${vol}" uses a named volume — ensure it is declared`);
+          this.warnings.push(`Service "${name}": volume "${vol}" uses a named volume â€” ensure it is declared`);
         }
       }
     }

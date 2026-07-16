@@ -1,4 +1,4 @@
-# Chapter 13: Laravel AI SDK → Tools, MCP Tools & Provider Tools
+﻿# Chapter 13: Laravel AI SDK â†’ Tools, MCP Tools & Provider Tools
 > **Previous:** [Laravel AI SDK -- Agents, Prompting & Structured Output](./12-ai-sdk-agents) | **Next:** [Laravel AI SDK -- Images, Audio, Transcriptions & Embeddings](./14-ai-sdk-media)
 
 ---
@@ -14,16 +14,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/13-ai-sdk-tools/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/13-ai-sdk-tools/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/13-ai-sdk-tools/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/13-ai-sdk-tools/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/13-ai-sdk-tools/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/13-ai-sdk-tools/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/13-ai-sdk-tools/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/13-ai-sdk-tools/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/13-ai-sdk-tools/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/13-ai-sdk-tools/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/13-ai-sdk-tools/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/13-ai-sdk-tools/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -67,12 +67,12 @@ flowchart LR
 
 Language models are text-in, text-out systems. They cannot access external systems, query databases, browse the web, or compute values at runtime. Tools bridge this gap by giving the agent the ability to call your code during the prompting process.
 
-When an agent is invoked with tools, the SDK sends the tool definitions → names, descriptions, and parameter schemas → to the language model alongside the system prompt and user message. The model can decide to call one or more tools, passing concrete arguments. The SDK intercepts these calls, executes the corresponding `handle()` methods, and returns the results to the model. This loop can repeat multiple times within a single prompt, enabling complex multi-step reasoning.
+When an agent is invoked with tools, the SDK sends the tool definitions â†’ names, descriptions, and parameter schemas â†’ to the language model alongside the system prompt and user message. The model can decide to call one or more tools, passing concrete arguments. The SDK intercepts these calls, executes the corresponding `handle()` methods, and returns the results to the model. This loop can repeat multiple times within a single prompt, enabling complex multi-step reasoning.
 
 Every tool must implement the `Tool` interface, which defines three methods:
-- `description()` → Returns a string describing the tool's purpose. This is sent to the model and is crucial for correct invocation.
-- `schema(JsonSchema $schema)` → Defines the tool's parameters using the fluent `JsonSchema` builder.
-- `handle(Request $request)` → Receives model-generated arguments and executes the tool logic. Must return a string or Stringable.
+- `description()` â†’ Returns a string describing the tool's purpose. This is sent to the model and is crucial for correct invocation.
+- `schema(JsonSchema $schema)` â†’ Defines the tool's parameters using the fluent `JsonSchema` builder.
+- `handle(Request $request)` â†’ Receives model-generated arguments and executes the tool logic. Must return a string or Stringable.
 
 ### 13.2 Creating Tools
 
@@ -95,7 +95,7 @@ class RandomNumberGenerator implements Tool
 {
     public function description(): Stringable|string
 
-> **Pro Tip:** The description() return value is critical — the language model uses these descriptions to decide which tool to call. A vague description like 'Gets data' causes incorrect tool selection. Be specific about what the tool does and when to use it.
+> **Pro Tip:** The description() return value is critical â€” the language model uses these descriptions to decide which tool to call. A vague description like 'Gets data' causes incorrect tool selection. Be specific about what the tool does and when to use it.
     {
         return 'Generates cryptographically secure random integers within a specified inclusive range. Use this when the user needs a random number, a random selection, or any randomized value.';
     }
@@ -118,7 +118,7 @@ class RandomNumberGenerator implements Tool
 }
 ```
 
-The `description()` return value is critical → the model uses these descriptions to decide which tool to call. A vague description causes misuse. Always cast or validate incoming values in `handle()`.
+The `description()` return value is critical â†’ the model uses these descriptions to decide which tool to call. A vague description causes misuse. Always cast or validate incoming values in `handle()`.
 
 ### 13.3 Registering Tools with Agents
 
@@ -241,7 +241,7 @@ class OrderLookup implements Tool
 
 > **One-Sentence Takeaway:** SimilaritySearch provides the foundation for Retrieval-Augmented Generation (RAG) by performing vector search against Eloquent models with embedding columns.
 
-The `SimilaritySearch` tool performs vector similarity search against Eloquent models with an embedding column → the foundation of Retrieval-Augmented Generation (RAG):
+The `SimilaritySearch` tool performs vector similarity search against Eloquent models with an embedding column â†’ the foundation of Retrieval-Augmented Generation (RAG):
 
 ```php
 <?php
@@ -822,7 +822,7 @@ class EnterpriseSupportController extends Controller
 | Latency | Low (in-process) | Medium (network) | Medium (API call) |
 | Use Case | Database queries | GitHub, Slack APIs | Web search, file search |
 
-## Quick Reference — AI SDK Tool Methods
+## Quick Reference â€” AI SDK Tool Methods
 
 | Method | Purpose |
 |--------|---------|
@@ -877,7 +877,7 @@ class EnterpriseSupportController extends Controller
 - Tools are registered through the agent's `tools()` method as an array of instances
 - `SimilaritySearch` enables RAG via vector search against Eloquent models, supporting custom query closures and full-control mode
 - MCP tools from `laravel/mcp` connect to remote (`Client::web()`) or local (`Client::local()`) servers, spread into agents via `...`
-- Provider tools → `WebSearch`, `WebFetch`, `FileSearch` → are configured on `PendingAgentRequest` without custom classes
+- Provider tools â†’ `WebSearch`, `WebFetch`, `FileSearch` â†’ are configured on `PendingAgentRequest` without custom classes
 - Agent middleware provides `before()` and `after()` hooks for logging, metrics, and access control
 ---
 ## Exercises

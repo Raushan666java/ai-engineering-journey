@@ -1,4 +1,4 @@
-# Chapter 11: Dynamic Memory Allocation
+﻿# Chapter 11: Dynamic Memory Allocation
 
 > **Previous:** [Structures and Unions](./10-structures-unions.md) | **Next:** [File Handling](./12-file-handling.md)
 
@@ -16,16 +16,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/11-dma/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/c-programming/11-dma/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/11-dma/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/c-programming/11-dma/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/11-dma/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/c-programming/11-dma/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/11-dma/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/c-programming/11-dma/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/11-dma/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/c-programming/11-dma/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/11-dma/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/c-programming/11-dma/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -48,10 +48,10 @@
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
 | Static vs Dynamic | Static: fixed at compile time; Dynamic: runtime-controlled | Stack for small/fixed; Heap for large/variable |
-| Memory Layout | Text(Code) + Data + BSS + Heap + Stack | Heap grows up, Stack grows down → collision = stack overflow |
+| Memory Layout | Text(Code) + Data + BSS + Heap + Stack | Heap grows up, Stack grows down â†’ collision = stack overflow |
 | malloc | Allocates uninitialized raw bytes from heap | Returns `void *` or NULL; always check return |
 | calloc | Allocates + zero-initializes | Safer for arrays; slightly slower due to zeroing |
-| realloc | Resizes existing allocation | May relocate → use temp pointer to avoid leak |
+| realloc | Resizes existing allocation | May relocate â†’ use temp pointer to avoid leak |
 | free | Returns memory to heap | Set pointer to NULL after free to prevent dangling |
 | Memory Leak | Allocated memory with no remaining reference | Every malloc must have matching free |
 | Dangling Pointer | Pointer to freed memory | NULL after free; never trust a freed pointer |
@@ -87,9 +87,9 @@ flowchart LR
 
 Think of a **library** (static allocation) vs a **warehouse** (dynamic allocation).
 
-A **library** has fixed shelves built into the walls. Before the library opens, the architect decides exactly how many shelves are needed, where they go, and what they hold. You cannot add a new shelf in the middle of the day → the entire structure is fixed at construction time. This is **static memory**: the compiler (the architect) decides the size and lifetime of every variable before the program runs.
+A **library** has fixed shelves built into the walls. Before the library opens, the architect decides exactly how many shelves are needed, where they go, and what they hold. You cannot add a new shelf in the middle of the day â†’ the entire structure is fixed at construction time. This is **static memory**: the compiler (the architect) decides the size and lifetime of every variable before the program runs.
 
-A **warehouse** is different. When inventory arrives, you call the warehouse manager, reserve a pallet location, use it, and return it when done. If more inventory arrives tomorrow, you reserve a different spot. The warehouse can handle arbitrary amounts of material → as long as space exists. This is **dynamic memory**: you request memory at runtime, use it, and release it explicitly.
+A **warehouse** is different. When inventory arrives, you call the warehouse manager, reserve a pallet location, use it, and return it when done. If more inventory arrives tomorrow, you reserve a different spot. The warehouse can handle arbitrary amounts of material â†’ as long as space exists. This is **dynamic memory**: you request memory at runtime, use it, and release it explicitly.
 
 ### What Is Static Allocation?
 
@@ -99,17 +99,17 @@ Static allocation means the compiler determines the size and lifetime of a varia
 ```c
 #include <stdio.h>
 
-int global_var = 42;          /* Static → lives in .data segment */
-static int file_static = 10;  /* Static → file scope, .data segment */
+int global_var = 42;          /* Static â†’ lives in .data segment */
+static int file_static = 10;  /* Static â†’ file scope, .data segment */
 
 void func(void) {
-    static int call_count = 0; /* Static → retains value across calls */
+    static int call_count = 0; /* Static â†’ retains value across calls */
     call_count++;
     printf("Called %d times\n", call_count);
 }
 
 int main(void) {
-    int local = 5;             /* Automatic → lives on stack */
+    int local = 5;             /* Automatic â†’ lives on stack */
     func();
     func();
     func();
@@ -131,7 +131,7 @@ Local variables (declared inside a function without `static`) are **automatic**.
 
 ```c
 void example(void) {
-    int arr[100];    /* Automatic → 100 ints on stack (400 bytes) */
+    int arr[100];    /* Automatic â†’ 100 ints on stack (400 bytes) */
     /* arr is freed when example() returns */
 }
 ```
@@ -150,7 +150,7 @@ int main(void) {
     printf("How many integers? ");
     scanf("%d", &n);
 
-    int *arr = (int*)malloc(n * sizeof(int));  /* Dynamic → size known only at runtime */
+    int *arr = (int*)malloc(n * sizeof(int));  /* Dynamic â†’ size known only at runtime */
     if (arr == NULL) {
         fprintf(stderr, "malloc failed\n");
         return 1;
@@ -175,7 +175,7 @@ Last element: 9
 
 **Step 1:** Determine the size needed (use `sizeof` to remain portable).
 **Step 2:** Call `malloc`/`calloc`/`realloc` with the computed size.
-**Step 3:** Check the return value → NULL means allocation failed.
+**Step 3:** Check the return value â†’ NULL means allocation failed.
 **Step 4:** Use the allocated memory (read/write via the pointer).
 **Step 5:** Call `free` when done to return memory to the heap.
 **Step 6:** Set the pointer to NULL to prevent use-after-free.
@@ -212,22 +212,22 @@ Initial state:
   heap: [empty]
   stack: [main()]
 
-Step 1 → int n = 3;
+Step 1 â†’ int n = 3;
   stack: [main(): n = 3]
 
-Step 2 → int *arr = malloc(3 * sizeof(int));
+Step 2 â†’ int *arr = malloc(3 * sizeof(int));
   heap:  [0x1000: ??, ??, ??]
   stack: [main(): n = 3, arr = 0x1000]
 
-Step 3 → arr[0] = 10; arr[1] = 20; arr[2] = 30;
+Step 3 â†’ arr[0] = 10; arr[1] = 20; arr[2] = 30;
   heap:  [0x1000: 10, 20, 30]
 
-Step 4 → free(arr); arr = NULL;
+Step 4 â†’ free(arr); arr = NULL;
   heap:  [0x1000: (freed)]
   stack: [main(): n = 3, arr = NULL]
 ```
 
-### Static vs Dynamic Allocation → Comparison
+### Static vs Dynamic Allocation â†’ Comparison
 
 
 | Aspect | Static Allocation | Automatic (Stack) Allocation | Dynamic (Heap) Allocation |
@@ -238,7 +238,7 @@ Step 4 → free(arr); arr = NULL;
 | **Lifetime** | Entire program | Function scope | Until freed |
 | **Resizeable?** | No | No | Yes (via realloc) |
 | **Speed** | Fastest (no runtime overhead) | Very fast (stack pointer adjust) | Slow (system call, freelist search) |
-| **Typical size** | Smallâ€“medium | Small (KBâ€“MB, stack size limited) | Large (up to virtual memory limit) |
+| **Typical size** | SmallÃ¢â‚¬â€œmedium | Small (KBÃ¢â‚¬â€œMB, stack size limited) | Large (up to virtual memory limit) |
 | **Risk** | None | Stack overflow | Leaks, fragmentation, dangling pointers |
 | **Example** | `static int x;` | `int x;` | `malloc(n)` |
 
@@ -248,7 +248,7 @@ Step 4 → free(arr); arr = NULL;
 | Operation | Time | Space | Notes |
 |-----------|------|-------|-------|
 | Static allocation | O(1) compile-time | O(1) | No runtime cost |
-| Automatic allocation | O(1) | O(1) | Stack pointer adjustment → nanosecond scale |
+| Automatic allocation | O(1) | O(1) | Stack pointer adjustment â†’ nanosecond scale |
 | Dynamic allocation (malloc) | O(1) amortized | O(1) | Freelist search; may involve brk/sbrk syscall |
 | Dynamic deallocation (free) | O(1) amortized | O(1) | Returns block to freelist; may coalesce |
 
@@ -257,11 +257,11 @@ Step 4 → free(arr); arr = NULL;
 
 | Aspect | Static/Automatic | Dynamic |
 |--------|-----------------|---------|
-| **Speed** | Instant → no runtime overhead | Slower → heap management overhead |
-| **Safety** | Automatic lifetime management | Manual → leaks and dangling pointers are easy to introduce |
-| **Flexibility** | Fixed size → cannot grow | Can grow, shrink, and be freed at will |
-| **Memory** | Stack limited (typically 1â€“8 MB per thread) | Heap limited by system RAM + swap |
-| **Control** | None → compiler manages everything | Full control over lifetime |
+| **Speed** | Instant â†’ no runtime overhead | Slower â†’ heap management overhead |
+| **Safety** | Automatic lifetime management | Manual â†’ leaks and dangling pointers are easy to introduce |
+| **Flexibility** | Fixed size â†’ cannot grow | Can grow, shrink, and be freed at will |
+| **Memory** | Stack limited (typically 1Ã¢â‚¬â€œ8 MB per thread) | Heap limited by system RAM + swap |
+| **Control** | None â†’ compiler manages everything | Full control over lifetime |
 
 ### Edge Cases
 
@@ -270,8 +270,8 @@ Step 4 → free(arr); arr = NULL;
 |----------|----------|------------|
 | Stack overflow (infinite recursion) | Program crashes with segfault | Use heap for deep recursion; increase stack size |
 | Static array too large (e.g., `int a[10000000]`) | Program may not link or may crash | Use heap for large allocations |
-| Forgetting to free | Memory leak → program consumes memory until OOM | Ensure every malloc has matching free |
-| Double free | Undefined behavior → heap corruption | Set ptr to NULL after free |
+| Forgetting to free | Memory leak â†’ program consumes memory until OOM | Ensure every malloc has matching free |
+| Double free | Undefined behavior â†’ heap corruption | Set ptr to NULL after free |
 | malloc(0) | Implementation-defined (may return NULL or unique ptr) | Avoid allocating zero bytes |
 
 ---
@@ -281,7 +281,7 @@ Step 4 → free(arr); arr = NULL;
 ### Real-World Analogy: Hotel vs Warehouse
 
 
-The **stack** is like a **hotel**. Guests (functions) check in (are called), occupy a room (stack frame), and check out (return). The front desk knows exactly who is in which room at any moment. Rooms are assigned in strict order → the last guest to check out frees the newest room. Everything is neat, predictable, and automatic.
+The **stack** is like a **hotel**. Guests (functions) check in (are called), occupy a room (stack frame), and check out (return). The front desk knows exactly who is in which room at any moment. Rooms are assigned in strict order â†’ the last guest to check out frees the newest room. Everything is neat, predictable, and automatic.
 
 The **heap** is like a **warehouse**. You reserve a pallet slot (allocate), use it for as long as you need, and tell the warehouse manager when you are done (free). Different parts of the warehouse are used at different times, possibly in any order. Keeping track of what is reserved and what is free is the programmer's job.
 
@@ -342,7 +342,7 @@ int main(void) {
     *a = 10;
     *b = 20;
     printf("a=%d b=%d\n", *a, *b);
-    free(a);   /* Free in any order → not LIFO */
+    free(a);   /* Free in any order â†’ not LIFO */
     free(b);
     return 0;
 }
@@ -357,20 +357,20 @@ After free(a):    heap: [FREE][b_block: 20][free space...]
 After free(b):    heap: [FREE][FREE][free space...]  (may coalesce)
 ```
 
-### Stack vs Heap → Full Comparison
+### Stack vs Heap â†’ Full Comparison
 
 
 | Aspect | Stack | Heap |
 |--------|-------|------|
-| **Size** | Small (1â€“8 MB default per thread on Linux/Windows) | Large (up to virtual address space → GB on 64-bit) |
-| **Speed** | Fast → single instruction to adjust stack pointer (~ns) | Slow → freelist search, possible syscall (~Î¼s) |
-| **Lifetime** | Automatic → variable dies when function returns | Manual → variable lives until `free` |
+| **Size** | Small (1Ã¢â‚¬â€œ8 MB default per thread on Linux/Windows) | Large (up to virtual address space â†’ GB on 64-bit) |
+| **Speed** | Fast â†’ single instruction to adjust stack pointer (~ns) | Slow â†’ freelist search, possible syscall (~ÃŽÂ¼s) |
+| **Lifetime** | Automatic â†’ variable dies when function returns | Manual â†’ variable lives until `free` |
 | **Management** | Compiler-managed (push/pop frames) | Programmer-managed (malloc/free) |
-| **Fragmentation** | None → LIFO ensures contiguous frames | External fragmentation → freed blocks scatter |
+| **Fragmentation** | None â†’ LIFO ensures contiguous frames | External fragmentation â†’ freed blocks scatter |
 | **Allocation** | Compile-time known size | Runtime-determined size |
 | **Grows** | Downward (toward lower addresses) | Upward (toward higher addresses) |
-| **Thread safety** | Per-thread (each thread has its own stack) | Shared → needs synchronization |
-| **Data sharing** | Hard → cannot return pointer to local variable | Easy → pointers persist across functions |
+| **Thread safety** | Per-thread (each thread has its own stack) | Shared â†’ needs synchronization |
+| **Data sharing** | Hard â†’ cannot return pointer to local variable | Easy â†’ pointers persist across functions |
 | **Risk** | Stack overflow (deep recursion, large locals) | Memory leaks, dangling pointers, heap corruption |
 
 ### Stack Allocation: Numbered Steps
@@ -381,7 +381,7 @@ After free(b):    heap: [FREE][FREE][free space...]  (may coalesce)
 **Step 3:** Return address and saved registers are pushed.
 **Step 4:** Local variables occupy fixed offsets from SP.
 **Step 5:** Function executes, using locals.
-**Step 6:** Function returns → SP is restored to pre-call value (all locals freed instantly).
+**Step 6:** Function returns â†’ SP is restored to pre-call value (all locals freed instantly).
 
 ### Heap Allocation: Numbered Steps
 
@@ -392,7 +392,7 @@ After free(b):    heap: [FREE][FREE][free space...]  (may coalesce)
 **Step 4:** If not found, allocator calls `sbrk`/`brk` (Unix) or `VirtualAlloc` (Windows) to grow the heap.
 **Step 5:** Pointer past the header is returned to the caller.
 **Step 6:** Caller uses the memory.
-**Step 7:** Call `free(ptr)` → allocator looks up header, returns block to freelist, may coalesce adjacent free blocks.
+**Step 7:** Call `free(ptr)` â†’ allocator looks up header, returns block to freelist, may coalesce adjacent free blocks.
 
 ### Dry Run: Stack vs Heap Timeline
 
@@ -410,9 +410,9 @@ After free(b):    heap: [FREE][FREE][free space...]  (may coalesce)
 
 | Operation | Stack Time | Heap Time |
 |-----------|------------|-----------|
-| Allocate | O(1) → SP adjustment | O(1) amortized → freelist best-fit/worst-fit search |
-| Free | O(1) → SP restore | O(1) amortized → coalesce neighbors |
-| Access | O(1) → SP + offset | O(1) → pointer dereference |
+| Allocate | O(1) â†’ SP adjustment | O(1) amortized â†’ freelist best-fit/worst-fit search |
+| Free | O(1) â†’ SP restore | O(1) amortized â†’ coalesce neighbors |
+| Access | O(1) â†’ SP + offset | O(1) â†’ pointer dereference |
 
 ### Advantages and Disadvantages
 
@@ -420,10 +420,10 @@ After free(b):    heap: [FREE][FREE][free space...]  (may coalesce)
 | Aspect | Stack | Heap |
 |--------|-------|------|
 | **Speed** | Extremely fast | Slower by orders of magnitude |
-| **Convenience** | Automatic | Manual → error-prone |
+| **Convenience** | Automatic | Manual â†’ error-prone |
 | **Flexibility** | Fixed size at compile time | Dynamic size at runtime |
 | **Capacity** | Severely limited | System memory limit |
-| **Lifetime control** | None → function-scope only | Full control |
+| **Lifetime control** | None â†’ function-scope only | Full control |
 | **Memory locality** | Excellent (contiguous, cached) | Poor (scattered blocks) |
 
 ### Edge Cases
@@ -431,11 +431,11 @@ After free(b):    heap: [FREE][FREE][free space...]  (may coalesce)
 
 | Scenario | Stack Behavior | Heap Behavior |
 |----------|---------------|---------------|
-| Deep recursion | Stack overflow → segfault | Works fine (if each frame allocates separately) |
+| Deep recursion | Stack overflow â†’ segfault | Works fine (if each frame allocates separately) |
 | Large local array (int a[1000000]) | Stack overflow (~4 MB) | Works fine on heap |
-| Returning pointer to local | Dangling pointer → UB | Safe (heap memory persists) |
-| Multithreading | Each thread has its own stack (fixed size) | Heap is shared → must synchronize |
-| Memory exhaustion | Stack overflow → immediate crash | malloc returns NULL → checkable |
+| Returning pointer to local | Dangling pointer â†’ UB | Safe (heap memory persists) |
+| Multithreading | Each thread has its own stack (fixed size) | Heap is shared â†’ must synchronize |
+| Memory exhaustion | Stack overflow â†’ immediate crash | malloc returns NULL â†’ checkable |
 
 ---
 
@@ -446,11 +446,11 @@ A running C program's memory is divided into five segments. Understanding this l
 ```
 High address (0xFFFFFFFF on 32-bit / 0x7FFFFFFF on Linux x86-64)
 +------------------+
-|      Stack       |  ← grows downward (local variables, function frames)
-|        ↓         |
+|      Stack       |  â† grows downward (local variables, function frames)
+|        â†“         |
 |                  |
-|        ↑         |
-|      Heap        |  → grows upward (dynamic allocations)
+|        â†‘         |
+|      Heap        |  â†’ grows upward (dynamic allocations)
 +------------------+
 |      BSS         |  Uninitialized static variables (zero-filled at load)
 +------------------+
@@ -492,7 +492,7 @@ static int static_uninit;
 int main(void) {
     /* Stack segment: local variables */
     int local = 10;
-    static int local_static = 300;  /* Data segment → not stack! */
+    static int local_static = 300;  /* Data segment â†’ not stack! */
     const char *str = "Hello";      /* str is on stack; "Hello" literal is in .rodata (text) */
 
     /* Heap segment */
@@ -515,7 +515,7 @@ int main(void) {
 }
 ```
 
-**Output (typical on Linux x86-64 → addresses will vary):**
+**Output (typical on Linux x86-64 â†’ addresses will vary):**
 ```
 Address ranges (approximate):
   Text (main):   0x401126
@@ -539,10 +539,10 @@ Observe the pattern:
 
 | Why | Explanation |
 |-----|-------------|
-| **Prevent code corruption** | Text is read-only → accidental writes to code cause segfaults immediately |
-| **Share code** | Text can be shared between processes → only one copy of `libc.so` in RAM |
-| **Zero-fill BSS** | Uninitialized globals don't take space in the executable → only their size is recorded |
-| **Heap collision** | If heap grows into stack (or vice versa), the program crashes → "out of memory" |
+| **Prevent code corruption** | Text is read-only â†’ accidental writes to code cause segfaults immediately |
+| **Share code** | Text can be shared between processes â†’ only one copy of `libc.so` in RAM |
+| **Zero-fill BSS** | Uninitialized globals don't take space in the executable â†’ only their size is recorded |
+| **Heap collision** | If heap grows into stack (or vice versa), the program crashes â†’ "out of memory" |
 | **Buffer overflow detection** | Stack canaries and guard pages protect against writes beyond local arrays |
 
 ### Dry Run: Address Verification
@@ -551,29 +551,29 @@ Observe the pattern:
 Assume a Linux process with this approximate layout:
 
 ```
-0x400000 → 0x401000: Text segment (code)
-0x404000 → 0x405000: Data segment (initialized globals)
-0x405000 → 0x406000: BSS segment (uninitialized globals)
-0x1000000 → 0x2000000: Heap (grows upward)
-0x7ffffffde000 → 0x7fffffffffff: Stack (grows downward)
+0x400000 â†’ 0x401000: Text segment (code)
+0x404000 â†’ 0x405000: Data segment (initialized globals)
+0x405000 â†’ 0x406000: BSS segment (uninitialized globals)
+0x1000000 â†’ 0x2000000: Heap (grows upward)
+0x7ffffffde000 â†’ 0x7fffffffffff: Stack (grows downward)
 ```
 
 | Variable | Segment | Address range | Size |
 |----------|---------|---------------|------|
-| `main()` function code | Text | 0x400000â€“0x4000ff | ~256 bytes |
-| `global_init = 100` | Data | 0x404000â€“0x404003 | 4 bytes |
-| `global_uninit` | BSS | 0x405000â€“0x405003 | 4 bytes |
-| `p = malloc(1000)` → p | Heap | 0x1000100â€“0x10004e7 | 1008 bytes (8 header + 1000 data) |
-| `local = 10` | Stack | 0x7ffffffde040â€“0x7ffffffde043 | 4 bytes |
+| `main()` function code | Text | 0x400000Ã¢â‚¬â€œ0x4000ff | ~256 bytes |
+| `global_init = 100` | Data | 0x404000Ã¢â‚¬â€œ0x404003 | 4 bytes |
+| `global_uninit` | BSS | 0x405000Ã¢â‚¬â€œ0x405003 | 4 bytes |
+| `p = malloc(1000)` â†’ p | Heap | 0x1000100Ã¢â‚¬â€œ0x10004e7 | 1008 bytes (8 header + 1000 data) |
+| `local = 10` | Stack | 0x7ffffffde040Ã¢â‚¬â€œ0x7ffffffde043 | 4 bytes |
 
 ---
 
-## 11.4 `malloc` → Memory Allocation
+## 11.4 `malloc` â†’ Memory Allocation
 
 ### Real-World Analogy: Warehouse Pallet Reservation
 
 
-You walk into a warehouse and tell the manager: "I need a pallet that can hold 400 kg." The manager finds an empty spot, writes the address on a slip of paper, and hands it to you. The pallet may have leftover scraps from the last shipment → it is **not cleaned**. You must clear it yourself before putting your items on it. When you are done, you return the slip and the manager marks the spot as available again.
+You walk into a warehouse and tell the manager: "I need a pallet that can hold 400 kg." The manager finds an empty spot, writes the address on a slip of paper, and hands it to you. The pallet may have leftover scraps from the last shipment â†’ it is **not cleaned**. You must clear it yourself before putting your items on it. When you are done, you return the slip and the manager marks the spot as available again.
 
 `malloc` is that manager. It finds a free block, returns its address, and does **not** clean (initialize) the memory.
 
@@ -593,9 +593,9 @@ void *malloc(size_t size);
 
 **Step 1:** Compute the total bytes needed using `sizeof(type) * count`.
 **Step 2:** Call `malloc(total_bytes)`.
-**Step 3:** Check if the return is NULL → if so, handle the error.
+**Step 3:** Check if the return is NULL â†’ if so, handle the error.
 **Step 4:** Optionally cast the `void*` to the desired type (required in C++, optional in C).
-**Step 5:** Use the memory (initialize it first → it is uninitialized!).
+**Step 5:** Use the memory (initialize it first â†’ it is uninitialized!).
 **Step 6:** Call `free(ptr)` when done.
 
 ### Pseudocode
@@ -628,7 +628,7 @@ int main(void) {
         return 1;
     }
 
-    /* Initialize → malloc returns uninitialized memory */
+    /* Initialize â†’ malloc returns uninitialized memory */
     for (int i = 0; i < n; i++) {
         arr[i] = (i + 1) * 10;
     }
@@ -694,7 +694,7 @@ points[1]: (5, 10)
 points[2]: (10, 20)
 ```
 
-### malloc(0) → What Happens?
+### malloc(0) â†’ What Happens?
 
 
 ```c
@@ -722,13 +722,13 @@ The C standard says `malloc(0)` may return NULL **or** a valid non-NULL pointer 
 
 | Step | Code | Heap State | Note |
 |------|------|------------|------|
-| 0 | → | [FREE: 0x1000â€“0x1FFF (4 KB available)] | Empty heap |
-| 1 | `int *a = malloc(4)` | [BLOCK: 0x1000â€“0x1007 (8 bytes: 4 hdr + 4 data)] [FREE: remainder] | Allocator rounds up, adds header |
+| 0 | â†’ | [FREE: 0x1000Ã¢â‚¬â€œ0x1FFF (4 KB available)] | Empty heap |
+| 1 | `int *a = malloc(4)` | [BLOCK: 0x1000Ã¢â‚¬â€œ0x1007 (8 bytes: 4 hdr + 4 data)] [FREE: remainder] | Allocator rounds up, adds header |
 | 2 | `*a = 42` | [BLOCK: a=42] [FREE] | Data written |
-| 3 | `int *b = malloc(8)` | [BLOCK: a=42] [BLOCK: b: 0x1008â€“0x1017 (8 hdr+8 data)] [FREE] | Second allocation |
-| 4 | `free(a)` | [FREE: 0x1000â€“0x1007] [BLOCK: b] [FREE] | a's block returned to freelist |
+| 3 | `int *b = malloc(8)` | [BLOCK: a=42] [BLOCK: b: 0x1008Ã¢â‚¬â€œ0x1017 (8 hdr+8 data)] [FREE] | Second allocation |
+| 4 | `free(a)` | [FREE: 0x1000Ã¢â‚¬â€œ0x1007] [BLOCK: b] [FREE] | a's block returned to freelist |
 | 5 | `int *c = malloc(4)` | [BLOCK: c: 0x1000 (reused)] [BLOCK: b] [FREE] | Freelist block reused |
-| 6 | `free(b); free(c)` | [FREE: 0x1000â€“0x1017 (coalesced)] [FREE: remainder] | Adjacent blocks coalesced |
+| 6 | `free(b); free(c)` | [FREE: 0x1000Ã¢â‚¬â€œ0x1017 (coalesced)] [FREE: remainder] | Adjacent blocks coalesced |
 
 ### Complexity Analysis
 
@@ -736,19 +736,19 @@ The C standard says `malloc(0)` may return NULL **or** a valid non-NULL pointer 
 | Operation | Time Complexity | Space Complexity | Notes |
 |-----------|----------------|------------------|-------|
 | `malloc(n)` | O(1) amortized | O(n) + O(1) header overhead | Freelist search; may trigger `brk` syscall |
-| Access `ptr[i]` | O(1) | → | Pointer arithmetic |
+| Access `ptr[i]` | O(1) | â†’ | Pointer arithmetic |
 | Free `ptr` | O(1) amortized | O(1) | Coalescing adjacent free blocks is O(1) with boundary tags |
-| Allocation from freelist | O(freelist size) worst-case | → | Best-fit may scan entire freelist; segregated lists are O(1) |
+| Allocation from freelist | O(freelist size) worst-case | â†’ | Best-fit may scan entire freelist; segregated lists are O(1) |
 
 ### Advantages and Disadvantages of malloc
 
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
-| **Flexibility** | Allocate any size at runtime | Overhead: each allocation has a metadata header (8â€“16 bytes) |
-| **Lifetime** | Persists until freed | Manual management → easy to forget free |
-| **Reusability** | Freed blocks are reused | Fragmentation → free blocks may be too small for future allocations |
-| **Portability** | Standard C library → everywhere | System call overhead for initial heap growth |
+| **Flexibility** | Allocate any size at runtime | Overhead: each allocation has a metadata header (8Ã¢â‚¬â€œ16 bytes) |
+| **Lifetime** | Persists until freed | Manual management â†’ easy to forget free |
+| **Reusability** | Freed blocks are reused | Fragmentation â†’ free blocks may be too small for future allocations |
+| **Portability** | Standard C library â†’ everywhere | System call overhead for initial heap growth |
 | **Alignment** | Returns pointers aligned for any type | Wasted space if you allocate many tiny objects (each has header) |
 
 ### Edge Cases
@@ -756,11 +756,11 @@ The C standard says `malloc(0)` may return NULL **or** a valid non-NULL pointer 
 
 | Scenario | Behavior | Mitigation |
 |----------|----------|------------|
-| **malloc returns NULL** | Allocation failed → out of memory | **Always check**: `if (ptr == NULL) handle_error();` |
+| **malloc returns NULL** | Allocation failed â†’ out of memory | **Always check**: `if (ptr == NULL) handle_error();` |
 | **malloc(0)** | May return NULL or unique non-NULL pointer | Avoid allocating 0 bytes; treat as error |
 | **malloc(SIZE_MAX)** | Always fails (impossible allocation) | Check for overflow when computing size |
 | **Dereferencing NULL** | Segfault (undefined behavior) | Never dereference without NULL check |
-| **Integer overflow in size** | `malloc(n * sizeof(int))` where n is huge → wraps around | Use calloc (checks overflow) or check manually: `if (n > SIZE_MAX / sizeof(int)) error;` |
+| **Integer overflow in size** | `malloc(n * sizeof(int))` where n is huge â†’ wraps around | Use calloc (checks overflow) or check manually: `if (n > SIZE_MAX / sizeof(int)) error;` |
 | **malloc very large size** | May succeed (overcommit), crash on access | Check return; handle gracefully |
 | **Reading uninitialized memory** | Garbage values (undefined behavior) | Initialize after malloc (or use calloc) |
 
@@ -778,7 +778,7 @@ int main(void) {
 
     /* Manual overflow check */
     if (n > SIZE_MAX / elem_size) {
-        fprintf(stderr, "Integer overflow → allocation too large\n");
+        fprintf(stderr, "Integer overflow â†’ allocation too large\n");
         return 1;
     }
 
@@ -799,16 +799,16 @@ int main(void) {
 Successfully allocated 4000000000 bytes
 ```
 
-Note: `calloc` performs this overflow check internally → another reason to prefer it for arrays.
+Note: `calloc` performs this overflow check internally â†’ another reason to prefer it for arrays.
 
 ---
 
-## 11.5 `calloc` → Contiguous Allocation
+## 11.5 `calloc` â†’ Contiguous Allocation
 
 ### Real-World Analogy: Clean Pallet
 
 
-`malloc` is like getting a pallet that still has dirt from the previous shipment → you must sweep it before use. `calloc` is like requesting a **clean pallet** → the warehouse manager washes it before giving it to you. You pay a small time penalty for the cleaning, but you know exactly what you are getting.
+`malloc` is like getting a pallet that still has dirt from the previous shipment â†’ you must sweep it before use. `calloc` is like requesting a **clean pallet** â†’ the warehouse manager washes it before giving it to you. You pay a small time penalty for the cleaning, but you know exactly what you are getting.
 
 ### Signature
 
@@ -828,7 +828,7 @@ void *calloc(size_t count, size_t element_size);
 **Step 1:** Decide how many elements of a given type you need.
 **Step 2:** Call `calloc(count, sizeof(type))`.
 **Step 3:** Check if the return is NULL.
-**Step 4:** All bytes are guaranteed to be zero → no separate initialization needed.
+**Step 4:** All bytes are guaranteed to be zero â†’ no separate initialization needed.
 **Step 5:** Use the memory.
 **Step 6:** Call `free(ptr)` when done.
 
@@ -862,7 +862,7 @@ int main(void) {
         return 1;
     }
 
-    /* Already zero-initialized → no need to set to 0 manually */
+    /* Already zero-initialized â†’ no need to set to 0 manually */
     for (int i = 0; i < n; i++) {
         printf("arr[%d] = %d\n", i, arr[i]);
     }
@@ -935,11 +935,11 @@ arr1[0] = 0, arr2[0] = 0
 ### Why Zero-Initialization Matters
 
 
-1. **Predictability** → No garbage values to surprise you.
-2. **Security** → Sensitive data left by previous allocations is wiped.
-3. **Default values** → Structs with zero defaults work correctly.
-4. **Hash tables** → Zero often means "empty slot."
-5. **Bitmaps and flags** → All bits start cleared.
+1. **Predictability** â†’ No garbage values to surprise you.
+2. **Security** â†’ Sensitive data left by previous allocations is wiped.
+3. **Default values** â†’ Structs with zero defaults work correctly.
+4. **Hash tables** â†’ Zero often means "empty slot."
+5. **Bitmaps and flags** â†’ All bits start cleared.
 
 ### calloc for Struct Arrays
 
@@ -1017,7 +1017,7 @@ Before assignment:
 
 | Operation | Time | Space | Notes |
 |-----------|------|-------|-------|
-| `calloc(n, size)` | O(n) (zeroing) + O(1) (allocation) | O(n * size) | Zeroing is O(n) → visible for large allocations |
+| `calloc(n, size)` | O(n) (zeroing) + O(1) (allocation) | O(n * size) | Zeroing is O(n) â†’ visible for large allocations |
 | calloc vs malloc + memset | Equal asymptotically | Equal | calloc may be faster for large blocks (OS-level zero pages) |
 
 ### Advantages and Disadvantages
@@ -1025,7 +1025,7 @@ Before assignment:
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
-| **Safety** | All bytes are zero → predictable initial state | Slightly slower than malloc due to zeroing pass |
+| **Safety** | All bytes are zero â†’ predictable initial state | Slightly slower than malloc due to zeroing pass |
 | **Convenience** | No separate memset needed | Overkill if you immediately overwrite all bytes |
 | **Overflow check** | Calloc checks `count * size` for overflow | malloc + manual multiply may overflow silently |
 | **OS optimization** | Large calloc gets zero pages from OS without touching them | Small calloc still zeros memory the same way |
@@ -1036,21 +1036,21 @@ Before assignment:
 | Scenario | Behavior | Mitigation |
 |----------|----------|------------|
 | calloc(0, 4) | May return NULL or unique non-NULL pointer | Avoid allocating zero elements |
-| calloc(SIZE_MAX, 4) | Returns NULL (overflow) → never succeeds | Check return |
+| calloc(SIZE_MAX, 4) | Returns NULL (overflow) â†’ never succeeds | Check return |
 | calloc(1000, 0) | Implementation-defined | Avoid zero element size |
-| Overwriting calloc'd memory immediately | Waste → you zero then overwrite | Use malloc if you write every byte anyway |
+| Overwriting calloc'd memory immediately | Waste â†’ you zero then overwrite | Use malloc if you write every byte anyway |
 | calloc for large struct with padding | Padding bytes are zeroed too | Good for determinism; slight overhead for large structs |
 
 ---
 
-## 11.6 `realloc` → Resizing Memory
+## 11.6 `realloc` â†’ Resizing Memory
 
 ### Real-World Analogy: Expanding a Warehouse Pallet
 
 
 You have a pallet that holds 10 boxes. Suddenly you need space for 20 boxes. You call the warehouse manager: "I need to expand my pallet." The manager checks if there is empty space **right after** your pallet. If yes, he extends the same pallet. If no, he finds a larger spot elsewhere, moves all your boxes to the new spot, and tells you the new address. The old spot is freed automatically.
 
-**Key insight:** After `realloc`, the old pointer may be dead → always use the new pointer returned by `realloc`.
+**Key insight:** After `realloc`, the old pointer may be dead â†’ always use the new pointer returned by `realloc`.
 
 ### Signature
 
@@ -1070,13 +1070,13 @@ void *realloc(void *ptr, size_t new_size);
 
 
 ```c
-/* WRONG → leaks original block if realloc fails */
+/* WRONG â†’ leaks original block if realloc fails */
 arr = (int*)realloc(arr, new_size * sizeof(int));
 
-/* CORRECT → temporary pointer preserves original on failure */
+/* CORRECT â†’ temporary pointer preserves original on failure */
 int *temp = (int*)realloc(arr, new_size * sizeof(int));
 if (temp == NULL) {
-    /* arr still points to the original block → handle error */
+    /* arr still points to the original block â†’ handle error */
     free(arr);
     return 1;
 }
@@ -1088,8 +1088,8 @@ arr = temp;
 
 **Step 1:** Compute the new size.
 **Step 2:** Call `realloc(ptr, new_size)` and assign the result to a **temporary** pointer.
-**Step 3:** Check if the temporary is NULL → original block is still intact.
-**Step 4:** On success, the original `ptr` is now invalid → use the temporary going forward.
+**Step 3:** Check if the temporary is NULL â†’ original block is still intact.
+**Step 4:** On success, the original `ptr` is now invalid â†’ use the temporary going forward.
 **Step 5:** On failure, free the original pointer if you cannot proceed.
 **Step 6:** Continue using the resized block.
 
@@ -1100,7 +1100,7 @@ arr = temp;
 FUNCTION safe_realloc(ptr, new_size):
     temp <- realloc(ptr, new_size)
     IF temp == NULL:
-        PRINT "realloc failed → original data preserved"
+        PRINT "realloc failed â†’ original data preserved"
         RETURN ptr    // caller can free later
     END IF
     RETURN temp
@@ -1146,8 +1146,8 @@ int main(void) {
     /* Shrink back to 4 elements */
     temp = (int*)realloc(arr, 4 * sizeof(int));
     if (temp == NULL) {
-        /* On shrink failure, we usually still have the original → rare */
-        printf("Shrink realloc failed → continuing with original\n");
+        /* On shrink failure, we usually still have the original â†’ rare */
+        printf("Shrink realloc failed â†’ continuing with original\n");
     } else {
         arr = temp;
     }
@@ -1206,10 +1206,10 @@ Before:
   [BLOCK A: 32 bytes at 0x1000] [FREE: 64 bytes at 0x1020]
   
 realloc(A, 64):
-  Allocator checks block after A → 64 bytes free, enough for 32 more
+  Allocator checks block after A â†’ 64 bytes free, enough for 32 more
   Expands A in-place: [BLOCK A: 64 bytes at 0x1000]
   Returns same address 0x1000
-  Data at 0x1000â€“0x101F preserved, 0x1020â€“0x103F now also part of block
+  Data at 0x1000Ã¢â‚¬â€œ0x101F preserved, 0x1020Ã¢â‚¬â€œ0x103F now also part of block
 ```
 
 **Case 2: Move (no room after)**
@@ -1219,7 +1219,7 @@ Before:
   [BLOCK A: 32 bytes at 0x1000] [BLOCK B: 32 bytes at 0x1020] [FREE: rest]
 
 realloc(A, 64):
-  Block B occupies 0x1020 → cannot expand in place
+  Block B occupies 0x1020 â†’ cannot expand in place
   Searches freelist for 64+ byte block
   Finds free block at 0x2000
   Copies 32 bytes from 0x1000 to 0x2000
@@ -1235,8 +1235,8 @@ realloc(A, 64):
 |------|-----------|------------|-----------|
 | 0 | `arr = malloc(12)` | [arr: 12 bytes at 0x1000] [FREE] | 0x1000 |
 | 1 | Fill 10, 20, 30 | [arr: 10,20,30 at 0x1000] [FREE] | 0x1000 |
-| 2 | `temp = realloc(arr, 24)` | Searches → block at 0x1010 is occupied | → |
-| 3 | realloc moves data to 0x2000 | [FREE: 0x1000] [other block] [arr: 10,20,30,__,__ at 0x2000] | → |
+| 2 | `temp = realloc(arr, 24)` | Searches â†’ block at 0x1010 is occupied | â†’ |
+| 3 | realloc moves data to 0x2000 | [FREE: 0x1000] [other block] [arr: 10,20,30,__,__ at 0x2000] | â†’ |
 | 4 | `arr = temp` | same | 0x2000 |
 | 5 | Fill arr[3], arr[4], arr[5] | [arr: 10,20,30,40,50,60 at 0x2000] | 0x2000 |
 
@@ -1255,7 +1255,7 @@ realloc(A, 64):
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
-| **Convenience** | Single call resizes and preserves data | Hides complexity → programmer may forget old pointer is dead |
+| **Convenience** | Single call resizes and preserves data | Hides complexity â†’ programmer may forget old pointer is dead |
 | **Efficiency** | In-place expansion avoids copy | Move requires O(n) copy of old data |
 | **Flexibility** | Can grow, shrink, or start fresh (NULL) | Failure handling requires temporary pointer pattern |
 | **Memory savings** | Shrinking releases unused memory | May not actually release to OS (held in process heap) |
@@ -1265,8 +1265,8 @@ realloc(A, 64):
 
 | Scenario | Behavior | Mitigation |
 |----------|----------|------------|
-| **realloc returns NULL** | Original block is preserved → NOT freed | Use temp pointer pattern |
-| **realloc(ptr, 0)** | Implementation-defined (often frees ptr) | Avoid → use free explicitly |
+| **realloc returns NULL** | Original block is preserved â†’ NOT freed | Use temp pointer pattern |
+| **realloc(ptr, 0)** | Implementation-defined (often frees ptr) | Avoid â†’ use free explicitly |
 | **realloc(NULL, size)** | Same as malloc(size) | Useful for first allocation in generic code |
 | **realloc with invalid ptr** | Undefined behavior (corruption or crash) | Ensure ptr came from malloc/calloc/realloc |
 | **realloc shrinking** | Excess bytes are freed | Shrinking may not release memory to OS |
@@ -1307,14 +1307,14 @@ Moved at capacity 4: 0x5555555592a0 -> 0x555555559600
 ```
 ---
 
-## 11.7 `free` → Deallocating Memory
+## 11.7 `free` â†’ Deallocating Memory
 
 ### Real-World Analogy: Returning the Warehouse Pallet
 
 
-You have finished using your warehouse pallet. You call the manager and say: "I'm done with pallet at location A12." The manager marks the spot as available and may merge it with adjacent empty spots. If you try to use the pallet after returning it, you may find someone else's boxes there → or the spot may have been reassigned entirely.
+You have finished using your warehouse pallet. You call the manager and say: "I'm done with pallet at location A12." The manager marks the spot as available and may merge it with adjacent empty spots. If you try to use the pallet after returning it, you may find someone else's boxes there â†’ or the spot may have been reassigned entirely.
 
-`free` tells the heap manager: "I'm done with this block." After calling `free`, the pointer is **dangling** → dereferencing it is undefined behavior.
+`free` tells the heap manager: "I'm done with this block." After calling `free`, the pointer is **dangling** â†’ dereferencing it is undefined behavior.
 
 ### Signature
 
@@ -1330,7 +1330,7 @@ void free(void *ptr);
 ### Numbered Steps to Use free
 
 
-**Step 1:** Ensure `ptr` is non-NULL (safe → free(NULL) is a no-op).
+**Step 1:** Ensure `ptr` is non-NULL (safe â†’ free(NULL) is a no-op).
 **Step 2:** Call `free(ptr)`.
 **Step 3:** Set `ptr = NULL` to prevent accidental reuse (use-after-free prevention).
 **Step 4:** Do NOT use `ptr` after freeing.
@@ -1363,14 +1363,14 @@ int main(void) {
     printf("Before free: %d\n", *p);
 
     free(p);       /* Return memory to heap */
-    /* p is now a dangling pointer → do NOT dereference */
+    /* p is now a dangling pointer â†’ do NOT dereference */
 
     /* Best practice: nullify after free */
     p = NULL;
 
     /* Later in the code... */
     if (p != NULL) {
-        *p = 99;  /* This code is never reached → safe */
+        *p = 99;  /* This code is never reached â†’ safe */
     }
 
     return 0;
@@ -1423,25 +1423,25 @@ When you call `free(ptr)`, the heap manager:
 1. Looks up the block metadata (stored just before the returned pointer).
 2. Checks for corruption (e.g., has the metadata been overwritten?).
 3. Adds the block back to the freelist.
-4. Checks if adjacent blocks are also free → if so, coalesces them into a larger free block.
+4. Checks if adjacent blocks are also free â†’ if so, coalesces them into a larger free block.
 5. (Optionally) releases large free blocks at the end of the heap back to the OS via `sbrk` or `munmap`.
 
 ### Memory Header Layout
 
 
 ```
-  Pointer returned to caller →► +----------+
+  Pointer returned to caller â†’â–º +----------+
                                 |  user     |
                                 |  data     |
                                 |  ...      |
-   Block start →► +----------+  +----------+
-                  |  size    |  ← metadata (4â€“16 bytes)
+   Block start â†’â–º +----------+  +----------+
+                  |  size    |  â† metadata (4Ã¢â‚¬â€œ16 bytes)
                   |  flags   |
                   |  prev/next| (for freelist linking)
                   +----------+
 ```
 
-This is why `free` does not need a size parameter → the size is stored in the metadata header before the returned pointer.
+This is why `free` does not need a size parameter â†’ the size is stored in the metadata header before the returned pointer.
 
 ### Dry Run: Free and Coalesce
 
@@ -1457,8 +1457,8 @@ Allocator gets pointer to B's data (0x1020)
 Reads metadata at 0x1018: size=32, in-use
 Marks block as free
 Checks neighbors:
-  A is in-use → no coalesce left
-  C is free → coalesce right!
+  A is in-use â†’ no coalesce left
+  C is free â†’ coalesce right!
 Combined: [BLOCK A: 32] [FREE: 96 bytes at 0x1020 (contiguous)]
 ```
 
@@ -1474,16 +1474,16 @@ Combined: [BLOCK A: 32] [FREE: 96 bytes at 0x1020 (contiguous)]
 |-----------|------|-------|-------|
 | `free(ptr)` | O(1) amortized | O(1) | + O(1) for coalescing adjacent free blocks |
 | Coalescing | O(1) | O(1) | Boundary tags (Knuth) enable O(1) coalesce |
-| `free(NULL)` | O(1) | O(1) | No-op → safe to call |
+| `free(NULL)` | O(1) | O(1) | No-op â†’ safe to call |
 
 ### Advantages and Disadvantages
 
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
-| **Simplicity** | Single parameter → libc tracks size | No built-in safety → dangling pointers are easy to create |
+| **Simplicity** | Single parameter â†’ libc tracks size | No built-in safety â†’ dangling pointers are easy to create |
 | **Coalescing** | Adjacent free blocks merge automatically | Cannot control when memory returns to OS |
-| **NULL safety** | free(NULL) is a no-op → always safe | Many programmers forget to nullify after free |
+| **NULL safety** | free(NULL) is a no-op â†’ always safe | Many programmers forget to nullify after free |
 | **Performance** | O(1) amortized | Frequent free + malloc causes fragmentation |
 
 ### Edge Cases
@@ -1491,12 +1491,12 @@ Combined: [BLOCK A: 32] [FREE: 96 bytes at 0x1020 (contiguous)]
 
 | Scenario | Behavior | Mitigation |
 |----------|----------|------------|
-| **Double free** | Undefined behavior → heap corruption, crash, or security hole | Set ptr = NULL after each free |
-| **Free of non-malloc pointer** | Undefined behavior → corrupts allocator metadata | Only free pointers from malloc/calloc/realloc |
-| **Free of stack variable** | Undefined behavior → typically immediate crash | Never free what you did not malloc |
-| **Use-after-free** | Undefined behavior → may work, may crash, may corrupt | NULL the pointer; never dereference after free |
-| **Free of partial pointer** (e.g., `arr + 1`) | Undefined behavior → metadata lookup fails | Only free the exact pointer returned by malloc |
-| **Free(NULL)** | Safe → no-op | Good for cleanup code |
+| **Double free** | Undefined behavior â†’ heap corruption, crash, or security hole | Set ptr = NULL after each free |
+| **Free of non-malloc pointer** | Undefined behavior â†’ corrupts allocator metadata | Only free pointers from malloc/calloc/realloc |
+| **Free of stack variable** | Undefined behavior â†’ typically immediate crash | Never free what you did not malloc |
+| **Use-after-free** | Undefined behavior â†’ may work, may crash, may corrupt | NULL the pointer; never dereference after free |
+| **Free of partial pointer** (e.g., `arr + 1`) | Undefined behavior â†’ metadata lookup fails | Only free the exact pointer returned by malloc |
+| **Free(NULL)** | Safe â†’ no-op | Good for cleanup code |
 | **Free in signal handler** | Generally unsafe (malloc is not async-signal-safe) | Avoid; set a flag instead |
 
 ### Common Mistakes
@@ -1507,20 +1507,20 @@ Combined: [BLOCK A: 32] [FREE: 96 bytes at 0x1020 (contiguous)]
 void double_free(void) {
     int *p = malloc(sizeof(int));
     free(p);
-    free(p);  /* UNDEFINED BEHAVIOR → heap corruption */
+    free(p);  /* UNDEFINED BEHAVIOR â†’ heap corruption */
 }
 
 /* Mistake 2: Free of stack variable */
 void free_stack(void) {
     int x = 42;
     int *p = &x;
-    free(p);  /* UNDEFINED BEHAVIOR → p was not from malloc */
+    free(p);  /* UNDEFINED BEHAVIOR â†’ p was not from malloc */
 }
 
 /* Mistake 3: Free of pointer arithmetic offset */
 void free_offset(void) {
     int *arr = malloc(10 * sizeof(int));
-    free(arr + 5);  /* UNDEFINED BEHAVIOR → not the address malloc returned */
+    free(arr + 5);  /* UNDEFINED BEHAVIOR â†’ not the address malloc returned */
 }
 
 /* Mistake 4: Use after free */
@@ -1528,19 +1528,19 @@ void use_after_free(void) {
     int *p = malloc(sizeof(int));
     *p = 42;
     free(p);
-    *p = 100;  /* UNDEFINED BEHAVIOR → writing to freed memory */
+    *p = 100;  /* UNDEFINED BEHAVIOR â†’ writing to freed memory */
 }
 
 /* Mistake 5: Forgetting to free (memory leak) */
 void memory_leak(void) {
     int *p = malloc(1000);
-    /* no free → 1000 bytes leaked every call */
+    /* no free â†’ 1000 bytes leaked every call */
 }
 ```
 
 ---
 
-## 11.8 malloc vs calloc vs realloc → Full Comparison
+## 11.8 malloc vs calloc vs realloc â†’ Full Comparison
 
 ### Comparison Table
 
@@ -1550,27 +1550,27 @@ void memory_leak(void) {
 | **Purpose** | Allocate raw memory | Allocate + zero-initialize | Resize existing allocation |
 | **Arguments** | `(size_t size)` | `(size_t count, size_t elem_size)` | `(void *ptr, size_t new_size)` |
 | **Initialization** | Uninitialized (garbage) | Zero-filled | Preserves old data (up to min(old,new)) |
-| **Overflow check** | No → must check manually | Yes → checks `count * elem_size` overflow | No → must check manually |
+| **Overflow check** | No â†’ must check manually | Yes â†’ checks `count * elem_size` overflow | No â†’ must check manually |
 | **NULL on failure** | Yes | Yes | Yes (original block preserved) |
 | **Speed** | Fastest (allocation only) | Slower (allocation + zeroing) | Depends (may copy data) |
 | **Use case** | General allocation | Arrays, bitmaps, structs with default-zero | Dynamic arrays, buffer resizing |
 | **Can fail** | Out of memory | Out of memory | Out of memory (original kept) |
-| **ptr can be NULL** | N/A (N receives size) | N/A | Yes → acts like malloc(new_size) |
+| **ptr can be NULL** | N/A (N receives size) | N/A | Yes â†’ acts like malloc(new_size) |
 | **new_size = 0** | Implementation-defined | N/A | Implementation-defined (often free) |
-| **Header overhead** | Per-allocation (8â€“16 bytes) | Same as malloc | Same + possible copy cost |
+| **Header overhead** | Per-allocation (8Ã¢â‚¬â€œ16 bytes) | Same as malloc | Same + possible copy cost |
 
 ### Decision Flowchart
 
 
 ```
 Need dynamic memory?
-├── Need zero-initialization?
-│   ├── Yes → calloc
-│   └── No  → malloc
-├── Resizing existing block?
-│   └── Yes → realloc
-└── Size unknown at compile time?
-    └── Yes → malloc or calloc
+â”œâ”€â”€ Need zero-initialization?
+â”‚   â”œâ”€â”€ Yes â†’ calloc
+â”‚   â””â”€â”€ No  â†’ malloc
+â”œâ”€â”€ Resizing existing block?
+â”‚   â””â”€â”€ Yes â†’ realloc
+â””â”€â”€ Size unknown at compile time?
+    â””â”€â”€ Yes â†’ malloc or calloc
 ```
 
 ### Code: Three Functions Side by Side
@@ -1584,16 +1584,16 @@ Need dynamic memory?
 int main(void) {
     int n = 5;
 
-    /* malloc → uninitialized */
+    /* malloc â†’ uninitialized */
     int *a = (int*)malloc(n * sizeof(int));
     if (a == NULL) return 1;
     for (int i = 0; i < n; i++) a[i] = (i + 1) * 10;
 
-    /* calloc → zero-initialized */
+    /* calloc â†’ zero-initialized */
     int *b = (int*)calloc(n, sizeof(int));
     if (b == NULL) { free(a); return 1; }
 
-    /* realloc → resize existing (grow) */
+    /* realloc â†’ resize existing (grow) */
     int *tmp = (int*)realloc(a, 10 * sizeof(int));
     if (tmp == NULL) {
         free(a);
@@ -1653,7 +1653,7 @@ Note: `a[5]` through `a[9]` are 0 because `realloc` zeroes the **new** bytes (no
 
 | Function | Pros | Cons |
 |----------|------|------|
-| **malloc** | Fast, simple, ubiquitous | Uninitialized → must manually init; no overflow check |
+| **malloc** | Fast, simple, ubiquitous | Uninitialized â†’ must manually init; no overflow check |
 | **calloc** | Zero-initialized, overflow check | Slower due to zeroing; overkill if overwriting all bytes |
 | **realloc** | Preserves data, can grow/shrink | Old pointer invalid on move; must use temp pointer pattern |
 
@@ -1671,12 +1671,12 @@ In programming terms: you allocate memory, lose all references to it, and can ne
 ### What Is a Memory Leak?
 
 
-A memory leak occurs when dynamically allocated memory is no longer reachable (no pointer points to it), so it can never be freed. The memory remains allocated for the program's lifetime → it is "leaked."
+A memory leak occurs when dynamically allocated memory is no longer reachable (no pointer points to it), so it can never be freed. The memory remains allocated for the program's lifetime â†’ it is "leaked."
 
 ```c
 void leak_example(void) {
     int *p = malloc(100 * sizeof(int));
-    /* p goes out of scope → no way to free this memory */
+    /* p goes out of scope â†’ no way to free this memory */
     /* 400 bytes leaked */
 }
 ```
@@ -1705,7 +1705,7 @@ void process_data(int size) {
     int *buf = (int*)malloc(size * sizeof(int));
     if (buf == NULL) return;
     /* Do some work with buf */
-    /* FORGET to free(buf) → 4000 bytes leaked per call */
+    /* FORGET to free(buf) â†’ 4000 bytes leaked per call */
 }
 
 int main(void) {
@@ -1713,7 +1713,7 @@ int main(void) {
         process_data(1000);
     }
     /* After 1000 calls: 1000 * 4000 = 4,000,000 bytes leaked */
-    printf("Done → but memory is leaking\n");
+    printf("Done â†’ but memory is leaking\n");
     return 0;
 }
 ```
@@ -1725,7 +1725,7 @@ int main(void) {
 #include <stdio.h>
 #include <stdlib.h>
 
-/* Simple leak tracker → counts alive allocations */
+/* Simple leak tracker â†’ counts alive allocations */
 static int alloc_count = 0;
 static size_t alloc_bytes = 0;
 
@@ -1786,18 +1786,18 @@ No leaks detected
 | **Performance degradation** | OS starts swapping to disk as RAM runs low |
 | **OOM (Out of Memory) kill** | Linux OOM killer terminates the process |
 | **Cascading failures** | Other processes cannot allocate memory |
-| **Denial of Service** | Long-running server exhausts memory → all clients affected |
+| **Denial of Service** | Long-running server exhausts memory â†’ all clients affected |
 
 ### How to Prevent Memory Leaks
 
 
-1. **Match every malloc with a free** → create a mental pair.
-2. **Use RAII-like patterns** → allocate in constructor, free in destructor (in C++).
-3. **Initialize pointers to NULL** → only free if non-NULL.
-4. **Use Valgrind** → test regularly for leaks.
-5. **Free in reverse order of allocation** → reduces fragmentation.
-6. **Set pointers to NULL after free** → prevents double-free and use-after-free.
-7. **Use tools** → `-fsanitize=address` for Clang/GCC.
+1. **Match every malloc with a free** â†’ create a mental pair.
+2. **Use RAII-like patterns** â†’ allocate in constructor, free in destructor (in C++).
+3. **Initialize pointers to NULL** â†’ only free if non-NULL.
+4. **Use Valgrind** â†’ test regularly for leaks.
+5. **Free in reverse order of allocation** â†’ reduces fragmentation.
+6. **Set pointers to NULL after free** â†’ prevents double-free and use-after-free.
+7. **Use tools** â†’ `-fsanitize=address` for Clang/GCC.
 
 ### Detecting Leaks with Address Sanitizer
 
@@ -1818,7 +1818,7 @@ AddressSanitizer (ASan) reports leaks at program exit with stack traces for unfr
 
 You return a book to the library (free). But you still have the checkout slip that says "Book at shelf A12." If you go to shelf A12, the book may be gone. Another patron may have borrowed it. If you write your name in that spot, you are corrupting someone else's book.
 
-The checkout slip is a **dangling pointer** → a pointer that holds an address to memory that has been freed.
+The checkout slip is a **dangling pointer** â†’ a pointer that holds an address to memory that has been freed.
 
 ### What Is a Dangling Pointer?
 
@@ -1837,13 +1837,13 @@ void dangling_free(void) {
     int *p = (int*)malloc(sizeof(int));
     *p = 42;
     free(p);
-    *p = 100;  /* Dangling pointer → UB */
+    *p = 100;  /* Dangling pointer â†’ UB */
 }
 
 /* Type 2: Return address of local variable */
 int *dangling_return(void) {
     int x = 42;
-    return &x;  /* Dangling → x is on stack, gone after return */
+    return &x;  /* Dangling â†’ x is on stack, gone after return */
 }
 
 /* Type 3: Pointer to deallocated block (via realloc move) */
@@ -1852,13 +1852,13 @@ void dangling_realloc(void) {
     int *old = arr;
     arr = (int*)realloc(arr, 100 * sizeof(int));
     /* old may now be a dangling pointer if realloc moved the block */
-    old[0] = 10;  /* Potential UB → old may point to freed memory */
+    old[0] = 10;  /* Potential UB â†’ old may point to freed memory */
 }
 
 int main(void) {
     /* Test type 2 */
     int *d = dangling_return();
-    printf("%d\n", *d);  /* Undefined behavior → may print 42, may crash */
+    printf("%d\n", *d);  /* Undefined behavior â†’ may print 42, may crash */
 
     return 0;
 }
@@ -1869,11 +1869,11 @@ int main(void) {
 
 | Type | How Created | Danger Level |
 |------|-------------|--------------|
-| **Free-and-use** | `free(p); *p = x;` | Very high → immediate corruption |
-| **Stack-return** | Return `&local` from function | High → stack reused by next call |
-| **Realloc-move** | Old pointer after realloc moved | Medium → depends on allocator |
-| **Scope-escape** | Pointer to block that went out of scope | Medium → similar to stack return |
-| **Double-free** | `free(p); free(p);` | Very high → heap corruption |
+| **Free-and-use** | `free(p); *p = x;` | Very high â†’ immediate corruption |
+| **Stack-return** | Return `&local` from function | High â†’ stack reused by next call |
+| **Realloc-move** | Old pointer after realloc moved | Medium â†’ depends on allocator |
+| **Scope-escape** | Pointer to block that went out of scope | Medium â†’ similar to stack return |
+| **Double-free** | `free(p); free(p);` | Very high â†’ heap corruption |
 
 ### Prevention Techniques
 
@@ -1887,14 +1887,14 @@ void safe_free(void) {
     int *p = (int*)malloc(sizeof(int));
     *p = 42;
     free(p);
-    p = NULL;  /* Now safe → dereferencing NULL crashes immediately instead of corrupting silently */
-    /* if (p) *p = 99; → never reached */
+    p = NULL;  /* Now safe â†’ dereferencing NULL crashes immediately instead of corrupting silently */
+    /* if (p) *p = 99; â†’ never reached */
 }
 
 /* Technique 2: Use static for returned local (not thread-safe!) */
 int *safe_return_static(void) {
     static int x = 42;
-    return &x;  /* Safe → static lives forever */
+    return &x;  /* Safe â†’ static lives forever */
 }
 
 /* Technique 3: Pass pointer to pointer for allocation */
@@ -1929,8 +1929,8 @@ int main(void) {
 | 1 | `int *p = malloc(4)` | Heap: [BLOCK at 0x1000: ??] | p = 0x1000 (valid) |
 | 2 | `*p = 42` | Heap: [BLOCK at 0x1000: 42] | p = 0x1000 |
 | 3 | `free(p)` | Heap: [FREE at 0x1000] | p = 0x1000 **(DANGLING)** |
-| 4 | `*p = 100` | Heap: some other allocation may now occupy 0x1000 | **UB → data corruption or crash** |
-| 5 | `p = NULL` | → | p = NULL (safe) |
+| 4 | `*p = 100` | Heap: some other allocation may now occupy 0x1000 | **UB â†’ data corruption or crash** |
+| 5 | `p = NULL` | â†’ | p = NULL (safe) |
 
 ### Complexity
 
@@ -1938,19 +1938,19 @@ int main(void) {
 | Operation | Time | Space |
 |-----------|------|-------|
 | NULL-after-free | O(1) | O(1) |
-| Dangling pointer detection (Valgrind) | Runtime slowdown 10â€“20x | Increased memory usage |
-| Use-after-free exploit | → | Can lead to arbitrary code execution |
+| Dangling pointer detection (Valgrind) | Runtime slowdown 10Ã¢â‚¬â€œ20x | Increased memory usage |
+| Use-after-free exploit | â†’ | Can lead to arbitrary code execution |
 
 ### Advantages and Disadvantages
 
 
 | Technique | Pros | Cons |
 |-----------|------|------|
-| NULL after free | Simple, prevents access | Only one level → double-pointer indirection still dangerous |
+| NULL after free | Simple, prevents access | Only one level â†’ double-pointer indirection still dangerous |
 | Static analysis | Finds many cases at compile time | Limited to obvious patterns |
-| Valgrind/ASan | Catches all use-after-free at runtime | Slows program 2â€“20x |
-| Smart pointers (C++) | Automatic lifetime management | Language feature → not available in C |
-| Pool/arena allocator | Freed all at once → no individual dangling | Requires architectural change |
+| Valgrind/ASan | Catches all use-after-free at runtime | Slows program 2Ã¢â‚¬â€œ20x |
+| Smart pointers (C++) | Automatic lifetime management | Language feature â†’ not available in C |
+| Pool/arena allocator | Freed all at once â†’ no individual dangling | Requires architectural change |
 
 ### Edge Cases
 
@@ -1958,10 +1958,10 @@ int main(void) {
 | Scenario | Behavior | Mitigation |
 |----------|----------|------------|
 | Double free via two pointers to same block | p and q both point to same malloc; free(p); free(q) double-frees | Only free once; NULL both after free |
-| Use-after-free of small block | Allocator reuses the memory immediately → subtle corruption | Use Valgrind in debug builds |
-| Use-after-free of large block | OS unmaps the page → immediate segfault | Same → always NULL after free |
-| Pointer to middle of allocated block | `free(p + offset)` → UB (not the exact malloc address) | Only free the exact returned address |
-| Use-after-free across function calls | Free in one function, use in another → hard to spot | Track ownership explicitly |
+| Use-after-free of small block | Allocator reuses the memory immediately â†’ subtle corruption | Use Valgrind in debug builds |
+| Use-after-free of large block | OS unmaps the page â†’ immediate segfault | Same â†’ always NULL after free |
+| Pointer to middle of allocated block | `free(p + offset)` â†’ UB (not the exact malloc address) | Only free the exact returned address |
+| Use-after-free across function calls | Free in one function, use in another â†’ hard to spot | Track ownership explicitly |
 
 ---
 
@@ -1970,7 +1970,7 @@ int main(void) {
 ### Real-World Analogy: Writing in the Wrong Ledger
 
 
-An accountant has 10 ledgers in a cabinet. You ask for ledger 3. The accountant opens ledger 3, and you write in it. But if you write past page 100 (the ledger only has 100 pages), you start writing in ledger 4. The accountant does not check your page number → that is your responsibility.
+An accountant has 10 ledgers in a cabinet. You ask for ledger 3. The accountant opens ledger 3, and you write in it. But if you write past page 100 (the ledger only has 100 pages), you start writing in ledger 4. The accountant does not check your page number â†’ that is your responsibility.
 
 Memory corruption is when you write data past the allocated boundary and overwrite adjacent memory (metadata, other allocations, or even code).
 
@@ -1981,7 +1981,7 @@ Memory corruption is when you write data past the allocated boundary and overwri
 |------|-------------|---------|
 | **Buffer overflow** | Writing past allocated buffer | `arr[10] = 0` when `arr` has 5 elements |
 | **Buffer underflow** | Writing before allocated buffer | `arr[-1] = 0` |
-| **Heap overflow** | Writing past heap block → corrupts metadata or adjacent block | `malloc(8); p[8] = 0;` |
+| **Heap overflow** | Writing past heap block â†’ corrupts metadata or adjacent block | `malloc(8); p[8] = 0;` |
 | **Stack overflow** | Exhausting stack space | Infinite recursion |
 | **Write-after-free** | Writing to freed memory | `free(p); *p = 42;` |
 | **Double free** | Freeing same block twice | `free(p); free(p);` |
@@ -2003,11 +2003,11 @@ int main(void) {
     for (int i = 0; i < 5; i++) arr[i] = i * 10;
 
     /* OFF-BY-ONE: write past end */
-    arr[5] = 999;  /* Undefined behavior → corrupts heap metadata or adjacent allocation */
+    arr[5] = 999;  /* Undefined behavior â†’ corrupts heap metadata or adjacent allocation */
 
     printf("arr[5] = %d\n", arr[5]);  /* May print 999, may crash */
 
-    free(arr);  /* May crash here → heap metadata was corrupted */
+    free(arr);  /* May crash here â†’ heap metadata was corrupted */
     return 0;
 }
 ```
@@ -2015,12 +2015,12 @@ int main(void) {
 ### Heap Metadata Corruption
 
 
-Each malloc'd block has a metadata header (typically 8â€“16 bytes) just before the returned pointer. Overwriting this header corrupts the heap:
+Each malloc'd block has a metadata header (typically 8Ã¢â‚¬â€œ16 bytes) just before the returned pointer. Overwriting this header corrupts the heap:
 
 ```
 Memory before free:
   [HEADER: size=32, flags=in_use, prev_size, next] [USER DATA: 32 bytes]
-                                                          ▲
+                                                          â–²
                                                       returned pointer
 
 If user writes past 32 bytes:
@@ -2029,7 +2029,7 @@ If user writes past 32 bytes:
 free() then reads corrupted metadata:
   - May crash (segfault)
   - May corrupt freelist
-  - May be exploitable (heap exploitation → e.g., unsafe unlink)
+  - May be exploitable (heap exploitation â†’ e.g., unsafe unlink)
 ```
 
 ### Double Free Exploitation
@@ -2039,26 +2039,26 @@ free() then reads corrupted metadata:
 #include <stdio.h>
 #include <stdlib.h>
 
-/* DANGEROUS → demonstrates why double free is a security risk */
+/* DANGEROUS â†’ demonstrates why double free is a security risk */
 int main(void) {
     int *p = (int*)malloc(8 * sizeof(int));
     if (p == NULL) return 1;
 
     free(p);   /* Block goes to freelist */
-    free(p);   /* DOUBLE FREE → block is already free */
+    free(p);   /* DOUBLE FREE â†’ block is already free */
     /* Allocator may add the same block twice to the freelist */
-    /* Future malloc may return the same block twice → aliasing pointers! */
+    /* Future malloc may return the same block twice â†’ aliasing pointers! */
 
     int *a = (int*)malloc(8 * sizeof(int));  /* May get same block as p */
     int *b = (int*)malloc(8 * sizeof(int));  /* May also get same block! */
 
     *a = 42;
-    *b = 100;  /* Overwrites *a → two "different" pointers to same memory */
+    *b = 100;  /* Overwrites *a â†’ two "different" pointers to same memory */
 
     printf("a=%d b=%d\n", *a, *b);
 
     free(a);
-    free(b);   /* DOUBLE FREE again → crash */
+    free(b);   /* DOUBLE FREE again â†’ crash */
 
     return 0;
 }
@@ -2078,7 +2078,7 @@ int main(void) {
     if (p == NULL) return 1;
 
     /* Corrupt the metadata (overwrite the size field) */
-    *(int*)(p - 8) = 0xDEADBEEF;  /* Undefined behavior → corrupting allocator's header */
+    *(int*)(p - 8) = 0xDEADBEEF;  /* Undefined behavior â†’ corrupting allocator's header */
 
     free(p);  /* May abort: "free(): corrupted unsorted chunk" or similar */
     return 0;
@@ -2096,12 +2096,12 @@ Aborted (core dumped)
 
 | Method | Description | Effectiveness |
 |--------|-------------|---------------|
-| **Bounds checking** | Always verify indices before accessing arrays | High → prevents overflow at source |
-| **Address Sanitizer** | `-fsanitize=address` → detects overflow, use-after-free | Very high → catches ~95% of bugs |
-| **Valgrind memcheck** | Runs binary on synthetic CPU, checks every access | Very high → 2â€“20x slowdown |
-| **Canary values** | Place known values at buffer boundaries; check for corruption | Medium → detects overflow but not at runtime by default |
-| **Static analysis** | `clang --analyze`, `cppcheck` | Medium → finds obvious patterns |
-| **Safe allocators** | ElectricFence, Guard pages around allocations | High → immediate segfault on overflow |
+| **Bounds checking** | Always verify indices before accessing arrays | High â†’ prevents overflow at source |
+| **Address Sanitizer** | `-fsanitize=address` â†’ detects overflow, use-after-free | Very high â†’ catches ~95% of bugs |
+| **Valgrind memcheck** | Runs binary on synthetic CPU, checks every access | Very high â†’ 2Ã¢â‚¬â€œ20x slowdown |
+| **Canary values** | Place known values at buffer boundaries; check for corruption | Medium â†’ detects overflow but not at runtime by default |
+| **Static analysis** | `clang --analyze`, `cppcheck` | Medium â†’ finds obvious patterns |
+| **Safe allocators** | ElectricFence, Guard pages around allocations | High â†’ immediate segfault on overflow |
 
 ### Using Address Sanitizer
 
@@ -2168,7 +2168,7 @@ void da_init(DynArray *da) {
     da->capacity = 0;
 }
 
-/* Append element → doubles capacity when full */
+/* Append element â†’ doubles capacity when full */
 int da_append(DynArray *da, int value) {
     if (da->size >= da->capacity) {
         /* Grow: 0 -> 4, then double each time */
@@ -2213,7 +2213,7 @@ int main(void) {
     DynArray arr;
     da_init(&arr);
 
-    /* Append 20 elements → triggers several reallocs */
+    /* Append 20 elements â†’ triggers several reallocs */
     for (int i = 0; i < 20; i++) {
         da_append(&arr, i * 10);
     }
@@ -2246,7 +2246,7 @@ After set: arr[5] = 999
 
 | Step | Capacity | Size | Data | Realloc? |
 |------|----------|------|------|----------|
-| 0 | 0 | 0 | NULL | → |
+| 0 | 0 | 0 | NULL | â†’ |
 | 1 | 4 | 0 | malloc(16) | Yes (init) |
 | 2 | 4 | 1 | [10] | No |
 | 3 | 4 | 2 | [10,20] | No |
@@ -2276,10 +2276,10 @@ After set: arr[5] = 999
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
-| **Memory** | Contiguous → cache-friendly | Reallocation copies all elements (O(n) worst case) |
-| **Access** | O(1) random access → fastest data structure for lookup | Insert/delete at arbitrary positions is O(n) |
+| **Memory** | Contiguous â†’ cache-friendly | Reallocation copies all elements (O(n) worst case) |
+| **Access** | O(1) random access â†’ fastest data structure for lookup | Insert/delete at arbitrary positions is O(n) |
 | **Growth** | Doubling achieves O(1) amortized append | May waste up to 50% of capacity (if size = capacity/2 + 1) |
-| **Simplicity** | Simple API: init, append, get, set, free | No built-in bounds checking → programmer must verify indices |
+| **Simplicity** | Simple API: init, append, get, set, free | No built-in bounds checking â†’ programmer must verify indices |
 ---
 
 ## 11.13 Detecting Memory Leaks with Valgrind
@@ -2321,7 +2321,7 @@ valgrind --leak-check=full ./program
 
 
 ```c
-/* leaky.c → intentionally leaks memory */
+/* leaky.c â†’ intentionally leaks memory */
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -2378,7 +2378,7 @@ valgrind --leak-check=full --show-leak-kinds=all ./leaky
 
 
 ```c
-/* clean.c → no leaks */
+/* clean.c â†’ no leaks */
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -2412,7 +2412,7 @@ int main(void) {
 
 
 ```c
-/* uaf.c → use-after-free */
+/* uaf.c â†’ use-after-free */
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -2478,9 +2478,9 @@ valgrind ./uaf
 
 | Leak Type | Meaning | Action |
 |-----------|---------|--------|
-| **Definitely lost** | No pointer to the block exists → cannot be freed | Must fix → add missing free |
+| **Definitely lost** | No pointer to the block exists â†’ cannot be freed | Must fix â†’ add missing free |
 | **Indirectly lost** | Pointers to this block exist only inside other lost blocks | Fix the definitely lost that owns these |
-| **Possibly lost** | Pointer may point to interior of the block | Investigate → often a real bug |
+| **Possibly lost** | Pointer may point to interior of the block | Investigate â†’ often a real bug |
 | **Still reachable** | Pointer still exists but was not freed on exit | Usually harmless (global), but fix for cleanliness |
 | **Suppressed** | Suppressed by user's suppression file | Verify suppression is appropriate |
 
@@ -2508,16 +2508,16 @@ valgrind --vgdb=yes --vgdb-error=0 ./program
 ### The Golden Rules of Dynamic Memory
 
 
-1. **Always check return values** → `malloc`, `calloc`, and `realloc` can fail.
-2. **Every malloc has a matching free** → create mental pairs.
-3. **NULL after free** → prevents use-after-free and double-free.
-4. **Use temp pointer for realloc** → never assign directly.
-5. **Prefer calloc for arrays** → overflow check + zero-initialization.
-6. **Document ownership** → who allocates, who frees? Write it in comments.
-7. **Use sizeof(*ptr) not sizeof(type)** → type-safe; survives code changes.
-8. **Free in allocation scope** → minimize lifetime.
-9. **Use tools** → Valgrind, AddressSanitizer, static analysis.
-10. **Avoid void* arithmetic** → not allowed in standard C (GCC extension allows it).
+1. **Always check return values** â†’ `malloc`, `calloc`, and `realloc` can fail.
+2. **Every malloc has a matching free** â†’ create mental pairs.
+3. **NULL after free** â†’ prevents use-after-free and double-free.
+4. **Use temp pointer for realloc** â†’ never assign directly.
+5. **Prefer calloc for arrays** â†’ overflow check + zero-initialization.
+6. **Document ownership** â†’ who allocates, who frees? Write it in comments.
+7. **Use sizeof(*ptr) not sizeof(type)** â†’ type-safe; survives code changes.
+8. **Free in allocation scope** â†’ minimize lifetime.
+9. **Use tools** â†’ Valgrind, AddressSanitizer, static analysis.
+10. **Avoid void* arithmetic** â†’ not allowed in standard C (GCC extension allows it).
 
 ### Best Practice Examples
 
@@ -2537,7 +2537,7 @@ Record *create_record(int id, const char *name) {
     r->id = id;
     snprintf(r->name, sizeof(r->name), "%s", name);
     return r;
-    /* Caller owns the memory → must free */
+    /* Caller owns the memory â†’ must free */
 }
 
 /* GOOD: Clear ownership documentation */
@@ -2572,7 +2572,7 @@ char *read_file(const char *filename, size_t *out_len) {
     /* Caller MUST free(buf) */
 }
 
-/* GOOD: Cleanup with goto → centralizes error handling */
+/* GOOD: Cleanup with goto â†’ centralizes error handling */
 int process_file(const char *filename) {
     char *buf = NULL;
     FILE *f = NULL;
@@ -2641,14 +2641,14 @@ int main(void) {
 |---------|----------|----------|-----------|--------|
 | **Header** | `<stdlib.h>` | `<stdlib.h>` | `<stdlib.h>` | `<stdlib.h>` |
 | **Signature** | `void *malloc(size_t)` | `void *calloc(size_t,size_t)` | `void *realloc(void*,size_t)` | `void free(void*)` |
-| **Initializes?** | No | Yes (zero) | Preserves old data | → |
+| **Initializes?** | No | Yes (zero) | Preserves old data | â†’ |
 | **Can fail?** | Yes (returns NULL) | Yes (returns NULL) | Yes (returns NULL, old kept) | Always succeeds |
-| **Overflow check?** | No | Yes (product) | No | → |
+| **Overflow check?** | No | Yes (product) | No | â†’ |
 | **NULL ptr?** | N/A | N/A | Acts like malloc | Safe (no-op) |
-| **Zero size?** | Impl-defined | Impl-defined | Impl-defined (often free) | → |
+| **Zero size?** | Impl-defined | Impl-defined | Impl-defined (often free) | â†’ |
 | **Common use** | General allocation | Arrays, structs | Resize buffers | Cleanup |
 | **Speed** | Fastest | Slower (zeroing) | Depends (may copy) | Fast (O(1)) |
-| **Memory overhead** | Header per block | Header per block | Header + copy buffer | → |
+| **Memory overhead** | Header per block | Header per block | Header + copy buffer | â†’ |
 
 ### 11.15.2 Static vs Automatic vs Dynamic Allocation
 
@@ -2666,14 +2666,14 @@ int main(void) {
 | **Speed** | Fastest | Very fast | Slowest |
 | **Safety** | Safest | Safe | Error-prone |
 
-### 11.15.3 Stack vs Heap → Detailed
+### 11.15.3 Stack vs Heap â†’ Detailed
 
 
 | Aspect | Stack | Heap |
 |--------|-------|------|
-| **Typical size** | 1â€“8 MB per thread | GB (virtual address space) |
-| **Allocation time** | ~1â€“3 ns | ~50â€“300 ns (small block) |
-| **Deallocation time** | ~0 ns (SP adjust) | ~20â€“100 ns |
+| **Typical size** | 1Ã¢â‚¬â€œ8 MB per thread | GB (virtual address space) |
+| **Allocation time** | ~1Ã¢â‚¬â€œ3 ns | ~50Ã¢â‚¬â€œ300 ns (small block) |
+| **Deallocation time** | ~0 ns (SP adjust) | ~20Ã¢â‚¬â€œ100 ns |
 | **Lifetime** | Function scope | Until explicit free |
 | **Management** | Compiler | Programmer |
 | **Data structure** | LIFO (stack) | Arbitrary (freelist) |
@@ -2710,7 +2710,7 @@ int main(void) {
 ### Q2: Why must you use a temporary pointer with `realloc`?
 
 
-**Answer:** If `realloc` fails (returns NULL), the original memory block is still valid and unmodified. If you assign directly → `ptr = realloc(ptr, new_size)` → and realloc fails, `ptr` becomes NULL and you lose the reference to the original block, causing a memory leak. Always use: `int *temp = realloc(ptr, new_size); if (temp) ptr = temp; else handle_error();`.
+**Answer:** If `realloc` fails (returns NULL), the original memory block is still valid and unmodified. If you assign directly â†’ `ptr = realloc(ptr, new_size)` â†’ and realloc fails, `ptr` becomes NULL and you lose the reference to the original block, causing a memory leak. Always use: `int *temp = realloc(ptr, new_size); if (temp) ptr = temp; else handle_error();`.
 
 ### Q3: What causes a memory leak? How do you prevent one?
 
@@ -2725,22 +2725,22 @@ int main(void) {
 ### Q5: How does `realloc` handle failure?
 
 
-**Answer:** On failure, `realloc` returns NULL and **preserves the original block unchanged**. This is why using a temporary pointer is critical → the original pointer remains valid and can be freed or retried with a smaller size. Never do `ptr = realloc(ptr, n)` → that loses the original on failure.
+**Answer:** On failure, `realloc` returns NULL and **preserves the original block unchanged**. This is why using a temporary pointer is critical â†’ the original pointer remains valid and can be freed or retried with a smaller size. Never do `ptr = realloc(ptr, n)` â†’ that loses the original on failure.
 
 ### Q6: Can you do pointer arithmetic on `void*`?
 
 
-**Answer:** In standard C, no → pointer arithmetic requires the size of the pointed-to type, and `void` has no size. GCC and some compilers allow it as an extension (treating `void*` as byte-sized). For portable code, cast to `char*` before arithmetic: `(char*)ptr + offset`.
+**Answer:** In standard C, no â†’ pointer arithmetic requires the size of the pointed-to type, and `void` has no size. GCC and some compilers allow it as an extension (treating `void*` as byte-sized). For portable code, cast to `char*` before arithmetic: `(char*)ptr + offset`.
 
 ### Q7: What is the memory layout of a C program?
 
 
-**Answer:** From low to high address: **Text** (read-only machine code), **Data** (initialized global/static variables), **BSS** (uninitialized global/static → zero-filled at load), **Heap** (grows upward → dynamic allocations), **Stack** (grows downward → local variables, function frames). The heap and stack grow toward each other; if they collide, the program runs out of memory.
+**Answer:** From low to high address: **Text** (read-only machine code), **Data** (initialized global/static variables), **BSS** (uninitialized global/static â†’ zero-filled at load), **Heap** (grows upward â†’ dynamic allocations), **Stack** (grows downward â†’ local variables, function frames). The heap and stack grow toward each other; if they collide, the program runs out of memory.
 
 ### Q8: What is the difference between stack and heap allocation?
 
 
-**Answer:** Stack allocation is fast (single instruction to adjust stack pointer), automatic (compiler manages), and limited in size (~1â€“8 MB). Heap allocation is slower (freelist search, potential syscall), manual (programmer must free), and can be very large (up to virtual address limits). Stack variables are LIFO and have function scope; heap variables have arbitrary lifetime.
+**Answer:** Stack allocation is fast (single instruction to adjust stack pointer), automatic (compiler manages), and limited in size (~1Ã¢â‚¬â€œ8 MB). Heap allocation is slower (freelist search, potential syscall), manual (programmer must free), and can be very large (up to virtual address limits). Stack variables are LIFO and have function scope; heap variables have arbitrary lifetime.
 
 ### Q9: What happens when `free` is called with a pointer that was not returned by `malloc`?
 
@@ -2750,7 +2750,7 @@ int main(void) {
 ### Q10: How do you detect memory leaks at runtime?
 
 
-**Answer:** Use **Valgrind** (runs on synthetic CPU, intercepts all alloc/free → 2â€“20x slowdown) or **AddressSanitizer** (compiler instrumentation via `-fsanitize=address` → ~2x slowdown, ~2x memory). Valgrind catches leaks, use-after-free, and uninitialized reads. ASan catches buffer overflows, use-after-free, and leaks. For production, you can implement a simple wrapper that tracks outstanding allocations (see 11.9.3).
+**Answer:** Use **Valgrind** (runs on synthetic CPU, intercepts all alloc/free â†’ 2Ã¢â‚¬â€œ20x slowdown) or **AddressSanitizer** (compiler instrumentation via `-fsanitize=address` â†’ ~2x slowdown, ~2x memory). Valgrind catches leaks, use-after-free, and uninitialized reads. ASan catches buffer overflows, use-after-free, and leaks. For production, you can implement a simple wrapper that tracks outstanding allocations (see 11.9.3).
 
 ### Q11: What is memory fragmentation? Why is it bad?
 
@@ -2765,12 +2765,12 @@ int main(void) {
 ### Q13: What is the difference between `free` and `delete`?
 
 
-**Answer:** `free` is a C library function that deallocates memory allocated by `malloc`/`calloc`/`realloc`. `delete` is a C++ operator that calls the destructor of an object and then deallocates memory allocated by `new`. In C++, you must `delete` what was `new`'d and `free` what was `malloc`'d → mixing them is undefined behavior.
+**Answer:** `free` is a C library function that deallocates memory allocated by `malloc`/`calloc`/`realloc`. `delete` is a C++ operator that calls the destructor of an object and then deallocates memory allocated by `new`. In C++, you must `delete` what was `new`'d and `free` what was `malloc`'d â†’ mixing them is undefined behavior.
 
 ### Q14: What does `sizeof(*ptr)` vs `sizeof(type)` give you when `ptr` is a `NULL` pointer?
 
 
-**Answer:** `sizeof(*ptr)` evaluates the size of the pointed-to type at compile time without dereferencing the pointer. Even if `ptr` is NULL, `sizeof(*ptr)` is safe and returns the correct size. This is the recommended pattern for malloc: `ptr = malloc(sizeof(*ptr))` → it survives changes to the type of `ptr`.
+**Answer:** `sizeof(*ptr)` evaluates the size of the pointed-to type at compile time without dereferencing the pointer. Even if `ptr` is NULL, `sizeof(*ptr)` is safe and returns the correct size. This is the recommended pattern for malloc: `ptr = malloc(sizeof(*ptr))` â†’ it survives changes to the type of `ptr`.
 
 ### Q15: Implement a safe `malloc` wrapper with error reporting.
 
@@ -2807,12 +2807,12 @@ int main(void) {
 ### Q17: What is the difference between `int *p = malloc(10 * sizeof(int))` and `int p[10]`?
 
 
-**Answer:** `int p[10]` allocates 10 ints on the **stack** → memory is freed automatically when the function returns. `int *p = malloc(10 * sizeof(int))` allocates 10 ints on the **heap** → memory persists until `free` is called. The array version (`p[10]`) cannot be resized and cannot be returned from the function (it is automatic). The malloc version can be resized with `realloc` and can be safely returned.
+**Answer:** `int p[10]` allocates 10 ints on the **stack** â†’ memory is freed automatically when the function returns. `int *p = malloc(10 * sizeof(int))` allocates 10 ints on the **heap** â†’ memory persists until `free` is called. The array version (`p[10]`) cannot be resized and cannot be returned from the function (it is automatic). The malloc version can be resized with `realloc` and can be safely returned.
 
 ### Q18: What is the "N+1" problem with dynamic string allocation?
 
 
-**Answer:** When allocating memory for a string, you must allocate `strlen(s) + 1` bytes → the +1 is for the null terminator. Forgetting the +1 is the most common string memory bug and leads to buffer overflow when the terminator is written past the allocated region.
+**Answer:** When allocating memory for a string, you must allocate `strlen(s) + 1` bytes â†’ the +1 is for the null terminator. Forgetting the +1 is the most common string memory bug and leads to buffer overflow when the terminator is written past the allocated region.
 
 ```c
 char *s = "hello";
@@ -2828,7 +2828,7 @@ strcpy(copy, s);  /* safe */
 ### Q20: What is a pool (arena) allocator and why use one?
 
 
-**Answer:** A pool allocator pre-allocates a large block of memory (an arena) and serves smaller allocations by incrementing a pointer within that block. It is extremely fast (O(1) allocation, no freelist search) and eliminates fragmentation for same-sized objects. The downside: individual objects cannot be freed independently → the entire pool is freed at once. Pool allocators are common in real-time systems, game engines, and embedded systems where allocation speed and predictability matter more than individual deallocation. See the challenge problem in section 11.18 for an implementation.
+**Answer:** A pool allocator pre-allocates a large block of memory (an arena) and serves smaller allocations by incrementing a pointer within that block. It is extremely fast (O(1) allocation, no freelist search) and eliminates fragmentation for same-sized objects. The downside: individual objects cannot be freed independently â†’ the entire pool is freed at once. Pool allocators are common in real-time systems, game engines, and embedded systems where allocation speed and predictability matter more than individual deallocation. See the challenge problem in section 11.18 for an implementation.
 
 ---
 
@@ -2847,9 +2847,9 @@ void kfree(const void *ptr);
 ```
 
 - `kmalloc` returns physically contiguous memory (important for DMA).
-- `GFP_KERNEL` → normal allocation (may sleep).
-- `GFP_ATOMIC` → allocation from interrupt context (never sleeps).
-- The kernel uses **slab allocators** → caches of fixed-size objects (e.g., `kmalloc-32`, `kmalloc-64`) to avoid fragmentation and speed up allocation.
+- `GFP_KERNEL` â†’ normal allocation (may sleep).
+- `GFP_ATOMIC` â†’ allocation from interrupt context (never sleeps).
+- The kernel uses **slab allocators** â†’ caches of fixed-size objects (e.g., `kmalloc-32`, `kmalloc-64`) to avoid fragmentation and speed up allocation.
 
 ### 11.17.2 Embedded `malloc` Implementations
 
@@ -2938,7 +2938,7 @@ int main(void) {
     printf("Original: \"%s\"\n", original);
     printf("Duplicate: \"%s\"\n", dup);
 
-    /* Modify the copy → original is unchanged */
+    /* Modify the copy â†’ original is unchanged */
     dup[0] = 'h';
     dup[7] = 'd';
     printf("Modified:  \"%s\"\n", dup);
@@ -3217,13 +3217,13 @@ grape -> not found
 
 1. **Static memory** is allocated at compile time, lives for the program duration, and is zero-initialized. **Automatic memory** (stack) is allocated at function entry, freed at function exit, and is not initialized. **Dynamic memory** (heap) is allocated at runtime via `malloc`/`calloc`/`realloc`, persists until `free`, and must be managed manually.
 
-2. **Memory layout** of a C program: Text (code), Data (initialized globals), BSS (uninitialized globals), Heap (dynamic → grows up), Stack (locals → grows down).
+2. **Memory layout** of a C program: Text (code), Data (initialized globals), BSS (uninitialized globals), Heap (dynamic â†’ grows up), Stack (locals â†’ grows down).
 
 3. **malloc** allocates uninitialized memory. Always check for NULL return. Use `sizeof` for portability.
 
 4. **calloc** allocates and zero-initializes. It checks for integer overflow in the size multiplication. Prefer for arrays and structs.
 
-5. **realloc** resizes an existing allocation. It may move the block. **Always use a temporary pointer** → on failure, the original block is preserved.
+5. **realloc** resizes an existing allocation. It may move the block. **Always use a temporary pointer** â†’ on failure, the original block is preserved.
 
 6. **free** returns memory to the heap. After free, the pointer is dangling. Set it to NULL. Never double-free or free non-malloc'd memory.
 
@@ -3231,7 +3231,7 @@ grape -> not found
 
 8. **Dangling pointers** point to freed memory. Set pointers to NULL after free. Never return pointers to local variables.
 
-9. **Memory corruption** (buffer overflow, use-after-free, double free) is undefined behavior → it can crash, corrupt data, or introduce security vulnerabilities. Use AddressSanitizer during development.
+9. **Memory corruption** (buffer overflow, use-after-free, double free) is undefined behavior â†’ it can crash, corrupt data, or introduce security vulnerabilities. Use AddressSanitizer during development.
 
 10. **Dynamic arrays** achieve O(1) amortized append by doubling capacity. They are the foundation of growable collections.
 
@@ -3271,7 +3271,7 @@ grape -> not found
 | Linked list node | `malloc` per node on insertion | Until `list_free` |
 | String copy | `malloc(strlen(s) + 1); strcpy(dst, s);` | Until caller frees |
 | 2D dynamic array | `int **m = malloc(r * sizeof(int*));` then each row | Until caller frees each row then the array |
-| Large buffer (10MB+) | `malloc(BIG)` → stack cannot handle | Until explicit `free` |
+| Large buffer (10MB+) | `malloc(BIG)` â†’ stack cannot handle | Until explicit `free` |
 | Hash table buckets | `calloc(n, sizeof(Entry*))` | Until `ht_free` |
 | Read file into memory | `malloc(filesize + 1)` | Until caller frees |
 | Pool allocator | Single large malloc, sub-allocated | Until `arena_destroy` |
@@ -3312,10 +3312,10 @@ grape -> not found
 
 Implement a simple arena allocator: a struct that holds a large `malloc`'d block and a current offset. Provide:
 
-- `Arena *arena_create(size_t capacity)` → allocate a new arena.
-- `void *arena_alloc(Arena *a, size_t size)` → return a pointer to `size` bytes within the arena (advances the offset; no individual free).
-- `void arena_reset(Arena *a)` → reset the offset to 0 (does not call `free`).
-- `void arena_destroy(Arena *a)` → free the entire arena block.
+- `Arena *arena_create(size_t capacity)` â†’ allocate a new arena.
+- `void *arena_alloc(Arena *a, size_t size)` â†’ return a pointer to `size` bytes within the arena (advances the offset; no individual free).
+- `void arena_reset(Arena *a)` â†’ reset the offset to 0 (does not call `free`).
+- `void arena_destroy(Arena *a)` â†’ free the entire arena block.
 
 Demonstrate that arena allocation is faster than many individual `malloc` calls by timing both approaches for allocating 100,000 small blocks.
 
@@ -3408,6 +3408,6 @@ Speedup: 211.78x
 
 ---
 
-> **Chapter 11: Dynamic Memory Allocation** → End of chapter.
+> **Chapter 11: Dynamic Memory Allocation** â†’ End of chapter.
 >
-> This chapter covered the complete depth of C dynamic memory management: static vs dynamic allocation, stack vs heap, the full memory layout, `malloc`/`calloc`/`realloc`/`free` with analogies, dry runs, complexity analysis, and edge cases. It covered memory leaks, dangling pointers, memory corruption, dynamic arrays, Valgrind detection, comparison tables, 20 interview Q&As, and real-world applications including arena allocators, linked lists, hash tables, and embedded pool allocators. The unifying theme: **every allocation must be matched with a free → the heap is not a garbage collector.**
+> This chapter covered the complete depth of C dynamic memory management: static vs dynamic allocation, stack vs heap, the full memory layout, `malloc`/`calloc`/`realloc`/`free` with analogies, dry runs, complexity analysis, and edge cases. It covered memory leaks, dangling pointers, memory corruption, dynamic arrays, Valgrind detection, comparison tables, 20 interview Q&As, and real-world applications including arena allocators, linked lists, hash tables, and embedded pool allocators. The unifying theme: **every allocation must be matched with a free â†’ the heap is not a garbage collector.**

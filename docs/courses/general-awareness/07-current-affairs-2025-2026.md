@@ -1,4 +1,4 @@
-# Chapter 7: Current Affairs 2025–2026
+﻿# Chapter 7: Current Affairs 2025â€“2026
 
 ## Learning Objectives
 
@@ -7,27 +7,27 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
 <!-- End Image Gallery -->
 
-- Recall key events of 2025 and early 2026 — national, international, economic
+- Recall key events of 2025 and early 2026 â€” national, international, economic
 - Identify major policy announcements, budget highlights, and government schemes
-- Describe ISRO, DRDO, and scientific achievements in 2025–2026
+- Describe ISRO, DRDO, and scientific achievements in 2025â€“2026
 - List sports tournament winners, awards and honours
 - Remember significant obituaries and appointments
-- Solve exam-level MCQs on 2025–2026 current events
+- Solve exam-level MCQs on 2025â€“2026 current events
 
 ---
 
@@ -54,31 +54,31 @@ timeline
 
 #### 7.1.1 Union Budget 2025-26 (1 February 2025)
 
-Presented by Finance Minister Nirmala Sitharaman — the first full budget of Modi 3.0 (third term).
+Presented by Finance Minister Nirmala Sitharaman â€” the first full budget of Modi 3.0 (third term).
 
 **Key Highlights:**
 
-| Item | Allocation (₹) |
+| Item | Allocation (â‚¹) |
 |------|----------------|
-| Total Expenditure | ₹51.32 lakh crore (estimated) |
-| Capital Expenditure | ₹12.15 lakh crore |
+| Total Expenditure | â‚¹51.32 lakh crore (estimated) |
+| Capital Expenditure | â‚¹12.15 lakh crore |
 | Fiscal Deficit Target | 4.4% of GDP |
-| Tax Revenue | ₹28.15 lakh crore |
-| Agriculture | ₹1.68 lakh crore |
-| Defence | ₹6.81 lakh crore |
-| Education | ₹1.58 lakh crore |
-| Health | ₹1.01 lakh crore |
-| Railways | ₹2.95 lakh crore |
-| Infrastructure | ₹2.80 lakh crore (PM Awas, Jal Jeevan, etc.) |
+| Tax Revenue | â‚¹28.15 lakh crore |
+| Agriculture | â‚¹1.68 lakh crore |
+| Defence | â‚¹6.81 lakh crore |
+| Education | â‚¹1.58 lakh crore |
+| Health | â‚¹1.01 lakh crore |
+| Railways | â‚¹2.95 lakh crore |
+| Infrastructure | â‚¹2.80 lakh crore (PM Awas, Jal Jeevan, etc.) |
 
 **Major Announcements:**
-- **New Income Tax Regime:** Major simplification — new tax regime with revised slabs; standard deduction increased to ₹1,00,000
+- **New Income Tax Regime:** Major simplification â€” new tax regime with revised slabs; standard deduction increased to â‚¹1,00,000
 - **PM Awas Yojana:** Target of 2 crore additional houses (Urban + Rural)
-- **Gaganyaan:** ₹1,500 crore increased allocation for the crewed mission
-- **Digital India 2.0:** ₹1,200 crore for AI compute infrastructure
-- **Green Hydrogen Mission:** Second phase allocation of ₹10,000 crore
+- **Gaganyaan:** â‚¹1,500 crore increased allocation for the crewed mission
+- **Digital India 2.0:** â‚¹1,200 crore for AI compute infrastructure
+- **Green Hydrogen Mission:** Second phase allocation of â‚¹10,000 crore
 - **Export Promotion:** New Foreign Trade Policy 2025-30 announced
-- **Skill India Upgrade:** ₹5,000 crore for new skill development centres
+- **Skill India Upgrade:** â‚¹5,000 crore for new skill development centres
 - **Ease of Doing Business 2.0:** Digital portal integration for 100+ government services
 
 #### 7.1.2 Major Policy Developments 2025
@@ -88,7 +88,7 @@ Presented by Finance Minister Nirmala Sitharaman — the first full budget of Mo
 | One Nation One Election | Bill introduced / Select Committee review | Simultaneous Lok Sabha and State Assembly elections |
 | Uniform Civil Code (UCC) | Uttarakhand implemented (first state) | Common law for marriage, divorce, inheritance, adoption |
 | New Education Policy (NEP 2020) Implementation | Full rollout underway across states | 5+3+3+4 structure; vocational integration |
-| Digital Personal Data Protection Act Rules | Fully notified and enforced | Data fiduciaries must get consent; penalties up to ₹250 crore |
+| Digital Personal Data Protection Act Rules | Fully notified and enforced | Data fiduciaries must get consent; penalties up to â‚¹250 crore |
 | Cryptocurrency Regulation Bill | Debate ongoing | Framework for digital assets, CBDC promotion |
 | Personal Data Protection Board | Operational | Adjudication of data privacy complaints |
 
@@ -112,13 +112,13 @@ Presented by Finance Minister Nirmala Sitharaman — the first full budget of Mo
 | Delimitation Exercise Review | As per 84th Amendment deadline |
 | Gaganyaan Crewed Mission | Targeted first half of 2026 |
 | Asian Games | Nagoya, Japan (Sep-Oct 2026) |
-| FIFA World Cup | USA/Mexico/Canada (Jun-Jul 2026) — India may participate in qualifiers |
+| FIFA World Cup | USA/Mexico/Canada (Jun-Jul 2026) â€” India may participate in qualifiers |
 | Commonwealth Games | 2026 (Glasgow, Scotland) |
-| UN Climate Summit | COP31 — location TBD |
+| UN Climate Summit | COP31 â€” location TBD |
 
 ---
 
-### 7.3 International Affairs 2025–2026
+### 7.3 International Affairs 2025â€“2026
 
 #### 7.3.1 International Summits & Meetings 2025
 
@@ -132,11 +132,11 @@ Presented by Finance Minister Nirmala Sitharaman — the first full budget of Mo
 | WTO Ministerial | To be decided | 2025 | Fisheries subsidies, agriculture |
 | Quad Summit | Japan (Tokyo) | 2025 | Indo-Pacific security focus |
 
-#### 7.3.2 India's Bilateral Relations 2025–2026
+#### 7.3.2 India's Bilateral Relations 2025â€“2026
 
 | Country | Key Development |
 |---------|-----------------|
-| USA | iCET (Initiative on Critical and Emerging Technologies) expanded — AI, semiconductors, space |
+| USA | iCET (Initiative on Critical and Emerging Technologies) expanded â€” AI, semiconductors, space |
 | Russia | Energy cooperation increased; India continues oil imports despite Western sanctions |
 | China | Border disengagement talks; Kailash Mansarovar Yatra fully resumed |
 | Maldives | Relations restored post-"India Out" phase; development projects resumed |
@@ -147,7 +147,7 @@ Presented by Finance Minister Nirmala Sitharaman — the first full budget of Mo
 | UK | FTA negotiations continued; migration and mobility partnership |
 | UAE | CEPA expansion; trade anticipated to reach $100 billion |
 
-#### 7.3.3 Global Affairs 2025–2026
+#### 7.3.3 Global Affairs 2025â€“2026
 
 | Issue | Status |
 |-------|--------|
@@ -160,17 +160,17 @@ Presented by Finance Minister Nirmala Sitharaman — the first full budget of Mo
 
 ---
 
-### 7.4 Economic Affairs 2025–2026
+### 7.4 Economic Affairs 2025â€“2026
 
 | Indicator | 2024-25 (Est.) | 2025-26 (Proj.) |
 |-----------|----------------|-----------------|
-| GDP Growth | 7.0–7.5% | 6.5–7.0% |
-| Retail Inflation (CPI) | 4.0–4.5% | ~4.0% |
+| GDP Growth | 7.0â€“7.5% | 6.5â€“7.0% |
+| Retail Inflation (CPI) | 4.0â€“4.5% | ~4.0% |
 | Fiscal Deficit | 4.4% (target) | <4.5% |
 | Current Account Deficit | ~2.0% of GDP | ~2.5% |
 | Forex Reserves | ~$700 billion | ~$720+ billion |
 | GDP (Nominal) | $4.2 trillion | $4.7 trillion (aiming $5 trillion by 2027) |
-| GST Collection (monthly avg) | ₹1.9 lakh crore | ₹2.0+ lakh crore |
+| GST Collection (monthly avg) | â‚¹1.9 lakh crore | â‚¹2.0+ lakh crore |
 
 **Key Economic Trends:**
 - India on track to become the **3rd largest economy** by 2029-30 (projected by multiple agencies)
@@ -182,13 +182,13 @@ Presented by Finance Minister Nirmala Sitharaman — the first full budget of Mo
 
 ---
 
-### 7.5 Science & Technology 2025–2026
+### 7.5 Science & Technology 2025â€“2026
 
 #### 7.5.1 ISRO & Space
 
 | Mission | Year | Status/Details |
 |---------|------|----------------|
-| Gaganyaan (Crewed) | 2026 (target) | First Indian astronauts in space — 3-4 crew members, 3-7 days in LEO |
+| Gaganyaan (Crewed) | 2026 (target) | First Indian astronauts in space â€” 3-4 crew members, 3-7 days in LEO |
 | Chandrayaan-4 (Lunar Sample Return) | Planned 2026 | Moon soil sample collection and return mission |
 | Shukrayaan-1 (Venus Orbiter) | Planned 2026+ | India's first Venus mission |
 | NISAR (NASA-ISRO Joint Mission) | 2025 | Earth observation satellite (L&S band SAR) |
@@ -202,7 +202,7 @@ Presented by Finance Minister Nirmala Sitharaman — the first full budget of Mo
 - **Space-based internet:** India's own satellite broadband constellation (similar to Starlink)
 - **Deep Space Network:** India's own DSN established for interplanetary missions
 
-#### 7.5.2 Defence & Technology 2025–2026
+#### 7.5.2 Defence & Technology 2025â€“2026
 
 | Development | Details |
 |-------------|---------|
@@ -219,8 +219,8 @@ Presented by Finance Minister Nirmala Sitharaman — the first full budget of Mo
 | Technology | India Progress 2025-26 |
 |------------|------------------------|
 | 5G / 6G | 5G covers 95% of population; 6G research (Bharat 6G Alliance) |
-| Quantum Computing | National Quantum Mission — 24 qubit quantum computer prototype |
-| AI (Artificial Intelligence) | India AI Mission — GPU cluster for researchers; AI safety institute |
+| Quantum Computing | National Quantum Mission â€” 24 qubit quantum computer prototype |
+| AI (Artificial Intelligence) | India AI Mission â€” GPU cluster for researchers; AI safety institute |
 | Semiconductor | Fab plants in Gujarat (Dholera), Assam (Jagiroad) |
 | Green Hydrogen | 10 million tonnes per annum target by 2030 |
 | Nuclear Energy | 10 indigenous 700 MW PHWR reactors under construction |
@@ -228,19 +228,19 @@ Presented by Finance Minister Nirmala Sitharaman — the first full budget of Mo
 
 ---
 
-### 7.6 Sports Events 2025–2026
+### 7.6 Sports Events 2025â€“2026
 
 | Event | 2025 | 2026 |
 |-------|------|------|
-| ICC Champions Trophy | Pakistan (Feb-Mar 2025) — India participated in hybrid model | — |
+| ICC Champions Trophy | Pakistan (Feb-Mar 2025) â€” India participated in hybrid model | â€” |
 | ICC T20 World Cup | India & Sri Lanka (joint hosted, 2026) | India & Sri Lanka |
-| Asian Winter Games | Harbin, China (Feb 2025) | — |
-| Commonwealth Games | — | Glasgow, Scotland |
-| Asian Games | — | Nagoya, Japan (Sep-Oct 2026) |
-| FIFA World Cup | — | USA/Mexico/Canada (Jun-Jul 2026) |
+| Asian Winter Games | Harbin, China (Feb 2025) | â€” |
+| Commonwealth Games | â€” | Glasgow, Scotland |
+| Asian Games | â€” | Nagoya, Japan (Sep-Oct 2026) |
+| FIFA World Cup | â€” | USA/Mexico/Canada (Jun-Jul 2026) |
 | IPL (Indian Premier League) | IPL 18 (2025) | IPL 19 (2026) |
-| Paris Paralympics (2024) | — | — |
-| World Athletics Championships | Tokyo 2025 | — |
+| Paris Paralympics (2024) | â€” | â€” |
+| World Athletics Championships | Tokyo 2025 | â€” |
 | Pro Kabaddi | PKL 11, PKL 12 | PKL 12, PKL 13 |
 
 **Key Sporting Achievements:**
@@ -250,7 +250,7 @@ Presented by Finance Minister Nirmala Sitharaman — the first full budget of Mo
 
 ---
 
-### 7.7 Awards & Honours 2025–2026
+### 7.7 Awards & Honours 2025â€“2026
 
 **Padma Awards 2025:**
 
@@ -264,29 +264,29 @@ Presented by Finance Minister Nirmala Sitharaman — the first full budget of Mo
 
 **Nobel Prizes 2025:** (Expected in October 2025)
 
-**Key Appointments 2025–2026:**
+**Key Appointments 2025â€“2026:**
 
 | Position | Person | Details |
 |----------|--------|---------|
 | Chief Election Commissioner | (Successor to Gyanesh Kumar) | Appointment due |
 | Chief Justice of India | (As per seniority) | Collegium-based appointment |
-| RBI Governor | (Succession if any) | — |
-| Chief of Defence Staff | (Successor) | — |
-| Army/Navy/Air Force Chiefs | (As per superannuation cycles) | — |
+| RBI Governor | (Succession if any) | â€” |
+| Chief of Defence Staff | (Successor) | â€” |
+| Army/Navy/Air Force Chiefs | (As per superannuation cycles) | â€” |
 | UN Secretary-General | Antonio Guterres term ends Dec 2026 | Succession process begins |
 
 ---
 
-### 7.8 Environmental & Climate 2025–2026
+### 7.8 Environmental & Climate 2025â€“2026
 
 | Issue | Status |
 |-------|--------|
 | India Net Zero Target | Committed to net zero by 2070 |
 | Renewable Energy Capacity | 500 GW target by 2030 (achieved ~200 GW by 2024) |
 | Electric Vehicles | EV adoption 15% of new vehicle sales; FAME III expected |
-| Air Quality | National Clean Air Programme (NCAP) — 40% reduction in PM2.5 by 2026 |
+| Air Quality | National Clean Air Programme (NCAP) â€” 40% reduction in PM2.5 by 2026 |
 | Forest Cover | Target: 33% of geographical area under forest/tree cover |
-| COP30 (2025) | Brazil hosted — all nations submitted new NDCs |
+| COP30 (2025) | Brazil hosted â€” all nations submitted new NDCs |
 | Heat Action Plans | More cities adopting heat wave response plans |
 | Glacier Commission | India establishing National Glacier Commission |
 
@@ -463,7 +463,7 @@ D) Bangkok
 <summary>Answer</summary>
 **Answer: B) Nagoya, Japan**
 
-The 2026 Asian Games (20th edition) will be held in Nagoya, Japan (September–October 2026). India won a record 107 medals at the 2023 Hangzhou Asian Games and targets 100+ medals at Nagoya.
+The 2026 Asian Games (20th edition) will be held in Nagoya, Japan (Septemberâ€“October 2026). India won a record 107 medals at the 2023 Hangzhou Asian Games and targets 100+ medals at Nagoya.
 </details>
 
 ---
@@ -503,15 +503,15 @@ The 2026 Commonwealth Games will be held in Glasgow, Scotland (originally awarde
 **Q9:** Under the "New Tax Regime" announced in Budget 2025-26, the standard deduction was:
 
 A) Removed
-B) Increased to ₹75,000
-C) Increased to ₹1,00,000
-D) Kept unchanged at ₹50,000
+B) Increased to â‚¹75,000
+C) Increased to â‚¹1,00,000
+D) Kept unchanged at â‚¹50,000
 
 <details>
 <summary>Answer</summary>
-**Answer: C) Increased to ₹1,00,000**
+**Answer: C) Increased to â‚¹1,00,000**
 
-The Budget 2025-26 increased the standard deduction under the new tax regime from ₹75,000 to ₹1,00,000. The tax slabs were also significantly revised to make the new regime more attractive.
+The Budget 2025-26 increased the standard deduction under the new tax regime from â‚¹75,000 to â‚¹1,00,000. The tax slabs were also significantly revised to make the new regime more attractive.
 </details>
 
 ---
@@ -543,7 +543,7 @@ D) 2023
 <summary>Answer</summary>
 **Answer: B) 2025**
 
-Vinayak Damodar Savarkar (28 May 1883 – 26 February 1966) — freedom fighter, social reformer, and Hindutva ideologue. His 150th birth anniversary was celebrated in 2025 with year-long national commemorations.
+Vinayak Damodar Savarkar (28 May 1883 â€“ 26 February 1966) â€” freedom fighter, social reformer, and Hindutva ideologue. His 150th birth anniversary was celebrated in 2025 with year-long national commemorations.
 </details>
 
 ---
@@ -639,23 +639,23 @@ D) Japan and South Korea
 <summary>Answer</summary>
 **Answer: B) USA, Canada, and Mexico**
 
-The 2026 FIFA World Cup will be jointly hosted by the USA, Canada, and Mexico — the first time three nations co-host the tournament. It will also be the first World Cup with 48 teams (expanded from 32). India is attempting to qualify.
+The 2026 FIFA World Cup will be jointly hosted by the USA, Canada, and Mexico â€” the first time three nations co-host the tournament. It will also be the first World Cup with 48 teams (expanded from 32). India is attempting to qualify.
 </details>
 
 ---
 
 **Q18:** India's "Green Hydrogen Mission" second phase allocation was:
 
-A) ₹5,000 crore
-B) ₹10,000 crore
-C) ₹15,000 crore
-D) ₹20,000 crore
+A) â‚¹5,000 crore
+B) â‚¹10,000 crore
+C) â‚¹15,000 crore
+D) â‚¹20,000 crore
 
 <details>
 <summary>Answer</summary>
-**Answer: B) ₹10,000 crore**
+**Answer: B) â‚¹10,000 crore**
 
-The National Green Hydrogen Mission (launched 2023, ₹19,744 crore total outlay) received a second phase allocation of ₹10,000 crore in Budget 2025-26. India aims to produce 10 million tonnes of green hydrogen annually by 2030.
+The National Green Hydrogen Mission (launched 2023, â‚¹19,744 crore total outlay) received a second phase allocation of â‚¹10,000 crore in Budget 2025-26. India aims to produce 10 million tonnes of green hydrogen annually by 2030.
 </details>
 
 ---
@@ -678,27 +678,27 @@ Pravasi Bharatiya Divas (PBD) 2025 was held in Odisha (Bhubaneswar) on 8-10 Janu
 
 **Q20:** The "Digital Personal Data Protection Act" provides for penalties up to:
 
-A) ₹50 crore
-B) ₹100 crore
-C) ₹250 crore
-D) ₹500 crore
+A) â‚¹50 crore
+B) â‚¹100 crore
+C) â‚¹250 crore
+D) â‚¹500 crore
 
 <details>
 <summary>Answer</summary>
-**Answer: C) ₹250 crore**
+**Answer: C) â‚¹250 crore**
 
-The Digital Personal Data Protection Act, 2023 (fully enforced by 2025 with rules notified) provides for penalties of up to ₹250 crore for data breaches and non-compliance by data fiduciaries. It also establishes the Data Protection Board of India for adjudication.
+The Digital Personal Data Protection Act, 2023 (fully enforced by 2025 with rules notified) provides for penalties of up to â‚¹250 crore for data breaches and non-compliance by data fiduciaries. It also establishes the Data Protection Board of India for adjudication.
 </details>
 
 ---
 
-### 7.9 Major International Summits 2025–2026
+### 7.9 Major International Summits 2025â€“2026
 
 | Summit | Date | Host Country | Key Agenda |
 |--------|------|-------------|------------|
 | G20 Summit 2025 | ~Nov 2025 | South Africa | First G20 in Africa; inclusive growth; climate finance |
 | G20 Summit 2026 | ~Nov 2026 | USA | US hosts after South Africa; debt and health priorities |
-| COP30 | Nov 2025 | Belém, Brazil | New NDCs submitted; post-2030 climate targets |
+| COP30 | Nov 2025 | BelÃ©m, Brazil | New NDCs submitted; post-2030 climate targets |
 | COP31 | Nov 2026 | TBD | Global stocktake follow-up; climate adaptation |
 | BRICS Summit 2025 | Oct 2025 | Brazil | Expanded BRICS+ cooperation; de-dollarisation |
 | SCO Summit 2025 | Jul 2025 | Kazakhstan | Regional security and connectivity |
@@ -707,17 +707,17 @@ The Digital Personal Data Protection Act, 2023 (fully enforced by 2025 with rule
 | WEF Davos 2025 | Jan 2025 | Davos, Switzerland | Theme: "Collaboration for the Intelligent Age" |
 | FIFA World Cup | Jun-Jul 2026 | USA/Mexico/Canada | First 48-team World Cup; 104 matches |
 
-### 7.10 Color Revolutions and Global Movements — Extended Reference
+### 7.10 Color Revolutions and Global Movements â€” Extended Reference
 
 In addition to the revolutions listed in Ch 6 (Current Affairs 2024), the following movements are relevant for 2025-26 current affairs context:
 
 | Movement | Country | Year | Context |
 |----------|---------|------|---------|
 | Blue Revolution | India | Ongoing | Integrated fisheries development (Neel Kranti Mission) |
-| White Revolution | India | 1970s–ongoing | Operation Flood — dairy development (Amul model) |
-| Green Revolution | India | 1960s–70s | High-yield varieties, food self-sufficiency (M.S. Swaminathan) |
-| Yellow Revolution | India | 1980s–90s | Oil seed production growth |
-| Golden Revolution | India | 1990s–2000s | Horticulture and fruit production boom |
+| White Revolution | India | 1970sâ€“ongoing | Operation Flood â€” dairy development (Amul model) |
+| Green Revolution | India | 1960sâ€“70s | High-yield varieties, food self-sufficiency (M.S. Swaminathan) |
+| Yellow Revolution | India | 1980sâ€“90s | Oil seed production growth |
+| Golden Revolution | India | 1990sâ€“2000s | Horticulture and fruit production boom |
 | Pink Revolution | India | Ongoing | Meat and poultry processing growth |
 | Silver Revolution | India | Ongoing | Egg and poultry production growth |
 | Red Revolution | India | Ongoing | Tomato and meat production |
@@ -725,7 +725,7 @@ In addition to the revolutions listed in Ch 6 (Current Affairs 2024), the follow
 | Grey Revolution | India | Ongoing | Fertilizer production |
 | Black Revolution | India | Ongoing | Petroleum production |
 
-### 7.11 ISRO and Space Missions 2025–2026 Timeline
+### 7.11 ISRO and Space Missions 2025â€“2026 Timeline
 
 ```mermaid
 timeline
@@ -744,20 +744,20 @@ timeline
 | Gaganyaan | Low Earth Orbit (~400 km) | 2025-26 | India's first crewed space mission; 3 crew members; 3-day orbit |
 | NISAR | Earth Observation | 2025 | Joint NASA-ISRO satellite; SAR imaging every 12 days |
 | Shukrayaan | Venus | 2026 | Orbiter to study Venus atmosphere and surface |
-| Chandrayaan-4 | Moon | ~2026–27 | Sample return mission; collecting lunar soil |
+| Chandrayaan-4 | Moon | ~2026â€“27 | Sample return mission; collecting lunar soil |
 | Bharatiya Antariksha Station | LEO | 2028+ (first module) | India's own space station; ~52 tons initially |
-| Mangalyaan-2 | Mars | ~2026–28 | Orbiter with lander/rover capability |
+| Mangalyaan-2 | Mars | ~2026â€“28 | Orbiter with lander/rover capability |
 
-### 7.12 Economic Indicators 2025-2026 — Comparative Analysis
+### 7.12 Economic Indicators 2025-2026 â€” Comparative Analysis
 
 | Indicator | 2024-25 (Actual) | 2025-26 (Budget Estimate) | 2026-27 (Projected) |
 |-----------|-----------------|--------------------------|---------------------|
-| GDP Growth (%) | ~6.5% | ~6.3–6.8% | ~6.5–7.0% |
+| GDP Growth (%) | ~6.5% | ~6.3â€“6.8% | ~6.5â€“7.0% |
 | Fiscal Deficit (% of GDP) | 4.9% | 4.4% | ~4.0% (target) |
-| CPI Inflation (%) | ~4.8% | ~4.0–4.5% | ~4.0% (target) |
-| GST Collection (₹ lakh cr) | ~20.2 | ~21.5 | ~23.0 |
+| CPI Inflation (%) | ~4.8% | ~4.0â€“4.5% | ~4.0% (target) |
+| GST Collection (â‚¹ lakh cr) | ~20.2 | ~21.5 | ~23.0 |
 | Forex Reserves ($ billion) | ~700 | ~750 | ~800 |
-| Capex (₹ lakh crore) | 11.11 | 12.15 | ~13.5 |
+| Capex (â‚¹ lakh crore) | 11.11 | 12.15 | ~13.5 |
 | Agriculture Growth (%) | ~3.5% | ~3.8% | ~4.0% |
 | Industrial Growth (%) | ~7.5% | ~7.0% | ~7.2% |
 | Services Growth (%) | ~7.8% | ~7.5% | ~7.6% |
@@ -816,7 +816,7 @@ class FutureTracker {
     console.log('=== INDIA DEVELOPMENT ROADMAP 2025-2030 ===');
     const sorted = [...this.developments].sort((a, b) => a.targetYear - b.targetYear);
     sorted.forEach(d => {
-      const statusIcon = d.status === 'completed' ? '✅' : d.status === 'ongoing' ? '🔄' : d.status === 'planned' ? '📋' : '⏸️';
+      const statusIcon = d.status === 'completed' ? 'âœ…' : d.status === 'ongoing' ? 'ðŸ”„' : d.status === 'planned' ? 'ðŸ“‹' : 'â¸ï¸';
       console.log(`${statusIcon} [${d.targetYear}] ${d.initiative}`);
       console.log(`   Sector: ${d.sector} | Target: ${d.keyMetric}`);
     });
@@ -897,14 +897,14 @@ D) Samsung India
 <summary>Answer</summary>
 **Answer: B) Tata Electronics and Powerchip Semiconductor (Taiwan)**
 
-Tata Electronics partnered with Taiwan's Powerchip Semiconductor Manufacturing Company (PSMC) to set up India's first commercial semiconductor fab in Dholera, Gujarat. The project involves an investment of ₹91,000 crore.
+Tata Electronics partnered with Taiwan's Powerchip Semiconductor Manufacturing Company (PSMC) to set up India's first commercial semiconductor fab in Dholera, Gujarat. The project involves an investment of â‚¹91,000 crore.
 </details>
 
 ---
 
 ## Summary
 
-- **Union Budget 2025-26:** Fiscal deficit 4.4%, capex ₹12.15 lakh crore, new tax regime simplified, standard deduction ₹1,00,000.
+- **Union Budget 2025-26:** Fiscal deficit 4.4%, capex â‚¹12.15 lakh crore, new tax regime simplified, standard deduction â‚¹1,00,000.
 - **G20 Summit 2025** in South Africa (first in Africa); **COP30** in Belem, Brazil (new NDCs submitted).
 - **National:** UCC implemented by Uttarakhand (first state); One Nation One Election bill introduced; 150th birth anniversary of V.D. Savarkar.
 - **ISRO:** Gaganyaan (crewed mission) targeted for 2026; NISAR (NASA-ISRO) for Earth observation; Shukrayaan (Venus) planned.
@@ -916,13 +916,13 @@ Tata Electronics partnered with Taiwan's Powerchip Semiconductor Manufacturing C
 
 ## Practical Takeaways
 
-1. **For Exams in 2025-26:** The Union Budget 2025-26, G20/South Africa, and Gaganyaan mission updates are the MOST important topics — expect 3-4 questions from these.
+1. **For Exams in 2025-26:** The Union Budget 2025-26, G20/South Africa, and Gaganyaan mission updates are the MOST important topics â€” expect 3-4 questions from these.
 2. **Summit Tracking:** Create a quick-reference card for all 2025 summits: G20 (South Africa), BRICS (Brazil), COP30 (Brazil), SCO (China), Quad (Japan).
-3. **ISRO Timeline:** Gaganyaan 2026 → Shukrayaan (post-2026) → Bharatiya Antariksha Station (2028+) → Chandrayaan-4 (sample return).
-4. **Budget Figures:** Memorise: Fiscal deficit 4.4%, Capex ₹12.15 lakh crore, Standard deduction ₹1,00,000.
-5. **India Economy:** Key targets — $5 trillion by 2027, $10 trillion by 2032-35; 500 GW renewable by 2030.
+3. **ISRO Timeline:** Gaganyaan 2026 â†’ Shukrayaan (post-2026) â†’ Bharatiya Antariksha Station (2028+) â†’ Chandrayaan-4 (sample return).
+4. **Budget Figures:** Memorise: Fiscal deficit 4.4%, Capex â‚¹12.15 lakh crore, Standard deduction â‚¹1,00,000.
+5. **India Economy:** Key targets â€” $5 trillion by 2027, $10 trillion by 2032-35; 500 GW renewable by 2030.
 6. **UCC and ONE:** Understand that Uttarakhand implemented UCC first; ONOE bill is under review.
-7. **Follow PIB and Press Releases:** Current affairs beyond 2024 require regular updating — read PIB daily, Business Standard, and The Hindu.
+7. **Follow PIB and Press Releases:** Current affairs beyond 2024 require regular updating â€” read PIB daily, Business Standard, and The Hindu.
 
 ## Chapter Quiz
 
@@ -935,7 +935,7 @@ D) New Zealand
 
 <details>
 <summary>Answer</summary>
-**Answer: [Depends on actual result — verify closer to exam]**
+**Answer: [Depends on actual result â€” verify closer to exam]**
 
 The Champions Trophy 2025 was held in Pakistan with India playing in the hybrid model (UAE). Students should verify the winner from current sources closer to the exam date.
 </details>
@@ -970,16 +970,16 @@ The National Quantum Mission (2023-2031) initially aims to develop a 24-qubit qu
 
 **Q4:** The "Union Budget 2025-26" increased the Mudra loan limit to:
 
-A) ₹10 lakh
-B) ₹15 lakh
-C) ₹20 lakh
-D) ₹25 lakh
+A) â‚¹10 lakh
+B) â‚¹15 lakh
+C) â‚¹20 lakh
+D) â‚¹25 lakh
 
 <details>
 <summary>Answer</summary>
-**Answer: C) ₹20 lakh (increased from ₹10 lakh in Budget 2024-25)**
+**Answer: C) â‚¹20 lakh (increased from â‚¹10 lakh in Budget 2024-25)**
 
-The Budget 2024-25 had already increased the Mudra limit to ₹20 lakh (from ₹10 lakh). The 2025-26 budget maintained this and focused on expanding access through digital platforms.
+The Budget 2024-25 had already increased the Mudra limit to â‚¹20 lakh (from â‚¹10 lakh). The 2025-26 budget maintained this and focused on expanding access through digital platforms.
 </details>
 
 **Q5:** The "Pravasi Bharatiya Divas 2025" was held in:
@@ -1094,11 +1094,11 @@ D) Asian Games
 
 **24.** The ICC T20 World Cup 2026 was jointly hosted by India and Sri Lanka. (T/F)
 
-**25.** The "Digital Personal Data Protection Act" penalties can be up to ₹250 crore. (T/F)
+**25.** The "Digital Personal Data Protection Act" penalties can be up to â‚¹250 crore. (T/F)
 
 **26.** India aims to achieve 500 GW of renewable energy capacity by 2030. (T/F)
 
-**27.** The "National Quantum Mission" has a budget of ₹6,003 crore. (T/F)
+**27.** The "National Quantum Mission" has a budget of â‚¹6,003 crore. (T/F)
 
 **28.** The "150th birth anniversary of V.D. Savarkar" was celebrated in 2026. (T/F)
 
@@ -1106,7 +1106,7 @@ D) Asian Games
 
 **30.** India's economy is projected to become the 3rd largest globally by 2029-30. (T/F)
 
-### Section D: Additional MCQs (Exam Focus — 2025-2026)
+### Section D: Additional MCQs (Exam Focus â€” 2025-2026)
 
 **31.** The "12th World Hindi Conference" was held in which country?
 
@@ -1124,17 +1124,17 @@ D) Urban warfare
 
 **33.** The "India AI Mission" was allocated a budget of:
 
-A) ₹5,000 crore
-B) ₹10,372 crore
-C) ₹15,000 crore
-D) ₹20,000 crore
+A) â‚¹5,000 crore
+B) â‚¹10,372 crore
+C) â‚¹15,000 crore
+D) â‚¹20,000 crore
 
 **34.** The "COP30" climate summit was held in which Brazilian city?
 
 A) Rio de Janeiro
-B) São Paulo
-C) Belém
-D) Brasília
+B) SÃ£o Paulo
+C) BelÃ©m
+D) BrasÃ­lia
 
 **35.** The "ICC T20 World Cup 2026" will be co-hosted by:
 
@@ -1164,7 +1164,7 @@ B) Tamil Nadu
 C) Kerala
 D) Odisha
 
-**39.** The Deputy Speaker of the 18th Lok Sabha (2024–2029) is:
+**39.** The Deputy Speaker of the 18th Lok Sabha (2024â€“2029) is:
 
 A) K. Suresh
 B) M. Thambidurai
@@ -1204,8 +1204,8 @@ D) Frigate
 16. India AI Mission
 17. Nagoya
 18. Project Tiger
-19. 2025 (name depends on facility location — check latest)
-20. ₹1,00,000
+19. 2025 (name depends on facility location â€” check latest)
+20. â‚¹1,00,000
 
 **Section C (21-30):**
 21. T
@@ -1215,23 +1215,23 @@ D) Frigate
 25. T
 26. T
 27. T
-28. F (Celebrated in 2025 — Savarkar born 28 May 1883)
+28. F (Celebrated in 2025 â€” Savarkar born 28 May 1883)
 29. T (First module expected around 2028; full station by 2035)
 30. T (Projected by multiple agencies including S&P Global, Morgan Stanley)
 
 **Section D (31-40):**
 31. B) Fiji (12th World Hindi Conference was held in Nadi, Fiji in 2025)
 32. B) High-altitude warfare (developed by DRDO for deployment in eastern Ladakh and high-altitude areas)
-33. B) ₹10,372 crore (India AI Mission was approved in 2024 for AI computing, innovation centers, and skilling)
-34. C) Belém (COP30 was held in Belém, Brazil, in November 2025; Amazon rainforest focus)
+33. B) â‚¹10,372 crore (India AI Mission was approved in 2024 for AI computing, innovation centers, and skilling)
+34. C) BelÃ©m (COP30 was held in BelÃ©m, Brazil, in November 2025; Amazon rainforest focus)
 35. A) India and Sri Lanka (co-hosted the 2026 ICC Men's T20 World Cup)
 36. C) Air connectivity (UDAN scheme by Ministry of Civil Aviation aims to make air travel affordable for common people)
 37. B) Civil services reform (Mission Karmayogi is the National Programme for Civil Services Capacity Building)
 38. A) Gujarat (India's first green hydrogen plant was inaugurated in Gujarat by Reliance/Gujarat Govt)
-39. C) (Vacant / To be elected) — as of 2025, the Deputy Speaker post was vacant; check current status closer to exam
+39. C) (Vacant / To be elected) â€” as of 2025, the Deputy Speaker post was vacant; check current status closer to exam
 40. B) Indigenous aircraft carrier (INS Vikrant is India's first indigenously built aircraft carrier, commissioned in 2022)
 </details>
 
 ---
 
-*Proceed to Chapter 8 — Sports, Awards & International Organizations*
+*Proceed to Chapter 8 â€” Sports, Awards & International Organizations*

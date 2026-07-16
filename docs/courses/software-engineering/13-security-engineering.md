@@ -1,4 +1,4 @@
-# Security Engineering
+﻿# Security Engineering
 
 ## Learning Objectives
 
@@ -17,16 +17,16 @@ After completing this chapter, the student will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/13-security-engineering/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/software-engineering/13-security-engineering/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/13-security-engineering/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/software-engineering/13-security-engineering/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/13-security-engineering/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/software-engineering/13-security-engineering/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/13-security-engineering/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/software-engineering/13-security-engineering/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/13-security-engineering/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/software-engineering/13-security-engineering/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/13-security-engineering/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/software-engineering/13-security-engineering/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -151,7 +151,7 @@ The Open Web Application Security Project publishes the Top 10 Web Application S
 
 #### A01: Broken Access Control
 
-**Risk:** Users can act outside their intended permissions — viewing, modifying, or deleting resources they should not access.
+**Risk:** Users can act outside their intended permissions â€” viewing, modifying, or deleting resources they should not access.
 
 **Example:** A user changes `userId` in the URL from 123 to 124 to view another user's private data.
 
@@ -205,7 +205,7 @@ const query = { text: 'SELECT * FROM users WHERE email = $1', values: [email] };
 
 #### A04: Insecure Design
 
-**Risk:** Missing security controls in the design phase — the system architecture itself is flawed.
+**Risk:** Missing security controls in the design phase â€” the system architecture itself is flawed.
 
 **Example:** No rate limiting on login endpoints, enabling brute-force attacks.
 
@@ -1108,10 +1108,10 @@ class EnvConfig {
 
 **Impact:** 147 million personal records exposed, $1.4 billion in costs.
 
-**Root Cause:** Failure to patch Apache Struts CVE-2017-5638 — a known vulnerability for which a patch had been available for two months. The vulnerability was a remote code execution flaw in the Jakarta Multipart parser.
+**Root Cause:** Failure to patch Apache Struts CVE-2017-5638 â€” a known vulnerability for which a patch had been available for two months. The vulnerability was a remote code execution flaw in the Jakarta Multipart parser.
 
 **Lessons:**
-- A06 (Vulnerable Components) is not just about libraries — it is about patch management discipline
+- A06 (Vulnerable Components) is not just about libraries â€” it is about patch management discipline
 - Organisations must have an accurate software inventory (SBOM)
 - Vulnerability scanning must be continuous, not point-in-time
 
@@ -1122,7 +1122,7 @@ class EnvConfig {
 **Root Cause:** Attackers compromised the SolarWinds Orion build pipeline, injecting malicious code (SUNBURST) into signed software updates. The backdoor remained undetected for months.
 
 **Lessons:**
-- A08 (Software & Data Integrity Failures) — signed binaries can still be malicious
+- A08 (Software & Data Integrity Failures) â€” signed binaries can still be malicious
 - Build pipeline integrity is as important as production security
 - Zero-trust architecture limits blast radius of supply chain attacks
 
@@ -1133,7 +1133,7 @@ class EnvConfig {
 **Root Cause:** SQL injection vulnerability in the payment processing web application. The attacker used a multi-stage SQL injection to install packet sniffers on the internal network.
 
 **Lessons:**
-- A03 (Injection) — SQL injection remains devastating even in 2008-era systems
+- A03 (Injection) â€” SQL injection remains devastating even in 2008-era systems
 - Network segmentation would have limited lateral movement
 - Encryption of data in transit (internal) would have prevented sniffing
 
@@ -1143,13 +1143,13 @@ Security engineering is the discipline of building systems that remain secure un
 
 ## Practical Takeaways
 
-1. **Never roll your own crypto** — use well-audited libraries
-2. **Sanitise input, encode output** — two different operations, both required
-3. **Password hashing is not encryption** — bcrypt/Argon2id, never SHA or MD5
-4. **Security is not a feature — it is a property of the system**
-5. **HTTPS everywhere** — even internal services should use TLS
-6. **Log security events** — you cannot respond to breaches you do not detect
-7. **Shift left** — find vulnerabilities earlier in the SDLC when they are cheaper to fix
+1. **Never roll your own crypto** â€” use well-audited libraries
+2. **Sanitise input, encode output** â€” two different operations, both required
+3. **Password hashing is not encryption** â€” bcrypt/Argon2id, never SHA or MD5
+4. **Security is not a feature â€” it is a property of the system**
+5. **HTTPS everywhere** â€” even internal services should use TLS
+6. **Log security events** â€” you cannot respond to breaches you do not detect
+7. **Shift left** â€” find vulnerabilities earlier in the SDLC when they are cheaper to fix
 
 ## Chapter Quiz
 
@@ -1159,7 +1159,7 @@ Security engineering is the discipline of building systems that remain secure un
 - C) Injection
 - D) Information Disclosure
 
-**Answer: C** — Injection is from OWASP Top 10, not STRIDE. STRIDE includes Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege.
+**Answer: C** â€” Injection is from OWASP Top 10, not STRIDE. STRIDE includes Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege.
 
 **Q2: What is the best defence against SQL injection?**
 - A) Input escaping
@@ -1167,7 +1167,7 @@ Security engineering is the discipline of building systems that remain secure un
 - C) Stored procedures
 - D) WAF rules
 
-**Answer: B** — Parameterised queries (prepared statements) ensure separation of code and data.
+**Answer: B** â€” Parameterised queries (prepared statements) ensure separation of code and data.
 
 **Q3: The HTTP status code returned when a user is authenticated but not authorised to access a resource is:**
 - A) 401 Unauthorized
@@ -1175,7 +1175,7 @@ Security engineering is the discipline of building systems that remain secure un
 - C) 404 Not Found
 - D) 405 Method Not Allowed
 
-**Answer: B** — 401 is for unauthenticated, 403 is for authenticated but not authorised.
+**Answer: B** â€” 401 is for unauthenticated, 403 is for authenticated but not authorised.
 
 **Q4: Which algorithm is recommended for password storage?**
 - A) SHA-256
@@ -1183,7 +1183,7 @@ Security engineering is the discipline of building systems that remain secure un
 - C) Argon2id
 - D) MD5
 
-**Answer: C** — Argon2id (and bcrypt) are memory-hard password hashing algorithms. SHA and MD5 are fast and vulnerable to brute force.
+**Answer: C** â€” Argon2id (and bcrypt) are memory-hard password hashing algorithms. SHA and MD5 are fast and vulnerable to brute force.
 
 **Q5: Content Security Policy (CSP) is primarily a defence against:**
 - A) SQL Injection
@@ -1191,7 +1191,7 @@ Security engineering is the discipline of building systems that remain secure un
 - C) CSRF
 - D) SSRF
 
-**Answer: B** — CSP restricts which scripts can execute, preventing XSS.
+**Answer: B** â€” CSP restricts which scripts can execute, preventing XSS.
 
 ### TypeScript: Security Engineering Classes
 
@@ -1259,7 +1259,7 @@ class ThreatModeler {
     for (const [category, threats] of byCategory) {
       lines.push(`[${category.toUpperCase()}] (${threats.length})`);
       for (const t of threats) {
-        lines.push(`  ${t.id}: ${t.element} - ${t.description} [${t.severity}] ${t.mitigated ? '✓' : '✗'}`);
+        lines.push(`  ${t.id}: ${t.element} - ${t.description} [${t.severity}] ${t.mitigated ? 'âœ“' : 'âœ—'}`);
         lines.push(`    Mitigation: ${t.mitigation}`);
       }
     }
@@ -1341,7 +1341,7 @@ class OWASPChecker {
       score: maxScore > 0 ? Math.round(weightedScore / maxScore * 100) : 0,
       passed,
       failed,
-      details: this.findings.map(f => `${f.passed ? '✓' : '✗'} ${f.risk}: ${f.details}`),
+      details: this.findings.map(f => `${f.passed ? 'âœ“' : 'âœ—'} ${f.risk}: ${f.details}`),
     };
   }
 }

@@ -1,4 +1,4 @@
-# Observability (Micrometer, Prometheus, Grafana)
+﻿# Observability (Micrometer, Prometheus, Grafana)
 
 > **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 
@@ -7,16 +7,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/55-observability/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/55-observability/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/55-observability/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/55-observability/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/55-observability/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/55-observability/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/55-observability/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/55-observability/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/55-observability/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/55-observability/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/55-observability/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/55-observability/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -56,7 +56,7 @@ By the end of this chapter, you will be able to:
 
 ## 1. The Observability Stack
 
-> **Pro Tip:** Test with production-like configurations → dev setups often hide issues that surface under real load.
+> **Pro Tip:** Test with production-like configurations â†’ dev setups often hide issues that surface under real load.
 
 > **Remember:** Start simple. Add complexity only when proven necessary. Premature abstraction creates maintenance burden.
 
@@ -64,29 +64,29 @@ By the end of this chapter, you will be able to:
 ![Observability - Micrometer, Prometheus, Grafana](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/55-observability.png)
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│                    Grafana (Dashboards)                   │
-│  ┌──────────────┐  ┌──────────────┐  ┌───────────────┐  │
-│  │    JVM       │  │  Spring Boot │  │  Business     │  │
-│  │  Dashboard   │  │  Dashboard   │  │  Dashboard    │  │
-│  └──────┬───────┘  └──────┬───────┘  └───────┬───────┘  │
-└─────────┼─────────────────┼──────────────────┼──────────┘
-          │                 │                  │
-┌─────────┴─────────────────┴──────────────────┴──────────┐
-│                     Prometheus (Metrics)                  │
-│  ┌──────────────┐  ┌──────────────┐  ┌───────────────┐  │
-│  │   JVM        │  │  Spring Boot │  │  Custom       │  │
-│  │   Metrics    │  │  Actuator    │  │  Business     │  │
-│  └──────┬───────┘  └──────┬───────┘  └───────┬───────┘  │
-└─────────┼─────────────────┼──────────────────┼──────────┘
-          │                 │                  │
-┌─────────┴─────────────────┴──────────────────┴──────────┐
-│            Spring Boot Application                        │
-│  ┌──────────────────────────────────────────────────┐    │
-│  │  Micrometer  │  Structured Logging  │  Actuator  │    │
-│  │  Metrics     │  (JSON + MDC)       │  Endpoints │    │
-│  └──────────────────────────────────────────────────┘    │
-└──────────────────────────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚                    Grafana (Dashboards)                   â”‚
+â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”‚
+â”‚  â”‚    JVM       â”‚  â”‚  Spring Boot â”‚  â”‚  Business     â”‚  â”‚
+â”‚  â”‚  Dashboard   â”‚  â”‚  Dashboard   â”‚  â”‚  Dashboard    â”‚  â”‚
+â”‚  â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+          â”‚                 â”‚                  â”‚
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚                     Prometheus (Metrics)                  â”‚
+â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”‚
+â”‚  â”‚   JVM        â”‚  â”‚  Spring Boot â”‚  â”‚  Custom       â”‚  â”‚
+â”‚  â”‚   Metrics    â”‚  â”‚  Actuator    â”‚  â”‚  Business     â”‚  â”‚
+â”‚  â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+          â”‚                 â”‚                  â”‚
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚            Spring Boot Application                        â”‚
+â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”‚
+â”‚  â”‚  Micrometer  â”‚  Structured Logging  â”‚  Actuator  â”‚    â”‚
+â”‚  â”‚  Metrics     â”‚  (JSON + MDC)       â”‚  Endpoints â”‚    â”‚
+â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### 1.1 Three Pillars of Observability
@@ -94,9 +94,9 @@ By the end of this chapter, you will be able to:
 
 | Pillar | Tool | Purpose |
 |--------|------|---------|
-| **Metrics** | Micrometer → Prometheus → Grafana | Numerical measurements over time |
-| **Logging** | Logback → ELK/Loki → Grafana | Discrete events with context |
-| **Tracing** | Micrometer Tracing → Jaeger/Tempo | Request flow across services |
+| **Metrics** | Micrometer â†’ Prometheus â†’ Grafana | Numerical measurements over time |
+| **Logging** | Logback â†’ ELK/Loki â†’ Grafana | Discrete events with context |
+| **Tracing** | Micrometer Tracing â†’ Jaeger/Tempo | Request flow across services |
 
 This chapter covers **Metrics** and **Logging**. Tracing is covered in a dedicated chapter.
 
@@ -515,7 +515,7 @@ public class OrderService {
 
     @Counted(value = "orders.created.counted", extraTags = {"source", "web"})
     public Order createOrder(OrderRequest request) {
-        // Creates an order → counter incremented automatically
+        // Creates an order â†’ counter incremented automatically
         return processOrderCreation(request);
     }
 
@@ -529,7 +529,7 @@ public class OrderService {
     @Timed(value = "orders.fulfillment.timed", longTask = true,
            description = "Time to fulfill an order")
     public void fulfillOrder(String orderId) {
-        // Long-running task → shows active tasks count
+        // Long-running task â†’ shows active tasks count
         executeFulfillment(orderId);
     }
 
@@ -2143,7 +2143,7 @@ public class StructuredLogger {
 
 ## 7. ELK/Loki Log Aggregation
 
-### 7.1 ELK Stack (Filebeat → Logstash → Elasticsearch → Kibana)
+### 7.1 ELK Stack (Filebeat â†’ Logstash â†’ Elasticsearch â†’ Kibana)
 
 
 ```yaml
@@ -2299,7 +2299,7 @@ output {
 }
 ```
 
-### 7.4 Loki Stack (Promtail → Loki → Grafana)
+### 7.4 Loki Stack (Promtail â†’ Loki â†’ Grafana)
 
 
 ```yaml
@@ -2591,7 +2591,7 @@ public class ServiceLevelIndicators {
 
 
 ```yaml
-# prometheus-alerts.yml → SLO-based alerting
+# prometheus-alerts.yml â†’ SLO-based alerting
 
 > **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 groups:
@@ -2813,7 +2813,7 @@ receivers:
   - name: 'slack-critical'
     slack_configs:
       - channel: '#critical-alerts'
-        title: 'ðŸš¨ CRITICAL: {{ .GroupLabels.alertname }}'
+        title: 'Ã°Å¸Å¡Â¨ CRITICAL: {{ .GroupLabels.alertname }}'
         text: '{{ template "slack.text" . }}'
         color: 'danger'
         send_resolved: true
@@ -2821,7 +2821,7 @@ receivers:
   - name: 'slack-warnings'
     slack_configs:
       - channel: '#alerts-warnings'
-        title: 'âš ï¸ WARNING: {{ .GroupLabels.alertname }}'
+        title: 'Ã¢Å¡Â Ã¯Â¸Â WARNING: {{ .GroupLabels.alertname }}'
         text: '{{ template "slack.text" . }}'
         color: 'warning'
 
@@ -2843,7 +2843,7 @@ receivers:
   - name: 'slo-review'
     slack_configs:
       - channel: '#slo-review'
-        title: 'ðŸ“Š SLO Alert: {{ .GroupLabels.alertname }}'
+        title: 'Ã°Å¸â€œÅ  SLO Alert: {{ .GroupLabels.alertname }}'
         text: 'SLO violation detected. Review required: {{ .GroupLabels.alertname }}'
         color: '#FFA500'
 
@@ -3008,10 +3008,10 @@ receivers:
 
 | Scenario | Pattern A | Pattern B | Pattern C |
 |----------|-----------|-----------|-----------|
-| Small application | âœ“ | âœ— | âœ“ |
-| Enterprise system | âœ“ | âœ“ | âœ— |
-| High-throughput API | âœ— | âœ“ | âœ“ |
-| Event-driven | âœ— | âœ“ | âœ“ |
+| Small application | Ã¢Å“â€œ | Ã¢Å“â€” | Ã¢Å“â€œ |
+| Enterprise system | Ã¢Å“â€œ | Ã¢Å“â€œ | Ã¢Å“â€” |
+| High-throughput API | Ã¢Å“â€” | Ã¢Å“â€œ | Ã¢Å“â€œ |
+| Event-driven | Ã¢Å“â€” | Ã¢Å“â€œ | Ã¢Å“â€œ |
 
 ## Chapter Quiz
 
@@ -3041,7 +3041,7 @@ receivers:
    - A) For every project regardless of size
    - B) When complexity justifies the overhead
    - C) Only in legacy systems
-   - D) Never → it is outdated
+   - D) Never â†’ it is outdated
 
 <details>
 <summary>Answer&lt;/summary&gt;

@@ -1,4 +1,4 @@
-# Chapter 09: Backtracking
+﻿# Chapter 09: Backtracking
 
 > Backtracking is a systematic way to explore all possible configurations of a solution space. It incrementally builds candidates and abandons them (backtracks) when they cannot lead to a valid solution.
 
@@ -13,16 +13,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/coding-problems/09-backtracking/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/coding-problems/09-backtracking/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/coding-problems/09-backtracking/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/coding-problems/09-backtracking/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/coding-problems/09-backtracking/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/coding-problems/09-backtracking/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/coding-problems/09-backtracking/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/coding-problems/09-backtracking/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/coding-problems/09-backtracking/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/coding-problems/09-backtracking/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/coding-problems/09-backtracking/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/coding-problems/09-backtracking/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -95,9 +95,9 @@ flowchart LR
 
 ### Problem 1: Subsets (Power Set)
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-📊 **Difficulty:** Easy
-📂 **Topics:** [Backtracking, Array, Bit Manipulation]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+ðŸ“Š **Difficulty:** Easy
+ðŸ“‚ **Topics:** [Backtracking, Array, Bit Manipulation]
 
 **Problem:** Given an array of unique integers, return all possible subsets (the power set).
 
@@ -147,9 +147,9 @@ console.log(subsets([0])); // [[], [0]]
 
 ### Problem 2: Binary Watch
 
-🏷️ **Companies:** [Amazon] [Google]
-📊 **Difficulty:** Easy
-📂 **Topics:** [Backtracking, Bit Manipulation]
+ðŸ·ï¸ **Companies:** [Amazon] [Google]
+ðŸ“Š **Difficulty:** Easy
+ðŸ“‚ **Topics:** [Backtracking, Bit Manipulation]
 
 **Problem:** A binary watch has 4 LEDs for hours (0-11) and 6 for minutes (0-59). Given turnedOn (number of lit LEDs), return all possible times.
 
@@ -199,9 +199,9 @@ console.log(readBinaryWatch(1));
 
 ### Problem 3: Letter Case Permutation
 
-🏷️ **Companies:** [Amazon] [Google] [Meta]
-📊 **Difficulty:** Easy
-📂 **Topics:** [Backtracking, String, Bit Manipulation]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
+ðŸ“Š **Difficulty:** Easy
+ðŸ“‚ **Topics:** [Backtracking, String, Bit Manipulation]
 
 **Problem:** Given a string s, transform each letter to lowercase or uppercase to create all possible permutations.
 
@@ -260,9 +260,9 @@ console.log(letterCasePermutation(\"3z4\")); // [\"3z4\",\"3Z4\"]
 
 ### Problem 4: Permutations
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Backtracking, Array]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Backtracking, Array]
 
 **Problem:** Given an array of distinct integers, return all possible permutations.
 
@@ -315,9 +315,9 @@ console.log(permute([0, 1])); // [[0,1],[1,0]]
 
 ### Problem 5: Permutations II (with duplicates)
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Backtracking, Array]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Backtracking, Array]
 
 **Problem:** Given an array that may contain duplicates, return all unique permutations.
 
@@ -369,9 +369,9 @@ console.log(permuteUnique([1, 1, 2]));
 
 ### Problem 6: Combination Sum
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Backtracking, Array]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Backtracking, Array]
 
 **Problem:** Given distinct integers and a target, find all unique combinations where the numbers sum to target. Same number may be reused.
 
@@ -422,9 +422,9 @@ console.log(combinationSum([2, 3, 5], 8));
 
 ### Problem 7: Combination Sum II
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Backtracking, Array]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Backtracking, Array]
 
 **Problem:** Same as Combination Sum but each number may be used only once, and array may have duplicates.
 
@@ -473,9 +473,9 @@ console.log(combinationSum2([10,1,2,7,6,1,5], 8));
 
 ### Problem 8: Subsets II (with duplicates)
 
-🏷️ **Companies:** [Amazon] [Google] [Meta]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Backtracking, Array]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Backtracking, Array]
 
 **Problem:** Given an array that may contain duplicates, return all unique subsets.
 
@@ -519,9 +519,9 @@ console.log(subsetsWithDup([1, 2, 2]));
 
 ### Problem 9: Word Search
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Backtracking, Matrix, String]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Backtracking, Matrix, String]
 
 **Problem:** Given an m x n board of letters and a word, determine if the word exists in the grid (adjacent cells, no reuse).
 
@@ -585,9 +585,9 @@ console.log(exist(board, \"ABCB\")); // false
 
 ### Problem 10: Generate Parentheses
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Backtracking, String]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Backtracking, String]
 
 **Problem:** Given n pairs of parentheses, generate all well-formed combinations.
 
@@ -633,9 +633,9 @@ console.log(generateParenthesis(1)); // [\"()\"]
 
 ### Problem 11: Palindrome Partitioning
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Backtracking, String, DP]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Backtracking, String, DP]
 
 **Problem:** Given a string, partition it such that every substring is a palindrome. Return all possible palindromic partitions.
 
@@ -697,9 +697,9 @@ console.log(partition(\"a\")); // [[\"a\"]]
 
 ### Problem 12: Restore IP Addresses
 
-🏷️ **Companies:** [Amazon] [Google] [Meta]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Backtracking, String]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Backtracking, String]
 
 **Problem:** Given a string of digits, return all valid IP addresses that can be formed by inserting dots.
 
@@ -756,9 +756,9 @@ console.log(restoreIpAddresses(\"0000\")); // [\"0.0.0.0\"]
 
 ### Problem 13: N-Queens
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-📊 **Difficulty:** Hard
-📂 **Topics:** [Backtracking, Matrix]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+ðŸ“Š **Difficulty:** Hard
+ðŸ“‚ **Topics:** [Backtracking, Matrix]
 
 **Problem:** Place n queens on an n x n chessboard so that no two queens attack each other. Return all distinct solutions.
 
@@ -826,9 +826,9 @@ console.log(solveNQueens(1)); // [[\"Q\"]]
 
 ### Problem 14: Sudoku Solver
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-📊 **Difficulty:** Hard
-📂 **Topics:** [Backtracking, Matrix, Hash Table]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+ðŸ“Š **Difficulty:** Hard
+ðŸ“‚ **Topics:** [Backtracking, Matrix, Hash Table]
 
 **Problem:** Write a program to solve a Sudoku puzzle by filling empty cells (denoted by '.').
 
@@ -923,9 +923,9 @@ console.log(board);
 
 ### Problem 15: Combinations
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-📊 **Difficulty:** Easy (but included as Hard for completeness)
-📂 **Topics:** [Backtracking, Combinatorics]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+ðŸ“Š **Difficulty:** Easy (but included as Hard for completeness)
+ðŸ“‚ **Topics:** [Backtracking, Combinatorics]
 
 **Problem:** Given two integers n and k, return all possible combinations of k numbers chosen from the range [1, n].
 
@@ -982,19 +982,19 @@ Pruning is the key to making backtracking efficient. Without pruning, backtracki
 
 **Common pruning techniques:**
 
-1. **Feasibility pruning** — Stop exploring if the current partial solution cannot possibly lead to a valid complete solution.
+1. **Feasibility pruning** â€” Stop exploring if the current partial solution cannot possibly lead to a valid complete solution.
    - Example: In N-Queens, if placing a queen at (r, c) conflicts with existing queens, skip.
 
-2. **Optimality pruning (branch and bound)** — Stop exploring if the current partial solution cannot beat the best found so far.
+2. **Optimality pruning (branch and bound)** â€” Stop exploring if the current partial solution cannot beat the best found so far.
    - Example: In TSP, if the current path length already exceeds the best tour found, backtrack.
 
-3. **Symmetry pruning** — Skip symmetrical solutions that are equivalent.
+3. **Symmetry pruning** â€” Skip symmetrical solutions that are equivalent.
    - Example: In combinations, enforce order to avoid duplicates (start index >= previous index).
 
-4. **Forward checking** — Look ahead to detect dead ends before full exploration.
+4. **Forward checking** â€” Look ahead to detect dead ends before full exploration.
    - Example: In Sudoku, check if any empty cell has no valid options.
 
-5. **Constraint propagation** — Reduce the domain of future variables based on current assignments.
+5. **Constraint propagation** â€” Reduce the domain of future variables based on current assignments.
    - Example: In Sudoku, update possibilities for peers when a cell is filled.
 
 #### Time Complexity Analysis
@@ -1054,19 +1054,19 @@ function solve(problem):
 
 #### Common Interview Mistakes
 
-1. **Not restoring state** — Always undo changes after recursion returns. Otherwise the state is corrupted.
-2. **Missing base case** — Ensure all paths lead to a base case to avoid infinite recursion.
-3. **Copying incorrectly** — Use `[...current]` or `current.slice()` not just `result.push(current)`.
-4. **Inefficient validation** — Precompute constraints (e.g., col sets for N-Queens) instead of checking on each call.
-5. **Not sorting for duplicates** — Sort input and skip duplicates to avoid repeated solutions.
-6. **Over-pruning** — Make sure your pruning doesn't eliminate valid solutions.
+1. **Not restoring state** â€” Always undo changes after recursion returns. Otherwise the state is corrupted.
+2. **Missing base case** â€” Ensure all paths lead to a base case to avoid infinite recursion.
+3. **Copying incorrectly** â€” Use `[...current]` or `current.slice()` not just `result.push(current)`.
+4. **Inefficient validation** â€” Precompute constraints (e.g., col sets for N-Queens) instead of checking on each call.
+5. **Not sorting for duplicates** â€” Sort input and skip duplicates to avoid repeated solutions.
+6. **Over-pruning** â€” Make sure your pruning doesn't eliminate valid solutions.
 
 #### Performance Optimization Tips
 
 - **Use bit masks** instead of arrays for visited states (faster and memory efficient)
 - **Precompute constraints** before starting the recursion
 - **Use global state** with undo rather than passing copies
-- **Order choices wisely** — try the most constrained options first (most valuable heuristic)
+- **Order choices wisely** â€” try the most constrained options first (most valuable heuristic)
 - **Use iterative deepening** for problems where optimal depth is unknown
 
 ## Summary Table

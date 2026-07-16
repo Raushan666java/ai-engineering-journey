@@ -1,4 +1,4 @@
-# Chapter 3: CPU Scheduling
+﻿# Chapter 3: CPU Scheduling
 
 **<< [Processes](./02-processes.md)** | [**Next: Threads**](./04-threads.md) >>
 
@@ -16,16 +16,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/operating-systems/03-cpu-scheduling/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/operating-systems/03-cpu-scheduling/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/operating-systems/03-cpu-scheduling/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/operating-systems/03-cpu-scheduling/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/operating-systems/03-cpu-scheduling/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/operating-systems/03-cpu-scheduling/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/operating-systems/03-cpu-scheduling/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/operating-systems/03-cpu-scheduling/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/operating-systems/03-cpu-scheduling/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/operating-systems/03-cpu-scheduling/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/operating-systems/03-cpu-scheduling/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/operating-systems/03-cpu-scheduling/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -40,14 +40,14 @@ Imagine you are the sole cashier at a busy supermarket. There is one checkout co
 
 **Which customer do you serve next?**
 
-- If you serve the first person who lined up (FCFS), the customers with 3 items each wait while the 24-item customer checks out first — they get frustrated and may leave.
+- If you serve the first person who lined up (FCFS), the customers with 3 items each wait while the 24-item customer checks out first â€” they get frustrated and may leave.
 - If you always pick the customer with the fewest items (SJF), the small-basket customers leave happy, but the large-basket customer might wait indefinitely.
 - If you give each customer 30 seconds of service and then rotate (Round Robin), everyone makes progress, but you spend extra time switching between customers (context-switch overhead).
 - If VIP customers jump the queue (Priority), regular customers may starve.
 
 This is **CPU scheduling** in a nutshell: deciding which ready process gets the CPU next. A good scheduler balances **throughput** (customers served per hour), **fairness** (nobody waits too long), **response time** (how fast the first item is scanned), and **overhead** (time spent switching between customers).
 
-Without CPU scheduling, a system would run processes one after another — a long CPU-bound process would block interactive tasks until it finished. That worked in the batch-processing era, but modern systems run hundreds of processes concurrently. The scheduler makes multitasking possible.
+Without CPU scheduling, a system would run processes one after another â€” a long CPU-bound process would block interactive tasks until it finished. That worked in the batch-processing era, but modern systems run hundreds of processes concurrently. The scheduler makes multitasking possible.
 
 ---
 
@@ -60,7 +60,7 @@ Without CPU scheduling, a system would run processes one after another — a lon
 | **SJF** | Optimal avg. waiting time; impractical without knowing future CPU bursts |
 | **SRTF** | Preemptive SJF; optimal but more context switches |
 | **Priority Scheduling** | Can cause indefinite blocking (starvation); aging solves it |
-| **Round Robin** | Preemptive; time quantum determines performance — too large => FCFS, too small => overhead |
+| **Round Robin** | Preemptive; time quantum determines performance â€” too large => FCFS, too small => overhead |
 | **Multilevel Queue** | Processes partitioned into queues with different scheduling policies |
 | **MLFQ** | Processes move between queues; adapts to behavior |
 
@@ -94,14 +94,14 @@ CPU scheduling is the foundation of multiprogramming. The **scheduler** selects 
 3. Switches from waiting to ready (I/O completion)
 4. Terminates
 
-When scheduling only happens in cases 1 and 4, the algorithm is **non-preemptive**. Once a process gets the CPU, it keeps it until it voluntarily yields or terminates. Cases 2 and 3 require **preemptive** scheduling — the OS can forcibly remove the CPU from a process.
+When scheduling only happens in cases 1 and 4, the algorithm is **non-preemptive**. Once a process gets the CPU, it keeps it until it voluntarily yields or terminates. Cases 2 and 3 require **preemptive** scheduling â€” the OS can forcibly remove the CPU from a process.
 
 **Dispatcher** is the module that gives control of the CPU to the process selected by the scheduler. Its work includes:
 - Switching context (saving/restoring registers)
 - Switching to user mode
 - Jumping to the proper location in the program
 
-**Dispatch latency** — the time the dispatcher takes to stop one process and start another — must be minimized (typically less than 10 microseconds).
+**Dispatch latency** â€” the time the dispatcher takes to stop one process and start another â€” must be minimized (typically less than 10 microseconds).
 
 ### Scheduling Criteria
 
@@ -114,7 +114,7 @@ When scheduling only happens in cases 1 and 4, the algorithm is **non-preemptive
 | **Waiting time** | Total time spent in ready queue | Sum of periods waiting in ready queue | Minimize |
 | **Response time** | Time from submission to first CPU response | First start time - Arrival time | Minimize (critical for interactive systems) |
 
-**Key insight**: Turnaround time includes all execution time (CPU + I/O). Waiting time measures only the time spent waiting in the ready queue — NOT including time actually running on CPU or doing I/O.
+**Key insight**: Turnaround time includes all execution time (CPU + I/O). Waiting time measures only the time spent waiting in the ready queue â€” NOT including time actually running on CPU or doing I/O.
 
 ---
 
@@ -127,13 +127,13 @@ When scheduling only happens in cases 1 and 4, the algorithm is **non-preemptive
 
 ##### Real-World Analogy
 
-A single queue at a bank teller. Customers join the back of the line. The teller serves the person at the front, one at a time, until each transaction is fully complete. No interruptions — the teller never stops mid-transaction to serve someone else.
+A single queue at a bank teller. Customers join the back of the line. The teller serves the person at the front, one at a time, until each transaction is fully complete. No interruptions â€” the teller never stops mid-transaction to serve someone else.
 
 ##### Algorithm Steps
 
 1. All processes are added to the ready queue in order of their arrival time
 2. The scheduler picks the process at the head of the ready queue
-3. The chosen process runs to completion (non-preemptive — it holds the CPU until it terminates or performs I/O)
+3. The chosen process runs to completion (non-preemptive â€” it holds the CPU until it terminates or performs I/O)
 4. On completion, the process is removed from the queue
 5. The scheduler picks the new head of the ready queue
 6. Repeat from step 2 until the ready queue is empty
@@ -160,7 +160,7 @@ FUNCTION FCFS_Scheduling(processes[]):
     RETURN processes WITH computed times
 ```
 
-##### Dry Run — Step-by-Step Trace
+##### Dry Run â€” Step-by-Step Trace
 
 **Workload**: Three processes, all arrive at time 0.
 
@@ -327,7 +327,7 @@ if __name__ == "__main__":
 | **Time (best)** | O(n) | If already sorted by arrival, one linear pass suffices |
 | **Space** | O(n) | Storing the process table of n entries |
 
-**Why O(n log n)?** The sorting step requires comparison-based sorting, which has a known lower bound of Omega(n log n). The scheduling loop itself is pure O(n) — one pass, constant work per process. Without sorting, the algorithm is O(n).
+**Why O(n log n)?** The sorting step requires comparison-based sorting, which has a known lower bound of Omega(n log n). The scheduling loop itself is pure O(n) â€” one pass, constant work per process. Without sorting, the algorithm is O(n).
 
 **Why not O(1)?** We must examine every process at least once to compute its times. Since there are n processes, the lower bound is Omega(n).
 
@@ -339,27 +339,27 @@ if __name__ == "__main__":
 | Fair in the order of arrival (no bias) | Average waiting time is generally poor |
 | Minimal scheduling overhead (no preemption timers) | Not suitable for time-sharing / interactive systems |
 | Every process runs to completion (predictable) | Low CPU and device utilization in mixed workloads |
-| No starvation — every process eventually executes | Response time is terrible for late-arriving short jobs |
-| Intuitive for developers and users | Non-preemptive — a long process blocks everyone |
+| No starvation â€” every process eventually executes | Response time is terrible for late-arriving short jobs |
+| Intuitive for developers and users | Non-preemptive â€” a long process blocks everyone |
 
 ##### Edge Cases
 
-1. **All processes arrive at same time**: Executes in input/process-ID order. Works correctly — no special handling needed.
+1. **All processes arrive at same time**: Executes in input/process-ID order. Works correctly â€” no special handling needed.
 
 2. **Starvation**: Does **not** occur in FCFS. Every process moves deterministically toward the head of the queue. Guaranteed finite waiting time.
 
 3. **Zero-burst process**: A process with burst = 0 completes immediately. Start = arrival, waiting = 0, turnaround = 0. The next process inherits the same start time.
 
-4. **CPU-bound + I/O-bound mixed workloads**: A CPU-bound process with burst 100 ms followed by ten I/O-bound processes with bursts of 2 ms each. The I/O-bound processes each wait (100, 102, 104, ...) ms — I/O devices are idle during the entire CPU burst. This is the **convoy effect** and it severely degrades device utilization.
+4. **CPU-bound + I/O-bound mixed workloads**: A CPU-bound process with burst 100 ms followed by ten I/O-bound processes with bursts of 2 ms each. The I/O-bound processes each wait (100, 102, 104, ...) ms â€” I/O devices are idle during the entire CPU burst. This is the **convoy effect** and it severely degrades device utilization.
 
 5. **Late arrivals**: If a long process (burst 10) arrives at time 0 and a short process (burst 1) arrives at time 1, the short process waits 9 ms. In SJF, it would start almost immediately.
 
 
-#### 2. Shortest-Job-First (SJF) — Non-Preemptive
+#### 2. Shortest-Job-First (SJF) â€” Non-Preemptive
 
 ##### Real-World Analogy
 
-The express checkout lane at a supermarket. The cashier scans the line and picks the customer with the fewest items — regardless of who arrived first. Customers with small baskets are served quickly. A customer with a full cart may wait a long time if people with smaller baskets keep arriving.
+The express checkout lane at a supermarket. The cashier scans the line and picks the customer with the fewest items â€” regardless of who arrived first. Customers with small baskets are served quickly. A customer with a full cart may wait a long time if people with smaller baskets keep arriving.
 
 ##### Algorithm Steps
 
@@ -405,7 +405,7 @@ FUNCTION SJF_NonPreemptive(processes[]):
     RETURN completed
 ```
 
-##### Dry Run — Step-by-Step Trace
+##### Dry Run â€” Step-by-Step Trace
 
 **Workload**: Different arrival times.
 
@@ -434,7 +434,7 @@ FUNCTION SJF_NonPreemptive(processes[]):
 | 6 | P1 finishes | P2(8), P3(7), P4(3) | Pick P4 (shortest burst = 3) |
 | 9 | P4 finishes | P2(8), P3(7) | Pick P3 (shortest burst = 7) |
 | 16 | P3 finishes | P2(8) | Run P2 (only choice) |
-| 24 | P2 finishes | — | All done |
+| 24 | P2 finishes | â€” | All done |
 
 **Trace Table**:
 
@@ -480,7 +480,7 @@ void sjf_nonpreemptive(vector<Process>& procs) {
         }
 
         if (idx == -1) {
-            time++; // idle — advance time
+            time++; // idle â€” advance time
             continue;
         }
 
@@ -582,41 +582,41 @@ if __name__ == "__main__":
 | Resource | Complexity | Why |
 |----------|-----------|-----|
 | **Time (worst)** | O(n^2) | Each of n iterations scans up to n processes to find the min burst |
-| **Time (min-heap)** | O(n log n) | Using a min-heap (priority queue) for ready queue — O(log n) insert and extract-min |
+| **Time (min-heap)** | O(n log n) | Using a min-heap (priority queue) for ready queue â€” O(log n) insert and extract-min |
 | **Space** | O(n) | Process table + ready queue |
 
 **Why O(n^2) in the simple approach?** The outer while loop runs n times (one per process). For each iteration, we scan all n processes to find the one with the shortest burst that has arrived. This gives O(n^2). Using a **min-heap** reduces this to O(n log n): each process is inserted once (O(log n)) and extracted once (O(log n)).
 
-**Why O(n log n) is the lower bound?** SJF requires repeatedly finding the minimum element among dynamically arriving items — this is exactly what a priority queue provides. Sorting alone is insufficient because arrivals are interleaved with scheduling.
+**Why O(n log n) is the lower bound?** SJF requires repeatedly finding the minimum element among dynamically arriving items â€” this is exactly what a priority queue provides. Sorting alone is insufficient because arrivals are interleaved with scheduling.
 
 ##### Advantages & Disadvantages
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Minimizes average waiting time (provably optimal for non-preemptive) | Requires knowing future CPU burst lengths — impossible in practice |
+| Minimizes average waiting time (provably optimal for non-preemptive) | Requires knowing future CPU burst lengths â€” impossible in practice |
 | Good for batch systems where job times are known | Long processes may starve if many short jobs keep arriving |
-| Reduces turnaround time for short processes | Non-preemptive — a long-running short job blocks new short arrivals |
+| Reduces turnaround time for short processes | Non-preemptive â€” a long-running short job blocks new short arrivals |
 | Simple to understand and benchmark against | Tie-breaking (FCFS) affects fairness |
 
 ##### Edge Cases
 
 1. **All arrive at time 0**: SJF degenerates to sorting by burst time. The shortest runs first. No differences from the general case.
 
-2. **Starvation**: A process with a very long burst may be delayed indefinitely if shorter processes keep arriving. This is real starvation — the long process never gets CPU time.
+2. **Starvation**: A process with a very long burst may be delayed indefinitely if shorter processes keep arriving. This is real starvation â€” the long process never gets CPU time.
 
 3. **Zero-burst process**: Runs immediately when selected, completes instantly, yields the CPU. Functions correctly.
 
 4. **Equal burst times**: The tie is broken by arrival order (FCFS). If both arrival and burst are equal, by process ID or insertion order.
 
-5. **CPU-bound + I/O-bound**: I/O-bound processes (short CPU bursts) are favored — they get CPU quickly, do their I/O, return with another short burst, and get CPU again. CPU-bound processes are systematically penalized.
+5. **CPU-bound + I/O-bound**: I/O-bound processes (short CPU bursts) are favored â€” they get CPU quickly, do their I/O, return with another short burst, and get CPU again. CPU-bound processes are systematically penalized.
 
 ---
 
-#### 3. Shortest Remaining Time First (SRTF) — Preemptive SJF
+#### 3. Shortest Remaining Time First (SRTF) â€” Preemptive SJF
 
 ##### Real-World Analogy
 
-A hospital emergency room triage system. When a new patient arrives, the doctor assesses both the new patient's and the current patient's remaining treatment time. If the new patient needs less time to treat, the doctor switches to the new patient — even if the current patient is mid-treatment. This minimizes the average time spent in the ER but causes frequent interruptions.
+A hospital emergency room triage system. When a new patient arrives, the doctor assesses both the new patient's and the current patient's remaining treatment time. If the new patient needs less time to treat, the doctor switches to the new patient â€” even if the current patient is mid-treatment. This minimizes the average time spent in the ER but causes frequent interruptions.
 
 ##### Algorithm Steps
 
@@ -650,7 +650,7 @@ FUNCTION SRTF(processes[]):
             current_time++
             CONTINUE
 
-        // Preemption check happens naturally — we pick the shortest remaining
+        // Preemption check happens naturally â€” we pick the shortest remaining
         IF idx != prev_process AND prev_process != -1:
             // Context switch occurs, record preemption
             MARK preemption at current_time
@@ -667,7 +667,7 @@ FUNCTION SRTF(processes[]):
             processes[idx].waiting_time = processes[idx].turnaround_time - processes[idx].burst_time
 ```
 
-##### Dry Run — Step-by-Step Trace
+##### Dry Run â€” Step-by-Step Trace
 
 **Workload**: Different arrival times to show preemption.
 
@@ -690,13 +690,13 @@ FUNCTION SRTF(processes[]):
 | Time | Event | Ready Queue (remaining) | Decision |
 |------|-------|------------------------|----------|
 | 0 | P1 arrives | P1(8) | Run P1 |
-| 1 | P2 arrives | P1(7), P2(4) | P2 has less remaining (4 &lt; 7) — **preempt P1**, run P2 |
-| 2 | P3 arrives | P1(7), P2(3), P3(9) | P2 still shortest (3) — continue P2 |
-| 3 | P4 arrives | P1(7), P2(2), P3(9), P4(5) | P2 still shortest (2) — continue P2 |
-| 5 | P2 finishes | P1(7), P3(9), P4(5) | P4 shortest (5) — run P4 |
-| 10 | P4 finishes | P1(7), P3(9) | P1 shortest (7) — resume P1 |
+| 1 | P2 arrives | P1(7), P2(4) | P2 has less remaining (4 &lt; 7) â€” **preempt P1**, run P2 |
+| 2 | P3 arrives | P1(7), P2(3), P3(9) | P2 still shortest (3) â€” continue P2 |
+| 3 | P4 arrives | P1(7), P2(2), P3(9), P4(5) | P2 still shortest (2) â€” continue P2 |
+| 5 | P2 finishes | P1(7), P3(9), P4(5) | P4 shortest (5) â€” run P4 |
+| 10 | P4 finishes | P1(7), P3(9) | P1 shortest (7) â€” resume P1 |
 | 17 | P1 finishes | P3(9) | Run P3 (only choice) |
-| 26 | P3 finishes | — | All done |
+| 26 | P3 finishes | â€” | All done |
 
 **Trace Table**:
 
@@ -708,10 +708,10 @@ FUNCTION SRTF(processes[]):
 | P4 | 3 | 5 | 10 | 2 | 7 |
 
 **Waiting time details**:
-- P1 runs 0-1 (1 unit), preempted, resumes at 10, finishes at 17 → total wait = (10 − 1) = 9
-- P2 arrives at 1, runs 1-5 → wait = 0
-- P3 arrives at 2, runs 17-26 → wait = 15
-- P4 arrives at 3, runs 5-10 → wait = 2
+- P1 runs 0-1 (1 unit), preempted, resumes at 10, finishes at 17 â†’ total wait = (10 âˆ’ 1) = 9
+- P2 arrives at 1, runs 1-5 â†’ wait = 0
+- P3 arrives at 2, runs 17-26 â†’ wait = 15
+- P4 arrives at 3, runs 5-10 â†’ wait = 2
 
 **Calculations**:
 - Average waiting time = (9 + 0 + 15 + 2) / 4 = **6.5 ms**
@@ -851,7 +851,7 @@ if __name__ == "__main__":
 | **Time (min-heap)** | O((n + B) log n) | Each arrival inserts into heap (O(log n)), each time unit extracts-min (O(log n)). Optimized: O(n log n) for n processes |
 | **Space** | O(n) | Process table + priority queue |
 
-**Why O((n + B) log n)?** In the naive implementation, we scan all n processes every time unit. If the total burst time across all processes is B, this is O(nB). With a min-heap keyed by remaining time, each arrival is one insert, and each preemption/finish is one extract-min. However, remaining time changes every time unit, which complicates heap usage — typically we only re-evaluate at arrival events.
+**Why O((n + B) log n)?** In the naive implementation, we scan all n processes every time unit. If the total burst time across all processes is B, this is O(nB). With a min-heap keyed by remaining time, each arrival is one insert, and each preemption/finish is one extract-min. However, remaining time changes every time unit, which complicates heap usage â€” typically we only re-evaluate at arrival events.
 
 **SRTF vs SJF**: SRTF is strictly better (lower avg waiting time) because preemption allows it to react to new short jobs immediately. SJF (non-preemptive) can get stuck running a medium-length job while a short one waits.
 
@@ -882,7 +882,7 @@ if __name__ == "__main__":
 
 ##### Real-World Analogy
 
-A round-robin tournament in sports (e.g., tennis). Each player gets a turn to serve. After a fixed number of points (the quantum), the serve rotates to the next player. Nobody plays to completion in one sitting — everyone gets equal playing time in rotation. If your turn ends before you finish the game, you go to the back of the line and wait for your next turn.
+A round-robin tournament in sports (e.g., tennis). Each player gets a turn to serve. After a fixed number of points (the quantum), the serve rotates to the next player. Nobody plays to completion in one sitting â€” everyone gets equal playing time in rotation. If your turn ends before you finish the game, you go to the back of the line and wait for your next turn.
 
 ##### Algorithm Steps
 
@@ -910,7 +910,7 @@ FUNCTION RoundRobin(processes[], quantum):
 
     WHILE completed < n:
         IF ready_queue is EMPTY:
-            // CPU idle — fast-forward to next arrival
+            // CPU idle â€” fast-forward to next arrival
             current_time = processes[index].arrival
             ADD processes[index] TO ready_queue
             index++
@@ -938,7 +938,7 @@ FUNCTION RoundRobin(processes[], quantum):
     RETURN processes WITH computed times
 ```
 
-##### Dry Run — Step-by-Step Trace
+##### Dry Run â€” Step-by-Step Trace
 
 **Workload**: Three processes, all arrive at time 0, quantum = 4 ms.
 
@@ -966,8 +966,8 @@ FUNCTION RoundRobin(processes[], quantum):
 | 14 | P1 | Runs for 4 ms | P1(12) | P1 |
 | 18 | P1 | Runs for 4 ms | P1(8) | P1 |
 | 22 | P1 | Runs for 4 ms | P1(4) | P1 |
-| 26 | P1 | Runs for 4 ms (finishes) | P1(0) | — |
-| 30 | — | All done | — | — |
+| 26 | P1 | Runs for 4 ms (finishes) | P1(0) | â€” |
+| 30 | â€” | All done | â€” | â€” |
 
 **Trace Table**:
 
@@ -1149,7 +1149,7 @@ if __name__ == "__main__":
 | Advantages | Disadvantages |
 |------------|---------------|
 | Excellent response time for interactive processes | Average turnaround time is worse than SJF/SRTF |
-| Fair — every process gets equal CPU share | Performance depends heavily on quantum size |
+| Fair â€” every process gets equal CPU share | Performance depends heavily on quantum size |
 | No starvation (finite waiting time guaranteed) | Too many context switches if quantum is small |
 | Simple to implement with a FIFO queue | Degrades to FCFS if quantum is too large |
 | Best for time-sharing systems | Does not prioritize I/O-bound or interactive processes |
@@ -1166,17 +1166,17 @@ if __name__ == "__main__":
 
 ##### Edge Cases
 
-1. **All arrive at time 0**: Standard case — every process gets one quantum in round-robin order. Works identically to described behavior.
+1. **All arrive at time 0**: Standard case â€” every process gets one quantum in round-robin order. Works identically to described behavior.
 
 2. **Starvation**: Does **not** occur in Round Robin. Every process gets a turn within a bounded number of context switches. Maximum wait time for any process is approximately (n - 1) * quantum.
 
 3. **Zero-burst process**: Gets the CPU, runs 0 ms, completes instantly. No impact on schedule.
 
-4. **Quantum = 0**: Degenerate case — infinite context switches, zero work done. Never used in practice.
+4. **Quantum = 0**: Degenerate case â€” infinite context switches, zero work done. Never used in practice.
 
 5. **Quantum larger than all bursts**: RR degenerates to FCFS. No preemption occurs because every process finishes within its first quantum.
 
-6. **Very short quantum**: If quantum approaches context-switch time, overhead dominates and throughput collapses. Example: quantum = 0.2 ms, context switch = 0.1 ms → 33% overhead.
+6. **Very short quantum**: If quantum approaches context-switch time, overhead dominates and throughput collapses. Example: quantum = 0.2 ms, context switch = 0.1 ms â†’ 33% overhead.
 
 
 #### 5. Priority Scheduling
@@ -1227,7 +1227,7 @@ FUNCTION Priority_Preemptive(processes[]):
             processes[idx].waiting_time = processes[idx].turnaround_time - processes[idx].burst_time
 ```
 
-##### Dry Run — Step-by-Step Trace
+##### Dry Run â€” Step-by-Step Trace
 
 | Process | Arrival | Burst | Priority (lower = higher) |
 |---------|---------|-------|--------------------------|
@@ -1250,10 +1250,10 @@ FUNCTION Priority_Preemptive(processes[]):
 | 0 | P1, P2 arrive | P1(3), P2(1) | P2 highest priority (1) |
 | 2 | P3 arrives | P1(3), P2(rem 3), P3(2) | P2 still running (priority 1 &lt; 2) |
 | 3 | P4 arrives | P1(3), P2(rem 2), P3(2), P4(1) | P2 still has priority 1. P4 also priority 1, but P2 is running. Continue P2. |
-| 5 | P2 finishes | P1(3), P3(2), P4(1) | P4 has highest priority (1) — run P4 |
-| 6 | P4 finishes | P1(3), P3(2) | P3 has highest priority (2) — run P3 |
+| 5 | P2 finishes | P1(3), P3(2), P4(1) | P4 has highest priority (1) â€” run P4 |
+| 6 | P4 finishes | P1(3), P3(2) | P3 has highest priority (2) â€” run P3 |
 | 8 | P3 finishes | P1(3) | Run P1 (only choice) |
-| 18 | P1 finishes | — | All done |
+| 18 | P1 finishes | â€” | All done |
 
 **Trace Table**:
 
@@ -1415,16 +1415,16 @@ if __name__ == "__main__":
 | **Time (heap-optimized)** | O(n log n) | Priority queue gives O(log n) insert/extract per event |
 | **Space** | O(n) | Process table + priority queue |
 
-**Why O(n * total_burst) for naive preemptive?** Similar to SRTF — scanning all processes each time unit to find highest priority. With total burst B, this is O(nB). Using a heap keyed by priority reduces this significantly.
+**Why O(n * total_burst) for naive preemptive?** Similar to SRTF â€” scanning all processes each time unit to find highest priority. With total burst B, this is O(nB). Using a heap keyed by priority reduces this significantly.
 
-**Why use priority scheduling?** Priority scheduling is the foundation of nearly all real-world OS schedulers (Linux, Windows, macOS). Processes are assigned priorities based on their type and behavior — system daemons get high priority, background tasks get low priority. The key challenge is preventing starvation through **aging**.
+**Why use priority scheduling?** Priority scheduling is the foundation of nearly all real-world OS schedulers (Linux, Windows, macOS). Processes are assigned priorities based on their type and behavior â€” system daemons get high priority, background tasks get low priority. The key challenge is preventing starvation through **aging**.
 
 ##### Advantages & Disadvantages
 
 | Advantages | Disadvantages |
 |------------|---------------|
 | Supports priority-based execution (important for real-time systems) | **Starvation**: low-priority processes may never execute |
-| Configurable — can be preemptive or non-preemptive | Priority inversion (high-priority blocked by low-priority holding a lock) |
+| Configurable â€” can be preemptive or non-preemptive | Priority inversion (high-priority blocked by low-priority holding a lock) |
 | Reflects real-world importance of processes | Priority assignment is subjective and may lead to abuse |
 | Can be combined with other algorithms (e.g., Priority + RR) | Aging adds complexity |
 
@@ -1446,7 +1446,7 @@ WHILE process p is in ready queue:
 
 **Problem**: A high-priority process H needs a resource held by a low-priority process L. L is preempted by medium-priority processes M, so L cannot release the resource. H is blocked indefinitely by M.
 
-**Solution — Priority Inheritance**: When L holds a lock that H needs, L temporarily inherits H's priority. This prevents M from preempting L. Once L releases the lock, it returns to its original priority.
+**Solution â€” Priority Inheritance**: When L holds a lock that H needs, L temporarily inherits H's priority. This prevents M from preempting L. Once L releases the lock, it returns to its original priority.
 
 This was famously demonstrated on the **Mars Pathfinder** mission (1997), where priority inversion caused system resets. The VxWorks RTOS had priority inheritance enabled by default, but the relevant flag was accidentally cleared during testing.
 
@@ -1470,7 +1470,7 @@ This was famously demonstrated on the **Mars Pathfinder** mission (1997), where 
 
 ##### Real-World Analogy
 
-An airport with separate security lanes. Lane 1 is for first-class and priority passengers (RR with short quantum — fast processing). Lane 2 is for families with small children (RR with longer quantum). Lane 3 is for general boarding (FCFS — slow but simple). Passengers never switch lanes — once assigned, you always use the same lane.
+An airport with separate security lanes. Lane 1 is for first-class and priority passengers (RR with short quantum â€” fast processing). Lane 2 is for families with small children (RR with longer quantum). Lane 3 is for general boarding (FCFS â€” slow but simple). Passengers never switch lanes â€” once assigned, you always use the same lane.
 
 ##### Algorithm Steps
 
@@ -1530,9 +1530,9 @@ FUNCTION MultilevelQueue(processes[]):
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Separates processes by type — optimal algorithm per type | Queue assignment is fixed and cannot adapt |
+| Separates processes by type â€” optimal algorithm per type | Queue assignment is fixed and cannot adapt |
 | Low overhead (simple queue management) | Low-priority queues can starve |
-| Configurable between-queue scheduling | Inflexible — a batch process that becomes interactive is stuck in the batch queue |
+| Configurable between-queue scheduling | Inflexible â€” a batch process that becomes interactive is stuck in the batch queue |
 
 ##### Edge Cases
 
@@ -1548,7 +1548,7 @@ FUNCTION MultilevelQueue(processes[]):
 
 ##### Real-World Analogy
 
-A smart highway toll system with multiple lanes. New cars enter the express lane (fast processing). If a car is slow (takes too long), it gets moved to a slower lane. If a car demonstrates it belongs in a faster lane (quick bursts), it can move back up. The system learns from your driving behavior and adapts your lane assignment dynamically — unlike fixed lanes that never change.
+A smart highway toll system with multiple lanes. New cars enter the express lane (fast processing). If a car is slow (takes too long), it gets moved to a slower lane. If a car demonstrates it belongs in a faster lane (quick bursts), it can move back up. The system learns from your driving behavior and adapts your lane assignment dynamically â€” unlike fixed lanes that never change.
 
 ##### Algorithm Steps
 
@@ -1608,7 +1608,7 @@ FUNCTION MLFQ(processes[], boost_interval):
         time = time + run_time
 ```
 
-##### Dry Run — Step-by-Step Trace
+##### Dry Run â€” Step-by-Step Trace
 
 | Process | Arrival | Burst |
 |---------|---------|-------|
@@ -1627,16 +1627,16 @@ FUNCTION MLFQ(processes[], boost_interval):
 
 | Time | Event | Q0 | Q1 | Q2 | Decision |
 |------|-------|----|----|----|----------|
-| 0 | P1 arrives, enters Q0 | P1(5) | — | — | P1 runs (Q0 only process) |
-| 1 | P2 arrives, enters Q0 | P2(20) | — | — | P1 still running in Q0 |
-| 2 | P3 arrives, enters Q0 | P2(20), P3(30) | — | — | P1 still running |
-| 5 | P1 finishes | P2(20), P3(30) | — | — | Q0 not empty, pick P2 |
-| 13 | P2 uses Q0 quantum (8 ms), not done | P3(30) | P2(12) | — | Q0 has P3, pick P3 |
-| 21 | P3 uses Q0 quantum (8 ms), not done | — | P2(12), P3(22) | — | Q0 empty, switch to Q1 |
-| 21 | Q1: pick P2 | — | P2(12), P3(22) | — | Run P2 for 16 ms or until done |
-| 29 | P2 finishes in Q1 | — | P3(22) | — | Continue Q1 with P3 |
-| 45 | P3 uses Q1 quantum (16 ms), not done | — | — | P3(6) | Q1 empty, Q2 runs P3 to completion |
-| 51 | P3 finishes | — | — | — | All done |
+| 0 | P1 arrives, enters Q0 | P1(5) | â€” | â€” | P1 runs (Q0 only process) |
+| 1 | P2 arrives, enters Q0 | P2(20) | â€” | â€” | P1 still running in Q0 |
+| 2 | P3 arrives, enters Q0 | P2(20), P3(30) | â€” | â€” | P1 still running |
+| 5 | P1 finishes | P2(20), P3(30) | â€” | â€” | Q0 not empty, pick P2 |
+| 13 | P2 uses Q0 quantum (8 ms), not done | P3(30) | P2(12) | â€” | Q0 has P3, pick P3 |
+| 21 | P3 uses Q0 quantum (8 ms), not done | â€” | P2(12), P3(22) | â€” | Q0 empty, switch to Q1 |
+| 21 | Q1: pick P2 | â€” | P2(12), P3(22) | â€” | Run P2 for 16 ms or until done |
+| 29 | P2 finishes in Q1 | â€” | P3(22) | â€” | Continue Q1 with P3 |
+| 45 | P3 uses Q1 quantum (16 ms), not done | â€” | â€” | P3(6) | Q1 empty, Q2 runs P3 to completion |
+| 51 | P3 finishes | â€” | â€” | â€” | All done |
 
 ##### Complexity Analysis
 
@@ -1645,7 +1645,7 @@ FUNCTION MLFQ(processes[], boost_interval):
 | **Time** | O(n * scheduling) | Depends on algorithms used in each queue. Queue operations are O(1) per enqueue/dequeue |
 | **Space** | O(n) | All queues combined store n processes |
 
-**Why is MLFQ so powerful?** MLFQ learns process behavior without prior knowledge. Interactive processes (short CPU bursts) stay in high-priority queues and get excellent response time. CPU-bound processes (long bursts) sink to lower queues where they get larger quanta and better throughput. The scheduler adapts to the workload — no burst prediction needed.
+**Why is MLFQ so powerful?** MLFQ learns process behavior without prior knowledge. Interactive processes (short CPU bursts) stay in high-priority queues and get excellent response time. CPU-bound processes (long bursts) sink to lower queues where they get larger quanta and better throughput. The scheduler adapts to the workload â€” no burst prediction needed.
 
 ##### Advantages & Disadvantages
 
@@ -1699,7 +1699,7 @@ FUNCTION MLFQ(processes[], boost_interval):
 
 **Answer**: The convoy effect occurs in FCFS scheduling when a long CPU-bound process holds the CPU, forcing many short I/O-bound processes to wait. The I/O devices remain idle during this time, reducing overall system utilization.
 
-**Example**: P1 (CPU-bound, burst = 100 ms) runs first. Ten I/O-bound processes (burst = 2 ms each) wait behind P1. Each I/O-bound process waits 100 ms before its first 2 ms of execution. The I/O devices are idle for 100 ms — a massive waste.
+**Example**: P1 (CPU-bound, burst = 100 ms) runs first. Ten I/O-bound processes (burst = 2 ms each) wait behind P1. Each I/O-bound process waits 100 ms before its first 2 ms of execution. The I/O devices are idle for 100 ms â€” a massive waste.
 
 **Impact**:
 - CPU utilization: May still be high (P1 keeps CPU busy), but...
@@ -1709,7 +1709,7 @@ FUNCTION MLFQ(processes[], boost_interval):
 
 **Solution**: Use preemptive scheduling (RR, MLFQ) to limit how long any single process can monopolize the CPU.
 
-### Q2: Starvation vs. Deadlock — Are They the Same?
+### Q2: Starvation vs. Deadlock â€” Are They the Same?
 
 | Aspect | Starvation | Deadlock |
 |--------|-----------|----------|
@@ -1742,11 +1742,11 @@ MLFQ has several configurable parameters. Here is how to tune them:
 
 ### Q4: Can Round Robin Quantum Be Zero or Negative?
 
-**No**. A zero quantum means the CPU does zero work — every context switch preempts before any instruction executes. This is a degenerate case with infinite overhead and zero throughput. The quantum must always be a positive number, typically at least 2-3 times the context-switch time.
+**No**. A zero quantum means the CPU does zero work â€” every context switch preempts before any instruction executes. This is a degenerate case with infinite overhead and zero throughput. The quantum must always be a positive number, typically at least 2-3 times the context-switch time.
 
 ### Q5: Is FCFS Always Non-Preemptive?
 
-**Yes, in its pure form**. FCFS is defined as non-preemptive — once a process starts, it runs to completion or until it voluntarily blocks (I/O). However, a system could implement "preemptive FCFS" by using FCFS as the scheduling policy within a preemptive framework (e.g., in MLFQ's lowest queue). This is really FCFS as a **sub-policy** within a preemptive system.
+**Yes, in its pure form**. FCFS is defined as non-preemptive â€” once a process starts, it runs to completion or until it voluntarily blocks (I/O). However, a system could implement "preemptive FCFS" by using FCFS as the scheduling policy within a preemptive framework (e.g., in MLFQ's lowest queue). This is really FCFS as a **sub-policy** within a preemptive system.
 
 ---
 
@@ -1756,15 +1756,15 @@ MLFQ has several configurable parameters. Here is how to tune them:
 
 The CFS, introduced in Linux kernel 2.6.23, replaced the earlier O(1) scheduler. It is the default scheduler for regular (non-real-time) processes in Linux.
 
-**Core Idea**: Instead of fixed time slices, CFS gives each process a **proportion** of the CPU. It maintains **virtual runtime** (`vruntime`) — the amount of time a process has run, weighted by its priority.
+**Core Idea**: Instead of fixed time slices, CFS gives each process a **proportion** of the CPU. It maintains **virtual runtime** (`vruntime`) â€” the amount of time a process has run, weighted by its priority.
 
-**Data Structure**: A **red-black tree** (self-balancing BST) keyed by `vruntime`. The leftmost node is the process with the smallest `vruntime` — i.e., the one that has received the least CPU time and should run next.
+**Data Structure**: A **red-black tree** (self-balancing BST) keyed by `vruntime`. The leftmost node is the process with the smallest `vruntime` â€” i.e., the one that has received the least CPU time and should run next.
 
 ```
 rb_tree_keyed_by_vruntime:
-    [P1: vruntime=100] ← root
-    [P2: vruntime=80]  ← left child (next to run)
-    [P3: vruntime=120] ← right child
+    [P1: vruntime=100] â† root
+    [P2: vruntime=80]  â† left child (next to run)
+    [P3: vruntime=120] â† right child
 
 Next to run: P2 (smallest vruntime = 80)
 ```
@@ -1772,9 +1772,9 @@ Next to run: P2 (smallest vruntime = 80)
 **Target Latency**: The time within which every runnable process gets at least one chance to run. Default: ~20 ms.
 
 **Key Operations**:
-- `pick_next_task()`: Find leftmost node in red-black tree — O(log n)
-- `enqueue()`: Insert process into tree — O(log n)
-- `dequeue()`: Remove process from tree — O(log n)
+- `pick_next_task()`: Find leftmost node in red-black tree â€” O(log n)
+- `enqueue()`: Insert process into tree â€” O(log n)
+- `dequeue()`: Remove process from tree â€” O(log n)
 - `update_curr()`: Update `vruntime` and check if preemption needed
 
 **Nice Values**: Priority is expressed through the `nice` value (-20 to +19). Lower nice = higher priority. CFS weights time slices based on nice:
@@ -1784,9 +1784,9 @@ weight = 1024 / (1.25^nice)
 vruntime += (actual_runtime * NICE_0_LOAD / weight)
 ```
 
-A process with nice=0 gets default weight 1024. A process with nice=5 gets ~312 weight — it receives proportionally less CPU time.
+A process with nice=0 gets default weight 1024. A process with nice=5 gets ~312 weight â€” it receives proportionally less CPU time.
 
-**Why a red-black tree?** CFS needs to find the minimum `vruntime` process efficiently. A red-black tree supports O(log n) insertion (on wakeup), O(log n) deletion (on sleep), and O(1) minimum lookup (leftmost child). A simple sorted list would be O(n) for insertion. A heap would support extraction but not arbitrary deletion (when a process blocks, it must be removed from the runqueue — a heap requires O(n) for arbitrary removal).
+**Why a red-black tree?** CFS needs to find the minimum `vruntime` process efficiently. A red-black tree supports O(log n) insertion (on wakeup), O(log n) deletion (on sleep), and O(1) minimum lookup (leftmost child). A simple sorted list would be O(n) for insertion. A heap would support extraction but not arbitrary deletion (when a process blocks, it must be removed from the runqueue â€” a heap requires O(n) for arbitrary removal).
 
 ### Windows NT Scheduling
 
@@ -1804,13 +1804,13 @@ Windows uses a **priority-driven, preemptive** scheduler with 32 priority levels
 - Client systems use shorter quanta (better responsiveness)
 
 **Priority Boost**:
-- A thread waiting for I/O gets a boost when the I/O completes (e.g., keyboard input → boost to level 6)
+- A thread waiting for I/O gets a boost when the I/O completes (e.g., keyboard input â†’ boost to level 6)
 - Boosts decay by 1 after each quantum
 - After sufficient decay, the thread returns to its base priority
 
 **Foreground Boost**: The foreground process gets 3x the normal quantum to improve interactive responsiveness.
 
-**Volume**: Windows Server detects "volume" — if the process is the sole consumer of the CPU, it gets a higher priority boost.
+**Volume**: Windows Server detects "volume" â€” if the process is the sole consumer of the CPU, it gets a higher priority boost.
 
 ### Real-Time Scheduling
 
@@ -1832,7 +1832,7 @@ Real-time systems require **guaranteed response times** within deadlines. Two cl
 
 - **Preemptive**, dynamic priority
 - The process with the **earliest absolute deadline** gets the highest priority
-- **Optimal** — can schedule any set of tasks up to 100% utilization
+- **Optimal** â€” can schedule any set of tasks up to 100% utilization
 - Higher overhead (must recalculate priorities on every scheduling event)
 
 **Comparison**: RMS is simpler with lower overhead but caps at ~69% utilization. EDF achieves up to 100% utilization but requires more complex priority management.
@@ -2050,7 +2050,7 @@ class CPUScheduler {
     const totalWaiting = this.processes.reduce((s, p) => s + p.waitingTime, 0);
     const totalTurnaround = this.processes.reduce((s, p) => s + p.turnaroundTime, 0);
     const n = this.processes.length;
-    const gantt = this.ganttChart.map(g => `${g.pid}[${g.start}-${g.end}]`).join(' → ');
+    const gantt = this.ganttChart.map(g => `${g.pid}[${g.start}-${g.end}]`).join(' â†’ ');
     return {
       avgWaiting: totalWaiting / n,
       avgTurnaround: totalTurnaround / n,
@@ -2085,34 +2085,34 @@ console.log('=== Round Robin (q=3) ===', scheduler.roundRobin(3));
 **FCFS Schedule:**
 | Time | Event | Ready Queue |
 |------|-------|-------------|
-| 0 | P1 starts | — |
+| 0 | P1 starts | â€” |
 | 1 | P2 arrives | [P2] |
 | 2 | P3 arrives | [P2, P3] |
 | 3 | P4 arrives | [P2, P3, P4] |
 | 10 | P1 done | [P2, P3, P4] |
 | 15 | P2 done | [P3, P4] |
 | 17 | P3 done | [P4] |
-| 25 | P4 done | — |
+| 25 | P4 done | â€” |
 
 **FCFS:**
-- Turnaround: P1=10, P2=14, P3=15, P4=22 → Avg = 15.25
-- Waiting: P1=0, P2=9, P3=13, P4=14 → Avg = 9.0
+- Turnaround: P1=10, P2=14, P3=15, P4=22 â†’ Avg = 15.25
+- Waiting: P1=0, P2=9, P3=13, P4=14 â†’ Avg = 9.0
 
 **SJF (non-preemptive):**
-Order by burst: P3(2) → P2(5) → P4(8) → P1(10) but respecting arrival:
+Order by burst: P3(2) â†’ P2(5) â†’ P4(8) â†’ P1(10) but respecting arrival:
 | Time | Event |
 |------|-------|
 | 0 | P1 runs (only one) |
-| 10 | P1 done → P3 shortest (burst=2) |
-| 12 | P3 done → P2 (burst=5) |
-| 17 | P2 done → P4 (burst=8) |
+| 10 | P1 done â†’ P3 shortest (burst=2) |
+| 12 | P3 done â†’ P2 (burst=5) |
+| 17 | P2 done â†’ P4 (burst=8) |
 | 25 | P4 done |
 
-Waiting: P1=0, P2=9, P3=8, P4=14 → Avg = 7.75
+Waiting: P1=0, P2=9, P3=8, P4=14 â†’ Avg = 7.75
 
 **RR (quantum=4):**
-Gantt: P1[0-4] → P2[4-8] → P3[8-10] → P4[10-14] → P1[14-20] → P4[20-24]
-Response: P1=0, P2=3, P3=6, P4=7 → Avg Response = 4.0
+Gantt: P1[0-4] â†’ P2[4-8] â†’ P3[8-10] â†’ P4[10-14] â†’ P1[14-20] â†’ P4[20-24]
+Response: P1=0, P2=3, P3=6, P4=7 â†’ Avg Response = 4.0
 
 ## Concept Comparison
 
@@ -2143,10 +2143,10 @@ Response: P1=0, P2=3, P3=6, P4=7 → Avg Response = 4.0
 | **Priority Inheritance** | Temporarily boosting the priority of a lock-holding process |
 | **Dispatch Latency** | Time to switch from one process to another |
 | **Quantum** | Maximum time a process runs in Round Robin before preemption |
-| **vruntime** | Virtual runtime used by Linux CFS — weighted by priority |
-| **MLFQ** | Multilevel Feedback Queue — processes move between priority queues |
-| **RMS** | Rate-Monotonic Scheduling — fixed priority based on period |
-| **EDF** | Earliest Deadline First — dynamic priority based on deadline |
+| **vruntime** | Virtual runtime used by Linux CFS â€” weighted by priority |
+| **MLFQ** | Multilevel Feedback Queue â€” processes move between priority queues |
+| **RMS** | Rate-Monotonic Scheduling â€” fixed priority based on period |
+| **EDF** | Earliest Deadline First â€” dynamic priority based on deadline |
 
 ---
 
@@ -2273,12 +2273,12 @@ Response: P1=0, P2=3, P3=6, P4=7 → Avg Response = 4.0
 
 - CPU scheduling decides which ready process gets the CPU next
 - Preemptive scheduling can interrupt a process; non-preemptive waits for voluntary yield
-- FCFS is simple but suffers from the **convoy effect** — short processes wait behind long ones
+- FCFS is simple but suffers from the **convoy effect** â€” short processes wait behind long ones
 - SJF minimizes average waiting time but requires burst prediction (impossible in practice); SRTF is its preemptive optimal variant
 - Round Robin provides good response time for interactive workloads; quantum size is the critical tuning parameter
 - Priority scheduling can starve low-priority processes without **aging**
 - Priority inversion occurs when a high-priority process is blocked by a low-priority lock holder; **priority inheritance** is the standard fix
-- Multilevel Feedback Queue is the most flexible design — it adapts to process behavior automatically
+- Multilevel Feedback Queue is the most flexible design â€” it adapts to process behavior automatically
 - Linux CFS uses a red-black tree keyed by virtual runtime to achieve fair CPU distribution
 - Windows uses priority-driven scheduling with 32 levels, priority boosts, and variable quantum
 - Real-time scheduling (RMS, EDF) provides deadline guarantees for time-critical systems

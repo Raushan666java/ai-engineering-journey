@@ -1,4 +1,4 @@
-# Chapter 17: The C Standard Library
+﻿# Chapter 17: The C Standard Library
 
 > **Previous:** [Stacks and Queues](./16-stacks-queues.md) | **Next:** [Advanced C](./18-advanced-c.md)
 
@@ -11,7 +11,7 @@
 - Use `math.h` for floating-point trigonometric, exponential, and rounding functions
 - Use `ctype.h` for character classification and case conversion
 - Use `time.h` for date/time retrieval and formatting
-- Understand `setjmp.h` for non-local jumps — use cases and dangers
+- Understand `setjmp.h` for non-local jumps â€” use cases and dangers
 - Recognize `stdarg.h` for variadic functions and `signal.h` for signal handling
 - Apply errno-based error detection with `math.h` and `stdlib.h` functions
 - Compare `atoi` vs `strtol` vs `sscanf` for production-safe parsing
@@ -19,29 +19,26 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/17-standard-library/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/c-programming/17-standard-library/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/17-standard-library/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/c-programming/17-standard-library/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/17-standard-library/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/c-programming/17-standard-library/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/17-standard-library/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/c-programming/17-standard-library/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/17-standard-library/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/c-programming/17-standard-library/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/17-standard-library/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/c-programming/17-standard-library/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
 <!-- End Image Gallery -->
 
-
-
 ### Chapter at a Glance
-
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| `<stdio.h>` | Input/output: printf, scanf, fopen, fclose, fread, fwrite | Handles all console, file, and string I/O — most-used header |
+| `<stdio.h>` | Input/output: printf, scanf, fopen, fclose, fread, fwrite | Handles all console, file, and string I/O â€” most-used header |
 | `<stdlib.h>` | Memory allocation, random numbers, sorting, atoi | Contains malloc, free, qsort, rand, and strtol for safe parsing |
 | `<string.h>` | String manipulation: strlen, strcpy, strcmp, memcpy | All functions operate on null-terminated arrays; watch for overlap |
 | `<math.h>` | Floating-point math: sin, cos, sqrt, pow, fabs | Link with `-lm` on Unix; check errno for domain/range errors |
@@ -50,7 +47,6 @@
 | `<assert.h>` | Runtime diagnostics with assertion macros | Disable with `NDEBUG` for release builds |
 | `<setjmp.h>` | Non-local jumps across function call boundaries | Use only for deep error recovery; resource leaks are your risk |
 | `<stdarg.h>` | Variable-length argument lists (printf-family) | Mandates at least one named parameter before `...` |
-
 
 ```mermaid
 flowchart LR
@@ -71,10 +67,9 @@ flowchart LR
 
 ---
 
-## 17.1 `<stdio.h>` — Input and Output
+## 17.1 `<stdio.h>` â€” Input and Output
 
 ### Real-World Analogy: Office Mailroom
-
 
 Imagine an **office mailroom**. You have:
 - A **desk** (stdin) where you read incoming memos.
@@ -85,15 +80,13 @@ Imagine an **office mailroom**. You have:
 
 ### Numbered Steps for File I/O
 
-
 **Step 1:** Declare a `FILE*` pointer.
-**Step 2:** Call `fopen(path, mode)` to open the file — check for NULL return.
+**Step 2:** Call `fopen(path, mode)` to open the file â€” check for NULL return.
 **Step 3:** Read or write data using `fprintf`, `fscanf`, `fread`, `fwrite`, `fgets`.
 **Step 4:** When done, call `fclose(fp)` to flush buffers and release resources.
-**Step 5:** Check the return value of `fclose` — it can fail on some systems (e.g., NFS).
+**Step 5:** Check the return value of `fclose` â€” it can fail on some systems (e.g., NFS).
 
 ### Key Functions Reference
-
 
 | Function | Description | Safe Variant |
 |----------|-------------|--------------|
@@ -102,16 +95,15 @@ Imagine an **office mailroom**. You have:
 | `fopen`, `fclose` | File open/close | `fopen_s` (C11 Annex K, optional) |
 | `fread`, `fwrite` | Binary I/O | Check return count |
 | `fgets`, `fputs` | Line I/O | `fgets(buf, size, stream)` |
-| `fgetc`, `fputc` | Character I/O | — |
+| `fgetc`, `fputc` | Character I/O | â€” |
 | `fseek`, `ftell`, `rewind` | File positioning | `fseeko` on POSIX for large files |
-| `perror` | Print strerror to stderr | — |
+| `perror` | Print strerror to stderr | â€” |
 | `remove`, `rename` | File operations | Check return value |
 | `tmpfile`, `tmpnam` | Temporary files | `mkstemp` preferred (POSIX) |
 | `setvbuf` | Set buffering mode | Call before any I/O on the stream |
-| `feof`, `ferror` | Stream status checking | Use `ferror` — never `feof` alone |
+| `feof`, `ferror` | Stream status checking | Use `ferror` â€” never `feof` alone |
 
 ### Code: snprintf, sscanf, and File Copy
-
 
 ```c
 #include <stdio.h>
@@ -120,13 +112,13 @@ Imagine an **office mailroom**. You have:
 
 int main(void)
 {
-    /* snprintf — safe string formatting */
+    /* snprintf â€” safe string formatting */
     char buf[50];
     int written = snprintf(buf, sizeof(buf), "The answer is %d", 42);
     printf("Buffer: '%s' (%d chars written, would have been %d)\n",
            buf, written, (written >= (int)sizeof(buf)) ? (int)sizeof(buf) - 1 : written);
 
-    /* sscanf — parsing from string */
+    /* sscanf â€” parsing from string */
     int id;
     char name[50];
     float gpa;
@@ -163,25 +155,23 @@ Parsed 3 items: 101 Alice 3.85
 
 ### Dry Run: fread/fwrite Copy Loop
 
-
 Assume `input.txt` contains exactly 5000 bytes.
 
 | Iteration | `n = fread(...)` | Bytes Read | EOF? | `fwrite` writes | Cumulative |
 |-----------|-------------------|------------|------|-----------------|------------|
 | 1 | 4096 | 4096 | No | 4096 | 4096 |
 | 2 | 904 | 904 | Yes (EOF after) | 904 | 5000 |
-| 3 | 0 | 0 | Yes | — | 5000 |
+| 3 | 0 | 0 | Yes | â€” | 5000 |
 
 **Result:** All 5000 bytes copied. The third `fread` returns 0, loop exits.
 
 ### Pseudocode for snprintf Safety
 
-
 ```
 FUNCTION safe_format(buf, bufsize, fmt, ...):
     n <- vsnprintf(buf, bufsize, fmt, args)
     IF n >= bufsize:
-        // Output was truncated — buf is null-terminated at bufsize-1
+        // Output was truncated â€” buf is null-terminated at bufsize-1
         RETURN n  // caller can detect truncation
     END IF
     RETURN n
@@ -189,7 +179,6 @@ END FUNCTION
 ```
 
 ### Complexity Analysis
-
 
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
@@ -203,26 +192,23 @@ END FUNCTION
 
 ### Advantages and Disadvantages
 
-
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
 | **Buffering** | Automatic buffering improves throughput | setvbuf must be called before any I/O |
-| **Portability** | Part of ISO C standard — available everywhere | No raw OS features (async I/O, memory-mapped files) |
-| **Safety** | snprintf, fgets with size limits | sprintf and gets are dangerous — avoid entirely |
+| **Portability** | Part of ISO C standard â€” available everywhere | No raw OS features (async I/O, memory-mapped files) |
+| **Safety** | snprintf, fgets with size limits | sprintf and gets are dangerous â€” avoid entirely |
 | **Performance** | Block I/O via fread/fwrite is near OS speed | Line I/O is slower per-character than raw read |
-| **Error handling** | perror and errno give diagnostic info | Return values must be checked — easy to ignore |
+| **Error handling** | perror and errno give diagnostic info | Return values must be checked â€” easy to ignore |
 
 ### Edge Cases
 
-
-- **fopen(NULL, "r")**: Undefined behavior — always check pointer.
-- **fclose after failed fopen**: Undefined behavior — double-close also undefined.
+- **fopen(NULL, "r")**: Undefined behavior â€” always check pointer.
+- **fclose after failed fopen**: Undefined behavior â€” double-close also undefined.
 - **ftell after fwrite on text mode**: Return value may not be byte offset (implementation-defined).
 - **snprintf(buf, 0, ...)**: Returns number of characters that *would have* been written (C99). Buf is untouched.
 - **feof()**: Only set *after* a read attempt fails. Never use `feof` before reading.
 
 ### errno with stdio
-
 
 ```c
 #include <stdio.h>
@@ -241,31 +227,28 @@ int main(void)
 
 ---
 
-## 17.2 `<stdlib.h>` — General Utilities
+## 17.2 `<stdlib.h>` â€” General Utilities
 
 ### Real-World Analogy: Hardware Store
 
-
 `<stdlib.h>` is like a **hardware store** with different departments:
-- **Memory aisle**: `malloc`, `calloc`, `realloc`, `free` — like renting storage units.
-- **Sorting bench**: `qsort`, `bsearch` — like organizing tools by size.
-- **Conversion counter**: `atoi`, `strtol`, `atof` — like converting imperial to metric.
-- **Random bin**: `rand`, `srand` — like pulling numbered balls from a lottery machine.
-- **Process desk**: `exit`, `atexit`, `system`, `getenv` — like store management.
+- **Memory aisle**: `malloc`, `calloc`, `realloc`, `free` â€” like renting storage units.
+- **Sorting bench**: `qsort`, `bsearch` â€” like organizing tools by size.
+- **Conversion counter**: `atoi`, `strtol`, `atof` â€” like converting imperial to metric.
+- **Random bin**: `rand`, `srand` â€” like pulling numbered balls from a lottery machine.
+- **Process desk**: `exit`, `atexit`, `system`, `getenv` â€” like store management.
 
 ### Numbered Steps for Safe String-to-Integer Conversion
-
 
 **Step 1:** Include `<stdlib.h>` and `<errno.h>`.
 **Step 2:** Set `errno = 0` before the call.
 **Step 3:** Call `strtol(str, &end, base)`.
-**Step 4:** Check `end == str` — no digits parsed (error).
-**Step 5:** Check `*end != '\0'` — trailing characters (partial parse, may be acceptable).
-**Step 6:** Check `errno == ERANGE` — overflow/underflow.
+**Step 4:** Check `end == str` â€” no digits parsed (error).
+**Step 5:** Check `*end != '\0'` â€” trailing characters (partial parse, may be acceptable).
+**Step 6:** Check `errno == ERANGE` â€” overflow/underflow.
 **Step 7:** Cast result cautiously, check against `INT_MIN`/`INT_MAX` if going to `int`.
 
 ### 17.2.1 Memory Allocation
-
 
 ```c
 void *malloc(size_t size);
@@ -277,7 +260,6 @@ void free(void *ptr);
 (Detailed in Chapter 11.)
 
 ### 17.2.2 Numeric Conversion
-
 
 ```c
 #include <stdio.h>
@@ -292,11 +274,11 @@ int main(void)
     const char *bad_str  = "42abc";
     const char *overflow = "999999999999999999999";
 
-    /* atoi — simple but no error detection */
+    /* atoi â€” simple but no error detection */
     int naive = atoi(int_str);
     printf("atoi: %d\n", naive);
 
-    /* strtol — full error detection */
+    /* strtol â€” full error detection */
     errno = 0;
     char *end;
     long val = strtol(bad_str, &end, 10);
@@ -337,22 +319,20 @@ strtod: 3.14159
 
 ### Dry Run: strtol Parsing "42abc"
 
-
 | Step | end pointer | *end | val | Condition | Action |
 |------|------------|------|-----|-----------|--------|
 | 1 | &str[0] | '4' | 0 | Leading whitespace | Skip |
 | 2 | &str[2] | 'a' | 42 | isdigit? No | Stop, return 42 |
-| 3 | — | — | 42 | end != str? Yes | Partial parse detected |
+| 3 | â€” | â€” | 42 | end != str? Yes | Partial parse detected |
 
 **Result:** `val = 42`, `*end = 'a'`, trailing content `"abc"`.
 
 ### Comparison: atoi vs strtol vs sscanf
 
-
 | Feature | `atoi` | `strtol` | `sscanf` |
 |---------|--------|----------|----------|
 | **Error detection** | None | Full (errno, end pointer) | Via return value (matched count) |
-| **Base selection** | Decimal only (10) | Any base 2–36, auto-detect (0) | Via format specifier (%i = auto) |
+| **Base selection** | Decimal only (10) | Any base 2â€“36, auto-detect (0) | Via format specifier (%i = auto) |
 | **Overflow behavior** | Undefined | Returns LONG_MIN/LONG_MAX, sets ERANGE | Undefined |
 | **Trailing chars** | Ignored silently | Report via end pointer | Ignored silently |
 | **Speed** | Fastest | Fast | Slower (format parsing overhead) |
@@ -362,18 +342,16 @@ strtod: 3.14159
 | **Standard** | C89 | C89 | C89 |
 | **Recommendation** | Never use in production | Always prefer for integers | Acceptable for complex multi-value parsing |
 
-### Complexity Analysis — Numeric Conversion
-
+### Complexity Analysis â€” Numeric Conversion
 
 | Function | Time | Space | Why |
 |----------|------|-------|-----|
 | `atoi` | O(n) | O(1) | Scan n digits, no error checking overhead |
 | `strtol` | O(n) | O(1) | Same scan, plus overflow checks on each step |
-| `strtod` | O(n) | O(1) | Parses mantissa, exponent, sign — more stages |
+| `strtod` | O(n) | O(1) | Parses mantissa, exponent, sign â€” more stages |
 | `sscanf` | O(n+f) | O(1) | n = input scan, f = format string parsing |
 
 ### 17.2.3 Pseudo-Random Numbers
-
 
 ```c
 #include <stdio.h>
@@ -408,7 +386,7 @@ Five dice rolls:
 RAND_MAX = 32767
 ```
 
-**Limitation:** `rand() % N` is biased when `RAND_MAX + 1` is not divisible by `N`. For a fair dice roll (1–6), the bias is small but measurable. Use rejection sampling for fairness:
+**Limitation:** `rand() % N` is biased when `RAND_MAX + 1` is not divisible by `N`. For a fair dice roll (1â€“6), the bias is small but measurable. Use rejection sampling for fairness:
 
 ```c
 int fair_rand(int n) {
@@ -420,7 +398,6 @@ int fair_rand(int n) {
 ```
 
 ### 17.2.4 Sorting and Searching
-
 
 ```c
 #include <stdio.h>
@@ -444,7 +421,7 @@ int main(void)
     for (int i = 0; i < n; i++) printf("%d ", arr[i]);
     printf("\n");
 
-    /* bsearch — requires sorted array */
+    /* bsearch â€” requires sorted array */
     int key = 15;
     int *found = bsearch(&key, arr, n, sizeof(int), compare_int);
     if (found)
@@ -468,18 +445,16 @@ Found 15 at index 4
 
 ### Dry Run: qsort on [42, 7, 15, 8, 23, 3, 11]
 
-
 Using `compare_int` (ascending). The exact steps depend on the implementation (usually QuickSort or Introsort), but the comparison function determines the order:
 
 | Pass | Array State | Comparison | Swap? |
 |------|------------|------------|-------|
-| Initial | [42, 7, 15, 8, 23, 3, 11] | — | — |
+| Initial | [42, 7, 15, 8, 23, 3, 11] | â€” | â€” |
 | After partition (pivot ~ middle) | [7, 3, 15, 8, 11, 42, 23] | pivot=15 | Yes |
-| After recursive calls | [3, 7, 8, 11, 15, 23, 42] | — | — |
-| Final | [3, 7, 8, 11, 15, 23, 42] | — | — |
+| After recursive calls | [3, 7, 8, 11, 15, 23, 42] | â€” | â€” |
+| Final | [3, 7, 8, 11, 15, 23, 42] | â€” | â€” |
 
-### Complexity Analysis — qsort and bsearch
-
+### Complexity Analysis â€” qsort and bsearch
 
 | Function | Time (avg) | Time (worst) | Space | Why |
 |----------|-----------|-------------|-------|-----|
@@ -488,7 +463,6 @@ Using `compare_int` (ascending). The exact steps depend on the implementation (u
 | Comparison callback | O(1) per call | O(1) | O(1) | Called O(n log n) times by qsort |
 
 ### 17.2.5 Process Control
-
 
 ```c
 #include <stdio.h>
@@ -523,10 +497,9 @@ Exiting...
 Cleanup function called
 ```
 
-**Important:** `atexit` registers functions in LIFO order. Maximum registration count is implementation-defined (usually 32). `_Exit` bypasses atexit handlers — use only in signal handlers.
+**Important:** `atexit` registers functions in LIFO order. Maximum registration count is implementation-defined (usually 32). `_Exit` bypasses atexit handlers â€” use only in signal handlers.
 
 ### 17.2.6 Integer Arithmetic
-
 
 | Function | Returns | Notes |
 |----------|---------|-------|
@@ -545,7 +518,7 @@ int main(void)
     div_t result = div(42, 5);
     printf("42 / 5 = %d remainder %d\n", result.quot, result.rem);
 
-    /* abs(INT_MIN) is undefined — will overflow on two's complement */
+    /* abs(INT_MIN) is undefined â€” will overflow on two's complement */
     // int danger = abs(INT_MIN);  // UB!
     printf("INT_MIN = %d, -INT_MIN = %d (overflow!)\n",
            INT_MIN, -INT_MIN);
@@ -561,32 +534,29 @@ INT_MIN = -2147483648, -INT_MIN = -2147483648 (overflow!)
 
 ### Advantages and Disadvantages of stdlib.h
 
-
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
 | **Portability** | qsort and bsearch work with any data type | Void-pointer callback interface is error-prone |
 | **Memory** | Dynamic allocation for unknown sizes | Memory leaks, double-free, use-after-free |
-| **Conversion** | strtol provides full error detection | atoi has no error reporting — never use for user input |
-| **Sorting** | Generic — works on any array via callback | Function pointer call overhead per comparison |
+| **Conversion** | strtol provides full error detection | atoi has no error reporting â€” never use for user input |
+| **Sorting** | Generic â€” works on any array via callback | Function pointer call overhead per comparison |
 | **RNG** | Simple, portable | Low quality (linear congruential), biased modulo |
 
 ### Edge Cases
 
-
 - **realloc(NULL, n)**: Equivalent to `malloc(n)`.
-- **realloc(ptr, 0)**: Implementation-defined — may free or return NULL. Avoid.
+- **realloc(ptr, 0)**: Implementation-defined â€” may free or return NULL. Avoid.
 - **malloc(0)**: May return NULL or a unique non-NULL pointer. Dereferencing is UB.
-- **free(NULL)**: Legal — no-op (required by standard).
+- **free(NULL)**: Legal â€” no-op (required by standard).
 - **abs(INT_MIN)**: Undefined behavior on two's complement systems (value cannot be represented).
 - **atof("")**: Returns 0.0 with no error indication.
 - **strtol with base 0**: Auto-detects: `0x` = hex, `0` = octal, else decimal.
 
 ---
 
-## 17.3 `<string.h>` — String and Memory Functions
+## 17.3 `<string.h>` â€” String and Memory Functions
 
 ### Real-World Analogy: Library Card Catalog
-
 
 `<string.h>` is like a **librarian** who can:
 - **Count cards** (`strlen`): "How many books are on this shelf?" (walks until the end marker).
@@ -598,35 +568,32 @@ INT_MIN = -2147483648, -INT_MIN = -2147483648 (overflow!)
 
 ### Numbered Steps for Safe String Copy
 
-
 **Step 1:** Determine the source string length with `strlen(src)`.
 **Step 2:** Allocate a buffer of size `strlen(src) + 1`.
 **Step 3:** Call `strcpy(dst, src)` or `memcpy(dst, src, len + 1)`.
 **Step 4:** Verify the destination is null-terminated.
-**Step 5:** For bounded copy, use `strncpy` — but remember `strncpy` does NOT null-terminate if the source fits exactly.
+**Step 5:** For bounded copy, use `strncpy` â€” but remember `strncpy` does NOT null-terminate if the source fits exactly.
 
 ### Key Functions Reference
 
-
 | Function | Description | Bounds-Checked Variant |
 |----------|-------------|----------------------|
-| `strlen` | String length (O(n)) | — |
+| `strlen` | String length (O(n)) | â€” |
 | `strcpy`, `strncpy` | Copy string | `strncpy` pads with zeros; may not null-terminate |
 | `strcat`, `strncat` | Concatenate strings | `strncat` always null-terminates |
 | `strcmp`, `strncmp` | Compare strings | `strncmp` limits comparison to n chars |
-| `strchr`, `strrchr` | Find character leftmost/rightmost | — |
-| `strstr` | Find substring | — |
+| `strchr`, `strrchr` | Find character leftmost/rightmost | â€” |
+| `strstr` | Find substring | â€” |
 | `strtok`, `strtok_r` | Tokenize string (modifies input!) | `strtok_r` is reentrant (POSIX) |
-| `strspn`, `strcspn` | Span character sets | — |
-| `strpbrk` | Find any of a set of characters | — |
-| `memset` | Fill memory with byte value | — |
+| `strspn`, `strcspn` | Span character sets | â€” |
+| `strpbrk` | Find any of a set of characters | â€” |
+| `memset` | Fill memory with byte value | â€” |
 | `memcpy` | Copy memory (may not overlap) | Use `memmove` if src and dst overlap |
 | `memmove` | Copy memory (handles overlap) | Automatically detects direction |
-| `memcmp` | Compare memory buffers | — |
-| `memchr` | Find byte in memory | — |
+| `memcmp` | Compare memory buffers | â€” |
+| `memchr` | Find byte in memory | â€” |
 
 ### Code: memcpy vs memmove and memset
-
 
 ```c
 #include <stdio.h>
@@ -634,18 +601,18 @@ INT_MIN = -2147483648, -INT_MIN = -2147483648 (overflow!)
 
 int main(void)
 {
-    /* memcpy vs memmove — overlap matters */
+    /* memcpy vs memmove â€” overlap matters */
     char str[] = "Hello, World!";
     memmove(str + 7, str, 6);   /* overlap: src and dst overlap */
     printf("memmove: %s\n", str);
 
-    /* Reset and try with memcpy — overlapping memcpy is UB */
+    /* Reset and try with memcpy â€” overlapping memcpy is UB */
     char str2[] = "Hello, World!";
-    /* memcpy(str2 + 7, str2, 6);  // UNDEFINED BEHAVIOR — do not do this */
+    /* memcpy(str2 + 7, str2, 6);  // UNDEFINED BEHAVIOR â€” do not do this */
 
     /* memset */
     int arr[5];
-    memset(arr, 0, sizeof(arr));         /* zero out — arr = {0,0,0,0,0} */
+    memset(arr, 0, sizeof(arr));         /* zero out â€” arr = {0,0,0,0,0} */
     for (int i = 0; i < 5; i++) printf("%d ", arr[i]);
     printf("\n");
 
@@ -666,9 +633,8 @@ memmove: Hello, Hello!
 
 ### Dry Run: memmove Overlap
 
-
 Initial: `str = "Hello, World!"` (indices 0..13, null at 14).
-Operation: `memmove(str + 7, str, 6)` — copy 6 bytes from index 0 to index 7.
+Operation: `memmove(str + 7, str, 6)` â€” copy 6 bytes from index 0 to index 7.
 
 | Byte Index | Before | Copy Direction | After |
 |-----------|--------|----------------|-------|
@@ -687,10 +653,9 @@ Operation: `memmove(str + 7, str, 6)` — copy 6 bytes from index 0 to index 7.
 | 12 | '!' | | ',' |
 | 13 | '\0' | Unaffected | '\0' |
 
-**Result:** `"Hello, Hello!"` — memmove detects overlap and copies backward if needed.
+**Result:** `"Hello, Hello!"` â€” memmove detects overlap and copies backward if needed.
 
 ### Pseudocode for memmove Overlap Handling
-
 
 ```
 FUNCTION memmove(dst, src, n):
@@ -710,7 +675,6 @@ END FUNCTION
 
 ### Complexity Analysis
 
-
 | Function | Time | Space | Why |
 |----------|------|-------|-----|
 | `strlen` | O(n) | O(1) | Must scan until null terminator |
@@ -728,70 +692,64 @@ END FUNCTION
 
 ### string.h vs stdlib.h String Functions
 
-
 | Aspect | `<string.h>` | `<stdlib.h>` |
 |--------|-------------|-------------|
-| **String length** | `strlen` | — |
-| **Copy** | `strcpy`, `strncpy`, `memcpy`, `memmove` | — |
-| **Compare** | `strcmp`, `strncmp`, `memcmp` | — |
+| **String length** | `strlen` | â€” |
+| **Copy** | `strcpy`, `strncpy`, `memcpy`, `memmove` | â€” |
+| **Compare** | `strcmp`, `strncmp`, `memcmp` | â€” |
 | **Search** | `strchr`, `strstr`, `strpbrk` | `bsearch` (on sorted arrays) |
-| **Sort** | — | `qsort` |
-| **Tokenize** | `strtok` | — |
-| **Convert to number** | — | `atoi`, `strtol`, `strtod`, `atof` |
-| **Convert from number** | — | `itoa` (non-standard) |
-| **Memory allocation** | — | `malloc`, `calloc`, `realloc`, `free` |
-| **Memory fill** | `memset` | — |
-| **Random** | — | `rand`, `srand` |
-| **Process** | — | `exit`, `system`, `getenv` |
+| **Sort** | â€” | `qsort` |
+| **Tokenize** | `strtok` | â€” |
+| **Convert to number** | â€” | `atoi`, `strtol`, `strtod`, `atof` |
+| **Convert from number** | â€” | `itoa` (non-standard) |
+| **Memory allocation** | â€” | `malloc`, `calloc`, `realloc`, `free` |
+| **Memory fill** | `memset` | â€” |
+| **Random** | â€” | `rand`, `srand` |
+| **Process** | â€” | `exit`, `system`, `getenv` |
 
-**Rule of thumb:** String content manipulation → `<string.h>`. String-to-number conversion, memory management, sorting, process control → `<stdlib.h>`.
+**Rule of thumb:** String content manipulation â†’ `<string.h>`. String-to-number conversion, memory management, sorting, process control â†’ `<stdlib.h>`.
 
 ### Advantages and Disadvantages of string.h
 
-
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
-| **Speed** | memcpy is highly optimized (may use SIMD) | str functions are all O(n) — no O(1) length access |
+| **Speed** | memcpy is highly optimized (may use SIMD) | str functions are all O(n) â€” no O(1) length access |
 | **Portability** | Available everywhere | No Unicode support (not UTF-8 aware) |
 | **Safety** | memmove handles overlap | strncpy doesn't null-terminate on truncation |
 | **Modification** | In-place operations save memory | strtok destroys the input string |
 
 ### Edge Cases
 
-
 - **strlen("")**: Returns 0.
 - **strcpy with overlapping buffers**: Undefined behavior (use memmove).
-- **strncpy(dst, "hello", 3)**: Copies "hel", then pads with zeros — NOT null-terminated.
+- **strncpy(dst, "hello", 3)**: Copies "hel", then pads with zeros â€” NOT null-terminated.
 - **strncat(dst, src, n)**: Always null-terminates but n limits the *copied* characters, not the total.
-- **strtok thread safety**: Not reentrant — uses static internal state. Use `strtok_r` on POSIX.
-- **memset(ptr, 0, 0)**: Legal — no-op.
+- **strtok thread safety**: Not reentrant â€” uses static internal state. Use `strtok_r` on POSIX.
+- **memset(ptr, 0, 0)**: Legal â€” no-op.
 - **memcmp with different-length buffers**: Compares only the first n bytes; caller must handle lengths.
 ---
 
-## 17.4 `<math.h>` — Mathematics
+## 17.4 `<math.h>` â€” Mathematics
 
 ### Real-World Analogy: Pocket Calculator
 
-
 `<math.h>` functions are like a **scientific calculator** with dedicated buttons:
-- **Trigonometric**: `sin`, `cos`, `tan` — like angle calculations for construction.
-- **Exponential/Log**: `exp`, `log`, `log10` — like calculating compound interest or pH.
-- **Power/Root**: `sqrt`, `pow`, `hypot` — like the Pythagorean theorem.
-- **Rounding**: `ceil`, `floor`, `round`, `trunc` — like rounding currency.
-- **Absolute**: `fabs` — like distance regardless of direction.
-- **Remainder**: `fmod`, `remainder` — like distributing items evenly.
+- **Trigonometric**: `sin`, `cos`, `tan` â€” like angle calculations for construction.
+- **Exponential/Log**: `exp`, `log`, `log10` â€” like calculating compound interest or pH.
+- **Power/Root**: `sqrt`, `pow`, `hypot` â€” like the Pythagorean theorem.
+- **Rounding**: `ceil`, `floor`, `round`, `trunc` â€” like rounding currency.
+- **Absolute**: `fabs` â€” like distance regardless of direction.
+- **Remainder**: `fmod`, `remainder` â€” like distributing items evenly.
 
 ### Numbered Steps for Safe Math Computation
 
-
 **Step 1:** Include `<math.h>` and `<errno.h>`.
 **Step 2:** Set `errno = 0` before the call.
-**Step 3:** Check domain — e.g., `sqrt(x)` requires `x >= 0`, `log(x)` requires `x > 0`.
+**Step 3:** Check domain â€” e.g., `sqrt(x)` requires `x >= 0`, `log(x)` requires `x > 0`.
 **Step 4:** Call the function and check `errno == EDOM` or `errno == ERANGE`.
 **Step 5:** For NaN results, use `isnan()` from `<math.h>` (C99) or check `x != x`.
 
 ### Code: Comprehensive Math Example
-
 
 ```c
 #include <stdio.h>
@@ -855,7 +813,6 @@ exp(1000): Range error (ERANGE), result = inf
 
 ### Pseudocode: hypot Implementation
 
-
 ```
 FUNCTION hypot(x, y):
     // Avoid overflow: compute sqrt(x^2 + y^2) safely
@@ -872,42 +829,38 @@ END FUNCTION
 
 ### Dry Run: hypot(3.0, 4.0)
 
-
 | Step | x | y | Action | Value |
 |------|---|----|--------|-------|
 | 1 | 3.0 | 4.0 | fabs both | x=3.0, y=4.0 |
 | 2 | 3.0 | 4.0 | x &lt; y? Yes: swap | x=4.0, y=3.0 |
-| 3 | 4.0 | 3.0 | x == 0? No | — |
+| 3 | 4.0 | 3.0 | x == 0? No | â€” |
 | 4 | 4.0 | 3.0 | t = 3.0 / 4.0 = 0.75 | t = 0.75 |
 | 5 | 4.0 | 3.0 | sqrt(1 + 0.75^2) = sqrt(1.5625) | 1.25 |
 | 6 | 4.0 | 3.0 | 4.0 * 1.25 | **5.0** |
 
 ### Complexity Analysis
 
-
 | Function | Time | Space | Why |
 |----------|------|-------|-----|
 | `sqrt` | O(1) | O(1) | Hardware instruction or iterative approx, constant iterations |
 | `sin`, `cos` | O(1) | O(1) | Polynomial approximation (CORDIC or Taylor series, fixed iterations) |
 | `exp`, `log` | O(1) | O(1) | Argument reduction + polynomial expansion |
-| `pow` | O(1) | O(1) | Computed as `exp(y * log(x))` — two O(1) calls |
+| `pow` | O(1) | O(1) | Computed as `exp(y * log(x))` â€” two O(1) calls |
 | `ceil`, `floor` | O(1) | O(1) | Simple bit manipulation on IEEE 754 representation |
 | `fmod` | O(1) | O(1) | Floating-point division and remainder |
 | `hypot` | O(1) | O(1) | Scaled arithmetic to avoid overflow, one sqrt call |
 
 ### Advantages and Disadvantages of math.h
 
-
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
 | **Precision** | double precision (~15-17 decimal digits) | Floating-point rounding errors are inherent |
-| **Performance** | Functions are heavily optimized (may use CPU intrinsics) | Higher cost than basic arithmetic — sin is ~20-50 cycles |
+| **Performance** | Functions are heavily optimized (may use CPU intrinsics) | Higher cost than basic arithmetic â€” sin is ~20-50 cycles |
 | **Portability** | ISO C standard | Implementation varies: sin(1e22) quality differs |
-| **Error handling** | errno reports domain/range errors | Must set errno=0 before each call — easy to forget |
-| **Constants** | M_PI, M_E widely available | Not part of ISO C standard — use `#define _USE_MATH_DEFINES` |
+| **Error handling** | errno reports domain/range errors | Must set errno=0 before each call â€” easy to forget |
+| **Constants** | M_PI, M_E widely available | Not part of ISO C standard â€” use `#define _USE_MATH_DEFINES` |
 
 ### Header Groups: Standard Math Functions
-
 
 | Group | Functions | Domain |
 |-------|-----------|--------|
@@ -922,7 +875,6 @@ END FUNCTION
 | **Classification** | `isfinite`, `isinf`, `isnan`, `signbit` | Float inspection |
 
 ### Edge Cases
-
 
 - **sqrt(-0.0)**: Returns -0.0 (valid).
 - **pow(0.0, 0.0)**: Returns 1.0 (by convention).
@@ -942,10 +894,9 @@ printf("fmod(-5, 2)     = %.0f\n", fmod(-5.0, 2.0));       /* -1 */
 
 ---
 
-## 17.5 `<ctype.h>` — Character Handling
+## 17.5 `<ctype.h>` â€” Character Handling
 
 ### Real-World Analogy: Airport Security Checkpoint
-
 
 `<ctype.h>` functions are like **airport security scanners** that classify every passenger (character):
 - `isalpha`: "Is this a letter passenger?" Checks passport type.
@@ -956,12 +907,11 @@ printf("fmod(-5, 2)     = %.0f\n", fmod(-5.0, 2.0));       /* -1 */
 
 ### Numbered Steps for Character Classification
 
-
 **Step 1:** Read a character from input.
 **Step 2:** Pass it (cast to `unsigned char`) to the classification function.
 **Step 3:** Interpret return: nonzero (true) or zero (false).
 **Step 4:** For case conversion, assign the return value of `toupper`/`tolower`.
-**Step 5:** Handle EOF separately — `isalpha(EOF)` is undefined behavior.
+**Step 5:** Handle EOF separately â€” `isalpha(EOF)` is undefined behavior.
 
 ```c
 #include <stdio.h>
@@ -1011,7 +961,6 @@ toupper('A') = 'A'
 
 ### Dry Run: Character Classification of '9'
 
-
 | Function | Input | Internal check | Result |
 |----------|-------|---------------|--------|
 | `isalnum('9')` | '9' (57) | Is digit? Yes | 1 |
@@ -1021,7 +970,6 @@ toupper('A') = 'A'
 | `isspace('9')` | '9' (57) | Is space/tab/newline? No | 0 |
 
 ### Pseudocode: isdigit and tolower
-
 
 ```
 FUNCTION isdigit(ch):
@@ -1037,7 +985,6 @@ END FUNCTION
 
 ### Complexity Analysis
 
-
 | Function | Time | Space | Why |
 |----------|------|-------|-----|
 | All `is*`/`to*` | O(1) | O(1) | Simple range checks or lookup table access |
@@ -1045,18 +992,16 @@ END FUNCTION
 
 ### Advantages and Disadvantages of ctype.h
 
-
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
-| **Speed** | Single lookup or comparison — extremely fast | — |
+| **Speed** | Single lookup or comparison â€” extremely fast | â€” |
 | **Locale** | Respects current locale for non-English characters | Behavior changes with `setlocale` |
-| **Portability** | ISO C — available on all platforms | Does not handle Unicode (only char/byte) |
+| **Portability** | ISO C â€” available on all platforms | Does not handle Unicode (only char/byte) |
 | **Safety** | Well-defined for all unsigned char values + EOF | Passing signed char &lt; 0 (but not EOF) is UB |
 
 ### Edge Cases
 
-
-- **isalpha(EOF)**: Undefined behavior — EOF is -1, not representable as unsigned char. Check for EOF first.
+- **isalpha(EOF)**: Undefined behavior â€” EOF is -1, not representable as unsigned char. Check for EOF first.
 - **isalpha(0x80)**: Undefined behavior if `char` is signed. Always cast: `isalpha((unsigned char)ch)`.
 - **tolower('A')**: Returns 'a'. `tolower('a')` returns 'a' unchanged.
 - **toupper('7')**: Returns '7' unchanged (no error).
@@ -1064,20 +1009,18 @@ END FUNCTION
 
 ---
 
-## 17.6 `<time.h>` — Date and Time
+## 17.6 `<time.h>` â€” Date and Time
 
 ### Real-World Analogy: Wall Clock and Stopwatch
 
-
 `<time.h>` provides:
-- A **wall clock** (`time()`) — tells you the current date and time.
-- A **calendar** (`struct tm`) — breaks the wall clock into components (year, month, day, hour...).
-- A **stopwatch** (`clock()`) — measures CPU time used by your program.
-- A **date formatter** (`strftime`) — prints dates in any format (ISO 8601, US-style, etc.).
-- A **time difference calculator** (`difftime`) — measures elapsed seconds between two time points.
+- A **wall clock** (`time()`) â€” tells you the current date and time.
+- A **calendar** (`struct tm`) â€” breaks the wall clock into components (year, month, day, hour...).
+- A **stopwatch** (`clock()`) â€” measures CPU time used by your program.
+- A **date formatter** (`strftime`) â€” prints dates in any format (ISO 8601, US-style, etc.).
+- A **time difference calculator** (`difftime`) â€” measures elapsed seconds between two time points.
 
 ### Numbered Steps for Timing Code
-
 
 **Step 1:** Call `clock_t start = clock()` before the code to measure.
 **Step 2:** Execute the code to measure.
@@ -1135,15 +1078,14 @@ Elapsed: 0.2340 seconds
 
 ### Time Structures
 
-
 ```c
 struct tm {
     int tm_sec;    /* seconds (0-60, 60 = leap second) */
     int tm_min;    /* minutes (0-59) */
     int tm_hour;   /* hours (0-23) */
     int tm_mday;   /* day of month (1-31) */
-    int tm_mon;    /* month (0-11) — WARNING: January = 0! */
-    int tm_year;   /* year (years since 1900) — WARNING: 2026 = 126 */
+    int tm_mon;    /* month (0-11) â€” WARNING: January = 0! */
+    int tm_year;   /* year (years since 1900) â€” WARNING: 2026 = 126 */
     int tm_wday;   /* day of week (0-6, Sunday=0) */
     int tm_yday;   /* day of year (0-365) */
     int tm_isdst;  /* daylight saving time: >0 = DST, 0 = not, <0 = unknown */
@@ -1159,7 +1101,6 @@ printf("Date: %04d-%02d-%02d\n",
 ```
 
 ### Dry Run: strftime with "%Y-%m-%d %H:%M:%S"
-
 
 Given: `now = 1838500000` (approx June 9, 2026, 16:20:00 UTC).
 
@@ -1181,7 +1122,6 @@ Given: `now = 1838500000` (approx June 9, 2026, 16:20:00 UTC).
 
 ### Complexity Analysis
 
-
 | Function | Time | Space | Why |
 |----------|------|-------|-----|
 | `time(NULL)` | O(1) | O(1) | System call, returns seconds from epoch |
@@ -1194,48 +1134,33 @@ Given: `now = 1838500000` (approx June 9, 2026, 16:20:00 UTC).
 
 ### Advantages and Disadvantages of time.h
 
-
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
 | **Portability** | Available everywhere | Limited to seconds resolution (POSIX has nanoseconds) |
 | **Thread safety** | localtime/gmtime return pointer to static buffer (not thread-safe!) | Use `localtime_r` / `gmtime_r` on POSIX |
-| **2038 problem** | — | 32-bit time_t overflows on Jan 19, 2038 |
+| **2038 problem** | â€” | 32-bit time_t overflows on Jan 19, 2038 |
 | **Precision** | clock() measures CPU time | Wall-clock time requires clock_gettime on POSIX |
 
 ### Edge Cases
 
-
 - **time_t overflow**: On 32-bit systems, `time_t` is signed 32-bit. Overflow on January 19, 2038 (03:14:07 UTC). Use 64-bit time_t.
-- **localtime(NULL)**: Undefined behavior — NULL pointer argument.
-- **localtime return**: Returns pointer to static data — not thread-safe. Overwritten by subsequent `gmtime` and `localtime` calls.
+- **localtime(NULL)**: Undefined behavior â€” NULL pointer argument.
+- **localtime return**: Returns pointer to static data â€” not thread-safe. Overwritten by subsequent `gmtime` and `localtime` calls.
 - **mktime with invalid tm**: `mktime` normalizes the struct. For example, `tm_mday = 32` in January becomes February 1.
 - **clock() overflow**: `clock_t` may wrap after ~2147 seconds (32-bit) or ~2.48 million hours (64-bit).
 - **strftime with insufficient buffer**: Returns 0 if output exceeds buffer size.
 
 ---
 
-## 17.7 `<errno.h>` and `<assert.h>` — Diagnostics
+## 17.7 `<errno.h>` and `<assert.h>` â€” Diagnostics
 
-### 17.7.1 `<errno.h>` — Error Numbers
-
-<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-7-1-errno-h-error-numbers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-7-1-errno-h-error-numbers-handwritten.svg" alt="Handwritten: 17.7.1 `<errno.h>` — Error Numbers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-7-1-errno-h-error-numbers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-7-1-errno-h-error-numbers-diagram.svg" alt="Diagram: 17.7.1 `<errno.h>` — Error Numbers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-7-1-errno-h-error-numbers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-7-1-errno-h-error-numbers-sticky.svg" alt="Sticky Note: 17.7.1 `<errno.h>` — Error Numbers" width="30%">
-</a>
-
+### 17.7.1 `<errno.h>` â€” Error Numbers
 
 ### Real-World Analogy: Train Station Announcement Board
 
-
-`errno` is like a **train station announcement board**. When something goes wrong (a train is delayed), the station updates the board with a specific code (errno) and a human-readable message. The board only shows the *last* error — it resets before each operation. You must check it after each operation before it gets overwritten.
+`errno` is like a **train station announcement board**. When something goes wrong (a train is delayed), the station updates the board with a specific code (errno) and a human-readable message. The board only shows the *last* error â€” it resets before each operation. You must check it after each operation before it gets overwritten.
 
 ### Numbered Steps for errno Usage
-
 
 **Step 1:** Include `<errno.h>`.
 **Step 2:** Set `errno = 0` before the library call.
@@ -1277,7 +1202,6 @@ errno = 2: No such file or directory
 
 ### Common errno Values
 
-
 | Name | Value (typical) | Meaning | Where Set |
 |------|----------------|---------|-----------|
 | EPERM | 1 | Operation not permitted | Permission related |
@@ -1290,23 +1214,11 @@ errno = 2: No such file or directory
 
 **Important:** Many library functions do NOT set errno to 0 on success. Always set `errno = 0` before the call.
 
-### 17.7.2 `<assert.h>` — Runtime Assertions
-
-<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-7-2-assert-h-runtime-assertions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-7-2-assert-h-runtime-assertions-handwritten.svg" alt="Handwritten: 17.7.2 `<assert.h>` — Runtime Assertions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-7-2-assert-h-runtime-assertions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-7-2-assert-h-runtime-assertions-diagram.svg" alt="Diagram: 17.7.2 `<assert.h>` — Runtime Assertions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-7-2-assert-h-runtime-assertions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-7-2-assert-h-runtime-assertions-sticky.svg" alt="Sticky Note: 17.7.2 `<assert.h>` — Runtime Assertions" width="30%">
-</a>
-
+### 17.7.2 `<assert.h>` â€” Runtime Assertions
 
 ### Real-World Analogy: Building Inspector
 
-
-`assert` is like a **building inspector** who randomly checks key measurements during construction. If a wall is off by more than the tolerance, the inspector halts everything with a red tag. In production (release build), the inspector is off-duty — the checks disappear.
+`assert` is like a **building inspector** who randomly checks key measurements during construction. If a wall is off by more than the tolerance, the inspector halts everything with a red tag. In production (release build), the inspector is off-duty â€” the checks disappear.
 
 ```c
 #include <stdio.h>
@@ -1341,7 +1253,6 @@ To disable assertions in release builds:
 
 ### Complexity Analysis
 
-
 | Function | Time | Space | Why |
 |----------|------|-------|-----|
 | `assert(cond)` | O(1) | O(1) | Single comparison; abort if false |
@@ -1350,35 +1261,31 @@ To disable assertions in release builds:
 
 ### Advantages and Disadvantages of assert.h
 
-
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
 | **Early detection** | Catches bugs at runtime with context | Only fires in debug builds (if NDEBUG) |
 | **Zero overhead** | Expands to nothing with NDEBUG | Cannot use expressions with side effects |
-| **Clarity** | Documents invariants in code | Abrupt abort — no cleanup opportunity |
+| **Clarity** | Documents invariants in code | Abrupt abort â€” no cleanup opportunity |
 
 ### Edge Cases
 
-
-- **assert with side effects**: `assert(++x > 0)` — `++x` disappears with NDEBUG! Never use expressions with side effects.
+- **assert with side effects**: `assert(++x > 0)` â€” `++x` disappears with NDEBUG! Never use expressions with side effects.
 - **NDEBUG location**: Must be defined *before* including assert.h. Defining it later has no effect.
 - **assert(ptr != NULL)**: Common pattern, but the error message shows the condition text only.
-- **static_assert** (C11): Compile-time assertions — use for type-size checks, struct alignment.
+- **static_assert** (C11): Compile-time assertions â€” use for type-size checks, struct alignment.
 
 ---
 
-## 17.8 `<setjmp.h>` — Non-Local Jumps
+## 17.8 `<setjmp.h>` â€” Non-Local Jumps
 
 ### Real-World Analogy: Emergency Eject Button
 
-
 `setjmp`/`longjmp` is like an **emergency eject button** on a rocket:
 - `setjmp(env)` sets up the eject seat at a control room. Returns 0 on first call.
-- `longjmp(env, val)` is the eject button — it instantly returns to the control room, bypassing normal control flow.
+- `longjmp(env, val)` is the eject button â€” it instantly returns to the control room, bypassing normal control flow.
 - The `val` parameter tells the control room why you ejected.
 
 ### How It Works
-
 
 ```c
 #include <stdio.h>
@@ -1389,7 +1296,7 @@ jmp_buf env;
 void second(void)
 {
     printf("In second()\n");
-    longjmp(env, 42);   /* jump back — returns 42 from setjmp */
+    longjmp(env, 42);   /* jump back â€” returns 42 from setjmp */
 }
 
 void first(void)
@@ -1422,12 +1329,11 @@ Back in main() via longjmp (ret = 42)
 
 ### Dry Run: setjmp/longjmp
 
-
 | Step | Action | Stack | ret | Notes |
 |------|--------|-------|-----|-------|
-| 1 | `setjmp(env)` saved context | main | 0 | First return — normal |
-| 2 | `ret == 0`, call `first()` | main->first | — | Normal function call |
-| 3 | `first()` calls `second()` | main->first->second | — | Normal function call |
+| 1 | `setjmp(env)` saved context | main | 0 | First return â€” normal |
+| 2 | `ret == 0`, call `first()` | main->first | â€” | Normal function call |
+| 3 | `first()` calls `second()` | main->first->second | â€” | Normal function call |
 | 4 | `longjmp(env, 42)` | main | **42** | Unwinds stack to setjmp point |
 | 5 | `ret == 42`, print message | main | 42 | "first()" and "second()" stack frames destroyed |
 
@@ -1435,22 +1341,20 @@ Back in main() via longjmp (ret = 42)
 
 ### Numbered Steps for Safe longjmp Use
 
-
 **Step 1:** Declare a `jmp_buf` with file scope or pass as parameter.
-**Step 2:** Call `setjmp(env)` — check return value to distinguish first call (0) from longjmp return (nonzero).
+**Step 2:** Call `setjmp(env)` â€” check return value to distinguish first call (0) from longjmp return (nonzero).
 **Step 3:** Only use `longjmp` for exceptional conditions (fatal errors, deep unwinding).
 **Step 4:** Do NOT `longjmp` from a signal handler unless the signal is SIGABRT or similar.
 **Step 5:** Ensure any allocated resources between `setjmp` and `longjmp` are freed before the jump.
 
 ### Limitations and Dangers
 
-
 | Danger | Explanation |
 |--------|-------------|
 | **Resource leaks** | `longjmp` unwinds the stack without calling destructors, without freeing malloc'd memory |
 | **Volatile variables** | Non-volatile local variables modified between setjmp and longjmp have indeterminate values |
 | **Signal context** | longjmp from a signal handler is only safe if setjmp was called in the signal handler |
-| **No destructors** | C++ objects, cleanup code are skipped — use only in C |
+| **No destructors** | C++ objects, cleanup code are skipped â€” use only in C |
 | **Reentrancy** | jmp_buf saved by setjmp is invalid after the calling function returns |
 
 ```c
@@ -1475,23 +1379,20 @@ void risky(void)
 
 ### Complexity Analysis
 
-
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
-| `setjmp` | O(1) | O(s) | s = register state + stack pointer — saves CPU context |
-| `longjmp` | O(f) | O(1) | f = number of stack frames unwound — restores saved context |
+| `setjmp` | O(1) | O(s) | s = register state + stack pointer â€” saves CPU context |
+| `longjmp` | O(f) | O(1) | f = number of stack frames unwound â€” restores saved context |
 
 ### Advantages and Disadvantages of setjmp.h
-
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
 | **Error recovery** | Unwinds N frames in one step | Resource leaks are easy to create |
-| **Performance** | Faster than N-level return value propagation | Pollutes control flow — hard to reason about |
+| **Performance** | Faster than N-level return value propagation | Pollutes control flow â€” hard to reason about |
 | **Portability** | ISO C standard | Does NOT work with C++ exceptions (unwind incompatibility) |
 
 ### Comparison: longjmp vs Alternatives
-
 
 | Feature | `setjmp`/`longjmp` | Return values | `goto` | Exceptions (C++) |
 |---------|-------------------|---------------|--------|-----------------|
@@ -1503,21 +1404,19 @@ void risky(void)
 | **C compatibility** | Yes | Yes | Yes | No (C++ only) |
 ---
 
-## 17.9 `<signal.h>` — Signal Handling
+## 17.9 `<signal.h>` â€” Signal Handling
 
 ### Real-World Analogy: Fire Alarm
 
-
 Signals are like **building alarms**:
-- **SIGINT** (Ctrl+C) = Fire alarm — you may interrupt the program.
-- **SIGSEGV** = Structural collapse (segfault) — program accessed invalid memory.
-- **SIGTERM** = Evacuation order — polite request to terminate.
-- **SIGKILL** = Demolition — cannot be caught, ignored, or blocked.
+- **SIGINT** (Ctrl+C) = Fire alarm â€” you may interrupt the program.
+- **SIGSEGV** = Structural collapse (segfault) â€” program accessed invalid memory.
+- **SIGTERM** = Evacuation order â€” polite request to terminate.
+- **SIGKILL** = Demolition â€” cannot be caught, ignored, or blocked.
 - `signal(SIGINT, handler)` = Assign someone to respond when the fire alarm rings.
 - `raise(SIGINT)` = Manually pull the fire alarm.
 
 ### Numbered Steps for Signal Handling
-
 
 **Step 1:** Include `<signal.h>`.
 **Step 2:** Define a signal handler function with signature `void handler(int signum)`.
@@ -1544,7 +1443,7 @@ int main(void)
 
     printf("Press Ctrl+C within 5 seconds...\n");
 
-    /* Busy-wait — not ideal, but demonstrates the pattern */
+    /* Busy-wait â€” not ideal, but demonstrates the pattern */
     volatile int count = 0;
     for (int i = 0; i < 100000000; i++) {
         count++;
@@ -1571,20 +1470,18 @@ Interrupted after 4234567 iterations!
 
 ### Async-Signal-Safe Functions
 
-
 Only these functions are guaranteed safe to call from a signal handler:
 
 - `signal()` (to reset to SIG_DFL)
 - `raise()`
 - `_Exit()`, `_exit()`
 - `abort()`
-- `write()` (POSIX — write to pipe or file descriptor)
+- `write()` (POSIX â€” write to pipe or file descriptor)
 - Reading/writing `volatile sig_atomic_t` variables
 
 **Never call** from a signal handler: `printf`, `malloc`, `free`, `fopen`, `strtok`, `rand`, `longjmp` (unless setjmp was in the handler).
 
 ### Signal Table
-
 
 | Signal | Typical Value | Description | Default Action |
 |--------|--------------|-------------|---------------|
@@ -1599,7 +1496,6 @@ Only these functions are guaranteed safe to call from a signal handler:
 
 ### Complexity Analysis
 
-
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
 | `signal(sig, handler)` | O(1) | O(1) | Kernel call, sets handler table entry |
@@ -1608,28 +1504,25 @@ Only these functions are guaranteed safe to call from a signal handler:
 
 ### Advantages and Disadvantages of signal.h
 
-
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
 | **Responsiveness** | Interrupt-driven, immediate response | Only async-signal-safe functions callable |
-| **Portability** | ISO C standard — available everywhere | POSIX adds sigaction with better control |
+| **Portability** | ISO C standard â€” available everywhere | POSIX adds sigaction with better control |
 | **Simplicity** | Two functions: signal, raise | No data passing, no queuing, no blocking control |
-| **Signal loss** | — | Standard signals are not queued — two SIGINT in a row may be merged |
+| **Signal loss** | â€” | Standard signals are not queued â€” two SIGINT in a row may be merged |
 
 ### Edge Cases
 
-
-- **signal(SIGKILL, handler)**: SIGKILL and SIGSTOP cannot be caught — the call is ignored.
+- **signal(SIGKILL, handler)**: SIGKILL and SIGSTOP cannot be caught â€” the call is ignored.
 - **signal(SIGSEGV, handler)**: If the handler causes another SIGSEGV, the program loops infinitely (or terminates). Use `sigaction` with SA_SIGINFO on POSIX for better control.
 - **Handler reentrancy**: If a signal arrives while the handler is executing, the handler may be reentered. Use `volatile sig_atomic_t` for shared state.
 - **Restoring default**: `signal(sig, SIG_DFL)` restores the default behavior; `signal(sig, SIG_IGN)` ignores the signal.
 
 ---
 
-## 17.10 `<stdarg.h>` — Variable Arguments
+## 17.10 `<stdarg.h>` â€” Variable Arguments
 
 ### Real-World Analogy: Pizza Order
-
 
 `<stdarg.h>` is like a **pizza ordering system** where:
 - The first parameter is always known: "1 pizza" (the named parameter).
@@ -1640,7 +1533,6 @@ Only these functions are guaranteed safe to call from a signal handler:
 - `va_end` completes the order.
 
 ### Numbered Steps for Variadic Functions
-
 
 **Step 1:** Include `<stdarg.h>`.
 **Step 2:** Declare at least one named parameter before `...`.
@@ -1683,7 +1575,6 @@ Average of 5 numbers = 30.00
 
 ### How printf Uses stdarg
 
-
 ```c
 #include <stdio.h>
 #include <stdarg.h>
@@ -1705,17 +1596,15 @@ int main(void)
 
 ### Safety Rules for Variadic Functions
 
-
 | Rule | Explanation |
 |------|-------------|
 | **At least one named parameter** | `...` alone is not allowed by the standard |
 | **Type consistency** | `va_arg` uses the *default argument promotions* for integers (char->int, short->int, float->double) |
-| **No way to check count** | The callee cannot know how many arguments were passed — count must be communicated separately |
+| **No way to check count** | The callee cannot know how many arguments were passed â€” count must be communicated separately |
 | **va_list is single-pass** | Once consumed, cannot be re-read without va_copy (C99) |
 | **va_end must be called** | Failure may cause resource leaks on some platforms |
 
 ### Complexity Analysis
-
 
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
@@ -1725,10 +1614,9 @@ int main(void)
 
 ### Advantages and Disadvantages of stdarg.h
 
-
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
-| **Flexibility** | Variable arguments for generic printing, summing | No type safety — wrong type = undefined behavior |
+| **Flexibility** | Variable arguments for generic printing, summing | No type safety â€” wrong type = undefined behavior |
 | **Performance** | Minimal overhead (pointer arithmetic on stack) | No runtime checking of argument count |
 | **Portability** | ISO C, available on all platforms | Default argument promotions can be surprising (float->double) |
 
@@ -1736,18 +1624,7 @@ int main(void)
 
 ## 17.11 Other Important Headers
 
-### 17.11.1 `<stdint.h>` — Fixed-Width Integer Types
-
-<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-1-stdint-h-fixed-width-integer-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-1-stdint-h-fixed-width-integer-types-handwritten.svg" alt="Handwritten: 17.11.1 `<stdint.h>` — Fixed-Width Integer Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-1-stdint-h-fixed-width-integer-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-1-stdint-h-fixed-width-integer-types-diagram.svg" alt="Diagram: 17.11.1 `<stdint.h>` — Fixed-Width Integer Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-1-stdint-h-fixed-width-integer-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-1-stdint-h-fixed-width-integer-types-sticky.svg" alt="Sticky Note: 17.11.1 `<stdint.h>` — Fixed-Width Integer Types" width="30%">
-</a>
-
+### 17.11.1 `<stdint.h>` â€” Fixed-Width Integer Types
 
 Provides exact-width, minimum-width, and fastest-width integer types:
 
@@ -1781,18 +1658,7 @@ INT32_MAX: 2147483647
 UINT64_MAX: 18446744073709551615
 ```
 
-### 17.11.2 `<limits.h>` and `<float.h>` — Platform Limits
-
-<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-2-limits-h-and-float-h-platform-limits-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-2-limits-h-and-float-h-platform-limits-handwritten.svg" alt="Handwritten: 17.11.2 `<limits.h>` and `<float.h>` — Platform Limits" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-2-limits-h-and-float-h-platform-limits-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-2-limits-h-and-float-h-platform-limits-diagram.svg" alt="Diagram: 17.11.2 `<limits.h>` and `<float.h>` — Platform Limits" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-2-limits-h-and-float-h-platform-limits-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-2-limits-h-and-float-h-platform-limits-sticky.svg" alt="Sticky Note: 17.11.2 `<limits.h>` and `<float.h>` — Platform Limits" width="30%">
-</a>
-
+### 17.11.2 `<limits.h>` and `<float.h>` â€” Platform Limits
 
 ```c
 #include <stdio.h>
@@ -1848,18 +1714,7 @@ DBL_MAX      = 1.797693e+308
 DBL_MIN      = 2.225074e-308
 ```
 
-### 17.11.3 `<inttypes.h>` — Format Specifiers for Fixed Types
-
-<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-3-inttypes-h-format-specifiers-for-fixed-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-3-inttypes-h-format-specifiers-for-fixed-types-handwritten.svg" alt="Handwritten: 17.11.3 `<inttypes.h>` — Format Specifiers for Fixed Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-3-inttypes-h-format-specifiers-for-fixed-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-3-inttypes-h-format-specifiers-for-fixed-types-diagram.svg" alt="Diagram: 17.11.3 `<inttypes.h>` — Format Specifiers for Fixed Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-3-inttypes-h-format-specifiers-for-fixed-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-3-inttypes-h-format-specifiers-for-fixed-types-sticky.svg" alt="Sticky Note: 17.11.3 `<inttypes.h>` — Format Specifiers for Fixed Types" width="30%">
-</a>
-
+### 17.11.3 `<inttypes.h>` â€” Format Specifiers for Fixed Types
 
 ```c
 #include <stdio.h>
@@ -1883,18 +1738,7 @@ int main(void)
 }
 ```
 
-### 17.11.4 `<stddef.h>` — Common Definitions
-
-<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-4-stddef-h-common-definitions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-4-stddef-h-common-definitions-handwritten.svg" alt="Handwritten: 17.11.4 `<stddef.h>` — Common Definitions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-4-stddef-h-common-definitions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-4-stddef-h-common-definitions-diagram.svg" alt="Diagram: 17.11.4 `<stddef.h>` — Common Definitions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-4-stddef-h-common-definitions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-4-stddef-h-common-definitions-sticky.svg" alt="Sticky Note: 17.11.4 `<stddef.h>` — Common Definitions" width="30%">
-</a>
-
+### 17.11.4 `<stddef.h>` â€” Common Definitions
 
 ```c
 #include <stdio.h>
@@ -1908,7 +1752,7 @@ int main(void)
     printf("size_t is %zu bytes\n", sizeof(size_t));
     printf("ptrdiff_t example: %td\n", &((struct point*)0)->z - &((struct point*)0)->x);
 
-    /* offsetof — offset of a member in a struct */
+    /* offsetof â€” offset of a member in a struct */
     printf("Offset of x: %zu\n", offsetof(struct point, x));
     printf("Offset of y: %zu\n", offsetof(struct point, y));
     printf("Offset of z: %zu\n", offsetof(struct point, z));
@@ -1928,7 +1772,6 @@ Offset of z: 8
 ```
 
 ### Header Groups Comparison Table
-
 
 | Group | Headers | Purpose | Key Types/Macros |
 |-------|---------|---------|-----------------|
@@ -1954,10 +1797,9 @@ Offset of z: 8
 
 ### Q1: What is the difference between atoi and strtol? When would you use each?
 
-
 **Answer:** `atoi` converts string to `int` with **zero error detection**. If the input is `"abc"`, `atoi` returns 0 with no way to distinguish from `atoi("0")`. If the input overflows `INT_MAX`, behavior is undefined. `strtol` provides complete error detection:
 - Returns `LONG_MIN`/`LONG_MAX` on overflow and sets `errno = ERANGE`.
-- Sets end pointer — you can check if any digits were parsed.
+- Sets end pointer â€” you can check if any digits were parsed.
 - Supports any base from 2 to 36.
 
 **Use `strtol` always for production code.** `atoi` is only acceptable for quick-and-dirty scripts or fully validated input.
@@ -2030,11 +1872,11 @@ int main(void)
 
 ### Q3: What does "async-signal-safe" mean? Which standard library functions are safe to call from a signal handler?
 
-**Answer:** Async-signal-safe functions are safe to call from within a signal handler. They are reentrant — they don't use global state, don't call `malloc`, don't use locks that might already be held by the interrupted code.
+**Answer:** Async-signal-safe functions are safe to call from within a signal handler. They are reentrant â€” they don't use global state, don't call `malloc`, don't use locks that might already be held by the interrupted code.
 
 **Safe to call from signal handler:**
 - `signal()`, `raise()`, `_Exit()`, `abort()`
-- `write()` (POSIX — low-level, unbuffered)
+- `write()` (POSIX â€” low-level, unbuffered)
 - Reading/writing `volatile sig_atomic_t`
 
 **NOT safe (and commonly mistaken):**
@@ -2050,43 +1892,39 @@ int main(void)
 
 ### Q4: What is the difference between memcpy and memmove?
 
-
-**Answer:** `memcpy` is faster but requires that source and destination buffers do **not** overlap. `memmove` handles overlap correctly — it detects the overlap direction and copies forward or backward accordingly. Use `memmove` when in doubt. Both have the same complexity (O(n)) and same signature.
+**Answer:** `memcpy` is faster but requires that source and destination buffers do **not** overlap. `memmove` handles overlap correctly â€” it detects the overlap direction and copies forward or backward accordingly. Use `memmove` when in doubt. Both have the same complexity (O(n)) and same signature.
 
 ```c
 char buf[] = "abcdefghij";
-/* memcpy(buf + 2, buf, 6);  // UB — overlapping */
-memmove(buf + 2, buf, 6);     /* OK — result: "ababcdefgh" */
+/* memcpy(buf + 2, buf, 6);  // UB â€” overlapping */
+memmove(buf + 2, buf, 6);     /* OK â€” result: "ababcdefgh" */
 ```
 
 ### Q5: What is the 2038 problem, and how does it relate to time.h?
 
-
-**Answer:** On 32-bit systems, `time_t` is a signed 32-bit integer. It overflows on January 19, 2038, at 03:14:07 UTC — the maximum positive value (2^31-1 = 2,147,483,647 seconds from epoch). After that, `time_t` wraps to a negative value, representing dates in 1901. The fix is to use 64-bit `time_t` (compile with `-D_TIME_BITS=64` on modern Linux, or use 64-bit systems where `time_t` is already 64 bits).
+**Answer:** On 32-bit systems, `time_t` is a signed 32-bit integer. It overflows on January 19, 2038, at 03:14:07 UTC â€” the maximum positive value (2^31-1 = 2,147,483,647 seconds from epoch). After that, `time_t` wraps to a negative value, representing dates in 1901. The fix is to use 64-bit `time_t` (compile with `-D_TIME_BITS=64` on modern Linux, or use 64-bit systems where `time_t` is already 64 bits).
 
 ### Q6: What does `assert` compile to when NDEBUG is defined? What happens if you put a side effect inside assert?
 
-**Answer:** When `NDEBUG` is defined, `assert(expr)` expands to nothing — the expression is removed entirely. If the expression has side effects (e.g., `assert(++count < 10)`), those side effects **disappear** in release builds, causing bugs. Never put expressions with side effects inside `assert`.
+**Answer:** When `NDEBUG` is defined, `assert(expr)` expands to nothing â€” the expression is removed entirely. If the expression has side effects (e.g., `assert(++count < 10)`), those side effects **disappear** in release builds, causing bugs. Never put expressions with side effects inside `assert`.
 
 ### Q7: How does printf know how many arguments were passed? What happens if the format string and arguments don't match?
 
-**Answer:** `printf` does NOT know how many arguments were passed. It relies entirely on the format string to determine how many arguments to read from the stack. If the format says `"%d %d"` but only one `int` argument is provided, `printf` reads past the provided arguments into undefined memory — undefined behavior. Modern compilers warn about mismatches with `-Wformat`.
+**Answer:** `printf` does NOT know how many arguments were passed. It relies entirely on the format string to determine how many arguments to read from the stack. If the format says `"%d %d"` but only one `int` argument is provided, `printf` reads past the provided arguments into undefined memory â€” undefined behavior. Modern compilers warn about mismatches with `-Wformat`.
 
 ### Q8: Explain the difference between `fmod` and `remainder`.
 
-
 **Answer:** Both compute remainder, but the rounding differs:
-- `fmod(x, y)` = `x - trunc(x / y) * y` — truncates toward zero.
-- `remainder(x, y)` = `x - round(x / y) * y` — rounds to nearest integer (IEEE 754 remainder).
-- `fmod(7, 3)` = `1.0` and `remainder(7, 3)` = `1.0` — same for positive aligned.
-- `fmod(-7, 3)` = `-1.0` while `remainder(-7, 3)` = `1.0` — different for negative!
+- `fmod(x, y)` = `x - trunc(x / y) * y` â€” truncates toward zero.
+- `remainder(x, y)` = `x - round(x / y) * y` â€” rounds to nearest integer (IEEE 754 remainder).
+- `fmod(7, 3)` = `1.0` and `remainder(7, 3)` = `1.0` â€” same for positive aligned.
+- `fmod(-7, 3)` = `-1.0` while `remainder(-7, 3)` = `1.0` â€” different for negative!
 
 ---
 
 ## 17.13 Applications in Real Systems
 
 ### Application 1: Shell/Terminal Emulator
-
 
 A Unix shell uses:
 - `<stdio.h>` for reading commands, printing output, piping between processes.
@@ -2129,7 +1967,6 @@ int main(void)
 ```
 
 ### Application 2: Scientific Data Processing
-
 
 A data analysis tool uses:
 - `<math.h>` for statistical computations (mean, std dev, regression).
@@ -2186,7 +2023,6 @@ int main(void)
 
 ### Application 3: Embedded Sensor Logger
 
-
 A weather station data logger uses:
 - `<time.h>` for timestamping readings.
 - `<stdio.h>` for logging to SD card.
@@ -2196,7 +2032,6 @@ A weather station data logger uses:
 
 ### Application 4: Memory Pool Allocator
 
-
 A custom allocator uses:
 - `<stdlib.h>` for initial `malloc` of the pool.
 - `<string.h>` for `memset` zeroing.
@@ -2205,7 +2040,6 @@ A custom allocator uses:
 - `<errno.h>` for out-of-memory reporting.
 
 ### Application 5: HTTP Server
-
 
 A simple HTTP server uses:
 - `<stdio.h>` for logging requests.
@@ -2221,16 +2055,16 @@ A simple HTTP server uses:
 
 | Header | Key Contribution | One-Sentence Takeaway |
 |--------|-----------------|----------------------|
-| `<stdio.h>` | printf, fopen, fread, snprintf | All I/O — console, file, and string |
-| `<stdlib.h>` | malloc, qsort, strtol, rand, exit | General utilities — memory, sorting, conversion, process |
+| `<stdio.h>` | printf, fopen, fread, snprintf | All I/O â€” console, file, and string |
+| `<stdlib.h>` | malloc, qsort, strtol, rand, exit | General utilities â€” memory, sorting, conversion, process |
 | `<string.h>` | strlen, strcpy, strcmp, memcpy, memmove | String and memory manipulation |
-| `<math.h>` | sqrt, sin, log, pow, floor, ceil | Floating-point math — link with `-lm` |
+| `<math.h>` | sqrt, sin, log, pow, floor, ceil | Floating-point math â€” link with `-lm` |
 | `<ctype.h>` | isalpha, isdigit, toupper, tolower | Character classification and case conversion |
 | `<time.h>` | time, clock, strftime, localtime | Calendar time and CPU time measurement |
 | `<errno.h>` | errno, EDOM, ERANGE, EINVAL | Error code reporting for library functions |
-| `<assert.h>` | assert() | Runtime invariant checking — disabled with NDEBUG |
-| `<setjmp.h>` | setjmp, longjmp | Non-local jumps — deep error recovery only |
-| `<signal.h>` | signal, raise, sig_atomic_t | Async event handling — very limited safe functions |
+| `<assert.h>` | assert() | Runtime invariant checking â€” disabled with NDEBUG |
+| `<setjmp.h>` | setjmp, longjmp | Non-local jumps â€” deep error recovery only |
+| `<signal.h>` | signal, raise, sig_atomic_t | Async event handling â€” very limited safe functions |
 | `<stdarg.h>` | va_list, va_start, va_arg, va_end | Variadic function support |
 | `<stdint.h>` | int32_t, uint64_t, INT32_MAX | Exact-width and minimum-width integer types |
 | `<limits.h>` | INT_MAX, LONG_MIN, CHAR_BIT | Platform-specific integer range limits |

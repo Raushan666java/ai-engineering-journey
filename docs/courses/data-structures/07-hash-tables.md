@@ -1,4 +1,4 @@
-# Chapter 7: Hash Tables
+﻿# Chapter 7: Hash Tables
 
 > **Previous:** [Chapter 6: Queues](./06-queues.md) | **Next:** [Binary Trees](./08-binary-trees.md)
 
@@ -12,16 +12,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-structures/07-hash-tables/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/data-structures/07-hash-tables/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/07-hash-tables/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/data-structures/07-hash-tables/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-structures/07-hash-tables/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/data-structures/07-hash-tables/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/07-hash-tables/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/data-structures/07-hash-tables/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-structures/07-hash-tables/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/data-structures/07-hash-tables/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/07-hash-tables/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/data-structures/07-hash-tables/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -31,9 +31,9 @@
 ## Why Hash Tables Matter
 
 Imagine you have a massive **dictionary** with 100,000 words. To look up the definition of "serendipity", you could:
-- **Scan every page** — O(n), takes forever.
-- **Binary search** — O(log n), faster but requires sorted pages.
-- **Use an index** — the word itself tells you exactly which page to open.
+- **Scan every page** â€” O(n), takes forever.
+- **Binary search** â€” O(log n), faster but requires sorted pages.
+- **Use an index** â€” the word itself tells you exactly which page to open.
 
 A **hash table** is that magical index. It answers "where do I store this?" and "where do I find this?" in near-constant time.
 
@@ -84,22 +84,22 @@ A hash table maps keys to values using a **hash function** \( h(k) \) that compu
 ### Hash Function
 
 
-**Real-world analogy:** A postal code system. When you mail a letter, the ZIP code tells the postal service which region to send it to. A good ZIP code system spreads mail evenly across all postal workers. A bad one dumps everything on one worker — just like a bad hash function dumps all keys into one bucket.
+**Real-world analogy:** A postal code system. When you mail a letter, the ZIP code tells the postal service which region to send it to. A good ZIP code system spreads mail evenly across all postal workers. A bad one dumps everything on one worker â€” just like a bad hash function dumps all keys into one bucket.
 
 A hash function transforms a key into an integer index within the bucket array range.
 
 **Properties of a good hash function:**
-1. **Deterministic** — same key always produces the same hash.
-2. **Fast to compute** — O(len(key)) ideally.
-3. **Uniform distribution** — keys spread evenly across buckets.
-4. **Minimizes collisions** — different keys rarely map to the same index.
+1. **Deterministic** â€” same key always produces the same hash.
+2. **Fast to compute** â€” O(len(key)) ideally.
+3. **Uniform distribution** â€” keys spread evenly across buckets.
+4. **Minimizes collisions** â€” different keys rarely map to the same index.
 
 **Common hash functions:**
 
-1. **Division method:** \( h(k) = k \bmod m \) — simple but choose m as a prime not near a power of 2.
+1. **Division method:** \( h(k) = k \bmod m \) â€” simple but choose m as a prime not near a power of 2.
 2. **Multiplication method:** \( h(k) = \lfloor m \cdot (kA \bmod 1) \rfloor \) where \( 0 &lt; A < 1 \) (Knuth suggests \( A = (\sqrt{5} - 1)/2 \approx 0.618 \)).
-3. **Polynomial rolling hash for strings:** \( h(s) = (\sum_{i=0}^{n-1} s[i] \cdot p^{i}) \bmod m \) — typical p = 31 or 131.
-4. **DJB2 hash (popular for strings):** `hash = ((hash << 5) + hash) + c` — simple, good distribution.
+3. **Polynomial rolling hash for strings:** \( h(s) = (\sum_{i=0}^{n-1} s[i] \cdot p^{i}) \bmod m \) â€” typical p = 31 or 131.
+4. **DJB2 hash (popular for strings):** `hash = ((hash << 5) + hash) + c` â€” simple, good distribution.
 
 **Pseudocode: Division Hash**
 
@@ -122,22 +122,22 @@ function hashString(str, tableSize):
 
 | Step | char | hash (before) | computation | hash (after) |
 |------|------|---------------|-------------|--------------|
-| Init | — | 5381 | — | 5381 |
+| Init | â€” | 5381 | â€” | 5381 |
 | 1 | 'c' (99) | 5381 | 5381*33 + 99 | 177672 |
 | 2 | 'a' (97) | 177672 | 177672*33 + 97 | 5863273 |
 | 3 | 't' (116) | 5863273 | 5863273*33 + 116 | 193488125 |
-| Final | — | — | 193488125 mod 16 | 13 |
+| Final | â€” | â€” | 193488125 mod 16 | 13 |
 
 **Complexity:**
-- **Time:** O(len(key)) — we iterate over each character once.
-- **Space:** O(1) — only a few integer variables.
+- **Time:** O(len(key)) â€” we iterate over each character once.
+- **Space:** O(1) â€” only a few integer variables.
 
 **Advantages & Disadvantages**
 
 | Advantages | Disadvantages |
 |-----------|-------------|
-| Deterministic — reliable | Poor choice of modulus causes clustering |
-| Fast O(k) computation | Not cryptographic — reversible |
+| Deterministic â€” reliable | Poor choice of modulus causes clustering |
+| Fast O(k) computation | Not cryptographic â€” reversible |
 | Simple to implement | Primary/secondary clustering with bad m |
 | Easy to compose for complex keys | Collisions unavoidable by pigeonhole principle |
 
@@ -178,17 +178,17 @@ public class HashUtils {
 ```
 
 **Edge Cases:**
-- **Empty string:** hash = 5381, returns 5381 mod m — valid, maps to bucket `5381 mod m`.
+- **Empty string:** hash = 5381, returns 5381 mod m â€” valid, maps to bucket `5381 mod m`.
 - **Very long key:** O(len) cost, no special treatment needed.
-- **Unicode characters:** treat as integer codepoints — behavior depends on character encoding.
-- **Hash function that always returns same value (pathological):** every key maps to the same bucket — degenerates to O(n) linked list.
+- **Unicode characters:** treat as integer codepoints â€” behavior depends on character encoding.
+- **Hash function that always returns same value (pathological):** every key maps to the same bucket â€” degenerates to O(n) linked list.
 
 ---
 
 ### Chaining
 
 
-**Real-world analogy:** A coat check room with numbered hooks. Each hook can hold multiple coats (chained together on the same hook). When two people get the same number, the attendant hangs one coat and clips the second onto the same hook. Finding your coat means searching through the chain on that hook — fast if the hook is lightly loaded, slow if everyone gets the same number.
+**Real-world analogy:** A coat check room with numbered hooks. Each hook can hold multiple coats (chained together on the same hook). When two people get the same number, the attendant hangs one coat and clips the second onto the same hook. Finding your coat means searching through the chain on that hook â€” fast if the hook is lightly loaded, slow if everyone gets the same number.
 
 **Algorithm: Insert with Chaining**
 
@@ -251,9 +251,9 @@ class HashTableChaining:
 
 **Dry Run:** Insert keys [10, 22, 31, 4, 15, 28, 17, 88, 59] into table of size 7 using chaining, hash = key mod 7, threshold = 1.0.
 
-| Step | Key | Bucket | Table State (bucket → list) |
+| Step | Key | Bucket | Table State (bucket â†’ list) |
 |------|-----|--------|----------------------------|
-| 0 | — | — | 0:[] 1:[] 2:[] 3:[] 4:[] 5:[] 6:[] |
+| 0 | â€” | â€” | 0:[] 1:[] 2:[] 3:[] 4:[] 5:[] 6:[] |
 | 1 | 10 | 10%7=3 | 0:[] 1:[] 2:[] 3:[10] 4:[] 5:[] 6:[] |
 | 2 | 22 | 22%7=1 | 0:[] 1:[22] 2:[] 3:[10] 4:[] 5:[] 6:[] |
 | 3 | 31 | 31%7=3 | 0:[] 1:[22] 2:[] 3:[10,31] 4:[] 5:[] 6:[] |
@@ -264,7 +264,7 @@ class HashTableChaining:
 | 8 | 88 | 88%7=4 | 0:[28] 1:[22,15] 2:[] 3:[10,31,17] 4:[4,88] 5:[] 6:[] |
 | 9 | 59 | 59%7=3 | 0:[28] 1:[22,15] 2:[] 3:[10,31,17,59] 4:[4,88] 5:[] 6:[] |
 
-**Final load factor:** α = 9/7 ≈ 1.29 > 1.0 → rehash needed next insert.
+**Final load factor:** Î± = 9/7 â‰ˆ 1.29 > 1.0 â†’ rehash needed next insert.
 
 **C++ Implementation:**
 
@@ -506,14 +506,14 @@ class HashTableChaining<K, V> {
 
 | Operation | Average | Worst Case | Why |
 |-----------|---------|------------|-----|
-| Search | O(1 + α) | O(n) | Average: chain length = α; Worst: all keys in one bucket |
+| Search | O(1 + Î±) | O(n) | Average: chain length = Î±; Worst: all keys in one bucket |
 | Insert | O(1) | O(n) | Average: O(1) amortized; Worst: rehash or collision chain |
-| Delete | O(1 + α) | O(n) | Average: find then remove from list; Worst: full chain scan |
+| Delete | O(1 + Î±) | O(n) | Average: find then remove from list; Worst: full chain scan |
 | Rehash | O(n) | O(n) | Must recompute hash and reinsert every element |
 
 **Why amortized O(1)?** When load factor exceeds threshold, we double the table size and reinsert all n elements at O(n) cost. But this happens only every n inserts (geometric growth). The amortized cost per insert is O(1) because the O(n) rehash cost is spread across n prior inserts: n * O(1) + O(n) / n = O(1).
 
-**Load Factor:** α = n/m. For chaining, typical threshold is α > 1.0 (or sometimes 0.75). Rehash when exceeded by allocating 2x the table and reinserting all entries.
+**Load Factor:** Î± = n/m. For chaining, typical threshold is Î± > 1.0 (or sometimes 0.75). Rehash when exceeded by allocating 2x the table and reinserting all entries.
 
 **Advantages & Disadvantages**
 
@@ -522,10 +522,10 @@ class HashTableChaining<K, V> {
 | Simple to implement | Extra memory for pointers (overhead) |
 | Safe deletion (no tombstones) | Cache-unfriendly (pointer chasing) |
 | Handles high load factors well | Worst-case O(n) with bad hash |
-| α &lt; 1.0 not strictly required | Linked list traversal slower than array |
+| Î± &lt; 1.0 not strictly required | Linked list traversal slower than array |
 
 **Edge Cases:**
-- **All keys hash to same bucket:** degrades to singly linked list — O(n) worst-case operations.
+- **All keys hash to same bucket:** degrades to singly linked list â€” O(n) worst-case operations.
 - **Empty table:** insert works normally; find/delete return not-found.
 - **Removing non-existent key:** return false / null, no side effects.
 - **Collision chain length explosion:** rehash is triggered to redistribute.
@@ -620,26 +620,26 @@ class HashTableOpen:
 
 | Step | Key | Hash | Probe Sequence | Slot | Table State (indices 0-10) |
 |------|-----|------|---------------|------|---------------------------|
-| 0 | — | — | — | — | [ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ] |
+| 0 | â€” | â€” | â€” | â€” | [ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ] |
 | 1 | 10 | 10 | 10 | 10 | [ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][10] |
 | 2 | 22 | 0 | 0 | 0 | [22][ ][ ][ ][ ][ ][ ][ ][ ][ ][10] |
 | 3 | 31 | 9 | 9 | 9 | [22][ ][ ][ ][ ][ ][ ][ ][ ][31][10] |
 | 4 | 4 | 4 | 4 | 4 | [22][ ][ ][ ][4][ ][ ][ ][ ][31][10] |
-| 5 | 15 | 4 | 4*→5 | 5 | [22][ ][ ][ ][4][15][ ][ ][ ][31][10] |
+| 5 | 15 | 4 | 4*â†’5 | 5 | [22][ ][ ][ ][4][15][ ][ ][ ][31][10] |
 | 6 | 28 | 6 | 6 | 6 | [22][ ][ ][ ][4][15][28][ ][ ][31][10] |
-| 7 | 17 | 6 | 6*→7 | 7 | [22][ ][ ][ ][4][15][28][17][ ][31][10] |
-| 8 | 88 | 0 | 0*→1 | 1 | [22][88][ ][ ][4][15][28][17][ ][31][10] |
-| 9 | 59 | 4 | 4*→5*→6*→7*→8 | 8 | [22][88][ ][ ][4][15][28][17][59][31][10] |
+| 7 | 17 | 6 | 6*â†’7 | 7 | [22][ ][ ][ ][4][15][28][17][ ][31][10] |
+| 8 | 88 | 0 | 0*â†’1 | 1 | [22][88][ ][ ][4][15][28][17][ ][31][10] |
+| 9 | 59 | 4 | 4*â†’5*â†’6*â†’7*â†’8 | 8 | [22][88][ ][ ][4][15][28][17][59][31][10] |
 
 *Note: * indicates occupied slot, skip to next.*
 
-Now load factor = 9/11 ≈ 0.82 > 0.7 → next insert triggers rehash.
+Now load factor = 9/11 â‰ˆ 0.82 > 0.7 â†’ next insert triggers rehash.
 
 #### Quadratic Probing
 
-Probe sequence: `p(k, i) = (hash(k) + c₁*i + c₂*i²) mod m`, typically c₁ = c₂ = 1/2.
+Probe sequence: `p(k, i) = (hash(k) + câ‚*i + câ‚‚*iÂ²) mod m`, typically câ‚ = câ‚‚ = 1/2.
 
-**Why quadratic?** Reduces primary clustering by jumping farther from the original hash with each probe. But suffers from **secondary clustering** — all keys with the same hash follow the same probe sequence.
+**Why quadratic?** Reduces primary clustering by jumping farther from the original hash with each probe. But suffers from **secondary clustering** â€” all keys with the same hash follow the same probe sequence.
 
 **Pseudocode: Quadratic Probing Insert**
 
@@ -659,16 +659,16 @@ function insert(key, value):
 
 **Real-world analogy:** A warehouse with two different aisle-numbering systems. If the first system sends you to an occupied aisle, you use a second system to find a different route. This avoids the clustering problem because each key has its own unique step size.
 
-Probe sequence: `p(k, i) = (h₁(k) + i * h₂(k)) mod m`
+Probe sequence: `p(k, i) = (hâ‚(k) + i * hâ‚‚(k)) mod m`
 
 Where:
-- `h₁(k) = k mod m` (primary hash)
-- `h₂(k)` is a second hash function, typically `h₂(k) = prime - (k mod prime)` where prime &lt; m.
+- `hâ‚(k) = k mod m` (primary hash)
+- `hâ‚‚(k)` is a second hash function, typically `hâ‚‚(k) = prime - (k mod prime)` where prime &lt; m.
 
 **Algorithm: Insert with Double Hashing**
 
-1. Compute `idx = h₁(key) mod m`.
-2. Compute `step = h₂(key)` (must be non-zero and coprime to m).
+1. Compute `idx = hâ‚(key) mod m`.
+2. Compute `step = hâ‚‚(key)` (must be non-zero and coprime to m).
 3. Set `i = 0`.
 4. While slot at `(idx + i * step) mod m` is occupied AND not same key:
    - Increment `i`.
@@ -676,7 +676,7 @@ Where:
 6. Otherwise, insert at this slot, increment count.
 7. Check load factor for rehash.
 
-**Why h₂(k) must be non-zero:** If h₂(k) = 0, the probe sequence never advances — infinite loop for full table.
+**Why hâ‚‚(k) must be non-zero:** If hâ‚‚(k) = 0, the probe sequence never advances â€” infinite loop for full table.
 
 **Pseudocode: Double Hashing**
 
@@ -696,20 +696,20 @@ function insert(key, value):
     n++
 ```
 
-**Dry Run (Double Hashing):** Insert keys [10, 22, 31, 4, 15, 28, 17, 88, 59] into m=11, h₁(k)=k mod 11, h₂(k)=7 - (k mod 7), threshold=0.7.
+**Dry Run (Double Hashing):** Insert keys [10, 22, 31, 4, 15, 28, 17, 88, 59] into m=11, hâ‚(k)=k mod 11, hâ‚‚(k)=7 - (k mod 7), threshold=0.7.
 
-| Step | Key | h₁ | h₂ | Probe Sequence | Slot | Table State |
+| Step | Key | hâ‚ | hâ‚‚ | Probe Sequence | Slot | Table State |
 |------|-----|-----|-----|---------------|------|------------|
-| 0 | — | — | — | — | — | [ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ] |
+| 0 | â€” | â€” | â€” | â€” | â€” | [ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ] |
 | 1 | 10 | 10 | 7-3=4 | 10 | 10 | [ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][10] |
 | 2 | 22 | 0 | 7-1=6 | 0 | 0 | [22][ ][ ][ ][ ][ ][ ][ ][ ][ ][10] |
 | 3 | 31 | 9 | 7-3=4 | 9 | 9 | [22][ ][ ][ ][ ][ ][ ][ ][ ][31][10] |
 | 4 | 4 | 4 | 7-4=3 | 4 | 4 | [22][ ][ ][ ][4][ ][ ][ ][ ][31][10] |
-| 5 | 15 | 4 | 7-1=6 | 4→(4+6)%11=10→(4+12)%11=5 | 5 | [22][ ][ ][ ][4][15][ ][ ][ ][31][10] |
+| 5 | 15 | 4 | 7-1=6 | 4â†’(4+6)%11=10â†’(4+12)%11=5 | 5 | [22][ ][ ][ ][4][15][ ][ ][ ][31][10] |
 | 6 | 28 | 6 | 7-0=7 | 6 | 6 | [22][ ][ ][ ][4][15][28][ ][ ][31][10] |
-| 7 | 17 | 6 | 7-3=4 | 6→(6+4)%11=10→(6+8)%11=3 | 3 | [22][ ][ ][17][4][15][28][ ][ ][31][10] |
-| 8 | 88 | 0 | 7-4=3 | 0→(0+3)%11=3→(0+6)%11=6→(0+9)%11=9→(0+12)%11=1 | 1 | [22][88][ ][17][4][15][28][ ][ ][31][10] |
-| 9 | 59 | 4 | 7-3=4 | 4→(4+4)%11=8 | 8 | [22][88][ ][17][4][15][28][ ][59][31][10] |
+| 7 | 17 | 6 | 7-3=4 | 6â†’(6+4)%11=10â†’(6+8)%11=3 | 3 | [22][ ][ ][17][4][15][28][ ][ ][31][10] |
+| 8 | 88 | 0 | 7-4=3 | 0â†’(0+3)%11=3â†’(0+6)%11=6â†’(0+9)%11=9â†’(0+12)%11=1 | 1 | [22][88][ ][17][4][15][28][ ][ ][31][10] |
+| 9 | 59 | 4 | 7-3=4 | 4â†’(4+4)%11=8 | 8 | [22][88][ ][17][4][15][28][ ][59][31][10] |
 
 **C++ Implementation (Double Hashing):**
 
@@ -730,7 +730,7 @@ private:
     std::vector<Entry> table;
     int numElements;
     int capacity;
-    int prime;  // for h2 — a prime smaller than capacity
+    int prime;  // for h2 â€” a prime smaller than capacity
 
     int h1(const K& key) const {
         return std::hash<K>{}(key) % capacity;
@@ -1245,12 +1245,12 @@ class HashTableOpen<K, V> {
 
 | Operation | Average | Worst Case | Why |
 |-----------|---------|------------|-----|
-| Search | O(1) | O(n) | Average: α &lt; 0.7, few probes; Worst: table nearly full |
+| Search | O(1) | O(n) | Average: Î± &lt; 0.7, few probes; Worst: table nearly full |
 | Insert | O(1) | O(n) | Average: few probes; Worst: full probe chain |
 | Delete | O(1) | O(n) | Average: similar to search; Worst: tombstone chain |
 | Rehash | O(n) | O(n) | Must recompute and reinsert all entries |
 
-**Why average-case O(1):** With load factor α &lt; 0.7, the expected number of probes for linear probing is about 1/(1-α) — at α=0.5, expected 2 probes; at α=0.7, expected ~3.3 probes. That's constant.
+**Why average-case O(1):** With load factor Î± &lt; 0.7, the expected number of probes for linear probing is about 1/(1-Î±) â€” at Î±=0.5, expected 2 probes; at Î±=0.7, expected ~3.3 probes. That's constant.
 
 **Advantages & Disadvantages**
 
@@ -1263,10 +1263,10 @@ class HashTableOpen<K, V> {
 | | Cannot store more than m elements without rehash |
 
 **Edge Cases:**
-- **Deletion in open addressing:** Removing an entry by clearing it breaks probe sequences for later entries. Always use **tombstone markers** instead — mark slot as deleted (available for insert, but probe continues during search).
-- **Table full:** With α capped at 0.7, shouldn't happen. But if it does, infinite loop on probe.
+- **Deletion in open addressing:** Removing an entry by clearing it breaks probe sequences for later entries. Always use **tombstone markers** instead â€” mark slot as deleted (available for insert, but probe continues during search).
+- **Table full:** With Î± capped at 0.7, shouldn't happen. But if it does, infinite loop on probe.
 - **All keys same hash:** Probe sequence degrades to linear scan of every slot.
-- **Clustering avalanche:** At α > 0.7, linear probing clusters grow exponentially — performance craters.
+- **Clustering avalanche:** At Î± > 0.7, linear probing clusters grow exponentially â€” performance craters.
 
 ---
 
@@ -1275,7 +1275,7 @@ class HashTableOpen<K, V> {
 
 **Real-world analogy:** A growing library. When the shelves get too full (load factor too high), you move to a bigger building with more shelves. Every book gets a new shelf number because the numbering system depends on the total shelf count. Moving is expensive but infrequent.
 
-**When to rehash:** When load factor α = n/m exceeds the chosen threshold.
+**When to rehash:** When load factor Î± = n/m exceeds the chosen threshold.
 
 **Algorithm: Rehash**
 
@@ -1298,7 +1298,7 @@ function rehash():
             insert(entry.key, entry.value)
 ```
 
-**Dry Run:** Table of size 5 with keys [10, 22, 31, 4], hash = key mod 5, α = 4/5 = 0.8. Rehash to size 11.
+**Dry Run:** Table of size 5 with keys [10, 22, 31, 4], hash = key mod 5, Î± = 4/5 = 0.8. Rehash to size 11.
 
 | Key | Old Index (mod 5) | New Index (mod 11) |
 |-----|-------------------|-------------------|
@@ -1307,14 +1307,14 @@ function rehash():
 | 31 | 1 | 9 |
 | 4 | 4 | 4 |
 
-New table: [22][ ][ ][ ][4][ ][ ][ ][ ][31][10] — all indices recomputed.
+New table: [22][ ][ ][ ][4][ ][ ][ ][ ][31][10] â€” all indices recomputed.
 
 **Complexity:**
-- **Time:** O(n) — must iterate and reinsert every element.
-- **Amortized cost:** O(1) per insert — O(n) rehash cost spread across n inserts.
-- **Space:** O(n + m') — new table plus old table briefly in memory.
+- **Time:** O(n) â€” must iterate and reinsert every element.
+- **Amortized cost:** O(1) per insert â€” O(n) rehash cost spread across n inserts.
+- **Space:** O(n + m') â€” new table plus old table briefly in memory.
 
-**Why amortized O(1) per insert?** Consider m starts at 8. We insert 8 times (O(1) each), then rehash (O(8) → new m=16). Insert 8 more times (O(1) each), rehash (O(16) → m=32). The total cost for n inserts is O(1) per insert + occasional O(n) rehash. The rehash cost is dominated by the inserts: n * O(1) + O(n) + O(n/2) + O(n/4) + ... = O(n). Per insert: O(1).
+**Why amortized O(1) per insert?** Consider m starts at 8. We insert 8 times (O(1) each), then rehash (O(8) â†’ new m=16). Insert 8 more times (O(1) each), rehash (O(16) â†’ m=32). The total cost for n inserts is O(1) per insert + occasional O(n) rehash. The rehash cost is dominated by the inserts: n * O(1) + O(n) + O(n/2) + O(n/4) + ... = O(n). Per insert: O(1).
 
 **Advantages & Disadvantages**
 
@@ -1322,12 +1322,12 @@ New table: [22][ ][ ][ ][4][ ][ ][ ][ ][31][10] — all indices recomputed.
 |-----------|-------------|
 | Maintains low load factor | O(n) cost when triggered |
 | Amortized O(1) per insert | Doubles memory footprint |
-| Simple to implement | Rehash is blocking — pauses all operations |
+| Simple to implement | Rehash is blocking â€” pauses all operations |
 | Geometric growth guarantees amortization | Must handle failure gracefully |
 
 **Edge Cases:**
-- **Rehash during rehash (cascading):** If insert during rehash triggers another rehash, use threshold guard — only rehash once per insert.
-- **Large table rehash:** When m is already very large (millions), doubling could OOM. Some implementations grow by smaller factor or shrink on low α.
+- **Rehash during rehash (cascading):** If insert during rehash triggers another rehash, use threshold guard â€” only rehash once per insert.
+- **Large table rehash:** When m is already very large (millions), doubling could OOM. Some implementations grow by smaller factor or shrink on low Î±.
 - **Concurrent access during rehash:** Thread-safe implementations lock the table or use copy-on-write.
 
 ---
@@ -1335,7 +1335,7 @@ New table: [22][ ][ ][ ][4][ ][ ][ ][ ][31][10] — all indices recomputed.
 ### Cuckoo Hashing
 
 
-**Real-world analogy:** Two competing shoe stores on the same street. When a new brand arrives (key), it goes to Store A. If Store A is full, the shoe that was there gets **kicked out** and moves to Store B. If Store B is also full, that shoe kicks out Store B's occupant, which goes back to Store A. This continues until every shoe finds a spot — or a cycle is detected, meaning we need more stores (rehash). Named after the cuckoo bird that pushes other birds' eggs out of the nest.
+**Real-world analogy:** Two competing shoe stores on the same street. When a new brand arrives (key), it goes to Store A. If Store A is full, the shoe that was there gets **kicked out** and moves to Store B. If Store B is also full, that shoe kicks out Store B's occupant, which goes back to Store A. This continues until every shoe finds a spot â€” or a cycle is detected, meaning we need more stores (rehash). Named after the cuckoo bird that pushes other birds' eggs out of the nest.
 
 Cuckoo hashing uses **two hash tables** (or one table with two hash functions) and guarantees O(1) **worst-case** lookup.
 
@@ -1352,14 +1352,14 @@ Cuckoo hashing uses **two hash tables** (or one table with two hash functions) a
 
 **Algorithm: Search with Cuckoo Hashing**
 
-1. Check `table1[h1(key)]` — if matches, return value.
-2. Check `table2[h2(key)]` — if matches, return value.
-3. Return not-found (O(1) worst-case — at most 2 lookups).
+1. Check `table1[h1(key)]` â€” if matches, return value.
+2. Check `table2[h2(key)]` â€” if matches, return value.
+3. Return not-found (O(1) worst-case â€” at most 2 lookups).
 
 **Algorithm: Delete with Cuckoo Hashing**
 
-1. Check `table1[h1(key)]` — if matches, clear slot, return.
-2. Check `table2[h2(key)]` — if matches, clear slot, return.
+1. Check `table1[h1(key)]` â€” if matches, clear slot, return.
+2. Check `table2[h2(key)]` â€” if matches, clear slot, return.
 3. Return not-found.
 
 **Pseudocode: Cuckoo Hashing Insert**
@@ -1383,19 +1383,19 @@ function insert(key, value):
 
 | Step | Key | h1 | h2 | Action | Table1 | Table2 |
 |------|-----|-----|-----|--------|--------|--------|
-| 0 | — | — | — | Init | [ ][ ][ ][ ][ ][ ][ ][ ][ ][ ] | [ ][ ][ ][ ][ ][ ][ ][ ][ ][ ] |
-| 1 | 20 | 0 | 2 | T1[0] empty → place | [20][ ][ ][ ][ ][ ][ ][ ][ ][ ] | [ ][ ][ ][ ][ ][ ][ ][ ][ ][ ] |
-| 2 | 50 | 0 | 5 | T1[0] full, evict 20, place 50. 20→T2[2] empty | [50][ ][ ][ ][ ][ ][ ][ ][ ][ ] | [ ][ ][20][ ][ ][ ][ ][ ][ ][ ] |
-| 3 | 53 | 3 | 5 | T1[3] empty → place | [50][ ][ ][53][ ][ ][ ][ ][ ][ ] | [ ][ ][20][ ][ ][ ][ ][ ][ ][ ] |
-| 4 | 75 | 5 | 7 | T1[5] empty → place | [50][ ][ ][53][ ][75][ ][ ][ ][ ] | [ ][ ][20][ ][ ][ ][ ][ ][ ][ ] |
-| 5 | 100 | 0 | 10 | T1[0] full, evict 50→T2[5] empty | [100][ ][ ][53][ ][75][ ][ ][ ][ ] | [ ][ ][20][ ][ ][50][ ][ ][ ][ ] |
-| 6 | 67 | 7 | 6 | T1[7] empty → place | [100][ ][ ][53][ ][75][ ][67][ ][ ] | [ ][ ][20][ ][ ][50][ ][ ][ ][ ] |
-| 7 | 105 | 5 | 10 | T1[5] full evict 75, place 105. 75→T2[7] empty | [100][ ][ ][53][ ][105][ ][67][ ][ ] | [ ][ ][20][ ][ ][50][ ][75][ ][ ] |
-| 8 | 3 | 3 | 0 | T1[3] full evict 53, place 3. 53→T2[5] full, evict 50, place 53. 50→T1[0] full, evict 100, place 50. 100→T2[0] empty | [ 50][ ][ ][3][ ][105][ ][67][ ][ ] | [100][ ][20][ ][ ][53][ ][75][ ][ ] |
-| 9 | 36 | 6 | 3 | T1[6] empty → place | [ 50][ ][ ][3][ ][105][36][67][ ][ ] | [100][ ][20][ ][ ][53][ ][75][ ][ ] |
-| 10 | 39 | 9 | 3 | T1[9] empty → place | [ 50][ ][ ][3][ ][105][36][67][ ][39] | [100][ ][20][ ][ ][53][ ][75][ ][ ] |
+| 0 | â€” | â€” | â€” | Init | [ ][ ][ ][ ][ ][ ][ ][ ][ ][ ] | [ ][ ][ ][ ][ ][ ][ ][ ][ ][ ] |
+| 1 | 20 | 0 | 2 | T1[0] empty â†’ place | [20][ ][ ][ ][ ][ ][ ][ ][ ][ ] | [ ][ ][ ][ ][ ][ ][ ][ ][ ][ ] |
+| 2 | 50 | 0 | 5 | T1[0] full, evict 20, place 50. 20â†’T2[2] empty | [50][ ][ ][ ][ ][ ][ ][ ][ ][ ] | [ ][ ][20][ ][ ][ ][ ][ ][ ][ ] |
+| 3 | 53 | 3 | 5 | T1[3] empty â†’ place | [50][ ][ ][53][ ][ ][ ][ ][ ][ ] | [ ][ ][20][ ][ ][ ][ ][ ][ ][ ] |
+| 4 | 75 | 5 | 7 | T1[5] empty â†’ place | [50][ ][ ][53][ ][75][ ][ ][ ][ ] | [ ][ ][20][ ][ ][ ][ ][ ][ ][ ] |
+| 5 | 100 | 0 | 10 | T1[0] full, evict 50â†’T2[5] empty | [100][ ][ ][53][ ][75][ ][ ][ ][ ] | [ ][ ][20][ ][ ][50][ ][ ][ ][ ] |
+| 6 | 67 | 7 | 6 | T1[7] empty â†’ place | [100][ ][ ][53][ ][75][ ][67][ ][ ] | [ ][ ][20][ ][ ][50][ ][ ][ ][ ] |
+| 7 | 105 | 5 | 10 | T1[5] full evict 75, place 105. 75â†’T2[7] empty | [100][ ][ ][53][ ][105][ ][67][ ][ ] | [ ][ ][20][ ][ ][50][ ][75][ ][ ] |
+| 8 | 3 | 3 | 0 | T1[3] full evict 53, place 3. 53â†’T2[5] full, evict 50, place 53. 50â†’T1[0] full, evict 100, place 50. 100â†’T2[0] empty | [ 50][ ][ ][3][ ][105][ ][67][ ][ ] | [100][ ][20][ ][ ][53][ ][75][ ][ ] |
+| 9 | 36 | 6 | 3 | T1[6] empty â†’ place | [ 50][ ][ ][3][ ][105][36][67][ ][ ] | [100][ ][20][ ][ ][53][ ][75][ ][ ] |
+| 10 | 39 | 9 | 3 | T1[9] empty â†’ place | [ 50][ ][ ][3][ ][105][36][67][ ][39] | [100][ ][20][ ][ ][53][ ][75][ ][ ] |
 
-Notice that search requires at most **2 lookups** (T1[h1(k)] then T2[h2(k)]) — true O(1) worst-case.
+Notice that search requires at most **2 lookups** (T1[h1(k)] then T2[h2(k)]) â€” true O(1) worst-case.
 
 **C++ Implementation (Cuckoo Hashing):**
 
@@ -1695,23 +1695,23 @@ class CuckooHashTable<K, V> {
 |-----------|---------|------------|-----|
 | Search | O(1) | O(1) | At most 2 bucket checks, guaranteed |
 | Insert | O(1) | O(n)* | Usually constant; *amortized with cycle-triggered rehash |
-| Delete | O(1) | O(1) | Same as search — check 2 positions |
+| Delete | O(1) | O(1) | Same as search â€” check 2 positions |
 | Rehash | O(n) | O(n) | New hash functions, full reinsertion |
 
-**Why O(1) worst-case search?** Unlike chaining or linear probing, cuckoo hashing places each key in exactly one of two positions. You check position 1 in table1, position 2 in table2 — if it's not there, it doesn't exist. No chains, no probe sequences.
+**Why O(1) worst-case search?** Unlike chaining or linear probing, cuckoo hashing places each key in exactly one of two positions. You check position 1 in table1, position 2 in table2 â€” if it's not there, it doesn't exist. No chains, no probe sequences.
 
 **Advantages & Disadvantages**
 
 | Advantages | Disadvantages |
 |-----------|-------------|
 | O(1) worst-case lookup | Insert can trigger long eviction chains |
-| O(1) worst-case delete | Rehash complexity — new hash functions needed |
+| O(1) worst-case delete | Rehash complexity â€” new hash functions needed |
 | No linked list overhead | Memory overhead (two tables) |
 | Simple search (2 checks) | Only ~50% table utilization typical |
 
 **Edge Cases:**
 - **Insertion cycle:** If eviction loops infinitely, max iterations threshold triggers rehash with new hash functions.
-- **High load factor:** Cuckoo hashing works well up to α ≈ 0.5 per table (50% utilization). Beyond that, cycle probability increases.
+- **High load factor:** Cuckoo hashing works well up to Î± â‰ˆ 0.5 per table (50% utilization). Beyond that, cycle probability increases.
 - **Duplicate key:** Must check both tables before insert to prevent duplicates.
 - **Rehash with new hash functions:** Unlike standard rehashing, cuckoo rehash may need entirely new hash function families (not just larger table).
 
@@ -1725,11 +1725,11 @@ class CuckooHashTable<K, V> {
 | Memory overhead | Pointers for linked lists (per entry) | No extra pointers |
 | Cache performance | Poor (scattered linked list nodes) | Good (contiguous array) |
 | Load factor limit | Can exceed 1.0 (just degrades) | Must stay &lt; 0.7-0.8 |
-| Deletion | Simple — remove from list | Complex — tombstones required |
-| Worst-case search | O(n) — all keys one bucket | O(n) — full probe scan |
+| Deletion | Simple â€” remove from list | Complex â€” tombstones required |
+| Worst-case search | O(n) â€” all keys one bucket | O(n) â€” full probe scan |
 | Clustering | None | Primary/secondary clustering |
 | Implementation | Simple | Moderate |
-| Rehash urgency | Low (can stay α = 1.5) | High (α > 0.8 kills performance) |
+| Rehash urgency | Low (can stay Î± = 1.5) | High (Î± > 0.8 kills performance) |
 | Best for | High load, frequent deletes | Memory-constrained, cache-sensitive |
 
 **When to choose which:**
@@ -1742,9 +1742,9 @@ class CuckooHashTable<K, V> {
 
 | Operation | Chaining Avg | Chaining Worst | Open Addr Avg | Open Addr Worst | Cuckoo Avg | Cuckoo Worst |
 |-----------|-------------|---------------|--------------|----------------|-----------|-------------|
-| Search | O(1 + α) | O(n) | O(1) | O(n) | O(1) | O(1) |
+| Search | O(1 + Î±) | O(n) | O(1) | O(n) | O(1) | O(1) |
 | Insert | O(1) amortized | O(n) | O(1) amortized | O(n) | O(1) amortized | O(n)* |
-| Delete | O(1 + α) | O(n) | O(1) | O(n) | O(1) | O(1) |
+| Delete | O(1 + Î±) | O(n) | O(1) | O(n) | O(1) | O(1) |
 | Rehash | O(n) | O(n) | O(n) | O(n) | O(n) | O(n) |
 
 *\*Cuckoo worst-case insert triggers rehash on cycle detection.*
@@ -1755,12 +1755,12 @@ class CuckooHashTable<K, V> {
 
 | Feature | Chaining | Linear Probing | Quadratic Probing | Double Hashing | Cuckoo Hashing |
 |---------|----------|---------------|-------------------|----------------|----------------|
-| Collision resolution | Linked list at slot | Next empty slot | i² offset | i·h₂(k) offset | Evict to 2nd table |
+| Collision resolution | Linked list at slot | Next empty slot | iÂ² offset | iÂ·hâ‚‚(k) offset | Evict to 2nd table |
 | Worst-case lookup | O(n) | O(n) | O(n) | O(n) | O(1) |
 | Cache performance | Poor (pointer chasing) | Excellent (sequential) | Good | Poor | Good |
 | Clustering problem | None | Primary clustering | Secondary clustering | Minimal | None |
 | Deletion | Easy (remove from list) | Tombstone needed | Tombstone needed | Tombstone needed | Easy (clear slot) |
-| Max useful α | 1.0+ | 0.7 | 0.7 | 0.7 | 0.5 |
+| Max useful Î± | 1.0+ | 0.7 | 0.7 | 0.7 | 0.5 |
 
 ---
 
@@ -1781,9 +1781,9 @@ class CuckooHashTable<K, V> {
 
 ## Pro Tips
 
-- **Load factor is your most important metric**: Keep α &lt; 0.75 for open addressing, α < 1.0 for chaining. Rehash when the threshold is exceeded.
+- **Load factor is your most important metric**: Keep Î± &lt; 0.75 for open addressing, Î± < 1.0 for chaining. Rehash when the threshold is exceeded.
 - **Choose the right probing strategy**: Linear probing is cache-friendly but suffers from primary clustering. Quadratic probing reduces clustering but may not find an empty slot even if one exists. Double hashing is safest for open addressing.
-- **Hash functions for integers**: Use Knuth's multiplicative method: h(k) = ⌊m · (k · φ mod 1)⌋ where φ = (√5 − 1)/2. This distributes sequential keys uniformly.
+- **Hash functions for integers**: Use Knuth's multiplicative method: h(k) = âŒŠm Â· (k Â· Ï† mod 1)âŒ‹ where Ï† = (âˆš5 âˆ’ 1)/2. This distributes sequential keys uniformly.
 - **Bloom filters save memory**: A Bloom filter uses a bit array and k hash functions. With 10 bits per element and 7 hash functions, false positive rate is ~1%. No false negatives.
 - **Cuckoo hashing for real-time systems**: O(1) worst-case lookup makes it ideal for hardware routers and packet processing where latency must be bounded.
 
@@ -1793,7 +1793,7 @@ class CuckooHashTable<K, V> {
 
 - Hash tables offer average O(1) operations; worst case is O(n) with poor hashing.
 - Chaining uses linked lists for collisions; open addressing probes for empty slots.
-- Load factor α = n/m governs performance; rehash when α exceeds the threshold.
+- Load factor Î± = n/m governs performance; rehash when Î± exceeds the threshold.
 - A good hash function is fast, deterministic, and distributes keys uniformly.
 - Double hashing minimizes clustering by using two independent hash functions.
 - Cuckoo hashing guarantees O(1) worst-case lookup with two hash tables.
@@ -1822,7 +1822,7 @@ def twoSum(nums, target):
     return []
 ```
 
-**Complexity:** O(n) time, O(n) space. Single pass — each lookup is O(1) average.
+**Complexity:** O(n) time, O(n) space. Single pass â€” each lookup is O(1) average.
 
 ### Problem 2: Subarray Sum Equals K
 
@@ -1853,14 +1853,14 @@ def subarraySum(nums, k):
 
 | i | nums[i] | prefix_sum | sum_map before | prefix_sum-k | count before | count after |
 |---|---------|-----------|---------------|-------------|-------------|-------------|
-| 0 | — | — | {0:1} | — | 0 | 0 |
-| 1 | 1 | 1 | {0:1} | -2 → no | 0 | 0 → {0:1, 1:1} |
-| 2 | 2 | 3 | {0:1, 1:1} | 0 → yes (1) | 0 | 1 → {0:1, 1:1, 3:1} |
-| 3 | 3 | 6 | {0:1, 1:1, 3:1} | 3 → yes (1) | 1 | 2 → {0:1, 1:1, 3:1, 6:1} |
-| 4 | -3 | 3 | {0:1, 1:1, 3:1, 6:1} | 0 → yes (1) | 2 | 3 → {0:1, 1:1, 3:2, 6:1} |
-| 5 | 1 | 4 | {0:1, 1:1, 3:2, 6:1} | 1 → yes (1) | 3 | 3 → {0:1, 1:1, 3:2, 4:1, 6:1} |
-| 6 | 1 | 5 | {0:1, 1:1, 3:2, 4:1, 6:1} | 2 → no | 3 | 3 → (add 5:1) |
-| 7 | 1 | 6 | {0:1, 1:1, 3:2, 4:1, 5:1, 6:1} | 3 → yes (2) | 3 | 5 → (add 6:2) |
+| 0 | â€” | â€” | {0:1} | â€” | 0 | 0 |
+| 1 | 1 | 1 | {0:1} | -2 â†’ no | 0 | 0 â†’ {0:1, 1:1} |
+| 2 | 2 | 3 | {0:1, 1:1} | 0 â†’ yes (1) | 0 | 1 â†’ {0:1, 1:1, 3:1} |
+| 3 | 3 | 6 | {0:1, 1:1, 3:1} | 3 â†’ yes (1) | 1 | 2 â†’ {0:1, 1:1, 3:1, 6:1} |
+| 4 | -3 | 3 | {0:1, 1:1, 3:1, 6:1} | 0 â†’ yes (1) | 2 | 3 â†’ {0:1, 1:1, 3:2, 6:1} |
+| 5 | 1 | 4 | {0:1, 1:1, 3:2, 6:1} | 1 â†’ yes (1) | 3 | 3 â†’ {0:1, 1:1, 3:2, 4:1, 6:1} |
+| 6 | 1 | 5 | {0:1, 1:1, 3:2, 4:1, 6:1} | 2 â†’ no | 3 | 3 â†’ (add 5:1) |
+| 7 | 1 | 6 | {0:1, 1:1, 3:2, 4:1, 5:1, 6:1} | 3 â†’ yes (2) | 3 | 5 â†’ (add 6:2) |
 
 **Result:** 5 subarrays sum to 3: [1,2], [3], [1,2,3,-3], [3,-3,1,1,1], [1,1,1].
 
@@ -1920,7 +1920,7 @@ def countFrequencies(nums):
 
 **Complexity:** O(n) time, O(d) space where d = distinct elements.
 
-**Follow-up:** Return top-K most frequent elements — use hash map for frequency + heap for top-K (O(n log k)).
+**Follow-up:** Return top-K most frequent elements â€” use hash map for frequency + heap for top-K (O(n log k)).
 
 ---
 
@@ -1930,16 +1930,16 @@ def countFrequencies(nums):
 
 Python's dictionary (`dict`) is a hash table using **open addressing** with **pseudo-random probing** (a variant that uses the higher bits of the hash for better distribution). Key design choices:
 - **Hash function:** `hash()` built-in, randomized per process start (PYTHONHASHSEED) to prevent DoS.
-- **Load factor threshold:** 2/3 (≈ 0.67) — triggers resize.
+- **Load factor threshold:** 2/3 (â‰ˆ 0.67) â€” triggers resize.
 - **Resize growth:** 2x or 3x depending on version; CPython 3.12 doubles then adjusts.
-- **Compact dict (3.6+):** Stores indices separately from entries — preserves insertion order, reduces memory by ~25%.
+- **Compact dict (3.6+):** Stores indices separately from entries â€” preserves insertion order, reduces memory by ~25%.
 
 ### Java HashMap
 
 Java's `HashMap` uses **chaining** with **treeification**. Key design:
 - **Initial capacity:** 16 buckets.
 - **Load factor threshold:** 0.75 (default).
-- **Treeify threshold:** When a chain reaches 8 entries AND table size ≥ 64, the linked list converts to a **red-black tree** — O(log n) worst-case instead of O(n).
+- **Treeify threshold:** When a chain reaches 8 entries AND table size â‰¥ 64, the linked list converts to a **red-black tree** â€” O(log n) worst-case instead of O(n).
 - **Resize:** Doubles capacity, rehashes all entries.
 - **Hash function:** `hashCode()` XOR with higher bits (`h ^ (h >>> 16)`) to spread entropy.
 
@@ -1947,19 +1947,19 @@ Java's `HashMap` uses **chaining** with **treeification**. Key design:
 
 Two main hash-based indexing strategies:
 - **Static hash index:** Hash function maps key to a fixed bucket. Overflow chains handle collisions. Used in main-memory databases (Redis, Memcached).
-- **Extendible hashing (dynamic):** Grows by splitting individual buckets when they overflow — no full rehash needed. Used in database buffer managers.
+- **Extendible hashing (dynamic):** Grows by splitting individual buckets when they overflow â€” no full rehash needed. Used in database buffer managers.
 - **Linear hashing:** Another dynamic scheme that adds buckets incrementally. Used in some disk-based systems.
 
 ### Caching (Memcached / Redis)
 
 - **Memcached:** Uses hash tables internally for O(1) key lookup in memory cache. The hash table maps key strings to cached objects with LRU eviction.
-- **Redis:** Core data structures (hash, set, sorted set) are built on hash tables. The global key space is a hash table. Redis uses **lazy rehashing** (incremental rehash) to avoid blocking during resize — moves buckets from old to new table in small steps during each command.
+- **Redis:** Core data structures (hash, set, sorted set) are built on hash tables. The global key space is a hash table. Redis uses **lazy rehashing** (incremental rehash) to avoid blocking during resize â€” moves buckets from old to new table in small steps during each command.
 
 ### Bloom Filters
 
 A **Bloom filter** is a space-efficient probabilistic hash-based data structure for membership testing.
 - **Structure:** A bit array of size `m` and `k` independent hash functions.
-- **Insert:** For each hash function, compute hᵢ(key) mod m, set that bit to 1.
+- **Insert:** For each hash function, compute háµ¢(key) mod m, set that bit to 1.
 - **Query:** For each hash function, check if all corresponding bits are 1. If any is 0, the key was **definitely not inserted**. If all are 1, the key is **probably inserted**.
 - **Key property:** False positives possible; false negatives impossible.
 - **Real uses:** Cassandra and HBase (bloom filters avoid disk reads for non-existent rows), Chromium (track malicious URLs), Bitcoin SPV (lightweight transaction verification), caching (avoid cache stampedes).
@@ -1971,10 +1971,10 @@ A **Bloom filter** is a space-efficient probabilistic hash-based data structure 
 |--------|---------------------|-------------|-------------|--------|-----------------|
 | CPython dict | Open addressing (random probing) | 8 | 2/3 | ~2x | Compact layout, insertion order |
 | Java HashMap | Chaining + treeification | 16 | 0.75 | 2x | Tree at 8 collisions |
-| Go map | Open addressing (hash-of-hash) | — | 6.5 (B) | 2x | Incremental rehash |
-| Rust HashMap | Open addressing (Robin Hood) | 7 | 0.7 | 2x | Robin Hood — equalize probe lengths |
+| Go map | Open addressing (hash-of-hash) | â€” | 6.5 (B) | 2x | Incremental rehash |
+| Rust HashMap | Open addressing (Robin Hood) | 7 | 0.7 | 2x | Robin Hood â€” equalize probe lengths |
 | Redis dict | Chaining | 4 | 1.0 | 2x | Lazy incremental rehash |
-| Memcached | Chaining | — | — | 2x | LRU eviction integration |
+| Memcached | Chaining | â€” | â€” | 2x | LRU eviction integration |
 
 ---
 
@@ -1986,8 +1986,8 @@ A **Bloom filter** is a space-efficient probabilistic hash-based data structure 
 |---------|----------------|------------------|
 | Using a non-idempotent hashCode (changes over time) | Object modified after insertion causes lookup failure | Use immutable fields for the hash code; recompute on mutation |
 | Storing mutable objects as keys | If key changes, bucket lookup returns null even though object still exists | Use only immutable types (string, number) as keys |
-| Ignoring load factor — allowing table to become too full | High load factor → many collisions → O(n) degenerate performance | Resize when load factor > 0.75 (or chosen threshold) |
-| Custom hashCode returning a constant for all objects | Every entry lands in the same bucket → degenerate to a linked list | Distribute hash bits: use prime multipliers and mixed bit shifts |
+| Ignoring load factor â€” allowing table to become too full | High load factor â†’ many collisions â†’ O(n) degenerate performance | Resize when load factor > 0.75 (or chosen threshold) |
+| Custom hashCode returning a constant for all objects | Every entry lands in the same bucket â†’ degenerate to a linked list | Distribute hash bits: use prime multipliers and mixed bit shifts |
 | Using modulo with a non-prime capacity | Certain hash patterns collide more often with composite capacities | Use prime or power-of-2 capacities with proper mixing |
 | Forgetting to handle `null` key/value | NullPointerException on `key.hashCode()` or `value.equals()` | Use a sentinel or special-case null key |
 | Not rehashing after resize | Old entries point to wrong buckets after capacity changes | Recompute index = hashCode % newCapacity for every entry |
@@ -2112,35 +2112,35 @@ function twoSum(nums: number[], target: number): [number, number] | null {
    - a) Separate chaining
    - b) Open addressing
    - c) Double hashing
-   - d) Bubble sort ✓
+   - d) Bubble sort âœ“
 
-10. **The load factor α in a hash table is defined as:**
-    - a) α = number of buckets / number of entries
-    - b) α = number of entries / number of buckets ✓
-    - c) α = number of collisions / number of entries
-    - d) α = table size / entry size
+10. **The load factor Î± in a hash table is defined as:**
+    - a) Î± = number of buckets / number of entries
+    - b) Î± = number of entries / number of buckets âœ“
+    - c) Î± = number of collisions / number of entries
+    - d) Î± = table size / entry size
 
 11. **In linear probing, the primary clustering problem occurs because:**
     - a) Keys with the same hash form a cluster
-    - b) Collisions cause consecutive occupied slots to coalesce ✓
+    - b) Collisions cause consecutive occupied slots to coalesce âœ“
     - c) The hash function is weak
     - d) The table is too large
 
 12. **What is the worst-case time complexity for a hash table with separate chaining and a universal hash function?**
     - a) O(1)
     - b) O(log n)
-    - c) O(n) ✓
-    - d) O(n²)
+    - c) O(n) âœ“
+    - d) O(nÂ²)
 
 13. **Double hashing uses a second hash function to determine:**
     - a) The bucket index
-    - b) The probe step size ✓
+    - b) The probe step size âœ“
     - c) The hash table capacity
     - d) The load factor
 
 14. **The hashCode 31 is commonly used because:**
     - a) It is a Mersenne prime
-    - b) 31 * i can be optimized as (i << 5) - i ✓
+    - b) 31 * i can be optimized as (i << 5) - i âœ“
     - c) It minimizes hash collisions better than any other number
     - d) It's the smallest prime
 
@@ -2166,7 +2166,7 @@ function twoSum(nums: number[], target: number): [number, number] | null {
 
 23. **Design a time-based key-value store**: Support `set(key, value, timestamp)` and `get(key, timestamp)` returning the value for the exact or greatest previous timestamp.
 
-24. **Encode and decode tiny URLs**: Design a URL shortening service mapping short codes ↔ original URLs using hash maps and base62 encoding.
+24. **Encode and decode tiny URLs**: Design a URL shortening service mapping short codes â†” original URLs using hash maps and base62 encoding.
 
 ### Collision Resolution Comparison
 
@@ -2178,49 +2178,49 @@ function twoSum(nums: number[], target: number): [number, number] | null {
 | Double Hashing | O(n) | O(n) | Harder | Poor | Minimal |
 | Cuckoo Hashing | O(1) worst-case | O(n) | Easy | Good | None (deterministic) |
    - c) O(n)
-   - d) O(n²)
+   - d) O(nÂ²)
 
-2. **What is load factor α?**
+2. **What is load factor Î±?**
    - a) m/n
-   - b) n/m ✓
-   - c) n · m
+   - b) n/m âœ“
+   - c) n Â· m
    - d) log n / m
 
 3. **Which collision resolution uses linked lists?**
    - a) Linear probing
-   - b) Chaining ✓
+   - b) Chaining âœ“
    - c) Double hashing
    - d) Quadratic probing
 
 4. **What guarantees O(1) worst-case lookup?**
    - a) Chaining
-   - b) Cuckoo hashing ✓
+   - b) Cuckoo hashing âœ“
    - c) Linear probing
    - d) Double hashing
 
 5. **A Bloom filter can produce:**
    - a) False negatives only
-   - b) False positives only ✓
+   - b) False positives only âœ“
    - c) Both false positives and negatives
    - d) Neither
 
 6. **Why must open addressing use tombstones for deletion?**
    - a) To prevent memory leaks
-   - b) To preserve probe sequences for existing keys ✓
+   - b) To preserve probe sequences for existing keys âœ“
    - c) To track deleted entries count
-   - d) Tombstones are optional — clearing the slot works fine in all cases
+   - d) Tombstones are optional â€” clearing the slot works fine in all cases
 
 7. **Which probing strategy suffers from primary clustering?**
-   - a) Linear probing ✓
+   - a) Linear probing âœ“
    - b) Quadratic probing
    - c) Double hashing
    - d) Cuckoo hashing
 
 8. **Java's HashMap converts a chain to a tree when:**
-   - a) α > 0.75
-   - b) Chain length reaches 8 ✓
+   - a) Î± > 0.75
+   - b) Chain length reaches 8 âœ“
    - c) Table size reaches 64
-   - d) Both b and c combined ✓
+   - d) Both b and c combined âœ“
 
 **Answers:** 1-a, 2-b, 3-b, 4-b, 5-b, 6-b, 7-a, 8-d
 
@@ -2229,12 +2229,12 @@ function twoSum(nums: number[], target: number): [number, number] | null {
 ## Summary
 
 - Hash tables provide average O(1) search, insert, and delete by mapping keys to array indices via hash functions.
-- **Chaining** stores colliding keys in linked lists — simple, safe deletion, good at high load factors.
-- **Open addressing** stores all entries in the array itself — memory-efficient but requires tombstones for deletion and low load factors.
-- **Double hashing** uses a second hash for probe step size — minimizes clustering among probing strategies.
+- **Chaining** stores colliding keys in linked lists â€” simple, safe deletion, good at high load factors.
+- **Open addressing** stores all entries in the array itself â€” memory-efficient but requires tombstones for deletion and low load factors.
+- **Double hashing** uses a second hash for probe step size â€” minimizes clustering among probing strategies.
 - **Cuckoo hashing** achieves O(1) worst-case lookup with two tables and an eviction-based insert.
-- Load factor α = n/m drives performance; **rehashing** (doubling and reinserting) maintains a low α.
-- **Interview patterns:** Two sum, subarray sum, longest consecutive sequence, first missing positive — all solvable in O(n) with hash tables.
+- Load factor Î± = n/m drives performance; **rehashing** (doubling and reinserting) maintains a low Î±.
+- **Interview patterns:** Two sum, subarray sum, longest consecutive sequence, first missing positive â€” all solvable in O(n) with hash tables.
 - **Real systems:** Python dict, Java HashMap, Redis, Memcached, database indexes, and bloom filters all use hash table internals.
 
 ---
@@ -2259,8 +2259,8 @@ function twoSum(nums: number[], target: number): [number, number] | null {
 
 ### Challenge Problems
 
-11. Implement a **Bloom filter** — a probabilistic data structure that tests set membership with possible false positives but no false negatives. Use multiple hash functions and a bit array.
+11. Implement a **Bloom filter** â€” a probabilistic data structure that tests set membership with possible false positives but no false negatives. Use multiple hash functions and a bit array.
 
 12. **Design a thread-safe hash table** that supports concurrent reads and synchronized writes. Use fine-grained locking (lock per bucket) to maximize concurrency.
 
-13. **Implement extendible hashing** — a dynamic hash table that grows by splitting individual buckets rather than rehashing the entire table. Use a directory of pointers to buckets and a global depth counter.
+13. **Implement extendible hashing** â€” a dynamic hash table that grows by splitting individual buckets rather than rehashing the entire table. Use a directory of pointers to buckets and a global depth counter.

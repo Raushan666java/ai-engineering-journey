@@ -1,4 +1,4 @@
-# Chapter 12: Natural Language Processing
+﻿# Chapter 12: Natural Language Processing
 
 **Previous:** [Chapter 11: Reinforcement Learning](11-reinforcement-learning.md) | **Next:** [Chapter 13: Computer Vision](13-computer-vision.md)
 
@@ -9,16 +9,16 @@ By the conclusion of this chapter, the student will be able to: (1) define langu
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/12-nlp/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/12-nlp/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/12-nlp/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/12-nlp/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/12-nlp/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/12-nlp/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/12-nlp/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/12-nlp/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/12-nlp/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/12-nlp/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/12-nlp/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/12-nlp/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -27,9 +27,9 @@ By the conclusion of this chapter, the student will be able to: (1) define langu
 
 ## Why NLP Matters
 
-**Analogy:** Teaching a computer to understand language is like teaching a child to read. A child first learns letters (characters), then words (tokens), then grammar (syntax), then meaning (semantics), then reading between the lines (pragmatics). Similarly, NLP pipelines progress from raw text through tokenization, parsing, semantic analysis, and discourse processing — each layer building on the previous one.
+**Analogy:** Teaching a computer to understand language is like teaching a child to read. A child first learns letters (characters), then words (tokens), then grammar (syntax), then meaning (semantics), then reading between the lines (pragmatics). Similarly, NLP pipelines progress from raw text through tokenization, parsing, semantic analysis, and discourse processing â€” each layer building on the previous one.
 
-Every day, humanity generates 2.5 quintillion bytes of data — most of it unstructured text. NLP is the bridge between this raw text and actionable intelligence. Without NLP, Google Search cannot find relevant pages, Siri cannot answer questions, ChatGPT cannot generate responses, and spam filters cannot block phishing emails. NLP powers search engines, machine translation, sentiment analysis, chatbots, voice assistants, and information extraction systems that process billions of queries daily.
+Every day, humanity generates 2.5 quintillion bytes of data â€” most of it unstructured text. NLP is the bridge between this raw text and actionable intelligence. Without NLP, Google Search cannot find relevant pages, Siri cannot answer questions, ChatGPT cannot generate responses, and spam filters cannot block phishing emails. NLP powers search engines, machine translation, sentiment analysis, chatbots, voice assistants, and information extraction systems that process billions of queries daily.
 
 ## Chapter at a Glance
 
@@ -83,7 +83,7 @@ P(w_{1:n}) = \prod_{i=1}^n P(w_i | w_{1:i-1})
 ### 12.1.1 N-Gram Models
 
 
-**Analogy:** If you hear "I ordered a pepperoni ___," you predict "pizza" because in your experience, "pepperoni" is almost always followed by "pizza." N-gram models capture exactly this — which word follows which previous words.
+**Analogy:** If you hear "I ordered a pepperoni ___," you predict "pizza" because in your experience, "pepperoni" is almost always followed by "pizza." N-gram models capture exactly this â€” which word follows which previous words.
 
 N-gram models approximate P(wi | w1:i-1) by conditioning only on the preceding n-1 words:
 
@@ -126,7 +126,7 @@ Corpus: "the cat sat the cat ran" (6 tokens)
 | 3 | "sat the" | 1 (sat) | 1 | 1/1 = 1.0 |
 | 4 | "cat ran" | 2 (cat) | 1 | 1/2 = 0.5 |
 | 5 | "the dog" (unseen) | 2 (the) | 0 | 0/2 = 0.0 (before smoothing) |
-| 6 | "the dog" (after add-1) | 2 + V | 0 + 1 | 1/(2+V) with V=4: 1/6 ≈ 0.17 |
+| 6 | "the dog" (after add-1) | 2 + V | 0 + 1 | 1/(2+V) with V=4: 1/6 â‰ˆ 0.17 |
 
 **Python Implementation:**
 ```python
@@ -172,7 +172,7 @@ print("P(ran|cat):", lm.probability(("cat", "ran")))
 print("Perplexity:", lm.perplexity("the cat ran"))
 ```
 
-**Complexity:** Training O(T) where T is corpus size. Inference O(1) per query via hash table lookup. Storage O(V^n) in worst case — a trigram model with 50K vocabulary would need 125 trillion entries (impossible in practice), which is why n > 5 is never used. **Why:** Larger n captures more context but suffers from data sparsity — most possible n-grams never appear in any finite corpus, no matter how large.
+**Complexity:** Training O(T) where T is corpus size. Inference O(1) per query via hash table lookup. Storage O(V^n) in worst case â€” a trigram model with 50K vocabulary would need 125 trillion entries (impossible in practice), which is why n > 5 is never used. **Why:** Larger n captures more context but suffers from data sparsity â€” most possible n-grams never appear in any finite corpus, no matter how large.
 
 **Smoothing Techniques:**
 | Method | Description | Pros | Cons |
@@ -196,15 +196,15 @@ print("Perplexity:", lm.perplexity("the cat ran"))
 ### 12.1.2 Perplexity
 
 
-**Perplexity** measures how "surprised" the model is by test data — lower = better.
+**Perplexity** measures how "surprised" the model is by test data â€” lower = better.
 
 Perplexity(w_{1:n}) = P(w_{1:n})^{-1/n} = pow(prod_{i=1}^n 1/P(wi | w_{1:i-1}), 1/n)
 
-Human text perplexity typically ranges 50–1000. Modern neural LMs (GPT-3) achieve below 20 on some benchmarks. A model assigning uniform random probability over V words would have perplexity = V (useless baseline).
+Human text perplexity typically ranges 50â€“1000. Modern neural LMs (GPT-3) achieve below 20 on some benchmarks. A model assigning uniform random probability over V words would have perplexity = V (useless baseline).
 
 ## 12.2 Text Classification
 
-**Analogy:** Text classification is like a mail carrier sorting envelopes — is this a bill, a personal letter, or junk mail? The system learns patterns (words like "invoice", "dear", "free money") that distinguish categories.
+**Analogy:** Text classification is like a mail carrier sorting envelopes â€” is this a bill, a personal letter, or junk mail? The system learns patterns (words like "invoice", "dear", "free money") that distinguish categories.
 
 Text classification assigns a document to one or more predefined categories.
 
@@ -213,7 +213,7 @@ Text classification assigns a document to one or more predefined categories.
 
 **Algorithm Steps:**
 1. Compute prior P(c) for each class: count(docs with label c) / total_docs.
-2. For each class c, compute P(w|c) = (count(w in c) + 1) / (total words in c + V) — Laplace smoothing.
+2. For each class c, compute P(w|c) = (count(w in c) + 1) / (total words in c + V) â€” Laplace smoothing.
 3. For a new document d with words w1...wn, compute score(c) = log P(c) + sum log P(wi|c).
 4. Return the class with maximum score.
 
@@ -243,12 +243,12 @@ Training: "good movie" (pos), "bad film" (neg), "great acting" (pos), "terrible 
 Test: "good film"
 | Step | Class | Prior | log(prior) | P(good|c) | log P(good) | P(film|c) | log P(film) | Total |
 |------|-------|-------|------------|-----------|-------------|-----------|-------------|-------|
-| 0 | pos | 0.5 | -0.301 | — | — | — | — | -0.301 |
-| 1 | pos | — | — | (1+1)/(4+8)=0.167 | -0.778 | (0+1)/(4+8)=0.083 | -1.079 | -2.158 |
-| 2 | neg | 0.5 | -0.301 | — | — | — | — | -0.301 |
-| 3 | neg | — | — | (0+1)/(4+8)=0.083 | -1.079 | (1+1)/(4+8)=0.167 | -0.778 | -2.158 |
+| 0 | pos | 0.5 | -0.301 | â€” | â€” | â€” | â€” | -0.301 |
+| 1 | pos | â€” | â€” | (1+1)/(4+8)=0.167 | -0.778 | (0+1)/(4+8)=0.083 | -1.079 | -2.158 |
+| 2 | neg | 0.5 | -0.301 | â€” | â€” | â€” | â€” | -0.301 |
+| 3 | neg | â€” | â€” | (0+1)/(4+8)=0.083 | -1.079 | (1+1)/(4+8)=0.167 | -0.778 | -2.158 |
 
-Tie (both -2.158) — symmetrical case; in practice, more data breaks ties.
+Tie (both -2.158) â€” symmetrical case; in practice, more data breaks ties.
 
 **Python Implementation:**
 ```python
@@ -301,14 +301,14 @@ print("Prediction:", nb.predict("amazing movie"))
 print("Prediction:", nb.predict("awful film"))
 ```
 
-**Complexity:** Training O(D × L) where D = docs, L = avg doc length. Inference O(C × L) where C = classes. **Why:** Pre-computed probabilities make prediction a simple sum of log-likelihoods.
+**Complexity:** Training O(D Ã— L) where D = docs, L = avg doc length. Inference O(C Ã— L) where C = classes. **Why:** Pre-computed probabilities make prediction a simple sum of log-likelihoods.
 
 **Advantages vs Disadvantages:**
 
 | Advantages | Disadvantages |
 |------------|---------------|
 | Fast to train and predict | Independence assumption is unrealistic |
-| Works well with small data (100s of docs) | Cannot capture negation ("not good" ≈ "bad") |
+| Works well with small data (100s of docs) | Cannot capture negation ("not good" â‰ˆ "bad") |
 | Incrementally updatable | Sensitive to feature distribution shifts |
 | Handles many features (100K+ words) | Zero probabilities require smoothing |
 
@@ -317,9 +317,9 @@ print("Prediction:", nb.predict("awful film"))
 ### 12.2.2 Logistic Regression
 
 
-Logistic regression learns weights θ for feature vector φ(d):
+Logistic regression learns weights Î¸ for feature vector Ï†(d):
 
-P(c | d) = exp(θc^T φ(d)) / sum_{c'} exp(θ_{c'}^T φ(d))
+P(c | d) = exp(Î¸c^T Ï†(d)) / sum_{c'} exp(Î¸_{c'}^T Ï†(d))
 
 Unlike Naive Bayes, logistic regression makes no independence assumptions and automatically learns feature correlations. However, it requires more data and gradient-based training.
 
@@ -344,7 +344,7 @@ print(pipeline.predict(["boring film"]))
 
 ## 12.3 Tokenization
 
-**Analogy:** Breaking a sentence into tokens is like a chef chopping vegetables — each piece must be the right size for the recipe. Too big (whole sentence) and the model cannot see patterns. Too small (individual characters) and word-level meaning is lost. The right granularity (words or subwords) depends on the dish.
+**Analogy:** Breaking a sentence into tokens is like a chef chopping vegetables â€” each piece must be the right size for the recipe. Too big (whole sentence) and the model cannot see patterns. Too small (individual characters) and word-level meaning is lost. The right granularity (words or subwords) depends on the dish.
 
 Tokenization is the process of splitting text into smaller units called tokens (words, subwords, or characters).
 
@@ -353,8 +353,8 @@ Tokenization is the process of splitting text into smaller units called tokens (
 
 **Algorithm Steps:**
 1. Split text on whitespace into preliminary tokens.
-2. Separate punctuation from adjacent words (split "hello!" → "hello", "!").
-3. Handle contractions ("don't" → "do", "n't") using language-specific rules.
+2. Separate punctuation from adjacent words (split "hello!" â†’ "hello", "!").
+3. Handle contractions ("don't" â†’ "do", "n't") using language-specific rules.
 4. Handle special tokens: URLs, emails, hashtags, numbers, emoji.
 5. Return the list of token strings.
 
@@ -381,7 +381,7 @@ function WORD-TOKENIZE(text):
 Input: "I don't like pizza!"
 | Step | Char | Current Word | Action | Tokens |
 |------|------|-------------|--------|--------|
-| 0 | — | "" | Start | [] |
+| 0 | â€” | "" | Start | [] |
 | 1 | 'I' | "I" | Append char | [] |
 | 2 | ' ' | "" | Emit "I" | ["I"] |
 | 3 | 'd' | "d" | Append char | ["I"] |
@@ -390,9 +390,9 @@ Input: "I don't like pizza!"
 | 6 | "'" | "don'" | Append char | ["I"] |
 | 7 | 't' | "don't" | Append char | ["I"] |
 | 8 | ' ' | "" | Emit "don't" | ["I", "don't"] |
-| 9 | 'l' → 'i' → 'k' → 'e' | "like" | Append chars | ["I", "don't"] |
+| 9 | 'l' â†’ 'i' â†’ 'k' â†’ 'e' | "like" | Append chars | ["I", "don't"] |
 | 10 | ' ' | "" | Emit "like" | ["I", "don't", "like"] |
-| 11 | 'p' → 'i' → 'z' → 'z' → 'a' | "pizza" | Append chars | ["I", "don't", "like"] |
+| 11 | 'p' â†’ 'i' â†’ 'z' â†’ 'z' â†’ 'a' | "pizza" | Append chars | ["I", "don't", "like"] |
 | 12 | '!' | "" | Emit "pizza", append "!" | ["I", "don't", "like", "pizza", "!"] |
 
 **Python Implementation:**
@@ -431,7 +431,7 @@ print("Char tokens (first 15):", char_tokens[:15])
 | Simple and fast | OOV words break downstream models |
 | Preserves word boundaries | Large vocabulary (50K-500K) |
 | Intuitive for humans | "New York" should be one token but split |
-| — | "can't" and "cannot" produce different token sets |
+| â€” | "can't" and "cannot" produce different token sets |
 
 **Edge Cases:** URLs (www.example.com), emoji sequences, hashtags (#NLP), at-mentions (@user), multi-word entities ("New York"), languages without spaces (Chinese, Japanese, Thai), mixed-script text, numbers with commas (1,234,567).
 
@@ -544,20 +544,20 @@ print(bpe.tokenize("lowest"))
 print(bpe.tokenize("lowering"))  # OOV!
 ```
 
-**Complexity:** Training O(M × T) where M = merges, T = corpus tokens. Encoding O(L) per word with merge lookup. **Why:** Merge order is pre-computed; encoding greedily applies merges in a single pass.
+**Complexity:** Training O(M Ã— T) where M = merges, T = corpus tokens. Encoding O(L) per word with merge lookup. **Why:** Merge order is pre-computed; encoding greedily applies merges in a single pass.
 
 | Advantages | Disadvantages |
 |------------|---------------|
 | Handles OOV words (breaks into known subwords) | Merges are irreversible decisions |
 | Works across languages | Fixed vocabulary after training |
 | Compact representation (vs. characters) | May create non-morphological splits |
-| Used by GPT-4, BERT, LLaMA | — |
+| Used by GPT-4, BERT, LLaMA | â€” |
 
-**Edge Cases:** Rare Unicode glyphs (Chinese characters, emoji); numbers tokenize awkwardly (123 → "1", "2", "3"); code-switching between languages; whitespace-sensitive languages.
+**Edge Cases:** Rare Unicode glyphs (Chinese characters, emoji); numbers tokenize awkwardly (123 â†’ "1", "2", "3"); code-switching between languages; whitespace-sensitive languages.
 
 ## 12.4 Stemming and Lemmatization
 
-**Analogy:** Stemming is like a butcher cutting meat — rough, fast, loses detail. Lemmatization is like a surgeon making precise cuts — slower but preserves essential structure.
+**Analogy:** Stemming is like a butcher cutting meat â€” rough, fast, loses detail. Lemmatization is like a surgeon making precise cuts â€” slower but preserves essential structure.
 
 Stemming chops off affixes heuristically; lemmatization uses vocabulary and morphological analysis to return the base dictionary form.
 
@@ -565,10 +565,10 @@ Stemming chops off affixes heuristically; lemmatization uses vocabulary and morp
 
 
 **Algorithm Steps:**
-1. Remove plural suffixes (-sses → -ss, -ies → -i, -s → remove if short).
+1. Remove plural suffixes (-sses â†’ -ss, -ies â†’ -i, -s â†’ remove if short).
 2. Remove -ed, -ing, -ly with vowel-consonant (VC) checks.
 3. Remove derivational suffixes (-al, -ance, -ence, -er, -ic, -able, -tion).
-4. Handle special cases (double consonants, -ization → -ize, -fulness → -ful).
+4. Handle special cases (double consonants, -ization â†’ -ize, -fulness â†’ -ful).
 5. Clean final -e, -l, -al, -tion endings.
 
 **Pseudocode:**
@@ -595,21 +595,21 @@ function PORTER-STEM(word):
 Input: "processing"
 | Step | Rule Applied | Result | Condition |
 |------|-------------|--------|-----------|
-| 0 | — | processing | Start |
-| 1a | Not ending in sses/ies/ss/s | processing | — |
+| 0 | â€” | processing | Start |
+| 1a | Not ending in sses/ies/ss/s | processing | â€” |
 | 1b | Ends in "ing"? Check VC in "process" | has VC? yes | process |
-| 1b2 | process ends in "ss"? No special handling | process | — |
-| 2 | Replace "ss" with nothing? No suffix match | process | — |
-| Final | — | process | — |
+| 1b2 | process ends in "ss"? No special handling | process | â€” |
+| 2 | Replace "ss" with nothing? No suffix match | process | â€” |
+| Final | â€” | process | â€” |
 
 Input: "happiness"
 | Step | Rule Applied | Result | Condition |
 |------|-------------|--------|-----------|
-| 0 | — | happiness | Start |
+| 0 | â€” | happiness | Start |
 | 1a | Ends in "s" and not "ss"? Remove | happines | length check |
 | 2 | Replace "ness" with nothing if measure>0 | happi | measure(happi)=2 > 0 |
-| 3 | Replace "i" with "y" | happy | — |
-| Final | — | happy | — |
+| 3 | Replace "i" with "y" | happy | â€” |
+| Final | â€” | happy | â€” |
 
 **Python Implementation:**
 ```python
@@ -640,18 +640,18 @@ for w in words:
 | Aspect | Stemming | Lemmatization |
 |--------|----------|---------------|
 | Speed | Fast (O(L)) | Slower (dictionary + POS lookup) |
-| Accuracy | Over-stems ("universe" → "univers") | Precise ("better" → "good") |
+| Accuracy | Over-stems ("universe" â†’ "univers") | Precise ("better" â†’ "good") |
 | Output | Not necessarily a real word | Valid dictionary word |
 | Requires POS | No | Yes (for best results) |
-| Example | "studies" → "studi" | "studies" → "study" |
+| Example | "studies" â†’ "studi" | "studies" â†’ "study" |
 | Languages | Multiple (Porter, Snowball) | Only those with WordNet |
 | Use case | Search indexing, tf-idf | Chatbots, translation, QA |
 
-**Edge Cases:** Proper names stemmed incorrectly ("Johnson" → "john"); irregular English forms ("went" lemma → "go"); acronyms ("NLP") should NOT be stemmed; cross-lingual stemming requires language-specific stemmers; words with multiple valid base forms.
+**Edge Cases:** Proper names stemmed incorrectly ("Johnson" â†’ "john"); irregular English forms ("went" lemma â†’ "go"); acronyms ("NLP") should NOT be stemmed; cross-lingual stemming requires language-specific stemmers; words with multiple valid base forms.
 
 ## 12.5 Part-of-Speech Tagging
 
-**Analogy:** POS tagging is like a sports announcer calling out player positions — "The quarterback (NOUN) throws (VERB) the ball (NOUN) quickly (ADV)." Every word gets a role label that helps explain its function and relationship to other words.
+**Analogy:** POS tagging is like a sports announcer calling out player positions â€” "The quarterback (NOUN) throws (VERB) the ball (NOUN) quickly (ADV)." Every word gets a role label that helps explain its function and relationship to other words.
 
 POS tagging assigns a grammatical tag (e.g., noun, verb, adjective, adverb) to each word in a sentence.
 
@@ -692,27 +692,27 @@ function VITERBI(words, trans, emit, tags):
 **Dry Run Trace:**
 Sentence: "the cat sat" (expected: DT NN VB)
 Transition matrix (log probabilities):
-| from→to | DT | NN | VB | END |
+| fromâ†’to | DT | NN | VB | END |
 |---------|-----|-----|-----|-----|
-| START | -0.22 | -2.30 | -2.30 | — |
-| DT | -2.30 | -0.51 | -1.20 | — |
-| NN | -1.61 | -1.61 | -0.51 | — |
+| START | -0.22 | -2.30 | -2.30 | â€” |
+| DT | -2.30 | -0.51 | -1.20 | â€” |
+| NN | -1.61 | -1.61 | -0.51 | â€” |
 
 Emission matrix (log probs, only for words present):
-| word→tag | DT | NN | VB |
+| wordâ†’tag | DT | NN | VB |
 |----------|-----|-----|-----|
 | the | -0.22 | -10 | -10 |
 | cat | -10 | -0.36 | -10 |
 | sat | -10 | -10 | -0.22 |
 
-Viterbi table (position → best scores per tag):
+Viterbi table (position â†’ best scores per tag):
 | Pos | Word | DT | NN | VB |
 |-----|------|-----|-----|-----|
 | 0 | the | -0.44 | -12.3 | -12.3 |
 | 1 | cat | -2.96 (from DT) | -1.31 (from DT) | -2.20 (from DT) |
 | 2 | sat | -4.08 (from NN) | -3.43 (from NN) | -2.04 (from NN) |
 
-Best path: DT(pos=0) → NN(pos=1) → VB(pos=2)
+Best path: DT(pos=0) â†’ NN(pos=1) â†’ VB(pos=2)
 Result: "the/DT cat/NN sat/VB"
 
 **Python Implementation:**
@@ -734,23 +734,23 @@ tokens = word_tokenize(sentence)
 nltk_tags = pos_tag(tokens, tagset="universal")
 print("NLTK universal tags:")
 for word, tag in nltk_tags:
-    print(f"  {word:10s} → {tag}")
+    print(f"  {word:10s} â†’ {tag}")
 
 # spaCy POS tagging
 doc = nlp(sentence)
 print("\nspaCy POS tags:")
 for token in doc:
-    print(f"  {token.text:10s} → {token.pos_:6s} (fine: {token.tag_:6s})")
+    print(f"  {token.text:10s} â†’ {token.pos_:6s} (fine: {token.tag_:6s})")
 ```
 
-**Complexity:** Viterbi O(T^2 × n) where T = number of tags, n = words. **Why:** For each of n positions, we consider T tags, and each tag computes a max over T previous tags — hence T^2 per position.
+**Complexity:** Viterbi O(T^2 Ã— n) where T = number of tags, n = words. **Why:** For each of n positions, we consider T tags, and each tag computes a max over T previous tags â€” hence T^2 per position.
 
 ### 12.5.2 CRF-Based Tagging
 
 
 A CRF models P(t_{1:n} | w_{1:n}) directly and allows arbitrary overlapping features:
 
-P(t | w) = (1/Z(w)) * exp(∑λj * fj(t_{i-1}, ti, w, i))
+P(t | w) = (1/Z(w)) * exp(âˆ‘Î»j * fj(t_{i-1}, ti, w, i))
 
 Features can include word shape, capitalization, prefixes, suffixes, context words. CRFs avoid HMM label bias.
 
@@ -780,7 +780,7 @@ def word2features(sent, i):
 
 ## 12.6 Named Entity Recognition
 
-**Analogy:** NER is like a highlighter marking important names in a document — yellow for people, blue for places, green for organizations. Just as you scan a news article for names, NER automatically identifies and classifies named entities.
+**Analogy:** NER is like a highlighter marking important names in a document â€” yellow for people, blue for places, green for organizations. Just as you scan a news article for names, NER automatically identifies and classifies named entities.
 
 NER identifies proper nouns and classifies them (Person, Organization, Location, Date, etc.) using BIO encoding (B(eginning), I(nside), O(utside) of an entity).
 
@@ -818,7 +818,7 @@ Input: "Apple CEO Tim Cook visited New York"
 | CEO | Yes | ORGANIZATION:No | Apple | Tim | O |
 | Tim | Yes | PER:Yes | CEO | Cook | B-PER |
 | Cook | Yes | PER:Yes | Tim | visited | I-PER |
-| visited | No | — | Cook | New | O |
+| visited | No | â€” | Cook | New | O |
 | New | Yes | LOC:Yes | visited | York | B-LOC |
 | York | Yes | LOC:Yes | New | EOS | I-LOC |
 
@@ -849,7 +849,7 @@ print("\n=== spaCy NER ===")
 nlp = spacy.load("en_core_web_sm")
 doc = nlp(text)
 for ent in doc.ents:
-    print(f"  {ent.label_:15s} → {ent.text}")
+    print(f"  {ent.label_:15s} â†’ {ent.text}")
 
 # Extract person names
 print("\n=== All Person Entities ===")
@@ -857,31 +857,31 @@ people = [ent.text for ent in doc.ents if ent.label_ == "PERSON"]
 print("\n".join(f"  - {p}" for p in people))
 ```
 
-**Complexity:** Inference O(n × T²) for CRF, O(n × d) for Transformer where d = hidden dim. **Why:** CRF computes forward-backward over the tag lattice; Transformers process all tokens in parallel via self-attention.
+**Complexity:** Inference O(n Ã— TÂ²) for CRF, O(n Ã— d) for Transformer where d = hidden dim. **Why:** CRF computes forward-backward over the tag lattice; Transformers process all tokens in parallel via self-attention.
 
 | Advantages | Disadvantages |
 |------------|---------------|
 | Extracts structured info from unstructured text | Ambiguous entities ("Jordan" = country or person) |
 | Foundation for IE, QA, knowledge graph construction | Nested entities ("University of California, Berkeley") |
 | SpaCy achieves 85-90% F1 on news text | Domain shift (news model fails on medical text) |
-| — | Requires annotated training data |
+| â€” | Requires annotated training data |
 
 **Edge Cases:** Overlapping entities ("President George Washington of the United States"); lowercase entities in social media; fictional entities; entity disambiguation (same name, different entities); partial entity mentions ("the Bank" when "World Bank" is the full entity).
 
 ## 12.7 Parsing
 
-**Analogy:** Parsing is like diagramming sentences in grammar class — you draw tree structures showing how "the cat" forms a noun phrase that combines with "sat" to form a sentence. The parse tree reveals who did what to whom — the grammatical backbone of the sentence.
+**Analogy:** Parsing is like diagramming sentences in grammar class â€” you draw tree structures showing how "the cat" forms a noun phrase that combines with "sat" to form a sentence. The parse tree reveals who did what to whom â€” the grammatical backbone of the sentence.
 
 ### 12.7.1 Constituency Parsing (CKY Algorithm)
 
 
-**Analogy:** Like assembling a puzzle — you start with pieces (words), combine into larger pieces (phrases), until the whole picture (sentence) emerges from the bottom up.
+**Analogy:** Like assembling a puzzle â€” you start with pieces (words), combine into larger pieces (phrases), until the whole picture (sentence) emerges from the bottom up.
 
 **Algorithm Steps:**
-1. Convert grammar to Chomsky Normal Form (CNF): A → BC or A → w.
-2. Create triangular table of size n × n.
+1. Convert grammar to Chomsky Normal Form (CNF): A â†’ BC or A â†’ w.
+2. Create triangular table of size n Ã— n.
 3. Fill diagonal with POS tags from words (lexical rules).
-4. Fill cells rightward and upward: for each split point k between i and j, check if grammar has rule A → BC where B in table[i][k] and C in table[k+1][j].
+4. Fill cells rightward and upward: for each split point k between i and j, check if grammar has rule A â†’ BC where B in table[i][k] and C in table[k+1][j].
 5. If S (start symbol) in table[0][n-1], sentence is grammatical.
 6. Backtrace through table to recover parse tree.
 
@@ -907,56 +907,56 @@ function CKY(words, grammar):
 ```
 
 **Dry Run Trace:**
-Grammar (CNF): S→NP VP, NP→Det N, NP→N, VP→V NP, VP→VP PP, PP→P NP, Det→"the", N→"cat"|"dog"|"mat", V→"sat"|"chased", P→"on"
+Grammar (CNF): Sâ†’NP VP, NPâ†’Det N, NPâ†’N, VPâ†’V NP, VPâ†’VP PP, PPâ†’P NP, Detâ†’"the", Nâ†’"cat"|"dog"|"mat", Vâ†’"sat"|"chased", Pâ†’"on"
 
 Sentence: "the cat sat on the mat" (6 words, n=6)
 
 Table after diagonal (j=0 to 5):
 | i/j | 0:the | 1:cat | 2:sat | 3:on | 4:the | 5:mat |
 |-----|-------|-------|-------|------|-------|-------|
-| 0 | Det | — | — | — | — | — |
-| 1 | — | N | — | — | — | — |
-| 2 | — | — | V | — | — | — |
-| 3 | — | — | — | P | — | — |
-| 4 | — | — | — | — | Det | — |
-| 5 | — | — | — | — | — | N |
+| 0 | Det | â€” | â€” | â€” | â€” | â€” |
+| 1 | â€” | N | â€” | â€” | â€” | â€” |
+| 2 | â€” | â€” | V | â€” | â€” | â€” |
+| 3 | â€” | â€” | â€” | P | â€” | â€” |
+| 4 | â€” | â€” | â€” | â€” | Det | â€” |
+| 5 | â€” | â€” | â€” | â€” | â€” | N |
 
 After filling (j=1, then j=2, ..., j=5):
 | i/j | 0 | 1 | 2 | 3 | 4 | 5 |
 |-----|---|---|---|---|---|---|
-| 0 | Det | NP | — | — | — | S |
-| 1 | — | N | — | — | — | VP |
-| 2 | — | — | V | — | — | VP |
-| 3 | — | — | — | P | — | PP |
-| 4 | — | — | — | — | Det | NP |
-| 5 | — | — | — | — | — | N |
+| 0 | Det | NP | â€” | â€” | â€” | S |
+| 1 | â€” | N | â€” | â€” | â€” | VP |
+| 2 | â€” | â€” | V | â€” | â€” | VP |
+| 3 | â€” | â€” | â€” | P | â€” | PP |
+| 4 | â€” | â€” | â€” | â€” | Det | NP |
+| 5 | â€” | â€” | â€” | â€” | â€” | N |
 
 Step-by-step combination trace:
-1. (0,1): Det(0,0)+N(1,1) → NP (rule: NP→Det N)
-2. (4,5): Det(4,4)+N(5,5) → NP (rule: NP→Det N)
-3. (3,5): P(3,3)+NP(4,5) → PP (rule: PP→P NP)
-4. (2,5): V(2,2)+NP(3,5) → VP (rule: VP→V NP; but wait: VP→VP PP also applies via V[2,2]+PP[3,5])
+1. (0,1): Det(0,0)+N(1,1) â†’ NP (rule: NPâ†’Det N)
+2. (4,5): Det(4,4)+N(5,5) â†’ NP (rule: NPâ†’Det N)
+3. (3,5): P(3,3)+NP(4,5) â†’ PP (rule: PPâ†’P NP)
+4. (2,5): V(2,2)+NP(3,5) â†’ VP (rule: VPâ†’V NP; but wait: VPâ†’VP PP also applies via V[2,2]+PP[3,5])
 
 Let me correct a proper trace:
-1. (0,1): Det+N → NP
-2. (4,5): Det+N → NP
-3. (3,5): P+NP → PP
-4. (2,3): V alone — no rule directly matches V alone at (2,2) to produce something at (2,2)... Actually (2,2) stays V.
+1. (0,1): Det+N â†’ NP
+2. (4,5): Det+N â†’ NP
+3. (3,5): P+NP â†’ PP
+4. (2,3): V alone â€” no rule directly matches V alone at (2,2) to produce something at (2,2)... Actually (2,2) stays V.
 
-Hold — let me redo this more carefully with the correct grammar rules applied:
-- Grammar includes: NP→Det N, VP→V NP, VP→VP PP, PP→P NP, S→NP VP
+Hold â€” let me redo this more carefully with the correct grammar rules applied:
+- Grammar includes: NPâ†’Det N, VPâ†’V NP, VPâ†’VP PP, PPâ†’P NP, Sâ†’NP VP
 
 Valid derivations found in cells:
-- table[0][1] = {NP}    (NP → Det N)
-- table[4][5] = {NP}    (NP → Det N)
-- table[3][5] = {PP}    (PP → P NP)
-- table[2][5] = {VP}    (VP → V NP) — but cats V at (2,2) with NP at (3,5)? No. 
+- table[0][1] = {NP}    (NP â†’ Det N)
+- table[4][5] = {NP}    (NP â†’ Det N)
+- table[3][5] = {PP}    (PP â†’ P NP)
+- table[2][5] = {VP}    (VP â†’ V NP) â€” but cats V at (2,2) with NP at (3,5)? No. 
 
-OK, the sentence "the cat sat on the mat" has "sat" as a intransitive verb? No, "sat" here is transitive? Actually "the cat sat on the mat" — "sat" doesn't take a direct object. Let me reconsider.
+OK, the sentence "the cat sat on the mat" has "sat" as a intransitive verb? No, "sat" here is transitive? Actually "the cat sat on the mat" â€” "sat" doesn't take a direct object. Let me reconsider.
 
-Actually: "the cat sat on the mat" — "sat" is intransitive, "on the mat" is a PP adjunct.
+Actually: "the cat sat on the mat" â€” "sat" is intransitive, "on the mat" is a PP adjunct.
 
-Grammar should have: VP→V, VP→V PP, PP→P NP, NP→Det N
+Grammar should have: VPâ†’V, VPâ†’V PP, PPâ†’P NP, NPâ†’Det N
 
 Then:
 - table[0][1] = {NP} from Det+N
@@ -965,19 +965,19 @@ Then:
 - table[3][4] can't combine directly
 - table[4][5] = {NP} from Det+N
 - table[3][5] = {PP} from P+NP
-- table[2][5] = {VP} from V+PP (rule: VP→V PP)
+- table[2][5] = {VP} from V+PP (rule: VPâ†’V PP)
 - table[0][5] = {S} from NP+VP
 
 Let me just let the trace show a simpler sentence.
 
 "the cat chased the dog" (5 words)
-Grammar: S→NP VP, NP→Det N, VP→V NP, Det→"the", N→"cat"|"dog", V→"chased"
+Grammar: Sâ†’NP VP, NPâ†’Det N, VPâ†’V NP, Detâ†’"the", Nâ†’"cat"|"dog", Vâ†’"chased"
 
 Cells filled:
-1. (0,1): Det(0,0)+N(1,1) → NP [NP→Det N]
-2. (3,4): Det(3,3)+N(4,4) → NP [NP→Det N]
-3. (2,4): V(2,2)+NP(3,4) → VP [VP→V NP]
-4. (0,4): NP(0,1)+VP(2,4) → S [S→NP VP]
+1. (0,1): Det(0,0)+N(1,1) â†’ NP [NPâ†’Det N]
+2. (3,4): Det(3,3)+N(4,4) â†’ NP [NPâ†’Det N]
+3. (2,4): V(2,2)+NP(3,4) â†’ VP [VPâ†’V NP]
+4. (0,4): NP(0,1)+VP(2,4) â†’ S [Sâ†’NP VP]
 
 S in table[0][4]: sentence ACCEPTED.
 
@@ -1007,12 +1007,12 @@ for tree in parser.parse(sentence):
     print(tree)
 ```
 
-**Complexity:** O(n³ × |G|) where n = sentence length, |G| = grammar size. **Why:** Three nested loops (i,j,k) each O(n), plus iterating grammar rules. For n=20, O(8000) operations. For n=100, O(1M) — too slow for real-time use.
+**Complexity:** O(nÂ³ Ã— |G|) where n = sentence length, |G| = grammar size. **Why:** Three nested loops (i,j,k) each O(n), plus iterating grammar rules. For n=20, O(8000) operations. For n=100, O(1M) â€” too slow for real-time use.
 
 | Advantages | Disadvantages |
 |------------|---------------|
 | Complete structural analysis | Requires CNF grammar |
-| Finds all possible parses | O(n³) limits sentence length |
+| Finds all possible parses | O(nÂ³) limits sentence length |
 | Well-understood, proven algorithm | Brittle on ungrammatical input |
 | Extensible to PCFG (probabilistic) | Does not rank parses (needs PCFG) |
 
@@ -1044,7 +1044,7 @@ print(f"Learned {len(grammar.productions())} productions from Treebank")
 ### 12.7.3 Dependency Parsing
 
 
-**Analogy:** Dependency parsing is like a family tree where each person has exactly one parent. "I saw the cat" — "saw" is the root, "I" depends on "saw" (nsubj), "cat" depends on "saw" (dobj), "the" depends on "cat" (det).
+**Analogy:** Dependency parsing is like a family tree where each person has exactly one parent. "I saw the cat" â€” "saw" is the root, "I" depends on "saw" (nsubj), "cat" depends on "saw" (dobj), "the" depends on "cat" (det).
 
 **Algorithm Steps (Transition-based):**
 1. Start with all words in a buffer, empty stack, empty arc set.
@@ -1072,18 +1072,18 @@ displacy.render(doc, style="dep", jupyter=False)
 
 ## 12.8 Word Embeddings
 
-**Analogy:** Word embeddings are like arranging a library where similar books are shelved together — fiction, history, science each have their own section. In vector space, "king" - "man" + "woman" ≈ "queen". Proximity encodes semantic similarity; vector arithmetic captures analogies.
+**Analogy:** Word embeddings are like arranging a library where similar books are shelved together â€” fiction, history, science each have their own section. In vector space, "king" - "man" + "woman" â‰ˆ "queen". Proximity encodes semantic similarity; vector arithmetic captures analogies.
 
 ### 12.8.1 Word2Vec (Skip-Gram)
 
 
 **Algorithm Steps (Skip-Gram):**
-1. Sliding window over text: for each center word, collect context words within ±k positions.
+1. Sliding window over text: for each center word, collect context words within Â±k positions.
 2. For each (center, context) pair, treat as positive training example.
 3. Randomly sample k negative examples (center, random_word) for each positive.
 4. Train a shallow neural network: one hidden layer of size d (100-300).
-5. Objective: maximize P(context|center) = sigmoid(embedding(center) · embedding(context)).
-6. The hidden layer weight matrix (×d) becomes the word embedding table.
+5. Objective: maximize P(context|center) = sigmoid(embedding(center) Â· embedding(context)).
+6. The hidden layer weight matrix (Ã—d) becomes the word embedding table.
 7. Return the embedding table for all words.
 
 **Pseudocode:**
@@ -1158,19 +1158,19 @@ GloVe learns embeddings by factorizing the word co-occurrence matrix.
 **Algorithm Steps:**
 1. Build matrix X where Xij = times word j appears in context of word i.
 2. Apply weighting function f(Xij) = (Xij / 100)^0.75 if Xij &lt; 100, else 1.
-3. Learn vectors wi, w̃j and biases bi, b̃j to satisfy:
-   wi · w̃j + bi + b̃j ≈ log(Xij)
+3. Learn vectors wi, wÌƒj and biases bi, bÌƒj to satisfy:
+   wi Â· wÌƒj + bi + bÌƒj â‰ˆ log(Xij)
 4. Minimize weighted least squares error.
-5. Final embedding = wi + w̃j (combine word and context vectors).
+5. Final embedding = wi + wÌƒj (combine word and context vectors).
 
-**Complexity:** O(V²) memory if storing full matrix — GloVe prunes to top k co-occurrences per word (k=100-200). **Why:** The co-occurrence matrix is sparse but still very large; pruning is essential for tractability.
+**Complexity:** O(VÂ²) memory if storing full matrix â€” GloVe prunes to top k co-occurrences per word (k=100-200). **Why:** The co-occurrence matrix is sparse but still very large; pruning is essential for tractability.
 
 ### 12.8.3 FastText
 
 
 FastText extends Word2Vec by representing each word as a bag of character n-grams (3-6 characters).
 
-**Analogy:** FastText is like recognizing "unhappiness" by knowing the meaning of "un-", "happy", and "-ness" separately — it captures subword morphology, so rare/misspelled words still get meaningful vectors.
+**Analogy:** FastText is like recognizing "unhappiness" by knowing the meaning of "un-", "happy", and "-ness" separately â€” it captures subword morphology, so rare/misspelled words still get meaningful vectors.
 
 **Algorithm Steps:**
 1. For each word, extract all character n-grams (n=3,4,5,6).
@@ -1207,7 +1207,7 @@ print("Most similar to 'cat':", ft_model.wv.most_similar("cat", topn=3))
 
 ## 12.9 Transformers, BERT, and GPT
 
-**Analogy:** If RNNs read a sentence one word at a time (left to right), the Transformer reads ALL words at once and figures out which relate to which — like looking at a photograph where you see the whole scene simultaneously, not pixel by pixel.
+**Analogy:** If RNNs read a sentence one word at a time (left to right), the Transformer reads ALL words at once and figures out which relate to which â€” like looking at a photograph where you see the whole scene simultaneously, not pixel by pixel.
 
 ### 12.9.1 The Transformer Architecture
 
@@ -1223,10 +1223,10 @@ print("Most similar to 'cat':", ft_model.wv.most_similar("cat", topn=3))
 4. Output: contextualized embeddings for each token.
 
 **Self-Attention Algorithm Steps:**
-1. For each token embedding x, compute: Q = x·W_Q, K = x·W_K, V = x·W_V.
-2. Compute attention scores: S = Q × K^T / sqrt(d_k) — scales dot products.
-3. Apply softmax: A = softmax(S, dim=-1) — row-wise probability distribution.
-4. Compute output: O = A × V — weighted sum of values.
+1. For each token embedding x, compute: Q = xÂ·W_Q, K = xÂ·W_K, V = xÂ·W_V.
+2. Compute attention scores: S = Q Ã— K^T / sqrt(d_k) â€” scales dot products.
+3. Apply softmax: A = softmax(S, dim=-1) â€” row-wise probability distribution.
+4. Compute output: O = A Ã— V â€” weighted sum of values.
 
 **Pseudocode:**
 ```
@@ -1257,7 +1257,7 @@ function MULTI-HEAD-ATTENTION(X, heads, W_Q, W_K, W_V, W_O):
 **Dry Run Trace:**
 Input: "The cat sat" (3 tokens, simplified 4-dim vectors)
 
-Step 1: Embeddings (3 × 4 matrix):
+Step 1: Embeddings (3 Ã— 4 matrix):
 | Token | d1 | d2 | d3 | d4 |
 |-------|-----|-----|-----|-----|
 | The | 0.1 | 0.3 | 0.7 | 0.2 |
@@ -1266,7 +1266,7 @@ Step 1: Embeddings (3 × 4 matrix):
 
 Step 2: Compute Q, K, V (assume W_Q = W_K = W_V = I, d_k = 4 for simplicity).
 
-Step 3: Dot product attention scores (Q × K^T):
+Step 3: Dot product attention scores (Q Ã— K^T):
 | | The | cat | sat |
 |---|-----|-----|-----|
 | The | 0.63 | 0.46 | 0.71 |
@@ -1288,7 +1288,7 @@ Step 5: Softmax per row (attention weights):
 | sat | 0.31 | 0.27 | 0.42 |
 
 Interpretation: "cat" attends 49% to itself, 28% to "The", 23% to "sat".
-"The" attends roughly equally (34%, 31%, 35%) — function words spread attention.
+"The" attends roughly equally (34%, 31%, 35%) â€” function words spread attention.
 "sat" attends most to itself (42%) and to "The" (31%).
 
 **Python Implementation:**
@@ -1320,12 +1320,12 @@ print(f"Vocab size: {config.vocab_size}")
 print(f"Max position embeddings: {config.max_position_embeddings}")
 ```
 
-**Complexity:** Self-attention O(n² × d) where n = sequence length, d = hidden dim. **Why:** Every pair of tokens computes a dot product → n² comparisons. This is the Transformer's main limitation and why long documents need sparse attention (Longformer, BigBird) or linear attention (Performer).
+**Complexity:** Self-attention O(nÂ² Ã— d) where n = sequence length, d = hidden dim. **Why:** Every pair of tokens computes a dot product â†’ nÂ² comparisons. This is the Transformer's main limitation and why long documents need sparse attention (Longformer, BigBird) or linear attention (Performer).
 
 ### 12.9.2 BERT (Bidirectional Encoder Representations from Transformers)
 
 
-**Analogy:** BERT is like a student who reads sentences with blanks and must fill them using surrounding context — it learns language by playing "fill in the masked word" on billions of sentences.
+**Analogy:** BERT is like a student who reads sentences with blanks and must fill them using surrounding context â€” it learns language by playing "fill in the masked word" on billions of sentences.
 
 **Key Points:**
 - Encoder-only architecture (bidirectional context).
@@ -1350,7 +1350,7 @@ print(classifier("I hated every second of this film."))
 ner_pipeline = pipeline("ner", model="dslim/bert-base-NER")
 text = "Apple Inc. was founded by Steve Jobs in Cupertino."
 for entity in ner_pipeline(text):
-    print(f"  {entity['word']:15s} → {entity['entity']:10s} (score: {entity['score']:.3f})")
+    print(f"  {entity['word']:15s} â†’ {entity['entity']:10s} (score: {entity['score']:.3f})")
 
 # Question Answering
 qa_pipeline = pipeline("question-answering", model="distilbert-base-cased-distilled-squad")
@@ -1364,13 +1364,13 @@ print(f"\nAnswer: {result['answer']} (confidence: {result['score']:.3f})")
 ### 12.9.3 GPT (Generative Pre-trained Transformer)
 
 
-**Analogy:** GPT is like a student who reads left-to-right and must predict the next word — it learns language by generating continuations. Starting with GPT-1 (117M), scaling to GPT-3 (175B), it discovers grammar, reasoning, and world knowledge purely from next-token prediction.
+**Analogy:** GPT is like a student who reads left-to-right and must predict the next word â€” it learns language by generating continuations. Starting with GPT-1 (117M), scaling to GPT-3 (175B), it discovers grammar, reasoning, and world knowledge purely from next-token prediction.
 
 **Key Points:**
 - Decoder-only architecture (causal/unidirectional attention).
 - Each token can only attend to tokens on its left.
 - Pre-trained with autoregressive language modeling (predict next token).
-- No fine-tuning needed — uses few-shot or zero-shot prompting.
+- No fine-tuning needed â€” uses few-shot or zero-shot prompting.
 - GPT-3: 175B params, 96 layers, 96 heads, 12288 hidden dim, 2048 context length.
 - GPT-4: Estimated 1.7T params, MoE architecture, 128K context.
 
@@ -1415,12 +1415,12 @@ unmasker = pipeline("fill-mask", model="distilbert-base-uncased")
 ## 12.10 Lexical Semantics
 
 **WordNet** is a lexical database organizing words into synsets (sets of synonyms) with semantic relations:
-- **Hypernymy** (is-a): "dog" → "canine" → "mammal" → "animal"
-- **Hyponymy** (kind-of): "animal" → "bird" → "sparrow"
-- **Meronymy** (part-of): "hand" → "finger" → "knuckle"
-- **Antonymy** (opposite): "hot" ↔ "cold", "fast" ↔ "slow"
+- **Hypernymy** (is-a): "dog" â†’ "canine" â†’ "mammal" â†’ "animal"
+- **Hyponymy** (kind-of): "animal" â†’ "bird" â†’ "sparrow"
+- **Meronymy** (part-of): "hand" â†’ "finger" â†’ "knuckle"
+- **Antonymy** (opposite): "hot" â†” "cold", "fast" â†” "slow"
 
-**Word Sense Disambiguation (WSD)** determines which sense of a polysemous word is used in context. Example: "The bank issued a loan" — bank = financial institution, NOT river bank.
+**Word Sense Disambiguation (WSD)** determines which sense of a polysemous word is used in context. Example: "The bank issued a loan" â€” bank = financial institution, NOT river bank.
 
 **Python Implementation:**
 ```python
@@ -1431,7 +1431,7 @@ from nltk.wsd import lesk
 synsets = wordnet.synsets("bank")
 print(f"'bank' has {len(synsets)} senses:")
 for i, syn in enumerate(synsets[:5]):
-    print(f"  {i+1}. {syn.name():20s} → {syn.definition()}")
+    print(f"  {i+1}. {syn.name():20s} â†’ {syn.definition()}")
 
 # Hypernym chain
 dog = wordnet.synsets("dog")[0]
@@ -1451,7 +1451,7 @@ print(f"  Definition: {best_synset.definition()}")
 
 ## 12.11 Discourse Processing
 
-**Analogy:** Discourse analysis is like understanding a movie plot, not just individual scenes — sentences connect via relations like Elaboration ("For example..."), Contrast ("However..."), and Result ("Therefore..."). These relations form the narrative structure of text.
+**Analogy:** Discourse analysis is like understanding a movie plot, not just individual scenes â€” sentences connect via relations like Elaboration ("For example..."), Contrast ("However..."), and Result ("Therefore..."). These relations form the narrative structure of text.
 
 **Key Discourse Relations (PDTB):**
 | Relation | Example | Connective |
@@ -1470,7 +1470,7 @@ print(f"  Definition: {best_synset.definition()}")
 |---------|-------------|----------|----------|
 | NLTK | Tokenizers, stemmers, taggers, parsers, corpora, classifiers | Learning and prototyping | Python |
 | spaCy | Fast tokenization, POS, NER, dependency parsing, vectors | Production NLP | Python |
-| HuggingFace Transformers | BERT, GPT, T5, LLaMA — 500K+ models | Modern NLP (all tasks) | Python |
+| HuggingFace Transformers | BERT, GPT, T5, LLaMA â€” 500K+ models | Modern NLP (all tasks) | Python |
 | Stanford Stanza | 70+ languages, full pipeline | Multilingual NLP | Python |
 | gensim | Word2Vec, FastText, LDA, similarity | Word embeddings | Python |
 | AllenNLP | Deep learning NLP toolkit | Research NLP | Python |
@@ -1509,15 +1509,15 @@ print("BERT:", ner(text)[:3])
 | Feature Engineering | Manual (hand-crafted features: word shape, gazetteers, prefixes) | Learned automatically from data |
 | Architecture | HMM, CRF, SVM, Naive Bayes, Decision Trees | RNN, LSTM, GRU, Transformer |
 | Data Requirement | Works with small data (100-10K examples) | Requires large data (100K+) |
-| Pre-training | None — train from scratch per task | Pre-trained on massive corpora (billions of tokens) |
+| Pre-training | None â€” train from scratch per task | Pre-trained on massive corpora (billions of tokens) |
 | Context Window | Limited to n-gram range (2-5 words) | Full context (512-128K tokens) |
 | OOV Handling | Backoff, smoothing, character features | Subword tokenization (BPE, WordPiece) |
 | Multilingual | Separate models, pipelines per language | Cross-lingual transfer via multilingual pre-training |
-| Interpretability | High — feature weights are directly readable | Low — attention weights ≠ full explanation |
+| Interpretability | High â€” feature weights are directly readable | Low â€” attention weights â‰  full explanation |
 | Performance (F1) | 80-85% on standard benchmarks | 90-98% on standard benchmarks |
 | Training Time | Minutes on CPU | Days on GPU/TPU |
 | Hardware | CPU, 4-16GB RAM | GPU, 16-80GB VRAM |
-| Pipeline | Tokenize → POS → NER → Rules → Output | Tokenize → BERT → Fine-tune → Output |
+| Pipeline | Tokenize â†’ POS â†’ NER â†’ Rules â†’ Output | Tokenize â†’ BERT â†’ Fine-tune â†’ Output |
 | GLUE Score | ~70 (no pre-training) | 90+ (BERT), Human baseline: 87 |
 | Code Lines | 500-2000 for full system | 20-50 (using pre-trained models via HuggingFace) |
 
@@ -1526,7 +1526,7 @@ print("BERT:", ner(text)[:3])
 | Property | Word2Vec (2013) | GloVe (2014) | FastText (2016) | BERT (2018) |
 |----------|:-:|:-:|:-:|:-:|
 | Architecture | Shallow NN (2 layers) | Matrix factorization | Shallow NN + char n-grams | Transformer (12+ layers) |
-| Context Used | Local (±5-10 words) | Global (full corpus co-occurrence) | Local (±5-10 words) | Bidirectional (full sentence) |
+| Context Used | Local (Â±5-10 words) | Global (full corpus co-occurrence) | Local (Â±5-10 words) | Bidirectional (full sentence) |
 | OOV Handling | No | No | Yes (n-gram composition) | Yes (BPE subword tokens) |
 | Polysemy | Single vector per word | Single vector per word | Single vector per word | Contextual (different per usage) |
 | Training Data Size | 1B tokens | 6B tokens (Wikipedia+Gigaword) | 16B tokens | 3.3B tokens (Books+Wikipedia) |
@@ -1545,16 +1545,16 @@ print("BERT:", ner(text)[:3])
 **Answer:** Attention computes a weighted sum of values, where weights are determined by the compatibility between a query and keys. Given input embeddings, each token projects to three vectors: Query (what am I looking for?), Key (what do I contain?), and Value (what information do I carry?). The process:
 
 1. Compute similarity between each Query and all Keys via dot product: S = QK^T.
-2. Scale by 1/√d_k to prevent softmax saturation (vanishing gradients).
+2. Scale by 1/âˆšd_k to prevent softmax saturation (vanishing gradients).
 3. Apply softmax to get probability weights (how much to focus on each token).
-4. Weighted sum of Values: Output = softmax(QK^T/√d_k) × V.
+4. Weighted sum of Values: Output = softmax(QK^T/âˆšd_k) Ã— V.
 
-The scaling factor is critical — without it, large values push softmax to near-one-hot distributions, providing almost zero gradient. Multi-head attention runs this in parallel with h=12-96 different learned projections, allowing each head to capture different relationships (syntax, semantics, position).
+The scaling factor is critical â€” without it, large values push softmax to near-one-hot distributions, providing almost zero gradient. Multi-head attention runs this in parallel with h=12-96 different learned projections, allowing each head to capture different relationships (syntax, semantics, position).
 
 ### Q2: Compare BERT and GPT. When would you use each?
 
 
-**Answer:** BERT is an encoder-only model with bidirectional attention — it sees the full context left and right. GPT is decoder-only with causal (masked) attention — it only sees left context. BERT excels at understanding tasks: classification, NER, QA, entailment. GPT excels at generation: text completion, creative writing, code generation, dialogue.
+**Answer:** BERT is an encoder-only model with bidirectional attention â€” it sees the full context left and right. GPT is decoder-only with causal (masked) attention â€” it only sees left context. BERT excels at understanding tasks: classification, NER, QA, entailment. GPT excels at generation: text completion, creative writing, code generation, dialogue.
 
 Choose BERT for: sentiment analysis, spam detection, entity extraction, document classification, any task where you need to analyze existing text. Choose GPT for: chatbots, content generation, summarization, translation, code generation, any task where you need to produce new text.
 
@@ -1564,7 +1564,7 @@ BERT requires fine-tuning per task; GPT works with prompting (few-shot or zero-s
 
 
 **Answer:** Four main approaches:
-1. **Subword tokenization (BPE/WordPiece/Unigram):** Split OOV words into known subwords. "unhappiness" → ["un", "happiness"] or ["un", "happi", "ness"]. Every word is representable.
+1. **Subword tokenization (BPE/WordPiece/Unigram):** Split OOV words into known subwords. "unhappiness" â†’ ["un", "happiness"] or ["un", "happi", "ness"]. Every word is representable.
 2. **Character-level fallback:** If subword tokenization still fails (rare with BPE), fall to individual characters.
 3. **FastText composition:** Sum character n-gram vectors to create OOV embeddings on the fly.
 4. **Contextual guessing:** In Transformer models, the context surrounding the OOV word (which is now several subword tokens) helps infer its meaning through attention.
@@ -1572,12 +1572,12 @@ BERT requires fine-tuning per task; GPT works with prompting (few-shot or zero-s
 ### Q4: What is the difference between static and contextual embeddings?
 
 
-Static embeddings (Word2Vec, GloVe, FastText) assign one fixed vector per word regardless of context. "bank" has the same vector in "river bank" and "investment bank." Contextual embeddings (BERT, GPT, ELMo) assign different vectors based on surrounding words — "bank" in "river bank" and "investment bank" get different representations because self-attention incorporates the full sentence context.
+Static embeddings (Word2Vec, GloVe, FastText) assign one fixed vector per word regardless of context. "bank" has the same vector in "river bank" and "investment bank." Contextual embeddings (BERT, GPT, ELMo) assign different vectors based on surrounding words â€” "bank" in "river bank" and "investment bank" get different representations because self-attention incorporates the full sentence context.
 
 ### Q5: Why does the Transformer use multi-head attention instead of single-head?
 
 
-Different attention heads learn different relationship types. In "The cat sat on the mat," one head might capture subject-verb dependency ("cat" → "sat"), another captures adjective-noun or determiner-noun ("the" → "cat"), another captures spatial relation ("on" → "mat"), another captures self-attention for positional encoding. The concatenation of all heads provides a richer representation than any single head.
+Different attention heads learn different relationship types. In "The cat sat on the mat," one head might capture subject-verb dependency ("cat" â†’ "sat"), another captures adjective-noun or determiner-noun ("the" â†’ "cat"), another captures spatial relation ("on" â†’ "mat"), another captures self-attention for positional encoding. The concatenation of all heads provides a richer representation than any single head.
 
 ### Q6: Explain the significance of positional encoding in Transformers.
 
@@ -1589,14 +1589,14 @@ Unlike RNNs which process tokens sequentially (inherently ordered), Transformers
 | Application | NLP Techniques Used | Scale / Impact |
 |-------------|-------------------|----------------|
 | **Google Search** | BERT ranking (since 2019), NER, tokenization, n-gram models | BERT powers 1 in 10 queries; trillions of searches/year |
-| **Siri / Alexa** | ASR → Tokenization → NER → Intent classification → Slot filling | "Set a timer for 10 minutes" → Intent: SetTimer, Slot: 10 minutes |
-| **ChatGPT / GPT-4** | BPE tokenization → Transformer decoder → RLHF | 100M+ users, generates billions of tokens daily |
+| **Siri / Alexa** | ASR â†’ Tokenization â†’ NER â†’ Intent classification â†’ Slot filling | "Set a timer for 10 minutes" â†’ Intent: SetTimer, Slot: 10 minutes |
+| **ChatGPT / GPT-4** | BPE tokenization â†’ Transformer decoder â†’ RLHF | 100M+ users, generates billions of tokens daily |
 | **Gmail Smart Compose** | GPT-style autoregressive LM with user context | Suggests completions, saves users 10% typing time |
 | **Google Translate** | Encoder-decoder Transformer (Google Neural Machine Translation) | 100+ languages, 500M+ users, 143B words translated daily |
 | **Sentiment Analysis** | BERT fine-tuning, Naive Bayes, LSTM | Brands monitor Twitter/Reddit sentiment in real-time |
 | **Spam Detection** | Naive Bayes, logistic regression, BERT | Gmail blocks 99.9% of 10M+ daily spam emails |
 | **Grammarly / LanguageTool** | POS tagging, dependency parsing, BERT, sequence labeling | 30M+ daily users, corrects grammar/style/tone |
-| **Amazon Product Search** | Query understanding, NER (brands/products), embedding similarity | "wireless noise-canceling headphones under $100" → filtered results |
+| **Amazon Product Search** | Query understanding, NER (brands/products), embedding similarity | "wireless noise-canceling headphones under $100" â†’ filtered results |
 | **Healthcare NLP** | NER (diseases, drugs, procedures), relation extraction | Extract diagnoses from clinical notes, ICD-10 coding |
 | **Legal Document Review** | NER (parties, dates, clauses), text classification, information extraction | 50% reduction in document review time |
 | **Social Media Monitoring** | Sentiment analysis, topic modeling, entity extraction | Brand crisis detection, election monitoring |
@@ -1604,15 +1604,15 @@ Unlike RNNs which process tokens sequentially (inherently ordered), Transformers
 ### Case Study: Google Search BERT Integration
 
 
-Before BERT, Google Search struggled with prepositions. For "2019 brazil traveler to USA need visa," the system ignored "to" and returned results about Brazilians visiting other countries. After BERT's 2019 integration, the model correctly understood the directional relationship — a Brazilian wanting to travel TO the USA. This single change improved 1 in 10 search queries, the largest improvement in Google Search history.
+Before BERT, Google Search struggled with prepositions. For "2019 brazil traveler to USA need visa," the system ignored "to" and returned results about Brazilians visiting other countries. After BERT's 2019 integration, the model correctly understood the directional relationship â€” a Brazilian wanting to travel TO the USA. This single change improved 1 in 10 search queries, the largest improvement in Google Search history.
 
 ### Case Study: Gmail Spam Filter
 
 
 Gmail's spam filter processes billions of messages daily using:
-- Naive Bayes classifier (first-line, fast filtering — catches 50% of spam)
-- Deep learning models (second-line — catches 99.9%)
-- Graph-based analysis (third-line — detects spam campaigns)
+- Naive Bayes classifier (first-line, fast filtering â€” catches 50% of spam)
+- Deep learning models (second-line â€” catches 99.9%)
+- Graph-based analysis (third-line â€” detects spam campaigns)
 - User feedback signals (reported spam/ham)
 
 The system adapts to new spam patterns within minutes, crucial for rapidly evolving phishing campaigns.
@@ -1622,25 +1622,25 @@ The system adapts to new spam patterns within minutes, crucial for rapidly evolv
 | Method | Generative/Discriminative? | Features | Complexity | Best For |
 |--------|:---:|:---:|:---:|---------|
 | N-gram LM | Generative | Word counts | O(V^n) vocab | Language modeling |
-| Naive Bayes | Generative | Word features | O(V × C) | Text classification |
-| HMM | Generative | Tag transitions+emissions | O(T² n) | POS tagging |
-| CRF | Discriminative | Arbitrary overlapping | O(T² n) training | NER, shallow parsing |
-| PCFG | Generative | Rule probabilities | O(n³ |G|) | Parsing |
-| Word2Vec | Neural | Context windows | O(V × d) | Embedding |
-| Transformer | Neural | Self-attention | O(n² × d) | All modern NLP |
-| BERT | Neural (encoder) | Bidirectional attention | O(n² × d) per layer | Understanding tasks |
-| GPT | Neural (decoder) | Causal attention | O(n² × d) per layer | Generation tasks |
+| Naive Bayes | Generative | Word features | O(V Ã— C) | Text classification |
+| HMM | Generative | Tag transitions+emissions | O(TÂ² n) | POS tagging |
+| CRF | Discriminative | Arbitrary overlapping | O(TÂ² n) training | NER, shallow parsing |
+| PCFG | Generative | Rule probabilities | O(nÂ³ |G|) | Parsing |
+| Word2Vec | Neural | Context windows | O(V Ã— d) | Embedding |
+| Transformer | Neural | Self-attention | O(nÂ² Ã— d) | All modern NLP |
+| BERT | Neural (encoder) | Bidirectional attention | O(nÂ² Ã— d) per layer | Understanding tasks |
+| GPT | Neural (decoder) | Causal attention | O(nÂ² Ã— d) per layer | Generation tasks |
 
-## Quick Reference — NLP Metrics
+## Quick Reference â€” NLP Metrics
 
 | Metric | Formula | What It Measures |
 |--------|---------|-----------------|
 | Perplexity | P(w1...wn)^{-1/n} | LM quality (lower = better) |
 | Precision | TP / (TP + FP) | How many selected are relevant |
 | Recall | TP / (TP + FN) | How many relevant are selected |
-| F1 Score | 2 × P × R / (P + R) | Harmonic mean of P and R |
+| F1 Score | 2 Ã— P Ã— R / (P + R) | Harmonic mean of P and R |
 | Tag Accuracy | Correct tags / Total tags | Sequence labeling quality |
-| BLEU | BP × exp(∑ log P_n / N) | Machine translation quality |
+| BLEU | BP Ã— exp(âˆ‘ log P_n / N) | Machine translation quality |
 | ROUGE-L | LCS-based recall | Summarization quality |
 | BERTScore | Cosine similarity of BERT embeddings | Semantic text similarity |
 
@@ -1648,14 +1648,14 @@ The system adapts to new spam patterns within minutes, crucial for rapidly evolv
 
 | Technique | ML | CV | NLP | Research |
 |-----------|:---:|:---:|:---:|:---:|
-| N-gram LMs | ✗ | ✗ | ✓ | ✓ |
-| Naive Bayes | ✓ | ✓ | ✓ | ✓ |
-| HMM/Viterbi | ✗ | ✗ | ✓ | ✓ |
-| CRF | ✗ | ✗ | ✓ | ✓ |
-| CKY Parsing | ✗ | ✗ | ✓ | ✓ |
-| Word Embeddings | ✓ | ✓ | ✓ | ✓ |
-| Transformers | ✓ | ✓ | ✓ | ✓ |
-| BERT/GPT | ✓ | ✓ | ✓ | ✓ |
+| N-gram LMs | âœ— | âœ— | âœ“ | âœ“ |
+| Naive Bayes | âœ“ | âœ“ | âœ“ | âœ“ |
+| HMM/Viterbi | âœ— | âœ— | âœ“ | âœ“ |
+| CRF | âœ— | âœ— | âœ“ | âœ“ |
+| CKY Parsing | âœ— | âœ— | âœ“ | âœ“ |
+| Word Embeddings | âœ“ | âœ“ | âœ“ | âœ“ |
+| Transformers | âœ“ | âœ“ | âœ“ | âœ“ |
+| BERT/GPT | âœ“ | âœ“ | âœ“ | âœ“ |
 
 ## Chapter Quiz
 
@@ -1681,7 +1681,7 @@ The system adapts to new spam patterns within minutes, crucial for rapidly evolv
 - C) Kuroda Normal Form
 - D) Backus-Naur Form
 
-<details><summary>Answer&lt;/summary&gt;B) CKY parsing requires the CFG to be in Chomsky Normal Form (rules are A → BC or A → w).</details>
+<details><summary>Answer&lt;/summary&gt;B) CKY parsing requires the CFG to be in Chomsky Normal Form (rules are A â†’ BC or A â†’ w).</details>
 
 **Q4:** Which word embedding method can produce vectors for out-of-vocabulary words at inference time?
 - A) Word2Vec
@@ -1721,7 +1721,7 @@ The system adapts to new spam patterns within minutes, crucial for rapidly evolv
 - C) Multi-head uses less memory
 - D) It allows smaller hidden dimensions
 
-<details><summary>Answer&lt;/summary&gt;B) Different heads specialize in different relationships — one head may capture syntactic dependencies, another captures semantic similarity, another captures positional information.</details>
+<details><summary>Answer&lt;/summary&gt;B) Different heads specialize in different relationships â€” one head may capture syntactic dependencies, another captures semantic similarity, another captures positional information.</details>
 
 **Q9:** What is the role of positional encoding in Transformers?
 - A) It encodes the position of the sentence in the document
@@ -1743,11 +1743,11 @@ The system adapts to new spam patterns within minutes, crucial for rapidly evolv
 
 NLP spans the full pipeline from raw text through tokenization, language modeling, classification, sequence labeling, parsing, word embeddings, and Transformer-based deep learning. Modern NLP has undergone a paradigm shift:
 
-1. **Statistical era** (1990s-2010s): N-gram LMs, HMMs, CRFs, SVM — hand-crafted features, small data, interpretable.
-2. **Embedding era** (2013-2017): Word2Vec, GloVe, FastText — distributed representations, vector arithmetic.
-3. **Pre-training era** (2018-present): BERT, GPT, T5 — massive pre-training, fine-tuning, few-shot learning.
+1. **Statistical era** (1990s-2010s): N-gram LMs, HMMs, CRFs, SVM â€” hand-crafted features, small data, interpretable.
+2. **Embedding era** (2013-2017): Word2Vec, GloVe, FastText â€” distributed representations, vector arithmetic.
+3. **Pre-training era** (2018-present): BERT, GPT, T5 â€” massive pre-training, fine-tuning, few-shot learning.
 
-The Transformer solved the fundamental limitations of RNNs (parallelization, long-range dependencies), and scaling laws show that larger models with more data consistently improve performance. The shift from static embeddings (Word2Vec) to contextual embeddings (BERT/GPT) was particularly transformative — enabling models to understand that "bank" means different things in "river bank" vs "investment bank."
+The Transformer solved the fundamental limitations of RNNs (parallelization, long-range dependencies), and scaling laws show that larger models with more data consistently improve performance. The shift from static embeddings (Word2Vec) to contextual embeddings (BERT/GPT) was particularly transformative â€” enabling models to understand that "bank" means different things in "river bank" vs "investment bank."
 
 Key toolkits (NLTK for learning, spaCy for production, HuggingFace Transformers for modern NLP) provide accessible implementations. The future is trending toward even larger models, multimodal NLP (text + images + speech), efficient architectures (sparse attention, mixture of experts), and improved reasoning capabilities through chain-of-thought and tool use.
 
@@ -1781,5 +1781,5 @@ Key toolkits (NLTK for learning, spaCy for production, HuggingFace Transformers 
 18. Implement the CKY algorithm for a PCFG in Chomsky Normal Form. Apply it to the ATIS corpus. Report the most probable parse for a test sentence containing at least 8 words.
 19. Implement a minimal Transformer with one head of self-attention from scratch using NumPy (no PyTorch/TF). Demonstrate it on a tiny language modeling task with a vocabulary of 10 tokens.
 20. Fine-tune BERT for a multi-class text classification task (e.g., 20 Newsgroups). Analyze which layers encode the most task-specific information by probing intermediate representations (probing classifier at each layer).
-21. Build a complete NLP pipeline for a question-answering system: document retrieval → passage ranking → answer extraction using BERT. Evaluate on SQuAD 2.0.
+21. Build a complete NLP pipeline for a question-answering system: document retrieval â†’ passage ranking â†’ answer extraction using BERT. Evaluate on SQuAD 2.0.
 22. Compare perplexity of GPT-2, a trigram model, and a unigram model on the same test set. Analyze the sources of improvement at each level.

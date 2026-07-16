@@ -1,12 +1,12 @@
-# Chapter 8: GATE & Theory Exam Prep
+﻿# Chapter 8: GATE & Theory Exam Prep
 
-> **Prerequisites:** [Chapter 7: DSA & Coding Interview Prep](./ch-07-dsa-coding-interview.md) � Domain-specific DSA interview strategies.
-> **Next:** [Chapter 9: Framework & Language Learning](./ch-09-framework-language-learning.md) � A repeatable blueprint for learning any technology.
+> **Prerequisites:** [Chapter 7: DSA & Coding Interview Prep](./ch-07-dsa-coding-interview.md) ï¿½ Domain-specific DSA interview strategies.
+> **Next:** [Chapter 9: Framework & Language Learning](./ch-09-framework-language-learning.md) ï¿½ A repeatable blueprint for learning any technology.
 
 > **Master theory-heavy subjects like GATE CS, university exams, and certification tests by combining memory techniques with strategic preparation.**
-> Covers Q96�Q110 � 15 Q&As
+> Covers Q96ï¿½Q110 ï¿½ 15 Q&As
 
-Theory exams � especially competitive ones like GATE CS � demand a different approach than coding interviews. You need to balance conceptual depth with numerical agility, memorization with understanding, and breadth with depth. This chapter shows you how to prepare efficiently, retain more, and perform under pressure.
+Theory exams ï¿½ especially competitive ones like GATE CS ï¿½ demand a different approach than coding interviews. You need to balance conceptual depth with numerical agility, memorization with understanding, and breadth with depth. This chapter shows you how to prepare efficiently, retain more, and perform under pressure.
 
 ---
 
@@ -17,16 +17,16 @@ After completing this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/learning-how-to-learn/ch-08-gate-theory-prep/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/learning-how-to-learn/ch-08-gate-theory-prep/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/learning-how-to-learn/ch-08-gate-theory-prep/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/learning-how-to-learn/ch-08-gate-theory-prep/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/learning-how-to-learn/ch-08-gate-theory-prep/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/learning-how-to-learn/ch-08-gate-theory-prep/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/learning-how-to-learn/ch-08-gate-theory-prep/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/learning-how-to-learn/ch-08-gate-theory-prep/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/learning-how-to-learn/ch-08-gate-theory-prep/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/learning-how-to-learn/ch-08-gate-theory-prep/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/learning-how-to-learn/ch-08-gate-theory-prep/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/learning-how-to-learn/ch-08-gate-theory-prep/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -52,7 +52,7 @@ After completing this chapter, you will be able to:
 |-------|-------------|-------------------|
 | Dual-Track Schedule | Track 1 (breadth) covers all subjects; Track 2 (depth) focuses on weak areas | Spend 45 min/day on Track 1 and 120 min/day on Track 2 |
 | Cheat Sheet Method | Creating a one-page cheat sheet forces conceptual compression | Build from memory first, then fill gaps from your textbook |
-| Subject Interlinking | Cross-subject connections deepen understanding of each topic | Map dependency graphs between GATE subjects � find 15+ edges |
+| Subject Interlinking | Cross-subject connections deepen understanding of each topic | Map dependency graphs between GATE subjects ï¿½ find 15+ edges |
 | PYQ Analysis | Previous year questions reveal exam patterns and topic weightage | Categorize each question as formula-based, conceptual, or numerical |
 | Spiral Schedule | Touch every subject at least twice per week to maintain familiarity | Rotate through subjects systematically rather than blocking by week |
 | Mock Test Analysis | Systematic error classification reveals root causes of mistakes | Use the C/M/E/R taxonomy: Conceptual, Misread, Execution, Random |
@@ -70,7 +70,7 @@ flowchart LR
     G --> H[30-Day Strategy]
 ```
 
-**One-Sentence Takeaway:** Balance theory with coding by alternating study passes — Pass 1 for overview, Pass 2 for depth, and Pass 3 for application through implementation.
+**One-Sentence Takeaway:** Balance theory with coding by alternating study passes â€” Pass 1 for overview, Pass 2 for depth, and Pass 3 for application through implementation.
 
 ---
 
@@ -86,9 +86,9 @@ Use the **70/30 rule in early phases** (70% theory, 30% coding) and gradually sh
 
 | Phase | Theory | Coding | Focus |
 |-------|--------|--------|-------|
-| Months 1�2 | 70% | 30% | Build conceptual foundation across all subjects |
-| Months 3�4 | 60% | 40% | Solve subject-wise PYQs + implement algorithms |
-| Months 5�6 | 50% | 50% | Full-length mocks + coding practice in parallel |
+| Months 1ï¿½2 | 70% | 30% | Build conceptual foundation across all subjects |
+| Months 3ï¿½4 | 60% | 40% | Solve subject-wise PYQs + implement algorithms |
+| Months 5ï¿½6 | 50% | 50% | Full-length mocks + coding practice in parallel |
 
 
 The key insight is that **coding reinforces theory**. When you study Operating Systems (page replacement algorithms), implement them in code. When you study Databases (B+ tree operations), write a simulator. This dual encoding strengthens both memory pathways.
@@ -111,7 +111,7 @@ public class OptimalPageReplacement {
                 continue;
             }
 
-            // Find page to replace (used farthest in future � or not at all)
+            // Find page to replace (used farthest in future ï¿½ or not at all)
             int farthest = -1, pageToReplace = -1;
             for (int p : frames) {
                 int nextUse = Integer.MAX_VALUE;
@@ -140,9 +140,9 @@ public class OptimalPageReplacement {
 
 **Try This:** Pick one theory topic per week (e.g., cache coherence protocols, deadlock avoidance, B+ trees) and implement it in code. Writing the algorithm forces you to resolve ambiguities in your understanding.
 
-> **Pro Tip:** For GATE theory, don't treat it like a memorization exam. Trace through examples by hand � draw process state diagrams, cache mapping examples, and page table walks. GATE questions test your ability to apply concepts to new scenarios, not recall textbook definitions.
+> **Pro Tip:** For GATE theory, don't treat it like a memorization exam. Trace through examples by hand ï¿½ draw process state diagrams, cache mapping examples, and page table walks. GATE questions test your ability to apply concepts to new scenarios, not recall textbook definitions.
 
-**One-Sentence Takeaway:** For GATE theory, trace examples by hand and implement concepts in code � questions test application skills, not definition recall.
+**One-Sentence Takeaway:** For GATE theory, trace examples by hand and implement concepts in code ï¿½ questions test application skills, not definition recall.
 
 ---
 
@@ -150,19 +150,19 @@ public class OptimalPageReplacement {
 
 **Answer:**
 
-A formula cheat sheet isn't a dump of every equation � it's a **compressed mental model** of the subject. The act of creating it is more valuable than the final product.
+A formula cheat sheet isn't a dump of every equation ï¿½ it's a **compressed mental model** of the subject. The act of creating it is more valuable than the final product.
 
 Follow this process for each subject:
 
-**Step 1: Gather** � Collect all formulas, theorems, and key results from standard textbooks (not random blogs).
+**Step 1: Gather** ï¿½ Collect all formulas, theorems, and key results from standard textbooks (not random blogs).
 
-**Step 2: Categorize** � Group by topic. For Computer Networks, you might have: Performance Metrics, Error Control, Flow Control, Routing, Transport Layer, Security.
+**Step 2: Categorize** ï¿½ Group by topic. For Computer Networks, you might have: Performance Metrics, Error Control, Flow Control, Routing, Transport Layer, Security.
 
-**Step 3: Compress** � Express each formula in its most minimal form. Use single-letter variables. Add a one-line intuition.
+**Step 3: Compress** ï¿½ Express each formula in its most minimal form. Use single-letter variables. Add a one-line intuition.
 
-**Step 4: Map dependencies** � Draw arrows showing how formulas derive from each other. This builds a dependency graph in your mind.
+**Step 4: Map dependencies** ï¿½ Draw arrows showing how formulas derive from each other. This builds a dependency graph in your mind.
 
-**Step 5: Test** � Cover the sheet and try to reproduce each formula from memory. Mark ones you miss.
+**Step 5: Test** ï¿½ Cover the sheet and try to reproduce each formula from memory. Mark ones you miss.
 
 Here's a sample cheat sheet entry for **Computer Networks**:
 
@@ -172,9 +172,9 @@ Here's a sample cheat sheet entry for **Computer Networks**:
 PERFORMANCE
   Tt = L / B              (transmission time = packet length / bandwidth)
   Tp = d / v               (propagation delay = distance / velocity)
-  RTT = 2 � Tp
+  RTT = 2 ï¿½ Tp
   a = Tp / Tt              (propagation vs transmission ratio)
-  U = Tt / (Tt + 2�Tp)     (utilization for Stop-and-Wait)
+  U = Tt / (Tt + 2ï¿½Tp)     (utilization for Stop-and-Wait)
 
   Efficiency(S&W) = 1 / (1 + 2a)
   Efficiency(GBN)  = N / (1 + 2a)   (N = window size)
@@ -182,7 +182,7 @@ PERFORMANCE
 
 ERROR CONTROL
   Hamming distance d_min ? detect up to (d_min-1) errors, correct up to ?(d_min-1)/2?
-  CRC: remainder of M(x) � x^r / G(x)   (r = degree of generator)
+  CRC: remainder of M(x) ï¿½ x^r / G(x)   (r = degree of generator)
   Parity: XOR of all bits ? even/odd parity bit
 
 IPv4
@@ -196,9 +196,9 @@ IPv4
 
 **Try This:** For your weakest subject, spend 45 minutes building a one-page cheat sheet from memory first, then verify against your textbook. The gaps you discover are your study targets for the week.
 
-> **Remember:** The 45-minute cheat sheet from memory is a diagnostic tool, not a study technique. The gaps you discover are valuable � they tell you exactly what to study. Don't feel discouraged by how much you missed. Feeling the gap is the first step to closing it.
+> **Remember:** The 45-minute cheat sheet from memory is a diagnostic tool, not a study technique. The gaps you discover are valuable ï¿½ they tell you exactly what to study. Don't feel discouraged by how much you missed. Feeling the gap is the first step to closing it.
 
-**One-Sentence Takeaway:** The 45-minute cheat sheet from memory is a diagnostic � the gaps you discover tell you exactly what to study next.
+**One-Sentence Takeaway:** The 45-minute cheat sheet from memory is a diagnostic ï¿½ the gaps you discover tell you exactly what to study next.
 
 ---
 
@@ -206,7 +206,7 @@ IPv4
 
 **Answer:**
 
-Interlinking � connecting concepts across subjects � is one of the most powerful techniques for GATE prep because the exam itself asks cross-subject questions. The connections create **redundant retrieval paths**: if you forget a concept from OS, you can reconstruct it from what you know about Computer Architecture.
+Interlinking ï¿½ connecting concepts across subjects ï¿½ is one of the most powerful techniques for GATE prep because the exam itself asks cross-subject questions. The connections create **redundant retrieval paths**: if you forget a concept from OS, you can reconstruct it from what you know about Computer Architecture.
 
 Build a **cross-subject dependency map**:
 
@@ -235,9 +235,9 @@ Concrete interlinking examples:
 | Network layers | CN | OS | Layering = same abstraction pattern as OSI layers |
 | Paging | OS | COA | TLB = cache for page table; page size = block size analogy |
 
-**Try This:** Take any concept you're studying this week. Write down three cross-subject connections to it. If you can't find two, you haven't understood the concept deeply enough � it means you're learning it in isolation.
+**Try This:** Take any concept you're studying this week. Write down three cross-subject connections to it. If you can't find two, you haven't understood the concept deeply enough ï¿½ it means you're learning it in isolation.
 
-**One-Sentence Takeaway:** Cross-subject connections reveal deep understanding — if you cannot find at least two links from a concept to other subjects, you are learning it in isolation.
+**One-Sentence Takeaway:** Cross-subject connections reveal deep understanding â€” if you cannot find at least two links from a concept to other subjects, you are learning it in isolation.
 
 ---
 
@@ -249,15 +249,15 @@ PYQs are the single highest-ROI resource for GATE prep. But most students waste 
 
 Use the **3-phase PYQ strategy**:
 
-**Phase 1: Subject-Wise Stratified (Months 1�2)**
+**Phase 1: Subject-Wise Stratified (Months 1ï¿½2)**
 
-Sort PYQs by subject and subtopic. Solve them while studying each topic � not after. This gives immediate feedback on whether you understood the concept.
+Sort PYQs by subject and subtopic. Solve them while studying each topic ï¿½ not after. This gives immediate feedback on whether you understood the concept.
 
 - Source: Any PYQ book organized by subject (e.g., GATE Overflow subject-wise)
 - Target: 80% accuracy per subtopic before moving on
 - Track: Mark each question as Easy/Medium/Hard based on attempt time and correctness
 
-**Phase 2: Timed Subject-Wise (Months 3�4)**
+**Phase 2: Timed Subject-Wise (Months 3ï¿½4)**
 
 Solve subject-wise sets with a timer. A 15-question Computer Networks set should take ~30 minutes (2 min per question average).
 
@@ -306,9 +306,9 @@ public class PYQTracker {
 
 **Phase 3: Full-Length Mixed (Month 5+)**
 
-Solve complete GATE papers in exam conditions. This is the only phase that trains **question switching** � the skill of moving between subjects.
+Solve complete GATE papers in exam conditions. This is the only phase that trains **question switching** ï¿½ the skill of moving between subjects.
 
-- Do one full-length every 3�4 days
+- Do one full-length every 3ï¿½4 days
 - Analyze mistakes for 60 minutes after each mock
 - Identify which Phase 1 or Phase 2 topic you need to revisit
 
@@ -333,7 +333,7 @@ flowchart TD
 
 **Try This:** This week, take 10 PYQs from your weakest subject. Solve them with a timer. For each wrong answer, write one sentence on why you got it wrong (concept gap vs calculation error vs misread).
 
-**One-Sentence Takeaway:** Solve PYQs with a timer and categorize every mistake as concept gap, calculation error, or misread � this diagnosis drives targeted improvement.
+**One-Sentence Takeaway:** Solve PYQs with a timer and categorize every mistake as concept gap, calculation error, or misread ï¿½ this diagnosis drives targeted improvement.
 
 ---
 
@@ -341,25 +341,25 @@ flowchart TD
 
 **Answer:**
 
-The **3-pass method** prevents the common trap of reading a chapter, forgetting it, and re-reading the same chapter weeks later with no net gain. It's adapted from how you'd read a research paper � first for the big picture, then for details, then for connections.
+The **3-pass method** prevents the common trap of reading a chapter, forgetting it, and re-reading the same chapter weeks later with no net gain. It's adapted from how you'd read a research paper ï¿½ first for the big picture, then for details, then for connections.
 
-**Pass 1: Survey (15�20% of total study time)**
+**Pass 1: Survey (15ï¿½20% of total study time)**
 
 - Skim the chapter: headings, diagrams, summary, end-of-chapter questions
-- Write down 3�5 questions the chapter answers (before you start reading)
+- Write down 3ï¿½5 questions the chapter answers (before you start reading)
 - Build a one-page mind map of the topic structure
 
-**Pass 2: Detailed Study (50�60%)**
+**Pass 2: Detailed Study (50ï¿½60%)**
 
 - Read section by section, actively
 - After each section, close the book and recall the key point in your own words
-- Solve 2�3 simple problems per concept immediately
+- Solve 2ï¿½3 simple problems per concept immediately
 - Add to your cheat sheet (Q97)
 
-**Pass 3: Integration & Recall (20�30%)**
+**Pass 3: Integration & Recall (20ï¿½30%)**
 
 - Without looking at the material, recreate the mind map from memory
-- Solve mixed problems (not the ones at the end of the chapter � use PYQs)
+- Solve mixed problems (not the ones at the end of the chapter ï¿½ use PYQs)
 - Connect each concept to other subjects (Q98)
 - Teach the chapter to someone (or your recording device)
 
@@ -402,9 +402,9 @@ Pass 3 (40 min):
   - Record a 3-minute explanation of pumping lemma
 ```
 
-**Try This:** Take your next theory chapter. Time each pass strictly. If Pass 2 exceeds 60% of your budget, you're getting stuck in passive reading � force yourself to move to Pass 3 and solve problems instead.
+**Try This:** Take your next theory chapter. Time each pass strictly. If Pass 2 exceeds 60% of your budget, you're getting stuck in passive reading ï¿½ force yourself to move to Pass 3 and solve problems instead.
 
-**One-Sentence Takeaway:** The 3-pass method for theory prevents passive reading � strict time budgets force you to move from overview to depth to problem-solving.
+**One-Sentence Takeaway:** The 3-pass method for theory prevents passive reading ï¿½ strict time budgets force you to move from overview to depth to problem-solving.
 
 ---
 
@@ -412,7 +412,7 @@ Pass 3 (40 min):
 
 **Answer:**
 
-Many GATE subjects (OS, COA, CN, DBMS, Compiler Design) are inherently visual. Diagrams aren't just illustrations � they're **compression tools** that let you see the entire system at once.
+Many GATE subjects (OS, COA, CN, DBMS, Compiler Design) are inherently visual. Diagrams aren't just illustrations ï¿½ they're **compression tools** that let you see the entire system at once.
 
 The key principle: **If you can draw it, you understand it.**
 
@@ -432,39 +432,39 @@ Instead of memorizing the 11 TCP states as a list, draw the state machine:
 
 ```
 CLOSED
-  �
+  ï¿½
   +-(active open/SYN)--? SYN_SENT
-  �                          �
-  �                     (SYN+ACK received)
-  �                          �
-  �                          ?
-  �                       ESTABLISHED
-  �                          �
-  �                     (FIN sent)
-  �                          �
-  �                          ?
-  �                       FIN_WAIT_1
-  �                     ?          ?
-  �               (ACK recv)     (FIN+ACK recv)
-  �                  ?                ?
-  �             FIN_WAIT_2       CLOSING
-  �                  ?                ?
-  �             (FIN recv)       (ACK recv)
-  �                  ?                ?
-  �               TIME_WAIT ?--- TIME_WAIT
-  �                     (timeout)
-  �                        ?
-  �                      CLOSED
+  ï¿½                          ï¿½
+  ï¿½                     (SYN+ACK received)
+  ï¿½                          ï¿½
+  ï¿½                          ?
+  ï¿½                       ESTABLISHED
+  ï¿½                          ï¿½
+  ï¿½                     (FIN sent)
+  ï¿½                          ï¿½
+  ï¿½                          ?
+  ï¿½                       FIN_WAIT_1
+  ï¿½                     ?          ?
+  ï¿½               (ACK recv)     (FIN+ACK recv)
+  ï¿½                  ?                ?
+  ï¿½             FIN_WAIT_2       CLOSING
+  ï¿½                  ?                ?
+  ï¿½             (FIN recv)       (ACK recv)
+  ï¿½                  ?                ?
+  ï¿½               TIME_WAIT ?--- TIME_WAIT
+  ï¿½                     (timeout)
+  ï¿½                        ?
+  ï¿½                      CLOSED
 ```
 
 Once you draw this, you'll notice patterns:
-- The diagram is symmetric (client side � server side with swapped roles)
+- The diagram is symmetric (client side ï¿½ server side with swapped roles)
 - The TIME_WAIT state exists to handle delayed duplicate segments
 - You can derive the entire TCP connection lifecycle without memorizing individual transitions
 
-**Try This:** Pick any protocol or algorithm you find confusing (e.g., CSMA/CD, Two-Phase Locking, Banker's Algorithm). Draw its state machine or flowchart. If the drawing has more than 12 nodes, find a way to simplify it � you probably don't understand the abstraction level yet.
+**Try This:** Pick any protocol or algorithm you find confusing (e.g., CSMA/CD, Two-Phase Locking, Banker's Algorithm). Draw its state machine or flowchart. If the drawing has more than 12 nodes, find a way to simplify it ï¿½ you probably don't understand the abstraction level yet.
 
-**One-Sentence Takeaway:** Draw state machines and flowcharts for confusing concepts � if a diagram has more than 12 nodes, you are at the wrong abstraction level.
+**One-Sentence Takeaway:** Draw state machines and flowcharts for confusing concepts ï¿½ if a diagram has more than 12 nodes, you are at the wrong abstraction level.
 
 ---
 
@@ -472,7 +472,7 @@ Once you draw this, you'll notice patterns:
 
 **Answer:**
 
-GATE CS Mathematics (~15% of the paper) is one of the highest-ROI sections if you prepare correctly. The math tested is **narrower** than engineering mathematics � it focuses on areas directly relevant to computer science.
+GATE CS Mathematics (~15% of the paper) is one of the highest-ROI sections if you prepare correctly. The math tested is **narrower** than engineering mathematics ï¿½ it focuses on areas directly relevant to computer science.
 
 **Priority-ordered math topics for GATE CS:**
 
@@ -489,14 +489,14 @@ GATE CS Mathematics (~15% of the paper) is one of the highest-ROI sections if yo
 
 **How to study math for GATE (not JEE):**
 
-1. **Solve GATE-specific math problems** � not JEE problems. The flavor is different: more discrete, less continuous.
+1. **Solve GATE-specific math problems** ï¿½ not JEE problems. The flavor is different: more discrete, less continuous.
 
-2. **Learn the shortcuts** � GATE math rewards pattern recognition. For example:
+2. **Learn the shortcuts** ï¿½ GATE math rewards pattern recognition. For example:
    - Number of equivalence relations on a set = Bell numbers (memorize first 6)
    - Number of functions from A?B = |B|^|A|; one-to-one = P(|B|, |A|)
-   - Graph with n vertices: max edges = n(n-1)/2; max bipartite = ?n�/4?
+   - Graph with n vertices: max edges = n(n-1)/2; max bipartite = ?nï¿½/4?
 
-3. **Implement concepts in code** � This bridges math and CS:
+3. **Implement concepts in code** ï¿½ This bridges math and CS:
    ```java
    // Graph theory: check if a graph is bipartite
    public class BipartiteCheck {
@@ -528,9 +528,9 @@ GATE CS Mathematics (~15% of the paper) is one of the highest-ROI sections if yo
    // Verification: K3 is not bipartite, K3,3 is bipartite
    ```
 
-**Try This:** Take one math topic per week (start with Propositional Logic). Solve 10 GATE-level problems. For each one, note which CS subject uses this concept. If you can't find the CS connection, you're learning math in isolation — find the application.
+**Try This:** Take one math topic per week (start with Propositional Logic). Solve 10 GATE-level problems. For each one, note which CS subject uses this concept. If you can't find the CS connection, you're learning math in isolation â€” find the application.
 
-**One-Sentence Takeaway:** Math for GATE CS must be learned through CS application — solve GATE problems and connect each math concept to its computer science use.
+**One-Sentence Takeaway:** Math for GATE CS must be learned through CS application â€” solve GATE problems and connect each math concept to its computer science use.
 
 ---
 
@@ -538,7 +538,7 @@ GATE CS Mathematics (~15% of the paper) is one of the highest-ROI sections if yo
 
 **Answer:**
 
-Not all GATE topics are created equal. The **ROI of a topic** = (marks contributed � frequency) / (effort to master). Your job is to maximize total marks for your available time.
+Not all GATE topics are created equal. The **ROI of a topic** = (marks contributed ï¿½ frequency) / (effort to master). Your job is to maximize total marks for your available time.
 
 **Step 1: Build an ROI matrix**
 
@@ -555,15 +555,15 @@ For each subject and topic, estimate three numbers:
 **Step 2: Tier your topics**
 
 ```
-Tier 1 (Must win � 80% accuracy target):
+Tier 1 (Must win ï¿½ 80% accuracy target):
   - High weightage, low difficulty
   - Examples: Aptitude, DS basics, OS (processes, scheduling), CN (all topics), DBMS (SQL, normalization)
 
-Tier 2 (Should win � 60% accuracy target):
+Tier 2 (Should win ï¿½ 60% accuracy target):
   - Medium weightage, medium difficulty
   - Examples: COA (pipeline, cache), Algo (DP, greedy), TOC (regular lang, CFL)
 
-Tier 3 (Nice to win � 40% accuracy target):
+Tier 3 (Nice to win ï¿½ 40% accuracy target):
   - Low weightage, high difficulty
   - Examples: TOC (undecidability), Compiler (code generation), math (group theory)
 ```
@@ -574,9 +574,9 @@ Tier 3 (Nice to win � 40% accuracy target):
 - Tier 2: Study after Tier 1 is solid, revise every 2 weeks
 - Tier 3: Only after Tier 1 and Tier 2 are at target accuracy
 
-**Try This:** Create an ROI matrix for all GATE subjects. Use the previous 5 years of GATE papers to estimate weightage. Be honest about difficulty � what's "easy" for others may not be easy for you.
+**Try This:** Create an ROI matrix for all GATE subjects. Use the previous 5 years of GATE papers to estimate weightage. Be honest about difficulty ï¿½ what's "easy" for others may not be easy for you.
 
-**One-Sentence Takeaway:** Prioritize GATE topics by ROI using exam weightage and your personal difficulty � honest self-assessment beats generic study plans.
+**One-Sentence Takeaway:** Prioritize GATE topics by ROI using exam weightage and your personal difficulty ï¿½ honest self-assessment beats generic study plans.
 
 ---
 
@@ -595,7 +595,7 @@ The **spiral schedule** prevents the common trap: studying one subject for 3 wee
 | Wed | OS revise | CN | Math practice |
 | Thu | Algo / DS | TOC | Weak topic fix |
 | Fri | DBMS revise | Compiler | PYQ review |
-| Sat | Full-length mock | � | � |
+| Sat | Full-length mock | ï¿½ | ï¿½ |
 | Sun | Mock analysis | Open subject | Weekly review |
 
 **Key rules:**
@@ -652,7 +652,7 @@ public class SubjectTracker {
 
 **Try This:** Take your current list of subjects and build a spiral schedule for this week. Ensure every subject appears at least twice. Commit to 90-minute blocks, not open-ended sessions.
 
-**One-Sentence Takeaway:** Use a spiral schedule that revisits every subject at least twice weekly with 90-minute timed blocks � open-ended sessions lead to procrastination.
+**One-Sentence Takeaway:** Use a spiral schedule that revisits every subject at least twice weekly with 90-minute timed blocks ï¿½ open-ended sessions lead to procrastination.
 
 ---
 
@@ -689,9 +689,9 @@ Step 3: Subject-level drill-down (15 min)
 Step 4: Create action items (15 min)
   - One action per recurring pattern
   - Example actions:
-    � "Revise TOC pumping lemma (Concept gap)"
-    � "Practice 10 math PYQs this week (Calculation error)"
-    � "Read numerical answer questions twice before starting (Misread)"
+    ï¿½ "Revise TOC pumping lemma (Concept gap)"
+    ï¿½ "Practice 10 math PYQs this week (Calculation error)"
+    ï¿½ "Read numerical answer questions twice before starting (Misread)"
 ```
 
 **Example analysis:**
@@ -706,14 +706,14 @@ By category:
   Misread:       1 error (missed "select minimum" in query)
 
 Action items:
-  1. Revise CN routing protocols (OSPF, BGP) � concept gap cluster
+  1. Revise CN routing protocols (OSPF, BGP) ï¿½ concept gap cluster
   2. Practice DBMS normalization: 10 problems this week
   3. Math: practice probability without calculator
 ```
 
-**Try This:** Take your last mock test (or 20 PYQs you attempted). Categorize every mistake using C/M/E/R. If Concept gap > 40% of errors, you're attempting problems before understanding � go back to Pass 2 study. If Calculation > 30%, you need more timed practice.
+**Try This:** Take your last mock test (or 20 PYQs you attempted). Categorize every mistake using C/M/E/R. If Concept gap > 40% of errors, you're attempting problems before understanding ï¿½ go back to Pass 2 study. If Calculation > 30%, you need more timed practice.
 
-**One-Sentence Takeaway:** Categorize every mock test mistake as Concept gap, Misread, Calculation error, or Execution � if Concept gaps exceed 40 percent, go back to theory study.
+**One-Sentence Takeaway:** Categorize every mock test mistake as Concept gap, Misread, Calculation error, or Execution ï¿½ if Concept gaps exceed 40 percent, go back to theory study.
 
 ---
 
@@ -728,7 +728,7 @@ Operating Systems is a great candidate for memory palaces because it has:
 
 **Building the OS Palace:**
 
-Take a familiar physical space � your home, your college building, or a regular commute route. Assign each room/location to an OS topic.
+Take a familiar physical space ï¿½ your home, your college building, or a regular commute route. Assign each room/location to an OS topic.
 
 | Location | OS Topic | Mental Image |
 |----------|----------|-------------|
@@ -758,7 +758,7 @@ Imagine your bathroom sink:
 
 **Try This:** Choose one OS topic (e.g., page replacement algorithms) and build a small memory palace using your current room. Walk through it mentally 3 times today. By tonight, you should be able to recall all algorithms in order without looking.
 
-**One-Sentence Takeaway:** Memory palaces work for OS concepts � place each algorithm in a different room and walk through the sequence mentally until recall is automatic.
+**One-Sentence Takeaway:** Memory palaces work for OS concepts ï¿½ place each algorithm in a different room and walk through the sequence mentally until recall is automatic.
 
 ---
 
@@ -768,8 +768,8 @@ Imagine your bathroom sink:
 
 A **dual-track plan** splits your preparation into two parallel tracks that run simultaneously but serve different purposes.
 
-**Track 1: Foundation (breadth)** � Covers all subjects at a survey level
-**Track 2: Deep Dive (depth)** � Covers selected subjects at mastery level
+**Track 1: Foundation (breadth)** ï¿½ Covers all subjects at a survey level
+**Track 2: Deep Dive (depth)** ï¿½ Covers selected subjects at mastery level
 
 The two tracks alternate on different schedules:
 
@@ -814,15 +814,15 @@ flowchart LR
 | Wed | TOC quick scan | DBMS: Normalization + SQL |
 | Thu | COA key concepts | DBMS: Solve 10 PYQs |
 | Fri | Aptitude practice | Algo: DP patterns |
-| Sat | Mock test (Track 1 + 2 combined) | � |
+| Sat | Mock test (Track 1 + 2 combined) | ï¿½ |
 | Sun | Mock analysis + update Track 1 notes | Plan next week's Track 2 |
 
 **Why dual-track works:**
 
-1. **Prevents tunnel vision** � You never go more than a few days without seeing any subject
-2. **Accelerates weak-spot discovery** � Track 1 quickly highlights subjects that need Track 2 attention
-3. **Reduces revision burden** � Track 1 constantly refreshes older material
-4. **Builds confidence** � By week 3, you'll have seen every subject multiple times
+1. **Prevents tunnel vision** ï¿½ You never go more than a few days without seeing any subject
+2. **Accelerates weak-spot discovery** ï¿½ Track 1 quickly highlights subjects that need Track 2 attention
+3. **Reduces revision burden** ï¿½ Track 1 constantly refreshes older material
+4. **Builds confidence** ï¿½ By week 3, you'll have seen every subject multiple times
 
 ```java
 // Dual-track planner
@@ -870,7 +870,7 @@ public class DualTrackPlan {
 
 **Try This:** Open your calendar. Block 45 minutes for Track 1 and 120 minutes for Track 2 every day for the next 7 days. Fill in the subjects using the template above. Commit to this for one week, then adjust.
 
-**One-Sentence Takeaway:** A dual-track plan separates conceptual depth (Track 1) from application and recall (Track 2) � commit to it for one week then adjust based on results.
+**One-Sentence Takeaway:** A dual-track plan separates conceptual depth (Track 1) from application and recall (Track 2) ï¿½ commit to it for one week then adjust based on results.
 
 ---
 
@@ -878,13 +878,13 @@ public class DualTrackPlan {
 
 **Answer:**
 
-A **master cheat sheet** is a single A4 page (front and back) that compresses all GATE subjects into visual form. It's not for learning � it's for **rapid recall** before exams and **gap detection** during preparation.
+A **master cheat sheet** is a single A4 page (front and back) that compresses all GATE subjects into visual form. It's not for learning ï¿½ it's for **rapid recall** before exams and **gap detection** during preparation.
 
 **Design principles:**
 
-1. **One subject per zone** � Divide the page into 8-10 zones (one per subject). Use a consistent layout within each zone.
+1. **One subject per zone** ï¿½ Divide the page into 8-10 zones (one per subject). Use a consistent layout within each zone.
 
-2. **Hierarchy: Formula > Key Insight > Common Pitfall** � Each entry follows this pattern:
+2. **Hierarchy: Formula > Key Insight > Common Pitfall** ï¿½ Each entry follows this pattern:
    - Formula or definition (minimal)
    - One-line intuition
    - "Watch out for..." note
@@ -894,30 +894,30 @@ A **master cheat sheet** is a single A4 page (front and back) that compresses al
    - Blue = Medium priority
    - Green = Low priority / already mastered
 
-4. **Update weekly** � Every Sunday, update the cheat sheet. Erase items you've internalized. Add new items from your week's mistakes.
+4. **Update weekly** ï¿½ Every Sunday, update the cheat sheet. Erase items you've internalized. Add new items from your week's mistakes.
 
 **Sample layout (front side):**
 
 ```
 +-------------------------------------------------+
-�  OS                          �  DBMS             �
-�  P ? R ? R ? W ? T          �  NF1: Atomic vals  �
-�  LRU = stack/queue           �  NF2: Full FD      �
-�  Thrashing = high page fault �  NF3: No TD         �
-�  Belady's = FIFO only        �  BCNF: All FD ? K   �
-+------------------------------+------------------�
-�  CN                          �  COA               �
-�  Tt = L/B, Tp = d/v          �  CPI = S CPI? � I? �
-�  Efficiency S&W = 1/(1+2a)   �  AMAT = Hit + Miss�  �
-�  CSMA/CD: detect in 2Tp      �         MissPenalty  �
-�  TCP: slow start (exp)       �  Pipeline speedup =  �
-�  then congestion avoid (lin) �    n/(1+(n-1)�stall) �
-+------------------------------+------------------�
-�  TOC                         �  Compiler          �
-�  Reg = DFA = NFA = RegEx     �  Lex: RE ? NFA?DFA �
-�  CFL = PDA (1 stack)         �  Parse: Top-down   �
-�  CSL = LBA                   �  (LL) vs Bottom-up �
-�  RE = TM (undecidable)       �  (LR). LR(1)=DPDA  �
+ï¿½  OS                          ï¿½  DBMS             ï¿½
+ï¿½  P ? R ? R ? W ? T          ï¿½  NF1: Atomic vals  ï¿½
+ï¿½  LRU = stack/queue           ï¿½  NF2: Full FD      ï¿½
+ï¿½  Thrashing = high page fault ï¿½  NF3: No TD         ï¿½
+ï¿½  Belady's = FIFO only        ï¿½  BCNF: All FD ? K   ï¿½
++------------------------------+------------------ï¿½
+ï¿½  CN                          ï¿½  COA               ï¿½
+ï¿½  Tt = L/B, Tp = d/v          ï¿½  CPI = S CPI? ï¿½ I? ï¿½
+ï¿½  Efficiency S&W = 1/(1+2a)   ï¿½  AMAT = Hit + Missï¿½  ï¿½
+ï¿½  CSMA/CD: detect in 2Tp      ï¿½         MissPenalty  ï¿½
+ï¿½  TCP: slow start (exp)       ï¿½  Pipeline speedup =  ï¿½
+ï¿½  then congestion avoid (lin) ï¿½    n/(1+(n-1)ï¿½stall) ï¿½
++------------------------------+------------------ï¿½
+ï¿½  TOC                         ï¿½  Compiler          ï¿½
+ï¿½  Reg = DFA = NFA = RegEx     ï¿½  Lex: RE ? NFA?DFA ï¿½
+ï¿½  CFL = PDA (1 stack)         ï¿½  Parse: Top-down   ï¿½
+ï¿½  CSL = LBA                   ï¿½  (LL) vs Bottom-up ï¿½
+ï¿½  RE = TM (undecidable)       ï¿½  (LR). LR(1)=DPDA  ï¿½
 +-------------------------------------------------+
 ```
 
@@ -929,11 +929,11 @@ A **master cheat sheet** is a single A4 page (front and back) that compresses al
 | Before a mock test | Scan entire sheet (5 min) |
 | After a mock test | Add mistakes to cheat sheet in red |
 | Final review day | Try to recall each zone from memory |
-| During exam (if allowed) | Use only as backup � recall should be automatic |
+| During exam (if allowed) | Use only as backup ï¿½ recall should be automatic |
 
-**Try This:** Take a blank A4 page right now. Divide it into 6 zones. From memory, write everything you know about your strongest subject in one zone. Then check your notes � what did you miss? Those gaps are your study targets for this week.
+**Try This:** Take a blank A4 page right now. Divide it into 6 zones. From memory, write everything you know about your strongest subject in one zone. Then check your notes ï¿½ what did you miss? Those gaps are your study targets for this week.
 
-**One-Sentence Takeaway:** The master cheat sheet with 6 zones per subject � practice recalling each zone from memory; the gaps you discover are your study targets.
+**One-Sentence Takeaway:** The master cheat sheet with 6 zones per subject ï¿½ practice recalling each zone from memory; the gaps you discover are your study targets.
 
 ---
 
@@ -960,15 +960,15 @@ For each question, record:
 ```
 Q#  Subject  Correct?  Confidence  Time    Category
 --  -------  --------  ----------  ----    --------
-1   OS       Y         High        45s     �
+1   OS       Y         High        45s     ï¿½
 2   CN       N         Low         90s     Concept gap
 3   DBMS     N         Medium      120s    Misapplication
 ...
 ```
 
 Calculate per-subject:
-- Accuracy = (correct / attempted) � 100
-- Attempt rate = (attempted / total) � 100
+- Accuracy = (correct / attempted) ï¿½ 100
+- Attempt rate = (attempted / total) ï¿½ 100
 - Efficiency = correct per minute
 - Confidence calibration: what % of "High confidence" answers were actually correct?
 
@@ -1040,7 +1040,7 @@ public class MockAnalyzer {
 
 **Try This:** Take your last mock test. Spend 60 minutes going through Stages 1-4. Write down 3 action items. Before your next mock, review these action items and check whether you've addressed them.
 
-**One-Sentence Takeaway:** Analyze mock tests systematically through 4 stages — accuracy, timing, mistake patterns, and action items — before taking the next mock.
+**One-Sentence Takeaway:** Analyze mock tests systematically through 4 stages â€” accuracy, timing, mistake patterns, and action items â€” before taking the next mock.
 
 ---
 
@@ -1102,11 +1102,11 @@ This is your 30-day blueprint if you're starting GATE preparation from scratch w
 
 **Key principles baked into this plan:**
 
-1. **Every week has a mock** � 5 full-length mocks in 30 days. Each one is a diagnostic.
-2. **No subject goes untouched > 3 days** � The spiral pattern prevents forgetting.
-3. **Last 3 days are for consolidation, not panic** � No new material after Day 27.
-4. **Sunday rest is scheduled** � Burnout is your enemy.
-5. **Cheat sheet gets finalized by Day 21** � Last week is recall, not learning.
+1. **Every week has a mock** ï¿½ 5 full-length mocks in 30 days. Each one is a diagnostic.
+2. **No subject goes untouched > 3 days** ï¿½ The spiral pattern prevents forgetting.
+3. **Last 3 days are for consolidation, not panic** ï¿½ No new material after Day 27.
+4. **Sunday rest is scheduled** ï¿½ Burnout is your enemy.
+5. **Cheat sheet gets finalized by Day 21** ï¿½ Last week is recall, not learning.
 
 
 **Try This:** Take the template above and customize it for your actual GATE date. Replace "Day 1" with the actual date. Print it and put it on your wall. Follow it like a prescription.
@@ -1119,21 +1119,21 @@ This is your 30-day blueprint if you're starting GATE preparation from scratch w
 a) 50% theory, 50% coding  b) 70% theory, 30% coding  c) 90% theory, 10% coding  d) 30% theory, 70% coding
 **Answer:** b. The 70/30 rule in early phases builds conceptual foundation, gradually shifting to 50/50 as the exam approaches.
 
-**2. What is the primary purpose of building a formula cheat sheet � beyond having a reference to review?**
+**2. What is the primary purpose of building a formula cheat sheet ï¿½ beyond having a reference to review?**
 a) Sharing it with friends for group study  b) The compression process forces you to distill and connect concepts  c) Memorizing every formula by rote  d) Replacing textbook reading entirely
-**Answer:** b. The act of creating the cheat sheet � categorizing, compressing, and mapping dependencies � builds a mental model far more valuable than the final product.
+**Answer:** b. The act of creating the cheat sheet ï¿½ categorizing, compressing, and mapping dependencies ï¿½ builds a mental model far more valuable than the final product.
 
 **3. According to the cross-subject interlinking strategy, what should you do if you cannot find at least two connections from a concept you just studied to other subjects?**
-a) Skip the concept and move to the next topic  b) You haven't understood it deeply enough � you're learning it in isolation  c) It means the concept is unimportant for GATE  d) Focus only on coding questions for that topic
+a) Skip the concept and move to the next topic  b) You haven't understood it deeply enough ï¿½ you're learning it in isolation  c) It means the concept is unimportant for GATE  d) Focus only on coding questions for that topic
 **Answer:** b. The ability to link concepts across subjects creates redundant retrieval paths and confirms depth of understanding.
 
 **4. In the 3-phase PYQ strategy, what is the primary goal of Phase 3 (Full-Length Mixed)?**
-a) Solving questions faster than anyone else  b) Training question-switching skill � moving between subjects under exam conditions  c) Memorizing answer patterns from previous years  d) Building subject-wise accuracy above 90%
+a) Solving questions faster than anyone else  b) Training question-switching skill ï¿½ moving between subjects under exam conditions  c) Memorizing answer patterns from previous years  d) Building subject-wise accuracy above 90%
 **Answer:** b. Phase 3 trains the skill of switching between subjects under timed conditions, which full-length mixed papers uniquely provide.
 
 **5. According to the 3-pass method for theory subjects, what % of total study time should be allocated to Pass 1 (Survey)?**
-a) 50�60%  b) 5�10%  c) 15�20%  d) 30�40%
-**Answer:** c. Pass 1 (Survey) should take 15�20% of study time, Pass 2 (Detailed) takes 50�60%, and Pass 3 (Integration) takes 20�30%.
+a) 50ï¿½60%  b) 5ï¿½10%  c) 15ï¿½20%  d) 30ï¿½40%
+**Answer:** c. Pass 1 (Survey) should take 15ï¿½20% of study time, Pass 2 (Detailed) takes 50ï¿½60%, and Pass 3 (Integration) takes 20ï¿½30%.
 
 **6. What is the key principle behind using diagrams to understand tough theoretical concepts?**
 a) Diagrams are only useful for network protocols  b) If you can draw it, you understand it  c) Diagrams replace the need for reading textbooks  d) Only complex systems need diagrams
@@ -1145,23 +1145,23 @@ a) Calculus  b) Group Theory  c) Propositional & Predicate Logic  d) Linear Alge
 
 **8. What defines a Tier 1 topic in the ROI prioritization framework?**
 a) Low weightage and high difficulty  b) Low weightage and low difficulty  c) High weightage and high difficulty  d) High weightage and low difficulty
-**Answer:** d. Tier 1 topics have high weightage and low difficulty � they are "must win" topics with an 80% accuracy target.
+**Answer:** d. Tier 1 topics have high weightage and low difficulty ï¿½ they are "must win" topics with an 80% accuracy target.
 
 **9. In the spiral schedule, what is the maximum number of days a subject should go without being touched?**
 a) 5 days  b) 1 day  c) 2 days  d) 7 days
 **Answer:** c. No subject should exceed 2 days between touches to ensure continuous exposure and prevent forgetting.
 
 **10. In the 4-category mistake taxonomy (C/M/E/R), what does category "M" stand for and what is its recommended fix?**
-a) Memory lapse � revise the topic from scratch  b) Misapplication � you knew the concept but used it wrong; practice 5 more problems on that subtopic  c) Mistake in reading � read the question twice  d) Methodology error � change your approach entirely
+a) Memory lapse ï¿½ revise the topic from scratch  b) Misapplication ï¿½ you knew the concept but used it wrong; practice 5 more problems on that subtopic  c) Mistake in reading ï¿½ read the question twice  d) Methodology error ï¿½ change your approach entirely
 **Answer:** b. Misapplication means you knew the concept but applied it incorrectly; the fix is targeted practice on that specific subtopic.
 
 **11. What is the purpose of Track 1 in the dual-track preparation plan?**
-a) Deep mastery of 2-3 selected subjects  b) Foundation/breadth � covering all subjects at a survey level daily  c) Solving full-length mock tests  d) Building advanced coding projects
-**Answer:** b. Track 1 (Foundation, 45�60 min daily) surfs through all subjects to maintain breadth, identify weak areas, and prevent any subject from being neglected.
+a) Deep mastery of 2-3 selected subjects  b) Foundation/breadth ï¿½ covering all subjects at a survey level daily  c) Solving full-length mock tests  d) Building advanced coding projects
+**Answer:** b. Track 1 (Foundation, 45ï¿½60 min daily) surfs through all subjects to maintain breadth, identify weak areas, and prevent any subject from being neglected.
 
 **12. In the 30-day GATE strategy, by which day should the master cheat sheet be finalized?**
 a) Day 7  b) Day 14  c) Day 21  d) Day 28
-**Answer:** c. The cheat sheet should be finalized by Day 21 (end of Week 3), so the final week is dedicated to recall and consolidation � not learning new material.
+**Answer:** c. The cheat sheet should be finalized by Day 21 (end of Week 3), so the final week is dedicated to recall and consolidation ï¿½ not learning new material.
 
 ---
 
@@ -1170,12 +1170,12 @@ a) Day 7  b) Day 14  c) Day 21  d) Day 28
 | Concept | Definition | Signal to Use | Pitfall |
 |---------|-----------|---------------|---------|
 | Dual-Track Schedule | Two parallel tracks: breadth across all subjects + depth in selected topics | When preparing for a broad syllabus exam like GATE | Going too deep into one subject while others atrophy |
-| Cheat Sheet Method | Compressing a subject onto one page from memory, then gap-filling | After completing a subject � as a pre-exam consolidation tool | Copying from the textbook instead of creating from memory first |
+| Cheat Sheet Method | Compressing a subject onto one page from memory, then gap-filling | After completing a subject ï¿½ as a pre-exam consolidation tool | Copying from the textbook instead of creating from memory first |
 | Subject Interlinking | Mapping how concepts connect across different GATE CS subjects | When you understand individual subjects but can't see the big picture | Learning subjects in isolation without building cross-reference connections |
-| PYQ Analysis | Studying previous years' question patterns to guide preparation strategy | At the start of preparation and during revision | Solving PYQs without analyzing the pattern � the analysis IS the value |
-| Spiral Schedule | Touching every subject twice weekly on a rotating basis | When subjects you studied earlier start feeling unfamiliar | Uneven spiral � some subjects get skipped consistently |
+| PYQ Analysis | Studying previous years' question patterns to guide preparation strategy | At the start of preparation and during revision | Solving PYQs without analyzing the pattern ï¿½ the analysis IS the value |
+| Spiral Schedule | Touching every subject twice weekly on a rotating basis | When subjects you studied earlier start feeling unfamiliar | Uneven spiral ï¿½ some subjects get skipped consistently |
 | Mock Test Analysis | Systematic review of test results to identify error patterns | After every mock test | Only checking the score and not analyzing individual mistakes |
-| C/M/E/R Taxonomy | Classifying errors as Conceptual, Misread, Execution, or Random | When analyzing any wrong answer on a mock test | Misclassifying errors � be honest about whether it was truly "random" |
+| C/M/E/R Taxonomy | Classifying errors as Conceptual, Misread, Execution, or Random | When analyzing any wrong answer on a mock test | Misclassifying errors ï¿½ be honest about whether it was truly "random" |
 | 30-Day Strategy | Three-phase plan: breadth (week 1) ? depth (weeks 2-3) ? recall (week 4) | One month before the exam | Starting the recall phase without finishing depth phase |
 
 
@@ -1195,20 +1195,20 @@ a) Day 7  b) Day 14  c) Day 21  d) Day 28
 
 | Category | Key Points |
 |----------|-----------|
-| Strategy & Planning | - 70/30 theory-to-coding split early, shift to 50/50 - Dual-track: Track 1 (breadth, 45 min) + Track 2 (depth, 120 min) - Spiral schedule: touch every subject every 2 days - Prioritize by ROI: weightage � frequency / effort |
+| Strategy & Planning | - 70/30 theory-to-coding split early, shift to 50/50 - Dual-track: Track 1 (breadth, 45 min) + Track 2 (depth, 120 min) - Spiral schedule: touch every subject every 2 days - Prioritize by ROI: weightage ï¿½ frequency / effort |
 | Study Methods | - 3-pass method for theory: Survey (15-20%) ? Detail (50-60%) ? Integration (20-30%) - Cross-subject interlinking creates redundant retrieval paths - Cheat sheets: compress one subject per page from memory - Memory palaces for sequential topics (process states, disk scheduling) |
 | Testing & Analysis | - 5 full-length mocks in 30-day strategy - C/M/E/R taxonomy: Conceptual, Misread, Execution, Random - Analyze patterns, not just scores - Use errors to generate actionable study items |
-| Tools & Review | - Formula cheat sheet finalized by Day 21 - Color-code by priority: red (high), blue (medium), green (mastered) - Update cheat sheet weekly � erase internalized items - Last 3 days: consolidation only, no new material |
+| Tools & Review | - Formula cheat sheet finalized by Day 21 - Color-code by priority: red (high), blue (medium), green (mastered) - Update cheat sheet weekly ï¿½ erase internalized items - Last 3 days: consolidation only, no new material |
 
 ---
 
 ## Chapter Summary
 
 - **Balance theory and coding** using the 70/30 ? 50/50 ratio across your preparation phases, and reinforce theory by implementing algorithms in code
-- **Use cheat sheets, memory palaces, and diagrams** as compression tools � the act of creating them is more valuable than reviewing them
+- **Use cheat sheets, memory palaces, and diagrams** as compression tools ï¿½ the act of creating them is more valuable than reviewing them
 - **Apply the dual-track method** (Track 1 = breadth, Track 2 = depth) to ensure no subject is neglected while still building mastery in selected topics
 - **Analyze mock tests systematically** using the C/M/E/R taxonomy to identify root causes of errors, not just symptoms
-- **Prioritize by ROI** (weightage � frequency / effort) and use a spiral schedule to touch every subject at least twice per week
+- **Prioritize by ROI** (weightage ï¿½ frequency / effort) and use a spiral schedule to touch every subject at least twice per week
 
 ---
 
@@ -1231,7 +1231,7 @@ a) Day 7  b) Day 14  c) Day 21  d) Day 28
 ## Chapter Quiz
 
 **Q1:** A GATE aspirant scores 60% on a mock test and ignores the individual mistakes, only noting the overall score. According to the chapter, what are they missing?
-- A) Nothing � the total score is the only signal that matters
+- A) Nothing ï¿½ the total score is the only signal that matters
 - B) They should analyze each mistake using the C/M/E/R taxonomy to identify root causes
 - C) 60% is good enough for GATE; they should move on
 - D) They should re-study all subjects from scratch
@@ -1239,7 +1239,7 @@ a) Day 7  b) Day 14  c) Day 21  d) Day 28
 <details>
 <summary>Answer&lt;/summary&gt;
 
-**Answer:** B � The C/M/E/R taxonomy (Conceptual, Misread, Execution, Random) enables targeted remediation. Without classifying each error, the student wastes time re-studying topics they already know while overlooking specific patterns like misreading questions or execution slips.
+**Answer:** B ï¿½ The C/M/E/R taxonomy (Conceptual, Misread, Execution, Random) enables targeted remediation. Without classifying each error, the student wastes time re-studying topics they already know while overlooking specific patterns like misreading questions or execution slips.
 </details>
 
 **Q2:** A student has 30 days until GATE and has covered all topics once. What strategy should they follow?
@@ -1251,11 +1251,11 @@ a) Day 7  b) Day 14  c) Day 21  d) Day 28
 <details>
 <summary>Answer&lt;/summary&gt;
 
-**Answer:** B � The 30-day strategy uses three distinct phases. The final week must be recall-only (no new material). The cheat sheet should be finalized by day 21 so the last week consolidates existing knowledge rather than introducing interference.
+**Answer:** B ï¿½ The 30-day strategy uses three distinct phases. The final week must be recall-only (no new material). The cheat sheet should be finalized by day 21 so the last week consolidates existing knowledge rather than introducing interference.
 </details>
 
 **Q3:** A student uses a spiral schedule but notices subject OS goes 4 days without being touched. What is the problem?
-- A) No problem � OS has high weightage so it's safe to skip
+- A) No problem ï¿½ OS has high weightage so it's safe to skip
 - B) The spiral schedule requires touching every subject every 2 days to prevent forgetting
 - C) 4 days is the ideal interval for hard subjects
 - D) The student should touch each subject only once per week to allow spaced forgetting
@@ -1263,7 +1263,7 @@ a) Day 7  b) Day 14  c) Day 21  d) Day 28
 <details>
 <summary>Answer&lt;/summary&gt;
 
-**Answer:** B � The spiral schedule dictates no subject should exceed 2 days between touches. Going 4 days without touching OS allows the forgetting curve to set in, causing significant re-learning overhead when returning.
+**Answer:** B ï¿½ The spiral schedule dictates no subject should exceed 2 days between touches. Going 4 days without touching OS allows the forgetting curve to set in, causing significant re-learning overhead when returning.
 </details>
 
 ## Further Reading

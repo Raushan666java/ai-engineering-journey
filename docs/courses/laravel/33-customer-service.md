@@ -1,6 +1,6 @@
-# Chapter 33: Customer Service & Support Agents
+﻿# Chapter 33: Customer Service & Support Agents
 
-> **Previous:** [Marketing & Advertising Agents](./32-marketing.md) | **Next:** [Real Estate & Property — AI-Powered Real Estate Agents](./34-real-estate.md)
+> **Previous:** [Marketing & Advertising Agents](./32-marketing.md) | **Next:** [Real Estate & Property â€” AI-Powered Real Estate Agents](./34-real-estate.md)
 
 
 
@@ -22,16 +22,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/33-customer-service/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/33-customer-service/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/33-customer-service/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/33-customer-service/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/33-customer-service/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/33-customer-service/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/33-customer-service/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/33-customer-service/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/33-customer-service/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/33-customer-service/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/33-customer-service/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/33-customer-service/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -137,10 +137,10 @@ flowchart LR
 ---
 
 ## Theory
-> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
 
 ![Customer Service Domain](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/33-customer-service.png)
 
@@ -2302,7 +2302,7 @@ class SlaMonitoringAgent
 
 This chapter built a complete AI-augmented customer service platform across nine layers. We started with data models that capture tickets, messages, knowledge articles, satisfaction surveys, and SLA policies. The `TicketTriageAgent` classifies incoming requests by intent and routes them to the right team automatically. The `SentimentAnalysisAgent` scores each message for emotional tone and flags critical interactions for escalation.
 
-The `KnowledgeBaseAgent` implements Retrieval-Augmented Generation → embedding articles into a vector space, computing cosine similarity against customer queries, and generating contextual answers. The `EscalationAgent` monitors SLA breaches, sentiment thresholds, and stalled tickets, then walks a configurable escalation chain. The `MultiChannelAgent` normalizes email, chat, social media, and phone transcript data into unified ticket messages regardless of source.
+The `KnowledgeBaseAgent` implements Retrieval-Augmented Generation â†’ embedding articles into a vector space, computing cosine similarity against customer queries, and generating contextual answers. The `EscalationAgent` monitors SLA breaches, sentiment thresholds, and stalled tickets, then walks a configurable escalation chain. The `MultiChannelAgent` normalizes email, chat, social media, and phone transcript data into unified ticket messages regardless of source.
 
 Post-resolution, the `SatisfactionAgent` dispatches surveys within a configurable delay, records CSAT and FCR scores, and analyzes feedback text for sentiment and trending topics. The `SelfServiceAgent` powers FAQ matching, guided troubleshooting flows, and article suggestions before a ticket reaches an agent. Finally, the `SlaMonitoringAgent` tracks compliance across all active tickets, generates breach alerts, and produces daily and weekly reports with team performance metrics.
 

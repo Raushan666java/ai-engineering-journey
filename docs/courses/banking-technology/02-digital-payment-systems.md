@@ -1,4 +1,4 @@
-# Chapter 02: Digital Payment Systems
+﻿# Chapter 02: Digital Payment Systems
 
 ## Learning Objectives
 
@@ -7,16 +7,16 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/banking-technology/02-digital-payment-systems/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/banking-technology/02-digital-payment-systems/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/banking-technology/02-digital-payment-systems/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/banking-technology/02-digital-payment-systems/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/banking-technology/02-digital-payment-systems/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/banking-technology/02-digital-payment-systems/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/banking-technology/02-digital-payment-systems/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/banking-technology/02-digital-payment-systems/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/banking-technology/02-digital-payment-systems/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/banking-technology/02-digital-payment-systems/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/banking-technology/02-digital-payment-systems/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/banking-technology/02-digital-payment-systems/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -41,7 +41,7 @@ India's digital payment ecosystem has undergone a paradigm shift since 2016, dri
 - **Aadhaar-based Payments:** AePS, APBS
 - **Alternative Channels:** FASTag (NETC), UPI Lite, UPI123Pay
 
-The key driver of this ecosystem is the **National Payments Corporation of India (NPCI)** — an umbrella organization for operating retail payment and settlement systems in India, established by RBI and IBA in 2008.
+The key driver of this ecosystem is the **National Payments Corporation of India (NPCI)** â€” an umbrella organization for operating retail payment and settlement systems in India, established by RBI and IBA in 2008.
 
 ### 2. UPI Architecture
 
@@ -51,12 +51,12 @@ Unified Payments Interface (UPI) is an instant real-time payment system develope
 
 **Key Concepts:**
 
-- **VPA (Virtual Payment Address):** Format — `username@bankhandle` (e.g., `ram@sbi`)
+- **VPA (Virtual Payment Address):** Format â€” `username@bankhandle` (e.g., `ram@sbi`)
 - **UPI ID:** Unique identifier for a user's bank account
 - **UPI PIN:** 4-6 digit personal identification number set by the user
 - **UPI Reference Number:** 12-digit unique transaction identifier
 
-#### 2.2 UPI Architecture — Four-Party Model
+#### 2.2 UPI Architecture â€” Four-Party Model
 
 ```
 +------------------+     +------------------+
@@ -109,7 +109,7 @@ Step 8:  NPCI sends OTP/PIN request back to Payer PSP
 Step 9:  Payer enters UPI PIN
 Step 10: PIN encrypted and sent via PSP -> NPCI -> Issuer Bank
 Step 11: Issuer Bank (SBI) validates PIN via HSM, debits Rs. 500
-Step 12: Credited to payee (HDFC) — UPI Ref No generated
+Step 12: Credited to payee (HDFC) â€” UPI Ref No generated
 ```
 
 #### 2.3 UPI Reference Number (12-digit URN)
@@ -119,15 +119,15 @@ The UPI Reference Number (also called UPI Transaction ID or URN) is a 12-digit i
 **URN Format Breakdown:**
 ```
 XXXXXXXXXXXX (12 digits)
-├── First 4 digits: NPCI Institution ID (numeric)
-├── Next 4 digits: Date (MMDD format)
-└── Last 4 digits: Sequence number (auto-increment)
+â”œâ”€â”€ First 4 digits: NPCI Institution ID (numeric)
+â”œâ”€â”€ Next 4 digits: Date (MMDD format)
+â””â”€â”€ Last 4 digits: Sequence number (auto-increment)
 ```
 
 **Example:** `12340706000001`
-- `1234` — NPCI Institution ID
-- `0706` — July 06
-- `000001` — Sequence number (first transaction of the day)
+- `1234` â€” NPCI Institution ID
+- `0706` â€” July 06
+- `000001` â€” Sequence number (first transaction of the day)
 
 #### 2.4 UPI PIN and Authentication
 
@@ -162,7 +162,7 @@ User enters UPI PIN -> PSP App -> Encrypted with PSP Key
 | TPAP (Third Party App Provider) | Non-bank PSP (operates under a bank) | Google Pay (under Axis) |
 | PPI (Prepaid Payment Instrument) | Wallet issuer | PayTM Wallet |
 
-### 3. IMPS vs NEFT vs RTGS — Technical Comparison
+### 3. IMPS vs NEFT vs RTGS â€” Technical Comparison
 
 #### 3.1 IMPS (Immediate Payment Service)
 
@@ -263,24 +263,24 @@ RuPay is an Indian domestic card payment network launched by NPCI in 2012. It is
 3. POS sends ISO 8583 0200 message to Acquirer Bank
 4. Acquirer Bank routes to NPCI (RuPay Switch)
 5. NPCI validates:
-   ├── Card BIN check (RuPay BIN: 60, 65, 81, 82...)
-   ├── Card status (active/blocked/hotlisted)
-   └── Merchant category check
+   â”œâ”€â”€ Card BIN check (RuPay BIN: 60, 65, 81, 82...)
+   â”œâ”€â”€ Card status (active/blocked/hotlisted)
+   â””â”€â”€ Merchant category check
 6. NPCI routes to Issuer Bank
 7. Issuer Bank:
-   ├── Validates CVV/PIN
-   ├── Checks available balance/credit limit
-   ├── Generates ARQC (EMV) or online auth
-   └── Sends approval/decline
+   â”œâ”€â”€ Validates CVV/PIN
+   â”œâ”€â”€ Checks available balance/credit limit
+   â”œâ”€â”€ Generates ARQC (EMV) or online auth
+   â””â”€â”€ Sends approval/decline
 8. Response flows back through NPCI -> Acquirer -> POS
 ```
 
 **RuPay BIN Range:**
-- 60xxxx — RuPay Classic
-- 65xxxx — RuPay Platinum
-- 81xxxx — RuPay Select
-- 82xxxx — RuPay World
-- 508xxx — RuPay JCB (International co-badge)
+- 60xxxx â€” RuPay Classic
+- 65xxxx â€” RuPay Platinum
+- 81xxxx â€” RuPay Select
+- 82xxxx â€” RuPay World
+- 508xxx â€” RuPay JCB (International co-badge)
 
 #### 4.3 RuPay Economics for Banks
 
@@ -300,13 +300,13 @@ FASTag is a RFID-based toll collection system operated by NPCI under the Nationa
 
 ```
 FASTag RFID Tag:
-├── Frequency: 865-867 MHz (UHF RFID, as per TRAI)
-├── Standard: ISO 18000-6C (EPC Gen2)
-├── Read Range: 4-6 meters (booth), 50m+ (free-flow)
-├── Memory: 96-512 bits EPC memory
-├── Battery: Passive (no battery, powered by reader RF signal)
-├── Data Storage: Vehicle Registration No + Tag ID + Wallet Link
-└── Tamper: Tamper-evident adhesive (removal destroys tag)
+â”œâ”€â”€ Frequency: 865-867 MHz (UHF RFID, as per TRAI)
+â”œâ”€â”€ Standard: ISO 18000-6C (EPC Gen2)
+â”œâ”€â”€ Read Range: 4-6 meters (booth), 50m+ (free-flow)
+â”œâ”€â”€ Memory: 96-512 bits EPC memory
+â”œâ”€â”€ Battery: Passive (no battery, powered by reader RF signal)
+â”œâ”€â”€ Data Storage: Vehicle Registration No + Tag ID + Wallet Link
+â””â”€â”€ Tamper: Tamper-evident adhesive (removal destroys tag)
 ```
 
 **NETC Transaction Flow:**
@@ -317,14 +317,14 @@ FASTag RFID Tag:
 3. FASTag responds with Tag ID + Vehicle Registration No
 4. Lane Controller reads tag data
 5. Transaction sent to NETC Acquiring Bank (acquirer)
-   ├── Vehicle class determination (based on tag type)
-   └── Toll amount calculation (based on plaza + vehicle class)
+   â”œâ”€â”€ Vehicle class determination (based on tag type)
+   â””â”€â”€ Toll amount calculation (based on plaza + vehicle class)
 6. Acquirer sends to NPCI NETC Switch
 7. NPCI routes to Issuer Bank (where tag is linked)
 8. Issuer Bank:
-   ├── Validates tag status (active/blacklisted)
-   ├── Checks wallet balance / credit limit
-   └── Debits toll amount
+   â”œâ”€â”€ Validates tag status (active/blacklisted)
+   â”œâ”€â”€ Checks wallet balance / credit limit
+   â””â”€â”€ Debits toll amount
 9. Settlement: NPCI -> Issuer -> Acquirer
 10. Lane Controller gets "Success" -> Boom barrier opens
 11. SMS/email notification to customer
@@ -434,8 +434,8 @@ BBPS is an integrated bill payment system offering interoperable bill payment se
 
 **Three-Tier Model:**
 1. **Customer:** Pays bills through any registered channel (web, mobile, agent)
-2. **BPU (Bharat Payment Unit):** Operating unit (banks, aggregators, agents) — can be Online Payment Unit (OPU) or offline agent
-3. **BBPS Central Unit:** NPCI — clearing, settlement, rules, standards
+2. **BPU (Bharat Payment Unit):** Operating unit (banks, aggregators, agents) â€” can be Online Payment Unit (OPU) or offline agent
+3. **BBPS Central Unit:** NPCI â€” clearing, settlement, rules, standards
 
 **Transaction Flow:**
 ```
@@ -477,11 +477,11 @@ AePS allows Aadhaar-based financial transactions using a micro-ATM device. Opera
 2. Micro-ATM captures Aadhaar via biometric scanner
 3. UIDAI authentication (fingerprint/iris match)
 4. Upon successful authentication:
-   ├── Aadhaar Number + Bank IIN + Amount sent to NPCI AePS Switch
-   ├── NPCI routes to Issuer Bank (based on Aadhaar mapping)
-   ├── Issuer Bank validates account balance
-   ├── CBS debits account
-   └── Response sent back to micro-ATM via NPCI
+   â”œâ”€â”€ Aadhaar Number + Bank IIN + Amount sent to NPCI AePS Switch
+   â”œâ”€â”€ NPCI routes to Issuer Bank (based on Aadhaar mapping)
+   â”œâ”€â”€ Issuer Bank validates account balance
+   â”œâ”€â”€ CBS debits account
+   â””â”€â”€ Response sent back to micro-ATM via NPCI
 5. Micro-ATM dispenses cash
 ```
 
@@ -539,9 +539,9 @@ As per RBI's mandate (effective Jan 2022, extended to Mar 2022), no entity other
 **Token Format:**
 ```
 XXXXXXYYYYYYYYZZ
-├── XXXXXX: Same BIN as original card (merchant can identify card type)
-├── YYYYYYYY: Tokenized account identifier
-└── ZZ: Check digits
+â”œâ”€â”€ XXXXXX: Same BIN as original card (merchant can identify card type)
+â”œâ”€â”€ YYYYYYYY: Tokenized account identifier
+â””â”€â”€ ZZ: Check digits
 ```
 
 #### 10.2 Device-Based Tokenization
@@ -553,7 +553,7 @@ Used in mobile wallets (Apple Pay, Google Pay, Samsung Pay) where the token is s
 - **Domain Restriction:** Token works only on that device + wallet combination
 - **Cryptogram:** Dynamic CVV generated per transaction
 
-### 11. Recurring Payments — eMandate
+### 11. Recurring Payments â€” eMandate
 
 #### 11.1 UPI eMandate
 
@@ -565,18 +565,18 @@ eMandate enables recurring payments (subscriptions, SIPs, insurance premiums) th
 1. Merchant initiates eMandate creation
 2. Customer approves via PSP app
 3. Mandate details:
-   ├── Merchant ID
-   ├── Amount (fixed/variable)
-   ├── Frequency (daily/weekly/monthly)
-   ├── Start date, End date
-   └── Maximum number of debits
+   â”œâ”€â”€ Merchant ID
+   â”œâ”€â”€ Amount (fixed/variable)
+   â”œâ”€â”€ Frequency (daily/weekly/monthly)
+   â”œâ”€â”€ Start date, End date
+   â””â”€â”€ Maximum number of debits
 4. Customer authenticates with UPI PIN
 5. Mandate registered at NPCI -> Issuer Bank
 6. On recurring date:
-   ├── Merchant initiates debit
-   ├── NPCI checks mandate validity
-   ├── Issuer bank debits without additional PIN
-   └── (If exceed limit: customer must approve)
+   â”œâ”€â”€ Merchant initiates debit
+   â”œâ”€â”€ NPCI checks mandate validity
+   â”œâ”€â”€ Issuer bank debits without additional PIN
+   â””â”€â”€ (If exceed limit: customer must approve)
 ```
 
 **eMandate Limits (RBI):**
@@ -590,19 +590,19 @@ eMandate enables recurring payments (subscriptions, SIPs, insurance premiums) th
 
 #### 12.1 UPI Lite
 
-UPI Lite is an on-device wallet for small-value payments (up to Rs. 500 per transaction, Rs. 2,000 total balance). No UPI PIN required for transactions — works on balance stored in mobile app.
+UPI Lite is an on-device wallet for small-value payments (up to Rs. 500 per transaction, Rs. 2,000 total balance). No UPI PIN required for transactions â€” works on balance stored in mobile app.
 
 **Technical Architecture:**
 
 ```
 UPI Lite Wallet (in PSP app):
-├── Max Balance: Rs. 2,000
-├── Per Transaction Limit: Rs. 500
-├── Cumulative Daily Limit: Rs. 2,000 (or wallet balance)
-├── Authentication: App-level (device unlock / app PIN)
-├── No UPI PIN required for payments
-├── Settlement: Offline-capable (later sync) -- TBD by NPCI
-└── Top-up: From linked bank account via UPI
+â”œâ”€â”€ Max Balance: Rs. 2,000
+â”œâ”€â”€ Per Transaction Limit: Rs. 500
+â”œâ”€â”€ Cumulative Daily Limit: Rs. 2,000 (or wallet balance)
+â”œâ”€â”€ Authentication: App-level (device unlock / app PIN)
+â”œâ”€â”€ No UPI PIN required for payments
+â”œâ”€â”€ Settlement: Offline-capable (later sync) -- TBD by NPCI
+â””â”€â”€ Top-up: From linked bank account via UPI
 ```
 
 **UPI Lite Flow:**
@@ -623,16 +623,16 @@ UPI123Pay is a feature-phone-based UPI system for users without smartphones. It 
 **Technical Approach:**
 ```
 UPI123Pay Methods:
-├── IVR (Interactive Voice Response): Call 08045146000
-│   ├── OTP-based authentication
-│   └── Follow voice prompts
-├── USSD (*99#): Traditional GSM-based
-│   ├── No internet required
-│   └── Menu-driven on feature phone
-├── Proximity Voice: NFC/QR code based
-├── Missed Call: Call merchant's number
-│   └── Callback with payment link
-└── NFC Tags: Tap phone on NFC tag
+â”œâ”€â”€ IVR (Interactive Voice Response): Call 08045146000
+â”‚   â”œâ”€â”€ OTP-based authentication
+â”‚   â””â”€â”€ Follow voice prompts
+â”œâ”€â”€ USSD (*99#): Traditional GSM-based
+â”‚   â”œâ”€â”€ No internet required
+â”‚   â””â”€â”€ Menu-driven on feature phone
+â”œâ”€â”€ Proximity Voice: NFC/QR code based
+â”œâ”€â”€ Missed Call: Call merchant's number
+â”‚   â””â”€â”€ Callback with payment link
+â””â”€â”€ NFC Tags: Tap phone on NFC tag
 ```
 
 ### 13. Architecture Diagrams
@@ -1182,7 +1182,7 @@ if (bill) {
 }
 ```
 
-### 14. Architecture Diagrams — Additional
+### 14. Architecture Diagrams â€” Additional
 
 #### UPI Complete Transaction Sequence (Detailed)
 
@@ -1261,7 +1261,7 @@ flowchart LR
 
 - **UPI Circle (2024):** Primary account holder can delegate payment authority to up to 5 family members/friends. The primary sets daily/monthly limits. Delegated users can transact using their own device with their own UPI PIN.
 - **UPI Lite X (2025):** Enhanced version of UPI Lite with Rs. 10,000 wallet balance and Rs. 1,000 per transaction limit. Supports offline payments with batch settlement.
-- **UPI Credit Line (2024-2025):** Banks can offer pre-sanctioned credit lines through UPI. Customers can transact using credit limit directly from UPI app — no separate credit card needed. RuPay credit cards already integrated with UPI.
+- **UPI Credit Line (2024-2025):** Banks can offer pre-sanctioned credit lines through UPI. Customers can transact using credit limit directly from UPI app â€” no separate credit card needed. RuPay credit cards already integrated with UPI.
 - **UPI for Secondary Market (2024):** SEBI permitted UPI for trading in secondary markets (beyond IPOs). Investors can use UPI for stock purchases up to Rs. 5 lakh per transaction.
 - **UPI-ATM Worldwide (2025):** NPCI partnered with international ATM networks (JCB, Discover, Pulse) enabling UPI-based cash withdrawals at ATMs in Japan, US, UK, and UAE.
 - **UPI for NRI (2024):** NRIs can now use UPI with international mobile numbers (non-Indian SIM). Supported countries: UAE, Singapore, Australia, Canada, UK, USA.
@@ -1269,7 +1269,7 @@ flowchart LR
 #### 15.3 RuPay Developments
 
 - **2024:** RuPay cards issued crossed 100 crore (1 billion) mark. RuPay is now the most-used card network in India by transaction volume.
-- **2025:** RuPay international acceptance expanded — now accepted in UAE, Singapore, Bhutan, Nepal, and 15+ other countries through bilateral agreements. RuPay partners with Discover Financial for global POS acceptance.
+- **2025:** RuPay international acceptance expanded â€” now accepted in UAE, Singapore, Bhutan, Nepal, and 15+ other countries through bilateral agreements. RuPay partners with Discover Financial for global POS acceptance.
 - **2026:** RuPay contactless (NFC) transactions grew 300% since 2024. RuPay tokenization adoption reached 95% of all e-commerce transactions.
 
 #### 15.4 Regulatory Changes
@@ -1277,10 +1277,10 @@ flowchart LR
 - **2024:** RBI increased IMPS limit from Rs. 5 lakh to Rs. 10 lakh per transaction.
 - **2025:** RBI mandated all payment aggregators to use mandatory tokenization (no card-on-file storage). Non-compliance penalty: Rs. 1 lakh per day.
 - **2025:** UPI transaction charges introduced for high-value UPI transactions (above Rs. 2,000) made through PPIs (Prepaid Payment Instruments). Interchange fee of 1.1% applies.
-- **2026:** RBI extended UPI 24x7x365 uptime SLA to 99.99% — NPCI must maintain sub-100ms response time for 99.5% of transactions.
-- **2026:** New RBI guidelines for UPI Credit Line — minimum 18% p.a. interest disclosure, credit limit must be clearly shown separately from deposit balance.
+- **2026:** RBI extended UPI 24x7x365 uptime SLA to 99.99% â€” NPCI must maintain sub-100ms response time for 99.5% of transactions.
+- **2026:** New RBI guidelines for UPI Credit Line â€” minimum 18% p.a. interest disclosure, credit limit must be clearly shown separately from deposit balance.
 
-## 📝 Solved Examples (20 MCQs)
+## ðŸ“ Solved Examples (20 MCQs)
 
 **1.** What does VPA stand for in the UPI ecosystem?
 
@@ -1396,14 +1396,14 @@ RTGS has a minimum transaction amount of Rs. 2,00,000 with no upper limit. IMPS 
 
 **9.** In AePS, what does IIN stand for and how is it determined?
 
-A) Issuer Identification Number — first 6 digits of Aadhaar
-B) Indian Identification Number — last 4 digits of Aadhaar
-C) Interbank Index Number — NPCI-assigned code
-D) Individual Income Number — income tax reference
+A) Issuer Identification Number â€” first 6 digits of Aadhaar
+B) Indian Identification Number â€” last 4 digits of Aadhaar
+C) Interbank Index Number â€” NPCI-assigned code
+D) Individual Income Number â€” income tax reference
 
 <details>
 <summary>Answer</summary>
-**Answer: A) Issuer Identification Number — first 6 digits of Aadhaar**
+**Answer: A) Issuer Identification Number â€” first 6 digits of Aadhaar**
 
 IIN is the first 6 digits of the Aadhaar number, identifying the enrolling agency/bank. AePS uses IIN to route transactions to the correct issuer bank for Aadhaar-based transactions.
 </details>
@@ -1433,7 +1433,7 @@ D) Bill Processing Utility
 <summary>Answer</summary>
 **Answer: C) Bharat Payment Unit**
 
-BPU (Bharat Payment Unit) is the operating unit in BBPS — can be an OPU (Online Payment Unit) or an offline agent. It sits between the customer and BBPS Central (NPCI).
+BPU (Bharat Payment Unit) is the operating unit in BBPS â€” can be an OPU (Online Payment Unit) or an offline agent. It sits between the customer and BBPS Central (NPCI).
 </details>
 
 **12.** What is the maximum amount for a single UPI transaction (default limit)?
@@ -1503,7 +1503,7 @@ D) NACH Balance
 <summary>Answer</summary>
 **Answer: B) NACH Debit**
 
-NACH Debit is used when the sponsor (e.g., bank/NBFC) collects money from the customer's account — used for loan EMIs, SIPs, insurance premiums. NACH Credit is for disbursements (salary, subsidy).
+NACH Debit is used when the sponsor (e.g., bank/NBFC) collects money from the customer's account â€” used for loan EMIs, SIPs, insurance premiums. NACH Credit is for disbursements (salary, subsidy).
 </details>
 
 **17.** What is the maximum per-transaction limit for small-value eMandate without additional factor authentication?
@@ -1562,7 +1562,7 @@ D) SWIFT
 UPI uses IMPS as its underlying settlement layer. IMPS provides the real-time inter-bank fund transfer capability that UPI leverages. This is why UPI is also 24x7x365 and real-time.
 </details>
 
-## 📖 Exercise Bank (30 Questions)
+## ðŸ“– Exercise Bank (30 Questions)
 
 ### Section A: Short Answer (Questions 1-10)
 
@@ -1635,13 +1635,13 @@ UPI uses IMPS as its underlying settlement layer. IMPS provides the real-time in
 <details>
 <summary>Section A Answers (1-10)</summary>
 
-**1.** (i) Payer PSP — initiates transaction on payer side (GPay); (ii) Payee PSP — receives on payee side; (iii) Issuer Bank — holds payer's account, validates PIN; (iv) Acquirer Bank — holds payee/merchant's account.
+**1.** (i) Payer PSP â€” initiates transaction on payer side (GPay); (ii) Payee PSP â€” receives on payee side; (iii) Issuer Bank â€” holds payer's account, validates PIN; (iv) Acquirer Bank â€” holds payee/merchant's account.
 
 **2.** Format: `username@bankhandle` (e.g., `ram@sbi`). Regex: `^[a-zA-Z0-9._-]+@[a-zA-Z0-9]+$`
 
-**3.** UPI Lite: on-device wallet, max Rs. 2,000 balance, Rs. 500/txn, no PIN needed — for small offline-capable payments. Regular UPI: bank account-based, UPI PIN required, Rs. 1,00,000/txn limit — for all other payments.
+**3.** UPI Lite: on-device wallet, max Rs. 2,000 balance, Rs. 500/txn, no PIN needed â€” for small offline-capable payments. Regular UPI: bank account-based, UPI PIN required, Rs. 1,00,000/txn limit â€” for all other payments.
 
-**4.** P2A (Account+IFSC — traditional transfer); P2M (Mobile+MMID — phone-based); P2P (VPA — UPI).
+**4.** P2A (Account+IFSC â€” traditional transfer); P2M (Mobile+MMID â€” phone-based); P2P (VPA â€” UPI).
 
 **5.** 60xxxx = Classic, 65xxxx = Platinum, 81xxxx = Select, 82xxxx = World, 508xxx = RuPay JCB.
 
@@ -1651,31 +1651,31 @@ UPI uses IMPS as its underlying settlement layer. IMPS provides the real-time in
 
 **8.** eMandate for recurring payments. Limits: up to Rs. 15,000 (no AFA); Rs. 15,001-1,00,000 (AFA once); Above Rs. 1,00,000 (AFA each transaction).
 
-**9.** Biometric (fingerprint/iris) via micro-ATM → UIDAI authentication → transaction proceeds on successful auth.
+**9.** Biometric (fingerprint/iris) via micro-ATM â†’ UIDAI authentication â†’ transaction proceeds on successful auth.
 
-**10.** Layer 1: Customer (bill payer); Layer 2: BPU (Bharat Payment Unit — aggregator/agent); Layer 3: BBPS Central (NPCI — clearing, settlement).
+**10.** Layer 1: Customer (bill payer); Layer 2: BPU (Bharat Payment Unit â€” aggregator/agent); Layer 3: BBPS Central (NPCI â€” clearing, settlement).
 </details>
 
 <details>
 <summary>Section B Answers (11-20)</summary>
 
-**11.** 12-step flow: (1) Payer opens PSP app; (2) Enters VPA+amount; (3) PSP formats UPI request; (4) Sends to NPCI; (5) NPCI validates; (6) Routes to payee PSP; (7) Validates payee VPA; (8) PIN request; (9) Payer enters PIN; (10) PIN encrypted via PSP→NPCI→Issuer; (11) Issuer validates PIN via HSM, debits; (12) Credited to payee, URN generated.
+**11.** 12-step flow: (1) Payer opens PSP app; (2) Enters VPA+amount; (3) PSP formats UPI request; (4) Sends to NPCI; (5) NPCI validates; (6) Routes to payee PSP; (7) Validates payee VPA; (8) PIN request; (9) Payer enters PIN; (10) PIN encrypted via PSPâ†’NPCIâ†’Issuer; (11) Issuer validates PIN via HSM, debits; (12) Credited to payee, URN generated.
 
 **12.** NEFT: DNS, RBI, 24x7, 30-min batches, no min. RTGS: Real-time gross, RBI, 7AM-6PM, immediate, Rs. 2L min. IMPS: Real-time, NPCI, 24x7, immediate, Re. 1 min, Rs. 5L max.
 
-**13.** Card tapped/inserted → ISO 8583 0200 to acquirer → NPCI RuPay Switch → BIN lookup → Issuer bank → EMV ARQC validation → PIN/balance check → approval/decline → response via NPCI → acquirer → POS.
+**13.** Card tapped/inserted â†’ ISO 8583 0200 to acquirer â†’ NPCI RuPay Switch â†’ BIN lookup â†’ Issuer bank â†’ EMV ARQC validation â†’ PIN/balance check â†’ approval/decline â†’ response via NPCI â†’ acquirer â†’ POS.
 
-**14.** RFID tag (ISO 18000-6C, 865-867 MHz) → Lane controller reads Tag ID + Vehicle No → Acquirer bank → NPCI NETC Switch → Issuer bank debits → Settlement → Barrier opens.
+**14.** RFID tag (ISO 18000-6C, 865-867 MHz) â†’ Lane controller reads Tag ID + Vehicle No â†’ Acquirer bank â†’ NPCI NETC Switch â†’ Issuer bank debits â†’ Settlement â†’ Barrier opens.
 
-**15.** Government → PFMS → Sponsor Bank → NPCI APBS → Mapper Bank (Aadhaar-to-Account lookup) → Destination Bank → Beneficiary credited. Response flows back.
+**15.** Government â†’ PFMS â†’ Sponsor Bank â†’ NPCI APBS â†’ Mapper Bank (Aadhaar-to-Account lookup) â†’ Destination Bank â†’ Beneficiary credited. Response flows back.
 
-**16.** Customer gives Aadhaar + fingerprint → Micro-ATM captures biometric → UIDAI authentication → If success: Aadhaar+IIN+amount → NPCI AePS → Issuer bank CBS → Debit → Cash dispensed.
+**16.** Customer gives Aadhaar + fingerprint â†’ Micro-ATM captures biometric â†’ UIDAI authentication â†’ If success: Aadhaar+IIN+amount â†’ NPCI AePS â†’ Issuer bank CBS â†’ Debit â†’ Cash dispensed.
 
-**17.** Registration → Customer approves via PSP → Mandate stored at NPCI & Issuer → Active mandate → Recurring debits (automated, no PIN for small amounts) → Modification/cancellation on request → Deactivation on expiry/cancellation.
+**17.** Registration â†’ Customer approves via PSP â†’ Mandate stored at NPCI & Issuer â†’ Active mandate â†’ Recurring debits (automated, no PIN for small amounts) â†’ Modification/cancellation on request â†’ Deactivation on expiry/cancellation.
 
-**18.** RuPay uses 3D Secure (RuPay Secure). Customer redirected to issuer's ACS page → OTP sent → OTP validated → Authorization. RuPay 3DS works similarly to Visa/MC 3D Secure but routes through NPCI.
+**18.** RuPay uses 3D Secure (RuPay Secure). Customer redirected to issuer's ACS page â†’ OTP sent â†’ OTP validated â†’ Authorization. RuPay 3DS works similarly to Visa/MC 3D Secure but routes through NPCI.
 
-**19.** Token Requestor (Google Pay) requests token from TSP (Visa/MC/RuPay) → Token stored in device Secure Element → Domain restricted (only that device+wallet combo) → Dynamic CVV generated per transaction.
+**19.** Token Requestor (Google Pay) requests token from TSP (Visa/MC/RuPay) â†’ Token stored in device Secure Element â†’ Domain restricted (only that device+wallet combo) â†’ Dynamic CVV generated per transaction.
 
 **20.** RuPay: Rs. 20-30 issuance, ~Rs. 0.50-1 switch fee, INR settlement. Visa/MC: Rs. 100-150 issuance, ~Rs. 5-15 switch fee, USD settlement (forex risk for banks).
 </details>
@@ -1685,23 +1685,23 @@ UPI uses IMPS as its underlying settlement layer. IMPS provides the real-time in
 
 **21.** TypeScript: `function parseVPA(vpa: string): { username: string; bankHandle: string } | null { if (!/^[a-zA-Z0-9._-]+@[a-zA-Z0-9]+$/.test(vpa)) return null; const [u, b] = vpa.split('@'); return { username: u, bankHandle: b }; }`
 
-**22.** Design classes with: PayerPSP(payerVpa, payeeVpa, amount, deviceId) → sendToNPCI(); NPCISwitch() → resolveVPA(), validate(), forwardToIssuer(); IssuerBank() → validatePIN(), checkBalance(), debit(); AcquirerBank() → creditPayee(). All connected via interfaces.
+**22.** Design classes with: PayerPSP(payerVpa, payeeVpa, amount, deviceId) â†’ sendToNPCI(); NPCISwitch() â†’ resolveVPA(), validate(), forwardToIssuer(); IssuerBank() â†’ validatePIN(), checkBalance(), debit(); AcquirerBank() â†’ creditPayee(). All connected via interfaces.
 
-**23.** BIN ranges: '60'→Classic, '65'→Platinum, '81'→Select, '82'→World, '5085'→JCB. Check prefix with startsWith() in order of specificity (longest prefix first).
+**23.** BIN ranges: '60'â†’Classic, '65'â†’Platinum, '81'â†’Select, '82'â†’World, '5085'â†’JCB. Check prefix with startsWith() in order of specificity (longest prefix first).
 
-**24.** FASTagProcessor: validateTag(tagId, vehicleNo) → determineVehicleClass() → calculateToll(plazaId, class) → processDebit(walletId, amount) → return settlementRef.
+**24.** FASTagProcessor: validateTag(tagId, vehicleNo) â†’ determineVehicleClass() â†’ calculateToll(plazaId, class) â†’ processDebit(walletId, amount) â†’ return settlementRef.
 
-**25.** BBPSProcessor: map<billerCode, biller>; fetchBill(code, custId) → return bill with amount+dueDate; payBill(code, custId, amount) → generate BBPS ref + status SUCCESS.
+**25.** BBPSProcessor: map<billerCode, biller>; fetchBill(code, custId) â†’ return bill with amount+dueDate; payBill(code, custId, amount) â†’ generate BBPS ref + status SUCCESS.
 
 **26.** eMandateManager with tiers: (1) &lt;=15000: no AFA; (2) 15001-100000: AFA on mandate creation + first debit; (3) &gt;100000: AFA each debit. Store mandate with frequency, amount, start/end dates.
 
-**27.** TokenVault: Map<token, pan>; generateToken(pan) → BIN-preserving 16-digit token using format-preserving encryption (FF1); storeToken(token, pan) in encrypted vault; detokenize(token) → return original PAN via HSM.
+**27.** TokenVault: Map<token, pan>; generateToken(pan) â†’ BIN-preserving 16-digit token using format-preserving encryption (FF1); storeToken(token, pan) in encrypted vault; detokenize(token) â†’ return original PAN via HSM.
 
-**28.** PINManager: setPin(vpa, pin) → store HMAC(pin, salt) as pinOffset; validatePin(vpa, pin) → compare HMAC; track failed attempts &gt;=3 → lock; reset via debit card OTP verification.
+**28.** PINManager: setPin(vpa, pin) â†’ store HMAC(pin, salt) as pinOffset; validatePin(vpa, pin) â†’ compare HMAC; track failed attempts &gt;=3 â†’ lock; reset via debit card OTP verification.
 
-**29.** NACHMandateManager: register(customerId, amount, frequency, sponsorId) → store with status PENDING; verify(destinationBank) → ACTIVATE; processDebit(mandateId) → check active, deduct, log; cancel(mandateId) → DEACTIVATE.
+**29.** NACHMandateManager: register(customerId, amount, frequency, sponsorId) â†’ store with status PENDING; verify(destinationBank) â†’ ACTIVATE; processDebit(mandateId) â†’ check active, deduct, log; cancel(mandateId) â†’ DEACTIVATE.
 
-**30.** UPIRuPayBridge: Link RuPay card to UPI → NPCI routes UPI credit card payments to RuPay switch → RuPay authorization (credit limit check) → UPI PIN verification → Settlement through IMPS. Merchant receives payment via normal UPI flow.
+**30.** UPIRuPayBridge: Link RuPay card to UPI â†’ NPCI routes UPI credit card payments to RuPay switch â†’ RuPay authorization (credit limit check) â†’ UPI PIN verification â†’ Settlement through IMPS. Merchant receives payment via normal UPI flow.
 </details>
 
 ## Summary
@@ -1776,14 +1776,14 @@ FASTag uses passive UHF RFID in the 865-867 MHz band as per TRAI guidelines, fol
 
 **Q4:** In the AePS system, what does IIN stand for and what is its purpose?
 
-A) Issuer Identification Number — identifies the bank for transaction routing
-B) Indian Identification Number — Aadhaar reference
-C) Interbank Identifier Number — NPCI switch identifier
-D) Individual Income Number — tax-related
+A) Issuer Identification Number â€” identifies the bank for transaction routing
+B) Indian Identification Number â€” Aadhaar reference
+C) Interbank Identifier Number â€” NPCI switch identifier
+D) Individual Income Number â€” tax-related
 
 <details>
 <summary>Answer</summary>
-**Answer: A) Issuer Identification Number — identifies the bank for routing**
+**Answer: A) Issuer Identification Number â€” identifies the bank for routing**
 
 IIN is the first 6 digits of Aadhaar number that identifies the enrolling agency/bank. AePS uses IIN to route transactions to the correct issuer bank.
 </details>

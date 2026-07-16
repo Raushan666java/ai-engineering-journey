@@ -1,4 +1,4 @@
-# Chapter 8: Memory Management
+﻿# Chapter 8: Memory Management
 
 **<< [Deadlocks](./07-deadlocks.md)** | [**Next: Virtual Memory**](./09-virtual-memory.md) >>
 
@@ -18,16 +18,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/operating-systems/08-memory-management/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/operating-systems/08-memory-management/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/operating-systems/08-memory-management/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/operating-systems/08-memory-management/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/operating-systems/08-memory-management/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/operating-systems/08-memory-management/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/operating-systems/08-memory-management/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/operating-systems/08-memory-management/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/operating-systems/08-memory-management/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/operating-systems/08-memory-management/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/operating-systems/08-memory-management/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/operating-systems/08-memory-management/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -83,7 +83,7 @@ flowchart LR
 #### Real-World Analogy
 
 > **Airline Seat Assignment**
-> - **Compile-time binding**: You buy a specific seat (14A) when booking — that seat is locked regardless of flight changes.
+> - **Compile-time binding**: You buy a specific seat (14A) when booking â€” that seat is locked regardless of flight changes.
 > - **Load-time binding**: The airline assigns your seat at the gate based on availability when you board.
 > - **Execution-time binding**: The flight attendant reseats you mid-flight to balance the aircraft.
 
@@ -123,7 +123,7 @@ Binding is delayed until the process is **running**. Hardware (the **MMU**) perf
 
 ```
 Every instruction execution:
-  CPU produces logical address → MMU adds relocation register → physical address
+  CPU produces logical address â†’ MMU adds relocation register â†’ physical address
 ```
 
 - Used by all modern general-purpose operating systems (Linux, Windows, macOS).
@@ -134,12 +134,12 @@ Every instruction execution:
 
 ```
 Step 1: CPU fetches instruction
-        └── Instruction contains a LOGICAL address (e.g., 0x1000)
+        â””â”€â”€ Instruction contains a LOGICAL address (e.g., 0x1000)
 
 Step 2: CPU sends logical address to MMU
 
 Step 3: MMU adds current relocation register value (e.g., 0x400000)
-        └── Physical = 0x1000 + 0x400000 = 0x401000
+        â””â”€â”€ Physical = 0x1000 + 0x400000 = 0x401000
 
 Step 4: MMU sends physical address to memory bus
 
@@ -152,7 +152,7 @@ Step 6: Data returned to CPU via MMU
 
 ```
 PROCEDURE translate_address(logical_addr, relocation_register):
-    physical_addr ← logical_addr + relocation_register
+    physical_addr â† logical_addr + relocation_register
     IF physical_addr < relocation_register + limit_register:
         RETURN physical_addr    // Valid access
     ELSE:
@@ -203,9 +203,9 @@ int main() {
     MMUSimulator mmu(0x400000, 0x100000); // Base = 4MB, Limit = 1MB
 
     try {
-        mmu.translate(0x001000); // Valid → 0x401000
-        mmu.translate(0x00F000); // Valid → 0x40F000
-        mmu.translate(0x200000); // Invalid → exception (beyond limit)
+        mmu.translate(0x001000); // Valid â†’ 0x401000
+        mmu.translate(0x00F000); // Valid â†’ 0x40F000
+        mmu.translate(0x200000); // Invalid â†’ exception (beyond limit)
     } catch (const std::exception& e) {
         std::cerr << "Error: " << e.what() << "\n";
     }
@@ -255,20 +255,20 @@ if __name__ == "__main__":
 
 | Step | Operation | Logical Addr | Relocation Register | Limit Register | Physical Addr | Valid? |
 |------|-----------|-------------|--------------------|---------------|--------------|--------|
-| 1 | CPU issues LOAD | 0x001000 | 0x400000 | 0x100000 | — | — |
+| 1 | CPU issues LOAD | 0x001000 | 0x400000 | 0x100000 | â€” | â€” |
 | 2 | MMU adds base | 0x001000 | 0x400000 | 0x100000 | 0x401000 | Check |
-| 3 | Bounds check | — | — | — | 0x401000 | 0x401000 &lt; 0x500000 ✓ |
-| 4 | Return phys addr | — | — | — | 0x401000 | — |
-| 5 | CPU issues LOAD | 0x200000 | 0x400000 | 0x100000 | — | — |
+| 3 | Bounds check | â€” | â€” | â€” | 0x401000 | 0x401000 &lt; 0x500000 âœ“ |
+| 4 | Return phys addr | â€” | â€” | â€” | 0x401000 | â€” |
+| 5 | CPU issues LOAD | 0x200000 | 0x400000 | 0x100000 | â€” | â€” |
 | 6 | MMU adds base | 0x200000 | 0x400000 | 0x100000 | 0x600000 | Check |
-| 7 | Bounds check | — | — | — | 0x600000 | 0x600000 >= 0x500000 ✗ |
-| 8 | Raise segfault | — | — | — | — | Exception |
+| 7 | Bounds check | â€” | â€” | â€” | 0x600000 | 0x600000 >= 0x500000 âœ— |
+| 8 | Raise segfault | â€” | â€” | â€” | â€” | Exception |
 
 #### Complexity Analysis
 
 | Aspect | Complexity | Why |
 |--------|-----------|-----|
-| **Time (execution)** | O(1) | One addition + one comparison per memory access — constant, hardware-pipelined |
+| **Time (execution)** | O(1) | One addition + one comparison per memory access â€” constant, hardware-pipelined |
 | **Space** | O(1) | Two registers (base + limit) per process stored in PCB |
 | **Context switch cost** | O(1) | Reload MMU registers with new process base/limit |
 
@@ -276,19 +276,19 @@ if __name__ == "__main__":
 
 | Advantage | Disadvantage |
 |-----------|-------------|
-| Simple hardware — just adders and comparators | Requires contiguous memory allocation |
-| Fast — single-cycle translation | Suffers external fragmentation |
-| Built-in protection via limit register | No paging — entire process must be in memory |
+| Simple hardware â€” just adders and comparators | Requires contiguous memory allocation |
+| Fast â€” single-cycle translation | Suffers external fragmentation |
+| Built-in protection via limit register | No paging â€” entire process must be in memory |
 | Minimal context-switch cost | Cannot support virtual memory > physical RAM |
 
 #### Edge Cases
 
 | Edge Case | What Happens |
 |-----------|-------------|
-| **Logical address = 0** | Translated to base address — valid first byte of process |
+| **Logical address = 0** | Translated to base address â€” valid first byte of process |
 | **Address + base overflows uint32** | Wraparound; must be checked by hardware (carry flag) |
-| **Limit register = 0** | Every access fails immediately — process can't run |
-| **Multi-threaded access** | Each thread shares same base/limit — all threads mapped to same physical region |
+| **Limit register = 0** | Every access fails immediately â€” process can't run |
+| **Multi-threaded access** | Each thread shares same base/limit â€” all threads mapped to same physical region |
 
 ---
 
@@ -301,12 +301,12 @@ Every memory address generated by the CPU is a **logical address** (also called 
 
 ```
   CPU (logical addr)          MMU (translation)        Memory Bus (physical addr)
-┌─────────────────────┐   ┌──────────────────────┐   ┌─────────────────────────┐
-│ LOAD R1, [0x1000]   │──→│ Physical = Logical   │──→│ Address 0x401000        │
-│                     │   │         + Base        │   │ Contains value 0x42     │
-│ Logical = 0x1000    │   │ 0x1000 + 0x400000    │   │                         │
-│                     │   │         = 0x401000    │   │                         │
-└─────────────────────┘   └──────────────────────┘   └─────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ LOAD R1, [0x1000]   â”‚â”€â”€â†’â”‚ Physical = Logical   â”‚â”€â”€â†’â”‚ Address 0x401000        â”‚
+â”‚                     â”‚   â”‚         + Base        â”‚   â”‚ Contains value 0x42     â”‚
+â”‚ Logical = 0x1000    â”‚   â”‚ 0x1000 + 0x400000    â”‚   â”‚                         â”‚
+â”‚                     â”‚   â”‚         = 0x401000    â”‚   â”‚                         â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 #### Detailed Comparison
@@ -317,7 +317,7 @@ Every memory address generated by the CPU is a **logical address** (also called 
 | **Also called** | Virtual address | Real address, absolute address |
 | **Visibility** | Visible to programmer/compiler | Not visible to the program |
 | **Space** | Logical address space (per-process) | Physical address space (system-wide) |
-| **Size** | Determined by CPU bits (32-bit → 4 GB) | Determined by RAM installed |
+| **Size** | Determined by CPU bits (32-bit â†’ 4 GB) | Determined by RAM installed |
 | **Persistence** | Changes per process (each process has its own) | Fixed for each physical memory location |
 | **Binding time** | Runtime (every instruction) | At memory access time |
 | **User program sees** | Logical addresses only | Never sees physical addresses directly |
@@ -327,9 +327,9 @@ Every memory address generated by the CPU is a **logical address** (also called 
 #### Real-World Analogy: Hotel Room Keys
 
 > - **Logical address** = Your room key number (Room 205). Every guest thinks they have "Room 205" regardless of which floor they're on.
-> - **Physical address** = The actual physical room (Building 2, Floor 4, Room 5). Two different hotels can both have "Room 205" — the logical-to-physical mapping is unique per hotel (per process).
+> - **Physical address** = The actual physical room (Building 2, Floor 4, Room 5). Two different hotels can both have "Room 205" â€” the logical-to-physical mapping is unique per hotel (per process).
 > - **MMU** = The front desk clerk who tells you "Room 205 is actually around the corner."
-> - **TLB** = Your memory of which way to turn — you don't ask the front desk every time.
+> - **TLB** = Your memory of which way to turn â€” you don't ask the front desk every time.
 
 #### Address Space Sizes
 
@@ -344,32 +344,32 @@ Every memory address generated by the CPU is a **logical address** (also called 
 
 ```
 Logical Address (32 bits):
-┌──────────────────────────┬────────────────────┐
-│     Page Number (20)     │   Offset (12)      │
-│     0x00002              │     0xA5C          │
-└──────────────────────────┴────────────────────┘
-         │
-         ▼
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚     Page Number (20)     â”‚   Offset (12)      â”‚
+â”‚     0x00002              â”‚     0xA5C          â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+         â”‚
+         â–¼
    Page Table (per-process)
-   ┌───────┬────────┐
-   │Page 0 │ Frame 8│
-   │Page 1 │ Frame 3│
-   │Page 2 │ Frame 12│
-   │...    │ ...    │
-   └───────┴────────┘
-         │ Page 2 → Frame 12 = 0xC
-         ▼
+   â”Œâ”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”
+   â”‚Page 0 â”‚ Frame 8â”‚
+   â”‚Page 1 â”‚ Frame 3â”‚
+   â”‚Page 2 â”‚ Frame 12â”‚
+   â”‚...    â”‚ ...    â”‚
+   â””â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+         â”‚ Page 2 â†’ Frame 12 = 0xC
+         â–¼
 Physical Address (32 bits):
-┌──────────────────────────┬────────────────────┐
-│     Frame Number (20)    │   Offset (12)      │
-│     0x0000C              │     0xA5C          │
-└──────────────────────────┴────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚     Frame Number (20)    â”‚   Offset (12)      â”‚
+â”‚     0x0000C              â”‚     0xA5C          â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
   = 0x0000C << 12 | 0xA5C = 0xCA5C
 ```
 
 ---
 
-### MMU — Memory Management Unit
+### MMU â€” Memory Management Unit
 
 
 The **MMU** is a hardware component that performs runtime translation of logical addresses to physical addresses. It is a critical part of the CPU's memory subsystem.
@@ -377,48 +377,48 @@ The **MMU** is a hardware component that performs runtime translation of logical
 #### MMU Architecture
 
 ```
-                    ┌─────────────────────────────────────────────────┐
-                    │                  CPU Core                       │
-                    │  ┌──────────┐    ┌──────────┐                  │
-                    │  │  ALU     │    │  Control  │                  │
-                    │  └────┬─────┘    └─────┬────┘                  │
-                    │       │                │                        │
-                    │       ▼                ▼                        │
-                    │  ┌──────────────────────────────────┐           │
-                    │  │           MMU                     │           │
-                    │  │  ┌─────────┐  ┌───────────────┐  │           │
-                    │  │  │ Segment │  │   Page Unit    │  │           │
-                    │  │  │  Unit   │  │ ┌───────────┐ │  │           │
-                    │  │  │(optional)│  │ │ Page Table │ │  │           │
-                    │  │  └─────────┘  │ │   Walker   │ │  │           │
-                    │  │               │ └───────────┘ │  │           │
-                    │  │               │ ┌───────────┐ │  │           │
-                    │  │               │ │   TLB     │ │  │           │
-                    │  │               │ └───────────┘ │  │           │
-                    │  │               └───────────────┘  │           │
-                    │  └──────────────────────────────────┘           │
-                    │                    │                             │
-                    └────────────────────┼───────────────────────────┘
-                                         │ Physical Address
-                                         ▼
-                              ┌─────────────────────┐
-                              │   Memory Bus / RAM   │
-                              └─────────────────────┘
+                    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                    â”‚                  CPU Core                       â”‚
+                    â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”                  â”‚
+                    â”‚  â”‚  ALU     â”‚    â”‚  Control  â”‚                  â”‚
+                    â”‚  â””â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”˜                  â”‚
+                    â”‚       â”‚                â”‚                        â”‚
+                    â”‚       â–¼                â–¼                        â”‚
+                    â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”           â”‚
+                    â”‚  â”‚           MMU                     â”‚           â”‚
+                    â”‚  â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”‚           â”‚
+                    â”‚  â”‚  â”‚ Segment â”‚  â”‚   Page Unit    â”‚  â”‚           â”‚
+                    â”‚  â”‚  â”‚  Unit   â”‚  â”‚ â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”‚  â”‚           â”‚
+                    â”‚  â”‚  â”‚(optional)â”‚  â”‚ â”‚ Page Table â”‚ â”‚  â”‚           â”‚
+                    â”‚  â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚ â”‚   Walker   â”‚ â”‚  â”‚           â”‚
+                    â”‚  â”‚               â”‚ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â”‚  â”‚           â”‚
+                    â”‚  â”‚               â”‚ â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”‚  â”‚           â”‚
+                    â”‚  â”‚               â”‚ â”‚   TLB     â”‚ â”‚  â”‚           â”‚
+                    â”‚  â”‚               â”‚ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â”‚  â”‚           â”‚
+                    â”‚  â”‚               â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚           â”‚
+                    â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜           â”‚
+                    â”‚                    â”‚                             â”‚
+                    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                                         â”‚ Physical Address
+                                         â–¼
+                              â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                              â”‚   Memory Bus / RAM   â”‚
+                              â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 #### MMU Components
 
 | Component | Function | Speed |
 |-----------|----------|-------|
-| **Segment Unit** | Translates logical → linear address (x86 real/protected mode) | 1 cycle |
-| **Page Unit** | Translates linear → physical address via page tables | 1 cycle (TLB hit) to 100+ cycles (walk) |
+| **Segment Unit** | Translates logical â†’ linear address (x86 real/protected mode) | 1 cycle |
+| **Page Unit** | Translates linear â†’ physical address via page tables | 1 cycle (TLB hit) to 100+ cycles (walk) |
 | **TLB** | Cache for recent page table entries | 0.5-1 cycle |
 | **Page Table Walker** | Hardware state machine that walks multi-level page tables on TLB miss | 3-4 memory accesses |
 | **Protection Check Unit** | Validates access rights (R/W/X, supervisor/user) | In parallel with translation |
 
 #### Real-World Analogy: Embassy Translation Office
 
-> The MMU is like the translation office at an embassy. A citizen (CPU) writes a letter in their native language (logical address). The translation office converts it to the host country's language (physical address) and verifies the citizen is allowed in that area (protection check). The TLB is like a pocket phrasebook — for common phrases, no translation office visit needed.
+> The MMU is like the translation office at an embassy. A citizen (CPU) writes a letter in their native language (logical address). The translation office converts it to the host country's language (physical address) and verifies the citizen is allowed in that area (protection check). The TLB is like a pocket phrasebook â€” for common phrases, no translation office visit needed.
 
 #### MMU Responsibilities
 
@@ -432,19 +432,19 @@ The **MMU** is a hardware component that performs runtime translation of logical
 
 ```
 PROCEDURE mmu_translate(logical_addr, process_id):
-    page_number ← logical_addr >> PAGE_SHIFT
-    offset ← logical_addr & PAGE_MASK
+    page_number â† logical_addr >> PAGE_SHIFT
+    offset â† logical_addr & PAGE_MASK
 
     // Step 1: Check TLB
-    tlb_entry ← tlb_lookup(process_id, page_number)
+    tlb_entry â† tlb_lookup(process_id, page_number)
     IF tlb_entry found:
-        frame_number ← tlb_entry.frame
+        frame_number â† tlb_entry.frame
         HIT_STATISTICS.increment()
         RETURN (frame_number << PAGE_SHIFT) | offset
 
-    // Step 2: TLB Miss — walk page table
+    // Step 2: TLB Miss â€” walk page table
     MISS_STATISTICS.increment()
-    page_table_entry ← walk_page_table(page_number)
+    page_table_entry â† walk_page_table(page_number)
 
     IF page_table_entry.valid == 0:
         RAISE page_fault
@@ -473,18 +473,18 @@ Memory is divided into **fixed-size partitions** at boot time. Each partition ca
 
 ```
 Memory Layout (Fixed Partitions):
-┌────────────────────┬──────────────────────┬──────────────────────┐
-│ Partition 0        │ Partition 1          │ Partition 2          │
-│ 0 MB — 256 MB     │ 256 MB — 512 MB     │ 512 MB — 768 MB     │
-│ Process A (200 MB) │ Process B (100 MB)  │ Free                 │
-├────────────────────┼──────────────────────┼──────────────────────┤
-│ Partition 3        │ Partition 4          │ Partition 5          │
-│ 768 MB — 896 MB   │ 896 MB — 960 MB     │ 960 MB — 1024 MB    │
-│ Free               │ Process C (30 MB)   │ Free                 │
-└────────────────────┴──────────────────────┴──────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ Partition 0        â”‚ Partition 1          â”‚ Partition 2          â”‚
+â”‚ 0 MB â€” 256 MB     â”‚ 256 MB â€” 512 MB     â”‚ 512 MB â€” 768 MB     â”‚
+â”‚ Process A (200 MB) â”‚ Process B (100 MB)  â”‚ Free                 â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚ Partition 3        â”‚ Partition 4          â”‚ Partition 5          â”‚
+â”‚ 768 MB â€” 896 MB   â”‚ 896 MB â€” 960 MB     â”‚ 960 MB â€” 1024 MB    â”‚
+â”‚ Free               â”‚ Process C (30 MB)   â”‚ Free                 â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
-**Problem:** A process of 300 MB cannot run even though only 364 MB is used — the free memory is fragmented across small partitions (256 MB max in any single partition).
+**Problem:** A process of 300 MB cannot run even though only 364 MB is used â€” the free memory is fragmented across small partitions (256 MB max in any single partition).
 
 #### Dynamic Partitioning (Variable Partition)
 
@@ -492,10 +492,10 @@ Partitions are created dynamically to match the exact size of each process.
 
 ```
 Memory after some allocations:
-┌──────────┬──────────────┬──────────┬──────────────┬──────────┐
-│  OS      │  Process A   │  Free    │  Process B   │  Free    │
-│  (200MB) │  (150MB)     │  (100MB) │  (80MB)      │  (470MB) │
-└──────────┴──────────────┴──────────┴──────────────┴──────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚  OS      â”‚  Process A   â”‚  Free    â”‚  Process B   â”‚  Free    â”‚
+â”‚  (200MB) â”‚  (150MB)     â”‚  (100MB) â”‚  (80MB)      â”‚  (470MB) â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 0         200            350        450            530        1000
 ```
 
@@ -508,7 +508,7 @@ Memory after some allocations:
 > - **Contiguous allocation** = You must park your car in a single continuous parking spot. If you have a long car (large process), you need a long uninterrupted space.
 > - **Fixed partitions** = The lot has pre-marked spots of various sizes (compact, sedan, SUV). An SUV spot stays empty if no SUV arrives, even if several compact spots are free.
 > - **Dynamic partitions** = Valet parking arranges cars bumper-to-bumper in any available gap.
-> - **External fragmentation** = After cars leave, empty spaces are scattered across the lot — no single gap is big enough for the next bus.
+> - **External fragmentation** = After cars leave, empty spaces are scattered across the lot â€” no single gap is big enough for the next bus.
 > - **Compaction** = The valet shifts all cars to one side to consolidate all empty space.
 
 #### Step-by-Step: Process Loading in Dynamic Partitioning
@@ -517,31 +517,31 @@ Memory after some allocations:
 Initial Free List: [{start: 200, size: 800}]
 
 Step 1: Process P1 (size 120) arrives
-    Find hole ≥ 120 → hole at 200, size 800
+    Find hole â‰¥ 120 â†’ hole at 200, size 800
     Split: Allocate [200, 120], Remaining free [320, 680]
     Free List: [{start: 320, size: 680}]
 
 Step 2: Process P2 (size 250) arrives
-    Find hole ≥ 250 → hole at 320, size 680
+    Find hole â‰¥ 250 â†’ hole at 320, size 680
     Split: Allocate [320, 250], Remaining free [570, 430]
     Free List: [{start: 570, size: 430}]
 
 Step 3: Process P3 (size 100) arrives
-    Find hole ≥ 100 → hole at 570, size 430
+    Find hole â‰¥ 100 â†’ hole at 570, size 430
     Split: Allocate [570, 100], Remaining free [670, 330]
     Free List: [{start: 670, size: 330}]
 
 Step 4: Process P1 terminates (returns 120 MB at 200)
     Free List: [{start: 200, size: 120}, {start: 670, size: 330}]
-    Merge adjacent? No (200 + 120 = 320 ≠ 670)
+    Merge adjacent? No (200 + 120 = 320 â‰  670)
 
 Step 5: Process P2 terminates (returns 250 MB at 320)
     Free List: [{start: 200, size: 120}, {start: 320, size: 250}, {start: 670, size: 330}]
-    Merge: [200, 120] and [320, 250] are adjacent (200+120=320) → merge to [200, 370]
+    Merge: [200, 120] and [320, 250] are adjacent (200+120=320) â†’ merge to [200, 370]
     Free List: [{start: 200, size: 370}, {start: 670, size: 330}]
 
 Step 6: Process P4 (size 500) arrives
-    Largest free hole is 370 — not enough!
+    Largest free hole is 370 â€” not enough!
     Out of memory (external fragmentation)
     Solution: Compact or swap a process out
 ```
@@ -559,18 +559,18 @@ Allocate the **first** hole that is large enough.
 
 ##### Real-World Analogy
 
-> **Parking lot**: Drive in and take the first empty spot that fits your car. Don't check further spots — just park.
+> **Parking lot**: Drive in and take the first empty spot that fits your car. Don't check further spots â€” just park.
 
 ##### Pseudocode
 
 ```
 PROCEDURE first_fit(request_size):
     FOR each hole in free_list:
-        IF hole.size ≥ request_size:
+        IF hole.size â‰¥ request_size:
             // Allocate from this hole
-            allocated ← {start: hole.start, size: request_size}
-            hole.start ← hole.start + request_size
-            hole.size ← hole.size - request_size
+            allocated â† {start: hole.start, size: request_size}
+            hole.start â† hole.start + request_size
+            hole.size â† hole.size - request_size
             IF hole.size == 0:
                 REMOVE hole from free_list
             END IF
@@ -744,29 +744,29 @@ Allocate the **smallest** hole that is large enough. Minimizes wasted space.
 
 ##### Real-World Analogy
 
-> **Packing suitcases**: You measure every empty space in the trunk and choose the one where your suitcase fits most snugly — minimal wasted cubic inches.
+> **Packing suitcases**: You measure every empty space in the trunk and choose the one where your suitcase fits most snugly â€” minimal wasted cubic inches.
 
 ##### Pseudocode
 
 ```
 PROCEDURE best_fit(request_size):
-    best_hole ← NULL
-    best_index ← -1
+    best_hole â† NULL
+    best_index â† -1
 
     FOR each hole in free_list:
-        IF hole.size ≥ request_size:
+        IF hole.size â‰¥ request_size:
             IF best_hole is NULL OR hole.size < best_hole.size:
-                best_hole ← hole
-                best_index ← current_index
+                best_hole â† hole
+                best_index â† current_index
             END IF
         END IF
     END FOR
 
     IF best_hole is not NULL:
         // Allocate from best_hole
-        allocated ← {start: best_hole.start, size: request_size}
-        best_hole.start ← best_hole.start + request_size
-        best_hole.size ← best_hole.size - request_size
+        allocated â† {start: best_hole.start, size: request_size}
+        best_hole.start â† best_hole.start + request_size
+        best_hole.size â† best_hole.size - request_size
         IF best_hole.size == 0:
             REMOVE best_hole from free_list
         END IF
@@ -880,7 +880,7 @@ Same as first-fit, but the search starts from where the **previous allocation en
 
 ##### Real-World Analogy
 
-> **Parking lot**: Instead of always starting from the entrance, you start from where you last parked. This wears out the lot more evenly — all areas get used, not just the front.
+> **Parking lot**: Instead of always starting from the entrance, you start from where you last parked. This wears out the lot more evenly â€” all areas get used, not just the front.
 
 ##### C++ Implementation (Next-Fit)
 
@@ -925,7 +925,7 @@ public:
 
 #### Full Dry Run: Same Allocation Sequence Across All Four Algorithms
 
-Initial memory: 0 MB — 1024 MB (all free).
+Initial memory: 0 MB â€” 1024 MB (all free).
 
 Allocation sequence: A(200), B(150), C(100), free A, D(80), free C, E(300)
 
@@ -933,62 +933,62 @@ Allocation sequence: A(200), B(150), C(100), free A, D(80), free C, E(300)
 
 | Step | Action | Allocated At | Free List After |
 |------|--------|-------------|----------------|
-| 0 | Initial | — | [{0, 1024}] |
+| 0 | Initial | â€” | [{0, 1024}] |
 | 1 | A(200) | 0 | [{200, 824}] |
 | 2 | B(150) | 200 | [{350, 674}] |
 | 3 | C(100) | 350 | [{450, 574}] |
-| 4 | Free A | — | [{0, 200}, {450, 574}] |
+| 4 | Free A | â€” | [{0, 200}, {450, 574}] |
 | 5 | D(80) | 0 | [{80, 120}, {450, 574}] |
-| 6 | Free C | — | [{80, 120}, {450, 574}] (merge doesn't apply — 80+120=200 ≠ 450) |
-| 7 | E(300) | 450 (first hole ≥ 300) | [{80, 120}, {750, 274}] |
+| 6 | Free C | â€” | [{80, 120}, {450, 574}] (merge doesn't apply â€” 80+120=200 â‰  450) |
+| 7 | E(300) | 450 (first hole â‰¥ 300) | [{80, 120}, {750, 274}] |
 
 ##### Best-Fit Trace
 
 | Step | Action | Allocated At | Rationale |
 |------|--------|-------------|-----------|
-| 0 | Initial | — | [{0, 1024}] |
+| 0 | Initial | â€” | [{0, 1024}] |
 | 1 | A(200) | 0 | Only hole, remainder 824 |
 | 2 | B(150) | 200 | Only hole, remainder 674 |
 | 3 | C(100) | 350 | Only hole, remainder 574 |
-| 4 | Free A | — | [{0, 200}, {450, 574}] |
-| 5 | D(80) | **0** | Hole 0 has size 200 (rem 120), hole 450 has size 574 (rem 494) — 120 &lt; 494 |
-| 6 | Free C | — | [{80, 120}, {450, 574}] |
-| 7 | E(300) | **450** | Hole 80 has size 120 (too small), hole 450 has size 574 — smallest feasible |
+| 4 | Free A | â€” | [{0, 200}, {450, 574}] |
+| 5 | D(80) | **0** | Hole 0 has size 200 (rem 120), hole 450 has size 574 (rem 494) â€” 120 &lt; 494 |
+| 6 | Free C | â€” | [{80, 120}, {450, 574}] |
+| 7 | E(300) | **450** | Hole 80 has size 120 (too small), hole 450 has size 574 â€” smallest feasible |
 
 ##### Worst-Fit Trace
 
 | Step | Action | Allocated At | Rationale |
 |------|--------|-------------|-----------|
-| 0 | Initial | — | [{0, 1024}] |
+| 0 | Initial | â€” | [{0, 1024}] |
 | 1 | A(200) | 0 | Only hole |
 | 2 | B(150) | 200 | Only hole |
 | 3 | C(100) | 350 | Only hole |
-| 4 | Free A | — | [{0, 200}, {450, 574}] |
+| 4 | Free A | â€” | [{0, 200}, {450, 574}] |
 | 5 | D(80) | **450** | Hole 450 has size 574 (largest), hole 0 has size 200 |
-| 6 | Free C | — | [{0, 200}, {370, 124}] (merge: A + D merged? No. 0+200=200 ≠ 370. Actually: free C is at 350-450, adjacent to D at 450-530 → merge to hole at 350 size 124 + 80 = wait, C was at 350-450, D is at 450-530. Free C returns 350-450. Adjacent to D's hole [370, 124]... Let me redo this properly. Initially after step 3: A[0,200], B[200,350], C[350,450]. Step 4: free A → [{0,200}, {450,574}]. Step 5: D(80) → worst-fit allocates at 450 → [{0,200}, {530,494}]. Step 6: free C (at 350, size 100) → [{0,200}, {350,100}, {530,494}]. Step 6 merge: B is process at 200-350, free [350,450] adjacent to free... no, B is allocated. So no merge between 200 and 350. But wait, we need to check adjacency: 200 (A's freed space) + 200 = 400 ≠ 350. So no merge. [{0,200}, {350,100}, {530,494}]. Step 7: E(300) → worst-fit takes 530 (largest at 494)... wait 494 ≥ 300 and 200 &lt; 300? No. Actually 200 < 300 so only {530,494} qualifies. Alloc at 530. → [{0,200}, {350,100}, {830,194}]. |
+| 6 | Free C | â€” | [{0, 200}, {370, 124}] (merge: A + D merged? No. 0+200=200 â‰  370. Actually: free C is at 350-450, adjacent to D at 450-530 â†’ merge to hole at 350 size 124 + 80 = wait, C was at 350-450, D is at 450-530. Free C returns 350-450. Adjacent to D's hole [370, 124]... Let me redo this properly. Initially after step 3: A[0,200], B[200,350], C[350,450]. Step 4: free A â†’ [{0,200}, {450,574}]. Step 5: D(80) â†’ worst-fit allocates at 450 â†’ [{0,200}, {530,494}]. Step 6: free C (at 350, size 100) â†’ [{0,200}, {350,100}, {530,494}]. Step 6 merge: B is process at 200-350, free [350,450] adjacent to free... no, B is allocated. So no merge between 200 and 350. But wait, we need to check adjacency: 200 (A's freed space) + 200 = 400 â‰  350. So no merge. [{0,200}, {350,100}, {530,494}]. Step 7: E(300) â†’ worst-fit takes 530 (largest at 494)... wait 494 â‰¥ 300 and 200 &lt; 300? No. Actually 200 < 300 so only {530,494} qualifies. Alloc at 530. â†’ [{0,200}, {350,100}, {830,194}]. |
 | 7 | E(300) | 530 | Only hole large enough is 494 |
 
 ##### Next-Fit Trace
 
 | Step | Action | Allocate At | Search Start | Free List |
 |------|--------|------------|-------------|-----------|
-| 0 | Init | — | — | [{0, 1024}] |
-| 1 | A(200) | 0 | start=0 → after 200 | [{200, 824}] |
-| 2 | B(150) | 200 | start=200 → after 350 | [{350, 674}] |
-| 3 | C(100) | 350 | start=350 → after 450 | [{450, 574}] |
-| 4 | Free A | — | (last_alloc still at 450-end boundary) | [{0,200}, {450,574}] |
-| 5 | D(80) | **450** (start search from last_alloc=450) | — | [{0,200}, {530,494}] |
-| 6 | Free C(350,100) | — | — | [{0,200}, {350,100}, {530,494}] |
-| 7 | E(300) | **530** | Search from 350 (last ended at 530+80) → 350 too small → 530 fits | [{0,200}, {350,100}, {830,194}] |
+| 0 | Init | â€” | â€” | [{0, 1024}] |
+| 1 | A(200) | 0 | start=0 â†’ after 200 | [{200, 824}] |
+| 2 | B(150) | 200 | start=200 â†’ after 350 | [{350, 674}] |
+| 3 | C(100) | 350 | start=350 â†’ after 450 | [{450, 574}] |
+| 4 | Free A | â€” | (last_alloc still at 450-end boundary) | [{0,200}, {450,574}] |
+| 5 | D(80) | **450** (start search from last_alloc=450) | â€” | [{0,200}, {530,494}] |
+| 6 | Free C(350,100) | â€” | â€” | [{0,200}, {350,100}, {530,494}] |
+| 7 | E(300) | **530** | Search from 350 (last ended at 530+80) â†’ 350 too small â†’ 530 fits | [{0,200}, {350,100}, {830,194}] |
 
 #### Complexity Analysis
 
 | Algorithm | Search Cost | Insertion | Memory Overhead | Fragmentation Tendency |
 |-----------|-------------|-----------|----------------|----------------------|
-| **First-Fit** | O(n) average O(n/2) | O(1) split | Minimal (no tracking) | Moderate — leaves small holes near front |
-| **Best-Fit** | O(n) full scan | O(1) split | Slightly more (tracks best) | Worst — leaves tiny unusable holes |
-| **Worst-Fit** | O(n) full scan | O(1) split | Slightly more | Better — leaves large remaining holes |
-| **Next-Fit** | O(n) worst-case | O(1) split | Minimal | Moderate — spreads fragmentation evenly |
+| **First-Fit** | O(n) average O(n/2) | O(1) split | Minimal (no tracking) | Moderate â€” leaves small holes near front |
+| **Best-Fit** | O(n) full scan | O(1) split | Slightly more (tracks best) | Worst â€” leaves tiny unusable holes |
+| **Worst-Fit** | O(n) full scan | O(1) split | Slightly more | Better â€” leaves large remaining holes |
+| **Next-Fit** | O(n) worst-case | O(1) split | Minimal | Moderate â€” spreads fragmentation evenly |
 
 **Why these complexities?**
 - **n** = number of free holes. In the worst case (highly fragmented memory), n can be O(number of allocated blocks). First-fit stops early on average (O(n/2)). Best-fit and worst-fit always scan all holes.
@@ -1009,9 +1009,9 @@ Allocation sequence: A(200), B(150), C(100), free A, D(80), free C, E(300)
 | Edge Case | Impact |
 |-----------|--------|
 | **Allocation size = 0** | Should return error or NULL; wastes no memory but must be handled |
-| **Allocation larger than any hole** | All four algorithms fail — must compact, swap, or wait |
-| **Exactly matching hole** | Perfect fit — no remaining fragment; hole is removed from free list |
-| **Adjacent holes on free** | Must merge — otherwise fragmentation worsens over time |
+| **Allocation larger than any hole** | All four algorithms fail â€” must compact, swap, or wait |
+| **Exactly matching hole** | Perfect fit â€” no remaining fragment; hole is removed from free list |
+| **Adjacent holes on free** | Must merge â€” otherwise fragmentation worsens over time |
 | **Free entire memory at once** | After merging, list reverts to single hole of total size |
 | **Request exactly at top/bottom** | Works normally; boundary checking needed |
 | **Multiple allocations same size** | Best-fit degenerates to first-fit if searching from same point |
@@ -1030,10 +1030,10 @@ Total free memory exists but is broken into small, non-contiguous chunks. No sin
 
 ```
 Memory Layout with External Fragmentation:
-┌──────┬──────┬──────┬──────┬──────┬──────┬──────┬──────┐
-│  P1  │ Free │  P2  │ Free │  P3  │ Free │  P4  │ Free │
-│ 100M │  10M │ 200M │  5M  │ 150M │  8M  │ 180M │ 12M  │
-└──────┴──────┴──────┴──────┴──────┴──────┴──────┴──────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”
+â”‚  P1  â”‚ Free â”‚  P2  â”‚ Free â”‚  P3  â”‚ Free â”‚  P4  â”‚ Free â”‚
+â”‚ 100M â”‚  10M â”‚ 200M â”‚  5M  â”‚ 150M â”‚  8M  â”‚ 180M â”‚ 12M  â”‚
+â””â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜
 Total free: 35 MB but largest hole is 12 MB.
 A process needing 20 MB cannot be loaded.
 ```
@@ -1041,8 +1041,8 @@ A process needing 20 MB cannot be loaded.
 **Causes:** Variable-sized allocations and deallocations over time create a checkerboard pattern.
 
 **Solutions:**
-1. **Compaction:** Move allocated processes to one end of memory → coalesce all free space.
-2. **Paging:** Use fixed-size pages → no external fragmentation.
+1. **Compaction:** Move allocated processes to one end of memory â†’ coalesce all free space.
+2. **Paging:** Use fixed-size pages â†’ no external fragmentation.
 3. **Segregation:** Use separate pools for different size classes (buddy system, slab allocator).
 
 #### Internal Fragmentation
@@ -1050,10 +1050,10 @@ A process needing 20 MB cannot be loaded.
 Allocated memory block is larger than the process requested; the excess inside the block is wasted.
 
 ```
-Process needs 18 KB → allocated 20 KB (fixed partition of 20 KB)
-┌──────────────────────────────┐
-│  18 KB used    │ 2 KB waste  │  ← Internal fragmentation (inside block)
-└──────────────────────────────┘
+Process needs 18 KB â†’ allocated 20 KB (fixed partition of 20 KB)
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚  18 KB used    â”‚ 2 KB waste  â”‚  â† Internal fragmentation (inside block)
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 **Causes:** Fixed-size partitions, page-aligned allocation, rounding up to alignment boundaries.
@@ -1089,21 +1089,21 @@ Compaction rearranges memory to merge all free holes into a single large block.
 
 ```
 Before Compaction:
-┌──────┬──────┬──────┬──────┬──────┐
-│  P1  │ Free │  P2  │ Free │  P3  │
-│  80M │  20M │ 150M │  30M │ 100M │
-└──────┴──────┴──────┴──────┴──────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”
+â”‚  P1  â”‚ Free â”‚  P2  â”‚ Free â”‚  P3  â”‚
+â”‚  80M â”‚  20M â”‚ 150M â”‚  30M â”‚ 100M â”‚
+â””â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜
 Total: 380 MB used, 50 MB free (fragmented)
 
 After Compaction:
-┌──────────────────────┬──────────────┐
-│  P1  │  P2  │  P3    │   Free       │
-│ 80M  │ 150M │ 100M   │   50 MB      │
-└──────────────────────┴──────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚  P1  â”‚  P2  â”‚  P3    â”‚   Free       â”‚
+â”‚ 80M  â”‚ 150M â”‚ 100M   â”‚   50 MB      â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 Total: 330 MB used, 50 MB free (contiguous)
 ```
 
-**Cost:** Compaction is expensive — O(n) where n is number of allocated processes. Every process must be relocated, which means updating all pointers. Only works if processes support dynamic binding (runtime relocation via MMU).
+**Cost:** Compaction is expensive â€” O(n) where n is number of allocated processes. Every process must be relocated, which means updating all pointers. Only works if processes support dynamic binding (runtime relocation via MMU).
 
 #### Real-World Analogy: Hard Drive Files
 
@@ -1116,29 +1116,29 @@ Total: 330 MB used, 50 MB free (contiguous)
 ### Paging
 
 
-**Paging** solves the external fragmentation problem by dividing both logical and physical memory into fixed-size blocks. Paging is **invisible to the programmer** — it's entirely handled by the MMU.
+**Paging** solves the external fragmentation problem by dividing both logical and physical memory into fixed-size blocks. Paging is **invisible to the programmer** â€” it's entirely handled by the MMU.
 
 #### Core Concepts
 
 - **Page**: Fixed-size block of logical memory (typically 4 KB).
-- **Frame**: Fixed-size block of physical memory — exactly the same size as a page.
+- **Frame**: Fixed-size block of physical memory â€” exactly the same size as a page.
 - **Page Table**: Per-process data structure mapping page numbers to frame numbers.
 
 ```
 Logical Memory (Process A):         Physical Memory:
-┌───────────────┐                   ┌───────────────┐
-│ Page 0        │────┐              │ Frame 0       │
-├───────────────┤    │              ├───────────────┤
-│ Page 1        │    ├─────────────→│ Frame 8       │  ← Page 0 of A
-├───────────────┤    │              ├───────────────┤
-│ Page 2        │    │              │ Frame 9       │  ← Page 3 of B
-├───────────────┤    │              ├───────────────┤
-│ Page 3        │───→│              │ Frame 12      │  ← Page 2 of A
-└───────────────┘    │              ├───────────────┤
-                     │              │ Frame 3       │  ← Page 1 of A
-                     │              ├───────────────┤
-                     └────────────→ │ ...           │
-                                    └───────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”                   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ Page 0        â”‚â”€â”€â”€â”€â”              â”‚ Frame 0       â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤    â”‚              â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚ Page 1        â”‚    â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â†’â”‚ Frame 8       â”‚  â† Page 0 of A
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤    â”‚              â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚ Page 2        â”‚    â”‚              â”‚ Frame 9       â”‚  â† Page 3 of B
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤    â”‚              â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚ Page 3        â”‚â”€â”€â”€â†’â”‚              â”‚ Frame 12      â”‚  â† Page 2 of A
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â”‚              â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+                     â”‚              â”‚ Frame 3       â”‚  â† Page 1 of A
+                     â”‚              â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+                     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â†’ â”‚ ...           â”‚
+                                    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 #### Step-by-Step: How Address Translation Works in Paging
@@ -1147,11 +1147,11 @@ Logical Memory (Process A):         Physical Memory:
 Given: 32-bit logical address, 4 KB page size (2^12 bytes)
 
 LOGICAL ADDRESS FORMAT:
-┌──────────────────────┬──────────────────────┐
-│   Page Number (p)    │   Offset (d)         │
-│    20 bits           │   12 bits            │
-│    bits 31-12        │   bits 11-0          │
-└──────────────────────┴──────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚   Page Number (p)    â”‚   Offset (d)         â”‚
+â”‚    20 bits           â”‚   12 bits            â”‚
+â”‚    bits 31-12        â”‚   bits 11-0          â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
 Step 1: CPU issues LOAD from address 0x2A5C
 
@@ -1171,7 +1171,7 @@ Step 4: Construct physical address
 Step 5: Memory controller reads physical address 0xCA5C
 ```
 
-#### Full Dry Run: Logical Address → Physical Address
+#### Full Dry Run: Logical Address â†’ Physical Address
 
 **Setup:**
 - Page size = 4 KB (2^12), offset = 12 bits
@@ -1190,10 +1190,10 @@ Step 5: Memory controller reads physical address 0xCA5C
 | 1 | Logical address | 0000 0000 0000 0000 0010 1010 0101 1100 | 0x00002A5C |
 | 2 | Extract page (bits 31-12) | 0000 0000 0000 0000 0010 | 0x2 |
 | 3 | Extract offset (bits 11-0) | 1010 0101 1100 | 0xA5C |
-| 4 | Lookup page 2 in PT | Frame = 12 = 0xC | — |
+| 4 | Lookup page 2 in PT | Frame = 12 = 0xC | â€” |
 | 5 | Shift frame: 0xC &lt;< 12 | 0000 0000 0000 1100 0000 0000 0000 0000 | 0x000C000 |
 | 6 | OR with offset | 0000 0000 0000 1100 1010 0101 1100 | 0x000CA5C |
-| 7 | Physical address | — | **0xCA5C** |
+| 7 | Physical address | â€” | **0xCA5C** |
 
 **Translate logical address 0x35A0 (page 3, which is invalid):**
 
@@ -1202,8 +1202,8 @@ Step 5: Memory controller reads physical address 0xCA5C
 | 1 | Logical address | 0x000035A0 |
 | 2 | Page number | 0x35A0 >> 12 = 0x3 |
 | 3 | Offset | 0x35A0 & 0xFFF = 0x5A0 |
-| 4 | Page table[3].valid = false | **PAGE FAULT → trap to OS** |
-| 5 | OS checks: page on disk? | If yes → load from swap. If not → segfault. |
+| 4 | Page table[3].valid = false | **PAGE FAULT â†’ trap to OS** |
+| 5 | OS checks: page on disk? | If yes â†’ load from swap. If not â†’ segfault. |
 
 #### Page Table Entry (PTE) Structure
 
@@ -1211,10 +1211,10 @@ A page table entry contains more than just the frame number. Typical 32-bit PTE:
 
 ```
 31      12|11|10|9|8|7|6|5|4|3|2|1|0
-┌─────────┬─┬─┬─┬─┬─┬─┬─┬─┬─┬─┬─┬─┬─┐
-│ Frame Address (20) │G│S│0│A│D│A│C│W│U│R│P│
-│                     │ │ │ │ │ │ │ │ │ │ │ │
-└─────────────────────┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”¬â”€â”¬â”€â”¬â”€â”¬â”€â”¬â”€â”¬â”€â”¬â”€â”¬â”€â”¬â”€â”¬â”€â”¬â”€â”¬â”€â”
+â”‚ Frame Address (20) â”‚Gâ”‚Sâ”‚0â”‚Aâ”‚Dâ”‚Aâ”‚Câ”‚Wâ”‚Uâ”‚Râ”‚Pâ”‚
+â”‚                     â”‚ â”‚ â”‚ â”‚ â”‚ â”‚ â”‚ â”‚ â”‚ â”‚ â”‚ â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”´â”€â”´â”€â”´â”€â”´â”€â”´â”€â”´â”€â”´â”€â”´â”€â”´â”€â”´â”€â”˜
 ```
 
 | Bit | Name | Purpose |
@@ -1229,7 +1229,7 @@ A page table entry contains more than just the frame number. Typical 32-bit PTE:
 | 7 | PAT | Page attribute table index |
 | 8 | G | Global page (don't flush from TLB) |
 | 9-11 | Available | OS can use these bits |
-| 12-31 | Frame Address | Physical frame number (20 bits → 1M frames × 4 KB = 4 GB) |
+| 12-31 | Frame Address | Physical frame number (20 bits â†’ 1M frames Ã— 4 KB = 4 GB) |
 
 #### Page Table Structures
 
@@ -1238,8 +1238,8 @@ A page table entry contains more than just the frame number. Typical 32-bit PTE:
 Simplest form: one array of PTEs per process.
 
 ```
-32-bit address, 4 KB pages → 2^20 = 1,048,576 entries
-Each entry: 4 bytes → page table size = 4 MB per process
+32-bit address, 4 KB pages â†’ 2^20 = 1,048,576 entries
+Each entry: 4 bytes â†’ page table size = 4 MB per process
 ```
 
 **Problem:** 4 MB per process. For 100 processes = 400 MB just for page tables.
@@ -1252,27 +1252,27 @@ Breaks the page table into multiple levels. Only populated levels are allocated.
 
 ```
 Logical Address:
-┌───────────────────┬───────────────────┬──────────────────────┐
-│  p1 (10 bits)     │  p2 (10 bits)     │  offset (12 bits)    │
-│  Index outer PT   │  Index inner PT   │  Page offset         │
-│  0-1023            │  0-1023           │  0-4095              │
-└───────────────────┴───────────────────┴──────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚  p1 (10 bits)     â”‚  p2 (10 bits)     â”‚  offset (12 bits)    â”‚
+â”‚  Index outer PT   â”‚  Index inner PT   â”‚  Page offset         â”‚
+â”‚  0-1023            â”‚  0-1023           â”‚  0-4095              â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
 Translation:
-    PT1[p1] → points to a PT2 page
-    PT2[p2] → contains the frame number
+    PT1[p1] â†’ points to a PT2 page
+    PT2[p2] â†’ contains the frame number
     Physical = (frame << 12) | offset
 ```
 
-**Memory savings:** Outer page table = 1024 entries × 4 bytes = 4 KB. Inner tables allocated only for used page ranges. A process using 8 MB of memory (2048 pages) needs 2 inner tables = 8 KB + 4 KB = 12 KB total, vs 4 MB for single-level.
+**Memory savings:** Outer page table = 1024 entries Ã— 4 bytes = 4 KB. Inner tables allocated only for used page ranges. A process using 8 MB of memory (2048 pages) needs 2 inner tables = 8 KB + 4 KB = 12 KB total, vs 4 MB for single-level.
 
 **Four-Level Page Table (x86-64, 48-bit):**
 
 ```
 Logical Address (48-bit, 4 KB pages):
-┌──────┬──────┬──────┬──────┬──────────────┐
-│ p1(9)│ p2(9)│ p3(9)│ p4(9)│ offset (12) │
-└──────┴──────┴──────┴──────┴──────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ p1(9)â”‚ p2(9)â”‚ p3(9)â”‚ p4(9)â”‚ offset (12) â”‚
+â””â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
 Each level: 512 entries (9 bits), each entry 8 bytes = 4 KB table
 ```
@@ -1290,14 +1290,14 @@ Step 1: Extract indices
     offset = 0x7F3A4B2C1000 & 0xFFF = 0x000
 
 Step 2: Walk
-    CR3 → PML4 table base (physical): 0x1A00000
-    PML4[p1=510] = 0x1B00067 → next table at 0x1B00000
+    CR3 â†’ PML4 table base (physical): 0x1A00000
+    PML4[p1=510] = 0x1B00067 â†’ next table at 0x1B00000
 
-    Page Directory Pointer Table[p2=464] = 0x1C00067 → next at 0x1C00000
+    Page Directory Pointer Table[p2=464] = 0x1C00067 â†’ next at 0x1C00000
 
-    Page Directory[p3=217] = 0x1D00067 → next at 0x1D00000
+    Page Directory[p3=217] = 0x1D00067 â†’ next at 0x1D00000
 
-    Page Table[p4=193] = 0x00000000_1E000067 → frame = 0x1E00000
+    Page Table[p4=193] = 0x00000000_1E000067 â†’ frame = 0x1E00000
 
 Step 3: Physical address = 0x1E00000 << 12 | 0x000 = 0x1E00000000
 ```
@@ -1307,13 +1307,13 @@ Step 3: Physical address = 0x1E00000 << 12 | 0x000 = 0x1E00000000
 For address spaces larger than 32 bits. The virtual page number is hashed, and the hash chain is searched.
 
 ```
-Virtual Page Number → Hash Function → Hash Table
-                                        │
-                                   ┌────┴────┐
-                                   │ Linked  │
-                                   │  List   │
-                                   │ (chain) │
-                                   └─────────┘
+Virtual Page Number â†’ Hash Function â†’ Hash Table
+                                        â”‚
+                                   â”Œâ”€â”€â”€â”€â”´â”€â”€â”€â”€â”
+                                   â”‚ Linked  â”‚
+                                   â”‚  List   â”‚
+                                   â”‚ (chain) â”‚
+                                   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
                                    Compare: (PID, VPN) match?
 ```
 
@@ -1325,13 +1325,13 @@ Instead of one entry per page (per process), there is **one entry per physical f
 
 ```
 Physical Frames:
-┌────────────┬────────────┬────────────┬────────────┬────────────┐
-│ Frame 0    │ Frame 1    │ Frame 2    │ Frame 3    │ Frame 4    │
-│ (PID1,Pg3) │ (PID2,Pg0) │ (PID1,Pg7) │ (Free)     │ (PID3,Pg2) │
-└────────────┴────────────┴────────────┴────────────┴────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ Frame 0    â”‚ Frame 1    â”‚ Frame 2    â”‚ Frame 3    â”‚ Frame 4    â”‚
+â”‚ (PID1,Pg3) â”‚ (PID2,Pg0) â”‚ (PID1,Pg7) â”‚ (Free)     â”‚ (PID3,Pg2) â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
-**Size:** 4 GB RAM / 4 KB pages = 1,048,576 entries — much smaller than per-process page tables.
+**Size:** 4 GB RAM / 4 KB pages = 1,048,576 entries â€” much smaller than per-process page tables.
 
 **Problem:** Translation requires searching the entire table. Solution: hash the (PID, VPN) pair to index directly.
 
@@ -1340,7 +1340,7 @@ Physical Frames:
 > - **Pages** = Individual book pages (fixed size)
 > - **Frames** = Slots on the bookshelf (same size as pages)
 > - **Page table** = The library catalog: "Moby-Dick, Chapter 3 is on Shelf 4, Shelf 5 and Shelf 12." (Not contiguous!)
-> - **TLB** = Your mental map of where the last 16 books you read are — you don't check the catalog for those.
+> - **TLB** = Your mental map of where the last 16 books you read are â€” you don't check the catalog for those.
 > - **Multi-level page table** = Catalog in sections: "Literature section starts at Row 5, American authors start at Shelf 3..."
 > - **Inverted page table** = Labels on each shelf slot saying which book and chapter is there.
 
@@ -1361,7 +1361,7 @@ private:
     static constexpr uint32_t PAGE_MASK = 0xFFF;
     static constexpr uint32_t NUM_FRAMES = 256;
 
-    std::vector<uint32_t> page_table; // page → frame mapping
+    std::vector<uint32_t> page_table; // page â†’ frame mapping
     std::vector<bool> frame_free;
     uint32_t page_faults;
     uint32_t total_accesses;
@@ -1440,9 +1440,9 @@ int main() {
                   << " Page: 0x" << result.page_number
                   << " Offset: 0x" << result.offset << std::dec;
         if (result.page_fault) {
-            std::cout << " → PAGE FAULT\n";
+            std::cout << " â†’ PAGE FAULT\n";
         } else {
-            std::cout << " → Physical: 0x" << std::hex << result.physical_address << std::dec << "\n";
+            std::cout << " â†’ Physical: 0x" << std::hex << result.physical_address << std::dec << "\n";
         }
     }
 
@@ -1521,10 +1521,10 @@ class PagingWithTLB:
         # Check TLB first
         frame = self.tlb.lookup(page_number)
         if frame is None:
-            # TLB miss → check page table
+            # TLB miss â†’ check page table
             frame = self.page_table.lookup(page_number)
             if frame is None:
-                # Page fault → allocate frame
+                # Page fault â†’ allocate frame
                 frame = self._alloc_frame(page_number)
             self.tlb.insert(page_number, frame)
 
@@ -1543,7 +1543,7 @@ def simulate_workload(tlb_size: int, num_accesses: int = 10000) -> PagingWithTLB
     rng = random.Random(42)
 
     for _ in range(num_accesses):
-        # 80% local access, 20% random → working set pattern
+        # 80% local access, 20% random â†’ working set pattern
         if rng.random() < 0.8:
             addr = rng.randint(0, 100) << 12
         else:
@@ -1563,11 +1563,11 @@ if __name__ == "__main__":
 #### Effective Access Time (EAT) Formula
 
 ```
-EAT = TLB_hit_ratio × (TLB_access_time + memory_access_time)
-    + TLB_miss_ratio × (TLB_access_time + page_table_walk_time + memory_access_time)
+EAT = TLB_hit_ratio Ã— (TLB_access_time + memory_access_time)
+    + TLB_miss_ratio Ã— (TLB_access_time + page_table_walk_time + memory_access_time)
 
 Where:
-  page_table_walk_time = depth × memory_access_time
+  page_table_walk_time = depth Ã— memory_access_time
   (depth = number of levels in the page table)
 ```
 
@@ -1577,27 +1577,27 @@ Where:
 - TLB access: 1 ns
 - Memory access: 100 ns
 - TLB hit ratio: 99%
-- 4-level page table (walk = 4 × 100 ns = 400 ns on miss)
+- 4-level page table (walk = 4 Ã— 100 ns = 400 ns on miss)
 
 ```
-EAT = 0.99 × (1 + 100) + 0.01 × (1 + 400 + 100)
-    = 0.99 × 101   + 0.01 × 501
+EAT = 0.99 Ã— (1 + 100) + 0.01 Ã— (1 + 400 + 100)
+    = 0.99 Ã— 101   + 0.01 Ã— 501
     = 99.99        + 5.01
     = 105.0 ns
 
 Without TLB: 400 ns (walk) + 100 ns (access) = 500 ns per access!
-With TLB (99%): 105 ns → ~4.8× improvement
+With TLB (99%): 105 ns â†’ ~4.8Ã— improvement
 ```
 
 ##### Impact of TLB Hit Rate
 
 | Hit Rate | EAT (1-level) | EAT (4-level) | vs Without TLB |
 |----------|--------------|--------------|---------------|
-| 90% | 111 ns | 151 ns | 3.3× slower |
-| 95% | 106 ns | 126 ns | 4.0× slower |
-| 98% | 103 ns | 109 ns | 4.6× slower |
-| 99% | 102 ns | 105 ns | 4.8× faster |
-| 99.9% | 100.1 ns | 100.5 ns | 5.0× faster |
+| 90% | 111 ns | 151 ns | 3.3Ã— slower |
+| 95% | 106 ns | 126 ns | 4.0Ã— slower |
+| 98% | 103 ns | 109 ns | 4.6Ã— slower |
+| 99% | 102 ns | 105 ns | 4.8Ã— faster |
+| 99.9% | 100.1 ns | 100.5 ns | 5.0Ã— faster |
 
 #### Hierarchical Page Table Implementation
 
@@ -1617,7 +1617,7 @@ private:
 
     struct InnerTable {
         std::vector<uint32_t> entries;
-        InnerTable() : entries(1024, 0) {} // 1024 entries → preset=false
+        InnerTable() : entries(1024, 0) {} // 1024 entries â†’ preset=false
     };
 
     std::vector<InnerTable*> outer_table;
@@ -1670,7 +1670,7 @@ public:
 int main() {
     TwoLevelPageTable pt;
 
-    // Map logical 0x00002A5C → frame 12
+    // Map logical 0x00002A5C â†’ frame 12
     pt.map(0x00002A5C, 12);
 
     bool ok;
@@ -1694,9 +1694,9 @@ int main() {
 | **TLB lookup** | O(1) | Hardware associative cache (CAM) |
 | **TLB miss handling (hardware)** | O(depth) | Hardware walks page table, fills TLB |
 | **TLB miss handling (software)** | O(depth + trap) | Trap to OS, fills TLB, return |
-| **Page table size (single-level)** | O(VPN_range) | 2^entries — grows with address space, not usage |
-| **Page table size (hierarchical)** | O(used_pages × depth) | Only allocate inner tables for used ranges |
-| **Inverted page table** | O(physical_frames) | 1 entry per frame — far smaller for large address spaces |
+| **Page table size (single-level)** | O(VPN_range) | 2^entries â€” grows with address space, not usage |
+| **Page table size (hierarchical)** | O(used_pages Ã— depth) | Only allocate inner tables for used ranges |
+| **Inverted page table** | O(physical_frames) | 1 entry per frame â€” far smaller for large address spaces |
 
 #### Advantages & Disadvantages
 
@@ -1716,8 +1716,8 @@ int main() {
 | **Page table self-reference** | Used by OS to access page tables; one recursive entry maps the PT itself |
 | **Huge pages (2 MB, 1 GB)** | Single PTE maps large range; reduces TLB pressure but increases internal fragmentation |
 | **Non-contiguous page table allocation** | Multi-level PT naturally handles this; inner tables allocated on demand |
-| **Page table overflow (32-bit)** | Single-level PT for 32-bit = 4 MB — fits in contiguous physical memory but wastes space |
-| **64-bit with single-level PT** | Impossible — 2^52 entries would be 32 PB of page table |
+| **Page table overflow (32-bit)** | Single-level PT for 32-bit = 4 MB â€” fits in contiguous physical memory but wastes space |
+| **64-bit with single-level PT** | Impossible â€” 2^52 entries would be 32 PB of page table |
 | **Copy-on-write (fork)** | Page tables marked read-only; actual frame duplicated only on write |
 | **NUMA memory** | Page tables must be local to the accessing core for performance |
 | **PCIe MMIO** | Physical address range mapped to devices, not RAM; marked uncacheable |
@@ -1735,25 +1735,25 @@ Each segment has a **base** (starting physical address) and a **limit** (size). 
 
 ```
 Logical Address:
-┌──────────────────┬────────────────────────┐
-│ Segment Number   │   Offset within Segment │
-│     s            │        d                │
-└──────────────────┴────────────────────────┘
-        │
-        ▼
-┌────────────────────────────────────────────┐
-│            Segment Table                    │
-├──────┬──────────┬──────────┬────────────────┤
-│ Seg# │  Base    │  Limit   │  Protection   │
-├──────┼──────────┼──────────┼────────────────┤
-│  0   │ 0x400000 │ 0x010000 │   R-X (Code)  │
-│  1   │ 0x500000 │ 0x020000 │   RW- (Data)  │
-│  2   │ 0x700000 │ 0x100000 │   RW- (Heap)  │
-│  3   │ 0xFFFF000│ 0x001000 │   RW- (Stack) │
-│  4   │ 0x600000 │ 0x005000 │   R-- (Const) │
-└──────┴──────────┴──────────┴────────────────┘
-        │
-        ▼
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ Segment Number   â”‚   Offset within Segment â”‚
+â”‚     s            â”‚        d                â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+        â”‚
+        â–¼
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚            Segment Table                    â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚ Seg# â”‚  Base    â”‚  Limit   â”‚  Protection   â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚  0   â”‚ 0x400000 â”‚ 0x010000 â”‚   R-X (Code)  â”‚
+â”‚  1   â”‚ 0x500000 â”‚ 0x020000 â”‚   RW- (Data)  â”‚
+â”‚  2   â”‚ 0x700000 â”‚ 0x100000 â”‚   RW- (Heap)  â”‚
+â”‚  3   â”‚ 0xFFFF000â”‚ 0x001000 â”‚   RW- (Stack) â”‚
+â”‚  4   â”‚ 0x600000 â”‚ 0x005000 â”‚   R-- (Const) â”‚
+â””â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+        â”‚
+        â–¼
 Physical Address = Base + Offset
   (if offset < Limit, else segmentation fault)
 ```
@@ -1773,7 +1773,7 @@ Physical Address = Base + Offset
 |------|-----------|-------|
 | 1 | Extract segment | 1 |
 | 2 | Extract offset | 0x1234 |
-| 3 | Check: offset ≤ Limit? | 0x1234 &lt; 0x20000 ✓ |
+| 3 | Check: offset â‰¤ Limit? | 0x1234 &lt; 0x20000 âœ“ |
 | 4 | Physical = Base + Offset | 0x500000 + 0x1234 = **0x501234** |
 
 **Translate logical address (Seg=2, Offset=0x2000):**
@@ -1782,16 +1782,16 @@ Physical Address = Base + Offset
 |------|-----------|-------|
 | 1 | Extract segment | 2 |
 | 2 | Extract offset | 0x2000 |
-| 3 | Check: offset ≤ Limit? | 0x2000 > 0x1000 ✗ |
-| 4 | Result | **Segmentation fault — offset beyond limit** |
+| 3 | Check: offset â‰¤ Limit? | 0x2000 > 0x1000 âœ— |
+| 4 | Result | **Segmentation fault â€” offset beyond limit** |
 
 #### Real-World Analogy: Office Building
 
 > - **Segments** are like different zones in an office building:
->   - Segment 0 = Lobby (code) — you enter here
->   - Segment 1 = Filing room (data) — storage area
->   - Segment 2 = Conference room (stack) — temporary workspace
->   - Segment 3 = Parking garage (heap) — variable sized
+>   - Segment 0 = Lobby (code) â€” you enter here
+>   - Segment 1 = Filing room (data) â€” storage area
+>   - Segment 2 = Conference room (stack) â€” temporary workspace
+>   - Segment 3 = Parking garage (heap) â€” variable sized
 > - Each zone has a maximum capacity (limit).
 > - The segment table is the building directory: "Filing room is in the east wing, room 101-250."
 
@@ -1874,12 +1874,12 @@ int main() {
     sim.dump_table();
 
     auto r1 = sim.translate(1, 0x1234);
-    std::cout << "Seg 1, Off 0x1234 → 0x" << std::hex
+    std::cout << "Seg 1, Off 0x1234 â†’ 0x" << std::hex
               << r1.physical << std::dec
               << " (" << r1.reason << ")\n";
 
     auto r2 = sim.translate(2, 0x2000);
-    std::cout << "Seg 2, Off 0x2000 → "
+    std::cout << "Seg 2, Off 0x2000 â†’ "
               << (r2.ok ? "0x" + std::to_string(r2.physical) : r2.reason) << "\n";
 
     return 0;
@@ -1894,40 +1894,40 @@ int main() {
 Modern CPUs combine both schemes: **segmentation** provides logical organization, and **paging** manages physical memory. The CPU first translates the logical address through segmentation to get a **linear address**, then translates that through paging to get the **physical address**.
 
 ```
-Logical Address → [Segmentation Unit] → Linear Address → [Paging Unit] → Physical Address
+Logical Address â†’ [Segmentation Unit] â†’ Linear Address â†’ [Paging Unit] â†’ Physical Address
 ```
 
 #### x86 Protected Mode Translation
 
 ```
 Logical Address (48-bit far pointer):
-┌──────────────────┬────────────────────────────┐
-│ Segment Selector │       Offset (32-bit)      │
-│    16 bits       │                            │
-└──────────────────┴────────────────────────────┘
-        │
-        ▼
-┌──────────────────────┐
-│  Segment Descriptor  │
-│  (Global/Local DT)   │
-├──────────────────────┤
-│ Base = 0x00000000    │  ← In flat model, base = 0
-│ Limit = 0xFFFFFFFF   │  ← Limit = 4 GB
-│ G-bit = 1            │  ← Granularity: 4 KB units
-│ DPL = 0              │  ← Privilege level
-└──────────────────────┘
-        │
-        ▼
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ Segment Selector â”‚       Offset (32-bit)      â”‚
+â”‚    16 bits       â”‚                            â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+        â”‚
+        â–¼
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚  Segment Descriptor  â”‚
+â”‚  (Global/Local DT)   â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚ Base = 0x00000000    â”‚  â† In flat model, base = 0
+â”‚ Limit = 0xFFFFFFFF   â”‚  â† Limit = 4 GB
+â”‚ G-bit = 1            â”‚  â† Granularity: 4 KB units
+â”‚ DPL = 0              â”‚  â† Privilege level
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+        â”‚
+        â–¼
 Linear Address = Segment.Base + Offset = 0 + Offset = Offset (in flat mode)
-        │
-        ▼
-┌──────────────────────┐
-│   Page Translation   │
-│   (2-level for 32-bit│
-│   4-level for 64-bit)│
-└──────────────────────┘
-        │
-        ▼
+        â”‚
+        â–¼
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚   Page Translation   â”‚
+â”‚   (2-level for 32-bitâ”‚
+â”‚   4-level for 64-bit)â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+        â”‚
+        â–¼
 Physical Address (sent to memory bus)
 ```
 
@@ -1937,7 +1937,7 @@ Linux sets up all four segments (kernel code, kernel data, user code, user data)
 - **Base = 0x00000000**
 - **Limit = 0xFFFFFFFF** (4 GB for 32-bit) or 0xFFFFFFFFFF... (for 64-bit)
 
-This effectively **disables segmentation** — the logical address IS the linear address. All memory protection is handled by the paging unit.
+This effectively **disables segmentation** â€” the logical address IS the linear address. All memory protection is handled by the paging unit.
 
 **Why does Linux do this?**
 1. **Portability:** Most RISC architectures (ARM, RISC-V) don't support segmentation at all.
@@ -1963,7 +1963,7 @@ Linux uses:
 > - **Segments** = Labeled crates (Kitchen Stuff, Bedroom Stuff). Matches how you think about your belongings.
 > - **Pages** = Standard-sized boxes that the moving company requires. You repack your crates into boxes.
 > - **Segmentation + Paging** = The crates exist logically, but inside they're packed into uniform boxes for efficient stacking on the truck.
-> - **Flat model** = The moving company just stacks boxes directly — the crates are "virtual labels" where every crate has the same size.
+> - **Flat model** = The moving company just stacks boxes directly â€” the crates are "virtual labels" where every crate has the same size.
 
 ---
 
@@ -1976,10 +1976,10 @@ A process can be **swapped** temporarily out of memory to a **backing store** (s
 
 ```
 1. OS selects victim process
-2. Write entire process image → swap partition
+2. Write entire process image â†’ swap partition
 3. Update PCB: mark as swapped
 4. Free the process's memory
-5. When needed: read back from swap → find new memory location → reload
+5. When needed: read back from swap â†’ find new memory location â†’ reload
 ```
 
 **Problem:** Swapping entire processes is slow (gigabytes of I/O). Rarely used in modern systems.
@@ -2009,17 +2009,17 @@ Only individual pages are swapped, not entire processes. This is the foundation 
 
 ### TLB Reach
 
-**TLB Reach** = Number of TLB entries × Page size.
+**TLB Reach** = Number of TLB entries Ã— Page size.
 
 ```
 With 64 TLB entries and 4 KB pages:
-  TLB reach = 64 × 4 KB = 256 KB
+  TLB reach = 64 Ã— 4 KB = 256 KB
 
 With 64 TLB entries and 2 MB huge pages:
-  TLB reach = 64 × 2 MB = 128 MB
+  TLB reach = 64 Ã— 2 MB = 128 MB
 
 With 64 TLB entries and 1 GB huge pages:
-  TLB reach = 64 × 1 GB = 64 GB
+  TLB reach = 64 Ã— 1 GB = 64 GB
 ```
 
 **Problem:** Modern applications have working sets much larger than 256 KB. A database processing 1 GB of data will experience heavy TLB thrashing with 4 KB pages.
@@ -2049,15 +2049,15 @@ On context switch, the TLB must be flushed unless it supports **address space id
 
 | Approach | Mechanism | Overhead |
 |----------|-----------|----------|
-| **Full TLB flush** | Invalidate all entries | High — repopulate on next accesses |
-| **Global pages** | Mark OS/kernel pages as global (bit 8 in PTE) | Medium — kernel entries survive |
-| **ASIDs** | Tag each TLB entry with a process ID | Low — only flush on PID reuse |
+| **Full TLB flush** | Invalidate all entries | High â€” repopulate on next accesses |
+| **Global pages** | Mark OS/kernel pages as global (bit 8 in PTE) | Medium â€” kernel entries survive |
+| **ASIDs** | Tag each TLB entry with a process ID | Low â€” only flush on PID reuse |
 
 ### Thrashing
 
 **Thrashing** occurs when the system spends more time swapping pages in/out than executing. The OS detects thrashing via:
 - **CPU utilization drops** while page fault rate spikes.
-- **Working set model**: If total working set > physical memory → thrashing.
+- **Working set model**: If total working set > physical memory â†’ thrashing.
 
 **Solutions:**
 1. Reduce degree of multiprogramming.
@@ -2070,50 +2070,50 @@ On context switch, the TLB must be flushed unless it supports **address space id
 
 ### x86-64 Page Tables (Intel/AMD)
 
-- **4-level paging** (48-bit virtual address space): PML4 → PDPT → PD → PT
-- **5-level paging** (57-bit): Adds PML5 level — available on Ice Lake and later
+- **4-level paging** (48-bit virtual address space): PML4 â†’ PDPT â†’ PD â†’ PT
+- **5-level paging** (57-bit): Adds PML5 level â€” available on Ice Lake and later
 - Page size: 4 KB (default), 2 MB (via PS=1 in PD entry), 1 GB (via PS=1 in PDPT entry)
-- **PCID** (Process Context IDentifier): TLB entries tagged with PCID — no flush on context switch
+- **PCID** (Process Context IDentifier): TLB entries tagged with PCID â€” no flush on context switch
 - **INVPCID** instruction: Invalidate specific TLB entries by PCID
 
 ```
 x86-64 4-Level Page Table Walk (48-bit):
-┌─────────────────────────────────────────────────────────────┐
-│ CR3 → PML4 Table (4 KB, 512 entries × 8 bytes = 4 KB)      │
-│        │                                                     │
-│        └── PML4[Index1] → PDP Table (4 KB, 512 entries)     │
-│               │                                              │
-│               └── PDP[Index2] → PD Table (4 KB, 512 entries)│
-│                      │                                       │
-│                      └── PD[Index3] → PT Table (4 KB, 512)  │
-│                             │                                │
-│                             └── PT[Index4] → Frame           │
-└─────────────────────────────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ CR3 â†’ PML4 Table (4 KB, 512 entries Ã— 8 bytes = 4 KB)      â”‚
+â”‚        â”‚                                                     â”‚
+â”‚        â””â”€â”€ PML4[Index1] â†’ PDP Table (4 KB, 512 entries)     â”‚
+â”‚               â”‚                                              â”‚
+â”‚               â””â”€â”€ PDP[Index2] â†’ PD Table (4 KB, 512 entries)â”‚
+â”‚                      â”‚                                       â”‚
+â”‚                      â””â”€â”€ PD[Index3] â†’ PT Table (4 KB, 512)  â”‚
+â”‚                             â”‚                                â”‚
+â”‚                             â””â”€â”€ PT[Index4] â†’ Frame           â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### ARMv8-A Page Tables
 
 - Supports 4 KB, 16 KB, 64 KB pages
 - **2-4 level page tables** depending on granule size
-- **Stage 1 translation**: Virtual address → Intermediate physical address (IPA)
-- **Stage 2 translation**: IPA → Physical address (hypervisor stage)
+- **Stage 1 translation**: Virtual address â†’ Intermediate physical address (IPA)
+- **Stage 2 translation**: IPA â†’ Physical address (hypervisor stage)
 - **Two-stage translation** enables hardware-virtualized memory management
 - **Translation Granule**: 4 KB (most common), 16 KB, 64 KB
-- **TTBR0** (user) and **TTBR1** (kernel) — separate page table bases
+- **TTBR0** (user) and **TTBR1** (kernel) â€” separate page table bases
 
 ```
 ARMv8 4 KB granule, 4-level:
-┌──────────────────────────────────────────┐
-│ TTBR0/1 → Level 0 Table (4 KB)          │
-│             │                             │
-│             └─ L0[Index0] → Level 1      │
-│                    │                      │
-│                    └─ L1[Index1] → L2    │
-│                           │               │
-│                           └─ L2[I2] → L3 │
-│                                  │        │
-│                                  └─ Frame │
-└──────────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ TTBR0/1 â†’ Level 0 Table (4 KB)          â”‚
+â”‚             â”‚                             â”‚
+â”‚             â””â”€ L0[Index0] â†’ Level 1      â”‚
+â”‚                    â”‚                      â”‚
+â”‚                    â””â”€ L1[Index1] â†’ L2    â”‚
+â”‚                           â”‚               â”‚
+â”‚                           â””â”€ L2[I2] â†’ L3 â”‚
+â”‚                                  â”‚        â”‚
+â”‚                                  â””â”€ Frame â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### Linux Buddy Allocator
@@ -2129,7 +2129,7 @@ Order 4:  64 KB (16 pages)
 ...
 Order 10: 4 MB (1024 pages)
 
-Allocation: Round up request to next power of 2 → check free list.
+Allocation: Round up request to next power of 2 â†’ check free list.
   If no block at that order, take larger block, split into two "buddies".
   Give one buddy, put the other on the lower-order free list.
 
@@ -2138,16 +2138,16 @@ Free: Merge with buddy if free, promoting to higher order.
 
 **Example: Allocating 15 KB (need 16 KB block = order 2):**
 ```
-1. Request 15 KB → round up to 16 KB → check order-2 free list
+1. Request 15 KB â†’ round up to 16 KB â†’ check order-2 free list
 2. If order-2 empty, check order-3 (32 KB):
    - Split order-3 block into two order-2 buddies (A, B)
    - Return A to caller
    - Add B to order-2 free list
-3. On free: merge A with B if B is still free → restore order-3 block
+3. On free: merge A with B if B is still free â†’ restore order-3 block
 ```
 
 **Advantages:**
-- Fast allocation (no complex search — just check buddy list)
+- Fast allocation (no complex search â€” just check buddy list)
 - Simple coalescing (buddies always adjacent, easy to detect)
 - No external fragmentation within the allocator
 
@@ -2168,7 +2168,7 @@ Windows uses a **demand-paged** virtual memory system with:
 
 Given:
 - 32-bit logical address space
-- Page size = 4 KB (2¹² bytes)
+- Page size = 4 KB (2Â¹Â² bytes)
 - Page table:
 
 | Page | Frame | Valid |
@@ -2190,13 +2190,13 @@ Step 2: Page Number = Address >> 12
 Step 3: Offset = Address & 0xFFF
         0x00002A5C & 0xFFF = 0xA5C
 
-Step 4: Page Table[2] → Frame 12 = 0xC
+Step 4: Page Table[2] â†’ Frame 12 = 0xC
 
 Step 5: Physical = (Frame << 12) | Offset
         0xC << 12 = 0xC000
         0xC000 | 0xA5C = 0xCA5C
 
-Result: 0x2A5C → 0xCA5C
+Result: 0x2A5C â†’ 0xCA5C
 ```
 
 ### Example 2: Memory Allocation Simulation (Complete)
@@ -2328,7 +2328,7 @@ Levels = 4
 Each level index: (48 - 12) / 4 = 9 bits per level
 Entries per level: 2^9 = 512
 Each entry: 8 bytes
-Table size per level: 512 × 8 = 4 KB
+Table size per level: 512 Ã— 8 = 4 KB
 
 For 1 GB = 2^30 bytes:
   Pages needed = 2^30 / 2^12 = 2^18 = 262,144 pages
@@ -2344,16 +2344,16 @@ For 1 GB = 2^30 bytes:
   L1 (PML4): always 1
 
   Memory overhead:
-    PML4:  1 × 4 KB =   4 KB
-    L3:    1 × 4 KB =   4 KB
-    L2:    1 × 4 KB =   4 KB
-    L4:  512 × 4 KB = 2048 KB = 2 MB
+    PML4:  1 Ã— 4 KB =   4 KB
+    L3:    1 Ã— 4 KB =   4 KB
+    L2:    1 Ã— 4 KB =   4 KB
+    L4:  512 Ã— 4 KB = 2048 KB = 2 MB
 
   Total page table memory: ~2.016 MB for 1 GB of mapped memory.
-  Overhead ratio: 2.016 MB / 1024 MB ≈ 0.2%
+  Overhead ratio: 2.016 MB / 1024 MB â‰ˆ 0.2%
 
 Compare to single-level page table for 48-bit:
-  2^36 entries × 8 bytes = 2^39 bytes = 512 GB — impossible!
+  2^36 entries Ã— 8 bytes = 2^39 bytes = 512 GB â€” impossible!
 ```
 
 ---
@@ -2411,13 +2411,13 @@ class PagingSimulator {
     // Check page table
     const pte = this.pageTable.get(pageNumber);
     if (pte && pte.valid) {
-      // TLB miss but page is in memory — update TLB
+      // TLB miss but page is in memory â€” update TLB
       this.updateTLB(pageNumber, pte.frameNumber);
       pte.referenced = true;
       return { physicalAddress: pte.frameNumber * this.frameSize + offset, tlbHit: false, pageFault: false };
     }
 
-    // Page fault — allocate frame
+    // Page fault â€” allocate frame
     if (this.freeFrames.size === 0) {
       return { physicalAddress: -1, tlbHit: false, pageFault: true };
     }
@@ -2579,21 +2579,21 @@ console.log('After free:', alloc.printHoles());
 The Effective Access Time (EAT) formula captures TLB performance:
 
 ```
-EAT = Hit_Ratio × (TLB_Access + Memory_Access) + Miss_Ratio × (TLB_Access + Page_Walk + Memory_Access)
+EAT = Hit_Ratio Ã— (TLB_Access + Memory_Access) + Miss_Ratio Ã— (TLB_Access + Page_Walk + Memory_Access)
 ```
 
 **Example 1:** TLB hit rate = 98%, TLB access = 2 ns, memory access = 100 ns, page walk = 100 ns (single level)
 ```
-EAT = 0.98 × (2 + 100) + 0.02 × (2 + 100 + 100)
-    = 0.98 × 102 + 0.02 × 202
+EAT = 0.98 Ã— (2 + 100) + 0.02 Ã— (2 + 100 + 100)
+    = 0.98 Ã— 102 + 0.02 Ã— 202
     = 99.96 + 4.04
     = 104.0 ns 
 ```
 
 **Example 2:** Four-level page table (4 page walks = 400 ns)
 ```
-EAT = 0.98 × (2 + 100) + 0.02 × (2 + 400 + 100)
-    = 0.98 × 102 + 0.02 × 502
+EAT = 0.98 Ã— (2 + 100) + 0.02 Ã— (2 + 400 + 100)
+    = 0.98 Ã— 102 + 0.02 Ã— 502
     = 99.96 + 10.04
     = 110.0 ns
 ```
@@ -2670,13 +2670,13 @@ EAT = 0.98 × (2 + 100) + 0.02 × (2 + 400 + 100)
 | **Frame** | Fixed-size block of physical memory (same size as page) |
 | **Page Table** | Per-process data structure mapping page numbers to frame numbers |
 | **TLB** | Hardware cache for fast page table lookups (Translation Lookaside Buffer) |
-| **PTBR** | Page Table Base Register — points to the active page table |
+| **PTBR** | Page Table Base Register â€” points to the active page table |
 | **Paging** | Memory scheme using fixed-size pages to eliminate external fragmentation |
 | **Segmentation** | Memory scheme using variable-sized logical segments |
 | **External Fragmentation** | Free memory scattered in small holes between allocated blocks |
 | **Internal Fragmentation** | Wasted space inside an allocated block beyond requested size |
 | **Compaction** | Moving processes to consolidate free memory into one contiguous hole |
-| **EAT** | Effective Access Time = (HR × TLB_time) + (MR × (TLB_time + walk_time + mem_time)) |
+| **EAT** | Effective Access Time = (HR Ã— TLB_time) + (MR Ã— (TLB_time + walk_time + mem_time)) |
 
 ## Cross-Application Matrix
 
@@ -2741,13 +2741,13 @@ EAT = 0.98 × (2 + 100) + 0.02 × (2 + 400 + 100)
 ## Summary
 
 - Logical addresses are mapped to physical addresses by the MMU, enabling relocation and protection
-- Address binding occurs at compile time, load time, or execution time — modern OS use execution-time binding
+- Address binding occurs at compile time, load time, or execution time â€” modern OS use execution-time binding
 - Contiguous allocation suffers from external fragmentation; compaction can reclaim wasted space
 - Dynamic storage allocation: First-fit (fastest average), Best-fit (minimal waste per alloc), Worst-fit (leaves large holes), Next-fit (no front-bias)
 - Paging eliminates external fragmentation using fixed-size pages and frames; page tables map between them
 - Page table structures: single (simple but large), hierarchical (saves memory), hashed (for >32 bit), inverted (tiny but slow)
-- TLB caches recent page table lookups; TLB reach = entries × page size
-- Effective access time: EAT = HR × (TLB + mem) + MR × (TLB + walk + mem)
+- TLB caches recent page table lookups; TLB reach = entries Ã— page size
+- Effective access time: EAT = HR Ã— (TLB + mem) + MR Ã— (TLB + walk + mem)
 - Segmentation matches the programmer's view with variable-sized logical segments; combined with paging in modern x86
 - Linux uses flat segmentation (base=0, limit=max) and relies entirely on paging for protection
 
@@ -2780,7 +2780,7 @@ EAT = 0.98 × (2 + 100) + 0.02 × (2 + 400 + 100)
 2. b) Translating logical to physical addresses
 3. b) Wasted space between allocated blocks
 4. d) Next-fit
-5. 0.98 × (1 + 100) + 0.02 × (1 + 100 + 100) = 0.98 × 101 + 0.02 × 201 = 98.98 + 4.02 = 103.0 ns (answer: c)
+5. 0.98 Ã— (1 + 100) + 0.02 Ã— (1 + 100 + 100) = 0.98 Ã— 101 + 0.02 Ã— 201 = 98.98 + 4.02 = 103.0 ns (answer: c)
 6. b) 10 (32 - 12 = 20 bits for page number; split into 10 + 10)
 7. c) Frame
-8. b) 128 MB (64 × 2 MB = 128 MB)
+8. b) 128 MB (64 Ã— 2 MB = 128 MB)

@@ -1,4 +1,4 @@
-# Chapter 11: SOC Operations & Threat Hunting
+﻿# Chapter 11: SOC Operations & Threat Hunting
 
 > **Prereq:** Chapters 1-3 (Security Fundamentals, Cryptography, Network Security)
 > **Next:** Chapter 12 (Malware Analysis & Reverse Engineering)
@@ -20,16 +20,16 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/cyber-security/11-soc-threat-hunting/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/cyber-security/11-soc-threat-hunting/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/11-soc-threat-hunting/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/cyber-security/11-soc-threat-hunting/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/cyber-security/11-soc-threat-hunting/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/cyber-security/11-soc-threat-hunting/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/11-soc-threat-hunting/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/cyber-security/11-soc-threat-hunting/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/cyber-security/11-soc-threat-hunting/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/cyber-security/11-soc-threat-hunting/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/11-soc-threat-hunting/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/cyber-security/11-soc-threat-hunting/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -53,35 +53,35 @@ By the end of this chapter, you will be able to:
 
 ## 1. Security Operations Center (SOC) Architecture
 
-### 1.1 The SOC Model — People, Process, Technology
+### 1.1 The SOC Model â€” People, Process, Technology
 
 A SOC is a centralized team responsible for monitoring, detecting, analyzing, and responding to security incidents. It operates 24/7 in mature organizations and follows a tiered staffing model.
 
 **SOC Tier Model:**
 
 ```
-Tier 1 — Triage
-╔══════════════════════════════════╗
-║ Monitors alerts, filters noise   ║
-║ Validates incidents, escalates   ║
-║ Responds in < 15 min             ║
-╚══════════════════════════════════╝
-         │ escalates complex cases
-         ▼
-Tier 2 — Investigation
-╔══════════════════════════════════╗
-║ Deep analysis, containment       ║
-║ Forensic acquisition, malware    ║
-║ Tuning detection rules           ║
-╚══════════════════════════════════╝
-         │ escalates advanced threats
-         ▼
-Tier 3 — Advanced Threat
-╔══════════════════════════════════╗
-║ Reverse engineering, hunt ops    ║
-║ Custom tooling, adversary intel  ║
-║ Strategic recommendations        ║
-╚══════════════════════════════════╝
+Tier 1 â€” Triage
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘ Monitors alerts, filters noise   â•‘
+â•‘ Validates incidents, escalates   â•‘
+â•‘ Responds in < 15 min             â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+         â”‚ escalates complex cases
+         â–¼
+Tier 2 â€” Investigation
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘ Deep analysis, containment       â•‘
+â•‘ Forensic acquisition, malware    â•‘
+â•‘ Tuning detection rules           â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+         â”‚ escalates advanced threats
+         â–¼
+Tier 3 â€” Advanced Threat
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘ Reverse engineering, hunt ops    â•‘
+â•‘ Custom tooling, adversary intel  â•‘
+â•‘ Strategic recommendations        â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 ```
 
 | Tier | Role | Skill Level | Key Activities | Typical Metrics |
@@ -102,15 +102,15 @@ Tier 3 — Advanced Threat
 | **Ticketing** | ServiceNow, Jira, TheHive | Incident tracking, workflows |
 | **Forensics** | Volatility, Velociraptor, FTK Imager, Autopsy | Evidence collection and analysis |
 
-### 1.3 SOC Workflow — From Alert to Closure
+### 1.3 SOC Workflow â€” From Alert to Closure
 
 ```
-┌──────────┐    ┌──────────┐    ┌──────────┐    ┌──────────┐    ┌──────────┐
-│  ALERT   │───▶│ TRIAGE   │───▶│ INVEST   │───▶│ CONTAIN  │───▶│ CLOSURE  │
-│ Generated│    │ Tier 1   │    │ Tier 2   │    │ Tier 2/3 │    │ All      │
-└──────────┘    └──────────┘    └──────────┘    └──────────┘    └──────────┘
-     │               │               │               │               │
-     ▼               ▼               ▼               ▼               ▼
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚  ALERT   â”‚â”€â”€â”€â–¶â”‚ TRIAGE   â”‚â”€â”€â”€â–¶â”‚ INVEST   â”‚â”€â”€â”€â–¶â”‚ CONTAIN  â”‚â”€â”€â”€â–¶â”‚ CLOSURE  â”‚
+â”‚ Generatedâ”‚    â”‚ Tier 1   â”‚    â”‚ Tier 2   â”‚    â”‚ Tier 2/3 â”‚    â”‚ All      â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+     â”‚               â”‚               â”‚               â”‚               â”‚
+     â–¼               â–¼               â–¼               â–¼               â–¼
  Log source     Validate:        Identify:        Isolate:        Update runbook
  triggers       Real incident?   Root cause       Affected hosts  Document IoCs
  correlation    False positive?  Attack vector     Block C2 IPs    Lessons learned
@@ -127,41 +127,41 @@ Tier 3 — Advanced Threat
 
 ---
 
-## 2. SIEM Pipeline — Full Deployment with ELK + Wazuh
+## 2. SIEM Pipeline â€” Full Deployment with ELK + Wazuh
 
 ### 2.1 Architecture Overview
 
 ```
-┌──────────┐    ┌──────────┐    ┌──────────┐    ┌──────────┐
-│  WINDOWS │    │   LINUX  │    │  NETWORK │    │   CLOUD  │
-│  Servers │    │  Servers │    │  Devices │    │  Services│
-│ Winlogbe │    │ Filebeat │    │  Zeek    │    │  CloudTra│
-│ at/ETW   │    │ /Auditd  │    │ /Netflow │    │  il/Guard│
-└────┬─────┘    └────┬─────┘    └────┬─────┘    └────┬─────┘
-     │               │               │               │
-     ▼               ▼               ▼               ▼
-┌──────────────────────────────────────────────────────────┐
-│                    MESSAGE QUEUE (Kafka / Redis)          │
-├──────────────────────────────────────────────────────────┤
-│  Logstash / Wazuh Manager — Parsing, Normalization       │
-├──────────────────────────────────────────────────────────┤
-│  Elasticsearch — Indexing, Storage, Search                │
-├──────────────────────────────────────────────────────────┤
-│  Kibana — Visualization, Dashboards, Alerts              │
-├──────────────────────────────────────────────────────────┤
-│  Wazuh Dashboard — Security-specific dashboards           │
-└──────────────────────────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚  WINDOWS â”‚    â”‚   LINUX  â”‚    â”‚  NETWORK â”‚    â”‚   CLOUD  â”‚
+â”‚  Servers â”‚    â”‚  Servers â”‚    â”‚  Devices â”‚    â”‚  Servicesâ”‚
+â”‚ Winlogbe â”‚    â”‚ Filebeat â”‚    â”‚  Zeek    â”‚    â”‚  CloudTraâ”‚
+â”‚ at/ETW   â”‚    â”‚ /Auditd  â”‚    â”‚ /Netflow â”‚    â”‚  il/Guardâ”‚
+â””â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”˜
+     â”‚               â”‚               â”‚               â”‚
+     â–¼               â–¼               â–¼               â–¼
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚                    MESSAGE QUEUE (Kafka / Redis)          â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚  Logstash / Wazuh Manager â€” Parsing, Normalization       â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚  Elasticsearch â€” Indexing, Storage, Search                â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚  Kibana â€” Visualization, Dashboards, Alerts              â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚  Wazuh Dashboard â€” Security-specific dashboards           â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
-### 2.2 Step-by-Step — Deploy ELK + Wazuh Stack
+### 2.2 Step-by-Step â€” Deploy ELK + Wazuh Stack
 
 ```bash
-# ── STEP 1: System Preparation (Ubuntu 22.04) ──
+# â”€â”€ STEP 1: System Preparation (Ubuntu 22.04) â”€â”€
 sudo apt update && sudo apt upgrade -y
 sudo hostnamectl set-hostname wazuh-manager
 sudo apt install curl wget gnupg apt-transport-https software-properties-common -y
 
-# ── STEP 2: Install Elasticsearch ──
+# â”€â”€ STEP 2: Install Elasticsearch â”€â”€
 wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg
 echo "deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://artifacts.elastic.co/packages/8.x/apt stable main" | sudo tee /etc/apt/sources.list.d/elastic-8.x.list
 sudo apt update && sudo apt install elasticsearch -y
@@ -176,13 +176,13 @@ echo "discovery.type: single-node" | sudo tee -a /etc/elasticsearch/elasticsearc
 
 sudo systemctl daemon-reload && sudo systemctl enable elasticsearch && sudo systemctl start elasticsearch
 
-# ── STEP 3: Install Wazuh Manager (All-in-One) ──
+# â”€â”€ STEP 3: Install Wazuh Manager (All-in-One) â”€â”€
 curl -s https://packages.wazuh.com/key/GPG-KEY-WAZUH | sudo apt-key add -
 echo "deb https://packages.wazuh.com/4.x/apt/ stable main" | sudo tee /etc/apt/sources.list.d/wazuh.list
 sudo apt update && sudo apt install wazuh-manager -y
 sudo systemctl enable wazuh-manager && sudo systemctl start wazuh-manager
 
-# ── STEP 4: Install Filebeat (Log Shipper) ──
+# â”€â”€ STEP 4: Install Filebeat (Log Shipper) â”€â”€
 sudo apt install filebeat -y
 curl -so /etc/filebeat/filebeat.yml https://packages.wazuh.com/4.x/filebeat/filebeat.yml
 sudo sed -i 's/ELASTICSEARCH_USERNAME: elastic/ELASTICSEARCH_USERNAME: elastic/' /etc/filebeat/filebeat.yml
@@ -190,17 +190,17 @@ sudo sed -i 's/ELASTICSEARCH_PASSWORD: changeme/ELASTICSEARCH_PASSWORD: /' /etc/
 sudo filebeat setup --index-management -E setup.template.json.enabled=false
 sudo systemctl enable filebeat && sudo systemctl start filebeat
 
-# ── STEP 5: Install Kibana ──
+# â”€â”€ STEP 5: Install Kibana â”€â”€
 sudo apt install kibana -y
 sudo sed -i 's/#server.host: "localhost"/server.host: "0.0.0.0"/' /etc/kibana/kibana.yml
 sudo sed -i 's/#elasticsearch.hosts: \["http:\/\/localhost:9200"\]/elasticsearch.hosts: \["http:\/\/localhost:9200"\]/' /etc/kibana/kibana.yml
 sudo systemctl enable kibana && sudo systemctl start kibana
 
-# ── STEP 6: Install Wazuh Dashboard ──
+# â”€â”€ STEP 6: Install Wazuh Dashboard â”€â”€
 sudo apt install wazuh-dashboard -y
 sudo systemctl enable wazuh-dashboard && sudo systemctl start wazuh-dashboard
 
-# ── STEP 7: Verify Deployment ──
+# â”€â”€ STEP 7: Verify Deployment â”€â”€
 sudo systemctl status elasticsearch | grep active
 sudo systemctl status wazuh-manager | grep active
 sudo systemctl status filebeat | grep active
@@ -306,14 +306,14 @@ output {
 
 ---
 
-## 3. SOAR — Security Orchestration, Automation and Response
+## 3. SOAR â€” Security Orchestration, Automation and Response
 
-### 3.1 Playbook Automation — TypeScript Incident Response Engine
+### 3.1 Playbook Automation â€” TypeScript Incident Response Engine
 
 The core of SOAR is automating repetitive tasks so analysts focus on complex threats. Below is a full incident response orchestration engine written in TypeScript.
 
 ```typescript
-// soar-engine.ts — SOAR Incident Response Orchestration Engine
+// soar-engine.ts â€” SOAR Incident Response Orchestration Engine
 
 interface Alert {
   id: string;
@@ -395,7 +395,7 @@ interface ContainmentAction {
   timestamp: Date;
 }
 
-// ─── Enrichment Engines ───
+// â”€â”€â”€ Enrichment Engines â”€â”€â”€
 
 class IoCEnrichmentEngine {
   private apiKeys: { virustotal?: string; abuseipdb?: string; shodan?: string };
@@ -499,7 +499,7 @@ class IoCEnrichmentEngine {
   }
 }
 
-// ─── Incident Severity Scoring ───
+// â”€â”€â”€ Incident Severity Scoring â”€â”€â”€
 
 class IncidentScorer {
   score(alert: Alert, enrichments: EnrichmentResult[]): number {
@@ -548,7 +548,7 @@ class IncidentScorer {
   }
 }
 
-// ─── Containment Automation ───
+// â”€â”€â”€ Containment Automation â”€â”€â”€
 
 class ContainmentEngine {
   async executeAction(action: ContainmentAction): Promise<boolean> {
@@ -597,7 +597,7 @@ class ContainmentEngine {
   }
 }
 
-// ─── Playbook Engine ───
+// â”€â”€â”€ Playbook Engine â”€â”€â”€
 
 class PlaybookEngine {
   private enrichmentEngine: IoCEnrichmentEngine;
@@ -707,7 +707,7 @@ class PlaybookEngine {
   }
 }
 
-// ─── Example Usage ───
+// â”€â”€â”€ Example Usage â”€â”€â”€
 
 async function main() {
   const engine = new PlaybookEngine();
@@ -734,20 +734,20 @@ async function main() {
 // main().catch(console.error);
 ```
 
-### 3.2 Playbook Catalog — Common SOC Playbooks
+### 3.2 Playbook Catalog â€” Common SOC Playbooks
 
 | Playbook | Trigger | Automated Steps | Manual Steps (T2) |
 |----------|---------|-----------------|-------------------|
-| **Phishing Response** | User reports phishing email | Extract URLs/hashes → Sandbox URL → Check VT → Block sender in Exchange → Delete from all mailboxes | Review sandbox report, confirm malicious, update user training |
-| **Ransomware Detection** | File encryption alerts from EDR | Isolate host → Kill ransomware process → Block C2 IPs → Disable user account → Collect memory dump | Identify patient zero, determine propagation, restore from backup |
-| **Brute Force Attack** | >10 failed logins from single IP | Block IP in firewall → Disable affected accounts → Check for successful logins → Enforce MFA | Review logs for lateral movement, reset passwords |
-| **Malware Outbreak** | Anti-malware detects on >5 hosts | Isolate all affected hosts → Collect samples → Run YARA across fleet | Reverse engineer sample, determine IoCs, create custom detection |
-| **Insider Threat** | Large data download from single user | Alert HR/legal (not IT first) → Preserve logs → Disable network access | Interview, forensic analysis, determine intent |
-| **DDoS Attack** | Traffic spike >10x baseline | Activate CDN mitigation → Enable rate limiting → Scale out resources → Contact ISP | Determine attack vector, tune WAF rules, coordinate with upstream |
+| **Phishing Response** | User reports phishing email | Extract URLs/hashes â†’ Sandbox URL â†’ Check VT â†’ Block sender in Exchange â†’ Delete from all mailboxes | Review sandbox report, confirm malicious, update user training |
+| **Ransomware Detection** | File encryption alerts from EDR | Isolate host â†’ Kill ransomware process â†’ Block C2 IPs â†’ Disable user account â†’ Collect memory dump | Identify patient zero, determine propagation, restore from backup |
+| **Brute Force Attack** | >10 failed logins from single IP | Block IP in firewall â†’ Disable affected accounts â†’ Check for successful logins â†’ Enforce MFA | Review logs for lateral movement, reset passwords |
+| **Malware Outbreak** | Anti-malware detects on >5 hosts | Isolate all affected hosts â†’ Collect samples â†’ Run YARA across fleet | Reverse engineer sample, determine IoCs, create custom detection |
+| **Insider Threat** | Large data download from single user | Alert HR/legal (not IT first) â†’ Preserve logs â†’ Disable network access | Interview, forensic analysis, determine intent |
+| **DDoS Attack** | Traffic spike >10x baseline | Activate CDN mitigation â†’ Enable rate limiting â†’ Scale out resources â†’ Contact ISP | Determine attack vector, tune WAF rules, coordinate with upstream |
 
 ---
 
-## 4. Threat Hunting — Hypothesis-Driven Detection
+## 4. Threat Hunting â€” Hypothesis-Driven Detection
 
 ### 4.1 The Hunting Maturity Model (HMM)
 
@@ -759,7 +759,7 @@ async function main() {
 | **HMM3** | Innovative | Creates novel hypotheses based on threat intel | Full telemetry |
 | **HMM4** | Leading | Automated hypothesis generation using ML | All data sources |
 
-### 4.2 Hunting Hypothesis Generation — MITRE ATT&CK Based
+### 4.2 Hunting Hypothesis Generation â€” MITRE ATT&CK Based
 
 Hunting starts with a hypothesis: "I believe an adversary may be [technique] on [platform] because [intel]."
 
@@ -767,7 +767,7 @@ Hunting starts with a hypothesis: "I believe an adversary may be [technique] on 
 
 ```
 HYPOTHESIS #{id}
-─────────────────────────────────────────────────────
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Technique:    [MITRE ATT&CK T#]
 Tactic:       [Initial Access / Execution / Persistence / ...]
 Hypothesis:   "Adversaries may be using [technique] to [goal] on [platform]"
@@ -780,7 +780,7 @@ Detection:    [Specific query / Sigma rule]
 
 ```
 HYPOTHESIS #H-2024-001
-─────────────────────────────────────────────────────
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Technique:    T1059.001 (PowerShell)
 Tactic:       Execution
 Hypothesis:   "Adversaries may be using obfuscated PowerShell commands with 
@@ -790,7 +790,7 @@ Data needed:  Windows Event ID 4688 (Process Creation) with command line logging
 Detection:    powershell.exe -EncodedCommand OR -e OR -enc OR -Command ".*base64.*"
 
 HYPOTHESIS #H-2024-002
-─────────────────────────────────────────────────────
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Technique:    T1078.004 (Cloud Accounts)
 Tactic:       Defense Evasion / Persistence
 Hypothesis:   "Adversaries may be creating AWS IAM users with console access 
@@ -800,7 +800,7 @@ Data needed:  AWS CloudTrail CreateUser, CreateLoginProfile events
 Detection:    sourceIPAddress NOT IN (company_vpn_range, company_office_range)
 
 HYPOTHESIS #H-2024-003
-─────────────────────────────────────────────────────
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Technique:    T1003.002 (Security Account Manager / SAM)
 Tactic:       Credential Access
 Hypothesis:   "Adversaries may be dumping SAM registry hives via 
@@ -810,12 +810,12 @@ Data needed:  Windows Event ID 4688 with command line, Sysmon Event 1
 Detection:    reg.exe save HKLM\\SAM OR vssadmin.*Create.*Shadow OR ntdsutil.*ac*
 ```
 
-### 4.3 Hunting Campaign — Full Walkthrough
+### 4.3 Hunting Campaign â€” Full Walkthrough
 
 **Objective:** Hunt for evidence of Kerberoasting (T1558.003) across the domain.
 
 ```typescript
-// kerberoast-hunter.ts — Active Directory Kerberoasting Detection
+// kerberoast-hunter.ts â€” Active Directory Kerberoasting Detection
 
 interface HuntingSession {
   id: string;
@@ -922,7 +922,7 @@ class KerberoastHunter {
           timestamp: new Date(),
           host: result.host || 'unknown',
           user: result.user || 'unknown',
-          description: `[${query.name}] ${result.detail} — Count: ${result.count} (baseline: ${query.expectedBaseline})`,
+          description: `[${query.name}] ${result.detail} â€” Count: ${result.count} (baseline: ${query.expectedBaseline})`,
           severity,
           rawData: result,
           mitreMapping: 'T1558.003',
@@ -959,7 +959,7 @@ class KerberoastHunter {
 
     return `
 KERBEROASTING HUNT REPORT
-═══════════════════════════════════════════════════
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 Hunt ID:        H-${new Date().toISOString().split('T')[0]}-001
 Hypothesis:     Adversaries may be performing Kerberoasting to extract service account hashes
 Technique:      T1558.003 (Kerberoasting)
@@ -967,7 +967,7 @@ Timeframe:      Past 7 days
 Data Sources:   Windows Event ID 4769 (Kerberos TGS)
 
 FINDINGS SUMMARY
-───────────────────────────────────────────────────
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Total Findings: ${findings.length}
   Critical: ${critical}
   High:     ${high}
@@ -1016,7 +1016,7 @@ async function huntDemo() {
 ### 4.5 Beaconing Detection Algorithm
 
 ```typescript
-// beacon-detector.ts — C2 Beaconing Detection via Time Series Analysis
+// beacon-detector.ts â€” C2 Beaconing Detection via Time Series Analysis
 
 interface NetworkConnection {
   timestamp: Date;
@@ -1112,7 +1112,7 @@ class BeaconDetector {
   }
 }
 
-// ExportC2Detector — Packet Length Analysis for Exfiltration
+// ExportC2Detector â€” Packet Length Analysis for Exfiltration
 class ExportC2Detector {
   detectDataExfiltration(connections: NetworkConnection[]): any[] {
     const findings: any[] = [];
@@ -1192,7 +1192,7 @@ function beaconDemo() {
   const beacons = detector.detectBeacons(connections);
   console.log(`Detected ${beacons.length} beacon candidates`);
   for (const b of beacons) {
-    console.log(`  ${b.destinationIp}:${b.destinationPort} — interval=${b.intervalAvgMs}ms, jitter=${b.jitterScore}, confidence=${b.confidenceScore}`);
+    console.log(`  ${b.destinationIp}:${b.destinationPort} â€” interval=${b.intervalAvgMs}ms, jitter=${b.jitterScore}, confidence=${b.confidenceScore}`);
   }
 }
 
@@ -1206,45 +1206,45 @@ function beaconDemo() {
 ### 5.1 Intelligence Cycle
 
 ```
-┌──────────────────────────────────────────────┐
-│              REQUIREMENTS                     │
-│     What decisions need intel support?        │
-└─────────────────┬────────────────────────────┘
-                  ▼
-┌──────────────────────────────────────────────┐
-│              COLLECTION                       │
-│     Gather raw data from: OSINT, commercial   │
-│     feeds, ISACs, dark web, internal telemetry│
-└─────────────────┬────────────────────────────┘
-                  ▼
-┌──────────────────────────────────────────────┐
-│              PROCESSING                       │
-│     Normalize, deduplicate, enrich, format    │
-│     (STIX/TAXII, structured IOC format)      │
-└─────────────────┬────────────────────────────┘
-                  ▼
-┌──────────────────────────────────────────────┐
-│              ANALYSIS                         │
-│     Correlate, identify TTPs, adversary      │
-│     attribution, confidence scoring          │
-└─────────────────┬────────────────────────────┘
-                  ▼
-┌──────────────────────────────────────────────┐
-│              DISSEMINATION                    │
-│     Distribute to stakeholders: SOC, IR,     │
-│     executive, engineering teams             │
-└─────────────────┬────────────────────────────┘
-                  ▼
-┌──────────────────────────────────────────────┐
-│              FEEDBACK                         │
-│     Measure effectiveness, update priorities  │
-└──────────────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚              REQUIREMENTS                     â”‚
+â”‚     What decisions need intel support?        â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                  â–¼
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚              COLLECTION                       â”‚
+â”‚     Gather raw data from: OSINT, commercial   â”‚
+â”‚     feeds, ISACs, dark web, internal telemetryâ”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                  â–¼
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚              PROCESSING                       â”‚
+â”‚     Normalize, deduplicate, enrich, format    â”‚
+â”‚     (STIX/TAXII, structured IOC format)      â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                  â–¼
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚              ANALYSIS                         â”‚
+â”‚     Correlate, identify TTPs, adversary      â”‚
+â”‚     attribution, confidence scoring          â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                  â–¼
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚              DISSEMINATION                    â”‚
+â”‚     Distribute to stakeholders: SOC, IR,     â”‚
+â”‚     executive, engineering teams             â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                  â–¼
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚              FEEDBACK                         â”‚
+â”‚     Measure effectiveness, update priorities  â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
-### 5.2 MISP — Malware Information Sharing Platform Setup
+### 5.2 MISP â€” Malware Information Sharing Platform Setup
 
 ```bash
-# ── Install MISP (Ubuntu 22.04) ──
+# â”€â”€ Install MISP (Ubuntu 22.04) â”€â”€
 sudo apt update && sudo apt upgrade -y
 
 # Install dependencies
@@ -1272,10 +1272,10 @@ echo "MISP installed. Access web UI at http://YOUR_IP"
 echo "Default: admin@admin.test / admin"
 ```
 
-**MISP API Usage — TypeScript IOC Feeder:**
+**MISP API Usage â€” TypeScript IOC Feeder:**
 
 ```typescript
-// misp-feeder.ts — Ingest and Process Threat Intel from MISP
+// misp-feeder.ts â€” Ingest and Process Threat Intel from MISP
 
 interface MispEvent {
   id: string;
@@ -1410,7 +1410,7 @@ async function feedDemo() {
 }
 ```
 
-### 5.3 STIX/TAXII — Intelligence Sharing Standards
+### 5.3 STIX/TAXII â€” Intelligence Sharing Standards
 
 | Component | Purpose | Example |
 |-----------|---------|---------|
@@ -1439,10 +1439,10 @@ async function feedDemo() {
 }
 ```
 
-**TAXII Client — TypeScript Implementation:**
+**TAXII Client â€” TypeScript Implementation:**
 
 ```typescript
-// taxii-client.ts — STIX/TAXII Intelligence Feed Consumer
+// taxii-client.ts â€” STIX/TAXII Intelligence Feed Consumer
 
 interface TaxiiServer {
   url: string;
@@ -1563,7 +1563,7 @@ const client = new TaxiiClient({
 
 ---
 
-## 6. Detection Engineering — Sigma Rules
+## 6. Detection Engineering â€” Sigma Rules
 
 Sigma is a generic and open signature format for SIEM systems. Write once, run in any SIEM.
 
@@ -1614,10 +1614,10 @@ falsepositives:
 level: high
 ```
 
-### 6.2 Detection Rule Engine — TypeScript
+### 6.2 Detection Rule Engine â€” TypeScript
 
 ```typescript
-// sigma-engine.ts — Sigma Rule Evaluation Engine
+// sigma-engine.ts â€” Sigma Rule Evaluation Engine
 
 interface SigmaRule {
   title: string;
@@ -1836,53 +1836,53 @@ function sigmaDemo() {
 ### 7.1 SOC Maturity Model (M0-M4)
 
 ```
-M0 — INITIAL
-╔══════════════════════════════════════╗
-║ Reactive, no defined processes        ║
-║ Rely on individual heroics            ║
-║ No SIEM, basic antivirus              ║
-╚══════════════════════════════════════╝
-         │
-         ▼
-M1 — AD-HOC
-╔══════════════════════════════════════╗
-║ Basic SIEM deployed                  ║
-║ Some defined processes               ║
-║ MTTR: weeks                          ║
-╚══════════════════════════════════════╝
-         │
-         ▼
-M2 — DEFINED
-╔══════════════════════════════════════╗
-║ Documented playbooks                 ║
-║ Tiered SOC structure                 ║
-║ Threat intel integrated              ║
-║ MTTR: days                           ║
-╚══════════════════════════════════════╝
-         │
-         ▼
-M3 — MANAGED
-╔══════════════════════════════════════╗
-║ SOAR automation for common threats   ║
-║ Proactive threat hunting             ║
-║ Custom detection rules               ║
-║ MTTR: hours                          ║
-╚══════════════════════════════════════╝
-         │
-         ▼
-M4 — OPTIMIZED
-╔══════════════════════════════════════╗
-║ Autonomous response to 80% threats   ║
-║ ML-driven anomaly detection          ║
-║ Continuous improvement cycle         ║
-║ MTTR: minutes                        ║
-╚══════════════════════════════════════╝
+M0 â€” INITIAL
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘ Reactive, no defined processes        â•‘
+â•‘ Rely on individual heroics            â•‘
+â•‘ No SIEM, basic antivirus              â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+         â”‚
+         â–¼
+M1 â€” AD-HOC
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘ Basic SIEM deployed                  â•‘
+â•‘ Some defined processes               â•‘
+â•‘ MTTR: weeks                          â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+         â”‚
+         â–¼
+M2 â€” DEFINED
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘ Documented playbooks                 â•‘
+â•‘ Tiered SOC structure                 â•‘
+â•‘ Threat intel integrated              â•‘
+â•‘ MTTR: days                           â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+         â”‚
+         â–¼
+M3 â€” MANAGED
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘ SOAR automation for common threats   â•‘
+â•‘ Proactive threat hunting             â•‘
+â•‘ Custom detection rules               â•‘
+â•‘ MTTR: hours                          â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+         â”‚
+         â–¼
+M4 â€” OPTIMIZED
+â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+â•‘ Autonomous response to 80% threats   â•‘
+â•‘ ML-driven anomaly detection          â•‘
+â•‘ Continuous improvement cycle         â•‘
+â•‘ MTTR: minutes                        â•‘
+â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 ```
 
 ### 7.2 Key SOC Metrics Dashboard
 
 ```typescript
-// soc-metrics.ts — SOC Performance Metrics Tracker
+// soc-metrics.ts â€” SOC Performance Metrics Tracker
 
 interface SOCMetrics {
   date: Date;
@@ -1949,11 +1949,11 @@ class SOCMetricsTracker {
 
     return `
 SOC PERFORMANCE REPORT
-═══════════════════════════════════════════════════
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 Period: ${weekAgo.toISOString().split('T')[0]} to ${now.toISOString().split('T')[0]}
 
 KEY METRICS
-───────────────────────────────────────────────────
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Alerts Received:         ${this.metrics.slice(-7).reduce((s, m) => s + m.alertsReceived, 0)}
 False Positive Rate:     ${this.getFalsePositiveRate({ start: weekAgo, end: now }).toFixed(1)}%
 Alert-to-Incident Ratio: ${this.getAlertToIncidentRatio({ start: weekAgo, end: now }).toFixed(1)}%
@@ -1961,21 +1961,21 @@ MTTD (Current Week):     ${this.getMTTD({ start: weekAgo, end: now }).toFixed(0)
 MTTR (Current Week):     ${this.getMTTR({ start: weekAgo, end: now }).toFixed(0)} min
 
 TREND (Month-over-Month)
-───────────────────────────────────────────────────
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 MTTD Last Month:         ${this.getMTTD({ start: monthAgo, end: weekAgo }).toFixed(0)} min
 MTTR Last Month:         ${this.getMTTR({ start: monthAgo, end: weekAgo }).toFixed(0)} min
 FP Rate Last Month:      ${this.getFalsePositiveRate({ start: monthAgo, end: weekAgo }).toFixed(1)}%
 
 INDUSTRY BENCHMARKS
-───────────────────────────────────────────────────
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 MTTD Target:             < 60 min  (Current: ${this.getMTTD({ start: weekAgo, end: now }).toFixed(0)} min)
 MTTR Target:             < 120 min (Current: ${this.getMTTR({ start: weekAgo, end: now }).toFixed(0)} min)
 FP Rate Target:          < 30%     (Current: ${this.getFalsePositiveRate({ start: weekAgo, end: now }).toFixed(1)}%)
 
 ACTIONS NEEDED:
-${this.getFalsePositiveRate({ start: weekAgo, end: now }) > 30 ? '  ■ High FP rate: Tune detection rules to reduce noise' : ''}
-${this.getMTTD({ start: weekAgo, end: now }) > 60 ? '  ■ MTTD above target: Review detection coverage gaps' : ''}
-${this.getMTTR({ start: weekAgo, end: now }) > 120 ? '  ■ MTTR above target: Add SOAR automation for common alerts' : ''}
+${this.getFalsePositiveRate({ start: weekAgo, end: now }) > 30 ? '  â–  High FP rate: Tune detection rules to reduce noise' : ''}
+${this.getMTTD({ start: weekAgo, end: now }) > 60 ? '  â–  MTTD above target: Review detection coverage gaps' : ''}
+${this.getMTTR({ start: weekAgo, end: now }) > 120 ? '  â–  MTTR above target: Add SOAR automation for common alerts' : ''}
 `;
   }
 }
@@ -2014,31 +2014,31 @@ function metricsDemo() {
 
 ## 8. MTTD/MTTR Optimization Playbooks
 
-### 8.1 Reducing MTTD — Detection Coverage Gaps
+### 8.1 Reducing MTTD â€” Detection Coverage Gaps
 
 | Gap | Impact | Resolution | MTTD Reduction |
 |-----|--------|------------|----------------|
-| No logging on critical servers | Blind spots during lateral movement | Enable Windows event log forwarding + Sysmon | 72h → 2h |
-| No network detection (NDR) | C2 traffic invisible | Deploy Zeek + Suricata sensors | 48h → 1h |
-| DNS logging disabled | DGA/beaconing undetected | Enable DNS query logging on domain controllers | 24h → 30min |
-| Cloud API calls not monitored | Cloud credential misuse undetected | Enable CloudTrail + GuardDuty | 48h → 15min |
-| No file integrity monitoring | Backdoor/Rootkit installation undetected | Wazuh FIM on critical directories | 72h → 1h |
+| No logging on critical servers | Blind spots during lateral movement | Enable Windows event log forwarding + Sysmon | 72h â†’ 2h |
+| No network detection (NDR) | C2 traffic invisible | Deploy Zeek + Suricata sensors | 48h â†’ 1h |
+| DNS logging disabled | DGA/beaconing undetected | Enable DNS query logging on domain controllers | 24h â†’ 30min |
+| Cloud API calls not monitored | Cloud credential misuse undetected | Enable CloudTrail + GuardDuty | 48h â†’ 15min |
+| No file integrity monitoring | Backdoor/Rootkit installation undetected | Wazuh FIM on critical directories | 72h â†’ 1h |
 
-### 8.2 Reducing MTTR — Automation Playbooks
+### 8.2 Reducing MTTR â€” Automation Playbooks
 
 **Time Savings with Automation:**
 
 ```
 Manual Response Process (No SOAR):
-  Alert received → Analyst reads → Human triage → 
-  Manual enrichment (VT, Shodan) → Manual block → 
-  Write report → Close
+  Alert received â†’ Analyst reads â†’ Human triage â†’ 
+  Manual enrichment (VT, Shodan) â†’ Manual block â†’ 
+  Write report â†’ Close
   Total: ~45-90 minutes
 
 Automated Response (SOAR):
-  Alert received → Automated enrichment → 
-  Automated scoring → Auto-block if critical → 
-  Auto-generate report → Escalate if needed
+  Alert received â†’ Automated enrichment â†’ 
+  Automated scoring â†’ Auto-block if critical â†’ 
+  Auto-generate report â†’ Escalate if needed
   Total: ~2-5 minutes
 
 Time Saved: ~90-95%
@@ -2059,16 +2059,16 @@ Time Saved: ~90-95%
 ### 9.1 Memory Acquisition
 
 ```bash
-# ── Windows Memory Acquisition ──
+# â”€â”€ Windows Memory Acquisition â”€â”€
 
-# Using FTK Imager (GUI) — File → Capture Memory
+# Using FTK Imager (GUI) â€” File â†’ Capture Memory
 # Or using winpmem (command line):
 winpmem_mini.exe memdump.raw
 
 # Using DumpIt (recommended for speed):
 DumpIt.exe /OUTPUT memdump.raw /QUIET
 
-# ── Linux Memory Acquisition ──
+# â”€â”€ Linux Memory Acquisition â”€â”€
 
 # Using LiME (Linux Memory Extractor):
 sudo insmod lime.ko "path=/tmp/memdump.lime format=lime"
@@ -2076,7 +2076,7 @@ sudo insmod lime.ko "path=/tmp/memdump.lime format=lime"
 # Using avml (from Microsoft):
 sudo ./avml /tmp/memdump.raw
 
-# ── VMware Memory Extraction ──
+# â”€â”€ VMware Memory Extraction â”€â”€
 # The .vmem file is already a memory dump
 # Or take a snapshot and use the .vmem file
 ```
@@ -2084,20 +2084,20 @@ sudo ./avml /tmp/memdump.raw
 ### 9.2 Volatility 3 Analysis
 
 ```bash
-# ── Install Volatility 3 ──
+# â”€â”€ Install Volatility 3 â”€â”€
 git clone https://github.com/volatilityfoundation/volatility3.git
 cd volatility3
 pip3 install -r requirements.txt
 
-# ── Identify OS Profile (Windows) ──
+# â”€â”€ Identify OS Profile (Windows) â”€â”€
 python3 vol.py -f memdump.raw windows.info
 
-# ── List Running Processes ──
+# â”€â”€ List Running Processes â”€â”€
 python3 vol.py -f memdump.raw windows.pslist
 python3 vol.py -f memdump.raw windows.psscan  # Uses pool scanning for hidden processes
 python3 pslist -f memdump.raw windows.pstree   # Show parent-child relationships
 
-# ── Key Process Analysis ──
+# â”€â”€ Key Process Analysis â”€â”€
 # Look for:
 # - Processes running from Temp folders
 # - Processes with hidden windows
@@ -2105,30 +2105,30 @@ python3 pslist -f memdump.raw windows.pstree   # Show parent-child relationships
 # - Processes with suspicious parent-child relationships
 # Example: winword.exe spawning cmd.exe = macro execution!
 
-# ── Network Connections ──
+# â”€â”€ Network Connections â”€â”€
 python3 vol.py -f memdump.raw windows.netscan
 
-# ── DLLs Loaded by Process ──
+# â”€â”€ DLLs Loaded by Process â”€â”€
 python3 vol.py -f memdump.raw windows.dlllist --pid 1234
 
-# ── Command Line History ──
+# â”€â”€ Command Line History â”€â”€
 python3 vol.py -f memdump.raw windows.cmdline
 
-# ── Extracting Process Memory ──
+# â”€â”€ Extracting Process Memory â”€â”€
 python3 vol.py -f memdump.raw windows.memdump --pid 1234 --dump
 
-# ── Scan for Malware Signatures ──
+# â”€â”€ Scan for Malware Signatures â”€â”€
 python3 vol.py -f memdump.raw windows.malfind
 
-# ── Registry Analysis ──
+# â”€â”€ Registry Analysis â”€â”€
 python3 vol.py -f memdump.raw windows.registry.hivelist
 python3 vol.py -f memdump.raw windows.registry.printkey --key "Software\\Microsoft\\Windows\\CurrentVersion\\Run"
 
-# ── File Scanning ──
+# â”€â”€ File Scanning â”€â”€
 python3 vol.py -f memdump.raw windows.filescan | grep -E "\.exe|\.dll|\.ps1|\.vbs"
 ```
 
-**Memory Forensics Cheat Sheet — What to Look For:**
+**Memory Forensics Cheat Sheet â€” What to Look For:**
 
 | Finding | Suspicious Indicators | Malware Type |
 |---------|----------------------|--------------|
@@ -2137,12 +2137,12 @@ python3 vol.py -f memdump.raw windows.filescan | grep -E "\.exe|\.dll|\.ps1|\.vb
 | Unsigned DLLs in system processes | `lsass.exe` loading non-Microsoft DLLs | Credential dumper |
 | Network connections from non-browser to internet | `svchost.exe` connecting to port 8080 | Backdoor/C2 |
 | Writes to Windows startup keys | `HKCU\\...\\Run` with base64 values | Persistence |
-| `cmd.exe` or `powershell` as child of Office app | `winword.exe` → `cmd.exe` | Macro malware |
+| `cmd.exe` or `powershell` as child of Office app | `winword.exe` â†’ `cmd.exe` | Macro malware |
 
 ### 9.3 YARA Rule Writing and Deployment
 
 ```yara
-// suspsicious_powershell.yar — YARA Rules for In-Memory PowerShell Detection
+// suspsicious_powershell.yar â€” YARA Rules for In-Memory PowerShell Detection
 
 rule SuspiciousPSDownloadString {
     meta:
@@ -2208,7 +2208,7 @@ rule MetasploitMeterpreter {
 **YARA Deployment via TypeScript:**
 
 ```typescript
-// yara-scanner.ts — YARA Rule Management and Scanning
+// yara-scanner.ts â€” YARA Rule Management and Scanning
 
 interface YaraRule {
   name: string;
@@ -2248,16 +2248,16 @@ class YaraManager {
 
     return `
 YARA SCAN REPORT
-═══════════════════════════════════════════════════
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 File:   memdump.raw
 Rules:  ${this.rules.length}
 Matches: ${findings.length}
 
 MATCHES:
-${findings.map((f, i) => `  ${i + 1}. [${f.rule}] ${f.description} — offset: 0x${f.offset.toString(16)}`).join('\n')}
+${findings.map((f, i) => `  ${i + 1}. [${f.rule}] ${f.description} â€” offset: 0x${f.offset.toString(16)}`).join('\n')}
 
 RECOMMENDATIONS:
-${findings.length > 0 ? '  ■ Immediate containment required' : ''}
+${findings.length > 0 ? '  â–  Immediate containment required' : ''}
 `;
   }
 }
@@ -2269,8 +2269,8 @@ ${findings.length > 0 ? '  ■ Immediate containment required' : ''}
 
 | Takeaway | Application |
 |----------|-------------|
-| Implement a 3-tier SOC model with clear SLAs | Tier 1 triages within 5 min for critical alerts; Tier 2 investigates; Tier 3 hunts proactively — each with measurable KPIs |
-| Deploy SIEM with ELK + Wazuh for centralized visibility | Winlogbeat/Filebeat ship logs → Logstash parses → Elasticsearch indexes → Kibana visualizes — full pipeline in under 2 hours |
+| Implement a 3-tier SOC model with clear SLAs | Tier 1 triages within 5 min for critical alerts; Tier 2 investigates; Tier 3 hunts proactively â€” each with measurable KPIs |
+| Deploy SIEM with ELK + Wazuh for centralized visibility | Winlogbeat/Filebeat ship logs â†’ Logstash parses â†’ Elasticsearch indexes â†’ Kibana visualizes â€” full pipeline in under 2 hours |
 | Automate incident response with SOAR playbooks | Build TypeScript enrichment engines that query VirusTotal, AbuseIPDB, and Shodan in parallel, then score and contain automatically |
 | Hunt using MITRE ATT&CK hypotheses | Start every hunt with a hypothesis (e.g., "Adversaries may be using PowerShell with base64 encoding") and validate with SIEM queries |
 | Tune detection rules to reduce false positives | Measure FPR monthly; target <30% by adjusting thresholds, whitelisting known-good behavior, and using statistical baselines |
@@ -2306,21 +2306,21 @@ ${findings.length > 0 ? '  ■ Immediate containment required' : ''}
 
 ---
 
-> **Next: Chapter 12 → Malware Analysis & Reverse Engineering.** Static/dynamic analysis, Ghidra/IDA, packers, sandboxes, and memory forensics.
+> **Next: Chapter 12 â†’ Malware Analysis & Reverse Engineering.** Static/dynamic analysis, Ghidra/IDA, packers, sandboxes, and memory forensics.
 
 ---
 
 ## Supplementary Depth
 
-### Full Wazuh Integration — Filebeat, Logstash, Elasticsearch Pipeline
+### Full Wazuh Integration â€” Filebeat, Logstash, Elasticsearch Pipeline
 
 For high-volume production environments, use Logstash as an intermediary for parsing before sending to Elasticsearch:
 
 ```bash
-# ── Logstash Installation ──
+# â”€â”€ Logstash Installation â”€â”€
 sudo apt install logstash -y
 
-# ── Logstash Pipeline: Parse Windows Event Logs ──
+# â”€â”€ Logstash Pipeline: Parse Windows Event Logs â”€â”€
 sudo tee /etc/logstash/conf.d/windows-events.conf << 'EOF'
 input {
   beats {
@@ -2475,21 +2475,21 @@ Tier 1 (Triage): Monitor alerts, validate/classify, escalate true positives, han
 
 <details>
 <summary>Solution</summary>
-MTTD (Mean Time to Detect): time from compromise to detection. MTTR (Mean Time to Respond): time from detection to containment/remediation. MTTI (Mean Time to Investigate): time spent actively investigating an alert. Goal: minimize MTTD (better detection) and MTTR (faster response). MTTI helps resource planning — high MTTI may indicate need for more Tier 2 analysts.
+MTTD (Mean Time to Detect): time from compromise to detection. MTTR (Mean Time to Respond): time from detection to containment/remediation. MTTI (Mean Time to Investigate): time spent actively investigating an alert. Goal: minimize MTTD (better detection) and MTTR (faster response). MTTI helps resource planning â€” high MTTI may indicate need for more Tier 2 analysts.
 </details>
 
 3. What is the Pyramid of Pain and why is it important for threat intelligence?
 
 <details>
 <summary>Solution</summary>
-The Pyramid of Pain ranks indicators of compromise by difficulty for the attacker to change: Hash values (easy) → IP addresses → Domain names → Network artifacts → Host artifacts → Tools → TTPs (hardest). It's important because focusing detection on higher levels (TTPs, tools) forces attackers to change their entire methodology, while lower levels (hashes, IPs) are trivially changed.
+The Pyramid of Pain ranks indicators of compromise by difficulty for the attacker to change: Hash values (easy) â†’ IP addresses â†’ Domain names â†’ Network artifacts â†’ Host artifacts â†’ Tools â†’ TTPs (hardest). It's important because focusing detection on higher levels (TTPs, tools) forces attackers to change their entire methodology, while lower levels (hashes, IPs) are trivially changed.
 </details>
 
 4. How does the Cyber Kill Chain differ from the MITRE ATT&CK framework?
 
 <details>
 <summary>Solution</summary>
-Cyber Kill Chain (Lockheed Martin): linear, 7 phases (Recon → Weaponization → Delivery → Exploitation → Installation → C2 → Actions). MITRE ATT&CK: non-linear, comprehensive matrix of tactics (14) and techniques (hundreds). Kill Chain is high-level and sequential; ATT&CK is detailed and flexible — it maps multiple techniques per tactic, allows multiple paths, and covers post-compromise activities in depth that the Kill Chain condenses.
+Cyber Kill Chain (Lockheed Martin): linear, 7 phases (Recon â†’ Weaponization â†’ Delivery â†’ Exploitation â†’ Installation â†’ C2 â†’ Actions). MITRE ATT&CK: non-linear, comprehensive matrix of tactics (14) and techniques (hundreds). Kill Chain is high-level and sequential; ATT&CK is detailed and flexible â€” it maps multiple techniques per tactic, allows multiple paths, and covers post-compromise activities in depth that the Kill Chain condenses.
 </details>
 
 5. What is a Sigma rule and what problem does it solve for detection engineering?
@@ -2503,7 +2503,7 @@ Sigma is a generic, vendor-agnostic rule format for describing log detection log
 
 <details>
 <summary>Solution</summary>
-The Diamond Model structures intrusion analysis around four vertices: Adversary (actor/threat group), Capability (tools, malware, exploits), Infrastructure (IPs, domains, C2 servers), Victim (target organization/person). Edges represent relationships: Adversary uses Capability on Infrastructure against Victim. Analysis identifies pivot points — e.g., finding new infrastructure via capability hash, or linking adversaries via shared infrastructure.
+The Diamond Model structures intrusion analysis around four vertices: Adversary (actor/threat group), Capability (tools, malware, exploits), Infrastructure (IPs, domains, C2 servers), Victim (target organization/person). Edges represent relationships: Adversary uses Capability on Infrastructure against Victim. Analysis identifies pivot points â€” e.g., finding new infrastructure via capability hash, or linking adversaries via shared infrastructure.
 </details>
 
 ### Practical Exercises
@@ -2517,7 +2517,7 @@ The Diamond Model structures intrusion analysis around four vertices: Adversary 
 
 <details>
 <summary>Solution</summary>
-Follow Wazuh quickstart: install indexer (Elasticsearch), server (Wazuh manager), dashboard (Kibana). Add agents: `wazuh-agent` package on Linux, MSI on Windows. Configure ossec.conf for log collection: `<localfile><log_format>syslog</log_format><location>/var/log/auth.log</location></localfile>`. Verify in dashboard: Agents → agent → Security Events. Custom rule: add to `/var/ossec/etc/rules/local_rules.xml` → `<rule id="100001" level="10"><match>sudo FAILED</match></rule>`.
+Follow Wazuh quickstart: install indexer (Elasticsearch), server (Wazuh manager), dashboard (Kibana). Add agents: `wazuh-agent` package on Linux, MSI on Windows. Configure ossec.conf for log collection: `<localfile><log_format>syslog</log_format><location>/var/log/auth.log</location></localfile>`. Verify in dashboard: Agents â†’ agent â†’ Security Events. Custom rule: add to `/var/ossec/etc/rules/local_rules.xml` â†’ `<rule id="100001" level="10"><match>sudo FAILED</match></rule>`.
 </details>
 
 2. **Sigma Rule Development:** Write Sigma rules for the following detection scenarios:
@@ -2546,7 +2546,7 @@ Convert: `sigma convert -t es-rule -o rule.json rule.yml`. For Pass-the-hash: de
 
 <details>
 <summary>Solution</summary>
-Hypothesis: "An attacker has established C2 beaconing to our environment." Hunt: Search for network connections with regular timing (±2s variance), small payload sizes (100-500 bytes), and known malicious JA3 hashes. Use Elastic query: `network.protocol: tls AND ja3.hash: "6734f37431670b3ab4292b8f60f29984"`. Credential dumping hunt: `event.code: 4663 AND process.name: lsass.exe AND NOT winlog.event_data.AccessMask: "0x1"`. Lateral movement: `event.code: 4624 AND LogonType: 3 AND NOT source.ip: 10.0.0.0/8`. Document findings, false positive rate, and gaps.
+Hypothesis: "An attacker has established C2 beaconing to our environment." Hunt: Search for network connections with regular timing (Â±2s variance), small payload sizes (100-500 bytes), and known malicious JA3 hashes. Use Elastic query: `network.protocol: tls AND ja3.hash: "6734f37431670b3ab4292b8f60f29984"`. Credential dumping hunt: `event.code: 4663 AND process.name: lsass.exe AND NOT winlog.event_data.AccessMask: "0x1"`. Lateral movement: `event.code: 4624 AND LogonType: 3 AND NOT source.ip: 10.0.0.0/8`. Document findings, false positive rate, and gaps.
 </details>
 
 4. **Alert Triage Simulation:** Given the following 10 alerts from a SIEM, categorize each:
@@ -2556,36 +2556,36 @@ Hypothesis: "An attacker has established C2 beaconing to our environment." Hunt:
 
 <details>
 <summary>Solution</summary>
-1) PowerShell (admin) → Benign (admin activity, verify purpose). 2) Failed logon (janitor) → Benign/False Positive (user may have mistyped). 3) DNS to C2 domain → Confirm True Positive, Escalate (lookup domain reputation, check process that made the query). 4) Large file upload 3AM (backup) → Benign (scheduled backup). 5) New service (Windows Update) → Benign (Microsoft signed). 6) USB connect (manager) → Benign (authorized device). 7) Login from Russia (employee on vacation) → Confirm True Positive, Escalate (possible credential theft). 8) Process injection (game.exe) → Confirm True Positive (games should not inject). 9) Firewall change (IT admin) → Benign (maintenance window, verify with change request). 10) Invoice email → Requires Escalation (phishing investigation, sandbox attachment).
+1) PowerShell (admin) â†’ Benign (admin activity, verify purpose). 2) Failed logon (janitor) â†’ Benign/False Positive (user may have mistyped). 3) DNS to C2 domain â†’ Confirm True Positive, Escalate (lookup domain reputation, check process that made the query). 4) Large file upload 3AM (backup) â†’ Benign (scheduled backup). 5) New service (Windows Update) â†’ Benign (Microsoft signed). 6) USB connect (manager) â†’ Benign (authorized device). 7) Login from Russia (employee on vacation) â†’ Confirm True Positive, Escalate (possible credential theft). 8) Process injection (game.exe) â†’ Confirm True Positive (games should not inject). 9) Firewall change (IT admin) â†’ Benign (maintenance window, verify with change request). 10) Invoice email â†’ Requires Escalation (phishing investigation, sandbox attachment).
 </details>
 
 ### Challenge Problems
 
 1. **SOAR Playbook Development:** Design and implement a SOAR playbook using Shuffle or Tines for:
-   - Phishing email response (analyze attachment → check VT → isolate endpoint → block sender → alert SOC)
-   - Brute force detection (correlate failed logons → check IP reputation → block on firewall → notify user)
-   - Ransomware containment (isolate endpoint → kill process → block C2 IP → create memory dump → escalate)
+   - Phishing email response (analyze attachment â†’ check VT â†’ isolate endpoint â†’ block sender â†’ alert SOC)
+   - Brute force detection (correlate failed logons â†’ check IP reputation â†’ block on firewall â†’ notify user)
+   - Ransomware containment (isolate endpoint â†’ kill process â†’ block C2 IP â†’ create memory dump â†’ escalate)
    Each playbook must include at least 5 steps with decision points.
 
 <details>
 <summary>Solution</summary>
-Phishing playbook: 1) Extract attachment hash from email. 2) Check hash on VirusTotal API. Decision: if malicious (VT score > 5/70) → isolate endpoint via EDR API → block sender domain on email gateway → alert SOC with full details. If unknown → sandbox attachment → proceed based on sandbox verdict. Brute force: 1) Query SIEM for failed logons from same IP > 5 in 10 min. 2) Check IP reputation (AbuseIPDB). 3) Decision: if malicious → add to firewall blocklist → notify user via email → create case. Ransomware: 1) EDR detects file encryption. 2) Isolate endpoint via network ACL. 3) Kill malicious process. 4) Block C2 IP on firewall. 5) Create memory dump. 6) Escalate to Tier 3.
+Phishing playbook: 1) Extract attachment hash from email. 2) Check hash on VirusTotal API. Decision: if malicious (VT score > 5/70) â†’ isolate endpoint via EDR API â†’ block sender domain on email gateway â†’ alert SOC with full details. If unknown â†’ sandbox attachment â†’ proceed based on sandbox verdict. Brute force: 1) Query SIEM for failed logons from same IP > 5 in 10 min. 2) Check IP reputation (AbuseIPDB). 3) Decision: if malicious â†’ add to firewall blocklist â†’ notify user via email â†’ create case. Ransomware: 1) EDR detects file encryption. 2) Isolate endpoint via network ACL. 3) Kill malicious process. 4) Block C2 IP on firewall. 5) Create memory dump. 6) Escalate to Tier 3.
 </details>
 
 2. **Full SOC Simulation:** Design and run a 4-hour SOC simulation exercise:
-   - Scenario: APT group attack (initial access via phishing → persistence → lateral movement → data exfiltration)
+   - Scenario: APT group attack (initial access via phishing â†’ persistence â†’ lateral movement â†’ data exfiltration)
    - Inject 5+ alerts across the kill chain (some true, some false positives)
    - SOC team must: triage each alert, escalate appropriately, contain the threat, write incident report
    - Post-exercise: measure MTTD, MTTR, false positive rate, and identify areas for improvement
 
 <details>
 <summary>Solution</summary>
-Inject timeline: T+0min: Email with malicious macro (real). T+30min: PowerShell connects to external IP (real). T+45min: Scheduled task creation (real). T+1h: Large outbound SMB transfer (false positive — backup). T+1.5h: New admin user created (real). T+2h: Data exfiltration to cloud storage (real). Metrics: MTTD = avg time from inject to first analyst action. MTTR = time from detection to containment. False positive rate = FP alerts / total alerts × 100. Post-exercise: review decision quality, communication, tool usage. Create improvement action items (e.g., add correlation rule for macro + PowerShell).
+Inject timeline: T+0min: Email with malicious macro (real). T+30min: PowerShell connects to external IP (real). T+45min: Scheduled task creation (real). T+1h: Large outbound SMB transfer (false positive â€” backup). T+1.5h: New admin user created (real). T+2h: Data exfiltration to cloud storage (real). Metrics: MTTD = avg time from inject to first analyst action. MTTR = time from detection to containment. False positive rate = FP alerts / total alerts Ã— 100. Post-exercise: review decision quality, communication, tool usage. Create improvement action items (e.g., add correlation rule for macro + PowerShell).
 </details>
 
 3. **Custom Detection Pipeline:** Build a complete detection pipeline:
    - Data source: Windows Event Logs (simulate with event log generator)
-   - Collection: Winlogbeat → Kafka → Logstash → Elasticsearch
+   - Collection: Winlogbeat â†’ Kafka â†’ Logstash â†’ Elasticsearch
    - Detection: Custom Sigma rules converted to Elasticsearch SIEM rules
    - Alerting: Elasticsearch watcher or custom webhook to Slack/Discord
    - Response: Automated action (run script on endpoint via Wazuh active response)

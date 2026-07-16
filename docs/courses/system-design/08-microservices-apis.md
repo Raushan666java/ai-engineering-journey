@@ -1,4 +1,4 @@
-# Chapter 8: Microservices and API Design
+﻿# Chapter 8: Microservices and API Design
 > **Previous:** [07 Message Queues](./07-message-queues.md) | **Next:** [09 Distributed Coordination](./09-distributed-coordination.md)
 
 ---
@@ -15,16 +15,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/system-design/08-microservices-apis/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/system-design/08-microservices-apis/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/system-design/08-microservices-apis/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/system-design/08-microservices-apis/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/system-design/08-microservices-apis/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/system-design/08-microservices-apis/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/system-design/08-microservices-apis/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/system-design/08-microservices-apis/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/system-design/08-microservices-apis/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/system-design/08-microservices-apis/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/system-design/08-microservices-apis/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/system-design/08-microservices-apis/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -1102,9 +1102,9 @@ graph TD
 
 A mid-sized e-commerce company with a monolithic Rails application processing 10,000 orders/day faced growing pains: deployments took 4 hours, a single bug in inventory could bring down the entire checkout flow, and the team of 30 engineers constantly faced merge conflicts. The company decided to migrate to microservices incrementally over 18 months.
 
-The first extraction was the Payment Service — the highest-risk component with PCI compliance requirements. The team wrapped the payment module behind a REST API with an API Gateway (Kong) handling authentication and rate limiting. A CircuitBreaker (Hystrix) was configured with a 5-failure threshold and 30-second reset timeout. During the first week, the third-party payment gateway experienced a 5-minute outage — the circuit opened, and the checkout flow gracefully fell back to a "payment pending" state instead of throwing HTTP 500 errors. The migration was invisible to customers. Over the following months, the team extracted Inventory, Shipping, and Notification services, each behind the same API Gateway pattern.
+The first extraction was the Payment Service â€” the highest-risk component with PCI compliance requirements. The team wrapped the payment module behind a REST API with an API Gateway (Kong) handling authentication and rate limiting. A CircuitBreaker (Hystrix) was configured with a 5-failure threshold and 30-second reset timeout. During the first week, the third-party payment gateway experienced a 5-minute outage â€” the circuit opened, and the checkout flow gracefully fell back to a "payment pending" state instead of throwing HTTP 500 errors. The migration was invisible to customers. Over the following months, the team extracted Inventory, Shipping, and Notification services, each behind the same API Gateway pattern.
 
-A critical incident occurred when a misconfigured rate limiter allowed 10,000 requests/second to the Inventory Service during a flash sale. The service crashed within 30 seconds. The CircuitBreaker opened after 5 failures, and the API Gateway responded with a cached "available" status for all inventory queries — preventing a complete checkout outage. Post-incident, the team implemented a sliding window rate limiter (100 req/sec per client) with a token bucket burst allowance (200 tokens). The architecture now handles 50,000 orders/day with 99.95% uptime and zero-deploy deploys per service.
+A critical incident occurred when a misconfigured rate limiter allowed 10,000 requests/second to the Inventory Service during a flash sale. The service crashed within 30 seconds. The CircuitBreaker opened after 5 failures, and the API Gateway responded with a cached "available" status for all inventory queries â€” preventing a complete checkout outage. Post-incident, the team implemented a sliding window rate limiter (100 req/sec per client) with a token bucket burst allowance (200 tokens). The architecture now handles 50,000 orders/day with 99.95% uptime and zero-deploy deploys per service.
 
 ---
 
@@ -1126,12 +1126,12 @@ A critical incident occurred when a misconfigured rate limiter allowed 10,000 re
 
 <details>
 <summary>Solution for Review Question 1</summary>
-For a team of 8 engineers with 3 subdomains, a **modular monolith** is recommended. The team is small — each subdomain would get ~2-3 engineers, too few to manage the operational overhead of microservices (deployment pipelines, service discovery, monitoring per service). Start with a monolith but enforce strict bounded context boundaries (separate packages/modules for Rider, Driver, Payments). Extract services when a subdomain proves it needs independent scaling or dedicated team ownership.
+For a team of 8 engineers with 3 subdomains, a **modular monolith** is recommended. The team is small â€” each subdomain would get ~2-3 engineers, too few to manage the operational overhead of microservices (deployment pipelines, service discovery, monitoring per service). Start with a monolith but enforce strict bounded context boundaries (separate packages/modules for Rider, Driver, Payments). Extract services when a subdomain proves it needs independent scaling or dedicated team ownership.
 </details>
 
 <details>
 <summary>Solution for Review Question 2</summary>
-Protobuf fields are numbered (not named) on the wire to save space — a field number is encoded as a varint (1-2 bytes) instead of a string (10+ bytes). Numbering enables backward-compatible evolution because: (a) new fields can be added with new numbers without affecting existing fields, (b) old clients ignore unknown field numbers, (c) field numbers never need to be reused. This allows adding, removing, or deprecating fields without breaking wire compatibility.
+Protobuf fields are numbered (not named) on the wire to save space â€” a field number is encoded as a varint (1-2 bytes) instead of a string (10+ bytes). Numbering enables backward-compatible evolution because: (a) new fields can be added with new numbers without affecting existing fields, (b) old clients ignore unknown field numbers, (c) field numbers never need to be reused. This allows adding, removing, or deprecating fields without breaking wire compatibility.
 </details>
 
 <details>
@@ -1141,7 +1141,7 @@ Protobuf fields are numbered (not named) on the wire to save space — a field n
 
 <details>
 <summary>Solution for Review Question 4</summary>
-In Istio with mTLS: Service A's outbound traffic is intercepted by its Envoy sidecar proxy. Envoy A looks up Service B's endpoints via Istiod (Pilot). Envoy A establishes a mutual TLS connection with Envoy B — each side presents a certificate issued by Citadel (Istio's CA). Envoy B forwards the request to Service B over localhost (no TLS). Response flows back through the same mTLS-encrypted path. Service A's application code is unaware of the mTLS — it just makes HTTP calls to `http://service-b`.
+In Istio with mTLS: Service A's outbound traffic is intercepted by its Envoy sidecar proxy. Envoy A looks up Service B's endpoints via Istiod (Pilot). Envoy A establishes a mutual TLS connection with Envoy B â€” each side presents a certificate issued by Citadel (Istio's CA). Envoy B forwards the request to Service B over localhost (no TLS). Response flows back through the same mTLS-encrypted path. Service A's application code is unaware of the mTLS â€” it just makes HTTP calls to `http://service-b`.
 </details>
 
 ### Application Problems
@@ -1167,7 +1167,7 @@ Window size = 60s, max = 100 requests. **t=0:** 100 requests added to window win
 
 <details>
 <summary>Solution: Microservice Architecture for a Stock Trading Platform</summary>
-**1. Service Decomposition (10+ bounded contexts):** Authentication Service (REST, PostgreSQL), User Profile Service (REST, PostgreSQL), Order Gateway (REST, validates + routes), Order Book Service (gRPC, in-memory + Cassandra for persistence), Market Data Service (gRPC + WebSocket, Redis + Kafka), Risk Management Service (gRPC, PostgreSQL), Trade Capture Service (gRPC, PostgreSQL), Portfolio Service (REST, PostgreSQL), Notification Service (Kafka consumer + WebSocket push), Settlement Service (batch, PostgreSQL), Analytics Service (Kafka + ClickHouse). **2. Order Saga:** Orchestrator: validate order -> risk check -> book match -> capture trade -> update portfolio -> notify client. Compensation on risk failure: reject order + notify. On match failure: release risk hold. Idempotency: order UUID as idempotency key with 24h Redis TTL. **3. Versioning:** API versioning via accept header (vnd.trading.v1+json). New field `time_in_force` added as optional for 6 months, then made required in v3 with clear deprecation notice. **4. Contract testing:** Pact contracts in CI — provider verifies all consumer contracts before deploy; breaking changes block the pipeline.
+**1. Service Decomposition (10+ bounded contexts):** Authentication Service (REST, PostgreSQL), User Profile Service (REST, PostgreSQL), Order Gateway (REST, validates + routes), Order Book Service (gRPC, in-memory + Cassandra for persistence), Market Data Service (gRPC + WebSocket, Redis + Kafka), Risk Management Service (gRPC, PostgreSQL), Trade Capture Service (gRPC, PostgreSQL), Portfolio Service (REST, PostgreSQL), Notification Service (Kafka consumer + WebSocket push), Settlement Service (batch, PostgreSQL), Analytics Service (Kafka + ClickHouse). **2. Order Saga:** Orchestrator: validate order -> risk check -> book match -> capture trade -> update portfolio -> notify client. Compensation on risk failure: reject order + notify. On match failure: release risk hold. Idempotency: order UUID as idempotency key with 24h Redis TTL. **3. Versioning:** API versioning via accept header (vnd.trading.v1+json). New field `time_in_force` added as optional for 6 months, then made required in v3 with clear deprecation notice. **4. Contract testing:** Pact contracts in CI â€” provider verifies all consumer contracts before deploy; breaking changes block the pipeline.
 </details>
 
 ---

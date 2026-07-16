@@ -1,4 +1,4 @@
-# Chapter 12: Secondary Storage
+﻿# Chapter 12: Secondary Storage
 
 **<< [File System Implementation](./11-file-system-impl.md)** | [**Next: I/O Systems**](./13-io-systems.md) >>
 
@@ -18,16 +18,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/operating-systems/12-secondary-storage/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/operating-systems/12-secondary-storage/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/operating-systems/12-secondary-storage/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/operating-systems/12-secondary-storage/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/operating-systems/12-secondary-storage/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/operating-systems/12-secondary-storage/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/operating-systems/12-secondary-storage/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/operating-systems/12-secondary-storage/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/operating-systems/12-secondary-storage/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/operating-systems/12-secondary-storage/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/operating-systems/12-secondary-storage/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/operating-systems/12-secondary-storage/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -39,7 +39,7 @@
 | Topic | Key Points |
 |-------|------------|
 | **Disk Structure** | Platters, tracks, sectors, cylinders; data read via actuator arm over spinning platters |
-| **Disk Scheduling** | FCFS, SSTF, SCAN, C-SCAN, LOOK, C-LOOK → minimize seek time |
+| **Disk Scheduling** | FCFS, SSTF, SCAN, C-SCAN, LOOK, C-LOOK â†’ minimize seek time |
 | **Disk Management** | Partitioning, formatting, boot block, bad block handling |
 | **RAID** | Redundant Array of Independent Disks: striping, mirroring, parity |
 | **Swap Space** | Virtual memory paging area on disk; raw partition or file-based |
@@ -69,30 +69,30 @@ flowchart LR
 
 Magnetic hard disk drives (HDDs) consist of:
 
-- **Platters**: Rigid disks coated with magnetic material (typically 1â€“4 per drive)
+- **Platters**: Rigid disks coated with magnetic material (typically 1Ã¢â‚¬â€œ4 per drive)
 - **Surfaces**: Top and bottom of each platter (each has a dedicated read/write head)
-- **Tracks**: Concentric circles on a surface (100Kâ€“1M per surface)
+- **Tracks**: Concentric circles on a surface (100KÃ¢â‚¬â€œ1M per surface)
 - **Sectors**: Smallest addressable unit (typically 512 bytes or 4 KB)
 - **Cylinders**: Set of tracks at the same radius across all platters
 - **Read/Write Head**: One per surface, mounted on actuator arm
 
 ```
-                    ┌─────────────────┐
-                    │   Spindle       │
-                    │    ┌──┐         │
-                    │  ┌─┴──┴─┐       │
-                    │  │Platter│       │
-                    │  │ 0     │       │
-                    │  ├──────┤       │
-                   ┌┼─┤Platter│       │
-                   │└┐│ 1     │       │
-                   └─┘├──────┤       │
-                    │  │Platter│       │
-                    │  │ 2     │       │
-                    │  └──────┘       │
-                    │  Read/Write     │
-                    │  Heads (arm)    │
-                    └─────────────────┘
+                    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                    â”‚   Spindle       â”‚
+                    â”‚    â”Œâ”€â”€â”         â”‚
+                    â”‚  â”Œâ”€â”´â”€â”€â”´â”€â”       â”‚
+                    â”‚  â”‚Platterâ”‚       â”‚
+                    â”‚  â”‚ 0     â”‚       â”‚
+                    â”‚  â”œâ”€â”€â”€â”€â”€â”€â”¤       â”‚
+                   â”Œâ”¼â”€â”¤Platterâ”‚       â”‚
+                   â”‚â””â”â”‚ 1     â”‚       â”‚
+                   â””â”€â”˜â”œâ”€â”€â”€â”€â”€â”€â”¤       â”‚
+                    â”‚  â”‚Platterâ”‚       â”‚
+                    â”‚  â”‚ 2     â”‚       â”‚
+                    â”‚  â””â”€â”€â”€â”€â”€â”€â”˜       â”‚
+                    â”‚  Read/Write     â”‚
+                    â”‚  Heads (arm)    â”‚
+                    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### 1.2 Disk Geometry Terms
@@ -100,14 +100,14 @@ Magnetic hard disk drives (HDDs) consist of:
 
 | Term | Definition | Typical Value |
 |------|------------|---------------|
-| **Track** | Concentric ring on one platter surface | 100Kâ€“1M tracks/surface |
+| **Track** | Concentric ring on one platter surface | 100KÃ¢â‚¬â€œ1M tracks/surface |
 | **Sector** | Smallest addressable data unit | 512 B or 4 KB (Advanced Format) |
 | **Cylinder** | Same track index across all platters | Same as track count |
-| **Cluster/Block** | Group of sectors (file-system unit) | 4 KBâ€“64 KB |
-| **Zone Bit Recording** | Outer tracks hold more sectors than inner | 1.5â€“2Ã— more in outer zone |
+| **Cluster/Block** | Group of sectors (file-system unit) | 4 KBÃ¢â‚¬â€œ64 KB |
+| **Zone Bit Recording** | Outer tracks hold more sectors than inner | 1.5Ã¢â‚¬â€œ2Ãƒâ€” more in outer zone |
 | **Actuator Arm** | Positions R/W heads across platters | < 10 ms full stroke |
 | **Spindle** | Rotates platters at constant RPM | 5400, 7200, 10000, 15000 RPM |
-| **Areal Density** | Bits per unit area | ~1 Tb/inÂ² (2025 gen) |
+| **Areal Density** | Bits per unit area | ~1 Tb/inÃ‚Â² (2025 gen) |
 
 ### 1.3 Disk Access Time
 
@@ -116,18 +116,18 @@ Magnetic hard disk drives (HDDs) consist of:
 Access Time = Seek Time + Rotational Latency + Transfer Time
 ```
 
-**Seek Time** → Move actuator arm to correct cylinder (3â€“15 ms, avg 4â€“10 ms). Dominant factor (70â€“80% of access time).
+**Seek Time** â†’ Move actuator arm to correct cylinder (3Ã¢â‚¬â€œ15 ms, avg 4Ã¢â‚¬â€œ10 ms). Dominant factor (70Ã¢â‚¬â€œ80% of access time).
 
-**Rotational Latency** → Time for sector to rotate under head. Average = half rotation.
-- 7200 RPM: 60/7200 = 8.33 ms/rotation → avg 4.17 ms
-- 15000 RPM: 60/15000 = 4 ms/rotation → avg 2 ms
+**Rotational Latency** â†’ Time for sector to rotate under head. Average = half rotation.
+- 7200 RPM: 60/7200 = 8.33 ms/rotation â†’ avg 4.17 ms
+- 15000 RPM: 60/15000 = 4 ms/rotation â†’ avg 2 ms
 
-**Transfer Time** → Read/write data once positioned (100â€“200 MB/s). 4 KB / 150 MB/s â‰ˆ 0.027 ms.
+**Transfer Time** â†’ Read/write data once positioned (100Ã¢â‚¬â€œ200 MB/s). 4 KB / 150 MB/s Ã¢â€°Ë† 0.027 ms.
 
 | Operation | Seek | Rotate | Transfer | Total | Ratio |
 |-----------|------|--------|----------|-------|-------|
-| Random 4 KB (7200 RPM) | 5 ms | 4.17 ms | 0.027 ms | 9.2 ms | 100KÃ— L1 cache |
-| Sequential 1 MB | 0 ms | 4.17 ms | 6.67 ms | 10.84 ms | → |
+| Random 4 KB (7200 RPM) | 5 ms | 4.17 ms | 0.027 ms | 9.2 ms | 100KÃƒâ€” L1 cache |
+| Sequential 1 MB | 0 ms | 4.17 ms | 6.67 ms | 10.84 ms | â†’ |
 
 ### 1.4 Real-World Analogy: Library Bookshelf
 
@@ -146,20 +146,20 @@ An elevator zigzagging between random floors (FCFS) wastes time. Moving directio
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|--------------|
-| Cost/GB | Very low (~$15/TB) | → |
-| Capacity | Up to 24+ TB/drive | → |
-| Random IOPS | → | ~100â€“200 (vs SSD ~100K+) |
-| Sequential BW | ~200 MB/s | → |
-| Durability | → | Mechanical; shock sensitive |
-| Power | → | 5â€“15 W continuously |
-| Latency | → | 5â€“15 ms (1000Ã— worse than SSD) |
+| Cost/GB | Very low (~$15/TB) | â†’ |
+| Capacity | Up to 24+ TB/drive | â†’ |
+| Random IOPS | â†’ | ~100Ã¢â‚¬â€œ200 (vs SSD ~100K+) |
+| Sequential BW | ~200 MB/s | â†’ |
+| Durability | â†’ | Mechanical; shock sensitive |
+| Power | â†’ | 5Ã¢â‚¬â€œ15 W continuously |
+| Latency | â†’ | 5Ã¢â‚¬â€œ15 ms (1000Ãƒâ€” worse than SSD) |
 
 ### 1.6 Edge Cases
 
 
-**No seek (contiguous access):** All requests on same cylinder → seek = 0. Throughput approaches max (~200 MB/s).
+**No seek (contiguous access):** All requests on same cylinder â†’ seek = 0. Throughput approaches max (~200 MB/s).
 
-**Fragmented file:** File scattered across cylinders → seek per block. Random 4 KB IOPS ~100â€“200 vs sequential ~50K+ equivalent.
+**Fragmented file:** File scattered across cylinders â†’ seek per block. Random 4 KB IOPS ~100Ã¢â‚¬â€œ200 vs sequential ~50K+ equivalent.
 
 **Zoned bit recording:** Outer tracks have more sectors. Requests to outer cylinders complete faster per track.
 
@@ -172,27 +172,27 @@ Reorder pending I/O request queue to minimize seek time (dominant component).
 ### Common Benchmark Queue
 
 
-All examples: `[98, 183, 37, 122, 14, 124, 65, 67]`, head=53, disk 0â€“199.
+All examples: `[98, 183, 37, 122, 14, 124, 65, 67]`, head=53, disk 0Ã¢â‚¬â€œ199.
 
 ### 2.1 FCFS (First-Come, First-Served)
 
 
-**Analogy:** Elevator processes floor requests in button-press order → zigzags wildly.
+**Analogy:** Elevator processes floor requests in button-press order â†’ zigzags wildly.
 
 **Steps:**
 1. Receive queue in FIFO order.
 2. Move from current to first request.
-3. Distance = |current âˆ’ target|. Add to total. Set current = target.
+3. Distance = |current Ã¢Ë†â€™ target|. Add to total. Set current = target.
 4. Repeat for each remaining request.
 5. Return total.
 
 **Pseudocode:**
 ```
 FUNCTION FCFS(queue, head):
-    total ← 0; current ← head
+    total â† 0; current â† head
     FOR each request IN queue:
-        total += |current âˆ’ request|
-        current ← request
+        total += |current Ã¢Ë†â€™ request|
+        current â† request
     RETURN total
 ```
 
@@ -200,15 +200,15 @@ FUNCTION FCFS(queue, head):
 
 | Step | Current | Request | Distance | Total | Path |
 |------|---------|---------|----------|-------|------|
-| Start | 53 | → | → | 0 | 53 |
-| 1 | 53 | 98 | 45 | 45 | 53 → 98 |
-| 2 | 98 | 183 | 85 | 130 | → 183 |
-| 3 | 183 | 37 | 146 | 276 | → 37 |
-| 4 | 37 | 122 | 85 | 361 | → 122 |
-| 5 | 122 | 14 | 108 | 469 | → 14 |
-| 6 | 14 | 124 | 110 | 579 | → 124 |
-| 7 | 124 | 65 | 59 | 638 | → 65 |
-| 8 | 65 | 67 | 2 | 640 | → 67 |
+| Start | 53 | â†’ | â†’ | 0 | 53 |
+| 1 | 53 | 98 | 45 | 45 | 53 â†’ 98 |
+| 2 | 98 | 183 | 85 | 130 | â†’ 183 |
+| 3 | 183 | 37 | 146 | 276 | â†’ 37 |
+| 4 | 37 | 122 | 85 | 361 | â†’ 122 |
+| 5 | 122 | 14 | 108 | 469 | â†’ 14 |
+| 6 | 14 | 124 | 110 | 579 | â†’ 124 |
+| 7 | 124 | 65 | 59 | 638 | â†’ 65 |
+| 8 | 65 | 67 | 2 | 640 | â†’ 67 |
 
 **Total: 640 cylinders**
 
@@ -261,12 +261,12 @@ fcfs(requests, 53)
 | Simple, starvation-free | High seek (640); wild oscillations |
 | Fair (FIFO order) | Poor throughput under mixed load |
 
-**Edge Cases:** Empty = 0. Same cylinder = 0. Alternating extremes [199,0,199,0] → 1194 total (thrashing).
+**Edge Cases:** Empty = 0. Same cylinder = 0. Alternating extremes [199,0,199,0] â†’ 1194 total (thrashing).
 
 ### 2.2 SSTF (Shortest Seek Time First)
 
 
-**Analogy:** Courier delivers to nearest address first → distant customer may wait forever.
+**Analogy:** Courier delivers to nearest address first â†’ distant customer may wait forever.
 
 **Steps:**
 1. Scan entire pending queue at current position.
@@ -278,11 +278,11 @@ fcfs(requests, 53)
 **Pseudocode:**
 ```
 FUNCTION SSTF(queue, head):
-    total ← 0; current ← head; pending ← copy(queue)
+    total â† 0; current â† head; pending â† copy(queue)
     WHILE pending NOT EMPTY:
-        nearest ← argmin over pending of |current âˆ’ r|
-        total += |current âˆ’ nearest|
-        current ← nearest
+        nearest â† argmin over pending of |current Ã¢Ë†â€™ r|
+        total += |current Ã¢Ë†â€™ nearest|
+        current â† nearest
         REMOVE nearest FROM pending
     RETURN total
 ```
@@ -291,15 +291,15 @@ FUNCTION SSTF(queue, head):
 
 | Step | Current | Pending | Nearest | Dist | Total | Path |
 |------|---------|---------|---------|------|-------|------|
-| Start | 53 | all | → | → | 0 | 53 |
-| 1 | 53 | all | 65 (12) | 12 | 12 | → 65 |
-| 2 | 65 | (98,183,37,122,14,124,67) | 67 (2) | 2 | 14 | → 67 |
-| 3 | 67 | (98,183,37,122,14,124) | 37 (30) | 30 | 44 | → 37 |
-| 4 | 37 | (98,183,122,14,124) | 14 (23) | 23 | 67 | → 14 |
-| 5 | 14 | (98,183,122,124) | 98 (84) | 84 | 151 | → 98 |
-| 6 | 98 | (183,122,124) | 122 (24) | 24 | 175 | → 122 |
-| 7 | 122 | (183,124) | 124 (2) | 2 | 177 | → 124 |
-| 8 | 124 | (183) | 183 (59) | 59 | 236 | → 183 |
+| Start | 53 | all | â†’ | â†’ | 0 | 53 |
+| 1 | 53 | all | 65 (12) | 12 | 12 | â†’ 65 |
+| 2 | 65 | (98,183,37,122,14,124,67) | 67 (2) | 2 | 14 | â†’ 67 |
+| 3 | 67 | (98,183,37,122,14,124) | 37 (30) | 30 | 44 | â†’ 37 |
+| 4 | 37 | (98,183,122,14,124) | 14 (23) | 23 | 67 | â†’ 14 |
+| 5 | 14 | (98,183,122,124) | 98 (84) | 84 | 151 | â†’ 98 |
+| 6 | 98 | (183,122,124) | 122 (24) | 24 | 175 | â†’ 122 |
+| 7 | 122 | (183,124) | 124 (2) | 2 | 177 | â†’ 124 |
+| 8 | 124 | (183) | 183 (59) | 59 | 236 | â†’ 183 |
 
 **Total: 236 cylinders**
 
@@ -351,25 +351,25 @@ def sstf(requests: list, head: int) -> int:
 sstf([98, 183, 37, 122, 14, 124, 65, 67], 53)
 ```
 
-**Complexity: O(nÂ²)** time (scan for each request), **O(n)** space (visited flags).
+**Complexity: O(nÃ‚Â²)** time (scan for each request), **O(n)** space (visited flags).
 
 **A&D:**
 
 | Advantage | Disadvantage |
 |-----------|-------------|
-| Lower seek than FCFS (236) | **Starvation** → distant requests may wait forever |
-| Fast nearby response | O(nÂ²) → expensive for large queues |
+| Lower seek than FCFS (236) | **Starvation** â†’ distant requests may wait forever |
+| Fast nearby response | O(nÃ‚Â²) â†’ expensive for large queues |
 
-**Edge Cases:** Tie → pick any. Same cylinder → 0. Large queue (~50M distance calculations for 10K requests).
+**Edge Cases:** Tie â†’ pick any. Same cylinder â†’ 0. Large queue (~50M distance calculations for 10K requests).
 
 ### 2.3 SCAN (Elevator Algorithm)
 
 
-**Analogy:** Elevator moves one direction, servicing requests. Reverses at top floor → no starvation.
+**Analogy:** Elevator moves one direction, servicing requests. Reverses at top floor â†’ no starvation.
 
 **Steps:**
 1. Choose direction (toward 0 or max). Sort queue ascending.
-2. Partition into left (< head) and right (â‰¥ head).
+2. Partition into left (< head) and right (Ã¢â€°Â¥ head).
 3. Move in chosen direction, service encountered requests.
 4. At **physical disk end** (0 or 199), reverse.
 5. Service remaining in reverse direction.
@@ -378,32 +378,32 @@ sstf([98, 183, 37, 122, 14, 124, 65, 67], 53)
 **Pseudocode:**
 ```
 FUNCTION SCAN(queue, head, disk_size, toward_zero):
-    sorted ← SORT(queue); left ← [r< head]; right ← [r â‰¥ head]
-    total ← 0; current ← head
+    sorted â† SORT(queue); left â† [r< head]; right â† [r Ã¢â€°Â¥ head]
+    total â† 0; current â† head
     IF toward_zero:
-        FOR r IN REVERSE(left): total += |cur âˆ’ r|; cur ← r
-        total += cur; cur ← 0
-        FOR r IN right: total += |cur âˆ’ r|; cur ← r
+        FOR r IN REVERSE(left): total += |cur Ã¢Ë†â€™ r|; cur â† r
+        total += cur; cur â† 0
+        FOR r IN right: total += |cur Ã¢Ë†â€™ r|; cur â† r
     RETURN total
 ```
 
 **Dry Run Trace (toward 0):**
 
 Sorted: [14, 37, 65, 67, 98, 122, 124, 183]
-Left: [37, 14] → Right: [65, 67, 98, 122, 124, 183]
+Left: [37, 14] â†’ Right: [65, 67, 98, 122, 124, 183]
 
 | Step | Move | Distance | Total |
 |------|------|----------|-------|
-| Start 53 | → | → | 0 |
-| 53 → 37 | 37 service | 16 | 16 |
-| 37 → 14 | 14 service | 23 | 39 |
-| 14 → 0 | disk end | 14 | 53 |
-| 0 → 65 | reverse, service | 65 | 118 |
-| 65 → 67 | service | 2 | 120 |
-| 67 → 98 | service | 31 | 151 |
-| 98 → 122 | service | 24 | 175 |
-| 122 → 124 | service | 2 | 177 |
-| 124 → 183 | service | 59 | 236 |
+| Start 53 | â†’ | â†’ | 0 |
+| 53 â†’ 37 | 37 service | 16 | 16 |
+| 37 â†’ 14 | 14 service | 23 | 39 |
+| 14 â†’ 0 | disk end | 14 | 53 |
+| 0 â†’ 65 | reverse, service | 65 | 118 |
+| 65 â†’ 67 | service | 2 | 120 |
+| 67 â†’ 98 | service | 31 | 151 |
+| 98 â†’ 122 | service | 24 | 175 |
+| 122 â†’ 124 | service | 2 | 177 |
+| 124 â†’ 183 | service | 59 | 236 |
 
 **Total: 236 cylinders**
 
@@ -466,7 +466,7 @@ scan([98, 183, 37, 122, 14, 124, 65, 67], 53, 200, True)
 | Good seek (236) | Goes to disk end unnecessarily |
 | Directional sweep | Direction choice affects total |
 
-**Edge Cases:** No requests in direction → waste. Head at extreme → reversal. All one side → like FCFS.
+**Edge Cases:** No requests in direction â†’ waste. Head at extreme â†’ reversal. All one side â†’ like FCFS.
 
 ### 2.4 C-SCAN (Circular SCAN)
 
@@ -478,17 +478,17 @@ scan([98, 183, 37, 122, 14, 124, 65, 67], 53, 200, True)
 2. Service left (toward 0).
 3. At 0, **jump** to 199 (no service).
 4. Service right descending from 199.
-5. Jump adds disk_size âˆ’ 1 to total.
+5. Jump adds disk_size Ã¢Ë†â€™ 1 to total.
 
 **Pseudocode:**
 ```
 FUNCTION CSCAN(queue, head, disk_size):
-    sorted ← SORT(queue); left ← [r< head]; right ← [r â‰¥ head]
-    total ← 0; cur ← head
-    FOR r IN REVERSE(left): total += |cur âˆ’ r|; cur ← r
-    total += cur; cur ← 0
-    total += (disk_size âˆ’ 1); cur ← disk_size âˆ’ 1
-    FOR r IN REVERSE(right): total += |cur âˆ’ r|; cur ← r
+    sorted â† SORT(queue); left â† [r< head]; right â† [r Ã¢â€°Â¥ head]
+    total â† 0; cur â† head
+    FOR r IN REVERSE(left): total += |cur Ã¢Ë†â€™ r|; cur â† r
+    total += cur; cur â† 0
+    total += (disk_size Ã¢Ë†â€™ 1); cur â† disk_size Ã¢Ë†â€™ 1
+    FOR r IN REVERSE(right): total += |cur Ã¢Ë†â€™ r|; cur â† r
     RETURN total
 ```
 
@@ -496,17 +496,17 @@ FUNCTION CSCAN(queue, head, disk_size):
 
 | Step | Move | Distance | Total |
 |------|------|----------|-------|
-| Start 53 | → | → | 0 |
-| 53 → 37 | service | 16 | 16 |
-| 37 → 14 | service | 23 | 39 |
-| 14 → 0 | disk end | 14 | 53 |
-| 0 → 199 | **jump** | 199 | 252 |
-| 199 → 183 | service | 16 | 268 |
-| 183 → 124 | service | 59 | 327 |
-| 124 → 122 | service | 2 | 329 |
-| 122 → 98 | service | 24 | 353 |
-| 98 → 67 | service | 31 | 384 |
-| 67 → 65 | service | 2 | **386** |
+| Start 53 | â†’ | â†’ | 0 |
+| 53 â†’ 37 | service | 16 | 16 |
+| 37 â†’ 14 | service | 23 | 39 |
+| 14 â†’ 0 | disk end | 14 | 53 |
+| 0 â†’ 199 | **jump** | 199 | 252 |
+| 199 â†’ 183 | service | 16 | 268 |
+| 183 â†’ 124 | service | 59 | 327 |
+| 124 â†’ 122 | service | 2 | 329 |
+| 122 â†’ 98 | service | 24 | 353 |
+| 98 â†’ 67 | service | 31 | 384 |
+| 67 â†’ 65 | service | 2 | **386** |
 
 **Total: 386 cylinders**
 
@@ -572,7 +572,7 @@ cscan([98, 183, 37, 122, 14, 124, 65, 67], 53, 200)
 ### 2.5 LOOK (Elevator, Early Turnaround)
 
 
-**Analogy:** Elevator that checks ahead → turns at last requested floor. No empty trips.
+**Analogy:** Elevator that checks ahead â†’ turns at last requested floor. No empty trips.
 
 **Steps:**
 1. Sort ascending. Partition left/right.
@@ -584,10 +584,10 @@ cscan([98, 183, 37, 122, 14, 124, 65, 67], 53, 200)
 **Pseudocode:**
 ```
 FUNCTION LOOK(queue, head):
-    sorted ← SORT(queue); left ← [r< head]; right ← [r â‰¥ head]
-    total ← 0; cur ← head
-    FOR r IN REVERSE(left): total += |cur âˆ’ r|; cur ← r
-    FOR r IN right: total += |cur âˆ’ r|; cur ← r
+    sorted â† SORT(queue); left â† [r< head]; right â† [r Ã¢â€°Â¥ head]
+    total â† 0; cur â† head
+    FOR r IN REVERSE(left): total += |cur Ã¢Ë†â€™ r|; cur â† r
+    FOR r IN right: total += |cur Ã¢Ë†â€™ r|; cur â† r
     RETURN total
 ```
 
@@ -595,17 +595,17 @@ FUNCTION LOOK(queue, head):
 
 | Step | Move | Distance | Total |
 |------|------|----------|-------|
-| Start 53 | → | → | 0 |
-| 53 → 37 | service | 16 | 16 |
-| 37 → 14 | service | 23 | 39 |
-| 14 → 65 | reverse at last left | 51 | 90 |
-| 65 → 67 | service | 2 | 92 |
-| 67 → 98 | service | 31 | 123 |
-| 98 → 122 | service | 24 | 147 |
-| 122 → 124 | service | 2 | 149 |
-| 124 → 183 | service | 59 | **208** |
+| Start 53 | â†’ | â†’ | 0 |
+| 53 â†’ 37 | service | 16 | 16 |
+| 37 â†’ 14 | service | 23 | 39 |
+| 14 â†’ 65 | reverse at last left | 51 | 90 |
+| 65 â†’ 67 | service | 2 | 92 |
+| 67 â†’ 98 | service | 31 | 123 |
+| 98 â†’ 122 | service | 24 | 147 |
+| 122 â†’ 124 | service | 2 | 149 |
+| 124 â†’ 183 | service | 59 | **208** |
 
-**Total: 208 cylinders** (28 less than SCAN → no 14→0→65 waste).
+**Total: 208 cylinders** (28 less than SCAN â†’ no 14â†’0â†’65 waste).
 
 **C++:**
 ```cpp
@@ -669,16 +669,16 @@ look([98, 183, 37, 122, 14, 124, 65, 67], 53)
 2. Service left (toward 0).
 3. At last left request, **jump** directly to farthest right request.
 4. Service right descending from farthest.
-5. Jump = |last_left âˆ’ farthest_right|.
+5. Jump = |last_left Ã¢Ë†â€™ farthest_right|.
 
 **Pseudocode:**
 ```
 FUNCTION CLOOK(queue, head):
-    sorted ← SORT(queue); left ← [r< head]; right ← [r â‰¥ head]
-    total ← 0; cur ← head
-    FOR r IN REVERSE(left): total += |cur âˆ’ r|; cur ← r
-    total += |cur âˆ’ right[last]|; cur ← right[last]
-    FOR r IN REVERSE(right): total += |cur âˆ’ r|; cur ← r
+    sorted â† SORT(queue); left â† [r< head]; right â† [r Ã¢â€°Â¥ head]
+    total â† 0; cur â† head
+    FOR r IN REVERSE(left): total += |cur Ã¢Ë†â€™ r|; cur â† r
+    total += |cur Ã¢Ë†â€™ right[last]|; cur â† right[last]
+    FOR r IN REVERSE(right): total += |cur Ã¢Ë†â€™ r|; cur â† r
     RETURN total
 ```
 
@@ -686,15 +686,15 @@ FUNCTION CLOOK(queue, head):
 
 | Step | Move | Distance | Total |
 |------|------|----------|-------|
-| Start 53 | → | → | 0 |
-| 53 → 37 | service | 16 | 16 |
-| 37 → 14 | service | 23 | 39 |
-| 14 → 183 | **jump** | 169 | 208 |
-| 183 → 124 | service | 59 | 267 |
-| 124 → 122 | service | 2 | 269 |
-| 122 → 98 | service | 24 | 293 |
-| 98 → 67 | service | 31 | 324 |
-| 67 → 65 | service | 2 | **326** |
+| Start 53 | â†’ | â†’ | 0 |
+| 53 â†’ 37 | service | 16 | 16 |
+| 37 â†’ 14 | service | 23 | 39 |
+| 14 â†’ 183 | **jump** | 169 | 208 |
+| 183 â†’ 124 | service | 59 | 267 |
+| 124 â†’ 122 | service | 2 | 269 |
+| 122 â†’ 98 | service | 24 | 293 |
+| 98 â†’ 67 | service | 31 | 324 |
+| 67 â†’ 65 | service | 2 | **326** |
 
 **Total: 326 cylinders** (between LOOK 208 and C-SCAN 386).
 
@@ -758,16 +758,16 @@ clook([98, 183, 37, 122, 14, 124, 65, 67], 53)
 ### 2.7 Comparison Table
 
 
-Same queue `[98, 183, 37, 122, 14, 124, 65, 67]`, head=53, disk 0â€“199:
+Same queue `[98, 183, 37, 122, 14, 124, 65, 67]`, head=53, disk 0Ã¢â‚¬â€œ199:
 
 | Algorithm | Total Seek | vs FCFS | Starvation | Uniform | Complexity |
 |-----------|-----------|---------|------------|---------|------------|
-| **FCFS** | 640 | → | No | Poor | O(n) |
-| **SSTF** | 236 | âˆ’63% | **Yes** | Poor | O(nÂ²) |
-| **SCAN** | 236 | âˆ’63% | No | Moderate | O(n log n) |
-| **C-SCAN** | 386 | âˆ’40% | No | **Best** | O(n log n) |
-| **LOOK** | **208** | **âˆ’68%** | No | Moderate | O(n log n) |
-| **C-LOOK** | 326 | âˆ’49% | No | **Best** | O(n log n) |
+| **FCFS** | 640 | â†’ | No | Poor | O(n) |
+| **SSTF** | 236 | Ã¢Ë†â€™63% | **Yes** | Poor | O(nÃ‚Â²) |
+| **SCAN** | 236 | Ã¢Ë†â€™63% | No | Moderate | O(n log n) |
+| **C-SCAN** | 386 | Ã¢Ë†â€™40% | No | **Best** | O(n log n) |
+| **LOOK** | **208** | **Ã¢Ë†â€™68%** | No | Moderate | O(n log n) |
+| **C-LOOK** | 326 | Ã¢Ë†â€™49% | No | **Best** | O(n log n) |
 
 LOOK has lowest seek (208). C-LOOK/C-SCAN provide best fairness. Choice depends on workload.
 
@@ -777,9 +777,9 @@ LOOK has lowest seek (208). C-LOOK/C-SCAN provide best fairness. Choice depends 
 | Aspect | SSTF | SCAN |
 |--------|------|------|
 | Selection | Nearest distance | Next in sweep direction |
-| Starvation | **Yes** → distant may wait forever | **No** → direction reversal guarantees service |
-| Scenario | Head=50, queue=[1000,51,52,49,48...]: SSTF serves 47â€“52 cluster forever, 1000 never reached | Head=50, toward 0: services 49,48... reverses at 0, goes up to 1000 |
-| Variance | Very high (Âµs to âˆž) | Bounded by sweep time |
+| Starvation | **Yes** â†’ distant may wait forever | **No** â†’ direction reversal guarantees service |
+| Scenario | Head=50, queue=[1000,51,52,49,48...]: SSTF serves 47Ã¢â‚¬â€œ52 cluster forever, 1000 never reached | Head=50, toward 0: services 49,48... reverses at 0, goes up to 1000 |
+| Variance | Very high (Ã‚Âµs to Ã¢Ë†Å¾) | Bounded by sweep time |
 | Verdict | Unsuitable for production kernels | Safe for all workloads |
 
 ### 2.9 Complexity Summary
@@ -788,13 +788,13 @@ LOOK has lowest seek (208). C-LOOK/C-SCAN provide best fairness. Choice depends 
 | Algorithm | Time | Space | Why Space |
 |-----------|------|-------|-----------|
 | FCFS | O(n) | O(1) | No aux structures |
-| SSTF | O(nÂ²) | O(n) | Visited flags |
+| SSTF | O(nÃ‚Â²) | O(n) | Visited flags |
 | SCAN | O(n log n) | O(n) | Sorted + partitions |
 | C-SCAN | O(n log n) | O(n) | Sorted + partitions |
 | LOOK | O(n log n) | O(n) | Sorted + partitions |
 | C-LOOK | O(n log n) | O(n) | Sorted + partitions |
 
-SSTF O(nÂ²) becomes prohibitive at scale (10K req → ~50M distance calcs).
+SSTF O(nÃ‚Â²) becomes prohibitive at scale (10K req â†’ ~50M distance calcs).
 
 ### 2.10 Combined Edge Cases
 
@@ -803,7 +803,7 @@ SSTF O(nÂ²) becomes prohibitive at scale (10K req → ~50M distance calcs).
 |------|------|------|------|--------|------|--------|
 | Single request | Same | Same | Same | Same | Same | Same |
 | Same cylinder | 0 | 0 | 0 | 0 | 0 | 0 |
-| All left of head | Arrival | Nearest | Left→0→reverse | Left→0→jump→desc | Left→reverse at min | Left→jump→max→desc |
+| All left of head | Arrival | Nearest | Leftâ†’0â†’reverse | Leftâ†’0â†’jumpâ†’desc | Leftâ†’reverse at min | Leftâ†’jumpâ†’maxâ†’desc |
 | Alternating extremes | Max thrashing | Moderate | Directional (good) | Jump overhead | Directional (best) | Jump overhead |
 | Concurrent arrivals | Added to tail | May starve | Next sweep | Next sweep | Next sweep | Next sweep |
 
@@ -816,19 +816,19 @@ SSTF O(nÂ²) becomes prohibitive at scale (10K req → ~50M distance calcs).
 
 **Low-Level (Physical):** Divides disk into sectors (headers, data, ECC). Done at factory. Advanced Format: 4 KB physical sectors for better ECC.
 
-**Partitioning:** Logical groups of cylinders, each treated as separate device. Partition table in MBR (â‰¤2 TB, â‰¤4 primaries) or GPT (>2 TB, â‰¤128 partitions, backup at end).
+**Partitioning:** Logical groups of cylinders, each treated as separate device. Partition table in MBR (Ã¢â€°Â¤2 TB, Ã¢â€°Â¤4 primaries) or GPT (>2 TB, Ã¢â€°Â¤128 partitions, backup at end).
 
 **Logical Formatting (mkfs):** Creates superblock, inode table/bitmap, free block bitmap, root directory for a specific FS type (ext4, NTFS, XFS, Btrfs).
 
 ```
 Disk Layout:
-┌─────────────┬─────────────┬─────────────┬─────────────┐
-│ Partition 1 │ Partition 2 │ Partition 3 │ Partition 4 │
-│ (ext4)      │ (NTFS)      │ (swap)      │ (XFS)       │
-└─────────────┴─────────────┴─────────────┴─────────────┘
-┌───────────────────────────────────────────────────────┐
-│ GPT Header (LBA 1)       │ Partition entries (LBA 2â€“33) │
-└───────────────────────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ Partition 1 â”‚ Partition 2 â”‚ Partition 3 â”‚ Partition 4 â”‚
+â”‚ (ext4)      â”‚ (NTFS)      â”‚ (swap)      â”‚ (XFS)       â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ GPT Header (LBA 1)       â”‚ Partition entries (LBA 2Ã¢â‚¬â€œ33) â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### 3.2 Boot Block
@@ -836,12 +836,12 @@ Disk Layout:
 
 **MBR (Master Boot Record):**
 - LBA 0, 512 bytes: 440 boot code + 4 sig + 64 partition table + 2 (0xAA55).
-- BIOS loads MBR → boot code loads active partition's VBR → OS kernel.
-- Limits: â‰¤2 TB, â‰¤4 primary partitions.
+- BIOS loads MBR â†’ boot code loads active partition's VBR â†’ OS kernel.
+- Limits: Ã¢â€°Â¤2 TB, Ã¢â€°Â¤4 primary partitions.
 
 **GPT (GUID Partition Table):**
 - LBA 0: protective MBR (backward compat).
-- LBA 1: GPT header; LBA 2â€“33: partition entries (128 Ã— 128 bytes).
+- LBA 1: GPT header; LBA 2Ã¢â‚¬â€œ33: partition entries (128 Ãƒâ€” 128 bytes).
 - Backup GPT at last LBAs for redundancy.
 - UEFI firmware standard. Supports >2 TB and unlimited partitions (128 by convention).
 ### 3.3 Bad Block Handling
@@ -850,25 +850,25 @@ Disk Layout:
 **Sector Sparing (Forwarding):** Controller remaps bad sector LBA to a spare from reserved pool.
 - **P-List** (primary): Factory-detected defects.
 - **G-List** (grown): Lifecycle defects, remapped dynamically.
-- Transparent to OS → controller handles on every read/write.
+- Transparent to OS â†’ controller handles on every read/write.
 
 ```
-Bad sector detected → controller remaps LBA to spare sector → OS none the wiser
+Bad sector detected â†’ controller remaps LBA to spare sector â†’ OS none the wiser
 ```
 
 **Sector Slipping:** During low-level format, sectors shifted past bad sector. Bad sector never gets LBAs.
 
-**Modern Practice:** Reed-Solomon/LDPC ECC recovers marginal sectors. S.M.A.R.T. tracks reallocated counts. Increasing reallocations → imminent failure.
+**Modern Practice:** Reed-Solomon/LDPC ECC recovers marginal sectors. S.M.A.R.T. tracks reallocated counts. Increasing reallocations â†’ imminent failure.
 
 ### 3.4 Disk Management Edge Cases
 
 
 | Case | Handling |
 |------|----------|
-| Increasing bad blocks | S.M.A.R.T. alert → replace drive |
+| Increasing bad blocks | S.M.A.R.T. alert â†’ replace drive |
 | Bad block in FS metadata | fsck/chkdsk attempts recovery |
 | Bad block during write | Controller remaps (G-List grows) |
-| Bad block during read | ECC retry → remap; data loss if ECC fails |
+| Bad block during read | ECC retry â†’ remap; data loss if ECC fails |
 | MBR sector goes bad | Catastrophic (GPT backup can recover) |
 | Partition table corrupt | GPT has backup; MBR has none |
 | 4K sector on 512B OS | Alignment issues; modern OS handles transparently |
@@ -894,9 +894,9 @@ stripe0   stripe1   stripe2
 stripe3   stripe4   stripe5
 ```
 
-- **Min disks:** 2 | **Capacity:** N Ã— disk (100%)
+- **Min disks:** 2 | **Capacity:** N Ãƒâ€” disk (100%)
 - **Read:** Excellent (parallel) | **Write:** Excellent (parallel)
-- **Reliability:** **None** → any single failure destroys all data
+- **Reliability:** **None** â†’ any single failure destroys all data
 - **Use:** Scratch space, temp files, non-critical throughput
 
 #### RAID 1 (Mirroring)
@@ -909,9 +909,9 @@ block 0   block 0
 block 1   block 1
 ```
 
-- **Min disks:** 2 | **Capacity:** N/2 Ã— disk (50%)
-- **Read:** Good (read from either, 2Ã— for 2-disk) | **Write:** Slower (write to both)
-- **Reliability:** Excellent → survive Nâˆ’1 of N failures
+- **Min disks:** 2 | **Capacity:** N/2 Ãƒâ€” disk (50%)
+- **Read:** Good (read from either, 2Ãƒâ€” for 2-disk) | **Write:** Slower (write to both)
+- **Reliability:** Excellent â†’ survive NÃ¢Ë†â€™1 of N failures
 - **Use:** OS partitions, transaction logs, critical metadata
 
 #### RAID 5 (Striping with Distributed Parity)
@@ -925,8 +925,8 @@ D3      D4      P3-5    D5
 D6      P6-8    D7      D8
 ```
 
-- **Min disks:** 3 | **Capacity:** (Nâˆ’1)/N Ã— disk
-- **Read:** Excellent | **Write:** **Poor → 4 I/O penalty per small write**
+- **Min disks:** 3 | **Capacity:** (NÃ¢Ë†â€™1)/N Ãƒâ€” disk
+- **Read:** Excellent | **Write:** **Poor â†’ 4 I/O penalty per small write**
 - **RAID 5 Write Penalty (4 I/Os):**
   1. Read old data block
   2. Read old parity block
@@ -939,27 +939,27 @@ D6      P6-8    D7      D8
 
 Two parity blocks per stripe (P+Q or Reed-Solomon).
 
-- **Min disks:** 4 | **Capacity:** (Nâˆ’2)/N Ã— disk
-- **Read:** Excellent | **Write:** **Very poor → 6 I/O penalty**
+- **Min disks:** 4 | **Capacity:** (NÃ¢Ë†â€™2)/N Ãƒâ€” disk
+- **Read:** Excellent | **Write:** **Very poor â†’ 6 I/O penalty**
 - **Reliability:** Survives 2 simultaneous failures
 - **Use:** Large arrays where rebuild time is long (protects against second failure during rebuild)
 
-#### RAID 10 (RAID 1+0 → Striped Mirrors)
+#### RAID 10 (RAID 1+0 â†’ Striped Mirrors)
 
 Mirror pairs (RAID 1) striped together (RAID 0).
 
 ```
             RAID 0
-       ┌──────┬──────┐
+       â”Œâ”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”
      RAID 1  RAID 1  RAID 1
-    ┌───┐   ┌───┐   ┌───┐
+    â”Œâ”€â”€â”€â”   â”Œâ”€â”€â”€â”   â”Œâ”€â”€â”€â”
    D0  D1  D2  D3  D4  D5
 ```
 
-- **Min disks:** 4 | **Capacity:** N/2 Ã— disk (50%)
+- **Min disks:** 4 | **Capacity:** N/2 Ãƒâ€” disk (50%)
 - **Read:** Excellent (any disk) | **Write:** Good (both in one mirror pair)
 - **Reliability:** Very good (one failure per mirror set)
-- **Use:** **Most common enterprise RAID** → databases, production workloads
+- **Use:** **Most common enterprise RAID** â†’ databases, production workloads
 
 ### 4.2 RAID Comparison
 
@@ -967,12 +967,12 @@ Mirror pairs (RAID 1) striped together (RAID 0).
 | Level | Min Disks | Redundancy | Read | Write | Capacity | Cost Eff. |
 |-------|-----------|------------|------|-------|----------|-----------|
 | 0 | 2 | None | Excellent | Excellent | 100% | Best |
-| 1 | 2 | Mirror (Nâˆ’1 fail) | Good | Good | 50% | Low |
-| 5 | 3 | Single parity | Good | **Poor** (4 IO) | (Nâˆ’1)/N | High |
-| 6 | 4 | Dual parity | Good | **Very poor** (6 IO) | (Nâˆ’2)/N | Moderate |
+| 1 | 2 | Mirror (NÃ¢Ë†â€™1 fail) | Good | Good | 50% | Low |
+| 5 | 3 | Single parity | Good | **Poor** (4 IO) | (NÃ¢Ë†â€™1)/N | High |
+| 6 | 4 | Dual parity | Good | **Very poor** (6 IO) | (NÃ¢Ë†â€™2)/N | Moderate |
 | 10 | 4 | Mirror per pair | Excellent | Good | 50% | Low |
 
-**4 Ã— 1 TB disks capacity:**
+**4 Ãƒâ€” 1 TB disks capacity:**
 
 | Level | Usable | Note |
 |-------|--------|------|
@@ -985,18 +985,18 @@ Mirror pairs (RAID 1) striped together (RAID 0).
 ### 4.3 RAID Reliability Calculation
 
 
-MTTF of one disk = M (say 1M hours â‰ˆ 114 years).
+MTTF of one disk = M (say 1M hours Ã¢â€°Ë† 114 years).
 
-**RAID 0:** MTTF = M / N (N disks → NÃ— failure probability).
+**RAID 0:** MTTF = M / N (N disks â†’ NÃƒâ€” failure probability).
 
-**RAID 1 (2-disk):** Survives as long as â‰¥1 disk lives. Approx MTTF >> M.
+**RAID 1 (2-disk):** Survives as long as Ã¢â€°Â¥1 disk lives. Approx MTTF >> M.
 
 **RAID 5 (N disks):**
-- P(data loss) = P(any fails) Ã— P(second fails during rebuild)
-- With 4 Ã— 4 TB, 10 hr rebuild, M=1M hr:
-  - P(first failure/year) = 8766/1M â‰ˆ 0.0088 (0.88%)
-  - P(second during rebuild) = 10/1M â‰ˆ 0.00001 (0.001%)
-  - P(data loss/year) â‰ˆ 0.0088 Ã— 0.00001 Ã— 4 Ã— 3 â‰ˆ 1 Ã— 10â»â¹
+- P(data loss) = P(any fails) Ãƒâ€” P(second fails during rebuild)
+- With 4 Ãƒâ€” 4 TB, 10 hr rebuild, M=1M hr:
+  - P(first failure/year) = 8766/1M Ã¢â€°Ë† 0.0088 (0.88%)
+  - P(second during rebuild) = 10/1M Ã¢â€°Ë† 0.00001 (0.001%)
+  - P(data loss/year) Ã¢â€°Ë† 0.0088 Ãƒâ€” 0.00001 Ãƒâ€” 4 Ãƒâ€” 3 Ã¢â€°Ë† 1 Ãƒâ€” 10Ã¢ÂÂ»Ã¢ÂÂ¹
 
 **RAID 6:** Survives 2 failures. Need 3rd during rebuild. Much safer for large arrays.
 
@@ -1009,11 +1009,11 @@ MTTF of one disk = M (say 1M hours â‰ˆ 114 years).
 |----------|----------|
 | RAID 5 failure during rebuild | Second failure = data loss (RAID 6 protects) |
 | RAID 10 single failure | Mirror serves reads; hot-swap rebuilds |
-| RAID 0 failure | Complete data loss → no recovery |
+| RAID 0 failure | Complete data loss â†’ no recovery |
 | Multiple failures in RAID 10 | OK if different mirror sets |
-| Controller cache battery fail | Write-back → write-through (perf drop) |
+| Controller cache battery fail | Write-back â†’ write-through (perf drop) |
 | Rebuild I/O load | Saturates disk I/O, degrades workload |
-| SSD+HDD in same set | Limited to slowest → not recommended |
+| SSD+HDD in same set | Limited to slowest â†’ not recommended |
 | >2 TB on MBR RAID | Must use GPT |
 
 ---
@@ -1039,10 +1039,10 @@ Extends physical memory by providing paging area on disk.
 
 | System | Recommended | Rationale |
 |--------|-------------|-----------|
-| Desktop 4â€“8 GB RAM | 2â€“4 GB | Light paging |
-| Desktop 16+ GB RAM | 4â€“8 GB | Emergency headroom; hibernation |
-| Server 64+ GB RAM | 8â€“16 GB | Emergency only; avoid swapping |
-| Hibernation-enabled | RAM Ã— 1.1 | Must hold full RAM |
+| Desktop 4Ã¢â‚¬â€œ8 GB RAM | 2Ã¢â‚¬â€œ4 GB | Light paging |
+| Desktop 16+ GB RAM | 4Ã¢â‚¬â€œ8 GB | Emergency headroom; hibernation |
+| Server 64+ GB RAM | 8Ã¢â‚¬â€œ16 GB | Emergency only; avoid swapping |
+| Hibernation-enabled | RAM Ãƒâ€” 1.1 | Must hold full RAM |
 | Database server | None/minimal | DB manages own memory |
 
 ### 5.3 Swap Pseudocode
@@ -1071,7 +1071,7 @@ SWAP-OUT(page):
 | **Swap file fragmentation** | Increases swap-out latency |
 | **SSD as swap** | Faster than HDD swap; wear concern if heavy swapping |
 | **No swap** | System limited to physical RAM; OOM sooner |
-| **Linux swappiness** | 0â€“100; default 60; higher = more aggressive swapping |
+| **Linux swappiness** | 0Ã¢â‚¬â€œ100; default 60; higher = more aggressive swapping |
 
 ---
 
@@ -1090,10 +1090,10 @@ SWAP-OUT(page):
 | DB with own I/O mgmt | NOOP |
 | Mixed random+sequential | Deadline or C-LOOK |
 
-### 6.2 RAID Reliability → Interview Answer
+### 6.2 RAID Reliability â†’ Interview Answer
 
 
-**Q:** "5 Ã— 4 TB disks. Compare RAID 0/1/5/6/10 usable capacity, min disks, failure tolerance."
+**Q:** "5 Ãƒâ€” 4 TB disks. Compare RAID 0/1/5/6/10 usable capacity, min disks, failure tolerance."
 
 | Level | Usable | Min Disks | Failure Tolerance |
 |-------|--------|-----------|-------------------|
@@ -1104,27 +1104,27 @@ SWAP-OUT(page):
 | 10 | 10 TB (50%) | 4 | Up to 2 (per mirror pair) |
 
 **Harder:** "4-disk RAID 5, MTTF=1M hr, rebuild=12 hr. Compute data loss probability."
-- P(any fail/yr) = 8766/1M â‰ˆ 0.0088
+- P(any fail/yr) = 8766/1M Ã¢â€°Ë† 0.0088
 - P(second fail during rebuild) = 12/1M = 0.000012
-- P(data loss/yr) â‰ˆ 0.0088 Ã— 0.000012 Ã— 4 Ã— 3 â‰ˆ 1.3 Ã— 10â»â¹
+- P(data loss/yr) Ã¢â€°Ë† 0.0088 Ãƒâ€” 0.000012 Ãƒâ€” 4 Ãƒâ€” 3 Ã¢â€°Ë† 1.3 Ãƒâ€” 10Ã¢ÂÂ»Ã¢ÂÂ¹
 
-### 6.3 Swap Sizing → Interview Answer
+### 6.3 Swap Sizing â†’ Interview Answer
 
 
 **Q:** "How much swap for 128 GB RAM Linux server?"
-**A:** "Minimal swap (4â€“8 GB). Server should be sized to never swap → swapping kills performance. Some swap needed as emergency headroom and for kdump crash dumps. Hibernation requires swap â‰¥ RAM."
+**A:** "Minimal swap (4Ã¢â‚¬â€œ8 GB). Server should be sized to never swap â†’ swapping kills performance. Some swap needed as emergency headroom and for kdump crash dumps. Hibernation requires swap Ã¢â€°Â¥ RAM."
 
 ### 6.4 Common Q&A
 
 
 **Q: Why does C-SCAN have worse seek than SCAN but is still preferred?**
-**A:** C-SCAN provides uniform waiting times. SCAN favors middle cylinders (serviced twice per cycle). C-SCAN services each cylinder exactly once per cycle → critical for real-time/multimedia.
+**A:** C-SCAN provides uniform waiting times. SCAN favors middle cylinders (serviced twice per cycle). C-SCAN services each cylinder exactly once per cycle â†’ critical for real-time/multimedia.
 
 **Q: Why RAID 5 write penalty?**
 **A:** Small write = 4 I/Os: read old data + read old parity + XOR + write new data + write new parity = 4 disk I/Os for 1 logical write. RAID 6 = 6 I/Os.
 
 **Q: Can SSTF avoid starvation?**
-**A:** Yes → add request aging. When age > threshold, reduce effective distance. Similar to Linux Deadline scheduler.
+**A:** Yes â†’ add request aging. When age > threshold, reduce effective distance. Similar to Linux Deadline scheduler.
 
 **Q: 4K Advanced Format alignment issue?**
 **A:** OS expecting 512B on 4K physical drive causes read-modify-write per 512B access. Modern OS align partitions to 4K boundaries transparently.
@@ -1161,7 +1161,7 @@ Select per device: `echo <scheduler> > /sys/block/<dev>/queue/scheduler`
 ### 7.2 Windows Storage Stack
 
 
-Windows: I/O Manager → Volume Manager → Class Driver → Port Driver → Storage Driver
+Windows: I/O Manager â†’ Volume Manager â†’ Class Driver â†’ Port Driver â†’ Storage Driver
 
 - **Storport**: Enterprise storage framework (FC, SAS, iSCSI)
 - **StorAHCI**: SATA SSDs/HDDs
@@ -1180,7 +1180,7 @@ Windows: I/O Manager → Volume Manager → Class Driver → Port Driver → Sto
 | Feature | Entry-Level | Enterprise |
 |---------|-------------|------------|
 | **Examples** | LSI MegaRAID, Adaptec | Broadcom 9560, Dell PERC H750 |
-| **Cache** | 512 MBâ€“2 GB | 2â€“8 GB NVDIMM |
+| **Cache** | 512 MBÃ¢â‚¬â€œ2 GB | 2Ã¢â‚¬â€œ8 GB NVDIMM |
 | **Cache Backup** | Battery (BBU) | NVDIMM to flash on power loss |
 | **Features** | RAID 0/1/5/10 | All + RAID 6, hot spare, dedup, encryption |
 | **Interface** | SATA/SAS | SAS3/4, NVMe |
@@ -1466,7 +1466,7 @@ class RaidCalculator {
   }
 }
 
-// Example: 6 × 1TB SAS disks, each 180 IOPS, 200 MB/s sequential
+// Example: 6 Ã— 1TB SAS disks, each 180 IOPS, 200 MB/s sequential
 const calc = new RaidCalculator();
 const configs: RaidConfig[] = [
   { level: 0, numDisks: 6, diskSizeGB: 1000, diskIOPS: 180, diskThroughputMBs: 200 },
@@ -1482,7 +1482,7 @@ calc.compare(configs);
 > **SCAN (elevator)** moves in one direction, services all requests, then reverses. **C-SCAN** provides uniform wait times by servicing only in one direction then jumping back.
 
 > [WARNING]
-> **SSTF** may cause **starvation** → distant cylinder requests may be delayed indefinitely if nearby requests keep arriving.
+> **SSTF** may cause **starvation** â†’ distant cylinder requests may be delayed indefinitely if nearby requests keep arriving.
 
 > [NOTE]
 > **RAID 0** improves performance with no redundancy. **RAID 1** doubles reliability. **RAID 5** balances performance, capacity, and reliability. **RAID 10** combines both for production workloads.
@@ -1577,7 +1577,7 @@ calc.compare(configs);
    - c) Rotational latency
    - d) Controller overhead
 
-9. What is the effective capacity of RAID 5 with 6 × 2 TB disks?
+9. What is the effective capacity of RAID 5 with 6 Ã— 2 TB disks?
    - a) 12 TB
    - b) 10 TB
    - c) 8 TB
@@ -1623,10 +1623,10 @@ calc.compare(configs);
 
 ## Summary
 
-- Disk access time = seek + rotation + transfer; seek dominates (~5â€“10 ms)
+- Disk access time = seek + rotation + transfer; seek dominates (~5Ã¢â‚¬â€œ10 ms)
 - SCAN/C-SCAN and LOOK/C-LOOK reduce total arm movement compared to FCFS
 - C-SCAN and C-LOOK provide uniform waiting times; LOOK achieves lowest seek (208)
-- SSTF can cause **starvation** → unsuitable for production kernels
+- SSTF can cause **starvation** â†’ unsuitable for production kernels
 - RAID 0 (striping) improves performance; RAID 1 (mirroring) improves reliability
 - RAID 5/6 use parity for space-efficient redundancy; RAID 10 combines both
 - RAID 5 has a 4 I/O write penalty; RAID 6 has 6 I/O write penalty
@@ -1642,7 +1642,7 @@ calc.compare(configs);
 
 1. Given a disk with 200 cylinders, compute total head movement for FCFS and SCAN for queue: [86, 147, 12, 95, 177, 23, 55, 104]. Head starts at 50 moving toward 0.
 2. What are the three components of disk access time? Which is typically the largest?
-3. Describe RAID 0, RAID 1, and RAID 5. Effective capacity with 4 Ã— 1 TB disks for each?
+3. Describe RAID 0, RAID 1, and RAID 5. Effective capacity with 4 Ãƒâ€” 1 TB disks for each?
 
 ### Intermediate
 
@@ -1668,13 +1668,13 @@ calc.compare(configs);
 
 13. **SSTF starvation detector**: Write a simulation that demonstrates SSTF starvation. Generate a continuous stream of requests in cylinders 0-50 while a single request sits at cylinder 199. Count how many local requests arrive before the distant request is serviced. Show that with SCAN, the distant request is always serviced within one sweep.
 
-14. **RAID reliability calculator**: Extend the TypeScript RaidCalculator to compute probability of data loss over a given time period using the formula: P_loss = 1 - e^(-N * (N-1) * MTTF_disk * rebuild_time / MTTF²). Compare RAID 5, RAID 6, and RAID 10 for a 10-disk array over 5 years.
+14. **RAID reliability calculator**: Extend the TypeScript RaidCalculator to compute probability of data loss over a given time period using the formula: P_loss = 1 - e^(-N * (N-1) * MTTF_disk * rebuild_time / MTTFÂ²). Compare RAID 5, RAID 6, and RAID 10 for a 10-disk array over 5 years.
 
 15. **Swap sizing simulator**: Write a program that monitors system memory usage over time (using `/proc/meminfo` on Linux) and recommends swap size based on: peak memory pressure, hibernation requirements, and a configurable safety margin (default 20%). Test by running a memory-intensive workload and measuring peak swap usage.
 
 16. **Zoned storage simulator**: Implement a simplified ZNS (Zoned Namespaces) SSD simulator in TypeScript. Create zones of 256 MB each. Each zone must be written sequentially and reset before rewriting. Simulate a workload of random writes and measure write amplification factor (WAF = total physical writes / total logical writes).
 
-17. **NVMe vs HDD latency analyzer**: Create a mathematical model comparing NVMe SSD latency vs HDD latency. For HDD: seek(5ms) + rotation(4.17ms) + transfer(0.04ms) = 9.2ms. For NVMe: queue_dispatch(10μs) + NAND_access(50μs) + transfer(5μs) = 65μs. Compute the ratio and show how queue depth affects performance for each.
+17. **NVMe vs HDD latency analyzer**: Create a mathematical model comparing NVMe SSD latency vs HDD latency. For HDD: seek(5ms) + rotation(4.17ms) + transfer(0.04ms) = 9.2ms. For NVMe: queue_dispatch(10Î¼s) + NAND_access(50Î¼s) + transfer(5Î¼s) = 65Î¼s. Compute the ratio and show how queue depth affects performance for each.
 
 18. **blk-mq simulator**: Implement a simplified multi-queue block layer. Create N software submission queues (one per CPU core), each with a lockless ring buffer. A hardware dispatch queue pulls from software queues in round-robin. Measure throughput scaling from 1 to 32 cores vs a single-queue implementation.
 
@@ -1682,7 +1682,7 @@ calc.compare(configs);
 
 20. **SMR drive simulator**: Implement a shingled magnetic recording (SMR) drive simulator where tracks overlap. Writes to a zone must be sequential. Random writes require a read-merge-write cycle. Track the number of drive-managed vs host-managed operations and compute the write amplification for a random workload.
 
-### A.1 SSTF Starvation → Full Worked Example
+### A.1 SSTF Starvation â†’ Full Worked Example
 
 
 Consider this dynamic scenario where requests arrive over time:
@@ -1692,17 +1692,17 @@ Consider this dynamic scenario where requests arrive over time:
 | Time | Arriving Request | Current Queue | SSTF Choice | SCAN Choice (toward 0) |
 |------|-----------------|---------------|-------------|----------------------|
 | t=0 | 55 | [55] | 55 (dist 5) | Next in sweep (will get on way to 0 then reverse) |
-| t=1 | 53 | [53] | 53 (dist 2) | → |
-| t=2 | 1000 | [1000] | ignores | → |
-| t=3 | 52 | [52, 1000] | 52 (dist 1) | → |
-| t=4 | 54 | [54, 1000] | 54 (dist 2) | → |
-| t=5 | 51 | [51, 1000] | 51 (dist 3) | → |
-| t=6 | 1001 | [1001, 1000] | 1001 (dist 950) vs 1000 (dist 949) → 1000 | → |
+| t=1 | 53 | [53] | 53 (dist 2) | â†’ |
+| t=2 | 1000 | [1000] | ignores | â†’ |
+| t=3 | 52 | [52, 1000] | 52 (dist 1) | â†’ |
+| t=4 | 54 | [54, 1000] | 54 (dist 2) | â†’ |
+| t=5 | 51 | [51, 1000] | 51 (dist 3) | â†’ |
+| t=6 | 1001 | [1001, 1000] | 1001 (dist 950) vs 1000 (dist 949) â†’ 1000 | â†’ |
 | ... | ... | ... | ... | ... |
 
 **SSTF result:** Request 1000 keeps being deferred because closer requests keep arriving. It may never be serviced.
 
-**SCAN result:** After servicing the 50â€“55 cluster on the initial sweep toward 0, the arm reaches 0, reverses, and sweeps upward past 50, 51, 52, 53, 54, 55, then continues to 1000. The distant request **is serviced** on the return sweep → eventually.
+**SCAN result:** After servicing the 50Ã¢â‚¬â€œ55 cluster on the initial sweep toward 0, the arm reaches 0, reverses, and sweeps upward past 50, 51, 52, 53, 54, 55, then continues to 1000. The distant request **is serviced** on the return sweep â†’ eventually.
 
 ### A.2 Head Movement Calculation Formula
 
@@ -1710,7 +1710,7 @@ Consider this dynamic scenario where requests arrive over time:
 For any scheduling algorithm, the total seek distance is:
 
 ```
-total_seek = Î£(i=1 to n) |pos(i-1) - pos(i)|
+total_seek = ÃŽÂ£(i=1 to n) |pos(i-1) - pos(i)|
 
 where:
   pos(0) = initial head position
@@ -1723,7 +1723,7 @@ For FCFS, pos(i) follows arrival order. For SCAN/LOOK, pos(i) follows the direct
 ### A.3 Average Seek Time Approximation
 
 
-The average seek distance â‰ˆ (1/3) Ã— full stroke. If full stroke = 199 cylinders, avg seek â‰ˆ 66 cylinders. This is used in analytical modeling when exact request distribution is unknown.
+The average seek distance Ã¢â€°Ë† (1/3) Ãƒâ€” full stroke. If full stroke = 199 cylinders, avg seek Ã¢â€°Ë† 66 cylinders. This is used in analytical modeling when exact request distribution is unknown.
 
 ---
 
@@ -1749,7 +1749,7 @@ Linux's multi-queue block layer (blk-mq) replaces the single-queue elevator for 
 ### B.3 NVMe SSD Considerations
 
 
-NVMe SSDs have no seek time → scheduling algorithms that minimize seek (SCAN, C-SCAN, LOOK) provide ZERO benefit:
+NVMe SSDs have no seek time â†’ scheduling algorithms that minimize seek (SCAN, C-SCAN, LOOK) provide ZERO benefit:
 - Request reordering wastes CPU cycles needlessly
 - NOOP or FCFS is optimal
 - Key metrics: queue depth (typical 64K commands), parallel I/O via multiple queues
@@ -1884,7 +1884,7 @@ for _ in range(5):
     results = {name: algo(req, head) for name, algo in algorithms.items()}
     best = min(results, key=results.get)
     for name, seek in sorted(results.items(), key=lambda x: x[1]):
-        print(f"  {name:8s}: {seek:4d} cylinders {' ← best' if name == best else ''}")
+        print(f"  {name:8s}: {seek:4d} cylinders {' â† best' if name == best else ''}")
 ```
 
 ---
@@ -1926,7 +1926,7 @@ Rebuild time depends on:
 - **RAID level**: RAID 5/6 rebuild requires parity recomputation; RAID 1/10 is simple copy
 - **Controller resources**: Dedicated XOR engine vs CPU-driven
 
-Typical rebuild speeds: 50â€“200 MB/s. For a 4 TB disk: 4 TB / 100 MB/s â‰ˆ 40,960 seconds â‰ˆ 11.4 hours.
+Typical rebuild speeds: 50Ã¢â‚¬â€œ200 MB/s. For a 4 TB disk: 4 TB / 100 MB/s Ã¢â€°Ë† 40,960 seconds Ã¢â€°Ë† 11.4 hours.
 
 ### D.4 RAID vs Erasure Coding
 
@@ -1936,8 +1936,8 @@ For large-scale storage (>100 disks), erasure coding (Reed-Solomon, LRC) is pref
 | Aspect | Traditional RAID | Erasure Coding |
 |--------|-----------------|----------------|
 | **Parity overhead** | Integer (1 or 2 disks) | Configurable (e.g., 10+2 = 20%) |
-| **Failure tolerance** | 1â€“2 disks | Configurable (any k of n) |
-| **Storage efficiency** | 50â€“80% (RAID 5/6) | 70â€“90% (configurable) |
+| **Failure tolerance** | 1Ã¢â‚¬â€œ2 disks | Configurable (any k of n) |
+| **Storage efficiency** | 50Ã¢â‚¬â€œ80% (RAID 5/6) | 70Ã¢â‚¬â€œ90% (configurable) |
 | **Rebuild IO** | Full disk read | Distributed across all disks |
 | **Use case** | <24 disks per array | 100+ disk object stores (Ceph, MinIO) |
 
@@ -1949,7 +1949,7 @@ For large-scale storage (>100 disks), erasure coding (Reed-Solomon, LRC) is pref
 
 
 Log-structured file systems (LFS, F2FS) treat the entire disk as a circular log:
-- Writes are always sequential (append to log) → no seeks on write
+- Writes are always sequential (append to log) â†’ no seeks on write
 - Reads may require random access (lookup in map)
 - Garbage collection reclaims old versions
 - Modern implementations: F2FS (Flash-Friendly File System), ZFS (COW + log)
@@ -1963,7 +1963,7 @@ Log-structured file systems (LFS, F2FS) treat the entire disk as a circular log:
 - Drive-managed (transparent to OS) or host-managed (OS must manage writes)
 
 **ZNS (Zoned Namespaces) SSDs:**
-- NVMe SSDs organized into zones (typically 256 MBâ€“1 GB each)
+- NVMe SSDs organized into zones (typically 256 MBÃ¢â‚¬â€œ1 GB each)
 - Each zone must be written sequentially and erased before rewriting
 - Reduces write amplification vs conventional SSDs
 - Requires zone-aware file systems (F2FS with ZNS support)
@@ -1987,15 +1987,15 @@ Intel Optane DC Persistent Memory (discontinued) and CXL-attached memory:
 | Rotational latency (avg) | (60 / RPM) / 2 | (60/7200)/2 = 4.17 ms |
 | Transfer time | BlockSize / TransferRate | 4 KB / 150 MB/s = 0.027 ms |
 | Total access time | Seek + Rotation + Transfer | 5 + 4.17 + 0.027 = 9.2 ms |
-| Random IOPS | 1000 / TotalAccessMs | 1000 / 9.2 â‰ˆ 109 IOPS |
-| Seek distance (FCFS) | Î£|prev âˆ’ next| | 640 cylinders |
-| RAID 5 capacity | (Nâˆ’1) Ã— disk_size | 3 Ã— 1 TB = 3 TB |
-| RAID 6 capacity | (Nâˆ’2) Ã— disk_size | 2 Ã— 1 TB = 2 TB |
-| RAID 10 capacity | (N/2) Ã— disk_size | 2 Ã— 1 TB = 2 TB |
-| RAID 5 write penalty | 4 I/Os per logical write | 1 logical → 4 physical |
-| RAID 6 write penalty | 6 I/Os per logical write | 1 logical → 6 physical |
+| Random IOPS | 1000 / TotalAccessMs | 1000 / 9.2 Ã¢â€°Ë† 109 IOPS |
+| Seek distance (FCFS) | ÃŽÂ£|prev Ã¢Ë†â€™ next| | 640 cylinders |
+| RAID 5 capacity | (NÃ¢Ë†â€™1) Ãƒâ€” disk_size | 3 Ãƒâ€” 1 TB = 3 TB |
+| RAID 6 capacity | (NÃ¢Ë†â€™2) Ãƒâ€” disk_size | 2 Ãƒâ€” 1 TB = 2 TB |
+| RAID 10 capacity | (N/2) Ãƒâ€” disk_size | 2 Ãƒâ€” 1 TB = 2 TB |
+| RAID 5 write penalty | 4 I/Os per logical write | 1 logical â†’ 4 physical |
+| RAID 6 write penalty | 6 I/Os per logical write | 1 logical â†’ 6 physical |
 | MTTF RAID 0 | M / N | 1M/4 = 250K hr |
-| Average seek distance | ~1/3 Ã— full stroke | 199/3 â‰ˆ 66 |
+| Average seek distance | ~1/3 Ãƒâ€” full stroke | 199/3 Ã¢â€°Ë† 66 |
 
 ## Appendix G: Glossary of Terms
 
@@ -2029,20 +2029,20 @@ Intel Optane DC Persistent Memory (discontinued) and CXL-attached memory:
 ### H.1 Given a request sequence, find total seek
 
 
-**Problem:** Queue [86, 147, 12, 95, 177, 23, 55, 104], head=50, disk 0â€“199. Compute FCFS.
+**Problem:** Queue [86, 147, 12, 95, 177, 23, 55, 104], head=50, disk 0Ã¢â‚¬â€œ199. Compute FCFS.
 
 **Solution:**
 ```
-50 → 86 (36) → 147 (61) → 12 (135) → 95 (83) → 177 (82) → 23 (154) → 55 (32) → 104 (49)
+50 â†’ 86 (36) â†’ 147 (61) â†’ 12 (135) â†’ 95 (83) â†’ 177 (82) â†’ 23 (154) â†’ 55 (32) â†’ 104 (49)
 Total = 36+61+135+83+82+154+32+49 = 632 cylinders
 ```
 
 ### H.2 Given head movement, find scheduling algorithm
 
 
-**Problem:** Head=50, requests [10, 80, 20, 90]. Path: 50 → 20 → 10 → 80 → 90. Total=120. Which algorithm?
+**Problem:** Head=50, requests [10, 80, 20, 90]. Path: 50 â†’ 20 â†’ 10 â†’ 80 â†’ 90. Total=120. Which algorithm?
 
-**Solution:** This is LOOK (going toward 0 first). The arm goes to 20 then 10 (last left), reverses to 80 then 90 (right). No travel to disk end 0 or 199. SCAN would have gone 50 → 20 → 10 → 0 → 80 → 90 (total 150). The difference of 30 is the unnecessary 10→0→80 trip.
+**Solution:** This is LOOK (going toward 0 first). The arm goes to 20 then 10 (last left), reverses to 80 then 90 (right). No travel to disk end 0 or 199. SCAN would have gone 50 â†’ 20 â†’ 10 â†’ 0 â†’ 80 â†’ 90 (total 150). The difference of 30 is the unnecessary 10â†’0â†’80 trip.
 
 ### H.3 Disk access time calculation
 
@@ -2053,20 +2053,20 @@ Total = 36+61+135+83+82+154+32+49 = 632 cylinders
 ```
 Rotational latency = (60/10000)/2 = 3 ms
 Transfer = 8 KB / 200 MB/s = 0.04 ms
-Random = 6 + 3 + 0.04 = 9.04 ms → 110 IOPS
-Sequential (1 MB) = 3 + 0 + 5.12 ms = 8.12 ms → 123 MB/s
+Random = 6 + 3 + 0.04 = 9.04 ms â†’ 110 IOPS
+Sequential (1 MB) = 3 + 0 + 5.12 ms = 8.12 ms â†’ 123 MB/s
 ```
 
 ### H.4 RAID capacity calculation
 
 
-**Problem:** 6 Ã— 2 TB disks in RAID 5 vs RAID 10 vs RAID 6.
+**Problem:** 6 Ãƒâ€” 2 TB disks in RAID 5 vs RAID 10 vs RAID 6.
 
 **Solution:**
 ```
-RAID 5: (6-1)/6 Ã— 12 TB = 10 TB usable (83%)
-RAID 6: (6-2)/6 Ã— 12 TB = 8 TB usable (67%)
-RAID 10: 6/2 Ã— 2 TB = 6 TB usable (50%)
+RAID 5: (6-1)/6 Ãƒâ€” 12 TB = 10 TB usable (83%)
+RAID 6: (6-2)/6 Ãƒâ€” 12 TB = 8 TB usable (67%)
+RAID 10: 6/2 Ãƒâ€” 2 TB = 6 TB usable (50%)
 ```
 
 ### H.5 Swap sizing decision
@@ -2074,7 +2074,7 @@ RAID 10: 6/2 Ã— 2 TB = 6 TB usable (50%)
 
 **Problem:** 32 GB RAM Linux workstation used for development. How much swap?
 
-**Solution:** 4â€“8 GB swap. Enough for emergency headroom and hibernation. The system should rarely swap; if swap usage exceeds 1 GB regularly, add more RAM.
+**Solution:** 4Ã¢â‚¬â€œ8 GB swap. Enough for emergency headroom and hibernation. The system should rarely swap; if swap usage exceeds 1 GB regularly, add more RAM.
 
 ---
 
@@ -2082,25 +2082,25 @@ RAID 10: 6/2 Ã— 2 TB = 6 TB usable (50%)
 
 ### Disk Structure
 
-- Seek time dominates access latency (70â€“80% of total)
-- Sequential I/O is ~1000Ã— more efficient than random I/O on HDDs
+- Seek time dominates access latency (70Ã¢â‚¬â€œ80% of total)
+- Sequential I/O is ~1000Ãƒâ€” more efficient than random I/O on HDDs
 - Cylinder = same track across all platters (move head once, access all surfaces)
 
 ### Disk Scheduling
 
 - FCFS: Simple but worst seek; no starvation
-- SSTF: Better seek but dangerous → **starvation** makes it unsuitable for production
+- SSTF: Better seek but dangerous â†’ **starvation** makes it unsuitable for production
 - SCAN: Direction-based sweep; good seek; non-uniform wait
 - C-SCAN: Uniform wait at cost of extra jump (seek 386 vs 208)
 - LOOK: **Best seek** (208); no unnecessary end-to-end travel
 - C-LOOK: Circular variant; between C-SCAN and LOOK in performance
-- For SSDs: NOOP or FCFS → mechanical seek doesn't exist
+- For SSDs: NOOP or FCFS â†’ mechanical seek doesn't exist
 
 ### Disk Management
 
-- MBR: Legacy, â‰¤2 TB, â‰¤4 partitions, no redundancy
+- MBR: Legacy, Ã¢â€°Â¤2 TB, Ã¢â€°Â¤4 partitions, no redundancy
 - GPT: Modern, >2 TB, 128+ partitions, backup at disk end
-- Bad blocks: S.M.A.R.T. → increasing reallocations = drive failing
+- Bad blocks: S.M.A.R.T. â†’ increasing reallocations = drive failing
 
 ### RAID
 
@@ -2108,7 +2108,7 @@ RAID 10: 6/2 Ã— 2 TB = 6 TB usable (50%)
 - RAID 1: Safety, 50% capacity (OS, logs)
 - RAID 5: Balance, 4 I/O write penalty (bulk storage)
 - RAID 6: Dual protection, 6 I/O write penalty (large arrays)
-- RAID 10: Speed + safety (production databases → most common enterprise choice)
+- RAID 10: Speed + safety (production databases â†’ most common enterprise choice)
 
 ### Swap Space
 

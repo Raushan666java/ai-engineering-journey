@@ -1,13 +1,13 @@
-# Chapter 12: Teaching & Knowledge Transfer
+﻿# Chapter 12: Teaching & Knowledge Transfer
 
 > **Prerequisites:** [Chapter 2: Practice, Mindset & Performance](./ch-02-practice-mindset.md), [Chapter 4: Pomodoro, Interleaving & Feynman](./ch-04-pomodoro-interleaving-feynman.md)
 > **Next:** [Chapter 14: Social Learning & Communities](./ch-14-social-learning-communities.md)
 
-Teaching is the master key to learning. Every time you explain a concept to someone else — a peer, a rubber duck, a blog audience, a rubber duck — you strengthen your own understanding. This chapter covers the science of the protégé effect, the Feynman technique at scale, technical writing, code review as teaching, building in public, and how to design a sustainable teaching practice that accelerates your learning more than any amount of solo study.
+Teaching is the master key to learning. Every time you explain a concept to someone else â€” a peer, a rubber duck, a blog audience, a rubber duck â€” you strengthen your own understanding. This chapter covers the science of the protÃ©gÃ© effect, the Feynman technique at scale, technical writing, code review as teaching, building in public, and how to design a sustainable teaching practice that accelerates your learning more than any amount of solo study.
 
 ## Learning Objectives
 
-- Explain the protégé effect and why teaching doubles learning efficiency
+- Explain the protÃ©gÃ© effect and why teaching doubles learning efficiency
 - Apply the Feynman technique across multiple skill levels
 - Write clear technical explanations using structured frameworks
 - Use rubber duck debugging and pair programming as teaching tools
@@ -18,16 +18,16 @@ Teaching is the master key to learning. Every time you explain a concept to some
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -39,7 +39,7 @@ Teaching is the master key to learning. Every time you explain a concept to some
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| Protégé Effect | Teaching forces active recall and gap detection | Teach one concept daily to solidify learning |
+| ProtÃ©gÃ© Effect | Teaching forces active recall and gap detection | Teach one concept daily to solidify learning |
 | Feynman Technique | "If you can't explain it simply, you don't understand it" | Explain at 3 levels: child, peer, expert |
 | Rubber Duck Debugging | Verbalizing code reveals assumptions | Talk through logic aloud before asking for help |
 | Code Review as Teaching | Reviewing code teaches patterns to both parties | Review 1 PR per day, write explanatory comments |
@@ -62,7 +62,7 @@ flowchart LR
 ### Q1: Why does teaching accelerate your own learning more than studying?
 
 
-**Answer:** The **protégé effect** is a psychological phenomenon where teaching someone else — or even expecting to teach — improves your own learning more than studying for yourself. Multiple studies show that students who study material expecting to teach it recall more and understand it more deeply than those studying for a test.
+**Answer:** The **protÃ©gÃ© effect** is a psychological phenomenon where teaching someone else â€” or even expecting to teach â€” improves your own learning more than studying for yourself. Multiple studies show that students who study material expecting to teach it recall more and understand it more deeply than those studying for a test.
 
 ```typescript
 interface TeachingSession {
@@ -117,7 +117,7 @@ class ProtegeEffectSimulator {
     }
   }
 
-  // The mechanism behind the protégé effect
+  // The mechanism behind the protÃ©gÃ© effect
   explainMechanism(): string[] {
     return [
       '1. Active recall: Teaching forces you to retrieve knowledge rather than recognize it',
@@ -133,7 +133,7 @@ class ProtegeEffectSimulator {
 
 **Try This:** This week, study two different topics. For topic A, study normally (read, review, self-test). For topic B, study with the intention of teaching it to a friend (even if you never actually teach). After 7 days, test yourself on both topics. Topic B will almost always score higher.
 
-**One-Sentence Takeaway:** The protégé effect means the best way to learn something is to prepare to teach it — the expectation of teaching changes how your brain encodes the material.
+**One-Sentence Takeaway:** The protÃ©gÃ© effect means the best way to learn something is to prepare to teach it â€” the expectation of teaching changes how your brain encodes the material.
 
 ---
 
@@ -181,14 +181,14 @@ class FeynmanTechnique {
       }
     });
 
-    // Detect missing analogies — look for explanatory structure
+    // Detect missing analogies â€” look for explanatory structure
     if (!explanation.includes('like') && !explanation.includes('is similar to')) {
-      missingAnalogies.push('No real-world analogy found — analogies bridge new concepts to existing mental models');
+      missingAnalogies.push('No real-world analogy found â€” analogies bridge new concepts to existing mental models');
     }
 
     // Detect unsubstantiated claims
     if (explanation.includes('obviously') || explanation.includes('clearly') || explanation.includes('simply')) {
-      gaps.push('Used "obviously/clearly/simply" — this signals an explanation gap for your audience');
+      gaps.push('Used "obviously/clearly/simply" â€” this signals an explanation gap for your audience');
     }
 
     return {
@@ -238,7 +238,7 @@ class FeynmanTechnique {
 
 **Try This:** Pick a concept from a DSA course (e.g., dynamic programming). Write out all three levels of explanation on paper. For the child level, use a restaurant-ordering analogy. For the peer level, include a TypeScript recursion example. For the expert level, discuss memoization vs tabulation tradeoffs.
 
-**One-Sentence Takeaway:** The Feynman technique isn't one explanation — it's three: child (analogy), peer (code), expert (nuance) — and each level reveals different gaps in your understanding.
+**One-Sentence Takeaway:** The Feynman technique isn't one explanation â€” it's three: child (analogy), peer (code), expert (nuance) â€” and each level reveals different gaps in your understanding.
 
 ---
 
@@ -276,7 +276,7 @@ class RubberDuckSession {
       // Pattern 1: Conditional without else
       if (line.includes('if') && !line.includes('else')) {
         this.revealedAssumptions.push(
-          `Line ${index + 1}: You assume the if-condition is the only path — what happens otherwise?`
+          `Line ${index + 1}: You assume the if-condition is the only path â€” what happens otherwise?`
         );
       }
 
@@ -297,7 +297,7 @@ class RubberDuckSession {
       // Pattern 4: Empty catch blocks
       if (line.includes('catch') && line.includes('{}')) {
         this.revealedAssumptions.push(
-          `Line ${index + 1}: Empty catch block swallows errors — you assume this never fails`
+          `Line ${index + 1}: Empty catch block swallows errors â€” you assume this never fails`
         );
       }
     });
@@ -339,7 +339,7 @@ class RubberDuckSession {
 
 **Try This:** The next time you're debugging, place an object next to your keyboard and explain your code aloud line by line. Count how many bugs you find yourself vs how many you needed to look up. Most developers find 50-70% of their own bugs this way.
 
-**One-Sentence Takeaway:** Rubber duck debugging transforms silent reading into active teaching — verbalizing assumptions reveals gaps that silent thinking hides.
+**One-Sentence Takeaway:** Rubber duck debugging transforms silent reading into active teaching â€” verbalizing assumptions reveals gaps that silent thinking hides.
 
 ---
 
@@ -380,8 +380,8 @@ class PairProgrammingLearning {
       // If teaching a less experienced partner, you solidify fundamentals
       if (partnerSkill < 5) {
         learningOutcomes.push(
-          'Teaching a junior: Simplified complex concepts → deepened your own understanding',
-          'Teaching a junior: Had to break down assumptions → revealed your own gaps',
+          'Teaching a junior: Simplified complex concepts â†’ deepened your own understanding',
+          'Teaching a junior: Had to break down assumptions â†’ revealed your own gaps',
         );
       }
     } else {
@@ -414,7 +414,7 @@ class PairProgrammingLearning {
       schedule.push(`Slot ${i + 1}: ${role} (30 min)`);
 
       if ((i + 1) % 4 === 0) {
-        schedule.push('   → 10 min break (consolidation)');
+        schedule.push('   â†’ 10 min break (consolidation)');
       }
     }
 
@@ -445,14 +445,14 @@ Retention rates after 1 week:
 
 **Try This:** Find a study partner. Pair on a DSA problem for 45 minutes (22 min driver, 22 min navigator, 1 min switch). The driver explains every line. The navigator asks "why" before pointing out mistakes. Debrief for 5 minutes.
 
-**One-Sentence Takeaway:** Pair programming creates a real-time teaching loop where both roles learn — driving forces verbalization, navigating forces evaluation, and rotating maximizes both.
+**One-Sentence Takeaway:** Pair programming creates a real-time teaching loop where both roles learn â€” driving forces verbalization, navigating forces evaluation, and rotating maximizes both.
 
 ---
 
 ### Q5: How does building in public accelerate learning?
 
 
-**Answer:** Building in public — sharing your learning journey through blog posts, social media, open-source contributions, or documentation — creates a powerful learning flywheel. The public commitment forces deeper understanding, and the feedback loop compounds your learning.
+**Answer:** Building in public â€” sharing your learning journey through blog posts, social media, open-source contributions, or documentation â€” creates a powerful learning flywheel. The public commitment forces deeper understanding, and the feedback loop compounds your learning.
 
 ```typescript
 interface PublicLearningPost {
@@ -463,7 +463,7 @@ interface PublicLearningPost {
   words: number;
   engagement: {
     comments: number;
-    corrections: number; // valuable — they reveal gaps
+    corrections: number; // valuable â€” they reveal gaps
     shares: number;
   };
   learningOutcomes: string[];
@@ -489,7 +489,7 @@ class BuildInPublicEngine {
           '',
           '## Teaching Effect',
           'Writing a tutorial forces you to understand each step deeply',
-          '— if you can\'t explain WHY a step matters, you don\'t know it yet.',
+          'â€” if you can\'t explain WHY a step matters, you don\'t know it yet.',
         );
         break;
 
@@ -503,7 +503,7 @@ class BuildInPublicEngine {
           '5. Key takeaways and actionable advice',
           '',
           '## Teaching Effect',
-          'Case studies teach by narrative — readers learn from your mistakes',
+          'Case studies teach by narrative â€” readers learn from your mistakes',
           'without making them. Writing one forces you to analyze WHY something failed.',
         );
         break;
@@ -520,7 +520,7 @@ class BuildInPublicEngine {
           '',
           '## Teaching Effect',
           'Explanations are the Feynman technique at scale',
-          '— if you can\'t make it clear to strangers, your understanding has gaps.',
+          'â€” if you can\'t make it clear to strangers, your understanding has gaps.',
         );
         break;
     }
@@ -541,14 +541,14 @@ class BuildInPublicEngine {
     const corrections = this.posts.reduce((s, p) => s + p.engagement.corrections, 0);
 
     return `
-📊 Learning Velocity Report
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ðŸ“Š Learning Velocity Report
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 Posts published: ${this.posts.length}
 Unique topics covered: ${topics.size}
 Corrections received: ${corrections}
   (Each correction is a gap you filled)
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Learning is not linear — each post compounds on previous ones.`;
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+Learning is not linear â€” each post compounds on previous ones.`;
   }
 }
 ```
@@ -564,9 +564,9 @@ Learning is not linear — each post compounds on previous ones.`;
 | Friday | Publish and share | 10 min |
 | Weekend | Engage with comments and corrections | 20 min |
 
-**Try This:** Pick a concept you learned this week. Write a 300-word explanation of it as if teaching a peer. Include one TypeScript code example. Publish it somewhere — a blog, a tweet thread, a LinkedIn post, or a GitHub Gist. Set a goal of one post per week for 4 weeks.
+**Try This:** Pick a concept you learned this week. Write a 300-word explanation of it as if teaching a peer. Include one TypeScript code example. Publish it somewhere â€” a blog, a tweet thread, a LinkedIn post, or a GitHub Gist. Set a goal of one post per week for 4 weeks.
 
-**One-Sentence Takeaway:** Building in public creates a learning flywheel — publishing forces deep understanding, corrections fill your gaps, and each post compounds on the previous one.
+**One-Sentence Takeaway:** Building in public creates a learning flywheel â€” publishing forces deep understanding, corrections fill your gaps, and each post compounds on the previous one.
 
 ---
 
@@ -595,7 +595,7 @@ class CodeReviewAsTeaching {
       comments.push({
         line: this.findLine(code, 'var '),
         type: 'teaching',
-        content: 'Use const/let instead of var. `var` has function scoping which can cause subtle bugs — const is block-scoped and communicates intent. This is a common interview topic.',
+        content: 'Use const/let instead of var. `var` has function scoping which can cause subtle bugs â€” const is block-scoped and communicates intent. This is a common interview topic.',
         learningMoment: 'Variable scoping rules (var vs let vs const)',
       });
     }
@@ -613,7 +613,7 @@ class CodeReviewAsTeaching {
     if (authorLevel === 'junior') {
       comments.forEach(c => {
         if (c.type === 'teaching') {
-          c.content += '\n\n💡 Learning resource: [link to relevant documentation]';
+          c.content += '\n\nðŸ’¡ Learning resource: [link to relevant documentation]';
         }
       });
     }
@@ -623,7 +623,7 @@ class CodeReviewAsTeaching {
       comments.push({
         line: 0,
         type: 'teaching',
-        content: 'Consider the scalability of this approach — what happens when data grows 100x? What\'s the performance envelope?',
+        content: 'Consider the scalability of this approach â€” what happens when data grows 100x? What\'s the performance envelope?',
         learningMoment: 'Architectural thinking and scalability analysis',
       });
     }
@@ -659,9 +659,9 @@ class CodeReviewAsTeaching {
 | How to communicate intent more clearly | New patterns from the author's code |
 | Production-readiness standards | How to give constructive, actionable feedback |
 
-**Try This:** This week, review one PR or piece of code written by someone else. For every comment, add a "why" explanation: "You should use X instead of Y because Z." Don't just point out issues — teach the reason behind the fix.
+**Try This:** This week, review one PR or piece of code written by someone else. For every comment, add a "why" explanation: "You should use X instead of Y because Z." Don't just point out issues â€” teach the reason behind the fix.
 
-**One-Sentence Takeaway:** Code review is bidirectional teaching — the reviewer learns patterns from reading code, the author learns principles from receiving explanations of why something should change.
+**One-Sentence Takeaway:** Code review is bidirectional teaching â€” the reviewer learns patterns from reading code, the author learns principles from receiving explanations of why something should change.
 
 ---
 
@@ -746,12 +746,12 @@ class StudyGroupOrchestrator {
       .sort((a, b) => b[1] - a[1]);
 
     return `
-📚 Study Group Analysis
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ðŸ“š Study Group Analysis
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 Total sessions: ${this.sessions.length}
 Most active teacher: ${mostActive[0]?.[0] || 'N/A'} (${mostActive[0]?.[1] || 0} sessions)
 
-⚠️ The person who teaches the most learns the most.
+âš ï¸ The person who teaches the most learns the most.
 If distribution is uneven, the quiet members learn LESS.
 Rotate teaching responsibilities every cycle.`;
   }
@@ -771,7 +771,7 @@ Rotate teaching responsibilities every cycle.`;
 
 **Try This:** Form a study group of 3-5 people (peers, colleagues, or online study partners). Each person picks a topic to teach for 20 minutes. After each teaching session, everyone writes a 3-sentence summary from memory. After 4 weeks, compare notes on what each person retained.
 
-**One-Sentence Takeaway:** In study groups, the person teaching learns the most — rotate topics so every member gets maximum teaching time per cycle.
+**One-Sentence Takeaway:** In study groups, the person teaching learns the most â€” rotate topics so every member gets maximum teaching time per cycle.
 
 ---
 
@@ -783,7 +783,7 @@ Rotate teaching responsibilities every cycle.`;
 ```typescript
 interface TechnicalExplanation {
   topic: string;
-  summary: string; // BLUF — one sentence
+  summary: string; // BLUF â€” one sentence
   prerequisites: string[];
   analogy: string; // Bridge from known to unknown
   body: string[];
@@ -807,17 +807,17 @@ class TechnicalWriter {
     // Body: structured progression
     const body = [
       '## How It Works',
-      '1. [Fundamental concept — what IS this?]',
-      '2. [Mechanism — how does it work step by step?]',
-      '3. [Example — show it in action]',
-      '4. [Edge cases — what are the boundaries?]',
-      '5. [Tradeoffs — when NOT to use it]',
+      '1. [Fundamental concept â€” what IS this?]',
+      '2. [Mechanism â€” how does it work step by step?]',
+      '3. [Example â€” show it in action]',
+      '4. [Edge cases â€” what are the boundaries?]',
+      '5. [Tradeoffs â€” when NOT to use it]',
     ];
 
     // Code example
     const codeExample = `
 \`\`\`typescript
-// ${config.topic} — minimal working example
+// ${config.topic} â€” minimal working example
 // Readers should be able to copy, paste, and run this
 function demonstrate${config.topic.replace(/\s+/g, '')}(): string {
   return "Hello from ${config.topic}";
@@ -833,9 +833,9 @@ function demonstrate${config.topic.replace(/\s+/g, '')}(): string {
       codeExample,
       commonMistakes: [
         'Mistake 1: [What beginners usually do wrong]',
-        '  → Fix: [What to do instead]',
+        '  â†’ Fix: [What to do instead]',
         'Mistake 2: [Another common error]',
-        '  → Fix: [Better approach]',
+        '  â†’ Fix: [Better approach]',
       ],
       summary_reprise: 'Restate the BLUF in different words to reinforce understanding.',
     };
@@ -846,20 +846,20 @@ function demonstrate${config.topic.replace(/\s+/g, '')}(): string {
     const issues: string[] = [];
 
     if (explanation.split(' ').length > 5 && !explanation.includes('\n')) {
-      issues.push('First paragraph is too dense — break it into smaller sections');
+      issues.push('First paragraph is too dense â€” break it into smaller sections');
     }
 
     const sentenceLengths = explanation.split(/[.!?]+/).map(s => s.split(' ').length);
     const avgSentenceLength = sentenceLengths.reduce((a, b) => a + b, 0) / sentenceLengths.length;
 
     if (avgSentenceLength > 25) {
-      issues.push(`Average sentence length ${Math.round(avgSentenceLength)} words — aim for under 20`);
+      issues.push(`Average sentence length ${Math.round(avgSentenceLength)} words â€” aim for under 20`);
     }
 
     const weakWords = ['very', 'really', 'quite', 'basically', 'actually', 'essentially'];
     weakWords.forEach(w => {
       if (explanation.toLowerCase().includes(w)) {
-        issues.push(`Weak filler word: "${w}" — be precise or remove it`);
+        issues.push(`Weak filler word: "${w}" â€” be precise or remove it`);
       }
     });
 
@@ -874,7 +874,7 @@ function demonstrate${config.topic.replace(/\s+/g, '')}(): string {
 |------|--------|------|
 | 1 | Write the one-sentence bottom line | 2 min |
 | 2 | List prerequisites (what must the reader know?) | 3 min |
-| 3 | Brainstorm an analogy that bridges known → unknown | 5 min |
+| 3 | Brainstorm an analogy that bridges known â†’ unknown | 5 min |
 | 4 | Write the body in progressive detail | 20-30 min |
 | 5 | Add a minimal, runnable code example | 10 min |
 | 6 | List common mistakes (these come from YOUR mistakes) | 5 min |
@@ -883,7 +883,7 @@ function demonstrate${config.topic.replace(/\s+/g, '')}(): string {
 
 **Try This:** Pick a concept you learned this week. Write a BLUF explanation for it in 4 sections: (1) one-sentence summary, (2) analogy, (3) 3-paragraph body with code example, (4) common mistakes. Then ask a peer to read it and tell you where they got confused.
 
-**One-Sentence Takeaway:** Technical writing forces structured thinking — BLUF (bottom line first), analogy, progressive detail, and common mistakes create explanations that teach both the reader and the writer.
+**One-Sentence Takeaway:** Technical writing forces structured thinking â€” BLUF (bottom line first), analogy, progressive detail, and common mistakes create explanations that teach both the reader and the writer.
 
 ---
 
@@ -913,18 +913,18 @@ class MentoringLearningEngine {
     // The mentor learns by explaining fundamentals
     if (menteeExperience < 2) {
       mentorLearnings.push(
-        'Explaining fundamentals → solidified first-principles understanding',
-        'Answering "why" questions → revealed assumptions you didn\'t know you had',
-        'Seeing a beginner\'s perspective → fresh insights on familiar problems',
+        'Explaining fundamentals â†’ solidified first-principles understanding',
+        'Answering "why" questions â†’ revealed assumptions you didn\'t know you had',
+        'Seeing a beginner\'s perspective â†’ fresh insights on familiar problems',
       );
     }
 
     // The mentor learns by exploring advanced topics
     if (menteeExperience >= 3) {
       mentorLearnings.push(
-        'Deep-dive discussions → forced deeper research to stay ahead',
-        'Debating tradeoffs → sharpened architectural reasoning',
-        'Reviewing mentee\'s code → exposure to different approaches',
+        'Deep-dive discussions â†’ forced deeper research to stay ahead',
+        'Debating tradeoffs â†’ sharpened architectural reasoning',
+        'Reviewing mentee\'s code â†’ exposure to different approaches',
       );
     }
 
@@ -952,13 +952,13 @@ class MentoringLearningEngine {
 
   getOptimalMentoringCadence(): string {
     return `
-📅 Recommended Mentoring Cadence
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ðŸ“… Recommended Mentoring Cadence
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 Weekly (30 min):    Code review + quick questions
 Bi-weekly (60 min): Deep-dive on a specific topic
 Monthly (90 min):   Architecture review or career discussion
 Quarterly:          Retrospective on learning progress
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 The mentor should ALWAYS prepare a structured agenda.
 Wandering sessions waste both people's time.`;
   }
@@ -968,14 +968,14 @@ Wandering sessions waste both people's time.`;
 **The mentor's learning checklist:**
 
 After each mentoring session, the mentor should ask:
-- What question did I struggle to answer? → That's YOUR knowledge gap
-- What assumption did I have to question? → That's YOUR blind spot
-- What did the mentee teach ME? → That's YOUR new perspective
-- What do I need to research before the next session? → That's YOUR growth area
+- What question did I struggle to answer? â†’ That's YOUR knowledge gap
+- What assumption did I have to question? â†’ That's YOUR blind spot
+- What did the mentee teach ME? â†’ That's YOUR new perspective
+- What do I need to research before the next session? â†’ That's YOUR growth area
 
 **Try This:** Find someone with less experience than you and offer to mentor them for 30 minutes per week. Before each session, prepare a 3-point agenda. After each session, write down one thing you learned from the process of teaching.
 
-**One-Sentence Takeaway:** Mentoring is a force multiplier — mentees gain guidance, but mentors gain deeper understanding, fresh perspectives, and the discipline of structured thinking.
+**One-Sentence Takeaway:** Mentoring is a force multiplier â€” mentees gain guidance, but mentors gain deeper understanding, fresh perspectives, and the discipline of structured thinking.
 
 ---
 
@@ -1025,7 +1025,7 @@ class GapRecorder {
 
   private generateResearchPlan(question: string): string[] {
     const plan = [
-      `1. Acknowledge: "That's a great question. I want to give you an accurate answer — let me research it properly."`,
+      `1. Acknowledge: "That's a great question. I want to give you an accurate answer â€” let me research it properly."`,
       `2. Research: Search documentation, source code, or experiments`,
       `3. Understand: Work through the answer until you can explain it without notes`,
       `4. Follow up: Send the answer to the person who asked within 24 hours`,
@@ -1033,7 +1033,7 @@ class GapRecorder {
     ];
 
     if (this.classifyGap(question) === 'missing-fundamental') {
-      plan.push('6. Self-study: Revisit the fundamentals of this topic — the gap is foundational');
+      plan.push('6. Self-study: Revisit the fundamentals of this topic â€” the gap is foundational');
     }
 
     return plan;
@@ -1077,7 +1077,7 @@ class GapRecorder {
     const answer = `After researching "${gap.question}", here's what I found:
 [Clear, structured answer with examples and sources]
 
-Thank you for asking — this helped me discover a gap in my understanding of ${gap.context}.`;
+Thank you for asking â€” this helped me discover a gap in my understanding of ${gap.context}.`;
 
     gap.followUpAnswer = answer;
     return answer;
@@ -1087,21 +1087,21 @@ Thank you for asking — this helped me discover a gap in my understanding of ${
 
 **The four-step response to an unknown question:**
 
-1. **Acknowledge honestly** — "That's a great question. I want to research it properly rather than guess."
-2. **Classify the gap** — Is this a fundamental I missed? An edge case? Outdated knowledge? Something I've literally never encountered?
-3. **Research within 24 hours** — Learn it well enough to teach it without notes.
-4. **Follow up with the asker** — Send your answer. This builds trust and cements your learning.
+1. **Acknowledge honestly** â€” "That's a great question. I want to research it properly rather than guess."
+2. **Classify the gap** â€” Is this a fundamental I missed? An edge case? Outdated knowledge? Something I've literally never encountered?
+3. **Research within 24 hours** â€” Learn it well enough to teach it without notes.
+4. **Follow up with the asker** â€” Send your answer. This builds trust and cements your learning.
 
 **Try This:** The next time someone asks you a question you can't answer, don't deflect or guess. Say "I don't know, but I'll find out." Research it within 24 hours. Send them the answer. Add the gap to your personal knowledge base.
 
-**One-Sentence Takeaway:** Unanswered questions are gold — each one reveals a specific gap in your knowledge that you can systematically fill with a 24-hour research cycle.
+**One-Sentence Takeaway:** Unanswered questions are gold â€” each one reveals a specific gap in your knowledge that you can systematically fill with a 24-hour research cycle.
 
 ---
 
 ### Q11: How do you create effective learning materials for others?
 
 
-**Answer:** Creating learning materials — cheat sheets, reference guides, flashcards, practice problems — is one of the highest-leverage learning activities because you must organize knowledge for transfer. The act of creating the material teaches you more than consuming it.
+**Answer:** Creating learning materials â€” cheat sheets, reference guides, flashcards, practice problems â€” is one of the highest-leverage learning activities because you must organize knowledge for transfer. The act of creating the material teaches you more than consuming it.
 
 ```typescript
 interface LearningMaterial {
@@ -1119,18 +1119,18 @@ class MaterialCreator {
     example: string;
   }>): string {
     // The constraint of a single page forces prioritization
-    return `# ${topic} — Quick Reference
+    return `# ${topic} â€” Quick Reference
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 ${keyConcepts.map(k =>
   `${k.concept}
   Definition: ${k.definition}
   Example:    ${k.example}
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”`
 ).join('\n')}
 
 Created by: [Your Name]
-Purpose: Personal reference — created from memory as a learning exercise
+Purpose: Personal reference â€” created from memory as a learning exercise
 `;
   }
 
@@ -1170,7 +1170,7 @@ Purpose: Personal reference — created from memory as a learning exercise
 
 **Try This:** Pick a topic you're studying. Instead of finding a cheat sheet online, create one yourself from memory. Limit yourself to one page. Then compare it to a reference source and note what you missed. Those misses are your learning gaps.
 
-**One-Sentence Takeaway:** Creating learning materials forces prioritization, organization, and precision — the act of creation teaches far more than the act of consumption.
+**One-Sentence Takeaway:** Creating learning materials forces prioritization, organization, and precision â€” the act of creation teaches far more than the act of consumption.
 
 ---
 
@@ -1236,18 +1236,18 @@ class AdaptiveTeacher {
 
     if (targetLevel === 'beginner') {
       if (avgWordLength > 5) {
-        issues.push('Explanation uses complex words — simplify for beginners');
+        issues.push('Explanation uses complex words â€” simplify for beginners');
       }
       const technicalTerms = ['function', 'algorithm', 'recursive', 'asynchronous', 'polymorphism'];
       technicalTerms.forEach(t => {
         if (explanation.toLowerCase().includes(t)) {
-          issues.push(`Contains "${t}" — define this for beginners or replace with an analogy`);
+          issues.push(`Contains "${t}" â€” define this for beginners or replace with an analogy`);
         }
       });
     }
 
     if (targetLevel === 'advanced' && avgWordLength < 4) {
-      issues.push('Explanation may be too basic for advanced audience — add nuance and depth');
+      issues.push('Explanation may be too basic for advanced audience â€” add nuance and depth');
     }
 
     return issues;
@@ -1260,15 +1260,15 @@ class AdaptiveTeacher {
 | Signal from Learner | Adapt To | Example Response |
 |--------------------|----------|------------------|
 | Confused expression | Beginner mode | "Let me try a different analogy..." |
-| Asking "why" repeatedly | Beginner mode | "Great question — let's step back to fundamentals" |
+| Asking "why" repeatedly | Beginner mode | "Great question â€” let's step back to fundamentals" |
 | Nodding but not asking questions | Check for understanding | "Can you summarize what I just said in your own words?" |
-| Asking "what about X?" | Intermediate mode | "Good question — let's compare" |
+| Asking "what about X?" | Intermediate mode | "Good question â€” let's compare" |
 | Proposing alternatives | Advanced mode | "That's a valid approach. Let's discuss the tradeoffs" |
 | Debating design decisions | Advanced mode | "What evidence supports that choice?" |
 
-**Try This:** Pick one concept and write three versions of the explanation — one for each skill level. Read them to different people (or the same person at different times). Notice which level feels most natural to you. That's your default teaching mode — the others require conscious effort.
+**Try This:** Pick one concept and write three versions of the explanation â€” one for each skill level. Read them to different people (or the same person at different times). Notice which level feels most natural to you. That's your default teaching mode â€” the others require conscious effort.
 
-**One-Sentence Takeaway:** Teaching across levels requires adapting vocabulary, examples, and depth — your default teaching level is the one closest to how you learned, not necessarily the one your audience needs.
+**One-Sentence Takeaway:** Teaching across levels requires adapting vocabulary, examples, and depth â€” your default teaching level is the one closest to how you learned, not necessarily the one your audience needs.
 
 ---
 
@@ -1331,10 +1331,10 @@ class TeachingPracticeBuilder {
 
   showProgressTrack(): string {
     return `
-📈 Teaching Practice Progress Tracker
+ðŸ“ˆ Teaching Practice Progress Tracker
 
 Week | Sessions | Topics Taught | Gaps Found | Confidence
-─────┼──────────┼───────────────┼────────────┼───────────
+â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   1  |          |               |            |
   2  |          |               |            |
   3  |          |               |            |
@@ -1359,25 +1359,25 @@ answer, and how confident you feel explaining each topic.`;
 
 **Try This:** Design your minimum viable teaching practice using the table above. Start with week 1-2 level. Do it for 2 weeks. Then add one level. After 12 weeks, you'll have a sustainable teaching habit that doubles as your most powerful learning tool.
 
-**One-Sentence Takeaway:** A sustainable teaching practice starts at 5 minutes per day — the habit is more important than the volume, and consistency compounds faster than intensity.
+**One-Sentence Takeaway:** A sustainable teaching practice starts at 5 minutes per day â€” the habit is more important than the volume, and consistency compounds faster than intensity.
 
 ---
 
 ### Self-Assessment Quiz
 
 
-**1. Why does the protégé effect improve learning more than self-study?**
+**1. Why does the protÃ©gÃ© effect improve learning more than self-study?**
 a) Teaching takes more time, so you study longer
 b) The expectation of teaching changes how your brain encodes information
 c) Other people explain things better than you can
 d) Teaching is easier than studying
 
-**Answer:** b) The expectation of teaching triggers different encoding strategies — you organize information for transfer, anticipate questions, and identify gaps during preparation.
+**Answer:** b) The expectation of teaching triggers different encoding strategies â€” you organize information for transfer, anticipate questions, and identify gaps during preparation.
 
 **2. What is the correct order of the three-level Feynman explanation?**
-a) Expert level → child level → peer level
-b) Child level (analogy) → peer level (code) → expert level (nuance)
-c) Peer level → expert level → child level
+a) Expert level â†’ child level â†’ peer level
+b) Child level (analogy) â†’ peer level (code) â†’ expert level (nuance)
+c) Peer level â†’ expert level â†’ child level
 d) Any order works equally well
 
 **Answer:** b) Start with the simplest explanation (child/analogy) to find fundamental gaps, then add technical detail (peer/code), then nuance (expert/edge cases).
@@ -1396,7 +1396,7 @@ b) The navigator, because they review and evaluate each line
 c) Both learn equally
 d) Neither learns from pair programming
 
-**Answer:** b) The navigator learns by continuously evaluating code quality, spotting edge cases, and articulating alternative approaches — this active evaluation builds stronger pattern recognition.
+**Answer:** b) The navigator learns by continuously evaluating code quality, spotting edge cases, and articulating alternative approaches â€” this active evaluation builds stronger pattern recognition.
 
 **5. What is the most important step after receiving a question you can't answer?**
 a) Guess and move on
@@ -1404,7 +1404,7 @@ b) Research the answer within 24 hours and follow up
 c) Say "I don't know" and end the conversation
 d) Change the subject
 
-**Answer:** b) The 24-hour follow-up protocol turns a knowledge gap into a permanent learning moment — researching and then teaching back the answer solidifies the knowledge.
+**Answer:** b) The 24-hour follow-up protocol turns a knowledge gap into a permanent learning moment â€” researching and then teaching back the answer solidifies the knowledge.
 
 **6. What does BLUF stand for in technical writing?**
 a) Big List of Useful Facts
@@ -1412,13 +1412,13 @@ b) Bottom Line Up Front
 c) Basic Language Usage Framework
 d) Best Learning Unit Format
 
-**Answer:** b) Bottom Line Up Front — start every explanation with the one-sentence summary of what the concept is and why it matters, then fill in details.
+**Answer:** b) Bottom Line Up Front â€” start every explanation with the one-sentence summary of what the concept is and why it matters, then fill in details.
 
 **7. What is the optimal size for a study group?**
 a) 2 people (one-on-one)
 b) 3-5 people
 c) 10-15 people
-d) Unlimited — more is always better
+d) Unlimited â€” more is always better
 
 **Answer:** b) 3-5 people ensures each member gets meaningful teaching time per cycle while maintaining diverse perspectives.
 
@@ -1436,15 +1436,15 @@ b) Creation forces prioritization, organization, and precision
 c) Other people will correct your mistakes
 d) Digital materials are searchable later
 
-**Answer:** b) Creating materials from memory forces you to prioritize what's important, organize it logically, and write precise definitions — this is far more effective than consuming pre-made materials.
+**Answer:** b) Creating materials from memory forces you to prioritize what's important, organize it logically, and write precise definitions â€” this is far more effective than consuming pre-made materials.
 
 **10. What is the minimum viable daily teaching practice?**
 a) 30 minutes of formal teaching
 b) 5 minutes of teaching one concept to a duck or writing one flashcard
 c) 2 hours of content creation
-d) Teaching is not a daily activity — it's weekly at best
+d) Teaching is not a daily activity â€” it's weekly at best
 
-**Answer:** b) A sustainable practice starts at 5 minutes per day — consistency matters more than volume, and daily micro-teaching habits compound into deep understanding over time.
+**Answer:** b) A sustainable practice starts at 5 minutes per day â€” consistency matters more than volume, and daily micro-teaching habits compound into deep understanding over time.
 
 ---
 
@@ -1452,7 +1452,7 @@ d) Teaching is not a daily activity — it's weekly at best
 
 | Concept | Definition | Best For | Pitfall |
 |---------|-----------|----------|---------|
-| Protégé Effect | Teaching expectation improves encoding | Learning new topics | Teaching without preparing (reduces benefit) |
+| ProtÃ©gÃ© Effect | Teaching expectation improves encoding | Learning new topics | Teaching without preparing (reduces benefit) |
 | Feynman Technique | Three-level explanation | Gap detection | Skipping the child-level explanation |
 | Rubber Duck Debugging | Verbalizing code line by line | Finding logic bugs | Not using a physical object (reduces engagement) |
 | Pair Programming | Real-time teaching loop | Code quality, pattern learning | Staying in one role too long |
@@ -1465,7 +1465,7 @@ d) Teaching is not a daily activity — it's weekly at best
 
 | Technique | DSA Prep | GATE/Theory | Framework Learning | Coding Interviews |
 |-----------|----------|-------------|-------------------|-------------------|
-| Feynman Level 1 (Child) | Sorting → organizing books | Logic gates → light switches | Components → LEGO blocks | Big-O → speed ranking |
+| Feynman Level 1 (Child) | Sorting â†’ organizing books | Logic gates â†’ light switches | Components â†’ LEGO blocks | Big-O â†’ speed ranking |
 | Feynman Level 2 (Peer) | Recursion trees in TypeScript | Automata theory code examples | React hooks implementation | System design tradeoffs |
 | Building in Public | Post your LeetCode solutions | Write theory explainers | Share framework learning journey | Publish interview prep notes |
 | Code Review Teaching | Review algorithm approaches | Check solution correctness | Review config/architecture | Review solution clarity |
@@ -1475,24 +1475,24 @@ d) Teaching is not a daily activity — it's weekly at best
 
 | Category | Key Points |
 |----------|-----------|
-| Teaching Effect | - Protégé effect: preparing to teach improves encoding - 3-level Feynman: child, peer, expert - Teach 5 min daily for compounding returns |
+| Teaching Effect | - ProtÃ©gÃ© effect: preparing to teach improves encoding - 3-level Feynman: child, peer, expert - Teach 5 min daily for compounding returns |
 | Verbalization | - Rubber duck debugging reveals hidden assumptions - Pair programming: rotate roles every 30 min - Navigators learn more about quality |
 | Public Learning | - Build in public: publish 1 post/week - BLUF framework: bottom line first - Corrections fill your gaps |
 | Code Review | - Review 1 PR/day with teaching comments - Explain WHY, not just WHAT - Both author and reviewer learn |
 | Handling Gaps | - Unknown questions are learning gold - Research within 24 hours - Classify gaps into 4 types |
-| Teaching Practice | - Start at 5 min/day - Progress from duck → flashcard → post - Consistency beats intensity |
+| Teaching Practice | - Start at 5 min/day - Progress from duck â†’ flashcard â†’ post - Consistency beats intensity |
 
 ## Chapter Summary
 
-- The protégé effect means preparing to teach improves your learning more than studying for yourself — use it daily
-- The Feynman technique scales to three levels: child (analogy), peer (code), expert (nuance) — each reveals different gaps
+- The protÃ©gÃ© effect means preparing to teach improves your learning more than studying for yourself â€” use it daily
+- The Feynman technique scales to three levels: child (analogy), peer (code), expert (nuance) â€” each reveals different gaps
 - Rubber duck debugging forces you to verbalize assumptions that silent reading hides
 - Pair programming creates a real-time teaching loop where rotating roles maximizes learning for both participants
 - Building in public compounds learning through public commitment, structured writing, and reader feedback
-- Code review is bidirectional teaching — teaching-oriented comments explain WHY, building understanding for both parties
-- Unknown questions are the highest-value learning moments — research within 24 hours and follow up
+- Code review is bidirectional teaching â€” teaching-oriented comments explain WHY, building understanding for both parties
+- Unknown questions are the highest-value learning moments â€” research within 24 hours and follow up
 - Creating learning materials (cheat sheets, flashcards, practice problems) teaches more than consuming them
-- Sustainable teaching starts at 5 minutes per day — consistency compounds over intensity
+- Sustainable teaching starts at 5 minutes per day â€” consistency compounds over intensity
 
 ## Exercises
 
@@ -1511,26 +1511,26 @@ d) Teaching is not a daily activity — it's weekly at best
 
 **Q1:** A student teaches a concept to a peer and notices their own understanding improved more than the peer's. What explains this?
 - A) The student spent more time with the material
-- B) The protégé effect — teaching forces the teacher to organize, retrieve, and elaborate knowledge
+- B) The protÃ©gÃ© effect â€” teaching forces the teacher to organize, retrieve, and elaborate knowledge
 - C) The peer wasn't paying attention
 - D) The material was too easy for the student
 
 <details>
 <summary>Answer&lt;/summary&gt;
 
-**Answer:** B — Teaching forces active recall, gap detection, reorganization, and elaboration. The teacher engages in multiple encoding processes that the listener doesn't.
+**Answer:** B â€” Teaching forces active recall, gap detection, reorganization, and elaboration. The teacher engages in multiple encoding processes that the listener doesn't.
 </details>
 
 **Q2:** A developer explains a sorting algorithm to a child using a "organizing books on a shelf" analogy. Which Feynman level is this?
-- A) Level 1 (Child) — everyday language, concrete analogy
-- B) Level 2 (Peer) — technical terms with code
-- C) Level 3 (Expert) — nuance and edge cases
-- D) None — analogies are not part of the Feynman technique
+- A) Level 1 (Child) â€” everyday language, concrete analogy
+- B) Level 2 (Peer) â€” technical terms with code
+- C) Level 3 (Expert) â€” nuance and edge cases
+- D) None â€” analogies are not part of the Feynman technique
 
 <details>
 <summary>Answer&lt;/summary&gt;
 
-**Answer:** A — Level 1 uses everyday language and real-world analogies to build a bridge from known to unknown without any technical jargon.
+**Answer:** A â€” Level 1 uses everyday language and real-world analogies to build a bridge from known to unknown without any technical jargon.
 </details>
 
 **Q3:** In a code review, which type of comment creates the most learning for the author?
@@ -1542,7 +1542,7 @@ d) Teaching is not a daily activity — it's weekly at best
 <details>
 <summary>Answer&lt;/summary&gt;
 
-**Answer:** B — Teaching-oriented comments explain the principle behind the fix, helping the author understand WHY, not just WHAT to change. This builds transferable knowledge.
+**Answer:** B â€” Teaching-oriented comments explain the principle behind the fix, helping the author understand WHY, not just WHAT to change. This builds transferable knowledge.
 </details>
 
 **Q4:** A developer encounters a question they can't answer while mentoring. What is the most effective response?
@@ -1554,7 +1554,7 @@ d) Teaching is not a daily activity — it's weekly at best
 <details>
 <summary>Answer&lt;/summary&gt;
 
-**Answer:** B — Acknowledging the gap honestly, researching within 24 hours, and following up turns the gap into a permanent learning moment for the mentor.
+**Answer:** B â€” Acknowledging the gap honestly, researching within 24 hours, and following up turns the gap into a permanent learning moment for the mentor.
 </details>
 
 **Q5:** What is the recommended time allocation for a sustainable weekly teaching practice?
@@ -1566,7 +1566,7 @@ d) Teaching is not a daily activity — it's weekly at best
 <details>
 <summary>Answer&lt;/summary&gt;
 
-**Answer:** B — A sustainable practice starts at 5 minutes per day (explain one concept to a duck, write one flashcard). Consistency beats intensity, and the habit grows organically from the micro-foundation.
+**Answer:** B â€” A sustainable practice starts at 5 minutes per day (explain one concept to a duck, write one flashcard). Consistency beats intensity, and the habit grows organically from the micro-foundation.
 </details>
 
 ## Further Reading

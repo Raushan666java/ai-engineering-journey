@@ -1,4 +1,4 @@
-# Chapter 13: Query Processing and Optimization
+﻿# Chapter 13: Query Processing and Optimization
 
 > **Prev:** [Chapter 12: Indexing](12-indexing.md) | **Next:** [Chapter 14: NoSQL Databases](14-nosql.md)
 
@@ -16,16 +16,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/13-query-processing/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/13-query-processing/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/13-query-processing/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/13-query-processing/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/13-query-processing/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/13-query-processing/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/13-query-processing/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/13-query-processing/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/13-query-processing/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/13-query-processing/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/13-query-processing/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/13-query-processing/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -122,15 +122,15 @@ The tokens are assembled into a parse tree according to SQL grammar rules.
 
 ```
 QUERY
-â”œâ”€â”€ SELECT
-â”‚   â”œâ”€â”€ e.name
-â”‚   â””â”€â”€ (implicit all columns not shown)
-â”œâ”€â”€ FROM
-â”‚   â””â”€â”€ employees AS e
-â””â”€â”€ WHERE
-    â””â”€â”€ Comparison (>)
-        â”œâ”€â”€ Attribute: e.salary
-        â””â”€â”€ Literal: 50000
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ SELECT
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ e.name
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ (implicit all columns not shown)
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ FROM
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ employees AS e
+Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ WHERE
+    Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ Comparison (>)
+        Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Attribute: e.salary
+        Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ Literal: 50000
 ```
 
 The parser uses a context-free grammar (CFG) with rules like:
@@ -220,20 +220,20 @@ WHERE e.salary > 50000;
 Parse tree (conceptual):
 ```
 QUERY (type: SELECT)
-â”œâ”€â”€ SELECT_LIST
-â”‚   â”œâ”€â”€ QUALIFIED_COLUMN: e.name
-â”‚   â””â”€â”€ QUALIFIED_COLUMN: d.dept_name
-â”œâ”€â”€ FROM_CLAUSE
-â”‚   â”œâ”€â”€ TABLE_REFERENCE: employees (alias: e)
-â”‚   â””â”€â”€ TABLE_REFERENCE: departments (alias: d)
-â”œâ”€â”€ JOIN_CONDITION
-â”‚   â””â”€â”€ EQUALS
-â”‚       â”œâ”€â”€ QUALIFIED_COLUMN: e.dept_id
-â”‚       â””â”€â”€ QUALIFIED_COLUMN: d.dept_id
-â””â”€â”€ WHERE_CLAUSE
-    â””â”€â”€ GREATER_THAN
-        â”œâ”€â”€ QUALIFIED_COLUMN: e.salary
-        â””â”€â”€ LITERAL: 50000
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ SELECT_LIST
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ QUALIFIED_COLUMN: e.name
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ QUALIFIED_COLUMN: d.dept_name
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ FROM_CLAUSE
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ TABLE_REFERENCE: employees (alias: e)
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ TABLE_REFERENCE: departments (alias: d)
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ JOIN_CONDITION
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ EQUALS
+Ã¢â€â€š       Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ QUALIFIED_COLUMN: e.dept_id
+Ã¢â€â€š       Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ QUALIFIED_COLUMN: d.dept_id
+Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ WHERE_CLAUSE
+    Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ GREATER_THAN
+        Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ QUALIFIED_COLUMN: e.salary
+        Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ LITERAL: 50000
 ```
 
 **Preprocessing (Semantic Analysis):**
@@ -2609,7 +2609,7 @@ The following code simulates a query optimizer that estimates costs for differen
 
 ```typescript
 // ============================================================
-// Query Cost Model Simulator â€” TypeScript
+// Query Cost Model Simulator Ã¢â‚¬â€ TypeScript
 // ============================================================
 
 interface TableStats {
@@ -2753,7 +2753,7 @@ flowchart LR
     c) The number of indexes
     d) The number of columns selected
 
-14. In query optimization, selectivity of a predicate Ïƒ<col='value'>(R) is:
+14. In query optimization, selectivity of a predicate ÃÆ’<col='value'>(R) is:
     a) The number of rows in R
     b) The fraction of rows that satisfy the predicate
     c) The size of the index

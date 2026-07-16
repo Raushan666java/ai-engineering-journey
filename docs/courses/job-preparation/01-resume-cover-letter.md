@@ -1,4 +1,4 @@
-# Resume and Cover Letter Mastery for Indian IT Jobs
+﻿# Resume and Cover Letter Mastery for Indian IT Jobs
 
 ## Learning Objectives
 
@@ -7,16 +7,16 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/job-preparation/01-resume-cover-letter/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/job-preparation/01-resume-cover-letter/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/job-preparation/01-resume-cover-letter/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/job-preparation/01-resume-cover-letter/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/job-preparation/01-resume-cover-letter/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/job-preparation/01-resume-cover-letter/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/job-preparation/01-resume-cover-letter/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -827,7 +827,7 @@ console.log('Suggestions:', analysis.suggestions);
 | Startups | 50% | 70%+ |
 | Mid-size Companies | 60% | 80%+ |
 
-## Common Resume Mistakes — Before & After
+## Common Resume Mistakes â€” Before & After
 
 ### Mistake 1: Objective Statement Instead of Summary
 
@@ -1007,7 +1007,7 @@ PostgreSQL, GraphQL, Next.js, Tailwind CSS
 | Element | Requirement | Action Item |
 |---------|-------------|-------------|
 | Profile Photo | Professional headshot | Neutral background, business casual attire |
-| Headline | Keyword-rich, value-driven | Not just "Software Engineer" — include tech stack |
+| Headline | Keyword-rich, value-driven | Not just "Software Engineer" â€” include tech stack |
 | About Section | 3-4 paragraph summary | Story format: who you are, what you do, achievements, goals |
 | Experience | Full details with metrics | Match resume content exactly |
 | Skills | 50 skills (top 3 pinned) | Prioritize skills mentioned in target JDs |
@@ -1140,7 +1140,7 @@ Let's connect if you're working on [interesting topic].
 
 ## Summary
 
-Your resume and cover letter are your first impression in the job market. For private sector roles, focus on ATS optimization, quantified achievements, and a clean 1-2 page format. For government and PSU applications, emphasize qualifications, completeness, and documentation. Use the 5 templates provided as starting points and customize for each application. Always proofread multiple times and test your resume through an ATS simulator before submitting. Your LinkedIn profile must complement your resume — optimize both together for maximum visibility.
+Your resume and cover letter are your first impression in the job market. For private sector roles, focus on ATS optimization, quantified achievements, and a clean 1-2 page format. For government and PSU applications, emphasize qualifications, completeness, and documentation. Use the 5 templates provided as starting points and customize for each application. Always proofread multiple times and test your resume through an ATS simulator before submitting. Your LinkedIn profile must complement your resume â€” optimize both together for maximum visibility.
 
 ## Practical Takeaways
 
@@ -1148,9 +1148,9 @@ Your resume and cover letter are your first impression in the job market. For pr
 2. Run your resume through an ATS simulator and target 80%+ match score for each job
 3. Customize your resume's skills section for each application by rearranging skill order
 4. Keep a document folder with 20+ different achievement bullets ready to mix and match
-5. Write cover letters for only the top 20% of jobs you apply to — quality over quantity
+5. Write cover letters for only the top 20% of jobs you apply to â€” quality over quantity
 6. Update your LinkedIn headline every time you apply to a new type of role
 7. Never include a photo in private sector resumes; always include one in government applications
 8. Use the STAR method (Situation, Task, Action, Result) for every bullet point
 9. Double-check your resume for ATS-unfriendly elements (tables, columns, images) before PDF export
-10. Maintain separate resume versions for private, government, and PSU applications — never mix formats
+10. Maintain separate resume versions for private, government, and PSU applications â€” never mix formats

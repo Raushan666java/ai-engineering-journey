@@ -1,19 +1,19 @@
-![Microservices Advanced Topics - Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/60-interview-microservices-d.png)
+﻿![Microservices Advanced Topics - Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/60-interview-microservices-d.png)
 
 
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/60-interview-microservices-d/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/60-interview-microservices-d/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/60-interview-microservices-d/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/60-interview-microservices-d/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/60-interview-microservices-d/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/60-interview-microservices-d/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/60-interview-microservices-d/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/60-interview-microservices-d/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/60-interview-microservices-d/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/60-interview-microservices-d/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/60-interview-microservices-d/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/60-interview-microservices-d/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -49,7 +49,7 @@ flowchart LR
 A service mesh manages service-to-service communication at the infrastructure layer using sidecar proxies. Istio injects an Envoy proxy alongside each pod, handling traffic management, security, and observability without changing application code.
 
 ```java
-// ── Without service mesh: circuit breaker in application code ──
+// â”€â”€ Without service mesh: circuit breaker in application code â”€â”€
 @Service
 public class OrderService {
     @Autowired private UserServiceClient userClient;
@@ -60,20 +60,20 @@ public class OrderService {
     }
 }
 
-// ── With Istio: circuit breaker moves to infrastructure ──
-// application code is clean → no Resilience4j annotations needed
+// â”€â”€ With Istio: circuit breaker moves to infrastructure â”€â”€
+// application code is clean â†’ no Resilience4j annotations needed
 @Service
 public class OrderService {
     @Autowired private UserServiceClient userClient;
 
     public UserDto getUser(Long id) {
-        return userClient.getUser(id);  // No circuit breaker → Istio handles it
+        return userClient.getUser(id);  // No circuit breaker â†’ Istio handles it
     }
 }
 ```
 
 ```yaml
-# ── Istio DestinationRule (circuit breaker at mesh level) ──
+# â”€â”€ Istio DestinationRule (circuit breaker at mesh level) â”€â”€
 
 > **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-c.md) | **Next:** [Security Interview Q&amp;A](./61-interview-security.md)
 apiVersion: networking.istio.io/v1beta1
@@ -95,7 +95,7 @@ spec:
       baseEjectionTime: 30s
       maxEjectionPercent: 50
 ---
-# ── Istio VirtualService (traffic splitting for canary) ──
+# â”€â”€ Istio VirtualService (traffic splitting for canary) â”€â”€
 
 > **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-c.md) | **Next:** [Security Interview Q&amp;A](./61-interview-security.md)
 apiVersion: networking.istio.io/v1beta1
@@ -120,7 +120,7 @@ spec:
         attempts: 3
         perTryTimeout: 1s
 ---
-# ── Istio PeerAuthentication (mTLS between services) ──
+# â”€â”€ Istio PeerAuthentication (mTLS between services) â”€â”€
 
 > **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-c.md) | **Next:** [Security Interview Q&amp;A](./61-interview-security.md)
 apiVersion: security.istio.io/v1beta1
@@ -132,7 +132,7 @@ spec:
   mtls:
     mode: STRICT  # All inter-service traffic must use mTLS
 ---
-# ── Istio AuthorizationPolicy ──
+# â”€â”€ Istio AuthorizationPolicy â”€â”€
 
 > **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-c.md) | **Next:** [Security Interview Q&amp;A](./61-interview-security.md)
 apiVersion: security.istio.io/v1beta1
@@ -153,12 +153,12 @@ spec:
 ```
 
 Service mesh provides:
-- Traffic management (canary, circuit breaker, retries, timeouts → no code changes)
+- Traffic management (canary, circuit breaker, retries, timeouts â†’ no code changes)
 - Security (mTLS, authorization, authentication at the proxy level)
 - Observability (automatic metrics, traces, access logs per request)
 - Resilience (timeouts, retries, circuit breaking, outlier detection)
 
-Use a service mesh when you have 10+ services and can't add cross-cutting code to each one. Do not use a service mesh for small deployments (3-5 services) → the complexity of managing sidecars and control plane is not worth it.
+Use a service mesh when you have 10+ services and can't add cross-cutting code to each one. Do not use a service mesh for small deployments (3-5 services) â†’ the complexity of managing sidecars and control plane is not worth it.
 
 ---
 
@@ -170,7 +170,7 @@ Use a service mesh when you have 10+ services and can't add cross-cutting code t
 Structured logging outputs JSON with consistent fields (service name, trace ID, level, message, timestamp). ELK or Loki aggregates logs from all services into a searchable store.
 
 ```java
-// ── Logback configuration for structured JSON logging ──
+// â”€â”€ Logback configuration for structured JSON logging â”€â”€
 // resources/logback-spring.xml
 <configuration>
     <appender name="JSON" class="ch.qos.logback.core.ConsoleAppender">
@@ -185,10 +185,10 @@ Structured logging outputs JSON with consistent fields (service name, trace ID, 
     </root>
 </configuration>
 
-// ── Dependencies ──
+// â”€â”€ Dependencies â”€â”€
 // implementation 'net.logstash.logback:logstash-logback-encoder:7.4'
 
-// ── Structured logging in application code ──
+// â”€â”€ Structured logging in application code â”€â”€
 @Service
 public class OrderService {
     private static final Logger log = LoggerFactory.getLogger(OrderService.class);
@@ -219,7 +219,7 @@ public class OrderService {
     }
 }
 
-// ── JSON output (single log entry) ──
+// â”€â”€ JSON output (single log entry) â”€â”€
 // {
 //   "@timestamp": "2026-06-16T12:30:00.000+00:00",
 //   "level": "INFO",
@@ -237,11 +237,11 @@ public class OrderService {
 //   "thread_name": "http-nio-8080-exec-3"
 // }
 
-// ── Loki log query ──
+// â”€â”€ Loki log query â”€â”€
 // {service="order-service", level="ERROR"} |= "traceId=abc123def456"
 // {service=~"user-service|order-service", level="ERROR"} | json | line_format "{{.message}}"
 
-// ── Logback MDC with auto-cleanup via Filter ──
+// â”€â”€ Logback MDC with auto-cleanup via Filter â”€â”€
 @Component
 public class MdcFilter implements WebFilter {
     @Override
@@ -259,8 +259,8 @@ public class MdcFilter implements WebFilter {
 
 Best practices:
 - Every log entry includes `traceId`, `service`, `level`, and `timestamp`
-- Structured JSON means no regex parsing → just query fields
-- Never log sensitive data (PII, passwords, tokens) → even in structured logs
+- Structured JSON means no regex parsing â†’ just query fields
+- Never log sensitive data (PII, passwords, tokens) â†’ even in structured logs
 - Correlation ID (traceId) connects logs across services during a single request flow
 - Use Loki + Grafana for Kubernetes-native log aggregation (no Elasticsearch cluster needed)
 
@@ -274,7 +274,7 @@ Best practices:
 Each microservice manages its own database migrations independently. Migrations are versioned, sequential, and tested in CI.
 
 ```java
-// ── Each service has its own Flyway configuration ──
+// â”€â”€ Each service has its own Flyway configuration â”€â”€
 // order-service/src/main/resources/application.yml:
 // spring:
 //   flyway:
@@ -289,7 +289,7 @@ Each microservice manages its own database migrations independently. Migrations 
 //   flyway:
 //     locations: classpath:db/migration/user
 
-// ── Migration files are prefixed by version: V{version}__{description}.sql ──
+// â”€â”€ Migration files are prefixed by version: V{version}__{description}.sql â”€â”€
 // order-service:
 //   db/migration/order/V1__create_orders_table.sql
 //   db/migration/order/V2__add_status_column.sql
@@ -299,7 +299,7 @@ Each microservice manages its own database migrations independently. Migrations 
 //   db/migration/user/V1__create_users_table.sql
 //   db/migration/user/V2__add_email_verification.sql
 
-// ── V3__add_indexes.sql for order-service ──
+// â”€â”€ V3__add_indexes.sql for order-service â”€â”€
 -- Create indexes for common queries
 CREATE INDEX idx_orders_user_id ON orders(user_id);
 CREATE INDEX idx_orders_status ON orders(status) WHERE status IN ('PENDING', 'PROCESSING');
@@ -308,7 +308,7 @@ CREATE INDEX idx_orders_created_at ON orders(created_at DESC);
 -- Backfill existing data if needed
 -- UPDATE orders SET status = 'PENDING' WHERE status IS NULL;
 
-// ── Advanced: multi-service migration coordination ──
+// â”€â”€ Advanced: multi-service migration coordination â”€â”€
 @Service
 public class CoordinatedMigrationService {
     @Autowired private Map<String, DataSource> dataSources;
@@ -326,7 +326,7 @@ public class CoordinatedMigrationService {
     }
 }
 
-// ── Backward compatibility: expand-contract for cross-service migrations ──
+// â”€â”€ Backward compatibility: expand-contract for cross-service migrations â”€â”€
 // Phase 1: Add new column (expand)
 -- V1__add_phone_column.sql
 ALTER TABLE users ADD COLUMN phone VARCHAR(20);
@@ -369,7 +369,7 @@ Each service's migration is independent. Never share migration files across serv
 Idempotency ensures that processing the same request multiple times produces the same result. For asynchronous processing, this means deduplication at the consumer.
 
 ```java
-// ── Idempotency key pattern (for REST endpoints) ──
+// â”€â”€ Idempotency key pattern (for REST endpoints) â”€â”€
 @RestController
 @RequestMapping("/orders")
 public class OrderController {
@@ -401,7 +401,7 @@ public class OrderService {
     }
 }
 
-// ── Idempotency registry (using database for persistence) ──
+// â”€â”€ Idempotency registry (using database for persistence) â”€â”€
 @Entity
 @Table(name = "idempotency_keys")
 public class IdempotencyRecord {
@@ -426,7 +426,7 @@ public interface IdempotencyRegistry extends JpaRepository<IdempotencyRecord, St
     void purgeOlderThan(@Param("cutoff") Instant cutoff);
 }
 
-// ── Idempotent Kafka consumer ──
+// â”€â”€ Idempotent Kafka consumer â”€â”€
 @Service
 public class IdempotentConsumer {
     @Autowired private ProcessedEventRepository processedRepo;
@@ -451,7 +451,7 @@ public class IdempotentConsumer {
     }
 }
 
-// ── Guarantee: atomic check-then-process with database constraint ──
+// â”€â”€ Guarantee: atomic check-then-process with database constraint â”€â”€
 // PostgreSQL:
 // CREATE UNIQUE INDEX idx_idempotency ON idempotency_keys(idempotency_key);
 //
@@ -460,12 +460,12 @@ public class IdempotentConsumer {
 // ON CONFLICT (idempotency_key) DO NOTHING
 // RETURNING idempotency_key;
 //
-// If the INSERT returns the key, this is the first call → process normally.
-// If it returns nothing, another request already started processing → return cached result.
+// If the INSERT returns the key, this is the first call â†’ process normally.
+// If it returns nothing, another request already started processing â†’ return cached result.
 
 ```
 
-Idempotency is not optional in microservices → network retries guarantee duplicate requests. Every write endpoint should accept an idempotency key. Every async consumer should deduplicate by event ID.
+Idempotency is not optional in microservices â†’ network retries guarantee duplicate requests. Every write endpoint should accept an idempotency key. Every async consumer should deduplicate by event ID.
 
 ---
 
@@ -477,7 +477,7 @@ Idempotency is not optional in microservices → network retries guarantee dupli
 Distributed caching (Redis) reduces latency and database load. Two primary patterns: cache-aside (read-through) and write-through.
 
 ```java
-// ── Cache-aside: read from cache, miss -> load from DB -> populate cache ──
+// â”€â”€ Cache-aside: read from cache, miss -> load from DB -> populate cache â”€â”€
 @Service
 public class ProductService {
     @Autowired private RedisTemplate<String, ProductDto> redis;
@@ -494,7 +494,7 @@ public class ProductService {
             return cached;
         }
 
-        // Cache miss → load from database
+        // Cache miss â†’ load from database
         Product product = productRepo.findById(id)
             .orElseThrow(() -> new ProductNotFoundException(id));
         ProductDto dto = ProductDto.from(product);
@@ -504,7 +504,7 @@ public class ProductService {
         return dto;
     }
 
-    // ── Invalidate cache on write ──
+    // â”€â”€ Invalidate cache on write â”€â”€
     @Transactional
     public ProductDto updateProduct(Long id, UpdateProductRequest req) {
         Product product = productRepo.findById(id).orElseThrow();
@@ -519,7 +519,7 @@ public class ProductService {
     }
 }
 
-// ── Spring Cache abstraction ──
+// â”€â”€ Spring Cache abstraction â”€â”€
 @Service
 public class ProductService {
     @Cacheable(value = "products", key = "#id", unless = "#result == null")
@@ -545,7 +545,7 @@ public class ProductService {
     }
 }
 
-// ── Redis configuration for distributed caching ──
+// â”€â”€ Redis configuration for distributed caching â”€â”€
 @Configuration
 @EnableCaching
 public class CacheConfig {
@@ -575,7 +575,7 @@ public class CacheConfig {
     }
 }
 
-// ── Cache stampede prevention ──
+// â”€â”€ Cache stampede prevention â”€â”€
 @Service
 public class ProductService {
     // Without protection: 100 concurrent cache misses all hit the database
@@ -612,13 +612,13 @@ public class ProductService {
             }
         }
 
-        // Lock not acquired → wait briefly and retry
+        // Lock not acquired â†’ wait briefly and retry
         Thread.sleep(100);
         return redis.opsForValue().get(key);  // Should be populated by now
     }
 }
 
-// ── Cache strategy comparison ──
+// â”€â”€ Cache strategy comparison â”€â”€
 // 1. Cache-aside (lazy): Most common. Cache miss = DB hit + cache populate.
 //    Pros: Simple, resilient (cache loss just means slower reads).
 //    Cons: Cache stampede on first request.
@@ -657,10 +657,10 @@ public class PaymentService {
 
     @Transactional
     public PaymentResult processPayment( PaymentRequest request) {
-        // 1. Check idempotency — has this key been processed?
+        // 1. Check idempotency â€” has this key been processed?
         String idempotencyKey = request.idempotencyKey();
         if (idempotencyRegistry.exists(idempotencyKey)) {
-            // Return the previously computed result — safe retry
+            // Return the previously computed result â€” safe retry
             return idempotencyRegistry.getResult(idempotencyKey);
         }
 
@@ -707,7 +707,7 @@ public PaymentResult processPayment(PaymentRequest request) {
         event.setStatus("COMPLETED");
         return result;
     } catch (DataIntegrityViolationException e) {
-        // Duplicate idempotency key → return stored result
+        // Duplicate idempotency key â†’ return stored result
         return paymentEventRepo.findByStatus("COMPLETED")
             .orElseThrow(() -> new RetryableException("Previous request in progress"));
     }
@@ -719,9 +719,9 @@ public PaymentResult processPayment(PaymentRequest request) {
 |--------|------------|----------------|
 | GET | Yes | Always |
 | PUT | Yes (full update) | Yes |
-| DELETE | Yes | Yes (second delete returns 404 — same state) |
-| POST | No | ❌ Must use idempotency-key header |
-| PATCH | Depends | ❌ Use idempotency-key |
+| DELETE | Yes | Yes (second delete returns 404 â€” same state) |
+| POST | No | âŒ Must use idempotency-key header |
+| PATCH | Depends | âŒ Use idempotency-key |
 
 ---
 
@@ -745,7 +745,7 @@ record OrderEventV1 {
     double total;
 }
 
-// Avro schema v2 (backward compatible — added optional field)
+// Avro schema v2 (backward compatible â€” added optional field)
 record OrderEventV2 {
     string orderId;
     string customerId;
@@ -754,10 +754,10 @@ record OrderEventV2 {
 }
 
 // Compatibility types:
-// BACKWARD: New schema can read old data (default) — add optional fields
-// FORWARD: Old schema can read new data — add fields with defaults
+// BACKWARD: New schema can read old data (default) â€” add optional fields
+// FORWARD: Old schema can read new data â€” add fields with defaults
 // FULL: Both backward and forward compatible
-// NONE: No compatibility checks — use with caution
+// NONE: No compatibility checks â€” use with caution
 ```
 
 **Strategy 2: Event versioning in the payload:**
@@ -817,10 +817,10 @@ public class OrderEventConsumer {
 ### Mistake 1: Not setting timeouts on all external calls
 
 ```java
-// ❌ WRONG: No timeout — thread blocks indefinitely
+// âŒ WRONG: No timeout â€” thread blocks indefinitely
 restTemplate.getForObject("/users/{id}", UserDto.class, id);
 
-// ✅ CORRECT: Always set connect and read timeouts
+// âœ… CORRECT: Always set connect and read timeouts
 @Bean
 public RestTemplate restTemplate() {
     return new RestTemplateBuilder()
@@ -843,7 +843,7 @@ WebClient.builder()
 ### Mistake 2: Cache stampede without protection
 
 ```java
-// ❌ WRONG: 100 concurrent requests all miss cache, all hit DB
+// âŒ WRONG: 100 concurrent requests all miss cache, all hit DB
 public Product getProduct(Long id) {
     Product cached = cache.get(id);
     if (cached == null) {
@@ -853,7 +853,7 @@ public Product getProduct(Long id) {
     return cached;
 }
 
-// ✅ CORRECT: Use locking to allow only one DB hit
+// âœ… CORRECT: Use locking to allow only one DB hit
 public Product getProduct(Long id) {
     Product cached = cache.get(id);
     if (cached == null) {
@@ -874,11 +874,11 @@ public Product getProduct(Long id) {
 ### Mistake 3: Treating all services the same in deployment
 
 ```yaml
-# ❌ WRONG: Same resources for all services
+# âŒ WRONG: Same resources for all services
 # order-service: 2 CPU, 4GB RAM
-# audit-service: 2 CPU, 4GB RAM (over-provisioned — audit is I/O bound)
+# audit-service: 2 CPU, 4GB RAM (over-provisioned â€” audit is I/O bound)
 
-# ✅ CORRECT: Right-size per service
+# âœ… CORRECT: Right-size per service
 # order-service: 4 CPU, 8GB RAM (CPU-intensive, large heap)
 # audit-service: 1 CPU, 2GB RAM (light, async writes)
 # payment-service: 2 CPU, 4GB RAM (balanced, strict latency requirements)
@@ -888,10 +888,10 @@ public Product getProduct(Long id) {
 
 | Aspect | Request-Driven (REST) | Event-Driven (Kafka/RabbitMQ) |
 |--------|----------------------|------------------------------|
-| Coupling | Temporal — caller waits for response | Temporal decoupling — fire and forget |
-| Availability | Requires all services up | Partial availability — events queued |
+| Coupling | Temporal â€” caller waits for response | Temporal decoupling â€” fire and forget |
+| Availability | Requires all services up | Partial availability â€” events queued |
 | Consistency | Strong (if transactional) | Eventually consistent |
-| Debugging | Easy — linear request flow | Complex — need tracing across events |
+| Debugging | Easy â€” linear request flow | Complex â€” need tracing across events |
 | Scaling | Scale by request volume | Scale by event throughput + consumer groups |
 | Retry | Client-side retry with idempotency | Broker-based retry (DLQ pattern) |
 | Schema evolution | API versioning (URL/header) | Schema registry compatibility |
@@ -909,7 +909,7 @@ interface CacheEntry<T> {
 
 class DistributedCacheSimulator {
   private store = new Map<string, CacheEntry<unknown>>();
-  private locks = new Map<string, string>();  // key → lock owner
+  private locks = new Map<string, string>();  // key â†’ lock owner
 
   async get<T>(key: string): Promise<T | null> {
     const entry = this.store.get(key);
@@ -941,7 +941,7 @@ class DistributedCacheSimulator {
     const lockToken = Math.random().toString(36);
 
     if (this.locks.has(lockId)) {
-      // Another thread is computing — wait and retry
+      // Another thread is computing â€” wait and retry
       await new Promise(resolve => setTimeout(resolve, 100));
       const retry = await this.get<T>(key);
       if (retry !== null) return retry;
@@ -1039,7 +1039,7 @@ flowchart TD
     style I fill:#64b5f6,color:#fff
 ```
 
-## Chapter Quiz — Advanced Microservices
+## Chapter Quiz â€” Advanced Microservices
 
 4. What is the primary mechanism for idempotency in REST APIs?
     - A) Using POST for all requests
@@ -1060,7 +1060,7 @@ flowchart TD
 
 <details>
 <summary>Answer</summary>
-**A) BACKWARD compatibility.** Backward compatibility means the new schema can read data written with the old schema — achieved by making new fields optional with defaults.
+**A) BACKWARD compatibility.** Backward compatibility means the new schema can read data written with the old schema â€” achieved by making new fields optional with defaults.
 </details>
 
 6. What is the most effective cache stampede prevention pattern in distributed systems?

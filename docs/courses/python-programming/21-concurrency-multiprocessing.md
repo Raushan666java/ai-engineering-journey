@@ -1,4 +1,4 @@
-# Chapter 21: Concurrency, Multiprocessing & Parallelism
+﻿# Chapter 21: Concurrency, Multiprocessing & Parallelism
 
 
 > **Previous:** [NumPy and pandas](./20-numpy-pandas.md) | **Next:** None
@@ -15,16 +15,16 @@ After completing this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -772,10 +772,10 @@ with ProcessPoolExecutor(max_workers=4) as ex:
 
 ```typescript
 // Chapter 21: TypeScript Concurrency Equivalents
-// Python: threading → TypeScript: Worker threads
+// Python: threading â†’ TypeScript: Worker threads
 import { Worker, isMainThread, parentPort, workerData } from "node:worker_threads";
 
-// Python: ThreadPoolExecutor → TypeScript: Worker pool pattern
+// Python: ThreadPoolExecutor â†’ TypeScript: Worker pool pattern
 function runInWorker(data: number): Promise<number> {
   return new Promise((resolve, reject) => {
     const worker = new Worker(new URL(import.meta.url), {
@@ -792,7 +792,7 @@ if (!isMainThread) {
   parentPort!.postMessage(result);
 }
 
-// Python: asyncio → TypeScript: async/await (first-class)
+// Python: asyncio â†’ TypeScript: async/await (first-class)
 async function fetchMultiple(urls: string[]): Promise<unknown[]> {
   const results = await Promise.all(
     urls.map(async (url) => {
@@ -817,13 +817,13 @@ function runInProcess(script: string, data: unknown): Promise<unknown> {
   });
 }
 
-// Python: multiprocessing.Queue → TypeScript: MessageChannel
+// Python: multiprocessing.Queue â†’ TypeScript: MessageChannel
 const { MessageChannel } = require("node:worker_threads");
 const channel = new MessageChannel();
 
 // Python: GIL has no TypeScript equivalent
 // Node.js uses a single thread for JavaScript but offloads I/O to libuv
-// CPU-bound work blocks the event loop — use Worker threads or child processes
+// CPU-bound work blocks the event loop â€” use Worker threads or child processes
 ```
 
 ### TypeScript Utilities

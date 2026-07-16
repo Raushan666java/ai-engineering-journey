@@ -1,4 +1,4 @@
-# Chapter 3: Solving Problems by Searching
+﻿# Chapter 3: Solving Problems by Searching
 
 **Previous:** [Chapter 2: Intelligent Agents](02-agents.md) | **Next:** [Chapter 3: Informed Search and Heuristics](03-informed-search.md)
 
@@ -15,16 +15,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/03-search/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/03-search/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/03-search/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/03-search/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/03-search/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/03-search/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/03-search/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/03-search/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/03-search/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/03-search/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/03-search/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/03-search/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -37,7 +37,7 @@
 
 Imagine you are standing at the entrance of a vast maze with walls as tall as your shoulders. Somewhere deep inside is the exit. You cannot see over the walls. You cannot teleport. Every step forward, backward, left, or right costs you time and energy. The question is: **what sequence of moves guarantees you will find the exit, and find it as quickly as possible?**
 
-This is the essence of search — the computational version of finding your way through a maze. Every day, search algorithms answer the same question inside GPS navigators (fastest route between two cities), web crawlers (discovering every page on the internet), puzzle solvers (winning a game of chess or solving a Rubik's cube), and even your own brain (planning the shortest path through a grocery store). Without search algorithms, intelligent agents — whether human or machine — would have no systematic way to find solutions.
+This is the essence of search â€” the computational version of finding your way through a maze. Every day, search algorithms answer the same question inside GPS navigators (fastest route between two cities), web crawlers (discovering every page on the internet), puzzle solvers (winning a game of chess or solving a Rubik's cube), and even your own brain (planning the shortest path through a grocery store). Without search algorithms, intelligent agents â€” whether human or machine â€” would have no systematic way to find solutions.
 
 Search is the universal problem-solving engine: define the starting point, define what "done" looks like, define what moves you are allowed to make, and a search algorithm will find the way.
 
@@ -93,7 +93,7 @@ flowchart LR
 
 ### Problem Formulation
 
-> **One-Sentence Takeaway:** Every search problem needs five components: initial state, actions, transition model, goal test, and path cost — getting these right is the foundation of any solution.
+> **One-Sentence Takeaway:** Every search problem needs five components: initial state, actions, transition model, goal test, and path cost â€” getting these right is the foundation of any solution.
 
 Before a search algorithm can be applied, a problem must be formally defined:
 
@@ -157,20 +157,20 @@ function BFS(problem) returns solution or failure
     return failure
 ```
 
-**Dry Run — Trace Table (Goal = G):**
+**Dry Run â€” Trace Table (Goal = G):**
 
 Graph: A -> B, C | B -> D, E | C -> F, G | D,E,F,G are leaves.
 
 | Iteration | Frontier Queue (front -> back) | Node Expanded | Goal Found? |
 |-----------|-------------------------------|---------------|-------------|
-| 0 | [A] | — | No |
+| 0 | [A] | â€” | No |
 | 1 | [B, C] | A | No |
 | 2 | [C, D, E] | B | No |
 | 3 | [D, E, F, G] | C | No |
 | 4 | [E, F, G] | D | No |
 | 5 | [F, G] | E | No |
 | 6 | [G] | F | No |
-| 7 | [] | G | Yes ✓ |
+| 7 | [] | G | Yes âœ“ |
 
 BFS expands level by level: A (depth 0), then B and C (depth 1), then D, E, F, G (depth 2).
 
@@ -284,7 +284,7 @@ public class BFS {
 | Metric | Value | Why? |
 |--------|-------|------|
 | Time | O(b^d) | b = branching factor, d = depth of shallowest goal. Every node at every level down to depth d must be expanded. Total nodes: 1 + b + b^2 + ... + b^d = O(b^d). |
-| Space | O(b^d) | BFS stores the entire frontier — all nodes at depth d — simultaneously. For b=10, d=10: ~10^10 nodes. This is the dominant constraint. |
+| Space | O(b^d) | BFS stores the entire frontier â€” all nodes at depth d â€” simultaneously. For b=10, d=10: ~10^10 nodes. This is the dominant constraint. |
 | Complete | Yes | If the branching factor is finite, BFS will eventually find the goal because it explores every node at each depth before moving deeper. |
 | Optimal | Yes (if all step costs are identical) | BFS finds the shallowest goal first. If path cost is uniform (each step costs 1), shallowest = cheapest. |
 
@@ -292,8 +292,8 @@ public class BFS {
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Guarantees the shortest path (minimum steps) | Extremely high memory consumption — O(b^d) nodes in the frontier |
-| Complete — will always find a solution if one exists | Impractical for large search spaces (e.g., chess: b ~= 35) |
+| Guarantees the shortest path (minimum steps) | Extremely high memory consumption â€” O(b^d) nodes in the frontier |
+| Complete â€” will always find a solution if one exists | Impractical for large search spaces (e.g., chess: b ~= 35) |
 | Simple to implement and reason about | Expanding only shallow nodes means deep solutions take very long |
 | Works well for small, uniform-cost problems | Not optimal when step costs vary (cost != depth) |
 | Graph version handles cycles automatically via visited set | Every node at depth d must be stored before moving to d+1 |
@@ -314,7 +314,7 @@ public class BFS {
 ### Depth-First Search (DFS)
 
 
-**Real-World Analogy:** You are exploring a cave system. Instead of checking every tunnel near the entrance first, you pick one tunnel and follow it as far as it goes. If you hit a dead end, you backtrack to the last junction and try the next tunnel. You go deep first, wide later. This uses very little memory — just enough to remember your way back.
+**Real-World Analogy:** You are exploring a cave system. Instead of checking every tunnel near the entrance first, you pick one tunnel and follow it as far as it goes. If you hit a dead end, you backtrack to the last junction and try the next tunnel. You go deep first, wide later. This uses very little memory â€” just enough to remember your way back.
 
 **Algorithm Steps (Graph Search with visited set):**
 
@@ -349,20 +349,20 @@ function DFS(problem) returns solution or failure
     return failure
 ```
 
-**Dry Run — Trace Table (Goal = G):**
+**Dry Run â€” Trace Table (Goal = G):**
 
 Graph: A -> B, C | B -> D, E | C -> F, G | D,E,F,G are leaves.
 
 | Iteration | Stack (top -> bottom) | Node Expanded | Goal Found? |
 |-----------|----------------------|---------------|-------------|
-| 0 | [A] | — | No |
+| 0 | [A] | â€” | No |
 | 1 | [C, B] | A | No |
 | 2 | [C, E, D] | B | No |
 | 3 | [C, E] | D | No |
 | 4 | [C] | E | No |
 | 5 | [G, F] | C | No |
 | 6 | [G] | F | No |
-| 7 | [] | G | Yes ✓ |
+| 7 | [] | G | Yes âœ“ |
 
 DFS plunges deep: A -> B -> D (dead end) -> backtrack to B -> E (dead end) -> backtrack to A -> C -> F (dead end) -> C -> G (goal).
 
@@ -474,14 +474,14 @@ public class DFS {
 | Time | O(b^m) | b = branching factor, m = maximum depth of the tree. In the worst case, DFS explores every node down to the maximum depth. If m >> d (solution depth), DFS wastes enormous time. |
 | Space | O(bm) | DFS stores only one path from root to current node (depth m) plus at most b siblings at each level. This is linear! For b=10, m=10: ~100 nodes vs BFS's ~10^10. |
 | Complete | No | In infinite-depth spaces (or graphs with cycles in tree-search mode), DFS descends forever on an infinite branch. With a visited set on finite graphs, it is complete for finite state spaces. |
-| Optimal | No | DFS returns the first solution found, which depends entirely on the order of neighbor expansion — not on path cost or depth. |
+| Optimal | No | DFS returns the first solution found, which depends entirely on the order of neighbor expansion â€” not on path cost or depth. |
 
 **Advantages & Disadvantages:**
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Very low memory — O(bm) vs BFS's O(b^d) | Not complete — can get lost in infinite branches (tree-search) |
-| Works well when solutions are dense and deep | Not optimal — first found != best found |
+| Very low memory â€” O(bm) vs BFS's O(b^d) | Not complete â€” can get lost in infinite branches (tree-search) |
+| Works well when solutions are dense and deep | Not optimal â€” first found != best found |
 | Simple to implement recursively or iteratively | Can get stuck in cycles without visited tracking |
 | Good for game trees (chess, tic-tac-toe) | May find a terrible solution when a good one is nearby |
 | Recursive implementation is elegant (~5 lines) | Stack overflow risk for very deep recursion |
@@ -494,14 +494,14 @@ public class DFS {
 | Cycles | A -> B -> C -> A causes infinite loop without visited tracking | Always maintain a visited set for graph search; pure tree-search DFS is vulnerable |
 | Very deep solution at depth d &lt;< m | DFS may waste time exploring enormous depth before finding the shallow solution | Use BFS or IDDFS when the goal is likely shallow |
 | Goal not reachable from chosen path | DFS explores one branch exhaustively before trying alternatives | No general fix; this is inherent to DFS's depth-first nature |
-| Solution at maximum depth | DFS works fine — follows the path all the way | No special handling needed, but watch for stack overflow in recursive version |
+| Solution at maximum depth | DFS works fine â€” follows the path all the way | No special handling needed, but watch for stack overflow in recursive version |
 
 ---
 
 ### Uniform-Cost Search (UCS)
 
 
-**Real-World Analogy:** You are planning a road trip from New York to Los Angeles. The shortest path (fewest miles) is not always the cheapest route — sometimes a slightly longer road has cheaper gas or no tolls. Uniform-Cost Search considers that each road segment has a different cost, and it always expands the cheapest path discovered so far. It is like always choosing the smallest total bill at every fork.
+**Real-World Analogy:** You are planning a road trip from New York to Los Angeles. The shortest path (fewest miles) is not always the cheapest route â€” sometimes a slightly longer road has cheaper gas or no tolls. Uniform-Cost Search considers that each road segment has a different cost, and it always expands the cheapest path discovered so far. It is like always choosing the smallest total bill at every fork.
 
 **Algorithm Steps:**
 
@@ -536,7 +536,7 @@ function UniformCostSearch(problem) returns solution or failure
     return failure
 ```
 
-**Dry Run — Trace Table (Goal = G):**
+**Dry Run â€” Trace Table (Goal = G):**
 
 Graph with weighted edges:
 A -> B (cost 2), A -> C (cost 5)
@@ -545,7 +545,7 @@ C -> F (cost 1), C -> G (cost 6)
 
 | Iteration | Priority Queue (cost, node) | Expanded | Goal Found? |
 |-----------|----------------------------|----------|-------------|
-| 0 | (0, A) | — | No |
+| 0 | (0, A) | â€” | No |
 | 1 | (2, B), (5, C) | A | No |
 | 2 | (4, D via B), (5, C), (6, E via B) | B | No |
 | 3 | (5, C), (6, E via B), (7, F via C) | D | No |
@@ -553,9 +553,9 @@ C -> F (cost 1), C -> G (cost 6)
 | 5 | (6, E via B), (7, F via C) | C (dup skipped) | No |
 | 6 | (7, F via C), (12, G via C) | E | No |
 | 7 | (12, G via C) | F | No |
-| Final | empty | G | Yes ✓ (cost = 12 via A -> C -> G) |
+| Final | empty | G | Yes âœ“ (cost = 12 via A -> C -> G) |
 
-Note: UCS does NOT stop when it generates the goal — it stops when it pops the goal from the priority queue, guaranteeing the optimal path.
+Note: UCS does NOT stop when it generates the goal â€” it stops when it pops the goal from the priority queue, guaranteeing the optimal path.
 
 **Python Implementation:**
 
@@ -693,16 +693,16 @@ public class UCS {
 | Metric | Value | Why? |
 |--------|-------|------|
 | Time | O(b^{1 + floor(C*/epsilon)}) | C* = optimal cost, epsilon = smallest edge cost. Unlike BFS (depth-based), UCS grows with the cost magnitude. If costs are small integers, this equals O(b^{d+1}). |
-| Space | O(b^{1 + floor(C*/epsilon)}) | Same as time — all nodes with cost &lt;= C* may be stored in the frontier simultaneously. |
+| Space | O(b^{1 + floor(C*/epsilon)}) | Same as time â€” all nodes with cost &lt;= C* may be stored in the frontier simultaneously. |
 | Complete | Yes | UCS will find a solution if one exists, assuming all edge costs are positive. With zero or negative costs, it may loop forever. |
-| Optimal | Yes | UCS expands nodes in strictly non-decreasing cost order. The first goal popped from the priority queue has the minimum possible cost — proof by contradiction: if a cheaper path existed, its endpoint would have been popped first. |
+| Optimal | Yes | UCS expands nodes in strictly non-decreasing cost order. The first goal popped from the priority queue has the minimum possible cost â€” proof by contradiction: if a cheaper path existed, its endpoint would have been popped first. |
 
 **Advantages & Disadvantages:**
 
 | Advantages | Disadvantages |
 |------------|---------------|
 | Guarantees optimal solution for any positive costs | Can be very slow when C* is large relative to epsilon |
-| Generalizes BFS (set all costs = 1 => behaves identically to BFS) | Does not use heuristic information — explores equally in all directions |
+| Generalizes BFS (set all costs = 1 => behaves identically to BFS) | Does not use heuristic information â€” explores equally in all directions |
 | Complete even with varying step costs | The frontier can grow extremely large |
 | No need for a heuristic function | Practical only when cost ranges are narrow |
 
@@ -711,11 +711,11 @@ public class UCS {
 | Edge Case | Behavior | Handling |
 |-----------|----------|----------|
 | Zero-cost edges | UCS may loop forever since cost never increases | Require strictly positive edge costs, or track visited states |
-| Negative edge costs | UCS fails entirely — it assumes non-decreasing costs | Use Bellman-Ford or A* with consistent heuristic |
+| Negative edge costs | UCS fails entirely â€” it assumes non-decreasing costs | Use Bellman-Ford or A* with consistent heuristic |
 | Very large C*/epsilon ratio (tiny costs) | Exponentially many nodes expanded before optimal goal | Use A* with an informative heuristic |
 | All costs equal | Degrades to BFS | Use BFS instead (simpler, same behavior) |
-| Multiple paths to same node with different costs | UCS stores only the cheapest via reached dictionary | Correct — the cheaper path dominates; re-expansion is unnecessary |
-| Goal generated but not popped | Not yet guaranteed optimal — cheaper paths may still be in the frontier | Do NOT stop on generation; pop the goal first |
+| Multiple paths to same node with different costs | UCS stores only the cheapest via reached dictionary | Correct â€” the cheaper path dominates; re-expansion is unnecessary |
+| Goal generated but not popped | Not yet guaranteed optimal â€” cheaper paths may still be in the frontier | Do NOT stop on generation; pop the goal first |
 
 ---
 
@@ -751,13 +751,13 @@ function DLS_recursive(node, problem, limit) returns solution or failure/cutoff
     if cutoff_occurred then return cutoff else return failure
 ```
 
-**Dry Run — Trace Table with limit = 2 (Goal = G):**
+**Dry Run â€” Trace Table with limit = 2 (Goal = G):**
 
 Graph: A -> B, C | B -> D, E | C -> F, G | D,E,F,G leaves.
 
 | Iteration | Stack (limit=2) | Node | Depth | Action |
 |-----------|-----------------|------|-------|--------|
-| 0 | [A(0)] | — | — | Start |
+| 0 | [A(0)] | â€” | â€” | Start |
 | 1 | [B(1), C(1)] | A | 0 | Expand, push children |
 | 2 | [B(1), F(2), G(2)] | C | 1 | Expand C, push children |
 | 3 | [B(1), F(2)] | G | 2 | Goal found! |
@@ -849,14 +849,14 @@ public class DLS {
 | Time | O(b^l) | Explores up to depth l, same exponential factor as DFS but bounded. Total nodes: 1 + b + b^2 + ... + b^l = O(b^l). |
 | Space | O(bl) | Linear in the depth limit. The recursive stack goes l levels deep with at most b siblings tracked at each level. |
 | Complete | No (if l &lt; solution depth) | If the goal is deeper than l, the search cannot reach it and returns cutoff. |
-| Optimal | No | First solution found may not be the cheapest. DLS does not track costs — it only respects the depth bound. |
+| Optimal | No | First solution found may not be the cheapest. DLS does not track costs â€” it only respects the depth bound. |
 
 **Advantages & Disadvantages:**
 
 | Advantages | Disadvantages |
 |------------|---------------|
 | Solves the infinite-branch problem of DFS | Requires knowing a good depth limit in advance |
-| Low memory — O(bl) | If l is too small, the solution is missed (returns cutoff) |
+| Low memory â€” O(bl) | If l is too small, the solution is missed (returns cutoff) |
 | Simple and predictable runtime | If l is too large, performance degrades toward DFS |
 | Returns cutoff vs failure (distinct signals) | Cutoff signal requires caller to distinguish from true failure |
 
@@ -864,7 +864,7 @@ public class DLS {
 
 | Edge Case | Behavior | Handling |
 |-----------|----------|----------|
-| l smaller than solution depth | Returns cutoff — algorithm says "I was pruned, not exhausted" | Distinguish cutoff from failure; use IDDFS to search increasingly deeper |
+| l smaller than solution depth | Returns cutoff â€” algorithm says "I was pruned, not exhausted" | Distinguish cutoff from failure; use IDDFS to search increasingly deeper |
 | l far larger than needed | Wastes time exploring unnecessary depth | Start small and increase (IDDFS) |
 | Goal exactly at depth l | Found normally | No special handling needed; algorithm includes depth = l |
 | l = 0 | Only checks start node | Useful if start might already be the goal |
@@ -875,7 +875,7 @@ public class DLS {
 ### Iterative Deepening Depth-First Search (IDDFS)
 
 
-**Real-World Analogy:** You are looking for a book in a library tower. You do not know which floor the book is on. You start on floor 0 and search every room on that floor. Not there? Now you search floors 0 and 1. Still nothing? Try floors 0, 1, and 2. Each failed search costs a little more, but you never search deeper than necessary — and you always find the book on the shallowest floor that contains it.
+**Real-World Analogy:** You are looking for a book in a library tower. You do not know which floor the book is on. You start on floor 0 and search every room on that floor. Not there? Now you search floors 0 and 1. Still nothing? Try floors 0, 1, and 2. Each failed search costs a little more, but you never search deeper than necessary â€” and you always find the book on the shallowest floor that contains it.
 
 **Algorithm Steps:**
 
@@ -885,7 +885,7 @@ public class DLS {
    c. If DLS returns cutoff (nodes were pruned), continue to next l.
    d. If DLS returns failure (entire space exhausted), return failure.
 
-**Why is the re-exploration acceptable?** Although IDDFS re-explores all nodes at each iteration, the overhead ratio is b/(b-1). For b=2, overhead is 2x; for b=10, only ~11%. Meanwhile, memory savings are exponential — O(bd) vs O(b^d).
+**Why is the re-exploration acceptable?** Although IDDFS re-explores all nodes at each iteration, the overhead ratio is b/(b-1). For b=2, overhead is 2x; for b=10, only ~11%. Meanwhile, memory savings are exponential â€” O(bd) vs O(b^d).
 
 **Pseudocode:**
 
@@ -896,7 +896,7 @@ function IterativeDeepeningSearch(problem) returns solution or failure
         if result != cutoff then return result
 ```
 
-**Dry Run — Trace Table (Goal = G at depth 2):**
+**Dry Run â€” Trace Table (Goal = G at depth 2):**
 
 | l (limit) | DLS Result | Nodes Expanded This Iteration | Total Nodes Expanded |
 |-----------|-----------|------------------------------|---------------------|
@@ -1006,9 +1006,9 @@ public class IDDFS {
 | Metric | Value | Why? |
 |--------|-------|------|
 | Time | O(b^d) | Same asymptotic complexity as BFS. At iteration l, nodes at depth k are expanded (d-k+1) times. Summation yields b^d * b/(b-1) = O(b^d). |
-| Space | O(bd) | Linear space — only stores the current path and its siblings. For b=10, d=10: ~100 nodes vs BFS's ~10^10. This is IDDFS's biggest selling point. |
+| Space | O(bd) | Linear space â€” only stores the current path and its siblings. For b=10, d=10: ~100 nodes vs BFS's ~10^10. This is IDDFS's biggest selling point. |
 | Complete | Yes | Since depth limit increases without bound (assuming finite b), a solution at any finite depth will eventually be reached. |
-| Optimal | Yes (if uniform step cost) | Finds the shallowest goal first because depth limits increase by 1 each iteration — same guarantee as BFS. |
+| Optimal | Yes (if uniform step cost) | Finds the shallowest goal first because depth limits increase by 1 each iteration â€” same guarantee as BFS. |
 
 **Advantages & Disadvantages:**
 
@@ -1016,9 +1016,9 @@ public class IDDFS {
 |------------|---------------|
 | Combines BFS's completeness/optimality with DFS's linear space | Repeated re-exploration of upper levels (overhead ~10-20%) |
 | Best choice for large search spaces with unknown depth | Not optimal for non-uniform costs |
-| Works well where branching factor is large | Each iteration starts from scratch — no caching between iterations |
+| Works well where branching factor is large | Each iteration starts from scratch â€” no caching between iterations |
 | Preferred for game-tree search (chess, checkers) | Not suitable for graphs with cycles without a visited set per path |
-| Anytime property — can return best solution found if interrupted | Overhead grows for small b (worst at b=2: ~2x) |
+| Anytime property â€” can return best solution found if interrupted | Overhead grows for small b (worst at b=2: ~2x) |
 
 **Edge Cases:**
 
@@ -1026,7 +1026,7 @@ public class IDDFS {
 |-----------|----------|----------|
 | No solution exists | IDDFS increases l forever (unless max_depth set) | Set a practical max_depth bound |
 | Goal at depth 0 | l=0 finds it immediately | Check goal test for start state |
-| Very large branching factor | Each iteration becomes exponentially more expensive | Acceptable — IDDFS overhead is small relative to exponential growth |
+| Very large branching factor | Each iteration becomes exponentially more expensive | Acceptable â€” IDDFS overhead is small relative to exponential growth |
 | Graph with cycles | Tree-search version loops infinitely | Use a visited set per path (or limit path memory via depth bound) |
 | Depth limit reached without solution | Returns None | Distinguish between "no solution within depth" and "solution exists beyond depth" |
 
@@ -1035,7 +1035,7 @@ public class IDDFS {
 ### Bidirectional Search
 
 
-**Real-World Analogy:** You and a friend are digging a tunnel through a mountain from opposite sides. Instead of one team digging the entire length, both teams dig simultaneously toward each other. They meet in the middle, cutting the digging distance in half. This is exactly what bidirectional search does: it runs two simultaneous searches — one forward from the start, one backward from the goal — and stops when they meet.
+**Real-World Analogy:** You and a friend are digging a tunnel through a mountain from opposite sides. Instead of one team digging the entire length, both teams dig simultaneously toward each other. They meet in the middle, cutting the digging distance in half. This is exactly what bidirectional search does: it runs two simultaneous searches â€” one forward from the start, one backward from the goal â€” and stops when they meet.
 
 **Algorithm Steps:**
 
@@ -1080,7 +1080,7 @@ function BidirectionalSearch(problem) returns solution or failure
     return failure
 ```
 
-**Dry Run — Trace Table (Goal = G):**
+**Dry Run â€” Trace Table (Goal = G):**
 
 Graph: A -> B, C | B -> D, E | C -> F, G | D,E,F,G leaves.
 
@@ -1088,7 +1088,7 @@ Forward frontier: starts from A. Backward frontier: starts from G.
 
 | Step | Forward Frontier | Backward Frontier | Expand Side | Meet? |
 |------|-----------------|-------------------|-------------|-------|
-| 0 | [A] | [G] | — | No |
+| 0 | [A] | [G] | â€” | No |
 | 1 | [B, C] | [G] | Forward | No |
 | 2 | [B, C] | [C] | Backward (G -> parent C) | Yes! C is in forward visited |
 
@@ -1293,7 +1293,7 @@ public class Bidirectional {
 
 | Metric | Value | Why? |
 |--------|-------|------|
-| Time | O(b^{d/2}) | Both searches go to depth ~= d/2, so each explores b^{d/2} nodes. Total: 2 x b^{d/2} = O(b^{d/2}). For b=10, d=10: BFS = 10^10, Bidirectional = 2 x 10^5 = 200,000 — a 50,000x reduction! |
+| Time | O(b^{d/2}) | Both searches go to depth ~= d/2, so each explores b^{d/2} nodes. Total: 2 x b^{d/2} = O(b^{d/2}). For b=10, d=10: BFS = 10^10, Bidirectional = 2 x 10^5 = 200,000 â€” a 50,000x reduction! |
 | Space | O(b^{d/2}) | Both visited sets together store ~2 x b^{d/2} nodes. Still O(b^{d/2}), which is the square root of BFS space. |
 | Complete | Yes | Assuming both directions have finite branching factors, the search will eventually exhaust the reachable space from both ends. |
 | Optimal | Yes (BFS-based bidirectional) | If BFS is used in both directions, the meeting point guarantees the shortest path. The first intersection is at the optimal depth. |
@@ -1302,7 +1302,7 @@ public class Bidirectional {
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Huge time savings — O(b^{d/2}) vs O(b^d) for BFS | Requires the goal to be known explicitly (reverse expansion) |
+| Huge time savings â€” O(b^{d/2}) vs O(b^d) for BFS | Requires the goal to be known explicitly (reverse expansion) |
 | Intuitively appealing (meet in the middle) | Not all problems have easily invertible actions |
 | Preserves completeness and optimality | Multiple goal states require inverse goal test, which may be complex |
 | Can use different search strategies per direction | Path reconstruction is more complex than unidirectional search |
@@ -1336,7 +1336,7 @@ public class Bidirectional {
 
 **Q1: When would BFS beat DFS, and vice versa?**
 
-BFS beats DFS when the solution is shallow and the branching factor is manageable — for example, finding the shortest path in a social network (6 degrees of separation). BFS guarantees the shortest path and is complete. DFS beats BFS when memory is tight, the state space is very large, and any solution (not necessarily the best) will do — for example, solving a maze where the exit is somewhere in the depths, or searching a file system where you just need to find any matching file quickly.
+BFS beats DFS when the solution is shallow and the branching factor is manageable â€” for example, finding the shortest path in a social network (6 degrees of separation). BFS guarantees the shortest path and is complete. DFS beats BFS when memory is tight, the state space is very large, and any solution (not necessarily the best) will do â€” for example, solving a maze where the exit is somewhere in the depths, or searching a file system where you just need to find any matching file quickly.
 
 **Q2: What is the key tradeoff that IDDFS makes?**
 
@@ -1344,7 +1344,7 @@ IDDFS trades a small amount of re-computation (roughly 10-20% overhead) for dram
 
 **Q3: What is the difference between tree search and graph search?**
 
-Tree search assumes every node is reachable through a unique path — it does not track visited nodes, so it can loop infinitely on graphs with cycles. Graph search maintains a visited set (or "reached" table), guaranteeing each state is expanded at most once. Graph search prevents infinite loops but uses more memory. Every algorithm discussed above can be run in either mode. In practice, graph search is almost always preferred for real-world problems where cycles exist.
+Tree search assumes every node is reachable through a unique path â€” it does not track visited nodes, so it can loop infinitely on graphs with cycles. Graph search maintains a visited set (or "reached" table), guaranteeing each state is expanded at most once. Graph search prevents infinite loops but uses more memory. Every algorithm discussed above can be run in either mode. In practice, graph search is almost always preferred for real-world problems where cycles exist.
 
 **Q4: Why does Uniform-Cost Search not stop when it generates the goal, only when it pops it?**
 
@@ -1352,11 +1352,11 @@ Because the first time the goal is generated may be via a non-optimal path. By w
 
 **Q5: Can BFS handle infinite graphs?**
 
-BFS cannot handle infinite graphs in general because it explores level by level without bound. If no goal exists, it runs forever. However, if the graph is infinite but the goal is reachable at some finite depth, BFS will eventually find it — though it may take prohibitively long.
+BFS cannot handle infinite graphs in general because it explores level by level without bound. If no goal exists, it runs forever. However, if the graph is infinite but the goal is reachable at some finite depth, BFS will eventually find it â€” though it may take prohibitively long.
 
 **Q6: Why is IDDFS preferred over BFS for game-tree search in chess engines?**
 
-Chess has a branching factor of ~35 and games can go 80+ ply deep. BFS would explode memory instantly (35^40 nodes). IDDFS uses O(bd) memory and can be combined with alpha-beta pruning, which dramatically reduces effective branching factor. Moreover, IDDFS is an anytime algorithm — if time runs out, the best result from the last completed depth is available.
+Chess has a branching factor of ~35 and games can go 80+ ply deep. BFS would explode memory instantly (35^40 nodes). IDDFS uses O(bd) memory and can be combined with alpha-beta pruning, which dramatically reduces effective branching factor. Moreover, IDDFS is an anytime algorithm â€” if time runs out, the best result from the last completed depth is available.
 
 **Q7: What is the overhead ratio of IDDFS compared to BFS?**
 
@@ -1406,24 +1406,24 @@ Bidirectional search requires that you can compute predecessors (reverse actions
 | Greedy Best-First | Informed | No | No | Yes | O(b^m) |
 | A* | Informed | Yes | Yes | Yes | O(b^d) |
 
-## Quick Reference — Heuristic Properties
+## Quick Reference â€” Heuristic Properties
 
 | Property | Definition | Implication |
 |----------|-----------|-------------|
 | Admissible | h(n) &lt;= h*(n) never overestimates | A* tree-search is optimal |
 | Consistent | h(n) &lt;= c(n,a,n') + h(n') (triangle inequality) | A* graph-search is optimal |
-| Dominance | h2(n) >= h1(n) for all n (both admissible) | h2 dominates h1 — expands fewer nodes |
+| Dominance | h2(n) >= h1(n) for all n (both admissible) | h2 dominates h1 â€” expands fewer nodes |
 | Effective Branching Factor | b* where N = 1 + b* + (b*)^2 + ... | Measures heuristic quality empirically |
 
 ## Cross-Application Matrix
 
 | Search Method | ML Engineering | Computer Vision | NLP | Research |
 |--------------|:---:|:---:|:---:|:---:|
-| BFS | — | — | — | Yes |
-| DFS | — | — | Yes | Yes |
-| Greedy Best-First | Yes | — | — | Yes |
-| A* Search | Yes | — | — | Yes |
-| Heuristic Design | — | Yes | — | Yes |
+| BFS | â€” | â€” | â€” | Yes |
+| DFS | â€” | â€” | Yes | Yes |
+| Greedy Best-First | Yes | â€” | â€” | Yes |
+| A* Search | Yes | â€” | â€” | Yes |
+| Heuristic Design | â€” | Yes | â€” | Yes |
 
 ---
 
@@ -1483,7 +1483,7 @@ Bidirectional search requires that you can compute predecessors (reverse actions
 - C) ~1.11x
 - D) ~1.5x
 
-<details><summary>Answer&lt;/summary&gt;C) The overhead ratio is b/(b-1) = 10/9 ≈ 1.11x, or about 11%.</details>
+<details><summary>Answer&lt;/summary&gt;C) The overhead ratio is b/(b-1) = 10/9 â‰ˆ 1.11x, or about 11%.</details>
 
 **Q8:** Which of the following is NOT a requirement for applying Bidirectional Search?
 - A) The goal state must be known
@@ -1491,7 +1491,7 @@ Bidirectional search requires that you can compute predecessors (reverse actions
 - C) Branching factor must be symmetric
 - D) A predecessor function must be definable
 
-<details><summary>Answer&lt;/summary&gt;C) Bidirectional Search works fine with asymmetric branching factors — the adaptive strategy expands the smaller frontier to compensate.</details>
+<details><summary>Answer&lt;/summary&gt;C) Bidirectional Search works fine with asymmetric branching factors â€” the adaptive strategy expands the smaller frontier to compensate.</details>
 
 ---
 

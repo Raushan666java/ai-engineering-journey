@@ -1,4 +1,4 @@
-# Chapter 18: Digital Privacy, Anonymity & OSINT
+﻿# Chapter 18: Digital Privacy, Anonymity & OSINT
 
 > **Prereq:** Chapters 3 (Network Security), 5 (Web Security), 2 (Cryptography); familiarity with TCP/IP, HTTP, DNS, and basic encryption concepts.
 > **Next:** Capstone / applied security project.
@@ -13,16 +13,16 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/cyber-security/18-privacy-osint/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/cyber-security/18-privacy-osint/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/18-privacy-osint/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/cyber-security/18-privacy-osint/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/cyber-security/18-privacy-osint/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/cyber-security/18-privacy-osint/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/18-privacy-osint/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/cyber-security/18-privacy-osint/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/cyber-security/18-privacy-osint/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/cyber-security/18-privacy-osint/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/cyber-security/18-privacy-osint/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/cyber-security/18-privacy-osint/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -46,7 +46,7 @@ By the end of this chapter, you will be able to:
 
 | Section | Key Concept | Why It Matters |
 |---------|-------------|----------------|
-| Digital Privacy Fundamentals | Threat modeling, data minimization, browser fingerprinting | Every online action leaks data — understand what and how |
+| Digital Privacy Fundamentals | Threat modeling, data minimization, browser fingerprinting | Every online action leaks data â€” understand what and how |
 | Tor & Onion Routing | Circuit-based anonymity, hidden services, bridges | The gold standard for anonymous communication |
 | Tor Relay Operations | Guard, middle, exit relays; bandwidth contributions | Running relays strengthens the network for everyone |
 | I2P & Garlic Routing | Garlic messages, eepsites, tunnels-to-tunnels | A different anonymity model optimized for hidden services |
@@ -62,7 +62,7 @@ By the end of this chapter, you will be able to:
 
 ## 1. Digital Privacy Fundamentals
 
-Digital privacy is the ability to control what personal information is collected, how it is used, and who has access to it. Unlike security — which is about protecting assets — privacy is about controlling the flow of information about yourself.
+Digital privacy is the ability to control what personal information is collected, how it is used, and who has access to it. Unlike security â€” which is about protecting assets â€” privacy is about controlling the flow of information about yourself.
 
 ### 1.1 Threat Modeling for Privacy
 
@@ -78,7 +78,7 @@ Privacy threat modeling asks: *Who is my adversary? What can they observe? What 
 **Privacy risk equation:**
 
 ```
-Privacy Risk = (Data Sensitivity × Data Volume × Adversary Capability) / (Privacy Controls × OPSEC Discipline)
+Privacy Risk = (Data Sensitivity Ã— Data Volume Ã— Adversary Capability) / (Privacy Controls Ã— OPSEC Discipline)
 ```
 
 ### 1.2 Data Minimization
@@ -144,7 +144,7 @@ flowchart TB
 
 **WebGL fingerprinting:** Queries the GPU model, vendor string, renderer, and supported extensions. Even browsers in private/incognito mode expose this data.
 
-**Font detection:** Uses font metric measurement — drawing a string in different fonts and checking which ones render at different widths — to enumerate the ~100–300 fonts installed on the system.
+**Font detection:** Uses font metric measurement â€” drawing a string in different fonts and checking which ones render at different widths â€” to enumerate the ~100â€“300 fonts installed on the system.
 
 #### TypeScript: Browser Fingerprint Simulator
 
@@ -416,7 +416,7 @@ Installed Fonts:  38
 
 ## 2. Tor & Onion Routing
 
-Tor (The Onion Router) is a decentralized anonymity network that protects against traffic analysis — a form of network surveillance that threatens personal privacy and communications.
+Tor (The Onion Router) is a decentralized anonymity network that protects against traffic analysis â€” a form of network surveillance that threatens personal privacy and communications.
 
 ### 2.1 Onion Routing Protocol
 
@@ -465,9 +465,9 @@ Hidden services (onion services) allow a server to be reachable without revealin
 2. The service uploads its descriptor (containing public key and intro points) to the **HSDir** (hidden service directory) hash ring.
 3. A client learns the `.onion` address, fetches the descriptor from the HSDir, and connects to an introduction point.
 4. The introduction point relays a rendezvous request; both client and service build circuits to a **rendezvous point**.
-5. The rendezvous point connects the two circuits — neither side knows the other's IP.
+5. The rendezvous point connects the two circuits â€” neither side knows the other's IP.
 
-**Address format:** `http://3g2upl4pq6kufc4m.onion` — the 56-character base32 string is a truncated SHA-1 hash of the service's public key (v2, deprecated) or a SHA-3-256 ed25519 public key (v3, current).
+**Address format:** `http://3g2upl4pq6kufc4m.onion` â€” the 56-character base32 string is a truncated SHA-1 hash of the service's public key (v2, deprecated) or a SHA-3-256 ed25519 public key (v3, current).
 
 ### 2.3 Tor Browser vs Tor Daemon
 
@@ -502,9 +502,9 @@ To use a bridge in Tor Browser:
 
 2. **Configure Tor Browser:**
    ```
-   Tor Browser → Settings → Tor → "Use a bridge"
-   → "Enter a bridge address you already know"
-   → Paste: obfs4 192.95.36.142:443 1234567890ABCDEF1234567890ABCDEF12345678 cert=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX iat-mode=0
+   Tor Browser â†’ Settings â†’ Tor â†’ "Use a bridge"
+   â†’ "Enter a bridge address you already know"
+   â†’ Paste: obfs4 192.95.36.142:443 1234567890ABCDEF1234567890ABCDEF12345678 cert=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX iat-mode=0
    ```
 
 3. **Manual bridge configuration (torrc):**
@@ -516,9 +516,9 @@ To use a bridge in Tor Browser:
    ```
 
 4. **Verify connectivity:**
-   - Visit `https://check.torproject.org/` — it should confirm "You are using Tor."
+   - Visit `https://check.torproject.org/` â€” it should confirm "You are using Tor."
 
-#### Snowflake — Decentralized Censorship Circumvention
+#### Snowflake â€” Decentralized Censorship Circumvention
 
 Snowflake is a WebRTC-based pluggable transport where volunteer "snowflake proxies" relay traffic. Unlike bridges, Snowflake is:
 
@@ -543,16 +543,16 @@ Tor relies on a global network of volunteers running relays. Each relay type pla
 
 | Relay Type | Function | Visibility | Legal Risk |
 |------------|----------|------------|------------|
-| **Guard (Entry)** | First hop; knows user IP | Listed in Tor consensus | Low — only encrypted Tor traffic visible |
-| **Middle** | Second hop; relays between guard and exit | Listed | Minimal — no IP or destination visible |
-| **Exit** | Final hop; sends traffic to destination | Listed | **High** — exit IP appears as source of all traffic |
+| **Guard (Entry)** | First hop; knows user IP | Listed in Tor consensus | Low â€” only encrypted Tor traffic visible |
+| **Middle** | Second hop; relays between guard and exit | Listed | Minimal â€” no IP or destination visible |
+| **Exit** | Final hop; sends traffic to destination | Listed | **High** â€” exit IP appears as source of all traffic |
 
 **Important:** Exit relay operators may receive abuse complaints because traffic appears to originate from their IP. Tor's exit policy blocks common abuse vectors (SMTP port 25 is blocked by default), but operators should:
 
 - Run exit relays as a **dedicated organization** (e.g., a university, non-profit, or Tor relay hosting provider).
 - Publish an **abuse response template** explaining Tor.
 - Use the **Tor Exit Notice** virtual host on port 80 to inform visitors.
-- Monitor for legal developments — exit relay operators in some jurisdictions have faced legal scrutiny.
+- Monitor for legal developments â€” exit relay operators in some jurisdictions have faced legal scrutiny.
 
 ### 3.2 Bandwidth Contributions
 
@@ -560,9 +560,9 @@ Tor uses a **bandwidth-weighted** selection algorithm. Relays with more bandwidt
 
 | Relay Bandwidth | Probability of Selection | Contribution |
 |-----------------|------------------------|--------------|
-| 100 Mbit/s | ~1.5× baseline | Supports ~50 concurrent users |
-| 1 Gbit/s | ~15× baseline | Supports ~500 concurrent users |
-| 10 Gbit/s | ~150× baseline | Supports ~5000 concurrent users |
+| 100 Mbit/s | ~1.5Ã— baseline | Supports ~50 concurrent users |
+| 1 Gbit/s | ~15Ã— baseline | Supports ~500 concurrent users |
+| 10 Gbit/s | ~150Ã— baseline | Supports ~5000 concurrent users |
 
 **Running a relay:**
 
@@ -582,12 +582,12 @@ RelayBandwidthBurst 10 MB         # 10 MB/s burst
 
 ### 3.3 Directory Authorities
 
-Directory authorities (dir auths) are the nine trusted servers that maintain the Tor network consensus — the authoritative list of all active relays. They:
+Directory authorities (dir auths) are the nine trusted servers that maintain the Tor network consensus â€” the authoritative list of all active relays. They:
 
 1. Each dir auth probes every relay to verify it's alive.
 2. Each votes on relay flags (Guard, Exit, Fast, Stable, HSDir, etc.).
 3. The votes are aggregated into a single signed consensus document.
-4. Tor clients download this consensus (~2 MB) every 2–3 hours.
+4. Tor clients download this consensus (~2 MB) every 2â€“3 hours.
 
 **The nine directory authorities (as of 2025):** tor26, moria1, maatuska, dizum, gabelmoo, danme, bastet, longclaw, nyx.
 
@@ -599,7 +599,7 @@ I2P (Invisible Internet Project) is an anonymous overlay network focused on hidd
 
 ### 4.1 Garlic Routing
 
-In garlic routing, multiple messages are bundled together in a single "garlic clove" — making traffic analysis harder because message boundaries are obscured.
+In garlic routing, multiple messages are bundled together in a single "garlic clove" â€” making traffic analysis harder because message boundaries are obscured.
 
 ```mermaid
 flowchart TB
@@ -638,7 +638,7 @@ flowchart TB
 |---------|-----|-----|
 | **Primary use** | Anonymous web browsing | Anonymous hidden services |
 | **Routing** | Onion routing (fixed 3-hop circuits) | Garlic routing (variable-length tunnels) |
-| **Latency** | Low (200–500 ms for web) | Higher (1–5s, optimized for hidden services) |
+| **Latency** | Low (200â€“500 ms for web) | Higher (1â€“5s, optimized for hidden services) |
 | **Directory** | Centralized consensus (9 dir auths) | Distributed network database (netDb) |
 | **Hidden services** | `.onion` addresses | `.i2p` eepsites |
 | **Outbound proxying** | Built-in (Tor exit nodes) | Not designed for clearnet exit |
@@ -660,7 +660,7 @@ To browse eepsites, users must configure their browser to use the I2P HTTP proxy
 
 ### 4.4 Tunnels
 
-I2P uses **unidirectional tunnels** — one-way paths through 3–4 peers:
+I2P uses **unidirectional tunnels** â€” one-way paths through 3â€“4 peers:
 
 - **Outbound tunnel:** From the local router to a gateway peer, then through tunnel participants to an endpoint.
 - **Inbound tunnel:** Created by the destination; the client builds a tunnel to itself so others can send it messages.
@@ -670,7 +670,7 @@ I2P uses **unidirectional tunnels** — one-way paths through 3–4 peers:
 
 ## 5. VPN Protocols & Leak Testing
 
-VPNs (Virtual Private Networks) create an encrypted tunnel between the user and a VPN server. They protect against local network adversaries (ISP, coffee shop Wi-Fi) but are **not anonymity tools** — the VPN provider sees all traffic.
+VPNs (Virtual Private Networks) create an encrypted tunnel between the user and a VPN server. They protect against local network adversaries (ISP, coffee shop Wi-Fi) but are **not anonymity tools** â€” the VPN provider sees all traffic.
 
 ### 5.1 Protocol Comparison
 
@@ -690,7 +690,7 @@ A VPN's privacy guarantee depends entirely on its logging policy. The three cate
 |--------|---------------|--------------|
 | **No-logs** | Nothing (verified by audit) | Minimal |
 | **Anonymous logs** | Connection timestamps (no IP, no bandwidth) | Low |
-| **Full logs** | Source IP, destination IP, timestamps, bandwidth | **High** — defeats VPN purpose |
+| **Full logs** | Source IP, destination IP, timestamps, bandwidth | **High** â€” defeats VPN purpose |
 
 **Audited no-logs providers:** Mullvad, ProtonVPN, IVPN, OVPN. These providers have submitted to independent audits and, in some cases, warrant canary challenges.
 
@@ -766,7 +766,7 @@ class DNSLeakTester {
    * In a real implementation, this performs actual DNS queries.
    */
   private resolveDNS(queryHost: string): string {
-    // Simulate DNS resolution — returns a "detected" resolver IP
+    // Simulate DNS resolution â€” returns a "detected" resolver IP
     const resolvers = Array.from(this.knownDNSServers.keys());
     // Randomly return a resolver that would indicate a leak
     const useLeakyResolver = Math.random() > 0.6;
@@ -845,7 +845,7 @@ class DNSLeakTester {
       const isLeak = !details.isVpnResolver && !this.knownDNSServers.has(resolverIP);
       if (isLeak) {
         leakDetails.push(
-          `DNS query for '${host}' resolved by ${resolverIP} (${details.organization}) — NOT a known secure resolver`
+          `DNS query for '${host}' resolved by ${resolverIP} (${details.organization}) â€” NOT a known secure resolver`
         );
       }
     }
@@ -853,8 +853,8 @@ class DNSLeakTester {
     // Show results
     console.log('DNS Resolvers Detected:');
     for (const r of detectedResolvers) {
-      const status = r.isVpnResolver ? '✅ VPN resolver' :
-        this.knownDNSServers.has(r.ip) ? '✅ Public resolver' : '❌ LEAK';
+      const status = r.isVpnResolver ? 'âœ… VPN resolver' :
+        this.knownDNSServers.has(r.ip) ? 'âœ… Public resolver' : 'âŒ LEAK';
       console.log(`  ${r.ip.padEnd(16)} ${r.organization.padEnd(22)} ${status}`);
     }
 
@@ -863,7 +863,7 @@ class DNSLeakTester {
     const vpnInterfaces = interfaces.filter(i => i.isVpnTunnel);
 
     if (vpnInterfaces.length === 0) {
-      leakDetails.push('No VPN tunnel interface detected — traffic is not encrypted by VPN');
+      leakDetails.push('No VPN tunnel interface detected â€” traffic is not encrypted by VPN');
     }
 
     console.log(`\nInterfaces: ${interfaces.map(i => `${i.name} (${i.ipv4})`).join(', ')}`);
@@ -871,7 +871,7 @@ class DNSLeakTester {
 
     const status: 'clean' | 'leak_detected' = leakDetails.length === 0 ? 'clean' : 'leak_detected';
 
-    console.log(`\nResult: ${status === 'clean' ? '✅ CLEAN — No DNS leaks detected' : '❌ LEAK DETECTED'}`);
+    console.log(`\nResult: ${status === 'clean' ? 'âœ… CLEAN â€” No DNS leaks detected' : 'âŒ LEAK DETECTED'}`);
     if (leakDetails.length > 0) {
       console.log('\nLeak Details:');
       leakDetails.forEach((d, i) => console.log(`  ${i + 1}. ${d}`));
@@ -911,19 +911,19 @@ External IP: 185.65.134.1
 VPN Active:  Yes
 
 DNS Resolvers Detected:
-  192.168.1.1       Unknown ISP              ❌ LEAK
-  8.8.8.8           Google Public DNS        ✅ Public resolver
-  1.1.1.1           Cloudflare DNS           ✅ Public resolver
-  192.168.1.1       Unknown ISP              ❌ LEAK
+  192.168.1.1       Unknown ISP              âŒ LEAK
+  8.8.8.8           Google Public DNS        âœ… Public resolver
+  1.1.1.1           Cloudflare DNS           âœ… Public resolver
+  192.168.1.1       Unknown ISP              âŒ LEAK
 
 Interfaces: Ethernet (192.168.1.102), Wi-Fi (192.168.1.103), tun0 (10.66.10.5), wg0 (10.64.0.2)
 VPN Tunnels: tun0, wg0
 
-Result: ❌ LEAK DETECTED
+Result: âŒ LEAK DETECTED
 
 Leak Details:
-  1. DNS query for 'whatismyip.com' resolved by 192.168.1.1 (Unknown ISP) — NOT a known secure resolver
-  2. DNS query for 'leak-check.whatismyip.com' resolved by 192.168.1.1 (Unknown ISP) — NOT a known secure resolver
+  1. DNS query for 'whatismyip.com' resolved by 192.168.1.1 (Unknown ISP) â€” NOT a known secure resolver
+  2. DNS query for 'leak-check.whatismyip.com' resolved by 192.168.1.1 (Unknown ISP) â€” NOT a known secure resolver
 
 === RECOMMENDED ACTIONS ===
 1. Enable VPN kill switch immediately
@@ -985,7 +985,7 @@ Building a credible cover identity requires crafting a consistent digital footpr
   [ ] Factory reset phone, install minimum apps
   [ ] Enable full-disk encryption on all devices
   [ ] Backup and wipe laptop; install Tails on USB
-  [ ] Memorize 2–3 phone numbers (do NOT store them)
+  [ ] Memorize 2â€“3 phone numbers (do NOT store them)
   [ ] Agree on communication schedule and dead-drop procedure
   [ ] Set up Signal with disappearing messages (1 week default)
 
@@ -1016,7 +1016,7 @@ Building a credible cover identity requires crafting a consistent digital footpr
 
 ## 7. OSINT Fundamentals
 
-Open-Source Intelligence (OSINT) is the collection and analysis of publicly available information. It is legal, passive, and requires no authorization — but the line between OSINT and intrusion is legally critical.
+Open-Source Intelligence (OSINT) is the collection and analysis of publicly available information. It is legal, passive, and requires no authorization â€” but the line between OSINT and intrusion is legally critical.
 
 ### 7.1 The OSINT Intelligence Cycle
 
@@ -1072,7 +1072,7 @@ inurl:".env" filetype:env "APP_KEY"
 intitle:"Index of" inurl:ftp
 
 # Vulnerable WordPress sites
-inurl:wp-admin intitle:"WordPress › Login"
+inurl:wp-admin intitle:"WordPress â€º Login"
 ```
 
 ### 7.3 Shodan & Censys
@@ -1093,9 +1093,9 @@ inurl:wp-admin intitle:"WordPress › Login"
 
 | Tool | Type | Capabilities |
 |------|------|-------------|
-| **theHarvester** | CLI — email/domain enumeration | Subdomains, emails, hosts via search engines, PGP key servers, Shodan |
-| **Maltego** | GUI — link analysis & visualization | Entity relationship mapping, transforms for DNS, social media, public records |
-| **Recon-ng** | CLI — modular reconnaissance framework | 100+ modules for DNS, contacts, credentials, geolocation, OSINT |
+| **theHarvester** | CLI â€” email/domain enumeration | Subdomains, emails, hosts via search engines, PGP key servers, Shodan |
+| **Maltego** | GUI â€” link analysis & visualization | Entity relationship mapping, transforms for DNS, social media, public records |
+| **Recon-ng** | CLI â€” modular reconnaissance framework | 100+ modules for DNS, contacts, credentials, geolocation, OSINT |
 
 **theHarvester example:**
 ```bash
@@ -1238,7 +1238,7 @@ class OSINTAggregator {
     ];
 
     const results: ShodanResult[] = [];
-    // Simulate 3–8 exposed services
+    // Simulate 3â€“8 exposed services
     const serviceCount = Math.floor(Math.random() * 6) + 3;
     const shuffled = [...commonVulnerableServices].sort(() => Math.random() - 0.5);
 
@@ -1308,7 +1308,7 @@ class OSINTAggregator {
 
     const found: string[] = [];
     for (const sub of commonSubdomains) {
-      // Simulate DNS resolution — some subdomains exist, some don't
+      // Simulate DNS resolution â€” some subdomains exist, some don't
       if (Math.random() > 0.65) {
         found.push(`${sub}.${this.target.domain}`);
       }
@@ -1430,7 +1430,7 @@ Twitter/X provides a developer API (v2) for programmatic data collection:
 
 ```typescript
 /**
- * Twitter OSINT Collector — rate-limited, proxy-rotating
+ * Twitter OSINT Collector â€” rate-limited, proxy-rotating
  * Demonstrates responsible social media data collection.
  */
 
@@ -1490,7 +1490,7 @@ class SocialMediaScraper {
   }
 
   /**
-   * Rate-limit enforcement — ensures we don't exceed the configured limit.
+   * Rate-limit enforcement â€” ensures we don't exceed the configured limit.
    */
   private async enforceRateLimit(): Promise<void> {
     const now = Date.now();
@@ -1546,7 +1546,7 @@ class SocialMediaScraper {
       'encryption', 'opensource', 'threatintel', 'infosec',
       'linux', 'python', 'javascript', 'cloud', 'data',
     ];
-    const emojis = ['🔒', '🛡️', '🌐', '🔑', '👁️', '🕵️', '⚡', '🖥️', '📡', '💻'];
+    const emojis = ['ðŸ”’', 'ðŸ›¡ï¸', 'ðŸŒ', 'ðŸ”‘', 'ðŸ‘ï¸', 'ðŸ•µï¸', 'âš¡', 'ðŸ–¥ï¸', 'ðŸ“¡', 'ðŸ’»'];
 
     for (let i = 0; i < count; i++) {
       const tweetTopics = Array.from(
@@ -1728,7 +1728,7 @@ Inferred networks:
 LinkedIn is a primary target for OSINT due to career and education details:
 
 - **Company enumeration:** Search for `"Current: Company X"` in Google to find employees.
-- **Google dork:** `site:linkedin.com/in "Company Name" "job title"` — finds profiles matching specific roles.
+- **Google dork:** `site:linkedin.com/in "Company Name" "job title"` â€” finds profiles matching specific roles.
 - **Sales Navigator** scraping (requires account): Extract employee lists, job changes, skills.
 - **Public API (limited):** LinkedIn restricted public API access in 2020, but tools like `linkedin-profile` still work by simulating browser sessions.
 
@@ -1738,7 +1738,7 @@ Facebook's Graph API (even with reduced access after Cambridge Analytica) still 
 
 - **Public events:** Attendee lists and their public profiles.
 - **Photos metadata:** Geotagged photos reveal locations and timelines.
-- **Page likes:** `graph.facebook.com/v19.0/{page-id}/likes` — reveals who likes specific pages.
+- **Page likes:** `graph.facebook.com/v19.0/{page-id}/likes` â€” reveals who likes specific pages.
 - **Friends lists:** Even with "friends only" settings, mutual friends are visible in many contexts.
 
 ### 8.4 Instagram Metadata
@@ -1768,7 +1768,7 @@ Hidden services are used for legitimate privacy reasons (journalist tips via Sec
 4. **Disable risky features:** Block plugins, disable WebGL, disable geolocation.
 5. **Use separate browser profile** exclusively for dark web research.
 
-### 9.2 Ahmia — Search Engine for Hidden Services
+### 9.2 Ahmia â€” Search Engine for Hidden Services
 
 Ahmia (`ahmia.fi`, accessible at `juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion`) is a search engine that indexes .onion sites:
 
@@ -1790,8 +1790,8 @@ From a threat intelligence perspective, dark web markets are critical sources of
 
 **Cryptocurrency tracking:** Most markets use Bitcoin or Monero. Bitcoin's public ledger enables transaction graph analysis; Monero's ring signatures make tracing significantly harder.
 
-**Case study — AlphaBay takedown (2017):**
-AlphaBay was the largest dark web market, handling $600M–$800M in transactions. The FBI identified the administrator by linking the PGP key used on AlphaBay (admin@alphabaymarket.eu) to a personal email, then traced the email to a Canadian apartment via a compromised server log. The OPSEC failure: reusing a personal email handle as the market admin alias.
+**Case study â€” AlphaBay takedown (2017):**
+AlphaBay was the largest dark web market, handling $600Mâ€“$800M in transactions. The FBI identified the administrator by linking the PGP key used on AlphaBay (admin@alphabaymarket.eu) to a personal email, then traced the email to a Canadian apartment via a compromised server log. The OPSEC failure: reusing a personal email handle as the market admin alias.
 
 ---
 
@@ -1833,7 +1833,7 @@ gpg --full-generate-key
 #   2y expiration (rotate keys regularly)
 #   Real name: "Jane Activist"
 #   Email: "jane@riseup.net"
-#   Comment: "[optional — avoid identifying comments]"
+#   Comment: "[optional â€” avoid identifying comments]"
 ```
 
 **Step 3: Export your public key**
@@ -1871,8 +1871,8 @@ gpg --verify message.txt.asc message.txt
 Signal (developed by Signal Foundation & Open Whisper Systems) is the gold standard for encrypted messaging:
 
 **Protocol features:**
-- **Double Ratchet Algorithm:** Provides forward secrecy and future secrecy — compromising a session key does not compromise past or future messages.
-- **X3DH (Extended Triple Diffie-Hellman):** Asynchronous key agreement — parties don't need to be online simultaneously.
+- **Double Ratchet Algorithm:** Provides forward secrecy and future secrecy â€” compromising a session key does not compromise past or future messages.
+- **X3DH (Extended Triple Diffie-Hellman):** Asynchronous key agreement â€” parties don't need to be online simultaneously.
 - **Sealed Sender:** The server learns only the recipient (not the sender) for metadata protection.
 - **Disappearing messages:** Messages auto-delete after a configurable timer.
 - **Screen security:** Blocks screenshots in recent conversations on Android.
@@ -1881,11 +1881,11 @@ Signal (developed by Signal Foundation & Open Whisper Systems) is the gold stand
 
 | Feature | Signal | WhatsApp | Telegram |
 |---------|--------|----------|----------|
-| E2E encryption by default | ✅ All messages | ✅ All messages | ❌ Only "Secret Chats" |
-| Open source (client + server) | ✅ | ✅ Client only | ❌ Server proprietary |
-| Minimal metadata retention | ✅ | ❌ (Meta collects extensive metadata) | ⚠️ (IP logged, contacts synced) |
-| Forward secrecy | ✅ (Double Ratchet) | ✅ (Double Ratchet) | ❌ (No ratchet) |
-| No cloud backup vulnerability | ✅ | ❌ (Google Drive backup is unencrypted) | ❌ (Server stores chat history) |
+| E2E encryption by default | âœ… All messages | âœ… All messages | âŒ Only "Secret Chats" |
+| Open source (client + server) | âœ… | âœ… Client only | âŒ Server proprietary |
+| Minimal metadata retention | âœ… | âŒ (Meta collects extensive metadata) | âš ï¸ (IP logged, contacts synced) |
+| Forward secrecy | âœ… (Double Ratchet) | âœ… (Double Ratchet) | âŒ (No ratchet) |
+| No cloud backup vulnerability | âœ… | âŒ (Google Drive backup is unencrypted) | âŒ (Server stores chat history) |
 
 ### 10.3 OMEMO
 
@@ -2111,17 +2111,17 @@ class EmailHeaderAnalyzer {
 
     // Check authentication results
     if (parsed.authenticationResults.spf.result === 'fail') {
-      warnings.push('SPF check FAILED — sender domain does not authorize this sending server');
+      warnings.push('SPF check FAILED â€” sender domain does not authorize this sending server');
       isSpoofed = true;
     }
 
     if (parsed.authenticationResults.dkim.result === 'fail') {
-      warnings.push('DKIM signature verification FAILED — message may have been tampered with');
+      warnings.push('DKIM signature verification FAILED â€” message may have been tampered with');
       isSpoofed = true;
     }
 
     if (parsed.authenticationResults.dmarc.result === 'fail') {
-      warnings.push('DMARC check FAILED — message may be spoofing the from domain');
+      warnings.push('DMARC check FAILED â€” message may be spoofing the from domain');
       isSpoofed = true;
     }
 
@@ -2129,10 +2129,10 @@ class EmailHeaderAnalyzer {
     const hops = parsed.receivedChain;
     for (let i = 0; i < hops.length; i++) {
       const hop = hops[i];
-      relayChain.push(`${hop.from} → ${hop.by}`);
+      relayChain.push(`${hop.from} â†’ ${hop.by}`);
 
       if (!hop.tls) {
-        warnings.push(`Hop ${i + 1} (${hop.from} → ${hop.by}) did NOT use TLS`);
+        warnings.push(`Hop ${i + 1} (${hop.from} â†’ ${hop.by}) did NOT use TLS`);
       }
 
       // Detect known mail server software
@@ -2147,21 +2147,21 @@ class EmailHeaderAnalyzer {
       // In real analysis, we'd parse timestamps and compute differences
       if (hops[i].timestamp !== 'unknown' && hops[i - 1].timestamp !== 'unknown') {
         // Simulated check
-        warnings.push(`Delay between hop ${i} and hop ${i + 1} — possible relay injection point`);
+        warnings.push(`Delay between hop ${i} and hop ${i + 1} â€” possible relay injection point`);
         break;
       }
     }
 
     // Check for missing headers
     if (!parsed.returnPath) {
-      warnings.push('Missing Return-Path header — possible spoofing indicator');
+      warnings.push('Missing Return-Path header â€” possible spoofing indicator');
     }
 
     // DMARC policy analysis
     if (parsed.authenticationResults.dmarc.policy === 'reject') {
-      warnings.push('Sending domain has strict DMARC reject policy — emails failing auth should be rejected');
+      warnings.push('Sending domain has strict DMARC reject policy â€” emails failing auth should be rejected');
     } else if (parsed.authenticationResults.dmarc.policy === 'none') {
-      warnings.push('Sending domain has DMARC policy set to "none" — no protection against spoofing');
+      warnings.push('Sending domain has DMARC policy set to "none" â€” no protection against spoofing');
     }
 
     return {
@@ -2195,7 +2195,7 @@ DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=evil-domain.com; s=selec
 Authentication-Results: mx.google.com; spf=softfail smtp.mailfrom=evil-domain.com; dkim=fail header.d=evil-domain.com; dmarc=fail header.from=legitimate-bank.com
 From: "Bank of America Security" <security@legitimate-bank.com>
 To: victim@gmail.com
-Subject: URGENT: Your account has been compromised — verify now
+Subject: URGENT: Your account has been compromised â€” verify now
 Date: Mon, 06 Jan 2025 14:31:45 -0800
 Message-ID: <20250106223145.abc123@evil-domain.com>
 MIME-Version: 1.0
@@ -2214,7 +2214,7 @@ console.log(`Message-ID: ${headers.messageId}`);
 
 console.log(`\nRouting Chain (${headers.receivedChain.length} hops):`);
 headers.receivedChain.forEach((hop, i) => {
-  console.log(`  Hop ${i + 1}: ${hop.from} → ${hop.by} (${hop.with})${hop.tls ? ' [TLS]' : ' [NO TLS]'}`);
+  console.log(`  Hop ${i + 1}: ${hop.from} â†’ ${hop.by} (${hop.with})${hop.tls ? ' [TLS]' : ' [NO TLS]'}`);
 });
 
 console.log(`\nAuthentication Results:`);
@@ -2223,13 +2223,13 @@ console.log(`  DKIM:  ${headers.authenticationResults.dkim.result.toUpperCase()}
 console.log(`  DMARC: ${headers.authenticationResults.dmarc.result.toUpperCase()} (policy: ${headers.authenticationResults.dmarc.policy})`);
 
 console.log(`\nSecurity Report:`);
-console.log(`  Spoofed:        ${report.isSpoofed ? '❌ YES' : '✅ NO'}`);
+console.log(`  Spoofed:        ${report.isSpoofed ? 'âŒ YES' : 'âœ… NO'}`);
 console.log(`  Status:         ${report.securityStatus.toUpperCase()}`);
 console.log(`  Relay servers:  ${report.serverSoftware.join(', ') || 'Unknown'}`);
 
 if (report.warnings.length > 0) {
   console.log('\n  Warnings:');
-  report.warnings.forEach((w, i) => console.log(`  ${i + 1}. ⚠️  ${w}`));
+  report.warnings.forEach((w, i) => console.log(`  ${i + 1}. âš ï¸  ${w}`));
 }
 ```
 
@@ -2239,14 +2239,14 @@ if (report.warnings.length > 0) {
 
 From:    Bank of America Security <security@legitimate-bank.com>
 To:      victim@gmail.com
-Subject: URGENT: Your account has been compromised — verify now
+Subject: URGENT: Your account has been compromised â€” verify now
 Date:    Mon, 06 Jan 2025 14:31:45 -0800
 Message-ID: <20250106223145.abc123@evil-domain.com>
 
 Routing Chain (3 hops):
-  Hop 1: localhost → internal.evil-domain.com (Postfix) [NO TLS]
-  Hop 2: internal.evil-domain.com → mail.evil-domain.com (ESMTPA) [NO TLS]
-  Hop 3: mail.evil-domain.com → mx.google.com (ESMTPS) [TLS]
+  Hop 1: localhost â†’ internal.evil-domain.com (Postfix) [NO TLS]
+  Hop 2: internal.evil-domain.com â†’ mail.evil-domain.com (ESMTPA) [NO TLS]
+  Hop 3: mail.evil-domain.com â†’ mx.google.com (ESMTPS) [TLS]
 
 Authentication Results:
   SPF:   SOFTFAIL (domain: evil-domain.com)
@@ -2254,24 +2254,24 @@ Authentication Results:
   DMARC: FAIL (policy: none)
 
 Security Report:
-  Spoofed:        ❌ YES
+  Spoofed:        âŒ YES
   Status:         FAIL
   Relay servers:  Postfix
 
   Warnings:
-  1. ⚠️  SPF check FAILED — sender domain does not authorize this sending server
-  2. ⚠️  DKIM signature verification FAILED — message may have been tampered with
-  3. ⚠️  DMARC check FAILED — message may be spoofing the from domain
-  4. ⚠️  Hop 1 (localhost → internal.evil-domain.com) did NOT use TLS
-  5. ⚠️  Hop 2 (internal.evil-domain.com → mail.evil-domain.com) did NOT use TLS
-  6. ⚠️  Sending domain has DMARC policy set to "none" — no protection against spoofing
+  1. âš ï¸  SPF check FAILED â€” sender domain does not authorize this sending server
+  2. âš ï¸  DKIM signature verification FAILED â€” message may have been tampered with
+  3. âš ï¸  DMARC check FAILED â€” message may be spoofing the from domain
+  4. âš ï¸  Hop 1 (localhost â†’ internal.evil-domain.com) did NOT use TLS
+  5. âš ï¸  Hop 2 (internal.evil-domain.com â†’ mail.evil-domain.com) did NOT use TLS
+  6. âš ï¸  Sending domain has DMARC policy set to "none" â€” no protection against spoofing
 ```
 
 ---
 
 ## 11. Metadata Stripping
 
-Metadata is hidden data embedded in files that can identify creators, locations, editing history, and devices. Before sharing files — especially in investigations or journalism — all metadata must be removed.
+Metadata is hidden data embedded in files that can identify creators, locations, editing history, and devices. Before sharing files â€” especially in investigations or journalism â€” all metadata must be removed.
 
 ### 11.1 EXIF Removal (Images)
 
@@ -2279,7 +2279,7 @@ EXIF (Exchangeable Image File Format) data is embedded in JPEG, TIFF, and RAW im
 
 | EXIF Tag | Example Value | Risk |
 |----------|---------------|------|
-| GPSLatitude/GPSLongitude | 48°51'29.6"N 2°17'40.1"E | Exact location where photo was taken |
+| GPSLatitude/GPSLongitude | 48Â°51'29.6"N 2Â°17'40.1"E | Exact location where photo was taken |
 | Make/Model | iPhone 15 Pro Max | Device identification |
 | DateTimeOriginal | 2025-06-15 14:32:10 | Precise timing of photo |
 | Software | Adobe Photoshop 25.0 | Editing software used |
@@ -2289,12 +2289,12 @@ EXIF (Exchangeable Image File Format) data is embedded in JPEG, TIFF, and RAW im
 **Tools for EXIF removal:**
 
 ```bash
-# jhead — JPEG EXIF header editor
+# jhead â€” JPEG EXIF header editor
 jhead -exonly photo.jpg             # View all EXIF
 jhead -purejpg photo.jpg            # Strip all EXIF (JPEG only)
 jhead -dc photo.jpg                 # Delete comment field
 
-# exiftool — universal metadata tool (any file type)
+# exiftool â€” universal metadata tool (any file type)
 exiftool -all= photo.jpg            # Remove all metadata
 exiftool -gps:all= photo.jpg        # Remove only GPS tags
 exiftool -EXIF:All= photo.jpg       # Remove EXIF group only
@@ -2433,8 +2433,8 @@ class EXIFProcessor {
         ? `${['Adobe Photoshop', 'Lightroom', 'Capture One', 'GIMP', 'Snapseed', 'VSCO'][Math.floor(Math.random() * 6)]} ${String(Math.floor(Math.random() * 25) + 1)}.${Math.floor(Math.random() * 10)}`
         : '(unknown)',
       dateTimeOriginal: new Date(Date.now() - Math.floor(Math.random() * 365 * 86400000 * 3)).toISOString().replace('T', ' ').substring(0, 19),
-      gpsLatitude: `${latDeg}°${latMin}'${latSec.toFixed(2)}"${latDir}`,
-      gpsLongitude: `${lonDeg}°${lonMin}'${lonSec.toFixed(2)}"${lonDir}`,
+      gpsLatitude: `${latDeg}Â°${latMin}'${latSec.toFixed(2)}"${latDir}`,
+      gpsLongitude: `${lonDeg}Â°${lonMin}'${lonSec.toFixed(2)}"${lonDir}`,
       gpsAltitude: `${(Math.random() * 3000).toFixed(1)}m`,
       orientation: Math.floor(Math.random() * 8) + 1,
       xResolution: 72,
@@ -2447,7 +2447,7 @@ class EXIFProcessor {
       whiteBalance: ['Auto', 'Daylight', 'Cloudy', 'Tungsten', 'Fluorescent', 'Flash'][Math.floor(Math.random() * 6)],
       thumbnailPresent: Math.random() > 0.1,
       userComment: Math.random() > 0.5 ? '' : `Meeting at ${['HQ', 'safehouse', 'cafe downtown', 'park bench'][Math.floor(Math.random() * 4)]}`,
-      copyright: `© ${new Date().getFullYear()} ${['Jane Activist', 'Anonymous', 'Press Freedom Org', 'OSINT Researcher'][Math.floor(Math.random() * 4)]}`,
+      copyright: `Â© ${new Date().getFullYear()} ${['Jane Activist', 'Anonymous', 'Press Freedom Org', 'OSINT Researcher'][Math.floor(Math.random() * 4)]}`,
       artist: ['Jane Activist', 'John Doe', 'Anonymous', 'Photojournalist'][Math.floor(Math.random() * 4)],
     };
   }
@@ -2490,7 +2490,7 @@ class EXIFProcessor {
       tag: 'Software',
       value: exif.software,
       risk: 'medium',
-      reason: 'Editing software used — fingerprints the workflow',
+      reason: 'Editing software used â€” fingerprints the workflow',
     });
 
     tags.push({
@@ -2591,7 +2591,7 @@ class EXIFProcessor {
     report += '\nREMOVED TAGS (sensitive):\n';
     for (const tag of result.removedTags) {
       report += `  [${tag.risk.toUpperCase()}] ${tag.tag}: ${tag.value}\n`;
-      report += `       → ${tag.reason}\n`;
+      report += `       â†’ ${tag.reason}\n`;
     }
 
     report += '\nRETAINED TAGS (non-sensitive):\n';
@@ -2601,11 +2601,11 @@ class EXIFProcessor {
 
     report += `\nVERDICT: `;
     if (result.overallRisk === 'danger') {
-      report += '❌ DANGER — Extensive metadata present. DO NOT share without stripping.\n';
+      report += 'âŒ DANGER â€” Extensive metadata present. DO NOT share without stripping.\n';
     } else if (result.overallRisk === 'caution') {
-      report += '⚠️  CAUTION — Some sensitive metadata detected. Consider additional stripping.\n';
+      report += 'âš ï¸  CAUTION â€” Some sensitive metadata detected. Consider additional stripping.\n';
     } else {
-      report += '✅ SAFE — Minimal metadata present.\n';
+      report += 'âœ… SAFE â€” Minimal metadata present.\n';
     }
 
     return report;
@@ -2639,43 +2639,43 @@ ORIGINAL METADATA:
   Camera:        Apple iPhone 15 Pro Max
   Software:      Adobe Photoshop 25.3
   Date/Time:     2024-11-23 14:32:10
-  GPS:           48°51'29.60"N, 2°17'40.10"E (150.3m)
+  GPS:           48Â°51'29.60"N, 2Â°17'40.10"E (150.3m)
   Exposure:      1/125 @ f/2.8, ISO 400
   Focal Length:  28.0 mm
   Flash:         No
   Thumbnail:     Embedded
   Comment:       Meeting at safehouse
   Artist:        Jane Activist
-  Copyright:     © 2025 Jane Activist
+  Copyright:     Â© 2025 Jane Activist
 
 REMOVED TAGS (sensitive):
-  [CRITICAL] GPS Latitude/Longitude: 48°51'29.60"N, 2°17'40.10"E
-       → Exact geographic coordinates of where photo was taken
+  [CRITICAL] GPS Latitude/Longitude: 48Â°51'29.60"N, 2Â°17'40.10"E
+       â†’ Exact geographic coordinates of where photo was taken
   [HIGH] GPS Altitude: 150.3m
-       → Elevation data narrows down location precision
+       â†’ Elevation data narrows down location precision
   [HIGH] Date/Time Original: 2024-11-23 14:32:10
-       → Precise timestamp establishes timeline and alibi
+       â†’ Precise timestamp establishes timeline and alibi
   [MEDIUM] Device Make/Model: Apple iPhone 15 Pro Max
-       → Identifies device hardware (could link other photos)
+       â†’ Identifies device hardware (could link other photos)
   [MEDIUM] Software: Adobe Photoshop 25.3
-       → Editing software used — fingerprints the workflow
+       â†’ Editing software used â€” fingerprints the workflow
   [HIGH] User Comment: Meeting at safehouse
-       → May contain user-typed sensitive text
-  [MEDIUM] Copyright: © 2025 Jane Activist
-       → Identifies ownership/author
+       â†’ May contain user-typed sensitive text
+  [MEDIUM] Copyright: Â© 2025 Jane Activist
+       â†’ Identifies ownership/author
   [MEDIUM] Artist: Jane Activist
-       → Direct author attribution
+       â†’ Direct author attribution
   [HIGH] Thumbnail: Present
-       → Embedded thumbnail may contain visual info not visible in main image
+       â†’ Embedded thumbnail may contain visual info not visible in main image
   [CRITICAL] Serial Numbers: N/A (simulated)
-       → Device serial number uniquely identifies your camera
+       â†’ Device serial number uniquely identifies your camera
 
 RETAINED TAGS (non-sensitive):
   Orientation: 1
   X Resolution: 72
   Y Resolution: 72
 
-VERDICT: ❌ DANGER — Extensive metadata present. DO NOT share without stripping.
+VERDICT: âŒ DANGER â€” Extensive metadata present. DO NOT share without stripping.
 ======================================================================
 
 After stripping sensitive metadata, only these fields remain:
@@ -2700,9 +2700,9 @@ Total tags: 13
 ### Phase 1: Email Header Analysis
 
 1. The phishing email's `Return-Path` points to `phish@malicious-actors.net`.
-2. SPF check: `fail` — the sending server `mail.evil-host.net` is not authorized by `pressfreedomalliance.org`.
-3. DKIM: no signature — the message is not authenticated.
-4. Received chain traces through three relays: `mail.evil-host.net` → `proxy.anonymizer.io` → `relay.evil.com`.
+2. SPF check: `fail` â€” the sending server `mail.evil-host.net` is not authorized by `pressfreedomalliance.org`.
+3. DKIM: no signature â€” the message is not authenticated.
+4. Received chain traces through three relays: `mail.evil-host.net` â†’ `proxy.anonymizer.io` â†’ `relay.evil.com`.
 
 ### Phase 2: Domain OSINT
 
@@ -2718,29 +2718,29 @@ Total tags: 13
 
 Using Hunter.io and emailrep.io:
 
-- `phish@malicious-actors.net` — no historical breaches found.
-- From email header `From:` field: `"Press Freedom Alliance" <security@pressfreedomalliance.org>` — this is the spoofed target.
+- `phish@malicious-actors.net` â€” no historical breaches found.
+- From email header `From:` field: `"Press Freedom Alliance" <security@pressfreedomalliance.org>` â€” this is the spoofed target.
 - Social media mentions: @PressFreeAlliance tweeted 3 hours ago warning about a phishing campaign.
 
 ### Phase 4: Infrastructure Mapping
 
 ```
 Attacker Infrastructure:
-  ┌─────────────────────┐
-  │ malicious-actors.net│── C2 server (Russia, AS12345)
-  └────────┬────────────┘
-           │
-  ┌────────▼────────────┐
-  │ *.secure-login.net  │── Phishing landing page (Netherlands, AS60404)
-  └─────────────────────┘
-           │
-  ┌────────▼────────────┐
-  │ mail.evil-host.net  │── SMTP relay (Panama, AS263726)
-  └─────────────────────┘
-           │
-  ┌────────▼────────────┐
-  │ proxy.anonymizer.io │── Anonymization proxy (Luxembourg, AS200313)
-  └─────────────────────┘
+  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+  â”‚ malicious-actors.netâ”‚â”€â”€ C2 server (Russia, AS12345)
+  â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+           â”‚
+  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+  â”‚ *.secure-login.net  â”‚â”€â”€ Phishing landing page (Netherlands, AS60404)
+  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+           â”‚
+  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+  â”‚ mail.evil-host.net  â”‚â”€â”€ SMTP relay (Panama, AS263726)
+  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+           â”‚
+  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+  â”‚ proxy.anonymizer.io â”‚â”€â”€ Anonymization proxy (Luxembourg, AS200313)
+  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### Phase 5: Indicators of Compromise (IOCs)
@@ -2760,8 +2760,8 @@ mail.evil-host.net
 phish@malicious-actors.net
 
 [FILE HASHES]
-doc_invoice_2025.doc — SHA256: a1b2c3d4e5f6...
-payload_v2.exe — SHA256: 78901234abcd...
+doc_invoice_2025.doc â€” SHA256: a1b2c3d4e5f6...
+payload_v2.exe â€” SHA256: 78901234abcd...
 ```
 
 **Outcome:** The campaign was attributed to a known criminal group, and the infrastructure was added to threat intelligence feeds. The landing pages were reported to the hosting provider and taken down within 72 hours.
@@ -2772,7 +2772,7 @@ payload_v2.exe — SHA256: 78901234abcd...
 
 | Takeaway | Application |
 |----------|-------------|
-| Use Tor Browser for anonymity — not private browsing mode | Deploy Tor Browser with Safer/Safest mode for any research requiring identity protection |
+| Use Tor Browser for anonymity â€” not private browsing mode | Deploy Tor Browser with Safer/Safest mode for any research requiring identity protection |
 | Run a DNS leak test before relying on a VPN | Use the DNSLeakTester class or visit ipleak.net to verify your DNS queries are not exposed |
 | Strip metadata from all shared files | Apply exiftool or the EXIFProcessor before sharing images; use MAT for document metadata |
 | Follow the data minimisation principle | Share only required form fields; use pseudonyms across services; enable disappearing messages |
@@ -2786,7 +2786,7 @@ payload_v2.exe — SHA256: 78901234abcd...
 
 Digital privacy, anonymity, and OSINT form a three-legged foundation for secure online operations. The key takeaways from this chapter are:
 
-1. **Privacy is about controlling information flow.** Threat modeling for privacy starts with identifying adversaries and understanding what data you leak — metadata often reveals more than content itself.
+1. **Privacy is about controlling information flow.** Threat modeling for privacy starts with identifying adversaries and understanding what data you leak â€” metadata often reveals more than content itself.
 
 2. **Browser fingerprinting is persistent and hard to block.** Canvas, WebGL, and font enumeration create unique identifiers that persist across sessions and private browsing modes. Defence requires Tor Browser or systematic spoofing.
 
@@ -2844,18 +2844,18 @@ Digital privacy, anonymity, and OSINT form a three-legged foundation for secure 
 
 ### Application (Hands-On)
 
-4. **Browser Fingerprint Comparison.** Run the `FingerprintCollector` TypeScript implementation from §1.4 twice in the same environment and once after modifying the `renderingNoise()` function. Record the three fingerprint hashes. Are they identical? What does this tell you about fingerprint stability?
+4. **Browser Fingerprint Comparison.** Run the `FingerprintCollector` TypeScript implementation from Â§1.4 twice in the same environment and once after modifying the `renderingNoise()` function. Record the three fingerprint hashes. Are they identical? What does this tell you about fingerprint stability?
 
-5. **Email Header Spoofing Detection.** Use the `EmailHeaderAnalyzer` from §10.4 on the provided sample header. Then modify the header to have `spf=pass` and `dkim=pass`. Run the analysis again. What changes in the security report?
+5. **Email Header Spoofing Detection.** Use the `EmailHeaderAnalyzer` from Â§10.4 on the provided sample header. Then modify the header to have `spf=pass` and `dkim=pass`. Run the analysis again. What changes in the security report?
 
-6. **DNS Leak Test Simulation.** Run the `DNSLeakTester` from §5.4. Modify the `knownVPNExitIPs` array to include the user's actual external IP. Re-run and compare how the detection changes. What happens to the "VPN Active" indicator?
+6. **DNS Leak Test Simulation.** Run the `DNSLeakTester` from Â§5.4. Modify the `knownVPNExitIPs` array to include the user's actual external IP. Re-run and compare how the detection changes. What happens to the "VPN Active" indicator?
 
 7. **Google Dorking Practical.** Using Google yourself (or the `OSINTAggregator` simulator), perform searches for:
    - Files with `password` in the title on your university's domain
    - Exposed `.env` configuration files on `site:github.com`
    - Directory listings containing `backup` on any `.gov` domain
    
-   Document three results — even if none are found, describe what the search reveals about information exposure.
+   Document three results â€” even if none are found, describe what the search reveals about information exposure.
 
 ### Challenge (Advanced)
 

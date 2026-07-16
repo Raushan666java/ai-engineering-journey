@@ -1,4 +1,4 @@
-# Chapter 8: Planning
+﻿# Chapter 8: Planning
 
 **Previous:** [Chapter 8: Uncertainty and Probabilistic Reasoning](08-uncertainty.md) | **Next:** [Chapter 9: Reasoning Under Uncertainty](09-uncertainty.md)
 
@@ -9,16 +9,16 @@ By the conclusion of this chapter, the student will be able to: (1) formulate pl
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/08-planning/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/08-planning/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/08-planning/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/08-planning/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/08-planning/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/08-planning/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/08-planning/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/08-planning/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/artificial-intelligence/08-planning/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/artificial-intelligence/08-planning/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/artificial-intelligence/08-planning/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/artificial-intelligence/08-planning/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -27,9 +27,9 @@ By the conclusion of this chapter, the student will be able to: (1) formulate pl
 
 ## Why AI Planning Matters
 
-**Real-World Analogy — Cooking a Meal:** Suppose you want to cook pasta with sauce. You cannot serve the sauce before boiling the pasta (pasta needs to be ready first), you cannot boil pasta without water, and you cannot heat water without a pot on the stove. Each step has **preconditions** (water must be in pot before boiling) and **effects** (boiling water enables pasta cooking). Planning is exactly this: given an initial pantry (initial state) and a desired meal (goal), find the correct **sequence of actions** that respects all prerequisites and produces the final dish.
+**Real-World Analogy â€” Cooking a Meal:** Suppose you want to cook pasta with sauce. You cannot serve the sauce before boiling the pasta (pasta needs to be ready first), you cannot boil pasta without water, and you cannot heat water without a pot on the stove. Each step has **preconditions** (water must be in pot before boiling) and **effects** (boiling water enables pasta cooking). Planning is exactly this: given an initial pantry (initial state) and a desired meal (goal), find the correct **sequence of actions** that respects all prerequisites and produces the final dish.
 
-Every autonomous system — from warehouse robots packing boxes to Mars rovers navigating terrain — relies on planning algorithms to decide **what to do next**. Without planning, AI would only react; with planning, AI **thinks ahead**.
+Every autonomous system â€” from warehouse robots packing boxes to Mars rovers navigating terrain â€” relies on planning algorithms to decide **what to do next**. Without planning, AI would only react; with planning, AI **thinks ahead**.
 
 ## Chapter at a Glance
 
@@ -66,16 +66,16 @@ flowchart LR
 
 **Planning** is the process of selecting a sequence of actions to achieve a goal.
 
-**Real-World Analogy — Trip Planning:** You are at home (initial state) and want to be at the airport (goal). You have actions: "drive to airport" (precondition: have car keys; effect: at airport, car not at home), "find keys" (precondition: keys exist; effect: have keys). Planning finds the correct order: find keys first, then drive.
+**Real-World Analogy â€” Trip Planning:** You are at home (initial state) and want to be at the airport (goal). You have actions: "drive to airport" (precondition: have car keys; effect: at airport, car not at home), "find keys" (precondition: keys exist; effect: have keys). Planning finds the correct order: find keys first, then drive.
 
 Classical planning assumes a deterministic, fully observable, static environment with finite actions and states.
 
-> **One-Sentence Takeaway:** Classical planning selects a sequence of actions to reach a goal — the STRIPS representation decomposes each action into preconditions, add effects, and delete effects.
+> **One-Sentence Takeaway:** Classical planning selects a sequence of actions to reach a goal â€” the STRIPS representation decomposes each action into preconditions, add effects, and delete effects.
 
 ### 8.1.1 STRIPS Representation
 
 
-**Real-World Analogy — Vending Machine:** A vending machine action "buy chips" has preconditions (inserted $2, tray empty), add effects (chips in tray), and delete effects (-$2, tray empty). STRIPS captures exactly this cause-effect logic.
+**Real-World Analogy â€” Vending Machine:** A vending machine action "buy chips" has preconditions (inserted $2, tray empty), add effects (chips in tray), and delete effects (-$2, tray empty). STRIPS captures exactly this cause-effect logic.
 
 STRIPS (Stanford Research Institute Problem Solver, 1971) represents actions through three components:
 
@@ -91,34 +91,34 @@ $$\text{Result}(s, a) = (s - \text{Delete}(a)) \cup \text{Add}(a)$$
 
 ```
 Action(Stack(x, y)
-    Precond: Clear(y) ∧ Holding(x)
-    Effect: ¬Clear(y) ∧ ¬Holding(x) ∧ On(x, y))
+    Precond: Clear(y) âˆ§ Holding(x)
+    Effect: Â¬Clear(y) âˆ§ Â¬Holding(x) âˆ§ On(x, y))
 ```
 
-**Algorithm Steps — STRIPS Plan Construction:**
+**Algorithm Steps â€” STRIPS Plan Construction:**
 1. Represent the initial state as a set of ground literals.
 2. Define each action with preconditions, add list, and delete list.
 3. Identify the goal state as a set of ground literals.
-4. Check which actions are applicable in the current state (preconditions ⊆ state).
-5. Apply an action: state ← (state − Delete(a)) ∪ Add(a).
+4. Check which actions are applicable in the current state (preconditions âŠ† state).
+5. Apply an action: state â† (state âˆ’ Delete(a)) âˆª Add(a).
 6. Repeat until the goal is a subset of the current state.
 
 **Pseudocode:**
 ```
 function STRIPS-PLAN(initial, goal, actions) returns plan
-    state ← initial
-    plan ← []
-    while goal ⊈ state do
-        relevant ← {a ∈ actions | Add(a) ∩ goal ≠ ∅}
-        if relevant = ∅ then return failure
-        select a ∈ relevant such that Precond(a) ⊆ state
+    state â† initial
+    plan â† []
+    while goal âŠˆ state do
+        relevant â† {a âˆˆ actions | Add(a) âˆ© goal â‰  âˆ…}
+        if relevant = âˆ… then return failure
+        select a âˆˆ relevant such that Precond(a) âŠ† state
         if no such a exists then return failure
-        plan ← plan + [a]
-        state ← (state − Delete(a)) ∪ Add(a)
+        plan â† plan + [a]
+        state â† (state âˆ’ Delete(a)) âˆª Add(a)
     return plan
 ```
 
-**Dry Run — Blocks World:**
+**Dry Run â€” Blocks World:**
 
 Initial state: On(A,Table), On(B,Table), Clear(A), Clear(B), ArmEmpty
 Goal: On(A,B)
@@ -132,10 +132,10 @@ Goal: On(A,B)
 
 | Step | Current State | Action | Preconditions Met? | Add Effects | Delete Effects | New State |
 |------|--------------|--------|-------------------|-------------|---------------|-----------|
-| 0 | On(A,T), On(B,T), Clear(A), Clear(B), ArmEmpty | — | — | — | — | S₀ |
-| 1 | S₀ | Pickup(A) | Clear(A)✓ On(A,T)✓ ArmEmpty✓ | Holding(A) | On(A,T), Clear(A), ArmEmpty | Holding(A), On(B,T), Clear(B) |
-| 2 | Holding(A), On(B,T), Clear(B) | Stack(A,B) | Clear(B)✓ Holding(A)✓ | On(A,B) | Clear(B), Holding(A) | On(A,B), On(B,T) |
-| ✓ | On(A,B), On(B,T) | Goal reached | — | — | — | — |
+| 0 | On(A,T), On(B,T), Clear(A), Clear(B), ArmEmpty | â€” | â€” | â€” | â€” | Sâ‚€ |
+| 1 | Sâ‚€ | Pickup(A) | Clear(A)âœ“ On(A,T)âœ“ ArmEmptyâœ“ | Holding(A) | On(A,T), Clear(A), ArmEmpty | Holding(A), On(B,T), Clear(B) |
+| 2 | Holding(A), On(B,T), Clear(B) | Stack(A,B) | Clear(B)âœ“ Holding(A)âœ“ | On(A,B) | Clear(B), Holding(A) | On(A,B), On(B,T) |
+| âœ“ | On(A,B), On(B,T) | Goal reached | â€” | â€” | â€” | â€” |
 
 **Python Implementation:**
 ```python
@@ -180,7 +180,7 @@ print(strips_plan(initial, goal, actions))  # ['Pickup(A)', 'Stack(A,B)']
 **Complexity Analysis:**
 - **Time:** O(b^d) in the worst case where b is the branching factor (number of applicable actions) and d is the plan depth.
 - **Space:** O(bd) for storing the plan and state.
-- **Why exponential?** The planner must explore sequences of actions — the number of possible sequences grows exponentially with depth.
+- **Why exponential?** The planner must explore sequences of actions â€” the number of possible sequences grows exponentially with depth.
 
 **Advantages & Disadvantages:**
 
@@ -189,30 +189,30 @@ print(strips_plan(initial, goal, actions))  # ['Pickup(A)', 'Stack(A,B)']
 | Simple, intuitive representation | Cannot represent conditional effects |
 | Easy to implement | Only positive literals in preconditions |
 | Closed-world assumption reduces complexity | No support for types or quantified conditions |
-| Declarative — separates domain from problem | Real-world problems require extensions |
+| Declarative â€” separates domain from problem | Real-world problems require extensions |
 
 **Edge Cases:**
 - **Impossible goal:** If goal requires On(A,B) but Stack(A,B) needs Holding(A) and no Pickup action exists, planning fails.
-- **Irrelevant actions:** Actions that neither add nor delete any goal proposition — the planner ignores them.
-- **Cyclic plans:** STRIPS without cycle detection may loop indefinitely (Pickup→Putdown→Pickup→...). Always check if state repeats.
+- **Irrelevant actions:** Actions that neither add nor delete any goal proposition â€” the planner ignores them.
+- **Cyclic plans:** STRIPS without cycle detection may loop indefinitely (Pickupâ†’Putdownâ†’Pickupâ†’...). Always check if state repeats.
 
 ### 8.1.2 ADL (Action Description Language)
 
 
-**Real-World Analogy — Conditional Recipe:** A recipe step "if using salted butter, skip adding salt" is a conditional effect. ADL captures these "if-then" conditions that STRIPS cannot.
+**Real-World Analogy â€” Conditional Recipe:** A recipe step "if using salted butter, skip adding salt" is a conditional effect. ADL captures these "if-then" conditions that STRIPS cannot.
 
 ADL extends STRIPS with:
 - Conditional effects: effects that apply only if certain conditions hold.
-- Quantified preconditions and effects (∀, ∃).
+- Quantified preconditions and effects (âˆ€, âˆƒ).
 - Types for objects and variables.
 - Negative literals in preconditions.
 
 **Example ADL action:**
 ```
 Action(Move(robot, from, to)
-    Precond: At(robot, from) ∧ Clear(from) ∨ IsBase(from)
-    Effect: At(robot, to) ∧ ¬At(robot, from)
-            ∧ (Clear(from) if ¬IsBase(from)))
+    Precond: At(robot, from) âˆ§ Clear(from) âˆ¨ IsBase(from)
+    Effect: At(robot, to) âˆ§ Â¬At(robot, from)
+            âˆ§ (Clear(from) if Â¬IsBase(from)))
 ```
 
 ## 8.2 Forward and Backward Search
@@ -220,7 +220,7 @@ Action(Move(robot, from, to)
 ### 8.2.1 Forward (Progression) Search
 
 
-**Real-World Analogy — Maze Solver:** Starting at the entrance, try every path by walking forward one step at a time. If you hit a dead end, backtrack and try another corridor. This is forward search: start from the initial state and explore outward.
+**Real-World Analogy â€” Maze Solver:** Starting at the entrance, try every path by walking forward one step at a time. If you hit a dead end, backtrack and try another corridor. This is forward search: start from the initial state and explore outward.
 
 Forward search applies actions from the initial state, generating successors until a goal state is reached.
 
@@ -237,31 +237,31 @@ Forward search applies actions from the initial state, generating successors unt
 **Pseudocode:**
 ```
 function FORWARD-SEARCH(problem) returns plan or failure
-    node ← Node(state = problem.initial, parent = nil, action = nil)
-    frontier ← {node}
-    explored ← ∅
+    node â† Node(state = problem.initial, parent = nil, action = nil)
+    frontier â† {node}
+    explored â† âˆ…
     loop do
-        if frontier = ∅ then return failure
-        node ← REMOVE-FRONT(frontier)
+        if frontier = âˆ… then return failure
+        node â† REMOVE-FRONT(frontier)
         if problem.GOAL-TEST(node.state) then return EXTRACT-PLAN(node)
-        explored ← explored ∪ {node.state}
+        explored â† explored âˆª {node.state}
         for each action in problem.ACTIONS(node.state) do
-            child ← Node(state = RESULT(node.state, action),
+            child â† Node(state = RESULT(node.state, action),
                          parent = node, action = action)
-            if child.state ∉ explored ∪ frontier then
-                frontier ← frontier ∪ {child}
+            if child.state âˆ‰ explored âˆª frontier then
+                frontier â† frontier âˆª {child}
 ```
 
-**Dry Run — Blocks World Forward Search:**
+**Dry Run â€” Blocks World Forward Search:**
 
 Initial: On(A,T), On(B,T), Clear(A), Clear(B), ArmEmpty
 Goal: On(A,B)
 
 | Iter | Explored | Frontier | Chosen | Applicable Actions | Successors Added |
 |------|----------|---------|--------|-------------------|------------------|
-| 0 | ∅ | S₀ | S₀ | Pickup(A), Pickup(B) | S₁(Holding(A)), S₂(Holding(B)) |
-| 1 | {S₀} | {S₁, S₂} | S₁ | Stack(A,B), Putdown(A) | S₃(On(A,B)) |
-| 2 | {S₀, S₁} | {S₂, S₃} | S₃ | Goal satisfied | Plan: [Pickup(A), Stack(A,B)] |
+| 0 | âˆ… | Sâ‚€ | Sâ‚€ | Pickup(A), Pickup(B) | Sâ‚(Holding(A)), Sâ‚‚(Holding(B)) |
+| 1 | {Sâ‚€} | {Sâ‚, Sâ‚‚} | Sâ‚ | Stack(A,B), Putdown(A) | Sâ‚ƒ(On(A,B)) |
+| 2 | {Sâ‚€, Sâ‚} | {Sâ‚‚, Sâ‚ƒ} | Sâ‚ƒ | Goal satisfied | Plan: [Pickup(A), Stack(A,B)] |
 
 **Python Implementation:**
 ```python
@@ -299,37 +299,37 @@ def forward_search(initial, goal, actions):
 **Edge Cases:**
 - **Dead ends:** A state from which no action leads to the goal.
 - **State repetition:** Without explored set, forward search loops infinitely.
-- **Symmetries:** Two blocks on table — Pickup(A) vs Pickup(B) explores symmetric branches.
+- **Symmetries:** Two blocks on table â€” Pickup(A) vs Pickup(B) explores symmetric branches.
 
 ### 8.2.2 Backward (Regression) Search
 
 
-**Real-World Analogy — Reverse Maze:** Instead of starting at the entrance, you stand at the exit and ask "which corridor could have gotten me here?" You work backward, narrowing possibilities, until you reach the entrance.
+**Real-World Analogy â€” Reverse Maze:** Instead of starting at the entrance, you stand at the exit and ask "which corridor could have gotten me here?" You work backward, narrowing possibilities, until you reach the entrance.
 
 Backward search starts from the goal and applies actions in reverse.
 
 **Algorithm Steps:**
 1. Initialize the regression set with the goal.
 2. Find an action whose add effects overlap with the regression set and does not delete any goal proposition.
-3. Compute new regression set: (regression − Add(a)) ∪ Precond(a).
+3. Compute new regression set: (regression âˆ’ Add(a)) âˆª Precond(a).
 4. Repeat until the regression set is a subset of the initial state.
 5. Reverse the action sequence to produce the forward plan.
 
 **Pseudocode:**
 ```
 function BACKWARD-SEARCH(problem) returns plan or failure
-    goal-set ← problem.GOAL
-    plan ← []
+    goal-set â† problem.GOAL
+    plan â† []
     loop do
-        if goal-set ⊆ problem.INITIAL then return REVERSE(plan)
-        select action a such that a.ADD ∩ goal-set ≠ ∅
-                         and a.DELETE ∩ goal-set = ∅
+        if goal-set âŠ† problem.INITIAL then return REVERSE(plan)
+        select action a such that a.ADD âˆ© goal-set â‰  âˆ…
+                         and a.DELETE âˆ© goal-set = âˆ…
         if no such a then return failure
-        plan ← [a] + plan
-        goal-set ← (goal-set − a.ADD) ∪ a.PRECOND
+        plan â† [a] + plan
+        goal-set â† (goal-set âˆ’ a.ADD) âˆª a.PRECOND
 ```
 
-**Dry Run — Backward Search:**
+**Dry Run â€” Backward Search:**
 
 Initial: On(A,T), On(B,T), Clear(A), Clear(B), ArmEmpty
 Goal: On(A,B)
@@ -338,7 +338,7 @@ Goal: On(A,B)
 |------|---------------|---------------|--------|-------------------|
 | 0 | {On(A,B)} | Stack(A,B) | Stack adds On(A,B) | {Clear(B), Holding(A)} |
 | 1 | {Clear(B), Holding(A)} | Pickup(A) | Adds Holding(A); doesn't delete Clear(B) | {Clear(A), On(A,T), ArmEmpty, Clear(B)} |
-| 2 | {Clear(A), On(A,T), ArmEmpty, Clear(B)} | ⊆ Initial? | YES | Success — plan reversed: [Pickup(A), Stack(A,B)] |
+| 2 | {Clear(A), On(A,T), ArmEmpty, Clear(B)} | âŠ† Initial? | YES | Success â€” plan reversed: [Pickup(A), Stack(A,B)] |
 
 **Python Implementation:**
 ```python
@@ -366,59 +366,59 @@ def backward_search(initial, goal, actions):
 | Advantages | Disadvantages |
 |------------|---------------|
 | Smaller branching factor than forward | Requires computing regression (complex for ADL) |
-| Goal-directed — only relevant actions | Cannot easily use state-based heuristics |
+| Goal-directed â€” only relevant actions | Cannot easily use state-based heuristics |
 
 **Edge Cases:**
 - **Irrelevant goals:** If goal contains a proposition no action can add, the planner fails immediately.
-- **Action interference:** An action adds p but deletes q where q is also needed — planner must find alternatives.
+- **Action interference:** An action adds p but deletes q where q is also needed â€” planner must find alternatives.
 
 ## 8.3 Partial-Order Planning (POP)
 
-**Real-World Analogy — Wedding Planning:** The florist and baker do not need to coordinate. The cake must be ready before the reception, and flowers must be delivered before the ceremony — but flowers and cake preparation are independent. POP captures this flexible ordering.
+**Real-World Analogy â€” Wedding Planning:** The florist and baker do not need to coordinate. The cake must be ready before the reception, and flowers must be delivered before the ceremony â€” but flowers and cake preparation are independent. POP captures this flexible ordering.
 
 State-space planners produce totally ordered action sequences. POP introduces flexibility by representing plans as partially ordered sets of actions.
 
-A **partial-order plan** is a tuple ⟨A, O, L, G⟩ where:
+A **partial-order plan** is a tuple âŸ¨A, O, L, GâŸ© where:
 - A: set of actions (including Start and Finish).
-- O: ordering constraints (A_i ≺ A_j).
-- L: causal links (A_i → A_j meaning A_i achieves p for A_j).
+- O: ordering constraints (A_i â‰º A_j).
+- L: causal links (A_i â†’ A_j meaning A_i achieves p for A_j).
 - G: open preconditions (preconditions not yet achieved).
 
 **Algorithm Steps:**
 1. Create Start (effects = initial state) and Finish (preconditions = goal) actions.
 2. While there is an open precondition p on some action B:
    - Choose an action A (existing or new) that achieves p.
-   - Add causal link A ⟶ B and ordering A ≺ B.
+   - Add causal link A âŸ¶ B and ordering A â‰º B.
    - If A is new, add its preconditions as open.
    - Check all existing causal links for threats from A or B.
-   - Resolve each threat by promotion (B ≺ C) or demotion (C ≺ A).
+   - Resolve each threat by promotion (B â‰º C) or demotion (C â‰º A).
 3. Return the plan.
 
 **Pseudocode:**
 ```
 function POP(initial, goal) returns plan
-    plan ← MAKE-MINIMAL-PLAN(initial, goal)
+    plan â† MAKE-MINIMAL-PLAN(initial, goal)
     loop do
         if no open preconditions in plan then return plan
         select an open precondition p on action A_need
         choose an action A_add (existing or new) that achieves p
-        add causal link A_add → A_need and ordering A_add ≺ A_need
+        add causal link A_add â†’ A_need and ordering A_add â‰º A_need
         resolve any threats to causal links
 ```
 
-**Dry Run — Simple POP (Get to Airport):**
+**Dry Run â€” Simple POP (Get to Airport):**
 
 Initial: At(Home), Have(Keys)
 Goal: At(Airport)
 
 | Step | Open Preconds | Action Chosen | Causal Link | Threat? | Resolution |
 |------|--------------|---------------|-------------|---------|------------|
-| 1 | At(Airport) on Finish | Drive(Home,Airport) | Drive → Finish [At(Airport)] | None | — |
-| 2 | Have(Keys) on Drive | Start | Start → Drive [Have(Keys)] | None | — |
-| 3 | At(Home) on Drive | Start | Start → Drive [At(Home)] | None | — |
-| ✓ | None (plan complete) | — | — | — | — |
+| 1 | At(Airport) on Finish | Drive(Home,Airport) | Drive â†’ Finish [At(Airport)] | None | â€” |
+| 2 | Have(Keys) on Drive | Start | Start â†’ Drive [Have(Keys)] | None | â€” |
+| 3 | At(Home) on Drive | Start | Start â†’ Drive [At(Home)] | None | â€” |
+| âœ“ | None (plan complete) | â€” | â€” | â€” | â€” |
 
-A **threat** occurs when action A_k could undo a causal link A_i → A_j. Resolved by promotion (A_j ≺ A_k) or demotion (A_k ≺ A_i).
+A **threat** occurs when action A_k could undo a causal link A_i â†’ A_j. Resolved by promotion (A_j â‰º A_k) or demotion (A_k â‰º A_i).
 
 **Python Implementation:**
 ```python
@@ -461,8 +461,8 @@ def pop_plan(initial, goal, actions):
 ```
 
 **Complexity Analysis:**
-- **Time:** Exponential in open preconditions — each choice may require backtracking.
-- **Space:** O(A²) for ordering constraints and causal links.
+- **Time:** Exponential in open preconditions â€” each choice may require backtracking.
+- **Space:** O(AÂ²) for ordering constraints and causal links.
 - **Why exponential?** Threat resolution cascades: fixing one threat creates constraints that may conflict with other links.
 
 **Advantages & Disadvantages:**
@@ -475,17 +475,17 @@ def pop_plan(initial, goal, actions):
 
 **Edge Cases:**
 - **Unresolvable threats:** Every resolution choice leads to a cycle.
-- **Cyclic orderings:** A ≺ B and B ≺ A — illegal. POP must check for cycles.
-- **Redundant actions:** Two actions achieving the same proposition — one may be irrelevant.
+- **Cyclic orderings:** A â‰º B and B â‰º A â€” illegal. POP must check for cycles.
+- **Redundant actions:** Two actions achieving the same proposition â€” one may be irrelevant.
 
 ## 8.4 GraphPlan
 
-**Real-World Analogy — Subway Map:** A subway map shows all possible routes between stations (propositions) via train lines (actions). You can see at a glance which stations connect. The planning graph encodes all possible action sequences up to a given horizon.
+**Real-World Analogy â€” Subway Map:** A subway map shows all possible routes between stations (propositions) via train lines (actions). You can see at a glance which stations connect. The planning graph encodes all possible action sequences up to a given horizon.
 
 GraphPlan (Blum and Furst, 1997) constructs a compact planning graph that encodes all possible action sequences up to a given length.
 
 **Algorithm Steps:**
-1. Create proposition layer S₀ from the initial state.
+1. Create proposition layer Sâ‚€ from the initial state.
 2. For each level k:
    a. Add all actions whose preconditions are in S_k and are not pairwise mutex.
    b. Add no-op actions for each proposition.
@@ -503,29 +503,29 @@ GraphPlan (Blum and Furst, 1997) constructs a compact planning graph that encode
 **Pseudocode:**
 ```
 function GRAPHPLAN(problem) returns plan or failure
-    graph ← INITIAL-PLANNING-GRAPH(problem)
-    for k = 0 to ∞ do
+    graph â† INITIAL-PLANNING-GRAPH(problem)
+    for k = 0 to âˆž do
         if goal propositions present in S_k with no mutex then
-            plan ← EXTRACT-SOLUTION(graph, k)
-            if plan ≠ failure then return plan
-        graph ← EXPAND-GRAPH(graph, k+1)
+            plan â† EXTRACT-SOLUTION(graph, k)
+            if plan â‰  failure then return plan
+        graph â† EXPAND-GRAPH(graph, k+1)
         if graph has leveled off then return failure
 ```
 
-**Dry Run — GraphPlan for Blocks World:**
+**Dry Run â€” GraphPlan for Blocks World:**
 
 Initial: On(A,T), On(B,T), Clear(A), Clear(B), ArmEmpty
 Goal: On(A,B)
 
 | Level | Propositions | Actions Added | Mutex | Goal? |
 |-------|-------------|---------------|-------|-------|
-| S₀ | On(A,T), On(B,T), Clear(A), Clear(B), ArmEmpty | — | None | No |
-| A₀ | — | Pickup(A), Pickup(B), no-ops | Pickup(A) ⟂ Pickup(B) (competing for ArmEmpty) | — |
-| S₁ | S₀ ∪ {Holding(A), Holding(B)} | — | Holding(A) ⟂ Clear(A); Holding(A) ⟂ ArmEmpty | No |
-| A₁ | — | Stack(A,B), Stack(B,A) | Stack(A,B) ⟂ Stack(B,A) (inconsistent) | — |
-| S₂ | S₁ ∪ {On(A,B), On(B,A)} | — | On(A,B) ⟂ On(B,A) | YES — extract |
+| Sâ‚€ | On(A,T), On(B,T), Clear(A), Clear(B), ArmEmpty | â€” | None | No |
+| Aâ‚€ | â€” | Pickup(A), Pickup(B), no-ops | Pickup(A) âŸ‚ Pickup(B) (competing for ArmEmpty) | â€” |
+| Sâ‚ | Sâ‚€ âˆª {Holding(A), Holding(B)} | â€” | Holding(A) âŸ‚ Clear(A); Holding(A) âŸ‚ ArmEmpty | No |
+| Aâ‚ | â€” | Stack(A,B), Stack(B,A) | Stack(A,B) âŸ‚ Stack(B,A) (inconsistent) | â€” |
+| Sâ‚‚ | Sâ‚ âˆª {On(A,B), On(B,A)} | â€” | On(A,B) âŸ‚ On(B,A) | YES â€” extract |
 
-Plan extraction: Stack(A,B) needs Clear(B),Holding(A) ← Pickup(A) needs Clear(A),On(A,T),ArmEmpty (all in S₀). Plan: [Pickup(A), Stack(A,B)].
+Plan extraction: Stack(A,B) needs Clear(B),Holding(A) â† Pickup(A) needs Clear(A),On(A,T),ArmEmpty (all in Sâ‚€). Plan: [Pickup(A), Stack(A,B)].
 
 **Python Implementation:**
 ```python
@@ -557,9 +557,9 @@ def graphplan(initial, goal, actions):
 ```
 
 **Complexity Analysis:**
-- **Plan existence:** Polynomial in the size of the planning graph (O(n²) for mutex).
+- **Plan existence:** Polynomial in the size of the planning graph (O(nÂ²) for mutex).
 - **Plan extraction:** Exponential in worst case.
-- **Why polynomial existence?** The graph has at most O(n²) propositions per level, bounded by number of propositions.
+- **Why polynomial existence?** The graph has at most O(nÂ²) propositions per level, bounded by number of propositions.
 
 **Advantages & Disadvantages:**
 
@@ -570,12 +570,12 @@ def graphplan(initial, goal, actions):
 | Handles parallelism naturally | Cannot handle continuous time or resources |
 
 **Edge Cases:**
-- **Level-off without goal:** Graph stabilizes but goal never appears — unsolvable.
+- **Level-off without goal:** Graph stabilizes but goal never appears â€” unsolvable.
 - **All propositions mutex at goal level:** Extraction fails, need more levels.
 
 ## 8.5 SATPlan
 
-**Real-World Analogy — Logic Puzzle:** "Can I reach the goal in 5 steps?" encoded as a giant Boolean puzzle: At time 0 I am at home; at time 5 I must be at the airport; at each time exactly one action fires; if I drive at time 2, I must hold keys at time 2. A SAT solver finds a satisfying assignment or proves none exists.
+**Real-World Analogy â€” Logic Puzzle:** "Can I reach the goal in 5 steps?" encoded as a giant Boolean puzzle: At time 0 I am at home; at time 5 I must be at the airport; at each time exactly one action fires; if I drive at time 2, I must hold keys at time 2. A SAT solver finds a satisfying assignment or proves none exists.
 
 SATPlan reduces planning to propositional satisfiability. The plan of length k is encoded as a SAT formula.
 
@@ -586,15 +586,15 @@ SATPlan reduces planning to propositional satisfiability. The plan of length k i
 **Constraints:**
 - **Initial state:** At(p, 0) for all initial facts.
 - **Goal state:** At(g, k) for each goal g.
-- **Action precondition:** Action(a, i) ⇒ ∧ Precond(a, i).
-- **Action effects:** Action(a, i) ⇒ ∧ Add(a, i+1) ∧ ∧ ¬Delete(a, i+1).
+- **Action precondition:** Action(a, i) â‡’ âˆ§ Precond(a, i).
+- **Action effects:** Action(a, i) â‡’ âˆ§ Add(a, i+1) âˆ§ âˆ§ Â¬Delete(a, i+1).
 - **Frame axioms:** Propositions persist unless an action changes them.
 - **Exactly one action per time step (optional).**
 
 **Algorithm Steps:**
 1. Set plan length k = 0.
-2. Encode the planning problem of length k as a CNF formula φ_k.
-3. Invoke a SAT solver on φ_k.
+2. Encode the planning problem of length k as a CNF formula Ï†_k.
+3. Invoke a SAT solver on Ï†_k.
 4. If SAT solver returns satisfying assignment, extract the plan.
 5. If unsatisfiable, increment k and repeat.
 6. Return failure if k exceeds bound.
@@ -603,14 +603,14 @@ SATPlan reduces planning to propositional satisfiability. The plan of length k i
 ```
 function SATPLAN(problem, max_length) returns plan or failure
     for k = 0 to max_length do
-        formula ← ENCODE-AS-CNF(problem, k)
-        assignment ← SAT-SOLVE(formula)
-        if assignment ≠ failure then
+        formula â† ENCODE-AS-CNF(problem, k)
+        assignment â† SAT-SOLVE(formula)
+        if assignment â‰  failure then
             return EXTRACT-PLAN(assignment, k)
     return failure
 ```
 
-**Dry Run — SATPlan Encoding (k=2):**
+**Dry Run â€” SATPlan Encoding (k=2):**
 
 Domain: package P at A, goal: P at B. Actions: Load(P,A), Move(A,B), Unload(P,B).
 
@@ -618,12 +618,12 @@ Domain: package P at A, goal: P at B. Actions: Load(P,A), Move(A,B), Unload(P,B)
 |-------------|------|--------|
 | Initial | 0 | At(P,A), AtTruck(A) |
 | Goal | 2 | At(P,B) |
-| Precondition | 0 | Action(Load,0) ⇒ At(P,A) |
-| Precondition | 1 | Action(Move,1) ⇒ AtTruck(A) |
-| Precondition | 1 | Action(Unload,1) ⇒ In(P) ∧ AtTruck(B) |
-| Effect | 0 | Action(Load,0) ⇒ In(P,1) |
-| Effect | 0 | Action(Load,0) ⇒ ¬At(P,A,1) |
-| Frame | 0→1 | ¬Action(Load,0) ⇒ (At(P,A,0) ⇔ At(P,A,1)) |
+| Precondition | 0 | Action(Load,0) â‡’ At(P,A) |
+| Precondition | 1 | Action(Move,1) â‡’ AtTruck(A) |
+| Precondition | 1 | Action(Unload,1) â‡’ In(P) âˆ§ AtTruck(B) |
+| Effect | 0 | Action(Load,0) â‡’ In(P,1) |
+| Effect | 0 | Action(Load,0) â‡’ Â¬At(P,A,1) |
+| Frame | 0â†’1 | Â¬Action(Load,0) â‡’ (At(P,A,0) â‡” At(P,A,1)) |
 
 Satisfying assignment: Action(Load,0)=True, Action(Move,1)=True, Action(Unload,2)=True
 Plan extracted: [Load, Move, Unload]
@@ -651,7 +651,7 @@ def encode_sat(initial, goal, actions, horizon, prop_idx, act_idx):
 
 **Complexity Analysis:**
 - **Time:** O(2^n) in worst case (SAT is NP-complete), but modern solvers (MiniSat, Glucose) scale well for practical instances.
-- **Space:** O(k × (|P| + |A|)) for the CNF formula.
+- **Space:** O(k Ã— (|P| + |A|)) for the CNF formula.
 - **Why NP-complete?** Planning with fixed horizon generalizes graph reachability with constraints.
 
 **Advantages & Disadvantages:**
@@ -669,7 +669,7 @@ def encode_sat(initial, goal, actions, horizon, prop_idx, act_idx):
 
 ## 8.6 Hierarchical Task Network (HTN) Planning
 
-**Real-World Analogy — Company Org Chart:** A CEO says "launch product." This task decomposes into "develop," "market," "sell." "Develop" decomposes into "design," "code," "test." Each leaf maps to a STRIPS action.
+**Real-World Analogy â€” Company Org Chart:** A CEO says "launch product." This task decomposes into "develop," "market," "sell." "Develop" decomposes into "design," "code," "test." Each leaf maps to a STRIPS action.
 
 HTN planning decomposes high-level tasks into primitive actions via **task decomposition methods**.
 
@@ -685,15 +685,15 @@ HTN planning decomposes high-level tasks into primitive actions via **task decom
 **Pseudocode:**
 ```
 function HTN-PLAN(tasks, methods, actions) returns plan
-    if tasks = ∅ then return []
-    t ← FIRST(tasks)
+    if tasks = âˆ… then return []
+    t â† FIRST(tasks)
     if t is primitive then
-        if ∃ action a that accomplishes t then
+        if âˆƒ action a that accomplishes t then
             return [a] + HTN-PLAN(REST(tasks), methods, actions)
         else return failure
     else
-        choose method m ∈ methods that decomposes t
-        subtasks ← APPLY(m, t)
+        choose method m âˆˆ methods that decomposes t
+        subtasks â† APPLY(m, t)
         return HTN-PLAN(subtasks + REST(tasks), methods, actions)
 ```
 
@@ -720,8 +720,8 @@ print(htn_plan(["Navigate", "PrepareMeal"], methods, actions))
 ```
 
 **Complexity Analysis:**
-- **Time:** Domain-dependent — good methods give near-linear planning; bad methods cause exponential backtracking.
-- **Space:** O(d×b) where d = decomposition depth, b = method branching.
+- **Time:** Domain-dependent â€” good methods give near-linear planning; bad methods cause exponential backtracking.
+- **Space:** O(dÃ—b) where d = decomposition depth, b = method branching.
 - **Why domain-dependent?** HTN's power comes from encoded domain knowledge in methods.
 
 **Advantages & Disadvantages:**
@@ -734,7 +734,7 @@ print(htn_plan(["Navigate", "PrepareMeal"], methods, actions))
 
 **Edge Cases:**
 - **No applicable method:** A high-level task with no matching method causes failure.
-- **Cyclic decomposition:** Task A → B → A — infinite loop. Detect via task stack depth.
+- **Cyclic decomposition:** Task A â†’ B â†’ A â€” infinite loop. Detect via task stack depth.
 - **Interaction between subtasks:** Two subtasks may conflict (both need the same resource).
 
 ## 8.7 Practical Planners
@@ -743,9 +743,9 @@ print(htn_plan(["Navigate", "PrepareMeal"], methods, actions))
 
 **FastDownward:** Introduced the causal graph heuristic and multi-heuristic search. Uses a causal graph to decompose the planning problem into subproblems.
 
-> **💡 Pro Tip:** The ignore-delete-lists heuristic is simple but extremely effective for forward search planning. It solves the relaxed problem (no delete effects) which is always solvable and provides admissible estimates for the original problem.
+> **ðŸ’¡ Pro Tip:** The ignore-delete-lists heuristic is simple but extremely effective for forward search planning. It solves the relaxed problem (no delete effects) which is always solvable and provides admissible estimates for the original problem.
 
-> **⚠️ Warning:** Partial-order planning introduces threats that require promotion/demotion resolution. Always check all causal links when adding a new action — overlooking a threat produces an invalid plan.
+> **âš ï¸ Warning:** Partial-order planning introduces threats that require promotion/demotion resolution. Always check all causal links when adding a new action â€” overlooking a threat produces an invalid plan.
 
 ## Planning Approaches Comparison
 
@@ -765,7 +765,7 @@ print(htn_plan(["Navigate", "PrepareMeal"], methods, actions))
 | Preconditions | Positive literals only | Any literal (negated allowed) | Any literal + quantifiers |
 | Effects | Conjunction of literals | Conditional effects | Conditional + quantified |
 | Types | None | First-class types | Hierarchical types |
-| Quantification | None | ∀, ∃ in preconditions | ∀, ∃ in pre/effects |
+| Quantification | None | âˆ€, âˆƒ in preconditions | âˆ€, âˆƒ in pre/effects |
 | Equality | Implicit | Explicit (=) | Explicit (=, !=) |
 | Domain axioms | None | Supported | Supported |
 | Derived predicates | None | Supported | Supported |
@@ -802,7 +802,7 @@ Given a plan and a domain, does executing the plan from the initial state achiev
 | **Spacecraft** | NASA Deep Space Network | Automated antenna allocation and observation scheduling (RAX, EUROPA planners) |
 | **Spacecraft** | Mars Rovers (Curiosity) | MAPGEN planner generates daily activity plans from high-level science goals |
 | **Game AI** | F.E.A.R. (GOAP) | Goal-Oriented Action Planning: enemies use STRIPS-style planning to decide attack/flank/retreat |
-| **Game AI** | Halo, Horizon (HTN) | HTN planners decompose AI strategies (Patrol → Attack → Flank) |
+| **Game AI** | Halo, Horizon (HTN) | HTN planners decompose AI strategies (Patrol â†’ Attack â†’ Flank) |
 | **Manufacturing** | Assembly line scheduling | SATPlan optimizes robot arm task ordering minimizing makespan |
 | **Healthcare** | Surgery scheduling | Partial-order planning handles precedence constraints (sterilize before operate) |
 
@@ -810,19 +810,19 @@ Given a plan and a domain, does executing the plan from the initial state achiev
 
 | Planning Method | Search Space | Plan Type | Sound? | Complete? | Complexity |
 |----------------|:---:|:---:|:---:|:---:|:---:|
-| Forward Search | State | Total order | ✅ | ✅ | High branching |
-| Backward Search | Goal | Total order | ✅ | ✅ | Lower branching |
-| Partial-Order | Plan | Partial order | ✅ | ✅ | Exponential |
-| GraphPlan | Graph | Total order | ✅ | ✅ | Poly existence |
-| SATPlan | SAT formula | Total order | ✅ | ✅ | NP-complete |
-| HTN | Task network | Hierarchy | ✅ | Domain-dep | Domain-dep |
+| Forward Search | State | Total order | âœ… | âœ… | High branching |
+| Backward Search | Goal | Total order | âœ… | âœ… | Lower branching |
+| Partial-Order | Plan | Partial order | âœ… | âœ… | Exponential |
+| GraphPlan | Graph | Total order | âœ… | âœ… | Poly existence |
+| SATPlan | SAT formula | Total order | âœ… | âœ… | NP-complete |
+| HTN | Task network | Hierarchy | âœ… | Domain-dep | Domain-dep |
 
-## Quick Reference — STRIPS Action Model
+## Quick Reference â€” STRIPS Action Model
 
 | Component | Description | Example |
 |-----------|-------------|---------|
 | Action name | Unique identifier | Stack(x, y) |
-| Precondition | Must hold before action | Clear(y) ∧ Holding(x) |
+| Precondition | Must hold before action | Clear(y) âˆ§ Holding(x) |
 | Add list | Becomes true after action | On(x, y) |
 | Delete list | Becomes false after action | Clear(y), Holding(x) |
 
@@ -830,21 +830,21 @@ Given a plan and a domain, does executing the plan from the initial state achiev
 
 | Technique | ML | CV | NLP | Research |
 |-----------|:---:|:---:|:---:|:---:|
-| STRIPS Planning | ⬜ | ⬜ | ⬜ | ✅ |
-| Partial-Order | ⬜ | ⬜ | ⬜ | ✅ |
-| GraphPlan | ⬜ | ⬜ | ⬜ | ✅ |
-| SATPlan | ✅ | ⬜ | ⬜ | ✅ |
-| HTN Planning | ⬜ | ✅ | ✅ | ✅ |
+| STRIPS Planning | â¬œ | â¬œ | â¬œ | âœ… |
+| Partial-Order | â¬œ | â¬œ | â¬œ | âœ… |
+| GraphPlan | â¬œ | â¬œ | â¬œ | âœ… |
+| SATPlan | âœ… | â¬œ | â¬œ | âœ… |
+| HTN Planning | â¬œ | âœ… | âœ… | âœ… |
 
 ## Chapter Quiz
 
-**Q1:** What does a causal link A→B represent in partial-order planning?
+**Q1:** What does a causal link Aâ†’B represent in partial-order planning?
 - A) A happens before B
 - B) A achieves a precondition p for B
 - C) B depends on A's delete list
 - D) A and B are mutually exclusive
 
-<details><summary>Answer&lt;/summary&gt;B) A causal link A→B means action A achieves proposition p that is a precondition for action B.</details>
+<details><summary>Answer&lt;/summary&gt;B) A causal link Aâ†’B means action A achieves proposition p that is a precondition for action B.</details>
 
 **Q2:** Why might GraphPlan be preferred over forward state-space search?
 - A) It always finds shorter plans
@@ -876,7 +876,7 @@ Given a plan and a domain, does executing the plan from the initial state achiev
 - C) Because the heuristic ignores preconditions
 - D) Because delete lists are irrelevant for planning
 
-<details><summary>Answer&lt;/summary&gt;B) Removing delete effects ensures actions only add propositions — they never undo progress — guaranteeing monotonic growth toward any reachable goal.</details>
+<details><summary>Answer&lt;/summary&gt;B) Removing delete effects ensures actions only add propositions â€” they never undo progress â€” guaranteeing monotonic growth toward any reachable goal.</details>
 
 ## 8.8 Summary
 
@@ -900,8 +900,8 @@ Classical planning generates action sequences to achieve goals. STRIPS and ADL p
 
 ### Challenge Problem
 
-9. Implement forward search with the ignore-delete-lists heuristic for the Blocks World domain. Compare performance with backward search on problems with 3–8 blocks.
+9. Implement forward search with the ignore-delete-lists heuristic for the Blocks World domain. Compare performance with backward search on problems with 3â€“8 blocks.
 
 ---
 
-*Planning is the bridge between AI reasoning and action. Master it, and your agents stop reacting — they start thinking ahead.*
+*Planning is the bridge between AI reasoning and action. Master it, and your agents stop reacting â€” they start thinking ahead.*

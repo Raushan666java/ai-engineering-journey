@@ -1,4 +1,4 @@
-# Chapter 6: Software Engineering — Exam Quick Revision
+﻿# Chapter 6: Software Engineering â€” Exam Quick Revision
 
 ## Learning Objectives
 - Compare SDLC phases and software process models
@@ -12,16 +12,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/professional-knowledge/06-software-engineering/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/professional-knowledge/06-software-engineering/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/professional-knowledge/06-software-engineering/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/professional-knowledge/06-software-engineering/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/professional-knowledge/06-software-engineering/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/professional-knowledge/06-software-engineering/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/professional-knowledge/06-software-engineering/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/professional-knowledge/06-software-engineering/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/professional-knowledge/06-software-engineering/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/professional-knowledge/06-software-engineering/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/professional-knowledge/06-software-engineering/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/professional-knowledge/06-software-engineering/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -51,7 +51,7 @@ flowchart LR
 
 ---
 
-## 2. Software Process Models — Comparison
+## 2. Software Process Models â€” Comparison
 
 | Model | Description | Strengths | Weaknesses | When to Use |
 |-------|-------------|-----------|------------|-------------|
@@ -65,13 +65,13 @@ flowchart LR
 ### V-Model Testing Correlation
 
 ```
-Requirements → Acceptance Testing
-   ↑                ↓
-High-Level Design → System Testing
-   ↑                ↓
-Low-Level Design → Integration Testing
-   ↑                ↓
-Implementation → Unit Testing
+Requirements â†’ Acceptance Testing
+   â†‘                â†“
+High-Level Design â†’ System Testing
+   â†‘                â†“
+Low-Level Design â†’ Integration Testing
+   â†‘                â†“
+Implementation â†’ Unit Testing
 ```
 
 ---
@@ -91,8 +91,8 @@ Implementation → Unit Testing
 
 **Level 0 (Context Diagram):**
 ```
-[Customer] -----order----→ [Order Processing System] ----invoice----→ [Customer]
-                     ↓
+[Customer] -----order----â†’ [Order Processing System] ----invoice----â†’ [Customer]
+                     â†“
                [Inventory DB]
 ```
 
@@ -150,7 +150,7 @@ Tests functionality without internal knowledge.
 | Technique | Description | Example |
 |-----------|-------------|---------|
 | **Equivalence Partitioning** | Divide input domain into classes; test one value from each | Age: 0-17 (invalid), 18-60 (valid), 60+ (invalid) |
-| **Boundary Value Analysis** | Test boundaries: min, min+1, max, max−1, nominal | For 1-100: test 0,1,2,99,100,101 |
+| **Boundary Value Analysis** | Test boundaries: min, min+1, max, maxâˆ’1, nominal | For 1-100: test 0,1,2,99,100,101 |
 | **Decision Table** | Table of conditions and actions | Loan approval rules |
 | **State Transition** | Test state changes on events | ATM states: Idle, Card-Inserted, PIN-Entered |
 
@@ -169,7 +169,7 @@ Tests internal logic and code paths.
 ### McCabe's Cyclomatic Complexity
 
 ```
-M = E − N + 2P
+M = E âˆ’ N + 2P
   = Number of decision points + 1
   = Number of regions in flow graph
   = Number of predicates + 1
@@ -180,8 +180,8 @@ Where E = edges, N = nodes, P = connected components.
 ```c
 void sort(int a[], int n) {
     int i, j, temp;
-    for (i = 0; i < n−1; i++) {          // 1 predicate
-        for (j = 0; j < n−i−1; j++) {    // 1 predicate
+    for (i = 0; i < nâˆ’1; i++) {          // 1 predicate
+        for (j = 0; j < nâˆ’iâˆ’1; j++) {    // 1 predicate
             if (a[j] > a[j+1]) {         // 1 predicate
                 temp = a[j];
                 a[j] = a[j+1];
@@ -195,7 +195,7 @@ Cyclomatic complexity = 3 predicates + 1 = **4**. This means we need at least 4 
 
 ---
 
-## 6. Software Cost Estimation — COCOMO
+## 6. Software Cost Estimation â€” COCOMO
 
 ### COCOMO Model Types
 
@@ -208,8 +208,8 @@ Cyclomatic complexity = 3 predicates + 1 = **4**. This means we need at least 4 
 ### Basic COCOMO Formula
 
 ```
-Effort = a × (KLOC)^b person-months
-Time = c × (Effort)^d months
+Effort = a Ã— (KLOC)^b person-months
+Time = c Ã— (Effort)^d months
 ```
 
 | Project Type | a | b | c | d | Description |
@@ -239,7 +239,7 @@ Time = c × (Effort)^d months
 | Metric | Formula | Target |
 |--------|---------|--------|
 | Defect density | Defects / KLOC | &lt; 4 per KLOC |
-| Defect removal efficiency | (Defects fixed before release) / Total defects × 100 | &gt; 95% |
+| Defect removal efficiency | (Defects fixed before release) / Total defects Ã— 100 | &gt; 95% |
 | Mean Time To Failure (MTTF) | Total uptime / Number of failures | High |
 | Customer satisfaction | Survey score | &gt; 4/5 |
 
@@ -320,7 +320,7 @@ Time = c × (Effort)^d months
 - (c) 144 PM
 - (d) 160 PM
 
-**Answer:** (a) 96 PM. Effort = 3.0 × (32)^1.12 ≈ 3 × 50.6 ≈ 152 PM. Wait, let me recalculate: 32^1.12 = e^(1.12×ln32) = e^(1.12×3.466) = e^3.88 ≈ 48.4. 3.0 × 48.4 ≈ 145 PM. Closest answer would be (c) 144 PM.
+**Answer:** (a) 96 PM. Effort = 3.0 Ã— (32)^1.12 â‰ˆ 3 Ã— 50.6 â‰ˆ 152 PM. Wait, let me recalculate: 32^1.12 = e^(1.12Ã—ln32) = e^(1.12Ã—3.466) = e^3.88 â‰ˆ 48.4. 3.0 Ã— 48.4 â‰ˆ 145 PM. Closest answer would be (c) 144 PM.
 
 ---
 
@@ -330,7 +330,7 @@ Time = c × (Effort)^d months
 
 | Diagram | Purpose | Elements |
 |---------|---------|----------|
-| **Class Diagram** | System structure — classes, attributes, methods, relationships | Classes, associations, inheritance, aggregation, composition |
+| **Class Diagram** | System structure â€” classes, attributes, methods, relationships | Classes, associations, inheritance, aggregation, composition |
 | **Object Diagram** | Instance snapshot at a point in time | Objects with attribute values |
 | **Component Diagram** | Physical components and dependencies | Components, interfaces, dependencies |
 | **Deployment Diagram** | Hardware nodes and software deployment | Nodes, artifacts, communication paths |
@@ -348,12 +348,12 @@ Time = c × (Effort)^d months
 
 | Relationship | Notation | Meaning |
 |-------------|----------|---------|
-| Association | `———` | Structural link between classes |
-| Aggregation | `◇———` | Has-a (weak ownership, part can exist without whole) |
-| Composition | `◆———` | Has-a (strong ownership, part cannot exist without whole) |
-| Inheritance | `———▷` | Is-a (subclass extends superclass) |
+| Association | `â€”â€”â€”` | Structural link between classes |
+| Aggregation | `â—‡â€”â€”â€”` | Has-a (weak ownership, part can exist without whole) |
+| Composition | `â—†â€”â€”â€”` | Has-a (strong ownership, part cannot exist without whole) |
+| Inheritance | `â€”â€”â€”â–·` | Is-a (subclass extends superclass) |
 | Dependency | `- - ->` | Uses temporarily (method parameter, local variable) |
-| Realization | `- - -▷` | Implements (class → interface) |
+| Realization | `- - -â–·` | Implements (class â†’ interface) |
 
 ## 10. Software Maintenance
 
@@ -388,7 +388,7 @@ Time = c × (Effort)^d months
 ### Risk Management Process
 
 1. **Identification:** Brainstorm, checklists, SWOT analysis
-2. **Analysis:** Probability × Impact = Risk Exposure
+2. **Analysis:** Probability Ã— Impact = Risk Exposure
 3. **Planning:** Avoid, transfer, mitigate, accept (4 strategies)
 4. **Monitoring:** Track risks throughout project life
 
@@ -414,7 +414,7 @@ Time = c × (Effort)^d months
 ### Change Control Process
 
 ```
-Change Request → Impact Analysis → CCB Review → Approve/Reject → Implement → Verify → Close
+Change Request â†’ Impact Analysis â†’ CCB Review â†’ Approve/Reject â†’ Implement â†’ Verify â†’ Close
 ```
 
 **CCB (Change Control Board):** Decision-making body that approves or rejects changes.
@@ -423,9 +423,9 @@ Change Request → Impact Analysis → CCB Review → Approve/Reject → Impleme
 
 ---
 
-## 📌 Extended Theory — Deep Dive for IBPS SO Mains (2024–2026 Trends)
+## ðŸ“Œ Extended Theory â€” Deep Dive for IBPS SO Mains (2024â€“2026 Trends)
 
-### COCOMO Calculator — TypeScript Implementation
+### COCOMO Calculator â€” TypeScript Implementation
 
 ```typescript
 interface COCOMOParams {
@@ -482,7 +482,7 @@ function intermediateCOCOMO(params: COCOMOParams): COCOMOResult {
 // Returns: { effort: 145.22, time: 13.45, staff: 11 }
 ```
 
-### Cyclomatic Complexity — TypeScript Calculator
+### Cyclomatic Complexity â€” TypeScript Calculator
 
 ```typescript
 function cyclomaticComplexity(code: string): number {
@@ -520,10 +520,10 @@ function findMax(arr: number[]): number {
   }
   return max;
 }`;
-// Predicates: for (1) + if (1) = 2 → Complexity = 3
+// Predicates: for (1) + if (1) = 2 â†’ Complexity = 3
 ```
 
-### DFD Generator — Level 0, 1, 2
+### DFD Generator â€” Level 0, 1, 2
 
 ```mermaid
 graph TD
@@ -553,10 +553,10 @@ graph TD
 
 > **PYQ 2025:** Draw Level 0 and Level 1 DFD for a Library Management System with members borrowing/returning books.
 
-**Level 0 Context:** [Member] ─borrow/return→ [Library System] ──→ [Book DB]
-**Level 1:** Validate Member → Check Availability → Issue Book / Return Book → Update Records
+**Level 0 Context:** [Member] â”€borrow/returnâ†’ [Library System] â”€â”€â†’ [Book DB]
+**Level 1:** Validate Member â†’ Check Availability â†’ Issue Book / Return Book â†’ Update Records
 
-### SDLC Comparison — Waterfall vs Agile vs Spiral
+### SDLC Comparison â€” Waterfall vs Agile vs Spiral
 
 ```mermaid
 graph LR
@@ -576,7 +576,7 @@ graph LR
     end
 ```
 
-### Test Case Design — White Box with TypeScript
+### Test Case Design â€” White Box with TypeScript
 
 ```typescript
 // Program to test
@@ -607,7 +607,7 @@ function validateAge(age: number): string {
 // BVA: test -1,0,1,17,18,59,60,149,150,151
 ```
 
-### IEEE 830 SRS — Detailed Structure Example
+### IEEE 830 SRS â€” Detailed Structure Example
 
 **Sample SRS for Online Banking System:**
 1. Introduction: Purpose (secure online banking), Scope (funds transfer, bill pay, account view)
@@ -644,15 +644,15 @@ function calculateFP(fp: FPCount, complexity: 'low' | 'average' | 'high'): numbe
 }
 
 // Example: 10 inputs, 5 outputs, 3 queries, 2 files, 1 interface (all average)
-// FP = 10×4 + 5×5 + 3×4 + 2×10 + 1×7 = 40+25+12+20+7 = 104
+// FP = 10Ã—4 + 5Ã—5 + 3Ã—4 + 2Ã—10 + 1Ã—7 = 40+25+12+20+7 = 104
 ```
 
-## 📝 Solved Examples (20 MCQs)
+## ðŸ“ Solved Examples (20 MCQs)
 
 <details>
 <summary>Q1: What is the cyclomatic complexity of a program with 8 nodes and 10 edges?</summary>
 (a) 2 (b) 3 (c) 4 (d) 5
-**Answer:** (c) 4. M = E − N + 2P = 10 − 8 + 2 = 4.
+**Answer:** (c) 4. M = E âˆ’ N + 2P = 10 âˆ’ 8 + 2 = 4.
 </details>
 
 <details>
@@ -682,7 +682,7 @@ function calculateFP(fp: FPCount, complexity: 'low' | 'average' | 'high'): numbe
 <details>
 <summary>Q6: What is the LOC estimate for a project requiring 500 function points with average language (LOC/FP=50)?</summary>
 (a) 10000 (b) 25000 (c) 50000 (d) 75000
-**Answer:** (b) 25000. LOC = FP × LOC/FP = 500 × 50 = 25000.
+**Answer:** (b) 25000. LOC = FP Ã— LOC/FP = 500 Ã— 50 = 25000.
 </details>
 
 <details>
@@ -706,7 +706,7 @@ function calculateFP(fp: FPCount, complexity: 'low' | 'average' | 'high'): numbe
 <details>
 <summary>Q10: Which software quality factor relates to "ease of fixing bugs"?</summary>
 (a) Usability (b) Maintainability (c) Portability (d) Reliability
-**Answer:** (b) Maintainability. Includes analyzability, changeability, stability, and testability — directly relates to ease of fixing bugs.
+**Answer:** (b) Maintainability. Includes analyzability, changeability, stability, and testability â€” directly relates to ease of fixing bugs.
 </details>
 
 <details>
@@ -730,7 +730,7 @@ function calculateFP(fp: FPCount, complexity: 'low' | 'average' | 'high'): numbe
 <details>
 <summary>Q14: In the V-Model, integration testing corresponds to which design level?</summary>
 (a) Requirements (b) High-Level Design (c) Low-Level Design (d) Implementation
-**Answer:** (c) Low-Level Design. LLD → Integration Testing (checking module interfaces).
+**Answer:** (c) Low-Level Design. LLD â†’ Integration Testing (checking module interfaces).
 </details>
 
 <details>
@@ -754,7 +754,7 @@ function calculateFP(fp: FPCount, complexity: 'low' | 'average' | 'high'): numbe
 <details>
 <summary>Q18: In COCOMO, an organic project of 10 KLOC has estimated effort of:</summary>
 (a) 12 PM (b) 24 PM (c) 36 PM (d) 48 PM
-**Answer:** (b) ~24 PM. Effort = 2.4 × (10)^1.05 = 2.4 × 11.22 = 26.93 PM. Closest to 24? Actually 26.93 ≈ 27 PM. Let me recalculate: 10^1.05 = e^(1.05×ln10) = e^(1.05×2.3026) = e^2.418 = 11.22. 2.4 × 11.22 = 26.93.
+**Answer:** (b) ~24 PM. Effort = 2.4 Ã— (10)^1.05 = 2.4 Ã— 11.22 = 26.93 PM. Closest to 24? Actually 26.93 â‰ˆ 27 PM. Let me recalculate: 10^1.05 = e^(1.05Ã—ln10) = e^(1.05Ã—2.3026) = e^2.418 = 11.22. 2.4 Ã— 11.22 = 26.93.
 </details>
 
 <details>
@@ -764,12 +764,12 @@ function calculateFP(fp: FPCount, complexity: 'low' | 'average' | 'high'): numbe
 </details>
 
 <details>
-<summary>Q20: In UML, what does a dashed arrow with open triangle ( - - -▷ ) represent?</summary>
+<summary>Q20: In UML, what does a dashed arrow with open triangle ( - - -â–· ) represent?</summary>
 (a) Inheritance (b) Realization (c) Dependency (d) Association
 **Answer:** (b) Realization (class implements interface). Solid line with open triangle = inheritance. Dashed arrow = dependency.
 </details>
 
-## 📖 Exercise Bank (30 Questions)
+## ðŸ“– Exercise Bank (30 Questions)
 
 1. Calculate cyclomatic complexity for: `if (a &gt; b) { if (c &gt; d) { x = 1; } else { x = 2; } } else { while (e &gt; 0) { e--; } }`
 2. For a semi-detached project with 50 KLOC, calculate effort, development time, and team size using basic COCOMO.
@@ -782,7 +782,7 @@ function calculateFP(fp: FPCount, complexity: 'low' | 'average' | 'high'): numbe
 9. Compare Agile and Waterfall on: requirements change handling, customer involvement, documentation, and project size.
 10. Write TypeScript code for a simple Scrum burndown chart tracker.
 11. For a program flow graph with 12 edges, 9 nodes, and 1 connected component, find cyclomatic complexity and minimum test cases.
-12. Draw a sequence diagram for "User logs in → enters credentials → system validates → redirects to dashboard."
+12. Draw a sequence diagram for "User logs in â†’ enters credentials â†’ system validates â†’ redirects to dashboard."
 13. What is the difference between SRS and SDS (Software Design Specification)?
 14. Calculate effort for embedded project of 100 KLOC using intermediate COCOMO with: high complexity (1.15), low analyst capability (1.29), and high tool use (0.91).
 15. Write TypeScript code for a DFD validation tool that checks data flow consistency.
@@ -805,20 +805,20 @@ function calculateFP(fp: FPCount, complexity: 'low' | 'average' | 'high'): numbe
 **Answer Key:**
 
 1. if (a>b): 1 predicate, while: 1 predicate, if (c>d): 1 predicate. Total = 3. M = 3 + 1 = 4
-2. Effort = 3.0×50^1.12 = 3.0×82.5 ≈ 247.5 PM. Time = 2.5×247.5^0.35 ≈ 2.5×6.3 ≈ 15.8 months. Staff = 247.5/15.8 ≈ 16
+2. Effort = 3.0Ã—50^1.12 = 3.0Ã—82.5 â‰ˆ 247.5 PM. Time = 2.5Ã—247.5^0.35 â‰ˆ 2.5Ã—6.3 â‰ˆ 15.8 months. Staff = 247.5/15.8 â‰ˆ 16
 4. `function calculateFP(inputs, outputs, inquiries, files, interfaces): number { return inputs*4 + outputs*5 + inquiries*4 + files*10 + interfaces*7; }`
-6. Java: 8 KLOC → E=3×8^1.12=3×10.7≈32 PM. C++: 11 KLOC → E=3×11^1.12≈40 PM. Python: 5 KLOC → E=3×5^1.12≈18 PM
+6. Java: 8 KLOC â†’ E=3Ã—8^1.12=3Ã—10.7â‰ˆ32 PM. C++: 11 KLOC â†’ E=3Ã—11^1.12â‰ˆ40 PM. Python: 5 KLOC â†’ E=3Ã—5^1.12â‰ˆ18 PM
 7. Product: RELY, DATA, CPLX. Hardware: TIME, STOR, VIRT, TURN. Personnel: ACAP, AEXP, PCAP, VEXP, LEXP. Project: MODP, TOOL, SCED
-8. Partitions: amount {negative, 0, 100, 500, 1000+}, isMember {true, false}. BVA: -1,0,1,99,100,101,999,1000,1001. 6 test cases (boundaries × 2 membership)
+8. Partitions: amount {negative, 0, 100, 500, 1000+}, isMember {true, false}. BVA: -1,0,1,99,100,101,999,1000,1001. 6 test cases (boundaries Ã— 2 membership)
 10. Burn-down: y-axis=remaining effort, x-axis=sprint days. Track ideal vs actual line
 11. M = 12-9+2 = 5. Minimum 5 test cases for path coverage
 13. SRS: what system does (external behavior). SDS: how system does it (internal design, architecture, modules)
-14. EAF = 1.15×1.29×0.91 = 1.35. Base E = 3.6×100^1.2 = 3.6×251.2 = 904.3. Adjusted = 904.3×1.35 = 1220.8 PM. Time = 2.5×1220.8^0.32 = 2.5×9.1 = 22.8 months
-17. Use case: Borrow Book, Return Book, Search Book, Pay Fine. Class: Member, Book, Loan, Fine. Sequence: Member→Search→CheckAvailability→Result
-18. DRE = 45/(45+5) × 100 = 90%
+14. EAF = 1.15Ã—1.29Ã—0.91 = 1.35. Base E = 3.6Ã—100^1.2 = 3.6Ã—251.2 = 904.3. Adjusted = 904.3Ã—1.35 = 1220.8 PM. Time = 2.5Ã—1220.8^0.32 = 2.5Ã—9.1 = 22.8 months
+17. Use case: Borrow Book, Return Book, Search Book, Pay Fine. Class: Member, Book, Loan, Fine. Sequence: Memberâ†’Searchâ†’CheckAvailabilityâ†’Result
+18. DRE = 45/(45+5) Ã— 100 = 90%
 21. CMMI Levels: 1 (Initial), 2 (Managed), 3 (Defined), 4 (Quantitatively Managed), 5 (Optimizing)
 22. V-Model or Spiral. V-Model for rigorous testing at each phase. Spiral for risk management in critical systems
-23. FP = 15×4+10×5+8×4+5×10+3×7 = 60+50+32+50+21 = 213. Cost = 213×500 = $106,500
+23. FP = 15Ã—4+10Ã—5+8Ã—4+5Ã—10+3Ã—7 = 60+50+32+50+21 = 213. Cost = 213Ã—500 = $106,500
 25. Regression: re-test unchanged features after changes. Retesting: verify specific defect fixes. Regression is broader
 26. SPI = EV/PV = 75/100 = 0.75 (behind schedule). CPI = EV/AC = 75/90 = 0.83 (over budget). CV = EV-AC = -15. SV = EV-PV = -25
 28. Generator: test case ID, description, input, expected output, actual output, status (pass/fail/blocked), timestamp
@@ -826,14 +826,14 @@ function calculateFP(fp: FPCount, complexity: 'low' | 'average' | 'high'): numbe
 
 ---
 
-## 📌 Additional PYQ Integration (2024–2026 Analysis)
+## ðŸ“Œ Additional PYQ Integration (2024â€“2026 Analysis)
 
 > **PYQ 2025:** A software project has the following data: Total LOC = 50,000, Person-months = 25, Defects found before release = 120, Defects found after release = 8. Calculate: (a) Productivity (LOC/PM), (b) Defect Density (defects/KLOC), (c) Defect Removal Efficiency (DRE).
 
 **Solution:**
 - (a) Productivity = 50000/25 = 2000 LOC/PM
 - (b) Defect Density = (120+8)/50 = 128/50 = 2.56 defects/KLOC
-- (c) DRE = 120/(120+8) × 100 = 120/128 × 100 = 93.75%
+- (c) DRE = 120/(120+8) Ã— 100 = 120/128 Ã— 100 = 93.75%
 
 > **PYQ 2024:** Compute the cyclomatic complexity of the following code and determine the minimum number of test cases for path coverage.
 > ```
@@ -849,9 +849,9 @@ function calculateFP(fp: FPCount, complexity: 'low' | 'average' | 'high'): numbe
 > 10 print(result);
 > ```
 
-**Solution:** Decision points: `x>0` (1), `y>0` (1 — note: `&&` creates a short-circuit branch but typically counted as additional predicate or just one compound). Actually `x>0 && y>0` has 2 simple predicates combined with `&&` — standard cyclomatic complexity counts each simple predicate. So predicates = 2 (outer if) + 1 (inner if) = 3. M = P + 1 = 4. Minimum 4 test cases for path coverage.
+**Solution:** Decision points: `x>0` (1), `y>0` (1 â€” note: `&&` creates a short-circuit branch but typically counted as additional predicate or just one compound). Actually `x>0 && y>0` has 2 simple predicates combined with `&&` â€” standard cyclomatic complexity counts each simple predicate. So predicates = 2 (outer if) + 1 (inner if) = 3. M = P + 1 = 4. Minimum 4 test cases for path coverage.
 
-Paths: (T,T,T), (T,T,F), (T,F,?), (F,?,?) — 4 distinct paths.
+Paths: (T,T,T), (T,T,F), (T,F,?), (F,?,?) â€” 4 distinct paths.
 
 > **PYQ 2026:** For a proposed banking system, the following function point counts were identified:
 > - External Inputs: 8 (4 low, 3 avg, 1 high)
@@ -862,14 +862,14 @@ Paths: (T,T,T), (T,T,F), (T,F,?), (F,?,?) — 4 distinct paths.
 > Calculate the Unadjusted Function Point (UFP) count.
 
 **Solution:**
-- EI: 4×3 + 3×4 + 1×6 = 12 + 12 + 6 = 30
-- EO: 2×4 + 2×5 + 1×7 = 8 + 10 + 7 = 25
-- EQ: 1×3 + 1×4 + 1×6 = 13
-- ILF: 1×7 + 2×10 + 1×15 = 7 + 20 + 15 = 42
-- EIF: 1×5 + 1×7 = 12
+- EI: 4Ã—3 + 3Ã—4 + 1Ã—6 = 12 + 12 + 6 = 30
+- EO: 2Ã—4 + 2Ã—5 + 1Ã—7 = 8 + 10 + 7 = 25
+- EQ: 1Ã—3 + 1Ã—4 + 1Ã—6 = 13
+- ILF: 1Ã—7 + 2Ã—10 + 1Ã—15 = 7 + 20 + 15 = 42
+- EIF: 1Ã—5 + 1Ã—7 = 12
 - UFP = 30 + 25 + 13 + 42 + 12 = **122**
 
-## 📌 Topic-wise Weightage Analysis for IBPS SO IT Mains
+## ðŸ“Œ Topic-wise Weightage Analysis for IBPS SO IT Mains
 
 | Topic | Weightage | Frequency | Difficulty |
 |-------|-----------|-----------|------------|
@@ -885,30 +885,30 @@ Paths: (T,T,T), (T,T,F), (T,F,?), (F,?,?) — 4 distinct paths.
 | Software Maintenance | 3-5% | Occasionally | Easy |
 
 ## Summary
-- **SDLC:** Requirements → Design → Code → Test → Deploy → Maintain
+- **SDLC:** Requirements â†’ Design â†’ Code â†’ Test â†’ Deploy â†’ Maintain
 - **Models:** Waterfall (linear), Agile (iterative), Spiral (risk-driven), V-Model (V&amp;V parallel)
-- **DFD:** Context (level 0) → Level 1 (major processes) → Level 2 (detailed)
+- **DFD:** Context (level 0) â†’ Level 1 (major processes) â†’ Level 2 (detailed)
 - **Testing:** Black-box (equivalence, boundary value) vs White-box (statement/branch/path coverage)
 - **Cyclomatic complexity:** Decision points + 1; guides number of test cases
 - **COCOMO:** Effort = a(KLOC)^b; Organic/Semi-detached/Embedded
 - **Metrics:** Size (LOC), Function (FP), Quality (defect density, MTTF)
 - **UML:** Class (static structure), Sequence (message flow), Use Case (requirements), Activity (workflow)
 - **Maintenance:** Corrective (20%), Adaptive (25%), Perfective (50%), Preventive (5%)
-- **Risk:** Identify → Analyze → Plan (avoid/transfer/mitigate/accept) → Monitor
+- **Risk:** Identify â†’ Analyze â†’ Plan (avoid/transfer/mitigate/accept) â†’ Monitor
 - **CM:** Identify, version control, change control, status accounting, audit
 
 ---
 
 ## HOT Topics (Frequently Asked in IBPS SO IT Mains)
-1. Black-box vs white-box testing techniques — identify which technique is used from scenario
+1. Black-box vs white-box testing techniques â€” identify which technique is used from scenario
 2. Cyclomatic complexity calculation from pseudo-code or flow graph
 3. DFD level differences and Gane-Sarson vs Yourdon notation differences
-4. COCOMO estimation — calculate effort and development time
-5. Agile vs Waterfall — when to use each
-6. Functional vs non-functional requirements — categorize given requirements
+4. COCOMO estimation â€” calculate effort and development time
+5. Agile vs Waterfall â€” when to use each
+6. Functional vs non-functional requirements â€” categorize given requirements
 7. Test case design using equivalence partitioning and boundary value analysis
-8. McCabe's complexity — basis path testing and independent paths
-9. Software quality factors (ISO 9126) — categorize given attributes
+8. McCabe's complexity â€” basis path testing and independent paths
+9. Software quality factors (ISO 9126) â€” categorize given attributes
 10. Spiral model quadrant activities (determine objectives, risk analysis, develop, plan next)
 
 ---
@@ -927,12 +927,12 @@ A2: Alpha testing is performed at the developer's site with potential users. Bet
 
 <details>
 <summary>Q3: In the V-model, what testing corresponds to the high-level design phase?</summary>
-A3: System testing. Each design level in V-model has a corresponding testing level — HLD → System Testing, LLD → Integration Testing.
+A3: System testing. Each design level in V-model has a corresponding testing level â€” HLD â†’ System Testing, LLD â†’ Integration Testing.
 </details>
 
 <details>
 <summary>Q4: A program has 10 edges and 8 nodes in its flow graph. What is its cyclomatic complexity?</summary>
-A4: M = E − N + 2P = 10 − 8 + 2(1) = 4. The program needs at least 4 test cases for path coverage.
+A4: M = E âˆ’ N + 2P = 10 âˆ’ 8 + 2(1) = 4. The program needs at least 4 test cases for path coverage.
 </details>
 
 <details>

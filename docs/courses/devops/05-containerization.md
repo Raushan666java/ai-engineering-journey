@@ -1,4 +1,4 @@
-# Chapter 5: Containerization
+﻿# Chapter 5: Containerization
 
 > **Prev:** [CI/CD](./04-continuous-integration.md)
 > **Next:** [Docker](./05-docker.md)
@@ -17,16 +17,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/05-containerization/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/05-containerization/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/05-containerization/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/05-containerization/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/05-containerization/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/05-containerization/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/05-containerization/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/05-containerization/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/05-containerization/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/05-containerization/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/05-containerization/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/05-containerization/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -270,9 +270,9 @@ Container storage follows ephemeral-by-default with options for persistence:
 | CSI (Container Storage Interface) | Plugin-based storage for orchestrators | Orchestrator-managed | Production stateful workloads |
 
 **Container storage best practices:**
-- Separate compute from storage — use managed databases instead of database containers
+- Separate compute from storage â€” use managed databases instead of database containers
 - Use persistent volumes for logs that must survive container restarts
-- Avoid storing secrets in container images — use secret injection mechanisms
+- Avoid storing secrets in container images â€” use secret injection mechanisms
 - Configure storage quotas per container to prevent disk exhaustion
 - Use ReadWriteMany volumes for shared file access across replicas
 
@@ -811,7 +811,7 @@ class RegistryCleanupManager {
   generateReport(plan: CleanupPlan): string {
     return `## Registry Cleanup Plan\n\n` +
       `**To delete:** ${plan.tagsToDelete.length} tags\n` +
-      `**Space reclaimed:** ${plan.reclaimedSizeMB}MB (˜ $${plan.estimatedSavings}/month)\n` +
+      `**Space reclaimed:** ${plan.reclaimedSizeMB}MB (Ëœ $${plan.estimatedSavings}/month)\n` +
       `**After cleanup:** ${plan.afterCount} tags\n\n` +
       plan.tagsToDelete.slice(0, 20).map(t =>
         `- ${t.name} (${t.sizeMB}MB, ${Math.round((Date.now() - t.created.getTime()) / 86400000)} days old)`
@@ -941,7 +941,7 @@ services:
 **Seccomp Profiles:** Restrict system calls available to the container:
 ```text
 # Default Docker seccomp profile blocks 44 of 300+ syscalls
-# Custom profile — allow only specific syscalls
+# Custom profile â€” allow only specific syscalls
 {
   "defaultAction": "SCMP_ACT_ERRNO",
   "architectures": ["SCMP_ARCH_X86_64"],

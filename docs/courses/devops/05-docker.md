@@ -1,4 +1,4 @@
-# Chapter 5: Docker
+﻿# Chapter 5: Docker
 
 > **Prev:** [Containerization](./05-containerization.md)
 > **Next:** [Docker Compose](./06-docker-compose.md)
@@ -17,16 +17,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/05-docker/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/05-docker/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/05-docker/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/05-docker/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/05-docker/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/05-docker/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/05-docker/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/05-docker/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/05-docker/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/05-docker/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/05-docker/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/05-docker/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -742,10 +742,10 @@ class ContainerProfiler {
 
   private generateRecommendations(m: ContainerMetrics, score: number): string[] {
     const recs: string[] = [];
-    if (m.cpuPercent < 5) recs.push(`Low CPU (${m.cpuPercent}%) — consider rightsizing or consolidating`);
-    if (m.memoryMB < 10) recs.push(`Low memory usage — container may be over-provisioned`);
-    if (m.cpuPercent > 90) recs.push(`High CPU (${m.cpuPercent}%) — consider scaling out`);
-    if (score < 50) recs.push('Poor efficiency — review resource requests and limits');
+    if (m.cpuPercent < 5) recs.push(`Low CPU (${m.cpuPercent}%) â€” consider rightsizing or consolidating`);
+    if (m.memoryMB < 10) recs.push(`Low memory usage â€” container may be over-provisioned`);
+    if (m.cpuPercent > 90) recs.push(`High CPU (${m.cpuPercent}%) â€” consider scaling out`);
+    if (score < 50) recs.push('Poor efficiency â€” review resource requests and limits');
     return recs;
   }
 

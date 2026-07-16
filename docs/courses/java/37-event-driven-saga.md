@@ -1,4 +1,4 @@
-# Event-Driven Architecture & SAGA
+﻿# Event-Driven Architecture & SAGA
 > **Previous:** [Kafka](36-kafka.md) | **Next:** [Microservices Principles](38-microservices-principles.md)
 
 ## Learning Objectives
@@ -16,16 +16,16 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/37-event-driven-saga/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/37-event-driven-saga/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/37-event-driven-saga/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/37-event-driven-saga/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/37-event-driven-saga/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/37-event-driven-saga/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/37-event-driven-saga/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/37-event-driven-saga/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/37-event-driven-saga/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/37-event-driven-saga/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/37-event-driven-saga/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/37-event-driven-saga/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -37,9 +37,9 @@ By the end of this chapter, you will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|------------|-------------------|
-| Event-Driven Architecture → services communicate via events, not direct calls | Loose coupling, eventual consistency, event sourcing |
-| Saga Pattern → manage distributed transactions across services | Choreography (event-based) vs Orchestration (central coordinator) |
-| Compensation → undo actions when a saga step fails | Each step defines a compensating action for rollback |
+| Event-Driven Architecture â†’ services communicate via events, not direct calls | Loose coupling, eventual consistency, event sourcing |
+| Saga Pattern â†’ manage distributed transactions across services | Choreography (event-based) vs Orchestration (central coordinator) |
+| Compensation â†’ undo actions when a saga step fails | Each step defines a compensating action for rollback |
 
 ---
 ## Chapter Roadmap
@@ -83,9 +83,9 @@ flowchart TD
 
 | Domain | Application | Use Case |
 |--------|-------------|----------|
-| E-Commerce Order Flow | Orchestrated Saga | Create order → reserve inventory → process payment → ship |
-| Account Transfer | Choreographed Saga | Debit source → credit destination (compensate if credit fails) |
-| Travel Booking | Orchestrated Saga | Book flight → hotel → car (cancel all if any fails) |
+| E-Commerce Order Flow | Orchestrated Saga | Create order â†’ reserve inventory â†’ process payment â†’ ship |
+| Account Transfer | Choreographed Saga | Debit source â†’ credit destination (compensate if credit fails) |
+| Travel Booking | Orchestrated Saga | Book flight â†’ hotel â†’ car (cancel all if any fails) |
 
 ---
 ## Chapter Quiz
@@ -101,10 +101,10 @@ flowchart TD
 ### 1. Domain Events
 
 
-A domain event is an immutable record of something that happened in the domain that domain experts care about. It represents a fact Ã¢â‚¬â€ not a command. Domain events are named in the past tense.
+A domain event is an immutable record of something that happened in the domain that domain experts care about. It represents a fact ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â not a command. Domain events are named in the past tense.
 
 **Characteristics of good domain events:**
-- Immutable Ã¢â‚¬â€ once created, never changed
+- Immutable ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â once created, never changed
 - Named in past tense (e.g., `OrderPlaced`, `PaymentReceived`)
 - Contains all relevant data for consumers to act
 - Includes a unique identifier, timestamp, and correlation ID
@@ -255,7 +255,7 @@ public class ShippedEvent extends BaseDomainEvent {
 ### 2. Event Sourcing
 
 
-Event sourcing persists every state change as an immutable event in an append-only store. The current state Ã¢â‚¬â€ the aggregate Ã¢â‚¬â€ is reconstructed by replaying the event stream from the beginning.
+Event sourcing persists every state change as an immutable event in an append-only store. The current state ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â the aggregate ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â is reconstructed by replaying the event stream from the beginning.
 
 ```java
 // Event store interface
@@ -884,7 +884,7 @@ public class OrderQueryService {
     }
 }
 
-// Event projector Ã¢â‚¬â€ updates the read model from events
+// Event projector ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â updates the read model from events
 @Component
 public class OrderEventProjector {
 
@@ -958,16 +958,16 @@ public class OrderEventProjector {
 ### 4. Choreography Saga
 
 
-In a choreography saga, each service publishes domain events that trigger the next step. There is no central coordinator Ã¢â‚¬â€ each service knows what to do when it receives an event.
+In a choreography saga, each service publishes domain events that trigger the next step. There is no central coordinator ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â each service knows what to do when it receives an event.
 
 ```
-Order Service Ã¢â€ â€™ publishes OrderPlacedEvent
-    Ã¢â€ â€œ
-Payment Service Ã¢â€ â€™ consumes OrderPlacedEvent Ã¢â€ â€™ processes payment Ã¢â€ â€™ publishes PaymentAuthorizedEvent
-    Ã¢â€ â€œ
-Inventory Service Ã¢â€ â€™ consumes PaymentAuthorizedEvent Ã¢â€ â€™ reserves inventory Ã¢â€ â€™ publishes InventoryReservedEvent
-    Ã¢â€ â€œ
-Shipping Service Ã¢â€ â€™ consumes InventoryReservedEvent Ã¢â€ â€™ ships order Ã¢â€ â€™ publishes ShippedEvent
+Order Service ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ publishes OrderPlacedEvent
+    ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬Å“
+Payment Service ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ consumes OrderPlacedEvent ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ processes payment ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ publishes PaymentAuthorizedEvent
+    ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬Å“
+Inventory Service ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ consumes PaymentAuthorizedEvent ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ reserves inventory ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ publishes InventoryReservedEvent
+    ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬Å“
+Shipping Service ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ consumes InventoryReservedEvent ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ ships order ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ publishes ShippedEvent
 ```
 
 #### 4.1 Order Service (Choreography)
@@ -1004,7 +1004,7 @@ public class OrderSagaService {
         return orderId;
     }
 
-    // Compensating action Ã¢â‚¬â€ cancels order if downstream fails
+    // Compensating action ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â cancels order if downstream fails
     @Transactional
     public void cancelOrder(String orderId, String reason, String correlationId) {
         OrderAggregate aggregate = OrderAggregate.reconstruct(eventStore, orderId);
@@ -1324,7 +1324,7 @@ public class OrderSagaOrchestrator {
             stateMachine.setState(SagaState.INVENTORY_PENDING);
             stateRepository.save(stateMachine);
         } else {
-            // Saga fails Ã¢â‚¬â€ no compensation needed, nothing happened yet
+            // Saga fails ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â no compensation needed, nothing happened yet
             stateMachine.setState(SagaState.FAILED);
             stateMachine.setFailureReason(event.getFailureReason());
             stateRepository.save(stateMachine);
@@ -1588,7 +1588,7 @@ public class OrderAggregateAxon {
     }
 }
 
-// Command Gateway Ã¢â‚¬â€ send commands to aggregates
+// Command Gateway ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â send commands to aggregates
 @Service
 public class OrderAxonService {
 
@@ -2016,7 +2016,7 @@ public class SagaCompensationRegistry {
 }
 ```
 
-### 8. Complete Saga Flow Ã¢â‚¬â€ End-to-End Example
+### 8. Complete Saga Flow ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â End-to-End Example
 
 
 ```java
@@ -2259,7 +2259,7 @@ public class SagaCompletedEvent {
 > Sagas provide eventual consistency, not ACID. Design your system to tolerate temporary inconsistencies.
 
 > [!NOTE]
-> An orchestrator is not a monolith → it orchestrates, not implements. Each step delegates to the appropriate service.
+> An orchestrator is not a monolith â†’ it orchestrates, not implements. Each step delegates to the appropriate service.
 
 ## Summary
 
@@ -2268,11 +2268,11 @@ Event-Driven Architecture with SAGAs provides a robust foundation for distribute
 - **Domain events** are immutable facts recording what happened. Use past-tense naming, include correlation IDs, timestamps, and version numbers.
 - **Event sourcing** stores state changes as an immutable event stream. The event store (JDBC or MongoDB) appends events with optimistic concurrency control via version checking. Aggregates are reconstructed by replaying the event stream.
 - **CQRS** separates command (write) and query (read) models. Event projectors update materialized views (read models) from the event stream, providing eventual consistency.
-- **Choreography saga** distributes coordination across services Ã¢â‚¬â€ each service publishes and listens to events. Simpler for small numbers of services, but harder to trace and manage as complexity grows.
+- **Choreography saga** distributes coordination across services ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â each service publishes and listens to events. Simpler for small numbers of services, but harder to trace and manage as complexity grows.
 - **Orchestration saga** centralizes coordination in a state machine. The orchestrator sends commands and processes replies, maintaining explicit state transitions. Easier to monitor and manage.
 - **Axon Framework** provides first-class support for aggregates (`@Aggregate`, `@CommandHandler`, `@EventSourcingHandler`), sagas (`@Saga`, `@StartSaga`, `@EndSaga`, `@SagaEventHandler`), and repositories (`EventSourcingRepository`).
 - **Compensating transactions** undo the effects of completed steps when a saga fails. Forward recovery retries the failed step; backward recovery compensates already-completed steps. Compensations must be idempotent and handle partial failures gracefully.
-- **Retry strategies** with exponential backoff are critical for compensating actions Ã¢â‚¬â€ transient failures should not cause permanent inconsistency.
+- **Retry strategies** with exponential backoff are critical for compensating actions ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â transient failures should not cause permanent inconsistency.
 
 ## Exercises
 

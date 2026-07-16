@@ -1,4 +1,4 @@
-# Chapter 10: Aptitude, Logical Reasoning, and Speed Mathematics
+﻿# Chapter 10: Aptitude, Logical Reasoning, and Speed Mathematics
 
 ## Learning Objectives
 
@@ -12,16 +12,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -48,12 +48,12 @@ flowchart TD
 
 | Rule | Description | Example |
 |------|-------------|---------|
-| **Digit Sum** | Sum of digits modulo 9 (check arithmetic) | 345 + 678 = 1023; DS: 3+4+5=12→3, 6+7+8=21→3, 3+3=6; 1+0+2+3=6 ✓ |
+| **Digit Sum** | Sum of digits modulo 9 (check arithmetic) | 345 + 678 = 1023; DS: 3+4+5=12â†’3, 6+7+8=21â†’3, 3+3=6; 1+0+2+3=6 âœ“ |
 | **Option Elimination** | Plug options back into the question | Saves entire calculation |
-| **Approximation** | Round to nearest convenient number | 49 × 51 ≈ 50 × 50 = 2500 (actual: 2499) |
-| **Unit Digit** | Last digit of calculation | 237 × 463 → unit digit: 7 × 3 = 21 → unit digit 1 |
-| **Divisibility** | Quick divisibility checks | Check if 291 is divisible by 3: 2+9+1=12 → divisible |
-| **Squaring near 50/100** | (50 + n)² = 2500 + 100n + n² | 53² = 2500 + 300 + 9 = 2809 |
+| **Approximation** | Round to nearest convenient number | 49 Ã— 51 â‰ˆ 50 Ã— 50 = 2500 (actual: 2499) |
+| **Unit Digit** | Last digit of calculation | 237 Ã— 463 â†’ unit digit: 7 Ã— 3 = 21 â†’ unit digit 1 |
+| **Divisibility** | Quick divisibility checks | Check if 291 is divisible by 3: 2+9+1=12 â†’ divisible |
+| **Squaring near 50/100** | (50 + n)Â² = 2500 + 100n + nÂ² | 53Â² = 2500 + 300 + 9 = 2809 |
 | **Percentage to Fraction** | Convert % to 1/n | 12.5% = 1/8, 33.33% = 1/3 |
 
 ---
@@ -66,24 +66,24 @@ flowchart TD
 
 | Divisor | Rule | Example |
 |---------|------|---------|
-| 2 | Last digit even | 124 ✓ (last digit 4) |
-| 3 | Sum of digits divisible by 3 | 291: 2+9+1=12 → ✓ |
-| 4 | Last two digits divisible by 4 | 7312: 12 → ✓ |
-| 5 | Last digit 0 or 5 | 235 → ✓ |
-| 6 | Divisible by 2 AND 3 | 234: even + sum=9 → ✓ |
-| 7 | Double last digit, subtract from rest | 343: 34-2×3=28 → ✓ |
-| 8 | Last 3 digits divisible by 8 | 4312: 312 → ✓ |
-| 9 | Sum of digits divisible by 9 | 585: 5+8+5=18 → ✓ |
-| 10 | Last digit 0 | 450 → ✓ |
-| 11 | Sum of odd - sum of even digits = 0 or 11 | 121: (1+1)-2=0 → ✓ |
-| 13 | Multiply unit digit by 4, add to rest | 169: 16+4×9=52 → ✓ |
+| 2 | Last digit even | 124 âœ“ (last digit 4) |
+| 3 | Sum of digits divisible by 3 | 291: 2+9+1=12 â†’ âœ“ |
+| 4 | Last two digits divisible by 4 | 7312: 12 â†’ âœ“ |
+| 5 | Last digit 0 or 5 | 235 â†’ âœ“ |
+| 6 | Divisible by 2 AND 3 | 234: even + sum=9 â†’ âœ“ |
+| 7 | Double last digit, subtract from rest | 343: 34-2Ã—3=28 â†’ âœ“ |
+| 8 | Last 3 digits divisible by 8 | 4312: 312 â†’ âœ“ |
+| 9 | Sum of digits divisible by 9 | 585: 5+8+5=18 â†’ âœ“ |
+| 10 | Last digit 0 | 450 â†’ âœ“ |
+| 11 | Sum of odd - sum of even digits = 0 or 11 | 121: (1+1)-2=0 â†’ âœ“ |
+| 13 | Multiply unit digit by 4, add to rest | 169: 16+4Ã—9=52 â†’ âœ“ |
 
 #### Shortcut: Square of Numbers Ending in 5
 
 ```typescript
-// n5² = n×(n+1) followed by 25
-// 35² = 3×4 = 12 followed by 25 = 1225
-// 85² = 8×9 = 72 followed by 25 = 7225
+// n5Â² = nÃ—(n+1) followed by 25
+// 35Â² = 3Ã—4 = 12 followed by 25 = 1225
+// 85Â² = 8Ã—9 = 72 followed by 25 = 7225
 function squareEndingIn5(n: number): number {
   const prefix = Math.floor(n / 10);
   return (prefix * (prefix + 1)) * 100 + 25;
@@ -93,11 +93,11 @@ function squareEndingIn5(n: number): number {
 #### Shortcut: Multiplication Near 100
 
 ```
-// 97 × 104
+// 97 Ã— 104
 // Step 1: 100 - 97 = 3, 104 - 100 = 4
 // Step 2: 97 + 4 = 101 OR 104 - 3 = 101 (cross add)
-// Step 3: 3 × 4 = 12
-// Answer: 101 × 100 + 12 = 10112
+// Step 3: 3 Ã— 4 = 12
+// Answer: 101 Ã— 100 + 12 = 10112
 ```
 
 ### 1.2 Percentage
@@ -120,7 +120,7 @@ If a value changes by a% then b%:
 Net change = a + b + ab/100
 
 Example: Salary increased by 10%, then by 20%
-Net = 10 + 20 + (10×20)/100 = 30 + 2 = 32%
+Net = 10 + 20 + (10Ã—20)/100 = 30 + 2 = 32%
 ```
 
 #### Percentage: Shortcut Problems
@@ -128,13 +128,13 @@ Net = 10 + 20 + (10×20)/100 = 30 + 2 = 32%
 <details>
 <summary><b>Q1:</b> If A's salary is 25% more than B's, by what % is B's salary less than A's?</summary>
 
-**Shortcut:** If A is x% more, B is [x/(100+x)] × 100% less.
+**Shortcut:** If A is x% more, B is [x/(100+x)] Ã— 100% less.
 
 ```
-B is less by = 25/125 × 100 = 20%
+B is less by = 25/125 Ã— 100 = 20%
 
 Verification: B = 100, A = 125
-Difference = 25/125 × 100 = 20% ✓
+Difference = 25/125 Ã— 100 = 20% âœ“
 ```
 </details>
 
@@ -143,7 +143,7 @@ Difference = 25/125 × 100 = 20% ✓
 
 ```
 Net = a + b + ab/100
-= 20 + (-20) + (20 × -20)/100
+= 20 + (-20) + (20 Ã— -20)/100
 = 0 - 4 = -4%
 
 So net decrease of 4%
@@ -154,11 +154,11 @@ So net decrease of 4%
 
 | Formula | Expression |
 |---------|-----------|
-| Profit % | (SP - CP)/CP × 100 |
-| Loss % | (CP - SP)/CP × 100 |
-| Discount % | (MP - SP)/MP × 100 |
-| Selling Price after discount | MP × (100 - d%)/100 |
-| Marked Price | CP × (100 + p%)/(100 - d%) |
+| Profit % | (SP - CP)/CP Ã— 100 |
+| Loss % | (CP - SP)/CP Ã— 100 |
+| Discount % | (MP - SP)/MP Ã— 100 |
+| Selling Price after discount | MP Ã— (100 - d%)/100 |
+| Marked Price | CP Ã— (100 + p%)/(100 - d%) |
 
 **Shortcut: Two successive discounts**
 ```
@@ -170,14 +170,14 @@ Example: 20% + 10% discount = 20 + 10 - 200/100 = 28%
 
 | Type | Formula | Shortcut |
 |------|---------|----------|
-| Simple Interest | SI = P×R×T/100 | For 2 years at R%, SI = 2×P×R/100 |
-| Compound Interest (annual) | CI = P(1+R/100)^T - P | ~P × R × T / 100 (approx for small %) |
+| Simple Interest | SI = PÃ—RÃ—T/100 | For 2 years at R%, SI = 2Ã—PÃ—R/100 |
+| Compound Interest (annual) | CI = P(1+R/100)^T - P | ~P Ã— R Ã— T / 100 (approx for small %) |
 
 **Shortcut: CI for 2 years**
 ```
-CI for 2 years = P[(R/100)² + 2R/100]
-Example: ₹10,000 at 10% for 2 years
-CI = 10000[0.01 + 0.20] = 10000 × 0.21 = ₹2,100
+CI for 2 years = P[(R/100)Â² + 2R/100]
+Example: â‚¹10,000 at 10% for 2 years
+CI = 10000[0.01 + 0.20] = 10000 Ã— 0.21 = â‚¹2,100
 ```
 
 ### 1.5 Time, Speed, and Distance
@@ -196,16 +196,16 @@ If traveled distance d at speed a and same distance at speed b:
 Average speed = 2ab/(a+b)
 
 Example: 60 km/h one way, 40 km/h back
-Avg = 2×60×40/(60+40) = 4800/100 = 48 km/h
+Avg = 2Ã—60Ã—40/(60+40) = 4800/100 = 48 km/h
 ```
 
 ### 1.6 Time and Work
 
 | Concept | Formula | Example |
 |---------|---------|---------|
-| Individual work | Work = Rate × Time | If A takes 10 days, rate = 1/10 per day |
-| Combined work | 1/A + 1/B + 1/C | A(10d) + B(15d): 1/10+1/15 = 1/6 → 6 days |
-| Efficiency ratio | Work done proportional to efficiency | A:B = 2:3 efficiency → time ratio = 3:2 |
+| Individual work | Work = Rate Ã— Time | If A takes 10 days, rate = 1/10 per day |
+| Combined work | 1/A + 1/B + 1/C | A(10d) + B(15d): 1/10+1/15 = 1/6 â†’ 6 days |
+| Efficiency ratio | Work done proportional to efficiency | A:B = 2:3 efficiency â†’ time ratio = 3:2 |
 
 **Shortcut: If A takes a days, B takes b days, A+B+C takes c days, find C's time:**
 ```
@@ -230,7 +230,7 @@ Time = 6 days
 |---------|---------|---------|
 | Ratio | a:b | a/b |
 | Proportion | a:b = c:d | ad = bc |
-| Compounded ratio | a:b × c:d | ac:bd |
+| Compounded ratio | a:b Ã— c:d | ac:bd |
 
 **Shortcut: If A:B = 2:3 and B:C = 4:5, find A:B:C**
 ```
@@ -244,9 +244,9 @@ A:B:C = 8:12:15
 | Concept | Formula | Shortcut |
 |---------|---------|----------|
 | Average | Sum/Count | - |
-| Weighted Average | (w1×x1 + w2×x2)/(w1+w2) | - |
+| Weighted Average | (w1Ã—x1 + w2Ã—x2)/(w1+w2) | - |
 | Average speed | 2ab/(a+b) | For equal distances |
-| Combined average | (n1×avg1 + n2×avg2)/(n1+n2) | - |
+| Combined average | (n1Ã—avg1 + n2Ã—avg2)/(n1+n2) | - |
 
 **Shortcut: New average when replacing a value**
 ```
@@ -284,7 +284,7 @@ flowchart TD
     B --> C[Read question]
     C --> D{What's asked?}
     D -->|Absolute value| E[Find & calculate]
-    D -->|Percentage change| F[(New-Old)/Old × 100]
+    D -->|Percentage change| F[(New-Old)/Old Ã— 100]
     D -->|Ratio| G[Divide values]
     D -->|Difference| H[Subtract]
     D -->|Trend| I[Check slope direction]
@@ -296,12 +296,12 @@ flowchart TD
 ### DI Approximation Examples
 
 <details>
-<summary><b>Q:</b> A bar chart shows company revenue: 2019: ₹245 Cr, 2020: ₹312 Cr. Approx % increase?</summary>
+<summary><b>Q:</b> A bar chart shows company revenue: 2019: â‚¹245 Cr, 2020: â‚¹312 Cr. Approx % increase?</summary>
 
 ```
 Increase = 312 - 245 = 67
-% increase = 67/245 × 100 ≈ 67/250 × 100 = 26.8%
-(Actual: 67/245 × 100 = 27.35%)
+% increase = 67/245 Ã— 100 â‰ˆ 67/250 Ã— 100 = 26.8%
+(Actual: 67/245 Ã— 100 = 27.35%)
 
 Options: A) 25% B) 27% C) 30% D) 35%
 Choose B) 27%
@@ -312,8 +312,8 @@ Choose B) 27%
 
 | Operation | Shortcut |
 |-----------|----------|
-| Find percentage of total | (part/total) × 100; use fraction for common values |
-| Percentage change | (difference/original) × 100; approximate with simpler numbers |
+| Find percentage of total | (part/total) Ã— 100; use fraction for common values |
+| Percentage change | (difference/original) Ã— 100; approximate with simpler numbers |
 | Ratio comparison | Cross-multiply instead of calculating decimals |
 | Sum of percentages | Add directly if all percentages refer to same total |
 | Average from chart | Add all values, divide by count (use approximation) |
@@ -328,46 +328,46 @@ Choose B) 27%
 
 | Pattern Type | Example | Rule |
 |-------------|---------|------|
-| Arithmetic | 2, 5, 8, 11, ? | +3 each time → 14 |
-| Geometric | 3, 6, 12, 24, ? | ×2 each time → 48 |
-| Square series | 1, 4, 9, 16, ? | n² → 25 |
-| Cube series | 1, 8, 27, 64, ? | n³ → 125 |
-| Mixed (prime) | 2, 3, 5, 7, 11, ? | Primes → 13 |
-| Fibonacci | 0, 1, 1, 2, 3, 5, 8, ? | Sum of previous two → 13 |
-| Alternating | 2, 7, 4, 9, 6, 11, ? | Two interleaved series → 8 |
-| Difference pattern | 2, 5, 10, 17, ? | +3,+5,+7 (+increasing odd) → 28 |
+| Arithmetic | 2, 5, 8, 11, ? | +3 each time â†’ 14 |
+| Geometric | 3, 6, 12, 24, ? | Ã—2 each time â†’ 48 |
+| Square series | 1, 4, 9, 16, ? | nÂ² â†’ 25 |
+| Cube series | 1, 8, 27, 64, ? | nÂ³ â†’ 125 |
+| Mixed (prime) | 2, 3, 5, 7, 11, ? | Primes â†’ 13 |
+| Fibonacci | 0, 1, 1, 2, 3, 5, 8, ? | Sum of previous two â†’ 13 |
+| Alternating | 2, 7, 4, 9, 6, 11, ? | Two interleaved series â†’ 8 |
+| Difference pattern | 2, 5, 10, 17, ? | +3,+5,+7 (+increasing odd) â†’ 28 |
 
 **Alphabet Series:**
 ```
 A=1, B=2, ..., Z=26 (or reverse: A=26, B=25, ..., Z=1)
-Look for: +n, -n, ×n patterns, vowels/consonants, forward/backward
+Look for: +n, -n, Ã—n patterns, vowels/consonants, forward/backward
 ```
 
 ### 3.2 Coding-Decoding
 
 | Code Type | Example | Logic |
 |-----------|---------|-------|
-| Letter shift | CAT → DBU (each +1) | Forward shift |
-| Reverse order | CAT → TAC | Reverse the word |
-| Positional sum | CAT → 3+1+20=24 | Sum of alphabetical positions |
-| Opposite letters | CAT → XZG | A↔Z, B↔Y, C↔X |
-| Pattern-based | CAT → 24 (3+1+20) | Letter positions added |
+| Letter shift | CAT â†’ DBU (each +1) | Forward shift |
+| Reverse order | CAT â†’ TAC | Reverse the word |
+| Positional sum | CAT â†’ 3+1+20=24 | Sum of alphabetical positions |
+| Opposite letters | CAT â†’ XZG | Aâ†”Z, Bâ†”Y, Câ†”X |
+| Pattern-based | CAT â†’ 24 (3+1+20) | Letter positions added |
 
 **Important opposite letter pairs (sum = 27):**
 ```
-A ↔ Z (1+26)
-B ↔ Y (2+25)
-C ↔ X (3+24)
-D ↔ W (4+23)
-E ↔ V (5+22)
-F ↔ U (6+21)
-G ↔ T (7+20)
-H ↔ S (8+19)
-I ↔ R (9+18)
-J ↔ Q (10+17)
-K ↔ P (11+16)
-L ↔ O (12+15)
-M ↔ N (13+14)
+A â†” Z (1+26)
+B â†” Y (2+25)
+C â†” X (3+24)
+D â†” W (4+23)
+E â†” V (5+22)
+F â†” U (6+21)
+G â†” T (7+20)
+H â†” S (8+19)
+I â†” R (9+18)
+J â†” Q (10+17)
+K â†” P (11+16)
+L â†” O (12+15)
+M â†” N (13+14)
 ```
 
 ### 3.3 Blood Relations
@@ -400,22 +400,22 @@ flowchart TD
 
 | Movement | Shortcut |
 |----------|----------|
-| Right turn | +90° clockwise |
-| Left turn | +90° counterclockwise |
-| Facing North, turn right → East | - |
-| Facing East, turn left → North | - |
-| Shortest distance | Pythagoras: √(a² + b²) |
+| Right turn | +90Â° clockwise |
+| Left turn | +90Â° counterclockwise |
+| Facing North, turn right â†’ East | - |
+| Facing East, turn left â†’ North | - |
+| Shortest distance | Pythagoras: âˆš(aÂ² + bÂ²) |
 
-**Example shortcut:** If someone walks 3 km East, 4 km North, distance from start = √(3²+4²) = 5 km.
+**Example shortcut:** If someone walks 3 km East, 4 km North, distance from start = âˆš(3Â²+4Â²) = 5 km.
 
 ### 3.5 Syllogisms
 
 | Type | Rule | Example |
 |------|------|---------|
-| All A are B | All B are C → All A are C | - |
-| No A are B | Some B are C → No conclusion | - |
-| Some A are B | All B are C → Some A are C | - |
-| Some A are B | Some B are C → No conclusion | - |
+| All A are B | All B are C â†’ All A are C | - |
+| No A are B | Some B are C â†’ No conclusion | - |
+| Some A are B | All B are C â†’ Some A are C | - |
+| Some A are B | Some B are C â†’ No conclusion | - |
 
 **Venn diagram approach:** Draw overlapping circles to visualize.
 
@@ -442,7 +442,7 @@ Angle = |30H - 5.5M| where H = hours, M = minutes
 
 ```
 H = 3, M = 30
-Angle = |30×3 - 5.5×30| = |90 - 165| = 75°
+Angle = |30Ã—3 - 5.5Ã—30| = |90 - 165| = 75Â°
 ```
 </details>
 
@@ -462,13 +462,13 @@ Century: 100 years = 5 odd days (76 ordinary + 24 leap)
 Count from reference (1 Jan 0001 = Monday):
 - 1949 years = 1600 + 300 + 49 years
 - 1600 years: 0 odd days
-- 300 years: 1 odd day (300/400 remainder: 100yr→5, 200yr→3, 300yr→1)
-- 49 years: 12 leap + 37 ordinary = 12×2 + 37×1 = 61 mod 7 = 5 odd days
+- 300 years: 1 odd day (300/400 remainder: 100yrâ†’5, 200yrâ†’3, 300yrâ†’1)
+- 49 years: 12 leap + 37 ordinary = 12Ã—2 + 37Ã—1 = 61 mod 7 = 5 odd days
 - Jan 26: 26 days = 26 mod 7 = 5 odd days
 Total odd days: 0 + 1 + 5 + 5 = 11 mod 7 = 4
 
 Day 0 = Sunday, 1 = Monday, 2 = Tuesday, 3 = Wednesday, 4 = Thursday
-January 26, 1950 was a Thursday ✓
+January 26, 1950 was a Thursday âœ“
 ```
 </details>
 
@@ -480,7 +480,7 @@ January 26, 1950 was a Thursday ✓
 
 | Rule | Explanation | Correct | Incorrect |
 |------|-------------|---------|-----------|
-| Subject-verb agreement | Singular subject → singular verb | He goes | He go |
+| Subject-verb agreement | Singular subject â†’ singular verb | He goes | He go |
 | Tense consistency | Don't shift tenses unnecessarily | I came, I saw, I conquered | I came, I see, I conquered |
 | Pronoun agreement | Pronoun must match antecedent | Each student must bring HIS book | Each student must bring THEIR book |
 | Parallel structure | Items in list must have same form | She likes swimming, running, and cycling | She likes swimming, to run, and cycling |
@@ -548,36 +548,36 @@ flowchart TD
 
 **Multiplication by 11:**
 ```
-35 × 11 = 3 (3+5) 5 = 385
-72 × 11 = 7 (7+2) 2 = 792
+35 Ã— 11 = 3 (3+5) 5 = 385
+72 Ã— 11 = 7 (7+2) 2 = 792
 (If sum > 9, carry over)
-89 × 11 = 8 (8+9=17) 9 = 979 (carry 1)
+89 Ã— 11 = 8 (8+9=17) 9 = 979 (carry 1)
 ```
 
 **Multiplication by 9, 99, 999:**
 ```
-27 × 9 = 27 × (10-1) = 270-27 = 243
-27 × 99 = 27 × (100-1) = 2700-27 = 2673
+27 Ã— 9 = 27 Ã— (10-1) = 270-27 = 243
+27 Ã— 99 = 27 Ã— (100-1) = 2700-27 = 2673
 
-Shortcut: 27 × 99 = 2673 (27-1=26, 100-27=73 → 26|73)
-123 × 999 = 122877 (123-1=122, 1000-123=877 → 122|877)
+Shortcut: 27 Ã— 99 = 2673 (27-1=26, 100-27=73 â†’ 26|73)
+123 Ã— 999 = 122877 (123-1=122, 1000-123=877 â†’ 122|877)
 ```
 
 **Squares of numbers ending in 1:**
 ```
-31² = 30² + 30 + 31 = 900 + 61 = 961
-41² = 40² + 40 + 41 = 1600 + 81 = 1681
+31Â² = 30Â² + 30 + 31 = 900 + 61 = 961
+41Â² = 40Â² + 40 + 41 = 1600 + 81 = 1681
 ```
 
 ### 5.2 Approximation Techniques
 
 | Situation | Approximate As | Error |
 |-----------|---------------|-------|
-| 28 × 47 | 30 × 50 = 1500 | ±5% |
-| 195 ÷ 24 | 200 ÷ 25 = 8 | ±2% |
-| 48% of 520 | 50% × 520 = 260 | ±2% |
-| √150 | √144 = 12 to √169 = 13, so ~12.25 | ±0.25 |
-| 31 × 19 | 30 × 20 = 600 | ±1% |
+| 28 Ã— 47 | 30 Ã— 50 = 1500 | Â±5% |
+| 195 Ã· 24 | 200 Ã· 25 = 8 | Â±2% |
+| 48% of 520 | 50% Ã— 520 = 260 | Â±2% |
+| âˆš150 | âˆš144 = 12 to âˆš169 = 13, so ~12.25 | Â±0.25 |
+| 31 Ã— 19 | 30 Ã— 20 = 600 | Â±1% |
 
 ### 5.3 Data Sufficiency Strategy
 
@@ -607,7 +607,7 @@ Step 4: Choose from: A) Only 1, B) Only 2, C) Together, D) Either, E) Neither
 
 ```
 Shortcut: 10% of 640 = 64
-40% = 4 × 64 = 256
+40% = 4 Ã— 64 = 256
 5% = 32
 45% = 256 + 32 = 288
 ```
@@ -618,8 +618,8 @@ Shortcut: 10% of 640 = 64
 
 ```
 Speed = Distance/Time = 150/15 = 10 m/s
-Convert to km/h: × 18/5 = 10 × 18/5 = 36 km/h
-Shortcut: m/s → km/h = × 18/5
+Convert to km/h: Ã— 18/5 = 10 Ã— 18/5 = 36 km/h
+Shortcut: m/s â†’ km/h = Ã— 18/5
 ```
 </details>
 
@@ -627,23 +627,23 @@ Shortcut: m/s → km/h = × 18/5
 <summary><b>Q3:</b> If 12 men can do a work in 18 days, how many men needed to do it in 9 days?</summary>
 
 ```
-M1 × D1 = M2 × D2
-12 × 18 = M2 × 9
-M2 = 12 × 18 / 9 = 24 men
+M1 Ã— D1 = M2 Ã— D2
+12 Ã— 18 = M2 Ã— 9
+M2 = 12 Ã— 18 / 9 = 24 men
 
-Shortcut: Half the time → Double the men
+Shortcut: Half the time â†’ Double the men
 ```
 </details>
 
 <details>
-<summary><b>Q4:</b> Find the compound interest on ₹10,000 at 8% for 2 years.</summary>
+<summary><b>Q4:</b> Find the compound interest on â‚¹10,000 at 8% for 2 years.</summary>
 
 ```
-Shortcut: CI = P[(R/100)² + 2R/100]
-= 10000[(8/100)² + 16/100]
+Shortcut: CI = P[(R/100)Â² + 2R/100]
+= 10000[(8/100)Â² + 16/100]
 = 10000[0.0064 + 0.16]
-= 10000 × 0.1664
-= ₹1,664
+= 10000 Ã— 0.1664
+= â‚¹1,664
 ```
 </details>
 
@@ -653,7 +653,7 @@ Shortcut: CI = P[(R/100)² + 2R/100]
 ```
 Let CP = 100
 MP = 130
-SP after 10% discount = 130 × 0.9 = 117
+SP after 10% discount = 130 Ã— 0.9 = 117
 Profit = 17%
 
 Shortcut: Profit = (p - d - pd/100)
@@ -667,8 +667,8 @@ Shortcut: Profit = (p - d - pd/100)
 <summary><b>Q6:</b> Find next in series: 2, 6, 18, 54, ?</summary>
 
 ```
-Pattern: ×3 each time
-54 × 3 = 162
+Pattern: Ã—3 each time
+54 Ã— 3 = 162
 ```
 </details>
 
@@ -677,9 +677,9 @@ Pattern: ×3 each time
 
 ```
 Each letter shifted +1 forward:
-C→D, L→M, O→P, C→D, K→L
-T→U, I→J, M→N, E→F
-TIME → UJNF
+Câ†’D, Lâ†’M, Oâ†’P, Câ†’D, Kâ†’L
+Tâ†’U, Iâ†’J, Mâ†’N, Eâ†’F
+TIME â†’ UJNF
 ```
 </details>
 
@@ -700,7 +700,7 @@ D is A's wife
 ```
 Net North: 3 - 2 = 1 km North
 Net East: 4 - 1 = 3 km East
-Distance = √(1² + 3²) = √10 ≈ 3.16 km
+Distance = âˆš(1Â² + 3Â²) = âˆš10 â‰ˆ 3.16 km
 ```
 </details>
 
@@ -708,9 +708,9 @@ Distance = √(1² + 3²) = √10 ≈ 3.16 km
 <summary><b>Q10:</b> Time is 4:40. What angle between hour and minute hands?</summary>
 
 ```
-Angle = |30H - 5.5M| = |120 - 220| = 100°
-But reflex angle = 360 - 100 = 260°
-Smallest angle = 100°
+Angle = |30H - 5.5M| = |120 - 220| = 100Â°
+But reflex angle = 360 - 100 = 260Â°
+Smallest angle = 100Â°
 ```
 </details>
 
@@ -720,9 +720,9 @@ Smallest angle = 100°
 <summary><b>Q11:</b> Choose correct: Neither the teacher nor the students ___ present.</summary>
 
 ```
-"Neither X nor Y" — verb agrees with Y (students)
+"Neither X nor Y" â€” verb agrees with Y (students)
 Answer: were
-(If it were "neither the students nor the teacher," verb agrees with teacher → was)
+(If it were "neither the students nor the teacher," verb agrees with teacher â†’ was)
 ```
 </details>
 
@@ -739,7 +739,7 @@ Synonym: Omnipresent, Pervasive
 <summary><b>Q13:</b> Correct the sentence: "Each of the boys have their own book."</summary>
 
 ```
-"Each" is singular → "Each of the boys has his own book."
+"Each" is singular â†’ "Each of the boys has his own book."
 ```
 </details>
 
@@ -764,7 +764,7 @@ He was convicted of his crime.
 ### Problem Set 4: Data Interpretation
 
 ```
-Table: Company Revenue (₹Cr)
+Table: Company Revenue (â‚¹Cr)
     2019  2020  2021
 A     100   120   150
 B      80    90   110
@@ -784,7 +784,7 @@ C     120   130   160
 
 ```
 Increase = 150 - 100 = 50
-% = 50/100 × 100 = 50%
+% = 50/100 Ã— 100 = 50%
 ```
 </details>
 
@@ -803,8 +803,8 @@ A(2021) : B(2020)
 
 ```
 Total 2021 = 150 + 110 + 160 = 420
-C% = 160/420 × 100 ≈ 38.1%
-Shortcut: 160/420 = 8/21 ≈ 38%
+C% = 160/420 Ã— 100 â‰ˆ 38.1%
+Shortcut: 160/420 = 8/21 â‰ˆ 38%
 ```
 </details>
 
@@ -812,9 +812,9 @@ Shortcut: 160/420 = 8/21 ≈ 38%
 <summary><b>Q20:</b> Which company had highest growth from 2020 to 2021?</summary>
 
 ```
-A: 150-120=30 → 30/120=25%
-B: 110-90=20 → 20/90=22.2%
-C: 160-130=30 → 30/130=23.1%
+A: 150-120=30 â†’ 30/120=25%
+B: 110-90=20 â†’ 20/90=22.2%
+C: 160-130=30 â†’ 30/130=23.1%
 Company A had highest growth rate (25%)
 ```
 </details>
@@ -827,11 +827,11 @@ Company A had highest growth rate (25%)
 
 | Topic | Formula |
 |-------|---------|
-| Percentage | Part/Whole × 100 or P/100 × Base |
-| Profit % | (SP-CP)/CP × 100 |
-| Discount % | (MP-SP)/MP × 100 |
+| Percentage | Part/Whole Ã— 100 or P/100 Ã— Base |
+| Profit % | (SP-CP)/CP Ã— 100 |
+| Discount % | (MP-SP)/MP Ã— 100 |
 | SI | PRT/100 |
-| CI (2yr) | P[(R/100)² + 2R/100] |
+| CI (2yr) | P[(R/100)Â² + 2R/100] |
 | Speed | Distance/Time |
 | Avg Speed (equal dist) | 2ab/(a+b) |
 | Work (combined) | 1/(1/A + 1/B) |
@@ -843,17 +843,17 @@ Company A had highest growth rate (25%)
 | Number | Check |
 |--------|-------|
 | 2 | Last digit even |
-| 3 | Sum of digits ÷ 3 |
-| 4 | Last 2 digits ÷ 4 |
+| 3 | Sum of digits Ã· 3 |
+| 4 | Last 2 digits Ã· 4 |
 | 5 | Last digit 0 or 5 |
-| 6 | ÷2 and ÷3 |
+| 6 | Ã·2 and Ã·3 |
 | 7 | Double last, subtract from rest |
-| 8 | Last 3 digits ÷ 8 |
-| 9 | Sum of digits ÷ 9 |
+| 8 | Last 3 digits Ã· 8 |
+| 9 | Sum of digits Ã· 9 |
 | 10 | Last digit 0 |
 | 11 | (odd sum - even sum) = 0 or 11 |
 
-### Common Fraction → Percentage
+### Common Fraction â†’ Percentage
 
 | Fraction | % | Fraction | % |
 |----------|---|----------|---|
@@ -875,7 +875,7 @@ Company A had highest growth rate (25%)
 
 ### Square and Cube Roots
 
-| n | n² | n³ | √n | 
+| n | nÂ² | nÂ³ | âˆšn | 
 |---|----|----|----|
 | 10 | 100 | 1000 | 3.16 |
 | 11 | 121 | 1331 | 3.32 |
@@ -941,7 +941,7 @@ Solution:
 A's rate = 1/20, B's rate = 1/30, C's rate = -1/40 (empties)
 Combined rate = 1/20 + 1/30 - 1/40
 = 6/120 + 4/120 - 3/120 = 7/120
-Time = 120/7 ≈ 17.14 minutes
+Time = 120/7 â‰ˆ 17.14 minutes
 ```
 
 ### Pattern 3: Boats and Streams
@@ -957,11 +957,11 @@ If a boat travels 30 km downstream and 30 km upstream taking total
 
 Solution:
 30/(b+5) + 30/(b-5) = 8
-30(b-5 + b+5)/(b²-25) = 8
-30(2b)/(b²-25) = 8
-60b = 8b² - 200
-8b² - 60b - 200 = 0
-2b² - 15b - 50 = 0
+30(b-5 + b+5)/(bÂ²-25) = 8
+30(2b)/(bÂ²-25) = 8
+60b = 8bÂ² - 200
+8bÂ² - 60b - 200 = 0
+2bÂ² - 15b - 50 = 0
 b = 10 or b = -2.5 (ignore)
 Boat speed = 10 km/h
 ```
@@ -971,10 +971,10 @@ Boat speed = 10 km/h
 ```
 Key formulas:
 nPr = n!/(n-r)!
-nCr = n!/(r! × (n-r)!)
+nCr = n!/(r! Ã— (n-r)!)
 
 nCr = nC(n-r)
-nC0 + nC1 + nC2 + ... + nCn = 2ⁿ
+nC0 + nC1 + nC2 + ... + nCn = 2â¿
 
 Number of ways to arrange n distinct items = n!
 Items with p,q repetitions = n!/(p!q!)
@@ -984,9 +984,9 @@ Items with p,q repetitions = n!/(p!q!)
 <summary><b>Q:</b> How many ways to form a 4-digit number from 1,2,3,4,5 without repetition that is divisible by 2?</summary>
 
 ```
-Divisible by 2 → last digit must be even (2 or 4)
-Case 1: Last digit = 2 → remaining 3 digits from {1,3,4,5} → 4P3 = 24
-Case 2: Last digit = 4 → remaining 3 digits from {1,2,3,5} → 4P3 = 24
+Divisible by 2 â†’ last digit must be even (2 or 4)
+Case 1: Last digit = 2 â†’ remaining 3 digits from {1,3,4,5} â†’ 4P3 = 24
+Case 2: Last digit = 4 â†’ remaining 3 digits from {1,2,3,5} â†’ 4P3 = 24
 Total = 48 ways
 ```
 </details>
@@ -998,9 +998,9 @@ P(event) = Favorable outcomes / Total outcomes
 
 For "at least one" type: P(at least one) = 1 - P(none)
 
-For "either A or B": P(A∪B) = P(A) + P(B) - P(A∩B)
+For "either A or B": P(AâˆªB) = P(A) + P(B) - P(Aâˆ©B)
 
-Conditional: P(A|B) = P(A∩B)/P(B)
+Conditional: P(A|B) = P(Aâˆ©B)/P(B)
 ```
 
 <details>
@@ -1008,10 +1008,10 @@ Conditional: P(A|B) = P(A∩B)/P(B)
 
 ```
 Total outcomes = 36
-Favorable sums ≥ 9:
+Favorable sums â‰¥ 9:
 (3,6),(4,5),(4,6),(5,4),(5,5),(5,6),(6,3),(6,4),(6,5),(6,6)
 Count = 10
-Probability = 10/36 = 5/18 ≈ 27.8%
+Probability = 10/36 = 5/18 â‰ˆ 27.8%
 ```
 </details>
 
@@ -1020,11 +1020,11 @@ Probability = 10/36 = 5/18 ≈ 27.8%
 ```
 Alligation rule: (Cheaper qty)/(Dearer qty) = (Dearer - Mean)/(Mean - Cheaper)
 
-Mean Price = (C1×Q1 + C2×Q2)/(Q1+Q2)
+Mean Price = (C1Ã—Q1 + C2Ã—Q2)/(Q1+Q2)
 ```
 
 <details>
-<summary><b>Q:</b> In what ratio must rice at ₹30/kg be mixed with ₹45/kg so that mixture costs ₹36/kg?</summary>
+<summary><b>Q:</b> In what ratio must rice at â‚¹30/kg be mixed with â‚¹45/kg so that mixture costs â‚¹36/kg?</summary>
 
 ```
 Using alligation:
@@ -1041,23 +1041,23 @@ So mix in ratio 3:2 (cheaper:dearer)
 
 ```
 Difference between CI and SI for 2 years at R%:
-Difference = P(R/100)²
+Difference = P(R/100)Â²
 
 CI for 2 years at different rates:
-If rate is R₁% for first year and R₂% for second year:
-Amount = P(1+R₁/100)(1+R₂/100)
+If rate is Râ‚% for first year and Râ‚‚% for second year:
+Amount = P(1+Râ‚/100)(1+Râ‚‚/100)
 ```
 
 <details>
-<summary><b>Q:</b> Difference between CI and SI on ₹10,000 at 10% for 2 years?</summary>
+<summary><b>Q:</b> Difference between CI and SI on â‚¹10,000 at 10% for 2 years?</summary>
 
 ```
-Difference = P(R/100)² = 10000(0.1)² = 10000 × 0.01 = ₹100
+Difference = P(R/100)Â² = 10000(0.1)Â² = 10000 Ã— 0.01 = â‚¹100
 
 Verification:
-SI = 10000 × 0.1 × 2 = ₹2000
-CI = 10000(1.1)² - 10000 = 12100 - 10000 = ₹2100
-Difference = ₹100 ✓
+SI = 10000 Ã— 0.1 Ã— 2 = â‚¹2000
+CI = 10000(1.1)Â² - 10000 = 12100 - 10000 = â‚¹2100
+Difference = â‚¹100 âœ“
 ```
 </details>
 
@@ -1078,9 +1078,9 @@ Difference = ₹100 ✓
 
 | Section | Questions | Time | Strategy |
 |---------|-----------|------|----------|
-| English | 30 | 20 min | Easy — attempt all, reading comprehension first |
-| Quant | 35 | 20 min | Moderate — skip DI-heavy sets, return later |
-| Reasoning | 35 | 20 min | Moderate — puzzle/arrangement questions first |
+| English | 30 | 20 min | Easy â€” attempt all, reading comprehension first |
+| Quant | 35 | 20 min | Moderate â€” skip DI-heavy sets, return later |
+| Reasoning | 35 | 20 min | Moderate â€” puzzle/arrangement questions first |
 | **Total** | **100** | **60 min** | Accuracy &gt; speed |
 
 ### SSC CGL Tier 1
@@ -1109,7 +1109,7 @@ Difference = ₹100 ✓
 | Section Type | Time Allocation | Per Question | Approach |
 |-------------|----------------|--------------|----------|
 | Easy (English, GK) | 70% time | 45-60 sec | Attempt all quickly |
-| Moderate (Quant, Reasoning) | 50% time — attempt, 50% — skip | 60-90 sec | Do known ones first |
+| Moderate (Quant, Reasoning) | 50% time â€” attempt, 50% â€” skip | 60-90 sec | Do known ones first |
 | Hard (Advanced Math) | 30% time | 90-120 sec | Skip if not confident |
 
 ---
@@ -1121,18 +1121,18 @@ Difference = ₹100 ✓
 ```typescript
 // Exercise 1: Squaring numbers 11-99 (5 min)
 function mentalSquare(n: number): number {
-  // (a+b)² = a² + 2ab + b²
-  // 47² = (40+7)² = 1600 + 560 + 49 = 2209
+  // (a+b)Â² = aÂ² + 2ab + bÂ²
+  // 47Â² = (40+7)Â² = 1600 + 560 + 49 = 2209
 }
 
 // Exercise 2: Two-digit multiplication (5 min)
 function mentalMultiply(a: number, b: number): number {
-  // 28 × 32 = (30-2)(30+2) = 900 - 4 = 896
+  // 28 Ã— 32 = (30-2)(30+2) = 900 - 4 = 896
 }
 
 // Exercise 3: Percentage in reverse (5 min)
 function findWhole(part: number, pct: number): number {
-  // If 30 is 15%, then 100% = 30/15 × 100 = 200
+  // If 30 is 15%, then 100% = 30/15 Ã— 100 = 200
   return (part / pct) * 100;
 }
 ```
@@ -1145,8 +1145,8 @@ Add from left to right (not right to left as taught):
    345
 +  678
 = (300+600)=900
-  (40+70)=110 → 1010
-  (5+8)=13 → 1023
+  (40+70)=110 â†’ 1010
+  (5+8)=13 â†’ 1023
 
 This is faster for mental math than carrying.
 ```
@@ -1154,17 +1154,17 @@ This is faster for mental math than carrying.
 ### Multiplication by Near-100 Numbers
 
 ```
-98 × 97 = (100-2)(100-3)
+98 Ã— 97 = (100-2)(100-3)
 = 10000 - 500 + 6 = 9506
 
-Shortcut: 98 × 97
+Shortcut: 98 Ã— 97
 Step 1: 98 + 97 - 100 = 95
-Step 2: (100-98)(100-97) = 2×3 = 6
+Step 2: (100-98)(100-97) = 2Ã—3 = 6
 Answer: 9506
 
-Try: 96 × 93
+Try: 96 Ã— 93
 96 + 93 - 100 = 89
-4 × 7 = 28
+4 Ã— 7 = 28
 Answer: 8928
 ```
 
@@ -1172,20 +1172,20 @@ Answer: 8928
 
 ```
 Divide by 5: Multiply by 2, divide by 10
-  345/5 = 345×2/10 = 690/10 = 69
+  345/5 = 345Ã—2/10 = 690/10 = 69
 
 Divide by 25: Multiply by 4, divide by 100
-  375/25 = 375×4/100 = 1500/100 = 15
+  375/25 = 375Ã—4/100 = 1500/100 = 15
 
 Divide by 125: Multiply by 8, divide by 1000
-  4375/125 = 4375×8/1000 = 35000/1000 = 35
+  4375/125 = 4375Ã—8/1000 = 35000/1000 = 35
 ```
 
 ### Percentage Quick Calculations
 
 | Given | To Find | Operation |
 |-------|---------|-----------|
-| 100% of X | Anything | X × (pct/100) |
+| 100% of X | Anything | X Ã— (pct/100) |
 | 10% of X | 10% | X/10 |
 | 5% of X | 5% | X/20 |
 | 1% of X | 1% | X/100 |
@@ -1196,7 +1196,7 @@ Divide by 125: Multiply by 8, divide by 1000
 
 ---
 
-## Section 10: Quick Revision — Last-Minute Cheat Sheet
+## Section 10: Quick Revision â€” Last-Minute Cheat Sheet
 
 ### Number System
 
@@ -1204,8 +1204,8 @@ Divide by 125: Multiply by 8, divide by 1000
 Natural numbers: 1,2,3,...
 Whole numbers: 0,1,2,3,...
 Integers: ..., -2,-1,0,1,2,...
-Rational: p/q form (q≠0)
-Irrational: √2, π, e
+Rational: p/q form (qâ‰ 0)
+Irrational: âˆš2, Ï€, e
 Real: All of the above
 Prime: 2,3,5,7,11,13,17,19,23,29
 Composite: 4,6,8,9,10,12,14,15,16,18,20
@@ -1215,32 +1215,32 @@ Co-prime: HCF = 1 (9 and 16)
 ### Speed Summary
 
 ```
-km/h → m/s: × 5/18
-m/s → km/h: × 18/5
+km/h â†’ m/s: Ã— 5/18
+m/s â†’ km/h: Ã— 18/5
 Relative speed (same direction): difference
 Relative speed (opposite): sum
 Average speed (equal distances): 2ab/(a+b)
 Train crossing pole: L/v
-Train crossing platform: (L₁+L₂)/v
+Train crossing platform: (Lâ‚+Lâ‚‚)/v
 ```
 
 ### Interest Summary
 
 ```
-SI = P × R × T / 100
-CI = P(1+R/100)ᵀ - P
-Amount = P(1+R/100)ᵀ
+SI = P Ã— R Ã— T / 100
+CI = P(1+R/100)áµ€ - P
+Amount = P(1+R/100)áµ€
 
 For 2 years:
-CI - SI = P(R/100)²
+CI - SI = P(R/100)Â²
 ```
 
 ### Profit-Loss Summary
 
 ```
-SP = CP × (100+P%)/100
-SP = CP × (100-L%)/100
-MP × (100-D%)/100 = SP
+SP = CP Ã— (100+P%)/100
+SP = CP Ã— (100-L%)/100
+MP Ã— (100-D%)/100 = SP
 Discount = MP - SP
 Successive discounts: a + b - ab/100
 ```
@@ -1248,8 +1248,8 @@ Successive discounts: a + b - ab/100
 ### Time-Work Summary
 
 ```
-Work = Rate × Time
-Combined: 1/T₁ + 1/T₂ + ...
+Work = Rate Ã— Time
+Combined: 1/Tâ‚ + 1/Tâ‚‚ + ...
 If A takes x days, B takes y days:
 Together: xy/(x+y)
 A leaves after n days: remaining days = (1-n/x)/(1/x+1/y)
@@ -1261,8 +1261,8 @@ A leaves after n days: remaining days = (1-n/x)/(1/x+1/y)
 A = cheaper rate, B = dearer rate, M = mean rate
 A:B = (M-B):(A-M)
 
-For n items with averages a₁,a₂,...aₙ:
-Weighted avg = Σ(nᵢ×aᵢ)/Σnᵢ
+For n items with averages aâ‚,aâ‚‚,...aâ‚™:
+Weighted avg = Î£(náµ¢Ã—aáµ¢)/Î£náµ¢
 ```
 
 ### Logical Reasoning Patterns
@@ -1272,13 +1272,13 @@ Syllogism: All A are B + All B are C = All A are C
 Blood relation: Draw family tree
 Direction: Net displacement using Pythagoras
 Clock angle: |30H - 5.5M|
-Calendar: Odd days → 0=Sun, 1=Mon... (Normal yr=1, Leap yr=2)
+Calendar: Odd days â†’ 0=Sun, 1=Mon... (Normal yr=1, Leap yr=2)
 ```
 
 ### Data Interpretation Quick Checks
 
 ```
-Pie chart: Sector angle = (Value/Total) × 360°
+Pie chart: Sector angle = (Value/Total) Ã— 360Â°
 Bar chart: Compare heights visually
 Line graph: Steeper = faster change
 Table: Scan row and column headers first
@@ -1301,15 +1301,15 @@ This chapter covered all major topics for aptitude and reasoning tests:
 
 ## Practical Takeaways
 
-1. **Memorize the fraction-percentage table** — 1/2 to 1/25. This alone saves 30% calculation time in DI and percentage problems.
+1. **Memorize the fraction-percentage table** â€” 1/2 to 1/25. This alone saves 30% calculation time in DI and percentage problems.
 
-2. **Use approximation aggressively** — Most exam questions have options that are sufficiently apart. Round to nearest convenient number.
+2. **Use approximation aggressively** â€” Most exam questions have options that are sufficiently apart. Round to nearest convenient number.
 
-3. **Master the Clock Angle formula** = |30H - 5.5M| — it appears in 80% of competitive exams.
+3. **Master the Clock Angle formula** = |30H - 5.5M| â€” it appears in 80% of competitive exams.
 
 4. **For Data Interpretation:** Never calculate exact values unless options are very close. Estimate, eliminate, select.
 
-5. **⭐ Must-Know:** Fraction → Percentage table, divisibility rules, clock angle, average speed 2ab/(a+b), successive discount formula.
+5. **â­ Must-Know:** Fraction â†’ Percentage table, divisibility rules, clock angle, average speed 2ab/(a+b), successive discount formula.
 
 6. **Time management:** Attempt easier questions first. Mark hard ones for review. Don't spend more than 90 seconds per question.
 

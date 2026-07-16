@@ -1,4 +1,4 @@
-# Chapter 5: Prompt Engineering
+﻿# Chapter 5: Prompt Engineering
 
 > **Learning Objectives**
 >
@@ -18,16 +18,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -132,7 +132,7 @@ Few-shot is superior for:
 The quality of few-shot examples directly impacts performance. Best practices:
 
 - **Representative examples:** Choose examples that cover the range of expected inputs and outputs.
-- **Correct examples:** Every example must be accurate — errors propagate to the model's behavior.
+- **Correct examples:** Every example must be accurate â€” errors propagate to the model's behavior.
 - **Diverse examples:** Include edge cases and boundary conditions, not just typical cases.
 - **Minimal examples:** Use the fewest examples that achieve the desired behavior. More examples consume context window and may introduce noise.
 
@@ -157,7 +157,7 @@ ToT is effective for:
 - Puzzle solving (Sudoku, crosswords)
 - Tasks requiring exploration of multiple solution strategies
 
-The main cost is increased token usage — each reasoning path generates additional tokens, and branching multiplies this by the branching factor.
+The main cost is increased token usage â€” each reasoning path generates additional tokens, and branching multiplies this by the branching factor.
 
 ### 5.3.3 Self-Consistency
 
@@ -192,11 +192,11 @@ flowchart LR
     end
     
     subgraph SelfCons["Self-Consistency"]
-        K["Path 1 → Answer 1"]
-        L["Path 2 → Answer 2"]
-        M["Path 3 → Answer 1"]
-        N["Path 4 → Answer 3"]
-        O["Path 5 → Answer 1"]
+        K["Path 1 â†’ Answer 1"]
+        L["Path 2 â†’ Answer 2"]
+        M["Path 3 â†’ Answer 1"]
+        N["Path 4 â†’ Answer 3"]
+        O["Path 5 â†’ Answer 1"]
         P["Majority Vote: Answer 1"]
     end
     
@@ -212,7 +212,7 @@ flowchart LR
 
 ### 5.4.1 JSON Mode
 
-Many LLM providers support JSON mode, which guarantees the output can be parsed as valid JSON. OpenAI's JSON mode requires the prompt to contain the word "JSON" and the model is guided to produce a valid JSON object. However, JSON mode does not guarantee schema compliance — the output may be valid JSON but with missing or extra fields.
+Many LLM providers support JSON mode, which guarantees the output can be parsed as valid JSON. OpenAI's JSON mode requires the prompt to contain the word "JSON" and the model is guided to produce a valid JSON object. However, JSON mode does not guarantee schema compliance â€” the output may be valid JSON but with missing or extra fields.
 
 ### 5.4.2 Grammar Constraints
 
@@ -268,7 +268,7 @@ function isStructuredOutput(obj: unknown): obj is StructuredOutput {
 
 ### 5.5.1 Prompt Compression
 
-Long prompts degrade model performance due to the "lost in the middle" phenomenon — models pay less attention to content in the middle of long contexts. Compression strategies include:
+Long prompts degrade model performance due to the "lost in the middle" phenomenon â€” models pay less attention to content in the middle of long contexts. Compression strategies include:
 
 - **Summary compression:** Replace verbose sections with shorter summaries.
 - **Extractive compression:** Select only the most relevant sentences or tokens.
@@ -884,7 +884,7 @@ class PromptOptimizer {
 
 ## Summary
 
-Prompt engineering is the discipline of designing inputs that reliably produce desired model outputs. Effective prompts are clear, specific, and structured with explicit role assignments and output formatting. Zero-shot prompting works for common tasks, while few-shot prompting with dynamically selected examples improves performance on specialized tasks. Chain-of-thought, tree-of-thought, and self-consistency techniques enhance reasoning capabilities. Structured output prompting with schema enforcement ensures machine-readable responses. Context management strategies — compression, sliding windows, and dynamic insertion — enable working with content that exceeds the context window. The separation of system prompts and user prompts creates a security boundary that prevents prompt injection. Rigorous versioning, A/B testing, automated evaluation, and systematic debugging complete the prompt engineering workflow. The `PromptTemplate` and `PromptOptimizer` classes provide a production-ready foundation for managing prompts as code.
+Prompt engineering is the discipline of designing inputs that reliably produce desired model outputs. Effective prompts are clear, specific, and structured with explicit role assignments and output formatting. Zero-shot prompting works for common tasks, while few-shot prompting with dynamically selected examples improves performance on specialized tasks. Chain-of-thought, tree-of-thought, and self-consistency techniques enhance reasoning capabilities. Structured output prompting with schema enforcement ensures machine-readable responses. Context management strategies â€” compression, sliding windows, and dynamic insertion â€” enable working with content that exceeds the context window. The separation of system prompts and user prompts creates a security boundary that prevents prompt injection. Rigorous versioning, A/B testing, automated evaluation, and systematic debugging complete the prompt engineering workflow. The `PromptTemplate` and `PromptOptimizer` classes provide a production-ready foundation for managing prompts as code.
 
 ---
 
@@ -1018,7 +1018,7 @@ class PromptInjectorDetector {
     { pattern: /(?:###|"""|---|===\s*end\s*===)|```/i, severity: 'medium', description: 'Delimiter manipulation' },
     { pattern: /<(?:system|prompt|instruction|user)>/i, severity: 'medium', description: 'Tag injection' },
     { pattern: /(?:in this conversation|above conversation|previous message|first message)/i, severity: 'low', description: 'Context reference' },
-    { pattern: /(?:日本語で|en français|auf Deutsch)/, severity: 'low', description: 'Language override', },
+    { pattern: /(?:æ—¥æœ¬èªžã§|en franÃ§ais|auf Deutsch)/, severity: 'low', description: 'Language override', },
   ];
 
   analyze(input: string): { safe: boolean; riskScore: number; detections: Array<{ pattern: string; severity: string }> } {

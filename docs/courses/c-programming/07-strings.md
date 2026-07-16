@@ -1,4 +1,4 @@
-# Chapter 7: Strings
+﻿# Chapter 7: Strings
 
 > **Previous:** [Arrays](./06-arrays.md) | **Next:** [Functions](./08-functions.md)
 
@@ -15,16 +15,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/07-strings/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/c-programming/07-strings/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/07-strings/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/c-programming/07-strings/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/07-strings/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/c-programming/07-strings/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/07-strings/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/c-programming/07-strings/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/07-strings/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/c-programming/07-strings/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/07-strings/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/c-programming/07-strings/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -2032,7 +2032,7 @@ atoi("  -123"):   -123
 atoi("   +456abc"): 456
 atoi("abc"):      0
 atoi("2147483647"): 2147483647
-atoi("9999999999"): -2147483648 (or some garbage — overflow is undefined)
+atoi("9999999999"): -2147483648 (or some garbage â€” overflow is undefined)
 Sum: 150
 ```
 
@@ -2052,7 +2052,7 @@ Return: 42 * (-1) = -42
 **Complexity:** O(n) where n is the length of the digit portion.
 
 **Edge cases:**
-- **No digits found:** Returns 0 (ambiguous — is "abc" truly zero or an error?).
+- **No digits found:** Returns 0 (ambiguous â€” is "abc" truly zero or an error?).
 - **Overflow:** **Undefined behavior** if the converted value exceeds `INT_MAX` or falls below `INT_MIN`.
 - **Empty string or only whitespace:** Returns 0.
 - **Leading zeros:** Handled naturally (0300 = 300).
@@ -2503,8 +2503,8 @@ Dynamic string array (3 items):
 
 | Feature | `gets` | `fgets` | `scanf("%s")` |
 |---------|--------|---------|---------------|
-| **Buffer safe?** | **NO** — no size limit | Yes — takes buffer size | **NO** — unless width specified like `%19s` |
-| **Reads spaces?** | Yes | Yes | **No** — stops at whitespace |
+| **Buffer safe?** | **NO** â€” no size limit | Yes â€” takes buffer size | **NO** â€” unless width specified like `%19s` |
+| **Reads spaces?** | Yes | Yes | **No** â€” stops at whitespace |
 | **Includes newline?** | Discards `'\n'` | **Includes** `'\n'` | No |
 | **Null-terminates?** | Yes | Yes | Yes |
 | **Return value** | `char *` (NULL on EOF/error) | `char *` (NULL on EOF/error) | Number of items matched |
@@ -2512,17 +2512,17 @@ Dynamic string array (3 items):
 | **Safety verdict** | **Never use** | **Always use for lines** | Use with width for words |
 
 ```c
-/* BAD — gets has no bounds checking */
+/* BAD â€” gets has no bounds checking */
 char buf[10];
 gets(buf);  /* Input of 50 characters will overflow */
 
-/* GOOD — fgets with size limit */
+/* GOOD â€” fgets with size limit */
 char buf[10];
 if (fgets(buf, sizeof(buf), stdin)) {
     buf[strcspn(buf, "\n")] = '\0';  /* remove newline if present */
 }
 
-/* OK — scanf with explicit width */
+/* OK â€” scanf with explicit width */
 char buf[10];
 scanf("%9s", buf);  /* read at most 9 chars + null terminator */
 ```
@@ -2532,28 +2532,28 @@ scanf("%9s", buf);  /* read at most 9 chars + null terminator */
 
 | Feature | `strcpy` | `strncpy` | `snprintf` |
 |---------|----------|-----------|------------|
-| **Bounds-checked?** | **No** | Partial — pads with nulls but doesn't null-terminate if source >= n | **Yes** — always null-terminates |
-| **Null-termination** | Always | Only if strlen(src) &lt; n — dangerous silent failure | **Always** (as long as n &gt; 0) |
+| **Bounds-checked?** | **No** | Partial â€” pads with nulls but doesn't null-terminate if source >= n | **Yes** â€” always null-terminates |
+| **Null-termination** | Always | Only if strlen(src) &lt; n â€” dangerous silent failure | **Always** (as long as n &gt; 0) |
 | **Performance** | Fast, simple | Slower due to null-padding | Slowest (format parsing overhead) |
-| **Pads with nulls?** | No | Yes — fills rest of buffer with '\0' | No |
+| **Pads with nulls?** | No | Yes â€” fills rest of buffer with '\0' | No |
 | **Return value** | `char *` (dest) | `char *` (dest) | Characters needed (detect truncation) |
 | **Truncation detection** | Impossible | Impossible (can check strlen but it's O(n)) | **Easy** (ret >= n means truncation) |
-| **Safety verdict** | **Use only with known safe lengths** | **Never use for strings — use strlcpy** | **Best for safe copy** |
+| **Safety verdict** | **Use only with known safe lengths** | **Never use for strings â€” use strlcpy** | **Best for safe copy** |
 
 ```c
 char src[] = "hello world";
 char dst[6];
 
-/* BAD — overflow */
+/* BAD â€” overflow */
 strcpy(dst, src);  /* writes 12 chars into 6-char buffer */
 
-/* BAD — no null termination if src >= n */
+/* BAD â€” no null termination if src >= n */
 strncpy(dst, src, sizeof(dst));
-/* dst is NOT null-terminated! dst = {'h','e','l','l','o',' '} — garbage follows */
+/* dst is NOT null-terminated! dst = {'h','e','l','l','o',' '} â€” garbage follows */
 
 /* GOOD */
 snprintf(dst, sizeof(dst), "%s", src);
-/* dst = "hello\0" — always safe, always null-terminated */
+/* dst = "hello\0" â€” always safe, always null-terminated */
 ```
 
 ### 7.8.3 String to Number: atoi vs strtol vs sscanf
@@ -2567,8 +2567,8 @@ snprintf(dst, sizeof(dst), "%s", src);
 | Aspect | `char *s = "hello";` | `char s[] = "hello";` |
 |--------|----------------------|----------------------|
 | **Storage** | Pointer to string literal in `.rodata` (read-only) | Local array on stack initialized from literal |
-| **Modifiable?** | **No** — modifying causes undefined behavior (often segfault) | Yes |
-| **Reassignable?** | Yes — `s` can point to another string | No — `s` is a fixed array, cannot be reassigned |
+| **Modifiable?** | **No** â€” modifying causes undefined behavior (often segfault) | Yes |
+| **Reassignable?** | Yes â€” `s` can point to another string | No â€” `s` is a fixed array, cannot be reassigned |
 | **Memory** | Pointer (4/8 bytes) + literal in `.rodata` | Full array on stack (6 bytes for "hello" + '\0') |
 | `sizeof(s)` | Size of pointer (4 or 8) | Size of array (6) |
 | **String literal sharing** | May share the same literal with other pointers | Gets its own copy |
@@ -2578,12 +2578,12 @@ char *p = "hello";
 char a[] = "hello";
 
 /* Modifying: */
-p[0] = 'H';  /* UNDEFINED BEHAVIOR — crash on most systems */
-a[0] = 'H';  /* OK — a becomes "Hello" */
+p[0] = 'H';  /* UNDEFINED BEHAVIOR â€” crash on most systems */
+a[0] = 'H';  /* OK â€” a becomes "Hello" */
 
 /* Reassignment: */
 p = "world"; /* OK */
-a = "world"; /* COMPILE ERROR — array type not assignable */
+a = "world"; /* COMPILE ERROR â€” array type not assignable */
 
 /* sizeof: */
 printf("%zu\n", sizeof(p)); /* 8 (pointer size on 64-bit) */
@@ -2614,10 +2614,10 @@ Stack (for char a[]):
 
 **Answer:** `gets` does not take a size parameter. If the input exceeds the buffer, the function writes past the end of the array, causing a buffer overflow. This is the classic vulnerability that enabled the Morris Worm (1988). `gets` was removed from the C11 standard. Always use `fgets` or `getline` (POSIX) with explicit size limits.
 
-### Q3: What is the N+1 problem (not SQL — string-related)?
+### Q3: What is the N+1 problem (not SQL â€” string-related)?
 
 
-**Answer:** In the context of strings, the N+1 problem refers to allocating memory as `strlen(s) + 1` to account for the null terminator. Many buffer overflows occur precisely because the +1 is forgotten. `strncpy` also has a related issue — it does not null-terminate if the source length >= the destination size, which is effectively an N+1 failure in reverse.
+**Answer:** In the context of strings, the N+1 problem refers to allocating memory as `strlen(s) + 1` to account for the null terminator. Many buffer overflows occur precisely because the +1 is forgotten. `strncpy` also has a related issue â€” it does not null-terminate if the source length >= the destination size, which is effectively an N+1 failure in reverse.
 
 ### Q4: How would you implement `strlen` without using library functions?
 
@@ -2641,17 +2641,17 @@ size_t my_strlen_fast(const char *s) {
 ### Q5: What happens if you pass NULL to `strlen`?
 
 
-**Answer:** Undefined behavior — typically a segmentation fault. C library functions generally do not check for NULL pointers for performance reasons. Always check for NULL before calling string functions on pointer arguments that may be invalid.
+**Answer:** Undefined behavior â€” typically a segmentation fault. C library functions generally do not check for NULL pointers for performance reasons. Always check for NULL before calling string functions on pointer arguments that may be invalid.
 
 ### Q6: How does `strtok` work internally? What are its limitations?
 
 
-**Answer:** `strtok` maintains an internal static pointer to track the current position in the string across multiple calls. The first call receives the string to tokenize; subsequent calls pass NULL to continue. It modifies the original string by replacing delimiters with `'\0'`. Limitations: (1) Not reentrant — can't interleave tokenization of two strings. (2) Not thread-safe. (3) Modifies the input string. (4) Skips empty tokens. Use `strtok_r` (POSIX) for reentrancy.
+**Answer:** `strtok` maintains an internal static pointer to track the current position in the string across multiple calls. The first call receives the string to tokenize; subsequent calls pass NULL to continue. It modifies the original string by replacing delimiters with `'\0'`. Limitations: (1) Not reentrant â€” can't interleave tokenization of two strings. (2) Not thread-safe. (3) Modifies the input string. (4) Skips empty tokens. Use `strtok_r` (POSIX) for reentrancy.
 
 ### Q7: What is the difference between `strcmp` and `strncmp`?
 
 
-**Answer:** `strcmp` compares until a difference or null terminator. `strncmp` adds a maximum character count — it will stop after `n` characters even if neither string has ended. `strncmp("abcde", "abc", 3)` returns 0 (equal in the first 3 chars), while `strcmp("abcde", "abc")` returns a positive value ('d' > '\0').
+**Answer:** `strcmp` compares until a difference or null terminator. `strncmp` adds a maximum character count â€” it will stop after `n` characters even if neither string has ended. `strncmp("abcde", "abc", 3)` returns 0 (equal in the first 3 chars), while `strcmp("abcde", "abc")` returns a positive value ('d' > '\0').
 
 ### Q8: Why would `snprintf(dest, n, "%s", src)` be preferred over `strcpy`?
 
@@ -2666,26 +2666,26 @@ size_t my_strlen_fast(const char *s) {
 ### Q10: How does `sscanf("42", "%d", &x)` differ from `atoi("42")`?
 
 
-**Answer:** `sscanf` returns the number of successful assignments (1 on success), allowing partial error detection. `atoi` returns the integer value (0 on error — ambiguous). `sscanf` can also parse multiple fields simultaneously. However, `sscanf` with `%d` gives no overflow protection (undefined behavior on overflow just like `atoi`). For full error detection, use `strtol`.
+**Answer:** `sscanf` returns the number of successful assignments (1 on success), allowing partial error detection. `atoi` returns the integer value (0 on error â€” ambiguous). `sscanf` can also parse multiple fields simultaneously. However, `sscanf` with `%d` gives no overflow protection (undefined behavior on overflow just like `atoi`). For full error detection, use `strtol`.
 
 ### Q11: What is the difference between `char a[10] = "hello"` and `char a[10]; a = "hello"`?
 
 
-**Answer:** The first initializes the array with a copy of "hello". The second is a **compile error** — array names are not modifiable lvalues. You can't assign to an array after declaration. Use `strcpy` or `snprintf` to copy string content into an existing array.
+**Answer:** The first initializes the array with a copy of "hello". The second is a **compile error** â€” array names are not modifiable lvalues. You can't assign to an array after declaration. Use `strcpy` or `snprintf` to copy string content into an existing array.
 
 ### Q12: Can you use `strlen` to determine if a string was truncated after `strncpy`?
 
 
-**Answer:** Partially, but it's unreliable. If `strncpy(dst, src, n)` produces a string where `strlen(dst) == n`, it means the source was at least `n` characters long — but since `strncpy` only null-terminates when `strlen(src) < n`, the buffer may lack null termination precisely when the string is at maximum length. This is why `strncpy` is considered dangerous. The `strlcpy` function (BSD, not standard C) addresses this by always null-terminating.
+**Answer:** Partially, but it's unreliable. If `strncpy(dst, src, n)` produces a string where `strlen(dst) == n`, it means the source was at least `n` characters long â€” but since `strncpy` only null-terminates when `strlen(src) < n`, the buffer may lack null termination precisely when the string is at maximum length. This is why `strncpy` is considered dangerous. The `strlcpy` function (BSD, not standard C) addresses this by always null-terminating.
 
 ### Q13: How do you safely concatenate strings in C?
 
 
 ```c
-/* BAD — buffer overflow risk */
+/* BAD â€” buffer overflow risk */
 strcat(dest, src);     /* may overflow dest */
 
-/* GOOD — using snprintf */
+/* GOOD â€” using snprintf */
 snprintf(dest, dest_size, "%s%s", dest, src);
 /* OR */
 size_t len = strlen(dest);
@@ -2695,7 +2695,7 @@ snprintf(dest + len, dest_size - len, "%s", src);
 ### Q14: What does `sizeof("hello")` evaluate to?
 
 
-**Answer:** 6 — the array size including the null terminator. Unlike `strlen("hello")` which returns 5, `sizeof` on a string literal returns the total number of bytes including the terminating `'\0'`.
+**Answer:** 6 â€” the array size including the null terminator. Unlike `strlen("hello")` which returns 5, `sizeof` on a string literal returns the total number of bytes including the terminating `'\0'`.
 
 ### Q15: Implement a function that reverses a string in place.
 
@@ -3023,33 +3023,33 @@ CSV field trimmed: "John Doe"
 ### Summary
 
 
-1. **Strings in C are null-terminated char arrays.** The `'\0'` terminator marks the end — every string function relies on it. Forgetting it causes buffer overflow and security vulnerabilities.
+1. **Strings in C are null-terminated char arrays.** The `'\0'` terminator marks the end â€” every string function relies on it. Forgetting it causes buffer overflow and security vulnerabilities.
 
 2. **String I/O:** Use `fgets` (not `gets`), use `printf` with `%s` for output, use `snprintf` with explicit buffer size for formatting.
 
 3. **Core string functions (strlen, strcpy, strcmp, strcat):**
-   - `strlen(s)` — O(n) count of characters before `'\0'`. Use `sizeof` only for actual array size.
-   - `strcpy(d, s)` — copies until null. **Never use without size checking.** Prefer `snprintf`.
-   - `strncpy(d, s, n)` — partially safe but does **not** guarantee null-termination. Dangerous.
-   - `strcmp(a, b)` — returns &lt;0, 0, &gt;0. `strncmp` adds length limit.
-   - `strcat(d, s)` — appends. **Never use** — no bounds checking. Use `snprintf`.
+   - `strlen(s)` â€” O(n) count of characters before `'\0'`. Use `sizeof` only for actual array size.
+   - `strcpy(d, s)` â€” copies until null. **Never use without size checking.** Prefer `snprintf`.
+   - `strncpy(d, s, n)` â€” partially safe but does **not** guarantee null-termination. Dangerous.
+   - `strcmp(a, b)` â€” returns &lt;0, 0, &gt;0. `strncmp` adds length limit.
+   - `strcat(d, s)` â€” appends. **Never use** â€” no bounds checking. Use `snprintf`.
 
 4. **String search functions:**
-   - `strchr(s, c)` — find first occurrence of char.
-   - `strrchr(s, c)` — find last occurrence of char (must scan entire string).
-   - `strstr(h, n)` — find first occurrence of substring.
+   - `strchr(s, c)` â€” find first occurrence of char.
+   - `strrchr(s, c)` â€” find last occurrence of char (must scan entire string).
+   - `strstr(h, n)` â€” find first occurrence of substring.
 
 5. **String splitting:** `strtok` is powerful but modifies the input and is not reentrant. Use `strtok_r` (POSIX) for threaded environments.
 
 6. **String formatting and parsing:**
-   - `snprintf(buf, n, fmt, ...)` — **safe format-to-string.** Always use.
-   - `sprintf(buf, fmt, ...)` — **not safe.** Always use `snprintf` instead.
-   - `sscanf(str, fmt, ...)` — parse string by format.
-   - `strtol(str, &endptr, base)` — safe number conversion with error detection. Prefer over `atoi`.
+   - `snprintf(buf, n, fmt, ...)` â€” **safe format-to-string.** Always use.
+   - `sprintf(buf, fmt, ...)` â€” **not safe.** Always use `snprintf` instead.
+   - `sscanf(str, fmt, ...)` â€” parse string by format.
+   - `strtol(str, &endptr, base)` â€” safe number conversion with error detection. Prefer over `atoi`.
 
 7. **Memory management:** Every `malloc`/`strdup` must have a corresponding `free`. Missing the +1 for the null terminator in allocations is the #1 string bug.
 
-8. **Array of strings:** Three approaches — pointer array (flexible, may point to read-only), 2D char array (fixed size, all modifiable), dynamic array (fully flexible, requires manual memory management).
+8. **Array of strings:** Three approaches â€” pointer array (flexible, may point to read-only), 2D char array (fixed size, all modifiable), dynamic array (fully flexible, requires manual memory management).
 
 9. **Constant correctness:** If a function does not modify a string, declare the parameter as `const char *`. This allows passing literals and catches modification bugs at compile time.
 
@@ -3058,8 +3058,8 @@ CSV field trimmed: "John Doe"
 
 There is a set of String Safety Rules that every C programmer should memorize:
 
-1. **Always** allocate `strlen(s) + 1` bytes — never forget the +1.
-2. **Always** use `snprintf` over `sprintf` — there is no excuse for `sprintf`.
+1. **Always** allocate `strlen(s) + 1` bytes â€” never forget the +1.
+2. **Always** use `snprintf` over `sprintf` â€” there is no excuse for `sprintf`.
 3. **Never** use `gets`, `strcpy` (without size check), or `strcat`.
 4. **Never** use `strncpy` for strings (it was designed for Unix directory entries, not strings). Use `snprintf` or `strlcpy`.
 5. **Check** `strtol` return value via `endptr` and `errno`.
@@ -3067,18 +3067,18 @@ There is a set of String Safety Rules that every C programmer should memorize:
 7. **Use** `strtok_r` instead of `strtok` in multithreaded code.
 8. **Declare** string parameters as `const char *` when the function does not modify them.
 9. **Initialize** all char arrays: `char buf[100] = {0};` or use `= ""`.
-10. **Never** compare string content with `==` — that compares pointer addresses, not content. Use `strcmp`.
+10. **Never** compare string content with `==` â€” that compares pointer addresses, not content. Use `strcmp`.
 
 ### Exercises
 
 **Exercise 1: Reverse Words**
-Write a function that reverses the order of words in a sentence without reversing the individual words. "hello world" → "world hello".
+Write a function that reverses the order of words in a sentence without reversing the individual words. "hello world" â†’ "world hello".
 
 **Exercise 2: Character Frequency**
 Write a function that counts the frequency of each character in a string and prints only those with non-zero counts.
 
 **Exercise 3: String Compression**
-Implement basic run-length encoding: "aaabbcccc" → "a3b2c4". If the compressed string is not shorter, return the original.
+Implement basic run-length encoding: "aaabbcccc" â†’ "a3b2c4". If the compressed string is not shorter, return the original.
 
 **Exercise 4: Palindrome Checker**
 Write a function that checks if a string is a palindrome, ignoring case and non-alphanumeric characters. "A man, a plan, a canal: Panama" should return true.
@@ -3096,13 +3096,13 @@ Implement URL decoding: replace `%20` with space, `%3A` with `:`, etc. The input
 Write a thread-safe tokenizer that does not modify the input string. It should accept a string, a delimiter set, and a save pointer, and return the next token as a dynamically allocated copy.
 
 **Exercise 9: Wildcard Match**
-Implement wildcard pattern matching where `?` matches any single character and `*` matches any sequence of characters. `is_match("hello", "h*lo")` → true.
+Implement wildcard pattern matching where `?` matches any single character and `*` matches any sequence of characters. `is_match("hello", "h*lo")` â†’ true.
 
 **Exercise 10: Log Parser**
 Write a function that parses a log file line in the format `[2026-06-24 10:30:00] [INFO] [Main] User logged in` and extracts the timestamp, log level, module, and message into a struct.
 
 ---
 
-> **Chapter 7: Strings in C** — End of chapter.
+> **Chapter 7: Strings in C** â€” End of chapter.
 >
-> This chapter covered the full depth of C string handling: character arrays, string literals, I/O functions, the complete `<string.h>` function family, safe formatting with `snprintf`, number conversion with error detection, arrays of strings, interview questions, and real-world applications including HTTP parsing, URL parsing, CSV processing, and file path manipulation. The unifying theme: **the null terminator is the foundation — forget it at your peril.**
+> This chapter covered the full depth of C string handling: character arrays, string literals, I/O functions, the complete `<string.h>` function family, safe formatting with `snprintf`, number conversion with error detection, arrays of strings, interview questions, and real-world applications including HTTP parsing, URL parsing, CSV processing, and file path manipulation. The unifying theme: **the null terminator is the foundation â€” forget it at your peril.**

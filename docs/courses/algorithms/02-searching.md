@@ -1,6 +1,6 @@
-# Chapter 2: Searching
+﻿# Chapter 2: Searching
 
-> **Prerequisites:** [Chapter 1: Fundamentals of Algorithm Analysis](./01-analysis.md) — Asymptotic notation and recurrence analysis | **Next:** [Chapter 3: Comparison-Based Sorting](./03-sorting-nlogn.md) — From finding elements to ordering them
+> **Prerequisites:** [Chapter 1: Fundamentals of Algorithm Analysis](./01-analysis.md) â€” Asymptotic notation and recurrence analysis | **Next:** [Chapter 3: Comparison-Based Sorting](./03-sorting-nlogn.md) â€” From finding elements to ordering them
 
 ## Learning Objectives
 
@@ -9,16 +9,16 @@ By the end of this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/algorithms/02-searching/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/algorithms/02-searching/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/algorithms/02-searching/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/algorithms/02-searching/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/algorithms/02-searching/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/algorithms/02-searching/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/algorithms/02-searching/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/algorithms/02-searching/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/algorithms/02-searching/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/algorithms/02-searching/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/algorithms/02-searching/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/algorithms/02-searching/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -34,7 +34,7 @@ By the end of this chapter, students will be able to:
 
 ## Why Searching Matters
 
-**Real-World Analogy:** Imagine looking for a contact in your phone. If your contacts are listed randomly, you scan from top to bottom (linear search). If they're alphabetical, you jump to the middle letter and narrow down (binary search). If you know "Smith" is near the end, you skip directly toward the S section (interpolation search). Each approach has a time and place — and the wrong choice can cost you seconds, or in computing, millions of operations.
+**Real-World Analogy:** Imagine looking for a contact in your phone. If your contacts are listed randomly, you scan from top to bottom (linear search). If they're alphabetical, you jump to the middle letter and narrow down (binary search). If you know "Smith" is near the end, you skip directly toward the S section (interpolation search). Each approach has a time and place â€” and the wrong choice can cost you seconds, or in computing, millions of operations.
 
 ---
 
@@ -43,10 +43,10 @@ By the end of this chapter, students will be able to:
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
 | Linear Search | Scan sequentially until found | Only option for unsorted data; optimal for small arrays |
-| Binary Search | Repeatedly halve the search range | The gold standard for sorted arrays — O(log n) |
+| Binary Search | Repeatedly halve the search range | The gold standard for sorted arrays â€” O(log n) |
 | Interpolation Search | Probe position using linear interpolation | O(log log n) on uniform data, O(n) worst-case |
 | Exponential Search | Doubling bound + binary search | Best for unbounded/infinite arrays |
-| Ternary Search | Two midpoints, three partitions | More comparisons than binary — slower in practice |
+| Ternary Search | Two midpoints, three partitions | More comparisons than binary â€” slower in practice |
 
 ### Chapter Roadmap
 
@@ -70,7 +70,7 @@ flowchart LR
 
 ## 2.1 Linear Search
 
-**Real-World Analogy:** Looking for a specific book on an unsorted shelf — you check each book one by one from left to right until you find it.
+**Real-World Analogy:** Looking for a specific book on an unsorted shelf â€” you check each book one by one from left to right until you find it.
 
 ### Definition
 
@@ -155,9 +155,9 @@ public static int linearSearch(int[] arr, int key) {
 
 | Advantages | Disadvantages |
 |-----------|--------------|
-| Works on unsorted data | Slow for large arrays — O(n) |
+| Works on unsorted data | Slow for large arrays â€” O(n) |
 | No preprocessing needed | Every element may need checking |
-| Simple to implement | Impractical for n > 10⁶ |
+| Simple to implement | Impractical for n > 10â¶ |
 | Optimal for small n | Ignores ordering information |
 
 ### Edge Cases
@@ -167,9 +167,9 @@ public static int linearSearch(int[] arr, int key) {
 - **Duplicate elements:** Returns the first occurrence (leftmost).
 - **Single element:** One comparison, O(1).
 
-> **Pro Tip:** Never sort an array purely to use binary search for a single query — sorting costs O(n log n) which is worse than linear search's O(n). Sort only if you have multiple queries.
+> **Pro Tip:** Never sort an array purely to use binary search for a single query â€” sorting costs O(n log n) which is worse than linear search's O(n). Sort only if you have multiple queries.
 
-> **Remember:** Linear search is optimal for unsorted arrays — there's no faster algorithm without preprocessing.
+> **Remember:** Linear search is optimal for unsorted arrays â€” there's no faster algorithm without preprocessing.
 
 ---
 
@@ -235,13 +235,13 @@ By the master theorem (case 2): T(n) = O(log n)
 | **Worst** | O(log n) | Target at leaf level or absent |
 | **Average** | O(log n) | |
 
-**Why log n?** Each step discards half the remaining elements. From n to n/2 to n/4 to ... to 1 takes log₂(n) steps. For n = 1,000,000, that's at most 20 comparisons vs 1,000,000 for linear search.
+**Why log n?** Each step discards half the remaining elements. From n to n/2 to n/4 to ... to 1 takes logâ‚‚(n) steps. For n = 1,000,000, that's at most 20 comparisons vs 1,000,000 for linear search.
 
 ### Implementations
 
 
 ```cpp
-// C++ — Iterative
+// C++ â€” Iterative
 int binarySearch(const vector<int>& arr, int key) {
     int low = 0, high = arr.size() - 1;
     while (low <= high) {
@@ -257,7 +257,7 @@ int binarySearch(const vector<int>& arr, int key) {
 ```
 
 ```python
-# Python — Iterative
+# Python â€” Iterative
 def binary_search(arr, key):
     low, high = 0, len(arr) - 1
     while low <= high:
@@ -272,7 +272,7 @@ def binary_search(arr, key):
 ```
 
 ```python
-# Python — Recursive
+# Python â€” Recursive
 def binary_search_recursive(arr, low, high, key):
     if low > high:
         return -1
@@ -286,7 +286,7 @@ def binary_search_recursive(arr, low, high, key):
 ```
 
 ```java
-// Java — Iterative
+// Java â€” Iterative
 public static int binarySearch(int[] arr, int key) {
     int low = 0, high = arr.length - 1;
     while (low <= high) {
@@ -299,14 +299,14 @@ public static int binarySearch(int[] arr, int key) {
 }
 ```
 
-> **Pro Tip:** Always use `mid = low + (high - low) / 2` instead of `mid = (low + high) / 2`. The latter can overflow when low + high exceeds Integer.MAX_VALUE — a classic bug in real systems.
+> **Pro Tip:** Always use `mid = low + (high - low) / 2` instead of `mid = (low + high) / 2`. The latter can overflow when low + high exceeds Integer.MAX_VALUE â€” a classic bug in real systems.
 
 ### Advantages & Disadvantages
 
 
 | Advantages | Disadvantages |
 |-----------|--------------|
-| Blazing fast — O(log n) | Requires sorted input |
+| Blazing fast â€” O(log n) | Requires sorted input |
 | Simple, elegant recursion | Slow for frequent insert/delete |
 | Low constant factors | Poor cache locality vs linear (linked lists) |
 | Deterministic performance | O(n) sorting preprocessing needed |
@@ -324,16 +324,16 @@ public static int binarySearch(int[] arr, int key) {
 
 1. **Lower bound (first >= key):** Keep searching left when A[mid] == key.
 2. **Upper bound (first > key):** Keep searching right when A[mid] == key.
-3. **Binary search on answer:** Used when the search space is a range of values, not array indices — e.g., find square root, aggressive cows problem.
+3. **Binary search on answer:** Used when the search space is a range of values, not array indices â€” e.g., find square root, aggressive cows problem.
 4. **Search in rotated sorted array:** Modified binary search that checks which half is sorted.
 
 ### Applications
 
 
 - Database indexing (B-tree search)
-- Debugging — git bisect uses binary search to find the first broken commit
+- Debugging â€” git bisect uses binary search to find the first broken commit
 - Dictionary / symbol table lookup
-- Numerical methods — root finding (bisection method)
+- Numerical methods â€” root finding (bisection method)
 
 > **Remember:** Binary search is just a divide-and-conquer algorithm where one half is always discarded. If your problem can be modeled as "find the point where a condition flips from false to true," binary search on the answer probably works.
 
@@ -341,7 +341,7 @@ public static int binarySearch(int[] arr, int key) {
 
 ## 2.3 Interpolation Search
 
-**Real-World Analogy:** Looking up a name in a phone book. If you're looking for "Smith," you don't open to the middle — you open closer to the end because you know S is in the latter part of the alphabet.
+**Real-World Analogy:** Looking up a name in a phone book. If you're looking for "Smith," you don't open to the middle â€” you open closer to the end because you know S is in the latter part of the alphabet.
 
 ### Definition
 
@@ -376,16 +376,16 @@ Input: `A = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]`, `key = 85`
 pos = 0 + ((85 - 10) * (9 - 0)) / (100 - 10)
     = 0 + (75 * 9) / 90
     = 0 + 675 / 90
-    = 7.5 → 7
+    = 7.5 â†’ 7
 ```
 
 | Step | low | high | pos | A[pos] | Action |
 |------|-----|------|-----|--------|--------|
 | 1 | 0 | 9 | 7 | 80 | 85 > 80, low = 8 |
 | 2 | 8 | 9 | 8 | 90 | 85 &lt; 90, high = 7 |
-| 3 | 8 | 7 | — | — | low > high, **Return -1** |
+| 3 | 8 | 7 | â€” | â€” | low > high, **Return -1** |
 
-Key 85 not found — algorithm correctly determined it's between 80 and 90 (would be index 8.5, which rounds to either side showing absence).
+Key 85 not found â€” algorithm correctly determined it's between 80 and 90 (would be index 8.5, which rounds to either side showing absence).
 
 ### Complexity Analysis
 
@@ -396,7 +396,7 @@ Key 85 not found — algorithm correctly determined it's between 80 and 90 (woul
 | **Average** | O(log log n) | Uniformly distributed data |
 | **Worst** | O(n) | Skewed distribution (exponential, power law) |
 
-**Why O(log log n)?** On uniform data, the probe position converges to the target exponentially fast — each iteration roughly squares the precision of the estimate.
+**Why O(log log n)?** On uniform data, the probe position converges to the target exponentially fast â€” each iteration roughly squares the precision of the estimate.
 
 ### Implementations
 
@@ -492,7 +492,7 @@ Total comparisons for doubling + binary search: 4 + 2 = 6. Binary search alone w
 | **Worst** | O(log n) | Key at last position |
 | **Average** | O(log i) where i is target position |
 
-**Why O(log i)?** The doubling phase takes log₂(i) steps to reach position i, then binary search takes O(log i) on the range [i/2, i]. Combined: 2 log₂(i) = O(log i).
+**Why O(log i)?** The doubling phase takes logâ‚‚(i) steps to reach position i, then binary search takes O(log i) on the range [i/2, i]. Combined: 2 logâ‚‚(i) = O(log i).
 
 ### Implementations
 
@@ -541,16 +541,16 @@ def exponential_search(arr, key):
 ### Edge Cases
 
 
-- **Target at index 0:** Caught immediately — O(1).
+- **Target at index 0:** Caught immediately â€” O(1).
 - **Target absent:** Binary search will determine this in O(log bound).
-- **Infinite/unbounded array:** Exponential search is the natural solution — no need to know the size.
+- **Infinite/unbounded array:** Exponential search is the natural solution â€” no need to know the size.
 
 ### Applications
 
 
-- **Timsort merge** — Galloping mode uses exponential search to find merge positions efficiently.
-- **Cursor-based pagination** — Finding a page by ID in an API response.
-- **Streaming data** — Searching in data streams where total size is unknown.
+- **Timsort merge** â€” Galloping mode uses exponential search to find merge positions efficiently.
+- **Cursor-based pagination** â€” Finding a page by ID in an API response.
+- **Streaming data** â€” Searching in data streams where total size is unknown.
 
 > **Pro Tip:** Exponential search shines in exactly two scenarios: unbounded arrays and when the target is likely near the start. For general sorted arrays, binary search is simpler and equally fast asymptotically.
 
@@ -558,7 +558,7 @@ def exponential_search(arr, key):
 
 ## 2.5 Ternary Search
 
-**Real-World Analogy:** Searching a sorted deck of cards by splitting into three piles instead of two — sounds thorough but requires two comparisons per step instead of one.
+**Real-World Analogy:** Searching a sorted deck of cards by splitting into three piles instead of two â€” sounds thorough but requires two comparisons per step instead of one.
 
 ### Definition
 
@@ -578,14 +578,14 @@ Ternary search divides the array into three equal parts using two midpoints.
 ### Complexity Analysis
 
 
-**Recurrence:** T(n) = T(n/3) + O(1) → O(log₃ n)
+**Recurrence:** T(n) = T(n/3) + O(1) â†’ O(logâ‚ƒ n)
 
 But each step does **2 comparisons** vs binary search's **1 comparison**.
 
-| Algorithm | Comparisons per step | Steps for n = 10⁶ |
+| Algorithm | Comparisons per step | Steps for n = 10â¶ |
 |-----------|---------------------|-------------------|
-| Binary search | 1 | log₂(10⁶) ≈ 20 |
-| Ternary search | 2 | log₃(10⁶) ≈ 12 × 2 = 24 |
+| Binary search | 1 | logâ‚‚(10â¶) â‰ˆ 20 |
+| Ternary search | 2 | logâ‚ƒ(10â¶) â‰ˆ 12 Ã— 2 = 24 |
 
 Ternary search does **more total comparisons** despite fewer steps.
 
@@ -617,7 +617,7 @@ int ternarySearch(const vector<int>& arr, int low, int high, int key) {
 | Useful for unimodal function optimization | More comparisons per step than binary search |
 | Fewer recursion depth steps | Never faster than binary in practice |
 
-> **Remember:** Ternary search does 2 comparisons per step. Despite log₃ n &lt; log₂ n, the constant factor (2× comparisons) makes it strictly slower than binary search for searching in arrays. Its real use is finding the maximum of a unimodal function where you can't directly compare with a target value.
+> **Remember:** Ternary search does 2 comparisons per step. Despite logâ‚ƒ n &lt; logâ‚‚ n, the constant factor (2Ã— comparisons) makes it strictly slower than binary search for searching in arrays. Its real use is finding the maximum of a unimodal function where you can't directly compare with a target value.
 
 ---
 
@@ -629,20 +629,20 @@ int ternarySearch(const vector<int>& arr, int low, int high, int key) {
 | Algorithm | Worst-case comparisons | Formula |
 |-----------|----------------------|---------|
 | Linear search | 1,000,000 | n |
-| Binary search | 20 | ⌈log₂(n+1)⌉ |
+| Binary search | 20 | âŒˆlogâ‚‚(n+1)âŒ‰ |
 | Interpolation search | 1,000,000 | n (worst case) |
-| Exponential search | ~40 | 2 log₂ i |
-| Ternary search | 38 | 2 log₃ n |
+| Exponential search | ~40 | 2 logâ‚‚ i |
+| Ternary search | 38 | 2 logâ‚ƒ n |
 
 ### When to Choose What
 
 
 ```
-Unsorted?              → Linear Search
-Sorted, general:       → Binary Search
-Sorted, uniform data:  → Interpolation Search  
-Unbounded array:       → Exponential Search
-Finding max of unimodal f(x): → Ternary Search
+Unsorted?              â†’ Linear Search
+Sorted, general:       â†’ Binary Search
+Sorted, uniform data:  â†’ Interpolation Search  
+Unbounded array:       â†’ Exponential Search
+Finding max of unimodal f(x): â†’ Ternary Search
 ```
 
 ---
@@ -652,13 +652,13 @@ Finding max of unimodal f(x): → Ternary Search
 ### Common Questions
 
 
-1. **Search in a rotated sorted array** — Modified binary search. Find the pivot by comparing A[mid] with A[low], then determine which half is sorted and search accordingly.
+1. **Search in a rotated sorted array** â€” Modified binary search. Find the pivot by comparing A[mid] with A[low], then determine which half is sorted and search accordingly.
 
-2. **Find first/last occurrence of a target** — Standard binary search variant. For first occurrence, don't stop when A[mid] == key; continue searching left (high = mid - 1). For last, continue right (low = mid + 1).
+2. **Find first/last occurrence of a target** â€” Standard binary search variant. For first occurrence, don't stop when A[mid] == key; continue searching left (high = mid - 1). For last, continue right (low = mid + 1).
 
-3. **Peak element in a mountain array** — Binary search on the condition A[mid] &lt; A[mid + 1]. If true, peak is on the right; otherwise, peak is on the left.
+3. **Peak element in a mountain array** â€” Binary search on the condition A[mid] &lt; A[mid + 1]. If true, peak is on the right; otherwise, peak is on the left.
 
-4. **Count occurrences in sorted array** — Find first and last occurrence with binary search, then last - first + 1.
+4. **Count occurrences in sorted array** â€” Find first and last occurrence with binary search, then last - first + 1.
 
 ### Common Pitfalls
 
@@ -687,16 +687,16 @@ Finding max of unimodal f(x): → Ternary Search
 
 ## Summary
 
-- **Linear search** — Simple, works on anything, O(n). Use for unsorted data or tiny arrays.
-- **Binary search** — The workhorse. O(log n) on sorted arrays. Know it, love it, handle its edge cases.
-- **Interpolation search** — Faster on uniform data (O(log log n)), but risky on skewed distributions.
-- **Exponential search** — Best for unbounded arrays and targets near the start.
-- **Ternary search** — Interesting theoretically, but binary search beats it in practice.
+- **Linear search** â€” Simple, works on anything, O(n). Use for unsorted data or tiny arrays.
+- **Binary search** â€” The workhorse. O(log n) on sorted arrays. Know it, love it, handle its edge cases.
+- **Interpolation search** â€” Faster on uniform data (O(log log n)), but risky on skewed distributions.
+- **Exponential search** â€” Best for unbounded arrays and targets near the start.
+- **Ternary search** â€” Interesting theoretically, but binary search beats it in practice.
 
 ### Key Takeaway
 
 
-Binary search is the most important algorithm in this chapter — master its standard form, its first/last-occurrence variants, and its "binary search on answer" pattern. These appear in nearly every technical interview and real-world system.
+Binary search is the most important algorithm in this chapter â€” master its standard form, its first/last-occurrence variants, and its "binary search on answer" pattern. These appear in nearly every technical interview and real-world system.
 
 ---
 
@@ -711,7 +711,7 @@ Binary search is the most important algorithm in this chapter — master its sta
 
 <details>
 <summary>Answer&lt;/summary&gt;
-**C)** T(n) = T(n/2) + O(1) — each step halves the search space with constant work.
+**C)** T(n) = T(n/2) + O(1) â€” each step halves the search space with constant work.
 </details>
 
 **Q2.** Which search algorithm is best for an unbounded (infinite) sorted array?
@@ -723,7 +723,7 @@ Binary search is the most important algorithm in this chapter — master its sta
 
 <details>
 <summary>Answer&lt;/summary&gt;
-**C)** Exponential search — it doesn't need to know the array length and probes outward in exponentially growing steps.
+**C)** Exponential search â€” it doesn't need to know the array length and probes outward in exponentially growing steps.
 </details>
 
 **Q3.** When does interpolation search degrade to O(n)?
@@ -747,7 +747,7 @@ Binary search is the most important algorithm in this chapter — master its sta
 
 <details>
 <summary>Answer&lt;/summary&gt;
-**B)** Ternary search does 2 comparisons per step while binary search does 1. The total comparisons are 2·log₃(n) > log₂(n) for all practical n.
+**B)** Ternary search does 2 comparisons per step while binary search does 1. The total comparisons are 2Â·logâ‚ƒ(n) > logâ‚‚(n) for all practical n.
 </details>
 
 **Q5.** What is the advantage of `mid = low + (high - low) / 2` over `mid = (low + high) / 2`?
@@ -777,10 +777,10 @@ Binary search is the most important algorithm in this chapter — master its sta
 
 5. Implement binary search with recursion in C++. Compare its performance with the iterative version.
 6. An array of 100 elements is uniformly distributed. Estimate the average number of comparisons for binary search and interpolation search.
-7. Implement a function that performs ternary search and empirically compare it to binary search on arrays of size 10³, 10⁵, 10⁷.
+7. Implement a function that performs ternary search and empirically compare it to binary search on arrays of size 10Â³, 10âµ, 10â·.
 
 ### Challenge Problems
 
 8. **Find in rotated sorted array:** Design a search algorithm for a sorted, rotated array (e.g., [13, 14, 15, 1, 2, 3]). The algorithm should run in O(log n) time.
 9. **Median of two sorted arrays:** Given two sorted arrays of size m and n, find the median in O(log(min(m, n))) time.
-10. **Search in a nearly sorted array:** An array where each element is at most k positions away from its sorted position — search for a target efficiently.
+10. **Search in a nearly sorted array:** An array where each element is at most k positions away from its sorted position â€” search for a target efficiently.

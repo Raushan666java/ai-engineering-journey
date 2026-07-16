@@ -1,4 +1,4 @@
-# Chapter 15: Shell Scripting
+﻿# Chapter 15: Shell Scripting
 
 **<< [The Linux Kernel](./14-linux-kernel.md)** | [**Next: Security**](./16-security.md) >>
 
@@ -16,16 +16,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/operating-systems/15-shell-scripting/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/operating-systems/15-shell-scripting/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/operating-systems/15-shell-scripting/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/operating-systems/15-shell-scripting/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/operating-systems/15-shell-scripting/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/operating-systems/15-shell-scripting/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/operating-systems/15-shell-scripting/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/operating-systems/15-shell-scripting/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/operating-systems/15-shell-scripting/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/operating-systems/15-shell-scripting/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/operating-systems/15-shell-scripting/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/operating-systems/15-shell-scripting/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -83,13 +83,13 @@ A **shell** is a command-line interpreter that provides an interface between the
 
 ### The Shebang (#!)
 
-Every script starts with a **shebang** — a magic byte sequence that tells the kernel which interpreter to execute the file with:
+Every script starts with a **shebang** â€” a magic byte sequence that tells the kernel which interpreter to execute the file with:
 
 ```bash
 #!/bin/bash
 ```
 
-**Numbered Steps — Script Execution**:
+**Numbered Steps â€” Script Execution**:
 1. Kernel reads the first line of the script file
 2. Detects `#!` magic bytes (0x23 0x21)
 3. Extracts the interpreter path (`/bin/bash`)
@@ -108,15 +108,15 @@ function execute_script(path):
         fork_and_exec("/bin/sh", path)
 ```
 
-**Dry Run — Script Execution**:
+**Dry Run â€” Script Execution**:
 ```
 Step | Component          | State / Action
 1    | Shebang detected   | #!/bin/bash found at line 1
 2    | Kernel reads       | Interpreter = /bin/bash
 3    | Fork + Exec        | PID=1234 created, bash loaded
 4    | Script loaded      | 50 commands read into memory
-5    | Command 1 runs     | echo "Hello" → stdout
-6    | Command 2 runs     | ls -la → stdout
+5    | Command 1 runs     | echo "Hello" â†’ stdout
+6    | Command 2 runs     | ls -la â†’ stdout
 7    | Exit               | exit code 0 returned to parent
 ```
 
@@ -125,7 +125,7 @@ Step | Component          | State / Action
 | Shell | Path | Features |
 |-------|------|----------|
 | Bourne (sh) | `/bin/sh` | Original Unix shell, minimal features, POSIX-compliant |
-| Bash | `/bin/bash` | Bourne Again SHell — de facto standard, advanced features |
+| Bash | `/bin/bash` | Bourne Again SHell â€” de facto standard, advanced features |
 | Zsh | `/bin/zsh` | Extended Bash, powerful tab-completion, theming, oh-my-zsh |
 | Fish | `/usr/bin/fish` | User-friendly, auto-suggestions, web-based config, Sane defaults |
 | Dash | `/bin/dash` | Lightweight, fast, Debian /bin/sh default |
@@ -150,9 +150,9 @@ Step | Component          | State / Action
 - Use `#!/bin/sh` for maximum portability (POSIX-only features)
 - Use `#!/bin/bash` for scripts needing arrays, [[ ]], or process substitution
 - Use Zsh for interactive daily driving; Fish for beginners
-- Never use Zsh/Fish for shared scripts — they may not be installed
+- Never use Zsh/Fish for shared scripts â€” they may not be installed
 
-### Shell Basics — Complexity & Edge Cases
+### Shell Basics â€” Complexity & Edge Cases
 
 | Aspect | Analysis |
 |--------|----------|
@@ -161,7 +161,7 @@ Step | Component          | State / Action
 | **Why O(n)?** | Each command is executed linearly; no recursion or nested iteration in basic execution |
 | **Edge: Shebang missing** | Falls back to `/bin/sh` or current shell; behavior may differ |
 | **Edge: No execute permission** | `chmod +x script.sh` required or invoke as `bash script.sh` |
-| **Edge: Carriage returns** | Windows line endings (`\r\n`) break shebang — use `dos2unix` |
+| **Edge: Carriage returns** | Windows line endings (`\r\n`) break shebang â€” use `dos2unix` |
 | **Edge: BOM marker** | UTF-8 BOM at file start corrupts shebang detection |
 
 **A&D Table**:
@@ -169,11 +169,11 @@ Step | Component          | State / Action
 | Advantage | Disadvantage |
 |-----------|-------------|
 | Ubiquitous on Unix systems | Weak data structures (no native hash maps) |
-| Glue language — ties tools together | Slow for CPU-intensive work |
+| Glue language â€” ties tools together | Slow for CPU-intensive work |
 | No compilation needed | Error-prone quoting rules |
 | Powerful one-liners | Debugging is primitive (set -x) |
 
-**Python Equivalent — Running a System Command**:
+**Python Equivalent â€” Running a System Command**:
 ```python
 import subprocess, sys
 
@@ -196,7 +196,7 @@ Variables store data for use throughout the script.
 
 **Real-World Analogy**: Variables are like labeled storage bins in a warehouse. You write a label (name) on the bin and put a value inside. You can retrieve the value by referring to the label, change what's inside, or pass the entire bin to another worker.
 
-**Numbered Steps — Variable Expansion**:
+**Numbered Steps â€” Variable Expansion**:
 1. Parser encounters `$name` or `${name}` in the command line
 2. Shell looks up `name` in the variable table (hash map)
 3. If found, replaces `$name` with its value (text substitution)
@@ -221,7 +221,7 @@ function assign_variable(name, value, shell_state):
     shell_state.variables[name] = value
 ```
 
-**Dry Run — Variable Assignment and Expansion**:
+**Dry Run â€” Variable Assignment and Expansion**:
 ```
 Step | Code                   | state["name"] | state["count"] | Output
 1    | name="Alice"          | "Alice"       | unset          |
@@ -298,15 +298,15 @@ echo "Last BG PID:  $!"       # 1235 (last background process PID)
 echo "Options flag: $-"       # hB (current shell option flags)
 ```
 
-### Variables — Complexity & A&D
+### Variables â€” Complexity & A&D
 
 | Aspect | Analysis |
 |--------|----------|
-| **Assignment** | O(1) — hash map insertion |
+| **Assignment** | O(1) â€” hash map insertion |
 | **Expansion** | O(v) where v = value length (string copy) |
-| **Command Substitution** | O(n + s) — fork + n commands + s output reading |
+| **Command Substitution** | O(n + s) â€” fork + n commands + s output reading |
 | **Why O(1) assignment?** | Shell uses hash table for variable storage; average O(1) lookup |
-| **Edge: Spaces in values** | `name=John Doe` sets `name=John` and tries to run `Doe` — QUOTE! |
+| **Edge: Spaces in values** | `name=John Doe` sets `name=John` and tries to run `Doe` â€” QUOTE! |
 | **Edge: Unset variable** | With `set -u`: fatal error. Without: expands to empty string |
 | **Edge: Export scope** | Exported vars go to child processes only; parent unaffected |
 | **Edge: Readonly override** | Attempting to modify readonly var kills script (cannot trap) |
@@ -387,9 +387,9 @@ echo $((a--))      # 12 (post-decrement)
 ((a -= 3))   # a = a - 3
 
 # Bitwise operators
-echo $((a & b))    # AND    → bitwise
-echo $((a | b))    # OR     → bitwise
-echo $((a ^ b))    # XOR    → bitwise
+echo $((a & b))    # AND    â†’ bitwise
+echo $((a | b))    # OR     â†’ bitwise
+echo $((a ^ b))    # XOR    â†’ bitwise
 echo $((a << 1))   # Left shift
 echo $((a >> 1))   # Right shift
 echo $((~a))       # Bitwise NOT
@@ -401,7 +401,7 @@ let count++
 
 **Real-World Analogy**: Arithmetic operators are like a calculator's button panel. Each button performs a specific mathematical transformation on the displayed value. The `$(( ))` syntax is like locking the calculator into "math mode" so the shell knows to interpret symbols as operations rather than literal text.
 
-**Dry Run — Arithmetic Evaluation**:
+**Dry Run â€” Arithmetic Evaluation**:
 ```
 Step | Expression      | a | b | Result | Note
 1    | a=10           | 10| ? |        | Assignment
@@ -439,7 +439,7 @@ Step | Expression      | a | b | Result | Note
 [ -z "$a" ]         # True if a is empty (zero length)
 [ -n "$a" ]         # True if a is non-empty
 
-# Integer comparison in (( )) — C-style
+# Integer comparison in (( )) â€” C-style
 (( a == b ))        # Equal
 (( a != b ))        # Not equal
 (( a < b ))         # Less than
@@ -447,7 +447,7 @@ Step | Expression      | a | b | Result | Note
 (( a > b ))         # Greater than
 (( a >= b ))        # Greater than or equal
 
-# String comparison in [[ ]] — pattern matching
+# String comparison in [[ ]] â€” pattern matching
 [[ "$a" == "$b" ]]   # Equal
 [[ "$a" != "$b" ]]   # Not equal
 [[ "$a" < "$b" ]]    # Lexicographic less than
@@ -476,15 +476,15 @@ Step | Expression      | a | b | Result | Note
 [ -f "$file" ] && echo "exists" || echo "missing"
 ```
 
-### Operators — Complexity & A&D
+### Operators â€” Complexity & A&D
 
 | Aspect | Analysis |
 |--------|----------|
-| **Arithmetic** | O(1) — integer ops are constant time on CPU |
-| **String Comparison** | O(min(n,m)) — character-by-character comparison |
+| **Arithmetic** | O(1) â€” integer ops are constant time on CPU |
+| **String Comparison** | O(min(n,m)) â€” character-by-character comparison |
 | **Regex Match (=~)** | O(n * p) worst case where p = pattern complexity |
-| **Edge: Floating point** | `$(( ))` truncates — use `bc -l` or `awk` |
-| **Edge: Octal confusion** | `08` is invalid octal — force base 10 with `10#08` |
+| **Edge: Floating point** | `$(( ))` truncates â€” use `bc -l` or `awk` |
+| **Edge: Octal confusion** | `08` is invalid octal â€” force base 10 with `10#08` |
 | **Edge: [[ vs [ speed]** | [[ is built-in (no fork); [ is external on some shells |
 
 ---
@@ -495,7 +495,7 @@ Step | Expression      | a | b | Result | Note
 
 **Real-World Analogy**: A conditional is like an airport baggage sorting system. Each bag (the value being tested) travels down a conveyor belt (the script). At each junction (if statement), a sensor checks a property of the bag (file exists? string equals?). Based on the sensor reading, the bag is diverted to a specific chute (then/elif/else branch).
 
-**Numbered Steps — if Statement Execution**:
+**Numbered Steps â€” if Statement Execution**:
 1. Shell evaluates the test command (`[ ... ]`, `[[ ... ]]`, or `(( ... ))`)
 2. If exit code is 0 (success/true), execute the `then` block
 3. If exit code is non-zero (failure/false), skip to next `elif` or `else`
@@ -516,7 +516,7 @@ function evaluate_if(conditions, shell_state):
         execute_block(else_block)
 ```
 
-**Dry Run — File Check Conditional**:
+**Dry Run â€” File Check Conditional**:
 ```
 Step | Code                          | $?  | file exists? | Action
 1    | if [ -f /etc/hosts ]         |     |              | Evaluate test
@@ -556,7 +556,7 @@ if [ -f "$file" ] && [ -r "$file" ]; then
     echo "File exists and is readable"
 fi
 
-# [[ ]] — extended test (Bash-only)
+# [[ ]] â€” extended test (Bash-only)
 if [[ "$name" == A* ]]; then
     echo "Name starts with A"
 fi
@@ -565,7 +565,7 @@ if [[ "$response" =~ ^[Yy](es)?$ ]]; then
     echo "User confirmed"
 fi
 
-# (( )) — arithmetic test
+# (( )) â€” arithmetic test
 if (( a > 10 )); then
     echo "a is greater than 10"
 fi
@@ -616,9 +616,9 @@ case "$1" in
 esac
 ```
 
-**Real-World Analogy**: A `case` statement is like a hotel room key card dispenser. You insert a card (the value), and depending on which floor number is encoded, it activates only that floor's button on the elevator. No if-else chain needed — direct matching.
+**Real-World Analogy**: A `case` statement is like a hotel room key card dispenser. You insert a card (the value), and depending on which floor number is encoded, it activates only that floor's button on the elevator. No if-else chain needed â€” direct matching.
 
-**Dry Run — case Statement**:
+**Dry Run â€” case Statement**:
 ```
 Step | Code                     | $1    | Matches? | Action
 1    | case "$1" in             | start |          | Evaluate
@@ -628,7 +628,7 @@ Step | Code                     | $1    | Matches? | Action
 5    | Output: "Starting..."    |       |          |
 ```
 
-### Conditional — Complexity & A&D
+### Conditional â€” Complexity & A&D
 
 | Aspect | Analysis |
 |--------|----------|
@@ -637,10 +637,10 @@ Step | Code                     | $1    | Matches? | Action
 | **Pattern match (==)** | O(n) glob match on string length n |
 | **Regex match (=~)** | O(n*p) worst case regex backtracking |
 | **Why case over if?** | More readable for multi-way branches; supports pattern matching |
-| **Edge: Missing then** | Syntax error — each `if` needs a `then` |
+| **Edge: Missing then** | Syntax error â€” each `if` needs a `then` |
 | **Edge: Space in [ ]** | `[$a=$b]` is wrong; must be `[ "$a" = "$b" ]` |
 | **Edge: Forgotten fi** | Shell reports "unexpected end of file" at end of script |
-| **Edge: Empty string test** | `[ "$var" = "" ]` or `[ -z "$var" ]` — both check emptiness |
+| **Edge: Empty string test** | `[ "$var" = "" ]` or `[ -z "$var" ]` â€” both check emptiness |
 
 **Python Equivalent**:
 ```python
@@ -670,7 +670,7 @@ match action:
 
 **Real-World Analogy**: A `for` loop is like a factory conveyor belt where each item passes under a sensor that performs the same operation. The belt runs once per item, processes it, and moves on. When the belt is empty (no more items), it stops automatically.
 
-**Numbered Steps — for Loop**:
+**Numbered Steps â€” for Loop**:
 1. Construct the list of words to iterate over (brace expansion, glob, or explicit list, command output)
 2. Assign the first word to the loop variable
 3. Execute the loop body
@@ -689,14 +689,14 @@ function for_loop(word_list, body_function, shell_state):
     return 0
 ```
 
-**Dry Run — for Loop with Range**:
+**Dry Run â€” for Loop with Range**:
 ```
 Step | i   | Condition      | Body Output
 1    | 0   | i=0            |
 2    | 0   | Loop body      | "Number: 0"
-3    | 1   | i++ → i=1      |
+3    | 1   | i++ â†’ i=1      |
 4    | 1   | Loop body      | "Number: 1"
-5    | 2   | i++ → i=2      |
+5    | 2   | i++ â†’ i=2      |
 ...  | ... | ...            | ...
 6    | 9   | Loop body      | "Number: 9"
 7    | 10  | 10 < 10 false  | Loop exits
@@ -767,7 +767,7 @@ Odd: 9
 ```bash
 #!/bin/bash
 
-# while loop — runs while condition is true
+# while loop â€” runs while condition is true
 count=0
 while [ $count -lt 5 ]; do
     echo "Count: $count"
@@ -786,7 +786,7 @@ while true; do
     echo "You said: $input"
 done
 
-# until loop — runs until condition becomes true
+# until loop â€” runs until condition becomes true
 count=10
 until [ $count -eq 0 ]; do
     echo "Countdown: $count"
@@ -796,7 +796,7 @@ done
 
 **Real-World Analogy (while)**: A `while` loop is a bouncer at a club door checking IDs. While each person has a valid ID (condition is true), they're allowed in (the body executes). The first person without ID stops the process entirely.
 
-**Dry Run — while Loop with Counter**:
+**Dry Run â€” while Loop with Counter**:
 ```
 Step | count | Condition: count < 5 | Output        | Action
 1    | 0     | 0 < 5 = TRUE         | "Count: 0"    | Enter body
@@ -827,18 +827,18 @@ done
 # Output: Odd: 1, 3, 5, 7, 9
 ```
 
-### Loops — Complexity & A&D
+### Loops â€” Complexity & A&D
 
 | Aspect | Analysis |
 |--------|----------|
 | **for over list** | O(n * b) where n = items, b = body complexity |
 | **while/until** | O(t * b) where t = iterations until termination |
 | **Reading file line by line** | O(l) where l = lines (one read per line) |
-| **Edge: Word splitting** | `for x in $(cat file)` splits on IFS, not lines — use `read -r` |
-| **Edge: `for file in $(ls)`** | NEVER — breaks with spaces, newlines, special chars |
+| **Edge: Word splitting** | `for x in $(cat file)` splits on IFS, not lines â€” use `read -r` |
+| **Edge: `for file in $(ls)`** | NEVER â€” breaks with spaces, newlines, special chars |
 | **Edge: IFS= read -r** | Preserves leading/trailing whitespace and backslashes |
 | **Edge: Empty loop body** | `; done` works but semicolons or newline before `done` required |
-| **Edge: Off-by-one** | `while [ $i -le 10 ]` vs `-lt` — careful with boundary |
+| **Edge: Off-by-one** | `while [ $i -le 10 ]` vs `-lt` â€” careful with boundary |
 
 **Python Equivalent**:
 ```python
@@ -890,7 +890,7 @@ for i in range(1, 11):
 
 **Real-World Analogy**: A function is like a recipe card in a kitchen. The card lists ingredients (parameters) and instructions (body). A cook (the script) can use the same card repeatedly with different ingredients without rewriting the steps. Some cards produce a finished dish (return value), others just perform actions (void functions).
 
-**Numbered Steps — Function Execution**:
+**Numbered Steps â€” Function Execution**:
 1. Function definition is read and stored in memory (not executed yet)
 2. When called, positional parameters `$1`, `$2`, ... are set to the arguments
 3. `$0` remains the script name (not the function name)
@@ -916,7 +916,7 @@ function call_function(name, args, shell_state):
     return exit_code
 ```
 
-**Dry Run — Function Call**:
+**Dry Run â€” Function Call**:
 ```
 Step | Code                      | $1      | Local name | Output
 1    | greet() { ... }            |         |            | Function stored
@@ -932,7 +932,7 @@ Step | Code                      | $1      | Local name | Output
 
 # Function definition (two syntaxes)
 greet() {
-    local name="$1"        # local variable — scoped to function
+    local name="$1"        # local variable â€” scoped to function
     echo "Hello, $name!"
 }
 
@@ -996,7 +996,7 @@ my_func() {
 
 my_func
 echo "Outside: global_var=$global_var"
-echo "Outside: local_var=$local_var"    # Empty — scope lost
+echo "Outside: local_var=$local_var"    # Empty â€” scope lost
 
 # Output:
 # Inside: local_var=I am local
@@ -1005,18 +1005,18 @@ echo "Outside: local_var=$local_var"    # Empty — scope lost
 # Outside: local_var=
 ```
 
-### Functions — Complexity & A&D
+### Functions â€” Complexity & A&D
 
 | Aspect | Analysis |
 |--------|----------|
-| **Definition** | O(1) — stored in shell function table |
-| **Call overhead** | O(1) — scope push/pop and param shift |
+| **Definition** | O(1) â€” stored in shell function table |
+| **Call overhead** | O(1) â€” scope push/pop and param shift |
 | **Return value** | Only integers 0-255 via `return`; strings via stdout capture |
 | **Edge: Missing return** | Exit code is from last executed command |
 | **Edge: Return vs exit** | `return` exits function; `exit` kills the entire script |
-| **Edge: local keyword** | Not POSIX — use subshell `(...)` for portable local scope |
+| **Edge: local keyword** | Not POSIX â€” use subshell `(...)` for portable local scope |
 | **Edge: Recursion** | Supported but stack depth limited (~10k in Bash) |
-| **Edge: Function name collision** | Functions shadow external commands — `ls() { echo "noop"; }` breaks `ls` |
+| **Edge: Function name collision** | Functions shadow external commands â€” `ls() { echo "noop"; }` breaks `ls` |
 
 **Python Equivalent**:
 ```python
@@ -1058,7 +1058,7 @@ print(f"Today is {today}")
 
 **Real-World Analogy**: File descriptors are like colored pipes in a factory. The white pipe (stdin) brings raw materials in. The green pipe (stdout) sends finished products out. The red pipe (stderr) sends waste and error alerts. Redirection is a valve that re-routes material between pipes or to/from storage tanks (files).
 
-**Numbered Steps — Output Redirection**:
+**Numbered Steps â€” Output Redirection**:
 1. Shell opens (or creates) the target file
 2. If `>`, the file is truncated to zero length
 3. If `>>`, the file is opened for append
@@ -1080,12 +1080,12 @@ function redirect_output(file_path, mode, command_function):
     close(fd)
 ```
 
-**Dry Run — Redirection**:
+**Dry Run â€” Redirection**:
 ```
 Step | Operation           | FD 0 (stdin) | FD 1 (stdout) | FD 2 (stderr)
 1    | Default state       | keyboard     | screen        | screen
 2    | command > out.txt   | keyboard     | out.txt       | screen
-3    | echo "hello" runs   | keyboard     | "hello"→file | screen
+3    | echo "hello" runs   | keyboard     | "hello"â†’file | screen
 4    | After command       | keyboard     | screen        | screen
 ```
 
@@ -1093,20 +1093,20 @@ Step | Operation           | FD 0 (stdin) | FD 1 (stdout) | FD 2 (stderr)
 
 | Operator | Name | Example | Action |
 |----------|------|---------|--------|
-| `>` | Output redirect | `cmd > file` | stdout → file (overwrite) |
-| `>>` | Append output | `cmd >> file` | stdout → file (append) |
-| `<` | Input redirect | `cmd < file` | stdin ← file |
-| `<<` | Here-document | `cmd << EOF` | stdin ← inline text until delimiter |
-| `<<<` | Here-string | `cmd <<< "text"` | stdin ← single string |
-| `2>` | Stderr redirect | `cmd 2> file` | stderr → file |
-| `2>>` | Append stderr | `cmd 2>> file` | stderr → file (append) |
-| `&>` | Both streams | `cmd &> file` | stdout + stderr → file (Bash) |
-| `>&` | Alternate both | `cmd >& file` | stdout + stderr → file |
-| `2>&1` | Merge stderr→stdout | `cmd 2>&1` | stderr → same as stdout |
-| `1>&2` | Merge stdout→stderr | `cmd 1>&2` | stdout → same as stderr |
-| `>/dev/null` | Discard stdout | `cmd >/dev/null` | stdout → void |
-| `2>/dev/null` | Discard stderr | `cmd 2>/dev/null` | stderr → void |
-| `&>/dev/null` | Discard both | `cmd &>/dev/null` | stdout + stderr → void |
+| `>` | Output redirect | `cmd > file` | stdout â†’ file (overwrite) |
+| `>>` | Append output | `cmd >> file` | stdout â†’ file (append) |
+| `<` | Input redirect | `cmd < file` | stdin â† file |
+| `<<` | Here-document | `cmd << EOF` | stdin â† inline text until delimiter |
+| `<<<` | Here-string | `cmd <<< "text"` | stdin â† single string |
+| `2>` | Stderr redirect | `cmd 2> file` | stderr â†’ file |
+| `2>>` | Append stderr | `cmd 2>> file` | stderr â†’ file (append) |
+| `&>` | Both streams | `cmd &> file` | stdout + stderr â†’ file (Bash) |
+| `>&` | Alternate both | `cmd >& file` | stdout + stderr â†’ file |
+| `2>&1` | Merge stderrâ†’stdout | `cmd 2>&1` | stderr â†’ same as stdout |
+| `1>&2` | Merge stdoutâ†’stderr | `cmd 1>&2` | stdout â†’ same as stderr |
+| `>/dev/null` | Discard stdout | `cmd >/dev/null` | stdout â†’ void |
+| `2>/dev/null` | Discard stderr | `cmd 2>/dev/null` | stderr â†’ void |
+| `&>/dev/null` | Discard both | `cmd &>/dev/null` | stdout + stderr â†’ void |
 
 ```bash
 #!/bin/bash
@@ -1119,7 +1119,7 @@ echo "new line" >> files.txt   # stdout to file (append)
 sort < unsorted.txt            # stdin from file
 tr 'a-z' 'A-Z' < input.txt    # Transform stdin from file
 
-# Here document — inline multi-line input
+# Here document â€” inline multi-line input
 cat << EOF
 This is a multi-line
 "here document" that
@@ -1132,7 +1132,7 @@ cat <<- END
     The <<- strips leading tabs.
 END
 
-# Here string — single-line input
+# Here string â€” single-line input
 grep "error" <<< "line 1: error found
 line 2: ok"
 
@@ -1148,7 +1148,7 @@ command 2>&1 | less         # Both stdout and stderr through pager
 # Redirect to stdout/stderr explicitly
 echo "Error occurred" >&2   # Write to stderr
 
-# Exec with redirection — redirect for the rest of the script
+# Exec with redirection â€” redirect for the rest of the script
 exec > logfile 2>&1         # All subsequent output to logfile
 echo "This goes to logfile"
 echo "So does this error" >&2
@@ -1162,7 +1162,7 @@ This is a multi-line
 preserves whitespace.
 
 $ grep "error" <<< "test line"
-(no output — no match)
+(no output â€” no match)
 
 $ grep "error" <<< "this line has an error"
 this line has an error
@@ -1189,21 +1189,21 @@ wait
 rm mypipe
 ```
 
-**Real-World Analogy**: A named pipe is like a physical mail slot between two rooms. Process A drops a letter (data) into the slot. Process B retrieves it from the other side. Unlike a regular pipe (which is a temporary tube), a named pipe persists in the wall — anyone who knows the slot's location can use it.
+**Real-World Analogy**: A named pipe is like a physical mail slot between two rooms. Process A drops a letter (data) into the slot. Process B retrieves it from the other side. Unlike a regular pipe (which is a temporary tube), a named pipe persists in the wall â€” anyone who knows the slot's location can use it.
 
-### I/O Redirection — Complexity & A&D
+### I/O Redirection â€” Complexity & A&D
 
 | Aspect | Analysis |
 |--------|----------|
-| **File redirect** | O(1) system call (dup2) — constant overhead |
+| **File redirect** | O(1) system call (dup2) â€” constant overhead |
 | **Here-document** | O(n) where n = document size (written to temp file first) |
 | **Pipe overhead** | O(b) buffer copy between processes |
-| **Edge: `>` vs `>>`** | Truncation vs append — choose carefully for logs |
-| **Edge: `&>` portability** | Not POSIX — use `2>&1` for maximum portability |
+| **Edge: `>` vs `>>`** | Truncation vs append â€” choose carefully for logs |
+| **Edge: `&>` portability** | Not POSIX â€” use `2>&1` for maximum portability |
 | **Edge: Here-doc delimiter** | Must be on its own line with no trailing whitespace |
 | **Edge: Here-doc quoting** | `<< 'EOF'` prevents variable expansion; `<< EOF` expands |
 | **Edge: clobber prevention** | `set -o noclobber` prevents `>` from overwriting existing files |
-| **Edge: stdout buffering** | Output may be buffered in pipes — use `stdbuf` or `unbuffer` |
+| **Edge: stdout buffering** | Output may be buffered in pipes â€” use `stdbuf` or `unbuffer` |
 
 **Python Equivalent**:
 ```python
@@ -1260,7 +1260,7 @@ sort data.txt | uniq -c | sort -rn | head -10
 
 **Real-World Analogy**: A pipe is like an assembly line in a car factory. Station 1 (ps aux) builds the chassis. Station 2 (grep) installs specific parts. Station 3 (wc -l) counts the completed cars. Each station receives the output of the previous one as its input, operating simultaneously.
 
-**Numbered Steps — Pipeline Execution**:
+**Numbered Steps â€” Pipeline Execution**:
 1. Shell creates a pipe (in-memory buffer with two file descriptors)
 2. Forks a process for each command in the pipeline
 3. For each command, connects its stdin to the pipe's read end (except first)
@@ -1290,12 +1290,12 @@ function execute_pipeline(commands):
         waitpid(children[i])
 ```
 
-**Dry Run — Pipeline: grep "error" log.txt | wc -l**:
+**Dry Run â€” Pipeline: grep "error" log.txt | wc -l**:
 ```
 Step | Component          | Action
 1    | Shell              | Creates pipe with fd[0] (read) and fd[1] (write)
-2    | Fork grep          | PID=100: stdout → pipe write end
-3    | Fork wc            | PID=101: stdin ← pipe read end
+2    | Fork grep          | PID=100: stdout â†’ pipe write end
+3    | Fork wc            | PID=101: stdin â† pipe read end
 4    | grep "error" runs | Reads log.txt, writes matching lines to pipe
 5    | wc -l runs         | Reads lines from pipe, counts them
 6    | grep exits         | Pipe write end closes
@@ -1350,18 +1350,18 @@ echo "data" | tee /tmp/debug.txt | wc -c
 { echo "header"; cat data.txt; echo "footer"; } | wc -l
 ```
 
-### Pipes — Complexity & A&D
+### Pipes â€” Complexity & A&D
 
 | Aspect | Analysis |
 |--------|----------|
-| **Execution model** | Parallel — all commands run simultaneously |
+| **Execution model** | Parallel â€” all commands run simultaneously |
 | **Buffer size** | 64KB default pipe capacity on Linux |
-| **Time complexity** | O(max(t1, t2, ..., tn)) — dominated by slowest command |
-| **Memory** | O(buf) — buffered between processes, not entire dataset |
+| **Time complexity** | O(max(t1, t2, ..., tn)) â€” dominated by slowest command |
+| **Memory** | O(buf) â€” buffered between processes, not entire dataset |
 | **Edge: pipefail** | Without it, pipe exit code is from last command only |
 | **Edge: SIGPIPE** | If reader closes pipe, writer gets SIGPIPE (exit 141) |
-| **Edge: Broken pipe** | `yes | head -5` — yes gets SIGPIPE when head closes |
-| **Edge: Large data** | Pipes avoid temp files — use for streaming large datasets |
+| **Edge: Broken pipe** | `yes | head -5` â€” yes gets SIGPIPE when head closes |
+| **Edge: Large data** | Pipes avoid temp files â€” use for streaming large datasets |
 
 ---
 
@@ -1374,14 +1374,14 @@ Filters are commands that read stdin and write to stdout, designed for use in pi
 ```bash
 #!/bin/bash
 
-# head / tail — select portions of input
+# head / tail â€” select portions of input
 head -n 20 file.txt          # First 20 lines
 tail -n 20 file.txt          # Last 20 lines
 tail -f /var/log/syslog      # Follow growing file
 head -n -5 file.txt          # All except last 5 lines
 tail -n +5 file.txt          # All from line 5 onwards
 
-# sort — order lines
+# sort â€” order lines
 sort file.txt                # Alphabetical
 sort -n file.txt             # Numeric
 sort -r file.txt             # Reverse
@@ -1389,34 +1389,34 @@ sort -u file.txt             # Unique (same as sort | uniq)
 sort -t: -k3 -n /etc/passwd # Sort by field 3, colon-separated
 sort -k2,2 -k1,1 file.txt   # Sort by field 2, then field 1
 
-# uniq — remove/find duplicates (requires sorted input)
+# uniq â€” remove/find duplicates (requires sorted input)
 uniq file.txt                # Remove adjacent duplicates
 uniq -c file.txt             # Count occurrences
 uniq -d file.txt             # Only duplicates
 uniq -u file.txt             # Only unique lines
 
-# cut — extract columns
+# cut â€” extract columns
 cut -d: -f1,3 /etc/passwd    # Fields 1 and 3 (colon-separated)
 cut -c1-10 file.txt          # Characters 1-10
 cut -f2-4 data.tsv           # Fields 2-4 (tab-separated default)
 
-# wc — word count
+# wc â€” word count
 wc -l file.txt               # Lines
 wc -w file.txt               # Words
 wc -c file.txt               # Characters (bytes)
 wc -m file.txt               # Characters (multi-byte aware)
 
-# tr — translate/delete characters
+# tr â€” translate/delete characters
 tr 'a-z' 'A-Z' < file.txt   # Uppercase
 tr -d ' ' < file.txt         # Delete spaces
 tr -s ' ' < file.txt         # Squeeze repeated spaces
 tr '\n' ' ' < file.txt       # Replace newlines with spaces
 
-# tee — split output (T-junction)
+# tee â€” split output (T-junction)
 echo "data" | tee file.txt | wc -c    # Write to file AND pipe
 cmd | tee -a log.txt                   # Append to log
 
-# nl — number lines
+# nl â€” number lines
 nl file.txt                  # Number non-empty lines
 nl -ba file.txt              # Number all lines (including blank)
 ```
@@ -1446,17 +1446,17 @@ $ echo "hello world" | tr 'a-z' 'A-Z'
 HELLO WORLD
 ```
 
-### Filters — Complexity & A&D
+### Filters â€” Complexity & A&D
 
 | Aspect | Analysis |
 |--------|----------|
-| **head / tail** | O(min(n, k)) — reads only needed lines |
-| **sort** | O(n log n) — merge sort implementation |
-| **uniq** | O(n) — single pass, requires pre-sorted input |
-| **cut** | O(n) — linear scan per line |
-| **wc** | O(n) — single pass character/line counting |
-| **tr** | O(n) — character-by-character translation |
-| **tee** | O(n) — stream copy to file and stdout simultaneously |
+| **head / tail** | O(min(n, k)) â€” reads only needed lines |
+| **sort** | O(n log n) â€” merge sort implementation |
+| **uniq** | O(n) â€” single pass, requires pre-sorted input |
+| **cut** | O(n) â€” linear scan per line |
+| **wc** | O(n) â€” single pass character/line counting |
+| **tr** | O(n) â€” character-by-character translation |
+| **tee** | O(n) â€” stream copy to file and stdout simultaneously |
 | **Why sort needs O(n log n)?** | Comparison-based ordering; best possible for comparison sort |
 | **Edge: sort memory (large files)** | Uses external merge sort with temp files for > memory |
 | **Edge: uniq needs sorting** | Without sort, only ADJACENT duplicates removed |
@@ -1479,7 +1479,7 @@ grep "error" <(tail -100 logfile)
 
 **Real-World Analogy**: Process substitution is like a translator who listens to a speech and produces a transcript in real time. The `<(command)` creates a virtual transcript file from the ongoing speech. Other tools can read this "file" as if it were a regular document, without ever saving it to disk.
 
-**Numbered Steps — Process Substitution**:
+**Numbered Steps â€” Process Substitution**:
 1. Shell executes the command inside `<( )` in a subshell
 2. Shell creates a named pipe (FIFO) or /dev/fd entry
 3. The command's stdout is connected to this pipe
@@ -1492,23 +1492,23 @@ grep "error" <(tail -100 logfile)
 function process_substitution(command_str):
     pipe_fds = create_pipe()
     if os_type == "Linux":
-        # Use /dev/fd/N trick — symlink to pipe fd
+        # Use /dev/fd/N trick â€” symlink to pipe fd
         result = link_to_fd(pipe_fds.read_fd)
     else:
         # Fallback: named pipe
         temp_path = "/tmp/psub.$$"
         mkfifo(temp_path)
-        background_fork → command_str > temp_path
+        background_fork â†’ command_str > temp_path
         result = temp_path
     
     return result   # Returns "path" that can be used as file arg
 ```
 
-**Dry Run — diff &lt;(ls dir1) <(ls dir2)**:
+**Dry Run â€” diff &lt;(ls dir1) <(ls dir2)**:
 ```
 Step | Component              | Action
-1    | Shell                  | Evaluates <(ls dir1) → /dev/fd/63
-2    | Shell                  | Evaluates <(ls dir2) → /dev/fd/64
+1    | Shell                  | Evaluates <(ls dir1) â†’ /dev/fd/63
+2    | Shell                  | Evaluates <(ls dir2) â†’ /dev/fd/64
 3    | Fork ls dir1           | PID=100, stdout=63
 4    | Fork ls dir2           | PID=101, stdout=64
 5    | diff reads /dev/fd/63  | Gets listing of dir1
@@ -1538,16 +1538,16 @@ ls -l > >(grep ".txt" > txt_files.txt) 2>&1
 diff <(sort file1.txt) <(sort file2.txt)
 ```
 
-### Process Substitution — Complexity & A&D
+### Process Substitution â€” Complexity & A&D
 
 | Aspect | Analysis |
 |--------|----------|
 | **Overhead** | O(1) pipe creation + fork per substitution |
-| **Data flow** | Streaming — no temp file needed |
-| **Portability** | Not POSIX — Bash/Zsh only; not in /bin/sh |
+| **Data flow** | Streaming â€” no temp file needed |
+| **Portability** | Not POSIX â€” Bash/Zsh only; not in /bin/sh |
 | **Edge: /dev/fd on Linux** | Works natively; macOS has /dev/fd but may behave differently |
 | **Edge: Named pipe fallback** | Some systems emulate with temp FIFOs |
-| **Edge: Multiple reads** | Data is consumed once (pipe behavior) — can't re-read |
+| **Edge: Multiple reads** | Data is consumed once (pipe behavior) â€” can't re-read |
 | **Edge: Background process** | Inner command runs in background implicitly |
 
 **Python Equivalent**:
@@ -1572,13 +1572,13 @@ print("\n".join(diff))
 
 ### Background and Foreground Processes
 
-**Real-World Analogy**: Job control is like a busy chef multitasking in a kitchen. The chef starts boiling water (background — doesn't need attention), then starts chopping vegetables (foreground — needs active attention). The chef can pause chopping (Ctrl+Z) to check the boiling water, then resume chopping. Each active task is a "job" the chef tracks.
+**Real-World Analogy**: Job control is like a busy chef multitasking in a kitchen. The chef starts boiling water (background â€” doesn't need attention), then starts chopping vegetables (foreground â€” needs active attention). The chef can pause chopping (Ctrl+Z) to check the boiling water, then resume chopping. Each active task is a "job" the chef tracks.
 
-**Numbered Steps — Background Execution**:
+**Numbered Steps â€” Background Execution**:
 1. Shell parses command with `&` suffix
 2. Forks a child process (the job)
 3. Job runs in a separate process group
-4. Shell does NOT call `waitpid` immediately — returns prompt
+4. Shell does NOT call `waitpid` immediately â€” returns prompt
 5. Job continues running in background
 6. When job finishes, shell prints notification before next prompt
 
@@ -1602,7 +1602,7 @@ function start_background_job(command):
     return prompt()
 ```
 
-**Dry Run — Job Control**:
+**Dry Run â€” Job Control**:
 ```
 Step | User Action          | Shell State               | Output
 1    | sleep 30 &           | Job [1] running (PID 100) | [1] 100
@@ -1653,7 +1653,7 @@ wait %1
 # Run immune to hangups
 nohup long_running_command &
 
-# Disown — remove job from shell's job table
+# Disown â€” remove job from shell's job table
 disown %1           # Job continues running, but shell no longer tracks it
 ```
 
@@ -1699,14 +1699,14 @@ wait
 echo "All tasks completed"
 ```
 
-### Job Control — Complexity & A&D
+### Job Control â€” Complexity & A&D
 
 | Aspect | Analysis |
 |--------|----------|
-| **Fork overhead** | O(1) — process creation cost (~us on modern kernels) |
+| **Fork overhead** | O(1) â€” process creation cost (~us on modern kernels) |
 | **Context switch** | Kernel scheduler overhead for background processes |
-| **Parallel speedup** | Up to N× where N = CPU cores (limited by I/O vs CPU) |
-| **Edge: Zombie processes** | Unwaited children become zombies — always `wait` |
+| **Parallel speedup** | Up to NÃ— where N = CPU cores (limited by I/O vs CPU) |
+| **Edge: Zombie processes** | Unwaited children become zombies â€” always `wait` |
 | **Edge: Orphaned jobs** | When shell exits, background children get SIGHUP (use nohup) |
 | **Edge: Job number limit** | Shell-specific limit on tracked jobs (default 1000 in Bash) |
 | **Edge: Race condition** | `wait` may miss jobs that finish before `wait` is reached |
@@ -1722,18 +1722,18 @@ Signals are software interrupts sent to processes to notify them of events:
 
 | Signal | Number | Action | Meaning |
 |--------|--------|--------|---------|
-| SIGINT | 2 | Terminate | Ctrl+C — interrupt |
-| SIGQUIT | 3 | Core dump | Ctrl+\ — quit with core |
+| SIGINT | 2 | Terminate | Ctrl+C â€” interrupt |
+| SIGQUIT | 3 | Core dump | Ctrl+\ â€” quit with core |
 | SIGKILL | 9 | Terminate | Force kill (cannot be caught) |
 | SIGTERM | 15 | Terminate | Graceful termination (default for kill) |
 | SIGSTOP | 19 | Stop | Ctrl+Z (cannot be caught) |
 | SIGTSTP | 20 | Stop | Ctrl+Z (can be caught) |
-| SIGHUP | 1 | Terminate | Hangup — terminal closed |
-| SIGPIPE | 13 | Terminate | Broken pipe — write to closed pipe |
+| SIGHUP | 1 | Terminate | Hangup â€” terminal closed |
+| SIGPIPE | 13 | Terminate | Broken pipe â€” write to closed pipe |
 | SIGUSR1 | 10 | User-defined | Custom purpose |
 | SIGUSR2 | 12 | User-defined | Custom purpose |
 
-**Real-World Analogy**: Signals are like phone calls to a process. SIGTERM is a polite call saying "please wrap up and close." SIGKILL is a SWAT team kicking down the door — no warning, no cleanup. SIGINT (Ctrl+C) is an urgent interruption. SIGTSTP (Ctrl+Z) is "put that on hold." SIGHUP is the landlord evicting you because the building is closing.
+**Real-World Analogy**: Signals are like phone calls to a process. SIGTERM is a polite call saying "please wrap up and close." SIGKILL is a SWAT team kicking down the door â€” no warning, no cleanup. SIGINT (Ctrl+C) is an urgent interruption. SIGTSTP (Ctrl+Z) is "put that on hold." SIGHUP is the landlord evicting you because the building is closing.
 
 ### The trap Command
 
@@ -1763,7 +1763,7 @@ trap 'echo "Error at line $LINENO"; exit 1' ERR
 # Trap script exit (always runs)
 trap 'echo "Script finished at $(date)"' EXIT
 
-# Trap debug — runs before every command
+# Trap debug â€” runs before every command
 trap 'echo "DEBUG: about to run: $BASH_COMMAND"' DEBUG
 
 # Main loop
@@ -1774,8 +1774,8 @@ while true; do
 done
 ```
 
-**Numbered Steps — Signal Delivery**:
-1. A signal is generated (Ctrl+C → SIGINT sent to foreground process group)
+**Numbered Steps â€” Signal Delivery**:
+1. A signal is generated (Ctrl+C â†’ SIGINT sent to foreground process group)
 2. Kernel checks process signal disposition (default / ignore / handler)
 3. If handler registered, kernel interrupts process execution
 4. Process saves context and runs signal handler
@@ -1804,7 +1804,7 @@ function deliver_signal(pid, signal_number):
         set_pc(pcb, handler_address)          # Jump to handler
 ```
 
-**Dry Run — Trap on SIGINT**:
+**Dry Run â€” Trap on SIGINT**:
 ```
 Step | Event              | Signal | Handler? | Action
 1    | User presses Ctrl+C | SIGINT | cleanup  | Kernel checks disposition
@@ -1839,7 +1839,7 @@ timeout_cmd() {
         waited=$((waited + 1))
     done
     
-    # Timeout reached — kill the command
+    # Timeout reached â€” kill the command
     kill $cmd_pid 2>/dev/null
     echo "TIMEOUT: $cmd exceeded ${timeout}s" >&2
     return 124
@@ -1849,14 +1849,14 @@ timeout_cmd 5 "sleep 10"
 echo "Exit code: $?"   # 124
 ```
 
-### Signal Handling — Complexity & A&D
+### Signal Handling â€” Complexity & A&D
 
 | Aspect | Analysis |
 |--------|----------|
-| **Handler registration** | O(1) — signal table entry update |
-| **Signal delivery** | O(1) — kernel interrupt mechanism |
+| **Handler registration** | O(1) â€” signal table entry update |
+| **Signal delivery** | O(1) â€” kernel interrupt mechanism |
 | **Handler execution** | O(h) where h = handler complexity |
-| **Edge: Re-entrancy** | Signal handler may interrupt itself — use reentrant functions only |
+| **Edge: Re-entrancy** | Signal handler may interrupt itself â€” use reentrant functions only |
 | **Edge: Race condition** | Between checking and acting on volatile state |
 | **Edge: Foreground-only signals** | SIGINT, SIGTSTP only affect foreground process group |
 | **Edge: trap '' vs trap -** | `trap ''` = ignore; `trap -` = reset to default |
@@ -1941,13 +1941,13 @@ Regular expressions are patterns that describe text. They are used with `grep -E
 ```bash
 #!/bin/bash
 
-# Extended regex (−E)
+# Extended regex (âˆ’E)
 grep -E '^[A-Z]' file.txt          # Lines starting with capital letter
 grep -E '(error|fail)' log.txt     # Lines with "error" or "fail"
 grep -E '^.{10,20}$' file.txt      # Lines 10-20 characters long
 grep -E 'https?://' urls.txt       # Lines with http:// or https://
 
-# Perl-compatible regex (grep -P) — GNU grep
+# Perl-compatible regex (grep -P) â€” GNU grep
 grep -P '\b\d{3}\b' file.txt       # Exactly 3-digit numbers
 
 # Regex with context
@@ -1968,7 +1968,7 @@ sed -E '/^#|^$/d' config.sh            # Delete comments and blank lines
 sed -E 's/([a-z]+)@([a-z]+)/\1 at \2/' # Replace @ with "at" in emails
 ```
 
-**Dry Run — sed Substitution**:
+**Dry Run â€” sed Substitution**:
 ```
 Step | Input line                 | Pattern    | Replacement | Output
 1    | "error: file not found"    | s/error/ERROR/ |          | "ERROR: file not found"
@@ -2017,28 +2017,28 @@ case "$input" in
 esac
 ```
 
-### Regex — Complexity & A&D
+### Regex â€” Complexity & A&D
 
 | Aspect | Analysis |
 |--------|----------|
-| **BRE matching** | O(n) with Thompson NFA — linear in input length |
+| **BRE matching** | O(n) with Thompson NFA â€” linear in input length |
 | **ERE matching** | O(n) generally, but backtracking can reach O(2^n) |
 | **Perl-compatible (PCRE)** | O(n) with backtracking optimizations; catastrophic on bad patterns |
-| **Why catastrophic?** | `(a+)+b` on "aaaaac" → backtracking explosion in nested quantifiers |
+| **Why catastrophic?** | `(a+)+b` on "aaaaac" â†’ backtracking explosion in nested quantifiers |
 | **Edge: ^ and $ anchors** | Without anchors, regex matches anywhere in line |
 | **Edge: Greedy vs lazy** | `.*` is greedy (matches as much as possible); `.*?` is lazy (some engines) |
 | **Edge: Backslash hell** | In shell, `\` needs doubling in double quotes and tripling in regex |
-| **Edge: locale issues** | `[a-z]` order differs by locale — use `[a-zA-Z]` for stability |
+| **Edge: locale issues** | `[a-z]` order differs by locale â€” use `[a-zA-Z]` for stability |
 
 ---
 
-## Section 14: sed — Stream Editor
+## Section 14: sed â€” Stream Editor
 
 ### sed Core Concepts
 
 **Real-World Analogy**: `sed` is like an automated document editing conveyor belt. Each line of a file passes under an editing head that applies programmed transformations. The head can substitute text, delete lines, insert new text, or print selective sections. Multiple editing heads can be chained, and each operation can be restricted to specific lines matching address patterns.
 
-**Numbered Steps — sed Execution**:
+**Numbered Steps â€” sed Execution**:
 1. Read next line from input into the pattern space
 2. Apply address match (if specified): does line match the address?
 3. If address matches (or no address), apply the command
@@ -2060,13 +2060,13 @@ function sed_execute(commands, input_stream):
             output(pattern_space)
 ```
 
-**Dry Run — sed 's/cat/DOG/'**:
+**Dry Run â€” sed 's/cat/DOG/'**:
 ```
 Step | Input line         | Pattern space before | Substitution        | Pattern space after | Output
-1    | "the cat sat"      | "the cat sat"       | cat→DOG             | "the DOG sat"       | "the DOG sat"
-2    | "caterpillar"      | "caterpillar"       | cat→DOG             | "DOGerpillar"       | "DOGerpillar"
-3    | "dog and cat"      | "dog and cat"       | cat→DOG             | "dog and DOG"       | "dog and DOG"
-4    | "no match here"    | "no match here"     | cat→?               | "no match here"     | "no match here"
+1    | "the cat sat"      | "the cat sat"       | catâ†’DOG             | "the DOG sat"       | "the DOG sat"
+2    | "caterpillar"      | "caterpillar"       | catâ†’DOG             | "DOGerpillar"       | "DOGerpillar"
+3    | "dog and cat"      | "dog and cat"       | catâ†’DOG             | "dog and DOG"       | "dog and DOG"
+4    | "no match here"    | "no match here"     | catâ†’?               | "no match here"     | "no match here"
 ```
 
 ### sed Commands Reference
@@ -2148,21 +2148,21 @@ sed 's/,/\t/g' data.csv
 
 ---
 
-## Section 15: awk — Pattern Scanning and Processing
+## Section 15: awk â€” Pattern Scanning and Processing
 
 ### awk Core Concepts
 
-**Real-World Analogy**: awk is a miniature spreadsheet for text. Each line is a row, and each word/field is a cell. You can filter rows (`$3 > 50`), transform cells (`$1 = toupper($1)`), compute totals (sum of column 2), and format reports — all in a compact language.
+**Real-World Analogy**: awk is a miniature spreadsheet for text. Each line is a row, and each word/field is a cell. You can filter rows (`$3 > 50`), transform cells (`$1 = toupper($1)`), compute totals (sum of column 2), and format reports â€” all in a compact language.
 
-**Numbered Steps — awk Execution**:
-1. Execute BEGIN block (if present) — runs once before any input
+**Numbered Steps â€” awk Execution**:
+1. Execute BEGIN block (if present) â€” runs once before any input
 2. Read next line from input
 3. Split line into fields `$1`, `$2`, ..., `$NF` based on field separator (FS)
 4. Evaluate the pattern (condition): if true, execute the action block
 5. If no pattern but action block exists, execute for every line
 6. If no action block but pattern exists, print matching lines (default action)
 7. Repeat from step 2 until input exhausted
-8. Execute END block (if present) — runs once after all input
+8. Execute END block (if present) â€” runs once after all input
 
 **Pseudocode**:
 ```
@@ -2185,7 +2185,7 @@ function awk_execute(patterns_actions, input_streams):
     execute_blocks(patterns_actions.END)
 ```
 
-**Dry Run — awk '$3 > 50 { print $1 }'**:
+**Dry Run â€” awk '$3 > 50 { print $1 }'**:
 ```
 Step | Input line          | $1    | $2  | $3   | $3 > 50? | Output
 1    | "Alice 30 45"      | Alice | 30  | 45   | FALSE    |
@@ -2262,15 +2262,15 @@ awk -F'[- ]' '{ sum[$2] += $NF } END { for (m in sum) print m, sum[m] }' sales.c
 awk '{ ct[$1][$2]++ } END { for (i in ct) for (j in ct[i]) print i, j, ct[i][j] }' pairs.txt
 ```
 
-### awk — Complexity & A&D
+### awk â€” Complexity & A&D
 
 | Aspect | Analysis |
 |--------|----------|
-| **Time complexity** | O(n * f) — n = lines, f = operations per line |
+| **Time complexity** | O(n * f) â€” n = lines, f = operations per line |
 | **Memory (assoc arrays)** | O(k) where k = unique keys in array |
-| **Sorting** | awk does NOT sort — pipe to sort |
+| **Sorting** | awk does NOT sort â€” pipe to sort |
 | **Edge: Field separator** | Default is whitespace (any run of spaces/tabs) |
-| **Edge: Empty fields** | `:a::b:` with -F: → 4 fields, $2 and $3 are empty |
+| **Edge: Empty fields** | `:a::b:` with -F: â†’ 4 fields, $2 and $3 are empty |
 | **Edge: Missing END block** | Final processing not possible |
 | **Edge: Gawk extensions** | `sorted_in` for sorted array traversal (gawk-specific) |
 
@@ -2290,7 +2290,7 @@ with open("/etc/passwd") as f:
 
 ---
 
-## Section 16: grep/sed/awk — Putting It All Together
+## Section 16: grep/sed/awk â€” Putting It All Together
 
 ### Pattern-Based Text Processing Ecosystem
 
@@ -2340,12 +2340,12 @@ BEGIN { printf "%-30s %s\n", "Directory", "Size"; print "---" }
 cat access.log | awk '{ print substr($4, 2, 3) }' | sort | uniq -c | sort -rn
 ```
 
-### grep/sed/awk — Usage Decision Matrix
+### grep/sed/awk â€” Usage Decision Matrix
 
 | Task | grep | sed | awk | Why |
 |------|------|-----|-----|-----|
 | Find lines containing "error" | YES | | | grep is optimized for search |
-| Replace foo → bar in file | | YES | | sed is the stream editor |
+| Replace foo â†’ bar in file | | YES | | sed is the stream editor |
 | Sum column 3 by column 1 | | | YES | awk has associative arrays |
 | Delete lines 5-10 | | YES | | sed has line addressing |
 | Print unique field values | | | YES | awk can track seen values |
@@ -2365,18 +2365,18 @@ cat access.log | awk '{ print substr($4, 2, 3) }' | sort | uniq -c | sort -rn
 
 # Current shell execution: variables persist
 var="original"
-. ./sub_script.sh    # Source — runs in current shell
+. ./sub_script.sh    # Source â€” runs in current shell
 # OR
 source ./sub_script.sh  # Same as above
 
 # Subshell execution: changes are isolated
 var="original"
 ( var="modified"; echo "Inside: $var" )   # Subshell
-echo "Outside: $var"     # Still "original" — subshell can't affect parent!
+echo "Outside: $var"     # Still "original" â€” subshell can't affect parent!
 
 # Command grouping in current shell
 { var="modified"; echo "Inside: $var"; }  # Same shell
-echo "Outside: $var"     # Now "modified" — no subshell!
+echo "Outside: $var"     # Now "modified" â€” no subshell!
 ```
 
 | Aspect | Subshell `( )` | Current Shell `{ }` | Sourcing `. file` |
@@ -2426,9 +2426,9 @@ Using "$*":
 ```
 
 **Key Difference**:
-- `"$@"` preserves argument boundaries — each quoted arg stays together
-- `$*` without quotes — all args split by IFS (space)
-- `"$*"` — all args concatenated into one string with first IFS character
+- `"$@"` preserves argument boundaries â€” each quoted arg stays together
+- `$*` without quotes â€” all args split by IFS (space)
+- `"$*"` â€” all args concatenated into one string with first IFS character
 
 ### Exit Code Handling
 
@@ -2519,7 +2519,7 @@ assert() {
 }
 ```
 
-### Advanced Debugging — The xtrace PS4 Prompt
+### Advanced Debugging â€” The xtrace PS4 Prompt
 
 ```bash
 #!/bin/bash
@@ -2543,16 +2543,16 @@ set +x
 10
 ```
 
-### Interview Corner — Complexity & A&D
+### Interview Corner â€” Complexity & A&D
 
 | Aspect | Analysis |
 |--------|----------|
 | **Subshell** | Fork + exec: O(1) but expensive for tightly-looping scripts |
-| **Source (.)** | No fork — O(1) constant cost regardless of file size |
+| **Source (.)** | No fork â€” O(1) constant cost regardless of file size |
 | **$@ vs $*** | $@ preserves IFS splits; $* joins; critical for filenames with spaces |
-| **Exit code 0** | NOT boolean false — 0 = success in shell! |
+| **Exit code 0** | NOT boolean false â€” 0 = success in shell! |
 | **Edge: `exit 256`** | Wraps to 0! Valid range is 0-255 |
-| **Edge: `set -e` gotcha** | Exits on ANY unchecked failure — can be surprising with grep no-match |
+| **Edge: `set -e` gotcha** | Exits on ANY unchecked failure â€” can be surprising with grep no-match |
 | **Edge: Debugging fork** | `set -x` in subshell only traces that subshell |
 
 ---
@@ -2771,7 +2771,7 @@ rotate_logs() {
     # Compress current log
     gzip -c "$log_file" > "${base}_$(date +%Y%m%d_%H%M%S).log.gz"
     
-    # Truncate original (don't delete — writing process needs fd)
+    # Truncate original (don't delete â€” writing process needs fd)
     : > "$log_file"
     
     echo "Rotated: $log_file ($((size / 1024 / 1024)) MB)"
@@ -2936,7 +2936,7 @@ validate_file "$2" "config"
 | Edge Case | Problem | Solution |
 |-----------|---------|----------|
 | Filename with spaces | `for f in $(ls)` splits on spaces | `for f in *` |
-| Empty variable | `rm -rf $var` with var="" → `rm -rf /` | `rm -rf "${var:?}"` |
+| Empty variable | `rm -rf $var` with var="" â†’ `rm -rf /` | `rm -rf "${var:?}"` |
 | Newline in filename | `while read line` stops at newline | `read -d ''` with null delimiter |
 | Quoting in [ ] | `[ $var = "" ]` fails if var is empty | `[ "$var" = "" ]` |
 | Double-escape in sed | `sed "s/$var/.../"` breaks if var has / | Use `|` delimiter: `sed "s|$var||"` |
@@ -2969,7 +2969,7 @@ validate_file "$2" "config"
 - Subshells `( )` isolate changes; sourcing `. file` executes in current shell
 - Debug with `set -x`, syntax check with `bash -n`, trace with `bash -v`
 
-## TypeScript Implementation — Shell Interpreter Simulator
+## TypeScript Implementation â€” Shell Interpreter Simulator
 
 ```typescript
 /**
@@ -3039,7 +3039,7 @@ class ShellParser {
   }
 }
 
-/** Execute a command AST (simulated — prints what the kernel would do) */
+/** Execute a command AST (simulated â€” prints what the kernel would do) */
 class ShellExecutor {
   private fileSystem: Map<string, string> = new Map();
 
@@ -3071,9 +3071,9 @@ class ShellExecutor {
 
     // Handle pipe
     if (ast.pipeTo) {
-      console.log(`[KERNEL] pipe() created — fd[0] for reading, fd[1] for writing`);
-      console.log(`[KERNEL] stdout of ${ast.program} → pipe fd[1]`);
-      console.log(`[KERNEL] pipe fd[0] → stdin of ${ast.pipeTo.program}`);
+      console.log(`[KERNEL] pipe() created â€” fd[0] for reading, fd[1] for writing`);
+      console.log(`[KERNEL] stdout of ${ast.program} â†’ pipe fd[1]`);
+      console.log(`[KERNEL] pipe fd[0] â†’ stdin of ${ast.pipeTo.program}`);
       this.execute(ast.pipeTo);
     }
 
@@ -3120,7 +3120,7 @@ shell.runCommand('unknown_command');
 | **$@** | All arguments as separate words (use "$@" to preserve quoting) |
 | **$#** | Number of positional parameters |
 | **stdin/stdout/stderr** | Standard input (0), output (1), error (2) |
-| **Shebang** | #!/bin/bash — tells kernel to use Bash |
+| **Shebang** | #!/bin/bash â€” tells kernel to use Bash |
 | **PID** | Process ID ($$ = current script, $! = last background) |
 | **EOF** | End-of-file; here-document delimiter |
 

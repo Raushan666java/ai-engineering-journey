@@ -1,4 +1,4 @@
-# Chapter 28: Finance & FinTech Agents
+﻿# Chapter 28: Finance & FinTech Agents
 
 > **Previous:** [Healthcare](./27-healthcare.md) | **Next:** [Education](./29-education.md)
 
@@ -19,16 +19,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/28-finance/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/28-finance/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/28-finance/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/28-finance/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/28-finance/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/28-finance/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/28-finance/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/28-finance/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/28-finance/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/28-finance/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/28-finance/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/28-finance/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -1475,7 +1475,7 @@ PROMPT;
 
 > **One-Sentence Takeaway:** Trading signal agents analyze market data and generate buy/sell signals based on defined strategies.
 
-Trading signal agents ingest market data Ã¢â‚¬â€ prices, volumes, economic indicators Ã¢â‚¬â€ and generate buy, sell, or hold signals with assigned conviction levels and risk parameters.
+Trading signal agents ingest market data ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â prices, volumes, economic indicators ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â and generate buy, sell, or hold signals with assigned conviction levels and risk parameters.
 
 #### The TradingSignalAgent
 
@@ -2977,7 +2977,7 @@ class ReconciliationRecord extends Model
 Finance and FinTech agents bring AI-powered automation to the most regulated sector in software. This chapter covered:
 
 - **Financial data models**: PCI-DSS-aware `Account` and `Transaction` models with field-level encryption, soft deletes, and immutable `AuditTrail` logging for every mutation
-- **Fraud detection**: A `FraudDetectionAgent` combining rule-based velocity, amount, and age checks with AI risk scoring Ã¢â‚¬â€ plus a `TransactionMonitor` service for real-time screening and alert dispatch
+- **Fraud detection**: A `FraudDetectionAgent` combining rule-based velocity, amount, and age checks with AI risk scoring ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â plus a `TransactionMonitor` service for real-time screening and alert dispatch
 - **Transaction monitoring**: A `TransactionMonitoringAgent` that runs threshold analysis, statistical outlier detection, and AI anomaly assessment on transaction batches with severity-based multi-channel alerts
 - **KYC/AML verification**: A `KycVerificationAgent` that analyzes identity documents, screens global watchlists with fuzzy name matching, and produces risk profiles backed by `KycVerification` and `WatchlistEntry` models
 - **Credit scoring**: A `CreditScoringAgent` that gathers debt-to-income, utilization, delinquency, and history data, applies a weighted scoring formula, and produces approved amounts with AI-adjusted interest rates

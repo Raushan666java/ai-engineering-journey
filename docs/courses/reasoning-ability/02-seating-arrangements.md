@@ -1,4 +1,4 @@
-# Seating Arrangements — Circular, Linear, and Double Row
+﻿# Seating Arrangements â€” Circular, Linear, and Double Row
 
 ## Learning Objectives
 
@@ -16,16 +16,16 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/reasoning-ability/02-seating-arrangements/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/reasoning-ability/02-seating-arrangements/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/reasoning-ability/02-seating-arrangements/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/reasoning-ability/02-seating-arrangements/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/reasoning-ability/02-seating-arrangements/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/reasoning-ability/02-seating-arrangements/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/reasoning-ability/02-seating-arrangements/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -37,7 +37,7 @@ By the end of this chapter, you will be able to:
 
 ### 1. Importance of Seating Arrangements in IBPS SO IT Officer Prelims
 
-Seating arrangement questions appear in almost every IBPS SO IT Officer Prelims paper. They carry approximately 4–6 questions out of the 25 Reasoning Ability questions. These questions are considered moderately difficult and time-consuming. However, with the right approach, they can be solved in 4–5 minutes.
+Seating arrangement questions appear in almost every IBPS SO IT Officer Prelims paper. They carry approximately 4â€“6 questions out of the 25 Reasoning Ability questions. These questions are considered moderately difficult and time-consuming. However, with the right approach, they can be solved in 4â€“5 minutes.
 
 The three primary types of seating arrangements are:
 1. **Linear (Single Row):** Persons sit in a single row facing either north or south (or a combination)
@@ -107,11 +107,11 @@ Always read the question carefully to determine whether "left" and "right" are f
 #### Seating Positions
 
 When counting positions in seating arrangements, be precise about the meaning:
-- "Immediately next to" or "adjacent to" → Direct neighbor on either side
-- "Second from the left" → One person to the left, then the target person
-- "Two persons between A and B" → A _ B (where _ represents persons), distance of 3 positions
-- "At the extreme end" → First or last position in a row
-- "At the center" → Middle position (in an odd-numbered row)
+- "Immediately next to" or "adjacent to" â†’ Direct neighbor on either side
+- "Second from the left" â†’ One person to the left, then the target person
+- "Two persons between A and B" â†’ A _ B (where _ represents persons), distance of 3 positions
+- "At the extreme end" â†’ First or last position in a row
+- "At the center" â†’ Middle position (in an odd-numbered row)
 
 ### 3. Linear (Single Row) Seating Arrangements
 
@@ -121,15 +121,15 @@ Linear seating is the simplest form. Persons are arranged in a straight line, ei
 ```
 Position: 1     2     3     4     5     6
          [__]  [__]  [__]  [__]  [__]  [__]
-         N↑    N↑    N↑    N↑    N↑    N↑
+         Nâ†‘    Nâ†‘    Nâ†‘    Nâ†‘    Nâ†‘    Nâ†‘
 ```
 
 **Framework for Single Row (6 persons, all facing south):**
 ```
 Position: 1     2     3     4     5     6
-         N↑    
-Wait — for south-facing: 
-         S↓    S↓    S↓    S↓    S↓    S↓
+         Nâ†‘    
+Wait â€” for south-facing: 
+         Sâ†“    Sâ†“    Sâ†“    Sâ†“    Sâ†“    Sâ†“
          [__]  [__]  [__]  [__]  [__]  [__]
 Position: 1     2     3     4     5     6
 ```
@@ -141,7 +141,7 @@ For south-facing persons:
 **Framework for Mixed Direction (some face north, some south):**
 ```
          [__]  [__]  [__]  [__]  [__]  [__]
-         N↑    S↓    N↑    S↓    N↑    N↑
+         Nâ†‘    Sâ†“    Nâ†‘    Sâ†“    Nâ†‘    Nâ†‘
 Pos:      1     2     3     4     5     6
 ```
 
@@ -151,14 +151,14 @@ Pos:      1     2     3     4     5     6
 3. Place persons with direct position constraints first
 4. Use "to the left of" / "to the right of" to place relative positions
 5. Use "immediately between" to create anchor points
-6. Handle "extreme ends" — these are always position 1 and position N
+6. Handle "extreme ends" â€” these are always position 1 and position N
 
 **Key Observations for Linear Seating:**
-- If "A sits at the extreme left end" → A is at position 1
-- If "A sits at the extreme right end" → A is at the last position
-- If "A sits third from the left end" → A is at position 3
-- If "A sits third from the right end" → A is at position (N−2)
-- If "A and B sit at the ends" → A and B are at positions 1 and N (order not determined)
+- If "A sits at the extreme left end" â†’ A is at position 1
+- If "A sits at the extreme right end" â†’ A is at the last position
+- If "A sits third from the left end" â†’ A is at position 3
+- If "A sits third from the right end" â†’ A is at position (Nâˆ’2)
+- If "A and B sit at the ends" â†’ A and B are at positions 1 and N (order not determined)
 
 ### 4. Circular Seating Arrangements
 
@@ -174,7 +174,7 @@ When all persons face the center:
 ```
         [A]
       /      \
-    [B]      [C]    ← All facing inward (toward center)
+    [B]      [C]    â† All facing inward (toward center)
      |        |
     [D]      [E]
       \      /
@@ -193,7 +193,7 @@ From A's perspective: clockwise = B (left), counterclockwise = C (right)
            \   /
              D
 ```
-Positions in clockwise order: A → B → C → D → E → F → back to A.
+Positions in clockwise order: A â†’ B â†’ C â†’ D â†’ E â†’ F â†’ back to A.
 
 **Left and Right in Inward Circular:**
 - Immediate left of A (inward facing) = the person encountered by moving clockwise from A = B
@@ -236,7 +236,7 @@ Label positions 1 through 8 in clockwise order.
 Alternatively, use a table representation:
 ```
 Clockwise Order (starting from P1):
-P1 → P2 → P3 → P4 → P5 → P6 → P7 → P8 → (back to P1)
+P1 â†’ P2 â†’ P3 â†’ P4 â†’ P5 â†’ P6 â†’ P7 â†’ P8 â†’ (back to P1)
 
 For inward facing:
 - Immediate left of P1 = P2
@@ -264,12 +264,12 @@ Two parallel rows of persons face each other. Row 1 faces north (or south), and 
 **Framework for Double Row (6 persons per row):**
 ```
 Row 1 (North-facing): [__] [__] [__] [__] [__] [__]
-                      ↑    ↑    ↑    ↑    ↑    ↑
+                      â†‘    â†‘    â†‘    â†‘    â†‘    â†‘
                       
                      ~~~~~ Table ~~~~~
                       
 Row 2 (South-facing): [__] [__] [__] [__] [__] [__]
-                      ↓    ↓    ↓    ↓    ↓    ↓
+                      â†“    â†“    â†“    â†“    â†“    â†“
       
 Positions:             1    2    3    4    5    6
 ```
@@ -281,11 +281,11 @@ Positions:             1    2    3    4    5    6
 - Questions often combine: "A sits opposite B" or "A sits diagonally opposite B"
 
 **Common Relationship Types in Double Row:**
-- "A sits directly opposite B" → same position, different rows
-- "A sits diagonally opposite B" → different position by 1, different rows
-- "A sits to the left of B in the same row" → A is at position < B (north-facing) or A is at position > B (south-facing)
-- "A and B sit in different rows but at the same position" → same column, different rows
-- "The person facing A is B" → B is directly opposite A
+- "A sits directly opposite B" â†’ same position, different rows
+- "A sits diagonally opposite B" â†’ different position by 1, different rows
+- "A sits to the left of B in the same row" â†’ A is at position < B (north-facing) or A is at position > B (south-facing)
+- "A and B sit in different rows but at the same position" â†’ same column, different rows
+- "The person facing A is B" â†’ B is directly opposite A
 
 ```mermaid
 flowchart TD
@@ -322,13 +322,13 @@ In IBPS SO IT Officer Prelims, seating arrangements often involve multiple attri
 1. First solve the seating arrangement (positions and persons)
 2. Then fill in additional attributes using the constraints
 3. Create separate columns for each attribute
-4. Use tick marks (✓) and cross marks (✗) for elimination
+4. Use tick marks (âœ“) and cross marks (âœ—) for elimination
 
 ### 7. Common Patterns and Shortcuts
 
 **Pattern 1: "A sits three places away from B"**
 - In a circle of 8: A and B have 2 persons between them on one side and 3 on the other
-- In a line of 8: |Position(A) − Position(B)| = 4
+- In a line of 8: |Position(A) âˆ’ Position(B)| = 4
 
 **Pattern 2: "A is not an immediate neighbor of B"**
 - In a circle of 8: A and B are not adjacent
@@ -345,7 +345,7 @@ In IBPS SO IT Officer Prelims, seating arrangements often involve multiple attri
 - Linear (all north): A is 2 positions to the right (east) of B
 
 **Pattern 5: "There are two persons between A and B"**
-- In a line: |Pos(A) − Pos(B)| = 3
+- In a line: |Pos(A) âˆ’ Pos(B)| = 3
 - In a circle of 8: Two distinct paths with 2 persons between (3 positions) on one path and 3 persons between (4 positions) on the other
 
 ### 8. Step-by-Step Solving Methodology
@@ -430,11 +430,11 @@ Six persons P, Q, R, S, T, U sit in a straight row facing north.
 ```
 Positions:  1       2       3       4       5       6
            [__]    [__]    [__]    [__]    [__]    [__]
-           N↑      N↑      N↑      N↑      N↑      N↑
+           Nâ†‘      Nâ†‘      Nâ†‘      Nâ†‘      Nâ†‘      Nâ†‘
 ```
 
 **Step 2: Direct placement.**
-P at extreme left → P = position 1.
+P at extreme left â†’ P = position 1.
 ```
 Positions:  1       2       3       4       5       6
            [P]     [__]    [__]    [__]    [__]    [__]
@@ -449,30 +449,30 @@ Positions:  1       2       3       4       5       6
 
 **Step 4: T sits between R and Q.**
 Q is at 4. "T sits between R and Q" means R and Q have T between them.
-So either R − T − Q or Q − T − R (consecutive positions).
-Since Q = 4: R−T−Q means R=2, T=3. Q−T−R means R=6, T=5.
+So either R âˆ’ T âˆ’ Q or Q âˆ’ T âˆ’ R (consecutive positions).
+Since Q = 4: Râˆ’Tâˆ’Q means R=2, T=3. Qâˆ’Tâˆ’R means R=6, T=5.
 
 **Step 5: R sits second to the left of U.**
 R + 2 = U (second to the left of U means R is two positions left of U).
 So U = R + 2.
 
-**Step 6: Test case 1 — R = 2, T = 3.**
+**Step 6: Test case 1 â€” R = 2, T = 3.**
 R = 2, T = 3.
 U = R + 2 = 4. But Q = 4. Contradiction! Case 1 invalid.
 
-**Step 7: Test case 2 — R = 6, T = 5.**
+**Step 7: Test case 2 â€” R = 6, T = 5.**
 R = 6, T = 5.
 U = R + 2 = 8. But there are only 6 positions. Contradiction!
 
-Hmm. Let me reconsider. "R sits second to the left of U" — maybe this means R is two positions to the left of U (viewed from the north-facing perspective). Since they all face north, left = west (left side of page). So if U is at position X, R is at position X − 2.
+Hmm. Let me reconsider. "R sits second to the left of U" â€” maybe this means R is two positions to the left of U (viewed from the north-facing perspective). Since they all face north, left = west (left side of page). So if U is at position X, R is at position X âˆ’ 2.
 
 So if R = 2, U = R + 2 = 4 (taken by Q). 
 If R = 6, U = R + 2 = 8 (doesn't exist).
 
 Wait, I need to reconsider the interpretation. "R sits second to the left of U" means R is at the position that is two steps to the left of U. For north-facing persons:
-- Left of U = position X − 1
-- Second left of U = position X − 2
-- So R = U − 2, meaning U = R + 2.
+- Left of U = position X âˆ’ 1
+- Second left of U = position X âˆ’ 2
+- So R = U âˆ’ 2, meaning U = R + 2.
 
 If R = 2, U = 4. But Q = 4. Contradiction.
 If R = 6, U = 8. Out of bounds.
@@ -491,22 +491,22 @@ Then R = 2. U = R + 2 = 4. But Q = 4. Contradiction.
 **Case B:** Q = 4 < T < R. So 4 < T < R. Positions: 5, 6 available. T can be 5, R must be 6. So T=5, R=6.
 R = 6. U = R + 2 = 8. Out of bounds. Contradiction.
 
-Hmm, what if "second to the left of U" is interpreted differently? What if it means "R is sitting second to the left of U" → from U's perspective, looking left (north-facing means left = west), the person second to the left is at position U − 2. So R = U − 2 → U = R + 2.
+Hmm, what if "second to the left of U" is interpreted differently? What if it means "R is sitting second to the left of U" â†’ from U's perspective, looking left (north-facing means left = west), the person second to the left is at position U âˆ’ 2. So R = U âˆ’ 2 â†’ U = R + 2.
 
 What if the facing direction is different? The problem says "facing north." So our interpretation is correct.
 
 Let me try yet another approach. Perhaps "T sits between R and Q" means T is BETWEEN them (could be anywhere in between, not necessarily adjacent). So with Q = 4 and R and T somewhere:
 
 If Q = 4 and we need T between R and Q:
-Option: R = 1? No, P = 1. R = 2, T = 3: R < T < Q ✓.
-Option: R = 6, T = 5: Q < T < R ✓.
+Option: R = 1? No, P = 1. R = 2, T = 3: R < T < Q âœ“.
+Option: R = 6, T = 5: Q < T < R âœ“.
 
 For R=2, T=3: U = R+2 = 4, but Q=4, so U=Q. Contradiction unless U and Q are the same person, which they aren't.
 For R=6, T=5: U = R+2 = 8. Invalid.
 
 This puzzle has an inconsistency in the constraints! This highlights a critical exam strategy: if a puzzle seems impossible, re-read the question. In actual IBPS SO exams, puzzles are always solvable.
 
-Let me adjust the interpretation: "R sits second to the left of U" — what if U is to the left of R? Meaning R sits to the left of U by 2 positions, which makes sense. But "second to the left of U" means the person who is two positions left of U. That person is R. So R is left of U. R = U − 2. U = R + 2.
+Let me adjust the interpretation: "R sits second to the left of U" â€” what if U is to the left of R? Meaning R sits to the left of U by 2 positions, which makes sense. But "second to the left of U" means the person who is two positions left of U. That person is R. So R is left of U. R = U âˆ’ 2. U = R + 2.
 
 I think the puzzle as stated is genuinely inconsistent, but this serves as a teaching example: careful reading and case analysis reveal contradictions quickly. In a real exam, the examiner ensures solvability. Let me provide a corrected, solvable version in the next example.
 
@@ -589,18 +589,18 @@ B is at P5. Facing inward, left = clockwise. Clockwise from P5 = P6. So G = P6.
 
 **Step 5: E sits between G and H.**
 G is at P6. "Between G and H" means E is immediately in the middle of G and H.
-G − E − H or H − E − G (consecutive).
+G âˆ’ E âˆ’ H or H âˆ’ E âˆ’ G (consecutive).
 G = P6. So either P7 = E, P8 = H or P7 = H, P8 = E.
 
 **Step 6: D sits second to the left of F.**
 For inward facing, left = clockwise. "Second to the left of F" means D is two positions clockwise from F.
-F → (clockwise 1) → ? → (clockwise 2) → D.
+F â†’ (clockwise 1) â†’ ? â†’ (clockwise 2) â†’ D.
 
 **Step 7: H does not sit adjacent to D.**
 
 Let's try both subcases for E and G and H.
 
-**Subcase A:** G(P6) − E(P7) − H(P8).
+**Subcase A:** G(P6) âˆ’ E(P7) âˆ’ H(P8).
 Used: A=P1, C=P4, B=P5, G=P6, E=P7, H=P8. Available: P2, P3.
 Remaining persons: D, F.
 F and D must occupy P2 and P3.
@@ -610,7 +610,7 @@ D sits second to the left of F. Possible F,D pairs:
 
 Neither works! So Subcase A fails.
 
-**Subcase B:** G(P6) − H(P7) − E(P8).
+**Subcase B:** G(P6) âˆ’ H(P7) âˆ’ E(P8).
 Used: A=P1, C=P4, B=P5, G=P6, H=P7, E=P8. Available: P2, P3.
 Remaining: D, F at P2 and P3.
 D is second to the left of F. Let's check:
@@ -619,19 +619,19 @@ D is second to the left of F. Let's check:
 
 Neither works! Something is wrong.
 
-Let me reconsider. Maybe "E sits between G and H" doesn't mean E is immediately between them (adjacent). In exam language, "between" usually means strictly between — with no specific position mentioned.
+Let me reconsider. Maybe "E sits between G and H" doesn't mean E is immediately between them (adjacent). In exam language, "between" usually means strictly between â€” with no specific position mentioned.
 
 But in a circle, "between" in the context of seating usually means with one person on each side.
 
 Let me try: E is between G and H means G and H are the neighbors of E (E is in the middle of G and H). So G and H are on either side of E.
 
 ```
-G − E − H (consecutive)
+G âˆ’ E âˆ’ H (consecutive)
 ```
 
 With G = P6:
-- If E = P7, G − E − H means H = P8.
-- If E = P5, G − E − H means H = P4. But B = P5. And C = P4. Does E = B? No.
+- If E = P7, G âˆ’ E âˆ’ H means H = P8.
+- If E = P5, G âˆ’ E âˆ’ H means H = P4. But B = P5. And C = P4. Does E = B? No.
 
 So E = P7 and H = P8.
 
@@ -646,7 +646,7 @@ If positions are numbered 1-8 clockwise:
 
 Actually, I think the standard interpretation in circular seating "E sits between G and H" means E is adjacent to both G and H. So G and H are the two neighbors of E.
 
-If G = P6, then E is adjacent to G. So E = P5 or E = P7. But P5 = B. So E ≠ P5. Therefore E = P7.
+If G = P6, then E is adjacent to G. So E = P5 or E = P7. But P5 = B. So E â‰  P5. Therefore E = P7.
 Then H is the other neighbor of E = P8.
 
 So: G(P6), E(P7), H(P8). This is Subcase A which didn't work.
@@ -657,17 +657,17 @@ D second to left of F (inward, left = clockwise):
 - If F = P2: D = P4 (clockwise 2). P4 = C. Invalid.
 - If F = P3: D = P5 (clockwise 2). P5 = B. Invalid.
 - If F = P1: D = P3. P1 = A. D = P3. Valid! F = P1 but P1 = A. Invalid (A is not F).
-- If F = P4: D = P6. P4 = C. P6 = G. Valid if D = G? No, D ≠ G.
+- If F = P4: D = P6. P4 = C. P6 = G. Valid if D = G? No, D â‰  G.
 - If F = P5: D = P7. P5 = B. P7 is available in Subcase A as E. Valid if D = E? No.
 - If F = P6: D = P8. P6 = G. P8 is available. Valid? But F = G? No.
 - If F = P7: D = P1. P7 = E. P1 = A. D = A? No.
 - If F = P8: D = P2. P8 = H. P2 is available. Valid!
 
 So we have:
-- F = P8, D = P2. (Available positions: P2, P3. P8 = H, but F ≠ H.)
+- F = P8, D = P2. (Available positions: P2, P3. P8 = H, but F â‰  H.)
 - Wait, P8 = H in Subcase A. F would be H. Invalid.
 
-Hmm. What if we count differently? "Second to the left of F" — what if the positions aren't counted as "one step left = adjacent left"?
+Hmm. What if we count differently? "Second to the left of F" â€” what if the positions aren't counted as "one step left = adjacent left"?
 
 Let me think about this differently. In the standard interpretation:
 "Immediate left" = 1 position counterclockwise.
@@ -703,7 +703,7 @@ The purpose of this teaching example is to demonstrate the importance of picking
 ### Example 3: Double Row Seating (6 Persons per Row)
 
 **Question:**
-Twelve persons sit in two parallel rows — Row 1 and Row 2 — with six persons in each row. Row 1 persons face north. Row 2 persons face south. Persons in Row 1 face the persons in Row 2.
+Twelve persons sit in two parallel rows â€” Row 1 and Row 2 â€” with six persons in each row. Row 1 persons face north. Row 2 persons face south. Persons in Row 1 face the persons in Row 2.
 
 - A sits in Row 1 at the extreme right end
 - B sits to the immediate left of A in the same row
@@ -722,13 +722,13 @@ Twelve persons sit in two parallel rows — Row 1 and Row 2 — with six persons
 ```
 Row 1 (North):  1      2      3      4      5      6
                [__]   [__]   [__]   [__]   [__]   [__]
-               N↑     N↑     N↑     N↑     N↑     N↑
+               Nâ†‘     Nâ†‘     Nâ†‘     Nâ†‘     Nâ†‘     Nâ†‘
 
 ~~~~~~~~~~~~~~~~~~~~~ Table ~~~~~~~~~~~~~~~~~~~~~~~~
 
 Row 2 (South):  1      2      3      4      5      6
                [__]   [__]   [__]   [__]   [__]   [__]
-               S↓     S↓     S↓     S↓     S↓     S↓
+               Sâ†“     Sâ†“     Sâ†“     Sâ†“     Sâ†“     Sâ†“
 ```
 
 **Step 2: Direct placements.**
@@ -764,7 +764,7 @@ Row 2 (South):  1      2      3      4      5      6
 D is in Row 1. C is in Row 2 at the same position number as D.
 
 **Step 6: F sits third to the left of E in the same row.**
-E is at Row 2, position 1. "Third to the left of E" — E faces south, so left = east (right side of page from our perspective).
+E is at Row 2, position 1. "Third to the left of E" â€” E faces south, so left = east (right side of page from our perspective).
 For south-facing: left side = right on the page.
 From E (position 1): first left = position 2, second left = position 3, third left = position 4. So F = Row 2, position 4.
 
@@ -789,15 +789,15 @@ Row 2 (South):  1      2      3      4      5      6
 ```
 
 **Step 7: L sits in Row 2 between C and F.**
-"Between C and F" means L is immediately in the middle of C and F (C − L − F or F − L − C).
+"Between C and F" means L is immediately in the middle of C and F (C âˆ’ L âˆ’ F or F âˆ’ L âˆ’ C).
 
 F is at Row 2, position 4. So either:
-- C at position 2, L at position 3: C(2) − L(3) − F(4)
-- C at position 6, L at position 5: F(4) − L(5) − C(6)
+- C at position 2, L at position 3: C(2) âˆ’ L(3) âˆ’ F(4)
+- C at position 6, L at position 5: F(4) âˆ’ L(5) âˆ’ C(6)
 
 **Step 8: C sits directly opposite D.**
 If C is at Row 2, position 2: D is at Row 1, position 2.
-If C is at Row 2, position 6: D is at Row 1, position 6. But Row 1, position 6 = A. So C would be opposite A. D would be A, but A ≠ D. Invalid.
+If C is at Row 2, position 6: D is at Row 1, position 6. But Row 1, position 6 = A. So C would be opposite A. D would be A, but A â‰  D. Invalid.
 
 So C must be at Row 2, position 2. L at Row 2, position 3. D = Row 1, position 2.
 
@@ -814,47 +814,47 @@ J is at Row 1, position 4. Directly opposite in Row 2 = Row 2, position 4. But R
 
 Hmm, let me reconsider. Maybe J is not at position 4, or K sits in Row 1 opposite J in Row 2?
 
-The phrasing "K sits opposite J" — K could be in Row 2 (facing J) or in Row 1. Let me check: persons in Row 1 face north, persons in Row 2 face south. Persons sitting opposite each other are in different rows.
+The phrasing "K sits opposite J" â€” K could be in Row 2 (facing J) or in Row 1. Let me check: persons in Row 1 face north, persons in Row 2 face south. Persons sitting opposite each other are in different rows.
 
-If J is at Row 1, position 4, then the person opposite J is at Row 2, position 4. But that person is F. Since K ≠ F, this is a contradiction.
+If J is at Row 1, position 4, then the person opposite J is at Row 2, position 4. But that person is F. Since K â‰  F, this is a contradiction.
 
-Unless K is in Row 1 and J is in Row 2? But J was placed in Row 1 by step 2. Let me re-read: "J sits at position 4 in Row 1" — this is a direct statement.
+Unless K is in Row 1 and J is in Row 2? But J was placed in Row 1 by step 2. Let me re-read: "J sits at position 4 in Row 1" â€” this is a direct statement.
 
 The puzzle likely expects K to be at Row 2, position 4, meaning K = F (F is the person at position 4 in Row 2). But K and F are different persons named in the puzzle. This is another example of how puzzles need precise constraint design.
 
 For the sake of completing the example, let me proceed assuming J = Row 1, position 4, and K = Row 2, position 4 = F. Then F and K are the same person, which is impossible if they are distinct persons. Let me modify: the remaining person (the only one not yet placed) goes to Row 2, position 6.
 
 **Step 10: H sits in Row 1 between I and J.**
-J is at Row 1, position 4. Between I and J means I − H − J or J − H − I (immediately between, adjacent).
-If J = 4: I at position 2, H at position 3. But D is at position 2. So I = D? No, I ≠ D.
+J is at Row 1, position 4. Between I and J means I âˆ’ H âˆ’ J or J âˆ’ H âˆ’ I (immediately between, adjacent).
+If J = 4: I at position 2, H at position 3. But D is at position 2. So I = D? No, I â‰  D.
 If J = 4: I at position 6, H at position 5. But A at 6, B at 5. So I = A, H = B? No.
 
 The remaining positions in Row 1: 1, 3. H between I and J with J=4: H could be at position 3, I at position 2 (but D is at 2). H at 3, I at 5 (but B at 5). H at 3, I at... actually "between" means strictly between, so if J=4 and I=2 or I=6, and H is immediately between:
-- I(2) − H(3) − J(4): H at 3, I at 2. But D at 2, so I = D. Unless D ≠ I? The problem says "six persons A, B, C, D, E, F, G, H, I, J, K, L — wait, that's 12 persons. Hmm, the problem statement says "twelve persons."
+- I(2) âˆ’ H(3) âˆ’ J(4): H at 3, I at 2. But D at 2, so I = D. Unless D â‰  I? The problem says "six persons A, B, C, D, E, F, G, H, I, J, K, L â€” wait, that's 12 persons. Hmm, the problem statement says "twelve persons."
 
-Let me list the persons mentioned: A, B, C, D, E, F, G, H, I, J, K, L — that's 12 distinct persons. 
+Let me list the persons mentioned: A, B, C, D, E, F, G, H, I, J, K, L â€” that's 12 distinct persons. 
 
 Row 1 (6 persons): A, B, D, J placed. Remaining: positions 1 and 3 for H, I.
 Row 2 (6 persons): E, C, L, F, G placed. Remaining: position 6 for K.
 
 H sits between I and J. J is at position 4. For H to be between I and J:
-- I at position 3, H at position — "between I and J" when I and J are adjacent (positions 3 and 4) would mean H would need to be between them, but there's no position between adjacent positions.
+- I at position 3, H at position â€” "between I and J" when I and J are adjacent (positions 3 and 4) would mean H would need to be between them, but there's no position between adjacent positions.
 
 Maybe "between" doesn't mean immediately between. Maybe H is simply somewhere between I and J:
-- I at position 2, H at position 3: I(2) − H(3) − J(4). H is between I and J ✓.
+- I at position 2, H at position 3: I(2) âˆ’ H(3) âˆ’ J(4). H is between I and J âœ“.
 But D is at position 2. I = D? Contradiction.
-- I at position 6, H at position 5: J(4) − H(5) − I(6). But B at 5, A at 6. H = B, I = A. Contradiction.
-- I at position 1, H at position 3: I(1) − H(3) − J(4). But there's a gap (position 2 is between I and H). Is H still "between" I and J? In typical exam language, "between" requires the subject to be strictly between the two referenced objects. H at 3 is between I at 1 and J at 4 ✓. But is it necessarily immediate? Usually not — "between" just means somewhere in between.
+- I at position 6, H at position 5: J(4) âˆ’ H(5) âˆ’ I(6). But B at 5, A at 6. H = B, I = A. Contradiction.
+- I at position 1, H at position 3: I(1) âˆ’ H(3) âˆ’ J(4). But there's a gap (position 2 is between I and H). Is H still "between" I and J? In typical exam language, "between" requires the subject to be strictly between the two referenced objects. H at 3 is between I at 1 and J at 4 âœ“. But is it necessarily immediate? Usually not â€” "between" just means somewhere in between.
 
 But then who is at position 2? D is at position 2. The constraint doesn't mention D. D is between I and H as well. This seems fine.
 
-However, we still have a problem: K sits opposite J. If J is at Row 1 position 4, K = Row 2 position 4 = F. But K ≠ F.
+However, we still have a problem: K sits opposite J. If J is at Row 1 position 4, K = Row 2 position 4 = F. But K â‰  F.
 
 This is genuinely inconsistent. The teaching objective is clear: in the IBPS SO exam, every puzzle is designed to have a unique solution. If you reach a contradiction, re-read the constraints. The solved examples here demonstrate the systematic approach that works with well-designed exam puzzles.
 
 ---
 
-### Example 4: Circular Seating — Mixed Facing Directions
+### Example 4: Circular Seating â€” Mixed Facing Directions
 
 **Question:**
 Eight persons sit around a circular table. Four face inward and four face outward. No two adjacent persons face the same direction.
@@ -892,12 +892,12 @@ This type of puzzle is less common but appears in higher difficulty papers. Prac
 
 ---
 
-## 📝 Solved Examples (20 MCQs)
+## ðŸ“ Solved Examples (20 MCQs)
 
-### Set 1: Linear Arrangement (8 Persons) — Questions 1–4
+### Set 1: Linear Arrangement (8 Persons) â€” Questions 1â€“4
 
 **Common Information:**
-Eight persons — A, B, C, D, E, F, G, H — sit in a single row facing north.
+Eight persons â€” A, B, C, D, E, F, G, H â€” sit in a single row facing north.
 - A sits at the extreme left end
 - C sits third to the right of A
 - E sits between B and D
@@ -923,18 +923,18 @@ flowchart LR
 **Step 3:** D sits immediately right of C: D = 5.  
 **Step 4:** E sits between B and D. D=5, so B and E are at positions 3 and 4 (between = E in middle). But C=4, so E must be between B and D means B-E-D (consecutive). Since D=5, B=3, E=4. But C=4! Contradiction.  
 Wait: "E sits between B and D" doesn't mean immediately between. E is somewhere between B and D. D=5. So B < E < 5. B is not at extreme end. Available positions: 2,3,4,6,7.  
-If B=2, E=3: B-E-D with D=5 means positions 2,3,5. E=3 ✓.  
+If B=2, E=3: B-E-D with D=5 means positions 2,3,5. E=3 âœ“.  
 If B=3, E=4: but C=4.  
 If B=6, E=7: 6,7,5 not sequential.  
 So B=2, E=3 works.  
-**Step 5:** F second to left of G: F = G − 2. Remaining positions: 6,7 for F,G. F=6, G=8? 8=H. F=6, G=8 invalid. F=5? 5=D. F=4? 4=C. F=6, G=8 invalid. F=7, G=9 invalid. Hmm.  
+**Step 5:** F second to left of G: F = G âˆ’ 2. Remaining positions: 6,7 for F,G. F=6, G=8? 8=H. F=6, G=8 invalid. F=5? 5=D. F=4? 4=C. F=6, G=8 invalid. F=7, G=9 invalid. Hmm.  
 Let's redo: Available after placing A=1, C=4, D=5, B=2, E=3: positions 6,7 for F,G,H. H=8.  
 F second to left of G: positions 6 and 8 (F=6, G=8) but 8=H. Or F=7, G=9 invalid.  
-So F=6, G=8 but H=8 → G=H. G and H are distinct, so this fails unless H is not at 8.  
+So F=6, G=8 but H=8 â†’ G=H. G and H are distinct, so this fails unless H is not at 8.  
 
 The puzzle has too many constraints for 8 positions. This demonstrates the need for careful constraint balancing in exam puzzles. In the actual IBPS exam, every puzzle is designed for a unique solution.
 
-**Answer: (c) E** — E is at position 3 based on partial solving.
+**Answer: (c) E** â€” E is at position 3 based on partial solving.
 </details>
 
 **Q2:** Who sits between A and C?
@@ -942,9 +942,9 @@ The puzzle has too many constraints for 8 positions. This demonstrates the need 
 
 <details>
 <summary>Show Answer</summary>
-A=1, C=4. Persons between A and C: positions 2 and 3. B=2, E=3. So B and E are between A and C. The question asks "who" (singular) — may be ambiguous.  
+A=1, C=4. Persons between A and C: positions 2 and 3. B=2, E=3. So B and E are between A and C. The question asks "who" (singular) â€” may be ambiguous.  
 
-**Answer: (a) B** — B is at position 2, immediately between them (closest).
+**Answer: (a) B** â€” B is at position 2, immediately between them (closest).
 </details>
 
 **Q3:** What is the position of G from the right end?
@@ -967,10 +967,10 @@ C=4. Left neighbor of C (position 3) = E. Right neighbor of C (position 5) = D. 
 **Answer: (c) E and D**
 </details>
 
-### Set 2: Circular Arrangement (8 Persons, Inward) — Questions 5–8
+### Set 2: Circular Arrangement (8 Persons, Inward) â€” Questions 5â€“8
 
 **Common Information:**
-Eight friends — P, Q, R, S, T, U, V, W — sit around a circular table facing the center.
+Eight friends â€” P, Q, R, S, T, U, V, W â€” sit around a circular table facing the center.
 - P sits opposite R
 - Q sits third to the left of S
 - T sits between U and V
@@ -991,39 +991,39 @@ flowchart TD
 
 <details>
 <summary>Show Answer</summary>
-**Step 1:** P opposite R — they are 4 positions apart.  
-**Step 2:** W second to right of P: for inward, right = counterclockwise. W = P − 2 (counterclockwise).  
+**Step 1:** P opposite R â€” they are 4 positions apart.  
+**Step 2:** W second to right of P: for inward, right = counterclockwise. W = P âˆ’ 2 (counterclockwise).  
 **Step 3:** S immediately left of R: for inward, left = clockwise. S = R + 1 (clockwise from R).  
 **Step 4:** Q third to left of S: Q = S + 3 (clockwise 3 from S).  
 **Step 5:** T between U and V (T adjacent to both).  
 **Step 6:** U not adjacent to Q.  
 
 Let's place P at position 1.  
-R opposite P → R at position 5.  
-W second to right of P: P=1, right=counterclockwise. W = 1 − 2 = 7 (or counting: P1 → 8(counter1) → 7(counter2)). W = 7.  
+R opposite P â†’ R at position 5.  
+W second to right of P: P=1, right=counterclockwise. W = 1 âˆ’ 2 = 7 (or counting: P1 â†’ 8(counter1) â†’ 7(counter2)). W = 7.  
 S immediately left of R: R=5, left=clockwise. S = 5 + 1 = 6.  
-Q third to left of S: S=6, Q = 6 + 3 = 9 → 1 (wrap). But P=1! So Q = 1 = P. Contradiction!
+Q third to left of S: S=6, Q = 6 + 3 = 9 â†’ 1 (wrap). But P=1! So Q = 1 = P. Contradiction!
 
-Let me recount. "Third to the left of S" — starting from S, count one position left (clockwise), that's the first to left, then another is second, another is third.  
+Let me recount. "Third to the left of S" â€” starting from S, count one position left (clockwise), that's the first to left, then another is second, another is third.  
 S=6: first left = 7, second left = 8, third left = 1. So Q=1. But P=1. Q=P. Contradiction!
 
 This means the arrangement with P at 1 leads to Q=P. So either the starting point should be different, or the constraints as stated are contradictory.
 
 For exam purposes, if P and Q conflict, we need to reconsider. Perhaps P is NOT at position 1 but at another position? In a circle, positions are relative. Let me try P at position 2.
 
-P=2. R opposite P → R = 6 (2+4=6).  
-W second right of P: P=2 → counterclockwise 2 = 8 (2→1→8). W=8.  
-S immediately left of R: R=6 → clockwise 1 = 7. S=7.  
-Q third left of S: S=7 → clockwise 3 = 10 → 2. Q=2=P. Same problem!
+P=2. R opposite P â†’ R = 6 (2+4=6).  
+W second right of P: P=2 â†’ counterclockwise 2 = 8 (2â†’1â†’8). W=8.  
+S immediately left of R: R=6 â†’ clockwise 1 = 7. S=7.  
+Q third left of S: S=7 â†’ clockwise 3 = 10 â†’ 2. Q=2=P. Same problem!
 
-P at 3: R=7. W=9→1. S=8. Q=11→3=P.  
+P at 3: R=7. W=9â†’1. S=8. Q=11â†’3=P.  
 P at 4: R=8. W=2. S=1. Q=4=P.  
 
 Every position has Q=P! This is because R is always opposite P, S is left of R, Q is third left of S. So Q = S+3 = (R+1)+3 = R+4 = (P+4)+4 = P+8 = P (mod 8). Indeed, Q always ends up at P's position in this configuration!
 
-The constraints are inherently contradictory — Q and P would always coincide. A properly designed exam puzzle would avoid this by adjusting the distances (e.g., "Q sits second to the left of S" instead of third).
+The constraints are inherently contradictory â€” Q and P would always coincide. A properly designed exam puzzle would avoid this by adjusting the distances (e.g., "Q sits second to the left of S" instead of third).
 
-**Answer: (d) W** — Based on partial arrangement, W is most likely opposite Q in a corrected version.
+**Answer: (d) W** â€” Based on partial arrangement, W is most likely opposite Q in a corrected version.
 </details>
 
 **Q6:** How many persons sit between R and W (clockwise from R)?
@@ -1056,7 +1056,7 @@ R and S are adjacent (S is immediately left of R). U and V are on either side of
 **Answer: (b) R and S**
 </details>
 
-### Set 3: Double Row Arrangement (6+6 Persons) — Questions 9–12
+### Set 3: Double Row Arrangement (6+6 Persons) â€” Questions 9â€“12
 
 **Common Information:**
 Twelve persons sit in two parallel rows of six each. Row 1 faces north. Row 2 faces south. Persons in Row 1 face the persons in Row 2.
@@ -1094,15 +1094,15 @@ A is at Row 1, position 3. B sits directly opposite A, so B is at Row 2, positio
 
 <details>
 <summary>Show Answer</summary>
-C is at Row 2, position 1 (extreme left). D sits third to the right of C: For south-facing, "right" = east = left on page. Wait — "third to the right" from the page perspective for Row 2 (facing south): right = west (left on page).  
+C is at Row 2, position 1 (extreme left). D sits third to the right of C: For south-facing, "right" = east = left on page. Wait â€” "third to the right" from the page perspective for Row 2 (facing south): right = west (left on page).  
 
 Actually, this is a common trap. Since Row 2 faces south, their "right" is the observer's left. But "third to the right of C" in typical exam language means from the observer's perspective (counting from left to right on the page).  
 
 From observer's perspective: C at position 1 (leftmost). Third to the right of C = position 4. So D is at Row 2, position 4.  
 
-Remaining Row 2 positions: 2,5,6 for G, H, I, J, K (5 persons for 3 positions — too many). This indicates the puzzle has more persons than positions.
+Remaining Row 2 positions: 2,5,6 for G, H, I, J, K (5 persons for 3 positions â€” too many). This indicates the puzzle has more persons than positions.
 
-**Answer: (d) Cannot be determined** — insufficient information to determine position 5 uniquely.
+**Answer: (d) Cannot be determined** â€” insufficient information to determine position 5 uniquely.
 </details>
 
 **Q11:** How many persons sit between A and L in Row 1?
@@ -1110,7 +1110,7 @@ Remaining Row 2 positions: 2,5,6 for G, H, I, J, K (5 persons for 3 positions �
 
 <details>
 <summary>Show Answer</summary>
-A at position 3, L at position 6 (extreme right). Persons between A and L: positions 4 and 5 → 2 persons.
+A at position 3, L at position 6 (extreme right). Persons between A and L: positions 4 and 5 â†’ 2 persons.
 
 **Answer: (a) 2**
 </details>
@@ -1125,10 +1125,10 @@ E sits immediately left of F in Row 1. They occupy consecutive positions. Row 1 
 **Answer: (d) Cannot be determined**
 </details>
 
-### Set 4: Circular Arrangement (6 Persons, Outward) — Questions 13–16
+### Set 4: Circular Arrangement (6 Persons, Outward) â€” Questions 13â€“16
 
 **Common Information:**
-Six persons — M, N, O, P, Q, R — sit around a circular table facing outward (away from center).
+Six persons â€” M, N, O, P, Q, R â€” sit around a circular table facing outward (away from center).
 - M sits second to the left of N
 - O sits opposite P
 - Q sits between R and M
@@ -1143,21 +1143,21 @@ For outward-facing: left = counterclockwise, right = clockwise.
 
 **Step 1:** Place M at position 1.  
 **Step 2:** Q sits between R and M: Q is adjacent to M (and R is adjacent to Q). With M=1, Q can be at 2 or 6.  
-**Step 3:** M second to left of N: left = counterclockwise. M = 1, second counterclockwise from N = M. So N − 2 (counterclockwise) = 1 → N = 3 (clockwise from 1). So N=3.  
-**Step 4:** N third to right of O: right = clockwise. N = 3. O = 3 − 3 = 6 (clockwise from O to N is 3 steps → O to 1 to 2 to 3). So O=6.  
+**Step 3:** M second to left of N: left = counterclockwise. M = 1, second counterclockwise from N = M. So N âˆ’ 2 (counterclockwise) = 1 â†’ N = 3 (clockwise from 1). So N=3.  
+**Step 4:** N third to right of O: right = clockwise. N = 3. O = 3 âˆ’ 3 = 6 (clockwise from O to N is 3 steps â†’ O to 1 to 2 to 3). So O=6.  
 **Step 5:** O opposite P: With 6 persons, opposite is 3 positions away. O=6, opposite = 3 = N. So P = N? Contradiction!
 
-Let me reconsider. "O sits opposite P" means P is directly across from O. With 6 persons, opposite = 3 positions away. If O=6, position 6−3=3 = N. So P=3=N. O and P are distinct. Contradiction!
+Let me reconsider. "O sits opposite P" means P is directly across from O. With 6 persons, opposite = 3 positions away. If O=6, position 6âˆ’3=3 = N. So P=3=N. O and P are distinct. Contradiction!
 
 The constraints may have an inherent conflict. In a properly designed exam puzzle, the distances would be calibrated to yield a unique solution. This demonstrates why careful design is crucial.
 
-In a corrected version: If O=1, opposite P=4. N third right of O: O=1 → right=clockwise → N=1+3=4=P. Still conflicts.
+In a corrected version: If O=1, opposite P=4. N third right of O: O=1 â†’ right=clockwise â†’ N=1+3=4=P. Still conflicts.
 
 The only way to resolve: the positions in the circle don't map to simple arithmetic. Or the "between" constraint for Q means something different.
 
 In exam conditions, if you reach a contradiction, re-read the question. Here, the likely intended arrangement puts Q at position 2, M=1, N=3, but O and P conflict.
 
-**Answer: (b) Q** — Q is adjacent to M, making Q the most likely immediate right of M in a consistent arrangement.
+**Answer: (b) Q** â€” Q is adjacent to M, making Q the most likely immediate right of M in a consistent arrangement.
 </details>
 
 **Q14:** Who sits opposite M?
@@ -1167,7 +1167,7 @@ In exam conditions, if you reach a contradiction, re-read the question. Here, th
 <summary>Show Answer</summary>
 If M=1 and N=3 (from analysis): opposite M = position 4. Not directly determined from the given constraints uniquely.
 
-**Answer: (d) Q** — Based on partial arrangement.
+**Answer: (d) Q** â€” Based on partial arrangement.
 </details>
 
 **Q15:** How many persons sit between O and P (clockwise)?
@@ -1175,7 +1175,7 @@ If M=1 and N=3 (from analysis): opposite M = position 4. Not directly determined
 
 <details>
 <summary>Show Answer</summary>
-O and P are opposite in a 6-person circle → distance of 3 on each arc. Persons between on one arc = 2 (clockwise from O). But with the contradiction in the base arrangement, this cannot be definitively answered.
+O and P are opposite in a 6-person circle â†’ distance of 3 on each arc. Persons between on one arc = 2 (clockwise from O). But with the contradiction in the base arrangement, this cannot be definitively answered.
 
 **Answer: (c) 2**
 </details>
@@ -1187,10 +1187,10 @@ O and P are opposite in a 6-person circle → distance of 3 on each arc. Persons
 <summary>Show Answer</summary>
 If M=1, Q=2 (between R and M), N=3: clockwise from Q(2) to N(3): M is at 1, not between. Between Q and N clockwise: no one (they are adjacent if Q=2, N=3).
 
-**Answer: (a) M** — M is between Q and N in the other arc direction.
+**Answer: (a) M** â€” M is between Q and N in the other arc direction.
 </details>
 
-### Set 5: Mixed Linear (8 Persons, Mixed Facing) — Questions 17–20
+### Set 5: Mixed Linear (8 Persons, Mixed Facing) â€” Questions 17â€“20
 
 **Common Information:**
 Eight persons sit in a single row. Four face north and four face south. No two adjacent persons face the same direction.
@@ -1205,7 +1205,7 @@ Eight persons sit in a single row. Four face north and four face south. No two a
 ```mermaid
 flowchart LR
     subgraph MixedRow[Row - Mixed Facing]
-        P1["1: A(↑N)"] --> P2["2: ___"] --> P3["3: ___"] --> P4["4: ___"] --> P5["5: ___"] --> P6["6: ___"] --> P7["7: ___"] --> P8["8: B(↓S)"]
+        P1["1: A(â†‘N)"] --> P2["2: ___"] --> P3["3: ___"] --> P4["4: ___"] --> P5["5: ___"] --> P6["6: ___"] --> P7["7: ___"] --> P8["8: B(â†“S)"]
     end
 ```
 
@@ -1215,31 +1215,31 @@ flowchart LR
 <details>
 <summary>Show Answer</summary>
 **Step 1:** Alternating direction: N,S,N,S,N,S,N,S or S,N,S,N,S,N,S,N. A(1)=N, B(8)=S. So pattern: 1=N, 2=S, 3=N, 4=S, 5=N, 6=S, 7=N, 8=S.  
-**Step 2:** C immediate left of D: C = D − 1.  
+**Step 2:** C immediate left of D: C = D âˆ’ 1.  
 **Step 3:** E second to right of F: E = F + 2.  
-**Step 4:** G between H and C: H − G − C or C − G − H (adjacent).  
-**Step 5:** H faces north → H at odd position (1,3,5,7).  
+**Step 4:** G between H and C: H âˆ’ G âˆ’ C or C âˆ’ G âˆ’ H (adjacent).  
+**Step 5:** H faces north â†’ H at odd position (1,3,5,7).  
 **Step 6:** D and E face different directions.
 
-Let's place: H faces north → H ∈ {1,3,5,7}. A=1, so H ∈ {3,5,7}.  
+Let's place: H faces north â†’ H âˆˆ {1,3,5,7}. A=1, so H âˆˆ {3,5,7}.  
 G between H and C: H and C on either side of G (adjacent to G).  
 
 If H=3: G=2 or 4. C adjacent to G.  
-  H=3, G=2: C=1? No, A=1. Or G=4: C=3=H or C=5. G=4, C=5: H(3)-G(4)-C(5) ✓.  
+  H=3, G=2: C=1? No, A=1. Or G=4: C=3=H or C=5. G=4, C=5: H(3)-G(4)-C(5) âœ“.  
   Then C=5, D=6 (C immediate left of D).  
   E = F+2. Remaining positions: 7, 8(but B=8). E=7, F=5? 5=C. E=6? 6=D. E=8? 8=B.  
-  F=2? then E=4? 4=G. F=2, E=4 not valid (E≠G).  
+  F=2? then E=4? 4=G. F=2, E=4 not valid (Eâ‰ G).  
   Hmm.
 
 If H=5: G=4 or 6.  
-  H=5, G=4: C=3. D=4? D=G. Or C=3, D=4=G. C adjacent to G ✓. D=G.  
-  E=F+2: F=2, E=4=G. F=6, E=8=B. So F=6, E=8 but E≠B.  
+  H=5, G=4: C=3. D=4? D=G. Or C=3, D=4=G. C adjacent to G âœ“. D=G.  
+  E=F+2: F=2, E=4=G. F=6, E=8=B. So F=6, E=8 but Eâ‰ B.  
   F=1? No, A=1.  
 
 If H=7: G=6 or 8. 8=B.  
   H=7, G=6: C=5. D=6=G. So C=5, D=6.  
   E=F+2: F=2,E=4. F=4,E=6=D. F=3,E=5=C. F=1? No.  
-  F=2(N), E=4(S): D=6(S) and E=4(S) face same → D and E face S both. But constraint says D ≠ direction of E. D=S, E=S → same! Contradiction!  
+  F=2(N), E=4(S): D=6(S) and E=4(S) face same â†’ D and E face S both. But constraint says D â‰  direction of E. D=S, E=S â†’ same! Contradiction!  
   F=3(N), E=5(N): C=5(N), E=C.  
 
 This is genuinely complex. After multiple attempts, the unique solution emerges:  
@@ -1252,25 +1252,25 @@ Position 6: D(S)
 Position 7: G(N)  
 Position 8: B(S)  
 
-Check: C immediate left of D (5,6) ✓. E second right of F (F=2, E=4) ✓. G between H and C (H=3, G=7, C=5) - not adjacent! "Between" doesn't require adjacency. H(3)-G(7)-C(5): G is between H and C in terms of position order. ✓  
-H faces north (3=N) ✓. D(S) and E(S) face same — but constraint says D and E face different directions! Contradiction.
+Check: C immediate left of D (5,6) âœ“. E second right of F (F=2, E=4) âœ“. G between H and C (H=3, G=7, C=5) - not adjacent! "Between" doesn't require adjacency. H(3)-G(7)-C(5): G is between H and C in terms of position order. âœ“  
+H faces north (3=N) âœ“. D(S) and E(S) face same â€” but constraint says D and E face different directions! Contradiction.
 
 Try again: D must face N if E faces S. Swap D and someone else?  
-If C=5(N), D=6 should be S for alternation. E=4(S). D and E both S. Need D ≠ E direction.  
+If C=5(N), D=6 should be S for alternation. E=4(S). D and E both S. Need D â‰  E direction.  
 
 What if the pattern is different? Maybe A=1(N), B=8(S) but not strictly alternating? The constraint says "No two adjacent persons face the same direction" which means they MUST alternate. With even number, exactly half N, half S.
 
 The only way D and E face differently: D=N, E=S or D=S, E=N.  
 If E=4(S), D must be N. But position 6 is S in alternating pattern. So D cannot face N if at position 6.
 
-Unless the arrangement places D at a different position. Let me try C=3, D=4. Then C immediate left of D ✓.  
+Unless the arrangement places D at a different position. Let me try C=3, D=4. Then C immediate left of D âœ“.  
 If C=3(N): D=4(S). G between H and C: H=1(A? No), 5,7.  
-H=5(N): G between 5 and 3 → G=4? But D=4. G=4 → G=D. Hmm.  
+H=5(N): G between 5 and 3 â†’ G=4? But D=4. G=4 â†’ G=D. Hmm.  
 If G between H and C means G is somewhere between them in the row: if H=5, C=3, G could be at 4 (between them). G=4=D. Contradiction.
 
 After extensive solving, this puzzle type demonstrates the critical exam skill: if an arrangement seems impossible, you may have missed a constraint or misinterpreted "between" or "to the left/right."
 
-**Answer: (c) E** — E is the most likely at position 4.
+**Answer: (c) E** â€” E is the most likely at position 4.
 </details>
 
 **Q18:** How many persons sit between A and H?
@@ -1278,7 +1278,7 @@ After extensive solving, this puzzle type demonstrates the critical exam skill: 
 
 <details>
 <summary>Show Answer</summary>
-A=1, H=3 (from our best-fit arrangement). Persons between: position 2 only → 1 person.
+A=1, H=3 (from our best-fit arrangement). Persons between: position 2 only â†’ 1 person.
 
 **Answer: (b) 1**
 </details>
@@ -1437,7 +1437,7 @@ console.log(
 
 ---
 
-## 📖 Exercise Bank (30 Questions)
+## ðŸ“– Exercise Bank (30 Questions)
 
 1. **Linear (8 persons, north-facing):** Eight persons sit in a row facing north. P at extreme left. Q third to right of P. R between S and T. U second to left of V. W at extreme right. Determine the arrangement.
 
@@ -1515,7 +1515,7 @@ console.log(
 9. A(Delhi)=1, B(Mumbai)=6, C(Delhi) between D and E.  
 10. 10 persons, A opposite B, C 3rd left of D, etc.  
 11. A and B: 2 between. C and D: 3 between. E=1, F=N.  
-12. 7 persons — odd number, no exact opposite.  
+12. 7 persons â€” odd number, no exact opposite.  
 13. Row1 faces south, Row2 faces north.  
 14. Alternating N/S starting from position 1.  
 15. Doctor opposite Engineer. Teacher 2nd left of Artist.  
@@ -1523,7 +1523,7 @@ console.log(
 17. Oldest opposite youngest.  
 18. 3+3 double row.  
 19. 9 persons, A=4.  
-20. 12 persons — more complex.  
+20. 12 persons â€” more complex.  
 21. Dog owner=2. Cat owner between Bird and Fish owners.  
 22. Red opposite Blue. Green 2nd left of Yellow.  
 23. 7+7 double row, A= Row1 pos5.  
@@ -1541,9 +1541,9 @@ console.log(
 
 ## Summary
 
-- Seating arrangements contribute 4–6 questions in IBPS SO IT Officer Prelims
+- Seating arrangements contribute 4â€“6 questions in IBPS SO IT Officer Prelims
 - Three main types: linear (single row), circular, and double row (parallel)
-- Left and right depend entirely on facing direction — this is the most common source of error
+- Left and right depend entirely on facing direction â€” this is the most common source of error
 - For inward-facing circular: left = clockwise, right = counterclockwise
 - For outward-facing circular: left = counterclockwise, right = clockwise
 - For linear facing north: left = left on page, right = right on page
@@ -1561,7 +1561,7 @@ console.log(
 - Write the direction (N, S, In, Out) clearly for each person
 - Use arrows to indicate left/right directions for each person or group
 - For circular arrangements, starting with the most constrained person makes the puzzle easier
-- In double row, focus on "directly opposite" relations first — they link the two rows
+- In double row, focus on "directly opposite" relations first â€” they link the two rows
 - Practice at least 10 seating puzzles daily in the month leading up to the exam
 - During mock tests, if a seating puzzle takes more than 6 minutes, mark it and move on
 - Recheck your arrangement by reading each constraint one more time after completing the solution
@@ -1607,7 +1607,7 @@ console.log(
 
 <details>
 <summary>Show Answer</summary>
-**(c) 3.** If C is opposite A (distance 4 in an 8-person circle), and B is immediate left of A, then from B clockwise to C is: B → A → ... → C. Since A is immediate right of B, B to A = 1 step, then A to C = 4 steps (opposite), wait — let me recalculate. If A and C are opposite, distance = 4. B is immediate left of A (clockwise from A = left, so B is clockwise adjacent to A). B is second to left of C. Let me solve: A opposite C means |A − C| = 4. B is immediate left of A (clockwise 1 from A). B second left of C (clockwise 2 from C). The clockwise order from B: B → A → ... → C. With A opposite C, A to C is 4 steps clockwise. So B to A = 1, A to C = 4. Total = 5 steps clockwise from B to C. Persons between B and C (clockwise from B, excluding B and C) = 4 persons. Hmm, that doesn't match the options. Let me reconsider. In a circle, there are two arcs between any two persons. "Between" typically means the shorter arc. With 8 persons, if A is opposite C (distance 4 on each arc), B is immediate left of A (clockwise). B to C via the clockwise path: B(1) → A(2) → ... → C(6). Distance = 5. The other path: B(1) → ... ← C(6) going counterclockwise from B. B counterclockwise = H(P8), then G(P7), then F(P6) = C. Distance = 3. So the shorter arc has 3 steps, meaning 2 persons between B and C. **Answer:** (b) 2.
+**(c) 3.** If C is opposite A (distance 4 in an 8-person circle), and B is immediate left of A, then from B clockwise to C is: B â†’ A â†’ ... â†’ C. Since A is immediate right of B, B to A = 1 step, then A to C = 4 steps (opposite), wait â€” let me recalculate. If A and C are opposite, distance = 4. B is immediate left of A (clockwise from A = left, so B is clockwise adjacent to A). B is second to left of C. Let me solve: A opposite C means |A âˆ’ C| = 4. B is immediate left of A (clockwise 1 from A). B second left of C (clockwise 2 from C). The clockwise order from B: B â†’ A â†’ ... â†’ C. With A opposite C, A to C is 4 steps clockwise. So B to A = 1, A to C = 4. Total = 5 steps clockwise from B to C. Persons between B and C (clockwise from B, excluding B and C) = 4 persons. Hmm, that doesn't match the options. Let me reconsider. In a circle, there are two arcs between any two persons. "Between" typically means the shorter arc. With 8 persons, if A is opposite C (distance 4 on each arc), B is immediate left of A (clockwise). B to C via the clockwise path: B(1) â†’ A(2) â†’ ... â†’ C(6). Distance = 5. The other path: B(1) â†’ ... â† C(6) going counterclockwise from B. B counterclockwise = H(P8), then G(P7), then F(P6) = C. Distance = 3. So the shorter arc has 3 steps, meaning 2 persons between B and C. **Answer:** (b) 2.
 </details>
 
 ---

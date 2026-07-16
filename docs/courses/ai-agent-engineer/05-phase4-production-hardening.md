@@ -1,7 +1,7 @@
-# Phase 4 — Production Hardening
+﻿# Phase 4 â€” Production Hardening
 
 **Duration:** Weeks 9-10, ~20 hours
-**Goal:** Add the production patterns your portfolio projects are missing — durable queues, structured logging, CI/CD, cost monitoring.
+**Goal:** Add the production patterns your portfolio projects are missing â€” durable queues, structured logging, CI/CD, cost monitoring.
 
 ---
 
@@ -9,16 +9,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -155,11 +155,11 @@ queue = Queue("document_ingestion", connection=redis_conn)
 
 @app.post("/upload")
 async def upload(doc_id: str):
-    # Stored in Redis — survives restart
+    # Stored in Redis â€” survives restart
     job = queue.enqueue(process_large_document, doc_id, job_timeout=600)
     return {"status": "accepted", "job_id": job.id}
 
-# worker.py — run separately:
+# worker.py â€” run separately:
 # rq worker document_ingestion
 if __name__ == "__main__":
     from rq.worker import Worker
@@ -306,7 +306,7 @@ async def readyz():
 ### Why the distinction matters
 
 
-A service that's alive but not ready (e.g., ChromaDB is restarting) should **not** be killed and restarted — it should just stop receiving traffic until dependencies recover. Conflating them means a brief ChromaDB restart causes a container restart cascade.
+A service that's alive but not ready (e.g., ChromaDB is restarting) should **not** be killed and restarted â€” it should just stop receiving traffic until dependencies recover. Conflating them means a brief ChromaDB restart causes a container restart cascade.
 
 ### Exercise
 
@@ -740,4 +740,4 @@ Before moving to Phase 5, you should be able to:
 
 **Estimated time to checkpoint:** 24-26 hours over 2 weeks.
 
-[Next: Phase 5 — Portfolio + Market Positioning](06-phase5-portfolio-positioning.md)
+[Next: Phase 5 â€” Portfolio + Market Positioning](06-phase5-portfolio-positioning.md)

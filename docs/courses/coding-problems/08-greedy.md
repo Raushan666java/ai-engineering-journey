@@ -1,4 +1,4 @@
-# Chapter 08: Greedy Algorithms
+﻿# Chapter 08: Greedy Algorithms
 
 > Greedy algorithms make locally optimal choices at each step, hoping to reach a globally optimal solution. Not all problems can be solved greedily, but when they can, greedy solutions are often the most efficient.
 
@@ -13,16 +13,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/coding-problems/08-greedy/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/coding-problems/08-greedy/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/coding-problems/08-greedy/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/coding-problems/08-greedy/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/coding-problems/08-greedy/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/coding-problems/08-greedy/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/coding-problems/08-greedy/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/coding-problems/08-greedy/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/coding-problems/08-greedy/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/coding-problems/08-greedy/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/coding-problems/08-greedy/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/coding-problems/08-greedy/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -96,11 +96,11 @@ flowchart LR
 
 ### Problem 1: Assign Cookies
 
-🏷️ **Companies:** [Amazon] [Google]
-📊 **Difficulty:** Easy
-📂 **Topics:** [Greedy, Array, Sorting]
+ðŸ·ï¸ **Companies:** [Amazon] [Google]
+ðŸ“Š **Difficulty:** Easy
+ðŸ“‚ **Topics:** [Greedy, Array, Sorting]
 
-**Problem:** Given children's greed factors and cookie sizes, maximize the number of content children (a child is content if cookie size ≥ greed factor). Each child gets at most one cookie.
+**Problem:** Given children's greed factors and cookie sizes, maximize the number of content children (a child is content if cookie size â‰¥ greed factor). Each child gets at most one cookie.
 
 **Example 1:**
 ```
@@ -109,7 +109,7 @@ Output: 1
 ```
 
 **Constraints:**
-- 1 ≤ g.length, s.length ≤ 3 × 10⁴
+- 1 â‰¤ g.length, s.length â‰¤ 3 Ã— 10â´
 
 ```typescript
 function findContentChildren(g: number[], s: number[]): number {
@@ -138,9 +138,9 @@ console.log(findContentChildren([1, 2], [1, 2, 3])); // 2
 
 ### Problem 2: Lemonade Change
 
-🏷️ **Companies:** [Amazon] [Google]
-📊 **Difficulty:** Easy
-📂 **Topics:** [Greedy, Array]
+ðŸ·ï¸ **Companies:** [Amazon] [Google]
+ðŸ“Š **Difficulty:** Easy
+ðŸ“‚ **Topics:** [Greedy, Array]
 
 **Problem:** Each customer pays with $5, $10, or $20 for a $5 lemonade. Determine if you can provide correct change.
 
@@ -191,9 +191,9 @@ console.log(lemonadeChange([5, 5, 10, 10, 20])); // false
 
 ### Problem 3: Best Time to Buy and Sell Stock II
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-📊 **Difficulty:** Easy
-📂 **Topics:** [Greedy, Array]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+ðŸ“Š **Difficulty:** Easy
+ðŸ“‚ **Topics:** [Greedy, Array]
 
 **Problem:** You can complete as many transactions as you like (buy one and sell one share on different days). Maximize profit.
 
@@ -232,9 +232,9 @@ console.log(maxProfitII([7, 6, 4, 3, 1])); // 0
 
 ### Problem 4: Minimum Number of Arrows to Burst Balloons
 
-🏷️ **Companies:** [Amazon] [Google] [Meta]
-📊 **Difficulty:** Easy
-📂 **Topics:** [Greedy, Array, Sorting]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
+ðŸ“Š **Difficulty:** Easy
+ðŸ“‚ **Topics:** [Greedy, Array, Sorting]
 
 **Problem:** Given balloons as intervals [x_start, x_end], shoot arrows vertically. Find minimum arrows needed to burst all balloons.
 
@@ -276,16 +276,16 @@ console.log(findMinArrowShots([[1,2],[3,4],[5,6],[7,8]])); // 4
 
 ### Problem 5: Maximum Units on a Truck
 
-🏷️ **Companies:** [Amazon] [Google]
-📊 **Difficulty:** Easy
-📂 **Topics:** [Greedy, Array, Sorting]
+ðŸ·ï¸ **Companies:** [Amazon] [Google]
+ðŸ“Š **Difficulty:** Easy
+ðŸ“‚ **Topics:** [Greedy, Array, Sorting]
 
 **Problem:** Given box types with [numberOfBoxes, unitsPerBox] and a truck size, maximize total units loaded.
 
 **Example 1:**
 ```
 Input: boxTypes = [[1,3],[2,2],[3,1]], truckSize = 4
-Output: 8 (1×3 + 2×2 + 1×1 = 8)
+Output: 8 (1Ã—3 + 2Ã—2 + 1Ã—1 = 8)
 ```
 
 ```typescript
@@ -321,9 +321,9 @@ console.log(maximumUnits([[5,10],[2,5],[4,7],[3,9]], 10)); // 91
 
 ### Problem 6: Activity Selection (Non-overlapping Intervals)
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Greedy, Interval, Sorting]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Greedy, Interval, Sorting]
 
 **Problem:** Given intervals [start, end], find the maximum number of non-overlapping intervals you can select (or the minimum number to remove to make them non-overlapping).
 
@@ -366,9 +366,9 @@ console.log(eraseOverlapIntervals([[1,2],[1,2],[1,2]])); // 2
 
 ### Problem 7: Minimum Number of Platforms
 
-🏷️ **Companies:** [Amazon] [Google] [Microsoft]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Greedy, Interval, Sorting]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Microsoft]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Greedy, Interval, Sorting]
 
 **Problem:** Given arrival and departure times of trains, find the minimum number of platforms needed.
 
@@ -418,9 +418,9 @@ console.log(findPlatform([900, 1000], [910, 1010])); // 1
 
 ### Problem 8: Jump Game II
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Greedy, Array]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Greedy, Array]
 
 **Problem:** Given an array where nums[i] is max jump length, return the minimum number of jumps to reach the last index.
 
@@ -451,7 +451,7 @@ function jump(nums: number[]): number {
 **Test Cases:**
 ```typescript
 console.log(jump([2, 3, 1, 1, 4])); // 2
-console.log(jump([2, 0, 0])); // 1? Actually can't reach — but constraints guarantee reachability
+console.log(jump([2, 0, 0])); // 1? Actually can't reach â€” but constraints guarantee reachability
 console.log(jump([0])); // 0
 ```
 
@@ -462,9 +462,9 @@ console.log(jump([0])); // 0
 
 ### Problem 9: Gas Station
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Greedy, Array]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Greedy, Array]
 
 **Problem:** Given gas[i] (gas at station i) and cost[i] (cost to travel from i to i+1), find the starting station to complete a circuit. Return -1 if impossible.
 
@@ -510,9 +510,9 @@ console.log(canCompleteCircuit([2, 3, 4], [3, 4, 3])); // -1
 
 ### Problem 10: Candy
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Greedy, Array]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Greedy, Array]
 
 **Problem:** Each child must have at least one candy. Children with higher ratings get more than their neighbors. Find the minimum total candies.
 
@@ -559,11 +559,11 @@ console.log(candy([1, 2, 2])); // 4
 
 ### Problem 11: Queue Reconstruction by Height
 
-🏷️ **Companies:** [Amazon] [Google] [Meta]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Greedy, Array, Sorting]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Greedy, Array, Sorting]
 
-**Problem:** Given people [height, numInFront] where numInFront is number of people ≥ height in front, reconstruct the queue.
+**Problem:** Given people [height, numInFront] where numInFront is number of people â‰¥ height in front, reconstruct the queue.
 
 **Example 1:**
 ```
@@ -590,27 +590,27 @@ console.log(reconstructQueue([[7,0],[4,4],[7,1],[5,0],[6,1],[5,2]]));
 // [[5,0],[7,0],[5,2],[6,1],[4,4],[7,1]]
 ```
 
-**Time Complexity:** O(n²)
+**Time Complexity:** O(nÂ²)
 **Space Complexity:** O(n)
 
 ---
 
 ### Problem 12: Task Scheduler
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Greedy, Array, Heap]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Greedy, Array, Heap]
 
 **Problem:** Given tasks and a cooldown n, find the minimum time to complete all tasks (same task must be n apart).
 
 **Example 1:**
 ```
 Input: tasks = ["A","A","A","B","B","B"], n = 2
-Output: 8 (A→B→idle→A→B→idle→A→B)
+Output: 8 (Aâ†’Bâ†’idleâ†’Aâ†’Bâ†’idleâ†’Aâ†’B)
 ```
 
 **Constraints:**
-- 1 ≤ tasks.length ≤ 10⁴
+- 1 â‰¤ tasks.length â‰¤ 10â´
 
 ```typescript
 function leastInterval(tasks: string[], n: number): number {
@@ -644,9 +644,9 @@ console.log(leastInterval(["A","A","A","B","B","B"], 0)); // 6
 
 ### Problem 13: Partition Labels
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Greedy, String, Two Pointers]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Greedy, String, Two Pointers]
 
 **Problem:** Partition a string into as many parts as possible so that each character appears in at most one part.
 
@@ -696,9 +696,9 @@ console.log(partitionLabels("eccbbbbdec")); // [10]
 
 ### Problem 14: Maximum Profit in Job Scheduling
 
-🏷️ **Companies:** [Amazon] [Google] [Meta]
-📊 **Difficulty:** Hard
-📂 **Topics:** [Greedy, DP, Binary Search, Sorting]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
+ðŸ“Š **Difficulty:** Hard
+ðŸ“‚ **Topics:** [Greedy, DP, Binary Search, Sorting]
 
 **Problem:** Given jobs with startTime, endTime, and profit, find the maximum profit with non-overlapping jobs.
 
@@ -706,7 +706,7 @@ console.log(partitionLabels("eccbbbbdec")); // [10]
 ```
 Input: startTime = [1,2,3,3], endTime = [3,4,5,6], profit = [50,10,40,70]
 Output: 120
-Explanation: Job 1 (1→3, $50) + Job 3 (3→5, $40) = $90? Actually Job 4 (3→6, $70) + Job 1 = $120
+Explanation: Job 1 (1â†’3, $50) + Job 3 (3â†’5, $40) = $90? Actually Job 4 (3â†’6, $70) + Job 1 = $120
 ```
 
 ```typescript
@@ -755,9 +755,9 @@ console.log(jobScheduling([1,2,3,4,6], [3,5,10,6,9], [20,20,100,70,60])); // 150
 
 ### Problem 15: Minimum Cost to Hire K Workers
 
-🏷️ **Companies:** [Amazon] [Google] [Meta]
-📊 **Difficulty:** Hard
-📂 **Topics:** [Greedy, Heap, Sorting]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
+ðŸ“Š **Difficulty:** Hard
+ðŸ“‚ **Topics:** [Greedy, Heap, Sorting]
 
 **Problem:** Hire exactly k workers. Each worker has wage[i] and quality[i]. Pay proportional to quality ratio. Find minimum cost.
 
@@ -848,9 +848,9 @@ console.log(mincostToHireWorkers([3,1,10,10,1], [4,8,2,2,7], 3)); // 30.66667
 
 ### Problem 16: Jump Game (Greedy)
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Greedy, Array]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Greedy, Array]
 
 **Problem:** Given an array where nums[i] is max jump length from position i, determine if you can reach the last index.
 
@@ -891,9 +891,9 @@ console.log(canJump([3, 2, 1, 0, 4])); // false
 
 ### Problem 17: Two City Scheduling
 
-🏷️ **Companies:** [Amazon] [Google]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Greedy, Array, Sorting]
+ðŸ·ï¸ **Companies:** [Amazon] [Google]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Greedy, Array, Sorting]
 
 **Problem:** A company wants to fly 2n people to two cities. cost[i][0] is cost to send to city A, cost[i][1] is cost to send to city B. Return minimum cost to send exactly n people to each city.
 
@@ -935,9 +935,9 @@ console.log(twoCitySchedCost([[259,770],[448,54],[926,667],[184,139],[840,118],[
 
 ### Problem 18: Split Array into Consecutive Subsequences
 
-🏷️ **Companies:** [Amazon] [Google]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Greedy, Heap, Hash Table]
+ðŸ·ï¸ **Companies:** [Amazon] [Google]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Greedy, Heap, Hash Table]
 
 **Problem:** Given an array sorted in non-decreasing order, return true if it can be split into one or more subsequences of length >= 3 with consecutive integers.
 
@@ -1009,8 +1009,8 @@ flowchart TD
 
 
 1. **Start with the simplest greedy idea** and test on examples. Many candidates overthink.
-2. **Look for sorting opportunities** — most greedy problems require sorting the input first.
-3. **Keep track of the invariant** — what property must hold at every step?
+2. **Look for sorting opportunities** â€” most greedy problems require sorting the input first.
+3. **Keep track of the invariant** â€” what property must hold at every step?
 4. **Test edge cases**: empty input, single element, all equal values, maximum values.
 5. **Explain why greedy works** before coding. Interviewers want to see \x60\x60you understand the greedy choice property.
 6. **Be prepared to switch to DP** if the greedy approach fails on a test case.
@@ -1041,7 +1041,7 @@ flowchart TD
 | 8 | Jump Game II | Medium | Amazon, Google, Meta | O(n) | O(1) |
 | 9 | Gas Station | Medium | Amazon, Google, Meta | O(n) | O(1) |
 | 10 | Candy | Medium | Amazon, Google, Meta | O(n) | O(n) |
-| 11 | Queue Reconstruction | Medium | Amazon, Google, Meta | O(n²) | O(n) |
+| 11 | Queue Reconstruction | Medium | Amazon, Google, Meta | O(nÂ²) | O(n) |
 | 12 | Task Scheduler | Medium | Multiple | O(n) | O(1) |
 | 13 | Partition Labels | Medium | Amazon, Google, Meta | O(n) | O(1) |
 | 14 | Max Profit Job Scheduling | Hard | Amazon, Google, Meta | O(n log n) | O(n) |
@@ -1051,9 +1051,9 @@ flowchart TD
 
 Greedy algorithms follow a specific problem-solving approach:
 
-1. **Make a choice** — at each step, pick the option that looks best *right now*
-2. **Reduce to subproblem** — after making the choice, solve the remaining problem
-3. **Repeat** — continue until the problem is solved
+1. **Make a choice** â€” at each step, pick the option that looks best *right now*
+2. **Reduce to subproblem** â€” after making the choice, solve the remaining problem
+3. **Repeat** â€” continue until the problem is solved
 
 Unlike Dynamic Programming, greedy algorithms do not reconsider past choices. This makes them faster but only applicable to problems with the **greedy choice property** (a global optimum can be reached by making locally optimal choices).
 
@@ -1076,10 +1076,10 @@ To prove a greedy algorithm is correct, use the **exchange argument**:
 
 ### Common Mistakes to Avoid
 
-1. **Assuming greedy works** — Always verify the greedy choice property. Many problems that look greedy actually need DP.
-2. **Wrong sorting** — The wrong sort order can break greedy solutions. Sort intervals by end time (not start) for scheduling.
-3. **Not considering ties** — When two options are equally good, the greedy choice may matter.
-4. **Ignoring edge cases** — Empty input, single element, all equal values.
+1. **Assuming greedy works** â€” Always verify the greedy choice property. Many problems that look greedy actually need DP.
+2. **Wrong sorting** â€” The wrong sort order can break greedy solutions. Sort intervals by end time (not start) for scheduling.
+3. **Not considering ties** â€” When two options are equally good, the greedy choice may matter.
+4. **Ignoring edge cases** â€” Empty input, single element, all equal values.
 
 ### Greedy Algorithm Design Template
 

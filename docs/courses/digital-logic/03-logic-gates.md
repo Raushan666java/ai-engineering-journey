@@ -1,4 +1,4 @@
-# Chapter 3: Logic Gates
+﻿# Chapter 3: Logic Gates
 
 > **Prereq:** Chapter 2 (Boolean Algebra) ? gates implement the Boolean operations directly.
 > **Next:** Chapter 4 (Karnaugh Maps) ? minimisation leads to optimal gate-level implementations.
@@ -10,16 +10,16 @@ By the conclusion of this chapter, the student shall be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/digital-logic/03-logic-gates/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/digital-logic/03-logic-gates/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/digital-logic/03-logic-gates/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/digital-logic/03-logic-gates/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/digital-logic/03-logic-gates/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/digital-logic/03-logic-gates/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/digital-logic/03-logic-gates/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/digital-logic/03-logic-gates/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/digital-logic/03-logic-gates/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/digital-logic/03-logic-gates/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/digital-logic/03-logic-gates/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/digital-logic/03-logic-gates/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>

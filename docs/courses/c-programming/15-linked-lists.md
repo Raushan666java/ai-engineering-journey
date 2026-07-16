@@ -1,4 +1,4 @@
-# Chapter 15: Linked Lists
+﻿# Chapter 15: Linked Lists
 
 > **Previous:** [Recursion](./14-recursion.md) | **Next:** [Stacks and Queues](./16-stacks-queues.md)
 
@@ -16,16 +16,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/15-linked-lists/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/c-programming/15-linked-lists/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/15-linked-lists/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/c-programming/15-linked-lists/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/15-linked-lists/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/c-programming/15-linked-lists/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/15-linked-lists/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/c-programming/15-linked-lists/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/c-programming/15-linked-lists/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/c-programming/15-linked-lists/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/c-programming/15-linked-lists/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/c-programming/15-linked-lists/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -44,7 +44,7 @@
 | Doubly Linked List | Each node has `prev` and `next` pointers | Bidirectional traversal; O(1) delete with pointer |
 | Circular Linked List | Last node points back to head | Useful for round-robin scheduling |
 | Circular Doubly Linked List | Head->prev = tail; tail->next = head | Full cyclic bidirectional navigation |
-| Floyd's Cycle Detection | Slow/fast pointers meet if loop exists | O(n) time, O(1) space — no hash table needed |
+| Floyd's Cycle Detection | Slow/fast pointers meet if loop exists | O(n) time, O(1) space â€” no hash table needed |
 | Reverse (Iterative) | Three pointers slide forward reversing links | O(n) time, O(1) space |
 | Reverse (Recursive) | Recurse to tail, rewind linking backwards | O(n) time, O(n) stack space |
 
@@ -68,7 +68,7 @@ flowchart LR
 ### Concept
 
 
-A linked list is a sequence of **nodes** where each node contains data and a pointer to the next node. The structure is **self-referential** — it contains a pointer to an instance of itself.
+A linked list is a sequence of **nodes** where each node contains data and a pointer to the next node. The structure is **self-referential** â€” it contains a pointer to an instance of itself.
 
 ### Real-World Analogy: Treasure Hunt
 
@@ -96,11 +96,11 @@ typedef struct node {
 
 ```
 Node (16 bytes on 64-bit)
-┌──────────┬──────────────┐
-│   data   │    next      │
-│ (4 bytes)│ (8 bytes)    │
-│          │  pointer     │
-└──────────┴──────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚   data   â”‚    next      â”‚
+â”‚ (4 bytes)â”‚ (8 bytes)    â”‚
+â”‚          â”‚  pointer     â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
   offset 0    offset 8
 ```
 
@@ -112,15 +112,15 @@ Node (16 bytes on 64-bit)
 
 
 ```
-head ───→ ┌────┬──────┐    ┌────┬──────┐    ┌────┬──────┐
-          │ 10 │  ●───┼───→│ 20 │  ●───┼───→│ 30 │ NULL │
-          └────┴──────┘    └────┴──────┘    └────┴──────┘
+head â”€â”€â”€â†’ â”Œâ”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”
+          â”‚ 10 â”‚  â—â”€â”€â”€â”¼â”€â”€â”€â†’â”‚ 20 â”‚  â—â”€â”€â”€â”¼â”€â”€â”€â†’â”‚ 30 â”‚ NULL â”‚
+          â””â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### Key Invariant
 
 
-> The `head` pointer must always point to the first node. If `head` is `NULL`, the list is empty. **Never lose the head pointer** — if you lose it, the entire list becomes unreachable (memory leak).
+> The `head` pointer must always point to the first node. If `head` is `NULL`, the list is empty. **Never lose the head pointer** â€” if you lose it, the entire list becomes unreachable (memory leak).
 
 ---
 
@@ -158,10 +158,10 @@ CREATE_NODE(value):
 
 | Step | new_node addr | new_node->data | new_node->next | Return |
 |------|--------------|----------------|----------------|--------|
-| malloc(16) | 0x1000 | garbage | garbage | — |
-| data=42 | 0x1000 | 42 | garbage | — |
-| next=NULL | 0x1000 | 42 | NULL | — |
-| return | — | 42 | NULL | 0x1000 |
+| malloc(16) | 0x1000 | garbage | garbage | â€” |
+| data=42 | 0x1000 | 42 | garbage | â€” |
+| next=NULL | 0x1000 | 42 | NULL | â€” |
+| return | â€” | 42 | NULL | 0x1000 |
 
 #### C Implementation
 
@@ -197,7 +197,7 @@ Node *create_node(int value)
 #### Edge Cases
 
 - **malloc fails**: Return NULL or exit. Always check.
-- **value is negative/zero**: No restriction — `data` is just an int.
+- **value is negative/zero**: No restriction â€” `data` is just an int.
 - **Multiple creates**: Each call creates an independent node.
 
 ---
@@ -215,7 +215,7 @@ You start at the first clue (head). Read its treasure. Then follow the location 
 2. While `current` is not NULL:
     a. Process `current->data`
     b. Advance `current = current->next`
-3. Stop — you have reached the end
+3. Stop â€” you have reached the end
 
 #### Pseudocode
 
@@ -228,16 +228,16 @@ TRAVERSE(head):
     print("NULL")
 ```
 
-#### Dry Run: List [10 → 20 → 30 → NULL]
+#### Dry Run: List [10 â†’ 20 â†’ 30 â†’ NULL]
 
 | Iteration | current addr | current->data | current->next | Print |
 |-----------|-------------|---------------|---------------|-------|
-| Start | 0x1000 | — | — | — |
+| Start | 0x1000 | â€” | â€” | â€” |
 | 1 | 0x1000 | 10 | 0x2000 | 10 -> |
 | 2 | 0x2000 | 20 | 0x3000 | 20 -> |
 | 3 | 0x3000 | 30 | NULL | 30 -> |
-| 4 | NULL | — | — | NULL |
-| End | — | — | — | `10 -> 20 -> 30 -> NULL` |
+| 4 | NULL | â€” | â€” | NULL |
+| End | â€” | â€” | â€” | `10 -> 20 -> 30 -> NULL` |
 
 #### C Implementation
 
@@ -264,7 +264,7 @@ void print_list(const Node *head)
 
 - **Empty list (head == NULL)**: Loop body never executes, prints just "NULL".
 - **Single node**: One iteration prints the node, then `current` becomes NULL.
-- **Very long list**: O(n) time bound — no optimization possible for full traversal.
+- **Very long list**: O(n) time bound â€” no optimization possible for full traversal.
 
 ---
 
@@ -292,7 +292,7 @@ INSERT_BEGINNING(head, value):
     return new_node
 ```
 
-##### Dry Run: Insert 5 at beginning of [10 → 20 → NULL]
+##### Dry Run: Insert 5 at beginning of [10 â†’ 20 â†’ NULL]
 
 | Step | Variable | Value | Notes |
 |------|----------|-------|-------|
@@ -301,20 +301,20 @@ INSERT_BEGINNING(head, value):
 | 2 | new_node->next | 0x1000 | was NULL, now = head |
 | 3 | head (returned) | 0x4000 | new head |
 
-Result: `[5 → 10 → 20 → NULL]`
+Result: `[5 â†’ 10 â†’ 20 â†’ NULL]`
 
 Before:
 ```
-head(0x1000) ───→ ┌───┬──────┐    ┌───┬──────┐
-                   │10 │  ●───┼───→│20 │ NULL │
-                   └───┴──────┘    └───┴──────┘
+head(0x1000) â”€â”€â”€â†’ â”Œâ”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”
+                   â”‚10 â”‚  â—â”€â”€â”€â”¼â”€â”€â”€â†’â”‚20 â”‚ NULL â”‚
+                   â””â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 After:
 ```
-head(0x4000) ───→ ┌───┬──────┐    ┌───┬──────┐    ┌───┬──────┐
-                   │5  │  ●───┼───→│10 │  ●───┼───→│20 │ NULL │
-                   └───┴──────┘    └───┴──────┘    └───┴──────┘
+head(0x4000) â”€â”€â”€â†’ â”Œâ”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”
+                   â”‚5  â”‚  â—â”€â”€â”€â”¼â”€â”€â”€â†’â”‚10 â”‚  â—â”€â”€â”€â”¼â”€â”€â”€â†’â”‚20 â”‚ NULL â”‚
+                   â””â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ##### C Implementation
@@ -338,7 +338,7 @@ Node *insert_beginning(Node *head, int value)
 ##### Edge Cases
 
 - **Empty list (head == NULL)**: `new_node->next = NULL`, new_node becomes both head and tail.
-- **Single node list**: Works identically — old head becomes second node.
+- **Single node list**: Works identically â€” old head becomes second node.
 
 ---
 
@@ -370,7 +370,7 @@ INSERT_END(head, value):
     return head
 ```
 
-##### Dry Run: Insert 40 at end of [10 → 20 → 30 → NULL]
+##### Dry Run: Insert 40 at end of [10 â†’ 20 â†’ 30 â†’ NULL]
 
 | Step | current addr | current->next | Action |
 |------|-------------|---------------|--------|
@@ -381,16 +381,16 @@ INSERT_END(head, value):
 
 Before:
 ```
-head ───→ ┌───┬──────┐    ┌───┬──────┐    ┌───┬──────┐
-          │10 │  ●───┼───→│20 │  ●───┼───→│30 │ NULL │
-          └───┴──────┘    └───┴──────┘    └───┴──────┘
+head â”€â”€â”€â†’ â”Œâ”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”
+          â”‚10 â”‚  â—â”€â”€â”€â”¼â”€â”€â”€â†’â”‚20 â”‚  â—â”€â”€â”€â”¼â”€â”€â”€â†’â”‚30 â”‚ NULL â”‚
+          â””â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 After:
 ```
-head ───→ ┌───┬──────┐    ┌───┬──────┐    ┌───┬──────┐    ┌───┬──────┐
-          │10 │  ●───┼───→│20 │  ●───┼───→│30 │  ●───┼───→│40 │ NULL │
-          └───┴──────┘    └───┴──────┘    └───┴──────┘    └───┴──────┘
+head â”€â”€â”€â†’ â”Œâ”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”
+          â”‚10 â”‚  â—â”€â”€â”€â”¼â”€â”€â”€â†’â”‚20 â”‚  â—â”€â”€â”€â”¼â”€â”€â”€â†’â”‚30 â”‚  â—â”€â”€â”€â”¼â”€â”€â”€â†’â”‚40 â”‚ NULL â”‚
+          â””â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ##### C Implementation
@@ -465,30 +465,30 @@ INSERT_AT(head, value, position):
     return head
 ```
 
-##### Dry Run: Insert 25 at position 2 in [10 → 20 → 30 → NULL]
+##### Dry Run: Insert 25 at position 2 in [10 â†’ 20 â†’ 30 â†’ NULL]
 
 Positions: 0=10, 1=20, 2=30, want to insert BEFORE position 2 (i.e., between 20 and 30)
 
 | Step | i | current addr | current->data | current->next | Action |
 |------|---|-------------|---------------|---------------|--------|
-| Init | — | 0x1000 | 10 | 0x2000 | start |
+| Init | â€” | 0x1000 | 10 | 0x2000 | start |
 | Loop | 0 | 0x2000 | 20 | 0x3000 | advance (i &lt; 1) |
-| Loop done | — | 0x2000 | 20 | 0x3000 | stop at position-1=1 |
-| Insert | — | — | — | — | new_node->next=0x3000; current->next=new_node |
+| Loop done | â€” | 0x2000 | 20 | 0x3000 | stop at position-1=1 |
+| Insert | â€” | â€” | â€” | â€” | new_node->next=0x3000; current->next=new_node |
 
 Before:
 ```
 [0]        [1]        [2]
-10 ───→ 20 ───→ 30 ───→ NULL
-         ↑
+10 â”€â”€â”€â†’ 20 â”€â”€â”€â†’ 30 â”€â”€â”€â†’ NULL
+         â†‘
      current
 ```
 
 After:
 ```
 [0]        [1]        [2]        [3]
-10 ───→ 20 ───→ 25 ───→ 30 ───→ NULL
-         ↑
+10 â”€â”€â”€â†’ 20 â”€â”€â”€â†’ 25 â”€â”€â”€â†’ 30 â”€â”€â”€â†’ NULL
+         â†‘
      current
 ```
 
@@ -557,15 +557,15 @@ Node *insert_after(Node *head, int target, int value)
 }
 ```
 
-**Dry run**: Insert 25 after 20 in [10 → 20 → 30 → NULL]
+**Dry run**: Insert 25 after 20 in [10 â†’ 20 â†’ 30 â†’ NULL]
 
 | Step | current addr | current->data | Action |
 |------|-------------|---------------|--------|
 | Init | 0x1000 | 10 | not target, advance |
 | Loop 1 | 0x2000 | 20 | target found |
-| Insert | — | — | new(25)->next = 0x3000; 20->next = new(25) |
+| Insert | â€” | â€” | new(25)->next = 0x3000; 20->next = new(25) |
 
-Result: [10 → 20 → 25 → 30 → NULL]
+Result: [10 â†’ 20 â†’ 25 â†’ 30 â†’ NULL]
 
 ---
 
@@ -616,34 +616,34 @@ DELETE_VALUE(head, value):
     return head
 ```
 
-##### Dry Run: Delete 20 from [10 → 20 → 30 → NULL]
+##### Dry Run: Delete 20 from [10 â†’ 20 â†’ 30 â†’ NULL]
 
 | Step | Variable | Value | Pointer State |
 |------|----------|-------|---------------|
-| Init | head | 0x1000 | [10]→[20]→[30]→NULL |
-| Check head | head->data=10 | ≠20 | continue |
+| Init | head | 0x1000 | [10]â†’[20]â†’[30]â†’NULL |
+| Check head | head->data=10 | â‰ 20 | continue |
 | current | 0x1000 | 10 | start traversal |
-| current->data | 10 | ≠20 | advance |
+| current->data | 10 | â‰ 20 | advance |
 | current | 0x2000 | 20 | check current->next->data |
 | current->next->data | 20 | ==20 | found it |
 | temp | 0x2000 | node(20) | save node to delete |
 | current->next | 0x3000 | was 0x2000, now = temp->next = node(30) | bypass |
-| free(temp) | — | — | node(20) freed |
+| free(temp) | â€” | â€” | node(20) freed |
 
 Before:
 ```
-head ───→ ┌───┬──────┐    ┌───┬──────┐    ┌───┬──────┐
-          │10 │  ●───┼───→│20 │  ●───┼───→│30 │ NULL │
-          └───┴──────┘    └───┴──────┘    └───┴──────┘
-                              ↑
+head â”€â”€â”€â†’ â”Œâ”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”
+          â”‚10 â”‚  â—â”€â”€â”€â”¼â”€â”€â”€â†’â”‚20 â”‚  â—â”€â”€â”€â”¼â”€â”€â”€â†’â”‚30 â”‚ NULL â”‚
+          â””â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜
+                              â†‘
                              temp (to free)
 ```
 
 After:
 ```
-head ───→ ┌───┬──────┐    ┌───┬──────┐
-          │10 │  ●───┼───→│30 │ NULL │
-          └───┴──────┘    └───┴──────┘
+head â”€â”€â”€â†’ â”Œâ”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”
+          â”‚10 â”‚  â—â”€â”€â”€â”¼â”€â”€â”€â†’â”‚30 â”‚ NULL â”‚
+          â””â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ##### C Implementation
@@ -691,7 +691,7 @@ Node *delete_value(Node *head, int value)
 ##### Edge Cases
 
 - **Empty list (head == NULL)**: Return NULL immediately.
-- **Delete head**: Separate case — head pointer itself must change.
+- **Delete head**: Separate case â€” head pointer itself must change.
 - **Value not found**: Full traversal, then report not found.
 - **Delete only node**: head freed, return NULL.
 - **Delete tail**: current->next is the tail; after deletion current->next becomes NULL.
@@ -758,21 +758,21 @@ SEARCH(head, target):
     return NULL
 ```
 
-#### Dry Run: Search for 20 in [10 → 20 → 30 → NULL]
+#### Dry Run: Search for 20 in [10 â†’ 20 â†’ 30 â†’ NULL]
 
 | Step | current addr | current->data | Match? |
 |------|-------------|---------------|--------|
 | 1 | 0x1000 | 10 | No, advance |
 | 2 | 0x2000 | 20 | YES, return 0x2000 |
 
-Search for 40 in [10 → 20 → 30 → NULL]:
+Search for 40 in [10 â†’ 20 â†’ 30 â†’ NULL]:
 
 | Step | current addr | current->data | Match? |
 |------|-------------|---------------|--------|
 | 1 | 0x1000 | 10 | No, advance |
 | 2 | 0x2000 | 20 | No, advance |
 | 3 | 0x3000 | 30 | No, advance |
-| 4 | NULL | — | End, return NULL |
+| 4 | NULL | â€” | End, return NULL |
 
 #### C Implementation
 
@@ -838,45 +838,45 @@ REVERSE_ITERATIVE(head):
     return prev                    // prev is now the head
 ```
 
-#### Dry Run: Reverse [10 → 20 → 30 → NULL]
+#### Dry Run: Reverse [10 â†’ 20 â†’ 30 â†’ NULL]
 
 | Step | prev | current | next | current->next (after) | State |
 |------|------|---------|------|----------------------|-------|
-| Init | NULL | 0x1000 (10) | NULL | — | 10→20→30→NULL |
-| 1 | — | — | 0x2000 (20) | — | — |
-| 2 | — | — | — | NULL (was 0x2000) | 10→NULL |
-| 3 | 0x1000 (10) | — | — | — | — |
-| 4 | — | 0x2000 (20) | — | — | — |
-| 5 | — | — | 0x3000 (30) | — | — |
-| 6 | — | — | — | 0x1000 (was 0x3000) | 20→10→NULL |
-| 7 | 0x2000 (20) | — | — | — | — |
-| 8 | — | 0x3000 (30) | — | — | — |
-| 9 | — | — | NULL | — | — |
-| 10 | — | — | — | 0x2000 (was NULL) | 30→20→10→NULL |
-| 11 | 0x3000 (30) | — | — | — | — |
-| 12 | — | NULL | — | — | loop ends |
+| Init | NULL | 0x1000 (10) | NULL | â€” | 10â†’20â†’30â†’NULL |
+| 1 | â€” | â€” | 0x2000 (20) | â€” | â€” |
+| 2 | â€” | â€” | â€” | NULL (was 0x2000) | 10â†’NULL |
+| 3 | 0x1000 (10) | â€” | â€” | â€” | â€” |
+| 4 | â€” | 0x2000 (20) | â€” | â€” | â€” |
+| 5 | â€” | â€” | 0x3000 (30) | â€” | â€” |
+| 6 | â€” | â€” | â€” | 0x1000 (was 0x3000) | 20â†’10â†’NULL |
+| 7 | 0x2000 (20) | â€” | â€” | â€” | â€” |
+| 8 | â€” | 0x3000 (30) | â€” | â€” | â€” |
+| 9 | â€” | â€” | NULL | â€” | â€” |
+| 10 | â€” | â€” | â€” | 0x2000 (was NULL) | 30â†’20â†’10â†’NULL |
+| 11 | 0x3000 (30) | â€” | â€” | â€” | â€” |
+| 12 | â€” | NULL | â€” | â€” | loop ends |
 
 Return prev = 0x3000 (30 becomes new head)
 
 Visual trace:
 
 ```
-Step 0: NULL ← [10] → [20] → [30] → NULL
+Step 0: NULL â† [10] â†’ [20] â†’ [30] â†’ NULL
          prev   cur     next
 
-Step 2: NULL ← [10]   [20] → [30] → NULL
+Step 2: NULL â† [10]   [20] â†’ [30] â†’ NULL
          prev   cur     next
 
-Step 3-4: NULL ← [10] ← [20]   [30] → NULL
+Step 3-4: NULL â† [10] â† [20]   [30] â†’ NULL
                 prev    cur     next
 
-Step 5-6: NULL ← [10] ← [20] ← [30]   NULL
+Step 5-6: NULL â† [10] â† [20] â† [30]   NULL
                 prev    cur    next
 
-Step 7-8: NULL ← [10] ← [20] ← [30]
+Step 7-8: NULL â† [10] â† [20] â† [30]
                        prev    cur    next=NULL
 
-Step 9-11: return prev → head = [30]
+Step 9-11: return prev â†’ head = [30]
 ```
 
 #### C Implementation
@@ -940,27 +940,27 @@ REVERSE_RECURSIVE(head):
     return new_head
 ```
 
-#### Dry Run: Reverse [10 → 20 → 30 → NULL]
+#### Dry Run: Reverse [10 â†’ 20 â†’ 30 â†’ NULL]
 
 | Call level | head addr | head->data | head->next | Recursing | After return | Action |
 |------------|-----------|------------|------------|-----------|--------------|--------|
-| reverse(10) | 0x1000 | 10 | 0x2000 | reverse(20) | — | wait |
-| reverse(20) | 0x2000 | 20 | 0x3000 | reverse(30) | — | wait |
-| reverse(30) | 0x3000 | 30 | NULL | base case | return 0x3000 | — |
-| reverse(20) resumes | — | — | — | — | new_head=0x3000 | 20->next->next=20->...; 20->next=NULL; return 0x3000 |
-| reverse(10) resumes | — | — | — | — | new_head=0x3000 | 10->next->next=10->...; 10->next=NULL; return 0x3000 |
+| reverse(10) | 0x1000 | 10 | 0x2000 | reverse(20) | â€” | wait |
+| reverse(20) | 0x2000 | 20 | 0x3000 | reverse(30) | â€” | wait |
+| reverse(30) | 0x3000 | 30 | NULL | base case | return 0x3000 | â€” |
+| reverse(20) resumes | â€” | â€” | â€” | â€” | new_head=0x3000 | 20->next->next=20->...; 20->next=NULL; return 0x3000 |
+| reverse(10) resumes | â€” | â€” | â€” | â€” | new_head=0x3000 | 10->next->next=10->...; 10->next=NULL; return 0x3000 |
 
 Step by step at reverse(20) after reverse(30) returns:
-- Before: 20→30→NULL
-- head->next = 30, head->next->next = 30->next = NULL → set to 20 (30→20)
-- head->next = NULL (20→NULL)
-- Now: 30→20→NULL
+- Before: 20â†’30â†’NULL
+- head->next = 30, head->next->next = 30->next = NULL â†’ set to 20 (30â†’20)
+- head->next = NULL (20â†’NULL)
+- Now: 30â†’20â†’NULL
 
 At reverse(10) after reverse(20) returns:
-- Before: 10→20→NULL (rest already reversed)
-- head->next = 20, head->next->next = 20->next = NULL → set to 10 (20→10)
-- head->next = NULL (10→NULL)
-- Now: 30→20→10→NULL
+- Before: 10â†’20â†’NULL (rest already reversed)
+- head->next = 20, head->next->next = 20->next = NULL â†’ set to 10 (20â†’10)
+- head->next = NULL (10â†’NULL)
+- Now: 30â†’20â†’10â†’NULL
 
 #### C Implementation
 
@@ -994,7 +994,7 @@ Node *reverse_recursive(Node *head)
 
 - **Empty list**: Base case returns NULL.
 - **Single node**: Base case returns the node unchanged.
-- **Very long list**: Risk of stack overflow — iterative is safer for large lists.
+- **Very long list**: Risk of stack overflow â€” iterative is safer for large lists.
 
 #### Recursive vs Iterative Comparison
 
@@ -1037,17 +1037,17 @@ FIND_MIDDLE(head):
     return slow
 ```
 
-#### Dry Run: Find middle of [10 → 20 → 30 → 40 → 50 → NULL]
+#### Dry Run: Find middle of [10 â†’ 20 â†’ 30 â†’ 40 â†’ 50 â†’ NULL]
 
 | Iteration | slow addr | slow->data | fast addr | fast->data | Condition |
 |-----------|-----------|------------|-----------|------------|-----------|
-| Start | 0x1000 | 10 | 0x1000 | 10 | — |
+| Start | 0x1000 | 10 | 0x1000 | 10 | â€” |
 | 1 | 0x2000 | 20 | 0x3000 | 30 | fast=0x3000, fast->next=0x4000 |
-| 2 | 0x3000 | 30 | 0x5000 | 50 | fast=0x5000, fast->next=NULL → stop |
+| 2 | 0x3000 | 30 | 0x5000 | 50 | fast=0x5000, fast->next=NULL â†’ stop |
 
-Result: slow points to node(30) — middle element (odd length, exact middle).
+Result: slow points to node(30) â€” middle element (odd length, exact middle).
 
-For even length [10 → 20 → 30 → 40 → NULL]:
+For even length [10 â†’ 20 â†’ 30 â†’ 40 â†’ NULL]:
 
 | Iteration | slow | fast |
 |-----------|------|------|
@@ -1055,7 +1055,7 @@ For even length [10 → 20 → 30 → 40 → NULL]:
 | 1 | 20 | 30 |
 | 2 | 30 | NULL (fast->next was NULL, but fast was 40, next is NULL) |
 
-Result: slow points to 30 — second middle element (right-middle).
+Result: slow points to 30 â€” second middle element (right-middle).
 
 #### C Implementation
 
@@ -1103,8 +1103,8 @@ A tortoise (slow) and a hare (fast) start running on a track. If the track has a
 2. While `fast != NULL` AND `fast->next != NULL`:
     a. Move slow one step
     b. Move fast two steps
-    c. If slow == fast, loop detected — return slow (meeting point)
-3. Return NULL — no loop
+    c. If slow == fast, loop detected â€” return slow (meeting point)
+3. Return NULL â€” no loop
 
 #### Pseudocode
 
@@ -1120,24 +1120,24 @@ DETECT_LOOP(head):
     return NULL               // no loop
 ```
 
-#### Dry Run: List with loop [1 → 2 → 3 → 4 → 5 → 3 (back to node 3)]
+#### Dry Run: List with loop [1 â†’ 2 â†’ 3 â†’ 4 â†’ 5 â†’ 3 (back to node 3)]
 
-Indices: 1(0x1000) → 2(0x2000) → 3(0x3000) → 4(0x4000) → 5(0x5000) → 3(0x3000)
+Indices: 1(0x1000) â†’ 2(0x2000) â†’ 3(0x3000) â†’ 4(0x4000) â†’ 5(0x5000) â†’ 3(0x3000)
 
 | Iteration | slow | fast | Check slow==fast |
 |-----------|------|------|------------------|
 | 0 | 0x1000 (1) | 0x1000 (1) | start, skip check |
 | 1 | 0x2000 (2) | 0x3000 (3) | no |
 | 2 | 0x3000 (3) | 0x5000 (5) | no |
-| 3 | 0x4000 (4) | 0x4000 (4) | **YES** — loop found |
+| 3 | 0x4000 (4) | 0x4000 (4) | **YES** â€” loop found |
 
 **Finding the start of the loop**: After meeting, reset slow to head, move both one step at a time. They meet at loop start.
 
 | Iteration | slow (from head) | fast (from meeting) | Meet? |
 |-----------|-----------------|---------------------|-------|
-| Start | 0x1000 (1) | 0x4000 (4) | — |
+| Start | 0x1000 (1) | 0x4000 (4) | â€” |
 | 1 | 0x2000 (2) | 0x5000 (5) | no |
-| 2 | 0x3000 (3) | 0x3000 (3) | **YES** — loop starts at node 3 |
+| 2 | 0x3000 (3) | 0x3000 (3) | **YES** â€” loop starts at node 3 |
 
 #### C Implementation
 
@@ -1179,13 +1179,13 @@ Node *find_loop_start(Node *head)
 |--------|-------|-----|
 | Time (detect) | O(n) | Fast pointer completes at most 2 traversals |
 | Time (find start) | O(n) | Extra linear pass from head to loop start |
-| Space | O(1) | Two pointer variables — no hash table needed |
+| Space | O(1) | Two pointer variables â€” no hash table needed |
 
 #### Edge Cases
 
 - **Empty list**: Return NULL.
 - **Single node pointing to itself**: fast->next != NULL is true, slow=fast on second iteration.
-- **Full loop (tail→head)**: Detected after one traversal.
+- **Full loop (tailâ†’head)**: Detected after one traversal.
 - **No loop**: Fast pointer reaches NULL normally.
 
 ---
@@ -1220,33 +1220,33 @@ MERGE_SORTED(a, b):
         return b
 ```
 
-#### Dry Run: Merge [10 → 30 → 50] and [20 → 40 → 60]
+#### Dry Run: Merge [10 â†’ 30 â†’ 50] and [20 â†’ 40 â†’ 60]
 
 | Call | a | b | Compare | Returns |
 |------|---|----|---------|---------|
-| merge(10,20) | 10 | 20 | 10≤20 | 10→merge(30,20) |
-| merge(30,20) | 30 | 20 | 30>20 | 20→merge(30,40) |
-| merge(30,40) | 30 | 40 | 30≤40 | 30→merge(50,40) |
-| merge(50,40) | 50 | 40 | 50>40 | 40→merge(50,60) |
-| merge(50,60) | 50 | 60 | 50≤60 | 50→merge(NULL,60) |
-| merge(NULL,60) | NULL | 60 | — | 60 |
+| merge(10,20) | 10 | 20 | 10â‰¤20 | 10â†’merge(30,20) |
+| merge(30,20) | 30 | 20 | 30>20 | 20â†’merge(30,40) |
+| merge(30,40) | 30 | 40 | 30â‰¤40 | 30â†’merge(50,40) |
+| merge(50,40) | 50 | 40 | 50>40 | 40â†’merge(50,60) |
+| merge(50,60) | 50 | 60 | 50â‰¤60 | 50â†’merge(NULL,60) |
+| merge(NULL,60) | NULL | 60 | â€” | 60 |
 
 Unwinding:
 ```
 merge(NULL,60) = 60
-merge(50,60)   = 50 → 60
-merge(50,40)   = 40 → 50 → 60
-merge(30,40)   = 30 → 40 → 50 → 60
-merge(30,20)   = 20 → 30 → 40 → 50 → 60
-merge(10,20)   = 10 → 20 → 30 → 40 → 50 → 60
+merge(50,60)   = 50 â†’ 60
+merge(50,40)   = 40 â†’ 50 â†’ 60
+merge(30,40)   = 30 â†’ 40 â†’ 50 â†’ 60
+merge(30,20)   = 20 â†’ 30 â†’ 40 â†’ 50 â†’ 60
+merge(10,20)   = 10 â†’ 20 â†’ 30 â†’ 40 â†’ 50 â†’ 60
 ```
 
-Result: [10 → 20 → 30 → 40 → 50 → 60 → NULL]
+Result: [10 â†’ 20 â†’ 30 â†’ 40 â†’ 50 â†’ 60 â†’ NULL]
 
 #### C Implementation
 
 ```c
-/* Recursive merge — creates NO new nodes, reuses existing ones */
+/* Recursive merge â€” creates NO new nodes, reuses existing ones */
 Node *merge_sorted(Node *a, Node *b)
 {
     if (a == NULL) return b;
@@ -1300,7 +1300,7 @@ Node *merge_sorted_iterative(Node *a, Node *b)
 - **Both empty**: Return NULL.
 - **One empty**: Return the non-empty list.
 - **All elements of one list are smaller**: Pure linear merge, single traversal.
-- **Equal values**: ≤ ensures stability (a's elements come before b's equal values).
+- **Equal values**: â‰¤ ensures stability (a's elements come before b's equal values).
 
 ---
 
@@ -1441,7 +1441,7 @@ Middle: 20
 
 ---
 
-### Singly Linked List — Operations Summary Table
+### Singly Linked List â€” Operations Summary Table
 
 
 | Operation | Time | Space | Code Complexity | Key Pointer Change |
@@ -1465,7 +1465,7 @@ Middle: 20
 
 ---
 
-### Singly Linked List — Edge Cases Matrix
+### Singly Linked List â€” Edge Cases Matrix
 
 
 | Operation | Empty List | Single Node | Two Nodes | Duplicates |
@@ -1509,21 +1509,21 @@ typedef struct dnode {
 
 ```
 DNode (24 bytes on 64-bit)
-┌──────────┬──────────────┬──────────────┐
-│   data   │    prev      │    next      │
-│ (4 bytes)│ (8 bytes)    │ (8 bytes)    │
-└──────────┴──────────────┴──────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚   data   â”‚    prev      â”‚    next      â”‚
+â”‚ (4 bytes)â”‚ (8 bytes)    â”‚ (8 bytes)    â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### Pointer Diagram
 
 
 ```
-NULL ←──┌────┬─────┬──────┐    ┌────┬─────┬──────┐    ┌────┬──────┬──────┐
-        │ 10 │ ●  │  ●───┼───→│ 20 │ ●  │  ●───┼───→│ 30 │ ●   │ NULL │
-        └────┴──│──┴──────┘    └────┴──│──┴──────┘    └────┴──│───┴──────┘
-                ↑                     ↑                     ↑
-                └─────────────────────┘─────────────────────┘
+NULL â†â”€â”€â”Œâ”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”
+        â”‚ 10 â”‚ â—  â”‚  â—â”€â”€â”€â”¼â”€â”€â”€â†’â”‚ 20 â”‚ â—  â”‚  â—â”€â”€â”€â”¼â”€â”€â”€â†’â”‚ 30 â”‚ â—   â”‚ NULL â”‚
+        â””â”€â”€â”€â”€â”´â”€â”€â”‚â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”´â”€â”€â”‚â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”´â”€â”€â”‚â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜
+                â†‘                     â†‘                     â†‘
+                â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### 15.3.1 Create Node
@@ -1652,21 +1652,21 @@ DELETE(head, value):
 | Search | 0x1000 | 10 | advance |
 | Search | 0x2000 | 20 | advance |
 | Search | 0x3000 | 30 | found! |
-| cur->prev exists | 0x2000 | — | cur->prev->next = cur->next (40) |
-| cur->next exists | 0x4000 (40) | — | cur->next->prev = cur->prev (20) |
-| free | — | — | cur freed |
+| cur->prev exists | 0x2000 | â€” | cur->prev->next = cur->next (40) |
+| cur->next exists | 0x4000 (40) | â€” | cur->next->prev = cur->prev (20) |
+| free | â€” | â€” | cur freed |
 
 Before:
 ```
-NULL ←→ [10] ←→ [20] ←→ [30] ←→ [40] ←→ NULL
-                          ↑
+NULL â†â†’ [10] â†â†’ [20] â†â†’ [30] â†â†’ [40] â†â†’ NULL
+                          â†‘
                          cur
 ```
 
 After:
 ```
-NULL ←→ [10] ←→ [20] ←→ [40] ←→ NULL
-                     ↑
+NULL â†â†’ [10] â†â†’ [20] â†â†’ [40] â†â†’ NULL
+                     â†‘
                20->next = 40
                 40->prev = 20
 ```
@@ -1834,7 +1834,7 @@ After deleting 30: 5 <-> 10 <-> 20 <-> 40 <-> NULL
 ### Concept
 
 
-In a circular linked list, the last node's `next` pointer points back to the head instead of NULL. There is no natural end — you stop when you return to the head.
+In a circular linked list, the last node's `next` pointer points back to the head instead of NULL. There is no natural end â€” you stop when you return to the head.
 
 ### Real-World Analogy: Roundabout
 
@@ -1844,13 +1844,13 @@ Instead of a road that dead-ends, the road curves back to the start. You can kee
 ### Structure
 
 
-Same as singly linked list — only the tail's `next` differs.
+Same as singly linked list â€” only the tail's `next` differs.
 
 ```
-head ───→ ┌────┬──────┐    ┌────┬──────┐    ┌────┬──────┐
-          │ 10 │  ●───┼───→│ 20 │  ●───┼───→│ 30 │  ●───┐
-          └────┴──────┘    └────┴──────┘    └────┴──────┘ │
-            ↑──────────────────────────────────────────────┘
+head â”€â”€â”€â†’ â”Œâ”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”
+          â”‚ 10 â”‚  â—â”€â”€â”€â”¼â”€â”€â”€â†’â”‚ 20 â”‚  â—â”€â”€â”€â”¼â”€â”€â”€â†’â”‚ 30 â”‚  â—â”€â”€â”€â”
+          â””â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜ â”‚
+            â†‘â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### 15.4.1 Insert at End (Circular Trick)
@@ -1884,13 +1884,13 @@ INSERT_END_CIRCULAR(head, value):
 | Step | head | new_node | head->next | new_node->next | head data | new data |
 |------|------|----------|------------|----------------|-----------|----------|
 | Start | 0x1000(10) | 0x2000(20) | 0x1000(self) | NULL | 10 | 20 |
-| Insert | — | — | 0x2000 | 0x1000 | — | — |
-| Swap | — | — | — | — | 20 | 10 |
-| Return new head | — | 0x2000(20) | — | — | — | — |
+| Insert | â€” | â€” | 0x2000 | 0x1000 | â€” | â€” |
+| Swap | â€” | â€” | â€” | â€” | 20 | 10 |
+| Return new head | â€” | 0x2000(20) | â€” | â€” | â€” | â€” |
 
 Result: `20 -> 10 -> (back to 20)`
 
-Wait — this is confusing. Let me use a simpler approach:
+Wait â€” this is confusing. Let me use a simpler approach:
 
 #### Simpler Insertion
 
@@ -1918,16 +1918,16 @@ Node *insert_end_circular(Node *head, int value)
 }
 ```
 
-#### Dry Run: Insert 30 at end of circular [10 → 20 → (back to 10)]
+#### Dry Run: Insert 30 at end of circular [10 â†’ 20 â†’ (back to 10)]
 
 | Step | cur | cur->data | cur->next | Action |
 |------|-----|-----------|-----------|--------|
 | Init | 0x1000 | 10 | 0x2000 | start |
-| Loop | 0x2000 | 20 | 0x1000 (head) | stop — cur->next == head |
+| Loop | 0x2000 | 20 | 0x1000 (head) | stop â€” cur->next == head |
 | Insert | 0x2000 | 20 | 0x3000 (new) | cur->next = n(30) |
-| — | n | 30 | 0x1000 | n->next = head |
+| â€” | n | 30 | 0x1000 | n->next = head |
 
-Result: [10 → 20 → 30 → (back to 10)]
+Result: [10 â†’ 20 â†’ 30 â†’ (back to 10)]
 
 ### 15.4.2 Traversal
 
@@ -2061,14 +2061,14 @@ typedef struct cdnode {
 
 
 ```
-       ┌────────────────────────────────────────┐
-       │                                        │
-       ▼                                        │
-┌────┬─────┬──────┐    ┌────┬─────┬──────┐    ┌────┬─────┬──────┐
-│ 10 │ ●  │  ●───┼───→│ 20 │ ●  │  ●───┼───→│ 30 │ ●  │  ●───┘
-└────┴──│──┴──────┘    └────┴──│──┴──────┘    └────┴──│──┴──────┘
-    ▲                          │                      │
-    └──────────────────────────┴──────────────────────┘
+       â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+       â”‚                                        â”‚
+       â–¼                                        â”‚
+â”Œâ”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”
+â”‚ 10 â”‚ â—  â”‚  â—â”€â”€â”€â”¼â”€â”€â”€â†’â”‚ 20 â”‚ â—  â”‚  â—â”€â”€â”€â”¼â”€â”€â”€â†’â”‚ 30 â”‚ â—  â”‚  â—â”€â”€â”€â”˜
+â””â”€â”€â”€â”€â”´â”€â”€â”‚â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”´â”€â”€â”‚â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”´â”€â”€â”‚â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜
+    â–²                          â”‚                      â”‚
+    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### 15.5.1 Create Node
@@ -2096,7 +2096,7 @@ CDNode *insert_end(CDNode *head, int value)
     CDNode *n = create_cdnode(value);
     if (head == NULL) return n;
 
-    CDNode *last = head->prev;   /* O(1) — head->prev is the tail */
+    CDNode *last = head->prev;   /* O(1) â€” head->prev is the tail */
 
     /* Link new node between last and head */
     last->next = n;
@@ -2244,9 +2244,9 @@ Head->prev (tail) data: 30
 | End marker | next == NULL | next == NULL and prev == NULL | next == head | next == head and prev == tail |
 | Insert at head | O(1) | O(1) | O(1) | O(1) |
 | Insert at end | O(n) | O(n) | O(n) | O(1)* |
-| Delete with pointer | O(n) — need prev | O(1) | O(n) — need prev | O(1) |
+| Delete with pointer | O(n) â€” need prev | O(1) | O(n) â€” need prev | O(1) |
 | Reverse traversal | Impossible | O(1) per step | Impossible | O(1) per step |
-| Free complexity | O(n) — follow next | O(n) | Must break cycle first | Must break cycle first |
+| Free complexity | O(n) â€” follow next | O(n) | Must break cycle first | Must break cycle first |
 | Circular iteration | No | No | Yes | Yes |
 
 \* Circular doubly gives O(1) tail access via `head->prev`.
@@ -2256,8 +2256,8 @@ Head->prev (tail) data: 30
 
 | Use Case | Best Type | Why |
 |----------|-----------|-----|
-| Stack | Singly | LIFO — only need head operations |
-| Queue (basic) | Singly + tail ptr | FIFO — insert at tail, remove from head |
+| Stack | Singly | LIFO â€” only need head operations |
+| Queue (basic) | Singly + tail ptr | FIFO â€” insert at tail, remove from head |
 | Undo/Redo | Doubly | Need to go back and forth |
 | Round-robin scheduler | Circular | Cyclic iteration |
 | Music playlist (repeat) | Circular doubly | Next/prev + repeat |
@@ -2266,21 +2266,21 @@ Head->prev (tail) data: 30
 
 ---
 
-## 15.7 Array vs Linked List — Deep Comparison
+## 15.7 Array vs Linked List â€” Deep Comparison
 
 | Criterion | Array | Linked List |
 |-----------|-------|-------------|
 | **Memory layout** | Contiguous | Scattered (non-contiguous) |
-| **Element access** | O(1) — direct index | O(n) — must traverse |
-| **Insert at beginning** | O(n) — shift all elements | O(1) |
+| **Element access** | O(1) â€” direct index | O(n) â€” must traverse |
+| **Insert at beginning** | O(n) â€” shift all elements | O(1) |
 | **Insert at end** | O(1) amortized | O(n) without tail ptr |
-| **Delete at beginning** | O(n) — shift all elements | O(1) |
+| **Delete at beginning** | O(n) â€” shift all elements | O(1) |
 | **Delete at end** | O(1) | O(n) without tail ptr |
 | **Search unsorted** | O(n) | O(n) |
-| **Search sorted** | O(log n) — binary search | O(n) — binary search impossible |
-| **Memory overhead** | None — just the data | 8-16 bytes per node for pointers |
-| **Cache locality** | Excellent — contiguous memory | Poor — scattered nodes cause cache misses |
-| **Memory fragmentation** | Minimal | High — many small allocations |
+| **Search sorted** | O(log n) â€” binary search | O(n) â€” binary search impossible |
+| **Memory overhead** | None â€” just the data | 8-16 bytes per node for pointers |
+| **Cache locality** | Excellent â€” contiguous memory | Poor â€” scattered nodes cause cache misses |
+| **Memory fragmentation** | Minimal | High â€” many small allocations |
 | **Resizing** | Expensive (copy to new array) | Trivial (just add/remove nodes) |
 | **Reverse** | O(n) with O(1) swaps | O(n) with pointer reversal |
 | **Merge sorted** | O(n+m) with extra space | O(n+m) in-place |
@@ -2308,30 +2308,30 @@ Head->prev (tail) data: 30
 
 ```
 Array in memory (contiguous):
-┌────┬────┬────┬────┬────┐
-│ 10 │ 20 │ 30 │ 40 │ 50 │
-└────┴────┴────┴────┴────┘
+â”Œâ”€â”€â”€â”€â”¬â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”
+â”‚ 10 â”‚ 20 â”‚ 30 â”‚ 40 â”‚ 50 â”‚
+â””â”€â”€â”€â”€â”´â”€â”€â”€â”€â”´â”€â”€â”€â”€â”´â”€â”€â”€â”€â”´â”€â”€â”€â”€â”˜
  0x1000-0x1013 (assuming 4-byte ints)
 
 Linked list in memory (scattered):
-┌────┬──────┐    ┌────┬──────┐    ┌────┬──────┐
-│ 10 │  ●───┼───→│ 20 │  ●───┼───→│ 30 │ NULL │
-└────┴──────┘    └────┴──────┘    └────┴──────┘
+â”Œâ”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”
+â”‚ 10 â”‚  â—â”€â”€â”€â”¼â”€â”€â”€â†’â”‚ 20 â”‚  â—â”€â”€â”€â”¼â”€â”€â”€â†’â”‚ 30 â”‚ NULL â”‚
+â””â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”˜
  0x1000           0x2000           0x3000
 ```
 
 The linked list forces pointer-chasing: to read node 30, the CPU must:
 1. Fetch node 10 from 0x1000 (cache line loaded)
-2. Read `next` pointer → 0x2000
+2. Read `next` pointer â†’ 0x2000
 3. Fetch node 20 from 0x2000 (another cache line)
-4. Read `next` pointer → 0x3000
+4. Read `next` pointer â†’ 0x3000
 5. Fetch node 30 from 0x3000 (another cache line)
 
 The array reads all 5 elements in ONE cache line (typically 64 bytes).
 
 ---
 
-## 15.8 Floyd's Cycle Detection — Full Trace and Proof
+## 15.8 Floyd's Cycle Detection â€” Full Trace and Proof
 
 ### Mathematical Intuition
 
@@ -2341,12 +2341,12 @@ Floyd's algorithm works because of modular arithmetic. In a list with a cycle of
 ### Detailed Trace
 
 
-Consider: `1 → 2 → 3 → 4 → 5 → 6 → 3` (cycle starts at 3, length 4)
+Consider: `1 â†’ 2 â†’ 3 â†’ 4 â†’ 5 â†’ 6 â†’ 3` (cycle starts at 3, length 4)
 
 ```
-Positions: 1 → 2 → 3 → 4 → 5 → 6
-                     ↑              │
-                     └──────────────┘
+Positions: 1 â†’ 2 â†’ 3 â†’ 4 â†’ 5 â†’ 6
+                     â†‘              â”‚
+                     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 | Step | Slow | Fast | Distance (fast - slow) |
@@ -2354,8 +2354,8 @@ Positions: 1 → 2 → 3 → 4 → 5 → 6
 | 0 | 1 | 1 | 0 (initial, skip check) |
 | 1 | 2 | 3 | 1 |
 | 2 | 3 | 5 | 2 |
-| 3 | 4 | 3 (wraps) | -1 ≡ 3 (mod 4) |
-| 4 | 5 | 5 | 0 — MEET! |
+| 3 | 4 | 3 (wraps) | -1 â‰¡ 3 (mod 4) |
+| 4 | 5 | 5 | 0 â€” MEET! |
 
 Distance reduces by 1 each step modulo the cycle length. When it hits 0, they're at the same node.
 
@@ -2371,12 +2371,12 @@ Meeting point is D + K steps from head.
 Fast traveled 2(D + K) steps total.
 Fast traveled D + K + nL steps (n full cycles around the loop).
 So: D + K + nL = 2(D + K)
-→ nL = D + K
-→ D = nL - K
+â†’ nL = D + K
+â†’ D = nL - K
 
 When slow starts from head and fast from M, both at 1 step:
 - Slow reaches cycle start after D steps.
-- Fast travels D more steps from M: (K + D) mod L = (K + nL - K) mod L = 0 — back at cycle start.
+- Fast travels D more steps from M: (K + D) mod L = (K + nL - K) mod L = 0 â€” back at cycle start.
 
 They meet at the cycle start. QED.
 
@@ -2420,47 +2420,47 @@ Node *find_cycle_start(Node *head)
 ### Edge Cases for Floyd
 
 
-- **No cycle**: Fast reaches NULL — detect returns NULL.
-- **Full list is a cycle**: tail→head. Still detected. Start is head.
+- **No cycle**: Fast reaches NULL â€” detect returns NULL.
+- **Full list is a cycle**: tailâ†’head. Still detected. Start is head.
 - **Single node with self-loop**: fast->next is not NULL (the node itself). slow=fast in step 1.
 - **Two-node cycle**: Both point to each other. Detected in 2 iterations.
 
 ---
 
-## 15.9 Reverse — Iterative vs Recursive Deep Dive
+## 15.9 Reverse â€” Iterative vs Recursive Deep Dive
 
 ### Iterative Reverse (Three-Pointer Technique)
 
 
 **The idea**: Walk through the list with three pointers (`prev`, `current`, `next`). For each node, make it point backward instead of forward.
 
-**Step-by-step trace** on [A → B → C → D → NULL]:
+**Step-by-step trace** on [A â†’ B â†’ C â†’ D â†’ NULL]:
 
 ```
-Initial:   NULL ← [A] → [B] → [C] → [D] → NULL
+Initial:   NULL â† [A] â†’ [B] â†’ [C] â†’ [D] â†’ NULL
            prev   cur    next
 
 Step 1:    next = cur->next (save B)
-           cur->next = prev (A→NULL)
-           NULL ← [A]   [B] → [C] → [D] → NULL
+           cur->next = prev (Aâ†’NULL)
+           NULL â† [A]   [B] â†’ [C] â†’ [D] â†’ NULL
                     prev  cur/next
 
-Step 2:    prev = cur (A→...)
-           cur = next (B→...)
-           NULL ← [A]   [B] → [C] → [D] → NULL
+Step 2:    prev = cur (Aâ†’...)
+           cur = next (Bâ†’...)
+           NULL â† [A]   [B] â†’ [C] â†’ [D] â†’ NULL
                  prev   cur    next
 
 Step 3:    next = cur->next (save C)
-           cur->next = prev (B→A)
-           NULL ← [A] ← [B]   [C] → [D] → NULL
+           cur->next = prev (Bâ†’A)
+           NULL â† [A] â† [B]   [C] â†’ [D] â†’ NULL
                         prev   cur    next
 
 ... continue until cur == NULL ...
 
-Final:     NULL ← [A] ← [B] ← [C] ← [D]
+Final:     NULL â† [A] â† [B] â† [C] â† [D]
                                       prev   cur(NULL)
 
-Return prev — D is new head.
+Return prev â€” D is new head.
 ```
 
 ### Recursive Reverse
@@ -2468,29 +2468,29 @@ Return prev — D is new head.
 
 **The idea**: Recurse to the last node, then on the way back, make each node's next node point to it.
 
-**Execution trace** on [A → B → C → D → NULL]:
+**Execution trace** on [A â†’ B â†’ C â†’ D â†’ NULL]:
 
 ```
 Call stack:
 reverse(A)
-  → reverse(B)
-    → reverse(C)
-      → reverse(D)
-        → D->next == NULL, return D (base case)
-      ← D is new_head
-      C->next->next = C  →  D->next = C  →  D→C
-      C->next = NULL     →  C→NULL
+  â†’ reverse(B)
+    â†’ reverse(C)
+      â†’ reverse(D)
+        â†’ D->next == NULL, return D (base case)
+      â† D is new_head
+      C->next->next = C  â†’  D->next = C  â†’  Dâ†’C
+      C->next = NULL     â†’  Câ†’NULL
       return D
-    ← new_head = D
-    B->next->next = B  →  C->next = B  →  C→B→NULL
+    â† new_head = D
+    B->next->next = B  â†’  C->next = B  â†’  Câ†’Bâ†’NULL
     B->next = NULL
     return D
-  ← new_head = D
-  A->next->next = A  →  B->next = A  →  B→A→NULL
+  â† new_head = D
+  A->next->next = A  â†’  B->next = A  â†’  Bâ†’Aâ†’NULL
   A->next = NULL
   return D
-← D is new head
-Result: D → C → B → A → NULL
+â† D is new head
+Result: D â†’ C â†’ B â†’ A â†’ NULL
 ```
 
 ### Comparison Table
@@ -2499,7 +2499,7 @@ Result: D → C → B → A → NULL
 | Criteria | Iterative | Recursive |
 |----------|-----------|-----------|
 | Code complexity | 5 lines (clear, no magic) | 4 lines (magic feeling) |
-| Space complexity | O(1) | O(n) — call stack per node |
+| Space complexity | O(1) | O(n) â€” call stack per node |
 | Stack overflow risk | None | ~10^4 nodes will overflow |
 | Performance | Fast, no call overhead | ~3x slower due to function calls |
 | Readability | Mechanical, easy to follow | Elegant but harder to trace |
@@ -2517,11 +2517,11 @@ Result: D → C → B → A → NULL
 
 **Q1: Why are linked lists used when arrays are faster for access?**
 
-Linked lists excel at insertions and deletions, especially at the beginning, where arrays require O(n) shifts. They also handle dynamic sizing naturally — no need for realloc or copying. Use them when your workload is insert/delete-heavy and sequential-iteration-heavy, not random-access-heavy.
+Linked lists excel at insertions and deletions, especially at the beginning, where arrays require O(n) shifts. They also handle dynamic sizing naturally â€” no need for realloc or copying. Use them when your workload is insert/delete-heavy and sequential-iteration-heavy, not random-access-heavy.
 
 **Q2: How do you detect a loop in a linked list optimally?**
 
-Floyd's cycle detection: use two pointers (slow, fast). Slow advances 1 step, fast advances 2 steps. If they meet, there's a loop. O(n) time, O(1) space. Alternative: hash table of visited addresses — O(n) time and O(n) space, less elegant.
+Floyd's cycle detection: use two pointers (slow, fast). Slow advances 1 step, fast advances 2 steps. If they meet, there's a loop. O(n) time, O(1) space. Alternative: hash table of visited addresses â€” O(n) time and O(n) space, less elegant.
 
 **Q3: How do you reverse a linked list in place?**
 
@@ -2554,13 +2554,13 @@ Given a pointer to the node (not just the value), you can access the previous no
 
 When implementing any linked list operation on a whiteboard:
 
-1. **Check empty list** (`head == NULL`) — handle as early return.
-2. **Check single node** — some operations (reverse, delete) are trivial.
-3. **Check head node** specially — operations at head change the head pointer.
-4. **Use temporary pointers** — never modify head directly unless returning new head.
-5. **Draw the list** — draw boxes and arrows. Show pointer states before and after.
-6. **Trace edge cases** — empty, one node, two nodes, tail operations.
-7. **Free memory** — every malloc in a deletion must have a matching free.
+1. **Check empty list** (`head == NULL`) â€” handle as early return.
+2. **Check single node** â€” some operations (reverse, delete) are trivial.
+3. **Check head node** specially â€” operations at head change the head pointer.
+4. **Use temporary pointers** â€” never modify head directly unless returning new head.
+5. **Draw the list** â€” draw boxes and arrows. Show pointer states before and after.
+6. **Trace edge cases** â€” empty, one node, two nodes, tail operations.
+7. **Free memory** â€” every malloc in a deletion must have a matching free.
 
 ---
 
@@ -2601,9 +2601,9 @@ When implementing any linked list operation on a whiteboard:
 
 | Library / Component | Usage |
 |---------------------|-------|
-| **Linux kernel `list.h`** | Doubly circular linked list — the kernel's fundamental data structure. `struct list_head` appears in thousands of kernel structs. |
+| **Linux kernel `list.h`** | Doubly circular linked list â€” the kernel's fundamental data structure. `struct list_head` appears in thousands of kernel structs. |
 | **glibc `struct list`** | Doubly linked list used internally for memory management. |
-| **Java `LinkedList`** | Doubly linked list — implements `List` and `Deque`. |
+| **Java `LinkedList`** | Doubly linked list â€” implements `List` and `Deque`. |
 | **Python `collections.deque`** | Doubly linked list of blocks for O(1) append/pop from both ends. |
 | **Redis quicklist** | Doubly linked list of ziplists (compressed lists of nodes) for memory-efficient list storage. |
 
@@ -2611,22 +2611,22 @@ When implementing any linked list operation on a whiteboard:
 
 
 A music player with repeat mode uses a **circular doubly linked list**:
-- `next` → skip to next song (forward)
-- `prev` → go back to previous song (backward)
-- Circular → when you reach the last song, next wraps to the first
+- `next` â†’ skip to next song (forward)
+- `prev` â†’ go back to previous song (backward)
+- Circular â†’ when you reach the last song, next wraps to the first
 - Each node: `{song_data, prev, next}`
 
 ```
-Head → SongA ⇄ SongB ⇄ SongC ⇄ SongD
-        ↑                              │
-        └──────────────────────────────┘
-            (last→next = head)
-            (head→prev = last)
+Head â†’ SongA â‡„ SongB â‡„ SongC â‡„ SongD
+        â†‘                              â”‚
+        â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+            (lastâ†’next = head)
+            (headâ†’prev = last)
 ```
 
 ---
 
-## 15.12 Common Operations — Complete Complexity Matrix
+## 15.12 Common Operations â€” Complete Complexity Matrix
 
 | Operation | Singly | Doubly | Circular | Circular Doubly |
 |-----------|--------|--------|----------|-----------------|
@@ -2642,7 +2642,7 @@ Head → SongA ⇄ SongB ⇄ SongC ⇄ SongD
 | Find middle | O(n) | O(n) | O(n) | O(n) |
 | Detect loop | O(n) | O(n) | trivially true | trivially true |
 
-\* "Reverse" in doubly linked lists means iterating backward — O(1) per step, not a structural reversal.
+\* "Reverse" in doubly linked lists means iterating backward â€” O(1) per step, not a structural reversal.
 
 ---
 
@@ -2703,7 +2703,7 @@ Head → SongA ⇄ SongB ⇄ SongC ⇄ SongD
    A) O(1)
    B) O(log n)
    C) O(n)
-   D) O(n²)
+   D) O(nÂ²)
 
 <details><summary>Answer&lt;/summary&gt;**C)** Search requires traversing from the head, potentially visiting all n nodes. There's no random access.</details>
 
@@ -2735,7 +2735,7 @@ Head → SongA ⇄ SongB ⇄ SongC ⇄ SongD
    A) O(1)
    B) O(log n)
    C) O(n)
-   D) O(n²)
+   D) O(nÂ²)
 
 <details><summary>Answer&lt;/summary&gt;**A)** Iterative reversal uses only three pointer variables (`prev`, `current`, `next`), regardless of list size. O(1) space.</details>
 
@@ -2745,7 +2745,7 @@ Head → SongA ⇄ SongB ⇄ SongC ⇄ SongD
    C) Search for a value
    D) Sort
 
-<details><summary>Answer&lt;/summary&gt;**B)** Inserting at the beginning of a linked list requires only updating the head pointer. An array must shift all elements — O(n).</details>
+<details><summary>Answer&lt;/summary&gt;**B)** Inserting at the beginning of a linked list requires only updating the head pointer. An array must shift all elements â€” O(n).</details>
 
 7. What does the slow/fast pointer technique find besides the middle?
    A) The maximum value
@@ -2776,8 +2776,8 @@ Head → SongA ⇄ SongB ⇄ SongC ⇄ SongD
 - **Deletion** requires finding the predecessor (singly) or accessing it directly (doubly).
 - **Reverse** can be done iteratively (three-pointer, O(1) space) or recursively (elegant, O(n) stack).
 - **Floyd's cycle detection** finds loops in O(n) time and O(1) space using slow/fast pointers.
-- **Find middle** uses the same slow/fast technique — slow lands in the middle when fast reaches the end.
-- **Merge sorted** works by comparing heads and recursing — no new node allocations.
+- **Find middle** uses the same slow/fast technique â€” slow lands in the middle when fast reaches the end.
+- **Merge sorted** works by comparing heads and recursing â€” no new node allocations.
 - Linked lists excel at insert/delete-heavy workloads but have poor cache locality and O(n) access.
 - **Always use temporary pointers** for traversal. Never modify head unless returning new head.
 - **Case analysis** is critical: handle empty list, single node, head operations, and tail operations separately.
@@ -2800,37 +2800,37 @@ Head → SongA ⇄ SongB ⇄ SongC ⇄ SongD
 ### Application Problems
 
 1. **Count nodes**: Write `int count_nodes(const Node *head)` that returns the number of nodes.
-2. **Reverse list**: Write `Node *reverse_list(Node *head)` — iterative, in-place.
-3. **Find middle**: Write `int find_middle(const Node *head)` — slow/fast pointer.
-4. **Detect loop**: Write `int has_loop(const Node *head)` — returns 1/0.
-5. **Merge sorted**: Write `Node *merge_sorted(Node *a, Node *b)` — no new allocations.
-6. **Remove duplicates**: Write `Node *remove_duplicates(Node *head)` — remove duplicate values from a sorted list.
-7. **Nth from end**: Write `Node *nth_from_end(Node *head, int n)` — find the nth node from the end in one pass. Use two pointers.
-8. **Split circular**: Write `void split_circular(Node *head, Node **first, Node **second)` — split a circular linked list into two halves.
-9. **Sorted insert**: Write `Node *sorted_insert(Node *head, int value)` — insert into a sorted singly linked list.
-10. **Intersection point**: Write `Node *find_intersection(Node *a, Node *b)` — find the node where two singly linked lists intersect.
-11. **Palindrome check**: Write `int is_palindrome(Node *head)` — check if a linked list is a palindrome. Use slow/fast to find middle, reverse second half, compare.
-12. **Even-odd split**: Write `void split_alternate(Node *head, Node **even, Node **odd)` — separate even and odd position nodes into two lists.
+2. **Reverse list**: Write `Node *reverse_list(Node *head)` â€” iterative, in-place.
+3. **Find middle**: Write `int find_middle(const Node *head)` â€” slow/fast pointer.
+4. **Detect loop**: Write `int has_loop(const Node *head)` â€” returns 1/0.
+5. **Merge sorted**: Write `Node *merge_sorted(Node *a, Node *b)` â€” no new allocations.
+6. **Remove duplicates**: Write `Node *remove_duplicates(Node *head)` â€” remove duplicate values from a sorted list.
+7. **Nth from end**: Write `Node *nth_from_end(Node *head, int n)` â€” find the nth node from the end in one pass. Use two pointers.
+8. **Split circular**: Write `void split_circular(Node *head, Node **first, Node **second)` â€” split a circular linked list into two halves.
+9. **Sorted insert**: Write `Node *sorted_insert(Node *head, int value)` â€” insert into a sorted singly linked list.
+10. **Intersection point**: Write `Node *find_intersection(Node *a, Node *b)` â€” find the node where two singly linked lists intersect.
+11. **Palindrome check**: Write `int is_palindrome(Node *head)` â€” check if a linked list is a palindrome. Use slow/fast to find middle, reverse second half, compare.
+12. **Even-odd split**: Write `void split_alternate(Node *head, Node **even, Node **odd)` â€” separate even and odd position nodes into two lists.
 
 ### Challenge Problem: Polynomial Using Linked List
 
 
 Implement a **polynomial** using a linked list where each node stores a coefficient and an exponent. Provide:
 
-- `Poly *poly_create()` — create empty polynomial.
-- `void poly_add_term(Poly *p, double coeff, int exp)` — add a term (or combine if exponent exists).
-- `Poly *poly_add(const Poly *a, const Poly *b)` — add two polynomials.
-- `Poly *poly_multiply(const Poly *a, const Poly *b)` — multiply two polynomials.
-- `void poly_print(const Poly *p)` — print in standard form: `3.0x^2 + 2.0x - 5.0`.
-- `double poly_eval(const Poly *p, double x)` — evaluate using Horner's method.
+- `Poly *poly_create()` â€” create empty polynomial.
+- `void poly_add_term(Poly *p, double coeff, int exp)` â€” add a term (or combine if exponent exists).
+- `Poly *poly_add(const Poly *a, const Poly *b)` â€” add two polynomials.
+- `Poly *poly_multiply(const Poly *a, const Poly *b)` â€” multiply two polynomials.
+- `void poly_print(const Poly *p)` â€” print in standard form: `3.0x^2 + 2.0x - 5.0`.
+- `double poly_eval(const Poly *p, double x)` â€” evaluate using Horner's method.
 
 Test with:
 
 ```
-(3x² + 2x - 5) + (x³ - 4x + 7) = x³ + 3x² - 2x + 2
-(x + 1) * (x - 1) = x² - 1
+(3xÂ² + 2x - 5) + (xÂ³ - 4x + 7) = xÂ³ + 3xÂ² - 2x + 2
+(x + 1) * (x - 1) = xÂ² - 1
 ```
 
 ---
 
-> **One-Sentence Takeaway:** Linked lists offer O(1) insertion and deletion at known positions but O(n) sequential access — use them when your workload is insert/delete-heavy, not access-heavy.
+> **One-Sentence Takeaway:** Linked lists offer O(1) insertion and deletion at known positions but O(n) sequential access â€” use them when your workload is insert/delete-heavy, not access-heavy.

@@ -1,4 +1,4 @@
-# Chapter 5: Self-Improvement Loops
+﻿# Chapter 5: Self-Improvement Loops
 
 ## Learning Objectives
 
@@ -7,16 +7,16 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/loop-engineering/ch05-self-improvement-loops/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/loop-engineering/ch05-self-improvement-loops/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/loop-engineering/ch05-self-improvement-loops/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/loop-engineering/ch05-self-improvement-loops/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/loop-engineering/ch05-self-improvement-loops/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/loop-engineering/ch05-self-improvement-loops/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/loop-engineering/ch05-self-improvement-loops/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/loop-engineering/ch05-self-improvement-loops/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/loop-engineering/ch05-self-improvement-loops/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/loop-engineering/ch05-self-improvement-loops/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/loop-engineering/ch05-self-improvement-loops/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/loop-engineering/ch05-self-improvement-loops/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -29,7 +29,7 @@ By the end of this chapter, you will be able to:
 - Contrast DPO with traditional RLHF and implement direct preference optimization
 - Build a ConstitutionalReflectionLoop that enforces behavioral constraints at runtime
 - Construct a PreferencePairGenerator that produces chosen/rejected training data
-- Assemble a complete improvement pipeline with generate → critique → revise → compare stages
+- Assemble a complete improvement pipeline with generate â†’ critique â†’ revise â†’ compare stages
 
 ## Theory
 
@@ -38,22 +38,22 @@ By the end of this chapter, you will be able to:
 
 Constitutional AI (CAI) replaces expensive human feedback with a written constitution: a set of natural-language principles the model uses to critique and revise its own outputs. The core loop has three phases:
 
-**Phase 1 — Guided generation.** The model produces an initial response to a prompt.
+**Phase 1 â€” Guided generation.** The model produces an initial response to a prompt.
 
-**Phase 2 — Self-critique.** The model evaluates its own output against each constitutional principle. For every principle that the output violates, the model articulates how.
+**Phase 2 â€” Self-critique.** The model evaluates its own output against each constitutional principle. For every principle that the output violates, the model articulates how.
 
-**Phase 3 — Revision.** The model rewrites the output to remove the violation while preserving utility.
+**Phase 3 â€” Revision.** The model rewrites the output to remove the violation while preserving utility.
 
 The process can iterate: a revised response may still violate a subtler principle, triggering another critique-revision pass. In practice two to three passes suffice for most safety domains.
 
 ```
-┌──────────────┐     ┌──────────────┐     ┌──────────────┐
-│   Prompt    │────▶│  Generate    │────▶│  Critique    │
-└──────────────┘     └──────────────┘     └──────┬───────┘
-                          ▲                      │ violates
-                          │   ┌──────────┐       │
-                          └───│  Revise  │◀──────┘
-                              └──────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚   Prompt    â”‚â”€â”€â”€â”€â–¶â”‚  Generate    â”‚â”€â”€â”€â”€â–¶â”‚  Critique    â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜     â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜
+                          â–²                      â”‚ violates
+                          â”‚   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”       â”‚
+                          â””â”€â”€â”€â”‚  Revise  â”‚â—€â”€â”€â”€â”€â”€â”€â”˜
+                              â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 Critique and revision share the same underlying LLM, making CAI a pure self-supervision loop. The constitution is immutable during inference but can be updated between training cycles.
@@ -70,20 +70,20 @@ Reinforcement Learning from Human (RLHF) or AI Feedback (RLAIF) follows a three-
 3. **Policy optimization.** Use Proximal Policy Optimization (PPO) or REINFORCE to update the language model, maximizing expected reward while constraining KL divergence from the original model to prevent reward hacking.
 
 ```
-┌──────────┐   ┌──────────────┐   ┌──────────────┐   ┌──────────────┐
-│ Prompts  │──▶│  Generate    │──▶│  Judge       │──▶│(chosen,      │
-│          │   │  Responses   │   │  (Human/AI)  │   │  rejected)   │
-└──────────┘   └──────────────┘   └──────────────┘   └──────┬───────┘
-                                                             │
-                                                    ┌────────▼───────┐
-                                                    │ Reward Model   │
-                                                    │ Training       │
-                                                    └────────┬───────┘
-                                                             │
-                                                    ┌────────▼───────┐
-                                                    │ Policy Update  │
-                                                    │ (PPO / REINFORCE)
-                                                    └────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ Prompts  â”‚â”€â”€â–¶â”‚  Generate    â”‚â”€â”€â–¶â”‚  Judge       â”‚â”€â”€â–¶â”‚(chosen,      â”‚
+â”‚          â”‚   â”‚  Responses   â”‚   â”‚  (Human/AI)  â”‚   â”‚  rejected)   â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜
+                                                             â”‚
+                                                    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”
+                                                    â”‚ Reward Model   â”‚
+                                                    â”‚ Training       â”‚
+                                                    â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜
+                                                             â”‚
+                                                    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”
+                                                    â”‚ Policy Update  â”‚
+                                                    â”‚ (PPO / REINFORCE)
+                                                    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 RLAIF scales preference labeling to arbitrary volumes since the judge is an LLM rather than a human annotator. The key challenge is judge alignment: the AI judge must itself be aligned, or biases propagate down the pipeline.
@@ -105,14 +105,14 @@ STaR (Self-Taught Reasoner) and ReST (Reinforced Self-Training) are bootstrap lo
 - Repeat, annealing the filter threshold each iteration.
 
 ```
-┌──────────────┐     ┌──────────────┐     ┌──────────────┐
-│  Prompts     │────▶│  Generate N  │────▶│  Filter by   │
-│              │     │  Responses   │     │  Quality     │
-└──────────────┘     └──────────────┘     └──────┬───────┘
-                          ▲                      │
-                          │   ┌──────────┐       │
-                          └───│ Retrain  │◀──────┘
-                              └──────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚  Prompts     â”‚â”€â”€â”€â”€â–¶â”‚  Generate N  â”‚â”€â”€â”€â”€â–¶â”‚  Filter by   â”‚
+â”‚              â”‚     â”‚  Responses   â”‚     â”‚  Quality     â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜     â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜
+                          â–²                      â”‚
+                          â”‚   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”       â”‚
+                          â””â”€â”€â”€â”‚ Retrain  â”‚â—€â”€â”€â”€â”€â”€â”€â”˜
+                              â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 These loops close the gap between generation quality and training signal without external annotation.
@@ -123,14 +123,14 @@ These loops close the gap between generation quality and training signal without
 DPO simplifies RLHF by eliminating the separate reward model. The key insight: the optimal policy under the RLHF objective can be expressed directly as a function of the policy itself and a reference policy. DPO optimizes:
 
 ```
-ℒ_DPO = -𝔼[log σ(β * (log π_θ(y_w|x) / π_ref(y_w|x) - log π_θ(y_l|x) / π_ref(y_l|x)))]
+â„’_DPO = -ð”¼[log Ïƒ(Î² * (log Ï€_Î¸(y_w|x) / Ï€_ref(y_w|x) - log Ï€_Î¸(y_l|x) / Ï€_ref(y_l|x)))]
 ```
 
 where:
 - `y_w` is the preferred (chosen) response, `y_l` the dispreferred (rejected)
-- `π_θ` is the current policy, `π_ref` the reference (frozen)
-- `β` controls how far the policy can deviate from the reference
-- `σ` is the logistic sigmoid
+- `Ï€_Î¸` is the current policy, `Ï€_ref` the reference (frozen)
+- `Î²` controls how far the policy can deviate from the reference
+- `Ïƒ` is the logistic sigmoid
 
 DPO trains directly on preference pairs without sampling from the policy during training, making it more stable and computationally lighter than PPO-based RLHF.
 
@@ -143,7 +143,7 @@ This loop checks every agent output against a set of constitutional principles, 
 ```typescript
 import { z } from "zod";
 
-// ── Constitution ──────────────────────────────────────────────
+// â”€â”€ Constitution â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 interface Principle {
   id: string;
   description: string;
@@ -156,7 +156,7 @@ const PRINCIPLES: Principle[] = [
   { id: "fairness", description: "Output must not promote stereotypes or discrimination." },
 ];
 
-// ── Critique / Revision types ─────────────────────────────────
+// â”€â”€ Critique / Revision types â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 interface Critique {
   principleId: string;
   violated: boolean;
@@ -173,7 +173,7 @@ interface RevisionResult {
   critiques: Critique[];
 }
 
-// ── LLM adapter (pluggable) ───────────────────────────────────
+// â”€â”€ LLM adapter (pluggable) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 type LlmGenerate = (prompt: string) => string | Promise<string>;
 
 interface ConstitutionalConfig {
@@ -182,7 +182,7 @@ interface ConstitutionalConfig {
   maxRounds: number;
 }
 
-// ── Core loop ─────────────────────────────────────────────────
+// â”€â”€ Core loop â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 export class ConstitutionalReflectionLoop {
   private config: ConstitutionalConfig;
 
@@ -245,7 +245,7 @@ Return only the revised output.`;
   }
 }
 
-// ── Usage ─────────────────────────────────────────────────────
+// â”€â”€ Usage â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const loop = new ConstitutionalReflectionLoop({
   generate: async (prompt) => {
     // In production this calls the actual LLM
@@ -266,7 +266,7 @@ This component generates (chosen, rejected) response pairs from an LLM, then opt
 ```typescript
 import { randomUUID } from "node:crypto";
 
-// ── Types ─────────────────────────────────────────────────────
+// â”€â”€ Types â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 interface PreferencePair {
   id: string;
   prompt: string;
@@ -290,7 +290,7 @@ interface GeneratorConfig {
   candidatesPerPrompt: number;
 }
 
-// ── Pair Generator ────────────────────────────────────────────
+// â”€â”€ Pair Generator â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 export class PreferencePairGenerator {
   private config: GeneratorConfig;
 
@@ -371,7 +371,7 @@ export class PreferencePairGenerator {
   }
 }
 
-// ── Usage ─────────────────────────────────────────────────────
+// â”€â”€ Usage â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const generator = new PreferencePairGenerator({
   generateCandidates: async (prompt, n) =>
     Array.from({ length: n }, (_, i) => `Candidate ${i + 1} for: ${prompt}`),
@@ -392,13 +392,13 @@ console.log(PreferencePairGenerator.toDpoFormat(dataset));
 
 ### Example 5.3: Improvement Pipeline
 
-A complete improvement pipeline that chains generate → critique → revise → compare, using the constitutional loop as a sub-component and tracking quality deltas.
+A complete improvement pipeline that chains generate â†’ critique â†’ revise â†’ compare, using the constitutional loop as a sub-component and tracking quality deltas.
 
 ```typescript
 import { ConstitutionalReflectionLoop } from "./example-5-1";
 import { PreferencePairGenerator, type PreferencePair } from "./example-5-2";
 
-// ── Types ─────────────────────────────────────────────────────
+// â”€â”€ Types â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 interface PipelineStep {
   phase: "generate" | "critique" | "revise" | "compare";
   output: string;
@@ -414,10 +414,10 @@ interface PipelineResult {
   pair: PreferencePair;
 }
 
-// ── Scoring function ──────────────────────────────────────────
+// â”€â”€ Scoring function â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 type Scorer = (prompt: string, output: string) => Promise<number>;
 
-// ── Improvement Pipeline ──────────────────────────────────────
+// â”€â”€ Improvement Pipeline â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 export class ImprovementPipeline {
   constructor(
     private loop: ConstitutionalReflectionLoop,
@@ -462,7 +462,7 @@ export class ImprovementPipeline {
       revisionRounds: Math.ceil(revisionResult.critiques.length / 4),
     });
 
-    // 4. Compare — generate a preference pair from raw vs revised
+    // 4. Compare â€” generate a preference pair from raw vs revised
     const pair: PreferencePair = {
       id: crypto.randomUUID(),
       prompt,
@@ -503,7 +503,7 @@ export class ImprovementPipeline {
   }
 }
 
-// ── Usage ─────────────────────────────────────────────────────
+// â”€â”€ Usage â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 async function main() {
   const loop = new ConstitutionalReflectionLoop({
     generate: async (p) => `Response to: ${p}`,
@@ -619,7 +619,7 @@ flowchart TD
 
 import { randomUUID } from "node:crypto";
 
-// ── Math Problem Types ─────────────────────────────────────────
+// â”€â”€ Math Problem Types â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 interface MathProblem {
   id: string;
   question: string;
@@ -635,7 +635,7 @@ interface ReasoningTrace {
 
 type SimulateModelFn = (problem: MathProblem) => ReasoningTrace;
 
-// ── StarLoop: STaR Bootstrapping ───────────────────────────────
+// â”€â”€ StarLoop: STaR Bootstrapping â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 class StarLoop {
   private traces: ReasoningTrace[] = [];
   private iteration = 0;
@@ -685,7 +685,7 @@ class StarLoop {
     };
   }
 
-  /** Simulate retraining on correct traces — accuracy improves each iteration. */
+  /** Simulate retraining on correct traces â€” accuracy improves each iteration. */
   private retrain(correct: ReasoningTrace[]): void {
     const improvement = Math.min(correct.length / this.problems.length, 1.0) * 0.15;
     const originalModel = this.model;
@@ -719,7 +719,7 @@ class StarLoop {
   }
 }
 
-// ── DPO Loss with Numerical Stability ──────────────────────────
+// â”€â”€ DPO Loss with Numerical Stability â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 interface DpoLossParams {
   policyLogprobs: number[];
   refLogprobs: number[];
@@ -770,7 +770,7 @@ function sigmoid(x: number): number {
   return expX / (1 + expX);
 }
 
-// ── Constitutional Critics ────────────────────────────────────
+// â”€â”€ Constitutional Critics â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 interface ConstitutionalPrinciple {
   id: string;
   description: string;
@@ -792,7 +792,7 @@ interface CritiqueResponse {
 
 type GenerateFn = (prompt: string) => Promise<string>;
 
-// ── Single-Domain Constitutional Critic ────────────────────────
+// â”€â”€ Single-Domain Constitutional Critic â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 class ConstitutionalCritic {
   constructor(
     public readonly principles: ConstitutionalPrinciple[],
@@ -846,7 +846,7 @@ class ConstitutionalCritic {
   }
 }
 
-// ── ConstitutionalChain: Multi-Domain Sequential Critic ────────
+// â”€â”€ ConstitutionalChain: Multi-Domain Sequential Critic â”€â”€â”€â”€â”€â”€â”€â”€
 class ConstitutionalChain {
   private critics: ConstitutionalCritic[];
 
@@ -881,7 +881,7 @@ class ConstitutionalChain {
   }
 }
 
-// ── TemperatureAnnealingPairGenerator ──────────────────────────
+// â”€â”€ TemperatureAnnealingPairGenerator â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 interface AnnealingPair {
   prompt: string;
   chosen: string;
@@ -950,7 +950,7 @@ class TemperatureAnnealingPairGenerator {
   }
 }
 
-// ── ImprovementPipeline with Accumulate and Retrain ────────────
+// â”€â”€ ImprovementPipeline with Accumulate and Retrain â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 interface AccumulatedPair {
   prompt: string;
   chosen: string;
@@ -1017,7 +1017,7 @@ class ImprovementPipelineWithRetrain {
   }
 }
 
-// ── SelfPlayLoop: Policy Improvement via Self-Play ─────────────
+// â”€â”€ SelfPlayLoop: Policy Improvement via Self-Play â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 type PolicyFn = (state: string) => string;
 
 interface SelfPlayCheckpoint {
@@ -1084,7 +1084,7 @@ class SelfPlayLoop {
   }
 }
 
-// ── Usage ──────────────────────────────────────────────────────
+// â”€â”€ Usage â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 async function main() {
   // StarLoop demo
   const problems: MathProblem[] = Array.from({ length: 20 }, (_, i) => ({
@@ -1183,7 +1183,7 @@ flowchart TD
 
 import { randomUUID } from "node:crypto";
 
-// ── CurriculumLearningScheduler ─────────────────────────────────
+// â”€â”€ CurriculumLearningScheduler â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 interface CurriculumLevel {
   level: number;
   description: string;
@@ -1257,7 +1257,7 @@ class CurriculumLearningScheduler {
   }
 }
 
-// ── SelfConsistencyEnsemble ─────────────────────────────────────
+// â”€â”€ SelfConsistencyEnsemble â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 interface ReasoningPath {
   id: string;
   steps: string[];
@@ -1333,7 +1333,7 @@ class SelfConsistencyEnsemble {
   }
 }
 
-// ── RejectionSamplingLoop ───────────────────────────────────────
+// â”€â”€ RejectionSamplingLoop â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 interface SampledCandidate {
   id: string;
   output: string;
@@ -1439,7 +1439,7 @@ class RejectionSamplingLoop {
   }
 }
 
-// ── SkillTransferLoop ───────────────────────────────────────────
+// â”€â”€ SkillTransferLoop â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 interface SkillTransferConfig {
   teacherFn: (task: string) => Promise<string>;
   studentFn: (task: string) => Promise<string>;
@@ -1530,7 +1530,7 @@ class SkillTransferLoop {
   }
 }
 
-// ── ProgressTracker ─────────────────────────────────────────────
+// â”€â”€ ProgressTracker â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 interface ProgressPoint {
   iteration: number;
   score: number;
@@ -1647,7 +1647,7 @@ class ProgressTracker {
   }
 }
 
-// ── Usage ──────────────────────────────────────────────────────
+// â”€â”€ Usage â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 async function main() {
   // CurriculumLearningScheduler demo
   const curriculum = new CurriculumLearningScheduler([

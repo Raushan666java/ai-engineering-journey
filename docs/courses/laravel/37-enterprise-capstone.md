@@ -1,6 +1,6 @@
-# Chapter 37: Enterprise Capstone → Multi-Agent Platform
+﻿# Chapter 37: Enterprise Capstone â†’ Multi-Agent Platform
 
-> **Previous:** [Manufacturing & Industrial — AI-Powered Factory Agents](./36-manufacturing.md) | **Next:** [Laravel General Interview Q&A](./38-interview-general.md)
+> **Previous:** [Manufacturing & Industrial â€” AI-Powered Factory Agents](./36-manufacturing.md) | **Next:** [Laravel General Interview Q&A](./38-interview-general.md)
 
 
 
@@ -9,7 +9,7 @@
 
 ## Learning Objectives
 
-- Synthesize all concepts from Chapters 1â€“36 into a single enterprise multi-agent platform
+- Synthesize all concepts from Chapters 1Ã¢â‚¬â€œ36 into a single enterprise multi-agent platform
 - Design a centralized agent registry with capability-based service discovery and cross-sector routing
 - Build an event-driven agent communication bus using Laravel events, queues, and pub/sub patterns
 - Implement a shared memory and vector knowledge base accessible by every agent in the platform
@@ -22,16 +22,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/37-enterprise-capstone/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/37-enterprise-capstone/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/37-enterprise-capstone/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/37-enterprise-capstone/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/37-enterprise-capstone/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/37-enterprise-capstone/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/37-enterprise-capstone/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/37-enterprise-capstone/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/37-enterprise-capstone/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/37-enterprise-capstone/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/37-enterprise-capstone/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/37-enterprise-capstone/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -137,10 +137,10 @@ flowchart LR
 ---
 
 ## Theory
-> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
 
 ![Enterprise Capstone](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/37-enterprise-capstone.png)
 
@@ -148,13 +148,13 @@ flowchart LR
 ### 37.1 Platform Overview & Architecture
 
 
-The Enterprise Multi-Agent Platform (EMAP) is a cross-industry system where specialized AI agents from different domains → healthcare, finance, education, logistics, HR, customer service, legal, real estate, manufacturing, and marketing → coexist, communicate, and collaborate within a single unified runtime. Organizations deploy the platform as a multi-tenant SaaS instance, with each tenant running isolated agent instances.
+The Enterprise Multi-Agent Platform (EMAP) is a cross-industry system where specialized AI agents from different domains â†’ healthcare, finance, education, logistics, HR, customer service, legal, real estate, manufacturing, and marketing â†’ coexist, communicate, and collaborate within a single unified runtime. Organizations deploy the platform as a multi-tenant SaaS instance, with each tenant running isolated agent instances.
 
 #### Platform Specification
 
 | Dimension | Specification |
 |-----------|--------------|
-| Agent Types | 10 industry sectors, 3â€“5 agents per sector |
+| Agent Types | 10 industry sectors, 3Ã¢â‚¬â€œ5 agents per sector |
 | Communication | Event-driven pub/sub via Laravel queues |
 | Memory | PostgreSQL + pgvector for structured + vector storage |
 | Isolation | Multi-tenant per organization (database-scoped) |
@@ -165,29 +165,29 @@ The Enterprise Multi-Agent Platform (EMAP) is a cross-industry system where spec
 #### High-Level Architecture
 
 ```
-                         ┌─────────────────────────────┐
-                         │      API Gateway (REST)      │
-                         │   Rate Limit Â· Auth Â· Route  │
-                         └──────────┬──────────────────┘
-                                    │
-                         ┌──────────▼──────────────────┐
-                         │   Enterprise Orchestrator    │
-                         │ Supervisor Â· Workflow Engine │
-                         └──────────┬──────────────────┘
-                                    │
-          ┌─────────────────────────┼─────────────────────────┐
-          │                         │                         │
- ┌────────▼────────┐   ┌───────────▼───────────┐   ┌─────────▼────────┐
- │  Agent Registry  │   │  Agent Message Bus    │   │  Shared Memory    │
- │  discover/call   │   │  pub/sub Â· events     │   │  Knowledge Base   │
- └────────┬────────┘   └───────────┬───────────┘   └─────────┬────────┘
-          │                         │                         │
- ┌────────▼─────────────────────────▼─────────────────────────▼────────┐
- │                        Agent Pool (10 sectors)                       │
- │  ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐   │
- │  │Health│ │Finan.│ │Educ. │ │Logis.│ │  HR  │ │Cust. │ │Legal │...│
- │  └──────┘ └──────┘ └──────┘ └──────┘ └──────┘ └──────┘ └──────┘   │
- └────────────────────────────────────────────────────────────────────┘
+                         â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                         â”‚      API Gateway (REST)      â”‚
+                         â”‚   Rate Limit Ã‚Â· Auth Ã‚Â· Route  â”‚
+                         â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                                    â”‚
+                         â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                         â”‚   Enterprise Orchestrator    â”‚
+                         â”‚ Supervisor Ã‚Â· Workflow Engine â”‚
+                         â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                                    â”‚
+          â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+          â”‚                         â”‚                         â”‚
+ â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”
+ â”‚  Agent Registry  â”‚   â”‚  Agent Message Bus    â”‚   â”‚  Shared Memory    â”‚
+ â”‚  discover/call   â”‚   â”‚  pub/sub Ã‚Â· events     â”‚   â”‚  Knowledge Base   â”‚
+ â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+          â”‚                         â”‚                         â”‚
+ â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”€â”€â”
+ â”‚                        Agent Pool (10 sectors)                       â”‚
+ â”‚  â”Œâ”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â”   â”‚
+ â”‚  â”‚Healthâ”‚ â”‚Finan.â”‚ â”‚Educ. â”‚ â”‚Logis.â”‚ â”‚  HR  â”‚ â”‚Cust. â”‚ â”‚Legal â”‚...â”‚
+ â”‚  â””â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”˜   â”‚
+ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 #### Service Provider Bootstrapping
@@ -835,7 +835,7 @@ class AgentBusServiceProvider extends ServiceProvider
 ### 37.4 Shared Memory & Knowledge Base
 
 
-Every agent in the platform can read from and write to a centralized shared memory. This enables cross-sector knowledge sharing → a finance agent's fraud analysis can inform a customer service agent's triage decision. The knowledge base stores structured data, conversation context, and vector embeddings for semantic retrieval.
+Every agent in the platform can read from and write to a centralized shared memory. This enables cross-sector knowledge sharing â†’ a finance agent's fraud analysis can inform a customer service agent's triage decision. The knowledge base stores structured data, conversation context, and vector embeddings for semantic retrieval.
 
 #### Shared Memory Model
 
@@ -2618,7 +2618,7 @@ class CrossSectorWorkflowRunner
             'customer_id' => $customerId,
         ]);
 
-        // ── Step 1: Submit ticket to shared memory ──
+        // â”€â”€ Step 1: Submit ticket to shared memory â”€â”€
         $this->memory->remember("ticket:{$ticketId}:submission", [
             'ticket_id' => $ticketId,
             'customer_id' => $customerId,
@@ -2629,7 +2629,7 @@ class CrossSectorWorkflowRunner
             'correlation_id' => $correlationId,
         ]);
 
-        // ── Step 2: Triage agent classifies the ticket ──
+        // â”€â”€ Step 2: Triage agent classifies the ticket â”€â”€
         $triageResult = $this->bus->publish('ticket.created', [
             'ticket_id' => $ticketId,
             'customer_id' => $customerId,
@@ -2655,7 +2655,7 @@ class CrossSectorWorkflowRunner
             'assigned_sector' => 'finance',
         ]);
 
-        // ── Step 3: Bus routes triage.completed → billing.resolve ──
+        // â”€â”€ Step 3: Bus routes triage.completed â†’ billing.resolve â”€â”€
         $this->bus->publish('triage.completed', [
             'ticket_id' => $ticketId,
             'customer_id' => $customerId,
@@ -2666,7 +2666,7 @@ class CrossSectorWorkflowRunner
             'workflow_id' => "wf-{$ticketId}",
         ]);
 
-        // ── Step 4: Finance billing agent resolves the issue ──
+        // â”€â”€ Step 4: Finance billing agent resolves the issue â”€â”€
         $billingResult = $this->bus->publish('billing.resolve', [
             'ticket_id' => $ticketId,
             'customer_id' => $customerId,
@@ -2693,7 +2693,7 @@ class CrossSectorWorkflowRunner
 
         Log::info('Step 4: Billing resolved', $resolution);
 
-        // ── Step 5: Bus routes billing.resolved → survey.dispatch ──
+        // â”€â”€ Step 5: Bus routes billing.resolved â†’ survey.dispatch â”€â”€
         $this->bus->publish('billing.resolved', [
             'ticket_id' => $ticketId,
             'customer_id' => $customerId,
@@ -2703,7 +2703,7 @@ class CrossSectorWorkflowRunner
             'workflow_id' => "wf-{$ticketId}",
         ]);
 
-        // ── Step 6: Satisfaction agent dispatches survey ──
+        // â”€â”€ Step 6: Satisfaction agent dispatches survey â”€â”€
         $surveyResult = $this->bus->publish('survey.dispatch', [
             'ticket_id' => $ticketId,
             'customer_id' => $customerId,
@@ -2726,7 +2726,7 @@ class CrossSectorWorkflowRunner
 
         Log::info('Step 6: Survey dispatched');
 
-        // ── Final: Compile full workflow output from shared memory ──
+        // â”€â”€ Final: Compile full workflow output from shared memory â”€â”€
         $fullContext = $this->memory->recallAll('tickets', [
             'namespace' => 'tickets',
         ]);
@@ -3248,7 +3248,7 @@ The workflow must:
 2. Route dynamically: based on the triage agent's classification, publish to **one, two, or three** sector agents simultaneously
 3. Use `fan-out` parallel dispatch for multi-sector incidents (e.g., a financial compliance issue routes to both Finance and Legal)
 4. Aggregate all sector responses into a single `IncidentResolution` stored in shared memory
-5. Implement a `CircuitBreaker` per sector → if any sector agent fails twice consecutively, log the failure and continue without blocking other sectors
+5. Implement a `CircuitBreaker` per sector â†’ if any sector agent fails twice consecutively, log the failure and continue without blocking other sectors
 6. Return a resolution report with per-sector findings and an overall status (`resolved`, `partial`, `escalated`)
 
 Write the complete implementation including:

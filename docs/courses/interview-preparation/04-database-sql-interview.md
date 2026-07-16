@@ -1,4 +1,4 @@
-# Chapter 4: Database and SQL Interview
+﻿# Chapter 4: Database and SQL Interview
 
 ## Learning Objectives
 
@@ -12,16 +12,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/interview-preparation/04-database-sql-interview/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/interview-preparation/04-database-sql-interview/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/04-database-sql-interview/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/interview-preparation/04-database-sql-interview/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/interview-preparation/04-database-sql-interview/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/interview-preparation/04-database-sql-interview/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/04-database-sql-interview/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/interview-preparation/04-database-sql-interview/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/interview-preparation/04-database-sql-interview/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/interview-preparation/04-database-sql-interview/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/04-database-sql-interview/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/interview-preparation/04-database-sql-interview/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -862,7 +862,7 @@ ORDER BY salary DESC;
 
 ## Section 6: Common Table Expressions (CTE) (6 Problems)
 
-### Q47: Recursive CTE — Generate employee hierarchy (org chart).
+### Q47: Recursive CTE â€” Generate employee hierarchy (org chart).
 
 <details>
 <summary>Click to reveal SQL</summary>
@@ -887,7 +887,7 @@ WITH RECURSIVE emp_hierarchy AS (
         e.emp_name, 
         e.manager_id,
         eh.level + 1,
-        CONCAT(eh.path, ' → ', e.emp_name)
+        CONCAT(eh.path, ' â†’ ', e.emp_name)
     FROM employees e
     JOIN emp_hierarchy eh ON e.manager_id = eh.emp_id
 )
@@ -897,7 +897,7 @@ ORDER BY path;
 ```
 </details>
 
-### Q48: Recursive CTE — Generate date series for reporting.
+### Q48: Recursive CTE â€” Generate date series for reporting.
 
 <details>
 <summary>Click to reveal SQL</summary>
@@ -916,7 +916,7 @@ WHERE DAYOFWEEK(dt) IN (1, 7); -- Weekends only
 ```
 </details>
 
-### Q49: CTE — Find employee projects with budget utilization.
+### Q49: CTE â€” Find employee projects with budget utilization.
 
 <details>
 <summary>Click to reveal SQL</summary>
@@ -952,7 +952,7 @@ ORDER BY budget DESC;
 ```
 </details>
 
-### Q50: CTE — Complex filtering: Projects with all senior employees.
+### Q50: CTE â€” Complex filtering: Projects with all senior employees.
 
 <details>
 <summary>Click to reveal SQL</summary>
@@ -979,7 +979,7 @@ WHERE ps.total_emp = ps.senior_emp;
 ```
 </details>
 
-### Q51: CTE — Department salary statistics with global comparison.
+### Q51: CTE â€” Department salary statistics with global comparison.
 
 <details>
 <summary>Click to reveal SQL</summary>
@@ -1012,7 +1012,7 @@ ORDER BY z_score DESC;
 ```
 </details>
 
-### Q52: Multiple CTEs — Full management chain analysis.
+### Q52: Multiple CTEs â€” Full management chain analysis.
 
 <details>
 <summary>Click to reveal SQL</summary>
@@ -1244,16 +1244,16 @@ JOIN departments d ON e.dept_id = d.dept_id
 WHERE e.salary > 100000;
 
 -- Look for:
--- 1. Seq Scan → Full table scan (needs index)
--- 2. Nested Loop → For small result sets
--- 3. Hash Join → For moderate results
--- 4. Merge Join → For sorted data
--- 5. Index Only Scan → Ideal (all data in index)
+-- 1. Seq Scan â†’ Full table scan (needs index)
+-- 2. Nested Loop â†’ For small result sets
+-- 3. Hash Join â†’ For moderate results
+-- 4. Merge Join â†’ For sorted data
+-- 5. Index Only Scan â†’ Ideal (all data in index)
 
 -- Common issues in EXPLAIN output:
--- "Rows Removed by Filter" → Index needed
--- "Sort Method: external merge" → Memory pressure
--- "Parallel Seq Scan" → Could benefit from partitioning
+-- "Rows Removed by Filter" â†’ Index needed
+-- "Sort Method: external merge" â†’ Memory pressure
+-- "Parallel Seq Scan" â†’ Could benefit from partitioning
 ```
 </details>
 
@@ -1517,7 +1517,7 @@ async function searchEmployees(options: QueryOptions) {
 ```
 </details>
 
-### Q62: Normalization vs Denormalization — Practical scenario.
+### Q62: Normalization vs Denormalization â€” Practical scenario.
 
 <details>
 <summary>Click to reveal TypeScript</summary>
@@ -1625,7 +1625,7 @@ async function getEmployeesPage(page: number, pageSize: number) {
   return db.query(sql, [pageSize, offset]);
 }
 
-// Method 2: Keyset pagination (cursor-based) — FAST for deep pages
+// Method 2: Keyset pagination (cursor-based) â€” FAST for deep pages
 async function getEmployeesCursor(lastId: number | null, pageSize: number) {
   const sql = `
     SELECT emp_id, emp_name, salary
@@ -1728,7 +1728,7 @@ class FullTextSearch {
 
 ## Section 9: Advanced SQL Scenarios (6 Problems)
 
-### Q65: Gaps and Islands — Find employees whose IDs have gaps.
+### Q65: Gaps and Islands â€” Find employees whose IDs have gaps.
 
 <details>
 <summary>Click to reveal SQL</summary>
@@ -1767,7 +1767,7 @@ HAVING COUNT(*) > 1;
 ```
 </details>
 
-### Q66: Pivot data — Convert rows to columns.
+### Q66: Pivot data â€” Convert rows to columns.
 
 <details>
 <summary>Click to reveal SQL</summary>
@@ -2025,13 +2025,13 @@ This chapter covered 70 SQL and database problems:
 
 ## Practical Takeaways
 
-1. **Know the order of execution:** SQL is evaluated in this order: FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY → LIMIT.
+1. **Know the order of execution:** SQL is evaluated in this order: FROM â†’ WHERE â†’ GROUP BY â†’ HAVING â†’ SELECT â†’ ORDER BY â†’ LIMIT.
 
 2. **Master window functions:** They appear in 60% of advanced SQL interview questions. Practice RANK, LAG, LEAD, and running totals.
 
 3. **Index strategy matters:** Create indexes for WHERE columns, JOIN columns, and ORDER BY columns. Use composite indexes for multi-column queries.
 
-4. **⭐ Must Know:** All JOIN types, GROUP BY with HAVING, correlated subqueries, window functions (RANK, LAG), recursive CTEs.
+4. **â­ Must Know:** All JOIN types, GROUP BY with HAVING, correlated subqueries, window functions (RANK, LAG), recursive CTEs.
 
 5. **For government exams:** Focus on basic SELECT, JOINs, GROUP BY, subqueries, and normalization concepts. Window functions are less common.
 

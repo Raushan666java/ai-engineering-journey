@@ -1,6 +1,6 @@
-# Chapter 10: Trees, Grids & Dynamic Programming
+﻿# Chapter 10: Trees, Grids & Dynamic Programming
 
-> **Prerequisites:** [Chapter 9: Dynamic Programming — Sequences](./09-dp-sequences.md) — DP recurrences for chain structures | **Next:** [Chapter 11: Shortest Paths & MST](./11-graph-shortest.md) — Graph algorithms with DP foundations
+> **Prerequisites:** [Chapter 9: Dynamic Programming â€” Sequences](./09-dp-sequences.md) â€” DP recurrences for chain structures | **Next:** [Chapter 11: Shortest Paths & MST](./11-graph-shortest.md) â€” Graph algorithms with DP foundations
 
 ## Learning Objectives
 
@@ -9,16 +9,16 @@ By the end of this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/algorithms/10-dp-trees-grids/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/algorithms/10-dp-trees-grids/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/algorithms/10-dp-trees-grids/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/algorithms/10-dp-trees-grids/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/algorithms/10-dp-trees-grids/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/algorithms/10-dp-trees-grids/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/algorithms/10-dp-trees-grids/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/algorithms/10-dp-trees-grids/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/algorithms/10-dp-trees-grids/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/algorithms/10-dp-trees-grids/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/algorithms/10-dp-trees-grids/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/algorithms/10-dp-trees-grids/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -37,7 +37,7 @@ By the end of this chapter, students will be able to:
 
 ## Why Trees and Grids Matter
 
-**Trees** are everywhere in computing. Your computer's **file system** is a tree — each folder branches into subfolders and files. When you type `ls -R`, you are performing a depth-first traversal of a tree. When you search for a program in your Start Menu, you are walking a tree. The **Document Object Model (DOM)** that renders every web page is a tree. Compilers parse source code into an **Abstract Syntax Tree (AST)** before generating machine code. Social networks recommend friends using tree-like **hierarchical clustering**. Every time you see a hierarchy, you are looking at a tree.
+**Trees** are everywhere in computing. Your computer's **file system** is a tree â€” each folder branches into subfolders and files. When you type `ls -R`, you are performing a depth-first traversal of a tree. When you search for a program in your Start Menu, you are walking a tree. The **Document Object Model (DOM)** that renders every web page is a tree. Compilers parse source code into an **Abstract Syntax Tree (AST)** before generating machine code. Social networks recommend friends using tree-like **hierarchical clustering**. Every time you see a hierarchy, you are looking at a tree.
 
 **Grids** are how computers see the world. Every **digital image** is a grid of pixels. **Satellite imagery**, **medical MRI scans**, and **game maps** are all grids. When your GPS calculates a route, it is running path-finding on a grid representation of the road network. When a robot vacuums your floor, it traverses a grid of your room. **Spreadsheets** are grids. **Convolutional neural networks (CNNs)** that power computer vision slide windows across image grids. Understanding grid algorithms is understanding how computers process visual and spatial data.
 
@@ -45,7 +45,7 @@ Trees and grids together form the backbone of **90% of DSA interview problems** 
 
 ---
 
-## Part 1: Trees — Fundamentals
+## Part 1: Trees â€” Fundamentals
 
 ### What is a Tree?
 
@@ -57,7 +57,7 @@ A **tree** is a hierarchical data structure consisting of nodes connected by edg
 - In a **binary tree**, each node has at most two children: left and right.
 
 ```
-        1 ← root
+        1 â† root
        / \
       2   3
      / \   \
@@ -85,11 +85,11 @@ A **tree** is a hierarchical data structure consisting of nodes connected by edg
 ### Binary Tree Traversals
 
 
-Traversals visit every node in a specific order — the order determines the algorithm's behavior.
+Traversals visit every node in a specific order â€” the order determines the algorithm's behavior.
 
-#### 1. Inorder Traversal (Left → Root → Right)
+#### 1. Inorder Traversal (Left â†’ Root â†’ Right)
 
-**Real-World Analogy:** Reading a dictionary in alphabetical order — you read the left page first, then the current page, then the right page. In a BST, inorder traversal gives sorted output.
+**Real-World Analogy:** Reading a dictionary in alphabetical order â€” you read the left page first, then the current page, then the right page. In a BST, inorder traversal gives sorted output.
 
 **Algorithm Steps:**
 1. Recursively traverse the left subtree.
@@ -170,19 +170,19 @@ void inorder(Node root) {
 ```
 
 **Complexity:**
-- **Time:** O(n) — every node is visited exactly once.
-- **Space:** O(h) where h is tree height — recursion stack depth. Worst case O(n) for a skewed tree.
+- **Time:** O(n) â€” every node is visited exactly once.
+- **Space:** O(h) where h is tree height â€” recursion stack depth. Worst case O(n) for a skewed tree.
 
 **Advantages:** Naturally produces sorted order in BSTs; simple recursive implementation.
 **Disadvantages:** Recursive stack may overflow for deep trees; iterative version requires explicit stack.
 
-**Edge Cases:** Empty tree — returns immediately. Single node — visits and returns.
+**Edge Cases:** Empty tree â€” returns immediately. Single node â€” visits and returns.
 
 ---
 
-#### 2. Preorder Traversal (Root → Left → Right)
+#### 2. Preorder Traversal (Root â†’ Left â†’ Right)
 
-**Real-World Analogy:** Copying a directory structure — you create the current folder first, then recursively copy subfolders. Used by `cp -R` internally.
+**Real-World Analogy:** Copying a directory structure â€” you create the current folder first, then recursively copy subfolders. Used by `cp -R` internally.
 
 **Algorithm Steps:**
 1. Visit the current node.
@@ -245,16 +245,16 @@ void preorder(Node root) {
 
 **Complexity:** O(n) time, O(h) space.
 
-**Advantages:** Creates a copy of the tree; root is visited first — useful for serialization.
+**Advantages:** Creates a copy of the tree; root is visited first â€” useful for serialization.
 **Disadvantages:** Does not give sorted order; same recursion depth concerns.
 
 **Edge Cases:** Skewed tree degenerates to linked-list traversal with O(n) stack space.
 
 ---
 
-#### 3. Postorder Traversal (Left → Right → Root)
+#### 3. Postorder Traversal (Left â†’ Right â†’ Root)
 
-**Real-World Analogy:** Deleting a directory — you must delete all files inside before removing the folder. Used by `rm -rf`.
+**Real-World Analogy:** Deleting a directory â€” you must delete all files inside before removing the folder. Used by `rm -rf`.
 
 **Algorithm Steps:**
 1. Recursively traverse the left subtree.
@@ -320,16 +320,16 @@ void postorder(Node root) {
 
 **Complexity:** O(n) time, O(h) space.
 
-**Advantages:** Children processed before parent — essential for tree deletion and tree DP.
-**Disadvantages:** Root is last — cannot be used for search-based operations.
+**Advantages:** Children processed before parent â€” essential for tree deletion and tree DP.
+**Disadvantages:** Root is last â€” cannot be used for search-based operations.
 
-**Edge Cases:** Perfect binary tree — balanced recursion stack of O(log n).
+**Edge Cases:** Perfect binary tree â€” balanced recursion stack of O(log n).
 
 ---
 
 #### 4. Level-Order Traversal (BFS)
 
-**Real-World Analogy:** Broadcasting a message through a company hierarchy — the CEO tells VPs, who tell directors, who tell managers — everyone on the same level is informed at the same time.
+**Real-World Analogy:** Broadcasting a message through a company hierarchy â€” the CEO tells VPs, who tell directors, who tell managers â€” everyone on the same level is informed at the same time.
 
 **Algorithm Steps:**
 1. Initialize a queue with the root node.
@@ -353,9 +353,9 @@ LEVEL_ORDER(root):
 
 **Dry Run:** Same tree
 
-| Step | Queue (front → back) | Dequeue | Visited |
+| Step | Queue (front â†’ back) | Dequeue | Visited |
 |------|----------------------|---------|---------|
-| 1 | [1] | — | [] |
+| 1 | [1] | â€” | [] |
 | 2 | [2, 3] | 1 | [1] |
 | 3 | [3, 4, 5] | 2 | [1, 2] |
 | 4 | [4, 5] | 3 | [1, 2, 3] |
@@ -409,13 +409,13 @@ void levelOrder(Node root) {
 ```
 
 **Complexity:**
-- **Time:** O(n) — each node enters and leaves the queue once.
-- **Space:** O(n) — queue holds at most one level's worth of nodes. Worst case O(n) for a complete tree's bottom level.
+- **Time:** O(n) â€” each node enters and leaves the queue once.
+- **Space:** O(n) â€” queue holds at most one level's worth of nodes. Worst case O(n) for a complete tree's bottom level.
 
 **Advantages:** Finds shortest path in unweighted trees; no recursion stack overflow.
 **Disadvantages:** Uses more memory than recursive traversals for deep trees.
 
-**Edge Cases:** Skewed tree — queue holds at most 1 node. Empty tree — immediate return.
+**Edge Cases:** Skewed tree â€” queue holds at most 1 node. Empty tree â€” immediate return.
 
 ---
 
@@ -432,7 +432,7 @@ A BST is a binary tree where for every node: all values in the left subtree are 
     20 40 60 80
 ```
 
-**Real-World Analogy:** A phonebook — to find "Smith", you open to the middle. If you're past S, go backward; if before S, go forward. Each comparison eliminates half the remaining book.
+**Real-World Analogy:** A phonebook â€” to find "Smith", you open to the middle. If you're past S, go backward; if before S, go forward. Each comparison eliminates half the remaining book.
 
 #### BST Search
 
@@ -519,9 +519,9 @@ BST_INSERT(root, key):
 | 1 | 50 | 55 > 50 | Go right |
 | 2 | 70 | 55 &lt; 70 | Go left |
 | 3 | 60 | 55 &lt; 60 | Go left |
-| 4 | null | — | Insert 55 as left child of 60 |
+| 4 | null | â€” | Insert 55 as left child of 60 |
 
-After: `50 → 70 → 60 → 55`
+After: `50 â†’ 70 â†’ 60 â†’ 55`
 
 **C++ Implementation:**
 ```cpp
@@ -603,9 +603,9 @@ MIN_VALUE(root):
 | Step | Node | Action |
 |------|------|--------|
 | 1 | 50 | Found target (case 3) |
-| 2 | 50 | Find inorder successor: go right → 70, then left → 60 (no left child) |
+| 2 | 50 | Find inorder successor: go right â†’ 70, then left â†’ 60 (no left child) |
 | 3 | 50 | Copy 60's value into 50 |
-| 4 | — | Delete 60 from right subtree (60 is leaf — case 1) |
+| 4 | â€” | Delete 60 from right subtree (60 is leaf â€” case 1) |
 
 After: root becomes 60
 
@@ -688,14 +688,14 @@ Node deleteBST(Node root, int key) {
 **Advantages of BST:** Sorted data at all times; efficient search/insert/delete in balanced trees.
 **Disadvantages:** Degrades to O(n) with unbalanced data; does not support range queries efficiently (use segment tree for that).
 
-**Edge Cases:** Deleting root — handled by case 3. Deleting from empty tree — returns null. Duplicate keys — typically ignored or stored in left/right by convention.
+**Edge Cases:** Deleting root â€” handled by case 3. Deleting from empty tree â€” returns null. Duplicate keys â€” typically ignored or stored in left/right by convention.
 
 ---
 
 ### Segment Tree
 
 
-**Real-World Analogy:** An organization's expense report breakdown — instead of summing all receipts each time, the accounting department keeps precomputed subtotals by department, by team, by project. A query for "total expenses from departments A–C" just adds three subtotals instead of scanning every receipt.
+**Real-World Analogy:** An organization's expense report breakdown â€” instead of summing all receipts each time, the accounting department keeps precomputed subtotals by department, by team, by project. A query for "total expenses from departments Aâ€“C" just adds three subtotals instead of scanning every receipt.
 
 A **segment tree** is a binary tree that stores interval/segment information. It enables answering range queries (sum, min, max) and updating elements in **O(log n)** time.
 
@@ -762,12 +762,12 @@ Level 2:  [1]     [3]        [5]       [7] (nodes 4, 5, 6, 7)
 | 1 | [0-3] | 16 | 2 (left), 3 (right) |
 | 2 | [0-1] | 4 | 4 (left), 5 (right) |
 | 3 | [2-3] | 12 | 6 (left), 7 (right) |
-| 4 | [0-0] | 1 | — |
-| 5 | [1-1] | 3 | — |
-| 6 | [2-2] | 5 | — |
-| 7 | [3-3] | 7 | — |
+| 4 | [0-0] | 1 | â€” |
+| 5 | [1-1] | 3 | â€” |
+| 6 | [2-2] | 5 | â€” |
+| 7 | [3-3] | 7 | â€” |
 
-**Query sum [1-2]:** Start at root (1). Partial overlap → go to node 2 (range [0-1], partial) and node 3 (range [2-3], partial). Node 2: partial → go to node 4 ([0-0], no overlap → 0) and node 5 ([1-1], full overlap → 3). Node 3: partial → go to node 6 ([2-2], full overlap → 5) and node 7 ([3-3], no overlap → 0). Result = 3 + 5 = 8.
+**Query sum [1-2]:** Start at root (1). Partial overlap â†’ go to node 2 (range [0-1], partial) and node 3 (range [2-3], partial). Node 2: partial â†’ go to node 4 ([0-0], no overlap â†’ 0) and node 5 ([1-1], full overlap â†’ 3). Node 3: partial â†’ go to node 6 ([2-2], full overlap â†’ 5) and node 7 ([3-3], no overlap â†’ 0). Result = 3 + 5 = 8.
 
 **C++ Implementation:**
 ```cpp
@@ -890,23 +890,23 @@ class SegmentTree {
 ```
 
 **Complexity:**
-- **Build:** O(n) — each node is computed once, total ~2n nodes.
-- **Query:** O(log n) — at most 4 nodes per level are visited.
-- **Update:** O(log n) — one path from root to leaf.
+- **Build:** O(n) â€” each node is computed once, total ~2n nodes.
+- **Query:** O(log n) â€” at most 4 nodes per level are visited.
+- **Update:** O(log n) â€” one path from root to leaf.
 
 **Why O(log n) for query?** Each query splits the range until full coverage or no overlap. The levels of the tree = log n. At each level, at most 2 nodes are partially overlapped. Thus ~4 log n node visits.
 
 **Advantages:** Fast range queries with point updates; versatile (sum, min, max, gcd).
 **Disadvantages:** Complex to implement; 4n memory overhead; lazy propagation needed for range updates.
 
-**Edge Cases:** n = 0 → empty tree. n = 1 → tree has 1 leaf. Query on invalid range (l > r) → undefined.
+**Edge Cases:** n = 0 â†’ empty tree. n = 1 â†’ tree has 1 leaf. Query on invalid range (l > r) â†’ undefined.
 
 ---
 
 ### Fenwick Tree (Binary Indexed Tree)
 
 
-**Real-World Analogy:** A library's book counter — instead of recounting all shelves every time, each librarian keeps a running count for their section. The head librarian combines a few section counts to answer "how many books on shelves 1–15?" without scanning every shelf.
+**Real-World Analogy:** A library's book counter â€” instead of recounting all shelves every time, each librarian keeps a running count for their section. The head librarian combines a few section counts to answer "how many books on shelves 1â€“15?" without scanning every shelf.
 
 A **Fenwick Tree** is a simpler alternative to the segment tree for **prefix sum queries and point updates**. It uses **O(n)** space and has simpler implementation.
 
@@ -956,18 +956,18 @@ UPDATE(i, delta):
 
 | Index | arr[i] | Binary | i & -i | BIT[i] stores sum of range |
 |-------|--------|--------|--------|---------------------------|
-| 1 | 1 | 001 | 1 | [1] → 1 |
-| 2 | 3 | 010 | 2 | [1-2] → 1+3 = 4 |
-| 3 | 5 | 011 | 1 | [3] → 5 |
-| 4 | 7 | 100 | 4 | [1-4] → 1+3+5+7 = 16 |
+| 1 | 1 | 001 | 1 | [1] â†’ 1 |
+| 2 | 3 | 010 | 2 | [1-2] â†’ 1+3 = 4 |
+| 3 | 5 | 011 | 1 | [3] â†’ 5 |
+| 4 | 7 | 100 | 4 | [1-4] â†’ 1+3+5+7 = 16 |
 
 BIT array: [0, 1, 4, 5, 16] (index 0 unused)
 
-**Query prefix sum up to index 3:** i=3 → sum += BIT[3]=5 → i=3-1=2 → sum += BIT[2]=4 → i=2-2=0. Sum = 5+4 = 9. Correct: 1+3+5 = 9.
+**Query prefix sum up to index 3:** i=3 â†’ sum += BIT[3]=5 â†’ i=3-1=2 â†’ sum += BIT[2]=4 â†’ i=2-2=0. Sum = 5+4 = 9. Correct: 1+3+5 = 9.
 
 **Update index 2 by +2 (arr[2] becomes 5):**
-- i=2: BIT[2] += 2 (4→6), i += 2 (i=4)
-- i=4: BIT[4] += 2 (16→18), i += 4 (i=8), done
+- i=2: BIT[2] += 2 (4â†’6), i += 2 (i=4)
+- i=4: BIT[4] += 2 (16â†’18), i += 4 (i=8), done
 
 BIT becomes: [0, 1, 6, 5, 18]
 
@@ -1055,25 +1055,25 @@ class FenwickTree {
 
 **Complexity:**
 - **Build:** O(n log n) naively, O(n) with optimized construction.
-- **Query:** O(log n) — at most log n steps since each step clears the LSB.
+- **Query:** O(log n) â€” at most log n steps since each step clears the LSB.
 - **Update:** O(log n).
 - **Space:** O(n).
 
-**Why update works:** `idx += idx & -idx` jumps from a node to its parent in the BIT tree. The LSB gives the range size. For idx=3 (011), LSB=1 → parent=4 (100). For idx=4 (100), LSB=4 → parent=8 (1000). This linking creates a tree where each node covers a power-of-2 sized range.
+**Why update works:** `idx += idx & -idx` jumps from a node to its parent in the BIT tree. The LSB gives the range size. For idx=3 (011), LSB=1 â†’ parent=4 (100). For idx=4 (100), LSB=4 â†’ parent=8 (1000). This linking creates a tree where each node covers a power-of-2 sized range.
 
 **Advantages:** Simpler than segment tree; lower constant factor; less memory.
 **Disadvantages:** Only works for prefix-sum operations; cannot handle range updates without modification; requires 1-indexed array.
 
-**Edge Cases:** n = 0 → empty. Query at index 0 → returns 0. Negative delta values for decrements.
+**Edge Cases:** n = 0 â†’ empty. Query at index 0 â†’ returns 0. Negative delta values for decrements.
 
 ---
 
-## Part 2: Grids — Fundamentals
+## Part 2: Grids â€” Fundamentals
 
 ### What is a Grid?
 
 
-A **grid** is a 2D matrix of cells, where each cell has coordinates (row, column). Grids represent spatial data — images, maps, game boards.
+A **grid** is a 2D matrix of cells, where each cell has coordinates (row, column). Grids represent spatial data â€” images, maps, game boards.
 
 ```
 (0,0)  (0,1)  (0,2)
@@ -1086,8 +1086,8 @@ A **grid** is a 2D matrix of cells, where each cell has coordinates (row, column
 ### Grid Traversal: DFS and BFS on a Matrix
 
 
-**Real-World Analogy (DFS):** Exploring a maze — you take each path as far as it goes before backtracking. You mark visited corridors with chalk.
-**Real-World Analogy (BFS):** Flood fill in a paint program — the color spreads outward in concentric rings from where you click.
+**Real-World Analogy (DFS):** Exploring a maze â€” you take each path as far as it goes before backtracking. You mark visited corridors with chalk.
+**Real-World Analogy (BFS):** Flood fill in a paint program â€” the color spreads outward in concentric rings from where you click.
 
 #### DFS on Grid
 
@@ -1109,7 +1109,7 @@ DFS_GRID(grid, visited, r, c):
         DFS_GRID(grid, visited, r+dr, c+dc)
 ```
 
-**Dry Run:** 3×3 grid, start at (0,0)
+**Dry Run:** 3Ã—3 grid, start at (0,0)
 
 Grid:
 ```
@@ -1123,7 +1123,7 @@ Grid:
 | 1 | (0,0) | {(0,0)} | [(0,0)] |
 | 2 | (0,1) | {(0,0),(0,1)} | [(0,0),(0,1)] |
 | 3 | (0,2) | {(0,0),(0,1),(0,2)} | [(0,0),(0,1),(0,2)] |
-| 4 | — | No unvisited neighbor at (0,2) | [(0,0),(0,1)] |
+| 4 | â€” | No unvisited neighbor at (0,2) | [(0,0),(0,1)] |
 | 5 | (1,1) | {(0,0),(0,1),(0,2),(1,1)} | [(0,0),(1,1)] |
 | 6 | (1,2) | ... | ... |
 
@@ -1168,7 +1168,7 @@ void dfsGrid(int[][] grid, boolean[][] vis, int r, int c) {
 }
 ```
 
-**Complexity:** O(m × n) — every cell visited at most once. Space O(m × n) for visited array + recursion stack.
+**Complexity:** O(m Ã— n) â€” every cell visited at most once. Space O(m Ã— n) for visited array + recursion stack.
 
 ---
 
@@ -1196,11 +1196,11 @@ BFS_GRID(grid, start_r, start_c):
                 queue.enqueue((nr, nc))
 ```
 
-**Dry Run:** 3×3 grid, start at (0,0)
+**Dry Run:** 3Ã—3 grid, start at (0,0)
 
-| Step | Queue (front → back) | Dequeue | Processed |
+| Step | Queue (front â†’ back) | Dequeue | Processed |
 |------|---------------------|---------|-----------|
-| 1 | [(0,0)] | — | [] |
+| 1 | [(0,0)] | â€” | [] |
 | 2 | [(0,1), (1,0)] | (0,0) | [1] |
 | 3 | [(1,0), (0,2), (1,1)] | (0,1) | [1, 2] |
 | 4 | [(0,2), (1,1), (2,0)] | (1,0) | [1, 2, 4] |
@@ -1211,7 +1211,7 @@ BFS_GRID(grid, start_r, start_c):
 | 9 | [(2,2)] | (2,1) | [1, 2, 4, 3, 5, 7, 6, 8] |
 | 10 | [] | (2,2) | [1, 2, 4, 3, 5, 7, 6, 8, 9] |
 
-BFS order (if right-then-down): 1, 2, 4, 3, 5, 7, 6, 8, 9 — spreads level by level.
+BFS order (if right-then-down): 1, 2, 4, 3, 5, 7, 6, 8, 9 â€” spreads level by level.
 
 **C++ Implementation:**
 ```cpp
@@ -1278,7 +1278,7 @@ void bfsGrid(int[][] grid, int sr, int sc) {
 }
 ```
 
-**Complexity:** O(m × n) time and space.
+**Complexity:** O(m Ã— n) time and space.
 
 **DFS vs BFS on Grids:**
 
@@ -1287,13 +1287,13 @@ void bfsGrid(int[][] grid, int sr, int sc) {
 | Order | Depth-first, go as far as possible | Level-by-level, like ripples |
 | Data Structure | Stack (recursion) | Queue |
 | Shortest Path | No (finds any path) | Yes (finds shortest) |
-| Memory | O(depth) — better for deep narrow spaces | O(width) — better for wide shallow spaces |
+| Memory | O(depth) â€” better for deep narrow spaces | O(width) â€” better for wide shallow spaces |
 | Use Case | Topological sort, cycle detection | Shortest path, flood fill |
 
 **Edge Cases for Grid Traversal:**
-- **1×1 grid:** Single cell, visited immediately. Both DFS and BFS process it and stop.
-- **1×n grid:** Degenerates to a line. DFS recurses n deep. BFS processes in order.
-- **Empty grid (0×0):** No operations.
+- **1Ã—1 grid:** Single cell, visited immediately. Both DFS and BFS process it and stop.
+- **1Ã—n grid:** Degenerates to a line. DFS recurses n deep. BFS processes in order.
+- **Empty grid (0Ã—0):** No operations.
 - **All blocked cells:** No movement possible, only start cell is visited.
 - **Grid with obstacles:** Both algorithms naturally handle blocked cells by skipping them.
 
@@ -1306,7 +1306,7 @@ void bfsGrid(int[][] grid, int sr, int sc) {
 
 Trees are naturally recursive: each node can be processed after its children are processed (post-order traversal). Tree DP typically defines a state \( dp[u] \) representing the optimal value for the subtree rooted at \( u \).
 
-**Real-World Analogy:** Company profit calculation — each department reports its profit to its division head, who combines division reports for the regional head, who combines for the CEO. The CEO never visits every employee; reports are aggregated upward.
+**Real-World Analogy:** Company profit calculation â€” each department reports its profit to its division head, who combines division reports for the regional head, who combines for the CEO. The CEO never visits every employee; reports are aggregated upward.
 
 #### 10.1.1 Tree Diameter
 
@@ -1359,21 +1359,21 @@ Adjacency: 1:[2,3], 2:[1,4,5], 3:[1,6], 4:[2], 5:[2], 6:[3,7], 7:[6]
 
 | Step | Node | Action | max1 | max2 | diameter |
 |------|------|--------|------|------|----------|
-| 1 | dfs(1) | Visit 1 | — | — | 0 |
-| 2 | dfs(2) | Visit 2 | — | — | 0 |
-| 3 | dfs(4) | Visit 4, leaf → return 1 | — | — | 0 |
+| 1 | dfs(1) | Visit 1 | â€” | â€” | 0 |
+| 2 | dfs(2) | Visit 2 | â€” | â€” | 0 |
+| 3 | dfs(4) | Visit 4, leaf â†’ return 1 | â€” | â€” | 0 |
 | 4 | 2 | Back from 4, height=1 | 1 | 0 | max(0, 1+0)=1 |
-| 5 | dfs(5) | Visit 5, leaf → return 1 | — | — | 1 |
+| 5 | dfs(5) | Visit 5, leaf â†’ return 1 | â€” | â€” | 1 |
 | 6 | 2 | Back from 5, height=1 | 1 | 1 | max(1, 1+1)=2 |
-| 7 | 2 | Return max1+1 = 2 | — | — | 2 |
+| 7 | 2 | Return max1+1 = 2 | â€” | â€” | 2 |
 | 8 | 1 | Back from 2, height=2 | 2 | 0 | max(2, 2+0)=2 |
-| 9 | dfs(3) | Visit 3 | — | — | 2 |
-| 10 | dfs(6) | Visit 6 | — | — | 2 |
-| 11 | dfs(7) | Visit 7, leaf → return 1 | — | — | 2 |
+| 9 | dfs(3) | Visit 3 | â€” | â€” | 2 |
+| 10 | dfs(6) | Visit 6 | â€” | â€” | 2 |
+| 11 | dfs(7) | Visit 7, leaf â†’ return 1 | â€” | â€” | 2 |
 | 12 | 6 | Back from 7, height=1 | 1 | 0 | 2 |
-| 13 | 6 | Return 2 | — | — | 2 |
+| 13 | 6 | Return 2 | â€” | â€” | 2 |
 | 14 | 3 | Back from 6, height=2 | 2 | 0 | max(2, 2+0)=2 |
-| 15 | 3 | Return 3 | — | — | 2 |
+| 15 | 3 | Return 3 | â€” | â€” | 2 |
 | 16 | 1 | Back from 3, height=3 | 2 | 2 | max(2, 2+3)=5 |
 
 **Diameter = 5** (path: 4-2-1-3-6-7, exactly 5 edges)
@@ -1450,9 +1450,9 @@ int dfs(List<List<Integer>> adj, boolean[] vis, int u) {
 }
 ```
 
-**Complexity:** O(n) time — each edge is traversed twice. O(h) space for recursion stack.
+**Complexity:** O(n) time â€” each edge is traversed twice. O(h) space for recursion stack.
 
-**Why O(n)?** Each node is visited once in DFS. At each node, we check its adjacency list. Total edge examinations = O(n) for a tree (n-1 edges × 2 passes = ∞ but bounded by 2n).
+**Why O(n)?** Each node is visited once in DFS. At each node, we check its adjacency list. Total edge examinations = O(n) for a tree (n-1 edges Ã— 2 passes = âˆž but bounded by 2n).
 
 **Advantages:** Single DFS pass, elegant recursive formulation.
 **Disadvantages:** Recursion may overflow for deep trees (mitigated by iterative DFS).
@@ -1471,8 +1471,8 @@ int dfs(List<List<Integer>> adj, boolean[] vis, int u) {
 **Approach:** For each node, compute:
 - `leftGain`: max sum from left child going downward (0 if negative).
 - `rightGain`: max sum from right child going downward (0 if negative).
-- `currentSum = node.val + leftGain + rightGain` — potential answer.
-- Return `node.val + max(leftGain, rightGain)` — the max single-branch path going up.
+- `currentSum = node.val + leftGain + rightGain` â€” potential answer.
+- Return `node.val + max(leftGain, rightGain)` â€” the max single-branch path going up.
 
 **Pseudocode:**
 ```
@@ -1503,7 +1503,7 @@ MAX_PATH_SUM(node):
 | 4 | 20 | max(0,15)=15 | max(0,7)=7 | 20+15+7=42 | 42 | 20+max(15,7)=35 |
 | 5 | -10 | max(0,9)=9 | max(0,35)=35 | -10+9+35=34 | 42 | -10+max(9,35)=25 |
 
-**Maximum path sum = 42** (path: 15 → 20 → 7)
+**Maximum path sum = 42** (path: 15 â†’ 20 â†’ 7)
 
 **C++ Implementation:**
 ```cpp
@@ -1554,7 +1554,7 @@ int dfs(TreeNode node) {
 }
 ```
 
-**Complexity:** O(n) — each node visited once. O(h) space.
+**Complexity:** O(n) â€” each node visited once. O(h) space.
 
 **Advantages:** Elegant recursive approach with minimal state.
 **Disadvantages:** Assumes binary tree (not n-ary).
@@ -1671,7 +1671,7 @@ int rob(TreeNode root) {
 }
 ```
 
-**Complexity:** O(n) time — each node visited once. O(h) space.
+**Complexity:** O(n) time â€” each node visited once. O(h) space.
 
 **Advantages:** Elegant two-state DP that naturally fits tree structure.
 **Disadvantages:** Only works for the specific constraint of "no adjacent nodes."
@@ -1679,9 +1679,9 @@ int rob(TreeNode root) {
 **Edge Cases:**
 - **Empty tree:** Returns 0.
 - **Single node:** notRob=0, rob=val, answer=val.
-- **Tree with all equal values:** Still works, but answer is val × floor((height+1)/2).
+- **Tree with all equal values:** Still works, but answer is val Ã— floor((height+1)/2).
 
-> **Pro Tip:** Tree DP always uses post-order DFS — compute children's DP values before the parent's. For the diameter, track the top 2 heights at each node. For state-based problems like House Robber, use dp[u][selected] / dp[u][not_selected] pairs.
+> **Pro Tip:** Tree DP always uses post-order DFS â€” compute children's DP values before the parent's. For the diameter, track the top 2 heights at each node. For state-based problems like House Robber, use dp[u][selected] / dp[u][not_selected] pairs.
 
 > **Remember:** In tree DP, the global answer may merge values from different subtrees (as in diameter = max1 + max2). Track a global variable alongside the per-node return value.
 
@@ -1700,7 +1700,7 @@ Grid DP involves traversing a 2D array from one corner to another, making moves 
 
 #### 10.2.1 Unique Paths
 
-**Problem:** Count the number of ways to travel from the top-left corner to the bottom-right corner of an m × n grid, moving only right or down.
+**Problem:** Count the number of ways to travel from the top-left corner to the bottom-right corner of an m Ã— n grid, moving only right or down.
 
 **Recurrence:**
 \[
@@ -1717,7 +1717,7 @@ with \( dp[0][*] = dp[*][0] = 1 \).
    dp[i][j] = dp[i-1][j] + dp[i][j-1].
 4. Return dp[m-1][n-1].
 
-**Dry Run:** 3×3 grid (m=3, n=3)
+**Dry Run:** 3Ã—3 grid (m=3, n=3)
 
 | dp | j=0 | j=1 | j=2 |
 |----|-----|-----|-----|
@@ -1772,23 +1772,23 @@ int uniquePaths(int m, int n) {
 }
 ```
 
-**Complexity:** O(m×n) time, O(n) space (optimized).
+**Complexity:** O(mÃ—n) time, O(n) space (optimized).
 
-**Why DP works here:** The problem has overlapping subproblems — the number of ways to reach (i,j) depends on two subproblems that themselves depend on smaller subproblems. A combinatorial solution also exists: C(m+n-2, m-1).
+**Why DP works here:** The problem has overlapping subproblems â€” the number of ways to reach (i,j) depends on two subproblems that themselves depend on smaller subproblems. A combinatorial solution also exists: C(m+n-2, m-1).
 
 **Advantages:** Simple recurrence; easily modifiable for obstacles.
 **Disadvantages:** Space can be high without optimization; only handles right/down moves.
 
 **Edge Cases:**
-- **1×1 grid:** Only 1 way (already there).
-- **1×n or m×1 grid:** Only 1 way (straight line).
-- **Large m,n:** dp values overflow — use long long.
+- **1Ã—1 grid:** Only 1 way (already there).
+- **1Ã—n or mÃ—1 grid:** Only 1 way (straight line).
+- **Large m,n:** dp values overflow â€” use long long.
 
 ---
 
 #### 10.2.2 Minimum Path Sum
 
-**Problem:** Given an m × n grid of non-negative integers, find the minimum sum along a path from top-left to bottom-right (moving only right or down).
+**Problem:** Given an m Ã— n grid of non-negative integers, find the minimum sum along a path from top-left to bottom-right (moving only right or down).
 
 **Recurrence:**
 \[
@@ -1836,11 +1836,11 @@ Final dp:
 | 2 | 7 | 6 |
 | 6 | 8 | 7 |
 
-Result: **7** (path: 1→1→5→1→1 or 1→3→1→1→1)
+Result: **7** (path: 1â†’1â†’5â†’1â†’1 or 1â†’3â†’1â†’1â†’1)
 
-Let me verify: 1→3→1→1→1 = 7, yes. And 1→1→5→1→1 = 8, not minimal. 1→1→4→2→1 = 9, even worse. So 7 is correct.
+Let me verify: 1â†’3â†’1â†’1â†’1 = 7, yes. And 1â†’1â†’5â†’1â†’1 = 8, not minimal. 1â†’1â†’4â†’2â†’1 = 9, even worse. So 7 is correct.
 
-Path: (0,0)→(0,1)→(0,2)→(1,2)→(2,2) = 1+3+1+1+1 = 7.
+Path: (0,0)â†’(0,1)â†’(0,2)â†’(1,2)â†’(2,2) = 1+3+1+1+1 = 7.
 
 **C++ Implementation:**
 ```cpp
@@ -1906,13 +1906,13 @@ int minPathSum(vector<vector<int>>& grid) {
 - When computing dp[j], dp[j] still holds the previous row's dp[i-1][j].
 - dp[j-1] has already been updated to dp[i][j-1] in the current row.
 
-**Complexity:** O(m×n) time, O(1) additional space (optimized).
+**Complexity:** O(mÃ—n) time, O(1) additional space (optimized).
 
 **Advantages:** Classic shortest-path DP pattern; easily extendable.
 **Disadvantages:** Only works for non-negative weights (greedy overlaps with DP for non-negative).
 
 **Edge Cases:**
-- **1×1 grid:** Returns grid[0][0].
+- **1Ã—1 grid:** Returns grid[0][0].
 - **Single row:** Only horizontal moves possible.
 - **Single column:** Only vertical moves possible.
 
@@ -1920,7 +1920,7 @@ int minPathSum(vector<vector<int>>& grid) {
 
 #### 10.2.3 DP with Obstacles
 
-**Problem:** Given an m × n grid of non-negative integers where some cells are blocked (value = 1), find the number of paths from top-left to bottom-right avoiding blocked cells.
+**Problem:** Given an m Ã— n grid of non-negative integers where some cells are blocked (value = 1), find the number of paths from top-left to bottom-right avoiding blocked cells.
 
 **Recurrence:**
 \[
@@ -1975,7 +1975,7 @@ UNIQUE_PATHS_OBSTACLES(grid):
 | 2 | 1 | 0 | [1,0,1] | [1,1,1] |
 | 2 | 2 | 0 | [1,1,1] | [1,1,2] |
 
-Result: **2 paths** (right→down→down→right avoiding obstacle, and down→right→down→right avoiding obstacle)
+Result: **2 paths** (rightâ†’downâ†’downâ†’right avoiding obstacle, and downâ†’rightâ†’downâ†’right avoiding obstacle)
 
 **C++ Implementation:**
 ```cpp
@@ -2027,19 +2027,19 @@ int uniquePathsWithObstacles(int[][] grid) {
 }
 ```
 
-**Complexity:** O(m×n) time, O(n) space.
+**Complexity:** O(mÃ—n) time, O(n) space.
 
-**Why this works:** The recurrence is identical to unique paths, except obstacles act as sinks — no paths can pass through them, so dp[i][j]=0. The first row/column handling ensures that any obstacle blocks all subsequent cells in that row/column from having any paths.
+**Why this works:** The recurrence is identical to unique paths, except obstacles act as sinks â€” no paths can pass through them, so dp[i][j]=0. The first row/column handling ensures that any obstacle blocks all subsequent cells in that row/column from having any paths.
 
 **Edge Cases:**
 - **Start blocked:** Return 0 (no paths possible).
 - **End blocked:** Return 0.
 - **All cells blocked:** Return 0.
-- **1×1 grid with no obstacle:** Return 1.
+- **1Ã—1 grid with no obstacle:** Return 1.
 
-> **Pro Tip:** Grid DP can often be space-optimized to 1D — since dp[i][j] only depends on dp[i-1][j] and dp[i][j-1], you only need one array.
+> **Pro Tip:** Grid DP can often be space-optimized to 1D â€” since dp[i][j] only depends on dp[i-1][j] and dp[i][j-1], you only need one array.
 
-> **Warning:** Don't forget to handle the base row (i=0) and column (j=0) separately — they only have one way to be reached (all rights or all downs).
+> **Warning:** Don't forget to handle the base row (i=0) and column (j=0) separately â€” they only have one way to be reached (all rights or all downs).
 
 **One-Sentence Takeaway:** Grid DP uses the recurrence dp[i][j] = f(dp[i-1][j], dp[i][j-1]) for path counting and optimization problems on 2D grids.
 
@@ -2052,7 +2052,7 @@ int uniquePathsWithObstacles(int[][] grid) {
 
 DP with bitmasking is used for problems where we need to track subsets of elements. The state is a bitmask representing a set, and the transition adds or removes elements from the set.
 
-**Real-World Analogy:** A delivery driver planning the shortest route to visit 15 customers. Instead of trying all 15! permutations (~1.3 trillion), DP with bitmasking groups states by "which customers visited so far" — reducing the search space dramatically.
+**Real-World Analogy:** A delivery driver planning the shortest route to visit 15 customers. Instead of trying all 15! permutations (~1.3 trillion), DP with bitmasking groups states by "which customers visited so far" â€” reducing the search space dramatically.
 
 #### 10.3.1 Traveling Salesman Problem (TSP)
 
@@ -2090,11 +2090,11 @@ dp table (only showing computed states):
 
 | mask | u=0 | u=1 | u=2 | u=3 |
 |------|-----|-----|-----|-----|
-| 0001 (1) | 0 | ∞ | ∞ | ∞ |
-| 0011 (3) | — | 10 (0→1) | — | — |
-| 0101 (5) | — | — | 15 (0→2) | — |
-| 1001 (9) | — | — | — | 20 (0→3) |
-| 0111 (7) | — | min(15+35,15+10)=25 | — | — |
+| 0001 (1) | 0 | âˆž | âˆž | âˆž |
+| 0011 (3) | â€” | 10 (0â†’1) | â€” | â€” |
+| 0101 (5) | â€” | â€” | 15 (0â†’2) | â€” |
+| 1001 (9) | â€” | â€” | â€” | 20 (0â†’3) |
+| 0111 (7) | â€” | min(15+35,15+10)=25 | â€” | â€” |
 | ... | ... | ... | ... | ... |
 
 Computing dp[0111][1]: mask=0011 (cities {0,1}), u=1, add v=2:
@@ -2104,7 +2104,7 @@ dp[0101][2] + dist[2][1] = 15 + 35 = 50
 Also: mask=0011, u=0, add v=2: dp[0011][0] doesn't exist (not valid)
 So dp[0111][1] = 45
 
-Full computation eventually gives answer = 80 (tour 0→1→3→2→0 = 10+25+30+15 = 80).
+Full computation eventually gives answer = 80 (tour 0â†’1â†’3â†’2â†’0 = 10+25+30+15 = 80).
 
 **C++ Implementation:**
 ```cpp
@@ -2180,17 +2180,17 @@ int tsp(int[][] dist) {
 }
 ```
 
-**Complexity:** O(n²·2ⁿ) time — 2ⁿ masks × n states per mask × n transitions. O(n·2ⁿ) space.
+**Complexity:** O(nÂ²Â·2â¿) time â€” 2â¿ masks Ã— n states per mask Ã— n transitions. O(nÂ·2â¿) space.
 
-**Why O(n²·2ⁿ) is better than O(n!):** For n=20: O(n!) ≈ 2.4×10¹⁸, O(n²·2ⁿ) ≈ 4×10⁸ — a 10 billion× improvement. This is the fundamental advantage of DP with bitmasking.
+**Why O(nÂ²Â·2â¿) is better than O(n!):** For n=20: O(n!) â‰ˆ 2.4Ã—10Â¹â¸, O(nÂ²Â·2â¿) â‰ˆ 4Ã—10â¸ â€” a 10 billionÃ— improvement. This is the fundamental advantage of DP with bitmasking.
 
 **Advantages:** Exponential improvement over brute force; generalizes to many subset problems.
-**Disadvantages:** Still exponential — limited to n ≤ 20 for practical use.
+**Disadvantages:** Still exponential â€” limited to n â‰¤ 20 for practical use.
 
 **Edge Cases:**
 - n = 1: Only one city, answer = 0.
 - n = 0: Undefined (no cities).
-- Asymmetric distances: Works as-is (dist[u][v] ≠ dist[v][u]).
+- Asymmetric distances: Works as-is (dist[u][v] â‰  dist[v][u]).
 
 ---
 
@@ -2202,28 +2202,28 @@ A Hamiltonian path visits every vertex exactly once (no return to start). The DP
 
 **Answer:** min over v of dp[fullMask][v].
 
-> **Pro Tip:** DP with bitmasking has O(n²·2ⁿ) complexity — feasible for n ≤ 20. For larger n, use branch-and-bound or approximation algorithms.
+> **Pro Tip:** DP with bitmasking has O(nÂ²Â·2â¿) complexity â€” feasible for n â‰¤ 20. For larger n, use branch-and-bound or approximation algorithms.
 
 > **Remember:** Always initialize dp[1 &lt;< start][start] = 0. The mask represents which cities have been visited, not the tour order. Extract the visited bit by checking (mask &gt;> v) & 1.
 
-**One-Sentence Takeaway:** Bitmask DP solves TSP in O(n²·2ⁿ) by tracking the visited set as a bitmask and the current endpoint city as the second state dimension.
+**One-Sentence Takeaway:** Bitmask DP solves TSP in O(nÂ²Â·2â¿) by tracking the visited set as a bitmask and the current endpoint city as the second state dimension.
 
 ---
 
-## Tree vs Grid — Comparison Table
+## Tree vs Grid â€” Comparison Table
 
 | Aspect | Trees | Grids |
 |--------|-------|-------|
 | **Structure** | Hierarchical, connected acyclic graph | Rectilinear 2D matrix |
 | **Traversal** | Pre/in/post/level-order, DFS naturally | Row-major, DFS, BFS |
-| **DP Dependency** | Children → parent (post-order) | Top-left → bottom-right |
+| **DP Dependency** | Children â†’ parent (post-order) | Top-left â†’ bottom-right |
 | **State Dimension** | Subtree root | (row, column) |
 | **Space Complexity** | O(h) recursion, O(1) aux | O(mn) tables, O(n) optimized |
 | **Typical Moves** | Left/right child | Right/down (sometimes all 4 directions) |
 | **Graph Property** | No cycles | Many cycles (cells form a lattice) |
 | **Real-World Parallel** | File systems, org charts, AST | Digital images, game maps, spreadsheets |
 | **Recurrence Pattern** | Combine children at parent | dp[i-1][j] + dp[i][j-1] |
-| **Edge Cases** | Empty, single node, skewed | 1×1, single row/col, obstacles |
+| **Edge Cases** | Empty, single node, skewed | 1Ã—1, single row/col, obstacles |
 
 ---
 
@@ -2266,7 +2266,7 @@ TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
 ### 3. Grid Unique Paths with Obstacles
 
 
-**Problem:** Same as 10.2.3. Common follow-up: "What if you can move in all 4 directions?" → Use BFS/DFS with visited tracking (not DP, moves can cycle).
+**Problem:** Same as 10.2.3. Common follow-up: "What if you can move in all 4 directions?" â†’ Use BFS/DFS with visited tracking (not DP, moves can cycle).
 
 ---
 
@@ -2292,7 +2292,7 @@ int numIslands(vector<vector<char>>& grid) {
 }
 ```
 
-**Complexity:** O(m×n) time — each cell visited once. O(m×n) worst-case recursion.
+**Complexity:** O(mÃ—n) time â€” each cell visited once. O(mÃ—n) worst-case recursion.
 
 **Interview Tip:** When asked "Number of Islands", always ask: "Can I modify the input grid?" If not, use a separate visited array.
 
@@ -2310,8 +2310,8 @@ Every OS uses a tree-based file system. `find / -name "*.txt"` performs a tree t
 
 In game development, the game world is divided into a grid (tile map). Pathfinding algorithms (A*, Dijkstra) run on this grid:
 - **Civilization** uses hexagonal grids for turn-based movement.
-- **Minecraft** uses a 3D block grid (chunks of 16×16×256 blocks).
-- **Pac-Man** has a 28×31 grid of pellets.
+- **Minecraft** uses a 3D block grid (chunks of 16Ã—16Ã—256 blocks).
+- **Pac-Man** has a 28Ã—31 grid of pellets.
 - **Google Maps** converts road networks into grid representations for route calculation.
 
 ### Compiler AST (Trees)
@@ -2343,7 +2343,7 @@ Linting tools (ESLint, PyLint) and formatters (Prettier) also work on ASTs.
 
 
 Every image filter is a grid operation:
-- **Blur** averages each pixel with its 3×3 neighbors.
+- **Blur** averages each pixel with its 3Ã—3 neighbors.
 - **Edge detection** (Sobel operator) convolves the grid with specific kernels.
 - **Seam carving** (content-aware image resizing) uses DP on the image grid to find minimal-energy seams.
 
@@ -2363,16 +2363,16 @@ Robot vacuum cleaners (Roomba) represent rooms as grids. The robot:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| Tree Traversals | Order determines application (inorder→sorted, postorder→delete) | Choose traversal based on parent-child dependency |
+| Tree Traversals | Order determines application (inorderâ†’sorted, postorderâ†’delete) | Choose traversal based on parent-child dependency |
 | BST Operations | Binary search property halves search space | O(log n) if balanced, O(n) if skewed |
 | Segment Tree | Precomputed segment aggregates enable O(log n) range queries | 4n memory, great for dynamic range queries |
 | Fenwick Tree | LSB-based indexing simplifies prefix sums | Simpler, lighter, but range-sum only |
 | Grid DFS/BFS | DFS uses stack, BFS uses queue | BFS finds shortest path, DFS uses less memory |
-| Tree DP | Post-order DFS combines child results | Parent depends on its subtrees — visit children first |
+| Tree DP | Post-order DFS combines child results | Parent depends on its subtrees â€” visit children first |
 | Tree Diameter | Farthest node from farthest node | Two-pass DFS or DP tracking top-2 heights |
 | Grid DP | dp[i][j] = f(dp[i-1][j], dp[i][j-1]) | Path problems: right+down simplifies to 2D recurrence |
 | DP with Obstacles | Skip blocked cells | Same recurrence but dp[i][j] = 0 when blocked |
-| DP with Bitmask | dp[mask][v] = min cost ending at v | State = visited set + current node — classic TSP |
+| DP with Bitmask | dp[mask][v] = min cost ending at v | State = visited set + current node â€” classic TSP |
 
 ### Chapter Roadmap
 
@@ -2410,17 +2410,17 @@ flowchart LR
 | BST Search | Node pointer | Root-to-leaf | Compare & branch | O(h) |
 | Segment Tree | Node interval | Recursive | Split at mid | O(log n) |
 | Grid DFS/BFS | (r,c) coordinates | Stack/queue | 4-direction neighbors | O(mn) |
-| Tree DP | Subtree root | Post-order DFS | Combine children → parent | O(n) |
+| Tree DP | Subtree root | Post-order DFS | Combine children â†’ parent | O(n) |
 | Grid DP | Position (i,j) | Row-major iteration | Right/down from neighbors | O(mn) |
-| Bitmask DP | (mask, last vertex) | Mask enumeration | Add vertex to mask | O(n²·2ⁿ) |
+| Bitmask DP | (mask, last vertex) | Mask enumeration | Add vertex to mask | O(nÂ²Â·2â¿) |
 
 ## Quick Reference
 
 | Category | Key Points |
 |----------|------------|
-| **Inorder Traversal** | Left → Root → Right; gives sorted order in BST |
-| **Preorder Traversal** | Root → Left → Right; used for tree copy |
-| **Postorder Traversal** | Left → Right → Root; used for tree deletion & DP |
+| **Inorder Traversal** | Left â†’ Root â†’ Right; gives sorted order in BST |
+| **Preorder Traversal** | Root â†’ Left â†’ Right; used for tree copy |
+| **Postorder Traversal** | Left â†’ Right â†’ Root; used for tree deletion & DP |
 | **Level-Order** | BFS with queue; finds shortest path in trees |
 | **BST Search** | O(h): compare key, go left if smaller, right if larger |
 | **BST Insert** | O(h): find leaf position, attach new node |
@@ -2434,21 +2434,21 @@ flowchart LR
 | **Grid DP** | dp[i][j] depends only on top/left neighbors |
 | **Grid Optimization** | Can reduce to 1D array for space |
 | **Bitmask DP** | State = visited set (mask) + current endpoint |
-| **Bitmask Limits** | n ≤ 20 for feasible O(n²·2ⁿ) runtime |
+| **Bitmask Limits** | n â‰¤ 20 for feasible O(nÂ²Â·2â¿) runtime |
 
 ## Cross-Application Matrix
 
 | Technique | DSA Interviews | Competitive Programming | Real-World |
 |-----------|---------------|----------------------|------------|
-| Tree Traversals | Very common — every tree problem needs traversal | Standard boilerplate | File system indexing, AST traversal |
-| BST Ops | Common — search, sorted iteration | Data structure problems | Database indexing (B-tree family) |
-| Segment Tree | Less common — seen in harder problems | Range query problems | Stock price range queries, interval scheduling |
-| Fenwick Tree | Occasional — alternative to segment tree | Prefix sum problems | Frequency counting, inversion count |
-| Grid DFS | Very common — island counting, maze solving | Grid path problems | Image segmentation, maze solving |
-| Grid BFS | Very common — shortest path, word ladder | Shortest path in grid | GPS routing, game pathfinding |
-| Tree DP | Common — diameter, path sum | Tree DP contests | Network routing |
-| Grid DP | Very common — path counting | Grid traversal problems | Robotics path planning |
-| Bitmask DP | Occasionally — TSP variants | Subset DP problems | Logistics optimization |
+| Tree Traversals | Very common â€” every tree problem needs traversal | Standard boilerplate | File system indexing, AST traversal |
+| BST Ops | Common â€” search, sorted iteration | Data structure problems | Database indexing (B-tree family) |
+| Segment Tree | Less common â€” seen in harder problems | Range query problems | Stock price range queries, interval scheduling |
+| Fenwick Tree | Occasional â€” alternative to segment tree | Prefix sum problems | Frequency counting, inversion count |
+| Grid DFS | Very common â€” island counting, maze solving | Grid path problems | Image segmentation, maze solving |
+| Grid BFS | Very common â€” shortest path, word ladder | Shortest path in grid | GPS routing, game pathfinding |
+| Tree DP | Common â€” diameter, path sum | Tree DP contests | Network routing |
+| Grid DP | Very common â€” path counting | Grid traversal problems | Robotics path planning |
+| Bitmask DP | Occasionally â€” TSP variants | Subset DP problems | Logistics optimization |
 
 ---
 
@@ -2466,8 +2466,8 @@ flowchart LR
 | House robber tree | State per node DP | Selected/not selected | O(n) |
 | Unique paths | Grid DP | Count of ways | O(mn) |
 | Min path sum | Grid DP | Min cost to (i,j) | O(mn) |
-| TSP | Bitmask DP | (mask, last vertex) | O(n²2ⁿ) |
-| Hamiltonian path | Bitmask DP | (mask, last vertex) | O(n²2ⁿ) |
+| TSP | Bitmask DP | (mask, last vertex) | O(nÂ²2â¿) |
+| Hamiltonian path | Bitmask DP | (mask, last vertex) | O(nÂ²2â¿) |
 
 ---
 
@@ -2484,31 +2484,31 @@ flowchart LR
 
 <details>
 <summary>Answer&lt;/summary&gt;
-C) Post-order — children must be processed before their parent since dp[parent] depends on dp[children].
+C) Post-order â€” children must be processed before their parent since dp[parent] depends on dp[children].
 </details>
 
 **Q2.** What is the time complexity of the DP solution for TSP?
 
-- A) O(n²)
-- B) O(n³)
-- C) O(n²·2ⁿ)
-- D) O(2ⁿ)
+- A) O(nÂ²)
+- B) O(nÂ³)
+- C) O(nÂ²Â·2â¿)
+- D) O(2â¿)
 
 <details>
 <summary>Answer&lt;/summary&gt;
-C) O(n²·2ⁿ) — there are n·2ⁿ states (mask × endpoint) and O(n) transitions per state.
+C) O(nÂ²Â·2â¿) â€” there are nÂ·2â¿ states (mask Ã— endpoint) and O(n) transitions per state.
 </details>
 
 **Q3.** In the unique paths DP, how many ways reach cell (i,j)?
 
 - A) dp[i-1][j] + dp[i][j-1]
-- B) dp[i-1][j] · dp[i][j-1]
+- B) dp[i-1][j] Â· dp[i][j-1]
 - C) dp[i-1][j-1] + 1
 - D) max(dp[i-1][j], dp[i][j-1]) + 1
 
 <details>
 <summary>Answer&lt;/summary&gt;
-A) dp[i][j] = dp[i-1][j] + dp[i][j-1] — you can arrive from above or from the left.
+A) dp[i][j] = dp[i-1][j] + dp[i][j-1] â€” you can arrive from above or from the left.
 </details>
 
 **Q4.** Which BST delete case requires finding the inorder successor?
@@ -2528,11 +2528,11 @@ D) When a node has two children, the inorder successor (smallest in right subtre
 - A) O(n)
 - B) O(4n)
 - C) O(log n)
-- D) O(n²)
+- D) O(nÂ²)
 
 <details>
 <summary>Answer&lt;/summary&gt;
-B) O(4n) — a segment tree needs ~4n nodes for an array of size n.
+B) O(4n) â€” a segment tree needs ~4n nodes for an array of size n.
 </details>
 
 ### Review Questions
@@ -2547,12 +2547,12 @@ B) O(4n) — a segment tree needs ~4n nodes for an array of size n.
 ### Application Problems
 
 7. Implement the House Robber III problem on a binary tree.
-8. Solve the minimum path sum problem on a 5×5 grid with obstacles at positions (1,2) and (3,4).
+8. Solve the minimum path sum problem on a 5Ã—5 grid with obstacles at positions (1,2) and (3,4).
 9. Implement TSP for 10 cities with random distances. Compare the DP result with brute force.
 10. Given a grid with 0/1 values, find the largest square submatrix of all 1s using DP.
 11. Build a segment tree for an array [2, 5, 1, 8, 3, 7] and query the sum of range [1, 4].
 12. Implement a Fenwick tree and use it to count inversions in an array.
-13. Given a 10×10 grid, count the number of ways to go from (0,0) to (9,9) moving right or down.
+13. Given a 10Ã—10 grid, count the number of ways to go from (0,0) to (9,9) moving right or down.
 
 ### Challenge Problem
 

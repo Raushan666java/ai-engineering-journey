@@ -1,4 +1,4 @@
-# Chapter 3: Indian History & Culture
+﻿# Chapter 3: Indian History & Culture
 
 ## Learning Objectives
 
@@ -7,23 +7,23 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/general-awareness/03-indian-history/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/general-awareness/03-indian-history/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/general-awareness/03-indian-history/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/general-awareness/03-indian-history/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/general-awareness/03-indian-history/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/general-awareness/03-indian-history/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/general-awareness/03-indian-history/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/general-awareness/03-indian-history/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/general-awareness/03-indian-history/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/general-awareness/03-indian-history/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/general-awareness/03-indian-history/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/general-awareness/03-indian-history/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
 <!-- End Image Gallery -->
 
 - Describe the Harappan Civilization and Vedic period with key features
-- Trace the rise and fall of major ancient empires — Maurya and Gupta
+- Trace the rise and fall of major ancient empires â€” Maurya and Gupta
 - Explain the Delhi Sultanate, Mughal Empire, and Vijayanagara Kingdom
 - Analyse the British colonial period, the Revolt of 1857, and the freedom struggle
 - Identify key figures, dates, and events in India's struggle for independence
@@ -36,7 +36,7 @@ By the end of this chapter, you will be able to:
 
 ### 3.1 Ancient India
 
-#### 3.1.1 Indus Valley Civilization (c. 2500–1750 BCE)
+#### 3.1.1 Indus Valley Civilization (c. 2500â€“1750 BCE)
 
 Also known as the Harappan Civilization, it was one of the world's earliest urban civilizations, contemporary with Mesopotamia and Egypt.
 
@@ -63,12 +63,12 @@ timeline
 
 **Dholavira:** Unique for its water management system and large inscriptions. Located in the Rann of Kutch, Gujarat. Only Harappan city with a stadium.
 
-#### 3.1.2 Vedic Period (c. 1500–600 BCE)
+#### 3.1.2 Vedic Period (c. 1500â€“600 BCE)
 
 | Period | Literature | Society | Key Development |
 |--------|-----------|---------|-----------------|
-| Early Vedic (1500–1000 BCE) | Rigveda | Tribal, pastoral, egalitarian | 4 varnas in nascent form, rajan (chief) |
-| Later Vedic (1000–600 BCE) | Yajur, Sama, Atharva Veda + Brahmanas | Territorial kingdoms (Janapadas), agriculture | Caste system becomes rigid, Varna → Jati |
+| Early Vedic (1500â€“1000 BCE) | Rigveda | Tribal, pastoral, egalitarian | 4 varnas in nascent form, rajan (chief) |
+| Later Vedic (1000â€“600 BCE) | Yajur, Sama, Atharva Veda + Brahmanas | Territorial kingdoms (Janapadas), agriculture | Caste system becomes rigid, Varna â†’ Jati |
 
 **Important Vedic Texts:**
 - **Rigveda:** Oldest, 1028 hymns, composed in praise of gods (Indra, Agni, Varuna, Surya)
@@ -82,23 +82,23 @@ timeline
 - Sabha & Samiti: Tribal assemblies
 - Sapta-Sindhu: Land of seven rivers (region of the Rigveda)
 
-#### 3.1.3 Mahajanapadas & Religious Movements (600–320 BCE)
+#### 3.1.3 Mahajanapadas & Religious Movements (600â€“320 BCE)
 
 16 Mahajanapadas existed by 600 BCE. Two major religious movements emerged:
-- **Buddhism** (Gautama Buddha, 563–483 BCE): Four Noble Truths, Eightfold Path, Middle Path
-- **Jainism** (Mahavira, 540–468 BCE): Ahimsa, Anekantavada, Aparigraha, Triratnas
+- **Buddhism** (Gautama Buddha, 563â€“483 BCE): Four Noble Truths, Eightfold Path, Middle Path
+- **Jainism** (Mahavira, 540â€“468 BCE): Ahimsa, Anekantavada, Aparigraha, Triratnas
 
 | Detail | Buddhism | Jainism |
 |--------|----------|---------|
 | Founder | Siddhartha Gautama (Buddha) | Vardhamana Mahavira |
 | Birthplace | Lumbini (Nepal) | Kundagrama (Vaishali, Bihar) |
 | Nirvana/Death | Kushinagar | Pavapuri (Bihar) |
-| First Sermon | Sarnath | — |
+| First Sermon | Sarnath | â€” |
 | Sacred Texts | Tripitaka (Vinaya, Sutta, Abhidhamma) | Agamas, Angas |
 | Key Teachings | Four Noble Truths, Eightfold Path | Ahimsa, Anekantavada, Aparigraha |
 | Follower Spread | Sri Lanka, China, Japan, SEA | Gujarat, Rajasthan, Karnataka |
 
-#### 3.1.4 Mauryan Empire (322–185 BCE)
+#### 3.1.4 Mauryan Empire (322â€“185 BCE)
 
 ```mermaid
 flowchart LR
@@ -113,22 +113,22 @@ flowchart LR
 ```
 
 **Important Facts:**
-- **Chandragupta Maurya:** Founded empire with Chanakya (Kautilya) — author of *Arthashastra*
-- **Ashoka (268–232 BCE):** Greatest Mauryan ruler; Kalinga War led to conversion to Buddhism
+- **Chandragupta Maurya:** Founded empire with Chanakya (Kautilya) â€” author of *Arthashastra*
+- **Ashoka (268â€“232 BCE):** Greatest Mauryan ruler; Kalinga War led to conversion to Buddhism
 - **Ashokan Edicts:** 33 inscriptions in Prakrit, Greek, Aramaic (Brahmi and Kharosthi scripts)
 - **Administration:** Centralized with provinces, district officials (Pradeshikas), spies
 - **Economic:** State controlled agriculture, trade, mining; roads (Uttarapatha, Dakshinapatha)
 
-#### 3.1.5 Gupta Period (c. 320–550 CE) — The Golden Age
+#### 3.1.5 Gupta Period (c. 320â€“550 CE) â€” The Golden Age
 
 | Ruler | Reign | Contribution |
 |-------|-------|-------------|
-| Sri Gupta | 240–280 CE | Founded Gupta dynasty |
-| Chandragupta I | 320–335 CE | Started Gupta era (319-320 CE) |
-| Samudragupta | 335–375 CE | "Napoleon of India", patron of arts |
-| Chandragupta II (Vikramaditya) | 375–415 CE | Golden Age peak; Chinese pilgrim Fa-Hien visited |
-| Kumaragupta I | 415–455 CE | Built Nalanda University |
-| Skandagupta | 455–467 CE | Fought Huns |
+| Sri Gupta | 240â€“280 CE | Founded Gupta dynasty |
+| Chandragupta I | 320â€“335 CE | Started Gupta era (319-320 CE) |
+| Samudragupta | 335â€“375 CE | "Napoleon of India", patron of arts |
+| Chandragupta II (Vikramaditya) | 375â€“415 CE | Golden Age peak; Chinese pilgrim Fa-Hien visited |
+| Kumaragupta I | 415â€“455 CE | Built Nalanda University |
+| Skandagupta | 455â€“467 CE | Fought Huns |
 
 **Achievements of Gupta Period:**
 - **Science:** Aryabhata (mathematics, astronomy), Varahamihira, Sushruta (medicine), Charaka
@@ -139,24 +139,24 @@ flowchart LR
 
 ### 3.2 Medieval India
 
-#### 3.2.1 Delhi Sultanate (1206–1526 CE)
+#### 3.2.1 Delhi Sultanate (1206â€“1526 CE)
 
 | Dynasty | Period | Founder | Key Ruler |
 |---------|--------|---------|-----------|
-| Slave (Mamluk) | 1206–1290 | Qutb-ud-din Aibak | Iltutmish (1236), Razia Sultana (first woman ruler) |
-| Khilji | 1290–1320 | Jalal-ud-din Khilji | Alauddin Khilji (market reforms, Malik Kafur) |
-| Tughlaq | 1320–1414 | Ghiyas-ud-din Tughlaq | Muhammad bin Tughlaq (token currency, capital shift) |
-| Sayyid | 1414–1451 | Khizr Khan | Weak rulers, decline |
-| Lodi | 1451–1526 | Bahlul Lodi | Ibrahim Lodi (defeated by Babur at Panipat) |
+| Slave (Mamluk) | 1206â€“1290 | Qutb-ud-din Aibak | Iltutmish (1236), Razia Sultana (first woman ruler) |
+| Khilji | 1290â€“1320 | Jalal-ud-din Khilji | Alauddin Khilji (market reforms, Malik Kafur) |
+| Tughlaq | 1320â€“1414 | Ghiyas-ud-din Tughlaq | Muhammad bin Tughlaq (token currency, capital shift) |
+| Sayyid | 1414â€“1451 | Khizr Khan | Weak rulers, decline |
+| Lodi | 1451â€“1526 | Bahlul Lodi | Ibrahim Lodi (defeated by Babur at Panipat) |
 
 **Key Developments:**
 - Qutb Minar built by Qutb-ud-din Aibak (completed by Iltutmish)
 - Alauddin Khilji's market price control system
 - Muhammad bin Tughlaq's experiments: capital transfer (Delhi to Daulatabad), token currency
-- Vijayanagara Empire (1336–1646): Founded by Harihara and Bukka (Sangama dynasty)
-- Bahmani Kingdom (1347–1527): First independent Muslim kingdom in Deccan
+- Vijayanagara Empire (1336â€“1646): Founded by Harihara and Bukka (Sangama dynasty)
+- Bahmani Kingdom (1347â€“1527): First independent Muslim kingdom in Deccan
 
-#### 3.2.2 Mughal Empire (1526–1857)
+#### 3.2.2 Mughal Empire (1526â€“1857)
 
 ```mermaid
 flowchart TD
@@ -175,38 +175,38 @@ flowchart TD
 
 | Mughal Emperor | Reign | Key Contribution |
 |----------------|-------|------------------|
-| Babur | 1526–1530 | Founded Mughal rule; defeated Ibrahim Lodi (Panipat 1526) and Rana Sanga (Khanwa 1527) |
-| Humayun | 1530–1556 | Lost empire to Sher Shah Suri; regained with Persian help |
-| Akbar | 1556–1605 | Greatest Mughal; Mansabdari system, Din-i-Ilahi, Rajput alliance, Fatehpur Sikri, abolition of Jizya |
-| Jahangir | 1605–1627 | Captivity of Guru Arjan Dev; visited by Sir Thomas Roe (English ambassador) |
-| Shah Jahan | 1628–1658 | Taj Mahal (built 1632–1653), Red Fort, Jama Masjid, Peacock Throne |
-| Aurangzeb | 1658–1707 | Expanded Mughal empire to its largest; reimposed Jizya, Deccan wars with Marathas; executed Guru Tegh Bahadur |
+| Babur | 1526â€“1530 | Founded Mughal rule; defeated Ibrahim Lodi (Panipat 1526) and Rana Sanga (Khanwa 1527) |
+| Humayun | 1530â€“1556 | Lost empire to Sher Shah Suri; regained with Persian help |
+| Akbar | 1556â€“1605 | Greatest Mughal; Mansabdari system, Din-i-Ilahi, Rajput alliance, Fatehpur Sikri, abolition of Jizya |
+| Jahangir | 1605â€“1627 | Captivity of Guru Arjan Dev; visited by Sir Thomas Roe (English ambassador) |
+| Shah Jahan | 1628â€“1658 | Taj Mahal (built 1632â€“1653), Red Fort, Jama Masjid, Peacock Throne |
+| Aurangzeb | 1658â€“1707 | Expanded Mughal empire to its largest; reimposed Jizya, Deccan wars with Marathas; executed Guru Tegh Bahadur |
 
 **Important Battles:**
 
 | Battle | Year | Fought Between | Result |
 |--------|------|----------------|--------|
-| First Panipat | 1526 | Babur vs Ibrahim Lodi | Babur won → foundation of Mughal Empire |
-| Battle of Khanwa | 1527 | Babur vs Rana Sanga | Babur won → secured Rajput submission |
-| Second Panipat | 1556 | Akbar (Bairam Khan) vs Hemu | Akbar won → consolidated Mughal rule |
+| First Panipat | 1526 | Babur vs Ibrahim Lodi | Babur won â†’ foundation of Mughal Empire |
+| Battle of Khanwa | 1527 | Babur vs Rana Sanga | Babur won â†’ secured Rajput submission |
+| Second Panipat | 1556 | Akbar (Bairam Khan) vs Hemu | Akbar won â†’ consolidated Mughal rule |
 | Haldighati | 1576 | Akbar (Man Singh) vs Maharana Pratap | Mughals won but Pratap continued resistance |
-| Plassey | 1757 | British (Clive) vs Siraj-ud-Daulah | British won → colonial era begins |
+| Plassey | 1757 | British (Clive) vs Siraj-ud-Daulah | British won â†’ colonial era begins |
 
 **Cultural Achievements of Mughals:**
 - Akbar: Ibadat Khana (House of Worship), translation of Hindu texts
 - Jahangir: Mughal painting peak, Tuzuk-i-Jahangiri (autobiography)
 - Shah Jahan: Taj Mahal, Moti Masjid, Jama Masjid, Red Fort
-- Architecture: Indo-Islamic fusion — domes, arches, minarets, gardens (Charbagh)
+- Architecture: Indo-Islamic fusion â€” domes, arches, minarets, gardens (Charbagh)
 
-#### 3.2.3 Maratha Empire (1674–1818)
+#### 3.2.3 Maratha Empire (1674â€“1818)
 
 | Leader | Period | Contribution |
 |--------|--------|-------------|
-| Shivaji | 1627–1680 | Founded Maratha kingdom; coronation at Raigad (1674); Ashta Pradhan council |
-| Sambhaji | 1680–1689 | Executed by Aurangzeb |
-| Baji Rao I | 1720–1740 | Expanded Maratha power to North India |
+| Shivaji | 1627â€“1680 | Founded Maratha kingdom; coronation at Raigad (1674); Ashta Pradhan council |
+| Sambhaji | 1680â€“1689 | Executed by Aurangzeb |
+| Baji Rao I | 1720â€“1740 | Expanded Maratha power to North India |
 | Third Battle of Panipat | 1761 | Marathas defeated by Ahmad Shah Abdali |
-| Madhavrao | 1761–1772 | Revived Maratha power after Panipat |
+| Madhavrao | 1761â€“1772 | Revived Maratha power after Panipat |
 
 ### 3.3 Modern India
 
@@ -214,16 +214,16 @@ flowchart TD
 
 | Event | Year | Details |
 |-------|------|---------|
-| Battle of Plassey | 1757 | Robert Clive defeated Siraj-ud-Daulah — political control of Bengal |
-| Battle of Buxar | 1764 | British defeated Mir Qasim, Shuja-ud-Daulah, Shah Alam II — Diwani rights |
+| Battle of Plassey | 1757 | Robert Clive defeated Siraj-ud-Daulah â€” political control of Bengal |
+| Battle of Buxar | 1764 | British defeated Mir Qasim, Shuja-ud-Daulah, Shah Alam II â€” Diwani rights |
 | Regulating Act | 1773 | First British parliamentary regulation of East India Company |
 | Pitt's India Act | 1784 | Dual government system; Board of Control created |
 | Charter Acts | 1813 | Ended Company's monopoly, allowed missionaries |
 | | 1833 | Governor-General of India; law codification |
-| Doctine of Lapse | 1848-56 | Dalhousie's policy — annexed Satara, Jhansi, Nagpur, Awadh |
+| Doctine of Lapse | 1848-56 | Dalhousie's policy â€” annexed Satara, Jhansi, Nagpur, Awadh |
 | Government of India Act | 1858 | Crown takes over from Company; end of Company rule |
-| Government of India Act | 1909 | Morley-Minto Reforms — separate electorates |
-| Government of India Act | 1919 | Montagu-Chelmsford Reforms — Dyarchy |
+| Government of India Act | 1909 | Morley-Minto Reforms â€” separate electorates |
+| Government of India Act | 1919 | Montagu-Chelmsford Reforms â€” Dyarchy |
 | Government of India Act | 1935 | Provincial autonomy, federal structure |
 
 #### 3.3.2 Revolt of 1857
@@ -251,7 +251,7 @@ flowchart TD
 
 **Why it Failed:** Limited geographical spread, no unified leadership, lack of modern weapons, no common ideology beyond anti-British sentiment, many Indian states/rulers remained loyal (Sikhs, Gurkhas, Scindia)
 
-#### 3.3.3 Indian Freedom Struggle (1885–1947)
+#### 3.3.3 Indian Freedom Struggle (1885â€“1947)
 
 ```mermaid
 timeline
@@ -262,7 +262,7 @@ timeline
     1916 : Lucknow Pact (Congress-Muslim League unity)
     1919 : Jallianwala Bagh Massacre (13 April)
     1920 : Non-Cooperation Movement (Gandhi)
-    1922 : Chauri Chaura incident → Movement withdrawn
+    1922 : Chauri Chaura incident â†’ Movement withdrawn
     1927 : Simon Commission boycott
     1928 : Nehru Report
     1929 : Purna Swaraj declaration (Lahore)
@@ -277,9 +277,9 @@ timeline
 
 | Phase | Period | Key Features |
 |-------|--------|-------------|
-| Moderate Phase | 1885–1905 | Dadabhai Naoroji, Gokhale, Ranade; constitutional methods, petitions |
-| Extremist Phase | 1905–1919 | Tilak, Bipin Chandra Pal, Lala Lajpat Rai (Lal-Bal-Pal); Swadeshi, Boycott |
-| Gandhian Phase | 1919–1947 | Gandhi's satyagraha, non-violent mass movements |
+| Moderate Phase | 1885â€“1905 | Dadabhai Naoroji, Gokhale, Ranade; constitutional methods, petitions |
+| Extremist Phase | 1905â€“1919 | Tilak, Bipin Chandra Pal, Lala Lajpat Rai (Lal-Bal-Pal); Swadeshi, Boycott |
+| Gandhian Phase | 1919â€“1947 | Gandhi's satyagraha, non-violent mass movements |
 
 **Key Personalities:**
 
@@ -298,16 +298,16 @@ timeline
 
 | Movement/Event | Year | Description |
 |----------------|------|-------------|
-| Partition of Bengal | 1905 | Curzon divided Bengal → Swadeshi movement |
-| Swadeshi Movement | 1905–1911 | Boycott of British goods, promotion of indigenous products |
+| Partition of Bengal | 1905 | Curzon divided Bengal â†’ Swadeshi movement |
+| Swadeshi Movement | 1905â€“1911 | Boycott of British goods, promotion of indigenous products |
 | Morley-Minto Reforms | 1909 | Separate electorates for Muslims |
 | Home Rule League | 1916 | Tilak (April) & Annie Besant (September) |
 | Jallianwala Bagh | 1919 | General Dyer fired on unarmed crowd (379 dead, 1,200 wounded) |
-| Khilafat Movement | 1919–1924 | Ali brothers, Gandhi supported as pan-Islamic cause |
-| Non-Cooperation | 1920–1922 | Boycott of courts, schools, councils; Chauri Chaura led to withdrawal |
+| Khilafat Movement | 1919â€“1924 | Ali brothers, Gandhi supported as pan-Islamic cause |
+| Non-Cooperation | 1920â€“1922 | Boycott of courts, schools, councils; Chauri Chaura led to withdrawal |
 | Simon Commission | 1927 | All-white commission; "Simon Go Back" |
-| Civil Disobedience | 1930–1934 | Dandi March (12 March–6 April 1930); salt law broken |
-| Quit India Movement | 1942 | "Do or Die" — mass uprising; arrested leaders |
+| Civil Disobedience | 1930â€“1934 | Dandi March (12 Marchâ€“6 April 1930); salt law broken |
+| Quit India Movement | 1942 | "Do or Die" â€” mass uprising; arrested leaders |
 | INA Trials | 1945 | Red Fort trials sparked mass support |
 | Cabinet Mission | 1946 | Plan for united India; failed due to Muslim League |
 | Partition & Independence | 15 Aug 1947 | India and Pakistan created; millions displaced |
@@ -324,7 +324,7 @@ timeline
 | Kuchipudi | Andhra Pradesh | Mallika Sarabhai | Yes |
 | Manipuri | Manipur | Guru Bipin Singh | Yes |
 | Odissi | Odisha | Kelucharan Mohapatra | Yes |
-| Sattriya | Assam | — | Yes |
+| Sattriya | Assam | â€” | Yes |
 | Mohiniyattam | Kerala | Kalamandalam Kalyanikutty Amma | Yes |
 
 **Sangeet Natak Akademi** recognizes 8 classical dance forms of India.
@@ -377,11 +377,11 @@ interface HistoryQuestion {
 
 class HistoryQuizEngine {
   private events: HistoryEvent[] = [
-    { year: 261, event: 'Kalinga War — Ashoka converts to Buddhism', category: 'Ancient' },
+    { year: 261, event: 'Kalinga War â€” Ashoka converts to Buddhism', category: 'Ancient' },
     { year: 320, event: 'Start of Gupta Era (Chandragupta I)', category: 'Ancient' },
     { year: 1206, event: 'Delhi Sultanate founded by Qutb-ud-din Aibak', category: 'Medieval' },
-    { year: 1526, event: 'First Battle of Panipat — Babur defeats Ibrahim Lodi', category: 'Medieval' },
-    { year: 1757, event: 'Battle of Plassey — British gain control of Bengal', category: 'Modern' },
+    { year: 1526, event: 'First Battle of Panipat â€” Babur defeats Ibrahim Lodi', category: 'Medieval' },
+    { year: 1757, event: 'Battle of Plassey â€” British gain control of Bengal', category: 'Modern' },
     { year: 1857, event: 'First War of Indian Independence (Revolt of 1857)', category: 'Modern' },
     { year: 1919, event: 'Jallianwala Bagh Massacre', category: 'Modern' },
     { year: 1930, event: 'Dandi March (Salt Satyagraha)', category: 'Modern' },
@@ -464,7 +464,7 @@ D) Harshavardhana
 <summary>Answer</summary>
 **Answer: B) Samudragupta**
 
-Samudragupta (335–375 CE) was called the "Napoleon of India" by historian V.A. Smith for his extensive military campaigns. He did not lose a single battle during his reign.
+Samudragupta (335â€“375 CE) was called the "Napoleon of India" by historian V.A. Smith for his extensive military campaigns. He did not lose a single battle during his reign.
 </details>
 
 ---
@@ -480,7 +480,7 @@ D) Kalibangan
 <summary>Answer</summary>
 **Answer: B) Mohenjo-Daro**
 
-The Great Bath (12m × 7m × 2.4m) is located in Mohenjo-Daro, one of the largest Harappan cities. It was likely used for ritual bathing. It is made of waterproof bricks with natural tar coating.
+The Great Bath (12m Ã— 7m Ã— 2.4m) is located in Mohenjo-Daro, one of the largest Harappan cities. It was likely used for ritual bathing. It is made of waterproof bricks with natural tar coating.
 </details>
 
 ---
@@ -576,7 +576,7 @@ D) Sri Ranga
 <summary>Answer</summary>
 **Answer: B) Harihara and Bukka**
 
-The Vijayanagara Empire was founded in 1336 CE by Harihara I and Bukka Raya I (Sangama dynasty) under the guidance of Sant Vidyaranya. It reached its peak under Krishnadevaraya (1509–1529).
+The Vijayanagara Empire was founded in 1336 CE by Harihara I and Bukka Raya I (Sangama dynasty) under the guidance of Sant Vidyaranya. It reached its peak under Krishnadevaraya (1509â€“1529).
 </details>
 
 ---
@@ -592,7 +592,7 @@ D) Mumtaz Mahal
 <summary>Answer</summary>
 **Answer: A) Razia Sultana**
 
-Razia Sultana (1236–1240) was the first and only woman ruler of the Delhi Sultanate. She was the daughter of Iltutmish and ruled for about four years before being deposed and killed.
+Razia Sultana (1236â€“1240) was the first and only woman ruler of the Delhi Sultanate. She was the daughter of Iltutmish and ruled for about four years before being deposed and killed.
 </details>
 
 ---
@@ -704,7 +704,7 @@ D) Chandragupta II
 <summary>Answer</summary>
 **Answer: C) Sri Gupta**
 
-Sri Gupta (240–280 CE) was the founder of the Gupta dynasty. However, it was Chandragupta I (320–335 CE) who started the Gupta era and expanded the empire significantly.
+Sri Gupta (240â€“280 CE) was the founder of the Gupta dynasty. However, it was Chandragupta I (320â€“335 CE) who started the Gupta era and expanded the empire significantly.
 </details>
 
 ---
@@ -720,7 +720,7 @@ D) Government of India Act 1935
 <summary>Answer</summary>
 **Answer: B) Partition of Bengal**
 
-The Swadeshi Movement (1905–1911) was launched in response to the Partition of Bengal by Lord Curzon. It promoted boycott of British goods and revival of indigenous products and industries.
+The Swadeshi Movement (1905â€“1911) was launched in response to the Partition of Bengal by Lord Curzon. It promoted boycott of British goods and revival of indigenous products and industries.
 </details>
 
 ---
@@ -757,7 +757,7 @@ The historic Lahore session of INC (December 1929) under the presidency of Jawah
 
 ---
 
-### 3.12 World History Timeline — Key Events
+### 3.12 World History Timeline â€” Key Events
 
 ```mermaid
 timeline
@@ -774,7 +774,7 @@ timeline
     1215    : Magna Carta signed in England
     1492    : Columbus reaches America
     1526    : Mughal Empire founded (Babur)
-    1757    : Battle of Plassey — British rule in India begins
+    1757    : Battle of Plassey â€” British rule in India begins
     1776    : American Declaration of Independence
     1789    : French Revolution begins
     1857    : First War of Indian Independence
@@ -786,21 +786,21 @@ timeline
     1991    : Soviet Union dissolves; India liberalises
 ```
 
-### 3.13 Major Wars and Revolutions — Quick Reference
+### 3.13 Major Wars and Revolutions â€” Quick Reference
 
 | War/Revolution | Year(s) | Combatants | Outcome/Significance |
 |----------------|---------|------------|---------------------|
-| Hundred Years' War | 1337–1453 | England vs France | France expelled England from continental territory |
-| American Revolution | 1775–1783 | American colonies vs Britain | USA gained independence (Treaty of Paris, 1783) |
-| French Revolution | 1789–1799 | French people vs Monarchy | End of monarchy; rise of Napoleon; "Liberty, Equality, Fraternity" |
-| Napoleonic Wars | 1803–1815 | France vs European coalitions | Napoleon defeated at Waterloo (1815); Congress of Vienna |
-| American Civil War | 1861–1865 | Union (North) vs Confederacy (South) | Abolition of slavery; USA remained unified |
-| World War I | 1914–1918 | Allies vs Central Powers | ~16M deaths; Treaty of Versailles; League of Nations |
+| Hundred Years' War | 1337â€“1453 | England vs France | France expelled England from continental territory |
+| American Revolution | 1775â€“1783 | American colonies vs Britain | USA gained independence (Treaty of Paris, 1783) |
+| French Revolution | 1789â€“1799 | French people vs Monarchy | End of monarchy; rise of Napoleon; "Liberty, Equality, Fraternity" |
+| Napoleonic Wars | 1803â€“1815 | France vs European coalitions | Napoleon defeated at Waterloo (1815); Congress of Vienna |
+| American Civil War | 1861â€“1865 | Union (North) vs Confederacy (South) | Abolition of slavery; USA remained unified |
+| World War I | 1914â€“1918 | Allies vs Central Powers | ~16M deaths; Treaty of Versailles; League of Nations |
 | Russian Revolution | 1917 | Bolsheviks vs Provisional Govt | First communist state (USSR); Lenin came to power |
-| World War II | 1939–1945 | Allies vs Axis Powers | ~70M deaths; Atomic bombs on Hiroshima/Nagasaki; UN formed |
-| Cold War | 1947–1991 | USA vs USSR (ideological) | Nuclear arms race; Space race; USSR dissolved in 1991 |
-| Gulf War | 1990–1991 | Iraq vs US-led coalition | Iraq expelled from Kuwait |
-| War on Terror | 2001–present | US-led coalition vs Terror groups | Afghanistan invasion; ISIS rise; Bin Laden killed (2011) |
+| World War II | 1939â€“1945 | Allies vs Axis Powers | ~70M deaths; Atomic bombs on Hiroshima/Nagasaki; UN formed |
+| Cold War | 1947â€“1991 | USA vs USSR (ideological) | Nuclear arms race; Space race; USSR dissolved in 1991 |
+| Gulf War | 1990â€“1991 | Iraq vs US-led coalition | Iraq expelled from Kuwait |
+| War on Terror | 2001â€“present | US-led coalition vs Terror groups | Afghanistan invasion; ISIS rise; Bin Laden killed (2011) |
 
 ### 3.14 Independence Dates of Key Countries
 
@@ -827,26 +827,26 @@ timeline
 | Name | Tenure | Key Events Under Their Rule |
 |------|--------|----------------------------|
 | **Governors-General of Bengal** | | |
-| Robert Clive | 1757–1760, 1765–1767 | Battle of Plassey (1757); Dual system in Bengal |
-| Warren Hastings | 1774–1785 | First Governor-General of India (1774); Regulating Act 1773; Rohilla War |
-| Lord Cornwallis | 1786–1793 | Permanent Settlement of Bengal (1793); Civil services reforms |
-| Lord Wellesley | 1798–1805 | Subsidiary Alliance system; Fourth Mysore War (Tipu died 1799) |
-| Lord William Bentinck | 1828–1835 | Abolished Sati (1829); English Education Act; Macaulay's Minute |
-| Lord Dalhousie | 1848–1856 | Doctrine of Lapse; annexed Satara, Jhansi, Nagpur; Railway/Telegraph intro |
-| Lord Canning | 1856–1862 | Last Governor-General (till 1858); Revolt of 1857; became first Viceroy |
+| Robert Clive | 1757â€“1760, 1765â€“1767 | Battle of Plassey (1757); Dual system in Bengal |
+| Warren Hastings | 1774â€“1785 | First Governor-General of India (1774); Regulating Act 1773; Rohilla War |
+| Lord Cornwallis | 1786â€“1793 | Permanent Settlement of Bengal (1793); Civil services reforms |
+| Lord Wellesley | 1798â€“1805 | Subsidiary Alliance system; Fourth Mysore War (Tipu died 1799) |
+| Lord William Bentinck | 1828â€“1835 | Abolished Sati (1829); English Education Act; Macaulay's Minute |
+| Lord Dalhousie | 1848â€“1856 | Doctrine of Lapse; annexed Satara, Jhansi, Nagpur; Railway/Telegraph intro |
+| Lord Canning | 1856â€“1862 | Last Governor-General (till 1858); Revolt of 1857; became first Viceroy |
 | **Viceroys** | | |
-| Lord Canning | 1858–1862 | First Viceroy; Government of India Act 1858; Indian Councils Act 1861 |
-| Lord Ripon | 1880–1884 | Local Self-Government; Ilbert Bill (controversy); Factory Act 1881 |
-| Lord Curzon | 1899–1905 | Partition of Bengal (1905); Archaeological Survey of India |
-| Lord Minto | 1905–1910 | Minto-Morley Reforms 1909 (Indian Councils Act) |
-| Lord Hardinge | 1910–1916 | Capital moved from Calcutta to Delhi (1911); WWI began |
-| Lord Chelmsford | 1916–1921 | Montagu-Chelmsford Reforms 1919; Government of India Act 1919; Jallianwala Bagh (1919) |
-| Lord Reading | 1921–1926 | Non-Cooperation Movement; Chauri Chaura incident (1922) |
-| Lord Irwin | 1926–1931 | Simon Commission (1928); Dandi March (1930); Gandhi-Irwin Pact (1931) |
-| Lord Willingdon | 1931–1936 | Second Round Table Conference; Communal Award (1932) |
-| Lord Linlithgow | 1936–1943 | Provincial elections 1937; WWII; Quit India Movement (1942) |
-| Lord Wavell | 1943–1947 | Wavell Plan; Simla Conference; INA trials |
-| Lord Mountbatten | 1947–1948 | Last Viceroy; Partition of India; Independence (15 Aug 1947) |
+| Lord Canning | 1858â€“1862 | First Viceroy; Government of India Act 1858; Indian Councils Act 1861 |
+| Lord Ripon | 1880â€“1884 | Local Self-Government; Ilbert Bill (controversy); Factory Act 1881 |
+| Lord Curzon | 1899â€“1905 | Partition of Bengal (1905); Archaeological Survey of India |
+| Lord Minto | 1905â€“1910 | Minto-Morley Reforms 1909 (Indian Councils Act) |
+| Lord Hardinge | 1910â€“1916 | Capital moved from Calcutta to Delhi (1911); WWI began |
+| Lord Chelmsford | 1916â€“1921 | Montagu-Chelmsford Reforms 1919; Government of India Act 1919; Jallianwala Bagh (1919) |
+| Lord Reading | 1921â€“1926 | Non-Cooperation Movement; Chauri Chaura incident (1922) |
+| Lord Irwin | 1926â€“1931 | Simon Commission (1928); Dandi March (1930); Gandhi-Irwin Pact (1931) |
+| Lord Willingdon | 1931â€“1936 | Second Round Table Conference; Communal Award (1932) |
+| Lord Linlithgow | 1936â€“1943 | Provincial elections 1937; WWII; Quit India Movement (1942) |
+| Lord Wavell | 1943â€“1947 | Wavell Plan; Simla Conference; INA trials |
+| Lord Mountbatten | 1947â€“1948 | Last Viceroy; Partition of India; Independence (15 Aug 1947) |
 
 ### 3.16 Mughal Literature and Historical Monuments
 
@@ -868,15 +868,15 @@ timeline
 
 | Monument | Location | Built by | Period | Key Feature |
 |----------|----------|----------|--------|-------------|
-| Taj Mahal | Agra | Shah Jahan | 1632–1653 | White marble mausoleum; one of 7 Wonders |
+| Taj Mahal | Agra | Shah Jahan | 1632â€“1653 | White marble mausoleum; one of 7 Wonders |
 | Qutub Minar | Delhi | Qutb-ud-din Aibak | 1193 | Tallest brick minaret in the world (73 m) |
-| Red Fort | Delhi | Shah Jahan | 1639–1648 | Red sandstone fort; venue for PM's I-Day address |
-| Ajanta Caves | Aurangabad | Buddhist monks | 2nd C BCE–6th C CE | 29 caves with Buddhist paintings and sculptures |
-| Ellora Caves | Aurangabad | Various rulers | 6th–10th C CE | 34 caves (Buddhist, Hindu, Jain); Kailasa Temple |
-| Khajuraho Temples | Madhya Pradesh | Chandela dynasty | 950–1050 CE | 22 temples; famous for erotic sculptures |
+| Red Fort | Delhi | Shah Jahan | 1639â€“1648 | Red sandstone fort; venue for PM's I-Day address |
+| Ajanta Caves | Aurangabad | Buddhist monks | 2nd C BCEâ€“6th C CE | 29 caves with Buddhist paintings and sculptures |
+| Ellora Caves | Aurangabad | Various rulers | 6thâ€“10th C CE | 34 caves (Buddhist, Hindu, Jain); Kailasa Temple |
+| Khajuraho Temples | Madhya Pradesh | Chandela dynasty | 950â€“1050 CE | 22 temples; famous for erotic sculptures |
 | Sun Temple | Konark, Odisha | Narasimhadeva I | 1250 CE | Chariot-shaped temple with 24 wheels |
-| Hampi Ruins | Karnataka | Vijayanagara Empire | 14th–16th C | Largest open-air museum; Virupaksha Temple |
-| Mahabalipuram | Tamil Nadu | Pallava dynasty | 7th–8th C | Shore Temple; Rathas; Descent of the Ganges |
+| Hampi Ruins | Karnataka | Vijayanagara Empire | 14thâ€“16th C | Largest open-air museum; Virupaksha Temple |
+| Mahabalipuram | Tamil Nadu | Pallava dynasty | 7thâ€“8th C | Shore Temple; Rathas; Descent of the Ganges |
 | Sanchi Stupa | Madhya Pradesh | Ashoka (built) | 3rd C BCE | Great Stupa; Buddhist pilgrimage site |
 
 ### 3.17 Socio-Religious Movements (19th Century)
@@ -884,14 +884,14 @@ timeline
 | Movement | Founder | Year | Key Beliefs/Impact |
 |----------|---------|------|-------------------|
 | Brahmo Samaj | Raja Ram Mohan Roy | 1828 | Monotheism; opposed idolatry, caste, sati, child marriage |
-| Young Bengal Movement | Henry Derozio | 1820s–30s | Radical thinking; social reform; free expression |
+| Young Bengal Movement | Henry Derozio | 1820sâ€“30s | Radical thinking; social reform; free expression |
 | Ramakrishna Mission | Swami Vivekananda | 1897 | Universal religion; service to humanity; Vedanta philosophy |
 | Arya Samaj | Dayanand Saraswati | 1875 | "Back to the Vedas"; opposed idolatry and caste; Shuddhi movement |
 | Theosophical Society | H.P. Blavatsky, Col. Olcott | 1875 (in US), 1886 (in India) | Revived interest in Hindu philosophy; Annie Besant led Indian wing |
 | Aligarh Movement | Sir Syed Ahmed Khan | 1875 | Modern education for Muslims; founded Aligarh Muslim University |
 | Prarthana Samaj | Atmaram Pandurang | 1867 | Worship + social reform; focused on inter-caste marriage, widow remarriage |
 | Satyashodhak Samaj | Jyotirao Phule | 1873 | Social equality; against caste oppression; education for lower castes and women |
-| Sikh Reformist Movement | — | 1870s–1900s | Singh Sabha; Akali Movement; purification of Sikh practices |
+| Sikh Reformist Movement | â€” | 1870sâ€“1900s | Singh Sabha; Akali Movement; purification of Sikh practices |
 | Wahabi Movement | Syed Ahmad Barelvi | 1820s | Islamic revivalism; resistance against British and Sikh rulers |
 
 ### 3.18 TypeScript: Indian History Timeline and Quiz Generator
@@ -966,10 +966,10 @@ historyTool.chronologicalOrderQuiz();
 ```
 
 **Exam Quick-Tips for History:**
-- **Battle Chronology:** Plassey (1757) → Buxar (1764) → Anglo-Mysore Wars → Anglo-Maratha Wars → Anglo-Sikh Wars → 1857
-- **Governor-Generals Mnemonic:** "Hastings Cornwallis Wellesley Minto Bentinck Auckland Ellenborough Dalhousie Canning" — HHCC-WW-MB-AE-DC
+- **Battle Chronology:** Plassey (1757) â†’ Buxar (1764) â†’ Anglo-Mysore Wars â†’ Anglo-Maratha Wars â†’ Anglo-Sikh Wars â†’ 1857
+- **Governor-Generals Mnemonic:** "Hastings Cornwallis Wellesley Minto Bentinck Auckland Ellenborough Dalhousie Canning" â€” HHCC-WW-MB-AE-DC
 - **Viceroys Mnemonic:** "Canning Ripon Lansdowne Curzon Minto Hardinge Chelmsford Reading Irwin Willingdon Linlithgow Wavell Mountbatten"
-- **Socio-Religious Movements Memory:** "Brahma Rama Arya Theos" — Brahmo (1828), Ramakrishna (1897), Arya Samaj (1875), Theosophical (1875/1886)
+- **Socio-Religious Movements Memory:** "Brahma Rama Arya Theos" â€” Brahmo (1828), Ramakrishna (1897), Arya Samaj (1875), Theosophical (1875/1886)
 
 ### 3.19 Additional Solved MCQs (History)
 
@@ -998,7 +998,7 @@ D) Tirumala
 <summary>Answer</summary>
 **Answer: C) Harihara and Bukka (1336)**
 
-The Vijayanagara Empire was founded by Harihara I and Bukka Raya I of the Sangama dynasty. Krishnadevaraya (1509–1529) was the greatest ruler of the empire.
+The Vijayanagara Empire was founded by Harihara I and Bukka Raya I of the Sangama dynasty. Krishnadevaraya (1509â€“1529) was the greatest ruler of the empire.
 </details>
 
 **Q23:** The "Pitt's India Act" was passed in which year?
@@ -1026,7 +1026,7 @@ D) Shah Jahan
 <summary>Answer</summary>
 **Answer: C) Hamida Banu Begum (Humayun's wife)**
 
-Humayun's Tomb in Delhi was commissioned by his senior widow, Hamida Banu Begum, in 1569–70. It is a UNESCO World Heritage Site and a precursor to the Taj Mahal's architectural style.
+Humayun's Tomb in Delhi was commissioned by his senior widow, Hamida Banu Begum, in 1569â€“70. It is a UNESCO World Heritage Site and a precursor to the Taj Mahal's architectural style.
 </details>
 
 **Q25:** The "Anand Math" novel was written by:
@@ -1047,24 +1047,24 @@ Anand Math (1882) is a Bengali novel by Bankim Chandra Chatterjee. It is the sou
 
 ## Summary
 
-- The **Indus Valley Civilization** (c. 2500–1750 BCE) was an advanced urban civilization with grid-based towns, drainage systems, and trade networks.
-- The **Vedic period** (1500–600 BCE) gave rise to Hinduism's foundational texts — the four Vedas and the Upanishads.
-- The **Mauryan Empire** (322–185 BCE) was India's first great empire, reaching its zenith under Ashoka.
-- The **Gupta period** (320–550 CE) is called the "Golden Age" for achievements in science, literature, and arts.
-- The **Delhi Sultanate** (1206–1526) brought Islamic rule to North India with five successive dynasties.
-- The **Mughal Empire** (1526–1857) produced iconic rulers — Akbar (greatest), Shah Jahan (Taj Mahal), Aurangzeb (largest empire).
+- The **Indus Valley Civilization** (c. 2500â€“1750 BCE) was an advanced urban civilization with grid-based towns, drainage systems, and trade networks.
+- The **Vedic period** (1500â€“600 BCE) gave rise to Hinduism's foundational texts â€” the four Vedas and the Upanishads.
+- The **Mauryan Empire** (322â€“185 BCE) was India's first great empire, reaching its zenith under Ashoka.
+- The **Gupta period** (320â€“550 CE) is called the "Golden Age" for achievements in science, literature, and arts.
+- The **Delhi Sultanate** (1206â€“1526) brought Islamic rule to North India with five successive dynasties.
+- The **Mughal Empire** (1526â€“1857) produced iconic rulers â€” Akbar (greatest), Shah Jahan (Taj Mahal), Aurangzeb (largest empire).
 - The **Revolt of 1857** was the first major armed resistance against British rule.
 - The **Indian freedom struggle** progressed through Moderate, Extremist, and Gandhian phases, culminating in independence on 15 August 1947.
 - India has **8 classical dance forms**, **42 UNESCO World Heritage Sites**, and a rich tradition of classical music, painting, and architecture.
 
 ## Practical Takeaways
 
-1. **For IBPS SO / SBI / RBI Exams:** Modern Indian History (1857–1947) has the highest weightage — focus on freedom struggle phases, important movements, and key personalities.
+1. **For IBPS SO / SBI / RBI Exams:** Modern Indian History (1857â€“1947) has the highest weightage â€” focus on freedom struggle phases, important movements, and key personalities.
 2. **Chronology is Critical:** Create a timeline of the freedom movement from 1857 to 1947. Drill the year-sequence repeatedly.
 3. **Cultural Questions:** Expect 1-2 questions on classical dances, UNESCO sites, or temple locations. Use regional grouping to memorise.
-4. **Mughal Genealogy:** Remember the succession: Babur → Humayun → Akbar → Jahangir → Shah Jahan → Aurangzeb → Later Mughals. Mnemonic: "Babur Hindustan Aaya Jahangir Shahjahan Aurangzeb"
+4. **Mughal Genealogy:** Remember the succession: Babur â†’ Humayun â†’ Akbar â†’ Jahangir â†’ Shah Jahan â†’ Aurangzeb â†’ Later Mughals. Mnemonic: "Babur Hindustan Aaya Jahangir Shahjahan Aurangzeb"
 5. **Governor-Generals and Viceroys:** Memorise key events under each: Wellesley (Subsidiary Alliance), Bentinck (Sati abolition), Dalhousie (Doctrine of Lapse), Canning (1857 Revolt), Ripon (Local Self-Government), Curzon (Partition of Bengal).
-6. **Constitutional Development Track:** 1773 Regulating Act → 1858 Crown Rule → 1909 Minto-Morley → 1919 Montagu-Chelmsford → 1935 Government of India Act.
+6. **Constitutional Development Track:** 1773 Regulating Act â†’ 1858 Crown Rule â†’ 1909 Minto-Morley â†’ 1919 Montagu-Chelmsford â†’ 1935 Government of India Act.
 
 ## Chapter Quiz
 
@@ -1135,7 +1135,7 @@ D) Lord Hastings
 <summary>Answer</summary>
 **Answer: B) Lord Dalhousie**
 
-Lord Dalhousie (Governor-General 1848–1856) introduced the Doctrine of Lapse, under which any princely state without a natural heir would be annexed by the British. States annexed included Satara, Jhansi, Nagpur, and Awadh.
+Lord Dalhousie (Governor-General 1848â€“1856) introduced the Doctrine of Lapse, under which any princely state without a natural heir would be annexed by the British. States annexed included Satara, Jhansi, Nagpur, and Awadh.
 </details>
 
 ---
@@ -1313,7 +1313,7 @@ B) Brahmi
 C) Kharosthi
 D) Sanskrit
 
-**40.** The "Bhakti Movement" saint who was a contemporary of Akbar and wrote "Bījak" was:
+**40.** The "Bhakti Movement" saint who was a contemporary of Akbar and wrote "BÄ«jak" was:
 
 A) Tulsidas
 B) Kabir
@@ -1343,9 +1343,9 @@ D) Surdas
 13. Mehrauli (Delhi)
 14. Babur
 15. Meerut
-16. Sabarmati Ashram → Dandi
+16. Sabarmati Ashram â†’ Dandi
 17. Swami Vivekananda
-18. Calcutta → Delhi
+18. Calcutta â†’ Delhi
 19. Womesh Chandra Bonnerjee
 20. Chola
 
@@ -1376,4 +1376,4 @@ D) Surdas
 
 ---
 
-*Proceed to Chapter 4 — Indian Economy & Planning*
+*Proceed to Chapter 4 â€” Indian Economy & Planning*

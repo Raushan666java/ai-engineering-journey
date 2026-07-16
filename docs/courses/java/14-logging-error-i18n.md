@@ -1,4 +1,4 @@
-# Logging, Error Handling & Internationalization
+﻿# Logging, Error Handling & Internationalization
 
 > **Previous:** [Actuator, DevTools & Monitoring](./13-actuator-devtools.md) | **Next:** [REST API Development](./15-rest-api.md)
 
@@ -9,16 +9,16 @@ After completing this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/14-logging-error-i18n/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/14-logging-error-i18n/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/14-logging-error-i18n/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/14-logging-error-i18n/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/14-logging-error-i18n/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/14-logging-error-i18n/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/14-logging-error-i18n/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/14-logging-error-i18n/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/14-logging-error-i18n/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/14-logging-error-i18n/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/14-logging-error-i18n/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/14-logging-error-i18n/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -59,7 +59,7 @@ flowchart LR
     G --> H[i18n + Validation]
 ```
 
-> **Pro Tip:** Use parametrized logging (`log.info("user {} logged in", userId)`) instead of string concatenation — SLF4J evaluates the template only if the log level is enabled, saving CPU cycles.
+> **Pro Tip:** Use parametrized logging (`log.info("user {} logged in", userId)`) instead of string concatenation â€” SLF4J evaluates the template only if the log level is enabled, saving CPU cycles.
 
 ---
 
@@ -74,9 +74,9 @@ Spring Boot applications have access to a rich ecosystem of logging frameworks:
 
 | Framework | Description |
 |-----------|-------------|
-| **SLF4J** | Simple Logging Facade for Java → the API facade |
+| **SLF4J** | Simple Logging Facade for Java â†’ the API facade |
 | **Logback** | Native SLF4J implementation, Spring Boot's default |
-| **Log4j2** | Apache Log4j 2 → asynchronous, high-performance alternative |
+| **Log4j2** | Apache Log4j 2 â†’ asynchronous, high-performance alternative |
 | **java.util.logging** | JDK built-in, rarely used directly in Spring Boot |
 
 Spring Boot uses SLF4J + Logback by default. All internal Spring logging goes through SLF4J, and Logback is the default implementation.
@@ -115,10 +115,10 @@ A logger inherits its level from its nearest ancestor that has a configured leve
 
 ```
 ROOT
- └── com
-      └── com.example
-           └── com.example.service
-                └── com.example.service.OrderService
+ â””â”€â”€ com
+      â””â”€â”€ com.example
+           â””â”€â”€ com.example.service
+                â””â”€â”€ com.example.service.OrderService
 ```
 
 #### 1.2.2 Log Levels (in order of severity)
@@ -136,10 +136,10 @@ ROOT
 SLF4J supports parameterized messages with `{}` placeholders:
 
 ```java
-// Good → parameterized (avoids string concatenation when disabled)
+// Good â†’ parameterized (avoids string concatenation when disabled)
 log.info("User {} placed order {} worth ${}", userId, orderId, amount);
 
-// Bad → string concatenation (evaluated even when level is disabled)
+// Bad â†’ string concatenation (evaluated even when level is disabled)
 log.info("User " + userId + " placed order " + orderId);
 
 // Multiple parameters
@@ -303,10 +303,10 @@ Logback supports several rolling policies:
 <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
     <fileNamePattern>logs/app.%d{yyyy-MM-dd}.log</fileNamePolicy>
     <!-- More patterns:
-         .%d{yyyy-MM-dd}           → daily
-         .%d{yyyy-MM-dd_HH}        → hourly
-         .%d{yyyy-ww}              → weekly
-         .%d{yyyy-MM}              → monthly
+         .%d{yyyy-MM-dd}           â†’ daily
+         .%d{yyyy-MM-dd_HH}        â†’ hourly
+         .%d{yyyy-ww}              â†’ weekly
+         .%d{yyyy-MM}              â†’ monthly
     -->
     <maxHistory>30</maxHistory>
     <cleanHistoryOnStart>true</cleanHistoryOnStart>
@@ -336,7 +336,7 @@ Logback supports several rolling policies:
 
 Filters control which log events reach an appender.
 
-**ThresholdFilter** → only events above a threshold:
+**ThresholdFilter** â†’ only events above a threshold:
 
 ```xml
 <appender name="ERROR_FILE" class="ch.qos.logback.core.FileAppender">
@@ -346,7 +346,7 @@ Filters control which log events reach an appender.
 </appender>
 ```
 
-**LevelFilter** → exact match:
+**LevelFilter** â†’ exact match:
 
 ```xml
 <appender name="WARN_FILE" class="ch.qos.logback.core.FileAppender">
@@ -358,7 +358,7 @@ Filters control which log events reach an appender.
 </appender>
 ```
 
-**EvaluatorFilter** → custom conditions:
+**EvaluatorFilter** â†’ custom conditions:
 
 ```xml
 <appender name="SLOW_SQL" class="ch.qos.logback.core.FileAppender">
@@ -371,7 +371,7 @@ Filters control which log events reach an appender.
 </appender>
 ```
 
-#### 1.3.5 MDC → Mapped Diagnostic Context
+#### 1.3.5 MDC â†’ Mapped Diagnostic Context
 
 MDC allows you to add contextual information to log messages:
 
@@ -1346,7 +1346,7 @@ public class I18nConfig {
 
 #### 1.9.2 LocaleResolver Strategies
 
-**AcceptHeaderLocaleResolver** → uses the `Accept-Language` HTTP header:
+**AcceptHeaderLocaleResolver** â†’ uses the `Accept-Language` HTTP header:
 
 ```java
 @Bean
@@ -1366,7 +1366,7 @@ public LocaleResolver localeResolver() {
 }
 ```
 
-**SessionLocaleResolver** → stores locale in the HTTP session:
+**SessionLocaleResolver** â†’ stores locale in the HTTP session:
 
 ```java
 @Bean
@@ -1378,7 +1378,7 @@ public LocaleResolver localeResolver() {
 }
 ```
 
-**CookieLocaleResolver** → stores locale in a cookie (persists across sessions):
+**CookieLocaleResolver** â†’ stores locale in a cookie (persists across sessions):
 
 ```java
 @Bean
@@ -1400,7 +1400,7 @@ public LocaleResolver localeResolver() {
 }
 ```
 
-**Custom LocaleResolver** → for database-backed locale persistence:
+**Custom LocaleResolver** â†’ for database-backed locale persistence:
 
 ```java
 package com.example.i18n.config;
@@ -1462,13 +1462,13 @@ public class UserPreferenceLocaleResolver extends AbstractLocaleResolver {
 
 #### 1.9.3 Message Bundles
 
-**src/main/resources/messages/messages.properties** (default → English):
+**src/main/resources/messages/messages.properties** (default â†’ English):
 
 ```properties
 # General
 app.title=My Application
 app.description=Welcome to our e-commerce platform
-app.footer.copyright=Â© 2026 My App Inc. All rights reserved.
+app.footer.copyright=Ã‚Â© 2026 My App Inc. All rights reserved.
 
 # Navigation
 nav.home=Home
@@ -1524,14 +1524,14 @@ user.paymentMethods=Payment Methods
 # General
 app.title=Mon Application
 app.description=Bienvenue sur notre plateforme e-commerce
-app.footer.copyright=Â© 2026 My App Inc. Tous droits rÃ©servÃ©s.
+app.footer.copyright=Ã‚Â© 2026 My App Inc. Tous droits rÃƒÂ©servÃƒÂ©s.
 
 # Navigation
 nav.home=Accueil
 nav.products=Produits
 nav.cart=Panier
 nav.profile=Mon Profil
-nav.logout=DÃ©connexion
+nav.logout=DÃƒÂ©connexion
 nav.login=Connexion
 nav.register=S'inscrire
 
@@ -1547,11 +1547,11 @@ product.addReview=Donner votre avis
 
 # Order
 order.confirmation=Confirmation de commande
-order.number=NumÃ©ro de commande
+order.number=NumÃƒÂ©ro de commande
 order.date=Date de commande
 order.status=Statut de la commande
 order.total=Montant total
-order.items=Articles commandÃ©s
+order.items=Articles commandÃƒÂ©s
 order.shippingAddress=Adresse de livraison
 order.placeOrder=Passer la commande
 order.cancel=Annuler la commande
@@ -1562,13 +1562,13 @@ cart.total=Total du panier
 cart.checkout=Commander
 cart.continueShopping=Continuer vos achats
 cart.remove=Supprimer
-cart.quantity=QuantitÃ©
-cart.summary=RÃ©capitulatif du panier
+cart.quantity=QuantitÃƒÂ©
+cart.summary=RÃƒÂ©capitulatif du panier
 
 # User
 user.welcome=Bienvenue, {0}
 user.profile=Mon Profil
-user.settings=ParamÃ¨tres
+user.settings=ParamÃƒÂ¨tres
 user.orders=Mes commandes
 user.addresses=Mes adresses
 user.paymentMethods=Moyens de paiement
@@ -1580,7 +1580,7 @@ user.paymentMethods=Moyens de paiement
 # General
 app.title=Meine Anwendung
 app.description=Willkommen auf unserer E-Commerce-Plattform
-app.footer.copyright=Â© 2026 My App Inc. Alle Rechte vorbehalten.
+app.footer.copyright=Ã‚Â© 2026 My App Inc. Alle Rechte vorbehalten.
 
 # Navigation
 nav.home=Startseite
@@ -1602,7 +1602,7 @@ product.reviews=Bewertungen
 product.addReview=Bewertung schreiben
 
 # Order
-order.confirmation=BestellbestÃ¤tigung
+order.confirmation=BestellbestÃƒÂ¤tigung
 order.number=Bestellnummer
 order.date=Bestelldatum
 order.status=Bestellstatus
@@ -1619,7 +1619,7 @@ cart.checkout=Zur Kasse
 cart.continueShopping=Einkauf fortsetzen
 cart.remove=Entfernen
 cart.quantity=Menge
-cart.summary=WarenkorbÃ¼bersicht
+cart.summary=WarenkorbÃƒÂ¼bersicht
 
 # User
 user.welcome=Willkommen, {0}
@@ -1742,12 +1742,12 @@ public class LocaleController {
     public List<Map<String, String>> getSupportedLocales() {
         return List.of(
                 Map.of("code", "en", "name", "English"),
-                Map.of("code", "fr", "name", "FranÃ§ais"),
+                Map.of("code", "fr", "name", "FranÃƒÂ§ais"),
                 Map.of("code", "de", "name", "Deutsch"),
-                Map.of("code", "es", "name", "EspaÃ±ol"),
-                Map.of("code", "ja", "name", "æ—¥æœ¬èªž"),
-                Map.of("code", "zh-CN", "name", "ä¸­æ–‡"),
-                Map.of("code", "pt-BR", "name", "PortuguÃªs (Brasil)")
+                Map.of("code", "es", "name", "EspaÃƒÂ±ol"),
+                Map.of("code", "ja", "name", "Ã¦â€”Â¥Ã¦Å“Â¬Ã¨ÂªÅ¾"),
+                Map.of("code", "zh-CN", "name", "Ã¤Â¸Â­Ã¦â€“â€¡"),
+                Map.of("code", "pt-BR", "name", "PortuguÃƒÂªs (Brasil)")
         );
     }
 }
@@ -1857,19 +1857,19 @@ NotBlank.orderRequest.customerName=Le nom du client est obligatoire
 NotBlank.orderRequest.email=L'adresse e-mail est obligatoire
 NotBlank.orderRequest.shippingAddress=L'adresse de livraison est obligatoire
 Email.orderRequest.email=Veuillez fournir une adresse e-mail valide
-Positive.orderRequest.totalAmount=Le montant total doit Ãªtre positif
-Size.orderRequest.customerName=Le nom doit contenir entre {2} et {1} caractÃ¨res
+Positive.orderRequest.totalAmount=Le montant total doit ÃƒÂªtre positif
+Size.orderRequest.customerName=Le nom doit contenir entre {2} et {1} caractÃƒÂ¨res
 Min.orderRequest.totalAmount=Le montant minimum est de {1}
 Max.orderRequest.totalAmount=Le montant maximum est de {1}
-Pattern.orderRequest.phone=Le numÃ©ro de tÃ©lÃ©phone doit correspondre au format {1}
+Pattern.orderRequest.phone=Le numÃƒÂ©ro de tÃƒÂ©lÃƒÂ©phone doit correspondre au format {1}
 
 # Global validation messages
 jakarta.validation.constraints.NotBlank.message={field} est obligatoire
-jakarta.validation.constraints.Email.message={field} doit Ãªtre un e-mail valide
-jakarta.validation.constraints.Positive.message={field} doit Ãªtre positif
-jakarta.validation.constraints.Size.message={field} doit contenir entre {min} et {max} caractÃ¨res
-jakarta.validation.constraints.Min.message={field} doit Ãªtre au moins {value}
-jakarta.validation.constraints.Max.message={field} doit Ãªtre au plus {value}
+jakarta.validation.constraints.Email.message={field} doit ÃƒÂªtre un e-mail valide
+jakarta.validation.constraints.Positive.message={field} doit ÃƒÂªtre positif
+jakarta.validation.constraints.Size.message={field} doit contenir entre {min} et {max} caractÃƒÂ¨res
+jakarta.validation.constraints.Min.message={field} doit ÃƒÂªtre au moins {value}
+jakarta.validation.constraints.Max.message={field} doit ÃƒÂªtre au plus {value}
 jakarta.validation.constraints.NotNull.message={field} est obligatoire
 jakarta.validation.constraints.Pattern.message={field} a un format invalide
 ```
@@ -1958,7 +1958,7 @@ ValidDateRange.orderRequest=End date must be after start date
 French:
 
 ```properties
-ValidDateRange.orderRequest=La date de fin doit Ãªtre postÃ©rieure Ã  la date de dÃ©but
+ValidDateRange.orderRequest=La date de fin doit ÃƒÂªtre postÃƒÂ©rieure ÃƒÂ  la date de dÃƒÂ©but
 ```
 
 ### 1.12 Programmatic Message Resolution in REST Controllers
@@ -2309,7 +2309,7 @@ public class LoggingAspect {
             MDC.put("class", className);
             MDC.put("method", methodName);
 
-            log.info("→ {}.{}({})", className, methodName,
+            log.info("â†’ {}.{}({})", className, methodName,
                     Arrays.stream(args)
                             .map(a -> a != null ? a.toString() : "null")
                             .collect(Collectors.joining(", ")));
@@ -2319,15 +2319,15 @@ public class LoggingAspect {
             long duration = System.currentTimeMillis() - start;
 
             if (duration > 1000) {
-                log.warn("← {}.{} completed in {}ms (SLOW)", className, methodName, duration);
+                log.warn("â† {}.{} completed in {}ms (SLOW)", className, methodName, duration);
             } else {
-                log.info("← {}.{} completed in {}ms", className, methodName, duration);
+                log.info("â† {}.{} completed in {}ms", className, methodName, duration);
             }
 
             return result;
 
         } catch (Exception e) {
-            log.error("âœ— {}.{} failed: {}", className, methodName, e.getMessage(), e);
+            log.error("Ã¢Å“â€” {}.{} failed: {}", className, methodName, e.getMessage(), e);
             throw e;
         } finally {
             MDC.clear();
@@ -2595,7 +2595,7 @@ Add the Logstash encoder and configure:
 1. A JSON file appender with daily rotation and gzip compression
 2. Custom fields for application name and environment
 3. MDC inclusion in JSON output
-4. Custom field name mappings (timestamp → @timestamp, level → severity)
+4. Custom field name mappings (timestamp â†’ @timestamp, level â†’ severity)
 5. Redaction of sensitive fields (password, secret, creditCard)
 
 Write a test that logs an order creation event and verifies the JSON output structure.
@@ -2616,13 +2616,13 @@ Include the trace ID in all log messages. Verify with a test controller.
 
 Build a `GlobalExceptionHandler` with `@RestControllerAdvice` that handles:
 
-1. `MethodArgumentNotValidException` → returns field-level validation errors
-2. `ConstraintViolationException` → returns constraint violation messages
-3. `MissingServletRequestParameterException` → returns missing parameter info
-4. `MethodArgumentTypeMismatchException` → returns type mismatch details
-5. `HttpMessageNotReadableException` → returns malformed request body error
-6. `AccessDeniedException` → returns 403 with a message
-7. Any other `Exception` → returns 500 with a generic message
+1. `MethodArgumentNotValidException` â†’ returns field-level validation errors
+2. `ConstraintViolationException` â†’ returns constraint violation messages
+3. `MissingServletRequestParameterException` â†’ returns missing parameter info
+4. `MethodArgumentTypeMismatchException` â†’ returns type mismatch details
+5. `HttpMessageNotReadableException` â†’ returns malformed request body error
+6. `AccessDeniedException` â†’ returns 403 with a message
+7. Any other `Exception` â†’ returns 500 with a generic message
 
 Format all responses as RFC 7807 Problem Details with timestamps and trace IDs.
 
@@ -2658,9 +2658,9 @@ Create bundles for English and French with at least 20 message keys each coverin
 
 Implement three different `LocaleResolver` strategies:
 
-1. `AcceptHeaderLocaleResolver` → for REST API clients
-2. `CookieLocaleResolver` → for web applications with persistence
-3. `SessionLocaleResolver` → for session-based web apps
+1. `AcceptHeaderLocaleResolver` â†’ for REST API clients
+2. `CookieLocaleResolver` â†’ for web applications with persistence
+3. `SessionLocaleResolver` â†’ for session-based web apps
 
 Add a `LocaleChangeInterceptor` and a controller endpoint that:
 - Returns the current locale with language, country, and display name

@@ -1,4 +1,4 @@
-# Chapter 3: OpenCV & Computer Vision
+﻿# Chapter 3: OpenCV & Computer Vision
 
 > **Prerequisite:** [02 - LangChain & LLM Orchestration](./02-langchain.md)  
 > **Next Chapter:** [04 - Generative AI](./04-generative-ai.md)
@@ -16,16 +16,16 @@ After completing this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/applied-ai/03-opencv/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/applied-ai/03-opencv/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/applied-ai/03-opencv/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/applied-ai/03-opencv/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/applied-ai/03-opencv/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/applied-ai/03-opencv/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/applied-ai/03-opencv/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/applied-ai/03-opencv/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/applied-ai/03-opencv/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/applied-ai/03-opencv/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/applied-ai/03-opencv/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/applied-ai/03-opencv/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -36,7 +36,7 @@ After completing this chapter, you will be able to:
 
 ## Why OpenCV Matters
 
-**Real-World Analogy:** Imagine describing a photograph to someone born blind — you would have to translate every visual detail into a grid of numbers. "At row 10, column 20, the brightness is 142 out of 255. At row 10, column 21, it drops to 98." That is exactly how computers "see." Every digital image is just a two-dimensional (or three-dimensional) array of numbers. **OpenCV (Open Source Computer Vision Library)** is the industry-standard toolkit that makes sense of these numbers — 2500+ optimized algorithms for processing, analyzing, and understanding visual data.
+**Real-World Analogy:** Imagine describing a photograph to someone born blind â€” you would have to translate every visual detail into a grid of numbers. "At row 10, column 20, the brightness is 142 out of 255. At row 10, column 21, it drops to 98." That is exactly how computers "see." Every digital image is just a two-dimensional (or three-dimensional) array of numbers. **OpenCV (Open Source Computer Vision Library)** is the industry-standard toolkit that makes sense of these numbers â€” 2500+ optimized algorithms for processing, analyzing, and understanding visual data.
 
 Originally developed by Intel in 1999, OpenCV has become the backbone of computer vision across academia and industry, powering everything from smartphone face unlock to autonomous vehicle perception. Its C++ backend delivers hardware-accelerated performance, while Python bindings make it accessible for rapid prototyping and AI pipelines.
 
@@ -58,7 +58,7 @@ Originally developed by Intel in 1999, OpenCV has become the backbone of compute
 | Image I/O Basics | OpenCV reads images in BGR format by default | Always convert BGR to RGB before displaying with matplotlib |
 | Color Spaces | HSV enables intuitive color-based segmentation | Use `cv2.inRange()` with HSV bounds for object masking |
 | Geometric Transforms | Affine and perspective transforms correct image geometry | Use `warpPerspective` for document scanning and alignment |
-| Image Filters | Blurring reduces noise; Canny detects edges | Chain Gaussian blur → Canny for cleaner edge detection |
+| Image Filters | Blurring reduces noise; Canny detects edges | Chain Gaussian blur â†’ Canny for cleaner edge detection |
 | Feature Detection | SIFT finds scale-invariant keypoints for matching | Use FLANN matcher + Lowe's ratio test for robust feature matching |
 | Face Detection | Haar cascades are fast; DNN models are more accurate | Start with Haar for real-time; use DNN/SSD for accuracy-critical applications |
 | Video Processing | Treat each frame independently | Process every Nth frame to maintain real-time throughput |
@@ -86,7 +86,7 @@ flowchart LR
 ### Real-World Analogy
 
 
-Think of an image as a giant spreadsheet where every cell stores a number representing brightness (grayscale) or a triplet of numbers for color. A 4K TV screen has roughly 8.3 million such cells — each one a pixel. When you read an image into OpenCV, you are literally loading that spreadsheet into a NumPy array.
+Think of an image as a giant spreadsheet where every cell stores a number representing brightness (grayscale) or a triplet of numbers for color. A 4K TV screen has roughly 8.3 million such cells â€” each one a pixel. When you read an image into OpenCV, you are literally loading that spreadsheet into a NumPy array.
 
 ### What Is a Digital Image?
 
@@ -94,26 +94,26 @@ Think of an image as a giant spreadsheet where every cell stores a number repres
 | Concept | Description |
 |---------|-------------|
 | **Pixel** | Smallest unit of a digital image (picture element) |
-| **Resolution** | Width × Height in pixels (e.g., 1920 × 1080) |
+| **Resolution** | Width Ã— Height in pixels (e.g., 1920 Ã— 1080) |
 | **Grayscale** | Single channel, 0 (black) to 255 (white) |
-| **Color** | Multiple channels — BGR in OpenCV, each 0–255 |
+| **Color** | Multiple channels â€” BGR in OpenCV, each 0â€“255 |
 | **dtype** | `uint8` (unsigned 8-bit integer) for standard images |
 
 ### Algorithm Steps
 
 
-1. **Read file** — `cv2.imread()` decodes the image file into a NumPy array
-2. **Check validity** — verify `img is not None` (file may be missing or corrupt)
-3. **Inspect shape** — `img.shape` returns `(height, width, channels)`
-4. **Access pixels** — index into the array: `img[row, col]`
-5. **Write file** — `cv2.imwrite()` encodes and saves to disk
+1. **Read file** â€” `cv2.imread()` decodes the image file into a NumPy array
+2. **Check validity** â€” verify `img is not None` (file may be missing or corrupt)
+3. **Inspect shape** â€” `img.shape` returns `(height, width, channels)`
+4. **Access pixels** â€” index into the array: `img[row, col]`
+5. **Write file** â€” `cv2.imwrite()` encodes and saves to disk
 
 ### Pseudocode
 
 
 ```
 FUNCTION read_and_show(path):
-    img ← OPEN image at path
+    img â† OPEN image at path
 
     IF img is NULL:
         PRINT "Error: could not load image"
@@ -123,7 +123,7 @@ FUNCTION read_and_show(path):
     PRINT "dtype: " + img.dtype     // uint8
 
     // Access pixel at row=10, col=20
-    pixel ← img[10, 20]
+    pixel â† img[10, 20]
     PRINT "Pixel (10,20): " + pixel
 
     WRITE img to "output/copy.jpg"
@@ -133,35 +133,35 @@ FUNCTION read_and_show(path):
 ### Step-by-Step Dry Run
 
 
-Consider a 4×4 grayscale image where each cell = pixel intensity (0–255):
+Consider a 4Ã—4 grayscale image where each cell = pixel intensity (0â€“255):
 
 **Input image (grayscale):**
 
 ```
         col0  col1  col2  col3
-row0 ┌─────────────────────────┐
-     │ 120   130   140   150   │   ← pixels
-row1 │ 110   125   135   145   │
-row2 │ 100   115   130   140   │
-row3 │  90   105   120   130   │
-     └─────────────────────────┘
+row0 â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+     â”‚ 120   130   140   150   â”‚   â† pixels
+row1 â”‚ 110   125   135   145   â”‚
+row2 â”‚ 100   115   130   140   â”‚
+row3 â”‚  90   105   120   130   â”‚
+     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 **After `cv2.imread("photo.jpg", cv2.IMREAD_GRAYSCALE)`:**
 
 | Property | Value |
 |----------|-------|
-| `img.shape` | `(4, 4)` — height=4, width=4, no channel dim (grayscale) |
-| `img.dtype` | `uint8` — values 0 through 255 |
+| `img.shape` | `(4, 4)` â€” height=4, width=4, no channel dim (grayscale) |
+| `img.dtype` | `uint8` â€” values 0 through 255 |
 | `img[0,0]` | 120 (top-left pixel) |
 | `img[3,3]` | 130 (bottom-right pixel) |
 
-**After `cv2.imread("photo.jpg")` (color — BGR):**
+**After `cv2.imread("photo.jpg")` (color â€” BGR):**
 
 | Property | Value |
 |----------|-------|
-| `img.shape` | `(4, 4, 3)` — height=4, width=4, channels=3 |
-| `img[0,0]` | `[120, 110, 100]` — Blue=120, Green=110, Red=100 |
+| `img.shape` | `(4, 4, 3)` â€” height=4, width=4, channels=3 |
+| `img[0,0]` | `[120, 110, 100]` â€” Blue=120, Green=110, Red=100 |
 
 ### C++ Implementation
 
@@ -234,9 +234,9 @@ cv2.imwrite("output/blue.png", blank)
 
 | Operation | Time Complexity | Space Complexity | Why? |
 |-----------|----------------|------------------|------|
-| Read/Write | O(H × W × C) | O(H × W × C) | Every pixel must be loaded/saved; the array occupies H×W×C bytes |
-| Pixel access | O(1) | — | Direct memory indexing via `data[row * step + col * channels]` |
-| Copy | O(H × W × C) | O(H × W × C) | Deep copy duplicates the entire buffer |
+| Read/Write | O(H Ã— W Ã— C) | O(H Ã— W Ã— C) | Every pixel must be loaded/saved; the array occupies HÃ—WÃ—C bytes |
+| Pixel access | O(1) | â€” | Direct memory indexing via `data[row * step + col * channels]` |
+| Copy | O(H Ã— W Ã— C) | O(H Ã— W Ã— C) | Deep copy duplicates the entire buffer |
 
 Where H = height, W = width, C = channels (1 for grayscale, 3 for color).
 
@@ -254,15 +254,15 @@ Where H = height, W = width, C = channels (1 for grayscale, 3 for color).
 ### Edge Cases
 
 
-- **Missing file:** `cv2.imread` returns `None` silently — always check with `if img is None`
-- **Corrupted file:** Returns `None` or partial decode — validate with shape check
+- **Missing file:** `cv2.imread` returns `None` silently â€” always check with `if img is None`
+- **Corrupted file:** Returns `None` or partial decode â€” validate with shape check
 - **Unsupported format:** Returns `None` for exotic formats (HEIC, WebP may need plugins)
-- **Large images:** A 4K image occupies 24 MB (3840×2160×3 bytes) — scale down with `cv2.resize` first
-- **Alpha channel:** OpenCV reads PNG with alpha as 4-channel BGRA — use `cv2.IMREAD_UNCHANGED`
+- **Large images:** A 4K image occupies 24 MB (3840Ã—2160Ã—3 bytes) â€” scale down with `cv2.resize` first
+- **Alpha channel:** OpenCV reads PNG with alpha as 4-channel BGRA â€” use `cv2.IMREAD_UNCHANGED`
 
-> **💡 Pro Tip:** OpenCV uses BGR (Blue-Green-Red) by default, not RGB. Use `cv2.cvtColor(img, cv2.COLOR_BGR2RGB)` before displaying with matplotlib, or your colors will look inverted.
+> **ðŸ’¡ Pro Tip:** OpenCV uses BGR (Blue-Green-Red) by default, not RGB. Use `cv2.cvtColor(img, cv2.COLOR_BGR2RGB)` before displaying with matplotlib, or your colors will look inverted.
 
-> **One-Sentence Takeaway:** Every image is a NumPy array — shape tells you dimensions, dtype tells you precision, and indexing gives you pixel-level access.
+> **One-Sentence Takeaway:** Every image is a NumPy array â€” shape tells you dimensions, dtype tells you precision, and indexing gives you pixel-level access.
 
 ---
 
@@ -271,18 +271,18 @@ Where H = height, W = width, C = channels (1 for grayscale, 3 for color).
 ### Real-World Analogy
 
 
-Describing color is like describing location: you can use street addresses (RGB — how much Red, Green, Blue), coordinates on a map (HSV — Hue, Saturation, Value), or just "downtown" (grayscale — single intensity). Different navigation systems work better for different tasks. HSV, for instance, is like saying "find all red cars" — you just need the hue range, regardless of how bright or faded the color is.
+Describing color is like describing location: you can use street addresses (RGB â€” how much Red, Green, Blue), coordinates on a map (HSV â€” Hue, Saturation, Value), or just "downtown" (grayscale â€” single intensity). Different navigation systems work better for different tasks. HSV, for instance, is like saying "find all red cars" â€” you just need the hue range, regardless of how bright or faded the color is.
 
 ### Color Space Types in OpenCV
 
 
 | Color Space | Channels | OpenCV Code | Best For |
 |-------------|----------|-------------|----------|
-| BGR | B, G, R (0–255 each) | Default read format | Native OpenCV operations |
-| RGB | R, G, B (0–255 each) | `COLOR_BGR2RGB` | Matplotlib display, web output |
-| Grayscale | Single (0–255) | `COLOR_BGR2GRAY` | Edge detection, feature matching |
-| HSV | H (0–179), S (0–255), V (0–255) | `COLOR_BGR2HSV` | Color-based segmentation |
-| LAB | L (0–255), a, b | `COLOR_BGR2Lab` | Perceptually uniform operations |
+| BGR | B, G, R (0â€“255 each) | Default read format | Native OpenCV operations |
+| RGB | R, G, B (0â€“255 each) | `COLOR_BGR2RGB` | Matplotlib display, web output |
+| Grayscale | Single (0â€“255) | `COLOR_BGR2GRAY` | Edge detection, feature matching |
+| HSV | H (0â€“179), S (0â€“255), V (0â€“255) | `COLOR_BGR2HSV` | Color-based segmentation |
+| LAB | L (0â€“255), a, b | `COLOR_BGR2Lab` | Perceptually uniform operations |
 | YCrCb | Y, Cr, Cb | `COLOR_BGR2YCrCb` | Face detection, JPEG compression |
 
 ### Algorithm Steps (HSV Segmentation)
@@ -290,7 +290,7 @@ Describing color is like describing location: you can use street addresses (RGB 
 
 1. **Convert** image from BGR to HSV using `cv2.cvtColor`
 2. **Define** lower and upper bounds for the target color in HSV space
-3. **Create mask** using `cv2.inRange()` — binary image where white = in range
+3. **Create mask** using `cv2.inRange()` â€” binary image where white = in range
 4. **Apply mask** with `cv2.bitwise_and()` to extract the colored region
 5. **(Optional)** Clean mask with morphological operations (erode/dilate)
 
@@ -299,15 +299,15 @@ Describing color is like describing location: you can use street addresses (RGB 
 
 ```
 FUNCTION segment_color(img, lower_hsv, upper_hsv):
-    hsv ← CONVERT img BGR→HSV
-    mask ← inRange(hsv, lower_hsv, upper_hsv)   // binary mask
-    result ← bitwise_and(img, img, mask=mask)    // extract region
+    hsv â† CONVERT img BGRâ†’HSV
+    mask â† inRange(hsv, lower_hsv, upper_hsv)   // binary mask
+    result â† bitwise_and(img, img, mask=mask)    // extract region
     RETURN result, mask
 
 // Example: detect blue objects
-lower = [100, 50, 50]    // H=100–130, S≥50, V≥50
+lower = [100, 50, 50]    // H=100â€“130, Sâ‰¥50, Vâ‰¥50
 upper = [130, 255, 255]
-result, mask ← segment_color(img, lower, upper)
+result, mask â† segment_color(img, lower, upper)
 ```
 
 ### Step-by-Step Dry Run
@@ -317,16 +317,16 @@ Consider a single pixel from a blue object:
 
 **Pixel in BGR:** `[200, 50, 30]` (Blue=200, Green=50, Red=30)
 
-**Step 1: Convert BGR → HSV**
+**Step 1: Convert BGR â†’ HSV**
 
 | Channel | Calculation (OpenCV formula) | Result |
 |---------|------------------------------|--------|
-| B' = B/255 = 200/255 | 0.784 | — |
-| G' = G/255 = 50/255 | 0.196 | — |
-| R' = R/255 = 30/255 | 0.118 | — |
-| V = max(B',G',R') | max(0.784, 0.196, 0.118) | **200** (scaled to 0–255) |
-| S = 255 × (V - min) / V | 255 × (0.784 - 0.118) / 0.784 | **217** |
-| H computation: | B' is max → H = 60 × (0 + (G'-R')/(V-min)) / 2 | **106** |
+| B' = B/255 = 200/255 | 0.784 | â€” |
+| G' = G/255 = 50/255 | 0.196 | â€” |
+| R' = R/255 = 30/255 | 0.118 | â€” |
+| V = max(B',G',R') | max(0.784, 0.196, 0.118) | **200** (scaled to 0â€“255) |
+| S = 255 Ã— (V - min) / V | 255 Ã— (0.784 - 0.118) / 0.784 | **217** |
+| H computation: | B' is max â†’ H = 60 Ã— (0 + (G'-R')/(V-min)) / 2 | **106** |
 
 **Result: HSV = [106, 217, 200]**
 
@@ -335,11 +335,11 @@ Consider a single pixel from a blue object:
 lower = [100, 50, 50]
 upper = [130, 255, 255]
 
-H=106 ∈ [100,130] ✓
-S=217 ∈ [50,255]  ✓
-V=200 ∈ [50,255]  ✓
+H=106 âˆˆ [100,130] âœ“
+S=217 âˆˆ [50,255]  âœ“
+V=200 âˆˆ [50,255]  âœ“
 
-→ Mask value = 255 (white — pixel is in range)
+â†’ Mask value = 255 (white â€” pixel is in range)
 ```
 
 ### C++ Implementation
@@ -404,34 +404,34 @@ cv2.imwrite("output/blue_objects.png", result)
 
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
-| Color conversion | O(H × W × C) | O(1) extra | Each pixel undergoes a matrix multiplication (3×3) |
-| inRange | O(H × W) | O(H × W) | Binary mask same size as image |
-| bitwise_and | O(H × W × C) | O(1) extra | Element-wise AND with mask |
+| Color conversion | O(H Ã— W Ã— C) | O(1) extra | Each pixel undergoes a matrix multiplication (3Ã—3) |
+| inRange | O(H Ã— W) | O(H Ã— W) | Binary mask same size as image |
+| bitwise_and | O(H Ã— W Ã— C) | O(1) extra | Element-wise AND with mask |
 
-**Constant factors:** Color conversion involves floating-point math per pixel (~50–100 CPU cycles). For a 1080p image (2M pixels), expect ~2–5 ms on modern hardware.
+**Constant factors:** Color conversion involves floating-point math per pixel (~50â€“100 CPU cycles). For a 1080p image (2M pixels), expect ~2â€“5 ms on modern hardware.
 
 ### Advantages & Disadvantages
 
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| HSV separates color from brightness — robust to lighting changes | HSV ranges in OpenCV differ from standard (H=0–179 not 360) |
+| HSV separates color from brightness â€” robust to lighting changes | HSV ranges in OpenCV differ from standard (H=0â€“179 not 360) |
 | Color-based segmentation requires no ML training | Works poorly if object color is similar to background |
-| Fast and deterministic — same result every time | Not suitable for complex shapes or occluded objects |
-| LAB space is perceptually uniform (Euclidean distance ≈ color difference) | Three-channel processing increases memory usage |
+| Fast and deterministic â€” same result every time | Not suitable for complex shapes or occluded objects |
+| LAB space is perceptually uniform (Euclidean distance â‰ˆ color difference) | Three-channel processing increases memory usage |
 
 ### Edge Cases
 
 
-- **Low saturation:** Very desaturated colors (near-gray) have unstable H values — increase S threshold
-- **Low brightness:** Very dark pixels (V &lt; 30) have noisy H — preprocess with histogram equalization
-- **Similar colors:** Overlapping HSV ranges (e.g., green and cyan) — use multiple ranges or LAB space
-- **Non-uniform lighting:** Shadows cause same object to span broad V range — normalize with CLAHE
-- **White balance shift:** Tungsten vs. daylight changes hue — calibrate bounds per environment
+- **Low saturation:** Very desaturated colors (near-gray) have unstable H values â€” increase S threshold
+- **Low brightness:** Very dark pixels (V &lt; 30) have noisy H â€” preprocess with histogram equalization
+- **Similar colors:** Overlapping HSV ranges (e.g., green and cyan) â€” use multiple ranges or LAB space
+- **Non-uniform lighting:** Shadows cause same object to span broad V range â€” normalize with CLAHE
+- **White balance shift:** Tungsten vs. daylight changes hue â€” calibrate bounds per environment
 
-> **⚠️ Warning:** HSV ranges in OpenCV differ from common expectations: H is 0-179 (not 360), S is 0-255, V is 0-255. Use `cv2.cvtColor` on a known color to calibrate your bounds.
+> **âš ï¸ Warning:** HSV ranges in OpenCV differ from common expectations: H is 0-179 (not 360), S is 0-255, V is 0-255. Use `cv2.cvtColor` on a known color to calibrate your bounds.
 
-> **One-Sentence Takeaway:** HSV color space makes color-based segmentation intuitive — define lower/upper bounds and use `inRange` to create a binary mask.
+> **One-Sentence Takeaway:** HSV color space makes color-based segmentation intuitive â€” define lower/upper bounds and use `inRange` to create a binary mask.
 
 ---
 
@@ -477,9 +477,9 @@ warped = cv2.warpPerspective(img, matrix, (300, 300))
 cv2.imwrite("output/warped.png", warped)
 ```
 
-> **💡 Pro Tip:** Use perspective transforms for document scanning: find the four corners of the document with contour detection, then warp to a rectangle for a clean scan effect.
+> **ðŸ’¡ Pro Tip:** Use perspective transforms for document scanning: find the four corners of the document with contour detection, then warp to a rectangle for a clean scan effect.
 
-> **One-Sentence Takeaway:** Geometric transformations — resize, rotate, crop, and perspective warp — are the foundation of image preprocessing pipelines.
+> **One-Sentence Takeaway:** Geometric transformations â€” resize, rotate, crop, and perspective warp â€” are the foundation of image preprocessing pipelines.
 
 ---
 
@@ -488,7 +488,7 @@ cv2.imwrite("output/warped.png", warped)
 ### Real-World Analogy
 
 
-Imagine you are drawing with a charcoal pencil on textured paper. If you rub your thumb across the drawing, the sharp lines blur and blend together — that is a blurring filter. Now imagine tracing just the outlines of the drawing with a fine pen — that is edge detection. Filters are mathematical operations that transform each pixel based on its neighbors.
+Imagine you are drawing with a charcoal pencil on textured paper. If you rub your thumb across the drawing, the sharp lines blur and blend together â€” that is a blurring filter. Now imagine tracing just the outlines of the drawing with a fine pen â€” that is edge detection. Filters are mathematical operations that transform each pixel based on its neighbors.
 
 ### 3.4.1 Blurring (Smoothing)
 
@@ -496,7 +496,7 @@ Imagine you are drawing with a charcoal pencil on textured paper. If you rub you
 ### Algorithm Steps
 
 
-1. **Define kernel** — a small matrix (e.g., 5×5) of weights
+1. **Define kernel** â€” a small matrix (e.g., 5Ã—5) of weights
 2. **Slide kernel** across every pixel (convolution)
 3. **Compute weighted sum** of pixel neighborhood
 4. **Store result** at center position
@@ -506,34 +506,34 @@ Imagine you are drawing with a charcoal pencil on textured paper. If you rub you
 
 ```
 FUNCTION gaussian_blur(img, kernel_size, sigma):
-    kernel ← CREATE gaussian kernel of size kernel_size×kernel_size
-    result ← empty image same size as img
+    kernel â† CREATE gaussian kernel of size kernel_sizeÃ—kernel_size
+    result â† empty image same size as img
 
     FOR each pixel (r, c) in img:
-        neighborhood ← EXTRACT kernel_size×kernel_size around (r, c)
-        sum ← 0
+        neighborhood â† EXTRACT kernel_sizeÃ—kernel_size around (r, c)
+        sum â† 0
         FOR each (kr, kc):
-            sum += neighborhood[kr][kc] × kernel[kr][kc]
-        result[r][c] ← sum
+            sum += neighborhood[kr][kc] Ã— kernel[kr][kc]
+        result[r][c] â† sum
 
     RETURN result
 ```
 
-### Step-by-Step Dry Run (3×3 Box Filter)
+### Step-by-Step Dry Run (3Ã—3 Box Filter)
 
 
-Original 5×5 grayscale region (center pixel at row=2, col=2):
+Original 5Ã—5 grayscale region (center pixel at row=2, col=2):
 
 ```
      col0 col1 col2 col3 col4
 row0:  10   12   15   18   20
 row1:  11   13   16   19   21
-row2:  12   14  [17]  20   22    ← center pixel = 17
+row2:  12   14  [17]  20   22    â† center pixel = 17
 row3:  13   15   18   21   23
 row4:  14   16   19   22   24
 ```
 
-**Step 1: Extract 3×3 neighborhood around center (2,2)**
+**Step 1: Extract 3Ã—3 neighborhood around center (2,2)**
 
 ```
 11  13  16
@@ -544,7 +544,7 @@ row4:  14   16   19   22   24
 **Step 2: Apply box filter kernel (all weights = 1/9)**
 
 ```
-Kernel = 1/9 × |1  1  1|
+Kernel = 1/9 Ã— |1  1  1|
                |1  1  1|
                |1  1  1|
 ```
@@ -564,16 +564,16 @@ Kernel = 1/9 × |1  1  1|
 | 18 | 1/9 | 2.00 |
 | **Sum** | | **14.33** |
 
-**Step 4: Result** — Center pixel changes from 17 → **14** (rounded to 14)
+**Step 4: Result** â€” Center pixel changes from 17 â†’ **14** (rounded to 14)
 
 The blurred image becomes:
 
 ```
      col0 col1 col2 col3 col4
 row0:  10   12   15   18   20
-row1:  11   13   14   17   21    ← 16 → 14
-row2:  12   14   14   18   22    ← 17 → 14
-row3:  13   14   16   19   23    ← 15 → 14, 18 → 16
+row1:  11   13   14   17   21    â† 16 â†’ 14
+row2:  12   14   14   18   22    â† 17 â†’ 14
+row3:  13   14   16   19   23    â† 15 â†’ 14, 18 â†’ 16
 row4:  14   16   19   22   24
 ```
 
@@ -628,11 +628,11 @@ bilateral = cv2.bilateralFilter(img, 9, 75, 75)
 
 | Filter | Time Complexity | Space | Why |
 |--------|----------------|-------|-----|
-| Gaussian Blur | O(H × W × K²) | O(H × W) | K×K kernel convolution; separable (O(H×W×K) in practice) |
-| Median Blur | O(H × W × K² log K) | O(H × W) | Requires sorting K² values per pixel |
-| Bilateral Filter | O(H × W × K²) | O(H × W) | Range kernel adds intensity-domain computation |
+| Gaussian Blur | O(H Ã— W Ã— KÂ²) | O(H Ã— W) | KÃ—K kernel convolution; separable (O(HÃ—WÃ—K) in practice) |
+| Median Blur | O(H Ã— W Ã— KÂ² log K) | O(H Ã— W) | Requires sorting KÂ² values per pixel |
+| Bilateral Filter | O(H Ã— W Ã— KÂ²) | O(H Ã— W) | Range kernel adds intensity-domain computation |
 
-For a 5×5 kernel on 1080p image: Gaussian ~3ms, Median ~15ms, Bilateral ~200ms (CPU).
+For a 5Ã—5 kernel on 1080p image: Gaussian ~3ms, Median ~15ms, Bilateral ~200ms (CPU).
 
 ### Advantages & Disadvantages
 
@@ -641,15 +641,15 @@ For a 5×5 kernel on 1080p image: Gaussian ~3ms, Median ~15ms, Bilateral ~200ms 
 |--------|------------|---------------|
 | Gaussian | Fast, separable, smooth rolloff | Blurs edges along with noise |
 | Median | Excellent salt-and-pepper removal | Slow for large kernels |
-| Bilateral | Preserves edges while smoothing | Very slow (10–100× slower than Gaussian) |
+| Bilateral | Preserves edges while smoothing | Very slow (10â€“100Ã— slower than Gaussian) |
 
 ### Edge Cases
 
 
 - **Salt-and-pepper noise:** Median filter is the best choice (impulse noise removal)
 - **Gaussian noise:** Gaussian blur is optimal (matches noise distribution)
-- **Large kernels:** Kernel size above 31×31 becomes very slow — use downsampling first
-- **Color images:** Apply filter per channel — or convert to LAB and filter L only
+- **Large kernels:** Kernel size above 31Ã—31 becomes very slow â€” use downsampling first
+- **Color images:** Apply filter per channel â€” or convert to LAB and filter L only
 - **Border handling:** Default = replicate edge pixels; can cause artifacts at image boundaries
 
 ### 3.4.2 Thresholding
@@ -675,16 +675,16 @@ cv2.imwrite("output/adaptive_thresh.png", adaptive)
 ### Real-World Analogy
 
 
-Imagine tracing the outline of a leaf with a pencil — you capture only the boundary where the leaf meets the background, ignoring the internal texture. Canny edge detection does exactly this: it finds pixels where image brightness changes sharply, producing thin, clean outlines.
+Imagine tracing the outline of a leaf with a pencil â€” you capture only the boundary where the leaf meets the background, ignoring the internal texture. Canny edge detection does exactly this: it finds pixels where image brightness changes sharply, producing thin, clean outlines.
 
 ### Algorithm Steps
 
 
 1. **Smooth** with Gaussian filter to reduce noise
 2. **Compute gradient** magnitude and direction using Sobel operators
-3. **Non-maximum suppression** — thin edges to 1-pixel wide
-4. **Double threshold** — classify as strong, weak, or non-edge
-5. **Hysteresis** — keep weak edges only if connected to strong edges
+3. **Non-maximum suppression** â€” thin edges to 1-pixel wide
+4. **Double threshold** â€” classify as strong, weak, or non-edge
+5. **Hysteresis** â€” keep weak edges only if connected to strong edges
 
 ### Pseudocode
 
@@ -692,22 +692,22 @@ Imagine tracing the outline of a leaf with a pencil — you capture only the bou
 ```
 FUNCTION canny_edge(img, low_thresh, high_thresh):
     // Step 1: Smooth
-    smoothed ← gaussian_blur(img, 5×5)
+    smoothed â† gaussian_blur(img, 5Ã—5)
 
     // Step 2: Compute gradients
-    Gx ← sobel_x(smoothed)
-    Gy ← sobel_y(smoothed)
-    magnitude ← sqrt(Gx² + Gy²)
-    direction ← atan2(Gy, Gx)
+    Gx â† sobel_x(smoothed)
+    Gy â† sobel_y(smoothed)
+    magnitude â† sqrt(GxÂ² + GyÂ²)
+    direction â† atan2(Gy, Gx)
 
     // Step 3: Non-max suppression
     FOR each pixel:
         IF magnitude[pixel] < magnitude[neighbors along direction]:
-            magnitude[pixel] ← 0
+            magnitude[pixel] â† 0
 
     // Step 4: Double threshold
-    strong ← magnitude > high_thresh
-    weak ← low_thresh < magnitude < high_thresh
+    strong â† magnitude > high_thresh
+    weak â† low_thresh < magnitude < high_thresh
 
     // Step 5: Hysteresis
     FOR each weak pixel:
@@ -722,7 +722,7 @@ FUNCTION canny_edge(img, low_thresh, high_thresh):
 ### Step-by-Step Dry Run
 
 
-Consider a 1D horizontal edge in a 5×5 patch (transition from dark to bright):
+Consider a 1D horizontal edge in a 5Ã—5 patch (transition from dark to bright):
 
 **Input (grayscale values):**
 
@@ -734,26 +734,26 @@ Consider a 1D horizontal edge in a 5×5 patch (transition from dark to bright):
 10  10  10  200  200
 ```
 
-**Step 1: Gaussian blur (3×3)** — slight smoothing, values mostly unchanged
+**Step 1: Gaussian blur (3Ã—3)** â€” slight smoothing, values mostly unchanged
 
-**Step 2: Gradient (Sobel X)** — horizontal differences:
+**Step 2: Gradient (Sobel X)** â€” horizontal differences:
 
 ```
 col0 col1 col2 col3 col4
-  0    0  190    0    0    ← Sharp transition at column 2→3
+  0    0  190    0    0    â† Sharp transition at column 2â†’3
   0    0  190    0    0
   0    0  190    0    0
   0    0  190    0    0
   0    0  190    0    0
 ```
 
-Magnitude at edge pixels (col2→col3 boundary) = **190** (strong edge).
+Magnitude at edge pixels (col2â†’col3 boundary) = **190** (strong edge).
 
-**Step 3: Non-max suppression** — Edge direction ≈ 0° (horizontal), check vertical neighbors — no larger neighbor → edge kept.
+**Step 3: Non-max suppression** â€” Edge direction â‰ˆ 0Â° (horizontal), check vertical neighbors â€” no larger neighbor â†’ edge kept.
 
-**Step 4: Double threshold with low=50, high=150** — 190 > 150 → **strong edge**
+**Step 4: Double threshold with low=50, high=150** â€” 190 > 150 â†’ **strong edge**
 
-**Step 5: Hysteresis** — All strong edges along the column 2→3 boundary are kept.
+**Step 5: Hysteresis** â€” All strong edges along the column 2â†’3 boundary are kept.
 
 **Output (binary edge map):**
 
@@ -803,33 +803,33 @@ cv2.imwrite("output/edges.png", edges)
 
 | Stage | Time | Why |
 |-------|------|-----|
-| Gaussian smoothing | O(H × W × K²) | Convolution with K×K kernel |
-| Gradient computation | O(H × W) | Two Sobel filters |
-| Non-max suppression | O(H × W) | Per-pixel neighbor check |
-| Hysteresis | O(H × W) | Connected component traversal |
+| Gaussian smoothing | O(H Ã— W Ã— KÂ²) | Convolution with KÃ—K kernel |
+| Gradient computation | O(H Ã— W) | Two Sobel filters |
+| Non-max suppression | O(H Ã— W) | Per-pixel neighbor check |
+| Hysteresis | O(H Ã— W) | Connected component traversal |
 
-**Overall: O(H × W)** — Canny is linear in pixel count, making it suitable for real-time video.
+**Overall: O(H Ã— W)** â€” Canny is linear in pixel count, making it suitable for real-time video.
 
 ### Advantages & Disadvantages
 
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Produces thin, clean 1-pixel edges | Threshold-sensitive — needs tuning per dataset |
+| Produces thin, clean 1-pixel edges | Threshold-sensitive â€” needs tuning per dataset |
 | Good localization (edge at correct position) | Sensitive to noise if sigma is too small |
 | Closed-edge contours (hysteresis connects gaps) | Not rotation-invariant (Sobel is directional) |
-| Well-understood, widely benchmarked | Single-scale — misses fine + coarse edges simultaneously |
+| Well-understood, widely benchmarked | Single-scale â€” misses fine + coarse edges simultaneously |
 
 ### Edge Cases
 
 
-- **Noisy images:** Increase Gaussian sigma (e.g., 3–5) to suppress noise before Canny
+- **Noisy images:** Increase Gaussian sigma (e.g., 3â€“5) to suppress noise before Canny
 - **Low contrast:** Decrease thresholds (e.g., 30, 90) or use histogram equalization first
 - **High contrast:** Increase thresholds (e.g., 150, 300) to avoid false edges from texture
-- **Textured surfaces:** Texture grain produces many spurious edges — use larger sigma or bilateral filter pre-processing
-- **Occluded edges:** Objects with partial occlusion may produce broken contours — use morphological dilation to connect gaps
+- **Textured surfaces:** Texture grain produces many spurious edges â€” use larger sigma or bilateral filter pre-processing
+- **Occluded edges:** Objects with partial occlusion may produce broken contours â€” use morphological dilation to connect gaps
 
-> **⚠️ Warning:** Canny thresholds are dataset-dependent. The default `100, 200` works for well-lit scenes, but you will need to tune these values for low-light or high-contrast images. Use trackbars to find optimal values interactively.
+> **âš ï¸ Warning:** Canny thresholds are dataset-dependent. The default `100, 200` works for well-lit scenes, but you will need to tune these values for low-light or high-contrast images. Use trackbars to find optimal values interactively.
 
 > **One-Sentence Takeaway:** Image filtering reduces noise (Gaussian, median) and highlights structure (Canny edges, adaptive thresholding) for downstream analysis.
 
@@ -840,7 +840,7 @@ cv2.imwrite("output/edges.png", edges)
 ### Real-World Analogy
 
 
-Imagine you and a friend each have a photo of the same landmark taken from different angles. To prove they are the same place, you find distinctive landmarks — the clock tower, the fountain, the large oak tree — and match them between the photos. SIFT keypoints are those distinctive landmarks in image space: corners, blobs, and texture-rich patches that are easy to recognize from any angle or scale.
+Imagine you and a friend each have a photo of the same landmark taken from different angles. To prove they are the same place, you find distinctive landmarks â€” the clock tower, the fountain, the large oak tree â€” and match them between the photos. SIFT keypoints are those distinctive landmarks in image space: corners, blobs, and texture-rich patches that are easy to recognize from any angle or scale.
 
 ### 3.5.1 Harris Corner Detection
 
@@ -861,10 +861,10 @@ cv2.imwrite("output/corners.png", img_corners)
 ### Algorithm Steps
 
 
-1. **Scale-space extrema detection** — find keypoint candidates across scales (Difference of Gaussians)
-2. **Keypoint localization** — refine positions, reject low-contrast and edge points
-3. **Orientation assignment** — assign dominant orientation for rotation invariance
-4. **Descriptor computation** — build 128-dimensional vector from gradient histograms in 16×16 neighborhood
+1. **Scale-space extrema detection** â€” find keypoint candidates across scales (Difference of Gaussians)
+2. **Keypoint localization** â€” refine positions, reject low-contrast and edge points
+3. **Orientation assignment** â€” assign dominant orientation for rotation invariance
+4. **Descriptor computation** â€” build 128-dimensional vector from gradient histograms in 16Ã—16 neighborhood
 
 ### Pseudocode
 
@@ -872,18 +872,18 @@ cv2.imwrite("output/corners.png", img_corners)
 ```
 FUNCTION detect_and_match_sift(img1, img2):
     // Detect keypoints and compute descriptors
-    sift ← SIFT_CREATE()
-    kp1, des1 ← sift.detectAndCompute(img1)
-    kp2, des2 ← sift.detectAndCompute(img2)
+    sift â† SIFT_CREATE()
+    kp1, des1 â† sift.detectAndCompute(img1)
+    kp2, des2 â† sift.detectAndCompute(img2)
 
     // Match using FLANN (Fast Library for Approximate Nearest Neighbors)
-    matcher ← FLANN(index=KDTREE, trees=5)
-    matches ← matcher.knnMatch(des1, des2, k=2)
+    matcher â† FLANN(index=KDTREE, trees=5)
+    matches â† matcher.knnMatch(des1, des2, k=2)
 
     // Filter with Lowe's ratio test
-    good ← []
+    good â† []
     FOR each (m, n) in matches:
-        IF m.distance < 0.7 × n.distance:
+        IF m.distance < 0.7 Ã— n.distance:
             good.APPEND(m)
 
     RETURN kp1, kp2, good
@@ -892,16 +892,16 @@ FUNCTION detect_and_match_sift(img1, img2):
 ### Step-by-Step Dry Run
 
 
-**Keypoint detection on a 16×16 image patch:**
+**Keypoint detection on a 16Ã—16 image patch:**
 
 | Step | Operation | Result |
 |------|-----------|--------|
-| 1 | Build Difference-of-Gaussians pyramid | 4 octaves × 5 scales each |
-| 2 | Find extrema in 3×3×3 neighborhood | 127 candidate keypoints |
+| 1 | Build Difference-of-Gaussians pyramid | 4 octaves Ã— 5 scales each |
+| 2 | Find extrema in 3Ã—3Ã—3 neighborhood | 127 candidate keypoints |
 | 3 | Reject low-contrast (< 0.03 threshold) | 42 survive |
 | 4 | Reject edge responses (Hessian ratio > 10) | 31 survive |
 | 5 | Assign orientation (36-bin histogram) | Each keypoint gets angle(s) |
-| 6 | Compute 128-dim descriptor | 31 × 128 float matrix |
+| 6 | Compute 128-dim descriptor | 31 Ã— 128 float matrix |
 
 **Descriptor matching between two views:**
 
@@ -911,20 +911,20 @@ Image 2 keypoints: K2 = 28, each with 128-dim descriptor
 
 FLANN matching: For each descriptor in K1, find 2-NN in K2:
 
-Keypoint A (img1):  [0.12, 0.45, 0.03, ..., 0.78]  ← 128 floats
-  → Nearest in img2:   Keypoint X,  distance = 0.23
-  → Second nearest:    Keypoint Y,  distance = 0.45
+Keypoint A (img1):  [0.12, 0.45, 0.03, ..., 0.78]  â† 128 floats
+  â†’ Nearest in img2:   Keypoint X,  distance = 0.23
+  â†’ Second nearest:    Keypoint Y,  distance = 0.45
 
-Lowe's ratio:  0.23 / 0.45 = 0.51  <  0.7  →  GOOD MATCH ✓
+Lowe's ratio:  0.23 / 0.45 = 0.51  <  0.7  â†’  GOOD MATCH âœ“
 
 Keypoint B (img1):  [0.90, 0.12, 0.55, ..., 0.03]
-  → Nearest:          Keypoint Z,  distance = 0.41
-  → Second nearest:   Keypoint W,  distance = 0.44
+  â†’ Nearest:          Keypoint Z,  distance = 0.41
+  â†’ Second nearest:   Keypoint W,  distance = 0.44
 
-Lowe's ratio:  0.41 / 0.44 = 0.93  >  0.7  →  REJECTED (ambiguous)
+Lowe's ratio:  0.41 / 0.44 = 0.93  >  0.7  â†’  REJECTED (ambiguous)
 ```
 
-**Final result:** 18 good matches out of 31 → sufficient for homography estimation.
+**Final result:** 18 good matches out of 31 â†’ sufficient for homography estimation.
 
 ### C++ Implementation
 
@@ -1015,10 +1015,10 @@ cv2.imwrite("output/matches.png", matched_img)
 
 | Stage | Time Complexity | Why |
 |-------|----------------|-----|
-| Scale-space pyramid | O(H × W × log(min(H,W))) | Multiple octaves, each half resolution |
-| Keypoint detection | O(H × W) | Per-pixel DoG extrema check |
-| Descriptor computation | O(K × 16²) | K = keypoints; 16×16 window per keypoint |
-| FLANN matching | O(K1 × log K2) average with kd-tree | Approximate nearest neighbor search |
+| Scale-space pyramid | O(H Ã— W Ã— log(min(H,W))) | Multiple octaves, each half resolution |
+| Keypoint detection | O(H Ã— W) | Per-pixel DoG extrema check |
+| Descriptor computation | O(K Ã— 16Â²) | K = keypoints; 16Ã—16 window per keypoint |
+| FLANN matching | O(K1 Ã— log K2) average with kd-tree | Approximate nearest neighbor search |
 
 **SIFT is patented (expired 2020):** Now free to use commercially. Alternatives: ORB (free, faster), AKAZE (free, comparable).
 
@@ -1027,21 +1027,21 @@ cv2.imwrite("output/matches.png", matched_img)
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Scale-invariant — matches objects at different sizes | Slower than ORB/BRIEF (~10×) |
-| Rotation-invariant — handles any orientation | 128-dim descriptors consume memory |
-| Robust to illumination changes | Not robust to extreme viewpoint change (> 50°) |
-| Distinctive descriptors — low false-positive rate | Texture-less regions yield few keypoints |
+| Scale-invariant â€” matches objects at different sizes | Slower than ORB/BRIEF (~10Ã—) |
+| Rotation-invariant â€” handles any orientation | 128-dim descriptors consume memory |
+| Robust to illumination changes | Not robust to extreme viewpoint change (> 50Â°) |
+| Distinctive descriptors â€” low false-positive rate | Texture-less regions yield few keypoints |
 
 ### Edge Cases
 
 
-- **Low-texture images:** Blank walls, sky, smooth surfaces → few or no keypoints detected — use template matching instead
-- **Repetitive patterns:** Brick walls, grids → high false match rate — tighten Lowe's ratio to 0.6
-- **Extreme blur:** Motion or defocus blur reduces keypoints — sharpen with unsharp mask first
-- **Occlusion:** Partial object hiding → fewer matches — RANSAC (via `cv2.findHomography`) handles outliers
-- **Large scale change:** > 4× scale difference — SIFT may fail; build image pyramid manually
+- **Low-texture images:** Blank walls, sky, smooth surfaces â†’ few or no keypoints detected â€” use template matching instead
+- **Repetitive patterns:** Brick walls, grids â†’ high false match rate â€” tighten Lowe's ratio to 0.6
+- **Extreme blur:** Motion or defocus blur reduces keypoints â€” sharpen with unsharp mask first
+- **Occlusion:** Partial object hiding â†’ fewer matches â€” RANSAC (via `cv2.findHomography`) handles outliers
+- **Large scale change:** > 4Ã— scale difference â€” SIFT may fail; build image pyramid manually
 
-> **💡 Pro Tip:** Lowe's ratio test (0.7-0.8) filters out ambiguous matches by keeping only those where the best match is significantly better than the second best. This is the single most effective technique for improving match quality.
+> **ðŸ’¡ Pro Tip:** Lowe's ratio test (0.7-0.8) filters out ambiguous matches by keeping only those where the best match is significantly better than the second best. This is the single most effective technique for improving match quality.
 
 > **One-Sentence Takeaway:** SIFT features are scale-invariant and rotation-invariant, making them ideal for matching objects across different viewpoints and scales.
 
@@ -1052,7 +1052,7 @@ cv2.imwrite("output/matches.png", matched_img)
 ### Real-World Analogy
 
 
-A security guard scanning a crowd looks for specific patterns: two eyes, a nose, a mouth arranged in a particular spatial configuration. Haar cascade face detection works the same way — it slides a window across the image and checks whether each region matches the learned "face pattern" using simple rectangular features computed in milliseconds.
+A security guard scanning a crowd looks for specific patterns: two eyes, a nose, a mouth arranged in a particular spatial configuration. Haar cascade face detection works the same way â€” it slides a window across the image and checks whether each region matches the learned "face pattern" using simple rectangular features computed in milliseconds.
 
 ### 3.6.1 Haar Cascade Face Detection
 
@@ -1064,7 +1064,7 @@ A security guard scanning a crowd looks for specific patterns: two eyes, a nose,
 2. **Load** pre-trained cascade XML classifier
 3. **Slide** a detection window across the image at multiple scales
 4. **Compute** Haar-like features (sum of dark vs. light rectangular regions)
-5. **Pass** through cascaded stages — early rejections discard non-faces quickly
+5. **Pass** through cascaded stages â€” early rejections discard non-faces quickly
 6. **Group** overlapping detections and return bounding boxes
 
 ### Pseudocode
@@ -1072,10 +1072,10 @@ A security guard scanning a crowd looks for specific patterns: two eyes, a nose,
 
 ```
 FUNCTION detect_faces(img):
-    gray ← CONVERT img to grayscale
-    cascade ← LOAD "haarcascade_frontalface_default.xml"
+    gray â† CONVERT img to grayscale
+    cascade â† LOAD "haarcascade_frontalface_default.xml"
 
-    faces ← cascade.detectMultiScale(
+    faces â† cascade.detectMultiScale(
         gray,
         scaleFactor=1.1,       // 10% scale increase per pass
         minNeighbors=5,        // minimum overlapping rectangles
@@ -1091,21 +1091,21 @@ FUNCTION detect_faces(img):
 ### Step-by-Step Dry Run
 
 
-**Setup:** Image = 640×480 grayscale, min face size = 30×30, scaleFactor = 1.1
+**Setup:** Image = 640Ã—480 grayscale, min face size = 30Ã—30, scaleFactor = 1.1
 
 | Stage | Window Size | Scale | Positions Scanned | Faces Found |
 |-------|-------------|-------|-------------------|-------------|
-| 1 | 30×30 | 1.0× | (640-30)×(480-30) = 268,175 | 3,412 pass stage 1 |
-| 2 | 33×33 | 1.1× | ~221,000 | 1,045 pass |
-| 3 | 36×36 | 1.21× | ~183,000 | 487 pass |
+| 1 | 30Ã—30 | 1.0Ã— | (640-30)Ã—(480-30) = 268,175 | 3,412 pass stage 1 |
+| 2 | 33Ã—33 | 1.1Ã— | ~221,000 | 1,045 pass |
+| 3 | 36Ã—36 | 1.21Ã— | ~183,000 | 487 pass |
 | ... | ... | ... | ... | ... |
-| 12 | 86×86 | 3.14× | ~30,000 | 23 pass all stages |
+| 12 | 86Ã—86 | 3.14Ã— | ~30,000 | 23 pass all stages |
 
 **Final merging (minNeighbors=5):**
-- 23 candidate detections → grouped by overlap
-- Group 1 (actual face): 18 overlapping rectangles → **kept**
-- Group 2 (false positive): 2 overlapping rectangles → **rejected**
-- Group 3 (false positive): 3 overlapping rectangles → **rejected**
+- 23 candidate detections â†’ grouped by overlap
+- Group 1 (actual face): 18 overlapping rectangles â†’ **kept**
+- Group 2 (false positive): 2 overlapping rectangles â†’ **rejected**
+- Group 3 (false positive): 3 overlapping rectangles â†’ **rejected**
 
 **Output:** 1 face detected at (x=210, y=150, w=180, h=180).
 
@@ -1206,10 +1206,10 @@ cv2.imwrite("output/faces_dnn.png", img_dnn)
 
 | Method | Time | Memory | Why |
 |--------|------|--------|-----|
-| Haar Cascade | O(H × W × S) | Low (XML model ~1 MB) | S = scale levels; simple feature computation |
-| DNN (SSD) | Variable (GPU: 10–30ms, CPU: 200–500ms) | High (model ~10 MB) | Full forward pass through deep network |
+| Haar Cascade | O(H Ã— W Ã— S) | Low (XML model ~1 MB) | S = scale levels; simple feature computation |
+| DNN (SSD) | Variable (GPU: 10â€“30ms, CPU: 200â€“500ms) | High (model ~10 MB) | Full forward pass through deep network |
 
-Haar processes ~300,000 window positions at 30+ FPS on CPU. DNN processes 1 blob at 3–50 FPS depending on hardware.
+Haar processes ~300,000 window positions at 30+ FPS on CPU. DNN processes 1 blob at 3â€“50 FPS depending on hardware.
 
 ### Advantages & Disadvantages
 
@@ -1225,14 +1225,14 @@ Haar processes ~300,000 window positions at 30+ FPS on CPU. DNN processes 1 blob
 ### Edge Cases
 
 
-- **Profile/side faces:** Haar cascade trained mainly on frontal faces — use DNN or multi-view cascades
-- **Faces with glasses/masks:** Reduces feature visibility — DNN handles better than Haar
-- **Extreme lighting:** Backlit or underexposed faces — preprocess with histogram equalization
-- **Small faces:** Faces &lt; 30×30 pixels will not be detected — resize input or decrease minSize
-- **Crowded scenes:** Overlapping faces merge into single detection — reduce minNeighbors
-- **False positives:** Textured regions (brick walls, foliage) trigger Haar — tighten minNeighbors to 8–10
+- **Profile/side faces:** Haar cascade trained mainly on frontal faces â€” use DNN or multi-view cascades
+- **Faces with glasses/masks:** Reduces feature visibility â€” DNN handles better than Haar
+- **Extreme lighting:** Backlit or underexposed faces â€” preprocess with histogram equalization
+- **Small faces:** Faces &lt; 30Ã—30 pixels will not be detected â€” resize input or decrease minSize
+- **Crowded scenes:** Overlapping faces merge into single detection â€” reduce minNeighbors
+- **False positives:** Textured regions (brick walls, foliage) trigger Haar â€” tighten minNeighbors to 8â€“10
 
-> **💡 Pro Tip:** Tune `scaleFactor` and `minNeighbors` for your use case. Lower `scaleFactor` (e.g., 1.05) detects more faces but is slower; higher `minNeighbors` (e.g., 7-8) reduces false positives.
+> **ðŸ’¡ Pro Tip:** Tune `scaleFactor` and `minNeighbors` for your use case. Lower `scaleFactor` (e.g., 1.05) detects more faces but is slower; higher `minNeighbors` (e.g., 7-8) reduces false positives.
 
 > **One-Sentence Takeaway:** Haar cascades offer fast, CPU-friendly face detection, while DNN-based methods (SSD, YOLO) provide higher accuracy at the cost of computational overhead.
 
@@ -1311,9 +1311,9 @@ cap.release()
 out.release()
 ```
 
-> **⚠️ Warning:** VideoCapture does not always return frames at a consistent rate. Always check `ret` before processing each frame, and consider a frame buffer to handle dropped frames in real-time applications.
+> **âš ï¸ Warning:** VideoCapture does not always return frames at a consistent rate. Always check `ret` before processing each frame, and consider a frame buffer to handle dropped frames in real-time applications.
 
-> **One-Sentence Takeaway:** Video processing treats streams as frame sequences — use VideoCapture for input, VideoWriter for output, and process every Nth frame to maintain real-time throughput.
+> **One-Sentence Takeaway:** Video processing treats streams as frame sequences â€” use VideoCapture for input, VideoWriter for output, and process every Nth frame to maintain real-time throughput.
 
 ---
 
@@ -1372,7 +1372,7 @@ async def apply_filter(file: UploadFile = File(...), filter_type: str = "edges")
 
 ![Face Detection Workflow](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/applied-ai/ch03-face-detection.png)
 
-> **💡 Pro Tip:** Use `cv2.imencode` to convert OpenCV images to bytes for HTTP responses — it avoids writing temporary files to disk and keeps your API stateless.
+> **ðŸ’¡ Pro Tip:** Use `cv2.imencode` to convert OpenCV images to bytes for HTTP responses â€” it avoids writing temporary files to disk and keeps your API stateless.
 
 > **One-Sentence Takeaway:** FastAPI + OpenCV makes a powerful combo for deploying vision APIs that accept image uploads and return processed results.
 
@@ -1417,7 +1417,7 @@ for i in indices:
 cv2.imwrite("output/yolo_detection.png", img)
 ```
 
-> **⚠️ Warning:** YOLO weights files are large (~250MB) and not distributed with OpenCV. Download them separately from the official repository and verify the file paths before running detection.
+> **âš ï¸ Warning:** YOLO weights files are large (~250MB) and not distributed with OpenCV. Download them separately from the official repository and verify the file paths before running detection.
 
 > **One-Sentence Takeaway:** OpenCV's DNN module runs YOLO models natively, enabling 80-class object detection with non-max suppression for clean results.
 
@@ -1432,19 +1432,19 @@ cv2.imwrite("output/yolo_detection.png", img)
 | **Array type** | NumPy (uint8) | PIL Image object | NumPy |
 | **Read/write formats** | 20+ (JPEG, PNG, TIFF, WebP) | 30+ (including GIF, ICO, BMP) | Limited (read via PIL) |
 | **Performance** | Fastest (SIMD, IPP, OpenCL) | Moderate | Moderate (good for algorithms) |
-| **Face detection** | Built-in (Haar, DNN, YOLO) | ❌ None | ❌ None |
-| **Feature detection** | SIFT, SURF, ORB, BRISK | ❌ None | ORB, BRIEF, MSER |
-| **Video I/O** | `cv2.VideoCapture` / `VideoWriter` | ❌ Not supported | ❌ Not supported |
-| **DNN inference** | Built-in (YOLO, SSD, Caffe, TF) | ❌ None | ❌ None |
-| **GUI** | `cv2.imshow` | `Image.show()` | ❌ None |
+| **Face detection** | Built-in (Haar, DNN, YOLO) | âŒ None | âŒ None |
+| **Feature detection** | SIFT, SURF, ORB, BRISK | âŒ None | ORB, BRIEF, MSER |
+| **Video I/O** | `cv2.VideoCapture` / `VideoWriter` | âŒ Not supported | âŒ Not supported |
+| **DNN inference** | Built-in (YOLO, SSD, Caffe, TF) | âŒ None | âŒ None |
+| **GUI** | `cv2.imshow` | `Image.show()` | âŒ None |
 | **Best for** | Production vision, real-time | Simple image ops, web formats | Research, algorithm prototyping |
 | **Install size** | ~500 MB (with contrib) | ~10 MB | ~50 MB |
 | **License** | Apache 2.0 | Historical (MIT-like) | BSD-3-Clause |
 
 **When to use what:**
-- **OpenCV** — production computer vision (face detection, video, feature matching, DNN)
-- **PIL/Pillow** — quick image format conversion, thumbnails, web image processing
-- **scikit-image** — research algorithms (SLIC segmentation, active contours, Radon transform)
+- **OpenCV** â€” production computer vision (face detection, video, feature matching, DNN)
+- **PIL/Pillow** â€” quick image format conversion, thumbnails, web image processing
+- **scikit-image** â€” research algorithms (SLIC segmentation, active contours, Radon transform)
 
 ---
 
@@ -1454,26 +1454,26 @@ Common image processing interview problems and discussion topics:
 
 ### Q1: Why does OpenCV use BGR instead of RGB?
 
-BGR was chosen when Intel developed the library because early camera hardware and video codecs (like Windows BMP, which OpenCV was designed to work with) natively used BGR byte order. It is a historical convention that persists for backward compatibility — switching now would break 25+ years of existing code.
+BGR was chosen when Intel developed the library because early camera hardware and video codecs (like Windows BMP, which OpenCV was designed to work with) natively used BGR byte order. It is a historical convention that persists for backward compatibility â€” switching now would break 25+ years of existing code.
 
 ### Q2: How does Canny edge detection differ from Sobel?
 
-Sobel computes a gradient magnitude at every pixel — producing thick edges proportional to the transition width. Canny applies Sobel, then non-maximum suppression to thin edges to 1-pixel width, and hysteresis thresholding to connect broken edges. **Canny = Sobel + thinning + hysteresis.**
+Sobel computes a gradient magnitude at every pixel â€” producing thick edges proportional to the transition width. Canny applies Sobel, then non-maximum suppression to thin edges to 1-pixel width, and hysteresis thresholding to connect broken edges. **Canny = Sobel + thinning + hysteresis.**
 
 ### Q3: Explain the trade-off between Haar cascades, HOG + SVM, and DNN-based face detection.
 
 
 | Method | Speed | Accuracy | Pose Handling | Model Size |
 |--------|-------|----------|---------------|------------|
-| **Haar Cascade** | ⚡ Very fast (30+ FPS CPU) | ~85% | Frontal only | ~1 MB |
-| **HOG + SVM** | Fast (10–30 FPS CPU) | ~90% | Frontal + slight profile | ~100 KB |
-| **DNN (SSD/YOLO)** | Slow CPU (3–10 FPS), fast GPU (30+ FPS) | ~95%+ | All angles + occlusion | ~10–250 MB |
+| **Haar Cascade** | âš¡ Very fast (30+ FPS CPU) | ~85% | Frontal only | ~1 MB |
+| **HOG + SVM** | Fast (10â€“30 FPS CPU) | ~90% | Frontal + slight profile | ~100 KB |
+| **DNN (SSD/YOLO)** | Slow CPU (3â€“10 FPS), fast GPU (30+ FPS) | ~95%+ | All angles + occlusion | ~10â€“250 MB |
 
 **Interview tip:** Start with HOG+SVM for mobile/embedded (small model, good accuracy), Haar for CPU real-time, DNN for server-side accuracy-critical applications.
 
 ### Q4: What is non-maximum suppression and why is it needed?
 
-Object detectors often produce multiple overlapping bounding boxes for the same object. NMS greedily selects the box with highest confidence, then suppresses all other boxes with IoU (Intersection over Union) above a threshold (typically 0.4–0.5). This ensures one detection per object.
+Object detectors often produce multiple overlapping bounding boxes for the same object. NMS greedily selects the box with highest confidence, then suppresses all other boxes with IoU (Intersection over Union) above a threshold (typically 0.4â€“0.5). This ensures one detection per object.
 
 ### Q5: How would you handle face detection in poor lighting?
 
@@ -1492,41 +1492,41 @@ IoU (Intersection over Union) = Area of Overlap / Area of Union of two bounding 
 
 ### Face Unlock (Smartphone Biometrics)
 
-- **Pipeline:** Camera capture → face detection → landmark alignment → feature embedding → similarity match
+- **Pipeline:** Camera capture â†’ face detection â†’ landmark alignment â†’ feature embedding â†’ similarity match
 - **OpenCV role:** Haar/DNN detection stage, eye alignment via affine transform
 - **Challenges:** Spoofing (photo/video attacks), varying lighting, accessories (masks, glasses)
 - **Production:** Apple Face ID uses structured light (not 2D); Android uses HOG + CNN hybrid
 
 ### Optical Character Recognition (OCR)
 
-- **Pipeline:** Image → preprocessing (grayscale, denoise, deskew) → text region detection → character recognition
+- **Pipeline:** Image â†’ preprocessing (grayscale, denoise, deskew) â†’ text region detection â†’ character recognition
 - **OpenCV role:** Adaptive thresholding, morphological ops, contour detection for text regions, perspective correction
 - **Production:** Tesseract (open-source OCR) uses OpenCV internally for preprocessing; Google Docs OCR uses custom CNN pipeline
 
 ### AR Filters (Snapchat, Instagram, TikTok)
 
-- **Pipeline:** Face detection → 68-point landmark detection → 3D mesh overlay → render virtual object
+- **Pipeline:** Face detection â†’ 68-point landmark detection â†’ 3D mesh overlay â†’ render virtual object
 - **OpenCV role:** Real-time face detection, landmark detection via LBF (Local Binary Features)
 - **Challenges:** Real-time 30+ FPS performance, occlusion handling, expression tracking
 - **Production:** Snapchat uses custom ML models; early filters were pure OpenCV + Dlib
 
 ### Medical Imaging (X-Ray, MRI, CT)
 
-- **Pipeline:** DICOM import → preprocessing → segmentation → measurement → diagnosis
+- **Pipeline:** DICOM import â†’ preprocessing â†’ segmentation â†’ measurement â†’ diagnosis
 - **OpenCV role:** CLAHE for X-ray enhancement, watershed for tumor segmentation, edge detection for bone measurement
 - **Challenges:** Regulatory compliance (FDA), 16-bit depth images (high precision), 3D volume data
 - **Production:** 3D Slicer and ITK for 3D; OpenCV for 2D slice preprocessing in research pipelines
 
 ### Autonomous Vehicles (Lane Detection, Object Detection)
 
-- **Pipeline:** Camera → perspective transform (bird's-eye view) → thresholding → lane line fitting → vehicle detection
+- **Pipeline:** Camera â†’ perspective transform (bird's-eye view) â†’ thresholding â†’ lane line fitting â†’ vehicle detection
 - **OpenCV role:** Canny + Hough transform for lane lines, YOLO via DNN for vehicle/pedestrian detection
 - **Challenges:** Real-time 30+ FPS, adverse weather, varying road conditions
 - **Production:** Waymo/Tesla use custom deep learning; OpenCV is used in ADAS prototyping and research
 
 ### Industrial Inspection (Defect Detection)
 
-- **Pipeline:** Camera capture → alignment → difference from reference → defect classification
+- **Pipeline:** Camera capture â†’ alignment â†’ difference from reference â†’ defect classification
 - **OpenCV role:** Template matching, image subtraction, blob analysis for defect sizing
 - **Challenges:** Precision requirements (sub-pixel alignment), varying lighting, high throughput
 - **Production:** Cognex, Keyence for high-speed; OpenCV for prototyping and small-scale systems
@@ -1575,7 +1575,7 @@ IoU (Intersection over Union) = Area of Overlap / Area of Union of two bounding 
 
 ## Summary
 
-- **Image as data:** OpenCV reads images as NumPy arrays — shape determines dimensions, dtype determines precision.
+- **Image as data:** OpenCV reads images as NumPy arrays â€” shape determines dimensions, dtype determines precision.
 - **Color spaces:** BGR is the native format; HSV for color segmentation, Grayscale for edge/feature detection.
 - **Geometric transforms:** Affine (rotation, scaling) and perspective (document warp) correct image geometry.
 - **Image filters:** Gaussian blur reduces Gaussian noise; median blur removes salt-and-pepper; Canny detects edges.

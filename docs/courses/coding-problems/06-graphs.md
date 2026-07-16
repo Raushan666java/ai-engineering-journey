@@ -1,4 +1,4 @@
-# Chapter 06: Graphs
+﻿# Chapter 06: Graphs
 
 > Graph problems are among the most challenging interview topics. They test your ability to model relationships, understand traversal strategies, and apply advanced algorithms like topological sort, Dijkstra, and Union-Find.
 
@@ -14,16 +14,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/coding-problems/06-graphs/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/coding-problems/06-graphs/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/coding-problems/06-graphs/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/coding-problems/06-graphs/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/coding-problems/06-graphs/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/coding-problems/06-graphs/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/coding-problems/06-graphs/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/coding-problems/06-graphs/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/coding-problems/06-graphs/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/coding-problems/06-graphs/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/coding-problems/06-graphs/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/coding-problems/06-graphs/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -56,8 +56,8 @@ flowchart TD
 mindmap
   root((Graph Patterns))
     Traversal
-      DFS → stack/recursion
-      BFS → queue (shortest path)
+      DFS â†’ stack/recursion
+      BFS â†’ queue (shortest path)
       Bidirectional BFS
     Shortest Path
       Dijkstra
@@ -100,9 +100,9 @@ xychart-beta
 
 ### Problem 1: Find if Path Exists in Graph
 
-🏷️ **Companies:** [Amazon] [Google] [Meta]
-📊 **Difficulty:** Easy
-📂 **Topics:** [Graph, DFS, BFS, Union-Find]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
+ðŸ“Š **Difficulty:** Easy
+ðŸ“‚ **Topics:** [Graph, DFS, BFS, Union-Find]
 
 **Problem:** There is a bi-directional graph with n vertices. Edges are given as a 2D array. Determine if there's a path from source to destination.
 
@@ -113,8 +113,8 @@ Output: true
 ```
 
 **Constraints:**
-- 1 ≤ n ≤ 2 × 10⁵
-- 0 ≤ edges.length ≤ 2 × 10⁵
+- 1 â‰¤ n â‰¤ 2 Ã— 10âµ
+- 0 â‰¤ edges.length â‰¤ 2 Ã— 10âµ
 
 **Solution Approach:**
 - BFS/DFS from source. Or use Union-Find for efficiency.
@@ -160,9 +160,9 @@ console.log(validPath(6, [[0,1],[0,2],[3,5],[5,4],[4,3]], 0, 5)); // false
 
 ### Problem 2: Find Center of Star Graph
 
-🏷️ **Companies:** [Amazon] [Google]
-📊 **Difficulty:** Easy
-📂 **Topics:** [Graph]
+ðŸ·ï¸ **Companies:** [Amazon] [Google]
+ðŸ“Š **Difficulty:** Easy
+ðŸ“‚ **Topics:** [Graph]
 
 **Problem:** A star graph has one center node connected to all others. Find the center given edges.
 
@@ -193,9 +193,9 @@ console.log(findCenter([[1,2],[5,1],[1,3],[1,4]])); // 1
 
 ### Problem 3: Flood Fill
 
-🏷️ **Companies:** [Amazon] [Google] [Meta]
-📊 **Difficulty:** Easy
-📂 **Topics:** [Graph, Matrix, DFS, BFS]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
+ðŸ“Š **Difficulty:** Easy
+ðŸ“‚ **Topics:** [Graph, Matrix, DFS, BFS]
 
 **Problem:** Replace all connected pixels of the same starting color with a new color.
 
@@ -207,7 +207,7 @@ Output: [[2,2,2],[2,2,0],[2,0,1]]
 
 **Constraints:**
 - m == image.length, n == image[0].length
-- 1 ≤ m, n ≤ 50
+- 1 â‰¤ m, n â‰¤ 50
 
 ```typescript
 function floodFill(image: number[][], sr: number, sc: number, color: number): number[][] {
@@ -236,16 +236,16 @@ console.log(floodFill([[1,1,1],[1,1,0],[1,0,1]], 1, 1, 2));
 // [[2,2,2],[2,2,0],[2,0,1]]
 ```
 
-**Time Complexity:** O(m × n)
-**Space Complexity:** O(m × n) worst case recursion
+**Time Complexity:** O(m Ã— n)
+**Space Complexity:** O(m Ã— n) worst case recursion
 
 ---
 
 ### Problem 4: Island Perimeter
 
-🏷️ **Companies:** [Amazon] [Google] [Meta]
-📊 **Difficulty:** Easy
-📂 **Topics:** [Graph, Matrix, DFS]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
+ðŸ“Š **Difficulty:** Easy
+ðŸ“‚ **Topics:** [Graph, Matrix, DFS]
 
 **Problem:** Given a grid where 1 = land, 0 = water, compute the perimeter of the island.
 
@@ -283,16 +283,16 @@ console.log(islandPerimeter([
 ])); // 16
 ```
 
-**Time Complexity:** O(m × n)
+**Time Complexity:** O(m Ã— n)
 **Space Complexity:** O(1)
 
 ---
 
 ### Problem 5: Find the Town Judge
 
-🏷️ **Companies:** [Amazon] [Google] [Meta]
-📊 **Difficulty:** Easy
-📂 **Topics:** [Graph, Array]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
+ðŸ“Š **Difficulty:** Easy
+ðŸ“‚ **Topics:** [Graph, Array]
 
 **Problem:** In a town of n people, the town judge trusts nobody and everyone trusts the judge. Find the judge or return -1.
 
@@ -303,7 +303,7 @@ Output: 2
 ```
 
 **Constraints:**
-- 1 ≤ n ≤ 1000
+- 1 â‰¤ n â‰¤ 1000
 
 ```typescript
 function findJudge(n: number, trust: number[][]): number {
@@ -341,9 +341,9 @@ console.log(findJudge(3, [[1,3],[2,3],[3,1]])); // -1
 
 ### Problem 6: Number of Islands
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Graph, Matrix, DFS, BFS, Union-Find]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Graph, Matrix, DFS, BFS, Union-Find]
 
 **Problem:** Given a 2D grid of '1's (land) and '0's (water), count the number of islands.
 
@@ -359,7 +359,7 @@ Output: 1
 ```
 
 **Constraints:**
-- m, n ≤ 300
+- m, n â‰¤ 300
 
 **Solution Approach:**
 - DFS from each unvisited land cell, marking visited.
@@ -407,16 +407,16 @@ console.log(numIslands([
 ])); // 3
 ```
 
-**Time Complexity:** O(m × n)
-**Space Complexity:** O(m × n) worst case recursion
+**Time Complexity:** O(m Ã— n)
+**Space Complexity:** O(m Ã— n) worst case recursion
 
 ---
 
 ### Problem 7: Clone Graph
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Graph, DFS, BFS, Hash Table]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Graph, DFS, BFS, Hash Table]
 
 **Problem:** Given a reference to a node in a connected undirected graph, return a deep copy (clone) of the graph.
 
@@ -427,7 +427,7 @@ Output: [[2,4],[1,3],[2,4],[1,3]]
 ```
 
 **Constraints:**
-- 1 ≤ nodes ≤ 100
+- 1 â‰¤ nodes â‰¤ 100
 
 ```typescript
 class GraphNode {
@@ -485,9 +485,9 @@ console.log(cloned !== n1); // true
 
 ### Problem 8: Course Schedule
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Graph, DFS, BFS, Topological Sort]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Graph, DFS, BFS, Topological Sort]
 
 **Problem:** There are n courses labeled 0 to n-1. Given prerequisites [a, b] meaning b must be taken before a, determine if it's possible to finish all courses.
 
@@ -498,7 +498,7 @@ Output: true
 ```
 
 **Constraints:**
-- 1 ≤ n ≤ 2000
+- 1 â‰¤ n â‰¤ 2000
 
 **Solution Approach:**
 - Detect cycle in directed graph. Use Kahn's algorithm (BFS) or DFS with visited states.
@@ -546,9 +546,9 @@ console.log(canFinish(5, [[1,0],[2,1],[3,2],[4,3]])); // true
 
 ### Problem 9: Course Schedule II
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Graph, Topological Sort]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Graph, Topological Sort]
 
 **Problem:** Return the ordering of courses to take to finish all courses.
 
@@ -600,9 +600,9 @@ console.log(findOrder(2, [[1,0],[0,1]])); // []
 
 ### Problem 10: Word Ladder
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Graph, BFS, String]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Graph, BFS, String]
 
 **Problem:** Given beginWord, endWord, and a wordList, find the length of the shortest transformation sequence from beginWord to endWord where each step changes one letter and each intermediate word is in the wordList.
 
@@ -610,12 +610,12 @@ console.log(findOrder(2, [[1,0],[0,1]])); // []
 ```
 Input: beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log","cog"]
 Output: 5
-Explanation: "hit" → "hot" → "dot" → "dog" → "cog" (5 steps)
+Explanation: "hit" â†’ "hot" â†’ "dot" â†’ "dog" â†’ "cog" (5 steps)
 ```
 
 **Constraints:**
-- 1 ≤ word length ≤ 10
-- wordList length ≤ 5000
+- 1 â‰¤ word length â‰¤ 10
+- wordList length â‰¤ 5000
 
 **Solution Approach:**
 - BFS on graph where nodes are words, edges exist if words differ by one letter.
@@ -654,16 +654,16 @@ console.log(ladderLength("hit", "cog", ["hot","dot","dog","lot","log","cog"])); 
 console.log(ladderLength("hit", "cog", ["hot","dot","dog","lot","log"])); // 0
 ```
 
-**Time Complexity:** O(n × L × 26) where L = word length
+**Time Complexity:** O(n Ã— L Ã— 26) where L = word length
 **Space Complexity:** O(n)
 
 ---
 
 ### Problem 11: Pacific Atlantic Water Flow
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Graph, Matrix, DFS, BFS]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Graph, Matrix, DFS, BFS]
 
 **Problem:** Given a matrix of heights, find cells where water can flow to both Pacific (top/left) and Atlantic (bottom/right) oceans. Water flows to equal or lower height neighbors.
 
@@ -674,7 +674,7 @@ Output: [[0,4],[1,3],[1,4],[2,2],[3,0],[3,1],[4,0]]
 ```
 
 **Constraints:**
-- 1 ≤ m, n ≤ 200
+- 1 â‰¤ m, n â‰¤ 200
 
 ```typescript
 function pacificAtlantic(heights: number[][]): number[][] {
@@ -712,16 +712,16 @@ function pacificAtlantic(heights: number[][]): number[][] {
 }
 ```
 
-**Time Complexity:** O(m × n)
-**Space Complexity:** O(m × n)
+**Time Complexity:** O(m Ã— n)
+**Space Complexity:** O(m Ã— n)
 
 ---
 
 ### Problem 12: Rotting Oranges
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Graph, BFS, Matrix]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Graph, BFS, Matrix]
 
 **Problem:** Given a grid where 0=empty, 1=fresh, 2=rotten, every minute any fresh orange adjacent to a rotten one becomes rotten. Return minimum minutes until no fresh orange remains, or -1.
 
@@ -774,16 +774,16 @@ console.log(orangesRotting([[0,2]])); // 0
 console.log(orangesRotting([[2,1,1],[0,1,1],[1,0,1]])); // -1
 ```
 
-**Time Complexity:** O(m × n)
-**Space Complexity:** O(m × n)
+**Time Complexity:** O(m Ã— n)
+**Space Complexity:** O(m Ã— n)
 
 ---
 
 ### Problem 13: Graph Valid Tree
 
-🏷️ **Companies:** [Amazon] [Google] [Meta]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Graph, DFS, BFS, Union-Find]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Graph, DFS, BFS, Union-Find]
 
 **Problem:** Given n nodes and edges, check if the graph forms a valid tree (connected and no cycles).
 
@@ -794,7 +794,7 @@ Output: true
 ```
 
 **Constraints:**
-- 1 ≤ n ≤ 2000
+- 1 â‰¤ n â‰¤ 2000
 
 ```typescript
 function validTree(n: number, edges: number[][]): boolean {
@@ -837,9 +837,9 @@ console.log(validTree(5, [[0,1],[1,2],[2,3],[1,3],[1,4]])); // false
 
 ### Problem 14: Surrounded Regions
 
-🏷️ **Companies:** [Amazon] [Google] [Meta]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Graph, Matrix, DFS, BFS]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Graph, Matrix, DFS, BFS]
 
 **Problem:** Capture all 'O's that are surrounded by 'X's (change to 'X'). Any 'O' on the border remains.
 
@@ -894,16 +894,16 @@ console.log(board);
 // [["X","X","X","X"],["X","X","X","X"],["X","X","X","X"],["X","O","X","X"]]
 ```
 
-**Time Complexity:** O(m × n)
-**Space Complexity:** O(m × n)
+**Time Complexity:** O(m Ã— n)
+**Space Complexity:** O(m Ã— n)
 
 ---
 
 ### Problem 15: Number of Connected Components in a Graph
 
-🏷️ **Companies:** [Amazon] [Google] [Meta]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Graph, Union-Find, DFS]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Graph, Union-Find, DFS]
 
 **Problem:** Count the number of connected components in an undirected graph.
 
@@ -959,9 +959,9 @@ console.log(countComponents(5, [[0,1],[1,2],[2,3],[3,4]])); // 1
 
 ### Problem 16: Detect Cycle in Directed Graph
 
-🏷️ **Companies:** [Amazon] [Google] [Meta]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Graph, DFS, Topological Sort]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Graph, DFS, Topological Sort]
 
 **Problem:** Given a directed graph, return true if it contains a cycle.
 
@@ -1011,9 +1011,9 @@ console.log(hasCycle(4, [[0,1],[1,2],[1,3]])); // false
 
 ### Problem 17: Evaluate Division
 
-🏷️ **Companies:** [Amazon] [Google] [Meta]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Graph, DFS, Union-Find]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Graph, DFS, Union-Find]
 
 **Problem:** Given equations like a/b = 2.0, find results of queries like a/c.
 
@@ -1071,18 +1071,18 @@ console.log(calcEquation(
 // [6.0, 0.5, -1.0, 1.0, -1.0]
 ```
 
-**Time Complexity:** O(n × q) where n = equations, q = queries
+**Time Complexity:** O(n Ã— q) where n = equations, q = queries
 **Space Complexity:** O(n)
 
 ---
 
 ### Problem 18: Minesweeper
 
-🏷️ **Companies:** [Amazon] [Google]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Graph, DFS, BFS, Matrix]
+ðŸ·ï¸ **Companies:** [Amazon] [Google]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Graph, DFS, BFS, Matrix]
 
-**Problem:** Implement Minesweeper click logic: if unrevealed mine → game over; if empty → reveal all adjacent empties; if number → reveal just that cell.
+**Problem:** Implement Minesweeper click logic: if unrevealed mine â†’ game over; if empty â†’ reveal all adjacent empties; if number â†’ reveal just that cell.
 
 **Example 1:**
 ```
@@ -1134,16 +1134,16 @@ function updateBoard(board: string[][], click: number[]): string[][] {
 }
 ```
 
-**Time Complexity:** O(m × n)
-**Space Complexity:** O(m × n)
+**Time Complexity:** O(m Ã— n)
+**Space Complexity:** O(m Ã— n)
 
 ---
 
 ### Problem 19: Shortest Path in Binary Matrix
 
-🏷️ **Companies:** [Amazon] [Google] [Meta]
-📊 **Difficulty:** Medium
-📂 **Topics:** [Graph, BFS, Matrix]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
+ðŸ“Š **Difficulty:** Medium
+ðŸ“‚ **Topics:** [Graph, BFS, Matrix]
 
 **Problem:** Find the shortest clear path from top-left to bottom-right in a binary matrix (0 = clear, 1 = blocked). 8-directional movement.
 
@@ -1189,8 +1189,8 @@ console.log(shortestPathBinaryMatrix([[0,1],[1,0]])); // 2
 console.log(shortestPathBinaryMatrix([[0,0,0],[1,1,0],[1,1,0]])); // 4
 ```
 
-**Time Complexity:** O(n²)
-**Space Complexity:** O(n²)
+**Time Complexity:** O(nÂ²)
+**Space Complexity:** O(nÂ²)
 
 ---
 
@@ -1200,9 +1200,9 @@ console.log(shortestPathBinaryMatrix([[0,0,0],[1,1,0],[1,1,0]])); // 4
 
 ### Problem 20: Alien Dictionary
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-📊 **Difficulty:** Hard
-📂 **Topics:** [Graph, Topological Sort, String]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+ðŸ“Š **Difficulty:** Hard
+ðŸ“‚ **Topics:** [Graph, Topological Sort, String]
 
 **Problem:** Given sorted words from an alien language, find the order of characters.
 
@@ -1213,7 +1213,7 @@ Output: "wertf"
 ```
 
 **Constraints:**
-- 1 ≤ words.length ≤ 100
+- 1 â‰¤ words.length â‰¤ 100
 
 ```typescript
 function alienOrder(words: string[]): string {
@@ -1268,16 +1268,16 @@ console.log(alienOrder(["wrt","wrf","er","ett","rftt"])); // "wertf"
 console.log(alienOrder(["z","x","z"])); // ""
 ```
 
-**Time Complexity:** O(n × L) where L = avg word length
+**Time Complexity:** O(n Ã— L) where L = avg word length
 **Space Complexity:** O(1) (26 characters)
 
 ---
 
 ### Problem 21: Minimum Height Trees
 
-🏷️ **Companies:** [Amazon] [Google] [Meta]
-📊 **Difficulty:** Hard
-📂 **Topics:** [Graph, BFS, Topological Sort]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
+ðŸ“Š **Difficulty:** Hard
+ðŸ“‚ **Topics:** [Graph, BFS, Topological Sort]
 
 **Problem:** Find all root labels of MHTs (minimum height trees) for an undirected tree.
 
@@ -1288,7 +1288,7 @@ Output: [1]
 ```
 
 **Constraints:**
-- 1 ≤ n ≤ 2 × 10⁴
+- 1 â‰¤ n â‰¤ 2 Ã— 10â´
 
 ```typescript
 function findMinHeightTrees(n: number, edges: number[][]): number[] {
@@ -1336,9 +1336,9 @@ console.log(findMinHeightTrees(6, [[3,0],[3,1],[3,2],[3,4],[5,4]])); // [3, 4]
 
 ### Problem 22: Cheapest Flights Within K Stops
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-📊 **Difficulty:** Hard
-📂 **Topics:** [Graph, BFS, Dijkstra, DP]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+ðŸ“Š **Difficulty:** Hard
+ðŸ“‚ **Topics:** [Graph, BFS, Dijkstra, DP]
 
 **Problem:** Find the cheapest price from src to dst with at most k stops.
 
@@ -1349,7 +1349,7 @@ Output: 700
 ```
 
 **Constraints:**
-- 1 ≤ n ≤ 100
+- 1 â‰¤ n â‰¤ 100
 
 ```typescript
 function findCheapestPrice(n: number, flights: number[][], src: number, dst: number, k: number): number {
@@ -1391,16 +1391,16 @@ console.log(findCheapestPrice(4,
 )); // 700
 ```
 
-**Time Complexity:** O(n + e × k)
+**Time Complexity:** O(n + e Ã— k)
 **Space Complexity:** O(n + e)
 
 ---
 
 ### Problem 23: Word Ladder II
 
-🏷️ **Companies:** [Amazon] [Google] [Meta]
-📊 **Difficulty:** Hard
-📂 **Topics:** [Graph, BFS, Backtracking]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
+ðŸ“Š **Difficulty:** Hard
+ðŸ“‚ **Topics:** [Graph, BFS, Backtracking]
 
 **Problem:** Find all shortest transformation sequences from beginWord to endWord.
 
@@ -1463,16 +1463,16 @@ function findLadders(beginWord: string, endWord: string, wordList: string[]): st
 }
 ```
 
-**Time Complexity:** O(n × L × 26)
-**Space Complexity:** O(n × L)
+**Time Complexity:** O(n Ã— L Ã— 26)
+**Space Complexity:** O(n Ã— L)
 
 ---
 
 ### Problem 24: Longest Increasing Path in a Matrix
 
-🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
-📊 **Difficulty:** Hard
-📂 **Topics:** [Graph, Matrix, DFS, DP, Topological Sort]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
+ðŸ“Š **Difficulty:** Hard
+ðŸ“‚ **Topics:** [Graph, Matrix, DFS, DP, Topological Sort]
 
 **Problem:** Find the length of the longest increasing path in a matrix (4-directional).
 
@@ -1484,7 +1484,7 @@ Explanation: [1, 2, 6, 9]
 ```
 
 **Constraints:**
-- 1 ≤ m, n ≤ 200
+- 1 â‰¤ m, n â‰¤ 200
 
 ```typescript
 function longestIncreasingPath(matrix: number[][]): number {
@@ -1523,16 +1523,16 @@ console.log(longestIncreasingPath([[9,9,4],[6,6,8],[2,1,1]])); // 4
 console.log(longestIncreasingPath([[3,4,5],[3,2,6],[2,2,1]])); // 4
 ```
 
-**Time Complexity:** O(m × n)
-**Space Complexity:** O(m × n)
+**Time Complexity:** O(m Ã— n)
+**Space Complexity:** O(m Ã— n)
 
 ---
 
 ### Problem 25: Bus Routes
 
-🏷️ **Companies:** [Amazon] [Google] [Meta]
-📊 **Difficulty:** Hard
-📂 **Topics:** [Graph, BFS, Hash Table]
+ðŸ·ï¸ **Companies:** [Amazon] [Google] [Meta]
+ðŸ“Š **Difficulty:** Hard
+ðŸ“‚ **Topics:** [Graph, BFS, Hash Table]
 
 **Problem:** Given routes (list of bus stops), find the minimum number of buses needed to travel from source to target.
 
@@ -1543,7 +1543,7 @@ Output: 2
 ```
 
 **Constraints:**
-- 1 ≤ routes.length ≤ 500
+- 1 â‰¤ routes.length â‰¤ 500
 
 ```typescript
 function numBusesToDestination(routes: number[][], source: number, target: number): number {
@@ -1583,8 +1583,8 @@ function numBusesToDestination(routes: number[][], source: number, target: numbe
 }
 ```
 
-**Time Complexity:** O(routes × stops)
-**Space Complexity:** O(routes × stops)
+**Time Complexity:** O(routes Ã— stops)
+**Space Complexity:** O(routes Ã— stops)
 
 ---
 
@@ -1601,19 +1601,19 @@ function numBusesToDestination(routes: number[][], source: number, target: numbe
 | 7 | Clone Graph | Medium | Amazon, Google, Meta | O(n+e) | O(n) |
 | 8 | Course Schedule | Medium | Multiple | O(n+e) | O(n+e) |
 | 9 | Course Schedule II | Medium | Multiple | O(n+e) | O(n+e) |
-| 10 | Word Ladder | Medium | Multiple | O(n×L×26) | O(n) |
+| 10 | Word Ladder | Medium | Multiple | O(nÃ—LÃ—26) | O(n) |
 | 11 | Pacific Atlantic Water Flow | Medium | Multiple | O(mn) | O(mn) |
 | 12 | Rotting Oranges | Medium | Multiple | O(mn) | O(mn) |
 | 13 | Graph Valid Tree | Medium | Amazon, Google, Meta | O(n+e) | O(n+e) |
 | 14 | Surrounded Regions | Medium | Amazon, Google, Meta | O(mn) | O(mn) |
 | 15 | Connected Components | Medium | Amazon, Google, Meta | O(n+e) | O(n+e) |
 | 16 | Detect Cycle Directed | Medium | Amazon, Google, Meta | O(n+e) | O(n+e) |
-| 17 | Evaluate Division | Medium | Amazon, Google, Meta | O(n×q) | O(n) |
+| 17 | Evaluate Division | Medium | Amazon, Google, Meta | O(nÃ—q) | O(n) |
 | 18 | Minesweeper | Medium | Amazon, Google | O(mn) | O(mn) |
-| 19 | Shortest Path Binary Matrix | Medium | Amazon, Google, Meta | O(n²) | O(n²) |
-| 20 | Alien Dictionary | Hard | Amazon, Google, Meta | O(n×L) | O(1) |
+| 19 | Shortest Path Binary Matrix | Medium | Amazon, Google, Meta | O(nÂ²) | O(nÂ²) |
+| 20 | Alien Dictionary | Hard | Amazon, Google, Meta | O(nÃ—L) | O(1) |
 | 21 | Minimum Height Trees | Hard | Amazon, Google, Meta | O(n) | O(n) |
-| 22 | Cheapest Flights K Stops | Hard | Multiple | O(n+e×k) | O(n+e) |
-| 23 | Word Ladder II | Hard | Amazon, Google, Meta | O(n×L×26) | O(n×L) |
+| 22 | Cheapest Flights K Stops | Hard | Multiple | O(n+eÃ—k) | O(n+e) |
+| 23 | Word Ladder II | Hard | Amazon, Google, Meta | O(nÃ—LÃ—26) | O(nÃ—L) |
 | 24 | Longest Increasing Path | Hard | Amazon, Google, Meta | O(mn) | O(mn) |
-| 25 | Bus Routes | Hard | Amazon, Google, Meta | O(r×s) | O(r×s) |
+| 25 | Bus Routes | Hard | Amazon, Google, Meta | O(rÃ—s) | O(rÃ—s) |

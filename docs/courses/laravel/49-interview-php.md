@@ -1,9 +1,6 @@
-# Chapter 49: PHP Interview Q&A
+﻿# Chapter 49: PHP Interview Q&A
 
 > **Previous:** [Manufacturing Interview Q&A](./48-interview-manufacturing.md) | **Next:** [MySQL & Database Interview Q&A](./50-interview-mysql.md)
-
-
-
 
 ---
 
@@ -11,20 +8,19 @@ This chapter covers the most frequently asked PHP interview questions across fun
 
 ---
 
-
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/49-interview-php/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/49-interview-php/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/49-interview-php/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/49-interview-php/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/49-interview-php/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/49-interview-php/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/49-interview-php/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/49-interview-php/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/49-interview-php/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/49-interview-php/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/49-interview-php/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/49-interview-php/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -58,7 +54,6 @@ flowchart LR
 
 ![PHP Interview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/49-interview-php.png)
 
-
 ### Q1: What is PHP and how does it differ from JavaScript on the backend?
 
 **Answer:** PHP (Hypertext Preprocessor) is a server-side scripting language designed for web development. Unlike JavaScript (which runs in the browser or via Node.js), PHP executes entirely on the server, generates HTML sent to the client, and is naturally synchronous and blocking per-request. PHP's shared-nothing architecture means each request starts fresh with no in-memory state, unlike Node.js which maintains a persistent process.
@@ -81,7 +76,7 @@ $items = [1, 2, 3];        // array
 $result = null;            // null
 $obj = new stdClass();     // object
 
-$age = "thirty";           // allowed → type changed at runtime
+$age = "thirty";           // allowed â†’ type changed at runtime
 ```
 
 ### Q3: What are the primitive types in PHP?
@@ -107,7 +102,7 @@ var_dump(0 == "abc");    // false (PHP 8, string-to-int comparison is numeric)
 
 ### Q5: What are the different array types in PHP?
 
-**Answer:** PHP has one array type → `array` → which can be either indexed (sequential integer keys) or associative (string keys). Both can mix within the same array. PHP 8.1 adds `array_is_list()` to distinguish sequential arrays.
+**Answer:** PHP has one array type â†’ `array` â†’ which can be either indexed (sequential integer keys) or associative (string keys). Both can mix within the same array. PHP 8.1 adds `array_is_list()` to distinguish sequential arrays.
 
 ```php
 $indexed = ['a', 'b', 'c'];
@@ -146,7 +141,7 @@ $formatted = sprintf('Hello %s, you have %d new messages', $name, $count);
 
 ### Q8: What is the difference between single and double quotes in PHP?
 
-**Answer:** Single-quoted strings are literal → only `\\` and `\'` are interpreted as escape sequences. Double-quoted strings interpret variable interpolation (`$var`, `{$var}`) and escape sequences (`\n`, `\t`, `\$`, etc.). Double quotes are slightly slower but rarely a concern.
+**Answer:** Single-quoted strings are literal â†’ only `\\` and `\'` are interpreted as escape sequences. Double-quoted strings interpret variable interpolation (`$var`, `{$var}`) and escape sequences (`\n`, `\t`, `\$`, etc.). Double quotes are slightly slower but rarely a concern.
 
 ```php
 $name = 'Alice';
@@ -168,7 +163,7 @@ var_dump($a == $c);   // true (same key/value)
 var_dump($a === $b);  // true (same order)
 var_dump($a === $c);  // false (different order)
 
-$d = $a + ['x', 'y']; // ['a', 'b'] → union ignores right duplicates
+$d = $a + ['x', 'y']; // ['a', 'b'] â†’ union ignores right duplicates
 ```
 
 ### Q10: How do `++$i` and `$i++` differ in PHP?
@@ -197,7 +192,7 @@ switch ($status) {
         break;
     case 2:
         echo 'Active';
-        // break missing → falls through!
+        // break missing â†’ falls through!
     case 3:
         echo 'Archived';  // also runs when status is 2
         break;
@@ -215,16 +210,6 @@ $data['key'] ??= 'default';                   // assigns only if null
 ```
 
 ### Q13: What is the spaceship operator `<=>`?
-
-<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-spaceship-operator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-spaceship-operator-handwritten.svg" alt="Handwritten: What is the spaceship operator `<=>`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-spaceship-operator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-spaceship-operator-diagram.svg" alt="Diagram: What is the spaceship operator `<=>`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-spaceship-operator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-spaceship-operator-sticky.svg" alt="Sticky Note: What is the spaceship operator `<=>`?" width="30%">
-</a>
 
 **Answer:** The spaceship operator performs combined comparison: returns `-1` if left &lt; right, `0` if equal, `1` if left &gt; right. It's essential for custom sort callbacks.
 
@@ -257,7 +242,7 @@ echo calculateTotal(100, 1, 15.0);             // 85.00
 
 ### Q15: What are strict types and how do you enable them?
 
-**Answer:** `declare(strict_types=1)` placed at the top of a PHP file enforces strict type checking for function calls within that file. Without it, PHP coerces argument types → `int` arguments accept `float` and coerce `"42"` strings silently. Strict types throw a `TypeError` on mismatch.
+**Answer:** `declare(strict_types=1)` placed at the top of a PHP file enforces strict type checking for function calls within that file. Without it, PHP coerces argument types â†’ `int` arguments accept `float` and coerce `"42"` strings silently. Strict types throw a `TypeError` on mismatch.
 
 ```php
 declare(strict_types=1);
@@ -272,7 +257,7 @@ sum(3, 4.5);    // TypeError: must be of type int
 
 ### Q16: How does variable scope work in PHP?
 
-**Answer:** PHP has function scope → variables defined outside a function are not accessible inside unless explicitly `global` or passed via parameters. The `global` keyword imports a reference to the outer scope. Static variables persist across function calls within the same request.
+**Answer:** PHP has function scope â†’ variables defined outside a function are not accessible inside unless explicitly `global` or passed via parameters. The `global` keyword imports a reference to the outer scope. Static variables persist across function calls within the same request.
 
 ```php
 $counter = 0;
@@ -290,7 +275,7 @@ echo increment(); // 2 (count=2, counter=2)
 
 ### Q17: What are variable variables?
 
-**Answer:** Variable variables use `$$name` to access a variable whose name is the value of another variable. They are rarely used in modern PHP due to readability concerns → use arrays or dynamic access instead.
+**Answer:** Variable variables use `$$name` to access a variable whose name is the value of another variable. They are rarely used in modern PHP due to readability concerns â†’ use arrays or dynamic access instead.
 
 ```php
 $name = 'color';
@@ -317,7 +302,7 @@ foreach ($items as $key => $value) {
 foreach ($items as &$value) {
     $value = strtoupper($value);
 }
-unset($value); // break the reference → important!
+unset($value); // break the reference â†’ important!
 
 var_dump($items); // ['A', 'B', 'C']
 ```
@@ -479,7 +464,7 @@ class Order {
 
 ### Q28: Explain `public`, `protected`, and `private` visibility.
 
-**Answer:** `public` → accessible from anywhere. `protected` → accessible only within the class itself and its child classes. `private` → accessible only within the defining class, not from children. This applies to both properties and methods.
+**Answer:** `public` â†’ accessible from anywhere. `protected` â†’ accessible only within the class itself and its child classes. `private` â†’ accessible only within the defining class, not from children. This applies to both properties and methods.
 
 ```php
 class ParentClass {
@@ -551,7 +536,7 @@ class StripeGateway extends PaymentGateway
 
 ### Q31: What is an interface and how does it differ from an abstract class?
 
-**Answer:** An interface defines a contract → method signatures without any implementation. A class can implement multiple interfaces (unlike classes which extend only one). Abstract classes can have properties, implemented methods, and constructor logic. Use interfaces when you only want to enforce a shape, not share logic.
+**Answer:** An interface defines a contract â†’ method signatures without any implementation. A class can implement multiple interfaces (unlike classes which extend only one). Abstract classes can have properties, implemented methods, and constructor logic. Use interfaces when you only want to enforce a shape, not share logic.
 
 ```php
 interface LoggerInterface {
@@ -574,7 +559,7 @@ class UserService implements LoggerInterface, Cacheable {
 
 ### Q32: What are traits and why would you use them?
 
-**Answer:** Traits are reusable code snippets that can be composed into classes, solving PHP's single-inheritance limitation. A trait cannot be instantiated alone → it's mixed into a class. Traits can have properties, methods, abstract methods, and even use other traits.
+**Answer:** Traits are reusable code snippets that can be composed into classes, solving PHP's single-inheritance limitation. A trait cannot be instantiated alone â†’ it's mixed into a class. Traits can have properties, methods, abstract methods, and even use other traits.
 
 ```php
 trait Timestampable
@@ -630,7 +615,7 @@ echo $g->greetFromB(); // Hi from B
 
 ### Q34: What is the `final` keyword used for?
 
-**Answer:** `final` prevents a method from being overridden in child classes, or prevents a class from being extended at all. Use it when the implementation is complete and should not be altered by subclasses → it signals design intent.
+**Answer:** `final` prevents a method from being overridden in child classes, or prevents a class from being extended at all. Use it when the implementation is complete and should not be altered by subclasses â†’ it signals design intent.
 
 ```php
 final class Configuration
@@ -743,7 +728,7 @@ class SessionUser
 
 ### Q38: What is the static keyword and late static binding?
 
-**Answer:** `static::` enables late static binding → the referenced class is determined at runtime based on the actual class called, not the class where the method is defined. `self::` always resolves to the class where the method is written.
+**Answer:** `static::` enables late static binding â†’ the referenced class is determined at runtime based on the actual class called, not the class where the method is defined. `self::` always resolves to the class where the method is written.
 
 ```php
 class Base {
@@ -917,7 +902,7 @@ $queue->enqueue('task2');
 
 echo $queue->dequeue(); // task1 (FIFO)
 
-// SplObjectStorage → map objects to data
+// SplObjectStorage â†’ map objects to data
 $storage = new SplObjectStorage();
 $user = new User('Alice');
 $storage[$user] = ['visits' => 42];
@@ -937,7 +922,7 @@ function processLargeFile(string $path): \Generator
     fclose($handle);
 }
 
-// Memory: O(1) → only one line in memory at a time
+// Memory: O(1) â†’ only one line in memory at a time
 foreach (processLargeFile('huge.log') as $line) {
     if (str_contains($line, 'ERROR')) {
         echo $line . "\n";
@@ -1126,7 +1111,7 @@ function createUser(
     bool $isActive = true
 ): User { /* ... */ }
 
-// Named → clear and skip defaults
+// Named â†’ clear and skip defaults
 createUser(
     name: 'Alice',
     email: 'alice@example.com',
@@ -1169,7 +1154,7 @@ foreach ($attrs as $attr) {
 **Answer:** `readonly` (PHP 8.1 on properties, PHP 8.2 on classes) ensures a property can only be set once. Readonly classes implicitly make all properties readonly. Attempting to modify a readonly property throws an error.
 
 ```php
-// PHP 8.1 → readonly properties
+// PHP 8.1 â†’ readonly properties
 class UserDto
 {
     public function __construct(
@@ -1181,7 +1166,7 @@ class UserDto
 $dto = new UserDto('Alice', 30);
 // $dto->name = 'Bob'; // Error
 
-// PHP 8.2 → readonly class
+// PHP 8.2 â†’ readonly class
 readonly class Config
 {
     public function __construct(
@@ -1234,7 +1219,7 @@ $status = OrderStatus::from($row['status']);
 **Answer:** Union types (PHP 8.0) accept any of the listed types, separated by `|`. Intersection types (PHP 8.1) accept types satisfying all listed types, separated by `&`. `false` and `null` can be standalone in unions.
 
 ```php
-// Union → string OR int
+// Union â†’ string OR int
 function parseId(string|int $id): string {
     return (string) $id;
 }
@@ -1242,7 +1227,7 @@ function parseId(string|int $id): string {
 // Nullable union
 function find(?int $id): User|null { /* ... */ }
 
-// Intersection → must satisfy both
+// Intersection â†’ must satisfy both
 function log(LoggerInterface&LogLevelAware $logger): void {
     // $logger must implement both interfaces
 }
@@ -1253,7 +1238,7 @@ function format((Countable&Traversable)|array $data): string { /* ... */ }
 
 ### Q63: How does the `match` expression differ from `switch`?
 
-**Answer:** `match` (PHP 8.0) is an expression that returns a value, uses strict comparison (`===`), supports multiple comma-separated arms, throws `UnhandledMatchError` if no arm matches. No fallthrough → it never needs `break`.
+**Answer:** `match` (PHP 8.0) is an expression that returns a value, uses strict comparison (`===`), supports multiple comma-separated arms, throws `UnhandledMatchError` if no arm matches. No fallthrough â†’ it never needs `break`.
 
 ```php
 $statusCode = 404;
@@ -1316,7 +1301,7 @@ var_dump(strpos($url, 'api') !== false);
 
 ### Q66: How does `mixed` type work?
 
-**Answer:** `mixed` (PHP 8.0) is a pseudo-type meaning the parameter or return can be any type. It's equivalent to `string|int|float|bool|null|array|object|callable|resource`. Use it only when truly anything is acceptable → prefer explicit union types for clarity.
+**Answer:** `mixed` (PHP 8.0) is a pseudo-type meaning the parameter or return can be any type. It's equivalent to `string|int|float|bool|null|array|object|callable|resource`. Use it only when truly anything is acceptable â†’ prefer explicit union types for clarity.
 
 ```php
 function logValue(mixed $value): void
@@ -1349,7 +1334,7 @@ $upper = array_map(strtoupper(...), ['a', 'b']); // ['A', 'B']
 
 ### Q68: What is `fibers` in PHP 8.1?
 
-**Answer:** Fibers are interruptible functions for cooperative multitasking → a function can suspend (`Fiber::suspend()`) and the caller can resume it (`$fiber->resume()`). They enable non-blocking code without callbacks or async/await keywords (which PHP does not have). Used internally by Laravel Octane and ReactPHP.
+**Answer:** Fibers are interruptible functions for cooperative multitasking â†’ a function can suspend (`Fiber::suspend()`) and the caller can resume it (`$fiber->resume()`). They enable non-blocking code without callbacks or async/await keywords (which PHP does not have). Used internally by Laravel Octane and ReactPHP.
 
 ```php
 $fiber = new Fiber(function (): void {
@@ -1365,7 +1350,7 @@ $fiber->resume('hello'); // output: Resumed with: hello
 
 ### Q69: What is the `never` return type?
 
-**Answer:** `never` (PHP 8.1) indicates a function that never returns → it either throws an exception or calls `exit()`/`die()`. The type checker enforces no return value and no reachable point after the call.
+**Answer:** `never` (PHP 8.1) indicates a function that never returns â†’ it either throws an exception or calls `exit()`/`die()`. The type checker enforces no return value and no reachable point after the call.
 
 ```php
 function abort(string $message): never
@@ -1420,7 +1405,7 @@ $keys = $random->pickArrayKeys(['a' => 1, 'b' => 2, 'c' => 3], 2);
 
 ### Q72: What are PHP 8.4 property hooks?
 
-**Answer:** Property hooks (PHP 8.4) add `get`/`set` behavior directly on properties, similar to C#. They eliminate boilerplate getter/setter methods while keeping property-access syntax. Still in active RFC discussion → check version availability.
+**Answer:** Property hooks (PHP 8.4) add `get`/`set` behavior directly on properties, similar to C#. They eliminate boilerplate getter/setter methods while keeping property-access syntax. Still in active RFC discussion â†’ check version availability.
 
 ```php
 class User
@@ -1484,7 +1469,7 @@ class User {}
 
 ### Q75: What is the difference between `composer install` and `composer update`?
 
-**Answer:** `composer install` reads `composer.lock` and installs the exact versions recorded there. Use it for deployment → produces identical dependency sets across environments. `composer update` reads `composer.json`, resolves the latest compatible versions, writes them to `composer.lock`, and installs. Use it when adding/changing dependencies.
+**Answer:** `composer install` reads `composer.lock` and installs the exact versions recorded there. Use it for deployment â†’ produces identical dependency sets across environments. `composer update` reads `composer.json`, resolves the latest compatible versions, writes them to `composer.lock`, and installs. Use it when adding/changing dependencies.
 
 ```bash
 # First time: creates composer.lock
@@ -1534,7 +1519,7 @@ composer install --no-dev --optimize-autoloader
 
 ### Q77: How do you specify PHP version constraints?
 
-**Answer:** Use semantic versioning operators: `^` (compatible with major), `~` (approximately → minor bumps), `>=`, `<=`, `!=`, `*` (any), `||` (OR). `^8.2` means >=8.2.0 and &lt;9.0.0.
+**Answer:** Use semantic versioning operators: `^` (compatible with major), `~` (approximately â†’ minor bumps), `>=`, `<=`, `!=`, `*` (any), `||` (OR). `^8.2` means >=8.2.0 and &lt;9.0.0.
 
 ```json
 {
@@ -1557,10 +1542,10 @@ composer install --no-dev --optimize-autoloader
 **Answer:** `composer.lock` records the exact version of every installed package and its dependencies. Committing it ensures everyone (devs, CI, deployment) gets identical packages. Without it, `composer install` falls back to `composer.json` and may resolve different versions. Always commit `composer.lock` for applications (not libraries).
 
 ```bash
-# Good → lock file committed
+# Good â†’ lock file committed
 git add composer.json composer.lock
 
-# Deployment → deterministic install
+# Deployment â†’ deterministic install
 composer install --no-dev --optimize-autoloader --no-interaction
 ```
 
@@ -1647,15 +1632,15 @@ composer dump-autoload -o  # same as --optimize
 
 ### Q83: What is the difference between PSR-0 and PSR-4?
 
-**Answer:** PSR-0 maps namespace to directory using underscores as directory separators (e.g., `Some_Class` → `Some/Class.php`). PSR-4 is simpler → it strips the namespace prefix before mapping to the directory. PSR-4 is the modern standard. PSR-0 is effectively deprecated.
+**Answer:** PSR-0 maps namespace to directory using underscores as directory separators (e.g., `Some_Class` â†’ `Some/Class.php`). PSR-4 is simpler â†’ it strips the namespace prefix before mapping to the directory. PSR-4 is the modern standard. PSR-0 is effectively deprecated.
 
 ```php
 // PSR-0:
-// Vendor_Package_ClassName → Vendor/Package/ClassName.php
+// Vendor_Package_ClassName â†’ Vendor/Package/ClassName.php
 
 // PSR-4:
-// "Vendor\\Package\\" → "src/"
-// Vendor\Package\ClassName → src/ClassName.php
+// "Vendor\\Package\\" â†’ "src/"
+// Vendor\Package\ClassName â†’ src/ClassName.php
 ```
 
 ---
@@ -2159,7 +2144,7 @@ $this->app->singleton(LoggerInterface::class, FileLogger::class);
 
 ### Q95: What is dependency injection and how does Laravel implement it?
 
-**Answer:** Dependency injection means a class receives its dependencies rather than creating them. Laravel implements this through its auto-resolving container → constructor type-hints are automatically resolved. You can also use `app()->make()`, the `resolve()` helper, or `app()->call()` for method injection.
+**Answer:** Dependency injection means a class receives its dependencies rather than creating them. Laravel implements this through its auto-resolving container â†’ constructor type-hints are automatically resolved. You can also use `app()->make()`, the `resolve()` helper, or `app()->call()` for method injection.
 
 ```php
 // Constructor injection (most common)
@@ -2205,7 +2190,7 @@ app()->call([$pipeline, 'process']);
 Cache::get('key');
 Cache::put('key', 'value', 3600);
 
-// Behind the scenes → simplified:
+// Behind the scenes â†’ simplified:
 class Cache extends Facade
 {
     protected static function getFacadeAccessor(): string
@@ -2248,7 +2233,7 @@ class NewsletterService
 
         // Actually: Cache::get() is a facade call
         // Contract approach: inject CacheContract
-        // Both work → contracts make testing and swapping easier
+        // Both work â†’ contracts make testing and swapping easier
     }
 }
 
@@ -2261,7 +2246,7 @@ $this->app->bind(
 
 ### Q98: What is contextual binding and how does it solve real problems?
 
-**Answer:** Contextual binding lets you resolve the same interface differently based on which class requests it. Laravel's container provides `when()` → `needs()` → `give()` for this. Essential when different classes need different implementations or primitive values.
+**Answer:** Contextual binding lets you resolve the same interface differently based on which class requests it. Laravel's container provides `when()` â†’ `needs()` â†’ `give()` for this. Essential when different classes need different implementations or primitive values.
 
 ```php
 interface PaymentGateway
@@ -2320,7 +2305,7 @@ $pipeline = app(Pipeline::class)
 
 ### Q100: How does the service provider boot order work?
 
-**Answer:** Laravel registers all service providers, then boots them. During `register()`, providers only bind services → no usage of other providers' bindings (risky). During `boot()`, all providers are registered, so you can safely use any binding, call `$this->app->make()`, register routes, or register event listeners.
+**Answer:** Laravel registers all service providers, then boots them. During `register()`, providers only bind services â†’ no usage of other providers' bindings (risky). During `boot()`, all providers are registered, so you can safely use any binding, call `$this->app->make()`, register routes, or register event listeners.
 
 ```php
 class AppServiceProvider extends ServiceProvider
@@ -2355,23 +2340,13 @@ class AppServiceProvider extends ServiceProvider
 
 ### Q101: How does `app()->bind()` vs `app()->singleton()` affect shared state?
 
-<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-app-bind-vs-app-singleton-affect-shared-state-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-app-bind-vs-app-singleton-affect-shared-state-handwritten.svg" alt="Handwritten: How does `app()->bind()` vs `app()->singleton()` affect shared state?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-app-bind-vs-app-singleton-affect-shared-state-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-app-bind-vs-app-singleton-affect-shared-state-diagram.svg" alt="Diagram: How does `app()->bind()` vs `app()->singleton()` affect shared state?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-app-bind-vs-app-singleton-affect-shared-state-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-app-bind-vs-app-singleton-affect-shared-state-sticky.svg" alt="Sticky Note: How does `app()->bind()` vs `app()->singleton()` affect shared state?" width="30%">
-</a>
-
-**Answer:** `bind()` resolves a new instance every time → each resolution gets a fresh object. `singleton()` shares one instance across all resolutions within the same request. Use singleton for stateless services (logger, cache manager, payment gateway) where creating multiple instances wastes resources. Use bind for stateful services where each caller needs isolated state.
+**Answer:** `bind()` resolves a new instance every time â†’ each resolution gets a fresh object. `singleton()` shares one instance across all resolutions within the same request. Use singleton for stateless services (logger, cache manager, payment gateway) where creating multiple instances wastes resources. Use bind for stateful services where each caller needs isolated state.
 
 ```php
-// Singleton → same instance everywhere
+// Singleton â†’ same instance everywhere
 app()->singleton(Logger::class, fn() => new FileLogger('app.log'));
 
-// bind → new instance each time
+// bind â†’ new instance each time
 app()->bind(Calculator::class, fn() => new Calculator());
 
 class Logger
@@ -2393,7 +2368,7 @@ app()->make(Logger::class)->log('Second');
 
 ### Q102: What is the `defer` property on service providers?
 
-**Answer:** The `$defer` property and `provides()` method let a service provider register lazily → it's only loaded when one of its listed bindings is actually resolved. This improves performance by skipping unnecessary provider bootstrapping.
+**Answer:** The `$defer` property and `provides()` method let a service provider register lazily â†’ it's only loaded when one of its listed bindings is actually resolved. This improves performance by skipping unnecessary provider bootstrapping.
 
 ```php
 use Illuminate\Contracts\Support\DeferrableProvider;
@@ -2414,7 +2389,7 @@ class AnalyticsServiceProvider extends ServiceProvider implements DeferrableProv
 }
 
 // This provider only registers when something resolves Analytics
-// Until then, it's never loaded → saving memory and boot time
+// Until then, it's never loaded â†’ saving memory and boot time
 ```
 
 ### Q103: How do you implement the service container pattern without Laravel?
@@ -2495,7 +2470,7 @@ $service = $container->make(UserService::class);
 
 ---
 
-> This chapter is a living document. As PHP evolves and the ecosystem grows, revisit these questions to stay current. The best interviews test not just knowledge, but the ability to reason about tradeoffs → and the best answers explain *why* over *what*.
+> This chapter is a living document. As PHP evolves and the ecosystem grows, revisit these questions to stay current. The best interviews test not just knowledge, but the ability to reason about tradeoffs â†’ and the best answers explain *why* over *what*.
 ---
 
 ## Concept Comparison

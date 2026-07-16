@@ -1,4 +1,4 @@
-# Chapter 12: Monitoring and Logging
+﻿# Chapter 12: Monitoring and Logging
 
 > **Previous:** [Cloud Platforms](./11-cloud-platforms.md) | **Next:** [Observability](./13-observability.md)
 
@@ -9,16 +9,16 @@ By the end of this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/12-monitoring-logging/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/12-monitoring-logging/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/12-monitoring-logging/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/12-monitoring-logging/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/12-monitoring-logging/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/12-monitoring-logging/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/12-monitoring-logging/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/12-monitoring-logging/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/12-monitoring-logging/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/12-monitoring-logging/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/12-monitoring-logging/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/12-monitoring-logging/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -71,20 +71,20 @@ flowchart LR
 
 Monitoring is the systematic collection, analysis, and visualization of system data to understand behavior, detect anomalies, and support decision making. Effective monitoring answers four questions:
 
-1. **What is broken right now?** (Alerting) — Immediate notification of service degradation
-2. **What is trending in the wrong direction?** (Dashboards) — Visual indicators of approaching problems
-3. **What happened during the incident last night?** (Temporal analysis) — Historical data for root cause
-4. **Why did the system behave that way?** (Diagnostics) — Detailed investigation capabilities
+1. **What is broken right now?** (Alerting) â€” Immediate notification of service degradation
+2. **What is trending in the wrong direction?** (Dashboards) â€” Visual indicators of approaching problems
+3. **What happened during the incident last night?** (Temporal analysis) â€” Historical data for root cause
+4. **Why did the system behave that way?** (Diagnostics) â€” Detailed investigation capabilities
 
-**The USE Method** (Utilization, Saturation, Errors) — For resource-level monitoring:
-- **Utilization** — Percentage of resource being used (CPU %, memory %, disk space %)
-- **Saturation** — Degree of resource contention (queue length, run queue depth)
-- **Errors** — Error counts (disk I/O errors, network interface drops)
+**The USE Method** (Utilization, Saturation, Errors) â€” For resource-level monitoring:
+- **Utilization** â€” Percentage of resource being used (CPU %, memory %, disk space %)
+- **Saturation** â€” Degree of resource contention (queue length, run queue depth)
+- **Errors** â€” Error counts (disk I/O errors, network interface drops)
 
-**The RED Method** (Rate, Errors, Duration) — For service-level monitoring:
-- **Rate** — Requests per second or transactions per second
-- **Errors** — Number of failed requests (explicit 5xx, implicit failures like wrong results)
-- **Duration** — Latency distributions (average, p50, p90, p95, p99)
+**The RED Method** (Rate, Errors, Duration) â€” For service-level monitoring:
+- **Rate** â€” Requests per second or transactions per second
+- **Errors** â€” Number of failed requests (explicit 5xx, implicit failures like wrong results)
+- **Duration** â€” Latency distributions (average, p50, p90, p95, p99)
 
 ### 12.2 Prometheus Architecture
 
@@ -92,23 +92,23 @@ Monitoring is the systematic collection, analysis, and visualization of system d
 Prometheus is a metrics-based monitoring system designed for reliability and operational simplicity.
 
 **Architecture Components:**
-- **Prometheus Server** — Scrapes metrics from targets at configured intervals, stores data in a time-series database. Default scrape interval is 15s.
-- **Exporters** — Agents that expose metrics in Prometheus format:
-  - `node_exporter` — Host-level metrics (CPU, memory, disk, network)
-  - `kube-state-metrics` — Kubernetes object metrics
-  - `blackbox_exporter` — Probes endpoints (HTTP, HTTPS, TCP, ICMP)
+- **Prometheus Server** â€” Scrapes metrics from targets at configured intervals, stores data in a time-series database. Default scrape interval is 15s.
+- **Exporters** â€” Agents that expose metrics in Prometheus format:
+  - `node_exporter` â€” Host-level metrics (CPU, memory, disk, network)
+  - `kube-state-metrics` â€” Kubernetes object metrics
+  - `blackbox_exporter` â€” Probes endpoints (HTTP, HTTPS, TCP, ICMP)
   - Custom application exporters using client libraries
-- **Pushgateway** — Accepts metrics from short-lived jobs that cannot be scraped (batch jobs, scheduled tasks). Used carefully to avoid single points of failure.
-- **Alertmanager** — Handles alerts: deduplication, grouping, routing, silencing, and notification to channels (Slack, PagerDuty, email).
+- **Pushgateway** â€” Accepts metrics from short-lived jobs that cannot be scraped (batch jobs, scheduled tasks). Used carefully to avoid single points of failure.
+- **Alertmanager** â€” Handles alerts: deduplication, grouping, routing, silencing, and notification to channels (Slack, PagerDuty, email).
 
 **Data Model:**
-Metrics are identified by a metric name and key-value label pairs. Prometheus stores data as a time series — a stream of timestamped values belonging to the same metric and label set.
+Metrics are identified by a metric name and key-value label pairs. Prometheus stores data as a time series â€” a stream of timestamped values belonging to the same metric and label set.
 
 **Four Metric Types:**
-1. **Counter** — Monotonically increasing value (requests total, errors total). Cannot decrease, only reset on restart.
-2. **Gauge** — Can go up or down (CPU temperature, memory usage, queue depth).
-3. **Histogram** — Samples observations into configurable buckets. Counts observations in each bucket and provides total count and sum. Use for latency, request sizes.
-4. **Summary** — Similar to histogram but calculates configurable quantiles over a sliding time window on the client side.
+1. **Counter** â€” Monotonically increasing value (requests total, errors total). Cannot decrease, only reset on restart.
+2. **Gauge** â€” Can go up or down (CPU temperature, memory usage, queue depth).
+3. **Histogram** â€” Samples observations into configurable buckets. Counts observations in each bucket and provides total count and sum. Use for latency, request sizes.
+4. **Summary** â€” Similar to histogram but calculates configurable quantiles over a sliding time window on the client side.
 
 ### 12.3 PromQL (Prometheus Query Language)
 
@@ -232,14 +232,14 @@ Grafana visualizes metrics from multiple data sources (Prometheus, Loki, Elastic
 ### 12.8 Loki for Log Aggregation
 
 
-Loki is a log aggregation system designed for cost-effective, scalable log storage. Unlike the ELK stack, Loki does not index log content — it indexes only metadata labels.
+Loki is a log aggregation system designed for cost-effective, scalable log storage. Unlike the ELK stack, Loki does not index log content â€” it indexes only metadata labels.
 
 **Architecture:**
-- **Loki** — Log storage and query engine
-- **Promtail** — Log shipping agent that discovers targets and attaches labels
-- **Grafana** — Query and visualization interface
+- **Loki** â€” Log storage and query engine
+- **Promtail** â€” Log shipping agent that discovers targets and attaches labels
+- **Grafana** â€” Query and visualization interface
 
-**LogQL** — Loki's query language combines log stream selection with PromQL-like aggregation:
+**LogQL** â€” Loki's query language combines log stream selection with PromQL-like aggregation:
 
 ```logql
 # Count errors by service
@@ -258,17 +258,17 @@ topk(5, sum by (service) (count_over_time({job="api"}[1h])))
 ### 12.9 ELK Stack (Elastic Stack)
 
 
-**Elasticsearch** — Distributed search and analytics engine. Stores logs as JSON documents. Provides full-text search, aggregations, and high availability through sharding and replication. Supports near-real-time indexing (refresh interval defaults to 1s).
+**Elasticsearch** â€” Distributed search and analytics engine. Stores logs as JSON documents. Provides full-text search, aggregations, and high availability through sharding and replication. Supports near-real-time indexing (refresh interval defaults to 1s).
 
-**Logstash** — Server-side data processing pipeline. Ingests logs from multiple sources, transforms them (grok parsing, date manipulation, enrichment), and sends to Elasticsearch. Supports plugins for input, filter, and output stages.
+**Logstash** â€” Server-side data processing pipeline. Ingests logs from multiple sources, transforms them (grok parsing, date manipulation, enrichment), and sends to Elasticsearch. Supports plugins for input, filter, and output stages.
 
-**Kibana** — Visualization and management interface. Provides log exploration (Discover), dashboard creation, alerting, machine learning anomaly detection, and system management.
+**Kibana** â€” Visualization and management interface. Provides log exploration (Discover), dashboard creation, alerting, machine learning anomaly detection, and system management.
 
-**Beats** — Lightweight data shippers:
-- **Filebeat** — Log files (tail, multiline, container logs)
-- **Metricbeat** — System metrics (CPU, memory, disk, network)
-- **Heartbeat** — Uptime monitoring (HTTP, TCP, ICMP)
-- **Winlogbeat** — Windows event logs
+**Beats** â€” Lightweight data shippers:
+- **Filebeat** â€” Log files (tail, multiline, container logs)
+- **Metricbeat** â€” System metrics (CPU, memory, disk, network)
+- **Heartbeat** â€” Uptime monitoring (HTTP, TCP, ICMP)
+- **Winlogbeat** â€” Windows event logs
 
 ### 12.10 Structured Logging
 

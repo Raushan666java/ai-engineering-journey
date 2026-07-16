@@ -1,4 +1,4 @@
-# JWT, OAuth2 & OIDC
+﻿# JWT, OAuth2 & OIDC
 > **Previous:** [Authentication & Authorization](25-auth-authz.md) | **Next:** [Method Security, CORS & CSRF](27-method-cors-csrf.md)
 
 Modern applications rarely authenticate against a single database. Users log in via Google, GitHub, or corporate identity providers. APIs authenticate via signed tokens rather than session cookies. Microservices trust claims embedded in JWTs rather than querying a central auth service.
@@ -14,16 +14,16 @@ By the end of this chapter you should be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/26-jwt-oauth2/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/26-jwt-oauth2/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/26-jwt-oauth2/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/26-jwt-oauth2/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/26-jwt-oauth2/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/26-jwt-oauth2/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/26-jwt-oauth2/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/26-jwt-oauth2/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/26-jwt-oauth2/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/26-jwt-oauth2/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/26-jwt-oauth2/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/26-jwt-oauth2/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -44,9 +44,9 @@ By the end of this chapter you should be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|------------|-------------------|
-| JWT → compact, self-contained token format for claims | Sign with RS256; never expose secrets in the payload |
-| OAuth2 → authorization framework with multiple grant types | Use Authorization Code + PKCE for public clients |
-| OpenID Connect → identity layer atop OAuth2 | ID Token (JWT) carries user identity; UserInfo endpoint provides additional claims |
+| JWT â†’ compact, self-contained token format for claims | Sign with RS256; never expose secrets in the payload |
+| OAuth2 â†’ authorization framework with multiple grant types | Use Authorization Code + PKCE for public clients |
+| OpenID Connect â†’ identity layer atop OAuth2 | ID Token (JWT) carries user identity; UserInfo endpoint provides additional claims |
 
 ---
 ## Chapter Roadmap
@@ -102,7 +102,7 @@ flowchart TD
 
 ---
 
-## JWT Ã¢â‚¬â€ JSON Web Token
+## JWT ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â JSON Web Token
 
 ![OAuth2 Authorization Code Flow with JWT](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/26-jwt-oauth2.png)
 
@@ -117,7 +117,7 @@ A JWT consists of three Base64-URL-encoded segments separated by dots:
 header.payload.signature
 ```
 
-**Header** Ã¢â‚¬â€ describes the signing algorithm and token type:
+**Header** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â describes the signing algorithm and token type:
 
 ```json
 {
@@ -127,7 +127,7 @@ header.payload.signature
 }
 ```
 
-**Payload** Ã¢â‚¬â€ contains the claims (statements about the subject):
+**Payload** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â contains the claims (statements about the subject):
 
 ```json
 {
@@ -141,7 +141,7 @@ header.payload.signature
 }
 ```
 
-**Signature** Ã¢â‚¬â€ proves the token was issued by a trusted party and has not been tampered with. For HMAC it is computed as:
+**Signature** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â proves the token was issued by a trusted party and has not been tampered with. For HMAC it is computed as:
 
 ```
 HMACSHA256(
@@ -284,7 +284,7 @@ import java.util.Map;
 
 public class JjwtTokenCreator {
 
-    // HMAC key Ã¢â‚¬â€ in production, load from a secure vault
+    // HMAC key ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â in production, load from a secure vault
     private static final SecretKey SECRET_KEY = Keys.hmacShaKeyFor(
         Base64.getDecoder().decode(
             "dGhpcyBpcyBhIHZlcnkgbG9uZyBzZWNyZXQga2V5IGZvciBKU1dTIHRoYXQgbXVzdCBiZSAyNTYgYml0cyBsb25n"))
@@ -583,7 +583,7 @@ public class TokenBlacklist {
     }
 ```
 
-### Token Service Ã¢â‚¬â€ Complete
+### Token Service ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Complete
 
 
 ```java
@@ -880,7 +880,7 @@ public class ClientCredentialsFlow {
     }
 
     private String extractAccessToken(String responseBody) {
-        // Simple parsing Ã¢â‚¬â€ use Jackson in production
+        // Simple parsing ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â use Jackson in production
         int start = responseBody.indexOf("\"access_token\":\"") + 17;
         int end = responseBody.indexOf("\"", start);
         return responseBody.substring(start, end);
@@ -957,7 +957,7 @@ import java.util.Base64;
 public class RopcFlow {
 
     // WARNING: This flow is deprecated in OAuth 2.1.
-    // The client has access to the user's password Ã¢â‚¬â€ a security risk.
+    // The client has access to the user's password ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â a security risk.
 
     private static final String TOKEN_URL = "https://auth.example.com/token";
     private static final String CLIENT_ID = "legacy-client";
@@ -1771,7 +1771,7 @@ public class IdTokenValidator {
 
         // Standard OIDC claims
         return new IdTokenClaims(
-            claims.getSubject(),           // sub Ã¢â‚¬â€ unique identifier
+            claims.getSubject(),           // sub ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â unique identifier
             claims.get("name", String.class),
             claims.get("email", String.class),
             claims.get("email_verified", Boolean.class),
@@ -1957,7 +1957,7 @@ public class CustomOidcUserService extends OidcUserService {
 ```
 
 > [!NOTE]
-> OIDC is not OAuth2 → it adds user authentication on top of OAuth2 delegation. An ID Token proves who the user is, not what they can access.
+> OIDC is not OAuth2 â†’ it adds user authentication on top of OAuth2 delegation. An ID Token proves who the user is, not what they can access.
 
 ---
 
@@ -2241,7 +2241,7 @@ public class AccountLinkingService {
                 .orElseGet(() -> createNewUser(provider, providerId, email, name));
         }
 
-        // No email Ã¢â‚¬â€ try by provider + providerId
+        // No email ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â try by provider + providerId
         return localUserRepository
             .findByProviderAndProviderId(provider, providerId)
             .orElseGet(() -> createNewUser(provider, providerId, email, name));

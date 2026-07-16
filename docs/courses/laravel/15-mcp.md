@@ -1,4 +1,4 @@
-# Chapter 15: Laravel MCP → Model Context Protocol
+﻿# Chapter 15: Laravel MCP â†’ Model Context Protocol
 > **Previous:** [Laravel AI SDK -- Images, Audio, Transcriptions & Embeddings](./14-ai-sdk-media) | **Next:** [Semantic Search, Vector Search & RAG with pgvector](./16-search-rag)
 
 ---
@@ -13,16 +13,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/15-mcp/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/15-mcp/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/15-mcp/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/15-mcp/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/15-mcp/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/15-mcp/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/15-mcp/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/15-mcp/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/15-mcp/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/15-mcp/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/15-mcp/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/15-mcp/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -81,22 +81,22 @@ The protocol defines three core primitives:
 - **Resources**: Data the AI can read (files, database records, API responses)
 - **Prompts**: Pre-written templates the AI can use (structured interactions)
 
-Laravel MCP (`laravel/mcp`) brings this protocol directly into the Laravel ecosystem. Every MCP server you build is a full Laravel class with access to the entire framework → Eloquent, Queues, Events, Caching, and all your application services. This means an AI agent can, through your MCP server, query your database, trigger business logic, read files, and generate reports using the same code paths your human-driven controllers use.
+Laravel MCP (`laravel/mcp`) brings this protocol directly into the Laravel ecosystem. Every MCP server you build is a full Laravel class with access to the entire framework â†’ Eloquent, Queues, Events, Caching, and all your application services. This means an AI agent can, through your MCP server, query your database, trigger business logic, read files, and generate reports using the same code paths your human-driven controllers use.
 
 The architecture follows this flow:
 
 ```
 AI Agent (Claude, Cursor, etc.)
-    │
-    ▼
+    â”‚
+    â–¼
 MCP Client (dispatches requests)
-    │
-    ▼
+    â”‚
+    â–¼
 MCP Server (Laravel class)
-    │
-    ├─ Tools ──────────► Command-like actions with JSON schemas
-    ├─ Resources ──────► Readable data at URIs
-    └─ Prompts ────────► Structured interaction templates
+    â”‚
+    â”œâ”€ Tools â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–º Command-like actions with JSON schemas
+    â”œâ”€ Resources â”€â”€â”€â”€â”€â”€â–º Readable data at URIs
+    â””â”€ Prompts â”€â”€â”€â”€â”€â”€â”€â”€â–º Structured interaction templates
 ```
 
 A single server class declares its capabilities declaratively via PHP attributes and arrays, then Laravel MCP handles all the JSON-RPC wire protocol automatically.
@@ -188,7 +188,7 @@ use Illuminate\Support\Facades\Route;
 use Laravel\Mcp\Facades\Mcp;
 use App\Mcp\Servers\WeatherServer;
 
-// HTTP server → accessible at /mcp/weather via POST
+// HTTP server â†’ accessible at /mcp/weather via POST
 Mcp::web('/mcp/weather', WeatherServer::class)
 
 > **Warning:** Always add authentication and rate limiting middleware to HTTP MCP servers. An unauthenticated MCP server exposes your application's internal tools and data to anyone who discovers the endpoint.
@@ -200,7 +200,7 @@ Mcp::web('/mcp/analytics', AnalyticsServer::class);
 Mcp::web('/mcp/crm', CrmServer::class);
 ```
 
-The `web` method returns a route builder, so you can chain middleware just like a normal Laravel route. This is critical for production → you can throttle, authenticate, and authorize access to each server independently.
+The `web` method returns a route builder, so you can chain middleware just like a normal Laravel route. This is critical for production â†’ you can throttle, authenticate, and authorize access to each server independently.
 
 **Local servers** are registered for CLI usage. They work with Laravel Boost and Artisan commands, never exposing an HTTP endpoint:
 
@@ -216,7 +216,7 @@ Local servers are invoked via `php artisan mcp:call {server} {tool}` and are ide
 
 > **One-Sentence Takeaway:** MCP tools define inputSchema for parameters, handle() for execution logic, and outputSchema for response documentation.
 
-Tools are the core of MCP → they are the actions an AI agent can invoke. Generate one with:
+Tools are the core of MCP â†’ they are the actions an AI agent can invoke. Generate one with:
 
 ```php
 php artisan make:mcp-tool CurrentWeatherTool
@@ -386,10 +386,10 @@ class ArchiveInvoiceTool extends Tool
 
 The four annotations are:
 
-- `#[IsReadOnly]` → The tool does not modify any state. Safe to preview or call speculatively
-- `#[IsDestructive]` → The tool deletes or permanently modifies data. The AI will exercise extra caution
-- `#[IsIdempotent]` → Calling the tool multiple times with the same arguments produces the same result. Safe to retry after a failure
-- `#[IsOpenWorld]` → The tool interacts with external systems (APIs, third-party services). Results may change between calls
+- `#[IsReadOnly]` â†’ The tool does not modify any state. Safe to preview or call speculatively
+- `#[IsDestructive]` â†’ The tool deletes or permanently modifies data. The AI will exercise extra caution
+- `#[IsIdempotent]` â†’ Calling the tool multiple times with the same arguments produces the same result. Safe to retry after a failure
+- `#[IsOpenWorld]` â†’ The tool interacts with external systems (APIs, third-party services). Results may change between calls
 
 ### 15.7 Tool Responses
 
@@ -471,7 +471,7 @@ Response::audio(
     mimeType: 'audio/mpeg'
 );
 
-// Multi-content array → multiple pieces of content in one response
+// Multi-content array â†’ multiple pieces of content in one response
 Response::multi(
     Response::text(json_encode(['summary' => '...'])),
     Response::fromStorage('files/report.pdf', disk: 'local'),
@@ -1228,9 +1228,9 @@ Mcp::local('weather', WeatherServer::class);
 | Schema | inputSchema + outputSchema | Provider-defined | Tool interface |
 | Deployment | Separate server | Provider-managed | Same app |
 | Use Case | External API access | Web search, files | Database queries |
-| Annotations | IsReadOnly, Destructive | — | — |
+| Annotations | IsReadOnly, Destructive | â€” | â€” |
 
-## Quick Reference — MCP Artisan Commands
+## Quick Reference â€” MCP Artisan Commands
 
 | Command | Purpose |
 |---------|---------|

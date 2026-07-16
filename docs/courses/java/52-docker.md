@@ -1,4 +1,4 @@
-# Docker & Containerization
+﻿# Docker & Containerization
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 
@@ -7,16 +7,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/52-docker/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/52-docker/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/52-docker/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/52-docker/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/52-docker/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/52-docker/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/52-docker/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/52-docker/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/52-docker/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/52-docker/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/52-docker/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/52-docker/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -56,7 +56,7 @@ By the end of this chapter, you will be able to:
 
 ## 1. Why Containerize Spring Boot?
 
-> **Pro Tip:** Test with production-like configurations → dev setups often hide issues that surface under real load.
+> **Pro Tip:** Test with production-like configurations â†’ dev setups often hide issues that surface under real load.
 
 > **Remember:** Start simple. Add complexity only when proven necessary. Premature abstraction creates maintenance burden.
 
@@ -65,15 +65,15 @@ By the end of this chapter, you will be able to:
 
 Containers provide consistent, isolated environments for running applications. For Spring Boot developers, containerization solves:
 
-- **Environment parity** → same image runs identically on a dev laptop, CI server, and production
-- **Dependency encapsulation** → JDK version, OS libraries, and application code ship as one unit
-- **Resource isolation** → CPU and memory limits prevent noisy-neighbor problems
-- **Scaling** → containers are the unit of scaling in Kubernetes, Nomad, and other orchestrators
+- **Environment parity** â†’ same image runs identically on a dev laptop, CI server, and production
+- **Dependency encapsulation** â†’ JDK version, OS libraries, and application code ship as one unit
+- **Resource isolation** â†’ CPU and memory limits prevent noisy-neighbor problems
+- **Scaling** â†’ containers are the unit of scaling in Kubernetes, Nomad, and other orchestrators
 
 A typical Spring Boot Docker workflow:
 
 ```
-Developer → Build JAR → Build Image → Push to Registry → Deploy to Orchestrator
+Developer â†’ Build JAR â†’ Build Image â†’ Push to Registry â†’ Deploy to Orchestrator
 ```
 
 ---
@@ -163,7 +163,7 @@ FROM gcr.io/distroless/java17-debian12
 | libc | glibc |
 | Shell | None |
 
-**Pros:** Minimal attack surface → no shell, no package manager, no utilities.  
+**Pros:** Minimal attack surface â†’ no shell, no package manager, no utilities.  
 **Cons:** Debugging requires `kubectl exec` or ephermeral debug containers.
 
 ### 3.3 Full JDK (For Development)
@@ -182,16 +182,16 @@ Only use for development images where you need `jmap`, `jstack`, `jcmd`, etc.
 # Decision matrix:
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
-# Production runtime   → eclipse-temurin:17-jre-alpine or distroless/java17
+# Production runtime   â†’ eclipse-temurin:17-jre-alpine or distroless/java17
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
-# CI/CD builder stage  → eclipse-temurin:17-jdk-alpine
+# CI/CD builder stage  â†’ eclipse-temurin:17-jdk-alpine
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
-# Dev/debug image      → eclipse-temurin:17-jdk
+# Dev/debug image      â†’ eclipse-temurin:17-jdk
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
-# Native image (Graal) → ubuntu:22.04 or distroless/java-base
+# Native image (Graal) â†’ ubuntu:22.04 or distroless/java-base
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 ```
@@ -236,7 +236,7 @@ Each excluded file means a smaller build context, faster sends to the Docker dae
 FROM eclipse-temurin:17-jdk-alpine AS builder
 WORKDIR /build
 
-# Copy only dependency descriptors first → maximizes cache reuse
+# Copy only dependency descriptors first â†’ maximizes cache reuse
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 COPY pom.xml .
@@ -317,23 +317,23 @@ ENTRYPOINT ["java", "-jar", "/app/app.jar"]
 Each Dockerfile instruction creates a layer. Docker caches each layer and reuses it if nothing changed:
 
 ```dockerfile
-# Layer 1: Base image → cached unless base changes
+# Layer 1: Base image â†’ cached unless base changes
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 FROM eclipse-temurin:17-jre-alpine
 
-# Layer 2: OS packages → cached unless this line changes
+# Layer 2: OS packages â†’ cached unless this line changes
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 RUN apk add --no-cache curl
 
-# Layer 3: Dependencies → cached unless pom.xml changes
+# Layer 3: Dependencies â†’ cached unless pom.xml changes
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 COPY pom.xml .
 RUN ./mvnw dependency:go-offline
 
-# Layer 4: Application → INVALIDATED on every src change
+# Layer 4: Application â†’ INVALIDATED on every src change
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 COPY src src
@@ -382,10 +382,10 @@ Output directory structure:
 
 ```
 extracted/
-├── application/           # Your classes and resources
-├── dependencies/          # Third-party JARs
-├── snapshot-dependencies/ # Snapshot dependencies
-└── spring-boot-loader/    # Spring Boot loader classes
+â”œâ”€â”€ application/           # Your classes and resources
+â”œâ”€â”€ dependencies/          # Third-party JARs
+â”œâ”€â”€ snapshot-dependencies/ # Snapshot dependencies
+â””â”€â”€ spring-boot-loader/    # Spring Boot loader classes
 ```
 
 ### 6.3 Custom Layer Configuration
@@ -439,7 +439,7 @@ FROM eclipse-temurin:17-jre-alpine
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 WORKDIR /app
 
-# Copy layers in dependency order → maximizes cache reuse
+# Copy layers in dependency order â†’ maximizes cache reuse
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 COPY --from=builder /extracted/dependencies/ ./
@@ -563,7 +563,7 @@ volumes:
 
 
 ```yaml
-# docker-compose.override.yml → loaded automatically for dev overrides
+# docker-compose.override.yml â†’ loaded automatically for dev overrides
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 version: "3.9"
@@ -579,7 +579,7 @@ services:
 ```
 
 ```yaml
-# docker-compose.prod.yml → for production-like environments
+# docker-compose.prod.yml â†’ for production-like environments
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 version: "3.9"
@@ -1219,16 +1219,16 @@ Running `docker compose up` works for a single host, but production needs:
 
 
 ```
-┌─────────────────────────────────────────────────┐
-│                    Cluster                        │
-│  ┌──────────┐  ┌──────────┐  ┌──────────┐       │
-│  │  Node 1  │  │  Node 2  │  │  Node 3  │       │
-│  │ ┌──────┐ │  │ ┌──────┐ │  │ ┌──────┐ │       │
-│  │ │ Pod  │ │  │ │ Pod  │ │  │ │ Pod  │ │       │
-│  │ │ App  │ │  │ │ App  │ │  │ │ App  │ │       │
-│  │ └──────┘ │  │ └──────┘ │  │ └──────┘ │       │
-│  └──────────┘  └──────────┘  └──────────┘       │
-└─────────────────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚                    Cluster                        â”‚
+â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”       â”‚
+â”‚  â”‚  Node 1  â”‚  â”‚  Node 2  â”‚  â”‚  Node 3  â”‚       â”‚
+â”‚  â”‚ â”Œâ”€â”€â”€â”€â”€â”€â” â”‚  â”‚ â”Œâ”€â”€â”€â”€â”€â”€â” â”‚  â”‚ â”Œâ”€â”€â”€â”€â”€â”€â” â”‚       â”‚
+â”‚  â”‚ â”‚ Pod  â”‚ â”‚  â”‚ â”‚ Pod  â”‚ â”‚  â”‚ â”‚ Pod  â”‚ â”‚       â”‚
+â”‚  â”‚ â”‚ App  â”‚ â”‚  â”‚ â”‚ App  â”‚ â”‚  â”‚ â”‚ App  â”‚ â”‚       â”‚
+â”‚  â”‚ â””â”€â”€â”€â”€â”€â”€â”˜ â”‚  â”‚ â””â”€â”€â”€â”€â”€â”€â”˜ â”‚  â”‚ â””â”€â”€â”€â”€â”€â”€â”˜ â”‚       â”‚
+â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜       â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### 11.4 Docker Compose vs Kubernetes Mapping
@@ -1292,7 +1292,7 @@ kubectl apply -f k8s-manifests/
 
 ```bash
 #!/bin/bash
-# build.sh → Build Docker images with proper tags
+# build.sh â†’ Build Docker images with proper tags
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 
@@ -1378,7 +1378,7 @@ USER appuser
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 
-# 3. Don't run as PID 1 → use tini for signal handling
+# 3. Don't run as PID 1 â†’ use tini for signal handling
 
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 RUN apk add --no-cache tini
@@ -1435,7 +1435,7 @@ CMD ["java", "-jar", "/app/app.jar"]
 | Multi-stage build | ~200 MB (avoids JDK in runtime) | Medium |
 | Layer optimization | Build speed (not size) | Medium |
 | Spring Boot layered JAR | Build speed (not size) | Medium |
-| GraalVM native image | ~200-300 MB → ~50 MB | High |
+| GraalVM native image | ~200-300 MB â†’ ~50 MB | High |
 | CDS archive | Startup speed (not size) | Medium |
 
 ---
@@ -1460,10 +1460,10 @@ CMD ["java", "-jar", "/app/app.jar"]
 
 | Scenario | Pattern A | Pattern B | Pattern C |
 |----------|-----------|-----------|-----------|
-| Small application | âœ“ | âœ— | âœ“ |
-| Enterprise system | âœ“ | âœ“ | âœ— |
-| High-throughput API | âœ— | âœ“ | âœ“ |
-| Event-driven | âœ— | âœ“ | âœ“ |
+| Small application | Ã¢Å“â€œ | Ã¢Å“â€” | Ã¢Å“â€œ |
+| Enterprise system | Ã¢Å“â€œ | Ã¢Å“â€œ | Ã¢Å“â€” |
+| High-throughput API | Ã¢Å“â€” | Ã¢Å“â€œ | Ã¢Å“â€œ |
+| Event-driven | Ã¢Å“â€” | Ã¢Å“â€œ | Ã¢Å“â€œ |
 
 ## Chapter Quiz
 
@@ -1493,7 +1493,7 @@ CMD ["java", "-jar", "/app/app.jar"]
    - A) For every project regardless of size
    - B) When complexity justifies the overhead
    - C) Only in legacy systems
-   - D) Never → it is outdated
+   - D) Never â†’ it is outdated
 
 <details>
 <summary>Answer&lt;/summary&gt;

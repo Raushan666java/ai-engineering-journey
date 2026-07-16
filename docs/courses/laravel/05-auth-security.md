@@ -1,4 +1,4 @@
-# Chapter 5: Authentication, Authorization & Security
+﻿# Chapter 5: Authentication, Authorization & Security
 > **Previous:** [Eloquent ORM, Database & Migrations](./04-eloquent-database) | **Next:** [Queues, Jobs, Notifications & Mail](./06-queues-notifications)
 
 ---
@@ -15,16 +15,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/05-auth-security/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/05-auth-security/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/05-auth-security/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/05-auth-security/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/05-auth-security/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/05-auth-security/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/05-auth-security/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/05-auth-security/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/05-auth-security/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/05-auth-security/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/05-auth-security/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/05-auth-security/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -454,7 +454,7 @@ Policies are classes that organize authorization logic around a specific model o
 php artisan make:policy PostPolicy
 php artisan make:policy PostPolicy --model=Post // Auto-generates CRUD methods
 
-> **Pro Tip:** Use `php artisan make:policy PostPolicy --model=Post` to auto-generate CRUD policy methods (viewAny, view, create, update, delete, restore, forceDelete) — this saves significant boilerplate.
+> **Pro Tip:** Use `php artisan make:policy PostPolicy --model=Post` to auto-generate CRUD policy methods (viewAny, view, create, update, delete, restore, forceDelete) â€” this saves significant boilerplate.
 ```
 
 ```php
@@ -1136,7 +1136,7 @@ Route::get('/email/verify/{id}/{hash}', function (Request $request) {
 | Complexity | Simple checks | Complex, multi-ability logic |
 | Best For | Admin checks, feature flags | Model resource authorization |
 
-## Quick Reference — Auth Middleware
+## Quick Reference â€” Auth Middleware
 
 | Middleware | Purpose |
 |-----------|---------|

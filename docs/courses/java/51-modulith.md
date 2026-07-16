@@ -1,4 +1,4 @@
-# Spring Modulith
+﻿# Spring Modulith
 
 > **Previous:** [Spring Integration](./50-integration.md) | **Next:** [Docker &amp; Containerization](./52-docker.md)
 
@@ -7,16 +7,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/51-modulith/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/51-modulith/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/51-modulith/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/51-modulith/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/51-modulith/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/51-modulith/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/51-modulith/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/51-modulith/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/java/51-modulith/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/java/51-modulith/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/java/51-modulith/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/java/51-modulith/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -56,14 +56,14 @@ By the end of this chapter, you will be able to:
 
 ## 1. Spring Modulith Overview
 
-> **Pro Tip:** Test with production-like configurations → dev setups often hide issues that surface under real load.
+> **Pro Tip:** Test with production-like configurations â†’ dev setups often hide issues that surface under real load.
 
 > **Remember:** Start simple. Add complexity only when proven necessary. Premature abstraction creates maintenance burden.
 
 
 ![Spring Modulith - Modular Monolith Architecture](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/51-modulith.png)
 
-Spring Modulith helps architects and developers structure Spring Boot applications as modular monoliths → a middle ground between traditional monoliths and microservices. It enforces module boundaries, enables event-driven integration, and provides a clear path to eventual microservice extraction.
+Spring Modulith helps architects and developers structure Spring Boot applications as modular monoliths â†’ a middle ground between traditional monoliths and microservices. It enforces module boundaries, enables event-driven integration, and provides a clear path to eventual microservice extraction.
 
 ### 1.1 Maven Dependencies
 
@@ -198,119 +198,119 @@ logging:
 
 ```
 src/main/java/com/aiengineering/course/
-├── CourseApplication.java
-├── shared/
-│   ├── SharedKernel.java
-│   └── types/
-│       ├── Money.java
-│       ├── Address.java
-│       ├── Email.java
-│       └── PhoneNumber.java
-├── catalog/
-│   ├── CatalogModule.java
-│   ├── domain/
-│   │   ├── Product.java
-│   │   ├── Category.java
-│   │   ├── InventoryItem.java
-│   │   └── ProductRepository.java
-│   ├── application/
-│   │   ├── ProductService.java
-│   │   ├── InventoryService.java
-│   │   └── dto/
-│   │       ├── ProductDto.java
-│   │       ├── ProductCreateRequest.java
-│   │       └── InventoryDto.java
-│   └── internal/
-│       ├── ProductEventHandler.java
-│       └── ProductValidator.java
-├── order/
-│   ├── OrderModule.java
-│   ├── domain/
-│   │   ├── Order.java
-│   │   ├── OrderItem.java
-│   │   ├── OrderRepository.java
-│   │   ├── OrderStatus.java
-│   │   └── events/
-│   │       ├── OrderPlacedEvent.java
-│   │       ├── OrderShippedEvent.java
-│   │       └── OrderCancelledEvent.java
-│   ├── application/
-│   │   ├── OrderService.java
-│   │   ├── OrderPlacement.java
-│   │   └── dto/
-│   │       ├── OrderDto.java
-│   │       └── OrderCreateRequest.java
-│   └── internal/
-│       ├── OrderEventListener.java
-│       └── OrderValidator.java
-├── payment/
-│   ├── PaymentModule.java
-│   ├── domain/
-│   │   ├── Payment.java
-│   │   ├── PaymentMethod.java
-│   │   ├── PaymentStatus.java
-│   │   ├── PaymentRepository.java
-│   │   └── events/
-│   │       └── PaymentCompletedEvent.java
-│   ├── application/
-│   │   ├── PaymentService.java
-│   │   └── dto/
-│   │       └── PaymentDto.java
-│   └── internal/
-│       └── PaymentProcessor.java
-├── inventory/
-│   ├── InventoryModule.java
-│   ├── domain/
-│   │   ├── Stock.java
-│   │   ├── Warehouse.java
-│   │   ├── StockMovement.java
-│   │   └── StockRepository.java
-│   ├── application/
-│   │   ├── InventoryService.java
-│   │   └── dto/
-│   │       ├── StockDto.java
-│   │       └── StockReservation.java
-│   └── internal/
-│       └── StockReservationHandler.java
-├── notification/
-│   ├── NotificationModule.java
-│   ├── domain/
-│   │   ├── Notification.java
-│   │   └── NotificationType.java
-│   ├── application/
-│   │   ├── NotificationService.java
-│   │   └── dto/
-│   │       └── NotificationDto.java
-│   └── internal/
-│       ├── EmailSender.java
-│       ├── SmsSender.java
-│       └── PushNotificationSender.java
-├── shipping/
-│   ├── ShippingModule.java
-│   ├── domain/
-│   │   ├── Shipment.java
-│   │   ├── Carrier.java
-│   │   └── ShipmentStatus.java
-│   └── application/
-│       ├── ShippingService.java
-│       └── dto/
-│           └── ShipmentDto.java
-├── customer/
-│   ├── CustomerModule.java
-│   ├── domain/
-│   │   ├── Customer.java
-│   │   └── CustomerRepository.java
-│   └── application/
-│       ├── CustomerService.java
-│       └── dto/
-│           └── CustomerDto.java
-└── api/
-    ├── ApiModule.java
-    └── rest/
-        ├── OrderController.java
-        ├── CatalogController.java
-        ├── PaymentController.java
-        └── CustomerController.java
+â”œâ”€â”€ CourseApplication.java
+â”œâ”€â”€ shared/
+â”‚   â”œâ”€â”€ SharedKernel.java
+â”‚   â””â”€â”€ types/
+â”‚       â”œâ”€â”€ Money.java
+â”‚       â”œâ”€â”€ Address.java
+â”‚       â”œâ”€â”€ Email.java
+â”‚       â””â”€â”€ PhoneNumber.java
+â”œâ”€â”€ catalog/
+â”‚   â”œâ”€â”€ CatalogModule.java
+â”‚   â”œâ”€â”€ domain/
+â”‚   â”‚   â”œâ”€â”€ Product.java
+â”‚   â”‚   â”œâ”€â”€ Category.java
+â”‚   â”‚   â”œâ”€â”€ InventoryItem.java
+â”‚   â”‚   â””â”€â”€ ProductRepository.java
+â”‚   â”œâ”€â”€ application/
+â”‚   â”‚   â”œâ”€â”€ ProductService.java
+â”‚   â”‚   â”œâ”€â”€ InventoryService.java
+â”‚   â”‚   â””â”€â”€ dto/
+â”‚   â”‚       â”œâ”€â”€ ProductDto.java
+â”‚   â”‚       â”œâ”€â”€ ProductCreateRequest.java
+â”‚   â”‚       â””â”€â”€ InventoryDto.java
+â”‚   â””â”€â”€ internal/
+â”‚       â”œâ”€â”€ ProductEventHandler.java
+â”‚       â””â”€â”€ ProductValidator.java
+â”œâ”€â”€ order/
+â”‚   â”œâ”€â”€ OrderModule.java
+â”‚   â”œâ”€â”€ domain/
+â”‚   â”‚   â”œâ”€â”€ Order.java
+â”‚   â”‚   â”œâ”€â”€ OrderItem.java
+â”‚   â”‚   â”œâ”€â”€ OrderRepository.java
+â”‚   â”‚   â”œâ”€â”€ OrderStatus.java
+â”‚   â”‚   â””â”€â”€ events/
+â”‚   â”‚       â”œâ”€â”€ OrderPlacedEvent.java
+â”‚   â”‚       â”œâ”€â”€ OrderShippedEvent.java
+â”‚   â”‚       â””â”€â”€ OrderCancelledEvent.java
+â”‚   â”œâ”€â”€ application/
+â”‚   â”‚   â”œâ”€â”€ OrderService.java
+â”‚   â”‚   â”œâ”€â”€ OrderPlacement.java
+â”‚   â”‚   â””â”€â”€ dto/
+â”‚   â”‚       â”œâ”€â”€ OrderDto.java
+â”‚   â”‚       â””â”€â”€ OrderCreateRequest.java
+â”‚   â””â”€â”€ internal/
+â”‚       â”œâ”€â”€ OrderEventListener.java
+â”‚       â””â”€â”€ OrderValidator.java
+â”œâ”€â”€ payment/
+â”‚   â”œâ”€â”€ PaymentModule.java
+â”‚   â”œâ”€â”€ domain/
+â”‚   â”‚   â”œâ”€â”€ Payment.java
+â”‚   â”‚   â”œâ”€â”€ PaymentMethod.java
+â”‚   â”‚   â”œâ”€â”€ PaymentStatus.java
+â”‚   â”‚   â”œâ”€â”€ PaymentRepository.java
+â”‚   â”‚   â””â”€â”€ events/
+â”‚   â”‚       â””â”€â”€ PaymentCompletedEvent.java
+â”‚   â”œâ”€â”€ application/
+â”‚   â”‚   â”œâ”€â”€ PaymentService.java
+â”‚   â”‚   â””â”€â”€ dto/
+â”‚   â”‚       â””â”€â”€ PaymentDto.java
+â”‚   â””â”€â”€ internal/
+â”‚       â””â”€â”€ PaymentProcessor.java
+â”œâ”€â”€ inventory/
+â”‚   â”œâ”€â”€ InventoryModule.java
+â”‚   â”œâ”€â”€ domain/
+â”‚   â”‚   â”œâ”€â”€ Stock.java
+â”‚   â”‚   â”œâ”€â”€ Warehouse.java
+â”‚   â”‚   â”œâ”€â”€ StockMovement.java
+â”‚   â”‚   â””â”€â”€ StockRepository.java
+â”‚   â”œâ”€â”€ application/
+â”‚   â”‚   â”œâ”€â”€ InventoryService.java
+â”‚   â”‚   â””â”€â”€ dto/
+â”‚   â”‚       â”œâ”€â”€ StockDto.java
+â”‚   â”‚       â””â”€â”€ StockReservation.java
+â”‚   â””â”€â”€ internal/
+â”‚       â””â”€â”€ StockReservationHandler.java
+â”œâ”€â”€ notification/
+â”‚   â”œâ”€â”€ NotificationModule.java
+â”‚   â”œâ”€â”€ domain/
+â”‚   â”‚   â”œâ”€â”€ Notification.java
+â”‚   â”‚   â””â”€â”€ NotificationType.java
+â”‚   â”œâ”€â”€ application/
+â”‚   â”‚   â”œâ”€â”€ NotificationService.java
+â”‚   â”‚   â””â”€â”€ dto/
+â”‚   â”‚       â””â”€â”€ NotificationDto.java
+â”‚   â””â”€â”€ internal/
+â”‚       â”œâ”€â”€ EmailSender.java
+â”‚       â”œâ”€â”€ SmsSender.java
+â”‚       â””â”€â”€ PushNotificationSender.java
+â”œâ”€â”€ shipping/
+â”‚   â”œâ”€â”€ ShippingModule.java
+â”‚   â”œâ”€â”€ domain/
+â”‚   â”‚   â”œâ”€â”€ Shipment.java
+â”‚   â”‚   â”œâ”€â”€ Carrier.java
+â”‚   â”‚   â””â”€â”€ ShipmentStatus.java
+â”‚   â””â”€â”€ application/
+â”‚       â”œâ”€â”€ ShippingService.java
+â”‚       â””â”€â”€ dto/
+â”‚           â””â”€â”€ ShipmentDto.java
+â”œâ”€â”€ customer/
+â”‚   â”œâ”€â”€ CustomerModule.java
+â”‚   â”œâ”€â”€ domain/
+â”‚   â”‚   â”œâ”€â”€ Customer.java
+â”‚   â”‚   â””â”€â”€ CustomerRepository.java
+â”‚   â””â”€â”€ application/
+â”‚       â”œâ”€â”€ CustomerService.java
+â”‚       â””â”€â”€ dto/
+â”‚           â””â”€â”€ CustomerDto.java
+â””â”€â”€ api/
+    â”œâ”€â”€ ApiModule.java
+    â””â”€â”€ rest/
+        â”œâ”€â”€ OrderController.java
+        â”œâ”€â”€ CatalogController.java
+        â”œâ”€â”€ PaymentController.java
+        â””â”€â”€ CustomerController.java
 ```
 
 ---
@@ -2491,10 +2491,10 @@ public class MigrationPlanner {
 
 | Scenario | Pattern A | Pattern B | Pattern C |
 |----------|-----------|-----------|-----------|
-| Small application | âœ“ | âœ— | âœ“ |
-| Enterprise system | âœ“ | âœ“ | âœ— |
-| High-throughput API | âœ— | âœ“ | âœ“ |
-| Event-driven | âœ— | âœ“ | âœ“ |
+| Small application | Ã¢Å“â€œ | Ã¢Å“â€” | Ã¢Å“â€œ |
+| Enterprise system | Ã¢Å“â€œ | Ã¢Å“â€œ | Ã¢Å“â€” |
+| High-throughput API | Ã¢Å“â€” | Ã¢Å“â€œ | Ã¢Å“â€œ |
+| Event-driven | Ã¢Å“â€” | Ã¢Å“â€œ | Ã¢Å“â€œ |
 
 ## Chapter Quiz
 
@@ -2524,7 +2524,7 @@ public class MigrationPlanner {
    - A) For every project regardless of size
    - B) When complexity justifies the overhead
    - C) Only in legacy systems
-   - D) Never → it is outdated
+   - D) Never â†’ it is outdated
 
 <details>
 <summary>Answer&lt;/summary&gt;

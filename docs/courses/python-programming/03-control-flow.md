@@ -1,4 +1,4 @@
-# Chapter 3: Control Flow
+﻿# Chapter 3: Control Flow
 
 
 > **Previous:** [Variables, Types, and Operators](./02-variables.md) | **Next:** [Loops and Iteration](./04-loops.md)
@@ -14,16 +14,16 @@ By the end of this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/03-control-flow/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/03-control-flow/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/03-control-flow/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/03-control-flow/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/03-control-flow/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/03-control-flow/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/03-control-flow/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/03-control-flow/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/03-control-flow/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/03-control-flow/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/03-control-flow/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/03-control-flow/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -683,7 +683,7 @@ function grade(score: number): string {
 const status: string = grade(85) === "A" ? "Excellent" : "Keep trying";
 // Equivalent Python: status = "Excellent" if grade(85) == "A" else "Keep trying"
 
-// Python: match-case (3.10+) → TypeScript: switch
+// Python: match-case (3.10+) â†’ TypeScript: switch
 function describe(value: unknown): string {
   switch (typeof value) {
     case "number":
@@ -729,13 +729,13 @@ const score = 85;
 const grade2 = score >= 90 ? "A" : score >= 80 ? "B" : score >= 70 ? "C" : "F";
 // Equivalent Python: "A" if score >= 90 else "B" if score >= 80 else "C" else "F"
 
-// Python: short-circuit for default values → TypeScript: ??
+// Python: short-circuit for default values â†’ TypeScript: ??
 function getConfigValue(key: string, fallback: string): string {
   return process.env[key] ?? fallback;
 }
 // Python: os.environ.get(key, fallback)
 
-// Python: match-case with OR patterns → TypeScript: fallthrough switch
+// Python: match-case with OR patterns â†’ TypeScript: fallthrough switch
 function isWeekend(day: string): boolean {
   switch (day.toLowerCase()) {
     case "saturday":
@@ -747,7 +747,7 @@ function isWeekend(day: string): boolean {
 }
 // Python: match day: case "saturday" | "sunday": return True
 
-// Python: match-case with guards → TypeScript: if-else chain
+// Python: match-case with guards â†’ TypeScript: if-else chain
 interface Admin { kind: "admin"; permissions: string[]; }
 interface User { kind: "user"; email: string; }
 type Account = Admin | User;
@@ -762,7 +762,7 @@ function getInfo(account: Account): string {
   return "Unknown";
 }
 
-// Python: while-else → TypeScript: flag-based pattern
+// Python: while-else â†’ TypeScript: flag-based pattern
 let attempts = 0;
 let connected = false;
 while (attempts < 3 && !connected) {

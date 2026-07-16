@@ -1,4 +1,4 @@
-# Chapter 8: Configuration Management
+﻿# Chapter 8: Configuration Management
 
 > **Prev:** [Kubernetes](./07-kubernetes.md)
 > **Next:** [Kubernetes Advanced](./08-k8s-advanced.md)
@@ -17,16 +17,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/08-configuration-management/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/08-configuration-management/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/08-configuration-management/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/08-configuration-management/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/08-configuration-management/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/08-configuration-management/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/08-configuration-management/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/08-configuration-management/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/devops/08-configuration-management/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/devops/08-configuration-management/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/devops/08-configuration-management/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/devops/08-configuration-management/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -104,7 +104,7 @@ Idempotency is the property that a configuration management operation can be app
 ### Ansible Architecture
 
 
-Ansible is agentless — it connects via SSH (or WinRM for Windows) and pushes modules to execute:
+Ansible is agentless â€” it connects via SSH (or WinRM for Windows) and pushes modules to execute:
 
 ```mermaid
 flowchart LR
@@ -171,17 +171,17 @@ Roles organize playbooks, variables, files, templates, and handlers into reusabl
 ```text
 roles/
 +-- common/
-¦   +-- tasks/main.yml
-¦   +-- handlers/main.yml
-¦   +-- templates/
-¦   +-- files/
-¦   +-- vars/main.yml
-¦   +-- defaults/main.yml
+Â¦   +-- tasks/main.yml
+Â¦   +-- handlers/main.yml
+Â¦   +-- templates/
+Â¦   +-- files/
+Â¦   +-- vars/main.yml
+Â¦   +-- defaults/main.yml
 +-- nginx/
-¦   +-- tasks/main.yml
-¦   +-- templates/nginx.conf.j2
-¦   +-- vars/main.yml
-¦   +-- meta/main.yml
+Â¦   +-- tasks/main.yml
+Â¦   +-- templates/nginx.conf.j2
+Â¦   +-- vars/main.yml
+Â¦   +-- meta/main.yml
 +-- app/
     +-- tasks/main.yml
     +-- templates/app.env.j2
@@ -554,7 +554,7 @@ class DriftDetector {
     let output = '# Configuration Drift Report\n\n';
 
     if (report.compliant) {
-      output += '? All systems are compliant — no drift detected.\n';
+      output += '? All systems are compliant â€” no drift detected.\n';
       return output;
     }
 
@@ -802,7 +802,7 @@ console.log('Recovery plan:', backupMgr.planRecovery(v2.id));
 ## Practical Takeaways
 
 1. **Use Ansible for agentless configuration management.** No agents to install or maintain.
-2. **Design for idempotency.** Always use `state=present`, `state=started` — not imperative commands.
+2. **Design for idempotency.** Always use `state=present`, `state=started` â€” not imperative commands.
 3. **Structure with roles.** Roles make playbooks reusable across projects.
 4. **Use templates for dynamic config.** Keep configuration files generic with Jinja2 variables.
 5. **Encrypt secrets with Ansible Vault.** Never store plaintext passwords in playbooks.
@@ -812,7 +812,7 @@ console.log('Recovery plan:', backupMgr.planRecovery(v2.id));
 
 ## Chapter Quiz
 
-<details><summary>Question 1: What makes Ansible different from Puppet and Chef?</summary>**A)** Ansible uses a master-agent architecture<br>**B)** Ansible is agentless — it connects via SSH<br>**C)** Ansible is written in Ruby<br>**D)** Ansible is pull-based<br><br>**Answer: B)** Ansible is agentless — it connects via SSH&lt;/details&gt;
+<details><summary>Question 1: What makes Ansible different from Puppet and Chef?</summary>**A)** Ansible uses a master-agent architecture<br>**B)** Ansible is agentless â€” it connects via SSH<br>**C)** Ansible is written in Ruby<br>**D)** Ansible is pull-based<br><br>**Answer: B)** Ansible is agentless â€” it connects via SSH&lt;/details&gt;
 
 <details><summary>Question 2: What does idempotency mean in configuration management?</summary>**A)** Running a playbook multiple times produces different results<br>**B)** Running a playbook multiple times produces the same result<br>**C)** A playbook runs only once<br>**D)** A playbook requires root access<br><br>**Answer: B)** Running a playbook multiple times produces the same result&lt;/details&gt;
 

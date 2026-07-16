@@ -1,8 +1,8 @@
-# Requirements Engineering
+﻿# Requirements Engineering
 
 ## Learning Objectives
 
-> ✅ After completing this chapter, the student will be able to:
+> âœ… After completing this chapter, the student will be able to:
 > - Classify requirements as functional, non-functional, and domain requirements
 > - Apply FURPS+ classification to organise requirements comprehensively
 > - Conduct a feasibility study for a proposed software system across technical, economic, and operational dimensions
@@ -18,16 +18,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/02-requirements/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/software-engineering/02-requirements/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/02-requirements/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/software-engineering/02-requirements/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/02-requirements/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/software-engineering/02-requirements/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/02-requirements/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/software-engineering/02-requirements/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/software-engineering/02-requirements/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/software-engineering/02-requirements/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/software-engineering/02-requirements/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/software-engineering/02-requirements/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -62,7 +62,7 @@ Requirements are classified into three categories:
 
 **Functional requirements** describe the services the system should provide, how it should react to particular inputs, and how it should behave in specific situations. Example: *"The system shall allow registered borrowers to search the catalogue by author, title, or subject."*
 
-**Non-functional requirements** are constraints on the services or functions offered by the system. They encompass quality attributes such as performance, security, availability, usability, and maintainability. These are often more critical than functional requirements — a system that fails to meet a non-functional requirement may be unacceptable even if all functions work correctly. For example, an e-commerce site that loads in 10 seconds will lose customers regardless of its feature set.
+**Non-functional requirements** are constraints on the services or functions offered by the system. They encompass quality attributes such as performance, security, availability, usability, and maintainability. These are often more critical than functional requirements â€” a system that fails to meet a non-functional requirement may be unacceptable even if all functions work correctly. For example, an e-commerce site that loads in 10 seconds will lose customers regardless of its feature set.
 
 **Domain requirements** reflect the characteristics of the application domain. They may be functional or non-functional and are derived from the domain context. Example: *"Interest must be calculated on a daily basis using the compound interest formula."*
 
@@ -171,10 +171,10 @@ Feature: Book Search
 
 #### IEEE 830 SRS Format
 
-1. **Introduction** — Purpose, scope, definitions, references, overview
-2. **General Description** — Product perspective, user characteristics, constraints, assumptions, dependencies
-3. **Specific Requirements** — Functional requirements (by mode/feature), external interface requirements, performance requirements, design constraints, software system attributes (security, reliability, maintainability, portability)
-4. **Appendices** — Glossary, models, issues list
+1. **Introduction** â€” Purpose, scope, definitions, references, overview
+2. **General Description** â€” Product perspective, user characteristics, constraints, assumptions, dependencies
+3. **Specific Requirements** â€” Functional requirements (by mode/feature), external interface requirements, performance requirements, design constraints, software system attributes (security, reliability, maintainability, portability)
+4. **Appendices** â€” Glossary, models, issues list
 
 #### Use Cases
 
@@ -208,7 +208,7 @@ The Kano model, developed by Noriaki Kano, categorises requirements by their eff
 
 ```mermaid
 graph TD
-    subgraph "Kano Model — Satisfaction Analysis"
+    subgraph "Kano Model â€” Satisfaction Analysis"
         direction LR
         A[Basic Needs<br/>Threshold] -->|Must be present| S1[Neutral if present<br/>Dissatisfied if absent]
         B[Performance Needs<br/>Linear] -->|More is better| S2[Satisfaction increases<br/>with performance]
@@ -229,7 +229,7 @@ graph TD
     class E reverse
 ```
 
-- **Basic Needs (Threshold):** Expected features — their absence causes dissatisfaction. Example: brakes on a car.
+- **Basic Needs (Threshold):** Expected features â€” their absence causes dissatisfaction. Example: brakes on a car.
 - **Performance Needs:** Features where better performance increases satisfaction. Example: battery life on a phone.
 - **Delighters (Attractive):** Unexpected features that delight customers. Example: free charging cable in the box.
 - **Indifferent:** Features that neither delight nor frustrate.
@@ -330,7 +330,7 @@ graph TD
 
 ## Examples
 
-### Example 1: TypeScript RequirementsManager — Full CRUD with Traceability
+### Example 1: TypeScript RequirementsManager â€” Full CRUD with Traceability
 
 ```typescript
 type RequirementType = 'functional' | 'non-functional' | 'domain';
@@ -532,7 +532,7 @@ console.log(rm.impactAnalysis(req1.id));
 console.log(rm.getStatistics());
 ```
 
-### Example 2: UseCaseGenerator — from User Stories
+### Example 2: UseCaseGenerator â€” from User Stories
 
 ```typescript
 interface UserStory {
@@ -662,7 +662,7 @@ const useCase = generator.generateFromStory(story);
 console.log(generator.formatUseCase(useCase));
 ```
 
-### Example 3: RequirementsValidator — SMART, Consistency, FURPS+
+### Example 3: RequirementsValidator â€” SMART, Consistency, FURPS+
 
 ```typescript
 interface RequirementSpec {
@@ -745,7 +745,7 @@ class RequirementsValidator {
       rule: 'testable-statement',
       passed: hasKeyword,
       severity: 'error',
-      message: hasKeyword ? 'Contains verifiable keyword' : 'Missing "shall" or "must" — requirement may not be testable',
+      message: hasKeyword ? 'Contains verifiable keyword' : 'Missing "shall" or "must" â€” requirement may not be testable',
     };
   }
 
@@ -755,7 +755,7 @@ class RequirementsValidator {
       rule: 'no-vague-terms',
       passed: !matches,
       severity: 'error',
-      message: matches ? `Contains vague term(s): "${matches.join(', ')}" — replace with specific criteria` : 'No vague terms',
+      message: matches ? `Contains vague term(s): "${matches.join(', ')}" â€” replace with specific criteria` : 'No vague terms',
     };
   }
 
@@ -775,7 +775,7 @@ class RequirementsValidator {
       rule: 'no-ambiguous-quantifiers',
       passed: !matches,
       severity: 'warning',
-      message: matches ? `Ambiguous quantifier(s): "${matches.join(', ')}" — use exact numbers` : 'No ambiguous quantifiers',
+      message: matches ? `Ambiguous quantifier(s): "${matches.join(', ')}" â€” use exact numbers` : 'No ambiguous quantifiers',
     };
   }
 
@@ -807,7 +807,7 @@ class RequirementsValidator {
       rule: 'no-absolute-terms',
       passed: !matches,
       severity: 'warning',
-      message: matches ? `Absolute term(s): "${matches.join(', ')}" — consider softening` : 'No absolute terms',
+      message: matches ? `Absolute term(s): "${matches.join(', ')}" â€” consider softening` : 'No absolute terms',
     };
   }
 
@@ -818,7 +818,7 @@ class RequirementsValidator {
       rule: 'consistent-keyword',
       passed: !(hasShall && hasShould),
       severity: 'warning',
-      message: hasShall && hasShould ? 'Mixed "shall" and "should" — be consistent' : 'Consistent keyword usage',
+      message: hasShall && hasShould ? 'Mixed "shall" and "should" â€” be consistent' : 'Consistent keyword usage',
     };
   }
 
@@ -888,12 +888,12 @@ class RequirementQualityAnalyzer {
     if (req.text.length < 15) { issues.push("Too short (< 15 chars)"); score -= 20; }
     if (/(and\/or|etc|e\.g\.|i\.e\.)/i.test(req.text)) { issues.push("Contains ambiguous connectors"); score -= 10; }
     if (/fast|quick|easy|user-friendly|robust|efficient|simple|modern/i.test(req.text)) { issues.push("Subjective terms"); score -= 15; }
-    if (/\bshould\b/i.test(req.text) && !/\bshall\b/i.test(req.text)) { issues.push("Weak language — use 'shall'"); score -= 10; }
+    if (/\bshould\b/i.test(req.text) && !/\bshall\b/i.test(req.text)) { issues.push("Weak language â€” use 'shall'"); score -= 10; }
     if (!/^[A-Z]/.test(req.text.trim())) { issues.push("Should start with capital letter"); score -= 5; }
     if (!/[.?!;]$/.test(req.text.trim())) { issues.push("Missing terminal punctuation"); score -= 5; }
     if (/\b(always|never|all|every|none)\b/i.test(req.text)) { issues.push("Contains absolute terms"); score -= 10; }
     if (!/\d+/.test(req.text) && req.priority === "MUST") { issues.push("MUST priority lacks measurable criteria"); score -= 15; }
-    if (/\b(support|handle|manage|deal with)\b/i.test(req.text)) { issues.push("Vague verb — specify exact behaviour"); score -= 10; }
+    if (/\b(support|handle|manage|deal with)\b/i.test(req.text)) { issues.push("Vague verb â€” specify exact behaviour"); score -= 10; }
     const grade = score >= 90 ? 'A' : score >= 75 ? 'B' : score >= 60 ? 'C' : score >= 40 ? 'D' : 'F';
     return { id: req.id, issues, score: Math.max(0, score), grade };
   }
@@ -958,9 +958,9 @@ console.log(analyzer.findInconsistencies(reqs));
 
 ### Case Study: SRS for a Library Management System
 
-A university library commissioned a new management system. The requirements team conducted interviews with librarians, library patrons, and IT staff. They distributed surveys to 500 library users and observed the circulation desk during peak hours. The resulting SRS included 73 functional requirements organised by subsystem, 18 non-functional requirements covering performance and security, and domain requirements specifying the Library of Congress classification system. A requirements traceability matrix linked every requirement to its source and test cases. The project was delivered on time with 94% of requirements fully met — the remaining 6% were deferred to a second release after MoSCoW re-prioritisation.
+A university library commissioned a new management system. The requirements team conducted interviews with librarians, library patrons, and IT staff. They distributed surveys to 500 library users and observed the circulation desk during peak hours. The resulting SRS included 73 functional requirements organised by subsystem, 18 non-functional requirements covering performance and security, and domain requirements specifying the Library of Congress classification system. A requirements traceability matrix linked every requirement to its source and test cases. The project was delivered on time with 94% of requirements fully met â€” the remaining 6% were deferred to a second release after MoSCoW re-prioritisation.
 
-### Case Study: Requirements Failure — The Denver Airport Baggage System
+### Case Study: Requirements Failure â€” The Denver Airport Baggage System
 
 The Denver International Airport automated baggage handling system (1995) is a classic requirements failure. The system was specified to handle 1,000 bags per hour across 20 airlines with 99.9% reliability. Requirements were incomplete: the system was designed for standard bags only, but oversized items (skis, golf bags) were not addressed. The integration of 400+ individual robots required complex coordination that was underestimated. After $560M in overruns (300% over budget) and 16 months delay, the airport opened with a manual backup system. The key lesson: non-functional requirements (integration complexity, fault tolerance, edge case handling) are as critical as functional requirements.
 
@@ -981,36 +981,36 @@ Modern teams often blend both: an initial requirements catalogue (lightweight SR
 
 ### Goal-Oriented Requirements Engineering (GORE)
 
-Goal-Oriented Requirements Engineering approaches — such as KAOS and i* — focus on identifying and modelling stakeholder **goals** rather than just functional requirements. Goals drive the requirements process by providing rationale for why requirements exist:
+Goal-Oriented Requirements Engineering approaches â€” such as KAOS and i* â€” focus on identifying and modelling stakeholder **goals** rather than just functional requirements. Goals drive the requirements process by providing rationale for why requirements exist:
 
 - **Goal types:** Functional goals (what the system should do) and soft goals (quality attributes that cannot be precisely measured)
 - **Goal refinement:** High-level goals are AND/OR decomposed into sub-goals until they become operationalisable requirements
-- **Conflict detection:** Goals from different stakeholders may conflict (e.g., "fast response" vs "low cost") — GORE makes these conflicts explicit
+- **Conflict detection:** Goals from different stakeholders may conflict (e.g., "fast response" vs "low cost") â€” GORE makes these conflicts explicit
 
-Example — Library System:
+Example â€” Library System:
 - **High-level goal:** Improve patron access to library resources
-  - **Sub-goal (AND):** Allow 24/7 digital access → requirement: web catalogue
-  - **Sub-goal (AND):** Reduce checkout wait times → requirement: self-service kiosks
+  - **Sub-goal (AND):** Allow 24/7 digital access â†’ requirement: web catalogue
+  - **Sub-goal (AND):** Reduce checkout wait times â†’ requirement: self-service kiosks
   - **Alternative (OR):** Implement RFID tagging OR barcode scanning
-  - **Soft goal:** Easy to use → evaluated through usability testing
+  - **Soft goal:** Easy to use â†’ evaluated through usability testing
 
-### Real-World Example: Requirements Failure — The London Ambulance Service
+### Real-World Example: Requirements Failure â€” The London Ambulance Service
 
 The London Ambulance Service Computer-Aided Despatch (LAS CAD) system failure (1992) is a textbook requirements engineering disaster. The system was intended to automate ambulance despatch across Greater London. Key requirements failures included:
 - **Incomplete elicitation:** Despatchers' complex workflow was not fully understood (they used paper maps, local knowledge, and informal radio communication that were not documented)
-- **Missing non-functional requirements:** The system needed to handle 2,000+ calls per day with 3-second response time — this was specified but never verified under load
+- **Missing non-functional requirements:** The system needed to handle 2,000+ calls per day with 3-second response time â€” this was specified but never verified under load
 - **Domain requirements missed:** Ambulance crews needed to make decisions based on contextual knowledge (traffic, weather, crew experience) that the system couldn't model
 - **No fallback mode:** When the system failed (which it did 36 times in 2 days), there was no graceful degradation to manual operation
 
-**Result:** The system was withdrawn after 2 days of operation. Estimated cost: £1.5M (1992). Lives were potentially put at risk. The key lesson: requirements engineering for safety-critical systems must include exhaustive domain analysis, rigorous non-functional specification, and explicit failure mode modelling.
+**Result:** The system was withdrawn after 2 days of operation. Estimated cost: Â£1.5M (1992). Lives were potentially put at risk. The key lesson: requirements engineering for safety-critical systems must include exhaustive domain analysis, rigorous non-functional specification, and explicit failure mode modelling.
 
 ### Case Study: Requirements Elicitation for a Healthcare App
 
 A health-tech startup developing a medication adherence app used a multi-method elicitation approach:
-1. **Contextual inquiry** — observed 15 patients managing medications at home
-2. **Diary studies** — 30 patients logged medication-taking behaviour for 2 weeks
-3. **Co-design workshops** — patients, pharmacists, and doctors designed the core workflow together
-4. **Paper prototyping** — tested navigation flows before writing code
+1. **Contextual inquiry** â€” observed 15 patients managing medications at home
+2. **Diary studies** â€” 30 patients logged medication-taking behaviour for 2 weeks
+3. **Co-design workshops** â€” patients, pharmacists, and doctors designed the core workflow together
+4. **Paper prototyping** â€” tested navigation flows before writing code
 
 This revealed critical requirements missed by initial stakeholder interviews: patients wanted flexible reminder schedules (not just fixed times), caregivers needed visibility into missed doses, and pharmacists needed integration with existing dispensing systems. The app achieved 87% adherence rate vs 50% industry average.
 
@@ -1067,27 +1067,27 @@ graph TD
 
 Requirements engineering is the foundation of successful software development. Functional requirements define what the system must do; non-functional constraints how it does it; and domain requirements capture the context and rules of the application domain. FURPS+ provides a comprehensive classification that ensures all quality dimensions are explicitly considered. Feasibility studies across technical, economic, and operational dimensions determine project viability before significant investment.
 
-Elicitation techniques must be selected based on project context — interviews for deep understanding, surveys for broad validation, observation for implicit knowledge, workshops for consensus, and prototyping for vague requirements. Good user stories follow the INVEST criteria and are testable through Gherkin acceptance scenarios. The MoSCoW prioritisation framework and Kano model help separate essential features from nice-to-haves and understand how features impact customer satisfaction.
+Elicitation techniques must be selected based on project context â€” interviews for deep understanding, surveys for broad validation, observation for implicit knowledge, workshops for consensus, and prototyping for vague requirements. Good user stories follow the INVEST criteria and are testable through Gherkin acceptance scenarios. The MoSCoW prioritisation framework and Kano model help separate essential features from nice-to-haves and understand how features impact customer satisfaction.
 
 Requirements validation through automated tools (SMART checks, consistency verification, FURPS+ classification) catches defects early when they are cheapest to fix. Traceability matrices link requirements to design, code, tests, and use cases, enabling impact analysis when changes occur. Change control processes with formal review boards ensure that requirements evolution is managed rather than chaotic. The most successful projects invest heavily in the requirements phase, recognising that a 1% improvement in requirements quality can yield 10x returns in reduced rework downstream.
 
 ## Practical Takeaways
 
-1. **Invest in elicitation upfront** — the cost of fixing a requirements error after deployment is 100x the cost during elicitation
-2. **Use multiple elicitation techniques** — interviews alone miss what stakeholders don't think to mention; combine with observation and prototyping
-3. **Write testable, SMART requirements** — every requirement should be verifiable; "user-friendly" is not testable, but "95th percentile task completion under 3 minutes" is
-4. **Maintain traceability from day one** — when a requirement changes, you must immediately know which design, code, tests, and use cases are affected
-5. **Expect and plan for change** — requirements will evolve; implement change control processes, versioning, and a CCB
-6. **Distinguish wants from needs** — MoSCoW and Kano help separate essential from nice-to-have and understand satisfaction impact
-7. **Automate validation** — use quality analyzers to catch vague terms, missing metrics, and inconsistencies before stakeholder reviews
-8. **Validate early, validate often** — prototype, review, and write tests against requirements before implementation begins
+1. **Invest in elicitation upfront** â€” the cost of fixing a requirements error after deployment is 100x the cost during elicitation
+2. **Use multiple elicitation techniques** â€” interviews alone miss what stakeholders don't think to mention; combine with observation and prototyping
+3. **Write testable, SMART requirements** â€” every requirement should be verifiable; "user-friendly" is not testable, but "95th percentile task completion under 3 minutes" is
+4. **Maintain traceability from day one** â€” when a requirement changes, you must immediately know which design, code, tests, and use cases are affected
+5. **Expect and plan for change** â€” requirements will evolve; implement change control processes, versioning, and a CCB
+6. **Distinguish wants from needs** â€” MoSCoW and Kano help separate essential from nice-to-have and understand satisfaction impact
+7. **Automate validation** â€” use quality analyzers to catch vague terms, missing metrics, and inconsistencies before stakeholder reviews
+8. **Validate early, validate often** â€” prototype, review, and write tests against requirements before implementation begins
 
 ## Chapter Quiz
 
 | Question | Answer | Explanation |
 |----------|--------|-------------|
-| Q1 | B | Performance (1,000 transactions per second) is a non-functional requirement — a quality attribute. |
-| Q2 | C | In MoSCoW, 'W' stands for "Won't have this time" — explicitly excluded from current scope. |
+| Q1 | B | Performance (1,000 transactions per second) is a non-functional requirement â€” a quality attribute. |
+| Q2 | C | In MoSCoW, 'W' stands for "Won't have this time" â€” explicitly excluded from current scope. |
 | Q3 | B | Observation reveals what users actually do, which differs from what they say in interviews. |
 | Q4 | B | The RTM links requirements to design, code, and tests, enabling impact analysis when changes occur. |
 | Q5 | C | Basic needs (threshold attributes) must be present; their absence causes dissatisfaction but presence doesn't delight. |
@@ -1136,11 +1136,11 @@ Classify each of the following requirements using FURPS+:
 5. "The system shall comply with GDPR data erasure requirements"
 
 **Solution:**
-1. Performance — measurable metric (concurrent users, response time)
-2. Usability — human factors, documentation, tooltips
-3. Reliability — recoverability, fault tolerance, data integrity
-4. Supportability — maintainability, configurability, hot-deploy
-5. FURPS+ (legal/regulatory constraint) — compliance with external regulations
+1. Performance â€” measurable metric (concurrent users, response time)
+2. Usability â€” human factors, documentation, tooltips
+3. Reliability â€” recoverability, fault tolerance, data integrity
+4. Supportability â€” maintainability, configurability, hot-deploy
+5. FURPS+ (legal/regulatory constraint) â€” compliance with external regulations
 </details>
 
 ### Exercise 2: User Story Writing with INVEST

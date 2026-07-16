@@ -1,4 +1,4 @@
-# Chapter 48: Manufacturing Interview Q&A
+﻿# Chapter 48: Manufacturing Interview Q&A
 
 > **Previous:** [Legal & Compliance Interview Q&A](./47-interview-legal.md) | **Next:** [PHP Interview Q&A](./49-interview-php.md)
 
@@ -11,16 +11,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/48-interview-manufacturing/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/48-interview-manufacturing/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/48-interview-manufacturing/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/48-interview-manufacturing/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/48-interview-manufacturing/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/48-interview-manufacturing/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/48-interview-manufacturing/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/48-interview-manufacturing/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/48-interview-manufacturing/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/48-interview-manufacturing/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/48-interview-manufacturing/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/48-interview-manufacturing/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -57,9 +57,9 @@ flowchart LR
 
 ### Q1: What are the six core manufacturing domain entities in a Laravel manufacturing platform? How do they relate?
 
-The six core entities are **Equipment, ProductionOrder, QualityCheck, MaintenanceLog, InventoryItem, and IoTReading**. Equipment is the central entity → each piece of machinery has a `hasMany` relationship to maintenance logs, IoT readings, and production orders. ProductionOrder links to a product and optionally to equipment, and has `hasMany` quality checks. QualityCheck stands alone with foreign keys to both production order and equipment. MaintenanceLog belongs to equipment and tracks corrective, preventative, and predictive maintenance events. InventoryItem manages raw materials and consumables with stock levels and reorder points. IoTReading stores sensor telemetry and belongs to equipment with composite indexes on `(equipment_id, recorded_at)` for time-series queries.
+The six core entities are **Equipment, ProductionOrder, QualityCheck, MaintenanceLog, InventoryItem, and IoTReading**. Equipment is the central entity â†’ each piece of machinery has a `hasMany` relationship to maintenance logs, IoT readings, and production orders. ProductionOrder links to a product and optionally to equipment, and has `hasMany` quality checks. QualityCheck stands alone with foreign keys to both production order and equipment. MaintenanceLog belongs to equipment and tracks corrective, preventative, and predictive maintenance events. InventoryItem manages raw materials and consumables with stock levels and reorder points. IoTReading stores sensor telemetry and belongs to equipment with composite indexes on `(equipment_id, recorded_at)` for time-series queries.
 
-The migrations cascade appropriately → deleting equipment cascades to its IoT readings and maintenance logs, but production orders remain for historical record.
+The migrations cascade appropriately â†’ deleting equipment cascades to its IoT readings and maintenance logs, but production orders remain for historical record.
 
 ### Q2: Explain the difference between corrective, preventative, predictive, and condition-based maintenance. How would each be modeled in a Laravel manufacturing application?
 
@@ -70,18 +70,18 @@ The migrations cascade appropriately → deleting equipment cascades to its IoT 
 | **Predictive** | AI analysis of sensor trends | `MaintenanceLog` with `type = 'predictive'`, created by `PredictiveMaintenanceAgent` when `failureProbability >= 0.7` |
 | **Condition-based** | Real-time threshold violation | `MaintenanceLog` with `type = 'condition_based'`, triggered by `IoTDataIngestionAgent` when anomaly score exceeds 0.8 |
 
-The four types share the same `maintenance_logs` table but differ in `type`, `priority`, and how they are initiated → manual entry for corrective, cron-scheduled for preventative, agent-dispatched for predictive and condition-based.
+The four types share the same `maintenance_logs` table but differ in `type`, `priority`, and how they are initiated â†’ manual entry for corrective, cron-scheduled for preventative, agent-dispatched for predictive and condition-based.
 
 ### Q3: What manufacturing metrics are typically tracked, and how would you calculate them in Laravel?
 
 
 Key metrics and their Laravel calculation patterns:
 
-- **Overall Equipment Effectiveness (OEE)** = Availability Ã— Performance Ã— Quality. Availability = uptime / total time (from `MaintenanceLog.downtime_minutes`), Performance = actual output / theoretical max (`ProductionOrder.quantity_produced` / capacity), Quality = good units / total units (`(quantity_produced - quantity_defective) / quantity_produced`).
+- **Overall Equipment Effectiveness (OEE)** = Availability Ãƒâ€” Performance Ãƒâ€” Quality. Availability = uptime / total time (from `MaintenanceLog.downtime_minutes`), Performance = actual output / theoretical max (`ProductionOrder.quantity_produced` / capacity), Quality = good units / total units (`(quantity_produced - quantity_defective) / quantity_produced`).
 
 - **Yield Rate**: `ProductionOrder` model's `yieldRate()` method: `($this->quantity_produced - $this->quantity_defective) / $this->quantity_ordered`.
 
-- **Defect Rate**: Computed per production run in `QualityControlAgent::analyzeDefects()` → `(failedChecks / totalChecks) Ã— 100`, grouped by defect type and severity.
+- **Defect Rate**: Computed per production run in `QualityControlAgent::analyzeDefects()` â†’ `(failedChecks / totalChecks) Ãƒâ€” 100`, grouped by defect type and severity.
 
 - **Mean Time Between Failures (MTBF)**: Aggregate over `Equipment`'s completed maintenance logs: total operational hours / number of failure events.
 
@@ -101,7 +101,7 @@ $oee = Equipment::with(['maintenanceLogs', 'productionOrders'])->get()->map(fn (
 
 ### Q4: What is Industrial IoT (IIoT), and what challenges does it introduce when building a Laravel application?
 
-Industrial IoT refers to the network of sensors and smart devices attached to manufacturing equipment → temperature probes, vibration sensors, pressure transducers, energy meters, and RPM monitors. These sensors generate continuous, high-frequency telemetry data.
+Industrial IoT refers to the network of sensors and smart devices attached to manufacturing equipment â†’ temperature probes, vibration sensors, pressure transducers, energy meters, and RPM monitors. These sensors generate continuous, high-frequency telemetry data.
 
 Challenges for Laravel applications:
 
@@ -116,11 +116,11 @@ Challenges for Laravel applications:
 ### Q5: Describe the role of ISO 55000, ISO 9001, and ISO 45001 in a manufacturing software platform.
 
 
-- **ISO 55000** (Asset Management): Requires systematic lifecycle management of physical assets. Maps to `EquipmentLifecycleAgent` → depreciation modeling, maintenance cost tracking, replacement planning, and total cost of ownership calculations.
+- **ISO 55000** (Asset Management): Requires systematic lifecycle management of physical assets. Maps to `EquipmentLifecycleAgent` â†’ depreciation modeling, maintenance cost tracking, replacement planning, and total cost of ownership calculations.
 
-- **ISO 9001** (Quality Management): Mandates documented quality control processes, defect tracking, corrective action workflows, and continuous improvement. Maps to `QualityControlAgent` → defect rate tracking, trend analysis, parameter drift detection, and quality alerts.
+- **ISO 9001** (Quality Management): Mandates documented quality control processes, defect tracking, corrective action workflows, and continuous improvement. Maps to `QualityControlAgent` â†’ defect rate tracking, trend analysis, parameter drift detection, and quality alerts.
 
-- **ISO 45001** (Occupational Health and Safety): Requires safety incident reporting, risk assessment, and compliance monitoring. Maps to `SafetyComplianceAgent` → incident analysis, compliance scoring, overdue inspection tracking, and critical finding escalation.
+- **ISO 45001** (Occupational Health and Safety): Requires safety incident reporting, risk assessment, and compliance monitoring. Maps to `SafetyComplianceAgent` â†’ incident analysis, compliance scoring, overdue inspection tracking, and critical finding escalation.
 
 In Laravel, each standard maps to an agent or service class that generates compliance reports, maintains the required audit trail, and alerts stakeholders when metrics fall outside acceptable ranges.
 
@@ -304,7 +304,7 @@ class QualityControlAgent implements Agent
 }
 ```
 
-The agent combines statistical process control (SPC) methods → calculating drift between windowed averages → with LLM-based root cause assessment. The LLM evaluates whether defect patterns suggest a tooling issue, raw material problem, or process parameter deviation.
+The agent combines statistical process control (SPC) methods â†’ calculating drift between windowed averages â†’ with LLM-based root cause assessment. The LLM evaluates whether defect patterns suggest a tooling issue, raw material problem, or process parameter deviation.
 
 ### Q8: How would you implement a high-throughput IoT data ingestion pipeline in Laravel?
 
@@ -408,7 +408,7 @@ class IoTDataIngestionAgent
 }
 ```
 
-For truly high-volume scenarios, you can bypass Laravel entirely for ingestion → use a Go or Rust sidecar that batches sensor data and POSTs to a Laravel endpoint every 5 seconds, or consume from a Redis stream or Kafka topic via a long-running Artisan command.
+For truly high-volume scenarios, you can bypass Laravel entirely for ingestion â†’ use a Go or Rust sidecar that batches sensor data and POSTs to a Laravel endpoint every 5 seconds, or consume from a Redis stream or Kafka topic via a long-running Artisan command.
 
 ### Q9: How would you implement a production scheduling agent that respects equipment capacity, material availability, and order deadlines?
 
@@ -683,7 +683,7 @@ class InventoryAutomationAgent
 }
 ```
 
-The demand estimation becomes more accurate when the agent receives upcoming `ProductionOrder` data → scheduled future consumption may differ significantly from historical averages.
+The demand estimation becomes more accurate when the agent receives upcoming `ProductionOrder` data â†’ scheduled future consumption may differ significantly from historical averages.
 
 ### Q12: How would you implement equipment lifecycle management with depreciation and TCO tracking?
 
@@ -917,12 +917,12 @@ class DefectCorrelationAgent implements Agent
 }
 ```
 
-The agent correlates three data sources → inspection measurements, equipment state, and maintenance activity → to produce a root cause hypothesis that would take a quality engineer hours to uncover manually.
+The agent correlates three data sources â†’ inspection measurements, equipment state, and maintenance activity â†’ to produce a root cause hypothesis that would take a quality engineer hours to uncover manually.
 
 ### Q15: How would you expose manufacturing agent capabilities as MCP tools for external systems?
 
 
-Register each manufacturing agent's methods as MCP tools. This allows external systems → edge devices, ERP systems, or a factory dashboard → to invoke agent functionality over the MCP protocol.
+Register each manufacturing agent's methods as MCP tools. This allows external systems â†’ edge devices, ERP systems, or a factory dashboard â†’ to invoke agent functionality over the MCP protocol.
 
 ```php
 // In an MCP server service provider
@@ -971,7 +971,7 @@ class ManufacturingMcpServer extends McpServer
 }
 ```
 
-External systems → an ERP running on-premise, a SCADA system, or a third-party MES → can now invoke these tools over the MCP protocol without needing direct database access or HTTP endpoints.
+External systems â†’ an ERP running on-premise, a SCADA system, or a third-party MES â†’ can now invoke these tools over the MCP protocol without needing direct database access or HTTP endpoints.
 
 ---
 
@@ -981,15 +981,15 @@ External systems → an ERP running on-premise, a SCADA system, or a third-party
 
 The architecture uses a five-stage pipeline:
 
-**Stage 1 → Edge Collection**: Sensors connect to PLCs or edge gateways that buffer readings locally. The gateway batches readings every 5 seconds and publishes to MQTT topics organized hierarchically: `factory/{zone}/{machine_id}/sensors/{sensor_type}`.
+**Stage 1 â†’ Edge Collection**: Sensors connect to PLCs or edge gateways that buffer readings locally. The gateway batches readings every 5 seconds and publishes to MQTT topics organized hierarchically: `factory/{zone}/{machine_id}/sensors/{sensor_type}`.
 
-**Stage 2 → MQTT Broker**: A clustered Mosquitto or EMQX broker handles the 10,000+ messages per second. The broker routes messages by topic to subscriber workers.
+**Stage 2 â†’ MQTT Broker**: A clustered Mosquitto or EMQX broker handles the 10,000+ messages per second. The broker routes messages by topic to subscriber workers.
 
-**Stage 3 → Ingestion Workers**: A pool of Laravel long-running Artisan commands (supervised by Supervisor) subscribe to subsets of MQTT topics. Each worker collects batches of 500 readings and sends them to a Redis stream or directly to the Laravel ingestion endpoint.
+**Stage 3 â†’ Ingestion Workers**: A pool of Laravel long-running Artisan commands (supervised by Supervisor) subscribe to subsets of MQTT topics. Each worker collects batches of 500 readings and sends them to a Redis stream or directly to the Laravel ingestion endpoint.
 
-**Stage 4 → Processing Layer**: The `IoTDataIngestionAgent` validates payloads, performs threshold-based and z-score anomaly detection, inserts readings in bulk chunks, and dispatches anomaly alerts to a `high` priority queue. Time-series data older than 90 days is rolled up into hourly averages via a scheduled Artisan command.
+**Stage 4 â†’ Processing Layer**: The `IoTDataIngestionAgent` validates payloads, performs threshold-based and z-score anomaly detection, inserts readings in bulk chunks, and dispatches anomaly alerts to a `high` priority queue. Time-series data older than 90 days is rolled up into hourly averages via a scheduled Artisan command.
 
-**Stage 5 → Serving & Analytics**: AI agents (`PredictiveMaintenanceAgent`, `QualityControlAgent`, `SafetyComplianceAgent`) query the processed data to generate insights. A dedicated read replica serves dashboard queries. pgvector stores embeddings of sensor patterns for similarity-based anomaly classification.
+**Stage 5 â†’ Serving & Analytics**: AI agents (`PredictiveMaintenanceAgent`, `QualityControlAgent`, `SafetyComplianceAgent`) query the processed data to generate insights. A dedicated read replica serves dashboard queries. pgvector stores embeddings of sensor patterns for similarity-based anomaly classification.
 
 ```php
 // Scheduled rollup command
@@ -1019,7 +1019,7 @@ class RollupIotDataCommand extends Command
 }
 ```
 
-Data flow throughput: 10,000 messages/second → MQTT broker → 5 ingestion workers (2,000 msg/s each) → batch insert 500 at a time (20 inserts/s per worker → 100 total inserts/s) → PostgreSQL with appropriate `max_connections` and `work_mem` tuning.
+Data flow throughput: 10,000 messages/second â†’ MQTT broker â†’ 5 ingestion workers (2,000 msg/s each) â†’ batch insert 500 at a time (20 inserts/s per worker â†’ 100 total inserts/s) â†’ PostgreSQL with appropriate `max_connections` and `work_mem` tuning.
 
 ### Q17: How would you design a real-time sensor data processing system that detects anomalies in under one second?
 
@@ -1027,7 +1027,7 @@ Sub-second anomaly detection requires shifting threshold evaluation to the edge 
 
 **Architecture**:
 
-1. **Edge threshold checks**: Configure the edge gateway to reject or flag readings that exceed hard thresholds (temperature > 150Â°C) before they ever reach Laravel. Only anomalous readings trigger immediate alerts; normal readings batch.
+1. **Edge threshold checks**: Configure the edge gateway to reject or flag readings that exceed hard thresholds (temperature > 150Ã‚Â°C) before they ever reach Laravel. Only anomalous readings trigger immediate alerts; normal readings batch.
 
 2. **In-memory anomaly detection**: Ingestion workers maintain an in-memory sliding window (last 100 readings per metric per machine) using a shared Redis sorted set or a local array. Z-score calculation uses this window, not the database, achieving sub-millisecond detection.
 
@@ -1077,32 +1077,32 @@ class RealTimeAnomalyDetector
 
 3. **Alert dispatch path**: The anomaly result is available synchronously from the ingestion call. Critical alerts (`score >= 0.8`) are dispatched immediately via a dedicated queue with priority `high`. The database write for the reading itself can proceed asynchronously.
 
-This design achieves ~200Î¼s per reading for threshold checks and ~800Î¼s for full z-score evaluation, well under the 1-second SLA.
+This design achieves ~200ÃŽÂ¼s per reading for threshold checks and ~800ÃŽÂ¼s for full z-score evaluation, well under the 1-second SLA.
 
 ### Q18: Describe a factory automation system design that integrates Laravel with existing PLC and SCADA infrastructure.
 
 The system uses a layered architecture bridging IT (Laravel) with OT (factory floor):
 
 ```
-┌─────────────────────────────────────────────────┐
-│                  IT Layer                        │
-│  Laravel App (AI Agents, Dashboards, APIs)      │
-│  PostgreSQL (relational), Redis (streams/cache)  │
-└──────────────────────┬──────────────────────────┘
-                       │ MCP + REST + MQTT
-┌──────────────────────┴──────────────────────────┐
-│              OT Bridge Layer                     │
-│  MQTT Broker (Mosquitto/EMQX)                   │
-│  OPC UA Gateway (converts OPC UA → MQTT JSON)   │
-│  Modbus TCP Gateway (serial → TCP tunnel)        │
-└──────────────────────┬──────────────────────────┘
-                       │ OPC UA / Modbus / Profinet
-┌──────────────────────┴──────────────────────────┐
-│                  OT Layer                        │
-│  PLCs (Siemens S7, Allen-Bradley ControlLogix)  │
-│  SCADA (Wonderware, Ignition)                    │
-│  Sensors, actuators, conveyors, robots           │
-└─────────────────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚                  IT Layer                        â”‚
+â”‚  Laravel App (AI Agents, Dashboards, APIs)      â”‚
+â”‚  PostgreSQL (relational), Redis (streams/cache)  â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                       â”‚ MCP + REST + MQTT
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚              OT Bridge Layer                     â”‚
+â”‚  MQTT Broker (Mosquitto/EMQX)                   â”‚
+â”‚  OPC UA Gateway (converts OPC UA â†’ MQTT JSON)   â”‚
+â”‚  Modbus TCP Gateway (serial â†’ TCP tunnel)        â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                       â”‚ OPC UA / Modbus / Profinet
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚                  OT Layer                        â”‚
+â”‚  PLCs (Siemens S7, Allen-Bradley ControlLogix)  â”‚
+â”‚  SCADA (Wonderware, Ignition)                    â”‚
+â”‚  Sensors, actuators, conveyors, robots           â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 **Key integration patterns**:
@@ -1162,11 +1162,11 @@ class MachineStateSynchronizer
 
 ### Q19: Design a predictive maintenance system for a factory with 200 CNC machines using Laravel. Walk through your approach.
 
-**Phase 1 → Data Foundation**: Deploy vibration, temperature, current draw, and spindle RPM sensors on each CNC machine. Configure edge gateways to publish readings every 10 seconds to an MQTT broker. The Laravel ingestion pipeline (`IoTDataIngestionAgent`) processes 1.7M readings/day.
+**Phase 1 â†’ Data Foundation**: Deploy vibration, temperature, current draw, and spindle RPM sensors on each CNC machine. Configure edge gateways to publish readings every 10 seconds to an MQTT broker. The Laravel ingestion pipeline (`IoTDataIngestionAgent`) processes 1.7M readings/day.
 
-**Phase 2 → Baseline Modeling**: Collect 30 days of normal operation data. For each machine and metric, compute baseline statistics (mean, standard deviation, typical daily patterns). Store these in a `equipment_baselines` table. Machines of the same model should share similar baselines → deviations between identical machines signal potential issues.
+**Phase 2 â†’ Baseline Modeling**: Collect 30 days of normal operation data. For each machine and metric, compute baseline statistics (mean, standard deviation, typical daily patterns). Store these in a `equipment_baselines` table. Machines of the same model should share similar baselines â†’ deviations between identical machines signal potential issues.
 
-**Phase 3 → Agent Deployment**: The `PredictiveMaintenanceAgent` runs on a cron schedule every 6 hours. It compares the last 24 hours of readings against baselines, calculates trend slopes and volatility, and feeds the analysis to the AI SDK with structured output. The agent generates:
+**Phase 3 â†’ Agent Deployment**: The `PredictiveMaintenanceAgent` runs on a cron schedule every 6 hours. It compares the last 24 hours of readings against baselines, calculates trend slopes and volatility, and feeds the analysis to the AI SDK with structured output. The agent generates:
 
 - A risk score (0-1) per machine
 - Estimated days to failure for high-risk machines
@@ -1199,7 +1199,7 @@ class RunPredictiveMaintenanceCommand extends Command
 }
 ```
 
-**Phase 4 → Continuous Improvement**: Track prediction accuracy by comparing predicted failures against actual breakdowns. If the agent predicts low risk but the machine fails within 7 days, it's a false negative. Log these and retrain the agent's prompts with counter-examples every quarter.
+**Phase 4 â†’ Continuous Improvement**: Track prediction accuracy by comparing predicted failures against actual breakdowns. If the agent predicts low risk but the machine fails within 7 days, it's a false negative. Log these and retrain the agent's prompts with counter-examples every quarter.
 
 **Results expectation**: After 6 months of operation, the system should predict 70-80% of unplanned breakdowns at least 48 hours in advance, reducing unplanned downtime by 40-60%.
 
@@ -1210,7 +1210,7 @@ This is a scale question requiring architectural choices beyond standard Laravel
 **Data partitioning strategy**:
 
 - Use PostgreSQL **table partitioning** by month on `recorded_at`
-- Each partition contains ~1.5B readings at 50M/day → too large. Add **sub-partitioning by equipment category** (e.g., `iot_readings_cnc_2026_06`, `iot_readings_conveyor_2026_06`)
+- Each partition contains ~1.5B readings at 50M/day â†’ too large. Add **sub-partitioning by equipment category** (e.g., `iot_readings_cnc_2026_06`, `iot_readings_conveyor_2026_06`)
 - Create a **lookup table** mapping equipment_id to partition suffix: `iot_readings_{category}_{month}`
 - Use a **routing layer** that directs inserts and queries to the correct partition
 
@@ -1294,7 +1294,7 @@ class FlushIngestionBufferCommand extends Command
 - Use TimescaleDB's hypertables if PostgreSQL partitioning isn't performant enough.
 - Add a Redis cache layer for recent readings (last 24 hours) since factory dashboards predominantly display current shift data.
 
-**Retention**: Raw readings older than 7 days → aggregate to 5-minute averages. Averages older than 90 days → aggregate to hourly. Purge after 2 years unless required for compliance.
+**Retention**: Raw readings older than 7 days â†’ aggregate to 5-minute averages. Averages older than 90 days â†’ aggregate to hourly. Purge after 2 years unless required for compliance.
 
 ### Q21: A production line goes down unexpectedly. Walk through how you'd use your Laravel agents to diagnose and respond.
 
@@ -1302,7 +1302,7 @@ class FlushIngestionBufferCommand extends Command
 
 1. **Immediate detection**: The `IoTDataIngestionAgent` detects that readings from the affected equipment have stopped arriving (data gap > 30 seconds when expected interval is 10s). Alternatively, a `ProductionOrder` status flips to `on_hold` via manual input.
 
-2. **Root cause analysis**: The `DefectCorrelationAgent` correlates the last 30 minutes of sensor data before the stoppage. It looks for anomaly patterns → spiking vibration, temperature ramp, current draw drop → that indicate the failure mode.
+2. **Root cause analysis**: The `DefectCorrelationAgent` correlates the last 30 minutes of sensor data before the stoppage. It looks for anomaly patterns â†’ spiking vibration, temperature ramp, current draw drop â†’ that indicate the failure mode.
 
 3. **Impact assessment**: The `ProductionSchedulingAgent` evaluates affected orders. If machine #7 is down, it checks which orders were assigned to it and reschedules them to other available equipment. Orders whose deadlines cannot be met are flagged for customer notification.
 
@@ -1380,7 +1380,7 @@ class IncidentResponseCoordinator
 }
 ```
 
-The entire response → from detection to maintenance dispatch and order rescheduling → completes in under 2 minutes, compared to 30-60 minutes with manual processes.
+The entire response â†’ from detection to maintenance dispatch and order rescheduling â†’ completes in under 2 minutes, compared to 30-60 minutes with manual processes.
 
 ### Q22: Your manufacturing execution system (MES) with AI is being adopted by factory operators who distrust AI recommendations. How do you design the system to earn trust?
 
@@ -1483,13 +1483,13 @@ class RawMaterialIncidentHandler
 }
 ```
 
-The system quarantines the affected lot, holds pending orders that use it, notifies the supplier, and logs the incident with full traceability → all within minutes of detection.
+The system quarantines the affected lot, holds pending orders that use it, notifies the supplier, and logs the incident with full traceability â†’ all within minutes of detection.
 
 ### Q24: A new regulation requires your factory to report carbon emissions per production batch. How do you implement this in Laravel?
 
 **Implementation approach**:
 
-1. **Data model extension**: Add `emissions_data` and `energy_consumption` columns or tables linked to `ProductionOrder`. If sensor data includes energy meters (kWh), power factor, or fuel consumption, the existing `iot_readings` table already tracks them → just add `emission_factor` mapping.
+1. **Data model extension**: Add `emissions_data` and `energy_consumption` columns or tables linked to `ProductionOrder`. If sensor data includes energy meters (kWh), power factor, or fuel consumption, the existing `iot_readings` table already tracks them â†’ just add `emission_factor` mapping.
 
 ```php
 Schema::create('emission_records', function (Blueprint $table) {
@@ -1607,9 +1607,9 @@ public function determineReorderSource(InventoryItem $item): array
 }
 ```
 
-3. **Circuit breaker**: Use Laravel's built-in `Cache::lock()` or a dedicated circuit breaker package. After 3 consecutive failures, open the circuit for 5 minutes → during that window, the agent uses cached data exclusively without attempting the API.
+3. **Circuit breaker**: Use Laravel's built-in `Cache::lock()` or a dedicated circuit breaker package. After 3 consecutive failures, open the circuit for 5 minutes â†’ during that window, the agent uses cached data exclusively without attempting the API.
 
-4. **Degraded mode alerting**: When the agent operates in cache-only mode, it dispatches a notification to the procurement team. The dashboard shows a yellow banner: "Inventory agent in degraded mode → supplier API unavailable."
+4. **Degraded mode alerting**: When the agent operates in cache-only mode, it dispatches a notification to the procurement team. The dashboard shows a yellow banner: "Inventory agent in degraded mode â†’ supplier API unavailable."
 
 5. **Manual overrides**: Provide an Artisan command and a Nova action that lets procurement staff manually enter supplier data or override reorder decisions while the API is down.
 
@@ -1623,14 +1623,14 @@ class OverrideSupplierDataCommand extends Command
         $leadTime = $this->ask('Override lead time (days)');
 
         Cache::put("supplier_override:{$sku}", ['lead_time_days' => (int) $leadTime], 86400);
-        $this->info("Override applied for {$sku} → will use {$leadTime} day lead time");
+        $this->info("Override applied for {$sku} â†’ will use {$leadTime} day lead time");
     }
 }
 ```
 
 ### Q26: Your factory is expanding from 10 to 100 machines. The current Laravel ingestion architecture can't keep up. How do you scale it?
 
-**Scale diagnosis**: The bottleneck is likely database write throughput. At 100 machines Ã— 200 sensors each Ã— 1 reading every 10 seconds = 2,000 readings/second. Each Eloquent `INSERT` takes ~5ms at peak, so single-threaded insertion caps at 200 reads/second.
+**Scale diagnosis**: The bottleneck is likely database write throughput. At 100 machines Ãƒâ€” 200 sensors each Ãƒâ€” 1 reading every 10 seconds = 2,000 readings/second. Each Eloquent `INSERT` takes ~5ms at peak, so single-threaded insertion caps at 200 reads/second.
 
 **Scaling strategy**:
 
@@ -2033,4 +2033,4 @@ The goal is a system that handles 10,000 readings/second at peak with &lt; 1 sec
 
 ## Summary
 
-This chapter covered 26 interview questions spanning manufacturing domain knowledge, technical implementation with the Laravel AI SDK, system architecture for industrial IoT, and behavioral scenarios for real-world factory systems. Key themes include predictive maintenance agents that combine statistical trend analysis with LLM pattern recognition, high-throughput IoT data pipelines using batch ingestion and stream buffering, production scheduling with heuristic optimization and disruption rescheduling, safety compliance automation with ISO-aligned scoring, inventory agents with demand forecasting and fallback redundancy, and equipment lifecycle management with total-cost-of-ownership analysis. Each answer demonstrated concrete Laravel code patterns → Eloquent models with manufacturing relationships, AI SDK agents with structured output and tools, MCP server registration, queue-backed processing, Redis stream buffering, and `Cache::flexible()` for supplier API resilience. The architectural patterns scale from single-machine deployments to factory-wide systems handling 50 million sensor readings per day.
+This chapter covered 26 interview questions spanning manufacturing domain knowledge, technical implementation with the Laravel AI SDK, system architecture for industrial IoT, and behavioral scenarios for real-world factory systems. Key themes include predictive maintenance agents that combine statistical trend analysis with LLM pattern recognition, high-throughput IoT data pipelines using batch ingestion and stream buffering, production scheduling with heuristic optimization and disruption rescheduling, safety compliance automation with ISO-aligned scoring, inventory agents with demand forecasting and fallback redundancy, and equipment lifecycle management with total-cost-of-ownership analysis. Each answer demonstrated concrete Laravel code patterns â†’ Eloquent models with manufacturing relationships, AI SDK agents with structured output and tools, MCP server registration, queue-backed processing, Redis stream buffering, and `Cache::flexible()` for supplier API resilience. The architectural patterns scale from single-machine deployments to factory-wide systems handling 50 million sensor readings per day.

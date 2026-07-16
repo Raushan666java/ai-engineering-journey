@@ -1,6 +1,6 @@
-# Chapter 6: The Network Layer
+﻿# Chapter 6: The Network Layer
 
-> **Prerequisites:** [Chapter 5: Ethernet Switching](./05-ethernet-switching.md) — L2 forwarding and VLANs | **Next:** [Chapter 7: Routing](./07-routing.md) — IP forwarding to path selection
+> **Prerequisites:** [Chapter 5: Ethernet Switching](./05-ethernet-switching.md) â€” L2 forwarding and VLANs | **Next:** [Chapter 7: Routing](./07-routing.md) â€” IP forwarding to path selection
 
 ## Learning Objectives
 
@@ -16,16 +16,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/computer-networks/06-network-layer/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/computer-networks/06-network-layer/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/computer-networks/06-network-layer/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/computer-networks/06-network-layer/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/computer-networks/06-network-layer/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/computer-networks/06-network-layer/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/computer-networks/06-network-layer/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/computer-networks/06-network-layer/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/computer-networks/06-network-layer/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/computer-networks/06-network-layer/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/computer-networks/06-network-layer/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/computer-networks/06-network-layer/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -39,8 +39,8 @@
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| IPv4 Datagram | 20-byte header with frag, TTL, checksum | Fragmentation is best avoided — use path MTU discovery |
-| Addressing | 32-bit address, classful→CIDR evolution | CIDR enables route aggregation; VLSM minimizes wasted addresses |
+| IPv4 Datagram | 20-byte header with frag, TTL, checksum | Fragmentation is best avoided â€” use path MTU discovery |
+| Addressing | 32-bit address, classfulâ†’CIDR evolution | CIDR enables route aggregation; VLSM minimizes wasted addresses |
 | NAT | Port multiplexing shares one public IP | Breaks end-to-end connectivity; IPv6 is the real fix |
 | IPv6 | 128-bit address, no checksum, no fragmentation | Flow label enables per-flow QoS; extension headers replace options |
 | DHCP | Automated address assignment (DORA) | Reduces manual configuration errors |
@@ -188,7 +188,7 @@ function forward_packet(datagram, routing_table):
 | Operation | Time Complexity | Why |
 |-----------|----------------|-----|
 | Longest Prefix Match | O(log N) with trie, O(N) linear | N = number of routing table entries; tries give log-time lookups |
-| Fragmentation | O(P) where P = number of fragments | Each fragment gets a new header — linear in fragment count |
+| Fragmentation | O(P) where P = number of fragments | Each fragment gets a new header â€” linear in fragment count |
 | Header Checksum | O(1) | Fixed 20-byte header; compute in constant time |
 | TTL Decrement | O(1) | Single integer operation |
 
@@ -481,7 +481,7 @@ Per-fragment payload = ((1500 - 20) / 8) * 8 = (1480 / 8) * 8 = 185 * 8 = 1480 b
 | 2 | 1480-2959 | 1480 | 185 | 1 | 1500 |
 | 3 | 2960-3979 | 2960 | 370 | 0 | 1040 |
 
-**Reassembly Check**: Last offset (370) * 8 = 2960. Last payload = 1040 - 20 = 1020. Total = 2960 + 1020 = 3980. Matches original payload. ✓
+**Reassembly Check**: Last offset (370) * 8 = 2960. Last payload = 1040 - 20 = 1020. Total = 2960 + 1020 = 3980. Matches original payload. âœ“
 
 ### C++ Implementation: Fragmentation Simulator
 
@@ -643,8 +643,8 @@ Every IPv4 interface has a 32-bit address, typically written in dotted-decimal n
 | A | 0 | 8 | 24 | 1.0.0.0 - 127.255.255.255 | 16,777,214 |
 | B | 10 | 16 | 16 | 128.0.0.0 - 191.255.255.255 | 65,534 |
 | C | 110 | 24 | 8 | 192.0.0.0 - 223.255.255.255 | 254 |
-| D | 1110 | multicast | — | 224.0.0.0 - 239.255.255.255 | N/A |
-| E | 1111 | reserved | — | 240.0.0.0 - 255.255.255.255 | N/A |
+| D | 1110 | multicast | â€” | 224.0.0.0 - 239.255.255.255 | N/A |
+| E | 1111 | reserved | â€” | 240.0.0.0 - 255.255.255.255 | N/A |
 
 ### 6.3.2 Subnetting
 
@@ -653,7 +653,7 @@ Subnetting borrows host bits to create a subnet number, improving address utiliz
 
 #### Real-World Analogy
 
-Classful addressing is like assigning every building a block of 100 mailboxes even if it only needs 5. Subnetting is like subdividing those mailboxes into smaller sets per floor — you use what you need and waste less.
+Classful addressing is like assigning every building a block of 100 mailboxes even if it only needs 5. Subnetting is like subdividing those mailboxes into smaller sets per floor â€” you use what you need and waste less.
 
 #### Numbered Steps: Subnet Calculation
 
@@ -709,7 +709,7 @@ function calculate_subnets(base_network, prefix_len, num_subnets, min_hosts):
 | 2 | 200.100.20.128 | 200.100.20.129 | 200.100.20.190 | 200.100.20.191 | /26 |
 | 3 | 200.100.20.192 | 200.100.20.193 | 200.100.20.254 | 200.100.20.255 | /26 |
 
-**Check**: Subnet 1 = base + 1 x 64 = 200.100.20.64. ✓
+**Check**: Subnet 1 = base + 1 x 64 = 200.100.20.64. âœ“
 
 ### C++ Implementation: Subnet Calculator
 
@@ -992,9 +992,9 @@ NAT is like a company switchboard operator (PBX). Everyone inside has an extensi
 
 | Type | Acronym | Description | Direction |
 |------|---------|-------------|-----------|
-| Source NAT | SNAT | Translates source IP:port of outbound packets | Private→Public |
-| Destination NAT | DNAT | Translates destination IP:port of inbound packets | Public→Private |
-| Port Address Translation | PAT | Many private IPs → one public IP using unique ports | Multiplexing |
+| Source NAT | SNAT | Translates source IP:port of outbound packets | Privateâ†’Public |
+| Destination NAT | DNAT | Translates destination IP:port of inbound packets | Publicâ†’Private |
+| Port Address Translation | PAT | Many private IPs â†’ one public IP using unique ports | Multiplexing |
 | Static NAT | 1:1 NAT | One private IP permanently mapped to one public IP | Bidirectional |
 | Dynamic NAT | Pool NAT | Private IP mapped from a pool of public IPs | Outbound |
 
@@ -1006,7 +1006,7 @@ NAT is like a company switchboard operator (PBX). Everyone inside has an extensi
 3. Router checks NAT table: is there a mapping for (192.168.1.10, 3345)?
 4. If no: router allocates a new public port (e.g., 50001) from the pool.
 5. Router rewrites source IP to its public IP (198.51.100.1) and source port to 50001.
-6. Entry added: (192.168.1.10:3345) ↔ (198.51.100.1:50001).
+6. Entry added: (192.168.1.10:3345) â†” (198.51.100.1:50001).
 7. Response arrives at 198.51.100.1:50001. Router looks up port 50001 in NAT table.
 8. Router rewrites destination IP:port to 192.168.1.10:3345 and forwards internally.
 9. If no activity for timeout period (60-300s), entry removed.
@@ -1038,12 +1038,12 @@ function nat_translate(packet, nat_table, public_ip):
 
 | Step | Private (src) | Private (dst) | After SNAT (src) | After DNAT response (dst) |
 |------|--------------|--------------|-------------------|--------------------------|
-| 1 | 192.168.1.10:3345 | 203.0.113.5:80 | 198.51.100.1:50001 | — |
-| 2 | 192.168.1.20:4422 | 203.0.113.5:80 | 198.51.100.1:50002 | — |
-| 3 | 192.168.1.10:3346 | 8.8.8.8:53 | 198.51.100.1:50003 | — |
-| 4 | Response for 50001 | — | — | 192.168.1.10:3345 |
-| 5 | Response for 50002 | — | — | 192.168.1.20:4422 |
-| 6 | Response for 50003 | — | — | 192.168.1.10:3346 |
+| 1 | 192.168.1.10:3345 | 203.0.113.5:80 | 198.51.100.1:50001 | â€” |
+| 2 | 192.168.1.20:4422 | 203.0.113.5:80 | 198.51.100.1:50002 | â€” |
+| 3 | 192.168.1.10:3346 | 8.8.8.8:53 | 198.51.100.1:50003 | â€” |
+| 4 | Response for 50001 | â€” | â€” | 192.168.1.10:3345 |
+| 5 | Response for 50002 | â€” | â€” | 192.168.1.20:4422 |
+| 6 | Response for 50003 | â€” | â€” | 192.168.1.10:3346 |
 
 NAT Table after steps 1-3:
 
@@ -1236,8 +1236,8 @@ The simplified IPv6 header is 40 bytes:
 2. Replace the longest single run of zero groups with `::` (can only use once).
 
 Examples:
-- `2001:0db8:0000:0000:0000:8a2e:0370:7334` → `2001:db8::8a2e:370:7334`
-- `FF02:0000:0000:0000:0000:0000:0000:0001` → `FF02::1`
+- `2001:0db8:0000:0000:0000:8a2e:0370:7334` â†’ `2001:db8::8a2e:370:7334`
+- `FF02:0000:0000:0000:0000:0000:0000:0001` â†’ `FF02::1`
 - `::1` = loopback, `::` = unspecified
 
 ### 6.5.4 Transition Mechanisms
@@ -1248,7 +1248,7 @@ Examples:
 | Dual Stack | Both IPv4 and IPv6 stacks on same host | Gradual migration |
 | 6in4 Tunneling | IPv6 packet encapsulated in IPv4 header (Protocol 41) | Connect IPv6 islands over IPv4 backbone |
 | Teredo | IPv6 over UDP through NATs | Hosts behind NAT without native IPv6 |
-| NAT64/DNS64 | Translate IPv6→IPv4 headers + synthesize AAAA records | IPv6-only clients accessing IPv4 internet |
+| NAT64/DNS64 | Translate IPv6â†’IPv4 headers + synthesize AAAA records | IPv6-only clients accessing IPv4 internet |
 | 464XLAT | PLAT (provider-side) + CLAT (client-side) translation | Mobile carriers (LTE/5G) |
 
 ---
@@ -1346,7 +1346,7 @@ ARP is like calling someone's name in a crowded room. You shout "Who is John Smi
    - ARP opcode: 2 (reply)
    - Sender MAC: BB:BB:BB:BB:BB:BB, Sender IP: 192.168.1.2
    - Target MAC: AA:AA:AA:AA:AA:AA, Target IP: 192.168.1.1
-5. **Cache Update**: Host A updates ARP cache: 192.168.1.2 → BB:BB:BB:BB:BB:BB (TTL: 120s).
+5. **Cache Update**: Host A updates ARP cache: 192.168.1.2 â†’ BB:BB:BB:BB:BB:BB (TTL: 120s).
 6. **Frame Transmission**: Host A sends the IP packet in an Ethernet frame to BB:BB:BB:BB:BB:BB.
 
 #### ARP Cache Behavior
@@ -2176,7 +2176,7 @@ N = routing entries, P = payload bytes, F = fragments, E = NAT entries, L = DHCP
 - **STUN (RFC 5389)**: Client discovers public IP:port from a public STUN server. Works for full-cone and address-restricted NATs.
 - **TURN (RFC 5766)**: Relays traffic through a public server for symmetric NATs. Used by WebRTC as fallback.
 - **ICE (RFC 8445)**: Combines STUN + TURN candidates, tests connectivity, picks the best working pair.
-- **UPnP/NAT-PMP**: Programmatic port mappings on consumer NATs. Security risk — malware can open ports.
+- **UPnP/NAT-PMP**: Programmatic port mappings on consumer NATs. Security risk â€” malware can open ports.
 
 ### IPv6 Transition Mechanisms
 
@@ -2192,11 +2192,11 @@ N = routing entries, P = payload bytes, F = fragments, E = NAT entries, L = DHCP
 
 | Need | Shortcut |
 |------|----------|
-| /24 → /26 | 4 subnets, 64 addresses (62 usable) each |
-| /24 → /27 | 8 subnets, 32 addresses (30 usable) each |
-| /24 → /28 | 16 subnets, 16 addresses (14 usable) each |
-| /24 → /29 | 32 subnets, 8 addresses (6 usable) each |
-| /24 → /30 | 64 subnets, 4 addresses (2 usable, pt-to-pt) |
+| /24 â†’ /26 | 4 subnets, 64 addresses (62 usable) each |
+| /24 â†’ /27 | 8 subnets, 32 addresses (30 usable) each |
+| /24 â†’ /28 | 16 subnets, 16 addresses (14 usable) each |
+| /24 â†’ /29 | 32 subnets, 8 addresses (6 usable) each |
+| /24 â†’ /30 | 64 subnets, 4 addresses (2 usable, pt-to-pt) |
 | Number of hosts | 2^(32-prefix) - 2 |
 | Next network | Add 2^(32-prefix) to network address |
 | Wildcard mask | 2^(32-prefix) - 1 (for ACLs) |
@@ -2205,7 +2205,7 @@ N = routing entries, P = payload bytes, F = fragments, E = NAT entries, L = DHCP
 
 
 Given a base /24, to fit N hosts: find smallest S where 2^S - 2 >= N (S = host bits). New mask = 32 - S.
-Example: need 100 hosts → 2^7 - 2 = 126 >= 100 → /25 (128 addresses).
+Example: need 100 hosts â†’ 2^7 - 2 = 126 >= 100 â†’ /25 (128 addresses).
 
 ### NAT Traversal Deep Dive
 
@@ -2478,16 +2478,16 @@ sysctl -w net.ipv4.neigh.default.gc_thresh3=1024
 
 When troubleshooting network layer issues, follow this systematic approach:
 
-1. **Check local configuration**: `ipconfig/ifconfig` → correct IP, mask, gateway?
-2. **Verify link**: `ping 127.0.0.1` (loopback) → stack working?
-3. **Verify local network**: `ping <gateway>` → L3 to router working?
-4. **Check ARP**: `arp -a` → gateway MAC resolved?
-5. **Trace path**: `tracert/traceroute <destination>` → where does it fail?
-6. **Check routing**: `route print/netstat -rn` → default route present?
-7. **Check NAT**: `cat /proc/net/nf_conntrack` | `show ip nat translations` → translation entries?
-8. **Check firewall**: `iptables -L` / `netsh advfirewall show allprofiles` → blocking traffic?
-9. **PMTUD test**: `ping -f -l 1472 <destination>` → DF flag successful?
-10. **DNS resolution**: `nslookup <hostname>` → name to IP resolution working?
+1. **Check local configuration**: `ipconfig/ifconfig` â†’ correct IP, mask, gateway?
+2. **Verify link**: `ping 127.0.0.1` (loopback) â†’ stack working?
+3. **Verify local network**: `ping <gateway>` â†’ L3 to router working?
+4. **Check ARP**: `arp -a` â†’ gateway MAC resolved?
+5. **Trace path**: `tracert/traceroute <destination>` â†’ where does it fail?
+6. **Check routing**: `route print/netstat -rn` â†’ default route present?
+7. **Check NAT**: `cat /proc/net/nf_conntrack` | `show ip nat translations` â†’ translation entries?
+8. **Check firewall**: `iptables -L` / `netsh advfirewall show allprofiles` â†’ blocking traffic?
+9. **PMTUD test**: `ping -f -l 1472 <destination>` â†’ DF flag successful?
+10. **DNS resolution**: `nslookup <hostname>` â†’ name to IP resolution working?
 
 ### Network Layer Troubleshooting Cheat Sheet
 
@@ -2516,7 +2516,7 @@ When troubleshooting network layer issues, follow this systematic approach:
 | ceil(log2(N)) | Bits needed for N subnets | 4 subnets = 2 bits |
 | ceil(log2(H + 2)) | Bits needed for H hosts per subnet | 50 hosts = 6 bits |
 | (MTU - 20) / 8 * 8 | Max payload per fragment (8-byte aligned) | MTU 1500 = 1480 |
-| offset_8byte * 8 | Byte offset from fragment offset field | offset=185 → 1480 bytes |
+| offset_8byte * 8 | Byte offset from fragment offset field | offset=185 â†’ 1480 bytes |
 | TTL * (initial - 1) | Maximum path length | TTL=255 allows 254 hops |
 | 65535 - 2 * ephemeral_range | Max concurrent NAT entries | 65535 - 2 * 16384 = 32767 |
 
@@ -2537,7 +2537,7 @@ Using VLSM (Variable Length Subnet Masking) from the /16 base, the team designs 
 ### Outcome
 
 
-The hierarchical addressing plan reduces the core routing table from 500+ entries to 12 aggregated routes. ARP broadcast traffic decreases by 60% after implementing ARP caching and DAI. The VLSM design accommodates unexpected growth — one office expands to 200 hosts without renumbering. Annual network downtime drops from 12 hours to under 1 hour due to automated DHCP configuration and ARP attack prevention.
+The hierarchical addressing plan reduces the core routing table from 500+ entries to 12 aggregated routes. ARP broadcast traffic decreases by 60% after implementing ARP caching and DAI. The VLSM design accommodates unexpected growth â€” one office expands to 200 hosts without renumbering. Annual network downtime drops from 12 hours to under 1 hour due to automated DHCP configuration and ARP attack prevention.
 
 ## Practical Takeaways
 
@@ -2619,14 +2619,14 @@ Two reasons: (1) The client typically doesn't have an IP address yet (still usin
 
 <details>
 <summary>Solution</summary>
-(1) Dual Stack — running IPv4 and IPv6 simultaneously on the same interface. (2) Tunneling — encapsulating IPv6 packets inside IPv4 (6in4, Teredo, 6to4). (3) Translation — NAT64/DNS64 converts between IPv6 and IPv4 headers for IPv6-only clients accessing IPv4-only servers.
+(1) Dual Stack â€” running IPv4 and IPv6 simultaneously on the same interface. (2) Tunneling â€” encapsulating IPv6 packets inside IPv4 (6in4, Teredo, 6to4). (3) Translation â€” NAT64/DNS64 converts between IPv6 and IPv4 headers for IPv6-only clients accessing IPv4-only servers.
 </details>
 
 8. Explain the difference between SNAT, DNAT, and PAT.
 
 <details>
 <summary>Solution</summary>
-SNAT (Source NAT) translates the source IP of outbound packets (private→public). DNAT (Destination NAT) translates the destination IP of inbound packets (public→private), used for port forwarding. PAT (Port Address Translation) is a form of SNAT that maps many private IPs to one public IP using unique source ports. SNAT hides internal hosts; DNAT exposes internal services; PAT maximizes address utilization.
+SNAT (Source NAT) translates the source IP of outbound packets (privateâ†’public). DNAT (Destination NAT) translates the destination IP of inbound packets (publicâ†’private), used for port forwarding. PAT (Port Address Translation) is a form of SNAT that maps many private IPs to one public IP using unique source ports. SNAT hides internal hosts; DNAT exposes internal services; PAT maximizes address utilization.
 </details>
 
 ### Application Problems
@@ -2635,7 +2635,7 @@ SNAT (Source NAT) translates the source IP of outbound packets (private→public
 
 <details>
 <summary>Solution</summary>
-Available host bits: 32 - 24 = 8. Needed host bits: ceil(log2(50 + 2)) = 6 bits (64 addresses, 62 usable). Needed subnet bits: ceil(log2(4)) = 2 bits. Check: 6 + 2 = 8 ≤ 8. New prefix: 24 + 2 = /26. Subnet size: 2^(32-26) = 64 addresses (62 usable). Subnets: Subnet 0: 200.100.20.0/26, Subnet 1: 200.100.20.64/26, Subnet 2: 200.100.20.128/26, Subnet 3: 200.100.20.192/26.
+Available host bits: 32 - 24 = 8. Needed host bits: ceil(log2(50 + 2)) = 6 bits (64 addresses, 62 usable). Needed subnet bits: ceil(log2(4)) = 2 bits. Check: 6 + 2 = 8 â‰¤ 8. New prefix: 24 + 2 = /26. Subnet size: 2^(32-26) = 64 addresses (62 usable). Subnets: Subnet 0: 200.100.20.0/26, Subnet 1: 200.100.20.64/26, Subnet 2: 200.100.20.128/26, Subnet 3: 200.100.20.192/26.
 </details>
 
 10. A 3000-byte IP datagram (including 20-byte header) traverses a link with MTU 620 bytes. How many fragments? Provide offset, MF, and total length for each.
@@ -2649,14 +2649,14 @@ Payload = 2980 bytes. Max payload per fragment = ((620 - 20) / 8) * 8 = (600 / 8
 
 <details>
 <summary>Solution</summary>
-Each host sends 10 requests/min = 10/60 ≈ 0.167 requests/sec. With 50 hosts: 50 × 0.167 ≈ 8.33 broadcast ARP requests per second. Each broadcast is received by all 50 hosts, so total processed ARP frames = 8.33 × 50 ≈ 416.7 frames/sec. With full ARP caches, most requests would be cache hits (no broadcast needed). If hit rate is 90%, only 10% of requests generate broadcasts → ~0.833 broadcasts/sec.
+Each host sends 10 requests/min = 10/60 â‰ˆ 0.167 requests/sec. With 50 hosts: 50 Ã— 0.167 â‰ˆ 8.33 broadcast ARP requests per second. Each broadcast is received by all 50 hosts, so total processed ARP frames = 8.33 Ã— 50 â‰ˆ 416.7 frames/sec. With full ARP caches, most requests would be cache hits (no broadcast needed). If hit rate is 90%, only 10% of requests generate broadcasts â†’ ~0.833 broadcasts/sec.
 </details>
 
 12. A NAT router has one public IP and 500 internal hosts, each with 40 concurrent TCP connections. Is port exhaustion possible? Show calculations.
 
 <details>
 <summary>Solution</summary>
-Total concurrent connections: 500 × 40 = 20,000. Available ports per public IP: 65,535 - 1024 (well-known reserved) = 64,511 usable ports. Since 20,000 < 64,511, theoretical exhaustion is not reached. However, practical factors matter: ephemeral port range default on Linux is 32768-60999 (28,232 ports), and each connection consumes one port for the NAT translation. With 20,000 connections, 20,000/28,232 ≈ 71% of the ephemeral range is used. Exhaustion is unlikely but possible during peak bursts. Mitigation: use multiple public IPs or increase the local port range.
+Total concurrent connections: 500 Ã— 40 = 20,000. Available ports per public IP: 65,535 - 1024 (well-known reserved) = 64,511 usable ports. Since 20,000 < 64,511, theoretical exhaustion is not reached. However, practical factors matter: ephemeral port range default on Linux is 32768-60999 (28,232 ports), and each connection consumes one port for the NAT translation. With 20,000 connections, 20,000/28,232 â‰ˆ 71% of the ephemeral range is used. Exhaustion is unlikely but possible during peak bursts. Mitigation: use multiple public IPs or increase the local port range.
 </details>
 
 ### Implementation Problems
@@ -2779,7 +2779,7 @@ print(f"Connections: {result['total_connections']}, Ports: {result['unique_ports
 
 <details>
 <summary>Solution</summary>
-Use 10.0.0.0/8 as base. Allocate /16 per country (65,536 addresses each, enough for 50 countries × 65,536 = 3,276,800). Within each /16, allocate /20 per department (4096 addresses, enough for up to 16 departments per country). HQ gets 10.0.0.0/16. Countries: USA = 10.1.0.0/16, UK = 10.2.0.0/16, JP = 10.3.0.0/16, DE = 10.4.0.0/16, BR = 10.5.0.0/16. Route aggregation: core routers see only /16 prefixes (50 routes). Country routers see /20 prefixes per department. Validation function:
+Use 10.0.0.0/8 as base. Allocate /16 per country (65,536 addresses each, enough for 50 countries Ã— 65,536 = 3,276,800). Within each /16, allocate /20 per department (4096 addresses, enough for up to 16 departments per country). HQ gets 10.0.0.0/16. Countries: USA = 10.1.0.0/16, UK = 10.2.0.0/16, JP = 10.3.0.0/16, DE = 10.4.0.0/16, BR = 10.5.0.0/16. Route aggregation: core routers see only /16 prefixes (50 routes). Country routers see /20 prefixes per department. Validation function:
 ```python
 import ipaddress
 def validate_plan(country_nets):

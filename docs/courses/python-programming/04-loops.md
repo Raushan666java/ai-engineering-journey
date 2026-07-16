@@ -1,4 +1,4 @@
-# Chapter 4: Loops and Iteration
+﻿# Chapter 4: Loops and Iteration
 
 
 > **Previous:** [Control Flow](./03-control-flow.md) | **Next:** [Strings](./05-strings.md)
@@ -14,16 +14,16 @@ By the end of this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/04-loops/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/04-loops/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/04-loops/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/04-loops/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/04-loops/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/04-loops/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/04-loops/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/04-loops/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/python-programming/04-loops/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/python-programming/04-loops/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/python-programming/04-loops/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/python-programming/04-loops/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -788,12 +788,12 @@ for (let i = 0; i < 5; i++) {
   console.log(i);  // 0, 1, 2, 3, 4
 }
 
-// Python: enumerate() → TypeScript: entries()
+// Python: enumerate() â†’ TypeScript: entries()
 for (const [index, value] of items.entries()) {
   console.log(`${index}: ${value}`);
 }
 
-// Python: zip() → TypeScript: manual or utility
+// Python: zip() â†’ TypeScript: manual or utility
 const names: string[] = ["Alice", "Bob", "Charlie"];
 const scores: number[] = [92, 85, 78];
 for (let i = 0; i < names.length && i < scores.length; i++) {
@@ -824,7 +824,7 @@ for (const name of names) {
 if (!found) console.log("Not found");
 // Python: for name in names: ... else: print("Not found")
 
-// Python: reversed() → TypeScript: reverse() or manual loop
+// Python: reversed() â†’ TypeScript: reverse() or manual loop
 for (let i = items.length - 1; i >= 0; i--) {
   console.log(items[i]);  // cherry, banana, apple
 }

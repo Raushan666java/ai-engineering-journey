@@ -1,4 +1,4 @@
-# Chapter 11 — AI Testing, Evaluation & Quality
+﻿# Chapter 11 â€” AI Testing, Evaluation & Quality
 
 **Duration:** 1.5 weeks, ~18 hours
 **Goal:** Build a systematic testing and evaluation framework for AI agents and RAG pipelines. Move from "it works on my machine" to quantitative quality gates.
@@ -9,16 +9,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/ai-agent-engineer/11-ai-testing-evaluation/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/ai-agent-engineer/11-ai-testing-evaluation/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-agent-engineer/11-ai-testing-evaluation/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/ai-agent-engineer/11-ai-testing-evaluation/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/ai-agent-engineer/11-ai-testing-evaluation/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/ai-agent-engineer/11-ai-testing-evaluation/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-agent-engineer/11-ai-testing-evaluation/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/ai-agent-engineer/11-ai-testing-evaluation/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/ai-agent-engineer/11-ai-testing-evaluation/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/ai-agent-engineer/11-ai-testing-evaluation/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-agent-engineer/11-ai-testing-evaluation/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/ai-agent-engineer/11-ai-testing-evaluation/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -393,7 +393,7 @@ result = judge.evaluate(
 print(f"Verdict: {result.verdict}")
 print(f"Overall: {result.overall_score}")
 for s in result.scores:
-    print(f"  {s.dimension.value}: {s.score}/5 — {s.reasoning}")
+    print(f"  {s.dimension.value}: {s.score}/5 â€” {s.reasoning}")
 ```
 
 ---
@@ -451,7 +451,7 @@ class TrajectoryEvaluator:
         unnecessary = []
         for i, step in enumerate(trajectory.steps):
             if step.action and "error" in (step.observation or "").lower():
-                unnecessary.append(f"Step {i+1}: {step.action} failed — could have been avoided")
+                unnecessary.append(f"Step {i+1}: {step.action} failed â€” could have been avoided")
         evaluation.efficiency = {
             "score": max(1, 10 - len(unnecessary) * 2),
             "reasoning": f"{len(trajectory.steps)} total steps, {len(unnecessary)} unnecessary",

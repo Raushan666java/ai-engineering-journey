@@ -1,4 +1,4 @@
-# Chapter 5: Polymorphism
+﻿# Chapter 5: Polymorphism
 
 > **Previous:** [Inheritance](./04-inheritance.md) | **Next:** [Operator Overloading](./06-operator-overloading.md)
 
@@ -11,16 +11,16 @@ After studying this chapter, students will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/oop-cpp/05-polymorphism/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/oop-cpp/05-polymorphism/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/05-polymorphism/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/oop-cpp/05-polymorphism/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/oop-cpp/05-polymorphism/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/oop-cpp/05-polymorphism/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/05-polymorphism/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/oop-cpp/05-polymorphism/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/oop-cpp/05-polymorphism/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/oop-cpp/05-polymorphism/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/oop-cpp/05-polymorphism/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/oop-cpp/05-polymorphism/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -39,13 +39,13 @@ After studying this chapter, students will be able to:
 
 ---
 
-## 5.0 The Polymorphism Problem — A Real-World Analogy
+## 5.0 The Polymorphism Problem â€” A Real-World Analogy
 
-**Analogy — The Universal Remote**
+**Analogy â€” The Universal Remote**
 
 You have a universal remote with a single "Play" button. Point it at a **DVD Player**, and it starts spinning the disc. Point it at a **Streaming Stick**, and it buffers Netflix. Point it at a **Game Console**, and it launches the game. The same button press *behaves differently* depending on the device.
 
-This is polymorphism: **one interface, many implementations**. The remote doesn't need to know *what* it's talking to — it just sends "Play". Each device provides its own behaviour. If you invent a new device tomorrow, the remote works without any modification.
+This is polymorphism: **one interface, many implementations**. The remote doesn't need to know *what* it's talking to â€” it just sends "Play". Each device provides its own behaviour. If you invent a new device tomorrow, the remote works without any modification.
 
 In C++, polymorphism is the ability of objects of different types to respond to the same function call in type-specific ways. It is the third pillar of OOP.
 
@@ -55,14 +55,14 @@ In C++, polymorphism is the ability of objects of different types to respond to 
 
 | Flavour | Also Called | When It Happens | Mechanism | Speed | Flexibility |
 |---------|-------------|----------------|-----------|-------|-------------|
-| **Compile-time** | Static binding, early binding | Before the program runs | Function/operator overloading, templates | Fastest — zero runtime overhead | Lower — types must be known at compile time |
-| **Run-time** | Dynamic binding, late binding | While the program executes | Virtual functions via vtable/vptr | Slightly slower — one indirection | Higher — types can be determined at runtime |
+| **Compile-time** | Static binding, early binding | Before the program runs | Function/operator overloading, templates | Fastest â€” zero runtime overhead | Lower â€” types must be known at compile time |
+| **Run-time** | Dynamic binding, late binding | While the program executes | Virtual functions via vtable/vptr | Slightly slower â€” one indirection | Higher â€” types can be determined at runtime |
 
 We study both in this chapter, starting with compile-time.
 
 ---
 
-# PART I — COMPILE-TIME POLYMORPHISM
+# PART I â€” COMPILE-TIME POLYMORPHISM
 
 ---
 
@@ -73,38 +73,38 @@ We study both in this chapter, starting with compile-time.
 
 **Function overloading** means defining multiple functions with the **same name** but **different parameter lists** (different number, types, or order of parameters). The compiler selects the correct function at compile time based on the arguments passed.
 
-**Real-World Analogy — The Coffee Machine**
+**Real-World Analogy â€” The Coffee Machine**
 
 A coffee machine has one button labelled "Brew". But:
-- If you place a **cup** under the spout → it brews 200 ml.
-- If you place a **travel mug** → it brews 400 ml.
-- If you place a **thermos** → it brews 800 ml.
+- If you place a **cup** under the spout â†’ it brews 200 ml.
+- If you place a **travel mug** â†’ it brews 400 ml.
+- If you place a **thermos** â†’ it brews 800 ml.
 
 Same command ("Brew"), different behaviour based on *what you give it*.
 
-### 5.2.2 Function Overloading — Numbered Steps
+### 5.2.2 Function Overloading â€” Numbered Steps
 
 
 1. Compiler sees the function call and collects the argument types.
 2. Compiler builds a candidate set of all functions with the matching name.
-3. Compiler filters to **viable functions** — those callable with the given arguments (allowing implicit conversions).
+3. Compiler filters to **viable functions** â€” those callable with the given arguments (allowing implicit conversions).
 4. Compiler ranks viable functions by **conversion sequence quality** (exact match > promotion > standard conversion > user-defined conversion).
-5. If exactly one best match exists → **selected**. If none or more than one → **compile error**.
+5. If exactly one best match exists â†’ **selected**. If none or more than one â†’ **compile error**.
 
 **Pseudocode:**
 ```
-FUNCTION print(Int n)        → print integer
-FUNCTION print(Double d)     → print double
-FUNCTION print(String s)     → print string
-FUNCTION print(Int n, Int base) → print integer in given base
+FUNCTION print(Int n)        â†’ print integer
+FUNCTION print(Double d)     â†’ print double
+FUNCTION print(String s)     â†’ print string
+FUNCTION print(Int n, Int base) â†’ print integer in given base
 
-CALL print(42)           → Step 5: match #1 selected
-CALL print(3.14)         → Step 5: match #2 selected
-CALL print("hello")      → Step 5: match #3 selected
-CALL print(255, 16)      → Step 5: match #4 selected (two ints)
+CALL print(42)           â†’ Step 5: match #1 selected
+CALL print(3.14)         â†’ Step 5: match #2 selected
+CALL print("hello")      â†’ Step 5: match #3 selected
+CALL print(255, 16)      â†’ Step 5: match #4 selected (two ints)
 ```
 
-### 5.2.3 C++ Code — Function Overloading
+### 5.2.3 C++ Code â€” Function Overloading
 
 
 ```cpp
@@ -124,7 +124,7 @@ void print(const std::string& s) {
 }
 
 void print(int i, int base) {
-    std::cout << "Integer " << i << " in base " << base << " → ";
+    std::cout << "Integer " << i << " in base " << base << " â†’ ";
     if (base == 16) std::cout << std::hex << i;
     else if (base == 8) std::cout << std::oct << i;
     else std::cout << std::dec << i;
@@ -135,7 +135,7 @@ int main() {
     print(42);                    // Integer: 42
     print(3.14159);               // Double: 3.14159
     print("hello"s);              // String: hello
-    print(255, 16);               // Integer 255 in base 16 → ff
+    print(255, 16);               // Integer 255 in base 16 â†’ ff
     print('A');                   // Integer: 65 (char promotes to int)
     return 0;
 }
@@ -146,11 +146,11 @@ int main() {
 Integer: 42
 Double: 3.14159
 String: hello
-Integer 255 in base 16 → ff
+Integer 255 in base 16 â†’ ff
 Integer: 65
 ```
 
-**Dry Run — Overload Resolution:**
+**Dry Run â€” Overload Resolution:**
 
 | Call | Candidates | Viable | Best Match | Reason |
 |------|------------|--------|------------|--------|
@@ -158,7 +158,7 @@ Integer: 65
 | `print(3.14)` | same set | #1, #2, #3 | `print(double)` | Exact match for `double` |
 | `print("hello"s)` | same set | #1, #2, #3 | `print(string)` | Exact match for `string` |
 | `print(255, 16)` | same set | #4 | `print(int,int)` | Only match with 2 params |
-| `print('A')` | same set | #1, #2, #3 | `print(int)` | `char` → `int` is a promotion, beats `char` → `double` (standard conversion) |
+| `print('A')` | same set | #1, #2, #3 | `print(int)` | `char` â†’ `int` is a promotion, beats `char` â†’ `double` (standard conversion) |
 
 ### 5.2.4 Complexity Analysis
 
@@ -166,8 +166,8 @@ Integer: 65
 | Operation | Time | Space | Why? |
 |-----------|------|-------|------|
 | Overload resolution | O(N) candidates | O(1) | Compiler examines N overloads once per call; no runtime cost |
-| Call to selected function | O(1) | O(1) | Direct function call — resolved at link time |
-| Ambiguity detection | O(N²) in worst case | O(N) | Compiler must check every pair for best-match uniqueness |
+| Call to selected function | O(1) | O(1) | Direct function call â€” resolved at link time |
+| Ambiguity detection | O(NÂ²) in worst case | O(N) | Compiler must check every pair for best-match uniqueness |
 
 ---
 
@@ -180,34 +180,34 @@ A function can be overloaded if its signature differs in any of:
 
 | Change | Example | Allowed? |
 |--------|---------|----------|
-| Number of parameters | `f(int)` vs `f(int, int)` | ✅ |
-| Type of parameters | `f(int)` vs `f(double)` | ✅ |
-| Order of parameters | `f(int, double)` vs `f(double, int)` | ✅ |
-| Const/volatile on pointer | `f(int*)` vs `f(const int*)` | ✅ |
-| Reference qualifier | `f() &` vs `f() &&` (C++11) | ✅ |
+| Number of parameters | `f(int)` vs `f(int, int)` | âœ… |
+| Type of parameters | `f(int)` vs `f(double)` | âœ… |
+| Order of parameters | `f(int, double)` vs `f(double, int)` | âœ… |
+| Const/volatile on pointer | `f(int*)` vs `f(const int*)` | âœ… |
+| Reference qualifier | `f() &` vs `f() &&` (C++11) | âœ… |
 
-### 5.3.2 NOT Allowed — These Do NOT Overload
+### 5.3.2 NOT Allowed â€” These Do NOT Overload
 
 
 | Attempt | Why It Fails |
 |---------|-------------|
 | Same name, same params, different return type | Return type is NOT part of the signature |
 | Same name, same params, different in name only | Parameter names are irrelevant |
-| `f(int)` vs `f(const int)` | Top-level const is stripped — they are the same |
-| `f(int)` vs `f(int&)` | Call `f(x)` — both viable; ambiguity unless exact distinction |
+| `f(int)` vs `f(const int)` | Top-level const is stripped â€” they are the same |
+| `f(int)` vs `f(int&)` | Call `f(x)` â€” both viable; ambiguity unless exact distinction |
 
 ### 5.3.3 Overload Resolution Ranking
 
 
 The compiler ranks viable functions by conversion quality:
 
-1. **Exact match** — no conversion needed (or trivial: array-to-pointer, function-to-pointer)
-2. **Promotion** — `char` → `int`, `float` → `double`, etc.
-3. **Standard conversion** — `int` → `double`, `double` → `int`, derived* → base*
-4. **User-defined conversion** — via conversion operator or single-argument constructor
-5. **Ellipsis** (`...`) — last resort, match via `...`
+1. **Exact match** â€” no conversion needed (or trivial: array-to-pointer, function-to-pointer)
+2. **Promotion** â€” `char` â†’ `int`, `float` â†’ `double`, etc.
+3. **Standard conversion** â€” `int` â†’ `double`, `double` â†’ `int`, derived* â†’ base*
+4. **User-defined conversion** â€” via conversion operator or single-argument constructor
+5. **Ellipsis** (`...`) â€” last resort, match via `...`
 
-**Code — Resolution Ranking:**
+**Code â€” Resolution Ranking:**
 
 ```cpp
 #include <iostream>
@@ -222,10 +222,10 @@ int main() {
     long l = 5;
     char c = 'A';
 
-    g(i);    // exact match → g(int)
-    g(s);    // exact match → g(short)
-    g(l);    // exact match → g(long)
-    g(c);    // promotion → g(int) — char promotes to int, not short/long
+    g(i);    // exact match â†’ g(int)
+    g(s);    // exact match â†’ g(short)
+    g(l);    // exact match â†’ g(long)
+    g(c);    // promotion â†’ g(int) â€” char promotes to int, not short/long
     return 0;
 }
 ```
@@ -242,37 +242,37 @@ int
 
 | Call | Viable Functions | Conversions | Best Match |
 |------|------------------|-------------|------------|
-| `g(i)` where `i` is `int` | `g(int)`, `g(short)`, `g(long)` | #1: exact, #2: standard (int→short), #3: standard (int→long) | `g(int)` — exact |
-| `g(s)` where `s` is `short` | same | #1: promotion (short→int), #2: exact, #3: standard (short→long) | `g(short)` — exact |
-| `g(c)` where `c` is `char` | same | #1: promotion (char→int), #2: promotion (char→short), #3: promotion (char→long) | `g(int)` — promotion to `int` preferred over `short` because `int` can represent all `char` values |
+| `g(i)` where `i` is `int` | `g(int)`, `g(short)`, `g(long)` | #1: exact, #2: standard (intâ†’short), #3: standard (intâ†’long) | `g(int)` â€” exact |
+| `g(s)` where `s` is `short` | same | #1: promotion (shortâ†’int), #2: exact, #3: standard (shortâ†’long) | `g(short)` â€” exact |
+| `g(c)` where `c` is `char` | same | #1: promotion (charâ†’int), #2: promotion (charâ†’short), #3: promotion (charâ†’long) | `g(int)` â€” promotion to `int` preferred over `short` because `int` can represent all `char` values |
 
 ---
 
-## 5.4 Operator Overloading — Guidelines
+## 5.4 Operator Overloading â€” Guidelines
 
 ### 5.4.1 What Is Operator Overloading?
 
 
-Operator overloading allows user-defined types to use C++ operators (`+`, `-`, `*`, `<<`, `[]`, etc.) with natural syntax. It is a form of **compile-time polymorphism** — the compiler selects the correct `operator@` function based on operand types.
+Operator overloading allows user-defined types to use C++ operators (`+`, `-`, `*`, `<<`, `[]`, etc.) with natural syntax. It is a form of **compile-time polymorphism** â€” the compiler selects the correct `operator@` function based on operand types.
 
-**Real-World Analogy — The Matrix Calculator**
+**Real-World Analogy â€” The Matrix Calculator**
 
-A basic calculator adds numbers: `2 + 3 = 5`. But a **matrix calculator** overloads `+` so that `matrixA + matrixB` performs element-wise addition. The `+` symbol *means different things* depending on what it operates on — just like function overloading.
+A basic calculator adds numbers: `2 + 3 = 5`. But a **matrix calculator** overloads `+` so that `matrixA + matrixB` performs element-wise addition. The `+` symbol *means different things* depending on what it operates on â€” just like function overloading.
 
 ### 5.4.2 Which Operators Can Be Overloaded?
 
 
 | Category | Operators | Overloadable? |
 |----------|-----------|---------------|
-| Arithmetic | `+ - * / %` | ✅ Most |
-| Bitwise | `& ^ | ~ << >>` | ✅ Most |
-| Assignment | `= += -= *=` | ✅ Most |
-| Comparison | `== != < > <= >=` | ✅ All |
-| Subscript | `[]` | ✅ |
-| Function call | `()` | ✅ |
-| Dereference | `* ->` | ✅ |
-| Stream | `<< >>` | ✅ As friends |
-| NEW/DELETE | `new new[] delete delete[]` | ✅ |
+| Arithmetic | `+ - * / %` | âœ… Most |
+| Bitwise | `& ^ | ~ << >>` | âœ… Most |
+| Assignment | `= += -= *=` | âœ… Most |
+| Comparison | `== != < > <= >=` | âœ… All |
+| Subscript | `[]` | âœ… |
+| Function call | `()` | âœ… |
+| Dereference | `* ->` | âœ… |
+| Stream | `<< >>` | âœ… As friends |
+| NEW/DELETE | `new new[] delete delete[]` | âœ… |
 
 ### 5.4.3 Operators That CANNOT Be Overloaded
 
@@ -294,12 +294,12 @@ A basic calculator adds numbers: `2 + 3 = 5`. But a **matrix calculator** overlo
 2. **Preserve expected arity and precedence.** You cannot change precedence, associativity, or arity.
 3. **Provide compound assignment from the arithmetic version.** Implement `+=` then implement `+` in terms of `+=`.
 4. **Return by value for arithmetic, by reference for assignment.**
-   - `T operator+(const T&, const T&)` — returns new object by value
-   - `T& operator+=(const T&)` — modifies and returns *this by reference
+   - `T operator+(const T&, const T&)` â€” returns new object by value
+   - `T& operator+=(const T&)` â€” modifies and returns *this by reference
 5. **Make binary operators non-member friends** when the left operand should support conversions.
-6. **`<<` and `>>` for I/O MUST be non-member functions** — the left operand is `std::ostream&`, not your class.
+6. **`<<` and `>>` for I/O MUST be non-member functions** â€” the left operand is `std::ostream&`, not your class.
 
-### 5.4.5 Code — Complex Number with Operator Overloading
+### 5.4.5 Code â€” Complex Number with Operator Overloading
 
 
 ```cpp
@@ -367,7 +367,7 @@ a * b = (-5 + 10i)
 5 + a = (8 + 4i)
 ```
 
-### 5.4.6 Operator Overloading — Complexity
+### 5.4.6 Operator Overloading â€” Complexity
 
 
 | Operation | Space | Time | Why? |
@@ -378,11 +378,11 @@ a * b = (-5 + 10i)
 
 ---
 
-## 5.5 Overloading vs Overriding — Critical Distinction
+## 5.5 Overloading vs Overriding â€” Critical Distinction
 
 | Aspect | Function Overloading | Function Overriding |
 |--------|---------------------|---------------------|
-| Scope | Same class (or global) | Base class → derived class |
+| Scope | Same class (or global) | Base class â†’ derived class |
 | Binding | Compile-time | Run-time (virtual) |
 | Signature | Must differ | Must match exactly |
 | `virtual` keyword | Not needed | Required in base |
@@ -392,7 +392,7 @@ a * b = (-5 + 10i)
 
 ---
 
-# PART II — RUN-TIME POLYMORPHISM
+# PART II â€” RUN-TIME POLYMORPHISM
 
 ---
 
@@ -416,7 +416,7 @@ public:
 
 int main() {
     Base* p = new Derived();
-    p->speak();   // "Base" — NOT what we want!
+    p->speak();   // "Base" â€” NOT what we want!
     delete p;
 }
 ```
@@ -443,7 +443,7 @@ public:
 
 int main() {
     Base* p = new Derived();
-    p->speak();   // "Derived" — runtime dispatch!
+    p->speak();   // "Derived" â€” runtime dispatch!
     delete p;
 }
 ```
@@ -453,18 +453,18 @@ int main() {
 Derived
 ```
 
-### 5.6.2 Real-World Analogy — The Shape Drawer
+### 5.6.2 Real-World Analogy â€” The Shape Drawer
 
 
-A graphic editor has a list of shapes. When you click "Render All", the editor calls `draw()` on each shape. A **Circle** draws an arc. A **Square** draws four lines. A **Triangle** draws three lines. The editor does not care what each shape is — it just says "draw yourself". Each shape *knows* how to draw itself.
+A graphic editor has a list of shapes. When you click "Render All", the editor calls `draw()` on each shape. A **Circle** draws an arc. A **Square** draws four lines. A **Triangle** draws three lines. The editor does not care what each shape is â€” it just says "draw yourself". Each shape *knows* how to draw itself.
 
 ```
-Editor: "Shape #1, draw()"   → Circle draws ○
-Editor: "Shape #2, draw()"   → Square draws □
-Editor: "Shape #3, draw()"   → Triangle draws △
+Editor: "Shape #1, draw()"   â†’ Circle draws â—‹
+Editor: "Shape #2, draw()"   â†’ Square draws â–¡
+Editor: "Shape #3, draw()"   â†’ Triangle draws â–³
 ```
 
-### 5.6.3 Virtual Functions — Numbered Steps
+### 5.6.3 Virtual Functions â€” Numbered Steps
 
 
 1. Base class declares `virtual void f();`.
@@ -474,37 +474,37 @@ Editor: "Shape #3, draw()"   → Triangle draws △
 5. Compiler generates code that reads the object's **vptr** (at offset 0 in most implementations).
 6. Compiler follows vptr to the **vtable** (a static table of function pointers).
 7. Compiler indexes into the vtable at a fixed offset (known for `f`).
-8. Compiler calls the function pointer found at that slot — this is the **most-derived override**.
+8. Compiler calls the function pointer found at that slot â€” this is the **most-derived override**.
 9. If `Derived` did not override `f`, the vtable slot points to `Base::f`.
 
-### 5.6.4 Pseudocode — Virtual Dispatch
+### 5.6.4 Pseudocode â€” Virtual Dispatch
 
 
 ```
 CLASS Shape
-  VIRTUAL draw()     → prints "Shape"
-  VIRTUAL area()     → returns 0
+  VIRTUAL draw()     â†’ prints "Shape"
+  VIRTUAL area()     â†’ returns 0
 
 CLASS Circle EXTENDS Shape
-  OVERRIDE draw()    → prints "Circle"
-  OVERRIDE area()    → returns π·r²
+  OVERRIDE draw()    â†’ prints "Circle"
+  OVERRIDE area()    â†’ returns Ï€Â·rÂ²
 
 CLASS Square EXTENDS Shape
-  OVERRIDE draw()    → prints "Square"
-  OVERRIDE area()    → returns side²
+  OVERRIDE draw()    â†’ prints "Square"
+  OVERRIDE area()    â†’ returns sideÂ²
 
 FUNCTION render(Shape& s)
-  s.draw()           ← runtime dispatch
-  PRINT s.area()    ← runtime dispatch
+  s.draw()           â† runtime dispatch
+  PRINT s.area()    â† runtime dispatch
 
 FUNCTION main()
   Circle c
   Square sq
-  render(c)   → circle, 3.14
-  render(sq)  → square, 4.0
+  render(c)   â†’ circle, 3.14
+  render(sq)  â†’ square, 4.0
 ```
 
-### 5.6.5 C++ Code — Complete Virtual Function Example
+### 5.6.5 C++ Code â€” Complete Virtual Function Example
 
 
 ```cpp
@@ -575,15 +575,15 @@ Triangle(base=3, height=4)
   Area: 6
 ```
 
-**Dry Run — Virtual Dispatch for `shapes[0]->draw()`:**
+**Dry Run â€” Virtual Dispatch for `shapes[0]->draw()`:**
 
 | Step | What Happens | Where |
 |------|-------------|-------|
 | 1 | `shapes[0]` is a `unique_ptr<Shape>` pointing to a `Circle` | Heap |
 | 2 | `render(*s)` passes `Circle` as `const Shape&` | Stack frame |
-| 3 | `s.draw()` is called — compiler generates vptr lookup | Object at offset 0 |
-| 4 | vptr → Circle's vtable | Static memory |
-| 5 | Index `draw` slot → `Circle::draw` | Vtable slot 1 |
+| 3 | `s.draw()` is called â€” compiler generates vptr lookup | Object at offset 0 |
+| 4 | vptr â†’ Circle's vtable | Static memory |
+| 5 | Index `draw` slot â†’ `Circle::draw` | Vtable slot 1 |
 | 6 | `Circle::draw()` executes | Code section |
 | 7 | Output: `Circle(r=1)` | Console |
 
@@ -622,15 +622,15 @@ public:
 error: 'Derived::draw' marked 'override' but does not override any member functions
 ```
 
-### 5.7.2 `override` — Rules
+### 5.7.2 `override` â€” Rules
 
 
 | Rule | Explanation |
 |------|-------------|
 | Placement | After the parameter list (and after `const`/`&`/`&&`) |
-| Virtual inheritance | Override implies virtual — base function must be virtual |
+| Virtual inheritance | Override implies virtual â€” base function must be virtual |
 | Return type | Must match exactly, OR be covariant |
-| Access level | Can be different from base (public → private override is legal) |
+| Access level | Can be different from base (public â†’ private override is legal) |
 | Optional but recommended | Omission is not an error, but is a missed safety check |
 
 ---
@@ -651,13 +651,13 @@ public:
 
 class Derived : public Base {
 public:
-    void f() final;  // OK — override, prevents further overrides
+    void f() final;  // OK â€” override, prevents further overrides
 };
 
 class GrandChild : public Derived {
 public:
     void f() override;  // ERROR: Derived::f is final
-    void g() override;  // OK — g is not final
+    void g() override;  // OK â€” g is not final
 };
 ```
 
@@ -668,18 +668,18 @@ class Sealed final { };  // Cannot be inherited
 class Fail : public Sealed { };  // ERROR
 ```
 
-### 5.8.2 `final` — Benefits
+### 5.8.2 `final` â€” Benefits
 
 
 | Benefit | Explanation |
 |---------|-------------|
 | Design intent | Communicates "this behaviour is definitive" |
-| Devirtualisation | Compiler can devirtualise calls to final functions — inline them |
+| Devirtualisation | Compiler can devirtualise calls to final functions â€” inline them |
 | Security | Prevents unintended subclass interference |
 
 ---
 
-## 5.9 The vtable and vptr Mechanism — Deep Dive
+## 5.9 The vtable and vptr Mechanism â€” Deep Dive
 
 ### 5.9.1 What Is the vtable?
 
@@ -691,64 +691,64 @@ The **vtable** (virtual table) is a compiler-generated array of function pointer
 
 The **vptr** (virtual pointer) is a hidden pointer member inside each object of a polymorphic class. It points to the class's vtable. The vptr is typically at offset 0 in the object layout.
 
-### 5.9.3 vtable/vptr — Numbered Steps
+### 5.9.3 vtable/vptr â€” Numbered Steps
 
 
 1. Compiler encounters a class with any virtual function.
 2. Compiler generates a static vtable for that class containing pointers to all virtual functions.
 3. Compiler adds a hidden vptr member to the class (usually at offset 0).
 4. Compiler generates constructor code that initialises the vptr to the class's vtable.
-5. In a hierarchy, the base class constructor sets vptr → base vtable.
-6. When the derived class constructor runs, it **updates** vptr → derived vtable.
-7. A virtual function call `ptr->f()` compiles to: read vptr → follow to vtable → index to slot → indirect call.
+5. In a hierarchy, the base class constructor sets vptr â†’ base vtable.
+6. When the derived class constructor runs, it **updates** vptr â†’ derived vtable.
+7. A virtual function call `ptr->f()` compiles to: read vptr â†’ follow to vtable â†’ index to slot â†’ indirect call.
 
-### 5.9.4 Memory Layout — ASCII Visualization
+### 5.9.4 Memory Layout â€” ASCII Visualization
 
 
 ```
 CLASS HIERARCHY:
     Shape (virtual: draw, area)
-      ↑
+      â†‘
     Circle (overrides: draw, area)
-      ↑
+      â†‘
     ThinCircle (overrides: draw only)
 
 MEMORY LAYOUT (64-bit):
 
     Shape's vtable (static):
-    ┌─────────────────────────┐
-    │  [0]: typeinfo*         │  ← for typeid
-    │  [1]: Shape::draw()     │
-    │  [2]: Shape::area()     │
-    │  [3]: Shape::~Shape()   │
-    └─────────────────────────┘
+    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+    â”‚  [0]: typeinfo*         â”‚  â† for typeid
+    â”‚  [1]: Shape::draw()     â”‚
+    â”‚  [2]: Shape::area()     â”‚
+    â”‚  [3]: Shape::~Shape()   â”‚
+    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
     Circle's vtable (static):
-    ┌─────────────────────────┐
-    │  [0]: typeinfo*         │
-    │  [1]: Circle::draw()    │  ← overrides Shape::draw
-    │  [2]: Circle::area()    │  ← overrides Shape::area
-    │  [3]: Circle::~Circle() │
-    └─────────────────────────┘
+    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+    â”‚  [0]: typeinfo*         â”‚
+    â”‚  [1]: Circle::draw()    â”‚  â† overrides Shape::draw
+    â”‚  [2]: Circle::area()    â”‚  â† overrides Shape::area
+    â”‚  [3]: Circle::~Circle() â”‚
+    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
     ThinCircle's vtable (static):
-    ┌─────────────────────────┐
-    │  [0]: typeinfo*         │
-    │  [1]: ThinCircle::draw()│  ← overrides Circle::draw
-    │  [2]: Circle::area()    │  ← inherited, not overridden
-    │  [3]: ThinCircle::~TC() │
-    └─────────────────────────┘
+    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+    â”‚  [0]: typeinfo*         â”‚
+    â”‚  [1]: ThinCircle::draw()â”‚  â† overrides Circle::draw
+    â”‚  [2]: Circle::area()    â”‚  â† inherited, not overridden
+    â”‚  [3]: ThinCircle::~TC() â”‚
+    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
     Object layout (Circle on heap):
-    ┌───────────────────┐
-    │  vptr  ──────────────→ Circle's vtable
-    ├───────────────────┤
-    │  double r_        │  ← data member
-    └───────────────────┘
+    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+    â”‚  vptr  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â†’ Circle's vtable
+    â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+    â”‚  double r_        â”‚  â† data member
+    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
                           Size: 16 bytes (8 vptr + 8 double)
 ```
 
-### 5.9.5 Vtable Dispatch — Detailed Trace
+### 5.9.5 Vtable Dispatch â€” Detailed Trace
 
 
 ```cpp
@@ -761,8 +761,8 @@ s->draw();   // How does the compiler execute this?
 | Instruction | Meaning |
 |-------------|---------|
 | `mov rax, [s]` | Load the address of the Circle object |
-| `mov rbx, [rax]` | Read the vptr (first 8 bytes) → address of Circle's vtable |
-| `mov rcx, [rbx + 8]` | Read vtable slot 1 (offset 8 bytes on 64-bit) → Circle::draw |
+| `mov rbx, [rax]` | Read the vptr (first 8 bytes) â†’ address of Circle's vtable |
+| `mov rcx, [rbx + 8]` | Read vtable slot 1 (offset 8 bytes on 64-bit) â†’ Circle::draw |
 | `call rcx` | Indirect call to Circle::draw |
 
 **Cost breakdown per virtual call:**
@@ -779,7 +779,7 @@ s->draw();   // How does the compiler execute this?
 
 **Key insight:** Virtual calls are not expensive per se (~5 ns on modern hardware). The real cost is that the compiler **cannot inline** across the indirection, losing optimisation opportunities that may be 10-100x more significant.
 
-### 5.9.6 Vtable During Construction — The Trap
+### 5.9.6 Vtable During Construction â€” The Trap
 
 
 ```cpp
@@ -815,7 +815,7 @@ After ctor: Derived
 
 **Explanation:**
 - During `Base`'s constructor, the vptr points to **Base's vtable** (Derived not yet constructed).
-- `speak()` dispatches to `Base::speak()` — not Derived's version.
+- `speak()` dispatches to `Base::speak()` â€” not Derived's version.
 - After `Derived`'s constructor begins, vptr is updated to **Derived's vtable**.
 - After construction completes, all calls go to `Derived::speak()`.
 
@@ -828,7 +828,7 @@ After ctor: Derived
 |--------|------|------|
 | Per-class vtable memory | O(V) where V = number of virtual functions | One function pointer per virtual function |
 | Per-object vptr memory | 8 bytes (64-bit) | One hidden pointer |
-| Virtual call overhead | 2 loads + 1 indirect call | vptr→vtable→function |
+| Virtual call overhead | 2 loads + 1 indirect call | vptrâ†’vtableâ†’function |
 | Virtual call (devirtualised) | 0 overhead | Compiler resolves to direct call when type is known |
 | Constructor vptr setup | O(1) per constructor | Single pointer write per constructor level |
 
@@ -845,9 +845,9 @@ A pure virtual function is a virtual function that has **no implementation** in 
 virtual void draw() const = 0;  // Pure virtual
 ```
 
-Any class containing at least one pure virtual function is **abstract** — you cannot instantiate it.
+Any class containing at least one pure virtual function is **abstract** â€” you cannot instantiate it.
 
-### 5.10.2 Real-World Analogy — The USB Standard
+### 5.10.2 Real-World Analogy â€” The USB Standard
 
 
 The USB specification defines what every USB device must do:
@@ -859,12 +859,12 @@ But the USB specification itself **is not a device**. Intel cannot sell you a "U
 
 In C++: `USBDevice` is the abstract class. `Keyboard`, `Mouse`, `FlashDrive` are concrete derived classes. You cannot create a `USBDevice` object, but you can use `USBDevice*` pointers to refer to any concrete device.
 
-### 5.10.3 Pure Virtual Functions — Numbered Steps
+### 5.10.3 Pure Virtual Functions â€” Numbered Steps
 
 
 1. Designer identifies a behaviour that every derived type must provide.
 2. Base class declares `virtual void doit() = 0;`
-3. Base cannot be instantiated — compile-time enforcement.
+3. Base cannot be instantiated â€” compile-time enforcement.
 4. Every concrete derived class **must** override `doit()`.
 5. If a derived class does NOT override all pure virtuals, it too is abstract.
 
@@ -878,18 +878,18 @@ ABSTRACT CLASS Vehicle
   CONCRETE void refuel() { /* common logic */ }
 
 CLASS Car EXTENDS Vehicle
-  OVERRIDE void startEngine() → "turn key"
-  OVERRIDE void drive()       → "steer wheels"
+  OVERRIDE void startEngine() â†’ "turn key"
+  OVERRIDE void drive()       â†’ "steer wheels"
 
 CLASS Bike EXTENDS Vehicle
-  OVERRIDE void startEngine() → "kick pedal"
-  OVERRIDE void drive()       → "balance on two"
+  OVERRIDE void startEngine() â†’ "kick pedal"
+  OVERRIDE void drive()       â†’ "balance on two"
 
 Vehicle* v = new Car()  // OK
 Vehicle* w = new Vehicle()  // ERROR: abstract
 ```
 
-### 5.10.5 C++ Code — Abstract Shape
+### 5.10.5 C++ Code â€” Abstract Shape
 
 
 ```cpp
@@ -927,7 +927,7 @@ public:
         return width_ * height_;
     }
     void describe() const override {
-        std::cout << "Rectangle(" << width_ << "×" << height_ << ")";
+        std::cout << "Rectangle(" << width_ << "Ã—" << height_ << ")";
     }
 private:
     double width_, height_;
@@ -943,7 +943,7 @@ int main() {
 
     for (auto s : shapes) {
         s->describe();
-        std::cout << " → ";
+        std::cout << " â†’ ";
         s->printArea();
     }
     return 0;
@@ -952,8 +952,8 @@ int main() {
 
 **Output:**
 ```
-Circle(radius=5) → Area: 78.5398
-Rectangle(3×4) → Area: 12
+Circle(radius=5) â†’ Area: 78.5398
+Rectangle(3Ã—4) â†’ Area: 12
 ```
 
 ### 5.10.6 Pure Virtual Functions with Bodies
@@ -1008,7 +1008,7 @@ public:
 
 int main() {
     Base* p = new Derived();
-    delete p;   // UNDEFINED BEHAVIOUR — only ~Base runs
+    delete p;   // UNDEFINED BEHAVIOUR â€” only ~Base runs
 }
 ```
 
@@ -1017,7 +1017,7 @@ int main() {
 ~Base
 ```
 
-**Reality:** This is **undefined behaviour**. The `Derived` destructor never runs — `big_data` leaks.
+**Reality:** This is **undefined behaviour**. The `Derived` destructor never runs â€” `big_data` leaks.
 
 ### 5.11.2 The Fix
 
@@ -1046,12 +1046,12 @@ int main() {
 ~Base
 ```
 
-### 5.11.3 Virtual Destructors — Numbered Steps
+### 5.11.3 Virtual Destructors â€” Numbered Steps
 
 
 1. `delete p;` triggers the destructor call.
 2. Compiler reads vptr from `*p` (virtual dispatch).
-3. vptr points to `Derived`'s vtable → `Derived::~Derived()` is called.
+3. vptr points to `Derived`'s vtable â†’ `Derived::~Derived()` is called.
 4. `Derived` destructor body executes (frees resources, etc.).
 5. After body, `Derived` destructor implicitly calls `Base::~Base()`.
 6. `Base` destructor body executes.
@@ -1087,11 +1087,11 @@ void process(Shape& s) {
 }
 ```
 
-**Real-World Analogy — The Airport Security Line**
+**Real-World Analogy â€” The Airport Security Line**
 
 Everyone in the security line is a "Passenger". Most are "Economy". Some are "FirstClass". You can ask: "Are you a FirstClass passenger?" If yes, you can give them the lounge key. If no, they stay in the general queue.
 
-`dynamic_cast` is that question — "Are you really this type?"
+`dynamic_cast` is that question â€” "Are you really this type?"
 
 ### 5.12.2 `typeid`
 
@@ -1109,7 +1109,7 @@ void identify(const Shape& s) {
 }
 ```
 
-### 5.12.3 Code — RTTI in Action
+### 5.12.3 Code â€” RTTI in Action
 
 
 ```cpp
@@ -1166,7 +1166,7 @@ Purring...
   (typeid: class Cat)
 ```
 
-### 5.12.4 `dynamic_cast` — Performance Cost
+### 5.12.4 `dynamic_cast` â€” Performance Cost
 
 
 | Operation | Relative Cost | Why? |
@@ -1212,7 +1212,7 @@ Unlike Java/C#, C++ has no `interface` keyword. The equivalent is a class with *
 | C++ keyword | None (just `= 0`) | None (just `= 0` on all) |
 | Use case | Share common state + behaviour | Define pure contract |
 
-### 5.14.3 Example — Pure Interface
+### 5.14.3 Example â€” Pure Interface
 
 
 ```cpp
@@ -1263,9 +1263,9 @@ public:
 int main() {
     Derived d;
     Base b = d;       // SLICING! d's derived part is gone
-    b.identify();     // "Base" — NOT polymorphic
-    Base& br = d;     // No slice — reference
-    br.identify();    // "Derived" — polymorphic
+    b.identify();     // "Base" â€” NOT polymorphic
+    Base& br = d;     // No slice â€” reference
+    br.identify();    // "Derived" â€” polymorphic
 }
 ```
 
@@ -1287,7 +1287,7 @@ When you copy a `Derived` into a `Base`, the compiler:
 
 ---
 
-# PART III — COMPARISON TABLES
+# PART III â€” COMPARISON TABLES
 
 ---
 
@@ -1297,9 +1297,9 @@ When you copy a `Derived` into a `Base`, the compiler:
 |-----------|--------------------------|----------------------|
 | **When resolved** | At compile time | At run time |
 | **Mechanism** | Function/operator overloading, templates | Virtual functions via vtable/vptr |
-| **Speed** | Fastest — direct call, inlineable | ~5-25 ns extra per call, not inlineable |
+| **Speed** | Fastest â€” direct call, inlineable | ~5-25 ns extra per call, not inlineable |
 | **Memory overhead** | Zero | Vptr per object + vtable per class |
-| **Type safety** | Strict — types checked at compile time | Runtime checked via RTTI if needed |
+| **Type safety** | Strict â€” types checked at compile time | Runtime checked via RTTI if needed |
 | **Flexibility** | Types must be known at compile time | Types can be loaded from DLLs at runtime |
 | **Coupling** | Duck-typed (templates) | Inheritance-based |
 | **Error detection** | Compiler catches mismatches | Runtime crashes if vtable corrupted |
@@ -1322,16 +1322,16 @@ When you copy a `Derived` into a `Base`, the compiler:
 
 | Combination | Validity | Meaning |
 |-------------|----------|---------|
-| `virtual` alone | ✅ | Base function eligible for override |
-| `virtual` + `final` | ✅ | Base function that cannot be overridden further |
-| `override` alone | ✅ | Derived override (implies virtual) |
-| `override` + `final` | ✅ | Derived override that cannot be overridden further |
-| `virtual` + `override` | ❌ (redundant) | Compiler may warn; override already implies virtual |
-| `final` alone (function) | ❌ | Must be used with override or virtual |
+| `virtual` alone | âœ… | Base function eligible for override |
+| `virtual` + `final` | âœ… | Base function that cannot be overridden further |
+| `override` alone | âœ… | Derived override (implies virtual) |
+| `override` + `final` | âœ… | Derived override that cannot be overridden further |
+| `virtual` + `override` | âŒ (redundant) | Compiler may warn; override already implies virtual |
+| `final` alone (function) | âŒ | Must be used with override or virtual |
 
 ---
 
-## 5.18 Abstract Class vs Interface — Detailed Table
+## 5.18 Abstract Class vs Interface â€” Detailed Table
 
 | Criterion | Abstract Class | Interface (All-Pure) |
 |-----------|---------------|---------------------|
@@ -1347,7 +1347,7 @@ When you copy a `Derived` into a `Base`, the compiler:
 
 ---
 
-# PART IV — INTERVIEW CORNER
+# PART IV â€” INTERVIEW CORNER
 
 ---
 
@@ -1361,13 +1361,13 @@ When you copy a `Derived` into a `Base`, the compiler:
 
 class Base {
 public:
-    Base() { std::cout << "Base ctor → "; speak(); }
+    Base() { std::cout << "Base ctor â†’ "; speak(); }
     virtual void speak() { std::cout << "Base\n"; }
 };
 
 class Derived : public Base {
 public:
-    Derived() { std::cout << "Derived ctor → "; speak(); }
+    Derived() { std::cout << "Derived ctor â†’ "; speak(); }
     void speak() override { std::cout << "Derived\n"; }
 };
 
@@ -1379,12 +1379,12 @@ int main() {
 
 **Output:**
 ```
-Base ctor → Base
-Derived ctor → Derived
+Base ctor â†’ Base
+Derived ctor â†’ Derived
 Derived
 ```
 
-**Why:** During `Base()` construction, the vptr points to `Base`'s vtable — `Derived` hasn't been constructed yet. Calling `speak()` dispatches to `Base::speak()`. After `Derived`'s constructor body runs, vptr is updated.
+**Why:** During `Base()` construction, the vptr points to `Base`'s vtable â€” `Derived` hasn't been constructed yet. Calling `speak()` dispatches to `Base::speak()`. After `Derived`'s constructor body runs, vptr is updated.
 
 ---
 
@@ -1398,18 +1398,18 @@ For: class Base { virtual void f(); virtual void g(); };
      class Derived : Base { void f() override; };
 
 Base vtable:                     Derived vtable:
-┌──────────────────┐            ┌──────────────────┐
-│ typeinfo*         │            │ typeinfo*         │
-│ Base::f()         │            │ Derived::f()      │
-│ Base::g()         │            │ Base::g()         │
-└──────────────────┘            └──────────────────┘
-       ▲                                ▲
-       │                                │
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”            â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ typeinfo*         â”‚            â”‚ typeinfo*         â”‚
+â”‚ Base::f()         â”‚            â”‚ Derived::f()      â”‚
+â”‚ Base::g()         â”‚            â”‚ Base::g()         â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜            â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+       â–²                                â–²
+       â”‚                                â”‚
 Object of type Base:            Object of type Derived:
-┌──────────────────┐            ┌──────────────────┐
-│ vptr ──────────────┘            │ vptr ──────────────┘
-│ data members      │            │ data members      │
-└──────────────────┘            └──────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”            â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ vptr â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜            â”‚ vptr â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+â”‚ data members      â”‚            â”‚ data members      â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜            â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 **Dispatch of `ptr->f()`:**
@@ -1447,9 +1447,9 @@ int main() {
 | Strategy | Technique |
 |----------|-----------|
 | Delete base copy operations | `Base(const Base&) = delete;` |
-| Use pointers/references | `Base& ref = d;` — no slice |
+| Use pointers/references | `Base& ref = d;` â€” no slice |
 | Make base abstract | Can't instantiate, can't slice |
-| Use smart pointers | `unique_ptr<Base>` — always by pointer |
+| Use smart pointers | `unique_ptr<Base>` â€” always by pointer |
 
 ---
 
@@ -1465,10 +1465,10 @@ int main() {
 | **Code complexity** | Vtable setup code in every constructor |
 
 **When NOT to use virtual functions:**
-- **Small, frequently-created objects** (e.g., a `Point3D` struct used millions of times) — the vptr doubles memory.
-- **Tight loops** — virtual dispatch prevents inlining and SIMD vectorisation.
-- **Embedded systems** — RTTI and vtable overhead may exceed memory budget.
-- **When compile-time polymorphism suffices** — templates are faster and type-safe.
+- **Small, frequently-created objects** (e.g., a `Point3D` struct used millions of times) â€” the vptr doubles memory.
+- **Tight loops** â€” virtual dispatch prevents inlining and SIMD vectorisation.
+- **Embedded systems** â€” RTTI and vtable overhead may exceed memory budget.
+- **When compile-time polymorphism suffices** â€” templates are faster and type-safe.
 
 ---
 
@@ -1518,8 +1518,8 @@ public:
 
 ```cpp
 Base* p = new Derived();
-p->nonVirtual();  // Early binding → Base::nonVirtual
-p->virtualFunc(); // Late binding  → Derived::virtualFunc
+p->nonVirtual();  // Early binding â†’ Base::nonVirtual
+p->virtualFunc(); // Late binding  â†’ Derived::virtualFunc
 ```
 
 ---
@@ -1542,11 +1542,11 @@ public:
 // class GrandChild : public Derived { }; // ERROR: Derived is final
 ```
 
-**Optimisation benefit:** When the compiler sees a call to `Derived::f()` and knows `Derived` is final, it knows no further override exists. It can **devirtualise** the call — turning the virtual dispatch into a direct call, which can then be **inlined**.
+**Optimisation benefit:** When the compiler sees a call to `Derived::f()` and knows `Derived` is final, it knows no further override exists. It can **devirtualise** the call â€” turning the virtual dispatch into a direct call, which can then be **inlined**.
 
 ```cpp
 void call(Derived& d) {
-    d.f();  // Devirtualised → direct call → inlineable
+    d.f();  // Devirtualised â†’ direct call â†’ inlineable
 }
 ```
 
@@ -1557,17 +1557,17 @@ void call(Derived& d) {
 **Answer:** `dynamic_cast` uses the **runtime type information** stored in the vtable. Each vtable's first entry (slot 0) points to a `typeinfo` structure.
 
 **Internal steps:**
-1. Read object's vptr → vtable.
-2. Read vtable[0] → `typeinfo*` for the object's dynamic type.
+1. Read object's vptr â†’ vtable.
+2. Read vtable[0] â†’ `typeinfo*` for the object's dynamic type.
 3. Check if the dynamic type is the target type or a descendant of it.
 4. If yes: return the appropriate pointer (adjust offset for multiple/virtual inheritance).
 5. If no: return `nullptr` (pointer) or throw `std::bad_cast` (reference).
 
-**Time complexity:** O(depth of hierarchy) — each level requires a `typeinfo` comparison.
+**Time complexity:** O(depth of hierarchy) â€” each level requires a `typeinfo` comparison.
 
 ---
 
-# PART V — APPLICATIONS IN REAL SYSTEMS
+# PART V â€” APPLICATIONS IN REAL SYSTEMS
 
 ---
 
@@ -1586,7 +1586,7 @@ public:
 
 using create_plugin_t = IPlugin* (*)();
 
-// main.cpp — loads plugins dynamically
+// main.cpp â€” loads plugins dynamically
 #include <iostream>
 #include <vector>
 #include <memory>
@@ -1621,17 +1621,17 @@ std::vector<std::unique_ptr<IPlugin>> loadPlugins() {
 
 ```
 Abstract class:   Driver
-  │
-  ├── USBDriver
-  │     ├── KeyboardDriver
-  │     ├── MouseDriver
-  │     └── FlashDriveDriver
-  │
-  ├── PCIeDriver
-  │     ├── NetworkCardDriver
-  │     └── GraphicsCardDriver
-  │
-  └── VirtIODriver
+  â”‚
+  â”œâ”€â”€ USBDriver
+  â”‚     â”œâ”€â”€ KeyboardDriver
+  â”‚     â”œâ”€â”€ MouseDriver
+  â”‚     â””â”€â”€ FlashDriveDriver
+  â”‚
+  â”œâ”€â”€ PCIeDriver
+  â”‚     â”œâ”€â”€ NetworkCardDriver
+  â”‚     â””â”€â”€ GraphicsCardDriver
+  â”‚
+  â””â”€â”€ VirtIODriver
 ```
 
 ```cpp
@@ -1727,7 +1727,7 @@ public:
         // Draw rounded rectangle with label
     }
     void mousePressEvent(int x, int y) override {
-        // Check if click is inside bounds → emit clicked()
+        // Check if click is inside bounds â†’ emit clicked()
     }
 };
 
@@ -1848,7 +1848,7 @@ Saving to CSV output
 
 ## Chapter Summary
 
-1. **Polymorphism** lets one interface serve many implementations — compile-time (overloading, templates) and run-time (virtual functions).
+1. **Polymorphism** lets one interface serve many implementations â€” compile-time (overloading, templates) and run-time (virtual functions).
 
 2. **Function overloading** resolves at compile time based on parameter types. The compiler ranks viable functions by conversion quality.
 
@@ -1858,13 +1858,13 @@ Saving to CSV output
 
 5. **`override`** catches signature mismatches at compile time. **`final`** prevents further overrides and enables devirtualisation.
 
-6. **Pure virtual functions** (`= 0`) create abstract classes — interfaces that derived classes must implement.
+6. **Pure virtual functions** (`= 0`) create abstract classes â€” interfaces that derived classes must implement.
 
 7. **Virtual destructors** are mandatory in polymorphic base classes. Without them, deleting through a base pointer causes undefined behaviour.
 
 8. **RTTI** (`dynamic_cast`, `typeid`) provides runtime type introspection but should be used sparingly.
 
-9. **Object slicing** happens when derived objects are copied by value to base objects — always use pointers/references for polymorphic types.
+9. **Object slicing** happens when derived objects are copied by value to base objects â€” always use pointers/references for polymorphic types.
 
 10. **Real-world applications** include plugin systems, device drivers, game engines, GUI frameworks, and test mocking.
 
@@ -1900,7 +1900,7 @@ Saving to CSV output
    - Create a `FilterPipeline` that holds a `std::vector<std::unique_ptr<Filter>>`.
    - Pipeline reads a config string like `"uppercase|reverse|rot13"` and creates the corresponding filter chain.
    - Pipeline applies all filters sequentially to input text.
-   - Add a new `RemoveSpacesFilter` without modifying any existing code — proving OCP (Open-Closed Principle).
+   - Add a new `RemoveSpacesFilter` without modifying any existing code â€” proving OCP (Open-Closed Principle).
 
 ---
 
@@ -1908,9 +1908,9 @@ Saving to CSV output
 
 | Related Topic | Chapter |
 |--------------|---------|
-| Inheritance — how derived classes relate to base classes | [04-inheritance.md](./04-inheritance.md) |
-| Operator overloading — deep dive | [06-operator-overloading.md](./06-operator-overloading.md) |
-| Templates — compile-time polymorphism (CRTP, SFINAE) | [07-templates.md](./07-templates.md) |
-| Smart pointers — managing polymorphic objects | [12-smart-pointers.md](./12-smart-pointers.md) |
-| Design patterns — Factory, Strategy, Template Method | [16-design-patterns.md](./16-design-patterns.md) |
+| Inheritance â€” how derived classes relate to base classes | [04-inheritance.md](./04-inheritance.md) |
+| Operator overloading â€” deep dive | [06-operator-overloading.md](./06-operator-overloading.md) |
+| Templates â€” compile-time polymorphism (CRTP, SFINAE) | [07-templates.md](./07-templates.md) |
+| Smart pointers â€” managing polymorphic objects | [12-smart-pointers.md](./12-smart-pointers.md) |
+| Design patterns â€” Factory, Strategy, Template Method | [16-design-patterns.md](./16-design-patterns.md) |
 

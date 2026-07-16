@@ -1,11 +1,11 @@
-# Chapter 9: Transactions
+﻿# Chapter 9: Transactions
 
 > **Previous:** [Chapter 8: Higher Normal Forms and Denormalization](./08-higher-nf.md) | **Next:** [Chapter 10: Concurrency Control](./10-concurrency.md)
 
 ## Learning Objectives
 
 - Define a transaction and explain its necessity for data integrity in concurrent and failure-prone environments
-- Master the ACID properties: Atomicity, Consistency, Isolation, Durability â€” with implementation mechanisms
+- Master the ACID properties: Atomicity, Consistency, Isolation, Durability Ã¢â‚¬â€ with implementation mechanisms
 - Understand transaction states and the full transaction lifecycle with state transition rules
 - Classify schedules and determine serializability using formal methods
 - Implement conflict serializability checking via precedence graphs in C++ and Python
@@ -16,16 +16,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/09-transactions/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/09-transactions/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/09-transactions/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/09-transactions/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/09-transactions/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/09-transactions/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/09-transactions/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/09-transactions/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/09-transactions/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/09-transactions/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/09-transactions/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/09-transactions/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -38,11 +38,11 @@
 |-------|-------------|-------------------|
 | **Transaction Concept** | Logical unit of work with all-or-nothing semantics | Bank transfer: both accounts update or neither |
 | **ACID Properties** | Atomicity, Consistency, Isolation, Durability | The four guarantees that define a "safe" transaction |
-| **Transaction States** | Active â†’ Partially Committed â†’ Committed / Failed â†’ Aborted | Every transaction follows the same lifecycle |
+| **Transaction States** | Active Ã¢â€ â€™ Partially Committed Ã¢â€ â€™ Committed / Failed Ã¢â€ â€™ Aborted | Every transaction follows the same lifecycle |
 | **Schedule Classification** | Serial, Serializable, Non-serializable | Serializable schedules are the gold standard for correctness |
 | **Conflict Serializability** | Swapping non-conflicting operations to match a serial schedule | The precedence graph is your primary tool |
 | **View Serializability** | Same read/write order as a serial schedule | Less restrictive than conflict serializability |
-| **Isolation Levels** | READ UNCOMMITTED â†’ SERIALIZABLE | Trade consistency for performance |
+| **Isolation Levels** | READ UNCOMMITTED Ã¢â€ â€™ SERIALIZABLE | Trade consistency for performance |
 | **ACID vs BASE** | Consistency vs Availability trade-off in distributed systems | Choose based on CAP theorem requirements |
 
 ## Chapter Roadmap
@@ -72,8 +72,8 @@ A **transaction** is a logical unit of work that accesses and possibly modifies 
 
 Alice transfers $500 from Account A (balance: $1000) to Account B (balance: $500). This involves:
 
-- Account A: 1000 â†’ 500 (debit $500)
-- Account B: 500 â†’ 1000 (credit $500)
+- Account A: 1000 Ã¢â€ â€™ 500 (debit $500)
+- Account B: 500 Ã¢â€ â€™ 1000 (credit $500)
 
 If the system crashes after debiting A but before crediting B, $500 vanishes from the system. A transaction ensures either both steps happen or neither does.
 
@@ -117,8 +117,8 @@ END PROCEDURE
 | Step | Operation | A (before) | A (after) | B (before) | B (after) | Buffer | Disk A | Disk B |
 |------|-----------|-----------|-----------|-----------|-----------|--------|--------|--------|
 | 1 | BEGIN | 1000 | - | 500 | - | - | 1000 | 500 |
-| 2 | READ(A) â†’ 1000 | 1000 | - | 500 | - | A=1000 | 1000 | 500 |
-| 3 | CHECK(1000 >= 500) âœ“ | 1000 | - | 500 | - | A=1000 | 1000 | 500 |
+| 2 | READ(A) Ã¢â€ â€™ 1000 | 1000 | - | 500 | - | A=1000 | 1000 | 500 |
+| 3 | CHECK(1000 >= 500) Ã¢Å“â€œ | 1000 | - | 500 | - | A=1000 | 1000 | 500 |
 | 4 | WRITE(A, A-500) | 1000 | **500** | 500 | - | A=500 | 1000 | 500 |
 | 5 | WRITE(B, B+500) | - | 500 | 500 | **1000** | A=500, B=1000 | 1000 | 500 |
 | 6 | COMMIT | 500 | 500 | 1000 | 1000 | Flushed | **500** | **1000** |
@@ -320,7 +320,7 @@ if __name__ == "__main__":
 | **Space (write buffer)** | O(n) where n = items written | Each uncommitted write stores a buffer entry |
 | **Space (read set)** | O(m) where m = items read | Tracks read-set for conflict detection |
 | **Commit complexity** | O(k) where k = writes in buffer | Must flush each buffered write to persistent storage |
-| **Rollback complexity** | O(1) | Simply clears the write buffer â€” no undo needed at this layer |
+| **Rollback complexity** | O(1) | Simply clears the write buffer Ã¢â‚¬â€ no undo needed at this layer |
 
 ### Advantages and Disadvantages
 
@@ -349,7 +349,7 @@ if __name__ == "__main__":
 
 ## 9.2 ACID Properties
 
-ACID is an acronym for Atomicity, Consistency, Isolation, Durability â€” the four properties that guarantee database transactions are processed reliably.
+ACID is an acronym for Atomicity, Consistency, Isolation, Durability Ã¢â‚¬â€ the four properties that guarantee database transactions are processed reliably.
 
 ### Atomicity
 
@@ -358,10 +358,10 @@ ACID is an acronym for Atomicity, Consistency, Isolation, Durability â€” th
 
 **Implementation Mechanism:** Write-Ahead Logging (WAL). Before any change is applied to the database, a log record describing the change is written to stable storage. If the system crashes, the recovery manager uses the log to UNDO uncommitted transactions (rollback) and REDO committed transactions whose results were not yet flushed.
 
-**Example â€” Atomicity Violation:**
+**Example Ã¢â‚¬â€ Atomicity Violation:**
 \`\`\`text
 T1: A = A - 500    (written to disk)
-T1: B = B + 500    (NOT written â€” crash occurs)
+T1: B = B + 500    (NOT written Ã¢â‚¬â€ crash occurs)
 \`\`\`
 Without atomicity: $500 is lost from the system.
 With atomicity (WAL undo): A is restored to its original value.
@@ -375,7 +375,7 @@ With atomicity (WAL undo): A is restored to its original value.
 
 **Implementation Mechanism:** Application logic plus DBMS-enforced constraints. The DBMS checks constraints at statement boundaries (immediate mode) or at commit time (deferred mode). The developer is responsible for writing correct application logic.
 
-**Example â€” Consistency Violation:**
+**Example Ã¢â‚¬â€ Consistency Violation:**
 \`\`\`sql
 -- Constraint: CHECK(balance >= 0)
 UPDATE accounts SET balance = balance - 1000 WHERE id = 'A';
@@ -391,20 +391,20 @@ UPDATE accounts SET balance = balance - 1000 WHERE id = 'A';
 
 **Definition:** Concurrent transactions should not interfere with each other. Each transaction executes as if it were the only transaction in the system.
 
-**Implementation Mechanism:** Concurrency control protocols â€” locking (2PL, strict 2PL), timestamp ordering (TO), multiversion concurrency control (MVCC). The isolation level determines how much interference is allowed.
+**Implementation Mechanism:** Concurrency control protocols Ã¢â‚¬â€ locking (2PL, strict 2PL), timestamp ordering (TO), multiversion concurrency control (MVCC). The isolation level determines how much interference is allowed.
 
-**Example â€” Isolation Violation (Lost Update):**
+**Example Ã¢â‚¬â€ Isolation Violation (Lost Update):**
 \`\`\`text
-T1: READ(A) â†’ 1000
-T2: READ(A) â†’ 1000
-T1: WRITE(A, 1000 - 500) â†’ A = 500
-T2: WRITE(A, 1000 - 200) â†’ A = 800  (overwrites T1's update!)
+T1: READ(A) Ã¢â€ â€™ 1000
+T2: READ(A) Ã¢â€ â€™ 1000
+T1: WRITE(A, 1000 - 500) Ã¢â€ â€™ A = 500
+T2: WRITE(A, 1000 - 200) Ã¢â€ â€™ A = 800  (overwrites T1's update!)
 T1: COMMIT
 T2: COMMIT
 \`\`\`
 Final value: A = 800. Lost $300 from T1's update. With SERIALIZABLE isolation, T2 would wait for T1 to complete.
 
-**Complexity:** Locking adds O(1) lock acquisition overhead per operation. Deadlock detection is O(nÂ²) where n = number of transactions. MVCC adds version storage overhead.
+**Complexity:** Locking adds O(1) lock acquisition overhead per operation. Deadlock detection is O(nÃ‚Â²) where n = number of transactions. MVCC adds version storage overhead.
 
 ### Durability
 
@@ -413,18 +413,18 @@ Final value: A = 800. Lost $300 from T1's update. With SERIALIZABLE isolation, T
 
 **Implementation Mechanism:** Write-Ahead Logging (REDO log). When a transaction commits, its log records are forced to stable storage (fsync). The actual data pages may be written later (steal/no-force policy). On recovery, the REDO log replays committed transactions whose data was not yet flushed.
 
-**Example â€” Durability Guarantee:**
+**Example Ã¢â‚¬â€ Durability Guarantee:**
 \`\`\`text
 T1: COMMIT (log record written to disk)
-     â† CRASH OCCURS HERE â†’
-     â† RESTART â†’
+     Ã¢â€ Â CRASH OCCURS HERE Ã¢â€ â€™
+     Ã¢â€ Â RESTART Ã¢â€ â€™
      Recovery Manager reads log
      Finds T1 COMMIT record
      REDO: reapplies T1 changes if not already on disk
-     A = 500, B = 1000  â† changes present
+     A = 500, B = 1000  Ã¢â€ Â changes present
 \`\`\`
 
-**Complexity:** fsync is expensive â€” O(1) per commit with high latency (2-10ms typical). Group commit batches multiple commits into one fsync to amortize cost.
+**Complexity:** fsync is expensive Ã¢â‚¬â€ O(1) per commit with high latency (2-10ms typical). Group commit batches multiple commits into one fsync to amortize cost.
 
 ### ACID Properties Comparison Table
 
@@ -445,7 +445,7 @@ T1: COMMIT (log record written to disk)
 | **Deferred constraints** | Consistency | Foreign key checks deferred to commit may fail after many changes |
 | **Phantom reads** | Isolation | New rows inserted by concurrent transaction appear in repeated reads |
 | **Write skew** | Isolation | Two transactions read overlapping data and write non-overlapping data inconsistently |
-| **Group commit** | Durability | Multiple commits batched into one fsync â€” all survive or none |
+| **Group commit** | Durability | Multiple commits batched into one fsync Ã¢â‚¬â€ all survive or none |
 ---
 
 ## 9.3 Transaction States
@@ -472,11 +472,11 @@ stateDiagram-v2
 
 | State | Description | What Happens | Duration | Can We Recover? |
 |-------|-------------|-------------|----------|-----------------|
-| **ACTIVE** | Initial state; transaction is executing operations | Reads/writes performed; variables modified in memory or buffer | Variable (microseconds to hours) | Possible â€” rollback is straightforward |
-| **PARTIALLY COMMITTED** | Final statement executed; changes may be in memory buffer | All operations done; waiting for log flush to stable storage | Brief (milliseconds, bounded by fsync) | Possible â€” need to ensure REDO log is durable |
-| **COMMITTED** | All changes permanently written to storage | Commit record in log; changes visible to other transactions | Terminal | No â€” committed transactions cannot be rolled back |
-| **FAILED** | Transaction cannot continue due to error/crash | Active or partially committed transaction encountered unrecoverable error | Brief (cleaned up immediately) | Yes â€” must roll back to ABORTED |
-| **ABORTED** | Transaction has been rolled back; all changes undone | Database restored to state before transaction began | Terminal | Yes â€” can restart the transaction (retry) |
+| **ACTIVE** | Initial state; transaction is executing operations | Reads/writes performed; variables modified in memory or buffer | Variable (microseconds to hours) | Possible Ã¢â‚¬â€ rollback is straightforward |
+| **PARTIALLY COMMITTED** | Final statement executed; changes may be in memory buffer | All operations done; waiting for log flush to stable storage | Brief (milliseconds, bounded by fsync) | Possible Ã¢â‚¬â€ need to ensure REDO log is durable |
+| **COMMITTED** | All changes permanently written to storage | Commit record in log; changes visible to other transactions | Terminal | No Ã¢â‚¬â€ committed transactions cannot be rolled back |
+| **FAILED** | Transaction cannot continue due to error/crash | Active or partially committed transaction encountered unrecoverable error | Brief (cleaned up immediately) | Yes Ã¢â‚¬â€ must roll back to ABORTED |
+| **ABORTED** | Transaction has been rolled back; all changes undone | Database restored to state before transaction began | Terminal | Yes Ã¢â‚¬â€ can restart the transaction (retry) |
 
 ### State Transition Table
 
@@ -497,7 +497,7 @@ stateDiagram-v2
 | Action | State Before | Transition | State After | Log |
 |--------|-------------|------------|-------------|-----|
 | BEGIN TRANSACTION | [*] | Start | ACTIVE | \<BEGIN T1\> |
-| READ(A) â†’ 1000 | ACTIVE | Continue | ACTIVE | - |
+| READ(A) Ã¢â€ â€™ 1000 | ACTIVE | Continue | ACTIVE | - |
 | WRITE(A, 500) | ACTIVE | Continue | ACTIVE | \<T1, A, 1000, 500\> (UNDO record) |
 | WRITE(B, 1000) | ACTIVE | Continue | ACTIVE | \<T1, B, 500, 1000\> (UNDO record) |
 | Last statement done | ACTIVE | Final op | PARTIALLY COMMITTED | - |
@@ -509,7 +509,7 @@ stateDiagram-v2
 | Action | State Before | Transition | State After | Log |
 |--------|-------------|------------|-------------|-----|
 | BEGIN TRANSACTION | [*] | Start | ACTIVE | \<BEGIN T2\> |
-| READ(A) â†’ 1000 | ACTIVE | Continue | ACTIVE | - |
+| READ(A) Ã¢â€ â€™ 1000 | ACTIVE | Continue | ACTIVE | - |
 | WRITE(A, 500) | ACTIVE | Continue | ACTIVE | \<T2, A, 1000, 500\> |
 | System crash | ACTIVE | Crash | **FAILED** | Log in stable storage |
 | Recovery starts | FAILED | Rollback begins | FAILED | Find T2 has no COMMIT |
@@ -546,7 +546,7 @@ A schedule S over a set of transactions T = {T1, T2, ..., Tn} is a sequence of o
 
 \`\`\`text
 Schedule S_serial (T1 then T2):
-T1: R(A) W(A) R(B) W(B)  â†’  T2: R(A) W(A) R(B) W(B)
+T1: R(A) W(A) R(B) W(B)  Ã¢â€ â€™  T2: R(A) W(A) R(B) W(B)
 \`\`\`
 
 **Serializable Schedule:** Operations may be interleaved, but the net effect is equivalent to SOME serial schedule.
@@ -572,7 +572,7 @@ T2: R(B) W(A)
 | Property | Serial | Serializable | Non-Serializable |
 |----------|--------|-------------|------------------|
 | **Interleaving** | None | Yes | Yes |
-| **Correctness** | Always correct | Equivalent to serial â†’ correct | May produce inconsistent results |
+| **Correctness** | Always correct | Equivalent to serial Ã¢â€ â€™ correct | May produce inconsistent results |
 | **Concurrency** | Minimal (1 transaction at a time) | Good | Potentially dangerous |
 | **Throughput** | Lowest | High | Not applicable (unsafe) |
 | **Performance** | Worst CPU utilization | Good utilization | - |
@@ -596,13 +596,13 @@ T2: R(A) W(A) R(B) W(B)
 
 | Time | T1 | T2 | A | B |
 |------|-----|-----|---|---|
-| 1 | R(A) â†’ 100 | - | 100 | 200 |
+| 1 | R(A) Ã¢â€ â€™ 100 | - | 100 | 200 |
 | 2 | A = 100+10 = 110, W(A,110) | - | **110** | 200 |
-| 3 | R(B) â†’ 200 | - | 110 | 200 |
+| 3 | R(B) Ã¢â€ â€™ 200 | - | 110 | 200 |
 | 4 | B = 200*2 = 400, W(B,400) | - | 110 | **400** |
-| 5 | - | R(A) â†’ 110 | 110 | 400 |
+| 5 | - | R(A) Ã¢â€ â€™ 110 | 110 | 400 |
 | 6 | - | A = 110*2 = 220, W(A,220) | **220** | 400 |
-| 7 | - | R(B) â†’ 400 | 220 | 400 |
+| 7 | - | R(B) Ã¢â€ â€™ 400 | 220 | 400 |
 | 8 | - | B = 400+50 = 450, W(B,450) | 220 | **450** |
 
 **Result: A = 220, B = 450**
@@ -611,13 +611,13 @@ T2: R(A) W(A) R(B) W(B)
 
 | Time | T2 | T1 | A | B |
 |------|------|-----|---|---|
-| 1 | R(A) â†’ 100 | - | 100 | 200 |
+| 1 | R(A) Ã¢â€ â€™ 100 | - | 100 | 200 |
 | 2 | A = 100*2 = 200, W(A,200) | - | **200** | 200 |
-| 3 | R(B) â†’ 200 | - | 200 | 200 |
+| 3 | R(B) Ã¢â€ â€™ 200 | - | 200 | 200 |
 | 4 | B = 200+50 = 250, W(B,250) | - | 200 | **250** |
-| 5 | - | R(A) â†’ 200 | 200 | 250 |
+| 5 | - | R(A) Ã¢â€ â€™ 200 | 200 | 250 |
 | 6 | - | A = 200+10 = 210, W(A,210) | **210** | 250 |
-| 7 | - | R(B) â†’ 250 | 210 | 250 |
+| 7 | - | R(B) Ã¢â€ â€™ 250 | 210 | 250 |
 | 8 | - | B = 250*2 = 500, W(B,500) | 210 | **500** |
 
 **Result: A = 210, B = 500**
@@ -628,16 +628,16 @@ Note: Different serial orders produce different (but consistent) results. Both a
 
 | Time | T1 | T2 | A | B |
 |------|-----|-----|---|---|
-| 1 | R(A) â†’ 100 | - | 100 | 200 |
+| 1 | R(A) Ã¢â€ â€™ 100 | - | 100 | 200 |
 | 2 | A = 110, W(A,110) | - | **110** | 200 |
-| 3 | - | R(A) â†’ 110 | 110 | 200 |
+| 3 | - | R(A) Ã¢â€ â€™ 110 | 110 | 200 |
 | 4 | - | A = 220, W(A,220) | **220** | 200 |
-| 5 | R(B) â†’ 200 | - | 220 | 200 |
+| 5 | R(B) Ã¢â€ â€™ 200 | - | 220 | 200 |
 | 6 | B = 400, W(B,400) | - | 220 | **400** |
-| 7 | - | R(B) â†’ 400 | 220 | 400 |
+| 7 | - | R(B) Ã¢â€ â€™ 400 | 220 | 400 |
 | 8 | - | B = 450, W(B,450) | 220 | **450** |
 
-**Result: A = 220, B = 450** (Same as T1â†’T2 serial â†’ Serializable âœ“)
+**Result: A = 220, B = 450** (Same as T1Ã¢â€ â€™T2 serial Ã¢â€ â€™ Serializable Ã¢Å“â€œ)
 
 ### Complete Schedule
 
@@ -661,7 +661,7 @@ T2:      R(A) W(A) R(B) W(B) C2
 | Aspect | Serial Schedule | Serializable Schedule |
 |--------|----------------|----------------------|
 | **Definition** | Transactions execute one after another with zero interleaving | Operations may interleave, but the result equals some serial execution |
-| **Interleaving** | None | Yes â€” arbitrary interleaving allowed |
+| **Interleaving** | None | Yes Ã¢â‚¬â€ arbitrary interleaving allowed |
 | **Correctness** | Trivially correct | Correct by equivalence to serial |
 | **Performance** | Worst: 1/N throughput for N transactions | Much better: near-parallel throughput |
 | **Precedence Graph** | Trivially acyclic | Acyclic |
@@ -685,7 +685,7 @@ Two operations **conflict** if they satisfy three conditions:
 
 | Operation Pair | Conflict? | Reason |
 |---------------|-----------|--------|
-| R(A) and R(A) from different Txs | **No** | Both read â€” no modification |
+| R(A) and R(A) from different Txs | **No** | Both read Ã¢â‚¬â€ no modification |
 | R(A) and W(A) from different Txs | **Yes** | READ-WRITE conflict (unrepeatable read) |
 | W(A) and R(A) from different Txs | **Yes** | WRITE-READ conflict (dirty read) |
 | W(A) and W(A) from different Txs | **Yes** | WRITE-WRITE conflict (lost update) |
@@ -705,11 +705,11 @@ FUNCTION IsConflictSerializable(S):
             IF S[i].txn != S[j].txn
                AND S[i].item == S[j].item
                AND (S[i].op == "W" OR S[j].op == "W"):
-                conflicts.APPEND( (S[i].txn â†’ S[j].txn) )
+                conflicts.APPEND( (S[i].txn Ã¢â€ â€™ S[j].txn) )
 
     // Phase 2: Build precedence graph
     graph = new Graph(all_transactions_in_S)
-    FOR EACH (Ti â†’ Tj) IN conflicts:
+    FOR EACH (Ti Ã¢â€ â€™ Tj) IN conflicts:
         graph.ADD_EDGE(Ti, Tj)
 
     // Phase 3: Check for cycles
@@ -717,7 +717,7 @@ FUNCTION IsConflictSerializable(S):
 END FUNCTION
 \`\`\`
 
-### Precedence Graph â€” Step-by-Step Construction
+### Precedence Graph Ã¢â‚¬â€ Step-by-Step Construction
 
 
 **Problem:** Determine if this schedule is conflict-serializable:
@@ -741,32 +741,32 @@ S: T1: R(A)  T2: W(A)  T1: W(B)  T2: R(B)  T3: W(A)  T3: R(B)
 
 For each pair (i, j) where i \< j and transactions differ:
 
-Pair (1,2): T1:R(A), T2:W(A) â€” same item A, at least one write â†’ CONFLICT â†’ T1 â†’ T2 (T1 reads A before T2 writes A)
+Pair (1,2): T1:R(A), T2:W(A) Ã¢â‚¬â€ same item A, at least one write Ã¢â€ â€™ CONFLICT Ã¢â€ â€™ T1 Ã¢â€ â€™ T2 (T1 reads A before T2 writes A)
 
-Pair (1,5): T1:R(A), T3:W(A) â€” same item A, at least one write â†’ CONFLICT â†’ T1 â†’ T3 (T1 reads A before T3 writes A)
+Pair (1,5): T1:R(A), T3:W(A) Ã¢â‚¬â€ same item A, at least one write Ã¢â€ â€™ CONFLICT Ã¢â€ â€™ T1 Ã¢â€ â€™ T3 (T1 reads A before T3 writes A)
 
-Pair (2,5): T2:W(A), T3:W(A) â€” same item A, both writes â†’ CONFLICT â†’ T2 â†’ T3 (T2 writes A before T3 writes A)
+Pair (2,5): T2:W(A), T3:W(A) Ã¢â‚¬â€ same item A, both writes Ã¢â€ â€™ CONFLICT Ã¢â€ â€™ T2 Ã¢â€ â€™ T3 (T2 writes A before T3 writes A)
 
-Pair (3,4): T1:W(B), T2:R(B) â€” same item B, at least one write â†’ CONFLICT â†’ T1 â†’ T2 (T1 writes B before T2 reads B)
+Pair (3,4): T1:W(B), T2:R(B) Ã¢â‚¬â€ same item B, at least one write Ã¢â€ â€™ CONFLICT Ã¢â€ â€™ T1 Ã¢â€ â€™ T2 (T1 writes B before T2 reads B)
 
-Pair (3,6): T1:W(B), T3:R(B) â€” same item B, at least one write â†’ CONFLICT â†’ T1 â†’ T3 (T1 writes B before T3 reads B)
+Pair (3,6): T1:W(B), T3:R(B) Ã¢â‚¬â€ same item B, at least one write Ã¢â€ â€™ CONFLICT Ã¢â€ â€™ T1 Ã¢â€ â€™ T3 (T1 writes B before T3 reads B)
 
-Pair (4,6): T2:R(B), T3:R(B) â€” same item B, both reads â†’ NOT a conflict (no write)
+Pair (4,6): T2:R(B), T3:R(B) Ã¢â‚¬â€ same item B, both reads Ã¢â€ â€™ NOT a conflict (no write)
 
 **Step 3: Build the precedence graph**
 
 Nodes: {T1, T2, T3}
 
 Edges:
-- T1 â†’ T2 (from pairs 1,2 and 3,4)
-- T1 â†’ T3 (from pairs 1,5 and 3,6)
-- T2 â†’ T3 (from pair 2,5)
+- T1 Ã¢â€ â€™ T2 (from pairs 1,2 and 3,4)
+- T1 Ã¢â€ â€™ T3 (from pairs 1,5 and 3,6)
+- T2 Ã¢â€ â€™ T3 (from pair 2,5)
 
 Graph:
 \`\`\`text
-T1 â†’ T2
-â†“    â†“
-T3 â†â”€â”€â”˜
+T1 Ã¢â€ â€™ T2
+Ã¢â€ â€œ    Ã¢â€ â€œ
+T3 Ã¢â€ ÂÃ¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
 \`\`\`
 
 **Step 4: Check for cycles**
@@ -774,9 +774,9 @@ T3 â†â”€â”€â”˜
 Start DFS from T1: visit T2, visit T3. No back edges. No cycles.
 Start DFS from T2: visit T3. No cycles.
 
-**Conclusion:** Graph is acyclic â†’ Schedule IS conflict-serializable.
+**Conclusion:** Graph is acyclic Ã¢â€ â€™ Schedule IS conflict-serializable.
 
-**Equivalent serial schedule:** T1 â†’ T2 â†’ T3
+**Equivalent serial schedule:** T1 Ã¢â€ â€™ T2 Ã¢â€ â€™ T3
 
 ### C++ Implementation: Conflict Serializability Checker
 
@@ -840,7 +840,7 @@ public:
     void printGraph() {
         std::cout &lt;< "Precedence Graph:\n";
         for (auto& [node, neighbors] : adjList) {
-            std::cout &lt;< "  T" << node << " â†’ ";
+            std::cout &lt;< "  T" << node << " Ã¢â€ â€™ ";
             for (int n : neighbors)
                 std::cout &lt;< "T" << n << " ";
             std::cout &lt;< "\n";
@@ -874,7 +874,7 @@ public:
                     graph.addEdge(op1.txnId, op2.txnId);
                     std::cout &lt;< "Conflict: T" << op1.txnId
                               << (op1.type == READ ? " R(" : " W(")
-                              << op1.dataItem &lt;< ") â†’ T" << op2.txnId
+                              << op1.dataItem &lt;< ") Ã¢â€ â€™ T" << op2.txnId
                               << (op2.type == READ ? " R(" : " W(")
                               << op2.dataItem &lt;< ")\n";
                 }
@@ -984,7 +984,7 @@ class PrecedenceGraph:
         for node in sorted(self.nodes):
             neighbors = self.adj_list.get(node, set())
             if neighbors:
-                lines.append(f"  T{node} â†’ {', '.join(f'T{n}' for n in sorted(neighbors))}")
+                lines.append(f"  T{node} Ã¢â€ â€™ {', '.join(f'T{n}' for n in sorted(neighbors))}")
         return "\n".join(lines)
 
 
@@ -1004,7 +1004,7 @@ class ConflictSerializabilityChecker:
         graph = PrecedenceGraph()
         n = len(self.schedule)
 
-        print("Analyzing schedule:", " â†’ ".join(str(op) for op in self.schedule))
+        print("Analyzing schedule:", " Ã¢â€ â€™ ".join(str(op) for op in self.schedule))
         print("\nConflicts:")
 
         for i in range(n):
@@ -1016,7 +1016,7 @@ class ConflictSerializabilityChecker:
                     continue
                 if op1.op_type == OpType.WRITE or op2.op_type == OpType.WRITE:
                     graph.add_edge(op1.txn_id, op2.txn_id)
-                    print(f"  {op1} â†’ {op2}")
+                    print(f"  {op1} Ã¢â€ â€™ {op2}")
 
         print(f"\n{graph}")
         has_cycle = graph.has_cycle()
@@ -1038,7 +1038,7 @@ def main():
         (2, "R", "B"), (3, "W", "A"), (3, "R", "B")
     ])
     result1, _ = checker1.is_conflict_serializable()
-    print(f"\nVerdict: {"âœ“ SERIALIZABLE" if result1 else "âœ— NOT SERIALIZABLE"}\n")
+    print(f"\nVerdict: {"Ã¢Å“â€œ SERIALIZABLE" if result1 else "Ã¢Å“â€” NOT SERIALIZABLE"}\n")
 
     # Test 2: Non-serializable schedule
     print("=" * 60)
@@ -1050,7 +1050,7 @@ def main():
         (2, "R", "B"), (2, "W", "A")
     ])
     result2, _ = checker2.is_conflict_serializable()
-    print(f"\nVerdict: {"âœ“ SERIALIZABLE" if result2 else "âœ— NOT SERIALIZABLE"}\n")
+    print(f"\nVerdict: {"Ã¢Å“â€œ SERIALIZABLE" if result2 else "Ã¢Å“â€” NOT SERIALIZABLE"}\n")
 
     # Test 3: Three-transaction schedule
     print("=" * 60)
@@ -1063,10 +1063,10 @@ def main():
         (3, "W", "A"), (3, "W", "B")
     ])
     result3, graph = checker3.is_conflict_serializable()
-    print(f"\nVerdict: {"âœ“ SERIALIZABLE" if result3 else "âœ— NOT SERIALIZABLE"}")
+    print(f"\nVerdict: {"Ã¢Å“â€œ SERIALIZABLE" if result3 else "Ã¢Å“â€” NOT SERIALIZABLE"}")
 
     if result3:
-        print("Equivalent serial order: T1 â†’ T2 â†’ T3 (example)")
+        print("Equivalent serial order: T1 Ã¢â€ â€™ T2 Ã¢â€ â€™ T3 (example)")
 
 
 if __name__ == "__main__":
@@ -1078,10 +1078,10 @@ if __name__ == "__main__":
 
 | Operation | Complexity | Why |
 |-----------|------------|-----|
-| **Conflict detection** | O(nÂ²) where n = number of operations | Every pair of operations is compared (nested loop) |
-| **Graph construction** | O(nÂ²) | Each conflict adds an edge; at most O(nÂ²) conflicts |
+| **Conflict detection** | O(nÃ‚Â²) where n = number of operations | Every pair of operations is compared (nested loop) |
+| **Graph construction** | O(nÃ‚Â²) | Each conflict adds an edge; at most O(nÃ‚Â²) conflicts |
 | **Cycle detection (DFS)** | O(V + E) where V = transactions, E = edges | Standard DFS with recursion stack |
-| **Total** | O(nÂ²) | Dominated by conflict detection |
+| **Total** | O(nÃ‚Â²) | Dominated by conflict detection |
 | **Space** | O(V + E) | Adjacency list for precedence graph |
 
 ### Advantages and Disadvantages
@@ -1089,7 +1089,7 @@ if __name__ == "__main__":
 
 | Aspect | Advantages | Disadvantages |
 |--------|-----------|---------------|
-| **Decidability** | Efficiently testable in O(nÂ²) | - |
+| **Decidability** | Efficiently testable in O(nÃ‚Â²) | - |
 | **Implementation** | Simple graph algorithm | - |
 | **Intuitiveness** | Easy to explain: "no cycles = serializable" | - |
 | **Conservative** | Rejects some valid schedules | Misses view-serializable schedules with blind writes |
@@ -1102,8 +1102,8 @@ if __name__ == "__main__":
 |-----------|----------|-------|------------|
 | **Blind writes** | T1:W(A), T2:W(A), T2:R(A) | Precedence graph may have cycles | Can be view-serializable despite conflict cycle |
 | **Same transaction ops** | T1:R(A), T1:W(A) | No conflict because same transaction | Ignored by definition |
-| **Non-conflicting items** | T1:R(A), T2:W(B) | Different data items â†’ no conflict | Correctly ignored |
-| **Three-way cycle** | T1â†’T2, T2â†’T3, T3â†’T1 | Cycle detected correctly | DFS handles multi-node cycles |
+| **Non-conflicting items** | T1:R(A), T2:W(B) | Different data items Ã¢â€ â€™ no conflict | Correctly ignored |
+| **Three-way cycle** | T1Ã¢â€ â€™T2, T2Ã¢â€ â€™T3, T3Ã¢â€ â€™T1 | Cycle detected correctly | DFS handles multi-node cycles |
 | **Disconnected components** | T1:R(A), T2:W(B) (no shared items) | No edges; trivially serializable | Correct |
 ---
 
@@ -1128,30 +1128,30 @@ T1: W(A)         T2: W(A)         T2: W(B)         T1: W(B)
 \`\`\`
 
 **Conflict Analysis:**
-- T1:W(A) conflicts with T2:W(A) â†’ T1 â†’ T2 (T1 writes A before T2)
-- T2:W(B) conflicts with T1:W(B) â†’ T2 â†’ T1 (T2 writes B before T1)
+- T1:W(A) conflicts with T2:W(A) Ã¢â€ â€™ T1 Ã¢â€ â€™ T2 (T1 writes A before T2)
+- T2:W(B) conflicts with T1:W(B) Ã¢â€ â€™ T2 Ã¢â€ â€™ T1 (T2 writes B before T1)
 
-Precedence graph: T1 â†’ T2 â†’ T1 (CYCLE). NOT conflict-serializable.
+Precedence graph: T1 Ã¢â€ â€™ T2 Ã¢â€ â€™ T1 (CYCLE). NOT conflict-serializable.
 
 **View Analysis:**
-- Initial reads: No reads at all â€” no initial read condition to check
-- Read-from: No reads at all â€” no read-from condition to check
+- Initial reads: No reads at all Ã¢â‚¬â€ no initial read condition to check
+- Read-from: No reads at all Ã¢â‚¬â€ no read-from condition to check
 - Final writes:
   - A: Last writer is T2
   - B: Last writer is T1
 
-Compare to serial schedule S_serial = T1 â†’ T2:
-- A: T1 writes A, then T2 overwrites A â†’ final writer T2 âœ“
-- B: T1 writes B â†’ final writer T1 âœ“
+Compare to serial schedule S_serial = T1 Ã¢â€ â€™ T2:
+- A: T1 writes A, then T2 overwrites A Ã¢â€ â€™ final writer T2 Ã¢Å“â€œ
+- B: T1 writes B Ã¢â€ â€™ final writer T1 Ã¢Å“â€œ
 
-Despite the cycle, S IS view-equivalent to T1 â†’ T2!
+Despite the cycle, S IS view-equivalent to T1 Ã¢â€ â€™ T2!
 
 ### View Serializability vs Conflict Serializability Comparison
 
 
 | Aspect | Conflict Serializability | View Serializability |
 |--------|------------------------|---------------------|
-| **Test complexity** | O(nÂ²) â€” polynomial | NP-complete (theoretically harder) |
+| **Test complexity** | O(nÃ‚Â²) Ã¢â‚¬â€ polynomial | NP-complete (theoretically harder) |
 | **Practical test** | Precedence graph cycle detection | Polygraph (complex) |
 | **Blind writes** | Rejects schedules with blind writes | Can accept them |
 | **Coverage** | Subset of view-serializable | Superset (includes all conflict-serializable) |
@@ -1169,7 +1169,7 @@ Every conflict-serializable schedule is view-serializable, but the converse is N
 
 1. **Testing is harder:** The view equivalence test (polygraph) has exponential worst-case complexity
 2. **Blind writes are rare:** Most real transactions read before writing
-3. **Conservative is safe:** Conflict serializability rejects fewer than 1% of schedules that a real DBMS would generate â€” sacrificing that tiny fraction for guaranteed polynomial-time checking
+3. **Conservative is safe:** Conflict serializability rejects fewer than 1% of schedules that a real DBMS would generate Ã¢â‚¬â€ sacrificing that tiny fraction for guaranteed polynomial-time checking
 
 ---
 
@@ -1182,23 +1182,23 @@ A schedule is **recoverable** if, whenever a transaction Tj reads data written b
 
 **Why it matters:** If Tj commits after reading uncommitted data from Ti, and Ti later aborts, Tj has committed based on data that no longer exists. This violates atomicity.
 
-**Example â€” Non-Recoverable Schedule:**
+**Example Ã¢â‚¬â€ Non-Recoverable Schedule:**
 \`\`\`text
 T1: W(A)  T2: R(A)  T2: COMMIT  T1: ABORT
 \`\`\`
-T2 commits after reading T1'"'"'s uncommitted write. When T1 aborts, T2 has already committed with invalid data. This is a **non-recoverable** schedule â€” it should never be allowed.
+T2 commits after reading T1'"'"'s uncommitted write. When T1 aborts, T2 has already committed with invalid data. This is a **non-recoverable** schedule Ã¢â‚¬â€ it should never be allowed.
 
 ### Cascadeless Schedule
 
 
-A schedule is **cascadeless** if transactions only read data written by transactions that have already committed. This prevents **cascading rollbacks** â€” where one transaction'"'"'s abort forces a chain of aborts.
+A schedule is **cascadeless** if transactions only read data written by transactions that have already committed. This prevents **cascading rollbacks** Ã¢â‚¬â€ where one transaction'"'"'s abort forces a chain of aborts.
 
-**Example â€” Cascading Rollback:**
+**Example Ã¢â‚¬â€ Cascading Rollback:**
 \`\`\`text
 T1: W(A)
 T2: R(A) W(B)     (T2 reads uncommitted A from T1)
 T3: R(B)          (T3 reads uncommitted B from T2)
-T1: ABORT         â†’ T2 must abort â†’ T3 must abort
+T1: ABORT         Ã¢â€ â€™ T2 must abort Ã¢â€ â€™ T3 must abort
 \`\`\`
 All three transactions roll back. Cascadeless schedules prevent this by requiring T2 to wait for T1'"'"'s commit.
 
@@ -1212,9 +1212,9 @@ T1: W(A)  T1: COMMIT  T2: R(A) W(B)  T2: COMMIT  T3: R(B)  T3: COMMIT
 
 \`\`\`text
 All Schedules
-  â””â”€â”€ Recoverable Schedules
-        â””â”€â”€ Cascadeless Schedules
-              â””â”€â”€ Strict Schedules
+  Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ Recoverable Schedules
+        Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ Cascadeless Schedules
+              Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ Strict Schedules
 \`\`\`
 
 - **Strict schedule:** A transaction can neither read nor write a data item until the last transaction that wrote it has committed. Strictness implies cascadeless, which implies recoverable.
@@ -1278,7 +1278,7 @@ Concurrency anomalies (or "phenomena") are consistency problems that arise when 
 | **Dirty Read** | Reading uncommitted data from another transaction | READ COMMITTED | T2 reads A=900 before T1 commits (or aborts) |
 | **Non-Repeatable Read** | Same row read twice, different values | REPEATABLE READ | T1 reads A=1000, T2 updates A to 900, T1 reads A=900 |
 | **Phantom Read** | Same query returns different row set | SERIALIZABLE | T1 queries WHERE balance > 500, T2 inserts new row |
-| **Lost Update** | Two concurrent writes â€” one overwrites the other | Strong isolation / locking | T1: A=A-500, T2: A=A-200, T2 overwrites T1 |
+| **Lost Update** | Two concurrent writes Ã¢â‚¬â€ one overwrites the other | Strong isolation / locking | T1: A=A-500, T2: A=A-200, T2 overwrites T1 |
 | **Write Skew** | Two transactions read overlapping data, write non-overlapping, violating a constraint | SERIALIZABLE / predicate locking | Doctor on-call constraint violated |
 
 ### Dry Run: Dirty Read
@@ -1287,26 +1287,26 @@ Concurrency anomalies (or "phenomena") are consistency problems that arise when 
 \`\`\`text
 Initial: A = 1000
 T1: A = A - 500 (writes A=500)
-T2: READ(A) â†’ 500 (dirty read!)
+T2: READ(A) Ã¢â€ â€™ 500 (dirty read!)
 T1: ROLLBACK (A restored to 1000)
-T2: continues with value 500 â€” which never existed
+T2: continues with value 500 Ã¢â‚¬â€ which never existed
 \`\`\`
 
 | Time | T1 | T2 | Disk A | T2'"'"'s View |
 |------|-----|-----|--------|-----------|
-| 1 | R(A) â†’ 1000 | - | 1000 | - |
+| 1 | R(A) Ã¢â€ â€™ 1000 | - | 1000 | - |
 | 2 | A = 500, W(A) | - | 1000 (buffer: 500) | - |
-| 3 | - | R(A) | - | **500** â† dirty! |
+| 3 | - | R(A) | - | **500** Ã¢â€ Â dirty! |
 | 4 | ROLLBACK | - | **1000** | 500 |
-| 5 | - | Uses A=500 | 1000 | 500 â† WRONG |
+| 5 | - | Uses A=500 | 1000 | 500 Ã¢â€ Â WRONG |
 
 ### Dry Run: Lost Update
 
 
 \`\`\`text
 Initial: A = 1000
-T1: A = A - 500 â†’ Writes A=500
-T2: A = A - 200 â†’ Writes A=800 (overwrites T1!)
+T1: A = A - 500 Ã¢â€ â€™ Writes A=500
+T2: A = A - 200 Ã¢â€ â€™ Writes A=800 (overwrites T1!)
 T1: COMMIT
 T2: COMMIT
 Final: A = 800 ($700 lost!)
@@ -1314,12 +1314,12 @@ Final: A = 800 ($700 lost!)
 
 | Time | T1 | T2 | A (T1 view) | A (T2 view) | Disk A |
 |------|-----|-----|-------------|-------------|--------|
-| 1 | R(A) â†’ 1000 | - | 1000 | - | 1000 |
+| 1 | R(A) Ã¢â€ â€™ 1000 | - | 1000 | - | 1000 |
 | 2 | A = 500 | - | 500 | - | 1000 |
 | 3 | W(A, 500) | - | 500 | - | 1000 (buf: 500) |
-| 4 | - | R(A) â†’ 1000 | - | 1000 | 1000 |
+| 4 | - | R(A) Ã¢â€ â€™ 1000 | - | 1000 | 1000 |
 | 5 | - | A = 800 | - | 800 | 1000 |
-| 6 | - | W(A, 800) | - | 800 | **800** â† LOST |
+| 6 | - | W(A, 800) | - | 800 | **800** Ã¢â€ Â LOST |
 | 7 | COMMIT | - | 500 | - | 800 |
 | 8 | - | COMMIT | - | 800 | **800** |
 
@@ -1461,12 +1461,12 @@ In distributed systems, the CAP theorem forces a choice between consistency (C) 
 ### Q6: How do you test for conflict serializability?
 
 
-**Answer:** Build a precedence graph where nodes are transactions and directed edges represent conflicting operations (Ti â†’ Tj if Ti'"'"'s conflicting operation occurs before Tj'"'"'s). If the graph has a cycle, the schedule is not conflict-serializable. If acyclic, it is conflict-serializable, and any topological order gives an equivalent serial schedule.
+**Answer:** Build a precedence graph where nodes are transactions and directed edges represent conflicting operations (Ti Ã¢â€ â€™ Tj if Ti'"'"'s conflicting operation occurs before Tj'"'"'s). If the graph has a cycle, the schedule is not conflict-serializable. If acyclic, it is conflict-serializable, and any topological order gives an equivalent serial schedule.
 
 ### Q7: What is the difference between conflict and view serializability?
 
 
-**Answer:** Conflict serializability is based on the order of conflicting operations (read-write, write-read, write-write) and is tested via precedence graphs in O(nÂ²). View serializability is based on initial reads, read-from relationships, and final writes â€” it allows blind writes that conflict serializability rejects. View serializability is harder to test (NP-complete in general) and is mainly a theoretical concept.
+**Answer:** Conflict serializability is based on the order of conflicting operations (read-write, write-read, write-write) and is tested via precedence graphs in O(nÃ‚Â²). View serializability is based on initial reads, read-from relationships, and final writes Ã¢â‚¬â€ it allows blind writes that conflict serializability rejects. View serializability is harder to test (NP-complete in general) and is mainly a theoretical concept.
 
 ### Q8: What isolation level should you use for a banking application?
 
@@ -1481,7 +1481,7 @@ In distributed systems, the CAP theorem forces a choice between consistency (C) 
 ### Q10: What is write skew?
 
 
-**Answer:** Write skew occurs when two transactions read overlapping data, make decisions based on that data, and write non-overlapping data â€” but the combined result violates a constraint. Example: A hospital requires at least one doctor on call. T1 sets Doctor A to "not on call" (after reading Doctor B is on call). T2 sets Doctor B to "not on call" (after reading Doctor A is on call). Result: zero doctors on call. Prevention: SERIALIZABLE isolation or predicate locking.
+**Answer:** Write skew occurs when two transactions read overlapping data, make decisions based on that data, and write non-overlapping data Ã¢â‚¬â€ but the combined result violates a constraint. Example: A hospital requires at least one doctor on call. T1 sets Doctor A to "not on call" (after reading Doctor B is on call). T2 sets Doctor B to "not on call" (after reading Doctor A is on call). Result: zero doctors on call. Prevention: SERIALIZABLE isolation or predicate locking.
 
 ---
 
@@ -1493,7 +1493,7 @@ In distributed systems, the CAP theorem forces a choice between consistency (C) 
 | Feature | Implementation |
 |---------|---------------|
 | **Default isolation** | REPEATABLE READ |
-| **MVCC** | Yes â€” each transaction sees a snapshot of data at the start |
+| **MVCC** | Yes Ã¢â‚¬â€ each transaction sees a snapshot of data at the start |
 | **Gap locking** | Used for REPEATABLE READ and SERIALIZABLE to prevent phantoms |
 | **Next-key locking** | Row lock + gap lock = prevents phantoms in index scans |
 | **Logging** | Doublewrite buffer + REDO log + UNDO log |
@@ -1505,7 +1505,7 @@ In distributed systems, the CAP theorem forces a choice between consistency (C) 
 | Feature | Implementation |
 |---------|---------------|
 | **Default isolation** | READ COMMITTED |
-| **MVCC** | Yes â€” uses tuple-level versioning (xmin/xmax system columns) |
+| **MVCC** | Yes Ã¢â‚¬â€ uses tuple-level versioning (xmin/xmax system columns) |
 | **SSI (Serializable Snapshot Isolation)** | True SERIALIZABLE using predicate locking + conflict detection |
 | **No gap locking** | Uses MVCC + SSI instead of next-key locking |
 | **VACUUM** | Removes dead tuples that MVCC creates |
@@ -1517,7 +1517,7 @@ In distributed systems, the CAP theorem forces a choice between consistency (C) 
 | Feature | Implementation |
 |---------|---------------|
 | **Default isolation** | READ COMMITTED |
-| **MVCC** | Yes â€” undo segments maintain consistent read images |
+| **MVCC** | Yes Ã¢â‚¬â€ undo segments maintain consistent read images |
 | **Read-only transactions** | True snapshot isolation via READ ONLY transactions |
 | **No REPEATABLE READ** | Oracle maps REPEATABLE READ to SERIALIZABLE |
 | **UNDO retention** | Guarantees undo availability for consistent reads |
@@ -1553,12 +1553,12 @@ T3:                     READ(B)
 \`\`\`
 
 Identify conflicts:
-1. T1 WRITE(A) with T2 READ(A): T1 â†’ T2
-2. T2 WRITE(A) with T1 READ(A): T1 â†’ T2
-3. T2 WRITE(B) with T3 READ(B): T2 â†’ T3
+1. T1 WRITE(A) with T2 READ(A): T1 Ã¢â€ â€™ T2
+2. T2 WRITE(A) with T1 READ(A): T1 Ã¢â€ â€™ T2
+3. T2 WRITE(B) with T3 READ(B): T2 Ã¢â€ â€™ T3
 
-Edges: T1 â†’ T2, T2 â†’ T3
-No cycle â†’ Conflict-serializable. Equivalent serial schedule: T1 â†’ T2 â†’ T3.
+Edges: T1 Ã¢â€ â€™ T2, T2 Ã¢â€ â€™ T3
+No cycle Ã¢â€ â€™ Conflict-serializable. Equivalent serial schedule: T1 Ã¢â€ â€™ T2 Ã¢â€ â€™ T3.
 
 **Example 9.2: Non-Serializable Schedule**
 
@@ -1568,10 +1568,10 @@ T2: READ(B), WRITE(A)
 \`\`\`
 
 Conflicts:
-- T1 WRITE(B) conflicts with T2 READ(B): T1 â†’ T2
-- T2 WRITE(A) conflicts with T1 READ(A): T2 â†’ T1
+- T1 WRITE(B) conflicts with T2 READ(B): T1 Ã¢â€ â€™ T2
+- T2 WRITE(A) conflicts with T1 READ(A): T2 Ã¢â€ â€™ T1
 
-Edges: T1 â†’ T2 and T2 â†’ T1 (CYCLE!). NOT conflict-serializable.
+Edges: T1 Ã¢â€ â€™ T2 and T2 Ã¢â€ â€™ T1 (CYCLE!). NOT conflict-serializable.
 
 **Example 9.3: Blind Write (View-Serializable Only)**
 
@@ -1579,11 +1579,11 @@ Edges: T1 â†’ T2 and T2 â†’ T1 (CYCLE!). NOT conflict-serializable.
 T1: W(A)  T2: W(A)  T2: W(B)  T1: W(B)
 \`\`\`
 
-Conflict graph: T1 â†’ T2 (via A) and T2 â†’ T1 (via B) = CYCLE â†’ NOT conflict-serializable.
+Conflict graph: T1 Ã¢â€ â€™ T2 (via A) and T2 Ã¢â€ â€™ T1 (via B) = CYCLE Ã¢â€ â€™ NOT conflict-serializable.
 
 View analysis: No reads. Final writes: A by T2, B by T1.
-Serial schedule T1â†’T2: T1 writes A, T2 overwrites A âœ“; T1 writes B âœ“.
-Both serial orders produce same final state â†’ View-serializable.
+Serial schedule T1Ã¢â€ â€™T2: T1 writes A, T2 overwrites A Ã¢Å“â€œ; T1 writes B Ã¢Å“â€œ.
+Both serial orders produce same final state Ã¢â€ â€™ View-serializable.
 
 **Example 9.4: Cascading Rollback**
 
@@ -1593,51 +1593,51 @@ T2: R(A), W(B)
 T3: R(B)
 \`\`\`
 
-If T1 aborts, T2 (read T1'"'"'s uncommitted A) must abort, T3 (read T2'"'"'s B) must abort. Three transactions lost. Solution: cascadeless schedule â€” delay T2'"'"'s R(A) until T1 commits.
+If T1 aborts, T2 (read T1'"'"'s uncommitted A) must abort, T3 (read T2'"'"'s B) must abort. Three transactions lost. Solution: cascadeless schedule Ã¢â‚¬â€ delay T2'"'"'s R(A) until T1 commits.
 
 **Example 9.5: Lost Update**
 
 \`\`\`text
 Initial: A = 100
-T1: R(A) â†’ 100, A = 100 + 40, W(A, 140)
-T2: R(A) â†’ 100, A = 100 + 10, W(A, 110)
+T1: R(A) Ã¢â€ â€™ 100, A = 100 + 40, W(A, 140)
+T2: R(A) Ã¢â€ â€™ 100, A = 100 + 10, W(A, 110)
 \`\`\`
 
 Without isolation, both read 100. T1 writes 140, T2 overwrites with 110. T1'"'"'s +40 is lost. Final: 110 (should be 150).
 
-> **Warning:** SERIALIZABLE is NOT the default isolation level in any major DBMS â€” READ COMMITTED is. Always verify the isolation level before writing production transaction logic.
+> **Warning:** SERIALIZABLE is NOT the default isolation level in any major DBMS Ã¢â‚¬â€ READ COMMITTED is. Always verify the isolation level before writing production transaction logic.
 >
-> **Remember:** Dirty reads are never acceptable in a well-designed system â€” always use at least READ COMMITTED to avoid reading uncommitted (and potentially rolled back) data.
+> **Remember:** Dirty reads are never acceptable in a well-designed system Ã¢â‚¬â€ always use at least READ COMMITTED to avoid reading uncommitted (and potentially rolled back) data.
 
 ---
 
-## ðŸ’¡ Pro Tips
+## Ã°Å¸â€™Â¡ Pro Tips
 
-1. **Always use explicit transactions** (BEGIN ... COMMIT) for multi-statement operations â€” relying on auto-commit for a bank transfer is a bug waiting to happen.
-2. **SERIALIZABLE is not the default** in any major DBMS â€” READ COMMITTED is. Understand your system'"'"'s default isolation level before writing production code.
-3. **Dirty reads are never acceptable** in a well-designed system â€” always use at least READ COMMITTED.
-4. **The precedence graph is your best debugging tool** â€” if you see a cycle, you have a non-serializable schedule. Find the conflicting operations and reorder them.
-5. **Cascadeless schedules** (preventing cascading aborts) are the practical minimum â€” they protect against one transaction failure rolling back unrelated work.
+1. **Always use explicit transactions** (BEGIN ... COMMIT) for multi-statement operations Ã¢â‚¬â€ relying on auto-commit for a bank transfer is a bug waiting to happen.
+2. **SERIALIZABLE is not the default** in any major DBMS Ã¢â‚¬â€ READ COMMITTED is. Understand your system'"'"'s default isolation level before writing production code.
+3. **Dirty reads are never acceptable** in a well-designed system Ã¢â‚¬â€ always use at least READ COMMITTED.
+4. **The precedence graph is your best debugging tool** Ã¢â‚¬â€ if you see a cycle, you have a non-serializable schedule. Find the conflicting operations and reorder them.
+5. **Cascadeless schedules** (preventing cascading aborts) are the practical minimum Ã¢â‚¬â€ they protect against one transaction failure rolling back unrelated work.
 6. **Keep transactions short** to minimize lock contention and reduce deadlock probability.
 7. **Use SELECT ... FOR UPDATE** for pessimistic locking when you must prevent concurrent modification of specific rows.
 8. **Optimistic concurrency control** works well when contention is low (<5% collision rate). Use version numbers or timestamps.
-9. **Monitor deadlocks** â€” they are not bugs if handled correctly; your application must retry on serialization failure.
+9. **Monitor deadlocks** Ã¢â‚¬â€ they are not bugs if handled correctly; your application must retry on serialization failure.
 10. **Test at the highest isolation level** during development, then relax for production once correctness is proven.
 
 ---
 
 ## One-Sentence Takeaways
 
-- **9.1:** A transaction is a logical unit of work that must satisfy ACID properties â€” Atomicity, Consistency, Isolation, Durability.
+- **9.1:** A transaction is a logical unit of work that must satisfy ACID properties Ã¢â‚¬â€ Atomicity, Consistency, Isolation, Durability.
 - **9.2:** ACID is implemented via Write-Ahead Logging (atomicity + durability), constraints (consistency), and locking/MVCC (isolation).
-- **9.3:** A transaction passes through states: Active â†’ Partially Committed â†’ Committed, or Failed â†’ Aborted.
+- **9.3:** A transaction passes through states: Active Ã¢â€ â€™ Partially Committed Ã¢â€ â€™ Committed, or Failed Ã¢â€ â€™ Aborted.
 - **9.4:** A schedule is an ordering of operations from concurrent transactions; serial schedules guarantee correctness but limit concurrency.
 - **9.5:** Conflict serializability tests whether a schedule is equivalent to some serial schedule using precedence graphs.
-- **9.6:** Conflict serializability is tested in O(nÂ²) using a precedence graph â€” a cycle means non-serializable.
+- **9.6:** Conflict serializability is tested in O(nÃ‚Â²) using a precedence graph Ã¢â‚¬â€ a cycle means non-serializable.
 - **9.7:** View serializability is a weaker condition allowing blind writes; every conflict-serializable schedule is view-serializable.
 - **9.8:** Recoverable schedules ensure committed transactions do not read uncommitted data; cascadeless schedules prevent cascading rollbacks.
 - **9.9:** Concurrency anomalies include dirty reads, non-repeatable reads, phantom reads, lost updates, and write skew.
-- **9.10:** SQL isolation levels â€” READ UNCOMMITTED, READ COMMITTED, REPEATABLE READ, SERIALIZABLE â€” balance consistency against concurrency.
+- **9.10:** SQL isolation levels Ã¢â‚¬â€ READ UNCOMMITTED, READ COMMITTED, REPEATABLE READ, SERIALIZABLE Ã¢â‚¬â€ balance consistency against concurrency.
 - **9.11:** ACID (strong consistency) vs BASE (eventual consistency) is a fundamental distributed systems trade-off governed by CAP theorem.
 - **9.12:** MySQL uses next-key locking for REPEATABLE READ; PostgreSQL uses SSI for true SERIALIZABLE; Oracle maps REPEATABLE READ to SERIALIZABLE.
 
@@ -1684,7 +1684,7 @@ Without isolation, both read 100. T1 writes 140, T2 overwrites with 110. T1'"'"'
 | **Basis** | Order of conflicting operations | Initial reads, read-from, final writes |
 | **Blind writes** | Rejected | Accepted |
 | **Test** | Precedence graph (acyclic?) | Polygraph (NP-complete) |
-| **Complexity** | O(nÂ²) | NP-complete |
+| **Complexity** | O(nÃ‚Â²) | NP-complete |
 | **Used in practice** | Yes (standard) | No (theoretical benchmark) |
 | **Relationship** | Subset | Superset |
 
@@ -1710,7 +1710,7 @@ Without isolation, both read 100. T1 writes 140, T2 overwrites with 110. T1'"'"'
 | **Lost Update** | One transaction'"'"'s write overwrites another'"'"'s |
 | **Write Skew** | Overlapping reads + non-overlapping writes violate a constraint |
 | **Precedence Graph** | Directed graph showing transaction dependencies via conflicts |
-| **WAL** | Write-Ahead Logging â€” log before write |
+| **WAL** | Write-Ahead Logging Ã¢â‚¬â€ log before write |
 | **MVCC** | Multi-Version Concurrency Control |
 | **2PL** | Two-Phase Locking |
 | **SSI** | Serializable Snapshot Isolation |
@@ -1738,11 +1738,11 @@ Without isolation, both read 100. T1 writes 140, T2 overwrites with 110. T1'"'"'
 
 ### 9.15 TypeScript Transaction Scheduler
 
-The TypeScript implementation below simulates transaction scheduling â€” testing conflict serializability via precedence graphs.
+The TypeScript implementation below simulates transaction scheduling Ã¢â‚¬â€ testing conflict serializability via precedence graphs.
 
 ```typescript
 // ============================================================
-// Transaction Schedule Simulator â€” TypeScript
+// Transaction Schedule Simulator Ã¢â‚¬â€ TypeScript
 // ============================================================
 
 type Operation = { type: 'R' | 'W'; variable: string; txId: number };
@@ -1817,14 +1817,14 @@ class Schedule {
   }
 
   display(): void {
-    console.log('Schedule: ' + this.ops.map(o => 'T' + o.txId + '.' + o.type + '(' + o.variable + ')').join(' â†’ '));
+    console.log('Schedule: ' + this.ops.map(o => 'T' + o.txId + '.' + o.type + '(' + o.variable + ')').join(' Ã¢â€ â€™ '));
     const result = this.isConflictSerializable();
     if (result.serializable) {
-      console.log('Result: CONFLICT-SERIALIZABLE âœ“');
+      console.log('Result: CONFLICT-SERIALIZABLE Ã¢Å“â€œ');
       console.log('Precedence graph is acyclic.');
     } else {
-      console.log('Result: NOT CONFLICT-SERIALIZABLE âœ—');
-      console.log('Cycle in precedence graph: ' + (result.cycle || []).join(' â†’ '));
+      console.log('Result: NOT CONFLICT-SERIALIZABLE Ã¢Å“â€”');
+      console.log('Cycle in precedence graph: ' + (result.cycle || []).join(' Ã¢â€ â€™ '));
     }
   }
 }
@@ -1961,8 +1961,8 @@ stateDiagram-v2
 9. What is the complexity of testing conflict serializability using a precedence graph?
    a) O(1)
    b) O(n)
-   c) O(nÂ²)
-   d) O(2â¿)
+   c) O(nÃ‚Â²)
+   d) O(2Ã¢ÂÂ¿)
 
 10. Which of the following is a schedule that is view-serializable but NOT conflict-serializable?
     a) A schedule with a cycle in the precedence graph and no writes
@@ -1978,9 +1978,9 @@ stateDiagram-v2
 
 - A transaction is a logical unit of work with ACID properties.
 - Atomicity ensures all-or-nothing execution via UNDO log. Consistency preserves database validity via constraints. Isolation prevents interference via locking/MVCC. Durability ensures committed changes persist via REDO log and fsync.
-- Transactions go through states: Active â†’ Partially Committed â†’ Committed (or Failed â†’ Aborted).
+- Transactions go through states: Active Ã¢â€ â€™ Partially Committed Ã¢â€ â€™ Committed (or Failed Ã¢â€ â€™ Aborted).
 - Schedules order operations from concurrent transactions. Serial schedules are correct but impractical. Serializable schedules are equivalent to some serial schedule.
-- Conflict serializability is checked via precedence graphs (acyclic = serializable) in O(nÂ²) time.
+- Conflict serializability is checked via precedence graphs (acyclic = serializable) in O(nÃ‚Â²) time.
 - View serializability is a weaker condition that accepts blind writes but is NP-complete to verify.
 - Recoverable and cascadeless schedules prevent cascading rollbacks.
 - Five concurrency anomalies: dirty read, non-repeatable read, phantom read, lost update, write skew.

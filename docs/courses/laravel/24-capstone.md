@@ -1,4 +1,4 @@
-# Chapter 24: Capstone Project Ã¢â‚¬â€ AI-Powered Team Collaboration SaaS
+﻿# Chapter 24: Capstone Project ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â AI-Powered Team Collaboration SaaS
 
 > **Previous:** [Case Study AI Content](./23-case-study-ai-content.md) | **Next:** [Multi-Agent Systems](./25-multi-agent-systems.md)
 
@@ -16,16 +16,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/24-capstone/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/24-capstone/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/24-capstone/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/24-capstone/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/24-capstone/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/24-capstone/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/24-capstone/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/24-capstone/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/24-capstone/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/24-capstone/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/24-capstone/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/24-capstone/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -61,7 +61,7 @@ flowchart LR
 
 
 
-## Theory Ã¢â‚¬â€ Capstone Project Specification
+## Theory ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Capstone Project Specification
 
 ![Capstone Project](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/24-capstone.png)
 
@@ -76,7 +76,7 @@ flowchart LR
 
 **Tagline:** *Where teams collaborate and AI amplifies every contribution.*
 
-TeamSynth is a team collaboration platform that embeds AI agents directly into the team workflow. Every artifact a team creates Ã¢â‚¬â€ documents, meeting recordings, pull requests, chat messages Ã¢â‚¬â€ is ingested into a unified knowledge base. AI agents analyze, summarize, review, and search across this corpus, turning raw collaboration output into actionable intelligence.
+TeamSynth is a team collaboration platform that embeds AI agents directly into the team workflow. Every artifact a team creates ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â documents, meeting recordings, pull requests, chat messages ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â is ingested into a unified knowledge base. AI agents analyze, summarize, review, and search across this corpus, turning raw collaboration output into actionable intelligence.
 
 **Core Value Proposition**
 
@@ -85,7 +85,7 @@ TeamSynth is a team collaboration platform that embeds AI agents directly into t
 3. Deploying specialized AI agents: meeting summarizers, document analysts, code reviewers.
 4. Exposing the knowledge base and agent capabilities through MCP servers for external AI tools.
 
-### 8.2 Part A Ã¢â‚¬â€ System Architecture
+### 8.2 Part A ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â System Architecture
 
 
 **High-Level Topology**
@@ -119,7 +119,7 @@ AI SDK Layer (DocumentAnalysis, MeetingSummarizer, CodeReview, SearchAgent)
 | Redis for cache + queue + pub/sub | Three workloads on one cluster reduces operational complexity. |
 | Separate AI worker queues | AI generation can take 30-60 seconds. Isolating prevents head-of-line blocking on request queues. |
 
-### 8.3 Part B Ã¢â‚¬â€ Data Model
+### 8.3 Part B ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Data Model
 
 
 The data model supports five domain entities: User, Team, Project, Document, Meeting, and CodeReview. Each entity is team-scoped via a team_id foreign key. The embedding_cache table stores pgvector embeddings polymorphically across all content types.
@@ -349,22 +349,22 @@ CREATE TABLE agent_logs (
 ) ENGINE=InnoDB;
 ```
 
-### 8.4 Part C Ã¢â‚¬â€ AI Agent Layer
+### 8.4 Part C ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â AI Agent Layer
 
 
 TeamSynth defines four specialized agents built on a shared `BaseAgent` class. Each agent logs every execution to `agent_logs` for observability and cost tracking.
 
 **BaseAgent** provides scaffolding: `logStart()`, `logComplete()`, and `logFailed()` methods that write structured records to `agent_logs`. Every agent extends this class and implements a `handle(array $input): array` method.
 
-**DocumentAnalysisAgent** Ã¢â‚¬â€ Analyzes documents to extract key points, suggest improvements, and compute quality scores. Supports three actions: summarize (3-5 sentence summary), suggest (actionable improvement ideas), and analyze (key points, quality score 1-10, readability level, suggested tags). Input is a document_id; output is structured JSON via the AI SDK with `response_format` set to `json_object`.
+**DocumentAnalysisAgent** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Analyzes documents to extract key points, suggest improvements, and compute quality scores. Supports three actions: summarize (3-5 sentence summary), suggest (actionable improvement ideas), and analyze (key points, quality score 1-10, readability level, suggested tags). Input is a document_id; output is structured JSON via the AI SDK with `response_format` set to `json_object`.
 
-**MeetingSummarizerAgent** Ã¢â‚¬â€ Takes a meeting with its transcript segments (speaker-labeled with start/end timestamps), sends the full transcript to the AI model, and returns a structured summary. Output includes summary text, action items (with owner and deadline), decisions made, key topics discussed, and overall sentiment. The agent selects the correct model based on transcript length: gpt-4o for short meetings, gpt-4o-mini for standard, with automatic truncation of transcripts exceeding the model context window.
+**MeetingSummarizerAgent** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Takes a meeting with its transcript segments (speaker-labeled with start/end timestamps), sends the full transcript to the AI model, and returns a structured summary. Output includes summary text, action items (with owner and deadline), decisions made, key topics discussed, and overall sentiment. The agent selects the correct model based on transcript length: gpt-4o for short meetings, gpt-4o-mini for standard, with automatic truncation of transcripts exceeding the model context window.
 
-**CodeReviewAgent** Ã¢â‚¬â€ Connects to a GitHub PR via the PR URL, fetches the diff using the GitHub API, and analyzes each changed file. For each file, it examines the diff hunks and produces review comments tagged by severity (info, warning, critical) and category (security, performance, style, bug, best_practice). The agent respects the existing codebase style by analyzing surrounding context. Output also includes an overall PR summary, estimated risk score, and a pass/fail recommendation for the merge.
+**CodeReviewAgent** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Connects to a GitHub PR via the PR URL, fetches the diff using the GitHub API, and analyzes each changed file. For each file, it examines the diff hunks and produces review comments tagged by severity (info, warning, critical) and category (security, performance, style, bug, best_practice). The agent respects the existing codebase style by analyzing surrounding context. Output also includes an overall PR summary, estimated risk score, and a pass/fail recommendation for the merge.
 
-**SearchAgent** Ã¢â‚¬â€ The RAG agent. Accepts a natural language query, performs hybrid search (vector + full-text) across all team content, reranks results, and returns answers with source citations. Supports scoping to specific content types (documents, meetings, code) and date ranges. Implements semantic caching: if a semantically similar query was answered recently, the cached response is returned.
+**SearchAgent** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â The RAG agent. Accepts a natural language query, performs hybrid search (vector + full-text) across all team content, reranks results, and returns answers with source citations. Supports scoping to specific content types (documents, meetings, code) and date ranges. Implements semantic caching: if a semantically similar query was answered recently, the cached response is returned.
 
-**Agent Chaining Ã¢â‚¬â€ Code Review Pipeline**
+**Agent Chaining ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Code Review Pipeline**
 
 ```php
 // App/Services/CodeReviewPipeline.php
@@ -399,16 +399,16 @@ public function runFullReview(int $codeReviewId): array
 }
 ```
 
-### 8.5 Part D Ã¢â‚¬â€ MCP Servers
+### 8.5 Part D ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â MCP Servers
 
 
 MCP servers expose TeamSynth capabilities to external AI clients via JSON-RPC endpoints.
 
-**DocumentServer** Ã¢â‚¬â€ Tools: `search_documents` (hybrid search across content), `summarize_document` (AI summary), `analyze_document` (quality + structure analysis). Each tool accepts a workspace context parameter for team-scoping.
+**DocumentServer** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Tools: `search_documents` (hybrid search across content), `summarize_document` (AI summary), `analyze_document` (quality + structure analysis). Each tool accepts a workspace context parameter for team-scoping.
 
-**CodeReviewServer** Ã¢â‚¬â€ Tools: `review_pr` (full AI code review), `lint_check` (static analysis via LLM), `security_scan` (vulnerability pattern detection). Returns structured comments with severity, category, file path, and line numbers.
+**CodeReviewServer** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Tools: `review_pr` (full AI code review), `lint_check` (static analysis via LLM), `security_scan` (vulnerability pattern detection). Returns structured comments with severity, category, file path, and line numbers.
 
-**MeetingServer** Ã¢â‚¬â€ Tools: `transcribe` (audio-to-text), `summarize` (transcript to structured summary), `extract_action_items` (parse decisions from raw text).
+**MeetingServer** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Tools: `transcribe` (audio-to-text), `summarize` (transcript to structured summary), `extract_action_items` (parse decisions from raw text).
 
 ```php
 // routes/mcp.php
@@ -426,18 +426,18 @@ Route::post('mcp/meeting/summarize', [MeetingServer::class, 'summarize']);
 
 Each MCP endpoint validates the JSON-RPC envelope (jsonrpc version, method, params, id), dispatches to the appropriate handler, and returns a properly formatted JSON-RPC response with result or error.
 
-### 8.6 Part E Ã¢â‚¬â€ Search and RAG
+### 8.6 Part E ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Search and RAG
 
 
 Search operates at three tiers with progressive fallback:
 
-**Full-Text Search (Tier 1)** Ã¢â‚¬â€ PostgreSQL FULLTEXT index on title and body. Uses `tsvector` and `plainto_tsquery`. Fast, zero external dependencies. Suitable for exact keyword matching and prefix queries. Response time: &lt;50ms at p95.
+**Full-Text Search (Tier 1)** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â PostgreSQL FULLTEXT index on title and body. Uses `tsvector` and `plainto_tsquery`. Fast, zero external dependencies. Suitable for exact keyword matching and prefix queries. Response time: &lt;50ms at p95.
 
-**Vector Search (Tier 2)** Ã¢â‚¬â€ pgvector cosine similarity on 1536-dimension embeddings. HNSW index with m=16, ef_construction=200 for approximate nearest neighbor. Understands semantic intent. Response time: &lt;200ms at p95 for 1M vectors.
+**Vector Search (Tier 2)** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â pgvector cosine similarity on 1536-dimension embeddings. HNSW index with m=16, ef_construction=200 for approximate nearest neighbor. Understands semantic intent. Response time: &lt;200ms at p95 for 1M vectors.
 
-**Hybrid Search (Tier 3)** Ã¢â‚¬â€ Weighted combination: `hybrid_score = vector_score * 0.7 + fts_score * 0.3`. Results are deduplicated and reranked. Weights are configurable per content type (e.g., code reviews emphasize full-text, meetings emphasize semantic).
+**Hybrid Search (Tier 3)** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Weighted combination: `hybrid_score = vector_score * 0.7 + fts_score * 0.3`. Results are deduplicated and reranked. Weights are configurable per content type (e.g., code reviews emphasize full-text, meetings emphasize semantic).
 
-**Reranking** Ã¢â‚¬â€ A lightweight cross-encoder reranks the top 50 hybrid results. Each candidate pair (query, chunk) is scored and the top 10 returned. Reranking runs in a queue job; the top 3 from un-reranked hybrid are shown immediately while reranked results stream in via Reverb broadcast.
+**Reranking** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â A lightweight cross-encoder reranks the top 50 hybrid results. Each candidate pair (query, chunk) is scored and the top 10 returned. Reranking runs in a queue job; the top 3 from un-reranked hybrid are shown immediately while reranked results stream in via Reverb broadcast.
 
 **Search Agent Flow**
 
@@ -449,18 +449,18 @@ Search operates at three tiers with progressive fallback:
 6. Response includes answer, sources (title, similarity, excerpt), and confidence.
 7. Result cached via semantic key (query embedding hash + options hash) for 5-60 min TTL.
 
-### 8.7 Part F Ã¢â‚¬â€ Real-Time Collaboration
+### 8.7 Part F ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Real-Time Collaboration
 
 
 Reverb with Laravel Echo powers four real-time features:
 
-**Presence Channels** Ã¢â‚¬â€ Each project has a presence channel (`presence-project.{id}`). Echo.join() tracks who is viewing the same resource. Shows user avatars in the browser. Users are automatically removed on disconnect via heartbeat.
+**Presence Channels** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Each project has a presence channel (`presence-project.{id}`). Echo.join() tracks who is viewing the same resource. Shows user avatars in the browser. Users are automatically removed on disconnect via heartbeat.
 
-**Document Editing Status** Ã¢â‚¬â€ When a user types, a `DocumentEditing` event broadcasts to `project.{id}.document.{id}` with the user ID and cursor position. Echo.whisper provides low-latency cursor sync, throttled to once per 500ms.
+**Document Editing Status** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â When a user types, a `DocumentEditing` event broadcasts to `project.{id}.document.{id}` with the user ID and cursor position. Echo.whisper provides low-latency cursor sync, throttled to once per 500ms.
 
-**Agent Progress Broadcasts** Ã¢â‚¬â€ Agent execution stages broadcast to `team.{id}.agents`. The UI shows a live progress bar: stage name, status, and metadata (e.g., "Research completed Ã¢â‚¬â€ 5 facts found"). Each broadcast includes agent type, status enum, and an optional metadata payload.
+**Agent Progress Broadcasts** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Agent execution stages broadcast to `team.{id}.agents`. The UI shows a live progress bar: stage name, status, and metadata (e.g., "Research completed ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â 5 facts found"). Each broadcast includes agent type, status enum, and an optional metadata payload.
 
-**Notification Streams** Ã¢â‚¬â€ Code review assignments, meeting reminders, document mentions broadcast to `user.{id}.notifications`. The UI shows action-button toasts. Notifications are also persisted in a `notifications` table for offline access.
+**Notification Streams** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Code review assignments, meeting reminders, document mentions broadcast to `user.{id}.notifications`. The UI shows action-button toasts. Notifications are also persisted in a `notifications` table for offline access.
 
 ```php
 // App/Events/AgentProgressUpdated.php
@@ -490,23 +490,23 @@ class AgentProgressUpdated implements ShouldBroadcast
 }
 ```
 
-### 8.8 Part G Ã¢â‚¬â€ Deployment
+### 8.8 Part G ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Deployment
 
 
 TeamSynth uses Laravel Vapor for serverless API deployment paired with managed infrastructure.
 
-**Vapor (Serverless API)** Ã¢â‚¬â€ The Octane application runs as a Vapor project. Each Vapor environment (staging, production) maps to a separate team. Auto-scaling handles traffic spikes without manual intervention. Vapor manages SSL certificates and custom domains.
+**Vapor (Serverless API)** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â The Octane application runs as a Vapor project. Each Vapor environment (staging, production) maps to a separate team. Auto-scaling handles traffic spikes without manual intervention. Vapor manages SSL certificates and custom domains.
 
-**Cloud (Managed Database + Redis)** Ã¢â‚¬â€ PostgreSQL with pgvector runs on a managed cloud provider (Crunchy Bridge, RDS, or Cloud SQL). Redis is a managed cluster (Upstash or ElastiCache) sized at 50GB. Both databases have automated backups with point-in-time recovery.
+**Cloud (Managed Database + Redis)** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â PostgreSQL with pgvector runs on a managed cloud provider (Crunchy Bridge, RDS, or Cloud SQL). Redis is a managed cluster (Upstash or ElastiCache) sized at 50GB. Both databases have automated backups with point-in-time recovery.
 
-**Envoyer (Zero-Downtime Deployments)** Ã¢â‚¬â€ Deployment script: `vapor deploy production` triggers Envoyer. Envoyer runs health checks against the new deployment, migrates the database, and switches the load balancer only after all checks pass. Rollback is a single click.
+**Envoyer (Zero-Downtime Deployments)** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Deployment script: `vapor deploy production` triggers Envoyer. Envoyer runs health checks against the new deployment, migrates the database, and switches the load balancer only after all checks pass. Rollback is a single click.
 
-**Forge (Queue Workers + Octane)** Ã¢â‚¬â€ Forge manages the Octane server processes and Horizon queue workers. Supervisors are configured: one for request queues (3 processes, 300s timeout) and one for AI queues (5 processes, 600s timeout).
+**Forge (Queue Workers + Octane)** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Forge manages the Octane server processes and Horizon queue workers. Supervisors are configured: one for request queues (3 processes, 300s timeout) and one for AI queues (5 processes, 600s timeout).
 
 **CI/CD Pipeline**
 
 ```
-Git push Ã¢â€ â€™ GitHub Actions:
+Git push ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ GitHub Actions:
   1. npm ci && npm run build (frontend assets)
   2. composer install --no-dev
   3. php artisan test (feature + unit)
@@ -515,10 +515,10 @@ Git push Ã¢â€ â€™ GitHub Actions:
   6. Envoyer health check
   7. npm run cy:run (E2E tests on staging)
   8. vapor deploy production (manual approval gate)
-  9. Envoyer deploy production Ã¢â€ â€™ rollback on failure
+  9. Envoyer deploy production ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ rollback on failure
 ```
 
-### 8.9 Part H Ã¢â‚¬â€ Testing Strategy
+### 8.9 Part H ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Testing Strategy
 
 
 ```php
@@ -568,9 +568,9 @@ class DocumentAnalysisAgentTest extends TestCase
 | Browser | Laravel Dusk | Reverb connection, Echo event reception, presence channel membership |
 | AI Quality | Custom evals | Agent output accuracy, search relevance (NDCG), moderation precision |
 
-**AI SDK Fakes** Ã¢â‚¬â€ The OpenAI facade can be faked with `OpenAI::fake([...])` to return controlled responses. This eliminates external API calls during testing while validating that the agent correctly parses structured output and handles edge cases (missing fields, invalid JSON, API errors).
+**AI SDK Fakes** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â The OpenAI facade can be faked with `OpenAI::fake([...])` to return controlled responses. This eliminates external API calls during testing while validating that the agent correctly parses structured output and handles edge cases (missing fields, invalid JSON, API errors).
 
-### 8.10 Part I Ã¢â‚¬â€ Performance Budget
+### 8.10 Part I ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Performance Budget
 
 
 | Metric | Target (p95) | Measurement Tool |
@@ -584,18 +584,18 @@ class DocumentAnalysisAgentTest extends TestCase
 | Database query (p95) | <50ms | Telescope queries tab |
 | Queue job wait time | <5s | Horizon dashboard |
 
-**Budget Enforcement** Ã¢â‚¬â€ A custom middleware tags every response with `X-TeamSynth-Time: {duration_ms}`. A CI pipeline step runs Lighthouse CI to catch regressions. Alert thresholds in Pulse trigger notifications when any metric exceeds 120% of the budget for 5 consecutive minutes.
+**Budget Enforcement** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â A custom middleware tags every response with `X-TeamSynth-Time: {duration_ms}`. A CI pipeline step runs Lighthouse CI to catch regressions. Alert thresholds in Pulse trigger notifications when any metric exceeds 120% of the budget for 5 consecutive minutes.
 
-### 8.11 Part J Ã¢â‚¬â€ Monitoring
+### 8.11 Part J ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Monitoring
 
 
-**Pulse Dashboard** Ã¢â‚¬â€ Laravel Pulse provides at-a-glance monitoring for slow queries, slow requests, queue throughput, cache hit ratio, and Redis memory usage. Custom Pulse cards display AI token usage per agent type and content type distribution.
+**Pulse Dashboard** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Laravel Pulse provides at-a-glance monitoring for slow queries, slow requests, queue throughput, cache hit ratio, and Redis memory usage. Custom Pulse cards display AI token usage per agent type and content type distribution.
 
-**Telescope Debugging** Ã¢â‚¬â€ Telescope captures every request, query, job, event, and cache operation in development and staging. In production, Telescope is configured with a 1% sample rate to reduce overhead while retaining debugging capability for slow requests (automatically captured at 100% sample when duration exceeds 1s).
+**Telescope Debugging** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Telescope captures every request, query, job, event, and cache operation in development and staging. In production, Telescope is configured with a 1% sample rate to reduce overhead while retaining debugging capability for slow requests (automatically captured at 100% sample when duration exceeds 1s).
 
-**Nightwatch Error Tracking** Ã¢â‚¬â€ Nightwatch captures and aggregates PHP exceptions, JavaScript errors, and scheduled task failures. Errors are grouped by fingerprint (exception class + file + line). Each error includes the Telescope request ID for full context replay.
+**Nightwatch Error Tracking** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Nightwatch captures and aggregates PHP exceptions, JavaScript errors, and scheduled task failures. Errors are grouped by fingerprint (exception class + file + line). Each error includes the Telescope request ID for full context replay.
 
-**Custom Metrics** Ã¢â‚¬â€ Logged to Prometheus via a statsd bridge:
+**Custom Metrics** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Logged to Prometheus via a statsd bridge:
 
 | Metric | Labels | Purpose |
 |---|---|---|
@@ -728,7 +728,7 @@ class DocumentAnalysisAgentTest extends TestCase
 ## Summary
 
 - TeamSynth is a team collaboration platform that uses four specialized AI agents (DocumentAnalysis, MeetingSummarizer, CodeReview, Search) to extract actionable intelligence from team artifacts.
-- The architecture follows a layered topology: Cloudflare CDN Ã¢â€ â€™ Load Balancer Ã¢â€ â€™ Octane web nodes Ã¢â€ â€™ Redis Ã¢â€ â€™ PostgreSQL + pgvector Ã¢â€ â€™ Queue Workers Ã¢â€ â€™ Reverb Ã¢â€ â€™ AI SDK.
+- The architecture follows a layered topology: Cloudflare CDN ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Load Balancer ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Octane web nodes ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Redis ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ PostgreSQL + pgvector ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Queue Workers ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ Reverb ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ AI SDK.
 - The data model stores all content polymorphically. Embeddings use pgvector with a 1536-dimension HNSW index across document, meeting, code, and comment content types.
 - Search uses three tiers: PostgreSQL full-text (Tier 1, &lt;50ms), pgvector cosine similarity (Tier 2, <200ms), and hybrid weighted scoring (Tier 3, <500ms). A cross-encoder reranker improves precision.
 - Real-time collaboration uses Reverb with Echo for presence channels, typing indicators, agent progress broadcasts, and notification streams.

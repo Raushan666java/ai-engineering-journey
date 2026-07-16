@@ -1,4 +1,4 @@
-# Chapter 14: Google SWE — Company-Specific Question Bank
+﻿# Chapter 14: Google SWE â€” Company-Specific Question Bank
 
 ## Learning Objectives
 
@@ -11,16 +11,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/interview-preparation/14-company-google-swe/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/interview-preparation/14-company-google-swe/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/14-company-google-swe/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/interview-preparation/14-company-google-swe/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/interview-preparation/14-company-google-swe/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/interview-preparation/14-company-google-swe/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/14-company-google-swe/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/interview-preparation/14-company-google-swe/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/interview-preparation/14-company-google-swe/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/interview-preparation/14-company-google-swe/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/interview-preparation/14-company-google-swe/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/interview-preparation/14-company-google-swe/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -31,12 +31,12 @@
 ```mermaid
 flowchart TB
     subgraph "Google SWE Interview Process"
-        A[Resume Submission] --> B[Recruiter Screen<br/>30 mins • Background Check]
+        A[Resume Submission] --> B[Recruiter Screen<br/>30 mins â€¢ Background Check]
         B --> C{Strong Fit?}
-        C -->|Yes| D[Phone/Video Screen<br/>45 mins • 1-2 Coding Problems]
+        C -->|Yes| D[Phone/Video Screen<br/>45 mins â€¢ 1-2 Coding Problems]
         C -->|No| E[Rejected]
         D --> F{Pass?}
-        F -->|Yes| G[Onsite Interview<br/>4-5 Rounds • 45 mins each]
+        F -->|Yes| G[Onsite Interview<br/>4-5 Rounds â€¢ 45 mins each]
         F -->|No| E
         G --> H1[Coding Round 1<br/>Algorithmic Thinking]
         G --> H2[Coding Round 2<br/>Data Structures]
@@ -81,7 +81,7 @@ flowchart LR
 
 ---
 
-## Section 1: Coding Problems — Google-Style Hard (8 Problems)
+## Section 1: Coding Problems â€” Google-Style Hard (8 Problems)
 
 ### Problem 1: Median of Two Sorted Arrays
 
@@ -97,7 +97,7 @@ Explanation: merged = [1, 2, 3], median = 2
 ```
 
 <details>
-<summary><b>Solution: Binary Search Partition — O(log(min(m,n))) time, O(1) space</b></summary>
+<summary><b>Solution: Binary Search Partition â€” O(log(min(m,n))) time, O(1) space</b></summary>
 
 ```typescript
 function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
@@ -136,10 +136,10 @@ function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
 }
 ```
 
-**Time:** O(log(min(m,n))) — binary search on the smaller array
-**Space:** O(1) — constant space
+**Time:** O(log(min(m,n))) â€” binary search on the smaller array
+**Space:** O(1) â€” constant space
 
-**Key insight:** Instead of merging (O(m+n)), we partition both arrays such that all elements on the left are ≤ all elements on the right. The partition indices give us the median directly.
+**Key insight:** Instead of merging (O(m+n)), we partition both arrays such that all elements on the left are â‰¤ all elements on the right. The partition indices give us the median directly.
 
 **Why Google asks this:** Tests ability to transform a seemingly straightforward problem into an elegant O(log n) solution through binary search on the correct search space.
 </details>
@@ -150,10 +150,10 @@ function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
 
 **Problem:** Design an algorithm to serialize a binary tree into a string and deserialize the string back into the tree. Any format works as long as it's unambiguous.
 
-**Google Context:** Google frequently asks tree serialization — tests understanding of tree traversal and recursive problem solving.
+**Google Context:** Google frequently asks tree serialization â€” tests understanding of tree traversal and recursive problem solving.
 
 <details>
-<summary><b>Solution: Preorder with Null Markers — O(n) time, O(n) space</b></summary>
+<summary><b>Solution: Preorder with Null Markers â€” O(n) time, O(n) space</b></summary>
 
 ```typescript
 class TreeNode {
@@ -233,7 +233,7 @@ function serializeBFS(root: TreeNode | null): string {
 **Time:** O(n), **Space:** O(n) for both approaches
 </details>
 
-**Google interview tip:** Discuss trade-offs between approaches — preorder uses recursion (risk of stack overflow for very deep trees), BFS is iterative but more code.
+**Google interview tip:** Discuss trade-offs between approaches â€” preorder uses recursion (risk of stack overflow for very deep trees), BFS is iterative but more code.
 </details>
 
 ---
@@ -251,7 +251,7 @@ Output: "wertf"
 ```
 
 <details>
-<summary><b>Solution: Topological Sort (BFS — Kahn's Algorithm) — O(C) time, O(1) space</b></summary>
+<summary><b>Solution: Topological Sort (BFS â€” Kahn's Algorithm) â€” O(C) time, O(1) space</b></summary>
 
 ```typescript
 function alienOrder(words: string[]): string {
@@ -314,7 +314,7 @@ function alienOrder(words: string[]): string {
 ```
 
 **Time:** O(C) where C = total number of characters across all words
-**Space:** O(1) — at most 26 unique characters (lowercase letters)
+**Space:** O(1) â€” at most 26 unique characters (lowercase letters)
 
 **Why this is hard:** You must: (1) realize it's a graph problem, (2) correctly extract edges from adjacent word comparisons, (3) handle edge cases like prefix ordering violations, (4) detect cycles.
 
@@ -327,7 +327,7 @@ function alienOrder(words: string[]): string {
 
 **Problem:** Given a string `s` and a dictionary of words `wordDict`, add spaces in `s` to construct all possible sentences where each word is a valid dictionary word.
 
-**Google Context:** Google tests memoized backtracking — combining DFS with DP for optimization.
+**Google Context:** Google tests memoized backtracking â€” combining DFS with DP for optimization.
 
 **Example:**
 ```
@@ -336,7 +336,7 @@ Output: ["cats and dog", "cat sand dog"]
 ```
 
 <details>
-<summary><b>Solution: Memoized Backtracking — O(2^n) worst, O(n × k) with pruning</b></summary>
+<summary><b>Solution: Memoized Backtracking â€” O(2^n) worst, O(n Ã— k) with pruning</b></summary>
 
 ```typescript
 function wordBreak(s: string, wordDict: string[]): string[] {
@@ -371,7 +371,7 @@ function wordBreak(s: string, wordDict: string[]): string[] {
 ```
 
 **Time:** O(2^n) worst case (e.g., s = "aaa...", all substrings are words). With memoization and pruning, much faster in practice.
-**Space:** O(n × k) where k = average number of sentences per substring
+**Space:** O(n Ã— k) where k = average number of sentences per substring
 
 **Key optimization:** The memoization ensures each substring is computed only once, transforming exponential brute force into manageable performance for typical inputs.
 </details>
@@ -382,7 +382,7 @@ function wordBreak(s: string, wordDict: string[]): string[] {
 
 **Problem:** Implement regular expression matching with support for `.` (any character) and `*` (zero or more of preceding element). The match must cover the entire input string.
 
-**Google Context:** Google's most classic DP-hard problem — tests 2D DP formulation and edge case thinking.
+**Google Context:** Google's most classic DP-hard problem â€” tests 2D DP formulation and edge case thinking.
 
 **Example:**
 ```
@@ -392,7 +392,7 @@ Explanation: '*' matches zero or more of 'a', so "aa" matches "a*"
 ```
 
 <details>
-<summary><b>Solution: 2D Dynamic Programming — O(m×n) time, O(m×n) space</b></summary>
+<summary><b>Solution: 2D Dynamic Programming â€” O(mÃ—n) time, O(mÃ—n) space</b></summary>
 
 ```typescript
 function isMatch(s: string, p: string): boolean {
@@ -435,8 +435,8 @@ function isMatch(s: string, p: string): boolean {
 }
 ```
 
-**Time:** O(m × n) — fill DP table
-**Space:** O(m × n) — can be optimized to O(n) space
+**Time:** O(m Ã— n) â€” fill DP table
+**Space:** O(m Ã— n) â€” can be optimized to O(n) space
 
 **DP recurrence:**
 - If p[j-1] == '*': dp[i][j] = dp[i][j-2] OR (p[j-2] matches s[i-1] AND dp[i-1][j])
@@ -449,9 +449,9 @@ function isMatch(s: string, p: string): boolean {
 
 ### Problem 6: Longest Increasing Path in a Matrix
 
-**Problem:** Given an m×n integer matrix, return the length of the longest increasing path. From each cell, you can move in four directions (up/down/left/right).
+**Problem:** Given an mÃ—n integer matrix, return the length of the longest increasing path. From each cell, you can move in four directions (up/down/left/right).
 
-**Google Context:** Google tests DFS + memoization (top-down DP) — combining graph traversal with optimization.
+**Google Context:** Google tests DFS + memoization (top-down DP) â€” combining graph traversal with optimization.
 
 **Example:**
 ```
@@ -460,11 +460,11 @@ Input:
   [6, 6, 8],
   [2, 1, 1] ]
 Output: 4
-Explanation: Longest path is 1→2→6→9 (or 1→2→6→8)
+Explanation: Longest path is 1â†’2â†’6â†’9 (or 1â†’2â†’6â†’8)
 ```
 
 <details>
-<summary><b>Solution: DFS with Memoization — O(m×n) time, O(m×n) space</b></summary>
+<summary><b>Solution: DFS with Memoization â€” O(mÃ—n) time, O(mÃ—n) space</b></summary>
 
 ```typescript
 function longestIncreasingPath(matrix: number[][]): number {
@@ -505,10 +505,10 @@ function longestIncreasingPath(matrix: number[][]): number {
 }
 ```
 
-**Time:** O(m×n) — each cell computed once
-**Space:** O(m×n) — memoization table
+**Time:** O(mÃ—n) â€” each cell computed once
+**Space:** O(mÃ—n) â€” memoization table
 
-**Why Google asks this:** Tests recognition that naive DFS is exponential. Memoization reduces to O(m×n). This pattern (DFS + memo) appears in many Google problems.
+**Why Google asks this:** Tests recognition that naive DFS is exponential. Memoization reduces to O(mÃ—n). This pattern (DFS + memo) appears in many Google problems.
 </details>
 
 ---
@@ -517,7 +517,7 @@ function longestIncreasingPath(matrix: number[][]): number {
 
 **Problem:** Given an array of intervals where each interval is `[start, end]`, merge all overlapping intervals.
 
-**Google Context:** Interval problems are Google favorites — tests sorting + linear scan pattern recognition.
+**Google Context:** Interval problems are Google favorites â€” tests sorting + linear scan pattern recognition.
 
 **Example:**
 ```
@@ -526,7 +526,7 @@ Output: [[1,6],[8,10],[15,18]]
 ```
 
 <details>
-<summary><b>Solution: Sort and Merge — O(n log n) time, O(n) space</b></summary>
+<summary><b>Solution: Sort and Merge â€” O(n log n) time, O(n) space</b></summary>
 
 ```typescript
 function merge(intervals: number[][]): number[][] {
@@ -554,8 +554,8 @@ function merge(intervals: number[][]): number[][] {
 }
 ```
 
-**Time:** O(n log n) — dominated by sorting
-**Space:** O(n) — storing merged intervals
+**Time:** O(n log n) â€” dominated by sorting
+**Space:** O(n) â€” storing merged intervals
 
 **Variations Google asks:**
 - Insert Interval (LeetCode 57)
@@ -569,7 +569,7 @@ function merge(intervals: number[][]): number[][] {
 
 **Problem:** Given an array of words and a max width per line, format the text such that each line has exactly maxWidth characters, fully justified (left and right). The last line is left-justified.
 
-**Google Context:** This is one of Google's most infamous implementation-heavy problems — tests attention to detail and handling of edge cases.
+**Google Context:** This is one of Google's most infamous implementation-heavy problems â€” tests attention to detail and handling of edge cases.
 
 **Example:**
 ```
@@ -583,7 +583,7 @@ Output:
 ```
 
 <details>
-<summary><b>Solution — O(n × L) time, O(n) space</b></summary>
+<summary><b>Solution â€” O(n Ã— L) time, O(n) space</b></summary>
 
 ```typescript
 function fullJustify(words: string[], maxWidth: number): string[] {
@@ -645,8 +645,8 @@ function buildLine(
 }
 ```
 
-**Time:** O(n × L) where L = maxWidth (building strings of length maxWidth)
-**Space:** O(n) — storing the result
+**Time:** O(n Ã— L) where L = maxWidth (building strings of length maxWidth)
+**Space:** O(n) â€” storing the result
 
 **Key complexities:**
 - Distributing extra spaces evenly (left to right)
@@ -777,8 +777,8 @@ flowchart TB
 
 **Inverted Index Design:**
 ```
-Term → [ (docId, frequency, positions), ... ]
-"google" → [ (doc1, 5, [10, 45, 102]), (doc432, 2, [7, 89]), ... ]
+Term â†’ [ (docId, frequency, positions), ... ]
+"google" â†’ [ (doc1, 5, [10, 45, 102]), (doc432, 2, [7, 89]), ... ]
 ```
 
 **Query Processing Flow:**
@@ -877,7 +877,7 @@ Client switches quality dynamically
 **CDN Strategy:**
 - Cache popular videos at edge nodes closest to users
 - Long-tail content served from regional caches
-- Most popular content (1% of videos → 80% of views) is CDN-optimized
+- Most popular content (1% of videos â†’ 80% of views) is CDN-optimized
 - Google Global Cache deployed within ISP networks
 
 **Recommendation System:**
@@ -902,17 +902,17 @@ function scoreVideo(features: VideoFeatures, weights: number[]): number {
 ```
 
 **Key design challenges:**
-1. **Scale:** 500 hrs/min upload → massive storage & transcoding pipeline
-2. **Latency:** First-byte < 1 second globally → CDN with edge caching
-3. **Cost:** Bandwidth is the biggest cost → optimize encoding, use CDN
-4. **Freshness:** Trending videos spread fast → cache invalidation strategy
+1. **Scale:** 500 hrs/min upload â†’ massive storage & transcoding pipeline
+2. **Latency:** First-byte < 1 second globally â†’ CDN with edge caching
+3. **Cost:** Bandwidth is the biggest cost â†’ optimize encoding, use CDN
+4. **Freshness:** Trending videos spread fast â†’ cache invalidation strategy
 </details>
 
 ---
 
 ## Section 3: Googleyness & Behavioral (10 Questions)
 
-### Q1: Tell me about a time you led through ambiguity. (Googleyness — Comfort with Ambiguity)
+### Q1: Tell me about a time you led through ambiguity. (Googleyness â€” Comfort with Ambiguity)
 
 **Strategy:** Google values engineers who can structure problems themselves. Show you can:
 - Define success metrics when there's no clear target
@@ -929,7 +929,7 @@ function scoreVideo(features: VideoFeatures, weights: number[]): number {
 **Result:** Churn rate reduced by 15% in 3 months. The score became the team's primary success metric. I documented the methodology for reuse across product teams.
 </details>
 
-### Q2: Tell me about a time you had a disagreement with a peer. (Googleyness — Collaboration)
+### Q2: Tell me about a time you had a disagreement with a peer. (Googleyness â€” Collaboration)
 
 **Strategy:** Show that you prioritize the best idea, not your idea. Use data to resolve conflicts.
 
@@ -996,7 +996,7 @@ function scoreVideo(features: VideoFeatures, weights: number[]): number {
 
 1. **Identify what we know** (even if it's little)
 2. **Identify what we can learn** (fastest experiment to gather data)
-3. **Decide with a confidence threshold** (80% info → decide)
+3. **Decide with a confidence threshold** (80% info â†’ decide)
 4. **Build feedback loops** (measure outcome, pivot if wrong)
 </details>
 
@@ -1009,7 +1009,7 @@ function scoreVideo(features: VideoFeatures, weights: number[]): number {
 <details>
 <summary><b>Strategy:</b></summary>
 
-Don't say "Google is a great company" — everyone says that. Instead:
+Don't say "Google is a great company" â€” everyone says that. Instead:
 1. **Name specific Google products or teams** you're excited about
 2. **Connect your skills to their challenges** (scale, ML, infrastructure)
 3. **Show you understand Google's engineering culture** (code reviews, testing, psychological safety)
@@ -1026,9 +1026,9 @@ Example: "I've been following Google's work on Pathways and the next-gen languag
 
 | Phase | Focus | Problems/Day |
 |-------|-------|-------------|
-| Weeks 1-2 | Arrays, Strings, Hash Maps | 3-4 easy → medium |
-| Weeks 3-4 | Trees, Graphs, Recursion | 2-3 medium → hard |
-| Weeks 5-6 | Dynamic Programming | 2-3 medium → hard |
+| Weeks 1-2 | Arrays, Strings, Hash Maps | 3-4 easy â†’ medium |
+| Weeks 3-4 | Trees, Graphs, Recursion | 2-3 medium â†’ hard |
+| Weeks 5-6 | Dynamic Programming | 2-3 medium â†’ hard |
 | Weeks 7-8 | Advanced: Tries, Union Find, Topological Sort | 2 hard |
 | Weeks 9-10 | Mixed practice + Mock interviews | 3 varied |
 | Weeks 11-12 | Speed + Accuracy + System Design (if L5+) | Mixed |
@@ -1056,7 +1056,7 @@ Example: "I've been following Google's work on Pathways and the next-gen languag
 
 ## Summary
 
-This chapter provided a comprehensive Google SWE question bank covering the hardest coding patterns Google is known for: binary search partition (Median of Two Arrays), graph-based topological sort (Alien Dictionary), 2D DP (Regex Matching), DFS+memo (Longest Increasing Path), and implementation-heavy problems (Text Justification). The 3 system design problems cover search, documents, and video — core Google products. The 10 behavioral questions map to Google's Googleyness criteria with structured response frameworks.
+This chapter provided a comprehensive Google SWE question bank covering the hardest coding patterns Google is known for: binary search partition (Median of Two Arrays), graph-based topological sort (Alien Dictionary), 2D DP (Regex Matching), DFS+memo (Longest Increasing Path), and implementation-heavy problems (Text Justification). The 3 system design problems cover search, documents, and video â€” core Google products. The 10 behavioral questions map to Google's Googleyness criteria with structured response frameworks.
 
 ## Practical Takeaways
 
@@ -1064,7 +1064,7 @@ This chapter provided a comprehensive Google SWE question bank covering the hard
 2. **Coding interviews are 45 minutes of structured communication.** Explain your approach before coding. Talk through trade-offs. Verify with examples.
 3. **System design for L4+ only.** L3 (entry-level) candidates get 3-4 coding rounds, no system design. L4+ candidates get 1 system design round.
 4. **The Hiring Committee is the final gate.** Even if all interviewers give "Hire," the committee can still say no based on leveling concerns.
-5. **⭐ Must-Know Patterns:** Binary search on answer, BFS/DFS on graphs, DP with memoization, Topological sort, Sliding window with hash map.
+5. **â­ Must-Know Patterns:** Binary search on answer, BFS/DFS on graphs, DP with memoization, Topological sort, Sliding window with hash map.
 6. **Have 5+ questions for your interviewers.** Google values intellectual curiosity. Smart questions demonstrate engagement.
 
 ## Chapter Quiz
@@ -1106,16 +1106,16 @@ a) Strong consistency  b) Eventual consistency  c) Causal consistency  d) Sequen
 
 <details>
 <summary>Answer: c) Causal consistency</summary>
-Google Docs uses Operational Transformation which preserves causal order — operations from the same user are applied in order, and concurrent operations are transformed.
+Google Docs uses Operational Transformation which preserves causal order â€” operations from the same user are applied in order, and concurrent operations are transformed.
 </details>
 
 ---
 
 ## Exercises
 
-1. **Coding:** Solve "Longest Consecutive Sequence" (LeetCode 128) — Google asks this frequently.
-2. **Coding:** Implement "Minimum Window Substring" (LeetCode 76) — Google hard, tests sliding window mastery.
+1. **Coding:** Solve "Longest Consecutive Sequence" (LeetCode 128) â€” Google asks this frequently.
+2. **Coding:** Implement "Minimum Window Substring" (LeetCode 76) â€” Google hard, tests sliding window mastery.
 3. **System Design:** Design Google's recommendation system for YouTube.
 4. **Behavioral:** Write a full STAR response for "Tell me about a time you influenced a team decision."
-5. **Coding:** Solve "First Missing Positive" (LeetCode 41) — Google classic, O(n) time, O(1) space.
+5. **Coding:** Solve "First Missing Positive" (LeetCode 41) â€” Google classic, O(n) time, O(1) space.
 </details>

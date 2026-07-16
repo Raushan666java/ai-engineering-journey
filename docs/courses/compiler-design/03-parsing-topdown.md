@@ -1,4 +1,4 @@
-# Chapter 3: Top-Down Parsing
+﻿# Chapter 3: Top-Down Parsing
 
 **? Previous:** [Chapter 2: Lexical Analysis](02-lexical.md) | **Next:** [Chapter 4: Bottom-Up Parsing](04-parsing-bottomup.md)
 
@@ -9,16 +9,16 @@ After completing this chapter, students will be able to: define context-free gra
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/compiler-design/03-parsing-topdown/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/compiler-design/03-parsing-topdown/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/compiler-design/03-parsing-topdown/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/compiler-design/03-parsing-topdown/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/compiler-design/03-parsing-topdown/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/compiler-design/03-parsing-topdown/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/compiler-design/03-parsing-topdown/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/compiler-design/03-parsing-topdown/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/compiler-design/03-parsing-topdown/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/compiler-design/03-parsing-topdown/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/compiler-design/03-parsing-topdown/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/compiler-design/03-parsing-topdown/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>

@@ -1,4 +1,4 @@
-# Chapter 6: Queues, Jobs, Notifications & Mail
+﻿# Chapter 6: Queues, Jobs, Notifications & Mail
 > **Previous:** [Authentication, Authorization & Security](./05-auth-security) | **Next:** [API Development & Integration](./07-api-development)
 
 ---
@@ -15,16 +15,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/06-queues-notifications/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/06-queues-notifications/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/06-queues-notifications/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/06-queues-notifications/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/06-queues-notifications/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/06-queues-notifications/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/06-queues-notifications/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/06-queues-notifications/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/laravel/06-queues-notifications/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/laravel/06-queues-notifications/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/laravel/06-queues-notifications/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/laravel/06-queues-notifications/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -717,7 +717,7 @@ Laravel's notification system sends messages across multiple channels with a sin
 ```php
 php artisan make:notification OrderShipped
 
-> **Remember:** Implement `ShouldQueue` on notification classes that send mail — otherwise the email is sent synchronously during the HTTP request, increasing response time by hundreds of milliseconds.
+> **Remember:** Implement `ShouldQueue` on notification classes that send mail â€” otherwise the email is sent synchronously during the HTTP request, increasing response time by hundreds of milliseconds.
 ```
 
 ```php
@@ -1429,7 +1429,7 @@ class ChargePayment implements ShouldQueue
 | Use Case | Payment \u2192 Ship \u2192 Notify | Process multiple uploads |
 | Ordering | Strict order guaranteed | No ordering guarantee |
 
-## Quick Reference — Queue Artisan Commands
+## Quick Reference â€” Queue Artisan Commands
 
 | Command | Purpose |
 |---------|---------|
@@ -1445,7 +1445,7 @@ class ChargePayment implements ShouldQueue
 | Concept | Blog | E-Commerce | SaaS |
 |---------|------|-----------|------|
 | Queue Driver | redis (single) | sqs + redis | redis (multiple queues) |
-| High Priority Queue | — | Payment processing | Subscription billing |
+| High Priority Queue | â€” | Payment processing | Subscription billing |
 | Batched Jobs | Image thumbnailing | Bulk order import | CSV user import |
 | Notified Channels | Email + database | Email + SMS + Slack | Email + Slack + Webhook |
 | Horizon Supervisors | 1 (default) | 3 (payments, email, default) | 5 per service tier |

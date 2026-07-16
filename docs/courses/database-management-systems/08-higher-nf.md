@@ -1,4 +1,4 @@
-# Chapter 8: Higher Normal Forms and Denormalization
+﻿# Chapter 8: Higher Normal Forms and Denormalization
 
 > **Previous:** [Chapter 7: Normalization](./07-normalization.md) | **Next:** [Chapter 9: Transactions](./09-transactions.md)
 
@@ -14,16 +14,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/08-higher-nf/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/08-higher-nf/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/08-higher-nf/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/08-higher-nf/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/08-higher-nf/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/08-higher-nf/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/08-higher-nf/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/08-higher-nf/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/08-higher-nf/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/08-higher-nf/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/08-higher-nf/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/08-higher-nf/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -1762,7 +1762,7 @@ The following code detects multi-valued dependency violations and recommends den
 
 ```typescript
 // ============================================================
-// MVD Detector & Denormalization Advisor â€” TypeScript
+// MVD Detector & Denormalization Advisor Ã¢â‚¬â€ TypeScript
 // ============================================================
 
 interface TableData {
@@ -1799,7 +1799,7 @@ class MVDAnalyzer {
             if (g.count === expected) {
               mvdCandidates.push(
                 'MVD detected: ' + otherCols.join(',') + ' -->> ' + colA + ' (independent of ' + colB + ')' +
-                ' â€” ' + g.count + ' rows = ' + g.aVals.size + ' x ' + g.bVals.size
+                ' Ã¢â‚¬â€ ' + g.count + ' rows = ' + g.aVals.size + ' x ' + g.bVals.size
               );
             }
           }
@@ -1822,7 +1822,7 @@ class MVDAnalyzer {
     }
     for (const [pair, count] of joinCounts) {
       if (count > 100) {
-        recs.push('High-frequency join: ' + pair + ' (' + count + ' queries) â€” Consider denormalization');
+        recs.push('High-frequency join: ' + pair + ' (' + count + ' queries) Ã¢â‚¬â€ Consider denormalization');
       }
     }
     return recs;

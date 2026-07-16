@@ -1,4 +1,4 @@
-# Chapter 4: Government Schemes & Union Budget
+﻿# Chapter 4: Government Schemes & Union Budget
 
 ## Learning Objectives
 
@@ -14,16 +14,16 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/banking-financial-awareness/04-government-schemes-budget/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/banking-financial-awareness/04-government-schemes-budget/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/banking-financial-awareness/04-government-schemes-budget/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/banking-financial-awareness/04-government-schemes-budget/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/banking-financial-awareness/04-government-schemes-budget/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/banking-financial-awareness/04-government-schemes-budget/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/banking-financial-awareness/04-government-schemes-budget/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/banking-financial-awareness/04-government-schemes-budget/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/banking-financial-awareness/04-government-schemes-budget/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/banking-financial-awareness/04-government-schemes-budget/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/banking-financial-awareness/04-government-schemes-budget/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/banking-financial-awareness/04-government-schemes-budget/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -33,7 +33,7 @@ By the end of this chapter, you will be able to:
 
 ## Theory
 
-### 4.1 Government Schemes — Overview
+### 4.1 Government Schemes â€” Overview
 
 ```mermaid
 mindmap
@@ -77,17 +77,17 @@ mindmap
 
 **Launch:** August 28, 2014
 **Ministry:** Ministry of Finance
-**Tagline:** "Mera Khata — Bhagya Vidhaata"
+**Tagline:** "Mera Khata â€” Bhagya Vidhaata"
 
 **Objective:** Ensure access to banking facilities (savings account, need-based credit, insurance, pension) for every household.
 
 | Feature | Details |
 |---------|---------|
 | Account type | Zero-balance savings account |
-| Overdraft limit | ₹10,000 (after 6 months of satisfactory operation) |
-| RuPay debit card | Free with inbuilt accident cover of ₹2 lakh |
-| Insurance | Life cover of ₹30,000 (for accounts opened before 26.1.2015) |
-| Interest rate | 3.5–4% per annum on deposits |
+| Overdraft limit | â‚¹10,000 (after 6 months of satisfactory operation) |
+| RuPay debit card | Free with inbuilt accident cover of â‚¹2 lakh |
+| Insurance | Life cover of â‚¹30,000 (for accounts opened before 26.1.2015) |
+| Interest rate | 3.5â€“4% per annum on deposits |
 | DBT linkage | Direct Benefit Transfer for subsidies |
 
 **Achievements:** Over 50 crore accounts opened (as of 2025). **Phase I** (2014-15): Household coverage. **Phase II** (2015-onwards): Overdraft facility, insurance, pension linkage.
@@ -97,21 +97,21 @@ mindmap
 **Launch:** April 8, 2015
 **Ministry:** Ministry of Finance
 
-**Objective:** Provide loans up to ₹10 lakh to non-corporate, non-farm small/micro enterprises.
+**Objective:** Provide loans up to â‚¹10 lakh to non-corporate, non-farm small/micro enterprises.
 
 **Three categories:**
 
 | Category | Loan Amount | Target |
 |----------|-------------|--------|
-| **Shishu** | Up to ₹50,000 | Start-ups and early-stage businesses |
-| **Kishore** | ₹50,001 to ₹5 lakh | Established small businesses |
-| **Tarun** | ₹5,00,001 to ₹10 lakh | Growth-stage businesses |
+| **Shishu** | Up to â‚¹50,000 | Start-ups and early-stage businesses |
+| **Kishore** | â‚¹50,001 to â‚¹5 lakh | Established small businesses |
+| **Tarun** | â‚¹5,00,001 to â‚¹10 lakh | Growth-stage businesses |
 
 **Key features:**
 - No collateral required (unsecured loans)
 - Loans extended through banks, NBFCs, MFIs
 - Interest rate linked to the borrower's credit rating
-- As of 2025, over ₹25 lakh crore sanctioned cumulatively
+- As of 2025, over â‚¹25 lakh crore sanctioned cumulatively
 
 #### C. Stand-Up India Scheme
 
@@ -123,7 +123,7 @@ mindmap
 | Feature | Details |
 |---------|---------|
 | Target group | SC/ST borrowers and women entrepreneurs |
-| Loan amount | ₹10 lakh to ₹1 crore |
+| Loan amount | â‚¹10 lakh to â‚¹1 crore |
 | Margin money | Up to 15% (10% for SC/ST category) |
 | Repayment | Up to 7 years |
 | Number of accounts | At least 2 per bank branch |
@@ -138,13 +138,13 @@ mindmap
 | Initiative | Description |
 |------------|-------------|
 | **Tax exemption** | 3-year income tax holiday for eligible startups |
-| **Fund of Funds** | ₹10,000 crore corpus managed by SIDBI |
+| **Fund of Funds** | â‚¹10,000 crore corpus managed by SIDBI |
 | **Self-certification** | Compliance under 9 labour and 3 environment laws |
 | **Startup India Hub** | Single-point contact for queries and handholding |
 | **Patent benefits** | 80% rebate on patent filing fees |
 | **Easy winding up** | 90-day exit window (Insolvency and Bankruptcy Code) |
 
-**Definition of startup (DPIIT):** An entity incorporated < 10 years ago with turnover < ₹100 crore, working towards innovation/improvement of products/processes.
+**Definition of startup (DPIIT):** An entity incorporated < 10 years ago with turnover < â‚¹100 crore, working towards innovation/improvement of products/processes.
 
 #### E. Pradhan Mantri Fasal Bima Yojana (PMFBY)
 
@@ -164,12 +164,12 @@ mindmap
 
 **Implementing agencies:** Empanelled insurance companies (Agriculture Insurance Company of India, private insurers).
 
-#### F. Ayushman Bharat — Pradhan Mantri Jan Arogya Yojana (PM-JAY)
+#### F. Ayushman Bharat â€” Pradhan Mantri Jan Arogya Yojana (PM-JAY)
 
 **Launch:** September 23, 2018 (on Dr. B.R. Ambedkar's birth anniversary)
 **Ministry:** Ministry of Health & Family Welfare
 
-**Objective:** Provide health insurance cover of ₹5 lakh per family per year for **secondary and tertiary care hospitalisation**.
+**Objective:** Provide health insurance cover of â‚¹5 lakh per family per year for **secondary and tertiary care hospitalisation**.
 
 | Feature | Details |
 |---------|---------|
@@ -195,11 +195,11 @@ mindmap
 |-----------|---------|
 | Credit Linked Subsidy (CLS) | Subsidy on home loans for EWS/LIG/MIG |
 | Subsidy tenure | Up to 20 years |
-| EWS/LIG | Interest subsidy of 6.5% on loan up to ₹6 lakh |
-| MIG-I | Interest subsidy of 4% on loan up to ₹9 lakh |
-| MIG-II | Interest subsidy of 3% on loan up to ₹12 lakh |
+| EWS/LIG | Interest subsidy of 6.5% on loan up to â‚¹6 lakh |
+| MIG-I | Interest subsidy of 4% on loan up to â‚¹9 lakh |
+| MIG-II | Interest subsidy of 3% on loan up to â‚¹12 lakh |
 
-**PMAY-Gramin (PMAY-G):** Provides financial assistance of ₹1.20 lakh in plains and ₹1.30 lakh in hilly/difficult areas for construction of pucca houses.
+**PMAY-Gramin (PMAY-G):** Provides financial assistance of â‚¹1.20 lakh in plains and â‚¹1.30 lakh in hilly/difficult areas for construction of pucca houses.
 
 **Target:** "Housing for All by 2024" (over 3 crore houses sanctioned cumulatively).
 
@@ -242,12 +242,12 @@ mindmap
 3. **Digital Empowerment of Citizens** (Universal digital literacy, digital resources in Indian languages, collaborative digital platforms)
 
 **Key initiatives under Digital India:**
-- Aadhaar (12-digit biometric identity) — over 140 crore enrolments
-- DigiLocker — digital document wallet
-- UMANG — Unified Mobile Application for New-age Governance
-- MyGov — citizen engagement platform
-- eSign — online Aadhaar-based electronic signature
-- BharatNet — broadband connectivity to all gram panchayats
+- Aadhaar (12-digit biometric identity) â€” over 140 crore enrolments
+- DigiLocker â€” digital document wallet
+- UMANG â€” Unified Mobile Application for New-age Governance
+- MyGov â€” citizen engagement platform
+- eSign â€” online Aadhaar-based electronic signature
+- BharatNet â€” broadband connectivity to all gram panchayats
 
 #### K. Skill India Mission
 
@@ -260,7 +260,7 @@ mindmap
 |-----------|--------|-------------|
 | **Pradhan Mantri Kaushal Vikas Yojana (PMKVY)** | 1 crore+ youth | Short-term skill training with certification |
 | **National Apprenticeship Promotion Scheme (NAPS)** | 50 lakh apprentices | On-the-job training with stipend |
-| **Skill Loan Scheme** | ₹5,000 to ₹1.5 lakh | Loan for skill courses |
+| **Skill Loan Scheme** | â‚¹5,000 to â‚¹1.5 lakh | Loan for skill courses |
 
 **Target:** Skill 40 crore people by 2030.
 
@@ -269,21 +269,21 @@ mindmap
 **Launch:** February 24, 2019
 **Ministry:** Ministry of Agriculture & Farmers Welfare
 
-**Feature:** Income support of ₹6,000 per year to all farmer families (landholding up to 2 hectares), paid in three equal instalments of ₹2,000 each.
+**Feature:** Income support of â‚¹6,000 per year to all farmer families (landholding up to 2 hectares), paid in three equal instalments of â‚¹2,000 each.
 - Beneficiaries: Over 10 crore farmers
 - Transfer: Direct Benefit Transfer (DBT) to Aadhaar-linked bank accounts
 
 #### M. Atmanirbhar Bharat Abhiyan
 
 **Announced:** May 12, 2020 (during COVID-19)
-**Total package:** ₹20 lakh crore (about 10% of GDP)
+**Total package:** â‚¹20 lakh crore (about 10% of GDP)
 
 **Five pillars:**
-1. Economy — ₹4.5 lakh crore stimulus
-2. Infrastructure — ₹7.5 lakh crore (NIP)
-3. System — Technology-driven systems
-4. Demography — Skill-based workforce
-5. Demand — Consumption boost
+1. Economy â€” â‚¹4.5 lakh crore stimulus
+2. Infrastructure â€” â‚¹7.5 lakh crore (NIP)
+3. System â€” Technology-driven systems
+4. Demography â€” Skill-based workforce
+5. Demand â€” Consumption boost
 
 **Key components:** Emergency credit line guarantee (ECLGS) for MSMEs, free food grains (PMGKAY), margin money relaxation, TDS/TCS rate reduction.
 
@@ -326,12 +326,12 @@ flowchart TD
 
 | Component | Examples | 2025-26 Estimate (approx.) |
 |-----------|----------|----------------------------|
-| Corporation Tax | Tax on corporate profits | ₹10.2 lakh crore |
-| Income Tax | Tax on individual incomes | ₹9.2 lakh crore |
-| GST | Goods and Services Tax | ₹8.5 lakh crore |
-| Customs | Import duties | ₹2.5 lakh crore |
-| Excise | Taxes on manufactured goods | ₹3.5 lakh crore |
-| Non-Tax Revenue | Dividends (RBI, PSUs), fees, fines | ₹4.0 lakh crore |
+| Corporation Tax | Tax on corporate profits | â‚¹10.2 lakh crore |
+| Income Tax | Tax on individual incomes | â‚¹9.2 lakh crore |
+| GST | Goods and Services Tax | â‚¹8.5 lakh crore |
+| Customs | Import duties | â‚¹2.5 lakh crore |
+| Excise | Taxes on manufactured goods | â‚¹3.5 lakh crore |
+| Non-Tax Revenue | Dividends (RBI, PSUs), fees, fines | â‚¹4.0 lakh crore |
 
 **Revenue Expenditure:** Expenditure that does not create assets (recurring in nature).
 
@@ -366,16 +366,16 @@ flowchart TD
 
 | Deficit | Formula | Meaning |
 |---------|---------|---------|
-| **Revenue Deficit** | Revenue Expenditure — Revenue Receipts | Shortfall in revenue account; indicates consumption beyond income |
-| **Fiscal Deficit** | Total Expenditure — Total Receipts (excluding borrowings) | Total borrowing requirement of the government |
-| **Primary Deficit** | Fiscal Deficit — Interest Payments | Borrowing excluding interest obligations |
-| **Effective Revenue Deficit** | Revenue Deficit — Grants for creation of capital assets | Introduced in 2011-12 budget |
+| **Revenue Deficit** | Revenue Expenditure â€” Revenue Receipts | Shortfall in revenue account; indicates consumption beyond income |
+| **Fiscal Deficit** | Total Expenditure â€” Total Receipts (excluding borrowings) | Total borrowing requirement of the government |
+| **Primary Deficit** | Fiscal Deficit â€” Interest Payments | Borrowing excluding interest obligations |
+| **Effective Revenue Deficit** | Revenue Deficit â€” Grants for creation of capital assets | Introduced in 2011-12 budget |
 
-**Fiscal Defict = (Revenue Expenditure + Capital Expenditure) — (Revenue Receipts + Capital Receipts excluding borrowings)**
+**Fiscal Defict = (Revenue Expenditure + Capital Expenditure) â€” (Revenue Receipts + Capital Receipts excluding borrowings)**
 
 **Significance of fiscal deficit:**
 - Indicates total government borrowing
-- High fiscal deficit → government borrows more → higher interest rates → crowding out of private investment
+- High fiscal deficit â†’ government borrows more â†’ higher interest rates â†’ crowding out of private investment
 - Financed through market borrowings, external loans, small savings
 
 #### D. FRBM Act (Fiscal Responsibility and Budget Management Act)
@@ -410,28 +410,28 @@ Taxes where the incidence falls **directly** on the taxpayer and cannot be shift
 | **Income Tax** | Tax on individual/HUF/company income | CBDT (Central Board of Direct Taxes) |
 | **Corporation Tax** | Tax on corporate profits | CBDT |
 | **Capital Gains Tax** | Tax on profits from asset sales | CBDT |
-| **Wealth Tax** | Abolished in 2015 | — |
+| **Wealth Tax** | Abolished in 2015 | â€” |
 | **Securities Transaction Tax (STT)** | Tax on stock market transactions | CBDT |
 
-**Income tax slabs (New Tax Regime — FY 2025-26):**
+**Income tax slabs (New Tax Regime â€” FY 2025-26):**
 
 | Income Range | Tax Rate |
 |--------------|----------|
-| Up to ₹3,00,000 | Nil |
-| ₹3,00,001 to ₹7,00,000 | 5% |
-| ₹7,00,001 to ₹10,00,000 | 10% |
-| ₹10,00,001 to ₹12,00,000 | 15% |
-| ₹12,00,001 to ₹15,00,000 | 20% |
-| Above ₹15,00,000 | 30% |
+| Up to â‚¹3,00,000 | Nil |
+| â‚¹3,00,001 to â‚¹7,00,000 | 5% |
+| â‚¹7,00,001 to â‚¹10,00,000 | 10% |
+| â‚¹10,00,001 to â‚¹12,00,000 | 15% |
+| â‚¹12,00,001 to â‚¹15,00,000 | 20% |
+| Above â‚¹15,00,000 | 30% |
 
 **Capital Gains Tax (FY 2025-26):**
 
 | Type | Holding Period | Tax Rate |
 |------|---------------|----------|
-| LTCG (Equity) | > 12 months | 10% above ₹1 lakh |
-| STCG (Equity) | ≤ 12 months | 15% |
+| LTCG (Equity) | > 12 months | 10% above â‚¹1 lakh |
+| STCG (Equity) | â‰¤ 12 months | 15% |
 | LTCG (Debt) | > 36 months | 20% with indexation |
-| STCG (Debt) | ≤ 36 months | As per income tax slab |
+| STCG (Debt) | â‰¤ 36 months | As per income tax slab |
 
 #### B. Indirect Taxes
 
@@ -456,7 +456,7 @@ Taxes where the incidence can be **shifted** from the seller to the consumer.
 | **0%** (Nil) | Essential items: food grains, milk, eggs, fresh vegetables, education services |
 | **5%** | Mass consumption: packaged food items, sugar, tea, coffee, medicines |
 | **12%** | Standard: processed food, computers, mobile phones, business class air travel |
-| **18%** | Standard: IT services, telecom, restaurant (air-conditioned), hotel rooms (₹2,500+) |
+| **18%** | Standard: IT services, telecom, restaurant (air-conditioned), hotel rooms (â‚¹2,500+) |
 | **28%** | Luxury: automobiles, tobacco, aerated drinks, luxury hotels, casinos |
 
 **GST Council:**
@@ -521,19 +521,19 @@ function calculateDeficits(
 }
 
 const budget = calculateDeficits(4500000, 1200000, 3800000, 500000, 950000);
-console.log(`Fiscal Deficit: ₹${budget.fiscalDeficit} Cr, Rev Deficit: ₹${budget.revenueDeficit} Cr`);
-// Output: Fiscal Deficit: ₹1400000 Cr, Rev Deficit: ₹700000 Cr
+console.log(`Fiscal Deficit: â‚¹${budget.fiscalDeficit} Cr, Rev Deficit: â‚¹${budget.revenueDeficit} Cr`);
+// Output: Fiscal Deficit: â‚¹1400000 Cr, Rev Deficit: â‚¹700000 Cr
 ```
 
-**Q1.** If the government's total expenditure is ₹57 lakh crore and total receipts (excluding borrowings) are ₹43 lakh crore, what is the fiscal deficit?
+**Q1.** If the government's total expenditure is â‚¹57 lakh crore and total receipts (excluding borrowings) are â‚¹43 lakh crore, what is the fiscal deficit?
 
-a) ₹10 lakh crore b) ₹14 lakh crore c) ₹57 lakh crore d) ₹100 lakh crore
+a) â‚¹10 lakh crore b) â‚¹14 lakh crore c) â‚¹57 lakh crore d) â‚¹100 lakh crore
 
 <details>
 <summary>Answer</summary>
-**Answer:** b) ₹14 lakh crore
+**Answer:** b) â‚¹14 lakh crore
 
-Fiscal Deficit = Total Expenditure — Total Receipts (excluding borrowings) = ₹57 lakh cr — ₹43 lakh cr = ₹14 lakh cr.
+Fiscal Deficit = Total Expenditure â€” Total Receipts (excluding borrowings) = â‚¹57 lakh cr â€” â‚¹43 lakh cr = â‚¹14 lakh cr.
 </details>
 
 ---
@@ -609,12 +609,12 @@ function calculateGST(
 }
 
 const intra = calculateGST(10000, 18, 'Intra-state');
-console.log(`CGST: ₹${intra.cgst}, SGST: ₹${intra.sgst}, Total: ₹${intra.totalPrice}`);
-// Output: CGST: ₹900, SGST: ₹900, Total: ₹11800
+console.log(`CGST: â‚¹${intra.cgst}, SGST: â‚¹${intra.sgst}, Total: â‚¹${intra.totalPrice}`);
+// Output: CGST: â‚¹900, SGST: â‚¹900, Total: â‚¹11800
 
 const inter = calculateGST(10000, 18, 'Inter-state');
-console.log(`IGST: ₹${inter.igst}, Total: ₹${inter.totalPrice}`);
-// Output: IGST: ₹1800, Total: ₹11800
+console.log(`IGST: â‚¹${inter.igst}, Total: â‚¹${inter.totalPrice}`);
+// Output: IGST: â‚¹1800, Total: â‚¹11800
 ```
 
 **Q4.** The FRBM Act was enacted in which year?
@@ -645,13 +645,13 @@ The Skill India Mission is implemented by the Ministry of Skill Development & En
 
 **Q6.** What is the maximum loan amount under the Mudra Yojana's Tarun category?
 
-a) ₹50,000 b) ₹5 lakh c) ₹10 lakh d) ₹25 lakh
+a) â‚¹50,000 b) â‚¹5 lakh c) â‚¹10 lakh d) â‚¹25 lakh
 
 <details>
 <summary>Answer</summary>
-**Answer:** c) ₹10 lakh
+**Answer:** c) â‚¹10 lakh
 
-Mudra scheme categories: Shishu (up to ₹50,000), Kishore (₹50,001 to ₹5 lakh), Tarun (₹5,00,001 to ₹10 lakh).
+Mudra scheme categories: Shishu (up to â‚¹50,000), Kishore (â‚¹50,001 to â‚¹5 lakh), Tarun (â‚¹5,00,001 to â‚¹10 lakh).
 </details>
 
 ---
@@ -705,8 +705,8 @@ function calculateIncomeTax(income: number, deductions: number): TaxCalculation 
 }
 
 const taxResult = calculateIncomeTax(1200000, 50000);
-console.log(`Taxable Income: ₹${taxResult.taxableIncome}, Total Tax: ₹${taxResult.totalTax}`);
-// Output: Taxable Income: ₹1150000, Total Tax: ₹65260
+console.log(`Taxable Income: â‚¹${taxResult.taxableIncome}, Total Tax: â‚¹${taxResult.totalTax}`);
+// Output: Taxable Income: â‚¹1150000, Total Tax: â‚¹65260
 ```
 
 **Q7.** What is the health and education cess rate on income tax in India?
@@ -724,13 +724,13 @@ Health and Education Cess is levied at 4% of the total income tax (including sur
 
 **Q8.** Ayushman Bharat PM-JAY provides health insurance cover of:
 
-a) ₹1 lakh per family b) ₹3 lakh per family c) ₹5 lakh per family d) ₹10 lakh per family
+a) â‚¹1 lakh per family b) â‚¹3 lakh per family c) â‚¹5 lakh per family d) â‚¹10 lakh per family
 
 <details>
 <summary>Answer</summary>
-**Answer:** c) ₹5 lakh per family
+**Answer:** c) â‚¹5 lakh per family
 
-PM-JAY provides health insurance coverage of ₹5 lakh per family per year for secondary and tertiary care hospitalisation to over 12 crore families (bottom 40% of population).
+PM-JAY provides health insurance coverage of â‚¹5 lakh per family per year for secondary and tertiary care hospitalisation to over 12 crore families (bottom 40% of population).
 </details>
 
 ---
@@ -750,13 +750,13 @@ The Constitution (101st Amendment) Act, 2016 paved the way for the Goods and Ser
 
 **Q10.** Under PM Kisan Samman Nidhi, how much financial assistance is provided per year?
 
-a) ₹2,000 b) ₹6,000 c) ₹12,000 d) ₹18,000
+a) â‚¹2,000 b) â‚¹6,000 c) â‚¹12,000 d) â‚¹18,000
 
 <details>
 <summary>Answer</summary>
-**Answer:** b) ₹6,000
+**Answer:** b) â‚¹6,000
 
-PM-KISAN provides ₹6,000 per year to eligible farmer families in three equal instalments of ₹2,000 each, directly transferred to Aadhaar-linked bank accounts.
+PM-KISAN provides â‚¹6,000 per year to eligible farmer families in three equal instalments of â‚¹2,000 each, directly transferred to Aadhaar-linked bank accounts.
 </details>
 
 ---
@@ -796,10 +796,10 @@ function analyseDisinvestment(
 }
 
 const dis = analyseDisinvestment(1000000, 75, 50000, 150);
-console.log(`Government stake: ${dis.governmentStakeBefore}% → ${dis.governmentStakeAfter}%`);
-console.log(`Realisation: ₹${dis.totalRealisation}`);
-// Output: Government stake: 75% → 70%
-// Output: Realisation: ₹7500000
+console.log(`Government stake: ${dis.governmentStakeBefore}% â†’ ${dis.governmentStakeAfter}%`);
+console.log(`Realisation: â‚¹${dis.totalRealisation}`);
+// Output: Government stake: 75% â†’ 70%
+// Output: Realisation: â‚¹7500000
 ```
 
 **Q11.** Which of the following is a revenue receipt for the government?
@@ -823,7 +823,7 @@ a) Women only b) SC/ST and Women c) All rural youth d) Minorities only
 <summary>Answer</summary>
 **Answer:** b) SC/ST and Women
 
-Stand-Up India (2016) provides bank loans from ₹10 lakh to ₹1 crore to at least one SC/ST borrower and one woman borrower per bank branch for setting up greenfield enterprises.
+Stand-Up India (2016) provides bank loans from â‚¹10 lakh to â‚¹1 crore to at least one SC/ST borrower and one woman borrower per bank branch for setting up greenfield enterprises.
 </details>
 
 ---
@@ -836,7 +836,7 @@ a) 3% b) 4% c) 6.5% d) 5%
 <summary>Answer</summary>
 **Answer:** c) 6.5%
 
-Under CLSS (Credit Linked Subsidy Scheme) component of PMAY-U, EWS/LIG categories get an interest subsidy of 6.5% on home loans up to ₹6 lakh.
+Under CLSS (Credit Linked Subsidy Scheme) component of PMAY-U, EWS/LIG categories get an interest subsidy of 6.5% on home loans up to â‚¹6 lakh.
 </details>
 
 ---
@@ -905,7 +905,7 @@ console.log(`FD/GDP: ${health.fdToGdpPercent}% (Target: 4.5%, Met: ${health.frbm
 
 **Q16.** Which of the following is NOT a feature of the PM Mudra Yojana?
 
-a) Loans up to ₹10 lakh b) No collateral required c) Loans only for agricultural activities d) Three categories: Shishu, Kishore, Tarun
+a) Loans up to â‚¹10 lakh b) No collateral required c) Loans only for agricultural activities d) Three categories: Shishu, Kishore, Tarun
 
 <details>
 <summary>Answer</summary>
@@ -950,20 +950,20 @@ a) 5% b) 12% c) 18% d) 28%
 <summary>Answer</summary>
 **Answer:** c) 18%
 
-AC restaurants attract 18% GST (9% CGST + 9% SGST). Non-AC restaurants are at 12%. Hotels with room tariffs above ₹7,500 attract 18%.
+AC restaurants attract 18% GST (9% CGST + 9% SGST). Non-AC restaurants are at 12%. Hotels with room tariffs above â‚¹7,500 attract 18%.
 </details>
 
 ---
 
 **Q20.** The term "Primary Deficit" is calculated as:
 
-a) Revenue Deficit — Interest Payments b) Fiscal Deficit — Interest Payments c) Total Expenditure — Total Receipts d) Revenue Expenditure — Revenue Receipts
+a) Revenue Deficit â€” Interest Payments b) Fiscal Deficit â€” Interest Payments c) Total Expenditure â€” Total Receipts d) Revenue Expenditure â€” Revenue Receipts
 
 <details>
 <summary>Answer</summary>
-**Answer:** b) Fiscal Deficit — Interest Payments
+**Answer:** b) Fiscal Deficit â€” Interest Payments
 
-Primary Deficit = Fiscal Deficit — Net Interest Payments. It shows the government's borrowing excluding interest obligations on past debt.
+Primary Deficit = Fiscal Deficit â€” Net Interest Payments. It shows the government's borrowing excluding interest obligations on past debt.
 </details>
 
 ---
@@ -1030,7 +1030,7 @@ console.log(`Underutilized: ${analysis.underutilizedSectors.join(", ")}`);
 
 ---
 
-### 4.6 Public Finance — Nature and Scope
+### 4.6 Public Finance â€” Nature and Scope
 
 **Public Finance** is the study of government's income and expenditure activities and their impact on the economy.
 
@@ -1076,7 +1076,7 @@ The **Canons of Taxation** were laid down by **Adam Smith** in his book *"The We
 
 | Canon | Description | Adam Smith's Original |
 |-------|-------------|-----------------------|
-| **Canon of Equity** | Taxes should be based on ability to pay — rich pay more | Yes |
+| **Canon of Equity** | Taxes should be based on ability to pay â€” rich pay more | Yes |
 | **Canon of Certainty** | Taxpayer must know how much, when, and how to pay | Yes |
 | **Canon of Convenience** | Method and timing of payment should be convenient | Yes |
 | **Canon of Economy** | Cost of collection should be less than revenue collected | Yes |
@@ -1103,11 +1103,11 @@ The **Canons of Taxation** were laid down by **Adam Smith** in his book *"The We
 |---------|---------|---------|
 | **Impact of Tax** | Who pays the tax initially (point of levy) | GST paid by manufacturer/seller |
 | **Incidence of Tax** | Who ultimately bears the burden | GST shifted to final consumer |
-| **Shifting of Tax** | Process of transferring tax burden | Manufacturer adds GST to price → consumer pays |
-| **Forward Shifting** | Burden shifted forward (supplier → consumer) | Excise duty included in product price |
-| **Backward Shifting** | Burden shifted backward (buyer → seller/producer) | Demanding lower price due to tax |
+| **Shifting of Tax** | Process of transferring tax burden | Manufacturer adds GST to price â†’ consumer pays |
+| **Forward Shifting** | Burden shifted forward (supplier â†’ consumer) | Excise duty included in product price |
+| **Backward Shifting** | Burden shifted backward (buyer â†’ seller/producer) | Demanding lower price due to tax |
 
-### 4.9 Public Expenditure — Canons and Classification
+### 4.9 Public Expenditure â€” Canons and Classification
 
 **Canons of Public Expenditure** (Findlay Shirras):
 
@@ -1117,7 +1117,7 @@ The **Canons of Taxation** were laid down by **Adam Smith** in his book *"The We
 | **Canon of Economy** | No wasteful or extravagant spending |
 | **Canon of Sanction** | All expenditure must have proper legal authorisation |
 | **Canon of Surplus** | Avoid deficit financing wherever possible |
-| **Canon of Elasticity** | Expenditure should be flexible — increase in crises, decrease in normal times |
+| **Canon of Elasticity** | Expenditure should be flexible â€” increase in crises, decrease in normal times |
 
 **Classification of Public Expenditure:**
 
@@ -1128,7 +1128,7 @@ The **Canons of Taxation** were laid down by **Adam Smith** in his book *"The We
 | **By Impact** | Revenue (consumption, recurring) vs Capital (asset-creating) |
 | **By Authority** | Central, State, Local |
 
-### 4.10 Public Debt — Internal vs External
+### 4.10 Public Debt â€” Internal vs External
 
 **Public Debt** refers to borrowings by the government from internal and external sources.
 
@@ -1154,7 +1154,7 @@ flowchart TD
 
 | Aspect | Internal Debt | External Debt |
 |--------|---------------|---------------|
-| **Currency** | Domestic currency (₹) | Foreign currency ($, €, ¥) |
+| **Currency** | Domestic currency (â‚¹) | Foreign currency ($, â‚¬, Â¥) |
 | **Lenders** | Domestic institutions and citizens | Foreign governments, multilateral agencies |
 | **Interest outflow** | Within the country (transfer) | Outside the country (drain) |
 | **Risk** | No exchange rate risk | Exchange rate risk (depreciation increases burden) |
@@ -1203,22 +1203,22 @@ flowchart TD
 | **Preparation** | August - January | Ministry of Finance prepares estimates with inputs from all ministries |
 | **Presentation** | February 1 | Finance Minister presents Budget in Lok Sabha (since 2017, advanced from February 28) |
 | **General Discussion** | 3-4 days post-presentation | MPs discuss broad principles and policies |
-| **Voting on Demands** | March / April | Guillotine — all outstanding demands are voted together without discussion |
-| **Appropriation Bill** | Before March 31 | Article 114 — authorises withdrawal of money from Consolidated Fund |
-| **Finance Bill** | By March 31 | Article 110 — contains tax proposals |
+| **Voting on Demands** | March / April | Guillotine â€” all outstanding demands are voted together without discussion |
+| **Appropriation Bill** | Before March 31 | Article 114 â€” authorises withdrawal of money from Consolidated Fund |
+| **Finance Bill** | By March 31 | Article 110 â€” contains tax proposals |
 | **Audit** | After implementation | Comptroller and Auditor General (CAG) audits accounts (Article 151) |
 
 ### 4.12 Comparison: Direct vs Indirect Taxes
 
 | Aspect | Direct Tax | Indirect Tax |
 |--------|-----------|--------------|
-| **Incidence** | Cannot be shifted — paid directly by taxpayer | Can be shifted — ultimately borne by consumer |
+| **Incidence** | Cannot be shifted â€” paid directly by taxpayer | Can be shifted â€” ultimately borne by consumer |
 | **Examples** | Income Tax, Corporation Tax, Capital Gains Tax | GST, Customs Duty, Excise Duty |
 | **Administration** | CBDT (Central Board of Direct Taxes) | CBIC (Central Board of Indirect Taxes and Customs) |
-| **Equity** | Progressive — based on ability to pay | Regressive — uniform rate regardless of income |
+| **Equity** | Progressive â€” based on ability to pay | Regressive â€” uniform rate regardless of income |
 | **Inflationary impact** | Reduces disposable income (anti-inflationary) | Increases prices (potentially inflationary) |
-| **Compliance cost** | Higher — requires detailed record-keeping | Lower — collected at point of sale |
-| **Tax evasion** | Higher — under-reporting of income | Lower — embedded in price |
+| **Compliance cost** | Higher â€” requires detailed record-keeping | Lower â€” collected at point of sale |
+| **Tax evasion** | Higher â€” under-reporting of income | Lower â€” embedded in price |
 | **Convenience** | Paid annually/lump-sum | Paid in small amounts with each purchase |
 | **India's share** | ~55% of total tax revenue | ~45% of total tax revenue |
 | **Base** | Income, wealth, profits | Consumption, production, trade |
@@ -1279,10 +1279,10 @@ function calculateDebtServicing(
 }
 
 const debt = calculateDebtServicing(15000000, 95, 5, 7.2, 4.5, 35000000, 4200000);
-console.log(`Internal: ₹${debt.internalDebt}, External: ₹${debt.externalDebt}`);
-console.log(`Interest outflow: ₹${debt.annualInterestOutflow} Cr, Debt/GDP: ${debt.debtToGdpRatio}%`);
-// Output: Internal: ₹14250000, External: ₹750000
-// Output: Interest outflow: ₹1066500 Cr, Debt/GDP: 42.86%
+console.log(`Internal: â‚¹${debt.internalDebt}, External: â‚¹${debt.externalDebt}`);
+console.log(`Interest outflow: â‚¹${debt.annualInterestOutflow} Cr, Debt/GDP: ${debt.debtToGdpRatio}%`);
+// Output: Internal: â‚¹14250000, External: â‚¹750000
+// Output: Interest outflow: â‚¹1066500 Cr, Debt/GDP: 42.86%
 ```
 
 ---
@@ -1290,14 +1290,14 @@ console.log(`Interest outflow: ₹${debt.annualInterestOutflow} Cr, Debt/GDP: ${
 ## Summary
 
 - **PM Jan Dhan Yojana** (2014) set a Guinness World Record for most bank accounts opened in a week (over 1.5 crore). It remains the world's largest financial inclusion programme.
-- **PM Mudra Yojana** (2015) provides collateral-free loans up to ₹10 lakh in three categories: Shishu, Kishore, Tarun.
-- **Ayushman Bharat** (2018) is the world's largest health insurance scheme, covering 12 crore+ families with ₹5 lakh cover each.
-- **Union Budget** is presented under Article 112. **Fiscal Deficit** = Total Expenditure — Total Receipts (excl. borrowings). **Revenue Deficit** = Revenue Expenditure — Revenue Receipts.
+- **PM Mudra Yojana** (2015) provides collateral-free loans up to â‚¹10 lakh in three categories: Shishu, Kishore, Tarun.
+- **Ayushman Bharat** (2018) is the world's largest health insurance scheme, covering 12 crore+ families with â‚¹5 lakh cover each.
+- **Union Budget** is presented under Article 112. **Fiscal Deficit** = Total Expenditure â€” Total Receipts (excl. borrowings). **Revenue Deficit** = Revenue Expenditure â€” Revenue Receipts.
 - **FRBM Act (2003)** sets fiscal discipline targets. Current target: Fiscal deficit of 4.5% of GDP by FY 2025-26.
 - **Direct taxes** (income tax, corporation tax) are administered by CBDT. **Indirect taxes** (GST, customs) are administered by CBIC.
-- **GST (July 1, 2017)** — One nation, one tax. Rate slabs: 0%, 5%, 12%, 18%, 28%. CGST+SGST for intra-state, IGST for inter-state.
+- **GST (July 1, 2017)** â€” One nation, one tax. Rate slabs: 0%, 5%, 12%, 18%, 28%. CGST+SGST for intra-state, IGST for inter-state.
 - **Swachh Bharat Mission** (2014) achieved ODF India status in 2019. **Digital India** (2015) focuses on digital infrastructure, governance, and empowerment.
-- **Primary Deficit** = Fiscal Deficit — Interest Payments. It excludes the interest burden from the deficit calculation.
+- **Primary Deficit** = Fiscal Deficit â€” Interest Payments. It excludes the interest burden from the deficit calculation.
 
 ---
 
@@ -1305,12 +1305,12 @@ console.log(`Interest outflow: ₹${debt.annualInterestOutflow} Cr, Debt/GDP: ${
 
 | Scheme / Concept | Launch / Year | Key Fact | Mnemonic |
 |-----------------|---------------|----------|----------|
-| PM Jan Dhan Yojana | Aug 28, 2014 | Zero-balance account + ₹10K OD | "Jan = ₹10K OD" |
+| PM Jan Dhan Yojana | Aug 28, 2014 | Zero-balance account + â‚¹10K OD | "Jan = â‚¹10K OD" |
 | PM Mudra Yojana | Apr 8, 2015 | Shishu (50K), Kishore (5L), Tarun (10L) | "S-K-T = Small-Kilo-Ten" |
-| Stand-Up India | Apr 5, 2016 | SC/ST + Women, ₹10L-1Cr | "Stand for SC/ST + Woman" |
-| Start-up India | Jan 16, 2016 | Tax holiday, Fund of Funds, ≤ 10 yrs old | "16 Jan = New Start" |
+| Stand-Up India | Apr 5, 2016 | SC/ST + Women, â‚¹10L-1Cr | "Stand for SC/ST + Woman" |
+| Start-up India | Jan 16, 2016 | Tax holiday, Fund of Funds, â‰¤ 10 yrs old | "16 Jan = New Start" |
 | PM Fasal Bima | Jan 13, 2016 | 2% Kharif, 1.5% Rabi, 5% Commercial | "Kharif = 2 (bigger crop)" |
-| Ayushman Bharat | Sep 23, 2018 | ₹5L cover, 12 Cr families | "5 lakh per family" |
+| Ayushman Bharat | Sep 23, 2018 | â‚¹5L cover, 12 Cr families | "5 lakh per family" |
 | PM Awas Yojana | Jun 25, 2015 | CLSS: 6.5% subsidy for EWS/LIG | "Awas = House subsidy 6.5%" |
 | Ujjwala Yojana | May 1, 2016 | Free LPG to BPL women | "Ujjwala = LPG for women" |
 | GST Launch | July 1, 2017 | 101st Amendment, 5 slabs | "GST = 1-7-2017" |
@@ -1322,48 +1322,48 @@ console.log(`Interest outflow: ₹${debt.annualInterestOutflow} Cr, Debt/GDP: ${
 
 **Q1.** Under PM-KISAN, how much annual income support is provided to eligible farmers?
 
-a) ₹2,000 b) ₹4,000 c) ₹6,000 d) ₹12,000
+a) â‚¹2,000 b) â‚¹4,000 c) â‚¹6,000 d) â‚¹12,000
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** c) ₹6,000
+**Answer:** c) â‚¹6,000
 
-PM-KISAN provides ₹6,000 per year in three equal instalments of ₹2,000 each to farmers with landholding up to 2 hectares.
+PM-KISAN provides â‚¹6,000 per year in three equal instalments of â‚¹2,000 each to farmers with landholding up to 2 hectares.
 </details>
 
 ---
 
 **Q2.** Fiscal Deficit is calculated as:
 
-a) Revenue Expenditure — Revenue Receipts
-b) Total Expenditure — Total Receipts (excluding borrowings)
-c) Total Revenue — Total Expenditure
+a) Revenue Expenditure â€” Revenue Receipts
+b) Total Expenditure â€” Total Receipts (excluding borrowings)
+c) Total Revenue â€” Total Expenditure
 d) Interest Payments + Revenue Deficit
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** b) Total Expenditure — Total Receipts (excluding borrowings)
+**Answer:** b) Total Expenditure â€” Total Receipts (excluding borrowings)
 
-Fiscal deficit = Total expenditure — (Revenue receipts + Capital receipts excluding borrowings). It represents the government's total borrowing requirement.
+Fiscal deficit = Total expenditure â€” (Revenue receipts + Capital receipts excluding borrowings). It represents the government's total borrowing requirement.
 </details>
 
 ---
 
 **Q3.** The Primary Deficit equals:
 
-a) Revenue Deficit — Capital Expenditure
-b) Fiscal Deficit — Interest Payments
-c) Total Expenditure — Interest Payments
-d) Revenue Deficit — Interest Payments
+a) Revenue Deficit â€” Capital Expenditure
+b) Fiscal Deficit â€” Interest Payments
+c) Total Expenditure â€” Interest Payments
+d) Revenue Deficit â€” Interest Payments
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** b) Fiscal Deficit — Interest Payments
+**Answer:** b) Fiscal Deficit â€” Interest Payments
 
-Primary Deficit = Fiscal Deficit — Net Interest Payments. It shows borrowing requirements excluding interest obligations on past debt.
+Primary Deficit = Fiscal Deficit â€” Net Interest Payments. It shows borrowing requirements excluding interest obligations on past debt.
 </details>
 
 ---
@@ -1489,7 +1489,7 @@ CAG submits audit reports to the President under Article 151, which are then pla
    a) August 15, 2014 b) July 1, 2015 c) January 16, 2016 d) October 2, 2014
 
 2. Under PM Mudra Yojana, the Kishore category loan limit is:
-   a) Up to ₹50,000 b) ₹50,001 to ₹1 lakh c) ₹50,001 to ₹5 lakh d) ₹5,00,001 to ₹10 lakh
+   a) Up to â‚¹50,000 b) â‚¹50,001 to â‚¹1 lakh c) â‚¹50,001 to â‚¹5 lakh d) â‚¹5,00,001 to â‚¹10 lakh
 
 3. The FRBM Act was enacted in which year?
    a) 2000 b) 2003 c) 2010 d) 2015
@@ -1504,31 +1504,31 @@ CAG submits audit reports to the President under Article 151, which are then pla
    a) Intra-state supplies b) Inter-state supplies c) Local sales d) Export of services
 
 7. Under Stand-Up India, the maximum loan amount is:
-   a) ₹5 lakh b) ₹10 lakh c) ₹50 lakh d) ₹1 crore
+   a) â‚¹5 lakh b) â‚¹10 lakh c) â‚¹50 lakh d) â‚¹1 crore
 
 8. PM Ujjwala Yojana provides free LPG connections to:
    a) All rural households b) Women from BPL families c) All senior citizens d) Farmers only
 
 9. The Ayushman Bharat scheme provides health cover of:
-   a) ₹1 lakh b) ₹2 lakh c) ₹3 lakh d) ₹5 lakh
+   a) â‚¹1 lakh b) â‚¹2 lakh c) â‚¹3 lakh d) â‚¹5 lakh
 
 10. Revenue Deficit = ?
-    a) Total Expenditure — Total Receipts
-    b) Revenue Expenditure — Revenue Receipts
-    c) Capital Expenditure — Capital Receipts
-    d) Fiscal Deficit — Interest Payments
+    a) Total Expenditure â€” Total Receipts
+    b) Revenue Expenditure â€” Revenue Receipts
+    c) Capital Expenditure â€” Capital Receipts
+    d) Fiscal Deficit â€” Interest Payments
 
 ### Section B: Fill in the Blanks
 
-11. PM Jan Dhan Yojana provides an overdraft facility of up to ₹_________ after 6 months of satisfactory operation.
+11. PM Jan Dhan Yojana provides an overdraft facility of up to â‚¹_________ after 6 months of satisfactory operation.
 12. The three categories of Mudra loans are Shishu, _________, and Tarun.
 13. Under GST, intrastate supply attracts _________ and SGST components.
 14. The Health and Education Cess on income tax is _________%.
 15. The N.K. Singh Committee was related to the _________ Act review.
-16. PMAY-U provides interest subsidy of _________% to EWS/LIG categories on home loans up to ₹6 lakh.
+16. PMAY-U provides interest subsidy of _________% to EWS/LIG categories on home loans up to â‚¹6 lakh.
 17. The Skill India Mission was launched on _________ 2015.
 18. Atmanirbhar Bharat package was announced in _________ 2020.
-19. The PM Kisan Samman Nidhi provides financial benefit of ₹_________ per year.
+19. The PM Kisan Samman Nidhi provides financial benefit of â‚¹_________ per year.
 20. Under the FRBM escape clause, the government can exceed deficit target by _________% of GDP.
 21. Adam Smith laid down four canons of taxation: Equity, Certainty, _________, and Economy.
 22. The difference between impact of tax and _________ of tax is the process of tax shifting.
@@ -1538,7 +1538,7 @@ CAG submits audit reports to the President under Article 151, which are then pla
 
 ### Section C: True or False
 
-26. PM Jan Dhan Yojana provides a free accident insurance cover of ₹1 lakh. (True/False)
+26. PM Jan Dhan Yojana provides a free accident insurance cover of â‚¹1 lakh. (True/False)
 27. Under GST, the rate for essential food items like milk and eggs is 5%. (True/False)
 28. The Mudra Yojana provides collateral-free loans. (True/False)
 29. PM Fasal Bima Yojana covers both Kharif and Rabi crops. (True/False)
@@ -1558,15 +1558,15 @@ CAG submits audit reports to the President under Article 151, which are then pla
 
 | Q | Answer | Q | Answer | Q | Answer | Q | Answer | Q | Answer |
 |---|--------|---|--------|---|--------|---|--------|---|--------|
-| 1 | b (July 1, 2015) | 2 | c (₹50,001 to ₹5 lakh) | 3 | b (2003) | 4 | b (Mahatma Gandhi) | 5 | c (4.5%) |
-| 6 | b (Inter-state supplies) | 7 | d (₹1 crore) | 8 | b (Women from BPL families) | 9 | d (₹5 lakh) | 10 | b (Rev Exp — Rev Rec) |
-| 11 | ₹10,000 | 12 | Kishore | 13 | CGST | 14 | 4% | 15 | FRBM |
-| 16 | 6.5% | 17 | July 15 | 18 | May | 19 | ₹6,000 | 20 | 0.5% |
+| 1 | b (July 1, 2015) | 2 | c (â‚¹50,001 to â‚¹5 lakh) | 3 | b (2003) | 4 | b (Mahatma Gandhi) | 5 | c (4.5%) |
+| 6 | b (Inter-state supplies) | 7 | d (â‚¹1 crore) | 8 | b (Women from BPL families) | 9 | d (â‚¹5 lakh) | 10 | b (Rev Exp â€” Rev Rec) |
+| 11 | â‚¹10,000 | 12 | Kishore | 13 | CGST | 14 | 4% | 15 | FRBM |
+| 16 | 6.5% | 17 | July 15 | 18 | May | 19 | â‚¹6,000 | 20 | 0.5% |
 | 21 | Convenience | 22 | incidence | 23 | 95% | 24 | February 1 | 25 | 114 |
-| 26 | False (₹2 lakh) | 27 | False (0% Nil) | 28 | True | 29 | True | 30 | False (capital receipt) |
-| 31 | True | 32 | False (equal — CGST = SGST) | 33 | True | 34 | False (Fiscal — Interest) | 35 | True |
+| 26 | False (â‚¹2 lakh) | 27 | False (0% Nil) | 28 | True | 29 | True | 30 | False (capital receipt) |
+| 31 | True | 32 | False (equal â€” CGST = SGST) | 33 | True | 34 | False (Fiscal â€” Interest) | 35 | True |
 | 36 | True | 37 | False (on the consumer) | 38 | False (~95% internal) | 39 | True | 40 | True |
 
 ---
 
-*Proceed to Chapter 5 — Banking Terminology & Acts*
+*Proceed to Chapter 5 â€” Banking Terminology & Acts*

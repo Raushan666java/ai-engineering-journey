@@ -1,4 +1,4 @@
-# Chapter 2: Missing Data and Caselet DI
+﻿# Chapter 2: Missing Data and Caselet DI
 
 ## Learning Objectives
 
@@ -13,16 +13,16 @@ By the end of this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/data-analysis-interpretation/02-missing-data-caselet-di/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -61,9 +61,9 @@ flowchart TD
     B -->|Row Total Given| C1[Use Row Total - Sum of Known Values]
     B -->|Column Total Given| C2[Use Column Total - Sum of Known Values]
     B -->|Ratio Given| C3[Express Unknowns in Ratio Terms]
-    B -->|Percentage Given| C4[Percentage � Total / 100]
-    B -->|Average Given| C5[Average � Count - Sum of Known]
-    B -->|Growth Rate Given| C6[Previous Value � (1 + Growth Rate)]
+    B -->|Percentage Given| C4[Percentage ï¿½ Total / 100]
+    B -->|Average Given| C5[Average ï¿½ Count - Sum of Known]
+    B -->|Growth Rate Given| C6[Previous Value ï¿½ (1 + Growth Rate)]
     
     C1 --> D[Form Equation]
     C2 --> D
@@ -136,7 +136,7 @@ When multiple values are missing, you must set up equations:
 
 **Case 2: Two unknowns with ratio**
 - x : y = a : b
-- x = (a/b) � y
+- x = (a/b) ï¿½ y
 - Substitute into total equation
 
 **Case 3: Percentage relationships**
@@ -182,12 +182,12 @@ flowchart LR
 | A | 200 | 40% | 50,000 | 1,00,00,000 |
 | B | 180 | 36% | 45,000 | 81,00,000 |
 | C | 120 | 24% | 40,000 | 48,00,000 |
-| **Total** | **500** | **100%** | **�** | **2,29,00,000** |
+| **Total** | **500** | **100%** | **ï¿½** | **2,29,00,000** |
 
 **Derivation:**
 - A employees = 40% of 500 = 200
 - B + C = 500 - 200 = 300
-- B = 1.5 � C (50% more)
+- B = 1.5 ï¿½ C (50% more)
 - 1.5C + C = 300 ? 2.5C = 300 ? C = 120, B = 180
 
 ### 2.4 Caselet Types
@@ -217,7 +217,7 @@ Describe revenue, profit, expenses, and investment data across entities or time 
 - "Revenue is distributed in the ratio 3:2:1 among three products"
 
 #### Type 4: Mixed Caselets
-Combine multiple types of data � demographic + financial, or production + sales.
+Combine multiple types of data ï¿½ demographic + financial, or production + sales.
 
 ### 2.5 Ratio and Proportion in Missing Data
 
@@ -225,15 +225,15 @@ Ratios are powerful tools for recovering missing values.
 
 **Key ratio concepts:**
 - **Part-to-part ratio:** A:B = 3:2 means A has 3 parts, B has 2 parts
-- **Part-to-whole ratio:** A:Total = 3:5 ? A = (3/5) � Total
+- **Part-to-whole ratio:** A:Total = 3:5 ? A = (3/5) ï¿½ Total
 - **Chain ratio:** A:B = 2:3, B:C = 4:5 ? A:B:C = 8:12:15
 
 **Using ratios with totals:**
 If A:B:C = 2:3:5 and total = 200:
 - Total parts = 2 + 3 + 5 = 10
-- A = (2/10) � 200 = 40
-- B = (3/10) � 200 = 60
-- C = (5/10) � 200 = 100
+- A = (2/10) ï¿½ 200 = 40
+- B = (3/10) ï¿½ 200 = 60
+- C = (5/10) ï¿½ 200 = 100
 
 ### 2.6 Solving Through Equation Formulation
 
@@ -248,10 +248,10 @@ When a caselet involves unknowns, the process is:
 
 | Relationship | Equation |
 |-------------|----------|
-| A is x% more than B | A = B � (1 + x/100) |
-| A is x% less than B | A = B � (1 - x/100) |
+| A is x% more than B | A = B ï¿½ (1 + x/100) |
+| A is x% less than B | A = B ï¿½ (1 - x/100) |
 | A : B = m : n | A/B = m/n |
-| A = x% of total | A = (x/100) � Total |
+| A = x% of total | A = (x/100) ï¿½ Total |
 | Total = Sum of parts | A + B + C = Total |
 
 ### 2.6a Advanced Caselet Strategies
@@ -262,8 +262,8 @@ Beyond simple extraction, many caselets require inferring relationships that are
 When a caselet gives relative comparisons without absolute values, assume a base value (usually 100 or x) and work with multiples.
 
 **Example:** Company A's revenue is 30% more than B. B's revenue is 25% more than C. C's revenue is ?80 lakhs.
-- Let C = 80. Then B = 80 � 1.25 = 100. Then A = 100 � 1.30 = 130.
-- Without the base value for C, we would set C = x, B = 1.25x, A = 1.30 � 1.25x = 1.625x.
+- Let C = 80. Then B = 80 ï¿½ 1.25 = 100. Then A = 100 ï¿½ 1.30 = 130.
+- Without the base value for C, we would set C = x, B = 1.25x, A = 1.30 ï¿½ 1.25x = 1.625x.
 
 **Strategy 2: Chain of Relationships**
 When a caselet gives A > B, B > C, C > D type relationships, build a chain and use the extreme values as anchors.
@@ -272,7 +272,7 @@ When a caselet gives A > B, B > C, C > D type relationships, build a chain and u
 Work backwards from the final value through each percentage change to find the initial value.
 
 **Example:** A price increased by 20%, then decreased by 10%, resulting in ?1,080. Original price?
-- Let original = x. After increase: x � 1.20. After decrease: x � 1.20 � 0.90 = 1.08x.
+- Let original = x. After increase: x ï¿½ 1.20. After decrease: x ï¿½ 1.20 ï¿½ 0.90 = 1.08x.
 - 1.08x = 1,080 ? x = ?1,000.
 
 **Strategy 4: Venn Diagram Approach for Overlapping Data**
@@ -292,7 +292,7 @@ For complex caselets with 5+ entities and multiple relationships:
 1. **Create an entity-relationship map** before building the table
 2. **Colour-code** known vs unknown values
 3. **Track units** religiously (lakhs vs crores vs thousands)
-4. **Build equations incrementally** � start with the most constrained relationships
+4. **Build equations incrementally** ï¿½ start with the most constrained relationships
 5. **Cross-verify** by plugging answers back into the original caselet text
 
 ### 2.6b Equation Types in Caselet DI
@@ -305,7 +305,7 @@ Caselet equations typically fall into these categories:
 | Linear (two variables) | A = B + 10, A + B = 50 | Substitution: B + 10 + B = 50 ? B = 20, A = 30 |
 | Ratio equation | A/B = 3/4, A + B = 42 | A = 3k, B = 4k, 7k = 42 ? k = 6, A = 18, B = 24 |
 | Percentage equation | A = 120% of B, B = 80% of C | A = 1.2B, B = 0.8C ? A = 0.96C |
-| Growth equation | A increases by 10% each year | A_n = A_0 � (1.10)^n |
+| Growth equation | A increases by 10% each year | A_n = A_0 ï¿½ (1.10)^n |
 | Mixture equation | x% of A + y% of B = z% of (A+B) | Use alligation or weighted average |
 
 #### The Alligation Method for Mixtures in Caselets
@@ -385,11 +385,11 @@ Typically, 4-7 questions follow a single caselet. The questions progress from:
 
 A critical skill for caselet DI is rapid conversion from paragraph to table. Practice with this drill:
 
-**Step 1: Scan** � Read the caselet at 2� speed to identify entities (usually 3-5) and variables (usually 2-4)
-**Step 2: Table skeleton** � Draw the table with entities as rows and variables as columns
-**Step 3: Fill direct values** � Enter any explicit numbers
-**Step 4: Note relationships** � Write down each relationship as an equation
-**Step 5: Solve** � Starting with the most constrained relationship, solve iteratively
+**Step 1: Scan** ï¿½ Read the caselet at 2ï¿½ speed to identify entities (usually 3-5) and variables (usually 2-4)
+**Step 2: Table skeleton** ï¿½ Draw the table with entities as rows and variables as columns
+**Step 3: Fill direct values** ï¿½ Enter any explicit numbers
+**Step 4: Note relationships** ï¿½ Write down each relationship as an equation
+**Step 5: Solve** ï¿½ Starting with the most constrained relationship, solve iteratively
 
 **Target time:** 90 seconds from reading to completed table.
 
@@ -397,7 +397,7 @@ A critical skill for caselet DI is rapid conversion from paragraph to table. Pra
 
 Read and convert within 90 seconds:
 
-"In a factory, there are three shifts � Morning, Evening, and Night. Total workers = 600. Morning shift has twice as many as Evening. Night shift has 50 fewer than Evening. The Morning shift produces 25 units per worker per day, Evening produces 20, and Night produces 15."
+"In a factory, there are three shifts ï¿½ Morning, Evening, and Night. Total workers = 600. Morning shift has twice as many as Evening. Night shift has 50 fewer than Evening. The Morning shift produces 25 units per worker per day, Evening produces 20, and Night produces 15."
 
 **Converted table (target for 90 seconds):**
 | Shift | Workers | Production per worker | Total Production |
@@ -405,9 +405,9 @@ Read and convert within 90 seconds:
 | Morning | 260 | 25 | 6,500 |
 | Evening | 130 | 20 | 2,600 |
 | Night | 80 | 15 | 1,200 |
-| Total | 470 | � | 10,300 |
+| Total | 470 | ï¿½ | 10,300 |
 
-Wait � these don't add to 600. Let me recalculate:
+Wait ï¿½ these don't add to 600. Let me recalculate:
 Let Evening = x. Morning = 2x. Night = x - 50.
 2x + x + (x - 50) = 600 ? 4x - 50 = 600 ? 4x = 650 ? x = 162.5.
 Morning = 325, Evening = 162.5, Night = 112.5. These are unusual but correct given the data.
@@ -427,11 +427,11 @@ Financial caselets often ask you to compute complex ratios:
 
 | Ratio | Formula | Interpretation |
 |-------|---------|---------------|
-| Profit Margin | Profit / Revenue � 100 | How much profit per rupee of revenue |
-| Expense Ratio | Expense / Revenue � 100 | What portion of revenue goes to expenses |
+| Profit Margin | Profit / Revenue ï¿½ 100 | How much profit per rupee of revenue |
+| Expense Ratio | Expense / Revenue ï¿½ 100 | What portion of revenue goes to expenses |
 | Debt-to-Equity | Total Debt / Shareholder Equity | Financial leverage |
 | Current Ratio | Current Assets / Current Liabilities | Short-term liquidity |
-| ROI | Profit / Investment � 100 | Return on investment |
+| ROI | Profit / Investment ï¿½ 100 | Return on investment |
 
 **Example caselet with financial ratios:**
 
@@ -460,7 +460,7 @@ Financial caselets often ask you to compute complex ratios:
 | Pitfall | Example | Why It's Dangerous |
 |---------|---------|-------------------|
 | Misreading "more than" | "A is 20% more than B" vs "A is 20% of B" | Different operations: multiply by 1.20 vs 0.20 |
-| Order of operations in chain percentages | "A increased by 10% then 20%" | 10% + 20% ? 30% compounded � actual = 32% |
+| Order of operations in chain percentages | "A increased by 10% then 20%" | 10% + 20% ? 30% compounded ï¿½ actual = 32% |
 | Assuming uniform distribution | "Total 500 split among 3 departments" | Not necessarily equal unless stated |
 | Ignoring units | Data in lakhs, question asks in crores | 1 crore = 100 lakhs |
 | Rounding errors in multi-step | Rounding intermediate values | Keep 2-3 decimal places for intermediate steps |
@@ -485,7 +485,7 @@ When a table has multiple constraints, the solution may require solving a system
 
 #### Pattern 1: Row and Column Totals Both Known
 
-Given a 3�3 table with row totals R1, R2, R3 and column totals C1, C2, C3, and the grand total G:
+Given a 3ï¿½3 table with row totals R1, R2, R3 and column totals C1, C2, C3, and the grand total G:
 
 If exactly 3 cells are missing (one per row and column), the system is fully determined.
 
@@ -510,8 +510,8 @@ When a table shows percentages but the base values are missing:
 **Example:** A company has three departments. The salary budget is distributed as: Dept A = 50%, Dept B = 30%, Dept C = 20%. The total salary budget is unknown, but Dept A's actual salary is ?30 lakhs.
 
 - Total salary = ?30 lakhs / 0.50 = ?60 lakhs
-- Dept B = 0.30 � ?60 lakhs = ?18 lakhs
-- Dept C = 0.20 � ?60 lakhs = ?12 lakhs
+- Dept B = 0.30 ï¿½ ?60 lakhs = ?18 lakhs
+- Dept C = 0.20 ï¿½ ?60 lakhs = ?12 lakhs
 
 #### Pattern 3: Sequential Growth with Missing Base
 
@@ -519,14 +519,14 @@ When growth rates are given but the base year value is missing, work backwards:
 
 **Example:** Sales in 2023 are ?138 lakhs. Growth was 15% in 2022 and 20% in 2023 over the previous year.
 
-- 2023 = 2022 � 1.20 ? 2022 = 138 / 1.20 = 115
-- 2022 = 2021 � 1.15 ? 2021 = 115 / 1.15 = 100
+- 2023 = 2022 ï¿½ 1.20 ? 2022 = 138 / 1.20 = 115
+- 2022 = 2021 ï¿½ 1.15 ? 2021 = 115 / 1.15 = 100
 
 #### Pattern 4: Constrained Optimization
 
 When finding missing values that maximise or minimise a particular quantity:
 
-**Example:** A 2�2 table with row totals 100 and 200, column totals 150 and 150. One cell value x minimises the sum of the other three cells.
+**Example:** A 2ï¿½2 table with row totals 100 and 200, column totals 150 and 150. One cell value x minimises the sum of the other three cells.
 
 - Table: [x, 100-x; 150-x, 200-(150-x)] = [x, 100-x; 150-x, 50+x]
 - All values must be = 0: x = 0, x = 100, x = 150, x = -50
@@ -554,7 +554,7 @@ If A:B = 2:3 and B:C = 4:5, find A:B:C:
 **Inverse Ratios:**
 If A:B = 3:2 and B:C = 6:5, find A:C:
 - A/B = 3/2, B/C = 6/5
-- A/C = (A/B) � (B/C) = (3/2) � (6/5) = 18/10 = 9/5
+- A/C = (A/B) ï¿½ (B/C) = (3/2) ï¿½ (6/5) = 18/10 = 9/5
 
 ### 2.10c Equation Solving Techniques for Caselet DI
 
@@ -784,7 +784,7 @@ const filled = solver.findMissingFromTotals(grid, rowTotals, colTotals);
 console.log("Filled Table:", filled);
 ```
 
-**Q1.** A table shows production data for three companies:\n\n| Company | 2021 | 2022 | 2023 |\n|---------|------|------|------|\n| A | 120 | 150 | ? |\n| B | 90 | 135 | 180 |\n| C | 110 | 165 | 220 |\n\nIf the total production of all three companies in 2023 is 600 units, what is the missing value?\n\na) 200\nb) 210\nc) 180\nd) 190\n\n<details>\n<summary>Answer</summary>\na) 200\n\nTotal 2023 = A_2023 + B_2023 + C_2023 = ? + 180 + 220 = 600\n? = 600 - 180 - 220 = 200.\n</details>\n\n---\n\n**Q2.** A caselet states: \"In a school, there are 800 students. The number of boys is 60% of the total. The number of girls in the science stream is 120. If 25% of the boys are in the science stream, how many girls are in the arts stream?\"\n\nFirst, what is the number of boys?\n\na) 320\nb) 480\nc) 500\nd) 400\n\n<details>\n<summary>Answer</summary>\nb) 480\n\nNumber of boys = 60% of 800 = 0.60 � 800 = 480.\n</details>\n\n---\n\n**Q3.** Continuing from Q2: How many girls are in the science stream?\n\na) 120\nb) 200\nc) 80\nd) 100\n\n<details>\n<summary>Answer</summary>\na) 120\n\nGiven directly in the caselet: \"The number of girls in the science stream is 120.\"\n</details>\n\n---\n\n**Q4.** Still continuing: How many boys are in the arts stream?\n\na) 360\nb) 240\nc) 480\nd) 120\n\n<details>\n<summary>Answer</summary>\na) 360\n\nBoys in science = 25% of 480 = 120\nBoys in arts = Total boys - Boys in science = 480 - 120 = 360.\n</details>\n\n---\n\n**Q5.** Table with two missing values:\n\n| Department | Employees | Male | Female |\n|------------|-----------|------|--------|\n| HR | 80 | 30 | 50 |\n| IT | ? | 60 | 40 |\n| Finance | 120 | ? | 70 |\n| Total | 300 | 150 | 150 |\n\nWhat is the number of employees in IT?\n\na) 80\nb) 100\nc) 90\nd) 110\n\n<details>\n<summary>Answer</summary>\nb) 100\n\nTotal employees = 300. Known: HR = 80, Finance = 120.\nIT = 300 - 80 - 120 = 100.\n</details>\n\n---\n\n**Q6.** From the same table, what is the number of males in Finance?\n\na) 60\nb) 40\nc) 50\nd) 70\n\n<details>\n<summary>Answer</summary>\nc) 50\n\nFinance: Total = 120, Female = 70\nMale = 120 - 70 = 50.\n</details>\n\n---\n\n**Q7.** A caselet: \"Three friends A, B, C invested in a business. A invested ?20,000 more than B. B invested ?10,000 less than C. Total investment is ?1,20,000.\" What is C's investment?\n\na) ?40,000\nb) ?50,000\nc) ?30,000\nd) ?60,000\n\n<details>\n<summary>Answer</summary>\na) ?40,000\n\nLet C = x. Then B = x - 10,000. A = B + 20,000 = x + 10,000.\nTotal: (x + 10,000) + (x - 10,000) + x = 1,20,000\n3x = 1,20,000 ? x = 40,000.\n</details>\n\n---\n\n**Q8.** A table of exports (?crores) has missing row totals:\n\n| Country | 2021 | 2022 | 2023 | Total |\n|---------|------|------|------|-------|\n| P | 80 | 95 | 105 | ? |\n| Q | 70 | 85 | ? | 240 |\n| R | ? | 75 | 90 | 230 |\n| Total | 230 | 255 | 270 | 755 |\n\nWhat is P's total?\n\na) 270\nb) 280\nc) 285\nd) 275\n\n<details>\n<summary>Answer</summary>\nb) 280\n\nP's total = 80 + 95 + 105 = 280.\n</details>\n\n---\n\n**Q9.** From the same table, what is R's export in 2021?\n\na) 85\nb) 80\nc) 90\nd) 75\n\n<details>\n<summary>Answer</summary>\nb) 80\n\nColumn total 2021 = 230. P_2021 = 80, Q_2021 = 70.\nR_2021 = 230 - 80 - 70 = 80.\n</details>\n\n---\n\n**Q10.** A caselet: \"The population of a town is 50,000. The ratio of males to females is 3:2. 40% of the males are literate. 60% of the females are literate.\" What is the total literate population?\n\na) 22,000\nb) 24,000\nc) 20,000\nd) 26,000\n\n<details>\n<summary>Answer</summary>\nb) 24,000\n\nMales = (3/5) � 50,000 = 30,000. Females = 20,000.\nLiterate males = 40% of 30,000 = 12,000.\nLiterate females = 60% of 20,000 = 12,000.\nTotal literate = 12,000 + 12,000 = 24,000.\n</details>\n\n---\n\n**Q11.** Two missing values in ratio:\n\n| Product | Revenue (?lakhs) |\n|---------|-----------------|\n| X | 150 |\n| Y | ? |\n| Z | ? |\n\nRevenue of Y : Z = 2 : 3. Total revenue = ?400 lakhs. What is Y's revenue?\n\na) 100\nb) 120\nc) 80\nd) 90\n\n<details>\n<summary>Answer</summary>\na) 100\n\nY + Z = 400 - 150 = 250\nY : Z = 2 : 3 ? Y = (2/5) � 250 = 100.\n</details>\n\n---\n\n**Q12.** Caselet: \"A company's revenue increased by 20% in 2022 over 2021, and by 25% in 2023 over 2022. The revenue in 2023 is ?75 lakhs.\" What was the revenue in 2021?\n\na) ?48 lakhs\nb) ?50 lakhs\nc) ?45 lakhs\nd) ?52 lakhs\n\n<details>\n<summary>Answer</summary>\nb) ?50 lakhs\n\n2023 = 1.25 � 2022 ? 2022 = 75 / 1.25 = 60\n2022 = 1.20 � 2021 ? 2021 = 60 / 1.20 = ?50 lakhs.\n</details>\n\n---\n\n**Q13.** Table with percentage distribution:\n\n| Expense Type | Amount (?) |\n|-------------|-----------|\n| Rent | 12,000 |\n| Food | ? |\n| Transport | 8,000 |\n| Savings | ? |\n| Total | 50,000 |\n\nFood is 30% of total and Savings is 20% of total. What is the savings amount?\n\na) 10,000\nb) 12,000\nc) 8,000\nd) 15,000\n\n<details>\n<summary>Answer</summary>\na) 10,000\n\nSavings = 20% of 50,000 = ?10,000.\n</details>\n\n---\n\n**Q14.** From the same table, what is Food expense?\n\na) 12,000\nb) 15,000\nc) 18,000\nd) 20,000\n\n<details>\n<summary>Answer</summary>\nb) 15,000\n\nFood = 30% of 50,000 = ?15,000.\n</details>\n\n---\n\n**Q15.** Caselet: \"In a library, 40% of the books are fiction. The non-fiction books are 1,200 more than the fiction books.\" How many total books are in the library?\n\na) 4,000\nb) 5,000\nc) 6,000\nd) 3,000\n\n<details>\n<summary>Answer</summary>\nc) 6,000\n\nLet total = T. Fiction = 0.4T. Non-fiction = 0.6T.\n0.6T - 0.4T = 1,200 ? 0.2T = 1,200 ? T = 6,000 books.\n</details>\n\n---\n\n**Q16.** A table shows exam scores with missing values:\n\n| Student | Math | Science | English | Total |\n|---------|------|---------|---------|-------|\n| P | 85 | 78 | ? | 243 |\n| Q | ? | 82 | 91 | 248 |\n| R | 79 | ? | 88 | 252 |\n\nWhat is P's English score?\n\na) 75\nb) 80\nc) 82\nd) 78\n\n<details>\n<summary>Answer</summary>\nb) 80\n\nP's English = 243 - 85 - 78 = 80.\n</details>\n\n---\n\n**Q17.** From the same table, what is Q's Math score?\n\na) 75\nb) 80\nc) 85\nd) 70\n\n<details>\n<summary>Answer</summary>\na) 75\n\nQ's Math = 248 - 82 - 91 = 75.\n</details>\n\n---\n\n**Q18.** Caselet: \"A shop sells three types of items: A, B, C. The number of item A sold is twice that of item B. Item C sold is 50% more than item B. Total items sold is 450.\" How many of item C were sold?\n\na) 100\nb) 150\nc) 200\nd) 120\n\n<details>\n<summary>Answer</summary>\nb) 150\n\nLet B = x. Then A = 2x. C = 1.5x.\nTotal: 2x + x + 1.5x = 450 ? 4.5x = 450 ? x = 100.\nC = 1.5 � 100 = 150.\n</details>\n\n---\n\n**Q19.** Table with chain of missing values:\n\n| Quarter | Revenue (?lakhs) | Expense (?lakhs) | Profit (?lakhs) |\n|---------|-----------------|-----------------|-----------------|\n| Q1 | 200 | 150 | 50 |\n| Q2 | ? | 180 | ? |\n| Q3 | 280 | ? | 60 |\n| Q4 | 350 | 280 | 70 |\n\nIf profit = revenue - expense, and Q2 profit is 20% of Q2 revenue, what is Q2 profit?\n\na) 40\nb) 45\nc) 35\nd) 50\n\n<details>\n<summary>Answer</summary>\nb) 45\n\nProfit = 0.20 � Revenue. Also Profit = Revenue - 180.\n0.2R = R - 180 ? 0.8R = 180 ? R = 225.\nProfit = 0.2 � 225 = 45.\n</details>\n\n---\n\n**Q20.** Caselet: \"Average salary of 5 employees is ?40,000. When one employee leaves and a new one joins, the average becomes ?42,000. The new employee's salary is ?50,000.\" What was the leaving employee's salary?\n\na) ?30,000\nb) ?35,000\nc) ?40,000\nd) ?45,000\n\n<details>\n<summary>Answer</summary>\nc) ?40,000\n\nTotal initial = 5 � 40,000 = ?2,00,000.\nTotal new = 5 � 42,000 = ?2,10,000.\nDifference = ?10,000 more.\nNew employee's salary = 50,000. So leaving employee's salary = 50,000 - 10,000 = ?40,000.\n</details>\n\n---\n\n
+**Q1.** A table shows production data for three companies:\n\n| Company | 2021 | 2022 | 2023 |\n|---------|------|------|------|\n| A | 120 | 150 | ? |\n| B | 90 | 135 | 180 |\n| C | 110 | 165 | 220 |\n\nIf the total production of all three companies in 2023 is 600 units, what is the missing value?\n\na) 200\nb) 210\nc) 180\nd) 190\n\n<details>\n<summary>Answer</summary>\na) 200\n\nTotal 2023 = A_2023 + B_2023 + C_2023 = ? + 180 + 220 = 600\n? = 600 - 180 - 220 = 200.\n</details>\n\n---\n\n**Q2.** A caselet states: \"In a school, there are 800 students. The number of boys is 60% of the total. The number of girls in the science stream is 120. If 25% of the boys are in the science stream, how many girls are in the arts stream?\"\n\nFirst, what is the number of boys?\n\na) 320\nb) 480\nc) 500\nd) 400\n\n<details>\n<summary>Answer</summary>\nb) 480\n\nNumber of boys = 60% of 800 = 0.60 ï¿½ 800 = 480.\n</details>\n\n---\n\n**Q3.** Continuing from Q2: How many girls are in the science stream?\n\na) 120\nb) 200\nc) 80\nd) 100\n\n<details>\n<summary>Answer</summary>\na) 120\n\nGiven directly in the caselet: \"The number of girls in the science stream is 120.\"\n</details>\n\n---\n\n**Q4.** Still continuing: How many boys are in the arts stream?\n\na) 360\nb) 240\nc) 480\nd) 120\n\n<details>\n<summary>Answer</summary>\na) 360\n\nBoys in science = 25% of 480 = 120\nBoys in arts = Total boys - Boys in science = 480 - 120 = 360.\n</details>\n\n---\n\n**Q5.** Table with two missing values:\n\n| Department | Employees | Male | Female |\n|------------|-----------|------|--------|\n| HR | 80 | 30 | 50 |\n| IT | ? | 60 | 40 |\n| Finance | 120 | ? | 70 |\n| Total | 300 | 150 | 150 |\n\nWhat is the number of employees in IT?\n\na) 80\nb) 100\nc) 90\nd) 110\n\n<details>\n<summary>Answer</summary>\nb) 100\n\nTotal employees = 300. Known: HR = 80, Finance = 120.\nIT = 300 - 80 - 120 = 100.\n</details>\n\n---\n\n**Q6.** From the same table, what is the number of males in Finance?\n\na) 60\nb) 40\nc) 50\nd) 70\n\n<details>\n<summary>Answer</summary>\nc) 50\n\nFinance: Total = 120, Female = 70\nMale = 120 - 70 = 50.\n</details>\n\n---\n\n**Q7.** A caselet: \"Three friends A, B, C invested in a business. A invested ?20,000 more than B. B invested ?10,000 less than C. Total investment is ?1,20,000.\" What is C's investment?\n\na) ?40,000\nb) ?50,000\nc) ?30,000\nd) ?60,000\n\n<details>\n<summary>Answer</summary>\na) ?40,000\n\nLet C = x. Then B = x - 10,000. A = B + 20,000 = x + 10,000.\nTotal: (x + 10,000) + (x - 10,000) + x = 1,20,000\n3x = 1,20,000 ? x = 40,000.\n</details>\n\n---\n\n**Q8.** A table of exports (?crores) has missing row totals:\n\n| Country | 2021 | 2022 | 2023 | Total |\n|---------|------|------|------|-------|\n| P | 80 | 95 | 105 | ? |\n| Q | 70 | 85 | ? | 240 |\n| R | ? | 75 | 90 | 230 |\n| Total | 230 | 255 | 270 | 755 |\n\nWhat is P's total?\n\na) 270\nb) 280\nc) 285\nd) 275\n\n<details>\n<summary>Answer</summary>\nb) 280\n\nP's total = 80 + 95 + 105 = 280.\n</details>\n\n---\n\n**Q9.** From the same table, what is R's export in 2021?\n\na) 85\nb) 80\nc) 90\nd) 75\n\n<details>\n<summary>Answer</summary>\nb) 80\n\nColumn total 2021 = 230. P_2021 = 80, Q_2021 = 70.\nR_2021 = 230 - 80 - 70 = 80.\n</details>\n\n---\n\n**Q10.** A caselet: \"The population of a town is 50,000. The ratio of males to females is 3:2. 40% of the males are literate. 60% of the females are literate.\" What is the total literate population?\n\na) 22,000\nb) 24,000\nc) 20,000\nd) 26,000\n\n<details>\n<summary>Answer</summary>\nb) 24,000\n\nMales = (3/5) ï¿½ 50,000 = 30,000. Females = 20,000.\nLiterate males = 40% of 30,000 = 12,000.\nLiterate females = 60% of 20,000 = 12,000.\nTotal literate = 12,000 + 12,000 = 24,000.\n</details>\n\n---\n\n**Q11.** Two missing values in ratio:\n\n| Product | Revenue (?lakhs) |\n|---------|-----------------|\n| X | 150 |\n| Y | ? |\n| Z | ? |\n\nRevenue of Y : Z = 2 : 3. Total revenue = ?400 lakhs. What is Y's revenue?\n\na) 100\nb) 120\nc) 80\nd) 90\n\n<details>\n<summary>Answer</summary>\na) 100\n\nY + Z = 400 - 150 = 250\nY : Z = 2 : 3 ? Y = (2/5) ï¿½ 250 = 100.\n</details>\n\n---\n\n**Q12.** Caselet: \"A company's revenue increased by 20% in 2022 over 2021, and by 25% in 2023 over 2022. The revenue in 2023 is ?75 lakhs.\" What was the revenue in 2021?\n\na) ?48 lakhs\nb) ?50 lakhs\nc) ?45 lakhs\nd) ?52 lakhs\n\n<details>\n<summary>Answer</summary>\nb) ?50 lakhs\n\n2023 = 1.25 ï¿½ 2022 ? 2022 = 75 / 1.25 = 60\n2022 = 1.20 ï¿½ 2021 ? 2021 = 60 / 1.20 = ?50 lakhs.\n</details>\n\n---\n\n**Q13.** Table with percentage distribution:\n\n| Expense Type | Amount (?) |\n|-------------|-----------|\n| Rent | 12,000 |\n| Food | ? |\n| Transport | 8,000 |\n| Savings | ? |\n| Total | 50,000 |\n\nFood is 30% of total and Savings is 20% of total. What is the savings amount?\n\na) 10,000\nb) 12,000\nc) 8,000\nd) 15,000\n\n<details>\n<summary>Answer</summary>\na) 10,000\n\nSavings = 20% of 50,000 = ?10,000.\n</details>\n\n---\n\n**Q14.** From the same table, what is Food expense?\n\na) 12,000\nb) 15,000\nc) 18,000\nd) 20,000\n\n<details>\n<summary>Answer</summary>\nb) 15,000\n\nFood = 30% of 50,000 = ?15,000.\n</details>\n\n---\n\n**Q15.** Caselet: \"In a library, 40% of the books are fiction. The non-fiction books are 1,200 more than the fiction books.\" How many total books are in the library?\n\na) 4,000\nb) 5,000\nc) 6,000\nd) 3,000\n\n<details>\n<summary>Answer</summary>\nc) 6,000\n\nLet total = T. Fiction = 0.4T. Non-fiction = 0.6T.\n0.6T - 0.4T = 1,200 ? 0.2T = 1,200 ? T = 6,000 books.\n</details>\n\n---\n\n**Q16.** A table shows exam scores with missing values:\n\n| Student | Math | Science | English | Total |\n|---------|------|---------|---------|-------|\n| P | 85 | 78 | ? | 243 |\n| Q | ? | 82 | 91 | 248 |\n| R | 79 | ? | 88 | 252 |\n\nWhat is P's English score?\n\na) 75\nb) 80\nc) 82\nd) 78\n\n<details>\n<summary>Answer</summary>\nb) 80\n\nP's English = 243 - 85 - 78 = 80.\n</details>\n\n---\n\n**Q17.** From the same table, what is Q's Math score?\n\na) 75\nb) 80\nc) 85\nd) 70\n\n<details>\n<summary>Answer</summary>\na) 75\n\nQ's Math = 248 - 82 - 91 = 75.\n</details>\n\n---\n\n**Q18.** Caselet: \"A shop sells three types of items: A, B, C. The number of item A sold is twice that of item B. Item C sold is 50% more than item B. Total items sold is 450.\" How many of item C were sold?\n\na) 100\nb) 150\nc) 200\nd) 120\n\n<details>\n<summary>Answer</summary>\nb) 150\n\nLet B = x. Then A = 2x. C = 1.5x.\nTotal: 2x + x + 1.5x = 450 ? 4.5x = 450 ? x = 100.\nC = 1.5 ï¿½ 100 = 150.\n</details>\n\n---\n\n**Q19.** Table with chain of missing values:\n\n| Quarter | Revenue (?lakhs) | Expense (?lakhs) | Profit (?lakhs) |\n|---------|-----------------|-----------------|-----------------|\n| Q1 | 200 | 150 | 50 |\n| Q2 | ? | 180 | ? |\n| Q3 | 280 | ? | 60 |\n| Q4 | 350 | 280 | 70 |\n\nIf profit = revenue - expense, and Q2 profit is 20% of Q2 revenue, what is Q2 profit?\n\na) 40\nb) 45\nc) 35\nd) 50\n\n<details>\n<summary>Answer</summary>\nb) 45\n\nProfit = 0.20 ï¿½ Revenue. Also Profit = Revenue - 180.\n0.2R = R - 180 ? 0.8R = 180 ? R = 225.\nProfit = 0.2 ï¿½ 225 = 45.\n</details>\n\n---\n\n**Q20.** Caselet: \"Average salary of 5 employees is ?40,000. When one employee leaves and a new one joins, the average becomes ?42,000. The new employee's salary is ?50,000.\" What was the leaving employee's salary?\n\na) ?30,000\nb) ?35,000\nc) ?40,000\nd) ?45,000\n\n<details>\n<summary>Answer</summary>\nc) ?40,000\n\nTotal initial = 5 ï¿½ 40,000 = ?2,00,000.\nTotal new = 5 ï¿½ 42,000 = ?2,10,000.\nDifference = ?10,000 more.\nNew employee's salary = 50,000. So leaving employee's salary = 50,000 - 10,000 = ?40,000.\n</details>\n\n---\n\n
 ### 2.11 Calculation Shortcuts for Missing Data Caselets
 
 #### Quick Ratio-Derivation Method
@@ -793,9 +793,9 @@ When two values are missing and a ratio is given:
 
 | Scenario | Shortcut | Example |
 |----------|----------|---------|
-| A:B = m:n, Total known | A = (m/(m+n)) � Total, B = (n/(m+n)) � Total | A:B = 3:4, Total = 140 ? A = 60, B = 80 |
+| A:B = m:n, Total known | A = (m/(m+n)) ï¿½ Total, B = (n/(m+n)) ï¿½ Total | A:B = 3:4, Total = 140 ? A = 60, B = 80 |
 | A:B = m:n, Difference known | One part = Diff/(m-n) | A:B = 5:2, diff = 30 ? one part = 10, A = 50, B = 20 |
-| A:B:C = p:q:r, Total known | Each = (part/sum of parts) � Total | 2:3:5, Total = 200 ? A = 40, B = 60, C = 100 |
+| A:B:C = p:q:r, Total known | Each = (part/sum of parts) ï¿½ Total | 2:3:5, Total = 200 ? A = 40, B = 60, C = 100 |
 
 #### The "Reverse Percentage" Trick
 
@@ -808,9 +808,9 @@ If a value decreased by x% to become Y, the original = Y / (1 - x/100).
 
 For a chain A ? (+x%) ? B ? (+y%) ? C ? (-z%) ? D:
 
-**Shortcut:** D = A � (1 + x/100) � (1 + y/100) � (1 - z/100)
+**Shortcut:** D = A ï¿½ (1 + x/100) ï¿½ (1 + y/100) ï¿½ (1 - z/100)
 
-If you need A from D: A = D / [(1 + x/100) � (1 + y/100) � (1 - z/100)]
+If you need A from D: A = D / [(1 + x/100) ï¿½ (1 + y/100) ï¿½ (1 - z/100)]
 
 #### Alligation Shortcut for Mixture Caselets
 
@@ -833,20 +833,20 @@ When a caselet gives only percentages and ratios without absolute values:
 - Let C = 100. Then B = 125. Then A = 150.
 - Ratio A:B:C = 150:125:100 = 6:5:4
 - Total parts = 15. Each part = 3,720/15 = 248.
-- A = 6 � 248 = 1,488. B = 5 � 248 = 1,240. C = 4 � 248 = 992.
+- A = 6 ï¿½ 248 = 1,488. B = 5 ï¿½ 248 = 1,240. C = 4 ï¿½ 248 = 992.
 
 ### 2.12 Common Mistakes in Missing Data Problems
 
 | Mistake | Example | Why It's Wrong | Correct |
 |---------|---------|---------------|---------|
 | Assuming equal distribution | "Total 300 split among 3 departments" ? assuming each gets 100 | Not stated | Need additional relationship |
-| Wrong base for "more than" | "A is 20% more than B" ? A = B + 20 | Percentage, not absolute | A = B � 1.20 |
-| Adding chain percentages | 10% increase then 20% increase = 30% | Compounding: 1.10 � 1.20 = 1.32 = 32% | Multiply factors |
+| Wrong base for "more than" | "A is 20% more than B" ? A = B + 20 | Percentage, not absolute | A = B ï¿½ 1.20 |
+| Adding chain percentages | 10% increase then 20% increase = 30% | Compounding: 1.10 ï¿½ 1.20 = 1.32 = 32% | Multiply factors |
 | Missing zero values | Assuming missing cells are 0 | They are variables to solve for | Use relationships to find them |
 | Inverse ratio confusion | A:B = 3:2 ? A = 2k, B = 3k | Wrong assignment | A = 3k, B = 2k |
 | Unit mismatch | Caselet in lakhs, answer in crores | Factor of 100 | Convert before calculating |
 
-### 2.13 GFG-Style Comprehensive Caselet � Population Data
+### 2.13 GFG-Style Comprehensive Caselet ï¿½ Population Data
 
 **Caselet:** In a town, the total population is 2,50,000. The ratio of males to females is 3:2. Among males, 40% are literate. Among females, 55% are literate. 60% of literate males are employed, and 45% of literate females are employed.
 
@@ -889,7 +889,7 @@ d) 28.3%
 <summary>Answer</summary>
 b) 24.3%
 
-Total employed literate = 36,000 + 24,750 = 60,750. Percentage = (60,750 / 2,50,000) � 100 = 24.3%.
+Total employed literate = 36,000 + 24,750 = 60,750. Percentage = (60,750 / 2,50,000) ï¿½ 100 = 24.3%.
 </details>
 
 **Q23.** What is the ratio of literate employed males to literate employed females?
@@ -906,14 +906,14 @@ b) 144:99
 36,000 : 24,750 = Simplify dividing by 250: 144:99. Simplified further dividing by 9: 16:11.
 </details>
 
-### 2.14 GFG-Style Missing Data � Production & Cost Table
+### 2.14 GFG-Style Missing Data ï¿½ Production & Cost Table
 
 | Company | Production (units) | Cost per unit (?) | Total Cost (?) |
 |---------|-------------------|-------------------|----------------|
 | A | 5,000 | 20 | 1,00,000 |
 | B | 7,000 | 15 | 1,05,000 |
 | C | 4,000 | 25 | 1,00,000 |
-| **Total** | **16,000** | **�** | **3,05,000** |
+| **Total** | **16,000** | **ï¿½** | **3,05,000** |
 
 **Q24.** What is the cost per unit for Company B?
 
@@ -958,7 +958,7 @@ b) 120
 
 Let Science = x. Maths = 1.20x. English = 1.20x - 15. History = 0.60x. Geography = 0.60x + 30.
 Total: x + 1.20x + (1.20x - 15) + 0.60x + (0.60x + 30) = 450 ? 4.60x + 15 = 450 ? x = 100.
-Maths = 1.20 � 100 = 120.
+Maths = 1.20 ï¿½ 100 = 120.
 </details>
 
 **Q27.** Table with missing percentages:
@@ -993,7 +993,7 @@ d) 38%
 <summary>Answer</summary>
 c) 35%
 
-Men % = (42,000 / 1,20,000) � 100 = 35%.
+Men % = (42,000 / 1,20,000) ï¿½ 100 = 35%.
 </details>
 
 **Q29.** Caselet: "A company has 3,600 employees. Morning shift has 40% of total. Evening shift has 50% more employees than Night shift." Find employees in Night shift.
@@ -1077,7 +1077,7 @@ Find: a) Total expense. b) Food amount. c) Entertainment %. d) Savings %.
 | Q2 | ? | 200 | 20% |
 | Q3 | 300 | ? | 10% |
 
-(Profit % = (Revenue - Expense) / Revenue � 100)
+(Profit % = (Revenue - Expense) / Revenue ï¿½ 100)
 
 **40.** Caselet: "In an exam, 60% passed. Among those who passed, 45% scored above 80%. Among those who failed, 20% scored above 60%. Total candidates = 5,000." How many scored above 80%?
 
@@ -1116,7 +1116,7 @@ flowchart TD
 | **Verify all conditions** | 30 sec | Ensure derived values satisfy every condition |
 | **Answer questions** | 75 sec per Q | Read question, extract required value, compute |
 
-**Key tip:** In IBPS/SBI/RBI exams, caselets are designed so that ALL missing values can be found. If you get stuck, re-read the caselet � you likely missed a relationship. Never assume data is missing in a way that makes the problem unsolvable.
+**Key tip:** In IBPS/SBI/RBI exams, caselets are designed so that ALL missing values can be found. If you get stuck, re-read the caselet ï¿½ you likely missed a relationship. Never assume data is missing in a way that makes the problem unsolvable.
 
 A **determinate system** (equations = unknowns) is the standard pattern for exam caselets. If you're not getting unique values, re-examine the relationships you've identified.
 

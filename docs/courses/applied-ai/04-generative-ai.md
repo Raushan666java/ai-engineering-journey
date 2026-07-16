@@ -1,4 +1,4 @@
-# Chapter 4: Generative AI
+﻿# Chapter 4: Generative AI
 
 > **Prerequisite:** [03 - OpenCV & Computer Vision](./03-opencv.md)  
 > **Next Chapter:** Course Complete
@@ -18,16 +18,16 @@ After completing this chapter, you will be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/applied-ai/04-generative-ai/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/applied-ai/04-generative-ai/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/applied-ai/04-generative-ai/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/applied-ai/04-generative-ai/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/applied-ai/04-generative-ai/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/applied-ai/04-generative-ai/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/applied-ai/04-generative-ai/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/applied-ai/04-generative-ai/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/applied-ai/04-generative-ai/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/applied-ai/04-generative-ai/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/applied-ai/04-generative-ai/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/applied-ai/04-generative-ai/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -38,15 +38,15 @@ After completing this chapter, you will be able to:
 
 ## Why Generative AI Matters
 
-> **Real-World Analogy:** Imagine a master artist who has studied 100,000 paintings — landscapes, portraits, abstracts. After years of training, she can paint a brand-new artwork in any style on any subject you describe. She can even take your rough sketch and turn it into a finished oil painting, or fill in missing parts of a damaged fresco. She doesn't just memorize and copy; she *understands* the patterns of light, color, composition, and texture, and composes something original from them. This is exactly what generative AI does — it learns the hidden distribution of data (images, text, music, code) and samples novel outputs that feel authentic.
+> **Real-World Analogy:** Imagine a master artist who has studied 100,000 paintings â€” landscapes, portraits, abstracts. After years of training, she can paint a brand-new artwork in any style on any subject you describe. She can even take your rough sketch and turn it into a finished oil painting, or fill in missing parts of a damaged fresco. She doesn't just memorize and copy; she *understands* the patterns of light, color, composition, and texture, and composes something original from them. This is exactly what generative AI does â€” it learns the hidden distribution of data (images, text, music, code) and samples novel outputs that feel authentic.
 
-Generative AI has moved from research curiosity to production infrastructure in just a few years. It powers tools used by millions daily — DALL·E, ChatGPT, Midjourney, GitHub Copilot, Stable Diffusion. Understanding how these models work under the hood (not just how to call an API) is essential for any AI engineer building modern applications.
+Generative AI has moved from research curiosity to production infrastructure in just a few years. It powers tools used by millions daily â€” DALLÂ·E, ChatGPT, Midjourney, GitHub Copilot, Stable Diffusion. Understanding how these models work under the hood (not just how to call an API) is essential for any AI engineer building modern applications.
 
 | What Traditional AI Does | What Generative AI Does |
 |--------------------------|------------------------|
 | Classifies or predicts a label | Creates new data from scratch |
 | Answers "Is this a cat or dog?" | Answers "Draw me a cat playing chess" |
-| Maps input → decision | Maps noise/condition → novel sample |
+| Maps input â†’ decision | Maps noise/condition â†’ novel sample |
 | Discriminative boundaries | Full probability distribution |
 
 ---
@@ -105,16 +105,16 @@ Generative models learn the probability distribution $$P(X)$$ of training data a
 
 
 ```
-Maximum Likelihood:  argmax_θ  E_{x~P_data}[log P_θ(x)]
+Maximum Likelihood:  argmax_Î¸  E_{x~P_data}[log P_Î¸(x)]
 GAN:                min_G max_D  E[log D(x)] + E[log(1 - D(G(z)))]
 VAE:                max  E[log P(x|z)] - KL(Q(z|x) || P(z))
-Diffusion:          min E[ || ε - ε_θ(x_t, t) ||² ]
-Autoregressive:     max  Σ log P(x_i | x_<i)
+Diffusion:          min E[ || Îµ - Îµ_Î¸(x_t, t) ||Â² ]
+Autoregressive:     max  Î£ log P(x_i | x_<i)
 ```
 
-> **Real-World Analogy:** Think of these four families as four different artists. GAN is like a forger who gets better by arguing with a detective. VAE is like a sketch artist who draws a blurry outline then fills details. Diffusion is like a sculptor who starts with a block of noise and chips away until the image appears. GPT is like a writer who predicts the next word one at a time — everything builds on what came before.
+> **Real-World Analogy:** Think of these four families as four different artists. GAN is like a forger who gets better by arguing with a detective. VAE is like a sketch artist who draws a blurry outline then fills details. Diffusion is like a sculptor who starts with a block of noise and chips away until the image appears. GPT is like a writer who predicts the next word one at a time â€” everything builds on what came before.
 
-> **One-Sentence Takeaway:** Four generative model families — GAN, VAE, Diffusion, Autoregressive — each trade off quality, speed, stability, and control differently.
+> **One-Sentence Takeaway:** Four generative model families â€” GAN, VAE, Diffusion, Autoregressive â€” each trade off quality, speed, stability, and control differently.
 
 ---
 
@@ -130,11 +130,11 @@ A GAN consists of two neural networks competing in a zero-sum game:
 - **Discriminator (D):** Takes a sample $$x$$ and outputs probability $$D(x)$$ that it is real
 
 ```
-Random Noise (z) ──→ Generator ──→ Fake Image (G(z))
-                                        │
-                   Real Image (x) ──→ Discriminator ──→ Real/Fake?
-                                        ↑
-                                   Fake Image ─────────┘
+Random Noise (z) â”€â”€â†’ Generator â”€â”€â†’ Fake Image (G(z))
+                                        â”‚
+                   Real Image (x) â”€â”€â†’ Discriminator â”€â”€â†’ Real/Fake?
+                                        â†‘
+                                   Fake Image â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### How GANs Work (Step by Step)
@@ -158,7 +158,7 @@ Random Noise (z) ──→ Generator ──→ Fake Image (G(z))
 FUNCTION train_gan(G, D, dataset, epochs, batch_size, z_dim):
     FOR epoch = 1 TO epochs:
         FOR batch IN dataset:
-            // ── Train Discriminator ──
+            // â”€â”€ Train Discriminator â”€â”€
             real_images = batch
             real_labels = ONES(batch_size, 1)
             fake_labels = ZEROS(batch_size, 1)
@@ -173,7 +173,7 @@ FUNCTION train_gan(G, D, dataset, epochs, batch_size, z_dim):
             D_loss.backward()
             D_optimizer.step()
 
-            // ── Train Generator ──
+            // â”€â”€ Train Generator â”€â”€
             z = sample_noise(batch_size, z_dim)
             fake_images = G(z)
             G_loss = BCELoss(D(fake_images), real_labels)  // Fool D!
@@ -192,24 +192,24 @@ FUNCTION train_gan(G, D, dataset, epochs, batch_size, z_dim):
 
 | Step | Operation | Input | Output | Loss | Layer Activations (G) |
 |------|-----------|-------|--------|------|----------------------|
-| 1 | Sample z | — | z₁=[0.2,-0.7], z₂=[-0.5,0.3] | — | — |
-| 2 | G(z) forward | z₁,z₂ | fake₁=[0.3,0.8,-0.2,0.1], fake₂=[-0.1,0.5,0.7,-0.3] | — | z→Linear→ReLU→Linear→Tanh |
-| 3 | Sample real | — | real₁=[0.9,0.7,-0.4,0.2], real₂=[-0.8,0.1,0.6,0.4] | — | — |
-| 4 | D(real) | real₁,real₂ | D(real₁)=0.85, D(real₂)=0.92 | — | Linear→LReLU→Linear→Sigmoid |
-| 5 | D_real_loss | D(real), [1,1] | -(log0.85+log0.92)=0.25 | 0.25 | — |
-| 6 | D(fake) | fake₁,fake₂ | D(fake₁)=0.12, D(fake₂)=0.32 | — | — |
-| 7 | D_fake_loss | D(fake), [0,0] | -(log0.88+log0.68)=0.38 | 0.38 | — |
-| 8 | Total D loss | — | 0.25+0.38=0.63 | 0.63 | — |
-| 9 | D backprop | — | — | — | Gradients flow through D |
-| 10 | Sample fresh z | — | z₃=[0.9,0.1], z₄=[-0.3,-0.6] | — | — |
-| 11 | G(z) forward | z₃,z₄ | fake₃=[0.4,0.6,-0.1,0.3], fake₄=[-0.2,0.3,0.5,-0.1] | — | Same layers |
-| 12 | D(fake) | fake₃,fake₄ | D(fake₃)=0.45, D(fake₄)=0.28 | — | Discriminator output |
-| 13 | G_loss | D(fake), [1,1] | -(log0.45+log0.28)=1.35 | 1.35 | — |
-| 14 | G backprop | — | — | — | Gradients flow through G |
-| 15 | G update | Adam(lr=0.0002) | Updated G weights | — | — |
-| 16 | D update | Adam(lr=0.0002) | Updated D weights | — | — |
+| 1 | Sample z | â€” | zâ‚=[0.2,-0.7], zâ‚‚=[-0.5,0.3] | â€” | â€” |
+| 2 | G(z) forward | zâ‚,zâ‚‚ | fakeâ‚=[0.3,0.8,-0.2,0.1], fakeâ‚‚=[-0.1,0.5,0.7,-0.3] | â€” | zâ†’Linearâ†’ReLUâ†’Linearâ†’Tanh |
+| 3 | Sample real | â€” | realâ‚=[0.9,0.7,-0.4,0.2], realâ‚‚=[-0.8,0.1,0.6,0.4] | â€” | â€” |
+| 4 | D(real) | realâ‚,realâ‚‚ | D(realâ‚)=0.85, D(realâ‚‚)=0.92 | â€” | Linearâ†’LReLUâ†’Linearâ†’Sigmoid |
+| 5 | D_real_loss | D(real), [1,1] | -(log0.85+log0.92)=0.25 | 0.25 | â€” |
+| 6 | D(fake) | fakeâ‚,fakeâ‚‚ | D(fakeâ‚)=0.12, D(fakeâ‚‚)=0.32 | â€” | â€” |
+| 7 | D_fake_loss | D(fake), [0,0] | -(log0.88+log0.68)=0.38 | 0.38 | â€” |
+| 8 | Total D loss | â€” | 0.25+0.38=0.63 | 0.63 | â€” |
+| 9 | D backprop | â€” | â€” | â€” | Gradients flow through D |
+| 10 | Sample fresh z | â€” | zâ‚ƒ=[0.9,0.1], zâ‚„=[-0.3,-0.6] | â€” | â€” |
+| 11 | G(z) forward | zâ‚ƒ,zâ‚„ | fakeâ‚ƒ=[0.4,0.6,-0.1,0.3], fakeâ‚„=[-0.2,0.3,0.5,-0.1] | â€” | Same layers |
+| 12 | D(fake) | fakeâ‚ƒ,fakeâ‚„ | D(fakeâ‚ƒ)=0.45, D(fakeâ‚„)=0.28 | â€” | Discriminator output |
+| 13 | G_loss | D(fake), [1,1] | -(log0.45+log0.28)=1.35 | 1.35 | â€” |
+| 14 | G backprop | â€” | â€” | â€” | Gradients flow through G |
+| 15 | G update | Adam(lr=0.0002) | Updated G weights | â€” | â€” |
+| 16 | D update | Adam(lr=0.0002) | Updated D weights | â€” | â€” |
 
-After many epochs: D(G(z)) ≈ 0.5 (D cannot tell real from fake → Nash equilibrium)
+After many epochs: D(G(z)) â‰ˆ 0.5 (D cannot tell real from fake â†’ Nash equilibrium)
 
 ### Python Implementation (PyTorch)
 
@@ -223,14 +223,14 @@ from torch.utils.data import DataLoader
 import numpy as np
 import matplotlib.pyplot as plt
 
-# ── Hyperparameters ──
+# â”€â”€ Hyperparameters â”€â”€
 Z_DIM = 100
 BATCH_SIZE = 64
 EPOCHS = 50
 LR = 0.0002
-IMG_DIM = 784  # 28×28
+IMG_DIM = 784  # 28Ã—28
 
-# ── Generator ──
+# â”€â”€ Generator â”€â”€
 class Generator(nn.Module):
     def __init__(self, z_dim=Z_DIM, img_dim=IMG_DIM):
         super().__init__()
@@ -248,7 +248,7 @@ class Generator(nn.Module):
     def forward(self, z):
         return self.net(z)
 
-# ── Discriminator ──
+# â”€â”€ Discriminator â”€â”€
 class Discriminator(nn.Module):
     def __init__(self, img_dim=IMG_DIM):
         super().__init__()
@@ -266,7 +266,7 @@ class Discriminator(nn.Module):
     def forward(self, x):
         return self.net(x)
 
-# ── Initialize ──
+# â”€â”€ Initialize â”€â”€
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 G = Generator().to(device)
 D = Discriminator().to(device)
@@ -274,7 +274,7 @@ g_opt = optim.Adam(G.parameters(), lr=LR, betas=(0.5, 0.999))
 d_opt = optim.Adam(D.parameters(), lr=LR, betas=(0.5, 0.999))
 criterion = nn.BCELoss()
 
-# ── Data ──
+# â”€â”€ Data â”€â”€
 transform = transforms.Compose([
     transforms.ToTensor(),
     transforms.Normalize((0.5,), (0.5,)),
@@ -282,7 +282,7 @@ transform = transforms.Compose([
 dataset = datasets.MNIST(root="data", transform=transform, download=True)
 loader = DataLoader(dataset, batch_size=BATCH_SIZE, shuffle=True, drop_last=True)
 
-# ── Training ──
+# â”€â”€ Training â”€â”€
 def train_step(real_images):
     batch = real_images.view(real_images.size(0), -1)
     batch_size = batch.size(0)
@@ -351,7 +351,7 @@ plt.savefig("output/gan_samples.png")
 |-------|----------------|------------------|--------|
 | **Training (per step)** | $$O((G_{params} + D_{params}) \cdot B)$$ | $$O((G_{params} + D_{params}) \cdot 2)$$ | Both networks forward+backward every step |
 | **Inference (per sample)** | $$O(G_{params})$$ | $$O(G_{params})$$ | Only generator forward pass needed |
-| **Convergence** | $$O(N_{epochs} \cdot N_{batches})$$ | — | Training is notoriously slow to converge |
+| **Convergence** | $$O(N_{epochs} \cdot N_{batches})$$ | â€” | Training is notoriously slow to converge |
 
 **Why?** GAN training requires alternating updates of two networks, doubling compute per step. The generator alone is small compared to diffusion models, making inference fast. However, the adversarial training often needs 10-100K iterations to converge.
 
@@ -362,7 +362,7 @@ plt.savefig("output/gan_samples.png")
 |------------|---------------|
 | Fast inference (single forward pass) | Unstable training (oscillating loss) |
 | Sharp, high-frequency detail in images | Mode collapse (generator produces limited variety) |
-| No Markov chain — direct sampling | No tractable likelihood or latent space inference |
+| No Markov chain â€” direct sampling | No tractable likelihood or latent space inference |
 | Can generate in any resolution (conditional) | Extremely sensitive to hyperparameters |
 | Adversarial framework is general (text, audio) | Evaluation is difficult (no inherent metric) |
 | State-of-the-art in super-resolution | Training requires careful balancing of G/D |
@@ -380,7 +380,7 @@ plt.savefig("output/gan_samples.png")
 
 5. **Latent Space Discontinuity:** Nearby points in $$z$$-space can produce very different outputs. Mitigation: use VAEs for smoother latent spaces instead.
 
-> **⚠️ Warning:** GAN training is notoriously unstable. Monitor the D/G loss ratio: if D loss drops to 0, the discriminator is too strong. If G loss dominates and outputs are repetitive, mode collapse is likely. Use label smoothing (0.9/0.1) and gradient penalties for stability.
+> **âš ï¸ Warning:** GAN training is notoriously unstable. Monitor the D/G loss ratio: if D loss drops to 0, the discriminator is too strong. If G loss dominates and outputs are repetitive, mode collapse is likely. Use label smoothing (0.9/0.1) and gradient penalties for stability.
 
 > **One-Sentence Takeaway:** GANs pit a generator against a discriminator in a zero-sum game, producing sharp images through adversarial training that is powerful but fragile.
 
@@ -388,7 +388,7 @@ plt.savefig("output/gan_samples.png")
 
 ## 4.3 Variational Autoencoders (VAEs)
 
-> **Real-World Analogy:** Imagine an architect who designs buildings. She encodes the essence of each building she sees into a compact blueprint (latent space). She doesn't memorize exact dimensions — she captures the *style*, *proportions*, and *features* as a probability distribution. When she wants to design something new, she picks a point in this blueprint-space and decodes it into a full design. Two nearby blueprint points produce similar buildings — allowing her to smoothly morph a Gothic cathedral into a modernist skyscraper.
+> **Real-World Analogy:** Imagine an architect who designs buildings. She encodes the essence of each building she sees into a compact blueprint (latent space). She doesn't memorize exact dimensions â€” she captures the *style*, *proportions*, and *features* as a probability distribution. When she wants to design something new, she picks a point in this blueprint-space and decodes it into a full design. Two nearby blueprint points produce similar buildings â€” allowing her to smoothly morph a Gothic cathedral into a modernist skyscraper.
 
 ### Architecture
 
@@ -396,8 +396,8 @@ plt.savefig("output/gan_samples.png")
 VAEs learn a probabilistic latent representation using an encoder-decoder structure with variational inference.
 
 ```
-Input Image (x) ──→ Encoder ──→ μ, log(σ²) ──→ Sample z ~ N(μ, σ²) ──→ Decoder ──→ Reconstructed (x')
-                    (q_φ(z|x))                     (reparameterize)                  (p_θ(x|z))
+Input Image (x) â”€â”€â†’ Encoder â”€â”€â†’ Î¼, log(ÏƒÂ²) â”€â”€â†’ Sample z ~ N(Î¼, ÏƒÂ²) â”€â”€â†’ Decoder â”€â”€â†’ Reconstructed (x')
+                    (q_Ï†(z|x))                     (reparameterize)                  (p_Î¸(x|z))
 ```
 
 ### How VAEs Work (Step by Step)
@@ -407,10 +407,10 @@ Input Image (x) ──→ Encoder ──→ μ, log(σ²) ──→ Sample z ~ N
 2. **Reparameterize:** Sample $$\epsilon \sim N(0, I)$$ and compute $$z = \mu + \sigma \cdot \epsilon$$ (this trick keeps gradients flowing)
 3. **Decode:** Pass $$z$$ through decoder to produce reconstruction $$\hat{x}$$
 4. **Compute reconstruction loss:** Measure how well $$\hat{x}$$ matches $$x$$ (MSE or BCE)
-5. **Compute KL loss:** Measure how far $$N(\mu, \sigma^2)$$ is from $$N(0, I)$$ — this regularizes the latent space
+5. **Compute KL loss:** Measure how far $$N(\mu, \sigma^2)$$ is from $$N(0, I)$$ â€” this regularizes the latent space
 6. **Combine:** Total loss = reconstruction loss + $$\beta \cdot$$ KL loss ($$\beta$$ controls the tradeoff)
 7. **Backpropagate:** Update encoder and decoder jointly
-8. **Generate:** To create new samples, skip the encoder — just sample $$z \sim N(0, I)$$ and decode
+8. **Generate:** To create new samples, skip the encoder â€” just sample $$z \sim N(0, I)$$ and decode
 
 ### Pseudocode
 
@@ -419,25 +419,25 @@ Input Image (x) ──→ Encoder ──→ μ, log(σ²) ──→ Sample z ~ N
 FUNCTION train_vae(encoder, decoder, dataset, epochs, latent_dim):
     FOR epoch = 1 TO epochs:
         FOR batch IN dataset:
-            // ── Encode ──
+            // â”€â”€ Encode â”€â”€
             h = encoder(batch)
             mu = linear_mu(h)
             logvar = linear_logvar(h)
 
-            // ── Reparameterize ──
+            // â”€â”€ Reparameterize â”€â”€
             std = exp(0.5 * logvar)
             eps = randn_like(std)
             z = mu + eps * std
 
-            // ── Decode ──
+            // â”€â”€ Decode â”€â”€
             recon = decoder(z)
 
-            // ── Loss ──
+            // â”€â”€ Loss â”€â”€
             recon_loss = MSE(recon, batch)           // or BCE
-            kl_loss = -0.5 * sum(1 + logvar - mu² - exp(logvar))
+            kl_loss = -0.5 * sum(1 + logvar - muÂ² - exp(logvar))
             total_loss = recon_loss + beta * kl_loss
 
-            // ── Update ──
+            // â”€â”€ Update â”€â”€
             total_loss.backward()
             optimizer.step()
     RETURN encoder, decoder
@@ -450,20 +450,20 @@ FUNCTION train_vae(encoder, decoder, dataset, epochs, latent_dim):
 
 | Step | Operation | Input | Output | Values |
 |------|-----------|-------|--------|--------|
-| 1 | Input x | — | x = [0.9, 0.1, 0.7, 0.3] | — |
-| 2 | Encoder forward | x | h = [0.5, 0.8, -0.2, 0.6] | h = ReLU(W_e · x + b_e) |
-| 3 | Compute μ | h | μ = [0.4, -0.3] | μ = W_μ · h + b_μ |
-| 4 | Compute log(σ²) | h | logvar = [-1.2, -0.8] | logvar = W_logvar · h + b_logvar |
-| 5 | Reparameterize | μ, logvar | σ = [0.55, 0.67], ε = [0.3, -0.9] | σ = exp(0.5·logvar) |
-| 6 | Sample z | μ, σ, ε | z = [0.4+0.55·0.3, -0.3+0.67·(-0.9)] = [0.565, -0.903] | z = μ + σ·ε |
-| 7 | Decoder forward | z | ĥ = [0.7, -0.4, 0.2, 0.9] | ĥ = ReLU(W_d · z + b_d) |
-| 8 | Output reconstruction | ĥ | x̂ = [0.85, 0.15, 0.68, 0.28] | x̂ = Sigmoid(W_out · ĥ + b_out) |
-| 9 | Recon loss | x̂, x | MSE = (0.05² + 0.05² + 0.02² + 0.02²)/4 = 0.00145 | MSE loss |
-| 10 | KL loss | μ, logvar | KL = -0.5·(1+(-1.2)-0.4²-exp(-1.2) + 1+(-0.8)-(-0.3)²-exp(-0.8)) | KL divergence |
-| 11 | KL loss calculation | — | KL = -0.5·[(-0.2-0.16-0.301) + (0.2-0.09-0.449)] = -0.5·[-1.0] = 0.5 | Full KL |
-| 12 | Total loss | — | β=1: total = 0.00145 + 0.5 = 0.501 | Combined |
-| 13 | Backprop | total loss | Gradients flow through decoder → z → encoder | — |
-| 14 | Update weights | Adam | Encoder and decoder weights updated | — |
+| 1 | Input x | â€” | x = [0.9, 0.1, 0.7, 0.3] | â€” |
+| 2 | Encoder forward | x | h = [0.5, 0.8, -0.2, 0.6] | h = ReLU(W_e Â· x + b_e) |
+| 3 | Compute Î¼ | h | Î¼ = [0.4, -0.3] | Î¼ = W_Î¼ Â· h + b_Î¼ |
+| 4 | Compute log(ÏƒÂ²) | h | logvar = [-1.2, -0.8] | logvar = W_logvar Â· h + b_logvar |
+| 5 | Reparameterize | Î¼, logvar | Ïƒ = [0.55, 0.67], Îµ = [0.3, -0.9] | Ïƒ = exp(0.5Â·logvar) |
+| 6 | Sample z | Î¼, Ïƒ, Îµ | z = [0.4+0.55Â·0.3, -0.3+0.67Â·(-0.9)] = [0.565, -0.903] | z = Î¼ + ÏƒÂ·Îµ |
+| 7 | Decoder forward | z | Ä¥ = [0.7, -0.4, 0.2, 0.9] | Ä¥ = ReLU(W_d Â· z + b_d) |
+| 8 | Output reconstruction | Ä¥ | xÌ‚ = [0.85, 0.15, 0.68, 0.28] | xÌ‚ = Sigmoid(W_out Â· Ä¥ + b_out) |
+| 9 | Recon loss | xÌ‚, x | MSE = (0.05Â² + 0.05Â² + 0.02Â² + 0.02Â²)/4 = 0.00145 | MSE loss |
+| 10 | KL loss | Î¼, logvar | KL = -0.5Â·(1+(-1.2)-0.4Â²-exp(-1.2) + 1+(-0.8)-(-0.3)Â²-exp(-0.8)) | KL divergence |
+| 11 | KL loss calculation | â€” | KL = -0.5Â·[(-0.2-0.16-0.301) + (0.2-0.09-0.449)] = -0.5Â·[-1.0] = 0.5 | Full KL |
+| 12 | Total loss | â€” | Î²=1: total = 0.00145 + 0.5 = 0.501 | Combined |
+| 13 | Backprop | total loss | Gradients flow through decoder â†’ z â†’ encoder | â€” |
+| 14 | Update weights | Adam | Encoder and decoder weights updated | â€” |
 
 After training: the latent space becomes smooth and continuous. Interpolating between any two points produces meaningful intermediate samples.
 
@@ -477,7 +477,7 @@ import torch.optim as optim
 from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
 
-# ── Hyperparameters ──
+# â”€â”€ Hyperparameters â”€â”€
 INPUT_DIM = 784
 LATENT_DIM = 20
 HIDDEN_DIM = 400
@@ -486,7 +486,7 @@ BATCH_SIZE = 128
 LR = 1e-3
 BETA = 1.0  # Weight for KL divergence
 
-# ── VAE Model ──
+# â”€â”€ VAE Model â”€â”€
 class VAE(nn.Module):
     def __init__(self, input_dim=INPUT_DIM, latent_dim=LATENT_DIM):
         super().__init__()
@@ -521,7 +521,7 @@ class VAE(nn.Module):
         recon = self.decode(z)
         return recon, mu, logvar
 
-# ── Loss ──
+# â”€â”€ Loss â”€â”€
 def vae_loss(recon_x, x, mu, logvar):
     recon_loss = nn.functional.binary_cross_entropy(
         recon_x, x, reduction="sum"
@@ -529,7 +529,7 @@ def vae_loss(recon_x, x, mu, logvar):
     kl_loss = -0.5 * torch.sum(1 + logvar - mu.pow(2) - logvar.exp()) / x.size(0)
     return recon_loss + BETA * kl_loss
 
-# ── Data ──
+# â”€â”€ Data â”€â”€
 transform = transforms.Compose([
     transforms.ToTensor(),
     transforms.Lambda(lambda x: x.view(-1)),
@@ -537,7 +537,7 @@ transform = transforms.Compose([
 dataset = datasets.MNIST(root="data", train=True, transform=transform, download=True)
 loader = DataLoader(dataset, batch_size=BATCH_SIZE, shuffle=True)
 
-# ── Training ──
+# â”€â”€ Training â”€â”€
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 vae = VAE().to(device)
 optimizer = optim.Adam(vae.parameters(), lr=LR)
@@ -592,10 +592,10 @@ plt.savefig("output/vae_interpolation.png")
 | Phase | Time Complexity | Space Complexity | Reason |
 |-------|----------------|------------------|--------|
 | **Training (per step)** | $$O((E_{params} + D_{params}) \cdot B)$$ | $$O((E_{params} + D_{params}) \cdot 2)$$ | Single forward + backward through encoder and decoder |
-| **Inference (per sample)** | $$O(D_{params})$$ | $$O(D_{params})$$ | Only decoder — sample z directly from N(0, I) |
+| **Inference (per sample)** | $$O(D_{params})$$ | $$O(D_{params})$$ | Only decoder â€” sample z directly from N(0, I) |
 | **Encode (per sample)** | $$O(E_{params})$$ | $$O(E_{params})$$ | Encoder forward pass only |
 
-**Why?** VAE training is a single objective (ELBO) unlike GAN's two-player game, making it more stable. Inference is extremely fast — just a decoder pass. The latent dimension is user-controlled, typically 20-200.
+**Why?** VAE training is a single objective (ELBO) unlike GAN's two-player game, making it more stable. Inference is extremely fast â€” just a decoder pass. The latent dimension is user-controlled, typically 20-200.
 
 ### Advantages & Disadvantages
 
@@ -612,23 +612,23 @@ plt.savefig("output/vae_interpolation.png")
 ### Edge Cases
 
 
-1. **Posterior Collapse:** The KL term dominates and the latent variable becomes independent of the input (z carries no information). Mitigation: KL annealing (gradually increase β from 0 to 1), use free bits.
+1. **Posterior Collapse:** The KL term dominates and the latent variable becomes independent of the input (z carries no information). Mitigation: KL annealing (gradually increase Î² from 0 to 1), use free bits.
 
 2. **Blurry Outputs:** The decoder averages over multiple plausible outputs, producing blurry results. Mitigation: use perceptual losses, VQ-VAE (discrete latent space), or adversarial training (VAE-GAN hybrids).
 
-3. **Latent Space Gaps:** If KL weight is too low, the latent space has holes where decoding produces garbage. Mitigation: increase β, use more expressive priors (VampPrior).
+3. **Latent Space Gaps:** If KL weight is too low, the latent space has holes where decoding produces garbage. Mitigation: increase Î², use more expressive priors (VampPrior).
 
-4. **Reconstruction Fidelity vs Generation Quality Tradeoff:** A low β gives good reconstructions but poor interpolation; high β gives smooth sampling but poor reconstructions. Mitigation: β-VAE (tune β for the task).
+4. **Reconstruction Fidelity vs Generation Quality Tradeoff:** A low Î² gives good reconstructions but poor interpolation; high Î² gives smooth sampling but poor reconstructions. Mitigation: Î²-VAE (tune Î² for the task).
 
 > **Pro Tip:** The latent dimension size is a critical hyperparameter. Too small (< 10) loses detail; too large (> 100) defeats regularization. Start with 20-50 and monitor reconstruction quality vs generated sample diversity.
 
-> **One-Sentence Takeaway:** VAEs learn a smooth, continuous latent space where interpolating between points produces meaningful intermediate samples — ideal for morphing and anomaly detection.
+> **One-Sentence Takeaway:** VAEs learn a smooth, continuous latent space where interpolating between points produces meaningful intermediate samples â€” ideal for morphing and anomaly detection.
 
 ---
 
 ## 4.4 Diffusion Models
 
-> **Real-World Analogy:** Imagine a sculptor starting with a rough block of marble (pure noise). They don't carve the final statue in one go. Instead, they have step-by-step instructions: "At step 50, you see a vague human shape. At step 40, the head is distinguishable. At step 30, facial features emerge. At step 10, details like eye color appear." Each step removes a small amount of randomness, gradually revealing the final image. This is the diffusion process — reverse a gradual noising process one tiny step at a time.
+> **Real-World Analogy:** Imagine a sculptor starting with a rough block of marble (pure noise). They don't carve the final statue in one go. Instead, they have step-by-step instructions: "At step 50, you see a vague human shape. At step 40, the head is distinguishable. At step 30, facial features emerge. At step 10, details like eye color appear." Each step removes a small amount of randomness, gradually revealing the final image. This is the diffusion process â€” reverse a gradual noising process one tiny step at a time.
 
 ### Architecture
 
@@ -636,12 +636,12 @@ plt.savefig("output/vae_interpolation.png")
 Diffusion models define a **forward process** that gradually adds Gaussian noise to data over $$T$$ timesteps, and learn a **reverse process** that denoises from pure noise back to data.
 
 ```
-Forward (q):  x₀ → x₁ → x₂ → ... → x_T (pure noise)
-                   ↓      ↓      ↓
-              Learn:  ε_θ(x_t, t)  →  predict noise to remove
+Forward (q):  xâ‚€ â†’ xâ‚ â†’ xâ‚‚ â†’ ... â†’ x_T (pure noise)
+                   â†“      â†“      â†“
+              Learn:  Îµ_Î¸(x_t, t)  â†’  predict noise to remove
 
-Reverse (p):  x_T → x_{T-1} → ... → x₁ → x₀ (generated sample)
-              p_θ(x_{t-1}|x_t)
+Reverse (p):  x_T â†’ x_{T-1} â†’ ... â†’ xâ‚ â†’ xâ‚€ (generated sample)
+              p_Î¸(x_{t-1}|x_t)
 ```
 
 ### How Diffusion Models Work (Step by Step)
@@ -701,26 +701,26 @@ FUNCTION sample_diffusion(unet, prompt_embeds, T=1000, scheduler):
 ### Step-by-Step Dry Run (Trace Table)
 
 
-**Setup:** 4-pixel image, T=4 timesteps (simplified — real models use T=1000), β schedule = [0.1, 0.2, 0.3, 0.4]
+**Setup:** 4-pixel image, T=4 timesteps (simplified â€” real models use T=1000), Î² schedule = [0.1, 0.2, 0.3, 0.4]
 
-**Forward Process — Training:**
+**Forward Process â€” Training:**
 
-| t | α_t=1-β_t | ᾱ_t = ∏α_i | x_t = √ᾱ_t·x₀ + √(1-ᾱ_t)·ε | Noise |
+| t | Î±_t=1-Î²_t | Î±Ì„_t = âˆÎ±_i | x_t = âˆšÎ±Ì„_tÂ·xâ‚€ + âˆš(1-Î±Ì„_t)Â·Îµ | Noise |
 |---|-----------|------------|-----------------------------|-------|
-| 0 | — | 1.0 | x₀ = [0.8, 0.3, 0.6, 0.1] | — |
-| 1 | 0.9 | 0.9 | x₁ = √0.9·x₀ + √0.1·ε = [0.76, 0.35, 0.57, 0.13] + [0.06, -0.03, 0.02, -0.09] = [0.82, 0.32, 0.59, 0.04] | ε=[0.2,-0.1,0.07,-0.3] |
-| 2 | 0.8 | 0.72 | x₂ = √0.72·x₀ + √0.28·ε | ε=[-0.4,0.5,0.1,-0.2] |
-| 3 | 0.7 | 0.504 | x₃ = √0.504·x₀ + √0.496·ε | ε=[0.3,0.2,-0.5,0.6] |
-| 4 | 0.6 | 0.302 | x₄ = √0.302·x₀ + √0.698·ε | ε=[-0.1,-0.4,0.3,-0.2] |
+| 0 | â€” | 1.0 | xâ‚€ = [0.8, 0.3, 0.6, 0.1] | â€” |
+| 1 | 0.9 | 0.9 | xâ‚ = âˆš0.9Â·xâ‚€ + âˆš0.1Â·Îµ = [0.76, 0.35, 0.57, 0.13] + [0.06, -0.03, 0.02, -0.09] = [0.82, 0.32, 0.59, 0.04] | Îµ=[0.2,-0.1,0.07,-0.3] |
+| 2 | 0.8 | 0.72 | xâ‚‚ = âˆš0.72Â·xâ‚€ + âˆš0.28Â·Îµ | Îµ=[-0.4,0.5,0.1,-0.2] |
+| 3 | 0.7 | 0.504 | xâ‚ƒ = âˆš0.504Â·xâ‚€ + âˆš0.496Â·Îµ | Îµ=[0.3,0.2,-0.5,0.6] |
+| 4 | 0.6 | 0.302 | xâ‚„ = âˆš0.302Â·xâ‚€ + âˆš0.698Â·Îµ | Îµ=[-0.1,-0.4,0.3,-0.2] |
 
-**Reverse Process (Inference — Denoising):**
+**Reverse Process (Inference â€” Denoising):**
 
-| Step t | x_t | Predicted ε_θ(x_t, t) | x_{t-1} after denoise |
+| Step t | x_t | Predicted Îµ_Î¸(x_t, t) | x_{t-1} after denoise |
 |--------|-----|----------------------|----------------------|
-| 4 | x₄≈N(0,I) | ε_pred₄ = U-Net(x₄, 4, "cat") | x₃ = x₄ denoised with ε_pred₄ |
-| 3 | x₃ from above | ε_pred₃ = U-Net(x₃, 3, "cat") | x₂ = x₃ denoised with ε_pred₃ |
-| 2 | x₂ from above | ε_pred₂ = U-Net(x₂, 2, "cat") | x₁ = x₂ denoised with ε_pred₂ |
-| 1 | x₁ from above | ε_pred₁ = U-Net(x₁, 1, "cat") | x₀ = FINAL IMAGE! |
+| 4 | xâ‚„â‰ˆN(0,I) | Îµ_predâ‚„ = U-Net(xâ‚„, 4, "cat") | xâ‚ƒ = xâ‚„ denoised with Îµ_predâ‚„ |
+| 3 | xâ‚ƒ from above | Îµ_predâ‚ƒ = U-Net(xâ‚ƒ, 3, "cat") | xâ‚‚ = xâ‚ƒ denoised with Îµ_predâ‚ƒ |
+| 2 | xâ‚‚ from above | Îµ_predâ‚‚ = U-Net(xâ‚‚, 2, "cat") | xâ‚ = xâ‚‚ denoised with Îµ_predâ‚‚ |
+| 1 | xâ‚ from above | Îµ_predâ‚ = U-Net(xâ‚, 1, "cat") | xâ‚€ = FINAL IMAGE! |
 
 After training, the U-Net learns to predict the noise at each step. Starting from random noise and iteratively denoising produces a coherent image matching the prompt.
 
@@ -732,7 +732,7 @@ from diffusers import StableDiffusionPipeline, DPMSolverMultistepScheduler
 import torch
 from PIL import Image
 
-# ── Load Pipeline ──
+# â”€â”€ Load Pipeline â”€â”€
 model_id = "runwayml/stable-diffusion-v1-5"
 
 pipe = StableDiffusionPipeline.from_pretrained(
@@ -830,7 +830,7 @@ result.save("output/inpainted.png")
 | **Inference (T steps)** | $$O(UNet_{params} \cdot T)$$ | $$O(UNet_{params} \cdot 2)$$ | T successive forward passes (T=25-1000) |
 | **Scheduler overhead** | $$O(T)$$ | $$O(1)$$ | Per-step scheduler math is negligible |
 
-**Why training is relatively cheap per step:** The U-Net is trained on random timesteps — you don't run all T steps per training step. **Why inference is expensive:** You must run T sequential denoising steps. Modern schedulers (DDIM, DPM++) reduce T from 1000 to 25-50 with minimal quality loss.
+**Why training is relatively cheap per step:** The U-Net is trained on random timesteps â€” you don't run all T steps per training step. **Why inference is expensive:** You must run T sequential denoising steps. Modern schedulers (DDIM, DPM++) reduce T from 1000 to 25-50 with minimal quality loss.
 
 ### Advantages & Disadvantages
 
@@ -857,7 +857,7 @@ result.save("output/inpainted.png")
 
 5. **Background Bleeding:** The subject blends into the background. Mitigation: use strong negative prompts, ControlNet for structure preservation.
 
-> **⚠️ Warning:** Diffusion models are computationally expensive. On a consumer GPU (8GB VRAM), use `torch.float16` and a memory-efficient scheduler (DPMSolverMultistepScheduler). For CPU inference, expect 2-5 minutes per image.
+> **âš ï¸ Warning:** Diffusion models are computationally expensive. On a consumer GPU (8GB VRAM), use `torch.float16` and a memory-efficient scheduler (DPMSolverMultistepScheduler). For CPU inference, expect 2-5 minutes per image.
 
 > **One-Sentence Takeaway:** Diffusion models reverse a gradual noising process to generate high-quality images from text prompts, with img2img and inpainting as powerful variants.
 
@@ -865,7 +865,7 @@ result.save("output/inpainted.png")
 
 ## 4.5 Transformers for Generation
 
-> **Real-World Analogy:** Imagine an extremely well-read author who has memorized billions of sentences. When you give them a starting phrase ("Once upon a time..."), they predict the next most natural word, one at a time. Each new word becomes part of the context for predicting the next. Unlike our GAN/VAE artist who paints the whole image at once, this author writes sequentially — and the result can be novels, code, poems, or even musical scores depending on the training data.
+> **Real-World Analogy:** Imagine an extremely well-read author who has memorized billions of sentences. When you give them a starting phrase ("Once upon a time..."), they predict the next most natural word, one at a time. Each new word becomes part of the context for predicting the next. Unlike our GAN/VAE artist who paints the whole image at once, this author writes sequentially â€” and the result can be novels, code, poems, or even musical scores depending on the training data.
 
 ### Architecture
 
@@ -874,23 +874,23 @@ Transformers for generation use the decoder-only architecture: a stack of self-a
 
 ```
 Input:  "The cat sat on the"
-          │      │      │      │
-          ▼      ▼      ▼      ▼
+          â”‚      â”‚      â”‚      â”‚
+          â–¼      â–¼      â–¼      â–¼
      [Token] [Token] [Token] [Token]
-          │      │      │      │
-          ▼      ▼      ▼      ▼
-     ┌─────────────────────────────────┐
-     │      Masked Self-Attention      │
-     │   (each token attends only to   │
-     │    previous tokens + itself)    │
-     └─────────────────────────────────┘
-                     │
-                     ▼
-     ┌─────────────────────────────────┐
-     │      Feed-Forward Network       │
-     └─────────────────────────────────┘
-                     │
-                     ▼
+          â”‚      â”‚      â”‚      â”‚
+          â–¼      â–¼      â–¼      â–¼
+     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+     â”‚      Masked Self-Attention      â”‚
+     â”‚   (each token attends only to   â”‚
+     â”‚    previous tokens + itself)    â”‚
+     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                     â”‚
+                     â–¼
+     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+     â”‚      Feed-Forward Network       â”‚
+     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                     â”‚
+                     â–¼
               Output:  "mat"
               (next token prediction)
 ```
@@ -949,11 +949,11 @@ FUNCTION generate(model, prompt, max_tokens, temperature):
 
 | Step | Input Tokens | Attn Weights (last token) | Logits (vocab) | Sampled | Output |
 |------|-------------|---------------------------|-----------------|---------|--------|
-| 1 | [the(0), cat(1)] | cat→the:0.3, cat→cat:0.7 | [0.1, 0.2, 0.8, 0.3, 0.1, 0.05] | sat(2) | "sat" |
-| 2 | [the, cat, sat] | sat→the:0.2, sat→cat:0.5, sat→sat:0.3 | [0.05, 0.1, 0.1, 0.7, 0.3, 0.05] | on(3) | "on" |
-| 3 | [the, cat, sat, on] | on→the:0.1, on→cat:0.2, on→sat:0.3, on→on:0.4 | [0.05, 0.05, 0.05, 0.1, 0.8, 0.1] | mat(4) | "mat" |
-| 4 | [the, cat, sat, on, mat] | mat→the:0.1, mat→cat:0.1, mat→sat:0.2, mat→on:0.2, mat→mat:0.4 | [0.02, 0.02, 0.02, 0.02, 0.02, 0.9] | .(5) | "." |
-| 5 | [the, cat, sat, on, mat, .] | .→all: even | [0.1, 0.1, 0.1, 0.1, 0.1, 0.1] | EOS | STOP |
+| 1 | [the(0), cat(1)] | catâ†’the:0.3, catâ†’cat:0.7 | [0.1, 0.2, 0.8, 0.3, 0.1, 0.05] | sat(2) | "sat" |
+| 2 | [the, cat, sat] | satâ†’the:0.2, satâ†’cat:0.5, satâ†’sat:0.3 | [0.05, 0.1, 0.1, 0.7, 0.3, 0.05] | on(3) | "on" |
+| 3 | [the, cat, sat, on] | onâ†’the:0.1, onâ†’cat:0.2, onâ†’sat:0.3, onâ†’on:0.4 | [0.05, 0.05, 0.05, 0.1, 0.8, 0.1] | mat(4) | "mat" |
+| 4 | [the, cat, sat, on, mat] | matâ†’the:0.1, matâ†’cat:0.1, matâ†’sat:0.2, matâ†’on:0.2, matâ†’mat:0.4 | [0.02, 0.02, 0.02, 0.02, 0.02, 0.9] | .(5) | "." |
+| 5 | [the, cat, sat, on, mat, .] | .â†’all: even | [0.1, 0.1, 0.1, 0.1, 0.1, 0.1] | EOS | STOP |
 
 The attention weights show how the model learns that "cat" is the subject, "sat" is the action, "on" introduces the location, etc.
 
@@ -963,12 +963,12 @@ The attention weights show how the model learns that "cat" is the subject, "sat"
 ```python
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-# ── Load Model ──
-model_name = "gpt2"  # 124M parameters — good for learning
+# â”€â”€ Load Model â”€â”€
+model_name = "gpt2"  # 124M parameters â€” good for learning
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForCausalLM.from_pretrained(model_name)
 
-# ── Text Generation ──
+# â”€â”€ Text Generation â”€â”€
 prompt = "Once upon a time"
 
 inputs = tokenizer(prompt, return_tensors="pt")
@@ -991,7 +991,7 @@ print(generated_text)
 ```python
 # Without KV cache: re-compute all keys/values for every new token
 # With KV cache: cache keys and values from previous steps
-# This changes inference from O(n²) to O(n) per step
+# This changes inference from O(nÂ²) to O(n) per step
 
 class CausalLMWithCache:
     def __init__(self, model):
@@ -1019,7 +1019,7 @@ class CausalLMWithCache:
 | **Training (per token)** | $$O(L^2 \cdot d)$$ per layer | $$O(L^2 + L \cdot d)$$ | Self-attention is quadratic in sequence length L |
 | **Inference (per token, no cache)** | $$O(L^2 \cdot d)$$ per layer | $$O(L^2 + L \cdot d)$$ | Must recompute all previous attention |
 | **Inference (per token, KV cache)** | $$O(L \cdot d)$$ per layer | $$O(L \cdot d \cdot n_{layers})$$ | Linear in current sequence length |
-| **KV cache memory** | — | $$O(2 \cdot n_{layers} \cdot n_{heads} \cdot L \cdot d_{head})$$ | Stored key/value projections |
+| **KV cache memory** | â€” | $$O(2 \cdot n_{layers} \cdot n_{heads} \cdot L \cdot d_{head})$$ | Stored key/value projections |
 
 **Why generation is slow for long sequences:** Each new token must attend to all previous tokens. The KV cache helps by storing computed keys/values, but memory grows linearly with sequence length.
 
@@ -1030,7 +1030,7 @@ class CausalLMWithCache:
 |------------|---------------|
 | Single architecture for text, code, audio | Quadratic attention cost limits context length |
 | Excellent at capturing long-range dependencies | Sequential generation is inherently slow |
-| Massive scaling works (compute → quality) | Training requires enormous datasets and compute |
+| Massive scaling works (compute â†’ quality) | Training requires enormous datasets and compute |
 | Flexible prompting and in-context learning | Hallucination (confidently wrong answers) |
 | Rich ecosystem (HuggingFace, vLLM, TGI) | Autoregressive error accumulation |
 | KV-cache and speculative decoding optimizations | No built-in source attribution |
@@ -1054,7 +1054,7 @@ class CausalLMWithCache:
 
 ## 4.6 Prompt Engineering
 
-> **Real-World Analogy:** Giving a prompt to a generative model is like giving instructions to a very literal, hyper-competent chef. If you say "make food," you get something edible but random. If you say "pan-seared salmon with lemon-dill sauce, crispy skin, served on a bed of wild rice, plated on a white ceramic dish, photographed with a 50mm lens," you get exactly what you envisioned. The model has the skill — it just needs precise direction.
+> **Real-World Analogy:** Giving a prompt to a generative model is like giving instructions to a very literal, hyper-competent chef. If you say "make food," you get something edible but random. If you say "pan-seared salmon with lemon-dill sauce, crispy skin, served on a bed of wild rice, plated on a white ceramic dish, photographed with a 50mm lens," you get exactly what you envisioned. The model has the skill â€” it just needs precise direction.
 
 ### Prompt Structure (SCEQ Framework)
 
@@ -1083,7 +1083,7 @@ Negative: "blurry, low quality, distorted, ugly, extra limbs, bad anatomy"
 5. **Specify quality:** Resolution tags (4K, 8K), technical quality (sharp focus, detailed)
 6. **Craft negative prompt:** List everything you DON'T want (blurry, distorted, extra limbs)
 7. **Add weights:** Use `(keyword:weight)` syntax to emphasize or de-emphasize elements
-8. **Test and iterate:** Generate, evaluate, refine — repeat
+8. **Test and iterate:** Generate, evaluate, refine â€” repeat
 
 ### Pseudocode
 
@@ -1184,18 +1184,18 @@ image, pos, neg = generate_with_prompt(
 |--------|----------------|------------------|--------|
 | **Prompt parsing** | $$O(L)$$ | $$O(L)$$ | Linear in prompt length |
 | **Inference cost** | Same as base model | Same as base model | Prompt engineering adds no model cost |
-| **Iteration cost** | $$O(N_{attempts} \cdot inference\_cost)$$ | — | Each generation attempt costs full inference |
+| **Iteration cost** | $$O(N_{attempts} \cdot inference\_cost)$$ | â€” | Each generation attempt costs full inference |
 
-**Why prompt engineering is free computationally:** The prompt just changes the conditioning input — same model, same architecture, no training needed.
+**Why prompt engineering is free computationally:** The prompt just changes the conditioning input â€” same model, same architecture, no training needed.
 
 ### Advantages & Disadvantages
 
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| No training required — works with any model | Results are inconsistent across seeds |
-| Instant results — iterate in minutes | Requires trial and error to get right |
-| Full creative control over output | Knowledge cutoff — limited to model's training data |
+| No training required â€” works with any model | Results are inconsistent across seeds |
+| Instant results â€” iterate in minutes | Requires trial and error to get right |
+| Full creative control over output | Knowledge cutoff â€” limited to model's training data |
 | Negative prompts remove artifacts | Long prompts get truncated (77 token limit in SD) |
 | Weighted prompts focus generation | Cannot teach the model new concepts |
 
@@ -1212,13 +1212,13 @@ image, pos, neg = generate_with_prompt(
 
 > **Pro Tip:** Always include a negative prompt. Common artifacts (blurry, distorted hands, extra limbs) can be dramatically reduced with a well-crafted negative prompt, often more effectively than tweaking the positive prompt.
 
-> **One-Sentence Takeaway:** Effective prompt engineering follows a five-part formula — subject, context, environment, style, quality — and pairs positive prompts with explicit negative prompts to remove artifacts.
+> **One-Sentence Takeaway:** Effective prompt engineering follows a five-part formula â€” subject, context, environment, style, quality â€” and pairs positive prompts with explicit negative prompts to remove artifacts.
 
 ---
 
 ## 4.7 Fine-Tuning (LoRA, DreamBooth)
 
-> **Real-World Analogy:** Imagine you have a chef who can cook any cuisine, but you want them to specialize in your grandmother's secret pasta recipe. Instead of sending them to culinary school for 3 years (full retraining), you give them a small notebook with just the key adjustments: "use San Marzano tomatoes, cook exactly 11 minutes, add basil at the end." This notebook is LoRA — a tiny set of task-specific modifications that adapts a large general model without retraining everything.
+> **Real-World Analogy:** Imagine you have a chef who can cook any cuisine, but you want them to specialize in your grandmother's secret pasta recipe. Instead of sending them to culinary school for 3 years (full retraining), you give them a small notebook with just the key adjustments: "use San Marzano tomatoes, cook exactly 11 minutes, add basil at the end." This notebook is LoRA â€” a tiny set of task-specific modifications that adapts a large general model without retraining everything.
 
 ### Overview
 
@@ -1234,7 +1234,7 @@ image, pos, neg = generate_with_prompt(
 ### How LoRA Works (Step by Step)
 
 
-1. **Freeze base model:** All original weights are frozen — no gradients computed
+1. **Freeze base model:** All original weights are frozen â€” no gradients computed
 2. **Inject adapters:** For each weight matrix $$W \in \mathbb{R}^{d \times k}$$, add a low-rank decomposition $$W' = W + BA$$ where $$B \in \mathbb{R}^{d \times r}$$, $$A \in \mathbb{R}^{r \times k}$$, and $$r \ll \min(d, k)$$
 3. **Train only adapters:** Only $$A$$ and $$B$$ are updated during training (typically rank $$r = 8$$ to $$64$$)
 4. **Merge or keep separate:** At inference, either merge $$BA$$ into $$W$$ (no speed cost) or keep separate (swap adapters)
@@ -1243,8 +1243,8 @@ image, pos, neg = generate_with_prompt(
 ```
 Original:         y = Wx
 With LoRA:        y = Wx + BAx
-                   └── only BA is trained ──┘
-                   └── W is frozen ──────────┘
+                   â””â”€â”€ only BA is trained â”€â”€â”˜
+                   â””â”€â”€ W is frozen â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### Pseudocode
@@ -1290,16 +1290,16 @@ FUNCTION train_lora(base_model, dataset, rank=8, epochs=100, lr=1e-4):
 
 | Step | Operation | Weight Update | Memory | Model State |
 |------|-----------|--------------|--------|-------------|
-| 1 | Freeze base model | — | Full model (1.7GB) | All params frozen |
-| 2 | Add LoRA to q_proj (dim=1024, r=4) | 2 × 1024×4 = 8192 params | +32KB | Unfrozen A, B |
-| 3 | Add LoRA to v_proj (dim=1024, r=4) | 2 × 1024×4 = 8192 params | +32KB | Unfrozen A, B |
-| 4 | Forward pass with LoRA | — | Full model + LoRA | W' = W + BA |
-| 5 | Compute loss | — | — | MSE |
-| 6 | Backward pass | — | Gradients for A, B only | Frozen W unchanged |
-| 7 | Adam step | A: += 1e-4 * grad_A | — | LoRA weights update |
-| 8 | Repeat for 100 epochs | — | — | LoRA converges to "Van Gogh" distribution |
+| 1 | Freeze base model | â€” | Full model (1.7GB) | All params frozen |
+| 2 | Add LoRA to q_proj (dim=1024, r=4) | 2 Ã— 1024Ã—4 = 8192 params | +32KB | Unfrozen A, B |
+| 3 | Add LoRA to v_proj (dim=1024, r=4) | 2 Ã— 1024Ã—4 = 8192 params | +32KB | Unfrozen A, B |
+| 4 | Forward pass with LoRA | â€” | Full model + LoRA | W' = W + BA |
+| 5 | Compute loss | â€” | â€” | MSE |
+| 6 | Backward pass | â€” | Gradients for A, B only | Frozen W unchanged |
+| 7 | Adam step | A: += 1e-4 * grad_A | â€” | LoRA weights update |
+| 8 | Repeat for 100 epochs | â€” | â€” | LoRA converges to "Van Gogh" distribution |
 | 9 | Inference: merge or keep | BA merged into W | Same as base | No speed change |
-| 10 | Generate | — | — | "A cat in Van Gogh style" works |
+| 10 | Generate | â€” | â€” | "A cat in Van Gogh style" works |
 
 **Why LoRA saves so much memory:** Instead of updating 1.7 billion parameters, you update only ~100K parameters. One adapter file is ~5MB instead of ~7GB.
 
@@ -1312,13 +1312,13 @@ from diffusers.loaders import AttnProcsLayers
 from diffusers.models.attention_processor import LoRAAttnProcessor
 import torch
 
-# ── Load base model ──
+# â”€â”€ Load base model â”€â”€
 pipe = StableDiffusionPipeline.from_pretrained(
     "runwayml/stable-diffusion-v1-5",
     torch_dtype=torch.float16,
 ).to("cuda")
 
-# ── Inject LoRA ──
+# â”€â”€ Inject LoRA â”€â”€
 unet = pipe.unet
 lora_attn_procs = {}
 for name in unet.attn_processors.keys():
@@ -1327,18 +1327,18 @@ for name in unet.attn_processors.keys():
             hidden_size=unet.config.cross_attention_dim,
             rank=4,
         )
-    elif "attn2" in name:  # Cross-attention (text → image)
+    elif "attn2" in name:  # Cross-attention (text â†’ image)
         lora_attn_procs[name] = LoRAAttnProcessor(
             hidden_size=unet.config.cross_attention_dim,
             rank=4,
         )
 unet.set_attn_processor(lora_attn_procs)
 
-# ── Only LoRA params require gradients ──
+# â”€â”€ Only LoRA params require gradients â”€â”€
 lora_layers = AttnProcsLayers(unet.attn_processors)
 optimizer = torch.optim.AdamW(lora_layers.parameters(), lr=1e-4)
 
-# ── Training loop (simplified) ──
+# â”€â”€ Training loop (simplified) â”€â”€
 for step, batch in enumerate(train_dataloader):
     latents = batch["latents"].to("cuda")
     noise = torch.randn_like(latents)
@@ -1352,9 +1352,9 @@ for step, batch in enumerate(train_dataloader):
     optimizer.step()
     optimizer.zero_grad()
 
-# ── Save LoRA weights ──
+# â”€â”€ Save LoRA weights â”€â”€
 torch.save(lora_layers.state_dict(), "my_style_lora.safetensors")
-print(f"LoRA weights saved (~5MB) — {lora_layers.num_parameters():,} params trainable")
+print(f"LoRA weights saved (~5MB) â€” {lora_layers.num_parameters():,} params trainable")
 ```
 
 ### Complexity Analysis
@@ -1373,7 +1373,7 @@ print(f"LoRA weights saved (~5MB) — {lora_layers.num_parameters():,} params tr
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Drastically reduces storage (GB → MB per variant) | Low rank may not capture complex concepts |
+| Drastically reduces storage (GB â†’ MB per variant) | Low rank may not capture complex concepts |
 | Fast training (hours vs days) | Cannot fundamentally change model behavior |
 | No inference latency increase (when merged) | Requires careful hyperparameter tuning |
 | Multiple adapters can be composed | Overfitting risk with very small datasets (< 5 images) |
@@ -1388,11 +1388,11 @@ print(f"LoRA weights saved (~5MB) — {lora_layers.num_parameters():,} params tr
 
 3. **Concept Entanglement:** With multiple LoRA adapters stacked, concepts can blend in unintended ways. Mitigation: use separate adapter files and only load one at a time, or use weight blending.
 
-4. **Resolution Mismatch:** Fine-tuning on low-resolution images degrades high-resolution generation. Mitigation: resize all training images to the model's native resolution (typically 512×512).
+4. **Resolution Mismatch:** Fine-tuning on low-resolution images degrades high-resolution generation. Mitigation: resize all training images to the model's native resolution (typically 512Ã—512).
 
 5. **Trigger Token Conflict:** The chosen trigger word (e.g., "sks") may already have meaning in the model. Mitigation: use rare token combinations, verify the trigger is not already strongly associated.
 
-> **One-Sentence Takeaway:** LoRA adapts large generative models to new domains by training tiny rank-decomposition matrices while freezing the base model — enabling custom variants that are 1000× smaller than full copies.
+> **One-Sentence Takeaway:** LoRA adapts large generative models to new domains by training tiny rank-decomposition matrices while freezing the base model â€” enabling custom variants that are 1000Ã— smaller than full copies.
 
 ---
 
@@ -1407,29 +1407,29 @@ RAG combines a retrieval system (search over a knowledge base) with a generative
 
 ```
 User Query
-    │
-    ▼
-┌─────────────────────┐    ┌───────────────────┐
-│   Embedding Model   │───→│  Vector Database   │
-│   (e.g., text-      │    │  (e.g., Pinecone,  │
-│    embedding-ada)   │    │   Chroma, FAISS)   │
-└─────────────────────┘    └───────────────────┘
-                                   │
+    â”‚
+    â–¼
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚   Embedding Model   â”‚â”€â”€â”€â†’â”‚  Vector Database   â”‚
+â”‚   (e.g., text-      â”‚    â”‚  (e.g., Pinecone,  â”‚
+â”‚    embedding-ada)   â”‚    â”‚   Chroma, FAISS)   â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                                   â”‚
                            Retrieved Chunks
-                                   │
-                                   ▼
-┌─────────────────────────────────────────┐
-│           Prompt Constructor            │
-│  "Answer based on: [chunks]...[query]"  │
-└─────────────────────────────────────────┘
-                   │
-                   ▼
-┌─────────────────────────────────────────┐
-│         LLM (GPT-4, Claude, etc.)       │
-│  Generates answer grounded in chunks    │
-└─────────────────────────────────────────┘
-                   │
-                   ▼
+                                   â”‚
+                                   â–¼
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚           Prompt Constructor            â”‚
+â”‚  "Answer based on: [chunks]...[query]"  â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                   â”‚
+                   â–¼
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚         LLM (GPT-4, Claude, etc.)       â”‚
+â”‚  Generates answer grounded in chunks    â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                   â”‚
+                   â–¼
             Grounded Answer + Citations
 ```
 
@@ -1455,7 +1455,7 @@ User Query
 
 
 ```
-// ── INDEXING ──
+// â”€â”€ INDEXING â”€â”€
 FUNCTION index_documents(documents, embed_model, vector_db):
     FOR doc IN documents:
         chunks = split_into_chunks(doc, chunk_size=512, overlap=64)
@@ -1464,7 +1464,7 @@ FUNCTION index_documents(documents, embed_model, vector_db):
             vector_db.insert(embedding, metadata={"text": chunk, "source": doc.name})
     RETURN vector_db
 
-// ── QUERY ──
+// â”€â”€ QUERY â”€â”€
 FUNCTION rag_query(query, embed_model, vector_db, llm, top_k=5):
     // Retrieve
     query_embedding = embed_model.encode(query)
@@ -1499,8 +1499,8 @@ FUNCTION rag_query(query, embed_model, vector_db, llm, top_k=5):
 | Step | Operation | Detail | Result |
 |------|-----------|--------|--------|
 | 1 | Chunk document | Doc: "Transformers use attention. CNNs use convolution." | Chunk 1: "Transformers use attention" |
-| 2 | Chunk document | — | Chunk 2: "CNNs use convolution for vision" |
-| 3 | Chunk document | — | Chunk 3: "Attention mechanisms weigh input importance" |
+| 2 | Chunk document | â€” | Chunk 2: "CNNs use convolution for vision" |
+| 3 | Chunk document | â€” | Chunk 3: "Attention mechanisms weigh input importance" |
 | 4 | Embed chunks | embed("Transformers use attention") | [0.2, 0.8, 0.3, 0.1] |
 | 5 | Embed chunks | embed("CNNs use convolution for vision") | [0.9, 0.1, 0.7, 0.5] |
 | 6 | Embed chunks | embed("Attention mechanisms weigh...") | [0.3, 0.7, 0.2, 0.2] |
@@ -1523,7 +1523,7 @@ from langchain.chains import RetrievalQA
 from langchain.document_loaders import TextLoader
 import torch
 
-# ── 1. Load and Chunk Documents ──
+# â”€â”€ 1. Load and Chunk Documents â”€â”€
 loader = TextLoader("knowledge_base.txt")
 documents = loader.load()
 
@@ -1535,7 +1535,7 @@ text_splitter = RecursiveCharacterTextSplitter(
 chunks = text_splitter.split_documents(documents)
 print(f"Created {len(chunks)} chunks")
 
-# ── 2. Create Embeddings and Vector Store ──
+# â”€â”€ 2. Create Embeddings and Vector Store â”€â”€
 embedding_model = HuggingFaceEmbeddings(
     model_name="sentence-transformers/all-MiniLM-L6-v2",
 )
@@ -1545,7 +1545,7 @@ vectorstore = Chroma.from_documents(
     persist_directory="./chroma_db",
 )
 
-# ── 3. Create RAG Chain ──
+# â”€â”€ 3. Create RAG Chain â”€â”€
 llm = HuggingFacePipeline.from_model_id(
     model_id="microsoft/phi-2",
     task="text-generation",
@@ -1563,7 +1563,7 @@ qa_chain = RetrievalQA.from_chain_type(
     return_source_documents=True,
 )
 
-# ── 4. Query ──
+# â”€â”€ 4. Query â”€â”€
 query = "What is the transformer architecture?"
 result = qa_chain({"query": query})
 
@@ -1614,7 +1614,7 @@ results = hybrid_retriever.get_relevant_documents(query)
 | Knowledge is always up-to-date (update index) | Retrieval quality depends on chunking strategy |
 | Grounded answers with citations | Additional infrastructure (vector DB, embed model) |
 | No retraining needed for new knowledge | Requires careful prompt construction |
-| Works with proprietary/private documents | Failure cascade: bad retrieval → bad answer |
+| Works with proprietary/private documents | Failure cascade: bad retrieval â†’ bad answer |
 | Reduces hallucination significantly | Embedding dimension mismatch between models |
 | Scalable to millions of documents | Longer context = higher cost + latency |
 
@@ -1635,17 +1635,17 @@ results = hybrid_retriever.get_relevant_documents(query)
 
 ---
 
-## 4.9 GAN vs VAE vs Diffusion — Comparison Table
+## 4.9 GAN vs VAE vs Diffusion â€” Comparison Table
 
 | Aspect | GAN | VAE | Diffusion |
 |--------|-----|-----|-----------|
 | **Core Idea** | Adversarial game (G vs D) | Variational inference (ELBO) | Iterative denoising |
-| **Training Stability** | Low — oscillating loss, mode collapse | High — single objective | Very High — simple MSE loss |
+| **Training Stability** | Low â€” oscillating loss, mode collapse | High â€” single objective | Very High â€” simple MSE loss |
 | **Output Quality** | Sharp, realistic | Blurry, smooth | State-of-the-art |
 | **Output Diversity** | Low (mode collapse risk) | High (smooth latent) | Very High |
 | **Inference Speed** | Fast (1 forward pass) | Fast (1 forward pass) | Slow (25-1000 steps) |
 | **Latent Space** | Discontinuous, hard to interpret | Smooth, well-structured | No compact latent space |
-| **Interpolation** | Poor — mode hopping | Excellent — smooth morphing | Poor — no meaningful interpolation |
+| **Interpolation** | Poor â€” mode hopping | Excellent â€” smooth morphing | Poor â€” no meaningful interpolation |
 | **Training Cost** | Moderate | Low | High (large U-Net) |
 | **Likelihood Estimates** | No | Yes (ELBO bound) | Approximate |
 | **Text Conditioning** | Complex (needs auxiliary) | Possible (CVAE) | Natural (cross-attention) |
@@ -1665,7 +1665,7 @@ results = hybrid_retriever.get_relevant_documents(query)
 | Anomaly detection on images | VAE | Reconstruction loss as anomaly score |
 | Super-resolution | GAN | Sharp upscaling (ESRGAN) |
 | Diverse creative exploration | Diffusion | Highest diversity per prompt |
-| Interpreting latent factors | VAE | Disentangled representations (β-VAE) |
+| Interpreting latent factors | VAE | Disentangled representations (Î²-VAE) |
 | Limited GPU budget | VAE or GAN | Smaller models, lower compute |
 
 ---
@@ -1677,7 +1677,7 @@ results = hybrid_retriever.get_relevant_documents(query)
 
 | Question | Answer |
 |----------|--------|
-| **How do you write effective prompts for text-to-image models?** | Use the SCEQ framework: Subject + Context + Environment + Style + Quality. Always pair with a negative prompt removing common artifacts (blurry, distorted, extra limbs). Use weight syntax `(keyword:1.2)` to emphasize critical elements. Iterate — rarely does the first prompt give the perfect result. |
+| **How do you write effective prompts for text-to-image models?** | Use the SCEQ framework: Subject + Context + Environment + Style + Quality. Always pair with a negative prompt removing common artifacts (blurry, distorted, extra limbs). Use weight syntax `(keyword:1.2)` to emphasize critical elements. Iterate â€” rarely does the first prompt give the perfect result. |
 | **What is a negative prompt and why is it important?** | A negative prompt tells the model what NOT to generate. Without it, common artifacts like distorted hands, bad anatomy, and blurry regions appear frequently. A well-crafted negative prompt is often more effective than tweaking the positive prompt. |
 | **How do you handle the 77-token limit in Stable Diffusion prompts?** | Prioritize the most critical information first. Use compressed phrases ("golden hour lighting" instead of "lighting that occurs during the golden hour"). For complex scenes, use regional prompting or generate multiple images and composite. |
 | **What is classifier-free guidance (CFG)?** | CFG controls how strongly the model adheres to the prompt. Scale 1.0 = no conditioning (ignores prompt), 7-12 = standard, >15 = overly saturated, unnatural results. Lower CFG gives more creative freedom; higher CFG gives stricter adherence. |
@@ -1699,7 +1699,7 @@ results = hybrid_retriever.get_relevant_documents(query)
 | **Latency overhead** | None (merged weights) | +50-200ms (retrieval) | +50-200ms |
 
 **Interview Answer Framework:**
-"When should you use fine-tuning vs RAG? Fine-tuning is best for adapting behavior, style, or output format — for example, making a model speak like Shakespeare or generate code in your company's style. RAG is best for grounding answers in factual knowledge that changes frequently — like a customer support bot that needs to reference the latest product documentation. In production, the best systems often combine both: fine-tune for tone and style, RAG for knowledge."
+"When should you use fine-tuning vs RAG? Fine-tuning is best for adapting behavior, style, or output format â€” for example, making a model speak like Shakespeare or generate code in your company's style. RAG is best for grounding answers in factual knowledge that changes frequently â€” like a customer support bot that needs to reference the latest product documentation. In production, the best systems often combine both: fine-tune for tone and style, RAG for knowledge."
 
 ### Safety and Responsibility
 
@@ -1708,7 +1708,7 @@ results = hybrid_retriever.get_relevant_documents(query)
 |----------|--------|
 | **What safety measures do generative models need in production?** | (1) NSFW content filtering on all outputs, (2) Rate limiting to prevent abuse, (3) Usage logging with prompt, user, timestamp for audit trails, (4) Watermarking generated content, (5) Bias auditing across demographic groups, (6) Prompt injection protections for LLMs. |
 | **What is model bias in generative AI?** | Models reflect biases in their training data. If a model is trained mostly on Western faces, it will generate poorer results for non-Western features. Mitigation: curate diverse training data, test prompts across demographics, use debiasing techniques. |
-| **How do you detect AI-generated content?** | Statistical detectors (GPTZero, Originality.ai), watermarking (latent watermarks in diffusion outputs), metadata analysis, and human review. No method is perfect — detection is an arms race. |
+| **How do you detect AI-generated content?** | Statistical detectors (GPTZero, Originality.ai), watermarking (latent watermarks in diffusion outputs), metadata analysis, and human review. No method is perfect â€” detection is an arms race. |
 | **What is prompt injection and how do you prevent it?** | Prompt injection is when a user tricks an LLM into ignoring its system prompt or performing unauthorized actions. Prevention: input sanitization, delimiter-based separation of user input, least-privilege system prompts, output filtering. |
 | **How do you handle copyright concerns with generative AI?** | Use licensed training data, implement style blockers (prevent mimicking living artists), add invisible watermarks, have a takedown process, and follow platform terms of service. The legal landscape is still evolving. |
 
@@ -1725,7 +1725,7 @@ A: Mode collapse is when a GAN generator produces limited varieties of outputs (
 A: They require 25-1000 sequential denoising passes. Speed-ups: use DPM++ or DDIM schedulers to reduce steps from 1000 to 25-50, use LCM-LoRA for 1-4 step generation, or distill into a student model.
 
 **Q: What is the reparameterization trick and why is it needed?**
-A: In VAEs, we sample $$z \sim N(\mu, \sigma^2)$$ which is non-differentiable. The reparameterization trick rewrites this as $$z = \mu + \sigma \cdot \epsilon$$ where $$\epsilon \sim N(0, I)$$ — now gradients can flow through $$\mu$$ and $$\sigma$$ because the randomness is isolated in $$\epsilon$$.
+A: In VAEs, we sample $$z \sim N(\mu, \sigma^2)$$ which is non-differentiable. The reparameterization trick rewrites this as $$z = \mu + \sigma \cdot \epsilon$$ where $$\epsilon \sim N(0, I)$$ â€” now gradients can flow through $$\mu$$ and $$\sigma$$ because the randomness is isolated in $$\epsilon$$.
 
 **Q: How would you build a production text-to-image service?**
 A: (1) Load base diffusion model with fp16, (2) Add LoRA adapters for custom styles, (3) Use DPMSolver scheduler for faster inference, (4) Queue requests with a task broker (Redis), (5) Run multiple GPU workers, (6) Apply NSFW filter before returning, (7) Cache common prompts, (8) Log everything for audit and improvement.
@@ -1734,10 +1734,10 @@ A: (1) Load base diffusion model with fp16, (2) Add LoRA adapters for custom sty
 
 ## 4.11 Applications in Real Systems
 
-### DALL·E 3 (OpenAI)
+### DALLÂ·E 3 (OpenAI)
 
 
-- **Under the hood:** Diffusion model (unconfirmed details — likely a latent diffusion model with transformer text encoder)
+- **Under the hood:** Diffusion model (unconfirmed details â€” likely a latent diffusion model with transformer text encoder)
 - **Key innovation:** Tight text-image alignment via image captioning during training
 - **API access:** Via OpenAI API (`dalle-3` model), integrates into ChatGPT Plus
 - **Unique features:** Precise text rendering, strong prompt adherence, automatic prompt refinement
@@ -1747,7 +1747,7 @@ A: (1) Load base diffusion model with fp16, (2) Add LoRA adapters for custom sty
 
 
 - **Under the hood:** Decoder-only transformer with RLHF (Reinforcement Learning from Human Feedback)
-- **Key innovation:** Instruction-following, multi-turn conversation, tool use (code interpreter, browsing, DALL·E)
+- **Key innovation:** Instruction-following, multi-turn conversation, tool use (code interpreter, browsing, DALLÂ·E)
 - **API access:** Via OpenAI API, Azure OpenAI Service
 - **Unique features:** Massive world knowledge, code generation and execution, multimodal (GPT-4V)
 - **Use cases:** Programming assistance, writing, analysis, customer support, tutoring
@@ -1756,7 +1756,7 @@ A: (1) Load base diffusion model with fp16, (2) Add LoRA adapters for custom sty
 
 
 - **Under the hood:** Modified diffusion model with proprietary architecture
-- **Key innovation:** Aesthetic quality optimization — outputs are consistently more "artistic" than competitors
+- **Key innovation:** Aesthetic quality optimization â€” outputs are consistently more "artistic" than competitors
 - **API access:** Discord-based, standalone web app (alpha)
 - **Unique features:** Style consistency across generations, strong community, upscaling, variations, inpainting
 - **Use cases:** Concept art, game design, architectural visualization, branding
@@ -1765,7 +1765,7 @@ A: (1) Load base diffusion model with fp16, (2) Add LoRA adapters for custom sty
 
 
 - **Under the hood:** Codex model (GPT architecture fine-tuned on public code repositories)
-- **Key innovation:** Fill-in-the-middle (FIM) training — predicts code in the middle of a file given surrounding context
+- **Key innovation:** Fill-in-the-middle (FIM) training â€” predicts code in the middle of a file given surrounding context
 - **API access:** IDE extensions (VS Code, JetBrains, Neovim) and Copilot Chat
 - **Unique features:** Real-time code completion, multi-line suggestions, context-aware, supports 100+ languages
 - **Use cases:** Software development, code generation, test writing, documentation
@@ -1773,7 +1773,7 @@ A: (1) Load base diffusion model with fp16, (2) Add LoRA adapters for custom sty
 ### Stable Diffusion (Stability AI)
 
 
-- **Under the hood:** Latent Diffusion Model (LDM) — diffusion in a compressed latent space
+- **Under the hood:** Latent Diffusion Model (LDM) â€” diffusion in a compressed latent space
 - **Key innovation:** Open-source, runs on consumer GPUs, highly extensible (LoRA, ControlNet, DreamBooth)
 - **API access:** HuggingFace Diffusers, Replicate, Stability AI API, local inference
 - **Unique features:** Full model access, fine-tuning, community ecosystem (CivitAI, automatic1111 webui)
@@ -1784,7 +1784,7 @@ A: (1) Load base diffusion model with fp16, (2) Add LoRA adapters for custom sty
 
 | System | Base Architecture | Strengths | Weaknesses | Open Source | API Cost |
 |--------|-------------------|-----------|------------|-------------|----------|
-| DALL·E 3 | Diffusion | Best prompt following | Less creative freedom | No | $$$ |
+| DALLÂ·E 3 | Diffusion | Best prompt following | Less creative freedom | No | $$$ |
 | ChatGPT/GPT-4 | Transformer (decoder) | Multimodal, tool use, coding | Prone to hallucination | No | $$-$$$ |
 | Midjourney | Diffusion | Artistic quality, style | Less controllable | No | $$ |
 | GitHub Copilot | Transformer (FIM) | Code-specific, IDE integration | Limited to code | No | $ |
@@ -1794,7 +1794,7 @@ A: (1) Load base diffusion model with fp16, (2) Add LoRA adapters for custom sty
 
 ## 4.12 Evaluation of Generative Models
 
-### 4.12.1 FID Score (Fréchet Inception Distance)
+### 4.12.1 FID Score (FrÃ©chet Inception Distance)
 
 
 FID measures the distance between real and generated image distributions using Inception features. Lower is better.
@@ -1821,14 +1821,14 @@ def calculate_fid(real_features: np.ndarray, gen_features: np.ndarray) -> float:
 
 | Metric | What It Measures | Range | Used For |
 |--------|-----------------|-------|----------|
-| **FID** | Distribution similarity | 0-∞ (lower = better) | Image quality and diversity |
-| **IS (Inception Score)** | Classifiability + diversity | 1-∞ (higher = better) | GAN evaluation |
+| **FID** | Distribution similarity | 0-âˆž (lower = better) | Image quality and diversity |
+| **IS (Inception Score)** | Classifiability + diversity | 1-âˆž (higher = better) | GAN evaluation |
 | **CLIP Score** | Text-image alignment | 0-100 (higher = better) | Text-to-image faithfulness |
-| **Perplexity** | Model confidence | 1-∞ (lower = better) | LLM quality |
+| **Perplexity** | Model confidence | 1-âˆž (lower = better) | LLM quality |
 | **BLEU / ROUGE** | N-gram overlap with reference | 0-1 (higher = better) | Translation, summarization |
 | **Human Evaluation** | Subjective quality rating | 1-5 Likert scale | Gold standard |
 
-> **⚠️ Warning:** FID requires a large sample size (5,000-50,000 images) for stable results. Small sample sizes produce noisy, unreliable scores. Always report the sample size alongside the FID value.
+> **âš ï¸ Warning:** FID requires a large sample size (5,000-50,000 images) for stable results. Small sample sizes produce noisy, unreliable scores. Always report the sample size alongside the FID value.
 
 > **One-Sentence Takeaway:** FID score quantifies the similarity between real and generated image distributions, with lower values indicating higher quality generations.
 
@@ -1853,7 +1853,7 @@ for rule, desc in guidelines.items():
     print(f"{rule}: {desc}")
 ```
 
-> **⚠️ Warning:** Generative models can amplify societal biases present in training data. Always audit outputs across demographic groups and apply content safety filters before returning results to users.
+> **âš ï¸ Warning:** Generative models can amplify societal biases present in training data. Always audit outputs across demographic groups and apply content safety filters before returning results to users.
 
 > **One-Sentence Takeaway:** Responsible generative AI requires watermarking, NSFW filtering, bias auditing, usage logging, and rate limiting as fundamental production safeguards.
 
@@ -1878,12 +1878,12 @@ for rule, desc in guidelines.items():
 | Category | Key Tool / Technique |
 |----------|---------------------|
 | GAN Training | `torch.nn.BCELoss`, alternating D/G updates, Adam (lr=0.0002), label smoothing |
-| VAE | Encoder → mu/logvar → reparameterize → decoder + KL loss + MSE |
+| VAE | Encoder â†’ mu/logvar â†’ reparameterize â†’ decoder + KL loss + MSE |
 | Text-to-Image | `StableDiffusionPipeline.from_pretrained` with DPMSolver |
 | Image-to-Image | `StableDiffusionImg2ImgPipeline` with strength parameter |
 | Inpainting | `StableDiffusionInpaintPipeline` with mask image |
-| LoRA Training | Freeze base → inject rank-4 matrices → train adapters only |
-| RAG Pipeline | Chunk → Embed → Store → Retrieve → Augment → Generate |
+| LoRA Training | Freeze base â†’ inject rank-4 matrices â†’ train adapters only |
+| RAG Pipeline | Chunk â†’ Embed â†’ Store â†’ Retrieve â†’ Augment â†’ Generate |
 | Prompt Structure | Subject + Context + Environment + Style + Quality |
 | Evaluation | FID score, CLIP score, human evaluation |
 | Safety | NSFW filter, watermarking, rate limiting, audit logging |
@@ -1910,7 +1910,7 @@ for rule, desc in guidelines.items():
 - **GANs** use adversarial training (generator vs discriminator) for sharp image synthesis but are hard to train with mode collapse risks.
 - **VAEs** provide stable training and smooth latent spaces suitable for interpolation and anomaly detection, though outputs are blurrier.
 - **Diffusion models** (Stable Diffusion) produce state-of-the-art results with flexible text conditioning but require 25-1000 sequential denoising steps at inference.
-- **Transformers** (GPT, Codex) generate text and code auto-regressively — one token at a time — enabling flexible generation across domains.
+- **Transformers** (GPT, Codex) generate text and code auto-regressively â€” one token at a time â€” enabling flexible generation across domains.
 - **Prompt engineering** is critical: structure prompts as subject + context + environment + style + quality, and always include a negative prompt.
 - **LoRA** adapts large models efficiently by training tiny rank-decomposition matrices (MB vs GB per variant).
 - **RAG** reduces hallucination by grounding LLM outputs in retrieved external knowledge.
@@ -1957,7 +1957,7 @@ for rule, desc in guidelines.items():
 <details>
 <summary>Answer&lt;/summary&gt;
 
-**C.** The five recommended components are Subject, Action/Context, Environment, Style/Medium, and Quality — "price" is not a prompt component.
+**C.** The five recommended components are Subject, Action/Context, Environment, Style/Medium, and Quality â€” "price" is not a prompt component.
 </details>
 
 **Q4:** What does the reparameterization trick enable in VAEs?
@@ -1970,20 +1970,20 @@ for rule, desc in guidelines.items():
 <details>
 <summary>Answer&lt;/summary&gt;
 
-**B.** The reparameterization trick rewrites z = μ + σ·ε so that gradients can flow through μ and σ while the randomness is isolated in ε ∼ N(0, I).
+**B.** The reparameterization trick rewrites z = Î¼ + ÏƒÂ·Îµ so that gradients can flow through Î¼ and Ïƒ while the randomness is isolated in Îµ âˆ¼ N(0, I).
 </details>
 
 **Q5:** What is the primary benefit of using LoRA over full fine-tuning?
 
 - A. Higher quality results
-- B. Storage is 1000× smaller (MB vs GB) and training is faster
+- B. Storage is 1000Ã— smaller (MB vs GB) and training is faster
 - C. LoRA models do not need GPUs
 - D. LoRA works without any training data
 
 <details>
 <summary>Answer&lt;/summary&gt;
 
-**B.** LoRA trains only tiny rank-decomposition matrices (∼0.01% of total parameters), reducing storage from GB to MB and training from days to hours.
+**B.** LoRA trains only tiny rank-decomposition matrices (âˆ¼0.01% of total parameters), reducing storage from GB to MB and training from days to hours.
 </details>
 
 **Q6:** In a RAG pipeline, what is the main reason for chunking documents?
@@ -2003,7 +2003,7 @@ for rule, desc in guidelines.items():
 
 ## Exercises
 
-1. **Trains a DCGAN on CIFAR-10** (32×32 color images) for 100 epochs. Generate and save 16 sample images per epoch to visualize training progress. Monitor the D/G loss ratio and note when mode collapse occurs.
+1. **Trains a DCGAN on CIFAR-10** (32Ã—32 color images) for 100 epochs. Generate and save 16 sample images per epoch to visualize training progress. Monitor the D/G loss ratio and note when mode collapse occurs.
 
 2. **Build a VAE for anomaly detection:** Train on normal MNIST digits, encode/decode test images, and flag those with high reconstruction loss (>95th percentile). Compare performance with a simple autoencoder.
 

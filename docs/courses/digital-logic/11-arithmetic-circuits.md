@@ -1,4 +1,4 @@
-# Chapter 11: Arithmetic Circuits
+﻿# Chapter 11: Arithmetic Circuits
 
 > **Prereq:** Chapter 5 (Combinational Circuits) ? adders and ALUs provide the foundation for multiplication and division.
 > **Next:** Chapter 12 (Hardware Description Languages) ? arithmetic circuits are described in HDL for synthesis.
@@ -10,16 +10,16 @@ By the conclusion of this chapter, the student shall be able to:
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/digital-logic/11-arithmetic-circuits/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/digital-logic/11-arithmetic-circuits/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/digital-logic/11-arithmetic-circuits/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/digital-logic/11-arithmetic-circuits/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/digital-logic/11-arithmetic-circuits/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/digital-logic/11-arithmetic-circuits/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/digital-logic/11-arithmetic-circuits/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/digital-logic/11-arithmetic-circuits/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/digital-logic/11-arithmetic-circuits/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/digital-logic/11-arithmetic-circuits/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/digital-logic/11-arithmetic-circuits/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/digital-logic/11-arithmetic-circuits/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>

@@ -1,4 +1,4 @@
-# NIC Scientist B — Full-Length Mock Test
+﻿# NIC Scientist B â€” Full-Length Mock Test
 
 > **Exam:** National Informatics Centre (NIC) Scientist B  
 > **Total Questions:** 100 | **Duration:** 120 minutes | **Max Marks:** 100  
@@ -9,16 +9,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/mock-tests/02-nic-scientist-b/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/mock-tests/02-nic-scientist-b/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/mock-tests/02-nic-scientist-b/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/mock-tests/02-nic-scientist-b/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/mock-tests/02-nic-scientist-b/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/mock-tests/02-nic-scientist-b/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/mock-tests/02-nic-scientist-b/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/mock-tests/02-nic-scientist-b/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/mock-tests/02-nic-scientist-b/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/mock-tests/02-nic-scientist-b/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/mock-tests/02-nic-scientist-b/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/mock-tests/02-nic-scientist-b/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -42,7 +42,7 @@
 | CS Fundamentals | 45 min | 54 sec | Theory questions first, numerical last |
 | Programming | 30 min | 60 sec | Code reading first, then conceptual |
 | Aptitude | 20 min | 60 sec | Quant first, reasoning next, English last |
-| **Buffer** | **15 min** | — | Review marked questions |
+| **Buffer** | **15 min** | â€” | Review marked questions |
 
 ---
 
@@ -317,7 +317,7 @@ A) CPU is idle  B) The system spends more time paging than executing  C) There a
 
 **Explanation:** Thrashing occurs when a process does not have enough frames and constantly page faults, causing the system to spend most of its time swapping pages in and out rather than executing instructions.
 
-**Key Takeaway:** Thrashing = excessive paging. Solutions: Working set model, page fault frequency control,增加 frames.
+**Key Takeaway:** Thrashing = excessive paging. Solutions: Working set model, page fault frequency control,å¢žåŠ  frames.
 </details>
 
 ---
@@ -1005,7 +1005,7 @@ A) int ptr;  B) int *ptr;  C) int &ptr;  D) pointer int ptr;
 
 **Answer:** B) int *ptr;
 
-**Explanation:** In C, pointers are declared with *: int *ptr; declares a pointer to an integer. The * can be placed near the type (int* ptr) or the variable (int *ptr) — both are equivalent.
+**Explanation:** In C, pointers are declared with *: int *ptr; declares a pointer to an integer. The * can be placed near the type (int* ptr) or the variable (int *ptr) â€” both are equivalent.
 
 **Key Takeaway:** int *ptr = &x; assigns address of x to ptr. *ptr dereferences (accesses the value at the address).
 </details>
@@ -1142,12 +1142,12 @@ A) A function calling itself  B) A loop inside a function  C) Including a header
 
 **What is the JVM?**
 
-A) Java Virtual Machine — executes Java bytecode  B) Java Visual Method  C) Java Variable Manager  D) Java Virtual Memory
+A) Java Virtual Machine â€” executes Java bytecode  B) Java Visual Method  C) Java Variable Manager  D) Java Virtual Memory
 
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** A) Java Virtual Machine — executes Java bytecode
+**Answer:** A) Java Virtual Machine â€” executes Java bytecode
 
 **Explanation:** JVM is the runtime environment that executes Java bytecode (.class files). It provides platform independence (Write Once, Run Anywhere) by translating bytecode to native machine code.
 
@@ -1169,7 +1169,7 @@ A) extends  B) implements  C) inherits  D) derives
 
 **Explanation:** In Java, the 'extends' keyword is used for class inheritance. 'implements' is used to implement interfaces. Java supports single class inheritance but multiple interface implementation.
 
-**Key Takeaway:** class Child extends Parent { } — single inheritance. class Child implements Interface1, Interface2 { } — multiple interface implementation.
+**Key Takeaway:** class Child extends Parent { } â€” single inheritance. class Child implements Interface1, Interface2 { } â€” multiple interface implementation.
 </details>
 
 ---
@@ -1417,7 +1417,7 @@ A) Makes a method run faster  B) Ensures only one thread can access the method/b
 <details>
 <summary>Show Answer</summary>
 
-**Answer:** B) Ensures mutual exclusion — only one thread at a time
+**Answer:** B) Ensures mutual exclusion â€” only one thread at a time
 
 **Explanation:** synchronized methods/blocks prevent multiple threads from executing them concurrently, ensuring thread safety. Each object has an intrinsic lock (monitor). Only one thread can hold the lock at a time.
 
@@ -1473,7 +1473,7 @@ A) String is immutable; StringBuilder is mutable  B) String is mutable; StringBu
 
 **Answer:** A) String is immutable (cannot be changed after creation); StringBuilder is mutable
 
-**Explanation:** String objects are immutable — any modification creates a new String object. StringBuilder is mutable and efficient for string concatenation. StringBuffer is thread-safe (synchronized) version of StringBuilder.
+**Explanation:** String objects are immutable â€” any modification creates a new String object. StringBuilder is mutable and efficient for string concatenation. StringBuffer is thread-safe (synchronized) version of StringBuilder.
 
 **Key Takeaway:** Use String for fixed text. Use StringBuilder for frequent modifications. StringBuffer for multi-threaded modifications.
 </details>
@@ -1623,9 +1623,9 @@ A) 154 cm^2  B) 616 cm^2  C) 308 cm^2  D) 77 cm^2
 
 **Answer:** A) 154 cm^2
 
-**Explanation:** Circumference = 2πr = 44. r = 44/(2π) = 44 x 7/(2 x 22) = 7 cm. Area = πr^2 = (22/7) x 49 = 154 cm^2.
+**Explanation:** Circumference = 2Ï€r = 44. r = 44/(2Ï€) = 44 x 7/(2 x 22) = 7 cm. Area = Ï€r^2 = (22/7) x 49 = 154 cm^2.
 
-**Key Takeaway:** Circle formulas: C = 2πr, A = πr^2, D = 2r. Use π = 22/7 when radius is a multiple of 7.
+**Key Takeaway:** Circle formulas: C = 2Ï€r, A = Ï€r^2, D = 2r. Use Ï€ = 22/7 when radius is a multiple of 7.
 </details>
 
 ---
@@ -1960,10 +1960,10 @@ A) Malevolent  B) Kind  C) Cruel  D) Hostile
 
 | Score Range | Percentile Estimate | Interpretation |
 |-------------|--------------------|----------------|
-| 85-100 | 98-100 | Excellent — exam ready |
-| 70-84 | 90-98 | Very good — minor revision needed |
-| 55-69 | 75-90 | Good — focus on weak topics |
-| 40-54 | 50-75 | Average — significant improvement needed |
+| 85-100 | 98-100 | Excellent â€” exam ready |
+| 70-84 | 90-98 | Very good â€” minor revision needed |
+| 55-69 | 75-90 | Good â€” focus on weak topics |
+| 40-54 | 50-75 | Average â€” significant improvement needed |
 | Below 40 | Below 50 | Foundation work required |
 
 ---

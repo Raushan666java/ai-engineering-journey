@@ -1,4 +1,4 @@
-# Chapter 15: B-Trees and B+ Trees
+﻿# Chapter 15: B-Trees and B+ Trees
 
 **Prev:** [Chapter 14: Red-Black Trees](14-red-black.md) | **Next:** [Chapter 16: Trie (Prefix Tree)](16-trie.md)
 
@@ -9,16 +9,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-structures/15-b-trees/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/data-structures/15-b-trees/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/15-b-trees/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/data-structures/15-b-trees/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-structures/15-b-trees/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/data-structures/15-b-trees/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/15-b-trees/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/data-structures/15-b-trees/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/data-structures/15-b-trees/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/data-structures/15-b-trees/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/data-structures/15-b-trees/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/data-structures/15-b-trees/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -32,19 +32,19 @@
 
 ## Why B-Trees Matter
 
-> **Real-World Analogy:** Imagine a library with 1 million books. A binary-search approach would require ~20 trips between shelves (each decision halves the search space). Now imagine you could grab an entire shelf of 500 books at once — each trip gives you 500 choices instead of 2. A B-tree is exactly that: instead of binary decisions, each "shelf" (node) holds hundreds of keys, so finding any book among 1 billion takes only 3-4 trips. This is why databases use B-trees — disk reads are slow, so maximizing keys-per-read minimizes I/O.
+> **Real-World Analogy:** Imagine a library with 1 million books. A binary-search approach would require ~20 trips between shelves (each decision halves the search space). Now imagine you could grab an entire shelf of 500 books at once â€” each trip gives you 500 choices instead of 2. A B-tree is exactly that: instead of binary decisions, each "shelf" (node) holds hundreds of keys, so finding any book among 1 billion takes only 3-4 trips. This is why databases use B-trees â€” disk reads are slow, so maximizing keys-per-read minimizes I/O.
 
-Traditional BSTs and AVL trees have branching factor 2 — each node has 1 key and 2 children. For 1 billion keys, an AVL tree has height ~30-45. Each level = one disk read. At 10ms per disk seek, that's 300-450ms per query. A B-tree of order 1000 has height ≤ 3 — that's 30ms. B-trees are not just "better balanced trees"; they are the bridge between algorithmic efficiency and physical storage reality.
+Traditional BSTs and AVL trees have branching factor 2 â€” each node has 1 key and 2 children. For 1 billion keys, an AVL tree has height ~30-45. Each level = one disk read. At 10ms per disk seek, that's 300-450ms per query. A B-tree of order 1000 has height â‰¤ 3 â€” that's 30ms. B-trees are not just "better balanced trees"; they are the bridge between algorithmic efficiency and physical storage reality.
 
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| Order m | Max children per node = m | Higher order → shallower trees |
-| Node occupancy | At least ⌈m/2⌉ children, at most m | Prevents degenerate trees |
+| Order m | Max children per node = m | Higher order â†’ shallower trees |
+| Node occupancy | At least âŒˆm/2âŒ‰ children, at most m | Prevents degenerate trees |
 | Splitting | Full node splits in two, middle key rises | Propagation may reach root |
 | Merging | Underfull node borrows or merges with sibling | Maintains occupancy invariant |
-| Height bound | \(\log_{⌈m/2⌉} n\) | Order 1000 → height ≤ 3 for billions |
+| Height bound | \(\log_{âŒˆm/2âŒ‰} n\) | Order 1000 â†’ height â‰¤ 3 for billions |
 | B+ tree leaves | Linked list of data pages | Efficient range scans |
 
 ## Chapter Roadmap
@@ -55,9 +55,9 @@ flowchart TD
     B --> C[Node with m children max]
     C --> D[Insert Key]
     D --> E{Node Full?}
-    E --> F[No → Insert in sorted order]
-    E --> G[Yes → Split Node]
-    G --> H[Middle key → parent]
+    E --> F[No â†’ Insert in sorted order]
+    E --> G[Yes â†’ Split Node]
+    G --> H[Middle key â†’ parent]
     H --> I{Parent Full?}
     I --> G
     I --> J[Done]
@@ -74,7 +74,7 @@ flowchart TD
 ### B-Tree Definition and Properties
 
 
-**Real-World Analogy (Organization Chart):** A multinational corporation has a CEO (root), regional VPs (internal nodes), and team leads (leaves). No VP reports to a lower-level manager than their peers — all leaves are at the same depth. Each executive manages between a minimum and maximum number of direct reports to avoid both underutilization and overload. This is exactly the B-tree invariant.
+**Real-World Analogy (Organization Chart):** A multinational corporation has a CEO (root), regional VPs (internal nodes), and team leads (leaves). No VP reports to a lower-level manager than their peers â€” all leaves are at the same depth. Each executive manages between a minimum and maximum number of direct reports to avoid both underutilization and overload. This is exactly the B-tree invariant.
 
 #### Formal Definition
 
@@ -89,22 +89,22 @@ A B-tree of **order m** is a balanced search tree satisfying:
 **Example (order 5):** Internal nodes have 2-4 keys and 3-5 children. If any node drops below 2 keys, it must borrow or merge.
 
 ```
-        [30, 60, 90]                    ← root (3 keys, 4 children)
+        [30, 60, 90]                    â† root (3 keys, 4 children)
        /    |    |    \
-[10,20]  [40,50] [70,80] [100,110]      ← internal/leaf nodes
+[10,20]  [40,50] [70,80] [100,110]      â† internal/leaf nodes
 ```
 
 #### Properties
 
 | Property | Expression | Why It Matters |
 |----------|-----------|----------------|
-| Max keys per node | \(m-1\) | Determines node size → matches disk block |
+| Max keys per node | \(m-1\) | Determines node size â†’ matches disk block |
 | Min keys (non-root) | \(\lceil m/2 \rceil - 1\) | Prevents degenerate trees |
 | Max children | \(m\) | Branching factor |
-| Min children (non-root) | \(\lceil m/2 \rceil\) | Ensures ≥50% space utilization |
+| Min children (non-root) | \(\lceil m/2 \rceil\) | Ensures â‰¥50% space utilization |
 | Height bound | \(\log_{\lceil m/2 \rceil} n\) | Guarantees logarithmic performance |
 
-### Height Bound — Why It Matters
+### Height Bound â€” Why It Matters
 
 
 The height \( h \) of a B-tree of order \( m \) with \( n \) keys satisfies:
@@ -124,7 +124,7 @@ The height \( h \) of a B-tree of order \( m \) with \( n \) keys satisfies:
 ### Search Operation
 
 
-**Real-World Analogy (Dictionary with Guide Tabs):** A dictionary has guide words at the top of each page. To find "elephant", you flip to the section where guide words span "eagle–emerald", then narrow within that page. B-tree search is identical: at each node, you scan the keys (guide words) to pick the correct child pointer (page section).
+**Real-World Analogy (Dictionary with Guide Tabs):** A dictionary has guide words at the top of each page. To find "elephant", you flip to the section where guide words span "eagleâ€“emerald", then narrow within that page. B-tree search is identical: at each node, you scan the keys (guide words) to pick the correct child pointer (page section).
 
 #### Algorithm Steps
 
@@ -180,13 +180,13 @@ Initial tree:
 
 | Aspect | Complexity | Why |
 |--------|-----------|-----|
-| Time | \(O(\log_m n)\) | Height bound — each level narrows by branching factor |
+| Time | \(O(\log_m n)\) | Height bound â€” each level narrows by branching factor |
 | Disk I/Os | \(O(\log_m n)\) | Each node access = 1 disk read |
 | CPU (within node) | \(O(m)\) | Linear scan within a node |
-| Best case | \(O(\log_m n)\) | Same as worst — tree is always balanced |
+| Best case | \(O(\log_m n)\) | Same as worst â€” tree is always balanced |
 | Worst case | \(O(\log_m n)\) | Minimum occupancy still gives logarithmic height |
 
-**Why not O(log₂ n)?** In a BST, branching factor is 2, so height = log₂ n. In a B-tree of order 1000, branching factor is ~500, so height = log₅₀₀ n. For n = 10⁹: BST = 30 levels, B-tree = 3 levels. The logarithmic base matters enormously for disk-bound systems.
+**Why not O(logâ‚‚ n)?** In a BST, branching factor is 2, so height = logâ‚‚ n. In a B-tree of order 1000, branching factor is ~500, so height = logâ‚…â‚€â‚€ n. For n = 10â¹: BST = 30 levels, B-tree = 3 levels. The logarithmic base matters enormously for disk-bound systems.
 
 #### Edge Cases
 
@@ -333,7 +333,7 @@ class BTree {
 ### Insertion Operation
 
 
-**Real-World Analogy (Cafeteria Trays):** A cafeteria stacks trays in columns. Each column holds at most 5 trays. When a column is full and a new tray arrives, you split the column into two columns of 2 and 3 trays, and the middle tray becomes the label for both columns. If the row above is also full, the split propagates upward — sometimes requiring a new row entirely.
+**Real-World Analogy (Cafeteria Trays):** A cafeteria stacks trays in columns. Each column holds at most 5 trays. When a column is full and a new tray arrives, you split the column into two columns of 2 and 3 trays, and the middle tray becomes the label for both columns. If the row above is also full, the split propagates upward â€” sometimes requiring a new row entirely.
 
 #### Algorithm Steps
 
@@ -404,7 +404,7 @@ FUNCTION SPLIT_CHILD(parent, idx, child):
 
 #### Dry Run: Insert keys 10, 20, 30, 40, 50 into order-5 B-tree
 
-Order 5 → max 4 keys per node. Split trigger when inserting key 50.
+Order 5 â†’ max 4 keys per node. Split trigger when inserting key 50.
 
 **Step 1: Insert 10**
 ```
@@ -426,7 +426,7 @@ Order 5 → max 4 keys per node. Split trigger when inserting key 50.
 [10, 20, 30, 40]
 ```
 
-**Step 5: Insert 50 — node full, SPLIT!**
+**Step 5: Insert 50 â€” node full, SPLIT!**
 
 Middle key = 30. Left = [10,20], Right = [40,50]. Root = [30].
 
@@ -438,7 +438,7 @@ Middle key = 30. Left = [10,20], Right = [40,50]. Root = [30].
 
 #### Dry Run: Insert 5, 6, 7, 8, 9 into order-5 (continuing)
 
-**Step 6: Insert 5** → goes to left leaf
+**Step 6: Insert 5** â†’ goes to left leaf
 ```
      [30]
     /     \
@@ -452,8 +452,8 @@ Middle key = 30. Left = [10,20], Right = [40,50]. Root = [30].
 [5,6,10,20]  [40,50]
 ```
 
-**Step 8: Insert 7** → left leaf full (4 keys), SPLIT!
-Left leaf [5,6,10,20] after inserting 7 → [5,6,7,10,20]. Middle = 7. Left = [5,6], Right = [10,20].
+**Step 8: Insert 7** â†’ left leaf full (4 keys), SPLIT!
+Left leaf [5,6,10,20] after inserting 7 â†’ [5,6,7,10,20]. Middle = 7. Left = [5,6], Right = [10,20].
 
 ```
         [7, 30]
@@ -461,15 +461,15 @@ Left leaf [5,6,10,20] after inserting 7 → [5,6,7,10,20]. Middle = 7. Left = [5
    [5,6] [10,20] [40,50]
 ```
 
-**Step 9: Insert 8** → goes to middle leaf [10,20]
+**Step 9: Insert 8** â†’ goes to middle leaf [10,20]
 ```
         [7, 30]
        /   |    \
    [5,6] [8,10,20] [40,50]
 ```
 
-**Step 10: Insert 9** → middle leaf full → SPLIT!
-Middle = 10, left = [8,9], right = [20]. Promote 10 to parent. Parent [7,30] → [7,10,30].
+**Step 10: Insert 9** â†’ middle leaf full â†’ SPLIT!
+Middle = 10, left = [8,9], right = [20]. Promote 10 to parent. Parent [7,30] â†’ [7,10,30].
 
 ```
         [7, 10, 30]
@@ -487,7 +487,7 @@ Middle = 10, left = [8,9], right = [20]. Promote 10 to parent. Parent [7,30] →
 | Amortized splits | \(O(1)\) per insert | Most inserts don't trigger splits |
 | Worst-case splits | \(O(\log_m n)\) | Every level splits up to root |
 
-**Why splits stay rare:** Each split creates two nodes at least 50% full. To trigger another split, both halves must fill again — requiring at least \( \lceil m/2 \rceil - 1 \) more inserts per half. Only 1 in every ~\( m/2 \) inserts causes a split.
+**Why splits stay rare:** Each split creates two nodes at least 50% full. To trigger another split, both halves must fill again â€” requiring at least \( \lceil m/2 \rceil - 1 \) more inserts per half. Only 1 in every ~\( m/2 \) inserts causes a split.
 
 #### Edge Cases
 
@@ -711,12 +711,12 @@ class BTree {
 #### Algorithm Steps
 
 1. Find the key to delete.
-2. **Case 1: Key in leaf** — simply remove it. If the leaf has at least \(\lceil m/2 \rceil - 1\) keys after removal, done.
-3. **Case 2: Key in internal node** — find predecessor (max key in left subtree) or successor (min key in right subtree). Swap with the leaf key, then delete from leaf (now Case 1).
-4. **Case 3: Underflow** — after deletion, if node has fewer than \(\lceil m/2 \rceil - 1\) keys:
+2. **Case 1: Key in leaf** â€” simply remove it. If the leaf has at least \(\lceil m/2 \rceil - 1\) keys after removal, done.
+3. **Case 2: Key in internal node** â€” find predecessor (max key in left subtree) or successor (min key in right subtree). Swap with the leaf key, then delete from leaf (now Case 1).
+4. **Case 3: Underflow** â€” after deletion, if node has fewer than \(\lceil m/2 \rceil - 1\) keys:
    a. **Borrow from left sibling:** If left sibling has extra keys, rotate: sibling's rightmost key goes up to parent, parent key comes down.
    b. **Borrow from right sibling:** If right sibling has extra keys, rotate: sibling's leftmost key goes up to parent, parent key comes down.
-   c. **Merge with sibling:** If neither sibling has extra keys, merge — parent key comes down into merged node.
+   c. **Merge with sibling:** If neither sibling has extra keys, merge â€” parent key comes down into merged node.
 5. **Merge propagation:** If merging causes the parent to underflow, repeat step 4 upward.
 6. **Root underflow:** If the root becomes empty (0 keys), replace it with its only child.
 
@@ -785,7 +785,7 @@ Initial tree:
 [10,20]  [40,50] [70,80] [100,110]
 ```
 
-**Delete 20** (leaf, has extra keys — no underflow):
+**Delete 20** (leaf, has extra keys â€” no underflow):
 
 | Step | Action | Node State |
 |------|--------|-----------|
@@ -793,12 +793,12 @@ Initial tree:
 | 2 | Remove 20 | [10] |
 | 3 | [10] has 1 key, min = 2. Underflow! | |
 | 4 | Right sibling [40,50] has 2 keys (can spare 1) | Borrow from right |
-| 5 | Rotate: [40,50] → parent → [10] | |
+| 5 | Rotate: [40,50] â†’ parent â†’ [10] | |
 
 ```
-        [30, 60, 90]        →      [40, 60, 90]
+        [30, 60, 90]        â†’      [40, 60, 90]
        /    |    |    \            /    |    |    \
-   [10]  [40,50] [...]    →   [10,30] [50]      [...]
+   [10]  [40,50] [...]    â†’   [10,30] [50]      [...]
 ```
 
 Final after borrow:
@@ -808,20 +808,20 @@ Final after borrow:
 [10,30]  [50] [70,80] [100,110]
 ```
 
-**Delete 30** (internal node key — predecessor swap):
+**Delete 30** (internal node key â€” predecessor swap):
 
 | Step | Action | Node State |
 |------|--------|-----------|
 | 1 | Find 30 at child[0] leaf [10,30] | |
-| 2 | 30 in leaf node — remove | [10] (underflow!) |
+| 2 | 30 in leaf node â€” remove | [10] (underflow!) |
 | 3 | Right sibling [50] has 1 key (min=2). Cannot borrow. | Merge! |
-| 4 | Merge [10] + parent key 40 + [50] → [10,40,50] | |
-| 5 | Parent becomes [60,90] — valid | |
+| 4 | Merge [10] + parent key 40 + [50] â†’ [10,40,50] | |
+| 5 | Parent becomes [60,90] â€” valid | |
 
 ```
-        [40, 60, 90]        →        [60, 90]
+        [40, 60, 90]        â†’        [60, 90]
        /    |    |    \            /    |     \
-[10,30]  [50] [...]        →  [10,40,50]  [70,80] [100,110]
+[10,30]  [50] [...]        â†’  [10,40,50]  [70,80] [100,110]
 ```
 
 #### Complexity Analysis
@@ -844,7 +844,7 @@ Final after borrow:
 | Delete from leaf causing underflow (borrow available) | Rotate from sibling, parent key updated |
 | Delete from leaf causing underflow (no borrow) | Merge with sibling, parent key drops |
 | Delete internal node key (predecessor/successor swap) | Swap then delete from leaf |
-| Cascade merge reaches root | Root becomes empty → height decreases |
+| Cascade merge reaches root | Root becomes empty â†’ height decreases |
 | Empty tree | Nothing to delete |
 
 #### C++ Implementation (Deletion)
@@ -1215,7 +1215,7 @@ class BTree {
 
 | Advantages | Disadvantages |
 |------------|---------------|
-| Maintains ≥50% space utilization | Complex — 3 underflow handling cases |
+| Maintains â‰¥50% space utilization | Complex â€” 3 underflow handling cases |
 | Tree height never increases from deletion | Borrow/merge logic is error-prone |
 | Merges may reduce height (good) | Cascading merges can be expensive |
 | No garbage accumulation (unlike BST) | Must handle predecessor/successor swap |
@@ -1223,12 +1223,12 @@ class BTree {
 ### B+ Trees
 
 
-**Real-World Analogy (Library Index Card Catalog):** Imagine a library where the card catalog (internal nodes) only lists topic ranges — "A-F", "G-M", "N-Z" — with no actual books. To find a specific book, you look up the range, then go directly to the shelf (leaf) where all books in that range are stored. The shelves themselves are connected in alphabetical order, so browsing "G through K" means finding the first G-book, then walking forward shelf by shelf.
+**Real-World Analogy (Library Index Card Catalog):** Imagine a library where the card catalog (internal nodes) only lists topic ranges â€” "A-F", "G-M", "N-Z" â€” with no actual books. To find a specific book, you look up the range, then go directly to the shelf (leaf) where all books in that range are stored. The shelves themselves are connected in alphabetical order, so browsing "G through K" means finding the first G-book, then walking forward shelf by shelf.
 
 #### B+ Tree Properties
 
 1. All keys are stored in the leaves (data nodes).
-2. Internal nodes contain only routing keys — no data pointers.
+2. Internal nodes contain only routing keys â€” no data pointers.
 3. Leaves are linked in a sorted doubly-linked list.
 4. Internal nodes still obey B-tree occupancy rules.
 5. All leaves are at the same depth.
@@ -1274,7 +1274,7 @@ FUNCTION BPLUS_RANGE_SCAN(startKey, endKey):
 | Cache friendliness | Good | Better (smaller internal nodes) |
 
 **Why B+ trees dominate databases:**
-- Internal nodes pack more routing keys (no data → more keys per block → fanout is higher → tree is shorter)
+- Internal nodes pack more routing keys (no data â†’ more keys per block â†’ fanout is higher â†’ tree is shorter)
 - Range scans are a linear walk of leaf pointers (no back-tracking up the tree)
 - Clustered index scans are I/O-sequential (leaves are physically adjacent or linked)
 
@@ -1284,17 +1284,17 @@ B+ tree of order 4:
 ```
 Internal:        [50, 100]
                  /    |    \
-Leaves:    [10,30,50] → [60,80,100] → [120,150,200]
+Leaves:    [10,30,50] â†’ [60,80,100] â†’ [120,150,200]
 ```
 
 **Range query:** Find all keys between 20 and 90
 
 | Step | Action |
 |------|--------|
-| 1 | Search for key ≥ 20 at root [50,100] |
+| 1 | Search for key â‰¥ 20 at root [50,100] |
 | 2 | 20 &lt; 50, follow child[0] to leaf [10,30,50] |
 | 3 | Scan leaf: skip 10, output 30, 50 |
-| 4 | Follow leaf link → next leaf [60,80,100] |
+| 4 | Follow leaf link â†’ next leaf [60,80,100] |
 | 5 | Scan: output 60, 80. 100 > 90, stop. |
 | 6 | **Result:** 30, 50, 60, 80 |
 
@@ -1505,34 +1505,34 @@ class BPlusTree {
 
 ### Q1: Why are B-trees used for disk-based storage instead of BSTs or AVL trees?
 
-**Answer:** Disk I/O is ~10,000x slower than RAM access (10ms for a disk seek vs 1μs for RAM). In a BST with 1 billion keys, each lookup requires ~30 node traversals. Each traversal is a random disk read → 300ms per query. A B-tree of order 1000 packs 999 keys per node, so height ≤ 3 → only 3 random disk reads → 30ms per query. Additionally, B-tree node size is intentionally matched to disk blocks (usually 4KB-16KB), so each read brings in an entire node in one I/O operation.
+**Answer:** Disk I/O is ~10,000x slower than RAM access (10ms for a disk seek vs 1Î¼s for RAM). In a BST with 1 billion keys, each lookup requires ~30 node traversals. Each traversal is a random disk read â†’ 300ms per query. A B-tree of order 1000 packs 999 keys per node, so height â‰¤ 3 â†’ only 3 random disk reads â†’ 30ms per query. Additionally, B-tree node size is intentionally matched to disk blocks (usually 4KB-16KB), so each read brings in an entire node in one I/O operation.
 
-### Q2: B+ tree vs B-tree for range queries — explain the difference.
+### Q2: B+ tree vs B-tree for range queries â€” explain the difference.
 
 **Answer:** In a B-tree, a range query "find all keys between 10 and 100" works by:
-1. Find key 10 (O(log n)) — done.
-2. Find successor of 10 (backtrack to parent, follow next child) — another O(log n) worst case.
+1. Find key 10 (O(log n)) â€” done.
+2. Find successor of 10 (backtrack to parent, follow next child) â€” another O(log n) worst case.
 3. Repeat for each key in range: O(k log n) total.
 
 In a B+ tree:
-1. Find the leaf containing key 10 (O(log n)) — done.
+1. Find the leaf containing key 10 (O(log n)) â€” done.
 2. Walk the leaf's linked list forward until > 100.
 3. Total: O(log n + k).
 
-**Empirical:** For a range of 10,000 keys in a tree of 10⁹ keys, B+ tree does ~3 + 10,000 = 10,003 operations. B-tree does ~10,000 × 3 = 30,000 operations — 3x worse.
+**Empirical:** For a range of 10,000 keys in a tree of 10â¹ keys, B+ tree does ~3 + 10,000 = 10,003 operations. B-tree does ~10,000 Ã— 3 = 30,000 operations â€” 3x worse.
 
 ### Q3: How do you choose the order m of a B-tree?
 
 **Answer:** The order is chosen to make each node fit exactly into one disk block:
 \[ m = \frac{\text{block size} - \text{overhead}}{\text{key size} + \text{child pointer size}} \]
 
-| Block size | Typical m | Keys/node | Height for 10⁹ |
+| Block size | Typical m | Keys/node | Height for 10â¹ |
 |-----------|-----------|-----------|-----------------|
 | 4 KB | ~200 | ~199 | ~4 |
 | 8 KB | ~400 | ~399 | ~3 |
 | 16 KB | ~800 | ~799 | ~3 |
 
-MySQL InnoDB default page = 16KB → effective order ~1000 for 8-byte keys. The rule: maximize m within the block size to minimize tree height.
+MySQL InnoDB default page = 16KB â†’ effective order ~1000 for 8-byte keys. The rule: maximize m within the block size to minimize tree height.
 
 ### Q4: What happens when you insert into a B-tree in sorted order (ascending)?
 
@@ -1540,7 +1540,7 @@ MySQL InnoDB default page = 16KB → effective order ~1000 for 8-byte keys. The 
 
 ### Q5: What is fill factor and why does it matter?
 
-**Answer:** Fill factor measures how full the nodes are. B-tree minimum guarantee is 50% (by the ⌈m/2⌉ rule). Actual fill factor in practice is ~65-70% for random insert patterns. For B+ trees used as database indexes, a higher fill factor means fewer nodes → smaller tree height → better performance. MySQL InnoDB allows configuring the fill factor. A low fill factor (<50%) indicates a design problem — consider rebuilding the index.
+**Answer:** Fill factor measures how full the nodes are. B-tree minimum guarantee is 50% (by the âŒˆm/2âŒ‰ rule). Actual fill factor in practice is ~65-70% for random insert patterns. For B+ trees used as database indexes, a higher fill factor means fewer nodes â†’ smaller tree height â†’ better performance. MySQL InnoDB allows configuring the fill factor. A low fill factor (<50%) indicates a design problem â€” consider rebuilding the index.
 
 ### Q6: How do concurrent B-trees work (latching)?
 
@@ -1548,7 +1548,7 @@ MySQL InnoDB default page = 16KB → effective order ~1000 for 8-byte keys. The 
 1. Lock the root.
 2. Lock the child.
 3. If the child is not a split/merge risk, release the parent lock.
-4. Continue down — always holding at most 2 locks.
+4. Continue down â€” always holding at most 2 locks.
 
 For higher concurrency, **B-link trees** add sibling pointers at every level. A search that encounters a mid-split node can follow the sibling link without waiting for the split to complete. PostgreSQL uses a variant of this for its B-tree index concurrency.
 
@@ -1583,8 +1583,8 @@ CREATE TABLE users (
 CREATE INDEX idx_name ON users(name);
 
 -- Query uses B+ tree:
--- 1. Search idx_name B+ tree for 'Alice' → get primary key id
--- 2. Search primary key B+ tree for that id → get full row
+-- 1. Search idx_name B+ tree for 'Alice' â†’ get primary key id
+-- 2. Search primary key B+ tree for that id â†’ get full row
 SELECT * FROM users WHERE name = 'Alice';
 
 -- Range query is efficient on B+ tree:
@@ -1620,7 +1620,7 @@ db.sessions.createIndex({ createdAt: 1 }, { expireAfterSeconds: 3600 });
 
 ## Quick Reference: B-Tree Order and Height
 
-| Order (m) | Min Keys/Node | Max Keys/Node | Height for 10⁶ | Height for 10⁹ |
+| Order (m) | Min Keys/Node | Max Keys/Node | Height for 10â¶ | Height for 10â¹ |
 |-----------|---------------|---------------|----------------|----------------|
 | 3 | 1 | 2 | ~20 | ~30 |
 | 5 | 2 | 4 | ~10 | ~14 |
@@ -1669,7 +1669,7 @@ db.sessions.createIndex({ createdAt: 1 }, { expireAfterSeconds: 3600 });
 | Inserting into a full root before splitting | Root overflow must be handled by creating a new root | Split root at median, create new root with median key, two children |
 | Wrong key count after deletion (underflow) | Merging neighbors without ensuring correct total key count | After merge, parent loses one key; total = keys_left + 1 + keys_right |
 | Not handling deletion from internal nodes | Deleting an internal key requires finding predecessor/successor from leaf | Replace with inorder predecessor (max of left child) or successor (min of right child) |
-| Forgetting that all leaves must be at the same depth | B-tree property: all leaf nodes at level h | Verify tree after each operation — any leaf at different depth = violation |
+| Forgetting that all leaves must be at the same depth | B-tree property: all leaf nodes at level h | Verify tree after each operation â€” any leaf at different depth = violation |
 | Confusing B-tree with B+ tree (linked leaves) | B+ tree has all data in leaves with linked list; B-tree has data in all nodes | B-tree: data in every node; B+ tree: data only in leaves, leaves linked |
 
 ### TypeScript B-Tree Implementation (simplified)
@@ -1783,38 +1783,38 @@ function bTreeSearchRange(tree: BTree, low: number, high: number): number[] {
 ### Additional MCQs (GFG Pattern)
 
 9. **In a B-tree of order 5 (max 5 children), what is the maximum number of keys in a node?**
-   - a) 4 ✓
+   - a) 4 âœ“
    - b) 5
    - c) 3
    - d) 6
 
 10. **How many children does a node with k keys have in a B-tree (non-leaf, non-root)?**
     - a) k
-    - b) k + 1 ✓
+    - b) k + 1 âœ“
     - c) 2k
     - d) k - 1
 
 11. **What is the height bound of a B-tree with n keys and minimum degree t?**
-    - a) log₂n
-    - b) log_t(n) ✓
-    - c) log₂(t × n)
+    - a) logâ‚‚n
+    - b) log_t(n) âœ“
+    - c) logâ‚‚(t Ã— n)
     - d) n/t
 
 12. **Which operation is more efficient in a B+ tree compared to a standard B-tree?**
     - a) Point search
-    - b) Range queries ✓
+    - b) Range queries âœ“
     - c) Insertion
     - d) Deletion
 
 13. **In a B-tree deletion, when a node underflows after borrowing from a sibling fails:**
     - a) The node is deleted
-    - b) The node is merged with a sibling ✓
+    - b) The node is merged with a sibling âœ“
     - c) A new key is generated
     - d) The tree height increases
 
 14. **The primary reason databases use B-trees/B+ trees is:**
     - a) They use less memory than hash tables
-    - b) They minimize disk I/O by having a large branching factor ✓
+    - b) They minimize disk I/O by having a large branching factor âœ“
     - c) They are simpler to implement than AVL trees
     - d) They support O(1) key lookups
 
@@ -1846,7 +1846,7 @@ function bTreeSearchRange(tree: BTree, low: number, high: number): number[] {
 |----------|--------|---------|---------|--------|------------|
 | Data location | Internal + leaf nodes | Only leaf nodes | Internal + leaf | Leaf nodes | Internal + leaf |
 | Leaf linking | No | Yes (linked list) | No | No | No |
-| Min fill factor | t-1 | t-1 | ⌊(2t-1)/3⌋ ≤ keys ≤ 2t-1 | Variable | 1 key |
+| Min fill factor | t-1 | t-1 | âŒŠ(2t-1)/3âŒ‹ â‰¤ keys â‰¤ 2t-1 | Variable | 1 key |
 | Max keys per node | 2t-1 | 2t-1 | 2t-1 | Variable (MBR) | 3 keys |
 | Range query | O(log n + k) | O(log n + k) (faster due to links) | O(log n + k) | Variable | O(log n + k) |
 | Use case | General indexed data | Databases, file systems | Optimized B-tree | Spatial data | Teaching/intro |
@@ -1857,43 +1857,43 @@ function bTreeSearchRange(tree: BTree, low: number, high: number): number[] {
 
 2. **What happens when a B-tree node overflows?**
    - a) It is deleted
-   - b) It splits into two nodes ✅
+   - b) It splits into two nodes âœ…
    - c) Keys are discarded
    - d) The tree rebalances
 
 3. **What key advantage does a B+ tree have over a B-tree?**
    - a) Lower height
-   - b) Efficient range scans ✅
+   - b) Efficient range scans âœ…
    - c) Less memory
    - d) Simpler implementation
 
 4. **B-trees are designed for:**
    - a) In-memory computation
-   - b) Disk-block storage ✅
+   - b) Disk-block storage âœ…
    - c) Network communication
    - d) Cache optimization
 
 5. **What is the height bound of a B-tree of order m with n keys?**
    - a) \(\log m\)
-   - b) \(\log_{\lceil m/2 \rceil} n\) ✅
+   - b) \(\log_{\lceil m/2 \rceil} n\) âœ…
    - c) \(n/m\)
    - d) \(\log n\)
 
 6. **In a B+ tree, where is data stored?**
    - a) Internal nodes only
-   - b) Leaf nodes only ✅
+   - b) Leaf nodes only âœ…
    - c) Both internal and leaf nodes
    - d) Only in the root
 
 7. **What operation fixes a B-tree node with too few keys?**
    - a) Rotation
-   - b) Borrow or merge ✅
+   - b) Borrow or merge âœ…
    - c) Restructuring
    - d) Rebuilding
 
 8. **Why do databases prefer B+ trees over B-trees?**
    - a) Faster single-key lookups
-   - b) Higher fanout (compact internal nodes) ✅
+   - b) Higher fanout (compact internal nodes) âœ…
    - c) Simpler deletion
    - d) Less memory usage
 
@@ -1903,7 +1903,7 @@ function bTreeSearchRange(tree: BTree, low: number, high: number): number[] {
 
 - B-trees are multi-way balanced trees designed for block-oriented storage.
 - The branching factor (order) controls height; high order means very shallow trees.
-- Splits propagate upward; merges prevent underflow and maintain the ≥50% occupancy guarantee.
+- Splits propagate upward; merges prevent underflow and maintain the â‰¥50% occupancy guarantee.
 - B+ trees store all data in leaves connected by a linked list, enabling efficient range scans.
 - B-trees and B+ trees are the standard data structure for database indexes and file systems.
 - The order m is chosen to make each node fit exactly one disk block for maximum I/O efficiency.

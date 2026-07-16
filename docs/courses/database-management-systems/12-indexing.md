@@ -1,4 +1,4 @@
-# Chapter 12: Indexing
+﻿# Chapter 12: Indexing
 
 > **Prev:** [Chapter 11: Recovery System](11-recovery.md) | **Next:** [Chapter 13: Query Processing](13-query-processing.md)
 
@@ -17,16 +17,16 @@
 <!-- Image Gallery -->
 <section class="lesson-visuals" aria-label="Visual learning resources">
   <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/12-indexing/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/12-indexing/.png" alt="Handwritten notes" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/12-indexing/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/12-indexing/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
     <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/12-indexing/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/12-indexing/.png" alt="Sticky-note revision" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/12-indexing/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/12-indexing/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
     <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
   </a>
-  <a class="lesson-visual-card" href="../../../assets/images/lessons/database-management-systems/12-indexing/.png" target="_blank" rel="noopener">
-    <img src="../../../assets/images/lessons/database-management-systems/12-indexing/.png" alt="Visual concept guide" loading="lazy">
+  <a class="lesson-visual-card" href="../../assets/images/lessons/database-management-systems/12-indexing/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/database-management-systems/12-indexing/visual-explanation.png" alt="Visual concept guide" loading="lazy">
     <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
   </a>
 </section>
@@ -1981,7 +1981,7 @@ The code implements a minimal B+ Tree index with search, insert, and range scan 
 
 ```typescript
 // ============================================================
-// B+ Tree Index Simulator â€” TypeScript
+// B+ Tree Index Simulator Ã¢â‚¬â€ TypeScript
 // ============================================================
 
 class BPlusTreeNode {
@@ -2022,7 +2022,7 @@ class BPlusTree {
   insert(key: number, value: number): void {
     const result = this.insertRecursive(this.root, key, value);
     if (result) {
-      // Root was split â€” create new root
+      // Root was split Ã¢â‚¬â€ create new root
       const newRoot = new BPlusTreeNode(this.order);
       newRoot.keys = [result.key];
       newRoot.children = [this.root, result.right];
@@ -2043,12 +2043,12 @@ class BPlusTree {
       return null;
     }
 
-    // Internal node â€” find child
+    // Internal node Ã¢â‚¬â€ find child
     let i = 0;
     while (i < node.keys.length && key >= node.keys[i]) i++;
     const result = this.insertRecursive(node.children[i], key, value);
     if (result) {
-      // Child was split â€” insert separator key
+      // Child was split Ã¢â‚¬â€ insert separator key
       const idx = node.keys.findIndex(k => k > result.key);
       const pos = idx >= 0 ? idx : node.keys.length;
       node.keys.splice(pos, 0, result.key);

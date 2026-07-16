@@ -547,6 +547,10 @@ class TokenEmbedding {
 
 ---
 
+## Summary
+
+The Transformer architecture replaced recurrent networks with parallelizable self-attention for sequence processing. The encoder stacks identical layers with multi-head self-attention and feed-forward networks, while the decoder adds cross-attention to encoder outputs. Positional encoding injects sequence order information using sinusoidal functions or learned embeddings. Layer normalization stabilizes training by normalizing across feature dimensions. The feed-forward network applies two linear transformations with a ReLU activation, expanding and contracting the representation dimensionality. Residual connections with pre-normalization improve gradient flow in deep stacks. Transformer variants include encoder-only (BERT), decoder-only (GPT), and encoder-decoder (T5) architectures for different task families.
+
 ## Practical Takeaways
 
 - The transformer replaces recurrence entirely with attention, enabling parallel computation and direct long-range connections

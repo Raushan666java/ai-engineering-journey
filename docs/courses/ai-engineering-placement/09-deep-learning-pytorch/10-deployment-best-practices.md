@@ -971,6 +971,10 @@ print(f"Error rate: {results['error_rate']:.2%}")
 
 ---
 
+## Summary
+
+Deploying ML models in production requires robust validation and operational discipline. A/B testing compares model variants on live traffic using statistical significance tests. Monitoring tracks prediction distributions, latency, throughput, and resource utilization in real time. Model versioning with semantic tags and metadata enables reproducibility and rollback. Rollback strategies include blue-green deployments and canary releases that gradually shift traffic to new models. Shadow testing runs new models in parallel without serving their predictions, validating behavior before full rollout. Performance benchmarking establishes baselines for latency, throughput, and cost across different hardware configurations.
+
 ## Practical Takeaways
 
 | Practice | Implementation | Key Metric to Watch |

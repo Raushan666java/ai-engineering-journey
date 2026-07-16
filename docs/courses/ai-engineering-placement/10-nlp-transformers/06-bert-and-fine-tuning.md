@@ -600,6 +600,10 @@ class DistillationTrainer {
 
 ---
 
+## Summary
+
+BERT introduced bidirectional pre-training using masked language modeling and next-sentence prediction. The masked LM objective randomly masks tokens and trains the model to predict them from full bidirectional context. Next-sentence prediction learns relationships between sentence pairs for downstream tasks like question answering and natural language inference. Fine-tuning adapts the pre-trained BERT model to specific tasks by adding task-specific heads and training on labeled data. Variants like RoBERTa optimize pre-training with dynamic masking and larger batches, ALBERT reduces parameters through factorized embeddings and cross-layer sharing, and DistilBERT uses knowledge distillation for 40% smaller but 95% effective models. The GLUE benchmark provides a standardized evaluation across diverse NLU tasks.
+
 ## Practical Takeaways
 
 - BERT pre-training uses MLM (15% masking, 80/10/10 strategy) + NSP (removed in RoBERTa)

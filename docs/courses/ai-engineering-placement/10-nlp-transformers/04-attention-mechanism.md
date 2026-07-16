@@ -528,6 +528,10 @@ In machine translation attention heatmaps, the alignment is typically near-diago
 
 ---
 
+## Summary
+
+Attention mechanisms allow models to focus on relevant parts of the input when producing each output element. Bahdanau attention computes alignment scores using a feed-forward network, enabling the decoder to attend to different encoder hidden states at each step. Luong attention uses simpler score functions (dot, general, concat) and can be applied globally or locally. Self-attention computes attention within a single sequence, allowing each token to attend to every other token. Scaled dot-product attention divides by the square root of the dimension to prevent softmax saturation. Multi-head attention runs multiple attention heads in parallel, capturing different relationship types. Causal masking prevents positions from attending to future tokens in autoregressive decoding.
+
 ## Practical Takeaways
 
 - Bahdanau attention computes scores using a learned tanh layer; Luong attention uses simpler dot/general/concat scores

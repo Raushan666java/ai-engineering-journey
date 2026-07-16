@@ -632,6 +632,10 @@ Beam search with beam size 4-10 is standard for NMT and text generation. Larger 
 
 ---
 
+## Summary
+
+Sequence models process variable-length input and output sequences using recurrent architectures. The vanilla RNN maintains a hidden state that propagates information through time steps but suffers from vanishing gradients. LSTM introduces gating mechanisms and a cell state to preserve long-term dependencies, becoming the standard for most sequence tasks. GRU simplifies the LSTM with fewer gates while maintaining competitive performance. Bidirectional RNNs capture context from both past and future directions. The encoder-decoder architecture maps variable-length input sequences to output sequences through a fixed-dimensional bottleneck. Teacher forcing accelerates training by feeding ground-truth outputs during decoding, while beam search improves inference by maintaining multiple candidate sequences.
+
 ## Practical Takeaways
 
 - LSTM solves the vanishing gradient problem via gated cell states; use it as the default RNN variant

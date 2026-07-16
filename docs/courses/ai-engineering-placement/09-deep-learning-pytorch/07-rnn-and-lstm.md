@@ -554,6 +554,10 @@ class AttentionDecoder(nn.Module):
 
 ---
 
+## Summary
+
+Recurrent neural networks process sequential data by maintaining a hidden state that captures information from previous time steps. The vanilla RNN suffers from vanishing gradients, making it difficult to learn long-range dependencies. LSTMs address this with a gating mechanism (input, forget, output gates) and a cell state that preserves information across long sequences. GRUs simplify the LSTM with update and reset gates, offering comparable performance with fewer parameters. Bidirectional RNNs process sequences in both directions, capturing context from past and future tokens. The encoder-decoder architecture with teacher forcing enables sequence-to-sequence tasks like machine translation and summarization.
+
 ## Practical Takeaways
 
 | Scenario | Recommended Model | Why |

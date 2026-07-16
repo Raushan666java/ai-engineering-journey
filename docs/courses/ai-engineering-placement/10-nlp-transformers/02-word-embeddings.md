@@ -626,6 +626,10 @@ class EmbeddingExplorer {
 
 ---
 
+## Summary
+
+Word embeddings map discrete tokens into dense vector spaces where semantic relationships correspond to vector arithmetic. Word2Vec uses either continuous bag-of-words (CBOW) or skip-gram architectures with negative sampling to learn embeddings from local context. GloVe combines global matrix factorization with local context windows for efficient training. FastText extends Word2Vec by incorporating subword n-gram information, enabling embeddings for out-of-vocabulary words. Subword tokenization methods like BPE and SentencePiece bridge the gap between character-level and word-level representations. Embedding visualization using PCA or t-SNE reveals clustering patterns and analogical relationships. Handling OOV words requires fallback strategies like subword composition or random initialization.
+
 ## Practical Takeaways
 
 - Word2Vec (Skip-gram) is preferred for rare words; CBOW is faster and better for frequent words

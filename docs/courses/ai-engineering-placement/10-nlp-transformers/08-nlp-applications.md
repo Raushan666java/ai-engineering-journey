@@ -1013,6 +1013,10 @@ Production sentiment systems use BERT fine-tuned on domain data, achieving 95%+ 
 
 ---
 
+## Summary
+
+NLP applications span text classification, named entity recognition, question answering, summarization, and machine translation. Text classification assigns categories to documents using encoder-based models fine-tuned on labeled examples. Named entity recognition identifies entities like persons, organizations, and locations using token-level classification heads. Question answering extracts answer spans from context passages using SQuAD-style fine-tuning. Summarization generates concise versions of longer texts using encoder-decoder models with beam search decoding. Machine translation translates between languages using sequence-to-sequence architectures. Sentiment analysis and spam detection apply classification at document or sentence level, often using lightweight models distilled from larger transformers.
+
 ## Practical Takeaways
 
 - Fine-tune BERT/DistilBERT for classification tasks; use TF-IDF + LR as a strong baseline

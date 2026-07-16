@@ -839,6 +839,10 @@ for r in report:
 
 ---
 
+## Summary
+
+Model deployment transforms trained PyTorch models into production-ready inference services. TorchScript provides a serializable representation that runs independently of Python, supporting both tracing and scripting modes. ONNX export enables cross-framework deployment to TensorRT, ONNX Runtime, and other inference engines. TorchServe offers a production-grade serving infrastructure with batching, metrics, and model versioning. Quantization reduces model size and latency by using lower-precision arithmetic, with dynamic, static, and quantization-aware training approaches. Pruning removes redundant connections to create smaller, faster models for edge and mobile deployment.
+
 ## Practical Takeaways
 
 | Technique | Size Reduction | Speedup | Accuracy Impact | Use Case |

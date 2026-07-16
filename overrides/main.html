@@ -837,6 +837,276 @@
 
   window.addEventListener('scroll', updateScrollProgress, { passive: true });
   updateScrollProgress();
+
+  // ========================================================================
+  // AI Engineering Placement — Q&A Study Features
+  // ========================================================================
+  (function(qa) {
+    var LS = function(k) { try { return JSON.parse(localStorage.getItem(k)); } catch(e) { return null; } };
+    var LSS = function(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch(e) {} };
+    var REVIEW_KEY = 'tpr-'; var BOOKMARK_KEY = 'tpb-'; var CHAPTER_KEY = 'tpc-';
+    var SESSION_KEY = 'tps-'; var DASH_KEY = 'tpd-';
+
+    // ---- 6. Init Q&A cards ----
+    qa.initQandA = function() {
+      document.querySelectorAll('.tp-qa-card').forEach(function(card) {
+        var qid = card.getAttribute('data-qid');
+        if (!qid) return;
+        var statusSpan = card.querySelector('.tp-qa-status');
+        var markBtn = card.querySelector('.tp-qa-mark-btn');
+        var bookmarkBtn = card.querySelector('.tp-qa-bookmark-btn');
+        if (LS(REVIEW_KEY + qid)) { card.classList.add('tp-qa-reviewed'); if (statusSpan) statusSpan.textContent = '✅ '; }
+        if (LS(BOOKMARK_KEY + qid)) { card.classList.add('tp-qa-bookmarked'); if (bookmarkBtn) bookmarkBtn.textContent = '🔖 Unbookmark'; }
+        if (markBtn) markBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          var reviewed = !LS(REVIEW_KEY + qid);
+          LSS(REVIEW_KEY + qid, reviewed ? {t: Date.now()} : null);
+          card.classList.toggle('tp-qa-reviewed', reviewed);
+          if (statusSpan) statusSpan.textContent = reviewed ? '✅ ' : '';
+          markBtn.textContent = reviewed ? '✅ Reviewed' : '✅ Mark Reviewed';
+          qa.checkChapterComplete();
+          qa.updateSubjectProgress();
+        });
+        if (bookmarkBtn) bookmarkBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          var bookmarked = !LS(BOOKMARK_KEY + qid);
+          LSS(BOOKMARK_KEY + qid, bookmarked ? {t: Date.now()} : null);
+          card.classList.toggle('tp-qa-bookmarked', bookmarked);
+          bookmarkBtn.textContent = bookmarked ? '🔖 Unbookmark' : '🔖 Bookmark';
+        });
+      });
+    };
+
+    // ---- 7. Subject-level progress bar ----
+    qa.updateSubjectProgress = function() {
+      var subject = qa.getSubjectSlug();
+      if (!subject) return;
+      var cards = document.querySelectorAll('.tp-qa-card[data-qid^="' + subject + '"]');
+      var total = cards.length; if (!total) return;
+      var reviewed = 0; cards.forEach(function(c) { if (c.classList.contains('tp-qa-reviewed')) reviewed++; });
+      var pct = Math.round((reviewed / total) * 100);
+      var bar = document.getElementById('tp-subject-progress');
+      var text = document.getElementById('tp-subject-progress-text');
+      if (!bar) {
+        var container = document.querySelector('.md-content__inner');
+        if (!container) return;
+        var div = document.createElement('div');
+        div.id = 'tp-subject-progress-wrap';
+        div.innerHTML = '<div style="margin:0.5rem 0 1.5rem;padding:0.75rem 1rem;background:var(--md-code-bg-color,#f5f5f5);border-radius:8px;font-size:0.85rem;">' +
+          '<div style="display:flex;justify-content:space-between;margin-bottom:0.3rem;">' +
+          '<span>📊 Subject Progress</span><span id="tp-subject-progress-text">' + reviewed + '/' + total + ' (' + pct + '%)</span></div>' +
+          '<div style="height:6px;background:var(--md-default-fg-color--lightest,#ddd);border-radius:3px;overflow:hidden;">' +
+          '<div id="tp-subject-progress" style="width:' + pct + '%;height:100%;background:var(--md-primary-fg-color,#5464e8);border-radius:3px;transition:width 0.4s ease;"></div></div></div>';
+        container.insertBefore(div, container.firstChild);
+      } else {
+        bar.style.width = pct + '%';
+        if (text) text.textContent = reviewed + '/' + total + ' (' + pct + '%)';
+      }
+    };
+
+    qa.getSubjectSlug = function() {
+      var path = window.location.pathname;
+      var m = path.match(/ai-engineering-placement\/(\d{2})-/);
+      return m ? m[1] : null;
+    };
+
+    // ---- 8. Chapter completion ----
+    qa.checkChapterComplete = function() {
+      var chapterKey = CHAPTER_KEY + window.location.pathname;
+      var cards = document.querySelectorAll('.tp-qa-card[data-qid]');
+      var total = cards.length; if (!total) return;
+      var reviewed = 0; cards.forEach(function(c) { if (c.classList.contains('tp-qa-reviewed')) reviewed++; });
+      var completeBtn = document.getElementById('tp-chapter-complete-btn');
+      if (reviewed === total) {
+        if (!completeBtn) {
+          var container = document.querySelector('.md-content__inner');
+          if (!container) return;
+          var btn = document.createElement('div');
+          btn.id = 'tp-chapter-complete-btn';
+          btn.style.cssText = 'margin:1rem 0 0;padding:0.6rem 1.2rem;background:#22c55e;color:#fff;border:none;border-radius:6px;font-size:0.9rem;cursor:pointer;display:inline-block;';
+          btn.textContent = '🎉 Chapter Complete!';
+          btn.addEventListener('click', function() { LSS(chapterKey, {completed: true, t: Date.now()}); btn.style.opacity = '0.6'; btn.textContent = '✅ Completed!'; });
+          container.appendChild(btn);
+        }
+      } else {
+        if (completeBtn) completeBtn.remove();
+      }
+    };
+
+    // ---- 9. Review Mode ----
+    qa.toggleReviewMode = function() {
+      var mode = !LS(DASH_KEY + 'reviewMode');
+      LSS(DASH_KEY + 'reviewMode', mode);
+      document.body.classList.toggle('tp-review-mode', mode);
+      var btn = document.getElementById('tp-review-toggle');
+      if (btn) btn.textContent = mode ? '🔬 Exit Review' : '🔬 Review Q&A';
+      if (mode) qa.filterReviewCards();
+    };
+
+    qa.filterReviewCards = function() {
+      var cards = document.querySelectorAll('.tp-qa-card');
+      var allReviewed = true;
+      cards.forEach(function(c) {
+        if (!c.classList.contains('tp-qa-reviewed')) { allReviewed = false; c.style.display = ''; }
+        else { c.style.display = 'none'; }
+      });
+      if (allReviewed) {
+        var msg = document.getElementById('tp-review-empty');
+        if (!msg) {
+          var container = document.querySelector('.md-content__inner');
+          if (container) {
+            var div = document.createElement('div');
+            div.id = 'tp-review-empty';
+            div.style.cssText = 'padding:2rem;text-align:center;color:var(--md-default-fg-color--light,#888);font-size:1.1rem;';
+            div.textContent = '🎉 All questions reviewed! Exit review mode.';
+            container.appendChild(div);
+          }
+        }
+      }
+    };
+
+    // ---- 10. Study Dashboard ----
+    qa.showDashboard = function() {
+      var existing = document.getElementById('tp-dashboard');
+      if (existing) { existing.remove(); return; }
+      var overlay = document.createElement('div');
+      overlay.id = 'tp-dashboard';
+      overlay.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:10001;display:flex;align-items:center;justify-content:center;';
+      overlay.addEventListener('click', function(e) { if (e.target === overlay) overlay.remove(); });
+      var streak = qa.calcStreak();
+      var today = qa.getTodaySession();
+      var totalQA = 0; var totalReviewed = 0;
+      document.querySelectorAll('.tp-qa-card').forEach(function(c) { totalQA++; if (c.classList.contains('tp-qa-reviewed')) totalReviewed++; });
+      overlay.innerHTML = '<div style="background:var(--md-default-bg-color,#fff);color:var(--md-default-fg-color,#333);border-radius:12px;padding:2rem;max-width:400px;width:90%;box-shadow:0 8px 40px rgba(0,0,0,0.3);">' +
+        '<h3 style="margin-top:0;font-size:1.15rem;">📊 Study Dashboard</h3>' +
+        '<table style="width:100%;border-collapse:collapse;margin:1rem 0;">' +
+        '<tr><td>🔥 Streak</td><td><strong>' + streak + ' days</strong></td></tr>' +
+        '<tr><td>📅 Today</td><td><strong>' + (today ? today.qaCount || 0 : 0) + ' Q&A</strong> (' + (today ? Math.round((today.timeSpent||0)/60) : 0) + ' min)</td></tr>' +
+        '<tr><td>📖 This Chapter</td><td><strong>' + totalReviewed + '/' + totalQA + '</strong> reviewed</td></tr>' +
+        '<tr><td>🔖 Bookmarks</td><td><strong>' + qa.countBookmarks() + '</strong></td></tr>' +
+        '</table>' +
+        '<button id="tp-dash-close" style="width:100%;padding:0.5rem;border:1px solid var(--md-default-fg-color--lightest,#ddd);border-radius:6px;background:transparent;cursor:pointer;font-size:0.9rem;">Close</button></div>';
+      document.body.appendChild(overlay);
+      document.getElementById('tp-dash-close').addEventListener('click', function() { overlay.remove(); });
+    };
+
+    qa.calcStreak = function() {
+      var streak = 0; var d = new Date();
+      while (true) {
+        var key = SESSION_KEY + d.toISOString().slice(0,10);
+        var session = LS(key);
+        if (session && session.qaCount > 0) { streak++; d.setDate(d.getDate() - 1); }
+        else break;
+      }
+      return streak;
+    };
+
+    qa.getTodaySession = function() {
+      return LS(SESSION_KEY + new Date().toISOString().slice(0,10));
+    };
+
+    qa.countBookmarks = function() {
+      var count = 0;
+      for (var i = 0; i < localStorage.length; i++) {
+        var k = localStorage.key(i);
+        if (k && k.indexOf(BOOKMARK_KEY) === 0) count++;
+      }
+      return count;
+    };
+
+    // ---- 11. Session tracker ----
+    (function() {
+      var sessionStart = Date.now();
+      var sessionQA = 0;
+      var observer = new MutationObserver(function() {
+        document.querySelectorAll('.tp-qa-card.tp-qa-reviewed').forEach(function() { /* count handled below */ });
+      });
+      var origMark = qa.initQandA;
+      qa.initQandA = function() {
+        origMark.call(qa);
+        var today = new Date().toISOString().slice(0,10);
+        var session = LS(SESSION_KEY + today) || {timeSpent: 0, qaCount: 0};
+        var lastCount = session.qaCount || 0;
+        setInterval(function() {
+          var reviewed = document.querySelectorAll('.tp-qa-card.tp-qa-reviewed').length;
+          if (reviewed > lastCount) {
+            session.qaCount += (reviewed - lastCount);
+            lastCount = reviewed;
+          }
+          session.timeSpent = Math.round((Date.now() - sessionStart) / 1000);
+          LSS(SESSION_KEY + today, session);
+        }, 30000);
+      };
+    })();
+
+    // ---- 12. Spaced repetition toast ----
+    qa.checkSpacedReview = function() {
+      var now = Date.now();
+      var due = [];
+      for (var i = 0; i < localStorage.length; i++) {
+        var k = localStorage.key(i);
+        if (k && k.indexOf(REVIEW_KEY) === 0) {
+          var data = LS(k);
+          if (data && data.t) {
+            var intervals = [1, 3, 7, 14, 30];
+            var daysSince = (now - data.t) / 86400000;
+            var nextInterval = 1;
+            for (var j = 0; j < intervals.length; j++) {
+              if (daysSince >= intervals[j]) nextInterval = intervals[j+1] || 30;
+            }
+            if (daysSince >= nextInterval) due.push(k.replace(REVIEW_KEY, ''));
+          }
+        }
+      }
+      if (due.length > 0) {
+        setTimeout(function() {
+          qa.showToast('🔄 ' + due.length + ' Q&A due for review');
+        }, 5000);
+      }
+    };
+
+    qa.toastTimer = null;
+    qa.showToast = function(msg) {
+      var t = document.getElementById('tp-toast-qa');
+      if (!t) {
+        t = document.createElement('div');
+        t.id = 'tp-toast-qa';
+        t.style.cssText = 'position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:var(--md-primary-fg-color,#5464e8);color:#fff;padding:0.75rem 1.5rem;border-radius:8px;font-size:0.9rem;z-index:10003;box-shadow:0 4px 20px rgba(0,0,0,0.2);cursor:pointer;opacity:0;transition:opacity 0.4s ease;';
+        t.addEventListener('click', function() { t.style.opacity = '0'; });
+        document.body.appendChild(t);
+      }
+      t.textContent = msg;
+      t.style.opacity = '1';
+      clearTimeout(qa.toastTimer);
+      qa.toastTimer = setTimeout(function() { t.style.opacity = '0'; }, 8000);
+    };
+
+    // ---- 13. Add UI controls ----
+    qa.addControls = function() {
+      var container = document.querySelector('.md-content__inner');
+      if (!container || document.getElementById('tp-review-toggle')) return;
+      var toolbar = document.createElement('div');
+      toolbar.id = 'tp-qa-toolbar';
+      toolbar.style.cssText = 'display:flex;gap:0.5rem;margin:1rem 0;flex-wrap:wrap;';
+      toolbar.innerHTML =
+        '<button id="tp-review-toggle" style="padding:0.4rem 0.8rem;border:1px solid var(--md-default-fg-color--lightest,#ddd);border-radius:6px;background:transparent;cursor:pointer;font-size:0.82rem;">🔬 Review Q&A</button>' +
+        '<button id="tp-dashboard-toggle" style="padding:0.4rem 0.8rem;border:1px solid var(--md-default-fg-color--lightest,#ddd);border-radius:6px;background:transparent;cursor:pointer;font-size:0.82rem;">📊 Dashboard</button>';
+      container.insertBefore(toolbar, container.firstChild);
+      document.getElementById('tp-review-toggle').addEventListener('click', qa.toggleReviewMode);
+      document.getElementById('tp-dashboard-toggle').addEventListener('click', qa.showDashboard);
+    };
+
+    // ---- 14. Init ----
+    document.addEventListener('DOMContentLoaded', function() {
+      if (window.location.pathname.indexOf('ai-engineering-placement') === -1) return;
+      qa.initQandA();
+      qa.updateSubjectProgress();
+      qa.checkChapterComplete();
+      qa.addControls();
+      if (LS(DASH_KEY + 'reviewMode')) { document.body.classList.add('tp-review-mode'); qa.filterReviewCards(); }
+      qa.checkSpacedReview();
+    });
+  })(window.tpQA = window.tpQA || {});
 })();
 </script>
 <style>
@@ -1126,6 +1396,49 @@ pre {
 .tp-kb-close { font-size: 0.78rem; opacity: 0.6; margin-bottom: 0; }
 .tp-header-fixed {
   transition: transform 0.25s ease !important;
+}
+
+/* ---- Q&A Study Features ---- */
+.tp-qa-card {
+  transition: opacity 0.3s ease, background 0.3s ease;
+}
+.tp-qa-card.tp-qa-reviewed {
+  opacity: 0.55;
+  background: var(--md-code-bg-color, #f5f5f5);
+}
+.tp-qa-card.tp-qa-bookmarked {
+  border-left: 3px solid #f59e0b;
+}
+.tp-qa-card .tp-qa-mark-btn,
+.tp-qa-card .tp-qa-bookmark-btn {
+  margin: 0.25rem 0.5rem 0.25rem 0;
+  padding: 0.25rem 0.6rem;
+  border: 1px solid var(--md-default-fg-color--lightest, #ddd);
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.78rem;
+  transition: background 0.2s;
+}
+.tp-qa-card .tp-qa-mark-btn:hover,
+.tp-qa-card .tp-qa-bookmark-btn:hover {
+  background: var(--md-default-fg-color--lightest, #eee);
+}
+.tp-review-mode .md-content__inner > h1,
+.tp-review-mode .md-content__inner > h2:not(:has(+ .tp-qa-card)),
+.tp-review-mode .md-content__inner > h3:not(:has(+ .tp-qa-card)),
+.tp-review-mode .md-content__inner > p,
+.tp-review-mode .md-content__inner > ul,
+.tp-review-mode .md-content__inner > ol,
+.tp-review-mode .md-content__inner > table,
+.tp-review-mode .md-content__inner > pre,
+.tp-review-mode .md-content__inner > mermaid,
+.tp-review-mode .md-content__inner > div:not(.tp-qa-card):not(#tp-qa-toolbar):not(#tp-subject-progress-wrap):not(#tp-review-empty) {
+  display: none;
+}
+.tp-review-mode .tp-qa-card {
+  opacity: 1 !important;
+  background: transparent !important;
 }
 </style>
 {% endblock %}

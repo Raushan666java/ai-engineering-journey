@@ -1,0 +1,724 @@
+# CI/CD Pipelines — Continuous Integration and Delivery
+
+## Learning Objectives
+
+| Objective | Description |
+|-----------|-------------|
+| LO1 | Understand CI/CD principles: automation, testing, and deployment |
+| LO2 | Set up CI pipelines with GitHub Actions |
+| LO3 | Configure CD pipelines with GitLab CI/CD |
+| LO4 | Implement deployment strategies: rolling, blue-green, canary |
+| LO5 | Integrate security scanning into CI/CD pipelines |
+| LO6 | Monitor and optimize pipeline performance |
+
+<!-- Image Gallery -->
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/06-docker-kubernetes-cloud/10-ci-cd-pipelines/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/ai-engineering-placement/06-docker-kubernetes-cloud/10-ci-cd-pipelines/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/06-docker-kubernetes-cloud/10-ci-cd-pipelines/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/ai-engineering-placement/06-docker-kubernetes-cloud/10-ci-cd-pipelines/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/06-docker-kubernetes-cloud/10-ci-cd-pipelines/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/ai-engineering-placement/06-docker-kubernetes-cloud/10-ci-cd-pipelines/visual-explanation.png" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
+<!-- End Image Gallery -->
+
+## Chapter at a Glance
+
+| Section | Topic | Key Concept |
+|---------|-------|-------------|
+| 10.1 | CI/CD Principles | Build, test, deploy automation |
+| 10.2 | GitHub Actions | Workflows, jobs, steps, actions |
+| 10.3 | GitLab CI/CD | .gitlab-ci.yml, runners, stages |
+| 10.4 | Deployment Strategies | Rolling, blue-green, canary, feature flags |
+| 10.5 | Security in CI/CD | SAST, DAST, dependency scanning |
+| 10.6 | Pipeline Optimization | Caching, parallelism, matrix builds |
+| 10.7 | ArgoCD and GitOps | Declarative deployment with Git as source of truth |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[CI/CD Principles] --> B[GitHub Actions]
+    B --> C[GitLab CI/CD]
+    C --> D[Deploy Strategies]
+    D --> E[Security]
+    E --> F[Optimization]
+    F --> G[GitOps/ArgoCD]
+```
+
+## 10.1 CI/CD Principles
+
+CI/CD automates the software delivery lifecycle.
+
+**Continuous Integration**: Developers merge code changes frequently, each merge triggers automated build and test. Early detection of integration issues.
+
+**Continuous Delivery**: Code changes are automatically built, tested, and prepared for release to production. Deployment is manual but automated.
+
+**Continuous Deployment**: Every change that passes automated testing is automatically deployed to production.
+
+```mermaid
+flowchart LR
+    A[Code Commit] --> B[Build]
+    B --> C[Unit Tests]
+    C --> D[Integration Tests]
+    D --> E[Security Scan]
+    E --> F[Artifact] --> G[Staging Deploy]
+    G --> H[E2E Tests]
+    H --> I[Production Deploy]
+```
+
+**Key benefits**: Faster time to market, reduced manual errors, consistent deployment process, rapid feedback cycles, automated quality gates.
+
+## 10.2 GitHub Actions
+
+GitHub Actions automates workflows directly in your GitHub repository.
+
+```yaml
+# .github/workflows/ci.yml
+name: CI Pipeline
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+env:
+  NODE_VERSION: "20"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_PASSWORD: postgres
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 5432:5432
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Run tests
+        run: npm test
+        env:
+          DATABASE_URL: postgresql://postgres:postgres@localhost:5432/test
+
+      - name: Upload coverage
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage
+          path: coverage/
+
+  build:
+    needs: [test]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: ${{ github.ref == 'refs/heads/main' }}
+          tags: |
+            ghcr.io/${{ github.repository }}:latest
+            ghcr.io/${{ github.repository }}:${{ github.sha }}
+```
+
+**Key Action concepts**:
+
+| Concept | Description |
+|---------|-------------|
+| Workflow | YAML file defining automation |
+| Job | Set of steps running on same runner |
+| Step | Individual task (command or action) |
+| Action | Reusable unit (community or custom) |
+| Runner | Server that executes workflows |
+| Event | Trigger for workflow execution |
+
+**Matrix builds** for testing multiple versions:
+
+```yaml
+jobs:
+  test:
+    strategy:
+      matrix:
+        node: [18, 20, 22]
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+```
+
+## 10.3 GitLab CI/CD
+
+GitLab CI/CD uses a `.gitlab-ci.yml` file in the repository root.
+
+```yaml
+# .gitlab-ci.yml
+stages:
+  - build
+  - test
+  - scan
+  - deploy
+
+variables:
+  DOCKER_DRIVER: overlay2
+  IMAGE_TAG: $CI_COMMIT_SHORT_SHA
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+
+build:
+  stage: build
+  image: node:20
+  script:
+    - npm ci
+    - npm run build
+  artifacts:
+    paths:
+      - dist/
+
+test:
+  stage: test
+  image: node:20
+  script:
+    - npm ci
+    - npm run lint
+    - npm test:ci
+  coverage: /All files[^|]*\|[^|]*\s+([\d.]+)/
+  artifacts:
+    reports:
+      junit: junit.xml
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage/cobertura-coverage.xml
+
+security-scan:
+  stage: scan
+  image: node:20
+  script:
+    - npm audit
+    - npx snyk test
+  allow_failure: true
+
+deploy-staging:
+  stage: deploy
+  image: alpine:latest
+  script:
+    - apk add --no-cache docker
+    - docker build -t $CI_REGISTRY_IMAGE:$IMAGE_TAG .
+    - docker push $CI_REGISTRY_IMAGE:$IMAGE_TAG
+    - kubectl set image deployment/my-app app=$CI_REGISTRY_IMAGE:$IMAGE_TAG
+  environment:
+    name: staging
+  only:
+    - develop
+
+deploy-production:
+  stage: deploy
+  script:
+    - echo "Deploying to production..."
+  environment:
+    name: production
+  when: manual
+  only:
+    - main
+```
+
+**GitLab Runners**: Agents that execute CI/CD jobs. Can be shared, group, or specific.
+
+## 10.4 Deployment Strategies
+
+**Rolling update** — incrementally replace instances:
+
+```yaml
+# Kubernetes rolling update
+spec:
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+```
+
+**Blue-green** — switch between environments:
+
+```yaml
+# AWS ECS blue/green
+deploymentController:
+  type: CODE_DEPLOY
+# CodeDeploy handles traffic shifting
+```
+
+**Canary** — incremental traffic shifting:
+
+```yaml
+# Istio canary deployment
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+spec:
+  hosts:
+    - my-app
+  http:
+    - route:
+        - destination:
+            host: my-app
+            subset: stable
+          weight: 90
+        - destination:
+            host: my-app
+            subset: canary
+          weight: 10
+```
+
+**Feature flags** — decouple deployment from release:
+
+```yaml
+# LaunchDarkly or Flagsmith integration
+jobs:
+  deploy:
+    steps:
+      - name: Deploy with flags
+        run: |
+          # Deploy code, feature is hidden behind flag
+          kubectl apply -f k8s/
+      - name: Enable feature
+        run: |
+          # Enable flag for internal users first
+          # Then 10%, 50%, 100%
+```
+
+| Strategy | Risk | Complexity | Rollback Speed |
+|----------|------|------------|----------------|
+| Rolling | Low | Low | Medium |
+| Blue-green | Low | Medium | Fast |
+| Canary | Very low | High | Fast |
+| Feature flags | Very low | Medium | Instant |
+
+## 10.5 Security in CI/CD
+
+**SAST (Static Analysis)**: Scan source code for vulnerabilities.
+
+```yaml
+# GitHub CodeQL
+- name: Initialize CodeQL
+  uses: github/codeql-action/init@v3
+  with:
+    languages: javascript, python
+
+- name: Perform CodeQL Analysis
+  uses: github/codeql-action/analyze@v3
+```
+
+**DAST (Dynamic Analysis)**: Scan running applications.
+
+```yaml
+- name: OWASP ZAP Scan
+  uses: zaproxy/action-full-scan@v0.10.0
+  with:
+    target: "https://staging.myapp.com"
+    rules_file_name: ".zap/rules.tsv"
+```
+
+**Dependency scanning**:
+
+```yaml
+- name: Snyk Security Scan
+  uses: snyk/actions/node@master
+  env:
+    SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+
+# npm audit
+- name: Audit dependencies
+  run: npm audit --audit-level=high
+```
+
+**Docker image scanning**:
+
+```yaml
+- name: Scan Docker image
+  uses: aquasecurity/trivy-action@master
+  with:
+    image-ref: "my-app:${{ github.sha }}"
+    format: "sarif"
+    output: "trivy-results.sarif"
+```
+
+**Secret scanning**:
+
+```yaml
+- name: GitGuardian scan
+  uses: GitGuardian/ggshield-action@master
+  env:
+    GITGUARDIAN_API_KEY: ${{ secrets.GITGUARDIAN_API_KEY }}
+```
+
+**Security gates in pipelines**:
+
+```yaml
+# Block deployment if critical vulnerabilities found
+- name: Check security scan results
+  run: |
+    if grep -q "CRITICAL" trivy-results.sarif; then
+      echo "Critical vulnerabilities found. Blocking deployment."
+      exit 1
+    fi
+```
+
+## 10.6 Pipeline Optimization
+
+**Caching dependencies**:
+
+```yaml
+# GitHub Actions
+- name: Cache Node modules
+  uses: actions/cache@v3
+  with:
+    path: ~/.npm
+    key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+    restore-keys: |
+      ${{ runner.os }}-node-
+
+# GitLab CI
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+```
+
+**Parallel jobs**:
+
+```yaml
+# Run test suites in parallel
+jobs:
+  test-unit:
+    runs-on: ubuntu-latest
+  test-integration:
+    runs-on: ubuntu-latest
+  test-e2e:
+    runs-on: ubuntu-latest
+
+# Or use matrix strategy
+strategy:
+  matrix:
+    shard: [1, 2, 3, 4]
+steps:
+  - run: npm test -- --shard=${{ matrix.shard }}/4
+```
+
+**Docker layer caching**:
+
+```yaml
+- name: Set up Docker Buildx
+  uses: docker/setup-buildx-action@v3
+
+- name: Build with cache
+  uses: docker/build-push-action@v5
+  with:
+    cache-from: type=gha
+    cache-to: type=gha,mode=max
+```
+
+**Pipeline metrics and monitoring**:
+
+| Metric | Target | Action |
+|--------|--------|--------|
+| Build time | < 10 min | Optimize Docker layers, add caching |
+| Test time | < 5 min | Parallelize, split test suites |
+| Pipeline success rate | > 95% | Fix flaky tests, improve stability |
+| Time to deploy | < 30 min | Streamline stages, reduce approvals |
+| Deployment frequency | Daily+ | Automate more, reduce manual gates |
+
+## 10.7 ArgoCD and GitOps
+
+GitOps uses Git as the single source of truth for declarative infrastructure and applications.
+
+```yaml
+# ArgoCD Application
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: my-app
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/org/my-app-config.git
+    targetRevision: HEAD
+    path: k8s/overlays/production
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: production
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+```
+
+**ArgoCD workflow**:
+
+```mermaid
+flowchart LR
+    A[Developer] --> B[Git Push]
+    B --> C[GitHub/CodeCommit]
+    C --> D[ArgoCD Controller]
+    D --> E[Kubernetes Cluster]
+    E -->|Drift Detection| C
+    E --> F[Actual State]
+    C --> G[Desired State]
+    G -->|Sync| D
+```
+
+**Benefits of GitOps**:
+- Git is the single source of truth
+- Full audit trail of changes
+- Easy rollback (git revert)
+- Pull-based deployment (more secure)
+- Drift detection and auto-remediation
+
+```bash
+# Install ArgoCD
+kubectl create namespace argocd
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+
+# Access UI
+kubectl port-forward svc/argocd-server -n argocd 8080:443
+
+# Login
+argocd admin initial-password -n argocd
+
+# Create application
+argocd app create my-app     --repo https://github.com/org/repo.git     --path k8s     --dest-server https://kubernetes.default.svc     --dest-namespace production
+```
+
+---
+
+## TypeScript Parallel
+
+```typescript
+interface PipelineConfig {
+  name: string;
+  stages: string[];
+  jobs: JobConfig[];
+  triggers: string[];
+}
+
+interface JobConfig {
+  name: string;
+  stage: string;
+  commands: string[];
+  needs: string[];
+}
+
+function generateGitHubWorkflow(config: PipelineConfig): string {
+  const jobs = config.jobs.map(job => `
+  ${job.name}:
+    needs: [${job.needs.join(", ")}]
+    runs-on: ubuntu-latest
+    steps:
+${job.commands.map(cmd => `      - run: ${cmd}`).join("
+")}`).join("
+");
+
+  return `name: ${config.name}
+on:
+  push:
+    branches: [${config.triggers.join(", ")}]
+jobs:${jobs}`;
+}
+```
+
+---
+
+## Summary
+
+- CI/CD automates the software delivery lifecycle from commit to production
+- GitHub Actions uses YAML workflows with jobs, steps, and actions
+- GitLab CI/CD uses .gitlab-ci.yml with stages, jobs, and runners
+- Deployment strategies range from rolling (simplest) to canary and feature flags (safest)
+- Security scanning (SAST, DAST, dependency, container) should be integrated into every pipeline
+- Pipeline optimization includes caching, parallel execution, and matrix builds
+- ArgoCD implements GitOps with pull-based deployment and drift detection
+- GitOps uses Git as the single source of truth for infrastructure and applications
+- Pipeline metrics help identify bottlenecks and improve delivery speed
+- Manual approvals should be minimized; automated quality gates are preferred
+
+## Practical Takeaways
+
+| Scenario | Do This | Avoid This |
+|----------|---------|------------|
+| Small project | GitHub Actions with simple workflow | Overly complex multi-stage pipeline |
+| Large team | GitLab CI/CD with matrix builds | Single job for everything |
+| Production deploy | Blue-green or canary | Rolling update without health checks |
+| Security | Integrate SAST + dependency scan | Scanning only before release |
+| Build speed | Cache dependencies + Docker layers | Rebuilding from scratch every time |
+| Infrastructure | GitOps with ArgoCD | Manual kubectl apply |
+| Monitoring | Track pipeline metrics | No visibility into pipeline health |
+
+## Interview Q&A
+
+<details class="tp-qa-card" data-qid="docker-s10-q1">
+  <summary class="tp-qa-question"><span class="tp-qa-status"></span> Q1: What is the difference between CI, CD, and Continuous Deployment?</summary>
+  <div class="tp-qa-answer"><p>CI (Continuous Integration): automated build and test on every commit. CD (Continuous Delivery): automated build, test, and preparation for release; deployment is manual. Continuous Deployment: every change that passes automated tests is automatically deployed to production.</p></div>
+  <button class="tp-qa-mark-btn">&#x2705; Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="docker-s10-q2">
+  <summary class="tp-qa-question"><span class="tp-qa-status"></span> Q2: Explain blue-green deployment.</summary>
+  <div class="tp-qa-answer"><p>Two identical environments: blue (current) and green (new). Deploy to green, test, then switch the load balancer/router to point to green. Rollback is instant — just switch back to blue.</p></div>
+  <button class="tp-qa-mark-btn">&#x2705; Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="docker-s10-q3">
+  <summary class="tp-qa-question"><span class="tp-qa-status"></span> Q3: What is a canary deployment and how is it different from blue-green?</summary>
+  <div class="tp-qa-answer"><p>Canary deployment gradually shifts a small percentage of traffic to the new version, monitors for issues, and gradually increases the percentage. Blue-green switches all traffic at once. Canary is safer but more complex to implement.</p></div>
+  <button class="tp-qa-mark-btn">&#x2705; Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="docker-s10-q4">
+  <summary class="tp-qa-question"><span class="tp-qa-status"></span> Q4: What are the benefits of GitOps?</summary>
+  <div class="tp-qa-answer"><p>Git is single source of truth, full audit trail, easy rollback (git revert), pull-based deployments (more secure), drift detection and auto-remediation, PR-based workflow for infrastructure changes.</p></div>
+  <button class="tp-qa-mark-btn">&#x2705; Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="docker-s10-q5">
+  <summary class="tp-qa-question"><span class="tp-qa-status"></span> Q5: How do you handle secrets in CI/CD pipelines?</summary>
+  <div class="tp-qa-answer"><p>Use CI/CD platform secrets (GitHub Actions secrets, GitLab CI variables, environment variables). For cloud deployments, use OIDC federation to avoid storing long-lived cloud credentials. For Kubernetes, use External Secrets Operator.</p></div>
+  <button class="tp-qa-mark-btn">&#x2705; Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="docker-s10-q6">
+  <summary class="tp-qa-question"><span class="tp-qa-status"></span> Q6: How would you optimize a pipeline that takes 45 minutes?</summary>
+  <div class="tp-qa-answer"><p>Profile each stage, add dependency caching, parallelize independent jobs, use matrix builds, optimize Docker layer caching, split large test suites, use faster hardware, and consider incremental builds.</p></div>
+  <button class="tp-qa-mark-btn">&#x2705; Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="docker-s10-q7">
+  <summary class="tp-qa-question"><span class="tp-qa-status"></span> Q7: What security scans should be in a CI/CD pipeline?</summary>
+  <div class="tp-qa-answer"><p>SAST (source code scanning), dependency scanning (npm audit, Snyk), container image scanning (Trivy, Docker Scout), secret scanning (detect leaked credentials), DAST (dynamic scanning of staging env), and license compliance.</p></div>
+  <button class="tp-qa-mark-btn">&#x2705; Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="docker-s10-q8">
+  <summary class="tp-qa-question"><span class="tp-qa-status"></span> Q8: What is a feature flag and how does it relate to CI/CD?</summary>
+  <div class="tp-qa-answer"><p>A feature flag is a toggle that enables/disables functionality at runtime without deploying new code. Feature flags decouple deployment from release — you can deploy code that is hidden behind a flag, then enable it gradually or instantly.</p></div>
+  <button class="tp-qa-mark-btn">&#x2705; Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="docker-s10-q9">
+  <summary class="tp-qa-question"><span class="tp-qa-status"></span> Q9: How does ArgoCD work?</summary>
+  <div class="tp-qa-answer"><p>ArgoCD is a GitOps tool for Kubernetes. It continuously monitors the Git repository and compares the desired state (in Git) with the actual state (in the cluster). If they differ, ArgoCD can automatically sync (apply changes) or alert.</p></div>
+  <button class="tp-qa-mark-btn">&#x2705; Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="docker-s10-q10">
+  <summary class="tp-qa-question"><span class="tp-qa-status"></span> Q10: What key metrics should you track for CI/CD pipelines?</summary>
+  <div class="tp-qa-answer"><p>Deployment frequency (how often), Lead time (commit to production), Change failure rate (% of deployments causing failure), Mean time to recovery (MTTR), Build time, Test time, Pipeline success rate.</p></div>
+  <button class="tp-qa-mark-btn">&#x2705; Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>
+</details>
+
+## Chapter Quiz
+
+**Q1**: What does CD stand for in CI/CD?
+
+a) Continuous Deployment/Continuous Delivery
+b) Code Deployment
+c) Customer Delivery
+d) Continuous Development
+
+<details class="tp-qa-card" data-qid="docker-s10-quiz1"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: a) Continuous Deployment/Continuous Delivery</strong></p></div></details>
+
+**Q2**: Which deployment strategy shifts traffic gradually?
+
+a) Rolling
+b) Blue-green
+c) Canary
+d) Recreate
+
+<details class="tp-qa-card" data-qid="docker-s10-quiz2"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: c) Canary</strong></p></div></details>
+
+**Q3**: What tool implements GitOps for Kubernetes?
+
+a) Jenkins
+b) ArgoCD
+c) GitHub Actions
+d) GitLab CI
+
+<details class="tp-qa-card" data-qid="docker-s10-quiz3"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b) ArgoCD</strong></p></div></details>
+
+**Q4**: Which optimization technique runs the same job with different parameters?
+
+a) Caching
+b) Parallel jobs
+c) Matrix build
+d) Docker layer caching
+
+<details class="tp-qa-card" data-qid="docker-s10-quiz4"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: c) Matrix build</strong></p></div></details>
+
+**Q5**: What type of scan analyzes source code for vulnerabilities?
+
+a) DAST
+b) SAST
+c) Container scan
+d) Secret scan
+
+<details class="tp-qa-card" data-qid="docker-s10-quiz5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b) SAST</strong></p></div></details>
+
+## Exercises
+
+**Easy** — Create a GitHub Actions workflow that runs lint and tests on every push to the main branch.
+
+**Medium** — Set up a GitLab CI/CD pipeline with build, test, and deploy stages. Add dependency caching and parallel test execution.
+
+**Medium** — Implement a blue-green deployment strategy for a Kubernetes application using ArgoCD.
+
+**Hard** — Create a complete CI/CD pipeline with security scanning (SAST, dependency scan, container scan), multi-stage build, blue-green deployment, and rollback automation.
+
+**Hard** - Design a GitOps workflow: set up ArgoCD with a Git repository containing Kubernetes manifests. Implement drift detection, automated sync, and PR-based deployment workflow with approval gates.
+
+---
+
+> **Next**: [](.md)

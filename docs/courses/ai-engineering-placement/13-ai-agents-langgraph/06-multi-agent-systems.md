@@ -1,0 +1,858 @@
+# Multi-Agent Systems
+
+## Learning Objectives
+
+| Objective | Description |
+|-----------|-------------|
+| LO1 | Understand multi-agent system design patterns and communication protocols |
+| LO2 | Implement agent-to-agent communication with message passing |
+| LO3 | Build coordinator/supervisor patterns for agent teams |
+| LO4 | Design specialized agents with distinct roles and capabilities |
+| LO5 | Implement conflict resolution and consensus mechanisms |
+
+<!-- Image Gallery -->
+<section class="lesson-visuals" aria-label="Visual learning resources">
+  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
+  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/13-ai-agents-langgraph/06-multi-agent-systems/handwritten-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/ai-engineering-placement/13-ai-agents-langgraph/06-multi-agent-systems/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
+    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/13-ai-agents-langgraph/06-multi-agent-systems/sticky-notes.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/ai-engineering-placement/13-ai-agents-langgraph/06-multi-agent-systems/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
+    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
+  </a>
+  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/13-ai-agents-langgraph/06-multi-agent-systems/visual-explanation.png" target="_blank" rel="noopener">
+    <img src="../../assets/images/lessons/ai-engineering-placement/13-ai-agents-langgraph/06-multi-agent-systems/visual-explanation.png" alt="Visual concept guide" loading="lazy">
+    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
+  </a>
+</section>
+<!-- End Image Gallery -->
+
+## Chapter at a Glance
+
+| Section | Topic | Key Concept |
+|---------|-------|-------------|
+| 6.1 | Multi-Agent Patterns | Orchestration, collaboration, delegation |
+| 6.2 | Agent Communication | Message passing, structured protocols |
+| 6.3 | Coordinator Pattern | Central coordination for task distribution |
+| 6.4 | Specialized Agents | Role-based agents with distinct expertise |
+| 6.5 | Consensus & Conflict | Voting, arbitration, conflict resolution |
+| 6.6 | Multi-Agent Evaluation | Team performance, coordination metrics |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart TD
+    subgraph Agent Team
+        C[Coordinator]
+        R[Researcher]
+        A[Analyst]
+        W[Writer]
+    end
+    User -->|Task| C
+    C -->|Delegate| R
+    C -->|Delegate| A
+    C -->|Delegate| W
+    R -->|Findings| A
+    A -->|Insights| W
+    W -->|Output| C
+    C -->|Result| User
+```
+
+## 6.1 Multi-Agent Patterns
+
+Multi-agent systems enable complex tasks through collaboration between specialized agents.
+
+### Communication Patterns
+
+```python
+from dataclasses import dataclass, field
+from typing import List, Dict, Any, Optional, Callable
+from enum import Enum
+import json
+import time
+
+
+class MessageType(Enum):
+    TASK = "task"
+    RESULT = "result"
+    QUERY = "query"
+    RESPONSE = "response"
+    ERROR = "error"
+    STATUS = "status"
+
+
+@dataclass
+class AgentMessage:
+    sender: str
+    recipient: str
+    message_type: MessageType
+    content: Any
+    timestamp: float = field(default_factory=time.time)
+    message_id: str = ""
+    correlation_id: str = ""
+
+
+class AgentBase:
+    def __init__(self, name: str, role: str, llm_fn: Callable):
+        self.name = name
+        self.role = role
+        self.llm = llm_fn
+        self.mailbox: List[AgentMessage] = []
+
+    def send(self, recipient: str, msg_type: MessageType, content: Any) -> AgentMessage:
+        msg = AgentMessage(
+            sender=self.name,
+            recipient=recipient,
+            message_type=msg_type,
+            content=content,
+        )
+        return msg
+
+    def receive(self, message: AgentMessage):
+        self.mailbox.append(message)
+
+    def process_mailbox(self):
+        while self.mailbox:
+            msg = self.mailbox.pop(0)
+            self.handle_message(msg)
+
+    def handle_message(self, message: AgentMessage):
+        pass
+
+    def __repr__(self):
+        return f"{self.name} ({self.role})"
+
+
+class ResearcherAgent(AgentBase):
+    def __init__(self, name: str, llm_fn: Callable):
+        super().__init__(name, "researcher", llm_fn)
+
+    def handle_message(self, message: AgentMessage):
+        if message.message_type == MessageType.TASK:
+            result = self.llm(f"Research: {message.content}")
+            return self.send(message.sender, MessageType.RESULT, result)
+
+
+class AnalystAgent(AgentBase):
+    def __init__(self, name: str, llm_fn: Callable):
+        super().__init__(name, "analyst", llm_fn)
+
+    def handle_message(self, message: AgentMessage):
+        if message.message_type == MessageType.TASK:
+            analysis = self.llm(f"Analyze: {message.content}")
+            return self.send(message.sender, MessageType.RESULT, analysis)
+
+
+print("Multi-agent base classes defined")
+```
+
+## 6.2 Agent Communication
+
+### 6.2.1 Message Bus
+
+```python
+class MessageBus:
+    def __init__(self):
+        self.agents: Dict[str, AgentBase] = {}
+        self.message_log: List[AgentMessage] = []
+
+    def register(self, agent: AgentBase):
+        self.agents[agent.name] = agent
+
+    def send(self, message: AgentMessage):
+        self.message_log.append(message)
+        recipient = self.agents.get(message.recipient)
+        if recipient:
+            recipient.receive(message)
+
+    def broadcast(self, sender: str, msg_type: MessageType, content: Any):
+        for name in self.agents:
+            if name != sender:
+                msg = AgentMessage(sender=sender, recipient=name, message_type=msg_type, content=content)
+                self.send(msg)
+
+    def query(self, sender: str, recipient: str, content: Any) -> Optional[AgentMessage]:
+        msg = AgentMessage(sender=sender, recipient=recipient, message_type=MessageType.QUERY, content=content)
+        self.send(msg)
+
+        agent = self.agents.get(recipient)
+        if agent:
+            agent.process_mailbox()
+            if agent.mailbox:
+                return agent.mailbox[-1]
+        return None
+
+    def get_history(self) -> List[Dict]:
+        return [
+            {"from": m.sender, "to": m.recipient, "type": m.message_type.value, "content": str(m.content)[:100]}
+            for m in self.message_log
+        ]
+
+
+bus = MessageBus()
+print("Message bus ready")
+```
+
+### 6.2.2 Structured Communication Protocol
+
+```python
+class CommunicationProtocol:
+    def __init__(self, bus: MessageBus):
+        self.bus = bus
+
+    def request_response(self, sender: str, recipient: str, request: Dict, timeout: float = 5.0) -> Optional[Dict]:
+        msg = AgentMessage(
+            sender=sender,
+            recipient=recipient,
+            message_type=MessageType.QUERY,
+            content=request,
+        )
+        self.bus.send(msg)
+        return {"status": "sent", "request": request}
+
+    def task_delegation(self, coordinator: str, worker: str, task: Dict) -> str:
+        task_id = f"task-{time.time()}"
+        msg = AgentMessage(
+            sender=coordinator,
+            recipient=worker,
+            message_type=MessageType.TASK,
+            content={**task, "task_id": task_id},
+        )
+        self.bus.send(msg)
+        return task_id
+
+    def status_report(self, agent_name: str, status: Dict):
+        msg = AgentMessage(
+            sender=agent_name,
+            recipient="*coordinator*",
+            message_type=MessageType.STATUS,
+            content=status,
+        )
+        self.bus.broadcast(agent_name, MessageType.STATUS, status)
+
+
+protocol = CommunicationProtocol(bus)
+task_id = protocol.task_delegation("coordinator", "researcher", {"query": "AI trends"})
+print(f"Delegated task: {task_id}")
+```
+
+### 6.2.3 Agent Discovery
+
+```python
+class AgentRegistry:
+    def __init__(self):
+        self.agents: Dict[str, Dict] = {}
+
+    def register(self, name: str, role: str, capabilities: List[str], endpoint: str = ""):
+        self.agents[name] = {
+            "name": name,
+            "role": role,
+            "capabilities": capabilities,
+            "status": "available",
+            "endpoint": endpoint,
+        }
+
+    def find_by_capability(self, capability: str) -> List[Dict]:
+        return [a for a in self.agents.values() if capability in a["capabilities"]]
+
+    def find_by_role(self, role: str) -> List[Dict]:
+        return [a for a in self.agents.values() if a["role"] == role]
+
+    def set_status(self, name: str, status: str):
+        if name in self.agents:
+            self.agents[name]["status"] = status
+
+    def list_available(self) -> List[Dict]:
+        return [a for a in self.agents.values() if a["status"] == "available"]
+
+
+registry = AgentRegistry()
+registry.register("researcher-1", "researcher", ["web_search", "data_collection"])
+registry.register("analyst-1", "analyst", ["data_analysis", "visualization"])
+registry.register("writer-1", "writer", ["content_generation", "summarization"])
+
+available = registry.find_by_capability("web_search")
+print(f"Available for web_search: {[a['name'] for a in available]}")
+```
+
+## 6.3 Coordinator Pattern
+
+### 6.3.1 Central Coordinator
+
+```python
+class CoordinatorAgent(AgentBase):
+    def __init__(self, name: str, llm_fn: Callable, registry: AgentRegistry):
+        super().__init__(name, "coordinator", llm_fn)
+        self.registry = registry
+        self.task_queue: List[Dict] = []
+        self.task_results: Dict[str, Any] = {}
+
+    def plan_task(self, task: str) -> List[Dict]:
+        plan_prompt = f"""Plan how to accomplish this task using specialized agents.
+
+Available agents:
+{chr(10).join(f'- {a["name"]} ({a["role"]}): {a["capabilities"]}' for a in self.registry.list_available())}
+
+Task: {task}
+
+For each step, specify which agent should handle it and what input to provide.
+Respond as JSON list: [{{"agent": "name", "input": "instructions"}}]"""
+        plan_str = self.llm(plan_prompt)
+        try:
+            return json.loads(plan_str)
+        except json.JSONDecodeError:
+            return [{"agent": self.registry.list_available()[0]["name"], "input": task}]
+
+    def execute_plan(self, plan: List[Dict], bus: MessageBus) -> Dict:
+        for step in plan:
+            agent_name = step["agent"]
+            task_msg = AgentMessage(
+                sender=self.name,
+                recipient=agent_name,
+                message_type=MessageType.TASK,
+                content=step["input"],
+            )
+            bus.send(task_msg)
+            self.task_queue.append({"agent": agent_name, "task": step, "status": "dispatched"})
+        return {"status": "dispatched", "num_tasks": len(plan)}
+
+    def collect_results(self, bus: MessageBus) -> Dict:
+        results = {}
+        for item in self.task_queue:
+            agent = bus.agents.get(item["agent"])
+            if agent and agent.mailbox:
+                last_msg = agent.mailbox[-1]
+                results[item["agent"]] = last_msg.content
+        return results
+
+
+coordinator = CoordinatorAgent("coordinator", lambda p: json.dumps([{"agent": "researcher-1", "input": "research task"}]), registry)
+print("Coordinator ready")
+```
+
+### 6.3.2 Dynamic Task Distribution
+
+```python
+class WorkDistributor:
+    def __init__(self, coordinator: CoordinatorAgent, bus: MessageBus):
+        self.coordinator = coordinator
+        self.bus = bus
+
+    def distribute(self, task: str, strategy: str = "capability") -> Dict:
+        if strategy == "capability":
+            return self._distribute_by_capability(task)
+        elif strategy == "round_robin":
+            return self._distribute_round_robin(task)
+        elif strategy == "load_balanced":
+            return self._distribute_load_balanced(task)
+        return {}
+
+    def _distribute_by_capability(self, task: str) -> Dict:
+        plan = self.coordinator.plan_task(task)
+        return self.coordinator.execute_plan(plan, self.bus)
+
+    def _distribute_round_robin(self, task: str) -> Dict:
+        agents = self.coordinator.registry.list_available()
+        if not agents:
+            return {"error": "No agents available"}
+        agent = agents[len(self.coordinator.task_queue) % len(agents)]
+        return {"strategy": "round_robin", "assigned_to": agent["name"]}
+
+    def _distribute_load_balanced(self, task: str) -> Dict:
+        agents = self.coordinator.registry.list_available()
+        agent_loads = {a["name"]: 0 for a in agents}
+        for t in self.coordinator.task_queue:
+            if t["agent"] in agent_loads:
+                agent_loads[t["agent"]] += 1
+        least_loaded = min(agent_loads, key=agent_loads.get)
+        return {"strategy": "load_balanced", "assigned_to": least_loaded}
+
+
+distributor = WorkDistributor(coordinator, bus)
+result = distributor.distribute("Research AI trends", "round_robin")
+print(f"Distribution: {result}")
+```
+
+## 6.4 Specialized Agents
+
+### 6.4.1 Role Definitions
+
+```python
+class RoleDefinitions:
+    @staticmethod
+    def create_researcher(name: str, llm_fn: Callable) -> AgentBase:
+        agent = AgentBase(name, "researcher", llm_fn)
+        agent.__class__ = ResearcherAgent
+        return agent
+
+    @staticmethod
+    def create_analyst(name: str, llm_fn: Callable) -> AgentBase:
+        agent = AgentBase(name, "analyst", llm_fn)
+        return agent
+
+    @staticmethod
+    def create_writer(name: str, llm_fn: Callable) -> AgentBase:
+        writer_prompt = "You are a professional writer specializing in clear, engaging content."
+
+        def write_content(state: Dict) -> Dict:
+            return {"content": f"Written content based on: {state.get('findings', '')}"}
+
+        agent = AgentBase(name, "writer", llm_fn)
+        return agent
+
+    @staticmethod
+    def create_quality_assurance(name: str, llm_fn: Callable) -> AgentBase:
+        def review(state: Dict) -> Dict:
+            return {"review": "Content meets quality standards."}
+
+        agent = AgentBase(name, "qa", llm_fn)
+        return agent
+
+
+researcher = RoleDefinitions.create_researcher("researcher-1", lambda p: "Research findings.")
+analyst = RoleDefinitions.create_analyst("analyst-1", lambda p: "Analysis complete.")
+print(f"Created specialized agents")
+```
+
+### 6.4.2 Agent Pipeline
+
+```python
+class AgentPipeline:
+    def __init__(self, stages: List[str]):
+        self.stages = stages
+        self.results: Dict[str, Any] = {}
+
+    def run(self, initial_input: str, agents: Dict[str, AgentBase], bus: MessageBus) -> str:
+        current_input = initial_input
+
+        for stage in self.stages:
+            agent = agents.get(stage)
+            if not agent:
+                continue
+
+            msg = AgentMessage(sender="pipeline", recipient=stage, message_type=MessageType.TASK, content=current_input)
+            bus.send(msg)
+            agent.process_mailbox()
+
+            if agent.mailbox:
+                last = agent.mailbox[-1]
+                self.results[stage] = last.content
+                current_input = last.content if isinstance(last.content, str) else str(last.content)
+
+        return current_input
+
+
+pipeline = AgentPipeline(["researcher-1", "analyst-1"])
+print("Agent pipeline configured")
+```
+
+## 6.5 Consensus & Conflict
+
+### 6.5.1 Voting Mechanism
+
+```python
+class VotingMechanism:
+    def __init__(self):
+        self.votes: Dict[str, List[str]] = {}
+
+    def request_vote(self, proposal: str, voters: List[AgentBase]) -> Dict[str, int]:
+        tally = {}
+        for voter in voters:
+            response = voter.llm(f"Vote YES or NO on: {proposal}")
+            decision = "YES" if "YES" in response.upper() else "NO"
+            tally[voter.name] = decision
+
+        yes_votes = sum(1 for v in tally.values() if v == "YES")
+        no_votes = sum(1 for v in tally.values() if v == "NO")
+        self.votes[proposal] = list(tally.values())
+
+        return {
+            "proposal": proposal,
+            "yes": yes_votes,
+            "no": no_votes,
+            "passed": yes_votes > no_votes,
+        }
+
+    def weighted_vote(self, proposal: str, voters: List[tuple]) -> Dict:
+        total_weight = sum(w for _, w in voters)
+        yes_weight = 0
+
+        for voter, weight in voters:
+            response = voter.llm(f"Vote YES or NO on: {proposal}")
+            if "YES" in response.upper():
+                yes_weight += weight
+
+        return {
+            "proposal": proposal,
+            "yes_weight": yes_weight,
+            "no_weight": total_weight - yes_weight,
+            "passed": yes_weight > total_weight / 2,
+        }
+
+
+voting = VotingMechanism()
+voters = [
+    AgentBase("voter-1", "voter", lambda p: "YES"),
+    AgentBase("voter-2", "voter", lambda p: "NO"),
+    AgentBase("voter-3", "voter", lambda p: "YES"),
+]
+result = voting.request_vote("Should we use Python for this project?", voters)
+print(f"Vote result: {result['passed']} (YES: {result['yes']}, NO: {result['no']})")
+```
+
+### 6.5.2 Conflict Resolution
+
+```python
+class ConflictResolver:
+    def __init__(self, arbitrator: AgentBase):
+        self.arbitrator = arbitrator
+        self.conflicts: List[Dict] = []
+
+    def detect_conflict(self, agent_a: AgentBase, agent_b: AgentBase, issue: str) -> bool:
+        response_a = agent_a.llm(f"What is your position on: {issue}")
+        response_b = agent_b.llm(f"What is your position on: {issue}")
+
+        positions_differ = response_a[:100] != response_b[:100]
+
+        if positions_differ:
+            self.conflicts.append({
+                "agents": [agent_a.name, agent_b.name],
+                "issue": issue,
+                "positions": [response_a[:100], response_b[:100]],
+            })
+        return positions_differ
+
+    def resolve(self, conflict: Dict) -> str:
+        resolution_prompt = f"""Resolve this conflict between agents.
+
+Issue: {conflict['issue']}
+Position 1: {conflict['positions'][0]}
+Position 2: {conflict['positions'][1]}
+
+Provide a resolution that incorporates the best of both positions:"""
+        resolution = self.arbitrator.llm(resolution_prompt)
+        conflict["resolution"] = resolution
+        return resolution
+
+
+arbitrator = AgentBase("arbitrator", "arbitrator", lambda p: "Compromise resolution.")
+resolver = ConflictResolver(arbitrator)
+print("Conflict resolver ready")
+```
+
+### 6.5.3 Consensus Building
+
+```python
+class ConsensusBuilder:
+    def __init__(self, agents: List[AgentBase], max_rounds: int = 5):
+        self.agents = agents
+        self.max_rounds = max_rounds
+
+    def build_consensus(self, topic: str) -> Dict:
+        positions = {}
+        for agent in self.agents:
+            positions[agent.name] = agent.llm(f"State your position on: {topic}")
+
+        for round_num in range(self.max_rounds):
+            if self._check_agreement(positions):
+                return {"topic": topic, "consensus": True, "final_position": list(positions.values())[0], "rounds": round_num}
+
+            for agent in self.agents:
+                others = [p for n, p in positions.items() if n != agent.name]
+                consensus_prompt = f"""Current positions:
+{chr(10).join(f'- {n}: {p[:200]}' for n, p in positions.items())}
+
+Your position was: {positions[agent.name][:200]}
+
+Can you adjust to reach consensus? Respond with your revised position."""
+                positions[agent.name] = agent.llm(consensus_prompt)
+
+        return {"topic": topic, "consensus": False, "positions": positions, "rounds": self.max_rounds}
+
+    def _check_agreement(self, positions: Dict) -> bool:
+        values = list(positions.values())
+        if len(values) < 2:
+            return True
+        first = values[0][:200]
+        return all(v[:200] == first for v in values[1:])
+
+
+builder = ConsensusBuilder(voters, max_rounds=3)
+print("Consensus builder ready")
+```
+
+## 6.6 Multi-Agent Evaluation
+
+### 6.6.1 Team Performance Metrics
+
+```python
+class TeamPerformance:
+    def __init__(self):
+        self.metrics = {
+            "tasks_completed": 0,
+            "avg_completion_time": 0.0,
+            "conflicts_resolved": 0,
+            "messages_exchanged": 0,
+            "consensus_rate": 0.0,
+        }
+        self.task_times: List[float] = []
+        self.consensus_count = 0
+        self.total_decisions = 0
+
+    def record_task(self, duration: float):
+        self.task_times.append(duration)
+        self.metrics["tasks_completed"] += 1
+
+    def record_conflict_resolved(self):
+        self.metrics["conflicts_resolved"] += 1
+
+    def record_message(self):
+        self.metrics["messages_exchanged"] += 1
+
+    def record_decision(self, reached_consensus: bool):
+        self.total_decisions += 1
+        if reached_consensus:
+            self.consensus_count += 1
+        self.metrics["consensus_rate"] = self.consensus_count / self.total_decisions if self.total_decisions > 0 else 0
+
+    def report(self) -> Dict:
+        if self.task_times:
+            self.metrics["avg_completion_time"] = sum(self.task_times) / len(self.task_times)
+        return dict(self.metrics)
+
+
+perf = TeamPerformance()
+perf.record_task(2.5)
+perf.record_task(3.0)
+perf.record_message()
+perf.record_decision(True)
+print(f"Team performance: {perf.report()}")
+```
+
+### 6.6.2 Agent Contribution Analysis
+
+```python
+class ContributionAnalyzer:
+    def __init__(self, bus: MessageBus):
+        self.bus = bus
+
+    def analyze(self) -> Dict[str, Dict]:
+        history = self.bus.get_history()
+        agent_stats = defaultdict(lambda: {"sent": 0, "received": 0, "tasks": 0})
+
+        for entry in history:
+            agent_stats[entry["from"]]["sent"] += 1
+            agent_stats[entry["to"]]["received"] += 1
+            if entry["type"] == "task":
+                agent_stats[entry["to"]]["tasks"] += 1
+
+        return {
+            agent: {
+                "messages_sent": stats["sent"],
+                "messages_received": stats["received"],
+                "tasks_assigned": stats["tasks"],
+                "contribution_score": round((stats["sent"] + stats["tasks"]) / max(stats["received"], 1), 2),
+            }
+            for agent, stats in agent_stats.items()
+        }
+
+
+analyzer = ContributionAnalyzer(bus)
+print("Contribution analyzer ready")
+```
+
+## Summary
+
+Multi-agent systems enable complex task completion through collaboration between specialized agents. Communication protocols define how agents exchange messages via a message bus. The coordinator pattern uses a central agent to plan and distribute tasks. Specialized agents (researcher, analyst, writer, QA) each contribute distinct capabilities. Conflict resolution mechanisms include voting, arbitration, and consensus building. Team performance metrics track task completion, conflict resolution, message volume, and consensus rate. Multi-agent architectures excel at tasks requiring diverse expertise and parallel execution.
+
+## Practical Takeaways
+
+| Takeaway | Description |
+|----------|-------------|
+| Define clear roles | Each agent should have a specific, non-overlapping responsibility |
+| Use structured messages | Typed messages (task, result, error) improve reliability |
+| Implement conflict resolution | Disagreements are inevitable — have a resolution strategy |
+| Monitor team health | Track message volume, task completion, and conflict rates |
+| Start with coordinator | Central coordination is simpler to debug than fully decentralized systems |
+
+## Interview Q&A
+
+<details class="tp-qa-card" data-qid="ag06-q1">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q1: What are the main multi-agent communication patterns?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Multi-agent systems use several communication patterns. Point-to-point: one agent sends a message directly to another specific agent, useful for delegation. Broadcast: one agent sends a message to all other agents, useful for announcements or task distribution. Supervisor-based: a special supervisor agent receives updates from all workers, makes decisions, and assigns tasks — this centralizes coordination. Blackboard-based: agents share a common state/board where they write results and read others' contributions — this decouples agents from knowing about each other. Hierarchical: agents are organized in a tree, with parent agents delegating to children and aggregating results. The choice depends on the task: supervisor patterns work for complex workflows with decisions, blackboard patterns work for collaborative problem-solving where agents contribute incrementally, and point-to-point works for simple delegation.</p>
+  </div>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="ag06-q2">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q2: What is the supervisor-orchestrator pattern?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>The supervisor-orchestrator pattern uses a central supervisor agent that coordinates multiple worker agents. The supervisor receives the user's request, breaks it into subtasks, assigns each subtask to a specialized worker agent (researcher, coder, reviewer), monitors progress, handles failures (reassigning failed tasks), and compiles the final response. Worker agents report their results back to the supervisor, which decides next steps. The supervisor maintains the global state and has visibility into all workers' outputs. This pattern centralizes decision-making, making it easier to enforce policies and track progress. The main limitation is that the supervisor becomes a single point of failure and a potential bottleneck. Implementation uses LangGraph with a supervisor node that has conditional edges to worker nodes, and worker nodes that always route back to the supervisor.</p>
+  </div>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="ag06-q3">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q3: What is peer-to-peer agent collaboration?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Peer-to-peer agent collaboration allows agents to communicate directly without a central coordinator. Each agent has an address or identifier and can send messages to specific peers. A P2P network layer handles message routing, delivery guarantees, and agent discovery. Agents broadcast their capabilities on join, and other agents build a capability index for routing messages to the right peer. This pattern is more robust than supervisor-based (no single point of failure) but requires more complex coordination logic — agents must handle negotiation, conflict resolution, and consensus on their own. P2P is used in decentralized AI systems and scenarios where no single entity should have full control. The reliability manager tracks message delivery, retries failures, detects agent unavailability, and finds alternative agents with similar capabilities.</p>
+  </div>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="ag06-q4">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q4: How do you handle agent handoff?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Agent handoff transfers a conversation or task from one agent to another when the current agent can't handle it. Implementation: when an agent determines it cannot fulfill a request (missing capabilities, insufficient permissions, domain mismatch), it serializes the current context (conversation history, state, artifacts) into a handoff message and sends it to a handoff manager. The handoff manager examines the context, finds the best-suited agent based on capability matching and current load, and transfers the context. The receiving agent deserializes the context and continues the conversation seamlessly. Important considerations: preserving context continuity (the user shouldn't notice the handoff), authorization (can this agent hand off to that agent?), and fallback (what if no suitable agent exists?). Handoff can be automatic (agent detects it's out of scope) or user-initiated ("connect me to a billing specialist").</p>
+  </div>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="ag06-q5">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q5: What is the blackboard collaborative pattern?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>The blackboard pattern uses a shared data store (the blackboard) that all agents can read from and write to. Agents work independently and asynchronously, each contributing to the blackboard when they have relevant input. A controller agent monitors the blackboard for completion conditions and decides when enough information has been gathered. The blackboard stores structured data entries with metadata: contributor agent ID, timestamp, confidence score, and status (proposed, verified, accepted). Agents subscribe to specific entry types and are notified when relevant entries appear. This pattern excels for problems where multiple perspectives are needed — like diagnosis (multiple specialists contribute findings), document creation (different sections written by different agents), or data analysis (multiple algorithms analyze and cross-validate). The main challenge is managing the blackboard content — resolving conflicts between contradictory entries and avoiding information overload.</p>
+  </div>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="ag06-q6">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q6: How do you design a team configuration for multi-agent systems?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Team configuration defines which agents participate in a multi-agent system and how they should interact. Configuration data includes: agent roles and capabilities, communication topology (who can talk to whom), leader designation, fallback hierarchy, and interaction rules. Using a declarative YAML or JSON config file, you specify each agent's class, specialized tools, model settings, and limits (max iterations, max cost). The configuration is loaded at startup to instantiate agents and wire up the communication graph. Benefits of declarative config: (1) non-developers can define teams; (2) A/B testing different team structures; (3) dynamic team composition based on task requirements. A <code>TeamConfig</code> class validates configuration (references between agents, required fields) and provides factory methods to create the team runtime.</p>
+  </div>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="ag06-q7">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q7: How do you handle conflicts in multi-agent collaboration?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>Conflicts arise when agents produce contradictory outputs or disagree on a course of action. Resolution strategies: (1) voting — each agent votes and the majority decision wins; (2) confidence-weighted selection — each output has a confidence score, and the highest-confidence output is chosen; (3) arbitration — a designated arbitrator agent reviews conflicting outputs and makes the final decision; (4) evidence-based reconciliation — agents present supporting evidence and the best-supported output wins; (5) consensus seeking — agents negotiate until they reach agreement (iterative, may be expensive). The choice depends on the domain — for factual questions, confidence-weighted or evidence-based works well; for subjective decisions, voting or arbitration may be better. Implementation logs all conflicts and resolutions for audit and debugging. A conflict manager routes conflicting outputs to the appropriate resolution strategy based on the conflict type.</p>
+  </div>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="ag06-q8">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q8: How do you implement a peer-to-peer network for agents?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>A peer-to-peer agent network connects agents directly without a central message broker. Implementation: each agent runs a lightweight server (e.g., using HTTP or WebSockets) that accepts messages from other agents. A discovery service (using a registry or distributed hash table) maintains the list of active agents and their capabilities. When an agent wants to send a message to a peer, it queries the discovery service for the target's address, then sends the message directly. Message delivery is handled by a reliable transport layer — if the target is unavailable, the message is queued and retried. Key features: (1) dynamic join/leave — agents can join or leave without disrupting the network; (2) capability-based routing — messages are routed to agents that can handle them; (3) fault tolerance — if an agent fails, others can take over its responsibilities. This pattern is more complex than centralized approaches but provides better scalability and resilience.</p>
+  </div>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="ag06-q9">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q9: What is the hierarchical agent pattern?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>The hierarchical agent pattern organizes agents in a tree structure where parent agents delegate tasks to child agents and aggregate results. A CEO agent at the top receives high-level goals and breaks them into department-level tasks. Department managers further decompose tasks for their team members. Each level abstracts complexity — the CEO doesn't know how individual agents work, only what each department can deliver. Benefits: (1) natural decomposition of complex tasks; (2) clear chains of command and responsibility; (3) each level can be tested independently; (4) scales well — add more agents at any level without affecting other levels. Drawbacks: (1) slower decisions due to multiple layers; (2) information loss as messages pass through layers; (3) rigid structure may not fit all problems. Implementation uses a recursive pattern — each parent agent acts as a supervisor for its children, and the same communication protocol works at every level.</p>
+  </div>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+<details class="tp-qa-card" data-qid="ag06-q10">
+  <summary class="tp-qa-question">
+    <span class="tp-qa-status"></span>
+    Q10: How do you design a multi-agent system for code generation?
+  </summary>
+  <div class="tp-qa-answer">
+    <p>A multi-agent code generation system uses specialized agents for different aspects of software development. Typical roles: ProductManager — writes specifications and acceptance criteria; Architect — designs system architecture, component diagrams, API contracts; Developer — writes code implementing the architecture; Reviewer — reviews code for bugs, style issues, security vulnerabilities; Tester — writes and runs tests; DevOps — handles deployment configuration. The process flows through agents sequentially or iteratively: ProductManager → Architect → Developer → Reviewer → Tester, with loops back to Developer if issues are found. Each agent has access to specialized tools: Developer can read/write files and run linters; Reviewer can run static analysis; Tester can execute test suites. The system maintains a shared state including requirements, architecture documents, source files, and test results. This pattern mirrors real-world development teams and produces higher quality code than a single agent approach.</p>
+  </div>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+</details>
+
+## Chapter Quiz
+
+<details data-qid="agent-s6-quiz1">
+<summary><strong>1.</strong> What is the role of a coordinator agent in a multi-agent system?</summary>
+A. Execute all tasks
+B. Plan and distribute tasks to specialized agents
+C. Store agent memories
+D. Generate responses
+Answer: B
+</details>
+
+<details data-qid="agent-s6-quiz2">
+<summary><strong>2.</strong> How do agents communicate in a multi-agent system?</summary>
+A. Through shared files
+B. Through structured messages on a message bus
+C. Through direct API calls
+D. Through database writes
+Answer: B
+</details>
+
+<details data-qid="agent-s6-quiz3">
+<summary><strong>3.</strong> What is a common method for resolving conflicts between agents?</summary>
+A. Random selection
+B. Voting or arbitration by a neutral agent
+C. Ignoring the conflict
+D. Both agents go first
+Answer: B
+</details>
+
+<details data-qid="agent-s6-quiz4">
+<summary><strong>4.</strong> What does an agent registry provide in a multi-agent system?</summary>
+A. Tool definitions
+B. Agent discovery by role and capability
+C. Message storage
+D. Performance metrics
+Answer: B
+</details>
+
+<details data-qid="agent-s6-quiz5">
+<summary><strong>5.</strong> Which metric indicates how well a multi-agent team collaborates?</summary>
+A. Individual agent speed
+B. Consensus rate on decisions
+C. Number of tools per agent
+D. Memory size per agent
+Answer: B
+</details>
+
+## Exercises
+
+1. Implement a multi-agent system with 3 specialized agents (researcher, analyst, writer) and a coordinator. The coordinator should decompose a complex research question and delegate to each agent. Show the full communication flow.
+
+2. Build a message bus with structured message types (task, result, query, error, status). Demonstrate 10 message exchanges between 3 agents with correct routing.
+
+3. Create a voting mechanism for 5 agents to decide on a course of action. Implement both simple majority and weighted voting. Show a scenario where weighted voting changes the outcome.
+
+4. Design a conflict resolution protocol where two agents disagree on approach and an arbitrator agent resolves the conflict. Show the positions and final resolution.
+
+5. Implement a team performance dashboard that tracks tasks completed, average completion time, conflicts resolved, and messages exchanged. Simulate 10 tasks and generate a report.

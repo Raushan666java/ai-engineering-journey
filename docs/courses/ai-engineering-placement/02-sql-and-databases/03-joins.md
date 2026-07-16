@@ -1,0 +1,629 @@
+# Joins � INNER, LEFT, RIGHT, FULL, CROSS, Self-Joins
+
+## Learning Objectives
+
+| Objective | Description |
+|-----------|-------------|
+| LO1 | Combine tables with INNER JOIN to match related rows |
+| LO2 | Use LEFT JOIN to preserve all rows from the left table |
+| LO3 | Understand RIGHT JOIN, FULL OUTER JOIN, and CROSS JOIN |
+| LO4 | Write self-joins for hierarchical data (employees/managers) |
+| LO5 | Join multiple tables with proper join conditions |
+| LO6 | Distinguish between equi-joins, non-equi joins, and anti-joins |
+
+## Chapter at a Glance
+
+| Section | Topic | Key Concept |
+|---------|-------|-------------|
+| 3.1 | INNER JOIN | Matching rows from both tables |
+| 3.2 | LEFT / RIGHT JOIN | Preserving rows from one side |
+| 3.3 | FULL / CROSS JOIN | All rows / Cartesian product |
+| 3.4 | Self-Join | Table joined to itself |
+| 3.5 | Multi-Table Joins | Joining 3+ tables |
+| 3.6 | Advanced Joins | Equi, natural, anti-join patterns |
+
+## Chapter Roadmap
+
+`mermaid
+flowchart LR
+    A[Joins] --> B[INNER JOIN]
+    A --> C[LEFT JOIN]
+    A --> D[RIGHT JOIN]
+    A --> E[FULL JOIN]
+    A --> F[CROSS JOIN]
+    A --> G[Self-Join]
+    B --> H[Equi-join / Non-equi]
+    C --> I[Anti-join pattern]
+`
+
+## 3.1 INNER JOIN
+
+Returns only rows where the join condition matches in both tables.
+
+`sql
+SELECT e.name, d.department_name
+FROM employees e
+INNER JOIN departments d ON e.department_id = d.department_id;
+
+-- With aliases
+SELECT o.order_id, c.name AS customer, o.amount
+FROM orders o
+JOIN customers c ON o.customer_id = c.customer_id;
+
+-- INNER is optional (just JOIN)
+SELECT p.name, c.name AS category
+FROM products p
+JOIN categories c ON p.category_id = c.category_id;
+
+-- Multiple conditions
+SELECT *
+FROM orders o
+JOIN shipments s ON o.order_id = s.order_id
+    AND o.status = 'Shipped';
+`
+
+**Python simulation**:
+
+`python
+import sqlite3
+conn = sqlite3.connect(":memory:")
+cur = conn.cursor()
+cur.execute("CREATE TABLE emp(id, name, dept_id)")
+cur.execute("CREATE TABLE dept(id, name)")
+cur.executemany("INSERT INTO emp VALUES (?,?,?)", [(1,"Alice",1),(2,"Bob",1),(3,"Charlie",2)])
+cur.executemany("INSERT INTO dept VALUES (?,?)", [(1,"Engineering"),(2,"Sales")])
+
+cur.execute("""
+    SELECT e.name, d.name
+    FROM emp e
+    JOIN dept d ON e.dept_id = d.id
+""")
+for row in cur.fetchall():
+    print(f"{row[0]}: {row[1]}")
+`
+
+## 3.2 LEFT / RIGHT JOIN
+
+`sql
+-- LEFT JOIN: all rows from left table, NULLs where no match
+SELECT c.name, o.order_id, o.amount
+FROM customers c
+LEFT JOIN orders o ON c.customer_id = o.customer_id;
+
+-- Customers with no orders
+SELECT c.name
+FROM customers c
+LEFT JOIN orders o ON c.customer_id = o.customer_id
+WHERE o.order_id IS NULL;
+
+-- RIGHT JOIN: all rows from right table (less common; use LEFT JOIN)
+SELECT e.name, d.department_name
+FROM employees e
+RIGHT JOIN departments d ON e.department_id = d.department_id;
+-- Same as: SELECT ... FROM departments d LEFT JOIN employees e ...
+`
+
+## 3.3 FULL / CROSS JOIN
+
+`sql
+-- FULL OUTER JOIN: all rows from both tables, NULLs where no match
+SELECT e.name, d.department_name
+FROM employees e
+FULL OUTER JOIN departments d ON e.department_id = d.department_id;
+
+-- Full join pattern in SQLite (no FULL OUTER JOIN)
+SELECT e.name, d.name FROM emp e LEFT JOIN dept d ON e.dept_id = d.id
+UNION
+SELECT e.name, d.name FROM emp e RIGHT JOIN dept d ON e.dept_id = d.id;
+
+-- CROSS JOIN: Cartesian product (every row of A paired with every row of B)
+SELECT c.name, p.name
+FROM customers c
+CROSS JOIN products p;
+
+-- Useful for generating combinations
+SELECT sizes.size, colors.color
+FROM (VALUES('S'),('M'),('L')) AS sizes(size)
+CROSS JOIN (VALUES('Red'),('Blue'),('Green')) AS colors(color);
+`
+
+## 3.4 Self-Join
+
+A table joined to itself (requires table aliases).
+
+`sql
+-- Employees and their managers
+SELECT e.name AS employee, m.name AS manager
+FROM employees e
+LEFT JOIN employees m ON e.manager_id = m.employee_id;
+
+-- Find employees who earn more than their manager
+SELECT e.name AS employee, e.salary AS emp_salary,
+       m.name AS manager, m.salary AS mgr_salary
+FROM employees e
+JOIN employees m ON e.manager_id = m.employee_id
+WHERE e.salary > m.salary;
+
+-- Find duplicate emails
+SELECT a.email, a.name, b.name AS duplicate_user
+FROM users a
+JOIN users b ON a.email = b.email AND a.id < b.id;
+`
+
+## 3.5 Multi-Table Joins
+
+`sql
+SELECT
+    o.order_id,
+    c.name AS customer,
+    e.name AS employee,
+    p.name AS product,
+    oi.quantity,
+    oi.unit_price
+FROM orders o
+JOIN customers c ON o.customer_id = c.customer_id
+JOIN employees e ON o.sales_emp_id = e.employee_id
+JOIN order_items oi ON o.order_id = oi.order_id
+JOIN products p ON oi.product_id = p.product_id
+WHERE o.order_date >= '2024-01-01'
+ORDER BY o.order_date;
+
+-- Implicit join (old syntax, avoid)
+SELECT e.name, d.name
+FROM employees e, departments d
+WHERE e.department_id = d.department_id;
+`
+
+## 3.6 Advanced Join Patterns
+
+`python
+conn = sqlite3.connect(":memory:")
+cur = conn.cursor()
+cur.execute("CREATE TABLE orders(id, customer_id, amount)")
+cur.execute("CREATE TABLE customers(id, name)")
+cur.executemany("INSERT INTO customers VALUES (?,?)", [(1,"Alice"),(2,"Bob"),(3,"Charlie")])
+cur.executemany("INSERT INTO orders VALUES (?,?,?)", [(1,1,100),(2,1,200),(3,2,150)])
+
+# Anti-join: customers with no orders
+cur.execute("""
+    SELECT c.name FROM customers c
+    LEFT JOIN orders o ON c.id = o.customer_id
+    WHERE o.id IS NULL
+""")
+print("No orders:", [r[0] for r in cur.fetchall()])  # ['Charlie']
+
+# Semi-join: customers who have placed orders
+cur.execute("""
+    SELECT DISTINCT c.name
+    FROM customers c
+    WHERE EXISTS (SELECT 1 FROM orders o WHERE o.customer_id = c.id)
+""")
+print("Have orders:", [r[0] for r in cur.fetchall()])  # ['Alice', 'Bob']
+
+# Non-equi join (condition is not equality)
+SELECT a.name, a.salary, b.name AS higher_earner
+FROM employees a
+JOIN employees b ON a.salary < b.salary;
+`
+
+## TypeScript Parallel
+
+`	ypescript
+type Employee = { id: number; name: string; deptId: number };
+type Department = { id: number; name: string };
+
+const employees: Employee[] = [{ id: 1, name: "Alice", deptId: 1 }];
+const departments: Department[] = [{ id: 1, name: "Engineering" }];
+
+// INNER JOIN
+const joined = employees.flatMap(e =>
+    departments.filter(d => d.id === e.deptId).map(d => ({
+        name: e.name, dept: d.name
+    }))
+);
+`
+
+## Summary
+
+- INNER JOIN returns only matching rows from both tables
+- LEFT JOIN returns all left table rows, NULL for non-matching right
+- RIGHT JOIN is the reverse (use LEFT JOIN for consistency)
+- FULL OUTER JOIN returns all rows from both sides
+- CROSS JOIN produces Cartesian product of all row combinations
+- Self-join joins a table to itself using aliases
+- Anti-join finds rows without matches using LEFT JOIN + IS NULL
+- Semi-join finds rows with matches using EXISTS or DISTINCT
+- Multi-table joins connect 3+ tables with multiple JOIN clauses
+- Always specify join conditions with ON (not WHERE for older syntax)
+
+## Practical Takeaways
+
+| Scenario | Do This | Avoid |
+|----------|---------|-------|
+| Match rows | INNER JOIN | Filtering in WHERE |
+| All left + matching right | LEFT JOIN | RIGHT JOIN (less intuitive) |
+| All rows from both | FULL OUTER JOIN | UNION of two LEFT JOINs |
+| All combinations | CROSS JOIN | Implicit CROSS JOIN in FROM |
+| Hierarchical data | Self-join with aliases | Multiple queries |
+| Find missing rows | LEFT JOIN + NULL check | NOT IN (with possible NULLs) |
+| Check existence | EXISTS (semi-join) | DISTINCT on join result |
+
+## Interview Q&A
+
+<details class="tp-qa-card" data-qid="sql-s03-q1">
+  <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q1: INNER JOIN vs LEFT JOIN?</summary>
+  <div class="tp-qa-answer"><p>INNER JOIN returns only rows with matches in both tables. LEFT JOIN returns all rows from left table regardless of match, with NULLs on right side for non-matches.</p></div><button class="tp-qa-mark-btn">? Mark Reviewed</button><button class="tp-qa-bookmark-btn">?? Bookmark</button>
+</details>
+<details class="tp-qa-card" data-qid="sql-s03-q2">
+  <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q2: What is a self-join?</summary>
+  <div class="tp-qa-answer"><p>Joining a table to itself using different aliases. Used for hierarchical data (employees/managers), finding duplicates, or comparing rows within the same table.</p></div><button class="tp-qa-mark-btn">? Mark Reviewed</button><button class="tp-qa-bookmark-btn">?? Bookmark</button>
+</details>
+<details class="tp-qa-card" data-qid="sql-s03-q3">
+  <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q3: What is a Cartesian product?</summary>
+  <div class="tp-qa-answer"><p>Every row from table A paired with every row from table B. Produced by CROSS JOIN or implicit joins without WHERE. Results in M * N rows. Useful for generating combinations but dangerous if accidental.</p></div><button class="tp-qa-mark-btn">? Mark Reviewed</button><button class="tp-qa-bookmark-btn">?? Bookmark</button>
+</details>
+<details class="tp-qa-card" data-qid="sql-s03-q4">
+  <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q4: How do you avoid duplicate rows from joins?</summary>
+  <div class="tp-qa-answer"><p>Ensure join conditions are specific enough (correct columns). Use DISTINCT if duplicates are acceptable. Use EXISTS instead of JOIN for existence checks. For one-to-many joins, aggregate after joining.</p></div><button class="tp-qa-mark-btn">? Mark Reviewed</button><button class="tp-qa-bookmark-btn">?? Bookmark</button>
+</details>
+<details class="tp-qa-card" data-qid="sql-s03-q5">
+  <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q5: What is an anti-join?</summary>
+  <div class="tp-qa-answer"><p>Finds rows in one table that have no match in another. Pattern: LEFT JOIN + WHERE right_table.key IS NULL. Alternative: NOT EXISTS (subquery) or NOT IN. LEFT JOIN + NULL handles NULLs in subquery better than NOT IN.</p></div><button class="tp-qa-mark-btn">? Mark Reviewed</button><button class="tp-qa-bookmark-btn">?? Bookmark</button>
+</details>
+<details class="tp-qa-card" data-qid="sql-s03-q6">
+  <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q6: Can you join more than 2 tables?</summary>
+  <div class="tp-qa-answer"><p>Yes, chain JOIN clauses: FROM a JOIN b ON a.id = b.a_id JOIN c ON b.id = c.b_id. Execution order may vary; optimizer chooses the best join order. Use parentheses for controlling join order if needed.</p></div><button class="tp-qa-mark-btn">? Mark Reviewed</button><button class="tp-qa-bookmark-btn">?? Bookmark</button>
+</details>
+<details class="tp-qa-card" data-qid="sql-s03-q7">
+  <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q7: When to use RIGHT JOIN?</summary>
+  <div class="tp-qa-answer"><p>RIGHT JOIN is less common. Most developers prefer LEFT JOIN for consistency (always join from main table). RIGHT JOIN is useful when adding a new table to an existing query without rewriting the FROM clause.</p></div><button class="tp-qa-mark-btn">? Mark Reviewed</button><button class="tp-qa-bookmark-btn">?? Bookmark</button>
+</details>
+<details class="tp-qa-card" data-qid="sql-s03-q8">
+  <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q8: What is a natural join?</summary>
+  <div class="tp-qa-answer"><p>NATURAL JOIN automatically joins on all columns with the same name in both tables. Avoid in production � it's implicit and breaks if column names change. Always prefer explicit USING or ON clauses.</p></div><button class="tp-qa-mark-btn">? Mark Reviewed</button><button class="tp-qa-bookmark-btn">?? Bookmark</button>
+</details>
+<details class="tp-qa-card" data-qid="sql-s03-q9">
+  <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q9: How does FULL OUTER JOIN work?</summary>
+  <div class="tp-qa-answer"><p>Returns all rows from both tables. Rows with matches show combined data. Non-matching rows from left have NULL on right side, and vice versa. Not all databases support it (e.g., MySQL, SQLite lack it).</p></div><button class="tp-qa-mark-btn">? Mark Reviewed</button><button class="tp-qa-bookmark-btn">?? Bookmark</button>
+</details>
+<details class="tp-qa-card" data-qid="sql-s03-q10">
+  <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q10: What is the difference between ON and USING?</summary>
+  <div class="tp-qa-answer"><p>ON specifies the join condition explicitly (table1.col = table2.col). USING(column) is shorthand when both tables have the same column name: FROM a JOIN b USING(id). USING removes the duplicate column from results.</p></div><button class="tp-qa-mark-btn">? Mark Reviewed</button><button class="tp-qa-bookmark-btn">?? Bookmark</button>
+</details>
+
+## Chapter Quiz
+
+**Q1**: Which join returns only matching rows? a) LEFT b) INNER c) FULL d) CROSS
+
+<details class="tp-qa-card" data-qid="sql-s03-quiz1"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b) INNER JOIN</strong></p></div></details>
+
+**Q2**: How to find customers with no orders? a) LEFT + NULL b) INNER c) RIGHT + NULL d) CROSS + NULL
+
+<details class="tp-qa-card" data-qid="sql-s03-quiz2"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: a) LEFT JOIN + WHERE orders.id IS NULL</strong></p></div></details>
+
+**Q3**: How many rows does CROSS JOIN 3x5 tables produce? a) 3 b) 5 c) 15 d) 8
+
+<details class="tp-qa-card" data-qid="sql-s03-quiz3"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: c) 15 (Cartesian product: 3 * 5)</strong></p></div></details>
+
+**Q4**: Self-join requires? a) different tables b) table aliases c) subqueries d) indexes
+
+<details class="tp-qa-card" data-qid="sql-s03-quiz4"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b) table aliases to distinguish the two roles</strong></p></div></details>
+
+**Q5**: Which pattern is an anti-join? a) INNER JOIN b) LEFT + NULL c) CROSS d) FULL + NULL
+
+<details class="tp-qa-card" data-qid="sql-s03-quiz5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b) LEFT JOIN + IS NULL on right side</strong></p></div></details>
+
+## Exercises
+
+**Easy** � Write a query joining employees with their departments using INNER JOIN.
+**Easy** � Find all products and their supplier names using a join.
+**Medium** � Write a self-join to find employees who have the same manager.
+**Medium** � Find customers who have never placed an order (anti-join).
+**Hard** � Write a multi-table query joining orders, customers, products, and order_items for a sales report.
+**Hard** � Implement a recursive join using a self-referencing employees table to show each employee's full reporting chain (employee -> manager -> senior manager -> ...).
+
+## 3.7 Joins with Aggregates
+
+Combining joins with aggregation for summary reports.
+
+`sql
+-- Department summary with employee count and salary stats
+SELECT
+    d.department_name,
+    COUNT(e.employee_id) AS employee_count,
+    ROUND(AVG(e.salary), 2) AS avg_salary,
+    ROUND(SUM(e.salary), 2) AS total_payroll,
+    MIN(e.salary) AS min_salary,
+    MAX(e.salary) AS max_salary
+FROM departments d
+LEFT JOIN employees e ON d.department_id = e.department_id
+GROUP BY d.department_id, d.department_name
+ORDER BY avg_salary DESC;
+
+-- Customers with their most recent order
+SELECT
+    c.customer_id,
+    c.name,
+    COUNT(o.order_id) AS total_orders,
+    SUM(o.amount) AS lifetime_value,
+    MAX(o.order_date) AS last_order_date,
+    AVG(o.amount) AS avg_order_value
+FROM customers c
+LEFT JOIN orders o ON c.customer_id = o.customer_id
+GROUP BY c.customer_id, c.name
+HAVING COUNT(o.order_id) >= 1
+ORDER BY lifetime_value DESC;
+
+-- Top products by category with supplier info
+SELECT
+    cat.name AS category,
+    p.name AS product,
+    s.name AS supplier,
+    SUM(oi.quantity) AS units_sold,
+    SUM(oi.quantity * oi.unit_price) AS revenue
+FROM categories cat
+JOIN products p ON cat.category_id = p.category_id
+JOIN suppliers s ON p.supplier_id = s.supplier_id
+JOIN order_items oi ON p.product_id = oi.product_id
+JOIN orders o ON oi.order_id = o.order_id
+WHERE o.order_date >= DATE('now', '-6 months')
+GROUP BY cat.category_id, cat.name, p.product_id, p.name, s.supplier_id, s.name
+ORDER BY revenue DESC
+LIMIT 20;
+`
+
+## 3.8 Join Performance Optimization
+
+`sql
+-- 1. Always join on indexed columns
+CREATE INDEX idx_employees_dept ON employees(department_id);
+CREATE INDEX idx_orders_customer ON orders(customer_id);
+CREATE INDEX idx_order_items_order ON order_items(order_id);
+
+-- 2. Filter before joining (reduce rows early)
+-- BAD: join all rows, then filter
+SELECT c.name, o.amount
+FROM customers c
+JOIN orders o ON c.customer_id = o.customer_id
+WHERE o.order_date >= '2024-01-01' AND c.status = 'active';
+
+-- GOOD: filter each table before join
+SELECT c.name, o.amount
+FROM (SELECT * FROM customers WHERE status = 'active') c
+JOIN (SELECT * FROM orders WHERE order_date >= '2024-01-01') o
+    ON c.customer_id = o.customer_id;
+
+-- 3. Use EXPLAIN to check query plans
+-- PostgreSQL: EXPLAIN ANALYZE SELECT ...
+-- SQLite: EXPLAIN QUERY PLAN SELECT ...
+-- MySQL: EXPLAIN SELECT ...
+
+-- 4. Choose the right join type
+-- INNER JOIN when you only need matches
+-- LEFT JOIN when you need all left-side rows
+-- Avoid RIGHT JOIN (can usually be rewritten as LEFT JOIN)
+
+-- 5. Beware of join explosion
+-- One-to-many join with another one-to-many creates Cartesian product
+-- Fix: aggregate before joining or use DISTINCT
+
+-- 6. Use EXISTS instead of LEFT JOIN for existence checks
+-- BAD: LEFT JOIN + GROUP BY
+SELECT c.name
+FROM customers c
+LEFT JOIN orders o ON c.customer_id = o.customer_id
+GROUP BY c.customer_id, c.name
+HAVING COUNT(o.order_id) > 0;
+
+-- GOOD: EXISTS
+SELECT c.name
+FROM customers c
+WHERE EXISTS (
+    SELECT 1 FROM orders o WHERE o.customer_id = c.customer_id
+);
+`
+
+## 3.9 Complex Join Patterns
+
+`sql
+-- Self-join: employee hierarchy with levels
+SELECT
+    e1.name AS employee,
+    e2.name AS manager,
+    e3.name AS senior_manager
+FROM employees e1
+LEFT JOIN employees e2 ON e1.manager_id = e2.employee_id
+LEFT JOIN employees e3 ON e2.manager_id = e3.employee_id
+ORDER BY e3.name, e2.name, e1.name;
+
+-- Non-equi join: find nearby events
+SELECT a.event_name, a.event_date AS date_a,
+       b.event_name, b.event_date AS date_b,
+       ABS(julianday(a.event_date) - julianday(b.event_date)) AS days_apart
+FROM events a
+JOIN events b ON a.event_id < b.event_id
+    AND ABS(julianday(a.event_date) - julianday(b.event_date)) <= 7
+ORDER BY days_apart;
+
+-- Semi-join: customers who ordered expensive items
+SELECT DISTINCT c.customer_id, c.name
+FROM customers c
+WHERE c.customer_id IN (
+    SELECT o.customer_id
+    FROM orders o
+    JOIN order_items oi ON o.order_id = oi.order_id
+    WHERE oi.unit_price > 500
+);
+
+-- Anti-join: products never ordered
+SELECT p.product_id, p.name
+FROM products p
+LEFT JOIN order_items oi ON p.product_id = oi.product_id
+WHERE oi.product_id IS NULL;
+
+-- Cross join practical: date and time dimension
+SELECT d.date, t.time_slot
+FROM (
+    SELECT DATE('2024-01-01', '+' || n || ' days') AS date
+    FROM (SELECT 0 AS n UNION SELECT 1 UNION SELECT 2 ... UNION SELECT 364)
+) d
+CROSS JOIN (
+    SELECT '09:00' AS time_slot
+    UNION SELECT '10:00'
+    UNION SELECT '11:00'
+    UNION SELECT '14:00'
+    UNION SELECT '15:00'
+) t
+ORDER BY d.date, t.time_slot;
+
+-- Lateral join (PostgreSQL, MySQL 8+)
+-- For each customer, get their 3 most recent orders
+SELECT c.name, recent_orders.order_id, recent_orders.amount
+FROM customers c
+CROSS JOIN LATERAL (
+    SELECT order_id, amount, order_date
+    FROM orders
+    WHERE customer_id = c.customer_id
+    ORDER BY order_date DESC
+    LIMIT 3
+) recent_orders;
+`
+
+## 3.10 Using JOINs with UPDATE and DELETE
+
+`sql
+-- UPDATE with JOIN
+-- Bonus employees based on department performance
+UPDATE employees e
+SET salary = salary * 1.1
+FROM departments d
+WHERE e.department_id = d.department_id
+  AND d.performance_score > 90;
+
+-- MySQL variant
+UPDATE employees e
+JOIN departments d ON e.department_id = d.department_id
+SET e.salary = e.salary * 1.1
+WHERE d.performance_score > 90;
+
+-- DELETE with JOIN
+-- Remove orphaned order items
+DELETE FROM order_items
+WHERE order_id NOT IN (
+    SELECT order_id FROM orders
+);
+
+-- PostgreSQL variant with USING
+DELETE FROM order_items oi
+USING orders o
+WHERE oi.order_id = o.order_id
+  AND o.order_date < '2020-01-01';
+`
+
+## 3.11 Common Pitfalls
+
+`sql
+-- Pitfall 1: Unintentional Cartesian product
+SELECT e.name, d.department_name
+FROM employees e, departments d;  -- forgot WHERE/ON!
+-- Every employee paired with every department!
+-- Always use explicit JOIN syntax
+
+-- Pitfall 2: Missing join condition
+SELECT e.name, d.department_name
+FROM employees e
+JOIN departments d;  -- CROSS JOIN without ON clause
+
+-- Pitfall 3: Duplicate rows from one-to-many joins
+-- Employee has multiple projects -> duplicates
+SELECT DISTINCT e.name, d.name
+FROM employees e
+JOIN departments d ON e.dept_id = d.id
+JOIN projects p ON e.id = p.employee_id;  -- may duplicate employees
+
+-- Pitfall 4: Wrong join type
+-- Use LEFT JOIN to keep employees without departments
+-- Use INNER JOIN to exclude employees without departments
+
+-- Pitfall 5: NULL in join column
+SELECT * FROM employees e
+JOIN departments d ON e.department_id = d.id;
+-- Employees with NULL department_id will NOT appear (NULL != anything)
+
+-- Pitfall 6: RIGHT JOIN readability
+-- Prefer LEFT JOIN; RIGHT JOIN is less intuitive
+SELECT *
+FROM departments d
+RIGHT JOIN employees e ON d.id = e.department_id;
+-- Same as: LEFT JOIN departments d ON ...
+
+-- Pitfall 7: Performance with large joins
+-- Always join on indexed columns
+-- Use appropriate join types
+-- Filter before joining when possible
+`
+
+## 3.12 Real-World Join Examples
+
+`sql
+-- E-commerce order fulfillment report
+SELECT
+    o.order_id,
+    c.name AS customer_name,
+    c.email,
+    o.order_date,
+    o.status,
+    p.name AS product,
+    oi.quantity,
+    oi.unit_price,
+    oi.quantity * oi.unit_price AS line_total,
+    s.name AS shipped_by,
+    tr.tracking_number,
+    pay.payment_method,
+    pay.status AS payment_status
+FROM orders o
+JOIN customers c ON o.customer_id = c.customer_id
+JOIN order_items oi ON o.order_id = oi.order_id
+JOIN products p ON oi.product_id = p.product_id
+LEFT JOIN shipments s ON o.order_id = s.order_id
+LEFT JOIN tracking tr ON s.shipment_id = tr.shipment_id
+LEFT JOIN payments pay ON o.order_id = pay.order_id
+WHERE o.order_date >= DATE('now', '-30 days')
+ORDER BY o.order_date DESC, o.order_id;
+
+-- HR department org chart
+SELECT
+    e.name AS employee_name,
+    e.title,
+    e.hire_date,
+    m.name AS manager_name,
+    m.title AS manager_title,
+    d.department_name,
+    l.city,
+    l.state
+FROM employees e
+JOIN employees m ON e.manager_id = m.employee_id
+JOIN departments d ON e.department_id = d.department_id
+JOIN locations l ON d.location_id = l.location_id
+ORDER BY d.department_name, m.name, e.name;
+
+-- Product recommendation candidates
+SELECT
+    p1.product_id AS product_a,
+    p1.name AS product_a_name,
+    p2.product_id AS product_b,
+    p2.name AS product_b_name,
+    COUNT(*) AS times_bought_together
+FROM order_items oi1
+JOIN order_items oi2 ON oi1.order_id = oi2.order_id
+    AND oi1.product_id < oi2.product_id
+JOIN products p1 ON oi1.product_id = p1.product_id
+JOIN products p2 ON oi2.product_id = p2.product_id
+GROUP BY p1.product_id, p1.name, p2.product_id, p2.name
+HAVING COUNT(*) >= 5
+ORDER BY times_bought_together DESC;
+`
+
+---
+
+> **Next**: [04 -- Subqueries & CTEs ?](04-subqueries-and-ctes.md)

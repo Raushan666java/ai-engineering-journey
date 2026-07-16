@@ -768,6 +768,48 @@ Technical blogging is one of the most effective ways to build your professional 
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
+## Chapter Quiz
+**Q1**: Which platform is best for technical blogging to maximize reach?
+a) LinkedIn Articles
+b) Medium
+c) Dev.to
+d) All of the above — cross-post strategically
+
+<details class="tp-qa-card" data-qid="pf-03-q1"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: d</strong></p><p>Cross-posting to Dev.to, Medium, and LinkedIn Articles maximizes reach. Dev.to is best for developer audience.</p></div></details>
+
+**Q2**: What is the ideal length for a technical blog post?
+a) 200-300 words
+b) 800-1500 words
+c) 3000+ words
+d) 100 words
+
+<details class="tp-qa-card" data-qid="pf-03-q2"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p>800-1500 words is ideal — long enough to cover depth but short enough to hold attention.</p></div></details>
+
+**Q3**: What SEO practice is most effective for technical blogs?
+a) Keyword stuffing
+b) Descriptive title, meta description, and internal links
+c) Using only images
+d) Posting daily
+
+<details class="tp-qa-card" data-qid="pf-03-q3"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p>Descriptive titles, meta descriptions, headings (H2/H3), and internal links significantly improve SEO.</p></div></details>
+
+**Q4**: How often should you publish to build a technical blog audience?
+a) Daily
+b) Weekly or bi-weekly
+c) Monthly
+d) Once a year
+
+<details class="tp-qa-card" data-qid="pf-03-q4"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p>Weekly or bi-weekly publishing is sustainable and helps build readership over 6-12 months.</p></div></details>
+
+**Q5**: What is a good first technical blog topic for a job seeker?
+a) How to build a portfolio
+b) Building a real project with a walkthrough and code
+c) Programming language history
+d) Why you should learn to code
+
+<details class="tp-qa-card" data-qid="pf-03-q5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p>A project walkthrough with code demonstrates practical skills — employers notice these posts.</p></div></details>
+
+
 ## Exercises
 
 1. **Platform Analysis**: Create accounts on Dev.to, Hashnode, and Medium. Write the same 500-word introduction on each. Compare: editor experience, SEO preview, community features. Which platform do you prefer and why?

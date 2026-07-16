@@ -746,6 +746,48 @@ function contributionProfile(events: GitHubEvent[]): Contribution {
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
+## Chapter Quiz
+**Q1**: What is the first step in contributing to an open-source project?
+a) Submit a PR immediately
+b) Read CONTRIBUTING.md and project documentation
+c) Fork the repo
+d) Open an issue asking for tasks
+
+<details class="tp-qa-card" data-qid="pf-05-q1"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p>Always read CONTRIBUTING.md, CODE_OF_CONDUCT.md, and project docs first to understand guidelines.</p></div></details>
+
+**Q2**: What is the recommended first contribution type?
+a) Major feature rewrite
+b) Documentation improvements or bug fixes
+c) Security audit
+d) Refactoring entire codebase
+
+<details class="tp-qa-card" data-qid="pf-05-q2"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p>Start with documentation improvements or small bug fixes labeled "good first issue" or "help wanted".</p></div></details>
+
+**Q3**: What is a conventional commit message for a bug fix?
+a) fixed bug
+b) fix: correct null pointer in user auth
+c) Bug Fix 123
+d) Updated file
+
+<details class="tp-qa-card" data-qid="pf-05-q3"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p>Conventional commits use format: type(scope): description — e.g., "fix(auth): correct null pointer in login"</p></div></details>
+
+**Q4**: What should you do before submitting a pull request?
+a) Push to main branch
+b) Rebase on latest upstream, run tests, and lint
+c) Close all other PRs
+d) Delete your fork
+
+<details class="tp-qa-card" data-qid="pf-05-q4"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p>Always rebase on upstream main, run existing tests, add new tests, and lint before submitting.</p></div></details>
+
+**Q5**: Which platform hosts the largest open-source community?
+a) GitLab
+b) GitHub
+c) Bitbucket
+d) SourceForge
+
+<details class="tp-qa-card" data-qid="pf-05-q5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p>GitHub hosts over 100 million repositories and the largest open-source community.</p></div></details>
+
+
 ## Exercises
 
 1. **Project Selection**: Evaluate 5 open source projects using ProjectFinder. For each, check: activity (last commit), community responsiveness (issue comments), good first issues count, and your skill match. Select the best fit.

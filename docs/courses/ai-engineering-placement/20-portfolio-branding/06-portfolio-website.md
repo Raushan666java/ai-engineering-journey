@@ -788,6 +788,48 @@ A personal portfolio website is the central hub of your professional brand. Choo
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
+## Chapter Quiz
+**Q1**: Which static site generator is most popular for developer portfolios?
+a) WordPress
+b) Next.js
+c) Hugo
+d) Both Next.js and Hugo are excellent choices
+
+<details class="tp-qa-card" data-qid="pf-06-q1"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: d</strong></p><p>Next.js (React-based) and Hugo (Go-based) are both excellent. Next.js offers more flexibility for interactive elements.</p></div></details>
+
+**Q2**: What pages should a portfolio website include?
+a) Home only
+b) Home, Projects, About, Contact
+c) Home, Blog, Store, Admin
+d) Only a landing page
+
+<details class="tp-qa-card" data-qid="pf-06-q2"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p>Essential pages: Home (hero + overview), Projects (3-5 with descriptions), About, and Contact.</p></div></details>
+
+**Q3**: What is the best way to showcase a project on a portfolio?
+a) Project name only
+b) Problem statement, architecture diagram, live demo link, and GitHub link
+c) Just the code
+d) A screenshot only
+
+<details class="tp-qa-card" data-qid="pf-06-q3"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p>Best project cards include: problem, architecture, tech stack, live demo link, GitHub link, and key outcomes.</p></div></details>
+
+**Q4**: Which domain extension is most professional for a portfolio?
+a) .com
+b) .me
+c) .dev
+d) Any of .com, .me, or .dev with your name
+
+<details class="tp-qa-card" data-qid="pf-06-q4"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: d</strong></p><p>.com, .me, and .dev are all professional. Use firstname-lastname.{com|dev|me} for personal branding.</p></div></details>
+
+**Q5**: What hosting platform offers free static site hosting?
+a) AWS EC2
+b) Netlify
+c) Azure VMs
+d) Heroku
+
+<details class="tp-qa-card" data-qid="pf-06-q5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p>Netlify and Vercel offer free tier hosting for static sites with CI/CD from GitHub.</p></div></details>
+
+
 ## Exercises
 
 1. **Framework Evaluation**: Build a simple one-page portfolio in 3 frameworks: Astro, Hugo, and Jekyll. Compare: build time, file size, ease of customization, and deployment complexity. Which wins?

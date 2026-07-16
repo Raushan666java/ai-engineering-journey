@@ -933,6 +933,48 @@ A well-structured repository signals professionalism and makes your code accessi
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
+## Chapter Quiz
+**Q1**: What is the recommended top-level directory structure for a Python project?
+a) All files in root
+b) src/, tests/, docs/, scripts/, README.md, LICENSE
+c) Only a single src/ folder
+d) application/, libraries/, utilities/
+
+<details class="tp-qa-card" data-qid="pf-02-q1"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p>A standard structure includes src/, tests/, docs/, scripts/, along with README.md, LICENSE, and pyproject.toml.</p></div></details>
+
+**Q2**: What file describes dependencies in a modern Python project?
+a) requirements.txt
+b) package.json
+c) pyproject.toml
+d) setup.cfg
+
+<details class="tp-qa-card" data-qid="pf-02-q2"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: c</strong></p><p>pyproject.toml is the modern standard, though requirements.txt is still common.</p></div></details>
+
+**Q3**: Which Git branching strategy uses main, develop, feature/, release/, and hotfix/ branches?
+a) GitHub Flow
+b) Git Flow
+c) Trunk-Based Development
+d) Feature Branching
+
+<details class="tp-qa-card" data-qid="pf-02-q3"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p>Git Flow defines main, develop, feature/, release/, and hotfix/ branches for structured releases.</p></div></details>
+
+**Q4**: What is the purpose of a .gitignore file?
+a) Track ignored commits
+b) Prevent sensitive/temp files from being tracked
+c) List contributors
+d) Configure CI/CD
+
+<details class="tp-qa-card" data-qid="pf-02-q4"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p>.gitignore specifies files and directories that Git should not track, like __pycache__/, .env, and node_modules/.</p></div></details>
+
+**Q5**: What does a CONTRIBUTING.md file typically contain?
+a) License information
+b) Code of conduct and contribution guidelines
+c) API documentation
+d) Release notes
+
+<details class="tp-qa-card" data-qid="pf-02-q5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p>CONTRIBUTING.md provides guidelines for contributors — coding standards, PR process, and setup instructions.</p></div></details>
+
+
 ## Exercises
 
 1. **Project Structure**: Create a standard Python project structure for an ML project. Include: src/, tests/, docs/, .github/workflows/, scripts/, configs/. Write the directory tree. Explain why each directory exists.

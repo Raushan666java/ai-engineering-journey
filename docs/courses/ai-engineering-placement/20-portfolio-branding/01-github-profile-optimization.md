@@ -739,6 +739,48 @@ jobs:
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
+## Chapter Quiz
+**Q1**: What is the primary purpose of a GitHub profile README?
+a) Store project documentation
+b) Showcase skills, projects, and personality to visitors
+c) Replace a personal website
+d) Automate CI/CD pipelines
+
+<details class="tp-qa-card" data-qid="pf-01-q1"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p>The profile README is the first thing visitors see — it showcases skills, pinned repos, and personal brand.</p></div></details>
+
+**Q2**: Which GitHub Stats card shows streak data?
+a) GitHub Readme Stats
+b) Streak Stats
+c) GitHub Streak Stats
+d) Commit Streak
+
+<details class="tp-qa-card" data-qid="pf-01-q2"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: c</strong></p><p>GitHub Streak Stats (streak-stats.demolab.com) shows commit streak data.</p></div></details>
+
+**Q3**: What is the recommended layout for a profile README?
+a) Single paragraph
+b) Multi-section with About, Tech Stack, Stats, Links
+c) Only a logo
+d) List of repositories
+
+<details class="tp-qa-card" data-qid="pf-01-q3"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p>A multi-section layout with About Me, Tech Stack, GitHub Stats, pinned repos, and Connect links is recommended.</p></div></details>
+
+**Q4**: How many pinned repositories can a GitHub profile display?
+a) 3
+b) 4
+c) 6
+d) 8
+
+<details class="tp-qa-card" data-qid="pf-01-q4"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: c</strong></p><p>GitHub allows up to 6 pinned repositories on a profile.</p></div></details>
+
+**Q5**: Which badge service is commonly used in GitHub profiles?
+a) Badge.io
+b) Shields.io
+c) Badgr
+d) Open Badges
+
+<details class="tp-qa-card" data-qid="pf-01-q5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p>Shields.io is the most popular badge service for GitHub profiles, offering static and dynamic badges.</p></div></details>
+
+
 ## Exercises
 
 1. **Profile README**: Generate your profile README. Include name, tagline, about, skills badges, GitHub stats, and social links. Commit it to a new repo named `username/username`. Preview how it renders.

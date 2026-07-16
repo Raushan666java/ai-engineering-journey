@@ -689,6 +689,48 @@ LinkedIn is the most important professional social network for engineers. An opt
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
+## Chapter Quiz
+**Q1**: What is the most important element of a LinkedIn profile?
+a) Profile picture
+b) Headline
+c) About section
+d) Skills list
+
+<details class="tp-qa-card" data-qid="pf-04-q1"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p>The headline appears in search results and is the first thing recruiters see. It should include role, skills, and value proposition.</p></div></details>
+
+**Q2**: What headline strategy attracts the most recruiter views?
+a) Current job title only
+b) Role + key skills + impact statement
+c) Looking for opportunities
+d) Company name only
+
+<details class="tp-qa-card" data-qid="pf-04-q2"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p>A headline like "Backend AI Engineer | Python, FastAPI, LLMs | Building Scalable AI Systems" performs best.</p></div></details>
+
+**Q3**: How many skills should you list on LinkedIn for optimal matching?
+a) 5-10
+b) 15-25
+c) 50
+d) 3-5
+
+<details class="tp-qa-card" data-qid="pf-04-q3"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p>15-25 well-chosen skills (with top 3 endorsed) optimizes search visibility and skill endorsement.</p></div></details>
+
+**Q4**: What type of LinkedIn content gets the most engagement?
+a) Job posts
+b) Technical tutorials and project insights
+c) Personal photos
+d) Company news
+
+<details class="tp-qa-card" data-qid="pf-04-q4"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p>Technical tutorials, project breakdowns, and learning journeys get the highest engagement from recruiters and peers.</p></div></details>
+
+**Q5**: How should you request a LinkedIn recommendation?
+a) Send a generic request
+b) Personalize with specific project and impact details
+c) Ask in a comment
+d) Do not ask at all
+
+<details class="tp-qa-card" data-qid="pf-04-q5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p>Personalized requests mentioning specific projects and outcomes get higher quality recommendations.</p></div></details>
+
+
 ## Exercises
 
 1. **Headline Optimization**: Write 3 versions of your LinkedIn headline: SEO-focused, creative, and achievement-based. Show each to 3 peers and ask which makes them most likely to click. Implement the winner.

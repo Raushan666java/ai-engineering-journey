@@ -20,6 +20,9 @@ Comprehensive interview preparation covering DSA patterns, SQL, backend coding, 
 | 10 | [Resume & Portfolio Review](10-resume-and-portfolio-review.md) | ATS optimization, formatting, achievements, keywords | 15 |
 | 11 | [Salary Negotiation](11-salary-negotiation.md) | market research, negotiation tactics, offer evaluation | 15 |
 | 12 | [Mock Interview Simulations](12-mock-interview-simulations.md) | timed mock, feedback, improvement tracking | 15 |
+| 13 | [Math & Probability Interview](13-math-and-probability-interview.md) | Bayes, MLE, distributions, linear algebra, information theory | 15 |
+| 14 | [ML System Design Interview](14-ml-system-design-interview.md) | recommendation systems, feature stores, model serving, A/B testing | 15 |
+| 15 | [FAANG Company Deep Dives](15-faang-company-deep-dives.md) | Amazon LPs, Google Googleyness, Meta PE, process strategy | 15 |
 
 ## Learning Path
 

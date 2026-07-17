@@ -345,6 +345,9 @@ nav:
       - "Resume And Portfolio Review": courses/ai-engineering-placement/21-interview-preparation/10-resume-and-portfolio-review.md
       - "Salary Negotiation": courses/ai-engineering-placement/21-interview-preparation/11-salary-negotiation.md
       - "Mock Interview Simulations": courses/ai-engineering-placement/21-interview-preparation/12-mock-interview-simulations.md
+      - "Math And Probability Interview": courses/ai-engineering-placement/21-interview-preparation/13-math-and-probability-interview.md
+      - "ML System Design Interview": courses/ai-engineering-placement/21-interview-preparation/14-ml-system-design-interview.md
+      - "FAANG Company Deep Dives": courses/ai-engineering-placement/21-interview-preparation/15-faang-company-deep-dives.md
   - "⚡ Modern AI Engineering":
     - Overview: courses/modern-ai-engineering/index.md
     - '01 - Intro to AI Engineering': courses/modern-ai-engineering/01-introduction-to-ai-engineering.md

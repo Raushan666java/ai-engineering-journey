@@ -69,7 +69,7 @@ flowchart LR
 
 ## Theory
 
-![Database Security Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch18-security.png)
+![Database Security Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch18-database-security.png)
 
 ### 18.1 The Database Security Landscape
 

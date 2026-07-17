@@ -35,23 +35,6 @@ flowchart LR
     F --> G[Output]
 ```
 
-## Image Gallery
-
-<div class="image-gallery">
-  <div class="image-item">
-    <img src="../../assets/images/lessons/ai-engineering-placement/deep-learning-pytorch/nn-module/architecture.png" alt="nn.Module Architecture" />
-    <p>nn.Module class hierarchy and inheritance structure</p>
-  </div>
-  <div class="image-item">
-    <img src="../../assets/images/lessons/ai-engineering-placement/deep-learning-pytorch/nn-module/forward-hook.png" alt="Forward Hook Flow" />
-    <p>Forward and backward hook execution flow during model pass</p>
-  </div>
-  <div class="image-item">
-    <img src="../../assets/images/lessons/ai-engineering-placement/deep-learning-pytorch/nn-module/weight-init.png" alt="Weight Initialization Strategies" />
-    <p>Effect of different weight initialization strategies on gradient flow</p>
-  </div>
-</div>
-
 ## 3.1 nn.Module Basics
 
 All neural network components in PyTorch inherit from nn.Module.

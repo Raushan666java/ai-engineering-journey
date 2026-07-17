@@ -1,4 +1,4 @@
-﻿# Binary Trees
+# Binary Trees
 
 ## Learning Objectives
 
@@ -11,23 +11,6 @@
 | LO5 | Build trees from traversal sequences |
 | LO6 | Apply DFS and BFS strategies to binary tree problems |
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/09-binary-trees/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/09-binary-trees/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/09-binary-trees/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/09-binary-trees/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/09-binary-trees/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/09-binary-trees/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -341,8 +324,8 @@ function inorderTraversal(root: TreeNode | null): number[] {
     Q1: What are the differences between tree traversals?
   </summary>
   <div class="tp-qa-answer"><p>Preorder: Root-Left-Right (for copying trees). Inorder: Left-Root-Right (sorted in BST). Postorder: Left-Right-Root (for deletion). Level-order: BFS using queue.</p></div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa09-q2">
@@ -350,8 +333,8 @@ function inorderTraversal(root: TreeNode | null): number[] {
     Q2: How do you find the height of a binary tree?
   </summary>
   <div class="tp-qa-answer"><p>Recursively: height = 1 + max(height(left), height(right)). Base case: empty node returns 0 (node-based) or -1 (edge-based).</p></div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa09-q3">
@@ -359,8 +342,8 @@ function inorderTraversal(root: TreeNode | null): number[] {
     Q3: What is the diameter of a binary tree?
   </summary>
   <div class="tp-qa-answer"><p>The longest path between any two nodes (may or may not pass through root). Use DFS: for each node, diameter = max(diameter, left_height + right_height).</p></div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa09-q4">
@@ -368,8 +351,8 @@ function inorderTraversal(root: TreeNode | null): number[] {
     Q4: How do you check if a binary tree is balanced?
   </summary>
   <div class="tp-qa-answer"><p>For each node, the height difference between left and right subtrees must be at most 1. Return both balanced flag and height from DFS.</p></div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa09-q5">
@@ -377,8 +360,8 @@ function inorderTraversal(root: TreeNode | null): number[] {
     Q5: How do you perform level-order traversal?
   </summary>
   <div class="tp-qa-answer"><p>Use a queue. Enqueue root. While queue not empty, process all nodes at current level, enqueuing their children for the next level.</p></div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa09-q6">
@@ -386,8 +369,8 @@ function inorderTraversal(root: TreeNode | null): number[] {
     Q6: Explain LCA in a binary tree.
   </summary>
   <div class="tp-qa-answer"><p>LCA is the deepest node that has both targets in its subtree. If root matches either target, return root. If left and right both return non-null, root is LCA.</p></div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa09-q7">
@@ -395,8 +378,8 @@ function inorderTraversal(root: TreeNode | null): number[] {
     Q7: How do you serialize and deserialize a binary tree?
   </summary>
   <div class="tp-qa-answer"><p>Use preorder traversal with null markers. Serialize as comma-separated string. Deserialize by reading values and recursively building nodes.</p></div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa09-q8">
@@ -404,8 +387,8 @@ function inorderTraversal(root: TreeNode | null): number[] {
     Q8: What is the maximum path sum problem?
   </summary>
   <div class="tp-qa-answer"><p>Find the path with maximum sum between any two nodes. Use DFS returning the max single-path sum, tracking the max of left+right+node.val as potential answer.</p></div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa09-q9">
@@ -413,8 +396,8 @@ function inorderTraversal(root: TreeNode | null): number[] {
     Q9: How do you build a tree from inorder and preorder?
   </summary>
   <div class="tp-qa-answer"><p>First element of preorder is root. Find it in inorder to split left/right subtrees. Recursively build using appropriate slices.</p></div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa09-q10">
@@ -422,8 +405,8 @@ function inorderTraversal(root: TreeNode | null): number[] {
     Q10: Compare recursive and iterative approaches for tree problems.
   </summary>
   <div class="tp-qa-answer"><p>Recursive: elegant, divide-and-conquer, risk of stack overflow for deep trees. Iterative: more complex, uses explicit stack/queue, avoids stack overflow.</p></div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa09-q11">
@@ -431,8 +414,8 @@ function inorderTraversal(root: TreeNode | null): number[] {
     Q11: How do you count all nodes in a complete binary tree in less than O(n)?
   </summary>
   <div class="tp-qa-answer"><p>Calculate left and right heights. If equal, use formula 2^h - 1. Otherwise, recursively count left + 1 + right. O(log^2 n) for complete trees.</p></div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa09-q12">
@@ -440,8 +423,8 @@ function inorderTraversal(root: TreeNode | null): number[] {
     Q12: What is the difference between a binary tree and a BST?
   </summary>
   <div class="tp-qa-answer"><p>Binary tree: no ordering constraint. BST: left subtree values < root < right subtree values. BST enables O(log n) search, insert, delete if balanced.</p></div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 ## Chapter Quiz
@@ -479,4 +462,4 @@ a) Queue  b) Stack  c) Deque  d) Priority Queue
 
 ---
 
-> **Next**: [10 - Binary Search Trees →](10-binary-search-trees.md)
+> **Next**: [10 - Binary Search Trees ?](10-binary-search-trees.md)

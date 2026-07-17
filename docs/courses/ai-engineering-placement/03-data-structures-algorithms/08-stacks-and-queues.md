@@ -1,4 +1,4 @@
-﻿# Stacks and Queues
+# Stacks and Queues
 
 ## Learning Objectives
 
@@ -11,23 +11,6 @@
 | LO5 | Implement circular queues, deques, and priority queues |
 | LO6 | Use monotonic stack/queue for next greater/smaller element problems |
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/08-stacks-and-queues/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/08-stacks-and-queues/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/08-stacks-and-queues/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/08-stacks-and-queues/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/08-stacks-and-queues/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/08-stacks-and-queues/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -451,8 +434,8 @@ function isValid(s: string): boolean {
     Q1: What is the difference between a stack and a queue?
   </summary>
   <div class="tp-qa-answer"><p>Stack: LIFO - push/pop at same end. Queue: FIFO - enqueue at rear, dequeue at front.</p></div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa08-q2">
@@ -460,8 +443,8 @@ function isValid(s: string): boolean {
     Q2: How do you implement a queue using two stacks?
   </summary>
   <div class="tp-qa-answer"><p>Use stack1 for enqueue. For dequeue, if stack2 is empty, pop all from stack1 to stack2, then pop from stack2. Amortized O(1) per operation.</p></div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa08-q3">
@@ -469,8 +452,8 @@ function isValid(s: string): boolean {
     Q3: Explain the monotonic stack with an example.
   </summary>
   <div class="tp-qa-answer"><p>A monotonic stack maintains elements in increasing/decreasing order. For next greater element, we pop when current > stack top, recording the current as the next greater for the popped index.</p></div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa08-q4">
@@ -478,8 +461,8 @@ function isValid(s: string): boolean {
     Q4: How do you implement a stack with O(1) min operation?
   </summary>
   <div class="tp-qa-answer"><p>Maintain two stacks: one for values, one for minimums. On push, push min(value, current_min) onto min stack. On pop, pop both. Min is top of min stack.</p></div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa08-q5">
@@ -487,8 +470,8 @@ function isValid(s: string): boolean {
     Q5: How does a circular queue work?
   </summary>
   <div class="tp-qa-answer"><p>Use a fixed array with front and rear pointers that wrap around using modulo. Avoids O(n) shifting required by linear array queues.</p></div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa08-q6">
@@ -496,8 +479,8 @@ function isValid(s: string): boolean {
     Q6: Solve the largest rectangle in histogram problem.
   </summary>
   <div class="tp-qa-answer"><p>Use monotonic stack of increasing heights. When a smaller height is encountered, pop larger heights and calculate area using the current index as right boundary.</p></div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa08-q7">
@@ -505,8 +488,8 @@ function isValid(s: string): boolean {
     Q7: How do you evaluate a postfix expression?
   </summary>
   <div class="tp-qa-answer"><p>Scan left to right. Push numbers onto stack. When operator is encountered, pop two numbers, apply operator, push result. Final stack element is the answer.</p></div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa08-q8">
@@ -514,8 +497,8 @@ function isValid(s: string): boolean {
     Q8: What is a deque and when would you use it?
   </summary>
   <div class="tp-qa-answer"><p>Deque allows push/pop from both ends. Used for sliding window maximum, palindrome checking, and undo/redo with limited history.</p></div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa08-q9">
@@ -523,8 +506,8 @@ function isValid(s: string): boolean {
     Q9: How does a priority queue differ from a regular queue?
   </summary>
   <div class="tp-qa-answer"><p>Priority queue orders elements by priority (not insertion order). Implemented with heap: O(log n) insert/delete, O(1) peek. Used for Dijkstra, A*, task scheduling.</p></div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa08-q10">
@@ -532,8 +515,8 @@ function isValid(s: string): boolean {
     Q10: Implement a stack that supports push, pop, top, and getMin in O(1).
   </summary>
   <div class="tp-qa-answer"><p>Store each value paired with the current minimum: (value, min_so_far). On push, compare new value with top's min. On pop, just pop. getMin returns top's min.</p></div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa08-q11">
@@ -541,8 +524,8 @@ function isValid(s: string): boolean {
     Q11: Explain the sliding window maximum using deque.
   </summary>
   <div class="tp-qa-answer"><p>Store indices in deque with decreasing values. Before adding new element, remove indices outside window (from front) and smaller elements (from back). Front always has max.</p></div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa08-q12">
@@ -550,8 +533,8 @@ function isValid(s: string): boolean {
     Q12: How do you check if a string has balanced parentheses?
   </summary>
   <div class="tp-qa-answer"><p>Use stack. For each char, if opening bracket, push. If closing, pop and check if it matches the expected opening bracket. Stack must be empty at end.</p></div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 ## Chapter Quiz
@@ -590,4 +573,4 @@ a) O(1)  b) O(n)  c) O(log n)  d) O(n^2)
 
 ---
 
-> **Next**: [09 - Binary Trees â†’](09-binary-trees.md)
+> **Next**: [09 - Binary Trees →](09-binary-trees.md)

@@ -1,4 +1,4 @@
-ï»¿# Unsupervised Learning â€” K-Means, DBSCAN, Hierarchical, Gaussian Mixtures
+# Unsupervised Learning — K-Means, DBSCAN, Hierarchical, Gaussian Mixtures
 
 ## Learning Objectives
 
@@ -10,24 +10,6 @@
 | LO4 | Perform hierarchical clustering: linkage criteria, dendrograms |
 | LO5 | Implement Gaussian Mixture Models: EM algorithm, responsibilities |
 | LO6 | Evaluate clustering: silhouette score, Davies-Bouldin index, inertia |
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/08-machine-learning/07-unsupervised-learning/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/08-machine-learning/07-unsupervised-learning/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/08-machine-learning/07-unsupervised-learning/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/08-machine-learning/07-unsupervised-learning/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/08-machine-learning/07-unsupervised-learning/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/08-machine-learning/07-unsupervised-learning/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
 
 ## Chapter at a Glance
 
@@ -470,19 +452,19 @@ class KMeansTS {
 
 <details class="tp-qa-card" data-qid="ml08-q2"><summary class="tp-qa-question"><span class="tp-qa-status"></span>Q2: How does DBSCAN differ from K-means?</summary><div class="tp-qa-answer"><p>K-means requires specifying K and finds spherical clusters of similar size. DBSCAN finds clusters based on density connectivity without needing K. DBSCAN can find arbitrarily shaped clusters, identify noise points, and handle varying cluster densities (with appropriate eps tuning). K-means assigns every point to a cluster; DBSCAN can label points as noise. DBSCAN is more robust to outliers.</p></div><button class="tp-qa-mark-btn">Mark Reviewed</button><button class="tp-qa-bookmark-btn">Bookmark</button></details>
 
-<details class="tp-qa-card" data-qid="ml08-q3"><summary class="tp-qa-question"><span class="tp-qa-status"></span>Q3: What is the elbow method for choosing K?</summary><div class="tp-qa-answer"><p>The elbow method plots inertia (within-cluster sum of squares) vs number of clusters K. As K increases, inertia always decreases. The "elbow" is the point where the rate of decrease sharply changes â€” this suggests the optimal K. In practice, elbows are often unclear. Use the silhouette score as a complementary metric: plot silhouette score vs K and choose the K with the highest score.</p></div><button class="tp-qa-mark-btn">Mark Reviewed</button><button class="tp-qa-bookmark-btn">Bookmark</button></details>
+<details class="tp-qa-card" data-qid="ml08-q3"><summary class="tp-qa-question"><span class="tp-qa-status"></span>Q3: What is the elbow method for choosing K?</summary><div class="tp-qa-answer"><p>The elbow method plots inertia (within-cluster sum of squares) vs number of clusters K. As K increases, inertia always decreases. The "elbow" is the point where the rate of decrease sharply changes — this suggests the optimal K. In practice, elbows are often unclear. Use the silhouette score as a complementary metric: plot silhouette score vs K and choose the K with the highest score.</p></div><button class="tp-qa-mark-btn">Mark Reviewed</button><button class="tp-qa-bookmark-btn">Bookmark</button></details>
 
-<details class="tp-qa-card" data-qid="ml08-q4"><summary class="tp-qa-question"><span class="tp-qa-status"></span>Q4: What are core, border, and noise points in DBSCAN?</summary><div class="tp-qa-answer"><p><strong>Core point</strong>: Has at least min_samples points within distance eps (including itself). Core points form the dense interior of clusters. <strong>Border point</strong>: Within eps of a core point but has fewer than min_samples neighbors. Border points are on the cluster edge. <strong>Noise point</strong>: Neither core nor border â€” isolated in low-density region. DBSCAN builds clusters by connecting core points within eps of each other and including their border points.</p></div><button class="tp-qa-mark-btn">Mark Reviewed</button><button class="tp-qa-bookmark-btn">Bookmark</button></details>
+<details class="tp-qa-card" data-qid="ml08-q4"><summary class="tp-qa-question"><span class="tp-qa-status"></span>Q4: What are core, border, and noise points in DBSCAN?</summary><div class="tp-qa-answer"><p><strong>Core point</strong>: Has at least min_samples points within distance eps (including itself). Core points form the dense interior of clusters. <strong>Border point</strong>: Within eps of a core point but has fewer than min_samples neighbors. Border points are on the cluster edge. <strong>Noise point</strong>: Neither core nor border — isolated in low-density region. DBSCAN builds clusters by connecting core points within eps of each other and including their border points.</p></div><button class="tp-qa-mark-btn">Mark Reviewed</button><button class="tp-qa-bookmark-btn">Bookmark</button></details>
 
 <details class="tp-qa-card" data-qid="ml08-q5"><summary class="tp-qa-question"><span class="tp-qa-status"></span>Q5: What is the EM algorithm in GMM?</summary><div class="tp-qa-answer"><p>The Expectation-Maximization (EM) algorithm iteratively estimates GMM parameters: <strong>E-step</strong>: Compute responsibilities (probability each point belongs to each component) using current parameters. <strong>M-step</strong>: Update parameters (means, covariances, weights) by maximizing the likelihood weighted by responsibilities. Repeat until convergence. EM guarantees monotonic increase in log-likelihood but may converge to local optima. Multiple restarts with different initializations are recommended.</p></div><button class="tp-qa-mark-btn">Mark Reviewed</button><button class="tp-qa-bookmark-btn">Bookmark</button></details>
 
-<details class="tp-qa-card" data-qid="ml08-q6"><summary class="tp-qa-question"><span class="tp-qa-status"></span>Q6: How do you evaluate clustering results?</summary><div class="tp-qa-answer"><p><strong>Internal metrics</strong> (no ground truth needed): Silhouette score ([-1,1], higher better), Davies-Bouldin index (lower better), Calinski-Harabasz index (higher better), inertia (lower better, but decreases with K). <strong>External metrics</strong> (ground truth available): Adjusted Rand Index (ARI), Normalized Mutual Information (NMI), homogeneity, completeness, V-measure. Use multiple metrics because each has biases â€” silhouette prefers spherical clusters, DB prefers compact clusters.</p></div><button class="tp-qa-mark-btn">Mark Reviewed</button><button class="tp-qa-bookmark-btn">Bookmark</button></details>
+<details class="tp-qa-card" data-qid="ml08-q6"><summary class="tp-qa-question"><span class="tp-qa-status"></span>Q6: How do you evaluate clustering results?</summary><div class="tp-qa-answer"><p><strong>Internal metrics</strong> (no ground truth needed): Silhouette score ([-1,1], higher better), Davies-Bouldin index (lower better), Calinski-Harabasz index (higher better), inertia (lower better, but decreases with K). <strong>External metrics</strong> (ground truth available): Adjusted Rand Index (ARI), Normalized Mutual Information (NMI), homogeneity, completeness, V-measure. Use multiple metrics because each has biases — silhouette prefers spherical clusters, DB prefers compact clusters.</p></div><button class="tp-qa-mark-btn">Mark Reviewed</button><button class="tp-qa-bookmark-btn">Bookmark</button></details>
 
 <details class="tp-qa-card" data-qid="ml08-q7"><summary class="tp-qa-question"><span class="tp-qa-status"></span>Q7: What are the limitations of K-means?</summary><div class="tp-qa-answer"><p><strong>1)</strong> Requires K to be specified beforehand. <strong>2)</strong> Assumes spherical clusters (Euclidean distance). <strong>3)</strong> Sensitive to initialization (solved partially by K-means++). <strong>4)</strong> Converges to local optimum, not global. <strong>5)</strong> Poor with varying cluster sizes and densities. <strong>6)</strong> Sensitive to outliers (every point assigned to a cluster). <strong>7)</strong> Struggles with high-dimensional data (curse of dimensionality). <strong>8)</strong> Assumes all features are equally important.</p></div><button class="tp-qa-mark-btn">Mark Reviewed</button><button class="tp-qa-bookmark-btn">Bookmark</button></details>
 
-<details class="tp-qa-card" data-qid="ml08-q8"><summary class="tp-qa-question"><span class="tp-qa-status"></span>Q8: What linkage criteria are used in hierarchical clustering?</summary><div class="tp-qa-answer"><p><strong>Single linkage</strong>: Minimum distance between clusters â€” can form long chain-like clusters. <strong>Complete linkage</strong>: Maximum distance â€” produces compact clusters. <strong>Average linkage</strong>: Mean distance â€” balances single and complete. <strong>Ward's linkage</strong>: Minimizes within-cluster variance â€” similar to K-means objective. Ward's is generally preferred for continuous data. Single linkage is good for non-elliptical shapes but sensitive to noise.</p></div><button class="tp-qa-mark-btn">Mark Reviewed</button><button class="tp-qa-bookmark-btn">Bookmark</button></details>
+<details class="tp-qa-card" data-qid="ml08-q8"><summary class="tp-qa-question"><span class="tp-qa-status"></span>Q8: What linkage criteria are used in hierarchical clustering?</summary><div class="tp-qa-answer"><p><strong>Single linkage</strong>: Minimum distance between clusters — can form long chain-like clusters. <strong>Complete linkage</strong>: Maximum distance — produces compact clusters. <strong>Average linkage</strong>: Mean distance — balances single and complete. <strong>Ward's linkage</strong>: Minimizes within-cluster variance — similar to K-means objective. Ward's is generally preferred for continuous data. Single linkage is good for non-elliptical shapes but sensitive to noise.</p></div><button class="tp-qa-mark-btn">Mark Reviewed</button><button class="tp-qa-bookmark-btn">Bookmark</button></details>
 
-<details class="tp-qa-card" data-qid="ml08-q9"><summary class="tp-qa-question"><span class="tp-qa-status"></span>Q9: How do you choose eps for DBSCAN?</summary><div class="tp-qa-answer"><p>Plot the k-distance graph: for each point, compute distance to its k-th nearest neighbor (k = min_samples), sort distances, look for the "elbow" â€” the distance where the curve sharply rises. This elbow value is a good eps. Too small eps: many points become noise. Too large eps: clusters merge. Rule of thumb: start with eps = 0.5 and adjust based on k-distance plot. For standardized data, eps = 0.5-1.5 is typical.</p></div><button class="tp-qa-mark-btn">Mark Reviewed</button><button class="tp-qa-bookmark-btn">Bookmark</button></details>
+<details class="tp-qa-card" data-qid="ml08-q9"><summary class="tp-qa-question"><span class="tp-qa-status"></span>Q9: How do you choose eps for DBSCAN?</summary><div class="tp-qa-answer"><p>Plot the k-distance graph: for each point, compute distance to its k-th nearest neighbor (k = min_samples), sort distances, look for the "elbow" — the distance where the curve sharply rises. This elbow value is a good eps. Too small eps: many points become noise. Too large eps: clusters merge. Rule of thumb: start with eps = 0.5 and adjust based on k-distance plot. For standardized data, eps = 0.5-1.5 is typical.</p></div><button class="tp-qa-mark-btn">Mark Reviewed</button><button class="tp-qa-bookmark-btn">Bookmark</button></details>
 
 <details class="tp-qa-card" data-qid="ml08-q10"><summary class="tp-qa-question"><span class="tp-qa-status"></span>Q10: When would you use clustering for anomaly detection?</summary><div class="tp-qa-answer"><p>DBSCAN naturally identifies noise points as anomalies. For K-means, points far from all centroids (high distance to nearest centroid) can be flagged as anomalies. For GMM, points with low likelihood under all components are anomalous. Clustering-based anomaly detection works well when normal data forms dense clusters and anomalies are isolated. It fails when anomalies also form clusters or normal data has high variance.</p></div><button class="tp-qa-mark-btn">Mark Reviewed</button><button class="tp-qa-bookmark-btn">Bookmark</button></details>
 
@@ -535,15 +517,15 @@ d) Ward
 
 ## Exercises
 
-**Easy** â€” Implement K-means clustering on the Iris dataset (use only petal features). Find optimal K using the elbow method.
+**Easy** — Implement K-means clustering on the Iris dataset (use only petal features). Find optimal K using the elbow method.
 
-**Easy** â€” Apply DBSCAN to a dataset with moons-like structure. Compare results with K-means.
+**Easy** — Apply DBSCAN to a dataset with moons-like structure. Compare results with K-means.
 
-**Medium** â€” Implement hierarchical clustering with single, complete, and average linkage. Compare dendrograms on a small dataset.
+**Medium** — Implement hierarchical clustering with single, complete, and average linkage. Compare dendrograms on a small dataset.
 
-**Hard** â€” Build a clustering evaluation pipeline: apply K-means, DBSCAN, GMM, and hierarchical clustering to the same data. Compare using silhouette score, Davies-Bouldin index, and visual inspection.
+**Hard** — Build a clustering evaluation pipeline: apply K-means, DBSCAN, GMM, and hierarchical clustering to the same data. Compare using silhouette score, Davies-Bouldin index, and visual inspection.
 
-**Hard** â€” Implement GMM from scratch with EM algorithm. Test on a dataset with overlapping elliptical clusters and compare with sklearn's GMM.
+**Hard** — Implement GMM from scratch with EM algorithm. Test on a dataset with overlapping elliptical clusters and compare with sklearn's GMM.
 
 ---
 

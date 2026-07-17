@@ -11,24 +11,6 @@
 | LO5 | Leverage open source contributions for career growth |
 | LO6 | Maintain your own open source projects |
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/20-portfolio-branding/05-open-source-contribution/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/20-portfolio-branding/05-open-source-contribution/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/20-portfolio-branding/05-open-source-contribution/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/20-portfolio-branding/05-open-source-contribution/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/20-portfolio-branding/05-open-source-contribution/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/20-portfolio-branding/05-open-source-contribution/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |

@@ -11,24 +11,6 @@
 | LO5 | Optimize nested loop solutions to O(n) using the sliding window technique |
 | LO6 | Identify when sliding window is applicable (contiguous, monotonic condition) |
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/04-sliding-window/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/04-sliding-window/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/04-sliding-window/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/04-sliding-window/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/04-sliding-window/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/04-sliding-window/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |

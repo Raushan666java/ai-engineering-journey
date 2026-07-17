@@ -61,7 +61,7 @@ flowchart LR
 
 > **One-Sentence Takeaway:** Joins are the heart of relational querying Ã¢â€ â€™ mastering INNER, OUTER, SELF, NATURAL, SEMI, ANTI, and subqueries lets you combine any data across normalized tables.
 
-![SQL Joins and Subqueries Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch05-sql-joins.png)
+![SQL Joins and Subqueries Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch05-sql-joins-subqueries.png)
 
 ### 5.1 Introduction to Joins
 

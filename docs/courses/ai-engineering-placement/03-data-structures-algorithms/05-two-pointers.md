@@ -1,4 +1,4 @@
-Ôªø# Two Pointers
+# Two Pointers
 
 ## Learning Objectives
 
@@ -10,24 +10,6 @@
 | LO4 | Apply fast-slow pointers for cycle detection in linked lists and finding the middle node |
 | LO5 | Recognize problems where the two-pointer pattern yields O(n) time and O(1) space solutions |
 | LO6 | Combine two-pointer with binary search, hash maps, and sorting for complex optimization problems |
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/05-two-pointers/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/05-two-pointers/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/05-two-pointers/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/05-two-pointers/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/05-two-pointers/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/05-two-pointers/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
 
 ## Chapter at a Glance
 
@@ -631,12 +613,12 @@ console.log(threeSum([-1, 0, 1, 2, -1, -4]));
 
 <details class="tp-qa-card">
   <summary><strong>Q4: How do I find the cycle start in a linked list?</strong></summary>
-  After the first meeting point in Floyd's algorithm, reset one pointer to the head. Move both at the same speed (one step each). They will meet at the cycle start. Proof: Let distance from head to cycle start be a, cycle start to meeting point be b, cycle length be c. Slow traveled a+b. Fast traveled a+b+kc for some integer k = 2(a+b). So a+b = kc, meaning a = kc - b. Starting from head (distance 0) and from meeting point, they meet at distance a from head ‚Äî the cycle start.
+  After the first meeting point in Floyd's algorithm, reset one pointer to the head. Move both at the same speed (one step each). They will meet at the cycle start. Proof: Let distance from head to cycle start be a, cycle start to meeting point be b, cycle length be c. Slow traveled a+b. Fast traveled a+b+kc for some integer k = 2(a+b). So a+b = kc, meaning a = kc - b. Starting from head (distance 0) and from meeting point, they meet at distance a from head ó the cycle start.
 </details>
 
 <details class="tp-qa-card">
   <summary><strong>Q5: What is the space complexity advantage of two pointers?</strong></summary>
-  Two pointers use O(1) extra space ‚Äî just a few integer variables tracking array indices or node references. This is significantly better than hash-map-based approaches that may use O(n) space. For large datasets (millions of elements), the constant memory footprint makes two-pointer solutions more scalable and cache-friendly. Some interviewers explicitly ask for O(1) space, making two pointers the only viable approach.
+  Two pointers use O(1) extra space ó just a few integer variables tracking array indices or node references. This is significantly better than hash-map-based approaches that may use O(n) space. For large datasets (millions of elements), the constant memory footprint makes two-pointer solutions more scalable and cache-friendly. Some interviewers explicitly ask for O(1) space, making two pointers the only viable approach.
 </details>
 
 <details class="tp-qa-card">
@@ -666,7 +648,7 @@ console.log(threeSum([-1, 0, 1, 2, -1, -4]));
 
 <details class="tp-qa-card">
   <summary><strong>Q11: What edge cases commonly break two-pointer solutions?</strong></summary>
-  (1) Empty arrays or single-element arrays ‚Äî check early. (2) Arrays with all identical elements ‚Äî duplicate skipping logic fails if not careful. (3) Target sum requiring the same element twice ‚Äî ensure left != right. (4) Integer overflow for large sums or areas ‚Äî use 64-bit intermediates. (5) Off-by-one in pointer movement conditions ‚Äî test with exactly one matching pair. (6) Three-sum where all triplets are valid ‚Äî skipping duplicates is critical for performance. (7) Linked lists with odd/even length parity ‚Äî the fast pointer may be null at different points.
+  (1) Empty arrays or single-element arrays ó check early. (2) Arrays with all identical elements ó duplicate skipping logic fails if not careful. (3) Target sum requiring the same element twice ó ensure left != right. (4) Integer overflow for large sums or areas ó use 64-bit intermediates. (5) Off-by-one in pointer movement conditions ó test with exactly one matching pair. (6) Three-sum where all triplets are valid ó skipping duplicates is critical for performance. (7) Linked lists with odd/even length parity ó the fast pointer may be null at different points.
 </details>
 
 <details class="tp-qa-card">
@@ -844,4 +826,4 @@ print(min_window(s, t))  # "BANC"
 
 ---
 
-[‚Üê Previous: Sliding Window](04-sliding-window.md) | [Next: Hash Maps & Sets ‚Üí](06-hash-maps-and-sets.md)
+[? Previous: Sliding Window](04-sliding-window.md) | [Next: Hash Maps & Sets ?](06-hash-maps-and-sets.md)

@@ -1,4 +1,4 @@
-ï»¿# Kubernetes Scaling â€” HPA, Autoscaling, and Cluster Management
+# Kubernetes Scaling — HPA, Autoscaling, and Cluster Management
 
 ## Learning Objectives
 
@@ -10,24 +10,6 @@
 | LO4 | Use Pod Disruption Budgets for high availability |
 | LO5 | Manage cluster upgrades and node maintenance |
 | LO6 | Implement canary deployments and blue-green strategies |
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/06-docker-kubernetes-cloud/06-kubernetes-scaling/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/06-docker-kubernetes-cloud/06-kubernetes-scaling/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/06-docker-kubernetes-cloud/06-kubernetes-scaling/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/06-docker-kubernetes-cloud/06-kubernetes-scaling/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/06-docker-kubernetes-cloud/06-kubernetes-scaling/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/06-docker-kubernetes-cloud/06-kubernetes-scaling/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
 
 ## Chapter at a Glance
 
@@ -260,7 +242,7 @@ spec:
 **PDB strategies**:
 
 `yaml
-# Critical service â€” always keep most available
+# Critical service — always keep most available
 apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:
@@ -271,7 +253,7 @@ spec:
     matchLabels:
       tier: critical
 
-# Batch job â€” can tolerate disruptions
+# Batch job — can tolerate disruptions
 apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:
@@ -675,7 +657,7 @@ async function createHPA(name: string, deployment: string, min: number, max: num
     Q6: What is the difference between kubectl cordon and kubectl drain?
   </summary>
   <div class="tp-qa-answer">
-    <p>kubectl cordon marks a node as unschedulable â€” no new Pods are scheduled, but existing Pods continue running. kubectl drain cordons the node and then evicts all Pods (respecting PDBs), moving them to other nodes. Drain is used for maintenance; cordon is used before drain.</p>
+    <p>kubectl cordon marks a node as unschedulable — no new Pods are scheduled, but existing Pods continue running. kubectl drain cordons the node and then evicts all Pods (respecting PDBs), moving them to other nodes. Drain is used for maintenance; cordon is used before drain.</p>
   </div>
   <button class="tp-qa-mark-btn">&#x2705; Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>
@@ -778,15 +760,15 @@ d) ConfigMap
 
 ## Exercises
 
-**Easy** â€” Deploy an Nginx with HPA that scales between 1-5 replicas based on CPU at 50% target. Generate load and watch it scale.
+**Easy** — Deploy an Nginx with HPA that scales between 1-5 replicas based on CPU at 50% target. Generate load and watch it scale.
 
-**Medium** â€” Set up a canary deployment: deploy v1 (3 replicas) and v2 (1 replica) of an app. Use a Service to split traffic. Gradually shift to v2.
+**Medium** — Set up a canary deployment: deploy v1 (3 replicas) and v2 (1 replica) of an app. Use a Service to split traffic. Gradually shift to v2.
 
-**Medium** â€” Create a PDB that ensures 2 Pods are always available. Deploy a Deployment with 3 replicas. Drain a node and observe that PDB prevents disruption.
+**Medium** — Create a PDB that ensures 2 Pods are always available. Deploy a Deployment with 3 replicas. Drain a node and observe that PDB prevents disruption.
 
-**Hard** â€” Set up Prometheus and Grafana monitoring for a cluster. Configure HPA based on custom Prometheus metrics (requests per second). Generate load and verify autoscaling works.
+**Hard** — Set up Prometheus and Grafana monitoring for a cluster. Configure HPA based on custom Prometheus metrics (requests per second). Generate load and verify autoscaling works.
 
-**Hard** â€” Perform a simulated cluster upgrade: create two node pools with different Kubernetes versions, migrate workloads from old to new using cordon/drain/uncordon, and verify zero downtime.
+**Hard** — Perform a simulated cluster upgrade: create two node pools with different Kubernetes versions, migrate workloads from old to new using cordon/drain/uncordon, and verify zero downtime.
 
 
 ---

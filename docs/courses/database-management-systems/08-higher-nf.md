@@ -90,7 +90,7 @@ Each higher form eliminates a specific type of dependency redundancy:
 
 > **One-Sentence Takeaway:** Beyond BCNF, 4NF and 5NF handle exotic dependencies -- and denormalization is a deliberate performance trade-off, not an excuse to skip normalization.
 
-![Higher Normal Forms Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch08-higher-nf.png)
+![Higher Normal Forms Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch08-higher-normal-forms.png)
 
 ### 8.1 Beyond BCNF
 

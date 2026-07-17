@@ -1,4 +1,4 @@
-﻿# Binary Search Trees
+# Binary Search Trees
 
 ## Learning Objectives
 
@@ -11,23 +11,6 @@
 | LO5 | Implement range queries, floor/ceil, and successor/predecessor |
 | LO6 | Convert BST to sorted list and vice versa |
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/10-binary-search-trees/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/10-binary-search-trees/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/10-binary-search-trees/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/10-binary-search-trees/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/10-binary-search-trees/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/10-binary-search-trees/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -373,8 +356,8 @@ function isValidBST(root: TreeNode | null): boolean {
     Q1: What is the BST property? Why is it useful?
   </summary>
   <div class="tp-qa-answer"><p>Left subtree values < root value < right subtree values. This enables O(h) binary search, sorted inorder traversal, and efficient range queries.</p></div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa10-q2">
@@ -382,8 +365,8 @@ function isValidBST(root: TreeNode | null): boolean {
     Q2: How do you delete a node from a BST?
   </summary>
   <div class="tp-qa-answer"><p>Three cases: leaf (remove directly), one child (replace with child), two children (find inorder successor, copy value, delete successor). O(h) time.</p></div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa10-q3">
@@ -391,8 +374,8 @@ function isValidBST(root: TreeNode | null): boolean {
     Q3: How do you validate whether a binary tree is a BST?
   </summary>
   <div class="tp-qa-answer"><p>Two approaches: (1) Range checking with min/max bounds per node. (2) Inorder traversal must yield strictly increasing sequence. Range checking is more efficient.</p></div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa10-q4">
@@ -400,8 +383,8 @@ function isValidBST(root: TreeNode | null): boolean {
     Q4: What is the inorder successor? How do you find it?
   </summary>
   <div class="tp-qa-answer"><p>The next node in inorder traversal (smallest node larger than current). If node has right child: minimum of right subtree. Otherwise: first ancestor where node is in left subtree. O(h).</p></div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa10-q5">
@@ -409,8 +392,8 @@ function isValidBST(root: TreeNode | null): boolean {
     Q5: Explain AVL tree rotations.
   </summary>
   <div class="tp-qa-answer"><p>Four imbalance cases: Left-Left (right rotate), Right-Right (left rotate), Left-Right (left then right), Right-Left (right then left). Each rotation is O(1) and restores balance.</p></div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa10-q6">
@@ -418,8 +401,8 @@ function isValidBST(root: TreeNode | null): boolean {
     Q6: Compare AVL and Red-Black trees.
   </summary>
   <div class="tp-qa-answer"><p>AVL: stricter balance (diff <= 1), faster lookup, more rotations during insert/delete. Red-Black: looser balance (black height), faster insert/delete, O(log n) for all ops.</p></div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa10-q7">
@@ -427,8 +410,8 @@ function isValidBST(root: TreeNode | null): boolean {
     Q7: How do you find the kth smallest element in a BST?
   </summary>
   <div class="tp-qa-answer"><p>Do inorder traversal and stop at kth element. If node stores subtree sizes, you can do O(h) by comparing k with left subtree size.</p></div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa10-q8">
@@ -436,8 +419,8 @@ function isValidBST(root: TreeNode | null): boolean {
     Q8: What is the time complexity of BST operations?
   </summary>
   <div class="tp-qa-answer"><p>O(h) where h is height. Best case (balanced): O(log n). Worst case (skewed): O(n). Balanced BSTs guarantee O(log n) through rotations.</p></div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa10-q9">
@@ -445,8 +428,8 @@ function isValidBST(root: TreeNode | null): boolean {
     Q9: How do you convert a sorted array to a balanced BST?
   </summary>
   <div class="tp-qa-answer"><p>Use binary division: middle element is root, left half forms left subtree, right half forms right subtree. Recursively build. O(n) time.</p></div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa10-q10">
@@ -454,8 +437,8 @@ function isValidBST(root: TreeNode | null): boolean {
     Q10: What is the floor of a value in BST?
   </summary>
   <div class="tp-qa-answer"><p>The largest value in BST that is <= target. Traverse: if root.val == target, return it. If root.val < target, update result and go right. Otherwise go left.</p></div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa10-q11">
@@ -463,8 +446,8 @@ function isValidBST(root: TreeNode | null): boolean {
     Q11: How do you find LCA in a BST?
   </summary>
   <div class="tp-qa-answer"><p>Since BST is ordered, if both values are less than root, LCA is in left subtree. If both greater, LCA is in right subtree. Otherwise, root is LCA. O(h) time.</p></div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa10-q12">
@@ -472,8 +455,8 @@ function isValidBST(root: TreeNode | null): boolean {
     Q12: Compare BST with Hash Table for search operations.
   </summary>
   <div class="tp-qa-answer"><p>BST: O(log n) average, supports ordered operations (range query, floor, ceil, sorted order). Hash Table: O(1) average, no ordering, better for exact lookups.</p></div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 ## Chapter Quiz
@@ -511,4 +494,4 @@ a) Right child  b) Minimum of right subtree  c) Maximum of right subtree  d) Par
 
 ---
 
-> **Next**: [11 - Heaps and Tries →](11-heaps-and-tries.md)
+> **Next**: [11 - Heaps and Tries ?](11-heaps-and-tries.md)

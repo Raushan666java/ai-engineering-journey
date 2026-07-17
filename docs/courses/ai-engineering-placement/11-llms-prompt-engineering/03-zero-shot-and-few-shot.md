@@ -11,24 +11,6 @@
 | LO5 | Analyze example selection strategies for optimal few-shot performance |
 | LO6 | Evaluate prompt quality through systematic testing and iteration |
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/11-llms-prompt-engineering/03-zero-shot-and-few-shot/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/11-llms-prompt-engineering/03-zero-shot-and-few-shot/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/11-llms-prompt-engineering/03-zero-shot-and-few-shot/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/11-llms-prompt-engineering/03-zero-shot-and-few-shot/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/11-llms-prompt-engineering/03-zero-shot-and-few-shot/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/11-llms-prompt-engineering/03-zero-shot-and-few-shot/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |

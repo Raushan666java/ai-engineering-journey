@@ -1,4 +1,4 @@
-﻿# Linked Lists
+# Linked Lists
 
 ## Learning Objectives
 
@@ -11,23 +11,6 @@
 | LO5 | Implement in-place reordering operations (reverse, rotate, reorder) |
 | LO6 | Use dummy nodes and recursion to simplify linked list problems |
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/07-linked-lists/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/07-linked-lists/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/07-linked-lists/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/07-linked-lists/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/07-linked-lists/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/03-data-structures-algorithms/07-linked-lists/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -445,8 +428,8 @@ function mergeTwoLists(l1: ListNode | null, l2: ListNode | null): ListNode | nul
     <tr><td>Insert at tail</td><td>O(n)</td><td>O(1) with tail pointer</td></tr>
     <tr><td>Delete known node</td><td>O(n)</td><td>O(1)</td></tr></table>
   </div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa07-q2">
@@ -457,8 +440,8 @@ function mergeTwoLists(l1: ListNode | null, l2: ListNode | null): ListNode | nul
     <p>Use Floyd's cycle detection: slow pointer moves 1 step, fast moves 2 steps. If they meet, a cycle exists.</p>
     <p>Phase 2: Reset slow to head, move both 1 step each. They meet at cycle start.</p>
   </div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa07-q3">
@@ -469,8 +452,8 @@ function mergeTwoLists(l1: ListNode | null, l2: ListNode | null): ListNode | nul
     <p>Use three pointers: prev (None initially), curr (head), next_temp. At each step, save curr.next, point curr.next to prev, advance prev and curr.</p>
     <p>Time: O(n), Space: O(1).</p>
   </div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa07-q4">
@@ -481,8 +464,8 @@ function mergeTwoLists(l1: ListNode | null, l2: ListNode | null): ListNode | nul
     <p>Fast-slow pointers: move slow by 1, fast by 2. When fast reaches end, slow is at the middle.</p>
     <p>For even length, slow points to the first middle (or second, depending on implementation).</p>
   </div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa07-q5">
@@ -493,8 +476,8 @@ function mergeTwoLists(l1: ListNode | null, l2: ListNode | null): ListNode | nul
     <p>A dummy node points to head. Operations that modify the head (like deletion) no longer need special cases for empty lists or head removal.</p>
     <p>Return dummy.next as the new head.</p>
   </div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa07-q6">
@@ -505,8 +488,8 @@ function mergeTwoLists(l1: ListNode | null, l2: ListNode | null): ListNode | nul
     <p>Use a dummy node. Compare current nodes of both lists, attach the smaller one to result, advance that list's pointer.</p>
     <p>When one list exhausts, attach the rest of the other. Time: O(m+n), Space: O(1).</p>
   </div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa07-q7">
@@ -516,8 +499,8 @@ function mergeTwoLists(l1: ListNode | null, l2: ListNode | null): ListNode | nul
   <div class="tp-qa-answer">
     <p>Use two pointers with a gap of n+1 nodes. Move first n+1 steps ahead, then move both until first reaches end. Second points to the node before the one to delete.</p>
   </div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa07-q8">
@@ -528,8 +511,8 @@ function mergeTwoLists(l1: ListNode | null, l2: ListNode | null): ListNode | nul
     <p>Find the middle using fast-slow. Reverse the second half. Compare first half with reversed second half. Optionally restore the list.</p>
     <p>Time: O(n), Space: O(1).</p>
   </div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa07-q9">
@@ -540,8 +523,8 @@ function mergeTwoLists(l1: ListNode | null, l2: ListNode | null): ListNode | nul
     <p>Doubly linked lists allow O(1) deletion of a known node (with its pointer). They support bi-directional traversal. However, they use more memory (extra prev pointer).</p>
     <p>Used in: LRU cache, browser history, undo/redo systems.</p>
   </div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa07-q10">
@@ -551,8 +534,8 @@ function mergeTwoLists(l1: ListNode | null, l2: ListNode | null): ListNode | nul
   <div class="tp-qa-answer">
     <p>Traverse both lists, adding corresponding digits plus carry. Create a new node with result % 10, carry = result / 10. Continue until both lists and carry are exhausted.</p>
   </div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa07-q11">
@@ -562,8 +545,8 @@ function mergeTwoLists(l1: ListNode | null, l2: ListNode | null): ListNode | nul
   <div class="tp-qa-answer">
     <p>Count k nodes. If there are less than k, return head. Otherwise, reverse k nodes iteratively, then recursively call on the rest. Connect the reversed segment with the next reversed segment.</p>
   </div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa07-q12">
@@ -574,8 +557,8 @@ function mergeTwoLists(l1: ListNode | null, l2: ListNode | null): ListNode | nul
     <p>Arrays: O(1) access, O(n) insertion/deletion (except end). Cache-friendly. Linked lists: O(n) access, O(1) insertion/deletion at known position. Not cache-friendly.</p>
     <p>Choose arrays for random access, linked lists for frequent insertions/deletions.</p>
   </div>
-  <button class="tp-qa-mark-btn">âœ… Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">ðŸ”– Bookmark</button>
+  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
 ## Chapter Quiz
@@ -614,4 +597,4 @@ a) O(1)  b) O(n)  c) O(log n)  d) O(n^2)
 
 ---
 
-> **Next**: [08 - Stacks and Queues â†’](08-stacks-and-queues.md)
+> **Next**: [08 - Stacks and Queues →](08-stacks-and-queues.md)

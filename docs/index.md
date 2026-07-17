@@ -162,6 +162,7 @@ Looking for something specific? <a href="?q=" onclick="document.querySelector('.
 
 -   <span class="course-icon">🎯</span> __[GATE CS Preparation](courses/gate-cs-preparation/)__ <span class="course-chaps">32 Ch</span>
 -   <span class="course-icon">💼</span> __[Placement Preparation](courses/placement-preparation/)__ <span class="course-chaps">7 Ch</span>
+-   <span class="course-icon">🎓</span> __[Backend + AI Placement](courses/ai-engineering-placement/)__ <span class="course-chaps">21 Subjects · 193 Ch</span>
 -   <span class="course-icon">🧠</span> __[Learning How to Learn](courses/learning-how-to-learn/)__ <span class="course-chaps">15 Ch</span>
 -   <span class="course-icon">📋</span> __[Government Exams Hub](courses/government-exams/)__ <span class="course-chaps">21 Subjects</span>
 -   <span class="course-icon">🔢</span> __[Quantitative Aptitude](courses/quantitative-aptitude/)__ <span class="course-chaps">7 Ch</span>

@@ -11,24 +11,6 @@
 | LO5 | Compare BERT variants: RoBERTa, ALBERT, DistilBERT, SpanBERT |
 | LO6 | Apply knowledge distillation to compress transformer models |
 
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/10-nlp-transformers/06-bert-and-fine-tuning/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/10-nlp-transformers/06-bert-and-fine-tuning/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/10-nlp-transformers/06-bert-and-fine-tuning/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/10-nlp-transformers/06-bert-and-fine-tuning/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/10-nlp-transformers/06-bert-and-fine-tuning/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/10-nlp-transformers/06-bert-and-fine-tuning/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
-
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |

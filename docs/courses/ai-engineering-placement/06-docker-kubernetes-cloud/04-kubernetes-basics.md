@@ -1,4 +1,4 @@
-ï»¿# Kubernetes Basics â€” Pods, Services, and Deployments
+# Kubernetes Basics — Pods, Services, and Deployments
 
 ## Learning Objectives
 
@@ -10,24 +10,6 @@
 | LO4 | Use Deployments for declarative updates and rollbacks |
 | LO5 | Configure ConfigMaps and Secrets for configuration management |
 | LO6 | Explore the Kubernetes ecosystem: kubectl, namespaces, labels |
-
-<!-- Image Gallery -->
-<section class="lesson-visuals" aria-label="Visual learning resources">
-  <header><span>VISUAL LEARNING</span><h2>See it. Review it. Remember it.</h2></header>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/06-docker-kubernetes-cloud/04-kubernetes-basics/handwritten-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/06-docker-kubernetes-cloud/04-kubernetes-basics/handwritten-notes.png" alt="Handwritten notes" loading="lazy">
-    <span><strong>Handwritten notes</strong>Condensed notes for deliberate review.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/06-docker-kubernetes-cloud/04-kubernetes-basics/sticky-notes.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/06-docker-kubernetes-cloud/04-kubernetes-basics/sticky-notes.png" alt="Sticky-note revision" loading="lazy">
-    <span><strong>Sticky-note revision</strong>Fast recall prompts for revision.</span>
-  </a>
-  <a class="lesson-visual-card" href="../../assets/images/lessons/ai-engineering-placement/06-docker-kubernetes-cloud/04-kubernetes-basics/visual-explanation.png" target="_blank" rel="noopener">
-    <img src="../../assets/images/lessons/ai-engineering-placement/06-docker-kubernetes-cloud/04-kubernetes-basics/visual-explanation.png" alt="Visual concept guide" loading="lazy">
-    <span><strong>Visual concept guide</strong>A connected explanation of the key ideas.</span>
-  </a>
-</section>
-<!-- End Image Gallery -->
 
 ## Chapter at a Glance
 
@@ -88,7 +70,7 @@ flowchart TD
 | API Server | Entry point for all management requests via REST API |
 | Scheduler | Assigns Pods to nodes based on resource availability |
 | Controller Manager | Runs controllers: replication, node, endpoints |
-| etcd | Distributed key-value store â€” cluster source of truth |
+| etcd | Distributed key-value store — cluster source of truth |
 
 **Node components**: kubelet (ensures containers run), kube-proxy (networking and load balancing), container runtime (containerd, CRI-O).
 
@@ -100,7 +82,7 @@ kubectl get pods -n kube-system
 
 ## 4.2 Pods
 
-A Pod is the smallest deployable unit â€” one or more containers sharing network, storage, and lifecycle.
+A Pod is the smallest deployable unit — one or more containers sharing network, storage, and lifecycle.
 
 `yaml
 apiVersion: v1
@@ -328,7 +310,7 @@ async function deploy(name: string, image: string, replicas: number) {
 ## Summary
 
 - Kubernetes has a control plane (API server, scheduler, controller manager, etcd) and worker nodes (kubelet, kube-proxy, container runtime)
-- Pods are the smallest deployable unit â€” one or more containers sharing network and storage
+- Pods are the smallest deployable unit — one or more containers sharing network and storage
 - Services provide stable networking via ClusterIP, NodePort, or LoadBalancer
 - Deployments manage ReplicaSets with rolling updates, scaling, and rollbacks
 - ConfigMaps store non-sensitive config; Secrets store sensitive data (base64 encoded)
@@ -371,7 +353,7 @@ async function deploy(name: string, image: string, replicas: number) {
     Q2: What is a Pod and what are multi-container Pod patterns?
   </summary>
   <div class="tp-qa-answer">
-    <p>A Pod is the smallest deployable unit â€” one or more containers sharing network namespace, storage volumes, and lifecycle. Multi-container patterns include Sidecar (helper containers like log collectors), Ambassador (proxies external services), and Adapter (transforms output format).</p>
+    <p>A Pod is the smallest deployable unit — one or more containers sharing network namespace, storage volumes, and lifecycle. Multi-container patterns include Sidecar (helper containers like log collectors), Ambassador (proxies external services), and Adapter (transforms output format).</p>
   </div>
   <button class="tp-qa-mark-btn">&#x2705; Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>
@@ -431,7 +413,7 @@ async function deploy(name: string, image: string, replicas: number) {
     Q7: Explain kubectl apply vs kubectl create.
   </summary>
   <div class="tp-qa-answer">
-    <p>kubectl apply is declarative â€” creates or updates resources based on desired state. Idempotent and safe to run multiple times. kubectl create is imperative â€” creates new resources but fails if they already exist. Best practice: use apply for production.</p>
+    <p>kubectl apply is declarative — creates or updates resources based on desired state. Idempotent and safe to run multiple times. kubectl create is imperative — creates new resources but fails if they already exist. Best practice: use apply for production.</p>
   </div>
   <button class="tp-qa-mark-btn">&#x2705; Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>
@@ -455,7 +437,7 @@ async function deploy(name: string, image: string, replicas: number) {
     Q9: How do PV and PVC work together?
   </summary>
   <div class="tp-qa-answer">
-    <p>PersistentVolume (PV) is cluster storage provisioned by an admin. PersistentVolumeClaim (PVC) is a user request for storage. Kubernetes binds PVCs to matching PVs based on size and access mode. Pods use PVCs as volumes â€” if the Pod is deleted, the PVC and PV persist, preserving data.</p>
+    <p>PersistentVolume (PV) is cluster storage provisioned by an admin. PersistentVolumeClaim (PVC) is a user request for storage. Kubernetes binds PVCs to matching PVs based on size and access mode. Pods use PVCs as volumes — if the Pod is deleted, the PVC and PV persist, preserving data.</p>
   </div>
   <button class="tp-qa-mark-btn">&#x2705; Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>
@@ -522,15 +504,15 @@ d) revisionHistoryLimit
 
 ## Exercises
 
-**Easy** â€” Create a single Nginx Pod with a NodePort Service on port 30080. Verify you can access it.
+**Easy** — Create a single Nginx Pod with a NodePort Service on port 30080. Verify you can access it.
 
-**Medium** â€” Write a Deployment for a FastAPI app with 3 replicas, resource limits, liveness/readiness probes, and a ClusterIP Service.
+**Medium** — Write a Deployment for a FastAPI app with 3 replicas, resource limits, liveness/readiness probes, and a ClusterIP Service.
 
-**Medium** â€” Create a multi-tier app: frontend Deployment with LoadBalancer Service, backend Deployment with ClusterIP Service, PostgreSQL StatefulSet with PVC.
+**Medium** — Create a multi-tier app: frontend Deployment with LoadBalancer Service, backend Deployment with ClusterIP Service, PostgreSQL StatefulSet with PVC.
 
-**Hard** â€” Set up a namespace with ResourceQuota (2 CPU, 4Gi memory limit). Deploy an app exceeding the quota and observe behavior.
+**Hard** — Set up a namespace with ResourceQuota (2 CPU, 4Gi memory limit). Deploy an app exceeding the quota and observe behavior.
 
-**Hard** â€” Debug a failing Deployment: given one that crashes on startup (wrong image, missing ConfigMap, resource limits too low), use kubectl describe and logs to identify and fix all issues.
+**Hard** — Debug a failing Deployment: given one that crashes on startup (wrong image, missing ConfigMap, resource limits too low), use kubectl describe and logs to identify and fix all issues.
 
 
 ---

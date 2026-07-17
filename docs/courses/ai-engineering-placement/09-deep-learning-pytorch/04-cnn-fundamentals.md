@@ -500,4 +500,4 @@ m
 
 ---
 
-> **Previous**: 03-pytorch-nn-module.md | **Next**: 05-advanced-cnn.md
+> **Next**: [Advanced CNN](05-advanced-cnn.md)

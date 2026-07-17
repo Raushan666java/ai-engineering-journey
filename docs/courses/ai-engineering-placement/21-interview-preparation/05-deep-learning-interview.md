@@ -141,7 +141,7 @@ Activation functions introduce non-linearity, allowing neural networks to learn 
 
 **GELU**: f(x) = x * Φ(x) where Φ is the CDF of standard normal. Used in GPT, BERT, and modern transformers. Smooth approximation: x * σ(1.702x).
 
-**SwiGLU**: Swish × Gated Linear Unit. f(x) = (x * σ(x)) ⊙ (Wx + b). Used in Llama, PaLM. Combines gating with the Swish activation.
+**SwiGLU**: Swish — Gated Linear Unit. f(x) = (x * σ(x)) ⊙ (Wx + b). Used in Llama, PaLM. Combines gating with the Swish activation.
 
 **Sigmoid**: f(x) = 1 / (1 + e^(-x)). Output in (0, 1). Used for binary classification output. Vanishing gradient for large |x|.
 
@@ -175,7 +175,7 @@ Convolutional Neural Networks are designed for grid-structured data like images.
 
 **Convolution**: A kernel (filter) slides over the input, computing dot products at each position. Learns spatial features: edges → textures → parts → objects.
 
-**Key parameters**: Kernel size (3×3 is standard), stride (step size), padding (same/valid), dilation (spacing between kernel elements), channels (depth of feature maps).
+**Key parameters**: Kernel size (3—3 is standard), stride (step size), padding (same/valid), dilation (spacing between kernel elements), channels (depth of feature maps).
 
 **Pooling**: Reduces spatial dimensions and provides translation invariance. Max pooling (most common), average pooling, global average pooling.
 
@@ -772,7 +772,7 @@ def train_ddp(rank, world_size, model, dataset):
       <li><strong>Eases optimization</strong>: It's easier to learn the residual F(x) = H(x) — x than the original mapping H(x). If the identity mapping is optimal, the network can simply push F(x) toward zero.</li>
       <li><strong>Ensemble effect</strong>: ResNets behave like ensembles of shallower networks — different paths through the network can be active for different inputs.</li>
     </ol>
-    <p>Mathematically: y = F(x, {W_i}) + x. When dimensions change, a 1×1 convolution is used in the shortcut to match dimensions.</p>
+    <p>Mathematically: y = F(x, {W_i}) + x. When dimensions change, a 1—1 convolution is used in the shortcut to match dimensions.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -918,12 +918,12 @@ PE(pos, 2i+1) = cos(pos / 10000^(2i/d_model))</code></pre>
     <p><strong>Depthwise Separable Convolution</strong> (MobileNet, Xception): Decomposes convolution into two steps:</p>
     <ol>
       <li><strong>Depthwise convolution</strong>: Each input channel is convolved with a single filter (no cross-channel mixing). Output has same number of channels as input.</li>
-      <li><strong>Pointwise convolution</strong>: 1×1 convolution that mixes channels. Each 1×1 filter combines the depthwise outputs.</li>
+      <li><strong>Pointwise convolution</strong>: 1—1 convolution that mixes channels. Each 1—1 filter combines the depthwise outputs.</li>
     </ol>
     <p><strong>Computational complexity</strong>:</p>
     <ul>
-      <li>Standard: K² × C_in × C_out × H × W</li>
-      <li>Depthwise separable: K² × C_in × H × W + C_in × C_out × H × W</li>
+      <li>Standard: K² — C_in — C_out — H — W</li>
+      <li>Depthwise separable: K² — C_in — H — W + C_in — C_out — H — W</li>
     </ul>
     <p><strong>Ratio</strong>: ~1/C_out + 1/K². For K=3, C_out=64, this is ~1/64 + 1/9 ≈ 12.7% of standard convolution parameters.</p>
     <p>Depthwise separable convolution is significantly more efficient but can be harder to train (requires careful initialization and potentially more channels).</p>

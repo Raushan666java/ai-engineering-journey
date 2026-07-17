@@ -959,7 +959,7 @@ Voice agents combine ASR, LLM, and TTS into a real-time conversational pipeline.
     Q3: How does modern neural TTS work and what are the key architectures?
   </summary>
   <div class="tp-qa-answer">
-    <p>Modern neural TTS uses a two-stage approach: (1) Acoustic model — converts text to mel-spectrograms. Autoregressive models like Tacotron 2 generate high-quality audio but are slow (non-streaming). Non-autoregressive models like FastSpeech 2 predict duration and mel-spectrograms in parallel using a duration predictor, achieving 10-100× speedup with minimal quality loss. (2) Vocoder — converts mel-spectrograms to raw audio waveforms. HiFi-GAN, WaveGlow, and WaveRNN are common vocoders that generate high-fidelity audio. End-to-end models like VITS combine both stages into a single flow-based model trained with variational inference, matching or exceeding two-stage quality while being simpler. Key quality factors: natural prosody (pitch variation, rhythm), voice consistency, and low artifact rate.</p>
+    <p>Modern neural TTS uses a two-stage approach: (1) Acoustic model — converts text to mel-spectrograms. Autoregressive models like Tacotron 2 generate high-quality audio but are slow (non-streaming). Non-autoregressive models like FastSpeech 2 predict duration and mel-spectrograms in parallel using a duration predictor, achieving 10-100— speedup with minimal quality loss. (2) Vocoder — converts mel-spectrograms to raw audio waveforms. HiFi-GAN, WaveGlow, and WaveRNN are common vocoders that generate high-fidelity audio. End-to-end models like VITS combine both stages into a single flow-based model trained with variational inference, matching or exceeding two-stage quality while being simpler. Key quality factors: natural prosody (pitch variation, rhythm), voice consistency, and low artifact rate.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -1007,7 +1007,7 @@ Voice agents combine ASR, LLM, and TTS into a real-time conversational pipeline.
     Q7: How do you optimize end-to-end latency in a voice agent pipeline?
   </summary>
   <div class="tp-qa-answer">
-    <p>Latency optimization strategies: (1) Streaming ASR — use unidirectional models with chunk-wise processing (100-200ms chunks) for real-time partial results. (2) LLM speculative decoding — generate multiple candidate tokens in parallel with a small draft model, then verify with the large model, reducing latency by 2-3×. (3) TTS streaming — use FastSpeech or VITS with streaming vocoder to start playing audio while the rest is still generating. (4) Model quantization — INT8 quantization reduces inference time by 2-4× with minimal quality loss. (5) Caching — cache common responses (greetings, FAQs) to skip LLM inference entirely. (6) Connection pooling — maintain persistent connections to all services. (7) Geographic proximity — deploy in the same region as users to minimize network latency. Each optimization gains 50-200ms; combining them achieves the <500ms target.</p>
+    <p>Latency optimization strategies: (1) Streaming ASR — use unidirectional models with chunk-wise processing (100-200ms chunks) for real-time partial results. (2) LLM speculative decoding — generate multiple candidate tokens in parallel with a small draft model, then verify with the large model, reducing latency by 2-3—. (3) TTS streaming — use FastSpeech or VITS with streaming vocoder to start playing audio while the rest is still generating. (4) Model quantization — INT8 quantization reduces inference time by 2-4— with minimal quality loss. (5) Caching — cache common responses (greetings, FAQs) to skip LLM inference entirely. (6) Connection pooling — maintain persistent connections to all services. (7) Geographic proximity — deploy in the same region as users to minimize network latency. Each optimization gains 50-200ms; combining them achieves the <500ms target.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -1085,11 +1085,11 @@ Voice agents combine ASR, LLM, and TTS into a real-time conversational pipeline.
 
 **Question 4 (mmai-s06-quiz4):** What latency reduction techniques are used in voice pipelines?
 
-<details class="tp-qa-card" data-qid="mmai-s06-quiz4"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b) All of the above — streaming ASR, speculative decoding, model quantization</strong></p><p>Combining streaming chunk processing, LLM speculative decoding, and INT8 quantization can reduce latency 2-5×.</p></div></details>
+<details class="tp-qa-card" data-qid="mmai-s06-quiz4"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b) All of the above — streaming ASR, speculative decoding, model quantization</strong></p><p>Combining streaming chunk processing, LLM speculative decoding, and INT8 quantization can reduce latency 2-5—.</p></div></details>
 
 **Question 5 (mmai-s06-quiz5):** How does FastSpeech differ from Tacotron?
 
-<details class="tp-qa-card" data-qid="mmai-s06-quiz5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b) FastSpeech is non-autoregressive with parallel generation</strong></p><p>FastSpeech uses duration prediction to generate mel-spectrograms in parallel, making it 10-100× faster than autoregressive Tacotron.</p></div></details>
+<details class="tp-qa-card" data-qid="mmai-s06-quiz5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b) FastSpeech is non-autoregressive with parallel generation</strong></p><p>FastSpeech uses duration prediction to generate mel-spectrograms in parallel, making it 10-100— faster than autoregressive Tacotron.</p></div></details>
 
 ## Q&A
 

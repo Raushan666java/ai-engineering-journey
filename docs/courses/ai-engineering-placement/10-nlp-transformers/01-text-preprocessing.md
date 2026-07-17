@@ -531,7 +531,7 @@ Text preprocessing transforms raw text into structured inputs for NLP models. Wo
     Q5: Explain TF-IDF and its components.
   </summary>
   <div class="tp-qa-answer">
-    <p>TF-IDF = Term Frequency × Inverse Document Frequency. TF = (number of times term t appears in document d) / (total terms in document d). IDF = log(N / df) where N = total documents and df = number of documents containing t. Terms that appear frequently in a single document get high TF. Terms that appear in few documents get high IDF. The product downweights common words (high df → low IDF) while upweighting rare, informative words. Smooth IDF variant: log((N+1)/(df+1)) + 1. TF-IDF is used for information retrieval, keyword extraction, and as feature input to ML classifiers.</p>
+    <p>TF-IDF = Term Frequency — Inverse Document Frequency. TF = (number of times term t appears in document d) / (total terms in document d). IDF = log(N / df) where N = total documents and df = number of documents containing t. Terms that appear frequently in a single document get high TF. Terms that appear in few documents get high IDF. The product downweights common words (high df → low IDF) while upweighting rare, informative words. Smooth IDF variant: log((N+1)/(df+1)) + 1. TF-IDF is used for information retrieval, keyword extraction, and as feature input to ML classifiers.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

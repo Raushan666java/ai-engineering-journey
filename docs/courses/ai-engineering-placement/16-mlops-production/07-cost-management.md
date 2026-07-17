@@ -775,7 +775,7 @@ class CostTracker {
     Q4: How do you track costs per ML experiment?
   </summary>
   <div class="tp-qa-answer">
-    <p>Log cost metrics in MLflow: compute GPU hours × rate, storage costs, and API costs. Tag experiments with team, project, and purpose. Cloud resource tagging (AWS tags, GCP labels) links infrastructure costs to experiments. Aggregate costs per team/project in a dashboard. Set budget thresholds that trigger alerts at 50%, 75%, 90%, and 100% utilization.</p>
+    <p>Log cost metrics in MLflow: compute GPU hours — rate, storage costs, and API costs. Tag experiments with team, project, and purpose. Cloud resource tagging (AWS tags, GCP labels) links infrastructure costs to experiments. Aggregate costs per team/project in a dashboard. Set budget thresholds that trigger alerts at 50%, 75%, 90%, and 100% utilization.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -811,7 +811,7 @@ class CostTracker {
     Q7: How do you estimate LLM API costs for a production application?
   </summary>
   <div class="tp-qa-answer">
-    <p>Formula: monthly_cost = requests_per_month × (input_tokens/1000 × input_price + output_tokens/1000 × output_price). Example: GPT-4 with 500 input + 200 output tokens at 1M requests/month = $27,000/month. Optimize by: (1) using smaller models for simpler tasks, (2) caching common prompts, (3) prompt compression techniques, (4) batching requests where possible.</p>
+    <p>Formula: monthly_cost = requests_per_month — (input_tokens/1000 — input_price + output_tokens/1000 — output_price). Example: GPT-4 with 500 input + 200 output tokens at 1M requests/month = $27,000/month. Optimize by: (1) using smaller models for simpler tasks, (2) caching common prompts, (3) prompt compression techniques, (4) batching requests where possible.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

@@ -49,7 +49,7 @@ H(S) = -p₁ log₂(p₁) - p₂ log₂(p₂)
 
 Information gain measures the reduction in entropy after splitting on a feature:
 
-IG(S, f) = H(S) - Σ (|Sᵥ| / |S|) × H(Sᵥ)
+IG(S, f) = H(S) - Σ (|Sᵥ| / |S|) — H(Sᵥ)
 
 ```python
 import numpy as np

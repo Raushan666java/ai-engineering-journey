@@ -223,16 +223,6 @@ All progress stored in your browser's localStorage — **zero servers, zero acco
 | 21 | Interview Preparation | 12 | 180 | 50 | ⭐⭐⭐⭐⭐ |
 | **Total** | **21** | **~195** | **~2,100** | **~700** | — |
 
-## Gallery Image Assets
-
-All sub-chapters include a visual learning gallery with three image cards. The images should be placed at:
-```
-docs/assets/images/lessons/ai-engineering-placement/{subject-slug}/{sub-chapter-slug}/
-├── handwritten-notes.png
-├── sticky-notes.png
-└── visual-explanation.png
-```
-
 ## How to Use This Course
 
 1. **Start from Subject 01** and progress sequentially

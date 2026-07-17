@@ -38,7 +38,7 @@ flowchart LR
 
 ## 2.1 Array Fundamentals
 
-An array is a contiguous block of memory storing elements of the same type. Each element is accessed via an offset from the base address: `address = base + index × element_size`.
+An array is a contiguous block of memory storing elements of the same type. Each element is accessed via an offset from the base address: `address = base + index — element_size`.
 
 **Static arrays** have fixed size determined at creation. **Dynamic arrays** (Python lists) automatically resize when capacity is exceeded.
 
@@ -674,7 +674,7 @@ rect_sum(r1,c1,r2,c2) = pref[r2+1][c2+1]
   </summary>
   <div class="tp-qa-answer">
     <p><strong>Problem</strong>: Given n vertical lines on a coordinate plane representing walls, find two lines that together with the x-axis form a container holding the most water.</p>
-    <p><strong>Solution</strong>: Two pointers from both ends. Calculate area = width × min(height_left, height_right). Move the pointer with smaller height inward.</p>
+    <p><strong>Solution</strong>: Two pointers from both ends. Calculate area = width — min(height_left, height_right). Move the pointer with smaller height inward.</p>
     <pre><code>def max_area(heights):
     left, right = 0, len(heights) - 1
     max_water = 0
@@ -819,7 +819,7 @@ def reverse(arr, left, right):
             left += 1
     return result</code></pre>
     <p><strong>Key insight</strong>: Contract the boundaries after each direction traversal. Check bounds before the left and up traversals to avoid duplicating elements in single-row/column cases.</p>
-    <p><strong>Complexity</strong>: O(m×n) time, O(1) space excluding output.</p>
+    <p><strong>Complexity</strong>: O(m—n) time, O(1) space excluding output.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -863,7 +863,7 @@ def reverse(arr, left, right):
     if first_col_zero:
         for i in range(m):
             matrix[i][0] = 0</code></pre>
-    <p><strong>Complexity</strong>: O(m×n) time, O(1) space.</p>
+    <p><strong>Complexity</strong>: O(m—n) time, O(1) space.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

@@ -354,7 +354,7 @@ I build things with code.
 ## 📈 GitHub Stats
 [Stats cards here]
 
-## 🔗 Links
+## — Links
 [Social badges here]"""
 
     @staticmethod
@@ -715,7 +715,7 @@ jobs:
     Q10: How do you measure the impact of your GitHub profile optimization?
   </summary>
   <div class="tp-qa-answer">
-    <p>Track these metrics before and after optimization: (1) Profile views — GitHub's traffic analytics shows unique visitors and views over 14 days. Expect 50-200 views/week for an active profile. (2) Follower growth — track followers gained per month after optimization. (3) Repo stars — monitor stars on pinned repos. A good README can increase stars by 2-5×. (4) Contribution graph consistency — percentage of days with commits. Target >70% for a strong signal. (5) Recruiter outreach — track inbound messages mentioning your GitHub. This is the most important metric. (6) Profile README engagement — if you have a visitor counter badge, track daily visitors. (7) Connection requests — from people who mention "saw your GitHub profile." Aim for a 20% increase in profile views and 2-3× increase in relevant recruiter messages within 3 months of optimization.</p>
+    <p>Track these metrics before and after optimization: (1) Profile views — GitHub's traffic analytics shows unique visitors and views over 14 days. Expect 50-200 views/week for an active profile. (2) Follower growth — track followers gained per month after optimization. (3) Repo stars — monitor stars on pinned repos. A good README can increase stars by 2-5—. (4) Contribution graph consistency — percentage of days with commits. Target >70% for a strong signal. (5) Recruiter outreach — track inbound messages mentioning your GitHub. This is the most important metric. (6) Profile README engagement — if you have a visitor counter badge, track daily visitors. (7) Connection requests — from people who mention "saw your GitHub profile." Aim for a 20% increase in profile views and 2-3— increase in relevant recruiter messages within 3 months of optimization.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

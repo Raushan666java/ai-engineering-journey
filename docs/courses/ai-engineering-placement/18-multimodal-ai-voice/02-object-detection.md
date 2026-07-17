@@ -870,7 +870,7 @@ Object detection is a foundational computer vision task that combines classifica
     Q3: What are anchor boxes and how are they designed for a specific dataset?
   </summary>
   <div class="tp-qa-answer">
-    <p>Anchor boxes are pre-defined bounding boxes of various scales and aspect ratios placed at each grid cell. The network predicts offsets to adjust these anchors rather than predicting absolute coordinates. To design anchors for a dataset: (1) Run k-means clustering on all ground truth box dimensions (width, height) in the training set. (2) Choose k cluster centers as the anchor dimensions — typically 3-9 anchors depending on the feature map. (3) Align anchor scales with the feature map's receptive field. (4) Use anchors at multiple scales across feature pyramid levels. YOLOv5 uses 9 anchors from k-means clustering: 3 scales × 3 aspect ratios (e.g., (10,13), (16,30), (33,23), (30,61), (62,45), (59,119), (116,90), (156,198), (373,326)).</p>
+    <p>Anchor boxes are pre-defined bounding boxes of various scales and aspect ratios placed at each grid cell. The network predicts offsets to adjust these anchors rather than predicting absolute coordinates. To design anchors for a dataset: (1) Run k-means clustering on all ground truth box dimensions (width, height) in the training set. (2) Choose k cluster centers as the anchor dimensions — typically 3-9 anchors depending on the feature map. (3) Align anchor scales with the feature map's receptive field. (4) Use anchors at multiple scales across feature pyramid levels. YOLOv5 uses 9 anchors from k-means clustering: 3 scales — 3 aspect ratios (e.g., (10,13), (16,30), (33,23), (30,61), (62,45), (59,119), (116,90), (156,198), (373,326)).</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -894,7 +894,7 @@ Object detection is a foundational computer vision task that combines classifica
     Q5: How does Feature Pyramid Network (FPN) improve object detection across scales?
   </summary>
   <div class="tp-qa-answer">
-    <p>FPN addresses the problem that objects appear at different scales. Standard CNNs lose spatial resolution in deeper layers, making it hard to detect small objects. FPN creates a feature pyramid with strong semantic features at all scales by: (1) Bottom-up pathway — standard CNN forward pass produces feature maps at multiple scales. (2) Top-down pathway — upsampling higher-level features to match lower-level resolution. (3) Lateral connections — adding 1×1 convolutions to merge bottom-up and top-down features at each level. The result is a set of feature maps (P2, P3, P4, P5) where each level has both high resolution (for small objects) and strong semantics (for accurate classification). Each level is assigned to detect objects of a specific size range.</p>
+    <p>FPN addresses the problem that objects appear at different scales. Standard CNNs lose spatial resolution in deeper layers, making it hard to detect small objects. FPN creates a feature pyramid with strong semantic features at all scales by: (1) Bottom-up pathway — standard CNN forward pass produces feature maps at multiple scales. (2) Top-down pathway — upsampling higher-level features to match lower-level resolution. (3) Lateral connections — adding 1—1 convolutions to merge bottom-up and top-down features at each level. The result is a set of feature maps (P2, P3, P4, P5) where each level has both high resolution (for small objects) and strong semantics (for accurate classification). Each level is assigned to detect objects of a specific size range.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -930,7 +930,7 @@ Object detection is a foundational computer vision task that combines classifica
     Q8: How does focal loss address the class imbalance problem in one-stage detectors?
   </summary>
   <div class="tp-qa-answer">
-    <p>One-stage detectors face extreme class imbalance because the grid generates thousands of anchor boxes, most of which are background (negative examples). Standard cross-entropy loss is dominated by easy negative examples. Focal loss reshapes the loss to down-weight well-classified examples: FL(p_t) = -(1 - p_t)^γ * log(p_t). With γ = 2, an example classified with p_t = 0.9 contributes 100× less loss than one with p_t = 0.5. This forces the model to focus on the rare hard examples (mostly objects). RetinaNet showed that focal loss allows one-stage detectors to match the accuracy of two-stage detectors for the first time, achieving COCO AP of 39.1 with ResNet-101-FPN backbone.</p>
+    <p>One-stage detectors face extreme class imbalance because the grid generates thousands of anchor boxes, most of which are background (negative examples). Standard cross-entropy loss is dominated by easy negative examples. Focal loss reshapes the loss to down-weight well-classified examples: FL(p_t) = -(1 - p_t)^γ * log(p_t). With γ = 2, an example classified with p_t = 0.9 contributes 100— less loss than one with p_t = 0.5. This forces the model to focus on the rare hard examples (mostly objects). RetinaNet showed that focal loss allows one-stage detectors to match the accuracy of two-stage detectors for the first time, achieving COCO AP of 39.1 with ResNet-101-FPN backbone.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -942,7 +942,7 @@ Object detection is a foundational computer vision task that combines classifica
     Q9: What techniques improve detection of small objects in images?
   </summary>
   <div class="tp-qa-answer">
-    <p>Small object detection (objects under 32×32 pixels) is challenging because they have few pixels and limited feature information. Techniques: (1) Feature Pyramid Networks (FPN) — uses high-resolution feature maps for small object detection. (2) Image pyramids — test at multiple resolutions; small objects become larger at higher resolution. (3) Copy-paste augmentation — paste small object instances onto other images during training. (4) Mosaic augmentation — combine 4 images into one, increasing small object density. (5) Attention mechanisms — transformer-based detectors (DETR, Deformable DETR) handle scale variation better. (6) Avoiding aggressive downsampling — use stride-1 convolutions in early layers to preserve spatial resolution for small objects.</p>
+    <p>Small object detection (objects under 32—32 pixels) is challenging because they have few pixels and limited feature information. Techniques: (1) Feature Pyramid Networks (FPN) — uses high-resolution feature maps for small object detection. (2) Image pyramids — test at multiple resolutions; small objects become larger at higher resolution. (3) Copy-paste augmentation — paste small object instances onto other images during training. (4) Mosaic augmentation — combine 4 images into one, increasing small object density. (5) Attention mechanisms — transformer-based detectors (DETR, Deformable DETR) handle scale variation better. (6) Avoiding aggressive downsampling — use stride-1 convolutions in early layers to preserve spatial resolution for small objects.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -1042,7 +1042,7 @@ Object detection is a foundational computer vision task that combines classifica
 <summary class="tp-qa-question">What is the purpose of anchor boxes in object detection?</summary>
 <div class="tp-qa-context"><p>Design choices for handling varying object shapes.</p></div>
 <div class="tp-qa-answer">
-<p>Anchor boxes are pre-defined bounding boxes of various scales and aspect ratios placed at each grid cell. The network predicts <strong>offsets</strong> relative to these anchors rather than absolute coordinates. This simplifies learning by starting from a reasonable prior shape. Common anchor configurations include 3 scales × 3 aspect ratios = 9 anchors per cell.</p>
+<p>Anchor boxes are pre-defined bounding boxes of various scales and aspect ratios placed at each grid cell. The network predicts <strong>offsets</strong> relative to these anchors rather than absolute coordinates. This simplifies learning by starting from a reasonable prior shape. Common anchor configurations include 3 scales — 3 aspect ratios = 9 anchors per cell.</p>
 </div>
 <div class="tp-qa-actions">
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -1090,7 +1090,7 @@ Object detection is a foundational computer vision task that combines classifica
 <summary class="tp-qa-question">How does focal loss address class imbalance in RetinaNet?</summary>
 <div class="tp-qa-context"><p>Handling foreground-background imbalance.</p></div>
 <div class="tp-qa-answer">
-<p>Focal loss down-weights well-classified examples (mostly background) and focuses on hard, misclassified examples. It adds a modulating factor <em>(1 - pt)^γ</em> to the standard cross-entropy loss. With γ = 2, an example classified with 0.9 confidence gets 100× lower loss contribution than one classified at 0.1, preventing the vast number of background anchors from overwhelming training.</p>
+<p>Focal loss down-weights well-classified examples (mostly background) and focuses on hard, misclassified examples. It adds a modulating factor <em>(1 - pt)^γ</em> to the standard cross-entropy loss. With γ = 2, an example classified with 0.9 confidence gets 100— lower loss contribution than one classified at 0.1, preventing the vast number of background anchors from overwhelming training.</p>
 </div>
 <div class="tp-qa-actions">
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -1124,7 +1124,7 @@ Object detection is a foundational computer vision task that combines classifica
 
 ## Exercises
 
-1. **Anchor Visualization**: Generate anchors for a 7×7 grid with 3 scales and 3 aspect ratios. Visualize them on a blank 224×224 image. Count how many anchors are generated and note the coverage pattern.
+1. **Anchor Visualization**: Generate anchors for a 7—7 grid with 3 scales and 3 aspect ratios. Visualize them on a blank 224—224 image. Count how many anchors are generated and note the coverage pattern.
 
 2. **IoU Computation**: Write a function `batch_iou(boxes1, boxes2)` that computes pairwise IoU between two sets of boxes. Test it with 5 ground truth boxes and 10 predicted boxes. What is the shape of the resulting matrix?
 
@@ -1134,11 +1134,11 @@ Object detection is a foundational computer vision task that combines classifica
 
 5. **mAP Calculation**: Create a small evaluation with 3 classes, 10 images, 5 ground truth boxes per image, and 10 predictions per image. Compute per-class AP and overall mAP@0.5. Which class performs best?
 
-6. **Anchor Matching**: Given anchors at 2 scales and 2 aspect ratios (4 anchors/cell) on a 4×4 grid, implement the matching logic. For 3 ground truth boxes, determine which anchors are positive (IoU ≥ 0.5). How many positive anchors result?
+6. **Anchor Matching**: Given anchors at 2 scales and 2 aspect ratios (4 anchors/cell) on a 4—4 grid, implement the matching logic. For 3 ground truth boxes, determine which anchors are positive (IoU ≥ 0.5). How many positive anchors result?
 
 7. **Faster R-CNN Forward Pass**: Implement a simplified Faster R-CNN forward pass: backbone → RPN → RoI pooling → classifier head. Use random data of shape (2, 3, 224, 224). Verify the output shapes at each stage.
 
-8. **SSD Multi-Scale Detection**: Create an SSD-style model with 3 feature map scales (38×38, 19×19, 10×10). Configure 4 anchors per scale. Compute the total number of predictions. How does multi-scale help with detecting objects of different sizes?
+8. **SSD Multi-Scale Detection**: Create an SSD-style model with 3 feature map scales (38—38, 19—19, 10—10). Configure 4 anchors per scale. Compute the total number of predictions. How does multi-scale help with detecting objects of different sizes?
 
 9. **Export and Quantize**: Take a pre-trained detection model (e.g., torchvision's `fasterrcnn_resnet50_fpn`), export it to ONNX, and apply dynamic quantization. Compare the model size and inference speed before and after quantization.
 

@@ -703,4 +703,4 @@ d) Secret scan
 
 ---
 
-> **Next**: [](.md)
+> **Next**: [Scalability Fundamentals](../07-system-design/01-scalability-fundamentals.md)

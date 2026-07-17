@@ -618,7 +618,7 @@ Tracing captures the full execution path of an LLM request through spans (indivi
     Q3: How do you implement cost tracking per LLM request in a tracing system?
   </summary>
   <div class="tp-qa-answer">
-    <p>Cost tracking at the individual request level requires: (1) Capturing token counts (prompt tokens, completion tokens) from the LLM provider's response. (2) Applying the provider's pricing formula — e.g., GPT-4 costs $10/1M input tokens and $30/1M output tokens. (3) Calculating cost per request: cost = (prompt_tokens × input_price + completion_tokens × output_price) / 1,000,000. (4) Aggregating costs across spans to get total request cost (including embedding costs, vector search costs). (5) Tagging costs with tenant_id, model_name, and endpoint for per-tenant billing. Store cost per trace in the observability system and create dashboards for cost trends over time.</p>
+    <p>Cost tracking at the individual request level requires: (1) Capturing token counts (prompt tokens, completion tokens) from the LLM provider's response. (2) Applying the provider's pricing formula — e.g., GPT-4 costs $10/1M input tokens and $30/1M output tokens. (3) Calculating cost per request: cost = (prompt_tokens — input_price + completion_tokens — output_price) / 1,000,000. (4) Aggregating costs across spans to get total request cost (including embedding costs, vector search costs). (5) Tagging costs with tenant_id, model_name, and endpoint for per-tenant billing. Store cost per trace in the observability system and create dashboards for cost trends over time.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -630,7 +630,7 @@ Tracing captures the full execution path of an LLM request through spans (indivi
     Q4: How do you detect anomalies in LLM latency using statistical methods?
   </summary>
   <div class="tp-qa-answer">
-    <p>Anomaly detection methods for latency: (1) Moving average Z-score — compute rolling mean and standard deviation over a window (e.g., 10 minutes), flag any data point where |z-score| > 3. (2) IQR method — flag values below Q1 - 1.5×IQR or above Q3 + 1.5×IQR. (3) Seasonal decomposition — separate trend, seasonal, and residual components, flag anomalous residuals. (4) Dynamic thresholding — set thresholds automatically from recent history (e.g., threshold = rolling mean + 3×rolling std). For LLM applications, anomalies might indicate degraded LLM provider performance, network issues, or unusually long inputs. Always combine multiple detectors and require sustained anomalies (e.g., 3 consecutive minutes above threshold) before alerting.</p>
+    <p>Anomaly detection methods for latency: (1) Moving average Z-score — compute rolling mean and standard deviation over a window (e.g., 10 minutes), flag any data point where |z-score| > 3. (2) IQR method — flag values below Q1 - 1.5—IQR or above Q3 + 1.5—IQR. (3) Seasonal decomposition — separate trend, seasonal, and residual components, flag anomalous residuals. (4) Dynamic thresholding — set thresholds automatically from recent history (e.g., threshold = rolling mean + 3—rolling std). For LLM applications, anomalies might indicate degraded LLM provider performance, network issues, or unusually long inputs. Always combine multiple detectors and require sustained anomalies (e.g., 3 consecutive minutes above threshold) before alerting.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -690,7 +690,7 @@ Tracing captures the full execution path of an LLM request through spans (indivi
     Q9: How do you monitor throughput and set capacity planning for LLM APIs?
   </summary>
   <div class="tp-qa-answer">
-    <p>Throughput monitoring tracks requests per second/minute (RPS/RPM) with breakdowns by endpoint, model, and tenant. For capacity planning: (1) Track the peak-to-average ratio — if peak is 5× average, you need 5× headroom. (2) Monitor LLM provider rate limits — track usage vs. limits for each model tier. (3) Measure tokens-per-second generation rate — this varies by model size and hardware. (4) Set utilization alerts — warn when average RPS exceeds 70% of maximum capacity. (5) Model queue depth — monitor how many requests are waiting for LLM inference slots. Use these metrics to scale horizontally: add more API instances, increase rate limit tiers, or distribute load across multiple providers.</p>
+    <p>Throughput monitoring tracks requests per second/minute (RPS/RPM) with breakdowns by endpoint, model, and tenant. For capacity planning: (1) Track the peak-to-average ratio — if peak is 5— average, you need 5— headroom. (2) Monitor LLM provider rate limits — track usage vs. limits for each model tier. (3) Measure tokens-per-second generation rate — this varies by model size and hardware. (4) Set utilization alerts — warn when average RPS exceeds 70% of maximum capacity. (5) Model queue depth — monitor how many requests are waiting for LLM inference slots. Use these metrics to scale horizontally: add more API instances, increase rate limit tiers, or distribute load across multiple providers.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -753,7 +753,7 @@ Answer: A
 <details data-qid="eval-s5-quiz4">
 <summary><strong>4.</strong> How does IQR detect anomalies?</summary>
 A. By comparing to a fixed threshold
-B. By flagging values outside 1.5×IQR from quartiles
+B. By flagging values outside 1.5—IQR from quartiles
 C. By using neural networks
 D. By checking error rates
 Answer: B

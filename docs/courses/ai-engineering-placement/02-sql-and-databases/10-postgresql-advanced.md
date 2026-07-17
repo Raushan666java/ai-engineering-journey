@@ -898,4 +898,4 @@ class JsonStore {
 
 ---
 
-> **Next**: [01 — Data Structures & Algorithms →](../03-data-structures-algorithms/01-arrays-and-strings.md)
+> **Next**: [01 — Data Structures & Algorithms →](../03-data-structures-algorithms/01-time-and-space-complexity.md)

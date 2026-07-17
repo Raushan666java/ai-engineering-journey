@@ -1,4 +1,4 @@
-﻿# Behavioral STAR Interview
+# Behavioral STAR Interview
 
 ## Learning Objectives
 
@@ -15,7 +15,7 @@
 
 | Section | Topic | Key Concept |
 |---------|-------|-------------|
-| 9.1 | STAR Framework | Situation, Task, Action, Result — the 4-part story structure |
+| 9.1 | STAR Framework | Situation, Task, Action, Result €” the 4-part story structure |
 | 9.2 | Story Bank | Prepare 8-10 stories covering key competencies |
 | 9.3 | Leadership & Initiative | Stories about taking ownership, driving change, leading without authority |
 | 9.4 | Conflict & Collaboration | Resolving disagreements, working across teams, influencing |
@@ -41,13 +41,13 @@ flowchart LR
 
 The STAR framework structures behavioral answers into four parts:
 
-**S — Situation**: Set the context. Where were you working? What was the project? When did this happen? Include enough detail to make the story credible, but stay concise (2-3 sentences).
+**S €” Situation**: Set the context. Where were you working? What was the project? When did this happen? Include enough detail to make the story credible, but stay concise (2-3 sentences).
 
-**T — Task**: What was your specific responsibility? What goal were you working toward? What was at stake? Clarify your role — were you leading, contributing, or supporting?
+**T €” Task**: What was your specific responsibility? What goal were you working toward? What was at stake? Clarify your role €” were you leading, contributing, or supporting?
 
-**A — Action**: This is the most important part (60% of your answer). What specific steps did you take? What was your thought process? How did you overcome obstacles? Use "I" statements, not "we" — the interviewer wants to hear about YOUR contribution.
+**A €” Action**: This is the most important part (60% of your answer). What specific steps did you take? What was your thought process? How did you overcome obstacles? Use "I" statements, not "we" €” the interviewer wants to hear about YOUR contribution.
 
-**R — Result**: What happened? Use concrete metrics when possible (35% faster, reduced costs by 20%, served 1M users). Include impact on the team, company, or users. If applicable, mention what you learned.
+**R €” Result**: What happened? Use concrete metrics when possible (35% faster, reduced costs by 20%, served 1M users). Include impact on the team, company, or users. If applicable, mention what you learned.
 
 ```python
 # STAR answer template
@@ -114,7 +114,7 @@ story_bank = {
         "story": {
             "situation": "At my previous company, we had a monolithic Rails application that was becoming unmaintainable. Deployment took 45 minutes and any bug affected all features.",
             "task": "I proposed and led the migration to a microservices architecture. I was responsible for the plan, coordination across 4 teams, and ensuring zero downtime.",
-            "action": "I first created a domain decomposition map, splitting the monolith into 8 services. I established API contracts before any code changes. I led a weekly sync with all 4 teams to track dependencies. We used the strangler fig pattern — routing traffic to new services incrementally. I personally wrote the migration framework that handled data backfilling and consistency checks.",
+            "action": "I first created a domain decomposition map, splitting the monolith into 8 services. I established API contracts before any code changes. I led a weekly sync with all 4 teams to track dependencies. We used the strangler fig pattern €” routing traffic to new services incrementally. I personally wrote the migration framework that handled data backfilling and consistency checks.",
             "result": "Migration completed in 6 months with zero customer-facing downtime. Deployment time decreased from 45 minutes to 5 minutes. Team velocity increased 3x because teams could deploy independently. The architecture handled 3x traffic growth in the following year without changes.",
         }
     },
@@ -124,13 +124,13 @@ story_bank = {
             "situation": "I was deploying a database migration that added a NOT NULL column to a 50M-row table. I tested on staging but didn't account for the production write load.",
             "task": "I was responsible for the migration and ensuring zero downtime for our payment processing system.",
             "action": "I ran the migration during business hours (mistake #1). The ALTER TABLE statement locked the table for 8 seconds, causing 200+ failed transactions. I immediately rolled back using the backup we had prepared. I then researched and implemented a safer approach: create the column as nullable, backfill data in batches of 1000 rows, add the NOT NULL constraint using pgroll (which uses a shadow table).",
-            "result": "We lost ~$12K in failed transactions — a painful but valuable lesson. I wrote a postmortem that the whole team reviewed. We created a "Safe Database Migrations" runbook that every engineer follows. No similar incident occurred in the next 2 years.",
+            "result": "We lost ~$12K in failed transactions €” a painful but valuable lesson. I wrote a postmortem that the whole team reviewed. We created a "Safe Database Migrations" runbook that every engineer follows. No similar incident occurred in the next 2 years.",
         }
     },
 }
 ```
 
-**Building your stories**: Use real experiences. If you don't have a perfect story, choose a close one and frame it appropriately. Practice transitioning between categories — you might need to adapt a story for a different question.
+**Building your stories**: Use real experiences. If you don't have a perfect story, choose a close one and frame it appropriately. Practice transitioning between categories €” you might need to adapt a story for a different question.
 
 ---
 
@@ -243,7 +243,7 @@ Failure questions test your humility, self-awareness, and ability to learn from 
 1. **Own the failure**: Use "I" statements. Don't blame others or circumstances.
 2. **Choose a real failure**: Don't pick something trivial or sugarcoat it. A meaningful failure shows maturity.
 3. **Explain what went wrong**: Show you understand the root cause, not just the surface issue.
-4. **Describe what you changed**: This is key — what did you do differently afterward?
+4. **Describe what you changed**: This is key €” what did you do differently afterward?
 5. **Share the positive outcome**: How did you and the team benefit from the experience?
 
 ```python
@@ -380,7 +380,7 @@ print(tech_decision_story(
 # Code review philosophy
 def code_review_principles() -> list[str]:
     return [
-        "Review the logic, not the style — use automated formatters for style",
+        "Review the logic, not the style €” use automated formatters for style",
         "Explain the 'why' behind suggestions, not just the 'what'",
         "Look for missing test cases, not just code correctness",
         "Keep reviews under 400 lines for thorough analysis",
@@ -435,7 +435,7 @@ class MockInterviewSession:
 
     def review_session(self) -> None:
         for i, (resp, dur) in enumerate(zip(self.responses, self.timing)):
-            status = "✓" if 60 <= dur <= 120 else "⚠" if dur <= 150 else "✗"
+            status = "œ“" if 60 <= dur <= 120 else "š" if dur <= 150 else "œ€”"
             print(f"{status} Q{i+1}: {dur:.0f}s")
         avg = sum(self.timing) / len(self.timing)
         print(f"\nAverage response time: {avg:.0f}s (target: 60-90s)")
@@ -476,13 +476,13 @@ practice_questions = [
 
 **Recording yourself**: Use your phone to record video answers. Watch the playback. Check for: filler words ("um", "uh", "like"), pacing, eye contact, body language, story structure clarity. Do this for 3-5 questions per practice session.
 
-**Peer practice**: Do mock interviews with a friend or colleague. Have them ask follow-up questions to test your depth. Ask for honest feedback on content and delivery. Trade roles — being the interviewer is also educational.
+**Peer practice**: Do mock interviews with a friend or colleague. Have them ask follow-up questions to test your depth. Ask for honest feedback on content and delivery. Trade roles €” being the interviewer is also educational.
 
 ---
 
 ## Summary
 
-- STAR framework: Situation (context) → Task (your role) → Action (60% of answer) → Result (metrics)
+- STAR framework: Situation (context) †’ Task (your role) †’ Action (60% of answer) †’ Result (metrics)
 - Prepare 8-10 stories covering: leadership, conflict, failure, initiative, collaboration, mentoring, technical, customer focus
 - Ownership stories use "I" statements; show personal contribution, not just team achievements
 - Failure stories: own the mistake, explain the root cause, describe what you changed, show positive outcome
@@ -494,8 +494,8 @@ practice_questions = [
 
 | Scenario | Do This | Avoid This |
 |----------|---------|------------|
-| "Tell me about yourself" | Start with present → past → future arc | Reciting your resume chronologically |
-| "Why do you want this job?" | Specific company research → skill alignment → mission connection | Generic "great company" answers |
+| "Tell me about yourself" | Start with present †’ past †’ future arc | Reciting your resume chronologically |
+| "Why do you want this job?" | Specific company research †’ skill alignment †’ mission connection | Generic "great company" answers |
 | "Tell me about a failure" | Own it, show root cause, describe what changed | Blaming others or trivial failures |
 | "Tell me about a conflict" | Focus on the issue, respect the other view, data-based resolution | Personal attacks or "I was right" framing |
 | Weak result metrics | Use relative terms: "significantly improved", "team adopted widely" | Making up numbers |
@@ -510,7 +510,7 @@ practice_questions = [
     Q1: How do I structure my answer to "Tell me about yourself"?
   </summary>
   <div class="tp-qa-answer">
-    <p>Use the <strong>present → past → future</strong> framework:</p>
+    <p>Use the <strong>present †’ past †’ future</strong> framework:</p>
     <ul>
       <li><strong>Present</strong> (30%): Your current role and what you're doing. "I'm a Senior Backend Engineer at FinTechCo, where I lead the payments platform team."</li>
       <li><strong>Past</strong> (40%): How you got here, key experiences, and growth. "Before that, I spent 3 years at StartupX building their ML infrastructure, and earlier I was at MegaCorp working on distributed systems." Focus on the narrative thread: "I've always been drawn to systems that handle high throughput."</li>
@@ -518,8 +518,8 @@ practice_questions = [
     </ul>
     <p><strong>Golden rule</strong>: 60-90 seconds total. Don't recite your resume. Connect the dots between your experiences and this opportunity. End with a pivot to why you're excited about this specific role.</p>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">œ… Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Ÿ”– Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="ip-s09-q2">
@@ -530,16 +530,16 @@ practice_questions = [
   <div class="tp-qa-answer">
     <p>This question tests self-awareness and growth mindset. The right approach:</p>
     <ol>
-      <li><strong>Choose a real weakness</strong> — not a disguised strength ("I work too hard") and not a fatal flaw for the role</li>
-      <li><strong>Explain why it's a weakness</strong> — show you understand the impact</li>
-      <li><strong>Describe what you're doing about it</strong> — specific actions, not just "I'm working on it"</li>
-      <li><strong>Show progress</strong> — how has this improved?</li>
+      <li><strong>Choose a real weakness</strong> €” not a disguised strength ("I work too hard") and not a fatal flaw for the role</li>
+      <li><strong>Explain why it's a weakness</strong> €” show you understand the impact</li>
+      <li><strong>Describe what you're doing about it</strong> €” specific actions, not just "I'm working on it"</li>
+      <li><strong>Show progress</strong> €” how has this improved?</li>
     </ol>
     <p><strong>Good example</strong>: "I tend to dive into coding too quickly instead of writing a design doc first. At my last company, I built a feature that needed significant rework because I hadn't thought through the edge cases. Now I follow a personal rule: any feature that takes more than 3 days to build gets a design doc first. My last 3 features required minimal rework."</p>
     <p><strong>Bad example</strong>: "I'm a perfectionist" or "I care too much about quality." These sound rehearsed and don't demonstrate self-awareness.</p>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">œ… Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Ÿ”– Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="ip-s09-q3">
@@ -552,7 +552,7 @@ practice_questions = [
     <p><strong>Good reasons</strong>:</p>
     <ul>
       <li>Growth: "I've grown as much as I can in my current role and I'm looking for new challenges."</li>
-      <li>Scale: "I want to work on problems at a larger scale — your company handles 10x the traffic I work with now."</li>
+      <li>Scale: "I want to work on problems at a larger scale €” your company handles 10x the traffic I work with now."</li>
       <li>Domain: "I want to focus more on AI infrastructure, which aligns with your company's direction."</li>
       <li>Impact: "I want to work on a product that directly impacts millions of users."</li>
     </ul>
@@ -564,8 +564,8 @@ practice_questions = [
     </ul>
     <p>The key: Every reason should connect to why the <strong>new opportunity</strong> excites you, not why the old one was bad.</p>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">œ… Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Ÿ”– Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="ip-s09-q4">
@@ -590,8 +590,8 @@ practice_questions = [
     </table>
     <p>Each story should have a clear Situation, Task, Action, and Result. Practice adapting each story to 2-3 different question phrasings.</p>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">œ… Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Ÿ”– Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="ip-s09-q5">
@@ -611,8 +611,8 @@ practice_questions = [
     <p><strong>Example</strong>: "My manager wanted to use MongoDB for a new service. I advocated for PostgreSQL because our team knew it well and we needed ACID transactions. We agreed to a 3-day prototype. PostgreSQL was 2x faster for our workloads. My manager agreed to go with PostgreSQL. I respected that he was open to evidence."</p>
     <p>Avoid: "I was right and they were wrong." Show mutual respect and a data-driven resolution.</p>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">œ… Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Ÿ”– Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="ip-s09-q6">
@@ -631,8 +631,8 @@ practice_questions = [
     </ul>
     <p><strong>After each interview</strong>: Take 2 minutes to reset. Review your story bank. Note which stories you told so you don't repeat them.</p>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">œ… Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Ÿ”– Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="ip-s09-q7">
@@ -641,32 +641,32 @@ practice_questions = [
     Q7: How do I add metrics to stories when I don't have exact numbers?
   </summary>
   <div class="tp-qa-answer">
-    <p><strong>Option 1 — Relative measures</strong>: Use directional language that still conveys impact.</p>
+    <p><strong>Option 1 €” Relative measures</strong>: Use directional language that still conveys impact.</p>
     <ul>
       <li>"Significantly reduced deployment time"</li>
       <li>"Greatly improved system reliability"</li>
       <li>"Dramatically reduced customer complaints"</li>
     </ul>
-    <p><strong>Option 2 — Estimates</strong>: Provide your best estimate, but be honest it's an estimate.</p>
+    <p><strong>Option 2 €” Estimates</strong>: Provide your best estimate, but be honest it's an estimate.</p>
     <ul>
       <li>"We estimated this saved the team roughly 10 hours per week"</li>
       <li>"Based on our monitoring, latency dropped from ~2s to ~300ms"</li>
     </ul>
-    <p><strong>Option 3 — Qualitative impact</strong>: Describe the outcome without numbers.</p>
+    <p><strong>Option 3 €” Qualitative impact</strong>: Describe the outcome without numbers.</p>
     <ul>
       <li>"The process went from a manual 3-hour task to a fully automated 5-minute trigger"</li>
       <li>"The team adopted this practice across all 6 squads"</li>
       <li>"The postmortem led to a company-wide runbook change"</li>
     </ul>
-    <p><strong>Option 4 — Proxy metrics</strong>: Use available data to approximate impact.</p>
+    <p><strong>Option 4 €” Proxy metrics</strong>: Use available data to approximate impact.</p>
     <ul>
       <li>"GitHub stats showed our deployment frequency went from weekly to daily"</li>
       <li>"PagerDuty alerts dropped from 10/day to 2/week"</li>
     </ul>
     <p>If you genuinely don't have numbers, focus on the <strong>action</strong> and <strong>qualitative outcome</strong>. Not every story needs precise metrics.</p>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">œ… Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Ÿ”– Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="ip-s09-q8">
@@ -680,15 +680,15 @@ practice_questions = [
     <p><strong>Task</strong>: "I needed to establish a process that allowed for flexibility while protecting the team's focus."</p>
     <p><strong>Action</strong>:</p>
     <ul>
-      <li>"I scheduled a 1:1 with the PM to understand their constraints — they were getting pressure from executives and didn't feel heard."</li>
+      <li>"I scheduled a 1:1 with the PM to understand their constraints €” they were getting pressure from executives and didn't feel heard."</li>
       <li>"I proposed a compromise: non-critical changes go to the next sprint; critical changes require a documented justification and removing equivalent scope."</li>
       <li>"I set up a shared roadmap board so stakeholders could see what was committed and what was flexible."</li>
       <li>"I also started including the PM in sprint planning so they understood the cost of changes."</li>
     </ul>
     <p><strong>Result</strong>: "Last-minute changes dropped by 70%. Team morale improved (measured in retro feedback). The PM appreciated the structured process."</p>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">œ… Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Ÿ”– Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="ip-s09-q9">
@@ -699,9 +699,9 @@ practice_questions = [
   <div class="tp-qa-answer">
     <p><strong>Research phase</strong> (before the interview):</p>
     <ul>
-      <li>Read the job description carefully — identify 3-5 skills/experiences they emphasize</li>
+      <li>Read the job description carefully €” identify 3-5 skills/experiences they emphasize</li>
       <li>Research the company: products, engineering blog, recent tech talks, Glassdoor reviews</li>
-      <li>Look up the interviewers on LinkedIn (if known) — understand their background</li>
+      <li>Look up the interviewers on LinkedIn (if known) €” understand their background</li>
       <li>Identify 2-3 specific projects or challenges the company is working on</li>
     </ul>
     <p><strong>Structure your answer</strong>:</p>
@@ -712,8 +712,8 @@ practice_questions = [
     </ul>
     <p><strong>Example pivot to future</strong>: "I've spent my career building scalable backend systems. Your job description emphasizes the exact challenges I'm looking for next: building AI infrastructure at scale. I'm particularly excited about your recent blog post on real-time ML inference."</p>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">œ… Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Ÿ”– Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="ip-s09-q10">
@@ -730,7 +730,7 @@ practice_questions = [
       <li>Reiterate your enthusiasm for the role</li>
       <li>Briefly mention something you forgot to say or a follow-up thought</li>
     </ul>
-    <pre><code>Subject: Thank you — Backend Engineer Interview
+    <pre><code>Subject: Thank you €” Backend Engineer Interview
 
 Hi [Name],
 
@@ -746,8 +746,8 @@ Best,
 [Your name]</code></pre>
     <p><strong>Don't</strong>: Ask about timeline or decisions (the recruiter handles that). Be overly familiar. Send the same generic email to everyone.</p>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">œ… Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Ÿ”– Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="ip-s09-q11">
@@ -756,14 +756,14 @@ Best,
     Q11: What if I don't have a story for a specific question?
   </summary>
   <div class="tp-qa-answer">
-    <p><strong>Strategy 1 — Adapt a story</strong>: Most stories can fit multiple questions. A "leadership" story can be adapted for "initiative", "conflict", or "influence without authority." Identify 2-3 alternate framings for each story.</p>
-    <p><strong>Strategy 2 — Use a partial experience</strong>: "I haven't encountered that exact situation, but here's a related experience..." Be honest about the gap but show transferable skills.</p>
-    <p><strong>Strategy 3 — Hypothetical approach</strong>: "I haven't faced that specific scenario, but here's how I would approach it based on my experience with [related situation]." Then describe your framework.</p>
-    <p><strong>Strategy 4 — Ask for context</strong>: "Could you give me a more specific example of what you're looking for?" This buys time and helps you target the answer better.</p>
+    <p><strong>Strategy 1 €” Adapt a story</strong>: Most stories can fit multiple questions. A "leadership" story can be adapted for "initiative", "conflict", or "influence without authority." Identify 2-3 alternate framings for each story.</p>
+    <p><strong>Strategy 2 €” Use a partial experience</strong>: "I haven't encountered that exact situation, but here's a related experience..." Be honest about the gap but show transferable skills.</p>
+    <p><strong>Strategy 3 €” Hypothetical approach</strong>: "I haven't faced that specific scenario, but here's how I would approach it based on my experience with [related situation]." Then describe your framework.</p>
+    <p><strong>Strategy 4 €” Ask for context</strong>: "Could you give me a more specific example of what you're looking for?" This buys time and helps you target the answer better.</p>
     <p><strong>What NOT to do</strong>: Make up a story. Exaggerate your role. Say "I can't think of anything" without offering an alternative.</p>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">œ… Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Ÿ”– Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="ip-s09-q12">
@@ -782,8 +782,8 @@ Best,
     <p><strong>Example</strong>: "I worked with a very detail-oriented engineer who insisted on perfect code on the first review. This slowed down our delivery. Instead of confronting them, I learned that they had been burned by production incidents before. I proposed a two-stage review: an early architecture review to catch big issues, followed by detailed code review. This addressed their need for correctness while keeping velocity high."</p>
     <p>The key is showing you can work effectively with different personalities without becoming frustrated or confrontational.</p>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">œ… Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Ÿ”– Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="ip-s09-q13">
@@ -803,15 +803,15 @@ Best,
     <p><strong>During the interview</strong>:</p>
     <ul>
       <li>Look at the camera when speaking (not the screen)</li>
-      <li>Have your story bank visible on a second monitor or printed — just bullet points, not scripts</li>
+      <li>Have your story bank visible on a second monitor or printed €” just bullet points, not scripts</li>
       <li>Take a sip of water between answers to pace yourself</li>
-      <li>If the connection drops, don't panic — reconnect and briefly summarize where you were</li>
+      <li>If the connection drops, don't panic €” reconnect and briefly summarize where you were</li>
       <li>Use the chat for links or quick data sharing if needed</li>
     </ul>
     <p><strong>Preparation</strong>: Do at least 2 mock interviews over video call. Get feedback on pacing, clarity, and whether your stories come across well on camera.</p>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">œ… Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Ÿ”– Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="ip-s09-q14">
@@ -825,18 +825,18 @@ Best,
     <ul>
       <li>Research: levels.fyi, Glassdoor, Blind, and your network</li>
       <li>Range: "Based on my research for similar roles at companies of this size, I'm targeting a total compensation range of $180K-$220K. But I'm open to discussing based on the full package."</li>
-      <li>The range should be about 15-20% wide — the low end is your minimum, the high end is what you'd be thrilled with</li>
+      <li>The range should be about 15-20% wide €” the low end is your minimum, the high end is what you'd be thrilled with</li>
     </ul>
     <p><strong>Key principles</strong>:</p>
     <ul>
       <li>Know the market rate for your level and location</li>
       <li>Consider total compensation (base + bonus + equity), not just salary</li>
-      <li>Don't give a number first if you can avoid it — ask for the budget</li>
+      <li>Don't give a number first if you can avoid it €” ask for the budget</li>
       <li>Be willing to walk away if the offer doesn't meet your minimum</li>
     </ul>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">œ… Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Ÿ”– Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="ip-s09-q15">
@@ -863,8 +863,8 @@ Best,
     </ul>
     <p><strong>Closing statement</strong>: After your questions, wrap up: "Thank you again for your time. Based on our conversation, I'm even more excited about this opportunity. I believe my experience with [specific skill] directly maps to the challenges you described. I look forward to hearing from the recruiter about next steps."</p>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">œ… Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Ÿ”– Bookmark</button>
 </details>
 
 ## Chapter Quiz
@@ -876,7 +876,7 @@ b) Action
 c) Analysis
 d) Assessment
 
-<details class="tp-qa-card" data-qid="ip-s09-quiz1"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b) Action</strong></p><p>Action is the most important part of STAR (60% of answer) — describing what specific steps you took.</p></div></details>
+<details class="tp-qa-card" data-qid="ip-s09-quiz1"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b) Action</strong></p><p>Action is the most important part of STAR (60% of answer) €” describing what specific steps you took.</p></div></details>
 
 **Q2**: How long should a good behavioral answer be?
 
@@ -885,7 +885,7 @@ b) 60-90 seconds
 c) 2-3 minutes
 d) As long as needed
 
-<details class="tp-qa-card" data-qid="ip-s09-quiz2"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b) 60-90 seconds</strong></p><p>60-90 seconds is the sweet spot — enough detail for a compelling story but short enough to keep the interviewer engaged.</p></div></details>
+<details class="tp-qa-card" data-qid="ip-s09-quiz2"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b) 60-90 seconds</strong></p><p>60-90 seconds is the sweet spot €” enough detail for a compelling story but short enough to keep the interviewer engaged.</p></div></details>
 
 **Q3**: How should you answer "What's your biggest weakness?"
 
@@ -912,20 +912,20 @@ b) Say you want more money
 c) Say you're looking for growth and new challenges
 d) Say you don't like the work
 
-<details class="tp-qa-card" data-qid="ip-s09-quiz5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: c) Say you're looking for growth and new challenges</strong></p><p>Frame your answer positively — focus on what you're moving toward, not what you're moving away from.</p></div></details>
+<details class="tp-qa-card" data-qid="ip-s09-quiz5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: c) Say you're looking for growth and new challenges</strong></p><p>Frame your answer positively €” focus on what you're moving toward, not what you're moving away from.</p></div></details>
 
 ## Exercises
 
-**Easy** — Write one STAR story for each of the 10 categories in your story bank. For each story, write 2-3 bullet points per STAR element. Aim for each story to fit on one page.
+**Easy** €” Write one STAR story for each of the 10 categories in your story bank. For each story, write 2-3 bullet points per STAR element. Aim for each story to fit on one page.
 
-**Easy** — Record yourself answering "Tell me about yourself" and "Tell me about a challenge you overcame." Watch the recordings and note: do you use filler words? Are your stories too long? Is your pacing natural?
+**Easy** €” Record yourself answering "Tell me about yourself" and "Tell me about a challenge you overcame." Watch the recordings and note: do you use filler words? Are your stories too long? Is your pacing natural?
 
-**Medium** — Practice with a partner: they ask questions from the list of 10 practice questions. After each answer, they give you feedback on STAR completeness, clarity, and conciseness. Swap roles.
+**Medium** €” Practice with a partner: they ask questions from the list of 10 practice questions. After each answer, they give you feedback on STAR completeness, clarity, and conciseness. Swap roles.
 
-**Medium** — Research a company you want to interview with. Write a personalized "Tell me about yourself" answer that connects your experience to 3 specific aspects of their business. Write 3 thoughtful questions to ask them.
+**Medium** €” Research a company you want to interview with. Write a personalized "Tell me about yourself" answer that connects your experience to 3 specific aspects of their business. Write 3 thoughtful questions to ask them.
 
-**Hard** — Create an answer adaptation matrix: list your 10 stories on one axis and 10 common behavioral questions on the other. For each cell, indicate if the story can be adapted for that question (✓) or not (✗). Write alternative framing for 3 stories to cover gaps.
+**Hard** €” Create an answer adaptation matrix: list your 10 stories on one axis and 10 common behavioral questions on the other. For each cell, indicate if the story can be adapted for that question (œ“) or not (œ€”). Write alternative framing for 3 stories to cover gaps.
 
 ---
 
-> **Next**: [10 — Resume & Portfolio Review →](10-resume-and-portfolio-review.md)
+> **Next**: [10 €” Resume & Portfolio Review †’](10-resume-and-portfolio-review.md)

@@ -555,7 +555,7 @@ for r in mem_comp.compare():
 
 ## Summary
 
-QLoRA combines 4-bit NormalFloat (NF4) quantization of the base model with LoRA adapters trained in FP16. This reduces the base model memory from 56 GB (FP16 7B) to ~3.5 GB (4-bit NF4) — a 16× reduction. Double quantization further saves ~0.5 GB by quantizing the quantization constants themselves (e.g., quantizing FP32 scales with FP8). Block-wise quantization (e.g., blocks of 64 weights per scale) maintains quality by adapting quantization granularity. Paged optimizers use CPU RAM to store optimizer states when GPU memory is exhausted, swapping pages as needed. QLoRA enables fine-tuning 65B models on a single 48GB GPU, or 7B models on a 6GB GPU. The quality gap between QLoRA and full fine-tuning is typically <1% on standard benchmarks.
+QLoRA combines 4-bit NormalFloat (NF4) quantization of the base model with LoRA adapters trained in FP16. This reduces the base model memory from 56 GB (FP16 7B) to ~3.5 GB (4-bit NF4) — a 16— reduction. Double quantization further saves ~0.5 GB by quantizing the quantization constants themselves (e.g., quantizing FP32 scales with FP8). Block-wise quantization (e.g., blocks of 64 weights per scale) maintains quality by adapting quantization granularity. Paged optimizers use CPU RAM to store optimizer states when GPU memory is exhausted, swapping pages as needed. QLoRA enables fine-tuning 65B models on a single 48GB GPU, or 7B models on a 6GB GPU. The quality gap between QLoRA and full fine-tuning is typically <1% on standard benchmarks.
 
 ## Practical Takeaways
 
@@ -611,7 +611,7 @@ QLoRA combines 4-bit NormalFloat (NF4) quantization of the base model with LoRA 
     Q4: What is double quantization and why is it useful?
   </summary>
   <div class="tp-qa-answer">
-    <p>Double quantization (DQ) quantizes the quantization constants themselves, saving additional memory. In standard 4-bit quantization, each block of weights (typically 64 or 128 weights) has a quantization constant (fp32, 4 bytes). For a 7B model with block size 64: 7B/64 × 4 bytes ≈ 438MB of constants. Double quantization reduces this by quantizing the constants to 8-bit: 7B/64 × 1 byte ≈ 109MB, saving ~329MB. The process: (1) quantize weights to 4-bit using per-block quantization constants; (2) collect all quantization constants; (3) quantize the constants themselves to 8-bit using a second-level quantization constant (per 256 constants). Dequantization: restore the 8-bit constants to fp32, then use them to dequantize the 4-bit weights. The additional quality loss from double quantization is negligible (<0.1% perplexity increase) because the quantization constants vary slowly and can be stored at lower precision. QLoRA enables DQ with the flag <code>bnb_4bit_use_double_quant=True</code>. Combined with NF4, DQ reduces the total memory for base model weights by ~3MB per 1B parameters, which is modest but free — no quality cost for the memory savings.</p>
+    <p>Double quantization (DQ) quantizes the quantization constants themselves, saving additional memory. In standard 4-bit quantization, each block of weights (typically 64 or 128 weights) has a quantization constant (fp32, 4 bytes). For a 7B model with block size 64: 7B/64 — 4 bytes ≈ 438MB of constants. Double quantization reduces this by quantizing the constants to 8-bit: 7B/64 — 1 byte ≈ 109MB, saving ~329MB. The process: (1) quantize weights to 4-bit using per-block quantization constants; (2) collect all quantization constants; (3) quantize the constants themselves to 8-bit using a second-level quantization constant (per 256 constants). Dequantization: restore the 8-bit constants to fp32, then use them to dequantize the 4-bit weights. The additional quality loss from double quantization is negligible (<0.1% perplexity increase) because the quantization constants vary slowly and can be stored at lower precision. QLoRA enables DQ with the flag <code>bnb_4bit_use_double_quant=True</code>. Combined with NF4, DQ reduces the total memory for base model weights by ~3MB per 1B parameters, which is modest but free — no quality cost for the memory savings.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -623,7 +623,7 @@ QLoRA combines 4-bit NormalFloat (NF4) quantization of the base model with LoRA 
     Q5: What is a paged optimizer and how does it prevent OOM?
   </summary>
   <div class="tp-qa-answer">
-    <p>A paged optimizer (introduced in QLoRA) uses CPU RAM as swap space for GPU optimizer states when GPU memory is full, preventing out-of-memory (OOM) errors during training. The optimizer states (momentum, variance) for AdamW require 2× the model size in fp32 — for a 7B model: 7B × 4 bytes × 2 = 56GB, far exceeding GPU memory. With LoRA, only LoRA parameters need optimizer states (~8M × 4 × 2 = 64MB for r=8 on Q+V), so paging isn't needed for LoRA alone. However, for full fine-tuning or when using large gradient accumulation, the paged optimizer moves infrequently accessed optimizer state pages to CPU RAM, freeing GPU memory for activations and gradients. Implementation: bitsandbytes provides <code>bnb.optim.Adam8bit</code> (8-bit optimizer states) and <code>bnb.optim.AdamW</code> with page-based memory management. Paged optimizers trade GPU memory for some performance overhead (CPU↔GPU transfer latency). They're most useful when training close to GPU memory limits — the optimizer pages out state during forward/backward and pages it back during the optimizer step.</p>
+    <p>A paged optimizer (introduced in QLoRA) uses CPU RAM as swap space for GPU optimizer states when GPU memory is full, preventing out-of-memory (OOM) errors during training. The optimizer states (momentum, variance) for AdamW require 2— the model size in fp32 — for a 7B model: 7B — 4 bytes — 2 = 56GB, far exceeding GPU memory. With LoRA, only LoRA parameters need optimizer states (~8M — 4 — 2 = 64MB for r=8 on Q+V), so paging isn't needed for LoRA alone. However, for full fine-tuning or when using large gradient accumulation, the paged optimizer moves infrequently accessed optimizer state pages to CPU RAM, freeing GPU memory for activations and gradients. Implementation: bitsandbytes provides <code>bnb.optim.Adam8bit</code> (8-bit optimizer states) and <code>bnb.optim.AdamW</code> with page-based memory management. Paged optimizers trade GPU memory for some performance overhead (CPU↔GPU transfer latency). They're most useful when training close to GPU memory limits — the optimizer pages out state during forward/backward and pages it back during the optimizer step.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -693,11 +693,11 @@ QLoRA combines 4-bit NormalFloat (NF4) quantization of the base model with LoRA 
 
 <details data-qid="ft-s5-quiz1">
 <summary><strong>1.</strong> What is the memory reduction of 4-bit NF4 vs FP16?</summary>
-A. 2×
-B. 4×
-C. 8×
-D. 16×
-Answer: B (4-bit is 0.5 bytes vs FP16's 2 bytes per param = 4×)
+A. 2—
+B. 4—
+C. 8—
+D. 16—
+Answer: B (4-bit is 0.5 bytes vs FP16's 2 bytes per param = 4—)
 </details>
 
 <details data-qid="ft-s5-quiz2">
@@ -738,7 +738,7 @@ Answer: C
 
 ## Exercises
 
-1. Implement a 4-bit NF4 quantizer with block size 64. Quantize a 4096×4096 weight matrix and measure MSE and compression ratio.
+1. Implement a 4-bit NF4 quantizer with block size 64. Quantize a 4096—4096 weight matrix and measure MSE and compression ratio.
 
 2. Build a double quantization system: first quantize weights in blocks of 64 with NF4, then quantize the FP32 scale factors in blocks of 256. Report memory savings.
 

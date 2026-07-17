@@ -266,7 +266,7 @@ class SkipGramModel {
 }
 ```
 
-Skip-gram works better for rare words because each training pair is treated independently, giving more weight to infrequent co-occurrences. Training time is O(window_size × vocab_size), making negative sampling essential.
+Skip-gram works better for rare words because each training pair is treated independently, giving more weight to infrequent co-occurrences. Training time is O(window_size — vocab_size), making negative sampling essential.
 
 ---
 

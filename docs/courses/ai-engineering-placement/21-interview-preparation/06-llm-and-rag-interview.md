@@ -114,8 +114,8 @@ Sarah buys 5 apples and 3 oranges. She pays with a $50 bill.
 How much change does she receive?
 
 Let's think step by step:
-1. Cost of apples: 5 × $2 = $10
-2. Cost of oranges: 3 × $3 = $9
+1. Cost of apples: 5 — $2 = $10
+2. Cost of oranges: 3 — $3 = $9
 3. Total cost: $10 + $9 = $19
 4. Change: $50 - $19 = $31
 
@@ -241,9 +241,9 @@ def advanced_retrieval(vector_store, question: str, k: int = 10):
 
 Fine-tuning adapts a pre-trained LLM to a specific domain or task using labeled data.
 
-**Full fine-tuning**: Update all model parameters. Requires significant compute (4× model size in GPU memory for Adam). Best for major domain adaptation.
+**Full fine-tuning**: Update all model parameters. Requires significant compute (4— model size in GPU memory for Adam). Best for major domain adaptation.
 
-**LoRA (Low-Rank Adaptation)**: Insert low-rank matrices (rank r = 4-64) into attention layers. Only these matrices are trained — ~1% of parameters. Reduces memory by 3-5×. The original weights remain frozen.
+**LoRA (Low-Rank Adaptation)**: Insert low-rank matrices (rank r = 4-64) into attention layers. Only these matrices are trained — ~1% of parameters. Reduces memory by 3-5—. The original weights remain frozen.
 
 **QLoRA**: Quantize the base model to 4-bit, then apply LoRA on top. Enables fine-tuning 65B models on a single 48GB GPU. Uses NF4 quantization, double quantization, and paged optimizers.
 
@@ -752,10 +752,10 @@ class Guardrails:
     Q3: What is the difference between LoRA and QLoRA fine-tuning?
   </summary>
   <div class="tp-qa-answer">
-    <p><strong>LoRA (Low-Rank Adaptation)</strong>: Inserts trainable low-rank matrices into attention layers while keeping original weights frozen. The rank r (typically 4-64) determines the expressiveness vs parameter efficiency tradeoff. LoRA reduces trainable parameters by ~99% and GPU memory by ~3×.</p>
-    <p>Memory: ~16GB for 7B model (fp16 base + LoRA adapters). Speed: ~2-3× slower than inference.</p>
+    <p><strong>LoRA (Low-Rank Adaptation)</strong>: Inserts trainable low-rank matrices into attention layers while keeping original weights frozen. The rank r (typically 4-64) determines the expressiveness vs parameter efficiency tradeoff. LoRA reduces trainable parameters by ~99% and GPU memory by ~3—.</p>
+    <p>Memory: ~16GB for 7B model (fp16 base + LoRA adapters). Speed: ~2-3— slower than inference.</p>
     <p><strong>QLoRA</strong>: Adds 4-bit quantization of the base model to LoRA. Uses NF4 (NormalFloat4) quantization, double quantization (quantize the quantization constants), and paged optimizers to handle memory spikes.</p>
-    <p>Memory: ~6GB for 7B model (4-bit base + LoRA). Speed: ~3-4× slower than inference. Enables fine-tuning 65B models on a single 48GB GPU.</p>
+    <p>Memory: ~6GB for 7B model (4-bit base + LoRA). Speed: ~3-4— slower than inference. Enables fine-tuning 65B models on a single 48GB GPU.</p>
     <p><strong>Quality comparison</strong>: QLoRA with r=64 matches full fine-tuning performance on most benchmarks. LoRA with r≥16 matches full fine-tuning on many tasks. Both significantly reduce memory requirements while maintaining quality.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>

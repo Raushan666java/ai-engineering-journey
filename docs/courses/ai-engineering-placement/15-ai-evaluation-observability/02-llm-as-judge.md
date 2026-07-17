@@ -581,7 +581,7 @@ LLM-as-Judge addresses the scalability challenge of human evaluation by using a 
     Q5: How does Elo rating work for tracking LLM performance over time?
   </summary>
   <div class="tp-qa-answer">
-    <p>Elo rating, originally from chess, tracks relative performance through pairwise comparisons. Each model starts with a base rating (e.g., 1000). After each comparison, points are transferred: the winner takes points from the loser, with the amount depending on the expected score difference. If a lower-rated model beats a higher-rated one, it gains more points. The expected score is computed as: E_A = 1 / (1 + 10^((R_B - R_A) / 400)). After the match, ratings update: R_new = R_old + K × (S - E), where K is the development coefficient (typically 32). Over many comparisons, Elo produces a stable ranking that reflects relative performance regardless of the specific comparison pairs used.</p>
+    <p>Elo rating, originally from chess, tracks relative performance through pairwise comparisons. Each model starts with a base rating (e.g., 1000). After each comparison, points are transferred: the winner takes points from the loser, with the amount depending on the expected score difference. If a lower-rated model beats a higher-rated one, it gains more points. The expected score is computed as: E_A = 1 / (1 + 10^((R_B - R_A) / 400)). After the match, ratings update: R_new = R_old + K — (S - E), where K is the development coefficient (typically 32). Over many comparisons, Elo produces a stable ranking that reflects relative performance regardless of the specific comparison pairs used.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

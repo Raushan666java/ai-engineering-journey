@@ -1219,7 +1219,7 @@ Speech-to-text technology has evolved from traditional GMM-HMM systems to end-to
 <summary class="tp-qa-question">What augmentation strategies improve ASR noise robustness?</summary>
 <div class="tp-qa-context"><p>Training data diversification for noisy conditions.</p></div>
 <div class="tp-qa-answer">
-<p>Key augmentations: <strong>Noise injection</strong> — mix clean speech with background noise at various SNRs (0-20dB). <strong>RIR convolution</strong> — simulate room acoustics using impulse responses. <strong>Speed perturbation</strong> — stretch audio 0.9-1.1×. <strong>SpecAugment</strong> — mask time and frequency bands in mel space. <strong>VoxPopuli-style mixing</strong> — mix multiple speakers at random ratios. <strong>Bandpass filtering</strong> — simulate telephone bandwidth. Combine 3-5 augmentations for each training sample.</p>
+<p>Key augmentations: <strong>Noise injection</strong> — mix clean speech with background noise at various SNRs (0-20dB). <strong>RIR convolution</strong> — simulate room acoustics using impulse responses. <strong>Speed perturbation</strong> — stretch audio 0.9-1.1—. <strong>SpecAugment</strong> — mask time and frequency bands in mel space. <strong>VoxPopuli-style mixing</strong> — mix multiple speakers at random ratios. <strong>Bandpass filtering</strong> — simulate telephone bandwidth. Combine 3-5 augmentations for each training sample.</p>
 </div>
 <div class="tp-qa-actions">
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -1255,7 +1255,7 @@ Speech-to-text technology has evolved from traditional GMM-HMM systems to end-to
 <summary class="tp-qa-question">How do you deploy ASR on edge devices?</summary>
 <div class="tp-qa-context"><p>On-device speech recognition.</p></div>
 <div class="tp-qa-answer">
-<p>Edge ASR requires: (1) <strong>Model quantization</strong> — INT8 quantization reduces size 4× with minimal WER increase. (2) <strong>Streaming architecture</strong> — transducer models with chunk-wise processing for low latency. (3) <strong>Keyword spotting first</strong> — wake-word detector activates the main ASR only when needed. (4) <strong>Hardware acceleration</strong> — use NPU/GPU for neural inference, DSP for feature extraction. (5) <strong>Model pruning</strong> — remove less important weights (30-50% sparsity). Whisper tiny (39M params) runs at real-time on modern smartphones.</p>
+<p>Edge ASR requires: (1) <strong>Model quantization</strong> — INT8 quantization reduces size 4— with minimal WER increase. (2) <strong>Streaming architecture</strong> — transducer models with chunk-wise processing for low latency. (3) <strong>Keyword spotting first</strong> — wake-word detector activates the main ASR only when needed. (4) <strong>Hardware acceleration</strong> — use NPU/GPU for neural inference, DSP for feature extraction. (5) <strong>Model pruning</strong> — remove less important weights (30-50% sparsity). Whisper tiny (39M params) runs at real-time on modern smartphones.</p>
 </div>
 <div class="tp-qa-actions">
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>

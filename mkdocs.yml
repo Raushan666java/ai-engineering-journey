@@ -101,6 +101,243 @@ nav:
   - "📄 Resume": resume.md
   - "🗺️ Roadmap": roadmap.md
   - "🔥 Trending": trending.md
+  - "🏆 Backend + AI Placement":
+    - Overview: courses/ai-engineering-placement/index.md
+    - "01 — Python for AI":
+      - Overview: courses/ai-engineering-placement/01-python-programming/index.md
+      - "Python Basics": courses/ai-engineering-placement/01-python-programming/01-python-basics.md
+      - "Control Flow": courses/ai-engineering-placement/01-python-programming/02-control-flow.md
+      - "Strings And Formatting": courses/ai-engineering-placement/01-python-programming/03-strings-and-formatting.md
+      - "Collections": courses/ai-engineering-placement/01-python-programming/04-collections.md
+      - "Functions": courses/ai-engineering-placement/01-python-programming/05-functions.md
+      - "Modules And Packages": courses/ai-engineering-placement/01-python-programming/06-modules-and-packages.md
+      - "File Io And Exceptions": courses/ai-engineering-placement/01-python-programming/07-file-io-and-exceptions.md
+      - "Oop In Python": courses/ai-engineering-placement/01-python-programming/08-oop-in-python.md
+      - "Decorators And Generators": courses/ai-engineering-placement/01-python-programming/09-decorators-and-generators.md
+      - "Concurrency": courses/ai-engineering-placement/01-python-programming/10-concurrency.md
+      - "Numpy Fundamentals": courses/ai-engineering-placement/01-python-programming/11-numpy-fundamentals.md
+      - "Pandas Basics": courses/ai-engineering-placement/01-python-programming/12-pandas-basics.md
+      - "Pandas Advanced": courses/ai-engineering-placement/01-python-programming/13-pandas-advanced.md
+      - "Data Visualization": courses/ai-engineering-placement/01-python-programming/14-data-visualization.md
+    - "02 — SQL & Databases":
+      - Overview: courses/ai-engineering-placement/02-sql-and-databases/index.md
+      - "Sql Basics": courses/ai-engineering-placement/02-sql-and-databases/01-sql-basics.md
+      - "Aggregate Functions": courses/ai-engineering-placement/02-sql-and-databases/02-aggregate-functions.md
+      - "Joins": courses/ai-engineering-placement/02-sql-and-databases/03-joins.md
+      - "Subqueries And Ctes": courses/ai-engineering-placement/02-sql-and-databases/04-subqueries-and-ctes.md
+      - "Window Functions": courses/ai-engineering-placement/02-sql-and-databases/05-window-functions.md
+      - "Set Operations": courses/ai-engineering-placement/02-sql-and-databases/06-set-operations.md
+      - "Indexes And Performance": courses/ai-engineering-placement/02-sql-and-databases/07-indexes-and-performance.md
+      - "Database Design": courses/ai-engineering-placement/02-sql-and-databases/08-database-design.md
+      - "Transactions And Acid": courses/ai-engineering-placement/02-sql-and-databases/09-transactions-and-acid.md
+      - "Postgresql Advanced": courses/ai-engineering-placement/02-sql-and-databases/10-postgresql-advanced.md
+    - "03 — Data Structures & Algorithms":
+      - Overview: courses/ai-engineering-placement/03-data-structures-algorithms/index.md
+      - "Time And Space Complexity": courses/ai-engineering-placement/03-data-structures-algorithms/01-time-and-space-complexity.md
+      - "Arrays": courses/ai-engineering-placement/03-data-structures-algorithms/02-arrays.md
+      - "Strings": courses/ai-engineering-placement/03-data-structures-algorithms/03-strings.md
+      - "Sliding Window": courses/ai-engineering-placement/03-data-structures-algorithms/04-sliding-window.md
+      - "Two Pointers": courses/ai-engineering-placement/03-data-structures-algorithms/05-two-pointers.md
+      - "Hash Maps And Sets": courses/ai-engineering-placement/03-data-structures-algorithms/06-hash-maps-and-sets.md
+      - "Linked Lists": courses/ai-engineering-placement/03-data-structures-algorithms/07-linked-lists.md
+      - "Stacks And Queues": courses/ai-engineering-placement/03-data-structures-algorithms/08-stacks-and-queues.md
+      - "Binary Trees": courses/ai-engineering-placement/03-data-structures-algorithms/09-binary-trees.md
+      - "Binary Search Trees": courses/ai-engineering-placement/03-data-structures-algorithms/10-binary-search-trees.md
+      - "Heaps And Tries": courses/ai-engineering-placement/03-data-structures-algorithms/11-heaps-and-tries.md
+      - "Graphs Bfs Dfs": courses/ai-engineering-placement/03-data-structures-algorithms/12-graphs-bfs-dfs.md
+      - "Graphs Shortest Path": courses/ai-engineering-placement/03-data-structures-algorithms/13-graphs-shortest-path.md
+      - "Graphs Topological Sort": courses/ai-engineering-placement/03-data-structures-algorithms/14-graphs-topological-sort.md
+      - "Dynamic Programming 1D": courses/ai-engineering-placement/03-data-structures-algorithms/15-dynamic-programming-1d.md
+      - "Dynamic Programming 2D": courses/ai-engineering-placement/03-data-structures-algorithms/16-dynamic-programming-2d.md
+      - "Backtracking": courses/ai-engineering-placement/03-data-structures-algorithms/17-backtracking.md
+      - "Bit Manipulation And Math": courses/ai-engineering-placement/03-data-structures-algorithms/18-bit-manipulation-and-math.md
+    - "04 — Git, Linux & CLI":
+      - Overview: courses/ai-engineering-placement/04-git-linux-cli/index.md
+      - "Git Basics": courses/ai-engineering-placement/04-git-linux-cli/01-git-basics.md
+      - "Git Branching": courses/ai-engineering-placement/04-git-linux-cli/02-git-branching.md
+      - "Git Workflow": courses/ai-engineering-placement/04-git-linux-cli/03-git-workflow.md
+      - "Linux Commands": courses/ai-engineering-placement/04-git-linux-cli/04-linux-commands.md
+      - "Bash Scripting": courses/ai-engineering-placement/04-git-linux-cli/05-bash-scripting.md
+      - "Networking And Security": courses/ai-engineering-placement/04-git-linux-cli/06-networking-and-security.md
+    - "05 — FastAPI & Backend Engineering":
+      - Overview: courses/ai-engineering-placement/05-fastapi-backend/index.md
+      - "Rest Api Fundamentals": courses/ai-engineering-placement/05-fastapi-backend/01-rest-api-fundamentals.md
+      - "Fastapi Basics": courses/ai-engineering-placement/05-fastapi-backend/02-fastapi-basics.md
+      - "Pydantic And Validation": courses/ai-engineering-placement/05-fastapi-backend/03-pydantic-and-validation.md
+      - "Dependency Injection": courses/ai-engineering-placement/05-fastapi-backend/04-dependency-injection.md
+      - "Authentication And Authz": courses/ai-engineering-placement/05-fastapi-backend/05-authentication-and-authz.md
+      - "Database With Sqlalchemy": courses/ai-engineering-placement/05-fastapi-backend/06-database-with-sqlalchemy.md
+      - "Async Patterns": courses/ai-engineering-placement/05-fastapi-backend/07-async-patterns.md
+      - "Testing Fastapi": courses/ai-engineering-placement/05-fastapi-backend/08-testing-fastapi.md
+      - "Error Handling And Logging": courses/ai-engineering-placement/05-fastapi-backend/09-error-handling-and-logging.md
+      - "Api Deployment": courses/ai-engineering-placement/05-fastapi-backend/10-api-deployment.md
+    - "06 — Docker, Kubernetes & Cloud":
+      - Overview: courses/ai-engineering-placement/06-docker-kubernetes-cloud/index.md
+      - "Docker Basics": courses/ai-engineering-placement/06-docker-kubernetes-cloud/01-docker-basics.md
+      - "Docker Compose": courses/ai-engineering-placement/06-docker-kubernetes-cloud/02-docker-compose.md
+      - "Docker Best Practices": courses/ai-engineering-placement/06-docker-kubernetes-cloud/03-docker-best-practices.md
+      - "Kubernetes Basics": courses/ai-engineering-placement/06-docker-kubernetes-cloud/04-kubernetes-basics.md
+      - "Kubernetes Config": courses/ai-engineering-placement/06-docker-kubernetes-cloud/05-kubernetes-config.md
+      - "Kubernetes Scaling": courses/ai-engineering-placement/06-docker-kubernetes-cloud/06-kubernetes-scaling.md
+      - "Aws Fundamentals": courses/ai-engineering-placement/06-docker-kubernetes-cloud/07-aws-fundamentals.md
+      - "Aws Containers": courses/ai-engineering-placement/06-docker-kubernetes-cloud/08-aws-containers.md
+      - "Azure And Gcp Basics": courses/ai-engineering-placement/06-docker-kubernetes-cloud/09-azure-and-gcp-basics.md
+      - "Ci Cd Pipelines": courses/ai-engineering-placement/06-docker-kubernetes-cloud/10-ci-cd-pipelines.md
+    - "07 — System Design":
+      - Overview: courses/ai-engineering-placement/07-system-design/index.md
+      - "Scalability Fundamentals": courses/ai-engineering-placement/07-system-design/01-scalability-fundamentals.md
+      - "Microservices Architecture": courses/ai-engineering-placement/07-system-design/02-microservices-architecture.md
+      - "Message Queues": courses/ai-engineering-placement/07-system-design/03-message-queues.md
+      - "Caching Strategies": courses/ai-engineering-placement/07-system-design/04-caching-strategies.md
+      - "Database Scaling": courses/ai-engineering-placement/07-system-design/05-database-scaling.md
+      - "Cap And Consistency": courses/ai-engineering-placement/07-system-design/06-cap-and-consistency.md
+      - "Api Design Patterns": courses/ai-engineering-placement/07-system-design/07-api-design-patterns.md
+      - "Rate Limiting And Idempotency": courses/ai-engineering-placement/07-system-design/08-rate-limiting-and-idempotency.md
+      - "Monitoring And Observability": courses/ai-engineering-placement/07-system-design/09-monitoring-and-observability.md
+      - "Design Url Shortener": courses/ai-engineering-placement/07-system-design/10-design-url-shortener.md
+      - "Design Chatgpt": courses/ai-engineering-placement/07-system-design/11-design-chatgpt.md
+      - "Design Whatsapp": courses/ai-engineering-placement/07-system-design/12-design-whatsapp.md
+    - "08 — Machine Learning":
+      - Overview: courses/ai-engineering-placement/08-machine-learning/index.md
+      - "Ml Fundamentals": courses/ai-engineering-placement/08-machine-learning/01-ml-fundamentals.md
+      - "Linear Regression": courses/ai-engineering-placement/08-machine-learning/02-linear-regression.md
+      - "Logistic Regression": courses/ai-engineering-placement/08-machine-learning/03-logistic-regression.md
+      - "Decision Trees And Rf": courses/ai-engineering-placement/08-machine-learning/04-decision-trees-and-rf.md
+      - "Svm And Kernel Methods": courses/ai-engineering-placement/08-machine-learning/05-svm-and-kernel-methods.md
+      - "Ensemble Methods": courses/ai-engineering-placement/08-machine-learning/06-ensemble-methods.md
+      - "Unsupervised Learning": courses/ai-engineering-placement/08-machine-learning/07-unsupervised-learning.md
+      - "Dimensionality Reduction": courses/ai-engineering-placement/08-machine-learning/08-dimensionality-reduction.md
+      - "Model Evaluation": courses/ai-engineering-placement/08-machine-learning/09-model-evaluation.md
+      - "Hyperparameter Tuning": courses/ai-engineering-placement/08-machine-learning/10-hyperparameter-tuning.md
+    - "09 — Deep Learning with PyTorch":
+      - Overview: courses/ai-engineering-placement/09-deep-learning-pytorch/index.md
+      - "Neural Networks Basics": courses/ai-engineering-placement/09-deep-learning-pytorch/01-neural-networks-basics.md
+      - "Pytorch Tensors": courses/ai-engineering-placement/09-deep-learning-pytorch/02-pytorch-tensors.md
+      - "Pytorch Nn Module": courses/ai-engineering-placement/09-deep-learning-pytorch/03-pytorch-nn-module.md
+      - "Cnn Fundamentals": courses/ai-engineering-placement/09-deep-learning-pytorch/04-cnn-fundamentals.md
+      - "Advanced Cnn": courses/ai-engineering-placement/09-deep-learning-pytorch/05-advanced-cnn.md
+      - "Transfer Learning": courses/ai-engineering-placement/09-deep-learning-pytorch/06-transfer-learning.md
+      - "Rnn And Lstm": courses/ai-engineering-placement/09-deep-learning-pytorch/07-rnn-and-lstm.md
+      - "Training Pipelines": courses/ai-engineering-placement/09-deep-learning-pytorch/08-training-pipelines.md
+      - "Model Deployment": courses/ai-engineering-placement/09-deep-learning-pytorch/09-model-deployment.md
+      - "Deployment Best Practices": courses/ai-engineering-placement/09-deep-learning-pytorch/10-deployment-best-practices.md
+    - "10 — NLP & Transformers":
+      - Overview: courses/ai-engineering-placement/10-nlp-transformers/index.md
+      - "Text Preprocessing": courses/ai-engineering-placement/10-nlp-transformers/01-text-preprocessing.md
+      - "Word Embeddings": courses/ai-engineering-placement/10-nlp-transformers/02-word-embeddings.md
+      - "Sequence Models": courses/ai-engineering-placement/10-nlp-transformers/03-sequence-models.md
+      - "Attention Mechanism": courses/ai-engineering-placement/10-nlp-transformers/04-attention-mechanism.md
+      - "Transformer Architecture": courses/ai-engineering-placement/10-nlp-transformers/05-transformer-architecture.md
+      - "Bert And Fine Tuning": courses/ai-engineering-placement/10-nlp-transformers/06-bert-and-fine-tuning.md
+      - "Hugging Face Ecosystem": courses/ai-engineering-placement/10-nlp-transformers/07-hugging-face-ecosystem.md
+      - "Nlp Applications": courses/ai-engineering-placement/10-nlp-transformers/08-nlp-applications.md
+    - "11 — LLMs & Prompt Engineering":
+      - Overview: courses/ai-engineering-placement/11-llms-prompt-engineering/index.md
+      - "Foundation Models Overview": courses/ai-engineering-placement/11-llms-prompt-engineering/01-foundation-models-overview.md
+      - "Llm Apis": courses/ai-engineering-placement/11-llms-prompt-engineering/02-llm-apis.md
+      - "Zero Shot And Few Shot": courses/ai-engineering-placement/11-llms-prompt-engineering/03-zero-shot-and-few-shot.md
+      - "Chain Of Thought": courses/ai-engineering-placement/11-llms-prompt-engineering/04-chain-of-thought.md
+      - "Structured Output": courses/ai-engineering-placement/11-llms-prompt-engineering/05-structured-output.md
+      - "Context Management": courses/ai-engineering-placement/11-llms-prompt-engineering/06-context-management.md
+      - "Llm Evaluation": courses/ai-engineering-placement/11-llms-prompt-engineering/07-llm-evaluation.md
+      - "Cost And Latency Optimization": courses/ai-engineering-placement/11-llms-prompt-engineering/08-cost-and-latency-optimization.md
+    - "12 — RAG & Vector Databases":
+      - Overview: courses/ai-engineering-placement/12-rag-vector-databases/index.md
+      - "Introduction To Rag": courses/ai-engineering-placement/12-rag-vector-databases/01-introduction-to-rag.md
+      - "Embedding Models": courses/ai-engineering-placement/12-rag-vector-databases/02-embedding-models.md
+      - "Vector Database Basics": courses/ai-engineering-placement/12-rag-vector-databases/03-vector-database-basics.md
+      - "Chunking Strategies": courses/ai-engineering-placement/12-rag-vector-databases/04-chunking-strategies.md
+      - "Document Retrieval": courses/ai-engineering-placement/12-rag-vector-databases/05-document-retrieval.md
+      - "Rag Pipeline Design": courses/ai-engineering-placement/12-rag-vector-databases/06-rag-pipeline-design.md
+      - "Advanced Rag Techniques": courses/ai-engineering-placement/12-rag-vector-databases/07-advanced-rag-techniques.md
+      - "Rag Evaluation": courses/ai-engineering-placement/12-rag-vector-databases/08-rag-evaluation.md
+      - "Production Rag Systems": courses/ai-engineering-placement/12-rag-vector-databases/09-production-rag-systems.md
+      - "Hybrid Search And Reranking": courses/ai-engineering-placement/12-rag-vector-databases/10-hybrid-search-and-reranking.md
+    - "13 — AI Agents & LangGraph":
+      - Overview: courses/ai-engineering-placement/13-ai-agents-langgraph/index.md
+      - "Introduction To Ai Agents": courses/ai-engineering-placement/13-ai-agents-langgraph/01-introduction-to-ai-agents.md
+      - "Agent Architectures": courses/ai-engineering-placement/13-ai-agents-langgraph/02-agent-architectures.md
+      - "Langgraph Basics": courses/ai-engineering-placement/13-ai-agents-langgraph/03-langgraph-basics.md
+      - "Tool Use And Function Calling": courses/ai-engineering-placement/13-ai-agents-langgraph/04-tool-use-and-function-calling.md
+      - "Memory And State": courses/ai-engineering-placement/13-ai-agents-langgraph/05-memory-and-state.md
+      - "Multi Agent Systems": courses/ai-engineering-placement/13-ai-agents-langgraph/06-multi-agent-systems.md
+      - "Human In The Loop": courses/ai-engineering-placement/13-ai-agents-langgraph/07-human-in-the-loop.md
+      - "Agent Observability": courses/ai-engineering-placement/13-ai-agents-langgraph/08-agent-observability.md
+      - "Production Agents": courses/ai-engineering-placement/13-ai-agents-langgraph/09-production-agents.md
+      - "Advanced Agent Patterns": courses/ai-engineering-placement/13-ai-agents-langgraph/10-advanced-agent-patterns.md
+    - "14 — Fine-Tuning & PEFT":
+      - Overview: courses/ai-engineering-placement/14-fine-tuning-peft/index.md
+      - "When To Fine Tune": courses/ai-engineering-placement/14-fine-tuning-peft/01-when-to-fine-tune.md
+      - "Full Fine Tuning": courses/ai-engineering-placement/14-fine-tuning-peft/02-full-fine-tuning.md
+      - "Lora Theory": courses/ai-engineering-placement/14-fine-tuning-peft/03-lora-theory.md
+      - "Lora Implementation": courses/ai-engineering-placement/14-fine-tuning-peft/04-lora-implementation.md
+      - "Qlora And Quantization": courses/ai-engineering-placement/14-fine-tuning-peft/05-qlora-and-quantization.md
+      - "Instruction Tuning": courses/ai-engineering-placement/14-fine-tuning-peft/06-instruction-tuning.md
+      - "Dpo And Preference Tuning": courses/ai-engineering-placement/14-fine-tuning-peft/07-dpo-and-preference-tuning.md
+      - "Evaluating Fine Tuned Models": courses/ai-engineering-placement/14-fine-tuning-peft/08-evaluating-fine-tuned-models.md
+    - "15 — AI Evaluation & Observability":
+      - Overview: courses/ai-engineering-placement/15-ai-evaluation-observability/index.md
+      - "Evaluation Metrics": courses/ai-engineering-placement/15-ai-evaluation-observability/01-evaluation-metrics.md
+      - "Llm As Judge": courses/ai-engineering-placement/15-ai-evaluation-observability/02-llm-as-judge.md
+      - "Evaluation Datasets": courses/ai-engineering-placement/15-ai-evaluation-observability/03-evaluation-datasets.md
+      - "Observability Tools": courses/ai-engineering-placement/15-ai-evaluation-observability/04-observability-tools.md
+      - "Tracing And Monitoring": courses/ai-engineering-placement/15-ai-evaluation-observability/05-tracing-and-monitoring.md
+      - "Alerting And Incident Response": courses/ai-engineering-placement/15-ai-evaluation-observability/06-alerting-and-incident-response.md
+    - "16 — MLOps & Production AI":
+      - Overview: courses/ai-engineering-placement/16-mlops-production/index.md
+      - "Experiment Tracking": courses/ai-engineering-placement/16-mlops-production/01-experiment-tracking.md
+      - "Prompt Versioning": courses/ai-engineering-placement/16-mlops-production/02-prompt-versioning.md
+      - "Data Versioning": courses/ai-engineering-placement/16-mlops-production/03-data-versioning.md
+      - "Ci Cd For Ai": courses/ai-engineering-placement/16-mlops-production/04-ci-cd-for-ai.md
+      - "Model Serving": courses/ai-engineering-placement/16-mlops-production/05-model-serving.md
+      - "Drift Monitoring": courses/ai-engineering-placement/16-mlops-production/06-drift-monitoring.md
+      - "Cost Management": courses/ai-engineering-placement/16-mlops-production/07-cost-management.md
+      - "Incident Response": courses/ai-engineering-placement/16-mlops-production/08-incident-response.md
+    - "17 — AI Security & Guardrails":
+      - Overview: courses/ai-engineering-placement/17-ai-security-guardrails/index.md
+      - "Threat Landscape": courses/ai-engineering-placement/17-ai-security-guardrails/01-threat-landscape.md
+      - "Prompt Injection Defense": courses/ai-engineering-placement/17-ai-security-guardrails/02-prompt-injection-defense.md
+      - "Content Filtering": courses/ai-engineering-placement/17-ai-security-guardrails/03-content-filtering.md
+      - "Guardrails Frameworks": courses/ai-engineering-placement/17-ai-security-guardrails/04-guardrails-frameworks.md
+      - "Secret And Key Management": courses/ai-engineering-placement/17-ai-security-guardrails/05-secret-and-key-management.md
+      - "Compliance And Ethics": courses/ai-engineering-placement/17-ai-security-guardrails/06-compliance-and-ethics.md
+    - "18 — Multimodal AI & Voice":
+      - Overview: courses/ai-engineering-placement/18-multimodal-ai-voice/index.md
+      - "Computer Vision Basics": courses/ai-engineering-placement/18-multimodal-ai-voice/01-computer-vision-basics.md
+      - "Object Detection": courses/ai-engineering-placement/18-multimodal-ai-voice/02-object-detection.md
+      - "Image Segmentation": courses/ai-engineering-placement/18-multimodal-ai-voice/03-image-segmentation.md
+      - "Ocr And Document Ai": courses/ai-engineering-placement/18-multimodal-ai-voice/04-ocr-and-document-ai.md
+      - "Speech To Text": courses/ai-engineering-placement/18-multimodal-ai-voice/05-speech-to-text.md
+      - "Voice Agents": courses/ai-engineering-placement/18-multimodal-ai-voice/06-voice-agents.md
+    - "19 — Capstone Projects":
+      - Overview: courses/ai-engineering-placement/19-capstone-projects/index.md
+      - "House Price Prediction Api": courses/ai-engineering-placement/19-capstone-projects/01-house-price-prediction-api.md
+      - "Resume Ats Analyzer": courses/ai-engineering-placement/19-capstone-projects/02-resume-ats-analyzer.md
+      - "Enterprise Rag Platform": courses/ai-engineering-placement/19-capstone-projects/03-enterprise-rag-platform.md
+      - "Multi Agent Support System": courses/ai-engineering-placement/19-capstone-projects/04-multi-agent-support-system.md
+      - "Full Ai Saas Platform": courses/ai-engineering-placement/19-capstone-projects/05-full-ai-saas-platform.md
+    - "20 — Portfolio & Personal Branding":
+      - Overview: courses/ai-engineering-placement/20-portfolio-branding/index.md
+      - "Github Profile Optimization": courses/ai-engineering-placement/20-portfolio-branding/01-github-profile-optimization.md
+      - "Repository Structure": courses/ai-engineering-placement/20-portfolio-branding/02-repository-structure.md
+      - "Technical Blogging": courses/ai-engineering-placement/20-portfolio-branding/03-technical-blogging.md
+      - "Linkedin Optimization": courses/ai-engineering-placement/20-portfolio-branding/04-linkedin-optimization.md
+      - "Open Source Contribution": courses/ai-engineering-placement/20-portfolio-branding/05-open-source-contribution.md
+      - "Portfolio Website": courses/ai-engineering-placement/20-portfolio-branding/06-portfolio-website.md
+    - "21 — Interview Preparation":
+      - Overview: courses/ai-engineering-placement/21-interview-preparation/index.md
+      - "Dsa Patterns Mastery": courses/ai-engineering-placement/21-interview-preparation/01-dsa-patterns-mastery.md
+      - "Sql Problem Bank": courses/ai-engineering-placement/21-interview-preparation/02-sql-problem-bank.md
+      - "Backend Coding Interview": courses/ai-engineering-placement/21-interview-preparation/03-backend-coding-interview.md
+      - "Ml Foundations Interview": courses/ai-engineering-placement/21-interview-preparation/04-ml-foundations-interview.md
+      - "Deep Learning Interview": courses/ai-engineering-placement/21-interview-preparation/05-deep-learning-interview.md
+      - "Llm And Rag Interview": courses/ai-engineering-placement/21-interview-preparation/06-llm-and-rag-interview.md
+      - "Ai Agents Interview": courses/ai-engineering-placement/21-interview-preparation/07-ai-agents-interview.md
+      - "System Design Interview": courses/ai-engineering-placement/21-interview-preparation/08-system-design-interview.md
+      - "Behavioral Star Interview": courses/ai-engineering-placement/21-interview-preparation/09-behavioral-star-interview.md
+      - "Resume And Portfolio Review": courses/ai-engineering-placement/21-interview-preparation/10-resume-and-portfolio-review.md
+      - "Salary Negotiation": courses/ai-engineering-placement/21-interview-preparation/11-salary-negotiation.md
+      - "Mock Interview Simulations": courses/ai-engineering-placement/21-interview-preparation/12-mock-interview-simulations.md
   - "⚡ Modern AI Engineering":
     - Overview: courses/modern-ai-engineering/index.md
     - '01 - Intro to AI Engineering': courses/modern-ai-engineering/01-introduction-to-ai-engineering.md
@@ -469,79 +706,6 @@ nav:
       - SBI PO 2022: courses/government-pyqs/12-sbi-po-2022.md
       - RBI Grade B 2024: courses/government-pyqs/13-rbi-grade-b-2024.md
       - RBI Grade B 2023: courses/government-pyqs/14-rbi-grade-b-2023.md
-  - "⚡ Modern AI Engineering":
-    - Overview: courses/modern-ai-engineering/index.md
-    - '01 - Intro to AI Engineering': courses/modern-ai-engineering/01-introduction-to-ai-engineering.md
-    - '02 - Data Engineering for AI': courses/modern-ai-engineering/02-data-engineering-for-ai.md
-    - '03 - Understanding Foundation Models': courses/modern-ai-engineering/03-understanding-foundation-models.md
-    - '04 - Evaluation of AI Systems': courses/modern-ai-engineering/04-evaluation-of-ai-systems.md
-    - '05 - Prompt Engineering': courses/modern-ai-engineering/05-prompt-engineering.md
-    - '06 - Retrieval-Augmented Generation': courses/modern-ai-engineering/06-retrieval-augmented-generation.md
-    - '07 - Fine-Tuning': courses/modern-ai-engineering/07-fine-tuning.md
-    - '08 - AI Agents & Tool Use': courses/modern-ai-engineering/08-ai-agents-and-tool-use.md
-    - '09 - Safety, Alignment, Guardrails': courses/modern-ai-engineering/09-safety-alignment-guardrails.md
-    - '10 - Production AI Systems': courses/modern-ai-engineering/10-production-ai-systems.md
-    - '11 - MLOps for AI Engineering': courses/modern-ai-engineering/11-mlops-for-ai-engineering.md
-    - '12 - Capstone: AI Support Platform': courses/modern-ai-engineering/12-capstone-customer-support-platform.md
-  - "🤖 AI Agent Engineer":
-    - Overview: courses/ai-agent-engineer/00-index.md
-    - Phase 0 - Backend Hardening: courses/ai-agent-engineer/01-phase0-backend-hardening.md
-    - Phase 1 - Python FastAPI Async: courses/ai-agent-engineer/02-phase1-python-fastapi-async.md
-    - Phase 2 - LLM RAG Theory: courses/ai-agent-engineer/03-phase2-llm-rag-theory.md
-    - Phase 3 - Agents LangGraph MCP: courses/ai-agent-engineer/04-phase3-agents-langgraph-mcp.md
-    - Phase 4 - Production Hardening: courses/ai-agent-engineer/05-phase4-production-hardening.md
-    - Phase 5 - Portfolio & Positioning: courses/ai-agent-engineer/06-phase5-portfolio-positioning.md
-    - Day-by-Day Plan: courses/ai-agent-engineer/07-day-by-day-plan.md
-    - Job Search Playbook: courses/ai-agent-engineer/08-job-search-playbook.md
-    - '09 - AI System Design': courses/ai-agent-engineer/09-ai-system-design.md
-    - '10 - Prompt Engineering Mastery': courses/ai-agent-engineer/10-prompt-engineering-mastery.md
-    - '11 - AI Testing & Evaluation': courses/ai-agent-engineer/11-ai-testing-evaluation.md
-    - '12 - AI Observability & Debugging': courses/ai-agent-engineer/12-ai-observability-debugging.md
-    - '13 - Advanced Vector Search': courses/ai-agent-engineer/13-advanced-vector-search.md
-  - "🤖 AI Engineering":
-    - Overview: ai-engineering-from-scratch/README.md
-    - About: references/ai-engineering/about.md
-    - Lesson Catalog: references/ai-engineering/catalog.md
-    - Roadmap: references/ai-engineering/roadmap.md
-    - Glossary: references/ai-engineering/glossary.md
-    - 📊 Big Data: courses/big-data/index.md
-    - 🧠 Applied AI: courses/applied-ai/index.md
-    - 🎯 GATE CS:
-      - Overview: courses/gate-cs-preparation/index.md
-      - General Aptitude: courses/gate-cs-preparation/01-general-aptitude.md
-      - Discrete Maths & TOC: courses/gate-cs-preparation/02-theory-of-computation.md
-      - Compiler Design: courses/gate-cs-preparation/03-compiler-design.md
-      - Digital Logic: courses/gate-cs-preparation/04-digital-logic.md
-      - Engineering Maths: courses/gate-cs-preparation/06-engineering-mathematics.md
-      - OS: courses/gate-cs-preparation/07-operating-systems.md
-      - DBMS: courses/gate-cs-preparation/08-database-management-systems.md
-      - Computer Networks: courses/gate-cs-preparation/09-computer-networks.md
-      - DS & Algorithms: courses/gate-cs-preparation/10-data-structures-algorithms.md
-      - Computer Architecture: courses/gate-cs-preparation/11-computer-architecture.md
-      - GATE 2025 Solved: courses/gate-cs-preparation/23-gate-2025-solved.md
-      - GATE 2024 Solved: courses/gate-cs-preparation/24-gate-2024-solved.md
-      - GATE 2023 Solved: courses/gate-cs-preparation/25-gate-2023-solved.md
-      - GATE 2022 Solved: courses/gate-cs-preparation/26-gate-2022-solved.md
-      - GATE 2021 Solved: courses/gate-cs-preparation/27-gate-2021-solved.md
-      - GATE 2020 Solved: courses/gate-cs-preparation/28-gate-2020-solved.md
-      - GATE 2019 Solved: courses/gate-cs-preparation/29-gate-2019-solved.md
-    - 💼 Placement: courses/placement-preparation/index.md
-
-
-    - 'Phase 0 - Setup And Tooling':
-        - Overview: ai-engineering-from-scratch/phases/00-setup-and-tooling/README.md
-        - '01 - Dev Environment': ai-engineering-from-scratch/phases/00-setup-and-tooling/01-dev-environment/docs/en.md
-        - '02 - Git And Collaboration': ai-engineering-from-scratch/phases/00-setup-and-tooling/02-git-and-collaboration/docs/en.md
-        - '03 - Gpu Setup And Cloud': ai-engineering-from-scratch/phases/00-setup-and-tooling/03-gpu-setup-and-cloud/docs/en.md
-        - '04 - Apis And Keys': ai-engineering-from-scratch/phases/00-setup-and-tooling/04-apis-and-keys/docs/en.md
-        - '05 - Jupyter Notebooks': ai-engineering-from-scratch/phases/00-setup-and-tooling/05-jupyter-notebooks/docs/en.md
-        - '06 - Python Environments': ai-engineering-from-scratch/phases/00-setup-and-tooling/06-python-environments/docs/en.md
-        - '07 - Docker For Ai': ai-engineering-from-scratch/phases/00-setup-and-tooling/07-docker-for-ai/docs/en.md
-        - '08 - Editor Setup': ai-engineering-from-scratch/phases/00-setup-and-tooling/08-editor-setup/docs/en.md
-        - '09 - Data Management': ai-engineering-from-scratch/phases/00-setup-and-tooling/09-data-management/docs/en.md
-        - '10 - Terminal And Shell': ai-engineering-from-scratch/phases/00-setup-and-tooling/10-terminal-and-shell/docs/en.md
-        - '11 - Linux For Ai': ai-engineering-from-scratch/phases/00-setup-and-tooling/11-linux-for-ai/docs/en.md
-        - '12 - Debugging And Profiling': ai-engineering-from-scratch/phases/00-setup-and-tooling/12-debugging-and-profiling/docs/en.md
 
     - 'Phase 1 - Math Foundations':
         - Overview: ai-engineering-from-scratch/phases/01-math-foundations/README.md
@@ -1751,222 +1915,6 @@ nav:
     - "Ch 8 — Multi-Agent Loops": courses/loop-engineering/ch08-multi-agent-loops.md
     - "Ch 9 — Loop Tooling": courses/loop-engineering/ch09-loop-tooling.md
     - "Ch 10 — Capstone: Build a Coding Agent": courses/loop-engineering/ch10-capstone.md
-  - "🤖 AI-Engineering Placement":
-      - 'Overview': 'courses/ai-engineering-placement/index.md'
-      - '01 Python Programming':
-        - '01 Python Basics': 'courses/ai-engineering-placement/01-python-programming/01-python-basics.md'
-        - '02 Control Flow': 'courses/ai-engineering-placement/01-python-programming/02-control-flow.md'
-        - '03 Strings & Formatting': 'courses/ai-engineering-placement/01-python-programming/03-strings-and-formatting.md'
-        - '04 Collections': 'courses/ai-engineering-placement/01-python-programming/04-collections.md'
-        - '05 Functions': 'courses/ai-engineering-placement/01-python-programming/05-functions.md'
-        - '06 Modules & Packages': 'courses/ai-engineering-placement/01-python-programming/06-modules-and-packages.md'
-        - '07 File I/O & Exceptions': 'courses/ai-engineering-placement/01-python-programming/07-file-io-and-exceptions.md'
-        - '08 OOP in Python': 'courses/ai-engineering-placement/01-python-programming/08-oop-in-python.md'
-        - '09 Decorators & Generators': 'courses/ai-engineering-placement/01-python-programming/09-decorators-and-generators.md'
-        - '10 Concurrency': 'courses/ai-engineering-placement/01-python-programming/10-concurrency.md'
-        - '11 NumPy Fundamentals': 'courses/ai-engineering-placement/01-python-programming/11-numpy-fundamentals.md'
-        - '12 Pandas Basics': 'courses/ai-engineering-placement/01-python-programming/12-pandas-basics.md'
-        - '13 Pandas Advanced': 'courses/ai-engineering-placement/01-python-programming/13-pandas-advanced.md'
-        - '14 Data Visualization': 'courses/ai-engineering-placement/01-python-programming/14-data-visualization.md'
-      - '02 SQL and Databases':
-        - '01 SQL Basics': 'courses/ai-engineering-placement/02-sql-and-databases/01-sql-basics.md'
-        - '02 Aggregate Functions': 'courses/ai-engineering-placement/02-sql-and-databases/02-aggregate-functions.md'
-        - '03 Joins': 'courses/ai-engineering-placement/02-sql-and-databases/03-joins.md'
-        - '04 Subqueries & CTEs': 'courses/ai-engineering-placement/02-sql-and-databases/04-subqueries-and-ctes.md'
-        - '05 Window Functions': 'courses/ai-engineering-placement/02-sql-and-databases/05-window-functions.md'
-        - '06 Set Operations': 'courses/ai-engineering-placement/02-sql-and-databases/06-set-operations.md'
-        - '07 Indexes & Performance': 'courses/ai-engineering-placement/02-sql-and-databases/07-indexes-and-performance.md'
-        - '08 Database Design': 'courses/ai-engineering-placement/02-sql-and-databases/08-database-design.md'
-        - '09 Transactions & ACID': 'courses/ai-engineering-placement/02-sql-and-databases/09-transactions-and-acid.md'
-        - '10 PostgreSQL Advanced': 'courses/ai-engineering-placement/02-sql-and-databases/10-postgresql-advanced.md'
-      - '03 Data Structures & Algorithms':
-        - '01 Time & Space Complexity': 'courses/ai-engineering-placement/03-data-structures-algorithms/01-time-and-space-complexity.md'
-        - '02 Arrays': 'courses/ai-engineering-placement/03-data-structures-algorithms/02-arrays.md'
-        - '03 Strings': 'courses/ai-engineering-placement/03-data-structures-algorithms/03-strings.md'
-        - '04 Sliding Window': 'courses/ai-engineering-placement/03-data-structures-algorithms/04-sliding-window.md'
-        - '05 Two Pointers': 'courses/ai-engineering-placement/03-data-structures-algorithms/05-two-pointers.md'
-        - '06 Hash Maps & Sets': 'courses/ai-engineering-placement/03-data-structures-algorithms/06-hash-maps-and-sets.md'
-        - '07 Linked Lists': 'courses/ai-engineering-placement/03-data-structures-algorithms/07-linked-lists.md'
-        - '08 Stacks & Queues': 'courses/ai-engineering-placement/03-data-structures-algorithms/08-stacks-and-queues.md'
-        - '09 Binary Trees': 'courses/ai-engineering-placement/03-data-structures-algorithms/09-binary-trees.md'
-        - '10 Binary Search Trees': 'courses/ai-engineering-placement/03-data-structures-algorithms/10-binary-search-trees.md'
-        - '11 Heaps & Tries': 'courses/ai-engineering-placement/03-data-structures-algorithms/11-heaps-and-tries.md'
-        - '12 Graphs — BFS & DFS': 'courses/ai-engineering-placement/03-data-structures-algorithms/12-graphs-bfs-dfs.md'
-        - '13 Graphs — Shortest Path': 'courses/ai-engineering-placement/03-data-structures-algorithms/13-graphs-shortest-path.md'
-        - '14 Graphs — Topological Sort': 'courses/ai-engineering-placement/03-data-structures-algorithms/14-graphs-topological-sort.md'
-        - '15 Dynamic Programming — 1D': 'courses/ai-engineering-placement/03-data-structures-algorithms/15-dynamic-programming-1d.md'
-        - '16 Dynamic Programming — 2D': 'courses/ai-engineering-placement/03-data-structures-algorithms/16-dynamic-programming-2d.md'
-        - '17 Backtracking': 'courses/ai-engineering-placement/03-data-structures-algorithms/17-backtracking.md'
-        - '18 Bit Manipulation & Math': 'courses/ai-engineering-placement/03-data-structures-algorithms/18-bit-manipulation-and-math.md'
-      - '04 Git Linux CLI':
-        - '01 Git Basics': 'courses/ai-engineering-placement/04-git-linux-cli/01-git-basics.md'
-        - '02 Git Branching': 'courses/ai-engineering-placement/04-git-linux-cli/02-git-branching.md'
-        - '03 Git Workflow': 'courses/ai-engineering-placement/04-git-linux-cli/03-git-workflow.md'
-        - '04 Linux Commands': 'courses/ai-engineering-placement/04-git-linux-cli/04-linux-commands.md'
-        - '05 Bash Scripting': 'courses/ai-engineering-placement/04-git-linux-cli/05-bash-scripting.md'
-        - '06 Networking & Security': 'courses/ai-engineering-placement/04-git-linux-cli/06-networking-and-security.md'
-      - '05 FastAPI Backend':
-        - '01 REST API Fundamentals': 'courses/ai-engineering-placement/05-fastapi-backend/01-rest-api-fundamentals.md'
-        - '02 FastAPI Basics': 'courses/ai-engineering-placement/05-fastapi-backend/02-fastapi-basics.md'
-        - '03 Pydantic & Validation': 'courses/ai-engineering-placement/05-fastapi-backend/03-pydantic-and-validation.md'
-        - '04 Dependency Injection': 'courses/ai-engineering-placement/05-fastapi-backend/04-dependency-injection.md'
-        - '05 Authentication & AuthZ': 'courses/ai-engineering-placement/05-fastapi-backend/05-authentication-and-authz.md'
-        - '06 Database with SQLAlchemy': 'courses/ai-engineering-placement/05-fastapi-backend/06-database-with-sqlalchemy.md'
-        - '07 Async Patterns': 'courses/ai-engineering-placement/05-fastapi-backend/07-async-patterns.md'
-        - '08 Testing FastAPI': 'courses/ai-engineering-placement/05-fastapi-backend/08-testing-fastapi.md'
-        - '09 Error Handling & Logging': 'courses/ai-engineering-placement/05-fastapi-backend/09-error-handling-and-logging.md'
-        - '10 API Deployment': 'courses/ai-engineering-placement/05-fastapi-backend/10-api-deployment.md'
-      - '06 Docker Kubernetes Cloud':
-        - '01 Docker Basics': 'courses/ai-engineering-placement/06-docker-kubernetes-cloud/01-docker-basics.md'
-        - '02 Docker Compose': 'courses/ai-engineering-placement/06-docker-kubernetes-cloud/02-docker-compose.md'
-        - '03 Docker Best Practices': 'courses/ai-engineering-placement/06-docker-kubernetes-cloud/03-docker-best-practices.md'
-        - '04 Kubernetes Basics': 'courses/ai-engineering-placement/06-docker-kubernetes-cloud/04-kubernetes-basics.md'
-        - '05 Kubernetes Config': 'courses/ai-engineering-placement/06-docker-kubernetes-cloud/05-kubernetes-config.md'
-        - '06 Kubernetes Scaling': 'courses/ai-engineering-placement/06-docker-kubernetes-cloud/06-kubernetes-scaling.md'
-        - '07 AWS Fundamentals': 'courses/ai-engineering-placement/06-docker-kubernetes-cloud/07-aws-fundamentals.md'
-        - '08 AWS Containers': 'courses/ai-engineering-placement/06-docker-kubernetes-cloud/08-aws-containers.md'
-        - '09 Azure & GCP Basics': 'courses/ai-engineering-placement/06-docker-kubernetes-cloud/09-azure-and-gcp-basics.md'
-        - '10 CI/CD Pipelines': 'courses/ai-engineering-placement/06-docker-kubernetes-cloud/10-ci-cd-pipelines.md'
-      - '07 System Design':
-        - '01 Scalability Fundamentals': 'courses/ai-engineering-placement/07-system-design/01-scalability-fundamentals.md'
-        - '02 Microservices Architecture': 'courses/ai-engineering-placement/07-system-design/02-microservices-architecture.md'
-        - '03 Message Queues': 'courses/ai-engineering-placement/07-system-design/03-message-queues.md'
-        - '04 Caching Strategies': 'courses/ai-engineering-placement/07-system-design/04-caching-strategies.md'
-        - '05 Database Scaling': 'courses/ai-engineering-placement/07-system-design/05-database-scaling.md'
-        - '06 CAP & Consistency': 'courses/ai-engineering-placement/07-system-design/06-cap-and-consistency.md'
-        - '07 API Design Patterns': 'courses/ai-engineering-placement/07-system-design/07-api-design-patterns.md'
-        - '08 Rate Limiting & Idempotency': 'courses/ai-engineering-placement/07-system-design/08-rate-limiting-and-idempotency.md'
-        - '09 Monitoring & Observability': 'courses/ai-engineering-placement/07-system-design/09-monitoring-and-observability.md'
-        - '10 Design URL Shortener': 'courses/ai-engineering-placement/07-system-design/10-design-url-shortener.md'
-        - '11 Design ChatGPT': 'courses/ai-engineering-placement/07-system-design/11-design-chatgpt.md'
-        - '12 Design WhatsApp': 'courses/ai-engineering-placement/07-system-design/12-design-whatsapp.md'
-      - '08 Machine Learning':
-        - '01 ML Fundamentals': 'courses/ai-engineering-placement/08-machine-learning/01-ml-fundamentals.md'
-        - '02 Linear Regression': 'courses/ai-engineering-placement/08-machine-learning/02-linear-regression.md'
-        - '03 Logistic Regression': 'courses/ai-engineering-placement/08-machine-learning/03-logistic-regression.md'
-        - '04 Decision Trees & RF': 'courses/ai-engineering-placement/08-machine-learning/04-decision-trees-and-rf.md'
-        - '05 SVM & Kernel Methods': 'courses/ai-engineering-placement/08-machine-learning/05-svm-and-kernel-methods.md'
-        - '06 Ensemble Methods': 'courses/ai-engineering-placement/08-machine-learning/06-ensemble-methods.md'
-        - '07 Unsupervised Learning': 'courses/ai-engineering-placement/08-machine-learning/07-unsupervised-learning.md'
-        - '08 Dimensionality Reduction': 'courses/ai-engineering-placement/08-machine-learning/08-dimensionality-reduction.md'
-        - '09 Model Evaluation': 'courses/ai-engineering-placement/08-machine-learning/09-model-evaluation.md'
-        - '10 Hyperparameter Tuning': 'courses/ai-engineering-placement/08-machine-learning/10-hyperparameter-tuning.md'
-      - '09 Deep Learning PyTorch':
-        - '01 Neural Networks Basics': 'courses/ai-engineering-placement/09-deep-learning-pytorch/01-neural-networks-basics.md'
-        - '02 PyTorch Tensors': 'courses/ai-engineering-placement/09-deep-learning-pytorch/02-pytorch-tensors.md'
-        - '03 PyTorch NN Module': 'courses/ai-engineering-placement/09-deep-learning-pytorch/03-pytorch-nn-module.md'
-        - '04 CNN Fundamentals': 'courses/ai-engineering-placement/09-deep-learning-pytorch/04-cnn-fundamentals.md'
-        - '05 Advanced CNN': 'courses/ai-engineering-placement/09-deep-learning-pytorch/05-advanced-cnn.md'
-        - '06 Transfer Learning': 'courses/ai-engineering-placement/09-deep-learning-pytorch/06-transfer-learning.md'
-        - '07 RNN & LSTM': 'courses/ai-engineering-placement/09-deep-learning-pytorch/07-rnn-and-lstm.md'
-        - '08 Training Pipelines': 'courses/ai-engineering-placement/09-deep-learning-pytorch/08-training-pipelines.md'
-        - '09 Model Deployment': 'courses/ai-engineering-placement/09-deep-learning-pytorch/09-model-deployment.md'
-        - '10 Deployment Best Practices': 'courses/ai-engineering-placement/09-deep-learning-pytorch/10-deployment-best-practices.md'
-      - '10 NLP Transformers':
-        - '01 Text Preprocessing': 'courses/ai-engineering-placement/10-nlp-transformers/01-text-preprocessing.md'
-        - '02 Word Embeddings': 'courses/ai-engineering-placement/10-nlp-transformers/02-word-embeddings.md'
-        - '03 Sequence Models': 'courses/ai-engineering-placement/10-nlp-transformers/03-sequence-models.md'
-        - '04 Attention Mechanism': 'courses/ai-engineering-placement/10-nlp-transformers/04-attention-mechanism.md'
-        - '05 Transformer Architecture': 'courses/ai-engineering-placement/10-nlp-transformers/05-transformer-architecture.md'
-        - '06 BERT & Fine-Tuning': 'courses/ai-engineering-placement/10-nlp-transformers/06-bert-and-fine-tuning.md'
-        - '07 Hugging Face Ecosystem': 'courses/ai-engineering-placement/10-nlp-transformers/07-hugging-face-ecosystem.md'
-        - '08 NLP Applications': 'courses/ai-engineering-placement/10-nlp-transformers/08-nlp-applications.md'
-      - '11 LLMs & Prompt Engineering':
-        - '01 Foundation Models Overview': 'courses/ai-engineering-placement/11-llms-prompt-engineering/01-foundation-models-overview.md'
-        - '02 LLM APIs': 'courses/ai-engineering-placement/11-llms-prompt-engineering/02-llm-apis.md'
-        - '03 Zero-Shot & Few-Shot': 'courses/ai-engineering-placement/11-llms-prompt-engineering/03-zero-shot-and-few-shot.md'
-        - '04 Chain of Thought': 'courses/ai-engineering-placement/11-llms-prompt-engineering/04-chain-of-thought.md'
-        - '05 Structured Output': 'courses/ai-engineering-placement/11-llms-prompt-engineering/05-structured-output.md'
-        - '06 Context Management': 'courses/ai-engineering-placement/11-llms-prompt-engineering/06-context-management.md'
-        - '07 LLM Evaluation': 'courses/ai-engineering-placement/11-llms-prompt-engineering/07-llm-evaluation.md'
-        - '08 Cost & Latency Optimization': 'courses/ai-engineering-placement/11-llms-prompt-engineering/08-cost-and-latency-optimization.md'
-      - '12 RAG & Vector Databases':
-        - '01 Introduction to RAG': 'courses/ai-engineering-placement/12-rag-vector-databases/01-introduction-to-rag.md'
-        - '02 Embedding Models': 'courses/ai-engineering-placement/12-rag-vector-databases/02-embedding-models.md'
-        - '03 Vector Database Basics': 'courses/ai-engineering-placement/12-rag-vector-databases/03-vector-database-basics.md'
-        - '04 Chunking Strategies': 'courses/ai-engineering-placement/12-rag-vector-databases/04-chunking-strategies.md'
-        - '05 Document Retrieval': 'courses/ai-engineering-placement/12-rag-vector-databases/05-document-retrieval.md'
-        - '06 RAG Pipeline Design': 'courses/ai-engineering-placement/12-rag-vector-databases/06-rag-pipeline-design.md'
-        - '07 Advanced RAG Techniques': 'courses/ai-engineering-placement/12-rag-vector-databases/07-advanced-rag-techniques.md'
-        - '08 RAG Evaluation': 'courses/ai-engineering-placement/12-rag-vector-databases/08-rag-evaluation.md'
-        - '09 Production RAG Systems': 'courses/ai-engineering-placement/12-rag-vector-databases/09-production-rag-systems.md'
-        - '10 Hybrid Search & Reranking': 'courses/ai-engineering-placement/12-rag-vector-databases/10-hybrid-search-and-reranking.md'
-      - '13 AI Agents & LangGraph':
-        - '01 Introduction to AI Agents': 'courses/ai-engineering-placement/13-ai-agents-langgraph/01-introduction-to-ai-agents.md'
-        - '02 Agent Architectures': 'courses/ai-engineering-placement/13-ai-agents-langgraph/02-agent-architectures.md'
-        - '03 LangGraph Basics': 'courses/ai-engineering-placement/13-ai-agents-langgraph/03-langgraph-basics.md'
-        - '04 Tool Use & Function Calling': 'courses/ai-engineering-placement/13-ai-agents-langgraph/04-tool-use-and-function-calling.md'
-        - '05 Memory & State': 'courses/ai-engineering-placement/13-ai-agents-langgraph/05-memory-and-state.md'
-        - '06 Multi-Agent Systems': 'courses/ai-engineering-placement/13-ai-agents-langgraph/06-multi-agent-systems.md'
-        - '07 Human in the Loop': 'courses/ai-engineering-placement/13-ai-agents-langgraph/07-human-in-the-loop.md'
-        - '08 Agent Observability': 'courses/ai-engineering-placement/13-ai-agents-langgraph/08-agent-observability.md'
-        - '09 Production Agents': 'courses/ai-engineering-placement/13-ai-agents-langgraph/09-production-agents.md'
-        - '10 Advanced Agent Patterns': 'courses/ai-engineering-placement/13-ai-agents-langgraph/10-advanced-agent-patterns.md'
-      - '14 Fine-Tuning & PEFT':
-        - '01 When to Fine-Tune': 'courses/ai-engineering-placement/14-fine-tuning-peft/01-when-to-fine-tune.md'
-        - '02 Full Fine-Tuning': 'courses/ai-engineering-placement/14-fine-tuning-peft/02-full-fine-tuning.md'
-        - '03 LoRA Theory': 'courses/ai-engineering-placement/14-fine-tuning-peft/03-lora-theory.md'
-        - '04 LoRA Implementation': 'courses/ai-engineering-placement/14-fine-tuning-peft/04-lora-implementation.md'
-        - '05 QLoRA & Quantization': 'courses/ai-engineering-placement/14-fine-tuning-peft/05-qlora-and-quantization.md'
-        - '06 Instruction Tuning': 'courses/ai-engineering-placement/14-fine-tuning-peft/06-instruction-tuning.md'
-        - '07 DPO & Preference Tuning': 'courses/ai-engineering-placement/14-fine-tuning-peft/07-dpo-and-preference-tuning.md'
-        - '08 Evaluating Fine-Tuned Models': 'courses/ai-engineering-placement/14-fine-tuning-peft/08-evaluating-fine-tuned-models.md'
-      - '15 AI Evaluation & Observability':
-        - '01 Evaluation Metrics': 'courses/ai-engineering-placement/15-ai-evaluation-observability/01-evaluation-metrics.md'
-        - '02 LLM as Judge': 'courses/ai-engineering-placement/15-ai-evaluation-observability/02-llm-as-judge.md'
-        - '03 Evaluation Datasets': 'courses/ai-engineering-placement/15-ai-evaluation-observability/03-evaluation-datasets.md'
-        - '04 Observability Tools': 'courses/ai-engineering-placement/15-ai-evaluation-observability/04-observability-tools.md'
-        - '05 Tracing & Monitoring': 'courses/ai-engineering-placement/15-ai-evaluation-observability/05-tracing-and-monitoring.md'
-        - '06 Alerting & Incident Response': 'courses/ai-engineering-placement/15-ai-evaluation-observability/06-alerting-and-incident-response.md'
-      - '16 MLOps Production':
-        - '01 Experiment Tracking': 'courses/ai-engineering-placement/16-mlops-production/01-experiment-tracking.md'
-        - '02 Prompt Versioning': 'courses/ai-engineering-placement/16-mlops-production/02-prompt-versioning.md'
-        - '03 Data Versioning': 'courses/ai-engineering-placement/16-mlops-production/03-data-versioning.md'
-        - '04 CI/CD for AI': 'courses/ai-engineering-placement/16-mlops-production/04-ci-cd-for-ai.md'
-        - '05 Model Serving': 'courses/ai-engineering-placement/16-mlops-production/05-model-serving.md'
-        - '06 Drift Monitoring': 'courses/ai-engineering-placement/16-mlops-production/06-drift-monitoring.md'
-        - '07 Cost Management': 'courses/ai-engineering-placement/16-mlops-production/07-cost-management.md'
-        - '08 Incident Response': 'courses/ai-engineering-placement/16-mlops-production/08-incident-response.md'
-      - '17 AI Security Guardrails':
-        - '01 Threat Landscape': 'courses/ai-engineering-placement/17-ai-security-guardrails/01-threat-landscape.md'
-        - '02 Prompt Injection Defense': 'courses/ai-engineering-placement/17-ai-security-guardrails/02-prompt-injection-defense.md'
-        - '03 Content Filtering': 'courses/ai-engineering-placement/17-ai-security-guardrails/03-content-filtering.md'
-        - '04 Guardrails Frameworks': 'courses/ai-engineering-placement/17-ai-security-guardrails/04-guardrails-frameworks.md'
-        - '05 Secret & Key Management': 'courses/ai-engineering-placement/17-ai-security-guardrails/05-secret-and-key-management.md'
-        - '06 Compliance & Ethics': 'courses/ai-engineering-placement/17-ai-security-guardrails/06-compliance-and-ethics.md'
-      - '18 Multimodal AI & Voice':
-        - '01 Computer Vision Basics': 'courses/ai-engineering-placement/18-multimodal-ai-voice/01-computer-vision-basics.md'
-        - '02 Object Detection': 'courses/ai-engineering-placement/18-multimodal-ai-voice/02-object-detection.md'
-        - '03 Image Segmentation': 'courses/ai-engineering-placement/18-multimodal-ai-voice/03-image-segmentation.md'
-        - '04 OCR & Document AI': 'courses/ai-engineering-placement/18-multimodal-ai-voice/04-ocr-and-document-ai.md'
-        - '05 Speech-to-Text': 'courses/ai-engineering-placement/18-multimodal-ai-voice/05-speech-to-text.md'
-        - '06 Voice Agents': 'courses/ai-engineering-placement/18-multimodal-ai-voice/06-voice-agents.md'
-      - '19 Capstone Projects':
-        - '01 House Price Prediction API': 'courses/ai-engineering-placement/19-capstone-projects/01-house-price-prediction-api.md'
-        - '02 Resume ATS Analyzer': 'courses/ai-engineering-placement/19-capstone-projects/02-resume-ats-analyzer.md'
-        - '03 Enterprise RAG Platform': 'courses/ai-engineering-placement/19-capstone-projects/03-enterprise-rag-platform.md'
-        - '04 Multi-Agent Support System': 'courses/ai-engineering-placement/19-capstone-projects/04-multi-agent-support-system.md'
-        - '05 Full AI SaaS Platform': 'courses/ai-engineering-placement/19-capstone-projects/05-full-ai-saas-platform.md'
-      - '20 Portfolio & Branding':
-        - '01 GitHub Profile Optimization': 'courses/ai-engineering-placement/20-portfolio-branding/01-github-profile-optimization.md'
-        - '02 Repository Structure': 'courses/ai-engineering-placement/20-portfolio-branding/02-repository-structure.md'
-        - '03 Technical Blogging': 'courses/ai-engineering-placement/20-portfolio-branding/03-technical-blogging.md'
-        - '04 LinkedIn Optimization': 'courses/ai-engineering-placement/20-portfolio-branding/04-linkedin-optimization.md'
-        - '05 Open Source Contribution': 'courses/ai-engineering-placement/20-portfolio-branding/05-open-source-contribution.md'
-        - '06 Portfolio Website': 'courses/ai-engineering-placement/20-portfolio-branding/06-portfolio-website.md'
-      - '21 Interview Preparation':
-        - '01 DSA Patterns Mastery': 'courses/ai-engineering-placement/21-interview-preparation/01-dsa-patterns-mastery.md'
-        - '02 SQL Problem Bank': 'courses/ai-engineering-placement/21-interview-preparation/02-sql-problem-bank.md'
-        - '03 Backend Coding Interview': 'courses/ai-engineering-placement/21-interview-preparation/03-backend-coding-interview.md'
-        - '04 ML Foundations Interview': 'courses/ai-engineering-placement/21-interview-preparation/04-ml-foundations-interview.md'
-        - '05 Deep Learning Interview': 'courses/ai-engineering-placement/21-interview-preparation/05-deep-learning-interview.md'
-        - '06 LLM & RAG Interview': 'courses/ai-engineering-placement/21-interview-preparation/06-llm-and-rag-interview.md'
-        - '07 AI Agents Interview': 'courses/ai-engineering-placement/21-interview-preparation/07-ai-agents-interview.md'
-        - '08 System Design Interview': 'courses/ai-engineering-placement/21-interview-preparation/08-system-design-interview.md'
-        - '09 Behavioral STAR Interview': 'courses/ai-engineering-placement/21-interview-preparation/09-behavioral-star-interview.md'
-        - '10 Resume & Portfolio Review': 'courses/ai-engineering-placement/21-interview-preparation/10-resume-and-portfolio-review.md'
-        - '11 Salary Negotiation': 'courses/ai-engineering-placement/21-interview-preparation/11-salary-negotiation.md'
-        - '12 Mock Interview Simulations': 'courses/ai-engineering-placement/21-interview-preparation/12-mock-interview-simulations.md'
   - "🕉️ Vigyan Bhairav Tantra (Osho)":
     - Overview: courses/vigyan-bhairav-tantra/index.md
     - "01 - परिचय: ओशो का दृष्टिकोण": courses/vigyan-bhairav-tantra/01-parichay.md

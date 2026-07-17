@@ -190,7 +190,7 @@ def build_best(n):
 
 ## 3.3 Pattern Matching
 
-**Naive pattern matching**: O(n×m) time.
+**Naive pattern matching**: O(n—m) time.
 
 ```python
 def naive_search(text, pattern):
@@ -325,7 +325,7 @@ print(z_search("AABAACAADAABAAABAA", "AABA"))  # [0, 9, 13]
 
 | Algorithm | Preprocessing | Search | Total | Space |
 |-----------|--------------|--------|-------|-------|
-| Naive | None | O(n×m) | O(n×m) | O(1) |
+| Naive | None | O(n—m) | O(n—m) | O(1) |
 | KMP | O(m) | O(n) | O(n+m) | O(m) |
 | Rabin-Karp | O(m) | O(n) avg | O(n+m) avg | O(1) |
 | Z-algorithm | O(n+m) | O(n) | O(n+m) | O(n+m) |
@@ -615,7 +615,7 @@ print(num_distinct("rabbbit", "rabbit"))  # 3
 
 ```python
 def longest_common_subsequence(text1, text2):
-    """LCS — DP O(m×n) time and space"""
+    """LCS — DP O(m—n) time and space"""
     m, n = len(text1), len(text2)
     dp = [[0] * (n + 1) for _ in range(m + 1)]
 
@@ -733,7 +733,7 @@ function lcs(text1: string, text2: string): number {
 - Manacher's algorithm finds the longest palindromic substring in O(n) time using symmetry properties
 - Palindrome problems can be solved via expand-around-center (O(n²) time, O(1) space) or Manacher (O(n) time, O(n) space)
 - Anagram checking uses character frequency counting with array of size 26 (ASCII) or Counter (Unicode)
-- Subsequence problems (LCS, edit distance) are classic DP with O(m×n) time and space
+- Subsequence problems (LCS, edit distance) are classic DP with O(m—n) time and space
 - Space-optimized LCS uses two rows instead of full 2D DP table, reducing space to O(min(m,n))
 - String hashing enables efficient equality checks and is fundamental to many advanced algorithms (rolling hash, suffix arrays)
 
@@ -742,7 +742,7 @@ function lcs(text1: string, text2: string): number {
 | Scenario | Do This | Avoid This |
 |----------|---------|------------|
 | Building strings | `"".join(list_of_parts)` | `result += part` in loops |
-| Pattern matching large text | KMP or Rabin-Karp | Naive O(n×m) for large data |
+| Pattern matching large text | KMP or Rabin-Karp | Naive O(n—m) for large data |
 | Anagram detection | Character count array of size 26 | Sorting both strings |
 | Longest palindrome | Manacher's algorithm for O(n) | O(n³) brute force |
 | Subsequence check | Two-pointer iteration | Generating all subsequences |
@@ -834,7 +834,7 @@ function lcs(text1: string, text2: string): number {
     </ul>
     <p><strong>Limitations</strong>:</p>
     <ul>
-      <li>Worst-case O(n×m) if many hash collisions</li>
+      <li>Worst-case O(n—m) if many hash collisions</li>
       <li>Requires good hash function and large modulus to avoid collisions</li>
     </ul>
   </div>
@@ -854,7 +854,7 @@ function lcs(text1: string, text2: string): number {
 dp[i][j] = 0                              if i=0 or j=0
 dp[i][j] = dp[i-1][j-1] + 1              if s1[i-1] == s2[j-1]
 dp[i][j] = max(dp[i-1][j], dp[i][j-1])   otherwise</code></pre>
-    <p><strong>Time</strong>: O(m×n). <strong>Space</strong>: O(m×n) or O(min(m,n)) with optimization.</p>
+    <p><strong>Time</strong>: O(m—n). <strong>Space</strong>: O(m—n) or O(min(m,n)) with optimization.</p>
     <p><strong>Applications</strong>:</p>
     <ul>
       <li>Diff tools (git diff)</li>
@@ -1118,7 +1118,7 @@ print(is_interleave("aab", "axy", "abaaxy"))  # False</code></pre>
 
 **Q1**: What is the time complexity of the KMP algorithm for pattern matching?
 
-a) O(n×m)
+a) O(n—m)
 b) O(n+m)
 c) O(n²)
 d) O(m²)
@@ -1138,10 +1138,10 @@ d) n/2
 
 a) O(1)
 b) O(n)
-c) O(m×n)
+c) O(m—n)
 d) O(n+m)
 
-<details class="tp-qa-card" data-qid="dsa03-quiz3"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: c) O(m×n)</strong></p><p>The standard 2D DP table uses O(m×n) space, though it can be optimized to O(min(m,n)).</p></div></details>
+<details class="tp-qa-card" data-qid="dsa03-quiz3"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: c) O(m—n)</strong></p><p>The standard 2D DP table uses O(m—n) space, though it can be optimized to O(min(m,n)).</p></div></details>
 
 **Q4**: Which data structure gives O(1) character frequency comparison for anagram detection?
 
@@ -1171,7 +1171,7 @@ d) UTF-16
 
 **Hard** — Write a function to find all words that can be typed using only one row of a QWERTY keyboard (e.g., "alaska", "dad" are valid; "hello" is not).
 
-**Hard** — Implement the Boggle word search — given an m×n board of letters, find all words from a dictionary that can be formed by adjacent letters (using DFS + Trie).
+**Hard** — Implement the Boggle word search — given an m—n board of letters, find all words from a dictionary that can be formed by adjacent letters (using DFS + Trie).
 
 ---
 

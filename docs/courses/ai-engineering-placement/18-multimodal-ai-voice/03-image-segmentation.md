@@ -773,7 +773,7 @@ Image segmentation assigns labels to every pixel, with three levels of granulari
     Q4: How does Mask R-CNN extend Faster R-CNN for instance segmentation?
   </summary>
   <div class="tp-qa-answer">
-    <p>Mask R-CNN adds a parallel mask prediction branch to Faster R-CNN. In addition to the classification head (class prediction) and box regression head (bounding box refinement), Mask R-CNN introduces a mask head that predicts a binary mask for each Region of Interest (RoI). The mask head is a small FCN applied to each RoI, outputting a 28×28 binary mask. A key improvement is RoI Align, which replaces RoI Pool's quantization with bilinear interpolation, preserving sub-pixel spatial accuracy essential for masks. The overall loss becomes: L = L_cls + L_box + L_mask, where L_mask is the average binary cross-entropy loss per-pixel. The mask branch is only used during training; at inference, masks are generated for the top-K detections after NMS.</p>
+    <p>Mask R-CNN adds a parallel mask prediction branch to Faster R-CNN. In addition to the classification head (class prediction) and box regression head (bounding box refinement), Mask R-CNN introduces a mask head that predicts a binary mask for each Region of Interest (RoI). The mask head is a small FCN applied to each RoI, outputting a 28—28 binary mask. A key improvement is RoI Align, which replaces RoI Pool's quantization with bilinear interpolation, preserving sub-pixel spatial accuracy essential for masks. The overall loss becomes: L = L_cls + L_box + L_mask, where L_mask is the average binary cross-entropy loss per-pixel. The mask branch is only used during training; at inference, masks are generated for the top-K detections after NMS.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -821,7 +821,7 @@ Image segmentation assigns labels to every pixel, with three levels of granulari
     Q8: How does RoI Align work and why is it better than RoI Pooling for mask prediction?
   </summary>
   <div class="tp-qa-answer">
-    <p>RoI Pooling quantizes the RoI boundaries to integer coordinates and divides the RoI into fixed-size bins using max pooling within each bin. This quantization causes misalignment of up to 1 pixel, which is tolerable for classification but fatal for pixel-accurate mask prediction. RoI Align avoids quantization by: (1) Keeping RoI coordinates as floating-point values. (2) Dividing the RoI into bins of equal size (e.g., 7×7 or 14×14). (3) For each bin, sampling 4 regular points and computing their feature values via bilinear interpolation. (4) Using max or average of these 4 sampled values as the bin output. This preserves sub-pixel spatial accuracy, which is crucial since mask prediction requires precise pixel-level localization. RoI Align improved mask AP by 2-5 points over RoI Pooling in Mask R-CNN.</p>
+    <p>RoI Pooling quantizes the RoI boundaries to integer coordinates and divides the RoI into fixed-size bins using max pooling within each bin. This quantization causes misalignment of up to 1 pixel, which is tolerable for classification but fatal for pixel-accurate mask prediction. RoI Align avoids quantization by: (1) Keeping RoI coordinates as floating-point values. (2) Dividing the RoI into bins of equal size (e.g., 7—7 or 14—14). (3) For each bin, sampling 4 regular points and computing their feature values via bilinear interpolation. (4) Using max or average of these 4 sampled values as the bin output. This preserves sub-pixel spatial accuracy, which is crucial since mask prediction requires precise pixel-level localization. RoI Align improved mask AP by 2-5 points over RoI Pooling in Mask R-CNN.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -833,7 +833,7 @@ Image segmentation assigns labels to every pixel, with three levels of granulari
     Q9: How do you deploy segmentation models on large images (e.g., satellite or pathology)?
   </summary>
   <div class="tp-qa-answer">
-    <p>Large images (e.g., 10,000×10,000 pixels) exceed GPU memory. The approach is tiling: (1) Divide the large image into overlapping tiles (e.g., 512×512 with 64-pixel overlap). (2) Run segmentation on each tile independently. (3) Reconstruct the full-resolution mask by combining tile predictions, using overlap averaging to smooth boundary artifacts. (4) For tiles near the edge, mirror padding to maintain context. Optimizations: (1) Process tiles in batches for throughput. (2) Use a sliding window with stride to reduce redundant computations. (3) Cache intermediate features if multiple tiles share context. (4) For pathology, use multi-resolution tiling — downsample for context, upsample for detail. Tools like OpenSlide handle gigapixel pathology images efficiently.</p>
+    <p>Large images (e.g., 10,000—10,000 pixels) exceed GPU memory. The approach is tiling: (1) Divide the large image into overlapping tiles (e.g., 512—512 with 64-pixel overlap). (2) Run segmentation on each tile independently. (3) Reconstruct the full-resolution mask by combining tile predictions, using overlap averaging to smooth boundary artifacts. (4) For tiles near the edge, mirror padding to maintain context. Optimizations: (1) Process tiles in batches for throughput. (2) Use a sliding window with stride to reduce redundant computations. (3) Cache intermediate features if multiple tiles share context. (4) For pathology, use multi-resolution tiling — downsample for context, upsample for detail. Tools like OpenSlide handle gigapixel pathology images efficiently.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -847,18 +847,18 @@ Image segmentation assigns labels to every pixel, with three levels of granulari
   <div class="tp-qa-answer">
     <pre><code>function buildUNet(inChannels: number, outChannels: number, baseChannels: number = 64) {
   // Encoder: double channels, halve spatial dims
-  const enc1 = convBlock(inChannels, baseChannels);      // 3→64, 256×256
-  const enc2 = convBlock(baseChannels, baseChannels * 2); // 64→128, 128×128
-  const enc3 = convBlock(baseChannels * 2, baseChannels * 4); // 128→256, 64×64
-  const bottleneck = convBlock(baseChannels * 4, baseChannels * 8); // 256→512, 32×32
+  const enc1 = convBlock(inChannels, baseChannels);      // 3→64, 256—256
+  const enc2 = convBlock(baseChannels, baseChannels * 2); // 64→128, 128—128
+  const enc3 = convBlock(baseChannels * 2, baseChannels * 4); // 128→256, 64—64
+  const bottleneck = convBlock(baseChannels * 4, baseChannels * 8); // 256→512, 32—32
   // Decoder: halve channels, double spatial dims, then concatenate skip
-  const dec3 = upConvBlock(baseChannels * 8, baseChannels * 4); // 512→256+256=512, 64×64
-  const dec2 = upConvBlock(baseChannels * 4, baseChannels * 2); // 256→128+128=256, 128×128
-  const dec1 = upConvBlock(baseChannels * 2, baseChannels);     // 128→64+64=128, 256×256
+  const dec3 = upConvBlock(baseChannels * 8, baseChannels * 4); // 512→256+256=512, 64—64
+  const dec2 = upConvBlock(baseChannels * 4, baseChannels * 2); // 256→128+128=256, 128—128
+  const dec1 = upConvBlock(baseChannels * 2, baseChannels);     // 128→64+64=128, 256—256
   const output = Conv2d(baseChannels, outChannels, 1);          // 64→numClasses
   return { enc1, enc2, enc3, bottleneck, dec3, dec2, dec1, output };
 }</pre></code>
-    <p>A U-Net implementation follows the encoder-bottleneck-decoder pattern. The encoder halves spatial dimensions and doubles channels at each level using 3×3 convolutions followed by max-pooling. The decoder up-samples (using transposed convolutions or bilinear upsampling + conv), concatenates the corresponding encoder feature map via skip connection, then applies 3×3 convolutions. The final layer is a 1×1 convolution to map to the desired number of output channels (classes). Verify shapes: input (1×3×256×256) → bottleneck (1×512×32×32) → output (1×num_classes×256×256). Count parameters by summing all conv layers: each 3×3 conv contributes 9×C_in×C_out + C_out parameters.</p>
+    <p>A U-Net implementation follows the encoder-bottleneck-decoder pattern. The encoder halves spatial dimensions and doubles channels at each level using 3—3 convolutions followed by max-pooling. The decoder up-samples (using transposed convolutions or bilinear upsampling + conv), concatenates the corresponding encoder feature map via skip connection, then applies 3—3 convolutions. The final layer is a 1—1 convolution to map to the desired number of output channels (classes). Verify shapes: input (1—3—256—256) → bottleneck (1—512—32—32) → output (1—num_classes—256—256). Count parameters by summing all conv layers: each 3—3 conv contributes 9—C_in—C_out + C_out parameters.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -976,7 +976,7 @@ Image segmentation assigns labels to every pixel, with three levels of granulari
 <summary class="tp-qa-question">How do you deploy segmentation models at scale?</summary>
 <div class="tp-qa-context"><p>Production considerations for segmentation.</p></div>
 <div class="tp-qa-answer">
-<p>Key considerations: (1) <strong>Model quantization</strong> — INT8 quantization can reduce size 4× with minimal mIoU drop. (2) <strong>Tiling</strong> — process large images in overlapping tiles to fit GPU memory. (3) <strong>Multi-GPU</strong> — shard tiles across GPUs. (4) <strong>Async I/O</strong> — overlap data loading with inference. (5) <strong>Caching</strong> — cache model outputs for identical inputs. (6) <strong>Post-processing</strong> — CRF, connected components, and hole-filling on CPU. (7) <strong>Monitoring</strong> — track mIoU drift and data distribution shifts.</p>
+<p>Key considerations: (1) <strong>Model quantization</strong> — INT8 quantization can reduce size 4— with minimal mIoU drop. (2) <strong>Tiling</strong> — process large images in overlapping tiles to fit GPU memory. (3) <strong>Multi-GPU</strong> — shard tiles across GPUs. (4) <strong>Async I/O</strong> — overlap data loading with inference. (5) <strong>Caching</strong> — cache model outputs for identical inputs. (6) <strong>Post-processing</strong> — CRF, connected components, and hole-filling on CPU. (7) <strong>Monitoring</strong> — track mIoU drift and data distribution shifts.</p>
 </div>
 <div class="tp-qa-actions">
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -1022,10 +1022,10 @@ Image segmentation assigns labels to every pixel, with three levels of granulari
 
 6. **mIoU vs. Pixel Accuracy**: Create an imbalanced segmentation scenario where class 0 has 90% of pixels. Predict all pixels as class 0. Compute pixel accuracy and mIoU. Why does mIoU better reflect the failure to predict minority classes?
 
-7. **Data Augmentation Pipeline**: Build an augmentation pipeline using albumentations with: random crop (256×256), horizontal flip, brightness/contrast, elastic transform, and cutout. Apply to a sample image. Augmentations must preserve mask alignment.
+7. **Data Augmentation Pipeline**: Build an augmentation pipeline using albumentations with: random crop (256—256), horizontal flip, brightness/contrast, elastic transform, and cutout. Apply to a sample image. Augmentations must preserve mask alignment.
 
 8. **Model Quantization for Segmentation**: Train a small U-Net on a toy dataset. Apply dynamic and static quantization. Measure size reduction and mIoU drop. Which quantization method preserves accuracy better?
 
-9. **Tiling Large Images**: Write a tiling function that splits a 4000×4000 satellite image into 512×512 tiles with 64-pixel overlap. Segment each tile and reconstruct the full-resolution mask. Handle tile boundary artifacts by averaging overlapping predictions.
+9. **Tiling Large Images**: Write a tiling function that splits a 4000—4000 satellite image into 512—512 tiles with 64-pixel overlap. Segment each tile and reconstruct the full-resolution mask. Handle tile boundary artifacts by averaging overlapping predictions.
 
 10. **Real-time Segmentation Pipeline**: Build a webcam segmentation app using BiSeNet or a lightweight U-Net. Display the overlay at >30 FPS. Benchmark CPU vs. GPU performance. What is the bottleneck (preprocessing, inference, or post-processing)?

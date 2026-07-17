@@ -33,7 +33,7 @@ flowchart TB
         D --> E[+ Residual & LayerNorm]
         E --> F[Feed-Forward Network]
         F --> G[+ Residual & LayerNorm]
-        G --> H[× N layers]
+        G --> H[— N layers]
     end
     subgraph Decoder
         I[Target Tokens] --> J[Token Embeddings]
@@ -44,7 +44,7 @@ flowchart TB
         N --> O[+ Residual & LayerNorm]
         O --> P[Feed-Forward Network]
         P --> Q[+ Residual & LayerNorm]
-        Q --> R[× N layers]
+        Q --> R[— N layers]
     end
     H --> N
     R --> S[Linear + Softmax]
@@ -538,7 +538,7 @@ The Transformer architecture replaced recurrent networks with parallelizable sel
 - The transformer replaces recurrence entirely with attention, enabling parallel computation and direct long-range connections
 - Positional encoding (sinusoidal or learned) is essential because self-attention is permutation-invariant
 - Layer normalization stabilizes training; pre-norm (GPT style) is more stable than post-norm (original Transformer)
-- The FFN expansion factor 4× means ~2/3 of parameters are in FFN layers, not attention layers
+- The FFN expansion factor 4— means ~2/3 of parameters are in FFN layers, not attention layers
 - Residual connections with dropout (0.1) are critical for training deep (12-96 layer) transformers
 - Encoder-only models (BERT) excel at understanding tasks; decoder-only models (GPT) excel at generation
 - The O(n^2) self-attention complexity limits context length; efficient attention variants are active research
@@ -669,11 +669,11 @@ The Transformer architecture replaced recurrent networks with parallelizable sel
 ## Chapter Quiz
 
 Q1: What is the typical expansion factor of the FFN inner dimension in transformers?
-a) 2×
-b) 3×
-c) 4×
-d) 8×
-<details class="tp-qa-card" data-qid="nlp05-quiz1"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: c) 4×</strong></p><p>The FFN inner dimension d_ff is typically 4× d_model. For d_model=512, d_ff=2048. For d_model=768, d_ff=3072.</p></div></details>
+a) 2—
+b) 3—
+c) 4—
+d) 8—
+<details class="tp-qa-card" data-qid="nlp05-quiz1"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: c) 4—</strong></p><p>The FFN inner dimension d_ff is typically 4— d_model. For d_model=512, d_ff=2048. For d_model=768, d_ff=3072.</p></div></details>
 
 Q2: How many layers does BERT-base have?
 a) 6

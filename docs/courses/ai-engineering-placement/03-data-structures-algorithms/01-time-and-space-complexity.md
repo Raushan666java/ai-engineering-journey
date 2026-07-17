@@ -894,7 +894,7 @@ d) T(n) = T(n/2) + O(n)
 **Q3**: Which of these is NOT O(n²)?
 
 a) Nested loops where both go to n
-b) Matrix multiplication of n×n matrices
+b) Matrix multiplication of n—n matrices
 c) Binary search on sorted array
 d) Bubble sort
 

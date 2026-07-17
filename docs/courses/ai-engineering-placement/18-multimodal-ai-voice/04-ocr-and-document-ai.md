@@ -970,7 +970,7 @@ OCR and Document AI combine computer vision and NLP to extract structured inform
     return texts.map(t => ({ ...t, corrected: this.spellChecker.correct(t.text) }));
   }
 }</pre></code>
-    <p>Production OCR requires: (1) GPU batching — process multiple images or text regions in parallel on GPU. (2) Async pipelining — overlap I/O, preprocessing, detection, recognition, and post-processing. (3) Model optimization — quantize to FP16/INT8, export to ONNX/TensorRT for 2-4× speedup. (4) PDF processing — extract native text directly for digital PDFs; use OCR only for scanned PDFs. (5) Horizontal scaling — run multiple OCR workers behind a load balancer. (6) Caching — cache OCR results for identical images using content hashing. (7) Error recovery — for failed regions, retry with higher resolution or different preprocessing. A well-optimized pipeline processes 50-100 pages per second on a single GPU.</p>
+    <p>Production OCR requires: (1) GPU batching — process multiple images or text regions in parallel on GPU. (2) Async pipelining — overlap I/O, preprocessing, detection, recognition, and post-processing. (3) Model optimization — quantize to FP16/INT8, export to ONNX/TensorRT for 2-4— speedup. (4) PDF processing — extract native text directly for digital PDFs; use OCR only for scanned PDFs. (5) Horizontal scaling — run multiple OCR workers behind a load balancer. (6) Caching — cache OCR results for identical images using content hashing. (7) Error recovery — for failed regions, retry with higher resolution or different preprocessing. A well-optimized pipeline processes 50-100 pages per second on a single GPU.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>

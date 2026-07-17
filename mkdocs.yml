@@ -103,6 +103,13 @@ nav:
   - "🔥 Trending": trending.md
   - "🏆 Backend + AI Placement":
     - Overview: courses/ai-engineering-placement/index.md
+    - "00 — Core Computer Science":
+      - Overview: courses/ai-engineering-placement/00-core-computer-science/index.md
+      - "Computer Networks": courses/ai-engineering-placement/00-core-computer-science/01-computer-networks.md
+      - "Operating Systems": courses/ai-engineering-placement/00-core-computer-science/02-operating-systems.md
+      - "Database Internals": courses/ai-engineering-placement/00-core-computer-science/03-database-internals.md
+      - "Computer Architecture": courses/ai-engineering-placement/00-core-computer-science/04-computer-architecture.md
+      - "OOP & Design Patterns": courses/ai-engineering-placement/00-core-computer-science/05-oop-design-patterns.md
     - "01 — Python for AI":
       - Overview: courses/ai-engineering-placement/01-python-programming/index.md
       - "Python Basics": courses/ai-engineering-placement/01-python-programming/01-python-basics.md

@@ -1115,4 +1115,4 @@ d) Only deployment configuration
 
 ---
 
-> **Next**: [01 — Computer Vision Basics →](../../18-multimodal-ai-voice/01-computer-vision-basics.md)
+> **Next**: [01 — Computer Vision Basics →](../18-multimodal-ai-voice/01-computer-vision-basics.md)

@@ -1,4 +1,4 @@
-# LinkedIn Optimization
+﻿# LinkedIn Optimization
 
 ## Learning Objectives
 

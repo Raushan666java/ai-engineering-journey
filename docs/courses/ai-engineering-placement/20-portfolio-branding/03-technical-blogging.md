@@ -1,4 +1,4 @@
-# Technical Blogging
+﻿# Technical Blogging
 
 ## Learning Objectives
 

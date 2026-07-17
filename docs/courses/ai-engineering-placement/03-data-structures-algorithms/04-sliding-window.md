@@ -1,4 +1,4 @@
-# Sliding Window
+ï»¿# Sliding Window
 
 ## Learning Objectives
 
@@ -473,7 +473,7 @@ function longestSubstringNoRepeat(s: string): number {
 
 ## Summary
 
-- Sliding window transforms O(n²) nested loops into O(n) single pass by maintaining a window that expands and contracts
+- Sliding window transforms O(nï¿½) nested loops into O(n) single pass by maintaining a window that expands and contracts
 - Fixed-size windows maintain constant length k; variable-size windows adjust based on conditions
 - The sliding window technique applies only to contiguous subarray/substring problems with monotonic conditions
 - Deque-based monotonic queue solves sliding window maximum/minimum in O(n) by maintaining candidate indices
@@ -488,8 +488,8 @@ function longestSubstringNoRepeat(s: string): number {
 
 | Scenario | Do This | Avoid This |
 |----------|---------|------------|
-| Maximum sum of subarray size k | Fixed window — add right, subtract left | Computing sum for each subarray from scratch |
-| Longest substring without repeats | Variable window with set for chars in window | Checking all substrings O(n²) |
+| Maximum sum of subarray size k | Fixed window ï¿½ add right, subtract left | Computing sum for each subarray from scratch |
+| Longest substring without repeats | Variable window with set for chars in window | Checking all substrings O(nï¿½) |
 | Minimum window containing pattern | Expand right, shrink left when valid | Brute-force checking all windows |
 | Sliding window maximum | Deque monotonic queue | Recomputing max each window O(nk) |
 | Count subarrays with sum = k | Convert to atMost(k) - atMost(k-1) | Complex sliding with hash map for negative numbers |
@@ -507,7 +507,7 @@ function longestSubstringNoRepeat(s: string): number {
     <p><strong>When to use</strong>:</p>
     <ul>
       <li>The problem involves a <strong>contiguous</strong> subarray/substring</li>
-      <li>The condition is <strong>monotonic</strong> — if a window satisfies the condition, any smaller window (or larger) also satisfies it</li>
+      <li>The condition is <strong>monotonic</strong> ï¿½ if a window satisfies the condition, any smaller window (or larger) also satisfies it</li>
       <li>You can compute the answer from the window's state efficiently</li>
     </ul>
     <p><strong>Types</strong>: Fixed size (k given), Variable size (expand/contract), Two pointers.</p>
@@ -555,7 +555,7 @@ function longestSubstringNoRepeat(s: string): number {
   </summary>
   <div class="tp-qa-answer">
     <p><strong>Problem</strong>: Given string s and pattern t, find the minimum window in s containing all characters of t.</p>
-    <p><strong>Algorithm</strong>: Count characters in pattern t (target counts). Expand right pointer, updating window counts. Track <code>formed</code> — number of characters meeting their target count. When <code>formed == required</code>, shrink from left to minimize window. Update result when smaller window found.</p>
+    <p><strong>Algorithm</strong>: Count characters in pattern t (target counts). Expand right pointer, updating window counts. Track <code>formed</code> ï¿½ number of characters meeting their target count. When <code>formed == required</code>, shrink from left to minimize window. Update result when smaller window found.</p>
     <p><strong>Complexity</strong>: O(n) time (each character visited twice), O(k) space for character counts.</p>
   </div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button>
@@ -569,7 +569,7 @@ function longestSubstringNoRepeat(s: string): number {
   </summary>
   <div class="tp-qa-answer">
     <p><strong>Solution</strong>: Use a <strong>deque that stores indices</strong> in decreasing order of values. The deque front always holds the index of the maximum in the current window. When a new element arrives, we remove all smaller elements from the back (they can never be the max while this new element exists).</p>
-    <p><strong>Complexity</strong>: O(n) — each element is pushed and popped at most once.</p>
+    <p><strong>Complexity</strong>: O(n) ï¿½ each element is pushed and popped at most once.</p>
   </div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">?? Bookmark</button>
@@ -584,7 +584,7 @@ function longestSubstringNoRepeat(s: string): number {
     <p>The <strong>"at most k"</strong> technique converts "exactly k" problems into two sliding window calls:</p>
     <pre><code>def exactly_k(nums, k):
     return at_most_k(nums, k) - at_most_k(nums, k - 1)</code></pre>
-    <p><strong>Why this works</strong>: Counting "at most k" is easier with sliding window because the condition is monotonic — if a window is valid for "at most k", any sub-window is also valid. But "exactly k" isn't monotonic.</p>
+    <p><strong>Why this works</strong>: Counting "at most k" is easier with sliding window because the condition is monotonic ï¿½ if a window is valid for "at most k", any sub-window is also valid. But "exactly k" isn't monotonic.</p>
     <p><strong>Examples</strong>: Subarrays with exactly k odd numbers, subarrays with sum exactly equal to goal (binary array), subarrays with exactly k distinct integers.</p>
   </div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button>
@@ -691,10 +691,10 @@ def longest_substring_k_distinct(s, k):
   <div class="tp-qa-answer">
     <p>Sliding window does NOT work when:</p>
     <ul>
-      <li>The condition is <strong>not monotonic</strong> — e.g., subarray sum = k in arrays with negative numbers (once sum exceeds k, we might still need to add more elements)</li>
-      <li>The problem involves <strong>non-contiguous</strong> elements — e.g., subsequence problems</li>
-      <li>The problem requires <strong>reordering</strong> elements — e.g., sorting-based problems</li>
-      <li>The window state cannot be <strong>efficiently updated</strong> when sliding — e.g., median of each window requires O(log k) update using heaps</li>
+      <li>The condition is <strong>not monotonic</strong> ï¿½ e.g., subarray sum = k in arrays with negative numbers (once sum exceeds k, we might still need to add more elements)</li>
+      <li>The problem involves <strong>non-contiguous</strong> elements ï¿½ e.g., subsequence problems</li>
+      <li>The problem requires <strong>reordering</strong> elements ï¿½ e.g., sorting-based problems</li>
+      <li>The window state cannot be <strong>efficiently updated</strong> when sliding ï¿½ e.g., median of each window requires O(log k) update using heaps</li>
     </ul>
     <p>For non-monotonic conditions, consider prefix sum + hash map or other techniques.</p>
   </div>
@@ -797,20 +797,20 @@ b) Longest substring without repeating characters
 c) Subarray sum equals k (with negative numbers)
 d) Minimum window substring
 
-<details class="tp-qa-card" data-qid="dsa04-quiz5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: c) Subarray sum equals k (with negative numbers)</strong></p><p>With negative numbers, the sum is not monotonic — adding elements can decrease the sum, so sliding window cannot guarantee correctness.</p></div></details>
+<details class="tp-qa-card" data-qid="dsa04-quiz5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: c) Subarray sum equals k (with negative numbers)</strong></p><p>With negative numbers, the sum is not monotonic ï¿½ adding elements can decrease the sum, so sliding window cannot guarantee correctness.</p></div></details>
 
 ## Exercises
 
-**Easy** — Given an array of positive integers and a target sum, find the minimum length of a contiguous subarray whose sum is at least the target.
+**Easy** ï¿½ Given an array of positive integers and a target sum, find the minimum length of a contiguous subarray whose sum is at least the target.
 
-**Medium** — Given a string s and a string p, find all start indices of p's anagrams in s using sliding window.
+**Medium** ï¿½ Given a string s and a string p, find all start indices of p's anagrams in s using sliding window.
 
-**Medium** — Implement a function that finds the maximum sum of any subarray of size k in a circular array (where the subarray can wrap around from end to start).
+**Medium** ï¿½ Implement a function that finds the maximum sum of any subarray of size k in a circular array (where the subarray can wrap around from end to start).
 
-**Hard** — Implement a sliding window median — find the median of each window of size k in an array. Achieve O(n log k) using two heaps.
+**Hard** ï¿½ Implement a sliding window median ï¿½ find the median of each window of size k in an array. Achieve O(n log k) using two heaps.
 
-**Hard** — Given an array of integers and an integer k, find the length of the longest subarray whose sum is at most k. Then generalize to subarray product at most k.
+**Hard** ï¿½ Given an array of integers and an integer k, find the length of the longest subarray whose sum is at most k. Then generalize to subarray product at most k.
 
 ---
 
-> **Next**: [05 — Two Pointers ?](05-two-pointers.md)
+> **Next**: [05 ï¿½ Two Pointers ?](05-two-pointers.md)

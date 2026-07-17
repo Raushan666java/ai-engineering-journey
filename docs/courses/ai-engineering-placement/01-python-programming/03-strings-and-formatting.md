@@ -1,4 +1,4 @@
-# Strings & Formatting — Methods, Slicing, F-Strings, and Regex
+ï»¿# Strings & Formatting ï¿½ Methods, Slicing, F-Strings, and Regex
 
 ## Learning Objectives
 
@@ -64,10 +64,10 @@ print(joined)              # "apple | banana | cherry"
 data = "a b c d e"
 print(data.split(" ", 2))  # ['a', 'b', 'c d e']
 
-# rsplit — splits from the right
+# rsplit ï¿½ splits from the right
 print(data.rsplit(" ", 2)) # ['a b c', 'd', 'e']
 
-# splitlines — handles different line endings
+# splitlines ï¿½ handles different line endings
 lines = "line1\nline2\r\nline3"
 print(lines.splitlines())  # ['line1', 'line2', 'line3']
 `
@@ -77,10 +77,10 @@ print(lines.splitlines())  # ['line1', 'line2', 'line3']
 `python
 s = "the quick brown fox jumps over the lazy dog"
 
-print(s.find("fox"))       # 16  — index of first occurrence
-print(s.find("cat"))       # -1  — not found
-print(s.index("fox"))      # 16  — raises ValueError if not found
-print(s.rfind("the"))      # 31  — last occurrence
+print(s.find("fox"))       # 16  ï¿½ index of first occurrence
+print(s.find("cat"))       # -1  ï¿½ not found
+print(s.index("fox"))      # 16  ï¿½ raises ValueError if not found
+print(s.rfind("the"))      # 31  ï¿½ last occurrence
 print(s.count("the"))      # 2
 
 print(s.startswith("the"))  # True
@@ -113,23 +113,23 @@ Slicing extracts substrings using the [start:stop:step] notation. All three comp
 s = "Python Programming"
 
 # Basic slicing
-print(s[0:6])     # "Python"   — indices 0 through 5
-print(s[:6])      # "Python"   — start defaults to 0
-print(s[7:])      # "Programming" — stop defaults to end
-print(s[:])       # "Python Programming" — full copy
+print(s[0:6])     # "Python"   ï¿½ indices 0 through 5
+print(s[:6])      # "Python"   ï¿½ start defaults to 0
+print(s[7:])      # "Programming" ï¿½ stop defaults to end
+print(s[:])       # "Python Programming" ï¿½ full copy
 
 # Negative indices (count from end)
-print(s[-1])      # "g" — last character
+print(s[-1])      # "g" ï¿½ last character
 print(s[-11:])    # "Programming"
 print(s[-11:-4])  # "Progra"
 
 # Step (stride)
-print(s[::2])     # "Pto rgramn"  — every 2nd character
-print(s[1::2])    # "yh nrmig"   — every 2nd starting at 1
-print(s[::-1])    # "gnimmargorP nohtyP" — reversed!
+print(s[::2])     # "Pto rgramn"  ï¿½ every 2nd character
+print(s[1::2])    # "yh nrmig"   ï¿½ every 2nd starting at 1
+print(s[::-1])    # "gnimmargorP nohtyP" ï¿½ reversed!
 
 # Negative step
-print(s[10:4:-1]) # "margor" — reversed slice
+print(s[10:4:-1]) # "margor" ï¿½ reversed slice
 `
 
 **Practical slicing patterns**:
@@ -178,19 +178,19 @@ print(f"{name} is {age} years old")
 print(f"{2 * 3 * 5 = }")  # "2 * 3 * 5 = 30"
 
 # Format specifiers
-print(f"{balance:.2f}")      # "1234.57" — 2 decimal places
-print(f"{balance:>10.2f}")   # "   1234.57" — right align in width 10
-print(f"{balance:<10.2f}")   # "1234.57   " — left align
-print(f"{balance:^10.2f}")   # " 1234.57  " — center
-print(f"{balance:010.2f}")   # "0001234.57" — zero padding
-print(f"{balance:,.2f}")     # "1,234.57" — thousands separator
+print(f"{balance:.2f}")      # "1234.57" ï¿½ 2 decimal places
+print(f"{balance:>10.2f}")   # "   1234.57" ï¿½ right align in width 10
+print(f"{balance:<10.2f}")   # "1234.57   " ï¿½ left align
+print(f"{balance:^10.2f}")   # " 1234.57  " ï¿½ center
+print(f"{balance:010.2f}")   # "0001234.57" ï¿½ zero padding
+print(f"{balance:,.2f}")     # "1,234.57" ï¿½ thousands separator
 
 # Formatting types
-print(f"{42:b}")    # "101010" — binary
-print(f"{42:o}")    # "52" — octal
-print(f"{42:x}")    # "2a" — hex lowercase
-print(f"{42:X}")    # "2A" — hex uppercase
-print(f"{42:e}")    # "4.200000e+01" — scientific
+print(f"{42:b}")    # "101010" ï¿½ binary
+print(f"{42:o}")    # "52" ï¿½ octal
+print(f"{42:x}")    # "2a" ï¿½ hex lowercase
+print(f"{42:X}")    # "2A" ï¿½ hex uppercase
+print(f"{42:e}")    # "4.200000e+01" ï¿½ scientific
 `
 
 **str.format()** (older but still common):
@@ -231,7 +231,7 @@ import re
 
 text = "Contact: alice@email.com or bob@example.co.uk"
 
-# re.search — find first match
+# re.search ï¿½ find first match
 pattern = r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b"
 match = re.search(pattern, text)
 if match:
@@ -239,19 +239,19 @@ if match:
     print(match.start())      # 9
     print(match.end())        # 25
 
-# re.findall — find all matches
+# re.findall ï¿½ find all matches
 emails = re.findall(pattern, text)
 print(emails)  # ['alice@email.com', 'bob@example.co.uk']
 
-# re.finditer — iterator of match objects
+# re.finditer ï¿½ iterator of match objects
 for m in re.finditer(r"\w+@\w+\.\w+", text):
     print(m.group())
 
-# re.match — match at beginning only
+# re.match ï¿½ match at beginning only
 print(re.match(r"Contact", text))   # Match object
 print(re.match(r"alice", text))     # None
 
-# re.fullmatch — entire string must match
+# re.fullmatch ï¿½ entire string must match
 print(re.fullmatch(r"\d{5}", "12345"))  # Match
 print(re.fullmatch(r"\d{5}", "12345-")) # None
 `
@@ -272,7 +272,7 @@ matches = re.findall(pattern, text)
 print(matches)  # ['123', '456']
 `
 
-**e.sub — search and replace**:
+**e.sub ï¿½ search and replace**:
 
 `python
 text = "Hello, my number is 123-456-7890"
@@ -356,11 +356,11 @@ print(decoded)            # "Hello, ??"
 # Common encodings
 print("Hello".encode("ascii"))         # b'Hello'
 print("Hello".encode("utf-16"))        # b'\xff\xfeH\x00e\x00l\x00l\x00o\x00'
-print("€".encode("utf-8"))             # b'\xe2\x82\xac'
-print("€".encode("latin-1"))           # UnicodeEncodeError (€ not in latin-1)
+print("ï¿½".encode("utf-8"))             # b'\xe2\x82\xac'
+print("ï¿½".encode("latin-1"))           # UnicodeEncodeError (ï¿½ not in latin-1)
 
 # Error handling
-text = "café"
+text = "cafï¿½"
 # Ignore errors
 print(text.encode("ascii", errors="ignore"))    # b'caf'
 # Replace errors
@@ -374,13 +374,13 @@ print(text.encode("ascii", errors="xmlcharrefreplace"))  # b'caf&#233;'
 `python
 import unicodedata
 
-char = "é"
+char = "ï¿½"
 print(unicodedata.name(char))      # "LATIN SMALL LETTER E WITH ACUTE"
 print(unicodedata.category(char))  # "Ll" (lowercase letter)
 print(unicodedata.east_asian_width(char))  # "N" (narrow)
 
-# Normalization — handles composed vs decomposed forms
-nfc = "é"  # composed: U+00E9
+# Normalization ï¿½ handles composed vs decomposed forms
+nfc = "ï¿½"  # composed: U+00E9
 nfd = "e\u0301"  # decomposed: e + combining acute accent
 print(nfc == nfd)            # False (different code points)
 print(unicodedata.normalize("NFC", nfd) == nfc)  # True
@@ -390,7 +390,7 @@ print(unicodedata.normalize("NFC", nfd) == nfc)  # True
 
 ## 3.6 Performance and Best Practices
 
-**String concatenation** — + is O(n²) in loops. Use join():
+**String concatenation** ï¿½ + is O(nï¿½) in loops. Use join():
 
 `python
 import time
@@ -398,7 +398,7 @@ import time
 def bad_concat(n):
     result = ""
     for i in range(n):
-        result += str(i)  # O(n²) — creates new string each time
+        result += str(i)  # O(nï¿½) ï¿½ creates new string each time
     return result
 
 def good_concat(n):
@@ -476,13 +476,13 @@ const decoded: string = new TextDecoder().decode(utf8);
 
 ## Summary
 
-- Strings are immutable sequences of Unicode characters — all "modifications" return new strings
+- Strings are immutable sequences of Unicode characters ï¿½ all "modifications" return new strings
 - Use slicing [start:stop:step] for substring extraction; negative indices count from end
 - f-strings are the preferred formatting method: fast, readable, expression-aware
 - The e module provides full regex support: search, match, indall, sub
 - Encoding converts str to bytes (str.encode()); decoding converts bytes to str (ytes.decode())
-- Always specify encoding (utf-8) when opening files — never rely on defaults
-- String concatenation with + in loops is O(n²); use "".join(list) for building strings
+- Always specify encoding (utf-8) when opening files ï¿½ never rely on defaults
+- String concatenation with + in loops is O(nï¿½); use "".join(list) for building strings
 - Use e.compile() for patterns used repeatedly to improve performance
 - Unicode normalization (NFC/NFD) ensures consistent comparison of accented characters
 - Template strings are safe for user-provided templates with $variable syntax
@@ -503,7 +503,7 @@ const decoded: string = new TextDecoder().decode(utf8);
 
 <details class="tp-qa-card" data-qid="p02-s03-q1">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q1: Explain Python's string immutability. Why does it matter?</summary>
-  <div class="tp-qa-answer"><p>Strings cannot be modified in place — any operation that appears to modify returns a new string. This enables strings to be used as dictionary keys, makes them thread-safe without locking, and allows internal optimizations like interning. The tradeoff is that building strings in loops with + is O(n²).</p></div>
+  <div class="tp-qa-answer"><p>Strings cannot be modified in place ï¿½ any operation that appears to modify returns a new string. This enables strings to be used as dictionary keys, makes them thread-safe without locking, and allows internal optimizations like interning. The tradeoff is that building strings in loops with + is O(nï¿½).</p></div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button><button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
@@ -533,7 +533,7 @@ const decoded: string = new TextDecoder().decode(utf8);
 
 <details class="tp-qa-card" data-qid="p02-s03-q6">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q6: Explain the split and join methods in detail.</summary>
-  <div class="tp-qa-answer"><p><code>split(sep, maxsplit)</code> divides a string into a list at each occurrence of sep. Without arguments, splits on any whitespace and strips empty strings. <code>rsplit()</code> works from the right. <code>join(iterable)</code> is the inverse — concatenates an iterable of strings with the separator string. They form the primary pattern for string tokenization/assembly in Python.</p></div>
+  <div class="tp-qa-answer"><p><code>split(sep, maxsplit)</code> divides a string into a list at each occurrence of sep. Without arguments, splits on any whitespace and strips empty strings. <code>rsplit()</code> works from the right. <code>join(iterable)</code> is the inverse ï¿½ concatenates an iterable of strings with the separator string. They form the primary pattern for string tokenization/assembly in Python.</p></div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button><button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
@@ -545,13 +545,13 @@ const decoded: string = new TextDecoder().decode(utf8);
 
 <details class="tp-qa-card" data-qid="p02-s03-q8">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q8: Why is string concatenation with + inefficient in loops?</summary>
-  <div class="tp-qa-answer"><p>Strings are immutable, so each <code>+=</code> creates a new string and copies both parts. This results in O(n²) time and O(n²) memory allocation. Using <code>"".join(list)</code> precomputes the total size, allocates once, and copies each string exactly once — O(n) time. For very large strings, StringIO or building a list then joining is preferred.</p></div>
+  <div class="tp-qa-answer"><p>Strings are immutable, so each <code>+=</code> creates a new string and copies both parts. This results in O(nï¿½) time and O(nï¿½) memory allocation. Using <code>"".join(list)</code> precomputes the total size, allocates once, and copies each string exactly once ï¿½ O(n) time. For very large strings, StringIO or building a list then joining is preferred.</p></div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button><button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="p02-s03-q9">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q9: What is the difference between str and bytes in Python 3?</summary>
-  <div class="tp-qa-answer"><p><code>str</code> represents Unicode text as a sequence of code points. <code>bytes</code> represents raw binary data as a sequence of integers 0-255. They are different types — you cannot mix them in operations like concatenation. Conversion between them requires explicit <code>.encode()</code> and <code>.decode()</code>. In Python 2, str was bytes and unicode was the text type.</p></div>
+  <div class="tp-qa-answer"><p><code>str</code> represents Unicode text as a sequence of code points. <code>bytes</code> represents raw binary data as a sequence of integers 0-255. They are different types ï¿½ you cannot mix them in operations like concatenation. Conversion between them requires explicit <code>.encode()</code> and <code>.decode()</code>. In Python 2, str was bytes and unicode was the text type.</p></div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button><button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
@@ -590,14 +590,14 @@ d) \w+
 
 <details class="tp-qa-card" data-qid="p02-s03-quiz3"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b) \b[a-z]+\b</strong></p><p>\b ensures word boundaries, [a-z]+ matches one or more lowercase letters.</p></div></details>
 
-**Q4**: What is the result of "café".encode("ascii", errors="ignore")?
+**Q4**: What is the result of "cafï¿½".encode("ascii", errors="ignore")?
 
 a) 'caf'
 b) 'caf?'
-c) 'café'
+c) 'cafï¿½'
 d) UnicodeEncodeError
 
-<details class="tp-qa-card" data-qid="p02-s03-quiz4"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: a) b'caf'</strong></p><p>é is not in ASCII; errors="ignore" drops unencodable characters.</p></div></details>
+<details class="tp-qa-card" data-qid="p02-s03-quiz4"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: a) b'caf'</strong></p><p>ï¿½ is not in ASCII; errors="ignore" drops unencodable characters.</p></div></details>
 
 **Q5**: What is the most efficient way to build a string from 10,000 parts?
 
@@ -606,22 +606,22 @@ b) esult = "".join(parts)
 c) esult = sum(parts, "")
 d) esult = f"{parts}"
 
-<details class="tp-qa-card" data-qid="p02-s03-quiz5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b) "".join(parts)</strong></p><p>join precomputes total size and copies once. Option a is O(n²).</p></div></details>
+<details class="tp-qa-card" data-qid="p02-s03-quiz5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b) "".join(parts)</strong></p><p>join precomputes total size and copies once. Option a is O(nï¿½).</p></div></details>
 
 ## Exercises
 
-**Easy** — Write a function that takes a sentence and returns it with each word reversed, preserving word order.
+**Easy** ï¿½ Write a function that takes a sentence and returns it with each word reversed, preserving word order.
 
-**Easy** — Extract all hashtags from a tweet string using regex.
+**Easy** ï¿½ Extract all hashtags from a tweet string using regex.
 
-**Medium** — Write a function that validates phone numbers in the format (XXX) XXX-XXXX using regex.
+**Medium** ï¿½ Write a function that validates phone numbers in the format (XXX) XXX-XXXX using regex.
 
-**Medium** — Implement a simple tokenizer that splits text into words, numbers, and punctuation using re.findall.
+**Medium** ï¿½ Implement a simple tokenizer that splits text into words, numbers, and punctuation using re.findall.
 
-**Hard** — Implement a ormat_exception function that takes a raw traceback string and formats it with color-coded levels using regex substitution.
+**Hard** ï¿½ Implement a ormat_exception function that takes a raw traceback string and formats it with color-coded levels using regex substitution.
 
-**Hard** — Build a simple template engine that replaces {{ variable }} placeholders from a dictionary, handling nested paths like {{ user.name }}.
+**Hard** ï¿½ Build a simple template engine that replaces {{ variable }} placeholders from a dictionary, handling nested paths like {{ user.name }}.
 
 ---
 
-> **Next**: [04 — Collections ?](04-collections.md)
+> **Next**: [04 ï¿½ Collections ?](04-collections.md)

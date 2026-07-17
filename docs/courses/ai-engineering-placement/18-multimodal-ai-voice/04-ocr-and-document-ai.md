@@ -1,4 +1,4 @@
-# OCR & Document AI
+﻿# OCR & Document AI
 
 ## Learning Objectives
 

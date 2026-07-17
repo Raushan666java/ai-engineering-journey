@@ -1,4 +1,4 @@
-# Kubernetes Basics — Pods, Services, and Deployments
+ï»¿# Kubernetes Basics ï¿½ Pods, Services, and Deployments
 
 ## Learning Objectives
 
@@ -70,7 +70,7 @@ flowchart TD
 | API Server | Entry point for all management requests via REST API |
 | Scheduler | Assigns Pods to nodes based on resource availability |
 | Controller Manager | Runs controllers: replication, node, endpoints |
-| etcd | Distributed key-value store — cluster source of truth |
+| etcd | Distributed key-value store ï¿½ cluster source of truth |
 
 **Node components**: kubelet (ensures containers run), kube-proxy (networking and load balancing), container runtime (containerd, CRI-O).
 
@@ -82,7 +82,7 @@ kubectl get pods -n kube-system
 
 ## 4.2 Pods
 
-A Pod is the smallest deployable unit — one or more containers sharing network, storage, and lifecycle.
+A Pod is the smallest deployable unit ï¿½ one or more containers sharing network, storage, and lifecycle.
 
 `yaml
 apiVersion: v1
@@ -310,7 +310,7 @@ async function deploy(name: string, image: string, replicas: number) {
 ## Summary
 
 - Kubernetes has a control plane (API server, scheduler, controller manager, etcd) and worker nodes (kubelet, kube-proxy, container runtime)
-- Pods are the smallest deployable unit — one or more containers sharing network and storage
+- Pods are the smallest deployable unit ï¿½ one or more containers sharing network and storage
 - Services provide stable networking via ClusterIP, NodePort, or LoadBalancer
 - Deployments manage ReplicaSets with rolling updates, scaling, and rollbacks
 - ConfigMaps store non-sensitive config; Secrets store sensitive data (base64 encoded)
@@ -353,7 +353,7 @@ async function deploy(name: string, image: string, replicas: number) {
     Q2: What is a Pod and what are multi-container Pod patterns?
   </summary>
   <div class="tp-qa-answer">
-    <p>A Pod is the smallest deployable unit — one or more containers sharing network namespace, storage volumes, and lifecycle. Multi-container patterns include Sidecar (helper containers like log collectors), Ambassador (proxies external services), and Adapter (transforms output format).</p>
+    <p>A Pod is the smallest deployable unit ï¿½ one or more containers sharing network namespace, storage volumes, and lifecycle. Multi-container patterns include Sidecar (helper containers like log collectors), Ambassador (proxies external services), and Adapter (transforms output format).</p>
   </div>
   <button class="tp-qa-mark-btn">&#x2705; Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>
@@ -413,7 +413,7 @@ async function deploy(name: string, image: string, replicas: number) {
     Q7: Explain kubectl apply vs kubectl create.
   </summary>
   <div class="tp-qa-answer">
-    <p>kubectl apply is declarative — creates or updates resources based on desired state. Idempotent and safe to run multiple times. kubectl create is imperative — creates new resources but fails if they already exist. Best practice: use apply for production.</p>
+    <p>kubectl apply is declarative ï¿½ creates or updates resources based on desired state. Idempotent and safe to run multiple times. kubectl create is imperative ï¿½ creates new resources but fails if they already exist. Best practice: use apply for production.</p>
   </div>
   <button class="tp-qa-mark-btn">&#x2705; Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>
@@ -437,7 +437,7 @@ async function deploy(name: string, image: string, replicas: number) {
     Q9: How do PV and PVC work together?
   </summary>
   <div class="tp-qa-answer">
-    <p>PersistentVolume (PV) is cluster storage provisioned by an admin. PersistentVolumeClaim (PVC) is a user request for storage. Kubernetes binds PVCs to matching PVs based on size and access mode. Pods use PVCs as volumes — if the Pod is deleted, the PVC and PV persist, preserving data.</p>
+    <p>PersistentVolume (PV) is cluster storage provisioned by an admin. PersistentVolumeClaim (PVC) is a user request for storage. Kubernetes binds PVCs to matching PVs based on size and access mode. Pods use PVCs as volumes ï¿½ if the Pod is deleted, the PVC and PV persist, preserving data.</p>
   </div>
   <button class="tp-qa-mark-btn">&#x2705; Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>
@@ -504,15 +504,15 @@ d) revisionHistoryLimit
 
 ## Exercises
 
-**Easy** — Create a single Nginx Pod with a NodePort Service on port 30080. Verify you can access it.
+**Easy** ï¿½ Create a single Nginx Pod with a NodePort Service on port 30080. Verify you can access it.
 
-**Medium** — Write a Deployment for a FastAPI app with 3 replicas, resource limits, liveness/readiness probes, and a ClusterIP Service.
+**Medium** ï¿½ Write a Deployment for a FastAPI app with 3 replicas, resource limits, liveness/readiness probes, and a ClusterIP Service.
 
-**Medium** — Create a multi-tier app: frontend Deployment with LoadBalancer Service, backend Deployment with ClusterIP Service, PostgreSQL StatefulSet with PVC.
+**Medium** ï¿½ Create a multi-tier app: frontend Deployment with LoadBalancer Service, backend Deployment with ClusterIP Service, PostgreSQL StatefulSet with PVC.
 
-**Hard** — Set up a namespace with ResourceQuota (2 CPU, 4Gi memory limit). Deploy an app exceeding the quota and observe behavior.
+**Hard** ï¿½ Set up a namespace with ResourceQuota (2 CPU, 4Gi memory limit). Deploy an app exceeding the quota and observe behavior.
 
-**Hard** — Debug a failing Deployment: given one that crashes on startup (wrong image, missing ConfigMap, resource limits too low), use kubectl describe and logs to identify and fix all issues.
+**Hard** ï¿½ Debug a failing Deployment: given one that crashes on startup (wrong image, missing ConfigMap, resource limits too low), use kubectl describe and logs to identify and fix all issues.
 
 
 ---

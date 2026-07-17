@@ -1,4 +1,4 @@
-# LoRA Theory
+﻿# LoRA Theory
 
 ## Learning Objectives
 

@@ -1,4 +1,4 @@
-# Kubernetes Scaling — HPA, Autoscaling, and Cluster Management
+ï»¿# Kubernetes Scaling ï¿½ HPA, Autoscaling, and Cluster Management
 
 ## Learning Objectives
 
@@ -242,7 +242,7 @@ spec:
 **PDB strategies**:
 
 `yaml
-# Critical service — always keep most available
+# Critical service ï¿½ always keep most available
 apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:
@@ -253,7 +253,7 @@ spec:
     matchLabels:
       tier: critical
 
-# Batch job — can tolerate disruptions
+# Batch job ï¿½ can tolerate disruptions
 apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:
@@ -657,7 +657,7 @@ async function createHPA(name: string, deployment: string, min: number, max: num
     Q6: What is the difference between kubectl cordon and kubectl drain?
   </summary>
   <div class="tp-qa-answer">
-    <p>kubectl cordon marks a node as unschedulable — no new Pods are scheduled, but existing Pods continue running. kubectl drain cordons the node and then evicts all Pods (respecting PDBs), moving them to other nodes. Drain is used for maintenance; cordon is used before drain.</p>
+    <p>kubectl cordon marks a node as unschedulable ï¿½ no new Pods are scheduled, but existing Pods continue running. kubectl drain cordons the node and then evicts all Pods (respecting PDBs), moving them to other nodes. Drain is used for maintenance; cordon is used before drain.</p>
   </div>
   <button class="tp-qa-mark-btn">&#x2705; Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>
@@ -760,15 +760,15 @@ d) ConfigMap
 
 ## Exercises
 
-**Easy** — Deploy an Nginx with HPA that scales between 1-5 replicas based on CPU at 50% target. Generate load and watch it scale.
+**Easy** ï¿½ Deploy an Nginx with HPA that scales between 1-5 replicas based on CPU at 50% target. Generate load and watch it scale.
 
-**Medium** — Set up a canary deployment: deploy v1 (3 replicas) and v2 (1 replica) of an app. Use a Service to split traffic. Gradually shift to v2.
+**Medium** ï¿½ Set up a canary deployment: deploy v1 (3 replicas) and v2 (1 replica) of an app. Use a Service to split traffic. Gradually shift to v2.
 
-**Medium** — Create a PDB that ensures 2 Pods are always available. Deploy a Deployment with 3 replicas. Drain a node and observe that PDB prevents disruption.
+**Medium** ï¿½ Create a PDB that ensures 2 Pods are always available. Deploy a Deployment with 3 replicas. Drain a node and observe that PDB prevents disruption.
 
-**Hard** — Set up Prometheus and Grafana monitoring for a cluster. Configure HPA based on custom Prometheus metrics (requests per second). Generate load and verify autoscaling works.
+**Hard** ï¿½ Set up Prometheus and Grafana monitoring for a cluster. Configure HPA based on custom Prometheus metrics (requests per second). Generate load and verify autoscaling works.
 
-**Hard** — Perform a simulated cluster upgrade: create two node pools with different Kubernetes versions, migrate workloads from old to new using cordon/drain/uncordon, and verify zero downtime.
+**Hard** ï¿½ Perform a simulated cluster upgrade: create two node pools with different Kubernetes versions, migrate workloads from old to new using cordon/drain/uncordon, and verify zero downtime.
 
 
 ---

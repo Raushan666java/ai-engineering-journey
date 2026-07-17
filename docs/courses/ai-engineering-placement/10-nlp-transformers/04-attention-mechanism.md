@@ -1,4 +1,4 @@
-# Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention
+﻿# Attention Mechanism — Bahdanau, Luong, Self-Attention, Multi-Head Attention
 
 ## Learning Objectives
 

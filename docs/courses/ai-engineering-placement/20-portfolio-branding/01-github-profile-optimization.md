@@ -1,4 +1,4 @@
-# GitHub Profile Optimization
+﻿# GitHub Profile Optimization
 
 ## Learning Objectives
 

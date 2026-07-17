@@ -1,4 +1,4 @@
-# Collections — Lists, Tuples, Sets, and Dictionaries
+ï»¿# Collections ï¿½ Lists, Tuples, Sets, and Dictionaries
 
 ## Learning Objectives
 
@@ -57,7 +57,7 @@ print(numbers[0])     # 1
 print(numbers[-1])    # 5
 numbers[2] = 99       # [1, 2, 99, 4, 5]
 
-# Slicing — returns new list
+# Slicing ï¿½ returns new list
 print(numbers[1:4])   # [2, 99, 4]
 print(numbers[::-1])  # [5, 4, 99, 2, 1]
 `
@@ -80,7 +80,7 @@ items.clear()            # []
 
 # Searching and counting
 nums = [1, 2, 3, 2, 4, 2]
-print(nums.index(2))     # 1 — first occurrence
+print(nums.index(2))     # 1 ï¿½ first occurrence
 print(nums.count(2))     # 3
 print(5 in nums)         # False
 
@@ -93,29 +93,29 @@ nums.reverse()           # in-place reversal
 original = [3, 1, 4, 1, 5]
 sorted_copy = sorted(original)
 print(sorted_copy)       # [1, 1, 3, 4, 5]
-print(original)          # [3, 1, 4, 1, 5] — unchanged
+print(original)          # [3, 1, 4, 1, 5] ï¿½ unchanged
 `
 
 **List copying**:
 
 `python
-# Shallow copy — 3 approaches
+# Shallow copy ï¿½ 3 approaches
 a = [1, 2, [3, 4]]
 b = a.copy()         # method
 c = list(a)          # constructor
 d = a[:]             # slice
-print(b == a)  # True  — same values
-print(b is a)  # False — different objects
+print(b == a)  # True  ï¿½ same values
+print(b is a)  # False ï¿½ different objects
 
 # Shallow copy means nested objects are shared
 a[2].append(5)
-print(b[2])  # [3, 4, 5] — affected!
+print(b[2])  # [3, 4, 5] ï¿½ affected!
 
-# Deep copy — fully independent
+# Deep copy ï¿½ fully independent
 import copy
 e = copy.deepcopy(a)
 a[2].append(6)
-print(e[2])  # [3, 4, 5] — independent
+print(e[2])  # [3, 4, 5] ï¿½ independent
 `
 
 ---
@@ -152,7 +152,7 @@ print(transposed)  # [[1, 3, 5], [2, 4, 6]]
 
 ## 4.3 Tuples
 
-Tuples are immutable sequences — they cannot be modified after creation.
+Tuples are immutable sequences ï¿½ they cannot be modified after creation.
 
 `python
 # Creation
@@ -194,7 +194,7 @@ from collections import namedtuple
 Point = namedtuple("Point", ["x", "y", "z"])
 p = Point(1, 2, 3)
 print(p.x, p.y, p.z)  # 1 2 3
-print(p[0])            # 1 — indexable like tuple
+print(p[0])            # 1 ï¿½ indexable like tuple
 x, y, z = p            # unpackable
 `
 
@@ -216,7 +216,7 @@ Sets are unordered collections of unique, hashable elements with O(1) membership
 
 `python
 # Creation
-empty = set()                    # not {} — that's empty dict
+empty = set()                    # not {} ï¿½ that's empty dict
 numbers = {1, 2, 3, 4, 5}
 from_list = set([1, 2, 2, 3, 3])
 print(from_list)                 # {1, 2, 3}
@@ -228,9 +228,9 @@ print(99 in numbers)  # False
 # Adding and removing
 nums = {1, 2, 3}
 nums.add(4)          # {1, 2, 3, 4}
-nums.add(2)          # {1, 2, 3, 4} — no effect (already present)
-nums.discard(2)      # {1, 3, 4} — no error if missing
-nums.remove(1)       # {3, 4} — raises KeyError if missing
+nums.add(2)          # {1, 2, 3, 4} ï¿½ no effect (already present)
+nums.discard(2)      # {1, 3, 4} ï¿½ no error if missing
+nums.remove(1)       # {3, 4} ï¿½ raises KeyError if missing
 popped = nums.pop()  # removes and returns arbitrary element
 nums.clear()         # set()
 `
@@ -249,11 +249,11 @@ print(a ^ b)   # Symmetric:    {1, 2, 5, 6} (in either, not both)
 
 # Comparison
 print(a == b)           # False
-print({1, 2} < a)       # True — proper subset
-print(a > {1, 2})       # True — proper superset
-print(a.isdisjoint(b))  # False — they share {3, 4}
+print({1, 2} < a)       # True ï¿½ proper subset
+print(a > {1, 2})       # True ï¿½ proper superset
+print(a.isdisjoint(b))  # False ï¿½ they share {3, 4}
 
-# Frozen set — immutable, hashable
+# Frozen set ï¿½ immutable, hashable
 fs = frozenset([1, 2, 3])
 print(fs)  # frozenset({1, 2, 3})
 `
@@ -273,8 +273,8 @@ comprehension = {x: x**2 for x in range(5)}
 
 # Access
 print(scores["Alice"])       # 95
-print(scores.get("David"))   # None — safe access
-print(scores.get("David", 0))  # 0 — with default
+print(scores.get("David"))   # None ï¿½ safe access
+print(scores.get("David", 0))  # 0 ï¿½ with default
 
 # KeyError for missing key
 # print(scores["David"])  # KeyError
@@ -337,7 +337,7 @@ for grade, name in students:
     groups[grade].append(name)
 print(dict(groups))  # {'A': ['Alice', 'Charlie'], 'B': ['Bob']}
 
-# Default factory — nested dict
+# Default factory ï¿½ nested dict
 nested = defaultdict(lambda: defaultdict(int))
 nested["Alice"]["math"] = 95
 nested["Bob"]["science"] = 88
@@ -361,7 +361,7 @@ print(counter.most_common(2))  # [('i', 4), ('s', 4)]
 c1 = Counter(a=3, b=1)
 c2 = Counter(a=1, b=2)
 print(c1 + c2)  # Counter({'a': 4, 'b': 3})
-print(c1 - c2)  # Counter({'a': 2}) — only positive counts
+print(c1 - c2)  # Counter({'a': 2}) ï¿½ only positive counts
 `
 
 ---
@@ -372,7 +372,7 @@ print(c1 - c2)  # Counter({'a': 2}) — only positive counts
 
 | Operation | List | Set | Dict | Tuple |
 |-----------|------|-----|------|-------|
-| Index/Access | O(1) | — | O(1) | O(1) |
+| Index/Access | O(1) | ï¿½ | O(1) | O(1) |
 | Search/Contains | O(n) | O(1) | O(1) avg | O(n) |
 | Insert/Append | O(1) amortized | O(1) | O(1) | Immutable |
 | Delete | O(n) | O(1) | O(1) | Immutable |
@@ -423,16 +423,16 @@ console.log(Object.entries(obj));
 
 ## Summary
 
-- Lists are ordered, mutable sequences — use for indexed collections that may change
-- Tuples are immutable sequences — use for fixed records and as dictionary keys
-- Sets store unique elements with O(1) membership — use for deduplication and set math
-- Dictionaries map keys to values with O(1) lookup — use for fast access by identifier
+- Lists are ordered, mutable sequences ï¿½ use for indexed collections that may change
+- Tuples are immutable sequences ï¿½ use for fixed records and as dictionary keys
+- Sets store unique elements with O(1) membership ï¿½ use for deduplication and set math
+- Dictionaries map keys to values with O(1) lookup ï¿½ use for fast access by identifier
 - List comprehensions [expr for x in iter if cond] are Pythonic and efficient
-- defaultdict auto-initializes missing keys — ideal for grouping and counting
+- defaultdict auto-initializes missing keys ï¿½ ideal for grouping and counting
 - Counter extends dict with counting convenience and arithmetic operations
 - Deep copying with copy.deepcopy() creates fully independent nested structures
 - Named tuples combine tuple performance with attribute access
-- Choose collections based on access patterns — list for sequence, set for membership, dict for mapping
+- Choose collections based on access patterns ï¿½ list for sequence, set for membership, dict for mapping
 
 ## Practical Takeaways
 
@@ -469,7 +469,7 @@ amedtuple | list (allows modification) |
 
 <details class="tp-qa-card" data-qid="p02-s04-q4">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q4: What is the difference between a set and a frozenset?</summary>
-  <div class="tp-qa-answer"><p>set is mutable — can add, remove, discard, pop elements. frozenset is immutable and hashable, so it can be used as a dictionary key or element of another set. Both have O(1) membership testing and support standard set operations (union, intersection, etc.). Use frozenset when you need an immutable, hashable collection of unique items.</p></div>
+  <div class="tp-qa-answer"><p>set is mutable ï¿½ can add, remove, discard, pop elements. frozenset is immutable and hashable, so it can be used as a dictionary key or element of another set. Both have O(1) membership testing and support standard set operations (union, intersection, etc.). Use frozenset when you need an immutable, hashable collection of unique items.</p></div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button><button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
@@ -481,7 +481,7 @@ amedtuple | list (allows modification) |
 
 <details class="tp-qa-card" data-qid="p02-s04-q6">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q6: How do you remove duplicates from a list while preserving order?</summary>
-  <div class="tp-qa-answer"><p>Use a loop with a set to track seen items: <code>seen = set(); [x for x in items if not (x in seen or seen.add(x))]</code>. In Python 3.7+, dict preserves insertion order so <code>list(dict.fromkeys(items))</code> also works. Using set alone loses order. For unhashable types, use a list for tracking (O(n²) but necessary).</p></div>
+  <div class="tp-qa-answer"><p>Use a loop with a set to track seen items: <code>seen = set(); [x for x in items if not (x in seen or seen.add(x))]</code>. In Python 3.7+, dict preserves insertion order so <code>list(dict.fromkeys(items))</code> also works. Using set alone loses order. For unhashable types, use a list for tracking (O(nï¿½) but necessary).</p></div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button><button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
@@ -499,7 +499,7 @@ amedtuple | list (allows modification) |
 
 <details class="tp-qa-card" data-qid="p02-s04-q9">
   <summary class="tp-qa-question"><span class="tp-qa-status"></span>Q9: How do namedtuple and dataclass differ?</summary>
-  <div class="tp-qa-answer"><p>namedtuple creates immutable tuple subclasses with named fields — lightweight but immutable. dataclass (Python 3.7+) creates mutable classes with less boilerplate, type annotations, and more features (default factories, __slots__, etc.). Use namedtuple for simple immutable records, dataclass for richer data containers with behavior and mutable fields.</p></div>
+  <div class="tp-qa-answer"><p>namedtuple creates immutable tuple subclasses with named fields ï¿½ lightweight but immutable. dataclass (Python 3.7+) creates mutable classes with less boilerplate, type annotations, and more features (default factories, __slots__, etc.). Use namedtuple for simple immutable records, dataclass for richer data containers with behavior and mutable fields.</p></div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button><button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
@@ -558,18 +558,18 @@ d) [1, 2, 3]
 
 ## Exercises
 
-**Easy** — Write a function that returns the unique elements of a list in the order they first appear.
+**Easy** ï¿½ Write a function that returns the unique elements of a list in the order they first appear.
 
-**Easy** — Use a dict comprehension to invert a dictionary (swap keys and values), assuming all values are unique.
+**Easy** ï¿½ Use a dict comprehension to invert a dictionary (swap keys and values), assuming all values are unique.
 
-**Medium** — Write a function that groups a list of tuples by the first element using defaultdict.
+**Medium** ï¿½ Write a function that groups a list of tuples by the first element using defaultdict.
 
-**Medium** — Given two lists, find the intersection, union, and symmetric difference using sets.
+**Medium** ï¿½ Given two lists, find the intersection, union, and symmetric difference using sets.
 
-**Hard** — Implement a DeepCounter that counts all elements in a nested structure of lists and dicts recursively.
+**Hard** ï¿½ Implement a DeepCounter that counts all elements in a nested structure of lists and dicts recursively.
 
-**Hard** — Write a function merge_nested that deep-merges two dictionaries with nested dicts, summing values for overlapping numeric keys.
+**Hard** ï¿½ Write a function merge_nested that deep-merges two dictionaries with nested dicts, summing values for overlapping numeric keys.
 
 ---
 
-> **Next**: [05 — Functions ?](05-functions.md)
+> **Next**: [05 ï¿½ Functions ?](05-functions.md)

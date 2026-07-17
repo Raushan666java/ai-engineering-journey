@@ -1,4 +1,4 @@
-# Word Embeddings — Word2Vec, GloVe, FastText, Subword Tokenization
+﻿# Word Embeddings — Word2Vec, GloVe, FastText, Subword Tokenization
 
 ## Learning Objectives
 

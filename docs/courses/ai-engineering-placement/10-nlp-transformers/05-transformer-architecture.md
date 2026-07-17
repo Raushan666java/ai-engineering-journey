@@ -1,4 +1,4 @@
-# Transformer Architecture — Encoder-Decoder, Positional Encoding, Layer Norm
+﻿# Transformer Architecture — Encoder-Decoder, Positional Encoding, Layer Norm
 
 ## Learning Objectives
 

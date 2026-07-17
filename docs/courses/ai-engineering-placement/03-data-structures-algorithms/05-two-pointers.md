@@ -1,4 +1,4 @@
-# Two Pointers
+ï»¿# Two Pointers
 
 ## Learning Objectives
 
@@ -613,12 +613,12 @@ console.log(threeSum([-1, 0, 1, 2, -1, -4]));
 
 <details class="tp-qa-card">
   <summary><strong>Q4: How do I find the cycle start in a linked list?</strong></summary>
-  After the first meeting point in Floyd's algorithm, reset one pointer to the head. Move both at the same speed (one step each). They will meet at the cycle start. Proof: Let distance from head to cycle start be a, cycle start to meeting point be b, cycle length be c. Slow traveled a+b. Fast traveled a+b+kc for some integer k = 2(a+b). So a+b = kc, meaning a = kc - b. Starting from head (distance 0) and from meeting point, they meet at distance a from head — the cycle start.
+  After the first meeting point in Floyd's algorithm, reset one pointer to the head. Move both at the same speed (one step each). They will meet at the cycle start. Proof: Let distance from head to cycle start be a, cycle start to meeting point be b, cycle length be c. Slow traveled a+b. Fast traveled a+b+kc for some integer k = 2(a+b). So a+b = kc, meaning a = kc - b. Starting from head (distance 0) and from meeting point, they meet at distance a from head ï¿½ the cycle start.
 </details>
 
 <details class="tp-qa-card">
   <summary><strong>Q5: What is the space complexity advantage of two pointers?</strong></summary>
-  Two pointers use O(1) extra space — just a few integer variables tracking array indices or node references. This is significantly better than hash-map-based approaches that may use O(n) space. For large datasets (millions of elements), the constant memory footprint makes two-pointer solutions more scalable and cache-friendly. Some interviewers explicitly ask for O(1) space, making two pointers the only viable approach.
+  Two pointers use O(1) extra space ï¿½ just a few integer variables tracking array indices or node references. This is significantly better than hash-map-based approaches that may use O(n) space. For large datasets (millions of elements), the constant memory footprint makes two-pointer solutions more scalable and cache-friendly. Some interviewers explicitly ask for O(1) space, making two pointers the only viable approach.
 </details>
 
 <details class="tp-qa-card">
@@ -648,7 +648,7 @@ console.log(threeSum([-1, 0, 1, 2, -1, -4]));
 
 <details class="tp-qa-card">
   <summary><strong>Q11: What edge cases commonly break two-pointer solutions?</strong></summary>
-  (1) Empty arrays or single-element arrays — check early. (2) Arrays with all identical elements — duplicate skipping logic fails if not careful. (3) Target sum requiring the same element twice — ensure left != right. (4) Integer overflow for large sums or areas — use 64-bit intermediates. (5) Off-by-one in pointer movement conditions — test with exactly one matching pair. (6) Three-sum where all triplets are valid — skipping duplicates is critical for performance. (7) Linked lists with odd/even length parity — the fast pointer may be null at different points.
+  (1) Empty arrays or single-element arrays ï¿½ check early. (2) Arrays with all identical elements ï¿½ duplicate skipping logic fails if not careful. (3) Target sum requiring the same element twice ï¿½ ensure left != right. (4) Integer overflow for large sums or areas ï¿½ use 64-bit intermediates. (5) Off-by-one in pointer movement conditions ï¿½ test with exactly one matching pair. (6) Three-sum where all triplets are valid ï¿½ skipping duplicates is critical for performance. (7) Linked lists with odd/even length parity ï¿½ the fast pointer may be null at different points.
 </details>
 
 <details class="tp-qa-card">

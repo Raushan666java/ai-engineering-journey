@@ -1,4 +1,4 @@
-# Control Flow — Conditionals, Loops, and Iteration
+# Control Flow â€” Conditionals, Loops, and Iteration
 
 ## Learning Objectives
 
@@ -71,10 +71,10 @@ bool(" ")     # True (non-empty string)
 bool([0])     # True (non-empty list)
 `
 
-**Nested conditionals** should be kept shallow — 2 levels max. Use guard clauses to flatten:
+**Nested conditionals** should be kept shallow ï¿½ 2 levels max. Use guard clauses to flatten:
 
 `python
-# Deep nesting — hard to read
+# Deep nesting ï¿½ hard to read
 def process_user(user):
     if user:
         if user.is_active:
@@ -87,7 +87,7 @@ def process_user(user):
     else:
         print("No user provided")
 
-# Flattened with guard clauses — easier to follow
+# Flattened with guard clauses ï¿½ easier to follow
 def process_user_flat(user):
     if not user:
         print("No user provided")
@@ -109,7 +109,7 @@ age = 20
 status = "Adult" if age >= 18 else "Minor"
 print(status)  # Adult
 
-# Chained ternary — use sparingly
+# Chained ternary ï¿½ use sparingly
 score = 85
 grade = "A" if score >= 90 else "B" if score >= 80 else "C" if score >= 70 else "F"
 print(grade)  # B
@@ -137,10 +137,10 @@ for i in range(2, 10, 3):
     print(i, end=" ")  # 2 5 8
 print()
 
-# range(start, stop, step) — stop is exclusive
+# range(start, stop, step) ï¿½ stop is exclusive
 `
 
-**enumerate()** — access both index and value:
+**enumerate()** ï¿½ access both index and value:
 
 `python
 colors = ["red", "green", "blue"]
@@ -152,7 +152,7 @@ for index, color in enumerate(colors, start=1):
 # 3: blue
 `
 
-**zip()** — iterate multiple sequences in parallel:
+**zip()** ï¿½ iterate multiple sequences in parallel:
 
 `python
 names = ["Alice", "Bob", "Charlie"]
@@ -169,7 +169,7 @@ for name, score, grade in zip(names, scores, grades):
 a = [1, 2, 3]
 b = ["x", "y"]
 for pair in zip(a, b):
-    print(pair)  # (1, 'x') then (2, 'y') — stops at shortest
+    print(pair)  # (1, 'x') then (2, 'y') ï¿½ stops at shortest
 `
 
 **Iterating dictionaries**:
@@ -201,7 +201,7 @@ while count < 5:
     count += 1
 # Output: 0 1 2 3 4
 
-# Sentinel pattern — loop until a sentinel value
+# Sentinel pattern ï¿½ loop until a sentinel value
 total = 0
 while True:
     value = input("Enter a number (q to quit): ")
@@ -211,10 +211,10 @@ while True:
 print(f"Total: {total}")
 `
 
-**Avoid infinite loops** — ensure the condition eventually becomes False:
+**Avoid infinite loops** ï¿½ ensure the condition eventually becomes False:
 
 `python
-# Infinite loop — CTRL+C to stop
+# Infinite loop ï¿½ CTRL+C to stop
 x = 0
 while x >= 0:
     x += 1
@@ -222,13 +222,13 @@ while x >= 0:
         break  # safety valve
 print(f"Reached {x}")
 
-# Correct pattern — increment inside loop
+# Correct pattern ï¿½ increment inside loop
 def sum_to(n):
     total = 0
     i = 1
     while i <= n:
         total += i
-        i += 1  # critical — prevents infinite loop
+        i += 1  # critical ï¿½ prevents infinite loop
     return total
 
 print(sum_to(100))  # 5050
@@ -240,7 +240,7 @@ print(sum_to(100))  # 5050
 
 Python provides four statements to control loop execution.
 
-**reak** — exits the loop immediately:
+**reak** ï¿½ exits the loop immediately:
 
 `python
 for num in range(10):
@@ -258,7 +258,7 @@ for i in range(3):
     print()
 `
 
-**continue** — skips the rest of the current iteration and moves to the next:
+**continue** ï¿½ skips the rest of the current iteration and moves to the next:
 
 `python
 for num in range(10):
@@ -268,11 +268,11 @@ for num in range(10):
 # Output: 1 3 5 7 9
 `
 
-**pass** — no-op placeholder for syntactically required blocks:
+**pass** ï¿½ no-op placeholder for syntactically required blocks:
 
 `python
 def not_implemented_yet():
-    pass  # placeholder — will implement later
+    pass  # placeholder ï¿½ will implement later
 
 class Placeholder:
     pass  # class body cannot be empty
@@ -281,10 +281,10 @@ if True:
     pass  # conditional block cannot be empty
 `
 
-**else on loops** — executes only if the loop completed normally (no reak):
+**else on loops** ï¿½ executes only if the loop completed normally (no reak):
 
 `python
-# else after for — executes when no break occurred
+# else after for ï¿½ executes when no break occurred
 def find_item(items, target):
     for i, item in enumerate(items):
         if item == target:
@@ -296,14 +296,14 @@ def find_item(items, target):
 find_item([1, 2, 3, 4], 3)  # Found at index 2
 find_item([1, 2, 3, 4], 5)  # 5 not found
 
-# else after while — also works
+# else after while ï¿½ also works
 n = 0
 while n < 3:
     print(n, end=" ")
     n += 1
 else:
-    print("— loop completed without break")
-# Output: 0 1 2 — loop completed without break
+    print("ï¿½ loop completed without break")
+# Output: 0 1 2 ï¿½ loop completed without break
 `
 
 ---
@@ -312,7 +312,7 @@ else:
 
 Comprehensions provide a concise syntax for creating collections from iterables.
 
-**List comprehension** — most common:
+**List comprehension** ï¿½ most common:
 
 `python
 # Syntax: [expression for item in iterable if condition]
@@ -364,10 +364,10 @@ unique_lengths = {len(word) for word in ["hello", "world", "python", "hi"]}
 print(unique_lengths)  # {2, 5, 6}
 `
 
-**Generator expression** — memory-efficient, produces values on demand:
+**Generator expression** ï¿½ memory-efficient, produces values on demand:
 
 `python
-# (expression for item in iterable) — note parentheses
+# (expression for item in iterable) ï¿½ note parentheses
 import sys
 
 list_comp = [x**2 for x in range(10000)]
@@ -397,11 +397,11 @@ Every or loop in Python uses the **iteration protocol** under the hood.
 **The protocol**: An object is iterable if it implements __iter__(), which returns an iterator. An iterator implements __next__(), which returns the next element or raises StopIteration.
 
 `python
-# Manual iteration — what for does internally
+# Manual iteration ï¿½ what for does internally
 fruits = ["apple", "banana", "cherry"]
 iterator = iter(fruits)  # calls fruits.__iter__()
 
-print(next(iterator))  # apple — calls iterator.__next__()
+print(next(iterator))  # apple ï¿½ calls iterator.__next__()
 print(next(iterator))  # banana
 print(next(iterator))  # cherry
 # print(next(iterator))  # StopIteration raised
@@ -435,7 +435,7 @@ for num in CountDown(5):
     print(num, end=" ")  # 5 4 3 2 1 0
 `
 
-**Simpler with generator** — functions using yield are generators:
+**Simpler with generator** ï¿½ functions using yield are generators:
 
 `python
 def count_down(start):
@@ -455,16 +455,16 @@ print(next(gen))  # 0
 # print(next(gen))  # StopIteration
 `
 
-**itertools — advanced iteration toolkit**:
+**itertools ï¿½ advanced iteration toolkit**:
 
 `python
 from itertools import chain, cycle, product, permutations, combinations
 
-# chain — combine iterables
+# chain ï¿½ combine iterables
 result = list(chain([1, 2], [3, 4], [5]))
 print(result)  # [1, 2, 3, 4, 5]
 
-# cycle — repeat infinitely
+# cycle ï¿½ repeat infinitely
 counter = 0
 for item in cycle(["A", "B", "C"]):
     print(item, end=" ")
@@ -473,15 +473,15 @@ for item in cycle(["A", "B", "C"]):
         break
 # Output: A B C A B C
 
-# product — Cartesian product
+# product ï¿½ Cartesian product
 print(list(product([1, 2], ["x", "y"])))
 # [(1, 'x'), (1, 'y'), (2, 'x'), (2, 'y')]
 
-# permutations — all orderings
+# permutations ï¿½ all orderings
 print(list(permutations([1, 2, 3], 2)))
 # [(1, 2), (1, 3), (2, 1), (2, 3), (3, 1), (3, 2)]
 
-# combinations — all subsets
+# combinations ï¿½ all subsets
 print(list(combinations([1, 2, 3], 2)))
 # [(1, 2), (1, 3), (2, 3)]
 `
@@ -528,7 +528,7 @@ function range(n: number): number[] {
 - or loops iterate over any iterable; use enumerate() for index+value, zip() for parallel
 - while loops run until the condition is False; always ensure termination
 - reak exits the loop immediately; continue skips to the next iteration
-- else on loops runs only if no reak occurred — useful for search patterns
+- else on loops runs only if no reak occurred ï¿½ useful for search patterns
 - List comprehensions [expr for x in iter if cond] are more Pythonic than map/ilter
 - Generator expressions (expr for x in iter) are memory-efficient for large datasets
 - The iteration protocol (__iter__ + __next__ + StopIteration) powers all Python loops
@@ -556,10 +556,10 @@ function range(n: number): number[] {
   <div class="tp-qa-answer">
     <p><strong>for loops</strong> iterate over a known sequence (iterable). They have a definite number of iterations determined by the iterable's length.</p>
     <p><strong>while loops</strong> repeat as long as a condition is True. They are used when the number of iterations is unknown.</p>
-    <pre><code># for — know the sequence
+    <pre><code># for ï¿½ know the sequence
 for item in collection: ...
 
-# while — unknown iterations
+# while ï¿½ unknown iterations
 while not file.closed: ...</code></pre>
   </div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button>
@@ -578,8 +578,8 @@ while not file.closed: ...</code></pre>
         print("Found")
         break
 else:
-    print("Not found — no break occurred")</code></pre>
-    <p>This is commonly called "search loop with else" — it's Python's way of encoding "if not found" without a flag variable.</p>
+    print("Not found ï¿½ no break occurred")</code></pre>
+    <p>This is commonly called "search loop with else" ï¿½ it's Python's way of encoding "if not found" without a flag variable.</p>
   </div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">?? Bookmark</button>
@@ -597,10 +597,10 @@ else:
       <li><strong>One-time use</strong>: Only iterating the result once</li>
       <li><strong>Chaining operations</strong>: Multiple transformations on large data without intermediate lists</li>
     </ul>
-    <pre><code># List comprehension — all in memory
+    <pre><code># List comprehension ï¿½ all in memory
 squares = [x**2 for x in range(10_000_000)]  # ~80 MB
 
-# Generator expression — lazy evaluation
+# Generator expression ï¿½ lazy evaluation
 squares = (x**2 for x in range(10_000_000))   # ~200 bytes
 total = sum(squares)  # compute on the fly</code></pre>
   </div>
@@ -646,7 +646,7 @@ print(next(it))         # 3</code></pre>
     Q6: What does pass do in Python and when is it useful?
   </summary>
   <div class="tp-qa-answer">
-    <p><code>pass</code> is a no-op — it does nothing and is used as a syntactic placeholder where Python requires a statement but you don't want any action.</p>
+    <p><code>pass</code> is a no-op ï¿½ it does nothing and is used as a syntactic placeholder where Python requires a statement but you don't want any action.</p>
     <p>Common uses: empty function body, empty class definition, catching an exception without handling it.</p>
     <pre><code>class CustomError(Exception):
     pass
@@ -681,10 +681,10 @@ flat = [num for row in matrix for num in row]
   </summary>
   <div class="tp-qa-answer">
     <p>Short-circuit evaluation means that <code>and</code>/<code>or</code> stop evaluating as soon as the result is determined:</p>
-    <pre><code># and — stops at first False
+    <pre><code># and ï¿½ stops at first False
 result = False and expensive_function()  # NOT called
 
-# or — stops at first True
+# or ï¿½ stops at first True
 result = True or expensive_function()   # NOT called</code></pre>
   </div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button>
@@ -714,7 +714,7 @@ for name, age in zip(names, ages):
     Q10: How does range() work in Python and what are its advantages over a list?
   </summary>
   <div class="tp-qa-answer">
-    <p><code>range(start, stop, step)</code> returns an immutable sequence of numbers. It is lazy — it doesn't store all values in memory but computes them on demand.</p>
+    <p><code>range(start, stop, step)</code> returns an immutable sequence of numbers. It is lazy ï¿½ it doesn't store all values in memory but computes them on demand.</p>
     <pre><code>range(5)          # 0, 1, 2, 3, 4
 range(2, 8)       # 2, 3, 4, 5, 6, 7
 range(1, 10, 2)   # 1, 3, 5, 7, 9</code></pre>
@@ -780,18 +780,18 @@ d)  
 
 ## Exercises
 
-**Easy** — Write a function that takes a list of numbers and returns a new list containing only the even numbers, using a list comprehension.
+**Easy** ï¿½ Write a function that takes a list of numbers and returns a new list containing only the even numbers, using a list comprehension.
 
-**Easy** — Use enumerate() to print each character of a string with its index (starting from 1).
+**Easy** ï¿½ Use enumerate() to print each character of a string with its index (starting from 1).
 
-**Medium** — Write a function latten that takes a nested list of arbitrary depth and returns a flat list using recursion and a generator.
+**Medium** ï¿½ Write a function latten that takes a nested list of arbitrary depth and returns a flat list using recursion and a generator.
 
-**Medium** — Implement a custom FibonacciIterator class that yields Fibonacci numbers up to a given limit using the iteration protocol.
+**Medium** ï¿½ Implement a custom FibonacciIterator class that yields Fibonacci numbers up to a given limit using the iteration protocol.
 
-**Hard** — Write a function chunked that yields chunks of a given size from an iterable: chunked([1,2,3,4,5], 2) yields [1,2], [3,4], [5]. Use the iterator protocol directly.
+**Hard** ï¿½ Write a function chunked that yields chunks of a given size from an iterable: chunked([1,2,3,4,5], 2) yields [1,2], [3,4], [5]. Use the iterator protocol directly.
 
-**Hard** — Implement zip_with that takes a function and multiple iterables, and yields unc(a, b, ...) for each tuple of elements, stopping at the shortest.
+**Hard** ï¿½ Implement zip_with that takes a function and multiple iterables, and yields unc(a, b, ...) for each tuple of elements, stopping at the shortest.
 
 ---
 
-> **Next**: [03 — Strings & Formatting ?](03-strings-and-formatting.md)
+> **Next**: [03 ï¿½ Strings & Formatting ?](03-strings-and-formatting.md)

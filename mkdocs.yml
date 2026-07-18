@@ -1917,6 +1917,20 @@ nav:
     - "Ch 13: Learning Analytics & Self-Measurement": courses/learning-how-to-learn/ch-13-learning-analytics.md
     - "Ch 14: Social Learning & Communities": courses/learning-how-to-learn/ch-14-social-learning-communities.md
     - Archive (Full Reference): courses/learning-how-to-learn/archive-complete-reference.md
+  - "🧠 L2L Practical Edition":
+    - Overview: courses/learning-how-to-learn-practical/index.md
+    - "Ch 1: Your Learning OS": courses/learning-how-to-learn-practical/ch-01-your-learning-os.md
+    - "Ch 2: The 30-Day Sprint": courses/learning-how-to-learn-practical/ch-02-the-30-day-sprint.md
+    - "Ch 3: Daily Workflow & Energy": courses/learning-how-to-learn-practical/ch-03-daily-workflow-energy.md
+    - "Ch 4: Active Recall & Spaced Repetition": courses/learning-how-to-learn-practical/ch-04-active-recall-spaced-repetition.md
+    - "Ch 5: Deep Work & Focus": courses/learning-how-to-learn-practical/ch-05-deep-work-focus.md
+    - "Ch 6: Learning From Code": courses/learning-how-to-learn-practical/ch-06-learning-from-code.md
+    - "Ch 7: DSA Practice System": courses/learning-how-to-learn-practical/ch-07-dsa-practice-system.md
+    - "Ch 8: System Design Study Plan": courses/learning-how-to-learn-practical/ch-08-system-design-study-plan.md
+    - "Ch 9: AI/ML Learning Strategy": courses/learning-how-to-learn-practical/ch-09-ai-ml-learning-strategy.md
+    - "Ch 10: Interview Prep Workflow": courses/learning-how-to-learn-practical/ch-10-interview-prep-workflow.md
+    - "Ch 11: Tracking & Course Correction": courses/learning-how-to-learn-practical/ch-11-tracking-course-correction.md
+    - "Ch 12: Building in Public & Teaching": courses/learning-how-to-learn-practical/ch-12-building-in-public-teaching.md
   - "🔄 Loop Engineering":
     - Overview: courses/loop-engineering/index.md
     - "Ch 1 — Loop Foundations": courses/loop-engineering/ch01-loop-foundations.md

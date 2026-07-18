@@ -6,6 +6,20 @@ After this chapter you will be able to strategically use LLMs during coding inte
 
 ## Theory
 
+```mermaid
+flowchart TD
+    A[Understand Problem] --> B{Use AI?}
+    B -->|Yes| C[Prompt AI]
+    C --> D[Review Output]
+    D --> E{Correct?}
+    E -->|No| F[Refine Prompt]
+    F --> C
+    E -->|Yes| G[Integrate & Test]
+    B -->|No| H[Write Manually]
+    H --> G
+    G --> I[Explain to Interviewer]
+```
+
 ### The New Interview Reality
 
 Several FAANG companies now allow or expect candidates to use AI tools during interviews. Google has experimented with Codelab (in-browser IDE with AI). Amazon's interview platform supports AI-assisted coding. The skill is no longer whether you can code without help, but how effectively you use the tools available.
@@ -78,7 +92,9 @@ Prepare for these by:
 3. Adding comments as you understand the code
 4. Being ready to rewrite parts manually if asked
 
-## Prompting Examples
+## Examples
+
+### Prompting Examples
 
 ### Example 1: Generating Boilerplate
 

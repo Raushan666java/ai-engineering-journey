@@ -4,6 +4,42 @@
 
 After this chapter you will have a structured practice plan covering all major DSA patterns, know which problems to solve for each company, and be able to identify the optimal approach for any LeetCode-style interview problem.
 
+## Theory
+
+### Problem-Solving Framework
+
+Every DSA problem follows a repeatable process:
+
+```mermaid
+flowchart TD
+    A[Understand Problem] --> B[Identify Pattern]
+    B --> C[Brute Force]
+    C --> D[Optimize]
+    D --> E[Write Code]
+    E --> F[Test Edge Cases]
+    F --> G[Analyze Complexity]
+    G --> H{Done?}
+    H -->|No| B
+    H -->|Yes| I[Move to Next Problem]
+```
+
+### Pattern Recognition
+
+The 19 patterns in this bank cover 95% of interview problems. To identify the pattern:
+- **Arrays**: sorting, hashing, prefix sums, cyclic sort
+- **Strings**: sliding window, two pointers, trie
+- **Trees/Graphs**: BFS for shortest path, DFS for exhaustive search
+- **DP**: overlapping subproblems, optimal substructure
+- **Greedy**: local optimum leads to global optimum
+
+### Complexity Targeting
+
+Match your approach to constraints:
+- n <= 20: O(2^n) backtracking or brute force
+- n <= 1000: O(n^2) nested loops
+- n <= 10^5: O(n log n) sorting or heap
+- n <= 10^7: O(n) single pass or hash map
+
 ## How to Use This Bank
 
 Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy ones for warm-up, Medium for core practice, Hard for mastery. Do not look at hints until you have spent at least 20 minutes per problem.
@@ -345,6 +381,66 @@ Total: 20-30 minutes per problem. If stuck for more than 5 minutes on coding, pa
 | 9 | String to Integer (atoi) | Medium | G, F, A | Skip whitespace, handle sign, overflow, non-digit chars |
 | 10 | Generate Parentheses | Medium | G, F, A | Backtracking: track open and close counts, add only if valid |
 
+
+## Examples
+
+### Example 1: Two Sum (Arrays & Hashing)
+
+```typescript
+function twoSum(nums: number[], target: number): number[] {
+    const seen: Record<number, number> = {}
+    for (let i = 0; i < nums.length; i++) {
+        const complement = target - nums[i]
+        if (complement in seen) return [seen[complement], i]
+        seen[nums[i]] = i
+    }
+    return []
+}
+```
+
+### Example 2: Binary Search on Rotated Array
+
+```typescript
+function search(nums: number[], target: number): number {
+    let lo = 0, hi = nums.length - 1
+    while (lo <= hi) {
+        const mid = (lo + hi) >> 1
+        if (nums[mid] === target) return mid
+        if (nums[lo] <= nums[mid]) {
+            if (target >= nums[lo] && target < nums[mid]) hi = mid - 1
+            else lo = mid + 1
+        } else {
+            if (target > nums[mid] && target <= nums[hi]) lo = mid + 1
+            else hi = mid - 1
+        }
+    }
+    return -1
+}
+```
+
+### Example 3: LRU Cache (Linked List + HashMap)
+
+```typescript
+class LRUCache {
+    private cache: Map<number, number> = new Map()
+    constructor(private capacity: number) {}
+    get(key: number): number {
+        if (!this.cache.has(key)) return -1
+        const val = this.cache.get(key)!
+        this.cache.delete(key)
+        this.cache.set(key, val)
+        return val
+    }
+    put(key: number, value: number): void {
+        if (this.cache.has(key)) this.cache.delete(key)
+        this.cache.set(key, value)
+        if (this.cache.size > this.capacity) {
+            const first = this.cache.keys().next().value
+            this.cache.delete(first!)
+        }
+    }
+}
+```
 
 ## Summary
 

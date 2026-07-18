@@ -6,6 +6,18 @@ After this chapter you will be able to identify common bugs in TypeScript and Py
 
 ## Theory
 
+```mermaid
+flowchart TD
+    A[Reproduce Bug] --> B[Read Error/Trace]
+    B --> C[Form Hypothesis]
+    C --> D[Isolate via Logs]
+    D --> E{Found?}
+    E -->|No| C
+    E -->|Yes| F[Fix]
+    F --> G[Verify Tests Pass]
+    G --> H[Check Edge Cases]
+```
+
 ### Debugging Interview Format
 
 Two common formats:
@@ -45,7 +57,9 @@ In code review rounds, your tone matters as much as your findings:
 - Suggest specific fixes ("we can add a guard clause here")
 - Ask questions rather than dictate ("does this handle the case where x is null?")
 
-## Buggy Code Examples
+## Examples
+
+### Buggy Code Examples
 
 ### Example 1: Array Index Bug
 

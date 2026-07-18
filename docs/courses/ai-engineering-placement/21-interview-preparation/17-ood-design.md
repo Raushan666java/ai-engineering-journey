@@ -6,6 +6,19 @@ After this chapter you will be able to design class hierarchies for common inter
 
 ## Theory
 
+```mermaid
+flowchart TD
+    A[Requirements] --> B[Identify Entities]
+    B --> C[Define Relationships]
+    C --> D[Class Hierarchy]
+    D --> E[Interfaces]
+    E --> F[Edge Cases]
+    F --> G[Concurrency]
+    G --> H{Tradeoffs}
+    H -->|Refine| B
+    H -->|Done| I[Code]
+```
+
 ### What OOD Interviews Test
 
 OOD rounds assess your ability to model real-world systems with clean abstractions. Unlike system design (distributed, high-scale), OOD focuses on:
@@ -48,7 +61,9 @@ Common patterns used in OOD solutions:
 - Command: queuing operations (elevator requests)
 - State: object behaves differently based on internal state (elevator moving/idle)
 
-## Problem 1: Parking Lot
+## Examples
+
+### Problem 1: Parking Lot
 
 ### Requirements
 

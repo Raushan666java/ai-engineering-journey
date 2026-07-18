@@ -348,6 +348,10 @@ nav:
       - "Math And Probability Interview": courses/ai-engineering-placement/21-interview-preparation/13-math-and-probability-interview.md
       - "ML System Design Interview": courses/ai-engineering-placement/21-interview-preparation/14-ml-system-design-interview.md
       - "FAANG Company Deep Dives": courses/ai-engineering-placement/21-interview-preparation/15-faang-company-deep-dives.md
+      - "DSA Problem Bank": courses/ai-engineering-placement/21-interview-preparation/16-dsa-problem-bank.md
+      - "Low-Level And OOD Design": courses/ai-engineering-placement/21-interview-preparation/17-ood-design.md
+      - "Debugging And Code Review": courses/ai-engineering-placement/21-interview-preparation/18-debugging-code-review.md
+      - "AI Assisted Coding Interviews": courses/ai-engineering-placement/21-interview-preparation/19-ai-assisted-coding.md
   - "⚡ Modern AI Engineering":
     - Overview: courses/modern-ai-engineering/index.md
     - '01 - Intro to AI Engineering': courses/modern-ai-engineering/01-introduction-to-ai-engineering.md

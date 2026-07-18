@@ -23,6 +23,10 @@ Comprehensive interview preparation covering DSA patterns, SQL, backend coding, 
 | 13 | [Math & Probability Interview](13-math-and-probability-interview.md) | Bayes, MLE, distributions, linear algebra, information theory | 15 |
 | 14 | [ML System Design Interview](14-ml-system-design-interview.md) | recommendation systems, feature stores, model serving, A/B testing | 15 |
 | 15 | [FAANG Company Deep Dives](15-faang-company-deep-dives.md) | Amazon LPs, Google Googleyness, Meta PE, process strategy | 15 |
+| 16 | [DSA Problem Bank](16-dsa-problem-bank.md) | 120+ curated problems, 15 patterns, time management | 20 |
+| 17 | [Low-Level & OOD Design](17-ood-design.md) | OOP principles, design patterns, parking lot, elevator, vending machine | 15 |
+| 18 | [Debugging & Code Review](18-debugging-code-review.md) | systematic debugging, code review checklist, common defects | 15 |
+| 19 | [AI-Assisted Coding Interviews](19-ai-assisted-coding.md) | AI tools, prompting, ethics, mock protocol, limitations | 15 |
 
 ## Learning Path
 

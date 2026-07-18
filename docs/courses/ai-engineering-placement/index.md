@@ -1,6 +1,6 @@
 # Backend + AI Engineer — Complete Placement Course
 
-> **Zero to job-ready in 12 months. 21 subjects, 195+ sub-chapters, 2,100+ interview Q&A. All in browser localStorage — zero backend.**
+> **Zero to job-ready in 12 months. 22 subjects, 210+ sub-chapters, 2,300+ interview Q&A. All in browser localStorage — zero backend.**
 
 [![Build Status](https://img.shields.io/badge/status-in--progress-yellow)](https://)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -12,9 +12,9 @@ This is a **single, unified placement course** for software developers targeting
 
 | Feature | Detail |
 |---------|--------|
-| **Subjects** | 21 broad subject areas (Python → Interview Prep) |
-| **Sub-chapters** | 195+ focused topic files, each 400+ lines |
-| **Interview Q&A** | 2,100+ questions with expandable answers — click to reveal |
+| **Subjects** | 22 broad subject areas (Core CS → Interview Prep) |
+| **Sub-chapters** | 210+ focused topic files, each 400+ lines |
+| **Interview Q&A** | 2,300+ questions with expandable answers — click to reveal |
 | **Chapter Quizzes** | 5 MCQ per sub-chapter = 975+ total questions |
 | **Exercises** | 5 hands-on per sub-chapter = 975+ exercises |
 | **Capstone Projects** | 5 production-grade projects, from beginner to SaaS |
@@ -68,7 +68,7 @@ flowchart LR
     end
     subgraph M6[Module 6: Career]
         CAP[Capstones<br/>5 ch] --> PORT[Portfolio<br/>6 ch]
-        PORT --> INT[Interview<br/>12 ch]
+        PORT --> INT[Interview<br/>19 ch]
     end
     M1 --> M2
     M2 --> M3
@@ -177,7 +177,7 @@ All progress stored in your browser's localStorage — **zero servers, zero acco
 | 53 | Fine-tuning: DPO, evaluation | FT 07-08 | 3 Q&A per day |
 | 54 | **Capstone 4**: Multi-Agent Support System | Build + Deploy | — |
 
-### Month 11-12: Production, Security, Portfolio, Interview
+### Month 11-13: Production, Security, Portfolio, Interview
 
 | Week | Focus | Sub-chapters | Daily Target |
 |------|-------|-------------|--------------|
@@ -195,11 +195,14 @@ All progress stored in your browser's localStorage — **zero servers, zero acco
 | 66 | Interview: ML, DL, LLM/RAG | INT 04-06 | Practice 10 Qs |
 | 67 | Interview: agents, system design, behavioral | INT 07-09 | Mock interview |
 | 68 | Interview: resume, salary, mock sims | INT 10-12 | Full mock round |
+| 69 | Interview: math, ML sys design, FAANG deep dives | INT 13-15 | Practice 10 Qs |
+| 70 | Interview: DSA bank, OOD, debugging, AI tools | INT 16-19 | Full mock round |
 
 ## Subject Overview
 
 | # | Subject | Sub-chapters | Q&A | Hours | Weight |
 |---|---------|-------------|-----|-------|--------|
+| 00 | Core Computer Science | 5 | 50 | 20 | ⭐⭐⭐ |
 | 01 | Python for AI | 14 | 140 | 40 | ⭐⭐⭐ |
 | 02 | SQL & Databases | 10 | 100 | 25 | ⭐⭐⭐⭐ |
 | 03 | DSA | 18 | 216 | 60 | ⭐⭐⭐⭐⭐ |
@@ -220,8 +223,8 @@ All progress stored in your browser's localStorage — **zero servers, zero acco
 | 18 | Multimodal AI & Voice | 6 | 60 | 20 | ⭐⭐⭐ |
 | 19 | Capstone Projects | 5 | 25 | 50 | ⭐⭐⭐⭐⭐ |
 | 20 | Portfolio & Branding | 6 | 48 | 15 | ⭐⭐⭐ |
-| 21 | Interview Preparation | 12 | 180 | 50 | ⭐⭐⭐⭐⭐ |
-| **Total** | **21** | **~195** | **~2,100** | **~700** | — |
+| 21 | Interview Preparation | 19 | 285 | 80 | ⭐⭐⭐⭐⭐ |
+| **Total** | **22** | **~210** | **~2,300** | **~720** | — |
 
 ## How to Use This Course
 

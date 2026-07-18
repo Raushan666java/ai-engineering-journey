@@ -1,0 +1,620 @@
+# Low-Level and OOD Design
+
+## Learning Objectives
+
+After this chapter you will be able to design class hierarchies for common interview problems, apply SOLID principles to object-oriented design, handle concurrency and edge cases in design, and communicate tradeoffs during object-oriented design (OOD) rounds.
+
+## Theory
+
+### What OOD Interviews Test
+
+OOD rounds assess your ability to model real-world systems with clean abstractions. Unlike system design (distributed, high-scale), OOD focuses on:
+- Class hierarchy and inheritance
+- Encapsulation and interfaces
+- Design patterns application
+- Relationship modeling (has-a, is-a)
+- Tradeoff reasoning between approaches
+
+The standard framework:
+1. Clarify requirements and scope
+2. Identify core entities and their relationships
+3. Define interfaces and abstract classes
+4. Handle edge cases and concurrency
+5. Discuss extensibility and tradeoffs
+
+### Common Entities in OOD Problems
+
+Most OOD problems share entity types:
+- Core domain objects (ParkingSpot, Vehicle, Ticket)
+- Managers or controllers (ParkingLot, ElevatorController)
+- Enums for types and statuses (SpotSize, Direction, State)
+- Strategies for algorithms (PricingStrategy, SchedulingStrategy)
+
+### Concurrency in OOD
+
+For multi-user systems (parking lot, library, restaurant), consider thread safety:
+- synchronized blocks for critical sections
+- ConcurrentHashMap or explicit locks
+- Atomic counters for unique IDs
+- ReadWriteLock for read-heavy workloads
+
+### Design Patterns in OOD
+
+Common patterns used in OOD solutions:
+- Strategy: interchangeable algorithms (pricing, parking spot assignment)
+- Factory: creating objects of different types (VehicleFactory)
+- Singleton: one instance of the system manager (controversial, use dependency injection instead)
+- Observer: notification systems (available spot, order ready)
+- Command: queuing operations (elevator requests)
+- State: object behaves differently based on internal state (elevator moving/idle)
+
+## Problem 1: Parking Lot
+
+### Requirements
+
+Design a parking lot with multiple levels. Each level has spots of different sizes (small, medium, large). The system should assign the nearest available spot, handle different vehicle types (motorcycle, car, truck), track payment by hour, and support disabled spots.
+
+### Entities
+
+```typescript
+enum SpotSize { SMALL, MEDIUM, LARGE, DISABLED }
+
+enum VehicleType { MOTORCYCLE, CAR, TRUCK }
+
+class ParkingSpot {
+    id: string
+    level: number
+    size: SpotSize
+    isOccupied: boolean
+    occupiedBy: string | null
+    isDisabled: boolean
+
+    canFit(vehicle: Vehicle): boolean {
+        if (this.isOccupied) return false
+        if (vehicle.type === VehicleType.MOTORCYCLE) return true
+        if (vehicle.type === VehicleType.CAR) return this.size >= SpotSize.MEDIUM
+        if (vehicle.type === VehicleType.TRUCK) return this.size === SpotSize.LARGE
+        return false
+    }
+
+    assign(vehicleId: string): void {
+        this.isOccupied = true
+        this.occupiedBy = vehicleId
+    }
+
+    release(): void {
+        this.isOccupied = false
+        this.occupiedBy = null
+    }
+}
+
+class Vehicle {
+    id: string
+    licensePlate: string
+    type: VehicleType
+    isDisabledDriver: boolean
+}
+
+class Ticket {
+    id: string
+    vehicleId: string
+    spotId: string
+    entryTime: Date
+    exitTime: Date | null
+    amount: number
+
+    calculateFee(ratePerHour: number): number {
+        if (!this.exitTime) this.exitTime = new Date()
+        const hours = (this.exitTime.getTime() - this.entryTime.getTime()) / (1000 * 3600)
+        return Math.ceil(hours) * ratePerHour
+    }
+}
+
+class ParkingLevel {
+    level: number
+    spots: ParkingSpot[] = []
+
+    constructor(level: number, small: number, medium: number, large: number, disabled: number) {
+        this.level = level
+        let id = 0
+        for (let i = 0; i < small; i++) spots.push({ id: `S${id++}`, level, size: SpotSize.SMALL, ... } as ParkingSpot)
+        for (let i = 0; i < medium; i++) spots.push({ id: `M${id++}`, level, size: SpotSize.MEDIUM, ... } as ParkingSpot)
+        for (let i = 0; i < large; i++) spots.push({ id: `L${id++}`, level, size: SpotSize.LARGE, ... } as ParkingSpot)
+        for (let i = 0; i < disabled; i++) spots.push({ id: `D${id++}`, level, size: SpotSize.DISABLED, ... } as ParkingSpot)
+    }
+}
+
+class ParkingLot {
+    levels: ParkingLevel[] = []
+    tickets: Map<string, Ticket> = new Map()
+    vehicleSpotMap: Map<string, string> = new Map()
+
+    addLevel(level: ParkingLevel): void {
+        this.levels.push(level)
+    }
+
+    findSpot(vehicle: Vehicle): ParkingSpot | null {
+        const nearestFirst = true
+        if (nearestFirst) {
+            for (const level of this.levels) {
+                for (const spot of level.spots) {
+                    if (spot.canFit(vehicle) && !spot.isOccupied) {
+                        return spot
+                    }
+                }
+            }
+        }
+        return null
+    }
+
+    park(vehicle: Vehicle): Ticket {
+        const spot = this.findSpot(vehicle)
+        if (!spot) throw new Error("No available spot")
+        spot.assign(vehicle.id)
+        const ticket = new Ticket()
+        ticket.id = `T${Date.now()}`
+        ticket.vehicleId = vehicle.id
+        ticket.spotId = spot.id
+        ticket.entryTime = new Date()
+        this.tickets.set(ticket.id, ticket)
+        this.vehicleSpotMap.set(vehicle.id, spot.id)
+        return ticket
+    }
+
+    exit(ticketId: string): number {
+        const ticket = this.tickets.get(ticketId)
+        if (!ticket) throw new Error("Ticket not found")
+        ticket.exitTime = new Date()
+        const fee = ticket.calculateFee(10)
+        const spot = this.findSpotById(ticket.spotId)
+        if (spot) spot.release()
+        this.vehicleSpotMap.delete(ticket.vehicleId)
+        return fee
+    }
+
+    private findSpotById(spotId: string): ParkingSpot | undefined {
+        for (const level of this.levels) {
+            for (const spot of level.spots) {
+                if (spot.id === spotId) return spot
+            }
+        }
+        return undefined
+    }
+}
+```
+
+### Discussion Points
+
+- Nearest spot vs efficiency: scanning all levels can be optimized by maintaining available spot queues per level
+- Rate strategy: hourly rate could vary by level, spot size, or time of day (Strategy pattern)
+- Single entry/exit vs multiple: concurrent access requires thread-safe spot allocation
+- Electric vehicle charging spots: subclass ParkingSpot with charger capability
+- Validation: license plate uniqueness, maximum stay duration
+
+## Problem 2: Design a Logger
+
+### Requirements
+
+Design a library that supports multiple log levels (DEBUG, INFO, WARN, ERROR), multiple outputs (console, file, network), configurable formatting (timestamp, level, message), and performance logging with configurable sampling.
+
+### Design
+
+```typescript
+enum LogLevel {
+    DEBUG = 0, INFO = 1, WARN = 2, ERROR = 3
+}
+
+class LogMessage {
+    timestamp: Date
+    level: LogLevel
+    source: string
+    message: string
+    metadata: Record<string, unknown>
+
+    constructor(level: LogLevel, source: string, message: string, metadata: Record<string, unknown> = {}) {
+        this.timestamp = new Date()
+        this.level = level
+        this.source = source
+        this.message = message
+        this.metadata = metadata
+    }
+
+    format(): string {
+        return `[${this.timestamp.toISOString()}] [${LogLevel[this.level]}] [${this.source}] ${this.message}`
+    }
+}
+
+interface LogAppender {
+    append(message: LogMessage): void
+}
+
+class ConsoleAppender implements LogAppender {
+    append(message: LogMessage): void {
+        console.log(message.format())
+    }
+}
+
+class FileAppender implements LogAppender {
+    private filePath: string
+
+    constructor(filePath: string) {
+        this.filePath = filePath
+    }
+
+    append(message: LogMessage): void {
+        // In real implementation: fs.appendFileSync(this.filePath, message.format() + '\n')
+        console.log(`[File: ${this.filePath}] ${message.format()}`)
+    }
+}
+
+class NetworkAppender implements LogAppender {
+    private endpoint: string
+
+    constructor(endpoint: string) {
+        this.endpoint = endpoint
+    }
+
+    append(message: LogMessage): void {
+        // In real implementation: POST to endpoint
+        console.log(`[Network: ${this.endpoint}] ${message.format()}`)
+    }
+}
+
+class LoggerConfig {
+    level: LogLevel = LogLevel.INFO
+    appenders: LogAppender[] = [new ConsoleAppender()]
+    samplingRate: number = 1.0
+
+    setLevel(level: LogLevel): void {
+        this.level = level
+    }
+
+    addAppender(appender: LogAppender): void {
+        this.appenders.push(appender)
+    }
+
+    setSamplingRate(rate: number): void {
+        this.samplingRate = Math.max(0, Math.min(1, rate))
+    }
+}
+
+class Logger {
+    private config: LoggerConfig
+    private source: string
+
+    constructor(source: string, config: LoggerConfig) {
+        this.source = source
+        this.config = config
+    }
+
+    private log(level: LogLevel, message: string, metadata: Record<string, unknown> = {}): void {
+        if (level < this.config.level) return
+        if (Math.random() > this.config.samplingRate) return
+
+        const logMessage = new LogMessage(level, this.source, message, metadata)
+        for (const appender of this.config.appenders) {
+            try {
+                appender.append(logMessage)
+            } catch (error) {
+                console.error(`Appender failed: ${error}`)
+            }
+        }
+    }
+
+    debug(message: string, metadata?: Record<string, unknown>): void {
+        this.log(LogLevel.DEBUG, message, metadata)
+    }
+
+    info(message: string, metadata?: Record<string, unknown>): void {
+        this.log(LogLevel.INFO, message, metadata)
+    }
+
+    warn(message: string, metadata?: Record<string, unknown>): void {
+        this.log(LogLevel.WARN, message, metadata)
+    }
+
+    error(message: string, metadata?: Record<string, unknown>): void {
+        this.log(LogLevel.ERROR, message, metadata)
+    }
+}
+```
+
+### Discussion Points
+
+- Async logging: log calls should not block the application. Use a background queue or ring buffer
+- Configuration from file: load LoggerConfig from YAML/JSON at startup
+- Dynamic level changes: support runtime log level changes without restart
+- Structured logging: JSON format for log aggregation systems (ELK, Datadog)
+- Sampling strategy: rate limiting per source, adaptive sampling during high traffic
+
+## Problem 3: Design a Rate Limiter Library
+
+### Requirements
+
+Design a reusable rate limiter that supports token bucket, sliding window, and fixed window algorithms. It should be configurable per client, thread-safe, support distributed deployment via Redis, and emit metrics.
+
+### Design
+
+```typescript
+interface RateLimiter {
+    isAllowed(clientId: string): boolean
+    getRemainingTokens(clientId: string): number
+    reset(clientId: string): void
+}
+
+class TokenBucketRateLimiter implements RateLimiter {
+    private buckets: Map<string, { tokens: number; lastRefill: number }> = new Map()
+    private maxTokens: number
+    private refillRate: number
+    private refillIntervalMs: number
+
+    constructor(maxTokens: number, refillRate: number, refillIntervalMs: number = 1000) {
+        this.maxTokens = maxTokens
+        this.refillRate = refillRate
+        this.refillIntervalMs = refillIntervalMs
+    }
+
+    isAllowed(clientId: string): boolean {
+        this.refill(clientId)
+        const bucket = this.buckets.get(clientId)!
+        if (bucket.tokens >= 1) {
+            bucket.tokens--
+            return true
+        }
+        return false
+    }
+
+    private refill(clientId: string): void {
+        const now = Date.now()
+        if (!this.buckets.has(clientId)) {
+            this.buckets.set(clientId, { tokens: this.maxTokens, lastRefill: now })
+            return
+        }
+        const bucket = this.buckets.get(clientId)!
+        const elapsed = now - bucket.lastRefill
+        const tokensToAdd = Math.floor(elapsed / this.refillIntervalMs) * this.refillRate
+        if (tokensToAdd > 0) {
+            bucket.tokens = Math.min(this.maxTokens, bucket.tokens + tokensToAdd)
+            bucket.lastRefill = now
+        }
+    }
+
+    getRemainingTokens(clientId: string): number {
+        this.refill(clientId)
+        return this.buckets.get(clientId)?.tokens ?? this.maxTokens
+    }
+
+    reset(clientId: string): void {
+        this.buckets.delete(clientId)
+    }
+}
+
+class SlidingWindowRateLimiter implements RateLimiter {
+    private windows: Map<string, number[]> = new Map()
+    private maxRequests: number
+    private windowSizeMs: number
+
+    constructor(maxRequests: number, windowSizeMs: number = 60000) {
+        this.maxRequests = maxRequests
+        this.windowSizeMs = windowSizeMs
+    }
+
+    isAllowed(clientId: string): boolean {
+        const now = Date.now()
+        if (!this.windows.has(clientId)) {
+            this.windows.set(clientId, [now])
+            return true
+        }
+        const timestamps = this.windows.get(clientId)!
+        const cutoff = now - this.windowSizeMs
+        while (timestamps.length > 0 && timestamps[0] < cutoff) {
+            timestamps.shift()
+        }
+        if (timestamps.length >= this.maxRequests) return false
+        timestamps.push(now)
+        return true
+    }
+
+    getRemainingTokens(clientId: string): number {
+        const now = Date.now()
+        const timestamps = this.windows.get(clientId) || []
+        const cutoff = now - this.windowSizeMs
+        const active = timestamps.filter((t) => t >= cutoff)
+        return this.maxRequests - active.length
+    }
+
+    reset(clientId: string): void {
+        this.windows.delete(clientId)
+    }
+}
+
+class RateLimiterFactory {
+    static createTokenBucket(maxTokens: number, refillRate: number): RateLimiter {
+        return new TokenBucketRateLimiter(maxTokens, refillRate)
+    }
+
+    static createSlidingWindow(maxRequests: number, windowMs: number): RateLimiter {
+        return new SlidingWindowRateLimiter(maxRequests, windowMs)
+    }
+}
+```
+
+### Discussion Points
+
+- Distributed rate limiting: use Redis with Lua scripts for atomic token operations
+- Metrics: track allowed/blocked counts per client, emit via StatsD or Prometheus
+- Multi-tier rate limiting: global + per-client + per-endpoint limits
+- Backpressure: HTTP 429 with Retry-After header
+- Race conditions: use atomic operations (CAS, Redis Lua) for concurrent safety
+
+## Problem 4: Design a Vending Machine
+
+### Requirements
+
+Design a vending machine that supports multiple product types, different payment methods (cash, card), inventory tracking, change calculation, and state machine for operations.
+
+### Design
+
+States: Idle, Selecting, Dispensing, OutOfStock, Maintenance
+
+```typescript
+enum ProductType { DRINK, SNACK, CANDY }
+enum PaymentMethod { CASH, CARD }
+enum VendingState { IDLE, SELECTING, DISPENSING, OUT_OF_STOCK, MAINTENANCE }
+
+class Product {
+    id: string
+    name: string
+    price: number
+    type: ProductType
+}
+
+class InventorySlot {
+    product: Product
+    quantity: number
+    capacity: number
+
+    isAvailable(): boolean {
+        return this.quantity > 0
+    }
+
+    dispense(): void {
+        if (this.quantity <= 0) throw new Error("Out of stock")
+        this.quantity--
+    }
+
+    restock(amount: number): void {
+        this.quantity = Math.min(this.capacity, this.quantity + amount)
+    }
+}
+
+class VendingMachine {
+    private state: VendingState = VendingState.IDLE
+    private slots: Map<string, InventorySlot> = new Map()
+    private balance: number = 0
+    private selectedProduct: string | null = null
+
+    displayProducts(): { id: string; name: string; price: number; available: boolean }[] {
+        const result: { id: string; name: string; price: number; available: boolean }[] = []
+        for (const [id, slot] of this.slots) {
+            result.push({
+                id,
+                name: slot.product.name,
+                price: slot.product.price,
+                available: slot.isAvailable(),
+            })
+        }
+        return result
+    }
+
+    selectProduct(productId: string): string {
+        const slot = this.slots.get(productId)
+        if (!slot) return "Invalid product"
+        if (!slot.isAvailable()) return "Out of stock"
+        this.selectedProduct = productId
+        this.state = VendingState.SELECTING
+        return `Selected ${slot.product.name}. Price: $${slot.product.price}. Insert payment.`
+    }
+
+    insertCash(amount: number): string {
+        if (this.state !== VendingState.SELECTING || !this.selectedProduct) {
+            return "Select a product first"
+        }
+        const slot = this.slots.get(this.selectedProduct)!
+        this.balance += amount
+        if (this.balance >= slot.product.price) {
+            return this.dispense()
+        }
+        return `Inserted $${amount}. Need $${(slot.product.price - this.balance).toFixed(2)} more.`
+    }
+
+    private dispense(): string {
+        const slot = this.slots.get(this.selectedProduct!)!
+        slot.dispense()
+        const change = this.balance - slot.product.price
+        this.balance = 0
+        this.state = VendingState.IDLE
+        this.selectedProduct = null
+        if (change > 0) {
+            return `Dispensed ${slot.product.name}. Change: $${change.toFixed(2)}`
+        }
+        return `Dispensed ${slot.product.name}.`
+    }
+
+    refund(): string {
+        const amount = this.balance
+        this.balance = 0
+        this.selectedProduct = null
+        this.state = VendingState.IDLE
+        return `Refunded $${amount.toFixed(2)}`
+    }
+
+    restock(productId: string, amount: number): void {
+        const slot = this.slots.get(productId)
+        if (slot) slot.restock(amount)
+    }
+}
+```
+
+## Summary
+
+OOD interviews test your ability to translate real-world systems into clean, extensible code. Follow the framework: clarify requirements, identify entities, define interfaces, implement core logic, discuss tradeoffs. Always consider concurrency, extensibility, and edge cases. Use design patterns appropriately but do not force them. Practice with the four problems in this chapter (parking lot, logger, rate limiter, vending machine) and extend them with new features.
+
+## Practical Takeaways
+
+- Always start by clarifying scope: what is in and out of scope
+- Write clean interfaces first, then implementations
+- Consider thread safety early if multiple users access the system
+- Use composition over inheritance for flexible designs
+- Handle errors gracefully: throw specific exceptions, validate inputs
+- Discuss tradeoffs: simplicity vs features, performance vs readability
+- Practice with a whiteboard or plain text editor (no IDE autocomplete)
+
+## Chapter Quiz
+
+1. In a parking lot design, which pattern is useful for different pricing strategies?
+   - A) Singleton
+   - B) Strategy
+   - C) Observer
+   - D) Factory
+   // correct: B
+
+2. A LogAppender interface in the logger design represents which principle?
+   - A) Liskov Substitution
+   - B) Open/Closed
+   - C) Dependency Inversion
+   - D) Single Responsibility
+   // correct: C
+
+3. The sliding window rate limiter stores timestamps per client. The space complexity per client is:
+   - A) O(1)
+   - B) O(maxRequests)
+   - C) O(windowSize)
+   - D) O(n) where n is total requests
+   // correct: B
+
+4. In the vending machine, what design pattern does the state variable represent?
+   - A) Strategy
+   - B) State
+   - C) Command
+   - D) Observer
+   // correct: B
+
+5. Which concurrency primitive is best for a read-heavy OOD system?
+   - A) synchronized blocks
+   - B) ReadWriteLock
+   - C) AtomicInteger
+   - D) Volatile
+   // correct: B
+
+## Exercises
+
+1. Extend the parking lot design to support electric vehicle charging spots with hourly energy cost.
+
+2. Add a CompositeAppender to the logger that fans out log messages to multiple appenders simultaneously.
+
+3. Implement a distributed version of the rate limiter using Redis-style commands (simulate with a shared Map).
+
+4. Add a credit card payment processor to the vending machine and handle payment failure gracefully.
+
+5. Design a restaurant reservation system: table management, booking time slots, waitlist, and cancellation.

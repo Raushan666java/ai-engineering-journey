@@ -1,5 +1,7 @@
 # Chapter 1: Your Learning OS
 
+> ⏱ **2 hours total** · 🎯 **Beginner** · 📋 **No prerequisites**
+
 ## Learning Objectives
 
 After this chapter you will be able to:
@@ -8,6 +10,13 @@ After this chapter you will be able to:
 - Build feedback loops to measure progress and course-correct before it's too late
 - Identify your VARK learning style and choose tools that match it
 - Distinguish between learning tactics (what you do) and your learning system (how you decide what to do)
+
+## Quick Start (10 min)
+
+1. Read the OODA loop diagram in Theory (2 min)
+2. Jump to the Plain-Language Walkthrough in Examples (5 min)
+3. Do Exercise 1: VARK self-assessment (3 min)
+4. **Save for later:** TypeScript code, full Exercises, Common Mistakes table
 
 ## Theory
 

@@ -1,5 +1,7 @@
 # Chapter 11: Tracking & Course Correction
 
+> ⏱ **2 hours total** · 🎯 **Beginner** · 📋 **Recommended: Ch 1 (Learning OS)**
+
 ## Learning Objectives
 
 After this chapter you will be able to:
@@ -8,6 +10,14 @@ After this chapter you will be able to:
 - Detect plateaus early and break through with targeted intervention
 - Run an effective weekly review that drives continuous improvement
 - Make data-driven decisions about what to study next
+
+## Quick Start (10 min)
+
+1. Read the Leading vs Lagging Indicators in Theory (3 min)
+2. Open a notebook and create the 3-column daily log from Examples (3 min)
+3. Write today's entry using real data (2 min)
+4. Identify ONE leading metric you will track daily (2 min)
+5. **Save for later:** Weekly review template, plateau detection, Common Mistakes
 
 ## Theory
 

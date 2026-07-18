@@ -1,5 +1,7 @@
 # Chapter 13: Final Capstone — Design Your Learning System
 
+> ⏱ **3 hours total** · 🎯 **Advanced** · 📋 **Requires: All chapters 1-12**
+
 ## Learning Objectives
 
 After this chapter you will be able to:
@@ -8,6 +10,14 @@ After this chapter you will be able to:
 - Build a complete 90-day learning plan for any subject or exam
 - Create your own set of templates, checklists, and tracking tools
 - Identify and fix the weakest link in your current learning approach
+
+## Quick Start (10 min)
+
+1. Read the 4-Phase Learning System framework in Theory (4 min)
+2. Complete the Learning System Audit table (3 min)
+3. Identify your weakest link from the audit (1 min)
+4. Write: "I will fix ___ by ___" (2 min)
+5. **Save for later:** TypeScript implementation, 90-day plan, monthly review template
 
 ## Theory
 

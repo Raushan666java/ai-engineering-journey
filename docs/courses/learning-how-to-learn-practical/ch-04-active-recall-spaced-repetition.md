@@ -1,5 +1,7 @@
 # Chapter 4: Active Recall & Spaced Repetition
 
+> ⏱ **2.5 hours total** · 🎯 **Beginner** · 📋 **No prerequisites**
+
 ## Learning Objectives
 
 After this chapter you will be able to:
@@ -8,6 +10,13 @@ After this chapter you will be able to:
 - Understand and implement the SM-2 spaced repetition algorithm
 - Schedule reviews for optimal long-term retention
 - Apply recall to any subject — history dates, math formulas, vocabulary, language learning, coding concepts
+
+## Quick Start (10 min)
+
+1. Read the "Why Active Recall Works" section in Theory (3 min)
+2. Try the Blank Page method with any topic you studied today (5 min)
+3. Create 3 physical flashcards using the Leitner box rule (2 min)
+4. **Save for later:** SM-2 algorithm, TypeScript code, spaced repetition calculator
 
 ## Theory
 

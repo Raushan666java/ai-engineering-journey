@@ -1,5 +1,7 @@
 # Chapter 8: Study Plan for Any Exam
 
+> ⏱ **2.5 hours total** · 🎯 **Intermediate** · 📋 **Recommended: Ch 1 (Goal Setting), Ch 2 (Sprint Planning)**
+
 ## Learning Objectives
 
 After this chapter you will be able to:
@@ -8,6 +10,14 @@ After this chapter you will be able to:
 - Design a phased preparation timeline with milestones and checkpoints
 - Build a mock test schedule that reveals weak areas before the real exam
 - Adjust your plan based on performance data without panicking
+
+## Quick Start (10 min)
+
+1. Read the Syllabus Gap Analysis in Theory (3 min)
+2. List every topic for your target exam and rate yourself 1-5 (4 min)
+3. Circle your 3 lowest-rated topics — those are your priority (2 min)
+4. Write down: "This week I will study ___ for ___ minutes" (1 min)
+5. **Save for later:** Phased plan template, mock schedule, Common Mistakes
 
 ## Theory
 

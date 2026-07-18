@@ -1,5 +1,7 @@
 # Chapter 6: Learning From Any Resource
 
+> ⏱ **2 hours total** · 🎯 **Intermediate** · 📋 **Recommended: Ch 4 (Active Recall)**
+
 ## Learning Objectives
 
 After this chapter you will be able to:
@@ -8,6 +10,14 @@ After this chapter you will be able to:
 - Deconstruct any resource into its core concepts, prerequisites, and practice paths
 - Build a personal knowledge map that connects new information to what you already know
 - Distinguish between passive consumption (watching/reading) and active learning (doing/teaching)
+
+## Quick Start (10 min)
+
+1. Read the SQ3R method in Theory (3 min)
+2. Pick any resource you're currently studying (2 min)
+3. Write 5 questions you want that resource to answer (3 min)
+4. Read one section and immediately summarize aloud from memory (2 min)
+5. **Save for later:** Knowledge map template, TypeScript code, exercises
 
 ## Theory
 

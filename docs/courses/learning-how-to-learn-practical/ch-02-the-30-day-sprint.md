@@ -1,5 +1,7 @@
 # Chapter 2: The 30-Day Sprint
 
+> ⏱ **2 hours total** · 🎯 **Beginner** · 📋 **No prerequisites**
+
 ## Learning Objectives
 
 After this chapter you will be able to:
@@ -8,6 +10,13 @@ After this chapter you will be able to:
 - Set a non-negotiable daily minimum to maintain momentum
 - Execute weekly reviews to stay on track and adjust before it's too late
 - Avoid the most common sprint-killing mistakes
+
+## Quick Start (10 min)
+
+1. Read the 3-Phase Sprint Framework in Theory (3 min)
+2. Jump to the Plain-Language Walkthrough in Examples (4 min)
+3. Set your daily minimum for ONE current goal (3 min)
+4. **Save for later:** TypeScript code, weekly review template, Common Mistakes
 
 ## Theory
 

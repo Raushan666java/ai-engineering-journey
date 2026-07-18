@@ -1,5 +1,7 @@
 # Chapter 12: Building in Public & Teaching
 
+> ⏱ **1.5 hours total** · 🎯 **Beginner** · 📋 **No prerequisites**
+
 ## Learning Objectives
 
 After this chapter you will be able to:
@@ -8,6 +10,14 @@ After this chapter you will be able to:
 - Build projects or practice sets that serve as learning accelerators
 - Teach others through mentoring, tutoring, or content creation
 - Create a feedback loop that accelerates your growth
+
+## Quick Start (10 min)
+
+1. Read the Protege Effect in Theory (3 min)
+2. Pick one concept you learned this week (1 min)
+3. Explain it aloud as if teaching a friend (3 min)
+4. Note which parts were hardest to explain — those are your gaps (3 min)
+5. **Save for later:** One-page cheat sheet formula, teaching workflow, Common Mistakes
 
 ## Theory
 

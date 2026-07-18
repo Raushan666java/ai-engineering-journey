@@ -1,5 +1,7 @@
 # Chapter 5: Deep Work & Focus
 
+> ⏱ **2 hours total** · 🎯 **Beginner** · 📋 **No prerequisites**
+
 ## Learning Objectives
 
 After this chapter you will be able to:
@@ -8,6 +10,14 @@ After this chapter you will be able to:
 - Understand attention residue and protect your focus from context switching
 - Build a personal deep work protocol with specific time, place, and rules
 - Measure and improve your focus session quality over time
+
+## Quick Start (10 min)
+
+1. Read the Deep Work Protocol in Theory (3 min)
+2. Conduct a 1-day distraction audit — tally every interruption (4 min)
+3. Write your deep work session goal for today (1 min)
+4. Set a timer and do ONE 45-min focused session (2 min setup)
+5. **Save for later:** Shallow vs deep work table, streak tracking, Common Mistakes
 
 ## Theory
 

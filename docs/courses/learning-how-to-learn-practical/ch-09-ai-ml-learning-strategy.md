@@ -1,5 +1,7 @@
 # Chapter 9: Mastering Hard Subjects
 
+> ⏱ **3 hours total** · 🎯 **Advanced** · 📋 **Recommended: Ch 6 (Learning From Any Resource)**
+
 ## Learning Objectives
 
 After this chapter you will be able to:
@@ -8,6 +10,14 @@ After this chapter you will be able to:
 - Use the Feynman Technique to identify and fill understanding gaps
 - Read and extract knowledge from primary sources (papers, textbooks, legal judgements)
 - Build a just-in-time learning workflow that avoids overwhelm
+
+## Quick Start (10 min)
+
+1. Read the Spiral Learning Stack in Theory (3 min)
+2. Pick one topic you find difficult (2 min)
+3. Map its prerequisites using the template in Examples (3 min)
+4. Explain the topic using the Feynman Technique (2 min)
+5. **Save for later:** Implementation pass, paper reading strategy, Common Mistakes
 
 ## Theory
 

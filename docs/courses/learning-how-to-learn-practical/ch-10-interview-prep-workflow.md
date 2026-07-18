@@ -1,5 +1,7 @@
 # Chapter 10: Interview Preparation Workflow
 
+> ⏱ **2.5 hours total** · 🎯 **Intermediate** · 📋 **Recommended: Ch 8 (Study Plan)**
+
 ## Learning Objectives
 
 After this chapter you will be able to:
@@ -8,6 +10,14 @@ After this chapter you will be able to:
 - Balance technical, behavioral, and domain-specific preparation across weeks
 - Use mock interviews as the primary improvement driver
 - Make data-driven decisions about where to focus each week
+
+## Quick Start (10 min)
+
+1. Read the 3-Phase Preparation System in Theory (3 min)
+2. Write down 3 STAR stories from your experience (5 min)
+3. Identify which phase you're currently in (1 min)
+4. Write ONE action for this week to move to the next phase (1 min)
+5. **Save for later:** Weekly balance table, mock feedback template, Common Mistakes
 
 ## Theory
 

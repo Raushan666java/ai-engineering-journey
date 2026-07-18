@@ -30,20 +30,23 @@
 
 ## Chapters
 
-| # | Chapter | What You'll Build |
-|---|---------|-------------------|
-| 1 | [Your Learning OS](ch-01-your-learning-os.md) | OODA learning loop + learning style assessment |
-| 2 | [The 30-Day Sprint](ch-02-the-30-day-sprint.md) | Sprint planner for any goal |
-| 3 | [Daily Workflow & Energy](ch-03-daily-workflow-energy.md) | Energy-aware study schedule |
-| 4 | [Active Recall & Spaced Repetition](ch-04-active-recall-spaced-repetition.md) | Leitner box + SM-2 review system |
-| 5 | [Deep Work & Focus](ch-05-deep-work-focus.md) | Focus session tracker |
-| 6 | [Learning From Any Resource](ch-06-learning-from-code.md) | Universal resource deconstructor |
-| 7 | [Practice System for Mastery](ch-07-dsa-practice-system.md) | Deliberate practice tracker |
-| 8 | [Study Plan for Any Exam](ch-08-system-design-study-plan.md) | Exam prep roadmap generator |
-| 9 | [Mastering Hard Subjects](ch-09-ai-ml-learning-strategy.md) | Spiral learning planner |
-| 10 | [Interview Prep Workflow](ch-10-interview-prep-workflow.md) | Interview preparation tracker |
-| 11 | [Tracking & Course Correction](ch-11-tracking-course-correction.md) | Learning dashboard (digital + paper) |
-| 12 | [Building in Public & Teaching](ch-12-building-in-public-teaching.md) | Public learning tracker |
+| # | Chapter | ⏱ Time | 🎯 Difficulty | What You'll Build |
+|---|---------|--------|--------------|-------------------|
+| 1 | [Your Learning OS](ch-01-your-learning-os.md) | 2h | Beginner | OODA learning loop + learning style assessment |
+| 2 | [The 30-Day Sprint](ch-02-the-30-day-sprint.md) | 2h | Beginner | Sprint planner for any goal |
+| 3 | [Daily Workflow & Energy](ch-03-daily-workflow-energy.md) | 2h | Beginner | Energy-aware study schedule |
+| 4 | [Active Recall & Spaced Repetition](ch-04-active-recall-spaced-repetition.md) | 2.5h | Beginner | Leitner box + SM-2 review system |
+| 5 | [Deep Work & Focus](ch-05-deep-work-focus.md) | 2h | Beginner | Focus session tracker |
+| 6 | [Learning From Any Resource](ch-06-learning-from-code.md) | 2h | Intermediate | Universal resource deconstructor |
+| 7 | [Practice System for Mastery](ch-07-dsa-practice-system.md) | 2.5h | Intermediate | Deliberate practice tracker |
+| 8 | [Study Plan for Any Exam](ch-08-system-design-study-plan.md) | 2.5h | Intermediate | Exam prep roadmap generator |
+| 9 | [Mastering Hard Subjects](ch-09-ai-ml-learning-strategy.md) | 3h | Advanced | Spiral learning planner |
+| 10 | [Interview Prep Workflow](ch-10-interview-prep-workflow.md) | 2.5h | Intermediate | Interview preparation tracker |
+| 11 | [Tracking & Course Correction](ch-11-tracking-course-correction.md) | 2h | Beginner | Learning dashboard (digital + paper) |
+| 12 | [Building in Public & Teaching](ch-12-building-in-public-teaching.md) | 1.5h | Beginner | Public learning tracker |
+| 13 | [Final Capstone](ch-13-final-capstone.md) | 3h | Advanced | Complete integrated learning system |
+| | **[Master Glossary](ch-14-glossary.md)** | — | — | 400+ terms defined across all chapters |
+| | **[Certificate of Completion](certificate.md)** | — | — | Printable PDF certificate
 
 ## Chapter Structure
 
@@ -51,12 +54,16 @@ Every chapter has two tracks:
 
 ```
 Learning Objectives      → 5 things you'll be able to do
+⏱ Badge                 → Time, difficulty, prerequisites at a glance
+Quick Start (10 min)     → Short on time? Start here
 Theory                   → Core concepts with Mermaid diagram
 Examples                 → 📝 Plain-language walkthrough + 💻 TypeScript (optional)
 Summary                  → 5 key takeaways
 Practical Takeaways      → 3-5 actionable items
-Chapter Quiz             → 5 MCQ with answers
+Common Mistakes          → 4 typical errors with fixes
+Chapter Quiz             → 5 MCQ with answers + wrong-answer explanations
 Exercises                → 3 universal tasks + 2 TypeScript bonus
+Quick Reference          → Printable cheat sheet
 ```
 
 > The TypeScript examples are **optional**. Every concept is explained in plain language first. Non-programmers can skip the code and still get a complete course.
@@ -211,6 +218,18 @@ Print this checklist. Mark chapters as you complete them.
 | ☐ | 11 | [Tracking & Course Correction](ch-11-tracking-course-correction.md) | ☐ | ☐ | ☐ | ☐ | ☐ |
 | ☐ | 12 | [Building in Public & Teaching](ch-12-building-in-public-teaching.md) | ☐ | ☐ | ☐ | ☐ | ☐ |
 | ☐ | 13 | [Final Capstone: Design Your System](ch-13-final-capstone.md) | ☐ | ☐ | ☐ | ☐ | ☐ |
+| ☐ | — | **[Master Glossary](ch-14-glossary.md)** (400+ terms) | ☐ | — | — | — | ☐ |
+| ☐ | — | **[Certificate of Completion](certificate.md)** | — | — | — | — | ☐ |
+
+## Certificate of Completion
+
+After finishing all 13 chapters, claim your [Certificate of Completion](certificate.md). Print it, fill in your name, and pin it above your desk.
+
+**Requirements:**
+- Complete all 13 chapters in order (~30 hours total)
+- Score 8/10 on every Chapter Quiz
+- Complete the Ch 13 Capstone project
+- Fill in your name and date on the certificate page
 
 ## Learning Outcomes
 
@@ -235,8 +254,8 @@ After completing this course, you will have:
 2. **Track:** Print the [Course Progress Tracker](#course-progress-tracker). Check off each chapter as you complete it
 3. **Daily:** Pick one chapter per week. Read the Theory section (15 min). Follow the plain-language walkthrough (20 min). Do the exercises (25 min)
 4. **Weekly:** Review the Practical Takeaways from the previous week. Take the Chapter Quiz. Use the Quick Reference cheat sheet for review
-5. **Graduate:** Complete [Ch 13: Final Capstone](ch-13-final-capstone.md) to integrate everything into one system
-6. **Reference:** Return to any chapter's Common Mistakes and Quick Reference when you hit a specific problem
+5. **Graduate:** Complete [Ch 13: Final Capstone](ch-13-final-capstone.md) to integrate everything into one system. Print your [Certificate of Completion](certificate.md)
+6. **Reference:** Use the [Master Glossary](ch-14-glossary.md) for quick term lookups. Return to any chapter's Common Mistakes and Quick Reference when you hit a specific problem
 
 > **Start with [Chapter 1: Your Learning OS](ch-01-your-learning-os.md)** — because without a system, no technique will save you.
 

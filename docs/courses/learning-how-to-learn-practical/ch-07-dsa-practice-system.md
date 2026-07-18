@@ -1,5 +1,7 @@
 # Chapter 7: Practice System for Mastery
 
+> ⏱ **2.5 hours total** · 🎯 **Intermediate** · 📋 **Recommended: Ch 4 (Active Recall)**
+
 ## Learning Objectives
 
 After this chapter you will be able to:
@@ -8,6 +10,14 @@ After this chapter you will be able to:
 - Build a spaced review schedule that prevents forgetting
 - Track your accuracy and speed on practice problems
 - Identify weak areas and target them systematically
+
+## Quick Start (10 min)
+
+1. Read the 3-Pass Practice Method in Theory (3 min)
+2. Take any 5 practice problems you attempted recently (2 min)
+3. Categorize each wrong answer using the error table in Examples (3 min)
+4. Choose ONE weak topic and apply the 3-pass method (2 min)
+5. **Save for later:** Spaced review schedule, TypeScript code, error log templates
 
 ## Theory
 

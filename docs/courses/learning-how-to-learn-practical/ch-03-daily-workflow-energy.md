@@ -1,5 +1,7 @@
 # Chapter 3: Daily Workflow & Energy Management
 
+> ⏱ **2 hours total** · 🎯 **Beginner** · 📋 **No prerequisites**
+
 ## Learning Objectives
 
 After this chapter you will be able to:
@@ -8,6 +10,14 @@ After this chapter you will be able to:
 - Build a startup ritual that eliminates friction and makes starting automatic
 - Conduct an effective evening review that sets up tomorrow's success
 - Identify and eliminate your top 3 time-wasting patterns
+
+## Quick Start (10 min)
+
+1. Read the Energy-Aware Scheduling section in Theory (3 min)
+2. Read the VARK learning styles paragraph (2 min)
+3. Write your current study schedule and circle your peak hours (3 min)
+4. Design ONE startup ritual action (2 min)
+5. **Save for later:** Pomodoro variants, evening review template, Common Mistakes
 
 ## Theory
 

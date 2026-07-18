@@ -400,31 +400,45 @@ One thing to stop doing: ________________________________
 
 
 
+## Common Mistakes
+
+| Mistake | Why It Fails | Fix |
+|---------|-------------|-----|
+| Watching tutorials without coding along | Passive consumption feels productive but builds no skill | Close the video. Implement one thing before watching the next |
+| Setting vague goals ("learn DSA") | No decomposition → no clear next action | Break into milestones → sprints → daily actions |
+| No feedback loop | You repeat the same ineffective study pattern for weeks | Daily 5-min check-in + weekly 30-min review |
+| Studying in a distracting environment | Your brain associates that space with distraction, not focus | Fix Layer 1 first: phone away, desk clear, Do Not Disturb on |
+
 ## Chapter Quiz
 
 <details>
 <summary>1. What does OODA stand for?</summary>
-<p>Observe, Orient, Decide, Act. Developed by John Boyd for fighter pilots, applied to learning systems.</p>
+<p><strong>Correct answer:</strong> Observe, Orient, Decide, Act.</p>
+<p><strong>Common wrong answer:</strong> "Observe, Organize, Decide, Act". <em>Why it's wrong:</em> Orient is about analyzing context and understanding the situation, not just organizing information.</p>
 </details>
 
 <details>
 <summary>2. What's the ideal cadence for a full OODA loop cycle in learning?</summary>
-<p>Daily check-in (mini loop), weekly review (full loop), monthly retrospective (strategic loop). The weekly review is the most important — it's where you adjust your strategy.</p>
+<p><strong>Correct answer:</strong> Daily check-in (mini loop), weekly review (full loop), monthly retrospective (strategic loop). The weekly review is the most important — it's where you adjust your strategy.</p>
+<p><strong>Common wrong answer:</strong> "Monthly only". <em>Why it's wrong:</em> A monthly cadence is too slow for course correction — problems compound for weeks before you catch them.</p>
 </details>
 
 <details>
 <summary>3. Which layer of the learning stack should you fix first?</summary>
-<p>Layer 1: Environment. If your phone is in the room or your desk is cluttered, no technique will save you. Environment is the foundation everything else rests on.</p>
+<p><strong>Correct answer:</strong> Layer 1: Environment.</p>
+<p><strong>Common wrong answer:</strong> "Layer 4 (System)". <em>Why it's wrong:</em> A system won't help if your phone keeps interrupting you. Fix the environment first, then build techniques, then layer a system on top.</p>
 </details>
 
 <details>
 <summary>4. What's the first thing to check when you're off track?</summary>
-<p>Your daily actions. Are you actually executing the actions you planned? Most people skip the "Act" step and jump back to "Observe" (watching more tutorials, reading more books).</p>
+<p><strong>Correct answer:</strong> Your daily actions.</p>
+<p><strong>Common wrong answer:</strong> "Your goal". <em>Why it's wrong:</em> Most people already have the right goal but aren't executing daily actions. Check execution first before redefining the goal.</p>
 </details>
 
 <details>
 <summary>5. What's the difference between tutorial hell and deliberate practice?</summary>
-<p>Tutorial hell is consuming without creating. Deliberate practice is attempting something just beyond your current ability, failing, and learning from the failure. If you haven't written code today, you're in tutorial hell.</p>
+<p><strong>Correct answer:</strong> Tutorial hell is consuming without creating. Deliberate practice is attempting something just beyond your current ability, failing, and learning from the failure.</p>
+<p><strong>Common wrong answer:</strong> "Tutorial hell is watching long videos". <em>Why it's wrong:</em> Even short videos can be tutorial hell if you're not implementing. The key distinction is consuming vs. creating.</p>
 </details>
 
 ## Exercises
@@ -434,3 +448,23 @@ One thing to stop doing: ________________________________
 3. **Run a 7-day daily log:** For 7 days, at the end of each study session, write: (a) What I learned, (b) What confused me, (c) Tomorrow's priority. On day 7, review all entries. What patterns do you see?
 4. **Implement a log tracker (TypeScript):** Using the DailyLog class, create a script that reads today's entry from user input and stores it. Add a feature to export the week's summary as a JSON file
 5. **Build a learning OS CLI (TypeScript):** Implement the LearningOS class with startGoal and weeklyReview methods. Add a `suggestNextAction` method that recommends what to study next based on log patterns (lowest-rated topic = prioritize)
+
+## Quick Reference
+
+### OODA Loop for Learning
+- **O**bserve → **O**rient → **D**ecide → **A**ct
+- Daily check-in (5 min) → Weekly review (30 min) → Monthly retrospective (1 hr)
+
+### Learning Stack (Fix Top-Down)
+1. **Environment:** Phone away, desk clear, Do Not Disturb
+2. **Tools:** Notebook, Anki, timer — nothing fancy
+3. **Methods:** Active recall > re-reading. Practice > watching
+4. **System:** OODA loop tying it all together
+
+### Goal Decomposition Chain
+Goal → Milestones (4-6) → Weekly Sprints → Daily Actions
+
+### Weekly Review Template (30 min)
+- What went well? What didn't? Why?
+- Am I on track toward my milestone?
+- What ONE thing will I change next week?

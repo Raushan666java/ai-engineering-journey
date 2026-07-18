@@ -133,7 +133,7 @@ Minimum 30 minutes for the daily minimum. Optimal is 1.5-2 hours if you want to 
 
 ### Can I skip chapters?
 
-Yes. Each chapter is self-contained. Use the "[When This Course Helps](#when-this-course-helps)" table to find your starting point. The chapters build on each other if read in order, but you can jump to any chapter based on your current need.
+Yes. Each chapter is self-contained. Use the "[When This Course Helps](#when-this-course-helps)" table or the "[Diagnostic Pre-Test](#diagnostic-pre-test)" to find your starting point. The chapters build on each other if read in order, but you can skip to any chapter based on your current need.
 
 ### What if I don't know TypeScript?
 
@@ -173,6 +173,45 @@ Yes. The 30-Day Sprint (Ch 2), Active Recall (Ch 4), and Teaching (Ch 12) are es
 | One-size-fits-all | Two tracks: plain language for everyone + TypeScript for engineers |
 | Requires special tools | Works with just a notebook and pen |
 
+## Diagnostic Pre-Test
+
+Which chapters do you actually need? Answer these 10 questions:
+
+| # | Question | If NO → Study |
+|---|----------|--------------|
+| 1 | Can you describe your current learning workflow in 3 sentences? | [Ch 1](ch-01-your-learning-os.md) |
+| 2 | Do you have a specific, measurable learning goal right now? | [Ch 1](ch-01-your-learning-os.md) |
+| 3 | Can you structure a 30-day plan for any new topic? | [Ch 2](ch-02-the-30-day-sprint.md) |
+| 4 | Do you know when your peak energy hours are and schedule study accordingly? | [Ch 3](ch-03-daily-workflow-energy.md) |
+| 5 | Do you use active recall (not re-reading) as your primary study method? | [Ch 4](ch-04-active-recall-spaced-repetition.md) |
+| 6 | Can you do 90 minutes of uninterrupted focused work? | [Ch 5](ch-05-deep-work-focus.md) |
+| 7 | Do you have a system for learning from any resource (book, video, lecture)? | [Ch 6](ch-06-learning-from-code.md) |
+| 8 | Do you have a deliberate practice routine with error analysis? | [Ch 7](ch-07-dsa-practice-system.md) |
+| 9 | Do you have a phased study plan for your upcoming exam? | [Ch 8](ch-08-system-design-study-plan.md) |
+| 10 | Can you break down a complex topic into prerequisite steps? | [Ch 9](ch-09-ai-ml-learning-strategy.md) |
+
+> **How to use:** Answer honestly. For every "NO", add that chapter to your must-read list. For "YES" answers, skim the Theory and go straight to the Quick Reference cheat sheet at the end.
+
+## Course Progress Tracker
+
+Print this checklist. Mark chapters as you complete them.
+
+| # | Chapter | Theory | Plain Walkthrough | Quiz (8/10) | Exercises | Quick Reference |
+|---|---------|--------|-------------------|------------|-----------|-----------------|
+| ☐ | 1 | [Your Learning OS](ch-01-your-learning-os.md) | ☐ | ☐ | ☐ | ☐ | ☐ |
+| ☐ | 2 | [The 30-Day Sprint](ch-02-the-30-day-sprint.md) | ☐ | ☐ | ☐ | ☐ | ☐ |
+| ☐ | 3 | [Daily Workflow & Energy](ch-03-daily-workflow-energy.md) | ☐ | ☐ | ☐ | ☐ | ☐ |
+| ☐ | 4 | [Active Recall & Spaced Repetition](ch-04-active-recall-spaced-repetition.md) | ☐ | ☐ | ☐ | ☐ | ☐ |
+| ☐ | 5 | [Deep Work & Focus](ch-05-deep-work-focus.md) | ☐ | ☐ | ☐ | ☐ | ☐ |
+| ☐ | 6 | [Learning From Any Resource](ch-06-learning-from-code.md) | ☐ | ☐ | ☐ | ☐ | ☐ |
+| ☐ | 7 | [Practice System for Mastery](ch-07-dsa-practice-system.md) | ☐ | ☐ | ☐ | ☐ | ☐ |
+| ☐ | 8 | [Study Plan for Any Exam](ch-08-system-design-study-plan.md) | ☐ | ☐ | ☐ | ☐ | ☐ |
+| ☐ | 9 | [Mastering Hard Subjects](ch-09-ai-ml-learning-strategy.md) | ☐ | ☐ | ☐ | ☐ | ☐ |
+| ☐ | 10 | [Interview Prep Workflow](ch-10-interview-prep-workflow.md) | ☐ | ☐ | ☐ | ☐ | ☐ |
+| ☐ | 11 | [Tracking & Course Correction](ch-11-tracking-course-correction.md) | ☐ | ☐ | ☐ | ☐ | ☐ |
+| ☐ | 12 | [Building in Public & Teaching](ch-12-building-in-public-teaching.md) | ☐ | ☐ | ☐ | ☐ | ☐ |
+| ☐ | 13 | [Final Capstone: Design Your System](ch-13-final-capstone.md) | ☐ | ☐ | ☐ | ☐ | ☐ |
+
 ## Learning Outcomes
 
 After completing this course, you will have:
@@ -188,12 +227,16 @@ After completing this course, you will have:
 10. A complete interview preparation workflow ([Ch 10](ch-10-interview-prep-workflow.md))
 11. A learning dashboard to track and course-correct ([Ch 11](ch-11-tracking-course-correction.md))
 12. The habit of teaching to solidify your knowledge ([Ch 12](ch-12-building-in-public-teaching.md))
+13. A complete learning system integrating all 12 techniques ([Ch 13](ch-13-final-capstone.md))
 
 ## How to Read
 
-1. **Daily:** Pick one chapter per week. Read the Theory section (15 min). Follow the plain-language walkthrough (20 min). Do the exercises (25 min)
-2. **Weekly:** Review the Practical Takeaways from the previous week. Take the Chapter Quiz. Track your progress in [Ch 11](ch-11-tracking-course-correction.md)'s dashboard
-3. **Reference:** Return to any chapter when you hit a specific problem (procrastination, forgetting, plateaus)
+1. **Diagnose:** Take the [Diagnostic Pre-Test](#diagnostic-pre-test). Skip chapters you already know. Focus on your gaps
+2. **Track:** Print the [Course Progress Tracker](#course-progress-tracker). Check off each chapter as you complete it
+3. **Daily:** Pick one chapter per week. Read the Theory section (15 min). Follow the plain-language walkthrough (20 min). Do the exercises (25 min)
+4. **Weekly:** Review the Practical Takeaways from the previous week. Take the Chapter Quiz. Use the Quick Reference cheat sheet for review
+5. **Graduate:** Complete [Ch 13: Final Capstone](ch-13-final-capstone.md) to integrate everything into one system
+6. **Reference:** Return to any chapter's Common Mistakes and Quick Reference when you hit a specific problem
 
 > **Start with [Chapter 1: Your Learning OS](ch-01-your-learning-os.md)** — because without a system, no technique will save you.
 

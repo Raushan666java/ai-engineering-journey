@@ -454,6 +454,15 @@ interface MenteeProgress {
 4. Find 1 person to mentor (or offer code reviews to a peer). 30 min/week
 5. Every time you teach something, note what questions they asked — those are gaps in your understanding
 
+## Common Mistakes
+
+| Mistake | Why It Fails | Fix |
+|---------|-------------|-----|
+| Waiting to become an "expert" first | You never feel expert enough. Imposter syndrome wins | Share what you learned TODAY. Beginners teach beginners best |
+| Teaching without preparing | You confuse others and discover gaps too late | Structure your explanation before you share. Bullet points are fine |
+| No feedback collection | You don't know what you're missing | End every post with a question. Ask: "What did I get wrong?" |
+| Perfection over clarity | Polished but incomprehensible | Clear > clever. Simple > sophisticated. Examples > definitions |
+
 ## Chapter Quiz
 
 <details>
@@ -488,3 +497,30 @@ interface MenteeProgress {
 3. **Write a learning log entry:** Write a 3-5 sentence weekly log entry about what you studied, what you discovered, and what you plan to improve next week. Keep it simple — even a notebook entry counts
 4. **TypeScript bonus — Write and publish:** Write a blog post using the BlogPostPlanner. Publish it on Dev.to, Medium, or your own blog
 5. **TypeScript bonus — Track your public learning:** Use the PublicLearningTracker or MentoringTracker to log your content creation and teaching sessions. Review your insights after 4 entries
+
+## Quick Reference
+
+### The Protege Effect (Weekly Practice)
+1. Pick one concept you learned this week
+2. Explain it to someone in 5 minutes (no notes)
+3. Ask them for 3 questions
+4. Note: questions you couldn't answer = your knowledge gaps
+
+### Learning Log Template
+```
+Week ___:
+- Topic mastered: ___
+- Key insight: ___
+- What confused me: ___
+- One question I'd ask an expert: ___
+```
+
+### One-Page Cheat Sheet Formula
+Every mastered topic gets a single page containing:
+- Top 5 formulas/concepts/facts
+- 3 most common mistakes
+- 1 mnemonic or memory trick
+- 1 practice problem with solution
+
+### Sharing Workflow
+Learn → Summarize → Share (1 post / 1 explanation) → Get feedback → Fill gaps → Teach someone

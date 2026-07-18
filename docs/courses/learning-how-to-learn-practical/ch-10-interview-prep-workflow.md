@@ -399,6 +399,15 @@ class STARStoryManager {
 4. Do 1 mock per week in Phase 2, 2 per week in Phase 3
 5. After every mock, identify exactly ONE area to improve before the next one
 
+## Common Mistakes
+
+| Mistake | Why It Fails | Fix |
+|---------|-------------|-----|
+| Starting mocks too late | First mock reveals panic-inducing gaps | Take a mock in WEEK 1 (diagnostic). No need to "prepare" for it |
+| Practicing alone | No one tells you about your blind spots | Do at least one mock per week with a partner or recorded |
+| Preparing answers, not stories | Facts are forgettable. Stories stick | Write 5 STAR stories. Practice them aloud until they flow |
+| Spreading too thin | Jack of all trades, master of none | Pick 3 core topics. Master them. The rest is review |
+
 ## Chapter Quiz
 
 <details>
@@ -433,3 +442,26 @@ class STARStoryManager {
 3. **Mock interview setup:** Arrange a mock interview with a friend or mentor. Prepare 5 likely questions. Record the session. Afterward, identify ONE weak area to improve for the next mock
 4. **Interview prep tracker (bonus):** Use the InterviewPrepTracker to create a 12-week plan for your target organization. Log at least 2 mock scores and adjust based on feedback
 5. **STAR story manager (bonus):** Use the STARStoryManager to manage 5+ stories. Run a practice session and verify each story fits in under 2 minutes
+
+## Quick Reference
+
+### 3-Phase Interview Prep
+| Phase | Duration | Focus |
+|-------|----------|-------|
+| Foundations | 40% of time | Core knowledge + STAR stories |
+| Company-Specific | 30% of time | Organization research + targeted prep |
+| Mock Peak | 30% of time | 1-2 mocks per week + feedback loop |
+
+### STAR Story Structure
+**S**ituation: Set the context (1-2 sentences)
+**T**ask: What was your responsibility?
+**A**ction: What specifically did YOU do?
+**R**esult: What happened? Use numbers if possible
+
+### Weekly Balance Rule
+60% technical/domain prep | 20% mock practice | 20% behavioral/stories
+
+### Mock Feedback Template
+- What went well: ___
+- What I'd change: ___
+- Question I struggled with: ___

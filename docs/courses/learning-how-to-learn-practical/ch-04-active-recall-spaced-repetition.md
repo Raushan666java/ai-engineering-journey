@@ -419,31 +419,45 @@ After 3 cycles, most topics are at 80%+ retention.
 
 
 
+## Common Mistakes
+
+| Mistake | Why It Fails | Fix |
+|---------|-------------|-----|
+| Re-reading instead of recalling | Recognition creates illusion of competence | Close the book. Write everything you remember. Check gaps |
+| Multi-concept flashcards | You half-know the card and rate it "good" | If a card contains "and", split it. One concept per card |
+| Rating "good" when you almost failed | The algorithm thinks you know it → shows it too late | Be honest. If it was hard, rate it hard (quality 2-3) |
+| No review of failed cards | Failed cards stay failed | Cards rated ≤3 reset to 1-day interval. Review them tomorrow |
+
 ## Chapter Quiz
 
 <details>
 <summary>1. What quality score resets the SM-2 interval to 1 day?</summary>
-<p>Quality ≤ 3 (ratings 0 through 3). If you struggle to recall correctly or fail entirely, the card goes back to the 1-day queue. This ensures difficult cards are seen more often.</p>
+<p><strong>Correct answer:</strong> Quality ≤ 3 (ratings 0 through 3).</p>
+<p><strong>Common wrong answer:</strong> "Quality ≤ 1". <em>Why it's wrong:</em> Ratings 2-3 also indicate poor recall (struggled or barely correct). Only ratings 4-5 count as passing and allow the interval to grow.</p>
 </details>
 
 <details>
 <summary>2. What happens to the ease factor after a quality 5 rating?</summary>
-<p>It increases by 0.1, up to a maximum of 3.0. A higher ease factor means the interval grows faster, so you see the card less often. Quality 5 also multiplies the interval by an extra 1.1.</p>
+<p><strong>Correct answer:</strong> It increases by 0.1, up to a maximum of 3.0.</p>
+<p><strong>Common wrong answer:</strong> "It stays the same". <em>Why it's wrong:</em> Quality 5 is perfect recall, so the algorithm rewards the card by increasing ease, making intervals grow faster so you see mastered cards less often.</p>
 </details>
 
 <details>
 <summary>3. What's the difference between recognition and recall?</summary>
-<p>Recognition = identifying the correct answer from options (multiple choice). Recall = generating the answer from memory (blank page, flashcards). Recall builds durable memory; recognition creates an illusion of competence.</p>
+<p><strong>Correct answer:</strong> Recognition identifies the correct answer from options; recall generates the answer from memory.</p>
+<p><strong>Common wrong answer:</strong> "Recognition is harder than recall". <em>Why it's wrong:</em> The opposite is true — recognition feels easy because you only need to identify, not generate. Multiple-choice tests use recognition; blank-page tests use recall.</p>
 </details>
 
 <details>
 <summary>4. What's the rule for splitting Anki cards?</summary>
-<p>If your card contains "and," split it into two cards. Each card should test exactly one concept. This forces atomic understanding and prevents you from partially knowing a card and rating it as "correct."</p>
+<p><strong>Correct answer:</strong> If your card contains "and," split it into two cards.</p>
+<p><strong>Common wrong answer:</strong> "Split cards if they have more than 10 words". <em>Why it's wrong:</em> Word count is not the issue — a short card can still test multiple concepts. The "and" test catches multi-concept cards reliably.</p>
 </details>
 
 <details>
 <summary>5. What's the minimum SM-2 interval after a failed review?</summary>
-<p>1 day. After a failed review (quality ≤ 3), the interval resets to 1 regardless of how long it was before. The repetitions counter also resets to 0, so the next successful review goes to 1 day → 6 days → interval × ease.</p>
+<p><strong>Correct answer:</strong> 1 day.</p>
+<p><strong>Common wrong answer:</strong> "7 days". <em>Why it's wrong:</em> A 7-day wait after failure means you forget the correction before seeing the card again. A 1-day reset ensures quick re-exposure to difficult material.</p>
 </details>
 
 ## Exercises
@@ -453,3 +467,25 @@ After 3 cycles, most topics are at 80%+ retention.
 3. **Topic mapping:** Pick any topic you are studying. List 10 key facts, formulas, dates, or concepts. For each one, write a question on one side of an index card and the answer on the other. Review daily
 4. **SM-2 implementation (bonus):** Write the full SM-2 `review()` function in TypeScript. Test it with a card that you review at quality 5, then again at quality 2
 5. **Recall session tracker (bonus):** Use the RecallSessionTracker for 5 study sessions across any subjects. After 5 sessions, identify your weakest topics and study them
+
+## Quick Reference
+
+### Blank Page Method
+1. Study (10 min) → 2. Close everything (1 min) → 3. Write all you remember (10 min) → 4. Check and mark gaps (5 min) → 5. Review gaps only (5 min)
+
+### Leitner Box Schedule
+| Box | Interval | Cards | Review |
+|-----|----------|-------|--------|
+| 1 | 1 day | New/failed | Daily |
+| 2 | 2 days | Learning | Every 2 days |
+| 3 | 4 days | Learning | Every 4 days |
+| 4 | 8 days | Known | Weekly |
+| 5 | 16 days | Mastered | Every 2 weeks |
+
+### SM-2 Simplified
+- Quality 4-5: Interval × 2.5. Ease +0.1
+- Quality 3: Interval × 1.2. Ease unchanged
+- Quality 0-2: Reset to 1 day. Ease -0.2
+
+### Card Design Rule
+If your card has "and", split it. One concept = one card.

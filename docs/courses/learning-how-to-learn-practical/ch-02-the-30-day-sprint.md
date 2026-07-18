@@ -398,31 +398,45 @@ After 7 days, you'll have a baseline. Decide if you want to continue into a full
 
 
 
+## Common Mistakes
+
+| Mistake | Why It Fails | Fix |
+|---------|-------------|-----|
+| Skipping Foundation phase | Without basics, core concepts make no sense | Spend 10 full days on fundamentals. Speed comes later |
+| Setting the daily minimum too high | You burn out by day 5 and quit entirely | Your daily minimum should be embarrassingly easy (5 problems, 15 min) |
+| No weekly review | You repeat mistakes for 30 days | Every Sunday: what worked, what didn't, what to change |
+| Trying to cover everything | The critical 20% gives 80% of results | Find the Pareto slice. Master that first. |
+
 ## Chapter Quiz
 
 <details>
 <summary>1. What are the three phases of a 30-day sprint?</summary>
-<p>Foundation (days 1-10): build vocabulary and first working examples. Core (days 11-20): apply fundamentals to real problems. Mastery (days 21-30): timed practice, teaching, and spaced review.</p>
+<p><strong>Correct answer:</strong> Foundation (days 1-10), Core (days 11-20), Mastery (days 21-30).</p>
+<p><strong>Common wrong answer:</strong> "Plan, Execute, Review". <em>Why it's wrong:</em> These are generic project phases, not learning phases. The sprint framework uses Foundation-Core-Mastery to map to the skill acquisition curve — building vocabulary first, then applying, then automating.</p>
 </details>
 
 <details>
 <summary>2. What's the recommended daily minimum to maintain momentum?</summary>
-<p>30 minutes. It's intentionally small — you can do it even on your worst day. No zero days. On good days you'll do 2-3 hours; on bad days you still do your 30 minutes.</p>
+<p><strong>Correct answer:</strong> 30 minutes.</p>
+<p><strong>Common wrong answer:</strong> "2 hours". <em>Why it's wrong:</em> A high minimum causes burnout by day 5. The daily minimum should be embarrassingly easy so you never break the streak — momentum beats intensity.</p>
 </details>
 
 <details>
 <summary>3. How often should you run a formal progress review during a sprint?</summary>
-<p>Every 7 days (days 7, 14, 21, 30). The day 14 review is the most important — it's when you have enough data to know if your approach is working, and enough time left to change course.</p>
+<p><strong>Correct answer:</strong> Every 7 days (days 7, 14, 21, 30).</p>
+<p><strong>Common wrong answer:</strong> "Only at the end of the sprint". <em>Why it's wrong:</em> Waiting 30 days to check progress means you waste 3+ weeks on ineffective strategies. Weekly check-ins let you course-correct early.</p>
 </details>
 
 <details>
 <summary>4. What's the Pareto principle applied to learning?</summary>
-<p>80% of interview problems test 20% of concepts. Identify that 20% in the first 2 days of your sprint and master it before touching anything else. For DSA: arrays, strings, hash maps, trees, DP.</p>
+<p><strong>Correct answer:</strong> 80% of interview problems test 20% of concepts. Identify and master that 20% first.</p>
+<p><strong>Common wrong answer:</strong> "80% of your time should be spent on 20% of topics". <em>Why it's wrong:</em> The Pareto principle is about outcomes vs. inputs, not time allocation. It means a small set of concepts produce most results, so you prioritize learning those concepts first.</p>
 </details>
 
 <details>
 <summary>5. What's the first thing to cut when you're falling behind in a sprint?</summary>
-<p>Scope. Don't cut time — cut topics. Focus on the critical 20% only. Everything else can wait for the next sprint. One topic mastered is worth more than five topics half-learned.</p>
+<p><strong>Correct answer:</strong> Scope. Cut topics, not time.</p>
+<p><strong>Common wrong answer:</strong> "Sleep or breaks". <em>Why it's wrong:</em> Cutting recovery reduces retention and causes burnout. Cut scope instead — focus on the critical 20% only and defer the rest to the next sprint.</p>
 </details>
 
 ## Exercises
@@ -432,3 +446,23 @@ After 7 days, you'll have a baseline. Decide if you want to continue into a full
 3. **Start a streak on a calendar:** Set a daily minimum for your goal (5 MCQ questions, 20 new vocab words, 1 DSA problem). Get a wall calendar. Mark an X every day you hit the minimum. Aim for a 30-day streak. No zero days
 4. **Implement a streak tracker (TypeScript):** Build a DailyMinimumTracker that accepts a date and a boolean for completion. Add methods to return current streak, best streak, and 7-day completion rate. Store data in localStorage or a JSON file
 5. **Build a sprint retrospective CLI (TypeScript):** Implement SprintRetrospective that reads an array of daily logs and generates a full retrospective report (wins, challenges, weak concepts, suggested next sprint). Add a `visualizeTimeline` method that prints a text-based Gantt chart
+
+## Quick Reference
+
+### 3-Phase Sprint Framework
+| Phase | Days | Focus | Goal |
+|-------|------|-------|------|
+| Foundation | 1-10 | Core concepts & vocabulary | Build the scaffold |
+| Core | 11-20 | Applied problems & patterns | Connect the dots |
+| Mastery | 21-30 | Mock tests & weak areas | Automate recall |
+
+### Pareto Rule
+Find the 20% of topics that give 80% of results. Master those first.
+
+### Daily Minimum Rule
+Set a goal so small you can't fail (5 problems, 15 min, 10 flashcards). Never break the streak.
+
+### Weekly Review (Every Sunday)
+1. What topics did I cover?
+2. What's my accuracy this week vs last week?
+3. What's my ONE focus for next week?

@@ -402,6 +402,15 @@ interface PatternMatch {
 4. Schedule re-solves at 1, 3, 7, and 30 days. If you can't re-solve, you didn't learn it
 5. Record every mock interview. Watch the recording. Grade yourself honestly on correctness, speed, communication, and edge cases
 
+## Common Mistakes
+
+| Mistake | Why It Fails | Fix |
+|---------|-------------|-----|
+| Practicing what you already know | Comfort zone feels productive but builds no skill | 70% new/challenging problems, 30% review |
+| Not analyzing errors | Doing 100 problems and learning nothing from mistakes | After each set, categorize errors: concept gap vs calculation vs speed |
+| No spaced review | Last week's topic is forgotten by next month | Schedule review slots: Day 1, 2, 4, 7, 14, 30 |
+| Speed before accuracy | Fast wrong answers build wrong habits | Accuracy first (90%+), then speed |
+
 ## Chapter Quiz
 
 <details>
@@ -436,3 +445,24 @@ interface PatternMatch {
 3. **Spaced review calendar:** Create a physical or digital calendar for the next 30 days. For each day, schedule: 1 new topic + review of past topics at 1/3/7/14/30 day intervals. Follow it for 2 weeks. Adjust intervals based on what you actually remember
 4. **DSA Review Scheduler (TypeScript):** Implement the DSAReviewScheduler with your actual problem list. Run it for 7 days
 5. **Interview Simulator (TypeScript):** Do one timed simulation per day for 5 days using the InterviewSimulator. Grade yourself honestly
+
+## Quick Reference
+
+### 3-Pass Practice Method
+1. **Understand:** Review 2-3 solved examples. Explain steps aloud
+2. **Attempt:** Solve 5 problems without looking at solutions. Time yourself
+3. **Analyze:** For wrong answers, write WHY you got it wrong
+
+### Error Categorization
+| Error Type | Fix |
+|-----------|-----|
+| Concept gap | Review theory. Do 10 easy problems |
+| Calculation mistake | Slow down. Verify each step |
+| Time pressure | Reduce time per problem by 10% each session |
+| Read incorrectly | Underline key info. Re-read before solving |
+
+### Spaced Review Schedule
+Day 1 (Learn) → Day 2 (Review) → Day 4 (Review) → Day 7 (Review) → Day 14 (Review) → Day 30 (Mastery check)
+
+### Accuracy First Rule
+Don't worry about speed until you hit 90%+ accuracy at your current pace.

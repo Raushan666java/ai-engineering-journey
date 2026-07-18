@@ -411,6 +411,15 @@ Your phone is the #1 focus killer. Implement this protocol starting today:
 
 
 
+## Common Mistakes
+
+| Mistake | Why It Fails | Fix |
+|---------|-------------|-----|
+| Multitasking (tabs open, phone nearby) | Attention residue kills deep work | Close everything except the task. Phone in another room |
+| Doing shallow work and calling it deep work | Checking email, organizing files, browsing — these don't build skill | Ask: "Would I pay someone else to do this?" If yes, it's shallow |
+| Context switching every 5 minutes | Each switch costs 15+ minutes to regain focus | Set a 45-min timer. No switching until it rings |
+| No capture pad for random thoughts | Urgent thoughts interrupt flow permanently | Keep a notepad beside you. Write the thought down, return to work |
+
 ## Chapter Quiz
 
 <details>
@@ -445,3 +454,26 @@ Your phone is the #1 focus killer. Implement this protocol starting today:
 3. **Streak tracking:** Print a calendar or use a notebook. Mark an X for every day you complete a focused study session of 45+ minutes. Aim for a 7-day streak
 4. **Focus session tracker (bonus):** Use the FocusTracker for 5 deep work sessions. Log all ratings and review the patterns after session 5
 5. **Protocol generator (bonus):** Use the DeepWorkProtocol generator to create your personal protocol. Follow it exactly for 5 sessions
+
+## Quick Reference
+
+### Deep Work Protocol
+**Before (5 min):** Phone away → All tabs closed → Session goal written
+**During (45-90 min):** Capture pad ready → No switching → Timer on
+**After (5 min):** Log focus/energy/output → Note interruptions → Plan next session
+
+### Distraction Audit (3-Day Tally)
+| Category | Day 1 | Day 2 | Day 3 |
+|----------|-------|-------|-------|
+| Phone notifications | | | |
+| Social media | | | |
+| People interruptions | | | |
+| Random thoughts | | | |
+
+### Shallow vs Deep Work
+| Deep Work | Shallow Work |
+|-----------|-------------|
+| Solving hard problems | Checking email |
+| Writing an essay | Organizing files |
+| Learning a new concept | Browsing social media |
+| Practice with feedback | Reading without notes |

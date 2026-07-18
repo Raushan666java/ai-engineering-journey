@@ -425,31 +425,45 @@ After 3 days:
 
 
 
+## Common Mistakes
+
+| Mistake | Why It Fails | Fix |
+|---------|-------------|-----|
+| Studying during low-energy windows | Low retention, frustration, quitting | Track your energy for 3 days. Schedule deep work at peaks |
+| No startup ritual | Takes 20+ minutes of willpower to start | 3 fixed actions before every session (close tabs, phone away, set goal) |
+| Skipping evening review | You repeat the same inefficiencies daily | 5-min review before bed: what worked, what's tomorrow's priority |
+| Same method all day | Low-energy deep work is impossible | Match method to energy: deep work at peak, shallow work at trough |
+
 ## Chapter Quiz
 
 <details>
 <summary>1. What's the recommended Pomodoro length for deep work?</summary>
-<p>50 minutes focus, 10 minutes break. Deep work requires extended concentration — 25 minutes is too short to enter flow. Save 25/5 for shallow tasks like Anki reviews or email.</p>
+<p><strong>Correct answer:</strong> 50 minutes focus, 10 minutes break.</p>
+<p><strong>Common wrong answer:</strong> "25 minutes focus, 5 minutes break". <em>Why it's wrong:</em> 25/5 is too short for deep work — you barely enter flow before the timer rings. Save 25/5 for shallow tasks like Anki reviews.</p>
 </details>
 
 <details>
 <summary>2. How long should you track your energy levels before scheduling?</summary>
-<p>3 days. Track every hour (1-5 scale). After 3 days, you'll clearly see your high/medium/low windows. Most people find their high window is 2-4 hours after waking.</p>
+<p><strong>Correct answer:</strong> 3 days.</p>
+<p><strong>Common wrong answer:</strong> "1 day". <em>Why it's wrong:</em> One day is not enough to identify patterns — energy varies due to sleep, diet, and stress. You need at least 3 days to see consistent highs and lows.</p>
 </details>
 
 <details>
 <summary>3. What's the purpose of the startup ritual?</summary>
-<p>To bridge the gap between intention and action. The first minute is always the hardest. The 5-minute ritual (clear → open → timer → goal → breathe) makes starting automatic after 7 days of repetition.</p>
+<p><strong>Correct answer:</strong> To bridge the gap between intention and action.</p>
+<p><strong>Common wrong answer:</strong> "To plan your entire day". <em>Why it's wrong:</em> The ritual is about starting, not planning. Planning should happen separately. The ritual uses fixed actions to make the transition into focus automatic.</p>
 </details>
 
 <details>
 <summary>4. What are the 5 components of the evening review?</summary>
-<p>What I learned (1-2 sentences), What confused me (specific), Top priority for tomorrow (1 thing), Focus rating (1-5), Energy rating (1-5). Total time: 10 minutes.</p>
+<p><strong>Correct answer:</strong> What I learned, What confused me, Top priority for tomorrow, Focus rating, Energy rating.</p>
+<p><strong>Common wrong answer:</strong> "What I did, How long I studied, Tomorrow's schedule". <em>Why it's wrong:</em> This is a task log, not a learning review. The evening review focuses on comprehension and gaps, not time tracking.</p>
 </details>
 
 <details>
 <summary>5. What's the most common mistake in daily scheduling?</summary>
-<p>Scheduling deep work in low-energy windows (usually evening for most people). Deep work belongs in your high-energy window. If your high window is morning but you study at night, your schedule is fighting your biology.</p>
+<p><strong>Correct answer:</strong> Scheduling deep work in low-energy windows.</p>
+<p><strong>Common wrong answer:</strong> "Not studying enough hours". <em>Why it's wrong:</em> The problem isn't quantity, it's alignment. Two hours of deep work at peak energy beats four hours of low-energy struggle.</p>
 </details>
 
 ## Exercises
@@ -459,3 +473,30 @@ After 3 days:
 3. **7-day startup ritual streak:** Perform the same 3 actions before every study session for 7 days. At day 7, write a one-paragraph reflection: Did starting get easier? What still feels like friction? Adjust your ritual for week 2
 4. **Implement an energy-aware scheduler (TypeScript):** Build the EnergyAwareScheduler class that accepts energy logs (hour + level) and returns scheduled TimeBlock objects. Add a `visualizeDay` method that prints a text-based timeline of the day
 5. **Build an evening review CLI (TypeScript):** Implement EveningReview with log and getWeekReview methods. Add an interactive prompt mode that asks the 5 questions one by one and saves results. Add a `weeklyTrend` method that shows how focus and energy changed across the week
+
+## Quick Reference
+
+### Energy Scheduling
+```
+Time          Energy   Activity Type
+Morning Peak  8-9     Deep Work (new concepts)
+Afternoon Dip 1-3     Shallow Work (review, flashcards)
+Evening Rise  6-8     Practice Problems
+```
+
+### Startup Ritual (3 min)
+1. Close all unrelated browser tabs
+2. Phone on Do Not Disturb, placed across the room
+3. Write: "This session I will focus on ___"
+
+### Pomodoro Variants
+| Task Type | Focus Block | Break |
+|-----------|------------|-------|
+| Deep work | 90 min | 15 min |
+| Practice | 45 min | 5 min |
+| Review | 25 min | 5 min |
+
+### Evening Review (5 min)
+- What did I study today?
+- What stuck? What didn't?
+- Tomorrow's ONE priority:

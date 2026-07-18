@@ -439,6 +439,15 @@ class WeeklyAISchedule {
 4. Follow 10-15 researchers, not 100. Quality over quantity
 5. Your weekly AI learning schedule: 1 paper, implement it, write a summary
 
+## Common Mistakes
+
+| Mistake | Why It Fails | Fix |
+|---------|-------------|-----|
+| Diving into details before the big picture | You get lost in jargon and give up | Start with a 5-min overview (Wikipedia, YouTube summary) |
+| Skipping prerequisites | You hit a wall and don't know why | Map prerequisites first. Fill gaps before proceeding |
+| Using jargon without understanding it | You think you understand but can't explain it | Feynman technique: explain it like you're teaching a 12-year-old |
+| Re-reading the same dense material | Passive re-reading doesn't build understanding | Switch resources. Read a different explanation of the same concept |
+
 ## Chapter Quiz
 
 <details>
@@ -473,3 +482,27 @@ class WeeklyAISchedule {
 3. **Spiral reading:** Pick a hard topic. Do 3 passes over 3 days: Day 1 (big picture — watch a 10-min intro video), Day 2 (mechanics — follow a step-by-step tutorial), Day 3 (implementation — solve a problem or build something). Write a 1-paragraph reflection after each pass
 4. **Paper Study Planner (TypeScript):** Pick a foundational paper (start with "Attention Is All You Need"). Use the PaperStudyPlanner to track your 3-pass reading. Do Pass 1 (5 min), Pass 2 (30 min). Write the key insight in 1 sentence
 5. **Learning Stack Tracker (TypeScript):** Use the LearningStackTracker to map your current learning stack for any hard subject. Identify the lowest incomplete layer. Spend 1 week completing it
+
+## Quick Reference
+
+### Spiral Learning (3 Passes)
+| Pass | Focus | Duration | Goal |
+|------|-------|----------|------|
+| 1 — Big Picture | High-level overview | 1-2 hours | Grasp WHAT and WHY |
+| 2 — Mechanics | Step-by-step breakdown | 3-5 hours | Understand HOW |
+| 3 — Implementation | Apply it | 5-10 hours | Build/do/solve |
+
+### Prerequisite Chain Template
+```
+Target Topic
+├── Prerequisite 1 (Current level: ___)
+├── Prerequisite 2 (Current level: ___)
+└── Prerequisite 3 (Current level: ___)
+```
+Fill gaps before tackling the target.
+
+### Feynman Technique
+1. Write the concept at the top of a blank page
+2. Explain it in plain language (no jargon)
+3. Every jargon word you use is a gap — define it
+4. If you can't explain it simply, you haven't understood it

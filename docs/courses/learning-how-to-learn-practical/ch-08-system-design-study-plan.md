@@ -425,6 +425,15 @@ class DesignEvaluator {
 4. Always spend 5 minutes clarifying requirements before drawing anything
 5. Every design session must end with tradeoff analysis — "I optimized for X at the cost of Y"
 
+## Common Mistakes
+
+| Mistake | Why It Fails | Fix |
+|---------|-------------|-----|
+| Starting without a syllabus gap analysis | You study what you already know | List every topic. Rate 1-5. Study weakest first |
+| Equal time to all subjects | Strong areas get better while weak areas stay weak | Spend 60% of time on weak areas, 40% on maintenance |
+| Avoiding mocks until "ready" | You never feel ready. Mocks reveal blind spots | Take a diagnostic in Week 1. Repeat every 2 weeks |
+| Not adjusting from mock data | Same mistakes in week 1 and week 12 | Track error types. If the same type appears 3 mocks in a row, change your approach |
+
 ## Chapter Quiz
 
 <details>
@@ -459,3 +468,25 @@ class DesignEvaluator {
 3. **Mock test schedule:** Design a mock test schedule for the final 2 months before your exam. Include: frequency of mocks, which subjects to focus on between mocks, and a post-mock analysis template (error log, weak area identification, next-action items)
 4. **Consistent Hash Ring (TypeScript):** Use the ConsistentHashRing class. Add 3 servers, distribute 1000 keys, check the distribution. Remove one server and see how many keys move
 5. **Design Evaluator (TypeScript):** Do a 45-minute mock design session for URL Shortener. Use the DesignEvaluator to score yourself. Identify 2 areas to improve
+
+## Quick Reference
+
+### Syllabus Gap Analysis
+| Subject | Topic | Current Level (1-5) | Priority | Study Hours Needed |
+|---------|-------|-------------------|----------|-------------------|
+| | | | | |
+
+### 3-Phase Exam Plan
+| Phase | Duration | Focus | Milestone |
+|-------|----------|-------|-----------|
+| Foundations | 33% of time | Theory + concepts | Complete all topics at level 3+ |
+| Practice | 33% of time | Topic-wise tests + error analysis | 80%+ accuracy per topic |
+| Mastery | 33% of time | Full mocks + speed drills | 90%+ in mock tests |
+
+### Mock Test Cadence
+- Phase 1: 1 diagnostic only
+- Phase 2: 1 mock per week
+- Phase 3: 3 mocks per week
+
+### Priority Rule
+60% of study time on weakest topics. 40% on maintenance (review + strong areas).

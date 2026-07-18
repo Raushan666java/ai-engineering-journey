@@ -421,6 +421,15 @@ class CourseCorrectionAdvisor {
 4. The North Star Metric for interview prep: "Can I solve this problem under time pressure?"
 5. Pivot gracefully: document what you learned, save your work, take a 1-day break, start fresh
 
+## Common Mistakes
+
+| Mistake | Why It Fails | Fix |
+|---------|-------------|-----|
+| Tracking time instead of output | "I studied 5 hours" means nothing if you retained nothing | Track problems solved, topics completed, accuracy % |
+| Ignoring leading indicators | Lagging (mock scores) only tells you after it's too late | Track daily: focus score, deep work hours, error rate |
+| No weekly review | Data without action is just data | Every Sunday: 4 questions (see Quick Reference) |
+| Making tracking too complex | You quit after 3 days | A notebook with 3 columns (Date, Topic, Takeaways) is enough |
+
 ## Chapter Quiz
 
 <details>
@@ -455,3 +464,27 @@ class CourseCorrectionAdvisor {
 3. **Plateau detection & intervention:** Look at your last 2-4 weeks of data. If a topic's accuracy stayed flat for 2 weeks, pick ONE breakthrough strategy (change input, method, pace, or take a break) and apply it this week
 4. **TypeScript bonus — Course correction:** Use the CourseCorrectionAdvisor with your actual data. Implement the top priority advice this week
 5. **TypeScript bonus — Build your dashboard:** Implement the LearningDashboard class or create a spreadsheet. Use it daily for 2 weeks. At week 2, review: what did tracking reveal that you wouldn't have noticed otherwise?
+
+## Quick Reference
+
+### Daily Log Template (3 Columns)
+| Date | Subject / Topic | Key Takeaways |
+|------|----------------|---------------|
+| | | |
+
+### Leading vs Lagging Metrics
+| Leading (Track Daily) | Lagging (Check Weekly) |
+|----------------------|----------------------|
+| Deep work hours | Mock test score |
+| Problems solved | Accuracy % |
+| Focus rating (1-5) | Topics mastered |
+| Error categories | Time per problem |
+
+### Weekly Review (Every Sunday — 15 min)
+1. What did I study this week?
+2. Which metrics improved? Which didn't?
+3. What's my ONE plateau that needs a different approach?
+4. What's my priority for next week?
+
+### Plateau Detection Rule
+If a metric stays flat for 2 weeks → change your method, not your effort.

@@ -404,6 +404,15 @@ class FrameworkLearningPlanGenerator {
 4. Build every new framework app 3 times: V1 (Hello World), V2 (CRUD), V3 (Production)
 5. Contribute one small fix (doc typo, small bug) to an open-source project you use
 
+## Common Mistakes
+
+| Mistake | Why It Fails | Fix |
+|---------|-------------|-----|
+| Passive consumption (watching/reading without pausing) | Information goes in one ear, out the other | Pause every 10 min. Summarize what you just learned aloud |
+| Starting a resource without questions | No purpose → no retention | Write 5 questions before you start. Find their answers as you go |
+| Not reviewing after finishing | You remember 30% after 24 hours without review | Spend 15 min after each session on active recall |
+| Hoarding resources (50 bookmarks, 0 read) | Collecting feels like learning | Read one resource completely before saving the next |
+
 ## Chapter Quiz
 
 <details>
@@ -438,3 +447,31 @@ class FrameworkLearningPlanGenerator {
 3. **Question generation:** Before starting any new resource (video, chapter, lecture), write 5-10 questions you want it to answer. After finishing, check how many you can answer. Track your question-answer ratio over 1 week
 4. **Codebase Analyzer (TypeScript):** Clone an open-source TypeScript project (< 10K files). Use the CodebaseAnalyzer to build a dependency graph. Identify the entry point
 5. **Request Tracer (TypeScript):** Use the RequestTracer pattern. Set breakpoints and trace one API endpoint or CLI command end-to-end. Document the call stack
+
+## Quick Reference
+
+### SQ3R Method
+1. **Survey** (5 min): Skim headings, summaries, diagrams
+2. **Question** (5 min): Write 5 questions you want answered
+3. **Read** (20 min): Read actively, looking for answers to your questions
+4. **Recite** (5 min): Close material. Summarize aloud from memory
+5. **Review** (5 min): Check accuracy. Note gaps. Create 3 flashcards
+
+### Knowledge Map Template
+```
+Main Topic
+├── Subtopic 1
+│   ├── Key Concept A (Prerequisite: ___)
+│   ├── Key Concept B
+│   └── Practice Path: ___
+├── Subtopic 2
+│   ├── Key Concept C
+│   └── Practice Path: ___
+```
+
+### Active vs Passive Learning
+| Passive | Active |
+|---------|--------|
+| Watching a video | Pausing to summarize |
+| Reading a chapter | Writing what you remember |
+| Listening to a lecture | Answering your own questions |

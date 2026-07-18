@@ -164,7 +164,7 @@ Looking for something specific? <a href="?q=" onclick="document.querySelector('.
 -   <span class="course-icon">💼</span> __[Placement Preparation](courses/placement-preparation/)__ <span class="course-chaps">7 Ch</span>
 -   <span class="course-icon">🎓</span> __[Backend + AI Placement](courses/ai-engineering-placement/)__ <span class="course-chaps">21 Subjects · 193 Ch</span>
 -   <span class="course-icon">🧠</span> __[Learning How to Learn](courses/learning-how-to-learn/)__ <span class="course-chaps">15 Ch</span>
--   <span class="course-icon">🎯</span> __[Learning How to Learn (Practical)](courses/learning-how-to-learn-practical/)__ <span class="course-chaps">12 Ch · TypeScript</span>
+-   <span class="course-icon">🎯</span> __[Learning How to Learn (Practical)](courses/learning-how-to-learn-practical/)__ <span class="course-chaps">12 Ch · Any Goal</span>
 -   <span class="course-icon">📋</span> __[Government Exams Hub](courses/government-exams/)__ <span class="course-chaps">21 Subjects</span>
 -   <span class="course-icon">🔢</span> __[Quantitative Aptitude](courses/quantitative-aptitude/)__ <span class="course-chaps">7 Ch</span>
 -   <span class="course-icon">🧩</span> __[Reasoning Ability](courses/reasoning-ability/)__ <span class="course-chaps">7 Ch</span>

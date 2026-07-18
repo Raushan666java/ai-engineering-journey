@@ -1,77 +1,84 @@
 # Learning How to Learn (Practical Edition)
 
-> **Actionable systems. Real TypeScript. Zero fluff. Designed for engineers who want to crack FAANG/MNC interviews.**
+> **Learning systems for any goal. Plain-language walkthroughs for everyone, TypeScript examples for engineers. Designed for SSC, UPSC, GATE, FAANG, language learning, or any skill you want to master.**
 
 ## When This Course Helps
 
 | Situation | Start Here |
 |-----------|-----------|
+| "I'm preparing for SSC CGL / Banking exams" | [Ch 7](ch-07-dsa-practice-system.md) + [Ch 4](ch-04-active-recall-spaced-repetition.md) |
+| "I'm studying for UPSC / state PCS" | [Ch 8](ch-08-system-design-study-plan.md) + [Ch 5](ch-05-deep-work-focus.md) |
 | "I don't know where to start with System Design" | [Ch 8](ch-08-system-design-study-plan.md) + [Ch 2](ch-02-the-30-day-sprint.md) |
 | "I solved 100 LeetCode problems but still fail interviews" | [Ch 7](ch-07-dsa-practice-system.md) + [Ch 4](ch-04-active-recall-spaced-repetition.md) |
 | "I read papers but forget everything in a week" | [Ch 4](ch-04-active-recall-spaced-repetition.md) + [Ch 11](ch-11-tracking-course-correction.md) |
 | "I have 3 months to prepare for interviews" | [Ch 10](ch-10-interview-prep-workflow.md) + [Ch 2](ch-02-the-30-day-sprint.md) |
 | "I keep procrastinating on my study plan" | [Ch 5](ch-05-deep-work-focus.md) + [Ch 3](ch-03-daily-workflow-energy.md) |
+| "I want to learn a new language" | [Ch 2](ch-02-the-30-day-sprint.md) + [Ch 4](ch-04-active-recall-spaced-repetition.md) |
 | "I want to learn AI/ML but feel overwhelmed" | [Ch 9](ch-09-ai-ml-learning-strategy.md) + [Ch 1](ch-01-your-learning-os.md) |
 | "I've been studying for months with no improvement" | [Ch 11](ch-11-tracking-course-correction.md) + [Ch 12](ch-12-building-in-public-teaching.md) |
 
 ## Quick Start (Choose Your Path)
 
+- **I'm preparing for SSC / Banking exams:** Start with [Ch 7](ch-07-dsa-practice-system.md) (Practice System), then [Ch 4](ch-04-active-recall-spaced-repetition.md) (Active Recall), then [Ch 8](ch-08-system-design-study-plan.md) (Study Plan)
+- **I'm preparing for UPSC / state PCS:** Start with [Ch 8](ch-08-system-design-study-plan.md) (Study Plan), then [Ch 5](ch-05-deep-work-focus.md) (Deep Work), then [Ch 11](ch-11-tracking-course-correction.md) (Tracking)
 - **I have 30 days to level up:** Start with [Ch 2](ch-02-the-30-day-sprint.md) (30-Day Sprint), then [Ch 4](ch-04-active-recall-spaced-repetition.md) (Active Recall), then [Ch 5](ch-05-deep-work-focus.md) (Deep Work)
-- **I need DSA structure:** Start with [Ch 7](ch-07-dsa-practice-system.md) (DSA System), then [Ch 4](ch-04-active-recall-spaced-repetition.md) (Spaced Repetition), then [Ch 11](ch-11-tracking-course-correction.md) (Tracking)
-- **I'm learning AI/ML:** Start with [Ch 9](ch-09-ai-ml-learning-strategy.md) (AI/ML Strategy), then [Ch 6](ch-06-learning-from-code.md) (Learning From Code), then [Ch 12](ch-12-building-in-public-teaching.md) (Teaching)
-- **I'm preparing for interviews:** Start with [Ch 10](ch-10-interview-prep-workflow.md) (Interview Prep), then [Ch 8](ch-08-system-design-study-plan.md) (System Design), then [Ch 7](ch-07-dsa-practice-system.md) (DSA)
+- **I need DSA structure:** Start with [Ch 7](ch-07-dsa-practice-system.md) (Practice System), then [Ch 4](ch-04-active-recall-spaced-repetition.md) (Spaced Repetition), then [Ch 11](ch-11-tracking-course-correction.md) (Tracking)
+- **I'm learning a new language:** Start with [Ch 2](ch-02-the-30-day-sprint.md) (30-Day Sprint), then [Ch 4](ch-04-active-recall-spaced-repetition.md) (Active Recall), then [Ch 12](ch-12-building-in-public-teaching.md) (Teaching)
+- **I'm learning AI/ML:** Start with [Ch 9](ch-09-ai-ml-learning-strategy.md) (Hard Subjects), then [Ch 6](ch-06-learning-from-code.md) (Learning From Any Resource), then [Ch 12](ch-12-building-in-public-teaching.md) (Teaching)
+- **I'm preparing for interviews:** Start with [Ch 10](ch-10-interview-prep-workflow.md) (Interview Prep), then [Ch 8](ch-08-system-design-study-plan.md) (Study Plan), then [Ch 7](ch-07-dsa-practice-system.md) (Practice System)
 - **I want the full system:** Read in order, [Ch 1](ch-01-your-learning-os.md) through [Ch 12](ch-12-building-in-public-teaching.md)
 
 ## Chapters
 
-| # | Chapter | Lines | TypeScript | Mermaid | What You'll Build |
-|---|---------|-------|------------|---------|-------------------|
-| 1 | [Your Learning OS](ch-01-your-learning-os.md) | ~550 | 3 blocks | 1 | OODA learning loop |
-| 2 | [The 30-Day Sprint](ch-02-the-30-day-sprint.md) | ~500 | 2 blocks | 1 | Sprint planner |
-| 3 | [Daily Workflow & Energy](ch-03-daily-workflow-energy.md) | ~480 | 3 blocks | 1 | Energy-aware scheduler |
-| 4 | [Active Recall & Spaced Repetition](ch-04-active-recall-spaced-repetition.md) | ~550 | 3 blocks | 1 | SM-2 algorithm |
-| 5 | [Deep Work & Focus](ch-05-deep-work-focus.md) | ~480 | 3 blocks | 1 | Focus session tracker |
-| 6 | [Learning From Code](ch-06-learning-from-code.md) | ~500 | 3 blocks | 1 | Codebase analyzer |
-| 7 | [DSA Practice System](ch-07-dsa-practice-system.md) | ~550 | 3 blocks | 1 | Review scheduler |
-| 8 | [System Design Study Plan](ch-08-system-design-study-plan.md) | ~520 | 3 blocks | 1 | Design evaluator |
-| 9 | [AI/ML Learning Strategy](ch-09-ai-ml-learning-strategy.md) | ~480 | 3 blocks | 1 | Paper study planner |
-| 10 | [Interview Prep Workflow](ch-10-interview-prep-workflow.md) | ~550 | 3 blocks | 1 | Interview tracker |
-| 11 | [Tracking & Course Correction](ch-11-tracking-course-correction.md) | ~480 | 3 blocks | 1 | Learning dashboard |
-| 12 | [Building in Public & Teaching](ch-12-building-in-public-teaching.md) | ~480 | 3 blocks | 1 | Public learning tracker |
+| # | Chapter | What You'll Build |
+|---|---------|-------------------|
+| 1 | [Your Learning OS](ch-01-your-learning-os.md) | OODA learning loop + learning style assessment |
+| 2 | [The 30-Day Sprint](ch-02-the-30-day-sprint.md) | Sprint planner for any goal |
+| 3 | [Daily Workflow & Energy](ch-03-daily-workflow-energy.md) | Energy-aware study schedule |
+| 4 | [Active Recall & Spaced Repetition](ch-04-active-recall-spaced-repetition.md) | Leitner box + SM-2 review system |
+| 5 | [Deep Work & Focus](ch-05-deep-work-focus.md) | Focus session tracker |
+| 6 | [Learning From Any Resource](ch-06-learning-from-code.md) | Universal resource deconstructor |
+| 7 | [Practice System for Mastery](ch-07-dsa-practice-system.md) | Deliberate practice tracker |
+| 8 | [Study Plan for Any Exam](ch-08-system-design-study-plan.md) | Exam prep roadmap generator |
+| 9 | [Mastering Hard Subjects](ch-09-ai-ml-learning-strategy.md) | Spiral learning planner |
+| 10 | [Interview Prep Workflow](ch-10-interview-prep-workflow.md) | Interview preparation tracker |
+| 11 | [Tracking & Course Correction](ch-11-tracking-course-correction.md) | Learning dashboard (digital + paper) |
+| 12 | [Building in Public & Teaching](ch-12-building-in-public-teaching.md) | Public learning tracker |
 
 ## Chapter Structure
 
-Every chapter follows the same format:
+Every chapter has two tracks:
 
 ```
-Learning Objectives     → 5 things you'll be able to do
-Theory                  → Core concepts with Mermaid diagram
-Examples                → TypeScript code you can run
-Summary                 → 5 key takeaways
-Practical Takeaways     → 3-5 actionable items
-Chapter Quiz            → 5 MCQ with answers
-Exercises               → 5 tasks you can do today
+Learning Objectives      → 5 things you'll be able to do
+Theory                   → Core concepts with Mermaid diagram
+Examples                 → 📝 Plain-language walkthrough + 💻 TypeScript (optional)
+Summary                  → 5 key takeaways
+Practical Takeaways      → 3-5 actionable items
+Chapter Quiz             → 5 MCQ with answers
+Exercises                → 3 universal tasks + 2 TypeScript bonus
 ```
+
+> The TypeScript examples are **optional**. Every concept is explained in plain language first. Non-programmers can skip the code and still get a complete course.
 
 ## Prerequisites
 
-- Basic TypeScript/JavaScript (understand classes, interfaces, functions)
 - A learning goal you care about (pick one before starting)
 - 30 minutes per day minimum to practice
+- *No coding experience required. TypeScript examples are optional bonuses for engineers.*
 
 ## Connection to Other Courses
 
-This course is designed to support your FAANG/MNC interview preparation:
+These techniques apply to any learning goal:
 
 | Practical Chapter | Helps With |
 |------------------|-----------|
-| [Ch 4](ch-04-active-recall-spaced-repetition.md) (Recall) | Retaining DSA patterns, system design concepts |
-| [Ch 6](ch-06-learning-from-code.md) (Code) | Learning any new framework or codebase |
-| [Ch 7](ch-07-dsa-practice-system.md) (DSA) | Structuring LeetCode practice |
-| [Ch 8](ch-08-system-design-study-plan.md) (System Design) | Building a study plan for design rounds |
-| [Ch 9](ch-09-ai-ml-learning-strategy.md) (AI/ML) | Navigating papers and frameworks |
-| [Ch 10](ch-10-interview-prep-workflow.md) (Interview) | Structuring your full prep cycle |
-
+| [Ch 4](ch-04-active-recall-spaced-repetition.md) (Recall) | Retaining any subject — history dates, math formulas, vocabulary, DSA patterns |
+| [Ch 6](ch-06-learning-from-code.md) (Resource) | Learning from textbooks, video courses, lectures, or codebases |
+| [Ch 7](ch-07-dsa-practice-system.md) (Practice) | Deliberate practice for quant, reasoning, GK, vocabulary, coding |
+| [Ch 8](ch-08-system-design-study-plan.md) (Study Plan) | Building a study plan for SSC, UPSC, GATE, FAANG, any exam |
+| [Ch 9](ch-09-ai-ml-learning-strategy.md) (Hard Subjects) | Mastering advanced topics — ML, finance, law, medicine |
+| [Ch 10](ch-10-interview-prep-workflow.md) (Interview) | Structuring prep for any interview — tech, government, campus |
 
 ## Full 12-Week Study Plan
 
@@ -79,12 +86,12 @@ This course is designed to support your FAANG/MNC interview preparation:
 |------|----------|-------|-------------|
 | 1 | [Ch 1](ch-01-your-learning-os.md) + [Ch 3](ch-03-daily-workflow-energy.md) | Set up your learning system + daily workflow | 12 |
 | 2 | [Ch 2](ch-02-the-30-day-sprint.md) + [Ch 4](ch-04-active-recall-spaced-repetition.md) | Sprint planning + active recall setup | 14 |
-| 3 | [Ch 5](ch-05-deep-work-focus.md) + [Ch 6](ch-06-learning-from-code.md) | Deep work protocol + code learning | 16 |
-| 4 | [Ch 7](ch-07-dsa-practice-system.md) | DSA practice system foundations | 18 |
-| 5 | [Ch 7](ch-07-dsa-practice-system.md) + [Ch 8](ch-08-system-design-study-plan.md) | DSA + system design study plan | 18 |
-| 6 | [Ch 8](ch-08-system-design-study-plan.md) | System design deep dive | 18 |
-| 7 | [Ch 9](ch-09-ai-ml-learning-strategy.md) | AI/ML learning strategy | 16 |
-| 8 | [Ch 9](ch-09-ai-ml-learning-strategy.md) + [Ch 10](ch-10-interview-prep-workflow.md) | AI/ML + interview prep | 18 |
+| 3 | [Ch 5](ch-05-deep-work-focus.md) + [Ch 6](ch-06-learning-from-code.md) | Deep work protocol + resource learning | 16 |
+| 4 | [Ch 7](ch-07-dsa-practice-system.md) | Practice system foundations | 18 |
+| 5 | [Ch 7](ch-07-dsa-practice-system.md) + [Ch 8](ch-08-system-design-study-plan.md) | Practice + study plan | 18 |
+| 6 | [Ch 8](ch-08-system-design-study-plan.md) | Study plan deep dive | 18 |
+| 7 | [Ch 9](ch-09-ai-ml-learning-strategy.md) | Mastering hard subjects | 16 |
+| 8 | [Ch 9](ch-09-ai-ml-learning-strategy.md) + [Ch 10](ch-10-interview-prep-workflow.md) | Hard subjects + interview prep | 18 |
 | 9 | [Ch 10](ch-10-interview-prep-workflow.md) | Interview prep workflow | 20 |
 | 10 | [Ch 11](ch-11-tracking-course-correction.md) | Tracking and course correction | 14 |
 | 11 | [Ch 12](ch-12-building-in-public-teaching.md) | Building in public and teaching | 12 |
@@ -92,18 +99,16 @@ This course is designed to support your FAANG/MNC interview preparation:
 
 ## Concept Map
 
-This diagram shows how the chapters connect:
-
 ```mermaid
 flowchart TD
     A[Ch 1: Learning OS] --> B[Ch 2: 30-Day Sprint]
     B --> C[Ch 3: Daily Workflow]
     C --> D[Ch 4: Active Recall]
     D --> E[Ch 5: Deep Work]
-    E --> F[Ch 6: Learning From Code]
-    F --> G[Ch 7: DSA Practice]
-    F --> H[Ch 8: System Design]
-    F --> I[Ch 9: AI/ML Strategy]
+    E --> F[Ch 6: Learning From Any Resource]
+    F --> G[Ch 7: Practice System]
+    F --> H[Ch 8: Study Plan]
+    F --> I[Ch 9: Hard Subjects]
     G --> J[Ch 10: Interview Prep]
     H --> J
     I --> J
@@ -124,7 +129,7 @@ Minimum 30 minutes for the daily minimum. Optimal is 1.5-2 hours if you want to 
 
 ### I already use Anki. Do I need Chapter 4?
 
-[Chapter 4](ch-04-active-recall-spaced-repetition.md) covers active recall beyond flashcards — the blank page method, code tracing, and design recall. Even if you're an Anki power user, the non-flashcard techniques will help.
+[Chapter 4](ch-04-active-recall-spaced-repetition.md) covers active recall beyond flashcards — the blank page method, the Leitner box, and recall techniques for any subject. Even if you're an Anki power user, the non-digital techniques will help.
 
 ### Can I skip chapters?
 
@@ -132,34 +137,41 @@ Yes. Each chapter is self-contained. Use the "[When This Course Helps](#when-thi
 
 ### What if I don't know TypeScript?
 
-The TypeScript code is simple — classes, interfaces, functions. Even without TypeScript knowledge, the concepts and comments explain what each function does. You can implement the same ideas in Python, Java, or any language.
+You don't need it. Every concept has a **plain-language walkthrough** before any code. The TypeScript blocks are optional bonuses for engineers. Read only the plain sections — you'll still get a complete, actionable course.
 
 ### How do I track my progress?
 
-[Chapter 11](ch-11-tracking-course-correction.md) (Tracking & Course Correction) provides a complete dashboard. Start tracking from day 1 using the LearningDashboard class. Run a weekly review every Sunday.
+[Chapter 11](ch-11-tracking-course-correction.md) provides a complete dashboard — available as a digital tracker or a paper journal template. Start tracking from day 1. Run a weekly review every Sunday.
+
+### Can I use this for SSC / government exam preparation?
+
+Yes. Chapters 4, 5, 7, 8, and 11 are especially relevant. The course teaches you **how** to learn any subject — the techniques work for quantitative aptitude, general awareness, reasoning, and language sections.
+
+### Does this work for learning a new language?
+
+Yes. The 30-Day Sprint (Ch 2), Active Recall (Ch 4), and Teaching (Ch 12) are especially effective for language acquisition.
 
 ## Prerequisites Detail
 
 ### Required
-- **Basic programming:** Understand variables, functions, classes, if/else, loops. TypeScript is used for examples but transferable
-- **A learning goal:** This course teaches you how to learn anything. You need something specific to apply it to. Pick one: DSA mastery, system design, a new framework, or interview prep
+- **A learning goal:** This course teaches you how to learn anything. Pick one: SSC/UPSC exam prep, coding interviews, a new language, AI/ML, or any skill
 - **30 min/day minimum:** The techniques require practice. Reading alone won't change your learning
 
 ### Recommended
-- **Access to Anki** (free, all platforms) for spaced repetition in [Chapter 4](ch-04-active-recall-spaced-repetition.md)
-- **A code editor** (VS Code recommended) for TypeScript examples
 - **A notebook or note-taking app** for the learning dashboard in [Chapter 11](ch-11-tracking-course-correction.md)
+- **Access to Anki or physical flashcards** for spaced repetition in [Chapter 4](ch-04-active-recall-spaced-repetition.md)
+- **A code editor** (VS Code recommended) — only if you want to run the TypeScript examples
 
 ## How This Course Is Different
 
 | Traditional Approach | This Course |
 |---------------------|-------------|
-| Read about learning techniques | Implement them in TypeScript |
-| Generic advice for students | Specific to FAANG/MNC interview prep |
+| Read about learning techniques | Apply them with templates and walkthroughs |
+| Generic advice for students | Specific, actionable frameworks for your goal |
 | Neuroscience-heavy explanations | Practical "what to do Monday morning" |
-| Passive reading | Active exercises every chapter |
-| One-size-fits-all | Choose your own path based on goal |
-| No code | Real TypeScript implementations |
+| Passive reading | Active exercises every chapter (no-code + optional code) |
+| One-size-fits-all | Two tracks: plain language for everyone + TypeScript for engineers |
+| Requires special tools | Works with just a notebook and pen |
 
 ## Learning Outcomes
 
@@ -167,20 +179,19 @@ After completing this course, you will have:
 1. A personal learning system that works for any goal ([Ch 1](ch-01-your-learning-os.md))
 2. The ability to master any topic in 30 days ([Ch 2](ch-02-the-30-day-sprint.md))
 3. A daily workflow optimized for your energy patterns ([Ch 3](ch-03-daily-workflow-energy.md))
-4. Active recall and spaced repetition skills with real tools ([Ch 4](ch-04-active-recall-spaced-repetition.md))
+4. Active recall and spaced repetition skills you can use anywhere ([Ch 4](ch-04-active-recall-spaced-repetition.md))
 5. The ability to do deep, focused work on demand ([Ch 5](ch-05-deep-work-focus.md))
-6. A repeatable process for learning any codebase ([Ch 6](ch-06-learning-from-code.md))
-7. A structured DSA practice system with spaced review ([Ch 7](ch-07-dsa-practice-system.md))
-8. A system design study plan from zero to mock-ready ([Ch 8](ch-08-system-design-study-plan.md))
-9. An AI/ML learning strategy that avoids overwhelm ([Ch 9](ch-09-ai-ml-learning-strategy.md))
+6. A repeatable process for learning from any resource ([Ch 6](ch-06-learning-from-code.md))
+7. A structured practice system for any subject ([Ch 7](ch-07-dsa-practice-system.md))
+8. A study plan for any exam, from SSC to FAANG ([Ch 8](ch-08-system-design-study-plan.md))
+9. A strategy for mastering hard subjects without burnout ([Ch 9](ch-09-ai-ml-learning-strategy.md))
 10. A complete interview preparation workflow ([Ch 10](ch-10-interview-prep-workflow.md))
 11. A learning dashboard to track and course-correct ([Ch 11](ch-11-tracking-course-correction.md))
 12. The habit of teaching to solidify your knowledge ([Ch 12](ch-12-building-in-public-teaching.md))
 
-
 ## How to Read
 
-1. **Daily:** Pick one chapter per week. Read the Theory section (15 min). Run the TypeScript examples (20 min). Do the exercises (25 min)
+1. **Daily:** Pick one chapter per week. Read the Theory section (15 min). Follow the plain-language walkthrough (20 min). Do the exercises (25 min)
 2. **Weekly:** Review the Practical Takeaways from the previous week. Take the Chapter Quiz. Track your progress in [Ch 11](ch-11-tracking-course-correction.md)'s dashboard
 3. **Reference:** Return to any chapter when you hit a specific problem (procrastination, forgetting, plateaus)
 

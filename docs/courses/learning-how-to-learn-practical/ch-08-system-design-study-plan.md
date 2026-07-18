@@ -1,19 +1,19 @@
-# Chapter 8: System Design Study Plan
+# Chapter 8: Study Plan for Any Exam
 
 ## Learning Objectives
 
 After this chapter you will be able to:
-- Build a structured learning path from fundamentals to mock interviews in 8 weeks
-- Understand and apply core building blocks (consistent hashing, caching, database scaling)
-- Study real-world systems through case studies (Uber, YouTube, WhatsApp)
-- Conduct time-boxed mock design sessions with structured feedback
-- Evaluate your designs against production-grade references
+- Create a study plan for any exam — SSC CGL, UPSC Prelims, GATE, FAANG interviews, professional certification
+- Conduct a syllabus gap analysis to identify what you know vs what you need to learn
+- Design a phased preparation timeline with milestones and checkpoints
+- Build a mock test schedule that reveals weak areas before the real exam
+- Adjust your plan based on performance data without panicking
 
 ## Theory
 
 ### The Learning Graph
 
-System design is not a list of topics to memorize — it's a graph of interconnected concepts. Learn them in dependency order.
+Any exam syllabus is not a list of topics to memorize — it's a graph of interconnected concepts. Learn them in dependency order. A good study plan maps the syllabus, identifies prerequisite chains, and schedules topics so that foundations come first.
 
 ```mermaid
 flowchart TD
@@ -148,9 +148,55 @@ After the session, grade yourself:
 
 ## Examples
 
-### Example 1: Consistent Hash Ring
+### 📝 Plain-Language Walkthrough
 
-```typescript
+**Scenario:** You have 6 months to prepare for SSC CGL Tier 1 exam.
+
+**Step 1: Syllabus Gap Analysis**
+List all subjects and topics. Rate your current level (1-5):
+```
+Subject           Topics                     Current Level  Priority
+Quantitative Apt  Number System, Algebra,    2/5            High
+                  Geometry, Mensuration,
+                  DI, Trigonometry
+Reasoning         Verbal, Non-verbal,        3/5            Medium
+                  Logical, Analytical
+General Awaren    History, Polity, Geo,      2/5            High
+                  Economy, Science, Current Affairs
+English           Grammar, Vocab,            3/5            Medium
+                  Comprehension
+```
+
+**Step 2: 6-Month Phased Plan**
+```
+Phase 1 (Months 1-2): Foundations
+- Complete theory for Quant + Reasoning
+- Read NCERTs for History, Polity, Geography
+- Build vocabulary (10 words/day)
+
+Phase 2 (Months 3-4): Practice
+- Topic-wise practice tests for each subject
+- Start full-length mocks (1 per week)
+- Analyze every error. Create error log.
+
+Phase 3 (Months 5-6): Mastery
+- Full-length mocks (3 per week)
+- Target weak areas from mock analysis
+- Speed drills + revision of all formulas/concepts
+- Final month: 1 mock every 2 days
+```
+
+**Step 3: Weekly Schedule Template**
+```
+Time          Mon         Tue         Wed         Thu         Fri         Sat         Sun
+6-7 AM        Quant       Geog        Reasoning   Polity      Quant       Hist        Mock Test
+7-8 PM        English     Reasoning   English     Quant       GA          Reasoning   Review
+Weekend       -           -           -           -           -           -           Error analysis
+```
+
+### 💻 TypeScript Implementation (Optional)
+
+### Example 1: Consistent Hash Ring
 class ConsistentHashRing {
     private ring: Map<number, string> = new Map()  // hash → server
     private sortedKeys: number[] = []
@@ -408,8 +454,8 @@ class DesignEvaluator {
 
 ## Exercises
 
-1. **Implement consistent hashing:** Use the ConsistentHashRing class. Add 3 servers, distribute 1000 keys, check the distribution. Remove one server and see how many keys move
-2. **Study a case study:** Watch a system design interview video for Uber or YouTube. While watching, use the case study methodology (requirements → estimation → data model → architecture). Pause before the solution and design it yourself first
-3. **Mock session:** Do a 45-minute mock design session for URL Shortener. Use the DesignEvaluator to score yourself. Identify 2 areas to improve
-4. **Building block implementation:** Implement a simple rate limiter (token bucket or sliding window) in TypeScript
-5. **Repeat and compare:** Repeat the same mock prompt (URL Shortener) after 1 week without reviewing your previous design. Compare both versions. Which is better? What improved?
+1. **Gap analysis for any exam:** Pick any exam syllabus (SSC CGL, UPSC, GATE, or a certification). List every subject and topic. Rate yourself 1-5 on each. Identify your top 3 priority topics. Write a 1-sentence reason for each priority
+2. **Create a study plan:** Using the gap analysis from exercise 1, create a phased study plan. Divide your available time into 3 phases: Foundations, Practice, Mastery. Assign specific topics to each week. Include milestones (e.g., "Complete Algebra by Week 4")
+3. **Mock test schedule:** Design a mock test schedule for the final 2 months before your exam. Include: frequency of mocks, which subjects to focus on between mocks, and a post-mock analysis template (error log, weak area identification, next-action items)
+4. **Consistent Hash Ring (TypeScript):** Use the ConsistentHashRing class. Add 3 servers, distribute 1000 keys, check the distribution. Remove one server and see how many keys move
+5. **Design Evaluator (TypeScript):** Do a 45-minute mock design session for URL Shortener. Use the DesignEvaluator to score yourself. Identify 2 areas to improve

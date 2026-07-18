@@ -1,36 +1,36 @@
-# Chapter 9: AI/ML Learning Strategy
+# Chapter 9: Mastering Hard Subjects
 
 ## Learning Objectives
 
 After this chapter you will be able to:
-- Navigate the AI/ML learning stack from math fundamentals to production deployment
-- Read research papers efficiently using the 3-pass hierarchical method
-- Learn any ML framework by building the same model 3 times
-- Stay current with the field without information overload
-- Build a personal learning system for continuous AI education
+- Apply spiral learning to any difficult subject — advanced math, law, medicine, ML theory
+- Break down intimidating topics into prerequisite chains
+- Use the Feynman Technique to identify and fill understanding gaps
+- Read and extract knowledge from primary sources (papers, textbooks, legal judgements)
+- Build a just-in-time learning workflow that avoids overwhelm
 
 ## Theory
 
-### The AI Learning Stack
+### The Spiral Learning Stack
 
-AI/ML is not one skill — it's a stack of interconnected skills. Trying to learn everything at once leads to overwhelm. Learn layer by layer.
+Any hard subject — whether it's backpropagation, constitutional law, or organic chemistry — is not one skill but a stack of interconnected concepts. Trying to learn everything at once leads to overwhelm. Learn layer by layer, spiraling back to earlier layers as your understanding deepens.
 
 ```mermaid
 flowchart LR
-    subgraph Month 1-2
-        A[Python + NumPy] --> B[ML Fundamentals]
-        B --> C[PyTorch Basics]
+    subgraph Pass 1: Big Picture
+        A[High-Level Overview] --> B[Key Terminology]
+        B --> C[Why It Matters]
     end
-    subgraph Month 3-4
-        D[Linear/Logistic Regression] --> E[NN from Scratch]
-        E --> F[CNN/RNN Basics]
+    subgraph Pass 2: Mechanics
+        D[Step-by-Step Tutorial] --> E[Worked Example]
+        E --> F[Fill Prerequisite Gaps]
     end
-    subgraph Month 5-6
-        G[Transformer Architecture] --> H[Fine-Tuning]
-        H --> I[RAG Pipeline]
+    subgraph Pass 3: Implementation
+        G[Apply Concept] --> H[Solve a Problem]
+        H --> I[Build / Implement]
     end
     subgraph Ongoing
-        J[1 Paper/Week] --> K[Implement Paper]
+        J[Feynman Explain] --> K[Identify Gaps]
         K --> J
     end
     C --> D
@@ -195,9 +195,36 @@ AI/ML requires ongoing learning because the field changes constantly. Build thes
 
 ## Examples
 
-### Example 1: Paper Study Planner
+### 📝 Plain-Language Walkthrough
 
-```typescript
+**Scenario:** You need to understand a complex topic — say, "Backpropagation in Neural Networks" or "The Indian Constitution's Amendment Process."
+
+**Step 1: Prerequisite Mapping**
+Write down the topic. List everything you need to know BEFORE you can understand it:
+```
+Topic: Backpropagation
+Prerequisites:
+├── What is a derivative? (Calculus)
+├── Chain rule (Calculus)
+├── What is a neural network? (ML basics)
+├── Forward propagation (ML basics)
+└── Loss functions (ML basics)
+```
+
+**Step 2: Spiral Learning (3 Passes)**
+Pass 1 (Big Picture): Read a high-level overview or watch an intro video. Don't worry about details. Just grasp what the topic IS and why it matters.
+
+Pass 2 (Mechanics): Follow a step-by-step tutorial or worked example. Write down every step. If you hit a prerequisite gap, note it and fill it with a 5-min research.
+
+Pass 3 (Implementation): Apply the concept. Solve a problem. Build something. For backprop, compute gradients for a tiny network by hand. For constitutional amendments, trace the actual amendment process for a real example.
+
+**Step 3: Feynman Technique**
+Write the concept on a blank page as if explaining to a 12-year-old:
+- Use plain language. No jargon.
+- If you can't explain it simply, you haven't understood it.
+- Every jargon word you use is a gap. Define it before continuing.
+
+### 💻 TypeScript Implementation (Optional)
 type PaperStatus = 'unread' | 'pass1' | 'pass2' | 'pass3' | 'implemented'
 type PaperVenue = 'arxiv' | 'conference' | 'blog' | 'workshop'
 
@@ -441,8 +468,8 @@ class WeeklyAISchedule {
 
 ## Exercises
 
-1. **Read 1 paper:** Pick a foundational paper (start with "Attention Is All You Need"). Do Pass 1 (5 min), Pass 2 (30 min). Write the key insight in 1 sentence
-2. **Implement a paper:** Take the attention mechanism from the Transformer paper. Implement scaled dot-product attention in TypeScript (or Python). Verify it works with sample inputs
-3. **Build a model 3 times:** Implement a 2-layer neural network in PyTorch, then the same model in TensorFlow/Keras, then JAX. Compare the code side by side
-4. **Follow 5 researchers:** Find 5 AI researchers on Twitter/X whose work interests you. Follow them. For 2 weeks, spend 10 min/day reading their posts
-5. **Set up your schedule:** Use the WeeklyAISchedule generator to create your weekly AI learning schedule. Follow it for 2 weeks. Adjust based on what's working
+1. **Prerequisite mapping:** Pick a topic you find difficult (any subject). Draw a prerequisite tree: the topic at the root, all concepts you need to understand it as branches. For each prerequisite you don't know, mark it in red. Spend 30 min filling the first red node
+2. **Feynman explanation:** Pick a concept you recently learned. Write a plain-language explanation on a blank page as if teaching a 12-year-old. Record yourself speaking it. Identify every jargon word you used — those are your gaps. Define each one
+3. **Spiral reading:** Pick a hard topic. Do 3 passes over 3 days: Day 1 (big picture — watch a 10-min intro video), Day 2 (mechanics — follow a step-by-step tutorial), Day 3 (implementation — solve a problem or build something). Write a 1-paragraph reflection after each pass
+4. **Paper Study Planner (TypeScript):** Pick a foundational paper (start with "Attention Is All You Need"). Use the PaperStudyPlanner to track your 3-pass reading. Do Pass 1 (5 min), Pass 2 (30 min). Write the key insight in 1 sentence
+5. **Learning Stack Tracker (TypeScript):** Use the LearningStackTracker to map your current learning stack for any hard subject. Identify the lowest incomplete layer. Spend 1 week completing it

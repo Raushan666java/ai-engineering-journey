@@ -143,6 +143,42 @@ After 10 sessions, look for patterns:
 
 ## Examples
 
+### 📝 Plain-Language Walkthrough
+
+**Scenario:** You need 2 hours of focused study after work but keep reaching for your phone.
+
+**Step 1: Distraction Audit**
+For 3 days, tally every interruption:
+```
+Day 1: Phone notifications (12), Social media (5), Family (3), Random thoughts (7)
+Day 2: Phone notifications (8), Social media (3), Family (4), Random thoughts (5)
+Day 3: Phone notifications (6), Social media (2), Family (2), Random thoughts (4)
+```
+Your top 3 distractions are your elimination targets.
+
+**Step 2: Create Your Deep Work Protocol**
+```
+Before session (5 min):
+1. Phone on Do Not Disturb, placed in another room
+2. Close all browser tabs except study material
+3. Write session goal: "Master 10 Algebra formulas"
+
+During session (45-90 min):
+4. Keep a "capture pad" nearby for random thoughts
+5. If an urge arises (check phone, browse), note it on the pad
+6. Return to work immediately
+
+After session (5 min):
+7. Rate focus 1-10, energy 1-10
+8. Note what interrupted you
+9. Decide tomorrow's session goal
+```
+
+**Step 3: Track Your Deep Work Streak**
+Print a calendar. Mark an X for every day you completed one deep work session. Don't break the chain.
+
+### 💻 TypeScript Implementation (Optional)
+
 ### Example 1: Focus Session Tracker
 
 ```typescript
@@ -404,8 +440,8 @@ Your phone is the #1 focus killer. Implement this protocol starting today:
 
 ## Exercises
 
-1. **Distraction audit:** For the next 24 hours, log every distraction using the DistractionAudit class. At hour 24, run getSummary() and follow the recommendations
-2. **Deep work streak:** Do one 90-minute deep work session daily for 5 days using the FocusTracker. Log all ratings after each session
-3. **Phone removal:** Remove your phone from your study area for 5 consecutive days. Compare your focus rating before and after
-4. **Protocol setup:** Use the DeepWorkProtocol generator to create your personal protocol. Follow it exactly for 5 sessions
-5. **Pattern review:** After 10 logged sessions, review your FocusReport. Identify 2 adjustments based on the data
+1. **Distraction audit on paper:** For 3 days, keep a physical tally of every interruption. Categorize them (phone, environment, internal, digital). At the end, identify your top 3 distractions and create a plan to eliminate them — no app or code required
+2. **Deep work protocol (no code):** Write your personal deep work protocol on paper: session time, location, duration, rules, preparation steps, and shutdown routine. Follow it for 5 consecutive days
+3. **Streak tracking:** Print a calendar or use a notebook. Mark an X for every day you complete a focused study session of 45+ minutes. Aim for a 7-day streak
+4. **Focus session tracker (bonus):** Use the FocusTracker for 5 deep work sessions. Log all ratings and review the patterns after session 5
+5. **Protocol generator (bonus):** Use the DeepWorkProtocol generator to create your personal protocol. Follow it exactly for 5 sessions

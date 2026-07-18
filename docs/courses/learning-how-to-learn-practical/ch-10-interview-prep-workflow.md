@@ -5,7 +5,7 @@
 After this chapter you will be able to:
 - Design a complete interview preparation system from self-assessment through offers
 - Structure preparation into 3 phases: foundations → company-specific → mocks
-- Balance DSA, system design, and behavioral preparation across weeks
+- Balance technical, behavioral, and domain-specific preparation across weeks
 - Use mock interviews as the primary improvement driver
 - Make data-driven decisions about where to focus each week
 
@@ -119,6 +119,35 @@ After each mock, grade yourself:
 Then identify exactly ONE area to improve before the next mock. Don't try to fix everything at once.
 
 ## Examples
+
+### 📝 Plain-Language Walkthrough
+
+**Scenario:** You have 8 weeks to prepare for a government job interview (SSC, Banking, or UPSC interview).
+
+**Phase 1: Foundations (Weeks 1-3)**
+- Week 1: Self-assessment. Identify your strengths and gaps across all subjects
+- Week 2: Domain knowledge refresh (your optional subject / specialization)
+- Week 3: Current affairs + general awareness review
+
+**Phase 2: Company/Department-Specific (Weeks 4-6)**
+- Week 4: Research the organization. Understand their mission, recent news, priorities
+- Week 5: Prepare answers for common questions: "Why do you want to join?" "What do you know about us?"
+- Week 6: Practice structured answers using STAR format (Situation, Task, Action, Result)
+
+**Phase 3: Mock Interviews (Weeks 7-8)**
+- Week 7: First mock interview with a friend or mentor. Record it. Analyze.
+- Week 8: Second mock. Focus on weak areas from first mock. Polish STAR stories.
+
+**Weekly Balance Template**
+```
+Subject                 Mon  Tue  Wed  Thu  Fri  Sat  Sun
+Domain Knowledge        1h   1h   1h   1h   1h   2h    -
+Current Affairs         30m  30m  30m  30m  30m   -    -
+STAR Story Practice     -    -    30m  -    30m  -    -
+Full Mock (from wk 7)   -    -    -    -    -    -    2h
+```
+
+### 💻 TypeScript Implementation (Optional)
 
 ### Example 1: Interview Prep Tracker
 
@@ -399,8 +428,8 @@ class STARStoryManager {
 
 ## Exercises
 
-1. **Self-assessment:** Rate yourself 1-5 in DSA, system design, behavioral, and ML design. Be honest. Create a 12-week plan that addresses your weak areas
-2. **Write 2 STAR stories:** Pick 2 categories you don't have stories for. Write complete STAR stories with measurable results. Practice telling each in under 2 minutes
-3. **Company research:** Pick your target company. Research the interview format, common questions, and company values. Write a one-page summary
-4. **Mock + grade:** Do 1 mock interview (coding or system design). Use the InterviewPrepTracker to log your scores. Identify one area to improve
-5. **Weekly plan:** Use the WeeklyAllocator with your weak areas. Create this week's schedule. Follow it for 7 days and adjust based on what worked
+1. **Write 3 STAR stories:** Pick 3 categories (conflict, failure, success, leadership, etc.). Write complete STAR stories with measurable outcomes. Practice telling each out loud in under 2 minutes
+2. **Organization research:** Research your target organization (company, government department, or institution). Understand their mission, recent news, and priorities. Write a one-page summary of how your background aligns
+3. **Mock interview setup:** Arrange a mock interview with a friend or mentor. Prepare 5 likely questions. Record the session. Afterward, identify ONE weak area to improve for the next mock
+4. **Interview prep tracker (bonus):** Use the InterviewPrepTracker to create a 12-week plan for your target organization. Log at least 2 mock scores and adjust based on feedback
+5. **STAR story manager (bonus):** Use the STARStoryManager to manage 5+ stories. Run a practice session and verify each story fits in under 2 minutes

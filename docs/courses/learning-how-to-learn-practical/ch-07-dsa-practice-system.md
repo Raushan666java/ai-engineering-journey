@@ -1,19 +1,19 @@
-# Chapter 7: DSA Practice System
+# Chapter 7: Practice System for Mastery
 
 ## Learning Objectives
 
 After this chapter you will be able to:
-- Apply a repeatable 3-pass method to any coding interview problem
-- Identify which of the core DSA patterns matches a given problem
-- Structure practice with difficulty progression and spaced review
-- Simulate interview conditions (time pressure, whiteboard, communication)
-- Track weak patterns and systematically eliminate them
+- Design a deliberate practice plan for any subject — math, reasoning, GK, vocabulary, coding
+- Use the 3-pass method (Understand → Attempt → Analyze) for any problem type
+- Build a spaced review schedule that prevents forgetting
+- Track your accuracy and speed on practice problems
+- Identify weak areas and target them systematically
 
 ## Theory
 
 ### The 3-Pass Method
 
-Every coding problem follows the same process. Do not skip passes — especially Pass 1.
+Every practice problem — whether in math, reasoning, vocabulary, or coding — follows the same process. Do not skip passes — especially Pass 1.
 
 ```mermaid
 flowchart TD
@@ -116,9 +116,46 @@ Before your real interview, simulate the conditions:
 
 ## Examples
 
-### Example 1: DSA Review Scheduler
+### 📝 Plain-Language Walkthrough
 
-```typescript
+**Scenario:** You're practicing Quantitative Aptitude for SSC CGL and want to improve from 15/25 to 22/25.
+
+**Step 1: Diagnostic (2 hours)**
+Take a full-length quant section. For each question, tag it:
+- ✅ Correct + confident
+- ✅ Correct + lucky guess
+- ❌ Wrong + no idea
+- ❌ Wrong + knew the concept
+
+**Step 2: Categorize Errors**
+```
+Error Type           Count  Fix Strategy
+Concept gap          3     Review theory + do 10 easy problems
+Calculation mistake  5     Slow down. Verify each step. Do 5 speed drills
+Time pressure        4      Practice timed sets. Reduce time per question by 10%
+Read incorrectly     2     Underline key numbers. Re-read before solving
+```
+
+**Step 3: The 3-Pass Practice Method**
+For each weak topic:
+- Pass 1 (Understand): Review 2-3 solved examples. Explain each step aloud
+- Pass 2 (Attempt): Solve 5 problems without looking at solutions. Time yourself
+- Pass 3 (Analyze): For wrong answers, write why you got it wrong. Write the correct approach
+
+**Step 4: Spaced Review Schedule**
+Create review slots for past topics:
+```
+Day 1: New topic (e.g., Time & Work)
+Day 2: New topic + review Day 1 (5 problems)
+Day 4: Review Day 1 + Day 2 (3 problems each)
+Day 7: Review all (5 random problems)
+Day 14: Quick review (3 problems)
+Day 30: Mastery check (10 problems, timed)
+```
+
+### 💻 TypeScript Implementation (Optional)
+
+### Example 1: DSA Review Scheduler
 interface DSAProblem {
     id: string
     title: string
@@ -394,8 +431,8 @@ interface PatternMatch {
 
 ## Exercises
 
-1. **Categorize 20 problems:** Take 20 solved LeetCode problems. For each, identify the pattern using the PatternIdentifier. Are your matches correct?
-2. **Create your DSA scheduler:** Implement the DSAReviewScheduler with your actual problem list. Run it for 7 days
-3. **Simulation streak:** Do one timed simulation per day for 5 days using the InterviewSimulator. Grade yourself honestly
-4. **Weak pattern attack:** Identify your weakest pattern using getWeakPatterns(). Solve 5 Easy + 5 Medium problems in that pattern this week
-5. **Edge case habit:** For the next 10 problems you solve, write edge cases BEFORE writing any code. Check: empty input, single element, duplicates, negatives, max constraints
+1. **Error categorization on paper:** Take any practice test (quant, reasoning, GK, or coding). For each wrong answer, categorize the error: concept gap, calculation mistake, time pressure, or misread. Count frequencies. Write a fix strategy for the top 2 error types
+2. **3-pass method on any subject:** Pick a weak topic (e.g., Time & Work, Blood Relations, Vocabulary). Apply the 3-pass method: Understand (review 3 solved examples), Attempt (solve 5 problems timed), Analyze (write why each wrong answer was wrong). Repeat for 1 week
+3. **Spaced review calendar:** Create a physical or digital calendar for the next 30 days. For each day, schedule: 1 new topic + review of past topics at 1/3/7/14/30 day intervals. Follow it for 2 weeks. Adjust intervals based on what you actually remember
+4. **DSA Review Scheduler (TypeScript):** Implement the DSAReviewScheduler with your actual problem list. Run it for 7 days
+5. **Interview Simulator (TypeScript):** Do one timed simulation per day for 5 days using the InterviewSimulator. Grade yourself honestly

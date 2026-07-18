@@ -15,6 +15,16 @@ After this chapter you will be able to:
 
 Your ability to focus is not constant throughout the day. Trying to do deep work in a low-energy window is like trying to run a marathon after a 20-hour flight. Work with your biology, not against it.
 
+### Learning Styles & Your Schedule
+
+Your VARK learning style affects what type of study fits best in each energy window:
+- **Visual** learners: Use peak energy for diagrams, mind maps, video tutorials
+- **Auditory** learners: Use peak energy for listening to lectures, group discussions
+- **Read/Write** learners: Use peak energy for reading textbooks, writing summaries
+- **Kinesthetic** learners: Use peak energy for practice problems, hands-on projects
+
+Match your high-energy blocks to your primary style's most demanding activity. Use low-energy blocks for review, flashcards, or passive consumption regardless of style.
+
 ```mermaid
 flowchart LR
     A[6:30 Wake] --> B[7:00 Deep Work Block 1]
@@ -161,6 +171,41 @@ Energy audit this week? ☐ (Do this week 1 only)
 | Friction avoidance | If starting feels hard, shrink the task: "I'll just do 5 minutes" |
 
 ## Examples
+
+### 📝 Plain-Language Walkthrough
+
+**Scenario:** You're preparing for SSC CGL and have 3 hours daily after work.
+
+**Step 1: Find Your Energy Pattern**
+Track your energy every hour for 3 days on a 1-10 scale. Most people peak:
+- Morning type: Peak 7-10 AM
+- Evening type: Peak 4-8 PM
+- Afternoon type: Peak 1-4 PM (post-lunch slump first)
+
+**Step 2: Design Your Block Schedule**
+For an evening type preparing for SSC:
+```
+17:00-17:15  Startup ritual (5-min deep breathing, set goal for session)
+17:15-18:00  Deep work block 1 (Quant practice — high-energy topic)
+18:00-18:10  Break (stand up, walk, hydrate)
+18:10-18:55  Deep work block 2 (Reasoning practice)
+18:55-19:00  Log progress + rate focus
+```
+
+**Step 3: Create Your Startup Ritual**
+Same 3 actions before every study session:
+1. Close all browser tabs except study material
+2. Place phone face-down across the room
+3. Write one sentence: "This session I will master ___"
+
+**Step 4: Evening Review (5 min before bed)**
+- What did I study today?
+- What stuck? What didn't?
+- What's my ONE priority for tomorrow?
+
+---
+
+### 💻 TypeScript Implementation (Optional)
 
 ### Example 1: Energy-Aware Scheduler
 
@@ -409,8 +454,8 @@ After 3 days:
 
 ## Exercises
 
-1. **Energy audit:** Track your energy every hour for the next 3 days. Use the EnergyAwareScheduler to identify your high, medium, and low windows
-2. **Create your schedule:** Based on your energy audit, create an ideal daily schedule template with specific time blocks for deep work, practice, and review
-3. **Startup ritual:** Implement the 5-minute startup ritual before every study session for 7 days. After 7 days, reflect: did starting get easier?
-4. **Evening review streak:** Log an evening review for 7 consecutive days using the EveningReview class. At day 7, run getWeekReview() and identify your top confusion
-5. **Eliminate one pattern:** Identify your biggest time-wasting pattern (phone checking, tab hoarding, etc.) and eliminate it for 5 days. Log the hours saved
+1. **3-day energy audit on paper:** For the next 3 days, write down your energy level (1-10) every hour on a sheet of paper. After day 3, circle your high-energy windows. Write your ideal schedule matching deep work to those windows. No code needed
+2. **Design your block schedule:** Based on your energy audit, create a daily schedule template. Use a piece of paper or a text file. Label each block with: time, task type (deep/shallow/practice/review), and the specific topic you'll study. Tape it above your desk
+3. **7-day startup ritual streak:** Perform the same 3 actions before every study session for 7 days. At day 7, write a one-paragraph reflection: Did starting get easier? What still feels like friction? Adjust your ritual for week 2
+4. **Implement an energy-aware scheduler (TypeScript):** Build the EnergyAwareScheduler class that accepts energy logs (hour + level) and returns scheduled TimeBlock objects. Add a `visualizeDay` method that prints a text-based timeline of the day
+5. **Build an evening review CLI (TypeScript):** Implement EveningReview with log and getWeekReview methods. Add an interactive prompt mode that asks the 5 questions one by one and saves results. Add a `weeklyTrend` method that shows how focus and energy changed across the week

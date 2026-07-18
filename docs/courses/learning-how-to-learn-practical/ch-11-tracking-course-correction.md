@@ -4,7 +4,7 @@
 
 After this chapter you will be able to:
 - Define leading and lagging metrics that actually measure learning
-- Build a personal learning dashboard using simple tools
+- Build a personal learning dashboard using simple tools (paper journal or spreadsheet)
 - Detect plateaus early and break through with targeted intervention
 - Run an effective weekly review that drives continuous improvement
 - Make data-driven decisions about what to study next
@@ -103,6 +103,37 @@ You should consider a major change when:
 4. Start fresh with clear metrics for the new approach
 
 ## Examples
+
+### 📝 Plain-Language Walkthrough
+
+**Method 1: Paper Journal Dashboard (No Tools Needed)**
+
+Create a daily log with these columns:
+```
+Date    | Subject     | Time | Focus(1-5) | Topics Covered | Problems Solved | Key Takeaways
+--------|-------------|------|------------|----------------|-----------------|--------------
+Apr 1   | Quant       | 1.5h | 4          | Percentage      | 15 correct/20   | Still slow on profit %
+Apr 1   | Reasoning   | 1h   | 3          | Syllogisms      | 10 correct/12   | Venn diagram method works
+Apr 2   | GA          | 45m  | 5          | History: Mughals | -               | Need more on Akbar
+```
+
+**Weekly Review Template (15 min every Sunday)**
+1. Total study hours this week: ___
+2. Topics where you improved: ___
+3. Topics where you plateaued: ___
+4. One thing to change next week: ___
+5. Next week's priority topic: ___
+
+**Leading vs Lagging Metrics**
+| Metric Type | Examples | How to Track |
+|-------------|----------|-------------|
+| Leading (predicts success) | Problems solved, focus score, hours of deep work | Daily log |
+| Lagging (proves success) | Mock test score, accuracy %, topics mastered | Weekly test |
+
+**Plateau Detection Rule**
+If your accuracy on a topic stays flat for 2 weeks despite consistent practice → CHANGE your approach (don't just try harder with the same method).
+
+### 💻 TypeScript Implementation (Optional)
 
 ### Example 1: Learning Dashboard
 
@@ -419,8 +450,8 @@ class CourseCorrectionAdvisor {
 
 ## Exercises
 
-1. **Set up tracking:** Choose 3 daily metrics (recommended: deep work hours, problems solved, focus rating). Track them for 14 consecutive days using the LearningDashboard class
-2. **Run a weekly review:** Schedule 30 minutes next Sunday. Use the WeeklyReviewGenerator to structure your review. Fill in wins, challenges, and next priorities
-3. **Detect a plateau:** Review your last 2-4 weeks of data using detectPlateaus(). If you find a plateau, choose ONE breakthrough strategy and implement it this week
-4. **Course correction:** Use the CourseCorrectionAdvisor with your actual data. Implement the top priority advice this week
-5. **Build your dashboard:** Create a simple dashboard (spreadsheet or implement the LearningDashboard class). Use it daily for 2 weeks. At week 2, review: what did tracking reveal that you wouldn't have noticed otherwise?
+1. **Set up a paper journal dashboard:** Choose 3 daily metrics (recommended: deep work hours, problems solved, focus rating). Create a simple table in a notebook or spreadsheet. Track for 14 consecutive days
+2. **Run a weekly review:** Schedule 15 minutes next Sunday. Use the weekly review template from the walkthrough. Fill in your totals, improvements, plateau areas, and next week's priority
+3. **Plateau detection & intervention:** Look at your last 2-4 weeks of data. If a topic's accuracy stayed flat for 2 weeks, pick ONE breakthrough strategy (change input, method, pace, or take a break) and apply it this week
+4. **TypeScript bonus — Course correction:** Use the CourseCorrectionAdvisor with your actual data. Implement the top priority advice this week
+5. **TypeScript bonus — Build your dashboard:** Implement the LearningDashboard class or create a spreadsheet. Use it daily for 2 weeks. At week 2, review: what did tracking reveal that you wouldn't have noticed otherwise?

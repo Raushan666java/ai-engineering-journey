@@ -1,34 +1,29 @@
-# Chapter 6: Learning From Code
+# Chapter 6: Learning From Any Resource
 
 ## Learning Objectives
 
 After this chapter you will be able to:
-- Apply the read-run-debug-modify cycle to understand any new codebase
-- Reverse-engineer a project's architecture by tracing a request end-to-end
-- Use documentation efficiently without getting stuck in tutorial hell
-- Learn any new framework by building the same app 3 times
-- Extract patterns from high-quality open-source code
+- Extract knowledge from any resource — textbooks, video courses, lectures, or code
+- Apply the SQ3R method (Survey, Question, Read, Recite, Review) to any learning material
+- Deconstruct any resource into its core concepts, prerequisites, and practice paths
+- Build a personal knowledge map that connects new information to what you already know
+- Distinguish between passive consumption (watching/reading) and active learning (doing/teaching)
 
 ## Theory
 
-### The Read-Run-Debug-Modify Cycle
+### The SQ3R Method for Any Resource
 
-This is the fundamental unit of learning from code. Apply it to every new codebase, library, or framework you encounter.
+Whether you're learning from a textbook, a video course, a lecture, or a codebase, the same fundamental process applies. The SQ3R method (Survey, Question, Read, Recite, Review) is a proven technique for extracting knowledge from any resource. It transforms passive consumption into active learning.
 
 ```mermaid
 flowchart LR
-    A[Clone Repo] --> B[Read README]
-    B --> C[Find Entry Point]
-    C --> D[Run Tests]
-    D --> E[Set Breakpoint at Entry]
-    E --> F[Trace a Request]
-    F --> G[Draw Dependency Graph]
-    G --> H[Document Architecture]
-    H --> I[Make a Small Change]
-    I --> J[Observe Effect]
-    J --> K{Changed Behavior?}
-    K -->|Yes| L[Understanding Confirmed]
-    K -->|No| E
+    A[Survey Resource] --> B[Question Formulation]
+    B --> C[Read Actively]
+    C --> D[Recite from Memory]
+    D --> E[Review & Connect]
+    E --> F{Knowledge Gap?}
+    F -->|Yes| C
+    F -->|No| G[Apply / Practice]
 ```
 
 **Step 1: Read (15 min)**
@@ -172,9 +167,35 @@ Studying production code is one of the fastest ways to improve:
 
 ## Examples
 
-### Example 1: Codebase Analyzer
+### 📝 Plain-Language Walkthrough
 
-```typescript
+**Scenario:** You need to learn a new subject (e.g., Indian Polity for UPSC or a new programming framework).
+
+**Step 1: Survey the Resource (15 min)**
+- Textbook: Read table of contents, chapter summaries, index
+- Video course: Watch the intro/outro of each module. Read the description
+- Codebase: Read the README, project structure, dependency list
+
+**Step 2: Question (10 min)**
+Write 5-10 questions you want the resource to answer. Example for Indian Polity:
+- What is the structure of the Indian Constitution?
+- How do the three branches of government interact?
+- What are fundamental rights and duties?
+
+**Step 3: Read + Recite (45 min cycle)**
+- Read one chapter or watch one module (15 min)
+- Close the material. Summarize aloud or in writing from memory (5 min)
+- Check accuracy. Note gaps. (5 min)
+- Repeat for next section
+
+**Step 4: Review (15 min after session)**
+- Answer your original questions from Step 2
+- Create 5 flashcards (physical or digital) for key concepts
+- Identify 1-2 things to practice tomorrow
+
+### 💻 TypeScript Implementation (Optional)
+
+### Example 1: Codebase Analyzer
 interface ModuleNode {
     path: string
     imports: string[]
@@ -412,8 +433,8 @@ class FrameworkLearningPlanGenerator {
 
 ## Exercises
 
-1. **Trace a project:** Clone an open-source TypeScript project (< 10K files). Use the CodebaseAnalyzer to build a dependency graph. Identify the entry point
-2. **Trace a request:** Use the RequestTracer pattern. Set breakpoints and trace one API endpoint or CLI command end-to-end. Document the call stack
-3. **Framework V1:** Pick a framework you want to learn. Build V1 (Hello World) in under 30 minutes
-4. **Framework V2:** Same framework. Build V2 (CRUD Todo API) with database integration. Time yourself
-5. **Open-source contribution:** Find an open-source project you use. Read 3 open PRs to understand the review process. Fix a documentation typo or small bug
+1. **SQ3R on any textbook:** Pick a chapter from any textbook (NCERT, reference book, or course material). Apply SQ3R: Survey (5 min), Question (write 5 questions), Read (15 min), Recite (5 min summary from memory), Review (answer your questions). Write a 100-word reflection on what you retained
+2. **Knowledge map:** After studying any topic for 1 hour, draw a knowledge map showing: core concepts (center), prerequisites (left), applications (right), and connections between concepts. Identify 2 gaps you need to fill
+3. **Question generation:** Before starting any new resource (video, chapter, lecture), write 5-10 questions you want it to answer. After finishing, check how many you can answer. Track your question-answer ratio over 1 week
+4. **Codebase Analyzer (TypeScript):** Clone an open-source TypeScript project (< 10K files). Use the CodebaseAnalyzer to build a dependency graph. Identify the entry point
+5. **Request Tracer (TypeScript):** Use the RequestTracer pattern. Set breakpoints and trace one API endpoint or CLI command end-to-end. Document the call stack

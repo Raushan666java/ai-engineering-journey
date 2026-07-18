@@ -7,7 +7,7 @@ After this chapter you will be able to:
 - Build effective Anki cards that test understanding, not recognition
 - Understand and implement the SM-2 spaced repetition algorithm
 - Schedule reviews for optimal long-term retention
-- Apply recall to non-flashcard topics (coding, system design, behavioral)
+- Apply recall to any subject — history dates, math formulas, vocabulary, language learning, coding concepts
 
 ## Theory
 
@@ -173,6 +173,38 @@ Active recall works for more than facts. Apply it to these domains:
 **Algorithm recall:** Close your reference. Implement the algorithm from scratch in a blank editor. Run it. If it fails, debug without looking. Only check the reference after you've tried.
 
 ## Examples
+
+### 📝 Plain-Language Walkthrough
+
+**Method 1: The Blank Page (No Tools Needed)**
+1. Read a section of your textbook or notes (10 min)
+2. Close everything. Write everything you remember on a blank page (5 min)
+3. Check your notes. Mark what you missed in red
+4. Repeat step 2-3 until you recall 90%+ of the key points
+
+**Method 2: Leitner Box (Physical Flashcards)**
+Create 5 boxes:
+- Box 1: Review every day
+- Box 2: Review every 2 days
+- Box 3: Review every 4 days
+- Box 4: Review every 8 days
+- Box 5: Review every 16 days
+
+Rules:
+- New cards start in Box 1
+- Correct answer → move to next box
+- Wrong answer → move back to Box 1
+- Review each box on its schedule
+
+Example for SSC GK:
+```
+Card front: "Who founded the Maurya Empire?"
+Card back: "Chandragupta Maurya (322 BCE)"
+→ If correct: move to Box 2 (review in 2 days)
+→ If wrong: keep in Box 1 (review tomorrow)
+```
+
+### 💻 TypeScript Implementation (Optional)
 
 ### Example 1: SM-2 Algorithm Implementation
 
@@ -416,8 +448,8 @@ After 3 cycles, most topics are at 80%+ retention.
 
 ## Exercises
 
-1. **Implement SM-2:** Write the full SM-2 `review()` function in TypeScript. Test it with a card that you review at quality 5, then again at quality 2
-2. **Create 10 atomic cards:** For a topic you're currently studying, create 10 Anki cards following the atomic principle (no "and" cards)
-3. **Blank page method:** After your next study session, spend 10 minutes on the blank page method. Write everything you remember. Check your notes for gaps
-4. **Convert recognition to recall:** Take 5 multiple-choice questions from any source. Cover the options. Try to answer from memory first
-5. **Track recall sessions:** Use the RecallSessionTracker for 5 study sessions. After 5 sessions, identify your weakest topics and study them
+1. **Blank page method (any subject):** After your next study session — whether it is history, math, vocabulary, or coding — close your book, open a blank page, and write everything you remember in 10 minutes. Check your notes and mark gaps in red. Repeat until you recall 90%+ of the key points
+2. **Physical Leitner box:** Create 5 boxes using index cards or paper slips. Add 10 new facts or concepts from your current study topic. Review them daily per the Leitner schedule for one week
+3. **Topic mapping:** Pick any topic you are studying. List 10 key facts, formulas, dates, or concepts. For each one, write a question on one side of an index card and the answer on the other. Review daily
+4. **SM-2 implementation (bonus):** Write the full SM-2 `review()` function in TypeScript. Test it with a card that you review at quality 5, then again at quality 2
+5. **Recall session tracker (bonus):** Use the RecallSessionTracker for 5 study sessions across any subjects. After 5 sessions, identify your weakest topics and study them

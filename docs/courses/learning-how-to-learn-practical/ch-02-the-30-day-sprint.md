@@ -161,6 +161,35 @@ Print this template or copy it to your notes. Fill it out before every sprint.
 
 ## Examples
 
+### 📝 Plain-Language Walkthrough
+
+**Scenario:** You have 30 days to prepare for the Quantitative Aptitude section of SSC CGL Tier 1.
+
+**Phase 1: Foundation (Days 1-10)**
+Map the syllabus: Number System, HCF/LCM, Simplification, Percentage, Ratio/Proportion, Average, Profit/Loss, Simple/Compound Interest, Time & Work, Speed/Distance/Time.
+- Days 1-3: Number System + HCF/LCM
+- Days 4-5: Simplification + Percentage
+- Days 6-7: Ratio/Proportion + Average
+- Days 8-10: Profit/Loss + Interest
+
+**Phase 2: Core (Days 11-20)**
+- Days 11-13: Time & Work + Speed/Distance/Time
+- Days 14-16: Algebra + Geometry basics
+- Days 17-18: Data Interpretation (tables, bar graphs, pie charts)
+- Days 19-20: Mixed topic revision
+
+**Phase 3: Mastery (Days 21-30)**
+- Days 21-23: Full-length mock tests (3 tests)
+- Days 24-26: Analyze errors. Target weak areas.
+- Days 27-28: Speed drills (50 questions in 30 minutes)
+- Days 29-30: Final revision + confidence building
+
+**Daily Minimum Rule:** Even on your busiest day, solve 5 questions. Never break the streak.
+
+---
+
+### 💻 TypeScript Implementation (Optional)
+
 ### Example 1: Sprint Planner
 
 ```typescript
@@ -398,8 +427,8 @@ After 7 days, you'll have a baseline. Decide if you want to continue into a full
 
 ## Exercises
 
-1. **Create a sprint plan:** Pick a topic you need to learn (System Design, DSA pattern, ML algorithm). Use the SprintPlanner class to generate a full 30-day plan with daily tasks
-2. **Identify the critical 20%:** Spend 30 minutes researching your topic. What are the core concepts that appear most often? Write them down. Focus on these for days 1-3
-3. **Start the streak:** Set your daily minimum (30 min). Track it with the DailyMinimumTracker. Aim for 7 consecutive days
-4. **Day 7 review:** After 7 days, run a checkpoint. Are your daily estimates realistic? Is your topic scope right? Adjust for the remaining 23 days
-5. **Sprint retrospective:** On day 30, run a full SprintRetrospective. What worked? What didn't? What's your next sprint? Write it down before starting the next one
+1. **Plan a 30-day sprint on paper:** Pick any goal (SSC Quant, learning Spanish, FAANG DSA, UPSC history). Write out a 3-phase plan: Foundation (days 1-10) with topics for each 3-day chunk, Core (days 11-20) with practice activities, Mastery (days 21-30) with mock tests and teaching. No code needed
+2. **Identify the critical 20%:** For your chosen goal, spend 30 minutes researching what topics appear most often in exams or interviews. Write down the top 20% of concepts. For SSC quant, it's Percentage, Ratio, Time & Work, Speed/Distance/Time, and Data Interpretation. Tape this list to your wall
+3. **Start a streak on a calendar:** Set a daily minimum for your goal (5 MCQ questions, 20 new vocab words, 1 DSA problem). Get a wall calendar. Mark an X every day you hit the minimum. Aim for a 30-day streak. No zero days
+4. **Implement a streak tracker (TypeScript):** Build a DailyMinimumTracker that accepts a date and a boolean for completion. Add methods to return current streak, best streak, and 7-day completion rate. Store data in localStorage or a JSON file
+5. **Build a sprint retrospective CLI (TypeScript):** Implement SprintRetrospective that reads an array of daily logs and generates a full retrospective report (wins, challenges, weak concepts, suggested next sprint). Add a `visualizeTimeline` method that prints a text-based Gantt chart

@@ -371,14 +371,31 @@ d) Option D - Fourth choice
 
 <details class="tp-qa-card" data-qid="git06-quiz5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: a</strong></p><p>Explanation for answer to question 5.</p></div></details>
 
+- Use ssh -J jumpbox target for bastion host connections
+- Use mosh instead of SSH for high-latency connections to avoid timeouts
+
+- Use scp -3 source user1@host1:path user2@host2:path for third-party transfers between remote hosts
+- Use autossh to maintain persistent SSH tunnels that auto-reconnect on failure
+
+- Use ssh-keygen -t ed25519 for modern, secure SSH keys
+
+## Practical Tips
+
+- Use fail2ban for SSH brute force protection. 
+- Regularly audit open ports with netstat -tuln. Keep SSH keys passphrase-protected.
+
 ## Exercises
 
 **Easy** - Basic exercise to practice networking and security fundamentals
 
 **Medium** - Intermediate exercise applying networking and security patterns
 
-**Medium** - Another intermediate exercise with networking and security concepts
+**Medium** - - Use `ping`, `traceroute`, `nslookup`, and `curl -v` to diagnose a slow website
+- Scan open ports on localhost with `netstat -tuln` and explain each listening service
+- Generate an SSH key pair, copy the public key to a remote server, verify passwordless login
 
-**Hard** - Advanced exercise combining networking and security with other techniques
 
-**Hard** - Challenging exercise requiring networking and security optimization
+
+**Hard** - **Hard** - Set up a simple firewall rule with `iptables` (or `ufw`) that blocks all incoming
+
+**Hard** - traffic except SSH on port 22 and HTTPS on port 443. Test with `nmap` from another machine.

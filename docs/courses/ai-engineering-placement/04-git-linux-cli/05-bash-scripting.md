@@ -371,17 +371,29 @@ d) Option D - Fourth choice
 
 <details class="tp-qa-card" data-qid="git05-quiz5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: a</strong></p><p>Explanation for answer to question 5.</p></div></details>
 
+- Use trap cleanup EXIT to ensure cleanup runs even on script failure
+- Use readonly and local to scope variables and prevent accidental overwrites
+
+## Practical Tips
+
+- Always quote variables. Use set -euo pipefail at the top. 
+- Test with bash -n script.sh for syntax check. Use shellcheck for linting.
+
 ## Exercises
 
 **Easy** - Basic exercise to practice bash scripting fundamentals
 
 **Medium** - Intermediate exercise applying bash scripting patterns
 
-**Medium** - Another intermediate exercise with bash scripting concepts
+**Medium** - - Write a script that backs up a directory, compresses it with tar.gz, and timestamps the archive
+- Implement a script that monitors CPU/memory usage and logs to a file every 10 seconds
+- Create a menu-driven script with `select` and `case` for common dev tasks (build, test, deploy)
 
-**Hard** - Advanced exercise combining bash scripting with other techniques
 
-**Hard** - Challenging exercise requiring bash scripting optimization
+
+**Hard** - **Hard** - Write a script that concurrently pings 100 hosts using background processes
+
+**Hard** - and wait, reports reachable vs unreachable, and outputs a summary table.
 
 ---
 

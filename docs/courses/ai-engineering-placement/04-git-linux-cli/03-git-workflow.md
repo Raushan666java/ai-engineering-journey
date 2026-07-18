@@ -371,17 +371,29 @@ d) Option D - Fourth choice
 
 <details class="tp-qa-card" data-qid="git03-quiz5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: a</strong></p><p>Explanation for answer to question 5.</p></div></details>
 
+- Use git log --first-parent to see only merge commits for a high-level history
+- Use git shortlog -sn to see contributor commit counts for release notes
+
+## Practical Tips
+
+- Squash WIP commits before PR. Rebase onto target before opening PR. 
+- Use git diff main...HEAD to see what your branch changed.
+
 ## Exercises
 
 **Easy** - Basic exercise to practice git workflow fundamentals
 
 **Medium** - Intermediate exercise applying git workflow patterns
 
-**Medium** - Another intermediate exercise with git workflow concepts
+**Medium** - - Set up a GitFlow-inspired repo with main, develop, and feature branches
+- Create a hotfix branch from main, apply a fix, and merge back to both main and develop
+- Use `git stash` to save WIP, switch branches, fix a bug, then pop the stash
 
-**Hard** - Advanced exercise combining git workflow with other techniques
 
-**Hard** - Challenging exercise requiring git workflow optimization
+
+**Hard** - **Hard** - Simulate a fork + PR workflow. Clone twice, push to a remote fork,
+
+**Hard** - open a pull request (manually), review the diff, merge, and sync upstream.
 
 ---
 

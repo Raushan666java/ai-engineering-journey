@@ -371,17 +371,29 @@ d) Option D - Fourth choice
 
 <details class="tp-qa-card" data-qid="git02-quiz5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: a</strong></p><p>Explanation for answer to question 5.</p></div></details>
 
+- Use git branch -vv to see which branches track which upstream branches
+- Use git merge --no-ff to preserve branch history in merge commits
+
+## Practical Tips
+
+- Keep branches short-lived. Delete merged branches with git branch -d. 
+- Use descriptive names: feature/, bugfix/, hotfix/. Rebase locally, merge publicly.
+
 ## Exercises
 
 **Easy** - Basic exercise to practice git branching fundamentals
 
 **Medium** - Intermediate exercise applying git branching patterns
 
-**Medium** - Another intermediate exercise with git branching concepts
+**Medium** - - Create a feature branch, make commits, merge into main, then delete it
+- Simulate a merge conflict, resolve it manually, and complete the merge
+- Use `git cherry-pick` to apply a single commit from one branch to another
 
-**Hard** - Advanced exercise combining git branching with other techniques
 
-**Hard** - Challenging exercise requiring git branching optimization
+
+**Hard** - **Hard** - Rebase a feature branch onto main, resolve conflicts during
+
+**Hard** - rebase, and use `git rebase --continue` to finish. Verify the linear history.
 
 ---
 

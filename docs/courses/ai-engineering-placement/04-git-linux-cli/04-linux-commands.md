@@ -371,17 +371,29 @@ d) Option D - Fourth choice
 
 <details class="tp-qa-card" data-qid="git04-quiz5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: a</strong></p><p>Explanation for answer to question 5.</p></div></details>
 
+- Use watch -n 1 command to repeatedly run a command every second
+- Use screen or tmux to persist terminal sessions across disconnections
+
+## Practical Tips
+
+- Use tab completion. Learn less navigation (/, ?, n, p, g, G). 
+- Chain commands with |. Use > to redirect, >> to append.
+
 ## Exercises
 
 **Easy** - Basic exercise to practice linux commands fundamentals
 
 **Medium** - Intermediate exercise applying linux commands patterns
 
-**Medium** - Another intermediate exercise with linux commands concepts
+**Medium** - - Use `find` to locate all `.log` files modified in the last 7 days
+- Combine `grep`, `sort`, `uniq`, and `wc` to analyze a server access log
+- Use `awk` to extract columns and `sed` to replace patterns in a CSV file
 
-**Hard** - Advanced exercise combining linux commands with other techniques
 
-**Hard** - Challenging exercise requiring linux commands optimization
+
+**Hard** - **Hard** - Write a one-liner pipeline that finds the top 5 IPs by request count
+
+**Hard** - from a 10GB access log using `awk`, `sort`, and `uniq -c`. Measure execution time.
 
 ---
 

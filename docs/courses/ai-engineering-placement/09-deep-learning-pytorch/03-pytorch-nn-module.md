@@ -376,6 +376,31 @@ d) layer.trainable = False
 
 <details class="tp-qa-card" data-qid="dl09-quiz5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b) param.requires_grad = False</strong></p><p>Setting requires_grad=False prevents gradient computation and parameter updates.</p></div></details>
 
+
+### Advanced: Custom Autograd Function
+
+Sometimes you need a custom operation not covered by standard nn.Modules. Define a custom autograd Function:
+
+```python
+class ClampFunction(torch.autograd.Function):
+    @staticmethod
+    def forward(ctx, x, lo, hi):
+        ctx.save_for_backward(x, torch.tensor([lo, hi]))
+        return torch.clamp(x, lo, hi)
+
+    @staticmethod
+    def backward(ctx, grad_output):
+        x, bounds = ctx.saved_tensors
+        lo, hi = bounds[0].item(), bounds[1].item()
+        grad_input = grad_output.clone()
+        grad_input[x < lo] = 0
+        grad_input[x > hi] = 0
+        return grad_input, None, None
+```
+
+Use it: `output = ClampFunction.apply(x, -1.0, 1.0)`
+
+
 ## Exercises
 
 **Easy** — Create a 3-layer MLP using nn.Sequential. Count the number of parameters.

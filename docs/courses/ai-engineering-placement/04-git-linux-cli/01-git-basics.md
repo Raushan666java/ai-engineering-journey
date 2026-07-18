@@ -371,17 +371,29 @@ d) Option D - Fourth choice
 
 <details class="tp-qa-card" data-qid="git01-quiz5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: a</strong></p><p>Explanation for answer to question 5.</p></div></details>
 
+- Use git commit --amend to fix the last commit message or add forgotten changes before pushing
+- Use git status -s for a concise status overview of your working tree
+
+## Practical Tips
+
+- git add -p to stage parts of files selectively. Use git commit -v to review diff in editor. 
+- git log --oneline --graph for compact history. Always write meaningful commit messages.
+
 ## Exercises
 
 **Easy** - Basic exercise to practice git basics fundamentals
 
 **Medium** - Intermediate exercise applying git basics patterns
 
-**Medium** - Another intermediate exercise with git basics concepts
+**Medium** - - Initialize a repository, stage changes, commit, and inspect the log
+- Create a .gitignore and verify ignored files do not get tracked
+- Use `git diff` to review unstaged changes before committing
 
-**Hard** - Advanced exercise combining git basics with other techniques
 
-**Hard** - Challenging exercise requiring git basics optimization
+
+**Hard** - **Hard** - Recover a deleted file using `git restore` and `git reflog`.
+
+**Hard** - Simulate accidental deletion, restore from the staging area, then recover
 
 ---
 

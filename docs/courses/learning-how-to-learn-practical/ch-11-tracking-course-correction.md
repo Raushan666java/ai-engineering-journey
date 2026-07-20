@@ -50,6 +50,19 @@ Leading indicators tell you if you're doing the work. Lagging indicators tell yo
 
 **The North Star Metric:** Pick ONE metric that correlates most strongly with your goal. For interview prep: "mock interview score improvement." For learning a framework: "hours from first code to working CRUD app."
 
+```mermaid
+flowchart LR
+    A[Daily Log: Date, Hours, Focus, Problems] --> B[Weekly Summary]
+    B --> C{Leading Metrics Green?}
+    C -->|Yes| D[Maintain Course]
+    C -->|No| E[Identify Root Cause]
+    E --> F[Adjust Next Week Plan]
+    F --> A
+    B --> G[Monthly: Compare to Baseline]
+    G --> H[Update Goals or Timeline]
+    H --> A
+```
+
 ### The Learning Dashboard
 
 You don't need fancy tools. A simple spreadsheet updated daily is more effective than a complex app you don't maintain.
@@ -333,6 +346,106 @@ class WeeklyReviewGenerator {
             '',
             '=== End Review ==='
         ].join('\n')
+    }
+}
+```
+
+### Example 4: Metric Predictor
+
+```typescript
+interface PredictionInput {
+    currentAverage: number
+    targetAverage: number
+    remainingDays: number
+    consistencyRate: number  // 0-1
+}
+
+interface PredictionOutput {
+    projectedScore: number
+    daysNeeded: number
+    onTrack: boolean
+    recommendedPace: number
+}
+
+class MetricPredictor {
+    predict(input: PredictionInput): PredictionOutput {
+        const dailyGain = (input.targetAverage - input.currentAverage) / input.remainingDays
+        const adjustedGain = dailyGain * input.consistencyRate
+        const projectedScore = Math.min(100, input.currentAverage + adjustedGain * input.remainingDays)
+        const daysNeeded = Math.ceil((input.targetAverage - input.currentAverage) / Math.max(adjustedGain, 0.01))
+        const recommendedPace = (input.targetAverage - input.currentAverage) / Math.max(input.remainingDays, 1)
+
+        return {
+            projectedScore: Math.round(projectedScore),
+            daysNeeded,
+            onTrack: projectedScore >= input.targetAverage,
+            recommendedPace: Math.round(recommendedPace * 10) / 10
+        }
+    }
+
+    whatIf(currentAverage: number, consistencyScenarios: { label: string; rate: number }[]): string[] {
+        return consistencyScenarios.map(s => {
+            const result = this.predict({
+                currentAverage,
+                targetAverage: 90,
+                remainingDays: 30,
+                consistencyRate: s.rate
+            })
+            return `${s.label} (${s.rate * 100}% consistency): ${result.projectedScore}% projected`
+        })
+    }
+}
+```
+
+### Example 5: Consistency Heatmap Generator
+
+```typescript
+interface DayEntry {
+    date: string
+    value: number  // 0-100
+}
+
+class ConsistencyHeatmap {
+    private data: DayEntry[] = []
+
+    log(date: string, value: number): void {
+        this.data.push({ date, value })
+    }
+
+    getMonthlyGrid(year: number, month: number): DayEntry[][] {
+        const daysInMonth = new Date(year, month, 0).getDate()
+        const grid: DayEntry[][] = []
+        let week: DayEntry[] = []
+
+        for (let day = 1; day <= daysInMonth; day++) {
+            const dateStr = `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`
+            const entry = this.data.find(d => d.date === dateStr)
+            week.push(entry ?? { date: dateStr, value: 0 })
+
+            if (new Date(year, month - 1, day).getDay() === 6 || day === daysInMonth) {
+                grid.push(week)
+                week = []
+            }
+        }
+
+        return grid
+    }
+
+    getStreak(minValue: number): number {
+        const sorted = [...this.data].sort((a, b) => b.date.localeCompare(a.date))
+        let streak = 0
+        for (const entry of sorted) {
+            if (entry.value >= minValue) streak++
+            else break
+        }
+        return streak
+    }
+
+    getConsistencyScore(targetDays: number): number {
+        const recent = this.data.slice(-targetDays)
+        if (recent.length === 0) return 0
+        const met = recent.filter(d => d.value >= 50).length
+        return Math.round((met / targetDays) * 100)
     }
 }
 ```

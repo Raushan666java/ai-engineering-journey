@@ -111,6 +111,19 @@ For each target company, answer these questions:
 - Leadership Principles: Customer Obsession, Ownership, Dive Deep, Deliver Results
 - Common tags: Arrays, Two Pointers, DP, Design (OOD)
 
+```mermaid
+flowchart LR
+    A[Self-Assessment] --> B{Rate 1-5}
+    B --> C[Identify Top 3 Gaps]
+    C --> D[Set Weekly Targets]
+    D --> E[Execute Study Plan]
+    E --> F[Mock Interview]
+    F --> G[Grade: correctness, speed, comms, edges]
+    G --> H[Pick ONE Area to Improve]
+    H --> I[Study + Practice]
+    I --> F
+```
+
 ### Mock Interview Feedback Loop
 
 The mock is not the learning event — the feedback loop after the mock is.
@@ -389,6 +402,110 @@ class STARStoryManager {
             written: this.stories.length,
             target: targetCategories.length
         }
+    }
+}
+```
+
+### Example 4: Company Research Analyzer
+
+```typescript
+interface CompanyProfile {
+    name: string
+    format: string
+    rounds: number
+    codingTags: string[]
+    values: string[]
+    commonQuestions: string[]
+}
+
+class CompanyResearchAnalyzer {
+    private companies: Map<string, CompanyProfile> = new Map()
+
+    addCompany(profile: CompanyProfile): void {
+        this.companies.set(profile.name.toLowerCase(), profile)
+    }
+
+    getPreparationAdvice(companyName: string): string[] {
+        const profile = this.companies.get(companyName.toLowerCase())
+        if (!profile) return ['Company not found. Research format, values, and common questions.']
+
+        const advice: string[] = [
+            `Format: ${profile.format} (${profile.rounds} rounds)`,
+            `Focus coding tags: ${profile.codingTags.join(', ')}`,
+            `Prepare stories for values: ${profile.values.join(', ')}`,
+            `Common questions: ${profile.commonQuestions.join(', ')}`,
+            `Do ${profile.rounds} mocks before the real interview`,
+        ]
+
+        return advice
+    }
+
+    getTopCodingTags(companyNames: string[]): Map<string, number> {
+        const tagCount = new Map<string, number>()
+        companyNames.forEach(name => {
+            const profile = this.companies.get(name.toLowerCase())
+            if (profile) {
+                profile.codingTags.forEach(tag => {
+                    tagCount.set(tag, (tagCount.get(tag) ?? 0) + 1)
+                })
+            }
+        })
+        return tagCount
+    }
+}
+```
+
+### Example 5: Mock Feedback Analyzer
+
+```typescript
+interface MockFeedback {
+    date: Date
+    round: string
+    correctness: number
+    speed: number
+    communication: number
+    edgeCases: number
+    notes: string
+}
+
+class MockFeedbackAnalyzer {
+    private feedbacks: MockFeedback[] = []
+
+    addFeedback(fb: MockFeedback): void {
+        this.feedbacks.push(fb)
+    }
+
+    getTrend(): { metric: string; trend: 'improving' | 'declining' | 'stable'; score: number }[] {
+        if (this.feedbacks.length < 2) return []
+
+        const recent = this.feedbacks.slice(-3)
+        const metrics: (keyof MockFeedback)[] = ['correctness', 'speed', 'communication', 'edgeCases']
+
+        return metrics.map(m => {
+            const scores = recent.map(f => f[m] as number)
+            const avg = scores.reduce((s, v) => s + v, 0) / scores.length
+            const trend: 'improving' | 'declining' | 'stable' =
+                scores.length >= 2 && scores[scores.length - 1] > scores[0] ? 'improving'
+                : scores.length >= 2 && scores[scores.length - 1] < scores[0] ? 'declining'
+                : 'stable'
+
+            return { metric: m, trend, score: Math.round(avg * 10) / 10 }
+        })
+    }
+
+    getWeakestArea(): string {
+        const trend = this.getTrend()
+        if (trend.length === 0) return 'Need more data. Do at least 2 mocks.'
+
+        const weakest = trend.reduce((min, t) => t.score < min.score ? t : min)
+        const recommendations: Record<string, string> = {
+            correctness: 'Write test cases before coding. Trace through examples.',
+            speed: 'Time-box each pass. Practice with a timer every session.',
+            communication: 'Narrate everything. Record yourself. Review for gaps.',
+            edgeCases: 'Before coding, list 3 edge cases (empty, null, overflow).',
+        }
+
+        return `${weakest.metric} (${weakest.score}/5): ${recommendations[weakest.metric] ?? 'Practice more.'}`
     }
 }
 ```

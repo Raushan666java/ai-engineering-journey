@@ -169,6 +169,21 @@ To truly understand a paper, replicate its key results:
 6. Compare your implementation to the reference
 7. Document: what you got right, what you got wrong, what you still don't understand
 
+```mermaid
+flowchart TD
+    A[Pick Target Paper] --> B[Pass 1: Title + Abstract + Figures — 5 min]
+    B --> C{Relevant?}
+    C -->|No| D[Skip. Move to next]
+    C -->|Yes| E[Pass 2: Intro + Method + Results — 30 min]
+    E --> F[Take Notes]
+    F --> G{Worth Implementing?}
+    G -->|No| H[File Notes. Move on.]
+    G -->|Yes| I[Pass 3: Full Paper + Implement — 2h+]
+    I --> J[Compare with Reference Code]
+    J --> K[Write Summary + Teach]
+    K --> L[Add to Learning Stack]
+```
+
 ### AI/ML Interview Study Plan
 
 If you're preparing for ML engineering interviews:
@@ -401,6 +416,117 @@ interface StackProgress {
     overall: number
     byLayer: { layer: StackLayer; progress: number }[]
     nextRecommended: string
+}
+```
+
+### Example 4: Feynman Technique Assistant
+
+```typescript
+interface FeynmanAttempt {
+    concept: string
+    explanation: string
+    jargonWords: string[]
+    gaps: string[]
+    clarityScore: number
+}
+
+class FeynmanAssistant {
+    analyze(concept: string, explanation: string): FeynmanAttempt {
+        const jargonTerms = [
+            'neural', 'network', 'gradient', 'descent', 'backpropagation',
+            'attention', 'embedding', 'transformer', 'convolution', 'pooling',
+            'optimizer', 'loss function', 'regularization', 'normalization',
+            'activation', 'kernel', 'latent', 'encoder', 'decoder', 'attention',
+            'algorithm', 'complexity', 'recursive', 'iteration', 'probability',
+            'distribution', 'variance', 'bias', 'correlation', 'regression'
+        ]
+
+        const foundJargon = jargonTerms.filter(j =>
+            explanation.toLowerCase().includes(j.toLowerCase())
+        )
+
+        const gaps: string[] = []
+        if (foundJargon.length > 3) {
+            gaps.push(`Used ${foundJargon.length} jargon terms. Define each in simple language.`)
+        }
+        if (explanation.split(' ').length < 30) {
+            gaps.push('Explanation is too short. Expand to show deeper understanding.')
+        }
+        if (!explanation.includes('because')) {
+            gaps.push('Missing causal reasoning. Use "because" to explain WHY it works.')
+        }
+
+        const clarityScore = Math.max(1, Math.min(10,
+            10 - foundJargon.length - (explanation.length < 100 ? 2 : 0)
+        ))
+
+        return {
+            concept,
+            explanation,
+            jargonWords: foundJargon,
+            gaps,
+            clarityScore
+        }
+    }
+
+    suggestImprovement(attempt: FeynmanAttempt): string {
+        if (attempt.gaps.length === 0) {
+            return 'Great explanation! Try teaching it to someone without notes.'
+        }
+        return `Improve by: ${attempt.gaps.join('; ')}`
+    }
+}
+```
+
+### Example 5: Prerequisite Chain Visualizer
+
+```typescript
+interface PrereqNode {
+    topic: string
+    level: number  // 0 = target, 1 = direct prereq, 2 = indirect, etc.
+    mastered: boolean
+    children: PrereqNode[]
+}
+
+class PrerequisiteChain {
+    build(target: string, knowledge: Map<string, string[]>): PrereqNode {
+        const visited = new Set<string>()
+
+        const buildNode = (topic: string, level: number): PrereqNode => {
+            visited.add(topic)
+            const prereqs = knowledge.get(topic) ?? []
+            return {
+                topic,
+                level,
+                mastered: false,
+                children: prereqs
+                    .filter(p => !visited.has(p))
+                    .map(p => buildNode(p, level + 1))
+            }
+        }
+
+        return buildNode(target, 0)
+    }
+
+    getLearningOrder(root: PrereqNode): string[] {
+        const order: string[] = []
+        const visited = new Set<string>()
+
+        const dfs = (node: PrereqNode) => {
+            if (visited.has(node.topic)) return
+            node.children.forEach(dfs)
+            visited.add(node.topic)
+            order.push(node.topic)
+        }
+
+        dfs(root)
+        return order  // prerequisites first, target last
+    }
+
+    identifyMissingPrereqs(root: PrereqNode, masteredTopics: Set<string>): string[] {
+        const allPrereqs = this.getLearningOrder(root)
+        return allPrereqs.filter(t => !masteredTopics.has(t))
+    }
 }
 ```
 

@@ -59,7 +59,9 @@ flowchart LR
     subgraph M4[Module 4: GenAI]
         LLM[LLMs/Prompt<br/>8 ch] --> RAG[RAG<br/>10 ch]
         RAG --> AGE[Agents<br/>10 ch]
-        AGE --> FT[Fine-Tuning<br/>8 ch]
+        AGE --> AAA[Adv Agents<br/>10 ch]
+        AAA --> TMP[Trending AI/ML<br/>4 ch]
+        TMP --> FT[Fine-Tuning<br/>8 ch]
     end
     subgraph M5[Module 5: Production]
         EVAL[Eval/Observ<br/>6 ch] --> MLOps[MLOps<br/>8 ch]
@@ -216,15 +218,17 @@ All progress stored in your browser's localStorage — **zero servers, zero acco
 | 11 | LLMs & Prompt Engineering | 8 | 80 | 25 | ⭐⭐⭐⭐⭐ |
 | 12 | RAG & Vector Databases | 10 | 100 | 35 | ⭐⭐⭐⭐⭐ |
 | 13 | AI Agents & LangGraph | 10 | 100 | 40 | ⭐⭐⭐⭐⭐ |
-| 14 | Fine-Tuning & PEFT | 8 | 80 | 25 | ⭐⭐⭐ |
-| 15 | AI Eval & Observability | 6 | 60 | 20 | ⭐⭐⭐ |
-| 16 | MLOps & Production | 8 | 80 | 25 | ⭐⭐⭐⭐ |
-| 17 | AI Security & Guardrails | 6 | 60 | 15 | ⭐⭐⭐ |
-| 18 | Multimodal AI & Voice | 6 | 60 | 20 | ⭐⭐⭐ |
-| 19 | Capstone Projects | 5 | 25 | 50 | ⭐⭐⭐⭐⭐ |
-| 20 | Portfolio & Branding | 6 | 48 | 15 | ⭐⭐⭐ |
-| 21 | Interview Preparation | 19 | 285 | 80 | ⭐⭐⭐⭐⭐ |
-| **Total** | **22** | **~210** | **~2,300** | **~720** | — |
+| 14 | Advanced AI Agents | 10 | 100 | 40 | ⭐⭐⭐⭐⭐ |
+| 15 | Fine-Tuning & PEFT | 8 | 80 | 25 | ⭐⭐⭐ |
+| 16 | AI Eval & Observability | 6 | 60 | 20 | ⭐⭐⭐ |
+| 17 | MLOps & Production | 8 | 80 | 25 | ⭐⭐⭐⭐ |
+| 18 | AI Security & Guardrails | 6 | 60 | 15 | ⭐⭐⭐ |
+| 19 | Multimodal AI & Voice | 6 | 60 | 20 | ⭐⭐⭐ |
+| 20 | Capstone Projects | 5 | 25 | 50 | ⭐⭐⭐⭐⭐ |
+| 21 | Portfolio & Branding | 6 | 48 | 15 | ⭐⭐⭐ |
+| 22 | Interview Preparation | 19 | 285 | 80 | ⭐⭐⭐⭐⭐ |
+| 23 | Trending AI/ML Platforms & Tools | 4 | 40 | 10 | ⭐⭐⭐ |
+| **Total** | **24** | **~224** | **~2,440** | **~770** | — |
 
 ## How to Use This Course
 

@@ -75,6 +75,24 @@ Goal: Perform under pressure and teach others.
 - Days 25-27: Teaching. Write a blog post. Record a video. Explain it to a peer. The gaps you find while teaching are your final weak spots
 - Days 28-30: Spaced review + retrospective. Revisit concepts from Phase 1. Run the 10-minute blank page test for each major topic
 
+```mermaid
+flowchart LR
+    subgraph Phase1[Days 1-10: Foundation]
+        P1A[Core Concepts] --> P1B[Vocabulary]
+        P1B --> P1C[First Working Example]
+        P1C --> P1D[Connect Concepts]
+    end
+    subgraph Phase2[Days 11-20: Core]
+        P2A[Guided Practice] --> P2B[Unguided Practice]
+        P2B --> P2C[Variation]
+    end
+    subgraph Phase3[Days 21-30: Mastery]
+        P3A[Timed Practice] --> P3B[Teach Someone]
+        P3B --> P3C[Spaced Review]
+    end
+    Phase1 --> Phase2 --> Phase3
+```
+
 ### The Pareto Principle for Learning
 
 80% of interview problems test 20% of concepts. Identify that 20% first.
@@ -356,6 +374,84 @@ class SprintRetrospective {
 interface DailyLog {
     hoursSpent: number
     confusion: string
+}
+```
+
+### Example 4: Pareto Analyzer
+
+```typescript
+interface TopicImportance {
+    topic: string
+    frequency: number   // how often it appears in exams/interviews
+    weight: number      // how many marks/questions it covers
+    paretoScore: number // frequency * weight
+}
+
+class ParetoAnalyzer {
+    analyze(topics: TopicImportance[]): { critical20: TopicImportance[]; remaining80: TopicImportance[] } {
+        const sorted = [...topics].sort((a, b) => b.paretoScore - a.paretoScore)
+        const totalScore = sorted.reduce((s, t) => s + t.paretoScore, 0)
+
+        let cumulative = 0
+        const cutoff = sorted.findIndex(t => {
+            cumulative += t.paretoScore
+            return cumulative / totalScore >= 0.8
+        })
+
+        return {
+            critical20: sorted.slice(0, cutoff + 1),
+            remaining80: sorted.slice(cutoff + 1)
+        }
+    }
+
+    suggestStudyOrder(topics: TopicImportance[]): string[] {
+        const { critical20 } = this.analyze(topics)
+        return critical20
+            .sort((a, b) => b.paretoScore - a.paretoScore)
+            .map(t => `${t.topic} (priority: study first, ${t.frequency} appearances)`)
+    }
+}
+```
+
+### Example 5: Weekly Checkpoint Evaluator
+
+```typescript
+type CheckpointDay = 7 | 14 | 21 | 30
+
+interface CheckpointResult {
+    day: CheckpointDay
+    onTrack: boolean
+    issues: string[]
+    adjustment: string
+}
+
+class WeeklyCheckpoint {
+    evaluate(day: CheckpointDay, tasksCompleted: number, tasksPlanned: number, avgDailyMinutes: number): CheckpointResult {
+        const completionRate = tasksCompleted / Math.max(tasksPlanned, 1)
+        const issues: string[] = []
+        let adjustment = ''
+
+        if (completionRate < 0.6) {
+            issues.push(`Only ${Math.round(completionRate * 100)}% of tasks completed`)
+        }
+        if (avgDailyMinutes < 30) {
+            issues.push(`Daily average ${avgDailyMinutes}min is below 30min minimum`)
+        }
+
+        if (issues.length === 0) {
+            adjustment = 'On track. Maintain current pace.'
+        } else if (day <= 7) {
+            adjustment = 'Early sprint. Reduce scope or increase daily minimum.'
+        } else if (day <= 14) {
+            adjustment = 'Mid-sprint. Focus on critical 20% only. Defer non-essential topics.'
+        } else if (day <= 21) {
+            adjustment = 'Pre-mastery. Strengthen weak areas identified so far.'
+        } else {
+            adjustment = 'Final week. Review and consolidate. No new topics.'
+        }
+
+        return { day, onTrack: issues.length === 0, issues, adjustment }
+    }
 }
 ```
 

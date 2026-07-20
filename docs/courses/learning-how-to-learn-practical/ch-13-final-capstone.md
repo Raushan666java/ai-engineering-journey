@@ -74,6 +74,23 @@ flowchart TD
 - Deep work (Ch 5): Execute distraction-free sessions
 - Teaching (Ch 12): Share what you learned. Fill gaps discovered while teaching
 
+```mermaid
+flowchart LR
+    subgraph Weekly
+        A[Mon-Thu: Observe + Act] --> B[Fri: Orient + Decide]
+    end
+    subgraph Monthly
+        C[Run Full Mock] --> D[Audit All Components]
+        D --> E[Identify Weakest Link]
+        E --> F[Plan Next Month]
+    end
+    subgraph Quarterly
+        G[Compare to Baseline] --> H[Adjust Goal or Timeline]
+    end
+    B --> C
+    F --> G
+```
+
 ### The Learning System Audit
 
 Before building your system, audit your current approach. Ask yourself:
@@ -180,6 +197,26 @@ After the weekly review, teach ONE concept from the past week to someone:
 The act of teaching forces you to organize your knowledge. The gaps you discover while teaching are your real learning gaps.
 
 ---
+
+**Alternative Scenario:** You're preparing for AI/ML engineering interviews in 90 days.
+
+**Phase 1 (Month 1): ML Foundations**
+- ML fundamentals: regression, classification, evaluation metrics, overfitting
+- Implement: linear regression from scratch, logistic regression from scratch
+- Daily: 45 min theory (chapter + paper) + 30 min coding (implement what you learned)
+- Set daily minimum: "I will train one model today or debug one implementation"
+
+**Phase 2 (Month 2): Deep Learning + System Design**
+- Neural networks: backpropagation, CNNs, RNNs, transformers
+- ML system design: feature stores, model serving, A/B testing, monitoring
+- Daily: 1 ML design exercise + 1 implementation (PyTorch)
+- Weekly: 1 mock ML system design session (45 min timed)
+
+**Phase 3 (Month 3): Mock Interviews + Weak Area Focus**
+- Alternating coding and design mocks (3 per week)
+- Review weak areas from mock feedback
+- Prepare STAR stories for ML-specific scenarios (failed experiment, data issue, production incident)
+- Final week: review all fundamentals, confidence building
 
 **Alternative Scenario:** You're learning Spanish from scratch in 90 days.
 
@@ -288,6 +325,7 @@ interface DailyLogEntry {
   problemsSolved: number
   problemsWrong: number
   taught: boolean
+  errors?: string[]
 }
 
 function create90DayPlan(subjects: string[], weeklyHours: number): string[] {
@@ -336,6 +374,108 @@ function calculateErrorFix(errorType: string): string {
     'forgot formula': 'Create a formula cheat sheet. Review every morning.',
   }
   return fixes[errorType.toLowerCase()] ?? 'Review the topic from scratch. Take notes.'
+}
+
+### Example 2: Weekly Review Engine
+
+```typescript
+interface WeekData {
+  weekNumber: number
+  dailyLogs: DailyLogEntry[]
+  mockScores: { subject: string; score: number }[]
+}
+
+interface WeekReport {
+  totalHours: number
+  avgFocus: number
+  subjectsCovered: string[]
+  strongestSubject: string
+  weakestSubject: string
+  errorBreakdown: Record<string, number>
+  recommendation: string
+}
+
+class WeeklyReviewEngine {
+  generateReport(data: WeekData): WeekReport {
+    const totalHours = data.dailyLogs.reduce((s, l) => s + l.hoursStudied, 0)
+    const avgFocus = data.dailyLogs.reduce((s, l) => s + l.focus, 0) / data.dailyLogs.length
+    const subjects = [...new Set(data.dailyLogs.map(l => l.subject))]
+    const errors = this.aggregateErrors(data.dailyLogs)
+    const weakest = data.mockScores.reduce((min, m) => m.score < min.score ? m : min, data.mockScores[0])
+
+    const recommendation = weakest.score < 60
+      ? `Focus on ${weakest.subject}. Review fundamentals. Do 10 easy problems daily.`
+      : `Maintain current pace. Next week: increase mock frequency.`
+
+    return {
+      totalHours: Math.round(totalHours * 10) / 10,
+      avgFocus: Math.round(avgFocus * 10) / 10,
+      subjectsCovered: subjects,
+      strongestSubject: data.mockScores.reduce((max, m) => m.score > max.score ? m : max).subject,
+      weakestSubject: weakest.subject,
+      errorBreakdown: errors,
+      recommendation
+    }
+  }
+
+  private aggregateErrors(logs: DailyLogEntry[]): Record<string, number> {
+    const counts: Record<string, number> = {}
+    logs.forEach(l => {
+      if (l.errors) {
+        l.errors.forEach(e => {
+          counts[e] = (counts[e] ?? 0) + 1
+        })
+      }
+    })
+    return counts
+  }
+}
+```
+
+### Example 3: System Health Checker
+
+```typescript
+interface SystemHealth {
+  component: string
+  score: number
+  status: 'healthy' | 'warning' | 'critical'
+  action: string
+}
+
+class SystemHealthChecker {
+  check(config: LearningSystemConfig, logs: DailyLogEntry[]): SystemHealth[] {
+    const recent = logs.slice(-7)
+    const health: SystemHealth[] = []
+
+    // Check consistency
+    const daysLogged = recent.length
+    health.push({
+      component: 'Consistency',
+      score: Math.round((daysLogged / 7) * 100),
+      status: daysLogged >= 5 ? 'healthy' : daysLogged >= 3 ? 'warning' : 'critical',
+      action: daysLogged < 5 ? 'Log daily. Minimum 5/7 days per week.' : 'Good consistency.'
+    })
+
+    // Check focus
+    const avgFocus = recent.reduce((s, l) => s + l.focus, 0) / Math.max(recent.length, 1)
+    health.push({
+      component: 'Focus',
+      score: Math.round(avgFocus * 20),
+      status: avgFocus >= 4 ? 'healthy' : avgFocus >= 3 ? 'warning' : 'critical',
+      action: avgFocus < 3 ? 'Remove phone. Use 50/10 Pomodoro. Check sleep (Ch 5).' : 'Focus is adequate.'
+    })
+
+    // Check teaching
+    const taught = recent.filter(l => l.taught).length
+    health.push({
+      component: 'Teaching',
+      score: Math.round((taught / 7) * 100),
+      status: taught >= 3 ? 'healthy' : taught >= 1 ? 'warning' : 'critical',
+      action: taught < 1 ? 'Teach one concept this week (Ch 12). Even a 2-min voice note counts.' : 'Keep teaching weekly.'
+    })
+
+    return health
+  }
 }
 ```
 

@@ -61,6 +61,23 @@ The full OODA cycle for learning:
 
 **Act:** Execute the decision. Do the work. Log the results. Then loop back to Observe.
 
+```mermaid
+flowchart LR
+    subgraph Daily[5-min Daily Check-in]
+        D1[What did I study?] --> D2[What confused me?]
+        D2 --> D3[Tomorrow's priority?]
+    end
+    subgraph Weekly[30-min Weekly Review]
+        W1[Wins + Challenges] --> W2[Review Metrics]
+        W2 --> W3[Adjust Next Week]
+    end
+    subgraph Monthly[1-hr Monthly Retro]
+        M1[Compare to Milestone] --> M2[Update Strategy]
+        M2 --> M3[Plan Next Month]
+    end
+    Daily --> Weekly --> Monthly
+```
+
 ### Goal Decomposition Framework
 
 Big goals fail because they're too abstract. "Crack FAANG" is not actionable. Here's the decomposition chain:
@@ -281,7 +298,6 @@ class LearningOS {
         console.log(`Goal: ${plan.vision}`)
         console.log(`Milestones: ${plan.milestones.length} phases`)
 
-        // Generate first sprint's daily actions
         const firstSprint = plan.milestones[0].sprints[0]
         console.log(`First sprint: ${firstSprint.title}`)
         console.log(`Daily actions to complete:`)
@@ -298,6 +314,92 @@ class LearningOS {
             console.log("Review needed for:", summary.commonConfusions.join(", "))
         }
         console.log(`Hours: ${summary.totalHours}, Focus: ${summary.avgFocus.toFixed(1)}`)
+    }
+}
+```
+
+### Example 4: Anti-Pattern Detector
+
+```typescript
+type AntiPattern = 'tutorial-hell' | 'tool-fetishism' | 'comparison' | 'overplanning' | 'cramming'
+
+interface DetectorResult {
+    detected: AntiPattern[]
+    severity: 'mild' | 'moderate' | 'severe'
+    recommendation: string
+}
+
+class AntiPatternDetector {
+    analyze(logs: { hoursWatching: number; hoursCoding: number; toolsUsed: number; socialMediaChecks: number; studySessions: number }): DetectorResult {
+        const detected: AntiPattern[] = []
+
+        if (logs.hoursWatching > logs.hoursCoding * 2) {
+            detected.push('tutorial-hell')
+        }
+        if (logs.toolsUsed > 3 && logs.studySessions < 10) {
+            detected.push('tool-fetishism')
+        }
+        if (logs.socialMediaChecks > 10) {
+            detected.push('comparison')
+        }
+
+        const severity: DetectorResult['severity'] =
+            detected.length >= 2 ? 'severe' : detected.length === 1 ? 'moderate' : 'mild'
+
+        const recommendations: Record<AntiPattern, string> = {
+            'tutorial-hell': 'Close the video. Implement one thing before watching the next.',
+            'tool-fetishism': 'Use only a notebook and one tool for the next 7 days.',
+            'comparison': 'Unfollow comparison triggers. Your only metric is you yesterday.',
+            'overplanning': 'Set a 5-min timer for planning. Start working when it rings.',
+            'cramming': 'Use spaced repetition (Ch 4) instead of massed practice.',
+        }
+
+        return {
+            detected,
+            severity,
+            recommendation: detected.map(d => recommendations[d]).join(' ')
+        }
+    }
+}
+```
+
+### Example 5: VARK Study Matcher
+
+```typescript
+type VARKStyle = 'visual' | 'auditory' | 'read-write' | 'kinesthetic'
+
+interface StudyMethod {
+    method: string
+    description: string
+    bestFor: VARKStyle[]
+}
+
+class VARKStudyMatcher {
+    private methods: StudyMethod[] = [
+        { method: 'Mind maps', description: 'Draw concept maps connecting ideas', bestFor: ['visual'] },
+        { method: 'Flashcards', description: 'Physical or digital recall cards', bestFor: ['read-write', 'kinesthetic'] },
+        { method: 'Teach aloud', description: 'Explain concepts without notes', bestFor: ['auditory', 'kinesthetic'] },
+        { method: 'Practice problems', description: 'Solve problems without looking at solutions', bestFor: ['kinesthetic', 'read-write'] },
+        { method: 'Watch videos', description: 'Visual explanations of concepts', bestFor: ['visual', 'auditory'] },
+        { method: 'Write summaries', description: 'Rewrite concepts in your own words', bestFor: ['read-write'] },
+        { method: 'Group discussion', description: 'Explain and debate with peers', bestFor: ['auditory', 'kinesthetic'] },
+        { method: 'Diagrams + charts', description: 'Visualize data and relationships', bestFor: ['visual'] },
+    ]
+
+    recommend(style: VARKStyle): StudyMethod[] {
+        return this.methods
+            .filter(m => m.bestFor.includes(style))
+            .map(m => ({ ...m, bestFor: [style] }))
+    }
+
+    getStyleDescription(style: VARKStyle): string {
+        const descriptions: Record<VARKStyle, string> = {
+            visual: 'Learn best through images, diagrams, and spatial understanding',
+            auditory: 'Learn best through listening, discussion, and verbal explanation',
+            'read-write': 'Learn best through reading, writing, and text-based information',
+            kinesthetic: 'Learn best through hands-on practice, movement, and real-world examples',
+        }
+        return descriptions[style]
     }
 }
 ```

@@ -81,6 +81,22 @@ Most developers read documentation wrong. They start at the beginning and read l
 | Source code | When docs fail | Ultimate truth |
 | Tests | Before modifying | Expected behavior |
 
+```mermaid
+flowchart LR
+    A[Identify Resource Type] --> B{Is it a...}
+    B -->|Textbook / Article| C[Apply SQ3R]
+    B -->|Video Course| D[Pause every 10min + Summarize]
+    B -->|Codebase| E[Read → Run → Debug → Modify]
+    B -->|Lecture| F[Active Listening + Write Questions]
+    C --> G[Extract Core Concepts]
+    D --> G
+    E --> G
+    F --> G
+    G --> H[Add to Knowledge Map]
+    H --> I[Apply + Practice]
+    I --> J[Teach from Memory]
+```
+
 **Rule:** Read just enough to accomplish your next task. Don't read the entire documentation before writing code. You'll forget most of it. Read → Code → Repeat.
 
 ### Framework Learning Blueprint
@@ -334,6 +350,131 @@ interface TraceSummary {
     uniqueFiles: string[]
     entryPoint: string
     lastCall: string
+}
+```
+
+### Example 4: Documentation Strategy Adapter
+
+```typescript
+type DocSource = 'readme' | 'getting-started' | 'api-ref' | 'tutorial' | 'source' | 'tests'
+
+interface DocReadResult {
+    source: DocSource
+    timeSpent: number
+    keyTakeaways: string[]
+    nextAction: string
+}
+
+class DocumentationStrategy {
+    recommend(task: string, experience: 'beginner' | 'intermediate' | 'advanced'): DocSource[] {
+        const strategies: Record<string, DocSource[]> = {
+            'setup': ['readme', 'getting-started'],
+            'implement-feature': ['tutorial', 'api-ref', 'tests'],
+            'debug': ['source', 'tests', 'api-ref'],
+            'understand-architecture': ['readme', 'source'],
+            'modify-existing': ['tests', 'source'],
+            'performance-tuning': ['api-ref', 'source', 'tests'],
+        }
+
+        return strategies[task] ?? ['readme', 'getting-started']
+    }
+
+    read(source: DocSource, content: string): DocReadResult {
+        const strategies: Record<DocSource, { timeLimit: number; focus: string }> = {
+            'readme': { timeLimit: 5, focus: 'What, why, how to start' },
+            'getting-started': { timeLimit: 15, focus: 'Follow exactly to run it' },
+            'api-ref': { timeLimit: 10, focus: 'Search for specific function signatures' },
+            'tutorial': { timeLimit: 30, focus: 'Build the example step by step' },
+            'source': { timeLimit: 20, focus: 'Trace one request end-to-end' },
+            'tests': { timeLimit: 15, focus: 'Expected behavior of each function' },
+        }
+
+        const strategy = strategies[source]
+        return {
+            source,
+            timeSpent: strategy.timeLimit,
+            keyTakeaways: [`Focused on: ${strategy.focus}`],
+            nextAction: `After ${strategy.timeLimit} min, move to ${this.getNextSource(source)}`
+        }
+    }
+
+    private getNextSource(current: DocSource): DocSource {
+        const order: DocSource[] = ['readme', 'getting-started', 'tutorial', 'api-ref', 'tests', 'source']
+        const idx = order.indexOf(current)
+        return idx < order.length - 1 ? order[idx + 1] : 'source'
+    }
+}
+```
+
+### Example 5: Knowledge Map Builder
+
+```typescript
+interface KnowledgeNode {
+    id: string
+    concept: string
+    level: 'core' | 'supporting' | 'advanced'
+    prerequisite: string[]
+    applications: string[]
+    confidence: 1 | 2 | 3 | 4 | 5
+}
+
+class KnowledgeMap {
+    private nodes: Map<string, KnowledgeNode> = new Map()
+
+    addNode(concept: string, level: KnowledgeNode['level'], prerequisites: string[] = []): void {
+        this.nodes.set(concept, {
+            id: crypto.randomUUID(),
+            concept,
+            level,
+            prerequisite: prerequisites,
+            applications: [],
+            confidence: 1
+        })
+    }
+
+    addApplication(concept: string, application: string): void {
+        const node = this.nodes.get(concept)
+        if (node) node.applications.push(application)
+    }
+
+    updateConfidence(concept: string, confidence: KnowledgeNode['confidence']): void {
+        const node = this.nodes.get(concept)
+        if (node) node.confidence = confidence
+    }
+
+    getLearningPath(targetConcept: string): string[] {
+        const path: string[] = []
+        const visited = new Set<string>()
+
+        const dfs = (concept: string) => {
+            if (visited.has(concept)) return
+            visited.add(concept)
+
+            const node = this.nodes.get(concept)
+            if (!node) return
+
+            node.prerequisite.forEach(p => dfs(p))
+            path.push(concept)
+        }
+
+        dfs(targetConcept)
+        return path
+    }
+
+    getWeakAreas(): string[] {
+        return [...this.nodes.values()]
+            .filter(n => n.confidence <= 2)
+            .map(n => n.concept)
+    }
+
+    exportMap(): string {
+        const lines: string[] = ['# Knowledge Map']
+        this.nodes.forEach(node => {
+            const prereqs = node.prerequisite.length > 0 ? ` (needs: ${node.prerequisite.join(', ')})` : ''
+            lines.push(`- [${node.confidence}/5] ${node.concept}${prereqs}`)
+        })
+        return lines.join('\n')
+    }
 }
 ```
 

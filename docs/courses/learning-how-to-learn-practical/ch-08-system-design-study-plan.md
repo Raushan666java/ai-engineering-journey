@@ -71,6 +71,21 @@ Distributes keys across servers with minimal rebalancing when servers are added 
 - Partitioning: Split a table into smaller pieces. Can be horizontal (by rows) or vertical (by columns)
 - Connection pooling: Reuse database connections instead of opening new ones for every request
 
+```mermaid
+flowchart TD
+    A[Pick a System to Design] --> B[Step 1: Requirements — 5 min]
+    B --> C[Step 2: Estimation — 5 min]
+    C --> D[Step 3: Data Model + API — 5 min]
+    D --> E[Step 4: High-Level Design — 15 min]
+    E --> F[Step 5: Deep Dive 1-2 Components — 10 min]
+    F --> G[Step 6: Tradeoffs — 5 min]
+    G --> H[Grade Yourself]
+    H --> I{Score < 80%?}
+    I -->|Yes| J[Review Weak Areas]
+    J --> A
+    I -->|No| K[Try Next Case Study]
+```
+
 ### Case Study Methodology
 
 To study any real-world system:
@@ -338,6 +353,131 @@ class LoadBalancer {
         const hash = clientIp.split('')
             .reduce((h, c) => ((h << 5) - h) + c.charCodeAt(0), 0)
         return servers[Math.abs(hash) % servers.length]
+    }
+}
+```
+
+### Example 4: Cache Strategy Selector
+
+```typescript
+type CacheStrategy = 'cache-aside' | 'read-through' | 'write-through' | 'write-back'
+type EvictionPolicy = 'LRU' | 'LFU' | 'TTL' | 'FIFO'
+
+interface CacheRecommendation {
+    strategy: CacheStrategy
+    evictionPolicy: EvictionPolicy
+    ttlSeconds: number
+    reason: string
+}
+
+class CacheStrategySelector {
+    recommend(
+        readRatio: number,       // 0-1, what % of operations are reads
+        consistencyRequired: boolean,
+        writeLatencyTolerant: boolean,
+        dataLossAcceptable: boolean
+    ): CacheRecommendation {
+        if (readRatio > 0.9 && consistencyRequired) {
+            return {
+                strategy: 'read-through',
+                evictionPolicy: 'LRU',
+                ttlSeconds: 3600,
+                reason: 'Read-heavy with consistency needs. Read-through ensures cache is always fresh.'
+            }
+        }
+        if (readRatio > 0.7 && !consistencyRequired) {
+            return {
+                strategy: 'cache-aside',
+                evictionPolicy: 'LRU',
+                ttlSeconds: 1800,
+                reason: 'Read-heavy, stale data acceptable. Simple cache-aside with LRU eviction.'
+            }
+        }
+        if (writeLatencyTolerant && dataLossAcceptable) {
+            return {
+                strategy: 'write-back',
+                evictionPolicy: 'LFU',
+                ttlSeconds: 300,
+                reason: 'Write-heavy with tolerance for async writes. Write-back for fast writes.'
+            }
+        }
+        return {
+            strategy: 'write-through',
+            evictionPolicy: 'LRU',
+            ttlSeconds: 600,
+            reason: 'Balance of read/write with consistency needs. Write-through for fresh reads.'
+        }
+    }
+
+    estimateMemory(cacheSize: number, averageObjectSizeBytes: number): string {
+        const totalBytes = cacheSize * averageObjectSizeBytes
+        const totalMB = totalBytes / (1024 * 1024)
+        if (totalMB > 1024) return `${(totalMB / 1024).toFixed(1)} GB`
+        return `${Math.ceil(totalMB)} MB`
+    }
+}
+```
+
+### Example 5: Study Plan Phase Tracker
+
+```typescript
+interface Phase {
+    name: 'foundations' | 'practice' | 'mastery'
+    startWeek: number
+    endWeek: number
+    topics: string[]
+    weeklyMocks: number
+    targetAccuracy: number
+    completed: boolean
+}
+
+class StudyPlanTracker {
+    private phases: Phase[] = []
+    private currentWeek = 1
+
+    addPhase(phase: Phase): void {
+        this.phases.push(phase)
+    }
+
+    setCurrentWeek(week: number): void {
+        this.currentWeek = week
+    }
+
+    getCurrentPhase(): Phase | null {
+        return this.phases.find(p => this.currentWeek >= p.startWeek && this.currentWeek <= p.endWeek) ?? null
+    }
+
+    getProgress(): { phase: string; week: number; completion: number }[] {
+        return this.phases.map(p => {
+            const phaseWeeks = p.endWeek - p.startWeek + 1
+            const weeksElapsed = Math.max(0, Math.min(this.currentWeek - p.startWeek + 1, phaseWeeks))
+            return {
+                phase: p.name,
+                week: weeksElapsed,
+                completion: Math.round((weeksElapsed / phaseWeeks) * 100)
+            }
+        })
+    }
+
+    shouldTransition(accuracy: number): { transition: boolean; reason: string } {
+        const current = this.getCurrentPhase()
+        if (!current) return { transition: false, reason: 'No active phase' }
+
+        if (accuracy >= current.targetAccuracy) {
+            const nextPhaseIdx = this.phases.findIndex(p => p.name === current.name) + 1
+            if (nextPhaseIdx < this.phases.length) {
+                return {
+                    transition: true,
+                    reason: `Accuracy ${accuracy}% ≥ ${current.targetAccuracy}%. Move to ${this.phases[nextPhaseIdx].name}.`
+                }
+            }
+            return { transition: true, reason: 'All phases complete. Begin maintenance mode.' }
+        }
+
+        return {
+            transition: false,
+            reason: `Accuracy ${accuracy}% < ${current.targetAccuracy}%. Stay in ${current.name}. Focus on weak topics.`
+        }
     }
 }
 ```

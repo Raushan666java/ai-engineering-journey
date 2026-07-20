@@ -79,6 +79,18 @@ This means:
 
 **The fix: Batch all shallow work into dedicated blocks.** Don't mix deep work with interruptions. Do deep work in the morning (when residue is lowest), shallow work in the afternoon.
 
+```mermaid
+flowchart LR
+    A[Distraction Audit] --> B[Log every interruption for 24h]
+    B --> C[Identify Top 3 Sources]
+    C --> D[Eliminate Source 1: Phone]
+    D --> E[Eliminate Source 2: Environment]
+    E --> F[Eliminate Source 3: Digital]
+    F --> G[Run Deep Work Protocol]
+    G --> H[Log Focus Metrics]
+    H --> A
+```
+
 ### The Deep Work Protocol
 
 A repeatable protocol that signals your brain: "It's time to focus."
@@ -327,6 +339,95 @@ interface AuditSummary {
     totalLostMinutes: number
     topSources: { source: DistractionSource; minutes: number }[]
     recommendations: string[]
+}
+```
+
+### Example 4: Phone Detox Tracker
+
+```typescript
+interface PhoneCheck {
+    timestamp: Date
+    duration: number  // seconds
+    trigger: 'notification' | 'boredom' | 'habit' | 'anxiety' | 'other'
+}
+
+class PhoneDetoxTracker {
+    private checks: PhoneCheck[] = []
+
+    logCheck(duration: number, trigger: PhoneCheck['trigger']): void {
+        this.checks.push({ timestamp: new Date(), duration, trigger })
+    }
+
+    getStats(): { totalChecks: number; totalTimeLost: number; topTriggers: string[] } {
+        const byTrigger = new Map<string, number>()
+        this.checks.forEach(c => {
+            byTrigger.set(c.trigger, (byTrigger.get(c.trigger) ?? 0) + 1)
+        })
+
+        return {
+            totalChecks: this.checks.length,
+            totalTimeLost: Math.round(this.checks.reduce((s, c) => s + c.duration, 0) / 60),
+            topTriggers: [...byTrigger.entries()]
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 3)
+                .map(([trigger]) => trigger)
+        }
+    }
+
+    getRecommendation(): string {
+        const triggers = this.getStats().topTriggers
+        if (triggers.includes('notification')) return 'Turn off all non-call notifications. Phone in another room.'
+        if (triggers.includes('boredom')) return 'Keep a capture pad nearby. When bored, draw or write instead.'
+        if (triggers.includes('habit')) return 'Replace phone check with 10 pushups or drink water.'
+        if (triggers.includes('anxiety')) return 'Set specific phone check times (10am, 1pm, 4pm, 7pm).'
+        return 'Your phone habits are manageable. Maintain current protocol.'
+    }
+}
+```
+
+### Example 5: Focus Streak Tracker
+
+```typescript
+class FocusStreakTracker {
+    private dailyLog: Map<string, { completed: boolean; minutes: number }> = new Map()
+
+    logDay(date: string, minutesFocused: number, minimum: number): void {
+        this.dailyLog.set(date, {
+            completed: minutesFocused >= minimum,
+            minutes: minutesFocused
+        })
+    }
+
+    getCurrentStreak(): number {
+        const sorted = [...this.dailyLog.entries()].sort((a, b) => b[0].localeCompare(a[0]))
+        let streak = 0
+        for (const [, entry] of sorted) {
+            if (entry.completed) streak++
+            else break
+        }
+        return streak
+    }
+
+    getBestStreak(): number {
+        const sorted = [...this.dailyLog.entries()].sort((a, b) => a[0].localeCompare(b[0]))
+        let currentStreak = 0
+        let bestStreak = 0
+        for (const [, entry] of sorted) {
+            if (entry.completed) {
+                currentStreak++
+                bestStreak = Math.max(bestStreak, currentStreak)
+            } else {
+                currentStreak = 0
+            }
+        }
+        return bestStreak
+    }
+
+    getWeeklyAdherence(): number {
+        const week = [...this.dailyLog.entries()].slice(-7)
+        const completed = week.filter(([, e]) => e.completed).length
+        return week.length > 0 ? Math.round((completed / week.length) * 100) : 0
+    }
 }
 ```
 

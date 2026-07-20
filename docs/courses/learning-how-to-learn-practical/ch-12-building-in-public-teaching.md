@@ -70,6 +70,25 @@ Publish 1 post per month minimum. Don't worry about originality. Your unique per
 
 ### Learning by Building
 
+```mermaid
+flowchart LR
+    subgraph Learn
+        A[Study Topic] --> B[Identify Key Concepts]
+        B --> C[Organize into Structure]
+    end
+    subgraph Teach
+        D[Choose Format: Write / Speak / Code] --> E[Explain Without Notes]
+        E --> F{Found Gaps?}
+        F -->|Yes| G[Research Gaps]
+        G --> A
+        F -->|No| H[Publish / Share]
+    end
+    C --> D
+    H --> I[Collect Feedback]
+    I --> J[Incorporate Learnings]
+    J --> A
+```
+
 Projects consolidate scattered knowledge into a working whole. The build-learn cycle:
 
 1. Identify a problem you care about
@@ -340,6 +359,112 @@ interface MonthlyStats {
     byFormat: { format: ContentFormat; count: number }[]
     totalFeedback: number
     avgFeedbackPerPost: number
+}
+```
+
+### Example 4: Content Idea Generator
+
+```typescript
+interface ContentIdea {
+    title: string
+    format: 'blog' | 'tweet-thread' | 'video' | 'newsletter'
+    difficulty: 'beginner' | 'intermediate' | 'advanced'
+    estimatedTime: string
+    reason: string
+}
+
+class ContentIdeaGenerator {
+    generate(whatYouLearned: string[], audience: string): ContentIdea[] {
+        const ideas: ContentIdea[] = []
+
+        whatYouLearned.forEach(topic => {
+            ideas.push({
+                title: `What I learned about ${topic} this week`,
+                format: 'blog',
+                difficulty: 'beginner',
+                estimatedTime: '2 hours',
+                reason: 'Weekly learning summary builds consistency'
+            })
+            ideas.push({
+                title: `${topic} explained in 10 tweets`,
+                format: 'tweet-thread',
+                difficulty: 'intermediate',
+                estimatedTime: '30 min',
+                reason: 'Thread format forces concise explanations'
+            })
+            ideas.push({
+                title: `The 3 biggest mistakes I made learning ${topic}`,
+                format: 'blog',
+                difficulty: 'beginner',
+                estimatedTime: '1.5 hours',
+                reason: 'People learn from mistakes. High engagement topic.'
+            })
+        })
+
+        return ideas.slice(0, 5)  // max 5 ideas
+    }
+
+    getMonthlyPlan(weeks: string[][]): string[] {
+        return weeks.map((weekTopics, i) => {
+            const topics = weekTopics.join(', ')
+            return `Week ${i + 1}: Publish about ${topics}. Format: alternate blog and tweet-thread.`
+        })
+    }
+}
+```
+
+### Example 5: Feedback Collection Engine
+
+```typescript
+interface Feedback {
+    source: 'blog-comment' | 'twitter' | 'direct-message' | 'code-review' | 'mentoring'
+    content: string
+    category: 'correction' | 'question' | 'praise' | 'suggestion'
+    date: Date
+    incorporated: boolean
+}
+
+class FeedbackCollector {
+    private feedbacks: Feedback[] = []
+
+    add(source: Feedback['source'], content: string, category: Feedback['category']): void {
+        this.feedbacks.push({
+            source,
+            content,
+            category,
+            date: new Date(),
+            incorporated: false
+        })
+    }
+
+    getUnaddressed(): Feedback[] {
+        return this.feedbacks.filter(f => !f.incorporated)
+    }
+
+    markIncorporated(index: number): void {
+        if (this.feedbacks[index]) {
+            this.feedbacks[index].incorporated = true
+        }
+    }
+
+    getCategories(): { category: string; count: number }[] {
+        const counts = new Map<string, number>()
+        this.feedbacks.forEach(f => {
+            counts.set(f.category, (counts.get(f.category) ?? 0) + 1)
+        })
+        return [...counts.entries()]
+            .map(([category, count]) => ({ category, count }))
+            .sort((a, b) => b.count - a.count)
+    }
+
+    getLearningInsights(): string[] {
+        const corrections = this.feedbacks.filter(f => f.category === 'correction')
+        if (corrections.length === 0) return ['No corrections received yet. Your explanations are clear!']
+
+        return corrections.slice(0, 3).map(f =>
+            `Correction received: "${f.content.slice(0, 100)}" — review this topic.`
+        )
+    }
 }
 ```
 

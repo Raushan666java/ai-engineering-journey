@@ -102,6 +102,21 @@ This serves three purposes:
 - **Gap detection:** "What confused me?" identifies weak spots before they compound
 - **Momentum:** "Top priority tomorrow" means you start tomorrow with direction, not a blank page
 
+```mermaid
+flowchart TD
+    A[Track Energy for 3 Days] --> B[Identify High/Medium/Low Windows]
+    B --> C[Schedule Deep Work in High Windows]
+    B --> D[Schedule Practice in Medium Windows]
+    B --> E[Schedule Shallow Work in Low Windows]
+    C --> F[Add 5-min Startup Ritual]
+    F --> G[Run Pomodoro for Each Block]
+    G --> H[10-min Evening Review]
+    H --> I{Week Complete?}
+    I -->|No| G
+    I -->|Yes| J[Sunday: Weekly Planning]
+    J --> A
+```
+
 ### Time-Wasting Patterns to Eliminate
 ### Sample Daily Schedules
 
@@ -326,6 +341,148 @@ class PomodoroTimer {
     breakTime(): number {
         if (!this.currentSession) return 0
         return this.configs[this.currentSession.mode].break
+    }
+}
+```
+
+### Example 4: Weekly Schedule Optimizer
+
+```typescript
+interface TaskBlock {
+    start: string
+    end: string
+    energyRequired: 'high' | 'medium' | 'low'
+    activity: string
+    fixed: boolean
+}
+
+class WeeklyScheduleOptimizer {
+    optimize(
+        energyPattern: { high: string[]; medium: string[]; low: string[] },
+        tasks: TaskBlock[]
+    ): TaskBlock[] {
+        const highTasks = tasks.filter(t => t.energyRequired === 'high')
+        const medTasks = tasks.filter(t => t.energyRequired === 'medium')
+        const lowTasks = tasks.filter(t => t.energyRequired === 'low')
+
+        const optimized: TaskBlock[] = []
+
+        energyPattern.high.forEach((time, i) => {
+            if (i < highTasks.length) {
+                optimized.push({ ...highTasks[i], start: time })
+            }
+        })
+
+        energyPattern.medium.forEach((time, i) => {
+            if (i < medTasks.length) {
+                optimized.push({ ...medTasks[i], start: time })
+            }
+        })
+
+        energyPattern.low.forEach((time, i) => {
+            if (i < lowTasks.length) {
+                optimized.push({ ...lowTasks[i], start: time })
+            }
+        })
+
+        return optimized
+    }
+
+    detectConflicts(tasks: TaskBlock[]): string[] {
+        const conflicts: string[] = []
+        const byTime = new Map<string, TaskBlock[]>()
+
+        tasks.forEach(t => {
+            const time = t.start
+            if (!byTime.has(time)) byTime.set(time, [])
+            byTime.get(time)!.push(t)
+        })
+
+        byTime.forEach((timeTasks, time) => {
+            if (timeTasks.length > 1) {
+                conflicts.push(`Conflict at ${time}: ${timeTasks.map(t => t.activity).join(', ')}`)
+            }
+        })
+
+        return conflicts
+    }
+}
+```
+
+### Example 5: Distraction Elimination Planner
+
+```typescript
+interface DistractionPlan {
+    source: string
+    eliminationStrategy: string
+    difficulty: 'easy' | 'medium' | 'hard'
+    timeToImplement: string
+}
+
+class DistractionEliminationPlanner {
+    generate(source: string): DistractionPlan {
+        const strategies: Record<string, DistractionPlan> = {
+            'phone notifications': {
+                source: 'Phone notifications',
+                eliminationStrategy: 'Do Not Disturb mode. Phone in another room.',
+                difficulty: 'easy',
+                timeToImplement: '1 minute'
+            },
+            'social media': {
+                source: 'Social media scrolling',
+                eliminationStrategy: 'Remove apps from home screen. Schedule 3 check times daily.',
+                difficulty: 'medium',
+                timeToImplement: '1 day'
+            },
+            'environmental noise': {
+                source: 'Environmental noise',
+                eliminationStrategy: 'Noise-cancelling headphones or white noise machine.',
+                difficulty: 'easy',
+                timeToImplement: '5 minutes'
+            },
+            'people interrupting': {
+                source: 'People interrupting',
+                eliminationStrategy: 'Put a "Deep Work" sign on your door/desk.',
+                difficulty: 'medium',
+                timeToImplement: '1 day'
+            },
+            'internal mind-wandering': {
+                source: 'Internal mind-wandering',
+                eliminationStrategy: 'Keep a capture pad. Write thoughts down, don't act on them.',
+                difficulty: 'hard',
+                timeToImplement: '1 week of practice'
+            },
+            'multiple browser tabs': {
+                source: 'Multiple browser tabs',
+                eliminationStrategy: 'One tab per session. Use browser profiles for work/study.',
+                difficulty: 'easy',
+                timeToImplement: '1 minute'
+            }
+        }
+
+        return strategies[source.toLowerCase()] ?? {
+            source,
+            eliminationStrategy: 'Identify the source. Remove it before your next study session.',
+            difficulty: 'medium',
+            timeToImplement: '1 day'
+        }
+    }
+
+    getTopPicks(easyPriority: boolean): DistractionPlan[] {
+        const all = Object.values(this.generate(''))  // dummy to access strategies
+        const strategies = [
+            this.generate('phone notifications'),
+            this.generate('social media'),
+            this.generate('environmental noise'),
+            this.generate('multiple browser tabs'),
+        ]
+
+        if (easyPriority) {
+            return strategies.filter(s => s.difficulty === 'easy')
+        }
+        return strategies.sort((a, b) =>
+            ['easy', 'medium', 'hard'].indexOf(a.difficulty) - ['easy', 'medium', 'hard'].indexOf(b.difficulty)
+        )
     }
 }
 ```

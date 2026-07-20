@@ -181,6 +181,19 @@ Active recall works for more than facts. Apply it to these domains:
 
 **Algorithm recall:** Close your reference. Implement the algorithm from scratch in a blank editor. Run it. If it fails, debug without looking. Only check the reference after you've tried.
 
+```mermaid
+flowchart TD
+    A[New Topic] --> B[Study 15-20 min]
+    B --> C[Close All Materials]
+    C --> D[Blank Page: Write Everything]
+    D --> E[Check Against Notes]
+    E --> F{90%+ Recall?}
+    F -->|Yes| G[Move to Spaced Review]
+    F -->|No| H[Focus 5 min on Gaps Only]
+    H --> B
+    G --> I[SM-2 Schedule: 1d → 6d → interval×ease]
+```
+
 ## Examples
 
 ### 📝 Plain-Language Walkthrough
@@ -331,6 +344,116 @@ interface DeckStats {
     learning: number
     new: number
     averageEase: number
+}
+```
+
+### Example 4: Leitner Box Manager
+
+```typescript
+interface LeitnerCard {
+    id: string
+    question: string
+    answer: string
+    box: 1 | 2 | 3 | 4 | 5
+    lastReviewed: Date | null
+}
+
+class LeitnerBox {
+    private cards: LeitnerCard[] = []
+    private readonly BOX_INTERVALS: Record<number, number> = {
+        1: 1,   // daily
+        2: 2,   // every 2 days
+        3: 4,   // every 4 days
+        4: 8,   // every 8 days
+        5: 16,  // every 16 days
+    }
+
+    addCard(question: string, answer: string): void {
+        this.cards.push({
+            id: crypto.randomUUID(),
+            question,
+            answer,
+            box: 1,
+            lastReviewed: null
+        })
+    }
+
+    reviewCard(cardId: string, correct: boolean): void {
+        const card = this.cards.find(c => c.id === cardId)
+        if (!card) return
+
+        if (correct && card.box < 5) {
+            card.box = (card.box + 1) as LeitnerCard['box']
+        } else if (!correct) {
+            card.box = 1
+        }
+        card.lastReviewed = new Date()
+    }
+
+    getCardsForToday(): LeitnerCard[] {
+        const now = new Date()
+        return this.cards.filter(c => {
+            if (!c.lastReviewed) return true
+            const daysSinceReview = (now.getTime() - c.lastReviewed.getTime()) / 86400000
+            return daysSinceReview >= this.BOX_INTERVALS[c.box]
+        })
+    }
+
+    getStats(): { total: number; byBox: Record<number, number> } {
+        const byBox: Record<number, number> = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 }
+        this.cards.forEach(c => byBox[c.box]++)
+        return { total: this.cards.length, byBox }
+    }
+}
+```
+
+### Example 5: Spaced Review Calculator
+
+```typescript
+interface ReviewSchedule {
+    studyDate: Date
+    reviewDates: Date[]
+    totalReviews: number
+}
+
+class SpacedReviewCalculator {
+    calculate(studyDate: Date, intervals: number[] = [1, 3, 7, 14, 30]): ReviewSchedule {
+        const reviewDates = intervals.map(days => {
+            const date = new Date(studyDate)
+            date.setDate(date.getDate() + days)
+            return date
+        })
+
+        return {
+            studyDate,
+            reviewDates,
+            totalReviews: intervals.length
+        }
+    }
+
+    getRetentionProjection(quality: 'perfect' | 'good' | 'struggled'): { interval: number; retention: number }[] {
+        const projections: { interval: number; retention: number }[] = []
+        const baseRetention = quality === 'perfect' ? 0.95 : quality === 'good' ? 0.85 : 0.65
+        const decayRate = quality === 'perfect' ? 0.03 : quality === 'good' ? 0.06 : 0.12
+
+        for (let day = 0; day <= 30; day++) {
+            projections.push({
+                interval: day,
+                retention: Math.max(0, baseRetention - decayRate * Math.sqrt(day))
+            })
+        }
+        return projections
+    }
+
+    formatSchedule(schedule: ReviewSchedule): string {
+        return [
+            `Studied: ${schedule.studyDate.toLocaleDateString()}`,
+            'Review schedule:',
+            ...schedule.reviewDates.map((d, i) =>
+                `  Review ${i + 1}: ${d.toLocaleDateString()} (${Math.round((d.getTime() - schedule.studyDate.getTime()) / 86400000)} days)`
+            )
+        ].join('\n')
+    }
 }
 ```
 

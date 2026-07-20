@@ -90,6 +90,21 @@ These 8 patterns cover 90% of coding interview problems:
 - "Shortest path" → BFS
 - "Local decision leads to global" → Greedy
 
+```mermaid
+flowchart TD
+    A[Receive Problem] --> B[1. Understand: Restate + Examples + Edge Cases]
+    B --> C[2. Brainstorm: Brute Force → Pattern Match → Optimize]
+    C --> D[3. Code: Write, Test, Handle Edges]
+    D --> E{All Tests Pass?}
+    E -->|Yes| F[Schedule Spaced Review]
+    E -->|No| G[Debug + Re-analyze]
+    G --> B
+    F --> H[Day 1: Re-solve]
+    H --> I[Day 3: Re-solve]
+    I --> J[Day 7: Re-solve]
+    J --> K[Day 30: Mastery Check]
+```
+
 ### Difficulty Progression
 
 | Phase | Difficulty | Problems per Pattern | Goal |
@@ -393,6 +408,127 @@ interface PatternMatch {
     pattern: string
     confidence: number
     matchedKeywords: string[]
+}
+```
+
+### Example 4: Error Categorizer
+
+```typescript
+type ErrorType = 'concept-gap' | 'calculation' | 'time-pressure' | 'misread' | 'edge-case'
+
+interface ErrorLog {
+    problemTitle: string
+    errorType: ErrorType
+    rootCause: string
+    fixStrategy: string
+    date: Date
+}
+
+class ErrorCategorizer {
+    private logs: ErrorLog[] = []
+
+    logError(problem: string, errorType: ErrorType, cause: string): void {
+        const fixStrategies: Record<ErrorType, string> = {
+            'concept-gap': 'Review theory. Solve 10 easy problems on this concept.',
+            'calculation': 'Slow down. Verify each step. Use scratch paper.',
+            'time-pressure': 'Accuracy first. Reduce time by 10% per session.',
+            'misread': 'Underline key numbers. Re-read before solving.',
+            'edge-case': 'Before coding, list 3 edge cases. Test them explicitly.',
+        }
+
+        this.logs.push({
+            problemTitle: problem,
+            errorType,
+            rootCause: cause,
+            fixStrategy: fixStrategies[errorType],
+            date: new Date()
+        })
+    }
+
+    getTopErrorTypes(): { type: ErrorType; count: number; percentage: number }[] {
+        const total = this.logs.length
+        const counts = new Map<ErrorType, number>()
+        this.logs.forEach(l => counts.set(l.errorType, (counts.get(l.errorType) ?? 0) + 1))
+
+        return [...counts.entries()]
+            .map(([type, count]) => ({ type, count, percentage: Math.round((count / total) * 100) }))
+            .sort((a, b) => b.count - a.count)
+    }
+
+    getRecommendedFix(): string {
+        const top = this.getTopErrorTypes()[0]
+        if (!top) return 'No errors logged. Keep practicing!'
+        return `Most common error: ${top.type} (${top.percentage}%). Fix: ${this.logs.find(l => l.errorType === top.type)?.fixStrategy ?? 'Review fundamentals.'}`
+    }
+}
+```
+
+### Example 5: Progress Tracker
+
+```typescript
+interface ProblemRecord {
+    title: string
+    pattern: string
+    difficulty: 'easy' | 'medium' | 'hard'
+    attempts: { date: Date; solved: boolean; timeMinutes: number }[]
+    status: 'new' | 'learning' | 'review' | 'mastered'
+}
+
+class DSAAProgressTracker {
+    private problems: Map<string, ProblemRecord> = new Map()
+    private readonly MASTERY_THRESHOLD = 3  // consecutive solves
+
+    addProblem(title: string, pattern: string, difficulty: 'easy' | 'medium' | 'hard'): void {
+        this.problems.set(title, {
+            title,
+            pattern,
+            difficulty,
+            attempts: [],
+            status: 'new'
+        })
+    }
+
+    recordAttempt(title: string, solved: boolean, timeMinutes: number): void {
+        const problem = this.problems.get(title)
+        if (!problem) return
+
+        problem.attempts.push({ date: new Date(), solved, timeMinutes })
+
+        const recentSolved = problem.attempts.slice(-this.MASTERY_THRESHOLD)
+        problem.status = recentSolved.length >= this.MASTERY_THRESHOLD && recentSolved.every(a => a.solved)
+            ? 'mastered'
+            : problem.attempts.some(a => a.solved)
+                ? 'review'
+                : 'learning'
+    }
+
+    getStats(): { total: number; mastered: number; byPattern: Map<string, { solved: number; total: number }> } {
+        const byPattern = new Map<string, { solved: number; total: number }>()
+
+        this.problems.forEach(p => {
+            const stats = byPattern.get(p.pattern) ?? { solved: 0, total: 0 }
+            stats.total++
+            if (p.status === 'mastered') stats.solved++
+            byPattern.set(p.pattern, stats)
+        })
+
+        return {
+            total: this.problems.size,
+            mastered: [...this.problems.values()].filter(p => p.status === 'mastered').length,
+            byPattern
+        }
+    }
+
+    getNextReviewQueue(): ProblemRecord[] {
+        return [...this.problems.values()]
+            .filter(p => p.status !== 'mastered')
+            .sort((a, b) => {
+                const aLast = a.attempts[a.attempts.length - 1]?.date ?? new Date(0)
+                const bLast = b.attempts[b.attempts.length - 1]?.date ?? new Date(0)
+                return aLast.getTime() - bLast.getTime()
+            })
+            .slice(0, 5)
+    }
 }
 ```
 

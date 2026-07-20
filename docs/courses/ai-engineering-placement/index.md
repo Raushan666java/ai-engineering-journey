@@ -1,6 +1,6 @@
 # Backend + AI Engineer — Complete Placement Course
 
-> **Zero to job-ready in 12 months. 22 subjects, 210+ sub-chapters, 2,300+ interview Q&A. All in browser localStorage — zero backend.**
+> **Zero to job-ready in 12 months. 24 subjects, 224+ sub-chapters, 2,440+ interview Q&A. All in browser localStorage — zero backend.**
 
 [![Build Status](https://img.shields.io/badge/status-in--progress-yellow)](https://)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -12,9 +12,9 @@ This is a **single, unified placement course** for software developers targeting
 
 | Feature | Detail |
 |---------|--------|
-| **Subjects** | 22 broad subject areas (Core CS → Interview Prep) |
-| **Sub-chapters** | 210+ focused topic files, each 400+ lines |
-| **Interview Q&A** | 2,300+ questions with expandable answers — click to reveal |
+| **Subjects** | 24 broad subject areas (Core CS → Trending AI/ML) |
+| **Sub-chapters** | 224+ focused topic files, each 400+ lines |
+| **Interview Q&A** | 2,440+ questions with expandable answers — click to reveal |
 | **Chapter Quizzes** | 5 MCQ per sub-chapter = 975+ total questions |
 | **Exercises** | 5 hands-on per sub-chapter = 975+ exercises |
 | **Capstone Projects** | 5 production-grade projects, from beginner to SaaS |

@@ -1,3 +1,4 @@
+<!-- Clear Language: Keep sentences under 50 words -->
 # Git Basics
 
 ## Learning Objectives

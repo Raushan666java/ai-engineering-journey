@@ -1,3 +1,4 @@
+<!-- Clear Language: Keep sentences under 50 words -->
 ﻿# Kubernetes Basics � Pods, Services, and Deployments
 
 ## Learning Objectives
@@ -694,6 +695,8 @@ Understanding the evolution of kubernetes basics helps appreciate why current ap
 - Keep functions focused on a single responsibility
 - Write self-documenting code with meaningful names
 - Handle errors gracefully and provide informative messages
+
+**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
 
 ## Security Considerations
 

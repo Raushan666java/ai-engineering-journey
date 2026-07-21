@@ -1,3 +1,4 @@
+<!-- Clear Language: Keep sentences under 50 words -->
 # Evaluation Datasets
 
 ## Learning Objectives
@@ -872,6 +873,8 @@ Understanding the evolution of evaluation datasets helps appreciate why current 
 - Keep functions focused on a single responsibility
 - Write self-documenting code with meaningful names
 - Handle errors gracefully and provide informative messages
+
+**Best Practice**: Follow language-specific style guides (PEP 8 for Python, ESLint for TypeScript).
 
 ## Security Considerations
 

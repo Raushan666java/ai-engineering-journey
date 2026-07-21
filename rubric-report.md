@@ -1,6 +1,6 @@
 # 100-Point Rubric Report
 
-Generated: 2026-07-21T09:37:48.024Z
+Generated: 2026-07-21T10:01:49.569Z
 
 ## Summary
 
@@ -30,25 +30,25 @@ Generated: 2026-07-21T09:37:48.024Z
 | Rank | Criteria | Files Failing | % |
 |------|----------|---------------|---|
 | 1 | Clear Language | 219 | 100% |
-| 2 | No Duplicated Content | 205 | 94% |
-| 3 | Historical Context | 199 | 91% |
-| 4 | Coding Standards | 199 | 91% |
-| 5 | Fine-Tuning Notes | 175 | 80% |
-| 6 | Open-Source Tools | 172 | 79% |
-| 7 | Debugging Guide | 169 | 77% |
-| 8 | Agent Relevance | 159 | 73% |
-| 9 | RAG Relevance | 154 | 70% |
-| 10 | Mock Interview Section | 150 | 68% |
-| 11 | Optimized Implementation | 147 | 67% |
-| 12 | References | 142 | 65% |
-| 13 | Prompt Engineering Notes | 142 | 65% |
-| 14 | Evaluation Metrics | 136 | 62% |
-| 15 | LLM Perspective | 123 | 56% |
-| 16 | Tensor Explanation | 96 | 44% |
-| 17 | Best Practices | 93 | 42% |
-| 18 | Real-World Examples | 86 | 39% |
-| 19 | Next Topic | 85 | 39% |
-| 20 | Language-Specific Best Practices | 62 | 28% |
+| 2 | No Duplicated Content | 204 | 93% |
+| 3 | Fine-Tuning Notes | 175 | 80% |
+| 4 | Open-Source Tools | 172 | 79% |
+| 5 | Debugging Guide | 169 | 77% |
+| 6 | Agent Relevance | 159 | 73% |
+| 7 | RAG Relevance | 154 | 70% |
+| 8 | Mock Interview Section | 150 | 68% |
+| 9 | Optimized Implementation | 147 | 67% |
+| 10 | References | 142 | 65% |
+| 11 | Prompt Engineering Notes | 142 | 65% |
+| 12 | Evaluation Metrics | 136 | 62% |
+| 13 | LLM Perspective | 123 | 56% |
+| 14 | Tensor Explanation | 96 | 44% |
+| 15 | Real-World Examples | 86 | 39% |
+| 16 | Next Topic | 85 | 39% |
+| 17 | Training Workflow | 58 | 26% |
+| 18 | Inference Workflow | 50 | 23% |
+| 19 | Title (Single H1) | 47 | 21% |
+| 20 | Key Terminology | 39 | 18% |
 
 ## Bottom 10 Files
 

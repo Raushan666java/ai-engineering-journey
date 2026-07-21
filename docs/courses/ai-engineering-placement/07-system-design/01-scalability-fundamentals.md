@@ -255,6 +255,17 @@ print(f"Need {servers} servers")  # 51
 
 ---
 
+## Visual Analogy
+
+Think of scaling a system like **scaling a restaurant**:
+
+- **Vertical scaling** = Getting a bigger kitchen — more ovens, more counter space, a larger fridge. One kitchen, but more powerful. Eventually you hit the wall: you can't make the kitchen bigger than the building.
+- **Horizontal scaling** = Opening more restaurant locations — instead of one huge kitchen, you have 10 smaller ones. Each location handles its own customers. Virtually unlimited growth, but now you need coordination (load balancer = receptionist routing diners to the nearest location).
+- **Stateless design** = No assigned tables — any waiter can serve any table because they don't remember your previous order. The order history is in the system (Redis/database), not in the waiter's head.
+- **Caching** = The daily specials board — instead of every customer asking the chef what's available, the board has the answer ready. Fast, but needs updating when the menu changes.
+
+This helps because scalability is fundamentally about **removing bottlenecks** — just like a restaurant can only serve so many diners with one chef, a single server can only handle so many requests. The solution is either a bigger chef (vertical) or more kitchens (horizontal).
+
 ## TypeScript Parallel
 
 ```typescript

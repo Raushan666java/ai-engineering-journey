@@ -192,6 +192,21 @@ async function query() {
 }
 `
 
+## Visual Analogy
+
+Think of a SQL database like a **library card catalog system**:
+
+- **Tables** = Bookshelves — each shelf holds a specific category (employees, products, orders).
+- **Rows** = Individual books on the shelf — each row is one record, like a single employee or product.
+- **Columns** = Book attributes — title, author, year, genre. Each column stores one type of information about every book.
+- **SELECT** = Asking the librarian "show me all books by Author X" — you specify what you want to see.
+- **WHERE** = Filtering criteria — "only books published after 2020" narrows down the results.
+- **INSERT** = Adding a new book to the shelf.
+- **UPDATE** = Editing a book's record card (changing the author's address).
+- **DELETE** = Removing a book from the shelf entirely.
+
+This helps because databases are fundamentally organized storage, just like a library. The card catalog (indexes) helps you find books quickly without scanning every shelf, and SQL is the language you use to talk to the librarian.
+
 ## Summary
 
 - SELECT retrieves data; WHERE filters rows

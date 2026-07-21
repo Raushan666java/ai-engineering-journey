@@ -452,6 +452,17 @@ console.log(`${name} is ${age} years old.`);
 
 ---
 
+## Visual Analogy
+
+Think of programming in Python like using a **recipe book**:
+
+- **Variables** = Ingredients on your counter — `flour = "2 cups"`, `oven_temp = 350`. You can reassign them anytime; the label stays the same but you can swap what's in the bowl.
+- **Functions** = Recipes — a named set of steps that takes inputs (ingredients) and produces an output (dish). `def bake_cake(flour, sugar, eggs)` is a recipe card you can reuse.
+- **Modules** = Cookbook chapters — a file full of related recipes. `import baking` gives you all the baking recipes in one organized package.
+- **Dynamic typing** = Using whatever ingredient is available — you don't need to declare "I will only use flour here"; you just pour in whatever you have.
+
+This helps because Python's flexibility mirrors how a cook thinks — grab what you need, follow the steps, and don't worry about rigid containers. The trade-off is that you must be careful not to put salt in the cake by mistake.
+
 ## Summary
 
 - Python's dynamic typing means variable types are inferred at runtime and can change; this gives flexibility but requires discipline with type hints

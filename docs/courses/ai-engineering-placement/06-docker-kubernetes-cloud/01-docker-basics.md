@@ -460,6 +460,18 @@ flowchart TD
 
 ---
 
+## Visual Analogy
+
+Think of Docker like **shipping containers** on a cargo ship:
+
+- **Docker container** = A shipping container — a standardized box that holds your app, its libraries, and everything it needs to run. It doesn't care what's inside; the port crane (Docker Engine) handles it the same way.
+- **Docker image** = The blueprint for a container — a read-only template that says "put Python 3.11 here, copy the code there, run this command." You build images from Dockerfiles.
+- **Dockerfile** = The recipe — step-by-step instructions for building an image. "Start with this base, install these packages, copy the code."
+- **Docker Compose** = The shipping manifest — a document that describes multiple containers (app + database + cache) and how they work together.
+- **Volumes** = Storage containers — persistent boxes that stay even when the shipping container is unloaded. Your data survives container restarts.
+
+This helps because the entire Docker revolution came from the shipping industry's insight: **standardize the container, not the contents**. Just as you can ship anything in a standard 20-foot box, you can run any app in a standard Docker container regardless of the language or framework inside.
+
 ## TypeScript Parallel
 
 While Docker is primarily managed via CLI, TypeScript can interact with the Docker daemon programmatically using the `dockerode` library:

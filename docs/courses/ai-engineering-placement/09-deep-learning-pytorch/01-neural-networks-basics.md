@@ -448,6 +448,19 @@ print(f"Huber: {lf.huber_loss(y_t, y_p):.4f}")
 
 ---
 
+## Visual Analogy
+
+Think of a neural network like an **assembly line in a factory**:
+
+- **Input layer** = Raw materials arriving at the factory — images, text, numbers. Each neuron receives one piece of the input.
+- **Hidden layers** = Workers on the assembly line — each worker (neuron) takes the partially processed product, does one specific task (applies weights and activation), and passes it to the next worker. No single worker builds the whole car; each adds their piece.
+- **Output layer** = The quality inspector at the end — takes the finished product and makes the final decision: "This is a cat" or "This is a dog."
+- **Weights** = How skilled each worker is — some workers are critical (high weight) and some are less important (low weight). Training is like improving each worker's skill.
+- **Activation function** = The decision gate at each station — "Is this good enough to pass on?" If yes, it moves forward; if no, it gets sent back or discarded.
+- **Backpropagation** = Feedback from the quality inspector flowing backward — if a defect is found, the inspector tells the last worker who made a mistake, who tells the previous worker, and so on. Everyone adjusts their technique.
+
+This helps because neural networks are fundamentally **collaborative** — no single neuron understands the whole problem, but together they learn to recognize patterns through repeated practice and feedback, just like workers on an assembly line.
+
 ## TypeScript Parallel
 
 ```typescript

@@ -492,6 +492,17 @@ async function withRetry<T>(
 }
 ```
 
+## Visual Analogy
+
+Think of computer networks like a **phone call system**:
+
+- **TCP** = A phone call with a handshake — you dial (SYN), the other person picks up (SYN-ACK), you confirm (ACK), then you talk reliably. Every message is guaranteed to arrive, in order.
+- **UDP** = Sending a postcard — you write it and drop it in the mail. It might arrive, it might not, and it might arrive out of order. But it's fast and cheap.
+- **DNS** = The phone book — you look up a name (google.com) and get a number (IP address) to call.
+- **Load balancer** = A receptionist who routes incoming calls to the next available agent.
+
+This helps because networking is all about trade-offs between **reliability** (TCP) and **speed** (UDP), and understanding which tool fits which job is the core decision AI engineers make when designing distributed systems.
+
 ## Summary
 
 Computer networks form the backbone of every distributed AI system. The key mental models are: protocols have trade-offs (TCP vs UDP, HTTP/1.1 vs HTTP/2 vs HTTP/3), caching is everywhere (DNS, CDN, load balancer), and latency is additive across every network hop. For AI engineers, the practical implications are direct: choose gRPC for high-throughput inference serving, use HTTP/2 multiplexing for dashboard UIs, deploy CDNs for model assets, and design load balancing with consistent hashing to maintain cache locality.

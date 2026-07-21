@@ -477,6 +477,19 @@ flowchart TD
 
 ---
 
+## Visual Analogy
+
+Think of algorithm complexity like **grocery shopping time**:
+
+- **O(1) — Constant** = Grabbing milk from your fridge. Same time no matter how big your house is.
+- **O(log n) — Logarithmic** = Finding a word in a dictionary. You open to the middle, eliminate half, repeat. Very fast even for huge dictionaries.
+- **O(n) — Linear** = Checking every aisle in the grocery store for peanut butter. Twice the aisles = twice the time.
+- **O(n log n) — Linearithmic** = Sorting your grocery list by aisle before shopping. The sorting takes a bit more than a single pass, but then shopping is efficient.
+- **O(n²) — Quadratic** = Comparing every item in your cart with every other item to find duplicates. Ten items = 100 comparisons, a hundred items = 10,000 comparisons.
+- **O(2ⁿ) — Exponential** = Trying every possible combination of items to pack in your bag. Adding one item doubles the time.
+
+This helps because you can instantly estimate whether an algorithm will be fast enough for your data size. An O(n²) approach that works for 100 items will crawl for 1 million items — knowing this before you code saves hours of debugging.
+
 ## TypeScript Parallel
 
 TypeScript implements similar complexity analysis. The same algorithms can be written with explicit type annotations:

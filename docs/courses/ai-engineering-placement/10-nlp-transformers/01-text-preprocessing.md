@@ -475,6 +475,18 @@ class TfidfVectorizer {
 
 ---
 
+## Visual Analogy
+
+Think of text preprocessing like using a **translation dictionary**:
+
+- **Tokenization** = Breaking a sentence into individual words — "I love cats" becomes ["I", "love", "cats"]. You're deciding where one word ends and the next begins.
+- **Vocabulary** = The dictionary itself — a complete list of all words the system knows. If you encounter a word not in the dictionary (out-of-vocabulary), you need a strategy (subword tokenization breaks "unhappiness" into "un" + "happiness").
+- **Stemming** = Stripping word endings — "running", "runs", "ran" all become "run". It's crude but fast, like a dictionary that only lists root forms.
+- **Lemmatization** = Using an intelligent dictionary — "better" becomes "good" (not "better"). It understands that "better" is the comparative form of "good."
+- **TF-IDF** = Highlighting important words — in a document about cats, the word "cat" appears frequently but isn't distinctive (it's in every cat document). The word "siamese" appears rarely but is very informative. TF-IDF scores measure this distinction.
+
+This helps because raw text is messy and unstructured — preprocessing is like organizing your notes before studying. You remove the noise (stop words), organize the key terms (vocabulary), and highlight what matters (TF-IDF) so the model can focus on learning.
+
 ## Summary
 
 Text preprocessing transforms raw text into structured inputs for NLP models. Word tokenization splits text into discrete tokens using whitespace and punctuation rules. Subword tokenization (BPE, WordPiece, SentencePiece) handles out-of-vocabulary words by decomposing them into frequent subword units. Stemming reduces words to root forms using heuristic rules, while lemmatization uses vocabulary analysis for more accurate normalization. Stop word removal filters frequent but uninformative words, and text normalization handles case, Unicode, and special characters. Vocabulary building constructs a fixed-size mapping from tokens to integer indices. TF-IDF weighting transforms token counts into relevance scores based on corpus frequency.

@@ -392,6 +392,19 @@ class MetricsCalculator {
 
 ---
 
+## Visual Analogy
+
+Think of machine learning like **learning to cook**:
+
+- **Training data** = A collection of recipes with ratings — you look at 1,000 recipes and their reviews to learn what makes a dish good.
+- **Model** = Your cooking instinct — after studying many recipes, you develop a "feel" for what works. You can taste a sauce and know it needs more salt, even without a recipe telling you.
+- **Features** = Ingredients — flour, sugar, eggs, butter. The model learns which ingredients matter and in what proportions. Too much salt ruins the cake; the right amount of sugar makes it perfect.
+- **Underfitting** = Only knowing one recipe — you try to make every dish the same way. Too simple, results are mediocre.
+- **Overfitting** = Memorizing every recipe word-for-word — you can recreate the exact dish but can't adapt when you get slightly different ingredients. Too rigid, fails on new situations.
+- **Test set** = Cooking for a friend who hasn't tried your food before — the real test is whether your cooking tastes good to someone new, not whether you can repeat what you already know.
+
+This helps because ML is fundamentally about **generalization** — learning patterns from examples so you can handle new, unseen situations, just like a good cook adapts recipes to whatever ingredients are available.
+
 ## TypeScript Parallel
 
 ```typescript

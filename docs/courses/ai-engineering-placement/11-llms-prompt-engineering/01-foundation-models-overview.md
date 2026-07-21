@@ -729,6 +729,19 @@ flowchart TD
 
 ---
 
+## Visual Analogy
+
+Think of a foundation model like a **super-smart intern**:
+
+- **The LLM** = A brilliant intern who has read every book, every website, and every论文 in the world. They know almost everything but need clear instructions to do useful work.
+- **Prompt engineering** = Giving the intern clear task instructions — "Summarize this report in 3 bullet points" gets better results than "Tell me about this."
+- **Context window** = The intern's desk size — they can only look at a certain amount of material at once. If you pile too many papers on the desk, some fall off.
+- **Hallucination** = The intern making things up when they don't know the answer — instead of saying "I don't know," they confidently give a wrong answer because they want to be helpful.
+- **Fine-tuning** = Training the intern on your company's specific procedures — after training, they know how YOUR organization works, not just general knowledge.
+- **Knowledge cutoff** = The intern's last day of reading — they don't know anything that happened after that date. "What happened in yesterday's news?" → "I don't have that information."
+
+This helps because foundation models are incredibly capable but need **clear boundaries** — just like a smart intern, they thrive with good instructions and fail when given vague or impossible tasks.
+
 ## TypeScript Parallel
 
 TypeScript implementations often wrap foundation model APIs with type safety and structured interfaces:

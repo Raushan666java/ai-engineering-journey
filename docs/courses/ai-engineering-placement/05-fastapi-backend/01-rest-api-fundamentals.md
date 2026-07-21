@@ -448,6 +448,18 @@ FastAPI auto-generates OpenAPI specs from Python type hints. Every endpoint appe
 
 ---
 
+## Visual Analogy
+
+Think of a REST API like a **restaurant menu**:
+
+- **API** = The menu itself — it lists everything you can order and how to order it. The kitchen (server) is hidden behind the menu.
+- **Endpoints** = Menu items — `/users` is the "User Salad", `/orders/42` is "Order #42 Special". Each dish is a resource you can interact with.
+- **HTTP methods** = How you order — GET means "show me the menu" (read), POST means "I want to order this new dish" (create), PUT means "replace my entire order", PATCH means "just change the side dish", DELETE means "cancel that order".
+- **Status codes** = The waiter's response — 200 "Here's your food", 201 "New dish coming right up", 404 "We don't have that", 500 "The kitchen caught fire".
+- **Stateless** = No reservations needed — each order is self-contained. You don't need to be a regular; the waiter treats every order the same.
+
+This helps because REST is about **predictability** — just like a restaurant menu lets you know exactly what to expect, a well-designed API lets any client know exactly how to interact with your service without surprises.
+
 ## TypeScript Parallel
 
 ```typescript

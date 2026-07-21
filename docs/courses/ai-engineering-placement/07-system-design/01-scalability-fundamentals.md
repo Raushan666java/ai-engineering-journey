@@ -586,4 +586,57 @@ Scalability fundamentals provide the framework for handling growing AI system de
 - [ ] Can calculate connection pool size using Little's Law
 - [ ] Can explain cache invalidation strategies and when to use each
 
-> **Next**: [Microservices Architecture](02-microservices-architecture.md)
+> **Next**: [Microservices Architecture](02-microservices-architec
+### True/False
+
+**T/F 1**: Vertical scaling means adding more servers.
+**Answer**: False — Vertical scaling means adding more power (CPU/RAM) to a single server. Adding servers is horizontal scaling.
+
+**T/F 2**: Stateless applications are easier to scale horizontally.
+**Answer**: True — Any instance can handle any request since no local state.
+
+**T/F 3**: A load balancer distributes traffic to only one server.
+**Answer**: False — Load balancers distribute traffic across multiple servers.
+
+**T/F 4**: Redis is a type of load balancer.
+**Answer**: False — Redis is an in-memory cache/database.
+
+**T/F 5**: Microservices are always better than monoliths.
+**Answer**: False — It depends on team size, complexity, and requirements. Monoliths are simpler to start with.
+
+### Fill in the Blank
+
+**FIB 1**: ________ scaling means adding more power to a single machine.
+**Answer**: Vertical (scale up)
+
+**FIB 2**: A ________ distributes incoming network traffic across multiple servers.
+**Answer**: Load Balancer
+
+**FIB 3**: ________ is an in-memory data store used for caching.
+**Answer**: Redis
+
+**FIB 4**: The ________ pattern ensures any instance can handle any request.
+**Answer**: Stateless
+
+**FIB 5**: ________ scaling means adding more machines to distribute the load.
+**Answer**: Horizontal (scale out)
+
+### Scenario Questions
+
+**Scenario 1**: Your e-commerce site handles 1,000 requests/second normally but spikes to 10,000 during flash sales. How do you scale?
+
+**Answer**: (1) Auto-scaling group with pre-warmed instances, (2) CDN for static assets, (3) Redis caching for product catalog, (4) Database read replicas, (5) Message queue for order processing, (6) Rate limiting to prevent overload.
+
+**Scenario 2**: Design a URL shortener that handles 100M URLs/day.
+
+**Answer**: (1) Generate unique IDs (base62 encoding), (2) Store in distributed DB (Cassandra), (3) Cache hot URLs in Redis, (4) Load balancer in front of stateless API servers, (5) Analytics pipeline for click tracking.
+
+### Output Questions
+
+**Output 1**: What does Little's Law state?
+**Answer**: L = λW — the average number of customers in a system equals the arrival rate times the average time in the system.
+
+**Output 2**: What is the formula for connection pool sizing?
+**Answer**: Pool size = (requests per second × avg query time) + headroom. E.g., 100 req/s × 50ms = 5 connections + buffer.
+
+ture.md)

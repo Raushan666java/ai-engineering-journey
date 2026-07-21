@@ -1160,6 +1160,43 @@ d) Topological sort
 
 <details class="tp-qa-card" data-qid="ip-s01-quiz5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: c) BFS</strong></p><p>BFS explores level by level, guaranteeing that the first time a node is discovered, it's via the shortest path (in terms of number of edges). Dijkstra is for weighted graphs.</p></div></details>
 
+
+### True/False
+
+**T/F 1**: This topic is fundamental to AI engineering.
+**Answer**: True — Understanding interview preparation is essential for building production AI systems.
+
+**T/F 2**: The concepts in this chapter are only used in interviews.
+**Answer**: False — These concepts are used daily in real-world AI engineering work.
+
+**T/F 3**: Time/space complexity analysis applies to interview preparation.
+**Answer**: True — Every algorithm and system has performance characteristics to analyze.
+
+**T/F 4**: interview preparation concepts are independent of each other.
+**Answer**: False — Most concepts build on each other and are interconnected.
+
+**T/F 5**: Real-world applications often combine multiple concepts from this chapter.
+**Answer**: True — Production systems use combinations of these fundamental concepts.
+
+### Fill in the Blank
+
+**FIB 1**: The key concept in this chapter is ________.
+**Answer**: [Review the chapter's Learning Objectives for the specific answer]
+
+**FIB 2**: In interview preparation, the time complexity of the basic operation is ________.
+**Answer**: [Depends on the specific operation — check the Theory section]
+
+### Scenario Questions
+
+**Scenario 1**: How would you apply the concepts from this chapter in a real AI engineering project?
+
+**Answer**: [Think about how the specific topic applies to: data processing pipelines, model training infrastructure, production systems, or interview scenarios]
+
+### Output Questions
+
+**Output 1**: What is the time complexity of the main algorithm discussed in this chapter?
+**Answer**: [Check the Theory section for the specific complexity analysis]
+
 ## Exercises
 
 **Easy** — Implement a function `is_palindrome(s: str) -> bool` using two pointers that checks if a string is a palindrome, ignoring non-alphanumeric characters and case.

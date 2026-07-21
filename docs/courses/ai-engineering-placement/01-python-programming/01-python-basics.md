@@ -830,4 +830,57 @@ d) 2
 - [ ] Practice 3-5 problems related to 01-python-programming
 - [ ] Prepare 2 real-world examples of using 01-python-programming
 - [ ] Know the time/space complexity of common 01-python-programming operations
-- [ ] Have questions ready about how the company uses 01-python-programming> **Next**: [02 — Control Flow →](02-control-flow.md)
+- [ ] Have questions ready about how the company uses 01-python-programming> **Next**: [02 — Control Flow →](02-control
+### True/False
+
+**T/F 1**: Python is a statically typed language.
+**Answer**: False — Python is dynamically typed. Variable types are determined at runtime.
+
+**T/F 2**: Python uses 0-based indexing.
+**Answer**: True — Python lists, strings, and tuples use 0-based indexing.
+
+**T/F 3**: The `len()` function returns the number of elements in a list.
+**Answer**: True — len([1,2,3]) returns 3.
+
+**T/F 4**: Python variables must be declared before use.
+**Answer**: False — Python doesn't require explicit variable declaration.
+
+**T/F 5**: `None` is a keyword in Python.
+**Answer**: True — None represents the absence of a value.
+
+### Fill in the Blank
+
+**FIB 1**: In Python, the ________ function converts a string to an integer.
+**Answer**: int()
+
+**FIB 2**: The ________ keyword is used to define a function in Python.
+**Answer**: def
+
+**FIB 3**: Python's ________ data type is immutable.
+**Answer**: tuple (and str, frozenset)
+
+**FIB 4**: The ________ operator is used for exponentiation in Python.
+**Answer**: ** (double asterisk)
+
+**FIB 5**: `print(type(5))` outputs ________.
+**Answer**: <class 'int'>
+
+### Scenario Questions
+
+**Scenario 1**: You need to process a large CSV file (10GB) but your machine only has 16GB RAM. How would you handle this in Python?
+
+**Answer**: Use a generator to read line by line: `with open('file.csv') as f: for line in f: process(line)`. This avoids loading the entire file into memory. Alternatively, use pandas `chunksize` parameter: `pd.read_csv('file.csv', chunksize=1000)`.
+
+**Scenario 2**: You have a list of dictionaries and need to sort by a specific key. How would you do this?
+
+**Answer**: Use `sorted(data, key=lambda x: x['key'])` or `data.sort(key=lambda x: x['key'])`. For descending order, add `reverse=True`. This uses Python's stable sort and is O(n log n).
+
+### Output Questions
+
+**Output 1**: What is the output of `print(2 ** 3 ** 2)`?
+**Answer**: 512 — Python evaluates right to left for exponentiation: 3²=9, then 2⁹=512.
+
+**Output 2**: What is `print('hello' * 3)`?
+**Answer**: hellohellohello — String repetition operator.
+
+-flow.md)

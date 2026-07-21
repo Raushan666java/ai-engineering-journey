@@ -602,5 +602,61 @@ Computer networks form the backbone of every distributed AI system. The key ment
 - [ ] Practice 3-5 problems related to 00-core-computer-science
 - [ ] Prepare 2 real-world examples of using 00-core-computer-science
 - [ ] Know the time/space complexity of common 00-core-computer-science operations
-- [ ] Have questions ready about how the company uses 00-core-computer-scienceegions.
+- [ ] Have questions ready about how the company uses 00-core-computer-science
+### True/False
+
+**T/F 1**: TCP is a connectionless protocol.
+**Answer**: False — TCP is connection-oriented; UDP is connectionless.
+
+**T/F 2**: DNS translates domain names to IP addresses.
+**Answer**: True — DNS resolves human-readable domain names to machine-readable IP addresses.
+
+**T/F 3**: HTTP/3 uses TCP as its transport protocol.
+**Answer**: False — HTTP/3 uses QUIC, which is built on UDP.
+
+**T/F 4**: A load balancer can improve application availability.
+**Answer**: True — Load balancers distribute traffic so if one server fails, others handle the load.
+
+**T/F 5**: HTTPS uses TLS encryption for secure communication.
+**Answer**: True — HTTPS = HTTP + TLS (Transport Layer Security).
+
+### Fill in the Blank
+
+**FIB 1**: The ________ protocol is used to resolve domain names to IP addresses.
+**Answer**: DNS (Domain Name System)
+
+**FIB 2**: In TCP, the ________ flag initiates a connection.
+**Answer**: SYN (Synchronize)
+
+**FIB 3**: A ________ distributes incoming network traffic across multiple servers.
+**Answer**: Load Balancer
+
+**FIB 4**: The OSI model has ________ layers.
+**Answer**: 7 (Physical, Data Link, Network, Transport, Session, Presentation, Application)
+
+**FIB 5**: ARP maps ________ addresses to ________ addresses.
+**Answer**: IP addresses to MAC addresses
+
+### Scenario Questions
+
+**Scenario 1**: Your web application is experiencing 504 Gateway Timeout errors during peak hours. Users report slow loading. What networking issues could cause this and how would you resolve them?
+
+**Answer**: Possible causes: (1) Load balancer overwhelmed — add more backend servers or upgrade LB, (2) Backend servers hitting connection limits — increase ulimit, (3) Network congestion — check bandwidth, add CDN, (4) DNS resolution slow — use DNS caching. Solutions: auto-scaling, CDN for static assets, connection pooling, DNS prefetching.
+
+**Scenario 2**: You're designing a microservices architecture with 20 services. Services need to communicate reliably. How would you handle service-to-service communication?
+
+**Answer**: (1) Use service mesh (Istio/Linkerd) for mTLS and observability, (2) Implement circuit breakers for fault tolerance, (3) Use async messaging (Kafka) for non-critical communication, (4) Implement retry with exponential backoff, (5) Use gRPC for internal communication, (6) Distributed tracing (Jaeger) for debugging.
+
+### Output Questions
+
+**Output 1**: What does `curl -I https://example.com` return?
+**Answer**: HTTP headers including status code (200 OK), server type, content-type, and other metadata.
+
+**Output 2**: What is the output of `nslookup google.com`?
+**Answer**: The IP address(es) associated with google.com (e.g., 142.250.80.46).
+
+**Output 3**: What does `netstat -tuln` show?
+**Answer**: All active TCP/UDP listening ports with numeric addresses (no DNS resolution).
+
+egions.
 

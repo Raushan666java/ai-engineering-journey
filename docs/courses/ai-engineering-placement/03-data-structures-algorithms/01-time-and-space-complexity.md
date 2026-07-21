@@ -1005,4 +1005,57 @@ This chapter establishes the mathematical foundation for analyzing algorithm eff
 - [ ] Can state best, average, and worst-case for binary search, merge sort, and quicksort from memory
 - [ ] Can explain amortized analysis using the dynamic array append example
 
-> **Next**: [02 � Arrays ?](02-arrays.md)
+> **Next**: [02 � Arrays ?](02-ar
+### True/False
+
+**T/F 1**: Big-O notation describes the best-case performance of an algorithm.
+**Answer**: False — Big-O describes the worst-case (upper bound). Big-Omega describes the best-case.
+
+**T/F 2**: O(n log n) is always faster than O(n²) for all input sizes.
+**Answer**: False — For small inputs, O(n²) can be faster due to lower constant factors.
+
+**T/F 3**: Space complexity includes both auxiliary space and input space.
+**Answer**: True — Total space = auxiliary space + input space.
+
+**T/F 4**: Binary search has O(log n) time complexity.
+**Answer**: True — Binary search halves the search space each step.
+
+**T/F 5**: Amortized analysis averages performance over a sequence of operations.
+**Answer**: True — Amortized analysis gives the average cost per operation over a worst-case sequence.
+
+### Fill in the Blank
+
+**FIB 1**: The time complexity of merge sort is ________.
+**Answer**: O(n log n)
+
+**FIB 2**: An algorithm with time complexity ________ scales linearly with input size.
+**Answer**: O(n)
+
+**FIB 3**: The Master Theorem solves recurrence relations of the form T(n) = aT(n/b) + ________.
+**Answer**: f(n) (or O(n^d))
+
+**FIB 4**: An in-place algorithm uses ________ auxiliary space.
+**Answer**: O(1)
+
+**FIB 5**: The best case for linear search is ________.
+**Answer**: O(1) — element found at first position
+
+### Scenario Questions
+
+**Scenario 1**: You have a function that runs in O(n²) time. Your dataset grows from 1,000 to 10,000 elements. How much longer will your function take?
+
+**Answer**: With n growing 10x, O(n²) grows 100x. If the original took 1 second, it will now take ~100 seconds. This is why O(n²) algorithms don't scale — always analyze complexity for large inputs.
+
+**Scenario 2**: You need to find the two largest elements in an unsorted array. What's the optimal approach and its complexity?
+
+**Answer**: Single pass with two variables tracking max1 and max2. O(n) time, O(1) space. No need for sorting (O(n log n)) or a heap (O(n log k)). Just iterate once, updating max1 and max2 as you go.
+
+### Output Questions
+
+**Output 1**: What is the time complexity of accessing the 100th element in an array?
+**Answer**: O(1) — Array access by index is constant time via direct memory addressing.
+
+**Output 2**: What is the output of this code? `def f(n): return n + f(n-1) if n > 0 else 0; print(f(5))`
+**Answer**: 15 — This is O(n) recursion: 5+4+3+2+1+0 = 15.
+
+rays.md)

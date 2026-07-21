@@ -4,397 +4,779 @@
 
 | Objective | Description |
 |-----------|-------------|
-| LO1 | Understand foundational linux commands concepts and their role in software engineering |
-| LO2 | Implement linux commands operations with correct syntax and best practices |
-| LO3 | Apply linux commands patterns to solve common interview problems |
-| LO4 | Analyze time and space complexity of linux commands solutions |
-| LO5 | Compare linux commands with alternative approaches for different scenarios |
-| LO6 | Master advanced linux commands techniques for complex problem solving |
+| LO1 | Navigate the filesystem with ls, cd, pwd, and directory shortcuts |
+| LO2 | Create, copy, move, and remove files and directories safely |
+| LO3 | Control file permissions with chmod, chown, and numeric mode |
+| LO4 | Search file contents with grep and locate files with find |
+| LO5 | Build powerful pipelines using pipes, redirects, and xargs |
+| LO6 | Combine commands for real-world system administration tasks |
 
+## Introduction
+
+Linux command line skills are essential for AI engineers who work with remote servers, GPU clusters, and deployment pipelines. Mastering file operations, permissions, and text processing saves hours of manual work.
+
+## Prerequisites
+
+- Terminal basics
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
 |---------|-------|-------------|
-| 04.1 | Fundamentals | Core concepts and definitions |
-| 04.2 | Basic Operations | Common implementations and patterns |
-| 04.3 | Intermediate Techniques | Problem-solving strategies |
-| 04.4 | Advanced Patterns | Complex algorithms and optimizations |
-| 04.5 | Real-World Applications | Production use cases |
-| 04.6 | Interview Preparation | Common questions and solutions |
+| 04.1 | Navigation | ls, cd, pwd, path shortcuts |
+| 04.2 | File Operations | cp, mv, rm, mkdir, touch |
+| 04.3 | Permissions | chmod, chown, numeric vs symbolic mode |
+| 04.4 | Searching | grep, find, locate, which |
+| 04.5 | Pipes and Redirection | |, >, >>, <, xargs, tee |
+| 04.6 | Real-World Tasks | Combining commands for daily work |
 
 ## Chapter Roadmap
 
 ```mermaid
 flowchart LR
-    A[Linux Commands] --> B[Fundamentals]
-    B --> C[Operations]
-    C --> D[Intermediate]
-    D --> E[Advanced]
-    E --> F[Applications]
-    F --> G[Interview Prep]
+    A[Linux Commands] --> B[Navigation]
+    B --> C[File Operations]
+    C --> D[Permissions]
+    D --> E[Searching]
+    E --> F[Pipes & Redirection]
+    F --> G[Real-World Tasks]
 ```
 
-## 04.1 Section 1
+## Theory
 
-Section 1 of Linux Commands covers essential concepts for AI engineering placement preparation.
+### 04.1 Navigation
 
-### Fundamentals
-
-The foundation of linux commands rests on several key principles that every software engineer must understand. These include the basic definitions, the underlying theory, and how these concepts map to practical implementation.
-
-### Key Concepts
-
-- Concept 1: Definition and purpose
-- Concept 2: Core principles and theory
-- Concept 3: Relationship to other topics
-- Concept 4: Common applications
-
-## 04.2 Section 2
-
-Section 2 of Linux Commands covers essential concepts for AI engineering placement preparation.
-
-### Basic Operations
-
-The following code demonstrates fundamental operations:
+**Listing files and directories:**
 
 ```bash
-# Linux Commands - basic operations
-def example_function(data):
-    """Core functionality"""
-    result = []
-    for item in data:
-        # Process each element
-        result.append(process(item))
-    return result
+# Basic listing
+ls
 
-def process(item):
-    return item * 2
+# Long format (permissions, owner, size, date)
+ls -l
 
-# Test the implementation
-test_data = [1, 2, 3, 4, 5]
-print(example_function(test_data))
+# List all files including hidden
+ls -la
+
+# Human-readable file sizes
+ls -lh
+
+# Sort by modification time (newest first)
+ls -lt
+
+# Sort by size (largest first)
+ls -lS
+
+# List only directories
+ls -d */
+
+# Recursive listing (includes subdirectories)
+ls -R
+
+# One file per line
+ls -1
 ```
 
-## 04.3 Section 3
-
-Section 3 of Linux Commands covers essential concepts for AI engineering placement preparation.
-
-### Intermediate Techniques
-
-As problems become more complex, we need sophisticated approaches:
-
-1. **Pattern Recognition**: Identifying when to apply this technique
-2. **Optimization**: Improving time and space complexity
-3. **Edge Cases**: Handling boundary conditions
-4. **Combined Approaches**: Integrating with other data structures
-
-### Complexity Analysis Table
-
-| Operation | Time Complexity | Space Complexity | Notes |
-|-----------|----------------|-----------------|-------|
-| Basic Linux Commands | O(n) | O(1) | Standard case |
-| Optimized Linux Commands | O(log n) | O(n) | With preprocessing |
-| Advanced Linux Commands | O(n log n) | O(n) | Trade-off scenario |
-
-## 04.4 Section 4
-
-Section 4 of Linux Commands covers essential concepts for AI engineering placement preparation.
-
-### Advanced Patterns
-
-```mermaid
-flowchart TD
-    A[Input] --> B{Pattern Match}
-    B -->|Standard| C[Basic Solution]
-    B -->|Optimized| D[Advanced Solution]
-    C --> E[Result]
-    D --> E
-```
-
-### Key Techniques
-
-- **Technique 1**: Description of the first advanced technique and when to apply it
-- **Technique 2**: Description of the second advanced technique and when to apply it
-- **Technique 3**: Description of the third advanced technique and when to apply it
-- **Technique 4**: Description of the fourth advanced technique and when to apply it
-
-## 04.5 Section 5
-
-Section 5 of Linux Commands covers essential concepts for AI engineering placement preparation.
-
-### Real-World Applications
-
-Linux Commands is widely used in production systems:
-
-- Application domain 1 with specific examples
-- Application domain 2 with specific examples
-- Application domain 3 with specific examples
-- Application domain 4 with specific examples
-
-### Best Practices
-
-| Practice | Description | Impact |
-|----------|-------------|--------|
-| Best Practice 1 | Detailed explanation | Performance improvement |
-| Best Practice 2 | Detailed explanation | Code quality |
-| Best Practice 3 | Detailed explanation | Maintainability |
-
-## 04.6 Section 6
-
-Section 6 of Linux Commands covers essential concepts for AI engineering placement preparation.
-
-### Interview Preparation
-
-Common interview questions and strategies:
-
-1. **Question Type 1**: Strategy for solving
-2. **Question Type 2**: Strategy for solving
-3. **Question Type 3**: Strategy for solving
-4. **Question Type 4**: Strategy for solving
-
-### Sample Walkthrough
-
-Let's walk through a typical interview problem:
+**Changing directories:**
 
 ```bash
-# Interview problem solution
-def solve_interview_problem(input_data):
-    # Step 1: Understand the problem
-    # Step 2: Design the approach
-    # Step 3: Implement the solution
-    # Step 4: Test and optimize
-    return optimized_result
+# Change to a directory
+cd /var/log
+
+# Change to home directory
+cd ~
+cd
+
+# Change to previous directory
+cd -
+
+# Change to parent directory
+cd ..
+
+# Change to parent's parent
+cd ../..
+
+# Go to home directory subfolder
+cd ~/projects/my-app
 ```
 
----
+**Directory shortcuts:**
 
-## TypeScript Parallel
+| Shortcut | Meaning |
+|----------|---------|
+| `~` | Home directory |
+| `.` | Current directory |
+| `..` | Parent directory |
+| `-` | Previous directory |
+| `$HOME` | Home directory (env variable) |
 
-```typescript
-// TypeScript equivalent implementation
-interface LinuxCommandsConfig {
-    option1: boolean;
-    option2: number;
-}
+**Printing the working directory:**
 
-function processLinuxCommands(data: number[]): number[] {
-    return data.map(x => x * 2);
-}
+```bash
+# Show current directory path
+pwd
 
-// Usage example
-const result = processLinuxCommands([1, 2, 3]);
-console.log(result); // [2, 4, 6]
+# Show physical path (resolve symlinks)
+pwd -P
 ```
 
----
+### 04.2 File Operations
+
+**Creating files and directories:**
+
+```bash
+# Create empty file or update timestamp
+touch newfile.txt
+
+# Create multiple files
+touch file1.txt file2.txt file3.txt
+
+# Create directories
+mkdir mydir
+
+# Create nested directories
+mkdir -p parent/child/grandchild
+
+# Create with specific permissions
+mkdir -m 755 public_dir
+```
+
+**Copying files and directories:**
+
+```bash
+# Copy a file
+cp source.txt destination.txt
+
+# Copy to a directory
+cp source.txt /backup/
+
+# Copy directory recursively
+cp -r source-dir/ backup-dir/
+
+# Preserve permissions, timestamps, ownership
+cp -p important.conf /backup/
+
+# Verbose output (show what's being copied)
+cp -v *.log /var/log/archive/
+
+# Copy only if newer (don't overwrite newer destination)
+cp -u config.yaml /etc/app/
+
+# Interactive mode (prompt before overwrite)
+cp -i source.txt dest.txt
+
+# Copy a file, creating backup if destination exists
+cp --backup=numbered source.txt dest.txt
+```
+
+**Moving and renaming files:**
+
+```bash
+# Move a file
+mv oldname.txt newname.txt
+
+# Move to a directory
+mv file.txt /tmp/
+
+# Rename a file
+mv report.pdf final-report.pdf
+
+# Move multiple files to a directory
+mv *.jpg /images/
+
+# Verbose move
+mv -v old-dir/ new-location/
+
+# Don't overwrite existing files
+mv -n file.txt /backup/
+
+# Interactive move
+mv -i file.txt /backup/
+```
+
+**Removing files and directories:**
+
+```bash
+# Remove a file
+rm unwanted.txt
+
+# Remove interactively (prompt for each file)
+rm -i *.log
+
+# Remove multiple files
+rm file1.txt file2.txt file3.txt
+
+# Remove directory and contents
+rm -r old-directory/
+
+# Force remove without prompts
+rm -f temporary-file.tmp
+
+# Remove empty directory
+rmdir empty-dir/
+
+# Remove directory tree (alternative to rm -r)
+rm -rf build/
+
+# Remove only .pyc files recursively
+find . -name "*.pyc" -exec rm {} +
+```
+
+**⚠️ Dangerous commands to avoid:**
+
+```bash
+# NEVER run these without extreme caution:
+rm -rf /                    # Deletes entire filesystem
+rm -rf /*                   # Same thing
+rm -rf ~                    # Deletes your home directory
+find / -name "*.tmp" -exec rm {} +  # Dangerous recursive delete
+```
+
+### 04.3 Permissions
+
+Linux file permissions control who can read, write, and execute files.
+
+**Permission structure:**
+
+```
+-rwxr-xr-- 1 user group 4096 Jan 15 10:30 file.txt
+│├─┤├─┤├─┤
+│ │   │ │  └── others: r-- (read)
+│ │   │ └───── group: r-x (read, execute)
+│ │   └─────── owner: rwx (read, write, execute)
+│ └─────────── type: - = file, d = directory
+└───────────── special bits
+```
+
+| Permission | File | Directory |
+|------------|------|-----------|
+| `r` (4) | Read file contents | List directory contents |
+| `w` (2) | Modify file | Create/delete files in directory |
+| `x` (1) | Execute as program | Enter (cd into) directory |
+
+**Symbolic mode with chmod:**
+
+```bash
+# Add execute permission for owner
+chmod u+x script.sh
+
+# Remove write permission for group
+chmod g-w file.txt
+
+# Add read permission for others
+chmod o+r public-file.txt
+
+# Set exact permissions: owner=rwx, group=r-x, others=r--
+chmod u=rwx,g=rx,o=r file.txt
+
+# Add execute for all users
+chmod +x deploy.sh
+
+# Remove all permissions for others
+chmod o= private-file.txt
+```
+
+**Numeric (octal) mode with chmod:**
+
+```bash
+# rwxr-xr-- = 754
+chmod 754 script.sh
+
+# rwxr-xr-x = 755 (common for executables)
+chmod 755 deploy.sh
+
+# rw-r--r-- = 644 (common for regular files)
+chmod 644 config.yaml
+
+# rw------- = 600 (private files)
+chmod 600 ~/.ssh/id_rsa
+
+# rwx------ = 700 (private executables)
+chmod 700 ~/bin/myscript
+```
+
+**Changing ownership:**
+
+```bash
+# Change file owner
+sudo chown alice file.txt
+
+# Change owner and group
+sudo chown alice:developers file.txt
+
+# Change ownership recursively
+sudo chown -R alice:team /var/www/
+
+# Change only the group
+chgrp developers project/
+```
+
+**Special permissions:**
+
+```bash
+# Setuid: execute as file owner (use sparingly)
+chmod u+s /usr/bin/program
+chmod 4755 /usr/bin/program
+
+# Setgid: execute with group privileges
+chmod g+s /shared/dir/
+chmod 2755 /shared/dir/
+
+# Sticky bit: only owner can delete files in directory
+chmod +t /tmp/shared/
+chmod 1777 /tmp/shared/
+```
+
+### 04.4 Searching
+
+**grep — search file contents:**
+
+```bash
+# Basic text search
+grep "error" logfile.txt
+
+# Case-insensitive search
+grep -i "error" logfile.txt
+
+# Search recursively in directory
+grep -r "TODO" src/
+
+# Show line numbers
+grep -n "function" app.ts
+
+# Count matching lines
+grep -c "404" access.log
+
+# Show 3 lines before and after match
+grep -B 3 -A 3 "Exception" app.log
+
+# Invert match (lines NOT containing pattern)
+grep -v "debug" app.log
+
+# Search for literal string (no regex)
+grep -F "user.name" config.yaml
+
+# Extended regex (grep -E or egrep)
+grep -E "error|warning|critical" syslog.txt
+
+# Perl regex for complex patterns
+grep -P "\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}" access.log
+
+# Output only matching part
+grep -o "error:.*" app.log
+```
+
+**find — search for files by name, size, time:**
+
+```bash
+# Find files by name
+find /var -name "*.log"
+
+# Case-insensitive name search
+find . -iname "readme.md"
+
+# Find directories named "node_modules"
+find . -type d -name "node_modules"
+
+# Find files larger than 100MB
+find / -type f -size +100M
+
+# Find files modified in the last 7 days
+find . -mtime -7
+
+# Find files accessed in the last 30 minutes
+find . -amin -30
+
+# Find empty files
+find . -empty -type f
+
+# Find files with specific permissions
+find . -perm 755
+
+# Find and execute command on results
+find . -name "*.tmp" -exec rm {} +
+
+# Find and delete (using + for batch)
+find . -name "*.log" -delete
+
+# Find files and limit depth
+find . -maxdepth 2 -name "*.ts"
+```
+
+**Other search tools:**
+
+```bash
+# which: find command location
+which python3
+# /usr/bin/python3
+
+# whereis: find binary, source, manual
+whereis git
+# git: /usr/bin/git /usr/share/man/man1/git.1.gz
+
+# locate: fast search using pre-built database
+locate nginx.conf
+# May need to update: sudo updatedb
+```
+
+### 04.5 Pipes and Redirection
+
+Pipes and redirects are the backbone of Linux command composition.
+
+**Output redirection:**
+
+```bash
+# Overwrite file with output
+echo "hello" > output.txt
+
+# Append output to file
+echo "world" >> output.txt
+
+# Redirect stderr to file
+command 2> errors.log
+
+# Append stderr to file
+command 2>> errors.log
+
+# Redirect both stdout and stderr
+command > output.txt 2>&1
+command &> output.txt
+
+# Discard all output
+command > /dev/null 2>&1
+```
+
+**Input redirection:**
+
+```bash
+# Feed file contents as input
+wc -l < file.txt
+
+# Here document (multi-line input)
+cat << EOF
+Line 1
+Line 2
+Line 3
+EOF
+
+# Here string
+grep "pattern" <<< "string to search"
+```
+
+**Pipes:**
+
+```bash
+# Pipe output of one command as input to another
+ls -la | grep ".txt"
+
+# Chain multiple commands
+cat access.log | grep "404" | awk '{print $1}' | sort | uniq -c
+
+# Count files by extension
+find . -type f | sed 's/.*\.//' | sort | uniq -c | sort -rn
+
+# Pipe with xargs (convert stdin to command arguments)
+find . -name "*.log" | xargs rm
+
+# Safer xargs with null delimiter
+find . -name "*.log" -print0 | xargs -0 rm
+
+# xargs with parallel execution
+cat urls.txt | xargs -P 4 -I {} curl -s {}
+```
+
+**tee — split output to file and screen:**
+
+```bash
+# Write to file AND display
+ls -la | tee listing.txt
+
+# Append to file AND display
+ls -la | tee -a listing.txt
+
+# Pipe chain: save intermediate result
+find . -name "*.ts" | tee files.txt | wc -l
+```
+
+**xargs — build commands from input:**
+
+```bash
+# Delete all .jpg files
+find . -name "*.jpg" | xargs rm
+
+# Kill processes by name
+ps aux | grep "node" | awk '{print $2}' | xargs kill
+
+# Chmod all .sh files
+find . -name "*.sh" | xargs chmod +x
+
+# Parallel download
+cat urls.txt | xargs -P 8 -I {} wget {}
+```
+
+### 04.6 Real-World Tasks
+
+**Log analysis pipeline:**
+
+```bash
+# Find top 10 most frequent IP addresses in access log
+cat access.log | awk '{print $1}' | sort | uniq -c | sort -rn | head -10
+
+# Find all 500 errors in the last hour
+grep "500" access.log | awk '$4 >="[21/Jan/2024:10:"' 
+
+# Count requests per endpoint
+awk '{print $7}' access.log | sort | uniq -c | sort -rn | head -20
+
+# Find slow requests (> 2 seconds)
+awk '$NF > 2.0 {print $0}' access.log
+```
+
+**Disk usage and cleanup:**
+
+```bash
+# Find largest files in current directory
+du -ah . | sort -rh | head -20
+
+# Find directories using more than 500MB
+du -sh */ | sort -rh | head -10
+
+# Find and remove files older than 30 days
+find /var/log -name "*.log" -mtime +30 -delete
+
+# Find files larger than 50MB
+find . -type f -size +50M -exec ls -lh {} +
+
+# Clean up node_modules recursively
+find . -name "node_modules" -type d -exec rm -rf {} +
+```
+
+**Monitoring and debugging:**
+
+```bash
+# Watch a log file in real-time
+tail -f /var/log/syslog
+
+# Watch with pattern filtering
+tail -f app.log | grep --line-buffered "ERROR"
+
+# Find what's using a port
+lsof -i :8080
+
+# Find large files created in last 24 hours
+find . -type f -mtime -1 -size +10M -exec ls -lh {} +
+
+# Monitor disk space every 5 seconds
+watch -n 5 df -h
+```
 
 ## Summary
 
-- Linux Commands is a fundamental topic for coding interviews
-- Master the core concepts before attempting complex problems
-- Practice with diverse problem sets to build pattern recognition
-- Always analyze time and space complexity of your solutions
-- Consider edge cases and boundary conditions carefully
-- Combine with other data structures for optimal solutions
-- Write clean, readable code following best practices
-- Test your solutions with multiple test cases
-- Learn from mistakes and iterate on your approaches
-- Build confidence through consistent practice
+- `ls -la` shows all files with permissions, size, and dates
+- `cd -` returns to the previous directory; `~` is home
+- `cp -r` copies directories; `-p` preserves permissions
+- `mv` renames and moves files; use `-i` for interactive mode
+- `rm -rf` is powerful and dangerous — always double-check before running
+- `chmod` uses numeric (755, 644) or symbolic (u+x, g-w) modes
+- `grep -r` searches recursively; `-i` for case-insensitive; `-n` for line numbers
+- `find` searches by name, size, time, and can execute commands on results
+- Pipes (`|`) chain commands; `>` overwrites; `>>` appends
+- `xargs` converts piped input into command arguments
+- `tee` splits output to both file and screen
 
 ## Practical Takeaways
 
-| Scenario | Do This | Avoid This |
-|----------|---------|------------|
-| Learning Linux Commands | Practice with varied problems | Rote memorization without understanding |
-| Implementing Linux Commands | Write clean, tested code | Premature optimization |
-| Interview prep | Understand patterns and trade-offs | Cramming without practice |
-| Production use | Profile and optimize for data size | Over-engineering solutions |
+| Scenario | Command |
+|----------|---------|
+| Find all TODO comments in code | `grep -rn "TODO" src/` |
+| Find large files eating disk | `find / -size +100M -exec ls -lh {} +` |
+| Count lines of code by extension | `find . -name "*.ts" \| xargs wc -l` |
+| Watch logs in real-time | `tail -f /var/log/app.log` |
+| Make a script executable | `chmod +x script.sh` |
+| Protect SSH keys | `chmod 600 ~/.ssh/id_rsa` |
 
 ## Interview Q&A
 
 <details class="tp-qa-card" data-qid="git04-q1">
   <summary class="tp-qa-question">
     <span class="tp-qa-status"></span>
-    Q1: Sample interview question 1 about linux commands?
+    Q1: What is the difference between `>` and `>>` in Linux?
   </summary>
   <div class="tp-qa-answer">
-    <p>This is a detailed answer to interview question 1 about linux commands. The answer covers key concepts, provides code examples, and explains the reasoning behind the solution.</p><pre><code># Example code for question 1
-answer = perform_linux_commands_operation()
-print(answer)</code></pre>
+    <p><code>&gt;</code> <strong>overwrites</strong> the destination file with the command output. <code>&gt;&gt;</code> <strong>appends</strong> the output to the end of the destination file. If the file doesn't exist, both create it. Use <code>&gt;</code> for fresh output and <code>&gt;&gt;</code> for logging/appending.</p><pre><code>echo "first" > file.txt    # file.txt contains: first
+echo "second" >> file.txt   # file.txt contains: first\nsecond</code></pre>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="git04-q2">
   <summary class="tp-qa-question">
     <span class="tp-qa-status"></span>
-    Q2: Sample interview question 2 about linux commands?
+    Q2: How do you find all files larger than 100MB and older than 30 days?
   </summary>
   <div class="tp-qa-answer">
-    <p>This is a detailed answer to interview question 2 about linux commands. The answer covers key concepts, provides code examples, and explains the reasoning behind the solution.</p><pre><code># Example code for question 2
-answer = perform_linux_commands_operation()
-print(answer)</code></pre>
+    <p>Use the <code>find</code> command with combined conditions:</p><pre><code>find / -type f -size +100M -mtime +30 -exec ls -lh {} +</code></pre>
+    <p><code>-type f</code> limits to files, <code>-size +100M</code> finds files over 100MB, <code>-mtime +30</code> finds files modified more than 30 days ago. The <code>-exec</code> flag runs <code>ls -lh</code> on each result for detailed output.</p>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="git04-q3">
   <summary class="tp-qa-question">
     <span class="tp-qa-status"></span>
-    Q3: Sample interview question 3 about linux commands?
+    Q3: Explain chmod 755 vs chmod 644. When would you use each?
   </summary>
   <div class="tp-qa-answer">
-    <p>This is a detailed answer to interview question 3 about linux commands. The answer covers key concepts, provides code examples, and explains the reasoning behind the solution.</p><pre><code># Example code for question 3
-answer = perform_linux_commands_operation()
-print(answer)</code></pre>
+    <p><strong>755</strong> (rwxr-xr-x): Owner can read/write/execute; group and others can read and execute. Use for scripts, executables, and directories that users need to enter.</p>
+    <p><strong>644</strong> (rw-r--r--): Owner can read/write; group and others can only read. Use for regular files like configs, documents, and source code that shouldn't be executed.</p>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="git04-q4">
   <summary class="tp-qa-question">
     <span class="tp-qa-status"></span>
-    Q4: Sample interview question 4 about linux commands?
+    Q4: What does xargs do and why is it needed with pipes?
   </summary>
   <div class="tp-qa-answer">
-    <p>This is a detailed answer to interview question 4 about linux commands. The answer covers key concepts, provides code examples, and explains the reasoning behind the solution.</p><pre><code># Example code for question 4
-answer = perform_linux_commands_operation()
-print(answer)</code></pre>
+    <p>Pipes (<code>|</code>) pass the <strong>output</strong> of one command as <strong>stdin</strong> to another. But many commands expect arguments, not stdin. <code>xargs</code> converts piped input into command arguments. Example: <code>find . -name "*.tmp" | xargs rm</code> — <code>find</code> outputs filenames, <code>xargs</code> feeds them as arguments to <code>rm</code>. Use <code>-print0</code> and <code>-0</code> for filenames with spaces.</p>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="git04-q5">
   <summary class="tp-qa-question">
     <span class="tp-qa-status"></span>
-    Q5: Sample interview question 5 about linux commands?
+    Q5: How would you find all TODO comments in a TypeScript project?
   </summary>
   <div class="tp-qa-answer">
-    <p>This is a detailed answer to interview question 5 about linux commands. The answer covers key concepts, provides code examples, and explains the reasoning behind the solution.</p><pre><code># Example code for question 5
-answer = perform_linux_commands_operation()
-print(answer)</code></pre>
+    <p>Use recursive grep with line numbers:</p><pre><code>grep -rn "TODO" src/ --include="*.ts"
+grep -rn "FIXME\|HACK\|XXX" src/ --include="*.ts"</code></pre>
+    <p><code>-r</code> searches recursively, <code>-n</code> shows line numbers, <code>--include</code> filters to TypeScript files. The second example uses extended regex to find multiple markers at once.</p>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
-</details>
-
-<details class="tp-qa-card" data-qid="git04-q6">
-  <summary class="tp-qa-question">
-    <span class="tp-qa-status"></span>
-    Q6: Sample interview question 6 about linux commands?
-  </summary>
-  <div class="tp-qa-answer">
-    <p>This is a detailed answer to interview question 6 about linux commands. The answer covers key concepts, provides code examples, and explains the reasoning behind the solution.</p><pre><code># Example code for question 6
-answer = perform_linux_commands_operation()
-print(answer)</code></pre>
-  </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
-</details>
-
-<details class="tp-qa-card" data-qid="git04-q7">
-  <summary class="tp-qa-question">
-    <span class="tp-qa-status"></span>
-    Q7: Sample interview question 7 about linux commands?
-  </summary>
-  <div class="tp-qa-answer">
-    <p>This is a detailed answer to interview question 7 about linux commands. The answer covers key concepts, provides code examples, and explains the reasoning behind the solution.</p><pre><code># Example code for question 7
-answer = perform_linux_commands_operation()
-print(answer)</code></pre>
-  </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
-</details>
-
-<details class="tp-qa-card" data-qid="git04-q8">
-  <summary class="tp-qa-question">
-    <span class="tp-qa-status"></span>
-    Q8: Sample interview question 8 about linux commands?
-  </summary>
-  <div class="tp-qa-answer">
-    <p>This is a detailed answer to interview question 8 about linux commands. The answer covers key concepts, provides code examples, and explains the reasoning behind the solution.</p><pre><code># Example code for question 8
-answer = perform_linux_commands_operation()
-print(answer)</code></pre>
-  </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Bookmark</button>
 </details>
 
 ## Chapter Quiz
 
-**Q1**: Sample quiz question 1 about linux commands?
+**Q1**: What does `ls -lha` display?
 
-a) Option A - First choice
-b) Option B - Second choice
-c) Option C - Third choice
-d) Option D - Fourth choice
+a) Only hidden files
+b) Long format listing with human-readable sizes including hidden files
+c) Recursive listing of all files
+d) Files sorted by name
 
-<details class="tp-qa-card" data-qid="git04-quiz1"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: a</strong></p><p>Explanation for answer to question 1.</p></div></details>
+<details class="tp-qa-card" data-qid="git04-quiz1"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p><code>-l</code> enables long format, <code>-h</code> makes sizes human-readable (KB, MB, GB), <code>-a</code> shows all files including hidden (dotfiles). Together they show a complete, readable directory listing.</p></div></details>
 
-**Q2**: Sample quiz question 2 about linux commands?
+**Q2**: Which command removes a directory and all its contents?
 
-a) Option A - First choice
-b) Option B - Second choice
-c) Option C - Third choice
-d) Option D - Fourth choice
+a) rmdir mydir
+b) rm mydir
+c) rm -r mydir
+d) rm -rf mydir/
 
-<details class="tp-qa-card" data-qid="git04-quiz2"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: a</strong></p><p>Explanation for answer to question 2.</p></div></details>
+<details class="tp-qa-card" data-qid="git04-quiz2"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: c</strong></p><p><code>rm -r</code> recursively removes a directory and all contents. <code>rmdir</code> only removes empty directories. <code>rm -rf</code> force-removes without prompting — use with extreme caution.</p></div></details>
 
-**Q3**: Sample quiz question 3 about linux commands?
+**Q3**: How do you search for a pattern in all .log files under /var/log?
 
-a) Option A - First choice
-b) Option B - Second choice
-c) Option C - Third choice
-d) Option D - Fourth choice
+a) find /var/log -name "*.log" | grep "pattern"
+b) grep -r "pattern" /var/log --include="*.log"
+c) grep "pattern" /var/log/*.log
+d) All of the above
 
-<details class="tp-qa-card" data-qid="git04-quiz3"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: a</strong></p><p>Explanation for answer to question 3.</p></div></details>
+<details class="tp-qa-card" data-qid="git04-quiz3"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: d</strong></p><p>All three approaches work. Option b (<code>grep -r --include</code>) is cleanest. Option a pipes find into grep. Option c uses shell globbing. Choose based on depth and simplicity needs.</p></div></details>
 
-**Q4**: Sample quiz question 4 about linux commands?
+**Q4**: What is the purpose of the sticky bit (chmod +t) on a directory?
 
-a) Option A - First choice
-b) Option B - Second choice
-c) Option C - Third choice
-d) Option D - Fourth choice
+a) Prevents anyone from deleting files
+b) Only the file owner can delete files in that directory
+c) Makes all files executable
+d) Sets the group to the directory's group
 
-<details class="tp-qa-card" data-qid="git04-quiz4"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: a</strong></p><p>Explanation for answer to question 4.</p></div></details>
+<details class="tp-qa-card" data-qid="git04-quiz4"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p>The sticky bit on a directory means only the file owner, directory owner, or root can delete or rename files within it. This is how <code>/tmp</code> works — all users can write, but only they can delete their own files.</p></div></details>
 
-**Q5**: Sample quiz question 5 about linux commands?
+**Q5**: In the command `ls -la | grep ".txt" | wc -l`, what does the pipeline do?
 
-a) Option A - First choice
-b) Option B - Second choice
-c) Option C - Third choice
-d) Option D - Fourth choice
+a) Lists all text files
+b) Counts the number of .txt files in the current directory
+c) Counts lines in all text files
+d) Finds the largest text file
 
-<details class="tp-qa-card" data-qid="git04-quiz5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: a</strong></p><p>Explanation for answer to question 5.</p></div></details>
-
-- Use watch -n 1 command to repeatedly run a command every second
-- Use screen or tmux to persist terminal sessions across disconnections
+<details class="tp-qa-card" data-qid="git04-quiz5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p><code>ls -la</code> lists all files, <code>grep ".txt"</code> filters to lines containing .txt, and <code>wc -l</code> counts those lines. Each line from <code>ls -la</code> represents one file, so the output is the count of .txt files.</p></div></details>
 
 ## Practical Tips
 
-- Use tab completion. Learn less navigation (/, ?, n, p, g, G). 
-- Chain commands with |. Use > to redirect, >> to append.
+- Use `ls -lt` to find recently modified files; `ls -lS` for largest files first
+- Always quote filenames with spaces: `rm "file name.txt"`
+- Use `find -exec {} +` instead of `find -exec \;` for better performance
+- Combine `grep -v` to exclude patterns from results
+- Use `tee` to log pipeline output to a file while still seeing it on screen
+- Practice dangerous commands with `echo` first: `echo rm -rf *.log`
 
 ## Exercises
 
-**Easy** - Basic exercise to practice linux commands fundamentals
+**Easy** — List all files in `/etc` larger than 10KB, sorted by size. Then find all `.conf` files in the same directory.
 
-**Medium** - Intermediate exercise applying linux commands patterns
+**Medium** — Write a one-liner that finds all `.js` files modified in the last 2 days, counts their lines, and shows the total. Use pipes and xargs.
 
-**Medium** - - Use `find` to locate all `.log` files modified in the last 7 days
-- Combine `grep`, `sort`, `uniq`, and `wc` to analyze a server access log
-- Use `awk` to extract columns and `sed` to replace patterns in a CSV file
+**Medium** — Create a directory structure with `mkdir -p`, set different permissions on each level, and verify access as different users with `su`.
 
-
-
-**Hard** - **Hard** - Write a one-liner pipeline that finds the top 5 IPs by request count
-
-**Hard** - from a 10GB access log using `awk`, `sort`, and `uniq -c`. Measure execution time.
+**Hard** — Analyze an Apache/Nginx access log: find the top 5 IPs, most common HTTP status codes, and average request size. Use only awk, sort, uniq, and wc.
 
 ---
 
-> **Next**: [05 Bash Scripting →](05-bash-scripting.md)
+
+## Common Mistakes
+
+1. Using rm -rf without caution
+2. Not understanding file permissions
+3. Not using quotes around filenames with spaces
+4. Forgetting that Linux is case-sensitive
+5. Not using find/locate for file search
+## Revision Notes
+
+- ls -la: detailed listing
+- chmod 755: rwxr-xr-x
+- grep -rn: recursive search
+- find / -name "*.py": find files
+- 管道 (|) pipes output to next command
+- tee: write to file and stdout
+## Placement Section
+
+### Top 10 Interview Questions
+
+#### Google Style
+1. Explain the time and space trade-offs of git linux cli. When would you choose one approach over another?
+2. Design a system that efficiently handles git linux cli at scale (millions of requests/second).
+
+#### Amazon Style
+1. Tell me about a time you had to optimize a system related to git linux cli. What was your approach and what was the result?
+2. How would you explain git linux cli to a non-technical stakeholder?
+
+#### Microsoft Style
+1. How does git linux cli integrate with enterprise systems and cloud architectures?
+2. What are the security implications of git linux cli?
+
+#### NVIDIA Style
+1. How would you optimize git linux cli for GPU-accelerated computing?
+2. What parallel processing patterns apply to git linux cli?
+
+#### AI Startup Style
+1. How would you implement git linux cli in a cost-effective, scalable way for a startup?
+2. What's the fastest way to prototype a solution using git linux cli?
+
+### Resume Tips
+- **Technical Skills**: List git linux cli under relevant technical skills
+- **Project Description**: "Implemented git linux cli to [specific outcome], reducing [metric] by [X]%"
+- **Keywords**: Include git linux cli in your skills section for ATS optimization
+
+### Interview Day Checklist
+- [ ] Review core concepts of git linux cli
+- [ ] Practice 3-5 problems related to git linux cli
+- [ ] Prepare 2 real-world examples of using git linux cli
+- [ ] Know the time/space complexity of common git linux cli operations
+- [ ] Have questions ready about how the company uses git linux cli> **Next**: [05 Bash Scripting →](05-bash-scripting.md)

@@ -4,402 +4,629 @@
 
 | Objective | Description |
 |-----------|-------------|
-| LO1 | Understand foundational git basics concepts and their role in software engineering |
-| LO2 | Implement git basics operations with correct syntax and best practices |
-| LO3 | Apply git basics patterns to solve common interview problems |
-| LO4 | Analyze time and space complexity of git basics solutions |
-| LO5 | Compare git basics with alternative approaches for different scenarios |
-| LO6 | Master advanced git basics techniques for complex problem solving |
+| LO1 | Understand how Git tracks changes and manages project history |
+| LO2 | Initialize repos, stage files, and create commits with meaningful messages |
+| LO3 | Use git status, git log, and git diff to inspect repository state |
+| LO4 | Configure .gitignore to exclude files and directories from version control |
+| LO5 | Apply undo and recovery workflows for common mistakes |
+| LO6 | Follow commit message conventions used in professional teams |
 
+## Introduction
+
+Git is the industry-standard version control system. Understanding Git fundamentals — init, add, commit, branching — is essential for every software engineer. AI engineers use Git to manage training code, model versions, and collaboration.
+
+## Prerequisites
+
+- Basic command line usage
+- Text editor familiarity
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
 |---------|-------|-------------|
-| 01.1 | Fundamentals | Core concepts and definitions |
-| 01.2 | Basic Operations | Common implementations and patterns |
-| 01.3 | Intermediate Techniques | Problem-solving strategies |
-| 01.4 | Advanced Patterns | Complex algorithms and optimizations |
-| 01.5 | Real-World Applications | Production use cases |
-| 01.6 | Interview Preparation | Common questions and solutions |
+| 01.1 | Git Initialization | Creating repos, understanding .git directory |
+| 01.2 | Staging and Committing | add, commit, the three-area model |
+| 01.3 | Inspecting History | log, diff, show, status |
+| 01.4 | Undoing Changes | restore, reset, amend |
+| 01.5 | .gitignore | Excluding files from tracking |
+| 01.6 | Real-World Workflows | Commit conventions, atomic commits |
 
 ## Chapter Roadmap
 
 ```mermaid
 flowchart LR
-    A[Git Basics] --> B[Fundamentals]
-    B --> C[Operations]
-    C --> D[Intermediate]
-    D --> E[Advanced]
-    E --> F[Applications]
-    F --> G[Interview Prep]
+    A[Git Basics] --> B[Init]
+    B --> C[Stage & Commit]
+    C --> D[Inspect History]
+    D --> E[Undo Changes]
+    E --> F[.gitignore]
+    F --> G[Best Practices]
 ```
 
 ## Theory
 
-### 01.1 Section 1
+### 01.1 Git Initialization
 
-Section 1 of Git Basics covers essential concepts for AI engineering placement preparation.
+Git is a distributed version control system that tracks changes to files over time. Unlike centralized systems, every developer has a full copy of the repository history on their machine.
 
-### Fundamentals
-
-The foundation of git basics rests on several key principles that every software engineer must understand. These include the basic definitions, the underlying theory, and how these concepts map to practical implementation.
-
-### Key Concepts
-
-- Concept 1: Definition and purpose
-- Concept 2: Core principles and theory
-- Concept 3: Relationship to other topics
-- Concept 4: Common applications
-
-### 01.2 Section 2
-
-Section 2 of Git Basics covers essential concepts for AI engineering placement preparation.
-
-### Basic Operations
-
-The following code demonstrates fundamental operations:
-
-
-## Examples
+**Creating a new repository:**
 
 ```bash
-# Git Basics - basic operations
-def example_function(data):
-    """Core functionality"""
-    result = []
-    for item in data:
-        # Process each element
-        result.append(process(item))
-    return result
+# Create a new repo in the current directory
+git init
 
-def process(item):
-    return item * 2
-
-# Test the implementation
-test_data = [1, 2, 3, 4, 5]
-print(example_function(test_data))
+# Create a new repo in a specific directory
+git init my-project
 ```
 
-### 01.3 Section 3
+Running `git init` creates a hidden `.git` directory that stores all version control metadata: commit objects, branch refs, configuration, and the object database.
 
-Section 3 of Git Basics covers essential concepts for AI engineering placement preparation.
+**Cloning an existing repository:**
 
-### Intermediate Techniques
+```bash
+# Clone via HTTPS
+git clone https://github.com/user/repo.git
 
-As problems become more complex, we need sophisticated approaches:
+# Clone via SSH
+git clone git@github.com:user/repo.git
 
-1. **Pattern Recognition**: Identifying when to apply this technique
-2. **Optimization**: Improving time and space complexity
-3. **Edge Cases**: Handling boundary conditions
-4. **Combined Approaches**: Integrating with other data structures
+# Clone into a specific directory
+git clone https://github.com/user/repo.git my-folder
+```
 
-### Complexity Analysis Table
+Cloning copies the entire history, all branches, and sets up a remote called `origin` automatically.
 
-| Operation | Time Complexity | Space Complexity | Notes |
-|-----------|----------------|-----------------|-------|
-| Basic Git Basics | O(n) | O(1) | Standard case |
-| Optimized Git Basics | O(log n) | O(n) | With preprocessing |
-| Advanced Git Basics | O(n log n) | O(n) | Trade-off scenario |
+**Key Git concepts:**
 
-### 01.4 Section 4
-
-Section 4 of Git Basics covers essential concepts for AI engineering placement preparation.
-
-### Advanced Patterns
+- **Working Directory**: Your actual files on disk
+- **Staging Area (Index)**: Files marked for the next commit
+- **Repository (.git)**: The committed history database
+- **HEAD**: A pointer to the current commit
 
 ```mermaid
-flowchart TD
-    A[Input] --> B{Pattern Match}
-    B -->|Standard| C[Basic Solution]
-    B -->|Optimized| D[Advanced Solution]
-    C --> E[Result]
-    D --> E
+flowchart LR
+    A[Working Directory] -->|git add| B[Staging Area]
+    B -->|git commit| C[Repository]
+    C -->|git checkout| A
 ```
 
-### Key Techniques
+### 01.2 Staging and Committing
 
-- **Technique 1**: Description of the first advanced technique and when to apply it
-- **Technique 2**: Description of the second advanced technique and when to apply it
-- **Technique 3**: Description of the third advanced technique and when to apply it
-- **Technique 4**: Description of the fourth advanced technique and when to apply it
+The staging area lets you craft commits selectively. You can stage some changes while leaving others unstaged, allowing atomic, focused commits.
 
-### 01.5 Section 5
-
-Section 5 of Git Basics covers essential concepts for AI engineering placement preparation.
-
-### Real-World Applications
-
-Git Basics is widely used in production systems:
-
-- Application domain 1 with specific examples
-- Application domain 2 with specific examples
-- Application domain 3 with specific examples
-- Application domain 4 with specific examples
-
-### Best Practices
-
-| Practice | Description | Impact |
-|----------|-------------|--------|
-| Best Practice 1 | Detailed explanation | Performance improvement |
-| Best Practice 2 | Detailed explanation | Code quality |
-| Best Practice 3 | Detailed explanation | Maintainability |
-
-### 01.6 Section 6
-
-Section 6 of Git Basics covers essential concepts for AI engineering placement preparation.
-
-### Interview Preparation
-
-Common interview questions and strategies:
-
-1. **Question Type 1**: Strategy for solving
-2. **Question Type 2**: Strategy for solving
-3. **Question Type 3**: Strategy for solving
-4. **Question Type 4**: Strategy for solving
-
-### Sample Walkthrough
-
-Let's walk through a typical interview problem:
+**Adding files to the staging area:**
 
 ```bash
-# Interview problem solution
-def solve_interview_problem(input_data):
-    # Step 1: Understand the problem
-    # Step 2: Design the approach
-    # Step 3: Implement the solution
-    # Step 4: Test and optimize
-    return optimized_result
+# Stage a specific file
+git add index.html
+
+# Stage all changes in current directory
+git add .
+
+# Stage all changes everywhere
+git add -A
+
+# Stage specific file types
+git add *.js
+
+# Stage changes interactively (choose hunks)
+git add -p
 ```
 
----
+**Committing staged changes:**
 
-## TypeScript Parallel
+```bash
+# Commit with inline message
+git commit -m "Add user authentication module"
 
-```typescript
-// TypeScript equivalent implementation
-interface GitBasicsConfig {
-    option1: boolean;
-    option2: number;
-}
+# Commit all tracked changes (skip staging)
+git commit -am "Fix login redirect bug"
 
-function processGitBasics(data: number[]): number[] {
-    return data.map(x => x * 2);
-}
+# Commit with verbose output showing diff
+git commit -v -m "Update API rate limiting"
 
-// Usage example
-const result = processGitBasics([1, 2, 3]);
-console.log(result); // [2, 4, 6]
+# Amend the last commit (message or files)
+git commit --amend -m "Fix: correct typo in auth header"
 ```
 
----
+**The three-area model in practice:**
+
+```bash
+# Edit a file
+echo "console.log('hello');" > app.js
+
+# Check status — shows unstaged changes
+git status
+
+# Stage the file
+git add app.js
+
+# Check status — shows staged changes
+git status
+
+# Commit
+git commit -m "Initialize app entry point"
+
+# Check status — clean working tree
+git status
+```
+
+### 01.3 Inspecting History
+
+Git log shows the commit history. Understanding how to read and filter it is essential for debugging and code review.
+
+**Viewing commit history:**
+
+```bash
+# Compact one-line log
+git log --oneline
+
+# Graph with branches
+git log --oneline --graph --all
+
+# Last 5 commits
+git log -5
+
+# Show file changes per commit
+git log --stat
+
+# Show actual diffs
+git log -p
+
+# Filter by author
+git log --author="Alice"
+
+# Filter by date
+git log --since="2024-01-01" --until="2024-06-01"
+
+# Search commit messages
+git log --grep="fix" --oneline
+```
+
+**Comparing changes with diff:**
+
+```bash
+# Unstaged changes (working dir vs staging)
+git diff
+
+# Staged changes (staging vs last commit)
+git diff --staged
+
+# Diff between two commits
+git diff abc1234 def5678
+
+# Diff between branches
+git diff main..feature-branch
+
+# Diff showing only filenames
+git diff --name-only
+
+# Diff with word-level changes
+git diff --word-diff
+```
+
+**Inspecting specific commits:**
+
+```bash
+# Show a commit's details and diff
+git show abc1234
+
+# Show commit stats only
+git show --stat abc1234
+
+# Show the contents of a file at a specific commit
+git show abc1234:path/to/file.ts
+```
+
+### 01.4 Undoing Changes
+
+Mistakes happen. Git provides multiple tools to undo changes, each with different safety levels.
+
+**Discarding unstaged changes:**
+
+```bash
+# Discard changes in a specific file
+git restore index.html
+
+# Discard all working directory changes
+git restore .
+
+# Restore a file from last commit
+git restore --source=HEAD~2 path/to/file.ts
+```
+
+**Unstaging files:**
+
+```bash
+# Unstage a specific file (keeps working dir changes)
+git restore --staged index.html
+
+# Unstage all files
+git restore --staged .
+```
+
+**Resetting commits (use with caution):**
+
+```bash
+# Soft reset: move HEAD, keep staged changes
+git reset --soft HEAD~1
+
+# Mixed reset (default): unstage changes, keep in working dir
+git reset HEAD~1
+
+# Hard reset: discard everything (DANGEROUS)
+git reset --hard HEAD~1
+
+# Reset to a specific commit
+git reset --hard abc1234
+```
+
+**Recovering with reflog:**
+
+```bash
+# View the reflog (safety net for lost commits)
+git reflog
+
+# Recover a "lost" commit
+git reset --hard HEAD@{2}
+```
+
+### 01.5 .gitignore
+
+The `.gitignore` file tells Git which files and directories to ignore. This prevents generated files, secrets, and dependencies from being tracked.
+
+**Creating a .gitignore:**
+
+```bash
+# Create a .gitignore file
+touch .gitignore
+```
+
+**Common .gitignore patterns:**
+
+```gitignore
+# Dependencies
+node_modules/
+venv/
+__pycache__/
+
+# Build output
+dist/
+build/
+*.o
+*.class
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Coverage reports
+coverage/
+htmlcov/
+```
+
+**Pattern syntax:**
+
+```gitignore
+# Ignore all .log files
+*.log
+
+# But keep important.log
+!important.log
+
+# Ignore all files in temp/ directory
+temp/
+
+# Ignore build/ at root only (not sub/build/)
+/build
+
+# Ignore TODO files in root and subdirs
+/**/TODO
+
+# Ignore files ending in .bak
+*~
+
+# Ignore files with spaces in name
+"My Documents/"
+```
+
+**Removing tracked files from Git (after adding to .gitignore):**
+
+```bash
+# Remove file from Git but keep on disk
+git rm --cached secret.env
+
+# Remove directory from Git but keep locally
+git rm -r --cached node_modules/
+
+# Commit the removal
+git commit -m "Remove tracked secrets and dependencies"
+```
+
+### 01.6 Real-World Best Practices
+
+**Atomic commits:** Each commit should represent one logical change. This makes code review easier and bisection reliable.
+
+```bash
+# Bad: one massive commit
+git add .
+git commit -m "Update everything"
+
+# Good: separate logical changes
+git add src/auth.ts src/auth.test.ts
+git commit -m "Add JWT authentication with tests"
+
+git add src/api/routes.ts
+git commit -m "Add protected API routes"
+
+git add README.md
+git commit -m "Update README with auth setup instructions"
+```
+
+**Commit message convention (Conventional Commits):**
+
+```
+<type>(<scope>): <description>
+
+[optional body]
+
+[optional footer]
+```
+
+```bash
+git commit -m "feat(auth): add OAuth2 Google login"
+git commit -m "fix(api): handle null response from payment gateway"
+git commit -m "docs(readme): add installation steps"
+git commit -m "refactor(db): simplify query builder"
+git commit -m "test(auth): add edge case for expired tokens"
+git commit -m "chore(deps): upgrade axios to 1.6.0"
+```
+
+**Commit message rules:**
+
+- Use imperative mood: "Add feature" not "Added feature"
+- Keep subject line under 72 characters
+- Capitalize the subject line
+- No period at the end of the subject
+- Use body to explain "what" and "why", not "how"
 
 ## Summary
 
-- Git Basics is a fundamental topic for coding interviews
-- Master the core concepts before attempting complex problems
-- Practice with diverse problem sets to build pattern recognition
-- Always analyze time and space complexity of your solutions
-- Consider edge cases and boundary conditions carefully
-- Combine with other data structures for optimal solutions
-- Write clean, readable code following best practices
-- Test your solutions with multiple test cases
-- Learn from mistakes and iterate on your approaches
-- Build confidence through consistent practice
+- Git tracks changes in a three-area model: working directory, staging area, repository
+- `git init` creates a new repository; `git clone` copies an existing one
+- `git add` stages files; `git commit` records staged snapshots
+- `git status`, `git log`, and `git diff` are your primary inspection tools
+- `git restore` undoes working directory changes; `git restore --staged` unstages
+- `git reset` moves HEAD (use `--soft`, `--mixed`, or `--hard` carefully)
+- `.gitignore` prevents files from being tracked — configure it early
+- Write atomic commits with conventional commit messages
+- `git reflog` is your safety net for recovering "lost" commits
+- Always review changes before staging with `git diff`
 
 ## Practical Takeaways
 
 | Scenario | Do This | Avoid This |
 |----------|---------|------------|
-| Learning Git Basics | Practice with varied problems | Rote memorization without understanding |
-| Implementing Git Basics | Write clean, tested code | Premature optimization |
-| Interview prep | Understand patterns and trade-offs | Cramming without practice |
-| Production use | Profile and optimize for data size | Over-engineering solutions |
+| Starting a project | `git init` + `.gitignore` immediately | Committing without .gitignore |
+| Daily work | Small, frequent atomic commits | One giant end-of-day commit |
+| Commit messages | Conventional format with scope | "fix stuff" or "update" |
+| Reviewing changes | `git diff --staged` before committing | Blindly staging everything |
+| Undoing mistakes | `git restore` for files, `git reset` for commits | `git reset --hard` without checking reflog |
+| Finding bugs | `git log --oneline` + `git bisect` | Manually reading every commit |
 
 ## Interview Q&A
 
 <details class="tp-qa-card" data-qid="git01-q1">
   <summary class="tp-qa-question">
     <span class="tp-qa-status"></span>
-    Q1: Sample interview question 1 about git basics?
+    Q1: What is the difference between git reset --soft, --mixed, and --hard?
   </summary>
   <div class="tp-qa-answer">
-    <p>This is a detailed answer to interview question 1 about git basics. The answer covers key concepts, provides code examples, and explains the reasoning behind the solution.</p><pre><code># Example code for question 1
-answer = perform_git_basics_operation()
-print(answer)</code></pre>
+    <p><strong>--soft</strong> moves HEAD but keeps changes staged. <strong>--mixed</strong> (default) moves HEAD and unstages changes but keeps them in the working directory. <strong>--hard</strong> moves HEAD and discards all changes permanently. Use --soft for amending commits, --mixed for reorganizing, and --hard only when you're certain you want to discard changes.</p><pre><code># Soft: keeps changes staged
+git reset --soft HEAD~1
+
+# Mixed: unstages but keeps files
+git reset HEAD~1
+
+# Hard: discloses everything
+git reset --hard HEAD~1</code></pre>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="git01-q2">
   <summary class="tp-qa-question">
     <span class="tp-qa-status"></span>
-    Q2: Sample interview question 2 about git basics?
+    Q2: Explain the three areas of Git (working directory, staging area, repository).
   </summary>
   <div class="tp-qa-answer">
-    <p>This is a detailed answer to interview question 2 about git basics. The answer covers key concepts, provides code examples, and explains the reasoning behind the solution.</p><pre><code># Example code for question 2
-answer = perform_git_basics_operation()
-print(answer)</code></pre>
+    <p>The <strong>working directory</strong> is your project's files on disk. The <strong>staging area (index)</strong> is a preparation zone where you select which changes to include in the next commit. The <strong>repository (.git)</strong> stores the permanent history of committed snapshots. Files flow: Working Directory → (git add) → Staging Area → (git commit) → Repository. This design lets you craft precise, atomic commits rather than dumping all changes at once.</p>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="git01-q3">
   <summary class="tp-qa-question">
     <span class="tp-qa-status"></span>
-    Q3: Sample interview question 3 about git basics?
+    Q3: How do you recover a commit that was accidentally reset?
   </summary>
   <div class="tp-qa-answer">
-    <p>This is a detailed answer to interview question 3 about git basics. The answer covers key concepts, provides code examples, and explains the reasoning behind the solution.</p><pre><code># Example code for question 3
-answer = perform_git_basics_operation()
-print(answer)</code></pre>
+    <p>Use <code>git reflog</code> to find the lost commit hash. The reflog tracks every movement of HEAD. Once you find the hash, use <code>git reset --hard &lt;hash&gt;</code> or <code>git cherry-pick &lt;hash&gt;</code> to restore it. Reflog entries expire after 90 days by default.</p><pre><code># Find the lost commit
+git reflog
+
+# Restore it
+git reset --hard abc1234</code></pre>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="git01-q4">
   <summary class="tp-qa-question">
     <span class="tp-qa-status"></span>
-    Q4: Sample interview question 4 about git basics?
+    Q4: Write a proper commit message for adding rate limiting to an API.
   </summary>
   <div class="tp-qa-answer">
-    <p>This is a detailed answer to interview question 4 about git basics. The answer covers key concepts, provides code examples, and explains the reasoning behind the solution.</p><pre><code># Example code for question 4
-answer = perform_git_basics_operation()
-print(answer)</code></pre>
+    <p>Using conventional commits format:</p><pre><code>feat(api): add rate limiting middleware
+
+- Implement token bucket algorithm for request throttling
+- Default limit: 100 requests per minute per IP
+- Add X-RateLimit-Remaining header to responses
+- Return 429 Too Many Requests when exceeded
+
+Closes #234</code></pre>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="git01-q5">
   <summary class="tp-qa-question">
     <span class="tp-qa-status"></span>
-    Q5: Sample interview question 5 about git basics?
+    Q5: What does .gitignore do and what happens if you add a file after .gitignore?
   </summary>
   <div class="tp-qa-answer">
-    <p>This is a detailed answer to interview question 5 about git basics. The answer covers key concepts, provides code examples, and explains the reasoning behind the solution.</p><pre><code># Example code for question 5
-answer = perform_git_basics_operation()
-print(answer)</code></pre>
+    <p>.gitignore tells Git to skip tracking files matching its patterns. However, if a file is already tracked before adding it to .gitignore, Git continues tracking it. You must explicitly untrack it with <code>git rm --cached &lt;file&gt;</code> for .gitignore to take effect on that file.</p><pre><code># File is tracked, .gitignore won't help
+git rm --cached secret.env
+git commit -m "Stop tracking secret.env"</code></pre>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
-</details>
-
-<details class="tp-qa-card" data-qid="git01-q6">
-  <summary class="tp-qa-question">
-    <span class="tp-qa-status"></span>
-    Q6: Sample interview question 6 about git basics?
-  </summary>
-  <div class="tp-qa-answer">
-    <p>This is a detailed answer to interview question 6 about git basics. The answer covers key concepts, provides code examples, and explains the reasoning behind the solution.</p><pre><code># Example code for question 6
-answer = perform_git_basics_operation()
-print(answer)</code></pre>
-  </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
-</details>
-
-<details class="tp-qa-card" data-qid="git01-q7">
-  <summary class="tp-qa-question">
-    <span class="tp-qa-status"></span>
-    Q7: Sample interview question 7 about git basics?
-  </summary>
-  <div class="tp-qa-answer">
-    <p>This is a detailed answer to interview question 7 about git basics. The answer covers key concepts, provides code examples, and explains the reasoning behind the solution.</p><pre><code># Example code for question 7
-answer = perform_git_basics_operation()
-print(answer)</code></pre>
-  </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
-</details>
-
-<details class="tp-qa-card" data-qid="git01-q8">
-  <summary class="tp-qa-question">
-    <span class="tp-qa-status"></span>
-    Q8: Sample interview question 8 about git basics?
-  </summary>
-  <div class="tp-qa-answer">
-    <p>This is a detailed answer to interview question 8 about git basics. The answer covers key concepts, provides code examples, and explains the reasoning behind the solution.</p><pre><code># Example code for question 8
-answer = perform_git_basics_operation()
-print(answer)</code></pre>
-  </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Bookmark</button>
 </details>
 
 ## Chapter Quiz
 
-**Q1**: Sample quiz question 1 about git basics?
+**Q1**: Which command stages all modified and new files in the current directory?
 
-a) Option A - First choice
-b) Option B - Second choice
-c) Option C - Third choice
-d) Option D - Fourth choice
+a) git commit -a
+b) git add .
+c) git add -A
+d) Both b and c
 
-<details class="tp-qa-card" data-qid="git01-quiz1"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: a</strong></p><p>Explanation for answer to question 1.</p></div></details>
+<details class="tp-qa-card" data-qid="git01-quiz1"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: d</strong></p><p>Both <code>git add .</code> and <code>git add -A</code> stage all changes. The difference: <code>git add .</code> stages changes in the current directory and below, while <code>git add -A</code> stages changes everywhere in the repo. At the repo root they behave identically.</p></div></details>
 
-**Q2**: Sample quiz question 2 about git basics?
+**Q2**: What is the correct order of the Git workflow?
 
-a) Option A - First choice
-b) Option B - Second choice
-c) Option C - Third choice
-d) Option D - Fourth choice
+a) commit → add → edit
+b) edit → commit → add
+c) edit → add → commit
+d) add → edit → commit
 
-<details class="tp-qa-card" data-qid="git01-quiz2"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: a</strong></p><p>Explanation for answer to question 2.</p></div></details>
+<details class="tp-qa-card" data-qid="git01-quiz2"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: c</strong></p><p>The standard workflow is: edit files → stage changes with <code>git add</code> → commit with <code>git commit</code>. You edit working files, selectively stage what you want, then commit a snapshot of staged changes.</p></div></details>
 
-**Q3**: Sample quiz question 3 about git basics?
+**Q3**: Which command shows the differences between the staging area and the last commit?
 
-a) Option A - First choice
-b) Option B - Second choice
-c) Option C - Third choice
-d) Option D - Fourth choice
+a) git diff
+b) git diff --staged
+c) git diff HEAD
+d) git show
 
-<details class="tp-qa-card" data-qid="git01-quiz3"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: a</strong></p><p>Explanation for answer to question 3.</p></div></details>
+<details class="tp-qa-card" data-qid="git01-quiz3"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p><code>git diff</code> shows working directory vs staging area. <code>git diff --staged</code> (or --cached) shows staging area vs last commit. This is the diff that will be included in your next commit.</p></div></details>
 
-**Q4**: Sample quiz question 4 about git basics?
+**Q4**: What happens when you run `git commit --amend`?
 
-a) Option A - First choice
-b) Option B - Second choice
-c) Option C - Third choice
-d) Option D - Fourth choice
+a) Creates a new branch with the changes
+b) Deletes the last commit entirely
+c) Modifies the last commit with new changes or message
+d) Reverts the last commit
 
-<details class="tp-qa-card" data-qid="git01-quiz4"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: a</strong></p><p>Explanation for answer to question 4.</p></div></details>
+<details class="tp-qa-card" data-qid="git01-quiz4"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: c</strong></p><p><code>git commit --amend</code> modifies the most recent commit. You can change the message, add forgotten files, or both. It creates a new commit hash that replaces the previous one. Never amend commits that have been pushed to a shared branch.</p></div></details>
 
-**Q5**: Sample quiz question 5 about git basics?
+**Q5**: In .gitignore, what does the pattern `*.log` do?
 
-a) Option A - First choice
-b) Option B - Second choice
-c) Option C - Third choice
-d) Option D - Fourth choice
+a) Ignores only files named "*.log"
+b) Ignores all files ending in .log
+c) Ignores the log directory
+d) Ignores all files containing "log" in the name
 
-<details class="tp-qa-card" data-qid="git01-quiz5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: a</strong></p><p>Explanation for answer to question 5.</p></div></details>
-
-- Use git commit --amend to fix the last commit message or add forgotten changes before pushing
-- Use git status -s for a concise status overview of your working tree
+<details class="tp-qa-card" data-qid="git01-quiz5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p>The <code>*.log</code> pattern uses a wildcard that matches any characters before ".log". It ignores all files with the .log extension in any directory. To ignore only in root, use <code>/*.log</code>.</p></div></details>
 
 ## Practical Tips
 
-- git add -p to stage parts of files selectively. Use git commit -v to review diff in editor. 
-- git log --oneline --graph for compact history. Always write meaningful commit messages.
+- Always run `git status` before committing to verify what will be included
+- Use `git add -p` to stage parts of files selectively — great for separating mixed changes
+- Write commit messages in imperative mood: "Add feature" not "Added feature"
+- Keep commits atomic: one logical change per commit for easier review and bisection
+- Use `git log --oneline --graph` for a compact visual history of branches
+- Set up a `.gitignore` at project start — adding it later requires `git rm --cached`
 
 ## Exercises
 
-**Easy** - Basic exercise to practice git basics fundamentals
+**Easy** — Initialize a new Git repository, create three files, stage them individually, and commit each with a meaningful message. Verify with `git log`.
 
-**Medium** - Intermediate exercise applying git basics patterns
+**Medium** — Create a `.gitignore` that excludes `node_modules/`, `*.env`, and `dist/`. Add a `node_modules/` directory and `.env` file, verify they are ignored, then test that a tracked file added before `.gitignore` still shows in `git status`.
 
-**Medium** - - Initialize a repository, stage changes, commit, and inspect the log
-- Create a .gitignore and verify ignored files do not get tracked
-- Use `git diff` to review unstaged changes before committing
+**Medium** — Make a commit, then accidentally run `git reset --hard HEAD~1`. Use `git reflog` to find and restore the lost commit.
 
-
-
-**Hard** - **Hard** - Recover a deleted file using `git restore` and `git reflog`.
-
-**Hard** - Simulate accidental deletion, restore from the staging area, then recover
+**Hard** — Set up a project with 10 commits. Use `git rebase -i` to squash the last 5 commits into one. Then use `git reflog` to recover the original state.
 
 ---
 
-> **Next**: [02 Git Branching →](02-git-branching.md)
+
+## Common Mistakes
+
+1. Committing too frequently without meaningful messages
+2. Not using .gitignore for sensitive files
+3. Force pushing to shared branches
+4. Not understanding staging area
+5. Forgetting to pull before pushing
+## Revision Notes
+
+- git init → initialize repo
+- git add → stage changes
+- git commit → save snapshot
+- git status → check state
+- git log → view history
+- .gitignore → exclude files
+- Commit often, push after review
+## Placement Section
+
+### Top 10 Interview Questions
+
+#### Google Style
+1. Explain the time and space trade-offs of git linux cli. When would you choose one approach over another?
+2. Design a system that efficiently handles git linux cli at scale (millions of requests/second).
+
+#### Amazon Style
+1. Tell me about a time you had to optimize a system related to git linux cli. What was your approach and what was the result?
+2. How would you explain git linux cli to a non-technical stakeholder?
+
+#### Microsoft Style
+1. How does git linux cli integrate with enterprise systems and cloud architectures?
+2. What are the security implications of git linux cli?
+
+#### NVIDIA Style
+1. How would you optimize git linux cli for GPU-accelerated computing?
+2. What parallel processing patterns apply to git linux cli?
+
+#### AI Startup Style
+1. How would you implement git linux cli in a cost-effective, scalable way for a startup?
+2. What's the fastest way to prototype a solution using git linux cli?
+
+### Resume Tips
+- **Technical Skills**: List git linux cli under relevant technical skills
+- **Project Description**: "Implemented git linux cli to [specific outcome], reducing [metric] by [X]%"
+- **Keywords**: Include git linux cli in your skills section for ATS optimization
+
+### Interview Day Checklist
+- [ ] Review core concepts of git linux cli
+- [ ] Practice 3-5 problems related to git linux cli
+- [ ] Prepare 2 real-world examples of using git linux cli
+- [ ] Know the time/space complexity of common git linux cli operations
+- [ ] Have questions ready about how the company uses git linux cli> **Next**: [02 Git Branching →](02-git-branching.md)

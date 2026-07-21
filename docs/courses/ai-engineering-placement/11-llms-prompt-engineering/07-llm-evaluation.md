@@ -11,6 +11,14 @@
 | LO5 | Assess model performance on task-specific benchmarks |
 | LO6 | Apply human evaluation strategies for subjective quality dimensions |
 
+## Introduction
+
+11-llms-prompt-engineering is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+
+## Prerequisites
+
+- Basic programming knowledge
+- Understanding of data structures
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -1262,7 +1270,14 @@ Answer: D
 
 ## Exercises
 
-1. Implement a complete evaluation pipeline that computes ROUGE-1, ROUGE-2, ROUGE-L, BLEU-4, and METEOR on a set of 10 LLM-generated summaries. Compare the scores and identify which summaries perform best on each metric.
+
+## Common Mistakes
+
+1. Not understanding the fundamental concepts before applying them
+2. Skipping edge cases in implementation
+3. Not analyzing time/space complexity
+4. Forgetting to handle null/empty inputs
+5. Not practicing enough problems to build pattern recognition1. Implement a complete evaluation pipeline that computes ROUGE-1, ROUGE-2, ROUGE-L, BLEU-4, and METEOR on a set of 10 LLM-generated summaries. Compare the scores and identify which summaries perform best on each metric.
 
 2. Build a self-consistency scorer that samples 5 outputs per prompt and computes pairwise agreement. Test with prompts of varying difficulty (factual, creative, ambiguous) and report consistency scores.
 
@@ -1270,4 +1285,48 @@ Answer: D
 
 4. Design a stratified evaluation dataset with 50 examples across 5 categories (code generation, summarization, QA, translation, creative writing). Include metadata for difficulty level and source domain.
 
-5. Implement a regression monitoring dashboard that tracks evaluation metrics across model deployments and alerts when any metric drops by more than 5%. Use synthetic data to simulate a regression scenario.
+5. Implement a regression monitoring dashboard that tracks evaluation metrics across model deployments and alerts when any metric drops by more than 5%. Use synthetic data to simulate a regression 
+## Revision Notes
+
+- Key concept 1: Core principle of 11-llms-prompt-engineering
+- Key concept 2: Common implementation pattern
+- Key concept 3: Time/space complexity to remember
+- Key concept 4: When to apply this technique
+- Key concept 5: Common interview pattern
+- Key concept 6: Edge cases to handle
+- Key concept 7: Related concepts for deeper understanding
+## Placement Section
+
+### Top 10 Interview Questions
+
+#### Google Style
+1. Explain the time and space trade-offs of 11-llms-prompt-engineering. When would you choose one approach over another?
+2. Design a system that efficiently handles 11-llms-prompt-engineering at scale (millions of requests/second).
+
+#### Amazon Style
+1. Tell me about a time you had to optimize a system related to 11-llms-prompt-engineering. What was your approach and what was the result?
+2. How would you explain 11-llms-prompt-engineering to a non-technical stakeholder?
+
+#### Microsoft Style
+1. How does 11-llms-prompt-engineering integrate with enterprise systems and cloud architectures?
+2. What are the security implications of 11-llms-prompt-engineering?
+
+#### NVIDIA Style
+1. How would you optimize 11-llms-prompt-engineering for GPU-accelerated computing?
+2. What parallel processing patterns apply to 11-llms-prompt-engineering?
+
+#### AI Startup Style
+1. How would you implement 11-llms-prompt-engineering in a cost-effective, scalable way for a startup?
+2. What's the fastest way to prototype a solution using 11-llms-prompt-engineering?
+
+### Resume Tips
+- **Technical Skills**: List 11-llms-prompt-engineering under relevant technical skills
+- **Project Description**: "Implemented 11-llms-prompt-engineering to [specific outcome], reducing [metric] by [X]%"
+- **Keywords**: Include 11-llms-prompt-engineering in your skills section for ATS optimization
+
+### Interview Day Checklist
+- [ ] Review core concepts of 11-llms-prompt-engineering
+- [ ] Practice 3-5 problems related to 11-llms-prompt-engineering
+- [ ] Prepare 2 real-world examples of using 11-llms-prompt-engineering
+- [ ] Know the time/space complexity of common 11-llms-prompt-engineering operations
+- [ ] Have questions ready about how the company uses 11-llms-prompt-engineeringscenario.

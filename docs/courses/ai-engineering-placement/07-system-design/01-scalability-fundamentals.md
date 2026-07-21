@@ -37,6 +37,17 @@ flowchart LR
     G --> H[Capacity Planning]
 ```
 
+## Introduction
+
+Every AI system eventually faces the question: how do we handle 10x more users, 100x more data, or 1000x more inference requests? Scalability fundamentals answer that question by providing frameworks for stateless design, load balancing, database scaling, and caching. These concepts are essential for system design interviews and for building ML infrastructure that actually works at production scale.
+
+## Prerequisites
+
+- Basic understanding of client-server architecture
+- Familiarity with databases (SQL queries, tables)
+- Experience with at least one backend framework
+- Reference: Module 05 (FastAPI Backend) for API concepts
+
 ## Theory
 
 ### 1.1 Vertical vs Horizontal Scaling
@@ -515,5 +526,64 @@ pool = calculate_pool_size(100, 500, 50, 10)  # ~30 connections
 ```
 
 ---
+
+## Common Mistakes
+
+1. Scaling vertically only — vertical scaling hits hardware limits and creates a single point of failure; always plan for horizontal scaling
+2. Using sticky sessions instead of externalizing state — sessions tied to a specific server prevent horizontal scaling and create failure points
+3. Only monitoring average latency — averages hide bad outliers; p99 and p999 latencies reveal the true user experience
+4. Skipping cache invalidation strategy — caching without a clear invalidation plan (TTL, write-through, event-driven) leads to stale data bugs
+5. Ignoring connection pool sizing — too few connections create bottlenecks; too many exhaust database resources; Little's Law calculates the right size
+
+## Revision Notes
+
+- Vertical scaling = scale up (more power per machine); horizontal scaling = scale out (more machines)
+- Stateless applications enable horizontal scaling by externalizing all state to Redis, DB, or object stores
+- Load balancer algorithms: round-robin, least connections, IP hash, weighted by capacity
+- Database read replicas improve read throughput; sharding distributes writes across databases
+- Cache strategies: Cache Aside (most common), Read Through, Write Through, Write Behind
+- Key metrics: latency, throughput, p99, error rate, availability (99.9%+)
+- SLI = measured metric, SLO = target value, SLA = contractual agreement with consequences
+- Capacity planning: estimate traffic, project growth, add 2-3x headroom, load test to validate
+
+## Summary
+
+Scalability fundamentals provide the framework for handling growing AI system demands. Vertical scaling adds power to a single machine while horizontal scaling adds more machines — the latter requires stateless application design with externalized state. Load balancers distribute traffic using various algorithms with health checks ensuring availability. Database scaling uses read replicas for read throughput and sharding for write distribution. Caching at multiple layers (CDN, Redis, in-memory) reduces database load. Asynchronous processing with queues decouples components and improves responsiveness. Capacity planning requires estimating traffic, projecting growth, and adding headroom validated through load testing.
+
+## Placement Section
+
+### Top 10 Interview Questions
+
+#### Google Style
+1. Design a URL shortener service that handles 100 million URLs per day. How do you handle scaling, caching, and database partitioning?
+2. Explain the CAP theorem and how it applies to your choice of database for a scalable AI system
+
+#### Amazon Style
+1. Your ML inference service experiences 10x traffic spikes during certain hours. Design an auto-scaling architecture that minimizes cost while maintaining p99 < 500ms
+2. Describe a time when you identified a scalability bottleneck and the engineering decisions you made to resolve it
+
+#### Microsoft Style
+1. How would you design a real-time collaboration feature for an AI writing assistant that scales to millions of concurrent users?
+2. A monolithic application needs to be decomposed for horizontal scaling. Walk through your approach to identifying service boundaries
+
+#### NVIDIA Style
+1. Design a distributed GPU cluster for training large language models. How do you handle model parallelism, data loading, and fault tolerance across nodes?
+2. An AI inference service runs on 50 GPU servers. How do you implement load balancing that accounts for variable GPU utilization and batch sizes?
+
+#### AI Startup Style
+1. You need to scale a RAG-based Q&A system from 100 to 100,000 daily queries. What are the three most critical scalability bottlenecks and how do you address each?
+2. Your startup's API costs are growing faster than revenue. How do you optimize the architecture to reduce infrastructure costs while maintaining performance?
+
+### Resume Tips
+- List "System Design" and "Scalability" under Technical Skills with specific technologies (Redis, load balancers, sharding)
+- Project example: "Designed horizontally scalable ML inference system handling 50K RPS with Redis caching, load balancing, and auto-scaling"
+- Quantify scalability achievements: "Reduced p99 latency from 2s to 200ms by implementing CDN caching and database read replicas"
+
+### Interview Day Checklist
+- [ ] Can design a scalable architecture for a given system in under 20 minutes
+- [ ] Can explain the trade-offs between vertical and horizontal scaling with specific examples
+- [ ] Can describe at least 3 load balancing algorithms and when to use each
+- [ ] Can calculate connection pool size using Little's Law
+- [ ] Can explain cache invalidation strategies and when to use each
 
 > **Next**: [Microservices Architecture](02-microservices-architecture.md)

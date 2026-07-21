@@ -11,6 +11,15 @@
 | LO5 | Compare heaps and tries with alternative approaches for different scenarios |
 | LO6 | Master advanced heaps and tries techniques for complex problem solving |
 
+## Introduction
+
+Graphs model relationships between entities — social networks, dependencies, maps, and neural network architectures. Understanding graph traversal (BFS/DFS), shortest paths, and topological sorting is essential for AI engineers.
+
+## Prerequisites
+
+- Queue and stack basics
+- Recursion
+- Tree traversal concepts
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -441,4 +450,53 @@ d) Option D - Fourth choice
 
 ---
 
-> **Next**: [12 Graphs Bfs Dfs →](12-graphs-bfs-dfs.md)
+
+## Common Mistakes
+
+1. Not handling disconnected components
+2. Forgetting to mark visited nodes
+3. Using DFS when BFS gives shortest path
+4. Not considering directed vs undirected graphs
+5. Confusing topological sort with DFS order
+## Revision Notes
+
+- BFS: shortest path in unweighted graphs
+- DFS: cycle detection, topological sort
+- Dijkstra: shortest path with positive weights
+- Bellman-Ford: handles negative weights
+- Topological sort: only for DAGs
+## Placement Section
+
+### Top 10 Interview Questions
+
+#### Google Style
+1. Explain the time and space trade-offs of data structures algorithms. When would you choose one approach over another?
+2. Design a system that efficiently handles data structures algorithms at scale (millions of requests/second).
+
+#### Amazon Style
+1. Tell me about a time you had to optimize a system related to data structures algorithms. What was your approach and what was the result?
+2. How would you explain data structures algorithms to a non-technical stakeholder?
+
+#### Microsoft Style
+1. How does data structures algorithms integrate with enterprise systems and cloud architectures?
+2. What are the security implications of data structures algorithms?
+
+#### NVIDIA Style
+1. How would you optimize data structures algorithms for GPU-accelerated computing?
+2. What parallel processing patterns apply to data structures algorithms?
+
+#### AI Startup Style
+1. How would you implement data structures algorithms in a cost-effective, scalable way for a startup?
+2. What's the fastest way to prototype a solution using data structures algorithms?
+
+### Resume Tips
+- **Technical Skills**: List data structures algorithms under relevant technical skills
+- **Project Description**: "Implemented data structures algorithms to [specific outcome], reducing [metric] by [X]%"
+- **Keywords**: Include data structures algorithms in your skills section for ATS optimization
+
+### Interview Day Checklist
+- [ ] Review core concepts of data structures algorithms
+- [ ] Practice 3-5 problems related to data structures algorithms
+- [ ] Prepare 2 real-world examples of using data structures algorithms
+- [ ] Know the time/space complexity of common data structures algorithms operations
+- [ ] Have questions ready about how the company uses data structures algorithms> **Next**: [12 Graphs Bfs Dfs →](12-graphs-bfs-dfs.md)

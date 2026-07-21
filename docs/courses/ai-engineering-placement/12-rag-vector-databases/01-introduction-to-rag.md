@@ -34,6 +34,16 @@ flowchart LR
     G --> H[Evaluation]
 ```
 
+## Introduction
+
+Retrieval-Augmented Generation (RAG) is the most practical technique for making LLMs useful with private, domain-specific, or up-to-date knowledge. Instead of retraining a model on new data — expensive and slow — RAG retrieves relevant documents at query time and grounds the LLM's response in that context. This chapter covers the full RAG paradigm: why it works, its core components, how it compares to fine-tuning, and how to evaluate output quality.
+
+## Prerequisites
+
+- Module 11 (LLMs & Prompt Engineering) — understanding of foundation models, context windows, and hallucination
+- Basic Python (functions, classes, list operations)
+- Familiarity with what embeddings are (helpful but introduced in Module 10)
+
 ## Theory
 
 ### 1.1 LLM Limitations
@@ -785,3 +795,62 @@ Answer: C
 4. Design a prompt augmentation strategy that handles multi-chunk contexts (5+ chunks). Include deduplication, relevance ranking, and token budget management.
 
 5. Analyze a sample of 10 LLM responses with and without RAG grounding. Count hallucinated facts in each case and report the reduction rate achieved by RAG.
+
+## Common Mistakes
+
+1. Retrieving too many chunks (k > 10) — excessive context exceeds token limits, dilutes relevance, and increases cost; start with k=3-5
+2. Not grounding the LLM prompt with explicit instructions — without "answer only from context" instructions, the LLM will hallucinate despite having relevant retrieved documents
+3. Using word-level tokenization for embeddings — BPE or SentencePiece tokenization produces better semantic representations for dense retrieval
+4. Ignoring chunk size and overlap — chunks too small lose context; chunks too large dilute relevance; 200-500 tokens with 50-token overlap is a strong starting point
+5. Evaluating RAG with standard LLM metrics only — faithfulness and context precision are RAG-specific metrics that standard BLEU/ROUGE miss entirely
+
+## Revision Notes
+
+- RAG = Retrieve relevant documents, Augment the prompt with context, Generate a grounded response
+- Addresses LLM limitations: knowledge cutoff, hallucination, private data access, domain specificity
+- Core components: Retriever (sparse/dense/hybrid), Index (chunks + embeddings + metadata), Augmenter (prompt formatting), Generator (LLM)
+- Sparse retrieval (BM25): keyword-based, fast, misses semantic matches; Dense retrieval: embedding-based, captures semantics
+- RAG vs Fine-Tuning: RAG updates knowledge in real-time, better for privacy; fine-tuning better for behavior/style changes
+- Key evaluation metrics: faithfulness (response matches context), answer relevance (response addresses query), context precision (retrieved chunks are relevant)
+- Chunking strategies: fixed-size, sentence-based, recursive, semantic — each affects retrieval quality
+- Prompt augmentation: explicit grounding instructions, numbered chunk references, context before query
+
+## Summary
+
+Retrieval-Augmented Generation addresses fundamental LLM limitations — knowledge cutoff, hallucination, and private data inaccessibility — by retrieving relevant external documents before generation. The RAG pipeline follows three steps: retrieve relevant chunks from a knowledge base, augment the LLM prompt with that context, and generate a grounded response. Core components include the retriever (sparse BM25, dense embedding search, or hybrid), the document index (chunks + embeddings + metadata), the prompt augmenter (formatting and grounding instructions), and the LLM generator. RAG outperforms fine-tuning and prompt engineering for knowledge freshness and hallucination reduction. Evaluating RAG requires specialized metrics: faithfulness (response-context consistency), answer relevance (query-response alignment), and context precision (retrieval quality).
+
+## Placement Section
+
+### Top 10 Interview Questions
+
+#### Google Style
+1. Design a RAG system that serves 10 million documents across 5 languages. How do you handle multilingual retrieval, chunking, and cross-lingual search?
+2. Explain the mathematical foundation of cosine similarity vs dot product for dense retrieval and when you would choose each
+
+#### Amazon Style
+1. A RAG-powered internal search system returns irrelevant chunks for technical queries. Walk through your debugging process from retrieval to generation
+2. How would you implement access control in a RAG system where different users can only retrieve documents they're authorized to see?
+
+#### Microsoft Style
+1. How do you explain the value of RAG vs simply increasing an LLM's context window to a technical stakeholder?
+2. A RAG system's faithfulness score is 0.6 but answer relevance is 0.9. What does this mismatch indicate and how do you fix it?
+
+#### NVIDIA Style
+1. Your RAG pipeline embeds 10 million documents using a sentence-transformer model. How do you optimize the embedding and indexing process for GPU acceleration?
+2. A real-time RAG system needs sub-100ms retrieval latency across 50 million chunks. What vector database architecture and indexing strategy do you choose?
+
+#### AI Startup Style
+1. Build a RAG Q&A system over a startup's 500-page internal wiki. What chunking strategy, embedding model, and retrieval approach do you use?
+2. Your RAG system's context precision is 0.4 — retrieved chunks are mostly irrelevant. Identify the three most likely causes and your fixes for each
+
+### Resume Tips
+- List "RAG" and "Vector Search" under Technical Skills with specific tools (FAISS, Pinecone, Weaviate, ChromaDB)
+- Project example: "Built RAG pipeline over 10K documents achieving faithfulness=0.92 and context precision=0.87 using BGE embeddings and hybrid retrieval"
+- Mention evaluation rigor: "Implemented RAGAS evaluation framework, reducing hallucination rate from 25% to 8% through prompt augmentation optimization"
+
+### Interview Day Checklist
+- [ ] Can describe the RAG pipeline (retrieve → augment → generate) from memory
+- [ ] Can explain sparse vs dense retrieval with specific pros and cons
+- [ ] Can describe 3 chunking strategies and their trade-offs
+- [ ] Can explain faithfulness, answer relevance, and context precision metrics
+- [ ] Can outline a complete RAG evaluation framework

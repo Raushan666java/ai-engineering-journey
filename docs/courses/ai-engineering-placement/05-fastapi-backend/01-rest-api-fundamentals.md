@@ -37,6 +37,17 @@ flowchart LR
     G --> H[OpenAPI Docs]
 ```
 
+## Introduction
+
+REST APIs are the backbone of every AI engineering system — from serving model predictions to orchestrating multi-service ML pipelines. Whether you're building a FastAPI endpoint for real-time inference or integrating with third-party AI services, understanding HTTP semantics, resource design, and error handling is non-negotiable. This chapter gives you the principles and patterns to design APIs that are scalable, maintainable, and developer-friendly.
+
+## Prerequisites
+
+- Basic Python knowledge (variables, functions, classes)
+- Familiarity with HTTP concepts (GET, POST, status codes)
+- Terminal/command line usage
+- Reference: Module 04 (Python Fundamentals) for syntax review
+
 ## Theory
 
 ### 1.1 REST Constraints
@@ -637,5 +648,64 @@ d) Client-side rendering
 **Hard** — Design and implement an API versioning strategy. Create v1 and v2 of a `/users` endpoint where v2 adds phone number and removes deprecated fields. Implement deprecation headers and a 6-month migration simulation.
 
 ---
+
+## Common Mistakes
+
+1. Using verbs in URLs (`/getUser`) instead of plural nouns (`/users`) — REST resources are nouns, HTTP methods are the verbs
+2. Returning 200 OK for error responses — always use appropriate 4xx/5xx status codes so clients can handle errors programmatically
+3. Ignoring idempotency — POST is not idempotent, so retrying it creates duplicates; use PUT for idempotent operations
+4. Using offset-based pagination for real-time data — offsets skip/duplicate items when data changes between requests; use cursor-based pagination
+5. Missing content-type headers — always set `Content-Type: application/json` on requests and responses
+
+## Revision Notes
+
+- REST has 6 constraints: uniform interface, stateless, cacheable, client-server, layered system, code on demand
+- HTTP methods map to CRUD: GET (read), POST (create), PUT (replace), PATCH (partial update), DELETE (remove)
+- Status codes: 2xx success, 3xx redirect, 4xx client error, 5xx server error
+- URLs use plural nouns, lowercase with hyphens, max 3 levels of nesting
+- Cursor-based pagination is stable under writes; offset-based is simpler but inconsistent
+- RFC 7807 Problem Details provides a consistent error response structure
+- API versioning via URL path (`/api/v1/`) is the most explicit and common strategy
+- OpenAPI/Swagger auto-generates documentation from FastAPI type hints
+
+## Summary
+
+REST APIs define how distributed systems communicate through six architectural constraints. HTTP methods map directly to CRUD operations with specific idempotency and safety guarantees. Proper URL design uses plural nouns and consistent naming conventions. Status codes communicate results precisely — 201 for creation, 204 for deletion, 422 for validation errors. Pagination should use cursors for consistency, and errors should follow RFC 7807 Problem Details. FastAPI's type-hint-driven approach auto-generates OpenAPI documentation, making API design and documentation a single step.
+
+## Placement Section
+
+### Top 10 Interview Questions
+
+#### Google Style
+1. Design a REST API for a global ride-sharing service with millions of drivers and riders. How do you handle versioning, pagination, and rate limiting at scale?
+2. Explain how HATEOAS works and why most production APIs choose not to implement it fully
+
+#### Amazon Style
+1. A client retries a failed POST request and creates duplicate records. How do you redesign the API to prevent this while maintaining backward compatibility?
+2. Your API serves 50,000 RPS. How do you design the pagination, filtering, and sorting endpoints to handle this load without database bottlenecks?
+
+#### Microsoft Style
+1. Two teams are building microservices that share a user resource. How do you ensure API consistency and prevent breaking changes across teams?
+2. Explain how you would implement API versioning with a deprecation strategy for a platform with 10,000 active API consumers
+
+#### NVIDIA Style
+1. An ML inference API needs to return streaming responses for long-running generation tasks. How do you design the HTTP interface for streaming while maintaining REST conventions?
+2. A model serving API must handle requests ranging from 1KB text to 50MB image payloads. How do you design the endpoint structure and content negotiation?
+
+#### AI Startup Style
+1. You're building an API that wraps multiple LLM providers (OpenAI, Anthropic, local models). How do you design a unified REST interface that abstracts provider differences?
+2. Your startup needs to ship a REST API MVP in one week. What do you implement first and what do you deliberately skip?
+
+### Resume Tips
+- List "REST API Design" under Technical Skills alongside FastAPI, OpenAPI, and HTTP protocol knowledge
+- Project example: "Designed and implemented a RESTful API with 15 endpoints, cursor-based pagination, and RFC 7807 error handling using FastAPI"
+- Mention API-specific metrics: "Achieved 99.9% uptime serving 10K RPS with proper status code handling and rate limiting"
+
+### Interview Day Checklist
+- [ ] Can explain all 6 REST constraints without notes
+- [ ] Can draw the HTTP method ↔ CRUD mapping with idempotency/safety columns from memory
+- [ ] Can design a REST API for a given domain (e.g., bookstore, task manager) in under 5 minutes
+- [ ] Can explain the difference between PUT and PATCH with a concrete example
+- [ ] Can describe cursor-based pagination implementation from memory
 
 > **Next**: [FastAPI Basics](02-fastapi-basics.md)

@@ -35,6 +35,16 @@ flowchart LR
     F --> G[Practice Problems]
 ```
 
+## Introduction
+
+Understanding time and space complexity is the foundation of every technical interview and the first step toward building efficient AI systems. When an ML training loop takes 10 hours instead of 2, or a vector search query times out at scale, the root cause almost always traces back to algorithmic complexity. This chapter teaches you how to analyze any algorithm's performance before writing a single line of code, a skill that separates senior engineers from beginners.
+
+## Prerequisites
+
+- Basic understanding of Python or TypeScript loops, recursion, and functions
+- Familiarity with arrays and basic data structures
+- No prior algorithms course required — this is the starting point
+
 ## Theory
 
 ### 1.1 Asymptotic Notations
@@ -936,5 +946,63 @@ d) O(n�)
 **Hard** � Given an array of n integers, find the majority element (appears more than n/2 times) in O(n) time and O(1) space using Boyer-Moore voting algorithm. Explain why the algorithm works.
 
 ---
+
+## Common Mistakes
+
+1. Confusing Big-O with Big-Theta — Big-O is an upper bound, not an exact count; saying "bubble sort is O(n)" is wrong
+2. Ignoring constant factors for small inputs — O(n log n) is not always faster than O(n^2) for n < 50 due to overhead
+3. Forgetting to count auxiliary space — an algorithm creating a copy of the input uses O(n) space even if the loop is O(n)
+4. Assuming all recursive algorithms are O(2^n) — binary search recurses but is O(log n) because it halves the problem
+5. Mixing up amortized and worst-case — dynamic array append is O(1) amortized but O(n) worst-case; interviewers ask for both
+
+## Revision Notes
+
+- Big-O = upper bound (worst case), Big-Omega = lower bound (best case), Big-Theta = tight bound (average when bounds match)
+- Growth rate hierarchy: O(1) < O(log n) < O(n) < O(n log n) < O(n^2) < O(n^3) < O(2^n) < O(n!)
+- Single loop = O(n), nested loops = O(n^2), divide-by-2 loop = O(log n)
+- Recurrence relations solved with Master Theorem: T(n) = aT(n/b) + f(n)
+- Space complexity = auxiliary space + stack space (recursion depth)
+- In-place algorithms use O(1) auxiliary space; out-of-place create copies
+- Amortized analysis averages expensive operations over sequences — dynamic array append = O(1) amortized
+
+## Summary
+
+This chapter establishes the mathematical foundation for analyzing algorithm efficiency. You learned asymptotic notations (Big-O, Big-Omega, Big-Theta) and how to apply them to iterative and recursive algorithms. The Master Theorem provides a systematic way to solve recurrence relations. Space complexity analysis covers auxiliary and stack space, while amortized analysis gives realistic average costs for data structures like dynamic arrays. These concepts directly inform every data structure and algorithm decision in your engineering career.
+
+## Placement Section
+
+### Top 10 Interview Questions
+
+#### Google Style
+1. Given an algorithm with recurrence T(n) = 4T(n/2) + n^2, determine its complexity using the Master Theorem and explain which case applies
+2. Design a data structure that supports O(1) insert, O(1) delete, and O(1) getMin — discuss how amortized analysis validates your design choices
+
+#### Amazon Style
+1. You have a service that processes 1 million requests per day. How do you analyze whether the current algorithm is scalable to 100 million requests?
+2. Describe a situation where you optimized an algorithm's time complexity and the real-world impact it had on system performance
+
+#### Microsoft Style
+1. How would you explain Big-O notation to a non-technical product manager who wants to understand why a feature is slow?
+2. A legacy system uses an O(n^2) algorithm that worked fine for 1000 records but now must handle 100,000. Walk through your approach to redesigning it
+
+#### NVIDIA Style
+1. A GPU kernel processes N data points with an O(n log n) algorithm. How does memory access pattern and cache behavior affect actual performance beyond the theoretical complexity?
+2. You need to choose between an O(n) algorithm with poor cache locality and an O(n log n) algorithm with sequential memory access for a 10GB dataset. Which do you choose and why?
+
+#### AI Startup Style
+1. An ML training pipeline preprocesses 10 million records in O(n^2) time. How would you restructure the preprocessing to achieve O(n log n) or better?
+2. Your inference API has p99 latency of 2 seconds. Profiling shows the bottleneck is an O(n) linear scan over a 50,000-element feature vector. Propose three optimization approaches
+
+### Resume Tips
+- List "Time Complexity Analysis" under Technical Skills with specific algorithms you can analyze (binary search, merge sort, hash tables)
+- Describe projects with complexity-aware language: "Reduced query processing from O(n^2) to O(n log n) using indexed data structures, improving p99 latency by 40%"
+- Include a "CS Fundamentals" section if space permits, listing asymptotic analysis, recurrence relations, and amortized analysis
+
+### Interview Day Checklist
+- [ ] Can derive Big-O for any loop structure (single, nested, dependent) in under 60 seconds
+- [ ] Can solve a recurrence relation using the Master Theorem without notes
+- [ ] Can explain the difference between time and space complexity with a concrete trade-off example
+- [ ] Can state best, average, and worst-case for binary search, merge sort, and quicksort from memory
+- [ ] Can explain amortized analysis using the dynamic array append example
 
 > **Next**: [02 � Arrays ?](02-arrays.md)

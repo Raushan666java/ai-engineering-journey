@@ -11,6 +11,14 @@
 | LO5 | Build trees from traversal sequences |
 | LO6 | Apply DFS and BFS strategies to binary tree problems |
 
+## Introduction
+
+Heaps (priority queues) are specialized trees that efficiently provide the minimum or maximum element. They are essential for scheduling, top-K problems, and implementing algorithms like Dijkstra's shortest path.
+
+## Prerequisites
+
+- Binary tree basics
+- Array representation of trees
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -462,4 +470,53 @@ a) Queue  b) Stack  c) Deque  d) Priority Queue
 
 ---
 
-> **Next**: [10 - Binary Search Trees ?](10-binary-search-trees.md)
+
+## Common Mistakes
+
+1. Not understanding 0-indexed vs 1-indexed heap
+2. Forgetting to heapify after modifications
+3. Using heap when a sorted array suffices
+4. Not considering the O(n) build-heap vs O(n log n) inserts
+5. Confusing min-heap with max-heap
+## Revision Notes
+
+- Min-heap: parent ≤ children
+- Max-heap: parent ≥ children
+- Insert: O(log n), Extract-min: O(log n)
+- Build heap from array: O(n)
+- Used in heapsort, Dijkstra, and top-K problems
+## Placement Section
+
+### Top 10 Interview Questions
+
+#### Google Style
+1. Explain the time and space trade-offs of data structures algorithms. When would you choose one approach over another?
+2. Design a system that efficiently handles data structures algorithms at scale (millions of requests/second).
+
+#### Amazon Style
+1. Tell me about a time you had to optimize a system related to data structures algorithms. What was your approach and what was the result?
+2. How would you explain data structures algorithms to a non-technical stakeholder?
+
+#### Microsoft Style
+1. How does data structures algorithms integrate with enterprise systems and cloud architectures?
+2. What are the security implications of data structures algorithms?
+
+#### NVIDIA Style
+1. How would you optimize data structures algorithms for GPU-accelerated computing?
+2. What parallel processing patterns apply to data structures algorithms?
+
+#### AI Startup Style
+1. How would you implement data structures algorithms in a cost-effective, scalable way for a startup?
+2. What's the fastest way to prototype a solution using data structures algorithms?
+
+### Resume Tips
+- **Technical Skills**: List data structures algorithms under relevant technical skills
+- **Project Description**: "Implemented data structures algorithms to [specific outcome], reducing [metric] by [X]%"
+- **Keywords**: Include data structures algorithms in your skills section for ATS optimization
+
+### Interview Day Checklist
+- [ ] Review core concepts of data structures algorithms
+- [ ] Practice 3-5 problems related to data structures algorithms
+- [ ] Prepare 2 real-world examples of using data structures algorithms
+- [ ] Know the time/space complexity of common data structures algorithms operations
+- [ ] Have questions ready about how the company uses data structures algorithms> **Next**: [10 - Binary Search Trees ?](10-binary-search-trees.md)

@@ -9,6 +9,14 @@
 | LO3 | Evaluate data requirements for successful fine-tuning |
 | LO4 | Identify scenarios where fine-tuning is not appropriate |
 
+## Introduction
+
+14-fine-tuning-peft is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+
+## Prerequisites
+
+- Basic programming knowledge
+- Understanding of data structures
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -592,7 +600,14 @@ Answer: B
 
 ## Exercises
 
-1. Build a decision tree classifier that takes a task description and recommends prompting, RAG, or fine-tuning with confidence scores.
+
+## Common Mistakes
+
+1. Not understanding the fundamental concepts before applying them
+2. Skipping edge cases in implementation
+3. Not analyzing time/space complexity
+4. Forgetting to handle null/empty inputs
+5. Not practicing enough problems to build pattern recognition1. Build a decision tree classifier that takes a task description and recommends prompting, RAG, or fine-tuning with confidence scores.
 
 2. Calculate the break-even point for a 7B model: training costs $1,500 (LoRA), inference costs $0.002/query baseline vs $0.001 after FT. How many queries to break even?
 
@@ -600,4 +615,48 @@ Answer: B
 
 4. Build a data quality scorer that evaluates a dataset on correctness, consistency, coverage, and noise. Score 3 sample datasets and recommend which are FT-ready.
 
-5. Compare the total cost (training + 6 months inference) across prompting, RAG, LoRA, and full FT for a scenario with 10K queries/day and 7B model. Show a cost-quality tradeoff chart.
+5. Compare the total cost (training + 6 months inference) across prompting, RAG, LoRA, and full FT for a scenario with 10K queries/day and 7B model. Show a cost-quality tradeo
+## Revision Notes
+
+- Key concept 1: Core principle of 14-fine-tuning-peft
+- Key concept 2: Common implementation pattern
+- Key concept 3: Time/space complexity to remember
+- Key concept 4: When to apply this technique
+- Key concept 5: Common interview pattern
+- Key concept 6: Edge cases to handle
+- Key concept 7: Related concepts for deeper understanding
+## Placement Section
+
+### Top 10 Interview Questions
+
+#### Google Style
+1. Explain the time and space trade-offs of 14-fine-tuning-peft. When would you choose one approach over another?
+2. Design a system that efficiently handles 14-fine-tuning-peft at scale (millions of requests/second).
+
+#### Amazon Style
+1. Tell me about a time you had to optimize a system related to 14-fine-tuning-peft. What was your approach and what was the result?
+2. How would you explain 14-fine-tuning-peft to a non-technical stakeholder?
+
+#### Microsoft Style
+1. How does 14-fine-tuning-peft integrate with enterprise systems and cloud architectures?
+2. What are the security implications of 14-fine-tuning-peft?
+
+#### NVIDIA Style
+1. How would you optimize 14-fine-tuning-peft for GPU-accelerated computing?
+2. What parallel processing patterns apply to 14-fine-tuning-peft?
+
+#### AI Startup Style
+1. How would you implement 14-fine-tuning-peft in a cost-effective, scalable way for a startup?
+2. What's the fastest way to prototype a solution using 14-fine-tuning-peft?
+
+### Resume Tips
+- **Technical Skills**: List 14-fine-tuning-peft under relevant technical skills
+- **Project Description**: "Implemented 14-fine-tuning-peft to [specific outcome], reducing [metric] by [X]%"
+- **Keywords**: Include 14-fine-tuning-peft in your skills section for ATS optimization
+
+### Interview Day Checklist
+- [ ] Review core concepts of 14-fine-tuning-peft
+- [ ] Practice 3-5 problems related to 14-fine-tuning-peft
+- [ ] Prepare 2 real-world examples of using 14-fine-tuning-peft
+- [ ] Know the time/space complexity of common 14-fine-tuning-peft operations
+- [ ] Have questions ready about how the company uses 14-fine-tuning-peftff chart.

@@ -11,6 +11,14 @@
 | LO5 | Implement pattern-matching and grouping problems such as group anagrams and isomorphic strings |
 | LO6 | Analyze time-space tradeoffs when choosing between hash-based and alternative approaches |
 
+## Introduction
+
+Hash maps provide O(1) average-case lookup, insertion, and deletion. They are the go-to data structure for frequency counting, caching, and implementing sets. Understanding hash collisions and when to use hash maps vs arrays is essential.
+
+## Prerequisites
+
+- Array basics
+- Basic understanding of hashing
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -770,7 +778,14 @@ console.log(longestConsecutive([100, 4, 200, 1, 3, 2])); // 4
 
 ## Exercises
 
-### Exercise 1 (Easy): Jewels and Stones
+
+## Common Mistakes
+
+1. Not handling hash collisions
+2. Using mutable objects as keys
+3. Forgetting that hash maps have O(n) worst case
+4. Not considering memory overhead
+5. When to use map vs set vs array### Exercise 1 (Easy): Jewels and Stones
 
 You are given strings `jewels` representing types of stones that are jewels, and `stones` representing the stones you have. Return how many of the stones you have are also jewels.
 
@@ -917,4 +932,46 @@ print(min_window(s, t))  # "BANC"
 
 ---
 
-[← Previous: Two Pointers](05-two-pointers.md) | [Next: Linked Lists →](07-linked-lists.md)
+[← Previous: Two Pointers](05-two-pointers.md) | [Next: Linked Lists →](07-linked-
+## Revision Notes
+
+- Hash map: O(1) avg lookup/insert/delete
+- Hash set: O(1) membership testing
+- Collision resolution: chaining vs open addressing
+- Use for frequency counting and two-sum patterns
+- Ordered map for sorted key requirements
+## Placement Section
+
+### Top 10 Interview Questions
+
+#### Google Style
+1. Explain the time and space trade-offs of data structures algorithms. When would you choose one approach over another?
+2. Design a system that efficiently handles data structures algorithms at scale (millions of requests/second).
+
+#### Amazon Style
+1. Tell me about a time you had to optimize a system related to data structures algorithms. What was your approach and what was the result?
+2. How would you explain data structures algorithms to a non-technical stakeholder?
+
+#### Microsoft Style
+1. How does data structures algorithms integrate with enterprise systems and cloud architectures?
+2. What are the security implications of data structures algorithms?
+
+#### NVIDIA Style
+1. How would you optimize data structures algorithms for GPU-accelerated computing?
+2. What parallel processing patterns apply to data structures algorithms?
+
+#### AI Startup Style
+1. How would you implement data structures algorithms in a cost-effective, scalable way for a startup?
+2. What's the fastest way to prototype a solution using data structures algorithms?
+
+### Resume Tips
+- **Technical Skills**: List data structures algorithms under relevant technical skills
+- **Project Description**: "Implemented data structures algorithms to [specific outcome], reducing [metric] by [X]%"
+- **Keywords**: Include data structures algorithms in your skills section for ATS optimization
+
+### Interview Day Checklist
+- [ ] Review core concepts of data structures algorithms
+- [ ] Practice 3-5 problems related to data structures algorithms
+- [ ] Prepare 2 real-world examples of using data structures algorithms
+- [ ] Know the time/space complexity of common data structures algorithms operations
+- [ ] Have questions ready about how the company uses data structures algorithmslists.md)

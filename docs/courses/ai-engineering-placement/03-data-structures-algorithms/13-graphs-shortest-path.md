@@ -11,6 +11,14 @@
 | LO5 | Compare graphs shortest path with alternative approaches for different scenarios |
 | LO6 | Master advanced graphs shortest path techniques for complex problem solving |
 
+## Introduction
+
+Backtracking systematically explores all possible solutions by building candidates incrementally and abandoning invalid ones. It is essential for constraint satisfaction problems, permutations, combinations, and puzzles.
+
+## Prerequisites
+
+- Recursion basics
+- Array/string operations
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -441,4 +449,53 @@ d) Option D - Fourth choice
 
 ---
 
-> **Next**: [14 Graphs Topological Sort →](14-graphs-topological-sort.md)
+
+## Common Mistakes
+
+1. Not pruning search space early
+2. Forgetting to undo changes after recursive call
+3. Not handling duplicates correctly
+4. Using backtracking when a greedy approach works
+5. Not considering the time complexity (often exponential)
+## Revision Notes
+
+- Backtracking = DFS + pruning
+- Build candidate incrementally
+- Undo changes when backtracking
+- Used for permutations, combinations, Sudoku
+- Time complexity is typically O(2^n) or O(n!)
+## Placement Section
+
+### Top 10 Interview Questions
+
+#### Google Style
+1. Explain the time and space trade-offs of data structures algorithms. When would you choose one approach over another?
+2. Design a system that efficiently handles data structures algorithms at scale (millions of requests/second).
+
+#### Amazon Style
+1. Tell me about a time you had to optimize a system related to data structures algorithms. What was your approach and what was the result?
+2. How would you explain data structures algorithms to a non-technical stakeholder?
+
+#### Microsoft Style
+1. How does data structures algorithms integrate with enterprise systems and cloud architectures?
+2. What are the security implications of data structures algorithms?
+
+#### NVIDIA Style
+1. How would you optimize data structures algorithms for GPU-accelerated computing?
+2. What parallel processing patterns apply to data structures algorithms?
+
+#### AI Startup Style
+1. How would you implement data structures algorithms in a cost-effective, scalable way for a startup?
+2. What's the fastest way to prototype a solution using data structures algorithms?
+
+### Resume Tips
+- **Technical Skills**: List data structures algorithms under relevant technical skills
+- **Project Description**: "Implemented data structures algorithms to [specific outcome], reducing [metric] by [X]%"
+- **Keywords**: Include data structures algorithms in your skills section for ATS optimization
+
+### Interview Day Checklist
+- [ ] Review core concepts of data structures algorithms
+- [ ] Practice 3-5 problems related to data structures algorithms
+- [ ] Prepare 2 real-world examples of using data structures algorithms
+- [ ] Know the time/space complexity of common data structures algorithms operations
+- [ ] Have questions ready about how the company uses data structures algorithms> **Next**: [14 Graphs Topological Sort →](14-graphs-topological-sort.md)

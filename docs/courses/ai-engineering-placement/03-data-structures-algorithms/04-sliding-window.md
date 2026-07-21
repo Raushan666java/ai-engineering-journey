@@ -11,6 +11,14 @@
 | LO5 | Optimize nested loop solutions to O(n) using the sliding window technique |
 | LO6 | Identify when sliding window is applicable (contiguous, monotonic condition) |
 
+## Introduction
+
+Linked lists form the backbone of many advanced data structures like stacks, queues, and graphs. Mastering pointer manipulation and linked list algorithms is a classic interview topic that tests your understanding of memory and data organization.
+
+## Prerequisites
+
+- Basic programming
+- Understanding of pointers/references
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -813,4 +821,53 @@ d) Minimum window substring
 
 ---
 
-> **Next**: [05 � Two Pointers ?](05-two-pointers.md)
+
+## Common Mistakes
+
+1. Losing reference to remaining list during traversal
+2. Not handling edge cases (empty list, single node)
+3. Forgetting to update head/tail pointers
+4. Infinite loops from incorrect cycle detection
+5. Not using dummy nodes for simplification
+## Revision Notes
+
+- Singly linked: O(1) insert/delete at head
+- Doubly linked: O1 insert/delete with reference
+- Fast/slow pointer for cycle detection
+- Dummy node simplifies edge cases
+- Reversing a linked list is O(n) time O(1) space
+## Placement Section
+
+### Top 10 Interview Questions
+
+#### Google Style
+1. Explain the time and space trade-offs of data structures algorithms. When would you choose one approach over another?
+2. Design a system that efficiently handles data structures algorithms at scale (millions of requests/second).
+
+#### Amazon Style
+1. Tell me about a time you had to optimize a system related to data structures algorithms. What was your approach and what was the result?
+2. How would you explain data structures algorithms to a non-technical stakeholder?
+
+#### Microsoft Style
+1. How does data structures algorithms integrate with enterprise systems and cloud architectures?
+2. What are the security implications of data structures algorithms?
+
+#### NVIDIA Style
+1. How would you optimize data structures algorithms for GPU-accelerated computing?
+2. What parallel processing patterns apply to data structures algorithms?
+
+#### AI Startup Style
+1. How would you implement data structures algorithms in a cost-effective, scalable way for a startup?
+2. What's the fastest way to prototype a solution using data structures algorithms?
+
+### Resume Tips
+- **Technical Skills**: List data structures algorithms under relevant technical skills
+- **Project Description**: "Implemented data structures algorithms to [specific outcome], reducing [metric] by [X]%"
+- **Keywords**: Include data structures algorithms in your skills section for ATS optimization
+
+### Interview Day Checklist
+- [ ] Review core concepts of data structures algorithms
+- [ ] Practice 3-5 problems related to data structures algorithms
+- [ ] Prepare 2 real-world examples of using data structures algorithms
+- [ ] Know the time/space complexity of common data structures algorithms operations
+- [ ] Have questions ready about how the company uses data structures algorithms> **Next**: [05 � Two Pointers ?](05-two-pointers.md)

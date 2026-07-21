@@ -9,6 +9,14 @@
 | LO3 | Detect and mitigate overfitting during fine-tuning |
 | LO4 | Evaluate loss curves and model convergence |
 
+## Introduction
+
+14-fine-tuning-peft is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+
+## Prerequisites
+
+- Basic programming knowledge
+- Understanding of data structures
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -650,7 +658,14 @@ Answer: B
 
 ## Exercises
 
-1. Implement a full training loop with gradient accumulation. Train for 5 epochs with batch_size=2 and accumulation_steps=8 (effective batch=16). Track loss every step.
+
+## Common Mistakes
+
+1. Not understanding the fundamental concepts before applying them
+2. Skipping edge cases in implementation
+3. Not analyzing time/space complexity
+4. Forgetting to handle null/empty inputs
+5. Not practicing enough problems to build pattern recognition1. Implement a full training loop with gradient accumulation. Train for 5 epochs with batch_size=2 and accumulation_steps=8 (effective batch=16). Track loss every step.
 
 2. Build an overfitting detector that monitors validation loss with patience=3 and min_delta=0.05. Test with increasing, stable, and diverging validation losses.
 
@@ -658,4 +673,48 @@ Answer: B
 
 4. Implement a hyperparameter grid search over LR [1e-5, 2e-5, 5e-5] and batch_size [4, 8, 16]. Report the best combination based on final validation loss.
 
-5. Build a memory estimator for full FT. Given model_size_b (7, 13, 70), batch_size, and seq_len, estimate GPU memory and recommend a GPU type (T4, A10G, A100).
+5. Build a memory estimator for full FT. Given model_size_b (7, 13, 70), batch_size, and seq_len, estimate GPU memory and recommend a GPU type (T4, A10
+## Revision Notes
+
+- Key concept 1: Core principle of 14-fine-tuning-peft
+- Key concept 2: Common implementation pattern
+- Key concept 3: Time/space complexity to remember
+- Key concept 4: When to apply this technique
+- Key concept 5: Common interview pattern
+- Key concept 6: Edge cases to handle
+- Key concept 7: Related concepts for deeper understanding
+## Placement Section
+
+### Top 10 Interview Questions
+
+#### Google Style
+1. Explain the time and space trade-offs of 14-fine-tuning-peft. When would you choose one approach over another?
+2. Design a system that efficiently handles 14-fine-tuning-peft at scale (millions of requests/second).
+
+#### Amazon Style
+1. Tell me about a time you had to optimize a system related to 14-fine-tuning-peft. What was your approach and what was the result?
+2. How would you explain 14-fine-tuning-peft to a non-technical stakeholder?
+
+#### Microsoft Style
+1. How does 14-fine-tuning-peft integrate with enterprise systems and cloud architectures?
+2. What are the security implications of 14-fine-tuning-peft?
+
+#### NVIDIA Style
+1. How would you optimize 14-fine-tuning-peft for GPU-accelerated computing?
+2. What parallel processing patterns apply to 14-fine-tuning-peft?
+
+#### AI Startup Style
+1. How would you implement 14-fine-tuning-peft in a cost-effective, scalable way for a startup?
+2. What's the fastest way to prototype a solution using 14-fine-tuning-peft?
+
+### Resume Tips
+- **Technical Skills**: List 14-fine-tuning-peft under relevant technical skills
+- **Project Description**: "Implemented 14-fine-tuning-peft to [specific outcome], reducing [metric] by [X]%"
+- **Keywords**: Include 14-fine-tuning-peft in your skills section for ATS optimization
+
+### Interview Day Checklist
+- [ ] Review core concepts of 14-fine-tuning-peft
+- [ ] Practice 3-5 problems related to 14-fine-tuning-peft
+- [ ] Prepare 2 real-world examples of using 14-fine-tuning-peft
+- [ ] Know the time/space complexity of common 14-fine-tuning-peft operations
+- [ ] Have questions ready about how the company uses 14-fine-tuning-peftG, A100).

@@ -37,6 +37,16 @@ flowchart LR
     G -->|Yes| I[Deploy]
 ```
 
+## Introduction
+
+Machine learning fundamentals are the bedrock of every AI engineering role — from building recommendation systems to training production classifiers. Before you can fine-tune a transformer or deploy an ML model, you must master data preprocessing, bias-variance analysis, train/test splitting, and evaluation metrics. This chapter provides the theoretical and practical foundation that every subsequent module in this course builds upon.
+
+## Prerequisites
+
+- Basic Python or TypeScript (functions, arrays, classes)
+- High school statistics (mean, standard deviation, probability)
+- Familiarity with linear algebra concepts (vectors, matrices) is helpful but not required
+
 ## Theory
 
 ### 1.1 ML Paradigms
@@ -509,5 +519,64 @@ d) Feature importance
 **Hard** — Build a hyperparameter search using k-fold CV that finds the optimal regularization strength for a model by testing 10 different values and selecting the one with best mean validation score.
 
 ---
+
+## Common Mistakes
+
+1. Using accuracy for imbalanced datasets — 99% accuracy on a dataset with 99% negative class means the model learns nothing; use F1 or ROC-AUC
+2. Fitting the preprocessor on the entire dataset before splitting — this leaks test statistics into training; always fit on train set only
+3. Ignoring the bias-variance trade-off — adding more features reduces bias but increases variance; you must monitor both training and validation metrics
+4. Using a single train/test split for model comparison — cross-validation gives more robust estimates; a single lucky split can mislead
+5. Dropping rows with missing values without analysis — missing data often carries information (e.g., "not applicable"); imputation preserves more signal
+
+## Revision Notes
+
+- Supervised learning uses labeled data; unsupervised finds patterns in unlabeled data; reinforcement learning uses reward signals
+- Bias = error from underfitting (too simple); Variance = error from overfitting (too complex)
+- Standardization: (x - mean) / std, preferred for most algorithms; Normalization: (x - min) / (max - min)
+- Train/test split (80/20) with stratification preserves class proportions; k-fold CV gives robust estimates
+- Accuracy, Precision, Recall, F1, ROC-AUC — choose based on class balance and business cost of errors
+- Confusion matrix: TP, TN, FP, FN — all classification metrics derive from these four values
+- Learning curves: high training + high validation error = underfitting; low training + high validation error = overfitting
+- Always preprocess test data using statistics from training data only to prevent data leakage
+
+## Summary
+
+Machine learning fundamentals form the theoretical and practical base for all AI engineering work. The three learning paradigms — supervised, unsupervised, and reinforcement — each serve different problem types. The bias-variance trade-off explains why models underfit or overfit and guides model selection. Data preprocessing (standardization, encoding, missing value imputation) is critical for model performance. Train/test splitting with stratification and k-fold cross-validation provide reliable performance estimates. Evaluation metrics beyond accuracy — precision, recall, F1, ROC-AUC — are essential for imbalanced real-world datasets.
+
+## Placement Section
+
+### Top 10 Interview Questions
+
+#### Google Style
+1. You have a dataset with 1 million samples and 500 features. Walk through your complete ML pipeline from preprocessing to evaluation, explaining each decision
+2. Explain the bias-variance trade-off mathematically and describe how you would diagnose each in a production model
+
+#### Amazon Style
+1. A fraud detection model has 99.5% accuracy but is failing to catch actual fraud. How do you redesign the evaluation approach and retrain the model?
+2. Describe a machine learning project where data quality issues caused model failure. How did you identify and fix the problems?
+
+#### Microsoft Style
+1. How do you explain the difference between precision and recall to a product manager who needs to choose a threshold for a content moderation system?
+2. A model performs well in testing but poorly in production. What are the top 5 reasons and how do you investigate each?
+
+#### NVIDIA Style
+1. A classification model processes 10 million features per sample on GPU. How do you optimize the preprocessing pipeline to leverage parallel computation?
+2. Your training pipeline preprocesses data in O(n^2) time. How do you profile and optimize the bottleneck for large-scale datasets?
+
+#### AI Startup Style
+1. You need to build a sentiment analysis model with only 200 labeled samples. What approaches do you use and how do you evaluate the model reliably?
+2. A startup client wants to predict customer churn but has no ML expertise. How do you frame the problem, choose metrics, and communicate results?
+
+### Resume Tips
+- List "Machine Learning" under Technical Skills with specific libraries (scikit-learn, pandas, NumPy)
+- Project example: "Built end-to-end ML pipeline with stratified cross-validation, achieving F1=0.87 on imbalanced fraud detection dataset"
+- Include ML-specific metrics in project descriptions: "Reduced false negative rate by 35% through threshold optimization and SMOTE oversampling"
+
+### Interview Day Checklist
+- [ ] Can explain bias-variance trade-off with a visual diagram from memory
+- [ ] Can derive precision, recall, F1 from a confusion matrix without notes
+- [ ] Can describe the difference between standardization and normalization and when to use each
+- [ ] Can implement k-fold cross-validation from memory in Python or TypeScript
+- [ ] Can list 3 ways to handle imbalanced datasets
 
 > **Next**: [Linear Regression](02-linear-regression.md)

@@ -11,6 +11,14 @@
 | LO5 | Implement range queries, floor/ceil, and successor/predecessor |
 | LO6 | Convert BST to sorted list and vice versa |
 
+## Introduction
+
+Tries (prefix trees) are specialized trees for efficient string operations. They provide O(m) lookup where m is the key length, making them ideal for autocomplete, spell checking, and IP routing tables.
+
+## Prerequisites
+
+- Tree basics
+- String operations
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -494,4 +502,53 @@ a) Right child  b) Minimum of right subtree  c) Maximum of right subtree  d) Par
 
 ---
 
-> **Next**: [11 - Heaps and Tries ?](11-heaps-and-tries.md)
+
+## Common Mistakes
+
+1. Not handling prefix sharing correctly
+2. Forgetting to mark end-of-word nodes
+3. Not considering memory overhead of tries
+4. Using tries for small datasets where hash maps suffice
+5. Not implementing deletion correctly
+## Revision Notes
+
+- Trie: O(m) search where m = key length
+- Each node represents a character
+- Prefix sharing reduces space
+- Used for autocomplete and spell check
+- Patricia/Radix tries compress common prefixes
+## Placement Section
+
+### Top 10 Interview Questions
+
+#### Google Style
+1. Explain the time and space trade-offs of data structures algorithms. When would you choose one approach over another?
+2. Design a system that efficiently handles data structures algorithms at scale (millions of requests/second).
+
+#### Amazon Style
+1. Tell me about a time you had to optimize a system related to data structures algorithms. What was your approach and what was the result?
+2. How would you explain data structures algorithms to a non-technical stakeholder?
+
+#### Microsoft Style
+1. How does data structures algorithms integrate with enterprise systems and cloud architectures?
+2. What are the security implications of data structures algorithms?
+
+#### NVIDIA Style
+1. How would you optimize data structures algorithms for GPU-accelerated computing?
+2. What parallel processing patterns apply to data structures algorithms?
+
+#### AI Startup Style
+1. How would you implement data structures algorithms in a cost-effective, scalable way for a startup?
+2. What's the fastest way to prototype a solution using data structures algorithms?
+
+### Resume Tips
+- **Technical Skills**: List data structures algorithms under relevant technical skills
+- **Project Description**: "Implemented data structures algorithms to [specific outcome], reducing [metric] by [X]%"
+- **Keywords**: Include data structures algorithms in your skills section for ATS optimization
+
+### Interview Day Checklist
+- [ ] Review core concepts of data structures algorithms
+- [ ] Practice 3-5 problems related to data structures algorithms
+- [ ] Prepare 2 real-world examples of using data structures algorithms
+- [ ] Know the time/space complexity of common data structures algorithms operations
+- [ ] Have questions ready about how the company uses data structures algorithms> **Next**: [11 - Heaps and Tries ?](11-heaps-and-tries.md)

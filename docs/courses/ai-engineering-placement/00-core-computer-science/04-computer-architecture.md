@@ -4,6 +4,14 @@
 
 After this chapter you will be able to identify whether a model inference kernel is compute-bound or memory-bound using the roofline model, reason about cache hierarchy effects on matrix multiplication performance, explain SIMD vectorization and its impact on ML operators, describe NUMA implications for multi-GPU training, and understand GPU architecture fundamentals for writing efficient kernels.
 
+## Introduction
+
+00-core-computer-science is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+
+## Prerequisites
+
+- Basic programming knowledge
+- Understanding of data structures
 ## Theory
 
 ### CPU Pipeline
@@ -531,11 +539,62 @@ Computer architecture knowledge directly translates to faster ML code. The roofl
 
 ## Exercises
 
-1. Write a cache simulator that supports different associativities (direct-mapped, 2-way, 4-way, fully associative) and compare miss rates for a matrix transpose access pattern.
+
+## Common Mistakes
+
+1. Not understanding the fundamental concepts before applying them
+2. Skipping edge cases in implementation
+3. Not analyzing time/space complexity
+4. Forgetting to handle null/empty inputs
+5. Not practicing enough problems to build pattern recognition1. Write a cache simulator that supports different associativities (direct-mapped, 2-way, 4-way, fully associative) and compare miss rates for a matrix transpose access pattern.
 
 2. Use the RooflineAnalyzer to classify three kernel profiles: an embedding lookup (few FLOPs, many bytes), a matrix multiply (many FLOPs, moderate bytes), and a softmax (few FLOPs, few bytes).
 
 3. Implement cache-blocked matrix multiplication (tiling) and count cache misses vs the naive triple loop.
 
-4. Measure the impact of memory access stride on throughput by simulating sequential vs strided access patterns.
+4. Measure the impact of memory access stride on throughput by simulating sequential vs strided access pat
+## Revision Notes
+
+- Key concept 1: Core principle of 00-core-computer-science
+- Key concept 2: Common implementation pattern
+- Key concept 3: Time/space complexity to remember
+- Key concept 4: When to apply this technique
+- Key concept 5: Common interview pattern
+- Key concept 6: Edge cases to handle
+- Key concept 7: Related concepts for deeper understanding
+## Placement Section
+
+### Top 10 Interview Questions
+
+#### Google Style
+1. Explain the time and space trade-offs of 00-core-computer-science. When would you choose one approach over another?
+2. Design a system that efficiently handles 00-core-computer-science at scale (millions of requests/second).
+
+#### Amazon Style
+1. Tell me about a time you had to optimize a system related to 00-core-computer-science. What was your approach and what was the result?
+2. How would you explain 00-core-computer-science to a non-technical stakeholder?
+
+#### Microsoft Style
+1. How does 00-core-computer-science integrate with enterprise systems and cloud architectures?
+2. What are the security implications of 00-core-computer-science?
+
+#### NVIDIA Style
+1. How would you optimize 00-core-computer-science for GPU-accelerated computing?
+2. What parallel processing patterns apply to 00-core-computer-science?
+
+#### AI Startup Style
+1. How would you implement 00-core-computer-science in a cost-effective, scalable way for a startup?
+2. What's the fastest way to prototype a solution using 00-core-computer-science?
+
+### Resume Tips
+- **Technical Skills**: List 00-core-computer-science under relevant technical skills
+- **Project Description**: "Implemented 00-core-computer-science to [specific outcome], reducing [metric] by [X]%"
+- **Keywords**: Include 00-core-computer-science in your skills section for ATS optimization
+
+### Interview Day Checklist
+- [ ] Review core concepts of 00-core-computer-science
+- [ ] Practice 3-5 problems related to 00-core-computer-science
+- [ ] Prepare 2 real-world examples of using 00-core-computer-science
+- [ ] Know the time/space complexity of common 00-core-computer-science operations
+- [ ] Have questions ready about how the company uses 00-core-computer-scienceterns.
 

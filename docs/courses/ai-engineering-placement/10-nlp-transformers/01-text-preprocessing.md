@@ -39,6 +39,16 @@ flowchart LR
     J --> K[Feature Matrix for Downstream Tasks]
 ```
 
+## Introduction
+
+Text preprocessing is the critical first step in every NLP pipeline — before a transformer can understand language, raw text must be tokenized, normalized, and converted to numerical features. Poor preprocessing directly degrades model performance: wrong tokenization splits words incorrectly, skipping stop word removal adds noise, and ignoring Unicode normalization breaks multilingual support. This chapter equips you with the exact skills needed for every subsequent NLP and LLM module.
+
+## Prerequisites
+
+- Python basics (strings, dictionaries, list comprehensions)
+- Basic understanding of what NLP is (processing human language with computers)
+- Module 08 (ML Fundamentals) for feature extraction concepts
+
 ## Theory
 
 ### 1.1 Word Tokenization
@@ -652,5 +662,64 @@ d) Better for English only
 **Hard** — Implement a custom subword regularizer that randomly merges or splits subwords during training (inspired by BART's text infilling). Evaluate how it affects model robustness on a text classification task using a simple classifier.
 
 ---
+
+## Common Mistakes
+
+1. Applying stemming when lemmatization is needed — stemming produces non-dictionary words ("argu" instead of "argue"); use lemmatization for semantic tasks
+2. Removing stop words for sentiment analysis — words like "not" in "not good" carry critical meaning; stop word removal flips the sentiment
+3. Fitting TF-IDF on the entire corpus before splitting — document frequency statistics leak from test to train; always fit on train only
+4. Ignoring Unicode normalization — accented characters (é vs e + ́) produce different tokens without NFKC normalization, breaking multilingual models
+5. Using word tokenization for all languages — Chinese, Japanese, and Thai have no word boundaries; use SentencePiece or subword tokenization
+
+## Revision Notes
+
+- Tokenization splits text into tokens; word-level for English, subword (BPE, WordPiece) for robustness
+- BPE iteratively merges the most frequent character pairs; WordPiece merges by likelihood gain; SentencePiece is language-agnostic
+- Stemming (fast, heuristic, produces non-dictionary words) vs Lemmatization (slower, vocabulary-aware, linguistically valid)
+- Stop word removal helps topic modeling but hurts sentiment analysis and machine translation
+- Vocabulary building: frequency-based truncation, min frequency threshold, special tokens (<pad>, <unk>, <bos>, <eos>)
+- TF-IDF = TF (term frequency in document) × IDF (log(N/df), rarity across corpus)
+- SentencePiece eliminates pre-tokenization, making it work for any language
+- A robust pipeline handles Unicode normalization, HTML entities, URLs, and encoding errors
+
+## Summary
+
+Text preprocessing transforms raw text into structured numerical inputs for NLP models. Word tokenization splits text on whitespace and punctuation, while subword tokenization (BPE, WordPiece, SentencePiece) handles out-of-vocabulary words by decomposing them into frequent subword units. Stemming and lemmatization normalize words to root forms — stemming is fast but crude, lemmatization is accurate but requires POS context. Stop word removal filters uninformative high-frequency words but must be skipped for tasks where function words carry meaning. Vocabulary construction maps tokens to integer IDs with special tokens for padding and unknown words. TF-IDF weighting transforms raw counts into relevance scores based on corpus-wide term importance.
+
+## Placement Section
+
+### Top 10 Interview Questions
+
+#### Google Style
+1. Design a text preprocessing pipeline for a multilingual search engine supporting English, Chinese, and Arabic. What tokenization and normalization strategies do you use?
+2. Explain the mathematical foundation of TF-IDF and why it works better than raw term frequency for information retrieval
+
+#### Amazon Style
+1. Your sentiment analysis model's accuracy dropped from 85% to 60% after adding stop word removal. Explain why this happened and how you would fix it
+2. A customer support system processes 100,000 tickets per day in English and Spanish. How do you design a unified preprocessing pipeline?
+
+#### Microsoft Style
+1. How do you explain the difference between stemming and lemmatization to a product manager who wants "faster text search"?
+2. A production NLP pipeline breaks when processing emoji and special Unicode characters. How do you audit and fix the preprocessing?
+
+#### NVIDIA Style
+1. Your preprocessing pipeline processes 1 million documents but is bottlenecked on tokenization. How do you parallelize and optimize the pipeline on GPU?
+2. A transformer model requires fixed-length input sequences. How do you implement padding and truncation that preserves model performance?
+
+#### AI Startup Style
+1. You need to build a text classifier for customer reviews using TF-IDF + logistic regression. Walk through the complete preprocessing pipeline and feature extraction
+2. Your startup processes user-generated content with spelling errors, slang, and code-switching. How do you make the preprocessing robust to these challenges?
+
+### Resume Tips
+- List "NLP" and "Text Processing" under Technical Skills with specific techniques (tokenization, TF-IDF, BPE)
+- Project example: "Built text preprocessing pipeline handling 1M+ documents with BPE tokenization, reducing OOV rate from 12% to 0.3%"
+- Mention preprocessing in ML/NLP project descriptions: "Implemented multilingual preprocessing with SentencePiece, supporting 5 languages with 98% token coverage"
+
+### Interview Day Checklist
+- [ ] Can explain BPE tokenization algorithm step by step without notes
+- [ ] Can derive TF-IDF formula and explain each component
+- [ ] Can list 3 scenarios where stop word removal should be skipped
+- [ ] Can describe the difference between BPE, WordPiece, and SentencePiece
+- [ ] Can implement a basic text preprocessing pipeline in Python from memory
 
 > **Next**: [Word Embeddings](02-word-embeddings.md)

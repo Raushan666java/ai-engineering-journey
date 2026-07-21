@@ -1,401 +1,868 @@
-# Networking and Security
+# DevOps Automation
 
 ## Learning Objectives
 
 | Objective | Description |
 |-----------|-------------|
-| LO1 | Understand foundational networking and security concepts and their role in software engineering |
-| LO2 | Implement networking and security operations with correct syntax and best practices |
-| LO3 | Apply networking and security patterns to solve common interview problems |
-| LO4 | Analyze time and space complexity of networking and security solutions |
-| LO5 | Compare networking and security with alternative approaches for different scenarios |
-| LO6 | Master advanced networking and security techniques for complex problem solving |
+| LO1 | Understand CI/CD principles and how they accelerate development |
+| LO2 | Create GitHub Actions workflows for building, testing, and deploying |
+| LO3 | Set up pre-commit hooks to enforce code quality before commits |
+| LO4 | Configure automated testing and linting in CI pipelines |
+| LO5 | Implement deployment automation with environments and secrets |
+| LO6 | Apply DevOps best practices for secure, reliable automation |
 
+## Introduction
+
+DevOps automation — CI/CD, GitHub Actions, pre-commit hooks — ensures code quality and rapid deployment. AI engineers use these to automate model training, testing, and deployment pipelines.
+
+## Prerequisites
+
+- Git basics
+- Linux command line
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
 |---------|-------|-------------|
-| 06.1 | Fundamentals | Core concepts and definitions |
-| 06.2 | Basic Operations | Common implementations and patterns |
-| 06.3 | Intermediate Techniques | Problem-solving strategies |
-| 06.4 | Advanced Patterns | Complex algorithms and optimizations |
-| 06.5 | Real-World Applications | Production use cases |
-| 06.6 | Interview Preparation | Common questions and solutions |
+| 06.1 | CI/CD Fundamentals | Continuous integration, delivery, deployment |
+| 06.2 | GitHub Actions | Workflows, jobs, steps, actions marketplace |
+| 06.3 | Pre-Commit Hooks | Local quality gates, linting, formatting |
+| 06.4 | Automated Testing | Unit, integration, end-to-end in CI |
+| 06.5 | Deployment Automation | Environments, secrets, rollback strategies |
+| 06.6 | Security & Best Practices | Supply chain security, secrets management |
 
 ## Chapter Roadmap
 
 ```mermaid
 flowchart LR
-    A[Networking and Security] --> B[Fundamentals]
-    B --> C[Operations]
-    C --> D[Intermediate]
-    D --> E[Advanced]
-    E --> F[Applications]
-    F --> G[Interview Prep]
+    A[DevOps Automation] --> B[CI/CD Principles]
+    B --> C[GitHub Actions]
+    C --> D[Pre-Commit Hooks]
+    D --> E[Automated Testing]
+    E --> F[Deployment]
+    F --> G[Security]
 ```
 
-## 06.1 Section 1
+## Theory
 
-Section 1 of Networking and Security covers essential concepts for AI engineering placement preparation.
+### 06.1 CI/CD Fundamentals
 
-### Fundamentals
+CI/CD automates the path from code change to production deployment, reducing manual errors and accelerating delivery.
 
-The foundation of networking and security rests on several key principles that every software engineer must understand. These include the basic definitions, the underlying theory, and how these concepts map to practical implementation.
+**The CI/CD pipeline:**
 
-### Key Concepts
+```mermaid
+flowchart LR
+    A[Code Commit] --> B[Build]
+    B --> C[Test]
+    C --> D[Scan]
+    D --> E[Deploy Staging]
+    E --> F[Manual Approval]
+    F --> G[Deploy Production]
+```
 
-- Concept 1: Definition and purpose
-- Concept 2: Core principles and theory
-- Concept 3: Relationship to other topics
-- Concept 4: Common applications
+| Stage | What Happens | Tools |
+|-------|-------------|-------|
+| **Continuous Integration** | Code is built, tested, and validated on every push | GitHub Actions, Jenkins |
+| **Continuous Delivery** | Artifacts are automatically staged for release | ArgoCD, Spinnaker |
+| **Continuous Deployment** | Every passing change deploys to production | Kubernetes, Terraform |
 
-## 06.2 Section 2
+**Key CI/CD principles:**
 
-Section 2 of Networking and Security covers essential concepts for AI engineering placement preparation.
+- **Fail fast**: Run the fastest checks first (lint → type-check → unit tests → integration)
+- **Reproducibility**: Every build uses the same dependencies and environment
+- **Immutability**: Build artifacts are never modified; promote through environments
+- **Trunk-based development**: Short-lived branches, frequent merges to main
+- **Fast feedback**: Developers should know within minutes if their change is broken
 
-### Basic Operations
+### 06.2 GitHub Actions
 
-The following code demonstrates fundamental operations:
+GitHub Actions is GitHub's built-in CI/CD platform. Workflows run in response to events (push, PR, schedule) using YAML configuration.
+
+**Workflow structure:**
+
+```yaml
+# .github/workflows/ci.yml
+name: CI Pipeline
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+env:
+  NODE_VERSION: '20'
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run ESLint
+        run: npm run lint
+
+      - name: Run Prettier check
+        run: npm run format:check
+
+  test:
+    runs-on: ubuntu-latest
+    needs: lint
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run unit tests
+        run: npm test
+
+      - name: Run integration tests
+        run: npm run test:integration
+
+      - name: Upload coverage
+        uses: codecov/codecov-action@v4
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+
+  build:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Install and build
+        run: |
+          npm ci
+          npm run build
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-output
+          path: dist/
+```
+
+**Key workflow concepts:**
+
+```yaml
+# Triggers
+on:
+  push:           # When code is pushed
+  pull_request:   # When PR is opened/updated
+  schedule:       # Cron schedule
+    - cron: '0 2 * * 1'  # Every Monday at 2 AM
+  workflow_dispatch: # Manual trigger
+
+# Matrix strategy — test across multiple versions
+jobs:
+  test:
+    strategy:
+      matrix:
+        node-version: [18, 20, 22]
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+# Conditional steps
+steps:
+  - name: Deploy
+    if: github.ref == 'refs/heads/main'
+    run: npm run deploy
+
+# Caching dependencies
+- uses: actions/cache@v4
+  with:
+    path: ~/.npm
+    key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+```
+
+**Reusable workflows:**
+
+```yaml
+# .github/workflows/reusable-build.yml
+name: Reusable Build
+on:
+  workflow_call:
+    inputs:
+      node-version:
+        required: true
+        type: string
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ inputs.node-version }}
+      - run: npm ci && npm run build
+
+# Caller workflow
+jobs:
+  build:
+    uses: ./.github/workflows/reusable-build.yml
+    with:
+      node-version: '20'
+```
+
+**Complete CI/CD pipeline with deploy:**
+
+```yaml
+name: Full Pipeline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci
+      - run: npm run lint
+      - run: npm test
+      - run: npm run build
+
+  deploy-staging:
+    if: github.ref == 'refs/heads/main'
+    needs: ci
+    runs-on: ubuntu-latest
+    environment: staging
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy to staging
+        run: |
+          echo "Deploying to staging..."
+          # Deploy commands here
+        env:
+          DEPLOY_KEY: ${{ secrets.STAGING_DEPLOY_KEY }}
+
+  deploy-production:
+    if: github.ref == 'refs/heads/main'
+    needs: deploy-staging
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://app.example.com
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy to production
+        run: |
+          echo "Deploying to production..."
+        env:
+          DEPLOY_KEY: ${{ secrets.PRODUCTION_DEPLOY_KEY }}
+```
+
+### 06.3 Pre-Commit Hooks
+
+Pre-commit hooks run automatically before each `git commit`, catching issues before they enter the codebase.
+
+**Using the pre-commit framework:**
 
 ```bash
-# Networking and Security - basic operations
-def example_function(data):
-    """Core functionality"""
-    result = []
-    for item in data:
-        # Process each element
-        result.append(process(item))
-    return result
+# Install pre-commit
+pip install pre-commit
 
-def process(item):
-    return item * 2
+# Create .pre-commit-config.yaml
+# Install hooks
+pre-commit install
 
-# Test the implementation
-test_data = [1, 2, 3, 4, 5]
-print(example_function(test_data))
+# Run against all files
+pre-commit run --all-files
 ```
 
-## 06.3 Section 3
+**.pre-commit-config.yaml:**
 
-Section 3 of Networking and Security covers essential concepts for AI engineering placement preparation.
+```yaml
+repos:
+  # General file checks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-json
+      - id: check-added-large-files
+        args: ['--maxkb=500']
+      - id: check-merge-conflict
+      - id: detect-private-key
 
-### Intermediate Techniques
+  # Python
+  - repo: https://github.com/psf/black
+    rev: 24.1.0
+    hooks:
+      - id: black
 
-As problems become more complex, we need sophisticated approaches:
+  - repo: https://github.com/pycqa/isort
+    rev: 5.13.0
+    hooks:
+      - id: isort
 
-1. **Pattern Recognition**: Identifying when to apply this technique
-2. **Optimization**: Improving time and space complexity
-3. **Edge Cases**: Handling boundary conditions
-4. **Combined Approaches**: Integrating with other data structures
+  - repo: https://github.com/pycqa/flake8
+    rev: 7.0.0
+    hooks:
+      - id: flake8
 
-### Complexity Analysis Table
+  # JavaScript/TypeScript
+  - repo: https://github.com/pre-commit/mirrors-eslint
+    rev: v8.56.0
+    hooks:
+      - id: eslint
+        files: \.(js|ts|tsx)$
 
-| Operation | Time Complexity | Space Complexity | Notes |
-|-----------|----------------|-----------------|-------|
-| Basic Networking and Security | O(n) | O(1) | Standard case |
-| Optimized Networking and Security | O(log n) | O(n) | With preprocessing |
-| Advanced Networking and Security | O(n log n) | O(n) | Trade-off scenario |
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v3.1.0
+    hooks:
+      - id: prettier
+        types_or: [javascript, typescript, json, css]
 
-## 06.4 Section 4
+  # Security
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.18.0
+    hooks:
+      - id: gitleaks
+```
 
-Section 4 of Networking and Security covers essential concepts for AI engineering placement preparation.
+**Custom pre-commit hooks:**
 
-### Advanced Patterns
+```yaml
+# .pre-commit-config.yaml
+repos:
+  - repo: local
+    hooks:
+      - id: commit-message
+        name: Check commit message format
+        language: system
+        entry: bash -c 'msg=$(cat "$1"); if ! echo "$msg" | grep -qE "^(feat|fix|docs|style|refactor|test|chore)(\(.+\))?: .{1,72}$"; then echo "Invalid commit message. Use: type(scope): description"; exit 1; fi'
+        args: [COMMIT_MSG]
+        stages: [commit-msg]
+
+      - id: typecheck
+        name: TypeScript type check
+        language: system
+        entry: npx tsc --noEmit
+        files: \.(ts|tsx)$
+        pass_filenames: false
+
+      - id: test-changed
+        name: Run tests for changed files
+        language: system
+        entry: bash -c 'changed=$(git diff --cached --name-only --diff-filter=ACM | grep -E "\.test\.(ts|tsx)$" | head -1); if [ -n "$changed" ]; then npm test -- --changedSince=HEAD; fi'
+        pass_filenames: false
+```
+
+**Husky (JavaScript projects):**
+
+```bash
+# Install husky
+npm install husky --save-dev
+npx husky init
+
+# Add pre-commit hook
+echo "npm run lint && npm run test" > .husky/pre-commit
+
+# Add commit-msg hook
+echo "npx commitlint --edit" > .husky/commit-msg
+```
+
+**commitlint configuration:**
+
+```javascript
+// commitlint.config.js
+module.exports = {
+  extends: ['@commitlint/config-conventional'],
+  rules: {
+    'type-enum': [2, 'always', [
+      'feat', 'fix', 'docs', 'style', 'refactor',
+      'test', 'chore', 'perf', 'ci', 'build'
+    ]],
+    'subject-max-length': [2, 'always', 72],
+  },
+};
+```
+
+### 06.4 Automated Testing in CI
+
+**Testing strategy for CI:**
 
 ```mermaid
 flowchart TD
-    A[Input] --> B{Pattern Match}
-    B -->|Standard| C[Basic Solution]
-    B -->|Optimized| D[Advanced Solution]
-    C --> E[Result]
-    D --> E
+    A[Commit] --> B[Lint + Format]
+    B --> C[Unit Tests]
+    C --> D[Integration Tests]
+    D --> E[E2E Tests]
+    E --> F[Performance Tests]
+    F --> G[Security Scan]
+    G --> H[Deploy]
 ```
 
-### Key Techniques
+**GitHub Actions test workflow:**
 
-- **Technique 1**: Description of the first advanced technique and when to apply it
-- **Technique 2**: Description of the second advanced technique and when to apply it
-- **Technique 3**: Description of the third advanced technique and when to apply it
-- **Technique 4**: Description of the fourth advanced technique and when to apply it
+```yaml
+name: Tests
+on: [push, pull_request]
 
-## 06.5 Section 5
+jobs:
+  unit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - run: npm ci
+      - run: npm run test:unit -- --coverage
+      - uses: actions/upload-artifact@v4
+        with:
+          name: coverage
+          path: coverage/
 
-Section 5 of Networking and Security covers essential concepts for AI engineering placement preparation.
+  integration:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_PASSWORD: test
+          POSTGRES_DB: testdb
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+      redis:
+        image: redis:7
+        ports: ['6379:6379']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - run: npm ci
+      - run: npm run test:integration
+        env:
+          DATABASE_URL: postgresql://postgres:test@localhost:5432/testdb
+          REDIS_URL: redis://localhost:6379
+```
 
-### Real-World Applications
+**Test reporting:**
 
-Networking and Security is widely used in production systems:
+```yaml
+# Publish test results
+- uses: dorny/test-reporter@v1
+  if: always()
+  with:
+    name: Test Results
+    path: 'test-results/**/*.xml'
+    reporter: jest-junit
 
-- Application domain 1 with specific examples
-- Application domain 2 with specific examples
-- Application domain 3 with specific examples
-- Application domain 4 with specific examples
+# Code coverage with threshold
+- name: Check coverage
+  run: |
+    npx jest --coverage --coverageThreshold='{"global":{"lines":80,"functions":80}}'
+```
 
-### Best Practices
+### 06.5 Deployment Automation
 
-| Practice | Description | Impact |
-|----------|-------------|--------|
-| Best Practice 1 | Detailed explanation | Performance improvement |
-| Best Practice 2 | Detailed explanation | Code quality |
-| Best Practice 3 | Detailed explanation | Maintainability |
+**Environment protection rules:**
 
-## 06.6 Section 6
+```yaml
+# GitHub Settings → Environments → production
+# Configure:
+# - Required reviewers
+# - Wait timer (e.g., 5 minutes)
+# - Deployment branches (only main)
 
-Section 6 of Networking and Security covers essential concepts for AI engineering placement preparation.
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://app.example.com
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy
+        run: ./deploy.sh
+        env:
+          API_KEY: ${{ secrets.API_KEY }}
+```
 
-### Interview Preparation
-
-Common interview questions and strategies:
-
-1. **Question Type 1**: Strategy for solving
-2. **Question Type 2**: Strategy for solving
-3. **Question Type 3**: Strategy for solving
-4. **Question Type 4**: Strategy for solving
-
-### Sample Walkthrough
-
-Let's walk through a typical interview problem:
+**Secrets management:**
 
 ```bash
-# Interview problem solution
-def solve_interview_problem(input_data):
-    # Step 1: Understand the problem
-    # Step 2: Design the approach
-    # Step 3: Implement the solution
-    # Step 4: Test and optimize
-    return optimized_result
+# GitHub Secrets (Settings → Secrets → Actions)
+# Store: API keys, deploy tokens, database URLs
+# Reference in workflows: ${{ secrets.SECRET_NAME }}
+
+# ⚠️ Never do this:
+echo ${{ secrets.MY_SECRET }}  # Visible in logs
+
+# ✅ Use env to mask secrets:
+- run: deploy.sh
+  env:
+    API_KEY: ${{ secrets.API_KEY }}
 ```
 
----
+**Blue-green deployment pattern:**
 
-## TypeScript Parallel
+```yaml
+deploy:
+  runs-on: ubuntu-latest
+  steps:
+    - name: Deploy to green environment
+      run: |
+        # Deploy new version to green
+        ./deploy.sh green
 
-```typescript
-// TypeScript equivalent implementation
-interface NetworkingandSecurityConfig {
-    option1: boolean;
-    option2: number;
-}
+    - name: Run smoke tests
+      run: |
+        # Test green environment
+        curl -f https://green.example.com/health
 
-function processNetworkingandSecurity(data: number[]): number[] {
-    return data.map(x => x * 2);
-}
+    - name: Switch traffic to green
+      run: |
+        # Update load balancer to point to green
+        ./switch-traffic.sh green
 
-// Usage example
-const result = processNetworkingandSecurity([1, 2, 3]);
-console.log(result); // [2, 4, 6]
+    - name: Keep blue as rollback
+      run: |
+        # Blue remains available for instant rollback
+        echo "Blue available at blue.example.com"
 ```
 
----
+**Rollback strategy:**
+
+```yaml
+deploy:
+  steps:
+    - name: Deploy
+      id: deploy
+      run: |
+        # Save current version for rollback
+        CURRENT=$(kubectl get deployment app -o jsonpath='{.spec.template.spec.containers[0].image}')
+        echo "previous_version=$CURRENT" >> $GITHUB_OUTPUT
+        # Deploy new version
+        kubectl set image deployment/app app=myapp:${{ github.sha }}
+
+    - name: Verify deployment
+      run: |
+        kubectl rollout status deployment/app --timeout=300s
+
+    - name: Rollback on failure
+      if: failure()
+      run: |
+        kubectl rollout undo deployment/app
+        echo "Rolled back to ${{ steps.deploy.outputs.previous_version }}"
+```
+
+### 06.6 Security & Best Practices
+
+**GitHub Actions security:**
+
+```yaml
+# Pin actions to specific commits (not tags)
+- uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11  # v4.1.1
+
+# Use minimal permissions
+permissions:
+  contents: read
+  pull-requests: write
+  packages: write
+
+# Avoid script injection
+- run: echo "Processing ${{ github.event.issue.title }}"
+  # DANGEROUS if title contains shell commands
+  # Use env instead:
+- run: echo "Processing $ISSUE_TITLE"
+  env:
+    ISSUE_TITLE: ${{ github.event.issue.title }}
+
+# Don't upload artifacts from PRs from forks
+- uses: actions/upload-artifact@v4
+  if: github.event_name != 'pull_request'
+```
+
+**Supply chain security:**
+
+```yaml
+# Scan for vulnerabilities
+- uses: github/codeql-action/analyze@v3
+  with:
+    languages: javascript
+
+# Check for secrets in code
+- uses: gitleaks/gitleaks-action@v2
+  env:
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+# Verify dependency integrity
+- run: npm ci
+  # npm ci uses package-lock.json for deterministic installs
+```
+
+**Branch protection rules:**
+
+```
+GitHub Settings → Branches → Add rule:
+✅ Require pull request reviews (1+ approvals)
+✅ Require status checks (CI must pass)
+✅ Require branches to be up to date
+✅ Require conversation resolution
+✅ Require linear history (no merge commits)
+✅ Include administrators
+✅ Allow force pushes: never
+✅ Allow deletions: never
+```
+
+**DevOps best practices checklist:**
+
+| Practice | Why It Matters |
+|----------|---------------|
+| Pin action versions to commits | Prevents supply chain attacks |
+| Use `npm ci` not `npm install` | Deterministic, uses lockfile |
+| Cache dependencies | Faster builds, lower costs |
+| Run tests in parallel | Faster feedback |
+| Use environment protection | Prevents accidental deploys |
+| Store secrets in vault | Never commit secrets |
+| Automate rollbacks | Faster recovery from failures |
+| Monitor deployments | Catch issues early |
 
 ## Summary
 
-- Networking and Security is a fundamental topic for coding interviews
-- Master the core concepts before attempting complex problems
-- Practice with diverse problem sets to build pattern recognition
-- Always analyze time and space complexity of your solutions
-- Consider edge cases and boundary conditions carefully
-- Combine with other data structures for optimal solutions
-- Write clean, readable code following best practices
-- Test your solutions with multiple test cases
-- Learn from mistakes and iterate on your approaches
-- Build confidence through consistent practice
+- CI/CD automates the path from commit to production — catch issues early
+- GitHub Actions workflows define build/test/deploy pipelines in YAML
+- Matrix testing ensures compatibility across OS and language versions
+- Pre-commit hooks enforce code quality before code enters the repository
+- Use the `pre-commit` framework or Husky for consistent local checks
+- Test in CI with services (databases, caches) using Docker containers
+- Protect secrets with GitHub Secrets — never echo them in logs
+- Pin actions to commit hashes for supply chain security
+- Branch protection rules enforce review and CI requirements
+- Blue-green deployments enable instant rollback
 
 ## Practical Takeaways
 
-| Scenario | Do This | Avoid This |
-|----------|---------|------------|
-| Learning Networking and Security | Practice with varied problems | Rote memorization without understanding |
-| Implementing Networking and Security | Write clean, tested code | Premature optimization |
-| Interview prep | Understand patterns and trade-offs | Cramming without practice |
-| Production use | Profile and optimize for data size | Over-engineering solutions |
+| Scenario | Tool/Approach |
+|----------|--------------|
+| CI for a Node.js project | GitHub Actions with matrix strategy |
+| Pre-commit linting | pre-commit framework + husky |
+| Test database in CI | GitHub Actions services (postgres, redis) |
+| Deploy to staging | GitHub Actions with environment protection |
+| Prevent secret leaks | GitHub Secrets + env references |
+| Fast CI builds | npm ci + actions/cache |
+| Safe production deploys | Blue-green with rollback on failure |
 
 ## Interview Q&A
 
 <details class="tp-qa-card" data-qid="git06-q1">
   <summary class="tp-qa-question">
     <span class="tp-qa-status"></span>
-    Q1: Sample interview question 1 about networking and security?
+    Q1: What is the difference between continuous integration, delivery, and deployment?
   </summary>
   <div class="tp-qa-answer">
-    <p>This is a detailed answer to interview question 1 about networking and security. The answer covers key concepts, provides code examples, and explains the reasoning behind the solution.</p><pre><code># Example code for question 1
-answer = perform_networking_and_security_operation()
-print(answer)</code></pre>
+    <p><strong>Continuous Integration (CI)</strong>: Developers merge code frequently; automated builds and tests validate every change.</p>
+    <p><strong>Continuous Delivery (CD)</strong>: Extends CI — every passing change is automatically staged for release, but deployment to production requires manual approval.</p>
+    <p><strong>Continuous Deployment</strong>: Extends CD further — every passing change deploys to production automatically with no human intervention. The key difference is who gates production: human (delivery) vs automated (deployment).</p>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="git06-q2">
   <summary class="tp-qa-question">
     <span class="tp-qa-status"></span>
-    Q2: Sample interview question 2 about networking and security?
+    Q2: How do you prevent secrets from being exposed in GitHub Actions logs?
   </summary>
   <div class="tp-qa-answer">
-    <p>This is a detailed answer to interview question 2 about networking and security. The answer covers key concepts, provides code examples, and explains the reasoning behind the solution.</p><pre><code># Example code for question 2
-answer = perform_networking_and_security_operation()
-print(answer)</code></pre>
+    <p>1) Store secrets in GitHub Settings → Secrets → Actions. 2) Reference them as <code>${{ secrets.SECRET_NAME }}</code> in workflows. 3) Pass them as environment variables, never echo them directly. 4) GitHub automatically masks secrets in logs if accidentally printed. 5) Avoid script injection by not using secrets in <code>run:</code> echo statements — use <code>env:</code> instead. 6) Use OIDC tokens for cloud credentials instead of long-lived secrets.</p>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="git06-q3">
   <summary class="tp-qa-question">
     <span class="tp-qa-status"></span>
-    Q3: Sample interview question 3 about networking and security?
+    Q3: Why should you pin GitHub Actions to commit SHAs instead of tags?
   </summary>
   <div class="tp-qa-answer">
-    <p>This is a detailed answer to interview question 3 about networking and security. The answer covers key concepts, provides code examples, and explains the reasoning behind the solution.</p><pre><code># Example code for question 3
-answer = perform_networking_and_security_operation()
-print(answer)</code></pre>
+    <p>Tags like <code>@v4</code> are mutable — an attacker who compromises an action's repository can push malicious code under the same tag. Commit SHAs are immutable. Pinning to <code>@b4ffde65f46336ab88eb53be808477a3936bae11</code> ensures you always run the exact same code. Renovate or Dependabot can keep pinned versions updated automatically.</p>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="git06-q4">
   <summary class="tp-qa-question">
     <span class="tp-qa-status"></span>
-    Q4: Sample interview question 4 about networking and security?
+    Q4: What problem do pre-commit hooks solve?
   </summary>
   <div class="tp-qa-answer">
-    <p>This is a detailed answer to interview question 4 about networking and security. The answer covers key concepts, provides code examples, and explains the reasoning behind the solution.</p><pre><code># Example code for question 4
-answer = perform_networking_and_security_operation()
-print(answer)</code></pre>
+    <p>Pre-commit hooks run checks (linting, formatting, type checking, secret scanning) <strong>before</strong> each git commit. This catches issues at the earliest possible point — before code enters the repository or CI pipeline. Benefits: faster feedback (local, no CI wait), consistent code quality, prevents broken code from being pushed, and reduces CI costs by catching simple issues early.</p>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="git06-q5">
   <summary class="tp-qa-question">
     <span class="tp-qa-status"></span>
-    Q5: Sample interview question 5 about networking and security?
+    Q5: Describe a blue-green deployment strategy and its advantages.
   </summary>
   <div class="tp-qa-answer">
-    <p>This is a detailed answer to interview question 5 about networking and security. The answer covers key concepts, provides code examples, and explains the reasoning behind the solution.</p><pre><code># Example code for question 5
-answer = perform_networking_and_security_operation()
-print(answer)</code></pre>
+    <p>Blue-green deployment maintains two identical production environments. "Blue" serves live traffic; "green" gets the new version. After testing green, traffic is switched instantly. Advantages: zero-downtime deployments, instant rollback (switch back to blue), ability to test the new version under real traffic before switching, and simple deployment process. Disadvantages: requires double the infrastructure resources.</p>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
-</details>
-
-<details class="tp-qa-card" data-qid="git06-q6">
-  <summary class="tp-qa-question">
-    <span class="tp-qa-status"></span>
-    Q6: Sample interview question 6 about networking and security?
-  </summary>
-  <div class="tp-qa-answer">
-    <p>This is a detailed answer to interview question 6 about networking and security. The answer covers key concepts, provides code examples, and explains the reasoning behind the solution.</p><pre><code># Example code for question 6
-answer = perform_networking_and_security_operation()
-print(answer)</code></pre>
-  </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
-</details>
-
-<details class="tp-qa-card" data-qid="git06-q7">
-  <summary class="tp-qa-question">
-    <span class="tp-qa-status"></span>
-    Q7: Sample interview question 7 about networking and security?
-  </summary>
-  <div class="tp-qa-answer">
-    <p>This is a detailed answer to interview question 7 about networking and security. The answer covers key concepts, provides code examples, and explains the reasoning behind the solution.</p><pre><code># Example code for question 7
-answer = perform_networking_and_security_operation()
-print(answer)</code></pre>
-  </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
-</details>
-
-<details class="tp-qa-card" data-qid="git06-q8">
-  <summary class="tp-qa-question">
-    <span class="tp-qa-status"></span>
-    Q8: Sample interview question 8 about networking and security?
-  </summary>
-  <div class="tp-qa-answer">
-    <p>This is a detailed answer to interview question 8 about networking and security. The answer covers key concepts, provides code examples, and explains the reasoning behind the solution.</p><pre><code># Example code for question 8
-answer = perform_networking_and_security_operation()
-print(answer)</code></pre>
-  </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">Bookmark</button>
 </details>
 
 ## Chapter Quiz
 
-**Q1**: Sample quiz question 1 about networking and security?
+**Q1**: In GitHub Actions, what does the `needs` keyword do?
 
-a) Option A - First choice
-b) Option B - Second choice
-c) Option C - Third choice
-d) Option D - Fourth choice
+a) Specifies required secrets
+b) Defines job dependencies (a job waits for another to finish)
+c) Lists required environment variables
+d) Sets minimum runner requirements
 
-<details class="tp-qa-card" data-qid="git06-quiz1"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: a</strong></p><p>Explanation for answer to question 1.</p></div></details>
+<details class="tp-qa-card" data-qid="git06-quiz1"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p><code>needs</code> defines job dependencies. A job with <code>needs: lint</code> won't start until the <code>lint</code> job completes successfully. This lets you build sequential pipelines: lint → test → build → deploy.</p></div></details>
 
-**Q2**: Sample quiz question 2 about networking and security?
+**Q2**: What does `npm ci` do that `npm install` doesn't?
 
-a) Option A - First choice
-b) Option B - Second choice
-c) Option C - Third choice
-d) Option D - Fourth choice
+a) Installs faster
+b) Deletes node_modules and installs exactly from package-lock.json
+c) Skips optional dependencies
+d) Runs tests after install
 
-<details class="tp-qa-card" data-qid="git06-quiz2"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: a</strong></p><p>Explanation for answer to question 2.</p></div></details>
+<details class="tp-qa-card" data-qid="git06-quiz2"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p><code>npm ci</code> deletes <code>node_modules</code> and installs exactly what's in <code>package-lock.json</code>, ensuring deterministic builds. It never modifies <code>package-lock.json</code>. <code>npm install</code> may update the lockfile and can produce different dependency trees.</p></div></details>
 
-**Q3**: Sample quiz question 3 about networking and security?
+**Q3**: Which GitHub Actions feature allows testing across multiple Node.js versions?
 
-a) Option A - First choice
-b) Option B - Second choice
-c) Option C - Third choice
-d) Option D - Fourth choice
+a) services
+b) matrix strategy
+c) needs
+d) environment
 
-<details class="tp-qa-card" data-qid="git06-quiz3"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: a</strong></p><p>Explanation for answer to question 3.</p></div></details>
+<details class="tp-qa-card" data-qid="git06-quiz3"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p>The <code>strategy.matrix</code> creates multiple job instances with different configurations. Example: test across Node 18, 20, 22 on both Ubuntu and Windows with 6 parallel jobs.</p></div></details>
 
-**Q4**: Sample quiz question 4 about networking and security?
+**Q4**: What is the purpose of GitHub Actions environments?
 
-a) Option A - First choice
-b) Option B - Second choice
-c) Option C - Third choice
-d) Option D - Fourth choice
+a) Define runner operating systems
+b) Group deployment targets with protection rules and secrets
+c) Set workflow-level permissions
+d) Cache build artifacts
 
-<details class="tp-qa-card" data-qid="git06-quiz4"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: a</strong></p><p>Explanation for answer to question 4.</p></div></details>
+<details class="tp-qa-card" data-qid="git06-quiz4"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p>Environments (staging, production) can have protection rules: required reviewers, wait timers, and branch restrictions. They also scope secrets — staging secrets aren't available in production jobs.</p></div></details>
 
-**Q5**: Sample quiz question 5 about networking and security?
+**Q5**: What happens when a pre-commit hook fails?
 
-a) Option A - First choice
-b) Option B - Second choice
-c) Option C - Third choice
-d) Option D - Fourth choice
+a) The commit is created anyway
+b) The commit is blocked until the issue is fixed
+c) The hook is skipped automatically
+d) Git creates a backup and proceeds
 
-<details class="tp-qa-card" data-qid="git06-quiz5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: a</strong></p><p>Explanation for answer to question 5.</p></div></details>
-
-- Use ssh -J jumpbox target for bastion host connections
-- Use mosh instead of SSH for high-latency connections to avoid timeouts
-
-- Use scp -3 source user1@host1:path user2@host2:path for third-party transfers between remote hosts
-- Use autossh to maintain persistent SSH tunnels that auto-reconnect on failure
-
-- Use ssh-keygen -t ed25519 for modern, secure SSH keys
+<details class="tp-qa-card" data-qid="git06-quiz5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b</strong></p><p>When a pre-commit hook exits with non-zero status, Git blocks the commit. The developer must fix the issue (format the code, remove secrets, etc.) and try again. This enforces quality standards before code enters the repository.</p></div></details>
 
 ## Practical Tips
 
-- Use fail2ban for SSH brute force protection. 
-- Regularly audit open ports with netstat -tuln. Keep SSH keys passphrase-protected.
+- Start with a minimal CI: lint + unit tests — expand gradually
+- Use `npm ci` in CI for deterministic, faster installs
+- Cache dependencies with `actions/cache` — saves 30-60% build time
+- Run lint before tests — fail fast on style issues
+- Use GitHub Actions environments for staging/production separation
+- Pin third-party actions to commit SHAs, not tags
+- Add branch protection rules early — prevent force pushes and unreviewed code
+- Use `if: failure()` steps for automatic rollback notifications
+- Test CI changes on a feature branch before merging workflow changes
 
 ## Exercises
 
-**Easy** - Basic exercise to practice networking and security fundamentals
 
-**Medium** - Intermediate exercise applying networking and security patterns
+## Common Mistakes
 
-**Medium** - - Use `ping`, `traceroute`, `nslookup`, and `curl -v` to diagnose a slow website
-- Scan open ports on localhost with `netstat -tuln` and explain each listening service
-- Generate an SSH key pair, copy the public key to a remote server, verify passwordless login
+1. Not using CI/CD for all projects
+2. Hardcoding secrets in workflows
+3. Not running tests before deployment
+4. Forgetting to cache dependencies
+5. Not using branch protection rules**Easy** — Create a GitHub Actions workflow that runs ESLint and Prettier on every push. Verify it passes on a clean commit and fails on a file with lint errors.
 
+**Medium** — Set up a pre-commit config with trailing-whitespace, end-of-file-fixer, and a custom hook that checks commit message format follows conventional commits.
 
+**Medium** — Build a CI pipeline with matrix testing across Node 18 and 20, include a PostgreSQL service container for integration tests, and upload coverage reports.
 
-**Hard** - **Hard** - Set up a simple firewall rule with `iptables` (or `ufw`) that blocks all incoming
+**Hard** — Implement a complete CI/CD pipeline: lint → test → build → deploy to staging (with environment protection) → manual approval → deploy to production. Include rollback on failure.
 
-**Hard** - traffic except SSH on port 22 and HTTPS on port 443. Test with `nmap` from another machine.
+---
+
+> **End of Module 04**: [Back to Module Index →](
+## Revision Notes
+
+- CI: test on every push
+- CD: deploy automatically after tests pass
+- GitHub Actions: YAML-based workflows
+- Pre-commit hooks: lint before commit
+- Secrets: never commit, use CI/CD secrets
+## Placement Section
+
+### Top 10 Interview Questions
+
+#### Google Style
+1. Explain the time and space trade-offs of git linux cli. When would you choose one approach over another?
+2. Design a system that efficiently handles git linux cli at scale (millions of requests/second).
+
+#### Amazon Style
+1. Tell me about a time you had to optimize a system related to git linux cli. What was your approach and what was the result?
+2. How would you explain git linux cli to a non-technical stakeholder?
+
+#### Microsoft Style
+1. How does git linux cli integrate with enterprise systems and cloud architectures?
+2. What are the security implications of git linux cli?
+
+#### NVIDIA Style
+1. How would you optimize git linux cli for GPU-accelerated computing?
+2. What parallel processing patterns apply to git linux cli?
+
+#### AI Startup Style
+1. How would you implement git linux cli in a cost-effective, scalable way for a startup?
+2. What's the fastest way to prototype a solution using git linux cli?
+
+### Resume Tips
+- **Technical Skills**: List git linux cli under relevant technical skills
+- **Project Description**: "Implemented git linux cli to [specific outcome], reducing [metric] by [X]%"
+- **Keywords**: Include git linux cli in your skills section for ATS optimization
+
+### Interview Day Checklist
+- [ ] Review core concepts of git linux cli
+- [ ] Practice 3-5 problems related to git linux cli
+- [ ] Prepare 2 real-world examples of using git linux cli
+- [ ] Know the time/space complexity of common git linux cli operations
+- [ ] Have questions ready about how the company uses git linux cliindex.md)

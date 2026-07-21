@@ -39,6 +39,16 @@ flowchart LR
     I -->|Yes| J[Trained Model]
 ```
 
+## Introduction
+
+Neural networks are the engine behind every modern AI system — from GPT-4's language generation to self-driving car vision. This chapter builds your understanding from the ground up: starting with the single perceptron, progressing through activation functions and backpropagation, and culminating in a multi-layer perceptron implemented in PyTorch. These fundamentals directly explain why transformers work and how to debug training failures in production.
+
+## Prerequisites
+
+- Python with NumPy basics (array operations, broadcasting)
+- Module 08 (ML Fundamentals) — supervised learning, loss functions, gradient descent
+- Basic calculus concept of derivatives (helpful but not strictly required)
+
 ## Theory
 
 ### 1.1 Perceptron
@@ -593,5 +603,64 @@ d) Huber
 **Hard** — Implement backpropagation manually for a 2-layer network and verify gradients match PyTorch autograd.
 
 ---
+
+## Common Mistakes
+
+1. Using sigmoid activation in hidden layers of deep networks — sigmoid causes vanishing gradients; use ReLU for hidden layers and sigmoid only for binary output
+2. Initializing all weights to zero — symmetric neurons never break symmetry; all neurons learn the same features; use He or Xavier initialization
+3. Ignoring gradient magnitudes during training — exploding gradients cause NaN losses; use gradient clipping and monitor gradient norms
+4. Choosing the wrong loss function — MSE for classification gives poor gradients; use cross-entropy for classification and MSE for regression
+5. Not using `.detach()` when computing loss values for logging — accidentally backpropagating through logging operations wastes memory and can corrupt gradients
+
+## Revision Notes
+
+- Perceptron is a linear binary classifier that cannot solve XOR (not linearly separable)
+- Activation functions introduce non-linearity; ReLU is the default for hidden layers (avoids vanishing gradients)
+- Multi-layer perceptrons with enough capacity can approximate any continuous function (universal approximation theorem)
+- Backpropagation uses the chain rule to compute gradients layer by layer from output to input
+- PyTorch autograd builds a dynamic computational graph during forward pass and traverses it backward on `.backward()`
+- He initialization (variance = 2/fan_in) for ReLU; Xavier initialization (variance = 2/(fan_in + fan_out)) for tanh/sigmoid
+- Vanishing gradients: solved by ReLU, batch normalization, residual connections, and proper initialization
+- Cross-entropy loss for classification; MSE for regression; BCE for binary classification
+
+## Summary
+
+Neural networks start with the perceptron — a simple linear classifier limited to linearly separable problems like AND and OR. Activation functions (sigmoid, tanh, ReLU, Leaky ReLU) introduce non-linearity, enabling multi-layer perceptrons to approximate any continuous function. Backpropagation efficiently computes gradients through the chain rule, and PyTorch's autograd automates this process with dynamic computational graphs. Weight initialization is critical: He init for ReLU networks, Xavier for sigmoid/tanh. Vanishing and exploding gradients are common deep network challenges solved by ReLU activations, proper initialization, and batch normalization. Loss function selection (cross-entropy for classification, MSE for regression) directly impacts training stability.
+
+## Placement Section
+
+### Top 10 Interview Questions
+
+#### Google Style
+1. Explain why a single perceptron cannot solve XOR and design a minimal neural network that can. What is the decision boundary?
+2. Derive backpropagation for a 2-layer network from scratch, showing the chain rule application at each step
+
+#### Amazon Style
+1. A neural network's training loss stops decreasing after 5 epochs. Diagnose whether this is underfitting or overfitting and describe your next three actions
+2. Describe how you would build and deploy a neural network classifier that processes 1 million predictions per day with p99 < 50ms
+
+#### Microsoft Style
+1. How would you explain the vanishing gradient problem to a junior developer who is seeing their deep network fail to train?
+2. A production neural network's accuracy dropped from 95% to 80% after a code update. Walk through your debugging process
+
+#### NVIDIA Style
+1. A neural network trains on GPU but the backward pass is 5x slower than the forward pass. What causes this and how do you optimize it?
+2. You need to train a model with 10 billion parameters on a cluster of 8 A100 GPUs. How do you implement model parallelism and gradient synchronization?
+
+#### AI Startup Style
+1. You need to classify customer support tickets into 20 categories using a neural network. What architecture do you choose, what loss function, and how do you handle class imbalance?
+2. Your inference API runs a neural network that takes 2 seconds per prediction. The client needs 100ms. Propose three optimization strategies
+
+### Resume Tips
+- List "Deep Learning" and "PyTorch" under Technical Skills with specific capabilities (autograd, nn.Module, GPU training)
+- Project example: "Implemented multi-layer perceptron from scratch with backpropagation, achieving 98% accuracy on MNIST"
+- Mention neural network debugging skills: "Diagnosed vanishing gradient problem in 12-layer network, resolved with He initialization and batch normalization"
+
+### Interview Day Checklist
+- [ ] Can explain why a single perceptron cannot solve XOR with a diagram
+- [ ] Can derive backpropagation for a 2-layer network on a whiteboard
+- [ ] Can list the vanishing gradient problem's causes and 3 solutions from memory
+- [ ] Can describe He vs Xavier initialization and when to use each
+- [ ] Can explain PyTorch autograd's dynamic computational graph concept
 
 > **Next**: [PyTorch Tensors](02-pytorch-tensors.md)

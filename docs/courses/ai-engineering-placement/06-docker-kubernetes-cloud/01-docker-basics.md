@@ -38,6 +38,16 @@ flowchart LR
     H --> I[Docker Compose]
 ```
 
+## Introduction
+
+Docker is the standard for packaging and deploying AI applications — from training environments with GPU passthrough to production inference services at scale. Without containers, the "it works on my machine" problem plagues ML teams, making model deployment unreliable and slow. This chapter covers containers, images, Dockerfiles, and Docker Compose — the essential skills for any AI engineer who needs to ship models from laptop to production.
+
+## Prerequisites
+
+- Basic command line / terminal proficiency
+- Understanding of what a server and process are
+- Familiarity with Python or TypeScript project structures
+
 ## Theory
 
 ### 1.1 Containers vs Virtual Machines
@@ -823,5 +833,64 @@ d) docker inspect
 **Hard** — Debug a broken Docker setup: given a Dockerfile that fails to build (provide a buggy Dockerfile with issues like incorrect WORKDIR, missing COPY, base image mismatch), identify and fix all issues.
 
 ---
+
+## Common Mistakes
+
+1. Using `latest` tag in production Dockerfiles — always pin specific versions (`python:3.11-slim`) for reproducible builds
+2. Copying source code before `pip install` or `npm ci` — invalidates the layer cache and rebuilds dependencies on every code change
+3. Running containers as root — always add a non-root USER for security in production
+4. Storing secrets in Dockerfiles or images — use Docker secrets, env_file, or external secret managers instead
+5. Skipping `.dockerignore` — the build context sends the entire directory including `.git`, `node_modules`, and `.env` to the daemon
+
+## Revision Notes
+
+- Containers share the host kernel (OS-level virtualization); VMs run full guest OSes (hardware-level virtualization)
+- Docker architecture: daemon (dockerd) manages objects, CLI (docker) sends commands, registry stores images
+- Images are read-only layers; each Dockerfile instruction adds a layer; layers are cached across builds
+- Multi-stage builds separate build and runtime stages to produce smaller production images
+- Container states: Created → Running → Paused → Stopped → Removed
+- Volumes persist data independently of containers; bind mounts enable hot-reload in development
+- Docker Compose defines multi-container apps in YAML with automatic networking
+- `.dockerignore` excludes files from build context; HEALTHCHECK enables orchestrator health monitoring
+
+## Summary
+
+Docker containers provide lightweight, reproducible environments by sharing the host kernel at the OS level, contrasting with VMs that run full guest operating systems. Docker's client-server architecture uses a daemon to manage images (read-only layered templates), containers (runnable instances), networks, and volumes. Dockerfiles define custom images through layered instructions, with multi-stage builds producing lean production artifacts. Container lifecycle management, networking modes (bridge, host, overlay), and persistent volumes are essential for production deployments. Docker Compose orchestrates multi-container applications, and best practices include non-root users, health checks, specific image tags, and `.dockerignore` files.
+
+## Placement Section
+
+### Top 10 Interview Questions
+
+#### Google Style
+1. Design a Docker-based CI/CD pipeline for an ML model that builds, tests, and deploys to a GPU-enabled cluster. How do you handle model weights and dependencies?
+2. Explain the difference between COPY and ADD in a Dockerfile and when you would use each
+
+#### Amazon Style
+1. A containerized microservice is consuming 3x more memory than expected. Walk through your debugging approach from Docker stats to application profiling
+2. How would you design a Docker image that works identically in development, staging, and production environments?
+
+#### Microsoft Style
+1. Your team has 20 microservices in Docker Compose for local development. How do you manage shared configurations, secrets, and service discovery?
+2. Explain how Docker networking works between containers and how you would implement service-to-service communication with proper isolation
+
+#### NVIDIA Style
+1. A deep learning training container needs GPU passthrough, 64GB of shared memory, and access to a mounted dataset volume. How do you configure all three?
+2. Your GPU container image is 15GB. How do you optimize it for faster pulls and deploys without losing required CUDA libraries?
+
+#### AI Startup Style
+1. You need to containerize a FastAPI app that runs a Hugging Face model for inference. Write the Dockerfile from memory, including GPU support and health checks
+2. Docker builds are taking 10 minutes. Identify the three most impactful optimizations you would implement
+
+### Resume Tips
+- List "Docker" and "Containerization" under Technical Skills with proficiency level
+- Project example: "Containerized ML inference service using multi-stage Docker builds, reducing image size from 8GB to 1.2GB and deploy time from 5 minutes to 30 seconds"
+- Mention Docker in DevOps or deployment sections: "Implemented Docker Compose development environment with 5 services and automated health checks"
+
+### Interview Day Checklist
+- [ ] Can write a multi-stage Dockerfile from memory for a Python/Node.js application
+- [ ] Can explain the difference between CMD and ENTRYPOINT with examples
+- [ ] Can describe container states and lifecycle transitions
+- [ ] Can explain how Docker networking works (bridge, host, overlay)
+- [ ] Can list 5 Docker production best practices without notes
 
 > **Next**: [02 — Docker Compose](02-docker-compose.md)

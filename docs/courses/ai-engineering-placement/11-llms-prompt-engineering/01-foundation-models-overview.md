@@ -38,6 +38,16 @@ flowchart LR
     I --> J[Responsible AI Deployment]
 ```
 
+## Introduction
+
+Foundation models like GPT-4o, Claude, and Gemini have fundamentally changed what AI can do — from writing production code to reasoning across massive document collections. But using these models effectively requires understanding their architectures, limitations, and the trade-offs between proprietary and open-source options. This chapter gives you the knowledge to make informed model selection decisions, recognize when models will fail, and deploy them responsibly.
+
+## Prerequisites
+
+- Basic Python programming (API calls, JSON handling)
+- Familiarity with what a neural network is (Module 09 helpful)
+- Understanding of API concepts (Module 05 helpful)
+
 ## Theory
 
 ### 1.1 What Are Foundation Models
@@ -1035,5 +1045,64 @@ d) Learning rate and dropout
 **Hard** — Implement a simulated scaling law experiment: train small transformer models of varying sizes (1M, 5M, 10M parameters) on a text dataset and plot loss vs. parameter count. Compare your results with the theoretical scaling law formula.
 
 ---
+
+## Common Mistakes
+
+1. Using GPT-4o for simple tasks like translation or summarization — route simple queries to cheaper models (GPT-4o-mini) and save budget for complex reasoning
+2. Trusting LLM output without verification — all models hallucinate; always add a validation step with RAG or search for factual claims
+3. Ignoring knowledge cutoff dates — models cannot know about events after their training data; use RAG or web search for recent information
+4. Choosing a model by parameter count alone — a 70B open-source model may outperform a proprietary model on your specific task; always benchmark
+5. Skipping safety guardrails — deploying without input/output content filters risks harmful outputs and legal liability
+
+## Revision Notes
+
+- Foundation models are transformer-based neural networks trained on internet-scale data with emergent abilities
+- Proprietary models (GPT-4o, Claude 3.5, Gemini 1.5) offer highest quality; open-source (Llama, Mistral, Qwen) enable self-hosting
+- MoE architecture activates only a subset of experts per token, enabling large models with efficient inference
+- Multimodal models process text, images, and audio through separate encoders with cross-modal alignment
+- Hallucination is a fundamental limitation — mitigate with RAG, function calling, and human review
+- Knowledge cutoffs restrict models from knowing recent events; RAG provides real-time grounding
+- Temperature controls randomness: low (0-0.3) for factual tasks, high (0.9+) for creative tasks
+- Model routing optimizes cost by directing simple queries to cheap models and complex ones to expensive models
+
+## Summary
+
+Foundation models are large transformer-based neural networks trained on internet-scale data that exhibit emergent abilities like in-context learning and chain-of-thought reasoning. The landscape includes proprietary models (GPT-4o, Claude 3.5, Gemini 1.5) offering cutting-edge quality and open-source models (Llama 3.1, Mistral, Qwen) enabling self-hosting and customization. MoE architectures enable efficient scaling by activating only a fraction of parameters per token. Key limitations include hallucination, knowledge cutoffs, and bias — mitigated through RAG, safety guardrails, and alignment techniques. Model selection involves balancing latency, cost, context window, and accuracy, with model routing systems optimizing cost by directing queries to appropriately sized models.
+
+## Placement Section
+
+### Top 10 Interview Questions
+
+#### Google Style
+1. Design a system that routes user queries to different LLMs based on complexity, task type, and budget constraints. What classifiers and fallback strategies do you use?
+2. Explain the Chinchilla scaling law and its practical implications for training and deploying foundation models
+
+#### Amazon Style
+1. Your LLM-powered customer service bot hallucinated a refund policy that doesn't exist, costing the company $50,000. How do you prevent this class of failure?
+2. Describe how you would evaluate and select between GPT-4o, Claude 3.5, and a fine-tuned Llama model for a production coding assistant
+
+#### Microsoft Style
+1. How would you design a responsible AI framework for deploying foundation models in an enterprise with strict compliance requirements?
+2. Two foundation models give contradictory answers to a factual question. How do you build a system that resolves conflicts and provides reliable answers?
+
+#### NVIDIA Style
+1. A foundation model needs to process 100,000 documents for summarization. How do you optimize inference throughput while maintaining output quality?
+2. You need to fine-tune a 70B parameter model on a single 80GB A100 GPU. What techniques (QLoRA, quantization, model parallelism) make this possible?
+
+#### AI Startup Style
+1. Your startup is building an AI coding assistant. How do you choose between using GPT-4o API vs self-hosting Llama 3.1 70B? What are the cost and latency trade-offs?
+2. You need to reduce LLM API costs by 80% without significantly degrading output quality. Propose a complete optimization strategy
+
+### Resume Tips
+- List "LLMs" and "Foundation Models" under Technical Skills with specific models (GPT-4o, Claude, Llama, Hugging Face)
+- Project example: "Implemented model routing system that reduced LLM API costs by 65% by directing simple queries to GPT-4o-mini"
+- Mention responsible AI practices: "Built content safety filter with input/output scanning, reducing harmful outputs by 95%"
+
+### Interview Day Checklist
+- [ ] Can compare 3+ foundation models on context window, cost, and strengths from memory
+- [ ] Can explain MoE architecture and why it enables efficient scaling
+- [ ] Can describe 3 hallucination mitigation strategies
+- [ ] Can explain temperature parameter's effect on output with examples
+- [ ] Can outline a model evaluation framework (benchmarks, task-specific testing, human evaluation)
 
 > **Next**: [02 — LLM APIs →](02-llm-apis.md)

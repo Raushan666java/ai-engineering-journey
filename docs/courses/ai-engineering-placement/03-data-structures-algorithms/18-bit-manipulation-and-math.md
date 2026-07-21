@@ -11,6 +11,14 @@
 | LO5 | Compare bit manipulation and math with alternative approaches for different scenarios |
 | LO6 | Master advanced bit manipulation and math techniques for complex problem solving |
 
+## Introduction
+
+Bit manipulation uses individual bits for efficient computation. It is essential for low-level optimization, cryptography, and solving problems that require checking subsets or toggling states.
+
+## Prerequisites
+
+- Binary number system
+- Basic logic gates
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -429,7 +437,14 @@ d) Option D - Fourth choice
 
 ## Exercises
 
-**Easy** - Basic exercise to practice bit manipulation and math fundamentals
+
+## Common Mistakes
+
+1. Not understanding operator precedence
+2. Forgetting that >> is division by 2
+3. Not handling negative numbers correctly
+4. Using bit manipulation when it's not optimal
+5. Confusing & with && and | with ||**Easy** - Basic exercise to practice bit manipulation and math fundamentals
 
 **Medium** - Intermediate exercise applying bit manipulation and math patterns
 
@@ -437,4 +452,46 @@ d) Option D - Fourth choice
 
 **Hard** - Advanced exercise combining bit manipulation and math with other techniques
 
-**Hard** - Challenging exercise requiring bit manipulation and math optimization
+**Hard** - Challenging exercise requiring bit manipulation and math opt
+## Revision Notes
+
+- & = AND, | = OR, ^ = XOR, ~ = NOT
+- << = multiply by 2, >> = divide by 2
+- XOR: a ^ a = 0, a ^ 0 = a
+- n & (n-1) clears lowest set bit
+- Used for subset enumeration and optimization
+## Placement Section
+
+### Top 10 Interview Questions
+
+#### Google Style
+1. Explain the time and space trade-offs of data structures algorithms. When would you choose one approach over another?
+2. Design a system that efficiently handles data structures algorithms at scale (millions of requests/second).
+
+#### Amazon Style
+1. Tell me about a time you had to optimize a system related to data structures algorithms. What was your approach and what was the result?
+2. How would you explain data structures algorithms to a non-technical stakeholder?
+
+#### Microsoft Style
+1. How does data structures algorithms integrate with enterprise systems and cloud architectures?
+2. What are the security implications of data structures algorithms?
+
+#### NVIDIA Style
+1. How would you optimize data structures algorithms for GPU-accelerated computing?
+2. What parallel processing patterns apply to data structures algorithms?
+
+#### AI Startup Style
+1. How would you implement data structures algorithms in a cost-effective, scalable way for a startup?
+2. What's the fastest way to prototype a solution using data structures algorithms?
+
+### Resume Tips
+- **Technical Skills**: List data structures algorithms under relevant technical skills
+- **Project Description**: "Implemented data structures algorithms to [specific outcome], reducing [metric] by [X]%"
+- **Keywords**: Include data structures algorithms in your skills section for ATS optimization
+
+### Interview Day Checklist
+- [ ] Review core concepts of data structures algorithms
+- [ ] Practice 3-5 problems related to data structures algorithms
+- [ ] Prepare 2 real-world examples of using data structures algorithms
+- [ ] Know the time/space complexity of common data structures algorithms operations
+- [ ] Have questions ready about how the company uses data structures algorithmsimization

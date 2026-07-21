@@ -191,6 +191,7 @@ spec:
 kubectl apply -f service.yaml
 kubectl get svc
 kubectl run test --image=alpine --rm -it -- sh
+
 ## Inside: wget -qO- http://web-service
 `
 

@@ -37,6 +37,7 @@ Understanding aggregate functions is fundamental for AI engineers. This section 
 ### Basic Example
 
 ```python
+
 ## Basic aggregate functions example
 def example():
     """Demonstrate aggregate functions"""

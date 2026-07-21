@@ -82,6 +82,7 @@ flowchart LR
 Lists are ordered, mutable, heterogeneous sequences. They are the most versatile collection type.
 
 `python
+
 ## Creation
 empty = []
 numbers = [1, 2, 3, 4, 5]

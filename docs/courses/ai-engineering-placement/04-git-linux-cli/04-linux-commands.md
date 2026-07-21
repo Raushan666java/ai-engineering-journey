@@ -56,6 +56,7 @@ flowchart LR
 ### Basic Example
 
 ```python
+
 ## Basic linux commands example
 def example():
     """Demonstrate linux commands"""

@@ -37,6 +37,7 @@ Understanding joins is fundamental for AI engineers. This section covers the cor
 ### Basic Example
 
 ```python
+
 ## Basic joins example
 def example():
     """Demonstrate joins"""

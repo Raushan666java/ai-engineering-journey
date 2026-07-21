@@ -37,6 +37,7 @@ Understanding numpy fundamentals is fundamental for AI engineers. This section c
 ### Basic Example
 
 ```python
+
 ## Basic numpy fundamentals example
 def example():
     """Demonstrate numpy fundamentals"""

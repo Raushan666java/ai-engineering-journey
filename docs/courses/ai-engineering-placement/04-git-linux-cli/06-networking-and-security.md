@@ -89,6 +89,7 @@ GitHub Actions is GitHub's built-in CI/CD platform. Workflows run in response to
 ### Basic Example
 
 ```python
+
 ## Basic networking and security example
 def example():
     """Demonstrate networking and security"""

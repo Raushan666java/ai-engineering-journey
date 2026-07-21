@@ -645,13 +645,13 @@ def bayes_theorem(prior: float, likelihood: float, evidence: float) -> float:
     posterior = (likelihood * prior) / evidence
     return posterior
 
-# Example: Medical diagnosis
+## Example: Medical diagnosis
 prior_disease = 0.01  # 1% prevalence
 sensitivity = 0.99    # True positive rate
 specificity = 0.95    # True negative rate
 false_positive_rate = 1 - specificity  # 5%
 
-# Positive test result
+## Positive test result
 posterior = bayes_theorem(prior_disease, sensitivity, 
                           sensitivity * prior_disease + false_positive_rate * (1 - prior_disease))
 print(f"P(Disease | Positive test) = {posterior:.4f}")  # ~0.167
@@ -668,7 +668,7 @@ def mle_gaussian(data: np.ndarray) -> tuple:
     sigma_mle = np.std(data, ddof=0)  # MLE uses N, not N-1
     return mu_mle, sigma_mle
 
-# Generate samples from N(5, 2)
+## Generate samples from N(5, 2)
 np.random.seed(42)
 data = np.random.normal(loc=5, scale=2, size=1000)
 mu_hat, sigma_hat = mle_gaussian(data)
@@ -690,7 +690,7 @@ def kl_divergence(p: np.ndarray, q: np.ndarray) -> float:
     q = np.clip(q, 1e-10, 1)
     return np.sum(p * np.log(p / q))
 
-# Example: Two Gaussians
+## Example: Two Gaussians
 x = np.linspace(-5, 5, 1000)
 p = np.exp(-x**2 / 2) / np.sqrt(2 * np.pi)  # N(0,1)
 q = np.exp(-(x-1)**2 / 2) / np.sqrt(2 * np.pi)  # N(1,1)
@@ -725,7 +725,7 @@ def pca(X: np.ndarray, k: int) -> tuple:
     
     return X_transformed, components, explained_variance
 
-# Example: Reduce 3D data to 2D
+## Example: Reduce 3D data to 2D
 np.random.seed(42)
 X = np.random.randn(100, 3)
 X_2d, comps, var = pca(X, k=2)

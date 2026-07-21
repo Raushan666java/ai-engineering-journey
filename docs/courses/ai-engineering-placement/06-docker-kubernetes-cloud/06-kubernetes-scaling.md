@@ -155,6 +155,7 @@ kubectl get hpa --watch
 Cluster Autoscaler automatically adds or removes nodes based on pending Pods.
 
 `yaml
+
 ## AWS EKS Cluster Autoscaler deployment
 apiVersion: apps/v1
 kind: Deployment

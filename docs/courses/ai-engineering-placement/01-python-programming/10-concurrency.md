@@ -37,6 +37,7 @@ Understanding concurrency is fundamental for AI engineers. This section covers t
 ### Basic Example
 
 ```python
+
 ## Basic concurrency example
 def example():
     """Demonstrate concurrency"""

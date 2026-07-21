@@ -59,6 +59,7 @@ Git is a distributed version control system that tracks changes to files over ti
 ### Basic Example
 
 ```python
+
 ## Basic git basics example
 def example():
     """Demonstrate git basics"""

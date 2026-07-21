@@ -37,6 +37,7 @@ Understanding functions is fundamental for AI engineers. This section covers the
 ### Basic Example
 
 ```python
+
 ## Basic functions example
 def example():
     """Demonstrate functions"""

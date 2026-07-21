@@ -59,6 +59,7 @@ Aliases are shortcuts that expand to longer commands. They eliminate typing repe
 ### Basic Example
 
 ```python
+
 ## Basic bash scripting example
 def example():
     """Demonstrate bash scripting"""

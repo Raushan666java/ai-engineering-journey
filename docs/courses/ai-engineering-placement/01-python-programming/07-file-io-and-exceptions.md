@@ -37,6 +37,7 @@ Understanding file io and exceptions is fundamental for AI engineers. This secti
 ### Basic Example
 
 ```python
+
 ## Basic file io and exceptions example
 def example():
     """Demonstrate file io and exceptions"""

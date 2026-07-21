@@ -37,6 +37,7 @@ Understanding subqueries and ctes is fundamental for AI engineers. This section 
 ### Basic Example
 
 ```python
+
 ## Basic subqueries and ctes example
 def example():
     """Demonstrate subqueries and ctes"""

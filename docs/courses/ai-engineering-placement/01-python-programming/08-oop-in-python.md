@@ -37,6 +37,7 @@ Understanding oop in python is fundamental for AI engineers. This section covers
 ### Basic Example
 
 ```python
+
 ## Basic oop in python example
 def example():
     """Demonstrate oop in python"""

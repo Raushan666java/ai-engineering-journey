@@ -37,6 +37,7 @@ Understanding sql basics is fundamental for AI engineers. This section covers th
 ### Basic Example
 
 ```python
+
 ## Basic sql basics example
 def example():
     """Demonstrate sql basics"""

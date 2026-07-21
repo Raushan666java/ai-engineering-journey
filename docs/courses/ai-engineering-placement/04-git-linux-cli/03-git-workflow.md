@@ -59,6 +59,7 @@ Stashing temporarily shelves changes in your working directory so you can work o
 ### Basic Example
 
 ```python
+
 ## Basic git workflow example
 def example():
     """Demonstrate git workflow"""

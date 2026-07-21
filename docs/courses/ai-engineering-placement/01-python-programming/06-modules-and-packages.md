@@ -37,6 +37,7 @@ Understanding modules and packages is fundamental for AI engineers. This section
 ### Basic Example
 
 ```python
+
 ## Basic modules and packages example
 def example():
     """Demonstrate modules and packages"""

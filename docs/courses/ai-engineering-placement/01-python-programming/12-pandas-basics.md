@@ -37,6 +37,7 @@ Understanding pandas basics is fundamental for AI engineers. This section covers
 ### Basic Example
 
 ```python
+
 ## Basic pandas basics example
 def example():
     """Demonstrate pandas basics"""

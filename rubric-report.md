@@ -1,6 +1,6 @@
 # 100-Point Rubric Report
 
-Generated: 2026-07-21T09:04:39.998Z
+Generated: 2026-07-21T09:37:48.024Z
 
 ## Summary
 
@@ -29,26 +29,26 @@ Generated: 2026-07-21T09:04:39.998Z
 
 | Rank | Criteria | Files Failing | % |
 |------|----------|---------------|---|
-| 1 | Further Reading | 219 | 100% |
-| 2 | Clear Language | 219 | 100% |
-| 3 | Flashcards | 219 | 100% |
-| 4 | Capstone Project Link | 219 | 100% |
-| 5 | Tips & Tricks | 218 | 100% |
-| 6 | Memory Tricks | 215 | 98% |
-| 7 | No Duplicated Content | 214 | 98% |
-| 8 | Related Topics | 213 | 97% |
-| 9 | Important Notes | 212 | 97% |
-| 10 | Difficulty Level | 211 | 96% |
-| 11 | FAQs | 207 | 95% |
-| 12 | Analogies | 200 | 91% |
-| 13 | Historical Context | 199 | 91% |
-| 14 | Coding Standards | 199 | 91% |
-| 15 | ML Intuition | 199 | 91% |
-| 16 | Coding Interview Questions | 197 | 90% |
-| 17 | Research References | 194 | 89% |
-| 18 | Security Considerations | 187 | 85% |
-| 19 | Estimated Study Time | 177 | 81% |
-| 20 | Fine-Tuning Notes | 175 | 80% |
+| 1 | Clear Language | 219 | 100% |
+| 2 | No Duplicated Content | 205 | 94% |
+| 3 | Historical Context | 199 | 91% |
+| 4 | Coding Standards | 199 | 91% |
+| 5 | Fine-Tuning Notes | 175 | 80% |
+| 6 | Open-Source Tools | 172 | 79% |
+| 7 | Debugging Guide | 169 | 77% |
+| 8 | Agent Relevance | 159 | 73% |
+| 9 | RAG Relevance | 154 | 70% |
+| 10 | Mock Interview Section | 150 | 68% |
+| 11 | Optimized Implementation | 147 | 67% |
+| 12 | References | 142 | 65% |
+| 13 | Prompt Engineering Notes | 142 | 65% |
+| 14 | Evaluation Metrics | 136 | 62% |
+| 15 | LLM Perspective | 123 | 56% |
+| 16 | Tensor Explanation | 96 | 44% |
+| 17 | Best Practices | 93 | 42% |
+| 18 | Real-World Examples | 86 | 39% |
+| 19 | Next Topic | 85 | 39% |
+| 20 | Language-Specific Best Practices | 62 | 28% |
 
 ## Bottom 10 Files
 

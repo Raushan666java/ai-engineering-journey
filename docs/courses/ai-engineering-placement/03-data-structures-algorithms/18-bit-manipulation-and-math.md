@@ -51,12 +51,6 @@ Section 1 of Bit Manipulation and Math covers essential concepts for AI engineer
 
 The foundation of bit manipulation and math rests on several key principles that every software engineer must understand. These include the basic definitions, the underlying theory, and how these concepts map to practical implementation.
 
-### Key Concepts
-
-- Concept 1: Definition and purpose
-- Concept 2: Core principles and theory
-- Concept 3: Relationship to other topics
-- Concept 4: Common applications
 
 ## 18.2 Section 2
 

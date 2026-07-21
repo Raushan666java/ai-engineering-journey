@@ -51,12 +51,6 @@ Section 1 of Graphs Topological Sort covers essential concepts for AI engineerin
 
 The foundation of graphs topological sort rests on several key principles that every software engineer must understand. These include the basic definitions, the underlying theory, and how these concepts map to practical implementation.
 
-### Key Concepts
-
-- Concept 1: Definition and purpose
-- Concept 2: Core principles and theory
-- Concept 3: Relationship to other topics
-- Concept 4: Common applications
 
 ## 14.2 Section 2
 

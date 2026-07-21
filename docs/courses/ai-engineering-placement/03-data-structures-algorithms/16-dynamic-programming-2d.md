@@ -51,12 +51,6 @@ Section 1 of Dynamic Programming 2D covers essential concepts for AI engineering
 
 The foundation of dynamic programming 2d rests on several key principles that every software engineer must understand. These include the basic definitions, the underlying theory, and how these concepts map to practical implementation.
 
-### Key Concepts
-
-- Concept 1: Definition and purpose
-- Concept 2: Core principles and theory
-- Concept 3: Relationship to other topics
-- Concept 4: Common applications
 
 ## 16.2 Section 2
 

@@ -871,3 +871,93 @@ When applying full fine tuning to specific use cases, consider:
 - Performance optimization for your target hardware
 - Cost considerations for production deployment
 - Monitoring and observability in production
+
+## Open-Source Tools
+
+- **LangChain**: Framework for building LLM-powered applications
+- **LlamaIndex**: Data framework for connecting LLMs with external data
+- **Hugging Face Transformers**: State-of-the-art ML models and datasets
+- **Weights & Biases**: Experiment tracking and model evaluation
+- **MLflow**: Open-source platform for ML lifecycle management
+- **Prometheus + Grafana**: Monitoring and observability stack
+
+## Debugging Guide
+
+**Common Issues**:
+- Check input validation and data types
+- Verify API keys and authentication
+- Monitor resource usage (CPU, memory, GPU)
+- Review error logs for stack traces
+
+**Debugging Steps**:
+1. Reproduce the issue with minimal input
+2. Add logging at key points
+3. Check external dependencies
+4. Verify configuration settings
+5. Test with known-good inputs
+
+## Mock Interview Section
+
+**Quick Fire Questions**:
+1. What is the core concept of Fine-Tuning with PEFT?
+2. When would you use this in production?
+3. What are the trade-offs?
+4. How does this scale?
+5. What are common pitfalls?
+
+**Follow-up Questions**:
+- How would you optimize this for 10x scale?
+- What monitoring would you add?
+- How would you test this in production?
+
+## Optimized Implementation
+
+For production systems, consider:
+- **Caching**: Cache frequent computations and API responses
+- **Batching**: Process multiple items together for efficiency
+- **Async/Await**: Use non-blocking I/O for concurrent operations
+- **Connection Pooling**: Reuse database and API connections
+- **Lazy Loading**: Load resources only when needed
+
+## References
+
+- Official documentation and language specifications
+- "Designing Data-Intensive Applications" by Martin Kleppmann
+- "System Design Interview" by Alex Xu
+- "AI Engineering" by Chip Huyen
+- Research papers from NeurIPS, ICML, ICLR
+- Industry blogs from Google, Meta, OpenAI, Anthropic
+
+## Evaluation Metrics
+
+**Model Evaluation**:
+- Accuracy, Precision, Recall, F1-Score
+- BLEU, ROUGE for text generation
+- Latency, Throughput, Cost per inference
+
+**System Evaluation**:
+- End-to-end latency (p50, p95, p99)
+- Error rate and availability
+- Resource utilization (CPU, memory, GPU)
+
+## Real-World Examples
+
+**Industry Applications**:
+- Google: Search ranking, translation, autocomplete
+- Amazon: Product recommendations, Alexa, fraud detection
+- Netflix: Content recommendations, personalization
+- Tesla: Autonomous driving, computer vision
+- OpenAI: ChatGPT, DALL-E, Codex
+
+## Next Topic
+
+After mastering Fine-Tuning with PEFT, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
+
+## Training Workflow
+
+1. **Data Preparation**: Collect, clean, and preprocess data
+2. **Model Selection**: Choose architecture based on task requirements
+3. **Training Loop**: Forward pass, loss computation, backpropagation
+4. **Validation**: Evaluate on held-out data to prevent overfitting
+5. **Hyperparameter Tuning**: Optimize learning rate, batch size, etc.
+6. **Model Export**: Save trained model for deployment

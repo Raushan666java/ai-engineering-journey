@@ -13,12 +13,13 @@
 
 ## Introduction
 
-07-system-design is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding caching strategies is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering caching strategies.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -41,7 +42,7 @@ flowchart LR
     D --> E[Invalidation]
     E --> F[Stampede Prevention]
     F --> G[Multi-Tier]
-```
+```text
 
 ## 4.1 Cache Hierarchy
 
@@ -55,7 +56,7 @@ flowchart LR
     E --> F[Redis/Distributed Cache]
     F --> G[Database Cache]
     G --> H[Disk]
-```
+```text
 
 | Level | Location | Speed | Size | Example |
 |-------|----------|-------|------|---------|
@@ -75,21 +76,21 @@ import redis
 
 r = redis.Redis(host="localhost", port=6379, decode_responses=True)
 
-# Basic operations
+## Basic operations
 r.set("user:123", '{"name": "Alice", "email": "alice@example.com"}', ex=3600)
 data = r.get("user:123")
 
-# Cache with TTL
+## Cache with TTL
 r.setex("session:abc", 86400, session_data)
 
-# Atomic operations
+## Atomic operations
 r.incr("page_views:home")
 r.expire("page_views:home", 60)
 
-# Data structures
+## Data structures
 r.lpush("recent_views:123", "product_456")
 r.ltrim("recent_views:123", 0, 9)  # Keep last 10
-```
+```text
 
 **Redis eviction policies**:
 
@@ -106,7 +107,7 @@ r.ltrim("recent_views:123", 0, 9)  # Keep last 10
 CDNs cache content at edge locations close to users.
 
 ```python
-# CloudFront with Lambda@Edge for cache optimization
+## CloudFront with Lambda@Edge for cache optimization
 def viewer_request(event):
     request = event["Records"][0]["cf"]["request"]
     headers = request["headers"]
@@ -115,11 +116,11 @@ def viewer_request(event):
     headers["cache-control"] = [{"key": "Cache-Control", "value": "public, max-age=86400"}]
     return request
 
-# Cache behavior rules
-# /static/* -> long TTL (30 days)
-# /api/user/* -> short TTL (60 seconds)
-# /api/* -> no cache
-```
+## Cache behavior rules
+## /static/* -> long TTL (30 days)
+## /api/user/* -> short TTL (60 seconds)
+## /api/* -> no cache
+```text
 
 **CDN best practices**:
 - Cache static assets aggressively (1 year)
@@ -147,7 +148,7 @@ def get_user(user_id):
 def update_user(user_id, data):
     db.execute("UPDATE users SET ... WHERE id = ?", data, user_id)
     cache.delete(f"user:{user_id}")  # Invalidate cache
-```
+```text
 
 **Read Through**: Cache library handles DB reads.
 
@@ -167,12 +168,12 @@ Invalidation is one of the two hard things in computer science.
 | Event-driven | Invalidate on event | Targeted | Complex |
 
 ```python
-# Event-driven invalidation
+## Event-driven invalidation
 def on_user_updated(event):
     user_id = event["user_id"]
     cache.delete(f"user:{user_id}")
     cache.delete(f"user_orders:{user_id}")
-```
+```text
 
 ## 4.6 Cache Stampede
 
@@ -181,7 +182,7 @@ When many requests miss cache simultaneously and all hit the database.
 **Solutions**:
 
 ```python
-# Mutex lock
+## Mutex lock
 def get_expensive_data(key):
     data = cache.get(key)
     if data:
@@ -199,7 +200,7 @@ def get_expensive_data(key):
         return cache.get(key)
     return data
 
-# Early recompute (recompute before TTL expires)
+## Early recompute (recompute before TTL expires)
 def get_with_early_recompute(key, ttl=300, early_ttl=60):
     data = cache.get(key)
     if data:
@@ -211,7 +212,7 @@ def get_with_early_recompute(key, ttl=300, early_ttl=60):
             thread.start()
         return data
     return refresh_cache(key)
-```
+```text
 
 ## 4.7 Multi-Tier Caching
 
@@ -243,7 +244,7 @@ class MultiTierCache:
     def invalidate(self, key):
         self.local.pop(key, None)
         self.redis.delete(key)
-```
+```text
 
 ---
 
@@ -276,7 +277,7 @@ class InMemoryCache<T> {
     this.store.delete(key);
   }
 }
-```
+```text
 
 ---
 
@@ -440,7 +441,7 @@ d) Number of keys
 **Implementation comparison**:
 
 ```python
-# Cache-Aside (most common)
+## Cache-Aside (most common)
 class CacheAside:
     def get(self, key):
         value = cache.get(key)
@@ -453,13 +454,13 @@ class CacheAside:
         db.update("UPDATE data SET value = ? WHERE key = ?", value, key)
         cache.delete(key)  # Invalidate cache
 
-# Read-Through (cache knows how to fetch from DB)
+## Read-Through (cache knows how to fetch from DB)
 class ReadThroughCache:
     def get(self, key):
         # Cache itself handles DB fallback
         return cache.get_or_compute(key, lambda: db.query("SELECT * FROM data WHERE key = ?", key), ttl=300)
 
-# Write-Through (cache updated on every write)
+## Write-Through (cache updated on every write)
 class WriteThroughCache:
     def get(self, key):
         return cache.get(key)  # Always fresh
@@ -468,7 +469,7 @@ class WriteThroughCache:
         cache.set(key, value)
         db.insert("INSERT INTO data (key, value) VALUES (?, ?)", key, value)
 
-# Write-Behind (async DB write)
+## Write-Behind (async DB write)
 class WriteBehindCache:
     def __init__(self):
         self.write_queue = Queue()
@@ -481,7 +482,7 @@ class WriteBehindCache:
         while not self.write_queue.empty():
             key, value = self.write_queue.get()
             db.insert("INSERT INTO data (key, value) VALUES (?, ?)", key, value)
-```
+```text
 
 ## Content Delivery Network (CDN) Deep Dive
 
@@ -519,7 +520,7 @@ async def serve_static(file_path: str):
             "Cache-Control": "private, no-cache, no-store, must-revalidate",
         }
     )
-```
+```text
 
 **CDN cache invalidation strategies**:
 
@@ -558,7 +559,7 @@ class CacheMonitor:
             "hit_rate_status": "good" if self.hit_rate() > 0.9 else "needs_improvement"
         }
 
-# Usage
+## Usage
 monitor = CacheMonitor(redis_client)
 
 def get_user(user_id):
@@ -571,7 +572,7 @@ def get_user(user_id):
     user = db.query("SELECT * FROM users WHERE id = ?", user_id)
     cache.set(cache_key, user, ex=3600)
     return user
-```
+```text
 
 ---
 
@@ -583,6 +584,7 @@ def get_user(user_id):
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 07-system-design
@@ -592,6 +594,7 @@ def get_user(user_id):
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

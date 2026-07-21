@@ -13,12 +13,13 @@
 
 ## Introduction
 
-12-rag-vector-databases is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding advanced rag techniques is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering advanced rag techniques.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -45,7 +46,7 @@ flowchart TD
     H --> I[Critique]
     I -->|Needs more| C
     I -->|Done| J[Final Answer]
-```
+```text
 
 ## 7.1 Self-RAG
 
@@ -94,7 +95,7 @@ def mock_model_fn(prompt: str) -> str:
 
 decider = RetrievalDecider(threshold=0.7)
 print(f"Needs retrieval: {decider.needs_retrieval('What is the latest RAG research?', mock_model_fn)}")
-```
+```text
 
 ### 7.1.2 Self-Reflection After Retrieval
 
@@ -160,7 +161,7 @@ class SelfRAGPipeline:
 
 pipeline = SelfRAGPipeline(None, decider, SelfReflector(), 3)
 print("Self-RAG pipeline configured")
-```
+```text
 
 ### 7.1.3 Verifier Module
 
@@ -194,7 +195,7 @@ Respond with JSON:
 
 verifier = Verifier()
 print("Verifier module ready")
-```
+```text
 
 ## 7.2 Multi-Hop RAG
 
@@ -240,7 +241,7 @@ decomposer = QueryDecomposer()
 sub_questions = mock_decomposer("How does RAG use attention mechanisms?")
 for i, q in enumerate(sub_questions, 1):
     print(f"Sub-Q{i}: {q}")
-```
+```text
 
 ### 7.2.2 Multi-Hop Executor
 
@@ -295,7 +296,7 @@ multihop = MultiHopRAG(
     decomposer,
 )
 print("Multi-hop RAG configured")
-```
+```text
 
 ### 7.2.3 Dependency Graph
 
@@ -341,7 +342,7 @@ graph.build(
     {"How does RAG use attention?": "What is RAG?", "How does RAG use attention?": "What is attention?"},
 )
 print(f"Execution order: {graph.execution_order()}")
-```
+```text
 
 ## 7.3 Iterative Retrieval
 
@@ -386,7 +387,7 @@ def feedback_fn(query: str, chunks: list) -> dict:
 
 itr = IterativeRetriever(MockRetriever(), feedback_fn, max_iterations=3)
 print("Iterative retriever ready")
-```
+```text
 
 ### 7.3.2 Corrective RAG
 
@@ -424,7 +425,7 @@ If the answer is correct as-is, say "CORRECT"."""
 
 corrective = CorrectiveRAG(MockRetriever(), MockGenerator())
 print("Corrective RAG configured")
-```
+```text
 
 ## 7.4 Agentic RAG
 
@@ -459,7 +460,7 @@ Respond with the category name only."""
 router = QueryRouter()
 route = router.route("Compare RAG and fine-tuning", mock_model_fn)
 print(f"Routed to: {route}, databases: {router.get_databases(route)}")
-```
+```text
 
 ### 7.4.2 Tool-Using Agent
 
@@ -539,7 +540,7 @@ registry = ToolRegistry()
 registry.register("search", "Search the knowledge base for information", lambda query: "Retrieved information")
 agent = AgenticRAG(registry, MockGenerator())
 print("Agentic RAG ready")
-```
+```text
 
 ### 7.4.3 Plan-and-Solve
 
@@ -588,7 +589,7 @@ Plan:"""
 
 ps = PlanAndSolve(MockRetriever(), MockGenerator())
 print("Plan-and-Solve RAG ready")
-```
+```text
 
 ## 7.5 Graph RAG
 
@@ -627,7 +628,7 @@ extractor = EntityExtractor()
 entities = extractor.extract("RAG uses Transformer-based retrieval.", mock_model_fn)
 for e in entities:
     print(f"Entity: {e['name']} ({e['type']})")
-```
+```text
 
 ### 7.5.2 Knowledge Graph Construction
 
@@ -677,7 +678,7 @@ kg.add_entity("Transformer", "TECH", ["c3"])
 kg.add_relationship("RAG", "Retrieval", "uses")
 kg.add_relationship("RAG", "Transformer", "built_on")
 print(f"Related to RAG: {kg.get_related('RAG')}")
-```
+```text
 
 ### 7.5.3 Graph Traversal Retrieval
 
@@ -720,7 +721,7 @@ class GraphRAGRetriever:
 
 graph_retriever = GraphRAGRetriever(kg, MockRetriever())
 print("Graph RAG retriever ready")
-```
+```text
 
 ## 7.6 Evaluation
 
@@ -781,7 +782,7 @@ benchmark = RAGBenchmark(
     },
 )
 print("Benchmark ready for comparing RAG approaches")
-```
+```text
 
 ### 7.6.2 Ablation Study
 
@@ -809,7 +810,7 @@ class MockRAGPipeline:
 
 ablation = AblationStudy(MockRAGPipeline())
 print("Ablation study configured for advanced RAG evaluation")
-```
+```text
 
 ## Summary
 
@@ -1012,6 +1013,7 @@ Answer: B
 4. Implement an agentic RAG system with 3 tools: web search, vector search, and calculator. Demonstrate routing a query that requires all 3 tools.
 
 5. Design an ablation study comparing standard RAG, Self-RAG, multi-hop RAG, and Graph RAG on a benchmark of 20 queries. Report faithfulness, completeness, and average latency 
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 12-rag-vector-databases
@@ -1021,6 +1023,7 @@ Answer: B
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

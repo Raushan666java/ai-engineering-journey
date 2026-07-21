@@ -13,12 +13,13 @@
 
 ## Introduction
 
-21-interview-preparation is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding ml foundations interview is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering ml foundations interview.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart LR
     E --> F[Tree-Based Models]
     F --> G[SVMs]
     G --> H[ML Pipeline Design]
-```
+```text
 
 ## 4.1 Learning Paradigms
 
@@ -60,7 +61,7 @@ Machine learning is broadly categorized into three main paradigms, with emerging
 **Self-supervised learning**: Generates labels from the data itself (pretext tasks). Used for pre-training large models (BERT, GPT, SimCLR). The model learns useful representations without manual labels.
 
 ```python
-# Supervised learning example — classification
+## Supervised learning example — classification
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
@@ -75,7 +76,7 @@ def train_classifier(X, y):
     print(classification_report(y_test, y_pred))
     return model
 
-# Unsupervised learning example — clustering
+## Unsupervised learning example — clustering
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
 
@@ -85,7 +86,7 @@ def cluster_data(X, n_clusters=5):
     kmeans = KMeans(n_clusters=n_clusters, random_state=42, n_init="auto")
     clusters = kmeans.fit_predict(X_scaled)
     return clusters, kmeans.cluster_centers_
-```
+```text
 
 ---
 
@@ -100,7 +101,7 @@ The bias-variance tradeoff is fundamental to understanding model performance.
 **Total error** = Bias² + Variance + Irreducible error.
 
 ```python
-# Visualizing bias-variance with polynomial regression
+## Visualizing bias-variance with polynomial regression
 import numpy as np
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.linear_model import LinearRegression
@@ -126,7 +127,7 @@ def bias_variance_demo():
         # Degree 1: high bias (underfitting)
         # Degree 3: balanced
         # Degree 15: high variance (overfitting)
-```
+```text
 
 **Regularization** reduces overfitting by adding a penalty for complex models:
 
@@ -171,7 +172,7 @@ def evaluate_classifier(y_true, y_pred, y_proba=None):
     cm = confusion_matrix(y_true, y_pred)
     print(f"Confusion Matrix:\n{cm}")
 
-# Regression metrics
+## Regression metrics
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 
 def evaluate_regression(y_true, y_pred):
@@ -182,7 +183,7 @@ def evaluate_regression(y_true, y_pred):
     print(f"MSE:  {mse:.4f}, RMSE: {rmse:.4f}")
     print(f"MAE:  {mae:.4f}")
     print(f"R²:   {r2:.4f}")
-```
+```text
 
 **Important considerations**: For imbalanced datasets (fraud detection, rare disease), accuracy is misleading. Use precision-recall curves, F1, or weighted metrics. For ranking problems (recommendation systems), use NDCG, MAP, or MRR.
 
@@ -236,11 +237,11 @@ def engineer_features(df: pd.DataFrame) -> pd.DataFrame:
 
     return df
 
-# Feature scaling
+## Feature scaling
 scaler = StandardScaler()
 numerical_cols = ["price", "area", "rooms", "price_per_area"]
 df[numerical_cols] = scaler.fit_transform(df[numerical_cols])
-```
+```text
 
 **Feature engineering rules**: Start simple, validate with cross-validation, don't leak information from the future, create features that encode domain knowledge.
 
@@ -271,35 +272,35 @@ from sklearn.feature_selection import (
 )
 from sklearn.ensemble import RandomForestClassifier
 
-# Variance threshold — remove low-variance features
+## Variance threshold — remove low-variance features
 def remove_low_variance(X, threshold=0.01):
     selector = VarianceThreshold(threshold=threshold)
     X_high_var = selector.fit_transform(X)
     kept = selector.get_support(indices=True)
     return X_high_var, kept
 
-# Mutual information — select top K features
+## Mutual information — select top K features
 def select_by_mutual_info(X, y, k=20):
     selector = SelectKBest(mutual_info_classif, k=k)
     X_selected = selector.fit_transform(X, y)
     scores = selector.scores_
     return X_selected, scores
 
-# Recursive feature elimination (wrapper)
+## Recursive feature elimination (wrapper)
 def select_by_rfe(model, X, y, n_features=10):
     selector = RFE(model, n_features_to_select=n_features)
     X_selected = selector.fit_transform(X, y)
     ranking = selector.ranking_
     return X_selected, ranking
 
-# Tree-based feature importance (embedded)
+## Tree-based feature importance (embedded)
 def select_by_importance(X, y, threshold=0.01):
     model = RandomForestClassifier(n_estimators=100, random_state=42)
     model.fit(X, y)
     importances = model.feature_importances_
     mask = importances >= threshold
     return X[:, mask], importances[mask]
-```
+```text
 
 **Dimensionality reduction**: PCA (linear, unsupervised), t-SNE (non-linear, visualization), UMAP (non-linear, fast), LDA (linear, supervised).
 
@@ -321,11 +322,11 @@ from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 import xgboost as xgb
 import lightgbm as lgb
 
-# Decision tree
+## Decision tree
 dt = DecisionTreeClassifier(max_depth=5, min_samples_leaf=10, random_state=42)
 dt.fit(X_train, y_train)
 
-# Random forest
+## Random forest
 rf = RandomForestClassifier(
     n_estimators=200,
     max_depth=10,
@@ -336,7 +337,7 @@ rf = RandomForestClassifier(
 rf.fit(X_train, y_train)
 feature_importance = pd.Series(rf.feature_importances_, index=feature_names)
 
-# XGBoost
+## XGBoost
 xgb_model = xgb.XGBClassifier(
     n_estimators=100,
     max_depth=6,
@@ -349,7 +350,7 @@ xgb_model = xgb.XGBClassifier(
 )
 xgb_model.fit(X_train, y_train)
 
-# LightGBM
+## LightGBM
 lgb_model = lgb.LGBMClassifier(
     n_estimators=100,
     max_depth=-1,          # no limit
@@ -360,7 +361,7 @@ lgb_model = lgb.LGBMClassifier(
     random_state=42
 )
 lgb_model.fit(X_train, y_train)
-```
+```text
 
 **Key hyperparameters**: n_estimators (more is better but diminishing returns), learning_rate (lower = better generalization), max_depth (control overfitting), subsample (row sampling), colsample_bytree (column sampling), reg_lambda/alpha (regularization).
 
@@ -383,7 +384,7 @@ SVMs find the hyperplane that maximally separates classes. They work well for hi
 from sklearn.svm import SVC, SVR
 from sklearn.preprocessing import StandardScaler
 
-# SVM classification with RBF kernel
+## SVM classification with RBF kernel
 def train_svm(X_train, y_train, X_test):
     # SVMs require feature scaling
     scaler = StandardScaler()
@@ -404,7 +405,7 @@ def train_svm(X_train, y_train, X_test):
 
     return svm, y_pred, y_proba
 
-# Hyperparameter tuning
+## Hyperparameter tuning
 from sklearn.model_selection import GridSearchCV
 
 param_grid = {
@@ -424,7 +425,7 @@ grid_search = GridSearchCV(
 grid_search.fit(X_train_scaled, y_train)
 print(f"Best params: {grid_search.best_params_}")
 print(f"Best score: {grid_search.best_score_:.4f}")
-```
+```text
 
 **SVM tradeoffs**: Works well for small-to-medium datasets. Training is O(n²) to O(n³). Sensitive to feature scaling. RBF kernel is a good default. For large datasets, use LinearSVC or SGDClassifier with hinge loss.
 
@@ -446,7 +447,7 @@ A production ML pipeline spans from data to deployment. Be prepared to discuss t
 8. **Retraining**: Scheduled (weekly/monthly) or triggered by performance degradation.
 
 ```python
-# Complete ML pipeline with scikit-learn
+## Complete ML pipeline with scikit-learn
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
@@ -481,7 +482,7 @@ pipeline = build_pipeline(categorical_cols=["city", "category"], numerical_cols=
 pipeline.fit(X_train, y_train)
 y_pred = pipeline.predict(X_test)
 
-# MLflow experiment tracking
+## MLflow experiment tracking
 import mlflow
 
 def train_with_tracking(X_train, X_test, y_train, y_test, params: dict):
@@ -505,7 +506,7 @@ def train_with_tracking(X_train, X_test, y_train, y_test, params: dict):
         mlflow.sklearn.log_model(model, "model")
 
         return model
-```
+```text
 
 **Model serving**: For real-time inference, wrap the model in a REST API with input validation and monitoring. For batch inference, use Spark or Dask. Consider model quantization and ONNX for latency-sensitive applications.
 
@@ -741,7 +742,7 @@ scaler = StandardScaler()
 X_all_scaled = scaler.fit_transform(X)
 X_train, X_test = train_test_split(X_all_scaled)  # test data influences scaling
 
-# CORRECT — scale after split
+## CORRECT — scale after split
 X_train, X_test = train_test_split(X)
 scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
@@ -969,6 +970,7 @@ d) Works without labeled data
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 21-interview-preparation
@@ -978,6 +980,7 @@ d) Works without labeled data
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

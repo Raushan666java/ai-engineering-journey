@@ -13,12 +13,13 @@
 
 ## Introduction
 
-06-docker-kubernetes-cloud is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding aws containers is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering aws containers.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -41,7 +42,7 @@ flowchart LR
     D --> E[IAM for ECS]
     E --> F[EKS]
     F --> G[CI/CD]
-```
+```text
 
 ## 8.1 Amazon ECS Overview
 
@@ -59,38 +60,38 @@ Amazon ECS is a fully managed container orchestration service.
 | Duration | Short-lived and long | Best for persistent |
 
 ```bash
-# Create ECS cluster
+## Create ECS cluster
 aws ecs create-cluster --cluster-name my-cluster
 
-# List clusters
+## List clusters
 aws ecs list-clusters
-```
+```text
 
 ## 8.2 Amazon ECR
 
 ECR is a fully managed Docker container registry.
 
 ```bash
-# Create repository
+## Create repository
 aws ecr create-repository --repository-name my-app
 
-# Log in to ECR
+## Log in to ECR
 aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 123456789012.dkr.ecr.us-east-1.amazonaws.com
 
-# Tag and push
+## Tag and push
 docker tag my-app:latest 123456789012.dkr.ecr.us-east-1.amazonaws.com/my-app:latest
 docker push 123456789012.dkr.ecr.us-east-1.amazonaws.com/my-app:latest
 
-# Pull image
+## Pull image
 docker pull 123456789012.dkr.ecr.us-east-1.amazonaws.com/my-app:latest
 
-# Scan for vulnerabilities
+## Scan for vulnerabilities
 aws ecr start-image-scan --repository-name my-app --image-id imageTag=latest
 aws ecr describe-image-scan-findings --repository-name my-app --image-id imageTag=latest
 
-# Lifecycle policy
+## Lifecycle policy
 aws ecr put-lifecycle-policy     --repository-name my-app     --lifecycle-policy-text file://lifecycle.json
-```
+```text
 
 **Lifecycle policy JSON**:
 
@@ -107,7 +108,7 @@ aws ecr put-lifecycle-policy     --repository-name my-app     --lifecycle-policy
     "action": { "type": "expire" }
   }]
 }
-```
+```text
 
 ## 8.3 ECS Task Definitions
 
@@ -151,31 +152,31 @@ Task definitions are the blueprint for your containers.
     }
   ]
 }
-```
+```text
 
 ```bash
 aws ecs register-task-definition --cli-input-json file://task-definition.json
-```
+```text
 
 ## 8.4 ECS Services and Scaling
 
 Services maintain a desired count of tasks behind a load balancer.
 
 ```bash
-# Create service
+## Create service
 aws ecs create-service     --cluster my-cluster     --service-name api-service     --task-definition my-app-task:1     --desired-count 3     --launch-type FARGATE     --network-configuration "awsvpcConfiguration={subnets=[subnet-abc,subnet-def],securityGroups=[sg-123],assignPublicIp=ENABLED}"     --load-balancers "targetGroupArn=arn:aws:elasticloadbalancing:...,containerName=api,containerPort=8000"
 
-# Auto scaling
+## Auto scaling
 aws application-autoscaling register-scalable-target     --service-namespace ecs     --resource-id service/my-cluster/api-service     --scalable-dimension ecs:service:DesiredCount     --min-capacity 2     --max-capacity 10
 
 aws application-autoscaling put-scaling-policy     --policy-name cpu-target     --service-namespace ecs     --resource-id service/my-cluster/api-service     --scalable-dimension ecs:service:DesiredCount     --policy-type TargetTrackingScaling     --target-tracking-scaling-policy-configuration file://cpu-target.json
-```
+```text
 
 **Rolling update**:
 
 ```bash
 aws ecs update-service     --cluster my-cluster     --service api-service     --task-definition my-app-task:2     --deployment-configuration "deploymentCircuitBreaker={enable=true,rollback=true},maximumPercent=200,minimumHealthyPercent=100"
-```
+```text
 
 ## 8.5 IAM Roles for ECS
 
@@ -199,7 +200,7 @@ aws ecs update-service     --cluster my-cluster     --service api-service     --
     }
   ]
 }
-```
+```text
 
 **Task Role**: Grants the container permissions to call AWS services.
 
@@ -219,7 +220,7 @@ aws ecs update-service     --cluster my-cluster     --service api-service     --
     }
   ]
 }
-```
+```text
 
 **Secrets injection**:
 
@@ -233,29 +234,29 @@ aws ecs update-service     --cluster my-cluster     --service api-service     --
     }
   ]
 }
-```
+```text
 
 ## 8.6 Amazon EKS
 
 EKS is managed Kubernetes. AWS handles the control plane; you manage worker nodes.
 
 ```bash
-# Create EKS cluster
+## Create EKS cluster
 eksctl create cluster     --name my-cluster     --region us-east-1     --nodegroup-name standard-workers     --node-type t3.medium     --nodes 3     --nodes-min 1     --nodes-max 6     --managed
 
-# Update kubeconfig
+## Update kubeconfig
 aws eks update-kubeconfig --region us-east-1 --name my-cluster
 
-# Deploy app
+## Deploy app
 kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
 
-# Node groups
+## Node groups
 eksctl create nodegroup     --cluster my-cluster     --name gpu-workers     --node-type p3.2xlarge     --nodes 1     --node-labels accelerator=nvidia
 
-# Fargate profiles
+## Fargate profiles
 eksctl create fargateprofile     --cluster my-cluster     --name my-profile     --namespace default     --labels app=serverless-workload
-```
+```text
 
 **EKS vs ECS**:
 
@@ -273,7 +274,7 @@ eksctl create fargateprofile     --cluster my-cluster     --name my-profile     
 **AWS CodePipeline with ECS**:
 
 ```yaml
-# buildspec.yml for CodeBuild
+## buildspec.yml for CodeBuild
 version: 0.2
 phases:
   pre_build:
@@ -289,15 +290,15 @@ phases:
       - printf '[{"name":"api","imageUri":"%s"}]' $REPOSITORY_URI:$CODEBUILD_RESOLVED_SOURCE_VERSION > imagedefinitions.json
 artifacts:
   files: imagedefinitions.json
-```
+```text
 
 ```bash
-# Create pipeline
+## Create pipeline
 aws codepipeline create-pipeline --cli-input-json file://pipeline.json
 
-# Deploy to ECS with new image
+## Deploy to ECS with new image
 aws ecs update-service     --cluster my-cluster     --service api-service     --force-new-deployment
-```
+```text
 
 ---
 
@@ -325,7 +326,7 @@ async function createService(name: string, taskDef: string, cluster: string, sub
   });
   return client.send(cmd);
 }
-```
+```text
 
 ---
 
@@ -495,6 +496,7 @@ d) EC2
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 06-docker-kubernetes-cloud
@@ -504,6 +506,7 @@ d) EC2
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

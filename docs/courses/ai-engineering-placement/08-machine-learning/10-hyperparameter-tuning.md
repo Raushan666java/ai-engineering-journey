@@ -13,12 +13,13 @@
 
 ## Introduction
 
-08-machine-learning is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding hyperparameter tuning is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering hyperparameter tuning.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -49,7 +50,7 @@ flowchart LR
     style D fill:#e85d75,color:#fff
     style E fill:#50b86c,color:#fff
     style F fill:#f5a623,color:#fff
-```
+```text
 
 ## 10.1 Parameters vs Hyperparameters
 
@@ -95,7 +96,7 @@ class HyperparameterAwareness:
 
 
 print(HyperparameterAwareness.categorize())
-```
+```text
 
 ---
 
@@ -173,7 +174,7 @@ class GridSearchCV:
         return model.predict(X)
 
 
-# Grid search example
+## Grid search example
 param_grid_rf = {
     "n_estimators": [50, 100],
     "max_depth": [5, 10],
@@ -182,7 +183,7 @@ param_grid_rf = {
 grid = GridSearchCV(RandomForestClassifier, param_grid_rf, cv=3, verbose=True)
 grid.fit(X_hp_train, y_hp_train)
 print(f"Best params: {grid.best_params_}, Best score: {grid.best_score_:.4f}")
-```
+```text
 
 **Grid search limitations**:
 - Curse of dimensionality: with K hyperparameters each having V values, total = V^K
@@ -260,7 +261,7 @@ class RandomSearchCV:
         return params
 
 
-# Random search with distributions
+## Random search with distributions
 param_dist_rf = {
     "n_estimators": (50, 200),  # uniform int
     "max_depth": (3, 15),       # uniform int
@@ -270,7 +271,7 @@ param_dist_rf = {
 random_search = RandomSearchCV(RandomForestClassifier, param_dist_rf, n_iter=10, cv=3)
 random_search.fit(X_hp_train, y_hp_train)
 print(f"Random search best: {random_search.best_params_}, score: {random_search.best_score_:.4f}")
-```
+```text
 
 **Why random search works**: In most problems, only a few hyperparameters significantly affect performance. Random search explores more distinct values per important hyperparameter compared to grid search.
 
@@ -368,7 +369,7 @@ class BayesianOptimization:
         return params
 
 
-# Define objective function
+## Define objective function
 def rf_objective(params: Dict) -> float:
     model = RandomForestClassifier(
         n_estimators=int(params["n_estimators"]),
@@ -388,7 +389,7 @@ param_bounds = {
 bo = BayesianOptimization(param_bounds, n_init=3, n_iter=10)
 result = bo.optimize(rf_objective)
 print(f"BO best: {result['best_params']}, score: {result['best_score']:.4f}")
-```
+```text
 
 **Acquisition functions**:
 - Expected Improvement (EI): Expected amount of improvement over current best
@@ -467,7 +468,7 @@ def optuna_objective(params: Dict) -> float:
 optuna_opt = OptunaStyleOptimizer(n_trials=30)
 optuna_result = optuna_opt.optimize(optuna_objective, optuna_suggest)
 print(f"Optuna best: {optuna_result['best_params']}, value: {optuna_result['best_value']:.4f}")
-```
+```text
 
 **Optuna features**:
 - Define-by-run: dynamic search space construction
@@ -545,7 +546,7 @@ class AutoMLPipeline:
 automl = AutoMLPipeline(n_trials=15)
 automl.fit(X_hp_train, y_hp_train)
 print(f"AutoML best: {automl.best_pipeline_}, score: {automl.best_score_:.4f}")
-```
+```text
 
 **AutoML tools**: Auto-sklearn, TPOT, H2O AutoML, AutoGluon, FLAML.
 
@@ -599,7 +600,7 @@ const tsResult = tsSearch.search(
   { n_estimators: [50, 200], max_depth: [3, 15] },
   10
 );
-```
+```text
 
 ## Summary
 
@@ -715,6 +716,7 @@ d) Class imbalance
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 08-machine-learning
@@ -724,6 +726,7 @@ d) Class imbalance
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

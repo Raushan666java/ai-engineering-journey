@@ -13,12 +13,13 @@
 
 ## Introduction
 
-01-python-programming is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding data visualization is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering data visualization.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -47,7 +48,7 @@ flowchart LR
     D --> L[Animations]
     E --> M[ipywidgets]
     E --> N[Panel Dashboards]
-```
+```text
 
 ## 14.1 Matplotlib Pyplot
 
@@ -69,12 +70,12 @@ plt.title("Trigonometric Functions")
 plt.legend()
 plt.grid(True, alpha=0.3)
 plt.show()
-```
+```text
 
 **Common plot types**:
 
 ```python
-# Scatter plot
+## Scatter plot
 plt.figure(figsize=(6, 4))
 x = np.random.randn(100)
 y = np.random.randn(100)
@@ -84,14 +85,14 @@ plt.scatter(x, y, c=colors, s=sizes, alpha=0.6, cmap="viridis")
 plt.colorbar(label="Value")
 plt.show()
 
-# Bar chart
+## Bar chart
 categories = ["A", "B", "C", "D", "E"]
 values = [23, 45, 12, 67, 34]
 plt.bar(categories, values, color="skyblue", edgecolor="navy")
 plt.title("Bar Chart Example")
 plt.show()
 
-# Histogram
+## Histogram
 data = np.random.randn(1000)
 plt.hist(data, bins=30, density=True, alpha=0.7, color="steelblue")
 plt.xlabel("Value")
@@ -99,12 +100,12 @@ plt.ylabel("Density")
 plt.title("Histogram with Density")
 plt.show()
 
-# Box plot
+## Box plot
 groups = [np.random.randn(100) for _ in range(4)]
 plt.boxplot(groups, labels=["A", "B", "C", "D"])
 plt.title("Box Plot Comparison")
 plt.show()
-```
+```text
 
 **Saving figures** to disk:
 
@@ -112,7 +113,7 @@ plt.show()
 plt.savefig("plot.png", dpi=300, bbox_inches="tight")
 plt.savefig("plot.pdf", format="pdf")
 plt.savefig("plot.svg", format="svg")
-```
+```text
 
 **The Figure and Axes API** gives more control:
 
@@ -126,7 +127,7 @@ ax.set_title("Using Axes API")
 ax.legend()
 ax.grid(True)
 plt.show()
-```
+```text
 
 ## 14.2 Customization
 
@@ -135,17 +136,17 @@ Fine-tune every element of your plots for publication quality.
 **Colors and colormaps**:
 
 ```python
-# Named colors and hex codes
+## Named colors and hex codes
 plt.plot(x, y, color="tab:blue")
 plt.plot(x, y, color="#2E86AB")
 plt.plot(x, y, color=(0.2, 0.4, 0.6))
 
-# Colormaps
+## Colormaps
 cmap = plt.cm.viridis
 cmap = plt.cm.plasma
 cmap = plt.cm.coolwarm
 cmap = plt.cm.RdYlBu
-```
+```text
 
 **Line and marker styles**:
 
@@ -158,7 +159,7 @@ styles = [
 ]
 for style in styles:
     plt.plot(x, y, **style)
-```
+```text
 
 **Annotations and text**:
 
@@ -176,14 +177,14 @@ plt.annotate(
 
 plt.text(0, -1.5, "y = sin(x)", fontsize=10, style="italic")
 
-# Highlight regions
+## Highlight regions
 plt.axvspan(2, 4, alpha=0.2, color="yellow")
 plt.axhline(0, color="black", linewidth=0.5)
 plt.axvline(np.pi, color="red", linestyle="--", alpha=0.5)
 
-# Reference lines
+## Reference lines
 plt.axhline(y=0.5, xmin=0.25, xmax=0.75, color="green", linestyle=":")
-```
+```text
 
 **Spine and tick customization**:
 
@@ -191,33 +192,33 @@ plt.axhline(y=0.5, xmin=0.25, xmax=0.75, color="green", linestyle=":")
 fig, ax = plt.subplots()
 ax.plot(x, y)
 
-# Remove top and right spines
+## Remove top and right spines
 ax.spines["top"].set_visible(False)
 ax.spines["right"].set_visible(False)
 
-# Move bottom spine
+## Move bottom spine
 ax.spines["bottom"].set_position(("data", 0))
 
-# Custom ticks
+## Custom ticks
 ax.set_xticks([0, np.pi / 2, np.pi, 3 * np.pi / 2, 2 * np.pi])
 ax.set_xticklabels(["0", r"$\pi/2$", r"$\pi$", r"$3\pi/2$", r"$2\pi$"])
 
-# Rotate tick labels
+## Rotate tick labels
 plt.xticks(rotation=45)
-```
+```text
 
 **Style sheets** provide consistent theming:
 
 ```python
 print(plt.style.available)
-# ['ggplot', 'seaborn-v0_8', 'fivethirtyeight', 'dark_background', ...]
+## ['ggplot', 'seaborn-v0_8', 'fivethirtyeight', 'dark_background', ...]
 
 plt.style.use("seaborn-v0_8")
 
-# Or use context manager for temporary style
+## Or use context manager for temporary style
 with plt.style.context("ggplot"):
     plt.plot(x, y)
-```
+```text
 
 **Customizing legends**:
 
@@ -230,7 +231,7 @@ plt.legend(
     fontsize=10,
     title="Legend Title"
 )
-```
+```text
 
 ## 14.3 Subplots
 
@@ -249,7 +250,7 @@ axes[1, 2].imshow(np.random.randn(10, 10), cmap="viridis")
 
 plt.tight_layout()
 plt.show()
-```
+```text
 
 **GridSpec for irregular layouts**:
 
@@ -273,7 +274,7 @@ ax5.plot(np.sin(x), np.cos(x))
 
 plt.tight_layout()
 plt.show()
-```
+```text
 
 **Inset axes** for zoom-in details:
 
@@ -284,7 +285,7 @@ ax.plot(x, y)
 inset = ax.inset_axes([0.6, 0.6, 0.3, 0.3])
 inset.plot(x[:20], y[:20], color="red", linewidth=2)
 inset.set_title("Zoom", fontsize=8)
-```
+```text
 
 **Shared axes** for aligned subplots:
 
@@ -295,7 +296,7 @@ axes[0].set_title("sin(x)")
 axes[1].plot(x, np.cos(x))
 axes[1].set_title("cos(x)")
 plt.xlabel("X (shared)")
-```
+```text
 
 **Twin axes** for dual y-axes:
 
@@ -307,7 +308,7 @@ ax1.set_ylabel("sin(x)", color="steelblue")
 ax2 = ax1.twinx()
 ax2.plot(x, np.exp(x / 5), color="coral")
 ax2.set_ylabel("exp(x/5)", color="coral")
-```
+```text
 
 ## 14.4 Seaborn
 
@@ -318,70 +319,70 @@ import seaborn as sns
 import pandas as pd
 
 tips = sns.load_dataset("tips")
-```
+```text
 
 **Relational plots** show relationships between variables:
 
 ```python
-# Scatter with hue and style
+## Scatter with hue and style
 sns.scatterplot(
     data=tips, x="total_bill", y="tip",
     hue="time", style="sex", size="size",
     palette="deep"
 )
 
-# relplot with facets
+## relplot with facets
 sns.relplot(
     data=tips, x="total_bill", y="tip",
     col="time", hue="sex", kind="scatter"
 )
 
-# Line plot with confidence interval
+## Line plot with confidence interval
 sns.lineplot(
     data=tips, x="size", y="tip",
     hue="time", errorbar=("ci", 95)
 )
-```
+```text
 
 **Distribution plots**:
 
 ```python
-# Histogram with KDE
+## Histogram with KDE
 sns.histplot(tips["tip"], bins=20, kde=True)
 
-# KDE plot
+## KDE plot
 sns.kdeplot(tips["tip"], fill=True, alpha=0.5)
 
-# Displot with facets
+## Displot with facets
 sns.displot(
     data=tips, x="tip",
     col="time", row="sex",
     kind="hist", bins=15
 )
 
-# ECDF plot
+## ECDF plot
 sns.ecdfplot(tips["tip"])
-```
+```text
 
 **Categorical plots**:
 
 ```python
-# Box plot
+## Box plot
 sns.boxplot(data=tips, x="day", y="total_bill", hue="sex")
 
-# Violin plot
+## Violin plot
 sns.violinplot(data=tips, x="day", y="total_bill", hue="sex", split=True)
 
-# Strip / swarm plot
+## Strip / swarm plot
 sns.stripplot(data=tips, x="day", y="total_bill", jitter=True)
 sns.swarmplot(data=tips, x="day", y="total_bill", color="black")
 
-# Bar plot with error bars
+## Bar plot with error bars
 sns.barplot(data=tips, x="day", y="total_bill", hue="sex")
 
-# Count plot
+## Count plot
 sns.countplot(data=tips, x="day", hue="sex")
-```
+```text
 
 **Heatmap and correlation**:
 
@@ -393,9 +394,9 @@ sns.heatmap(
     square=True, fmt=".2f", linewidths=0.5
 )
 
-# Cluster heatmap with dendrograms
+## Cluster heatmap with dendrograms
 sns.clustermap(corr, annot=True, cmap="coolwarm")
-```
+```text
 
 **Pairplot and jointplot** for multivariate exploration:
 
@@ -415,7 +416,7 @@ sns.jointplot(
     data=tips, x="total_bill", y="tip",
     kind="reg"
 )
-```
+```text
 
 **FacetGrid** for custom multi-plot layouts:
 
@@ -423,14 +424,14 @@ sns.jointplot(
 g = sns.FacetGrid(tips, col="time", row="sex", margin_titles=True)
 g.map(sns.scatterplot, "total_bill", "tip", alpha=0.6)
 g.add_legend()
-```
+```text
 
 **Regression plots**:
 
 ```python
 sns.regplot(data=tips, x="total_bill", y="tip", ci=95)
 sns.lmplot(data=tips, x="total_bill", y="tip", hue="sex", col="time")
-```
+```text
 
 ## 14.5 Plotly Interactive
 
@@ -440,7 +441,7 @@ Plotly creates interactive, web-based visualizations that support hover, zoom, a
 import plotly.express as px
 import plotly.graph_objects as go
 
-# Plotly Express (high-level API)
+## Plotly Express (high-level API)
 df = px.data.iris()
 fig = px.scatter(
     df, x="sepal_width", y="sepal_length",
@@ -449,38 +450,38 @@ fig = px.scatter(
     title="Iris Dataset"
 )
 fig.show()
-```
+```text
 
 **Chart types**:
 
 ```python
-# Line chart
+## Line chart
 fig = px.line(
     x=pd.date_range("2024-01-01", periods=100),
     y=np.random.randn(100).cumsum(),
     title="Random Walk"
 )
 
-# Bar chart
+## Bar chart
 fig = px.bar(
     tips, x="day", y="total_bill",
     color="sex", barmode="group",
     title="Average Bill by Day"
 )
 
-# Histogram
+## Histogram
 fig = px.histogram(tips, x="tip", nbins=20, color="time")
 
-# Box plot
+## Box plot
 fig = px.box(tips, x="day", y="total_bill", color="sex")
 
-# Heatmap
+## Heatmap
 fig = px.imshow(
     corr.values, text_auto=".2f",
     x=corr.columns, y=corr.columns,
     color_continuous_scale="RdBu_r"
 )
-```
+```text
 
 **Graph Objects** (low-level API) for full control:
 
@@ -510,7 +511,7 @@ fig.update_layout(
 )
 
 fig.show()
-```
+```text
 
 **Animation**:
 
@@ -526,30 +527,30 @@ fig = px.scatter(
 )
 fig.show()
 
-# Animated line
+## Animated line
 px.line(
     gapminder[gapminder["country"] == "India"],
     x="year", y="lifeExp",
     animation_frame="year",
     title="India Life Expectancy"
 )
-```
+```text
 
 **3D plots and faceted layouts**:
 
 ```python
-# 3D scatter
+## 3D scatter
 fig = px.scatter_3d(
     df, x="sepal_width", y="sepal_length", z="petal_length",
     color="species", size="petal_width"
 )
 
-# Faceted histogram
+## Faceted histogram
 fig = px.histogram(
     tips, x="tip", facet_col="time",
     facet_row="sex", nbins=15
 )
-```
+```text
 
 **Subplots in Plotly**:
 
@@ -563,7 +564,7 @@ fig.add_trace(go.Histogram(x=np.random.randn(200)), row=2, col=1)
 fig.add_trace(go.Box(y=np.random.randn(200)), row=2, col=2)
 fig.update_layout(height=600, showlegend=False)
 fig.show()
-```
+```text
 
 ## 14.6 Dashboards
 
@@ -591,7 +592,7 @@ def interactive_plot(x_column, y_column, color):
     ax.set_title(f"{y_column} vs {x_column}")
     ax.legend()
     plt.show()
-```
+```text
 
 **Panel dashboard** for more complex layouts:
 
@@ -601,7 +602,7 @@ import holoviews as hv
 
 pn.extension()
 
-# Widgets
+## Widgets
 x_select = pn.widgets.Select(
     name="X axis",
     options=tips.select_dtypes("number").columns.tolist()
@@ -616,7 +617,7 @@ color_select = pn.widgets.Select(
     options=["sex", "time", "day"]
 )
 
-# Reactive plot
+## Reactive plot
 @pn.depends(x_select, y_select, color_select)
 def scatter_plot(x, y, color):
     return tips.hvplot.scatter(x=x, y=y, by=color,
@@ -627,7 +628,7 @@ dashboard = pn.Column(
     scatter_plot
 )
 dashboard.servable()
-```
+```text
 
 **Matplotlib-based dashboard with ipywidgets**:
 
@@ -677,13 +678,13 @@ def dashboard(days, sex):
 
     plt.tight_layout()
     plt.show()
-```
+```text
 
 **Voilà** converts notebooks to standalone dashboards:
 
 ```bash
 voila dashboard.ipynb --port 8866
-```
+```text
 
 ## TypeScript Parallel
 
@@ -757,7 +758,7 @@ function renderBarChart(
         ctx.fillText(cat, x + barWidth / 2, height - padding + 15);
     });
 }
-```
+```text
 
 ## Summary
 
@@ -875,6 +876,7 @@ function renderBarChart(
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 01-python-programming
@@ -884,6 +886,7 @@ function renderBarChart(
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

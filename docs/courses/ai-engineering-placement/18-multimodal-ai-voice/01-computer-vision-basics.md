@@ -13,12 +13,13 @@
 
 ## Introduction
 
-18-multimodal-ai-voice is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding computer vision basics is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering computer vision basics.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart LR
     E --> H[Application]
     F --> H
     G --> H
-```
+```text
 
 ## 1.1 Image Representation
 
@@ -113,7 +114,7 @@ class ImageTensor:
             "is_color": image.ndim == 3 and image.shape[-1] >= 3
         }
 
-# Simulated image (create a test image)
+## Simulated image (create a test image)
 fake_image = np.random.randint(0, 256, (224, 224, 3), dtype=np.uint8)
 tensor = ImageTensor.to_tensor(fake_image)
 print(f"Image shape: {fake_image.shape}, Tensor shape: {tensor.shape}")
@@ -123,7 +124,7 @@ print(f"Normalized range: [{normalized.min():.2f}, {normalized.max():.2f}]")
 
 desc = ImageTensor.describe(fake_image)
 print(f"Description: {desc['height']}x{desc['width']}, {desc['channels']} channels")
-```
+```text
 
 **Color space conversion**:
 
@@ -161,7 +162,7 @@ img = np.random.randint(0, 256, (100, 100, 3), dtype=np.uint8)
 gray = ColorSpace.rgb_to_grayscale(img)
 hsv = ColorSpace.rgb_to_hsv(img)
 print(f"Grayscale: {gray.shape}, HSV: {hsv.shape}")
-```
+```text
 
 ---
 
@@ -192,7 +193,7 @@ class ImageAugmenter:
     def __call__(self, image: np.ndarray) -> np.ndarray:
         return self.apply(image)
 
-# Define augmentation functions
+## Define augmentation functions
 def random_flip(image: np.ndarray) -> np.ndarray:
     return np.fliplr(image)
 
@@ -233,7 +234,7 @@ augmenter.add(lambda img: gaussian_noise(img, 5), 0.2)
 sample = np.random.randint(0, 256, (224, 224, 3), dtype=np.uint8)
 augmented = augmenter(sample)
 print(f"Original: {sample.shape}, Augmented: {augmented.shape}")
-```
+```text
 
 **Data preprocessing pipeline**:
 
@@ -261,7 +262,7 @@ preprocessor = ImagePreprocessor((224, 224))
 batch = [np.random.randint(0, 256, (300, 400, 3), dtype=np.uint8) for _ in range(4)]
 batch_tensor = preprocessor.preprocess_batch(batch)
 print(f"Batch tensor shape: {batch_tensor.shape}")  # (4, 3, 224, 224)
-```
+```text
 
 ---
 
@@ -361,12 +362,12 @@ class SimpleCNN:
         x = x.mean(axis=(2, 3))
         return x
 
-# Test forward pass
+## Test forward pass
 cnn = SimpleCNN(num_classes=10)
 dummy_input = np.random.randn(1, 3, 64, 64).astype(np.float32)
 output = cnn.forward(dummy_input)
 print(f"Input: (1, 3, 64, 64) → Output: {output.shape}")
-```
+```text
 
 ---
 
@@ -426,16 +427,16 @@ class TransferLearningModel:
             self.classifier["weights"] -= learning_rate * np.random.randn(*self.classifier["weights"].shape) * 0.01
             print(f"  Epoch {epoch+1}: loss = {loss:.4f}")
 
-# Usage
+## Usage
 model = TransferLearningModel(num_classes=5, backbone="resnet50", freeze_backbone=True)
 dummy_images = np.random.randn(8, 3, 224, 224).astype(np.float32)
 predictions = model.predict(dummy_images)
 print(f"Predictions shape: {predictions.shape}")  # (8, 5)
 print(f"Predicted classes: {np.argmax(predictions, axis=1)}")
 
-# Fine-tune
+## Fine-tune
 model.fine_tune(dummy_images, np.random.randint(0, 5, 8), epochs=3)
-```
+```text
 
 **Pre-trained model loading pattern**:
 
@@ -455,7 +456,7 @@ def build_pretrained_model(model_name: str = "resnet50", num_classes: int = 10):
     return {"model_name": model_name, "num_classes": num_classes, "backbone": model_name}
 
 model = build_pretrained_model("resnet50", 5)
-```
+```text
 
 ---
 
@@ -499,7 +500,7 @@ class VisionModelServer:
             "latency_ms": round((time.time() - start) * 1000, 2)
         }
 
-# Optimize with ONNX Runtime
+## Optimize with ONNX Runtime
 class ONNXVisionModel:
     """Wrapped vision model with ONNX Runtime for faster inference."""
 
@@ -521,12 +522,12 @@ server = VisionModelServer(
     ImagePreprocessor((224, 224))
 )
 
-# Single prediction
+## Single prediction
 single_img = np.random.randint(0, 256, (300, 400, 3), dtype=np.uint8)
 result = server.predict_single(single_img)
 print(f"Class {result['predicted_class']} with confidence {result['confidence']:.2%}")
 print(f"Latency: {result['latency_ms']}ms")
-```
+```text
 
 ---
 
@@ -570,7 +571,7 @@ Please answer the question based on the image description provided."""
         detected = random.sample(objects, min(3, len(objects)))
         return f"Image contains: {', '.join(detected)}. [{ImageTensor.describe(image)}]"
 
-# Simulated vision-language pipeline
+## Simulated vision-language pipeline
 vision_llm = VisionLLMIntegration(TransferLearningModel(num_classes=1000))
 img = np.random.randint(0, 256, (224, 224, 3), dtype=np.uint8)
 caption = vision_llm.image_caption(img)
@@ -581,7 +582,7 @@ print(f"VQA: {answer}")
 
 rag_desc = vision_llm.describe_image_for_rag(img)
 print(f"RAG description: {rag_desc}")
-```
+```text
 
 **Multimodal embedding**:
 
@@ -615,7 +616,7 @@ embedder = MultimodalEmbedding()
 img = np.random.randint(0, 256, (224, 224, 3), dtype=np.uint8)
 sim = embedder.similarity(img, "a cat sitting on a couch")
 print(f"Image-text similarity: {sim:.4f}")
-```
+```text
 
 ---
 
@@ -654,7 +655,7 @@ class ImageProcessor {
     return result;
   }
 }
-```
+```text
 
 ---
 
@@ -905,6 +906,7 @@ d) Image segmentation
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 18-multimodal-ai-voice
@@ -914,6 +916,7 @@ d) Image segmentation
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

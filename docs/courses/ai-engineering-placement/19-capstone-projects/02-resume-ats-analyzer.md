@@ -13,12 +13,13 @@
 
 ## Introduction
 
-19-capstone-projects is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding resume ats analyzer is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering resume ats analyzer.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -42,7 +43,7 @@ flowchart LR
     E --> G[Web Dashboard]
     F --> G
     G --> H[PDF Report]
-```
+```text
 
 ## 2.1 Resume Parsing
 
@@ -255,7 +256,7 @@ class ExperienceParser:
             entries.append(entry)
 
         return entries
-```
+```text
 
 ## 2.2 LLM Analysis
 
@@ -363,7 +364,7 @@ class KeywordMatcher:
             "missing_keywords": missing,
             "total_jd_keywords": len(jd_keywords),
         }
-```
+```text
 
 ## 2.3 Scoring System
 
@@ -477,7 +478,7 @@ class CompleteScoringEngine:
             "keyword_details": keyword_match,
             "suggestions": self.ats_scorer.suggest_improvements(format_score["breakdown"]),
         }
-```
+```text
 
 ## 2.4 Web UI & Deployment
 
@@ -633,7 +634,7 @@ class BatchAnalyzer:
 
         results.sort(key=lambda r: r.get("scores", {}).get("overall_score", 0), reverse=True)
         return results
-```
+```text
 
 ## Summary
 
@@ -900,6 +901,7 @@ The Resume ATS Analyzer project implements a complete resume evaluation system. 
 9. **Feedback Generation**: Build a suggestion generator that produces specific, actionable advice: reword bullet points to be more impactful, add missing keywords, fix formatting issues. Show before/after examples for 5 resumes.
 
 10. **Full Deployment**: Deploy the complete app to Render or Railway. Set up: file upload validation (5MB limit, PDF/DOCX only), HTTPS, logging, and usage analytics. Monitor average response time and er
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 19-capstone-projects
@@ -909,6 +911,7 @@ The Resume ATS Analyzer project implements a complete resume evaluation system. 
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

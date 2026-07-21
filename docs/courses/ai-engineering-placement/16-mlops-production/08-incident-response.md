@@ -13,12 +13,13 @@
 
 ## Introduction
 
-16-mlops-production is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding incident response is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering incident response.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -47,7 +48,7 @@ flowchart LR
     J -->|Yes| K[Post-Mortem]
     J -->|No| L[Escalate]
     L --> M[Senior Engineer]
-```
+```text
 
 ## 8.1 ML Incident Types
 
@@ -89,7 +90,7 @@ class Incident:
             return (self.resolved_at - self.detected_at).total_seconds() / 60
         return None
 
-# Common ML incidents
+## Common ML incidents
 incidents = [
     Incident("INC-001", IncidentType.MODEL_DEGRADATION, "SEV2",
              "Price prediction MAE increased 40%",
@@ -107,7 +108,7 @@ incidents = [
 
 for inc in incidents:
     print(f"{inc.severity} | {inc.incident_id} | {inc.title}")
-```
+```text
 
 **ML-specific incident challenges**:
 
@@ -203,7 +204,7 @@ class SeverityFramework:
 sev = SeverityFramework()
 print(f"Classification: {sev.classify(impact_pct=5, metric_drop_pct=30)}")
 print(sev.get_sla("SEV1")["response_sla_minutes"])
-```
+```text
 
 **Incident response flow with SLA tracking**:
 
@@ -276,7 +277,7 @@ class SLATracker:
 tracker = SLATracker()
 tracker.declare_incident("INC-001", "SEV1")
 tracker.acknowledge("INC-001")
-```
+```text
 
 ---
 
@@ -314,7 +315,7 @@ class IncidentDetector:
                 print(f"Detector {name} failed: {e}")
         return detected
 
-# Define specific detectors
+## Define specific detectors
 def latency_spike_detector(metrics: dict) -> Optional[dict]:
     p99 = metrics.get("latency_p99", 0)
     threshold = metrics.get("latency_threshold", 500)
@@ -375,7 +376,7 @@ detector.register_detector("null_prediction", null_prediction_detector)
 detector.register_detector("drift", drift_detector)
 detector.register_detector("cost", cost_anomaly_detector)
 
-# Simulate metric check
+## Simulate metric check
 metrics = {
     "latency_p99": 1200,
     "null_prediction_rate": 0.08,
@@ -385,7 +386,7 @@ metrics = {
     "latency_threshold": 500
 }
 detector.run_all(metrics)
-```
+```text
 
 ---
 
@@ -424,7 +425,7 @@ class Runbook:
 
         print("✅ Runbook complete")
 
-# Define runbooks for common incidents
+## Define runbooks for common incidents
 model_degradation_runbook = Runbook(
     "Model Degradation Response",
     IncidentType.MODEL_DEGRADATION,
@@ -464,7 +465,7 @@ llm_hallucination_runbook = Runbook(
     ]
 )
 
-# Store runbooks
+## Store runbooks
 runbooks = {
     IncidentType.MODEL_DEGRADATION: model_degradation_runbook,
     IncidentType.DATA_FAILURE: data_failure_runbook,
@@ -474,13 +475,13 @@ runbooks = {
 def get_runbook(incident_type: IncidentType) -> Runbook:
     return runbooks.get(incident_type)
 
-# Use in response flow
+## Use in response flow
 inc = Incident("INC-004", IncidentType.DATA_FAILURE, "SEV1",
                "Feature pipeline failure", "ETL job failed",
                datetime.utcnow(), "monitoring", ["PricePredictor"])
 runbook = get_runbook(inc.type)
-# runbook.execute(inc)
-```
+## runbook.execute(inc)
+```text
 
 ---
 
@@ -560,7 +561,7 @@ class PostMortem:
 
         return "\n".join(report)
 
-# Sample post-mortem
+## Sample post-mortem
 inc = Incident("INC-002", IncidentType.DATA_FAILURE, "SEV1",
                "Critical feature null", "ETL job failed silently",
                datetime.utcnow(), "monitoring", ["PricePredictor"], 50000)
@@ -582,7 +583,7 @@ pm.what_went_well = ["Rollback was fast (< 5 min)", "On-call responded within 5 
 pm.what_went_wrong = ["Alert was suppressed and missed", "No automated data quality check", "ETL failure cascaded silently"]
 
 print(pm.generate_report())
-```
+```text
 
 ---
 
@@ -646,7 +647,7 @@ class IncidentCommander:
         self.escalation_level += 1
         print(f"Escalating to {self.schedule.get_escalation(self.escalation_level)}")
 
-# On-call metrics tracking
+## On-call metrics tracking
 class OnCallMetrics:
     """Track on-call performance metrics."""
 
@@ -676,7 +677,7 @@ class OnCallMetrics:
             "incidents_per_member": self.incidents_per_shifts
         }
 
-# Fix typo in summary method
+## Fix typo in summary method
 OnCallMetrics.summary = lambda self, period_days=30: {
     "period_days": period_days,
     "total_incidents": len(self.response_times),
@@ -690,7 +691,7 @@ metrics.record_response("Alice", 4.5)
 metrics.record_response("Bob", 12.3)
 metrics.record_resolution(45)
 print(json.dumps(metrics.summary(), indent=2))
-```
+```text
 
 ---
 
@@ -740,7 +741,7 @@ class IncidentManager {
     };
   }
 }
-```
+```text
 
 ---
 
@@ -954,6 +955,7 @@ d) Manage the on-call schedule
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 16-mlops-production
@@ -963,6 +965,7 @@ d) Manage the on-call schedule
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

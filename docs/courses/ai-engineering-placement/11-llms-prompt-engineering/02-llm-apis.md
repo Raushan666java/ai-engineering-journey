@@ -13,12 +13,13 @@
 
 ## Introduction
 
-11-llms-prompt-engineering is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding llm apis is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering llm apis.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -47,7 +48,7 @@ flowchart LR
     H --> I[Error Handling]
     I --> J[Retry Logic]
     J --> K[Cost Tracking & Logging]
-```
+```text
 
 ## 2.1 API Basics
 
@@ -59,13 +60,13 @@ LLM APIs follow a consistent pattern: authenticate with an API key, send a reque
 import os
 from openai import OpenAI
 
-# Never hardcode keys — use environment variables
+## Never hardcode keys — use environment variables
 api_key = os.environ.get("OPENAI_API_KEY")
 if not api_key:
     raise ValueError("OPENAI_API_KEY not set")
 
 client = OpenAI(api_key=api_key)
-```
+```text
 
 **Request structure** includes model selection, messages, and parameters:
 
@@ -82,7 +83,7 @@ response = client.chat.completions.create(
     frequency_penalty=0,       # Reduce repetition
     presence_penalty=0         # Encourage new topics
 )
-```
+```text
 
 **Response structure** includes the generated message and usage:
 
@@ -91,13 +92,13 @@ message = response.choices[0].message
 print(f"Response: {message.content}")
 print(f"Role: {message.role}")
 
-# Token usage tracking
+## Token usage tracking
 usage = response.usage
 print(f"Prompt tokens: {usage.prompt_tokens}")
 print(f"Completion tokens: {usage.completion_tokens}")
 print(f"Total tokens: {usage.total_tokens}")
 
-# Common pricing (per 1K tokens)
+## Common pricing (per 1K tokens)
 OPENAI_PRICING = {
     "gpt-4o":       {"input": 0.0025, "output": 0.01},
     "gpt-4o-mini":  {"input": 0.00015, "output": 0.0006},
@@ -114,27 +115,27 @@ def calculate_cost(model, prompt_tokens, completion_tokens):
 
 cost = calculate_cost("gpt-4o", response.usage.prompt_tokens, response.usage.completion_tokens)
 print(f"Request cost: ${cost:.6f}")
-```
+```text
 
 **Secure key management** using environment files:
 
 ```python
-# .env file (never commit to git)
-# OPENAI_API_KEY=sk-...
-# ANTHROPIC_API_KEY=sk-ant-...
-# GEMINI_API_KEY=AIza...
+## .env file (never commit to git)
+## OPENAI_API_KEY=sk-...
+## ANTHROPIC_API_KEY=sk-ant-...
+## GEMINI_API_KEY=AIza...
 
-# .gitignore
-# .env
+## .gitignore
+## .env
 
-# Load securely
+## Load securely
 from dotenv import load_dotenv
 load_dotenv()
 
-# Or use Python's built-in approach
+## Or use Python's built-in approach
 import os
 assert os.environ.get("OPENAI_API_KEY"), "Missing API key"
-```
+```text
 
 ```mermaid
 flowchart TD
@@ -146,7 +147,7 @@ flowchart TD
     E -->|OK| G[Model Inference]
     G --> H[Response + Usage Stats]
     H --> A
-```
+```text
 
 ---
 
@@ -171,7 +172,7 @@ def chat_with_history(messages, model="gpt-4o"):
     )
     return response
 
-# Multi-turn conversation
+## Multi-turn conversation
 conversation = [
     {"role": "system", "content": "You are a Python tutor. Be concise and provide code examples."},
     {"role": "user", "content": "What is a decorator?"},
@@ -183,7 +184,7 @@ conversation.append({"role": "user", "content": "Show me a practical example wit
 
 resp2 = chat_with_history(conversation)
 print(resp2.choices[0].message.content)
-```
+```text
 
 **JSON mode** for structured output:
 
@@ -201,8 +202,8 @@ response = client.chat.completions.create(
 import json
 data = json.loads(response.choices[0].message.content)
 print(data)
-# {'name': 'John', 'age': 32, 'city': 'San Francisco', 'occupation': 'software engineer'}
-```
+## {'name': 'John', 'age': 32, 'city': 'San Francisco', 'occupation': 'software engineer'}
+```text
 
 **Function calling** for tool integration:
 
@@ -240,13 +241,13 @@ response = client.chat.completions.create(
     tool_choice="auto"
 )
 
-# Execute function call
+## Execute function call
 tool_call = response.choices[0].message.tool_calls[0]
 if tool_call.function.name == "get_weather":
     args = json.loads(tool_call.function.arguments)
     result = get_weather(**args)
     print(f"Weather in {args['city']}: {result}")
-```
+```text
 
 **Token counting** before sending:
 
@@ -283,7 +284,7 @@ messages = [
 ]
 estimate = estimate_cost(messages)
 print(f"Estimated cost: ${estimate['estimated_cost']:.6f}")
-```
+```text
 
 ```mermaid
 flowchart TD
@@ -297,7 +298,7 @@ flowchart TD
     G --> I[Extract Message]
     G --> J[Extract Usage]
     J --> K[Track Cost]
-```
+```text
 
 ---
 
@@ -324,7 +325,7 @@ response = client.messages.create(
 print(response.content[0].text)
 print(f"Input tokens: {response.usage.input_tokens}")
 print(f"Output tokens: {response.usage.output_tokens}")
-```
+```text
 
 **Multi-turn conversations**:
 
@@ -339,7 +340,7 @@ def claude_conversation(messages, system_prompt="You are helpful."):
     )
     return response
 
-# Building a conversation
+## Building a conversation
 history = [
     {"role": "user", "content": "What is the capital of Japan?"},
     {"role": "assistant", "content": "The capital of Japan is Tokyo."},
@@ -348,7 +349,7 @@ history = [
 
 resp = claude_conversation(history)
 print(resp.content[0].text)
-```
+```text
 
 **Claude's extended thinking** for complex reasoning:
 
@@ -367,13 +368,13 @@ response = client.messages.create(
     ]
 )
 
-# Extended thinking block
+## Extended thinking block
 for block in response.content:
     if block.type == "thinking":
         print("Thinking:", block.thinking)
     elif block.type == "text":
         print("Answer:", block.text)
-```
+```text
 
 **Image understanding** with Claude:
 
@@ -405,7 +406,7 @@ response = client.messages.create(
 )
 
 print(response.content[0].text)
-```
+```text
 
 ```mermaid
 flowchart LR
@@ -419,7 +420,7 @@ flowchart LR
     F --> G[Response]
     G --> H[Content Blocks List]
     H --> I[Extract Text / Thinking]
-```
+```text
 
 ---
 
@@ -447,10 +448,10 @@ response = model.generate_content(
 
 print(response.text)
 
-# Safety ratings
+## Safety ratings
 for rating in response.prompt_feedback.safety_ratings:
     print(f"{rating.category}: {rating.probability}")
-```
+```text
 
 **Chat sessions** for multi-turn:
 
@@ -463,10 +464,10 @@ print(response.text)
 response = chat.send_message("What are its main use cases?")
 print(response.text)
 
-# Access full history
+## Access full history
 for entry in chat.history:
     print(f"{entry.role}: {entry.parts[0].text[:50]}...")
-```
+```text
 
 **Multimodal input**:
 
@@ -478,7 +479,7 @@ prompt = "Describe this architecture diagram in detail."
 
 response = model.generate_content([prompt, image])
 print(response.text)
-```
+```text
 
 **Safety settings** customization:
 
@@ -496,7 +497,7 @@ model = genai.GenerativeModel(
 
 response = model.generate_content("Tell me about historical warfare tactics.")
 print(response.text)
-```
+```text
 
 ```mermaid
 flowchart TD
@@ -511,7 +512,7 @@ flowchart TD
     G --> J[Extract Text]
     G --> K[Safety Feedback]
     G --> L[Usage Metadata]
-```
+```text
 
 ---
 
@@ -538,7 +539,7 @@ for chunk in stream:
     # Last chunk has usage info
     if chunk.choices[0].finish_reason == "stop":
         print(f"\n\nReason: {chunk.choices[0].finish_reason}")
-```
+```text
 
 **Anthropic streaming**:
 
@@ -554,7 +555,7 @@ with client.messages.stream(
 ) as stream:
     for text in stream.text_stream:
         print(text, end="", flush=True)
-```
+```text
 
 **Gemini streaming**:
 
@@ -567,7 +568,7 @@ response = model.generate_content(
 
 for chunk in response:
     print(chunk.text, end="", flush=True)
-```
+```text
 
 **Building a streaming proxy**:
 
@@ -600,13 +601,13 @@ async def chat_stream(messages: list):
         media_type="text/event-stream"
     )
 
-# Client-side
-# fetch('/chat/stream', { method: 'POST', body: JSON.stringify(messages) })
-#   .then(response => {
-#     const reader = response.body.getReader();
-#     // Read chunks incrementally
-#   })
-```
+## Client-side
+## fetch('/chat/stream', { method: 'POST', body: JSON.stringify(messages) })
+##   .then(response => {
+##     const reader = response.body.getReader();
+##     // Read chunks incrementally
+##   })
+```text
 
 ```mermaid
 flowchart LR
@@ -617,7 +618,7 @@ flowchart LR
     C -->|Token N| B
     B -->|SSE: data: token\n\n| A
     A -->[Update UI Incrementally]
-```
+```text
 
 ---
 
@@ -677,7 +678,7 @@ def safe_api_call(client, messages, model="gpt-4o", max_retries=3):
             raise  # Don't retry auth errors
 
     raise Exception(f"All {max_retries} attempts failed. Last error: {last_error}")
-```
+```text
 
 **Circuit breaker pattern** for preventing cascading failures:
 
@@ -723,12 +724,12 @@ breaker = CircuitBreaker(failure_threshold=3, recovery_timeout=30)
 def make_request():
     return safe_api_call(client, [{"role": "user", "content": "Hello"}])
 
-# for i in range(10):
-#     try:
-#         result = breaker.call(make_request)
-#     except Exception as e:
-#         print(f"Request {i} failed: {e}")
-```
+## for i in range(10):
+##     try:
+##         result = breaker.call(make_request)
+##     except Exception as e:
+##         print(f"Request {i} failed: {e}")
+```text
 
 **Rate limit handling with token bucket**:
 
@@ -761,16 +762,16 @@ class TokenBucket:
         self.tokens = min(self.max_burst, self.tokens + elapsed * self.rate)
         self.last_refill = now
 
-# Usage
+## Usage
 rate_limiter = TokenBucket(tokens_per_minute=5000, max_burst=500)
 
 def rate_limited_api_call(client, messages):
     rate_limiter.consume(1)  # Consume 1 token per request
     return safe_api_call(client, messages)
 
-# for i in range(100):
-#     response = rate_limited_api_call(client, messages)
-```
+## for i in range(100):
+##     response = rate_limited_api_call(client, messages)
+```text
 
 ```mermaid
 flowchart TD
@@ -787,7 +788,7 @@ flowchart TD
     J -->|Retries Left| I
     J -->|Exhausted| K[Raise Error]
     I --> E
-```
+```text
 
 ---
 
@@ -939,7 +940,7 @@ response = router.route(messages, "openai")
 print(f"[{response.provider}] {response.content[:100]}...")
 print(f"Cost: ${calculate_cost('gpt-4o', response.input_tokens, response.output_tokens):.6f}")
 print(f"Latency: {response.latency_ms:.0f}ms")
-```
+```text
 
 ```mermaid
 flowchart TD
@@ -952,7 +953,7 @@ flowchart TD
     E --> G
     F --> G
     G --> H[Content + Usage + Latency]
-```
+```text
 
 ---
 
@@ -990,7 +991,7 @@ async function callLLM(
   const data = await res.json();
   return data.choices[0].message.content;
 }
-```
+```text
 
 ---
 
@@ -1290,6 +1291,7 @@ d) o200k_base
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 11-llms-prompt-engineering
@@ -1299,6 +1301,7 @@ d) o200k_base
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

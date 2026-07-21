@@ -11,12 +11,13 @@
 
 ## Introduction
 
-14-fine-tuning-peft is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding lora implementation is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering lora implementation.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -48,7 +49,7 @@ flowchart TD
     C --> PM
     M --> PM
     PM --> T --> S --> L --> MG --> I
-```
+```text
 
 ## 4.1 PEFT Library
 
@@ -101,7 +102,7 @@ config = LoraConfig(
     lora_dropout=0.1,
 )
 print(f"LoRA config: {config.to_dict()}")
-```
+```text
 
 ### 4.1.2 PEFT Model Simulator
 
@@ -169,7 +170,7 @@ class MockBaseModel:
 base = MockBaseModel()
 peft = PEFTModel(base, config)
 print(f"Trainable params: {peft.trainable_params():,}")
-```
+```text
 
 ## 4.2 Target Modules
 
@@ -224,7 +225,7 @@ rec = selector.recommend("general")
 print(f"Recommended modules: {rec['modules']}")
 impact = selector.parameter_impact(rec["modules"], 4096, 32, 8)
 print(f"Parameter impact: {impact['total_params']:,} ({impact['model_pct']:.3f}%)")
-```
+```text
 
 ### 4.2.2 Custom Module Matching
 
@@ -258,7 +259,7 @@ all_mods = [
 ]
 matched = matcher.filter_modules(all_mods)
 print(f"Matched modules: {matched}")
-```
+```text
 
 ## 4.3 Training
 
@@ -295,7 +296,7 @@ trainer = LoRATrainer(peft)
 dataset = [{"text": f"sample-{i}"} for i in range(50)]
 trainer.train(dataset, epochs=3, batch_size=8)
 print(f"Training complete: {len(trainer.losses)} steps")
-```
+```text
 
 ### 4.3.2 Optimizer Configuration
 
@@ -327,7 +328,7 @@ class LoRAOptimizerConfig:
 
 opt_config = LoRAOptimizerConfig()
 print(f"LoRA LR: {opt_config.lora_lr}, WD: {opt_config.weight_decay}")
-```
+```text
 
 ## 4.4 Adapter Management
 
@@ -389,7 +390,7 @@ import os
 import json
 manager = AdapterManager()
 print(f"Adapter manager ready (base: {manager.base_path})")
-```
+```text
 
 ### 4.4.2 Multi-Adapter Switching
 
@@ -429,7 +430,7 @@ multi_adapter.add_adapter("code-v1", {"layer_0": (np.zeros((4,2)), np.zeros((2,4
 multi_adapter.add_adapter("chat-v1", {"layer_0": (np.zeros((4,2)), np.zeros((2,4)))})
 multi_adapter.switch_to("chat-v1")
 print(f"Active adapter: {multi_adapter.active}")
-```
+```text
 
 ## 4.5 Merging
 
@@ -480,7 +481,7 @@ B = np.random.randn(64, 8)
 A = np.random.randn(8, 64)
 merged = merger.merge(W0, B, A, scaling=2.0)
 print(f"Merge verification: {merger.verify_merge(W0, B, A, 2.0)}")
-```
+```text
 
 ### 4.5.2 Inference Optimization
 
@@ -520,7 +521,7 @@ class InferenceOptimizer:
 
 optimizer = InferenceOptimizer()
 print(f"Inference optimizer ready")
-```
+```text
 
 ## Summary
 
@@ -723,6 +724,7 @@ Answer: B
 4. Write a weight merger that takes base weights, LoRA B/A matrices, and scaling factor, produces merged weights, and reports the Frobenius norm difference before/after merge.
 
 5. Benchmark inference latency: compare forward pass with separate LoRA computation vs merged weights. Measure mean, p50, p95, p99 over 100 it
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 14-fine-tuning-peft
@@ -732,6 +734,7 @@ Answer: B
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

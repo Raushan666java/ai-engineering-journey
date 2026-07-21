@@ -1,18 +1,22 @@
 # DSA Problem Bank: 100+ Curated Problems
 
+
 ## Learning Objectives
 
 After this chapter you will have a structured practice plan covering all major DSA patterns, know which problems to solve for each company, and be able to identify the optimal approach for any LeetCode-style interview problem.
 
+
 ## Introduction
 
-21-interview-preparation is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding dsa problem bank is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering dsa problem bank.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Theory
+
 
 ### Problem-Solving Framework
 
@@ -31,6 +35,7 @@ flowchart TD
     H -->|Yes| I[Move to Next Problem]
 ```
 
+
 ### Pattern Recognition
 
 The 19 patterns in this bank cover 95% of interview problems. To identify the pattern:
@@ -40,6 +45,7 @@ The 19 patterns in this bank cover 95% of interview problems. To identify the pa
 - **DP**: overlapping subproblems, optimal substructure
 - **Greedy**: local optimum leads to global optimum
 
+
 ### Complexity Targeting
 
 Match your approach to constraints:
@@ -48,9 +54,11 @@ Match your approach to constraints:
 - n <= 10^5: O(n log n) sorting or heap
 - n <= 10^7: O(n) single pass or hash map
 
+
 ## How to Use This Bank
 
 Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy ones for warm-up, Medium for core practice, Hard for mastery. Do not look at hints until you have spent at least 20 minutes per problem.
+
 
 ## Pattern 1: Arrays & Hashing
 
@@ -67,6 +75,7 @@ Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy o
 | 9 | First Missing Positive | Hard | G, A | Cyclic sort: place each number at its index |
 | 10 | Longest Substring Without Repeating | Medium | G, F, A | Sliding window with char set |
 
+
 ## Pattern 2: Two Pointers
 
 | # | Problem | Difficulty | Company | Hint |
@@ -79,6 +88,7 @@ Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy o
 | 6 | Remove Duplicates from Sorted | Easy | A | Slow/fast pointer. Write unique elements |
 | 7 | Move Zeroes | Easy | F | One pointer for next non-zero position |
 
+
 ## Pattern 3: Sliding Window
 
 | # | Problem | Difficulty | Company | Hint |
@@ -89,6 +99,7 @@ Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy o
 | 4 | Minimum Window Substring | Hard | G, F, A | Two hash maps: have vs need. Shrink when satisfied |
 | 5 | Sliding Window Maximum | Hard | G, A | Deque for O(n). Maintain decreasing values |
 | 6 | Permutation in String | Medium | M | Frequency array + sliding window of same length |
+
 
 ## Pattern 4: Binary Search
 
@@ -101,6 +112,7 @@ Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy o
 | 5 | Koko Eating Bananas | Medium | G, F | Binary search on answer (eating speed) |
 | 6 | Time Based Key-Value Store | Medium | G, F | Dict of lists (sorted by time), binary search |
 | 7 | Median of Two Sorted Arrays | Hard | G, A | Partition both arrays, binary search on smaller |
+
 
 ## Pattern 5: Linked Lists
 
@@ -115,6 +127,7 @@ Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy o
 | 7 | LRU Cache | Medium | G, F, A | Doubly linked list + hash map. O(1) |
 | 8 | Copy List with Random Pointer | Medium | G, F | Interleave copied nodes, assign random, detach |
 
+
 ## Pattern 6: Stacks & Queues
 
 | # | Problem | Difficulty | Company | Hint |
@@ -125,6 +138,7 @@ Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy o
 | 4 | Daily Temperatures | Medium | G, F | Monotonic decreasing stack |
 | 5 | Car Fleet | Medium | G, F | Sort by position, compute time to target, stack |
 | 6 | Largest Rectangle in Histogram | Hard | G, F, A | Monotonic stack. Compute area at each popped bar |
+
 
 ## Pattern 7: Trees
 
@@ -141,6 +155,7 @@ Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy o
 | 9 | Serialize and Deserialize Binary Tree | Hard | G, F, A | BFS with null markers. DFS also works |
 | 10 | Diameter of Binary Tree | Easy | All | DFS, return max(left,right)+1, update global max |
 
+
 ## Pattern 8: Heaps & Priority Queues
 
 | # | Problem | Difficulty | Company | Hint |
@@ -150,6 +165,7 @@ Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy o
 | 3 | Find Median from Data Stream | Hard | G, F, A | Two heaps: max-heap for lower half, min-heap for upper |
 | 4 | Task Scheduler | Medium | G, F, A | Max frequency determines idle slots |
 | 5 | Top K Frequent Words | Medium | G, F | Min-heap of size k. Compare by freq then lexicographic |
+
 
 ## Pattern 9: Graphs
 
@@ -164,6 +180,7 @@ Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy o
 | 7 | Word Ladder | Hard | G, F, A | BFS from start, change one letter at a time |
 | 8 | Alien Dictionary | Hard | G, F, A | Compare adjacent words, build graph, topological sort |
 
+
 ## Pattern 10: Dynamic Programming 1D
 
 | # | Problem | Difficulty | Company | Hint |
@@ -176,6 +193,7 @@ Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy o
 | 6 | Word Break | Medium | G, F, A | dp[i] = true if dp[j] and s[j:i] in wordSet |
 | 7 | Decode Ways | Medium | G, F, A | dp[i] = dp[i-1] + dp[i-2] (if valid two-digit) |
 
+
 ## Pattern 11: Dynamic Programming 2D
 
 | # | Problem | Difficulty | Company | Hint |
@@ -186,6 +204,7 @@ Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy o
 | 4 | Coin Change 2 | Medium | G, F | dp[i][a] = dp[i-1][a] + dp[i][a-coins[i-1]] |
 | 5 | Target Sum | Medium | G, F | dp[i][s] = count. Or transform to subset sum |
 | 6 | Burst Balloons | Hard | G, F | dp[l][r] = max(dp[l][k-1] + dp[k+1][r] + nums[l-1]*nums[k]*nums[r+1]) |
+
 
 ## Pattern 12: Backtracking
 
@@ -198,6 +217,7 @@ Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy o
 | 5 | N-Queens | Hard | G, F, A | Place queen per row. Check col, diag, anti-diag |
 | 6 | Word Search | Medium | G, F, A | DFS from each cell. Mark visited on path |
 
+
 ## Pattern 13: Tries
 
 | # | Problem | Difficulty | Company | Hint |
@@ -206,6 +226,7 @@ Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy o
 | 2 | Word Search II | Hard | G, F, A | Trie for dictionary, DFS on board |
 | 3 | Prefix and Suffix Search | Hard | G, F | Insert all prefix+suffix combos |
 | 4 | Replace Words | Medium | M | Insert dictionary in trie, replace words |
+
 
 ## Pattern 14: Intervals
 
@@ -218,6 +239,7 @@ Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy o
 | 5 | Meeting Rooms II | Medium | G, F, A | Chronological ordering or min-heap of end times |
 | 6 | Minimum Interval in Range Queries | Hard | G | Sort intervals, min-heap for smallest covering |
 
+
 ## Pattern 15: Math & Bit Manipulation
 
 | # | Problem | Difficulty | Company | Hint |
@@ -229,6 +251,7 @@ Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy o
 | 5 | Sum of Two Integers | Medium | G, F, A | Bit manipulation: carry = a&b, sum = a^b |
 | 6 | Pow(x, n) | Medium | G, F, A | Binary exponentiation O(log n) |
 
+
 ## Company-Specific Focus
 
 - **Google**: Graphs, DP, design questions, math puzzles. Practice Word Ladder, Alien Dictionary, Median of Two Sorted Arrays
@@ -236,6 +259,7 @@ Each pattern section lists 6-10 problems ordered by difficulty. Solve the Easy o
 - **Meta**: Strings, arrays, trees, product-focused system design. Practice Longest Substring, Group Anagrams, Binary Tree Level Order
 - **Apple**: Deep technical dives, past project discussion. Less DSA-heavy, more architecture
 - **Netflix**: Judgment-based system design. Less standard DSA
+
 
 
 ### Problem-Solving Framework
@@ -250,6 +274,7 @@ Follow this framework for every problem:
 6. **Test**: check empty input, single element, large values, edge cases
 7. **Analyze**: state time and space complexity
 
+
 ### Time Complexity Reference
 
 | Complexity | Name | Example |
@@ -262,6 +287,7 @@ Follow this framework for every problem:
 | O(2^n) | Exponential | Subsets, recursive without memoization |
 | O(n!) | Factorial | Permutations of n elements |
 
+
 ### Space Complexity Reference
 
 | Complexity | Example |
@@ -269,6 +295,7 @@ Follow this framework for every problem:
 | O(1) | In-place algorithms, two pointers |
 | O(n) | Hash map, recursive stack (depth n), dynamic programming array |
 | O(n^2) | 2D DP table, adjacency matrix |
+
 
 ### Pattern Recognition Cheat Sheet
 
@@ -284,6 +311,7 @@ Ask these questions to identify the pattern:
 - Intervals that overlap/merge? -> Sort intervals
 - Fast lookup need? -> Hash map or Set
 
+
 ### How to Practice Effectively
 
 - Spaced repetition: review each problem after 1 day, 3 days, 1 week, 1 month
@@ -295,6 +323,7 @@ Ask these questions to identify the pattern:
 
 
 
+
 ### How to Use LeetCode Effectively
 
 1. Do not look at solutions immediately. Spend 20-30 minutes attempting the problem yourself
@@ -303,6 +332,7 @@ Ask these questions to identify the pattern:
 4. Re-solve the same problem after 3 days, 7 days, and 30 days (spaced repetition)
 5. For each problem, note: pattern, time complexity, space complexity, key insight
 6. Track your weak patterns and prioritize them in your study schedule
+
 
 ### Recommended Study Plan
 
@@ -316,6 +346,7 @@ Daily routine:
 - Evening: 1 medium problem (30 min)
 - Weekly: 1 hard problem (60 min) + review weak areas
 
+
 ### Common Mistakes and How to Avoid Them
 
 1. Starting to code before understanding the problem: spend 5 minutes on examples and edge cases
@@ -325,6 +356,7 @@ Daily routine:
 5. Not testing edge cases: empty input, single element, duplicates, negative numbers, large values
 6. Getting stuck on one pattern: if stuck for 30 minutes, switch to a different problem or pattern
 7. Memorizing solutions instead of understanding patterns: focus on the pattern, not the specific problem
+
 
 ### Time Management During the Interview
 
@@ -336,6 +368,7 @@ Daily routine:
 - 2-3 min: Analyze complexity. Discuss improvements
 
 Total: 20-30 minutes per problem. If stuck for more than 5 minutes on coding, pause and re-evaluate the approach.
+
 
 
 
@@ -351,6 +384,7 @@ Total: 20-30 minutes per problem. If stuck for more than 5 minutes on coding, pa
 | 6 | Longest Palindromic Substring | Medium | G, F, A | Expand around center or DP table |
 | 7 | Interleaving String | Medium | G, F | 2D DP: dp[i][j] = match s3[i+j-1] with s1[i-1] or s2[j-1] |
 
+
 ## Pattern 17: Greedy
 
 | # | Problem | Difficulty | Company | Hint |
@@ -361,6 +395,7 @@ Total: 20-30 minutes per problem. If stuck for more than 5 minutes on coding, pa
 | 4 | Gas Station | Medium | G, F, A | If total gas < total cost, impossible. Start where gas-cost is negative |
 | 5 | Hand of Straights | Medium | G, F | Sort, group consecutive, use frequency map |
 | 6 | Merge Triplets | Medium | G | Greedy: track which positions can reach target values |
+
 
 ## Pattern 18: Advanced Graphs
 
@@ -373,6 +408,7 @@ Total: 20-30 minutes per problem. If stuck for more than 5 minutes on coding, pa
 | 5 | Swim in Rising Water | Hard | G | Binary search + BFS, or Dijkstra (minimize max along path) |
 | 6 | Alien Dictionary | Hard | G, F, A | Build graph from adjacent word diffs. Topological sort |
 | 7 | Bus Routes | Hard | G | BFS on bus stops and bus lines. Each stop connects to all its lines |
+
 
 ## Pattern 19: String Problems
 
@@ -390,7 +426,9 @@ Total: 20-30 minutes per problem. If stuck for more than 5 minutes on coding, pa
 | 10 | Generate Parentheses | Medium | G, F, A | Backtracking: track open and close counts, add only if valid |
 
 
+
 ## Examples
+
 
 ### Example 1: Two Sum (Arrays & Hashing)
 
@@ -405,6 +443,7 @@ function twoSum(nums: number[], target: number): number[] {
     return []
 }
 ```
+
 
 ### Example 2: Binary Search on Rotated Array
 
@@ -425,6 +464,7 @@ function search(nums: number[], target: number): number {
     return -1
 }
 ```
+
 
 ### Example 3: LRU Cache (Linked List + HashMap)
 
@@ -450,9 +490,11 @@ class LRUCache {
 }
 ```
 
+
 ## Summary
 
 Practice consistently: 2-3 problems per day, timed (30 min each). Review solutions even for solved problems. Focus on patterns over memorization. Use the hints only after attempting the problem. Track your weak patterns and practice them more.
+
 
 ## Practical Takeaways
 
@@ -463,6 +505,7 @@ Practice consistently: 2-3 problems per day, timed (30 min each). Review solutio
 - For Meta: focus on strings and product design
 - Rotate patterns to maintain freshness. Do not do all of one pattern at once
 - Simulate interview pressure: code on whiteboard or plain text editor, no autocomplete
+
 
 ## Chapter Quiz
 
@@ -501,6 +544,7 @@ Practice consistently: 2-3 problems per day, timed (30 min each). Review solutio
    - D) O(n)
    // correct: C
 
+
 ## Exercises
 
 1. Solve 5 problems from your weakest pattern (timed, 30 min each). Track which hints you needed.
@@ -510,6 +554,7 @@ Practice consistently: 2-3 problems per day, timed (30 min each). Review solutio
 3. Write a function that serializes and deserializes an N-ary tree (not just binary).
 
 4. Implement Union-Find with path compression and union by rank. Use it to solve Number of Connected Com
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 21-interview-preparation
@@ -519,6 +564,7 @@ Practice consistently: 2-3 problems per day, timed (30 min each). Review solutio
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

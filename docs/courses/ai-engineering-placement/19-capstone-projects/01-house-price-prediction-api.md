@@ -13,12 +13,13 @@
 
 ## Introduction
 
-19-capstone-projects is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding house price prediction api is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering house price prediction api.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart LR
     G --> H[Client Apps]
     E --> I[CI/CD]
     I --> F
-```
+```text
 
 ## 1.1 Data Pipeline
 
@@ -174,7 +175,7 @@ def detect_outliers_iqr(df: pd.DataFrame, column: str) -> pd.Series:
     lower = Q1 - 1.5 * IQR
     upper = Q3 + 1.5 * IQR
     return (df[column] < lower) | (df[column] > upper)
-```
+```text
 
 ## 1.2 Model Training
 
@@ -310,7 +311,7 @@ class ModelRegistry:
         model = joblib.load(model_path)
         pipeline = joblib.load(pipeline_path)
         return model, pipeline
-```
+```text
 
 ## 1.3 FastAPI Serving
 
@@ -461,7 +462,7 @@ async def predict_batch(request: PredictionRequest):
         )
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-```
+```text
 
 ## 1.4 API Documentation & Testing
 
@@ -541,7 +542,7 @@ def test_model_performance():
     preds = model.predict(X)
     r2 = r2_score(y, preds)
     assert r2 > 0.8, f"R2 score {r2} is below threshold"
-```
+```text
 
 ## 1.5 Containerization & CI/CD
 
@@ -559,7 +560,7 @@ EXPOSE 8000
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
 """
 
-# docker-compose.yml (for reference):
+## docker-compose.yml (for reference):
 """
 version: '3.8'
 services:
@@ -581,7 +582,7 @@ services:
       - "3000:3000"
 """
 
-# GitHub Actions workflow (for reference):
+## GitHub Actions workflow (for reference):
 """
 name: Deploy House Price API
 on:
@@ -666,7 +667,7 @@ class MonitoringSetup:
         if self.metrics["prediction_count"] == 0:
             return 0.0
         return self.metrics["error_count"] / self.metrics["prediction_count"]
-```
+```text
 
 ## Summary
 
@@ -967,6 +968,7 @@ CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]</pre></co
 9. **A/B Testing Framework**: Implement a shadow deployment system where 10% of traffic goes to model v2 and 90% to v1. Log which model served each request. Compare RMSE between models when ground truth becomes available.
 
 10. **Full Production Stack**: Deploy the complete system to a cloud provider (AWS ECS, GCP Cloud Run, or Azure Container Instances). Set up: custom domain, HTTPS, auto-scaling, monitoring alerts for p95 latency >2s, and a rollback m
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 19-capstone-projects
@@ -976,6 +978,7 @@ CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]</pre></co
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

@@ -13,12 +13,13 @@
 
 ## Introduction
 
-10-nlp-transformers is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding word embeddings is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering word embeddings.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -44,7 +45,7 @@ flowchart LR
     F --> G[Visualization: PCA/t-SNE]
     F --> H[Downstream Tasks]
     H --> I[Classification / NER / QA]
-```
+```text
 
 ## 2.1 Distributional Hypothesis
 
@@ -83,7 +84,7 @@ class CosineSimilarity {
     return results.slice(0, k);
   }
 }
-```
+```text
 
 Dense embeddings (50-300 dimensions) solve the sparsity and semantic gap problems of one-hot encodings. One-hot vectors of size 50K have no notion of similarity; embeddings do.
 
@@ -188,7 +189,7 @@ class CBOWModel {
     return expScores.map((s) => s / sumExp);
   }
 }
-```
+```text
 
 CBOW is faster to train than Skip-gram and works well for frequent words. However, it treats the context as a bag of words, ignoring word order within the window.
 
@@ -272,7 +273,7 @@ class SkipGramModel {
     return results.slice(0, k);
   }
 }
-```
+```text
 
 Skip-gram works better for rare words because each training pair is treated independently, giving more weight to infrequent co-occurrences. Training time is O(window_size — vocab_size), making negative sampling essential.
 
@@ -380,7 +381,7 @@ class GloVeModel {
       : vec;
   }
 }
-```
+```text
 
 GloVe embeddings capture both local context and global statistics. On word analogy tasks (king:queen :: man:woman), GloVe often outperforms Word2Vec because global co-occurrence better captures semantic relationships.
 
@@ -484,7 +485,7 @@ class FastTextModel {
     return this.getWordVector(word);
   }
 }
-```
+```text
 
 FastText excels at morphologically rich languages (German, Turkish, Finnish) where OOV is common. Its character n-gram approach (3-6 grams) captures prefixes, suffixes, and roots. In word analogy tasks, FastText outperforms Word2Vec on syntactic analogies (speak:spoke :: eat:ate).
 
@@ -606,7 +607,7 @@ class EmbeddingExplorer {
     return clusters;
   }
 }
-```
+```text
 
 **Common visualization techniques**:
 - PCA: Linear projection, preserves global structure
@@ -812,6 +813,7 @@ d) 1e-10
 ---
 
 > **Previous**: [Text Preprocessing](01-text-preprocessing.md) | **Next**: [Sequence Models](03-sequence-m
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 10-nlp-transformers
@@ -821,6 +823,7 @@ d) 1e-10
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

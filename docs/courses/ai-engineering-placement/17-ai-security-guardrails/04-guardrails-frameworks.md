@@ -13,12 +13,13 @@
 
 ## Introduction
 
-17-ai-security-guardrails is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding guardrails frameworks is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering guardrails frameworks.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -45,7 +46,7 @@ flowchart TB
     I --> J{Valid?}
     J -->|No| K[Rewrite/Block]
     J -->|Yes| L[Response]
-```
+```text
 
 ## 4.1 Guardrails Overview
 
@@ -97,7 +98,7 @@ class GuardrailPipeline:
                 return result
         return GuardrailResult(action=GuardrailAction.ALLOW)
 
-# Example guardrail: Topic filtering
+## Example guardrail: Topic filtering
 class TopicGuardrail(Guardrail):
     def __init__(self, allowed_topics: List[str], blocked_topics: List[str]):
         super().__init__("topic_guardrail", priority=100)
@@ -115,7 +116,7 @@ pipeline = GuardrailPipeline()
 pipeline.add_guardrail(TopicGuardrail(["general", "support"], ["illegal", "medical"]))
 result = pipeline.execute_all({"user_input": "How do I treat a broken leg?"})
 print(f"Action: {result.action}, Reason: {result.reason}")
-```
+```text
 
 ---
 
@@ -124,7 +125,7 @@ print(f"Action: {result.action}, Reason: {result.reason}")
 NVIDIA NeMo Guardrails provides a programmable dialogue management system using the Colang language.
 
 ```python
-# Simulated NeMo Guardrails implementation
+## Simulated NeMo Guardrails implementation
 
 class ColangInterpreter:
     """Interpret Colang-like guardrail rules."""
@@ -178,7 +179,7 @@ class ColangInterpreter:
 
         return {"action": "allow", "intent": intent, "response": None}
 
-# Configure NeMo-style guardrails
+## Configure NeMo-style guardrails
 rails = ColangInterpreter()
 rails.add_canonical_form("how are you", "greeting")
 rails.add_canonical_form("help me", "request_help")
@@ -202,7 +203,7 @@ for t in tests:
     print(f"Action: {result['action']}")
     if result['response']:
         print(f"Response: {result['response']}")
-```
+```text
 
 **Dialogue state management**:
 
@@ -251,7 +252,7 @@ class StatefulGuardrail(Guardrail):
             return GuardrailResult(GuardrailAction.BLOCK, response="Multiple safety violations detected.")
 
         return GuardrailResult(GuardrailAction.ALLOW)
-```
+```text
 
 ---
 
@@ -276,9 +277,9 @@ class CustomGuardrailRegistry:
 
 registry = CustomGuardrailRegistry()
 
-# Register custom guardrails
+## Register custom guardrails
 
-# 1. Length guardrail
+## 1. Length guardrail
 def length_guardrail(context: dict) -> GuardrailResult:
     max_input_chars = context.get("max_input_chars", 4000)
     user_input = context.get("user_input", "")
@@ -288,7 +289,7 @@ def length_guardrail(context: dict) -> GuardrailResult:
 
 registry.register("length", length_guardrail)
 
-# 2. Language guardrail
+## 2. Language guardrail
 def language_guardrail(context: dict) -> GuardrailResult:
     """Ensure input is in an allowed language."""
     allowed_languages = context.get("allowed_languages", ["en"])
@@ -301,7 +302,7 @@ def language_guardrail(context: dict) -> GuardrailResult:
 
 registry.register("language", language_guardrail)
 
-# 3. Rate limit guardrail
+## 3. Rate limit guardrail
 class RateLimitGuardrail:
     def __init__(self, max_requests: int = 100, window_seconds: int = 60):
         self.max_requests = max_requests
@@ -325,7 +326,7 @@ class RateLimitGuardrail:
 
 rate_limiter = RateLimitGuardrail(max_requests=5, window_seconds=60)
 
-# 4. Citation enforcement guardrail
+## 4. Citation enforcement guardrail
 def citation_guardrail(context: dict) -> GuardrailResult:
     """Ensure factual claims include citations."""
     model_output = context.get("model_output", "")
@@ -336,11 +337,11 @@ def citation_guardrail(context: dict) -> GuardrailResult:
 
 registry.register("citation", citation_guardrail)
 
-# Test custom guardrails
+## Test custom guardrails
 print(length_guardrail({"user_input": "A" * 5000, "max_input_chars": 100}))
 print(language_guardrail({"user_input": "Bonjour comment allez-vous?", "allowed_languages": ["en"]}))
 print(rate_limiter.check("user123"))
-```
+```text
 
 **Behavioral guardrails with constraints**:
 
@@ -377,7 +378,7 @@ behavior.add_constraint(
 )
 
 print(behavior.enforce({"model_output": "My SSN is 123-45-6789"}))
-```
+```text
 
 ---
 
@@ -418,16 +419,16 @@ class RAGGuardrails:
 
         return results
 
-# Example RAG guardrails
+## Example RAG guardrails
 rag = RAGGuardrails()
 
-# Context filter: relevance score threshold
+## Context filter: relevance score threshold
 def relevance_filter(doc):
     return doc.get("relevance_score", 0) > 0.5
 
 rag.add_context_filter("relevance", relevance_filter)
 
-# Context filter: recency
+## Context filter: recency
 def recency_filter(doc):
     from datetime import datetime, timedelta
     doc_date = datetime.fromisoformat(doc.get("date", "2020-01-01"))
@@ -435,7 +436,7 @@ def recency_filter(doc):
 
 rag.add_context_filter("recency", recency_filter)
 
-# Grounding check: response contains terms from context
+## Grounding check: response contains terms from context
 def citation_check(response, context):
     context_terms = set()
     for doc in context:
@@ -449,7 +450,7 @@ def citation_check(response, context):
 
 rag.add_grounding_check("citation", citation_check)
 
-# Test
+## Test
 docs = [
     {"content": "Python is a programming language", "relevance_score": 0.9, "date": "2025-01-01"},
     {"content": "Old information from 2019", "relevance_score": 0.3, "date": "2019-06-01"},
@@ -460,7 +461,7 @@ print(f"Filtered from {len(docs)} to {len(filtered)} documents")
 
 grounding = rag.verify_grounding("Python is a great programming language", filtered)
 print(f"Grounded: {grounding['grounded']}")
-```
+```text
 
 **Context window management**:
 
@@ -501,7 +502,7 @@ cw = ContextWindowGuardrail(max_tokens=4096)
 documents = [{"content": "A" * 2000, "relevance_score": 0.8}, {"content": "B" * 2000, "relevance_score": 0.6}]
 trimmed = cw.trim_context(documents, "System prompt", "User query")
 print(f"Trimmed from {sum(len(d['content']) for d in documents)} to {sum(len(d['content']) for d in trimmed)} chars")
-```
+```text
 
 ---
 
@@ -582,11 +583,11 @@ class GuardrailLogger:
             "block_rate": round(blocked / total * 100, 2) if total else 0
         }
 
-# Initialize middleware
+## Initialize middleware
 guardrail_mw = GuardrailMiddleware()
 guardrail_mw.pipeline.add_guardrail(TopicGuardrail(["general"], ["illegal", "harm", "medical"]))
 
-# Flask endpoint
+## Flask endpoint
 @app.route("/api/chat", methods=["POST"])
 def chat():
     data = request.json
@@ -606,7 +607,7 @@ def chat():
 
     return jsonify({"response": safe_response})
 
-# Test the middleware
+## Test the middleware
 with app.test_client() as client:
     r1 = client.post("/api/chat", json={"message": "How do I harm myself?", "user_id": "u1"})
     print(f"Request 1: {r1.get_json()}")
@@ -615,7 +616,7 @@ with app.test_client() as client:
     print(f"Request 2: {r2.get_json()}")
 
 print(f"\nStats: {guardrail_mw.logger.get_stats()}")
-```
+```text
 
 ---
 
@@ -685,7 +686,7 @@ def test_guardrail(ctx):
     return GuardrailResult(GuardrailAction.ALLOW)
 
 print(json.dumps(evaluator.evaluate(test_guardrail), indent=2))
-```
+```text
 
 **Effectiveness metrics**:
 
@@ -713,7 +714,7 @@ class GuardrailMetrics:
 
 metrics = GuardrailMetrics.calculate(TP=85, TN=900, FP=10, FN=5)
 print(json.dumps(metrics, indent=2))
-```
+```text
 
 ---
 
@@ -768,7 +769,7 @@ pipeline.add(new Guardrail("length", 50, (input) =>
 
 console.log(pipeline.process("How to do something illegal?"));
 console.log(pipeline.process("Hello world"));
-```
+```text
 
 ---
 
@@ -982,6 +983,7 @@ d) On the client side only
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 17-ai-security-guardrails
@@ -991,6 +993,7 @@ d) On the client side only
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

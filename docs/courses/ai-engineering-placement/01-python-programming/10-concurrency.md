@@ -13,12 +13,13 @@
 
 ## Introduction
 
-01-python-programming is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding concurrency is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering concurrency.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -42,7 +43,7 @@ flowchart LR
     D --> G[async/await event loop]
     H[GIL] -.-> B
     H -.-> D
-```
+```text
 
 ## 10.1 Threading Basics
 
@@ -105,7 +106,7 @@ for t in threads: t.start()
 for t in threads: t.join()
 print(counter)  # 1,000,000 (correct with lock)
 
-# Queue � thread-safe producer/consumer
+## Queue � thread-safe producer/consumer
 from queue import Queue
 
 def producer(q, n):
@@ -173,7 +174,7 @@ if __name__ == "__main__":
 The Global Interpreter Lock (GIL) is a mutex in CPython that prevents multiple threads from executing Python bytecode simultaneously.
 
 `python
-# GIL demonstration
+## GIL demonstration
 import threading
 import time
 
@@ -181,7 +182,7 @@ def count(n: int):
     while n > 0:
         n -= 1
 
-# CPU-bound � threading is NO faster than sequential (GIL)
+## CPU-bound � threading is NO faster than sequential (GIL)
 start = time.time()
 count(50_000_000)
 count(50_000_000)
@@ -193,9 +194,9 @@ t2 = threading.Thread(target=count, args=(50_000_000,))
 t1.start(); t2.start()
 t1.join(); t2.join()
 print(f"Threaded: {time.time() - start:.2f}s")
-# Both ~same time due to GIL
+## Both ~same time due to GIL
 
-# I/O-bound � threading helps (GIL released during I/O)
+## I/O-bound � threading helps (GIL released during I/O)
 def io_task():
     time.sleep(1)  # simulated I/O
 
@@ -270,7 +271,7 @@ asyncio.run(main())
 | Python model | OS threads | OS processes | Single-thread coroutines |
 
 `python
-# Decision flowchart
+## Decision flowchart
 def choose_model(task_type: str, num_items: int):
     if task_type == "CPU":
         return "multiprocessing.Pool"
@@ -412,7 +413,7 @@ async function main() {
 from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor, as_completed, wait, FIRST_COMPLETED
 import time
 
-# As completed - process results as they finish
+## As completed - process results as they finish
 def fetch_url(url: str) -> str:
     time.sleep(len(url) * 0.1)  # simulate network delay
     return f"Result from {url}"
@@ -428,19 +429,19 @@ with ThreadPoolExecutor(max_workers=3) as executor:
         except Exception as e:
             print(f"Failed: {url} -> {e}")
 
-# Wait with timeout
+## Wait with timeout
 futures = [executor.submit(time.sleep, t) for t in [1, 2, 3]]
 done, not_done = wait(futures, timeout=2.0, return_when=FIRST_COMPLETED)
 print(f"Done: {len(done)}, Not done: {len(not_done)}")
 
-# Callbacks on future completion
+## Callbacks on future completion
 def on_done(future):
     print(f"Callback: {future.result()}")
 
 future = executor.submit(fetch_url, "test")
 future.add_done_callback(on_done)
 
-# Future chaining
+## Future chaining
 def compute_heavy(n: int) -> int:
     return sum(i * i for i in range(n))
 
@@ -456,7 +457,7 @@ with ProcessPoolExecutor() as executor:
 import asyncio
 import time
 
-# Semaphore for rate limiting
+## Semaphore for rate limiting
 async def fetch_with_limit(sem, url):
     async with sem:
         print(f"Fetching {url}")
@@ -470,7 +471,7 @@ async def rate_limited_fetcher():
     results = await asyncio.gather(*tasks)
     return results
 
-# asyncio.Queue for producer/consumer
+## asyncio.Queue for producer/consumer
 async def producer(queue, n):
     for i in range(n):
         await queue.put(f"item-{i}")
@@ -496,7 +497,7 @@ async def queue_demo():
     for c in consumers:
         c.cancel()
 
-# asyncio with timeout
+## asyncio with timeout
 async def slow_operation():
     await asyncio.sleep(10)
     return "Done"
@@ -507,7 +508,7 @@ async def with_timeout():
     except asyncio.TimeoutError:
         print("Operation timed out after 2 seconds")
 
-# Task cancellation
+## Task cancellation
 async def cancellable_work():
     try:
         while True:
@@ -533,7 +534,7 @@ async def cancel_demo():
 import threading
 import time
 
-# RLock - reentrant lock (same thread can acquire multiple times)
+## RLock - reentrant lock (same thread can acquire multiple times)
 lock = threading.RLock()
 def recursive_lock(n):
     with lock:
@@ -543,7 +544,7 @@ def recursive_lock(n):
 
 recursive_lock(3)  # works with RLock, would deadlock with Lock
 
-# Event - signaling between threads
+## Event - signaling between threads
 event = threading.Event()
 
 def waiter(event):
@@ -561,7 +562,7 @@ t2 = threading.Thread(target=setter, args=(event,))
 t1.start(); t2.start()
 t1.join(); t2.join()
 
-# Condition variable - complex signaling
+## Condition variable - complex signaling
 cv = threading.Condition()
 items = []
 
@@ -578,7 +579,7 @@ def consumer(cv, items):
             cv.wait()  # wait for producer
         print(f"Got {items.pop(0)}")
 
-# Barrier - synchronize n threads at a point
+## Barrier - synchronize n threads at a point
 barrier = threading.Barrier(3)
 
 def worker(barrier, name):
@@ -594,20 +595,20 @@ for t in threads: t.join()
 ## 10.10 Common Pitfalls
 
 `python
-# Pitfall 1: Not joining threads before exit
+## Pitfall 1: Not joining threads before exit
 t = threading.Thread(target=lambda: time.sleep(1))
 t.start()
-# t.join()  # MISSING - program may exit before thread completes
-# Daemon threads: t.daemon = True (killed when main exits)
+## t.join()  # MISSING - program may exit before thread completes
+## Daemon threads: t.daemon = True (killed when main exits)
 
-# Pitfall 2: Race conditions without locks
+## Pitfall 2: Race conditions without locks
 counter = 0
 def increment_bad():
     global counter
     for _ in range(100000):
         counter += 1  # NOT atomic!
 
-# Pitfall 3: Deadlock with multiple locks
+## Pitfall 3: Deadlock with multiple locks
 lock1 = threading.Lock()
 lock2 = threading.Lock()
 
@@ -621,13 +622,13 @@ def thread_b():
         time.sleep(0.1)
         with lock1: pass  # might deadlock with thread_a
 
-# Solution: consistent lock ordering
+## Solution: consistent lock ordering
 
-# Pitfall 4: Forgetting if __name__ == "__main__" in multiprocessing
-# Multiprocessing on Windows re-imports the module
-# All process-creating code must be guarded
+## Pitfall 4: Forgetting if __name__ == "__main__" in multiprocessing
+## Multiprocessing on Windows re-imports the module
+## All process-creating code must be guarded
 
-# Pitfall 5: Mixing asyncio and blocking code
+## Pitfall 5: Mixing asyncio and blocking code
 import asyncio
 import requests
 
@@ -635,16 +636,16 @@ async def bad():
     response = requests.get("https://python.org")  # BLOCKS event loop!
     return response
 
-# Solution: use asyncio.to_thread() or aiohttp
+## Solution: use asyncio.to_thread() or aiohttp
 
-# Pitfall 6: Shared mutable state across processes
-# Processes don't share memory - use Manager() or Queue()
+## Pitfall 6: Shared mutable state across processes
+## Processes don't share memory - use Manager() or Queue()
 `
 
 ## 10.11 Real-World Concurrency Patterns
 
 `python
-# Thread pool for web scraping
+## Thread pool for web scraping
 def scrape_url(url: str) -> dict:
     import requests
     response = requests.get(url, timeout=10)
@@ -656,7 +657,7 @@ with ThreadPoolExecutor(max_workers=10) as pool:
     results = list(pool.map(scrape_url, urls))
 print(f"Scraped {len(results)} URLs")
 
-# asyncio web server (minimal)
+## asyncio web server (minimal)
 async def handle_request(reader, writer):
     data = await reader.read(100)
     message = data.decode()
@@ -670,7 +671,7 @@ async def run_server():
     async with server:
         await server.serve_forever()
 
-# Multiprocessing for CPU-bound tasks
+## Multiprocessing for CPU-bound tasks
 def is_prime(n: int) -> bool:
     if n < 2: return False
     for i in range(2, int(n ** 0.5) + 1):
@@ -693,6 +694,7 @@ print(f"Prime results: {results}")
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 01-python-programming
@@ -702,6 +704,7 @@ print(f"Prime results: {results}")
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

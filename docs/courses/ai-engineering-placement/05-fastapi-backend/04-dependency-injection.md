@@ -13,12 +13,13 @@
 
 ## Introduction
 
-05-fastapi-backend is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding dependency injection is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering dependency injection.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart LR
     E --> F[Sub-dependencies]
     F --> G[Global DI]
     G --> H[Testing Overrides]
-```
+```text
 
 ## 4.1 Dependency Injection Fundamentals
 
@@ -56,16 +57,16 @@ Dependency injection (DI) is a design pattern where objects receive their depend
 - **Lifecycle management**: Automatic setup/cleanup of resources
 
 ```python
-# Without DI — hard to test, tightly coupled
+## Without DI — hard to test, tightly coupled
 def get_user(user_id: int):
     db = Database()  # Created inside — cannot mock
     return db.query("SELECT * FROM users WHERE id = ?", user_id)
 
-# With DI — dependencies injected
+## With DI — dependencies injected
 def get_user(user_id: int, db: Database = Depends(get_db)):
     return db.query("SELECT * FROM users WHERE id = ?", user_id)
-# db is injected — can be replaced with mock in tests
-```
+## db is injected — can be replaced with mock in tests
+```text
 
 **IoC principle**: Instead of components creating their dependencies, an external injector (FastAPI's DI system) provides them. This inverts the control flow.
 
@@ -79,7 +80,7 @@ from typing import Optional
 
 app = FastAPI()
 
-# Simple dependency — a callable
+## Simple dependency — a callable
 async def common_parameters(
     skip: int = 0,
     limit: int = 100,
@@ -94,7 +95,7 @@ async def list_items(params: dict = Depends(common_parameters)):
 async def list_users(params: dict = Depends(common_parameters)):
     return {"users": [{"id": 1}], **params}
 
-# Dependency as a function with its own dependencies
+## Dependency as a function with its own dependencies
 async def get_token_header(x_token: str = Header(...)):
     if x_token != "secret-token":
         raise HTTPException(status_code=403, detail="Invalid token")
@@ -103,7 +104,7 @@ async def get_token_header(x_token: str = Header(...)):
 @app.get("/protected")
 async def protected_route(token: str = Depends(get_token_header)):
     return {"message": "Access granted", "token": token}
-```
+```text
 
 **How Depends works**: FastAPI calls the dependency function before the path operation, injects the return value as the parameter, and handles exceptions from the dependency. If a dependency raises HTTPException, FastAPI returns it without executing the endpoint.
 
@@ -140,13 +141,13 @@ class AuthChecker:
 async def list_items(pagination: PaginationParams = Depends(PaginationParams)):
     return {"offset": pagination.offset, "limit": pagination.limit}
 
-# Class with __call__ — instance can be used as dependency
+## Class with __call__ — instance can be used as dependency
 admin_checker = AuthChecker(required_role="admin")
 
 @app.get("/admin/data")
 async def admin_data(auth: str = Depends(admin_checker)):
     return {"secret": "admin data"}
-```
+```text
 
 **When to use class dependencies**:
 - Need to initialize from configuration or parameters
@@ -170,7 +171,7 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 app = FastAPI()
 
-# Generator dependency — yields the resource, cleans up after
+## Generator dependency — yields the resource, cleans up after
 def get_db() -> Generator[Session, None, None]:
     db = SessionLocal()
     try:
@@ -183,9 +184,9 @@ async def list_users(db: Session = Depends(get_db)):
     # db is available here
     users = db.execute("SELECT * FROM users").fetchall()
     return {"users": users}
-# After response, db.close() is called automatically
+## After response, db.close() is called automatically
 
-# Multiple resources
+## Multiple resources
 async def get_redis():
     redis = await create_redis_connection()
     try:
@@ -197,7 +198,7 @@ async def get_redis():
 async def get_cache(key: str, redis=Depends(get_redis)):
     value = await redis.get(key)
     return {"key": key, "value": value}
-```
+```text
 
 **Lifecycle**: The code before `yield` runs on request, the value is injected into the endpoint, and the code after `yield` runs after the response is sent. Exceptions in the endpoint also trigger cleanup.
 
@@ -211,7 +212,7 @@ from typing import Optional, Callable
 
 app = FastAPI()
 
-# Factory function that returns a dependency
+## Factory function that returns a dependency
 def get_pagination(
     default_limit: int = 100,
     max_limit: int = 1000
@@ -223,7 +224,7 @@ def get_pagination(
         return {"skip": skip, "limit": limit}
     return pagination_dependency
 
-# Create configured dependencies
+## Create configured dependencies
 small_pagination = get_pagination(default_limit=10, max_limit=50)
 large_pagination = get_pagination(default_limit=100, max_limit=5000)
 
@@ -235,7 +236,7 @@ async def list_items(pagination: dict = Depends(small_pagination)):
 async def list_logs(pagination: dict = Depends(large_pagination)):
     return pagination
 
-# Dependency with role-based access control
+## Dependency with role-based access control
 def require_role(role: str):
     async def role_dependency(user: dict = Depends(get_current_user)):
         if user.get("role") != role:
@@ -250,7 +251,7 @@ async def admin_dashboard(user: dict = Depends(require_role("admin"))):
 @app.get("/moderator")
 async def mod_dashboard(user: dict = Depends(require_role("moderator"))):
     return {"dashboard": "moderator", "user": user}
-```
+```text
 
 **Use cases for parameterized dependencies**:
 - Pagination with different limits per endpoint
@@ -268,7 +269,7 @@ from typing import Optional
 
 app = FastAPI()
 
-# Level 1: Database
+## Level 1: Database
 def get_db():
     db = Database()
     try:
@@ -276,7 +277,7 @@ def get_db():
     finally:
         db.close()
 
-# Level 2: Current user (depends on db)
+## Level 2: Current user (depends on db)
 async def get_current_user(
     db = Depends(get_db),
     authorization: str = Header(None)
@@ -289,7 +290,7 @@ async def get_current_user(
         raise HTTPException(status_code=401, detail="Invalid token")
     return user
 
-# Level 3: Admin user (depends on current user)
+## Level 3: Admin user (depends on current user)
 async def get_admin_user(
     user: dict = Depends(get_current_user)
 ):
@@ -297,15 +298,15 @@ async def get_admin_user(
         raise HTTPException(status_code=403, detail="Admin access required")
     return user
 
-# Endpoint — only needs the final dependency
+## Endpoint — only needs the final dependency
 @app.get("/admin/users")
 async def admin_list_users(admin: dict = Depends(get_admin_user)):
     # admin comes from get_admin_user -> get_current_user -> get_db
     return {"admin": admin["name"], "users": [{"id": 1}]}
 
-# Trace the dependency chain:
-# /admin/users -> get_admin_user(Depends(get_current_user(Depends(get_db))))
-```
+## Trace the dependency chain:
+## /admin/users -> get_admin_user(Depends(get_current_user(Depends(get_db))))
+```text
 
 **Dependency graph resolution**: FastAPI builds the dependency graph and calls each dependency in order. Results are cached within a request — if two dependencies both depend on `get_db`, it is called only once.
 
@@ -318,7 +319,7 @@ from fastapi import FastAPI, Depends, APIRouter, HTTPException, Header
 
 app = FastAPI()
 
-# Router-level dependencies
+## Router-level dependencies
 router = APIRouter(
     prefix="/api/v1",
     tags=["API"],
@@ -333,7 +334,7 @@ async def list_users():
 async def list_items():
     return {"items": [{"id": 1}]}
 
-# App-level dependencies
+## App-level dependencies
 app = FastAPI(dependencies=[Depends(add_request_id)])
 
 async def add_request_id(request: Request, call_next):
@@ -342,7 +343,7 @@ async def add_request_id(request: Request, call_next):
     response.headers["X-Request-ID"] = request_id
     return response
 
-# Conditional dependencies
+## Conditional dependencies
 class FeatureFlag:
     def __init__(self, feature_name: str):
         self.feature_name = feature_name
@@ -357,7 +358,7 @@ new_feature = FeatureFlag("new_dashboard")
 @app.get("/new-dashboard", dependencies=[Depends(new_feature)])
 async def new_dashboard():
     return {"message": "New dashboard — feature flagged"}
-```
+```text
 
 **Global dependency scope options**:
 
@@ -379,7 +380,7 @@ import pytest
 
 app = FastAPI()
 
-# Real dependency
+## Real dependency
 async def get_db():
     db = RealDatabase()
     try:
@@ -391,7 +392,7 @@ async def get_db():
 async def list_users(db = Depends(get_db)):
     return db.query("SELECT * FROM users")
 
-# Test setup with override
+## Test setup with override
 @pytest.fixture
 def test_app():
     app.dependency_overrides[get_db] = get_test_db
@@ -407,7 +408,7 @@ def test_list_users(client):
     assert response.status_code == 200
     assert len(response.json()) == 2  # Test data
 
-# Isolated override using context
+## Isolated override using context
 from contextlib import contextmanager
 
 @contextmanager
@@ -425,12 +426,12 @@ def test_specific_override():
         response = client.get("/users")
         assert response.status_code == 200
 
-# Override with different return types
+## Override with different return types
 async def get_mock_user():
     return {"id": 1, "name": "Test User", "role": "admin"}
 
 app.dependency_overrides[get_current_user] = get_mock_user
-```
+```text
 
 **Testing best practices**:
 - Always clear overrides after each test
@@ -473,7 +474,7 @@ app.get("/users", async (req, res) => {
   const users = await db.query("SELECT * FROM users");
   res.json(users);
 });
-```
+```text
 
 ---
 
@@ -643,6 +644,7 @@ d) Router.dependencies()
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 05-fastapi-backend
@@ -652,6 +654,7 @@ d) Router.dependencies()
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

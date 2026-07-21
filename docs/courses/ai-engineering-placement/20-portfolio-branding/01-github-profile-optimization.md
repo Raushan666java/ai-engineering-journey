@@ -13,12 +13,13 @@
 
 ## Introduction
 
-20-portfolio-branding is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding github profile optimization is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering github profile optimization.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -42,7 +43,7 @@ flowchart TB
     A --> G[GitHub Stats]
     A --> H[Contact & Social]
     A --> I[Fun Section / Blog Posts]
-```
+```text
 
 ## 1.1 Profile README
 
@@ -50,7 +51,7 @@ Your GitHub profile README is the first thing recruiters see. It should quickly 
 
 ```python
 # profile_readme_generator.py
-# A tool to generate your GitHub profile README
+## A tool to generate your GitHub profile README
 
 def generate_profile_readme(name: str, tagline: str, about: str,
                              skills: list, social_links: dict,
@@ -117,7 +118,7 @@ def generate_profile_readme_file():
     with open("PROFILE.md", "w") as f:
         f.write(readme)
     return readme
-```
+```text
 
 ## 1.2 Pinned Repositories
 
@@ -191,7 +192,7 @@ class PinnedRepoSelector:
         for cat in categories:
             result.extend(categories[cat])
         return result
-```
+```text
 
 ## 1.3 Contribution Graph
 
@@ -288,7 +289,7 @@ class ContributionQuality:
         keywords = ["feature", "fix", "refactor", "optimize", "document",
                      "add", "update", "improve", "implement"]
         return any(kw in description.lower() for kw in keywords)
-```
+```text
 
 ## 1.4 Badges & Metrics
 
@@ -390,7 +391,7 @@ I build things with code.
 
 > *"[Personal motto]"*
 """
-```
+```text
 
 ## 1.5 Personal Branding
 
@@ -439,7 +440,7 @@ class BioGenerator:
 
     def long_bio(self) -> str:
         return f"{self.role} passionate about building production-ready AI systems. Skilled in {', '.join(self.skills)}. Open source contributor and technical writer. Currently exploring LLMs and RAG systems. Based in {self.location}."
-```
+```text
 
 ## 1.6 Networking
 
@@ -474,7 +475,7 @@ class GitHubNetworker:
             {"name": "langchain-ai/langchain", "good_first_issues": 8},
             {"name": "pytorch/pytorch", "good_first_issues": 12},
         ]
-```
+```text
 
 ## Summary
 
@@ -832,6 +833,7 @@ d) Open Badges
 7. **Profile Analytics**: Set up a visitor badge on your profile. After 1 week, analyze: total visits, unique visitors (approximate), peak traffic days. Correlate with your posting/contribution activity.
 
 8. **Repository Makeover**: Pick your most-starred repo. Improve: README (add demo GIF, architecture diagram), add tests, set up CI, add license. Measure star growth over the followi
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 20-portfolio-branding
@@ -841,6 +843,7 @@ d) Open Badges
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

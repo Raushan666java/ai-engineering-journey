@@ -13,12 +13,13 @@
 
 ## Introduction
 
-06-docker-kubernetes-cloud is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding docker compose is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering docker compose.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart LR
     E --> F[Environment Vars]
     F --> G[Scaling]
     G --> H[Debugging]
-```
+```text
 
 ## 2.1 What is Docker Compose
 
@@ -57,15 +58,15 @@ Docker Compose is a tool for defining and running multi-container Docker applica
 - Onboard team members with a single `docker compose up` command
 
 ```bash
-# Check Compose version
+## Check Compose version
 docker compose version
 
-# Start all services
+## Start all services
 docker compose up -d
 
-# Stop all services
+## Stop all services
 docker compose down
-```
+```text
 
 **Compose V1 vs V2**: The original `docker-compose` (Python) is deprecated. The current `docker compose` (Go plugin) is integrated into the Docker CLI and is faster.
 
@@ -82,7 +83,7 @@ flowchart TD
     F --> J[redis:6379]
     H --> I
     H --> J
-```
+```text
 
 ## 2.2 Compose File Structure
 
@@ -113,7 +114,7 @@ networks:       # Define custom networks
 volumes:        # Define named volumes
   pgdata:
     driver: local
-```
+```text
 
 **YAML basics for Compose**:
 - Indentation matters (2 spaces preferred)
@@ -123,7 +124,7 @@ volumes:        # Define named volumes
 - Supports anchors (`&`) and aliases (`*`) for reuse
 
 ```yaml
-# YAML anchors for config reuse
+## YAML anchors for config reuse
 x-logging: &default-logging
   driver: "json-file"
   options:
@@ -135,7 +136,7 @@ services:
     logging: *default-logging
   worker:
     logging: *default-logging
-```
+```text
 
 ## 2.3 Service Configuration
 
@@ -180,7 +181,7 @@ services:
         reservations:
           cpus: "0.25"
           memory: "256M"
-```
+```text
 
 **Build configuration**:
 
@@ -222,14 +223,14 @@ networks:
   backend:
     driver: bridge
     internal: true  # no external access
-```
+```text
 
 **Service discovery**: Containers can reach each other by service name:
 
 ```python
-# Inside api container — connects to db service
+## Inside api container — connects to db service
 DATABASE_URL = "postgresql://postgres:password@db:5432/app"
-```
+```text
 
 **Static IP assignment**:
 
@@ -239,7 +240,7 @@ services:
     networks:
       backend:
         ipv4_address: "172.20.0.10"
-```
+```text
 
 ## 2.5 Dependencies and Health Checks
 
@@ -253,7 +254,7 @@ services:
         condition: service_healthy
       redis:
         condition: service_started
-```
+```text
 
 **Health checks** ensure services are actually ready:
 
@@ -278,7 +279,7 @@ services:
       interval: 30s
       timeout: 10s
       retries: 3
-```
+```text
 
 **Restart policies**:
 
@@ -300,7 +301,7 @@ flowchart TD
     F -- healthy --> G[Running]
     F -- unhealthy --> H[Restart]
     H --> F
-```
+```text
 
 ## 2.6 Environment Variables
 
@@ -323,17 +324,17 @@ services:
     image: myapp:${TAG:-latest}
     ports:
       - "${PORT:-8000}:8000"
-```
+```text
 
 **.env file** (placed alongside docker-compose.yml):
 
 ```env
-# .env
+## .env
 PORT=8000
 TAG=latest
 DATABASE_URL=postgresql://postgres:password@db:5432/app
 REDIS_URL=redis://redis:6379
-```
+```text
 
 **Variable substitution in Compose**:
 
@@ -352,19 +353,19 @@ services:
       - "${HOST_PORT:-8000}:${CONTAINER_PORT:-8000}"
     environment:
       - DATABASE_URL=${DATABASE_URL:?DATABASE_URL is required}
-```
+```text
 
 ## 2.7 Scaling and Load Balancing
 
 Compose can scale stateless services to multiple replicas.
 
 ```bash
-# Scale API to 3 instances
+## Scale API to 3 instances
 docker compose up -d --scale api=3
 
-# Scale with specific ports
+## Scale with specific ports
 docker compose up -d --scale api=3 --scale worker=2
-```
+```text
 
 **Service replica configuration**:
 
@@ -381,7 +382,7 @@ services:
         limits:
           cpus: "0.5"
           memory: "512M"
-```
+```text
 
 **Using a reverse proxy for load balancing**:
 
@@ -401,10 +402,10 @@ services:
     scale: 3
     expose:
       - "8000"  # internal only
-```
+```text
 
 ```nginx
-# nginx.conf — load balance across API replicas
+## nginx.conf — load balance across API replicas
 upstream api_servers {
     server api:8000;
     server api:8000;
@@ -417,54 +418,54 @@ server {
         proxy_pass http://api_servers;
     }
 }
-```
+```text
 
 ## 2.8 Debugging and Logging
 
 **View logs**:
 
 ```bash
-# All services
+## All services
 docker compose logs
 
-# Specific service
+## Specific service
 docker compose logs api
 
-# Follow mode
+## Follow mode
 docker compose logs -f
 
-# Tail last N lines
+## Tail last N lines
 docker compose logs --tail=100 api
 
-# Timestamps
+## Timestamps
 docker compose logs -t
-```
+```text
 
 **Execute commands in running services**:
 
 ```bash
-# Interactive shell
+## Interactive shell
 docker compose exec api bash
 
-# Run command
+## Run command
 docker compose exec db pg_dump -U postgres app > backup.sql
 
-# As specific user
+## As specific user
 docker compose exec --user root api apt-get update
-```
+```text
 
 **Port conflicts**: If a host port is already in use, change the mapping or stop the conflicting process.
 
 ```bash
-# Find process using port
+## Find process using port
 netstat -ano | findstr :8000
 
-# Or change port in Compose
+## Or change port in Compose
 services:
   api:
     ports:
       - "8001:8000"  # use different host port
-```
+```text
 
 **Common troubleshooting scenarios**:
 
@@ -477,11 +478,11 @@ services:
 | Build cache issues | Stale code in container | `docker compose build --no-cache` |
 
 ```bash
-# Full reset — remove everything and rebuild
+## Full reset — remove everything and rebuild
 docker compose down -v
 docker compose build --no-cache
 docker compose up -d
-```
+```text
 
 ---
 
@@ -522,7 +523,7 @@ const config = generateCompose({
 });
 
 fs.writeFileSync("docker-compose.yml", config);
-```
+```text
 
 ---
 
@@ -577,7 +578,7 @@ fs.writeFileSync("docker-compose.yml", config);
     <pre><code># api service can reach db service
 DATABASE_URL = "postgresql://user:pass@db:5432/mydb"
 
-# From within api container
+## From within api container
 ping db  # resolves to db service container IP</code></pre>
     <p>This works because Docker's embedded DNS server resolves service names to container IPs. For custom domains or more complex routing, use an external service mesh or reverse proxy.</p>
   </div>
@@ -653,7 +654,7 @@ services:
     build: .
     scale: 3
 
-# nginx upstream must reference the service name
+## nginx upstream must reference the service name
 upstream api {
     server api:8000;
 }</code></pre>
@@ -683,7 +684,7 @@ volumes:
     <pre><code># Backup
 docker compose exec db pg_dump -U postgres mydb > backup.sql
 
-# Restore
+## Restore
 cat backup.sql | docker compose exec -T db psql -U postgres mydb</code></pre>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -701,7 +702,7 @@ cat backup.sql | docker compose exec -T db psql -U postgres mydb</code></pre>
 PORT=8080
 TAG=v2.1
 
-# docker-compose.yml
+## docker-compose.yml
 services:
   api:
     image: myapp:${TAG:-latest}
@@ -735,7 +736,7 @@ services:
   api:
     entrypoint: ["tail", "-f", "/dev/null"]  # keeps container alive
 
-# Then exec into it
+## Then exec into it
 docker compose exec api bash</code></pre>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -867,6 +868,7 @@ d) Both b and c
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 06-docker-kubernetes-cloud
@@ -876,6 +878,7 @@ d) Both b and c
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

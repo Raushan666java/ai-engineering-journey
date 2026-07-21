@@ -19,6 +19,7 @@ Heaps (priority queues) are specialized trees that efficiently provide the minim
 
 - Binary tree basics
 - Array representation of trees
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -44,7 +45,7 @@ flowchart LR
     E --> I[Construction]
     F --> I
     G --> J[LCA, Path Sum]
-```
+```text
 
 
 A binary tree is a hierarchical data structure where each node has at most two children: left and right.
@@ -58,16 +59,16 @@ class TreeNode:
         self.left = left
         self.right = right
 
-# Build:     1
-#          / \
-#         2   3
-#        / \   \
-#       4   5   6
+## Build:     1
+##          / \
+##         2   3
+##        / \   \
+##       4   5   6
 root = TreeNode(1)
 root.left = TreeNode(2, TreeNode(4), TreeNode(5))
 root.right = TreeNode(3, None, TreeNode(6))
 
-# Tree properties
+## Tree properties
 def count_nodes(root):
     if not root: return 0
     return 1 + count_nodes(root.left) + count_nodes(root.right)
@@ -75,7 +76,7 @@ def count_nodes(root):
 def height(root):
     if not root: return -1  # edge-based height
     return 1 + max(height(root.left), height(root.right))
-```
+```text
 
 ## 9.2 Tree Traversals
 
@@ -84,7 +85,7 @@ def height(root):
 def preorder(root):
     if not root: return []
     return [root.val] + preorder(root.left) + preorder(root.right)
-```
+```text
 
 **Inorder** (Left-Root-Right):
 
@@ -93,8 +94,8 @@ def inorder(root):
     if not root: return []
     return inorder(root.left) + [root.val] + inorder(root.right)
 
-# Inorder of BST gives sorted order
-```
+## Inorder of BST gives sorted order
+```text
 
 **Postorder** (Left-Right-Root):
 
@@ -102,7 +103,7 @@ def inorder(root):
 def postorder(root):
     if not root: return []
     return postorder(root.left) + postorder(root.right) + [root.val]
-```
+```text
 
 **Level-order** (BFS):
 
@@ -122,7 +123,7 @@ def level_order(root):
             if node.right: queue.append(node.right)
         result.append(level)
     return result
-```
+```text
 
 ## 9.3 Recursive Tree Problems
 
@@ -132,7 +133,7 @@ def level_order(root):
 def max_depth(root):
     if not root: return 0
     return 1 + max(max_depth(root.left), max_depth(root.right))
-```
+```text
 
 **Diameter of binary tree**:
 
@@ -150,7 +151,7 @@ def diameter_of_binary_tree(root):
 
     dfs(root)
     return diameter
-```
+```text
 
 **Balanced binary tree** (height difference <= 1):
 
@@ -164,7 +165,7 @@ def is_balanced(root):
                    abs(left_h - right_h) <= 1)
         return (balanced, 1 + max(left_h, right_h))
     return dfs(root)[0]
-```
+```text
 
 ## 9.4 Iterative Traversals
 
@@ -180,7 +181,7 @@ def preorder_iterative(root):
         if node.right: stack.append(node.right)
         if node.left: stack.append(node.left)
     return result
-```
+```text
 
 **Iterative inorder**:
 
@@ -196,7 +197,7 @@ def inorder_iterative(root):
         result.append(curr.val)
         curr = curr.right
     return result
-```
+```text
 
 ## 9.5 Tree Construction
 
@@ -212,7 +213,7 @@ def build_tree(preorder, inorder):
     root.left = build_tree(preorder[1:mid+1], inorder[:mid])
     root.right = build_tree(preorder[mid+1:], inorder[mid+1:])
     return root
-```
+```text
 
 ## 9.6 Advanced Problems
 
@@ -227,7 +228,7 @@ def lowest_common_ancestor(root, p, q):
     if left and right:
         return root  # p and q in different subtrees
     return left or right
-```
+```text
 
 **Maximum path sum** (any node to any node):
 
@@ -245,7 +246,7 @@ def max_path_sum(root):
 
     dfs(root)
     return max_sum
-```
+```text
 
 **Serialize and deserialize**:
 
@@ -266,7 +267,7 @@ def deserialize(data):
         node.right = dfs()
         return node
     return dfs()
-```
+```text
 
 ---
 
@@ -297,7 +298,7 @@ function inorderTraversal(root: TreeNode | null): number[] {
     }
     return result;
 }
-```
+```text
 
 ---
 
@@ -478,6 +479,7 @@ a) Queue  b) Stack  c) Deque  d) Priority Queue
 3. Using heap when a sorted array suffices
 4. Not considering the O(n) build-heap vs O(n log n) inserts
 5. Confusing min-heap with max-heap
+
 ## Revision Notes
 
 - Min-heap: parent ≤ children
@@ -485,6 +487,7 @@ a) Queue  b) Stack  c) Deque  d) Priority Queue
 - Insert: O(log n), Extract-min: O(log n)
 - Build heap from array: O(n)
 - Used in heapsort, Dijkstra, and top-K problems
+
 ## Placement Section
 
 ### Top 10 Interview Questions

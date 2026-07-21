@@ -19,6 +19,7 @@ Git is the industry-standard version control system. Understanding Git fundament
 
 - Basic command line usage
 - Text editor familiarity
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -40,7 +41,7 @@ flowchart LR
     D --> E[Undo Changes]
     E --> F[.gitignore]
     F --> G[Best Practices]
-```
+```text
 
 ## Theory
 
@@ -51,27 +52,27 @@ Git is a distributed version control system that tracks changes to files over ti
 **Creating a new repository:**
 
 ```bash
-# Create a new repo in the current directory
+## Create a new repo in the current directory
 git init
 
-# Create a new repo in a specific directory
+## Create a new repo in a specific directory
 git init my-project
-```
+```text
 
 Running `git init` creates a hidden `.git` directory that stores all version control metadata: commit objects, branch refs, configuration, and the object database.
 
 **Cloning an existing repository:**
 
 ```bash
-# Clone via HTTPS
+## Clone via HTTPS
 git clone https://github.com/user/repo.git
 
-# Clone via SSH
+## Clone via SSH
 git clone git@github.com:user/repo.git
 
-# Clone into a specific directory
+## Clone into a specific directory
 git clone https://github.com/user/repo.git my-folder
-```
+```text
 
 Cloning copies the entire history, all branches, and sets up a remote called `origin` automatically.
 
@@ -87,8 +88,10 @@ flowchart LR
     A[Working Directory] -->|git add| B[Staging Area]
     B -->|git commit| C[Repository]
     C -->|git checkout| A
-```
+```text
 
+
+## Overview
 ### 01.2 Staging and Committing
 
 The staging area lets you craft commits selectively. You can stage some changes while leaving others unstaged, allowing atomic, focused commits.
@@ -96,60 +99,62 @@ The staging area lets you craft commits selectively. You can stage some changes 
 **Adding files to the staging area:**
 
 ```bash
-# Stage a specific file
+## Stage a specific file
 git add index.html
 
-# Stage all changes in current directory
+## Stage all changes in current directory
 git add .
 
-# Stage all changes everywhere
+## Stage all changes everywhere
 git add -A
 
-# Stage specific file types
+## Stage specific file types
 git add *.js
 
-# Stage changes interactively (choose hunks)
+## Stage changes interactively (choose hunks)
 git add -p
-```
+```text
 
 **Committing staged changes:**
 
 ```bash
-# Commit with inline message
+## Commit with inline message
 git commit -m "Add user authentication module"
 
-# Commit all tracked changes (skip staging)
+## Commit all tracked changes (skip staging)
 git commit -am "Fix login redirect bug"
 
-# Commit with verbose output showing diff
+## Commit with verbose output showing diff
 git commit -v -m "Update API rate limiting"
 
-# Amend the last commit (message or files)
+## Amend the last commit (message or files)
 git commit --amend -m "Fix: correct typo in auth header"
-```
+```text
 
 **The three-area model in practice:**
 
 ```bash
-# Edit a file
+## Edit a file
 echo "console.log('hello');" > app.js
 
-# Check status — shows unstaged changes
+## Check status — shows unstaged changes
 git status
 
-# Stage the file
+## Stage the file
 git add app.js
 
-# Check status — shows staged changes
+## Check status — shows staged changes
 git status
 
-# Commit
+## Commit
 git commit -m "Initialize app entry point"
 
-# Check status — clean working tree
+## Check status — clean working tree
 git status
-```
+```text
 
+
+## Overview
 ### 01.3 Inspecting History
 
 Git log shows the commit history. Understanding how to read and filter it is essential for debugging and code review.
@@ -157,66 +162,68 @@ Git log shows the commit history. Understanding how to read and filter it is ess
 **Viewing commit history:**
 
 ```bash
-# Compact one-line log
+## Compact one-line log
 git log --oneline
 
-# Graph with branches
+## Graph with branches
 git log --oneline --graph --all
 
-# Last 5 commits
+## Last 5 commits
 git log -5
 
-# Show file changes per commit
+## Show file changes per commit
 git log --stat
 
-# Show actual diffs
+## Show actual diffs
 git log -p
 
-# Filter by author
+## Filter by author
 git log --author="Alice"
 
-# Filter by date
+## Filter by date
 git log --since="2024-01-01" --until="2024-06-01"
 
-# Search commit messages
+## Search commit messages
 git log --grep="fix" --oneline
-```
+```text
 
 **Comparing changes with diff:**
 
 ```bash
-# Unstaged changes (working dir vs staging)
+## Unstaged changes (working dir vs staging)
 git diff
 
-# Staged changes (staging vs last commit)
+## Staged changes (staging vs last commit)
 git diff --staged
 
-# Diff between two commits
+## Diff between two commits
 git diff abc1234 def5678
 
-# Diff between branches
+## Diff between branches
 git diff main..feature-branch
 
-# Diff showing only filenames
+## Diff showing only filenames
 git diff --name-only
 
-# Diff with word-level changes
+## Diff with word-level changes
 git diff --word-diff
-```
+```text
 
 **Inspecting specific commits:**
 
 ```bash
-# Show a commit's details and diff
+## Show a commit's details and diff
 git show abc1234
 
-# Show commit stats only
+## Show commit stats only
 git show --stat abc1234
 
-# Show the contents of a file at a specific commit
+## Show the contents of a file at a specific commit
 git show abc1234:path/to/file.ts
-```
+```text
 
+
+## Overview
 ### 01.4 Undoing Changes
 
 Mistakes happen. Git provides multiple tools to undo changes, each with different safety levels.
@@ -224,52 +231,54 @@ Mistakes happen. Git provides multiple tools to undo changes, each with differen
 **Discarding unstaged changes:**
 
 ```bash
-# Discard changes in a specific file
+## Discard changes in a specific file
 git restore index.html
 
-# Discard all working directory changes
+## Discard all working directory changes
 git restore .
 
-# Restore a file from last commit
+## Restore a file from last commit
 git restore --source=HEAD~2 path/to/file.ts
-```
+```text
 
 **Unstaging files:**
 
 ```bash
-# Unstage a specific file (keeps working dir changes)
+## Unstage a specific file (keeps working dir changes)
 git restore --staged index.html
 
-# Unstage all files
+## Unstage all files
 git restore --staged .
-```
+```text
 
 **Resetting commits (use with caution):**
 
 ```bash
-# Soft reset: move HEAD, keep staged changes
+## Soft reset: move HEAD, keep staged changes
 git reset --soft HEAD~1
 
-# Mixed reset (default): unstage changes, keep in working dir
+## Mixed reset (default): unstage changes, keep in working dir
 git reset HEAD~1
 
-# Hard reset: discard everything (DANGEROUS)
+## Hard reset: discard everything (DANGEROUS)
 git reset --hard HEAD~1
 
-# Reset to a specific commit
+## Reset to a specific commit
 git reset --hard abc1234
-```
+```text
 
 **Recovering with reflog:**
 
 ```bash
-# View the reflog (safety net for lost commits)
+## View the reflog (safety net for lost commits)
 git reflog
 
-# Recover a "lost" commit
+## Recover a "lost" commit
 git reset --hard HEAD@{2}
-```
+```text
 
+
+## Overview
 ### 01.5 .gitignore
 
 The `.gitignore` file tells Git which files and directories to ignore. This prevents generated files, secrets, and dependencies from being tracked.
@@ -277,96 +286,98 @@ The `.gitignore` file tells Git which files and directories to ignore. This prev
 **Creating a .gitignore:**
 
 ```bash
-# Create a .gitignore file
+## Create a .gitignore file
 touch .gitignore
-```
+```text
 
 **Common .gitignore patterns:**
 
 ```gitignore
-# Dependencies
+## Dependencies
 node_modules/
 venv/
 __pycache__/
 
-# Build output
+## Build output
 dist/
 build/
 *.o
 *.class
 
-# Environment files
+## Environment files
 .env
 .env.local
 .env.*.local
 
-# IDE files
+## IDE files
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# OS files
+## OS files
 .DS_Store
 Thumbs.db
 
-# Logs
+## Logs
 *.log
 logs/
 
-# Coverage reports
+## Coverage reports
 coverage/
 htmlcov/
-```
+```text
 
 **Pattern syntax:**
 
 ```gitignore
-# Ignore all .log files
+## Ignore all .log files
 *.log
 
-# But keep important.log
+## But keep important.log
 !important.log
 
-# Ignore all files in temp/ directory
+## Ignore all files in temp/ directory
 temp/
 
-# Ignore build/ at root only (not sub/build/)
+## Ignore build/ at root only (not sub/build/)
 /build
 
-# Ignore TODO files in root and subdirs
+## Ignore TODO files in root and subdirs
 /**/TODO
 
-# Ignore files ending in .bak
+## Ignore files ending in .bak
 *~
 
-# Ignore files with spaces in name
+## Ignore files with spaces in name
 "My Documents/"
-```
+```text
 
 **Removing tracked files from Git (after adding to .gitignore):**
 
 ```bash
-# Remove file from Git but keep on disk
+## Remove file from Git but keep on disk
 git rm --cached secret.env
 
-# Remove directory from Git but keep locally
+## Remove directory from Git but keep locally
 git rm -r --cached node_modules/
 
-# Commit the removal
+## Commit the removal
 git commit -m "Remove tracked secrets and dependencies"
-```
+```text
 
+
+## Overview
 ### 01.6 Real-World Best Practices
 
 **Atomic commits:** Each commit should represent one logical change. This makes code review easier and bisection reliable.
 
 ```bash
-# Bad: one massive commit
+## Bad: one massive commit
 git add .
 git commit -m "Update everything"
 
-# Good: separate logical changes
+## Good: separate logical changes
 git add src/auth.ts src/auth.test.ts
 git commit -m "Add JWT authentication with tests"
 
@@ -375,17 +386,17 @@ git commit -m "Add protected API routes"
 
 git add README.md
 git commit -m "Update README with auth setup instructions"
-```
+```text
 
 **Commit message convention (Conventional Commits):**
 
-```
+```text
 <type>(<scope>): <description>
 
 [optional body]
 
 [optional footer]
-```
+```text
 
 ```bash
 git commit -m "feat(auth): add OAuth2 Google login"
@@ -394,7 +405,7 @@ git commit -m "docs(readme): add installation steps"
 git commit -m "refactor(db): simplify query builder"
 git commit -m "test(auth): add edge case for expired tokens"
 git commit -m "chore(deps): upgrade axios to 1.6.0"
-```
+```text
 
 **Commit message rules:**
 
@@ -439,10 +450,10 @@ git commit -m "chore(deps): upgrade axios to 1.6.0"
     <p><strong>--soft</strong> moves HEAD but keeps changes staged. <strong>--mixed</strong> (default) moves HEAD and unstages changes but keeps them in the working directory. <strong>--hard</strong> moves HEAD and discards all changes permanently. Use --soft for amending commits, --mixed for reorganizing, and --hard only when you're certain you want to discard changes.</p><pre><code># Soft: keeps changes staged
 git reset --soft HEAD~1
 
-# Mixed: unstages but keeps files
+## Mixed: unstages but keeps files
 git reset HEAD~1
 
-# Hard: discloses everything
+## Hard: discloses everything
 git reset --hard HEAD~1</code></pre>
   </div>
   <button class="tp-qa-mark-btn">Mark Reviewed</button>
@@ -470,7 +481,7 @@ git reset --hard HEAD~1</code></pre>
     <p>Use <code>git reflog</code> to find the lost commit hash. The reflog tracks every movement of HEAD. Once you find the hash, use <code>git reset --hard &lt;hash&gt;</code> or <code>git cherry-pick &lt;hash&gt;</code> to restore it. Reflog entries expire after 90 days by default.</p><pre><code># Find the lost commit
 git reflog
 
-# Restore it
+## Restore it
 git reset --hard abc1234</code></pre>
   </div>
   <button class="tp-qa-mark-btn">Mark Reviewed</button>
@@ -623,6 +634,7 @@ d) Ignores all files containing "log" in the name
 3. Force pushing to shared branches
 4. Not understanding staging area
 5. Forgetting to pull before pushing
+
 ## Revision Notes
 
 - git init → initialize repo
@@ -632,6 +644,7 @@ d) Ignores all files containing "log" in the name
 - git log → view history
 - .gitignore → exclude files
 - Commit often, push after review
+
 ## Placement Section
 
 ### Top 10 Interview Questions

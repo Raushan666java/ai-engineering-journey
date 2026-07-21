@@ -13,12 +13,13 @@
 
 ## Introduction
 
-16-mlops-production is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding drift monitoring is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering drift monitoring.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -45,7 +46,7 @@ flowchart LR
     I --> J[Deploy New Model]
     J --> K[Update Reference]
     K --> C
-```
+```text
 
 ## 6.1 Types of Drift
 
@@ -64,7 +65,7 @@ flowchart TB
     end
     Data Drift --> PD
     Concept Drift --> PD
-```
+```text
 
 ```python
 import numpy as np
@@ -145,7 +146,7 @@ ref_df = pd.DataFrame({"price": np.random.normal(300000, 50000, 1000), "sqft": n
 cur_df = pd.DataFrame({"price": np.random.normal(350000, 60000, 1000), "sqft": np.random.normal(1800, 400, 1000)})
 result = analyzer.data_drift(ref_df, cur_df, ["price", "sqft"], [])
 print(f"Data drift: {result['drifted_features']} (score: {result['drift_score']:.2f})")
-```
+```text
 
 ---
 
@@ -219,7 +220,7 @@ ref = np.random.normal(0, 1, 10000)
 curr = np.random.normal(0.3, 1.2, 10000)
 report = detector.comprehensive_analysis(ref, curr, "feature_1")
 print(json.dumps(report, indent=2))
-```
+```text
 
 **PSI interpretation guide**:
 
@@ -303,11 +304,11 @@ class RealtimeDriftMonitor:
     def stop(self):
         self.running = False
 
-# Simulate production predictions
+## Simulate production predictions
 ref_data = np.random.normal(0.5, 0.1, 5000)
 monitor = RealtimeDriftMonitor(ref_data, window_size=500, check_interval=50)
 
-# Simulate drift after some time
+## Simulate drift after some time
 for i in range(2000):
     if i < 500:
         monitor.add_prediction(np.random.normal(0.5, 0.1))
@@ -315,7 +316,7 @@ for i in range(2000):
         monitor.add_prediction(np.random.normal(0.7, 0.15))  # Drifted
 
 print(f"Drift events: {sum(1 for d in monitor.drift_history if d['drifted'])}")
-```
+```text
 
 **Streaming drift with batch processing**:
 
@@ -367,7 +368,7 @@ for _ in range(10):
     time.sleep(0.1)
 
 print(f"Drift trend for 'price': {reporter.get_trend('price')[:3]}...")
-```
+```text
 
 ---
 
@@ -421,7 +422,7 @@ class AlertManager:
         filtered = [a for a in self.alert_history if severity is None or a.severity == severity]
         return filtered[-n:]
 
-# Notification handlers
+## Notification handlers
 def slack_alert(alert: DriftAlert):
     """Send alert to Slack webhook."""
     payload = {
@@ -447,7 +448,7 @@ manager.register_channel("slack", slack_alert)
 manager.register_channel("email", email_alert)
 manager.register_channel("pagerduty", pagerduty_alert)
 
-# Threshold-based alerting
+## Threshold-based alerting
 class ThresholdAlertPolicy:
     def __init__(self, drift_threshold: float = 0.25, consecutive_failures: int = 3):
         self.threshold = drift_threshold
@@ -469,7 +470,7 @@ for psi in [0.1, 0.3, 0.4, 0.6]:
     alert = policy.evaluate(psi)
     if alert:
         manager.send_alert(alert)
-```
+```text
 
 ---
 
@@ -537,12 +538,12 @@ class DriftTriggeredRetraining:
 retrainer = DriftTriggeredRetraining("train_pipeline.py", min_retrain_interval_hours=6)
 alert_mgr = AlertManager()
 
-# Simulate drift-triggered retraining
+## Simulate drift-triggered retraining
 for drift_score in [0.1, 0.2, 0.4, 0.5]:
     report = {"drift_score": drift_score, "drifted_features": ["price", "sqft"]}
     if retrainer.should_retrain(report, alert_mgr):
         print(f"Retrain triggered at drift score {drift_score}")
-```
+```text
 
 ---
 
@@ -626,7 +627,7 @@ class DriftDashboard:
         plt.savefig(save_path)
         print(f"Saved drift heatmap to {save_path}")
 
-# Generate dashboard
+## Generate dashboard
 dashboard = DriftDashboard()
 history = [
     {"timestamp": (datetime.utcnow() - timedelta(hours=i)).isoformat(), "features": {"price": {"ks_stat": min(0.5, i * 0.02 + 0.01)}}}
@@ -639,7 +640,7 @@ dashboard.plot_feature_distributions(
     "house_price",
     "price_dist_comparison.png"
 )
-```
+```text
 
 ---
 
@@ -694,7 +695,7 @@ class DriftMonitor {
     return { stat: maxDiff, p };
   }
 }
-```
+```text
 
 ---
 
@@ -908,6 +909,7 @@ d) Manual request only
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 16-mlops-production
@@ -917,6 +919,7 @@ d) Manual request only
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

@@ -19,6 +19,7 @@ CLI productivity tools — aliases, tmux, history expansion, tab completion — 
 
 - Linux basics
 - Shell fundamentals
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -40,7 +41,7 @@ flowchart LR
     D --> E[Tmux]
     E --> F[Shortcuts]
     F --> G[Shell Config]
-```
+```text
 
 ## Theory
 
@@ -51,34 +52,34 @@ Aliases are shortcuts that expand to longer commands. They eliminate typing repe
 **Creating aliases:**
 
 ```bash
-# Simple alias
+## Simple alias
 alias ll='ls -la'
 
-# Alias with complex pipeline
+## Alias with complex pipeline
 alias ports='netstat -tuln | grep LISTEN'
 
-# Alias with multiple commands
+## Alias with multiple commands
 alias update='sudo apt update && sudo apt upgrade -y'
 
-# View all defined aliases
+## View all defined aliases
 alias
 
-# Remove an alias
+## Remove an alias
 unalias ll
 
-# Check if an alias exists
+## Check if an alias exists
 type ll
-```
+```text
 
 **Essential aliases for developers:**
 
 ```bash
-# Navigation
+## Navigation
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
-# Git shortcuts
+## Git shortcuts
 alias g='git'
 alias gs='git status'
 alias ga='git add'
@@ -89,57 +90,57 @@ alias gd='git diff'
 alias gb='git branch'
 alias gco='git checkout'
 
-# Docker shortcuts
+## Docker shortcuts
 alias dk='docker'
 alias dkps='docker ps'
 alias dkc='docker compose'
 alias dkrm='docker rm $(docker ps -aq)'
 
-# Kubernetes
+## Kubernetes
 alias k='kubectl'
 alias kgp='kubectl get pods'
 alias kgs='kubectl get services'
 alias kgn='kubectl get nodes'
 
-# Python
+## Python
 alias py='python3'
 alias pip='pip3'
 alias venv='python3 -m venv'
 alias activate='source venv/bin/activate'
 
-# Safety aliases
+## Safety aliases
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
-# Quick edit config files
+## Quick edit config files
 alias bashrc='vim ~/.bashrc'
 alias zshrc='vim ~/.zshrc'
 alias reload='source ~/.bashrc'
-```
+```text
 
 **Persisting aliases:**
 
 ```bash
-# Add to ~/.bashrc (permanent)
+## Add to ~/.bashrc (permanent)
 echo "alias ll='ls -la'" >> ~/.bashrc
 
-# Or add to ~/.bash_aliases (cleaner separation)
+## Or add to ~/.bash_aliases (cleaner separation)
 echo "alias ll='ls -la'" >> ~/.bash_aliases
-# Then source it from .bashrc:
-# if [ -f ~/.bash_aliases ]; then . ~/.bash_aliases; fi
+## Then source it from .bashrc:
+## if [ -f ~/.bash_aliases ]; then . ~/.bash_aliases; fi
 
-# Apply changes without restarting
+## Apply changes without restarting
 source ~/.bashrc
-```
+```text
 
 **When to use functions instead of aliases:**
 
 ```bash
-# Alias can't take arguments easily
+## Alias can't take arguments easily
 alias greet='echo Hello'
 
-# Function version — more flexible
+## Function version — more flexible
 greet() {
     local name="${1:-World}"
     echo "Hello, $name!"
@@ -147,12 +148,12 @@ greet() {
 greet Alice    # Hello, Alice!
 greet          # Hello, World!
 
-# Useful function: mkcd (mkdir + cd)
+## Useful function: mkcd (mkdir + cd)
 mkcd() {
     mkdir -p "$1" && cd "$1"
 }
 
-# Useful function: extract any archive
+## Useful function: extract any archive
 extract() {
     case "$1" in
         *.tar.bz2) tar xjf "$1" ;;
@@ -166,8 +167,10 @@ extract() {
         *)         echo "Unknown format: $1" ;;
     esac
 }
-```
+```text
 
+
+## Overview
 ### 05.2 Shell History
 
 Bash history records every command you type. Leveraging it saves significant time.
@@ -175,46 +178,46 @@ Bash history records every command you type. Leveraging it saves significant tim
 **Basic history operations:**
 
 ```bash
-# View full history
+## View full history
 history
 
-# View last 20 commands
+## View last 20 commands
 history 20
 
-# Clear history
+## Clear history
 history -c
 
-# Search history interactively (Ctrl+R)
-# Press Ctrl+R, then type a search term
-```
+## Search history interactively (Ctrl+R)
+## Press Ctrl+R, then type a search term
+```text
 
 **Repeating previous commands:**
 
 ```bash
-# Run last command
+## Run last command
 !!
 
-# Run last command with sudo
+## Run last command with sudo
 sudo !!
 
-# Run last command starting with "docker"
+## Run last command starting with "docker"
 !docker
 
-# Run last argument of last command
+## Run last argument of last command
 !$
 
-# Run all arguments of last command
+## Run all arguments of last command
 !*
 
-# Expand to the Nth argument of previous command
+## Expand to the Nth argument of previous command
 echo !:2    # 2nd argument of last command
 echo !:3-5  # arguments 3 through 5
-```
+```text
 
 **History expansion examples:**
 
 ```bash
-# If last command was: git add src/auth.ts
+## If last command was: git add src/auth.ts
 
 !!                     # git add src/auth.ts
 !$                     # src/auth.ts
@@ -222,44 +225,46 @@ sudo !!                # sudo git add src/auth.ts
 !git:0                 # git
 !git:*                 # add src/auth.ts
 !git:1                 # add
-```
+```text
 
 **Searching history:**
 
 ```bash
-# Ctrl+R — reverse incremental search
-# Type to search, press Enter to run, press Ctrl+R again for next match
+## Ctrl+R — reverse incremental search
+## Type to search, press Enter to run, press Ctrl+R again for next match
 
-# Search history with grep
+## Search history with grep
 history | grep "docker"
 
-# Search with prefix
+## Search with prefix
 !grep   # Run last command starting with "grep"
 
-# Show history with timestamps
+## Show history with timestamps
 HISTTIMEFORMAT="%Y-%m-%d %H:%M: " history
-```
+```text
 
 **History configuration (~/.bashrc):**
 
 ```bash
-# Increase history size
+## Increase history size
 HISTSIZE=50000
 HISTFILESIZE=100000
 
-# Don't store duplicate consecutive entries
+## Don't store duplicate consecutive entries
 HISTCONTROL=ignoredups:erasedups
 
-# Append to history file instead of overwriting
+## Append to history file instead of overwriting
 shopt -s histappend
 
-# Save multi-line commands as one entry
+## Save multi-line commands as one entry
 shopt -s cmdhist
 
-# Save history after each command (real-time)
+## Save history after each command (real-time)
 PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
-```
+```text
 
+
+## Overview
 ### 05.3 Tab Completion
 
 Tab completion automatically completes commands, filenames, variables, and arguments. It's one of the biggest productivity gains in the terminal.
@@ -267,82 +272,84 @@ Tab completion automatically completes commands, filenames, variables, and argum
 **Basic completion:**
 
 ```bash
-# Press Tab once — completes if unique
-# Press Tab twice — shows all possibilities
+## Press Tab once — completes if unique
+## Press Tab twice — shows all possibilities
 
-# Complete a command name
+## Complete a command name
 dock<Tab>        # → docker
 git ch<Tab>      # → git checkout
 
-# Complete a filename
+## Complete a filename
 cat /etc/hos<Tab>    # → cat /etc/hosts
 cd Docu<Tab>         # → cd Documents/
-```
+```text
 
 **Completion features:**
 
 ```bash
-# Complete command options
+## Complete command options
 git checkout -<Tab><Tab>
-# Shows: -b -l -m -p -q ...
+## Shows: -b -l -m -p -q ...
 
-# Complete after pipes
+## Complete after pipes
 ls | grep <Tab>    # Shows files/dirs
 cat file | sort <Tab>  # Shows sort options
 
-# Complete environment variables
+## Complete environment variables
 echo $HO<Tab>      # → echo $HOME
 
-# Complete usernames
+## Complete usernames
 ssh user<Tab>      # Shows matching usernames
 
-# Complete hostnames from /etc/hosts
+## Complete hostnames from /etc/hosts
 ping local<Tab>    # → ping localhost
-```
+```text
 
 **Custom completions (bash):**
 
 ```bash
-# Create a completion function
+## Create a completion function
 _complete_myapp() {
     local cur="${COMP_WORDS[COMP_CWORD]}"
     COMPREPLY=( $(compgen -W "start stop restart status logs" -- "$cur") )
 }
 complete -F _complete_myapp myapp
 
-# Usage: myapp st<Tab> → start, stop, status
-```
+## Usage: myapp st<Tab> → start, stop, status
+```text
 
 **Enabling completions for common tools:**
 
 ```bash
-# Git completion (install on Ubuntu/Debian)
+## Git completion (install on Ubuntu/Debian)
 sudo apt install git-complete
 
-# Docker completion
+## Docker completion
 curl -L https://raw.githubusercontent.com/docker/compose/master/contrib/completion/bash/docker-compose > /etc/bash_completion.d/docker-compose
 
-# Kubernetes completion
+## Kubernetes completion
 source <(kubectl completion bash)
 
-# Poetry completion
+## Poetry completion
 poetry completions bash >> ~/.bash_completion.d/poetry.bash
-```
+```text
 
 **Zsh completions (more powerful):**
 
 ```bash
-# Zsh has built-in completion system
-# Enable in ~/.zshrc:
+## Zsh has built-in completion system
+## Enable in ~/.zshrc:
 autoload -Uz compinit && compinit
 
-# Case-insensitive completion
+## Case-insensitive completion
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
-# Show menu for ambiguous completions
+## Show menu for ambiguous completions
 zstyle ':completion:*' menu select
-```
+```text
 
+
+## Overview
 ### 05.4 Tmux
 
 Tmux is a terminal multiplexer. It lets you run multiple terminal sessions in a single window, detach and reattach sessions, and split your terminal into panes.
@@ -357,105 +364,107 @@ Tmux is a terminal multiplexer. It lets you run multiple terminal sessions in a 
 **Basic tmux operations:**
 
 ```bash
-# Start a new session named "dev"
+## Start a new session named "dev"
 tmux new -s dev
 
-# List running sessions
+## List running sessions
 tmux ls
 
-# Attach to a session
+## Attach to a session
 tmux attach -t dev
 
-# Kill a session
+## Kill a session
 tmux kill-session -t dev
 
-# Detach from current session
-# Press: Ctrl+b, then d
-```
+## Detach from current session
+## Press: Ctrl+b, then d
+```text
 
 **Tmux panes:**
 
 ```bash
-# Split horizontally
-# Press: Ctrl+b, then "
+## Split horizontally
+## Press: Ctrl+b, then "
 
-# Split vertically
-# Press: Ctrl+b, then %
+## Split vertically
+## Press: Ctrl+b, then %
 
-# Navigate between panes
-# Press: Ctrl+b, then arrow keys
+## Navigate between panes
+## Press: Ctrl+b, then arrow keys
 
-# Resize pane
-# Press: Ctrl+b, then Ctrl+arrow keys
+## Resize pane
+## Press: Ctrl+b, then Ctrl+arrow keys
 
-# Close current pane
-# Press: Ctrl+b, then x
-```
+## Close current pane
+## Press: Ctrl+b, then x
+```text
 
 **Tmux windows (tabs):**
 
 ```bash
-# Create new window
-# Press: Ctrl+b, then c
+## Create new window
+## Press: Ctrl+b, then c
 
-# Switch windows
-# Press: Ctrl+b, then 0-9
+## Switch windows
+## Press: Ctrl+b, then 0-9
 
-# Rename current window
-# Press: Ctrl+b, then ,
+## Rename current window
+## Press: Ctrl+b, then ,
 
-# Close window
-# Press: Ctrl+b, then &
-```
+## Close window
+## Press: Ctrl+b, then &
+```text
 
 **Useful tmux config (~/.tmux.conf):**
 
 ```bash
-# Enable mouse support
+## Enable mouse support
 set -g mouse on
 
-# Start windows/panes at 1, not 0
+## Start windows/panes at 1, not 0
 set -g base-index 1
 setw -g pane-base-index 1
 
-# Increase scrollback buffer
+## Increase scrollback buffer
 set -g history-limit 50000
 
-# Faster command sequence (change prefix to Ctrl+a)
+## Faster command sequence (change prefix to Ctrl+a)
 unbind C-b
 set -g prefix C-a
 bind C-a send-prefix
 
-# Split panes with | and -
+## Split panes with | and -
 bind | split-window -h
 bind - split-window -v
 
-# Reload config
+## Reload config
 bind r source-file ~/.tmux.conf
-```
+```text
 
 **Tmux workflow for development:**
 
 ```bash
-# Start a dev session with multiple windows
+## Start a dev session with multiple windows
 tmux new -s dev
 
-# Window 1: Editor
+## Window 1: Editor
 vim src/app.ts
 
-# Window 2: Server (Ctrl+b, c)
+## Window 2: Server (Ctrl+b, c)
 npm run dev
 
-# Window 3: Tests (Ctrl+b, c)
+## Window 3: Tests (Ctrl+b, c)
 npm run test:watch
 
-# Window 4: Git (Ctrl+b, c)
+## Window 4: Git (Ctrl+b, c)
 git status
 
-# Detach and reattach later
-# Ctrl+b, d → tmux attach -t dev
-```
+## Detach and reattach later
+## Ctrl+b, d → tmux attach -t dev
+```text
 
+
+## Overview
 ### 05.5 Keyboard Shortcuts
 
 Bash uses the GNU Readline library for line editing. These shortcuts work in bash, zsh, and most CLI tools.
@@ -519,24 +528,26 @@ Bash uses the GNU Readline library for line editing. These shortcuts work in bas
 **Practical examples:**
 
 ```bash
-# Fast file editing workflow
+## Fast file editing workflow
 vim /long/path/to/file.txt
-# Oops, wrong file — Ctrl+U to clear, then type correct path
+## Oops, wrong file — Ctrl+U to clear, then type correct path
 
-# Edit a long command
+## Edit a long command
 git commit -m "Fix bug in authentication module that causes login failures on mobile"
-# Ctrl+A to go to start, Ctrl+F to move to "Fix", change to "fix"
+## Ctrl+A to go to start, Ctrl+F to move to "Fix", change to "fix"
 
-# Quick directory navigation
+## Quick directory navigation
 cd /var/log/apache2/
-# Ctrl+U clears the line, type new path
+## Ctrl+U clears the line, type new path
 cd /etc/nginx/
 
-# Reuse last argument
+## Reuse last argument
 mkdir new-project
 cd !$    # cd /var/log/apache2/
-```
+```text
 
+
+## Overview
 ### 05.6 Shell Configuration
 
 Your shell configuration files define the environment: aliases, functions, prompt, paths, and settings.
@@ -555,63 +566,63 @@ Your shell configuration files define the environment: aliases, functions, promp
 **Essential .bashrc structure:**
 
 ```bash
-# ── History ──────────────────────────────
+## ── History ──────────────────────────────
 HISTSIZE=50000
 HISTFILESIZE=100000
 HISTCONTROL=ignoredups:erasedups
 shopt -s histappend
 
-# ── Navigation ───────────────────────────
+## ── Navigation ───────────────────────────
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ll='ls -la'
 alias la='ls -A'
 
-# ── Git ──────────────────────────────────
+## ── Git ──────────────────────────────────
 alias g='git'
 alias gs='git status'
 alias gl='git log --oneline --graph'
 
-# ── Development ──────────────────────────
+## ── Development ──────────────────────────
 alias py='python3'
 alias dc='docker compose'
 alias k='kubectl'
 
-# ── Functions ────────────────────────────
+## ── Functions ────────────────────────────
 mkcd() { mkdir -p "$1" && cd "$1"; }
 
-# ── Prompt ───────────────────────────────
+## ── Prompt ───────────────────────────────
 PS1='\[\e[32m\]\u@\h:\w\$\[\e[0m\] '
 
-# ── Completions ──────────────────────────
+## ── Completions ──────────────────────────
 source /etc/bash_completion
 source <(kubectl completion bash)
 
-# ── Custom PATH ──────────────────────────
+## ── Custom PATH ──────────────────────────
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
-```
+```text
 
 **Environment variables:**
 
 ```bash
-# Set environment variable (persists in session)
+## Set environment variable (persists in session)
 export EDITOR=vim
 
-# Set permanently in .bashrc
+## Set permanently in .bashrc
 echo 'export EDITOR=vim' >> ~/.bashrc
 
-# Common useful variables
+## Common useful variables
 export EDITOR=vim
 export VISUAL=code
 export LANG=en_US.UTF-8
 export GOPATH=$HOME/go
 export NVM_DIR="$HOME/.nvm"
 
-# PATH management
+## PATH management
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="/usr/local/go/bin:$PATH"
-```
+```text
 
 **Zsh vs Bash:**
 
@@ -789,6 +800,7 @@ d) ~/.profile
 3. Not learning keyboard shortcuts
 4. Forgetting to save .bashrc/.zshrc changes
 5. Not using history search (Ctrl+R)
+
 ## Revision Notes
 
 - alias ll="ls -la": save keystrokes
@@ -796,6 +808,7 @@ d) ~/.profile
 - Ctrl+R: reverse history search
 - !!: repeat last command
 - $?: check last command exit code
+
 ## Placement Section
 
 ### Top 10 Interview Questions

@@ -13,12 +13,13 @@
 
 ## Introduction
 
-01-python-programming is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding numpy fundamentals is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering numpy fundamentals.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -41,35 +42,35 @@ flowchart LR
     D --> F[Universal Functions]
     G[Linear Algebra] --> H[dot, inv, eig, SVD]
     I[Random] --> J[distributions, seeding]
-```
+```text
 
 ## 11.1 Array Creation
 
 `python
 import numpy as np
 
-# From list
+## From list
 arr = np.array([1, 2, 3, 4, 5])
 print(arr)           # [1 2 3 4 5]
 print(arr.shape)     # (5,)
 print(arr.dtype)     # int64
 
-# 2D array
+## 2D array
 matrix = np.array([[1, 2, 3], [4, 5, 6]])
 print(matrix.shape)  # (2, 3)
 
-# Special arrays
+## Special arrays
 zeros = np.zeros((3, 4))
 ones = np.ones((2, 3))
 full = np.full((2, 2), 7)
 eye = np.eye(4)                # identity matrix
 empty = np.empty((3, 3))       # uninitialized values
 
-# Ranges
+## Ranges
 arange = np.arange(0, 10, 2)   # [0, 2, 4, 6, 8]
 linspace = np.linspace(0, 1, 5)  # [0.0, 0.25, 0.5, 0.75, 1.0]
 
-# Data types
+## Data types
 arr_int = np.array([1, 2, 3], dtype=np.int32)
 arr_float = np.array([1, 2, 3], dtype=np.float64)
 arr_bool = np.array([True, False, True])
@@ -85,33 +86,33 @@ print(arr[::-1])     # [9 8 7 6 5 4 3 2 1 0]
 
 matrix = np.arange(12).reshape(3, 4)
 print(matrix)
-# [[ 0  1  2  3]
-#  [ 4  5  6  7]
-#  [ 8  9 10 11]]
+## [[ 0  1  2  3]
+##  [ 4  5  6  7]
+##  [ 8  9 10 11]]
 
 print(matrix[1, 2])     # 6 (row 1, col 2)
 print(matrix[0:2, 1:3])
-# [[1 2]
-#  [5 6]]
+## [[1 2]
+##  [5 6]]
 
-# Fancy indexing
+## Fancy indexing
 indices = [0, 2, 4]
 print(arr[indices])  # [0 2 4]
 
-# Boolean masking
+## Boolean masking
 mask = arr > 5
 print(mask)             # [False False ... True True]
 print(arr[mask])        # [6 7 8 9]
 print(arr[arr % 2 == 0])  # even numbers
 
-# Where
+## Where
 print(np.where(arr > 5, arr, -1))  # threshold
 `
 
 ## 11.3 Universal Functions & Vectorization
 
 `python
-# ufuncs operate element-wise (fast C loops)
+## ufuncs operate element-wise (fast C loops)
 arr = np.array([1, 2, 3, 4, 5])
 
 print(np.sqrt(arr))     # [1.0 1.41 1.73 2.0 2.24]
@@ -120,14 +121,14 @@ print(np.log(arr))      # [0.0 0.69 1.10 1.39 1.61]
 print(np.sin(arr))      # trigonometric
 print(np.abs([-1, 0, 1]))  # [1 0 1]
 
-# Vectorization � no explicit loops
+## Vectorization � no explicit loops
 arr1 = np.array([1, 2, 3])
 arr2 = np.array([10, 20, 30])
 print(arr1 + arr2)   # [11 22 33]
 print(arr1 * arr2)   # [10 40 90]
 print(arr1 ** 2)     # [1 4 9]
 
-# Aggregation
+## Aggregation
 print(arr.sum())     # 15
 print(arr.mean())    # 3.0
 print(arr.std())     # 1.414
@@ -136,7 +137,7 @@ print(arr.max())     # 5
 print(arr.argmax())  # 4 (index of max)
 print(arr.cumsum())  # [1 3 6 10 15]
 
-# Axis-specific aggregation
+## Axis-specific aggregation
 m = np.array([[1, 2], [3, 4]])
 print(m.sum(axis=0))  # [4 6] (sum columns)
 print(m.sum(axis=1))  # [3 7] (sum rows)
@@ -147,25 +148,25 @@ print(m.sum(axis=1))  # [3 7] (sum rows)
 Broadcasting allows arithmetic between arrays of different shapes.
 
 `python
-# Scalar + array
+## Scalar + array
 arr = np.array([1, 2, 3])
 print(arr + 10)        # [11 12 13]
 
-# Different dimensions
+## Different dimensions
 matrix = np.arange(12).reshape(3, 4)
 row = np.array([10, 20, 30, 40])
 print(matrix + row)    # broadcast row across all rows
 
-# Broadcasting rules:
-# 1. If dimensions differ, prepend 1s to smaller shape
-# 2. Arrays with size 1 in a dimension are stretched to match
-# 3. Sizes must match or be 1, else error
+## Broadcasting rules:
+## 1. If dimensions differ, prepend 1s to smaller shape
+## 2. Arrays with size 1 in a dimension are stretched to match
+## 3. Sizes must match or be 1, else error
 
 a = np.ones((3, 1))   # shape (3, 1)
 b = np.ones((1, 4))   # shape (1, 4)
 c = a + b             # shape (3, 4) � both broadcast
 
-# Normalization example
+## Normalization example
 data = np.random.randn(100, 5)
 mean = data.mean(axis=0)     # shape (5,)
 std = data.std(axis=0)       # shape (5,)
@@ -175,37 +176,37 @@ normalized = (data - mean) / std  # broadcasts
 ## 11.5 Linear Algebra
 
 `python
-# Dot product
+## Dot product
 a = np.array([1, 2, 3])
 b = np.array([4, 5, 6])
 print(np.dot(a, b))       # 32  (1*4 + 2*5 + 3*6)
 print(a @ b)              # 32 (same, @ operator)
 
-# Matrix multiplication
+## Matrix multiplication
 A = np.array([[1, 2], [3, 4]])
 B = np.array([[5, 6], [7, 8]])
 print(A @ B)
-# [[19 22]
-#  [43 50]]
+## [[19 22]
+##  [43 50]]
 
-# Matrix inverse
+## Matrix inverse
 A = np.array([[1, 2], [3, 4]])
 A_inv = np.linalg.inv(A)
 print(A @ A_inv)  # ~identity
 
-# Solve linear equations: Ax = b
+## Solve linear equations: Ax = b
 A = np.array([[3, 1], [1, 2]])
 b = np.array([9, 8])
 x = np.linalg.solve(A, b)
 print(x)  # [2. 3.]  (3*2 + 1*3 = 9, 2 + 2*3 = 8)
 
-# Eigenvalues and eigenvectors
+## Eigenvalues and eigenvectors
 eigvals, eigvecs = np.linalg.eig(A)
 
-# SVD decomposition
+## SVD decomposition
 U, S, Vt = np.linalg.svd(np.random.randn(5, 3))
 
-# Norms
+## Norms
 print(np.linalg.norm([3, 4]))  # 5.0
 print(np.linalg.norm([3, 4], ord=1))  # 7.0
 `
@@ -213,30 +214,30 @@ print(np.linalg.norm([3, 4], ord=1))  # 7.0
 ## 11.6 Random & Statistics
 
 `python
-# Random seed for reproducibility
+## Random seed for reproducibility
 np.random.seed(42)
 
-# Distributions
+## Distributions
 uniform = np.random.rand(3, 4)           # uniform [0, 1)
 normal = np.random.randn(1000)           # standard normal
 integers = np.random.randint(0, 100, 10)  # random ints
 beta = np.random.beta(2, 5, 100)         # Beta distribution
 
-# Shuffle and choice
+## Shuffle and choice
 arr = np.arange(10)
 np.random.shuffle(arr)
 print(arr)
 
 sample = np.random.choice(arr, size=3, replace=False)
 
-# Statistics
+## Statistics
 data = np.random.randn(10000)
 print(f"Mean: {data.mean():.3f}, Std: {data.std():.3f}")
 print(f"Median: {np.median(data):.3f}")
 print(f"Percentile 95: {np.percentile(data, 95):.3f}")
 print(f"Min: {data.min():.3f}, Max: {data.max():.3f}")
 
-# Correlation matrix
+## Correlation matrix
 X = np.random.randn(100, 5)
 corr = np.corrcoef(X.T)
 print(corr.shape)  # (5, 5)
@@ -362,37 +363,37 @@ console.log(A.dot(B));
 `python
 import numpy as np
 
-# Reshape
+## Reshape
 arr = np.arange(12)
 reshaped = arr.reshape(3, 4)
 print(reshaped.shape)  # (3, 4)
 
-# -1 for automatic dimension
+## -1 for automatic dimension
 auto = arr.reshape(2, -1)  # (2, 6)
 print(auto.shape)
 
-# Flatten and ravel
+## Flatten and ravel
 flat = reshaped.flatten()  # returns copy
 ravel = reshaped.ravel()    # returns view (if possible)
 
-# Transpose
+## Transpose
 matrix = np.array([[1, 2], [3, 4]])
 print(matrix.T)  # [[1, 3], [2, 4]]
 
-# Stacking
+## Stacking
 a = np.array([1, 2, 3])
 b = np.array([4, 5, 6])
 print(np.vstack((a, b)))  # [[1,2,3],[4,5,6]]
 print(np.hstack((a, b)))  # [1,2,3,4,5,6]
 print(np.column_stack((a, b)))  # [[1,4],[2,5],[3,6]]
 
-# Splitting
+## Splitting
 arr = np.arange(12).reshape(3, 4)
 print(np.split(arr, 3))          # split into 3 row groups
 print(np.hsplit(arr, 2))         # split into 2 column groups
 print(np.vsplit(arr, 3))         # split into 3 row groups
 
-# Adding/removing dimensions
+## Adding/removing dimensions
 vector = np.array([1, 2, 3])
 col_vector = vector[:, np.newaxis]  # (3, 1)
 row_vector = vector[np.newaxis, :]  # (1, 3)
@@ -402,36 +403,36 @@ squeezed = np.squeeze(col_vector)   # back to (3,)
 ## 11.8 File I/O with NumPy
 
 `python
-# Binary format (.npy)
+## Binary format (.npy)
 arr = np.random.randn(100, 50)
 np.save("array.npy", arr)
 loaded = np.load("array.npy")
 print(np.allclose(arr, loaded))  # True
 
-# Multiple arrays (.npz)
+## Multiple arrays (.npz)
 a = np.array([1, 2, 3])
 b = np.array([4, 5, 6])
 np.savez("arrays.npz", a=a, b=b)
 data = np.load("arrays.npz")
 print(data["a"])  # [1 2 3]
 
-# Compressed
+## Compressed
 np.savez_compressed("arrays_compressed.npz", a=a, b=b)
 
-# Text format
+## Text format
 arr = np.array([[1.5, 2.5], [3.5, 4.5]])
 np.savetxt("data.csv", arr, delimiter=",", header="x,y", comments="")
 loaded_csv = np.loadtxt("data.csv", delimiter=",")
 print(loaded_csv)
 
-# Genfromtxt for missing data
+## Genfromtxt for missing data
 data = np.genfromtxt("messy.csv", delimiter=",", dtype=float, filling_values=0.0)
 `
 
 ## 11.9 Structured Arrays
 
 `python
-# Structured arrays with mixed types
+## Structured arrays with mixed types
 dtype = [("name", "U10"), ("age", "i4"), ("salary", "f8")]
 data = np.array([
     ("Alice", 30, 75000.0),
@@ -439,64 +440,64 @@ data = np.array([
     ("Charlie", 35, 82000.0)
 ], dtype=dtype)
 
-# Access fields
+## Access fields
 print(data["name"])    # ['Alice' 'Bob' 'Charlie']
 print(data["age"])     # [30 25 35]
 print(data[0])         # ('Alice', 30, 75000.)
 
-# Field filtering
+## Field filtering
 high_earners = data[data["salary"] > 70000]
 print(high_earners["name"])  # ['Alice' 'Charlie']
 
-# Record arrays (attribute access)
+## Record arrays (attribute access)
 data_rec = data.view(np.recarray)
 print(data_rec.name)    # ['Alice' 'Bob' 'Charlie']
 print(data_rec.age)     # [30 25 35]
 
-# Multi-field indexing
+## Multi-field indexing
 print(data[["name", "salary"]])
 `
 
 ## 11.10 Advanced Linear Algebra
 
 `python
-# Matrix decompositions
+## Matrix decompositions
 A = np.random.randn(5, 5)
 
-# LU decomposition
+## LU decomposition
 import scipy.linalg
 P, L, U = scipy.linalg.lu(A) if False else (None, None, None)
-# In pure numpy, use np.linalg
+## In pure numpy, use np.linalg
 
-# QR decomposition
+## QR decomposition
 Q, R = np.linalg.qr(A)
 print(f"Q @ Q.T = I? {np.allclose(Q @ Q.T, np.eye(5))}")
 
-# Cholesky decomposition (positive definite required)
+## Cholesky decomposition (positive definite required)
 A_pos = A.T @ A + np.eye(5) * 0.1
 L = np.linalg.cholesky(A_pos)
 print(f"L @ L.T = A? {np.allclose(L @ L.T, A_pos)}")
 
-# Determinant and trace
+## Determinant and trace
 print(f"det(A) = {np.linalg.det(A):.4f}")
 print(f"trace(A) = {np.trace(A):.4f}")
 
-# Matrix rank
+## Matrix rank
 print(f"rank(A) = {np.linalg.matrix_rank(A)}")
 
-# Condition number
+## Condition number
 print(f"cond(A) = {np.linalg.cond(A):.4f}")
 
-# Outer product
+## Outer product
 x = np.array([1, 2, 3])
 y = np.array([4, 5, 6])
 outer = np.outer(x, y)
 print(outer)
-# [[ 4  5  6]
-#  [ 8 10 12]
-#  [12 15 18]]
+## [[ 4  5  6]
+##  [ 8 10 12]
+##  [12 15 18]]
 
-# Einsum for complex operations
+## Einsum for complex operations
 a = np.random.randn(3, 4)
 b = np.random.randn(4, 5)
 result = np.einsum("ij,jk->ik", a, b)  # equivalent to a @ b
@@ -506,7 +507,7 @@ print(np.allclose(result, a @ b))  # True
 ## 11.11 Common Pitfalls
 
 `python
-# Pitfall 1: View vs Copy confusion
+## Pitfall 1: View vs Copy confusion
 arr = np.array([1, 2, 3, 4, 5])
 slice_view = arr[0:3]    # view - modifications reflect in original
 slice_copy = arr[[0, 1, 2]]  # fancy indexing - copy
@@ -515,23 +516,23 @@ print(arr[0])  # 99 (view modified original)
 slice_copy[0] = 100
 print(arr[0])  # 99 (copy did NOT modify original)
 
-# Pitfall 2: In-place vs out-of-place operations
+## Pitfall 2: In-place vs out-of-place operations
 arr = np.array([1, 2, 3])
 arr2 = arr.sort()   # sort() is in-place, returns None
 print(arr2)  # None!
-# Use np.sort(arr) for out-of-place
+## Use np.sort(arr) for out-of-place
 
-# Pitfall 3: Broadcasting errors
+## Pitfall 3: Broadcasting errors
 a = np.ones((3, 2))
 b = np.ones((2, 3))
-# a + b  # ValueError: shapes (3,2) and (2,3) not aligned
+## a + b  # ValueError: shapes (3,2) and (2,3) not aligned
 
-# Pitfall 4: Integer overflow
+## Pitfall 4: Integer overflow
 arr = np.array([100], dtype=np.int8)
-# arr[0] += 100  # overflow! int8 max is 127
-# Use dtype=np.int64 or np.float64
+## arr[0] += 100  # overflow! int8 max is 127
+## Use dtype=np.int64 or np.float64
 
-# Pitfall 5: Comparing floats
+## Pitfall 5: Comparing floats
 a = np.array([0.1 + 0.2])
 print(a == 0.3)  # [False] due to floating point
 print(np.allclose(a, 0.3))  # True - use allclose
@@ -542,7 +543,7 @@ print(np.allclose(a, 0.3))  # True - use allclose
 `python
 import timeit
 
-# 1. Pre-allocate arrays instead of appending
+## 1. Pre-allocate arrays instead of appending
 def bad_approach():
     result = np.array([])
     for i in range(1000):
@@ -555,12 +556,12 @@ def good_approach():
         result[i] = i
     return result
 
-# 2. Use in-place operations
+## 2. Use in-place operations
 arr = np.random.randn(1000)
 arr += 1  # in-place, no copy
-# vs arr = arr + 1  # creates new array
+## vs arr = arr + 1  # creates new array
 
-# 3. Use vectorized operations over loops
+## 3. Use vectorized operations over loops
 def loop_sum(x, y):
     result = np.zeros_like(x)
     for i in range(len(x)):
@@ -570,14 +571,14 @@ def loop_sum(x, y):
 def vectorized_sum(x, y):
     return x + y  # 10-100x faster
 
-# 4. Specify dtype for memory efficiency
+## 4. Specify dtype for memory efficiency
 arr_int8 = np.zeros(1000000, dtype=np.int8)   # 1 MB
 arr_int64 = np.zeros(1000000, dtype=np.int64)  # 8 MB
 
-# 5. Use NumPy's own functions over Python's
+## 5. Use NumPy's own functions over Python's
 arr = np.random.randn(1000)
-# Slow: sum(arr)  # Python's built-in
-# Fast: arr.sum()  # NumPy's method
+## Slow: sum(arr)  # Python's built-in
+## Fast: arr.sum()  # NumPy's method
 `
 
 ---
@@ -590,6 +591,7 @@ arr = np.random.randn(1000)
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 01-python-programming
@@ -599,6 +601,7 @@ arr = np.random.randn(1000)
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

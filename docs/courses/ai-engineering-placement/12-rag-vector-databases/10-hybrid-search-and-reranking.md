@@ -12,12 +12,13 @@
 
 ## Introduction
 
-12-rag-vector-databases is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding hybrid search and reranking is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering hybrid search and reranking.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -41,7 +42,7 @@ flowchart LR
     E --> F[Top-K Candidates]
     F --> G[Reranker]
     G --> H[Final Ranking]
-```
+```text
 
 ## 10.1 Hybrid Search
 
@@ -132,7 +133,7 @@ hybrid = HybridSearch(MockSparseRetriever(), MockDenseRetriever(), "rrf")
 results = hybrid.search("What is RAG?", top_k=5)
 for r in results:
     print(f"  {r['id']}: score={r['score']:.4f}")
-```
+```text
 
 ## 10.2 Score Normalization
 
@@ -155,7 +156,7 @@ dense_scores = {"doc1": 0.92, "doc4": 0.87, "doc5": 0.85}
 
 print(f"Normalized sparse: {minmax_normalize(sparse_scores)}")
 print(f"Normalized dense: {minmax_normalize(dense_scores)}")
-```
+```text
 
 ### 10.2.2 Z-Score Normalization
 
@@ -173,7 +174,7 @@ def zscore_normalize(scores: Dict[str, float]) -> Dict[str, float]:
 
 scores = {"doc1": 0.9, "doc2": 0.7, "doc3": 0.5, "doc4": 0.3, "doc5": 0.1}
 print(f"Z-score normalized: {zscore_normalize(scores)}")
-```
+```text
 
 ### 10.2.3 Quantile Normalization
 
@@ -187,7 +188,7 @@ def quantile_normalize(scores: Dict[str, float]) -> Dict[str, float]:
 
 
 print(f"Quantile normalized: {quantile_normalize(scores)}")
-```
+```text
 
 ### 10.2.4 Normalizer Pipeline
 
@@ -221,7 +222,7 @@ class ScoreNormalizer:
 
 normalizer = ScoreNormalizer("softmax")
 print(normalizer.normalize(scores))
-```
+```text
 
 ## 10.3 Fusion Strategies
 
@@ -257,7 +258,7 @@ dense_ranking = [{"id": "b"}, {"id": "d"}, {"id": "a"}]
 results = rrf.fuse([sparse_ranking, dense_ranking])
 for r in results:
     print(f"RRF: {r['id']} -> {r['score']:.4f}")
-```
+```text
 
 ### 10.3.2 Borda Count
 
@@ -279,7 +280,7 @@ borda = BordaCountFusion()
 results = borda.fuse([sparse_ranking, dense_ranking])
 for r in results:
     print(f"Borda: {r['id']} -> {r['score']:.4f}")
-```
+```text
 
 ### 10.3.3 Reciprocal Rank with Decay
 
@@ -303,7 +304,7 @@ class DecayedRRFusion:
 drrf = DecayedRRFusion(decay_factor=0.9)
 results = drrf.fuse([sparse_ranking, dense_ranking, [{"id": "c"}, {"id": "e"}]])
 print(f"Decayed RRF: {[r['id'] for r in results]}")
-```
+```text
 
 ### 10.3.4 Ensemble Ranking
 
@@ -340,7 +341,7 @@ ensemble = EnsembleRanker()
 results = ensemble.fuse_all([sparse_ranking, dense_ranking], weights=[0.3, 0.7])
 for method, ranking in results.items():
     print(f"{method}: {[r['id'] for r in ranking[:3]]}")
-```
+```text
 
 ## 10.4 Cross-Encoder Reranking
 
@@ -365,7 +366,7 @@ class CrossEncoder:
         combined = f"{query} [SEP] {document}"
         emb = mock_embedder(combined)
         return float(emb[0])
-```
+```text
 
 ### 10.4.2 Two-Stage Reranker
 
@@ -405,7 +406,7 @@ docs = [{"id": "1", "text": "RAG combines retrieval with generation"}, {"id": "2
 results = reranker.rerank("retrieval methods", docs)
 for r in results:
     print(f"Doc {r['id']}: score={r.get('score', 0):.4f}")
-```
+```text
 
 ### 10.4.3 ColBERT-Style Late Interaction
 
@@ -441,7 +442,7 @@ colbert = ColBERTReranker()
 results = colbert.rerank("retrieval methods", docs)
 for r in results:
     print(f"ColBERT Doc {r['id']}: score={r['score']:.4f}")
-```
+```text
 
 ## 10.5 LLM-Based Reranking
 
@@ -482,7 +483,7 @@ pointwise = PointwiseLLMReranker(mock_llm)
 results = pointwise.rerank("retrieval methods", docs)
 for r in results:
     print(f"Pointwise Doc {r['id']}: score={r['score']}")
-```
+```text
 
 ### 10.5.2 Pairwise Comparison
 
@@ -527,7 +528,7 @@ pairwise = PairwiseLLMReranker(mock_pairwise_llm)
 results = pairwise.rerank("retrieval methods", docs)
 for r in results:
     print(f"Pairwise Doc {r['id']}: score={r.get('score', 0)}")
-```
+```text
 
 ### 10.5.3 Listwise Reranking
 
@@ -580,7 +581,7 @@ listwise = ListwiseLLMReranker(mock_listwise_llm, max_docs=10)
 results = listwise.rerank("retrieval methods", docs)
 for r in results:
     print(f"Listwise Doc: score={r.get('score', 0)}")
-```
+```text
 
 ### 10.5.4 Reranking Cascade
 
@@ -604,7 +605,7 @@ cascade = CascadeReranker([
     ("cross_encoder", lambda q, docs: [{**d, "score": cross_enc.score(q, d["text"])} for d in sorted(docs, key=lambda d: cross_enc.score(q, d["text"]), reverse=True)], 5),
 ])
 print("Cascade reranker configured with 2 stages")
-```
+```text
 
 ## 10.6 Production Optimization
 
@@ -653,7 +654,7 @@ class CachedReranker:
 
 
 print("Cached reranker ready")
-```
+```text
 
 ### 10.6.2 Candidate Pruning
 
@@ -681,7 +682,7 @@ pruner = CandidatePruner(max_candidates=50, min_score=0.2)
 docs = [{"id": str(i), "score": i * 0.1} for i in range(10)]
 pruned = pruner.prune(docs)
 print(f"Pruned {len(docs)} -> {len(pruned)} candidates")
-```
+```text
 
 ### 10.6.3 Latency Budget Optimization
 
@@ -707,7 +708,7 @@ class LatencyBudgetAllocator:
 budget = LatencyBudgetAllocator(1000)
 allocation = budget.allocate(50)
 print(f"Per-doc cross-encoder budget: {allocation['per_document_stage2']:.1f}ms")
-```
+```text
 
 ## 10.7 Evaluation
 
@@ -764,7 +765,7 @@ eval_obj = HybridRerankingEvaluation(
     },
 )
 print("Hybrid + reranking evaluation ready")
-```
+```text
 
 ## Summary
 
@@ -898,6 +899,7 @@ Answer: B
 4. Create a ColBERT-style late interaction reranker and compare its accuracy vs a full cross-encoder on the same candidate set. Report speedup and accuracy difference.
 
 5. Design a cascade reranker with 3 stages: bi-encoder (100 -> 20), cross-encoder (20 -> 5), LLM pairwise (5 -> final ranking). Evaluate MRR@10 and total latency on 10 test
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 12-rag-vector-databases
@@ -907,6 +909,7 @@ Answer: B
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

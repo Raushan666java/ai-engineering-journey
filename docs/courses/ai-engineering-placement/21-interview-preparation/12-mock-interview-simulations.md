@@ -13,12 +13,13 @@
 
 ## Introduction
 
-21-interview-preparation is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding mock interview simulations is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering mock interview simulations.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -42,7 +43,7 @@ flowchart LR
     C --> F
     D --> F
     E --> F
-```
+```text
 
 ## 12.1 Mock Interview Frameworks
 
@@ -68,7 +69,7 @@ Mock interviews are the single highest-ROI activity for interview preparation. T
 - After the mock, spend 10 minutes on feedback and 5 minutes on self-reflection
 
 ```python
-# Mock interview session tracker
+## Mock interview session tracker
 from datetime import datetime
 
 class MockInterviewSession:
@@ -104,7 +105,7 @@ class MockInterviewSession:
     def set_feedback(self, strengths: list[str], weaknesses: list[str]):
         self.feedback = {"strengths": strengths, "weaknesses": weaknesses}
 
-# Usage
+## Usage
 session = MockInterviewSession("DSA Coding", 45)
 session.start()
 session.add_question("Two Sum", "easy", True, 8)
@@ -115,7 +116,7 @@ session.set_feedback(
     strengths=["Clear communication", "Good edge case handling"],
     weaknesses=["Time management on hard problems", "Need faster DP recall"]
 )
-```
+```text
 
 **Scoring rubrics**: Rate yourself 1-5 on communication (explaining approach, tradeoffs), correctness (solved within time, handles edge cases), code quality (clean, idiomatic, well-structured), and testing (mentions test cases, walks through examples).
 
@@ -136,7 +137,7 @@ The 45-minute DSA round is the most common interview format. A structured approa
 **Problem-solving framework**: Understand → Brute force → Optimize → Code → Test → Follow-up.
 
 ```python
-# Live coding simulator with time tracking
+## Live coding simulator with time tracking
 import time
 from typing import List, Optional
 
@@ -164,7 +165,7 @@ class DSAInterviewRound:
             if phase != "end":
                 print(f"  {phase}: {duration}s")
 
-# Example: Solve "Find the median of two sorted arrays"
+## Example: Solve "Find the median of two sorted arrays"
 def find_median_sorted_arrays(nums1: List[int], nums2: List[int]) -> float:
     """
     LeetCode Hard: Median of Two Sorted Arrays
@@ -199,12 +200,12 @@ def find_median_sorted_arrays(nums1: List[int], nums2: List[int]) -> float:
 
     return 0.0
 
-# Example walkthrough
+## Example walkthrough
 nums1 = [1, 3, 8, 9, 15]
 nums2 = [7, 11, 18, 19, 21, 25]
 print(f"Median: {find_median_sorted_arrays(nums1, nums2)}")
-# Expected: (11 + 15) / 2 = 13.0
-```
+## Expected: (11 + 15) / 2 = 13.0
+```text
 
 **Common DSA problem categories**: Arrays (two pointers, sliding window), Strings (anagrams, palindromes, pattern matching), Hash tables (frequency counts, caching), Linked lists (reversal, cycle detection), Trees (traversals, LCA, BST), Graphs (BFS, DFS, topological sort), Dynamic programming (knapsack, LCS, edit distance), Stacks/Queues (monotonic stack, sliding window max), Heaps (top K, median from stream), Binary search (rotated array, search space), Recursion/backtracking (permutations, subsets, N-queens).
 
@@ -225,7 +226,7 @@ The 60-minute system design round tests your ability to architect scalable syste
 - **55-60 min**: Summary. Recap the key decisions and tradeoffs.
 
 ```python
-# System design estimation tool
+## System design estimation tool
 class SystemDesignEstimator:
     def __init__(self, daily_active_users: int):
         self.dau = daily_active_users
@@ -257,13 +258,13 @@ class SystemDesignEstimator:
             "cache_memory_recommendation": "Redis cluster with 3 replicas",
         }
 
-# Estimate for Twitter-scale system
+## Estimate for Twitter-scale system
 design = SystemDesignEstimator(daily_active_users=200_000_000)
 print("QPS:", design.estimate_qps(actions_per_user=20))
 print("Storage:", design.estimate_storage())
 print("Cache:", design.estimate_cache_size())
 
-# API design helper
+## API design helper
 class APIDesigner:
     @staticmethod
     def rest_endpoints(resource: str) -> list[str]:
@@ -298,7 +299,7 @@ type Mutation {{
 }}"""
 
 print(APIDesigner.rest_endpoints("tweet"))
-```
+```text
 
 **Common system design problems**: Design Twitter (news feed, timeline), Design YouTube/Netflix (video streaming), Design Uber (ride matching, pricing), Design WhatsApp (chat, presence, media), Design URL shortener (tinyurl), Design Dropbox (file sync), Design Instagram (photo sharing, feed), Design Google Maps (navigation, geocoding), Design rate limiter (distributed throttling), Design web crawler (distributed crawling), Design recommendation system (collaborative filtering), Design chat system (real-time messaging).
 
@@ -319,7 +320,7 @@ The ML deep-dive round (45 min) tests your ability to design, implement, and dep
 - **38-45 min**: Deployment and monitoring. Serving infrastructure (batch vs real-time), latency requirements, model versioning, drift detection, retraining strategy.
 
 ```python
-# ML interview deep-dive framework
+## ML interview deep-dive framework
 from typing import Callable
 import numpy as np
 
@@ -407,7 +408,7 @@ class MLSystemDesign:
         self.deployment_plan = plan
         return plan
 
-# Example: Design a content moderation system
+## Example: Design a content moderation system
 mod_system = MLSystemDesign(
     problem="Detect toxic comments in real-time chat",
     business_metric="User reports of toxic content per 10K messages"
@@ -435,7 +436,7 @@ mod_system.define_deployment(
 print(f"ML System Design for: {mod_system.problem}")
 print(f"Model: {mod_system.model_type}")
 print(f"Deployment: {mod_system.deployment_plan['serving_infrastructure']}")
-```
+```text
 
 **Common ML design problems**: Search ranking (relevant results), Recommendation system (collaborative filtering), Fraud detection (real-time scoring), Content moderation (toxic comment detection), Autonomous vehicle perception (object detection), Supply chain forecasting (demand prediction), Pricing optimization (dynamic pricing), Customer churn prediction (retention), Personalization (content ranking), Anomaly detection (infrastructure monitoring).
 
@@ -467,7 +468,7 @@ The behavioral round (30 min) tests culture fit, communication, leadership, and 
 - **28-30 min**: Closing. Express continued interest, thank them.
 
 ```python
-# STAR story builder and tracker
+## STAR story builder and tracker
 from dataclasses import dataclass
 from typing import Optional
 
@@ -534,7 +535,7 @@ class BehavioralPrep:
         recommended = {"conflict", "failure", "leadership", "technical", "ambiguity"}
         return list(recommended - covered)
 
-# Build your story bank
+## Build your story bank
 prep = BehavioralPrep("Candidate")
 prep.add_story(STARStory(
     title="Fixed production outage in payment system",
@@ -554,12 +555,12 @@ prep.add_story(STARStory(
     competency="conflict",
 ))
 
-# Check coverage
+## Check coverage
 missing = prep.review_coverage()
 print(f"Missing competencies: {missing}")
 timing = prep.validate_timing()
 print(f"Timing: {timing['total_time_seconds']}s / 1800s ({timing['buffer_seconds']}s buffer)")
-```
+```text
 
 **Story bank rules**: Prepare 8-10 STAR stories that cover all common competencies. Each story should be 60-90 seconds when spoken. Stories should be specific (real projects, real numbers). Practice each story aloud 5-10 times until it feels natural. Have 2-3 strong "go-to" stories that you can adapt to multiple questions.
 
@@ -576,7 +577,7 @@ Structured feedback turns mock interviews into measurable progress. Without trac
 **Improvement tracking**: Maintain a spreadsheet or document with date, company/role, round type, scores by category, specific feedback, and action items for next time. Review trends every 5 mocks.
 
 ```python
-# Mock interview performance tracker
+## Mock interview performance tracker
 import json
 from datetime import datetime
 
@@ -634,7 +635,7 @@ class PerformanceTracker:
         with open(filepath, "w") as f:
             json.dump(self.sessions, f, indent=2)
 
-# Simulate practice sessions
+## Simulate practice sessions
 tracker = PerformanceTracker()
 tracker.record_session(
     round_type="DSA Coding",
@@ -656,7 +657,7 @@ tracker.record_session(
 )
 
 print(tracker.summary())
-```
+```text
 
 **Plateau detection**: If your scores aren't improving after 10 mocks, you need to change your approach. Common plateaus and fixes:
 - **Can't finish in time**: Practice with strict timers. Do speed rounds (20 min per problem).
@@ -1118,6 +1119,7 @@ d) Immediately start the next mock
 ---
 
 > **Previous**: [11 — Salary Negotiation →](11-salary-negoti
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 21-interview-preparation
@@ -1127,6 +1129,7 @@ d) Immediately start the next mock
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

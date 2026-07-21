@@ -13,12 +13,13 @@
 
 ## Introduction
 
-08-machine-learning is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding dimensionality reduction is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering dimensionality reduction.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -45,7 +46,7 @@ flowchart LR
     H --> I
     style C fill:#4a90d9,color:#fff
     style D fill:#e85d75,color:#fff
-```
+```text
 
 ## 8.1 Curse of Dimensionality
 
@@ -85,7 +86,7 @@ class CurseOfDimensionality:
 
 cod = CurseOfDimensionality()
 cod.demonstrate_curse()
-```
+```text
 
 **Practical implications**: KNN degrades in high dimensions (distance becomes meaningless). Regularization becomes essential. Dimensionality reduction is often needed before modeling.
 
@@ -136,11 +137,11 @@ class PCA:
         return int(np.searchsorted(cumsum, threshold) + 1)
 
 
-# Generate correlated data
+## Generate correlated data
 np.random.seed(42)
 n = 200
 X_high = np.random.randn(n, 10)
-# Create correlations
+## Create correlations
 transform = np.random.randn(10, 10)
 X_high = X_high @ transform
 
@@ -150,7 +151,7 @@ print(f"Components shape: {pca.components_.shape}")
 print(f"Explained variance ratio: {pca.explained_variance_ratio_}")
 print(f"Cumulative: {np.cumsum(pca.explained_variance_ratio_)}")
 print(f"Components needed for 95%: {pca.cumulative_variance()}")
-```
+```text
 
 **Choosing n_components**: Plot cumulative explained variance vs components. Choose the elbow or the number that reaches a threshold (e.g., 95%).
 
@@ -253,18 +254,18 @@ class TSNESimple:
         return P
 
 
-# Test t-SNE on digits
+## Test t-SNE on digits
 from sklearn.datasets import load_digits
 digits = load_digits()
 X_digits = digits.data[:300]
 y_digits = digits.target[:300]
 
-# Use sklearn's implementation (faster)
+## Use sklearn's implementation (faster)
 from sklearn.manifold import TSNE
 tsne = TSNE(n_components=2, perplexity=30, random_state=42)
 X_tsne = tsne.fit_transform(X_digits)
 print(f"t-SNE embedding shape: {X_tsne.shape}")
-```
+```text
 
 **Perplexity**: Controls balance between local and global structure. Typical range: 5-50. Lower = focuses on local structure. Higher = considers more global structure.
 
@@ -328,7 +329,7 @@ class LDA:
         return self.transform(X)
 
 
-# Create 3-class data
+## Create 3-class data
 np.random.seed(42)
 X_lda = np.vstack([
     np.random.multivariate_normal([0, 0, 0], np.eye(3), 50),
@@ -341,7 +342,7 @@ lda = LDA(n_components=2)
 X_lda_proj = lda.fit_transform(X_lda, y_lda)
 print(f"LDA projection shape: {X_lda_proj.shape}")
 print(f"LDA explained variance ratio: {lda.explained_variance_ratio_}")
-```
+```text
 
 **LDA vs PCA**: LDA is supervised (uses class labels) and maximizes class separation. PCA is unsupervised and maximizes variance. LDA has at most C-1 components (C = number of classes).
 
@@ -384,7 +385,7 @@ class UMAPAwareness:
 
 UMAPAwareness.explain_umap()
 UMAPAwareness.umap_vs_tsne()
-```
+```text
 
 ---
 
@@ -430,7 +431,7 @@ mi_features, mi_scores = selector.mutual_info_selection(X_sel, y_sel, k=5)
 print(f"Variance threshold features: {len(vt_features)}/{X_sel.shape[1]}")
 print(f"Mutual info top-5 features: {mi_features}")
 print(f"Mutual info scores: {mi_scores}")
-```
+```text
 
 ---
 
@@ -491,7 +492,7 @@ function pca(X: number[][], nComponents: number): {
 }
 
 const pcaResult = pca(X_high.tolist(), 2);
-```
+```text
 
 ## Summary
 
@@ -607,6 +608,7 @@ d) Number of components
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 08-machine-learning
@@ -616,6 +618,7 @@ d) Number of components
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

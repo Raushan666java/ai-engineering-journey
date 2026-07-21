@@ -13,12 +13,13 @@
 
 ## Introduction
 
-01-python-programming is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding python basics is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering python basics.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart LR
     E --> F[Operators]
     F --> G[Type Conversion]
     G --> H[PEP 8 Style]
-```
+```text
 
 ## 1.1 Setting Up Python
 
@@ -53,8 +54,8 @@ Python is an interpreted, dynamically-typed, high-level programming language. It
 
 ```python
 python --version
-# Python 3.11.9
-```
+## Python 3.11.9
+```text
 
 **Two modes of execution**:
 
@@ -62,9 +63,9 @@ python --version
 2. **Script mode**: Save code in `.py` files and run with `python filename.py`.
 
 ```python
-# hello.py — Your first Python program
+## hello.py — Your first Python program
 print("Hello, AI Engineering Journey!")
-```
+```text
 
 **Recommended IDEs**: VS Code with Python extension, PyCharm Community Edition, or Cursor for AI-assisted development.
 
@@ -74,7 +75,7 @@ print("Hello, AI Engineering Journey!")
 python -m venv .venv
 source .venv/bin/activate  # Linux/macOS
 .venv\Scripts\activate     # Windows
-```
+```text
 
 ---
 
@@ -83,21 +84,21 @@ source .venv/bin/activate  # Linux/macOS
 Python variables are **references to objects** in memory. Unlike statically-typed languages, a variable's type is inferred at runtime and can change.
 
 ```python
-# Dynamic typing — type is inferred from value
+## Dynamic typing — type is inferred from value
 name = "Alice"       # str
 age = 30             # int
 pi = 3.14159         # float
 is_active = True     # bool
 data = None          # NoneType
 
-# Reassignment changes type
+## Reassignment changes type
 data = 42            # Was NoneType, now int
 data = "now a str"   # Now str
 
-# Multiple assignment
+## Multiple assignment
 x, y, z = 1, 2, 3
 a = b = c = 0
-```
+```text
 
 **Variable naming rules**:
 - Letters, digits, underscores (cannot start with digit)
@@ -106,10 +107,10 @@ a = b = c = 0
 - Convention: `snake_case` for variables and functions, `UPPER_SNAKE` for constants
 
 ```python
-# Constants by convention (not enforced)
+## Constants by convention (not enforced)
 MAX_RETRIES = 3
 DEFAULT_TIMEOUT = 30.0
-```
+```text
 
 **Reference semantics**: Variables hold references, not values. Assignment copies the reference, not the object.
 
@@ -119,12 +120,12 @@ b = a              # b references same list
 b.append(4)        # Modifies the list a also sees
 print(a)           # [1, 2, 3, 4]
 
-# Use copy() for a true copy
+## Use copy() for a true copy
 c = a.copy()
 c.append(5)
 print(a)           # [1, 2, 3, 4]
 print(c)           # [1, 2, 3, 4, 5]
-```
+```text
 
 ---
 
@@ -133,20 +134,20 @@ print(c)           # [1, 2, 3, 4, 5]
 Python supports three numeric types:
 
 ```python
-# int — arbitrary precision integers
+## int — arbitrary precision integers
 count = 1_000_000          # Underscores for readability
 binary = 0b1010            # 10 in decimal
 octal = 0o77               # 63 in decimal
 hex_val = 0xFF             # 255 in decimal
 
-# float — double-precision IEEE 754
+## float — double-precision IEEE 754
 price = 19.99
 scientific = 1.5e-3        # 0.0015
 
-# complex — real and imaginary parts
+## complex — real and imaginary parts
 z = 3 + 4j
 print(z.real, z.imag)      # 3.0 4.0
-```
+```text
 
 **Arithmetic operators**:
 
@@ -159,7 +160,7 @@ print(a / b)    # 3.333... — float division
 print(a // b)   # 3   — floor division
 print(a % b)    # 1   — modulo
 print(a ** b)   # 1000 — exponentiation
-```
+```text
 
 **Division behavior**: `/` always returns float. `//` returns int (floor).
 
@@ -167,7 +168,7 @@ print(a ** b)   # 1000 — exponentiation
 print(5 / 2)    # 2.5
 print(5 // 2)   # 2
 print(-5 // 2)  # -3 (floor, not truncate toward zero)
-```
+```text
 
 **Floating-point precision**:
 
@@ -175,10 +176,10 @@ print(-5 // 2)  # -3 (floor, not truncate toward zero)
 print(0.1 + 0.2)          # 0.30000000000000004
 print(round(0.1 + 0.2, 2))  # 0.3
 
-# Use Decimal for exact arithmetic
+## Use Decimal for exact arithmetic
 from decimal import Decimal
 print(Decimal('0.1') + Decimal('0.2'))  # 0.3
-```
+```text
 
 ---
 
@@ -187,21 +188,21 @@ print(Decimal('0.1') + Decimal('0.2'))  # 0.3
 Strings are immutable sequences of Unicode characters.
 
 ```python
-# String creation
+## String creation
 single = 'Hello'
 double = "World"
 multiline = """This is a
 multi-line string"""
 empty = ""
 
-# Indexing — 0-based
+## Indexing — 0-based
 s = "Python"
 print(s[0])    # P
 print(s[-1])   # n (last character)
 print(s[0:3])  # Pyt (slice: start:end)
 print(s[::2])  # Pto (slice: start:end:step)
 
-# Common string methods
+## Common string methods
 text = "  hello, world!  "
 print(text.strip())       # "hello, world!"
 print(text.upper())       # "  HELLO, WORLD!  "
@@ -211,7 +212,7 @@ print(text.split(","))    # ["  hello", " world!  "]
 print(", ".join(["a", "b", "c"]))  # "a, b, c"
 print(text.startswith("  hello"))   # True
 print(text.find("world"))  # 9
-```
+```text
 
 **f-strings** (Python 3.6+) — preferred string formatting:
 
@@ -219,27 +220,27 @@ print(text.find("world"))  # 9
 name = "Alice"
 age = 30
 print(f"{name} is {age} years old.")
-# Alice is 30 years old.
+## Alice is 30 years old.
 
-# Expressions inside f-strings
+## Expressions inside f-strings
 print(f"{2 * 3 * 5 = }")  # 2 * 3 * 5 = 30
 
-# Format specifiers
+## Format specifiers
 pi = 3.14159
 print(f"{pi:.2f}")         # 3.14
 print(f"{pi:10.2f}")       # "      3.14" (right-aligned in width 10)
 print(f"{pi:<10.2f}")      # "3.14      " (left-aligned)
-```
+```text
 
 **String immutability**: Strings cannot be modified in place.
 
 ```python
 s = "hello"
-# s[0] = "H"  — TypeError!
+## s[0] = "H"  — TypeError!
 
-# Must create new string
+## Must create new string
 s = "H" + s[1:]  # "Hello"
-```
+```text
 
 ---
 
@@ -252,13 +253,13 @@ is_sunny = True
 is_raining = False
 print(is_sunny + 2)   # 3 (True is 1)
 
-# Truthiness — values that evaluate to False:
-# False, None, 0, 0.0, "" (empty string), [] (empty list), {} (empty dict), set()
+## Truthiness — values that evaluate to False:
+## False, None, 0, 0.0, "" (empty string), [] (empty list), {} (empty dict), set()
 print(bool(0))        # False
 print(bool(42))       # True
 print(bool(""))       # False
 print(bool("text"))   # True
-```
+```text
 
 **None**: Python's null value. Singleton of `NoneType`.
 
@@ -267,10 +268,10 @@ result = None
 if result is None:
     print("No result yet")
 
-# Use is/is not for None comparison, not ==
+## Use is/is not for None comparison, not ==
 print(None is None)   # True
 print(None == 0)      # False
-```
+```text
 
 ---
 
@@ -281,29 +282,29 @@ print(None == 0)      # False
 ```python
 print(3 + 4.0)    # 7.0 — int promoted to float
 print(True + 2)   # 3   — bool promoted to int
-```
+```text
 
 **Explicit conversion** (type casting):
 
 ```python
-# To int
+## To int
 print(int(3.9))       # 3 (truncates)
 print(int("42"))      # 42
 print(int("FF", 16))  # 255 (base 16)
 
-# To float
+## To float
 print(float(3))       # 3.0
 print(float("3.14"))  # 3.14
 
-# To str
+## To str
 print(str(42))        # "42"
 print(str(3.14))      # "3.14"
 
-# Conversion gotchas
-# int("3.14")  — ValueError: invalid literal
-# float("3.14") — works fine
-# int("0xFF", 0) — uses base from prefix
-```
+## Conversion gotchas
+## int("3.14")  — ValueError: invalid literal
+## float("3.14") — works fine
+## int("0xFF", 0) — uses base from prefix
+```text
 
 ---
 
@@ -317,7 +318,7 @@ print(str(3.14))      # "3.14"
 print(3 == 3.0)   # True (value comparison)
 print(3 is 3.0)   # False (identity comparison)
 print("a" < "b")  # True (lexicographic)
-```
+```text
 
 **Logical operators**: `and`, `or`, `not`
 
@@ -327,14 +328,14 @@ print(x > 0 and x < 10)   # True
 print(x > 0 or x < 0)     # True
 print(not x > 10)         # True
 
-# Short-circuit evaluation
+## Short-circuit evaluation
 def get_value():
     print("get_value called")
     return 42
 
-# If first condition is False, second is never evaluated
+## If first condition is False, second is never evaluated
 result = False and get_value()  # get_value NOT called
-```
+```text
 
 **Assignment operators**: `=`, `+=`, `-=`, `*=`, `/=`, `//=`, `%=`, `**=` 
 
@@ -342,7 +343,7 @@ result = False and get_value()  # get_value NOT called
 x = 10
 x += 5   # x = 15
 x *= 2   # x = 30
-```
+```text
 
 **Identity operators**: `is`, `is not` — check object identity (memory address), not value.
 
@@ -352,7 +353,7 @@ b = [1, 2, 3]
 print(a == b)   # True (same value)
 print(a is b)   # False (different objects)
 
-# Small integers are cached
+## Small integers are cached
 x = 256
 y = 256
 print(x is y)   # True (CPython caches -5 to 256)
@@ -360,7 +361,7 @@ print(x is y)   # True (CPython caches -5 to 256)
 x = 1000
 y = 1000
 print(x is y)   # May be True or False — implementation dependent!
-```
+```text
 
 **Membership operators**: `in`, `not in`
 
@@ -368,7 +369,7 @@ print(x is y)   # May be True or False — implementation dependent!
 print("a" in "hello")      # False
 print(3 in [1, 2, 3])      # True
 print("key" in {"key": 1}) # True
-```
+```text
 
 **Operator precedence** (highest to lowest):
 1. `**` — exponentiation
@@ -385,10 +386,10 @@ print("key" in {"key": 1}) # True
 12. `or` — logical OR
 
 ```python
-# Complex expression — use parentheses for clarity
+## Complex expression — use parentheses for clarity
 result = (2 + 3) * 4 > 15 and not False
 print(result)  # True
-```
+```text
 
 ---
 
@@ -406,7 +407,7 @@ PEP 8 is Python's style guide. Key rules:
 | Spaces | `x = 1`, not `x=1` | missing spaces around operators |
 
 ```python
-# Good PEP 8 style
+## Good PEP 8 style
 import os
 import sys
 
@@ -418,7 +419,7 @@ def calculate_mean(values: List[float]) -> Optional[float]:
     if not values:
         return None
     return sum(values) / len(values)
-```
+```text
 
 Use `black` for auto-formatting and `ruff` for linting:
 
@@ -426,7 +427,7 @@ Use `black` for auto-formatting and `ruff` for linting:
 pip install black ruff
 black my_script.py
 ruff check my_script.py
-```
+```text
 
 ---
 
@@ -448,7 +449,7 @@ if (3 === 3) { console.log("strict equality"); }
 
 // Template literals (similar to f-strings)
 console.log(`${name} is ${age} years old.`);
-```
+```text
 
 ---
 
@@ -605,10 +606,10 @@ del b                       # reference count drops to 2</code></pre>
     </ul>
     <pre><code># Immutable — str
 s = "hello"
-# s[0] = "H"  # TypeError
+## s[0] = "H"  # TypeError
 s = "H" + s[1:]  # creates new string
 
-# Mutable — list
+## Mutable — list
 lst = [1, 2, 3]
 lst[0] = 99  # modifies in place
 print(lst)   # [99, 2, 3]</code></pre>
@@ -645,7 +646,7 @@ def expensive():
 print(False and expensive())  # False — expensive() NOT called
 print(True and expensive())   # True — expensive() IS called
 
-# or — stops at first True-like value
+## or — stops at first True-like value
 print(True or expensive())    # True — expensive() NOT called
 print(False or expensive())   # True — expensive() IS called</code></pre>
     <p><strong>Practical uses</strong>:</p>
@@ -798,6 +799,7 @@ d) 2
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 01-python-programming
@@ -807,6 +809,7 @@ d) 2
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions
@@ -842,6 +845,7 @@ d) 2
 - [ ] Prepare 2 real-world examples of using 01-python-programming
 - [ ] Know the time/space complexity of common 01-python-programming operations
 - [ ] Have questions ready about how the company uses 01-python-programming> **Next**: [02 — Control Flow →](02-control
+
 ### True/False
 
 **T/F 1**: Python is a statically typed language.

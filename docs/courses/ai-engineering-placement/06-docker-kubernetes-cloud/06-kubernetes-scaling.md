@@ -13,12 +13,13 @@
 
 ## Introduction
 
-06-docker-kubernetes-cloud is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding kubernetes scaling is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering kubernetes scaling.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart LR
     E --> F[Upgrades]
     F --> G[Deploy Strategies]
     G --> H[Monitoring]
-```
+```text
 
 ## 6.1 Horizontal Pod Autoscaler
 
@@ -154,19 +155,19 @@ flowchart TD
     NodeReady --> Schedule[Schedule Pods]
     Schedule --> Idle[Node Underutilized]
     Idle --> ScaleDown[Scale Down Node]
-```
+```text
 
 **Cloud provider configuration**:
 
 `ash
-# AWS
+## AWS
 aws autoscaling describe-auto-scaling-groups
 eksctl scale nodegroup --cluster my-cluster --name workers --nodes 5
 
-# GCP
+## GCP
 gcloud container clusters resize my-cluster --node-pool default-pool --num-nodes 5
 
-# AKS
+## AKS
 az aks scale --resource-group my-rg --name my-cluster --node-count 5
 `
 
@@ -216,17 +217,17 @@ spec:
 | Recreate | Evict and recreate Pods with new requests |
 
 `ash
-# Install VPA
+## Install VPA
 git clone https://github.com/kubernetes/autoscaler.git
 kubectl apply -k autoscaler/vertical-pod-autoscaler/deploy/
 
-# View VPA recommendations
+## View VPA recommendations
 kubectl describe vpa api-vpa
 
-# Output shows:
-# Recommended Pod Resources:
-#   cpu: 250m (lower bound: 150m, upper bound: 500m)
-#   memory: 512Mi (lower bound: 256Mi, upper bound: 1Gi)
+## Output shows:
+## Recommended Pod Resources:
+##   cpu: 250m (lower bound: 150m, upper bound: 500m)
+##   memory: 512Mi (lower bound: 256Mi, upper bound: 1Gi)
 `
 
 ## 6.4 Pod Disruption Budgets
@@ -250,7 +251,7 @@ spec:
 **PDB strategies**:
 
 `yaml
-# Critical service � always keep most available
+## Critical service � always keep most available
 apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:
@@ -261,7 +262,7 @@ spec:
     matchLabels:
       tier: critical
 
-# Batch job � can tolerate disruptions
+## Batch job � can tolerate disruptions
 apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:
@@ -282,9 +283,9 @@ kubectl describe pdb api-pdb
 **When PDBs block operations**:
 
 `ash
-# If PDB prevents drain, use --disable-eviction
+## If PDB prevents drain, use --disable-eviction
 kubectl drain node-1 --ignore-daemonsets --disable-eviction
-# Force drain (use with caution)
+## Force drain (use with caution)
 kubectl drain node-1 --ignore-daemonsets --delete-emptydir-data --force
 `
 
@@ -293,17 +294,17 @@ kubectl drain node-1 --ignore-daemonsets --delete-emptydir-data --force
 **Taints and Tolerations**: Taints repel Pods from nodes; tolerations allow Pods to be scheduled on tainted nodes.
 
 `ash
-# Taint a node
+## Taint a node
 kubectl taint nodes node1 key=value:NoSchedule
 kubectl taint nodes node1 key=value:NoExecute
 kubectl taint nodes node1 key=value:PreferNoSchedule
 
-# Remove taint
+## Remove taint
 kubectl taint nodes node1 key=value:NoSchedule-
 `
 
 `yaml
-# Pod toleration
+## Pod toleration
 apiVersion: v1
 kind: Pod
 spec:
@@ -350,19 +351,19 @@ spec:
 **Cordon, Drain, and Delete**:
 
 `ash
-# Mark node as unschedulable
+## Mark node as unschedulable
 kubectl cordon node1
 
-# Evict Pods (respects PDBs)
+## Evict Pods (respects PDBs)
 kubectl drain node1 --ignore-daemonsets
 
-# Force drain for testing
+## Force drain for testing
 kubectl drain node1 --ignore-daemonsets --delete-emptydir-data --force
 
-# Make node schedulable again
+## Make node schedulable again
 kubectl uncordon node1
 
-# Delete node
+## Delete node
 kubectl delete node node1
 `
 
@@ -371,20 +372,20 @@ kubectl delete node node1
 **Upgrade strategy**: Upgrade control plane first, then worker nodes.
 
 `ash
-# Check current version
+## Check current version
 kubectl version --short
 
-# Upgrade control plane (EKS)
+## Upgrade control plane (EKS)
 eksctl upgrade cluster --name my-cluster --version 1.28
 
-# Upgrade node group
+## Upgrade node group
 eksctl upgrade nodegroup --cluster my-cluster --name workers
 
-# GKE
+## GKE
 gcloud container clusters upgrade my-cluster \
     --master --cluster-version 1.28
 
-# AKS
+## AKS
 az aks upgrade --resource-group my-rg --name my-cluster --kubernetes-version 1.28
 `
 
@@ -399,15 +400,15 @@ az aks upgrade --resource-group my-rg --name my-cluster --kubernetes-version 1.2
 **Blue-green node pools**:
 
 `ash
-# Create new node pool with updated version
+## Create new node pool with updated version
 eksctl create nodegroup --cluster my-cluster --name workers-v2 \
     --node-type t3.medium --nodes 3
 
-# Migrate workloads
+## Migrate workloads
 kubectl cordon workers-v1
 kubectl drain workers-v1 --ignore-daemonsets
 
-# Delete old node pool
+## Delete old node pool
 eksctl delete nodegroup --cluster my-cluster --name workers-v1
 `
 
@@ -479,16 +480,16 @@ spec:
 **Canary deployment**:
 
 `ash
-# Deploy canary with 1 replica
+## Deploy canary with 1 replica
 kubectl scale deployment my-app-canary --replicas=1
 kubectl scale deployment my-app-stable --replicas=4
 
-# Monitor canary metrics
-# If stable, shift traffic gradually
+## Monitor canary metrics
+## If stable, shift traffic gradually
 kubectl scale deployment my-app-canary --replicas=3
 kubectl scale deployment my-app-stable --replicas=2
 
-# Full rollout
+## Full rollout
 kubectl scale deployment my-app-canary --replicas=5
 kubectl scale deployment my-app-stable --replicas=0
 `
@@ -507,14 +508,14 @@ kubectl top pods
 **Prometheus and Grafana**:
 
 `ash
-# Install with Helm
+## Install with Helm
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm install prometheus prometheus-community/kube-prometheus-stack
 
-# Access Grafana
+## Access Grafana
 kubectl port-forward service/prometheus-grafana 3000:80
 
-# Access Prometheus
+## Access Prometheus
 kubectl port-forward service/prometheus-kube-prometheus-prometheus 9090:9090
 `
 
@@ -523,7 +524,7 @@ kubectl port-forward service/prometheus-kube-prometheus-prometheus 9090:9090
 `ash
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
 kubectl proxy
-# Access: http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
+## Access: http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
 `
 
 **Key metrics to monitor**:
@@ -789,6 +790,7 @@ d) ConfigMap
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 06-docker-kubernetes-cloud
@@ -798,6 +800,7 @@ d) ConfigMap
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

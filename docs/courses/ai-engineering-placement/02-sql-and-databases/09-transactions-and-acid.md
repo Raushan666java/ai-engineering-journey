@@ -13,12 +13,13 @@
 
 ## Introduction
 
-02-sql-and-databases is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding transactions and acid is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering transactions and acid.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -48,7 +49,7 @@ flowchart LR
     E --> M[Row / Table Locks]
     E --> N[Deadlocks]
     F --> O[Retry / Optimistic Locking]
-```
+```text
 
 ## 9.1 ACID Properties
 
@@ -63,7 +64,7 @@ UPDATE accounts SET balance = balance - 100 WHERE id = 1;
 UPDATE accounts SET balance = balance + 100 WHERE id = 2;
 COMMIT;
 -- If power fails after first UPDATE, ROLLBACK occurs automatically
-```
+```text
 
 **Consistency** — Transactions preserve database invariants (constraints, rules).
 
@@ -80,7 +81,7 @@ UPDATE accounts SET balance = balance + 200 WHERE id = 2;  -- OK
 COMMIT;
 
 -- If balance would go negative, CHECK constraint violation causes ROLLBACK
-```
+```text
 
 **Isolation** — Concurrent transactions don't interfere with each other.
 
@@ -90,7 +91,7 @@ BEGIN;
 UPDATE products SET stock = stock - 1 WHERE id = 10;
 -- Transaction B cannot see the decremented stock until A commits
 COMMIT;
-```
+```text
 
 **Durability** — Committed changes survive system failures.
 
@@ -100,7 +101,7 @@ COMMIT;
 BEGIN;
 INSERT INTO audit_log (event) VALUES ('payment_processed');
 COMMIT;  -- Now durable even if power fails
-```
+```text
 
 ## 9.2 Transaction Control
 
@@ -117,7 +118,7 @@ BEGIN;
 INSERT INTO orders (customer_id, total) VALUES (1, 200.00);
 -- Something goes wrong
 ROLLBACK;                        -- Undo all changes
-```
+```text
 
 **Savepoints** allow partial rollback:
 
@@ -135,7 +136,7 @@ INSERT INTO orders (customer_id, total) VALUES (2, 150.00);
 RELEASE SAVEPOINT sp1;           -- Release the savepoint
 
 COMMIT;                          -- Only the correct order is committed
-```
+```text
 
 **Auto-commit mode** (default in most clients):
 
@@ -146,7 +147,7 @@ INSERT INTO log (message) VALUES ('this commits immediately');
 -- Disable auto-commit:
 \set AUTOCOMMIT off
 -- Or use \begin and \end in psql
-```
+```text
 
 **Transaction state after error**:
 
@@ -156,7 +157,7 @@ INSERT INTO accounts (name, balance) VALUES ('Alice', 100);
 INSERT INTO accounts (name, balance) VALUES ('Bob', 'invalid');  -- ERROR
 -- Transaction is now ABORTED. Must ROLLBACK or COMMIT (which rolls back).
 ROLLBACK;
-```
+```text
 
 ## 9.3 Isolation Levels
 
@@ -170,7 +171,7 @@ COMMIT;
 
 -- Set default for session
 SET TRANSACTION ISOLATION LEVEL REPEATABLE READ;
-```
+```text
 
 **Read Uncommitted** — In PostgreSQL, behaves like Read Committed.
 
@@ -179,7 +180,7 @@ SET TRANSACTION ISOLATION LEVEL REPEATABLE READ;
 BEGIN TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
 SELECT * FROM accounts;  -- Still sees only committed data
 COMMIT;
-```
+```text
 
 **Read Committed** (default) — Each query sees only committed data.
 
@@ -194,7 +195,7 @@ SELECT balance FROM accounts WHERE id = 1;  -- Sees OLD balance (100 before upda
 -- After A commits:
 SELECT balance FROM accounts WHERE id = 1;  -- Sees NEW balance (200)
 COMMIT;
-```
+```text
 
 **Repeatable Read** — Transaction sees a consistent snapshot from the first query.
 
@@ -210,7 +211,7 @@ UPDATE accounts SET balance = 200 WHERE id = 1; COMMIT;
 SELECT balance FROM accounts WHERE id = 1;  -- Still returns 100 (snapshot)
 COMMIT;
 -- After commit, A sees new value on next transaction
-```
+```text
 
 **Serializable** — Highest isolation; transactions execute as if serial.
 
@@ -226,7 +227,7 @@ UPDATE accounts SET balance = balance - 100 WHERE id = 1;
 COMMIT;
 -- May get: ERROR: could not serialize access due to read/write dependencies
 -- Application must retry
-```
+```text
 
 **Choosing isolation levels**:
 
@@ -248,7 +249,7 @@ UPDATE employees SET salary = 100000 WHERE id = 1;
 
 -- Transaction B (even at READ UNCOMMITTED in PG)
 SELECT salary FROM employees WHERE id = 1;  -- Sees 50000 (committed value, not 100000)
-```
+```text
 
 **Non-repeatable read** — Same query returns different values within a transaction because another transaction committed changes.
 
@@ -262,7 +263,7 @@ UPDATE orders SET status = 'shipped' WHERE id = 10; COMMIT;
 
 -- Transaction A
 SELECT status FROM orders WHERE id = 10;  -- 'shipped' (different from first read!)
-```
+```text
 
 **Phantom read** — A query returns different sets of rows because another transaction inserted/deleted rows.
 
@@ -278,7 +279,7 @@ INSERT INTO orders (customer_id, total) VALUES (3, 200); COMMIT;
 SELECT COUNT(*) FROM orders WHERE total > 100;
 -- In REPEATABLE READ: still 5 (prevents phantoms in PostgreSQL)
 -- In READ COMMITTED: 6 (phantom row appears)
-```
+```text
 
 **Serialization anomaly** — Two concurrent serializable transactions produce a result that would be impossible in any serial execution.
 
@@ -286,7 +287,7 @@ SELECT COUNT(*) FROM orders WHERE total > 100;
 -- Classic example: user 1 says "user 2 has 100 followers"
 -- User 2 simultaneously says "user 1 has 50 followers"
 -- With SERIALIZABLE, PostgreSQL detects this conflict and aborts one
-```
+```text
 
 ## 9.5 Locking
 
@@ -308,7 +309,7 @@ SELECT * FROM orders WHERE id = 10 FOR SHARE;
 
 -- FOR KEY SHARE: prevents key deletion but allows other modifications
 SELECT * FROM orders WHERE id = 10 FOR KEY SHARE;
-```
+```text
 
 **Lock conflicts**:
 
@@ -330,7 +331,7 @@ LOCK TABLE accounts IN SHARE MODE;
 
 -- Allow concurrent reads but block schema changes
 LOCK TABLE accounts IN ACCESS SHARE MODE;
-```
+```text
 
 **Deadlock detection**:
 
@@ -352,7 +353,7 @@ UPDATE accounts SET balance = balance + 100 WHERE id = 1;
 -- DEADLOCK! PostgreSQL detects and aborts one transaction
 -- ERROR: deadlock detected
 -- Rollback and retry
-```
+```text
 
 **Advisory locks** (application-level locks):
 
@@ -368,7 +369,7 @@ SELECT pg_advisory_unlock(12345);
 
 -- Transaction-level advisory lock (auto-released on commit)
 SELECT pg_advisory_xact_lock(12345);
-```
+```text
 
 ## 9.6 Practical Transaction Patterns
 
@@ -389,7 +390,7 @@ SET balance = 150, version = version + 1
 WHERE id = 1 AND version = 1;
 -- If 0 rows updated, another transaction modified it. Retry.
 COMMIT;
-```
+```text
 
 **Retry logic for serialization failures**:
 
@@ -421,7 +422,7 @@ def transfer_funds(conn, from_id, to_id, amount):
             # Exponential backoff
             import time
             time.sleep(0.1 * (2 ** attempt))
-```
+```text
 
 **Pessimistic locking** (FOR UPDATE):
 
@@ -435,7 +436,7 @@ FOR UPDATE;  -- Lock the inventory row
 -- Check and update
 UPDATE inventory SET quantity = quantity - 5 WHERE product_id = 42;
 COMMIT;  -- Locks released
-```
+```text
 
 **Two-phase commit** for distributed transactions:
 
@@ -445,7 +446,7 @@ PREPARE TRANSACTION 'txn_123';
 
 -- Phase 2: Commit (or ROLLBACK PREPARED)
 COMMIT PREPARED 'txn_123';
-```
+```text
 
 ## TypeScript Parallel
 
@@ -493,7 +494,7 @@ class SimpleTransactionManager {
         return [];
     }
 }
-```
+```text
 
 ## Summary
 
@@ -610,6 +611,7 @@ class SimpleTransactionManager {
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 02-sql-and-databases
@@ -619,6 +621,7 @@ class SimpleTransactionManager {
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

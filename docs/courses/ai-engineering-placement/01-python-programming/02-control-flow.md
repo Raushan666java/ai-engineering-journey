@@ -13,12 +13,13 @@
 
 ## Introduction
 
-01-python-programming is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding control flow is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering control flow.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -42,14 +43,14 @@ flowchart LR
     F --> G
     G --> H[Comprehensions]
     H --> I[Iteration Protocol]
-```
+```text
 
 ## 2.1 Conditional Statements
 
 Conditional statements direct program flow based on boolean expressions. Python uses if, elif (short for "else if"), and else blocks.
 
 `python
-# Basic if-elif-else structure
+## Basic if-elif-else structure
 temperature = 30
 
 if temperature > 35:
@@ -60,13 +61,13 @@ elif temperature > 15:
     print("It is mild")
 else:
     print("It is cold")
-# Output: It is warm
+## Output: It is warm
 `
 
 **Truthiness in conditionals**: Python evaluates any object as True or False in a boolean context.
 
 `python
-# Objects evaluated as False
+## Objects evaluated as False
 bool(0)       # False
 bool(0.0)     # False
 bool("")      # False
@@ -74,7 +75,7 @@ bool([])      # False (empty list)
 bool({})      # False (empty dict)
 bool(None)    # False
 
-# All other objects are True
+## All other objects are True
 bool(" ")     # True (non-empty string)
 bool([0])     # True (non-empty list)
 `
@@ -82,7 +83,7 @@ bool([0])     # True (non-empty list)
 **Nested conditionals** should be kept shallow � 2 levels max. Use guard clauses to flatten:
 
 `python
-# Deep nesting � hard to read
+## Deep nesting � hard to read
 def process_user(user):
     if user:
         if user.is_active:
@@ -95,7 +96,7 @@ def process_user(user):
     else:
         print("No user provided")
 
-# Flattened with guard clauses � easier to follow
+## Flattened with guard clauses � easier to follow
 def process_user_flat(user):
     if not user:
         print("No user provided")
@@ -112,12 +113,12 @@ def process_user_flat(user):
 **Ternary (conditional) expression**:
 
 `python
-# Syntax: value_if_true if condition else value_if_false
+## Syntax: value_if_true if condition else value_if_false
 age = 20
 status = "Adult" if age >= 18 else "Minor"
 print(status)  # Adult
 
-# Chained ternary � use sparingly
+## Chained ternary � use sparingly
 score = 85
 grade = "A" if score >= 90 else "B" if score >= 80 else "C" if score >= 70 else "F"
 print(grade)  # B
@@ -130,13 +131,13 @@ print(grade)  # B
 The or loop iterates over any iterable object. It is Python's primary looping construct.
 
 `python
-# Iterating over a list
+## Iterating over a list
 fruits = ["apple", "banana", "cherry"]
 for fruit in fruits:
     print(fruit, end=" ")
-# Output: apple banana cherry
+## Output: apple banana cherry
 
-# Using range() for numeric sequences
+## Using range() for numeric sequences
 for i in range(5):
     print(i, end=" ")  # 0 1 2 3 4
 print()
@@ -145,7 +146,7 @@ for i in range(2, 10, 3):
     print(i, end=" ")  # 2 5 8
 print()
 
-# range(start, stop, step) � stop is exclusive
+## range(start, stop, step) � stop is exclusive
 `
 
 **enumerate()** � access both index and value:
@@ -154,10 +155,10 @@ print()
 colors = ["red", "green", "blue"]
 for index, color in enumerate(colors, start=1):
     print(f"{index}: {color}")
-# Output:
-# 1: red
-# 2: green
-# 3: blue
+## Output:
+## 1: red
+## 2: green
+## 3: blue
 `
 
 **zip()** � iterate multiple sequences in parallel:
@@ -169,11 +170,11 @@ grades = ["A", "A", "B"]
 
 for name, score, grade in zip(names, scores, grades):
     print(f"{name}: {score} -> {grade}")
-# Alice: 85 -> A
-# Bob: 92 -> A
-# Charlie: 78 -> B
+## Alice: 85 -> A
+## Bob: 92 -> A
+## Charlie: 78 -> B
 
-# zip stops at the shortest iterable
+## zip stops at the shortest iterable
 a = [1, 2, 3]
 b = ["x", "y"]
 for pair in zip(a, b):
@@ -202,14 +203,14 @@ for key, value in data.items(): # key-value pairs
 while loops execute as long as a condition remains True. Use them when the number of iterations is unknown.
 
 `python
-# Basic while loop
+## Basic while loop
 count = 0
 while count < 5:
     print(count, end=" ")
     count += 1
-# Output: 0 1 2 3 4
+## Output: 0 1 2 3 4
 
-# Sentinel pattern � loop until a sentinel value
+## Sentinel pattern � loop until a sentinel value
 total = 0
 while True:
     value = input("Enter a number (q to quit): ")
@@ -222,7 +223,7 @@ print(f"Total: {total}")
 **Avoid infinite loops** � ensure the condition eventually becomes False:
 
 `python
-# Infinite loop � CTRL+C to stop
+## Infinite loop � CTRL+C to stop
 x = 0
 while x >= 0:
     x += 1
@@ -230,7 +231,7 @@ while x >= 0:
         break  # safety valve
 print(f"Reached {x}")
 
-# Correct pattern � increment inside loop
+## Correct pattern � increment inside loop
 def sum_to(n):
     total = 0
     i = 1
@@ -255,9 +256,9 @@ for num in range(10):
     if num == 5:
         break
     print(num, end=" ")
-# Output: 0 1 2 3 4
+## Output: 0 1 2 3 4
 
-# break only breaks the innermost loop
+## break only breaks the innermost loop
 for i in range(3):
     for j in range(3):
         if j == 1:
@@ -273,7 +274,7 @@ for num in range(10):
     if num % 2 == 0:
         continue  # skip even numbers
     print(num, end=" ")
-# Output: 1 3 5 7 9
+## Output: 1 3 5 7 9
 `
 
 **pass** � no-op placeholder for syntactically required blocks:
@@ -292,7 +293,7 @@ if True:
 **else on loops** � executes only if the loop completed normally (no reak):
 
 `python
-# else after for � executes when no break occurred
+## else after for � executes when no break occurred
 def find_item(items, target):
     for i, item in enumerate(items):
         if item == target:
@@ -304,14 +305,14 @@ def find_item(items, target):
 find_item([1, 2, 3, 4], 3)  # Found at index 2
 find_item([1, 2, 3, 4], 5)  # 5 not found
 
-# else after while � also works
+## else after while � also works
 n = 0
 while n < 3:
     print(n, end=" ")
     n += 1
 else:
     print("� loop completed without break")
-# Output: 0 1 2 � loop completed without break
+## Output: 0 1 2 � loop completed without break
 `
 
 ---
@@ -323,22 +324,22 @@ Comprehensions provide a concise syntax for creating collections from iterables.
 **List comprehension** � most common:
 
 `python
-# Syntax: [expression for item in iterable if condition]
+## Syntax: [expression for item in iterable if condition]
 
-# Basic
+## Basic
 squares = [x**2 for x in range(10)]
 print(squares)  # [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 
-# With filter
+## With filter
 evens = [x for x in range(20) if x % 2 == 0]
 print(evens)  # [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
 
-# Nested loops (flatten a matrix)
+## Nested loops (flatten a matrix)
 matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 flat = [num for row in matrix for num in row]
 print(flat)  # [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-# With transformation
+## With transformation
 words = ["hello", "world", "python"]
 caps = [word.upper() for word in words if len(word) > 4]
 print(caps)  # ['HELLO', 'WORLD', 'PYTHON']
@@ -347,16 +348,16 @@ print(caps)  # ['HELLO', 'WORLD', 'PYTHON']
 **Dict comprehension**:
 
 `python
-# {key_expr: value_expr for item in iterable}
+## {key_expr: value_expr for item in iterable}
 squares_dict = {x: x**2 for x in range(5)}
 print(squares_dict)  # {0: 0, 1: 1, 2: 4, 3: 9, 4: 9}
 
-# Invert a dictionary
+## Invert a dictionary
 original = {"a": 1, "b": 2, "c": 3}
 inverted = {v: k for k, v in original.items()}
 print(inverted)  # {1: 'a', 2: 'b', 3: 'c'}
 
-# Filter and transform
+## Filter and transform
 temperatures_c = {"New York": 22, "London": 18, "Tokyo": 28}
 temperatures_f = {city: c * 9/5 + 32
                   for city, c in temperatures_c.items()
@@ -367,7 +368,7 @@ print(temperatures_f)  # {'New York': 71.6, 'Tokyo': 82.4}
 **Set comprehension**:
 
 `python
-# {expression for item in iterable}
+## {expression for item in iterable}
 unique_lengths = {len(word) for word in ["hello", "world", "python", "hi"]}
 print(unique_lengths)  # {2, 5, 6}
 `
@@ -375,7 +376,7 @@ print(unique_lengths)  # {2, 5, 6}
 **Generator expression** � memory-efficient, produces values on demand:
 
 `python
-# (expression for item in iterable) � note parentheses
+## (expression for item in iterable) � note parentheses
 import sys
 
 list_comp = [x**2 for x in range(10000)]
@@ -384,7 +385,7 @@ gen_expr = (x**2 for x in range(10000))
 print(sys.getsizeof(list_comp))  # ~80,000 bytes (list in memory)
 print(sys.getsizeof(gen_expr))   # ~200 bytes (lazy generator)
 
-# Sum of first 10 million squares (impossible with list)
+## Sum of first 10 million squares (impossible with list)
 total = sum(x**2 for x in range(10_000_000))
 print(total)  # 333333283333335000000
 `
@@ -405,14 +406,14 @@ Every or loop in Python uses the **iteration protocol** under the hood.
 **The protocol**: An object is iterable if it implements __iter__(), which returns an iterator. An iterator implements __next__(), which returns the next element or raises StopIteration.
 
 `python
-# Manual iteration � what for does internally
+## Manual iteration � what for does internally
 fruits = ["apple", "banana", "cherry"]
 iterator = iter(fruits)  # calls fruits.__iter__()
 
 print(next(iterator))  # apple � calls iterator.__next__()
 print(next(iterator))  # banana
 print(next(iterator))  # cherry
-# print(next(iterator))  # StopIteration raised
+## print(next(iterator))  # StopIteration raised
 `
 
 **Building a custom iterable**:
@@ -454,13 +455,13 @@ def count_down(start):
 for num in count_down(5):
     print(num, end=" ")  # 5 4 3 2 1 0
 
-# Generator objects are also iterators
+## Generator objects are also iterators
 gen = count_down(3)
 print(next(gen))  # 3
 print(next(gen))  # 2
 print(next(gen))  # 1
 print(next(gen))  # 0
-# print(next(gen))  # StopIteration
+## print(next(gen))  # StopIteration
 `
 
 **itertools � advanced iteration toolkit**:
@@ -468,30 +469,30 @@ print(next(gen))  # 0
 `python
 from itertools import chain, cycle, product, permutations, combinations
 
-# chain � combine iterables
+## chain � combine iterables
 result = list(chain([1, 2], [3, 4], [5]))
 print(result)  # [1, 2, 3, 4, 5]
 
-# cycle � repeat infinitely
+## cycle � repeat infinitely
 counter = 0
 for item in cycle(["A", "B", "C"]):
     print(item, end=" ")
     counter += 1
     if counter > 5:
         break
-# Output: A B C A B C
+## Output: A B C A B C
 
-# product � Cartesian product
+## product � Cartesian product
 print(list(product([1, 2], ["x", "y"])))
-# [(1, 'x'), (1, 'y'), (2, 'x'), (2, 'y')]
+## [(1, 'x'), (1, 'y'), (2, 'x'), (2, 'y')]
 
-# permutations � all orderings
+## permutations � all orderings
 print(list(permutations([1, 2, 3], 2)))
-# [(1, 2), (1, 3), (2, 1), (2, 3), (3, 1), (3, 2)]
+## [(1, 2), (1, 3), (2, 1), (2, 3), (3, 1), (3, 2)]
 
-# combinations � all subsets
+## combinations � all subsets
 print(list(combinations([1, 2, 3], 2)))
-# [(1, 2), (1, 3), (2, 3)]
+## [(1, 2), (1, 3), (2, 3)]
 `
 
 ---
@@ -567,7 +568,7 @@ function range(n: number): number[] {
     <pre><code># for � know the sequence
 for item in collection: ...
 
-# while � unknown iterations
+## while � unknown iterations
 while not file.closed: ...</code></pre>
   </div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button>
@@ -608,7 +609,7 @@ else:
     <pre><code># List comprehension � all in memory
 squares = [x**2 for x in range(10_000_000)]  # ~80 MB
 
-# Generator expression � lazy evaluation
+## Generator expression � lazy evaluation
 squares = (x**2 for x in range(10_000_000))   # ~200 bytes
 total = sum(squares)  # compute on the fly</code></pre>
   </div>
@@ -675,7 +676,7 @@ def placeholder():
     <p>Use a nested <code>for</code> clause in the comprehension:</p>
     <pre><code>matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 flat = [num for row in matrix for num in row]
-# [1, 2, 3, 4, 5, 6, 7, 8, 9]</code></pre>
+## [1, 2, 3, 4, 5, 6, 7, 8, 9]</code></pre>
     <p>The order of <code>for</code> clauses follows the same order as nested loops.</p>
   </div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button>
@@ -692,7 +693,7 @@ flat = [num for row in matrix for num in row]
     <pre><code># and � stops at first False
 result = False and expensive_function()  # NOT called
 
-# or � stops at first True
+## or � stops at first True
 result = True or expensive_function()   # NOT called</code></pre>
   </div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button>
@@ -810,6 +811,7 @@ d)  
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 01-python-programming
@@ -819,6 +821,7 @@ d)  
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

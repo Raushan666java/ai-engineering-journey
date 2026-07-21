@@ -13,12 +13,13 @@
 
 ## Introduction
 
-07-system-design is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding design chatgpt is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering design chatgpt.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -46,6 +47,7 @@ flowchart LR
     I --> J
     J --> K[Token-by-Token Delivery]
     K --> L[Conversation Storage]
+
 ## 11.1 System Architecture
 
 ChatGPT's architecture is a multi-layered system designed for low-latency, high-throughput LLM inference.
@@ -85,7 +87,7 @@ interface ChatGPTResponse {
     total_tokens: number;
   };
 }
-```
+```text
 
 **Inference optimization**: Tensor parallelism across GPUs, KV-cache management, continuous batching, speculative decoding for 2-3x throughput improvement.
 
@@ -144,7 +146,7 @@ class SSEStreamManager {
     }
   }
 }
-```
+```text
 
 **Challenges**: Connection management (1M+ concurrent connections), backpressure handling when clients are slow, reconnection logic for dropped connections, token-level rate limiting.
 
@@ -206,7 +208,7 @@ ${messages
     return summaryPrompt;
   }
 }
-```
+```text
 
 **Strategies**: **Sliding window** — keep most recent N messages. **Summarization** — compress old messages into a summary. **Hybrid** — recent messages in full, older messages summarized. **RAG** — retrieve relevant history from vector database.
 
@@ -284,7 +286,7 @@ class PromptCache {
     return Math.abs(hash).toString(36);
   }
 }
-```
+```text
 
 **Cache hit scenarios**: Repeated system prompts, popular first messages, template-based prompts. Cache miss adds 100-500ms to TTFT (time-to-first-token). Hit can reduce to ~10ms.
 
@@ -360,7 +362,7 @@ class LLMRequestQueue {
     return total;
   }
 }
-```
+```text
 
 **Rate limit tiers**: Free users: 20 req/min, 100K tokens/month. Pro users: 100 req/min, 10M tokens/month. Enterprise: custom limits with reserved capacity.
 
@@ -453,7 +455,7 @@ class ConversationStore {
       .slice(0, limit);
   }
 }
-```
+```text
 
 **Storage considerations**: Use PostgreSQL or Cosmos DB for production. Shard by user_id. Implement TTL for conversation retention (90 days for free, indefinite for paid). Full-text search on conversation content.
 
@@ -511,7 +513,7 @@ class ChatGPTService {
     // Generate only the new tokens after cached prefix
   }
 }
-```
+```text
 
 ---
 
@@ -732,6 +734,7 @@ d) Redis with no persistence
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 07-system-design
@@ -741,6 +744,7 @@ d) Redis with no persistence
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

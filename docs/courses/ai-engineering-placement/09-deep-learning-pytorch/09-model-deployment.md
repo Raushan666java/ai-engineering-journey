@@ -13,12 +13,13 @@
 
 ## Introduction
 
-09-deep-learning-pytorch is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding model deployment is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering model deployment.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -49,7 +50,7 @@ flowchart TB
     L --> N[PyTorch Mobile]
     M --> N
     G & H & K & N --> O[Production Inference]
-```
+```text
 
 ## 9.1 TorchScript
 
@@ -141,11 +142,11 @@ class ModelWithControlFlow(nn.Module):
 model = SimpleModel()
 example = torch.randn(1, 3, 32, 32)
 
-# Tracing works for models without control flow
+## Tracing works for models without control flow
 traced = TorchScriptExporter.trace(model, example, "model_traced.pt")
 scripted = TorchScriptExporter.script(model, "model_scripted.pt")
 
-# Compare outputs
+## Compare outputs
 with torch.no_grad():
     original_out = model(example)
     traced_out = traced(example)
@@ -154,11 +155,11 @@ with torch.no_grad():
 print(f"Tracing speed: original={torch.no_grad().__class__.__name__}")
 print(f"Outputs match: {torch.allclose(original_out, traced_out)}")
 
-# Tracing fails for control flow models — use scripting instead
+## Tracing fails for control flow models — use scripting instead
 model_cf = ModelWithControlFlow()
 scripted_cf = TorchScriptExporter.script(model_cf, "model_cf_scripted.pt")
 print(f"Control flow model scripted successfully")
-```
+```text
 
 **JIT compilation benefits**:
 ```python
@@ -214,7 +215,7 @@ class JITBenchmark:
 jit_bench = JITBenchmark()
 x_gpu = torch.randn(1, 3, 32, 32)
 print("JIT benchmarking requires CUDA for accurate GPU timing")
-```
+```text
 
 ---
 
@@ -302,14 +303,14 @@ example_input = torch.randn(1, 3, 32, 32)
 exporter = ONNXExporter(model_simple, example_input, "model.onnx")
 exporter.export(opset_version=17, dynamic_batch=True)
 
-# Validate
+## Validate
 info = ONNXExporter.validate_onnx("model.onnx")
 print(f"ONNX model: {info['nodes']} nodes, {info['params']} params")
 for name, shape in info["inputs"]:
     print(f"  Input '{name}': {shape}")
 for name, shape in info["outputs"]:
     print(f"  Output '{name}': {shape}")
-```
+```text
 
 **ONNX Runtime inference**:
 ```python
@@ -343,7 +344,7 @@ class ONNXRuntimeSession:
 ort_session = ONNXRuntimeSession("model.onnx")
 latency = ort_session.benchmark((1, 3, 32, 32), iterations=500)
 print(f"ONNX Runtime avg latency: {latency:.2f}ms per inference")
-```
+```text
 
 ---
 
@@ -447,7 +448,7 @@ config = TorchServeConfig.generate_model_archive(
     serialized_file="model_traced.pt", handler_file="resnet_handler.py"
 )
 print(f"TorchServe model archive config generated for {config['model_name']}")
-```
+```text
 
 **Creating a MAR file (Model Archive)**:
 ```python
@@ -482,7 +483,7 @@ class ModelArchiveBuilder:
             "url": f"http://localhost:8080/predictions/{data_url.split('/')[-1]}",
             "headers": {"Content-Type": "application/octet-stream"},
         }
-```
+```text
 
 ---
 
@@ -582,7 +583,7 @@ class QuantizationConfig:
         return ["fbgemm", "qnnpack", "onednn", "x86"]
 
 
-# Dynamic quantization demo
+## Dynamic quantization demo
 quant_model = nn.Sequential(
     nn.Linear(100, 50),
     nn.ReLU(),
@@ -595,13 +596,13 @@ print(f"Dynamic Q: FP32={size_comparison['fp32_kb']:.1f}KB, "
       f"Int8={size_comparison['int8_kb']:.1f}KB "
       f"({size_comparison['reduction_pct']:.0f}% reduction)")
 
-# Compare inference speed
+## Compare inference speed
 x = torch.randn(100, 100)
 with torch.no_grad():
     fp32_time = torch.cuda.Event(enable_timing=True) if torch.cuda.is_available() else None
 
 print(f"Dynamic quantization reduces model size by ~75% with minimal accuracy loss")
-```
+```text
 
 ---
 
@@ -706,7 +707,7 @@ print(f"Pruning: {sparsity['sparsity_pct']:.1f}% weights zeroed "
       f"({sparsity['zero_params']}/{sparsity['total_params']})")
 print(f"Original params: {original_params}, after pruning: "
       f"{original_params - sparsity['zero_params']}")
-```
+```text
 
 ---
 
@@ -777,17 +778,17 @@ float[] scores = outputTensor.getDataAsFloatArray();
         return java_code
 
 
-# Mobile export demo
+## Mobile export demo
 mobile_model = SimpleModel()
 mobile_exporter = PyTorchMobileExporter(mobile_model, (3, 32, 32), "simple_model")
 mobile_script = mobile_exporter.export_for_mobile()
 
-# Quantize for mobile
+## Quantize for mobile
 quantized_mobile = PyTorchMobileExporter.quantize_for_mobile(mobile_script)
 x_demo = torch.randn(1, 3, 32, 32)
 bench = PyTorchMobileExporter.benchmark_mobile(quantized_mobile, x_demo, 200)
 print(f"Mobile model latency: {bench['latency_ms']:.2f}ms per inference")
-```
+```text
 
 **End-to-end deployment pipeline**:
 ```python
@@ -843,7 +844,7 @@ artifacts = pipeline.full_pipeline()
 report = DeploymentPipeline.size_report(artifacts)
 for r in report:
     print(f"{r['artifact']:20s}: {r['size_kb']:8.1f} KB")
-```
+```text
 
 ---
 
@@ -954,6 +955,7 @@ d) .onnx
 ---
 
 > **Previous**: [08-training-pipelines.md](08-training-pipelines.md) | **Next**: [10-deployment-best-practices.md](10-deployment-best-prac
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 09-deep-learning-pytorch
@@ -963,6 +965,7 @@ d) .onnx
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

@@ -35,7 +35,7 @@ flowchart LR
     E --> F[Project Presentation]
     F --> G[Open Source & Writing]
     G --> H[Tailoring Strategy]
-```
+```text
 
 ## 10.1 ATS Optimization
 
@@ -52,7 +52,7 @@ Applicant Tracking Systems parse resumes before humans see them. If your resume 
 - Use bullet points (standard round dots, not custom characters)
 
 ```python
-# ATS keyword matching tool
+## ATS keyword matching tool
 import re
 
 def analyze_ats_score(resume_text: str, job_description: str) -> dict:
@@ -94,13 +94,13 @@ def analyze_ats_score(resume_text: str, job_description: str) -> dict:
         ],
     }
 
-# Usage
+## Usage
 resume = "Senior Backend Engineer with 6 years of Python experience..."
 job = "We're looking for a Backend Engineer with Python, AWS, and PostgreSQL skills..."
 result = analyze_ats_score(resume, job)
 print(f"ATS Score: {result['ats_score']}%")
 print(f"Missing: {result['missing_keywords']}")
-```
+```text
 
 **ATS tests**: Paste your resume into a plain text file (Notepad) to see how a parser reads it. If sections are jumbled or text is missing, reformat. Run through jobscan.co or similar ATS simulators.
 
@@ -118,11 +118,11 @@ Every bullet point should demonstrate impact. Use the CAR method: Challenge → 
 **Powerful action verbs**: Designed, Architected, Led, Optimized, Implemented, Migrated, Automated, Reduced, Improved, Built, Delivered, Spearheaded, Transformed.
 
 ```python
-# Bullet point generator
+## Bullet point generator
 def improve_bullet_point(weak: str, verb: str, tech: str, metric: str) -> str:
     return f"{verb} {weak.lower().lstrip('worked on ')} using {tech}, {metric}"
 
-# Examples
+## Examples
 weak_bullets = [
     "Worked on the recommendation system",
     "Helped with database migrations",
@@ -147,7 +147,7 @@ improvements = [
 for i, (weak, strong) in enumerate(zip(weak_bullets, improvements)):
     print(f"Before: {weak}")
     print(f"After:  {strong}\n")
-```
+```text
 
 **Quantification rules**: Use specific numbers when possible (seconds, percentages, dollars). Use estimated ranges if exact numbers aren't known ("reduced costs by ~30%"). Compare to a baseline ("cut latency from 2s to 300ms"). Include scale ("served 10M API requests/day").
 
@@ -168,7 +168,7 @@ A well-structured resume guides the reader's eye and highlights the most importa
 7. **Additional**: Publications, talks, open source, certifications, languages.
 
 ```python
-# Resume section validation
+## Resume section validation
 def validate_resume_sections(resume_sections: dict) -> list[str]:
     issues = []
     required = ["contact", "experience"]
@@ -212,7 +212,7 @@ def _check_projects(proj: list) -> list[str]:
         if not p.get("tech_stack"):
             issues.append(f"Project '{p.get('name')}' missing tech stack")
     return issues
-```
+```text
 
 **Length guidelines**: <5 years experience: 1 page. 5-10 years: 1-2 pages. 10+ years: 2 pages max. Recruiters spend 6-7 seconds scanning a resume — put the most important information at the top.
 
@@ -229,7 +229,7 @@ LinkedIn is where recruiters find you. An optimized profile dramatically increas
 **Experience**: Mirror your resume but expand slightly. Use the same strong bullet points. Have colleagues write recommendations (2-3 recommendations = significantly higher engagement).
 
 ```python
-# LinkedIn profile optimizer
+## LinkedIn profile optimizer
 def optimize_linkedin_sections(sections: dict) -> dict:
     suggestions = {}
 
@@ -259,7 +259,7 @@ def optimize_linkedin_sections(sections: dict) -> dict:
 
     return suggestions
 
-# Skills to add (backend/AI focus)
+## Skills to add (backend/AI focus)
 RECOMMENDED_LINKEDIN_SKILLS = [
     "Python", "Go", "TypeScript",
     "Amazon Web Services (AWS)", "Docker", "Kubernetes",
@@ -271,7 +271,7 @@ RECOMMENDED_LINKEDIN_SKILLS = [
     "CI/CD", "Terraform", "Git",
     "Apache Kafka", "Elasticsearch",
 ]
-```
+```text
 
 **LinkedIn SEO tips**: Set your location to a tech hub (San Francisco Bay Area, New York, Seattle, Austin, London). Keep your profile set to "Open to Work" (visible only to recruiters). Post or share technical content weekly. Engage with others' posts (meaningful comments, not just likes). Connect with recruiters at target companies.
 
@@ -289,7 +289,7 @@ A portfolio website showcases your work, personality, and technical skills. It's
 - **Contact**: Email, social links, contact form
 
 ```python
-# Portfolio project card template
+## Portfolio project card template
 def project_card(name: str, description: str, tech_stack: list[str], highlights: list[str],
                  github_url: str = None, live_url: str = None, image_url: str = None) -> str:
     tech_badges = " ".join(f'<span class="tech-badge">{t}</span>' for t in tech_stack)
@@ -308,7 +308,7 @@ def project_card(name: str, description: str, tech_stack: list[str], highlights:
     </div>
 </div>"""
 
-# Example
+## Example
 print(project_card(
     name="RAG-Powered Documentation Search",
     description="Enterprise documentation search system using Retrieval-Augmented Generation. Indexes 10K+ documents and provides natural language answers with source citations.",
@@ -321,7 +321,7 @@ print(project_card(
     github_url="https://github.com/username/rag-docs",
     live_url="https://demo.example.com",
 ))
-```
+```text
 
 **Technical implementation**: Use a static site generator (Next.js, Hugo, Astro) for performance. Deploy via Vercel, Netlify, or GitHub Pages. Add Google Analytics (or Plausible) for traffic tracking. Include a link to your GitHub and LinkedIn.
 
@@ -336,7 +336,7 @@ How you present your projects matters as much as the project itself. A well-docu
 **GitHub README**: Your README is the entry point. Include: project name and one-line description, detailed description with screenshots, tech stack, architecture diagram (Mermaid), setup instructions, API documentation (if applicable), and contribution guidelines.
 
 ```python
-# README template
+## README template
 README_TEMPLATE = """# {project_name}
 
 {one_line_description}
@@ -354,7 +354,7 @@ flowchart TB
     B --> D[Service 2]
     C --> E[(Database)]
     D --> F[(Cache)]
-```
+```text
 
 ## Tech Stack
 
@@ -379,7 +379,7 @@ flowchart TB
 git clone https://github.com/{username}/{repo}
 cd {repo}
 docker-compose up
-```
+```text
 
 ### Configuration
 Copy `.env.example` to `.env` and fill in the required values.
@@ -403,7 +403,7 @@ Copy `.env.example` to `.env` and fill in the required values.
 
 ```bash
 pytest tests/ --cov=src --cov-report=term-missing
-```
+```text
 
 ## Deployment
 
@@ -415,7 +415,7 @@ Deployed on AWS ECS with Terraform. CI/CD via GitHub Actions.
 - [Related project 1](link)
 """
 
-# Project quality checklist
+## Project quality checklist
 def project_quality_score(project: dict) -> dict:
     score = 0
     checks = []
@@ -459,7 +459,7 @@ def project_quality_score(project: dict) -> dict:
         checks.append("Architecture diagram")
 
     return {"score": score, "checks": checks, "max": 100}
-```
+```text
 
 **Demo best practices**: Deploy to a free tier (Railway, Render, Fly.io). Include test credentials in the README. Add a demo video (Loom) for complex workflows. Make the demo self-contained (no local setup required).
 
@@ -476,7 +476,7 @@ Open source contributions and technical writing demonstrate community engagement
 **Technical blogging**: Shows communication skills and depth of knowledge. Topics: how you solved a specific problem, architecture decisions, comparisons of technologies, tutorials, case studies.
 
 ```python
-# Blog post topic generator
+## Blog post topic generator
 def generate_blog_topics(skills: list[str], experiences: list[str]) -> list[str]:
     topics = []
 
@@ -503,13 +503,13 @@ def generate_blog_topics(skills: list[str], experiences: list[str]) -> list[str]
 
     return topics[:15]
 
-# Example
+## Example
 skills = ["FastAPI", "LangChain", "PostgreSQL", "Docker", "Redis"]
 experiences = ["Optimized API latency by 86%", "Migrated monolith to microservices"]
 topics = generate_blog_topics(skills, experiences)
 for topic in topics:
     print(f"- {topic}")
-```
+```text
 
 **Where to publish**: Medium (built-in audience), Dev.to (developer community), Hashnode (custom domain), Substack (newsletter), or your own blog (full control). Cross-post to LinkedIn for additional reach. Consistency matters more than perfection — aim for one post every 2-4 weeks.
 
@@ -527,7 +527,7 @@ A generic resume sent to every company is less effective than a tailored one. Cu
 - **Projects**: Include projects most relevant to the role. Add a "Relevant Experience" section if changing domains.
 
 ```python
-# Resume tailoring tool
+## Resume tailoring tool
 def tailor_resume(base_resume: dict, job_description: str) -> dict:
     jd_lower = job_description.lower()
     tailored = {"experience": [], "skills": [], "projects": []}
@@ -552,7 +552,7 @@ def tailor_resume(base_resume: dict, job_description: str) -> dict:
 
     return tailored
 
-# Cover letter generator
+## Cover letter generator
 def generate_cover_letter(role: str, company: str, your_skills: list[str],
                           company_tech: list[str], specific_reason: str) -> str:
     return f"""Dear Hiring Manager,
@@ -568,7 +568,7 @@ I'd love to discuss how my experience with [key skill] can help {company} achiev
 Best regards,
 [Your Name]"""
 
-# Example
+## Example
 print(generate_cover_letter(
     role="Senior Backend Engineer",
     company="AI Platform Co.",
@@ -576,7 +576,7 @@ print(generate_cover_letter(
     company_tech=["Go", "Kafka", "PyTorch", "Kubernetes"],
     specific_reason="your focus on building real-time ML infrastructure that serves millions of predictions per second"
 ))
-```
+```text
 
 **Application tracking**: Use a spreadsheet to track applications — company, role, date applied, follow-up date, status, notes. Apply to 10-15 companies in parallel. Follow up after 1 week if no response.
 
@@ -1023,6 +1023,7 @@ d) 15+
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 21-interview-preparation
@@ -1032,6 +1033,7 @@ d) 15+
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

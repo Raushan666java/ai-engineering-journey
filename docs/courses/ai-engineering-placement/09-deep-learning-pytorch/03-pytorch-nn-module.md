@@ -1,5 +1,6 @@
 # PyTorch nn.Module — nn.Module, nn.Sequential, Custom Layers, Weight Init
 
+
 ## Learning Objectives
 
 | Objective | Description |
@@ -11,14 +12,16 @@
 | LO5 | Use nn.ModuleList and nn.ModuleDict for dynamic architectures |
 | LO6 | Implement forward hooks and backward hooks for debugging |
 
+
 ## Introduction
 
-09-deep-learning-pytorch is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding pytorch nn module is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering pytorch nn module.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -29,6 +32,7 @@
 | 3.4 | Weight Initialization | apply(), reset_parameters(), custom init |
 | 3.5 | Parameter Management | named_parameters(), buffers, modules(), state_dict |
 | 3.6 | Hooks | forward hooks, backward hooks, feature extraction |
+
 
 ## Chapter Roadmap
 
@@ -42,6 +46,7 @@ flowchart LR
     E --> F
     F --> G[Output]
 ```
+
 
 ## 3.1 nn.Module Basics
 
@@ -82,6 +87,7 @@ print(f"Evaluation mode: {model.training}")
 
 ---
 
+
 ## 3.2 nn.Sequential
 
 Sequential is a container for layers called in order.
@@ -94,7 +100,7 @@ model = nn.Sequential(
 x = torch.randn(5, 10)
 print(f"Sequential output: {model(x).shape}")
 
-# Named sequential
+## Named sequential
 model2 = nn.Sequential(OrderedDict([
     ("fc1", nn.Linear(10, 64)),
     ("relu", nn.ReLU()),
@@ -106,6 +112,7 @@ model2.add_module("dropout", nn.Dropout(0.1))
 **When to use Sequential**: Simple feed-forward without branching or skip connections.
 
 ---
+
 
 ## 3.3 Custom Layers
 
@@ -144,6 +151,7 @@ print(f"Residual output: {block(x).shape}")
 
 ---
 
+
 ## 3.4 Weight Initialization
 
 ```python
@@ -155,7 +163,7 @@ def init_weights(m: nn.Module):
 model = nn.Sequential(nn.Linear(100, 200), nn.ReLU(), nn.Linear(200, 10))
 model.apply(init_weights)
 
-# Various init schemes
+## Various init schemes
 layer = nn.Linear(100, 100)
 nn.init.xavier_uniform_(layer.weight)
 nn.init.kaiming_normal_(layer.weight, mode="fan_out")
@@ -165,6 +173,7 @@ print(f"Init schemes tested on Linear(100,100)")
 ```
 
 ---
+
 
 ## 3.5 Parameter Management
 
@@ -179,16 +188,17 @@ total = sum(p.numel() for p in model.parameters())
 trainable = sum(p.numel() for p in model.parameters() if p.requires_grad)
 print(f"Total: {total:,}, Trainable: {trainable:,}")
 
-# Freeze layers
+## Freeze layers
 for param in model.fc1.parameters():
     param.requires_grad = False
 
-# Buffers (non-trainable)
+## Buffers (non-trainable)
 bn = nn.BatchNorm1d(10)
 print(f"Buffers: {[n for n, _ in bn.named_buffers()]}")
 ```
 
 ---
+
 
 ## 3.6 Hooks
 
@@ -209,7 +219,7 @@ output = model(x)
 for name, act in activations.items():
     print(f"{name}: shape={act.shape}, mean={act.mean():.4f}")
 
-# Backward hook
+## Backward hook
 gradients = {}
 def get_grad(name):
     def hook(module, grad_input, grad_output):
@@ -222,17 +232,18 @@ F.mse_loss(model(x), y).backward()
 
 ---
 
+
 ## 3.7 Model Surgery and Dynamic Architectures
 
 Sometimes we need to modify an existing model by swapping layers, adding branches, or composing sub-networks dynamically.
 
 ```python
-# Replace last layer for transfer learning
+## Replace last layer for transfer learning
 model = SimpleMLP(10, 64, 2)
 model.fc3 = nn.Linear(64, 10)  # Replace last layer
 print(f"New output: {model(torch.randn(5, 10)).shape}")
 
-# Add a new branch
+## Add a new branch
 class DualOutputMLP(nn.Module):
     def __init__(self, base: SimpleMLP, extra_dim: int):
         super().__init__()
@@ -255,6 +266,7 @@ print(f"Main: {m.shape}, Extra: {e.shape}")
 **Use cases**: Multi-task learning, auxiliary loss computation, feature pyramid networks.
 
 ---
+
 
 ## TypeScript Parallel
 
@@ -285,6 +297,7 @@ const out = seq.forward(Array.from({length: 5}, () => Array.from({length: 10}, (
 console.log(`Output shape: [${out.length}, ${out[0].length}]`);
 ```
 
+
 ## Summary
 
 - nn.Module is the base class for all PyTorch neural network components, providing parameter tracking, device management, and serialization
@@ -300,6 +313,7 @@ console.log(`Output shape: [${out.length}, ${out[0].length}]`);
 - Model surgery (swapping branches, adding heads) enables transfer learning and multi-task architectures
 - DistributedDataParallel wraps nn.Module for multi-GPU training with minimal code changes
 
+
 ## Practical Takeaways
 
 | Scenario | Do This | Avoid This |
@@ -314,6 +328,7 @@ console.log(`Output shape: [${out.length}, ${out[0].length}]`);
 | Weight initialization | model.apply(init_fn) | Manual per-layer loops |
 | Scripting for production | torch.jit.script | Relying on full Python runtime |
 | Deploy cross-platform | torch.onnx.export | Framework-specific format |
+
 
 ## Interview Q&A
 
@@ -336,6 +351,7 @@ console.log(`Output shape: [${out.length}, ${out[0].length}]`);
 <details class="tp-qa-card" data-qid="dl09-q9"><summary>Q9: How do you handle multiple GPUs with nn.Module?</summary><div class="tp-qa-answer"><p>Use nn.DataParallel for simple multi-GPU: model = nn.DataParallel(model). This splits the batch across GPUs, runs the same model on each, and gathers outputs. For better performance, use DistributedDataParallel (DDP): model = DDP(model, device_ids=[local_rank]). DDP is faster (avoids GIL) and recommended for large-scale training. Use torch.nn.parallel.DistributedDataParallel with torch.distributed.launch.</p></div><button class="tp-qa-mark-btn">Mark Reviewed</button><button class="tp-qa-bookmark-btn">Bookmark</button></details>
 
 <details class="tp-qa-card" data-qid="dl09-q10"><summary>Q10: What is torch.jit.script and torch.onnx.export used for?</summary><div class="tp-qa-answer"><p>torch.jit.script (TorchScript) compiles a PyTorch model into a serializable, optimizable representation that can run without Python dependency. torch.onnx.export exports to ONNX format for interoperability with other frameworks (TensorFlow, ONNX Runtime). Both are used for production deployment where you need: faster inference, mobile deployment, or integration with non-Python environments.</p></div><button class="tp-qa-mark-btn">Mark Reviewed</button><button class="tp-qa-bookmark-btn">Bookmark</button></details>
+
 
 ## Chapter Quiz
 
@@ -385,6 +401,7 @@ d) layer.trainable = False
 <details class="tp-qa-card" data-qid="dl09-quiz5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b) param.requires_grad = False</strong></p><p>Setting requires_grad=False prevents gradient computation and parameter updates.</p></div></details>
 
 
+
 ### Advanced: Custom Autograd Function
 
 Sometimes you need a custom operation not covered by standard nn.Modules. Define a custom autograd Function:
@@ -409,6 +426,7 @@ class ClampFunction(torch.autograd.Function):
 Use it: `output = ClampFunction.apply(x, -1.0, 1.0)`
 
 
+
 ## Exercises
 
 **Easy** — Create a 3-layer MLP using nn.Sequential. Count the number of parameters.
@@ -431,6 +449,7 @@ Use it: `output = ClampFunction.apply(x, -1.0, 1.0)`
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 09-deep-learning-pytorch
@@ -440,6 +459,7 @@ Use it: `output = ClampFunction.apply(x, -1.0, 1.0)`
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

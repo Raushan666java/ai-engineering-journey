@@ -13,12 +13,13 @@
 
 ## Introduction
 
-16-mlops-production is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding cost management is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering cost management.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -44,7 +45,7 @@ flowchart LR
     G --> I[Caching]
     G --> J[Model Pruning]
     H --> K[Reduced Cost]
-```
+```text
 
 ## 7.1 ML Cost Components
 
@@ -130,7 +131,7 @@ costs = CostBreakdown(
     data_transfer=50.0
 )
 print(json.dumps(calc.total_monthly_cost(costs), indent=2))
-```
+```text
 
 **Typical cost distribution for ML systems**:
 
@@ -228,7 +229,7 @@ class SpotInstanceManager:
 manager = SpotInstanceManager()
 completed, epochs = manager.train_with_preemption_handling(10)
 print(f"Training {'completed' if completed else 'interrupted'} at epoch {epochs}")
-```
+```text
 
 **Resource optimization strategies**:
 
@@ -271,7 +272,7 @@ class TrainingOptimizer:
 opt = TrainingOptimizer()
 rec = opt.recommend_instance_type(50, 350, 100)
 print(json.dumps(rec, indent=2))
-```
+```text
 
 ---
 
@@ -351,16 +352,16 @@ opt = InferenceCostOptimizer()
 # Cache savings example
 print(json.dumps(opt.cache_savings(1_000_000, 0.4, 0.0001), indent=2))
 
-# Batching savings
+## Batching savings
 print(json.dumps(opt.batching_savings(100, 32, 0.002), indent=2))
 
-# Distillation cost-benefit
+## Distillation cost-benefit
 print(json.dumps(opt.model_distillation_cost_benefit(0.0005, 0.0001, 0.95, 0.93, 10_000_000), indent=2))
 
-# LLM cost per request
+## LLM cost per request
 llm_cost = opt.llm_cost_per_request(500, 200, "gpt-4-turbo")
 print(f"LLM cost per request: ${llm_cost:.5f}")
-```
+```text
 
 **Inference optimization decision matrix**:
 
@@ -437,7 +438,7 @@ print(json.dumps(estimate, indent=2))
 
 budget_check = tracker.budget_check(estimate["estimated_cost_spot"], 50.0)
 print(json.dumps(budget_check, indent=2))
-```
+```text
 
 **Cost tracking by team/project**:
 
@@ -487,7 +488,7 @@ dash.add_run("run2", "ml-platform", "fraud-detection", 120.50, 48.6)
 dash.add_run("run3", "nlp-team", "sentiment-analysis", 230.10, 92.8)
 print(json.dumps(dash.summary(), indent=2))
 print(f"NLP Team total: ${dash.team_cost('nlp-team')}")
-```
+```text
 
 ---
 
@@ -568,7 +569,7 @@ dash.plot_model_cost_comparison({
     "Fine-tuned BERT": 350,
     "Random Forest": 45
 })
-```
+```text
 
 ---
 
@@ -673,7 +674,7 @@ print(json.dumps(check, indent=2))
 workflow = BudgetApprovalWorkflow(auto_approve_threshold=100)
 result = workflow.request_approval("large-scale-train", 5000, "Retrain on full dataset for production release")
 print(json.dumps(result, indent=2))
-```
+```text
 
 ---
 
@@ -711,7 +712,7 @@ class CostTracker {
     };
   }
 }
-```
+```text
 
 ---
 
@@ -925,6 +926,7 @@ d) 100%
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 16-mlops-production
@@ -934,6 +936,7 @@ d) 100%
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

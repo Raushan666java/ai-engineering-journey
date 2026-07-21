@@ -1,17 +1,20 @@
 # Low-Level and OOD Design
 
+
 ## Learning Objectives
 
 After this chapter you will be able to design class hierarchies for common interview problems, apply SOLID principles to object-oriented design, handle concurrency and edge cases in design, and communicate tradeoffs during object-oriented design (OOD) rounds.
 
+
 ## Introduction
 
-21-interview-preparation is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding ood design is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering ood design.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Theory
 
 ```mermaid
@@ -26,6 +29,7 @@ flowchart TD
     H -->|Refine| B
     H -->|Done| I[Code]
 ```
+
 
 ### What OOD Interviews Test
 
@@ -43,6 +47,7 @@ The standard framework:
 4. Handle edge cases and concurrency
 5. Discuss extensibility and tradeoffs
 
+
 ### Common Entities in OOD Problems
 
 Most OOD problems share entity types:
@@ -51,6 +56,7 @@ Most OOD problems share entity types:
 - Enums for types and statuses (SpotSize, Direction, State)
 - Strategies for algorithms (PricingStrategy, SchedulingStrategy)
 
+
 ### Concurrency in OOD
 
 For multi-user systems (parking lot, library, restaurant), consider thread safety:
@@ -58,6 +64,7 @@ For multi-user systems (parking lot, library, restaurant), consider thread safet
 - ConcurrentHashMap or explicit locks
 - Atomic counters for unique IDs
 - ReadWriteLock for read-heavy workloads
+
 
 ### Design Patterns in OOD
 
@@ -69,13 +76,17 @@ Common patterns used in OOD solutions:
 - Command: queuing operations (elevator requests)
 - State: object behaves differently based on internal state (elevator moving/idle)
 
+
 ## Examples
 
+
 ### Problem 1: Parking Lot
+
 
 ### Requirements
 
 Design a parking lot with multiple levels. Each level has spots of different sizes (small, medium, large). The system should assign the nearest available spot, handle different vehicle types (motorcycle, car, truck), track payment by hour, and support disabled spots.
+
 
 ### Entities
 
@@ -206,6 +217,7 @@ class ParkingLot {
 }
 ```
 
+
 ### Discussion Points
 
 - Nearest spot vs efficiency: scanning all levels can be optimized by maintaining available spot queues per level
@@ -214,11 +226,14 @@ class ParkingLot {
 - Electric vehicle charging spots: subclass ParkingSpot with charger capability
 - Validation: license plate uniqueness, maximum stay duration
 
+
 ## Problem 2: Design a Logger
+
 
 ### Requirements
 
 Design a library that supports multiple log levels (DEBUG, INFO, WARN, ERROR), multiple outputs (console, file, network), configurable formatting (timestamp, level, message), and performance logging with configurable sampling.
+
 
 ### Design
 
@@ -342,6 +357,7 @@ class Logger {
 }
 ```
 
+
 ### Discussion Points
 
 - Async logging: log calls should not block the application. Use a background queue or ring buffer
@@ -350,11 +366,14 @@ class Logger {
 - Structured logging: JSON format for log aggregation systems (ELK, Datadog)
 - Sampling strategy: rate limiting per source, adaptive sampling during high traffic
 
+
 ## Problem 3: Design a Rate Limiter Library
+
 
 ### Requirements
 
 Design a reusable rate limiter that supports token bucket, sliding window, and fixed window algorithms. It should be configurable per client, thread-safe, support distributed deployment via Redis, and emit metrics.
+
 
 ### Design
 
@@ -462,6 +481,7 @@ class RateLimiterFactory {
 }
 ```
 
+
 ### Discussion Points
 
 - Distributed rate limiting: use Redis with Lua scripts for atomic token operations
@@ -470,11 +490,14 @@ class RateLimiterFactory {
 - Backpressure: HTTP 429 with Retry-After header
 - Race conditions: use atomic operations (CAS, Redis Lua) for concurrent safety
 
+
 ## Problem 4: Design a Vending Machine
+
 
 ### Requirements
 
 Design a vending machine that supports multiple product types, different payment methods (cash, card), inventory tracking, change calculation, and state machine for operations.
+
 
 ### Design
 
@@ -579,9 +602,11 @@ class VendingMachine {
 }
 ```
 
+
 ## Summary
 
 OOD interviews test your ability to translate real-world systems into clean, extensible code. Follow the framework: clarify requirements, identify entities, define interfaces, implement core logic, discuss tradeoffs. Always consider concurrency, extensibility, and edge cases. Use design patterns appropriately but do not force them. Practice with the four problems in this chapter (parking lot, logger, rate limiter, vending machine) and extend them with new features.
+
 
 ## Practical Takeaways
 
@@ -592,6 +617,7 @@ OOD interviews test your ability to translate real-world systems into clean, ext
 - Handle errors gracefully: throw specific exceptions, validate inputs
 - Discuss tradeoffs: simplicity vs features, performance vs readability
 - Practice with a whiteboard or plain text editor (no IDE autocomplete)
+
 
 ## Chapter Quiz
 
@@ -631,6 +657,7 @@ OOD interviews test your ability to translate real-world systems into clean, ext
    // correct: B
 
 #
+
 ## Common Mistakes
 
 1. Not understanding the fundamental concepts before applying them
@@ -648,6 +675,7 @@ OOD interviews test your ability to translate real-world systems into clean, ext
 4. Add a credit card payment processor to the vending machine and handle payment failure gracefully.
 
 5. Design a restaurant reservation system: table management, booking time slots, waitlist, and cance
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 21-interview-preparation
@@ -657,6 +685,7 @@ OOD interviews test your ability to translate real-world systems into clean, ext
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

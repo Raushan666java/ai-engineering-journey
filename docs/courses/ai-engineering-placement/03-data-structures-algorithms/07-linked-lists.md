@@ -19,6 +19,7 @@ Stacks and queues are fundamental LIFO and FIFO data structures. They appear in 
 
 - Array basics
 - Basic programming
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart LR
     E --> F[Reverse]
     E --> G[Cycle Detect]
     E --> H[Merge/Sort]
-```
+```text
 
 A linked list is a linear data structure where elements (nodes) are stored at non-contiguous memory locations, connected via pointers.
 
@@ -67,18 +68,18 @@ class DoublyListNode:
         self.prev = prev
         self.next = next
 
-# Build: 1 -> 2 -> 3 -> None
+## Build: 1 -> 2 -> 3 -> None
 head = ListNode(1)
 head.next = ListNode(2)
 head.next.next = ListNode(3)
 
-# Build: 1 <-> 2 <-> 3 <-> None
+## Build: 1 <-> 2 <-> 3 <-> None
 d1 = DoublyListNode(1)
 d2 = DoublyListNode(2)
 d3 = DoublyListNode(3)
 d1.next = d2; d2.prev = d1
 d2.next = d3; d3.prev = d2
-```
+```text
 
 ## 7.2 Basic Operations
 
@@ -98,7 +99,7 @@ def get_length(head):
         count += 1
         head = head.next
     return count
-```
+```text
 
 **Insertion**:
 
@@ -129,7 +130,7 @@ def insert_at_position(head, val, pos):
     new_node.next = current.next
     current.next = new_node
     return head
-```
+```text
 
 **Deletion**:
 
@@ -145,7 +146,7 @@ def delete_node(head, key):
     if current.next:
         current.next = current.next.next
     return head
-```
+```text
 
 ## 7.3 Reversal Techniques
 
@@ -161,7 +162,7 @@ def reverse_iterative(head):
         prev = curr
         curr = next_temp
     return prev  # new head
-```
+```text
 
 **Recursive reversal**:
 
@@ -173,7 +174,7 @@ def reverse_recursive(head):
     head.next.next = head
     head.next = None
     return new_head
-```
+```text
 
 **Reverse k nodes at a time**:
 
@@ -195,7 +196,7 @@ def reverse_k_group(head, k):
         curr = next_temp
     head.next = reverse_k_group(curr, k)
     return prev
-```
+```text
 
 ## 7.4 Cycle Detection
 
@@ -234,7 +235,7 @@ def cycle_length(head):
         count += 1
         curr = curr.next
     return count
-```
+```text
 
 ## 7.5 Advanced Operations
 
@@ -256,7 +257,7 @@ def is_palindrome(head):
         first_half = first_half.next
         second_half = second_half.next
     return True
-```
+```text
 
 **Merge two sorted lists**:
 
@@ -274,7 +275,7 @@ def merge_two_lists(l1, l2):
         curr = curr.next
     curr.next = l1 or l2
     return dummy.next
-```
+```text
 
 **Remove nth node from end**:
 
@@ -290,7 +291,7 @@ def remove_nth_from_end(head, n):
         second = second.next
     second.next = second.next.next
     return dummy.next
-```
+```text
 
 **Add two numbers** (represented as reversed lists):
 
@@ -309,7 +310,7 @@ def add_two_numbers(l1, l2):
         if l1: l1 = l1.next
         if l2: l2 = l2.next
     return dummy.next
-```
+```text
 
 ## 7.6 Doubly Linked Lists
 
@@ -349,7 +350,7 @@ def traverse_backward(tail):
         result.append(tail.val)
         tail = tail.prev
     return result
-```
+```text
 
 ---
 
@@ -394,7 +395,7 @@ function mergeTwoLists(l1: ListNode | null, l2: ListNode | null): ListNode | nul
     curr.next = l1 || l2;
     return dummy.next;
 }
-```
+```text
 
 ---
 
@@ -613,6 +614,7 @@ a) O(1)  b) O(n)  c) O(log n)  d) O(n^2)
 3. Forgetting that stacks can be implemented with arrays
 4. Not using monotonic stack for next greater element
 5. Mixing up push/pop vs enqueue/dequeue
+
 ## Revision Notes
 
 - Stack: LIFO — push, pop, peek
@@ -620,6 +622,7 @@ a) O(1)  b) O(n)  c) O(log n)  d) O(n^2)
 - Monotonic stack for next greater/smaller element
 - BFS uses queue, DFS uses stack
 - Two stacks can simulate a queue
+
 ## Placement Section
 
 ### Top 10 Interview Questions

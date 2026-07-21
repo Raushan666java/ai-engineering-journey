@@ -13,12 +13,13 @@
 
 ## Introduction
 
-18-multimodal-ai-voice is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding speech to text is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering speech to text.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -52,7 +53,7 @@ flowchart TB
         F --> I[Diarization]
         I --> J[Speaker Labels]
     end
-```
+```text
 
 ## 5.1 ASR Fundamentals
 
@@ -178,7 +179,7 @@ class AudioAugmenter:
         f_start = np.random.randint(0, aug.shape[0] - f)
         aug[f_start:f_start + f, :] = 0
         return aug
-```
+```text
 
 ## 5.2 Acoustic Modeling
 
@@ -303,7 +304,7 @@ class LASModel(nn.Module):
                 outputs.append(logits)
             logits = torch.cat(outputs, dim=1)
         return logits
-```
+```text
 
 ## 5.3 Language Modeling
 
@@ -410,7 +411,7 @@ class BeamSearchDecoder:
     def _tokens_to_text(self, tokens: List[int]) -> str:
         char_map = " abcdefghijklmnopqrstuvwxyz'"
         return ''.join(char_map[t] if t < len(char_map) else '' for t in tokens)
-```
+```text
 
 ## 5.4 Wav2Vec
 
@@ -536,7 +537,7 @@ class ContrastivePretraining:
         ) / mask.sum().clamp(min=1)
 
         return loss
-```
+```text
 
 ## 5.5 Whisper
 
@@ -650,7 +651,7 @@ class WhisperSegmenter:
         m = int((seconds % 3600) // 60)
         s = seconds % 60
         return f"{h:02d}:{m:02d}:{s:06.3f}"
-```
+```text
 
 ## 5.6 Speaker Diarization
 
@@ -746,7 +747,7 @@ class DiarizationPipeline:
             linkage='average'
         )
         return clustering.fit_predict(embeddings)
-```
+```text
 
 ## 5.7 Noise Robustness
 
@@ -822,7 +823,7 @@ class MultiChannelASR:
         enhanced = np.einsum('fct,cft->ft', weights.squeeze(-1),
                              np.array(channel_stfts))
         return librosa.istft(enhanced)
-```
+```text
 
 ## 5.8 Evaluation & Deployment
 
@@ -991,7 +992,7 @@ class ASRServer:
                 text.append(char_map[t] if t < len(char_map) else '')
             prev = t
         return ''.join(text)
-```
+```text
 
 ## Summary
 
@@ -1323,6 +1324,7 @@ Speech-to-text technology has evolved from traditional GMM-HMM systems to end-to
 9. **Multi-Channel Processing**: Create a simulated linear array of 4 microphones. Generate delays for a sound source at 30° azimuth. Apply delay-and-sum beamforming to enhance the source. Compare the enhanced signal's ASR WER with a single-channel baseline.
 
 10. **ASR Server with Batching**: Build a batch ASR inference server. Process 1, 8, 32, and 64 audio files concurrently. Measure throughput (audio-seconds/second) and RTF. At what batch size does throughput satur
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 18-multimodal-ai-voice
@@ -1332,6 +1334,7 @@ Speech-to-text technology has evolved from traditional GMM-HMM systems to end-to
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

@@ -13,12 +13,13 @@
 
 ## Introduction
 
-07-system-design is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding microservices architecture is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering microservices architecture.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart LR
     E --> F[Data Management]
     F --> G[Observability]
     G --> H[Deployment]
-```
+```text
 
 ## 2.1 Monolith vs Microservices
 
@@ -75,7 +76,7 @@ DDD helps identify service boundaries.
 **Ubiquitous Language**: Common language shared by developers and domain experts.
 
 ```python
-# Order bounded context
+## Order bounded context
 class Order:
     def __init__(self, order_id, user_id, items, total):
         self.order_id = order_id
@@ -88,30 +89,30 @@ class Order:
         self.status = "confirmed"
         # Emit domain event
         DomainEvents.raise(OrderConfirmed(self.order_id))
-```
+```text
 
 ## 2.3 Service Communication
 
 **Synchronous**: REST (HTTP), gRPC, GraphQL. Simple but creates coupling.
 
 ```python
-# REST communication
+## REST communication
 import requests
 
 def get_user_orders(user_id):
     response = requests.get(f"http://order-service/users/{user_id}/orders")
     return response.json()
 
-# gRPC (protocol buffers)
-# service OrderService {
-#   rpc GetUserOrders (UserRequest) returns (OrderList);
-# }
-```
+## gRPC (protocol buffers)
+## service OrderService {
+##   rpc GetUserOrders (UserRequest) returns (OrderList);
+## }
+```text
 
 **Asynchronous**: Message queues (RabbitMQ, Kafka), event-driven. Loose coupling.
 
 ```python
-# Event-driven communication
+## Event-driven communication
 class OrderService:
     def create_order(self, order_data):
         order = Order.create(order_data)
@@ -121,7 +122,7 @@ class OrderService:
 class NotificationService:
     def on_order_created(self, event):
         send_email(event.user_id, f"Order {event.order_id} confirmed")
-```
+```text
 
 | Pattern | Pros | Cons |
 |---------|------|------|
@@ -149,7 +150,7 @@ class APIGateway:
         # Add auth, rate limiting, logging
         response = forward_to_service(service, request)
         return response
-```
+```text
 
 **Gateway responsibilities**:
 - Request routing
@@ -177,7 +178,7 @@ class ServiceRegistry:
 
     def discover(self, name):
         return self.services.get(name)
-```
+```text
 
 ## 2.6 Data Management
 
@@ -186,7 +187,7 @@ class ServiceRegistry:
 **Saga pattern**: Distributed transaction across services using a sequence of local transactions with compensating actions on failure.
 
 ```python
-# Choreography-based Saga
+## Choreography-based Saga
 class OrderSaga:
     def create_order(self, order_data):
         try:
@@ -202,7 +203,7 @@ class OrderSaga:
             payment_service.refund(order.user_id, order.total)
             order_service.cancel(order.id)
             raise
-```
+```text
 
 ## 2.7 Observability
 
@@ -216,7 +217,7 @@ class StructuredLogger:
     def info(self, message, **kwargs):
         log_entry = {"message": message, "level": "info", **kwargs}
         print(json.dumps(log_entry))
-```
+```text
 
 **Metrics**: Request rate, error rate, latency (Prometheus metrics).
 
@@ -229,7 +230,7 @@ flowchart LR
     C --> D[Payment Service: 100ms]
     C --> E[Inventory Service: 15ms]
     A --> F[Product Service: 8ms]
-```
+```text
 
 ## 2.8 Deployment Patterns
 
@@ -271,7 +272,7 @@ class MicroserviceOrchestrator {
     return graph;
   }
 }
-```
+```text
 
 ---
 
@@ -445,12 +446,12 @@ flowchart LR
         PA --> PB[Proxy Sidecar]
         PB --> SB[Service B]
     end
-```
+```text
 
 **Istio features**:
 
 ```yaml
-# Traffic management
+## Traffic management
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
 metadata:
@@ -471,7 +472,7 @@ spec:
         - destination:
             host: reviews
             subset: v1
-```
+```text
 
 **Service mesh capabilities**:
 - Traffic splitting (canary, blue-green)
@@ -509,7 +510,7 @@ class ChaosExperiment:
         return response
 
 chaos = ChaosExperiment("api-failure", 0.05)
-```
+```text
 
 **Principles of chaos engineering**:
 - Start with a steady-state hypothesis
@@ -538,7 +539,7 @@ class EventStore:
         for event in self.get_events(aggregate_id):
             state.update(event["data"])
         return state
-```
+```text
 
 **CQRS** (Command Query Responsibility Segregation):
 
@@ -555,7 +556,7 @@ class QueryHandler:
         return read_db.query(
             "SELECT * FROM order_summaries WHERE user_id = ?", user_id
         )
-```
+```text
 
 ## Microservices Migration Patterns
 
@@ -578,6 +579,7 @@ class QueryHandler:
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 07-system-design
@@ -587,6 +589,7 @@ class QueryHandler:
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

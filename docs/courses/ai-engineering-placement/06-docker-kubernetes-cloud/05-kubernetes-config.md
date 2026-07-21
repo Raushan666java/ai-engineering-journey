@@ -13,12 +13,13 @@
 
 ## Introduction
 
-06-docker-kubernetes-cloud is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding kubernetes config is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering kubernetes config.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart LR
     E --> F[Network Polices]
     F --> G[Ingress/TLS]
     G --> H[Quotas]
-```
+```text
 
 ## 5.1 ConfigMaps in Depth
 
@@ -53,7 +54,7 @@ ConfigMaps decouple configuration from container images.
 kubectl create configmap app-config --from-literal=APP_ENV=production
 kubectl create configmap app-config --from-file=config.json
 kubectl create configmap app-config --from-env-file=.env
-```
+```text
 
 **Consumption**:
 
@@ -71,7 +72,7 @@ spec:
     - name: config
       configMap:
         name: app-config
-```
+```text
 
 Updates: env vars require Pod restart; volume mounts sync within ~2 minutes.
 
@@ -82,7 +83,7 @@ Secrets are base64 encoded. Use encryption at rest for production.
 ```bash
 kubectl create secret generic db-secret --from-literal=password=secret
 kubectl create secret docker-registry regcred --docker-server=registry.example.com --docker-username=user --docker-password=pass
-```
+```text
 
 **External Secrets Operator**:
 
@@ -98,7 +99,7 @@ spec:
     - secretKey: DB_PASSWORD
       remoteRef:
         key: /production/db/password
-```
+```text
 
 **Sealed Secrets**: Encrypt with kubeseal for safe Git storage.
 
@@ -111,25 +112,25 @@ helm list
 helm upgrade my-release -f values-prod.yaml
 helm rollback my-release 1
 helm uninstall my-release
-```
+```text
 
 **Chart structure**: Chart.yaml, values.yaml, templates/, charts/.
 
 ## 5.4 Kustomize
 
 ```yaml
-# base/kustomization.yaml
+## base/kustomization.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
   - deployment.yaml
 commonLabels:
   app: my-app
-```
+```text
 
 ```bash
 kubectl apply -k overlays/production/
-```
+```text
 
 ## 5.5 RBAC and Service Accounts
 
@@ -147,7 +148,7 @@ apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: my-app-sa
-```
+```text
 
 ## 5.6 Network Policies
 
@@ -167,7 +168,7 @@ spec:
               app: frontend
       ports:
         - port: 8000
-```
+```text
 
 ## 5.7 Ingress and TLS
 
@@ -194,7 +195,7 @@ spec:
                 name: api-service
                 port:
                   number: 8000
-```
+```text
 
 ## 5.8 Resource Quotas and Limits
 
@@ -221,7 +222,7 @@ spec:
     requests.cpu: "4"
     requests.memory: 8Gi
     pods: "10"
-```
+```text
 
 ---
 
@@ -239,7 +240,7 @@ function generateDeployment(name: string, image: string, replicas: number): stri
   ];
   return lines.join("\n");
 }
-```
+```text
 
 ---
 
@@ -405,7 +406,7 @@ d) Gateway
 **Dependency management**: Helm charts can depend on other charts using the `dependencies` field in Chart.yaml.
 
 ```yaml
-# Chart.yaml
+## Chart.yaml
 dependencies:
   - name: postgresql
     version: "12.x"
@@ -413,15 +414,15 @@ dependencies:
     condition: postgresql.enabled
     alias: db
 
-# Install with dependencies
-# helm dependency update
-# helm install my-release . --set db.postgresql.enabled=true
-```
+## Install with dependencies
+## helm dependency update
+## helm install my-release . --set db.postgresql.enabled=true
+```text
 
 **Go template functions in Helm templates**:
 
 ```yaml
-# templates/configmap.yaml
+## templates/configmap.yaml
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -436,12 +437,12 @@ data:
   {{- if .Values.features.metrics }}
   METRICS_ENABLED: "true"
   {{- end }}
-```
+```text
 
 **Helm hooks** for lifecycle management:
 
 ```yaml
-# templates/migration-job.yaml
+## templates/migration-job.yaml
 apiVersion: batch/v1
 kind: Job
 metadata:
@@ -458,7 +459,7 @@ spec:
         - name: migrate
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           command: ["python", "manage.py", "migrate"]
-```
+```text
 
 ## Pod Security Standards
 
@@ -473,7 +474,7 @@ metadata:
     pod-security.kubernetes.io/enforce: restricted
     pod-security.kubernetes.io/audit: restricted
     pod-security.kubernetes.io/warn: baseline
-```
+```text
 
 **Security context best practices**:
 
@@ -497,7 +498,7 @@ spec:
         capabilities:
           drop: ["ALL"]
         readOnlyRootFilesystem: true
-```
+```text
 
 ## Common Troubleshooting Commands
 
@@ -520,6 +521,7 @@ spec:
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 06-docker-kubernetes-cloud
@@ -529,6 +531,7 @@ spec:
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

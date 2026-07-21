@@ -1,5 +1,6 @@
 # ML Fundamentals — Supervised, Unsupervised, Bias-Variance
 
+
 ## Learning Objectives
 
 | Objective | Description |
@@ -11,6 +12,7 @@
 | LO5 | Evaluate models using accuracy, precision, recall, F1, and ROC-AUC |
 | LO6 | Identify underfitting and overfitting using learning curves |
 
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -20,6 +22,7 @@
 | 1.3 | Data Preprocessing | Scaling, encoding, missing values, outliers |
 | 1.4 | Train/Test Split | Holdout, stratification, temporal split |
 | 1.5 | Evaluation Metrics | Accuracy, precision, recall, F1, ROC-AUC, confusion matrix |
+
 
 ## Chapter Roadmap
 
@@ -37,9 +40,11 @@ flowchart LR
     G -->|Yes| I[Deploy]
 ```
 
+
 ## Introduction
 
 Machine learning fundamentals are the bedrock of every AI engineering role — from building recommendation systems to training production classifiers. Before you can fine-tune a transformer or deploy an ML model, you must master data preprocessing, bias-variance analysis, train/test splitting, and evaluation metrics. This chapter provides the theoretical and practical foundation that every subsequent module in this course builds upon.
+
 
 ## Prerequisites
 
@@ -47,11 +52,14 @@ Machine learning fundamentals are the bedrock of every AI engineering role — f
 - High school statistics (mean, standard deviation, probability)
 - Familiarity with linear algebra concepts (vectors, matrices) is helpful but not required
 
+
 ## Theory
+
 
 ### 1.1 ML Paradigms
 
 **Supervised learning**: Model learns from labeled data (input-output pairs). Used for classification and regression.
+
 
 
 ## Examples
@@ -76,6 +84,7 @@ interface SupervisedModel {
 **Reinforcement learning**: Agent learns by interacting with environment, receiving rewards/penalties.
 
 ---
+
 
 ### 1.2 Bias-Variance Trade-off
 
@@ -122,6 +131,7 @@ function analyzeBiasVariance(
 **Rule of thumb**: Simple models (linear regression) have high bias, low variance. Complex models (deep neural networks) have low bias, high variance.
 
 ---
+
 
 ### 1.3 Data Preprocessing
 
@@ -200,6 +210,7 @@ class DataPreprocessor {
 ```
 
 ---
+
 
 ### 1.4 Train/Test Split
 
@@ -303,6 +314,7 @@ class TrainTestSplitter {
 
 ---
 
+
 ### 1.5 Evaluation Metrics
 
 ```typescript
@@ -392,6 +404,7 @@ class MetricsCalculator {
 
 ---
 
+
 ## Visual Analogy
 
 Think of machine learning like **learning to cook**:
@@ -404,6 +417,7 @@ Think of machine learning like **learning to cook**:
 - **Test set** = Cooking for a friend who hasn't tried your food before — the real test is whether your cooking tastes good to someone new, not whether you can repeat what you already know.
 
 This helps because ML is fundamentally about **generalization** — learning patterns from examples so you can handle new, unseen situations, just like a good cook adapts recipes to whatever ingredients are available.
+
 
 ## TypeScript Parallel
 
@@ -436,6 +450,7 @@ class MLEngine {
 
 ---
 
+
 ## Summary
 
 - Supervised learning uses labeled data; unsupervised finds patterns in unlabeled data
@@ -449,6 +464,7 @@ class MLEngine {
 - Learning curves help diagnose underfitting (high bias) vs overfitting (high variance)
 - Always preprocess test data using statistics computed from training data only
 
+
 ## Practical Takeaways
 
 | Scenario | Do This | Avoid This |
@@ -458,6 +474,7 @@ class MLEngine {
 | Model selection | Cross-validation + holdout | Single train/test split |
 | Missing data | Impute with mean/median or model | Dropping rows with missing values |
 | Overfitting | Regularization, more data, simpler model | Adding more features blindly |
+
 
 ## Interview Q&A
 
@@ -471,6 +488,7 @@ class MLEngine {
 <details class="tp-qa-card" data-qid="ml08-q8"><summary class="tp-qa-question"><span class="tp-qa-status"></span>Q8: What is the difference between supervised and unsupervised learning?</summary><div class="tp-qa-answer"><p><strong>Supervised</strong>: Model learns from labeled data (input-output pairs). Goal: predict output for new inputs. Examples: regression, classification. <strong>Unsupervised</strong>: Model finds patterns in unlabeled data. Goal: discover inherent structure. Examples: clustering, dimensionality reduction, anomaly detection. There's also semi-supervised (mix of labeled and unlabeled) and self-supervised (model creates its own labels from data structure).</p></div><button class="tp-qa-mark-btn">✅ Mark Reviewed</button><button class="tp-qa-bookmark-btn">🔖 Bookmark</button></details>
 <details class="tp-qa-card" data-qid="ml08-q9"><summary class="tp-qa-question"><span class="tp-qa-status"></span>Q9: How do you diagnose underfitting vs overfitting?</summary><div class="tp-qa-answer"><p><strong>Underfitting</strong> (high bias): High training error, high validation error (similar). Learning curves: both errors converge to high value. Fix: increase model complexity, add features, reduce regularization. <strong>Overfitting</strong> (high variance): Low training error, high validation error (large gap). Learning curves: training error below validation error with divergence. Fix: more training data, reduce model complexity, add regularization, feature selection, early stopping.</p></div><button class="tp-qa-mark-btn">✅ Mark Reviewed</button><button class="tp-qa-bookmark-btn">🔖 Bookmark</button></details>
 <details class="tp-qa-card" data-qid="ml08-q10"><summary class="tp-qa-question"><span class="tp-qa-status"></span>Q10: Explain the ROC curve and AUC.</summary><div class="tp-qa-answer"><p>ROC (Receiver Operating Characteristic) curve plots True Positive Rate (recall) against False Positive Rate at various threshold settings. AUC (Area Under Curve) measures the model's ability to distinguish between classes. AUC = 1: perfect classifier. AUC = 0.5: random classifier. AUC is threshold-independent and works well for imbalanced datasets. Interpretation: AUC is the probability that a randomly chosen positive ranks higher than a randomly chosen negative.</p></div><button class="tp-qa-mark-btn">✅ Mark Reviewed</button><button class="tp-qa-bookmark-btn">🔖 Bookmark</button></details>
+
 
 ## Chapter Quiz
 
@@ -570,6 +588,7 @@ d) Feature importance
 
 ---
 
+
 ## Common Mistakes
 
 1. Using accuracy for imbalanced datasets — 99% accuracy on a dataset with 99% negative class means the model learns nothing; use F1 or ROC-AUC
@@ -577,6 +596,7 @@ d) Feature importance
 3. Ignoring the bias-variance trade-off — adding more features reduces bias but increases variance; you must monitor both training and validation metrics
 4. Using a single train/test split for model comparison — cross-validation gives more robust estimates; a single lucky split can mislead
 5. Dropping rows with missing values without analysis — missing data often carries information (e.g., "not applicable"); imputation preserves more signal
+
 
 ## Revision Notes
 
@@ -589,11 +609,14 @@ d) Feature importance
 - Learning curves: high training + high validation error = underfitting; low training + high validation error = overfitting
 - Always preprocess test data using statistics from training data only to prevent data leakage
 
+
 ## Summary
 
 Machine learning fundamentals form the theoretical and practical base for all AI engineering work. The three learning paradigms — supervised, unsupervised, and reinforcement — each serve different problem types. The bias-variance trade-off explains why models underfit or overfit and guides model selection. Data preprocessing (standardization, encoding, missing value imputation) is critical for model performance. Train/test splitting with stratification and k-fold cross-validation provide reliable performance estimates. Evaluation metrics beyond accuracy — precision, recall, F1, ROC-AUC — are essential for imbalanced real-world datasets.
 
+
 ## Placement Section
+
 
 ### Top 10 Interview Questions
 
@@ -617,10 +640,12 @@ Machine learning fundamentals form the theoretical and practical base for all AI
 1. You need to build a sentiment analysis model with only 200 labeled samples. What approaches do you use and how do you evaluate the model reliably?
 2. A startup client wants to predict customer churn but has no ML expertise. How do you frame the problem, choose metrics, and communicate results?
 
+
 ### Resume Tips
 - List "Machine Learning" under Technical Skills with specific libraries (scikit-learn, pandas, NumPy)
 - Project example: "Built end-to-end ML pipeline with stratified cross-validation, achieving F1=0.87 on imbalanced fraud detection dataset"
 - Include ML-specific metrics in project descriptions: "Reduced false negative rate by 35% through threshold optimization and SMOTE oversampling"
+
 
 ### Interview Day Checklist
 - [ ] Can explain bias-variance trade-off with a visual diagram from memory

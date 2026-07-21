@@ -12,12 +12,13 @@
 
 ## Introduction
 
-13-ai-agents-langgraph is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding human in the loop is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering human in the loop.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -42,7 +43,7 @@ flowchart TD
     E --> G[Human Takes Over]
     C --> H[Collect Feedback]
     H --> I[Learn & Improve]
-```
+```text
 
 ## 7.1 HITL Patterns
 
@@ -105,7 +106,7 @@ policy = HITLPolicy(approval_threshold=0.7, escalation_threshold=0.4)
 print(policy.evaluate("send_email", 0.85, "low"))
 print(policy.evaluate("delete_record", 0.65, "high"))
 print(policy.evaluate("unknown_action", 0.3, "critical"))
-```
+```text
 
 ## 7.2 Approval Workflows
 
@@ -161,7 +162,7 @@ rid = gate.request_approval("req-1", "send_email", {"to": "user@example.com", "b
 print(f"Before: {gate.check_status(rid)}")
 gate.approve(rid)
 print(f"After approval: {gate.check_status(rid)}")
-```
+```text
 
 ### 7.2.2 Multi-Step Approval
 
@@ -200,7 +201,7 @@ msa = MultiStepApproval(required_approvers=2)
 req = msa.request("req-2", "delete_data", {"table": "users"})
 print(msa.approve("req-2", "manager-1"))
 print(msa.approve("req-2", "compliance-1"))
-```
+```text
 
 ### 7.2.3 Timeout-Based Approval
 
@@ -249,7 +250,7 @@ class TimeoutApproval:
 toa = TimeoutApproval(timeout_seconds=5, auto_approve=False)
 toa.submit("req-3", "update_settings", {"setting": "theme"})
 print(f"Immediately: {toa.check('req-3')}")
-```
+```text
 
 ## 7.3 Escalation Handling
 
@@ -308,7 +309,7 @@ def human_handoff(escalation: Dict) -> str:
 esc_mgr = EscalationManager(human_handoff)
 result = esc_mgr.escalate("agent-1", "Security concern detected", {"action": "delete_user"}, "tier3")
 print(f"Escalation result: {result['action']}")
-```
+```text
 
 ### 7.3.2 Confidence-Based Escalation
 
@@ -335,7 +336,7 @@ class ConfidenceEscalator:
 ce = ConfidenceEscalator(0.4)
 print(ce.check_and_escalate("complex question", {"confidence": 0.3}, esc_mgr))
 print(ce.check_and_escalate("simple question", {"confidence": 0.9}, esc_mgr))
-```
+```text
 
 ## 7.4 Feedback Collection
 
@@ -379,7 +380,7 @@ fc.collect("agent-1", "What is RAG?", "RAG is...", 5, "Great explanation!")
 fc.collect("agent-1", "Complex math", "I don't know", 2, "Not helpful")
 print(f"Average rating: {fc.get_average_rating('agent-1'):.2f}")
 print(f"Low-rated responses: {len(fc.get_low_rated(2))}")
-```
+```text
 
 ### 7.4.2 Preference Learning
 
@@ -415,7 +416,7 @@ pl = PreferenceLearner()
 pl.record_preference("user-1", "tone", "professional")
 pl.record_preference("user-1", "detail_level", "high")
 print(f"User preference: {pl.get_preference('user-1', 'tone')}")
-```
+```text
 
 ### 7.4.3 Corrections
 
@@ -452,7 +453,7 @@ ct = CorrectionTracker()
 ct.record_correction("agent-1", "Wrong fact", "Correct fact", "factual_error")
 ct.record_correction("agent-1", "Bad formatting", "Good formatting", "formatting")
 print(f"Common errors: {ct.get_common_corrections()}")
-```
+```text
 
 ## 7.5 Interrupt & Resume
 
@@ -504,7 +505,7 @@ interrupt.pause("wf-1", state, "Human review needed")
 print(f"Paused workflows: {len(interrupt.get_paused())}")
 resumed_state = interrupt.resume("wf-1", {"approved": True})
 print(f"Resumed state: {resumed_state}")
-```
+```text
 
 ### 7.5.2 Context Preservation
 
@@ -540,7 +541,7 @@ preserver.save_context("wf-1", {"step": 2, "messages": ["hello", "world"]})
 restored = preserver.restore_context("wf-1")
 print(f"Restored context: {restored}")
 print(f"Versions: {preserver.get_versions('wf-1')}")
-```
+```text
 
 ## 7.6 Design Patterns
 
@@ -581,7 +582,7 @@ class HITLPatternSelector:
 selector = HITLPatternSelector()
 patterns = selector.recommend("high", "medium", "critical")
 print(f"Recommended patterns: {[p for p in patterns]}")
-```
+```text
 
 ### 7.6.2 HITL Integration
 
@@ -615,7 +616,7 @@ class HITLIntegratedAgent:
 hitl_agent = HITLIntegratedAgent(gate, fc, interrupt)
 print(hitl_agent.process_with_hitl("High risk task", "high"))
 print(hitl_agent.process_with_hitl("Simple task", "low"))
-```
+```text
 
 ## Summary
 
@@ -818,6 +819,7 @@ Answer: B
 4. Implement an interrupt/resume mechanism for a multi-step workflow. Save state after each step, pause at step 3, modify the state, resume, and verify continuity.
 
 5. Design a HITL pattern recommendation system that takes task risk, autonomy preference, and task type as input and recommends specific patterns with confi
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 13-ai-agents-langgraph
@@ -827,6 +829,7 @@ Answer: B
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

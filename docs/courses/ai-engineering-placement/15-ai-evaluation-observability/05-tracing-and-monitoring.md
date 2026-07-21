@@ -11,12 +11,13 @@
 
 ## Introduction
 
-15-ai-evaluation-observability is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding tracing and monitoring is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering tracing and monitoring.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -48,7 +49,7 @@ flowchart LR
     end
     S1 & S2 & S3 --> L
     L & T & C --> D --> A & An
-```
+```text
 
 ## 5.1 Distributed Tracing
 
@@ -136,7 +137,7 @@ time.sleep(0.02)
 tracer.end_span(llm)
 tracer.end_span(root)
 print(f"Trace summary: {tracer.trace_summary(trace_id)}")
-```
+```text
 
 ### 5.1.2 Distributed Context Propagation
 
@@ -170,7 +171,7 @@ headers = propagator.inject("trace-001", "span-001")
 print(f"Injected headers: {headers}")
 ctx = propagator.extract(headers)
 print(f"Extracted context: {ctx}")
-```
+```text
 
 ## 5.2 Latency Monitoring
 
@@ -229,7 +230,7 @@ for i in range(200):
     lt.record("llm_call", np.random.exponential(200))
     lt.record("retrieval", np.random.exponential(50))
 print(f"Latency report: {lt.report()}")
-```
+```text
 
 ### 5.2.2 Bottleneck Detection
 
@@ -268,7 +269,7 @@ spans = [
     Span("retrieval", "s2", "r1", "t1", 5, 25),
 ]
 print(f"Bottlenecks: {detector.detect(spans)}")
-```
+```text
 
 ## 5.3 Throughput & Cost
 
@@ -326,7 +327,7 @@ tt = ThroughputTracker()
 for _ in range(50):
     tt.record_request(200, 50, 0.002)
 print(f"Throughput report: {tt.report()}")
-```
+```text
 
 ### 5.3.2 Cost Per Component
 
@@ -365,7 +366,7 @@ ct.record("llm", 0.003)
 ct.record("embedding", 0.0005)
 ct.record("search", 0.0001)
 print(f"Cost report: {ct.report()}")
-```
+```text
 
 ## 5.4 Dashboards
 
@@ -420,7 +421,7 @@ for i in range(60):
 db = Dashboard("Production Overview", 30)
 db.add_panel(panel)
 print(f"Dashboard: {db.render()}")
-```
+```text
 
 ### 5.4.2 Alert Rules
 
@@ -466,7 +467,7 @@ for lat in [1500, 1800, 2500, 2800, 3100]:
         alert_msg = rule.alert()
         if alert_msg:
             print(alert_msg)
-```
+```text
 
 ## 5.5 Anomaly Detection
 
@@ -520,7 +521,7 @@ for i in range(30):
     bm.update("latency", np.random.normal(200, 50))
 print(f"Baseline: {bm.baselines.get('latency', {})}")
 print(f"Anomaly check on 500ms: {bm.is_anomaly('latency', 500)}")
-```
+```text
 
 ### 5.5.2 Statistical Anomaly Detection
 
@@ -577,7 +578,7 @@ for i in range(20):
         sad.history[metric] = []
     sad.history[metric].append(np.random.normal(200, 30))
 print(f"IQR detection: {sad.iqr_detection('latency', 500)}")
-```
+```text
 
 ## Summary
 
@@ -794,6 +795,7 @@ Answer: B
 4. Build a dashboard with 3 panels: latency (P95 line chart), throughput (RPM gauge), and cost (per-component breakdown). Simulate 1 hour of data.
 
 5. Implement an anomaly detector using both IQR and moving average Z-score methods. Test with a dataset containing 3 anomalous values and evaluate detection 
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 15-ai-evaluation-observability
@@ -803,6 +805,7 @@ Answer: B
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

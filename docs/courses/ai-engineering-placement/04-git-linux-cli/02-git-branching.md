@@ -18,6 +18,7 @@ Branching strategies like GitFlow and trunk-based development enable teams to wo
 ## Prerequisites
 
 - Git basics (init, add, commit)
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -39,7 +40,7 @@ flowchart LR
     D --> E[GitFlow]
     E --> F[Trunk-Based]
     F --> G[Conflict Resolution]
-```
+```text
 
 ## Theory
 
@@ -50,43 +51,43 @@ A branch in Git is a lightweight, movable pointer to a commit. The default branc
 **Creating and listing branches:**
 
 ```bash
-# List local branches (* = current)
+## List local branches (* = current)
 git branch
 
-# List all branches (local + remote)
+## List all branches (local + remote)
 git branch -a
 
-# Create a new branch
+## Create a new branch
 git branch feature/login
 
-# Create a branch from a specific commit
+## Create a branch from a specific commit
 git branch hotfix/bug-123 abc1234
 
-# Rename current branch
+## Rename current branch
 git branch -m old-name new-name
 
-# Delete a branch (safe — only if fully merged)
+## Delete a branch (safe — only if fully merged)
 git branch -d feature/old
 
-# Force delete a branch (even if unmerged)
+## Force delete a branch (even if unmerged)
 git branch -D feature/abandoned
-```
+```text
 
 **Switching branches:**
 
 ```bash
-# Switch to an existing branch
+## Switch to an existing branch
 git switch feature/login
 
-# Create and switch in one command
+## Create and switch in one command
 git switch -c feature/signup
 
-# Legacy syntax (still works)
+## Legacy syntax (still works)
 git checkout feature/login
 
-# Create and switch (legacy)
+## Create and switch (legacy)
 git checkout -b feature/signup
-```
+```text
 
 **What happens when you switch branches:**
 
@@ -97,8 +98,10 @@ flowchart LR
     A[main: commit C] --> B[feature: commit D]
     B --> C[Switch to main]
     C --> D[Files revert to commit C state]
-```
+```text
 
+
+## Overview
 ### 02.2 Merging
 
 Merging brings changes from one branch into another. Git supports two main strategies: fast-forward and three-way merge.
@@ -106,15 +109,15 @@ Merging brings changes from one branch into another. Git supports two main strat
 **Fast-forward merge:**
 
 ```bash
-# Switch to the branch you want to merge INTO
+## Switch to the branch you want to merge INTO
 git switch main
 
-# Merge feature branch
+## Merge feature branch
 git merge feature/login
 
-# If the feature branch is ahead of main with no divergence,
-# Git simply moves the main pointer forward (fast-forward)
-```
+## If the feature branch is ahead of main with no divergence,
+## Git simply moves the main pointer forward (fast-forward)
+```text
 
 ```mermaid
 flowchart LR
@@ -124,26 +127,26 @@ flowchart LR
     subgraph After
     C[main + feature: D]
     end
-```
+```text
 
 **Three-way merge:**
 
 ```bash
-# When both branches have diverged, Git creates a merge commit
+## When both branches have diverged, Git creates a merge commit
 git switch main
 git merge feature/login
 
-# Preserve branch history (no fast-forward)
+## Preserve branch history (no fast-forward)
 git merge --no-ff feature/login
-# Always creates a merge commit — useful for feature branch history
-```
+## Always creates a merge commit — useful for feature branch history
+```text
 
 ```mermaid
 flowchart TD
     A[main: C] --> C[merge commit: E]
     B[feature: D] --> C
     C --> F[main points to E]
-```
+```text
 
 **Merge strategies:**
 
@@ -157,17 +160,19 @@ flowchart TD
 **Squash merge:**
 
 ```bash
-# Combine all feature commits into one commit on main
+## Combine all feature commits into one commit on main
 git switch main
 git merge --squash feature/login
 
-# Review the squashed changes
+## Review the squashed changes
 git diff --staged
 
-# Commit with a clean message
+## Commit with a clean message
 git commit -m "Add user login with OAuth2"
-```
+```text
 
+
+## Overview
 ### 02.3 Rebasing
 
 Rebase replays commits from one branch onto another, creating a linear history. Unlike merge, it rewrites commit hashes.
@@ -175,14 +180,14 @@ Rebase replays commits from one branch onto another, creating a linear history. 
 **Basic rebase:**
 
 ```bash
-# Switch to your feature branch
+## Switch to your feature branch
 git switch feature/login
 
-# Rebase onto main
+## Rebase onto main
 git rebase main
 
-# This replays all feature commits on top of main's latest commit
-```
+## This replays all feature commits on top of main's latest commit
+```text
 
 ```mermaid
 flowchart TD
@@ -192,42 +197,42 @@ flowchart TD
     subgraph After
     C[main: C] --> D[feature: D', E']
     end
-```
+```text
 
 **Interactive rebase (cleaning up history):**
 
 ```bash
-# Rebase the last 5 commits
+## Rebase the last 5 commits
 git rebase -i HEAD~5
 
-# This opens an editor with actions:
+## This opens an editor with actions:
 pick abc1234 Add login form
 pick def5678 Fix typo in login
 pick ghi9012 Add password validation
 pick jkl3456 Fix validation regex
 pick mno7890 Add remember me checkbox
-```
+```text
 
 **Interactive rebase commands:**
 
-```
+```text
 pick   = keep commit as-is
 reword = keep commit, edit message
 edit   = pause to amend commit
 squash = combine with previous commit, keep both messages
 fixup  = combine with previous commit, discard this message
 drop   = remove commit entirely
-```
+```text
 
 Example — squashing fix-up commits:
 
-```
+```text
 pick abc1234 Add login form
 fixup def5678 Fix typo in login
 fixup ghi9012 Fix validation regex
 pick jkl3456 Add password validation
 pick mno7890 Add remember me checkbox
-```
+```text
 
 This produces 3 clean commits instead of 5 messy ones.
 
@@ -240,22 +245,24 @@ Rebase rewrites commit hashes. If others have based work on those commits, rewri
 **Resolving rebase conflicts:**
 
 ```bash
-# During rebase, conflicts may occur
-# Fix the conflicted files, then:
+## During rebase, conflicts may occur
+## Fix the conflicted files, then:
 
-# Stage resolved files
+## Stage resolved files
 git add resolved-file.ts
 
-# Continue the rebase
+## Continue the rebase
 git rebase --continue
 
-# Skip the current commit (if you want to drop it)
+## Skip the current commit (if you want to drop it)
 git rebase --skip
 
-# Abort and return to pre-rebase state
+## Abort and return to pre-rebase state
 git rebase --abort
-```
+```text
 
+
+## Overview
 ### 02.4 GitFlow
 
 GitFlow is a structured branching model designed around release cycles. It uses five branch types.
@@ -272,7 +279,7 @@ flowchart TD
     main --> hotfix[hotfix/crash-fix]
     hotfix --> main
     hotfix --> develop
-```
+```text
 
 **Branch types and roles:**
 
@@ -287,51 +294,53 @@ flowchart TD
 **GitFlow workflow in practice:**
 
 ```bash
-# Start a new feature
+## Start a new feature
 git switch develop
 git switch -c feature/user-profile
 
-# Work on feature...
+## Work on feature...
 git add .
 git commit -m "feat(profile): add user profile page"
 
-# Finish feature — merge into develop
+## Finish feature — merge into develop
 git switch develop
 git merge --no-ff feature/user-profile
 git branch -d feature/user-profile
 
-# Start a release
+## Start a release
 git switch develop
 git switch -c release/v1.2.0
 
-# Bump version, final fixes...
+## Bump version, final fixes...
 git commit -m "chore(release): bump version to 1.2.0"
 
-# Merge release into main
+## Merge release into main
 git switch main
 git merge --no-ff release/v1.2.0
 git tag -a v1.2.0 -m "Release v1.2.0"
 
-# Merge release back into develop
+## Merge release back into develop
 git switch develop
 git merge --no-ff release/v1.2.0
 git branch -d release/v1.2.0
 
-# Hotfix from production
+## Hotfix from production
 git switch main
 git switch -c hotfix/crash-fix
 
-# Fix the bug...
+## Fix the bug...
 git commit -m "fix(auth): prevent crash on invalid token"
 
-# Merge hotfix into main AND develop
+## Merge hotfix into main AND develop
 git switch main
 git merge --no-ff hotfix/crash-fix
 git switch develop
 git merge --no-ff hotfix/crash-fix
 git branch -d hotfix/crash-fix
-```
+```text
 
+
+## Overview
 ### 02.5 Trunk-Based Development
 
 Trunk-based development uses a single main branch (trunk) with very short-lived feature branches. Features are toggled with feature flags rather than long-lived branches.
@@ -344,20 +353,20 @@ Trunk-based development uses a single main branch (trunk) with very short-lived 
 - CI/CD runs on every commit to main
 
 ```bash
-# Short-lived branch workflow
+## Short-lived branch workflow
 git switch main
 git pull
 git switch -c fix/memory-leak
 
-# Quick fix, commit, push
+## Quick fix, commit, push
 git add -A
 git commit -m "fix: resolve memory leak in websocket handler"
 git push origin fix/memory-leak
 
-# Create PR, get reviewed, merge within hours
-# Delete branch immediately after merge
+## Create PR, get reviewed, merge within hours
+## Delete branch immediately after merge
 git branch -d fix/memory-leak
-```
+```text
 
 **Feature flags example:**
 
@@ -367,7 +376,7 @@ if (featureFlags.isEnabled('new-checkout')) {
   return <NewCheckoutFlow />;
 }
 return <LegacyCheckoutFlow />;
-```
+```text
 
 **GitFlow vs Trunk-Based comparison:**
 
@@ -380,19 +389,21 @@ return <LegacyCheckoutFlow />;
 | Feature flags | Optional | Essential |
 | Team size | Large teams | Small to large teams |
 
+
+## Overview
 ### 02.6 Handling Merge Conflicts
 
 Conflicts occur when two branches modify the same lines. Git marks the conflicting sections for manual resolution.
 
 **Conflict markers:**
 
-```
+```text
 <<<<<<< HEAD
 const timeout = 3000;
 =======
 const timeout = 5000;
 >>>>>>> feature/new-timeout
-```
+```text
 
 - `<<<<<<< HEAD` — your current branch's version
 - `=======` — separator
@@ -401,40 +412,40 @@ const timeout = 5000;
 **Resolution workflow:**
 
 ```bash
-# Attempt merge
+## Attempt merge
 git switch main
 git merge feature/new-timeout
-# CONFLICT (content): Merge conflict in config.ts
+## CONFLICT (content): Merge conflict in config.ts
 
-# Check which files have conflicts
+## Check which files have conflicts
 git status
 
-# Open and resolve conflicts in your editor
+## Open and resolve conflicts in your editor
 
-# After resolving, stage the files
+## After resolving, stage the files
 git add config.ts
 
-# Complete the merge
+## Complete the merge
 git commit -m "Merge feature/new-timeout, resolve timeout conflict"
 
-# If things go wrong, abort
+## If things go wrong, abort
 git merge --abort
-```
+```text
 
 **Using a merge tool:**
 
 ```bash
-# Configure a merge tool
+## Configure a merge tool
 git config --global merge.tool vscode
 git config --global mergetool.vscode.cmd 'code --wait $MERGED'
 
-# Launch the merge tool
+## Launch the merge tool
 git mergetool
 
-# After resolving, mark as resolved
+## After resolving, mark as resolved
 git add resolved-file.ts
 git commit
-```
+```text
 
 ## Summary
 
@@ -472,7 +483,7 @@ git commit
 git switch main
 git merge --no-ff feature
 
-# Rebase: linear history
+## Rebase: linear history
 git switch feature
 git rebase main</code></pre>
   </div>
@@ -611,6 +622,7 @@ d) staging
 3. Not writing meaningful branch names
 4. Forgetting to resolve merge conflicts properly
 5. Not using pull requests for code review
+
 ## Revision Notes
 
 - Branch: isolated development line
@@ -618,6 +630,7 @@ d) staging
 - Rebase: linear history, cleaner log
 - GitFlow: main, develop, feature, release, hotfix
 - Trunk-based: single main branch, short-lived feature branches
+
 ## Placement Section
 
 ### Top 10 Interview Questions

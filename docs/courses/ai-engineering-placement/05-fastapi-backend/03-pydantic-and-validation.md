@@ -13,12 +13,13 @@
 
 ## Introduction
 
-05-fastapi-backend is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding pydantic and validation is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering pydantic and validation.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart LR
     E --> F[Error Handling]
     F --> G[Advanced Types]
     G --> H[FastAPI Integration]
-```
+```text
 
 ## 3.1 Pydantic Models
 
@@ -62,7 +63,7 @@ class User(BaseModel):
     is_active: bool = True
     created_at: Optional[datetime] = None
 
-# Automatic validation and parsing
+## Automatic validation and parsing
 user = User(
     id="42",              # int from string — coerced
     name="Alice",
@@ -71,13 +72,13 @@ user = User(
     created_at="2024-01-15T10:30:00Z"  # string to datetime
 )
 print(user.model_dump())
-# {'id': 42, 'name': 'Alice', 'email': 'alice@example.com',
-#  'age': 25, 'is_active': True, 'created_at': datetime(...)}
+## {'id': 42, 'name': 'Alice', 'email': 'alice@example.com',
+##  'age': 25, 'is_active': True, 'created_at': datetime(...)}
 
-# Access as attributes
+## Access as attributes
 print(user.name)   # Alice
 print(user.id)     # 42
-```
+```text
 
 **Type coercion**: Pydantic coerces types by default (int from string, float from int). Use `strict=True` to disable coercion.
 
@@ -89,9 +90,9 @@ class StrictUser(BaseModel):
     id: int
     name: str
 
-# This will raise ValidationError
-# StrictUser(id="42", name="Alice")  # id must be int, not str
-```
+## This will raise ValidationError
+## StrictUser(id="42", name="Alice")  # id must be int, not str
+```text
 
 ## 3.2 Field Validation
 
@@ -121,13 +122,13 @@ class Product(BaseModel):
     def round_price(cls, v: float) -> float:
         return round(v, 2)
 
-# Validation examples
+## Validation examples
 try:
     product = Product(name="Widget", price=9.999, sku="ABC-1234")
 except ValueError as e:
     print(e)
 
-# Model with multiple-field validation
+## Model with multiple-field validation
 class Order(BaseModel):
     items: list[str] = Field(..., min_length=1)
     discount_code: Optional[str] = None
@@ -146,7 +147,7 @@ class Order(BaseModel):
         if len(v) != len(set(v)):
             raise ValueError("Duplicate items not allowed")
         return v
-```
+```text
 
 **Field function parameters**:
 
@@ -192,7 +193,7 @@ class User(BaseModel):
     tags: list[str] = []                 # List of strings
     scores: dict[str, float] = {}       # Dict field
 
-# Creating with nested data
+## Creating with nested data
 user = User(
     id=1,
     name="Alice",
@@ -211,13 +212,13 @@ print(user.address.city)       # Portland
 print(user.profile.bio)        # None (default)
 print(user.tags)               # ['premium', 'vip']
 
-# Recursive models (JSON-style trees)
+## Recursive models (JSON-style trees)
 class TreeNode(BaseModel):
     value: str
     children: list["TreeNode"] = []
 
 TreeNode.model_rebuild()  # Rebuild after definition for recursive types
-```
+```text
 
 ## 3.4 Model Configuration
 
@@ -227,16 +228,16 @@ Control model behavior with `model_config`.
 from pydantic import BaseModel, ConfigDict
 from typing import Optional
 
-# Immutable model (all fields frozen)
+## Immutable model (all fields frozen)
 class Config(BaseModel):
     model_config = ConfigDict(frozen=True)
     api_key: str
     max_connections: int = 10
 
 config = Config(api_key="secret", max_connections=20)
-# config.max_connections = 30  # ValidationError: frozen field
+## config.max_connections = 30  # ValidationError: frozen field
 
-# Allow extra fields (ignore or populate)
+## Allow extra fields (ignore or populate)
 class FlexibleModel(BaseModel):
     model_config = ConfigDict(extra="ignore")  # or "forbid" or "allow"
     name: str
@@ -244,7 +245,7 @@ class FlexibleModel(BaseModel):
 m = FlexibleModel(name="Test", extra_field="ignored")
 print(m.model_dump())  # {"name": "Test"} — extra_field ignored
 
-# Populate by name or alias
+## Populate by name or alias
 class UserAlias(BaseModel):
     model_config = ConfigDict(populate_by_name=True)
     full_name: str = Field(..., alias="fullName")
@@ -253,11 +254,11 @@ u = UserAlias(fullName="Alice Smith")  # Alias in init
 print(u.full_name)  # Alice Smith
 print(u.model_dump(by_alias=True))  # {"fullName": "Alice Smith"}
 
-# Arbitrary types allowed
+## Arbitrary types allowed
 class ArbitraryModel(BaseModel):
     model_config = ConfigDict(arbitrary_types_allowed=True)
     custom_obj: object
-```
+```text
 
 **ConfigDict options**:
 
@@ -304,21 +305,21 @@ event = Event(
     metadata={"attendees": 500}
 )
 
-# Serialize to dict
+## Serialize to dict
 data = event.model_dump()
 print(data)
-# {'id': 1, 'name': 'Conference', 'date': '2025-06-15',
-#  'created_at': '2025-01-01T00:00:00+00:00', 'metadata': {'attendees': 500}}
+## {'id': 1, 'name': 'Conference', 'date': '2025-06-15',
+##  'created_at': '2025-01-01T00:00:00+00:00', 'metadata': {'attendees': 500}}
 
-# Serialize to JSON
+## Serialize to JSON
 json_str = event.model_dump_json(indent=2)
 print(json_str)
 
-# Exclude or include specific fields
+## Exclude or include specific fields
 subset = event.model_dump(include={"id", "name"})
-# {'id': 1, 'name': 'Conference'}
+## {'id': 1, 'name': 'Conference'}
 
-# Exclude unset or defaults
+## Exclude unset or defaults
 class User(BaseModel):
     id: int
     name: str
@@ -327,9 +328,9 @@ class User(BaseModel):
 
 user = User(id=1, name="Alice")
 print(user.model_dump(exclude_unset=True))
-# {'id': 1, 'name': 'Alice'}  — excludes defaults
+## {'id': 1, 'name': 'Alice'}  — excludes defaults
 
-# Custom encoder for non-JSON types
+## Custom encoder for non-JSON types
 from pydantic import BaseModel
 from decimal import Decimal
 
@@ -344,8 +345,8 @@ class PriceModel(BaseModel):
 
 pm = PriceModel(amount=Decimal("19.99"))
 print(pm.model_dump_json())
-# {"amount": 19.99, "currency": "USD"}
-```
+## {"amount": 19.99, "currency": "USD"}
+```text
 
 ## 3.6 Error Handling
 
@@ -375,7 +376,7 @@ except ValidationError as e:
     #   ...
     # ]
 
-# Custom error messages
+## Custom error messages
 from pydantic import field_validator
 
 class ProductReview(BaseModel):
@@ -396,7 +397,7 @@ class ProductReview(BaseModel):
             raise ValueError("Comment contains prohibited content")
         return v
 
-# In FastAPI — automatic 422 response
+## In FastAPI — automatic 422 response
 from fastapi import FastAPI, HTTPException
 
 app = FastAPI()
@@ -405,7 +406,7 @@ app = FastAPI()
 async def create_review(review: ProductReview):
     # If validation fails, FastAPI returns 422 with Pydantic errors
     return {"message": "Review created", "rating": review.rating}
-```
+```text
 
 ## 3.7 Advanced Types
 
@@ -458,7 +459,7 @@ model = AdvancedModel(
 print(model.password)       # SecretStr('**********')
 print(model.password.get_secret_value())  # 'secret123'
 
-# Constrained types
+## Constrained types
 from typing import Annotated
 from pydantic import StringConstraints, Field
 
@@ -470,7 +471,7 @@ class ConstrainedModel(BaseModel):
     full_name: NameStr
     score: PositiveFloat
     items: NonEmptyList
-```
+```text
 
 ## 3.8 FastAPI Integration
 
@@ -503,7 +504,7 @@ class PaginatedResponse(BaseModel):
     page: int
     page_size: int
 
-# Request body validation
+## Request body validation
 @app.post("/users", response_model=UserResponse, status_code=201)
 async def create_user(user: UserCreate):
     # Pydantic validates automatically — 422 on failure
@@ -512,7 +513,7 @@ async def create_user(user: UserCreate):
     user_dict["created_at"] = datetime.now()
     return user_dict
 
-# Query parameter validation
+## Query parameter validation
 @app.get("/users", response_model=PaginatedResponse)
 async def list_users(
     page: int = Query(1, ge=1),
@@ -526,7 +527,7 @@ async def list_users(
     ]
     return PaginatedResponse(data=users, total=1000, page=page, page_size=page_size)
 
-# Union types for different responses
+## Union types for different responses
 from typing import Union
 
 class SuccessResponse(BaseModel):
@@ -544,7 +545,7 @@ async def get_item(item_id: int) -> Union[SuccessResponse, ErrorResponse]:
     if not item:
         return ErrorResponse(message="Item not found")
     return SuccessResponse(data={"id": item_id, "name": item.name})
-```
+```text
 
 ---
 
@@ -580,7 +581,7 @@ const SuccessResponseSchema = z.object({
   status: z.literal("success"),
   data: z.record(z.unknown()),
 });
-```
+```text
 
 ---
 
@@ -751,6 +752,7 @@ d) @check_field
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 05-fastapi-backend
@@ -760,6 +762,7 @@ d) @check_field
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

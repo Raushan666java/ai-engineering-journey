@@ -13,12 +13,13 @@
 
 ## Introduction
 
-01-python-programming is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding modules and packages is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering modules and packages.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -40,14 +41,14 @@ flowchart LR
     F[Packaging] --> G[pip + requirements.txt]
     F --> H[Virtual Environments]
     I[Project Structure] --> J[src layout]
-```
+```text
 
 ## 6.1 Modules
 
 A module is a .py file containing Python definitions.
 
 `python
-# mymodule.py
+## mymodule.py
 PI = 3.14159
 
 def greet(name):
@@ -56,7 +57,7 @@ def greet(name):
 if __name__ == "__main__":
     print(greet("World"))
 
-# Import styles
+## Import styles
 import mymodule
 print(mymodule.greet("Alice"))
 
@@ -293,15 +294,15 @@ import fs from "fs";
 `__all__` controls what is exported when using `from module import *`.
 
 `python
-# utils/__init__.py
+## utils/__init__.py
 __all__ = ["format_date", "parse_csv"]
 
-# Only these two names are accessible via from utils import *
-# Without __all__, import * exports all non-underscore names
+## Only these two names are accessible via from utils import *
+## Without __all__, import * exports all non-underscore names
 `
 
 `python
-# mymodule.py
+## mymodule.py
 __all__ = ["public_func", "CONSTANT"]
 
 def public_func():
@@ -312,8 +313,8 @@ def _private_func():
 
 CONSTANT = 42
 
-# from mymodule import *  --> imports public_func and CONSTANT only
-# from mymodule import _private_func  --> still works explicitly
+## from mymodule import *  --> imports public_func and CONSTANT only
+## from mymodule import _private_func  --> still works explicitly
 `
 
 ## 6.8 Circular Imports
@@ -321,28 +322,28 @@ CONSTANT = 42
 Circular imports happen when two modules import each other.
 
 `python
-# module_a.py
-# from module_b import func_b  # BAD: circular!
+## module_a.py
+## from module_b import func_b  # BAD: circular!
 
 def func_a():
     print("Function A")
 
-# Solution: import inside function (lazy)
+## Solution: import inside function (lazy)
 def use_b():
     from module_b import func_b  # OK: lazy import
     func_b()
 
-# Solution: restructure into a common module
-# common.py: shared definitions used by both A and B
+## Solution: restructure into a common module
+## common.py: shared definitions used by both A and B
 `
 
 `python
-# Good design patterns to avoid circular imports:
-# 1. Move shared types to a base module
-# 2. Use lazy imports inside functions
-# 3. Restructure package hierarchy
-# 4. Use import at the bottom of the file
-# 5. Merge modules that depend on each other
+## Good design patterns to avoid circular imports:
+## 1. Move shared types to a base module
+## 2. Use lazy imports inside functions
+## 3. Restructure package hierarchy
+## 4. Use import at the bottom of the file
+## 5. Merge modules that depend on each other
 `
 
 ## 6.9 Module Reloading
@@ -353,15 +354,15 @@ During development, use `importlib.reload()` to reload modules.
 import importlib
 import mymodule
 
-# After modifying mymodule.py
+## After modifying mymodule.py
 importlib.reload(mymodule)  # re-executes the module code
 
-# Note: reload() does NOT update names imported with "from"
+## Note: reload() does NOT update names imported with "from"
 from mymodule import greet
 importlib.reload(mymodule)
 print(greet("Alice"))  # might still be old version
 
-# Best practice: only use import module, not from module import
+## Best practice: only use import module, not from module import
 `
 
 ## 6.10 Namespace Packages
@@ -369,71 +370,71 @@ print(greet("Alice"))  # might still be old version
 Namespace packages allow splitting a package across multiple directories.
 
 `python
-# No __init__.py needed (PEP 420)
-# Directory structure:
-# project/
-#   mypackage/
-#     sub_a/
-#       module1.py
-#   vendor/
-#     mypackage/
-#       sub_b/
-#         module2.py
+## No __init__.py needed (PEP 420)
+## Directory structure:
+## project/
+##   mypackage/
+##     sub_a/
+##       module1.py
+##   vendor/
+##     mypackage/
+##       sub_b/
+##         module2.py
 
-# Both sub_a and sub_b are part of mypackage namespace
-# import mypackage.sub_a.module1
-# import mypackage.sub_b.module2
-# This enables plugin systems and distributed packages
+## Both sub_a and sub_b are part of mypackage namespace
+## import mypackage.sub_a.module1
+## import mypackage.sub_b.module2
+## This enables plugin systems and distributed packages
 `
 
 ## 6.11 Common Pitfalls
 
 `python
-# Pitfall 1: Import * pollutes namespace
+## Pitfall 1: Import * pollutes namespace
 from math import *  # BAD: 50+ names imported
 print(sin(0))       # can conflict with local variables
 
-# Pitfall 2: Module-level side effects
-# bad_module.py
+## Pitfall 2: Module-level side effects
+## bad_module.py
 import os
 os.chdir("/tmp")    # BAD: importing changes working directory
 
-# Pitfall 3: Circular imports causing AttributeError
-# module_a imports module_b; module_b imports module_a
-# Solution: restructure or use lazy imports
+## Pitfall 3: Circular imports causing AttributeError
+## module_a imports module_b; module_b imports module_a
+## Solution: restructure or use lazy imports
 
-# Pitfall 4: Not using __name__ guard
-# code.py
+## Pitfall 4: Not using __name__ guard
+## code.py
 print("Module loaded")  # runs on import too!
 if __name__ == "__main__":
     print("Script mode only")  # runs only when executed directly
 
-# Pitfall 5: Modifying sys.path
+## Pitfall 5: Modifying sys.path
 sys.path.insert(0, "/my/custom/path")  # affects all subsequent imports
 `
 
 ## 6.12 Advanced Import Techniques
 
 `python
-# Dynamic imports
+## Dynamic imports
 module_name = "json"
 import importlib
 json_module = importlib.import_module(module_name)
 data = json_module.dumps({"key": "value"})
 
-# Import from string path
+## Import from string path
 spec = importlib.util.spec_from_file_location("config", "/path/to/config.py")
 config = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(config)
 print(config.SETTING)  # access module contents
 
-# Package resource access
+## Package resource access
 import pkg_resources
 data_path = pkg_resources.resource_filename("mypackage", "data/config.json")
 
-# Self-contained packages with __main__.py
-# python -m mypackage reads __main__.py entry point
-# Useful for creating runnable packages
+## Self-contained packages with __main__.py
+## python -m mypackage reads __main__.py entry point
+## Useful for creating runnable packages
 `
 
 ## 6.13 TypeScript Module Comparison
@@ -466,50 +467,50 @@ import Calculator from "./Calculator.js";
 `python
 import sys
 
-# Python searches modules in this order:
-# 1. Current directory (script directory)
-# 2. PYTHONPATH environment variable directories
-# 3. Standard library directories
-# 4. Site-packages (third-party packages)
+## Python searches modules in this order:
+## 1. Current directory (script directory)
+## 2. PYTHONPATH environment variable directories
+## 3. Standard library directories
+## 4. Site-packages (third-party packages)
 
 print("Module search paths:")
 for i, path in enumerate(sys.path):
     print(f"  {i}: {path}")
 
-# Adding custom paths (temporary)
+## Adding custom paths (temporary)
 sys.path.insert(0, "/path/to/custom/modules")
 import my_custom_module  # now found
 
-# Virtual environments modify sys.path to point to isolated site-packages
-# python -m venv creates a fresh environment with its own sys.path
+## Virtual environments modify sys.path to point to isolated site-packages
+## python -m venv creates a fresh environment with its own sys.path
 
-# Module cache
+## Module cache
 import sys
 print(sys.modules.keys())  # all currently imported modules
-# Cached modules persist until interpreter exits
-# Reloading (importlib.reload) updates the cached module in-place
+## Cached modules persist until interpreter exits
+## Reloading (importlib.reload) updates the cached module in-place
 `
 
 ## 6.15 Building a Simple Package from Scratch
 
 `python
-# Step-by-step package creation
+## Step-by-step package creation
 
-# Directory structure:
-# text_analyzer/
-#   __init__.py       # package initialization
-#   tokenizer.py      # text tokenization
-#   stats.py          # frequency statistics
-#   utils.py          # helper functions
+## Directory structure:
+## text_analyzer/
+##   __init__.py       # package initialization
+##   tokenizer.py      # text tokenization
+##   stats.py          # frequency statistics
+##   utils.py          # helper functions
 
-# __init__.py
+## __init__.py
 __all__ = ["tokenize", "word_freq", "sentiment_score"]
 
 from .tokenizer import tokenize
 from .stats import word_freq
 from .utils import sentiment_score
 
-# tokenizer.py
+## tokenizer.py
 import re
 
 def tokenize(text: str) -> list[str]:
@@ -520,7 +521,7 @@ def sentence_split(text: str) -> list[str]:
     """Split text into sentences."""
     return re.split(r"[.!?]+", text)
 
-# stats.py
+## stats.py
 from collections import Counter
 
 def word_freq(tokens: list[str]) -> dict[str, int]:
@@ -531,7 +532,7 @@ def most_common(tokens: list[str], n: int = 10) -> list[tuple[str, int]]:
     """Return n most common words."""
     return Counter(tokens).most_common(n)
 
-# utils.py
+## utils.py
 def sentiment_score(text: str) -> float:
     """Simple sentiment scoring (positive words - negative words)."""
     positive = {"good", "great", "excellent", "amazing", "love", "wonderful"}
@@ -541,7 +542,7 @@ def sentiment_score(text: str) -> float:
     neg_count = len(words & negative)
     return (pos_count - neg_count) / max(len(words), 1)
 
-# Usage:
+## Usage:
 from text_analyzer import tokenize, word_freq, sentiment_score
 
 text = "I love this great product! It is amazing and wonderful."
@@ -554,7 +555,7 @@ print(f"Words: {len(tokens)}, Score: {score:.2f}")
 ## 6.16 Testing Your Modules
 
 `python
-# test_tokenizer.py
+## test_tokenizer.py
 import unittest
 from text_analyzer.tokenizer import tokenize, sentence_split
 
@@ -579,8 +580,8 @@ class TestTokenizer(unittest.TestCase):
 if __name__ == "__main__":
     unittest.main()
 
-# Run with: python -m unittest test_tokenizer.py
-# Or: python -m pytest test_tokenizer.py
+## Run with: python -m unittest test_tokenizer.py
+## Or: python -m pytest test_tokenizer.py
 `
 
 ---
@@ -595,6 +596,7 @@ if __name__ == "__main__":
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 01-python-programming
@@ -604,6 +606,7 @@ if __name__ == "__main__":
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

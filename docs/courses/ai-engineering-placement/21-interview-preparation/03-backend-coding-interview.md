@@ -13,12 +13,13 @@
 
 ## Introduction
 
-21-interview-preparation is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding backend coding interview is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering backend coding interview.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart LR
     E --> F[Message Queues]
     F --> G[Microservices]
     G --> H[Security]
-```
+```text
 
 ## 3.1 API Design
 
@@ -123,7 +124,7 @@ def cancel_order(order_id: int):
         raise HTTPException(status_code=409, detail="Order cannot be cancelled")
     order["status"] = OrderStatus.CANCELLED
     return order
-```
+```text
 
 **API versioning**: Use URL-based versioning (`/v1/orders`) or header-based versioning (`Accept: application/vnd.api.v1+json`). URL-based is simpler for initial versions.
 
@@ -143,7 +144,7 @@ from collections import defaultdict
 
 logger = logging.getLogger(__name__)
 
-# Request timing middleware
+## Request timing middleware
 class TimingMiddleware(BaseHTTPMiddleware):
     async def dispatch(self, request: Request, call_next):
         start = time.perf_counter()
@@ -153,7 +154,7 @@ class TimingMiddleware(BaseHTTPMiddleware):
         logger.info(f"{request.method} {request.url.path} - {elapsed:.3f}s")
         return response
 
-# Rate limiting middleware (in-memory, per IP)
+## Rate limiting middleware (in-memory, per IP)
 class RateLimitMiddleware(BaseHTTPMiddleware):
     def __init__(self, app, max_requests: int = 100, window_seconds: int = 60):
         super().__init__(app)
@@ -172,7 +173,7 @@ class RateLimitMiddleware(BaseHTTPMiddleware):
         self.requests[client_ip].append(now)
         return await call_next(request)
 
-# JWT authentication middleware
+## JWT authentication middleware
 class JWTAuthMiddleware(BaseHTTPMiddleware):
     def __init__(self, app, excluded_paths: set[str] = None):
         super().__init__(app)
@@ -197,11 +198,11 @@ class JWTAuthMiddleware(BaseHTTPMiddleware):
         import jwt
         return jwt.decode(token, "secret-key", algorithms=["HS256"])
 
-# Register middleware
+## Register middleware
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 app.add_middleware(TimingMiddleware)
 app.add_middleware(RateLimitMiddleware, max_requests=60, window_seconds=60)
-```
+```text
 
 **Middleware order matters**: Middleware is executed in the order it's added. Put broad middleware (CORS, timing) first, then authentication, then rate limiting.
 
@@ -224,7 +225,7 @@ import concurrent.futures
 import time
 from typing import Any
 
-# Threading example — downloading multiple URLs
+## Threading example — downloading multiple URLs
 def fetch_url(url: str) -> str:
     import requests
     response = requests.get(url, timeout=10)
@@ -235,7 +236,7 @@ def threaded_fetch(urls: list[str]) -> list[str]:
         results = list(executor.map(fetch_url, urls))
     return results
 
-# Asyncio example — non-blocking I/O
+## Asyncio example — non-blocking I/O
 async def async_fetch(session, url: str) -> str:
     async with session.get(url) as response:
         data = await response.read()
@@ -247,7 +248,7 @@ async def async_fetch_all(urls: list[str]) -> list[str]:
         tasks = [async_fetch(session, url) for url in urls]
         return await asyncio.gather(*tasks)
 
-# Multiprocessing example — CPU-bound computation
+## Multiprocessing example — CPU-bound computation
 def compute_heavy(n: int) -> int:
     return sum(i * i for i in range(n))
 
@@ -256,7 +257,7 @@ def parallel_compute(values: list[int]) -> list[int]:
         results = list(executor.map(compute_heavy, values))
     return results
 
-# Synchronization primitives — thread-safe counter
+## Synchronization primitives — thread-safe counter
 class ThreadSafeCounter:
     def __init__(self):
         self._value = 0
@@ -272,7 +273,7 @@ class ThreadSafeCounter:
         with self._lock:
             return self._value
 
-# Async producer-consumer pattern
+## Async producer-consumer pattern
 async def producer(queue: asyncio.Queue, n: int):
     for i in range(n):
         await queue.put(f"item-{i}")
@@ -296,7 +297,7 @@ async def run_pipeline():
     await queue.join()
     for c in consumers:
         c.cancel()
-```
+```text
 
 **GIL implications**: For CPU-bound Python code, threading doesn't provide parallelism. Use multiprocessing, C extensions (NumPy), or alternative runtimes (Jython, IronPython). For I/O-bound code, asyncio is the most efficient model.
 
@@ -319,7 +320,7 @@ from functools import lru_cache
 from typing import Any, Optional
 import redis
 
-# In-memory cache with TTL
+## In-memory cache with TTL
 class TTLCache:
     def __init__(self, ttl_seconds: int = 300):
         self._cache: dict[str, tuple[float, Any]] = {}
@@ -340,7 +341,7 @@ class TTLCache:
     def invalidate(self, key: str) -> None:
         self._cache.pop(key, None)
 
-# Cache-aside pattern with Redis
+## Cache-aside pattern with Redis
 class RedisCache:
     def __init__(self, host: str = "localhost", port: int = 6379, db: int = 0, default_ttl: int = 300):
         self.client = redis.Redis(host=host, port=port, db=db, decode_responses=True)
@@ -363,13 +364,13 @@ class RedisCache:
         self.set(key, str(value), ttl)
         return str(value)
 
-# Using lru_cache for expensive function calls
+## Using lru_cache for expensive function calls
 @lru_cache(maxsize=128)
 def get_user_permissions(user_id: int) -> list[str]:
     # Expensive database query
     return ["read", "write", "admin"]
 
-# Cache invalidation example
+## Cache invalidation example
 class UserService:
     def __init__(self, cache: RedisCache):
         self.cache = cache
@@ -394,7 +395,7 @@ class UserService:
 
     def _update_in_db(self, user_id: int, data: dict) -> dict:
         return {"id": user_id, **data}
-```
+```text
 
 **Common cache strategies**: Cache-aside is the most common — application checks cache first, loads from DB on miss, stores in cache. Read-through cache sits between app and DB transparently. Write-through updates cache synchronously on writes.
 
@@ -416,7 +417,7 @@ from fastapi.testclient import TestClient
 from unittest.mock import Mock, patch
 from datetime import datetime
 
-# Unit test — testing business logic in isolation
+## Unit test — testing business logic in isolation
 def calculate_discount(order_total: float, loyalty_years: int) -> float:
     if loyalty_years >= 5:
         return order_total * 0.15
@@ -439,7 +440,7 @@ class TestCalculateDiscount:
     def test_no_discount(self):
         assert calculate_discount(500, 0) == 0.0
 
-# API integration test with FastAPI TestClient
+## API integration test with FastAPI TestClient
 from main import app
 
 client = TestClient(app)
@@ -466,7 +467,7 @@ class TestOrderAPI:
         assert response.status_code == 200
         assert isinstance(response.json(), list)
 
-# Mocking external dependencies
+## Mocking external dependencies
 class EmailService:
     def send_welcome_email(self, user_email: str) -> bool:
         # Calls external SMTP server
@@ -506,7 +507,7 @@ class TestUserRegistration:
         with pytest.raises(ValueError, match="User already exists"):
             service.register("existing@test.com", "Test")
         mock_email.send_welcome_email.assert_not_called()
-```
+```text
 
 **Testing best practices**: Write tests first (TDD) for bug fixes. Use fixture factories for test data. Aim for 80%+ code coverage but focus on critical paths. Use dependency injection to make code testable.
 
@@ -523,7 +524,7 @@ Message queues decouple services and enable asynchronous processing. Common patt
 **Celery**: Python task queue that uses RabbitMQ or Redis as a broker. Handles periodic tasks, retries, and result storage.
 
 ```python
-# Celery task queue example
+## Celery task queue example
 from celery import Celery
 
 app_celery = Celery(
@@ -541,13 +542,13 @@ def process_order(self, order_id: int) -> dict:
     except Exception as exc:
         raise self.retry(exc=exc)
 
-# Sending tasks asynchronously
+## Sending tasks asynchronously
 def create_and_process_order(user_id: int, items: list[int]):
     order_id = save_order_to_db(user_id, items)
     process_order.delay(order_id)  # Non-blocking
     return {"order_id": order_id, "status": "pending"}
 
-# In-memory queue implementation (for interview coding)
+## In-memory queue implementation (for interview coding)
 from dataclasses import dataclass
 from collections import deque
 import threading
@@ -599,7 +600,7 @@ class SimpleMessageQueue:
                 time.sleep(poll_interval)
         thread = threading.Thread(target=poll, daemon=True)
         thread.start()
-```
+```text
 
 ---
 
@@ -616,7 +617,7 @@ Microservices decompose a backend into independently deployable services. Be rea
 **Inter-service communication**: Synchronous (HTTP/REST, gRPC) or asynchronous (message queues, events). Choose async for loose coupling.
 
 ```python
-# Service example — inventory service
+## Service example — inventory service
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 
@@ -647,7 +648,7 @@ def reserve_inventory(product_id: int, quantity: int):
     item["quantity"] -= quantity
     return {"product_id": product_id, "remaining": item["quantity"]}
 
-# API Gateway pattern (simplified)
+## API Gateway pattern (simplified)
 from fastapi import FastAPI, Request
 import httpx
 
@@ -680,7 +681,7 @@ async def proxy(request: Request, path: str):
             params=dict(request.query_params),
         )
     return response.json()
-```
+```text
 
 **Microservices challenges**: Distributed transactions (use saga pattern), data consistency (eventual consistency), observability (distributed tracing), network latency, and operational complexity.
 
@@ -704,14 +705,14 @@ from datetime import datetime, timedelta
 from typing import Optional
 import jwt
 
-# Password hashing with bcrypt
+## Password hashing with bcrypt
 def hash_password(password: str) -> str:
     return bcrypt.hashpw(password.encode(), bcrypt.gensalt()).decode()
 
 def verify_password(password: str, hashed: str) -> bool:
     return bcrypt.checkpw(password.encode(), hashed.encode())
 
-# JWT token creation and verification
+## JWT token creation and verification
 class JWTHandler:
     def __init__(self, secret: str, algorithm: str = "HS256"):
         self.secret = secret
@@ -735,7 +736,7 @@ class JWTHandler:
         except jwt.InvalidTokenError:
             raise ValueError("Invalid token")
 
-# Role-based access control decorator
+## Role-based access control decorator
 from functools import wraps
 
 def require_role(required_role: str):
@@ -750,7 +751,7 @@ def require_role(required_role: str):
         return wrapper
     return decorator
 
-# Input validation with Pydantic
+## Input validation with Pydantic
 from pydantic import BaseModel, EmailStr, constr
 
 class UserRegistration(BaseModel):
@@ -765,7 +766,7 @@ class UserRegistration(BaseModel):
         if not any(c.isdigit() for c in self.password):
             raise ValueError("Password must contain digit")
 
-# Rate limiting with token bucket algorithm
+## Rate limiting with token bucket algorithm
 class TokenBucket:
     def __init__(self, rate: float, capacity: int):
         self.rate = rate  # tokens per second
@@ -782,7 +783,7 @@ class TokenBucket:
             self.tokens -= tokens
             return True
         return False
-```
+```text
 
 **Common vulnerabilities**: SQL injection (use parameterized queries), XSS (sanitize HTML output), CSRF (use anti-CSRF tokens), SSRF (restrict outbound requests), insecure deserialization (validate input), and dependency vulnerabilities (keep dependencies updated).
 
@@ -1198,7 +1199,7 @@ class OrderCommandHandler:
         self.bus.publish("order.created", {"order_id": order_id})
         return order_id
 
-# Query side (uses separate read-optimized store)
+## Query side (uses separate read-optimized store)
 class OrderQueryService:
     def __init__(self, read_db, cache):
         self.read_db = read_db
@@ -1285,7 +1286,7 @@ async def create_order(order_data: dict):
             datetime.utcnow()
         )
 
-# Step 2: Background process publishes from outbox
+## Step 2: Background process publishes from outbox
 async def outbox_publisher():
     while True:
         messages = await db.fetch(
@@ -1403,7 +1404,7 @@ class OrderShipped:
     order_id: str
     tracking_number: str
 
-# Event bus (in-memory for illustration)
+## Event bus (in-memory for illustration)
 class EventBus:
     def __init__(self):
         self.handlers: dict[str, list] = {}
@@ -1415,7 +1416,7 @@ class EventBus:
         for handler in self.handlers.get(event_type, []):
             handler(event)
 
-# Order service
+## Order service
 class OrderService:
     def __init__(self, event_bus: EventBus):
         self.bus = event_bus
@@ -1426,7 +1427,7 @@ class OrderService:
         self.bus.publish("order.created", OrderCreated(order_id, user_id, items, total))
         return order_id
 
-# Saga coordinator subscribes to events and triggers next steps
+## Saga coordinator subscribes to events and triggers next steps
 class OrderSaga:
     def __init__(self, bus, payment_svc, inventory_svc, shipping_svc):
         bus.subscribe("order.created", self.on_order_created)
@@ -1519,6 +1520,7 @@ d) 503
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 21-interview-preparation
@@ -1528,6 +1530,7 @@ d) 503
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

@@ -12,12 +12,13 @@
 
 ## Introduction
 
-13-ai-agents-langgraph is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding production agents is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering production agents.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -46,7 +47,7 @@ flowchart TD
     Q --> A1 & A2 & A3
     A1 & A2 & A3 --> DB[(State Store)]
     A1 & A2 & A3 --> MON[Monitoring]
-```
+```text
 
 ## 9.1 Production Requirements
 
@@ -94,7 +95,7 @@ checker.add_check("Request timeout set", True)
 checker.add_check("Rate limiting enabled", False, "Rate limiter not configured")
 checker.add_check("Error monitoring in place", True)
 print(f"Production ready: {checker.report()}")
-```
+```text
 
 ## 9.2 Agent API Design
 
@@ -135,7 +136,7 @@ def mock_agent(query: str, config: Dict) -> str:
 api = AgentAPIEndpoint(mock_agent)
 response = api.handle_request({"query": "What is RAG?"})
 print(f"API response: {response['status']} ({response['latency_ms']}ms)")
-```
+```text
 
 ### 9.2.2 API Versioning
 
@@ -173,7 +174,7 @@ versioned_api.register_version("v2", lambda r: {"result": f"v2: {r['query']}", "
 versioned_api.deprecate_version("v1", "Migrate to v2 for new features")
 print(versioned_api.route({"version": "v1", "query": "test"}))
 print(versioned_api.route({"version": "v2", "query": "test"}))
-```
+```text
 
 ### 9.2.3 Authentication
 
@@ -215,7 +216,7 @@ class AgentAuth:
 auth = AgentAuth()
 key = auth.create_key("production-agent", ["agent:query", "agent:admin"])
 print(f"Auth valid: {auth.validate(key, 'agent:query')}")
-```
+```text
 
 ## 9.3 Scaling
 
@@ -271,7 +272,7 @@ class AgentPool:
 pool = AgentPool(lambda: lambda r: f"Processed by agent", min_size=2, max_size=5)
 print(pool.execute({"query": "test"}))
 print(f"Pool stats: {pool.stats()}")
-```
+```text
 
 ### 9.3.2 Queue-Based Processing
 
@@ -325,7 +326,7 @@ import time as ttime
 ttime.sleep(0.2)
 result = qp.get_result(task_id)
 print(f"Queue result: {result}")
-```
+```text
 
 ## 9.4 Fault Tolerance
 
@@ -389,7 +390,7 @@ def unreliable_fn() -> str:
 retry = RetryPolicy(max_retries=3, backoff_base=0.5)
 cb = CircuitBreaker(failure_threshold=3, recovery_timeout=5)
 print("Retry + circuit breaker configured")
-```
+```text
 
 ### 9.4.2 Graceful Degradation
 
@@ -438,7 +439,7 @@ class DegradationManager:
 deg = DegradationManager()
 deg.mark_unhealthy("embedding_service")
 print(f"Level: {deg.level.value}, Config: {deg.get_config()}")
-```
+```text
 
 ## 9.5 Deployment
 
@@ -489,7 +490,7 @@ class DeploymentPipeline:
 pipeline = DeploymentPipeline()
 result = pipeline.run("v2.0.0")
 print(f"Deployment: {result['status']}")
-```
+```text
 
 ### 9.5.2 A/B Testing
 
@@ -537,7 +538,7 @@ ab = AgentABTest(control_agent, treatment_agent)
 for i in range(10):
     ab.route({"query": "test"}, f"user-{i}")
 print(f"A/B report: {ab.report()}")
-```
+```text
 
 ## 9.6 Cost Management
 
@@ -584,7 +585,7 @@ class TokenBudget:
 budget = TokenBudget(daily_limit=50000)
 print(f"Can consume 1000: {budget.check('user-1', 1000)}")
 budget.consume("user-1", 1000)
-```
+```text
 
 ### 9.6.2 Cost Optimization
 
@@ -623,7 +624,7 @@ optimizer = CostOptimizer()
 recs = optimizer.recommend(quality_requirement=0.85)
 print(f"Cost recommendations: {recs}")
 print(optimizer.estimate_savings(1000, recs))
-```
+```text
 
 ## Summary
 
@@ -827,6 +828,7 @@ Answer: B
 4. Create an A/B testing framework for agent prompts. Route 50% of traffic to prompt A and 50% to prompt B, collect success rates and latencies, and report the winner.
 
 5. Implement a token budget manager with daily limits per user and a cost optimization advisor. Test with 3 users and show budget enforcement when limits are 
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 13-ai-agents-langgraph
@@ -836,6 +838,7 @@ Answer: B
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

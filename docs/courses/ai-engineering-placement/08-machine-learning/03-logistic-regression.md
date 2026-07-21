@@ -11,12 +11,13 @@
 
 ## Introduction
 
-08-machine-learning is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding logistic regression is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering logistic regression.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | 3.1 | Sigmoid & Odds | Log-odds, decision boundary, probability calibration |
@@ -39,6 +40,7 @@ flowchart LR
     G --> H
     H --> I[Optimized Weights]
     I --> J[Predict: p > 0.5]
+
 ## 3.1 Sigmoid & Odds
 
 Logistic regression models the probability that an instance belongs to the positive class: p = 1 / (1 + e^{-z}) where z = Xw + b.
@@ -60,7 +62,7 @@ class Sigmoid {
     return Math.log(p / (1 - p));
   }
 }
-```
+```text
 
 **Decision boundary**: p >= 0.5 predicts class 1, p < 0.5 predicts class 0. This corresponds to z >= 0.
 
@@ -103,7 +105,7 @@ class CrossEntropyLoss {
     return loss / n;
   }
 }
-```
+```text
 
 ---
 
@@ -157,7 +159,7 @@ class LogisticRegression {
     return preds.filter((p, i) => p === y[i]).length / y.length;
   }
 }
-```
+```text
 
 ---
 
@@ -212,7 +214,7 @@ class MulticlassLogisticRegression {
     }).map((probs) => probs.indexOf(Math.max(...probs)));
   }
 }
-```
+```text
 
 **One-vs-Rest (OvR)**: Train K binary classifiers. **Softmax**: Train one multi-class model. Softmax is preferred when classes are mutually exclusive.
 
@@ -278,7 +280,7 @@ class RegularizedLogisticRegression:
         return -np.mean(y * np.log(probs) + (1 - y) * np.log(1 - probs))
 
 
-# Demo: compare L1 vs L2 vs no regularization
+## Demo: compare L1 vs L2 vs no regularization
 np.random.seed(42)
 X_demo = np.random.randn(200, 20)
 true_w = np.zeros(20)
@@ -294,7 +296,7 @@ for name, model in models.items():
     losses = model.fit(X_demo, y_demo)
     nz = np.sum(np.abs(model.weights) > 1e-6)
     print(f"{name}: non-zero weights={nz}, final_loss={losses[-1]:.4f}")
-```
+```text
 
 **L1 (Lasso)**: Performs feature selection by zeroing out unimportant coefficients. Good for high-dimensional sparse problems.
 
@@ -335,7 +337,7 @@ class LogisticEvaluation {
     return result;
   }
 }
-```
+```text
 
 ---
 
@@ -352,7 +354,7 @@ async function trainLogisticModel(X: number[][], y: number[]): Promise<tf.Sequen
   await model.fit(tf.tensor2d(X), tf.tensor1d(y), { epochs: 50, batchSize: 32 });
   return model;
 }
-```
+```text
 
 ## Summary
 
@@ -466,6 +468,7 @@ d) Precision
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 08-machine-learning
@@ -475,6 +478,7 @@ d) Precision
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

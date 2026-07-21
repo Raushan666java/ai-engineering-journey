@@ -1,5 +1,6 @@
 # Scalability Fundamentals — Vertical, Horizontal, and Beyond
 
+
 ## Learning Objectives
 
 | Objective | Description |
@@ -10,6 +11,7 @@
 | LO4 | Use load balancers to distribute traffic across servers |
 | LO5 | Apply caching strategies for performance improvement |
 | LO6 | Measure and analyze system scalability metrics |
+
 
 ## Chapter at a Glance
 
@@ -24,6 +26,7 @@
 | 1.7 | Performance Metrics | Latency, throughput, p99, SLA/SLO |
 | 1.8 | Capacity Planning | Estimating traffic, provisioning |
 
+
 ## Chapter Roadmap
 
 ```mermaid
@@ -37,9 +40,11 @@ flowchart LR
     G --> H[Capacity Planning]
 ```
 
+
 ## Introduction
 
 Every AI system eventually faces the question: how do we handle 10x more users, 100x more data, or 1000x more inference requests? Scalability fundamentals answer that question by providing frameworks for stateless design, load balancing, database scaling, and caching. These concepts are essential for system design interviews and for building ML infrastructure that actually works at production scale.
+
 
 ## Prerequisites
 
@@ -48,13 +53,16 @@ Every AI system eventually faces the question: how do we handle 10x more users, 
 - Experience with at least one backend framework
 - Reference: Module 05 (FastAPI Backend) for API concepts
 
+
 ## Theory
+
 
 ### 1.1 Vertical vs Horizontal Scaling
 
 **Vertical scaling (scale up)**: Add more power to a single machine — more CPU, RAM, faster disks. Simple but has a hard limit (max server specs) and creates a single point of failure.
 
 **Horizontal scaling (scale out)**: Add more machines to distribute the load. Virtually unlimited, provides fault tolerance, but requires stateless application design and introduces complexity.
+
 
 
 ## Examples
@@ -81,6 +89,7 @@ flowchart LR
 | Complexity | Low | High |
 | Max capacity | Server limit | Unlimited |
 
+
 ### 1.2 Stateless Design
 
 For horizontal scaling, applications must be stateless — any instance can handle any request.
@@ -89,10 +98,10 @@ For horizontal scaling, applications must be stateless — any instance can hand
 **Stateless**: Session data in external store (Redis, DB) -> any server can handle any request.
 
 ```python
-# Stateful approach (sticky sessions)
+## Stateful approach (sticky sessions)
 session_data["user"] = user_info  # stored locally
 
-# Stateless approach
+## Stateless approach
 redis.set(f"session:{session_id}", user_info)  # external store
 ```
 
@@ -102,6 +111,9 @@ redis.set(f"session:{session_id}", user_info)  # external store
 - Job processing -> Message queue
 - Database -> Managed service
 
+
+
+## Overview
 ### 1.3 Load Balancing
 
 Distributes incoming traffic across multiple servers.
@@ -132,6 +144,7 @@ class LoadBalancer:
 
 **Types**: Hardware (F5), Software (HAProxy, Nginx), Cloud (ALB, GCP LB).
 
+
 ### 1.4 Database Scaling
 
 **Read replicas**: Primary handles writes; replicas handle reads. Improves read throughput.
@@ -158,6 +171,7 @@ class DatabaseRouter:
 | Range-based | Shard by value range | Simple | Hot spots |
 | Hash-based | Hash of shard key | Even distribution | Re-sharding hard |
 | Directory-based | Lookup table | Flexible | Single point |
+
 
 ### 1.5 Caching Fundamentals
 
@@ -190,6 +204,7 @@ def get_user(user_id):
     return user
 ```
 
+
 ### 1.6 Asynchronous Processing
 
 Decouple request handling from heavy processing using queues.
@@ -203,13 +218,13 @@ flowchart LR
 ```
 
 ```python
-# Producer
+## Producer
 def handle_request(request):
     task = {"type": "process", "data": request.data}
     queue.enqueue(task)
     return {"status": "accepted"}
 
-# Consumer (Worker)
+## Consumer (Worker)
 def process_tasks():
     while True:
         task = queue.dequeue()
@@ -219,6 +234,9 @@ def process_tasks():
 
 **Benefits**: Improved responsiveness, decoupled components, burst handling, graceful degradation.
 
+
+
+## Overview
 ### 1.7 Performance Metrics
 
 | Metric | Description | Good Target |
@@ -234,6 +252,7 @@ def process_tasks():
 - SLO: Target value for SLI
 - SLA: Contractual agreement with consequences
 
+
 ### 1.8 Capacity Planning
 
 **Steps**:
@@ -248,12 +267,13 @@ def estimate_servers(rps, rps_per_server, headroom=2.5):
     required = rps / rps_per_server
     return int(required * headroom) + 1
 
-# Example: 10000 RPS, each server handles 500 RPS
+## Example: 10000 RPS, each server handles 500 RPS
 servers = estimate_servers(10000, 500)
 print(f"Need {servers} servers")  # 51
 ```
 
 ---
+
 
 ## Visual Analogy
 
@@ -265,6 +285,7 @@ Think of scaling a system like **scaling a restaurant**:
 - **Caching** = The daily specials board — instead of every customer asking the chef what's available, the board has the answer ready. Fast, but needs updating when the menu changes.
 
 This helps because scalability is fundamentally about **removing bottlenecks** — just like a restaurant can only serve so many diners with one chef, a single server can only handle so many requests. The solution is either a bigger chef (vertical) or more kitchens (horizontal).
+
 
 ## TypeScript Parallel
 
@@ -304,6 +325,7 @@ function evaluateScaling(metrics: ServerMetrics, currentServers: number, maxRps:
 
 ---
 
+
 ## Summary
 
 - Vertical scaling adds power to a single machine; horizontal scaling adds more machines
@@ -317,6 +339,7 @@ function evaluateScaling(metrics: ServerMetrics, currentServers: number, maxRps:
 - Auto-scaling combines metrics monitoring with dynamic resource provisioning
 - Always design for failure: assume components will fail and build redundancy
 
+
 ## Practical Takeaways
 
 | Scenario | Do This | Avoid This |
@@ -328,6 +351,7 @@ function evaluateScaling(metrics: ServerMetrics, currentServers: number, maxRps:
 | Heavy processing | Async queues | Synchronous processing |
 | Capacity | Plan for 2-3x headroom | Exact capacity only |
 | Monitoring | Track p99 latency | Only average metrics |
+
 
 ## Interview Q&A
 
@@ -401,6 +425,7 @@ function evaluateScaling(metrics: ServerMetrics, currentServers: number, maxRps:
   <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>
 </details>
 
+
 ## Chapter Quiz
 
 **Q1**: Which scaling approach adds more machines?
@@ -448,6 +473,7 @@ d) Indexing
 
 <details class="tp-qa-card" data-qid="sysdes-s01-quiz5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b) Sharding</strong></p></div></details>
 
+
 ## Exercises
 
 **Easy** — Design a stateless authentication system that uses JWT tokens stored in Redis. Explain how it handles server restarts.
@@ -459,6 +485,7 @@ d) Indexing
 **Hard** — Design a Twitter-like system that handles 100M DAU. Address vertical vs horizontal scaling, database sharding, caching, and async processing.
 
 **Hard** — Implement a cache aside pattern with circuit breaker. If Redis is down, fall back to database directly and log the failure.
+
 
 ## Auto-Scaling Strategies
 
@@ -494,6 +521,7 @@ def predict_capacity(traffic_history: list[int]) -> int:
     return int(predicted_rps * 1.3 / 500) + 1
 ```
 
+
 ## Distributed System Patterns
 
 | Pattern | Description | Use Case |
@@ -504,6 +532,7 @@ def predict_capacity(traffic_history: list[int]) -> int:
 | Two-Phase Commit | Coordinator ensures all-or-nothing | Distributed transactions |
 | Quorum | Majority consensus for decisions | Strong consistency |
 
+
 ## Real-World Scalability Examples
 
 | Company | Scale | Strategy |
@@ -513,6 +542,7 @@ def predict_capacity(traffic_history: list[int]) -> int:
 | WhatsApp | 2B+ users, 100B+ msgs/day | Erlang/OTP, single-digit engineers per million users |
 | Twitter | 500M+ tweets/day | Event-driven, caching, timeline fanout |
 | Amazon | Millions of orders/day | Cell-based architecture, read replicas, eventual consistency |
+
 
 ## Database Connection Pool Sizing
 
@@ -532,11 +562,12 @@ def calculate_pool_size(
     optimal = int(arrival_rate * (service_time + target_queue_ms))
     return min(optimal, max_connections)
 
-# Example: 500 concurrent requests, 50ms avg query, 10ms target queue
+## Example: 500 concurrent requests, 50ms avg query, 10ms target queue
 pool = calculate_pool_size(100, 500, 50, 10)  # ~30 connections
 ```
 
 ---
+
 
 ## Common Mistakes
 
@@ -545,6 +576,7 @@ pool = calculate_pool_size(100, 500, 50, 10)  # ~30 connections
 3. Only monitoring average latency — averages hide bad outliers; p99 and p999 latencies reveal the true user experience
 4. Skipping cache invalidation strategy — caching without a clear invalidation plan (TTL, write-through, event-driven) leads to stale data bugs
 5. Ignoring connection pool sizing — too few connections create bottlenecks; too many exhaust database resources; Little's Law calculates the right size
+
 
 ## Revision Notes
 
@@ -557,11 +589,14 @@ pool = calculate_pool_size(100, 500, 50, 10)  # ~30 connections
 - SLI = measured metric, SLO = target value, SLA = contractual agreement with consequences
 - Capacity planning: estimate traffic, project growth, add 2-3x headroom, load test to validate
 
+
 ## Summary
 
 Scalability fundamentals provide the framework for handling growing AI system demands. Vertical scaling adds power to a single machine while horizontal scaling adds more machines — the latter requires stateless application design with externalized state. Load balancers distribute traffic using various algorithms with health checks ensuring availability. Database scaling uses read replicas for read throughput and sharding for write distribution. Caching at multiple layers (CDN, Redis, in-memory) reduces database load. Asynchronous processing with queues decouples components and improves responsiveness. Capacity planning requires estimating traffic, projecting growth, and adding headroom validated through load testing.
 
+
 ## Placement Section
+
 
 ### Top 10 Interview Questions
 
@@ -585,10 +620,12 @@ Scalability fundamentals provide the framework for handling growing AI system de
 1. You need to scale a RAG-based Q&A system from 100 to 100,000 daily queries. What are the three most critical scalability bottlenecks and how do you address each?
 2. Your startup's API costs are growing faster than revenue. How do you optimize the architecture to reduce infrastructure costs while maintaining performance?
 
+
 ### Resume Tips
 - List "System Design" and "Scalability" under Technical Skills with specific technologies (Redis, load balancers, sharding)
 - Project example: "Designed horizontally scalable ML inference system handling 50K RPS with Redis caching, load balancing, and auto-scaling"
 - Quantify scalability achievements: "Reduced p99 latency from 2s to 200ms by implementing CDN caching and database read replicas"
+
 
 ### Interview Day Checklist
 - [ ] Can design a scalable architecture for a given system in under 20 minutes
@@ -598,6 +635,7 @@ Scalability fundamentals provide the framework for handling growing AI system de
 - [ ] Can explain cache invalidation strategies and when to use each
 
 > **Next**: [Microservices Architecture](02-microservices-architec
+
 ### True/False
 
 **T/F 1**: Vertical scaling means adding more servers.

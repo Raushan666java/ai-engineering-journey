@@ -6,12 +6,13 @@ After this chapter you will be able to identify whether a model inference kernel
 
 ## Introduction
 
-00-core-computer-science is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding computer architecture is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering computer architecture.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Theory
 
 ### CPU Pipeline
@@ -32,7 +33,7 @@ graph LR
     style E fill:#color3
     style M fill:#color4
     style W fill:#color5
-```
+```text
 
 ### Branch Prediction
 
@@ -65,7 +66,7 @@ graph TB
     L2_0 --> L3
     L2_1 --> L3
     L3 --> RAM
-```
+```text
 
 ### NUMA
 
@@ -379,7 +380,7 @@ class KernelClassifier {
         return "COMPUTE-BOUND (" + (flopsUtilization * 100).toFixed(0) + "% compute, " + (bandwidthUtilization * 100).toFixed(0) + "% BW)"
     }
 }
-```
+```text
 
 ### Tiling for Cache Efficiency
 
@@ -405,7 +406,7 @@ function tiledMatrixMultiply(A: number[][], B: number[][], tileSize: number): nu
     }
     return result
 }
-```
+```text
 
 ### Vectorized Softmax
 
@@ -451,7 +452,7 @@ function softmaxSIMD(x: number[]): number[] {
     }
     return expValues
 }
-```
+```text
 
 ### GPU Kernel Launch Configuration
 
@@ -484,7 +485,7 @@ class KernelConfigOptimizer {
         }
     }
 }
-```
+```text
 
 ## Summary
 
@@ -553,6 +554,7 @@ Computer architecture knowledge directly translates to faster ML code. The roofl
 3. Implement cache-blocked matrix multiplication (tiling) and count cache misses vs the naive triple loop.
 
 4. Measure the impact of memory access stride on throughput by simulating sequential vs strided access pat
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 00-core-computer-science
@@ -562,6 +564,7 @@ Computer architecture knowledge directly translates to faster ML code. The roofl
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

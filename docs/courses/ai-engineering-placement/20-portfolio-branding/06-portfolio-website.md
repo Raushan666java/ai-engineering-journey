@@ -13,12 +13,13 @@
 
 ## Introduction
 
-20-portfolio-branding is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding portfolio website is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering portfolio website.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -47,7 +48,7 @@ flowchart TB
     E --> L[Resume Download]
     E --> M[Social Links]
     F --> N[Contact Form]
-```
+```text
 
 ## 6.1 Tools & Frameworks
 
@@ -152,7 +153,7 @@ class PortfolioScaffolder:
         os.makedirs(f"{self.project_dir}/public", exist_ok=True)
         os.makedirs(f"{self.project_dir}/src/data", exist_ok=True)
         print(f"Project scaffolded at {self.project_dir}")
-```
+```text
 
 ## 6.2 Project Showcase
 
@@ -232,7 +233,7 @@ class ProjectData:
 
     def filter_by_tech(self, tech: str) -> List[dict]:
         return [p for p in self.projects if tech.lower() in [t.lower() for t in p.get("tech_stack", [])]]
-```
+```text
 
 ## 6.3 Contact & Forms
 
@@ -296,7 +297,7 @@ In the meantime, feel free to check out my GitHub or LinkedIn.
 
 Best,
 [Your Name]"""
-```
+```text
 
 ## 6.4 Analytics
 
@@ -349,7 +350,7 @@ class DashboardMetrics:
 • Total Views: {self.metrics['page_views']}
 • Top Pages: {', '.join(self.metrics['top_pages'][:3])}
 • Top Referrers: {', '.join(self.metrics['top_referrers'][:3])}"""
-```
+```text
 
 ## 6.5 SEO & Performance
 
@@ -437,7 +438,7 @@ header { padding: 2rem; text-align: center; }
 
     def lazy_loading(self) -> str:
         return '<img src="placeholder.jpg" data-src="actual.jpg" loading="lazy" alt="description">'
-```
+```text
 
 ## 6.6 Deployment & Domain
 
@@ -541,7 +542,7 @@ class CustomDomain:
             "forwarding": f"hello@{self.domain} → your@gmail.com",
             "provider": "Cloudflare Email Routing (free) or Google Workspace",
         }
-```
+```text
 
 ## Summary
 
@@ -844,6 +845,7 @@ d) Heroku
 7. **Performance Optimization**: Run Lighthouse before optimization. Apply: image optimization (WebP), CSS minification, lazy loading, font subsetting, and cache headers. Re-run Lighthouse. Report performance improvement.
 
 8. **Blog Integration**: Integrate a blog section into your portfolio. Use markdown files for posts. Add: RSS feed, blog index page, single post page with reading time estimate, and social sharing buttons. Write 3 samp
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 20-portfolio-branding
@@ -853,6 +855,7 @@ d) Heroku
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

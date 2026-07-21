@@ -11,12 +11,13 @@
 
 ## Introduction
 
-15-ai-evaluation-observability is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding observability tools is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering observability tools.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -48,7 +49,7 @@ flowchart LR
     WB --> MT & AR
     ML --> AR & E
     AZ --> T & MT
-```
+```text
 
 ## 4.1 Observability Overview
 
@@ -131,7 +132,7 @@ trace_id = obs.start_trace("llm_call")
 time.sleep(0.01)
 obs.end_trace(trace_id)
 print(f"Stats: {obs.get_stats()}")
-```
+```text
 
 ### 4.1.2 Telemetry Pipeline
 
@@ -160,7 +161,7 @@ pipeline.add_processor("add_timestamp", lambda e: {**e, "processed_at": time.tim
 pipeline.add_processor("sanitize", lambda e: {k: v for k, v in e.items() if "secret" not in k})
 event = pipeline.process({"name": "llm_call", "latency": 150})
 print(f"Processed: {event}")
-```
+```text
 
 ## 4.2 LangSmith
 
@@ -234,7 +235,7 @@ ls_client = LangSmithClient(project="ai-course")
 run_id = ls_client.create_run("test-run", "llm", {"prompt": "Hello"})
 ls_client.add_feedback(run_id, 0.95)
 print(f"LangSmith summary: {ls_client.get_project_summary()}")
-```
+```text
 
 ### 4.2.2 LangSmith Tracing
 
@@ -288,7 +289,7 @@ time.sleep(0.01)
 tracer.end_span(span, {"tokens": 50})
 tracer.end_trace("completed")
 print(f"Traced {len(tracer.spans)} runs")
-```
+```text
 
 ## 4.3 W&B (Weights & Biases)
 
@@ -361,7 +362,7 @@ run_id = wandb.init_run("lora-ft-1", {"lr": 3e-4, "r": 8})
 wandb.log_metrics({"loss": 2.5, "val_loss": 2.7}, step=0)
 wandb.log_metrics({"loss": 1.8, "val_loss": 2.0}, step=100)
 print(f"W&B summary: {wandb.get_summary(run_id)}")
-```
+```text
 
 ### 4.3.2 Experiment Comparison
 
@@ -393,7 +394,7 @@ ec.add_experiment("lora-r8", {"val_loss": 1.5, "accuracy": 0.85}, {"r": 8})
 ec.add_experiment("lora-r16", {"val_loss": 1.4, "accuracy": 0.87}, {"r": 16})
 ec.add_experiment("lora-r32", {"val_loss": 1.45, "accuracy": 0.86}, {"r": 32})
 print(f"Best config: {ec.best_config('accuracy')}")
-```
+```text
 
 ## 4.4 MLflow
 
@@ -450,7 +451,7 @@ mlflow.create_experiment("lora-experiments")
 rid = mlflow.log_run("lora-experiments", "lora-r8", {"r": 8, "lr": 3e-4}, {"val_loss": 1.5})
 mlflow.register_model(rid, "lora-model", "runs:/lora-r8/model")
 print(f"MLflow runs: {len(mlflow.search_runs('lora-experiments'))}")
-```
+```text
 
 ## 4.5 Other Tools
 
@@ -484,7 +485,7 @@ adapter = ObservabilityToolAdapter("langsmith")
 adapter.register_tool("langsmith", ls_client)
 adapter.register_tool("wandb", wandb)
 print(f"Metrics: {adapter.get_metrics('langsmith')}")
-```
+```text
 
 ## 4.6 Tool Comparison
 
@@ -546,7 +547,7 @@ class ToolComparison:
 
 comparison = ToolComparison()
 print(f"Recommended for tracing+eval: {comparison.recommend(['tracing', 'eval_datasets'])}")
-```
+```text
 
 ## Summary
 
@@ -781,6 +782,7 @@ Answer: B
 4. Build an observability tool adapter that unifies logging from LangSmith, W&B, and MLflow into a single interface.
 
 5. Compare 4 observability tools (LangSmith, W&B, MLflow, Arize) on features, pricing, and LLM-specific capabilities. Recommend a stack for a t
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 15-ai-evaluation-observability
@@ -790,6 +792,7 @@ Answer: B
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

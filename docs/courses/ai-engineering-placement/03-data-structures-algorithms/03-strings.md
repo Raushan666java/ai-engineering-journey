@@ -19,6 +19,7 @@ Strings are sequences of characters with unique operations. Many interview probl
 
 - Array basics
 - Character encoding (ASCII/Unicode)
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -42,7 +43,7 @@ flowchart LR
     D --> F
     E --> F
     F --> G[Practice Problems]
-```
+```text
 
 ## 3.1 String Fundamentals
 
@@ -55,39 +56,39 @@ Strings are **immutable sequences of Unicode characters** in Python. Every strin
 ```python
 # Strings are immutable
 s = "hello"
-# s[0] = "H"  # TypeError: 'str' object does not support item assignment
+## s[0] = "H"  # TypeError: 'str' object does not support item assignment
 
-# Every "modification" creates a new string
+## Every "modification" creates a new string
 s = s.upper()  # "HELLO" — new string
 
-# String interning — small strings are cached
+## String interning — small strings are cached
 a = "hello"
 b = "hello"
 print(a is b)  # True — interned (CPython may intern some strings)
-```
+```text
 
 **Unicode support**:
 
 ```python
-# Unicode characters — Python 3 strings are Unicode
+## Unicode characters — Python 3 strings are Unicode
 emoji = "🚀🔥🐍"
 chinese = "你好世界"
 hindi = "नमस्ते दुनिया"
 
-# Character vs byte length
+## Character vs byte length
 print(len(emoji))      # 3 characters
 print(len(emoji.encode('utf-8')))  # 12 bytes
 
-# Code points
+## Code points
 print(ord('A'))   # 65
 print(ord('🔥'))  # 128293
 print(chr(65))    # 'A'
-```
+```text
 
 **String creation and conversion**:
 
 ```python
-# Different ways to create strings
+## Different ways to create strings
 s1 = "double quotes"
 s2 = 'single quotes'
 s3 = """multi-line
@@ -96,14 +97,14 @@ s4 = str(42)           # "42"
 s5 = str(3.14)         # "3.14"
 s6 = repr("hello\n")   # "'hello\\n'" — with escape sequences
 
-# Join — most efficient for building strings from lists
+## Join — most efficient for building strings from lists
 words = ["hello", "world", "python"]
 sentence = " ".join(words)  # "hello world python"
 
-# Split
+## Split
 data = "a,b,c,d"
 items = data.split(",")     # ["a", "b", "c", "d"]
-```
+```text
 
 ---
 
@@ -121,78 +122,78 @@ print(s[7:])      # 'World!' — from index 7 to end
 print(s[:5])      # 'Hello' — from start to index 4
 print(s[::2])     # 'Hlo ol!' — every 2nd character
 print(s[::-1])    # '!dlroW ,olleH' — reversed
-```
+```text
 
 **Common string methods**:
 
 ```python
 text = "  Python Programming  "
 
-# Whitespace handling
+## Whitespace handling
 print(text.strip())          # "Python Programming"
 print(text.lstrip())         # "Python Programming  "
 print(text.rstrip())         # "  Python Programming"
 
-# Case conversion
+## Case conversion
 print(text.upper())          # "  PYTHON PROGRAMMING  "
 print(text.lower())          # "  python programming  "
 print(text.swapcase())       # "  pYTHON pROGRAMMING  "
 print(text.title())          # "  Python Programming  "
 
-# Searching
+## Searching
 print(text.find("Pro"))      # 10
 print(text.find("Java"))     # -1
 print(text.index("Pro"))     # 10
-# print(text.index("Java"))  # ValueError!
+## print(text.index("Java"))  # ValueError!
 print(text.count("m"))       # 2
 
-# Checking
+## Checking
 print(text.startswith("  Py"))  # True
 print(text.endswith("g  "))     # True
 print("123".isdigit())          # True
 print("abc".isalpha())          # True
 print("abc123".isalnum())       # True
 
-# Replacing
+## Replacing
 print(text.replace("Python", "Java"))  # "  Java Programming  "
-```
+```text
 
 **String formatting**:
 
 ```python
 name, age, score = "Alice", 30, 95.5
 
-# f-strings (preferred)
+## f-strings (preferred)
 print(f"{name} is {age} years old with score {score:.1f}")
 
-# str.format()
+## str.format()
 print("{} is {} years old".format(name, age))
 
-# % formatting (old style)
+## % formatting (old style)
 print("%s is %d years old" % (name, age))
-```
+```text
 
 **Efficient string building**:
 
 ```python
-# Bad — O(n²) because strings are immutable
+## Bad — O(n²) because strings are immutable
 def build_bad(n):
     result = ""
     for i in range(n):
         result += str(i)  # Creates new string each time
     return result
 
-# Good — O(n) using list join
+## Good — O(n) using list join
 def build_good(n):
     parts = []
     for i in range(n):
         parts.append(str(i))
     return "".join(parts)
 
-# Even better — using generator
+## Even better — using generator
 def build_best(n):
     return "".join(str(i) for i in range(n))
-```
+```text
 
 ---
 
@@ -215,7 +216,7 @@ def naive_search(text, pattern):
     return positions
 
 print(naive_search("AABAACAADAABAAABAA", "AABA"))  # [0, 9, 13]
-```
+```text
 
 **KMP (Knuth-Morris-Pratt) algorithm**: O(n+m) time by preprocessing the pattern.
 
@@ -263,7 +264,7 @@ def kmp_search(text, pattern):
     return positions
 
 print(kmp_search("AABAACAADAABAAABAA", "AABA"))  # [0, 9, 13]
-```
+```text
 
 **Rabin-Karp algorithm**: Uses rolling hash for pattern matching.
 
@@ -299,7 +300,7 @@ def rabin_karp(text, pattern, d=256, q=101):
     return positions
 
 print(rabin_karp("AABAACAADAABAAABAA", "AABA"))  # [0, 9, 13]
-```
+```text
 
 **Z-algorithm**: Computes longest prefix matching at each position.
 
@@ -329,7 +330,7 @@ def z_search(text, pattern):
     return [i - m - 1 for i in range(len(combined)) if z[i] == m]
 
 print(z_search("AABAACAADAABAAABAA", "AABA"))  # [0, 9, 13]
-```
+```text
 
 | Algorithm | Preprocessing | Search | Total | Space |
 |-----------|--------------|--------|-------|-------|
@@ -364,7 +365,7 @@ def is_palindrome_two_pointer(s):
     return True
 
 print(is_palindrome("A man, a plan, a canal: Panama"))  # True
-```
+```text
 
 **Longest palindromic substring — expand around center**:
 
@@ -397,7 +398,7 @@ def longest_palindrome(s):
 
 print(longest_palindrome("babad"))  # "bab" or "aba"
 print(longest_palindrome("cbbd"))   # "bb"
-```
+```text
 
 **Manacher's algorithm**: O(n) time, O(n) space for longest palindrome.
 
@@ -429,7 +430,7 @@ def manacher(s):
 
 print(manacher("babad"))   # "aba" or "bab"
 print(manacher("cbbd"))    # "bb"
-```
+```text
 
 **Count palindromic substrings**:
 
@@ -454,7 +455,7 @@ def count_palindromic_substrings(s):
 
 print(count_palindromic_substrings("abc"))    # 3 (a, b, c)
 print(count_palindromic_substrings("aaa"))    # 6 (a, a, a, aa, aa, aaa)
-```
+```text
 
 ---
 
@@ -482,7 +483,7 @@ def is_anagram_array(s1, s2):
 
 print(is_anagram("listen", "silent"))  # True
 print(is_anagram("hello", "world"))   # False
-```
+```text
 
 **Group anagrams**:
 
@@ -499,8 +500,8 @@ def group_anagrams(words):
 
 words = ["eat", "tea", "tan", "ate", "nat", "bat"]
 print(group_anagrams(words))
-# [["eat", "tea", "ate"], ["tan", "nat"], ["bat"]]
-```
+## [["eat", "tea", "ate"], ["tan", "nat"], ["bat"]]
+```text
 
 **Find all anagrams in a string** (sliding window):
 
@@ -536,12 +537,12 @@ def find_anagrams(text, pattern):
     return result
 
 print(find_anagrams("cbaebabacd", "abc"))  # [0, 6]
-```
+```text
 
 **Character frequency operations**:
 
 ```python
-# Check if two strings are isomorphic
+## Check if two strings are isomorphic
 def is_isomorphic(s, t):
     if len(s) != len(t):
         return False
@@ -556,7 +557,7 @@ def is_isomorphic(s, t):
 
 print(is_isomorphic("egg", "add"))   # True
 print(is_isomorphic("foo", "bar"))   # False
-```
+```text
 
 ```mermaid
 flowchart TD
@@ -567,7 +568,7 @@ flowchart TD
         D --> G[Group Anagrams]
         E --> G
     end
-```
+```text
 
 ---
 
@@ -593,7 +594,7 @@ def is_subsequence_two_pointer(sub, main):
 
 print(is_subsequence("abc", "ahbgdc"))  # True
 print(is_subsequence("axc", "ahbgdc"))  # False
-```
+```text
 
 **Distinct subsequences**: Count distinct ways to form T from S by deleting characters.
 
@@ -617,7 +618,7 @@ def num_distinct(s, t):
     return dp[m][n]
 
 print(num_distinct("rabbbit", "rabbit"))  # 3
-```
+```text
 
 **Longest common subsequence (LCS)**:
 
@@ -651,7 +652,7 @@ def longest_common_subsequence(text1, text2):
 
 print(longest_common_subsequence("abcde", "ace"))  # (3, "ace")
 print(longest_common_subsequence("abc", "def"))    # (0, "")
-```
+```text
 
 **Edit distance** (Levenshtein distance):
 
@@ -681,7 +682,7 @@ def edit_distance(word1, word2):
 
 print(edit_distance("horse", "ros"))   # 3
 print(edit_distance("intention", "execution"))  # 5
-```
+```text
 
 ```mermaid
 flowchart TD
@@ -693,7 +694,7 @@ flowchart TD
         E --> G
         F --> G
     end
-```
+```text
 
 ---
 
@@ -728,7 +729,7 @@ function lcs(text1: string, text2: string): number {
     }
     return dp[m][n];
 }
-```
+```text
 
 ---
 
@@ -774,9 +775,9 @@ function lcs(text1: string, text2: string): number {
       <li>This ensures no character in the text is compared more than once</li>
     </ul>
     <pre><code># Example: pattern = "AABA"
-# LPS = [0, 1, 0, 1]
-# At mismatch on j=3, we set j = LPS[2] = 0
-# This skips already-matched characters</code></pre>
+## LPS = [0, 1, 0, 1]
+## At mismatch on j=3, we set j = LPS[2] = 0
+## This skips already-matched characters</code></pre>
     <p><strong>Complexity</strong>: O(m) for LPS construction, O(n) for search, O(n+m) total.</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -1013,18 +1014,18 @@ def find_anagrams(text, pattern):
     <pre><code># Performance comparison
 import timeit
 
-# O(n²) — creates new string each iteration
+## O(n²) — creates new string each iteration
 def concat_plus(n):
     s = ""
     for i in range(n):
         s += str(i)
     return s
 
-# O(n) — builds list, joins once
+## O(n) — builds list, joins once
 def concat_join(n):
     return "".join(str(i) for i in range(n))
 
-# For n=10000, join is 1000x faster than +=</code></pre>
+## For n=10000, join is 1000x faster than +=</code></pre>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
@@ -1191,6 +1192,7 @@ d) UTF-16
 3. Off-by-one in substring operations
 4. Not considering case sensitivity
 5. Using wrong pattern matching algorithm
+
 ## Revision Notes
 
 - Strings are immutable in Python/Java
@@ -1198,6 +1200,7 @@ d) UTF-16
 - Substring vs subsequence difference
 - KMP for efficient pattern matching
 - Trie for prefix-based string operations
+
 ## Placement Section
 
 ### Top 10 Interview Questions

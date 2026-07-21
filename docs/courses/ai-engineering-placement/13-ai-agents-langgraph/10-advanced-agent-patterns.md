@@ -12,12 +12,13 @@
 
 ## Introduction
 
-13-ai-agents-langgraph is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding advanced agent patterns is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering advanced agent patterns.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -50,7 +51,7 @@ flowchart LR
     E2 -->|Success| Next[Next Sub-task]
     E2 -->|Failure| R --> P
     E1 --> FB --> AD --> P
-```
+```text
 
 ## 10.1 Plan-and-Execute
 
@@ -152,7 +153,7 @@ plan = decomposer.decompose("Analyze quarterly earnings report", ["search", "sum
 results = executor.execute(plan)
 for t in results:
     print(f"{t.id}: {t.status}")
-```
+```text
 
 ### 10.1.2 Dynamic Replanning
 
@@ -190,7 +191,7 @@ class DynamicReplanner:
 
 replanner = DynamicReplanner(decomposer)
 print(f"Replanner ready with {replanner.max_replans} max replans")
-```
+```text
 
 ## 10.2 Reflection Patterns
 
@@ -234,7 +235,7 @@ outputs = agent.generate_and_refine("Explain what RAG is")
 print(f"Reflection rounds: {len(outputs)}")
 for i, o in enumerate(outputs):
     print(f"  Iteration {i+1}: {o[:60]}...")
-```
+```text
 
 ### 10.2.2 Structured Reflection
 
@@ -284,7 +285,7 @@ class StructuredReflector:
 reflector = StructuredReflector({"clarity": 1.0, "accuracy": 1.0, "completeness": 1.0})
 fb = reflector.evaluate("A clear and complete answer about agents.", "Explain agents")
 print(f"Reflection: score={fb.score}, passed={fb.passed}, issues={fb.issues}")
-```
+```text
 
 ### 10.2.3 Iterative Refinement Loop
 
@@ -314,7 +315,7 @@ class RefinementLoop:
 loop = RefinementLoop(reflection_llm, reflector)
 result = loop.run("Write a concise summary")
 print(f"Refinement: success={result['success']}, steps={result['steps']}")
-```
+```text
 
 ## 10.3 Tool Composition
 
@@ -361,7 +362,7 @@ router = ToolRouter({
 })
 print(router.handle("search for AI agents"))
 print(router.handle("calculate 2 + 2"))
-```
+```text
 
 ### 10.3.2 Tool Chain
 
@@ -395,7 +396,7 @@ chain.add_step("format", lambda x: f"final: {x}", "output")
 
 result = chain.execute("raw_data")
 print(f"Chain result: {result['output']}")
-```
+```text
 
 ### 10.3.3 Parallel Tool Execution
 
@@ -437,7 +438,7 @@ pte.register("embed", lambda x: f"embed({x})")
 
 results = pte.execute_all("test query")
 print(f"Parallel results: {results}")
-```
+```text
 
 ## 10.4 Self-Healing
 
@@ -477,7 +478,7 @@ class RecoveryStrategy:
 recovery = RecoveryStrategy()
 result = recovery.recover("missing_tool", lambda c: c, {})
 print(f"Recovery: {result}")
-```
+```text
 
 ### 10.4.2 Dynamic Replanning
 
@@ -516,7 +517,7 @@ class SelfHealingAgent:
 healing = SelfHealingAgent({"search": lambda x: f"search({x})"}, mock_llm)
 result = healing.execute_safe("search for AI news")
 print(f"Self-healing: {result}")
-```
+```text
 
 ## 10.5 Adaptation
 
@@ -563,7 +564,7 @@ adaptive.update_profile("user-1", {"feedback": "simple"})
 adaptive.update_profile("user-1", {"feedback": "simple"})
 adaptive.learn_preference("user-1")
 print(f"Learned style: {adaptive.user_profiles['user-1']['style']}")
-```
+```text
 
 ### 10.5.2 Feedback Loop
 
@@ -606,7 +607,7 @@ def simple_evaluator(q: str, a: str) -> Dict:
 loop = FeedbackLoop(simple_agent, simple_evaluator)
 result = loop.process("What is an agent?")
 print(f"Feedback loop: avg_score={result['avg_score']}, adapt={loop.adaptation_needed()}")
-```
+```text
 
 ## 10.6 Optimization Patterns
 
@@ -662,7 +663,7 @@ cache.set("What is RAG?", "RAG stands for Retrieval-Augmented Generation")
 cached = cache.get("What is RAG?")
 print(f"Cached result: {cached}")
 print(f"Cache stats: {cache.stats()}")
-```
+```text
 
 ### 10.6.2 Batching
 
@@ -712,7 +713,7 @@ batcher.add("req-3", {"query": "Q3"})
 import time as ttime
 ttime.sleep(0.1)
 print(f"Batch results: {batcher.results}")
-```
+```text
 
 ### 10.6.3 Streaming
 
@@ -741,7 +742,7 @@ def mock_generator(prompt: str) -> str:
 streaming = StreamingAgent(mock_generator)
 full = streaming.process_stream("Explain agents")
 print(f"Streamed output: {full}")
-```
+```text
 
 ## Summary
 
@@ -945,6 +946,7 @@ Answer: B
 4. Implement a self-healing agent that attempts recovery strategies in order: retry → backoff → alternative tool → graceful degradation. Test with a failing API call.
 
 5. Build a caching layer for an agent with TTL-based expiration, cache invalidation, and stats reporting. Demonstrate a saved token cos
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 13-ai-agents-langgraph
@@ -954,6 +956,7 @@ Answer: B
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

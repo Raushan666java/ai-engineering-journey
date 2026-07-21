@@ -13,12 +13,13 @@
 
 ## Introduction
 
-16-mlops-production is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding data versioning is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering data versioning.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -41,7 +42,7 @@ flowchart LR
     E --> F[Experiment Tracking]
     F --> G[CI/CD Validation]
     G --> H[Register Dataset Version]
-```
+```text
 
 ## 3.1 Why Data Versioning
 
@@ -53,23 +54,23 @@ Machine learning models depend equally on code and data. While code is rigorousl
 - Team members unknowingly use different data snapshots for training and evaluation
 
 ```python
-# Without data versioning — fragile and irreproducible
+## Without data versioning — fragile and irreproducible
 import pandas as pd
 import os
 
-# What if this file changes between runs?
+## What if this file changes between runs?
 data_path = "data/training_data.csv"
 
-# What if someone regenerates this file with different preprocessing?
+## What if someone regenerates this file with different preprocessing?
 df = pd.read_csv(data_path)
 print(f"Loaded {len(df)} rows — but which version?")
 
-# Better: track the data version explicitly
+## Better: track the data version explicitly
 from hashlib import sha256
 with open(data_path, "rb") as f:
     file_hash = sha256(f.read()).hexdigest()
 print(f"Data hash: {file_hash} — version: {file_hash[:12]}")
-```
+```text
 
 **Cost of unversioned data**:
 
@@ -102,26 +103,26 @@ flowchart TB
     F1 --> R1
     P --> C1
     C1 --> R1
-```
+```text
 
 ```bash
-# Initialize DVC in a Git repository
+## Initialize DVC in a Git repository
 cd ml-project
 git init
 dvc init
 
-# Add a dataset to DVC tracking
+## Add a dataset to DVC tracking
 dvc add data/train.csv
 git add data/train.csv.dvc .gitignore
 git commit -m "add training dataset v1"
 
-# Push to remote storage
+## Push to remote storage
 dvc remote add -d myremote s3://my-bucket/dvc-store
 dvc push
-```
+```text
 
 ```python
-# Python API for DVC integration
+## Python API for DVC integration
 import hashlib
 import json
 from pathlib import Path
@@ -170,7 +171,7 @@ class DataVersionTracker:
 tracker = DataVersionTracker()
 entry = tracker.snapshot("data/train.csv", "v1.0.0", {"source": "raw_export_2025-06-01"})
 print(f"Tracked: {entry['file']} @ {entry['version']} ({entry['hash'][:12]})")
-```
+```text
 
 **DVC workflow with Python**:
 
@@ -193,7 +194,7 @@ def dvc_commit(message="update dataset"):
     print(f"DVC committed: {message}")
 
 dvc_commit("add processed training data v2")
-```
+```text
 
 ---
 
@@ -202,49 +203,49 @@ dvc_commit("add processed training data v2")
 DVC pipelines define reproducible stages for data processing. Each stage has versioned inputs and outputs.
 
 ```python
-# dvc.yaml — define a data pipeline
-# stages:
-#   preprocess:
-#     cmd: python scripts/preprocess.py
-#     deps:
-#       - data/raw/train.csv
-#       - scripts/preprocess.py
-#     outs:
-#       - data/processed/train_clean.csv
-#     params:
-#       - preprocess.min_samples
-#       - preprocess.max_features
-#   feature_engineering:
-#     cmd: python scripts/features.py
-#     deps:
-#       - data/processed/train_clean.csv
-#       - scripts/features.py
-#     outs:
-#       - data/features/train_features.parquet
-#     params:
-#       - features.include_interactions
-```
+## dvc.yaml — define a data pipeline
+## stages:
+##   preprocess:
+##     cmd: python scripts/preprocess.py
+##     deps:
+##       - data/raw/train.csv
+##       - scripts/preprocess.py
+##     outs:
+##       - data/processed/train_clean.csv
+##     params:
+##       - preprocess.min_samples
+##       - preprocess.max_features
+##   feature_engineering:
+##     cmd: python scripts/features.py
+##     deps:
+##       - data/processed/train_clean.csv
+##       - scripts/features.py
+##     outs:
+##       - data/features/train_features.parquet
+##     params:
+##       - features.include_interactions
+```text
 
 ```python
-# scripts/preprocess.py — DVC pipeline stage
+## scripts/preprocess.py — DVC pipeline stage
 import pandas as pd
 import numpy as np
 import json
 import sys
 from pathlib import Path
 
-# Read parameters from params.yaml
+## Read parameters from params.yaml
 with open("params.yaml") as f:
     params = json.load(f)
 
 min_samples = params["preprocess"]["min_samples"]
 max_features = params["preprocess"]["max_features"]
 
-# Read input data (dependency tracked by DVC)
+## Read input data (dependency tracked by DVC)
 df = pd.read_csv("data/raw/train.csv")
 print(f"Loaded raw data: {df.shape}")
 
-# Preprocessing
+## Preprocessing
 df = df.dropna(thresh=min_samples)
 df = df.select_dtypes(include=[np.number])  # Keep numeric features only
 if df.shape[1] > max_features:
@@ -252,12 +253,12 @@ if df.shape[1] > max_features:
     variances = df.var().sort_values(ascending=False)
     df = df[variances.index[:max_features]]
 
-# Save output (tracked by DVC)
+## Save output (tracked by DVC)
 output_path = Path("data/processed/train_clean.csv")
 output_path.parent.mkdir(parents=True, exist_ok=True)
 df.to_csv(output_path, index=False)
 print(f"Saved processed: {df.shape}")
-```
+```text
 
 **Running and reproducing pipelines**:
 
@@ -279,7 +280,7 @@ def get_pipeline_status():
 
 run_pipeline()
 print(get_pipeline_status())
-```
+```text
 
 **Pipeline versioning benefits**:
 
@@ -376,7 +377,7 @@ class DataDriftDetector:
 
         return report
 
-# Example usage
+## Example usage
 detector = DataDriftDetector(reference_version="v1.0")
 report = detector.compare("v2.0")
 
@@ -387,7 +388,7 @@ if report["drift_detected"]:
             print(f"  - {f['feature']} drifted (p={f.get('p_value', 'N/A'):.4f})")
 else:
     print("✅ No significant drift detected")
-```
+```text
 
 **Visualizing drift**:
 
@@ -410,7 +411,7 @@ def plot_feature_drift(ref_values, curr_values, feature_name):
     ax2.legend()
     plt.tight_layout()
     plt.savefig(f"drift_{feature_name}.png")
-```
+```text
 
 ---
 
@@ -481,7 +482,7 @@ result = exp.run_with_data_version(
     model_params={"n_estimators": 200, "max_depth": 10}
 )
 print(f"Run {result['run_id']} with data {result['data_hash']} — MAE: {result['mae']:.4f}")
-```
+```text
 
 **Data lineage query**:
 
@@ -494,11 +495,11 @@ def find_runs_by_data_hash(data_hash: str) -> list:
     )
     return runs[["run_id", "metrics.mae", "params.data_version"]]
 
-# Check if a new data version changed performance
+## Check if a new data version changed performance
 runs_old = find_runs_by_data_hash("abc123")
 runs_new = find_runs_by_data_hash("def456")
 print(f"Old data runs: {len(runs_old)}, New data runs: {len(runs_new)}")
-```
+```text
 
 ---
 
@@ -507,36 +508,36 @@ print(f"Old data runs: {len(runs_old)}, New data runs: {len(runs_new)}")
 Automated data validation pipelines ensure data quality before training.
 
 ```python
-# .github/workflows/data-ci.yml
-# name: Data CI
-# on:
-#   push:
-#     paths: ['data/**', 'params.yaml']
+## .github/workflows/data-ci.yml
+## name: Data CI
+## on:
+##   push:
+##     paths: ['data/**', 'params.yaml']
 #
-# jobs:
-#   validate-data:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - uses: actions/checkout@v4
-#       - uses: actions/setup-python@v5
-#       - run: |
-#           pip install dvc pandas scipy
-#           dvc pull
-#       - name: Run data validation
-#         run: python scripts/validate_data.py
-#       - name: Check for drift
-#         run: python scripts/check_drift.py --reference production
-#       - name: Push new data version
-#         run: |
-#           dvc add data/
-#           git config user.name "CI Bot"
-#           git commit -m "auto: update data version [skip ci]"
-#           dvc push
-#           git push
-```
+## jobs:
+##   validate-data:
+##     runs-on: ubuntu-latest
+##     steps:
+##       - uses: actions/checkout@v4
+##       - uses: actions/setup-python@v5
+##       - run: |
+##           pip install dvc pandas scipy
+##           dvc pull
+##       - name: Run data validation
+##         run: python scripts/validate_data.py
+##       - name: Check for drift
+##         run: python scripts/check_drift.py --reference production
+##       - name: Push new data version
+##         run: |
+##           dvc add data/
+##           git config user.name "CI Bot"
+##           git commit -m "auto: update data version [skip ci]"
+##           dvc push
+##           git push
+```text
 
 ```python
-# scripts/validate_data.py — data quality checks
+## scripts/validate_data.py — data quality checks
 import pandas as pd
 import numpy as np
 import sys
@@ -600,7 +601,7 @@ validator = DataValidator({
 
 if not validator.validate("data/features/train_features.parquet"):
     sys.exit(1)
-```
+```text
 
 **Automated data version promotion**:
 
@@ -615,7 +616,7 @@ def promote_data_version(data_version, validation_report):
         print(f"Promoted data version {data_version} to production")
     else:
         print(f"Data version {data_version} failed validation, not promoting")
-```
+```text
 
 ---
 
@@ -655,7 +656,7 @@ class DataVersionTracker {
     return this.versions.filter(v => v.filePath === filePath).pop();
   }
 }
-```
+```text
 
 ---
 
@@ -869,6 +870,7 @@ d) Automatic hyperparameter tuning
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 16-mlops-production
@@ -878,6 +880,7 @@ d) Automatic hyperparameter tuning
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

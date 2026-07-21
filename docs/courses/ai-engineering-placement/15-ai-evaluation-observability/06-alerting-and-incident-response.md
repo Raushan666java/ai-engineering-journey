@@ -11,12 +11,13 @@
 
 ## Introduction
 
-15-ai-evaluation-observability is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding alerting and incident response is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering alerting and incident response.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -48,7 +49,7 @@ flowchart TD
     end
     D & P & E --> S --> R --> L --> PM --> AI
     AI -->|Implement Fix| D
-```
+```text
 
 ## 6.1 Alerting Strategy
 
@@ -159,7 +160,7 @@ am.add_rule(AlertConfig("High P95 Latency", "p95_latency", ">", 2000, Severity.H
 am.add_rule(AlertConfig("Error Rate", "error_rate", ">", 0.05, Severity.CRITICAL, 60, 120))
 fired = am.evaluate({"p95_latency": 2500, "error_rate": 0.08})
 print(f"Fired alerts: {[a['name'] for a in fired]}")
-```
+```text
 
 ### 6.1.2 Notification Channels
 
@@ -205,7 +206,7 @@ nm.add_channel(NotificationChannel("slack"))
 nm.add_channel(NotificationChannel("email"))
 alert = {"name": "High Error Rate", "severity": "critical", "value": 0.12}
 nm.notify_severity(alert)
-```
+```text
 
 ## 6.2 Drift Alerts
 
@@ -252,7 +253,7 @@ ref = {"input_length": {"mean": 150, "std": 50}, "sentiment": {"mean": 0.5, "std
 detector = DataDriftDetector(ref)
 current = [{"input_length": 300, "sentiment": 0.8} for _ in range(20)]
 print(f"Drift detected: {detector.detect(current)}")
-```
+```text
 
 ### 6.2.2 Model Drift Detection
 
@@ -287,7 +288,7 @@ mdd = ModelDriftDetector(baseline_accuracy=0.92)
 for _ in range(15):
     mdd.update(np.random.normal(0.90, 0.03))
 print(f"Model drift: {mdd.detect_drift(window=10)}")
-```
+```text
 
 ## 6.3 Performance Alerts
 
@@ -323,7 +324,7 @@ class PerformanceThresholds:
 pt = PerformanceThresholds()
 alerts = pt.check({"p95_latency_ms": 2500, "error_rate": 0.03})
 print(f"Performance alerts: {alerts}")
-```
+```text
 
 ### 6.3.2 Error Rate Monitoring
 
@@ -366,7 +367,7 @@ erm = ErrorRateMonitor()
 for _ in range(200):
     erm.record(np.random.random() > 0.03)
 print(f"Error rate: {erm.is_degraded(0.05)}")
-```
+```text
 
 ## 6.4 Incident Response
 
@@ -454,7 +455,7 @@ im.register_runbook("high_latency", [
 inc_id = im.create_incident("P95 latency spike", Severity.HIGH, "P95 went from 500ms to 3s", "high_latency")
 print(f"Incident: {inc_id}")
 print(f"Runbook: {im.get_runbook('high_latency')}")
-```
+```text
 
 ### 6.4.2 Severity Classification
 
@@ -495,7 +496,7 @@ class SeverityClassifier:
 sc = SeverityClassifier()
 sev = sc.classify("outage", "high", 0.8)
 print(f"Severity: {sev.value}, Response: {sc.response_time(sev)} min")
-```
+```text
 
 ## 6.5 Rollback
 
@@ -562,7 +563,7 @@ rbm.record_deployment("v1.0", "models/v1/")
 rbm.record_deployment("v2.0", "models/v2/")
 result = rbm.rollback()
 print(f"Rollback: {result['success']} to {result['current_version']}")
-```
+```text
 
 ### 6.5.2 Canary Rollback
 
@@ -609,7 +610,7 @@ canary.deploy_canary("v2.1", 5)
 healthy = canary.monitor_canary(0.08, 2500, {"error_rate": 0.03, "latency_p95": 2000})
 print(f"Canary healthy: {healthy}")
 print(f"Action: {canary.rollback_canary('v2.1')}")
-```
+```text
 
 ## 6.6 Postmortem
 
@@ -666,7 +667,7 @@ pm.add_timeline_event("14:12", "Latency returned to baseline")
 pm.root_cause = "v2.1 model had an extra attention layer causing 6x compute"
 pm.add_action_item("Add pre-deployment latency benchmark", "ML team", "high")
 print(f"Postmortem generated: {len(pm.action_items)} action items")
-```
+```text
 
 ### 6.6.2 Action Item Tracker
 
@@ -707,7 +708,7 @@ ait.add({"description": "Add pre-deployment benchmarking", "priority": "high", "
 ait.add({"description": "Update monitoring thresholds", "priority": "medium", "status": "open"})
 ait.close("Update monitoring thresholds")
 print(f"Action item report: {ait.report()}")
-```
+```text
 
 ## Summary
 
@@ -930,6 +931,7 @@ Answer: B
 4. Build a rollback manager that supports version recording, rollback to N-1, canary deployment with health monitoring, and automatic rollback on threshold breach.
 
 5. Write a postmortem generator for an incident. Include timeline, root cause, impact assessment, and 5 action items with owners and priorities. Track complet
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 15-ai-evaluation-observability
@@ -939,6 +941,7 @@ Answer: B
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

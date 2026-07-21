@@ -13,12 +13,13 @@
 
 ## Introduction
 
-09-deep-learning-pytorch is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding pytorch tensors is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering pytorch tensors.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart LR
     G --> H[Optimizer Step]
     H --> I[.zero_grad()]
     I --> E
-```
+```text
 
 ## 2.1 Tensor Basics
 
@@ -98,7 +99,7 @@ class TensorBasics:
 tb = TensorBasics()
 tb.creation_methods()
 tb.data_types()
-```
+```text
 
 **Tensor attributes**: `shape`, `dtype`, `device`, `requires_grad`, `grad`, `grad_fn`
 
@@ -152,7 +153,7 @@ class TensorIndexing:
 ti = TensorIndexing()
 ti.basic_indexing()
 ti.advanced_indexing()
-```
+```text
 
 ---
 
@@ -215,7 +216,7 @@ class TensorReshaping:
 tr = TensorReshaping()
 tr.reshape_methods()
 tr.broadcasting_rules()
-```
+```text
 
 **Broadcasting rules**:
 1. Align shapes from the right: (3,1,2) + (2,) → (3,1,2) + (1,1,2)
@@ -292,7 +293,7 @@ class AutogradDemo:
 ad = AutogradDemo()
 ad.basic_autograd()
 ad.custom_autograd()
-```
+```text
 
 **Autograd essentials**:
 - `requires_grad=True` enables gradient tracking
@@ -364,7 +365,7 @@ class DeviceManagement:
 
 dm = DeviceManagement()
 dm.device_operations()
-```
+```text
 
 ---
 
@@ -430,7 +431,7 @@ ato = AdvancedTensorOps()
 ato.matrix_operations()
 ato.convolution_ops()
 ato.fft_ops()
-```
+```text
 
 ---
 
@@ -480,7 +481,7 @@ const aTS = TensorTS.randn(3, 4);
 const bTS = TensorTS.randn(4, 5);
 const cTS = aTS.matmul(bTS);
 console.log(`Tensor matmul shape: [${cTS.shape}]`);
-```
+```text
 
 ## Summary
 
@@ -596,6 +597,7 @@ d) Freezes model parameters
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 09-deep-learning-pytorch
@@ -605,6 +607,7 @@ d) Freezes model parameters
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

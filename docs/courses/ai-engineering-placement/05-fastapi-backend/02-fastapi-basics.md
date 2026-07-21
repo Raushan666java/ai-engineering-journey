@@ -13,12 +13,13 @@
 
 ## Introduction
 
-05-fastapi-backend is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding fastapi basics is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering fastapi basics.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart LR
     E --> F[Response Models]
     F --> G[Middleware]
     G --> H[Swagger Docs]
-```
+```text
 
 ## 2.1 Project Setup
 
@@ -53,11 +54,11 @@ FastAPI is a modern Python web framework for building APIs with automatic OpenAP
 
 ```bash
 pip install fastapi uvicorn[standard]
-```
+```text
 
 **Basic project structure**:
 
-```
+```text
 project/
 ├── app/
 │   ├── __init__.py
@@ -73,12 +74,12 @@ project/
 │       ├── __init__.py
 │       └── auth.py
 └── requirements.txt
-```
+```text
 
 **Running the server**:
 
 ```python
-# app/main.py
+## app/main.py
 from fastapi import FastAPI
 
 app = FastAPI(title="My FastAPI App", version="1.0.0")
@@ -86,13 +87,13 @@ app = FastAPI(title="My FastAPI App", version="1.0.0")
 @app.get("/")
 def root():
     return {"message": "Hello, FastAPI!"}
-```
+```text
 
 ```bash
-# Terminal
+## Terminal
 uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
-# Visit http://localhost:8000/docs for Swagger UI
-```
+## Visit http://localhost:8000/docs for Swagger UI
+```text
 
 **Hot reload**: The `--reload` flag automatically restarts the server when code changes. Use only during development.
 
@@ -106,12 +107,12 @@ from typing import Optional
 
 app = FastAPI()
 
-# Synchronous endpoint
+## Synchronous endpoint
 @app.get("/items")
 def list_items():
     return [{"id": 1, "name": "Item A"}, {"id": 2, "name": "Item B"}]
 
-# Asynchronous endpoint — recommended for I/O operations
+## Asynchronous endpoint — recommended for I/O operations
 @app.get("/items/{item_id}")
 async def get_item(item_id: int):
     item = await fetch_from_db(item_id)
@@ -119,17 +120,17 @@ async def get_item(item_id: int):
         raise HTTPException(status_code=404, detail="Item not found")
     return item
 
-# POST endpoint
+## POST endpoint
 @app.post("/items", status_code=201)
 async def create_item(name: str, price: float):
     item = {"id": 1, "name": name, "price": price}
     return item
 
-# Multiple HTTP methods on same path
+## Multiple HTTP methods on same path
 @app.api_route("/items/{item_id}", methods=["HEAD", "OPTIONS"])
 async def metadata(item_id: int):
     return None
-```
+```text
 
 **Path operation decorator parameters**:
 
@@ -153,14 +154,14 @@ from typing import Optional
 
 app = FastAPI()
 
-# Path parameters with validation
+## Path parameters with validation
 @app.get("/users/{user_id}")
 async def get_user(
     user_id: int = Path(..., ge=1, description="The user ID"),
 ):
     return {"user_id": user_id}
 
-# Query parameters with defaults and validation
+## Query parameters with defaults and validation
 @app.get("/items")
 async def list_items(
     skip: int = Query(0, ge=0, description="Items to skip"),
@@ -176,7 +177,7 @@ async def list_items(
     query += f" LIMIT {limit} OFFSET {skip}"
     return {"items": execute_query(query)}
 
-# Mixed path and query parameters
+## Mixed path and query parameters
 @app.get("/users/{user_id}/orders")
 async def get_user_orders(
     user_id: int,
@@ -184,7 +185,7 @@ async def get_user_orders(
     min_total: Optional[float] = Query(None, ge=0),
 ):
     return {"user_id": user_id, "sort": sort, "min_total": min_total}
-```
+```text
 
 **Parameter types**:
 
@@ -239,7 +240,7 @@ async def create_user(user: UserCreate):
     }
     return created
 
-# Multiple body parameters
+## Multiple body parameters
 @app.put("/users/{user_id}")
 async def update_user(
     user_id: int,
@@ -247,19 +248,19 @@ async def update_user(
     preferences: Optional[dict] = None,
 ):
     return {"user_id": user_id, "user": user, "preferences": preferences}
-```
+```text
 
 **Body parameter merging**: FastAPI distinguishes between body parameters by reading the model definition. A single model parameter is read from the JSON body. Multiple model parameters are expected as nested keys.
 
 ```python
-# Single body — expects {"name": "...", "email": "..."}
+## Single body — expects {"name": "...", "email": "..."}
 @app.post("/users")
 async def create_user(user: UserCreate): ...
 
-# Multiple bodies — expects {"user": {...}, "admin": {...}}
+## Multiple bodies — expects {"user": {...}, "admin": {...}}
 @app.post("/admin/users")
 async def create_admin_user(user: UserCreate, admin: AdminCreate): ...
-```
+```text
 
 ## 2.5 Response Models
 
@@ -282,13 +283,13 @@ class UserIn(BaseModel):
     email: EmailStr
     password: str  # Should never be in response
 
-# response_model filters out fields not in the schema
+## response_model filters out fields not in the schema
 @app.post("/users", response_model=UserOut, status_code=status.HTTP_201_CREATED)
 async def create_user(user: UserIn):
     # password is automatically excluded from response
     return UserOut(id=1, name=user.name, email=user.email)
 
-# Multiple response models
+## Multiple response models
 @app.get(
     "/users/{user_id}",
     response_model=UserOut,
@@ -303,7 +304,7 @@ async def get_user(user_id: int):
         raise HTTPException(status_code=404, detail="User not found")
     return user
 
-# Custom response headers
+## Custom response headers
 from fastapi.responses import JSONResponse
 
 @app.get("/users/{user_id}/export")
@@ -311,7 +312,7 @@ async def export_user(user_id: int):
     data = {"id": user_id, "name": "Alice"}
     headers = {"X-Export-Version": "1.0", "Content-Disposition": "attachment; filename=user.json"}
     return JSONResponse(content=data, headers=headers)
-```
+```text
 
 **Response types**:
 
@@ -337,7 +338,7 @@ import time
 
 app = FastAPI()
 
-# CORS middleware — allow cross-origin requests
+## CORS middleware — allow cross-origin requests
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["https://example.com", "http://localhost:3000"],
@@ -347,7 +348,7 @@ app.add_middleware(
     expose_headers=["X-Request-ID"],
 )
 
-# Custom middleware — request timing
+## Custom middleware — request timing
 class TimingMiddleware(BaseHTTPMiddleware):
     async def dispatch(self, request: Request, call_next):
         start = time.time()
@@ -358,7 +359,7 @@ class TimingMiddleware(BaseHTTPMiddleware):
 
 app.add_middleware(TimingMiddleware)
 
-# Custom middleware — request ID
+## Custom middleware — request ID
 import uuid
 
 class RequestIDMiddleware(BaseHTTPMiddleware):
@@ -369,7 +370,7 @@ class RequestIDMiddleware(BaseHTTPMiddleware):
         return response
 
 app.add_middleware(RequestIDMiddleware)
-```
+```text
 
 **Middleware execution order**: Middleware executes in the order they are added. The first middleware added wraps all subsequent ones.
 
@@ -379,7 +380,7 @@ app.add_middleware(RequestIDMiddleware)
 from fastapi import FastAPI
 from contextlib import asynccontextmanager
 
-# Modern lifespan approach (replaces startup/shutdown events)
+## Modern lifespan approach (replaces startup/shutdown events)
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Startup
@@ -399,7 +400,7 @@ app = FastAPI(lifespan=lifespan)
 @app.get("/health")
 async def health():
     return {"status": "healthy", "db_connected": not app.state.db.closed}
-```
+```text
 
 **Legacy approach** (still supported):
 
@@ -411,7 +412,7 @@ async def startup():
 @app.on_event("shutdown")
 async def shutdown():
     await app.state.db.close()
-```
+```text
 
 ## 2.8 Auto-Generated Documentation
 
@@ -439,7 +440,7 @@ app = FastAPI(
     openapi_url="/openapi.json",
 )
 
-# Custom OpenAPI tags with descriptions
+## Custom OpenAPI tags with descriptions
 @app.get("/health", tags=["System"])
 async def health():
     """Health check endpoint that returns system status."""
@@ -450,9 +451,9 @@ async def metrics():
     """Internal metrics — hidden from docs."""
     return {"requests": 12345, "errors": 23}
 
-# Disable docs in production
+## Disable docs in production
 app = FastAPI(docs_url=None, redoc_url=None)  # Hide in production
-```
+```text
 
 **OpenAPI extensions**:
 
@@ -471,7 +472,7 @@ async def create_item(item: Item):
     Upload item details. Returns created item with ID.
     """
     return item
-```
+```text
 
 ---
 
@@ -504,7 +505,7 @@ app.post<{}, {}, Omit<User, "id" | "createdAt">>("/users", async (req, res) => {
   const user = await db.createUser(req.body);
   return res.status(201).json(user);
 });
-```
+```text
 
 ---
 
@@ -675,6 +676,7 @@ d) Apache
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 05-fastapi-backend
@@ -684,6 +686,7 @@ d) Apache
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

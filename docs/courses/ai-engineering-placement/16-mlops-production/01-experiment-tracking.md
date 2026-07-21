@@ -13,12 +13,13 @@
 
 ## Introduction
 
-16-mlops-production is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding experiment tracking is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering experiment tracking.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -41,7 +42,7 @@ flowchart LR
     D --> E[Compare Runs]
     E --> F[Sweeps & Nested Runs]
     F --> G[CI/CD Integration]
-```
+```text
 
 ## 1.1 What is Experiment Tracking
 
@@ -75,7 +76,7 @@ with mlflow.start_run(run_name="baseline-random-forest"):
 
     mlflow.sklearn.log_model(model, "model")
     print(f"Logged run with MAE={mae:.4f}")
-```
+```text
 
 **Components of an experiment run**:
 - **Run ID**: Unique identifier for the run
@@ -107,7 +108,7 @@ flowchart TB
     subgraph Registry[Registry]
         MR2[Model Registry API]
     end
-```
+```text
 
 - **Tracking Server**: HTTP server that records runs, parameters, metrics, and artifacts. Can use local filesystem, SQLite, MySQL, or PostgreSQL as backend store.
 - **Artifact Store**: Cloud storage (S3, GCS, Azure Blob) or local path for binary artifacts.
@@ -115,35 +116,35 @@ flowchart TB
 - **MLflow Projects**: Reusable, reproducible ML code packaged with conda/docker environments.
 
 ```python
-# Setting up MLflow with a remote tracking server
+## Setting up MLflow with a remote tracking server
 import mlflow
 
-# Local tracking
+## Local tracking
 mlflow.set_tracking_uri("http://localhost:5000")
 mlflow.set_experiment("house-price-prediction")
 
-# Or use SQLite backend
-# mlflow.set_tracking_uri("sqlite:///mlflow.db")
+## Or use SQLite backend
+## mlflow.set_tracking_uri("sqlite:///mlflow.db")
 
-# Autologging — automatically capture params, metrics, models
+## Autologging — automatically capture params, metrics, models
 mlflow.sklearn.autolog()
 
 with mlflow.start_run():
     model = RandomForestRegressor(n_estimators=200)
     model.fit(X_train, y_train)
     # Everything logged automatically!
-```
+```text
 
 **Setting up the tracking server**:
 
 ```bash
-# Start MLflow tracking server
+## Start MLflow tracking server
 mlflow server \
     --backend-store-uri sqlite:///mlflow.db \
     --default-artifact-root ./artifacts \
     --host 0.0.0.0 \
     --port 5000
-```
+```text
 
 ---
 
@@ -179,7 +180,7 @@ with mlflow.start_run(run_name="xgboost-v1"):
         mlflow.log_metric("val_loss", val_loss, step=epoch)
         time.sleep(0.1)
 
-# Use log_dict for structured data
+## Use log_dict for structured data
 with mlflow.start_run(run_name="with-config"):
     config = {
         "data_sources": ["s3://bucket/train.csv"],
@@ -188,7 +189,7 @@ with mlflow.start_run(run_name="with-config"):
         "split_ratio": 0.8
     }
     mlflow.log_dict(config, "config.json")
-```
+```text
 
 **Metric logging patterns**:
 
@@ -200,7 +201,7 @@ with mlflow.start_run(run_name="with-config"):
 | Nested params | `log_params(dict)` | Param grid |
 
 ```python
-# Parameter logging with hierarchical names
+## Parameter logging with hierarchical names
 with mlflow.start_run():
     mlflow.log_params({
         "model.learning_rate": 0.01,
@@ -210,7 +211,7 @@ with mlflow.start_run():
         "preprocessing.scaler": "standard",
         "preprocessing.handle_missing": "mean_impute"
     })
-```
+```text
 
 ---
 
@@ -257,7 +258,7 @@ with mlflow.start_run(run_name="artifact-demo"):
     with open("summary_reports/model_card.txt", "w") as f:
         f.write("Model: RandomForest\nAccuracy: 0.95\n")
     mlflow.log_artifacts("summary_reports", artifact_path="reports")
-```
+```text
 
 **Artifact storage options**:
 
@@ -269,7 +270,7 @@ with mlflow.start_run(run_name="artifact-demo"):
 | Azure Blob | `wasbs://container@account.blob.core.windows.net/` | Azure deployments |
 
 ```python
-# Register a model in the Model Registry
+## Register a model in the Model Registry
 with mlflow.start_run(run_name="register-model"):
     model = RandomForestRegressor(n_estimators=200)
     model.fit(X_train, y_train)
@@ -278,7 +279,7 @@ with mlflow.start_run(run_name="register-model"):
     # Register (if using registry)
     model_uri = f"runs:/{mlflow.active_run().info.run_id}/model"
     mlflow.register_model(model_uri, "HousePricePredictor")
-```
+```text
 
 ---
 
@@ -293,7 +294,7 @@ import pandas as pd
 client = mlflow.tracking.MlflowClient()
 experiment = client.get_experiment_by_name("house-price-prediction")
 
-# Search runs with filter criteria
+## Search runs with filter criteria
 runs = client.search_runs(
     experiment_ids=[experiment.experiment_id],
     filter_string="metrics.mae < 3.0",
@@ -307,7 +308,7 @@ for run in runs:
     print(f"Params: {run.data.params}")
     print("---")
 
-# Convert runs to DataFrame for comparison
+## Convert runs to DataFrame for comparison
 def runs_to_df(experiment_name):
     exp = client.get_experiment_by_name(experiment_name)
     runs = client.search_runs([exp.experiment_id])
@@ -321,14 +322,14 @@ def runs_to_df(experiment_name):
 
 df = runs_to_df("house-price-prediction")
 print(df.sort_values("metric_mae").head())
-```
+```text
 
 **Using the MLflow UI for comparison**:
 
 ```bash
-# Launch the UI to compare runs visually
+## Launch the UI to compare runs visually
 mlflow ui --port 5000
-```
+```text
 
 The UI provides:
 - **Parallel coordinates plot**: Visualize hyperparameter combinations and resulting metrics
@@ -337,7 +338,7 @@ The UI provides:
 - **Compare mode**: Select multiple runs to see side-by-side parameter and metric differences
 
 ```python
-# Programmatic comparison with statistical tests
+## Programmatic comparison with statistical tests
 from scipy import stats
 
 def compare_experiments(run_ids_a, run_ids_b, metric="mae"):
@@ -347,7 +348,7 @@ def compare_experiments(run_ids_a, run_ids_b, metric="mae"):
     group_b = get_metrics(run_ids_b)
     t_stat, p_value = stats.ttest_ind(group_a, group_b)
     return {"t_statistic": t_stat, "p_value": p_value, "significant": p_value < 0.05}
-```
+```text
 
 ---
 
@@ -385,7 +386,7 @@ with mlflow.start_run(run_name="grid-search-parent") as parent_run:
             mlflow.set_tag("mlflow.parentRunId", parent_run.info.run_id)
 
 print(f"Completed {len(configs)} child runs under parent {parent_run.info.run_id}")
-```
+```text
 
 **Integration with Optuna for intelligent hyperparameter search**:
 
@@ -416,7 +417,7 @@ with mlflow.start_run(run_name="optuna-sweep"):
     mlflow.log_params(study.best_params)
     mlflow.log_metric("best_cv_mae", study.best_value)
     mlflow.log_artifact("optuna_study.pkl")
-```
+```text
 
 ---
 
@@ -425,30 +426,30 @@ with mlflow.start_run(run_name="optuna-sweep"):
 Integrating experiment tracking into CI/CD pipelines ensures every model training run is captured automatically, with full lineage.
 
 ```python
-# Example: GitHub Actions workflow for automated experiment tracking
-# .github/workflows/train.yml
-# on:
-#   push:
-#     branches: [main]
-#     paths: ['models/**']
+## Example: GitHub Actions workflow for automated experiment tracking
+## .github/workflows/train.yml
+## on:
+##   push:
+##     branches: [main]
+##     paths: ['models/**']
 # 
-# jobs:
-#   train-and-track:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - uses: actions/checkout@v4
-#       - uses: actions/setup-python@v5
-#         with:
-#           python-version: '3.11'
-#       - run: |
-#           pip install -r requirements.txt
-#           python train.py \
-#             --tracking-uri ${{ secrets.MLFLOW_TRACKING_URI }} \
-#             --experiment-name ${{ github.ref_name }}
-```
+## jobs:
+##   train-and-track:
+##     runs-on: ubuntu-latest
+##     steps:
+##       - uses: actions/checkout@v4
+##       - uses: actions/setup-python@v5
+##         with:
+##           python-version: '3.11'
+##       - run: |
+##           pip install -r requirements.txt
+##           python train.py \
+##             --tracking-uri ${{ secrets.MLFLOW_TRACKING_URI }} \
+##             --experiment-name ${{ github.ref_name }}
+```text
 
 ```python
-# train.py — script that runs in CI pipeline
+## train.py — script that runs in CI pipeline
 import argparse
 import os
 import mlflow
@@ -488,7 +489,7 @@ with mlflow.start_run() as run:
         mlflow.set_tag("promoted", "true")
 
 print(f"CI run completed — MAE={mae:.4f}")
-```
+```text
 
 **Experiment tracking maturity levels**:
 
@@ -523,7 +524,7 @@ async function logRun(run: ExperimentRun): Promise<void> {
 }
 
 // Similar pattern for logging metrics and artifacts via REST API
-```
+```text
 
 ---
 
@@ -777,6 +778,7 @@ d) Logs environment variables
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 16-mlops-production
@@ -786,6 +788,7 @@ d) Logs environment variables
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

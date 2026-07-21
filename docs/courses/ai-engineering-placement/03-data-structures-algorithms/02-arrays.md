@@ -19,6 +19,7 @@ Arrays are the most fundamental data structure, providing O(1) random access. Un
 
 - Time and space complexity basics
 - Basic programming
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -42,7 +43,7 @@ flowchart LR
     D --> F
     E --> F
     F --> G[Practice Problems]
-```
+```text
 
 ## 2.1 Array Fundamentals
 
@@ -58,25 +59,25 @@ from array import array
 static_arr = array('i', [1, 2, 3, 4, 5])  # 'i' = signed int
 print(static_arr[0])  # 1
 
-# Dynamic array — Python list
+## Dynamic array — Python list
 dynamic_arr = [1, 2, 3]  # Initial capacity > 3
 dynamic_arr.append(4)     # Amortized O(1)
 dynamic_arr.extend([5, 6, 7])  # May trigger resize
 print(len(dynamic_arr))   # 7
-```
+```text
 
 **Memory layout comparison**:
 
 ```python
-# Array of 5 integers
+## Array of 5 integers
 arr = [10, 20, 30, 40, 50]
-# Memory: [10][20][30][40][50] — contiguous
-# Address: base + 0, base + 8, base + 16, ... (on 64-bit)
-# Access arr[3]: base + 3*8 = address of 40 — O(1)
+## Memory: [10][20][30][40][50] — contiguous
+## Address: base + 0, base + 8, base + 16, ... (on 64-bit)
+## Access arr[3]: base + 3*8 = address of 40 — O(1)
 
-# Linked list — nodes scattered in memory
-# Access by index: must traverse nodes — O(n)
-```
+## Linked list — nodes scattered in memory
+## Access by index: must traverse nodes — O(n)
+```text
 
 | Operation | Static Array | Dynamic Array (amortized) | Linked List |
 |-----------|-------------|--------------------------|-------------|
@@ -98,11 +99,11 @@ def traverse(arr):
     for i in range(len(arr)):
         print(f"Index {i}: {arr[i]}")
 
-# Two-direction traversal
+## Two-direction traversal
 def traverse_bidirectional(arr):
     for i in range(len(arr) // 2):
         print(arr[i], arr[-(i + 1)])
-```
+```text
 
 **Linear search**:
 
@@ -112,7 +113,7 @@ def linear_search(arr, target):
         if val == target:
             return i
     return -1
-```
+```text
 
 **Insertion at position**:
 
@@ -125,10 +126,10 @@ def insert_at(arr, index, value):
     arr[index] = value
     return arr
 
-# Better: use list.insert
+## Better: use list.insert
 arr = [1, 2, 4, 5]
 arr.insert(2, 3)  # [1, 2, 3, 4, 5]
-```
+```text
 
 **Deletion at position**:
 
@@ -140,10 +141,10 @@ def delete_at(arr, index):
     arr.pop()  # Remove last element
     return arr
 
-# Better: use list.pop
+## Better: use list.pop
 arr = [1, 2, 3, 4, 5]
 arr.pop(2)  # [1, 2, 4, 5]
-```
+```text
 
 **Reverse an array**:
 
@@ -156,11 +157,11 @@ def reverse_array(arr):
         right -= 1
     return arr
 
-# Pythonic way
+## Pythonic way
 arr = [1, 2, 3, 4, 5]
 reversed_arr = arr[::-1]  # Creates new array
 arr.reverse()             # In-place
-```
+```text
 
 ---
 
@@ -177,7 +178,7 @@ def prefix_sum(arr):
         prefix[i + 1] = prefix[i] + arr[i]
     return prefix
 
-# Range sum query: sum(L, R) = prefix[R+1] - prefix[L]
+## Range sum query: sum(L, R) = prefix[R+1] - prefix[L]
 arr = [3, 1, 4, 1, 5, 9, 2, 6]
 pref = prefix_sum(arr)
 
@@ -186,7 +187,7 @@ def range_sum(pref, L, R):
 
 print(range_sum(pref, 2, 5))  # 4 + 1 + 5 + 9 = 19
 print(range_sum(pref, 0, 3))  # 3 + 1 + 4 + 1 = 9
-```
+```text
 
 **Subarray sum equals k**: Count subarrays whose sum equals k.
 
@@ -206,9 +207,9 @@ def subarray_sum_equals_k(arr, k):
 
     return count
 
-# Example: [1, 1, 1], k=2 → 2
+## Example: [1, 1, 1], k=2 → 2
 print(subarray_sum_equals_k([1, 1, 1], 2))  # 2
-```
+```text
 
 **Two-dimensional prefix sum**: Efficient rectangle sum queries.
 
@@ -240,7 +241,7 @@ matrix = [
 ]
 pref = prefix_sum_2d(matrix)
 print(rectangle_sum(pref, 1, 1, 2, 2))  # 5+6+8+9 = 28
-```
+```text
 
 ---
 
@@ -264,7 +265,7 @@ def two_sum_sorted(arr, target):
     return [-1, -1]
 
 print(two_sum_sorted([2, 7, 11, 15], 9))  # [0, 1]
-```
+```text
 
 **Remove duplicates from sorted array**:
 
@@ -282,7 +283,7 @@ def remove_duplicates(arr):
 arr = [1, 1, 2, 2, 3, 4, 4, 5]
 new_len = remove_duplicates(arr)
 print(arr[:new_len])  # [1, 2, 3, 4, 5]
-```
+```text
 
 **Container with most water**:
 
@@ -301,7 +302,7 @@ def max_area(heights):
     return max_water
 
 print(max_area([1, 8, 6, 2, 5, 4, 8, 3, 7]))  # 49
-```
+```text
 
 **Trapping rain water**:
 
@@ -329,7 +330,7 @@ def trap_rain_water(heights):
     return water
 
 print(trap_rain_water([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]))  # 6
-```
+```text
 
 ```mermaid
 flowchart TD
@@ -338,7 +339,7 @@ flowchart TD
         B[Same Direction] -->|"Remove Duplicates"| E[Fast & Slow]
         C[Fast & Slow] -->|"Cycle Detection"| F[Linked List]
     end
-```
+```text
 
 ---
 
@@ -365,7 +366,7 @@ def reverse(arr, left, right):
         right -= 1
 
 print(rotate_right([1, 2, 3, 4, 5], 2))  # [4, 5, 1, 2, 3]
-```
+```text
 
 **Move zeros to end**:
 
@@ -379,7 +380,7 @@ def move_zeros(arr):
     return arr
 
 print(move_zeros([0, 1, 0, 3, 12]))  # [1, 3, 12, 0, 0]
-```
+```text
 
 **Dutch national flag problem** (sort 0, 1, 2):
 
@@ -399,7 +400,7 @@ def sort_colors(arr):
     return arr
 
 print(sort_colors([2, 0, 2, 1, 1, 0]))  # [0, 0, 1, 1, 2, 2]
-```
+```text
 
 **Find the first missing positive integer**:
 
@@ -420,7 +421,7 @@ def first_missing_positive(arr):
 
 print(first_missing_positive([3, 4, -1, 1]))  # 2
 print(first_missing_positive([7, 8, 9, 11, 12]))  # 1
-```
+```text
 
 ---
 
@@ -439,7 +440,7 @@ def transpose(matrix):
 
 matrix = [[1, 2, 3], [4, 5, 6]]
 print(transpose(matrix))  # [[1, 4], [2, 5], [3, 6]]
-```
+```text
 
 **Spiral matrix traversal**:
 
@@ -474,7 +475,7 @@ def spiral_order(matrix):
 
 matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 print(spiral_order(matrix))  # [1, 2, 3, 6, 9, 8, 7, 4, 5]
-```
+```text
 
 **Rotate image** (90 degrees clockwise):
 
@@ -492,7 +493,7 @@ def rotate_image(matrix):
 
 matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 print(rotate_image(matrix))  # [[7, 4, 1], [8, 5, 2], [9, 6, 3]]
-```
+```text
 
 **Set matrix zeros**: If an element is 0, set its entire row and column to 0.
 
@@ -532,7 +533,7 @@ def set_zeroes(matrix):
 
 matrix = [[1, 1, 1], [1, 0, 1], [1, 1, 1]]
 print(set_zeroes(matrix))  # [[1, 0, 1], [0, 0, 0], [1, 0, 1]]
-```
+```text
 
 ```mermaid
 flowchart TD
@@ -544,7 +545,7 @@ flowchart TD
         E --> G
         F --> G
     end
-```
+```text
 
 ---
 
@@ -575,7 +576,7 @@ function prefixSum(arr: number[]): number[] {
     }
     return pref;
 }
-```
+```text
 
 ---
 
@@ -927,11 +928,11 @@ def subarray_sum(arr, k):
       <li>Supports buffer protocol for zero-copy operations</li>
     </ul>
     <pre><code>from array import array
-# 'i' = signed int, 'd' = double, 'f' = float
+## 'i' = signed int, 'd' = double, 'f' = float
 int_arr = array('i', [1, 2, 3, 4, 5])
 float_arr = array('d', [1.0, 2.0, 3.0])
 
-# List is more flexible for most use cases
+## List is more flexible for most use cases
 list_arr = [1, "hello", 3.14, None]</code></pre>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -1035,6 +1036,7 @@ d) O(n²)
 3. Forgetting that array insertion/deletion is O(n)
 4. Not using two-pointer technique when applicable
 5. Ignoring cache locality benefits of arrays
+
 ## Revision Notes
 
 - Arrays: O(1) access, O(n) insert/delete
@@ -1042,6 +1044,7 @@ d) O(n²)
 - Two-pointer technique for sorted arrays
 - Sliding window for subarray problems
 - Prefix sums for range queries
+
 ## Placement Section
 
 ### Top 10 Interview Questions

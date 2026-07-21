@@ -13,12 +13,13 @@
 
 ## Introduction
 
-06-docker-kubernetes-cloud is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding kubernetes basics is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering kubernetes basics.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart LR
     E --> F[Namespaces & Labels]
     F --> G[kubectl]
     G --> H[Storage]
-```
+```text
 
 ## 4.1 Kubernetes Architecture
 
@@ -71,7 +72,7 @@ flowchart TD
     AS1 --> N2
     N1 --> K1[kubelet]
     N2 --> K2[kubelet]
-```
+```text
 
 | Component | Role |
 |-----------|------|
@@ -533,6 +534,7 @@ d) revisionHistoryLimit
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 06-docker-kubernetes-cloud
@@ -542,6 +544,7 @@ d) revisionHistoryLimit
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

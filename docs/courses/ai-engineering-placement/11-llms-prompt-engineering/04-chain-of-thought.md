@@ -13,12 +13,13 @@
 
 ## Introduction
 
-11-llms-prompt-engineering is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding chain of thought is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering chain of thought.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -44,7 +45,7 @@ flowchart LR
     F --> G
     G --> H[Self-Consistency Voting]
     H --> I[Final Answer]
-```
+```text
 
 ## 4.1 What is Chain-of-Thought
 
@@ -78,7 +79,7 @@ cot = client.chat.completions.create(
     temperature=0
 )
 print("CoT:", cot.choices[0].message.content)
-```
+```text
 
 **The CoT process** follows a reasoning chain:
 
@@ -101,7 +102,7 @@ questions = [
 ]
 for q in questions:
     print(f"Q: {q}\nA: {chain_of_thought(q, client)}\n")
-```
+```text
 
 ```mermaid
 flowchart TD
@@ -112,7 +113,7 @@ flowchart TD
     E --> F[Step N: Compute]
     F --> G[Step N+1: Verify]
     G --> H[Final Answer]
-```
+```text
 
 ---
 
@@ -135,7 +136,7 @@ questions = [
 ]
 for q in questions:
     print(f"Q: {q}\nA: {zero_shot_cot(q, client)}\n")
-```
+```text
 
 **Extracting the final answer**:
 
@@ -156,7 +157,7 @@ text, ans = zero_shot_cot_with_answer(
     "Pizza has 8 slices. I eat 3/8. Remaining slices?", client
 )
 print(f"Answer: {ans}")
-```
+```text
 
 **When zero-shot CoT fails**:
 
@@ -179,7 +180,7 @@ compare_methods(
     "Alice has 3 brothers and 1 sister. How many sisters does Alice's brother have?",
     client
 )
-```
+```text
 
 ```mermaid
 flowchart TD
@@ -189,7 +190,7 @@ flowchart TD
     D --> E[Step 2]
     E --> F[Final Answer]
     F --> G[Extract answer]
-```
+```text
 
 ---
 
@@ -211,7 +212,7 @@ def few_shot_cot(question, client):
     return resp.choices[0].message.content
 
 print(few_shot_cot("15 trees. Plant 3 more each day for 5 days. Total?", client))
-```
+```text
 
 **Math problem CoT**:
 
@@ -231,7 +232,7 @@ def few_shot_math(question, client):
     return resp.choices[0].message.content
 
 print(few_shot_math("Train at 50 mph for 3 hours. Distance?", client))
-```
+```text
 
 **Logical reasoning CoT**:
 
@@ -253,7 +254,7 @@ def few_shot_logic(premises, conclusion, client):
 print(few_shot_logic(
     "If it rains, ground gets wet. Ground is wet.", "Therefore it rained.", client
 ))
-```
+```text
 
 ```mermaid
 flowchart LR
@@ -269,7 +270,7 @@ flowchart LR
     C --> D
     D --> E[Step-by-Step]
     E --> F[Answer]
-```
+```text
 
 ---
 
@@ -309,7 +310,7 @@ class SelfConsistency:
 
 sc = SelfConsistency(client)
 sc.solve("Shirt costs $40 with 25% discount. Final price?")
-```
+```text
 
 **Self-consistency for complex math**:
 
@@ -342,7 +343,7 @@ def self_consistency_math(problem, client, n=5):
 self_consistency_math(
     "45 apples. Sell 1/5. Receive 30 more. Total now?", client
 )
-```
+```text
 
 **When to use self-consistency**:
 
@@ -375,7 +376,7 @@ def benchmark(client):
         print(f"  Expected: {expected}, Consistent: {consistent}")
 
 benchmark(client)
-```
+```text
 
 ```mermaid
 flowchart TD
@@ -389,7 +390,7 @@ flowchart TD
     F --> H
     G --> H
     H --> I[Consensus Answer]
-```
+```text
 
 ---
 
@@ -452,9 +453,9 @@ class TreeOfThought:
         )
         return r.choices[0].message.content
 
-# tot = TreeOfThought(client)
-# print(tot.solve("17 cows. All but 9 die. How many left?"))
-```
+## tot = TreeOfThought(client)
+## print(tot.solve("17 cows. All but 9 die. How many left?"))
+```text
 
 **ToT evaluation**:
 
@@ -481,7 +482,7 @@ candidates = [
     "Average eggs per hen: (2+1)/2=1.5. Total hens: 8. Total: 12.",
 ]
 tot_evaluate("5 white hens (2 eggs/day), 3 brown hens (1 egg/day). Total eggs?", candidates, client)
-```
+```text
 
 ```mermaid
 flowchart TD
@@ -495,7 +496,7 @@ flowchart TD
     E --> I[Sub-branch 1b]
     H --> J[Eval: 9/10]
     J --> K[Final Answer]
-```
+```text
 
 ---
 
@@ -546,8 +547,8 @@ def basic_cot(q):
     ).choices[0].message.content
 
 test_cases = [("What is 15 + 27?", "42"), ("1/4 of 36?", "9")]
-# print(f"Accuracy: {ev.accuracy(test_cases, basic_cot):.2%}")
-```
+## print(f"Accuracy: {ev.accuracy(test_cases, basic_cot):.2%}")
+```text
 
 **Detecting flawed reasoning**:
 
@@ -562,7 +563,7 @@ def analyze_errors(reasoning, client):
 
 flawed = "Items cost $10 each. Bought 2. Tax 15%. Tax = $3. Total = $23."
 print(analyze_errors(flawed, client))
-```
+```text
 
 ```mermaid
 flowchart TD
@@ -579,7 +580,7 @@ flowchart TD
     H --> K
     I --> K
     J --> K
-```
+```text
 
 ---
 
@@ -618,7 +619,7 @@ async function selfConsistency(question: string, apiKey: string, samples = 5) {
   const [top] = [...freq.entries()].sort((a, b) => b[1] - a[1]);
   return { topAnswer: top[0], samples: answers };
 }
-```
+```text
 
 ---
 
@@ -809,6 +810,7 @@ d) Format compliance
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 11-llms-prompt-engineering
@@ -818,6 +820,7 @@ d) Format compliance
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

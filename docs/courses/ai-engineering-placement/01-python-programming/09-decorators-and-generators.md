@@ -13,12 +13,13 @@
 
 ## Introduction
 
-01-python-programming is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding decorators and generators is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering decorators and generators.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -44,7 +45,7 @@ flowchart LR
     I --> J[Data Pipelines]
     E --> K[Real-World Patterns]
     J --> K
-```
+```text
 
 ## 9.1 Decorator Basics
 
@@ -70,7 +71,7 @@ def slow_function():
     return 42
 
 print(slow_function())  # slow_function took 0.5001s, then 42
-```
+```text
 
 **Closures** are the mechanism that makes decorators work. A closure is a function that retains access to variables from its enclosing scope even after the outer function has returned.
 
@@ -85,7 +86,7 @@ def make_counter():
 
 c = make_counter()
 print(c(), c(), c())  # 1 2 3
-```
+```text
 
 The `nonlocal` keyword allows the inner function to modify variables from the enclosing scope. Without it, assigning to `count` would create a new local variable instead.
 
@@ -96,7 +97,7 @@ The `nonlocal` keyword allows the inner function to modify variables from the en
 @functools.lru_cache(maxsize=128)
 def expensive_function(n: int) -> int:
     return sum(i * i for i in range(n))
-```
+```text
 
 ## 9.2 Advanced Decorators
 
@@ -118,10 +119,10 @@ def greet(name: str):
     print(f"Hello, {name}!")
 
 greet("Alice")
-# Hello, Alice!
-# Hello, Alice!
-# Hello, Alice!
-```
+## Hello, Alice!
+## Hello, Alice!
+## Hello, Alice!
+```text
 
 **Class-based decorators** use `__init__` to store the function and `__call__` to wrap invocation. They are useful for stateful behavior like counting calls.
 
@@ -143,7 +144,7 @@ def say_hi():
 
 say_hi()  # Call 1 of say_hi, then Hi!
 say_hi()  # Call 2 of say_hi, then Hi!
-```
+```text
 
 **functools.wraps** is essential. It copies `__name__`, `__doc__`, `__module__`, and `__qualname__` from the original function to the wrapper. Without it, introspection tools report the wrapper's metadata instead of the decorated function's.
 
@@ -159,7 +160,7 @@ def cache(maxsize: int | None = None):
         func, maxsize = maxsize, None
         return decorator(func)
     return decorator
-```
+```text
 
 ## 9.3 Generators
 
@@ -174,14 +175,14 @@ def fibonacci(limit: int):
 
 for num in fibonacci(100):
     print(num, end=" ")  # 0 1 1 2 3 5 8 13 21 34 55 89
-```
+```text
 
 **Generator expressions** are memory-efficient alternatives to list comprehensions:
 
 ```python
 squares = (x * x for x in range(10_000_000))   # lazy, ~120 bytes
 squares_list = [x * x for x in range(10_000_000)]  # eager, ~400 MB
-```
+```text
 
 **send() and throw()** enable bidirectional communication with generators:
 
@@ -196,7 +197,7 @@ next(gen)           # prime the generator
 gen.send("Hello")   # Received: Hello
 gen.send("World")   # Received: World
 gen.close()
-```
+```text
 
 **yield from** delegates to a subgenerator, simplifying composition:
 
@@ -206,8 +207,8 @@ def chain(*iterables):
         yield from it
 
 print(list(chain([1, 2], [3, 4], "ab")))
-# [1, 2, 3, 4, 'a', 'b']
-```
+## [1, 2, 3, 4, 'a', 'b']
+```text
 
 **Generator closing and cleanup** with `GeneratorExit`:
 
@@ -221,7 +222,7 @@ def resource_generator():
 gen = resource_generator()
 print(next(gen))  # resource
 gen.close()       # Cleaning up resource
-```
+```text
 
 ## 9.4 itertools
 
@@ -230,18 +231,18 @@ The itertools module provides fast, memory-efficient iterator tools.
 ```python
 import itertools
 
-# Infinite iterators
+## Infinite iterators
 counter = itertools.count(start=10, step=2)
 print([next(counter) for _ in range(5)])  # [10, 12, 14, 16, 18]
 
-# Cycle through an iterable infinitely
+## Cycle through an iterable infinitely
 colors = itertools.cycle(["red", "green", "blue"])
 print([next(colors) for _ in range(5)])   # ['red', 'green', 'blue', 'red', 'green']
 
-# Chain multiple iterables
+## Chain multiple iterables
 combined = itertools.chain([1, 2], [3, 4], [5])
 print(list(combined))  # [1, 2, 3, 4, 5]
-```
+```text
 
 **Groupby** groups consecutive elements by a key function:
 
@@ -249,60 +250,60 @@ print(list(combined))  # [1, 2, 3, 4, 5]
 data = [("A", 1), ("A", 2), ("B", 3), ("B", 4)]
 for key, group in itertools.groupby(data, key=lambda x: x[0]):
     print(key, list(group))
-# A [('A', 1), ('A', 2)]
-# B [('B', 3), ('B', 4)]
-```
+## A [('A', 1), ('A', 2)]
+## B [('B', 3), ('B', 4)]
+```text
 
 The input must be sorted by the same key for correct grouping.
 
 **Combinatorial iterators**:
 
 ```python
-# Cartesian product
+## Cartesian product
 print(list(itertools.product([1, 2], ["a", "b"])))
-# [(1, 'a'), (1, 'b'), (2, 'a'), (2, 'b')]
+## [(1, 'a'), (1, 'b'), (2, 'a'), (2, 'b')]
 
-# Permutations — order matters
+## Permutations — order matters
 print(list(itertools.permutations([1, 2, 3], 2)))
-# [(1, 2), (1, 3), (2, 1), (2, 3), (3, 1), (3, 2)]
+## [(1, 2), (1, 3), (2, 1), (2, 3), (3, 1), (3, 2)]
 
-# Combinations — order does not matter
+## Combinations — order does not matter
 print(list(itertools.combinations([1, 2, 3], 2)))
-# [(1, 2), (1, 3), (2, 3)]
+## [(1, 2), (1, 3), (2, 3)]
 
-# Combinations with replacement
+## Combinations with replacement
 print(list(itertools.combinations_with_replacement([1, 2], 2)))
-# [(1, 1), (1, 2), (2, 2)]
-```
+## [(1, 1), (1, 2), (2, 2)]
+```text
 
 **Slice an iterator** without materializing:
 
 ```python
 result = list(itertools.islice(range(1_000_000), 5))
 print(result)  # [0, 1, 2, 3, 4]
-```
+```text
 
 **Other useful itertools**:
 
 ```python
-# accumulate — running sum/product
+## accumulate — running sum/product
 print(list(itertools.accumulate([1, 2, 3, 4])))           # [1, 3, 6, 10]
 print(list(itertools.accumulate([1, 2, 3, 4], lambda a, b: a * b)))  # [1, 2, 6, 24]
 
-# compress — filter by selector
+## compress — filter by selector
 print(list(itertools.compress("ABCDEF", [1, 0, 1, 0, 1, 1])))  # ['A', 'C', 'E', 'F']
 
-# pairwise — sliding pairs (Python 3.10+)
+## pairwise — sliding pairs (Python 3.10+)
 print(list(itertools.pairwise([1, 2, 3, 4])))  # [(1, 2), (2, 3), (3, 4)]
 
-# starmap — apply function to unpacked tuples
+## starmap — apply function to unpacked tuples
 print(list(itertools.starmap(divmod, [(10, 3), (20, 7)])))  # [(3, 1), (2, 6)]
 
-# tee — clone an iterator into n independent iterators
+## tee — clone an iterator into n independent iterators
 it1, it2 = itertools.tee([1, 2, 3], 2)
 print(list(it1))  # [1, 2, 3]
 print(list(it2))  # [1, 2, 3]
-```
+```text
 
 ## 9.5 contextlib
 
@@ -325,9 +326,9 @@ def managed_file(filename: str, mode: str = "r"):
 
 with managed_file("test.txt", "w") as f:
     f.write("Hello, world!")
-# Opening test.txt
-# Closing test.txt
-```
+## Opening test.txt
+## Closing test.txt
+```text
 
 The code before `yield` runs on entry; the code after runs on exit (even if an exception occurs).
 
@@ -337,21 +338,21 @@ The code before `yield` runs on entry; the code after runs on exit (even if an e
 from contextlib import suppress, redirect_stdout, redirect_stderr, nullcontext
 import io, os
 
-# suppress — ignore specific exceptions
+## suppress — ignore specific exceptions
 with suppress(FileNotFoundError):
     os.remove("nonexistent.txt")  # no error raised
 
-# redirect_stdout — capture print output
+## redirect_stdout — capture print output
 buf = io.StringIO()
 with redirect_stdout(buf):
     print("Captured!")
 print(buf.getvalue())  # Captured!\n
 
-# nullcontext — a no-op context manager with optional return value
+## nullcontext — a no-op context manager with optional return value
 ctx = nullcontext(42)
 with ctx as val:
     print(val)  # 42
-```
+```text
 
 **ExitStack** manages multiple context managers dynamically:
 
@@ -366,7 +367,7 @@ with ExitStack() as stack:
         stack.callback(f.close)
         files.append(f)
     # all files closed on exit, even if an open() fails
-```
+```text
 
 **contextmanager vs closing**:
 
@@ -374,10 +375,10 @@ with ExitStack() as stack:
 from contextlib import closing
 from urllib.request import urlopen
 
-# closing ensures close() is called
+## closing ensures close() is called
 with closing(urlopen("https://example.com")) as page:
     content = page.read()
-```
+```text
 
 ## 9.6 Real-World Patterns
 
@@ -398,7 +399,7 @@ def fib(n: int) -> int:
     return n if n < 2 else fib(n - 1) + fib(n - 2)
 
 print(fib(100))  # 354224848179261915075 (fast!)
-```
+```text
 
 **Rate limiter decorator**:
 
@@ -422,7 +423,7 @@ def rate_limit(max_calls: int, period: float):
 @rate_limit(max_calls=3, period=1.0)
 def api_call():
     return "data"
-```
+```text
 
 **Decorator for deprecation warnings**:
 
@@ -444,7 +445,7 @@ def deprecated(message: str = ""):
 @deprecated("Use new_function() instead")
 def old_function():
     pass
-```
+```text
 
 **Generator pipeline for data processing**:
 
@@ -466,7 +467,7 @@ def transform(rows, mapper):
     for row in rows:
         yield mapper(row)
 
-# Compose the pipeline
+## Compose the pipeline
 pipeline = transform(
     filter_rows(
         parse_csv(read_lines("data.csv")),
@@ -477,7 +478,7 @@ pipeline = transform(
 
 for record in pipeline:
     print(record)
-```
+```text
 
 The pipeline processes one row at a time — the entire file is never loaded into memory.
 
@@ -502,7 +503,7 @@ next(sm)
 sm.send("start")  # Started
 sm.send("stop")   # Stopped
 sm.send("exit")
-```
+```text
 
 ## TypeScript Parallel
 
@@ -553,7 +554,7 @@ function withLogging<T extends (...args: any[]) => any>(fn: T): T {
 const add = (a: number, b: number) => a + b;
 const loggedAdd = withLogging(add);
 loggedAdd(3, 4); // logs: Calling add with [3, 4], Result: 7
-```
+```text
 
 ## Summary
 
@@ -671,6 +672,7 @@ loggedAdd(3, 4); // logs: Calling add with [3, 4], Result: 7
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 01-python-programming
@@ -680,6 +682,7 @@ loggedAdd(3, 4); // logs: Calling add with [3, 4], Result: 7
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

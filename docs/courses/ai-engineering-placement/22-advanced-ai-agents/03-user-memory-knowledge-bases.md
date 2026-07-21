@@ -12,12 +12,13 @@
 
 ## Introduction
 
-22-advanced-ai-agents is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding user memory knowledge bases is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering user memory knowledge bases.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -54,7 +55,7 @@ flowchart TD
     Memory --> Retrieval
     Retrieval --> AGENT
     Index --> AGENT
-```
+```text
 
 ## 3.1 Memory Architecture
 
@@ -123,7 +124,7 @@ class MemoryStore {
         return this.procedural.get(toolName)
     }
 }
-```
+```text
 
 ```python
 from dataclasses import dataclass
@@ -200,7 +201,7 @@ class LongTermMemory:
             used.add(i)
 
         self.entries = merged
-```
+```text
 
 ## 3.2 User Memory Systems
 
@@ -272,7 +273,7 @@ class UserMemorySystem {
         return interaction.query.slice(0, 100)
     }
 }
-```
+```text
 
 ## 3.3 Agentic RAG
 
@@ -363,7 +364,7 @@ class AgenticRAG {
 interface Retriever {
     retrieve(query: string): Promise<RetrievalResult>
 }
-```
+```text
 
 ```python
 from typing import List, Optional
@@ -411,7 +412,7 @@ class AgenticRAG:
 
         answer_prompt = f"Question: {question}\nContext: {context}\nAnswer with what you have:"
         return self.llm(answer_prompt)
-```
+```text
 
 ## 3.4 Hybrid Retrieval
 
@@ -543,7 +544,7 @@ class HybridRetriever {
         }))
     }
 }
-```
+```text
 
 ## 3.5 Structured Indexes
 
@@ -627,7 +628,7 @@ class RAPTORIndex {
         return this.llm(prompt)
     }
 }
-```
+```text
 
 ### GraphRAG
 
@@ -679,7 +680,7 @@ class GraphRAGIndex {
         )
     }
 }
-```
+```text
 
 ## 3.6 Contextual Retrieval
 
@@ -741,7 +742,7 @@ class ContextualRetriever {
         return scored.slice(0, topK).map(s => s.chunk)
     }
 }
-```
+```text
 
 ```python
 from typing import List
@@ -784,7 +785,7 @@ class ContextualRetrieval:
 
         scored.sort(key=lambda x: -x[0])
         return [c for _, c in scored[:top_k]]
-```
+```text
 
 ## Summary
 
@@ -844,6 +845,7 @@ Take 20 text chunks, build a RAPTOR index, and compare retrieval quality against
 ### Exercise 5: Contextual Retrieval A/B Test
 
 Split 100 chunks into two groups — with and without contextual prefixes. Run 50 queries and measure retrieval failure rate for ea
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 22-advanced-ai-agents
@@ -853,6 +855,7 @@ Split 100 chunks into two groups — with and without contextual prefixes. Run 5
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

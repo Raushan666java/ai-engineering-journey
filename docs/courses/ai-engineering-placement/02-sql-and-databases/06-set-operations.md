@@ -13,12 +13,13 @@
 
 ## Introduction
 
-02-sql-and-databases is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding set operations is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering set operations.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -45,7 +46,7 @@ flowchart LR
     A --> J[Practical Patterns]
     J --> K[Data Reconciliation]
     J --> L[ETL Validation]
-```
+```text
 
 ## 6.1 Set Operation Basics
 
@@ -68,7 +69,7 @@ SELECT first_name, last_name, email FROM eu_customers;
 SELECT product_id, product_name, price FROM current_products
 UNION
 SELECT product_id, product_name, price FROM archived_products;
-```
+```text
 
 **Column count mismatch error**:
 
@@ -78,7 +79,7 @@ SELECT id, name FROM table_a
 UNION
 SELECT id, name, description FROM table_b;
 -- ERROR: number of columns in SELECT statements do not match
-```
+```text
 
 **Data type compatibility**:
 
@@ -92,7 +93,7 @@ SELECT 0 AS quantity;
 SELECT name FROM employees
 UNION
 SELECT id FROM employees;  -- ERROR if id is integer
-```
+```text
 
 ## 6.2 UNION vs UNION ALL
 
@@ -108,7 +109,7 @@ SELECT city FROM customers_eu;
 SELECT city FROM customers_us
 UNION ALL
 SELECT city FROM customers_eu;
-```
+```text
 
 **Performance comparison**:
 
@@ -126,7 +127,7 @@ EXPLAIN ANALYZE
 SELECT * FROM big_table_2023
 UNION ALL
 SELECT * FROM big_table_2024;
-```
+```text
 
 **When to use each**:
 
@@ -140,7 +141,7 @@ SELECT * FROM sales_feb;
 SELECT DISTINCT department FROM employees_2023
 UNION
 SELECT DISTINCT department FROM employees_2024;
-```
+```text
 
 **Multiple UNIONs**:
 
@@ -153,7 +154,7 @@ SELECT name FROM q3_results
 UNION ALL
 SELECT name FROM q4_results
 ORDER BY name;
-```
+```text
 
 ## 6.3 INTERSECT
 
@@ -169,7 +170,7 @@ SELECT customer_id FROM orders_electronics;
 SELECT employee_id FROM department_assignments WHERE department_id = 'SALES'
 INTERSECT
 SELECT employee_id FROM department_assignments WHERE department_id = 'MARKETING';
-```
+```text
 
 **INTERSECT vs INNER JOIN**:
 
@@ -183,7 +184,7 @@ SELECT product_id FROM inventory_warehouse_b;
 SELECT DISTINCT a.product_id
 FROM inventory_warehouse_a a
 INNER JOIN inventory_warehouse_b b ON a.product_id = b.product_id;
-```
+```text
 
 INTERSECT is cleaner for simple set membership; JOIN is better when you need additional columns.
 
@@ -195,7 +196,7 @@ INTERSECT is cleaner for simple set membership; JOIN is better when you need add
 SELECT product_id FROM shipments_jan
 INTERSECT ALL
 SELECT product_id FROM shipments_feb;
-```
+```text
 
 **Multiple INTERSECTs**:
 
@@ -206,7 +207,7 @@ INTERSECT
 SELECT product_id FROM warehouse_2
 INTERSECT
 SELECT product_id FROM warehouse_3;
-```
+```text
 
 ## 6.4 EXCEPT (MINUS)
 
@@ -222,7 +223,7 @@ SELECT DISTINCT email FROM orders;
 SELECT product_id FROM products
 EXCEPT
 SELECT product_id FROM order_items;
-```
+```text
 
 **EXCEPT vs NOT IN / NOT EXISTS**:
 
@@ -244,7 +245,7 @@ SELECT student_id FROM enrolled_students
 WHERE student_id NOT IN (
     SELECT student_id FROM graduated_students WHERE student_id IS NOT NULL
 );
-```
+```text
 
 **EXCEPT ALL** in PostgreSQL:
 
@@ -253,7 +254,7 @@ WHERE student_id NOT IN (
 SELECT product_id FROM inventory_system_a
 EXCEPT ALL
 SELECT product_id FROM inventory_system_b;
-```
+```text
 
 **Order matters with EXCEPT**:
 
@@ -268,7 +269,7 @@ SELECT product_id FROM catalog_b;
 SELECT product_id FROM catalog_b
 EXCEPT
 SELECT product_id FROM catalog_a;
-```
+```text
 
 **EXCEPT with multiple columns**:
 
@@ -279,7 +280,7 @@ FROM expected_schedule
 EXCEPT
 SELECT sale_date, product_id
 FROM actual_sales;
-```
+```text
 
 ## 6.5 Combining Set Operations
 
@@ -305,7 +306,7 @@ SELECT 2;
 INTERSECT
 SELECT 2;
 -- Result: [2] (INTERSECT applied after UNION)
-```
+```text
 
 **Complex combinations**:
 
@@ -316,7 +317,7 @@ SELECT 2;
  SELECT user_id FROM roles WHERE role = 'billing')
 EXCEPT
 SELECT user_id FROM locked_accounts;
-```
+```text
 
 **Set operations with CTEs**:
 
@@ -336,7 +337,7 @@ churned_paid AS (
 SELECT u.*, 'Churned paid user' AS reason
 FROM users u
 JOIN churned_paid cp ON u.user_id = cp.user_id;
-```
+```text
 
 **Using ORDER BY with set operations**:
 
@@ -347,7 +348,7 @@ UNION ALL
 SELECT product_name, price FROM products_2024
 ORDER BY price DESC
 LIMIT 10;
-```
+```text
 
 **INSERT with set operations**:
 
@@ -359,7 +360,7 @@ UNION ALL
 SELECT email, name, 'mobile' FROM mobile_signups
 UNION ALL
 SELECT email, name, 'partner' FROM partner_imports;
-```
+```text
 
 ## 6.6 Practical Applications
 
@@ -374,7 +375,7 @@ UNION ALL
 (SELECT * FROM target_table
  EXCEPT
  SELECT * FROM source_table);
-```
+```text
 
 **ETL validation — check data was loaded correctly**:
 
@@ -388,7 +389,7 @@ SELECT order_id, order_date, amount FROM warehouse_orders;
 SELECT order_id, order_date, amount FROM warehouse_orders
 EXCEPT
 SELECT order_id, order_date, amount FROM staging_orders;
-```
+```text
 
 **Reporting — combine data from multiple time periods**:
 
@@ -411,7 +412,7 @@ SELECT 'Total', SUM(amount) FROM (
     UNION ALL
     SELECT amount FROM sales_q4
 ) AS all_sales;
-```
+```text
 
 **User cohort analysis**:
 
@@ -425,7 +426,7 @@ SELECT user_id FROM logins WHERE login_date > CURRENT_DATE - INTERVAL '30 days';
 SELECT user_id FROM signups WHERE signup_year = 2024
 EXCEPT
 SELECT user_id FROM email_confirmations;
-```
+```text
 
 **Inventory synchronization**:
 
@@ -434,7 +435,7 @@ SELECT user_id FROM email_confirmations;
 SELECT sku, product_name FROM store_a_inventory
 EXCEPT
 SELECT sku, product_name FROM store_b_inventory;
-```
+```text
 
 **Permission analysis**:
 
@@ -445,7 +446,7 @@ SELECT sku, product_name FROM store_b_inventory;
  SELECT user_id FROM system_b_permissions WHERE access_level >= 2)
 EXCEPT
 SELECT user_id FROM revoked_access;
-```
+```text
 
 ## TypeScript Parallel
 
@@ -477,7 +478,7 @@ console.log(union(productsA, productsB));       // [1, 2, 3, 4, 5, 6, 7, 8]
 console.log(unionAll(productsA, productsB));     // [1, 2, 3, 4, 5, 4, 5, 6, 7, 8]
 console.log(intersect(productsA, productsB));    // [4, 5]
 console.log(except(productsA, productsB));       // [1, 2, 3]
-```
+```text
 
 ## Summary
 
@@ -593,6 +594,7 @@ console.log(except(productsA, productsB));       // [1, 2, 3]
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 02-sql-and-databases
@@ -602,6 +604,7 @@ console.log(except(productsA, productsB));       // [1, 2, 3]
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

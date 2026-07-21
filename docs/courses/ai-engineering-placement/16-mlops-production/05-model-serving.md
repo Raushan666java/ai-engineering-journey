@@ -13,12 +13,13 @@
 
 ## Introduction
 
-16-mlops-production is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding model serving is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering model serving.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -44,7 +45,7 @@ flowchart LR
     G --> H[Response]
     E --> I[Feature Store]
     F --> I
-```
+```text
 
 ## 5.1 Serving Architectures
 
@@ -60,7 +61,7 @@ Model serving is the process of making model predictions available to applicatio
 | Batch | Minutes-hours | Offline scoring | Daily customer churn prediction |
 
 ```python
-# REST serving with FastAPI — the most common pattern
+## REST serving with FastAPI — the most common pattern
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 import mlflow.pyfunc
@@ -70,7 +71,7 @@ import time
 
 app = FastAPI(title="Model Serving API", version="1.0.0")
 
-# Model registry path
+## Model registry path
 MODEL_URI = "models:/PricePredictor/Production"
 model = mlflow.pyfunc.load_model(MODEL_URI)
 
@@ -106,33 +107,33 @@ async def predict(request: PredictionRequest):
 @app.get("/health")
 async def health():
     return {"status": "healthy", "model": "PricePredictor", "version": "v2.1.0"}
-```
+```text
 
 **gRPC serving for high throughput**:
 
 ```python
-# grpc_servicer.py — gRPC model serving
-# import grpc
-# from concurrent import futures
-# import model_pb2
-# import model_pb2_grpc
-# import mlflow.pyfunc
-# import numpy as np
+## grpc_servicer.py — gRPC model serving
+## import grpc
+## from concurrent import futures
+## import model_pb2
+## import model_pb2_grpc
+## import mlflow.pyfunc
+## import numpy as np
 #
-# class ModelServicer(model_pb2_grpc.ModelServiceServicer):
-#     def __init__(self):
-#         self.model = mlflow.pyfunc.load_model("models:/PricePredictor/Production")
+## class ModelServicer(model_pb2_grpc.ModelServiceServicer):
+##     def __init__(self):
+##         self.model = mlflow.pyfunc.load_model("models:/PricePredictor/Production")
 #
-#     def Predict(self, request, context):
-#         features = np.array(request.features).reshape(1, -1)
-#         prediction = self.model.predict(features)[0]
-#         return model_pb2.PredictResponse(prediction=float(prediction))
+##     def Predict(self, request, context):
+##         features = np.array(request.features).reshape(1, -1)
+##         prediction = self.model.predict(features)[0]
+##         return model_pb2.PredictResponse(prediction=float(prediction))
 #
-# server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
-# model_pb2_grpc.add_ModelServiceServicer_to_server(ModelServicer(), server)
-# server.add_insecure_port("[::]:50051")
-# server.start()
-```
+## server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
+## model_pb2_grpc.add_ModelServiceServicer_to_server(ModelServicer(), server)
+## server.add_insecure_port("[::]:50051")
+## server.start()
+```text
 
 ---
 
@@ -141,7 +142,7 @@ async def health():
 FastAPI provides async inference capabilities, automatic OpenAPI docs, and Pydantic validation — making it ideal for model serving.
 
 ```python
-# serving_app.py — Complete model serving application
+## serving_app.py — Complete model serving application
 from fastapi import FastAPI, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -166,7 +167,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Load model
+## Load model
 MODEL_PATH = "model_artifacts/production_model"
 try:
     model = mlflow.pyfunc.load_model(MODEL_PATH)
@@ -225,11 +226,11 @@ async def batch_predict(request: BatchRequest):
         num_predictions=len(predictions)
     )
 
-# For running directly
+## For running directly
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8080)
-```
+```text
 
 **Async inference with background tasks**:
 
@@ -255,7 +256,7 @@ async def log_prediction_to_db(features: dict, prediction: float):
     """Simulated async database logging."""
     # In production: await db.insert("predictions", {...})
     logger.info(f"Logged prediction: {prediction} for features: {features}")
-```
+```text
 
 ---
 
@@ -264,7 +265,7 @@ async def log_prediction_to_db(features: dict, prediction: float):
 Caching repeated requests and batching concurrent requests significantly improve throughput.
 
 ```python
-# caching.py — Redis-based prediction caching
+## caching.py — Redis-based prediction caching
 import redis
 import json
 import hashlib
@@ -306,7 +307,7 @@ class PredictionCache:
 
 cache = PredictionCache()
 
-# In prediction endpoint
+## In prediction endpoint
 @app.post("/v1/predict-with-cache")
 async def predict_cached(features: Dict[str, float], model_version: str = "v2"):
     # Check cache first
@@ -322,7 +323,7 @@ async def predict_cached(features: Dict[str, float], model_version: str = "v2"):
     cache.set(model_version, features, float(prediction))
 
     return {"prediction": float(prediction), "source": "model"}
-```
+```text
 
 **Request batching**:
 
@@ -373,7 +374,7 @@ class RequestBatcher:
             result["prediction"] = predictions[i]
             event.set()
 
-# Usage
+## Usage
 batcher = RequestBatcher(
     model_fn=lambda x: asyncio.to_thread(model.predict, x),
     max_batch_size=32,
@@ -385,7 +386,7 @@ async def batched_predict(features: Dict[str, float]):
     df = pd.DataFrame([features])
     prediction = await batcher.predict(df.values)
     return {"prediction": float(prediction[0])}
-```
+```text
 
 ---
 
@@ -394,7 +395,7 @@ async def batched_predict(features: Dict[str, float]):
 A model router directs requests to different model versions based on routing rules.
 
 ```python
-# model_router.py — Route requests to model versions
+## model_router.py — Route requests to model versions
 import mlflow.pyfunc
 import random
 import hashlib
@@ -456,12 +457,12 @@ router.load_version("v1", "models:/PricePredictor/1")
 router.load_version("v2", "models:/PricePredictor/2")
 router.set_routing({"v1": 90, "v2": 10})
 
-# FastAPI endpoint using router
+## FastAPI endpoint using router
 @app.post("/v1/route")
 async def routed_predict(features: Dict[str, float], user_id: str = None):
     prediction, version = router.route(features, user_id)
     return {"prediction": float(prediction), "model_version": version}
-```
+```text
 
 ---
 
@@ -470,42 +471,42 @@ async def routed_predict(features: Dict[str, float], user_id: str = None):
 Autoscaling ensures serving infrastructure matches traffic demands without over-provisioning.
 
 ```python
-# kubernetes_hpa.yaml — Horizontal Pod Autoscaler
-# apiVersion: autoscaling/v2
-# kind: HorizontalPodAutoscaler
-# metadata:
-#   name: model-serving-hpa
-# spec:
-#   scaleTargetRef:
-#     apiVersion: apps/v1
-#     kind: Deployment
-#     name: price-predictor
-#   minReplicas: 2
-#   maxReplicas: 20
-#   metrics:
-#     - type: Resource
-#       resource:
-#         name: cpu
-#         target:
-#           type: Utilization
-#           averageUtilization: 70
-#     - type: Resource
-#       resource:
-#         name: memory
-#         target:
-#           type: Utilization
-#           averageUtilization: 80
-#     - type: Pods
-#       pods:
-#         metric:
-#           name: prediction_latency_p95
-#         target:
-#           type: AverageValue
-#           averageValue: 500m  # 500ms p95 latency
-```
+## kubernetes_hpa.yaml — Horizontal Pod Autoscaler
+## apiVersion: autoscaling/v2
+## kind: HorizontalPodAutoscaler
+## metadata:
+##   name: model-serving-hpa
+## spec:
+##   scaleTargetRef:
+##     apiVersion: apps/v1
+##     kind: Deployment
+##     name: price-predictor
+##   minReplicas: 2
+##   maxReplicas: 20
+##   metrics:
+##     - type: Resource
+##       resource:
+##         name: cpu
+##         target:
+##           type: Utilization
+##           averageUtilization: 70
+##     - type: Resource
+##       resource:
+##         name: memory
+##         target:
+##           type: Utilization
+##           averageUtilization: 80
+##     - type: Pods
+##       pods:
+##         metric:
+##           name: prediction_latency_p95
+##         target:
+##           type: AverageValue
+##           averageValue: 500m  # 500ms p95 latency
+```text
 
 ```python
-# custom_autoscaler.py — Python-based autoscaling logic
+## custom_autoscaler.py — Python-based autoscaling logic
 import time
 import psutil
 import subprocess
@@ -563,7 +564,7 @@ async def predict_with_autoscaling(features: Dict[str, float]):
         scaler.scale()
 
     return {"prediction": float(prediction), "latency_ms": round(latency, 2)}
-```
+```text
 
 ---
 
@@ -572,7 +573,7 @@ async def predict_with_autoscaling(features: Dict[str, float]):
 Optimize model inference for production with quantization, ONNX, and TensorRT.
 
 ```python
-# optimize_model.py — Convert sklearn model to ONNX for faster inference
+## optimize_model.py — Convert sklearn model to ONNX for faster inference
 from skl2onnx import convert_sklearn
 from skl2onnx.common.data_types import FloatTensorType
 import onnxruntime as ort
@@ -602,22 +603,22 @@ class ONNXModelWrapper:
         result = self.session.run(None, {self.input_name: input_data})
         return result[0]
 
-# Load sklearn model, convert to ONNX, compare performance
+## Load sklearn model, convert to ONNX, compare performance
 rf_model = mlflow.sklearn.load_model("models:/PricePredictor/Production")
 onnx_path = convert_to_onnx(rf_model, input_dim=10)
 
 onnx_model = ONNXModelWrapper(onnx_path)
 
-# Benchmark
+## Benchmark
 X_test = np.random.randn(1000, 10).astype(np.float32)
 
-# sklearn
+## sklearn
 start = time.time()
 for _ in range(100):
     _ = rf_model.predict(X_test)
 sklearn_time = time.time() - start
 
-# ONNX
+## ONNX
 start = time.time()
 for _ in range(100):
     _ = onnx_model.predict(X_test)
@@ -625,7 +626,7 @@ onnx_time = time.time() - start
 
 print(f"sklearn: {sklearn_time:.3f}s, ONNX: {onnx_time:.3f}s")
 print(f"Speedup: {sklearn_time/onnx_time:.1f}x")
-```
+```text
 
 **Quantization for reduced latency**:
 
@@ -653,8 +654,8 @@ def quantize_model(model_path: str, quantized_path: str):
     print(f"Original: {original_size:.1f}MB -> Quantized: {quantized_size:.1f}MB")
     print(f"Size reduction: {(1 - quantized_size/original_size)*100:.0f}%")
 
-# quantize_model("model.pt", "model_quantized.pt")
-```
+## quantize_model("model.pt", "model_quantized.pt")
+```text
 
 **Feature store integration**:
 
@@ -688,7 +689,7 @@ async def predict_with_feature_store(entity_id: str):
     df = pd.DataFrame([features])
     prediction = model.predict(df)[0]
     return {"prediction": float(prediction), "entity_id": entity_id}
-```
+```text
 
 ---
 
@@ -727,7 +728,7 @@ class ModelRouter {
     return { prediction: defaultVersion.predict(features), version: defaultVersion.version };
   }
 }
-```
+```text
 
 ---
 
@@ -941,6 +942,7 @@ d) Eliminates need for data validation
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 16-mlops-production
@@ -950,6 +952,7 @@ d) Eliminates need for data validation
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

@@ -6,12 +6,13 @@ After this chapter you will be able to explain the TCP/IP stack from an API desi
 
 ## Introduction
 
-00-core-computer-science is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Computer networking is the backbone of distributed AI systems. Understanding TCP/IP, DNS, load balancing, and HTTP protocols is essential for building scalable ML pipelines and serving models at scale.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Theory
 
 ### OSI & TCP/IP Models
@@ -44,7 +45,7 @@ graph TB
     L3 --> I
     L2 --> N
     L1 --> N
-```
+```text
 
 ### TCP vs UDP
 
@@ -84,7 +85,7 @@ sequenceDiagram
     LB->>LB: Hash(request_id) % 2
     LB->>N2: Forward
     N2-->>C: Response
-```
+```text
 
 ### CDN
 
@@ -135,7 +136,7 @@ sequenceDiagram
     C->>S: Finished
     S->>C: Finished
     Note over C,S: Encrypted Application Data
-```
+```text
 
 ### HTTP Methods and RESTful Design
 
@@ -218,7 +219,7 @@ class DnsResolver {
         this.cache.delete(hostname)
     }
 }
-```
+```text
 
 ### Load Balancer with Multiple Strategies
 
@@ -263,7 +264,7 @@ class LoadBalancer {
         return healthy[Math.abs(hash) % healthy.length]
     }
 }
-```
+```text
 
 ### API Gateway with Token Bucket Rate Limiting
 
@@ -321,7 +322,7 @@ class ApiGateway {
         return { status: 200, body: { result: "ok" } }
     }
 }
-```
+```text
 
 ### gRPC Streaming Simulation
 
@@ -345,7 +346,7 @@ async function simulateGrpcInference(prompt: string, tokens: string[]): Promise<
         process.stdout.write(msg.token)
     }
 }
-```
+```text
 
 ### Content Delivery Networks
 
@@ -418,7 +419,7 @@ class GrpcClient {
         return generate()
     }
 }
-```
+```text
 
 ### Connection Pooling
 
@@ -466,7 +467,7 @@ class ConnectionPool {
         return { id: Math.random().toString(36).substring(2) }
     }
 }
-```
+```text
 
 ### Retry with Exponential Backoff
 
@@ -492,6 +493,7 @@ async function withRetry<T>(
 }
 ```
 
+
 ## Visual Analogy
 
 Think of computer networks like a **phone call system**:
@@ -502,6 +504,7 @@ Think of computer networks like a **phone call system**:
 - **Load balancer** = A receptionist who routes incoming calls to the next available agent.
 
 This helps because networking is all about trade-offs between **reliability** (TCP) and **speed** (UDP), and understanding which tool fits which job is the core decision AI engineers make when designing distributed systems.
+
 
 ## Summary
 
@@ -570,6 +573,7 @@ Computer networks form the backbone of every distributed AI system. The key ment
 3. Build a simple HTTP/2 multiplexing simulator: a dispatcher that interleaves multiple request streams over a single virtual connection, handling one lost "packet" by blocking only its stream.
 
 4. Write a function that calculates the minimum number of edge regions needed to guarantee <100ms p99 inference latency globally, given average network latency between r
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 00-core-computer-science
@@ -579,6 +583,7 @@ Computer networks form the backbone of every distributed AI system. The key ment
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions
@@ -614,6 +619,7 @@ Computer networks form the backbone of every distributed AI system. The key ment
 - [ ] Prepare 2 real-world examples of using 00-core-computer-science
 - [ ] Know the time/space complexity of common 00-core-computer-science operations
 - [ ] Have questions ready about how the company uses 00-core-computer-science
+
 ### True/False
 
 **T/F 1**: TCP is a connectionless protocol.

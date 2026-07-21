@@ -13,12 +13,13 @@
 
 ## Introduction
 
-01-python-programming is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding file io and exceptions is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering file io and exceptions.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -41,7 +42,7 @@ flowchart LR
     E --> F[try/except/else/finally]
     E --> G[Custom Exceptions]
     H[pathlib] --> I[Path methods]
-```
+```text
 
 ## 7.1 File Basics
 
@@ -319,13 +320,13 @@ async function readFile(path: string): Promise<string> {
 import tempfile
 import os
 
-# Temporary file (auto-deleted on close)
+## Temporary file (auto-deleted on close)
 with tempfile.TemporaryFile(mode="w+t", encoding="utf-8") as tf:
     tf.write("Temporary data\n")
     tf.seek(0)
     print(tf.read())  # Temporary data
 
-# Named temporary file
+## Named temporary file
 with tempfile.NamedTemporaryFile(delete=False, suffix=".txt") as ntf:
     ntf.write(b"Named temp file")
     temp_path = ntf.name
@@ -333,19 +334,19 @@ with tempfile.NamedTemporaryFile(delete=False, suffix=".txt") as ntf:
 print(f"Temp file at: {temp_path}")
 os.unlink(temp_path)  # manually delete
 
-# Temporary directory
+## Temporary directory
 with tempfile.TemporaryDirectory() as tmpdir:
     file_path = os.path.join(tmpdir, "test.txt")
     with open(file_path, "w") as f:
         f.write("Hello from temp dir")
     print(os.listdir(tmpdir))  # ['test.txt']
-# Directory auto-deleted after context
+## Directory auto-deleted after context
 `
 
 ## 7.8 Advanced Exception Patterns
 
 `python
-# try-except-else-finally complete example
+## try-except-else-finally complete example
 def process_config(path: str) -> dict:
     try:
         file = open(path, "r", encoding="utf-8")
@@ -366,7 +367,7 @@ def process_config(path: str) -> dict:
     finally:
         print("Config loading attempt complete")
 
-# Exception groups (Python 3.11+)
+## Exception groups (Python 3.11+)
 try:
     raise ExceptionGroup("Multiple errors", [
         ValueError("Invalid value"),
@@ -377,7 +378,7 @@ except* ValueError as e:
 except* TypeError as e:
     print(f"Type errors: {e.exceptions}")
 
-# Context managers for resource management
+## Context managers for resource management
 class ManagedDatabase:
     def __init__(self, connection_string: str):
         self.conn = connection_string
@@ -404,7 +405,7 @@ with ManagedDatabase("db://localhost") as db:
 import fcntl  # Unix only; Windows uses msvcrt
 import os
 
-# Advisory file locking
+## Advisory file locking
 def write_with_lock(filepath: str, data: str):
     with open(filepath, "a", encoding="utf-8") as f:
         try:
@@ -415,7 +416,7 @@ def write_with_lock(filepath: str, data: str):
         finally:
             fcntl.flock(f, fcntl.LOCK_UN)
 
-# Atomic file write (write to temp, then rename)
+## Atomic file write (write to temp, then rename)
 import tempfile
 def atomic_write(filepath: str, data: str):
     dirpath = os.path.dirname(filepath) or "."
@@ -426,7 +427,7 @@ def atomic_write(filepath: str, data: str):
         temp_path = tf.name
     os.replace(temp_path, filepath)  # atomic on POSIX
 
-# Concurrent logging with Queue
+## Concurrent logging with Queue
 import threading
 from queue import Queue
 
@@ -462,7 +463,7 @@ import json
 from pathlib import Path
 from typing import Iterator
 
-# CSV processing pipeline
+## CSV processing pipeline
 def read_csv(path: Path) -> Iterator[dict]:
     with path.open("r", newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
@@ -478,14 +479,14 @@ def write_jsonl(rows: Iterator[dict], path: Path):
         for row in rows:
             f.write(json.dumps(row) + "\n")
 
-# Pipeline usage
+## Pipeline usage
 input_path = Path("data/sales.csv")
 output_path = Path("data/processed.jsonl")
 rows = read_csv(input_path)
 filtered = filter_by_column(rows, "status", "completed")
 write_jsonl(filtered, output_path)
 
-# Config file handling with fallback
+## Config file handling with fallback
 import configparser
 
 config = configparser.ConfigParser()
@@ -495,7 +496,7 @@ config.read([
     Path.home() / ".myapp/config.ini"
 ])
 
-# Log file rotation
+## Log file rotation
 import logging
 from logging.handlers import RotatingFileHandler
 
@@ -515,45 +516,45 @@ logging.error("An error occurred")
 ## 7.11 Common Pitfalls
 
 `python
-# Pitfall 1: Not closing files manually (use with!)
+## Pitfall 1: Not closing files manually (use with!)
 f = open("file.txt", "r", encoding="utf-8")
 data = f.read()
-# f.close() forgotten -- resource leak!
-# Solution: with open("file.txt") as f: data = f.read()
+## f.close() forgotten -- resource leak!
+## Solution: with open("file.txt") as f: data = f.read()
 
-# Pitfall 2: Ignoring encoding
+## Pitfall 2: Ignoring encoding
 with open("file.txt", "r") as f:  # BAD: platform-dependent encoding
     data = f.read()
-# Always specify: encoding="utf-8"
+## Always specify: encoding="utf-8"
 
-# Pitfall 3: Bare except clauses
+## Pitfall 3: Bare except clauses
 try:
     result = risky_operation()
 except:  # BAD: catches KeyboardInterrupt, SystemExit too
     print("Error occurred")
-# Use: except Exception as e:
+## Use: except Exception as e:
 
-# Pitfall 4: Suppressing exceptions silently
+## Pitfall 4: Suppressing exceptions silently
 try:
     func()
 except Exception:
     pass  # BAD: errors are hidden
-# At least log: except Exception as e: logging.error(e)
+## At least log: except Exception as e: logging.error(e)
 
-# Pitfall 5: Not handling file modes correctly
+## Pitfall 5: Not handling file modes correctly
 with open("file.txt", "w") as f:  # TRUNCATES existing content!
     f.write("new content")
-# Use "a" for append, "r+" for read/write
+## Use "a" for append, "r+" for read/write
 
-# Pitfall 6: Pickle with untrusted data
+## Pitfall 6: Pickle with untrusted data
 import pickle
 data = pickle.loads(untrusted_bytes)  # BAD: arbitrary code execution
-# Use JSON or other safe formats for untrusted data
+## Use JSON or other safe formats for untrusted data
 
-# Pitfall 7: Line ending issues between platforms
+## Pitfall 7: Line ending issues between platforms
 with open("file.txt", "w") as f:  # Windows: \r\n, Unix: \n
     f.write("line1\n")  # might get \r\n on Windows
-# Use newline="" parameter for binary compatibility
+## Use newline="" parameter for binary compatibility
 `
 
 ## 7.12 Structured Serialization Formats
@@ -561,7 +562,7 @@ with open("file.txt", "w") as f:  # Windows: \r\n, Unix: \n
 `python
 import yaml  # pip install pyyaml
 
-# YAML configuration
+## YAML configuration
 config_yaml = """
 server:
   host: localhost
@@ -573,7 +574,7 @@ database:
 config = yaml.safe_load(config_yaml)
 print(config["server"]["host"])  # localhost
 
-# MessagePack (binary JSON alternative)
+## MessagePack (binary JSON alternative)
 import msgpack  # pip install msgpack
 
 data = {"compact": True, "values": [1, 2, 3]}
@@ -582,12 +583,12 @@ print(f"Size: {len(packed)} bytes")  # smaller than JSON
 unpacked = msgpack.unpackb(packed)
 print(unpacked == data)  # True
 
-# Protocol Buffers (via protobuf library)
-# message.proto:
-# message Person {
-#   string name = 1;
-#   int32 age = 2;
-# }
+## Protocol Buffers (via protobuf library)
+## message.proto:
+## message Person {
+##   string name = 1;
+##   int32 age = 2;
+## }
 `
 
 ---
@@ -600,6 +601,7 @@ print(unpacked == data)  # True
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 01-python-programming
@@ -609,6 +611,7 @@ print(unpacked == data)  # True
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

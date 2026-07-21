@@ -13,12 +13,13 @@
 
 ## Introduction
 
-21-interview-preparation is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding sql problem bank is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering sql problem bank.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart LR
     E --> F[Hierarchical Queries]
     F --> G[Performance Optimization]
     G --> H[Python + SQL Integration]
-```
+```text
 
 ## 2.1 Joins Deep Dive
 
@@ -100,7 +101,7 @@ SELECT e.name AS employee, e.salary, m.name AS manager, m.salary AS manager_sala
 FROM employees e
 JOIN employees m ON e.manager_id = m.id
 WHERE e.salary > m.salary;
-```
+```text
 
 **Performance note**: INNER JOIN is typically the fastest. LEFT JOIN with IS NULL can be slower than NOT EXISTS on some databases. Use EXISTS for semi-joins rather than IN with subqueries.
 
@@ -164,7 +165,7 @@ WITH RECURSIVE org_chart AS (
     JOIN org_chart oc ON e.manager_id = oc.id
 )
 SELECT * FROM org_chart ORDER BY level, name;
-```
+```text
 
 **CTEs are materialized differently across databases**: PostgreSQL materializes CTEs by default (which can hurt performance), while SQL Server inlines them. Use CTEs for readability; consider subqueries for simple cases where CTEs might cause performance issues.
 
@@ -227,7 +228,7 @@ SELECT
     salary,
     NTILE(4) OVER (ORDER BY salary DESC) AS quartile
 FROM employees;
-```
+```text
 
 **Common interview problems**: Find the Nth highest salary (using DENSE_RANK or OFFSET/FETCH), year-over-year growth, top N per group, consecutive date streaks.
 
@@ -278,7 +279,7 @@ SELECT
     SUM(amount) OVER (ORDER BY order_date) AS cumulative_revenue,
     SUM(amount) OVER (ORDER BY order_date ROWS BETWEEN 3 PRECEDING AND CURRENT ROW) AS rolling_4_period
 FROM orders;
-```
+```text
 
 **Performance tip**: Use filtered aggregates (PostgreSQL FILTER or CASE inside SUM) instead of multiple subqueries for conditional counting.
 
@@ -336,7 +337,7 @@ FROM (
     FROM orders
 ) sub
 WHERE next_id - current_id > 1;
-```
+```text
 
 **Common variants**: Sessionization (grouping user activity into sessions by time threshold), stock price gap analysis, attendance tracking.
 
@@ -403,7 +404,7 @@ WITH RECURSIVE ancestors AS (
     JOIN ancestors a ON c.id = a.parent_id
 )
 SELECT * FROM ancestors ORDER BY depth DESC;
-```
+```text
 
 **Performance considerations**: Recursive CTEs can be slow for deep hierarchies. Set MAXDEPTH to prevent infinite recursion. Consider materializing the path column for read-heavy workloads.
 
@@ -469,7 +470,7 @@ SELECT * FROM employees
 WHERE id > 10000
 ORDER BY id
 LIMIT 20;
-```
+```text
 
 **Common anti-patterns**: SELECT * in production, functions on indexed columns in WHERE (`WHERE YEAR(date) = 2024` instead of `WHERE date >= '2024-01-01' AND date < '2025-01-01'`), missing indexes on foreign keys, implicit type conversion.
 
@@ -486,7 +487,7 @@ from psycopg2 import pool
 from contextlib import contextmanager
 from typing import Any, Generator
 
-# Connection pool (PostgreSQL)
+## Connection pool (PostgreSQL)
 class DatabasePool:
     def __init__(self, min_conn: int = 2, max_conn: int = 10, **kwargs):
         self.pool = pool.ThreadedConnectionPool(min_conn, max_conn, **kwargs)
@@ -506,7 +507,7 @@ class DatabasePool:
     def close(self) -> None:
         self.pool.closeall()
 
-# Parameterized query (safe from SQL injection)
+## Parameterized query (safe from SQL injection)
 def get_employees_by_department(db: DatabasePool, dept_id: int) -> list[dict[str, Any]]:
     with db.get_conn() as conn:
         with conn.cursor() as cur:
@@ -517,7 +518,7 @@ def get_employees_by_department(db: DatabasePool, dept_id: int) -> list[dict[str
             columns = [desc[0] for desc in cur.description]
             return [dict(zip(columns, row)) for row in cur.fetchall()]
 
-# Batch insert with executemany
+## Batch insert with executemany
 def bulk_insert_employees(db: DatabasePool, employees: list[dict[str, Any]]) -> None:
     with db.get_conn() as conn:
         with conn.cursor() as cur:
@@ -528,7 +529,7 @@ def bulk_insert_employees(db: DatabasePool, employees: list[dict[str, Any]]) -> 
                 template="(%s, %s, %s)"
             )
 
-# SQLAlchemy ORM equivalent
+## SQLAlchemy ORM equivalent
 from sqlalchemy import create_engine, Column, Integer, String, Float, ForeignKey
 from sqlalchemy.orm import sessionmaker, declarative_base, relationship
 
@@ -548,7 +549,7 @@ class Employee(Base):
     department_id = Column(Integer, ForeignKey("departments.id"))
     department = relationship("Department", back_populates="employees")
 
-# Usage
+## Usage
 engine = create_engine("postgresql://user:pass@localhost/db")
 Session = sessionmaker(bind=engine)
 
@@ -558,7 +559,7 @@ def get_high_earners(session, threshold: float = 100000):
         .filter(Employee.salary > threshold)
         .all()
     )
-```
+```text
 
 **Connection pooling is essential** for production applications. Without pooling, each request creates a new connection (expensive). SQLAlchemy's `create_engine` includes built-in pooling.
 
@@ -1134,6 +1135,7 @@ d) Both b and c
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 21-interview-preparation
@@ -1143,6 +1145,7 @@ d) Both b and c
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

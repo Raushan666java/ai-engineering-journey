@@ -13,12 +13,13 @@
 
 ## Introduction
 
-07-system-design is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding message queues is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering message queues.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart LR
     E --> F[Reliability]
     F --> G[Dead Letter]
     G --> H[Comparison]
-```
+```text
 
 ## 3.1 Message Queue Fundamentals
 
@@ -52,7 +53,7 @@ Message queues enable asynchronous communication between services.
 **Core concepts**: Producer (sends messages), Broker (stores/routes messages), Consumer (receives messages), Queue (buffer), Topic (message category).
 
 ```python
-# Producer
+## Producer
 import pika
 
 connection = pika.BlockingConnection(pika.ConnectionParameters("localhost"))
@@ -66,14 +67,14 @@ channel.basic_publish(
 )
 connection.close()
 
-# Consumer
+## Consumer
 def callback(ch, method, properties, body):
     print(f"Received: {body}")
     ch.basic_ack(delivery_tag=method.delivery_tag)
 
 channel.basic_consume(queue="task_queue", on_message_callback=callback)
 channel.start_consuming()
-```
+```text
 
 ## 3.2 RabbitMQ
 
@@ -90,17 +91,17 @@ flowchart LR
     Q1 --> C1[Consumer 1]
     Q2 --> C2[Consumer 2]
     Q3 --> C3[Consumer 3]
-```
+```text
 
 ```python
-# Topic exchange
+## Topic exchange
 channel.exchange_declare(exchange="logs", exchange_type="topic")
 channel.queue_bind(exchange="logs", queue="critical_queue", routing_key="*.critical")
 channel.queue_bind(exchange="logs", queue="all_queue", routing_key="#")
 
-# Publish
+## Publish
 channel.basic_publish(exchange="logs", routing_key="app.critical", body="Critical error!")
-```
+```text
 
 | Feature | RabbitMQ |
 |---------|----------|
@@ -120,12 +121,12 @@ Kafka is a distributed event streaming platform.
 ```python
 from kafka import KafkaProducer, KafkaConsumer
 
-# Producer
+## Producer
 producer = KafkaProducer(bootstrap_servers="localhost:9092")
 producer.send("orders", key=b"user_123", value=b'{"order_id": 456}')
 producer.flush()
 
-# Consumer
+## Consumer
 consumer = KafkaConsumer(
     "orders",
     bootstrap_servers="localhost:9092",
@@ -134,7 +135,7 @@ consumer = KafkaConsumer(
 )
 for message in consumer:
     print(f"Partition: {message.partition}, Offset: {message.offset}, Key: {message.key}")
-```
+```text
 
 **Consumer Groups**: Multiple consumers in a group share partitions. Each partition is consumed by exactly one consumer in the group.
 
@@ -146,7 +147,7 @@ flowchart TD
     P1 --> C1[Consumer 1]
     P2 --> C2[Consumer 2]
     P3 --> C3[Consumer 3]
-```
+```text
 
 | Feature | Kafka |
 |---------|-------|
@@ -162,20 +163,20 @@ flowchart TD
 **Point-to-Point**: One message, one consumer. Competing consumers pattern.
 
 ```python
-# Task queue — each task processed once
+## Task queue — each task processed once
 channel.queue_declare(queue="tasks")
 channel.basic_consume(queue="tasks", on_message_callback=process_task)
-```
+```text
 
 **Pub/Sub**: One message, multiple consumers. Each consumer gets a copy.
 
 ```python
-# Fanout exchange — all queues get copy
+## Fanout exchange — all queues get copy
 channel.exchange_declare(exchange="notifications", exchange_type="fanout")
 channel.queue_bind(exchange="notifications", queue="email_queue")
 channel.queue_bind(exchange="notifications", queue="sms_queue")
 channel.queue_bind(exchange="notifications", queue="push_queue")
-```
+```text
 
 | Pattern | Use Case | Example |
 |---------|----------|---------|
@@ -190,7 +191,7 @@ channel.queue_bind(exchange="notifications", queue="push_queue")
 **CQRS**: Separate read and write models. Writes use command model; reads use query model.
 
 ```python
-# Event sourcing example
+## Event sourcing example
 class AccountAggregate:
     def __init__(self):
         self.events = []
@@ -206,7 +207,7 @@ class AccountAggregate:
     def replay(self, events):
         for event in events:
             self.apply(event)
-```
+```text
 
 ## 3.6 Reliable Processing
 
@@ -230,7 +231,7 @@ def process_order_idempotent(message):
     db.execute("UPDATE orders SET status = 'confirmed' WHERE id = ?", order_id)
     # Mark as processed
     redis.sadd("processed_orders", order_id)
-```
+```text
 
 ## 3.7 Dead Letter Queues
 
@@ -247,7 +248,7 @@ def process_with_dlq(message):
         # Reject and send to DLQ
         channel.basic_nack(delivery_tag=method.delivery_tag, requeue=False)
         dlq_publish(message, error=str(e))
-```
+```text
 
 **DLQ handling**:
 - Log failed messages
@@ -298,7 +299,7 @@ class InMemoryBroker implements MessageBroker {
     this.handlers.get(topic)!.push(handler);
   }
 }
-```
+```text
 
 ---
 
@@ -495,7 +496,7 @@ def create_avro_producer():
     }
     """
     return producer, avro.loads(schema_str)
-```
+```text
 
 **Schema evolution rules**:
 - Adding a field: safe (with default value)
@@ -521,12 +522,12 @@ def create_avro_producer():
     "auto.create": true
   }
 }
-```
+```text
 
 **Kafka Streams** — process streams within your application:
 
 ```python
-# Kafka Streams equivalent using Faust (Python)
+## Kafka Streams equivalent using Faust (Python)
 import faust
 
 app = faust.App('orders-app', broker='kafka://localhost:9092')
@@ -545,7 +546,7 @@ async def process_orders(orders):
         total_spent = sum(order.total)
         if total_spent > 1000:
             await send_vip_notification(order.user_id)
-```
+```text
 
 ## Message Queue Monitoring
 
@@ -577,7 +578,7 @@ class QueueMonitor:
             alerts.append(f"Error rate: {error_rate:.2%}")
 
         return {"healthy": len(alerts) == 0, "alerts": alerts}
-```
+```text
 
 ---
 
@@ -589,6 +590,7 @@ class QueueMonitor:
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 07-system-design
@@ -598,6 +600,7 @@ class QueueMonitor:
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

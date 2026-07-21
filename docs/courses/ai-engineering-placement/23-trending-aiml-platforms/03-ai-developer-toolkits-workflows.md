@@ -12,12 +12,13 @@
 
 ## Introduction
 
-23-trending-aiml-platforms is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding ai developer toolkits workflows is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering ai developer toolkits workflows.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -53,7 +54,7 @@ flowchart LR
     Coding --> Integration
     Workflow --> Integration
     Web --> Integration
-```
+```text
 
 ## 3.1 Claude Code — Terminal Coding Agent
 
@@ -62,15 +63,15 @@ Claude Code (by Anthropic) is an agentic coding tool that runs in your terminal.
 **Installation**:
 
 ```bash
-# macOS / Linux
+## macOS / Linux
 curl -fsSL https://claude.ai/install.sh | bash
 
-# Windows
+## Windows
 irm https://claude.ai/install.ps1 | iex
 
-# Homebrew
+## Homebrew
 brew install --cask claude-code
-```
+```text
 
 ```typescript
 interface ClaudeCodeConfig {
@@ -152,8 +153,10 @@ List the files to create/modify, the approach, and any risks.`)
         return commands
     }
 }
-```
+```text
 
+
+## Overview
 ### MCP Integration
 
 Claude Code supports the Model Context Protocol (MCP), allowing it to use external tools like databases, APIs, and file systems through a standardized interface:
@@ -183,7 +186,7 @@ class MCPClient {
         return res.json()
     }
 }
-```
+```text
 
 Claude Code is ideal for complex multi-file changes, refactoring, and debugging — tasks that require understanding the full codebase context.
 
@@ -270,7 +273,7 @@ Return your changes as a JSON array of {path, content} objects.`
         return 0
     }
 }
-```
+```text
 
 Codex CLI's key advantage is its open-source nature and sandboxed execution environment, making it suitable for automated CI/CD pipelines and safe code generation at scale.
 
@@ -362,7 +365,7 @@ class N8nWorkflowBuilder {
         return JSON.stringify(this.build(name), null, 2)
     }
 }
-```
+```text
 
 ### Example: Customer Support AI Agent Workflow
 
@@ -397,7 +400,7 @@ switch(category) {
         return builder.exportJson('Customer Support AI Agent')
     }
 }
-```
+```text
 
 n8n's AI Agent node can use any n8n node as a tool — database queries, HTTP requests, file operations, even other AI agents. This makes it the most flexible platform for building visual AI workflows without writing everything from scratch.
 
@@ -467,7 +470,7 @@ class ActivepiecesBuilder {
         return this.flow
     }
 }
-```
+```text
 
 Activepieces excels at lightweight automation — connecting Slack, Gmail, Notion, and databases with AI processing steps. It's easier to set up than n8n but less powerful for complex agent workflows.
 
@@ -557,7 +560,7 @@ class AIAssistant {
         }
     }
 }
-```
+```text
 
 ### Stream Chat UI Hook Pattern
 
@@ -578,7 +581,7 @@ function useStreamChat() {
         }
     }
 }
-```
+```text
 
 The Vercel AI SDK is the most popular way to add AI to web applications in 2026. It handles streaming, backpressure, tool calling, and fallbacks with minimal boilerplate.
 
@@ -659,6 +662,7 @@ D) It requires a cloud subscription
 3. **Activepieces Automation**: Build a flow: Gmail trigger (new email) → OpenAI LLM (summarize) → Notion (create page) → Slack (notify)
 4. **Vercel AI Chat**: Implement a streaming chat endpoint with 3 registered tools (get_weather, search_docs, calculate) using the AIAssistant class
 5. **Comparison Matrix**: Deploy a simple "summarize and post to Slack" pipeline in both n8n and Activepieces. Compare setup time, maintenance, and exte
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 23-trending-aiml-platforms
@@ -668,6 +672,7 @@ D) It requires a cloud subscription
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

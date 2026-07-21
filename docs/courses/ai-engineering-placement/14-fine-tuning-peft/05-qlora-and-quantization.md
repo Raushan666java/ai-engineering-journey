@@ -11,12 +11,13 @@
 
 ## Introduction
 
-14-fine-tuning-peft is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding qlora and quantization is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering qlora and quantization.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -50,7 +51,7 @@ flowchart LR
     W4 --> C
     C -->|Quantize again| C2
     W4 --> QLoRA
-```
+```text
 
 ## 5.1 Quantization Theory
 
@@ -98,7 +99,7 @@ tensor = np.random.randn(1000).astype(np.float32)
 q8, absmax, scale = quantizer.quantize_8bit(tensor)
 deq8 = quantizer.dequantize_8bit(q8, scale)
 print(f"8-bit error: {quantizer.quantization_error(tensor, deq8)}")
-```
+```text
 
 ### 5.1.2 Precision Comparison
 
@@ -133,7 +134,7 @@ comp = PrecisionComparator()
 print("Precision comparison for 7B model:")
 for r in comp.compare():
     print(f"  {r['format']:5s}: {r['bits']:2d} bits, {r['memory_gb']:5.1f} GB")
-```
+```text
 
 ## 5.2 NF4 Format
 
@@ -185,7 +186,7 @@ indices, absmax = nf4.quantize(tensor)
 deq = nf4.dequantize(indices, absmax)
 mse = np.mean((tensor - deq) ** 2)
 print(f"NF4 quantization MSE: {mse:.6f}")
-```
+```text
 
 ### 5.2.2 Block-Wise Quantization
 
@@ -231,7 +232,7 @@ deq = bq.dequantize(indices, scales, tensor_2d.shape)
 mse = np.mean((tensor_2d - deq) ** 2)
 compression = (tensor_2d.nbytes) / (indices.nbytes + scales.nbytes)
 print(f"Block-wise NF4 MSE: {mse:.6f}, Compression ratio: {compression:.1f}x")
-```
+```text
 
 ## 5.3 Double Quantization
 
@@ -307,7 +308,7 @@ dq = DoubleQuantizer()
 tensor_test = np.random.randn(4096, 4096).astype(np.float32)
 savings = dq.memory_savings(tensor_test.shape)
 print(f"Double quant memory savings: {savings}")
-```
+```text
 
 ## 5.4 Bitsandbytes
 
@@ -357,7 +358,7 @@ class BitsAndBytesConfig:
 bnb_config = BitsAndBytesConfig()
 print(bnb_config.memory_estimate(7.0))
 print(f"Config valid: {bnb_config.validate()}")
-```
+```text
 
 ### 5.4.2 NF4 vs FP4 Comparison
 
@@ -410,7 +411,7 @@ class NF4vsFP4:
 
 comparison = NF4vsFP4()
 print(f"NF4 vs FP4 for normal: {comparison.simulate_distribution_error('normal')}")
-```
+```text
 
 ## 5.5 QLoRA Training
 
@@ -460,7 +461,7 @@ class QLoRAConfig:
 qlora = QLoRAConfig()
 mem = qlora.memory_breakdown(7.0)
 print(f"QLoRA memory breakdown: {mem}")
-```
+```text
 
 ### 5.5.2 Paged Optimizer
 
@@ -504,7 +505,7 @@ params = [np.random.randn(4096, 4096).astype(np.float32) for _ in range(3)]
 grads = [np.random.randn(4096, 4096).astype(np.float32) for _ in range(3)]
 optimizer.step(params, grads)
 print(f"Paged optimizer step complete (allocated {len(optimizer.memory_pages)} pages)")
-```
+```text
 
 ### 5.5.3 Memory Comparison: Full FT vs LoRA vs QLoRA
 
@@ -559,7 +560,7 @@ class MemoryComparison13:
 mem_comp = MemoryComparison13()
 for r in mem_comp.compare():
     print(f"{r['technique']:25s}: {r['total_gb']:5.1f} GB total")
-```
+```text
 
 ## Summary
 
@@ -762,6 +763,7 @@ Answer: C
 4. Implement a paged optimizer that allocates pages of 4GB, offloads gradients to CPU when page is full, and swaps them back during optimization.
 
 5. Create a memory comparison table for 7B and 70B models across FP32, FP16, 8-bit, 4-bit NF4, and QLoRA. Recommend the optimal setup for a 
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 14-fine-tuning-peft
@@ -771,6 +773,7 @@ Answer: C
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

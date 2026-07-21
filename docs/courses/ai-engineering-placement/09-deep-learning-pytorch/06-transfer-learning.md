@@ -13,12 +13,13 @@
 
 ## Introduction
 
-09-deep-learning-pytorch is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding transfer learning is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering transfer learning.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -52,7 +53,7 @@ flowchart TB
     P -->|Yes| Q[Add Regularization]
     Q --> O
     P -->|No| R[Deploy]
-```
+```text
 
 ## 6.1 Feature Extraction
 
@@ -115,7 +116,7 @@ out = model(x)
 print(f"Feature extraction output shape: {out.shape}")
 print(f"Backbone frozen: {not next(model.backbone.parameters()).requires_grad}")
 print(f"Classifier trainable: {next(model.classifier.parameters()).requires_grad}")
-```
+```text
 
 **BatchNorm handling**: When the backbone is frozen, BatchNorm layers must be kept in eval mode to prevent running statistics from being corrupted by the new dataset's distribution.
 
@@ -143,7 +144,7 @@ class FeatureExtractorWithAdapter(nn.Module):
         features = self.backbone(x)
         adapted = self.adapter(features)
         return self.classifier(adapted)
-```
+```text
 
 ---
 
@@ -192,7 +193,7 @@ model_ft = FineTuner("resnet50", num_classes=10, unfreeze_blocks=3)
 optimizer = optim.AdamW(model_ft.get_param_groups())
 print(f"Trainable params: {sum(p.numel() for p in model_ft.parameters() if p.requires_grad)}")
 print(f"Frozen params: {sum(p.numel() for p in model_ft.parameters() if not p.requires_grad)}")
-```
+```text
 
 **Differential learning rates** are critical: the classifier head uses 1e-3, the unfrozen backbone layers use 1e-5, and frozen layers have 0 learning rate. This prevents catastrophic forgetting.
 
@@ -212,7 +213,7 @@ class DiscriminativeLR:
 
     def get_optimizer(self) -> optim.Optimizer:
         return optim.AdamW(self.param_groups)
-```
+```text
 
 ---
 
@@ -256,7 +257,7 @@ print(f"timm EfficientNet output: {timm_model(x).shape}")
 
 vit_model = ModelHub.load_huggingface_model("google/vit-base-patch16-224", num_classes=5)
 print(f"HuggingFace ViT output: {vit_model(x).shape}")
-```
+```text
 
 **Model comparison utility**:
 ```python
@@ -280,7 +281,7 @@ comparison = compare_pretrained_models(
 )
 for r in comparison:
     print(f"{r['model']:25s}: {r['params_M']:.2f}M params, {r['flops_M']:.0f}M FLOPs")
-```
+```text
 
 ---
 
@@ -349,7 +350,7 @@ source_x = torch.randn(4, 3, 224, 224)
 target_x = torch.randn(4, 3, 224, 224)
 class_out, domain_out = dan(source_x)
 print(f"Domain adaptation: class={class_out.shape}, domain={domain_out.shape}")
-```
+```text
 
 **Pseudo-labeling for semi-supervised domain adaptation**:
 ```python
@@ -372,7 +373,7 @@ class PseudoLabelAdaptation:
                     if mask[i]:
                         pseudo_data.append((x[i].cpu(), preds[i].cpu()))
         return pseudo_data
-```
+```text
 
 ---
 
@@ -455,7 +456,7 @@ unfreezer.apply_stage(0)
 print(f"Stage 0: {sum(p.numel() for p in model_pu.parameters() if p.requires_grad)} trainable params")
 unfreezer.next_stage()
 print(f"Stage 1: {sum(p.numel() for p in model_pu.parameters() if p.requires_grad)} trainable params")
-```
+```text
 
 ---
 
@@ -534,7 +535,7 @@ criterion = LabelSmoothing(0.1)
 logits = torch.randn(8, 10)
 loss = criterion(logits, y)
 print(f"Label smoothing loss: {loss.item():.4f}")
-```
+```text
 
 **Stochastic depth** randomly drops whole layers during training, acting as regularization:
 ```python
@@ -559,7 +560,7 @@ class RegularizedBlock(nn.Module):
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         return self.stochastic_depth(self.block(x))
-```
+```text
 
 ---
 
@@ -670,6 +671,7 @@ d) detectron2
 ---
 
 > **Previous**: [05-advanced-cnn.md](05-advanced-cnn.md) | **Next**: [07-rnn-and-lstm.md](07-rnn-and
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 09-deep-learning-pytorch
@@ -679,6 +681,7 @@ d) detectron2
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

@@ -13,12 +13,13 @@
 
 ## Introduction
 
-09-deep-learning-pytorch is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding rnn and lstm is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering rnn and lstm.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -49,7 +50,7 @@ flowchart LR
     J --> K[Decoder]
     K --> L[Teacher Forcing]
     L --> M[Output Sequence]
-```
+```text
 
 ## 7.1 Vanilla RNN
 
@@ -106,7 +107,7 @@ x = torch.randn(4, 15, 10)  # batch=4, seq_len=15, features=10
 output, hidden = rnn(x)
 print(f"RNN output shape: {output.shape}")  # (4, 15, 20)
 print(f"RNN hidden shape: {hidden.shape}")  # (2, 4, 20)
-```
+```text
 
 **Backpropagation Through Time (BPTT)** unrolls the RNN across all time steps and computes gradients by backpropagating through the unrolled graph.
 
@@ -124,7 +125,7 @@ class BPTTDemo:
                 param_norm = p.grad.data.norm(2)
                 total_norm += param_norm.item() ** 2
         return loss.item(), total_norm ** 0.5
-```
+```text
 
 ---
 
@@ -172,7 +173,7 @@ for name, norm in norms:
 flow = analyzer.analyze_gradient_flow([5, 10, 20, 50])
 for seq_len, norm in flow.items():
     print(f"Seq Len {seq_len}: hidden weight grad norm = {norm:.6f}")
-```
+```text
 
 **Why gradients vanish**: In BPTT, the gradient of the loss w.r.t. the hidden state at time t involves the product of Jacobians across all time steps. If the eigenvalues of the recurrent weight matrix are less than 1, this product decays exponentially. Tanh activation (derivative ≤ 1) compounds this effect.
 
@@ -191,7 +192,7 @@ class GradientClipping:
         nn.utils.clip_grad_norm_(self.model.parameters(), self.max_norm)
         optimizer.step()
         return loss.item()
-```
+```text
 
 ---
 
@@ -241,7 +242,7 @@ output, (h_n, c_n) = lstm(x)
 print(f"LSTM output: {output.shape}")     # (4, 20, 32)
 print(f"LSTM h_n: {h_n.shape}")           # (2, 4, 32)
 print(f"LSTM c_n: {c_n.shape}")           # (2, 4, 32)
-```
+```text
 
 **Custom LSTM with peephole connections**:
 ```python
@@ -268,7 +269,7 @@ class LSTMPeephole(nn.Module):
         o = torch.sigmoid(self.w_o(combined) + self.peep_o * c_new)
         h_new = o * torch.tanh(c_new)
         return h_new, c_new
-```
+```text
 
 ---
 
@@ -313,7 +314,7 @@ x = torch.randn(4, 20, 10)
 output, h_n = gru(x)
 print(f"GRU output: {output.shape}")  # (4, 20, 32)
 print(f"GRU h_n: {h_n.shape}")        # (2, 4, 32)
-```
+```text
 
 **LSTM vs GRU comparison**:
 ```python
@@ -342,7 +343,7 @@ stats = compare_gru_lstm()
 print(f"LSTM parameters: {stats['lstm_params']}")
 print(f"GRU parameters: {stats['gru_params']}")
 print(f"GRU has {stats['param_reduction_pct']:.1f}% fewer parameters")
-```
+```text
 
 ---
 
@@ -396,7 +397,7 @@ birnn = BidirectionalLSTM(input_size=10, hidden_size=32, num_layers=2)
 x = torch.randn(4, 20, 10)
 out = birnn(x)
 print(f"BiLSTM output shape: {out.shape}")  # (4, 1)
-```
+```text
 
 **Visualizing bidirectional context**:
 ```python
@@ -418,7 +419,7 @@ demo = BidirectionalContextDemo(16)
 x = torch.randn(2, 10, 10)
 combined, fwd, bwd = demo.process(x)
 print(f"Forward: {fwd.shape}, Backward: {bwd.shape}, Combined: {combined.shape}")
-```
+```text
 
 ---
 
@@ -496,7 +497,7 @@ class ScheduledSampling:
         return 0.5
 
 
-# Seq2Seq training with teacher forcing
+## Seq2Seq training with teacher forcing
 encoder = Encoder(vocab_size=100, embedding_dim=16, hidden_size=32)
 decoder = Decoder(vocab_size=100, embedding_dim=16, hidden_size=32)
 seq2seq = Seq2Seq(encoder, decoder)
@@ -505,7 +506,7 @@ src = torch.randint(1, 100, (4, 10))
 tgt = torch.randint(1, 100, (4, 12))
 output = seq2seq(src, tgt, teacher_forcing_ratio=0.7)
 print(f"Seq2Seq output shape: {output.shape}")  # (4, 12, 100)
-```
+```text
 
 **Packed sequences** handle variable-length sequences efficiently:
 ```python
@@ -532,7 +533,7 @@ lengths = torch.tensor([10, 7, 5])
 output_packed = packed_demo.forward_with_packing(x, lengths)
 print(f"Packed output shape: {output_packed.shape}")  # (3, 10, 20)
 print("Zeros in padded positions:", (output_packed[2, 7:, :] == 0).all().item())
-```
+```text
 
 **Attention mechanism for Seq2Seq**:
 ```python
@@ -558,7 +559,7 @@ class AttentionDecoder(nn.Module):
         h_new, c_new = self.lstm(lstm_input, (h, c))
         prediction = self.fc(h_new)
         return prediction, h_new, c_new, attn_weights
-```
+```text
 
 ---
 
@@ -669,6 +670,7 @@ d) Random
 ---
 
 > **Previous**: [06-transfer-learning.md](06-transfer-learning.md) | **Next**: [08-training-pipelines.md](08-training-pipe
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 09-deep-learning-pytorch
@@ -678,6 +680,7 @@ d) Random
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

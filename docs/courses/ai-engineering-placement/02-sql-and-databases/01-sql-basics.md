@@ -13,12 +13,13 @@
 
 ## Introduction
 
-02-sql-and-databases is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding sql basics is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering sql basics.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -41,7 +42,7 @@ flowchart LR
     F[DML] --> G[INSERT]
     F --> H[UPDATE]
     F --> I[DELETE]
-```
+```text
 
 ## 1.1 SELECT Queries
 
@@ -68,7 +69,7 @@ cur.executemany("INSERT INTO emp VALUES (?,?,?,?)", [
 cur.execute("SELECT name, salary FROM emp WHERE salary > 70000")
 for row in cur.fetchall():
     print(row)
-# ('Alice', 75000) ('Charlie', 82000)
+## ('Alice', 75000) ('Charlie', 82000)
 `
 
 ## 1.2 WHERE Clauses
@@ -108,7 +109,7 @@ cur.executemany("INSERT INTO scores VALUES (?,?)", [("Alice",95),("Bob",87),("Ch
 cur.execute("SELECT name, score FROM scores ORDER BY score DESC LIMIT 2")
 for r in cur.fetchall():
     print(f"{r[0]}: {r[1]}")
-# Alice: 95, Charlie: 92
+## Alice: 95, Charlie: 92
 `
 
 ## 1.4 NULL Handling
@@ -131,8 +132,8 @@ cur.execute("INSERT INTO users VALUES (2, 'Bob', NULL)")
 cur.execute("SELECT name, COALESCE(email, 'No email') FROM users")
 for r in cur.fetchall():
     print(f"{r[0]}: {r[1]}")
-# Alice: a@test.com
-# Bob: No email
+## Alice: a@test.com
+## Bob: No email
 `
 
 ## 1.5 INSERT
@@ -604,6 +605,7 @@ LIMIT 20 OFFSET 40;
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 02-sql-and-databases
@@ -613,6 +615,7 @@ LIMIT 20 OFFSET 40;
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

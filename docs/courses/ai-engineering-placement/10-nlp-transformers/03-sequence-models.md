@@ -13,12 +13,13 @@
 
 ## Introduction
 
-10-nlp-transformers is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding sequence models is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering sequence models.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -49,7 +50,7 @@ flowchart LR
     J --> K[Decoder]
     K --> L[Teacher Forcing]
     L --> M[Beam Search Decoding]
-```
+```text
 
 ## 3.1 Vanilla RNN
 
@@ -109,7 +110,7 @@ class VanillaRNN {
     this.h = new Array(this.hiddenSize).fill(0);
   }
 }
-```
+```text
 
 **Vanishing gradient problem**: During backpropagation through time (BPTT), gradients are multiplied by the same weight matrix at each timestep. If eigenvalues of W_hh are < 1, gradients vanish to zero. If > 1, gradients explode. LSTM's gating mechanism provides a direct gradient highway through the cell state.
 
@@ -211,7 +212,7 @@ class LSTMCell {
     this.c = new Array(this.hiddenSize).fill(0);
   }
 }
-```
+```text
 
 The cell state C_t is the key innovation. Gradients flow through C_t with only element-wise multiplication by f_t (forget gate), which prevents vanishing gradients because f_t values are close to 1 when the network learns to keep information.
 
@@ -294,7 +295,7 @@ class GRUCell {
     this.h = new Array(this.hiddenSize).fill(0);
   }
 }
-```
+```text
 
 GRU has fewer parameters than LSTM (3 gates vs 4), trains faster, and often matches LSTM performance on smaller datasets. On large datasets, LSTM's additional output gate sometimes provides marginal gains.
 
@@ -331,7 +332,7 @@ class BidirectionalLSTM {
     return forwardOut.map((fState, i) => [...fState, ...backwardReversed[i]]);
   }
 }
-```
+```text
 
 BiLSTMs are standard for NER, POS tagging, and any task where full sequence context is available. The output dimension is 2x the hidden size. For real-time applications (speech recognition), unidirectional is used because future tokens are unavailable.
 
@@ -420,7 +421,7 @@ class Seq2SeqModel {
     return logits.map((l) => this.softmax(l));
   }
 }
-```
+```text
 
 The context vector (encoder's final hidden state) is a fixed-size bottleneck. For long sequences, attention mechanisms allow the decoder to look at all encoder hidden states instead of just the final one.
 
@@ -503,7 +504,7 @@ class DecoderTrainer {
     return oneHot;
   }
 }
-```
+```text
 
 **Beam search** maintains k candidate hypotheses instead of greedy decoding. At each step, it expands all k hypotheses, keeps the top k by cumulative log probability, and terminates when hypotheses hit `<eos>`.
 
@@ -616,7 +617,7 @@ class BeamSearchDecoder {
       .slice(0, k);
   }
 }
-```
+```text
 
 Beam search with beam size 4-10 is standard for NMT and text generation. Larger beams give better results but with diminishing returns and higher computational cost.
 
@@ -818,6 +819,7 @@ d) 100+
 ---
 
 > **Previous**: [Word Embeddings](02-word-embeddings.md) | **Next**: [Attention Mechanism](04-attention-mech
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 10-nlp-transformers
@@ -827,6 +829,7 @@ d) 100+
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

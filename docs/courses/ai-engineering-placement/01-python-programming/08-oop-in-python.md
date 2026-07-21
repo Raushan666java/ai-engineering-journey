@@ -13,12 +13,13 @@
 
 ## Introduction
 
-01-python-programming is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding oop in python is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering oop in python.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -42,7 +43,7 @@ flowchart LR
     G --> I[ABC]
     J[Dunder Methods] --> K[__str__, __eq__, ...]
     L[Dataclasses] --> M[Auto __init__, __repr__, __eq__]
-```
+```text
 
 ## 8.1 Classes and Objects
 
@@ -164,7 +165,7 @@ account = BankAccount("Alice", 1000)
 print(account.balance)       # 1000
 account.balance = 1500       # setter
 print(account._balance)      # 1500 (convention says don't)
-# print(account.__pin)       # AttributeError
+## print(account.__pin)       # AttributeError
 print(account._BankAccount__pin)  # "1234" (mangled name)
 `
 
@@ -345,7 +346,7 @@ class Circle extends Shape {
 Favor composition over inheritance for flexible designs.
 
 `python
-# Inheritance approach (tight coupling)
+## Inheritance approach (tight coupling)
 class Engine:
     def start(self): return "Engine running"
 
@@ -353,7 +354,7 @@ class Car(Engine):  # Car IS-A Engine -- questionable
     def drive(self):
         return f"Driving: {self.start()}"
 
-# Composition approach (loose coupling)
+## Composition approach (loose coupling)
 class Engine:
     def start(self): return "Engine running"
 
@@ -368,7 +369,7 @@ class Car:
     def drive(self):
         return f"{self.engine.start()}, {self.wheels.rotate()}"
 
-# Mixin composition
+## Mixin composition
 class JSONMixin:
     def to_json(self):
         import json
@@ -411,7 +412,7 @@ process(MyContainer([1, 2, 3]))  # OK
 process([4, 5, 6])               # OK -- list implements __iter__
 print(isinstance([1, 2], Iterable))  # True (with @runtime_checkable)
 
-# Protocol for file-like objects
+## Protocol for file-like objects
 class Readable(Protocol):
     def read(self) -> str: ...
 
@@ -462,9 +463,9 @@ class Product:
 
 p = Product("Widget", 10.99)
 print(p.price)  # 10.99
-# p.price = -5  # ValueError: Invalid value: -5
+## p.price = -5  # ValueError: Invalid value: -5
 
-# Property is implemented using descriptors
+## Property is implemented using descriptors
 class Property:
     def __init__(self, fget=None, fset=None):
         self.fget = fget
@@ -486,7 +487,7 @@ class Property:
 ## 8.10 Multiple Inheritance and MRO Deep Dive
 
 `python
-# Diamond problem
+## Diamond problem
 class A:
     def method(self): return "A"
 
@@ -502,14 +503,14 @@ class D(B, C):
 d = D()
 print(d.method())  # "B" (MRO: D -> B -> C -> A)
 print(D.__mro__)
-# (<class 'D'>, <class 'B'>, <class 'C'>, <class 'A'>, <class 'object'>)
+## (<class 'D'>, <class 'B'>, <class 'C'>, <class 'A'>, <class 'object'>)
 
-# MRO follows C3 linearization:
-# 1. Children come before parents
-# 2. Order of bases is respected
-# 3. First occurrence of a class is kept
+## MRO follows C3 linearization:
+## 1. Children come before parents
+## 2. Order of bases is respected
+## 3. First occurrence of a class is kept
 
-# Cooperative multiple inheritance with super()
+## Cooperative multiple inheritance with super()
 class Base:
     def __init__(self, **kwargs):
         print(f"Base.__init__({kwargs})")
@@ -533,17 +534,17 @@ class Person(NameMixin, AgeMixin):
         super().__init__(**kwargs)
 
 p = Person(name="Alice", age=30)
-# Person.__init__
-# NameMixin.__init__(name=Alice)
-# AgeMixin.__init__(age=30)
-# Base.__init__({})
+## Person.__init__
+## NameMixin.__init__(name=Alice)
+## AgeMixin.__init__(age=30)
+## Base.__init__({})
 print(f"{p.name} is {p.age}")  # Alice is 30
 `
 
 ## 8.11 Common Pitfalls
 
 `python
-# Pitfall 1: Forgetting super() in __init__
+## Pitfall 1: Forgetting super() in __init__
 class Parent:
     def __init__(self):
         self.value = "parent"
@@ -553,7 +554,7 @@ class Child(Parent):
         # super().__init__()  # MISSING!
         self.value = "child"
 
-# Pitfall 2: Mutable class attributes
+## Pitfall 2: Mutable class attributes
 class Dog:
     tricks = []  # shared across instances!
 
@@ -569,34 +570,34 @@ class DogFixed:
     def __init__(self):
         self.tricks = []  # per-instance
 
-# Pitfall 3: Confusing __str__ and __repr__
+## Pitfall 3: Confusing __str__ and __repr__
 class Point:
     def __init__(self, x, y):
         self.x, self.y = x, y
     # Missing __repr__ makes debugging hard
 
-# Pitfall 4: Not using @abstractmethod properly
+## Pitfall 4: Not using @abstractmethod properly
 from abc import ABC, abstractmethod
 
 class Shape(ABC):
     @abstractmethod
     def area(self): pass
 
-# Will error: s = Shape()  # Can't instantiate abstract class
+## Will error: s = Shape()  # Can't instantiate abstract class
 
-# Pitfall 5: Modifying __slots__ classes at runtime
+## Pitfall 5: Modifying __slots__ classes at runtime
 class Fixed:
     __slots__ = ("x", "y")
 
 f = Fixed()
 f.x = 1
-# f.z = 2  # AttributeError: 'Fixed' has no attribute 'z'
+## f.z = 2  # AttributeError: 'Fixed' has no attribute 'z'
 `
 
 ## 8.12 Design Patterns in Python
 
 `python
-# Singleton pattern
+## Singleton pattern
 class Singleton:
     _instance = None
 
@@ -609,7 +610,7 @@ s1 = Singleton()
 s2 = Singleton()
 print(s1 is s2)  # True
 
-# Factory pattern
+## Factory pattern
 class Animal:
     def speak(self): pass
 
@@ -625,7 +626,7 @@ class AnimalFactory:
         animals = {"dog": Dog, "cat": Cat}
         return animals[animal_type]()
 
-# Observer pattern
+## Observer pattern
 class Subject:
     def __init__(self):
         self._observers = []
@@ -659,6 +660,7 @@ sub.notify("Event happened")
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 01-python-programming
@@ -668,6 +670,7 @@ sub.notify("Event happened")
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

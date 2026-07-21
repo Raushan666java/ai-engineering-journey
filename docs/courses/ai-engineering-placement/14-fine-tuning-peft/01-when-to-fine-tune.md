@@ -11,12 +11,13 @@
 
 ## Introduction
 
-14-fine-tuning-peft is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding when to fine tune is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering when to fine tune.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart TD
     FT -->|Check| C[Cost-Benefit]
     C -->|Worth it| GO[Proceed]
     C -->|Not worth| STOP[Alternative]
-```
+```text
 
 ## 1.1 Decision Framework
 
@@ -143,7 +144,7 @@ profile = TaskProfile(
     expected_query_volume=5000,
 )
 print(f"Recommended approach: {recommender.recommend(profile).value}")
-```
+```text
 
 ### 1.1.1 Decision Tree Implementation
 
@@ -189,7 +190,7 @@ class FineTuneDecisionTree:
 tree = FineTuneDecisionTree()
 decision = tree.decide(profile)
 print(f"Decision: {decision['recommendation']}")
-```
+```text
 
 ## 1.2 Cost-Benefit Analysis
 
@@ -248,7 +249,7 @@ be = calc.break_even(training["training_cost"], 0.001)
 print(f"Training cost: ${training['training_cost']}")
 print(f"Monthly inference cost: ${inference['monthly_cost']}")
 print(f"Break-even: {be['break_even_queries']} queries")
-```
+```text
 
 ### 1.2.2 ROI Analysis
 
@@ -281,7 +282,7 @@ def compare_approaches() -> list:
 
 
 compare_approaches()
-```
+```text
 
 ## 1.3 Data Requirements
 
@@ -323,7 +324,7 @@ class DataRequirementEstimator:
 estimator = DataRequirementEstimator()
 print(estimator.estimate("task_adaptation", "recommended"))
 print(estimator.is_feasible(200, "task_adaptation"))
-```
+```text
 
 ### 1.3.2 Data Quality Assessment
 
@@ -364,7 +365,7 @@ class DataQualityScorer:
 scorer = DataQualityScorer()
 scores = scorer.score([{"input": "test", "output": "result"}])
 print(f"Data quality: {scores['overall']:.2f}, Ready: {scores['ready_for_ft']}")
-```
+```text
 
 ## 1.4 When Not to Fine-Tune
 
@@ -413,7 +414,7 @@ bad_profile = TaskProfile("vague general query", 0.1, 0.5, 0.1, 0.9, 50)
 warnings = detector.analyze(bad_profile)
 for w in warnings:
     print(f"Anti-pattern: {w['pattern']} — {w['advice']}")
-```
+```text
 
 ## Summary
 
@@ -653,6 +654,7 @@ Answer: B
 4. Build a data quality scorer that evaluates a dataset on correctness, consistency, coverage, and noise. Score 3 sample datasets and recommend which are FT-ready.
 
 5. Compare the total cost (training + 6 months inference) across prompting, RAG, LoRA, and full FT for a scenario with 10K queries/day and 7B model. Show a cost-quality tradeo
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 14-fine-tuning-peft
@@ -662,6 +664,7 @@ Answer: B
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

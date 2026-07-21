@@ -13,12 +13,13 @@
 
 ## Introduction
 
-05-fastapi-backend is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding api deployment is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering api deployment.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,22 +44,22 @@ flowchart LR
     E --> F[Cloud Deploy]
     F --> G[Production DB]
     G --> H[Monitoring]
-```
+```text
 
 ## 10.1 Docker Containerization
 
 Docker ensures consistent environments from development to production.
 
 ```dockerfile
-# Dockerfile — multi-stage build
-# Stage 1: Build
+## Dockerfile — multi-stage build
+## Stage 1: Build
 FROM python:3.12-slim AS builder
 
 WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Stage 2: Runtime
+## Stage 2: Runtime
 FROM python:3.12-slim AS runtime
 
 WORKDIR /app
@@ -69,14 +70,14 @@ COPY . .
 EXPOSE 8000
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
 
-# docker build -t myapi:latest .
-# docker run -p 8000:8000 myapi:latest
-```
+## docker build -t myapi:latest .
+## docker run -p 8000:8000 myapi:latest
+```text
 
 **Docker Compose** for local development with dependencies:
 
 ```yaml
-# docker-compose.yml
+## docker-compose.yml
 version: "3.9"
 
 services:
@@ -121,7 +122,7 @@ services:
 
 volumes:
   postgres_data:
-```
+```text
 
 **Docker best practices**:
 - Use multi-stage builds to reduce image size (from ~1GB to ~150MB)
@@ -133,10 +134,10 @@ volumes:
 ## 10.2 Production ASGI Server
 
 ```bash
-# Uvicorn direct (single process)
+## Uvicorn direct (single process)
 uvicorn app.main:app --host 0.0.0.0 --port 8000 --workers 4
 
-# Gunicorn with Uvicorn workers (recommended for production on Linux)
+## Gunicorn with Uvicorn workers (recommended for production on Linux)
 gunicorn app.main:app \
     --worker-class uvicorn.workers.UvicornWorker \
     --bind 0.0.0.0:8000 \
@@ -147,12 +148,12 @@ gunicorn app.main:app \
     --max-requests-jitter 50 \
     --access-logfile - \
     --error-logfile -
-```
+```text
 
 **Worker calculation**: `2 * CPU cores + 1` (for I/O-bound). For CPU-bound, use fewer workers.
 
 ```python
-# gunicorn.conf.py
+## gunicorn.conf.py
 import multiprocessing
 
 bind = "0.0.0.0:8000"
@@ -165,7 +166,7 @@ max_requests_jitter = 50
 accesslog = "-"
 errorlog = "-"
 loglevel = "info"
-```
+```text
 
 **Uvicorn configuration options**:
 
@@ -183,7 +184,7 @@ loglevel = "info"
 Nginx handles SSL termination, static files, and load balancing.
 
 ```nginx
-# nginx.conf
+## nginx.conf
 upstream api_servers {
     least_conn;
     server api1:8000 max_fails=3 fail_timeout=30s;
@@ -231,12 +232,12 @@ server {
         add_header Cache-Control "public, immutable";
     }
 }
-```
+```text
 
 **Alternative: Traefik** (cloud-native reverse proxy):
 
 ```yaml
-# traefik.yml
+## traefik.yml
 entryPoints:
   web:
     address: ":80"
@@ -254,12 +255,12 @@ certificatesResolvers:
       storage: /letsencrypt/acme.json
       httpChallenge:
         entryPoint: web
-```
+```text
 
 ## 10.4 Environment Configuration
 
 ```python
-# app/config.py
+## app/config.py
 from pydantic_settings import BaseSettings
 from pydantic import Field, SecretStr
 from typing import Optional
@@ -300,13 +301,13 @@ class Settings(BaseSettings):
 
 settings = Settings()
 
-# app/dependencies/settings.py
+## app/dependencies/settings.py
 from fastapi import Request
 
 def get_settings(request: Request) -> Settings:
     return request.app.state.settings
 
-# app/main.py
+## app/main.py
 from contextlib import asynccontextmanager
 
 @asynccontextmanager
@@ -315,7 +316,7 @@ async def lifespan(app: FastAPI):
     yield
 
 app = FastAPI(lifespan=lifespan)
-```
+```text
 
 **.env file** (never commit to version control):
 
@@ -326,14 +327,14 @@ JWT_SECRET=your-256-bit-secret-key-here
 SENDGRID_API_KEY=SG.example
 ENVIRONMENT=production
 CORS_ORIGINS=["https://example.com"]
-```
+```text
 
 **Secrets management in production**: Use Docker secrets, Kubernetes secrets, AWS Secrets Manager, or HashiCorp Vault. Never hardcode secrets or commit them to Git.
 
 ## 10.5 CI/CD Pipeline
 
 ```yaml
-# .github/workflows/deploy.yml
+## .github/workflows/deploy.yml
 name: Deploy
 on:
   push:
@@ -399,14 +400,14 @@ jobs:
               -p 8000:8000 \
               --env-file /opt/myapi/.env \
               ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
-```
+```text
 
 ## 10.6 Cloud Deployment
 
 **AWS ECS (Fargate)**:
 
 ```yaml
-# ecs-task-definition.json
+## ecs-task-definition.json
 {
   "family": "myapi",
   "taskRoleArn": "arn:aws:iam::123456789012:role/ecsTaskRole",
@@ -438,12 +439,12 @@ jobs:
   "cpu": "512",
   "memory": "1024"
 }
-```
+```text
 
 **GCP Cloud Run** (serverless containers):
 
 ```yaml
-# cloudbuild.yaml
+## cloudbuild.yaml
 steps:
   - name: "gcr.io/cloud-builders/docker"
     args: ["build", "-t", "gcr.io/$PROJECT_ID/myapi", "."]
@@ -464,12 +465,12 @@ steps:
       - "--max-instances=10"
       - "--concurrency=80"
       - "--timeout=300"
-```
+```text
 
 **Azure App Service**:
 
 ```bash
-# Deploy with Azure CLI
+## Deploy with Azure CLI
 az webapp create \
     --resource-group my-rg \
     --plan my-plan \
@@ -485,12 +486,12 @@ az webapp deployment source config-zip \
     --resource-group my-rg \
     --name myapi-app \
     --src dist.zip
-```
+```text
 
 ## 10.7 Database in Production
 
 ```python
-# Automated migration in startup
+## Automated migration in startup
 from alembic.config import Config
 from alembic import command
 
@@ -504,17 +505,17 @@ async def lifespan(app: FastAPI):
     run_migrations()
     yield
 
-# Database backup script
-# backup.sh
-# pg_dump -h localhost -U postgres appdb > backup_$(date +%Y%m%d).sql
-# aws s3 cp backup_*.sql s3://my-backup-bucket/db/
+## Database backup script
+## backup.sh
+## pg_dump -h localhost -U postgres appdb > backup_$(date +%Y%m%d).sql
+## aws s3 cp backup_*.sql s3://my-backup-bucket/db/
 
-# Connection pooling recommendations
+## Connection pooling recommendations
 DATABASE_POOL_SIZE = 5  # Base connections
 DATABASE_MAX_OVERFLOW = 10  # Additional connections under load
 DATABASE_POOL_PRE_PING = True  # Verify connections before use
 DATABASE_POOL_RECYCLE = 3600  # Recycle connections after 1 hour
-```
+```text
 
 **Production database checklist**:
 - Automated backups (daily + point-in-time recovery)
@@ -534,7 +535,7 @@ from opentelemetry.instrumentation.fastapi import FastAPIInstrumentor
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor
 
-# OpenTelemetry setup
+## OpenTelemetry setup
 provider = TracerProvider()
 processor = BatchSpanProcessor(OTLPSpanExporter(endpoint="http://localhost:4317"))
 provider.add_span_processor(processor)
@@ -543,7 +544,7 @@ trace.set_tracer_provider(provider)
 app = FastAPI()
 FastAPIInstrumentor.instrument_app(app)
 
-# Sentry for error tracking
+## Sentry for error tracking
 import sentry_sdk
 from sentry_sdk.integrations.fastapi import FastApiIntegration
 from sentry_sdk.integrations.sqlalchemy import SqlalchemyIntegration
@@ -555,21 +556,21 @@ sentry_sdk.init(
     environment=settings.environment,
 )
 
-# Structured logging in JSON
+## Structured logging in JSON
 logging.basicConfig(
     level=logging.INFO,
     format='{"timestamp": "%(asctime)s", "level": "%(levelname)s", "message": "%(message)s"}',
 )
 
-# Grafana dashboard for monitoring
-# Key panels:
-# - Request rate (RPS) by endpoint
-# - Error rate (5xx vs 4xx)
-# - p50/p95/p99 latency
-# - Active database connections
-# - CPU/Memory usage per container
-# - Queue depth (Celery/SQS)
-```
+## Grafana dashboard for monitoring
+## Key panels:
+## - Request rate (RPS) by endpoint
+## - Error rate (5xx vs 4xx)
+## - p50/p95/p99 latency
+## - Active database connections
+## - CPU/Memory usage per container
+## - Queue depth (Celery/SQS)
+```text
 
 ---
 
@@ -603,7 +604,7 @@ const server = app.listen(config.port, () => {
 process.on("SIGTERM", () => {
   server.close(() => process.exit(0));
 });
-```
+```text
 
 ---
 
@@ -773,6 +774,7 @@ d) 5432
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 05-fastapi-backend
@@ -782,6 +784,7 @@ d) 5432
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

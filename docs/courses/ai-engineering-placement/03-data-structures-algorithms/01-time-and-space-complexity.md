@@ -1,5 +1,6 @@
 # Time and Space Complexity
 
+
 ## Learning Objectives
 
 | Objective | Description |
@@ -11,6 +12,7 @@
 | LO5 | Apply asymptotic analysis to compare algorithm efficiency |
 | LO6 | Recognize common complexity classes: O(1), O(log n), O(n), O(n log n), O(n�), O(2n) |
 
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -21,6 +23,7 @@
 | 1.4 | Analyzing Recursive Algorithms | Recurrence relations, Master theorem |
 | 1.5 | Space Complexity | Stack space, heap space, auxiliary space |
 | 1.6 | Amortized Analysis | Aggregate method, accounting method |
+
 
 ## Chapter Roadmap
 
@@ -35,9 +38,11 @@ flowchart LR
     F --> G[Practice Problems]
 ```
 
+
 ## Introduction
 
 Understanding time and space complexity is the foundation of every technical interview and the first step toward building efficient AI systems. When an ML training loop takes 10 hours instead of 2, or a vector search query times out at scale, the root cause almost always traces back to algorithmic complexity. This chapter teaches you how to analyze any algorithm's performance before writing a single line of code, a skill that separates senior engineers from beginners.
+
 
 ## Prerequisites
 
@@ -45,7 +50,9 @@ Understanding time and space complexity is the foundation of every technical int
 - Familiarity with arrays and basic data structures
 - No prior algorithms course required — this is the starting point
 
+
 ## Theory
+
 
 ### 1.1 Asymptotic Notations
 
@@ -58,10 +65,11 @@ Asymptotic notations describe the limiting behavior of a function as the input s
 **Big-Theta (T)** � Tight bound: `f(n) = T(g(n))` if there exist positive constants `c1, c2, n0` such that `0 = c1�g(n) = f(n) = c2�g(n)` for all `n = n0`. This describes the average-case scenario when both bounds match.
 
 
+
 ## Examples
 
 ```python
-# Demonstrating growth rates
+## Demonstrating growth rates
 import time
 import math
 
@@ -70,18 +78,18 @@ def measure_time(func, n):
     func(n)
     return time.perf_counter() - start
 
-# O(1) � Constant
+## O(1) � Constant
 def constant(n):
     return n * (n + 1) // 2
 
-# O(n) � Linear
+## O(n) � Linear
 def linear(n):
     total = 0
     for i in range(n):
         total += i
     return total
 
-# O(n�) � Quadratic
+## O(n�) � Quadratic
 def quadratic(n):
     total = 0
     for i in range(n):
@@ -106,6 +114,9 @@ for n in [10, 100, 1000]:
 
 ---
 
+
+
+## Overview
 ### 1.2 Complexity Classes
 
 **O(1) � Constant Time**: Execution time does not depend on input size. Array access by index, hash table lookup, arithmetic operations.
@@ -114,7 +125,7 @@ for n in [10, 100, 1000]:
 def get_first_element(arr):
     return arr[0]  # Always takes the same time
 
-# Constant time operations
+## Constant time operations
 def swap(a, b):
     return b, a
 ```
@@ -203,6 +214,9 @@ def fibonacci_naive(n):
 
 ---
 
+
+
+## Overview
 ### 1.3 Analyzing Iterative Algorithms
 
 **Single loop**: Multiply iterations by constant work inside.
@@ -273,6 +287,7 @@ flowchart TD
 
 ---
 
+
 ### 1.4 Analyzing Recursive Algorithms
 
 Recursive algorithms are analyzed using recurrence relations. A recurrence expresses the total work in terms of work done on smaller inputs.
@@ -302,7 +317,7 @@ def binary_search_recursive(arr, target, left, right):
 - If `f(n) = O(n^{log_b(a) + e})` and `a�f(n/b) = c�f(n)` for some `c < 1`, then `T(n) = T(f(n))`
 
 ```python
-# Count recursive calls to understand complexity
+## Count recursive calls to understand complexity
 call_count = 0
 
 def count_calls_fib(n):
@@ -312,10 +327,10 @@ def count_calls_fib(n):
         return n
     return count_calls_fib(n - 1) + count_calls_fib(n - 2)
 
-# n=10 ? 177 calls
-# n=20 ? 21891 calls
-# n=30 ? 2692537 calls
-# Demonstrates exponential growth
+## n=10 ? 177 calls
+## n=20 ? 21891 calls
+## n=30 ? 2692537 calls
+## Demonstrates exponential growth
 ```
 
 | Algorithm | Recurrence | Complexity |
@@ -328,12 +343,15 @@ def count_calls_fib(n):
 
 ---
 
+
+
+## Overview
 ### 1.5 Space Complexity
 
 Space complexity measures total memory used by an algorithm: input space + auxiliary space + stack space.
 
 ```python
-# O(1) space � constant extra memory
+## O(1) space � constant extra memory
 def sum_const_space(arr):
     total = 0           # single variable
     for x in arr:
@@ -342,7 +360,7 @@ def sum_const_space(arr):
 ```
 
 ```python
-# O(n) space � creating new array of size n
+## O(n) space � creating new array of size n
 def double_array(arr):
     result = [0] * len(arr)   # O(n) space
     for i, val in enumerate(arr):
@@ -351,16 +369,16 @@ def double_array(arr):
 ```
 
 ```python
-# O(n) stack space � recursion depth
+## O(n) stack space � recursion depth
 def factorial_recursive(n):
     if n <= 1:
         return 1
     return n * factorial_recursive(n - 1)
-# Call stack grows to n frames ? O(n) stack space
+## Call stack grows to n frames ? O(n) stack space
 ```
 
 ```python
-# O(n�) space � 2D matrix
+## O(n�) space � 2D matrix
 def create_matrix(n):
     matrix = [[0] * n for _ in range(n)]   # n * n elements
     return matrix
@@ -372,7 +390,7 @@ def create_matrix(n):
 - Stack space: memory used by recursive call frames
 
 ```python
-# In-place algorithm � O(1) auxiliary space
+## In-place algorithm � O(1) auxiliary space
 def reverse_array_in_place(arr):
     left, right = 0, len(arr) - 1
     while left < right:
@@ -381,13 +399,16 @@ def reverse_array_in_place(arr):
         right -= 1
     # No extra array created
 
-# Out-of-place � O(n) auxiliary space
+## Out-of-place � O(n) auxiliary space
 def reverse_array_copy(arr):
     return arr[::-1]   # Creates new array
 ```
 
 ---
 
+
+
+## Overview
 ### 1.6 Amortized Analysis
 
 Amortized analysis averages the cost of expensive operations over a sequence. A single operation may be costly, but the average per operation is bounded.
@@ -395,7 +416,7 @@ Amortized analysis averages the cost of expensive operations over a sequence. A 
 **Dynamic array resizing**: When a dynamic array (Python list) grows beyond capacity, it allocates a new array (typically 2x size) and copies elements.
 
 ```python
-# Simulating dynamic array resizing
+## Simulating dynamic array resizing
 class DynamicArray:
     def __init__(self):
         self.data = [None] * 1
@@ -416,16 +437,16 @@ class DynamicArray:
         self.capacity = new_cap
         print(f"Resized to {new_cap}")
 
-# Analysis: n appends cost O(n) total, so O(1) amortized per append
+## Analysis: n appends cost O(n) total, so O(1) amortized per append
 ```
 
 **Aggregate method**: Sum the cost of all operations and divide by n.
 
 ```python
-# Cost of n dynamic array appends
-# Resize happens at capacities: 1, 2, 4, 8, ...
-# Total copies = 1 + 2 + 4 + ... + n/2 + n = O(n)
-# Amortized cost = O(n)/n = O(1)
+## Cost of n dynamic array appends
+## Resize happens at capacities: 1, 2, 4, 8, ...
+## Total copies = 1 + 2 + 4 + ... + n/2 + n = O(n)
+## Amortized cost = O(n)/n = O(1)
 ```
 
 **Potential method**: Define a potential function that captures the "debt" of the data structure.
@@ -433,10 +454,10 @@ class DynamicArray:
 **Accounting method**: Charge extra for cheap operations; use credits to pay for expensive ones.
 
 ```python
-# Banker's view: charge 3 coins per append
-# 1 coin pays for the immediate insert
-# 2 coins saved for future resizing
-# When resizing occurs, saved coins pay for copying
+## Banker's view: charge 3 coins per append
+## 1 coin pays for the immediate insert
+## 2 coins saved for future resizing
+## When resizing occurs, saved coins pay for copying
 class AmortizedArray:
     def __init__(self):
         self.data = [None] * 1
@@ -477,6 +498,7 @@ flowchart TD
 
 ---
 
+
 ## Visual Analogy
 
 Think of algorithm complexity like **grocery shopping time**:
@@ -489,6 +511,7 @@ Think of algorithm complexity like **grocery shopping time**:
 - **O(2ⁿ) — Exponential** = Trying every possible combination of items to pack in your bag. Adding one item doubles the time.
 
 This helps because you can instantly estimate whether an algorithm will be fast enough for your data size. An O(n²) approach that works for 100 items will crawl for 1 million items — knowing this before you code saves hours of debugging.
+
 
 ## TypeScript Parallel
 
@@ -517,6 +540,7 @@ function mergeSort<T>(arr: T[]): T[] {
 
 ---
 
+
 ## Summary
 
 - Big-O provides an upper bound on algorithm growth rate; Big-O provides a lower bound; Big-T provides a tight bound
@@ -530,6 +554,7 @@ function mergeSort<T>(arr: T[]): T[] {
 - The Master Theorem solves recurrences of form T(n) = aT(n/b) + f(n) for common cases
 - Always consider both time and space complexity when choosing an algorithm for a given constraint
 
+
 ## Practical Takeaways
 
 | Scenario | Do This | Avoid This |
@@ -540,6 +565,7 @@ function mergeSort<T>(arr: T[]): T[] {
 | Dynamic array usage | Trust amortized O(1) append | Pre-allocating size unless performance-critical |
 | Interview preparation | State best, average, and worst-case separately | Only mentioning the best case |
 | Optimizing nested loops | Look for opportunities to restructure | Adding more nested loops without analysis |
+
 
 ## Interview Q&A
 
@@ -558,7 +584,7 @@ def linear_search(arr, target):
         if val == target:
             return i       # O(1) � best case
     return -1               # O(n) � worst case
-# No T bound because best ? worst</code></pre>
+## No T bound because best ? worst</code></pre>
     <p><strong>Interview insight</strong>: Use Big-O for worst-case guarantees; use Big-Theta only when best and worst cases match.</p>
   </div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button>
@@ -580,15 +606,15 @@ def linear_search(arr, target):
       <li>Apply Master Theorem or solve via recurrence tree</li>
     </ol>
     <pre><code># Fibonacci recurrence: T(n) = T(n-1) + T(n-2) + O(1)
-# This gives O(2n) � exponential
+## This gives O(2n) � exponential
 
-# Binary search recurrence: T(n) = T(n/2) + O(1)
-# Using Master Theorem: a=1, b=2, f(n)=O(1)
-# log_b(a) = 0, f(n) = T(n�) ? T(n) = T(log n)
+## Binary search recurrence: T(n) = T(n/2) + O(1)
+## Using Master Theorem: a=1, b=2, f(n)=O(1)
+## log_b(a) = 0, f(n) = T(n�) ? T(n) = T(log n)
 
-# Merge sort recurrence: T(n) = 2T(n/2) + O(n)
-# Using Master Theorem: a=2, b=2, f(n)=O(n)
-# log_b(a) = 1, f(n) = T(n�) ? T(n) = T(n log n)</code></pre>
+## Merge sort recurrence: T(n) = 2T(n/2) + O(n)
+## Using Master Theorem: a=2, b=2, f(n)=O(n)
+## log_b(a) = 1, f(n) = T(n�) ? T(n) = T(n log n)</code></pre>
   </div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">?? Bookmark</button>
@@ -615,7 +641,7 @@ def linear_search(arr, target):
         return n
     memo[n] = fib_memo(n-1, memo) + fib_memo(n-2, memo)
     return memo[n]
-# Time: O(n), Space: O(n)</code></pre>
+## Time: O(n), Space: O(n)</code></pre>
   </div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">?? Bookmark</button>
@@ -692,12 +718,12 @@ def linear_search(arr, target):
     </ul>
     <pre><code># O(log n) examples
 
-# Binary search
+## Binary search
 while left <= right:
     mid = (left + right) // 2
     # eliminate half
 
-# Counting bits
+## Counting bits
 def count_bits(n):
     count = 0
     while n:
@@ -705,7 +731,7 @@ def count_bits(n):
         n >>= 1  # divide by 2
     return count
 
-# Exponentiation by squaring
+## Exponentiation by squaring
 def power(x, n):
     if n == 0:
         return 1
@@ -768,7 +794,7 @@ def reverse_array(arr):
         i += 1
         j -= 1
 
-# Not in-place � O(n) auxiliary space
+## Not in-place � O(n) auxiliary space
 def reverse_array_copy(arr):
     return arr[::-1]  # Creates new list</code></pre>
   </div>
@@ -786,14 +812,14 @@ def reverse_array_copy(arr):
     <p><strong>Average case</strong>: Expected time over all possible inputs of size n. Requires knowing input distribution.</p>
     <p><strong>Worst case</strong>: Maximum time required for any input of size n. Most commonly used because it provides a guarantee.</p>
     <pre><code># Quick sort complexity
-# Best: O(n log n) � pivot always median
-# Average: O(n log n) � random pivot
-# Worst: O(n�) � pivot always min/max (sorted input, bad pivot selection)
+## Best: O(n log n) � pivot always median
+## Average: O(n log n) � random pivot
+## Worst: O(n�) � pivot always min/max (sorted input, bad pivot selection)
 
-# Linear search complexity
-# Best: O(1) � target is first element
-# Average: T(n) � target is somewhere in middle
-# Worst: O(n) � target is last or not present</code></pre>
+## Linear search complexity
+## Best: O(1) � target is first element
+## Average: T(n) � target is somewhere in middle
+## Worst: O(n) � target is last or not present</code></pre>
     <p><strong>Interview insight</strong>: When comparing algorithms, always compare worst-case guarantees. Quick sort's O(n�) worst case can be mitigated with random pivot selection.</p>
   </div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button>
@@ -886,18 +912,19 @@ print(log_n_steps(10**12))   # 40</code></pre>
     </ul>
     <p>This is why P ? NP matters � exponential algorithms are effectively unsolvable for any significant n.</p>
     <pre><code># Polynomial: n� � doubling n quadruples work
-# n=100: 10000 ops
-# n=200: 40000 ops (4x)
+## n=100: 10000 ops
+## n=200: 40000 ops (4x)
 
-# Exponential: 2n � adding 1 doubles work
-# n=10: 1024 ops
-# n=11: 2048 ops (2x)
-# n=20: 1,048,576 ops
-# n=30: 1,073,741,824 ops</code></pre>
+## Exponential: 2n � adding 1 doubles work
+## n=10: 1024 ops
+## n=11: 2048 ops (2x)
+## n=20: 1,048,576 ops
+## n=30: 1,073,741,824 ops</code></pre>
   </div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
+
 
 ## Chapter Quiz
 
@@ -946,6 +973,7 @@ d) O(n�)
 
 <details class="tp-qa-card" data-qid="dsa01-quiz5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: a) O(1)</strong></p><p>While individual appends may be O(n) during resize, the amortized cost across n appends is O(1).</p></div></details>
 
+
 ## Exercises
 
 **Easy** � Write a function that takes a list of integers and returns its time complexity analysis (best, worst, average) for finding the maximum element.
@@ -960,6 +988,7 @@ d) O(n�)
 
 ---
 
+
 ## Common Mistakes
 
 1. Confusing Big-O with Big-Theta — Big-O is an upper bound, not an exact count; saying "bubble sort is O(n)" is wrong
@@ -967,6 +996,7 @@ d) O(n�)
 3. Forgetting to count auxiliary space — an algorithm creating a copy of the input uses O(n) space even if the loop is O(n)
 4. Assuming all recursive algorithms are O(2^n) — binary search recurses but is O(log n) because it halves the problem
 5. Mixing up amortized and worst-case — dynamic array append is O(1) amortized but O(n) worst-case; interviewers ask for both
+
 
 ## Revision Notes
 
@@ -978,11 +1008,14 @@ d) O(n�)
 - In-place algorithms use O(1) auxiliary space; out-of-place create copies
 - Amortized analysis averages expensive operations over sequences — dynamic array append = O(1) amortized
 
+
 ## Summary
 
 This chapter establishes the mathematical foundation for analyzing algorithm efficiency. You learned asymptotic notations (Big-O, Big-Omega, Big-Theta) and how to apply them to iterative and recursive algorithms. The Master Theorem provides a systematic way to solve recurrence relations. Space complexity analysis covers auxiliary and stack space, while amortized analysis gives realistic average costs for data structures like dynamic arrays. These concepts directly inform every data structure and algorithm decision in your engineering career.
 
+
 ## Placement Section
+
 
 ### Top 10 Interview Questions
 
@@ -1006,10 +1039,12 @@ This chapter establishes the mathematical foundation for analyzing algorithm eff
 1. An ML training pipeline preprocesses 10 million records in O(n^2) time. How would you restructure the preprocessing to achieve O(n log n) or better?
 2. Your inference API has p99 latency of 2 seconds. Profiling shows the bottleneck is an O(n) linear scan over a 50,000-element feature vector. Propose three optimization approaches
 
+
 ### Resume Tips
 - List "Time Complexity Analysis" under Technical Skills with specific algorithms you can analyze (binary search, merge sort, hash tables)
 - Describe projects with complexity-aware language: "Reduced query processing from O(n^2) to O(n log n) using indexed data structures, improving p99 latency by 40%"
 - Include a "CS Fundamentals" section if space permits, listing asymptotic analysis, recurrence relations, and amortized analysis
+
 
 ### Interview Day Checklist
 - [ ] Can derive Big-O for any loop structure (single, nested, dependent) in under 60 seconds
@@ -1019,6 +1054,7 @@ This chapter establishes the mathematical foundation for analyzing algorithm eff
 - [ ] Can explain amortized analysis using the dynamic array append example
 
 > **Next**: [02 � Arrays ?](02-ar
+
 ### True/False
 
 **T/F 1**: Big-O notation describes the best-case performance of an algorithm.

@@ -12,12 +12,13 @@
 
 ## Introduction
 
-23-trending-aiml-platforms is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding frontier llm apis providers is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering frontier llm apis providers.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -53,7 +54,7 @@ flowchart LR
     end
     Providers --> Router
     Router --> App
-```
+```text
 
 ## 1.1 DeepSeek — V3 Chat & R1 Reasoning
 
@@ -113,7 +114,7 @@ class DeepSeekClient {
         return Math.min(0.5 + signals.length * 0.1, 0.99)
     }
 }
-```
+```text
 
 ### R1 Debate Pattern
 
@@ -139,7 +140,7 @@ class R1Debate {
         return resolution.finalAnswer
     }
 }
-```
+```text
 
 DeepSeek is ideal for math, coding, and analytical tasks where transparent reasoning matters. Its open-weight nature (MIT license) makes it the go-to for self-hosted deployments.
 
@@ -195,7 +196,7 @@ class GeminiClient {
         )
     }
 }
-```
+```text
 
 ### Tool Calling with Gemini
 
@@ -247,7 +248,7 @@ class GeminiAgent {
         return res.json()
     }
 }
-```
+```text
 
 Gemini's 1M context is a game-changer for analyzing entire codebases, legal documents, or books in a single pass — no chunking needed.
 
@@ -301,7 +302,7 @@ class MistralClient {
         }
     }
 }
-```
+```text
 
 Mistral shines in European enterprise contexts where data residency is mandatory. Codestral is purpose-built for code generation with a 256K context window.
 
@@ -388,7 +389,7 @@ class UltraFastInference {
         return models[config.model] || { latencyMs: 3000, costPer1kTokens: 0.001, modelQuality: 0.7 }
     }
 }
-```
+```text
 
 Groq's LPU architecture makes it the go-to for latency-sensitive applications like voice agents, real-time chatbots, and streaming code completion.
 
@@ -477,7 +478,7 @@ class LLMHubRouter {
         return urls[provider]
     }
 }
-```
+```text
 
 The router enables automatic fallback — if DeepSeek is down, traffic routes to Gemini; if Gemini is slow, Groq handles real-time requests. This is the standard pattern for production AI systems in 2026.
 
@@ -595,6 +596,7 @@ D) Switching permanently to the cheapest provider
 3. **R1 Debate Agent**: Implement a multi-round debate system using DeepSeek R1 that solves a complex math problem by arguing both sides
 4. **Latency Benchmark**: Measure end-to-end latency for Groq vs Together AI on identical prompts (same model family, e.g., Llama 3.3 70B) across 20 trials
 5. **Router Config UI**: Build a configuration interface for the LLMHubRouter that lets users set task type, max latency, and cost budget, then shows the recommended
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 23-trending-aiml-platforms
@@ -604,6 +606,7 @@ D) Switching permanently to the cheapest provider
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

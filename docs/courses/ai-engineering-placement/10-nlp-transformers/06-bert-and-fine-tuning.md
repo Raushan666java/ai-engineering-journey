@@ -13,12 +13,13 @@
 
 ## Introduction
 
-10-nlp-transformers is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding bert and fine tuning is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering bert and fine tuning.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -45,7 +46,7 @@ flowchart LR
     F --> I
     G --> I
     H --> I
-```
+```text
 
 ## 6.1 Pre-Training Overview
 
@@ -72,7 +73,7 @@ class BERTPretrainingInput {
   maskedLmIds: number[];         // original token IDs at masked positions
   nextSentenceLabel: number;     // 0 = not next, 1 = is next
 }
-```
+```text
 
 Pre-training requires enormous compute: BERT-base took 4 days on 16 TPUs. The masked language model allows BERT to learn bidirectional representations, unlike GPT's left-to-right approach.
 
@@ -196,7 +197,7 @@ class MaskingGenerator {
     return { inputIds: maskedInput, lmLabels, maskedPositions };
   }
 }
-```
+```text
 
 The 80/10/10 strategy (80% mask, 10% random, 10% unchanged) prevents a mismatch between pre-training (where [MASK] tokens appear) and fine-tuning (where they never appear). Without this, BERT would not learn to handle unmasked input during fine-tuning.
 
@@ -267,7 +268,7 @@ class NSPDataGenerator {
     return { inputIds, tokenTypeIds, label };
   }
 }
-```
+```text
 
 Later research (RoBERTa) showed that NSP is not essential: removing NSP and using longer training with larger batches and more data improved performance. However, NSP remains useful for tasks requiring sentence pair understanding (NLI, QA).
 
@@ -403,7 +404,7 @@ class BERTForQuestionAnswering {
     return results;
   }
 }
-```
+```text
 
 **Fine-tuning learning rates**: 2e-5 to 5e-5 with linear warmup (first 10% of steps) and linear decay. BERT fine-tuning typically requires 2-10 epochs. The learning rate is much smaller than pre-training (5e-4) because pre-trained weights are already near-optimal.
 
@@ -480,7 +481,7 @@ class GLUEEvaluator {
     }
   }
 }
-```
+```text
 
 GLUE scores improved dramatically with BERT: BERT-base achieved 80.5 average (compared to 72.8 for ELMo + BiLSTM). SuperGLUE (more difficult tasks) replaced GLUE as the standard benchmark.
 
@@ -584,7 +585,7 @@ class DistillationTrainer {
     return exp.map((e) => e / sum);
   }
 }
-```
+```text
 
 **Other notable variants**: SpanBERT (masks contiguous spans for span prediction tasks), ELECTRA (replaces tokens with generator/discriminator), BART (denoising autoencoder), DeBERTa (disentangled attention, relative position).
 
@@ -786,6 +787,7 @@ d) 12
 ---
 
 > **Previous**: [Transformer Architecture](05-transformer-architecture.md) | **Next**: [Hugging Face Ecosystem](07-hugging-face-ecos
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 10-nlp-transformers
@@ -795,6 +797,7 @@ d) 12
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

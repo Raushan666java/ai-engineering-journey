@@ -11,12 +11,13 @@
 
 ## Introduction
 
-15-ai-evaluation-observability is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding evaluation metrics is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering evaluation metrics.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart TD
     Gen --> ROUGE[ROUGE / BLEU]
     LLM --> PPL[Perplexity]
     LLM --> Hal[Hallucination Rate]
-```
+```text
 
 ## 1.1 Classification Metrics
 
@@ -106,7 +107,7 @@ y_true = ["cat", "dog", "cat", "bird", "dog", "cat"]
 y_pred = ["cat", "dog", "cat", "cat", "dog", "bird"]
 print(f"Accuracy: {cm.accuracy(y_true, y_pred)}")
 print(f"F1: {cm.precision_recall_f1(y_true, y_pred)}")
-```
+```text
 
 ### 1.1.2 Multi-Label Metrics
 
@@ -148,7 +149,7 @@ mlm = MultiLabelMetrics()
 y_t = [[1, 0, 1], [0, 1, 0], [1, 1, 0]]
 y_p = [[1, 0, 0], [0, 1, 1], [1, 0, 0]]
 print(f"HL: {mlm.hamming_loss(y_t, y_p):.3f}, MF1: {mlm.micro_f1(y_t, y_p)}")
-```
+```text
 
 ## 1.2 Regression Metrics
 
@@ -188,7 +189,7 @@ rm = RegressionMetrics()
 y_t = np.array([3.0, 5.0, 2.5, 7.0, 8.5])
 y_p = np.array([2.8, 5.2, 2.7, 6.8, 8.2])
 print(f"All regression metrics: {rm.all_metrics(y_t, y_p)}")
-```
+```text
 
 ## 1.3 Generation Metrics
 
@@ -240,7 +241,7 @@ ref = "The cat sat on the mat"
 hyp = "The cat sat on a mat"
 print(f"ROUGE-1: {rouge.rouge_n(ref, hyp, 1)}")
 print(f"ROUGE-L: {rouge.rouge_l(ref, hyp)}")
-```
+```text
 
 ### 1.3.2 BLEU Score
 
@@ -273,7 +274,7 @@ bleu = BLEUScorer()
 ref = "the cat sat on the mat"
 hyp = "the cat sat on a mat"
 print(f"BLEU: {bleu.compute(ref, hyp)}")
-```
+```text
 
 ## 1.4 LLM-Specific Metrics
 
@@ -324,7 +325,7 @@ claims = ["Paris is the capital of France", "The Earth is flat"]
 evidence = ["Paris is the capital city of France", "The Earth is roughly spherical"]
 print(f"Hallucination rate: {llm_metrics.hallucination_rate(claims, evidence)}")
 print(f"ECE: {llm_metrics.calibration_error([0.9, 0.6, 0.8], [True, False, True])}")
-```
+```text
 
 ## 1.5 Metric Selection
 
@@ -383,7 +384,7 @@ class MetricRecommender:
 
 rec = MetricRecommender()
 print(f"Recommended for summarization: {rec.recommend('summarization')}")
-```
+```text
 
 ## Summary
 
@@ -636,6 +637,7 @@ Answer: B
 4. Create a hallucination detector that compares model claims against a knowledge base and reports hallucination rate, factual accuracy, and unsupported claims.
 
 5. Build a metric recommender system. Given a task description, suggest primary and secondary metrics, and warn about metric lim
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 15-ai-evaluation-observability
@@ -645,6 +647,7 @@ Answer: B
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

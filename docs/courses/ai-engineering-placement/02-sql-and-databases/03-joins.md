@@ -13,12 +13,13 @@
 
 ## Introduction
 
-02-sql-and-databases is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding joins is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering joins.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -42,7 +43,7 @@ flowchart LR
     A --> G[Self-Join]
     B --> H[Equi-join / Non-equi]
     C --> I[Anti-join pattern]
-```
+```text
 
 ## 3.1 INNER JOIN
 
@@ -192,7 +193,7 @@ cur.execute("CREATE TABLE customers(id, name)")
 cur.executemany("INSERT INTO customers VALUES (?,?)", [(1,"Alice"),(2,"Bob"),(3,"Charlie")])
 cur.executemany("INSERT INTO orders VALUES (?,?,?)", [(1,1,100),(2,1,200),(3,2,150)])
 
-# Anti-join: customers with no orders
+## Anti-join: customers with no orders
 cur.execute("""
     SELECT c.name FROM customers c
     LEFT JOIN orders o ON c.id = o.customer_id
@@ -200,7 +201,7 @@ cur.execute("""
 """)
 print("No orders:", [r[0] for r in cur.fetchall()])  # ['Charlie']
 
-# Semi-join: customers who have placed orders
+## Semi-join: customers who have placed orders
 cur.execute("""
     SELECT DISTINCT c.name
     FROM customers c
@@ -208,7 +209,7 @@ cur.execute("""
 """)
 print("Have orders:", [r[0] for r in cur.fetchall()])  # ['Alice', 'Bob']
 
-# Non-equi join (condition is not equality)
+## Non-equi join (condition is not equality)
 SELECT a.name, a.salary, b.name AS higher_earner
 FROM employees a
 JOIN employees b ON a.salary < b.salary;
@@ -642,6 +643,7 @@ ORDER BY times_bought_together DESC;
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 02-sql-and-databases
@@ -651,6 +653,7 @@ ORDER BY times_bought_together DESC;
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

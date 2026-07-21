@@ -12,12 +12,13 @@
 
 ## Introduction
 
-13-ai-agents-langgraph is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding tool use and function calling is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering tool use and function calling.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -42,7 +43,7 @@ flowchart LR
     F -->|No| H[Error Handler]
     H --> I[Retry/Fallback]
     I --> E
-```
+```text
 
 ## 4.1 Function Calling API
 
@@ -84,7 +85,7 @@ class OpenAITool:
             return f"Error executing {self.name}: {e}"
 
 
-# Example tool definitions
+## Example tool definitions
 search_tool_schema = OpenAITool(
     name="web_search",
     description="Search the web for information",
@@ -105,8 +106,10 @@ calculator_schema = OpenAITool(
 )
 
 print(search_tool_schema.to_openai_schema())
-```
+```text
 
+
+## Overview
 ### 4.1.2 OpenAI Function Calling Flow
 
 ```python
@@ -152,7 +155,7 @@ class OpenAIFunctionCallingAgent:
 agent = OpenAIFunctionCallingAgent("gpt-4o-mini", [search_tool_schema, calculator_schema])
 result = agent.invoke([{"role": "user", "content": "Search for AI news and calculate 2+2"}])
 print(f"Agent result: {result[:100]}")
-```
+```text
 
 ### 4.1.3 Anthropic Tool Use
 
@@ -185,7 +188,7 @@ class AnthropicToolFormat:
 
 anthropic_tool = AnthropicToolFormat.to_anthropic_schema(search_tool_schema)
 print(f"Anthropic schema: {anthropic_tool}")
-```
+```text
 
 ## 4.2 Tool Schema Design
 
@@ -253,7 +256,7 @@ schema = (schema_builder
     .add_boolean("include_summaries", "Include document summaries")
     .build())
 print(json.dumps(schema, indent=2))
-```
+```text
 
 ### 4.2.2 Type-Safe Tool Definition
 
@@ -323,7 +326,7 @@ def search_database(query: str, limit: int = 10, include_metadata: bool = False)
 
 
 print(f"Generated schema: {json.dumps(search_database.generate_schema(), indent=2)}")
-```
+```text
 
 ## 4.3 Tool Execution
 
@@ -366,7 +369,7 @@ class ArgumentValidator:
 validator = ArgumentValidator(schema)
 print(validator.validate({"query": "AI", "limit": 5}))  # Valid
 print(validator.validate({"query": 123}))  # Invalid
-```
+```text
 
 ### 4.3.2 Execution with Retry
 
@@ -422,7 +425,7 @@ class ToolExecutor:
 executor = ToolExecutor(max_retries=3)
 result = executor.execute(search_tool_schema, {"query": "AI", "num_results": 5})
 print(f"Execution result: {result}")
-```
+```text
 
 ### 4.3.3 Error Recovery
 
@@ -453,7 +456,7 @@ handler = ToolErrorHandler()
 handler.register_strategy(TimeoutError, handle_timeout)
 handler.register_strategy(ValueError, handle_validation)
 print(handler.handle("search", ValueError("bad input"), {"query": "test"}))
-```
+```text
 
 ## 4.4 Tool Registry
 
@@ -498,7 +501,7 @@ registry.register(search_tool_schema, "search")
 registry.register(calculator_schema, "math")
 print(f"Search tools: {[t.name for t in registry.get_by_category('search')]}")
 print(f"Search 'calc': {[t.name for t in registry.search_tools('calc')]}")
-```
+```text
 
 ### 4.4.2 Tool Discovery
 
@@ -546,7 +549,7 @@ class DataTools:
 discovery = AutoToolDiscovery()
 discovery.discover_from_class(DataTools)
 print(f"Discovered tools: {[t['name'] for t in discovery.registry.list_all()]}")
-```
+```text
 
 ### 4.4.3 Tool Versioning
 
@@ -595,7 +598,7 @@ vreg.add_tool(search_tool_schema, "1.0.0")
 vreg.add_tool(search_tool_schema, "2.0.0")
 latest = vreg.get_latest("web_search")
 print(f"Latest version tool: {latest.name if latest else 'None'}")
-```
+```text
 
 ## 4.5 Tool Selection
 
@@ -629,7 +632,7 @@ def mock_selector_llm(prompt: str) -> str:
 selector = ToolSelector(registry, mock_selector_llm)
 selected = selector.select("Search for AI news and compute stats")
 print(f"Selected tools: {[t.name for t in selected if t]}")
-```
+```text
 
 ### 4.5.2 Rule-Based Selection
 
@@ -658,7 +661,7 @@ rule_selector.add_rule(["search", "find", "lookup"], "web_search")
 rule_selector.add_rule(["calculate", "compute", "sum", "math"], "calculator")
 selected = rule_selector.select("Find information and calculate the total")
 print(f"Rule-based selected: {[t.name for t in selected]}")
-```
+```text
 
 ## 4.6 Parallel Tools
 
@@ -700,7 +703,7 @@ calls = [
 tools_dict = {"web_search": search_tool_schema, "calculator": calculator_schema}
 results = parallel.execute_all(calls, tools_dict)
 print(f"Parallel results: {results}")
-```
+```text
 
 ### 4.6.2 Batched Tool Calls
 
@@ -742,7 +745,7 @@ batcher.add("web_search", {"query": "AI"})
 batcher.add("calculator", {"expression": "10*5"})
 r = batcher.execute_batch(tools_dict)
 print(f"Batch results: {[x['tool'] for x in r]}")
-```
+```text
 
 ## Summary
 
@@ -946,6 +949,7 @@ Answer: B
 4. Implement a parallel tool executor that runs 4 independent tool calls simultaneously. Measure the total time vs sequential execution and report the speedup.
 
 5. Design a tool error handler with retry (3 attempts), timeout (5 seconds), and fallback responses. Simulate a failing tool and show the recov
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 13-ai-agents-langgraph
@@ -955,6 +959,7 @@ Answer: B
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

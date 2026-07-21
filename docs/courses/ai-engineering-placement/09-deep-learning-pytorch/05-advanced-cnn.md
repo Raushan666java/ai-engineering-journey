@@ -12,12 +12,13 @@
 
 ## Introduction
 
-09-deep-learning-pytorch is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding advanced cnn is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering advanced cnn.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic |
@@ -37,7 +38,7 @@ flowchart LR
     C --> D[Inception]
     D --> E[DenseNet]
     E --> F[EfficientNet]
-```
+```text
 
 ## 5.1 AlexNet and VGG
 
@@ -75,7 +76,7 @@ class VGGBlock(nn.Module):
 
     def forward(self, x):
         return self.block(x)
-```
+```text
 
 **VGG design insight**: Stacking 3x3 convs achieves same receptive field as larger kernels with fewer parameters.
 
@@ -133,7 +134,7 @@ class Bottleneck(nn.Module):
         out += identity
         out = self.relu(out)
         return out
-```
+```text
 
 **Why skip connections work**: They alleviate the vanishing gradient problem by providing a direct gradient highway to earlier layers.
 
@@ -166,12 +167,12 @@ class InceptionBlock(nn.Module):
     def forward(self, x):
         return torch.cat([self.b1(x), self.b2(x), self.b3(x), self.b4(x)], dim=1)
 
-# Test
+## Test
 x = torch.randn(4, 192, 28, 28)
 block = InceptionBlock(192, 64, 96, 128, 16, 32, 32)
 y = block(x)
 print(f"Inception output: {y.shape}")  # 4 x 256 x 28 x 28
-```
+```text
 
 **Key insight**: 1x1 convolutions before expensive 3x3/5x5 convs drastically reduce computation (bottleneck design).
 
@@ -209,12 +210,12 @@ class DenseBlock(nn.Module):
             x = layer(x)
         return x
 
-# Test
+## Test
 x = torch.randn(4, 64, 32, 32)
 db = DenseBlock(4, 64, 32)
 y = db(x)
 print(f"DenseBlock output: {y.shape}")  # channels = 64 + 4*32 = 192
-```
+```text
 
 **Advantage**: Dense connectivity alleviates vanishing gradients, encourages feature reuse, and requires fewer parameters than traditional CNNs.
 
@@ -254,7 +255,7 @@ block = ConvNeXtBlock(dim=96)
 x = torch.randn(4, 96, 56, 56)
 y = block(x)
 print(f"ConvNeXt output: {y.shape}")
-```
+```text
 
 **Compound scaling** scales depth (L), width (C), and resolution (H,W) jointly using a coefficient phi:
 - depth = alpha^phi, width = beta^phi, resolution = gamma^phi
@@ -292,7 +293,7 @@ function conv2dForward(input: number[][][], params: ConvParams, weights: number[
       }
   return output;
 }
-```
+```text
 
 ## Summary
 
@@ -411,6 +412,7 @@ d) Parameters <= 100M
 ---
 
 > **Previous**: [04-cnn-fundamentals.md](04-cnn-fundamentals.md) | **Next**: [06-transfer-learning.md](06-transfer-lea
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 09-deep-learning-pytorch
@@ -420,6 +422,7 @@ d) Parameters <= 100M
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

@@ -13,12 +13,13 @@
 
 ## Introduction
 
-21-interview-preparation is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding ai agents interview is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering ai agents interview.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart LR
     E --> F[LangGraph]
     F --> G[MCP]
     G --> H[Production Agents]
-```
+```text
 
 ## 7.1 Agent Architecture
 
@@ -123,7 +124,7 @@ class Agent:
             return result
         except Exception as e:
             return f"Error executing {func_name}: {e}"
-```
+```text
 
 **Agent types**: Simple reflex (pre-programmed responses), model-based (maintains internal state), goal-based (works toward targets), utility-based (maximizes a score function), learning agents (improves through experience).
 
@@ -138,7 +139,7 @@ Tools are the agent's interface to the external world. Well-designed tool defini
 **Execution patterns**: Sequential (one tool call at a time), parallel (multiple independent tool calls), iterative (tool calls in a loop), conditional (tool choice depends on previous results).
 
 ```python
-# Tool definitions with Pydantic
+## Tool definitions with Pydantic
 from pydantic import BaseModel, Field
 from typing import Optional
 
@@ -155,7 +156,7 @@ class SendEmailParams(BaseModel):
     subject: str = Field(description="Email subject line")
     body: str = Field(description="Email body content")
 
-# Tool implementations
+## Tool implementations
 import httpx
 
 async def get_weather(location: str, units: str = "celsius") -> dict:
@@ -174,7 +175,7 @@ async def send_email(to: str, subject: str, body: str) -> dict:
     # Send email via SMTP/API
     return {"status": "sent", "to": to, "subject": subject}
 
-# Register tools with descriptions
+## Register tools with descriptions
 tools = {
     "get_weather": {
         "fn": get_weather,
@@ -223,7 +224,7 @@ tools = {
     },
 }
 
-# Tool execution with error handling and retry
+## Tool execution with error handling and retry
 async def safe_execute_tool(tool_call, tools: dict, max_retries: int = 2) -> str:
     func_name = tool_call.function.name
     args = json.loads(tool_call.function.arguments)
@@ -242,7 +243,7 @@ async def safe_execute_tool(tool_call, tools: dict, max_retries: int = 2) -> str
         except Exception as e:
             return f"Error: {func_name} failed with: {str(e)}"
     return f"Error: {func_name} failed"
-```
+```text
 
 **Tool design principles**: One tool per action (don't combine unrelated operations). Return structured data (JSON). Handle errors gracefully and return meaningful error messages. Implement timeouts. Rate-limit tool calls to prevent abuse.
 
@@ -324,7 +325,7 @@ class LongTermMemory:
         )
         return [row[0] for row in cursor.fetchall()]
 
-# Working memory for current task
+## Working memory for current task
 class WorkingMemory:
     def __init__(self, max_tokens: int = 4000):
         self.context: list[dict] = []
@@ -359,7 +360,7 @@ class WorkingMemory:
         self.context = []
         self.task_state = {}
         self.subtask_stack = []
-```
+```text
 
 ---
 
@@ -450,7 +451,7 @@ Results: {results}
 Final answer:"""
         return await self.llm.generate(prompt, temperature=0)
 
-# Reflection agent
+## Reflection agent
 async def reflection_loop(agent, task: str, max_iterations: int = 3) -> str:
     context = {"attempts": []}
 
@@ -472,7 +473,7 @@ If the response is satisfactory, say "SATISFACTORY". Otherwise, explain what nee
         task = f"{task}\n\nPrevious attempt failed. Feedback: {evaluation}"
 
     return context["attempts"][-1]["result"]
-```
+```text
 
 ---
 
@@ -555,7 +556,7 @@ Results from specialists:
 Synthesize these results into a final, coherent answer."""
         return await self.coordinator.llm.generate(prompt)
 
-# Debate pattern: two agents argue different positions
+## Debate pattern: two agents argue different positions
 async def debate(agent_a: SpecializedAgent, agent_b: SpecializedAgent, topic: str, rounds: int = 3) -> str:
     a_position = await agent_a.llm.generate(
         f"Argue FOR: {topic}. Provide three key points."
@@ -582,7 +583,7 @@ async def debate(agent_a: SpecializedAgent, agent_b: SpecializedAgent, topic: st
     # Judge
     judge_prompt = f"Given this debate on '{topic}', synthesize the best answer:\n\n" + "\n".join(transcript)
     return await agent_a.llm.generate(judge_prompt)
-```
+```text
 
 **Communication patterns**: Agents communicate via messages (structured JSON), shared memory (a common workspace), or events (pub/sub). Message schemas should include: sender, receiver, message type, payload, timestamp, and conversation_id.
 
@@ -605,13 +606,13 @@ from langgraph.prebuilt import ToolExecutor, ToolInvocation
 from langchain_core.messages import BaseMessage, HumanMessage, AIMessage, FunctionMessage
 import operator
 
-# Define agent state
+## Define agent state
 class AgentState(TypedDict):
     messages: Annotated[Sequence[BaseMessage], operator.add]
     task: str
     steps_remaining: int
 
-# Define nodes
+## Define nodes
 async def call_model(state: AgentState, llm, tools):
     messages = state["messages"]
     response = await llm.ainvoke(messages, tools=tools)
@@ -635,7 +636,7 @@ async def execute_tools(state: AgentState, tool_executor):
         ))
     return {"messages": results}
 
-# Conditional routing
+## Conditional routing
 def should_continue(state: AgentState) -> str:
     messages = state["messages"]
     last_message = messages[-1]
@@ -643,7 +644,7 @@ def should_continue(state: AgentState) -> str:
         return "continue"
     return "end"
 
-# Build the graph
+## Build the graph
 def create_agent_graph(llm, tools):
     tool_executor = ToolExecutor(tools)
 
@@ -664,7 +665,7 @@ def create_agent_graph(llm, tools):
 
     return workflow.compile()
 
-# Example with human-in-the-loop
+## Example with human-in-the-loop
 from langgraph.checkpoint import MemorySaver
 
 def create_human_review_graph(llm, tools):
@@ -714,7 +715,7 @@ def create_human_review_graph(llm, tools):
     workflow.add_edge("action", "agent")
 
     return workflow.compile(checkpointer=memory)
-```
+```text
 
 **LangGraph advantages over chains**: Stateful (maintains complex state across steps), controllable (conditional routing, loops), human-in-the-loop (pauses for approval), persistence (checkpoints for recovery), streaming (stream state updates in real-time).
 
@@ -730,7 +731,7 @@ MCP standardizes how agents discover and interact with external tools, resources
 - **Transport**: JSON-RPC over stdin/stdout (local) or HTTP+SSE (remote).
 
 ```python
-# MCP Server implementation
+## MCP Server implementation
 from mcp.server import Server, NotificationOptions
 from mcp.server.models import InitializationOptions
 import mcp.server.stdio
@@ -806,7 +807,7 @@ class DatabaseMCPServer:
                 ),
             )
 
-# MCP Client (in the agent)
+## MCP Client (in the agent)
 class MCPClient:
     def __init__(self):
         self.servers: dict[str, ServerSession] = {}
@@ -834,7 +835,7 @@ class MCPClient:
             if result is not None:
                 return result.content
         raise ValueError(f"Tool {tool_name} not found on any connected server")
-```
+```text
 
 **Benefits of MCP**: Standardized integration (no custom adapters for each tool), dynamic discovery (new tools auto-available), security boundaries (server controls access), composability (combine multiple MCP servers).
 
@@ -951,7 +952,7 @@ class ProductionAgent:
     def _clean_old_tool_calls(self) -> None:
         now = time.time()
         self.tool_call_times = [t for t in self.tool_call_times if now - t < 60]
-```
+```text
 
 **Cost optimization**: Use cheaper models for simple steps (classification, intent detection). Batch independent tool calls. Cache repeated tool results. Use semantic caching for similar queries. Set per-user spending limits.
 
@@ -1085,7 +1086,7 @@ class ProductionAgent:
     <pre><code># Bad
 {"name": "search", "description": "Search the database"}
 
-# Good
+## Good
 {"name": "search_employees",
  "description": "Search for employee information by name, email, or department.
   Use this when the user asks about an employee's role, contact info, or team.
@@ -1269,25 +1270,25 @@ class ProductionAgent:
     <p><strong>Tools needed</strong>: Calendar API (check availability, create event), Email/Slack (send invitations), Contacts directory (resolve names to emails).</p>
     <p><strong>Agent workflow</strong>:</p>
     <pre><code># Step 1: Parse the request
-# User: "Schedule a 1-hour meeting with Alice and Bob next Tuesday afternoon"
+## User: "Schedule a 1-hour meeting with Alice and Bob next Tuesday afternoon"
 
-# Step 2: Resolve participants
+## Step 2: Resolve participants
 participants = resolve_contacts(["Alice", "Bob"])
-# → [{"name": "Alice", "email": "alice@co.com"}, {"name": "Bob", "email": "bob@co.com"}]
+## → [{"name": "Alice", "email": "alice@co.com"}, {"name": "Bob", "email": "bob@co.com"}]
 
-# Step 3: Check availability
+## Step 3: Check availability
 slots = check_availability(
     participants=["alice@co.com", "bob@co.com", "current_user@co.com"],
     date="next Tuesday",
     duration_minutes=60,
     time_range="13:00-17:00",
 )
-# → [{"start": "14:00", "end": "15:00", "all_available": True}]
+## → [{"start": "14:00", "end": "15:00", "all_available": True}]
 
-# Step 4: Propose time to user
-# Agent: "Next Tuesday at 2-3 PM works for everyone. Shall I book it?"
+## Step 4: Propose time to user
+## Agent: "Next Tuesday at 2-3 PM works for everyone. Shall I book it?"
 
-# Step 5: Create event (after user confirmation)
+## Step 5: Create event (after user confirmation)
 event = create_calendar_event(
     title="Meeting: Project Discussion",
     start="2024-06-18T14:00:00",
@@ -1296,8 +1297,8 @@ event = create_calendar_event(
 )
 send_invitations(event["id"])
 
-# Step 6: Confirm
-# Agent: "Meeting booked for Tuesday at 2:00 PM. Invitations sent."</code></pre>
+## Step 6: Confirm
+## Agent: "Meeting booked for Tuesday at 2:00 PM. Invitations sent."</code></pre>
     <p><strong>Edge cases</strong>: No common slot found (suggest alternatives), participant declines (re-schedule), timezone differences (auto-convert), recurring meetings (handle separately).</p>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -1513,6 +1514,7 @@ d) The return type
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 21-interview-preparation
@@ -1522,6 +1524,7 @@ d) The return type
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

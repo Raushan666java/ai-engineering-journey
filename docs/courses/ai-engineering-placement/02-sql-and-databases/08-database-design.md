@@ -13,12 +13,13 @@
 
 ## Introduction
 
-02-sql-and-databases is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding database design is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering database design.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -47,7 +48,7 @@ flowchart LR
     E --> L[Star / Snowflake / EAV]
     F --> M[Partitioning / Sharding]
     G --> N[Migrations / Versioning]
-```
+```text
 
 ## 8.1 Entity-Relationship Diagrams
 
@@ -65,7 +66,7 @@ ERDs visually represent database structure: entities (tables), attributes (colum
 
 **Cardinality notations**:
 
-```
+```text
 Customer ────< Places >──── Order
   1              N
 One customer places many orders.
@@ -73,7 +74,7 @@ One customer places many orders.
 Order ────< Contains >──── Product
   1              N
 One order contains many products.
-```
+```text
 
 **Converting ERD to SQL**:
 
@@ -122,7 +123,7 @@ CREATE TABLE profiles (
     bio TEXT,
     avatar_url VARCHAR(500)
 );
-```
+```text
 
 **Weak entities** (depend on a parent entity):
 
@@ -136,7 +137,7 @@ CREATE TABLE invoice_items (
     unit_price DECIMAL(10, 2) NOT NULL,
     PRIMARY KEY (invoice_id, line_number)
 );
-```
+```text
 
 ## 8.2 Normalization
 
@@ -163,7 +164,7 @@ CREATE TABLE customer_phones (
     phone_type VARCHAR(10),
     PRIMARY KEY (customer_id, phone)
 );
-```
+```text
 
 **Second Normal Form (2NF)**:
 
@@ -192,7 +193,7 @@ CREATE TABLE enrollments (
     grade CHAR(2),
     PRIMARY KEY (student_id, course_id)
 );
-```
+```text
 
 **Third Normal Form (3NF)**:
 
@@ -221,7 +222,7 @@ CREATE TABLE courses (
     title VARCHAR(200),
     instructor_id INTEGER REFERENCES instructors(id)
 );
-```
+```text
 
 **Boyce-Codd Normal Form (BCNF)**:
 
@@ -249,7 +250,7 @@ CREATE TABLE enrollments (
     professor_name VARCHAR(100) REFERENCES professors(name),
     PRIMARY KEY (student_id, professor_name)
 );
-```
+```text
 
 **Denormalization trade-offs**:
 
@@ -288,7 +289,7 @@ CREATE TABLE countries (
     iso_code CHAR(2) PRIMARY KEY,  -- 'US', 'GB', 'IN'
     name VARCHAR(100) NOT NULL
 );
-```
+```text
 
 **Foreign keys** enforce referential integrity:
 
@@ -303,7 +304,7 @@ CREATE TABLE orders (
         -- ON DELETE SET DEFAULT, -- set to default value
     total DECIMAL(10, 2)
 );
-```
+```text
 
 **Unique constraints** prevent duplicate values:
 
@@ -315,7 +316,7 @@ CREATE TABLE users (
     -- Composite unique
     UNIQUE (first_name, last_name)
 );
-```
+```text
 
 **CHECK constraints** enforce data validity:
 
@@ -332,7 +333,7 @@ CREATE TABLE employees (
         status != 'terminated' OR termination_date IS NOT NULL
     )
 );
-```
+```text
 
 **EXCLUDE constraints** (PostgreSQL):
 
@@ -348,7 +349,7 @@ CREATE TABLE room_bookings (
         daterange(check_in, check_out) WITH &&
     )
 );
-```
+```text
 
 **DEFAULT values**:
 
@@ -361,7 +362,7 @@ CREATE TABLE logs (
     created_by VARCHAR(100) DEFAULT CURRENT_USER,
     processed BOOLEAN DEFAULT FALSE
 );
-```
+```text
 
 ## 8.4 Schema Design Patterns
 
@@ -408,7 +409,7 @@ CREATE TABLE fact_sales (
     discount DECIMAL(5, 2) DEFAULT 0,
     total_amount DECIMAL(12, 2) GENERATED ALWAYS AS (quantity * unit_price * (1 - discount)) STORED
 );
-```
+```text
 
 **Entity-Attribute-Value (EAV)** for highly variable attributes:
 
@@ -436,7 +437,7 @@ FROM entities e
 JOIN attributes a ON a.entity_id = e.id
 WHERE e.entity_type = 'product'
 GROUP BY e.id;
-```
+```text
 
 **Polymorphic associations**:
 
@@ -458,7 +459,7 @@ CREATE TABLE comments (
     parent_id INTEGER NOT NULL,
     UNIQUE (parent_type, parent_id)  -- only one comment per parent
 );
-```
+```text
 
 **Soft delete pattern**:
 
@@ -477,7 +478,7 @@ SELECT * FROM documents WHERE deleted_at IS NULL;
 
 -- Partial unique index for active records
 CREATE UNIQUE INDEX idx_active_document_title ON documents(title) WHERE deleted_at IS NULL;
-```
+```text
 
 ## 8.5 Design for Performance
 
@@ -512,7 +513,7 @@ CREATE TABLE sessions
     PARTITION BY HASH (session_id);
 CREATE TABLE sessions_0 PARTITION OF sessions
     FOR VALUES WITH (MODULUS 4, REMAINDER 0);
-```
+```text
 
 **Sharding** distributes data across databases:
 
@@ -524,7 +525,7 @@ CREATE TABLE sessions_0 PARTITION OF sessions
 -- Shard 0: customer_id % 4 == 0
 -- Shard 1: customer_id % 4 == 1
 -- etc.
-```
+```text
 
 **Materialized views** for pre-computed data:
 
@@ -547,7 +548,7 @@ REFRESH MATERIALIZED VIEW monthly_sales_summary;
 -- Concurrent refresh (no lock, requires unique index)
 CREATE UNIQUE INDEX idx_mv_monthly ON monthly_sales_summary(month, product_id);
 REFRESH MATERIALIZED VIEW CONCURRENTLY monthly_sales_summary;
-```
+```text
 
 ## 8.6 Schema Evolution
 
@@ -577,7 +578,7 @@ CREATE TABLE orders (
     total DECIMAL(10, 2) NOT NULL,
     status VARCHAR(20) NOT NULL DEFAULT 'pending'
 );
-```
+```text
 
 **Backward-compatible changes**:
 
@@ -602,7 +603,7 @@ ALTER TABLE users ADD COLUMN email_address VARCHAR(255);
 UPDATE users SET email_address = email WHERE email_address IS NULL;
 -- Then update application to use email_address
 -- Finally: ALTER TABLE users DROP COLUMN email;
-```
+```text
 
 **Versioning strategies**:
 
@@ -623,7 +624,7 @@ CREATE TABLE user_history (
     valid_to TIMESTAMP,
     PRIMARY KEY (id, valid_from)
 );
-```
+```text
 
 ## TypeScript Parallel
 
@@ -683,7 +684,7 @@ class SchemaBuilder {
         return map[type] || "TEXT";
     }
 }
-```
+```text
 
 ## Summary
 
@@ -800,6 +801,7 @@ class SchemaBuilder {
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 02-sql-and-databases
@@ -809,6 +811,7 @@ class SchemaBuilder {
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

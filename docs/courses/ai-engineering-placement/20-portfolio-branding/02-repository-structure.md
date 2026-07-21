@@ -13,12 +13,13 @@
 
 ## Introduction
 
-20-portfolio-branding is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding repository structure is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering repository structure.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -48,7 +49,7 @@ flowchart TB
     A --> M[.gitignore]
     A --> N[Dockerfile]
     A --> O[docker-compose.yml]
-```
+```text
 
 ## 2.1 Directory Structure
 
@@ -129,7 +130,7 @@ class RepoQualityChecker:
     def score(self) -> int:
         checks = self.check_essentials()
         return sum(1 for v in checks.values() if v) * 17  # /6 * 100
-```
+```text
 
 ## 2.2 README Standards
 
@@ -237,7 +238,7 @@ class READMEScorer:
             scores[name] = {"present": present, "weight": weight, "score": weight if present else 0}
             total += weight if present else 0
         return {"total": total, "max": 100, "sections": scores}
-```
+```text
 
 ## 2.3 CI/CD Integration
 
@@ -343,7 +344,7 @@ class BadgeGenerator:
     @staticmethod
     def python_version_badge() -> str:
         return "![Python](https://img.shields.io/badge/python-3.9%2B-blue)"
-```
+```text
 
 ## 2.4 Issue & PR Templates
 
@@ -362,6 +363,7 @@ title: '[BUG] '
 labels: bug
 assignees: ''
 ---
+
 ## Describe the Bug
 A clear description of what the bug is.
 
@@ -395,6 +397,7 @@ title: '[FEATURE] '
 labels: enhancement
 assignees: ''
 ---
+
 ## Is your feature request related to a problem?
 A clear description of the problem.
 
@@ -465,7 +468,7 @@ cd repo
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements-dev.txt
-```
+```text
 
 ## Code Style
 - Follow PEP 8
@@ -484,7 +487,7 @@ pip install -r requirements-dev.txt
 3. Ensure CI passes
 4. Request review from maintainers
 """
-```
+```text
 
 ## 2.5 Documentation
 
@@ -562,7 +565,7 @@ markdown_extensions:
   - toc:
       permalink: true
 """
-```
+```text
 
 ## 2.6 Versioning & Changelog
 
@@ -672,7 +675,7 @@ class ReleaseManager:
                         notes += "\n"
                 return notes
         return "Release not found"
-```
+```text
 
 ## Summary
 
@@ -989,6 +992,7 @@ d) Release notes
 7. **CHANGELOG Audit**: Review an open-source project's CHANGELOG.md. Does it follow "Keep a Changelog"? What information is missing? Rewrite the last 3 releases in the standard format.
 
 8. **Docker Setup**: Add Dockerfile and docker-compose.yml to a project. The Dockerfile should have multi-stage build (build + runtime). docker-compose should include the app and a database service. Test t
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 20-portfolio-branding
@@ -998,6 +1002,7 @@ d) Release notes
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

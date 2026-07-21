@@ -13,12 +13,13 @@
 
 ## Introduction
 
-21-interview-preparation is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding behavioral star interview is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering behavioral star interview.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart LR
     E --> F[Ambition & Growth]
     F --> G[Technical Leadership]
     G --> H[Delivery & Practice]
-```
+```text
 
 ## 9.1 STAR Framework
 
@@ -58,7 +59,7 @@ The STAR framework structures behavioral answers into four parts:
 **R €” Result**: What happened? Use concrete metrics when possible (35% faster, reduced costs by 20%, served 1M users). Include impact on the team, company, or users. If applicable, mention what you learned.
 
 ```python
-# STAR answer template
+## STAR answer template
 def star_answer(topic: str, situation: str, task: str, action: str, result: str) -> str:
     return f"""
 **Situation**: {situation}
@@ -70,7 +71,7 @@ def star_answer(topic: str, situation: str, task: str, action: str, result: str)
 **Result**: {result}
 """
 
-# Example: Tell me about a time you improved a system
+## Example: Tell me about a time you improved a system
 print(star_answer(
     topic="Performance Optimization",
     situation="At FinTechCo, our payment processing API had p99 latency of 2.3 seconds, causing customer drop-off and failed transactions.",
@@ -79,7 +80,7 @@ print(star_answer(
     result="p99 latency dropped from 2.3s to 320ms (86% improvement). Transaction success rate increased from 94% to 99.5%. Customer drop-off during checkout decreased by 40%. The solution is still running 18 months later without issues.",
 ))
 
-# STAR quality scoring
+## STAR quality scoring
 def evaluate_star(answer: dict) -> dict:
     scores = {}
     # Situation: Is there enough context?
@@ -91,7 +92,7 @@ def evaluate_star(answer: dict) -> dict:
     # Result: Are there metrics or impact?
     scores["result"] = any(c.isdigit() for c in answer.get("result", ""))
     return scores
-```
+```text
 
 **Golden rules**: Keep each story under 90 seconds. The Action section should be ~50 seconds. Use specific, quantifiable results. Prepare 8-10 stories that cover different competencies. Practice telling each story out loud until it flows naturally.
 
@@ -115,7 +116,7 @@ Create a story bank with 8-10 prepared stories covering these categories:
 | 10 | Data-driven | "Tell me about making a data-informed decision" | A/B test that changed product direction |
 
 ```python
-# Story bank template
+## Story bank template
 story_bank = {
     "leadership": {
         "question": "Tell me about a time you led a project",
@@ -136,7 +137,7 @@ story_bank = {
         }
     },
 }
-```
+```text
 
 **Building your stories**: Use real experiences. If you don't have a perfect story, choose a close one and frame it appropriately. Practice transitioning between categories €” you might need to adapt a story for a different question.
 
@@ -154,7 +155,7 @@ Leadership questions assess your ability to take ownership, drive projects, and 
 - **Bias for action**: Moving fast, making decisions with incomplete information
 
 ```python
-# Leadership story pattern
+## Leadership story pattern
 def leadership_story(topic: str, scope: str, challenge: str, actions: list[str], metrics: dict) -> str:
     action_text = "\n".join(f"- {a}" for a in actions)
     metrics_text = "\n".join(f"- {k}: {v}" for k, v in metrics.items())
@@ -169,7 +170,7 @@ def leadership_story(topic: str, scope: str, challenge: str, actions: list[str],
 **Result**:
 {metrics_text}"""
 
-# Example: Mentoring initiative
+## Example: Mentoring initiative
 mentoring_story = leadership_story(
     topic="improve onboarding for new engineers",
     scope="a 50-person engineering org",
@@ -187,7 +188,7 @@ mentoring_story = leadership_story(
         "Program adopted by 6 other teams across the company",
     }
 )
-```
+```text
 
 **Common leadership questions**:
 - "Tell me about a time you went above and beyond"
@@ -209,7 +210,7 @@ Conflict questions assess your ability to navigate disagreements, collaborate ac
 - **Constructive feedback**: Giving and receiving feedback professionally
 
 ```python
-# Conflict resolution framework
+## Conflict resolution framework
 def conflict_story(context: str, disagreement: str, resolution: str, outcome: str) -> str:
     return f"""
 **Situation**: {context}
@@ -223,14 +224,14 @@ def conflict_story(context: str, disagreement: str, resolution: str, outcome: st
 **What I learned**: [insight about communication, compromise, or conviction]
 """
 
-# Example: Technical disagreement
+## Example: Technical disagreement
 print(conflict_story(
     context="On a team of 6 engineers, we were choosing between MongoDB and PostgreSQL for a new product catalog service.",
     disagreement="I advocated for PostgreSQL because of ACID compliance and our team's existing expertise. Another senior engineer pushed for MongoDB citing schema flexibility and horizontal scaling.",
     resolution="Instead of debating in meetings, I proposed a structured evaluation: we each built a prototype with realistic data (1M products) and benchmarked the 5 most critical queries. I led the evaluation with clear criteria (query performance, operational cost, learning curve). The PostgreSQL prototype was 3x faster for our access patterns and required 40% less infrastructure.",
     outcome="The team chose PostgreSQL based on data, not opinions. The engineer who preferred MongoDB appreciated the evidence-based approach. We delivered the project on schedule, and the database has performed well for 2 years serving 10M+ products.",
 ))
-```
+```text
 
 **Handling "Tell me about a conflict with a coworker"**:
 1. Choose a real conflict but de-escalate it in your answer
@@ -255,7 +256,7 @@ Failure questions test your humility, self-awareness, and ability to learn from 
 5. **Share the positive outcome**: How did you and the team benefit from the experience?
 
 ```python
-# Failure story framework
+## Failure story framework
 def failure_story(context: str, mistake: str, consequence: str, lesson: str, change: str, impact: str) -> str:
     return f"""
 **Situation**: {context}
@@ -272,7 +273,7 @@ def failure_story(context: str, mistake: str, consequence: str, lesson: str, cha
 
 **Long-term impact**: {impact}"""
 
-# Example: Database failure
+## Example: Database failure
 print(failure_story(
     context="I was lead engineer for our e-commerce platform's checkout service, processing $50M/month in transactions.",
     mistake="I deployed a database migration to add an index without fully understanding the production load pattern. The migration used CONCURRENTLY (which doesn't block writes) but I forgot that the table had a high write volume that caused the index creation to fail and retry repeatedly.",
@@ -281,7 +282,7 @@ print(failure_story(
     change="I created a 'Database Change Playbook' with: (1) always benchmark migrations against production traffic patterns, (2) set up I/O and latency alerts during migrations, (3) have a rollback plan tested before starting. I presented this in a tech talk that was recorded and shared across the company.",
     impact="The playbook became the standard across the org (30+ teams). No similar migration incident occurred in the following 2 years. I was invited to the Database Infrastructure team's review board for all future large migrations.",
 ))
-```
+```text
 
 **Common failure questions**:
 - "Tell me about a time you failed"
@@ -306,7 +307,7 @@ These questions assess your motivation, career goals, and fit with the company's
 - **Adaptability**: Comfort with ambiguity, changing priorities, new domains
 
 ```python
-# Answer template: "Where do you see yourself in 5 years?"
+## Answer template: "Where do you see yourself in 5 years?"
 def career_goal_story(current_role: str, target_role: str, skills_to_build: list[str], why_company: str) -> str:
     return f"""
 **My current trajectory**: As a {current_role}, I've developed strong skills in [area1] and [area2].
@@ -318,7 +319,7 @@ def career_goal_story(current_role: str, target_role: str, skills_to_build: list
 
 **Why this role at this company**: {why_company}"""
 
-# Example
+## Example
 print(career_goal_story(
     current_role="Senior Backend Engineer",
     target_role="Staff Engineer / Tech Lead",
@@ -330,7 +331,7 @@ print(career_goal_story(
     ],
     why_company="Your company's mission to democratize AI infrastructure aligns perfectly with my goal to work on systems that have broad impact. The scale of your ML platform (serving 100M+ predictions/day) is exactly the challenge I'm looking for to grow into a Staff Engineer role.",
 ))
-```
+```text
 
 **Answering "Why do you want to work here?"**:
 1. Research the company's products, culture, and recent news (2-3 specific points)
@@ -355,7 +356,7 @@ Technical leadership questions assess your ability to make good engineering deci
 - **Operational excellence**: Monitoring, on-call, incident response, postmortems
 
 ```python
-# Technical decision story
+## Technical decision story
 def tech_decision_story(problem: str, options: list[tuple[str, str, str]], decision: str, rationale: str, outcome: str) -> str:
     options_text = "\n".join(f"- **{opt[0]}**: Pros: {opt[1]}, Cons: {opt[2]}" for opt in options)
     return f"""
@@ -372,7 +373,7 @@ def tech_decision_story(problem: str, options: list[tuple[str, str, str]], decis
 
 **Result**: {outcome}"""
 
-# Example: Architecture decision
+## Example: Architecture decision
 print(tech_decision_story(
     problem="We needed a real-time data pipeline for user analytics (page views, clicks, purchases) with sub-second latency and 10K events/second throughput.",
     options=[
@@ -385,7 +386,7 @@ print(tech_decision_story(
     outcome="The pipeline handles 50K events/sec (grew beyond initial estimate) with <500ms processing latency. Data accuracy is 99.995% (validated against database counts). The team of 3 manages the infrastructure alongside other responsibilities.",
 ))
 
-# Code review philosophy
+## Code review philosophy
 def code_review_principles() -> list[str]:
     return [
         "Review the logic, not the style €” use automated formatters for style",
@@ -396,7 +397,7 @@ def code_review_principles() -> list[str]:
         "Praise good solutions explicitly",
         "Ask questions instead of making demands: 'What do you think about...' vs 'Change this to...'",
     ]
-```
+```text
 
 **Technical questions to prepare for**:
 - "Describe a system you designed and the tradeoffs you made"
@@ -419,7 +420,7 @@ The best stories won't help if you can't deliver them well. Practice is essentia
 - **Authenticity**: Be yourself. Scripted answers sound robotic. Practice enough that the structure is natural, but vary the wording each time.
 
 ```python
-# Mock interview timer
+## Mock interview timer
 import time
 
 class MockInterviewSession:
@@ -467,7 +468,7 @@ class MockInterviewSession:
                 feedback.append(f"Q{i+1}: Add quantifiable results/metrics")
         return feedback
 
-# Practice questions
+## Practice questions
 practice_questions = [
     "Tell me about yourself",
     "Why do you want to work here?",
@@ -480,7 +481,7 @@ practice_questions = [
     "Describe a time you had to learn a new technology quickly",
     "Where do you see yourself in 5 years?",
 ]
-```
+```text
 
 **Recording yourself**: Use your phone to record video answers. Watch the playback. Check for: filler words ("um", "uh", "like"), pacing, eye contact, body language, story structure clarity. Do this for 3-5 questions per practice session.
 
@@ -944,6 +945,7 @@ d) Say you don't like the work
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 21-interview-preparation
@@ -953,6 +955,7 @@ d) Say you don't like the work
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

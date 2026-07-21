@@ -13,12 +13,13 @@
 
 ## Introduction
 
-12-rag-vector-databases is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding vector database basics is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering vector database basics.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -44,7 +45,7 @@ flowchart TD
     G --> H
     H --> I[Similarity Search]
     I --> J[Ranked + Filtered Results]
-```
+```text
 
 ## 3.1 Vector Database Architecture
 
@@ -102,7 +103,7 @@ rec = VectorRecord(id="doc-1", vector=[0.1] * 384, metadata={"source": "wikipedi
 db.insert(rec)
 print(f"Database size: {db.size()}")
 print(f"Retrieved: {db.get('doc-1').metadata}")
-```
+```text
 
 ## 3.2 Database Comparison
 
@@ -156,26 +157,26 @@ def recommend_vector_db(
 for scale, budget in [("small", "free"), ("large", "paid"), ("large", "self-host")]:
     rec = recommend_vector_db(scale, budget)
     print(f"Scale={scale}, Budget={budget}: {rec}")
-```
+```text
 
 ### 3.2.2 Local Vector Database (Chroma Example)
 
 Chroma is the most developer-friendly option for prototyping.
 
 ```python
-# Conceptual Chroma usage
+## Conceptual Chroma usage
 import chromadb
-# chroma_client = chromadb.Client()
-# collection = chroma_client.create_collection(name="my_collection")
-# collection.add(
-#     documents=["Document about RAG", "Document about embeddings"],
-#     metadatas=[{"source": "tutorial"}, {"source": "paper"}],
-#     ids=["doc1", "doc2"]
-# )
-# results = collection.query(query_texts=["RAG pipeline"], n_results=2)
-# print(results)
+## chroma_client = chromadb.Client()
+## collection = chroma_client.create_collection(name="my_collection")
+## collection.add(
+##     documents=["Document about RAG", "Document about embeddings"],
+##     metadatas=[{"source": "tutorial"}, {"source": "paper"}],
+##     ids=["doc1", "doc2"]
+## )
+## results = collection.query(query_texts=["RAG pipeline"], n_results=2)
+## print(results)
 
-# In-memory mock for demonstration
+## In-memory mock for demonstration
 class MockChromaCollection:
     def __init__(self, name: str):
         self.name = name
@@ -208,7 +209,7 @@ chroma.add(
 )
 results = chroma.query(["RAG generation"])
 print(f"Query results: {results}")
-```
+```text
 
 ## 3.3 Indexing Algorithms
 
@@ -248,7 +249,7 @@ for i in range(100):
 
 result = flat.search_with_timing(np.random.randn(384), k=5)
 print(f"Flat search: {result['time_ms']}ms, top ID: {result['results'][0][0]}")
-```
+```text
 
 ### 3.3.2 IVF (Inverted File Index)
 
@@ -301,7 +302,7 @@ ivf.build_index()
 
 results = ivf.search(np.random.randn(384), k=5)
 print(f"IVF search results: {len(results)} candidates")
-```
+```text
 
 ### 3.3.3 HNSW (Hierarchical Navigable Small World)
 
@@ -418,7 +419,7 @@ for i in range(50):
 results = hnsw.search(np.random.randn(384), k=5)
 for rid, score in results:
     print(f"  {rid}: similarity={score:.4f}")
-```
+```text
 
 ### 3.3.4 Index Comparison
 
@@ -453,10 +454,10 @@ class IndexBenchmark:
 
 
 benchmark = IndexBenchmark(dimension=128, num_vectors=1000)
-# flat_result = benchmark.benchmark_index(FlatIndex(), "Flat")
-# print(flat_result)
+## flat_result = benchmark.benchmark_index(FlatIndex(), "Flat")
+## print(flat_result)
 print("Benchmark ready for testing")
-```
+```text
 
 ## 3.4 Schema Design
 
@@ -517,7 +518,7 @@ schema = manager.create_collection(
     },
 )
 print(f"Collection '{schema.name}' created with {len(schema.fields)} metadata fields")
-```
+```text
 
 ### 3.4.2 Metadata Indexing
 
@@ -572,7 +573,7 @@ records = [
 filter_obj = MetadataFilter([FilterCondition("source", "eq", "wikipedia")])
 filtered = filter_obj.apply(records)
 print(f"Filtered records: {[r.id for r in filtered]}")
-```
+```text
 
 ### 3.4.3 Payload Storage (Qdrant-style)
 
@@ -616,7 +617,7 @@ payload_idx = PayloadIndex("category", "string")
 payload_idx.add("doc-1", Payload({"category": "science"}))
 payload_idx.add("doc-2", Payload({"category": "technology"}))
 print(f"Science docs: {payload_idx.search('science')}")
-```
+```text
 
 ## 3.5 CRUD Operations
 
@@ -681,7 +682,7 @@ collection.insert_batch([
 collection.upsert(VectorRecord("doc-3", np.random.randn(384).tolist(), {"source": "web", "year": 2024}))
 results = collection.search(np.random.randn(384), k=5)
 print(f"Search returned {len(results)} results")
-```
+```text
 
 ### 3.5.2 Scroll / Pagination
 
@@ -704,7 +705,7 @@ class PaginatedCollection:
 pc = PaginatedCollection(collection, page_size=1)
 page = pc.scroll(0)
 print(f"Page has {len(page['records'])} records, has_more: {page['has_more']}")
-```
+```text
 
 ### 3.5.3 Bulk Export
 
@@ -726,7 +727,7 @@ def export_collection(
 
 exported = export_collection(collection, include_vectors=False)
 print(f"Exported {len(exported.splitlines())} records")
-```
+```text
 
 ## 3.6 Scaling Strategies
 
@@ -769,7 +770,7 @@ for i in range(100):
     sharded.insert(VectorRecord(f"doc-{i}", np.random.randn(384).tolist(), {"idx": i}))
 
 print(sharded.stats())
-```
+```text
 
 ### 3.6.2 Replication
 
@@ -794,7 +795,7 @@ class ReplicatedVectorDB:
 replicated = ReplicatedVectorDB(3, 384)
 replicated.write(VectorRecord("doc-1", [0.1]*384, {}))
 print(f"Consistent: {replicated.consistency_check()}")
-```
+```text
 
 ### 3.6.3 Hybrid Cloud Strategy
 
@@ -826,7 +827,7 @@ class HybridVectorDB:
 
 hybrid = HybridVectorDB(VectorDatabase("local", 384))
 print(f"Hybrid DB: local + {hybrid.cloud}")
-```
+```text
 
 ## Summary
 
@@ -1030,6 +1031,7 @@ Answer: B
 4. Implement a sharded vector database with 4 shards and a write-once-read-many workload. Insert 1000 vectors and measure query latency vs a single-shard baseline.
 
 5. Create a paginated vector search that returns results in pages of 20, supports cursor-based pagination, and applies metadata filters. Test with 200 records and verify correct pagination across a
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 12-rag-vector-databases
@@ -1039,6 +1041,7 @@ Answer: B
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

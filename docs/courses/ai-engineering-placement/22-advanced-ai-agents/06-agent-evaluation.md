@@ -12,12 +12,13 @@
 
 ## Introduction
 
-22-advanced-ai-agents is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding agent evaluation is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering agent evaluation.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -53,7 +54,7 @@ flowchart LR
     end
     Benchmarks --> Metrics
     Metrics --> Ranking
-```
+```text
 
 ## 6.1 Agent Benchmarks Overview
 
@@ -124,7 +125,7 @@ class BenchmarkRegistry {
             .filter(b => b.difficulty === level)
     }
 }
-```
+```text
 
 ```python
 from dataclasses import dataclass
@@ -187,7 +188,7 @@ class BenchmarkRunner:
             'avg_time': total_time / total,
             'total_cost': total_cost,
         }
-```
+```text
 
 ## 6.2 Evaluation Metrics
 
@@ -289,7 +290,7 @@ interface ScoredComparison {
     loser: string
     margin: 'decisive' | 'moderate' | 'narrow'
 }
-```
+```text
 
 ## 6.3 ELO Rating System
 
@@ -366,7 +367,7 @@ class ELORating {
         }
     }
 }
-```
+```text
 
 ```python
 import math
@@ -414,7 +415,7 @@ class ELORatingSystem:
              for n, r in self.ratings.items()],
             key=lambda x: -x['rating']
         )
-```
+```text
 
 ## 6.4 Cost Analysis
 
@@ -525,7 +526,7 @@ class A_BTest {
         }
     }
 }
-```
+```text
 
 ## 6.5 Evaluation Datasets
 
@@ -632,7 +633,7 @@ class DatasetDesigner {
         }
     }
 }
-```
+```text
 
 ## 6.6 Observability & Tracing
 
@@ -736,7 +737,7 @@ class AgentTracer {
         return totalDuration * costPerMs
     }
 }
-```
+```text
 
 ```python
 import time
@@ -806,7 +807,7 @@ class AgentTracer:
             'avg_duration_ms': sum(durations) / len(durations) if durations else 0,
             'max_duration_ms': max(durations) if durations else 0,
         }
-```
+```text
 
 ## Summary
 
@@ -866,6 +867,7 @@ Create a balanced 50-task evaluation dataset across 5 categories and 3 difficult
 ### Exercise 5: Tracing Implementation
 
 Add span tracing to an existing agent. Export the trace and identify the 3 slowest co
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 22-advanced-ai-agents
@@ -875,6 +877,7 @@ Add span tracing to an existing agent. Export the trace and identify the 3 slowe
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

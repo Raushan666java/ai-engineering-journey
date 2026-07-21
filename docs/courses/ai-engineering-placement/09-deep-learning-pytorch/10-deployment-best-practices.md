@@ -13,12 +13,13 @@
 
 ## Introduction
 
-09-deep-learning-pytorch is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding deployment best practices is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering deployment best practices.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -57,7 +58,7 @@ flowchart TB
     L & R --> S[Promote to Stable]
     S --> T[Update Registry]
     T --> U[Archive v1]
-```
+```text
 
 ## 10.1 A/B Testing
 
@@ -213,7 +214,7 @@ class ABTestMonitor:
         return "\n".join(lines)
 
 
-# Demo
+## Demo
 ab_test = ABTestFramework()
 config = ExperimentConfig(
     name="v1_vs_v2_classifier", model_a_name="resnet_v1", model_b_name="resnet_v2",
@@ -229,7 +230,7 @@ for user_id in range(200):
 
 report = ABTestMonitor(ab_test).generate_report(exp_name)
 print(report)
-```
+```text
 
 ---
 
@@ -372,7 +373,7 @@ for _ in range(100):
 stats = monitor.metrics.get_statistics("inference_latency_ms")
 print(f"Latency: p50={stats['p50']:.1f}ms, p95={stats['p95']:.1f}ms, p99={stats['p99']:.1f}ms")
 print(f"QPS: {stats['count'] / 300:.1f} req/s (last 5min)")
-```
+```text
 
 ---
 
@@ -512,7 +513,7 @@ registry.register(meta_v2)
 print(f"Models: {registry.list_models()}")
 print(f"Latest: {registry.get_latest('sentiment_model').version}")
 print(f"Comparison: {registry.compare_versions('sentiment_model', '1.0.0', '2.0.0')}")
-```
+```text
 
 ---
 
@@ -640,7 +641,7 @@ print(f"Health check: {'PASS' if is_healthy else 'FAIL'}")
 bad_metrics = {"error_rate": 0.12, "latency_p99_ms": 800, "accuracy": 0.85}
 is_healthy = rollback_mgr.check_health("classifier", bad_metrics)
 print(f"Health check: {'PASS' if is_healthy else 'FAIL'}")
-```
+```text
 
 ---
 
@@ -743,7 +744,7 @@ print(f"After advance: {canary.get_status()}")
 result = canary.check_and_promote({"error_rate": 0.01, "p99_latency_ms": 120},
                                   {"error_rate": 0.03, "p99_latency_ms": 400})
 print(f"Check result: {result}")
-```
+```text
 
 ---
 
@@ -853,7 +854,7 @@ print(f"Stable latency: p50={analysis['stable_latency_p50']}ms, "
       f"p99={analysis['stable_latency_p99']}ms")
 print(f"Shadow latency: p50={analysis['shadow_latency_p50']}ms, "
       f"p99={analysis['shadow_latency_p99']}ms")
-```
+```text
 
 ---
 
@@ -975,7 +976,7 @@ results = tester.benchmark(num_requests=200, concurrency=5)
 print(f"Benchmark: p50={results['p50_ms']:.1f}ms, p99={results['p99_ms']:.1f}ms")
 print(f"Throughput: {results['throughput_qps']:.0f} QPS")
 print(f"Error rate: {results['error_rate']:.2%}")
-```
+```text
 
 ---
 
@@ -1089,6 +1090,7 @@ d) p99
 ---
 
 > **Previous**: [09-model-deployment.md](09-model-deployment.md) | **Next**: [index.md](
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 09-deep-learning-pytorch
@@ -1098,6 +1100,7 @@ d) p99
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

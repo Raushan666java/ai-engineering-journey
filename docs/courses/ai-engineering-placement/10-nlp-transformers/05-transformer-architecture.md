@@ -13,12 +13,13 @@
 
 ## Introduction
 
-10-nlp-transformers is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding transformer architecture is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering transformer architecture.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -56,7 +57,7 @@ flowchart TB
     end
     H --> N
     R --> S[Linear + Softmax]
-```
+```text
 
 ## 5.1 Architecture Overview
 
@@ -133,7 +134,7 @@ class TransformerBlock {
     });
   }
 }
-```
+```text
 
 The encoder processes the input sequence; the decoder generates output autoregressively. Cross-attention in the decoder queries the encoder's final output using the decoder's self-attention output as the query.
 
@@ -181,7 +182,7 @@ class SinusoidalPositionalEncoding {
     return [...this.encoding[pos]];
   }
 }
-```
+```text
 
 **Properties of sinusoidal PE**:
 - Each dimension corresponds to a sinusoid with frequency 1/10000^(2i/d_model)
@@ -214,7 +215,7 @@ class LearnedPositionalEncoding {
     return [...this.embeddings[pos]];
   }
 }
-```
+```text
 
 **Relative position encoding** (used in Transformer-XL, T5) encodes the offset between positions rather than absolute positions. This generalizes better to sequence lengths unseen during training.
 
@@ -299,7 +300,7 @@ class LayerNorm {
     return { dx, dgamma, dbeta };
   }
 }
-```
+```text
 
 **Pre-norm vs post-norm**: In the original Transformer (post-norm), residual connections flow around the sublayer, followed by layer norm: output = LayerNorm(x + Sublayer(x)). GPT and modern implementations use pre-norm: output = x + Sublayer(LayerNorm(x)). Pre-norm stabilizes training at higher learning rates and is more common in modern architectures.
 
@@ -367,7 +368,7 @@ class FeedForwardNetwork {
     });
   }
 }
-```
+```text
 
 The FFN operates independently on each position (same weights, different inputs). It captures non-linear feature interactions that self-attention misses. The expansion factor of 4 means the FFN contains ~2/3 of the model's parameters.
 
@@ -417,7 +418,7 @@ class ResidualConnection {
     return v / (1 - this.dropout);
   }
 }
-```
+```text
 
 **Why residuals matter**: In a 12-layer transformer encoder, without residual connections, the gradient at layer 1 would be ∏_{l=2}^{12} (I + d(Sublayer_l)/dx). Each sublayer's Jacobian is close to zero initially, so the product vanishes. With residuals, the Jacobian is I + d(Sublayer_l)/dx, and the product asymptotically approaches I (identity), preserving gradient flow.
 
@@ -528,7 +529,7 @@ class TokenEmbedding {
     return tokenIds.map((id) => [...this.embeddings[id]]);
   }
 }
-```
+```text
 
 **Model comparison**:
 - BERT (encoder-only): 340M params, 12/24 layers, bidirectional
@@ -733,6 +734,7 @@ d) Layer-dependent scale
 ---
 
 > **Previous**: [Attention Mechanism](04-attention-mechanism.md) | **Next**: [BERT & Fine-Tuning](06-bert-and-fine-t
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 10-nlp-transformers
@@ -742,6 +744,7 @@ d) Layer-dependent scale
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

@@ -13,12 +13,13 @@
 
 ## Introduction
 
-21-interview-preparation is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding dsa patterns mastery is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering dsa patterns mastery.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart LR
     E --> F[Backtracking]
     F --> G[Heap / Priority Queue]
     G --> H[Blind 75 Strategy]
-```
+```text
 
 ## 1.1 Two Pointers
 
@@ -54,7 +55,7 @@ The two-pointer technique uses two indices to traverse a data structure, typical
 **Same-direction pointers**: Both pointers start at the same end, one moving faster. Used for in-place removal, linked list cycle detection, and partition.
 
 ```python
-# Opposite-direction: Two Sum II (sorted array)
+## Opposite-direction: Two Sum II (sorted array)
 def two_sum_sorted(nums: list[int], target: int) -> list[int]:
     left, right = 0, len(nums) - 1
     while left < right:
@@ -67,7 +68,7 @@ def two_sum_sorted(nums: list[int], target: int) -> list[int]:
             right -= 1
     return []
 
-# Same-direction: Remove duplicates in-place
+## Same-direction: Remove duplicates in-place
 def remove_duplicates(nums: list[int]) -> int:
     if not nums:
         return 0
@@ -77,7 +78,7 @@ def remove_duplicates(nums: list[int]) -> int:
             nums[write] = nums[read]
             write += 1
     return write
-```
+```text
 
 **Time complexity**: O(n). **Space complexity**: O(1). The key insight is that each element is visited at most once by each pointer.
 
@@ -94,7 +95,7 @@ Sliding window maintains a contiguous subarray or substring that satisfies a con
 **Variable-size window**: The window grows or shrinks based on a constraint. Use a while loop to shrink from the left when the constraint is violated.
 
 ```python
-# Fixed-size: Maximum sum subarray of size k
+## Fixed-size: Maximum sum subarray of size k
 def max_sum_subarray(nums: list[int], k: int) -> int:
     window_sum = sum(nums[:k])
     max_sum = window_sum
@@ -103,7 +104,7 @@ def max_sum_subarray(nums: list[int], k: int) -> int:
         max_sum = max(max_sum, window_sum)
     return max_sum
 
-# Variable-size: Longest substring without repeating characters
+## Variable-size: Longest substring without repeating characters
 def length_of_longest_substring(s: str) -> int:
     char_set = set()
     left = max_len = 0
@@ -114,7 +115,7 @@ def length_of_longest_substring(s: str) -> int:
         char_set.add(s[right])
         max_len = max(max_len, right - left + 1)
     return max_len
-```
+```text
 
 **Time complexity**: O(n) — each element enters and leaves the window at most once. **Space complexity**: O(k) where k is the window size or distinct character set.
 
@@ -133,7 +134,7 @@ Binary search finds an element in a sorted array in O(log n) time. Beyond the cl
 **Upper bound / Last occurrence**: Find the rightmost position where target could be inserted.
 
 ```python
-# Classic binary search
+## Classic binary search
 def binary_search(nums: list[int], target: int) -> int:
     left, right = 0, len(nums) - 1
     while left <= right:
@@ -146,7 +147,7 @@ def binary_search(nums: list[int], target: int) -> int:
             right = mid - 1
     return -1
 
-# Lower bound (first >= target)
+## Lower bound (first >= target)
 def lower_bound(nums: list[int], target: int) -> int:
     left, right = 0, len(nums)
     while left < right:
@@ -157,7 +158,7 @@ def lower_bound(nums: list[int], target: int) -> int:
             left = mid + 1
     return left
 
-# Search in rotated sorted array
+## Search in rotated sorted array
 def search_rotated(nums: list[int], target: int) -> int:
     left, right = 0, len(nums) - 1
     while left <= right:
@@ -175,7 +176,7 @@ def search_rotated(nums: list[int], target: int) -> int:
             else:
                 right = mid - 1
     return -1
-```
+```text
 
 **Common problems**: Find peak element, find minimum in rotated array, koko eating bananas, median of two sorted arrays, search a 2D matrix.
 
@@ -192,7 +193,7 @@ Breadth-First Search (BFS) uses a queue and explores level by level. Depth-First
 ```python
 from collections import deque
 
-# BFS — tree level-order traversal
+## BFS — tree level-order traversal
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -215,7 +216,7 @@ def level_order(root: TreeNode | None) -> list[list[int]]:
         result.append(level)
     return result
 
-# DFS — binary tree inorder traversal (iterative)
+## DFS — binary tree inorder traversal (iterative)
 def inorder_traversal(root: TreeNode | None) -> list[int]:
     result, stack = [], []
     current = root
@@ -228,7 +229,7 @@ def inorder_traversal(root: TreeNode | None) -> list[int]:
         current = current.right
     return result
 
-# DFS — number of islands (grid traversal)
+## DFS — number of islands (grid traversal)
 def num_islands(grid: list[list[str]]) -> int:
     if not grid:
         return 0
@@ -250,7 +251,7 @@ def num_islands(grid: list[list[str]]) -> int:
                 count += 1
                 dfs(r, c)
     return count
-```
+```text
 
 **Time complexity**: O(V + E) for graph traversals. **Space complexity**: O(V) for the queue/stack.
 
@@ -271,14 +272,14 @@ DP solves problems by combining solutions to overlapping subproblems. Master the
 **Knapsack / Subset**: Partition equal subset sum, target sum, ones and zeros.
 
 ```python
-# 1D DP — house robber
+## 1D DP — house robber
 def rob(nums: list[int]) -> int:
     prev, curr = 0, 0
     for n in nums:
         prev, curr = curr, max(curr, prev + n)
     return curr
 
-# 2D DP — unique paths
+## 2D DP — unique paths
 def unique_paths(m: int, n: int) -> int:
     dp = [[1] * n for _ in range(m)]
     for i in range(1, m):
@@ -286,7 +287,7 @@ def unique_paths(m: int, n: int) -> int:
             dp[i][j] = dp[i - 1][j] + dp[i][j - 1]
     return dp[m - 1][n - 1]
 
-# State machine — best time to buy/sell with cooldown
+## State machine — best time to buy/sell with cooldown
 def max_profit_with_cooldown(prices: list[int]) -> int:
     sold, held, reset = float("-inf"), float("-inf"), 0
     for price in prices:
@@ -296,7 +297,7 @@ def max_profit_with_cooldown(prices: list[int]) -> int:
         reset = max(reset, prev_sold)
     return max(sold, reset)
 
-# 0/1 Knapsack — partition equal subset sum
+## 0/1 Knapsack — partition equal subset sum
 def can_partition(nums: list[int]) -> bool:
     total = sum(nums)
     if total % 2:
@@ -308,7 +309,7 @@ def can_partition(nums: list[int]) -> bool:
         for s in range(target, num - 1, -1):
             dp[s] = dp[s] or dp[s - num]
     return dp[target]
-```
+```text
 
 **Time complexity**: O(n * k) typically where n is input size and k is the state dimension. **Space complexity**: Optimized to O(k) by dropping the n dimension.
 
@@ -330,10 +331,10 @@ def backtrack(candidate, state, constraints):
             make_choice(candidate, choice)
             backtrack(candidate, state, constraints)
             undo_choice(candidate, choice)
-```
+```text
 
 ```python
-# Generate all subsets (power set)
+## Generate all subsets (power set)
 def subsets(nums: list[int]) -> list[list[int]]:
     result = []
 
@@ -347,7 +348,7 @@ def subsets(nums: list[int]) -> list[list[int]]:
     backtrack(0, [])
     return result
 
-# Generate all permutations
+## Generate all permutations
 def permute(nums: list[int]) -> list[list[int]]:
     result = []
 
@@ -367,7 +368,7 @@ def permute(nums: list[int]) -> list[list[int]]:
     backtrack([], [False] * len(nums))
     return result
 
-# N-Queens
+## N-Queens
 def solve_n_queens(n: int) -> list[list[str]]:
     cols, diag1, diag2 = set(), set(), set()
     board = [["."] * n for _ in range(n)]
@@ -392,7 +393,7 @@ def solve_n_queens(n: int) -> list[list[str]]:
 
     backtrack(0)
     return result
-```
+```text
 
 **Time complexity**: O(n * n!) for permutations, O(2^n) for subsets. **Space complexity**: O(n) for recursion depth.
 
@@ -413,7 +414,7 @@ Heaps efficiently maintain the smallest or largest element in a dynamic collecti
 ```python
 import heapq
 
-# Top K frequent elements
+## Top K frequent elements
 def top_k_frequent(nums: list[int], k: int) -> list[int]:
     freq = {}
     for n in nums:
@@ -425,7 +426,7 @@ def top_k_frequent(nums: list[int], k: int) -> list[int]:
             heapq.heappop(heap)
     return [num for _, num in heap]
 
-# Find median from data stream
+## Find median from data stream
 class MedianFinder:
     def __init__(self):
         self.low = []   # max-heap (store negatives)
@@ -446,7 +447,7 @@ class MedianFinder:
             return (-self.low[0] + self.high[0]) / 2.0
         return float(-self.low[0])
 
-# Merge K sorted lists
+## Merge K sorted lists
 def merge_k_sorted(lists: list[list[int]]) -> list[int]:
     heap = []
     for i, lst in enumerate(lists):
@@ -459,7 +460,7 @@ def merge_k_sorted(lists: list[list[int]]) -> list[int]:
         if elem_idx + 1 < len(lists[list_idx]):
             heapq.heappush(heap, (lists[list_idx][elem_idx + 1], list_idx, elem_idx + 1))
     return result
-```
+```text
 
 **Time complexity**: O(n log k) for Top-K, O(log n) per operation for median finding. **Space complexity**: O(n) to store all elements.
 
@@ -480,7 +481,7 @@ The Blind 75 is a curated list of 75 LeetCode problems covering essential patter
 **Spaced repetition schedule**: Review each solved problem after 1 day, 3 days, 1 week, 2 weeks, and 1 month. Maintain a spreadsheet tracking problem name, pattern, date solved, and notes.
 
 ```python
-# Simple spaced-repetition tracker
+## Simple spaced-repetition tracker
 import json
 from datetime import datetime, timedelta
 
@@ -526,7 +527,7 @@ class ProblemTracker:
     def _save(self) -> None:
         with open(self.filepath, "w") as f:
             json.dump(self.problems, f, indent=2)
-```
+```text
 
 **Company mapping**:
 
@@ -1219,6 +1220,7 @@ d) Topological sort
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 21-interview-preparation
@@ -1228,6 +1230,7 @@ d) Topological sort
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

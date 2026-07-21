@@ -11,12 +11,13 @@
 
 ## Introduction
 
-15-ai-evaluation-observability is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding llm as judge is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering llm as judge.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -52,7 +53,7 @@ flowchart LR
     J --> S1
     J --> S2
     J --> W
-```
+```text
 
 ## 2.1 LLM-as-Judge Concept
 
@@ -134,7 +135,7 @@ score = judge.score("What is RAG?", "RAG is retrieval-augmented generation.")
 print(f"Score: {score}")
 comparison = judge.compare("What is RAG?", "RAG is...", "Retrieval-Augmented Generation...")
 print(f"Comparison: {comparison}")
-```
+```text
 
 ### 2.1.2 Judge Pipeline
 
@@ -175,7 +176,7 @@ qa_pairs = [{"question": f"Q{i}", "response": f"A{i}"} for i in range(10)]
 rubric = {"accuracy": "Is it correct?", "fluency": "Is it fluent?"}
 pipeline.evaluate_batch(qa_pairs, rubric)
 print(f"Aggregated: {pipeline.aggregate_scores()}")
-```
+```text
 
 ## 2.2 Rubric Scoring
 
@@ -214,7 +215,7 @@ class RubricBuilder:
 builder = RubricBuilder()
 rubric = builder.create(["accuracy", "relevance", "fluency"])
 print(f"Rubric: {rubric}")
-```
+```text
 
 ### 2.2.2 Pointwise Scoring
 
@@ -245,7 +246,7 @@ class PointwiseScorer:
 scorer = PointwiseScorer(judge, {"accuracy": "Is it correct?", "fluency": "Is it fluent?"})
 score = scorer.score("What is AI?", "AI is artificial intelligence.")
 print(f"Pointwise score: {score}")
-```
+```text
 
 ## 2.3 Pairwise Comparison
 
@@ -291,7 +292,7 @@ pc = PairwiseComparator(judge)
 pc.compare("What is RAG?", "RAG is retrieval augmentation.", "RAG is a technique...")
 pc.compare("Define ML", "Machine learning is...", "ML stands for...")
 print(f"Win rate: {pc.win_rate('A')}")
-```
+```text
 
 ### 2.3.2 Elo Rating System
 
@@ -337,7 +338,7 @@ elo.update("model-A", "model-B", "model-A")
 elo.update("model-A", "model-C", "model-A")
 elo.update("model-B", "model-C", "model-C")
 print(f"Elo rankings: {elo.rankings()}")
-```
+```text
 
 ## 2.4 Bias Mitigation
 
@@ -373,7 +374,7 @@ class PositionBiasDetector:
 detector = PositionBiasDetector()
 comparisons = [{"winner": "A"} if i % 2 == 0 else {"winner": "B"} for i in range(20)]
 print(f"Position bias: {detector.detect(comparisons)}")
-```
+```text
 
 ### 2.4.2 Other Biases
 
@@ -416,7 +417,7 @@ class BiasMitigator:
 
 mitigator = BiasMitigator()
 print(f"Verbosity bias: {mitigator.verbosity_bias_check('short', 'long ' * 30, 'B')}")
-```
+```text
 
 ## 2.5 Judge Selection
 
@@ -467,7 +468,7 @@ class JudgeSelector:
 selector = JudgeSelector()
 print(f"Recommended (balanced): {selector.recommend('balanced')}")
 print(f"Cost estimate: {selector.estimate_cost('GPT-4o', 1000)}")
-```
+```text
 
 ### 2.5.2 Judge Agreement
 
@@ -516,7 +517,7 @@ agreement = JudgeAgreement()
 results_a = [{"winner": "A"}] * 10
 results_b = [{"winner": "A" if i % 2 == 0 else "B"} for i in range(10)]
 print(f"Agreement: {agreement.agreement_rate(results_a, results_b)}")
-```
+```text
 
 ## Summary
 
@@ -736,6 +737,7 @@ Answer: B
 4. Create a judge selection tool that recommends a judge model based on budget (low/medium/high), minimum quality, and number of evaluations.
 
 5. Implement an agreement calculator that compares two judges on 20 evaluations and reports agreement rate and Cohen
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 15-ai-evaluation-observability
@@ -745,6 +747,7 @@ Answer: B
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

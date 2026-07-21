@@ -13,12 +13,13 @@
 
 ## Introduction
 
-08-machine-learning is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding decision trees and rf is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering decision trees and rf.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -47,7 +48,7 @@ flowchart LR
     style E fill:#4a90d9,color:#fff
     style F fill:#4a90d9,color:#fff
     style G fill:#4a90d9,color:#fff
-```
+```text
 
 ## 4.1 Entropy & Information Gain
 
@@ -105,7 +106,7 @@ class EntropyCalculator:
 calc = EntropyCalculator()
 y_sample = np.array([0, 0, 1, 1, 1, 1])
 print(f"Entropy: {calc.entropy(y_sample):.4f}")
-```
+```text
 
 **Entropy range**: H=0 (all same class) to H=1 (perfectly split binary). For K classes, max is log₂(K).
 
@@ -141,7 +142,7 @@ class GiniCalculator:
 
 gini_calc = GiniCalculator()
 print(f"Gini: {gini_calc.gini(y_sample):.4f}")
-```
+```text
 
 **Gini vs Entropy**: Both produce similar trees. Gini is slightly faster (no log computation). Entropy is more theoretically grounded (information theory). In practice, the difference is negligible.
 
@@ -266,7 +267,7 @@ dt.fit(X, y)
 preds = dt.predict(X)
 acc = np.mean(preds == y)
 print(f"Decision Tree accuracy: {acc:.3f}")
-```
+```text
 
 ---
 
@@ -326,7 +327,7 @@ X_val, y_val = X[150:], y[150:]
 results = evaluate_depth(X_train, y_train, X_val, y_val, [2, 4, 6, 8, 10])
 for depth, metrics in results.items():
     print(f"depth={depth}: train={metrics['train_acc']:.3f}, val={metrics['val_acc']:.3f}")
-```
+```text
 
 **Overfitting signs**: Training accuracy >> validation accuracy. Fix: reduce depth, increase min_samples_split, use pruning, or switch to random forest.
 
@@ -381,12 +382,12 @@ class BaggingClassifier:
         return (np.mean(predictions, axis=0) > 0.5).astype(int)
 
 
-# Test bagging
+## Test bagging
 bag = BaggingClassifier(DecisionTreeClassifier(max_depth=5), n_estimators=50)
 bag.fit(X_train, y_train)
 print(f"Bagging OOB score: {bag.oob_score_:.3f}")
 print(f"Bagging test accuracy: {np.mean(bag.predict(X_val) == y_val):.3f}")
-```
+```text
 
 **Out-of-bag (OOB) error**: Each bootstrap sample leaves out ~37% of data. These out-of-bag samples serve as a built-in validation set, eliminating the need for a separate validation split.
 
@@ -463,12 +464,12 @@ class RandomForestClassifier:
         return np.column_stack([1 - proba_class1, proba_class1])
 
 
-# Test random forest
+## Test random forest
 rf = RandomForestClassifier(n_estimators=50, max_depth=5)
 rf.fit(X_train, y_train)
 rf_preds = rf.predict(X_val)
 print(f"Random Forest accuracy: {np.mean(rf_preds == y_val):.3f}")
-```
+```text
 
 **Random Forest Hyperparameters**:
 
@@ -568,7 +569,7 @@ class RandomForest {
     return this.traverse(x, node.right!);
   }
 }
-```
+```text
 
 ## Summary
 
@@ -684,6 +685,7 @@ d) [-1, 1]
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 08-machine-learning
@@ -693,6 +695,7 @@ d) [-1, 1]
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

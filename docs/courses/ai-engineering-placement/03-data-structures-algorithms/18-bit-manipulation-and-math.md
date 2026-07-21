@@ -19,6 +19,7 @@ Bit manipulation uses individual bits for efficient computation. It is essential
 
 - Binary number system
 - Basic logic gates
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -40,7 +41,7 @@ flowchart LR
     D --> E[Advanced]
     E --> F[Applications]
     F --> G[Interview Prep]
-```
+```text
 
 ## 18.1 Section 1
 
@@ -66,7 +67,7 @@ Section 2 of Bit Manipulation and Math covers essential concepts for AI engineer
 The following code demonstrates fundamental operations:
 
 ```python
-# Bit Manipulation and Math - basic operations
+## Bit Manipulation and Math - basic operations
 def example_function(data):
     """Core functionality"""
     result = []
@@ -78,10 +79,10 @@ def example_function(data):
 def process(item):
     return item * 2
 
-# Test the implementation
+## Test the implementation
 test_data = [1, 2, 3, 4, 5]
 print(example_function(test_data))
-```
+```text
 
 ## 18.3 Section 3
 
@@ -117,7 +118,7 @@ flowchart TD
     B -->|Optimized| D[Advanced Solution]
     C --> E[Result]
     D --> E
-```
+```text
 
 ### Key Techniques
 
@@ -165,14 +166,14 @@ Common interview questions and strategies:
 Let's walk through a typical interview problem:
 
 ```python
-# Interview problem solution
+## Interview problem solution
 def solve_interview_problem(input_data):
     # Step 1: Understand the problem
     # Step 2: Design the approach
     # Step 3: Implement the solution
     # Step 4: Test and optimize
     return optimized_result
-```
+```text
 
 ---
 
@@ -192,7 +193,7 @@ function processBitManipulationandMath(data: number[]): number[] {
 // Usage example
 const result = processBitManipulationandMath([1, 2, 3]);
 console.log(result); // [2, 4, 6]
-```
+```text
 
 ---
 
@@ -453,6 +454,7 @@ d) Option D - Fourth choice
 **Hard** - Advanced exercise combining bit manipulation and math with other techniques
 
 **Hard** - Challenging exercise requiring bit manipulation and math opt
+
 ## Revision Notes
 
 - & = AND, | = OR, ^ = XOR, ~ = NOT
@@ -460,6 +462,7 @@ d) Option D - Fourth choice
 - XOR: a ^ a = 0, a ^ 0 = a
 - n & (n-1) clears lowest set bit
 - Used for subset enumeration and optimization
+
 ## Placement Section
 
 ### Top 10 Interview Questions

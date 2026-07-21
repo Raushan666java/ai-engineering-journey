@@ -13,12 +13,13 @@
 
 ## Introduction
 
-11-llms-prompt-engineering is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding cost and latency optimization is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering cost and latency optimization.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -46,7 +47,7 @@ flowchart LR
     I --> J[Track Usage]
     J --> K[Update Budget]
     K --> L[Return Response]
-```
+```text
 
 ## 8.1 Cost Drivers
 
@@ -102,7 +103,7 @@ def calculate_cost(
 
 print(json.dumps(calculate_cost("gpt-4o", 2000, 500), indent=2))
 print(json.dumps(calculate_cost("gpt-4o-mini", 2000, 500), indent=2))
-```
+```text
 
 ### 8.1.2 Cost Comparison Across Models
 
@@ -118,7 +119,7 @@ def compare_model_costs(input_tokens: int, output_tokens: int) -> None:
 
 
 compare_model_costs(10000, 2000)
-```
+```text
 
 ### 8.1.3 Hidden Cost Drivers
 
@@ -171,7 +172,7 @@ analyzer.record_call(1000, 200)
 analyzer.record_call(1500, 300)
 analyzer.record_retry(500)
 print(json.dumps(analyzer.summary(), indent=2))
-```
+```text
 
 ## 8.2 Token Optimization
 
@@ -200,7 +201,7 @@ compressed = compress_system_prompt(original_prompt)
 print(f"Original length: {len(original_prompt)} chars")
 print(f"Compressed length: {len(compressed)} chars")
 print(f"Compressed: {compressed}")
-```
+```text
 
 ### 8.2.2 Output Length Control
 
@@ -225,7 +226,7 @@ def create_length_constrained_request(
     }
 
 
-# Token budget calculator
+## Token budget calculator
 def estimate_token_budget(text: str) -> int:
     """Rough estimation: ~4 chars per token for English."""
     return len(text) // 4
@@ -247,8 +248,10 @@ def optimize_output_strategy(
 
 
 print(optimize_output_strategy("Explain quantum computing.", 5))
-```
+```text
 
+
+## Overview
 ### 8.2.3 Prompt Template Optimization
 
 Minimize system prompt size by keeping only essential instructions.
@@ -304,7 +307,7 @@ optimizer = PromptTemplateOptimizer()
 optimizer.register_template("qa", "You are a Q&A assistant. Be accurate. Be concise.")
 optimizer.register_template("summary", "You are a summarizer. Be accurate. Be concise.")
 print(optimizer.estimate_savings(10000))
-```
+```text
 
 ### 8.2.4 Dynamic Prompt Truncation
 
@@ -355,7 +358,7 @@ docs = ["A" * 5000, "B" * 5000, "C" * 5000]
 query = "What is the capital of France?"
 fitted = smart_context_fit(docs, query, 2000)
 print(f"Fitted context length: {len(fitted)} chars")
-```
+```text
 
 ## 8.3 Caching Strategies
 
@@ -417,19 +420,21 @@ class ExactMatchCache:
 cache = ExactMatchCache(ttl_seconds=3600)
 msgs = [{"role": "user", "content": "What is 2+2?"}]
 
-# First call — cache miss
+## First call — cache miss
 first = cache.get(msgs, "gpt-4o-mini")
 print(f"First get (miss): {first}")
 
-# Set cache
+## Set cache
 cache.set(msgs, "4", "gpt-4o-mini")
 
-# Second call — cache hit
+## Second call — cache hit
 second = cache.get(msgs, "gpt-4o-mini")
 print(f"Second get (hit): {second}")
 print(f"Stats: {cache.stats()}")
-```
+```text
 
+
+## Overview
 ### 8.3.2 Semantic Cache
 
 Semantic caching matches queries based on meaning rather than exact text, using embeddings.
@@ -470,7 +475,7 @@ class SemanticCache:
         return {"size": len(self.entries), "threshold": self.similarity_threshold}
 
 
-# Simulated embeddings
+## Simulated embeddings
 sem_cache = SemanticCache(similarity_threshold=0.9)
 emb1 = np.array([1.0, 0.0, 0.0])
 emb2 = np.array([0.99, 0.01, 0.01])  # Very similar
@@ -481,8 +486,10 @@ found = sem_cache.find_similar(emb2)
 print(f"Similar query found: {found}")
 not_found = sem_cache.find_similar(emb3)
 print(f"Dissimilar query found: {not_found}")
-```
+```text
 
+
+## Overview
 ### 8.3.3 Layered Caching
 
 Combine exact and semantic caching for optimal coverage.
@@ -509,10 +516,12 @@ class LayeredCache:
 
 
 layered = LayeredCache(exact_ttl=600, semantic_threshold=0.92)
-# Usage: layered.get(messages, embedding, "gpt-4o-mini")
+## Usage: layered.get(messages, embedding, "gpt-4o-mini")
 print(f"Layered cache ready. Exact TTL: {layered.exact_cache.ttl}")
-```
+```text
 
+
+## Overview
 ### 8.3.4 Cache Invalidation
 
 ```python
@@ -570,7 +579,7 @@ invalidator.record_access("key1")
 invalidator.record_access("key2")
 invalidator.invalidate_by_pattern(dummy_cache, "model-")
 print(f"After pattern invalidation: {dummy_cache}")
-```
+```text
 
 ## 8.4 Batching
 
@@ -615,7 +624,7 @@ batcher = RequestBatcher(max_batch_size=5)
 texts = ["Article about AI", "Article about ML", "Article about DL"]
 combined = batcher.batch_summarize(texts, "Summarize each text in one sentence.")
 print(f"Combined prompt length: {len(combined)} chars")
-```
+```text
 
 ### 8.4.2 Prompt Packing
 
@@ -645,7 +654,7 @@ Labels:"""
 items = ["Great product!", "Terrible service", "It was okay"]
 batches = pack_classification_batch(items, ["positive", "negative", "neutral"])
 print(batches[0])
-```
+```text
 
 ### 8.4.3 Inference Batching (Server-Side)
 
@@ -688,7 +697,7 @@ class InferenceBatcher:
         }
 
 
-# Simulated model
+## Simulated model
 def dummy_model(batch: List[str]) -> List[str]:
     time.sleep(0.1 * len(batch))  # Simulate linear scaling
     return [f"response_{i}" for i in range(len(batch))]
@@ -697,7 +706,7 @@ def dummy_model(batch: List[str]) -> List[str]:
 batcher = InferenceBatcher(dummy_model, max_batch_size=10)
 results = batcher.benchmark(["a"] * 20)
 print(results)
-```
+```text
 
 ## 8.5 Latency Management
 
@@ -745,7 +754,7 @@ profiles = [
 for p in profiles:
     model = select_model(p)
     print(f"Complexity={p.complexity}, Budget={p.latency_budget_ms}ms -> {model}")
-```
+```text
 
 ### 8.5.2 Streaming
 
@@ -787,14 +796,14 @@ class StreamingClient:
 client = StreamingClient(["hello", " world"], 0.1)
 ttft = client.measure_time_to_first_token()
 print(f"Time to first token: {ttft:.3f}s")
-```
+```text
 
 ### 8.5.3 Speculative Decoding
 
 Use a draft model to predict tokens, verified by the target model for correctness.
 
 ```python
-# Conceptual speculative decoding
+## Conceptual speculative decoding
 class SpeculativeDecoder:
     def __init__(self, draft_model, target_model):
         self.draft = draft_model
@@ -831,8 +840,10 @@ class MockTargetModel:
 decoder = SpeculativeDecoder(MockDraftModel(), MockTargetModel())
 output = decoder.decode("What is the capital of France?")
 print(f"Speculative output: {output}")
-```
+```text
 
+
+## Overview
 ### 8.5.4 Response Trimming
 
 Reduce output tokens by enforcing concise responses.
@@ -853,7 +864,7 @@ def create_concise_prompt(original_prompt: str) -> str:
 
 long_response = "The capital of France is Paris. It is a beautiful city located on the Seine River. The Eiffel Tower is a famous landmark."
 print(f"Trimmed: {trim_response(long_response, 2)}")
-```
+```text
 
 ## 8.6 Budget Monitoring
 
@@ -940,7 +951,7 @@ tracker.record("gpt-4o-mini", 200000, 40000)
 print(f"Monthly cost: ${tracker.monthly_cost()}")
 print(f"Budget remaining: ${tracker.budget_remaining()}")
 print(f"Top models: {tracker.top_models_by_cost()}")
-```
+```text
 
 ### 8.6.2 Alerting System
 
@@ -987,7 +998,7 @@ class BudgetAlertSystem:
 alert_system = BudgetAlertSystem(thresholds=[0.5, 0.75, 0.9, 1.0])
 alerts = alert_system.check_budget(tracker)
 print(f"Alerts: {alerts}")
-```
+```text
 
 ### 8.6.3 Cost Attribution
 
@@ -1031,7 +1042,7 @@ class AttributionTracker:
 
 attribution = AttributionTracker()
 print("Attribution tracker ready")
-```
+```text
 
 ## 8.7 Practical Optimization Checklist
 
@@ -1067,7 +1078,7 @@ audit.add_check("Set max_tokens constraints", True, 0)
 audit.add_check("Monitor usage with alerts", True, 0)
 
 print(json.dumps(audit.report(), indent=2))
-```
+```text
 
 ## Summary
 
@@ -1276,6 +1287,7 @@ Answer: C
 4. Design a model router that selects between gpt-4o-mini, gpt-4o, and claude-3-haiku based on task complexity, latency requirements, and remaining daily budget. Simulate 24 hours of traffic.
 
 5. Implement a budget monitoring dashboard that tracks daily spend, projects monthly cost, and sends alerts at configurable thresholds. Include cost attribution by feature 
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 11-llms-prompt-engineering
@@ -1285,6 +1297,7 @@ Answer: C
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

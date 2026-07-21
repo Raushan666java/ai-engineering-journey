@@ -13,12 +13,13 @@
 
 ## Introduction
 
-05-fastapi-backend is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding error handling and logging is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering error handling and logging.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart LR
     E --> F[Log Aggregation]
     F --> G[Monitoring]
     G --> H[Error Recovery]
-```
+```text
 
 ## 9.1 Error Handling Strategy
 
@@ -55,20 +56,20 @@ from fastapi.responses import JSONResponse
 
 app = FastAPI()
 
-# Consistent error response format
-# {
-#   "error": {
-#     "code": "VALIDATION_ERROR",
-#     "message": "The request contains invalid fields",
-#     "details": [
-#       {"field": "email", "message": "Invalid email format", "code": "invalid_format"}
-#     ],
-#     "request_id": "req_abc123",
-#     "timestamp": "2025-01-15T10:30:00Z"
-#   }
-# }
+## Consistent error response format
+## {
+##   "error": {
+##     "code": "VALIDATION_ERROR",
+##     "message": "The request contains invalid fields",
+##     "details": [
+##       {"field": "email", "message": "Invalid email format", "code": "invalid_format"}
+##     ],
+##     "request_id": "req_abc123",
+##     "timestamp": "2025-01-15T10:30:00Z"
+##   }
+## }
 
-# Error codes enum
+## Error codes enum
 from enum import Enum
 
 class ErrorCode(str, Enum):
@@ -81,7 +82,7 @@ class ErrorCode(str, Enum):
     INTERNAL_ERROR = "INTERNAL_ERROR"
     SERVICE_UNAVAILABLE = "SERVICE_UNAVAILABLE"
     DEPENDENCY_FAILURE = "DEPENDENCY_FAILURE"
-```
+```text
 
 **Error handling principles**:
 - Never expose stack traces to clients
@@ -154,7 +155,7 @@ class RateLimitedException(AppException):
             status_code=status.HTTP_429_TOO_MANY_REQUESTS,
         )
 
-# Usage in endpoints
+## Usage in endpoints
 @app.get("/users/{user_id}")
 async def get_user(user_id: int, db: Session = Depends(get_db)):
     user = db.query(User).filter(User.id == user_id).first()
@@ -168,7 +169,7 @@ async def create_user(user: UserCreate, db: Session = Depends(get_db)):
     if existing:
         raise ConflictException("User", "email", user.email)
     return create_user_in_db(db, user)
-```
+```text
 
 ## 9.3 Global Exception Handlers
 
@@ -183,7 +184,7 @@ import logging
 
 app = FastAPI()
 
-# Request ID middleware
+## Request ID middleware
 @app.middleware("http")
 async def add_request_id(request: Request, call_next):
     request_id = str(uuid.uuid4())
@@ -192,7 +193,7 @@ async def add_request_id(request: Request, call_next):
     response.headers["X-Request-ID"] = request_id
     return response
 
-# Handle custom AppException
+## Handle custom AppException
 @app.exception_handler(AppException)
 async def app_exception_handler(request: Request, exc: AppException):
     return JSONResponse(
@@ -209,7 +210,7 @@ async def app_exception_handler(request: Request, exc: AppException):
         headers={"X-Error-Code": exc.code},
     )
 
-# Handle FastAPI HTTPException
+## Handle FastAPI HTTPException
 @app.exception_handler(HTTPException)
 async def custom_http_exception_handler(request: Request, exc: HTTPException):
     return JSONResponse(
@@ -225,7 +226,7 @@ async def custom_http_exception_handler(request: Request, exc: HTTPException):
         headers=exc.headers,
     )
 
-# Handle unhandled exceptions (500)
+## Handle unhandled exceptions (500)
 @app.exception_handler(Exception)
 async def global_exception_handler(request: Request, exc: Exception):
     # Log the full error for debugging
@@ -251,7 +252,7 @@ async def global_exception_handler(request: Request, exc: Exception):
         },
     )
 
-# Handle Pydantic validation errors
+## Handle Pydantic validation errors
 from fastapi.exceptions import RequestValidationError
 
 @app.exception_handler(RequestValidationError)
@@ -276,7 +277,7 @@ async def validation_exception_handler(request: Request, exc: RequestValidationE
             }
         },
     )
-```
+```text
 
 ## 9.4 Validation Error Handling
 
@@ -288,7 +289,7 @@ from fastapi import FastAPI, Request
 from fastapi.exceptions import RequestValidationError
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
-# Custom validation error formatter
+## Custom validation error formatter
 def format_validation_errors(errors: list) -> list:
     formatted = []
     for error in errors:
@@ -320,7 +321,7 @@ async def validation_handler(request: Request, exc: RequestValidationError):
         },
     )
 
-# Example model with validation
+## Example model with validation
 class CreateItemRequest(BaseModel):
     name: str
     price: float
@@ -340,23 +341,23 @@ class CreateItemRequest(BaseModel):
             raise ValueError("Price must be positive")
         return round(v, 2)
 
-# Detailed validation error response
-# HTTP 422
-# {
-#   "error": {
-#     "code": "VALIDATION_ERROR",
-#     "message": "Request validation failed",
-#     "details": [
-#       {
-#         "field": "body.price",
-#         "message": "Price must be positive",
-#         "code": "value_error",
-#         "input": -10.0
-#       }
-#     ]
-#   }
-# }
-```
+## Detailed validation error response
+## HTTP 422
+## {
+##   "error": {
+##     "code": "VALIDATION_ERROR",
+##     "message": "Request validation failed",
+##     "details": [
+##       {
+##         "field": "body.price",
+##         "message": "Price must be positive",
+##         "code": "value_error",
+##         "input": -10.0
+##       }
+##     ]
+##   }
+## }
+```text
 
 ## 9.5 Structured Logging
 
@@ -369,7 +370,7 @@ from datetime import datetime, timezone
 from typing import Optional
 from pythonjsonlogger import jsonlogger
 
-# JSON log formatter
+## JSON log formatter
 class CustomJsonFormatter(jsonlogger.JsonFormatter):
     def add_fields(self, log_record, record, message_dict):
         super().add_fields(log_record, record, message_dict)
@@ -380,7 +381,7 @@ class CustomJsonFormatter(jsonlogger.JsonFormatter):
         if hasattr(record, "request_id"):
             log_record["request_id"] = record.request_id
 
-# Configure logging
+## Configure logging
 logger = logging.getLogger("myapp")
 logger.setLevel(logging.INFO)
 
@@ -390,7 +391,7 @@ handler.setFormatter(CustomJsonFormatter(
 ))
 logger.addHandler(handler)
 
-# Structured logging utility
+## Structured logging utility
 class StructuredLogger:
     def __init__(self, name: str):
         self.logger = logging.getLogger(name)
@@ -420,7 +421,7 @@ class StructuredLogger:
 
 log = StructuredLogger("myapp")
 
-# Usage in middleware
+## Usage in middleware
 @app.middleware("http")
 async def log_requests(request: Request, call_next):
     start = time.time()
@@ -437,7 +438,7 @@ async def log_requests(request: Request, call_next):
     )
     return response
 
-# Usage in endpoints
+## Usage in endpoints
 @app.get("/users/{user_id}")
 async def get_user(user_id: int, db: Session = Depends(get_db)):
     log.info("fetching_user", user_id=user_id, request_id=get_request_id())
@@ -451,17 +452,17 @@ async def get_user(user_id: int, db: Session = Depends(get_db)):
     except Exception as e:
         log.error("failed_to_fetch_user", user_id=user_id, error=str(e))
         raise
-```
+```text
 
 ## 9.6 Log Aggregation
 
 Centralize logs for search, analysis, and alerting.
 
 ```python
-# File logging for production
+## File logging for production
 import logging.handlers
 
-# Rotating file handler
+## Rotating file handler
 file_handler = logging.handlers.RotatingFileHandler(
     "logs/app.log",
     maxBytes=10_000_000,  # 10MB
@@ -470,35 +471,35 @@ file_handler = logging.handlers.RotatingFileHandler(
 file_handler.setFormatter(CustomJsonFormatter())
 logger.addHandler(file_handler)
 
-# ELK Stack integration (Filebeat ships logs to Logstash/Elasticsearch)
-# filebeat.yml:
-# filebeat.inputs:
-#   - type: log
-#     paths:
-#       - /var/log/app/*.log
-# output.elasticsearch:
-#   hosts: ["localhost:9200"]
+## ELK Stack integration (Filebeat ships logs to Logstash/Elasticsearch)
+## filebeat.yml:
+## filebeat.inputs:
+##   - type: log
+##     paths:
+##       - /var/log/app/*.log
+## output.elasticsearch:
+##   hosts: ["localhost:9200"]
 
-# Loki integration (promtail ships logs)
-# promtail.yml:
-# scrape_configs:
-#   - job_name: myapp
-#     static_configs:
-#       - targets: [localhost]
-#         labels:
-#           job: myapp
-#           __path__: /var/log/app/*.log
+## Loki integration (promtail ships logs)
+## promtail.yml:
+## scrape_configs:
+##   - job_name: myapp
+##     static_configs:
+##       - targets: [localhost]
+##         labels:
+##           job: myapp
+##           __path__: /var/log/app/*.log
 
-# Log levels for different environments
+## Log levels for different environments
 import os
 
 LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO").upper()
 logger.setLevel(getattr(logging, LOG_LEVEL, logging.INFO))
 
-# Development: DEBUG, detailed, human-readable
-# Staging: INFO, structured JSON
-# Production: WARNING, structured JSON, log only warnings and errors
-```
+## Development: DEBUG, detailed, human-readable
+## Staging: INFO, structured JSON
+## Production: WARNING, structured JSON, log only warnings and errors
+```text
 
 **Log aggregation best practices**:
 - Always include correlation ID (request_id) in logs
@@ -518,7 +519,7 @@ import time
 
 app = FastAPI()
 
-# Prometheus metrics
+## Prometheus metrics
 REQUEST_COUNT = Counter(
     "http_requests_total",
     "Total HTTP requests",
@@ -567,7 +568,7 @@ async def metrics_middleware(request: Request, call_next):
 async def metrics():
     return PlainTextResponse(generate_latest())
 
-# Health check endpoint
+## Health check endpoint
 @app.get("/health")
 async def health():
     return {
@@ -581,14 +582,14 @@ async def health():
         }
     }
 
-# Readiness probe
+## Readiness probe
 @app.get("/ready")
 async def ready():
     db_ok = await check_database()
     if not db_ok:
         raise HTTPException(status_code=503, detail="Database not ready")
     return {"status": "ready"}
-```
+```text
 
 ## 9.8 Error Recovery
 
@@ -599,7 +600,7 @@ import asyncio
 from functools import wraps
 from typing import Type, Tuple
 
-# Retry decorator with exponential backoff
+## Retry decorator with exponential backoff
 def retry(
     max_retries: int = 3,
     base_delay: float = 1.0,
@@ -623,7 +624,7 @@ def retry(
         return wrapper
     return decorator
 
-# Usage
+## Usage
 @retry(max_retries=3, exceptions=(httpx.TimeoutException, ConnectionError))
 async def fetch_external_data(url: str):
     async with httpx.AsyncClient() as client:
@@ -631,7 +632,7 @@ async def fetch_external_data(url: str):
         response.raise_for_status()
         return response.json()
 
-# Circuit breaker pattern
+## Circuit breaker pattern
 class CircuitBreaker:
     def __init__(self, failure_threshold: int = 5, recovery_timeout: float = 30.0):
         self.failure_threshold = failure_threshold
@@ -677,7 +678,7 @@ async def get_external_data():
     except Exception as e:
         log.error("External API call failed", error=str(e))
         raise ServiceUnavailableException("External service unavailable")
-```
+```text
 
 ---
 
@@ -723,7 +724,7 @@ function errorHandler(err: any, req: any, res: any, next: any) {
     },
   });
 }
-```
+```text
 
 ---
 
@@ -893,6 +894,7 @@ d) 3000
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 05-fastapi-backend
@@ -902,6 +904,7 @@ d) 3000
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

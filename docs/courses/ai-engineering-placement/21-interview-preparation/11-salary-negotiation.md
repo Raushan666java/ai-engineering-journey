@@ -13,12 +13,13 @@
 
 ## Introduction
 
-21-interview-preparation is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding salary negotiation is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering salary negotiation.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -39,7 +40,7 @@ flowchart LR
     C --> D[Negotiation Tactics]
     D --> E[Competing Offers]
     E --> F[Benefits & Relocation]
-```
+```text
 
 ## 11.1 Market Research
 
@@ -94,12 +95,12 @@ def estimate_market_range(role: str, yoe: int, location: str) -> dict:
     adjusted = {k: round(v * mult, -3) for k, v in range_data.items()}
     return {"role": role, "yoe": yoe, "location": location, **adjusted}
 
-# Example
+## Example
 result = estimate_market_range("Senior Backend Engineer", 6, "Seattle")
 print(f"{result['role']} ({result['yoe']} yrs, {result['location']})")
 print(f"Base salary range: ${result['low']:,} - ${result['high']:,}")
 print(f"Median: ${result['median']:,}")
-```
+```text
 
 **Company stage matters**: Early-stage startups (<50 employees) pay lower base but offer significant equity upside (4-year vest with 1-year cliff). Mid-stage ($10M-$100M funding) balance base and equity. Public companies (FAANG, Microsoft) have the highest total comp with liquid RSUs. Late-stage pre-IPO (Stripe, Databricks, OpenAI) offer the highest risk/reward — equity at $0.01/share could 10x at IPO.
 
@@ -138,13 +139,13 @@ def calculate_total_comp(base: float, bonus_pct: float, rsu_grant: float,
         }
     }
 
-# Compare two offers
+## Compare two offers
 offer_a = calculate_total_comp(base=180000, bonus_pct=0.10, rsu_grant=200000, sign_on=30000)
 offer_b = calculate_total_comp(base=210000, bonus_pct=0.05, rsu_grant=80000, sign_on=10000)
 
 print("Offer A (Startup):", offer_a)
 print("\nOffer B (Public Co):", offer_b)
-```
+```text
 
 **Sign-on bonus**: One-time cash payment to accept the offer. Typical range: $10K-$50K for IC roles, $50K-$200K+ for senior/staff. Often repayable if you leave within 1 year (prorated clawback). Negotiate for this even if they say "no budget" — signing bonuses are often separate from comp bands.
 
@@ -157,10 +158,10 @@ print("\nOffer B (Public Co):", offer_b)
 Comparing offers requires looking beyond the headline number. A $220K offer at one company may be worse than a $190K offer at another.
 
 **Total compensation formula**:
-```
+```text
 Year 1 TC = Base + Sign-on Bonus + Year 1 Bonus (prorated if applicable) + Year 1 RSUs (vested portion)
 Year 2 TC = Base + Bonus + Year 2 RSUs (vested portion)
-```
+```text
 
 Always model out 4 years to account for RSU vesting schedules. A front-loaded offer (large sign-on, big initial RSU cliff) vs a back-loaded one (big refreshers later) changes your effective comp.
 
@@ -196,7 +197,7 @@ timeline = model_comp_timeline(
 )
 for entry in timeline:
     print(f"Year {entry['Year']}: ${entry['Total']:,} (cum: ${entry['Cumulative']:,})")
-```
+```text
 
 **Refinancing risk**: If you leave before your RSUs fully cliff, you forfeit unvested shares. This is a real cost. A $400K grant over 4 years means you lose $100K/year of unvested compensation if you leave early. Model what happens if you stay 1 year, 2 years, 3 years.
 
@@ -244,14 +245,14 @@ print(f"Target: ${negotiation['target']:,}")
 print(f"Ask range: ${negotiation['initial_ask']:,} - ${negotiation['max_ask']:,}")
 print(f"Likely settlement: ${negotiation['likely_settlement']:,}")
 print(f"Gain vs initial offer: +${negotiation['delta']:,}/yr")
-```
+```text
 
 **The silence tactic**: After stating your number, stop talking. Don't fill the silence with justification. The next person to speak loses. Recruiters are trained to wait you out. Count to 10 in your head. If they still don't respond, say "I'd love to make this work. Is there flexibility in the budget?"
 
 **Pacing**: Negotiate all offers simultaneously. Don't accept or reject before you have all offers in hand. Most companies will give you 1-2 weeks to decide. If you need more time, ask: "I have a few more interviews this week. Can we talk on [date]?" Most will accommodate.
 
 **The email template approach**:
-```
+```text
 Subject: Offer Follow-up — [Role], [Company]
 
 Hi [Recruiter],
@@ -266,7 +267,7 @@ I'm very interested in joining [Company] and believe we can find a number that w
 
 Best,
 [Name]
-```
+```text
 
 ---
 
@@ -315,7 +316,7 @@ competing = evaluate_competing_offers([
 ])
 for o in competing["offers"]:
     print(f"{o['name']}: ${o['tc']:,} (vs median: ${o['vs_median']:+}, vs max: ${o['vs_max']:+})")
-```
+```text
 
 **Exploding offers**: Some companies pressure you with short deadlines (48-72 hours). Don't panic. Say: "I need the full week to make this important decision. Can we extend the deadline?" If they refuse, consider whether you want to work at a company that applies high-pressure tactics.
 
@@ -383,7 +384,7 @@ benefits = {
 result = calculate_benefits_value(180000, benefits)
 for k, v in result.items():
     print(f"{k}: ${v:,}")
-```
+```text
 
 **Other benefits to ask about**: Stock purchase plans (ESPP) at 15% discount (typical max 10-15% of salary), parental leave (12-20 weeks vs minimal), sabbatical (every 4-5 years), professional development budget ($2K-$10K/year), gym/wellness stipend, commuter benefits, meal subsidies, and cell phone/internet reimbursement.
 
@@ -867,6 +868,7 @@ d) Only negotiating with companies that bracket their offers
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 21-interview-preparation
@@ -876,6 +878,7 @@ d) Only negotiating with companies that bracket their offers
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

@@ -19,6 +19,7 @@ Hash maps provide O(1) average-case lookup, insertion, and deletion. They are th
 
 - Array basics
 - Basic understanding of hashing
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -50,7 +51,7 @@ flowchart LR
     E --> O[Subarray Sum]
     F --> P[Group Anagrams]
     F --> Q[Isomorphic Strings]
-```
+```text
 
 ## 6.1 Hash Map Fundamentals
 
@@ -71,7 +72,7 @@ def simple_hash(key, table_size):
 
 print(simple_hash("hello", 16))  # Example: 9
 print(simple_hash("world", 16))  # Example: 2
-```
+```text
 
 ### Collision Resolution
 
@@ -110,7 +111,7 @@ class HashMapChaining:
                 del self.buckets[idx][i]
                 return
         raise KeyError(key)
-```
+```text
 
 **Open Addressing (Linear Probing):** When a collision occurs, probe the next available bucket.
 
@@ -141,7 +142,7 @@ class HashMapLinearProbing:
                 return self.values[idx]
             idx = (idx + 1) % self.size
         raise KeyError(key)
-```
+```text
 
 ### Load Factor and Rehashing
 
@@ -167,9 +168,11 @@ def char_frequency(s):
     return freq
 
 print(char_frequency("hello world"))
-# {'h': 1, 'e': 1, 'l': 3, 'o': 2, ' ': 1, 'w': 1, 'r': 1, 'd': 1}
-```
+## {'h': 1, 'e': 1, 'l': 3, 'o': 2, ' ': 1, 'w': 1, 'r': 1, 'd': 1}
+```text
 
+
+## Overview
 ### Word Frequency
 
 ```python
@@ -182,9 +185,11 @@ def word_frequency(text):
 
 text = "the quick brown fox jumps over the lazy dog the quick"
 print(word_frequency(text))
-# {'the': 3, 'quick': 2, 'brown': 1, 'fox': 1, 'jumps': 1, 'over': 1, 'lazy': 1, 'dog': 1}
-```
+## {'the': 3, 'quick': 2, 'brown': 1, 'fox': 1, 'jumps': 1, 'over': 1, 'lazy': 1, 'dog': 1}
+```text
 
+
+## Overview
 ### Majority Element (Boyer-Moore Voting)
 
 Find the element that appears more than n/2 times. While Boyer-Moore uses O(1) space, the hash map approach is straightforward:
@@ -201,7 +206,7 @@ def majority_element_hash(nums):
 
 nums = [2, 2, 1, 1, 1, 2, 2]
 print(majority_element_hash(nums))  # 2
-```
+```text
 
 ### Frequency Counting Patterns
 
@@ -236,7 +241,7 @@ print(f"Intersection: {inter}")      # {4, 5}
 print(f"Union: {uni}")               # {1, 2, 3, 4, 5, 6, 7, 8}
 print(f"Difference: {diff}")         # {1, 2, 3}
 print(f"Symmetric diff: {sym}")      # {1, 2, 3, 6, 7, 8}
-```
+```text
 
 ### Intersection of Two Arrays
 
@@ -252,7 +257,7 @@ def intersection_of_arrays(nums1, nums2):
 nums1 = [1, 2, 2, 1]
 nums2 = [2, 2]
 print(intersection_of_arrays(nums1, nums2))  # [2]
-```
+```text
 
 ### Longest Consecutive Sequence
 
@@ -274,7 +279,7 @@ def longest_consecutive(nums):
 
 nums = [100, 4, 200, 1, 3, 2]
 print(longest_consecutive(nums))  # 4 (sequence: 1, 2, 3, 4)
-```
+```text
 
 **Why it works:** We only start counting from the smallest element of each sequence (no predecessor in the set). This ensures each element is visited at most twice, giving O(n) total.
 
@@ -307,7 +312,7 @@ def two_sum(nums, target):
 
 nums = [2, 7, 11, 15]
 print(two_sum(nums, 9))  # [0, 1]
-```
+```text
 
 **Key insight:** As we iterate, we store each number's index. The next number checks if its complement has already been stored. This avoids needing to sort and handles unsorted input in one pass.
 
@@ -329,7 +334,7 @@ def subarray_sum(nums, k):
 
 nums = [1, 1, 1]
 print(subarray_sum(nums, 2))  # 2 ([1,1] at index 0-1, and [1,1] at index 1-2)
-```
+```text
 
 **How it works:** We track the cumulative prefix sum at each position. If `prefix_sum - k` has been seen before, that means the subarray between those two points sums to k. The hash map stores how many times each prefix sum has occurred.
 
@@ -346,7 +351,7 @@ def contains_duplicate(nums):
 
 print(contains_duplicate([1, 2, 3, 1]))  # True
 print(contains_duplicate([1, 2, 3, 4]))  # False
-```
+```text
 
 ### Constant-Time Lookup Patterns
 
@@ -377,8 +382,8 @@ def group_anagrams(strs):
 
 strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
 print(group_anagrams(strs))
-# [['eat', 'tea', 'ate'], ['tan', 'nat'], ['bat']]
-```
+## [['eat', 'tea', 'ate'], ['tan', 'nat'], ['bat']]
+```text
 
 **Optimization:** Instead of sorting (O(k log k)), count characters as a tuple of 26 counts for O(k) key computation.
 
@@ -393,8 +398,10 @@ def group_anagrams_optimized(strs):
     return list(groups.values())
 
 print(group_anagrams_optimized(["eat", "tea", "tan", "ate", "nat", "bat"]))
-```
+```text
 
+
+## Overview
 ### Isomorphic Strings
 
 Two strings are isomorphic if the characters in one can be replaced to get the other, preserving order.
@@ -419,7 +426,7 @@ def is_isomorphic(s, t):
 print(is_isomorphic("egg", "add"))   # True
 print(is_isomorphic("foo", "bar"))   # False
 print(is_isomorphic("paper", "title"))  # True
-```
+```text
 
 Two hash maps enforce a bijection: each character in s maps to exactly one character in t, and vice versa.
 
@@ -445,7 +452,7 @@ def word_pattern(pattern, s):
 
 print(word_pattern("abba", "dog cat cat dog"))  # True
 print(word_pattern("abba", "dog cat cat fish"))  # False
-```
+```text
 
 ### Pattern Matching Comparison
 
@@ -514,7 +521,7 @@ cache.put(2, 2)
 print(cache.get(1))    # 1
 cache.put(3, 3)        # evicts key 2
 print(cache.get(2))    # -1
-```
+```text
 
 ### Hash Map vs. Alternative Data Structures
 
@@ -539,15 +546,15 @@ print(cache.get(2))    # -1
 ```python
 from collections import defaultdict
 
-# Default dict for clean frequency counting
+## Default dict for clean frequency counting
 freq = defaultdict(int)
 freq["a"] += 1  # No KeyError, defaults to 0 then increments
 
-# Counter class for convenience
+## Counter class for convenience
 from collections import Counter
 c = Counter("hello world")
 print(c.most_common(3))  # [('l', 3), ('o', 2), ('h', 1)]
-```
+```text
 
 ## TypeScript Parallel
 
@@ -566,7 +573,7 @@ function charFrequency(s: string): Map<string, number> {
 
 const freq = charFrequency("hello world");
 console.log(freq); // Map(8) { 'h' => 1, 'e' => 1, 'l' => 3, 'o' => 2, ' ' => 1, 'w' => 1, 'r' => 1, 'd' => 1 }
-```
+```text
 
 ### Two Sum with Type Safety
 
@@ -584,7 +591,7 @@ function twoSum(nums: number[], target: number): number[] | null {
 }
 
 console.log(twoSum([2, 7, 11, 15], 9)); // [0, 1]
-```
+```text
 
 ### Group Anagrams
 
@@ -602,7 +609,7 @@ function groupAnagrams(strs: string[]): string[][] {
 }
 
 console.log(groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]));
-```
+```text
 
 ### Longest Consecutive Sequence
 
@@ -625,7 +632,7 @@ function longestConsecutive(nums: number[]): number {
 }
 
 console.log(longestConsecutive([100, 4, 200, 1, 3, 2])); // 4
-```
+```text
 
 ### TypeScript vs Python Hash Maps
 
@@ -800,7 +807,7 @@ def num_jewels_in_stones(jewels, stones):
 
 print(num_jewels_in_stones("aA", "aAAbbbb"))  # 3
 print(num_jewels_in_stones("z", "ZZ"))        # 0
-```
+```text
 
 ### Exercise 2 (Medium): Top K Frequent Elements
 
@@ -817,7 +824,7 @@ def top_k_frequent(nums, k):
 nums = [1, 1, 1, 2, 2, 3]
 print(top_k_frequent(nums, 2))  # [1, 2]
 
-# Bucket sort approach for O(n)
+## Bucket sort approach for O(n)
 def top_k_frequent_bucket(nums, k):
     count = Counter(nums)
     bucket = [[] for _ in range(len(nums) + 1)]
@@ -832,8 +839,10 @@ def top_k_frequent_bucket(nums, k):
     return result
 
 print(top_k_frequent_bucket([1, 1, 1, 2, 2, 3], 2))  # [1, 2]
-```
+```text
 
+
+## Overview
 ### Exercise 3 (Medium): Valid Sudoku
 
 Determine if a 9x9 Sudoku board is valid. Each row, column, and 3x3 sub-box must contain the digits 1-9 without repetition.
@@ -871,7 +880,7 @@ board = [
     [".",".",".",".","8",".",".","7","9"]
 ]
 print(is_valid_sudoku(board))  # True
-```
+```text
 
 ### Exercise 4 (Hard): Longest Substring Without Repeating Characters
 
@@ -891,7 +900,7 @@ def length_of_longest_substring(s):
 print(length_of_longest_substring("abcabcbb"))  # 3 ("abc")
 print(length_of_longest_substring("bbbbb"))     # 1 ("b")
 print(length_of_longest_substring("pwwkew"))    # 3 ("wke")
-```
+```text
 
 ### Exercise 5 (Hard): Minimum Window Substring
 
@@ -928,11 +937,12 @@ def min_window(s, t):
 s = "ADOBECODEBANC"
 t = "ABC"
 print(min_window(s, t))  # "BANC"
-```
+```text
 
 ---
 
 [← Previous: Two Pointers](05-two-pointers.md) | [Next: Linked Lists →](07-linked-
+
 ## Revision Notes
 
 - Hash map: O(1) avg lookup/insert/delete
@@ -940,6 +950,7 @@ print(min_window(s, t))  # "BANC"
 - Collision resolution: chaining vs open addressing
 - Use for frequency counting and two-sum patterns
 - Ordered map for sorted key requirements
+
 ## Placement Section
 
 ### Top 10 Interview Questions

@@ -12,12 +12,13 @@
 
 ## Introduction
 
-13-ai-agents-langgraph is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding introduction to ai agents is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering introduction to ai agents.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -41,7 +42,7 @@ flowchart TD
     F --> B
     C -->|No| G[Final Answer]
     G --> H[Return to User]
-```
+```text
 
 ## 1.1 What is an AI Agent?
 
@@ -137,7 +138,7 @@ agent = SimpleAgent(
 )
 result = agent.run("What is 2+2?")
 print(f"Agent result: {result}")
-```
+```text
 
 ## 1.2 Core Components
 
@@ -166,7 +167,7 @@ Which tool should be used next? If done, say FINAL."""
 
 brain = LLMBrain(lambda p: "I think I should search for information.")
 print(brain.think("What is the weather?"))
-```
+```text
 
 ### 1.2.2 Tools
 
@@ -222,7 +223,7 @@ registry = ToolRegistry()
 registry.register(Tool("search", "Search for information", lambda q: f"Results for {q}", {"q": {"type": "string"}}))
 registry.register(Tool("calculate", "Do math", lambda expr: eval(expr), {"expr": {"type": "string"}}))
 print(registry.get_descriptions())
-```
+```text
 
 ### 1.2.3 Memory
 
@@ -263,7 +264,7 @@ class AgentMemory:
 memory = AgentMemory()
 memory.add_step(AgentStep(thought="I need to search", action="search", observation="Found results"))
 print(memory.get_context())
-```
+```text
 
 ### 1.2.4 Orchestration Loop
 
@@ -297,7 +298,7 @@ class AgentOrchestrator:
 
 orch = AgentOrchestrator(brain, registry, memory)
 print("Agent orchestrator ready")
-```
+```text
 
 ## 1.3 Agent Paradigms
 
@@ -367,7 +368,7 @@ Thought:"""
 
 react = ReActAgent(lambda p: "Thought: I know the answer.\nFinal Answer: The answer is 42.", registry)
 print(react.run("What is the meaning of life?"))
-```
+```text
 
 ### 1.3.2 Plan-and-Execute
 
@@ -414,7 +415,7 @@ Final answer:"""
 
 pe = PlanAndExecuteAgent(lambda p: "1. Search for information\n2. Analyze results\n3. Provide answer", registry)
 print(f"Plan: {pe.plan('Research AI agents')}")
-```
+```text
 
 ### 1.3.3 Reflexion
 
@@ -464,7 +465,7 @@ Score (0-1):"""
 reflexion = ReflexionAgent(lambda p: "0.95", registry)
 result = reflexion.run("Solve the math problem")
 print(f"Reflexion result: {result}")
-```
+```text
 
 ## 1.4 ReAct in Depth
 
@@ -512,7 +513,7 @@ Or final: {{"type": "final", "answer": "..."}}"""
 sreact = StructuredReActAgent(lambda p: '{"type": "final", "answer": "Completed."}', registry)
 result = sreact.run("Complex task")
 print(f"Completed in {result['num_steps']} steps")
-```
+```text
 
 ## 1.5 Basic Agent Implementation
 
@@ -578,7 +579,7 @@ wa = WorkingAgent(agent_tools)
 result = wa.run("Find information about AI agents.", mock_llm)
 print(f"Agent result: {result}")
 print(f"Steps taken: {len(wa.history)}")
-```
+```text
 
 ## 1.6 Agent Evaluation
 
@@ -611,7 +612,7 @@ test_tasks = [
 ]
 eval_result = evaluate_agent(wa, test_tasks, mock_llm)
 print(f"Agent evaluation: {eval_result}")
-```
+```text
 
 ### 1.6.2 Efficiency Metrics
 
@@ -632,7 +633,7 @@ def agent_efficiency(agent, llm_fn, task: str) -> Dict:
 
 
 print(agent_efficiency(wa, mock_llm, "Quick test"))
-```
+```text
 
 ## Summary
 
@@ -873,6 +874,7 @@ Answer: B
 4. Implement an evaluation harness that runs an agent on 10 test tasks and reports success rate, average steps, average latency, and cost. Vary the LLM temperature from 0 to 1 and observe the effect on success rate.
 
 5. Design a custom tool for an agent that can query a RAG system. Show the agent using the RAG tool to answer questions that require retrieving specific d
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 13-ai-agents-langgraph
@@ -882,6 +884,7 @@ Answer: B
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

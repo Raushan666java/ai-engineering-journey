@@ -12,12 +12,13 @@
 
 ## Introduction
 
-22-advanced-ai-agents is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding agent fundamentals harness is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering agent fundamentals harness.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -55,7 +56,7 @@ flowchart LR
     ACT --> RES[Result]
     RES --> EVAL
     EVAL --> REACT
-```
+```text
 
 ## 1.1 The Agent Formula
 
@@ -96,7 +97,7 @@ class Agent {
         })
     }
 }
-```
+```text
 
 ## 1.2 Harness Engineering
 
@@ -204,7 +205,7 @@ class TokenBudgetGuard implements HarnessComponent {
         return text.slice(0, maxChars - 50) + '\n... [truncated]'
     }
 }
-```
+```text
 
 ```python
 from dataclasses import dataclass, field
@@ -246,7 +247,7 @@ class ObservableHarness:
             'success_rate': (total - failures) / total * 100 if total > 0 else 0,
             'avg_duration_ms': round(avg_duration, 2),
         }
-```
+```text
 
 ## 1.3 RL vs ICL Comparison
 
@@ -338,7 +339,7 @@ class ICLAgent {
         this.examples.push(`State: ${state} | Action: ${action} | Outcome: ${outcome}`)
     }
 }
-```
+```text
 
 ```python
 import numpy as np
@@ -358,7 +359,7 @@ def compare_sample_efficiency():
     print(f"ICL examples: {ict_examples_needed}")
     print(f"Efficiency ratio: {efficiency_ratio:.0f}x")
     return efficiency_ratio
-```
+```text
 
 ## 1.4 ReAct Loop with Harness
 
@@ -463,7 +464,7 @@ class CalculatorTool implements Tool {
         return Function(`"use strict"; return (${expr})`)()
     }
 }
-```
+```text
 
 ## 1.5 Ablation Studies
 
@@ -530,7 +531,7 @@ class AblationReporter {
         })
     }
 }
-```
+```text
 
 ## Summary
 
@@ -627,6 +628,7 @@ Add a `web_search` and `calculator` tool to the ReAct agent. Measure how success
 ### Exercise 5: Harness Cost Analysis
 
 Add cost tracking to each harness component. Run 50 tasks and report which component contributes most to total cost and
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 22-advanced-ai-agents
@@ -636,6 +638,7 @@ Add cost tracking to each harness component. Run 50 tasks and report which compo
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

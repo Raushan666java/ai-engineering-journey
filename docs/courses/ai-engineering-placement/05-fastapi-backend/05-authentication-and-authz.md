@@ -13,12 +13,13 @@
 
 ## Introduction
 
-05-fastapi-backend is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding authentication and authz is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering authentication and authz.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart LR
     E --> F[Session Mgmt]
     F --> G[Security Headers]
     G --> H[Testing Auth]
-```
+```text
 
 ## 5.1 Authentication vs Authorization
 
@@ -55,7 +56,7 @@ flowchart LR
     Auth -->|"Who am I?"| JWT[JWT Token]
     JWT -->|"What can I do?"| AuthZ[Authorization]
     AuthZ -->|Role Check| Resource[Protected Resource]
-```
+```text
 
 ```python
 from fastapi import FastAPI, Depends, HTTPException, status
@@ -63,7 +64,7 @@ from fastapi.security import OAuth2PasswordBearer
 
 app = FastAPI()
 
-# OAuth2 scheme — tells Swagger UI to show login button
+## OAuth2 scheme — tells Swagger UI to show login button
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/auth/login")
 
 @app.post("/auth/login")
@@ -79,7 +80,7 @@ async def read_users_me(token: str = Depends(oauth2_scheme)):
     # token is extracted from Authorization: Bearer <token>
     user = decode_token(token)
     return user
-```
+```text
 
 **Design principles**: Authenticate once (login), authorize every request (token validation). Use short-lived access tokens (15 min) with long-lived refresh tokens (7 days) for balance between security and UX.
 
@@ -91,7 +92,7 @@ Never store passwords in plain text. Use bcrypt or argon2.
 from passlib.context import CryptContext
 from pydantic import BaseModel, EmailStr
 
-# Password hashing context
+## Password hashing context
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 def hash_password(password: str) -> str:
@@ -111,7 +112,7 @@ class UserInDB(BaseModel):
     hashed_password: str
     disabled: bool = False
 
-# Registration
+## Registration
 @app.post("/auth/register", status_code=201)
 async def register(user: UserCreate):
     if get_user_by_username(user.username):
@@ -126,14 +127,14 @@ async def register(user: UserCreate):
     await save_user(user_db)
     return {"message": "User created successfully"}
 
-# Login
+## Login
 @app.post("/auth/login")
 async def login(user_cred: UserCreate):
     user = get_user_by_username(user_cred.username)
     if not user or not verify_password(user_cred.password, user.hashed_password):
         raise HTTPException(status_code=401, detail="Invalid credentials")
     return {"access_token": create_access_token(user), "token_type": "bearer"}
-```
+```text
 
 **Password policies**: Minimum 8 characters, require mixed case + numbers + symbols. Use zxcvbn for password strength estimation. Never log passwords or send them in URLs.
 
@@ -146,7 +147,7 @@ from datetime import datetime, timedelta, timezone
 from jose import JWTError, jwt
 from typing import Optional
 
-# Configuration
+## Configuration
 SECRET_KEY = "your-secret-key-here"  # Use environment variable!
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
@@ -181,7 +182,7 @@ def get_current_user(token: str = Depends(oauth2_scheme)) -> UserInDB:
         raise HTTPException(status_code=401, detail="User not found")
     return user
 
-# Token refresh endpoint
+## Token refresh endpoint
 @app.post("/auth/refresh")
 async def refresh_token(refresh_token: str):
     payload = decode_token(refresh_token)
@@ -196,7 +197,7 @@ async def refresh_token(refresh_token: str):
         "refresh_token": create_refresh_token({"sub": username}),
         "token_type": "bearer"
     }
-```
+```text
 
 **JWT best practices**: Keep SECRET_KEY in environment variables. Use short access token expiry. Include minimal claims (sub, exp, type). Never store sensitive data in JWT payload (it is base64-encoded, not encrypted).
 
@@ -212,7 +213,7 @@ from typing import Optional
 
 app = FastAPI()
 
-# OAuth2 scheme — Swagger UI shows "Authorize" button
+## OAuth2 scheme — Swagger UI shows "Authorize" button
 oauth2_scheme = OAuth2PasswordBearer(
     tokenUrl="/auth/token",
     scopes={"me": "Read personal info", "admin": "Admin operations"}
@@ -227,7 +228,7 @@ class TokenData(BaseModel):
     username: Optional[str] = None
     scopes: list[str] = []
 
-# OAuth2 password flow — form-based login
+## OAuth2 password flow — form-based login
 @app.post("/auth/token", response_model=Token)
 async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends()):
     user = get_user_by_username(form_data.username)
@@ -240,7 +241,7 @@ async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(
     )
     return Token(access_token=access_token, token_type="bearer")
 
-# Scope-based dependency
+## Scope-based dependency
 from fastapi.security import SecurityScopes
 
 async def get_current_user_with_scopes(
@@ -271,7 +272,7 @@ async def admin_delete(
 ):
     # Only users with "admin" scope can access
     pass
-```
+```text
 
 ## 5.5 Role-Based Access Control
 
@@ -288,7 +289,7 @@ class UserRole(str, Enum):
     USER = "user"
     GUEST = "guest"
 
-# Permission mapping
+## Permission mapping
 ROLE_PERMISSIONS = {
     UserRole.ADMIN: [
         "users:read", "users:write", "users:delete",
@@ -313,7 +314,7 @@ def has_permission(user: dict, required_permission: str) -> bool:
     permissions = ROLE_PERMISSIONS.get(role, [])
     return required_permission in permissions
 
-# Permission dependency factory
+## Permission dependency factory
 def require_permission(permission: str):
     async def permission_checker(current_user: dict = Depends(get_current_user)):
         if not has_permission(current_user, permission):
@@ -333,14 +334,14 @@ async def create_post(user: dict = Depends(require_permission("posts:write"))):
 async def delete_post(post_id: int, user: dict = Depends(require_permission("posts:delete"))):
     return {"message": f"Post {post_id} deleted"}
 
-# Multiple permission requirements
+## Multiple permission requirements
 @app.get("/admin/dashboard")
 async def admin_dashboard(
     _: dict = Depends(require_permission("users:read")),
     __: dict = Depends(require_permission("settings:read")),
 ):
     return {"dashboard": "admin"}
-```
+```text
 
 **RBAC design patterns**:
 - Use role hierarchy (Admin > Moderator > User > Guest) for inheritance
@@ -390,13 +391,13 @@ class TokenManager:
 
 token_manager = TokenManager()
 
-# Logout — blacklist current token
+## Logout — blacklist current token
 @app.post("/auth/logout")
 async def logout(token: str = Depends(oauth2_scheme)):
     token_manager.blacklist_access_token(token)
     return {"message": "Logged out successfully"}
 
-# Protected endpoint with blacklist check
+## Protected endpoint with blacklist check
 async def get_current_user_secure(
     token: str = Depends(oauth2_scheme)
 ) -> UserInDB:
@@ -406,7 +407,7 @@ async def get_current_user_secure(
     user = get_user_by_username(payload.get("sub"))
     return user
 
-# Force logout all sessions
+## Force logout all sessions
 @app.post("/admin/revoke-user/{user_id}")
 async def revoke_user_sessions(
     user_id: str,
@@ -414,7 +415,7 @@ async def revoke_user_sessions(
 ):
     token_manager.revoke_all_user_tokens(user_id)
     return {"message": f"All sessions revoked for user {user_id}"}
-```
+```text
 
 ## 5.7 Security Headers and Rate Limiting
 
@@ -427,7 +428,7 @@ import time
 
 app = FastAPI()
 
-# CORS — restrict origins
+## CORS — restrict origins
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["https://example.com"],
@@ -436,7 +437,7 @@ app.add_middleware(
     allow_headers=["Authorization", "Content-Type"],
 )
 
-# Security headers middleware
+## Security headers middleware
 class SecurityHeadersMiddleware(BaseHTTPMiddleware):
     async def dispatch(self, request: Request, call_next):
         response = await call_next(request)
@@ -450,7 +451,7 @@ class SecurityHeadersMiddleware(BaseHTTPMiddleware):
 
 app.add_middleware(SecurityHeadersMiddleware)
 
-# Rate limiting
+## Rate limiting
 class RateLimiter:
     def __init__(self):
         self.requests = {}
@@ -481,7 +482,7 @@ async def rate_limit_middleware(request: Request, call_next):
     await rate_limiter.check(request)
     response = await call_next(request)
     return response
-```
+```text
 
 ## 5.8 Testing Auth Flows
 
@@ -545,7 +546,7 @@ def auth_headers(client, test_user):
 def test_authenticated_request(client, auth_headers):
     response = client.get("/users/me", headers=auth_headers)
     assert response.status_code == 200
-```
+```text
 
 ---
 
@@ -586,7 +587,7 @@ function requirePermission(permission: string) {
     }
   };
 }
-```
+```text
 
 ---
 
@@ -756,6 +757,7 @@ d) 500
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 05-fastapi-backend
@@ -765,6 +767,7 @@ d) 500
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

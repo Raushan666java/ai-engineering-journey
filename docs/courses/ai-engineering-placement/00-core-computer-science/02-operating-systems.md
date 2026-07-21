@@ -6,12 +6,13 @@ After this chapter you will be able to explain the difference between processes 
 
 ## Introduction
 
-00-core-computer-science is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Operating systems manage hardware resources and provide abstractions for process management, memory, and I/O. Understanding OS concepts is crucial for optimizing AI workloads and managing GPU resources.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Theory
 
 ### Process vs Thread
@@ -39,7 +40,7 @@ graph LR
     P2 --> S
     P1 --> M
     P2 --> M
-```
+```text
 
 ### Scheduling
 
@@ -76,7 +77,7 @@ sequenceDiagram
     CPU->>Disk: Page Fault → Swap In
     Disk-->>RAM: Load Page
     CPU->>RAM: Access PA
-```
+```text
 
 ### File Systems
 
@@ -103,7 +104,7 @@ Containers are not lightweight VMs. They use Linux namespaces for isolation and 
 - **Namespaces**: PID, network, mount, user, UTS, IPC, cgroup. Each namespace provides an isolated view of a global resource
 - **cgroups**: limit, account, and isolate CPU, memory, I/O, and NUMA resources. cgroup v2 is the modern interface
 
-```
+```text
 â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
 â”‚  Host OS                             â”‚
 â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”‚
@@ -124,7 +125,7 @@ Containers are not lightweight VMs. They use Linux namespaces for isolation and 
 â”‚  â”‚ CFS, memory mgmt, device       â”‚  â”‚
 â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚
 â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-```
+```text
 
 ### Virtualization
 
@@ -231,7 +232,7 @@ class CfsScheduler {
         }))
     }
 }
-```
+```text
 
 ### Memory Manager with Paging Simulation
 
@@ -299,7 +300,7 @@ class MemoryManager {
         return (this.totalAccesses - this.tlbMisses) / this.totalAccesses
     }
 }
-```
+```text
 
 ### Container Isolation with cgroups Simulation
 
@@ -358,7 +359,7 @@ class CgroupManager {
         }))
     }
 }
-```
+```text
 
 ### I/O Model Comparison
 
@@ -380,7 +381,7 @@ async function simulateAsyncIO(requests: number): Promise<number> {
     await Promise.all(promises)
     return 10
 }
-```
+```text
 
 ### File System Performance
 
@@ -460,7 +461,7 @@ class ThreadPoolSimulator {
         this.dispatch()
     }
 }
-```
+```text
 
 ### Memory Profiling
 
@@ -490,7 +491,7 @@ class MemoryProfiler {
         return "Peak RSS: ${peak}MB, growth: ${this.getGrowth()}MB, samples: ${this.snapshots.length}"
     }
 }
-```
+```text
 
 ## Summary
 
@@ -559,6 +560,7 @@ Operating systems knowledge separates engineers who can diagnose production issu
 3. Build a container simulator with cgroup-like CPU and memory enforcement, then run competing workloads to observe throttling.
 
 4. Measure the throughput difference between blocking and async I/O for 1000 simulated 1KB
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 00-core-computer-science
@@ -568,6 +570,7 @@ Operating systems knowledge separates engineers who can diagnose production issu
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

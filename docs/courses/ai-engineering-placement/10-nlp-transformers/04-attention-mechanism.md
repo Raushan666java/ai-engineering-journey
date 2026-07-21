@@ -13,12 +13,13 @@
 
 ## Introduction
 
-10-nlp-transformers is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding attention mechanism is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering attention mechanism.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -46,7 +47,7 @@ flowchart LR
     H --> I[Context Vector]
     I --> J[Concatenate with Decoder State]
     J --> K[Output Projection]
-```
+```text
 
 ## 4.1 The Seq2Seq Bottleneck
 
@@ -73,7 +74,7 @@ class AttentionContext {
     this.encoderStates = [];
   }
 }
-```
+```text
 
 Attention solves this by allowing the decoder to look at all encoder hidden states, weighted by relevance. At each decoding step, attention computes a context vector as a weighted sum of encoder states, where weights indicate which input tokens are most relevant for generating the next output token.
 
@@ -161,7 +162,7 @@ class BahdanauAttention {
     return { context, attentionWeights };
   }
 }
-```
+```text
 
 Bahdanau attention is "additive" because it computes the score as a learned function with addition followed by tanh. It was the first attention mechanism applied to neural machine translation (English→French).
 
@@ -254,7 +255,7 @@ class LuongAttention {
     return { context, attentionWeights };
   }
 }
-```
+```text
 
 Luong's global attention computes the context vector and then combines it with the decoder hidden state via: h~_t = tanh(W_c * [s_t; c_t]), where [;] denotes concatenation. This is simpler than Bahdanau's approach of using attention to compute the decoder state directly.
 
@@ -338,7 +339,7 @@ class SelfAttention {
     return W.map((row) => row.reduce((s, w, j) => s + w * v[j], 0));
   }
 }
-```
+```text
 
 **Scaled dot-product attention**: Dividing by sqrt(d_k) prevents the dot products from growing large in magnitude (which pushes softmax into regions of extremely small gradients). Without scaling, for d_k=512, the variance of dot products is 512, making softmax saturate.
 
@@ -405,7 +406,7 @@ class MultiHeadAttention {
     return { output, attentionMatrices };
   }
 }
-```
+```text
 
 Each head learns different relationship patterns: one head might learn syntactic dependencies (subject-verb agreement), another learns positional relationships (adjacent words), and another learns semantic associations.
 
@@ -465,7 +466,7 @@ class CausalSelfAttention extends SelfAttention {
     return { output, attentionMatrix };
   }
 }
-```
+```text
 
 **Attention visualization** helps interpret what the model focuses on. A heatmap where rows are target positions and columns are source positions reveals alignment patterns.
 
@@ -512,7 +513,7 @@ class AttentionVisualizer {
     return weights.slice(0, k);
   }
 }
-```
+```text
 
 In machine translation attention heatmaps, the alignment is typically near-diagonal for monotonic language pairs (English→French). For non-monotonic pairs (English→German with verb-final structure), attention shows long-range alignments (verbs attending to early positions).
 
@@ -714,6 +715,7 @@ d) O(n^3)
 ---
 
 > **Previous**: [Sequence Models](03-sequence-models.md) | **Next**: [Transformer Architecture](05-transformer-archite
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 10-nlp-transformers
@@ -723,6 +725,7 @@ d) O(n^3)
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

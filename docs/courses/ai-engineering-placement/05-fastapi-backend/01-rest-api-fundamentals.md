@@ -1,5 +1,6 @@
 # REST API Fundamentals — HTTP, Resources, and Design Principles
 
+
 ## Learning Objectives
 
 | Objective | Description |
@@ -10,6 +11,7 @@
 | LO4 | Handle request/response formats including JSON, headers, and content negotiation |
 | LO5 | Apply pagination, filtering, sorting, and HATEOAS principles |
 | LO6 | Implement API versioning, error handling, and documentation standards |
+
 
 ## Chapter at a Glance
 
@@ -24,6 +26,7 @@
 | 1.7 | API Versioning | URL, header, query strategies |
 | 1.8 | Documentation | OpenAPI/Swagger, contracts |
 
+
 ## Chapter Roadmap
 
 ```mermaid
@@ -37,9 +40,11 @@ flowchart LR
     G --> H[OpenAPI Docs]
 ```
 
+
 ## Introduction
 
 REST APIs are the backbone of every AI engineering system — from serving model predictions to orchestrating multi-service ML pipelines. Whether you're building a FastAPI endpoint for real-time inference or integrating with third-party AI services, understanding HTTP semantics, resource design, and error handling is non-negotiable. This chapter gives you the principles and patterns to design APIs that are scalable, maintainable, and developer-friendly.
+
 
 ## Prerequisites
 
@@ -48,7 +53,9 @@ REST APIs are the backbone of every AI engineering system — from serving model
 - Terminal/command line usage
 - Reference: Module 04 (Python Fundamentals) for syntax review
 
+
 ## Theory
+
 
 ### 1.1 REST Constraints
 
@@ -67,13 +74,14 @@ REST (Representational State Transfer) defines six architectural constraints tha
 **Code on Demand** (optional): Servers can extend client functionality by transferring executable code.
 
 
+
 ## Examples
 
 ```python
-# Stateless request example — all context in the request
+## Stateless request example — all context in the request
 import requests
 
-# Each request carries authentication and all necessary data
+## Each request carries authentication and all necessary data
 response = requests.get(
     "https://api.example.com/users/42",
     headers={
@@ -81,9 +89,12 @@ response = requests.get(
         "Accept": "application/json"
     }
 )
-# Server does not need to remember previous interactions
+## Server does not need to remember previous interactions
 ```
 
+
+
+## Overview
 ### 1.2 HTTP Methods and Status Codes
 
 Every REST API maps CRUD operations to HTTP methods.
@@ -138,6 +149,7 @@ def delete_user(user_id: int):
 
 **Best practices**: Always use the correct status code. Never return 200 for errors. Use 201 for resource creation. Use 204 for successful deletions. Use 422 for validation errors and 409 for conflicts.
 
+
 ### 1.3 URL Design
 
 REST APIs use nouns (resources) not verbs (actions) in URLs.
@@ -157,7 +169,7 @@ flowchart LR
 **URL conventions**:
 
 ```python
-# Good — plural nouns, nested resources
+## Good — plural nouns, nested resources
 GET    /users                    # List users
 GET    /users/42                 # Get user 42
 POST   /users                    # Create user
@@ -167,7 +179,7 @@ DELETE /users/42                 # Delete user 42
 GET    /users/42/orders          # List user's orders
 GET    /users/42/orders/5        # Get order 5 for user 42
 
-# Bad — verbs in URL, inconsistent casing
+## Bad — verbs in URL, inconsistent casing
 GET    /getUser                  # Verb in URL
 POST   /createUser               # Verb
 GET    /UserList                 # PascalCase
@@ -181,6 +193,9 @@ POST   /api/v1/get_user_profile  # Snake_case + verb
 - Use query parameters for filtering, sorting
 - Nest resources for relationships (max 3 levels)
 
+
+
+## Overview
 ### 1.4 Request/Response Formats
 
 JSON is the standard data format for REST APIs.
@@ -191,7 +206,7 @@ from fastapi.responses import JSONResponse
 
 app = FastAPI()
 
-# Content negotiation — client specifies desired format
+## Content negotiation — client specifies desired format
 @app.get("/users/{user_id}")
 async def get_user(user_id: int, request: Request):
     accept = request.headers.get("accept", "application/json")
@@ -206,16 +221,16 @@ async def get_user(user_id: int, request: Request):
     user = {"id": user_id, "name": "Alice", "email": "alice@example.com"}
     return JSONResponse(content=user)
 
-# Standard headers for REST APIs
-# Request:  Accept: application/json
-#           Authorization: Bearer <token>
-#           Content-Type: application/json
-#           If-None-Match: "abc123"
+## Standard headers for REST APIs
+## Request:  Accept: application/json
+##           Authorization: Bearer <token>
+##           Content-Type: application/json
+##           If-None-Match: "abc123"
 
-# Response: Content-Type: application/json
-#           ETag: "abc123"
-#           Cache-Control: private, max-age=60
-#           X-Request-ID: req_abc123
+## Response: Content-Type: application/json
+##           ETag: "abc123"
+##           Cache-Control: private, max-age=60
+##           X-Request-ID: req_abc123
 ```
 
 **Common headers**:
@@ -230,6 +245,9 @@ async def get_user(user_id: int, request: Request):
 | X-Request-ID | Both | Correlation ID for debugging |
 | RateLimit-Remaining | Response | API rate limit info |
 
+
+
+## Overview
 ### 1.5 Pagination and Filtering
 
 REST APIs must handle large collections efficiently.
@@ -316,6 +334,7 @@ def list_orders(
     return db.execute(query, params)
 ```
 
+
 ### 1.6 Error Handling
 
 Consistent error responses are crucial for API usability.
@@ -326,7 +345,7 @@ from fastapi.responses import JSONResponse
 
 app = FastAPI()
 
-# RFC 7807 Problem Details format
+## RFC 7807 Problem Details format
 class ProblemDetail(Exception):
     def __init__(self, status: int, title: str, detail: str, type: str = "about:blank"):
         self.status = status
@@ -348,7 +367,7 @@ async def problem_detail_handler(request: Request, exc: ProblemDetail):
         }
     )
 
-# Usage
+## Usage
 @app.get("/users/{user_id}")
 def get_user(user_id: int):
     if user_id <= 0:
@@ -378,6 +397,9 @@ def get_user(user_id: int):
 }
 ```
 
+
+
+## Overview
 ### 1.7 API Versioning
 
 APIs evolve over time. Versioning prevents breaking changes for existing clients.
@@ -392,7 +414,7 @@ APIs evolve over time. Versioning prevents breaking changes for existing clients
 ```python
 from fastapi import FastAPI, APIRouter
 
-# URL path versioning
+## URL path versioning
 v1_router = APIRouter(prefix="/api/v1")
 v2_router = APIRouter(prefix="/api/v2")
 
@@ -411,6 +433,9 @@ app.include_router(v2_router)
 
 **Deprecation strategy**: Support at least two versions simultaneously. Return `Sunset` and `Deprecation` headers on old versions with migration timeline.
 
+
+
+## Overview
 ### 1.8 Documentation with OpenAPI
 
 OpenAPI (formerly Swagger) is the industry standard for REST API documentation.
@@ -448,6 +473,7 @@ FastAPI auto-generates OpenAPI specs from Python type hints. Every endpoint appe
 
 ---
 
+
 ## Visual Analogy
 
 Think of a REST API like a **restaurant menu**:
@@ -459,6 +485,7 @@ Think of a REST API like a **restaurant menu**:
 - **Stateless** = No reservations needed — each order is self-contained. You don't need to be a regular; the waiter treats every order the same.
 
 This helps because REST is about **predictability** — just like a restaurant menu lets you know exactly what to expect, a well-designed API lets any client know exactly how to interact with your service without surprises.
+
 
 ## TypeScript Parallel
 
@@ -503,6 +530,7 @@ class ApiError extends Error {
 
 ---
 
+
 ## Summary
 
 - REST defines six constraints: uniform interface, stateless, cacheable, client-server, layered system, code on demand
@@ -516,6 +544,7 @@ class ApiError extends Error {
 - OpenAPI/Swagger provides machine-readable API documentation with auto-generated client SDKs
 - FastAPI leverages Python type hints to auto-generate OpenAPI specs without extra effort
 
+
 ## Practical Takeaways
 
 | Scenario | Do This | Avoid This |
@@ -527,6 +556,7 @@ class ApiError extends Error {
 | Versioning | URL path (`/api/v1/`) | No versioning at all |
 | Documentation | Auto-generated OpenAPI | Outdated docs in wiki |
 | Filtering | Query parameters | POST for search queries |
+
 
 ## Interview Q&A
 
@@ -599,6 +629,7 @@ class ApiError extends Error {
   <button class="tp-qa-mark-btn">&#x2705; Mark Reviewed</button>
   <button class="tp-qa-bookmark-btn">&#x1F516; Bookmark</button>
 </details>
+
 
 ## Chapter Quiz
 
@@ -698,6 +729,7 @@ d) Client-side rendering
 
 ---
 
+
 ## Common Mistakes
 
 1. Using verbs in URLs (`/getUser`) instead of plural nouns (`/users`) — REST resources are nouns, HTTP methods are the verbs
@@ -705,6 +737,7 @@ d) Client-side rendering
 3. Ignoring idempotency — POST is not idempotent, so retrying it creates duplicates; use PUT for idempotent operations
 4. Using offset-based pagination for real-time data — offsets skip/duplicate items when data changes between requests; use cursor-based pagination
 5. Missing content-type headers — always set `Content-Type: application/json` on requests and responses
+
 
 ## Revision Notes
 
@@ -717,11 +750,14 @@ d) Client-side rendering
 - API versioning via URL path (`/api/v1/`) is the most explicit and common strategy
 - OpenAPI/Swagger auto-generates documentation from FastAPI type hints
 
+
 ## Summary
 
 REST APIs define how distributed systems communicate through six architectural constraints. HTTP methods map directly to CRUD operations with specific idempotency and safety guarantees. Proper URL design uses plural nouns and consistent naming conventions. Status codes communicate results precisely — 201 for creation, 204 for deletion, 422 for validation errors. Pagination should use cursors for consistency, and errors should follow RFC 7807 Problem Details. FastAPI's type-hint-driven approach auto-generates OpenAPI documentation, making API design and documentation a single step.
 
+
 ## Placement Section
+
 
 ### Top 10 Interview Questions
 
@@ -745,10 +781,12 @@ REST APIs define how distributed systems communicate through six architectural c
 1. You're building an API that wraps multiple LLM providers (OpenAI, Anthropic, local models). How do you design a unified REST interface that abstracts provider differences?
 2. Your startup needs to ship a REST API MVP in one week. What do you implement first and what do you deliberately skip?
 
+
 ### Resume Tips
 - List "REST API Design" under Technical Skills alongside FastAPI, OpenAPI, and HTTP protocol knowledge
 - Project example: "Designed and implemented a RESTful API with 15 endpoints, cursor-based pagination, and RFC 7807 error handling using FastAPI"
 - Mention API-specific metrics: "Achieved 99.9% uptime serving 10K RPS with proper status code handling and rate limiting"
+
 
 ### Interview Day Checklist
 - [ ] Can explain all 6 REST constraints without notes

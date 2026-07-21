@@ -13,12 +13,13 @@
 
 ## Introduction
 
-07-system-design is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding database scaling is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering database scaling.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart LR
     E --> F[SQL vs NoSQL]
     F --> G[Denormalization]
     G --> H[Migrations]
-```
+```text
 
 ## 5.1 Replication
 
@@ -59,7 +60,7 @@ flowchart TD
     App -->|write| L
     App -->|read| F1
     App -->|read| F2
-```
+```text
 
 **Multi-leader**: Multiple leaders accept writes, replicate to each other. Complex conflict resolution.
 
@@ -82,7 +83,7 @@ class DatabaseRouter:
     def read(self, query, params=None):
         self.replica_index = (self.replica_index + 1) % len(self.replicas)
         return self.replicas[self.replica_index].execute(query, params)
-```
+```text
 
 **Replication lag**: Time between write to leader and availability on replicas. Handle with:
 - Read-after-write consistency (read your writes)
@@ -110,7 +111,7 @@ class ShardManager:
     def create_user(self, user):
         shard = self._get_shard(user["id"])
         return shard.execute("INSERT INTO users ...", user)
-```
+```text
 
 **Shard key selection** criteria: high cardinality, even distribution, matches query patterns.
 
@@ -135,7 +136,7 @@ CREATE INDEX idx_order_lookup ON orders(user_id, status, total);
 
 -- Hash index (equality lookups only)
 CREATE INDEX idx_session_id ON sessions USING HASH(session_id);
-```
+```text
 
 | Index Type | Use Case | Best For |
 |------------|----------|----------|
@@ -156,7 +157,7 @@ SELECT query, calls, total_time, mean_time
 FROM pg_stat_statements
 ORDER BY total_time DESC
 LIMIT 10;
-```
+```text
 
 ## 5.5 Connection Pooling
 
@@ -182,7 +183,7 @@ class DatabasePool:
             return cursor.fetchall()
         finally:
             self.pool.putconn(conn)
-```
+```text
 
 **Pool sizing**: Too small -> connection queue, request queuing. Too large -> database overload. Rule of thumb: `(cores * 2) + effective_spindle_count`.
 
@@ -219,7 +220,7 @@ CREATE TABLE order_items (
     quantity INT,
     price DECIMAL
 );
-```
+```text
 
 **Trade-off**: Faster reads, slower writes, data inconsistency risk, more storage.
 
@@ -239,7 +240,7 @@ LIMIT 1000;
 
 -- 3. Add NOT NULL constraint
 ALTER TABLE users ALTER COLUMN email_verified SET NOT NULL;
-```
+```text
 
 **Online schema change tools**:
 - pt-online-schema-change (Percona)
@@ -269,7 +270,7 @@ class ShardManager {
     return this.shards[hash % this.shards.length];
   }
 }
-```
+```text
 
 ---
 
@@ -452,7 +453,7 @@ flowchart TD
     DC2 --> F2[Follower 2]
     App1[App - Writes to DC1] --> L1
     App2[App - Writes to DC2] --> L2
-```
+```text
 
 **Conflict resolution strategies**:
 - Last-writer-wins (LWW) — use timestamp
@@ -486,7 +487,7 @@ CREATE INDEX idx_active_users ON users(is_active) WHERE is_active = true;
 -- Expression index (PostgreSQL)
 CREATE INDEX idx_lower_email ON users(LOWER(email));
 -- SELECT * FROM users WHERE LOWER(email) = 'user@example.com'
-```
+```text
 
 **Query plan analysis**:
 
@@ -505,7 +506,7 @@ LEFT JOIN orders o ON u.id = o.user_id
 WHERE u.created_at > '2024-01-01'
 GROUP BY u.id, u.name
 ORDER BY order_count DESC;
-```
+```text
 
 ## Database Backup Strategies
 
@@ -517,22 +518,22 @@ ORDER BY order_count DESC;
 | Multi-region sync | Minutes | Minutes | Very High |
 
 ```bash
-# PostgreSQL backup automation
+## PostgreSQL backup automation
 #!/bin/bash
 DATABASE="mydb"
 BACKUP_DIR="/backups/$(date +%Y%m%d)"
 mkdir -p $BACKUP_DIR
 
-# Full backup
+## Full backup
 pg_dump -h localhost -U admin --format=custom --compress=9 \
     --file="${BACKUP_DIR}/full.backup" $DATABASE
 
-# WAL archiving (continuous)
-# postgresql.conf: archive_command = 'cp %p /wal_archive/%f'
+## WAL archiving (continuous)
+## postgresql.conf: archive_command = 'cp %p /wal_archive/%f'
 
-# Restore
+## Restore
 pg_restore --dbname=mydb --clean --if-exists "${BACKUP_DIR}/full.backup"
-```
+```text
 
 ---
 
@@ -544,6 +545,7 @@ pg_restore --dbname=mydb --clean --if-exists "${BACKUP_DIR}/full.backup"
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 07-system-design
@@ -553,6 +555,7 @@ pg_restore --dbname=mydb --clean --if-exists "${BACKUP_DIR}/full.backup"
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

@@ -1,5 +1,6 @@
 ﻿# Text Preprocessing — Tokenization, Stemming, Lemmatization, TF-IDF
 
+
 ## Learning Objectives
 
 | LO# | Description |
@@ -11,6 +12,7 @@
 | LO5 | Compute TF-IDF scores manually and using sklearn for feature extraction |
 | LO6 | Design a complete text preprocessing pipeline that generalizes to new data |
 
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -21,6 +23,7 @@
 | 1.4 | Stop Words & Normalization | Stop word removal, lowercasing, regex cleaning, Unicode normalization |
 | 1.5 | Vocabulary Building | Frequency cutoff, special tokens, OOV handling |
 | 1.6 | TF-IDF | Term frequency, inverse document frequency, feature matrix |
+
 
 ## Chapter Roadmap
 
@@ -39,9 +42,11 @@ flowchart LR
     J --> K[Feature Matrix for Downstream Tasks]
 ```
 
+
 ## Introduction
 
 Text preprocessing is the critical first step in every NLP pipeline — before a transformer can understand language, raw text must be tokenized, normalized, and converted to numerical features. Poor preprocessing directly degrades model performance: wrong tokenization splits words incorrectly, skipping stop word removal adds noise, and ignoring Unicode normalization breaks multilingual support. This chapter equips you with the exact skills needed for every subsequent NLP and LLM module.
+
 
 ## Prerequisites
 
@@ -49,11 +54,14 @@ Text preprocessing is the critical first step in every NLP pipeline — before a
 - Basic understanding of what NLP is (processing human language with computers)
 - Module 08 (ML Fundamentals) for feature extraction concepts
 
+
 ## Theory
+
 
 ### 1.1 Word Tokenization
 
 Tokenization splits text into atomic units called tokens. Word tokenization is the simplest form: tokens correspond to words, punctuation, and numbers.
+
 
 
 ## Examples
@@ -130,6 +138,7 @@ class TreebankTokenizer {
 **Tweet tokenizer** preserves emoticons, hashtags, mentions, and URLs. This is critical for social media NLP where standard tokenizers destroy semantic content like `#NLP` or `@user`.
 
 ---
+
 
 ### 1.2 Subword Tokenization
 
@@ -213,6 +222,7 @@ SentencePiece extends BPE by treating the input as a raw Unicode byte sequence, 
 
 ---
 
+
 ### 1.3 Stemming & Lemmatization
 
 Stemming crudely chops affixes; lemmatization uses vocabulary and morphology to return the dictionary base form.
@@ -283,6 +293,7 @@ Lemmatizing requires part-of-speech tags: "meeting" as a noun should remain "mee
 
 ---
 
+
 ### 1.4 Stop Words & Normalization
 
 Stop words are high-frequency tokens that carry little semantic weight (e.g., "the", "a", "is", "and"). Normalization includes lowercasing, removing punctuation, expanding contractions, and Unicode NFKC normalization.
@@ -330,6 +341,7 @@ class TextNormalizer {
 **Language-specific stop words**: The NLTK corpus provides stop word lists for 22 languages. For specialized domains (medical, legal), domain-specific stop words can be computed by selecting the most frequent tokens across a large in-domain corpus.
 
 ---
+
 
 ### 1.5 Vocabulary Building
 
@@ -397,6 +409,7 @@ class Vocabulary {
 Handling OOV tokens: fallback strategies include character-level decomposition, subword fallback, or using a dedicated `<unk>` token. BERT's WordPiece returns `[UNK]` for out-of-vocabulary characters but covers most words through its 30K subword vocabulary.
 
 ---
+
 
 ### 1.6 TF-IDF
 
@@ -475,6 +488,7 @@ class TfidfVectorizer {
 
 ---
 
+
 ## Visual Analogy
 
 Think of text preprocessing like using a **translation dictionary**:
@@ -487,9 +501,11 @@ Think of text preprocessing like using a **translation dictionary**:
 
 This helps because raw text is messy and unstructured — preprocessing is like organizing your notes before studying. You remove the noise (stop words), organize the key terms (vocabulary), and highlight what matters (TF-IDF) so the model can focus on learning.
 
+
 ## Summary
 
 Text preprocessing transforms raw text into structured inputs for NLP models. Word tokenization splits text into discrete tokens using whitespace and punctuation rules. Subword tokenization (BPE, WordPiece, SentencePiece) handles out-of-vocabulary words by decomposing them into frequent subword units. Stemming reduces words to root forms using heuristic rules, while lemmatization uses vocabulary analysis for more accurate normalization. Stop word removal filters frequent but uninformative words, and text normalization handles case, Unicode, and special characters. Vocabulary building constructs a fixed-size mapping from tokens to integer indices. TF-IDF weighting transforms token counts into relevance scores based on corpus frequency.
+
 
 ## Practical Takeaways
 
@@ -501,6 +517,7 @@ Text preprocessing transforms raw text into structured inputs for NLP models. Wo
 - TF-IDF weights are corpus-dependent and must be fit on the training set only to prevent data leakage
 - SentencePiece eliminates the need for language-specific pre-tokenization by operating on raw bytes
 - A robust preprocessing pipeline should handle encoding errors, HTML entities, URLs, and emoji uniformly
+
 
 ## Interview Q&A
 
@@ -624,6 +641,7 @@ Text preprocessing transforms raw text into structured inputs for NLP models. Wo
   <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
 </details>
 
+
 ## Chapter Quiz
 
 Q1: Which tokenizer was used by BERT and merges tokens by maximizing likelihood?
@@ -712,6 +730,7 @@ d) Better for English only
 
 ---
 
+
 ## Common Mistakes
 
 1. Applying stemming when lemmatization is needed — stemming produces non-dictionary words ("argu" instead of "argue"); use lemmatization for semantic tasks
@@ -719,6 +738,7 @@ d) Better for English only
 3. Fitting TF-IDF on the entire corpus before splitting — document frequency statistics leak from test to train; always fit on train only
 4. Ignoring Unicode normalization — accented characters (é vs e + ́) produce different tokens without NFKC normalization, breaking multilingual models
 5. Using word tokenization for all languages — Chinese, Japanese, and Thai have no word boundaries; use SentencePiece or subword tokenization
+
 
 ## Revision Notes
 
@@ -731,11 +751,14 @@ d) Better for English only
 - SentencePiece eliminates pre-tokenization, making it work for any language
 - A robust pipeline handles Unicode normalization, HTML entities, URLs, and encoding errors
 
+
 ## Summary
 
 Text preprocessing transforms raw text into structured numerical inputs for NLP models. Word tokenization splits text on whitespace and punctuation, while subword tokenization (BPE, WordPiece, SentencePiece) handles out-of-vocabulary words by decomposing them into frequent subword units. Stemming and lemmatization normalize words to root forms — stemming is fast but crude, lemmatization is accurate but requires POS context. Stop word removal filters uninformative high-frequency words but must be skipped for tasks where function words carry meaning. Vocabulary construction maps tokens to integer IDs with special tokens for padding and unknown words. TF-IDF weighting transforms raw counts into relevance scores based on corpus-wide term importance.
 
+
 ## Placement Section
+
 
 ### Top 10 Interview Questions
 
@@ -759,10 +782,12 @@ Text preprocessing transforms raw text into structured numerical inputs for NLP 
 1. You need to build a text classifier for customer reviews using TF-IDF + logistic regression. Walk through the complete preprocessing pipeline and feature extraction
 2. Your startup processes user-generated content with spelling errors, slang, and code-switching. How do you make the preprocessing robust to these challenges?
 
+
 ### Resume Tips
 - List "NLP" and "Text Processing" under Technical Skills with specific techniques (tokenization, TF-IDF, BPE)
 - Project example: "Built text preprocessing pipeline handling 1M+ documents with BPE tokenization, reducing OOV rate from 12% to 0.3%"
 - Mention preprocessing in ML/NLP project descriptions: "Implemented multilingual preprocessing with SentencePiece, supporting 5 languages with 98% token coverage"
+
 
 ### Interview Day Checklist
 - [ ] Can explain BPE tokenization algorithm step by step without notes

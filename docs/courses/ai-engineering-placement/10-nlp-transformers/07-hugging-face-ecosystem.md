@@ -13,12 +13,13 @@
 
 ## Introduction
 
-10-nlp-transformers is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding hugging face ecosystem is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering hugging face ecosystem.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -45,7 +46,7 @@ flowchart LR
     I --> J[Trained Model]
     J --> K[Hugging Face Hub]
     K --> L[Pipeline API for Inference]
-```
+```text
 
 ## 7.1 Hugging Face Overview
 
@@ -120,7 +121,7 @@ class HuggingFaceClient {
     return `# ${modelId}\n## Overview\nThis model is ...\n## Training Data\n...\n## Benchmarks\n...`;
   }
 }
-```
+```text
 
 The central concept in Hugging Face is the **Hub**: a Git-based repository system for models, datasets, and spaces (demo apps). Every model has a model card (README.md), configuration files, weight files (safetensors), and optional ONNX/TensorRT exports.
 
@@ -351,7 +352,7 @@ class Pipeline {
     return results;
   }
 }
-```
+```text
 
 The pipeline abstraction means 3 lines of code can run sentiment analysis, NER, or QA with state-of-the-art models. The actual pipeline in Hugging Face `transformers` handles device placement, batching, and tensor conversion.
 
@@ -475,7 +476,7 @@ class Dataset {
     return this.numRows;
   }
 }
-```
+```text
 
 Arrow-backed datasets support columnar operations, efficient shuffling without loading all data, and multi-processing for map operations. The `load_dataset` function in Hugging Face downloads and caches datasets by default.
 
@@ -695,7 +696,7 @@ class FastTokenizer {
     return this.vocab.size;
   }
 }
-```
+```text
 
 The Hugging Face `tokenizers` library is implemented in Rust for performance. It can process an entire corpus at rates exceeding 1M tokens/second. The `AutoTokenizer.from_pretrained("bert-base-uncased")` loads a pre-configured tokenizer.
 
@@ -897,7 +898,7 @@ interface TrainingCallback {
     model: any;
   }): void;
 }
-```
+```text
 
 The real Hugging Face Trainer supports thousands of GPUs via `accelerate` and integrates with Weights & Biases, TensorBoard, and MLflow for experiment tracking.
 
@@ -946,7 +947,7 @@ datasets:
 - custom-corpus
 ---
 
-# ${repoId}
+## ${repoId}
 
 ## Model Description
 
@@ -1003,7 +1004,7 @@ const tokenizer = await AutoTokenizer.fromPretrained("${repoId}");
     ];
   }
 }
-```
+```text
 
 The Hub uses Git Large File Storage (LFS) for model weights (typically 100MB-10GB). Model cards are rendered as the repository's README. Every model has a unique ID like `bert-base-uncased` or `username/my-custom-model`.
 
@@ -1205,6 +1206,7 @@ d) Saves checkpoints
 ---
 
 > **Previous**: [BERT & Fine-Tuning](06-bert-and-fine-tuning.md) | **Next**: [NLP Applications](08-nlp-applica
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 10-nlp-transformers
@@ -1214,6 +1216,7 @@ d) Saves checkpoints
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

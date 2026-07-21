@@ -13,12 +13,13 @@
 
 ## Introduction
 
-11-llms-prompt-engineering is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding zero shot and few shot is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering zero shot and few shot.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -45,7 +46,7 @@ flowchart LR
     H --> I[Output Evaluation]
     I -->|Needs Improvement| D
     I -->|Good| J[Deploy Prompt]
-```
+```text
 
 ## 3.1 Zero-Shot Prompting
 
@@ -80,7 +81,7 @@ response = client.chat.completions.create(
     temperature=0
 )
 print(f"Zero-shot summary: {response.choices[0].message.content}")
-```
+```text
 
 **Zero-shot classification with categories**:
 
@@ -105,7 +106,7 @@ texts = [
 for text in texts:
     result = zero_shot_classify(text, categories, client)
     print(f"[{result}] {text[:50]}...")
-```
+```text
 
 **Zero-shot weaknesses**:
 - Format inconsistency (output structure may vary)
@@ -124,7 +125,7 @@ for prompt in [phrasing_a, phrasing_b]:
         temperature=0
     )
     print(f"Prompt: {prompt}\nResult: {response.choices[0].message.content}\n")
-```
+```text
 
 ```mermaid
 flowchart TD
@@ -136,7 +137,7 @@ flowchart TD
     D --> G[No Examples Needed]
     E --> H[Add Few-Shot Examples]
     F --> H
-```
+```text
 
 ---
 
@@ -163,7 +164,7 @@ examples = [
 ]
 result = few_shot_classify("The acting was superb but the plot was confusing.", examples, client)
 print(f"Few-shot: {result}")
-```
+```text
 
 **Few-shot for structured output**:
 
@@ -187,7 +188,7 @@ extract_examples = [
      '{"name": "Sarah", "company": "Apple", "location": "Cupertino"}')
 ]
 print(few_shot_extract("Michael is a Data Scientist at Meta in Austin.", extract_examples, client))
-```
+```text
 
 **Few-shot for code generation**:
 
@@ -205,7 +206,7 @@ response = client.chat.completions.create(
     temperature=0
 )
 print(response.choices[0].message.content)
-```
+```text
 
 ```mermaid
 flowchart LR
@@ -216,7 +217,7 @@ flowchart LR
     end
     D --> E[LLM]
     E --> F[Pattern-matched Output]
-```
+```text
 
 ---
 
@@ -270,7 +271,7 @@ sel = ExampleSelector(pool)
 print("Random:", [e[0] for e in sel.random_select(3)])
 print("Diverse:", [e[0] for e in sel.diverse_select(3)])
 print("Balanced:", [e[0] for e in sel.label_balanced_select(3)])
-```
+```text
 
 **Optimal number of shots**:
 
@@ -283,8 +284,8 @@ def evaluate_shots(examples, test_cases, shot_counts=[1, 2, 3, 5]):
         print(f"{k}-shot accuracy: {correct/len(test_cases):.2%}")
 
 test_cases = [("This is fantastic!", "POSITIVE"), ("Poor experience.", "NEGATIVE")]
-# evaluate_shots(pool, test_cases)
-```
+## evaluate_shots(pool, test_cases)
+```text
 
 ```mermaid
 flowchart TD
@@ -296,7 +297,7 @@ flowchart TD
     D --> F
     E --> F
     F --> G[Build Few-Shot Prompt]
-```
+```text
 
 ---
 
@@ -332,7 +333,7 @@ msgs = classify_tpl.format_messages(
 )
 response = client.chat.completions.create(model="gpt-4o-mini", messages=msgs, temperature=0)
 print(response.choices[0].message.content)
-```
+```text
 
 **Template registry**:
 
@@ -352,7 +353,7 @@ class PromptRegistry:
 
 registry = PromptRegistry()
 registry.register("sentiment", classify_tpl)
-```
+```text
 
 **Versioned templates**:
 
@@ -374,7 +375,7 @@ v1 = VersionedPromptTemplate("sentiment_v1", "Classify: $text")
 v2 = VersionedPromptTemplate("sentiment_v2", "Classify as POSITIVE, NEGATIVE, or NEUTRAL.\n\nText: $text\n\nLabel:")
 print(f"V1 hash: {v1.hash}")
 print(f"V2 hash: {v2.hash}")
-```
+```text
 
 ```mermaid
 flowchart LR
@@ -388,7 +389,7 @@ flowchart LR
     F --> G[API Call]
     G --> H[Response]
     H --> I[Log: Template + Version + Hash]
-```
+```text
 
 ---
 
@@ -410,7 +411,7 @@ instruction = "Extract all email addresses."
 context = "Conversation log."
 query = "Contact john@example.com or support@company.com"
 print(markdown_delimited(instruction, context, query)[:200])
-```
+```text
 
 **Structured few-shot with delimiters**:
 
@@ -426,7 +427,7 @@ def delimited_few_shot(text, examples, client):
 
 print(delimited_few_shot("The battery is terrible.",
     [("Great picture!", "POSITIVE"), ("Screen cracked.", "NEGATIVE")], client))
-```
+```text
 
 **Role-based structure**:
 
@@ -441,7 +442,7 @@ def role_prompt(task, content, role="analyst"):
     return f"## Role\n{ROLES[role]}\n## Task\n{task}\n## Content\n{content}\n## Response"
 
 print(role_prompt("Analyze pros and cons.", "Microservices migration.", "analyst")[:200])
-```
+```text
 
 ```mermaid
 flowchart TD
@@ -454,7 +455,7 @@ flowchart TD
     E --> F
     F --> G[LLM Understands Structure]
     G --> H[Consistent Output]
-```
+```text
 
 ---
 
@@ -493,7 +494,7 @@ class PromptTest:
         for r in self.results:
             kw = "PASS" if r["keywords_ok"] else "FAIL"
             print(f"{r['name']:<20} {r['avg_latency']:<15.0f}ms {r['avg_length']:<15.0f} {kw:<10}")
-```
+```text
 
 **Automated validation**:
 
@@ -524,7 +525,7 @@ class PromptValidator:
 validator = PromptValidator({"name": str, "age": int})
 print(validator.validate_json('{"name": "Alice", "age": 30}'))
 print(validator.validate_json('{"name": "Bob", "age": "twenty"}'))
-```
+```text
 
 ```mermaid
 flowchart TD
@@ -537,7 +538,7 @@ flowchart TD
     G --> B
     D --> H[Monitor]
     H -->|Regression| B
-```
+```text
 
 ---
 
@@ -570,7 +571,7 @@ const sentiment: PromptTemplate = {
   version: "1.0.0",
 };
 console.log(renderPrompt(sentiment, { text: "Great product!" }));
-```
+```text
 
 ---
 
@@ -761,6 +762,7 @@ d) Optimizing prompt length
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 11-llms-prompt-engineering
@@ -770,6 +772,7 @@ d) Optimizing prompt length
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

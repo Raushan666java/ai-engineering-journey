@@ -19,6 +19,7 @@ Linked lists form the backbone of many advanced data structures like stacks, que
 
 - Basic programming
 - Understanding of pointers/references
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -41,7 +42,7 @@ flowchart LR
     D --> F[Monotonic Queue]
     E --> F
     F --> G[Practice Problems]
-```
+```text
 
 ## 4.1 Fixed-Size Window
 
@@ -61,7 +62,7 @@ def max_sum_fixed_window(arr, k):
     return max_sum
 
 print(max_sum_fixed_window([2, 1, 5, 1, 3, 2], 3))  # 9 (5+1+3)
-```
+```text
 
 **First negative integer in every window of size k**:
 
@@ -84,7 +85,7 @@ def first_negative_in_window(arr, k):
     return result
 
 print(first_negative_in_window([12, -1, -7, 8, -15, 30, 16, 28], 3))
-```
+```text
 
 **Count occurrences of anagram in a string**:
 
@@ -110,7 +111,7 @@ def count_anagram_occurrences(text, pattern):
     return count
 
 print(count_anagram_occurrences("cbaebabacd", "abc"))  # 2
-```
+```text
 
 ---
 
@@ -135,7 +136,7 @@ def longest_substring_no_repeat(s):
 print(longest_substring_no_repeat("abcabcbb"))  # 3 ("abc")
 print(longest_substring_no_repeat("bbbbb"))     # 1 ("b")
 print(longest_substring_no_repeat("pwwkew"))    # 3 ("wke")
-```
+```text
 
 **Longest substring with at most k distinct characters**:
 
@@ -160,7 +161,7 @@ def longest_substring_k_distinct(s, k):
 
 print(longest_substring_k_distinct("eceba", 2))  # 3 ("ece")
 print(longest_substring_k_distinct("aa", 1))     # 2 ("aa")
-```
+```text
 
 ---
 
@@ -199,7 +200,7 @@ def min_window_substring(s, t):
     return "" if min_len == float('inf') else s[min_left:min_left + min_len]
 
 print(min_window_substring("ADOBECODEBANC", "ABC"))  # "BANC"
-```
+```text
 
 **Subarray with sum at least target**:
 
@@ -216,7 +217,7 @@ def min_subarray_len(target, nums):
     return 0 if min_len == float('inf') else min_len
 
 print(min_subarray_len(7, [2, 3, 1, 2, 4, 3]))  # 2 ([4, 3])
-```
+```text
 
 ---
 
@@ -244,7 +245,7 @@ def max_sliding_window(nums, k):
 
 print(max_sliding_window([1, 3, -1, -3, 5, 3, 6, 7], 3))
 # [3, 3, 5, 5, 6, 7]
-```
+```text
 
 **Sliding window minimum**:
 
@@ -265,8 +266,8 @@ def min_sliding_window(nums, k):
     return result
 
 print(min_sliding_window([1, 3, -1, -3, 5, 3, 6, 7], 3))
-# [-1, -3, -3, -3, 3, 3]
-```
+## [-1, -3, -3, -3, 3, 3]
+```text
 
 ```mermaid
 flowchart TD
@@ -283,7 +284,7 @@ flowchart TD
         G -->|No| I[Continue]
         H --> I
     end
-```
+```text
 
 ---
 
@@ -307,7 +308,7 @@ def num_subarray_product_less_than_k(nums, k):
     return count
 
 print(num_subarray_product_less_than_k([10, 5, 2, 6], 100))  # 8
-```
+```text
 
 **Count number of nice subarrays** (odd numbers count = k):
 
@@ -329,7 +330,7 @@ def number_of_subarrays_with_odd_k(nums, k):
     return at_most_k_odds(k) - at_most_k_odds(k - 1)
 
 print(number_of_subarrays_with_odd_k([1, 1, 2, 1, 1], 3))  # 2
-```
+```text
 
 **Fruits into baskets**:
 
@@ -348,7 +349,7 @@ def total_fruit(fruits):
     return max_count
 
 print(total_fruit([1, 2, 1, 2, 3]))  # 4
-```
+```text
 
 **Binary subarrays with sum = goal**:
 
@@ -368,7 +369,7 @@ def num_subarrays_with_sum(nums, goal):
     return at_most_sum(goal) - at_most_sum(goal - 1)
 
 print(num_subarrays_with_sum([1, 0, 1, 0, 1], 2))  # 4
-```
+```text
 
 ---
 
@@ -392,7 +393,7 @@ def count_complete_subarrays(nums):
     return count
 
 print(count_complete_subarrays([1, 3, 1, 2, 2]))  # 4
-```
+```text
 
 **Maximum length of subarray with equal 0s and 1s**:
 
@@ -410,7 +411,7 @@ def find_max_length(nums):
     return max_len
 
 print(find_max_length([0, 1, 0, 1]))  # 4
-```
+```text
 
 **Minimum operations to reduce X to zero**:
 
@@ -434,7 +435,7 @@ def min_operations(nums, x):
     return len(nums) - max_len if found else -1
 
 print(min_operations([3, 2, 20, 1, 1, 3], 10))  # 5
-```
+```text
 
 ```mermaid
 flowchart TD
@@ -444,7 +445,7 @@ flowchart TD
         E[Variable - Exactly k] --> F[Using atMost(k) - atMost(k-1)]
         G[Variable - Minimum] --> H[Shrink while condition met]
     end
-```
+```text
 
 ---
 
@@ -475,7 +476,7 @@ function longestSubstringNoRepeat(s: string): number {
     }
     return maxLen;
 }
-```
+```text
 
 ---
 
@@ -829,6 +830,7 @@ d) Minimum window substring
 3. Forgetting to update head/tail pointers
 4. Infinite loops from incorrect cycle detection
 5. Not using dummy nodes for simplification
+
 ## Revision Notes
 
 - Singly linked: O(1) insert/delete at head
@@ -836,6 +838,7 @@ d) Minimum window substring
 - Fast/slow pointer for cycle detection
 - Dummy node simplifies edge cases
 - Reversing a linked list is O(n) time O(1) space
+
 ## Placement Section
 
 ### Top 10 Interview Questions

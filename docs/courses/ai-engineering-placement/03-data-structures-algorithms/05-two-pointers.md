@@ -19,6 +19,7 @@ The two-pointer technique is a powerful pattern for solving array and linked lis
 
 - Array basics
 - Time complexity analysis
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -46,7 +47,7 @@ flowchart LR
     B --> K[N-Sum Problems]
     C --> L[Partitioning]
     D --> M[Advanced Patterns]
-```
+```text
 
 ## 5.1 Opposite-Direction Pointers
 
@@ -71,7 +72,7 @@ def pair_sum_sorted(arr, target):
 
 arr = [1, 2, 3, 4, 5, 6, 7]
 print(pair_sum_sorted(arr, 10))  # (3, 7)
-```
+```text
 
 **Why this works:** Since the array is sorted, moving the left pointer forward increases the sum, and moving the right pointer backward decreases the sum. This guarantees we find the pair (or determine none exists) in a single pass.
 
@@ -95,7 +96,7 @@ def max_area(heights):
 
 heights = [1, 8, 6, 2, 5, 4, 8, 3, 7]
 print(max_area(heights))  # 49
-```
+```text
 
 The intuition: starting with the widest container, we move the pointer pointing to the shorter line inward. Since the width decreases, the only way to get more water is to find a taller line. This eliminates n-1 options per step, giving O(n) total.
 
@@ -127,7 +128,7 @@ def remove_duplicates(arr):
 arr = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
 k = remove_duplicates(arr)
 print(arr[:k])  # [0, 1, 2, 3, 4]
-```
+```text
 
 The `write` pointer tracks where the next unique element should go. The `read` pointer scans the array. When `arr[read]` differs from the last written element, we copy it to the write position. This keeps the first k elements as the unique set.
 
@@ -146,7 +147,7 @@ def move_zeroes(nums):
 
 nums = [0, 1, 0, 3, 12]
 print(move_zeroes(nums))  # [1, 3, 12, 0, 0]
-```
+```text
 
 ### Same-Direction Variants
 
@@ -185,10 +186,12 @@ d = ListNode(-4)
 a.next = b; b.next = c; c.next = d; d.next = b  # cycle back to b
 
 print(has_cycle(a))  # True
-```
+```text
 
 **How it works:** If there is no cycle, the fast pointer reaches the end (null). If there is a cycle, the fast pointer eventually laps the slow pointer and they meet. The proof relies on modular arithmetic: after k steps, the distance between them modulo the cycle length shrinks by 1 each step.
 
+
+## Overview
 ### Find the Middle of a Linked List
 
 ```python
@@ -199,13 +202,15 @@ def middle_node(head):
         fast = fast.next.next
     return slow.val
 
-# 1 -> 2 -> 3 -> 4 -> 5
+## 1 -> 2 -> 3 -> 4 -> 5
 head = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5)))))
 print(middle_node(head))  # 3
-```
+```text
 
 When fast reaches the end, slow is at the middle. This works in one pass without knowing the list length.
 
+
+## Overview
 ### Find the Start of the Cycle
 
 ```python
@@ -225,7 +230,7 @@ def detect_cycle_start(head):
 a = ListNode(3); b = ListNode(2); c = ListNode(0); d = ListNode(-4)
 a.next = b; b.next = c; c.next = d; d.next = b
 print(detect_cycle_start(a))  # 2
-```
+```text
 
 After the first meeting, reset one pointer to the head. Both now move at the same speed. They meet at the cycle start. This is a classic interview question that tests deep understanding.
 
@@ -273,7 +278,7 @@ def three_sum(nums):
 
 nums = [-1, 0, 1, 2, -1, -4]
 print(three_sum(nums))  # [[-1, -1, 2], [-1, 0, 1]]
-```
+```text
 
 **Key details:** The outer loop fixes one element. The inner two-pointer scans the rest. Sorting is O(n log n). The duplicates are skipped after each match. Total complexity: O(n^2).
 
@@ -309,7 +314,7 @@ def four_sum(nums, target):
 
 nums = [1, 0, -1, 0, -2, 2]
 print(four_sum(nums, 0))
-```
+```text
 
 ### N-Sum Complexity Table
 
@@ -345,7 +350,7 @@ def sort_colors(nums):
 
 nums = [2, 0, 2, 1, 1, 0]
 print(sort_colors(nums))  # [0, 0, 1, 1, 2, 2]
-```
+```text
 
 Three pointers (`low`, `mid`, `high`) maintain three regions:
 - `[0, low-1]`: all 0s
@@ -370,7 +375,7 @@ def partition_by_pivot(arr, pivot):
 
 arr = [9, 4, 7, 2, 5, 6, 3]
 print(partition_by_pivot(arr, 5))
-```
+```text
 
 ### In-Place Modification Patterns
 
@@ -400,7 +405,7 @@ def two_sum_unsorted(nums, target):
 
 nums = [2, 7, 11, 15]
 print(two_sum_unsorted(nums, 9))  # [0, 1]
-```
+```text
 
 ### Two Pointers with Binary Search
 
@@ -419,7 +424,7 @@ def find_closest_elements(arr, k, x):
 
 arr = [1, 2, 3, 4, 5]
 print(find_closest_elements(arr, 4, 3))  # [1, 2, 3, 4]
-```
+```text
 
 ### Trapping Rain Water
 
@@ -447,7 +452,7 @@ def trap_rain_water(height):
 
 height = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]
 print(trap_rain_water(height))  # 6
-```
+```text
 
 At each step, we process the smaller of the two outer heights. We maintain the maximum seen from each side. Any height lower than its side's max contributes that difference to trapped water.
 
@@ -484,7 +489,7 @@ function pairSumSorted(arr: number[], target: number): [number, number] | null {
 }
 
 console.log(pairSumSorted([1, 2, 3, 4, 5, 6, 7], 10)); // [3, 7]
-```
+```text
 
 ### Same-Direction: Remove Duplicates
 
@@ -504,7 +509,7 @@ function removeDuplicates(nums: number[]): number {
 const nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
 const k = removeDuplicates(nums);
 console.log(nums.slice(0, k)); // [0, 1, 2, 3, 4]
-```
+```text
 
 ### Fast-Slow: Cycle Detection
 
@@ -532,7 +537,7 @@ const d = new ListNode(-4);
 a.next = b; b.next = c; c.next = d; d.next = b;
 
 console.log(hasCycle(a)); // true
-```
+```text
 
 ### Three Sum
 
@@ -564,7 +569,7 @@ function threeSum(nums: number[]): number[][] {
 }
 
 console.log(threeSum([-1, 0, 1, 2, -1, -4]));
-```
+```text
 
 ### TypeScript Type Safety Benefits
 
@@ -739,7 +744,7 @@ def two_sum_less_than_k(nums, k):
     return max_sum
 
 print(two_sum_less_than_k([34, 23, 1, 24, 75, 33, 54, 8], 60))  # 58
-```
+```text
 
 ### Exercise 2 (Medium): Squares of a Sorted Array
 
@@ -760,7 +765,7 @@ def sorted_squares(nums):
     return result
 
 print(sorted_squares([-7, -3, 2, 3, 11]))  # [4, 9, 9, 49, 121]
-```
+```text
 
 ### Exercise 3 (Medium): Partition Labels
 
@@ -779,7 +784,7 @@ def partition_labels(s):
     return result
 
 print(partition_labels("ababcbacadefegdehijhklij"))  # [9, 7, 8]
-```
+```text
 
 ### Exercise 4 (Hard): Longest Substring with At Most K Distinct Characters
 
@@ -802,7 +807,7 @@ def longest_substring_k_distinct(s, k):
     return max_len
 
 print(longest_substring_k_distinct("eceba", 2))  # 3 (substring "ece")
-```
+```text
 
 ### Exercise 5 (Hard): Minimum Window Substring
 
@@ -837,11 +842,12 @@ def min_window(s, t):
 s = "ADOBECODEBANC"
 t = "ABC"
 print(min_window(s, t))  # "BANC"
-```
+```text
 
 ---
 
 [? Previous: Sliding Window](04-sliding-window.md) | [Next: Hash Maps & Sets ?](06-hash-maps-and
+
 ## Revision Notes
 
 - Two pointers: opposite ends or same direction
@@ -849,6 +855,7 @@ print(min_window(s, t))  # "BANC"
 - Same direction for partitioning problems
 - Fast/slow for cycle detection and middle finding
 - Often combined with sorting for O(n log n) solutions
+
 ## Placement Section
 
 ### Top 10 Interview Questions

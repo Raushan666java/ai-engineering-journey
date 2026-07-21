@@ -13,12 +13,13 @@
 
 ## Introduction
 
-11-llms-prompt-engineering is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding structured output is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering structured output.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -47,7 +48,7 @@ flowchart LR
     I -->|Pass| J[Structured Data]
     I -->|Fail| K[Retry / Recover]
     K --> G
-```
+```text
 
 ## 5.1 JSON Mode
 
@@ -71,7 +72,7 @@ response = client.chat.completions.create(
 
 data = json.loads(response.choices[0].message.content)
 print(f"Name: {data['name']}, Age: {data['age']}, City: {data['city']}")
-```
+```text
 
 **Schema-guided JSON extraction**:
 
@@ -92,7 +93,7 @@ schema = "product: string, price: number, in_stock: boolean, tags: array of stri
 text = "Wireless headphones cost $149.99, in stock. Tags: audio, bluetooth, premium."
 result = extract_json(schema, text, client)
 print(result)
-```
+```text
 
 **Handling nested JSON**:
 
@@ -106,7 +107,7 @@ nested_schema = """{
 text = "John Doe, 28, lives at 123 Main St, Springfield, 12345. Email: john@email.com, Phone: 555-0100."
 result = extract_json(nested_schema, text, client)
 print(json.dumps(result, indent=2))
-```
+```text
 
 ```mermaid
 flowchart TD
@@ -117,7 +118,7 @@ flowchart TD
     E --> F[json.loads]
     F --> G[Validated Dict]
     G --> H[Application Use]
-```
+```text
 
 ---
 
@@ -155,7 +156,7 @@ response = client.chat.completions.create(
 tool_call = response.choices[0].message.tool_calls[0]
 args = json.loads(tool_call.function.arguments)
 print(f"Extracted: {args}")
-```
+```text
 
 **Multiple function definitions**:
 
@@ -188,7 +189,7 @@ response = client.chat.completions.create(
 for tc in response.choices[0].message.tool_calls:
     fn = tc.function
     print(f"Called: {fn.name}, Args: {fn.arguments}")
-```
+```text
 
 **Executing function results**:
 
@@ -216,7 +217,7 @@ response = client.chat.completions.create(
 for tc in response.choices[0].message.tool_calls:
     result = execute_function(tc.function.name, json.loads(tc.function.arguments))
     print(f"{tc.function.name}: {result}")
-```
+```text
 
 ```mermaid
 flowchart TD
@@ -228,7 +229,7 @@ flowchart TD
     F --> G[Tool Result]
     G --> H[LLM Second Pass]
     H --> I[Final Response]
-```
+```text
 
 ---
 
@@ -265,7 +266,7 @@ try:
     print(f"Validated: {person.name}, {person.age}")
 except ValidationError as e:
     print(f"Validation error: {e}")
-```
+```text
 
 **Nested models**:
 
@@ -294,7 +295,7 @@ data = {"id": 101, "name": "Alice", "department": "Engineering",
         "projects": ["Project X"]}
 emp = validate_extracted(data, Employee)
 print(f"{emp.name}, Dept: {emp.department}, City: {emp.address.city}")
-```
+```text
 
 **Batch validation**:
 
@@ -317,7 +318,7 @@ for item in items:
         print(f"OK: {p.name} - ${p.price}")
     except ValidationError as e:
         print(f"FAIL: {item.get('name')} - {e.errors()[0]['msg']}")
-```
+```text
 
 ```mermaid
 flowchart LR
@@ -328,7 +329,7 @@ flowchart LR
     D -->|Fail| F[Error Details]
     E --> G[Safe Usage]
     F --> H[Retry / Fix]
-```
+```text
 
 ---
 
@@ -370,9 +371,9 @@ class ExtractionPipeline:
         relations = self.extract_relations(entities, text)
         return {"entities": entities, "relations": relations}
 
-# pipeline = ExtractionPipeline(client)
-# result = pipeline.run("Apple Inc. was founded by Steve Jobs in Cupertino in 1976.")
-```
+## pipeline = ExtractionPipeline(client)
+## result = pipeline.run("Apple Inc. was founded by Steve Jobs in Cupertino in 1976.")
+```text
 
 **Retry with validation**:
 
@@ -401,7 +402,7 @@ def extract_with_retry(text, schema, client, max_retries=3):
 
 result = extract_with_retry("Bob from accounting, age 45", {"required": ["name", "age", "department"]}, client)
 print(result)
-```
+```text
 
 ```mermaid
 flowchart TD
@@ -413,7 +414,7 @@ flowchart TD
     F -->|Fail| G[Retry]
     G --> B
     F -->|Pass| H[Structured Knowledge]
-```
+```text
 
 ---
 
@@ -464,7 +465,7 @@ decoder = ConstrainedDecoder(client)
 print(f"Number: {decoder.extract_number('Total is $1,234.56')}")
 print(f"Boolean: {decoder.extract_boolean('Is the sky blue?')}")
 print(f"Choice: {decoder.extract_choice('Grass color?', ['Red', 'Green', 'Blue'])}")
-```
+```text
 
 **Regex-based output constraint**:
 
@@ -492,7 +493,7 @@ date = constrained_generate(
     r"(?:January|February|March)\s+\d{1,2},?\s+\d{4}", client
 )
 print(f"Date: {date}")
-```
+```text
 
 ```mermaid
 flowchart LR
@@ -500,7 +501,7 @@ flowchart LR
     B --> C[Free Text]
     C --> D[Post-Process: Regex]
     D --> E[Constrained Output]
-```
+```text
 
 ---
 
@@ -547,7 +548,7 @@ class RobustExtractor:
 
 extractor = RobustExtractor(client)
 print(extractor.partial_extract("John is here", ["name", "age", "email"]))
-```
+```text
 
 ```mermaid
 flowchart TD
@@ -559,7 +560,7 @@ flowchart TD
     C -->|No| F[Partial Extract]
     F --> G[Fill Nulls]
     G --> E
-```
+```text
 
 ---
 
@@ -594,7 +595,7 @@ async function extractPerson(text: string, apiKey: string) {
   const data = await res.json();
   return PersonSchema.parse(JSON.parse(data.choices[0].message.content));
 }
-```
+```text
 
 ---
 
@@ -761,6 +762,7 @@ d) Plain text output
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 11-llms-prompt-engineering
@@ -770,6 +772,7 @@ d) Plain text output
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

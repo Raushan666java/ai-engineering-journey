@@ -13,12 +13,13 @@
 
 ## Introduction
 
-02-sql-and-databases is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding aggregate functions is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering aggregate functions.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -40,7 +41,7 @@ flowchart LR
     D --> E[HAVING filter]
     F[DISTINCT] --> G[COUNT DISTINCT]
     H[NULL behavior] -.-> A
-```
+```text
 
 ## 2.1 Basic Aggregates
 
@@ -61,7 +62,7 @@ print(f"Count: {len(data)}")
 print(f"Sum: {sum(data)}")
 print(f"Avg: {sum(data)/len(data):.0f}")
 print(f"Min: {min(data)}, Max: {max(data)}")
-# Count: 4, Sum: 297000, Avg: 74250, Min: 68000, Max: 82000
+## Count: 4, Sum: 297000, Avg: 74250, Min: 68000, Max: 82000
 
 import sqlite3
 conn = sqlite3.connect(":memory:")
@@ -74,8 +75,8 @@ cur.executemany("INSERT INTO emp VALUES (?,?,?,?)", [
 cur.execute("SELECT dept, AVG(salary), MAX(salary) FROM emp GROUP BY dept")
 for row in cur.fetchall():
     print(f"{row[0]}: avg={row[1]:.0f}, max={row[2]}")
-# Eng: avg=71500, max=75000
-# Sales: avg=77000, max=82000
+## Eng: avg=71500, max=75000
+## Sales: avg=77000, max=82000
 `
 
 ## 2.2 GROUP BY
@@ -182,7 +183,7 @@ cur.execute("CREATE TABLE scores (name, score)")
 cur.executemany("INSERT INTO scores VALUES (?,?)", [
     ("Alice", 95), ("Bob", None), ("Charlie", 88), ("Diana", None)
 ])
-# COUNT(*) includes NULL rows; COUNT(score) excludes NULLs
+## COUNT(*) includes NULL rows; COUNT(score) excludes NULLs
 cur.execute("SELECT COUNT(*), COUNT(score), AVG(score) FROM scores")
 print(cur.fetchone())  # (4, 2, 91.5) � NULLs ignored in AVG
 `
@@ -605,6 +606,7 @@ FROM employees GROUP BY department_id;
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 02-sql-and-databases
@@ -614,6 +616,7 @@ FROM employees GROUP BY department_id;
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

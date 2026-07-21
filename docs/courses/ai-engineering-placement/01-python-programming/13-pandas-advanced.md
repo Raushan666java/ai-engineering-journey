@@ -13,12 +13,13 @@
 
 ## Introduction
 
-01-python-programming is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding pandas advanced is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering pandas advanced.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -46,7 +47,7 @@ flowchart LR
     E --> K[.str / regex]
     F --> L[eval / query / categorical]
     G --> M[resample / date_range]
-```
+```text
 
 ## 13.1 Pivot Tables
 
@@ -56,7 +57,7 @@ Pivot tables summarize data by grouping and aggregating across multiple dimensio
 import pandas as pd
 import numpy as np
 
-# Sample sales data
+## Sample sales data
 df = pd.DataFrame({
     "date": pd.date_range("2024-01-01", periods=12, freq="ME"),
     "product": ["A", "B", "A", "B", "A", "B", "A", "B", "A", "B", "A", "B"],
@@ -66,7 +67,7 @@ df = pd.DataFrame({
     "quantity": np.random.randint(5, 50, 12)
 })
 
-# Simple pivot
+## Simple pivot
 pivot = df.pivot_table(
     values="sales",
     index="product",
@@ -76,12 +77,12 @@ pivot = df.pivot_table(
     margins_name="Total"
 )
 print(pivot)
-```
+```text
 
 **pivot_table parameters**:
 
 ```python
-# Multiple values and aggregations
+## Multiple values and aggregations
 pivot = df.pivot_table(
     values=["sales", "quantity"],
     index="product",
@@ -90,23 +91,23 @@ pivot = df.pivot_table(
     fill_value=0
 )
 
-# Custom aggregation function
+## Custom aggregation function
 pivot = df.pivot_table(
     values="sales",
     index="product",
     columns="region",
     aggfunc=lambda x: x.max() - x.min()
 )
-```
+```text
 
 **crosstab** computes a frequency table of two or more factors:
 
 ```python
-# Simple frequency table
+## Simple frequency table
 ct = pd.crosstab(df["product"], df["region"])
 print(ct)
 
-# With margins and normalization
+## With margins and normalization
 ct = pd.crosstab(
     df["product"], df["region"],
     values=df["sales"],
@@ -114,7 +115,7 @@ ct = pd.crosstab(
     margins=True,
     normalize="index"  # normalize by row
 )
-```
+```text
 
 **Melting** converts wide to long format (reverse of pivot):
 
@@ -134,7 +135,7 @@ long_df = wide_df.melt(
     value_name="revenue"
 )
 print(long_df)
-```
+```text
 
 ## 13.2 MultiIndex
 
@@ -150,65 +151,65 @@ df = pd.DataFrame({
 }, index=index)
 
 print(df)
-#               sales  profit
-# product year
-# A       2023    100      20
-#         2024    120      25
-# B       2023    150      30
-#         2024    140      28
-```
+##               sales  profit
+## product year
+## A       2023    100      20
+##         2024    120      25
+## B       2023    150      30
+##         2024    140      28
+```text
 
 **Selecting from MultiIndex**:
 
 ```python
-# Select all rows for product A
+## Select all rows for product A
 print(df.loc["A"])
 
-# Select specific cross-section
+## Select specific cross-section
 print(df.loc[("A", 2024)])
 
-# xs() for cross-sectional selection
+## xs() for cross-sectional selection
 print(df.xs(key="A", level="product"))
 print(df.xs(key=2024, level="year"))
-```
+```text
 
 **swaplevel and reorder_levels**:
 
 ```python
-# Swap index levels
+## Swap index levels
 swapped = df.swaplevel()
 print(swapped)
 
-# Reorder levels
+## Reorder levels
 reordered = df.reorder_levels(["year", "product"])
-```
+```text
 
 **stack and unstack** convert between wide and long formats:
 
 ```python
-# unstack: innermost index level → columns
+## unstack: innermost index level → columns
 unstacked = df.unstack()
 print(unstacked)
-#         sales         profit
-# year    2023  2024    2023  2024
-# product
-# A        100   120      20    25
-# B        150   140      30    28
+##         sales         profit
+## year    2023  2024    2023  2024
+## product
+## A        100   120      20    25
+## B        150   140      30    28
 
-# stack: columns → innermost index level
+## stack: columns → innermost index level
 restacked = unstacked.stack()
 print(restacked)
-```
+```text
 
 **set_index and reset_index**:
 
 ```python
-# Move columns to index
+## Move columns to index
 df_indexed = df.reset_index().set_index(["product", "year"])
 
-# Flatten MultiIndex
+## Flatten MultiIndex
 flattened = df_indexed.reset_index()
-```
+```text
 
 **MultiIndex columns**:
 
@@ -222,7 +223,7 @@ df_multi_cols = pd.DataFrame(
     columns=cols
 )
 print(df_multi_cols["Sales"]["Q1"])
-```
+```text
 
 ## 13.3 Window Functions
 
@@ -231,34 +232,34 @@ Window functions operate on a sliding or expanding window of rows.
 **Rolling window**:
 
 ```python
-# 3-day rolling mean
+## 3-day rolling mean
 series = pd.Series(np.random.randn(10))
 rolling_mean = series.rolling(window=3).mean()
 
-# Rolling with min_periods
+## Rolling with min_periods
 rolling = series.rolling(window=5, min_periods=2).mean()
 
-# Multiple aggregations
+## Multiple aggregations
 stats = series.rolling(3).agg(["mean", "std", "min", "max"])
-```
+```text
 
 **Expanding window** (uses all data from start):
 
 ```python
-# Cumulative statistics
+## Cumulative statistics
 expanding_mean = series.expanding().mean()
 expanding_std = series.expanding().std()
 
-# Expanding with min_periods
+## Expanding with min_periods
 expanding = series.expanding(min_periods=2).sum()
-```
+```text
 
 **Exponentially weighted moving average (ewm)**:
 
 ```python
 ewm_mean = series.ewm(span=3, adjust=False).mean()
 ewm_std = series.ewm(span=3).std()
-```
+```text
 
 **shift and diff** for lag/lead computations:
 
@@ -268,7 +269,7 @@ df["lag_1"] = df["value"].shift(1)        # previous row
 df["lead_1"] = df["value"].shift(-1)       # next row
 df["diff_1"] = df["value"].diff(1)         # period-over-period change
 df["pct_change"] = df["value"].pct_change()  # fractional change
-```
+```text
 
 **Applying custom functions** over windows:
 
@@ -277,7 +278,7 @@ def custom_window(x):
     return x.max() - x.min() if len(x) > 0 else np.nan
 
 result = series.rolling(3).apply(custom_window, raw=False)
-```
+```text
 
 ## 13.4 String Operations
 
@@ -286,29 +287,29 @@ The .str accessor provides vectorized string operations.
 ```python
 s = pd.Series(["Hello World", "  python  ", "DATA SCIENCE", None])
 
-# Basic transformations
+## Basic transformations
 print(s.str.lower())        # all lowercase
 print(s.str.upper())        # all uppercase
 print(s.str.strip())        # remove whitespace
 print(s.str.len())          # string length
 print(s.str.contains("python"))  # boolean mask
-```
+```text
 
 **Splitting and replacing**:
 
 ```python
 emails = pd.Series(["alice@example.com", "bob@test.org", "charlie@co.uk"])
 
-# Split by delimiter
+## Split by delimiter
 parts = emails.str.split("@", expand=True)
 parts.columns = ["user", "domain"]
 
-# Replace
+## Replace
 cleaned = emails.str.replace("@", " [at] ", regex=False)
 
-# Replace with regex
+## Replace with regex
 masked = emails.str.replace(r"(?<=.).(?=.*@)", "*", regex=True)
-```
+```text
 
 **Extracting with regex**:
 
@@ -319,34 +320,34 @@ text = pd.Series([
     "Order #11111: $200.00"
 ])
 
-# Extract with named groups
+## Extract with named groups
 extracted = text.str.extract(
     r"Order #(?P<order_id>\d+):\s\$(?P<amount>[\d.]+)"
 )
 
-# Extract all matches
+## Extract all matches
 dates = pd.Series(["2024-01-15", "2024-02-20", "2024-03-25"])
 parts = dates.str.extractall(r"(?P<year>\d{4})-(?P<month>\d{2})-(?P<day>\d{2})")
-```
+```text
 
 **Checking string patterns**:
 
 ```python
-# Startswith / endswith
+## Startswith / endswith
 mask = s.str.startswith("H")
 mask = s.str.endswith(".com")
 
-# Count occurrences
+## Count occurrences
 counts = s.str.count("a")
 
-# Find position
+## Find position
 positions = s.str.find("World")
 
-# Pad, center, slice
+## Pad, center, slice
 padded = s.str.pad(width=20, side="both", fillchar="-")
 centered = s.str.center(20, "-")
 sliced = s.str.slice(0, 5)
-```
+```text
 
 ## 13.5 Performance
 
@@ -362,35 +363,35 @@ df = pd.DataFrame({
     "C": np.random.randn(n)
 })
 
-# query — efficient boolean indexing
+## query — efficient boolean indexing
 result = df.query("A > 0 and B < 0 and C > -1")
 
-# eval — compute expressions without temporary arrays
+## eval — compute expressions without temporary arrays
 df["D"] = df.eval("A + B * 2 - C / 3")
 
-# Multi-line eval
+## Multi-line eval
 df.eval("""
     E = A + B
     F = E * C
 """, inplace=True)
-```
+```text
 
 **Categorical data** reduces memory for repeated strings:
 
 ```python
-# Convert object column to categorical
+## Convert object column to categorical
 df["category"] = pd.Categorical(
     np.random.choice(["low", "medium", "high", "critical"], n)
 )
 
-# Memory comparison
+## Memory comparison
 print(df["category"].memory_usage(deep=True))
-# vs
+## vs
 identical_df = pd.DataFrame({
     "category": np.random.choice(["low", "medium", "high", "critical"], n)
 })
 print(identical_df["category"].memory_usage(deep=True))
-```
+```text
 
 **numba integration** for custom vectorized functions:
 
@@ -404,18 +405,18 @@ def numba_sum(arr):
         total += x
     return total
 
-# Apply with engine='numba'
+## Apply with engine='numba'
 result = df["A"].rolling(100).apply(
     lambda x: numba_sum(x.values),
     engine="numba",
     raw=True
 )
-```
+```text
 
 **Other performance tips**:
 
 ```python
-# Use inplace=False (default) chain operations
+## Use inplace=False (default) chain operations
 df = (df
     .query("A > 0")
     .assign(D=lambda x: x.A + x.B)
@@ -423,19 +424,19 @@ df = (df
     .agg({"A": "mean", "D": "sum"})
 )
 
-# Specify dtypes at read time
+## Specify dtypes at read time
 df = pd.read_csv("large.csv", dtype={"id": "int32", "value": "float32"})
 
-# Use usecols to load only needed columns
+## Use usecols to load only needed columns
 df = pd.read_csv("large.csv", usecols=["id", "value", "date"])
 
-# Use chunksize for large files
+## Use chunksize for large files
 chunks = []
 for chunk in pd.read_csv("large.csv", chunksize=10000):
     filtered = chunk.query("value > 0")
     chunks.append(filtered)
 result = pd.concat(chunks)
-```
+```text
 
 ## 13.6 Time Series
 
@@ -444,74 +445,74 @@ Pandas excels at time series data manipulation.
 **Date ranges and frequencies**:
 
 ```python
-# Create date ranges
+## Create date ranges
 dates = pd.date_range(
     start="2024-01-01",
     end="2024-12-31",
     freq="D"  # daily
 )
 
-# Business days
+## Business days
 b_dates = pd.bdate_range(start="2024-01-01", end="2024-12-31")
 
-# Custom frequencies
+## Custom frequencies
 hourly = pd.date_range("2024-01-01", periods=24, freq="h")
 every_6h = pd.date_range("2024-01-01", periods=4, freq="6h")
-```
+```text
 
 **to_datetime and parsing**:
 
 ```python
-# Parse string columns to datetime
+## Parse string columns to datetime
 df = pd.DataFrame({"date_str": ["2024-01-15", "2024-02-20", "invalid"]})
 df["date"] = pd.to_datetime(df["date_str"], errors="coerce")
 
-# Custom format
+## Custom format
 df["date"] = pd.to_datetime(
     df["date_str"],
     format="%Y-%m-%d",
     errors="coerce"
 )
 
-# Infer datetime format
+## Infer datetime format
 df["date"] = pd.to_datetime(df["date_str"], infer_datetime_format=True)
-```
+```text
 
 **resample** changes the frequency of time series:
 
 ```python
-# Create minute-level data
+## Create minute-level data
 idx = pd.date_range("2024-01-01", periods=1440, freq="min")
 ts = pd.Series(np.random.randn(1440), index=idx)
 
-# Downsample to hourly
+## Downsample to hourly
 hourly_mean = ts.resample("h").mean()
 hourly_ohlc = ts.resample("h").agg(["mean", "std", "min", "max"])
 
-# Upsample with interpolation
+## Upsample with interpolation
 daily = pd.Series([100, 150, 130], index=pd.date_range("2024-01-01", periods=3, freq="D"))
 hourly = daily.resample("h").interpolate(method="linear")
-```
+```text
 
 **Time zone handling**:
 
 ```python
-# Localize naive timestamps
+## Localize naive timestamps
 ts_utc = ts.tz_localize("UTC")
 
-# Convert timezone
+## Convert timezone
 ts_est = ts_utc.tz_convert("US/Eastern")
 ts_pst = ts_utc.tz_convert("US/Pacific")
-```
+```text
 
 **Window functions on time series**:
 
 ```python
-# Rolling with time-based window
+## Rolling with time-based window
 ts.rolling("1h").mean()        # 1-hour rolling mean
 ts.rolling("30min").std()      # 30-minute rolling std
 ts.rolling("2h", min_periods=10).max()
-```
+```text
 
 ## TypeScript Parallel
 
@@ -561,7 +562,7 @@ function rollingMean(values: number[], window: number): (number | null)[] {
 function strContains(series: (string | null)[], pattern: string): boolean[] {
     return series.map(s => s !== null && s.includes(pattern));
 }
-```
+```text
 
 ## Summary
 
@@ -679,6 +680,7 @@ function strContains(series: (string | null)[], pattern: string): boolean[] {
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 01-python-programming
@@ -688,6 +690,7 @@ function strContains(series: (string | null)[], pattern: string): boolean[] {
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

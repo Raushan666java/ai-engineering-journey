@@ -12,12 +12,13 @@
 
 ## Introduction
 
-13-ai-agents-langgraph is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding langgraph basics is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering langgraph basics.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -42,7 +43,7 @@ flowchart LR
     S[State] --> N1
     N1 --> S
     N2 --> S
-```
+```text
 
 ## 3.1 LangGraph Concepts
 
@@ -85,7 +86,7 @@ class GraphEdge:
     condition: Optional[Callable] = None
 
 
-# Typed state definition (similar to TypedDict in LangGraph)
+## Typed state definition (similar to TypedDict in LangGraph)
 class AgentState(TypedDict):
     messages: List[Dict[str, str]]
     step_count: int
@@ -94,7 +95,7 @@ class AgentState(TypedDict):
 
 
 print("LangGraph core concepts defined")
-```
+```text
 
 ## 3.2 Building a Graph
 
@@ -158,7 +159,7 @@ class CompiledGraph:
         return state
 
 
-# Define nodes
+## Define nodes
 def llm_node(state: Dict) -> Dict:
     messages = state.get("messages", [])
     messages.append({"role": "assistant", "content": f"Processing step {state.get('step_count', 0) + 1}"})
@@ -173,7 +174,7 @@ def output_node(state: Dict) -> Dict:
     return {**state, "final_answer": "Task completed successfully."}
 
 
-# Build graph
+## Build graph
 graph = StateGraph(state_schema=AgentState)
 graph.add_node("llm", llm_node, NodeType.LLM)
 graph.add_node("tool", tool_node, NodeType.TOOL)
@@ -187,8 +188,10 @@ compiled = graph.compile()
 result = compiled.invoke({"messages": [], "step_count": 0, "tool_results": {}, "final_answer": None})
 print(f"Result: {result['final_answer']}")
 print(f"Steps: {result['step_count']}")
-```
+```text
 
+
+## Overview
 ### 3.2.2 LangChain-Style Interface
 
 ```python
@@ -217,7 +220,7 @@ lang = LangGraphInterface()
 lang.add_llm_node("reason", "gpt-4o-mini")
 lang.add_tool_node("search", lambda x: f"Found: {x}")
 print("LangGraph interface configured")
-```
+```text
 
 ## 3.3 Conditional Routing
 
@@ -274,7 +277,7 @@ def build_agent_with_routing():
 routing_agent = build_agent_with_routing()
 state = routing_agent.invoke({"messages": [{"role": "user", "content": "search for AI news"}], "step_count": 0, "tool_results": {}, "final_answer": None})
 print(f"Routing agent result: {state.get('final_answer', 'n/a')}")
-```
+```text
 
 ### 3.3.2 Dynamic Routing
 
@@ -309,7 +312,7 @@ def build_dynamic_agent():
 dynamic = build_dynamic_agent()
 result = dynamic.invoke({"messages": [], "step_count": 0, "tool_results": {}, "final_answer": None})
 print(f"Dynamic routing: {result['final_answer']}, steps: {result['step_count']}")
-```
+```text
 
 ## 3.4 State Management
 
@@ -320,7 +323,7 @@ from typing import List, Dict, Any, Optional, Annotated
 import operator
 
 
-# Define state with reducers (conceptual — LangGraph uses TypedDict)
+## Define state with reducers (conceptual — LangGraph uses TypedDict)
 class ReducibleState:
     def __init__(self):
         self.messages: List[Dict] = []
@@ -368,8 +371,10 @@ sm = StateManager({"messages": []})
 sm.update({"messages": [{"role": "user", "content": "hello"}]}, "append")
 sm.update({"messages": [{"role": "assistant", "content": "hi"}]}, "append")
 print(f"Messages: {len(sm.state['messages'])}")
-```
+```text
 
+
+## Overview
 ### 3.4.2 State Schema
 
 ```python
@@ -417,7 +422,7 @@ state = schema.create_initial_state()
 state = schema.apply_reducer(state, "messages", [{"role": "user", "content": "test"}])
 state = schema.apply_reducer(state, "count", 1)
 print(f"State: messages={len(state['messages'])}, count={state['count']}")
-```
+```text
 
 ## 3.5 Checkpointing
 
@@ -495,7 +500,7 @@ graph.set_entry_point("start")
 cg = CheckpointedGraph(graph, checkpointer)
 result = cg.invoke({"messages": [], "step_count": 0, "tool_results": {}, "final_answer": None}, thread_id="test-thread")
 print(f"Checkpoints saved: {len(checkpointer.checkpoints)}")
-```
+```text
 
 ### 3.5.2 Conversation Persistence
 
@@ -534,7 +539,7 @@ def mock_graph(state: Dict, thread_id: str) -> Dict:
 conv = PersistentConversation(checkpointer)
 response = conv.process_message("thread-1", "Hello!", mock_graph)
 print(f"Response: {response}")
-```
+```text
 
 ## 3.6 Human-in-the-Loop
 
@@ -626,7 +631,7 @@ graph_w_hitl.set_entry_point("agent")
 
 hitl = HumanInTheLoopGraph(graph_w_hitl, "human")
 print("Human-in-the-loop graph ready (requires user input)")
-```
+```text
 
 ### 3.6.2 Approval Workflow
 
@@ -666,7 +671,7 @@ approval_id = approval.request_approval("send_email", {"to": "user@example.com",
 print(f"Approval status: {approval.check_status(approval_id)}")
 approval.approve(approval_id)
 print(f"After approve: {approval.check_status(approval_id)}")
-```
+```text
 
 ## Summary
 
@@ -869,6 +874,7 @@ Answer: B
 4. Create a human-in-the-loop approval workflow where an agent proposes an action, pauses for human approval, and continues only if approved. Simulate both approval and rejection paths.
 
 5. Build a dynamic routing graph that cycles between agent and tool nodes until the LLM decides to stop. Set a max iteration limit and show both normal completion and for
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 13-ai-agents-langgraph
@@ -878,6 +884,7 @@ Answer: B
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

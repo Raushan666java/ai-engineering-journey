@@ -13,12 +13,13 @@
 
 ## Introduction
 
-05-fastapi-backend is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding async patterns is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering async patterns.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -41,7 +42,7 @@ flowchart LR
     D --> E[WebSockets]
     E --> F[Event-Driven]
     F --> G[Best Practices]
-```
+```text
 
 ## 7.1 Async Fundamentals
 
@@ -51,19 +52,19 @@ Python's async/await enables concurrent execution of I/O-bound operations.
 import asyncio
 import time
 
-# Coroutine — defined with async def
+## Coroutine — defined with async def
 async def fetch_data(url: str) -> dict:
     print(f"Fetching {url}...")
     await asyncio.sleep(1)  # Simulating I/O
     return {"url": url, "data": "response"}
 
-# Sequential execution
+## Sequential execution
 async def sequential():
     result1 = await fetch_data("https://api.example.com/1")
     result2 = await fetch_data("https://api.example.com/2")
     return [result1, result2]  # Takes ~2 seconds
 
-# Concurrent execution with gather
+## Concurrent execution with gather
 async def concurrent():
     results = await asyncio.gather(
         fetch_data("https://api.example.com/1"),
@@ -72,16 +73,16 @@ async def concurrent():
     )
     return results  # Takes ~1 second
 
-# Task creation for fire-and-forget
+## Task creation for fire-and-forget
 async def fire_and_forget():
     task = asyncio.create_task(fetch_data("https://api.example.com/background"))
     # Task runs in background while we continue
     await asyncio.sleep(0.1)
     await task  # Wait for completion if needed
 
-# Running async code
-# asyncio.run(main())  # Entry point
-```
+## Running async code
+## asyncio.run(main())  # Entry point
+```text
 
 **Async terminology**:
 
@@ -103,7 +104,7 @@ import httpx
 
 app = FastAPI()
 
-# Async route — non-blocking
+## Async route — non-blocking
 @app.get("/users/{user_id}")
 async def get_user(user_id: int):
     # Non-blocking HTTP call
@@ -111,7 +112,7 @@ async def get_user(user_id: int):
         response = await client.get(f"https://jsonplaceholder.typicode.com/users/{user_id}")
         return response.json()
 
-# Multiple concurrent external calls
+## Multiple concurrent external calls
 @app.get("/dashboard")
 async def get_dashboard(user_id: int):
     async with httpx.AsyncClient() as client:
@@ -130,7 +131,7 @@ async def get_dashboard(user_id: int):
         "notifications": notif_resp.json(),
     }
 
-# Sync route — runs in thread pool (doesn't block other requests)
+## Sync route — runs in thread pool (doesn't block other requests)
 @app.get("/compute")
 def compute_heavy():
     # CPU-bound work runs in a thread pool
@@ -138,7 +139,7 @@ def compute_heavy():
     result = heavy_computation()
     return {"result": result}
 
-# Mix sync and async
+## Mix sync and async
 @app.get("/mixed")
 async def mixed():
     # Async I/O
@@ -148,7 +149,7 @@ async def mixed():
     processed = await asyncio.to_thread(cpu_intensive_function, data)
 
     return {"processed": processed}
-```
+```text
 
 **When to use async vs sync routes**:
 - **Async**: I/O operations (database, HTTP calls, file reads, WebSocket)
@@ -164,7 +165,7 @@ from pydantic import BaseModel, EmailStr
 
 app = FastAPI()
 
-# Define background task functions
+## Define background task functions
 def send_welcome_email(email: str, username: str):
     # Runs after response is sent — does not block user
     import time
@@ -188,7 +189,7 @@ async def create_user(user: UserCreate, background_tasks: BackgroundTasks):
     # Response is sent immediately
     return {"id": db_user.id, "message": "User created"}
 
-# Async background tasks
+## Async background tasks
 async def generate_report_async(user_id: int):
     await asyncio.sleep(3)
     print(f"Report generated for user {user_id}")
@@ -198,7 +199,7 @@ async def create_report(user_id: int, background_tasks: BackgroundTasks):
     background_tasks.add_task(generate_report_async, user_id)
     return {"message": "Report generation started"}
 
-# Background task with dependencies
+## Background task with dependencies
 def process_upload(file_path: str, db_session: Session):
     # Heavy file processing
     data = parse_file(file_path)
@@ -214,7 +215,7 @@ async def upload_file(file: UploadFile, background_tasks: BackgroundTasks):
 
     background_tasks.add_task(process_upload, file_path)
     return {"filename": file.filename, "size": len(content)}
-```
+```text
 
 **BackgroundTasks limitations**:
 - Run in the same process — heavy tasks block the server
@@ -227,7 +228,7 @@ async def upload_file(file: UploadFile, background_tasks: BackgroundTasks):
 Celery distributes tasks to worker processes for reliable background processing.
 
 ```python
-# celery_app.py
+## celery_app.py
 from celery import Celery
 
 celery_app = Celery(
@@ -262,7 +263,7 @@ def send_email_async(to: str, subject: str, body: str):
     send_email(to, subject, body)
     return {"to": to, "status": "sent"}
 
-# FastAPI integration
+## FastAPI integration
 from fastapi import FastAPI, BackgroundTasks
 from celery.result import AsyncResult
 
@@ -282,8 +283,8 @@ async def get_task_status(task_id: str):
         "result": result.result if result.ready() else None,
     }
 
-# Periodic tasks (Celery Beat)
-# celery -A tasks beat
+## Periodic tasks (Celery Beat)
+## celery -A tasks beat
 from celery.schedules import crontab
 
 celery_app.conf.beat_schedule = {
@@ -296,7 +297,7 @@ celery_app.conf.beat_schedule = {
         "schedule": 300.0,  # Every 5 minutes
     },
 }
-```
+```text
 
 ## 7.5 WebSocket Support
 
@@ -309,7 +310,7 @@ import json
 
 app = FastAPI()
 
-# Simple echo WebSocket
+## Simple echo WebSocket
 @app.websocket("/ws")
 async def websocket_endpoint(websocket: WebSocket):
     await websocket.accept()
@@ -320,7 +321,7 @@ async def websocket_endpoint(websocket: WebSocket):
     except WebSocketDisconnect:
         print("Client disconnected")
 
-# Chat room with connection manager
+## Chat room with connection manager
 class ConnectionManager:
     def __init__(self):
         self.active_connections: dict[str, Set[WebSocket]] = {}
@@ -374,7 +375,7 @@ async def chat_websocket(websocket: WebSocket, room: str, username: str = "Anony
             "message": f"{username} left the chat"
         })
 
-# Dependencies in WebSocket
+## Dependencies in WebSocket
 from fastapi import Depends, WebSocket, status
 
 async def get_token_from_websocket(websocket: WebSocket) -> str:
@@ -396,7 +397,7 @@ async def protected_ws(websocket: WebSocket, token: str = Depends(get_token_from
             await websocket.send_text(f"Hello, {user.name}! You said: {data}")
     except WebSocketDisconnect:
         print("Client disconnected")
-```
+```text
 
 ## 7.6 Event-Driven Design
 
@@ -409,7 +410,7 @@ from datetime import datetime
 import asyncio
 from typing import Callable, Awaitable
 
-# Simple event bus implementation
+## Simple event bus implementation
 class EventBus:
     def __init__(self):
         self.subscribers: dict[str, list[Callable]] = {}
@@ -438,7 +439,7 @@ class EventBus:
 event_bus = EventBus()
 app = FastAPI()
 
-# Event handlers
+## Event handlers
 async def on_user_registered(event_type: str, data: dict):
     print(f"Sending welcome email to {data['email']}")
 
@@ -448,7 +449,7 @@ async def on_user_registered_notification(event_type: str, data: dict):
 def on_user_registered_analytics(event_type: str, data: dict):
     print(f"Logging analytics: user {data['user_id']} registered")
 
-# Register handlers
+## Register handlers
 event_bus.subscribe("user.registered", on_user_registered)
 event_bus.subscribe("user.registered", on_user_registered_notification)
 event_bus.subscribe("user.registered", on_user_registered_analytics)
@@ -473,7 +474,7 @@ async def register(user_data: UserCreate):
 
     return {"id": user.id, "message": "User registered"}
 
-# Message broker integration (Redis pub/sub)
+## Message broker integration (Redis pub/sub)
 import redis.asyncio as redis
 
 class RedisEventBus:
@@ -493,7 +494,7 @@ class RedisEventBus:
             if message["type"] == "message":
                 data = json.loads(message["data"])
                 await handler(data)
-```
+```text
 
 ## 7.7 Async Best Practices
 
@@ -506,20 +507,20 @@ import time
 
 app = FastAPI()
 
-# Avoid blocking the event loop
-# BAD — blocks entire server
+## Avoid blocking the event loop
+## BAD — blocks entire server
 @app.get("/bad")
 async def bad_endpoint():
     time.sleep(5)  # Blocks the event loop — all requests hang
     return {"status": "done"}
 
-# GOOD — async sleep
+## GOOD — async sleep
 @app.get("/good")
 async def good_endpoint():
     await asyncio.sleep(5)  # Non-blocking — other requests processed
     return {"status": "done"}
 
-# Run CPU-bound work in thread pool
+## Run CPU-bound work in thread pool
 executor = concurrent.futures.ThreadPoolExecutor(max_workers=4)
 
 def cpu_intensive(data: dict) -> dict:
@@ -532,7 +533,7 @@ async def process_data():
     result = await loop.run_in_executor(executor, cpu_intensive, {"input": "data"})
     return result
 
-# Async context managers for resource management
+## Async context managers for resource management
 from contextlib import asynccontextmanager
 
 class AsyncResource:
@@ -553,7 +554,7 @@ async def use_resource():
     async with AsyncResource() as res:
         print("Using resource")
 
-# Timeout for async operations
+## Timeout for async operations
 from asyncio import timeout
 
 @app.get("/external")
@@ -566,7 +567,7 @@ async def call_external():
     except asyncio.TimeoutError:
         raise HTTPException(status_code=504, detail="External API timeout")
 
-# Rate limiting with asyncio
+## Rate limiting with asyncio
 from asyncio import Semaphore
 
 semaphore = Semaphore(10)  # Max 10 concurrent external calls
@@ -582,7 +583,7 @@ async def batch_fetch():
     tasks = [rate_limited_request(url) for url in urls]
     results = await asyncio.gather(*tasks, return_exceptions=True)
     return {"results": [r for r in results if not isinstance(r, Exception)]}
-```
+```text
 
 ---
 
@@ -617,7 +618,7 @@ wss.on("connection", (ws) => {
     wss.clients.forEach((client) => client.send(data));
   });
 });
-```
+```text
 
 ---
 
@@ -787,6 +788,7 @@ d) Condition
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 05-fastapi-backend
@@ -796,6 +798,7 @@ d) Condition
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

@@ -19,6 +19,7 @@ Tries (prefix trees) are specialized trees for efficient string operations. They
 
 - Tree basics
 - String operations
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart LR
     E --> F
     F --> G[AVL Tree]
     F --> H[Red-Black Tree]
-```
+```text
 
 
 A Binary Search Tree (BST) maintains the ordering property that for every node, all values in the left subtree are less than the node's value, and all values in the right subtree are greater.
@@ -57,12 +58,12 @@ class BSTNode:
         self.left = None
         self.right = None
 
-# Valid BST
-#       5
-#      / \
-#     3   7
-#    / \   \
-#   2   4   8
+## Valid BST
+##       5
+##      / \
+##     3   7
+##    / \   \
+##   2   4   8
 root = BSTNode(5)
 root.left = BSTNode(3)
 root.right = BSTNode(7)
@@ -70,12 +71,12 @@ root.left.left = BSTNode(2)
 root.left.right = BSTNode(4)
 root.right.right = BSTNode(8)
 
-# Inorder gives sorted order
+## Inorder gives sorted order
 def inorder(root):
     if not root: return []
     return inorder(root.left) + [root.val] + inorder(root.right)
 print(inorder(root))  # [2, 3, 4, 5, 7, 8]
-```
+```text
 
 ## 10.2 Basic Operations
 
@@ -96,7 +97,7 @@ def search_iterative(root, target):
         else:
             root = root.right
     return root
-```
+```text
 
 **Insert**:
 
@@ -109,7 +110,7 @@ def insert(root, val):
     elif val > root.val:
         root.right = insert(root.right, val)
     return root
-```
+```text
 
 **Delete** (three cases):
 
@@ -140,7 +141,7 @@ def min_value_node(root):
     while root.left:
         root = root.left
     return root
-```
+```text
 
 ## 10.3 BST Validation
 
@@ -156,7 +157,7 @@ def is_valid_bst(root):
         return (validate(node.left, low, node.val) and 
                 validate(node.right, node.val, high))
     return validate(root, float("-inf"), float("inf"))
-```
+```text
 
 **Validate BST using inorder**:
 
@@ -172,7 +173,7 @@ def is_valid_bst_inorder(root):
         return dfs(node.right)
 
     return dfs(root)
-```
+```text
 
 ## 10.4 Successor and Predecessor
 
@@ -198,7 +199,7 @@ def inorder_predecessor(root, target):
         else:
             root = root.left
     return predecessor
-```
+```text
 
 ## 10.5 Balanced BSTs
 
@@ -233,7 +234,7 @@ def rotate_left(x):
     x.height = 1 + max(get_height(x.left), get_height(x.right))
     y.height = 1 + max(get_height(y.left), get_height(y.right))
     return y
-```
+```text
 
 **Red-Black Tree** properties:
 - Each node is either red or black
@@ -268,7 +269,7 @@ def ceil(root, x):
         else:
             root = root.right
     return result
-```
+```text
 
 **Range sum BST** (sum of values between low and high):
 
@@ -282,7 +283,7 @@ def range_sum_bst(root, low, high):
     return (root.val +
             range_sum_bst(root.left, low, high) +
             range_sum_bst(root.right, low, high))
-```
+```text
 
 **Convert BST to sorted doubly linked list**:
 
@@ -302,7 +303,7 @@ def bst_to_dll(root):
     first = last = None
     dfs(root)
     return first
-```
+```text
 
 ---
 
@@ -329,7 +330,7 @@ function isValidBST(root: TreeNode | null): boolean {
     }
     return validate(root, -Infinity, Infinity);
 }
-```
+```text
 
 ---
 
@@ -510,6 +511,7 @@ a) Right child  b) Minimum of right subtree  c) Maximum of right subtree  d) Par
 3. Not considering memory overhead of tries
 4. Using tries for small datasets where hash maps suffice
 5. Not implementing deletion correctly
+
 ## Revision Notes
 
 - Trie: O(m) search where m = key length
@@ -517,6 +519,7 @@ a) Right child  b) Minimum of right subtree  c) Maximum of right subtree  d) Par
 - Prefix sharing reduces space
 - Used for autocomplete and spell check
 - Patricia/Radix tries compress common prefixes
+
 ## Placement Section
 
 ### Top 10 Interview Questions

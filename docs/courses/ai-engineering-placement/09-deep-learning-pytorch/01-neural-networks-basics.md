@@ -1,5 +1,6 @@
 # Neural Networks Basics — Perceptron, Activation Functions, Backpropagation
 
+
 ## Learning Objectives
 
 | Objective | Description |
@@ -11,6 +12,7 @@
 | LO5 | Implement forward pass, loss computation, and backward pass |
 | LO6 | Understand gradient vanishing/exploding and weight initialization |
 
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -21,6 +23,7 @@
 | 1.4 | Backpropagation | Chain rule, gradient computation, computational graph |
 | 1.5 | Weight Initialization | Xavier/Glorot, He, zero-center, vanishing gradients |
 | 1.6 | Loss Functions | MSE, cross-entropy, hinge, custom losses |
+
 
 ## Chapter Roadmap
 
@@ -39,9 +42,11 @@ flowchart LR
     I -->|Yes| J[Trained Model]
 ```
 
+
 ## Introduction
 
 Neural networks are the engine behind every modern AI system — from GPT-4's language generation to self-driving car vision. This chapter builds your understanding from the ground up: starting with the single perceptron, progressing through activation functions and backpropagation, and culminating in a multi-layer perceptron implemented in PyTorch. These fundamentals directly explain why transformers work and how to debug training failures in production.
+
 
 ## Prerequisites
 
@@ -49,11 +54,14 @@ Neural networks are the engine behind every modern AI system — from GPT-4's la
 - Module 08 (ML Fundamentals) — supervised learning, loss functions, gradient descent
 - Basic calculus concept of derivatives (helpful but not strictly required)
 
+
 ## Theory
+
 
 ### 1.1 Perceptron
 
 The perceptron is the simplest neural network: a linear classifier that maps inputs to binary outputs.
+
 
 
 ## Examples
@@ -91,7 +99,7 @@ class Perceptron:
         return epoch
 
 
-# XOR problem — perceptron cannot solve this
+## XOR problem — perceptron cannot solve this
 X_xor = np.array([[0, 0], [0, 1], [1, 0], [1, 1]], dtype=np.float32)
 y_xor = np.array([0, 1, 1, 0], dtype=np.float32)
 
@@ -105,6 +113,9 @@ print("Perceptron cannot learn XOR (linear separability limitation)")
 
 ---
 
+
+
+## Overview
 ### 1.2 Activation Functions
 
 Activation functions introduce non-linearity, enabling neural networks to learn complex patterns.
@@ -162,7 +173,7 @@ af.plot_activations()
 
 **PyTorch activations**:
 ```python
-# PyTorch has built-in activation functions
+## PyTorch has built-in activation functions
 x_t = torch.randn(5)
 print(f"Sigmoid: {torch.sigmoid(x_t)}")
 print(f"ReLU: {torch.relu(x_t)}")
@@ -180,6 +191,9 @@ print(f"LeakyReLU: {nn.LeakyReLU(0.01)(x_t)}")
 
 ---
 
+
+
+## Overview
 ### 1.3 Multi-Layer Perceptron
 
 An MLP has one or more hidden layers between input and output. The universal approximation theorem states that a single hidden layer with enough neurons can approximate any continuous function.
@@ -265,7 +279,7 @@ class MLPScratch:
         return np.mean((output - y) ** 2)
 
 
-# Test MLP on regression
+## Test MLP on regression
 np.random.seed(42)
 X_mlp = np.random.randn(100, 3)
 y_mlp = X_mlp[:, 0] ** 2 + np.sin(X_mlp[:, 1]) + 0.1 * np.random.randn(100)
@@ -286,6 +300,9 @@ for epoch in range(500):
 
 ---
 
+
+
+## Overview
 ### 1.4 Backpropagation
 
 Backpropagation computes gradients of the loss with respect to all parameters using the chain rule.
@@ -320,7 +337,7 @@ class ComputationalGraph:
         return {op["name"]: op["grad"] for op in self.graph}
 
 
-# PyTorch autograd demonstration
+## PyTorch autograd demonstration
 x = torch.tensor(2.0, requires_grad=True)
 w = torch.tensor(3.0, requires_grad=True)
 b = torch.tensor(1.0, requires_grad=True)
@@ -343,6 +360,9 @@ print(f"dL/dx = {x.grad.item():.2f}")
 
 ---
 
+
+
+## Overview
 ### 1.5 Weight Initialization
 
 Good initialization prevents vanishing/exploding gradients and speeds convergence.
@@ -409,6 +429,7 @@ print(f"PyTorch init: mean={layer.weight.mean().item():.4f}, std={layer.weight.s
 
 ---
 
+
 ### 1.6 Loss Functions
 
 ```python
@@ -448,6 +469,7 @@ print(f"Huber: {lf.huber_loss(y_t, y_p):.4f}")
 
 ---
 
+
 ## Visual Analogy
 
 Think of a neural network like an **assembly line in a factory**:
@@ -460,6 +482,7 @@ Think of a neural network like an **assembly line in a factory**:
 - **Backpropagation** = Feedback from the quality inspector flowing backward — if a defect is found, the inspector tells the last worker who made a mistake, who tells the previous worker, and so on. Everyone adjusts their technique.
 
 This helps because neural networks are fundamentally **collaborative** — no single neuron understands the whole problem, but together they learn to recognize patterns through repeated practice and feedback, just like workers on an assembly line.
+
 
 ## TypeScript Parallel
 
@@ -511,6 +534,7 @@ nnTS.addLayer(3, 8, "relu");
 nnTS.addLayer(8, 1, "sigmoid");
 ```
 
+
 ## Summary
 
 - Perceptron is a linear binary classifier; cannot solve XOR (not linearly separable)
@@ -524,6 +548,7 @@ nnTS.addLayer(8, 1, "sigmoid");
 - Cross-entropy loss is preferred for classification; MSE is preferred for regression
 - PyTorch's nn.Module provides a clean abstraction for building neural networks
 
+
 ## Practical Takeaways
 
 | Scenario | Do This | Avoid This |
@@ -533,6 +558,7 @@ nnTS.addLayer(8, 1, "sigmoid");
 | Hidden layers | ReLU activation | Sigmoid/tanh (vanishing gradients) |
 | Deep network | He initialization + batch norm | Random small init |
 | Gradient issues | Gradient clipping + proper lr | Ignoring gradient norms |
+
 
 ## Interview Q&A
 
@@ -555,6 +581,7 @@ nnTS.addLayer(8, 1, "sigmoid");
 <details class="tp-qa-card" data-qid="dl09-q9"><summary class="tp-qa-question"><span class="tp-qa-status"></span>Q9: How do you choose the number of hidden layers and neurons?</summary><div class="tp-qa-answer"><p>Guidelines: <strong>1)</strong> Start with 1-2 hidden layers. <strong>2)</strong> Use more neurons in wider layers (e.g., 128-1024). <strong>3)</strong> Increase layers/neurons until validation performance plateaus. <strong>4)</strong> Smaller layers for simpler problems. <strong>5)</strong> Use cross-validation to compare architectures. Overfitting sign: training loss << validation loss → reduce capacity. Underfitting: both losses high → increase capacity. Modern practice: use enough capacity with strong regularization.</p></div><button class="tp-qa-mark-btn">Mark Reviewed</button><button class="tp-qa-bookmark-btn">Bookmark</button></details>
 
 <details class="tp-qa-card" data-qid="dl09-q10"><summary class="tp-qa-question"><span class="tp-qa-status"></span>Q10: What is the dying ReLU problem and how do you fix it?</summary><div class="tp-qa-answer"><p>Dead ReLU: when a neuron's weights push all inputs to the negative region, ReLU outputs 0 and the gradient is 0. The neuron can never recover because the gradient is zero. Causes: large learning rate, biased initialization, or unfortunate parameter updates. Fixes: use Leaky ReLU (0.01 slope), PReLU (learnable slope), ELU (exponential for negatives), or Swish (x * sigmoid(x)), and reduce learning rate.</p></div><button class="tp-qa-mark-btn">Mark Reviewed</button><button class="tp-qa-bookmark-btn">Bookmark</button></details>
+
 
 ## Chapter Quiz
 
@@ -654,6 +681,7 @@ d) Huber
 
 ---
 
+
 ## Common Mistakes
 
 1. Using sigmoid activation in hidden layers of deep networks — sigmoid causes vanishing gradients; use ReLU for hidden layers and sigmoid only for binary output
@@ -661,6 +689,7 @@ d) Huber
 3. Ignoring gradient magnitudes during training — exploding gradients cause NaN losses; use gradient clipping and monitor gradient norms
 4. Choosing the wrong loss function — MSE for classification gives poor gradients; use cross-entropy for classification and MSE for regression
 5. Not using `.detach()` when computing loss values for logging — accidentally backpropagating through logging operations wastes memory and can corrupt gradients
+
 
 ## Revision Notes
 
@@ -673,11 +702,14 @@ d) Huber
 - Vanishing gradients: solved by ReLU, batch normalization, residual connections, and proper initialization
 - Cross-entropy loss for classification; MSE for regression; BCE for binary classification
 
+
 ## Summary
 
 Neural networks start with the perceptron — a simple linear classifier limited to linearly separable problems like AND and OR. Activation functions (sigmoid, tanh, ReLU, Leaky ReLU) introduce non-linearity, enabling multi-layer perceptrons to approximate any continuous function. Backpropagation efficiently computes gradients through the chain rule, and PyTorch's autograd automates this process with dynamic computational graphs. Weight initialization is critical: He init for ReLU networks, Xavier for sigmoid/tanh. Vanishing and exploding gradients are common deep network challenges solved by ReLU activations, proper initialization, and batch normalization. Loss function selection (cross-entropy for classification, MSE for regression) directly impacts training stability.
 
+
 ## Placement Section
+
 
 ### Top 10 Interview Questions
 
@@ -701,10 +733,12 @@ Neural networks start with the perceptron — a simple linear classifier limited
 1. You need to classify customer support tickets into 20 categories using a neural network. What architecture do you choose, what loss function, and how do you handle class imbalance?
 2. Your inference API runs a neural network that takes 2 seconds per prediction. The client needs 100ms. Propose three optimization strategies
 
+
 ### Resume Tips
 - List "Deep Learning" and "PyTorch" under Technical Skills with specific capabilities (autograd, nn.Module, GPU training)
 - Project example: "Implemented multi-layer perceptron from scratch with backpropagation, achieving 98% accuracy on MNIST"
 - Mention neural network debugging skills: "Diagnosed vanishing gradient problem in 12-layer network, resolved with He initialization and batch normalization"
+
 
 ### Interview Day Checklist
 - [ ] Can explain why a single perceptron cannot solve XOR with a diagram

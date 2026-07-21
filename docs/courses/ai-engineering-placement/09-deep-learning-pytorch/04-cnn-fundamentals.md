@@ -17,12 +17,13 @@ title: CNN Fundamentals
 
 ## Introduction
 
-09-deep-learning-pytorch is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding cnn fundamentals is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering cnn fundamentals.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic |
@@ -40,7 +41,7 @@ flowchart LR
     Start --> S1
     S1 --> S2
     S2 --> End
-```
+```text
 
 ## 1.1 Convolution Operation
 
@@ -54,9 +55,9 @@ conv = nn.Conv2d(in_channels=3, out_channels=16, kernel_size=3, stride=1, paddin
 x = torch.randn(4, 3, 32, 32)  # batch, channels, height, width
 y = conv(x)
 print(f'Input: {x.shape}, Output: {y.shape}')
-# Parameters: (in_c * kernel_h * kernel_w + 1) * out_c
+## Parameters: (in_c * kernel_h * kernel_w + 1) * out_c
 print(f'Parameters: {{sum(p.numel() for p in conv.parameters()):,}}')
-```
+```text
 **Key formula**: Output size = (W - K + 2P) / S + 1 where W=input, K=kernel, P=padding, S=stride.
 
 ---
@@ -73,7 +74,7 @@ x = torch.randn(4, 16, 32, 32)
 print(f'MaxPool: {maxpool(x).shape}')
 print(f'AvgPool: {avgpool(x).shape}')
 print(f'Adaptive: {adaptive(x).shape}')
-```
+```text
 **Padding modes**: 'valid' (no padding), 'same' (output size = input size / stride), custom padding.
 
 ---
@@ -88,11 +89,11 @@ x = torch.randn(4, 16, 32, 32)
 y = bn(x)
 print(f'Running mean: {bn.running_mean.shape}')
 print(f'Running var: {bn.running_var.shape}')
-# During eval, running stats replace batch stats
+## During eval, running stats replace batch stats
 bn.eval()
 y_eval = bn(x)
 print(f'Eval output mean: {y_eval.mean():.4f}')
-```
+```text
 
 ---
 
@@ -123,7 +124,7 @@ class SimpleCNN(nn.Module):
 model = SimpleCNN(num_classes=10)
 x = torch.randn(4, 3, 64, 64)
 print(f'Output: {model(x).shape}')
-```
+```text
 
 ---
 
@@ -138,10 +139,10 @@ dw_pw = nn.Sequential(dw, pw)  # depthwise separable
 print(f'Depthwise params: {{sum(p.numel() for p in dw.parameters())}}')
 print(f'Standard params: {{sum(p.numel() for p in nn.Conv2d(32, 64, 3).parameters())}}')
 
-# Grouped convolution
+## Grouped convolution
 grouped = nn.Conv2d(32, 64, 3, groups=2)
 print(f'Grouped params: {{sum(p.numel() for p in grouped.parameters())}}')
-```
+```text
 
 ---
 
@@ -166,7 +167,7 @@ function convolve2d(input: number[][], kernel: number[][]): number[][] {
     }
   return out;
 }
-```
+```text
 
 ## Summary
 
@@ -516,6 +517,7 @@ m
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 09-deep-learning-pytorch
@@ -525,6 +527,7 @@ m
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

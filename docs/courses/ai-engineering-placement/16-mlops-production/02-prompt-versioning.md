@@ -13,12 +13,13 @@
 
 ## Introduction
 
-16-mlops-production is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding prompt versioning is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering prompt versioning.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart LR
     G --> H{Monitor}
     H -->|OK| I[Promote to Production]
     H -->|Issues| F
-```
+```text
 
 ## 2.1 Why Prompt Versioning
 
@@ -52,8 +53,8 @@ Prompts are the primary interface to LLM behavior. A small change in wording can
 **Real-world prompt failure scenarios**:
 
 ```python
-# Scenario: A seemingly harmless change breaks production
-# Version 1.0 (production, working)
+## Scenario: A seemingly harmless change breaks production
+## Version 1.0 (production, working)
 prompt_v1 = """Extract the customer name, order ID, and total amount from the email below.
 
 Email: {email}
@@ -65,7 +66,7 @@ Return JSON format:
     "total_amount": ...
 }"""
 
-# Version 1.1 (team member removed "Return JSON" line — broke parsing)
+## Version 1.1 (team member removed "Return JSON" line — broke parsing)
 prompt_v1_1 = """Extract the customer name, order ID, and total amount from the email below.
 
 Email: {email}
@@ -74,8 +75,8 @@ Email: {email}
     "order_id": "...",
     "total_amount": ...
 }"""
-# Output became unpredictable — LLM often returned markdown or extra text
-```
+## Output became unpredictable — LLM often returned markdown or extra text
+```text
 
 **Benefits of prompt versioning**:
 - **Rollback**: Instantly revert to a known-good prompt version
@@ -84,7 +85,7 @@ Email: {email}
 - **Regression testing**: Automatically test new prompts against a suite of golden examples
 
 ```python
-# Prompt version metadata structure
+## Prompt version metadata structure
 prompt_version = {
     "version_id": "v2.1.0",
     "prompt_hash": "sha256:a1b2c3d4...",
@@ -95,7 +96,7 @@ prompt_version = {
     "temperature": 0.3,
     "notes": "Added few-shot examples to improve JSON formatting"
 }
-```
+```text
 
 ---
 
@@ -117,7 +118,7 @@ flowchart TB
         H1[Git for storage] --> H2[Registry for active version]
         H2 --> H3[Runtime resolution]
     end
-```
+```text
 
 **Git-based versioning**:
 
@@ -146,7 +147,7 @@ save_prompt("v1.0.0",
     "Translate the following to {language}: {text}",
     {"author": "bob", "model": "gpt-4", "temperature": 0.0}
 )
-```
+```text
 
 **Registry-based versioning (with SQLite)**:
 
@@ -199,7 +200,7 @@ registry.register("translate", "v1", "Translate to {lang}: {text}")
 registry.register("translate", "v2", "Translate the following text to {lang}. Only return the translation:\n\n{text}")
 registry.activate("translate", "v2")
 print(registry.get_active("translate"))
-```
+```text
 
 ---
 
@@ -228,7 +229,7 @@ class PromptTemplate:
             "metadata": self.metadata
         }
 
-# Example prompt template
+## Example prompt template
 summary_prompt = PromptTemplate(
     """You are a customer support summarizer. Summarize the following conversation.
 
@@ -258,7 +259,7 @@ Customer: Okay, thank you for checking."""
 
 print(summary_prompt.render(conversation=conversation))
 print(f"Hash: {summary_prompt.hash}, Version: {summary_prompt.version}")
-```
+```text
 
 **Template versioning with environment loading**:
 
@@ -292,13 +293,13 @@ class PromptManager:
             import json
             json.dump(metadata, open(meta_path, "w"), indent=2)
 
-# Usage
+## Usage
 pm = PromptManager()
 pm.save("translate", "v1", "Translate to {{ lang }}: {{ text }}", {"author": "dave"})
 pm.save("translate", "v2", "Translate the following to {{ lang }}. ONLY the translation:\n{{ text }}")
 tmpl = pm.load("translate", "v2")
 print(tmpl.render(lang="French", text="Hello, world!"))
-```
+```text
 
 ---
 
@@ -362,22 +363,22 @@ class PromptLifecycle:
             return prev
         return None
 
-# Lifecycle workflow
+## Lifecycle workflow
 lc = PromptLifecycle()
 lc.register("summarize", "v1", "Summarize: {text}")
 lc.register("summarize", "v2", "Summarize concisely: {text}")
 lc.promote("summarize", "v1", PromptStage.PRODUCTION)
 lc.promote("summarize", "v2", PromptStage.STAGING)
 
-# Canary: 10% of traffic to v2
-# If metrics degrade, rollback
+## Canary: 10% of traffic to v2
+## If metrics degrade, rollback
 import random
 def route_request(text, canary_percent=0.1):
     use_canary = random.random() < canary_percent
     stage = PromptStage.STAGING if use_canary else PromptStage.PRODUCTION
     prompt = lc.get_prompt("summarize", stage)
     return prompt["template"].format(text=text)
-```
+```text
 
 **Canary deployment strategy**:
 
@@ -403,7 +404,7 @@ class CanaryDeployer:
             print(f"Rolled back to {prev['version']} due to error rate increase")
             return True
         return False
-```
+```text
 
 ---
 
@@ -463,7 +464,7 @@ class PromptEvaluator:
             return True
         return False
 
-# Example usage
+## Example usage
 eval = PromptEvaluator()
 eval.add_test(TestCase(
     input={"text": "The sky is blue."},
@@ -481,7 +482,7 @@ def summarize_v1(**kw):
 
 results = eval.evaluate(summarize_v1)
 print(f"Pass rate: {results['pass_rate']:.0%}")
-```
+```text
 
 **LLM-as-judge evaluation**:
 
@@ -501,7 +502,7 @@ Rate on a scale of 1-5 where 5 is perfect. Return only the number."""
     # Simulated:
     score = 5 if expected.lower() in output.lower() else 3
     return {"score": score, "passed": score >= 4}
-```
+```text
 
 ---
 
@@ -510,28 +511,28 @@ Rate on a scale of 1-5 where 5 is perfect. Return only the number."""
 Automate prompt validation and deployment in CI pipelines.
 
 ```python
-# .github/workflows/prompt-ci.yml
-# name: Prompt CI
-# on:
-#   pull_request:
-#     paths: ['prompts/**']
+## .github/workflows/prompt-ci.yml
+## name: Prompt CI
+## on:
+##   pull_request:
+##     paths: ['prompts/**']
 #
-# jobs:
-#   validate-prompts:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - uses: actions/checkout@v4
-#       - run: pip install -r requirements.txt
-#       - name: Run prompt evaluation
-#         run: python scripts/evaluate_prompts.py
-#       - name: Validate prompt templates
-#         run: python scripts/validate_templates.py
-#       - name: Check for prompt drift
-#         run: python scripts/check_drift.py --baseline production
-```
+## jobs:
+##   validate-prompts:
+##     runs-on: ubuntu-latest
+##     steps:
+##       - uses: actions/checkout@v4
+##       - run: pip install -r requirements.txt
+##       - name: Run prompt evaluation
+##         run: python scripts/evaluate_prompts.py
+##       - name: Validate prompt templates
+##         run: python scripts/validate_templates.py
+##       - name: Check for prompt drift
+##         run: python scripts/check_drift.py --baseline production
+```text
 
 ```python
-# scripts/evaluate_prompts.py — runs in CI
+## scripts/evaluate_prompts.py — runs in CI
 import json
 import sys
 from pathlib import Path
@@ -567,12 +568,12 @@ def validate_all_prompts():
     print("All prompts validated successfully")
 
 validate_all_prompts()
-```
+```text
 
 **Automated prompt deployment**:
 
 ```python
-# scripts/deploy_prompt.py
+## scripts/deploy_prompt.py
 import argparse
 import json
 from prompt_registry import PromptRegistry
@@ -598,7 +599,7 @@ if __name__ == "__main__":
     parser.add_argument("--canary", action="store_true")
     args = parser.parse_args()
     deploy_prompt(args.name, args.version, PromptStage(args.stage), args.canary)
-```
+```text
 
 ---
 
@@ -635,7 +636,7 @@ class PromptRegistry {
     return prompt.template.replace(/{{(\w+)}}/g, (_, key) => variables[key] || "");
   }
 }
-```
+```text
 
 ---
 
@@ -851,6 +852,7 @@ d) Database connection strings
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 16-mlops-production
@@ -860,6 +862,7 @@ d) Database connection strings
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

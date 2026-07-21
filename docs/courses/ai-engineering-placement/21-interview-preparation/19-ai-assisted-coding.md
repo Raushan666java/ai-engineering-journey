@@ -1,17 +1,20 @@
 # AI-Assisted Coding Interviews
 
+
 ## Learning Objectives
 
 After this chapter you will be able to strategically use LLMs during coding interviews, craft effective prompts for problem solving, avoid common pitfalls of AI assistance, and demonstrate understanding of generated code under interviewer scrutiny.
 
+
 ## Introduction
 
-21-interview-preparation is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding ai assisted coding is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering ai assisted coding.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Theory
 
 ```mermaid
@@ -28,6 +31,7 @@ flowchart TD
     G --> I[Explain to Interviewer]
 ```
 
+
 ### The New Interview Reality
 
 Several FAANG companies now allow or expect candidates to use AI tools during interviews. Google has experimented with Codelab (in-browser IDE with AI). Amazon's interview platform supports AI-assisted coding. The skill is no longer whether you can code without help, but how effectively you use the tools available.
@@ -37,6 +41,7 @@ AI assistants in interviews are treated like a super-powered autocomplete and pa
 - Understand every line the AI generates
 - Verify correctness and handle edge cases
 - Make intentional decisions about when to use AI vs when to write code manually
+
 
 ### When to Use the AI
 
@@ -57,6 +62,7 @@ Strategic use of AI during coding rounds:
 - Generate code you cannot explain
 - Rely on AI for company-specific domain knowledge
 
+
 ### Prompting Strategies
 
 When using AI during an interview, structure your prompts like this:
@@ -73,6 +79,7 @@ When using AI during an interview, structure your prompts like this:
 4. **Iterate**: refine based on output
    - "This handles odd-length palindromes but not even-length. Can you modify it to handle both?"
 
+
 ### Common AI Pitfalls
 
 1. **Hallucination**: AI generates plausible-looking but incorrect code. Always verify with a test case mentally.
@@ -84,6 +91,7 @@ When using AI during an interview, structure your prompts like this:
 4. **Memory leaks**: AI-generated code may not clean up resources (event listeners, timers). Check for cleanup.
 
 5. **Security blindness**: AI does not proactively flag security issues in generated code. You must review for injection, exposure, etc.
+
 
 ### Demonstrating Understanding
 
@@ -100,9 +108,12 @@ Prepare for these by:
 3. Adding comments as you understand the code
 4. Being ready to rewrite parts manually if asked
 
+
 ## Examples
 
+
 ### Prompting Examples
+
 
 ### Example 1: Generating Boilerplate
 
@@ -123,6 +134,7 @@ class TreeNode {
 ```
 
 Review: Simple, no errors, exactly what was requested.
+
 
 ### Example 2: Implementing an Algorithm After Explaining Approach
 
@@ -146,6 +158,7 @@ function nextGreaterElement(nums: number[]): number[] {
 ```
 
 Verify mentally: nums=[4,1,2,3]. i=0: stack=[0]. i=1: 1<4, stack=[0,1]. i=2: 2>1, pop 1, result[1]=2. stack=[0,2]. i=3: 3>2, pop 2, result[2]=3. 3<4, stack=[0,3]. Result=[-1,2,3,-1]. Correct.
+
 
 ### Example 3: Generating Test Cases
 
@@ -172,6 +185,7 @@ Good prompt: "I have this function that checks if a string is a valid palindrome
 // Test 6: Only non-alphanumeric
 // isPalindrome(".,") -> true (empty after filtering)
 ```
+
 
 ### Example 4: Refactoring for Performance
 
@@ -207,7 +221,9 @@ function findDuplicates(nums: number[]): number[] {
 }
 ```
 
+
 ## Complete Interview Simulation
+
 
 ### Scenario: LRU Cache
 
@@ -292,13 +308,16 @@ Interviewer probes: "Why do we need dummy head and tail nodes?"
 
 You explain: "They eliminate null checks for edge cases like adding to an empty list. The head and tail always exist, so we never check if head.next or tail.prev is null."
 
+
 ## Setting Up Your Environment
+
 
 ### Tools
 
 - Cursor, GitHub Copilot, or ChatGPT: choose one and practice with it before the interview
 - Learn its tab completion behavior: accept partial completions, edit as you go
 - Configure your IDE keybindings for quick acceptance/rejection of suggestions
+
 
 ### Practice Protocol
 
@@ -313,6 +332,7 @@ During the interview:
 3. Verify with test cases: trace through a small example mentally or with AI
 4. Handle follow-ups: modify code based on interviewer feedback
 
+
 ### What Interviewers Look For
 
 When you use AI in an interview, interviewers evaluate:
@@ -321,6 +341,7 @@ When you use AI in an interview, interviewers evaluate:
 - Can you explain and modify the generated code?
 - Do you use AI as a collaborator or a crutch?
 - Does AI accelerate your solution or distract from the core logic?
+
 
 ### AI Limitations in Interviews
 
@@ -336,17 +357,20 @@ Understanding when AI fails is as important as knowing when it helps:
 
 **Outdated knowledge**: AI training cutoff means it lacks knowledge of recent libraries, APIs, or language features.
 
+
 ### Prompting for Debugging
 
 When using AI to debug:
 
 Good prompt: "This function returns the first non-repeating character but fails for some inputs. Find the bug."
 
+
 ### Prompting for Code Reviews
 
 Good prompt: "Review this code for correctness, performance, and security issues:"
 
 Issues the AI may flag: SQL injection, missing input validation, no error handling, missing pagination, no rate limiting, full table scan.
+
 
 ### Ethical Considerations
 
@@ -355,6 +379,7 @@ Issues the AI may flag: SQL injection, missing input validation, no error handli
 - Be honest when asked about AI use during the interview
 - Do not record interview content or share proprietary code with external AI
 
+
 ### Preparing Your AI Tool Before the Interview
 
 1. Set up your IDE with the AI tool you plan to use (Cursor, Copilot, ChatGPT)
@@ -362,6 +387,7 @@ Issues the AI may flag: SQL injection, missing input validation, no error handli
 3. Configure the AI to prefer TypeScript and your coding style
 4. Test that the AI works in an offline or limited network environment
 5. Have a fallback plan: a mental checklist for writing code manually
+
 
 ### Mock Interview Practice with AI
 
@@ -376,9 +402,11 @@ Practice protocol for AI-assisted interviews:
 The goal: your partner should feel you understand the code as well as if you had written it entirely yourself.
 
 
+
 ## Summary
 
 AI-assisted coding interviews are increasingly common at FAANGs. The key skill is knowing when and how to use AI as a productivity tool while demonstrating your own understanding. Always verify AI-generated code mentally, understand every line, and be ready to modify or explain it. The best candidates use AI for boilerplate and standard algorithms while handling the problem-solving and design thinking themselves.
+
 
 ## Practical Takeaways
 
@@ -389,6 +417,7 @@ AI-assisted coding interviews are increasingly common at FAANGs. The key skill i
 - Add comments to AI-generated code as you understand it — this signals comprehension to the interviewer
 - Practice with the specific AI tool you will use in the interview (Cursor, Copilot, ChatGPT)
 - Have a backup plan: if AI fails or produces incorrect code, be ready to write it yourself
+
 
 ## Chapter Quiz
 
@@ -428,6 +457,7 @@ AI-assisted coding interviews are increasingly common at FAANGs. The key skill i
    // correct: B
 
 #
+
 ## Common Mistakes
 
 1. Not understanding the fundamental concepts before applying them
@@ -445,6 +475,7 @@ AI-assisted coding interviews are increasingly common at FAANGs. The key skill i
 4. In a mock interview with a partner, use AI for one problem and go without for another. Ask your partner to rate your demonstrated understanding in both scenarios.
 
 5. Find and document three examples of AI-generated code that look correct but have subtle bugs (e.g., off-by-one, missing null
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 21-interview-preparation
@@ -454,6 +485,7 @@ AI-assisted coding interviews are increasingly common at FAANGs. The key skill i
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

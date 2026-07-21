@@ -13,12 +13,13 @@
 
 ## Introduction
 
-01-python-programming is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding collections is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering collections.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -41,7 +42,7 @@ flowchart LR
     B --> F[Comprehensions]
     E --> G[Advanced: defaultdict, Counter]
     F --> H[Choosing the Right Collection]
-```
+```text
 
 ## 4.1 Lists
 
@@ -54,18 +55,18 @@ numbers = [1, 2, 3, 4, 5]
 mixed = [1, "hello", 3.14, True]
 nested = [[1, 2], [3, 4], [5, 6]]
 
-# list() constructor
+## list() constructor
 chars = list("hello")
 print(chars)  # ['h', 'e', 'l', 'l', 'o']
 squares = list(range(10))
 print(squares)  # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-# Access and modification
+## Access and modification
 print(numbers[0])     # 1
 print(numbers[-1])    # 5
 numbers[2] = 99       # [1, 2, 99, 4, 5]
 
-# Slicing � returns new list
+## Slicing � returns new list
 print(numbers[1:4])   # [2, 99, 4]
 print(numbers[::-1])  # [5, 4, 99, 2, 1]
 `
@@ -75,29 +76,29 @@ print(numbers[::-1])  # [5, 4, 99, 2, 1]
 `python
 items = [1, 2, 3]
 
-# Adding
+## Adding
 items.append(4)          # [1, 2, 3, 4]
 items.extend([5, 6])     # [1, 2, 3, 4, 5, 6]
 items.insert(0, 0)       # [0, 1, 2, 3, 4, 5, 6]
 
-# Removing
+## Removing
 items.remove(3)          # removes first occurrence of value 3
 popped = items.pop()     # removes and returns last element (6)
 first = items.pop(0)     # removes and returns element at index 0
 items.clear()            # []
 
-# Searching and counting
+## Searching and counting
 nums = [1, 2, 3, 2, 4, 2]
 print(nums.index(2))     # 1 � first occurrence
 print(nums.count(2))     # 3
 print(5 in nums)         # False
 
-# Reordering
+## Reordering
 nums.sort()              # [1, 2, 2, 2, 3, 4]  in-place
 nums.sort(reverse=True)  # [4, 3, 2, 2, 2, 1]
 nums.reverse()           # in-place reversal
 
-# sorted() returns new list
+## sorted() returns new list
 original = [3, 1, 4, 1, 5]
 sorted_copy = sorted(original)
 print(sorted_copy)       # [1, 1, 3, 4, 5]
@@ -107,7 +108,7 @@ print(original)          # [3, 1, 4, 1, 5] � unchanged
 **List copying**:
 
 `python
-# Shallow copy � 3 approaches
+## Shallow copy � 3 approaches
 a = [1, 2, [3, 4]]
 b = a.copy()         # method
 c = list(a)          # constructor
@@ -115,11 +116,11 @@ d = a[:]             # slice
 print(b == a)  # True  � same values
 print(b is a)  # False � different objects
 
-# Shallow copy means nested objects are shared
+## Shallow copy means nested objects are shared
 a[2].append(5)
 print(b[2])  # [3, 4, 5] � affected!
 
-# Deep copy � fully independent
+## Deep copy � fully independent
 import copy
 e = copy.deepcopy(a)
 a[2].append(6)
@@ -131,27 +132,27 @@ print(e[2])  # [3, 4, 5] � independent
 ## 4.2 List Comprehensions
 
 `python
-# Basic transformation
+## Basic transformation
 squares = [x**2 for x in range(10)]
 print(squares)
 
-# With condition
+## With condition
 evens = [x for x in range(20) if x % 2 == 0]
 
-# if-else in expression
+## if-else in expression
 labels = ["even" if x % 2 == 0 else "odd" for x in range(5)]
 print(labels)  # ['even', 'odd', 'even', 'odd', 'even']
 
-# Nested loops
+## Nested loops
 pairs = [(x, y) for x in [1, 2] for y in ["a", "b"]]
 print(pairs)  # [(1, 'a'), (1, 'b'), (2, 'a'), (2, 'b')]
 
-# Flatten matrix
+## Flatten matrix
 matrix = [[1, 2], [3, 4], [5, 6]]
 flat = [num for row in matrix for num in row]
 print(flat)  # [1, 2, 3, 4, 5, 6]
 
-# Transpose matrix
+## Transpose matrix
 transposed = [[row[i] for row in matrix] for i in range(2)]
 print(transposed)  # [[1, 3, 5], [2, 4, 6]]
 `
@@ -163,23 +164,23 @@ print(transposed)  # [[1, 3, 5], [2, 4, 6]]
 Tuples are immutable sequences � they cannot be modified after creation.
 
 `python
-# Creation
+## Creation
 empty = ()
 single = (42,)        # trailing comma required
 pair = (1, 2)
 triple = 1, 2, 3      # parentheses optional
 
-# Tuple unpacking
+## Tuple unpacking
 point = (3, 4)
 x, y = point
 print(f"({x}, {y})")  # (3, 4)
 
-# Swap variables
+## Swap variables
 a, b = 10, 20
 a, b = b, a
 print(a, b)  # 20 10
 
-# Returning multiple values
+## Returning multiple values
 def min_max(items):
     return min(items), max(items)
 
@@ -187,7 +188,7 @@ result = min_max([3, 1, 7, 2, 9])
 low, high = result
 print(low, high)  # 1 9
 
-# Tuple as dictionary keys
+## Tuple as dictionary keys
 locations = {
     (40.7128, -74.0060): "New York",
     (51.5074, -0.1278): "London",
@@ -223,17 +224,17 @@ x, y, z = p            # unpackable
 Sets are unordered collections of unique, hashable elements with O(1) membership testing.
 
 `python
-# Creation
+## Creation
 empty = set()                    # not {} � that's empty dict
 numbers = {1, 2, 3, 4, 5}
 from_list = set([1, 2, 2, 3, 3])
 print(from_list)                 # {1, 2, 3}
 
-# Membership (O(1))
+## Membership (O(1))
 print(3 in numbers)   # True
 print(99 in numbers)  # False
 
-# Adding and removing
+## Adding and removing
 nums = {1, 2, 3}
 nums.add(4)          # {1, 2, 3, 4}
 nums.add(2)          # {1, 2, 3, 4} � no effect (already present)
@@ -255,13 +256,13 @@ print(a - b)   # Difference:   {1, 2}     (in a not in b)
 print(b - a)   # Difference:   {5, 6}     (in b not in a)
 print(a ^ b)   # Symmetric:    {1, 2, 5, 6} (in either, not both)
 
-# Comparison
+## Comparison
 print(a == b)           # False
 print({1, 2} < a)       # True � proper subset
 print(a > {1, 2})       # True � proper superset
 print(a.isdisjoint(b))  # False � they share {3, 4}
 
-# Frozen set � immutable, hashable
+## Frozen set � immutable, hashable
 fs = frozenset([1, 2, 3])
 print(fs)  # frozenset({1, 2, 3})
 `
@@ -273,30 +274,30 @@ print(fs)  # frozenset({1, 2, 3})
 Dictionaries map unique keys to values with O(1) average lookup.
 
 `python
-# Creation
+## Creation
 empty = {}
 scores = {"Alice": 95, "Bob": 87, "Charlie": 92}
 pairs = dict([("a", 1), ("b", 2)])
 comprehension = {x: x**2 for x in range(5)}
 
-# Access
+## Access
 print(scores["Alice"])       # 95
 print(scores.get("David"))   # None � safe access
 print(scores.get("David", 0))  # 0 � with default
 
-# KeyError for missing key
-# print(scores["David"])  # KeyError
+## KeyError for missing key
+## print(scores["David"])  # KeyError
 
-# Adding and modifying
+## Adding and modifying
 scores["David"] = 88         # add new
 scores["Alice"] = 96         # update existing
 
-# Deleting
+## Deleting
 del scores["Bob"]            # remove key
 popped = scores.pop("David") # remove and return value
 scores.clear()               # remove all
 
-# Checking keys
+## Checking keys
 print("Alice" in scores)     # True
 print(len(scores))           # 2
 `
@@ -306,22 +307,22 @@ print(len(scores))           # 2
 `python
 data = {"a": 1, "b": 2, "c": 3}
 
-# Keys, values, items
+## Keys, values, items
 print(data.keys())    # dict_keys(['a', 'b', 'c'])
 print(data.values())  # dict_values([1, 2, 3])
 print(data.items())   # dict_items([('a', 1), ('b', 2), ('c', 3)])
 
-# Iterating
+## Iterating
 for key, value in data.items():
     print(f"{key}={value}")
 
-# Merging (Python 3.9+)
+## Merging (Python 3.9+)
 d1 = {"a": 1, "b": 2}
 d2 = {"b": 3, "c": 4}
 merged = d1 | d2
 print(merged)  # {'a': 1, 'b': 3, 'c': 4}
 
-# Older merge
+## Older merge
 d1.update(d2)  # merges d2 into d1
 print(d1)      # {'a': 1, 'b': 3, 'c': 4}
 `
@@ -331,21 +332,21 @@ print(d1)      # {'a': 1, 'b': 3, 'c': 4}
 `python
 from collections import defaultdict
 
-# Group items by key
+## Group items by key
 words = ["apple", "banana", "apple", "cherry", "banana", "apple"]
 counts = defaultdict(int)
 for word in words:
     counts[word] += 1
 print(dict(counts))  # {'apple': 3, 'banana': 2, 'cherry': 1}
 
-# List as default
+## List as default
 groups = defaultdict(list)
 students = [("A", "Alice"), ("B", "Bob"), ("A", "Charlie")]
 for grade, name in students:
     groups[grade].append(name)
 print(dict(groups))  # {'A': ['Alice', 'Charlie'], 'B': ['Bob']}
 
-# Default factory � nested dict
+## Default factory � nested dict
 nested = defaultdict(lambda: defaultdict(int))
 nested["Alice"]["math"] = 95
 nested["Bob"]["science"] = 88
@@ -356,16 +357,16 @@ nested["Bob"]["science"] = 88
 `python
 from collections import Counter
 
-# Frequency counting
+## Frequency counting
 text = "mississippi"
 counter = Counter(text)
 print(counter)        # Counter({'i': 4, 's': 4, 'p': 2, 'm': 1})
 print(counter["i"])   # 4
 
-# Most common
+## Most common
 print(counter.most_common(2))  # [('i', 4), ('s', 4)]
 
-# Arithmetic
+## Arithmetic
 c1 = Counter(a=3, b=1)
 c2 = Counter(a=1, b=2)
 print(c1 + c2)  # Counter({'a': 4, 'b': 3})
@@ -588,6 +589,7 @@ d) [1, 2, 3]
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 01-python-programming
@@ -597,6 +599,7 @@ d) [1, 2, 3]
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

@@ -13,12 +13,13 @@
 
 ## Introduction
 
-01-python-programming is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding strings and formatting is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering strings and formatting.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -39,7 +40,7 @@ flowchart LR
     C --> D[Regular Expressions]
     D --> E[Unicode & Encoding]
     E --> F[Performance + Best Practices]
-```
+```text
 
 ## 3.1 String Methods
 
@@ -55,12 +56,12 @@ print(text.title())        # "  Hello, Python World!  "
 print(text.swapcase())     # "  hELLO, pYTHON wORLD!  "
 print(text.capitalize())   # "  hello, python world!  "
 
-# Stripping whitespace
+## Stripping whitespace
 print(text.strip())        # "Hello, Python World!"
 print(text.lstrip())       # "Hello, Python World!  "
 print(text.rstrip())       # "  Hello, Python World!"
 
-# Splitting and joining
+## Splitting and joining
 csv = "apple,banana,cherry"
 fruits = csv.split(",")
 print(fruits)              # ['apple', 'banana', 'cherry']
@@ -68,14 +69,14 @@ print(fruits)              # ['apple', 'banana', 'cherry']
 joined = " | ".join(fruits)
 print(joined)              # "apple | banana | cherry"
 
-# Splitting with maxsplit
+## Splitting with maxsplit
 data = "a b c d e"
 print(data.split(" ", 2))  # ['a', 'b', 'c d e']
 
-# rsplit � splits from the right
+## rsplit � splits from the right
 print(data.rsplit(" ", 2)) # ['a b c', 'd', 'e']
 
-# splitlines � handles different line endings
+## splitlines � handles different line endings
 lines = "line1\nline2\r\nline3"
 print(lines.splitlines())  # ['line1', 'line2', 'line3']
 `
@@ -120,30 +121,30 @@ Slicing extracts substrings using the [start:stop:step] notation. All three comp
 `python
 s = "Python Programming"
 
-# Basic slicing
+## Basic slicing
 print(s[0:6])     # "Python"   � indices 0 through 5
 print(s[:6])      # "Python"   � start defaults to 0
 print(s[7:])      # "Programming" � stop defaults to end
 print(s[:])       # "Python Programming" � full copy
 
-# Negative indices (count from end)
+## Negative indices (count from end)
 print(s[-1])      # "g" � last character
 print(s[-11:])    # "Programming"
 print(s[-11:-4])  # "Progra"
 
-# Step (stride)
+## Step (stride)
 print(s[::2])     # "Pto rgramn"  � every 2nd character
 print(s[1::2])    # "yh nrmig"   � every 2nd starting at 1
 print(s[::-1])    # "gnimmargorP nohtyP" � reversed!
 
-# Negative step
+## Negative step
 print(s[10:4:-1]) # "margor" � reversed slice
 `
 
 **Practical slicing patterns**:
 
 `python
-# Palindrome check
+## Palindrome check
 def is_palindrome(s):
     s = s.lower().replace(" ", "")
     return s == s[::-1]
@@ -151,18 +152,18 @@ def is_palindrome(s):
 print(is_palindrome("racecar"))        # True
 print(is_palindrome("A man a plan canal Panama"))  # True
 
-# First, last, middle characters
+## First, last, middle characters
 word = "Python"
 first = word[0]
 last = word[-1]
 middle = word[len(word)//2]
 print(first, last, middle)  # P n h
 
-# Every nth character
+## Every nth character
 print("abcdefgh"[::2])   # "aceg"
 print("abcdefgh"[1::2])  # "bdfh"
 
-# Remove first/last character
+## Remove first/last character
 print("Hello"[1:-1])     # "ell"
 `
 
@@ -179,13 +180,13 @@ name = "Alice"
 age = 30
 balance = 1234.5678
 
-# Basic
+## Basic
 print(f"{name} is {age} years old")
 
-# Expressions
+## Expressions
 print(f"{2 * 3 * 5 = }")  # "2 * 3 * 5 = 30"
 
-# Format specifiers
+## Format specifiers
 print(f"{balance:.2f}")      # "1234.57" � 2 decimal places
 print(f"{balance:>10.2f}")   # "   1234.57" � right align in width 10
 print(f"{balance:<10.2f}")   # "1234.57   " � left align
@@ -193,7 +194,7 @@ print(f"{balance:^10.2f}")   # " 1234.57  " � center
 print(f"{balance:010.2f}")   # "0001234.57" � zero padding
 print(f"{balance:,.2f}")     # "1,234.57" � thousands separator
 
-# Formatting types
+## Formatting types
 print(f"{42:b}")    # "101010" � binary
 print(f"{42:o}")    # "52" � octal
 print(f"{42:x}")    # "2a" � hex lowercase
@@ -208,7 +209,7 @@ print("{} is {} years old".format("Alice", 30))
 print("{name} is {age} years old".format(name="Bob", age=25))
 print("{:>10.2f}".format(3.14159))
 
-# Accessing dictionary
+## Accessing dictionary
 data = {"name": "Charlie", "score": 95}
 print("Name: {0[name]}, Score: {0[score]}".format(data))
 `
@@ -239,7 +240,7 @@ import re
 
 text = "Contact: alice@email.com or bob@example.co.uk"
 
-# re.search � find first match
+## re.search � find first match
 pattern = r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b"
 match = re.search(pattern, text)
 if match:
@@ -247,19 +248,19 @@ if match:
     print(match.start())      # 9
     print(match.end())        # 25
 
-# re.findall � find all matches
+## re.findall � find all matches
 emails = re.findall(pattern, text)
 print(emails)  # ['alice@email.com', 'bob@example.co.uk']
 
-# re.finditer � iterator of match objects
+## re.finditer � iterator of match objects
 for m in re.finditer(r"\w+@\w+\.\w+", text):
     print(m.group())
 
-# re.match � match at beginning only
+## re.match � match at beginning only
 print(re.match(r"Contact", text))   # Match object
 print(re.match(r"alice", text))     # None
 
-# re.fullmatch � entire string must match
+## re.fullmatch � entire string must match
 print(re.fullmatch(r"\d{5}", "12345"))  # Match
 print(re.fullmatch(r"\d{5}", "12345-")) # None
 `
@@ -267,13 +268,13 @@ print(re.fullmatch(r"\d{5}", "12345-")) # None
 **Groups and capturing**:
 
 `python
-# Named groups
+## Named groups
 pattern = r"(?P<name>\w+)@(?P<domain>\w+\.\w+)"
 match = re.search(pattern, "user@example.com")
 print(match.group("name"))    # "user"
 print(match.group("domain"))  # "example.com"
 
-# Non-capturing groups
+## Non-capturing groups
 text = "abc123 def456"
 pattern = r"(?:\w+)(\d+)"
 matches = re.findall(pattern, text)
@@ -285,18 +286,18 @@ print(matches)  # ['123', '456']
 `python
 text = "Hello, my number is 123-456-7890"
 
-# Replace with string
+## Replace with string
 result = re.sub(r"\d{3}-\d{3}-\d{4}", "[REDACTED]", text)
 print(result)  # "Hello, my number is [REDACTED]"
 
-# Replace with function
+## Replace with function
 def mask_digit(match):
     return "*" * len(match.group())
 
 result = re.sub(r"\d", mask_digit, text)
 print(result)  # "Hello, my number is ***-***-****"
 
-# Replace with backreferences
+## Replace with backreferences
 text = "2024-03-15"
 result = re.sub(r"(\d{4})-(\d{2})-(\d{2})", r"\3/\2/\1", text)
 print(result)  # "15/03/2024"
@@ -320,16 +321,16 @@ for name, pattern in patterns.items():
     if matches:
         print(f"{name}: {matches}")
 
-# Output:
-# url: ['https://example.com']
-# phone: ['555-123-4567']
-# hashtag: ['#AI']
+## Output:
+## url: ['https://example.com']
+## phone: ['555-123-4567']
+## hashtag: ['#AI']
 `
 
 **Compiled patterns** (faster for repeated use):
 
 `python
-# Compile once, use many times
+## Compile once, use many times
 email_re = re.compile(r"[\w.-]+@[\w.-]+")
 
 texts = ["user1@test.com", "no-email", "user2@test.org"]
@@ -338,10 +339,10 @@ for text in texts:
     if match:
         print(f"Found: {match.group()}")
 
-# With flags
+## With flags
 case_insensitive = re.compile(r"python", re.IGNORECASE)
 print(case_insensitive.findall("Python python PYTHON"))
-# ['Python', 'python', 'PYTHON']
+## ['Python', 'python', 'PYTHON']
 `
 
 ---
@@ -351,29 +352,29 @@ print(case_insensitive.findall("Python python PYTHON"))
 Python 3 strings are Unicode by default. Encoding converts str to bytes; decoding converts bytes to str.
 
 `python
-# str -> bytes (encoding)
+## str -> bytes (encoding)
 text = "Hello, ??"
 utf8_bytes = text.encode("utf-8")
 print(utf8_bytes)         # b'Hello, \xe4\xb8\x96\xe7\x95\x8c'
 print(type(utf8_bytes))   # <class 'bytes'>
 
-# bytes -> str (decoding)
+## bytes -> str (decoding)
 decoded = utf8_bytes.decode("utf-8")
 print(decoded)            # "Hello, ??"
 
-# Common encodings
+## Common encodings
 print("Hello".encode("ascii"))         # b'Hello'
 print("Hello".encode("utf-16"))        # b'\xff\xfeH\x00e\x00l\x00l\x00o\x00'
 print("�".encode("utf-8"))             # b'\xe2\x82\xac'
 print("�".encode("latin-1"))           # UnicodeEncodeError (� not in latin-1)
 
-# Error handling
+## Error handling
 text = "caf�"
-# Ignore errors
+## Ignore errors
 print(text.encode("ascii", errors="ignore"))    # b'caf'
-# Replace errors
+## Replace errors
 print(text.encode("ascii", errors="replace"))   # b'caf?'
-# XML charref
+## XML charref
 print(text.encode("ascii", errors="xmlcharrefreplace"))  # b'caf&#233;'
 `
 
@@ -387,7 +388,7 @@ print(unicodedata.name(char))      # "LATIN SMALL LETTER E WITH ACUTE"
 print(unicodedata.category(char))  # "Ll" (lowercase letter)
 print(unicodedata.east_asian_width(char))  # "N" (narrow)
 
-# Normalization � handles composed vs decomposed forms
+## Normalization � handles composed vs decomposed forms
 nfc = "�"  # composed: U+00E9
 nfd = "e\u0301"  # decomposed: e + combining acute accent
 print(nfc == nfd)            # False (different code points)
@@ -415,7 +416,7 @@ def good_concat(n):
         parts.append(str(i))
     return "".join(parts)  # O(n)
 
-# Timing comparison
+## Timing comparison
 n = 10000
 start = time.time()
 bad_concat(n)
@@ -429,11 +430,11 @@ print(f"good: {time.time() - start:.4f}s")
 **String builder pattern**:
 
 `python
-# Using list + join (preferred)
+## Using list + join (preferred)
 def build_sentence(words):
     return " ".join(words)
 
-# Using io.StringIO for large builds
+## Using io.StringIO for large builds
 from io import StringIO
 
 def build_large_text(lines):
@@ -640,6 +641,7 @@ d) esult = f"{parts}"
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 01-python-programming
@@ -649,6 +651,7 @@ d) esult = f"{parts}"
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

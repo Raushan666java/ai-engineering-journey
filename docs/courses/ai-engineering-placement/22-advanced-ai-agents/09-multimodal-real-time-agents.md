@@ -12,12 +12,13 @@
 
 ## Introduction
 
-22-advanced-ai-agents is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding multimodal real time agents is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering multimodal real time agents.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -49,7 +50,7 @@ flowchart LR
         VLA --> MOTOR[Motor Commands]
         MOTOR --> CAM
     end
-```
+```text
 
 ## 9.1 Three Voice Paradigms
 
@@ -99,7 +100,7 @@ class VoiceParadigmCatalog {
         return map[useCase] ?? 'Cascaded (ASR → LLM → TTS)'
     }
 }
-```
+```text
 
 ```python
 from enum import Enum
@@ -131,7 +132,7 @@ class VoiceAgentConfig:
             },
         }
         return latencies.get(paradigm, {})
-```
+```text
 
 ## 9.2 Streaming Voice Pipeline
 
@@ -263,7 +264,7 @@ class StreamingVoicePipeline {
         }
     }
 }
-```
+```text
 
 ## 9.3 Computer Use Agents
 
@@ -383,7 +384,7 @@ class ComputerUseAgent {
         }
     }
 }
-```
+```text
 
 ```python
 from typing import List, Optional
@@ -448,7 +449,7 @@ class ComputerUseAgent:
             'total_actions': len(self.action_log),
             'success': True,
         }
-```
+```text
 
 ## 9.4 Vision-Language-Action (VLA) Pipelines
 
@@ -575,7 +576,7 @@ class VLAPipeline {
         }
     }
 }
-```
+```text
 
 ## 9.5 Real-Time Evaluation
 
@@ -665,7 +666,7 @@ class RealTimeEvaluator {
         ].join('\n')
     }
 }
-```
+```text
 
 ```python
 from typing import List
@@ -700,7 +701,7 @@ class LatencyProfiler:
             'tts_latency_ms': self.measure_segment('llm_end', 'audio_play_start'),
             'end_to_end_ms': self.measure_segment('audio_start', 'audio_play_start'),
         }
-```
+```text
 
 ## Summary
 
@@ -760,6 +761,7 @@ Implement collision detection and force limiting for a simulated robotic arm. Te
 ### Exercise 5: Real-Time Latency Dashboard
 
 Build a latency profiler that measures each pipeline component and reports p50, p95, and p99 l
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 22-advanced-ai-agents
@@ -769,6 +771,7 @@ Build a latency profiler that measures each pipeline component and reports p50, 
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

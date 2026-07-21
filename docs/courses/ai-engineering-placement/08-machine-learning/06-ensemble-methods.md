@@ -13,12 +13,13 @@
 
 ## Introduction
 
-08-machine-learning is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding ensemble methods is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering ensemble methods.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -47,7 +48,7 @@ flowchart TD
     style C fill:#4a90d9,color:#fff
     style D fill:#e85d75,color:#fff
     style E fill:#50b86c,color:#fff
-```
+```text
 
 ## 6.1 Ensemble Paradigms
 
@@ -93,7 +94,7 @@ X_ens_test, y_ens_test = X_ens[400:], y_ens[400:]
 results = compare_ensembles(X_ens_train, y_ens_train, X_ens_test, y_ens_test)
 for name, metrics in results.items():
     print(f"{name:25s}: train={metrics['train_acc']:.3f}, test={metrics['test_acc']:.3f}")
-```
+```text
 
 ---
 
@@ -144,12 +145,12 @@ class AdaBoost:
         return (predictions > 0).astype(int)
 
 
-# Test AdaBoost
+## Test AdaBoost
 ada = AdaBoost(n_estimators=50)
 ada.fit(X_ens_train, y_ens_train)
 ada_preds = ada.predict(X_ens_test)
 print(f"AdaBoost accuracy: {accuracy_score(y_ens_test, ada_preds):.3f}")
-```
+```text
 
 **AdaBoost algorithm**:
 1. Initialize sample weights wᵢ = 1/n
@@ -205,7 +206,7 @@ class GradientBoostingRegressorScratch:
         return pred
 
 
-# Test gradient boosting
+## Test gradient boosting
 np.random.seed(42)
 X_gb = np.linspace(0, 10, 200).reshape(-1, 1)
 y_gb = np.sin(X_gb).ravel() + np.random.randn(200) * 0.1
@@ -213,7 +214,7 @@ y_gb = np.sin(X_gb).ravel() + np.random.randn(200) * 0.1
 gb = GradientBoostingRegressorScratch(n_estimators=100, learning_rate=0.1, max_depth=3)
 loss = gb.fit(X_gb, y_gb)
 print(f"Initial loss: {loss[0]:.4f}, Final loss: {loss[-1]:.4f}")
-```
+```text
 
 **Gradient Boosting for Classification**: Use log-loss (cross-entropy) as the loss function. The initial prediction is log(odds) = ½ln((n₁+1)/(n₀+1)). Each tree predicts the gradient of log-loss w.r.t. the prediction.
 
@@ -368,7 +369,7 @@ xgb = SimpleXGBoost(n_estimators=50, learning_rate=0.1, max_depth=3)
 history = xgb.fit(X_ens_train, y_ens_train)
 xgb_preds = xgb.predict(X_ens_test)
 print(f"XGBoost accuracy: {accuracy_score(y_ens_test, xgb_preds):.3f}")
-```
+```text
 
 **XGBoost vs Standard Gradient Boosting**:
 
@@ -484,7 +485,7 @@ gradients = np.random.randn(1000)
 hessians = np.ones(1000)
 selected, weights = goss.goss_sampling(gradients, hessians)
 print(f"GOSS: selected {len(selected)}/{1000} samples")
-```
+```text
 
 **LightGBM vs XGBoost**:
 
@@ -564,7 +565,7 @@ class StackingClassifier:
         return self.meta_model.predict_proba(meta_features)
 
 
-# Test stacking
+## Test stacking
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import SVC
@@ -581,12 +582,12 @@ stack.fit(X_ens_train, y_ens_train)
 stack_preds = stack.predict(X_ens_test)
 print(f"Stacking accuracy: {accuracy_score(y_ens_test, stack_preds):.3f}")
 
-# Compare single models vs ensemble
+## Compare single models vs ensemble
 for name, model in base_models:
     model.fit(X_ens_train, y_ens_train)
     acc = accuracy_score(y_ens_test, model.predict(X_ens_test))
     print(f"  {name:10s}: {acc:.3f}")
-```
+```text
 
 **Blending** (simpler version of stacking): Hold out a validation set (e.g., 10%), train base models on training data, predict on validation set, then train meta-model on validation predictions. Faster than stacking but uses less data.
 
@@ -645,7 +646,7 @@ class AdaBoostTS implements EnsembleModel {
     return scores.map((s) => (s > 0 ? 1 : 0));
   }
 }
-```
+```text
 
 ## Summary
 
@@ -762,6 +763,7 @@ d) Residuals
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 08-machine-learning
@@ -771,6 +773,7 @@ d) Residuals
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

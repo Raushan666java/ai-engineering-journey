@@ -6,12 +6,13 @@ After this chapter you will be able to choose between B-tree and LSM-tree storag
 
 ## Introduction
 
-00-core-computer-science is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding database internals is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering database internals.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Theory
 
 ### B-tree vs LSM-tree
@@ -38,7 +39,7 @@ graph TB
         M --> L0
         L0 --> L1
     end
-```
+```text
 
 Cassandra and RocksDB use LSM-trees. PostgreSQL and MySQL InnoDB use B-trees. For vector databases, IVF (inverted file index) and HNSW (hierarchical navigable small world) are the dominant index structures.
 
@@ -96,7 +97,7 @@ sequenceDiagram
     F1-->>L: ACK
     F2-->>L: ACK
     L->>C: Committed (majority)
-```
+```text
 
 Raft's leader election: nodes start as followers, become candidates on timeout, request votes, become leader with majority. Log replication: leader appends entries, replicates to followers, commits when majority acknowledges.
 
@@ -475,7 +476,7 @@ class ConsistentHashRing {
         }
     }
 }
-```
+```text
 
 ## Summary
 
@@ -544,6 +545,7 @@ Database internals knowledge is essential for building scalable AI infrastructur
 3. Build a cost-based query planner that chooses between hash join and nested loop join given table sizes and sort status.
 
 4. Simulate a Raft cluster of 5 nodes with a random network partition and verify availability and consis
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 00-core-computer-science
@@ -553,6 +555,7 @@ Database internals knowledge is essential for building scalable AI infrastructur
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

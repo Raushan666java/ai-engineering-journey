@@ -13,12 +13,13 @@
 
 ## Introduction
 
-01-python-programming is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding pandas basics is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering pandas basics.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -41,7 +42,7 @@ flowchart LR
     C --> F[Transform: apply/map]
     C --> G[GroupBy]
     C --> H[Merge/Join/Concat]
-```
+```text
 
 ## 12.1 Series & DataFrame
 
@@ -49,20 +50,20 @@ flowchart LR
 import pandas as pd
 import numpy as np
 
-# Series � 1D labeled array
+## Series � 1D labeled array
 s = pd.Series([10, 20, 30, 40], index=["a", "b", "c", "d"])
 print(s)
-# a    10
-# b    20
-# c    30
-# d    40
-# dtype: int64
+## a    10
+## b    20
+## c    30
+## d    40
+## dtype: int64
 
 print(s["b"])   # 20
 print(s.values)  # [10 20 30 40]
 print(s.index)   # Index(['a', 'b', 'c', 'd'], dtype='object')
 
-# DataFrame � 2D table
+## DataFrame � 2D table
 df = pd.DataFrame({
     "name": ["Alice", "Bob", "Charlie"],
     "age": [25, 30, 35],
@@ -78,11 +79,11 @@ print(df.describe())  # summary statistics
 ## 12.2 Indexing
 
 `python
-# Column access
+## Column access
 print(df["name"])       # Series
 print(df[["name", "salary"]])  # DataFrame
 
-# Row access � iloc (integer) vs loc (label)
+## Row access � iloc (integer) vs loc (label)
 print(df.iloc[0])       # first row
 print(df.iloc[1:3])     # rows 1-2
 print(df.iloc[:, 0:2])  # all rows, first 2 cols
@@ -90,16 +91,16 @@ print(df.iloc[:, 0:2])  # all rows, first 2 cols
 print(df.loc[0])        # first row by index label
 print(df.loc[0:2, "name"])  # rows 0-2, name column
 
-# Boolean filtering
+## Boolean filtering
 print(df[df["age"] > 28])
 print(df[(df["age"] > 25) & (df["salary"] > 75000)])
 print(df.query("age > 28 and salary > 75000"))  # alternative
 
-# Setting index
+## Setting index
 df_indexed = df.set_index("name")
 print(df_indexed.loc["Bob"])
 
-# Reset index
+## Reset index
 df_reset = df_indexed.reset_index()
 `
 
@@ -112,26 +113,26 @@ df = pd.DataFrame({
     "C": ["x", "y", "z", None]
 })
 
-# Detecting missing
+## Detecting missing
 print(df.isnull())
 print(df.isnull().sum())  # count NaN per column
 
-# Drop missing
+## Drop missing
 print(df.dropna())              # drop rows with any NaN
 print(df.dropna(axis=1))        # drop columns with any NaN
 print(df.dropna(thresh=2))      # keep rows with at least 2 non-NaN
 
-# Fill missing
+## Fill missing
 print(df.fillna(0))                          # fill with 0
 print(df.fillna({"A": df["A"].mean(), "B": 0}))  # per column
 print(df.ffill())    # forward fill
 print(df.bfill())    # backward fill
 
-# Interpolate
+## Interpolate
 s = pd.Series([1, np.nan, np.nan, 4])
 print(s.interpolate())  # [1, 2, 3, 4]
 
-# Duplicates
+## Duplicates
 df = pd.DataFrame({"x": [1, 1, 2, 2, 3], "y": [10, 10, 20, 30, 40]})
 print(df.duplicated())         # True for duplicate rows
 print(df.drop_duplicates())    # remove duplicates
@@ -147,22 +148,22 @@ df = pd.DataFrame({
     "salary": [70000, 80000, 90000]
 })
 
-# apply � apply function to axis
+## apply � apply function to axis
 df["age_squared"] = df["age"].apply(lambda x: x ** 2)
 df["salary_category"] = df["salary"].apply(
     lambda s: "High" if s > 80000 else "Medium" if s > 70000 else "Low"
 )
 
-# map � replace values (Series only)
+## map � replace values (Series only)
 df["name_upper"] = df["name"].map(str.upper)
 
-# assign � add multiple columns
+## assign � add multiple columns
 df = df.assign(
     bonus=lambda d: d["salary"] * 0.1,
     total=lambda d: d["salary"] + d["bonus"]
 )
 
-# pipe � chain operations
+## pipe � chain operations
 def add_tenure(df, years=1):
     df["tenure"] = years
     return df
@@ -179,30 +180,30 @@ df = pd.DataFrame({
     "salary": [75000, 68000, 82000, 72000]
 })
 
-# Single aggregation
+## Single aggregation
 print(df.groupby("dept")["salary"].mean())
-# dept
-# Eng      71500
-# Sales    77000
+## dept
+## Eng      71500
+## Sales    77000
 
-# Multiple aggregations
+## Multiple aggregations
 print(df.groupby("dept")["salary"].agg(["count", "mean", "std", "min", "max"]))
 
-# Different agg per column
+## Different agg per column
 print(df.groupby("dept").agg({
     "salary": ["mean", "std"],
     "name": "count"
 }))
 
-# transform � same shape as original
+## transform � same shape as original
 df["salary_rank"] = df.groupby("dept")["salary"].transform(
     lambda x: x.rank()
 )
 
-# filter groups
+## filter groups
 print(df.groupby("dept").filter(lambda g: g["salary"].mean() > 72000))
 
-# Custom aggregation
+## Custom aggregation
 def salary_range(x):
     return x.max() - x.min()
 
@@ -215,24 +216,24 @@ print(df.groupby("dept")["salary"].agg(salary_range))
 df1 = pd.DataFrame({"id": [1, 2, 3], "name": ["Alice", "Bob", "Charlie"]})
 df2 = pd.DataFrame({"id": [1, 2, 4], "score": [95, 87, 92]})
 
-# Merge (like SQL JOIN)
+## Merge (like SQL JOIN)
 print(pd.merge(df1, df2, on="id", how="inner"))
 print(pd.merge(df1, df2, on="id", how="left"))
 print(pd.merge(df1, df2, on="id", how="outer"))
 
-# Merge on different column names
+## Merge on different column names
 pd.merge(df1, df2, left_on="id", right_on="user_id")
 
-# Concatenation
+## Concatenation
 df_a = pd.DataFrame({"x": [1, 2]})
 df_b = pd.DataFrame({"x": [3, 4]})
 print(pd.concat([df_a, df_b]))  # row-wise
 print(pd.concat([df_a, df_b], axis=1))  # column-wise
 
-# With keys
+## With keys
 print(pd.concat([df_a, df_b], keys=["A", "B"]))
 
-# Join on index
+## Join on index
 df1.set_index("id").join(df2.set_index("id"), how="left")
 `
 
@@ -357,18 +358,18 @@ console.log(df.mean());
 import pandas as pd
 import numpy as np
 
-# Creating datetime ranges
+## Creating datetime ranges
 dates = pd.date_range("2024-01-01", periods=10, freq="D")
 print(dates)
-# DatetimeIndex(['2024-01-01', '2024-01-02', ..., '2024-01-10'])
+## DatetimeIndex(['2024-01-01', '2024-01-02', ..., '2024-01-10'])
 
-# Time series DataFrame
+## Time series DataFrame
 ts_df = pd.DataFrame({
     "value": np.random.randn(10)
 }, index=dates)
 print(ts_df)
 
-# Resampling
+## Resampling
 hourly = pd.date_range("2024-01-01", periods=24 * 7, freq="H")
 df_hourly = pd.DataFrame({
     "value": np.random.randn(len(hourly))
@@ -377,21 +378,21 @@ df_hourly = pd.DataFrame({
 daily_mean = df_hourly.resample("D").mean()
 weekly_max = df_hourly.resample("W").max()
 
-# Shifting and lagging
+## Shifting and lagging
 df_hourly["lag_1"] = df_hourly["value"].shift(1)
 df_hourly["diff_1"] = df_hourly["value"].diff()
 df_hourly["pct_change"] = df_hourly["value"].pct_change()
 
-# Rolling windows
+## Rolling windows
 df_hourly["rolling_mean_3"] = df_hourly["value"].rolling(window=3).mean()
 df_hourly["rolling_std_6"] = df_hourly["value"].rolling(window=6).std()
 df_hourly["expanding_mean"] = df_hourly["value"].expanding().mean()
 
-# Date-based filtering
+## Date-based filtering
 january_data = ts_df[ts_df.index.month == 1]
 weekday_data = ts_df[ts_df.index.dayofweek < 5]
 
-# Time zone handling
+## Time zone handling
 ts_utc = pd.Timestamp("2024-01-01 12:00", tz="UTC")
 ts_ny = ts_utc.tz_convert("America/New_York")
 print(ts_ny)  # 2024-01-01 07:00:00-05:00
@@ -400,29 +401,29 @@ print(ts_ny)  # 2024-01-01 07:00:00-05:00
 ## 12.8 File I/O Operations
 
 `python
-# CSV
+## CSV
 df.to_csv("output.csv", index=False)
 df_csv = pd.read_csv("output.csv")
 
-# Excel (requires openpyxl or xlrd)
-# df.to_excel("output.xlsx", sheet_name="Sheet1", index=False)
-# df_excel = pd.read_excel("output.xlsx", sheet_name="Sheet1")
+## Excel (requires openpyxl or xlrd)
+## df.to_excel("output.xlsx", sheet_name="Sheet1", index=False)
+## df_excel = pd.read_excel("output.xlsx", sheet_name="Sheet1")
 
-# JSON
+## JSON
 df.to_json("output.json", orient="records", indent=2)
 df_json = pd.read_json("output.json", orient="records")
 
-# Parquet (efficient columnar format)
-# df.to_parquet("output.parquet")
-# df_pq = pd.read_parquet("output.parquet")
+## Parquet (efficient columnar format)
+## df.to_parquet("output.parquet")
+## df_pq = pd.read_parquet("output.parquet")
 
-# SQL databases
+## SQL databases
 from sqlalchemy import create_engine
 engine = create_engine("sqlite:///database.db")
 df.to_sql("employees", engine, if_exists="replace", index=False)
 df_sql = pd.read_sql("SELECT * FROM employees WHERE age > 30", engine)
 
-# Reading with options
+## Reading with options
 df_large = pd.read_csv("large.csv", chunksize=10000)  # iterator
 df_cols = pd.read_csv("data.csv", usecols=["name", "age", "salary"])
 df_dtypes = pd.read_csv("data.csv", dtype={"age": "int8", "salary": "float32"})
@@ -431,28 +432,28 @@ df_dtypes = pd.read_csv("data.csv", dtype={"age": "int8", "salary": "float32"})
 ## 12.9 Advanced Indexing Techniques
 
 `python
-# MultiIndex (hierarchical index)
+## MultiIndex (hierarchical index)
 arrays = [["A", "A", "B", "B"], [1, 2, 1, 2]]
 index = pd.MultiIndex.from_arrays(arrays, names=["group", "sub"])
 df_multi = pd.DataFrame({"value": [10, 20, 30, 40]}, index=index)
 print(df_multi)
-#              value
-# group sub
-# A     1        10
-#       2        20
-# B     1        30
-#       2        40
+##              value
+## group sub
+## A     1        10
+##       2        20
+## B     1        30
+##       2        40
 
-# Selection with MultiIndex
+## Selection with MultiIndex
 print(df_multi.loc["A"])            # all rows for group A
 print(df_multi.loc[("A", 1)])       # specific sub-group
 print(df_multi.xs(1, level="sub"))  # cross-section
 
-# Stack and unstack
+## Stack and unstack
 df_wide = df_multi.unstack()  # convert index to columns
 df_long = df_wide.stack()     # convert columns back to index
 
-# pivot_table for summary
+## pivot_table for summary
 df_sales = pd.DataFrame({
     "date": ["2024-01", "2024-01", "2024-02", "2024-02"],
     "product": ["A", "B", "A", "B"],
@@ -463,12 +464,12 @@ pivot = df_sales.pivot_table(
     aggfunc="sum", fill_value=0
 )
 print(pivot)
-# product     A    B
-# date
-# 2024-01   100  200
-# 2024-02   150  250
+## product     A    B
+## date
+## 2024-01   100  200
+## 2024-02   150  250
 
-# Melt (unpivot)
+## Melt (unpivot)
 df_melted = pd.melt(
     pivot.reset_index(),
     id_vars=["date"],
@@ -487,26 +488,26 @@ df = pd.DataFrame({
     "phone": ["123-456-7890", "098-765-4321", "555-1234", None]
 })
 
-# String accessor .str
+## String accessor .str
 df["name_clean"] = df["name"].str.strip().str.title()
 df["name_upper"] = df["name"].str.strip().str.upper()
 df["name_len"] = df["name"].str.strip().str.len()
 
-# String filtering
+## String filtering
 gmail = df[df["email"].str.contains("gmail", na=False)]
 has_at = df[df["email"].str.contains("@", na=False)]
 
-# String extraction
+## String extraction
 df["area_code"] = df["phone"].str.extract(r"(\d{3})-")
 df["domain"] = df["email"].str.extract(r"@(\w+\.\w+)", expand=False)
 
-# Replace and split
+## Replace and split
 df["name_normalized"] = df["name"].str.replace(r"\s+", " ", regex=True)
 email_parts = df["email"].str.split("@", expand=True)
 df["username"] = email_parts[0]
 df["domain"] = email_parts[1]
 
-# Categorical data
+## Categorical data
 df["category"] = pd.Categorical(
     ["low", "medium", "high", "low", "high"],
     categories=["low", "medium", "high"],
@@ -518,64 +519,64 @@ print(df["category"].cat.codes)  # integer encoding
 ## 12.11 Common Pitfalls
 
 `python
-# Pitfall 1: Chained indexing
+## Pitfall 1: Chained indexing
 df = pd.DataFrame({"A": [1, 2, 3], "B": [4, 5, 6]})
-# BAD: df[df["A"] > 1]["B"] = 99  # SettingWithCopyWarning
-# GOOD: df.loc[df["A"] > 1, "B"] = 99
+## BAD: df[df["A"] > 1]["B"] = 99  # SettingWithCopyWarning
+## GOOD: df.loc[df["A"] > 1, "B"] = 99
 
-# Pitfall 2: Assuming inplace modifies the original
+## Pitfall 2: Assuming inplace modifies the original
 df2 = df.drop("A", axis=1)  # returns new DataFrame
-# df.drop("A", axis=1, inplace=True)  # modifies original
+## df.drop("A", axis=1, inplace=True)  # modifies original
 
-# Pitfall 3: NaN comparison
+## Pitfall 3: NaN comparison
 s = pd.Series([1, np.nan, 3])
-# BAD: s[s == np.nan]  # returns empty!
-# GOOD: s[s.isna()]
-# GOOD: s[s.notna()]
+## BAD: s[s == np.nan]  # returns empty!
+## GOOD: s[s.isna()]
+## GOOD: s[s.notna()]
 
-# Pitfall 4: Setting with copy warning
+## Pitfall 4: Setting with copy warning
 df = pd.DataFrame({"A": [1, 2], "B": [3, 4]})
 subset = df[df["A"] > 0]  # could be view or copy
-# subset["C"] = 99  # SettingWithCopyWarning
-# Use .copy() explicitly: subset = df[df["A"] > 0].copy()
+## subset["C"] = 99  # SettingWithCopyWarning
+## Use .copy() explicitly: subset = df[df["A"] > 0].copy()
 
-# Pitfall 5: Forgetting to specify index in merge
+## Pitfall 5: Forgetting to specify index in merge
 pd.merge(df1, df2)  # merges on common columns by default
-# Always specify on= parameter explicitly
+## Always specify on= parameter explicitly
 
-# Pitfall 6: Type coercion
+## Pitfall 6: Type coercion
 s = pd.Series(["1", "2", "three"])
-# s.astype(int)  # ValueError: invalid literal for int()
-# Use pd.to_numeric(s, errors="coerce") for safe conversion
+## s.astype(int)  # ValueError: invalid literal for int()
+## Use pd.to_numeric(s, errors="coerce") for safe conversion
 `
 
 ## 12.12 Performance Tips
 
 `python
-# 1. Use vectorized operations over apply
+## 1. Use vectorized operations over apply
 df = pd.DataFrame({"x": np.random.randn(10000)})
-# Slow: df["y"] = df["x"].apply(lambda v: v ** 2)
-# Fast: df["y"] = df["x"] ** 2
+## Slow: df["y"] = df["x"].apply(lambda v: v ** 2)
+## Fast: df["y"] = df["x"] ** 2
 
-# 2. Use category dtype for strings with few unique values
+## 2. Use category dtype for strings with few unique values
 df["city"] = pd.Categorical(df["city"])  # saves memory
 
-# 3. Filter early, transform late
-# BAD: df.assign(...).query(...)
-# GOOD: df.query(...).assign(...)
+## 3. Filter early, transform late
+## BAD: df.assign(...).query(...)
+## GOOD: df.query(...).assign(...)
 
-# 4. Use .values or .to_numpy() for NumPy operations
+## 4. Use .values or .to_numpy() for NumPy operations
 arr = df["column"].to_numpy()  # numpy array, faster than Series
 
-# 5. Specify column types on read
+## 5. Specify column types on read
 df = pd.read_csv("data.csv", dtype={"id": "int32", "value": "float32"})
 
-# 6. Use in-place ops when possible
+## 6. Use in-place ops when possible
 df.sort_values("col", inplace=True)  # avoids copy
 
-# 7. Index for faster lookups
+## 7. Index for faster lookups
 df.set_index("id", inplace=True)
-# df.loc[42] is O(1) vs df[df.id == 42] is O(n)
+## df.loc[42] is O(1) vs df[df.id == 42] is O(n)
 `
 
 ---
@@ -588,6 +589,7 @@ df.set_index("id", inplace=True)
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 01-python-programming
@@ -597,6 +599,7 @@ df.set_index("id", inplace=True)
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

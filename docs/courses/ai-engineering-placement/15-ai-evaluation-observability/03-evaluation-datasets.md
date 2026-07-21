@@ -11,12 +11,13 @@
 
 ## Introduction
 
-15-ai-evaluation-observability is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding evaluation datasets is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering evaluation datasets.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -48,7 +49,7 @@ flowchart TD
     end
     G & S & H --> V --> E
     E --> D --> R --> G & S & H
-```
+```text
 
 ## 3.1 Golden Datasets
 
@@ -147,7 +148,7 @@ ds = GoldenDataset("qa_benchmark", "1.0.0")
 ds.add(EvalExample(id="001", input="What is RAG?", expected_output="Retrieval-Augmented Generation", domain="AI"))
 ds.add(EvalExample(id="002", input="What is Python?", expected_output="A programming language", domain="programming"))
 print(f"Dataset stats: {ds.statistics()}")
-```
+```text
 
 ### 3.1.2 Domain Coverage
 
@@ -188,7 +189,7 @@ class DatasetCoverage:
 cov = DatasetCoverage()
 analysis = cov.analyze(ds, ["AI", "programming", "math", "science"])
 print(f"Coverage: {analysis}")
-```
+```text
 
 ## 3.2 Synthetic Data
 
@@ -245,7 +246,7 @@ def mock_gen_llm(prompt: str) -> str:
 gen = SyntheticEvalGenerator(mock_gen_llm)
 pairs = gen.generate_batch("AI", 3)
 print(f"Generated {len(pairs)} synthetic pairs")
-```
+```text
 
 ### 3.2.2 Adversarial Examples
 
@@ -291,7 +292,7 @@ adv_gen = AdversarialGenerator()
 base = EvalExample(id="001", input="What is machine learning?", expected_output="ML is...")
 adversarial = adv_gen.generate(base)
 print(f"Generated {len(adversarial)} adversarial examples")
-```
+```text
 
 ## 3.3 Human Annotation
 
@@ -362,7 +363,7 @@ wf.assign(task_id, "annotator-2")
 wf.submit_annotation(task_id, "annotator-1", {"score": 5})
 wf.submit_annotation(task_id, "annotator-2", {"score": 4})
 print(f"Agreement: {wf.agreement(task_id)}")
-```
+```text
 
 ### 3.3.2 Quality Control
 
@@ -402,7 +403,7 @@ class AnnotationQC:
 qc = AnnotationQC()
 annotations = [{"annotation": {"score": 4}}, {"annotation": {"score": 5}}, {"annotation": {"score": 4}}]
 print(f"QC check: {qc.check_agreement(annotations)}")
-```
+```text
 
 ## 3.4 Dataset Versioning
 
@@ -466,7 +467,7 @@ vman.create_version(ds, "Initial release")
 ds.add(EvalExample(id="003", input="Q3?", expected_output="A3"))
 vman.create_version(ds, "Added Q3")
 print(f"History: {vman.history()}")
-```
+```text
 
 ## 3.5 Dataset Maintenance
 
@@ -518,7 +519,7 @@ class EvalDriftDetector:
 
 detector = EvalDriftDetector(ds)
 print(f"Drift detected: {detector.detect_drift(ds)}")
-```
+```text
 
 ## Summary
 
@@ -735,6 +736,7 @@ Answer: B
 4. Build an annotation workflow with 3 annotators, quality control (agreement >= 0.75), and an outlier flagging system for poor-quality annotators.
 
 5. Implement a dataset drift detector that compares reference and current distributions across domains. Test with a dataset that has shifted from 80% AI t
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 15-ai-evaluation-observability
@@ -744,6 +746,7 @@ Answer: B
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

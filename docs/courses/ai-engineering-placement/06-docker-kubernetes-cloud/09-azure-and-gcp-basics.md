@@ -13,12 +13,13 @@
 
 ## Introduction
 
-06-docker-kubernetes-cloud is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding azure and gcp basics is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering azure and gcp basics.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart LR
     E --> F[GCP Networking]
     F --> G[Multi-Cloud]
     G --> H[Cost Management]
-```
+```text
 
 ## 9.1 Azure Compute
 
@@ -52,35 +53,35 @@ Azure provides several compute options for different workloads.
 **Azure Virtual Machines**:
 
 ```bash
-# Create VM
+## Create VM
 az vm create     --resource-group my-rg     --name my-vm     --image UbuntuLTS     --size Standard_B2s     --admin-username azureuser     --generate-ssh-keys
 
-# SSH
+## SSH
 ssh azureuser@PUBLIC_IP
 
-# Stop/start
+## Stop/start
 az vm stop --resource-group my-rg --name my-vm
 az vm start --resource-group my-rg --name my-vm
-```
+```text
 
 **Azure App Service** — PaaS for web apps:
 
 ```bash
 az webapp create     --resource-group my-rg     --plan my-plan     --name my-unique-app     --runtime "NODE:18-lts"
-```
+```text
 
 **Azure Kubernetes Service (AKS)**:
 
 ```bash
-# Create cluster
+## Create cluster
 az aks create     --resource-group my-rg     --name my-cluster     --node-count 3     --enable-managed-identity
 
-# Get credentials
+## Get credentials
 az aks get-credentials --resource-group my-rg --name my-cluster
 
-# Deploy
+## Deploy
 kubectl apply -f deployment.yaml
-```
+```text
 
 | Azure Compute | AWS Equivalent | Use Case |
 |---------------|----------------|----------|
@@ -96,28 +97,28 @@ kubectl apply -f deployment.yaml
 **Blob Storage** — object storage (equivalent to S3):
 
 ```bash
-# Create storage account
+## Create storage account
 az storage account create     --name mystorageaccount     --resource-group my-rg     --location eastus     --sku Standard_LRS
 
-# Upload blob
+## Upload blob
 az storage blob upload     --account-name mystorageaccount     --container-name mycontainer     --name file.txt     --file ./file.txt
 
-# List blobs
+## List blobs
 az storage blob list     --account-name mystorageaccount     --container-name mycontainer     --output table
-```
+```text
 
 **Azure Files** — managed file shares (SMB/NFS):
 
 ```bash
 az storage share create --name myshare --account-name mystorageaccount
-```
+```text
 
 **Cosmos DB** — globally distributed NoSQL:
 
 ```bash
 az cosmosdb create --name my-cosmos-db --resource-group my-rg
 az cosmosdb sql database create --account-name my-cosmos-db --name my-database
-```
+```text
 
 ## 9.3 Azure Networking
 
@@ -126,54 +127,54 @@ az cosmosdb sql database create --account-name my-cosmos-db --name my-database
 ```bash
 az network vnet create     --resource-group my-rg     --name my-vnet     --address-prefix 10.0.0.0/16     --subnet-name default     --subnet-prefix 10.0.1.0/24
 
-# Load Balancer
+## Load Balancer
 az network lb create     --resource-group my-rg     --name my-lb     --sku Standard     --frontend-ip-name my-frontend     --public-ip-address my-public-ip
 
-# Application Gateway (Layer 7)
+## Application Gateway (Layer 7)
 az network application-gateway create     --resource-group my-rg     --name my-gateway     --sku Standard_v2     --capacity 2     --vnet-name my-vnet     --subnet appgw-subnet
-```
+```text
 
 ## 9.4 GCP Compute
 
 **Compute Engine**:
 
 ```bash
-# Create VM
+## Create VM
 gcloud compute instances create my-instance     --zone us-central1-a     --machine-type e2-medium     --image-family ubuntu-2204-lts     --image-project ubuntu-os-cloud
 
-# SSH
+## SSH
 gcloud compute ssh my-instance --zone us-central1-a
 
-# Stop/start
+## Stop/start
 gcloud compute instances stop my-instance --zone us-central1-a
 gcloud compute instances start my-instance --zone us-central1-a
-```
+```text
 
 **Google Kubernetes Engine (GKE)**:
 
 ```bash
-# Create cluster
+## Create cluster
 gcloud container clusters create my-cluster     --zone us-central1-a     --num-nodes 3     --machine-type e2-standard-2
 
-# Get credentials
+## Get credentials
 gcloud container clusters get-credentials my-cluster --zone us-central1-a
 
-# Deploy
+## Deploy
 kubectl apply -f deployment.yaml
-```
+```text
 
 **Cloud Run** — serverless containers:
 
 ```bash
-# Deploy container
+## Deploy container
 gcloud run deploy my-service     --image gcr.io/my-project/my-image:latest     --platform managed     --region us-central1     --allow-unauthenticated
-```
+```text
 
 **App Engine** — PaaS:
 
 ```bash
 gcloud app deploy app.yaml --project my-project
-```
+```text
 
 | GCP Compute | AWS Equivalent | Use Case |
 |-------------|----------------|----------|
@@ -189,54 +190,54 @@ gcloud app deploy app.yaml --project my-project
 **Cloud Storage** — object storage (equivalent to S3):
 
 ```bash
-# Create bucket
+## Create bucket
 gsutil mb gs://my-unique-bucket/
 
-# Upload
+## Upload
 gsutil cp file.txt gs://my-bucket/
 gsutil rsync -r ./local-folder gs://my-bucket/
 
-# Set lifecycle
+## Set lifecycle
 gsutil lifecycle set lifecycle.json gs://my-bucket/
 
-# Storage classes
+## Storage classes
 gsutil cp file.txt gs://my-bucket/ --storage-class NEARLINE
 gsutil rewrite -s COLDLINE gs://my-bucket/file.txt
-```
+```text
 
 **Cloud SQL** — managed relational databases:
 
 ```bash
 gcloud sql instances create my-instance     --database-version POSTGRES_15     --cpu 2 --memory 8GB     --region us-central1
-```
+```text
 
 **Firestore** — NoSQL document database:
 
 ```bash
 gcloud firestore databases create --region us-central1
-# Use client libraries for CRUD operations
-```
+## Use client libraries for CRUD operations
+```text
 
 ## 9.6 GCP Networking
 
 **VPC**:
 
 ```bash
-# Create VPC
+## Create VPC
 gcloud compute networks create my-vpc --subnet-mode custom
 
-# Create subnet
+## Create subnet
 gcloud compute networks subnets create my-subnet     --network my-vpc     --region us-central1     --range 10.0.1.0/24
 
-# Firewall rules
+## Firewall rules
 gcloud compute firewall-rules create allow-http     --network my-vpc     --allow tcp:80     --source-ranges 0.0.0.0/0
-```
+```text
 
 **Cloud Load Balancing**:
 
 ```bash
 gcloud compute forwarding-rules create my-rule     --region us-central1     --load-balancing-scheme EXTERNAL     --ports 80     --target-http-proxy my-proxy
-```
+```text
 
 ## 9.7 Multi-Cloud Comparison
 
@@ -271,16 +272,16 @@ gcloud compute forwarding-rules create my-rule     --region us-central1     --lo
 **Cost comparison by provider**:
 
 ```bash
-# AWS Cost Explorer
+## AWS Cost Explorer
 aws ce get-cost-and-usage --time-period Start=2024-01-01,End=2024-01-31 --granularity MONTHLY --metrics BlendedCost
 
-# Azure Cost Management
+## Azure Cost Management
 az consumption usage list --billing-period-name 202401
 
-# GCP Cost
+## GCP Cost
 gcloud billing accounts list
 gcloud billing projects describe PROJECT_ID
-```
+```text
 
 **Cost optimization across clouds**:
 
@@ -317,7 +318,7 @@ function getServiceMapping(provider: string, category: string): string {
   };
   return mapping[category]?.[provider] || "Unknown";
 }
-```
+```text
 
 ---
 
@@ -481,48 +482,48 @@ d) Re-purchase
 **Azure Entra ID** (formerly Azure AD):
 
 ```bash
-# Create service principal
+## Create service principal
 az ad sp create-for-rbac --name my-app-sp --role Contributor --scopes /subscriptions/SUBSCRIPTION_ID
 
-# Managed Identity for Azure resources
+## Managed Identity for Azure resources
 az vm identity assign --resource-group my-rg --name my-vm
 az webapp identity assign --resource-group my-rg --name my-app
 
-# Role assignments
+## Role assignments
 az role assignment create --assignee <principal-id> --role Reader --resource-group my-rg
 az role assignment list --assignee <principal-id> --output table
-```
+```text
 
 **Azure Policy** enforces compliance rules across resources:
 
 ```bash
-# Assign built-in policy
+## Assign built-in policy
 az policy assignment create --name "require-tags" --policy "require-sql-server-encryption" --resource-group my-rg
 
-# Create custom policy
+## Create custom policy
 az policy definition create --name "allowed-locations" --rules policy-rules.json --params policy-params.json
-```
+```text
 
 ## GCP Identity and Access Management
 
 **Service accounts**:
 
 ```bash
-# Create service account
+## Create service account
 gcloud iam service-accounts create my-sa --display-name "My Service Account"
 
-# Grant roles
+## Grant roles
 gcloud projects add-iam-policy-binding my-project \
     --member "serviceAccount:my-sa@my-project.iam.gserviceaccount.com" \
     --role "roles/storage.objectViewer"
 
-# Create key for external use
+## Create key for external use
 gcloud iam service-accounts keys create key.json --iam-account my-sa@my-project.iam.gserviceaccount.com
-```
+```text
 
 **GCP Resource Manager** organizes resources hierarchically:
 
-```
+```text
 Organization
 ├── Folder (Teams)
 │   ├── Project (Production)
@@ -533,7 +534,7 @@ Organization
 └── Folder (Platform)
     ├── Shared Networking
     └── Shared CI/CD
-```
+```text
 
 ## Serverless Comparison
 
@@ -556,6 +557,7 @@ Organization
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 06-docker-kubernetes-cloud
@@ -565,6 +567,7 @@ Organization
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

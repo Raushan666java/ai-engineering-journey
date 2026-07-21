@@ -13,12 +13,13 @@
 
 ## Introduction
 
-06-docker-kubernetes-cloud is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding ci cd pipelines is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering ci cd pipelines.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -41,7 +42,7 @@ flowchart LR
     D --> E[Security]
     E --> F[Optimization]
     F --> G[GitOps/ArgoCD]
-```
+```text
 
 ## 10.1 CI/CD Principles
 
@@ -62,7 +63,7 @@ flowchart LR
     E --> F[Artifact] --> G[Staging Deploy]
     G --> H[E2E Tests]
     H --> I[Production Deploy]
-```
+```text
 
 **Key benefits**: Faster time to market, reduced manual errors, consistent deployment process, rapid feedback cycles, automated quality gates.
 
@@ -71,7 +72,7 @@ flowchart LR
 GitHub Actions automates workflows directly in your GitHub repository.
 
 ```yaml
-# .github/workflows/ci.yml
+## .github/workflows/ci.yml
 name: CI Pipeline
 
 on:
@@ -139,7 +140,7 @@ jobs:
           tags: |
             ghcr.io/${{ github.repository }}:latest
             ghcr.io/${{ github.repository }}:${{ github.sha }}
-```
+```text
 
 **Key Action concepts**:
 
@@ -166,14 +167,14 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node }}
-```
+```text
 
 ## 10.3 GitLab CI/CD
 
 GitLab CI/CD uses a `.gitlab-ci.yml` file in the repository root.
 
 ```yaml
-# .gitlab-ci.yml
+## .gitlab-ci.yml
 stages:
   - build
   - test
@@ -244,7 +245,7 @@ deploy-production:
   when: manual
   only:
     - main
-```
+```text
 
 **GitLab Runners**: Agents that execute CI/CD jobs. Can be shared, group, or specific.
 
@@ -253,28 +254,28 @@ deploy-production:
 **Rolling update** — incrementally replace instances:
 
 ```yaml
-# Kubernetes rolling update
+## Kubernetes rolling update
 spec:
   strategy:
     type: RollingUpdate
     rollingUpdate:
       maxSurge: 25%
       maxUnavailable: 25%
-```
+```text
 
 **Blue-green** — switch between environments:
 
 ```yaml
-# AWS ECS blue/green
+## AWS ECS blue/green
 deploymentController:
   type: CODE_DEPLOY
-# CodeDeploy handles traffic shifting
-```
+## CodeDeploy handles traffic shifting
+```text
 
 **Canary** — incremental traffic shifting:
 
 ```yaml
-# Istio canary deployment
+## Istio canary deployment
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
 spec:
@@ -290,12 +291,12 @@ spec:
             host: my-app
             subset: canary
           weight: 10
-```
+```text
 
 **Feature flags** — decouple deployment from release:
 
 ```yaml
-# LaunchDarkly or Flagsmith integration
+## LaunchDarkly or Flagsmith integration
 jobs:
   deploy:
     steps:
@@ -307,7 +308,7 @@ jobs:
         run: |
           # Enable flag for internal users first
           # Then 10%, 50%, 100%
-```
+```text
 
 | Strategy | Risk | Complexity | Rollback Speed |
 |----------|------|------------|----------------|
@@ -321,7 +322,7 @@ jobs:
 **SAST (Static Analysis)**: Scan source code for vulnerabilities.
 
 ```yaml
-# GitHub CodeQL
+## GitHub CodeQL
 - name: Initialize CodeQL
   uses: github/codeql-action/init@v3
   with:
@@ -329,7 +330,7 @@ jobs:
 
 - name: Perform CodeQL Analysis
   uses: github/codeql-action/analyze@v3
-```
+```text
 
 **DAST (Dynamic Analysis)**: Scan running applications.
 
@@ -339,7 +340,7 @@ jobs:
   with:
     target: "https://staging.myapp.com"
     rules_file_name: ".zap/rules.tsv"
-```
+```text
 
 **Dependency scanning**:
 
@@ -349,10 +350,10 @@ jobs:
   env:
     SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 
-# npm audit
+## npm audit
 - name: Audit dependencies
   run: npm audit --audit-level=high
-```
+```text
 
 **Docker image scanning**:
 
@@ -363,7 +364,7 @@ jobs:
     image-ref: "my-app:${{ github.sha }}"
     format: "sarif"
     output: "trivy-results.sarif"
-```
+```text
 
 **Secret scanning**:
 
@@ -372,26 +373,26 @@ jobs:
   uses: GitGuardian/ggshield-action@master
   env:
     GITGUARDIAN_API_KEY: ${{ secrets.GITGUARDIAN_API_KEY }}
-```
+```text
 
 **Security gates in pipelines**:
 
 ```yaml
-# Block deployment if critical vulnerabilities found
+## Block deployment if critical vulnerabilities found
 - name: Check security scan results
   run: |
     if grep -q "CRITICAL" trivy-results.sarif; then
       echo "Critical vulnerabilities found. Blocking deployment."
       exit 1
     fi
-```
+```text
 
 ## 10.6 Pipeline Optimization
 
 **Caching dependencies**:
 
 ```yaml
-# GitHub Actions
+## GitHub Actions
 - name: Cache Node modules
   uses: actions/cache@v3
   with:
@@ -400,17 +401,17 @@ jobs:
     restore-keys: |
       ${{ runner.os }}-node-
 
-# GitLab CI
+## GitLab CI
 cache:
   key: ${CI_COMMIT_REF_SLUG}
   paths:
     - node_modules/
-```
+```text
 
 **Parallel jobs**:
 
 ```yaml
-# Run test suites in parallel
+## Run test suites in parallel
 jobs:
   test-unit:
     runs-on: ubuntu-latest
@@ -419,13 +420,13 @@ jobs:
   test-e2e:
     runs-on: ubuntu-latest
 
-# Or use matrix strategy
+## Or use matrix strategy
 strategy:
   matrix:
     shard: [1, 2, 3, 4]
 steps:
   - run: npm test -- --shard=${{ matrix.shard }}/4
-```
+```text
 
 **Docker layer caching**:
 
@@ -438,7 +439,7 @@ steps:
   with:
     cache-from: type=gha
     cache-to: type=gha,mode=max
-```
+```text
 
 **Pipeline metrics and monitoring**:
 
@@ -455,7 +456,7 @@ steps:
 GitOps uses Git as the single source of truth for declarative infrastructure and applications.
 
 ```yaml
-# ArgoCD Application
+## ArgoCD Application
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -476,7 +477,7 @@ spec:
       selfHeal: true
     syncOptions:
       - CreateNamespace=true
-```
+```text
 
 **ArgoCD workflow**:
 
@@ -490,7 +491,7 @@ flowchart LR
     E --> F[Actual State]
     C --> G[Desired State]
     G -->|Sync| D
-```
+```text
 
 **Benefits of GitOps**:
 - Git is the single source of truth
@@ -500,19 +501,19 @@ flowchart LR
 - Drift detection and auto-remediation
 
 ```bash
-# Install ArgoCD
+## Install ArgoCD
 kubectl create namespace argocd
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 
-# Access UI
+## Access UI
 kubectl port-forward svc/argocd-server -n argocd 8080:443
 
-# Login
+## Login
 argocd admin initial-password -n argocd
 
-# Create application
+## Create application
 argocd app create my-app     --repo https://github.com/org/repo.git     --path k8s     --dest-server https://kubernetes.default.svc     --dest-namespace production
-```
+```text
 
 ---
 
@@ -549,7 +550,7 @@ on:
     branches: [${config.triggers.join(", ")}]
 jobs:${jobs}`;
 }
-```
+```text
 
 ---
 
@@ -719,6 +720,7 @@ d) Secret scan
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 06-docker-kubernetes-cloud
@@ -728,6 +730,7 @@ d) Secret scan
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

@@ -12,12 +12,13 @@
 
 ## Introduction
 
-12-rag-vector-databases is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding embedding models is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering embedding models.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -42,7 +43,7 @@ flowchart TD
     G --> H[Query]
     H --> I[Similarity Search]
     I --> J[Ranked Results]
-```
+```text
 
 ## 2.1 Embedding Fundamentals
 
@@ -86,14 +87,14 @@ model = EmbeddingModel(dimension=384)
 emb = model.encode("RAG with vector databases")
 print(f"Embedding shape: {emb.shape}")
 print(f"L2 norm: {np.linalg.norm(emb):.4f}")
-```
+```text
 
 ### Pooling Strategies
 
 The pooling strategy determines how token-level representations are combined into a single sentence embedding.
 
 ```python
-# Conceptual pooling strategies
+## Conceptual pooling strategies
 import numpy as np
 
 
@@ -115,12 +116,12 @@ def max_pooling(token_embeddings: np.ndarray, attention_mask: np.ndarray) -> np.
     return np.max(masked, axis=1)
 
 
-# Simulated token embeddings: (batch=2, tokens=5, dim=4)
+## Simulated token embeddings: (batch=2, tokens=5, dim=4)
 simulated = np.random.randn(2, 5, 4)
 mask = np.ones((2, 5))
 print(f"Mean pooled shape: {mean_pooling(simulated, mask).shape}")
 print(f"CLS pooled shape: {cls_pooling(simulated).shape}")
-```
+```text
 
 ## 2.2 Model Comparison
 
@@ -161,7 +162,7 @@ class OpenAIEmbedder:
         return [item.embedding for item in sorted_data]
 
 
-# Mock for demonstration
+## Mock for demonstration
 class MockOpenAIEmbedder(OpenAIEmbedder):
     def embed(self, text: str) -> List[float]:
         rng = np.random.RandomState(hash(text) % (2**31))
@@ -173,8 +174,10 @@ class MockOpenAIEmbedder(OpenAIEmbedder):
 embedder = MockOpenAIEmbedder(model="text-embedding-3-small", dimensions=256)
 emb = embedder.embed("RAG pipeline with OpenAI embeddings")
 print(f"OpenAI embedding (dim={len(emb)}): first 3 values = {emb[:3]}")
-```
+```text
 
+
+## Overview
 ### 2.2.2 Sentence-Transformers
 
 Open-source embedding models from Hugging Face, fine-tuned for semantic similarity.
@@ -206,7 +209,7 @@ class SentenceTransformerEmbedder:
 st = SentenceTransformerEmbedder("all-MiniLM-L6-v2")
 emb = st.encode("sentence-transformers for embedding generation")
 print(f"Sentence-transformers embedding dim: {st.dimension}")
-```
+```text
 
 ### 2.2.3 Cohere Embeddings
 
@@ -234,7 +237,7 @@ class CohereEmbedder:
 
 cohere_emb = CohereEmbedder()
 print(f"Cohere embedding dim: {len(cohere_emb.embed('test'))}")
-```
+```text
 
 ### 2.2.4 BGE (BAAI General Embedding)
 
@@ -265,7 +268,7 @@ query_vec = bge.encode("How does RAG work?", query_mode=True)
 doc_vec = bge.encode("Retrieval-Augmented Generation is a technique that combines retrieval with generation.")
 sim = float(np.dot(query_vec, doc_vec))
 print(f"BGE query-doc similarity: {sim:.4f}")
-```
+```text
 
 ## 2.3 Similarity Metrics
 
@@ -295,7 +298,7 @@ query = query / np.linalg.norm(query)
 
 scores = cosine_similarity_matrix(embs, query)
 print(f"Similarity scores: {scores}")
-```
+```text
 
 ### 2.3.2 Dot Product
 
@@ -310,19 +313,21 @@ def max_inner_product(embeddings: np.ndarray, query: np.ndarray) -> np.ndarray:
     return np.dot(embeddings, query)
 
 
-# Compare cosine vs dot on normalized vectors
+## Compare cosine vs dot on normalized vectors
 a_norm = np.array([1.0, 0.0])
 b_norm = np.array([0.707, 0.707])
 print(f"Cosine (normalized): {cosine_similarity(a_norm, b_norm):.4f}")
 print(f"Dot (normalized): {dot_product(a_norm, b_norm):.4f}")
 
-# Unnormalized vectors
+## Unnormalized vectors
 a_unnorm = np.array([5.0, 0.0])
 b_unnorm = np.array([3.5, 3.5])
 print(f"Cosine (unnormalized): {cosine_similarity(a_unnorm, b_unnorm):.4f}")
 print(f"Dot (unnormalized): {dot_product(a_unnorm, b_unnorm):.4f}")
-```
+```text
 
+
+## Overview
 ### 2.3.3 Euclidean Distance
 
 Measures straight-line distance between vectors. Convert to similarity via 1/(1+distance).
@@ -340,7 +345,7 @@ def euclidean_similarity_matrix(embeddings: np.ndarray, query: np.ndarray) -> np
 
 dists = euclidean_similarity_matrix(embs, query)
 print(f"Euclidean similarities: {dists}")
-```
+```text
 
 ### 2.3.4 Similarity Metric Comparison
 
@@ -378,7 +383,7 @@ for metric in ["cosine", "euclidean"]:
     comp = SimilarityComputer(metric)
     scores = comp.compare_batch(embs, query)
     print(f"{metric}: top score = {scores.max():.4f}")
-```
+```text
 
 ## 2.4 Dimensionality Reduction
 
@@ -414,7 +419,7 @@ matryoshka = MatryoshkaEmbedder()
 for dim in [256, 512, 1024, 2048]:
     emb = matryoshka.embed_at_dimension("Efficient embedding storage", dim)
     print(f"Dim {dim}: length = {len(emb)}")
-```
+```text
 
 ### 2.4.2 PCA Dimensionality Reduction
 
@@ -453,7 +458,7 @@ pca = PCAEmbeddingReducer(n_components=128)
 original = np.random.randn(100, 768)
 reduced = pca.fit_transform(original)
 print(f"Original: {original.shape}, Reduced: {reduced.shape}")
-```
+```text
 
 ### 2.4.3 Binary Quantization
 
@@ -479,7 +484,7 @@ for i in range(3):
 
 print(f"Original size: {embeddings.nbytes} bytes")
 print(f"Binary size: {binary.nbytes} bytes")
-```
+```text
 
 ### 2.4.4 Scalar Quantization (int8)
 
@@ -514,7 +519,7 @@ mse = np.mean((float_embs - dequantized) ** 2)
 print(f"Quantization MSE: {mse:.6f}")
 print(f"Float32 size: {float_embs.nbytes} bytes")
 print(f"Int8 size: {quantized.nbytes} bytes")
-```
+```text
 
 ## 2.5 Embedding Evaluation
 
@@ -574,7 +579,7 @@ class BEIREvaluator:
 
 evaluator = BEIREvaluator(SentenceTransformerEmbedder())
 print("BEIR evaluator ready for benchmarking")
-```
+```text
 
 ### 2.5.2 MTEB (Massive Text Embedding Benchmark)
 
@@ -612,7 +617,7 @@ def select_embedding_model(task_type: str, budget: str = "medium") -> str:
 for task in MTEB_TASKS[:3]:
     model = select_embedding_model(task.task_type, "medium")
     print(f"{task.name} ({task.task_type}): {model}")
-```
+```text
 
 ### 2.5.3 Retrieval Quality Metrics
 
@@ -659,13 +664,13 @@ def precision_at_k(
     return prec_sum / len(query_results) if query_results else 0
 
 
-# Example evaluation
+## Example evaluation
 results = [[3, 5, 1, 7, 2], [1, 4, 2, 8, 3]]
 rel_sets = [{1, 2, 3}, {1, 4}]
 print(f"MRR@10: {mean_reciprocal_rank(results, rel_sets):.4f}")
 print(f"Recall@5: {recall_at_k(results, rel_sets, 5):.4f}")
 print(f"Precision@5: {precision_at_k(results, rel_sets, 5):.4f}")
-```
+```text
 
 ## 2.6 Production Embeddings
 
@@ -703,7 +708,7 @@ cache = EmbeddingCache(max_size=5000)
 cache.set("RAG pipeline", [0.1, 0.2, 0.3], "text-embedding-3-small")
 cached = cache.get("RAG pipeline", "text-embedding-3-small")
 print(f"Cached embedding: {cached[:3]}... (len={len(cached)})")
-```
+```text
 
 ### 2.6.2 Batching with Rate Limits
 
@@ -757,7 +762,7 @@ class RateLimitedEmbedder:
 
 config = RateLimitConfig(requests_per_minute=100, tokens_per_minute=100000)
 print(f"Rate limited embedder ready: {config}")
-```
+```text
 
 ### 2.6.3 Cost Management
 
@@ -800,7 +805,7 @@ def estimate_embedding_cost(
 
 print(estimate_embedding_cost(100000, 256, "text-embedding-3-small"))
 print(estimate_embedding_cost(100000, 256, "text-embedding-3-large"))
-```
+```text
 
 ## Summary
 
@@ -1020,6 +1025,7 @@ Answer: B
 4. Create a rate-limited embedding service that queues requests, respects API rate limits (1000 RPM, 1M TPM), and processes embeddings in batches of 10. Simulate 5000 embedding requests.
 
 5. Implement an embedding cache with LRU eviction policy. Cache 1000 embeddings and measure hit rate for a workload where 20% of queries repeat from the prev
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 12-rag-vector-databases
@@ -1029,6 +1035,7 @@ Answer: B
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

@@ -13,12 +13,13 @@
 
 ## Introduction
 
-08-machine-learning is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding model evaluation is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering model evaluation.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -45,7 +46,7 @@ flowchart LR
     H --> I[Adjust Model]
     I --> A
     F -->|Yes| J[Deploy]
-```
+```text
 
 ## 9.1 Cross-Validation Strategies
 
@@ -167,12 +168,12 @@ class CrossValidator:
         return [dict(zip(keys, combo)) for combo in itertools.product(*values)]
 
 
-# Test cross-validation
+## Test cross-validation
 X_cv, y_cv = make_classification(n_samples=500, n_features=10, random_state=42)
 cv = CrossValidator(n_splits=5)
 results = cv.stratified_kfold(X_cv, y_cv, DecisionTreeClassifier, max_depth=5)
 print(f"Stratified CV: acc={results['mean_accuracy']:.3f} +/- {results['std_accuracy']:.3f}")
-```
+```text
 
 **Cross-validation strategies**:
 - K-fold: Simple random split into K folds
@@ -265,7 +266,7 @@ y_pred = np.array([0, 1, 0, 0, 2, 1, 1, 2, 0, 0])
 cm = ConfusionMatrix(y_true, y_pred)
 print(cm)
 print("Binary metrics:", cm.binary_metrics(positive_label=1))
-```
+```text
 
 **When to use each metric**:
 - Accuracy: balanced classes
@@ -356,7 +357,7 @@ y_scores = y_true_bin * 0.8 + np.random.rand(200) * 0.3
 
 roc = ROC(y_true_bin, y_scores)
 print(roc.plot_summary())
-```
+```text
 
 **AUC interpretation**: AUC = 0.5 (random), 0.7-0.8 (good), 0.8-0.9 (excellent), >0.9 (outstanding). AUC is threshold-independent and works well for imbalanced data.
 
@@ -394,7 +395,7 @@ class MultiClassMetrics:
         return {"precision": accuracy, "recall": accuracy, "f1": accuracy}
 
 
-# Test with 3-class data
+## Test with 3-class data
 y_true_3 = np.array([0, 1, 2, 0, 1, 2, 0, 1, 2])
 y_pred_3 = np.array([0, 1, 1, 0, 2, 2, 0, 1, 0])
 cm3 = ConfusionMatrix(y_true_3, y_pred_3)
@@ -403,7 +404,7 @@ per_class = cm3.per_class_metrics()
 print("Per-class:", per_class["per_class"])
 print("Macro F1:", per_class["macro_f1"])
 print("Weighted F1:", per_class["weighted_f1"])
-```
+```text
 
 **When to use which average**:
 - Macro: All classes equally important (rare classes matter)
@@ -475,7 +476,7 @@ class ValidationCurve:
 lc = LearningCurve()
 curve = lc.compute(X_cv, y_cv, DecisionTreeClassifier, max_depth=5)
 print("Learning curve diagnosis:", lc.diagnose(curve))
-```
+```text
 
 **Reading learning curves**:
 - High bias: both curves converge to low score (underfitting)
@@ -520,7 +521,7 @@ class ModelComparison:
         return results
 
 
-# Compare two models
+## Compare two models
 pred_a = y_true_bin.copy()
 pred_b = y_true_bin.copy()
 pred_b[:20] = 1 - pred_b[:20]  # Make model b worse
@@ -528,7 +529,7 @@ pred_b[:20] = 1 - pred_b[:20]  # Make model b worse
 comparison = ModelComparison()
 result = comparison.mcnemar_test(y_true_bin, pred_a, pred_b)
 print(f"McNemar test: p={result['p_value']:.4f}, significant={result['significant']}")
-```
+```text
 
 ---
 
@@ -578,7 +579,7 @@ class CrossValidatorTS {
     };
   }
 }
-```
+```text
 
 ## Summary
 
@@ -694,6 +695,7 @@ d) Image data
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 08-machine-learning
@@ -703,6 +705,7 @@ d) Image data
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

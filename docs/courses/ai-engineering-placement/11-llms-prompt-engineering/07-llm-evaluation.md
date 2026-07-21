@@ -13,12 +13,13 @@
 
 ## Introduction
 
-11-llms-prompt-engineering is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding llm evaluation is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering llm evaluation.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -53,7 +54,7 @@ flowchart TD
     K --> L
     L --> M[Regression Monitor]
     M --> N[Deploy / Reject / Regress]
-```
+```text
 
 ## 7.1 Evaluation Dimensions
 
@@ -121,7 +122,7 @@ eval_result = LLMOutputEvaluation(
     ],
 )
 print(json.dumps(eval_result.to_report(), indent=2))
-```
+```text
 
 **Weighting dimensions** allows customization per task. For summarization, faithfulness may receive higher weight. For creative writing, fluency and coherence matter more.
 
@@ -189,7 +190,7 @@ reference = "The cat sat on a mat."
 print("ROUGE-1:", rouge_n(candidate, reference, 1))
 print("ROUGE-2:", rouge_n(candidate, reference, 2))
 print("ROUGE-L:", rouge_l(candidate, reference))
-```
+```text
 
 ### 7.2.2 BLEU (Bilingual Evaluation Understudy)
 
@@ -231,7 +232,7 @@ def bleu(candidate: str, reference: str, max_n: int = 4) -> float:
 
 print(f"BLEU-4: {bleu(candidate, reference)}")
 
-# BLEU with multiple references
+## BLEU with multiple references
 def bleu_multiref(candidate: str, references: List[str], max_n: int = 4) -> float:
     cand_tokens = tokenize(candidate)
     cand_len = len(cand_tokens)
@@ -265,14 +266,16 @@ def bleu_multiref(candidate: str, references: List[str], max_n: int = 4) -> floa
 
     log_avg /= max_n
     return round(bp * math.exp(log_avg), 4)
-```
+```text
 
+
+## Overview
 ### 7.2.3 BERTScore
 
 BERTScore uses contextual embeddings from BERT to compute token-level similarity, capturing semantic equivalence beyond surface n-gram overlap.
 
 ```python
-# Conceptual BERTScore implementation using cosine similarity of embeddings
+## Conceptual BERTScore implementation using cosine similarity of embeddings
 from typing import List
 import numpy as np
 
@@ -314,8 +317,8 @@ def bertscore_f1(
     return 2 * p * r / (p + r) if (p + r) > 0 else 0.0
 
 
-# Implementation using HuggingFace transformers
-# pip install transformers torch
+## Implementation using HuggingFace transformers
+## pip install transformers torch
 """
 from transformers import AutoTokenizer, AutoModel
 import torch
@@ -336,14 +339,16 @@ cand_vecs = cand_emb.numpy()
 ref_vecs = ref_emb.numpy()
 print(f"BERTScore F1: {bertscore_f1(list(cand_vecs), list(ref_vecs)):.4f}")
 """
-```
+```text
 
+
+## Overview
 ### 7.2.4 METEOR
 
 METEOR improves on BLEU by aligning synonyms and stems, using WordNet and Porter stemming for flexible matching.
 
 ```python
-# Simplified METEOR implementation
+## Simplified METEOR implementation
 def meteor_score(candidate: str, reference: str) -> float:
     cand_unigrams = set(tokenize(candidate))
     ref_unigrams = set(tokenize(reference))
@@ -376,7 +381,7 @@ def meteor_score(candidate: str, reference: str) -> float:
 
 
 print(f"METEOR: {meteor_score(candidate, reference)}")
-```
+```text
 
 ## 7.3 Reference-Based Evaluation
 
@@ -436,7 +441,7 @@ dataset = ReferenceDataset(
     ],
 )
 print(json.dumps(dataset.filter_by_difficulty("easy"), indent=2, default=str))
-```
+```text
 
 ### Scoring with Multiple References
 
@@ -473,7 +478,7 @@ references = [
     "The capital city of France is Paris.",
 ]
 print(evaluate_with_references(candidate, references))
-```
+```text
 
 ## 7.4 Reference-Free Evaluation
 
@@ -492,14 +497,16 @@ def perplexity(log_probs: List[float]) -> float:
     return round(math.exp(avg_neg_log_likelihood), 4)
 
 
-# Sample log probabilities from a model (lower = better prediction)
+## Sample log probabilities from a model (lower = better prediction)
 log_probs_good = [-0.1, -0.2, -0.15, -0.3]
 log_probs_bad = [-2.5, -3.0, -1.8, -4.2]
 
 print(f"Good output perplexity: {perplexity(log_probs_good)}")
 print(f"Bad output perplexity: {perplexity(log_probs_bad)}")
-```
+```text
 
+
+## Overview
 ### 7.4.2 Self-Consistency
 
 Self-consistency evaluates reliability by sampling multiple outputs and measuring agreement.
@@ -552,7 +559,7 @@ def consistency_with_semantic_similarity(
                 agreements += 1
 
     return agreements / total if total > 0 else 1.0
-```
+```text
 
 ### 7.4.3 LLM-as-Judge
 
@@ -596,10 +603,12 @@ rubric = """
 3. Completeness (0-10): Does it cover the key aspects?
 """
 
-# result = judge_evaluation(prompt, generated, rubric)
-# print(result)
-```
+## result = judge_evaluation(prompt, generated, rubric)
+## print(result)
+```text
 
+
+## Overview
 ### 7.4.4 Factual Consistency Check
 
 Detect hallucinations by verifying generated claims against the input context.
@@ -639,12 +648,12 @@ def factual_consistency_score(
     return supported / len(claims)
 
 
-# Example usage (requires API key)
-# context = "The Eiffel Tower was built in 1889 and is located in Paris, France."
-# generated = "The Eiffel Tower is a famous landmark in Paris. It was built in the 19th century."
-# score = factual_consistency_score(generated, context, client)
-# print(f"Factual consistency: {score:.2%}")
-```
+## Example usage (requires API key)
+## context = "The Eiffel Tower was built in 1889 and is located in Paris, France."
+## generated = "The Eiffel Tower is a famous landmark in Paris. It was built in the 19th century."
+## score = factual_consistency_score(generated, context, client)
+## print(f"Factual consistency: {score:.2%}")
+```text
 
 ## 7.5 Evaluation Datasets
 
@@ -711,7 +720,7 @@ builder.add_sample(DatasetSample("What is a function?", "A function is a reusabl
 
 stratified = builder.stratified_sample(2)
 print(f"Stratified sample size: {len(stratified)}")
-```
+```text
 
 ### Annotation Guidelines
 
@@ -724,7 +733,7 @@ class AnnotationGuideline:
 
     def generate_instructions(self) -> str:
         return f"""
-# Annotation Guidelines: {self.task_description}
+## Annotation Guidelines: {self.task_description}
 
 ## Rating Scale
 {self.rating_scale}
@@ -748,7 +757,7 @@ guidelines = AnnotationGuideline(
     ],
 )
 print(guidelines.generate_instructions())
-```
+```text
 
 ## 7.6 Human Evaluation
 
@@ -801,7 +810,7 @@ outputs = [
     ("model-c", "France's capital is Paris and it is a beautiful city."),
 ]
 print(json.dumps(pairwise_comparison(outputs, judge_fn_simple), indent=2))
-```
+```text
 
 ### 7.6.2 Likert Scale Ratings
 
@@ -844,7 +853,7 @@ result = HumanEvaluationResult(
     ],
 )
 print(json.dumps(result.aggregate(), indent=2))
-```
+```text
 
 ### 7.6.3 Inter-Rater Agreement
 
@@ -874,7 +883,7 @@ def cohens_kappa(ratings_a: List[int], ratings_b: List[int], num_categories: int
 rater_a = [5, 4, 5, 3, 5, 4, 4, 5]
 rater_b = [5, 4, 4, 3, 5, 5, 4, 4]
 print(f"Cohen's Kappa: {cohens_kappa(rater_a, rater_b)}")
-```
+```text
 
 ## 7.7 Task-Specific Benchmarks
 
@@ -919,7 +928,7 @@ class BenchmarkRunner:
         )
 
 
-# Sample GSM8K-like data
+## Sample GSM8K-like data
 gsm8k_data = [
     {"input": "What is 5 + 3?", "expected": "8", "benchmark": "GSM8K"},
     {"input": "Solve 12 * 15", "expected": "180", "benchmark": "GSM8K"},
@@ -948,7 +957,7 @@ def simple_math_solver(input_text: str) -> str:
 runner = BenchmarkRunner(simple_math_solver)
 result = runner.evaluate(gsm8k_data, "simple-math-v1")
 print(f"Benchmark: {result.benchmark_name}, Accuracy: {result.accuracy:.2%}")
-```
+```text
 
 ## 7.8 Evaluation Pipelines
 
@@ -1038,14 +1047,14 @@ result2 = pipeline.run(lambda x: "Tokyo" if "Japan" in x else "Paris")
 
 print(json.dumps(result1, indent=2))
 print(json.dumps(pipeline.regression_report(), indent=2))
-```
+```text
 
 ### CI/CD Integration
 
 Embed evaluation into CI/CD pipelines to catch regressions before deployment.
 
 ```python
-# Conceptual CI/CD evaluation hook
+## Conceptual CI/CD evaluation hook
 def evaluate_for_ci(
     model_fn,
     eval_pipeline: EvaluationPipeline,
@@ -1064,8 +1073,8 @@ def evaluate_for_ci(
     return 0
 
 
-# Example: exit_code = evaluate_for_ci(model_fn, pipeline, threshold=0.7)
-```
+## Example: exit_code = evaluate_for_ci(model_fn, pipeline, threshold=0.7)
+```text
 
 ## Summary
 
@@ -1286,6 +1295,7 @@ Answer: D
 4. Design a stratified evaluation dataset with 50 examples across 5 categories (code generation, summarization, QA, translation, creative writing). Include metadata for difficulty level and source domain.
 
 5. Implement a regression monitoring dashboard that tracks evaluation metrics across model deployments and alerts when any metric drops by more than 5%. Use synthetic data to simulate a regression 
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 11-llms-prompt-engineering
@@ -1295,6 +1305,7 @@ Answer: D
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

@@ -13,12 +13,13 @@
 
 ## Introduction
 
-18-multimodal-ai-voice is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding object detection is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering object detection.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -51,7 +52,7 @@ flowchart TB
     E --> H[NMS]
     G --> H
     H --> I[Final Detections]
-```
+```text
 
 ## 2.1 Detection Fundamentals
 
@@ -111,7 +112,7 @@ class BoundingBox:
         return (f"BBox({self.class_name or self.class_id}, "
                 f"score={self.score:.3f}, [{self.x1:.1f}, {self.y1:.1f}, "
                 f"{self.x2:.1f}, {self.y2:.1f}])")
-```
+```text
 
 ## 2.2 Anchor Boxes & IoU
 
@@ -170,7 +171,7 @@ def match_anchors(anchors: np.ndarray, gt_boxes: np.ndarray,
     best_iou = iou_matrix.max(axis=1)
     matched = best_iou >= iou_threshold
     return best_gt, matched
-```
+```text
 
 ## 2.3 Non-Max Suppression
 
@@ -227,7 +228,7 @@ def soft_nms(boxes: List[BoundingBox], iou_threshold: float = 0.5,
         detections = sorted(remaining, key=lambda x: x[1], reverse=True)
 
     return keep
-```
+```text
 
 ## 2.4 R-CNN Family
 
@@ -321,7 +322,7 @@ class FasterRCNN(nn.Module):
                             batch_size: int) -> torch.Tensor:
         """Convert RPN outputs to box proposals."""
         return torch.randn(100, 4)  # Placeholder for demonstration
-```
+```text
 
 ## 2.5 YOLO Architecture
 
@@ -472,7 +473,7 @@ class YOLOv1(nn.Module):
             results.append(nms(boxes))
 
         return results
-```
+```text
 
 ## 2.6 SSD & RetinaNet
 
@@ -560,7 +561,7 @@ class MultiBoxDetector(nn.Module):
                                 for c in conf_preds], dim=1)
 
         return loc_preds, conf_preds
-```
+```text
 
 ## 2.7 Evaluation Metrics
 
@@ -701,7 +702,7 @@ class COCOMetrics:
                 results[f"AP_{area_name}"] = float(np.mean(ap_values))
 
         return results
-```
+```text
 
 ## 2.8 Deployment
 
@@ -829,7 +830,7 @@ class DetectionPipeline:
                 boxes = self._postprocess(raw.unsqueeze(0), batch[j].shape[:2])
                 results.append(self._draw_boxes(batch[j], boxes))
         return results
-```
+```text
 
 ## Summary
 
@@ -1158,6 +1159,7 @@ Object detection is a foundational computer vision task that combines classifica
 9. **Export and Quantize**: Take a pre-trained detection model (e.g., torchvision's `fasterrcnn_resnet50_fpn`), export it to ONNX, and apply dynamic quantization. Compare the model size and inference speed before and after quantization.
 
 10. **Live Detection Pipeline**: Build a webcam-based object detection pipeline using a YOLO model. Display FPS and detection overlay in real-time. Measure throughput with and without batching. What is the maximum FPS you can achieve on your 
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 18-multimodal-ai-voice
@@ -1167,6 +1169,7 @@ Object detection is a foundational computer vision task that combines classifica
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

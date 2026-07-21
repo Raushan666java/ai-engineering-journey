@@ -13,12 +13,13 @@
 
 ## Introduction
 
-21-interview-preparation is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding llm and rag interview is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering llm and rag interview.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart LR
     E --> F[Memory & Conversation]
     F --> G[Tool Use]
     G --> H[Production LLM Apps]
-```
+```text
 
 ## 6.1 LLM Architecture
 
@@ -67,13 +68,13 @@ tokens = tokenizer.tokenize(text)
 token_ids = tokenizer.encode(text)
 print(f"Tokens: {tokens}")
 print(f"Length: {len(tokens)} tokens")
-# Output: ['The', '▁quick', '▁brown', '▁fox', '▁jumps', '▁over', '▁the', '▁lazy', '▁dog', '.']
+## Output: ['The', '▁quick', '▁brown', '▁fox', '▁jumps', '▁over', '▁the', '▁lazy', '▁dog', '.']
 
-# Counting tokens in a prompt
+## Counting tokens in a prompt
 prompt = "Explain the concept of attention in transformers."
 encoded = tokenizer(prompt, return_tensors="pt")
 print(f"Prompt token count: {encoded.input_ids.shape[1]}")
-```
+```text
 
 **Key models**: GPT-4 (OpenAI), Claude 3 (Anthropic), Llama 3 (Meta), Mistral (Mistral AI), Gemini (Google), DeepSeek. Open-source ecosystem: Hugging Face Transformers, vLLM for inference, llama.cpp for local deployment.
 
@@ -92,7 +93,7 @@ Prompting is the art of crafting inputs to elicit desired outputs from LLMs with
 **ReAct (Reasoning + Acting)**: Alternate between reasoning traces and actions (tool calls). The model thinks, then calls a tool, then observes the result, then continues reasoning. Used in agents and tool-using systems.
 
 ```python
-# System prompt for a helpful assistant
+## System prompt for a helpful assistant
 system_prompt = """You are an expert AI assistant specializing in backend engineering and AI/ML.
 Answer accurately and concisely. If you're unsure, say so.
 
@@ -102,7 +103,7 @@ Key rules:
 3. Admit uncertainty
 4. Use markdown formatting for readability"""
 
-# Few-shot prompting
+## Few-shot prompting
 few_shot_prompt = """Extract the SQL query from the following text:
 
 Text: Can you show me all users who signed up last month?
@@ -114,7 +115,7 @@ SQL: SELECT COUNT(*) FROM orders WHERE DATE(order_date) = DATE_SUB(CURRENT_DATE,
 Text: Find the top 5 products by revenue this quarter.
 SQL:"""
 
-# Chain-of-thought reasoning
+## Chain-of-thought reasoning
 cot_prompt = """Solve this math problem step by step:
 
 A store sells apples for $2 each and oranges for $3 each.
@@ -129,7 +130,7 @@ Let's think step by step:
 
 Answer: $31"""
 
-# Structured output with JSON mode
+## Structured output with JSON mode
 json_prompt = """Extract the following information from the resume in JSON format:
 {
   "name": "...",
@@ -142,7 +143,7 @@ json_prompt = """Extract the following information from the resume in JSON forma
 }
 
 Resume: [resume text here]"""
-```
+```text
 
 **Prompt engineering principles**: Be specific, provide context, use delimiters, specify output format, give the model an "out" (say "I don't know"), break complex tasks into steps, use temperature appropriately (0 for factual, 0.7+ for creative).
 
@@ -162,14 +163,14 @@ Retrieval-Augmented Generation grounds LLM responses in external knowledge, redu
 6. **Generation**: Inject retrieved chunks into the LLM prompt as context. The LLM generates an answer grounded in the provided context.
 
 ```python
-# RAG implementation with LangChain
+## RAG implementation with LangChain
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import OpenAIEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain.chains import RetrievalQA
 from langchain_community.llms import OpenAI
 
-# Step 1: Load and chunk documents
+## Step 1: Load and chunk documents
 def load_and_chunk(file_paths: list[str]) -> list:
     text_splitter = RecursiveCharacterTextSplitter(
         chunk_size=512,
@@ -184,7 +185,7 @@ def load_and_chunk(file_paths: list[str]) -> list:
         all_chunks.extend(chunks)
     return all_chunks
 
-# Step 2: Create vector store
+## Step 2: Create vector store
 def create_vector_store(chunks):
     embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
     vector_store = Chroma.from_texts(
@@ -194,7 +195,7 @@ def create_vector_store(chunks):
     )
     return vector_store
 
-# Step 3: Create retrieval QA chain
+## Step 3: Create retrieval QA chain
 def create_rag_chain(vector_store):
     retriever = vector_store.as_retriever(
         search_type="similarity",
@@ -208,14 +209,14 @@ def create_rag_chain(vector_store):
     )
     return qa_chain
 
-# Step 4: Query
+## Step 4: Query
 def answer_question(qa_chain, question: str):
     result = qa_chain({"query": question})
     print(f"Answer: {result['result']}")
     print(f"Sources: {len(result['source_documents'])} chunks")
     return result
 
-# Advanced retrieval: multi-query + re-ranking
+## Advanced retrieval: multi-query + re-ranking
 def advanced_retrieval(vector_store, question: str, k: int = 10):
     # Generate multiple query variations
     queries = [
@@ -237,7 +238,7 @@ def advanced_retrieval(vector_store, question: str, k: int = 10):
             unique_docs.append(doc)
 
     return unique_docs[:k]
-```
+```text
 
 **RAG quality factors**: Chunk size (too small = missing context, too large = noise), embedding model quality, retrieval k count, prompt template that instructs the model to use or ignore retrieved context, hybrid search for out-of-vocabulary terms.
 
@@ -258,7 +259,7 @@ Fine-tuning adapts a pre-trained LLM to a specific domain or task using labeled 
 **Supervised instruction tuning**: Train on (instruction, response) pairs. Dataset formats: ShareGPT, Alpaca, Dolly, OpenAssistant. Combines with system prompts for controllable behavior.
 
 ```python
-# LoRA fine-tuning with Hugging Face PEFT
+## LoRA fine-tuning with Hugging Face PEFT
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, TrainingArguments
 from peft import LoraConfig, get_peft_model, TaskType
@@ -289,7 +290,7 @@ def setup_lora_model(model_name: str = "mistralai/Mistral-7B-v0.1"):
     # Output: trainable params: ~8.4M / 7B total = 0.12%
     return model, tokenizer
 
-# Training data preparation
+## Training data preparation
 def prepare_dataset(instructions: list[dict], tokenizer, max_length: int = 512):
     def format_prompt(example):
         return f"### Instruction:\n{example['instruction']}\n\n### Response:\n{example['response']}"
@@ -309,7 +310,7 @@ def prepare_dataset(instructions: list[dict], tokenizer, max_length: int = 512):
     tokenized = dataset.map(tokenize_function, batched=True)
     return tokenized
 
-# Training arguments
+## Training arguments
 def get_training_args(output_dir: str = "./lora-finetuned"):
     return TrainingArguments(
         output_dir=output_dir,
@@ -324,7 +325,7 @@ def get_training_args(output_dir: str = "./lora-finetuned"):
         fp16=True,
         report_to="none",
     )
-```
+```text
 
 **Preference tuning** (RLHF, DPO): After supervised fine-tuning, align the model with human preferences. RLHF uses a reward model + PPO. DPO (Direct Preference Optimization) directly optimizes on preference pairs without a separate reward model — simpler and more stable.
 
@@ -344,7 +345,7 @@ Evaluating LLMs is challenging because outputs are open-ended. Use multiple comp
 **Hallucination detection**: Check if the LLM's claims are grounded in the provided context. Use NLI models, factual consistency checkers (TrueTeacher, SelfCheckGPT), or ask the LLM to verify its own answer.
 
 ```python
-# LLM-as-judge evaluation
+## LLM-as-judge evaluation
 import json
 
 def evaluate_with_llm_judge(question: str, response: str, rubric: dict) -> dict:
@@ -373,7 +374,7 @@ Provide scores in JSON format:
     result = call_llm(judge_prompt, model="gpt-4", temperature=0)
     return json.loads(result)
 
-# Groundedness check (hallucination detection)
+## Groundedness check (hallucination detection)
 def check_groundedness(response: str, context: str) -> dict:
     prompt = f"""Context: {context}
 
@@ -391,7 +392,7 @@ Output format:
     result = call_llm(prompt, temperature=0)
     return json.loads(result)
 
-# Automated evaluation with BERTScore
+## Automated evaluation with BERTScore
 from bert_score import score
 
 def evaluate_with_bertscore(references: list[str], candidates: list[str]):
@@ -399,7 +400,7 @@ def evaluate_with_bertscore(references: list[str], candidates: list[str]):
     print(f"BERTScore F1: {F1.mean():.4f} ± {F1.std():.4f}")
     return {"precision": P, "recall": R, "f1": F1}
 
-# RAGAS metrics for RAG evaluation
+## RAGAS metrics for RAG evaluation
 from ragas.metrics import faithfulness, answer_relevancy, context_precision
 from ragas.llms import llm_factory
 
@@ -410,7 +411,7 @@ def evaluate_rag(questions, answers, contexts, ground_truths):
         "context_precision": context_precision.score(questions, contexts),
     }
     return results
-```
+```text
 
 **Red-teaming**: Adversarial testing to identify safety issues, jailbreaks, and edge cases. Test for prompt injection, harmful outputs, bias, and hallucination in critical domains (medical, legal, financial).
 
@@ -433,7 +434,7 @@ Memory enables LLMs to maintain context across multiple turns in a conversation.
 from langchain.memory import ConversationSummaryBufferMemory
 from langchain.chains import ConversationChain
 
-# Conversation with summary memory
+## Conversation with summary memory
 memory = ConversationSummaryBufferMemory(
     llm=OpenAI(temperature=0),
     max_token_limit=2000,
@@ -447,15 +448,15 @@ conversation = ConversationChain(
     verbose=True,
 )
 
-# Multi-turn conversation
+## Multi-turn conversation
 response1 = conversation.predict(input="Hi, I'm building a RAG system. What chunk size should I use?")
 response2 = conversation.predict(input="What about overlap between chunks?")
 response3 = conversation.predict(input="Which vector database do you recommend?")
 
-# The model remembers the earlier turns through the summary
+## The model remembers the earlier turns through the summary
 response4 = conversation.predict(input="Based on what we discussed, recommend a complete tech stack.")
 
-# Custom memory implementations
+## Custom memory implementations
 class SlidingWindowMemory:
     def __init__(self, window_size: int = 10):
         self.history = []
@@ -481,7 +482,7 @@ class SlidingWindowMemory:
 
     def clear(self) -> None:
         self.history = []
-```
+```text
 
 **Multi-turn challenges**: Position bias (model forgets middle parts of context), consistency (maintains persona and facts across turns), long-term dependency (recalling facts from early turns). Mitigation: periodic summarization, structured memory stores, clear context management.
 
@@ -496,7 +497,7 @@ Tool use (function calling) enables LLMs to interact with external systems — d
 **Parallel tool calling**: Modern LLMs can call multiple tools simultaneously (e.g., fetch weather for 3 cities at once). The model outputs multiple function calls in a single response.
 
 ```python
-# Tool definitions (OpenAI format)
+## Tool definitions (OpenAI format)
 tools = [
     {
         "type": "function",
@@ -543,7 +544,7 @@ tools = [
     }
 ]
 
-# Tool execution loop
+## Tool execution loop
 def tool_calling_loop(user_message: str, tools: list, max_iterations: int = 5):
     messages = [{"role": "user", "content": user_message}]
 
@@ -569,7 +570,7 @@ def tool_calling_loop(user_message: str, tools: list, max_iterations: int = 5):
 
     return "Max iterations reached"
 
-# ReAct agent pattern (reasoning + acting)
+## ReAct agent pattern (reasoning + acting)
 def react_agent(question: str, max_steps: int = 10):
     prompt = f"""Answer the following question by thinking step by step and using tools.
 
@@ -590,7 +591,7 @@ Thought: [final reasoning]
 Final Answer: [your final answer]"""
 
     return prompt
-```
+```text
 
 **Best practices**: Write clear, specific tool descriptions (the LLM relies on these). Handle tool failures gracefully (timeout, error response). Validate tool arguments before execution. Log all tool calls for debugging and audit.
 
@@ -612,7 +613,7 @@ from fastapi import FastAPI, Request
 from fastapi.responses import StreamingResponse
 from typing import AsyncGenerator
 
-# Streaming response from LLM
+## Streaming response from LLM
 async def stream_llm_response(prompt: str) -> AsyncGenerator[str, None]:
     response = openai.ChatCompletion.create(
         model="gpt-4",
@@ -623,7 +624,7 @@ async def stream_llm_response(prompt: str) -> AsyncGenerator[str, None]:
         if chunk.choices[0].delta.content:
             yield chunk.choices[0].delta.content
 
-# FastAPI endpoint with streaming
+## FastAPI endpoint with streaming
 app = FastAPI()
 
 @app.post("/chat")
@@ -636,7 +637,7 @@ async def chat(request: Request):
         media_type="text/event-stream",
     )
 
-# Semantic caching
+## Semantic caching
 import numpy as np
 from functools import lru_cache
 
@@ -658,7 +659,7 @@ class SemanticCache:
         query_emb = self.embedding_model.embed(query)
         self.cache.append((query_emb, query, response))
 
-# Guardrails for input/output safety
+## Guardrails for input/output safety
 class Guardrails:
     def __init__(self, moderation_api):
         self.moderation = moderation_api
@@ -688,7 +689,7 @@ class Guardrails:
         categories = result["results"][0]["categories"]
         flagged = any(categories.values())
         return {"flagged": flagged, "categories": categories}
-```
+```text
 
 **Observability**: Log prompts, responses, latency, token count, and cost. Use tools like LangSmith, Weights & Biases Prompts, or Helicone. Monitor for regressions after model updates.
 
@@ -1213,6 +1214,7 @@ d) No output
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 21-interview-preparation
@@ -1222,6 +1224,7 @@ d) No output
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

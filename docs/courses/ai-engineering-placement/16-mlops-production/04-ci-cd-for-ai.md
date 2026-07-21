@@ -13,12 +13,13 @@
 
 ## Introduction
 
-16-mlops-production is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding ci cd for ai is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering ci cd for ai.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -45,7 +46,7 @@ flowchart LR
     I --> J{Monitor OK?}
     J -->|Yes| K[Production Deploy]
     J -->|No| L[Rollback]
-```
+```text
 
 ## 4.1 AI CI/CD vs Traditional CI/CD
 
@@ -70,7 +71,7 @@ flowchart TB
         A9 -->|Yes| A10[Production Deploy]
         A9 -->|No| A11[Rollback]
     end
-```
+```text
 
 **Key differences**:
 
@@ -83,35 +84,35 @@ flowchart TB
 | Monitoring | App health metrics | Model drift + performance |
 
 ```python
-# Traditional CI pipeline
-# on: push
-# jobs:
-#   test:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - run: npm test
-#       - run: npm build
-#       - run: deploy
+## Traditional CI pipeline
+## on: push
+## jobs:
+##   test:
+##     runs-on: ubuntu-latest
+##     steps:
+##       - run: npm test
+##       - run: npm build
+##       - run: deploy
 
-# AI CI pipeline
-# on: push
-# jobs:
-#   validate-data:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - run: python scripts/validate_data.py
-#   train-evaluate:
-#     needs: validate-data
-#     runs-on: [self-hosted, gpu]
-#     steps:
-#       - run: python train.py --config params.yaml
-#       - run: python evaluate.py --threshold 0.95
-#   deploy:
-#     needs: train-evaluate
-#     runs-on: ubuntu-latest
-#     steps:
-#       - run: python deploy_model.py --stage staging
-```
+## AI CI pipeline
+## on: push
+## jobs:
+##   validate-data:
+##     runs-on: ubuntu-latest
+##     steps:
+##       - run: python scripts/validate_data.py
+##   train-evaluate:
+##     needs: validate-data
+##     runs-on: [self-hosted, gpu]
+##     steps:
+##       - run: python train.py --config params.yaml
+##       - run: python evaluate.py --threshold 0.95
+##   deploy:
+##     needs: train-evaluate
+##     runs-on: ubuntu-latest
+##     steps:
+##       - run: python deploy_model.py --stage staging
+```text
 
 ---
 
@@ -120,7 +121,7 @@ flowchart TB
 A well-designed AI CI/CD pipeline has distinct stages for code, data, training, evaluation, and deployment.
 
 ```python
-# pipeline_builder.py — Define and execute AI CI/CD pipelines
+## pipeline_builder.py — Define and execute AI CI/CD pipelines
 import os
 import subprocess
 import json
@@ -163,7 +164,7 @@ class AIPipeline:
                 print(f"  ❌ {name}: {e}")
                 break
 
-# Define pipeline stages
+## Define pipeline stages
 pipeline = AIPipeline("model-retrain", "params.yaml")
 
 def validate_data(pipe):
@@ -192,7 +193,7 @@ pipeline.add_stage(PipelineStage("evaluate", evaluate_model, dependencies=["trai
 pipeline.add_stage(PipelineStage("deploy_staging", deploy_staging, dependencies=["evaluate"]))
 
 pipeline.run()
-```
+```text
 
 ---
 
@@ -201,7 +202,7 @@ pipeline.run()
 Parameterized training jobs allow CI to train models with different configurations.
 
 ```python
-# train.py — parameterized training script for CI
+## train.py — parameterized training script for CI
 import argparse
 import json
 import os
@@ -278,39 +279,39 @@ if __name__ == "__main__":
 
     result = train(config)
     print(json.dumps(result, indent=2))
-```
+```text
 
 **GitHub Actions matrix for hyperparameter sweeps**:
 
 ```yaml
-# .github/workflows/train-matrix.yml
-# name: Model Training Matrix
-# on:
-#   workflow_dispatch:
-#     inputs:
-#       experiment_name:
-#         description: "Experiment name"
-#         required: true
-# jobs:
-#   train:
-#     strategy:
-#       matrix:
-#         model_type: [random_forest, gradient_boosting]
-#         n_estimators: [100, 200, 300]
-#         max_depth: [5, 10, 15]
-#     runs-on: ubuntu-latest
-#     steps:
-#       - uses: actions/checkout@v4
-#       - uses: actions/setup-python@v5
-#       - run: |
-#           pip install -r requirements.txt
-#           python train.py --config <(echo '{
-#             "model_type": "${{ matrix.model_type }}",
-#             "n_estimators": ${{ matrix.n_estimators }},
-#             "max_depth": ${{ matrix.max_depth }},
-#             "experiment_name": "${{ github.event.inputs.experiment_name }}"
-#           }')
-```
+## .github/workflows/train-matrix.yml
+## name: Model Training Matrix
+## on:
+##   workflow_dispatch:
+##     inputs:
+##       experiment_name:
+##         description: "Experiment name"
+##         required: true
+## jobs:
+##   train:
+##     strategy:
+##       matrix:
+##         model_type: [random_forest, gradient_boosting]
+##         n_estimators: [100, 200, 300]
+##         max_depth: [5, 10, 15]
+##     runs-on: ubuntu-latest
+##     steps:
+##       - uses: actions/checkout@v4
+##       - uses: actions/setup-python@v5
+##       - run: |
+##           pip install -r requirements.txt
+##           python train.py --config <(echo '{
+##             "model_type": "${{ matrix.model_type }}",
+##             "n_estimators": ${{ matrix.n_estimators }},
+##             "max_depth": ${{ matrix.max_depth }},
+##             "experiment_name": "${{ github.event.inputs.experiment_name }}"
+##           }')
+```text
 
 ---
 
@@ -319,7 +320,7 @@ if __name__ == "__main__":
 Evaluation gates are quality thresholds that models must pass before deployment. These prevent underperforming models from reaching production.
 
 ```python
-# evaluate.py — evaluation gate logic
+## evaluate.py — evaluation gate logic
 import json
 import sys
 import numpy as np
@@ -364,21 +365,21 @@ class EvaluationGate:
         print("✅ All evaluation gates passed")
         return True
 
-# Example thresholds
+## Example thresholds
 gates = EvaluationGate({
     "mae": {"max": 3.0},
     "accuracy": 0.85,
     "f1": 0.80
 })
 
-# Simulate evaluation
+## Simulate evaluation
 y_true = np.random.rand(100)
 y_pred = y_true + np.random.randn(100) * 0.1
 passed = gates.evaluate_regression(y_true, y_pred)
 
 if not passed:
     sys.exit(1)
-```
+```text
 
 **Comparison gates: new model vs current production**:
 
@@ -413,7 +414,7 @@ comparison = compare_with_production(
     improvement_threshold=0.05
 )
 print(json.dumps(comparison, indent=2))
-```
+```text
 
 ---
 
@@ -422,7 +423,7 @@ print(json.dumps(comparison, indent=2))
 CD pipelines automate model version transitions through registry stages.
 
 ```python
-# deploy_model.py — automated model promotion
+## deploy_model.py — automated model promotion
 import mlflow
 import json
 import sys
@@ -489,14 +490,14 @@ class ModelPromoter:
 
 promoter = ModelPromoter()
 
-# In CI pipeline:
+## In CI pipeline:
 promoter.deploy_with_gates(
     run_id="abc123def456",
     model_name="PricePredictor",
     evaluations={"mae": 2.1, "r2": 0.89},
     thresholds={"mae": 3.0, "r2": 0.80}
 )
-```
+```text
 
 ---
 
@@ -572,7 +573,7 @@ class CanaryDeployer:
         self.router.routing = {primary_version: 100}
         print(f"⚠️ Rolled back to {primary_version}")
 
-# Simulated deployment
+## Simulated deployment
 router = ModelRouter()
 router.add_version("v1", "http://model-v1:8080")
 router.add_version("v2", "http://model-v2:8080")
@@ -589,7 +590,7 @@ for step in range(5):
         break
     print(f"Step {step}: metrics OK, increasing traffic")
     deployer.increase_traffic()
-```
+```text
 
 **Rollback automation**:
 
@@ -627,7 +628,7 @@ class RollbackManager:
                 self.rollback_to(history[0].version)
                 return True
         return False
-```
+```text
 
 ---
 
@@ -668,7 +669,7 @@ class AIPipelineRunner {
     }
   }
 }
-```
+```text
 
 ---
 
@@ -882,6 +883,7 @@ d) Run unit tests on model code
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 16-mlops-production
@@ -891,6 +893,7 @@ d) Run unit tests on model code
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

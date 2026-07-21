@@ -13,12 +13,13 @@
 
 ## Introduction
 
-18-multimodal-ai-voice is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding voice agents is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering voice agents.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -49,7 +50,7 @@ flowchart LR
         C -.-> F
         D -.-> F
     end
-```
+```text
 
 ## 6.1 Voice Agent Architecture
 
@@ -182,7 +183,7 @@ class VoiceAgent:
         self.audio_buffer = np.array([], dtype=np.float32)
         self.state = AgentState.IDLE
         self.conversation_history.clear()
-```
+```text
 
 ## 6.2 Text-to-Speech Synthesis
 
@@ -380,7 +381,7 @@ class TTSInference:
 
     def _vocode(self, mel: torch.Tensor) -> np.ndarray:
         return np.sin(np.linspace(0, 100, 16000))
-```
+```text
 
 ## 6.3 Voice Pipeline Integration
 
@@ -500,7 +501,7 @@ class PipelineOptimizer:
                 }
 
         return await pipeline.process_turn(audio)
-```
+```text
 
 ## 6.4 Voice UI Design
 
@@ -612,7 +613,7 @@ class ErrorHandler:
 
     def reset(self):
         self.retry_count = 0
-```
+```text
 
 ## 6.5 Real-Time Streaming
 
@@ -760,7 +761,7 @@ class LatencyBudgetManager:
             return {'asr_model': 'medium', 'llm_model': 'gpt-3.5', 'tts_model': 'medium'}
         else:
             return {'asr_model': 'small', 'llm_model': 'fast', 'tts_model': 'low'}
-```
+```text
 
 ## 6.6 Production Voice Agents
 
@@ -918,7 +919,7 @@ class VoiceAgentLogger:
                 if query.lower() in entry.get("user_text", "").lower():
                     logs.append(entry)
         return logs
-```
+```text
 
 ## Summary
 
@@ -1249,6 +1250,7 @@ Voice agents combine ASR, LLM, and TTS into a real-time conversational pipeline.
 9. **Multi-Language Voice Agent**: Build a voice agent that detects the user's language from speech (using Whisper language identification). Respond in the same language. Support at least 3 languages. Test code-switching (mixing languages in one utterance).
 
 10. **End-to-End Speech Model Exploration**: Research and test an end-to-end speech model (GPT-4o audio, SeamlessM4T, or similar). Compare its quality and latency with the cascaded approach (ASR + LLM + TTS). Report pros and cons of each 
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 18-multimodal-ai-voice
@@ -1258,6 +1260,7 @@ Voice agents combine ASR, LLM, and TTS into a real-time conversational pipeline.
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

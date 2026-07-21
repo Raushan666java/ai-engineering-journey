@@ -12,12 +12,13 @@
 
 ## Introduction
 
-13-ai-agents-langgraph is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding memory and state is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering memory and state.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -45,7 +46,7 @@ flowchart TD
     SM --> DB
     DB --> |Retrieve| AG[Agent Context]
     AG --> ST
-```
+```text
 
 ## 5.1 Memory Types
 
@@ -119,7 +120,7 @@ memory.add("User prefers Python programming", MemoryType.SEMANTIC, importance=0.
 memory.add("Searched for AI agents, found useful results", MemoryType.EPISODIC, importance=0.6)
 print(f"Semantic memories: {len(memory.get_by_type(MemoryType.SEMANTIC))}")
 print(f"Search 'Python': {len(memory.search('Python'))}")
-```
+```text
 
 ## 5.2 Conversation Memory
 
@@ -158,7 +159,7 @@ for i in range(10):
     window.add_message("user", f"Message {i}" * 10)
     window.add_message("assistant", f"Response {i}" * 10)
 print(f"Window size: {len(window.messages)} messages (trimmed from 10)")
-```
+```text
 
 ### 5.2.2 Summarizing Memory
 
@@ -202,7 +203,7 @@ for i in range(6):
     sum_mem.add_message("assistant", f"Answer {i}")
 print(f"Summary generated: {sum_mem.summary is not None}")
 print(f"Remaining messages: {len(sum_mem.messages)}")
-```
+```text
 
 ### 5.2.3 Hybrid Memory
 
@@ -257,7 +258,7 @@ for i in range(10):
     hybrid.add("user", f"Query {i}")
     hybrid.add("assistant", f"Response {i}")
 print(f"Hybrid memory stats: {hybrid.stats()}")
-```
+```text
 
 ## 5.3 External Memory
 
@@ -306,7 +307,7 @@ results = vmem.search("programming preferences")
 print(f"Vector search results: {len(results)}")
 for r in results:
     print(f"  {r['content']} (relevance: {r['relevance']})")
-```
+```text
 
 ### 5.3.2 Key-Value Fact Memory
 
@@ -359,7 +360,7 @@ facts.remember("user_name", "Alice", "conversation")
 facts.remember("preferred_language", "Python", "conversation")
 print(f"Recalled name: {facts.recall('user_name')}")
 print(f"Recalled unknown: {facts.recall('favorite_color')}")
-```
+```text
 
 ### 5.3.3 Episodic Memory
 
@@ -402,7 +403,7 @@ episodes = EpisodicMemory()
 episodes.record("web_search", "Found relevant papers", {"query": "AI agents"}, True)
 episodes.record("database_query", "No results", {"query": "AI agents"}, False)
 print(f"Success rate for 'search': {episodes.get_success_rate('search'):.0%}")
-```
+```text
 
 ## 5.4 State Management
 
@@ -445,7 +446,7 @@ state.start_task("Research AI agents")
 state.increment_step()
 state.facts.remember("research_topic", "AI agents", "system")
 print(f"State snapshot: {state.snapshot()}")
-```
+```text
 
 ### 5.4.2 Shared State Between Agents
 
@@ -483,7 +484,7 @@ shared = SharedState()
 shared.set("research_results", [])
 shared.update("research_results", lambda x: x + ["Found paper on AI agents"])
 print(f"Shared data: {shared.get('research_results')}")
-```
+```text
 
 ## 5.5 Save and Restore
 
@@ -545,7 +546,7 @@ restored = StateSerializer.from_dict(serialized)
 print(f"Original task: {original.current_task}")
 print(f"Restored task: {restored.current_task}")
 print(f"Facts match: {original.facts.recall('topic') == restored.facts.recall('topic')}")
-```
+```text
 
 ### 5.5.2 Checkpoint Manager
 
@@ -586,7 +587,7 @@ class CheckpointManager:
 cm = CheckpointManager("./checkpoints")
 cm.save("agent-1", original, "v1")
 print(f"Saved checkpoint: {cm.list_checkpoints('agent-1')}")
-```
+```text
 
 ### 5.5.3 Session Persistence
 
@@ -630,7 +631,7 @@ state_a.facts.remember("session", "one", "system")
 state_b.facts.remember("session", "two", "system")
 print(f"Session 1 fact: {sm.get_session('session-1').facts.recall('session')}")
 print(f"Active sessions: {sm.stats()['active_sessions']}")
-```
+```text
 
 ## 5.6 Memory Optimization
 
@@ -670,7 +671,7 @@ importance_mem.add("Critical user preference", 0.9)
 importance_mem.add("Minor observation", 0.2)
 print(f"Important entries: {len(importance_mem.get_important(0.7))}")
 print(f"Total entries: {len(importance_mem.entries)}")
-```
+```text
 
 ### 5.6.2 Forgetting Curve
 
@@ -697,7 +698,7 @@ new_entry = MemoryEntry(content="new info", memory_type=MemoryType.SEMANTIC, tim
 print(f"Old recall prob: {curve.recall_probability(old_entry):.3f}")
 print(f"New recall prob: {curve.recall_probability(new_entry):.3f}")
 print(f"Forget old: {curve.should_forget(old_entry, 0.2)}")
-```
+```text
 
 ### 5.6.3 Memory Compression
 
@@ -733,7 +734,7 @@ entries = [
 ]
 summary = compressor.compress(entries)
 print(f"Compressed: {summary}")
-```
+```text
 
 ## Summary
 
@@ -937,6 +938,7 @@ Answer: B
 4. Implement an importance-based forgetting system where memories with importance < 0.3 are discarded and low-access-count memories are pruned. Test with 20 entries of varying importance.
 
 5. Design a shared state system for multi-agent collaboration with read/write locks. Simulate 3 agents reading and updating shared state concurrently without da
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 13-ai-agents-langgraph
@@ -946,6 +948,7 @@ Answer: B
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

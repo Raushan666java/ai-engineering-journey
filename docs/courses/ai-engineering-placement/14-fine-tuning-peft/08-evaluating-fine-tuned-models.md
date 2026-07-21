@@ -11,12 +11,13 @@
 
 ## Introduction
 
-14-fine-tuning-peft is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding evaluating fine tuned models is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering evaluating fine tuned models.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -56,7 +57,7 @@ flowchart TD
     P --> S
     A --> S
     H --> S
-```
+```text
 
 ## 8.1 Evaluation Framework
 
@@ -110,7 +111,7 @@ registry = MetricRegistry()
 for m in ["accuracy", "f1", "perplexity", "rouge-l", "exact_match"]:
     registry.register(MetricDefinition(m, MetricCategory.AUTOMATIC, f"{m} metric", "0-1 or 0-inf", True))
 print(f"Task metrics for QA: {registry.get_task_metrics('qa')}")
-```
+```text
 
 ### 8.1.2 Evaluation Pipeline
 
@@ -144,7 +145,7 @@ pipeline.register_evaluator("accuracy", lambda m, d: {"value": 0.85, "count": le
 pipeline.register_evaluator("perplexity", lambda m, d: {"value": 8.3, "tokens": 5000})
 results = pipeline.evaluate(None, [{"text": "test"} for _ in range(100)])
 print(f"Summary: {pipeline.summary()}")
-```
+```text
 
 ## 8.2 Perplexity
 
@@ -186,7 +187,7 @@ class PerplexityCalculator:
 ppl_calc = PerplexityCalculator()
 logprobs = np.array([-3.0, -2.5, -4.0, -3.2, -2.8])
 print(f"Perplexity: {ppl_calc.compute(logprobs):.2f}")
-```
+```text
 
 ### 8.2.2 Validation Loss vs Perplexity
 
@@ -219,7 +220,7 @@ analyzer = LossPPLAnalyzer()
 losses = [2.5, 2.1, 1.8, 1.6, 1.5, 1.4, 1.35]
 results = analyzer.analyze(losses)
 print(f"Analysis: {results}")
-```
+```text
 
 ## 8.3 Task Accuracy
 
@@ -279,7 +280,7 @@ preds = ["A", "B", "A", "B", "A"]
 targets = ["A", "B", "A", "A", "A"]
 print(f"Accuracy: {ce.accuracy(preds, targets)}")
 print(f"F1: {ce.f1_score(preds, targets)}")
-```
+```text
 
 ### 8.3.2 Generation Task Evaluation
 
@@ -333,7 +334,7 @@ preds = ["The sky is blue.", "Python is a language."]
 targets = ["sky is blue", "Python programming language"]
 print(f"Exact match: {ge.exact_match(preds, targets)}")
 print(f"ROUGE-L: {round(ge.rouge_l(preds[0], targets[0]), 3)}")
-```
+```text
 
 ## 8.4 Human Evaluation
 
@@ -385,7 +386,7 @@ class HumanEvaluationScale:
 hes = HumanEvaluationScale()
 response = "This is a clear and accurate response about fine-tuning."
 print(f"Human eval scores: {hes.score(response)}")
-```
+```text
 
 ### 8.4.2 Pairwise Comparison
 
@@ -439,7 +440,7 @@ phe = PairwiseHumanEval()
 phe.compare("A short response", "A much longer and more detailed answer here.")
 phe.compare("Good", "Excellent and comprehensive response.")
 print(f"Win rate: {phe.win_rate('Model')}")
-```
+```text
 
 ## 8.5 Benchmark Suites
 
@@ -500,7 +501,7 @@ class BenchmarkRegistry:
 
 bm_registry = BenchmarkRegistry()
 print(f"Recommended for reasoning: {bm_registry.recommend('reasoning')}")
-```
+```text
 
 ### 8.5.2 Benchmark Runner
 
@@ -546,7 +547,7 @@ runner = BenchmarkRunner()
 questions = [{"question": f"Q{i}", "answer": "A"} for i in range(100)]
 runner.run(None, "MMLU", questions)
 print(f"Benchmark summary: {runner.summary()}")
-```
+```text
 
 ## 8.6 Model Comparison
 
@@ -593,7 +594,7 @@ comparison.add_metric("HellaSwag", 0.812, 0.835)
 comparison.add_metric("GSM8K", 0.523, 0.491)  # regression in math
 print(f"Summary: {comparison.summary()}")
 print(f"Regressions: {comparison.regression_check(tolerance=0.01)}")
-```
+```text
 
 ### 8.6.2 Evaluation Report
 
@@ -646,7 +647,7 @@ report.add_section("benchmarks", {
     "gsm8k": {"before": 0.52, "after": 0.49, "improved": False},
 })
 print(f"Verdict: {report.generate()['verdict']}")
-```
+```text
 
 ## Summary
 
@@ -850,6 +851,7 @@ Answer: B
 4. Implement a before/after model comparison. Given 5 metrics with before and after values, identify improvements, regressions, and generate a verdict.
 
 5. Build a benchmark runner that evaluates a model on MMLU (multiple choice) and GSM8K (math). Report accuracy for each and overall
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 14-fine-tuning-peft
@@ -859,6 +861,7 @@ Answer: B
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

@@ -13,12 +13,13 @@
 
 ## Introduction
 
-21-interview-preparation is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding system design interview is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering system design interview.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart LR
     E --> F[Real-Time Systems]
     F --> G[Data Systems]
     G --> H[Case Studies]
-```
+```text
 
 ## 8.1 Design Framework
 
@@ -64,7 +65,7 @@ A structured approach ensures you cover all aspects of the system. Follow this f
 **Step 7 — Tradeoffs and summary (2-3 min)**: What you optimized for, what you sacrificed, alternative approaches.
 
 ```python
-# Estimation utility
+## Estimation utility
 def estimate_traffic(dau: int, requests_per_user_per_day: float) -> dict:
     daily_requests = dau * requests_per_user_per_day
     qps = daily_requests / (24 * 3600)  # queries per second
@@ -84,17 +85,17 @@ def estimate_storage(records_per_day: int, record_size_bytes: int, retention_day
         "total_tb": total / (1024**4),
     }
 
-# Example: Design Twitter
-# DAU: 200M, tweets/user/day: 2
+## Example: Design Twitter
+## DAU: 200M, tweets/user/day: 2
 traffic = estimate_traffic(200_000_000, 2)
 print(f"Avg QPS: {traffic['avg_qps']:.0f}, Peak QPS: {traffic['peak_qps']:.0f}")
-# Avg QPS: 4,630, Peak QPS: 13,890
+## Avg QPS: 4,630, Peak QPS: 13,890
 
-# Storage: 400M tweets/day, 500 bytes per tweet, 5 year retention
+## Storage: 400M tweets/day, 500 bytes per tweet, 5 year retention
 storage = estimate_storage(400_000_000, 500, 365 * 5)
 print(f"Total storage: {storage['total_tb']:.0f} TB")
-# Total storage: ~333 TB
-```
+## Total storage: ~333 TB
+```text
 
 ---
 
@@ -113,7 +114,7 @@ Choosing the right data store is one of the most important design decisions.
 **Search engines (Elasticsearch)**: Full-text search, complex aggregations. Best for: log analytics, product search, site search.
 
 ```python
-# Sharding strategies
+## Sharding strategies
 import hashlib
 
 class ConsistentHashRing:
@@ -149,7 +150,7 @@ class ConsistentHashRing:
     def _hash(self, key: str) -> int:
         return int(hashlib.md5(key.encode()).hexdigest(), 16)
 
-# Range-based sharding
+## Range-based sharding
 class RangeShardManager:
     def __init__(self, shard_ranges: list[tuple[int, int, str]]):
         self.shards = shard_ranges  # [(min_id, max_id, shard_url), ...]
@@ -160,7 +161,7 @@ class RangeShardManager:
                 return url
         raise ValueError(f"No shard for id {entity_id}")
 
-# Read replicas for scaling reads
+## Read replicas for scaling reads
 class ReadWriteSplitting:
     def __init__(self, write_master: str, read_replicas: list[str]):
         self.master = write_master
@@ -174,7 +175,7 @@ class ReadWriteSplitting:
         replica = self.replicas[self._replica_index % len(self.replicas)]
         self._replica_index += 1
         return execute(replica, query, params)
-```
+```text
 
 **Replication**: Leader-follower (single leader, async/sync replication), leader-leader (multi-write, conflict resolution), quorum-based (R = read quorum, W = write quorum, N = total replicas).
 
@@ -196,7 +197,7 @@ Caching reduces latency and database load. A multi-level cache strategy is essen
 from datetime import timedelta
 from typing import Optional, Any
 
-# Multi-level cache
+## Multi-level cache
 class MultiLevelCache:
     def __init__(self, l1_cache: Any, l2_cache: Any, l1_ttl: int = 60, l2_ttl: int = 3600):
         self.l1 = l1_cache  # in-memory, fast, small
@@ -227,7 +228,7 @@ class MultiLevelCache:
         self.l1.invalidate(key)
         self.l2.delete(key)
 
-# Cache-aside pattern
+## Cache-aside pattern
 def get_user(user_id: int, cache, db) -> dict:
     cache_key = f"user:{user_id}"
 
@@ -243,7 +244,7 @@ def get_user(user_id: int, cache, db) -> dict:
         cache.set(cache_key, json.dumps(user), ttl=3600)
     return user
 
-# Write-through cache
+## Write-through cache
 def update_user(user_id: int, data: dict, cache, db) -> dict:
     # Update database
     db.execute("UPDATE users SET name = ? WHERE id = ?", (data["name"], user_id))
@@ -252,7 +253,7 @@ def update_user(user_id: int, data: dict, cache, db) -> dict:
     cache.set(f"user:{user_id}", json.dumps({**data, "id": user_id}), ttl=3600)
 
     return data
-```
+```text
 
 **Cache eviction policies**: LRU (Least Recently Used) — most common; LFU (Least Frequently Used) — for popularity-based access; FIFO (First In First Out) — simple; TTL (Time To Live) — automatic expiration.
 
@@ -273,7 +274,7 @@ Load balancers distribute traffic across multiple servers for availability and s
 **Layer 4 vs Layer 7**: L4 (transport layer — TCP/UDP, faster, less intelligent), L7 (application layer — HTTP/HTTPS, can inspect requests, content-based routing).
 
 ```python
-# Simple round-robin load balancer
+## Simple round-robin load balancer
 class RoundRobinLoadBalancer:
     def __init__(self, servers: list[str]):
         self.servers = servers
@@ -284,7 +285,7 @@ class RoundRobinLoadBalancer:
         self.index = (self.index + 1) % len(self.servers)
         return server
 
-# Weighted round robin
+## Weighted round robin
 class WeightedLoadBalancer:
     def __init__(self, servers: dict[str, int]):
         # servers = {"server1": 3, "server2": 1}  # server1 gets 3x traffic
@@ -298,7 +299,7 @@ class WeightedLoadBalancer:
         self.index = (self.index + 1) % len(self.pool)
         return server
 
-# Least connections (simplified)
+## Least connections (simplified)
 class LeastConnectionsBalancer:
     def __init__(self, servers: list[str]):
         self.connections = {s: 0 for s in servers}
@@ -311,7 +312,7 @@ class LeastConnectionsBalancer:
     def release(self, server: str) -> None:
         self.connections[server] = max(0, self.connections[server] - 1)
 
-# Health check integration
+## Health check integration
 class HealthCheckBalancer(RoundRobinLoadBalancer):
     def __init__(self, servers: list[str], health_check_path: str = "/health"):
         super().__init__(servers)
@@ -334,7 +335,7 @@ class HealthCheckBalancer(RoundRobinLoadBalancer):
             raise Exception("No healthy servers available")
         # Fall back to super to get round-robin among healthy
         return healthy_servers[self.index % len(healthy_servers)]
-```
+```text
 
 **Consistent hashing**: When adding/removing servers, only K/N keys need to be remapped (where K = total keys, N = number of servers). Essential for distributed caches and databases.
 
@@ -351,7 +352,7 @@ Microservices decompose a system into independently deployable services. Each se
 **gRPC**: High-performance RPC framework using Protocol Buffers. Good for internal service-to-service communication. Supports bi-directional streaming.
 
 ```python
-# Service decomposition example — e-commerce platform
+## Service decomposition example — e-commerce platform
 SERVICES = {
     "user-service": {
         "responsibilities": ["User registration", "Authentication", "Profile management"],
@@ -380,7 +381,7 @@ SERVICES = {
     },
 }
 
-# Circuit breaker pattern
+## Circuit breaker pattern
 import time
 
 class CircuitBreaker:
@@ -411,7 +412,7 @@ class CircuitBreaker:
                 self.state = "OPEN"
             raise e
 
-# API rate limiter
+## API rate limiter
 class SlidingWindowRateLimiter:
     def __init__(self, redis_client):
         self.redis = redis_client
@@ -429,7 +430,7 @@ class SlidingWindowRateLimiter:
         _, count, _, _ = pipe.execute()
 
         return count < max_requests
-```
+```text
 
 **Inter-service communication patterns**: Synchronous (HTTP/gRPC — simple but creates coupling), asynchronous (message queue/event bus — decoupled, eventual consistency), hybrid (events for notification, APIs for queries).
 
@@ -483,7 +484,7 @@ async def chat_endpoint(websocket: WebSocket, room_id: str):
     except WebSocketDisconnect:
         room.disconnect(websocket)
 
-# Notification system with fan-out
+## Notification system with fan-out
 class NotificationService:
     def __init__(self, db, message_queue, websocket_manager):
         self.db = db
@@ -518,7 +519,7 @@ class NotificationService:
             user_id, limit
         )
         return [dict(r) for r in rows]
-```
+```text
 
 **Presence system**: Track online/offline status. Use Redis with TTL (heartbeat every 30 seconds). Show "last seen" for offline users. Handle disconnections gracefully.
 
@@ -537,7 +538,7 @@ Data-intensive systems handle large-scale data processing, analytics, and report
 **Kappa architecture**: Everything is a stream. Use stream processing for all data. Simpler than Lambda, but requires replay capability.
 
 ```python
-# Event streaming architecture
+## Event streaming architecture
 from dataclasses import dataclass
 from datetime import datetime
 import json
@@ -580,7 +581,7 @@ class StreamProcessor:
             )
             await handler(event)
 
-# Windowed aggregation
+## Windowed aggregation
 class SlidingWindowAggregator:
     def __init__(self, window_size: int = 60, slide_interval: int = 10):
         self.window_size = window_size  # seconds
@@ -601,7 +602,7 @@ class SlidingWindowAggregator:
             "count": len(relevant),
             "timestamp": datetime.now().isoformat(),
         }
-```
+```text
 
 **Data pipeline design**: Source (DB, logs, events) → Ingestion (Kafka, Kinesis) → Processing (Spark, Flink) → Storage (S3, Redshift) → Serving (BI tools, APIs).
 
@@ -629,7 +630,7 @@ def base62_encode(num: int) -> str:
         num, rem = divmod(num, 62)
         result.append(alphabet[rem])
     return "".join(reversed(result))
-```
+```text
 
 **Case Study 2: Chat System**
 
@@ -669,7 +670,7 @@ class RateLimiter:
         await self.redis.zadd(key, {str(now): now})
         await self.redis.expire(key, window_ms // 1000 + 1)
         return True
-```
+```text
 
 **Design interview walkthrough**:
 
@@ -1127,6 +1128,7 @@ d) Compression
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 21-interview-preparation
@@ -1136,6 +1138,7 @@ d) Compression
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

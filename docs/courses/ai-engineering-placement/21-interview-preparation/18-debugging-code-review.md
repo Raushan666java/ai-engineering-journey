@@ -1,17 +1,20 @@
 # Debugging and Code Review
 
+
 ## Learning Objectives
 
 After this chapter you will be able to identify common bugs in TypeScript and Python code under time pressure, systematically approach debugging without a debugger, review code for correctness, performance, and style, and communicate your findings clearly during code review rounds.
 
+
 ## Introduction
 
-21-interview-preparation is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding debugging code review is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering debugging code review.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Theory
 
 ```mermaid
@@ -26,11 +29,13 @@ flowchart TD
     G --> H[Check Edge Cases]
 ```
 
+
 ### Debugging Interview Format
 
 Two common formats:
 1. Given buggy code, find and fix all bugs (10-20 min). Often includes compilation errors, logic errors, and edge cases.
 2. Given a failing test, debug the production code and fix it. Tests provide the expected behavior.
+
 
 ### The Debugging Checklist
 
@@ -45,6 +50,7 @@ Systematically check these categories:
 7. **Integer overflow**: JavaScript safe integer (2^53), bitwise operations truncate to 32-bit
 8. **Floating point precision**: 0.1 + 0.2 !== 0.3, use epsilon comparison
 
+
 ### Code Review Checklist
 
 When reviewing code, evaluate:
@@ -57,6 +63,7 @@ When reviewing code, evaluate:
 6. **Error handling**: exceptions caught at right level, meaningful error messages
 7. **Concurrency**: race conditions, deadlocks, atomicity
 
+
 ### How to Communicate Findings
 
 In code review rounds, your tone matters as much as your findings:
@@ -65,9 +72,12 @@ In code review rounds, your tone matters as much as your findings:
 - Suggest specific fixes ("we can add a guard clause here")
 - Ask questions rather than dictate ("does this handle the case where x is null?")
 
+
 ## Examples
 
+
 ### Buggy Code Examples
+
 
 ### Example 1: Array Index Bug
 
@@ -86,6 +96,7 @@ function findMissingNumber(nums: number[], n: number): number {
 
 Bug: `i <= n` includes n, but the range should be 1 to n. Fix: `i < n` or start at 1: `for (let i = 1; i <= n; i++)`.
 
+
 ### Example 2: Null Reference
 
 ```typescript
@@ -95,6 +106,7 @@ function getFirstCharacter(str: string | null): string {
 ```
 
 Fix: `return str?.charAt(0) ?? ''` or `if (!str) return ''; return str.charAt(0);`
+
 
 ### Example 3: Mutation Bug
 
@@ -106,6 +118,7 @@ function sortAndReverse(arr: number[]): number[] {
 ```
 
 Fix: `const copy = [...arr]; copy.sort(...); return copy.reverse();`
+
 
 ### Example 4: Floating Point Precision
 
@@ -120,6 +133,7 @@ function calculateTotal(prices: number[]): number {
 ```
 
 Fix: `return Math.round(total * 100) / 100;` or use integer arithmetic (cents).
+
 
 ### Example 5: Async Timing Bug
 
@@ -143,6 +157,7 @@ async function processItems(items: string[]): Promise<void> {
 }
 ```
 
+
 ### Example 6: Type Coercion
 
 ```typescript
@@ -161,6 +176,7 @@ function countOccurrences(arr: any[]): Record<string, number> {
 
 Bug: when `counts[item]` is 0 (falsy), it incorrectly sets to 1 instead of incrementing. Fix: `if (counts[item] !== undefined)`.
 
+
 ### Example 7: Closure in Loop
 
 ```typescript
@@ -174,6 +190,7 @@ function createCallbacks(): (() => void)[] {
 ```
 
 Fix: Use `let i = 0` (block scope) or an IIFE closure.
+
 
 ### Example 8: Off-by-One in Binary Search
 
@@ -193,6 +210,7 @@ function binarySearch(arr: number[], target: number): number {
 
 Fix: `while (left <= right)` or add a check after the loop for arr[left] === target.
 
+
 ### Example 9: Shared Mutable State
 
 ```typescript
@@ -208,6 +226,7 @@ function expensiveComputation(key: string): number {
 
 Fix: Use async/await properly and handle concurrent requests for the same key with a pending promise map.
 
+
 ### Example 10: Deep Equality
 
 ```typescript
@@ -218,7 +237,9 @@ function areEqual(a: object, b: object): boolean {
 
 Fix: Implement recursive deep equality or use JSON.stringify for simple cases: `JSON.stringify(a) === JSON.stringify(b)` (does not handle all types).
 
+
 ## Code Review Simulation
+
 
 ### Review 1: API Endpoint
 
@@ -257,6 +278,7 @@ app.post('/api/users', rateLimit(100, 60000), async (req, res, next) => {
 })
 ```
 
+
 ### Review 2: File Processing
 
 ```typescript
@@ -275,6 +297,7 @@ Issues found:
 - Does not trim whitespace from individual lines
 
 Recommended fix: use streaming or async read with encoding specified.
+
 
 ### Review 3: Database Query
 
@@ -298,6 +321,7 @@ async function getOrders(userId: string): Promise<Order[]> {
 ```
 
 
+
 ### Advanced Debugging Techniques
 
 **Rubber duck debugging**: explain the code line by line to an imaginary listener. The act of verbalizing often reveals the bug.
@@ -309,6 +333,7 @@ async function getOrders(userId: string): Promise<Order[]> {
 **Invariant checking**: assert conditions that must be true at each step (e.g., 'stack is non-empty before pop'). If an assertion fails, you found the bug.
 
 **Diff debugging**: compare broken code with a known working version. The difference is likely the bug.
+
 
 ### Common TypeScript Pitfalls
 
@@ -323,6 +348,7 @@ async function getOrders(userId: string): Promise<Order[]> {
 educe without initial value: errors on empty arrays
 9. const does not make objects/arrays immutable
 10. Promise.all fails fast: one rejection rejects the entire promise
+
 
 ### Debugging Async Code
 
@@ -340,6 +366,7 @@ Fix: copy the variable into the closure scope or use let (block scope).
 **Promise.all error swallowing**: unhandled promise rejections are silently ignored in older Node versions.
 Fix: always add .catch to promises or use try/catch with await.
 
+
 ### Code Review Anti-Patterns
 
 What NOT to do in a code review:
@@ -350,6 +377,7 @@ What NOT to do in a code review:
 4. Ignoring tests: if there are no tests, that is the first issue to raise
 5. Rubber stamping: approving without reading is worse than being strict
 6. Personal attacks: review the code, not the person
+
 
 ### Real-World Code Review Example
 
@@ -417,9 +445,11 @@ async function getData<T = any>(url: string): Promise<T> {
 `
 
 
+
 ## Summary
 
 Debugging and code review rounds test your ability to read code critically under time pressure. Use a systematic checklist: off-by-one errors, null references, mutation, async timing, type coercion, edge cases. In code reviews, evaluate correctness, performance, readability, testability, security, and error handling. Communicate findings constructively: start positive, state evidence, suggest specific fixes.
+
 
 ## Practical Takeaways
 
@@ -430,6 +460,7 @@ Debugging and code review rounds test your ability to read code critically under
 - Mutation bugs are subtle: when a function takes an array/object, ask "does it modify the input?"
 - In code reviews, look for SQL injection, unsanitized user input, hardcoded secrets
 - Always check error handling: what happens when a database call fails? When a file is missing? When an API returns 500?
+
 
 ## Chapter Quiz
 
@@ -469,6 +500,7 @@ Debugging and code review rounds test your ability to read code critically under
    // correct: C
 
 #
+
 ## Common Mistakes
 
 1. Not understanding the fundamental concepts before applying them
@@ -484,6 +516,7 @@ Debugging and code review rounds test your ability to read code critically under
 3. Debug this async function: `async function getFirst(items: string[]): string { items.forEach(async i => { const r = await fetch(i); return r }) }` (There are 3 bugs.)
 
 4. Write a function that deep clones an object without using JSON.parse(JSON.stringify(obj)) and identify what edge cases your implementation does not
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 21-interview-preparation
@@ -493,6 +526,7 @@ Debugging and code review rounds test your ability to read code critically under
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

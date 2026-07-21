@@ -13,12 +13,13 @@
 
 ## Introduction
 
-02-sql-and-databases is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding window functions is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering window functions.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -48,7 +49,7 @@ flowchart LR
     G --> M[ROWS]
     G --> N[RANGE]
     G --> O[GROUPS]
-```
+```text
 
 ## 5.1 Window Function Basics
 
@@ -62,7 +63,7 @@ SELECT
     AVG(salary) OVER (PARTITION BY department) AS dept_avg_salary,
     salary - AVG(salary) OVER (PARTITION BY department) AS diff_from_avg
 FROM employees;
-```
+```text
 
 Every window function has an OVER() clause with three components:
 
@@ -85,7 +86,7 @@ SELECT
     salary,
     SUM(salary) OVER (PARTITION BY department ORDER BY employee_id) AS dept_running_total
 FROM employees;
-```
+```text
 
 **ORDER BY in OVER is independent** of the query-level ORDER BY:
 
@@ -96,7 +97,7 @@ SELECT
     ROW_NUMBER() OVER (ORDER BY sales DESC) AS rank
 FROM products
 ORDER BY product;  -- query-level order does not affect window
-```
+```text
 
 ## 5.2 Ranking Functions
 
@@ -111,7 +112,7 @@ SELECT
     score,
     ROW_NUMBER() OVER (PARTITION BY subject ORDER BY score DESC) AS position
 FROM exam_scores;
-```
+```text
 
 ROW_NUMBER is deterministic only with unique ORDER BY values. Ties get different numbers arbitrarily.
 
@@ -125,7 +126,7 @@ SELECT
     RANK() OVER (PARTITION BY subject ORDER BY score DESC) AS rank
 FROM exam_scores;
 -- Scores: 95, 95, 90, 85  =>  Ranks: 1, 1, 3, 4
-```
+```text
 
 **DENSE_RANK** assigns the same rank to ties without skipping:
 
@@ -137,7 +138,7 @@ SELECT
     DENSE_RANK() OVER (PARTITION BY subject ORDER BY score DESC) AS dense_rank
 FROM exam_scores;
 -- Scores: 95, 95, 90, 85  =>  Ranks: 1, 1, 2, 3
-```
+```text
 
 **Comparison of ranking functions**:
 
@@ -154,7 +155,7 @@ FROM (VALUES (100), (95), (95), (90), (85)) AS scores(score);
 -- 95    | 3  | 2    | 2
 -- 90    | 4  | 4    | 3
 -- 85    | 5  | 5    | 4
-```
+```text
 
 **Practical: deduplication with ROW_NUMBER**:
 
@@ -168,7 +169,7 @@ WITH ranked AS (
 SELECT *
 FROM ranked
 WHERE rn = 1;  -- keep only the most recent event per user
-```
+```text
 
 ## 5.3 NTILE and Bucketing
 
@@ -183,7 +184,7 @@ FROM employees;
 -- Rows 1-250: quartile 1 (top 25%)
 -- Rows 251-500: quartile 2
 -- Etc.
-```
+```text
 
 **Practical: decile analysis**:
 
@@ -204,7 +205,7 @@ SELECT
 FROM ranked
 GROUP BY decile
 ORDER BY decile;
-```
+```text
 
 **NTILE with PARTITION BY**:
 
@@ -216,7 +217,7 @@ SELECT
     NTILE(3) OVER (PARTITION BY department ORDER BY salary DESC) AS salary_tier
 FROM employees;
 -- Each department's employees divided into 3 salary tiers
-```
+```text
 
 **Even distribution note**: NTILE cannot split exactly if rows % buckets != 0. The first (rows % buckets) buckets get one extra row. For 10 rows into 4 buckets: buckets 1, 2 have 3 rows; buckets 3, 4 have 2 rows.
 
@@ -235,7 +236,7 @@ SELECT
     (closing_price - LAG(closing_price, 1) OVER (ORDER BY date)) /
         LAG(closing_price, 1) OVER (ORDER BY date) * 100 AS pct_change
 FROM stock_prices;
-```
+```text
 
 **LEAD** accesses a following row:
 
@@ -246,14 +247,14 @@ SELECT
     LEAD(hire_date, 1) OVER (PARTITION BY department ORDER BY hire_date) AS next_hire_date,
     DATEDIFF(day, hire_date, LEAD(hire_date, 1) OVER (PARTITION BY department ORDER BY hire_date)) AS days_until_next_hire
 FROM employees;
-```
+```text
 
 **Default value** when no preceding/following row exists:
 
 ```sql
 LAG(salary, 1, 0) OVER (ORDER BY hire_date)  -- 0 if no previous row
 LEAD(salary, 2, salary) OVER (ORDER BY hire_date)  -- current salary if no row 2 ahead
-```
+```text
 
 **FIRST_VALUE and LAST_VALUE**:
 
@@ -267,7 +268,7 @@ SELECT
         ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING
     ) AS last_price
 FROM prices;
-```
+```text
 
 LAST_VALUE without a frame specification defaults to `RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW`, which gives the current row's value. Always specify the frame for LAST_VALUE.
 
@@ -280,7 +281,7 @@ SELECT
     NTH_VALUE(product, 2) OVER (ORDER BY monthly_sales DESC) AS second_best,
     NTH_VALUE(monthly_sales, 3) OVER (ORDER BY monthly_sales DESC) AS third_best_sales
 FROM monthly_product_sales;
-```
+```text
 
 ## 5.5 Frame Specifications
 
@@ -308,7 +309,7 @@ SELECT
         ROWS BETWEEN 2 PRECEDING AND 2 FOLLOWING
     ) AS centered_ma_5
 FROM time_series;
-```
+```text
 
 **RANGE frame** (logical, based on ORDER BY value):
 
@@ -322,7 +323,7 @@ SELECT
         RANGE BETWEEN INTERVAL '7' DAY PRECEDING AND CURRENT ROW
     ) AS trailing_7d_sum
 FROM daily_sales;
-```
+```text
 
 RANGE is meaningful for dates and numeric values where duplicates should be grouped.
 
@@ -337,7 +338,7 @@ SELECT
         GROUPS BETWEEN 1 PRECEDING AND 1 FOLLOWING
     ) AS smoothed_avg
 FROM employees;
-```
+```text
 
 **Frame boundaries**:
 
@@ -358,7 +359,7 @@ FROM employees;
 -- These two are equivalent when ORDER BY is present
 SUM(salary) OVER (ORDER BY hire_date)
 SUM(salary) OVER (ORDER BY hire_date RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)
-```
+```text
 
 **Practical: year-to-date calculation**:
 
@@ -372,7 +373,7 @@ SELECT
         ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
     ) AS ytd_total
 FROM transactions;
-```
+```text
 
 ## 5.6 Aggregate Window Functions
 
@@ -390,7 +391,7 @@ SELECT
     MIN(amount) OVER (ORDER BY date ROWS BETWEEN 10 PRECEDING AND CURRENT ROW) AS rolling_min,
     MAX(amount) OVER (ORDER BY date ROWS BETWEEN 10 PRECEDING AND CURRENT ROW) AS rolling_max
 FROM daily_metrics;
-```
+```text
 
 **Percentage of total**:
 
@@ -403,7 +404,7 @@ SELECT
     SUM(salary) OVER () AS company_total,
     salary / SUM(salary) OVER () * 100 AS pct_of_company
 FROM employees;
-```
+```text
 
 **Cumulative distribution**:
 
@@ -413,7 +414,7 @@ SELECT
     CUME_DIST() OVER (ORDER BY score) AS cum_dist,  -- relative rank (0 to 1)
     PERCENT_RANK() OVER (ORDER BY score) AS pct_rank  -- (rank-1)/(total-1)
 FROM exam_scores;
-```
+```text
 
 **Multiple window functions in one query**:
 
@@ -429,7 +430,7 @@ SELECT
     LAG(revenue, 1) OVER (PARTITION BY product_id ORDER BY sale_date) AS prev_revenue,
     revenue - LAG(revenue, 1) OVER (PARTITION BY product_id ORDER BY sale_date) AS revenue_change
 FROM daily_sales;
-```
+```text
 
 **Window functions in WHERE and HAVING** — use a CTE or subquery:
 
@@ -443,7 +444,7 @@ WITH ranked AS (
 SELECT *
 FROM ranked
 WHERE rn <= 3;  -- top 3 earners per department
-```
+```text
 
 ## TypeScript Parallel
 
@@ -487,7 +488,7 @@ function lag<T>(data: T[], orderBy: (item: T) => any, offset: number = 1): (T & 
         lag: i >= offset ? sorted[i - offset] : null
     }));
 }
-```
+```text
 
 ## Summary
 
@@ -604,6 +605,7 @@ function lag<T>(data: T[], orderBy: (item: T) => any, offset: number = 1): (T & 
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 02-sql-and-databases
@@ -613,6 +615,7 @@ function lag<T>(data: T[], orderBy: (item: T) => any, offset: number = 1): (T & 
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

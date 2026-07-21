@@ -13,12 +13,13 @@
 
 ## Introduction
 
-05-fastapi-backend is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding database with sqlalchemy is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering database with sqlalchemy.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart LR
     E --> F[Repository Pattern]
     F --> G[Query Optimization]
     G --> H[Transactions]
-```
+```text
 
 ## 6.1 SQLAlchemy Setup
 
@@ -56,17 +57,17 @@ from typing import AsyncGenerator
 
 DATABASE_URL = "postgresql+asyncpg://user:pass@localhost/dbname"
 
-# Async engine
+## Async engine
 engine = create_async_engine(DATABASE_URL, echo=True, pool_size=5, max_overflow=10)
 
-# Session factory
+## Session factory
 async_session_factory = async_sessionmaker(engine, class_=AsyncSession, expire_on_commit=False)
 
-# Base class for models
+## Base class for models
 class Base(DeclarativeBase):
     pass
 
-# Database dependency for FastAPI
+## Database dependency for FastAPI
 async def get_db() -> AsyncGenerator[AsyncSession, None]:
     async with async_session_factory() as session:
         try:
@@ -78,7 +79,7 @@ async def get_db() -> AsyncGenerator[AsyncSession, None]:
         finally:
             await session.close()
 
-# Application setup
+## Application setup
 from fastapi import FastAPI, Depends
 from contextlib import asynccontextmanager
 
@@ -91,7 +92,7 @@ async def lifespan(app: FastAPI):
     await engine.dispose()
 
 app = FastAPI(lifespan=lifespan)
-```
+```text
 
 **Sync alternative** (simpler for smaller projects):
 
@@ -109,7 +110,7 @@ def get_db():
         yield db
     finally:
         db.close()
-```
+```text
 
 ## 6.2 ORM Models
 
@@ -159,7 +160,7 @@ class Post(Base):
     created_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc))
 
     author = relationship("User", back_populates="posts")
-```
+```text
 
 **Column types**:
 
@@ -182,7 +183,7 @@ class Post(Base):
 from sqlalchemy import select, update, delete
 from sqlalchemy.ext.asyncio import AsyncSession
 
-# CREATE
+## CREATE
 async def create_user(db: AsyncSession, user_data: dict) -> User:
     user = User(**user_data)
     db.add(user)
@@ -195,7 +196,7 @@ async def create_user_endpoint(user: UserCreate, db: AsyncSession = Depends(get_
     db_user = await create_user(db, user.model_dump())
     return db_user
 
-# READ
+## READ
 async def get_user(db: AsyncSession, user_id: int) -> User | None:
     result = await db.execute(select(User).where(User.id == user_id))
     return result.scalar_one_or_none()
@@ -213,7 +214,7 @@ async def get_user_endpoint(user_id: int, db: AsyncSession = Depends(get_db)):
         raise HTTPException(status_code=404, detail="User not found")
     return user
 
-# UPDATE
+## UPDATE
 async def update_user(db: AsyncSession, user_id: int, update_data: dict) -> User | None:
     user = await get_user(db, user_id)
     if not user:
@@ -231,7 +232,7 @@ async def update_user_endpoint(user_id: int, update: UserUpdate, db: AsyncSessio
         raise HTTPException(status_code=404, detail="User not found")
     return user
 
-# DELETE
+## DELETE
 async def delete_user(db: AsyncSession, user_id: int) -> bool:
     user = await get_user(db, user_id)
     if not user:
@@ -245,7 +246,7 @@ async def delete_user_endpoint(user_id: int, db: AsyncSession = Depends(get_db))
     deleted = await delete_user(db, user_id)
     if not deleted:
         raise HTTPException(status_code=404, detail="User not found")
-```
+```text
 
 ## 6.4 Relationships
 
@@ -255,7 +256,7 @@ SQLAlchemy supports standard database relationships.
 from sqlalchemy import Table, Column, ForeignKey
 from sqlalchemy.orm import relationship
 
-# Many-to-many association table
+## Many-to-many association table
 post_tags = Table(
     "post_tags",
     Base.metadata,
@@ -270,11 +271,11 @@ class Tag(Base):
     name = Column(String(50), unique=True, nullable=False)
     posts = relationship("Post", secondary=post_tags, back_populates="tags")
 
-# Update Post model to include tags
+## Update Post model to include tags
 Post.tags = relationship("Tag", secondary=post_tags, back_populates="posts")
 
-# Eager loading vs lazy loading
-# Lazy (default) — loads on access, can cause N+1
+## Eager loading vs lazy loading
+## Lazy (default) — loads on access, can cause N+1
 @app.get("/posts")
 async def list_posts_lazy(db: AsyncSession = Depends(get_db)):
     result = await db.execute(select(Post))
@@ -285,7 +286,7 @@ async def list_posts_lazy(db: AsyncSession = Depends(get_db)):
         print(post.author.username)
     return posts
 
-# Eager loading — join in a single query
+## Eager loading — join in a single query
 from sqlalchemy.orm import joinedload
 
 @app.get("/posts")
@@ -297,7 +298,7 @@ async def list_posts_eager(db: AsyncSession = Depends(get_db)):
     # No additional queries — author and tags loaded in join
     return posts
 
-# Subquery loading (separate query, but batched)
+## Subquery loading (separate query, but batched)
 from sqlalchemy.orm import selectinload
 
 @app.get("/posts")
@@ -308,7 +309,7 @@ async def list_posts_selectin(db: AsyncSession = Depends(get_db)):
     posts = result.scalars().all()
     # Author loaded in second query with WHERE IN clause
     return posts
-```
+```text
 
 **Relationship loading strategies**:
 
@@ -324,27 +325,27 @@ async def list_posts_selectin(db: AsyncSession = Depends(get_db)):
 Alembic manages database schema changes over time.
 
 ```bash
-# Installation
+## Installation
 pip install alembic
 
-# Initialize
+## Initialize
 alembic init alembic
 
-# Configure alembic/env.py to use your models
-# target_metadata = Base.metadata
+## Configure alembic/env.py to use your models
+## target_metadata = Base.metadata
 
-# Auto-generate migration
+## Auto-generate migration
 alembic revision --autogenerate -m "create users table"
 
-# Apply migration
+## Apply migration
 alembic upgrade head
 
-# Rollback
+## Rollback
 alembic downgrade -1
 
-# View history
+## View history
 alembic history
-```
+```text
 
 **Migration file example**:
 
@@ -364,7 +365,7 @@ def upgrade():
 def downgrade():
     op.drop_index("idx_users_role")
     op.drop_column("users", "role")
-```
+```text
 
 **Migration best practices**:
 - Always review auto-generated migrations before applying
@@ -430,7 +431,7 @@ class UserRepository(BaseRepository):
         await self.db.flush()
         return True
 
-# FastAPI integration — inject repository via dependency
+## FastAPI integration — inject repository via dependency
 async def get_user_repository(db: AsyncSession = Depends(get_db)) -> UserRepository:
     return UserRepository(db)
 
@@ -440,7 +441,7 @@ async def get_user(user_id: int, repo: UserRepository = Depends(get_user_reposit
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
     return user
-```
+```text
 
 **Repository pattern benefits**: Testable (mock repository in tests), swappable (change ORM without changing business logic), consistent data access patterns.
 
@@ -449,7 +450,7 @@ async def get_user(user_id: int, repo: UserRepository = Depends(get_user_reposit
 ```python
 from sqlalchemy import text, func, desc
 
-# Raw SQL for complex queries
+## Raw SQL for complex queries
 @app.get("/users/stats")
 async def user_stats(db: AsyncSession = Depends(get_db)):
     result = await db.execute(text("""
@@ -464,7 +465,7 @@ async def user_stats(db: AsyncSession = Depends(get_db)):
     """))
     return [dict(row._mapping) for row in result]
 
-# Aggregation with ORM
+## Aggregation with ORM
 @app.get("/posts/analytics")
 async def post_analytics(db: AsyncSession = Depends(get_db)):
     result = await db.execute(
@@ -476,7 +477,7 @@ async def post_analytics(db: AsyncSession = Depends(get_db)):
     )
     return [dict(row._mapping) for row in result]
 
-# Pagination with keyset pagination (cursor)
+## Pagination with keyset pagination (cursor)
 @app.get("/posts/cursor")
 async def list_posts_cursor(
     cursor: Optional[int] = None,
@@ -497,7 +498,7 @@ async def list_posts_cursor(
     next_cursor = posts[-1].id if has_more and posts else None
 
     return {"data": posts, "next_cursor": next_cursor, "has_more": has_more}
-```
+```text
 
 **Optimization tips**:
 - Use `selectinload` instead of `joinedload` for collections
@@ -512,7 +513,7 @@ async def list_posts_cursor(
 ```python
 from sqlalchemy.ext.asyncio import AsyncSession
 
-# Transaction via dependency — automatic commit/rollback
+## Transaction via dependency — automatic commit/rollback
 async def get_db() -> AsyncGenerator[AsyncSession, None]:
     async with async_session_factory() as session:
         try:
@@ -522,7 +523,7 @@ async def get_db() -> AsyncGenerator[AsyncSession, None]:
             await session.rollback()
             raise
 
-# Multiple operations in one transaction
+## Multiple operations in one transaction
 async def transfer_funds(
     db: AsyncSession,
     from_user_id: int,
@@ -542,7 +543,7 @@ async def transfer_funds(
     # If anything fails, both are rolled back
     await db.flush()
 
-# Manual transaction management
+## Manual transaction management
 async def create_order_with_items(
     db: AsyncSession,
     order_data: dict,
@@ -560,7 +561,7 @@ async def create_order_with_items(
         await db.flush()
         await db.refresh(order)
         return order
-```
+```text
 
 ---
 
@@ -601,7 +602,7 @@ class UserRepository {
     return prisma.user.create({ data });
   }
 }
-```
+```text
 
 ---
 
@@ -771,6 +772,7 @@ d) sqlite
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 05-fastapi-backend
@@ -780,6 +782,7 @@ d) sqlite
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

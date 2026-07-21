@@ -13,12 +13,13 @@
 
 ## Introduction
 
-09-deep-learning-pytorch is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding training pipelines is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering training pipelines.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -58,7 +59,7 @@ flowchart TB
     S -->|No| E
     S -->|Yes| T[Restore Best]
     T --> U[Done]
-```
+```text
 
 ## 8.1 Data Pipelines
 
@@ -172,7 +173,7 @@ class CollateFunction:
         return torch.stack(padded), torch.tensor(labels)
 
 
-# Demo dataset creation
+## Demo dataset creation
 transform = TransformPipeline.train_transform(224)
 print(f"Train transform: {len(transform.transforms)} stages")
 
@@ -180,7 +181,7 @@ loader_config = EfficientDataLoader.create_loaders(
     "data/train", "data/val", batch_size=64, num_workers=8
 )
 print(f"DataLoader configured: batch=64, workers=8, pin_memory=True")
-```
+```text
 
 ---
 
@@ -255,7 +256,7 @@ class OptimizerComparison:
         return results
 
 
-# Adam vs AdamW: AdamW decouples weight decay from gradient update
+## Adam vs AdamW: AdamW decouples weight decay from gradient update
 linear_model = nn.Linear(100, 1)
 optim_adam = optim.Adam(linear_model.parameters(), lr=1e-3, weight_decay=1e-4)
 optim_adamw = optim.AdamW(linear_model.parameters(), lr=1e-3, weight_decay=1e-4)
@@ -267,7 +268,7 @@ opt_adam = optim.Adam(nn.Linear(100, 1).parameters(), lr=1e-3, weight_decay=1e-2
 opt_adamw = optim.AdamW(nn.Linear(100, 1).parameters(), lr=1e-3, weight_decay=1e-2)
 print(f"Adam LR: {opt_adam.param_groups[0]['lr']}, WD: {opt_adam.param_groups[0]['weight_decay']}")
 print(f"AdamW LR: {opt_adamw.param_groups[0]['lr']}, WD: {opt_adamw.param_groups[0]['weight_decay']}")
-```
+```text
 
 ---
 
@@ -362,7 +363,7 @@ class SchedulerVisualizer:
 scheduler_lrs = SchedulerVisualizer.compare_schedulers(epochs=50)
 for name, lrs in scheduler_lrs.items():
     print(f"{name:15s}: start={lrs[0]:.6f}, min={min(lrs):.6f}, max={max(lrs):.6f}, end={lrs[-1]:.6f}")
-```
+```text
 
 **Custom warmup + cosine scheduler**:
 ```python
@@ -397,7 +398,7 @@ def cosine_with_warmup(epoch: int, warmup: int, total: int,
 lrs_sim = [cosine_with_warmup(e, warmup=5, total=100, base_lr=1e-3, min_lr=1e-6)
            for e in range(100)]
 print(f"Warmup+Cosine: max={max(lrs_sim):.6f} at epoch {np.argmax(lrs_sim)}")
-```
+```text
 
 ---
 
@@ -486,7 +487,7 @@ state = checkpointer.save_checkpoint(
     metrics={"val_acc": 0.85, "train_loss": 0.23}
 )
 print(f"Checkpoint saved to checkpoints/checkpoint_epoch_5.pt")
-```
+```text
 
 ---
 
@@ -548,7 +549,7 @@ acc = GradientAccumulator(nn.Linear(100, 10), optim.Adam(nn.Linear(100, 10).para
                           accumulation_steps=4)
 steps, actual = EffectiveBatchSize.recommend(desired_batch=256, per_device_batch=32, num_gpus=2)
 print(f"Need {steps} accumulation steps for effective batch of {actual}")
-```
+```text
 
 ---
 
@@ -643,7 +644,7 @@ class LossScaler:
 config = MixedPrecisionConfig.check_availability()
 for k, v in config.items():
     print(f"{k}: {v}")
-```
+```text
 
 ---
 
@@ -772,7 +773,7 @@ class CombinedTrainer:
         return total_loss / len(self.val_loader)
 
 
-# Demo the CombinedTrainer
+## Demo the CombinedTrainer
 model_demo = nn.Sequential(
     nn.Flatten(),
     nn.Linear(784, 128),
@@ -789,7 +790,7 @@ trainer = CombinedTrainer(
     scheduler=optim.lr_scheduler.CosineAnnealingLR(optim.Adam(model_demo.parameters(), lr=1e-3), 10),
 )
 print("CombinedTrainer configured with AMP, checkpointing, and early stopping")
-```
+```text
 
 ---
 
@@ -901,6 +902,7 @@ d) Enabling batch-size-dependent optimizations
 ---
 
 > **Previous**: [07-rnn-and-lstm.md](07-rnn-and-lstm.md) | **Next**: [09-model-deployment.md](09-model-deplo
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 09-deep-learning-pytorch
@@ -910,6 +912,7 @@ d) Enabling batch-size-dependent optimizations
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

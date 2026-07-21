@@ -19,6 +19,7 @@ Backtracking systematically explores all possible solutions by building candidat
 
 - Recursion basics
 - Array/string operations
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -40,7 +41,7 @@ flowchart LR
     D --> E[Advanced]
     E --> F[Applications]
     F --> G[Interview Prep]
-```
+```text
 
 ## 13.1 Section 1
 
@@ -66,7 +67,7 @@ Section 2 of Graphs Shortest Path covers essential concepts for AI engineering p
 The following code demonstrates fundamental operations:
 
 ```python
-# Graphs Shortest Path - basic operations
+## Graphs Shortest Path - basic operations
 def example_function(data):
     """Core functionality"""
     result = []
@@ -78,10 +79,10 @@ def example_function(data):
 def process(item):
     return item * 2
 
-# Test the implementation
+## Test the implementation
 test_data = [1, 2, 3, 4, 5]
 print(example_function(test_data))
-```
+```text
 
 ## 13.3 Section 3
 
@@ -117,7 +118,7 @@ flowchart TD
     B -->|Optimized| D[Advanced Solution]
     C --> E[Result]
     D --> E
-```
+```text
 
 ### Key Techniques
 
@@ -165,14 +166,14 @@ Common interview questions and strategies:
 Let's walk through a typical interview problem:
 
 ```python
-# Interview problem solution
+## Interview problem solution
 def solve_interview_problem(input_data):
     # Step 1: Understand the problem
     # Step 2: Design the approach
     # Step 3: Implement the solution
     # Step 4: Test and optimize
     return optimized_result
-```
+```text
 
 ---
 
@@ -192,7 +193,7 @@ function processGraphsShortestPath(data: number[]): number[] {
 // Usage example
 const result = processGraphsShortestPath([1, 2, 3]);
 console.log(result); // [2, 4, 6]
-```
+```text
 
 ---
 
@@ -457,6 +458,7 @@ d) Option D - Fourth choice
 3. Not handling duplicates correctly
 4. Using backtracking when a greedy approach works
 5. Not considering the time complexity (often exponential)
+
 ## Revision Notes
 
 - Backtracking = DFS + pruning
@@ -464,6 +466,7 @@ d) Option D - Fourth choice
 - Undo changes when backtracking
 - Used for permutations, combinations, Sudoku
 - Time complexity is typically O(2^n) or O(n!)
+
 ## Placement Section
 
 ### Top 10 Interview Questions

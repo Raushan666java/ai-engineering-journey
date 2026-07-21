@@ -12,12 +12,13 @@
 
 ## Introduction
 
-13-ai-agents-langgraph is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding agent observability is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering agent observability.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart LR
     F --> H
     G --> H
     H --> I[Alerts]
-```
+```text
 
 ## 8.1 Observability Dimensions
 
@@ -111,7 +112,7 @@ time.sleep(0.01)
 obs.end_span(span)
 obs.record_metric("search_latency_ms", 10.5)
 print(f"Collected {len(obs.logs)} logs, {len(obs.spans)} spans, {len(obs.metrics)} metrics")
-```
+```text
 
 ## 8.2 Agent Logging
 
@@ -181,7 +182,7 @@ agent_logger.log_thought("I need to search for AI news", 1)
 agent_logger.log_action("web_search", {"query": "AI news 2025"}, 1)
 agent_logger.log_observation("Found 3 relevant articles", 1)
 print(agent_logger.get_reasoning_trace()[:200])
-```
+```text
 
 ### 8.2.2 Log Aggregation
 
@@ -217,7 +218,7 @@ class LogAggregator:
 agg = LogAggregator()
 agg.register(agent_logger)
 print(f"Search 'search': {len(agg.search('search'))} results")
-```
+```text
 
 ## 8.3 Tracing
 
@@ -281,7 +282,7 @@ trace = TraceContext()
 agent = TracedAgent("agent-1", trace)
 result = agent.call_tool("search", lambda: "search results")
 print(json.dumps(trace.to_dict(), indent=2))
-```
+```text
 
 ### 8.3.2 Span Tree
 
@@ -330,7 +331,7 @@ spans = [
 tree = SpanTree(spans)
 print("Span tree:")
 tree.print_tree()
-```
+```text
 
 ## 8.4 Metrics
 
@@ -379,7 +380,7 @@ metrics.record_tool_call("web_search")
 metrics.record_tool_call("calculator")
 metrics.record_steps(3)
 print(json.dumps(metrics.summary(), indent=2))
-```
+```text
 
 ### 8.4.2 Quality Metrics
 
@@ -422,7 +423,7 @@ qm.record_success(False)
 qm.record_rating(5)
 qm.record_rating(4)
 print(f"Quality report: {qm.report()}")
-```
+```text
 
 ## 8.5 Debugging
 
@@ -458,7 +459,7 @@ class StepReplayer:
 
 replayer = StepReplayer(agent_logger)
 print(replayer.replay())
-```
+```text
 
 ### 8.5.2 Reasoning Visualization
 
@@ -502,7 +503,7 @@ class ReasoningVisualizer:
 
 viz = ReasoningVisualizer(agent_logger.entries)
 print(viz.generate_report()[:300])
-```
+```text
 
 ## 8.6 Alerting
 
@@ -563,7 +564,7 @@ alert_manager.add_rule(AlertRule("high_latency", "p95_latency", "gt", 5000, "cri
 alert_manager.add_rule(AlertRule("error_spike", "error_rate", "gt", 0.1, "warning"))
 alert_manager.check({"p95_latency": 6000, "error_rate": 0.05})
 print(f"Active alerts: {len(alert_manager.get_active())}")
-```
+```text
 
 ### 8.6.2 Anomaly Detection
 
@@ -600,7 +601,7 @@ for v in [100, 110, 95, 105, 102]:
     detector.record("latency", v)
 print(f"Normal value anomaly: {detector.is_anomaly('latency', 105)}")
 print(f"Spike anomaly: {detector.is_anomaly('latency', 500)}")
-```
+```text
 
 ## Summary
 
@@ -804,6 +805,7 @@ Answer: B
 4. Implement a step replayer for an agent that allows stepping through each reasoning stage. Demonstrate replaying a 3-step interaction and pausing at each step.
 
 5. Design an alerting system with 3 rules (high latency, high error rate, excessive steps) that sends notifications when triggered. Simulate each alert c
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 13-ai-agents-langgraph
@@ -813,6 +815,7 @@ Answer: B
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

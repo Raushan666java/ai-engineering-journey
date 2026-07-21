@@ -13,12 +13,13 @@
 
 ## Introduction
 
-20-portfolio-branding is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding linkedin optimization is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering linkedin optimization.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -47,7 +48,7 @@ flowchart TB
     E --> L[Quantified Impact]
     G --> M[Social Proof]
     H --> N[Network Growth]
-```
+```text
 
 ## 4.1 Headline & Summary
 
@@ -114,7 +115,7 @@ Currently focused on leveraging AI to solve real-world problems. Open to collabo
 
     def call_to_action(self) -> str:
         return "Open to AI/ML engineering roles. DM me or check my GitHub → [link]"
-```
+```text
 
 ## 4.2 Experience Descriptions
 
@@ -184,7 +185,7 @@ class ResumeKeywordScanner:
     def keyword_score(self) -> int:
         present = sum(1 for kw in self.INDUSTRY_KEYWORDS if kw in self.text)
         return int(present / len(self.INDUSTRY_KEYWORDS) * 100)
-```
+```text
 
 ## 4.3 Content Strategy
 
@@ -293,7 +294,7 @@ class ContentScheduler:
             "Wednesday 12-1 PM",
             "Thursday 9-11 AM",
         ]
-```
+```text
 
 ## 4.4 Network Building
 
@@ -343,7 +344,7 @@ Best,
                 "Check who's viewed your profile",
             ],
         }
-```
+```text
 
 ## 4.5 Recommendations
 
@@ -385,7 +386,7 @@ I highly recommend {recipient_name} for any role requiring {strengths[0]} and te
 
     def recommendation_score(self, recommendations: List[str]) -> int:
         return len(recommendations) * 20  # out of 100
-```
+```text
 
 ## 4.6 Job Search Tools
 
@@ -442,7 +443,7 @@ Best,
             "offer": [],
             "rejected": [],
         }
-```
+```text
 
 ## Summary
 
@@ -745,6 +746,7 @@ d) Do not ask at all
 7. **Job Search Setup**: Configure Open to Work with target roles and locations. Create 3 saved searches with daily alerts. Set up a tracking spreadsheet for applications. Apply to 10 positions.
 
 8. **Profile Audit**: Use LinkedIn's SSI score and profile strength meter. Identify 5 improvement areas. Fix them and track profile view changes over 1 month. Report which change had the bigges
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 20-portfolio-branding
@@ -754,6 +756,7 @@ d) Do not ask at all
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

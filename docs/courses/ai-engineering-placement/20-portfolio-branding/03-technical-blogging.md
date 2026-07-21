@@ -36,7 +36,7 @@ flowchart LR
     H --> I[Promote]
     I --> J[Analyze]
     J -.-> A
-```
+```text
 
 ## 3.1 Platform Choice
 
@@ -94,7 +94,7 @@ class PlatformSelector:
             score = platform.score(self.goals)
             rows.append(f"| {name} | {score} | {', '.join(platform.pros[:2])} |")
         return "\n".join(rows)
-```
+```text
 
 ## 3.2 Writing Style
 
@@ -232,7 +232,7 @@ Address objections.
 ## Conclusion
 Reinforce the thesis.
 """
-```
+```text
 
 ## 3.3 Tutorial Writing
 
@@ -301,7 +301,7 @@ class CodeExampleBuilder:
             readme += f"{i}. {step}\n"
         readme += "\n## Run\n```bash\npython main.py\n```\n"
         return readme
-```
+```text
 
 ## 3.4 Case Studies
 
@@ -374,9 +374,9 @@ class ImpactStorytelling:
 ## Key Code
 ```python
 {code_snippet}
-```
+```text
 """
-```
+```text
 
 ## 3.5 Content Promotion
 
@@ -443,7 +443,7 @@ published: false
 cover_image: null
 ---
 """
-```
+```text
 
 ## 3.6 Analytics & Growth
 
@@ -513,7 +513,7 @@ class ContentCalendar:
             for post in posts:
                 topics[post["topic"]] = topics.get(post["topic"], 0) + 1
         return topics
-```
+```text
 
 ## Summary
 
@@ -816,6 +816,7 @@ d) Why you should learn to code
 7. **Analytics Setup**: Set up Google Analytics on your blog. Write 3 articles over 1 month. Track: views, read ratio, top traffic sources, bounce rate, top performing topic. Create a report with recommendations.
 
 8. **Content Calendar**: Plan 3 months of blog content. Include: 1 tutorial per month, 1 case study, and 1 opinion/analysis piece. Ensure topics cover your areas of expertise. What seasonal/relevant topics can you al
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 20-portfolio-branding
@@ -825,6 +826,7 @@ d) Why you should learn to code
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

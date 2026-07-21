@@ -13,12 +13,13 @@
 
 ## Introduction
 
-18-multimodal-ai-voice is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding ocr and document ai is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering ocr and document ai.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -44,7 +45,7 @@ flowchart LR
     G --> H
     H --> I[LLM Processing]
     I --> J[Answer / Summary]
-```
+```text
 
 ## 4.1 OCR Pipeline
 
@@ -144,7 +145,7 @@ class OCRPipeline:
 
     def _decode_recognitions(self, logits: torch.Tensor) -> Tuple[str, float]:
         return ("placeholder", 0.9)  # Placeholder
-```
+```text
 
 ## 4.2 Text Detection
 
@@ -249,7 +250,7 @@ class DBNet(nn.Module):
             box = np.array(box, dtype=np.int32)
             boxes.append(box)
         return boxes
-```
+```text
 
 ## 4.3 Text Recognition
 
@@ -377,7 +378,7 @@ class AttentionDecoder(nn.Module):
                 input_token = out.argmax(dim=-1, keepdim=True)
 
         return torch.stack(outputs, dim=1)
-```
+```text
 
 ## 4.4 TrOCR
 
@@ -541,7 +542,7 @@ class TrOCRInference:
             if 0 <= idx - 3 < len(self.char_list):
                 chars.append(self.char_list[idx - 3])
         return ''.join(chars)
-```
+```text
 
 ## 4.5 Layout Detection
 
@@ -665,7 +666,7 @@ class DocumentStructureBuilder:
                 if elem.label in ("text", "title"):
                     all_elements.append(elem)
         return all_elements
-```
+```text
 
 ## 4.6 Document Parsing
 
@@ -833,7 +834,7 @@ class ReceiptParser:
                 receipt["date"] = r.text
 
         return receipt
-```
+```text
 
 ## Summary
 
@@ -1156,6 +1157,7 @@ OCR and Document AI combine computer vision and NLP to extract structured inform
 9. **Receipt Parser**: Build a receipt parser that extracts store name, date, items, and total from receipt images. Use layout analysis to separate header, line items, and footer regions. Test on 5 real receipt photos.
 
 10. **PDF OCR Pipeline**: Build an end-to-end pipeline that processes a multi-page PDF: (1) Extract pages as images, (2) Detect text regions, (3) OCR each region, (4) Reconstruct reading order, (5) Output as Markdown. Handle both native-text PDFs (extract directly) and scanned PDFs (
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 18-multimodal-ai-voice
@@ -1165,6 +1167,7 @@ OCR and Document AI combine computer vision and NLP to extract structured inform
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

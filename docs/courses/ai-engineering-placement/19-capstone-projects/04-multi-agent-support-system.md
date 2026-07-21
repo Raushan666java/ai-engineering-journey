@@ -13,12 +13,13 @@
 
 ## Introduction
 
-19-capstone-projects is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding multi agent support system is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering multi agent support system.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -49,7 +50,7 @@ flowchart TB
     OA --> M[Shared Memory]
     RA --> M
     FA --> M
-```
+```text
 
 ## 4.1 Multi-Agent Architecture
 
@@ -178,7 +179,7 @@ class RouterAgent:
             "action": "transfer",
             "reason": f"No agent available for intent: {intent.value}",
         }
-```
+```text
 
 ## 4.2 Specialized Agents
 
@@ -366,7 +367,7 @@ class TechnicalSupportAgent(BaseAgent):
                 "Let me suggest some steps: 1) Clear your browser cache, "
                 "2) Try a different browser, 3) Check your internet connection. "
                 "If the problem persists, I'll transfer you to a specialist.")
-```
+```text
 
 ## 4.3 Tool Integration
 
@@ -468,7 +469,7 @@ class TicketTool:
                 ticket["status"] = "in_progress"
                 return True
         return False
-```
+```text
 
 ## 4.4 Agent Memory
 
@@ -542,7 +543,7 @@ class ConversationMemory:
                     to_remove.append(session_id)
         for session_id in to_remove:
             del self.sessions[session_id]
-```
+```text
 
 ## 4.5 Escalation Logic
 
@@ -647,7 +648,7 @@ class EscalationManager:
         elif context.current_intent == Intent.TECHNICAL_ISSUE:
             return "Create internal bug ticket and assign to engineering"
         return "Review conversation and respond"
-```
+```text
 
 ## 4.6 Analytics Dashboard
 
@@ -741,7 +742,7 @@ class SupportAnalytics:
             "intent_distribution": self.intent_distribution(),
             "avg_feedback_rating": self.csat_score(),
         }
-```
+```text
 
 ## Summary
 
@@ -1008,6 +1009,7 @@ class ToolRegistry {
 9. **Human Handoff**: Implement the handoff system with a summary card that a human agent sees. Include: conversation summary, collected data, suggested action, and confidence score. Test with 5 different scenarios.
 
 10. **Full Production System**: Deploy the multi-agent system with: WebSocket for real-time chat, Redis for session persistence, PostgreSQL for analytics logging, and Prometheus for monitoring. Stress test with 100 concurre
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 19-capstone-projects
@@ -1017,6 +1019,7 @@ class ToolRegistry {
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

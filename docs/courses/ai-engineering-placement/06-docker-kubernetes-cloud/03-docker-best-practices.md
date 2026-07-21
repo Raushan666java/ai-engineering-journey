@@ -13,12 +13,13 @@
 
 ## Introduction
 
-06-docker-kubernetes-cloud is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding docker best practices is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering docker best practices.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart LR
     E --> F[Monitoring]
     F --> G[Pitfalls]
     G --> H[Performance Tuning]
-```
+```text
 
 ## 3.1 Optimizing Dockerfiles
 
@@ -52,30 +53,30 @@ A well-optimized Dockerfile produces smaller, faster-building, and more secure i
 **Choose minimal base images**:
 
 ```dockerfile
-# Fat — ~800MB
+## Fat — ~800MB
 FROM python:3.11
 
-# Slim — ~120MB
+## Slim — ~120MB
 FROM python:3.11-slim
 
-# Alpine — ~50MB (use with caution)
+## Alpine — ~50MB (use with caution)
 FROM python:3.11-alpine
 
-# Distroless — ~40MB (no shell, no package manager)
+## Distroless — ~40MB (no shell, no package manager)
 FROM gcr.io/distroless/python3:latest
-```
+```text
 
 **Order layers for maximum cache reuse**:
 
 ```dockerfile
-# ❌ Inefficient — cache invalidated on every code change
+## ❌ Inefficient — cache invalidated on every code change
 FROM node:20
 WORKDIR /app
 COPY . .
 RUN npm ci
 RUN npm run build
 
-# ✅ Efficient — dependency layer cached separately
+## ✅ Efficient — dependency layer cached separately
 FROM node:20 AS builder
 WORKDIR /app
 COPY package*.json .
@@ -88,12 +89,12 @@ WORKDIR /app
 COPY --from=builder /app/dist ./dist
 COPY --from=builder /app/node_modules ./node_modules
 CMD ["node", "dist/server.js"]
-```
+```text
 
 **Multi-stage build patterns**:
 
 ```dockerfile
-# Stage 1: Compile
+## Stage 1: Compile
 FROM golang:1.21 AS builder
 WORKDIR /app
 COPY go.mod go.sum ./
@@ -101,33 +102,33 @@ RUN go mod download
 COPY . .
 RUN CGO_ENABLED=0 go build -o server .
 
-# Stage 2: Runtime
+## Stage 2: Runtime
 FROM alpine:3.18
 RUN addgroup -S app && adduser -S app -G app
 COPY --from=builder /app/server /server
 USER app
 EXPOSE 8080
 CMD ["/server"]
-```
+```text
 
 **Additional optimization tips**:
 
 ```dockerfile
-# Combine RUN commands to reduce layers
+## Combine RUN commands to reduce layers
 RUN apt-get update && apt-get install -y \
     curl \
     git \
     && rm -rf /var/lib/apt/lists/*
 
-# Use .dockerignore effectively
-# Exclude: node_modules, .git, .env, *.md, __pycache__
+## Use .dockerignore effectively
+## Exclude: node_modules, .git, .env, *.md, __pycache__
 
-# Set --no-cache-dir for pip
+## Set --no-cache-dir for pip
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Use COPY --link for better cache behavior
+## Use COPY --link for better cache behavior
 COPY --link package*.json ./
-```
+```text
 
 ## 3.2 Security Best Practices
 
@@ -136,52 +137,52 @@ Security must be integrated into every stage of the Docker workflow.
 **Least privilege principle**:
 
 ```dockerfile
-# ❌ Running as root
+## ❌ Running as root
 FROM node:20-alpine
 COPY . /app
 CMD ["node", "server.js"]
 
-# ✅ Create and use non-root user
+## ✅ Create and use non-root user
 FROM node:20-alpine
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 USER appuser
 WORKDIR /app
 COPY --chown=appuser:appgroup . .
 CMD ["node", "server.js"]
-```
+```text
 
 **Secret management**:
 
 ```dockerfile
-# ❌ Never hardcode secrets
+## ❌ Never hardcode secrets
 ENV API_KEY=sk-abc123  # BAD — exposed in image layers
 
-# ✅ Build-time secrets (Docker BuildKit)
-# docker build --secret id=api_key,env=API_KEY .
+## ✅ Build-time secrets (Docker BuildKit)
+## docker build --secret id=api_key,env=API_KEY .
 RUN --mount=type=secret,id=api_key \
     export API_KEY=$(cat /run/secrets/api_key) && \
     ./configure --api-key=$API_KEY
-```
+```text
 
 ```bash
-# Runtime secrets
+## Runtime secrets
 docker run -e API_KEY=sk-abc123 my-image
 docker run --secret id=api_key my-image  # Swarm secrets
-```
+```text
 
 **Image scanning**:
 
 ```bash
-# Scan with Docker Scout
+## Scan with Docker Scout
 docker scout quickview my-image
 docker scout recommendations my-image
 
-# Scan with Trivy
+## Scan with Trivy
 trivy image my-image:latest
 
-# Scan with Snyk
+## Scan with Snyk
 snyk container test my-image
-```
+```text
 
 **Security checklist**:
 
@@ -197,7 +198,7 @@ snyk container test my-image
 | Regular updates | Rebase images weekly |
 
 ```bash
-# Run with security hardening
+## Run with security hardening
 docker run -d \
     --read-only \
     --cap-drop=ALL \
@@ -205,24 +206,24 @@ docker run -d \
     --security-opt=no-new-privileges:true \
     --tmpfs /tmp:rw,noexec,nosuid,size=64m \
     my-app
-```
+```text
 
 ## 3.3 Resource Management
 
 Containers without limits can exhaust host resources. Always set constraints.
 
 ```bash
-# CPU constraints
+## CPU constraints
 docker run --cpus=0.5 my-image      # half a core
 docker run --cpus=2 my-image        # 2 cores
 docker run --cpuset-cpus=0,2 my-image # specific cores
 
-# Memory constraints
+## Memory constraints
 docker run --memory=512m my-image
 docker run --memory-reservation=256m my-image
 docker run --memory-swap=1g my-image  # memory + swap limit
 
-# Combined
+## Combined
 docker run -d \
     --name api \
     --cpus=0.5 \
@@ -230,7 +231,7 @@ docker run -d \
     --memory-reservation=128m \
     --oom-kill-disable=false \
     my-api:latest
-```
+```text
 
 **Docker Compose resource configuration**:
 
@@ -247,7 +248,7 @@ services:
           memory: "128M"
     oom_kill_disable: false
     restart: unless-stopped
-```
+```text
 
 **Understanding OOM behavior**:
 
@@ -256,20 +257,20 @@ When a container exceeds its memory limit, the kernel's OOM killer terminates it
 ```bash
 docker run --oom-score-adj=-1000 my-critical-app  # less likely to be killed
 docker run --oom-score-adj=1000 my-batch-job       # more likely to be killed
-```
+```text
 
 **Monitoring resource usage**:
 
 ```bash
-# Real-time stats
+## Real-time stats
 docker stats
 
-# Inspect resource usage history
+## Inspect resource usage history
 docker inspect --format '{{.Name}}: Memory={{.HostConfig.Memory}} CPU={{.HostConfig.NanoCpus}}' container_name
 
-# cgroup stats
+## cgroup stats
 cat /sys/fs/cgroup/memory/docker/<container_id>/memory.usage_in_bytes
-```
+```text
 
 ## 3.4 Image Tagging and Versioning
 
@@ -278,50 +279,50 @@ Consistent image tagging enables traceability and rollback.
 **Tagging strategies**:
 
 ```bash
-# Semantic versioning
+## Semantic versioning
 docker build -t my-app:1.0.0 .
 docker build -t my-app:1.0 .
 docker build -t my-app:1 .
 docker build -t my-app:latest .
 
-# Git-based tagging
+## Git-based tagging
 docker build -t my-app:$(git rev-parse --short HEAD) .
 docker build -t my-app:$(git describe --tags) .
 
-# Environment tags
+## Environment tags
 docker build -t my-app:staging-$(git rev-parse --short HEAD) .
 docker build -t my-app:production-$(git rev-parse --short HEAD) .
-```
+```text
 
 **Image digests** — immutable references:
 
 ```bash
-# Get digest
+## Get digest
 docker images --digests my-app
 
-# Pull by digest
+## Pull by digest
 docker pull my-app@sha256:abc123...
 
-# Use digest in production (immutable)
+## Use digest in production (immutable)
 docker run my-app@sha256:def456...
-```
+```text
 
 **Registry management**:
 
 ```bash
-# Tag for registry
+## Tag for registry
 docker tag my-app:1.0.0 registry.example.com/team/my-app:1.0.0
 
-# Push
+## Push
 docker push registry.example.com/team/my-app:1.0.0
 
-# Multi-architecture images
+## Multi-architecture images
 docker buildx build --platform linux/amd64,linux/arm64 -t my-app:latest --push .
 
-# Garbage collection
-# AWS ECR lifecycle policies
-# Docker Registry: bin/registry garbage-collect /etc/docker/registry/config.yml
-```
+## Garbage collection
+## AWS ECR lifecycle policies
+## Docker Registry: bin/registry garbage-collect /etc/docker/registry/config.yml
+```text
 
 **Retention policies**:
 
@@ -376,23 +377,23 @@ jobs:
       - name: Scan image
         run: |
           docker scout quickview ghcr.io/${{ github.repository }}:${{ github.sha }}
-```
+```text
 
 **Build caching strategies**:
 
 ```yaml
-# GitHub Actions caching
+## GitHub Actions caching
 cache-from: type=gha
 cache-to: type=gha,mode=max
 
-# Registry caching
+## Registry caching
 cache-from: type=registry,ref=my-image:buildcache
 cache-to: type=registry,ref=my-image:buildcache,mode=max
 
-# Local caching
+## Local caching
 cache-from: type=local,src=/tmp/.buildx-cache
 cache-to: type=local,dest=/tmp/.buildx-cache
-```
+```text
 
 **GitLab CI example**:
 
@@ -413,40 +414,40 @@ docker-build:
         .
     - docker push $CI_REGISTRY_IMAGE:$CI_COMMIT_SHORT_SHA
     - docker push $CI_REGISTRY_IMAGE:latest
-```
+```text
 
 ## 3.6 Production Monitoring
 
 **Health checks** — required for container orchestration:
 
 ```dockerfile
-# HTTP health check
+## HTTP health check
 HEALTHCHECK --interval=30s --timeout=3s --start-period=10s --retries=3 \
     CMD curl -f http://localhost:8080/health || exit 1
 
-# TCP health check
+## TCP health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s \
     CMD nc -z localhost 5432 || exit 1
 
-# Custom command
+## Custom command
 HEALTHCHECK --interval=60s --timeout=5s \
     CMD python /app/health_check.py || exit 1
-```
+```text
 
 **Logging best practices**:
 
 ```dockerfile
-# Send logs to stdout/stderr
+## Send logs to stdout/stderr
 ENV PYTHONUNBUFFERED=1
 
-# Configure application logger
-# Python: logging.basicConfig(stream=sys.stdout)
-# Node: pino-pretty
-# Java: Logback console appender
-```
+## Configure application logger
+## Python: logging.basicConfig(stream=sys.stdout)
+## Node: pino-pretty
+## Java: Logback console appender
+```text
 
 ```yaml
-# Compose logging configuration
+## Compose logging configuration
 services:
   api:
     logging:
@@ -454,17 +455,17 @@ services:
       options:
         max-size: "10m"
         max-file: "3"
-```
+```text
 
 **Metrics exposure**:
 
 ```dockerfile
-# Expose metrics endpoint
+## Expose metrics endpoint
 EXPOSE 9090
 
-# Prometheus metrics (Python)
+## Prometheus metrics (Python)
 RUN pip install prometheus-client
-```
+```text
 
 ```python
 from prometheus_client import Counter, Histogram, start_http_server
@@ -475,116 +476,116 @@ REQUEST_DURATION = Histogram("http_request_duration_seconds", "HTTP request dura
 @app.get("/metrics")
 def metrics():
     return Response(prometheus_client.generate_latest(), media_type="text/plain")
-```
+```text
 
 ## 3.7 Common Pitfalls
 
 **Zombie processes**: PID 1 in a container must handle signals properly. Use a minimal init system.
 
 ```dockerfile
-# Solution 1: Use tini (tiny init)
+## Solution 1: Use tini (tiny init)
 FROM python:3.11-slim
 RUN apt-get update && apt-get install -y tini
 ENTRYPOINT ["tini", "--"]
 CMD ["python", "app.py"]
 
-# Solution 2: Use dumb-init
+## Solution 2: Use dumb-init
 FROM node:20-alpine
 RUN apk add --no-cache dumb-init
 ENTRYPOINT ["dumb-init", "--"]
 CMD ["node", "server.js"]
-```
+```text
 
 **Permission issues with volumes**:
 
 ```dockerfile
-# Match container user with host user
+## Match container user with host user
 RUN adduser -u 1001 appuser
 USER appuser
-```
+```text
 
 **Timezone configuration**:
 
 ```dockerfile
-# Set timezone
+## Set timezone
 ENV TZ=UTC
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-# Or for Debian-based
+## Or for Debian-based
 RUN apt-get install -y tzdata && \
     ln -snf /usr/share/zoneinfo/UTC /etc/localtime
-```
+```text
 
 **File descriptor limits**:
 
 ```bash
-# Increase in docker run
+## Increase in docker run
 docker run --ulimit nofile=65536:65536 my-app
 
-# Or in Docker Compose
+## Or in Docker Compose
 ulimits:
   nofile:
     soft: 65536
     hard: 65536
-```
+```text
 
 **Common Dockerfile mistakes**:
 
 ```dockerfile
-# ❌ Wrong
+## ❌ Wrong
 COPY . .
 RUN npm install
 RUN npm test
 RUN npm run build
 
-# ✅ Right
+## ✅ Right
 COPY package*.json ./
 RUN npm ci
 COPY . .
 RUN npm test
 RUN npm run build
-```
+```text
 
 ## 3.8 Performance Tuning
 
 **BuildKit features**:
 
 ```bash
-# Enable BuildKit
+## Enable BuildKit
 export DOCKER_BUILDKIT=1
 docker build --progress=plain -t my-app .
 
-# Parallel builds
+## Parallel builds
 docker build --parallel -t my-app .
 
-# Cache mounts
+## Cache mounts
 RUN --mount=type=cache,target=/root/.npm \
     npm ci
 
-# Bind mounts for temporary tools
+## Bind mounts for temporary tools
 RUN --mount=type=bind,source=scripts,target=/scripts \
     /scripts/build.sh
-```
+```text
 
 **Layer compression**:
 
 ```dockerfile
-# Use buildkit's compression
-# docker build --output=type=image,name=my-app,compression=zstd
+## Use buildkit's compression
+## docker build --output=type=image,name=my-app,compression=zstd
 
-# Squash layers (use with caution — breaks cache)
-# docker build --squash -t my-app .
-```
+## Squash layers (use with caution — breaks cache)
+## docker build --squash -t my-app .
+```text
 
 **Network performance**:
 
 ```bash
-# Use host network for high-performance needs
+## Use host network for high-performance needs
 docker run --network=host my-app
 
-# Use macvlan for direct network access
+## Use macvlan for direct network access
 docker network create -d macvlan --subnet=192.168.1.0/24 my-network
-```
+```text
 
 **Storage driver selection**:
 
@@ -596,14 +597,14 @@ docker network create -d macvlan --subnet=192.168.1.0/24 my-network
 | aufs | Legacy | Not in mainline kernel |
 
 ```bash
-# Check current storage driver
+## Check current storage driver
 docker info | grep "Storage Driver"
 
-# Switch (daemon.json)
+## Switch (daemon.json)
 {
   "storage-driver": "overlay2"
 }
-```
+```text
 
 ---
 
@@ -647,7 +648,7 @@ dockerBuild({
   platform: "linux/amd64,linux/arm64",
   cacheFrom: "type=gha",
 });
-```
+```text
 
 ---
 
@@ -695,7 +696,7 @@ dockerBuild({
     <pre><code># Python: slim saves ~700MB vs full
 FROM python:3.11-slim  # ~120MB vs ~887MB
 
-# Node: alpine saves ~300MB vs full
+## Node: alpine saves ~300MB vs full
 FROM node:20-alpine  # ~120MB vs ~400MB</code></pre>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -717,7 +718,7 @@ WORKDIR /app
 COPY --chown=appuser:appgroup . .
 CMD ["node", "server.js"]
 
-# If the app needs privileged ports (<1024), use NET_BIND_SERVICE
+## If the app needs privileged ports (<1024), use NET_BIND_SERVICE
 docker run --cap-add=NET_BIND_SERVICE my-app</code></pre>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -783,7 +784,7 @@ RUN --mount=type=secret,id=api_key \
     export KEY=$(cat /run/secrets/api_key) && \
     ./configure --key=$KEY
 
-# Build command
+## Build command
 docker build --secret id=api_key,env=API_KEY .</code></pre>
     <p><strong>Runtime secrets</strong>:</p>
     <ul>
@@ -812,13 +813,13 @@ RUN apt-get update && apt-get install -y tini
 ENTRYPOINT ["tini", "--"]
 CMD ["python", "app.py"]
 
-# Option 2: dumb-init
+## Option 2: dumb-init
 FROM node:20-alpine
 RUN apk add --no-cache dumb-init
 ENTRYPOINT ["dumb-init", "--"]
 CMD ["node", "server.js"]
 
-# Option 3: Use --init flag
+## Option 3: Use --init flag
 docker run --init my-app</code></pre>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -843,11 +844,11 @@ docker run --init my-app</code></pre>
     <pre><code># Enable BuildKit
 export DOCKER_BUILDKIT=1
 
-# Build with cache mount
+## Build with cache mount
 RUN --mount=type=cache,target=/root/.npm \
     npm ci
 
-# Multi-platform build
+## Multi-platform build
 docker buildx build --platform linux/amd64,linux/arm64 -t my-app .</code></pre>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -871,7 +872,7 @@ ps aux --sort=-%cpu</code></pre></li>
       <li><strong>Get thread dump</strong>:
         <pre><code># Java
 docker exec container_name jstack -l <pid>
-# Python
+## Python
 docker exec container_name python -c "import threading; print(threading.enumerate())"</code></pre></li>
       <li><strong>Set CPU limits</strong>: <code>docker update --cpus=0.5 container_name</code></li>
     </ol>
@@ -895,10 +896,10 @@ docker exec container_name python -c "import threading; print(threading.enumerat
     <pre><code># Save image (preserves layers, history)
 docker save -o my-image.tar my-app:latest
 
-# Export filesystem (flattened, no history)
+## Export filesystem (flattened, no history)
 docker export -o filesystem.tar container_name
 
-# Import filesystem as image
+## Import filesystem as image
 cat filesystem.tar | docker import - imported-image:latest</code></pre>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -915,13 +916,13 @@ cat filesystem.tar | docker import - imported-image:latest</code></pre>
     <pre><code># Enable content trust
 export DOCKER_CONTENT_TRUST=1
 
-# Push signed image
+## Push signed image
 docker push my-registry/my-app:latest
 
-# Only signed images can be pulled/run
+## Only signed images can be pulled/run
 docker run my-registry/my-app:latest  # fails if not signed
 
-# Manage signing keys
+## Manage signing keys
 docker trust key generate my-key
 docker trust signer add --key my-key.pub signer my-registry/my-app</code></pre>
     <p><strong>Notary</strong>: The underlying service that manages trust metadata. Docker Hub provides a Notary server; you can run your own for private registries.</p>
@@ -1000,6 +1001,7 @@ d) `--cpu-quota=100000`
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 06-docker-kubernetes-cloud
@@ -1009,6 +1011,7 @@ d) `--cpu-quota=100000`
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

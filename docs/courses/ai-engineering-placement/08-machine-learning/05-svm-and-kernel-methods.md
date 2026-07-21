@@ -13,12 +13,13 @@
 
 ## Introduction
 
-08-machine-learning is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding svm and kernel methods is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering svm and kernel methods.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -45,7 +46,7 @@ flowchart LR
     I --> J[Predict]
     style C fill:#4a90d9,color:#fff
     style D fill:#4a90d9,color:#fff
-```
+```text
 
 ## 5.1 Maximum Margin Classifier
 
@@ -97,7 +98,7 @@ def generate_toy_data(n_samples: int = 100, sep: float = 1.0):
 
 X_toy, y_toy = generate_toy_data()
 print(f"Data shape: {X_toy.shape}, classes: {np.unique(y_toy)}")
-```
+```text
 
 **Support vectors** are the data points that lie on the margin boundary. Only support vectors influence the decision boundary — other points can be moved without changing the boundary.
 
@@ -158,7 +159,7 @@ class SVMPrimalDual:
 svm_linear = SVMPrimalDual()
 result = svm_linear.fit_simple(X_toy, y_toy)
 print(f"Primal objective: {result['objective']:.4f}")
-```
+```text
 
 **KKT conditions**: αᵢ = 0 for correctly classified points far from boundary; 0 < αᵢ < C for support vectors on margin; αᵢ = C for points inside margin (slack).
 
@@ -222,7 +223,7 @@ kf = KernelFunctions()
 results = kf.visualize_kernel_mapping(X_toy)
 for kernel, stats in results.items():
     print(f"{kernel}: {stats}")
-```
+```text
 
 **Mercer's theorem**: A kernel function is valid if its kernel matrix is positive semi-definite for any set of inputs.
 
@@ -339,13 +340,13 @@ class SoftMarginSVM:
         return np.sign(self.decision_function(X))
 
 
-# Test with toy data
+## Test with toy data
 svm = SoftMarginSVM(SVMConfig(C=1.0, kernel="rbf", gamma=0.5))
 result = svm.fit(X_toy, y_toy)
 preds = svm.predict(X_toy)
 print(f"Support vectors: {result['n_support_vectors']}, "
       f"Accuracy: {np.mean(preds == y_toy):.3f}")
-```
+```text
 
 **C parameter**: Small C = large margin, allows more misclassifications (high bias, low variance). Large C = narrow margin, fewer misclassifications (low bias, high variance).
 
@@ -442,7 +443,7 @@ class SMO:
 smo = SMO(SVMConfig(C=1.0, kernel="rbf", gamma=0.5))
 smo_result = smo.fit(X_toy, y_toy)
 print(f"SMO support vectors: {smo_result['n_support_vectors']}")
-```
+```text
 
 ---
 
@@ -478,7 +479,7 @@ class MulticlassSVM:
         return np.argmax(votes, axis=1)
 
 
-# Hyperparameter tuning guide
+## Hyperparameter tuning guide
 def tune_svm(X_train: np.ndarray, y_train: np.ndarray,
              X_val: np.ndarray, y_val: np.ndarray) -> Dict:
     best_score = 0
@@ -498,19 +499,19 @@ def tune_svm(X_train: np.ndarray, y_train: np.ndarray,
     return {"best_params": best_params, "best_score": best_score}
 
 
-# Standardization is essential for SVM
+## Standardization is essential for SVM
 def standardize(X_train: np.ndarray, X_test: np.ndarray) -> Tuple[np.ndarray, np.ndarray]:
     mean = np.mean(X_train, axis=0)
     std = np.std(X_train, axis=0)
     return (X_train - mean) / std, (X_test - mean) / std
 
 
-# Generate and scale data
+## Generate and scale data
 X_scaled, _ = standardize(X_toy, X_toy)
 svm_tuned = SoftMarginSVM(SVMConfig(C=10.0, kernel="rbf", gamma=0.5))
 svm_tuned.fit(X_scaled, y_toy)
 print(f"Tuned SVM accuracy: {np.mean(svm_tuned.predict(X_scaled) == y_toy):.3f}")
-```
+```text
 
 **SVM vs other algorithms**:
 
@@ -590,7 +591,7 @@ class SVM {
 }
 
 const svm = new SVM();
-```
+```text
 
 ## Summary
 
@@ -706,6 +707,7 @@ d) Linear decision boundary
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 08-machine-learning
@@ -715,6 +717,7 @@ d) Linear decision boundary
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

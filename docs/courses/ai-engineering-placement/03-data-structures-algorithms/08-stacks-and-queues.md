@@ -20,6 +20,7 @@ Trees are hierarchical data structures fundamental to representing organized dat
 - Linked list concepts
 - Recursion basics
 - Stack/queue usage
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -47,7 +48,7 @@ flowchart LR
     G --> I
     H --> J[Expression/Parentheses]
     I --> K[BFS/Scheduling]
-```
+```text
 
 
 A stack (LIFO) and queue (FIFO) are fundamental abstract data types used to organize data with specific access patterns.
@@ -81,7 +82,7 @@ class ArrayStack:
 
     def size(self):
         return len(self.data)
-```
+```text
 
 **Linked list-based stack**:
 
@@ -114,7 +115,7 @@ class LinkedStack:
 
     def is_empty(self):
         return self.head is None
-```
+```text
 
 ## 8.2 Queue Fundamentals
 
@@ -151,7 +152,7 @@ class CircularQueue:
 
     def is_full(self):
         return self.size == self.capacity
-```
+```text
 
 **Linked list-based queue**:
 
@@ -180,7 +181,7 @@ class LinkedQueue:
 
     def is_empty(self):
         return self.head is None
-```
+```text
 
 ## 8.3 Stack Applications
 
@@ -201,7 +202,7 @@ def is_valid_parentheses(s):
 
 print(is_valid_parentheses("()[]{}"))  # True
 print(is_valid_parentheses("([)]"))   # False
-```
+```text
 
 **Expression evaluation** (infix to postfix):
 
@@ -229,7 +230,7 @@ def infix_to_postfix(expression):
     return "".join(result)
 
 print(infix_to_postfix("A*(B+C)/D"))  # "ABC+*D/"
-```
+```text
 
 **Evaluate postfix expression**:
 
@@ -249,7 +250,7 @@ def eval_postfix(expr):
     return stack[0]
 
 print(eval_postfix("23*54*+"))  # (2*3)+(5*4) = 26
-```
+```text
 
 ## 8.4 Monotonic Stack
 
@@ -268,7 +269,7 @@ def next_greater_element(nums):
     return result
 
 print(next_greater_element([4, 5, 2, 25]))  # [5, 25, 25, -1]
-```
+```text
 
 **Largest rectangle in histogram**:
 
@@ -286,7 +287,7 @@ def largest_rectangle_area(heights):
     return max_area
 
 print(largest_rectangle_area([2, 1, 5, 6, 2, 3]))  # 10
-```
+```text
 
 **Daily temperatures** (days until warmer):
 
@@ -302,8 +303,8 @@ def daily_temperatures(temps):
     return result
 
 print(daily_temperatures([73, 74, 75, 71, 69, 72, 76, 73]))
-# [1, 1, 4, 2, 1, 1, 0, 0]
-```
+## [1, 1, 4, 2, 1, 1, 0, 0]
+```text
 
 ## 8.5 Queue Variants
 
@@ -317,7 +318,7 @@ dq.append(1)        # add to right
 dq.appendleft(2)    # add to left
 dq.pop()            # remove from right
 dq.popleft()        # remove from left
-```
+```text
 
 **Priority queue** (min-heap or max-heap): Elements have priorities.
 
@@ -331,8 +332,8 @@ heapq.heappush(pq, (2, "task2"))
 while pq:
     priority, task = heapq.heappop(pq)
     print(f"{task}: {priority}")
-# task1: 1, task2: 2, task3: 3
-```
+## task1: 1, task2: 2, task3: 3
+```text
 
 ## 8.6 Real-World Applications
 
@@ -355,7 +356,7 @@ def bfs(graph, start):
 
 graph = {0: [1, 2], 1: [2], 2: [0, 3], 3: [3]}
 bfs(graph, 2)  # 2 0 3 1
-```
+```text
 
 **Stack for undo/redo**:
 
@@ -376,7 +377,7 @@ class UndoRedo:
     def redo(self):
         if self.redo_stack:
             self.undo_stack.append(self.redo_stack.pop())
-```
+```text
 
 ---
 
@@ -408,7 +409,7 @@ function isValid(s: string): boolean {
     }
     return stack.length === 0;
 }
-```
+```text
 
 ---
 
@@ -590,6 +591,7 @@ a) O(1)  b) O(n)  c) O(log n)  d) O(n^2)
 3. Forgetting that BST property must be maintained
 4. Not using level-order traversal when needed
 5. Confusing BST with binary tree
+
 ## Revision Notes
 
 - BST: left < root < right
@@ -597,6 +599,7 @@ a) O(1)  b) O(n)  c) O(log n)  d) O(n^2)
 - Height-balanced trees guarantee O(log n)
 - BFS uses queue (level-order), DFS uses stack/recursion
 - AVL trees self-balance after insert/delete
+
 ## Placement Section
 
 ### Top 10 Interview Questions

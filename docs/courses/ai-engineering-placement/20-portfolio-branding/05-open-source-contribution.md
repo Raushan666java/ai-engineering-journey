@@ -13,12 +13,13 @@
 
 ## Introduction
 
-20-portfolio-branding is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding open source contribution is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering open source contribution.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -44,7 +45,7 @@ flowchart LR
     H --> I[Address Feedback]
     I --> J[Merge]
     J --> K[Celebrate 🎉]
-```
+```text
 
 ## 5.1 Finding Projects
 
@@ -103,7 +104,7 @@ class IssueFilter:
             scored.append((score, issue))
         scored.sort(reverse=True)
         return [issue for _, issue in scored]
-```
+```text
 
 ## 5.2 Contribution Workflow
 
@@ -154,7 +155,7 @@ docs: update installation instructions
 refactor: simplify error handling logic
 test: add unit tests for parser module
 chore: update dependencies"""
-```
+```text
 
 ## 5.3 Types of Contributions
 
@@ -247,7 +248,7 @@ class TestContributor:
             "boundary": f"test_{function_name}_boundary_condition",
         }
         return list(test_types.values())
-```
+```text
 
 ## 5.4 PR Etiquette
 
@@ -351,7 +352,7 @@ class PRReviewer:
 3. Could you add a test for the error scenario?
 
 Great work on the core logic!"""
-```
+```text
 
 ## 5.5 Community Engagement
 
@@ -423,7 +424,7 @@ class ContributionTracker:
             "merge_rate": round(merged / total * 100, 1) if total > 0 else 0,
             "by_type": by_type,
         }
-```
+```text
 
 ## 5.6 Career Impact
 
@@ -480,7 +481,7 @@ class OSSJobSearch:
             "Participate in Google Summer of Code",
             "Apply for GitHub Sponsors / open source grants",
         ]
-```
+```text
 
 ## Summary
 
@@ -802,6 +803,7 @@ d) SourceForge
 7. **Own Project Launch**: Create a small open source project (even a simple utility). Write README, LICENSE, CONTRIBUTING.md. Set up CI. Share it on Reddit or HN. Track downloads/stars for 2 weeks.
 
 8. **OSS Portfolio**: Write a resume section highlighting your open source contributions. Include: PR count, projects, impact metrics. Create a GitHub pinned repo that showcases your contribution history using contributio
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 20-portfolio-branding
@@ -811,6 +813,7 @@ d) SourceForge
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

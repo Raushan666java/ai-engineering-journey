@@ -12,12 +12,13 @@
 
 ## Introduction
 
-13-ai-agents-langgraph is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding agent architectures is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering agent architectures.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -46,7 +47,7 @@ flowchart TD
     subgraph Pipeline
         P1[Stage 1] --> P2[Stage 2] --> P3[Stage 3]
     end
-```
+```text
 
 ## 2.1 Architecture Overview
 
@@ -95,7 +96,7 @@ profiles = [
 
 for p in profiles:
     print(f"{p.name.value}: {p.best_for}")
-```
+```text
 
 ## 2.2 Supervisor Architecture
 
@@ -180,7 +181,7 @@ sup = SupervisorAgent(mock_supervisor_llm, {
 })
 result = sup.delegate("Create a report on AI agent architectures")
 print(f"Supervisor result:\n{result}")
-```
+```text
 
 ### 2.2.1 Supervisor with Feedback Loop
 
@@ -225,7 +226,7 @@ fsup = FeedbackSupervisor(mock_supervisor_llm, {
     "analyst": analyst,
 })
 print(f"Feedback supervisor ready, max iterations: {fsup.max_iterations}")
-```
+```text
 
 ## 2.3 Swarm Architecture
 
@@ -295,7 +296,7 @@ agents_list = [
 swarm = SwarmOrchestrator(agents_list, rounds=2)
 result = swarm.run("Explore AI agents")
 print(f"Swarm result: {result[:100]}")
-```
+```text
 
 ### 2.3.2 Voting Swarm
 
@@ -328,7 +329,7 @@ Choose the best option. Respond with the option text only."""
 voting_swarm = VotingSwarm(agents_list)
 result = voting_swarm.vote("Best programming language?", ["Python", "JavaScript", "Rust"])
 print(f"Vote winner: {result['winner']}")
-```
+```text
 
 ## 2.4 Pipeline Architecture
 
@@ -371,7 +372,7 @@ pipeline = Pipeline([
 ])
 result = pipeline.execute("raw data")
 print(f"Pipeline result: {result}")
-```
+```text
 
 ### 2.4.2 Conditional Pipeline
 
@@ -402,7 +403,7 @@ cp = ConditionalPipeline(
     router,
 )
 print("Conditional pipeline ready")
-```
+```text
 
 ## 2.5 Hierarchical Architecture
 
@@ -453,7 +454,7 @@ root = HierarchicalAgent("Supervisor", 0, mock_supervisor_llm, [mid])
 hierarchical = HierarchicalSystem(root)
 result = hierarchical.run("Research AI safety")
 print(f"Hierarchical result: {result[:100]}")
-```
+```text
 
 ## 2.6 Architecture Selection
 
@@ -492,7 +493,7 @@ advisor = ArchitectureAdvisor()
 reqs = {"task_complexity": "complex", "num_skills_needed": "many", "coordination_needed": "extensive", "fault_tolerance": "medium"}
 rec = advisor.recommend(reqs)
 print(f"Recommended architecture: {rec.value}")
-```
+```text
 
 ### 2.6.2 Architecture Template
 
@@ -525,7 +526,7 @@ template.add_component("Researcher", "gathers information", parent="Coordinator"
 template.add_component("Writer", "produces output", parent="Coordinator")
 config = template.generate_config()
 print(f"Architecture config: {config}")
-```
+```text
 
 ## 2.7 Performance Comparison
 
@@ -564,7 +565,7 @@ def single_fn(task: str) -> str:
     return f"Result: {task}"
 
 print(benchmark.run_benchmark("Single Agent", single_fn, ["task1", "task2"]))
-```
+```text
 
 ## Summary
 
@@ -767,6 +768,7 @@ Answer: B
 4. Design a hierarchical architecture for an enterprise customer support system with 3 levels (level 1: FAQ bot, level 2: specialist agents, level 3: human supervisor). Implement delegation logic between levels.
 
 5. Write an architecture selection guide that takes task requirements as input and recommends the best architecture. Test with 5 different requirement profiles and justify each recomm
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 13-ai-agents-langgraph
@@ -776,6 +778,7 @@ Answer: B
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

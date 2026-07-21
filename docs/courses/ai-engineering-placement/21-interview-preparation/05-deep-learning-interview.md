@@ -13,12 +13,13 @@
 
 ## Introduction
 
-21-interview-preparation is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding deep learning interview is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering deep learning interview.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart LR
     E --> F[Regularization]
     F --> G[Loss Functions]
     G --> H[Deployment]
-```
+```text
 
 ## 5.1 Backpropagation & Gradient Descent
 
@@ -106,7 +107,7 @@ def manual_backprop(X, y, hidden_size=64, learning_rate=0.01, epochs=1000):
 
     return W1, b1, W2, b2
 
-# Adam optimizer implementation
+## Adam optimizer implementation
 class Adam:
     def __init__(self, lr=0.001, beta1=0.9, beta2=0.999, eps=1e-8):
         self.lr = lr
@@ -131,7 +132,7 @@ class Adam:
             v_hat = self.v[key] / (1 - self.beta2 ** self.t)
 
             params[key] -= self.lr * m_hat / (np.sqrt(v_hat) + self.eps)
-```
+```text
 
 **Learning rate schedules**: Step decay (reduce by factor every K epochs), cosine annealing (smooth decay), warmup (linear increase then decay), cyclic LR (oscillates). The learning rate is the most important hyperparameter.
 
@@ -171,7 +172,7 @@ def activation_comparison():
     print("ReLU gradient for x < 0:", (x < 0).float() * 0)
     print("Leaky ReLU gradient for x < 0:", (x < 0).float() * 0.01)
     print("GELU smoothness: continuous and differentiable everywhere")
-```
+```text
 
 **Recommendations**: Use ReLU for hidden layers in CNNs and MLPs. Use GELU/SwiGLU for transformers. Use sigmoid for binary classification output. Use tanh for RNNs. Avoid sigmoid/tanh in deep networks (vanishing gradients).
 
@@ -191,7 +192,7 @@ Convolutional Neural Networks are designed for grid-structured data like images.
 import torch
 import torch.nn as nn
 
-# Simple CNN for CIFAR-10 classification
+## Simple CNN for CIFAR-10 classification
 class SimpleCNN(nn.Module):
     def __init__(self, num_classes=10):
         super().__init__()
@@ -228,7 +229,7 @@ class SimpleCNN(nn.Module):
         x = self.classifier(x)
         return x
 
-# Residual block (ResNet)
+## Residual block (ResNet)
 class ResidualBlock(nn.Module):
     def __init__(self, in_channels, out_channels, stride=1):
         super().__init__()
@@ -250,7 +251,7 @@ class ResidualBlock(nn.Module):
         out += self.shortcut(x)
         out = F.relu(out)
         return out
-```
+```text
 
 **Architecture evolution**: LeNet-5 → AlexNet → VGG → Inception → ResNet (skip connections) → DenseNet → EfficientNet (Neural Architecture Search) → ConvNeXt (modernized ConvNet).
 
@@ -299,7 +300,7 @@ class LSTMModel(nn.Module):
         output = self.classifier(final_hidden)
         return output
 
-# Custom LSTM cell (for understanding)
+## Custom LSTM cell (for understanding)
 class LSTMCell(nn.Module):
     def __init__(self, input_size, hidden_size):
         super().__init__()
@@ -322,7 +323,7 @@ class LSTMCell(nn.Module):
         c = f * c_prev + i * g
         h = o * torch.tanh(c)
         return h, (h, c)
-```
+```text
 
 **Vanishing gradient solutions**: LSTM/GRU (gated architectures), residual connections, gradient clipping, proper initialization, truncated BPTT.
 
@@ -399,7 +400,7 @@ class TransformerBlock(nn.Module):
         # FFN + residual + layer norm
         x = x + self.ffn(self.norm2(x))
         return x
-```
+```text
 
 **Transformer variants**: Encoder-only (BERT), decoder-only (GPT), encoder-decoder (T5). Key innovations: RoPE (rotary positional encoding), GQA (grouped query attention), Flash Attention (memory-efficient attention), sliding window attention.
 
@@ -422,7 +423,7 @@ import torch
 import torch.nn as nn
 import torchvision.transforms as transforms
 
-# Training with regularization
+## Training with regularization
 class RegularizedModel(nn.Module):
     def __init__(self, input_size, hidden_sizes, num_classes, dropout_rate=0.3):
         super().__init__()
@@ -442,7 +443,7 @@ class RegularizedModel(nn.Module):
     def forward(self, x):
         return self.network(x)
 
-# Image data augmentation
+## Image data augmentation
 train_transforms = transforms.Compose([
     transforms.RandomResizedCrop(224),
     transforms.RandomHorizontalFlip(p=0.5),
@@ -452,7 +453,7 @@ train_transforms = transforms.Compose([
     transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
 ])
 
-# CutMix augmentation
+## CutMix augmentation
 def cutmix(x, y, alpha=1.0):
     batch_size = x.size(0)
     lam = np.random.beta(alpha, alpha)
@@ -465,7 +466,7 @@ def cutmix(x, y, alpha=1.0):
     x[:, :, bbx1:bbx2, bby1:bby2] = x[index, :, bbx1:bbx2, bby1:bby2]
     lam = 1 - ((bbx2 - bbx1) * (bby2 - bby1) / (x.size(2) * x.size(3)))
     return x, y, y[index], lam
-```
+```text
 
 **Early stopping**: Monitor validation loss, stop when it hasn't improved for N epochs (patience). Restore the best weights. **Label smoothing**: Replace one-hot targets with smoothed targets (e.g., [0.9, 0.05, 0.05] instead of [1.0, 0, 0]).
 
@@ -486,7 +487,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-# Focal Loss for imbalanced classification
+## Focal Loss for imbalanced classification
 class FocalLoss(nn.Module):
     def __init__(self, alpha=0.25, gamma=2.0):
         super().__init__()
@@ -499,7 +500,7 @@ class FocalLoss(nn.Module):
         focal_loss = self.alpha * (1 - pt) ** self.gamma * ce_loss
         return focal_loss.mean()
 
-# Triplet Loss for representation learning
+## Triplet Loss for representation learning
 class TripletLoss(nn.Module):
     def __init__(self, margin=1.0):
         super().__init__()
@@ -511,7 +512,7 @@ class TripletLoss(nn.Module):
         losses = F.relu(pos_dist - neg_dist + self.margin)
         return losses.mean()
 
-# Contrastive Loss (NT-Xent)
+## Contrastive Loss (NT-Xent)
 class NTXentLoss(nn.Module):
     def __init__(self, temperature=0.5):
         super().__init__()
@@ -534,7 +535,7 @@ class NTXentLoss(nn.Module):
 
         loss = F.cross_entropy(similarity, labels[:, 0])
         return loss
-```
+```text
 
 ---
 
@@ -554,7 +555,7 @@ Deploying deep learning models requires optimizing for latency, throughput, and 
 import torch
 import torch.nn as nn
 
-# Export to ONNX
+## Export to ONNX
 def export_to_onnx(model, dummy_input, filepath="model.onnx"):
     model.eval()
     torch.onnx.export(
@@ -569,7 +570,7 @@ def export_to_onnx(model, dummy_input, filepath="model.onnx"):
         dynamic_axes={"input": {0: "batch_size"}, "output": {0: "batch_size"}},
     )
 
-# Dynamic quantization (for CPU inference)
+## Dynamic quantization (for CPU inference)
 def quantize_model(model):
     quantized_model = torch.quantization.quantize_dynamic(
         model,
@@ -578,7 +579,7 @@ def quantize_model(model):
     )
     return quantized_model
 
-# Distributed Data Parallel (DDP) training
+## Distributed Data Parallel (DDP) training
 import torch.distributed as dist
 import torch.multiprocessing as mp
 from torch.nn.parallel import DistributedDataParallel as DDP
@@ -613,9 +614,9 @@ def train_ddp(rank, world_size, model, dataset):
 
     cleanup_ddp()
 
-# Usage
-# mp.spawn(train_ddp, args=(world_size, model, dataset), nprocs=world_size)
-```
+## Usage
+## mp.spawn(train_ddp, args=(world_size, model, dataset), nprocs=world_size)
+```text
 
 **Serving infrastructure**: Use Triton Inference Server (NVIDIA), TorchServe, or BentoML for production model serving. Implement batching (dynamic batching) for throughput. Monitor GPU utilization, latency percentiles (p50, p95, p99), and throughput.
 
@@ -959,11 +960,11 @@ for param in model.parameters():
     param.requires_grad = False  # Freeze backbone
 model.fc = nn.Linear(2048, num_classes)  # New classifier head
 
-# Fine-tuning
+## Fine-tuning
 model = torchvision.models.resnet50(pretrained=True)
 for param in model.parameters():
     param.requires_grad = False
-# Unfreeze the last block
+## Unfreeze the last block
 for param in model.layer4.parameters():
     param.requires_grad = True</code></pre>
     <p><strong>Best practices</strong>: Use lower learning rate for fine-tuning (1e-5 to 1e-4). Use differential learning rates (lower for early layers, higher for later layers). Use gradual unfreezing. Monitor for catastrophic forgetting.</p>
@@ -1073,6 +1074,7 @@ d) INT8 to INT4
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 21-interview-preparation
@@ -1082,6 +1084,7 @@ d) INT8 to INT4
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

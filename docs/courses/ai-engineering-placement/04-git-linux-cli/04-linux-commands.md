@@ -18,6 +18,7 @@ Linux command line skills are essential for AI engineers who work with remote se
 ## Prerequisites
 
 - Terminal basics
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -39,7 +40,7 @@ flowchart LR
     D --> E[Searching]
     E --> F[Pipes & Redirection]
     F --> G[Real-World Tasks]
-```
+```text
 
 ## Theory
 
@@ -48,56 +49,56 @@ flowchart LR
 **Listing files and directories:**
 
 ```bash
-# Basic listing
+## Basic listing
 ls
 
-# Long format (permissions, owner, size, date)
+## Long format (permissions, owner, size, date)
 ls -l
 
-# List all files including hidden
+## List all files including hidden
 ls -la
 
-# Human-readable file sizes
+## Human-readable file sizes
 ls -lh
 
-# Sort by modification time (newest first)
+## Sort by modification time (newest first)
 ls -lt
 
-# Sort by size (largest first)
+## Sort by size (largest first)
 ls -lS
 
-# List only directories
+## List only directories
 ls -d */
 
-# Recursive listing (includes subdirectories)
+## Recursive listing (includes subdirectories)
 ls -R
 
-# One file per line
+## One file per line
 ls -1
-```
+```text
 
 **Changing directories:**
 
 ```bash
-# Change to a directory
+## Change to a directory
 cd /var/log
 
-# Change to home directory
+## Change to home directory
 cd ~
 cd
 
-# Change to previous directory
+## Change to previous directory
 cd -
 
-# Change to parent directory
+## Change to parent directory
 cd ..
 
-# Change to parent's parent
+## Change to parent's parent
 cd ../..
 
-# Go to home directory subfolder
+## Go to home directory subfolder
 cd ~/projects/my-app
-```
+```text
 
 **Directory shortcuts:**
 
@@ -112,132 +113,136 @@ cd ~/projects/my-app
 **Printing the working directory:**
 
 ```bash
-# Show current directory path
+## Show current directory path
 pwd
 
-# Show physical path (resolve symlinks)
+## Show physical path (resolve symlinks)
 pwd -P
-```
+```text
 
+
+## Overview
 ### 04.2 File Operations
 
 **Creating files and directories:**
 
 ```bash
-# Create empty file or update timestamp
+## Create empty file or update timestamp
 touch newfile.txt
 
-# Create multiple files
+## Create multiple files
 touch file1.txt file2.txt file3.txt
 
-# Create directories
+## Create directories
 mkdir mydir
 
-# Create nested directories
+## Create nested directories
 mkdir -p parent/child/grandchild
 
-# Create with specific permissions
+## Create with specific permissions
 mkdir -m 755 public_dir
-```
+```text
 
 **Copying files and directories:**
 
 ```bash
-# Copy a file
+## Copy a file
 cp source.txt destination.txt
 
-# Copy to a directory
+## Copy to a directory
 cp source.txt /backup/
 
-# Copy directory recursively
+## Copy directory recursively
 cp -r source-dir/ backup-dir/
 
-# Preserve permissions, timestamps, ownership
+## Preserve permissions, timestamps, ownership
 cp -p important.conf /backup/
 
-# Verbose output (show what's being copied)
+## Verbose output (show what's being copied)
 cp -v *.log /var/log/archive/
 
-# Copy only if newer (don't overwrite newer destination)
+## Copy only if newer (don't overwrite newer destination)
 cp -u config.yaml /etc/app/
 
-# Interactive mode (prompt before overwrite)
+## Interactive mode (prompt before overwrite)
 cp -i source.txt dest.txt
 
-# Copy a file, creating backup if destination exists
+## Copy a file, creating backup if destination exists
 cp --backup=numbered source.txt dest.txt
-```
+```text
 
 **Moving and renaming files:**
 
 ```bash
-# Move a file
+## Move a file
 mv oldname.txt newname.txt
 
-# Move to a directory
+## Move to a directory
 mv file.txt /tmp/
 
-# Rename a file
+## Rename a file
 mv report.pdf final-report.pdf
 
-# Move multiple files to a directory
+## Move multiple files to a directory
 mv *.jpg /images/
 
-# Verbose move
+## Verbose move
 mv -v old-dir/ new-location/
 
-# Don't overwrite existing files
+## Don't overwrite existing files
 mv -n file.txt /backup/
 
-# Interactive move
+## Interactive move
 mv -i file.txt /backup/
-```
+```text
 
 **Removing files and directories:**
 
 ```bash
-# Remove a file
+## Remove a file
 rm unwanted.txt
 
-# Remove interactively (prompt for each file)
+## Remove interactively (prompt for each file)
 rm -i *.log
 
-# Remove multiple files
+## Remove multiple files
 rm file1.txt file2.txt file3.txt
 
-# Remove directory and contents
+## Remove directory and contents
 rm -r old-directory/
 
-# Force remove without prompts
+## Force remove without prompts
 rm -f temporary-file.tmp
 
-# Remove empty directory
+## Remove empty directory
 rmdir empty-dir/
 
-# Remove directory tree (alternative to rm -r)
+## Remove directory tree (alternative to rm -r)
 rm -rf build/
 
-# Remove only .pyc files recursively
+## Remove only .pyc files recursively
 find . -name "*.pyc" -exec rm {} +
-```
+```text
 
 **⚠️ Dangerous commands to avoid:**
 
 ```bash
-# NEVER run these without extreme caution:
+## NEVER run these without extreme caution:
 rm -rf /                    # Deletes entire filesystem
 rm -rf /*                   # Same thing
 rm -rf ~                    # Deletes your home directory
 find / -name "*.tmp" -exec rm {} +  # Dangerous recursive delete
-```
+```text
 
+
+## Overview
 ### 04.3 Permissions
 
 Linux file permissions control who can read, write, and execute files.
 
 **Permission structure:**
 
-```
+```text
 -rwxr-xr-- 1 user group 4096 Jan 15 10:30 file.txt
 │├─┤├─┤├─┤
 │ │   │ │  └── others: r-- (read)
@@ -245,7 +250,7 @@ Linux file permissions control who can read, write, and execute files.
 │ │   └─────── owner: rwx (read, write, execute)
 │ └─────────── type: - = file, d = directory
 └───────────── special bits
-```
+```text
 
 | Permission | File | Directory |
 |------------|------|-----------|
@@ -256,168 +261,172 @@ Linux file permissions control who can read, write, and execute files.
 **Symbolic mode with chmod:**
 
 ```bash
-# Add execute permission for owner
+## Add execute permission for owner
 chmod u+x script.sh
 
-# Remove write permission for group
+## Remove write permission for group
 chmod g-w file.txt
 
-# Add read permission for others
+## Add read permission for others
 chmod o+r public-file.txt
 
-# Set exact permissions: owner=rwx, group=r-x, others=r--
+## Set exact permissions: owner=rwx, group=r-x, others=r--
 chmod u=rwx,g=rx,o=r file.txt
 
-# Add execute for all users
+## Add execute for all users
 chmod +x deploy.sh
 
-# Remove all permissions for others
+## Remove all permissions for others
 chmod o= private-file.txt
-```
+```text
 
 **Numeric (octal) mode with chmod:**
 
 ```bash
-# rwxr-xr-- = 754
+## rwxr-xr-- = 754
 chmod 754 script.sh
 
-# rwxr-xr-x = 755 (common for executables)
+## rwxr-xr-x = 755 (common for executables)
 chmod 755 deploy.sh
 
-# rw-r--r-- = 644 (common for regular files)
+## rw-r--r-- = 644 (common for regular files)
 chmod 644 config.yaml
 
-# rw------- = 600 (private files)
+## rw------- = 600 (private files)
 chmod 600 ~/.ssh/id_rsa
 
-# rwx------ = 700 (private executables)
+## rwx------ = 700 (private executables)
 chmod 700 ~/bin/myscript
-```
+```text
 
 **Changing ownership:**
 
 ```bash
-# Change file owner
+## Change file owner
 sudo chown alice file.txt
 
-# Change owner and group
+## Change owner and group
 sudo chown alice:developers file.txt
 
-# Change ownership recursively
+## Change ownership recursively
 sudo chown -R alice:team /var/www/
 
-# Change only the group
+## Change only the group
 chgrp developers project/
-```
+```text
 
 **Special permissions:**
 
 ```bash
-# Setuid: execute as file owner (use sparingly)
+## Setuid: execute as file owner (use sparingly)
 chmod u+s /usr/bin/program
 chmod 4755 /usr/bin/program
 
-# Setgid: execute with group privileges
+## Setgid: execute with group privileges
 chmod g+s /shared/dir/
 chmod 2755 /shared/dir/
 
-# Sticky bit: only owner can delete files in directory
+## Sticky bit: only owner can delete files in directory
 chmod +t /tmp/shared/
 chmod 1777 /tmp/shared/
-```
+```text
 
+
+## Overview
 ### 04.4 Searching
 
 **grep — search file contents:**
 
 ```bash
-# Basic text search
+## Basic text search
 grep "error" logfile.txt
 
-# Case-insensitive search
+## Case-insensitive search
 grep -i "error" logfile.txt
 
-# Search recursively in directory
+## Search recursively in directory
 grep -r "TODO" src/
 
-# Show line numbers
+## Show line numbers
 grep -n "function" app.ts
 
-# Count matching lines
+## Count matching lines
 grep -c "404" access.log
 
-# Show 3 lines before and after match
+## Show 3 lines before and after match
 grep -B 3 -A 3 "Exception" app.log
 
-# Invert match (lines NOT containing pattern)
+## Invert match (lines NOT containing pattern)
 grep -v "debug" app.log
 
-# Search for literal string (no regex)
+## Search for literal string (no regex)
 grep -F "user.name" config.yaml
 
-# Extended regex (grep -E or egrep)
+## Extended regex (grep -E or egrep)
 grep -E "error|warning|critical" syslog.txt
 
-# Perl regex for complex patterns
+## Perl regex for complex patterns
 grep -P "\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}" access.log
 
-# Output only matching part
+## Output only matching part
 grep -o "error:.*" app.log
-```
+```text
 
 **find — search for files by name, size, time:**
 
 ```bash
-# Find files by name
+## Find files by name
 find /var -name "*.log"
 
-# Case-insensitive name search
+## Case-insensitive name search
 find . -iname "readme.md"
 
-# Find directories named "node_modules"
+## Find directories named "node_modules"
 find . -type d -name "node_modules"
 
-# Find files larger than 100MB
+## Find files larger than 100MB
 find / -type f -size +100M
 
-# Find files modified in the last 7 days
+## Find files modified in the last 7 days
 find . -mtime -7
 
-# Find files accessed in the last 30 minutes
+## Find files accessed in the last 30 minutes
 find . -amin -30
 
-# Find empty files
+## Find empty files
 find . -empty -type f
 
-# Find files with specific permissions
+## Find files with specific permissions
 find . -perm 755
 
-# Find and execute command on results
+## Find and execute command on results
 find . -name "*.tmp" -exec rm {} +
 
-# Find and delete (using + for batch)
+## Find and delete (using + for batch)
 find . -name "*.log" -delete
 
-# Find files and limit depth
+## Find files and limit depth
 find . -maxdepth 2 -name "*.ts"
-```
+```text
 
 **Other search tools:**
 
 ```bash
-# which: find command location
+## which: find command location
 which python3
-# /usr/bin/python3
+## /usr/bin/python3
 
-# whereis: find binary, source, manual
+## whereis: find binary, source, manual
 whereis git
-# git: /usr/bin/git /usr/share/man/man1/git.1.gz
+## git: /usr/bin/git /usr/share/man/man1/git.1.gz
 
-# locate: fast search using pre-built database
+## locate: fast search using pre-built database
 locate nginx.conf
-# May need to update: sudo updatedb
-```
+## May need to update: sudo updatedb
+```text
 
+
+## Overview
 ### 04.5 Pipes and Redirection
 
 Pipes and redirects are the backbone of Linux command composition.
@@ -425,149 +434,151 @@ Pipes and redirects are the backbone of Linux command composition.
 **Output redirection:**
 
 ```bash
-# Overwrite file with output
+## Overwrite file with output
 echo "hello" > output.txt
 
-# Append output to file
+## Append output to file
 echo "world" >> output.txt
 
-# Redirect stderr to file
+## Redirect stderr to file
 command 2> errors.log
 
-# Append stderr to file
+## Append stderr to file
 command 2>> errors.log
 
-# Redirect both stdout and stderr
+## Redirect both stdout and stderr
 command > output.txt 2>&1
 command &> output.txt
 
-# Discard all output
+## Discard all output
 command > /dev/null 2>&1
-```
+```text
 
 **Input redirection:**
 
 ```bash
-# Feed file contents as input
+## Feed file contents as input
 wc -l < file.txt
 
-# Here document (multi-line input)
+## Here document (multi-line input)
 cat << EOF
 Line 1
 Line 2
 Line 3
 EOF
 
-# Here string
+## Here string
 grep "pattern" <<< "string to search"
-```
+```text
 
 **Pipes:**
 
 ```bash
-# Pipe output of one command as input to another
+## Pipe output of one command as input to another
 ls -la | grep ".txt"
 
-# Chain multiple commands
+## Chain multiple commands
 cat access.log | grep "404" | awk '{print $1}' | sort | uniq -c
 
-# Count files by extension
+## Count files by extension
 find . -type f | sed 's/.*\.//' | sort | uniq -c | sort -rn
 
-# Pipe with xargs (convert stdin to command arguments)
+## Pipe with xargs (convert stdin to command arguments)
 find . -name "*.log" | xargs rm
 
-# Safer xargs with null delimiter
+## Safer xargs with null delimiter
 find . -name "*.log" -print0 | xargs -0 rm
 
-# xargs with parallel execution
+## xargs with parallel execution
 cat urls.txt | xargs -P 4 -I {} curl -s {}
-```
+```text
 
 **tee — split output to file and screen:**
 
 ```bash
-# Write to file AND display
+## Write to file AND display
 ls -la | tee listing.txt
 
-# Append to file AND display
+## Append to file AND display
 ls -la | tee -a listing.txt
 
-# Pipe chain: save intermediate result
+## Pipe chain: save intermediate result
 find . -name "*.ts" | tee files.txt | wc -l
-```
+```text
 
 **xargs — build commands from input:**
 
 ```bash
-# Delete all .jpg files
+## Delete all .jpg files
 find . -name "*.jpg" | xargs rm
 
-# Kill processes by name
+## Kill processes by name
 ps aux | grep "node" | awk '{print $2}' | xargs kill
 
-# Chmod all .sh files
+## Chmod all .sh files
 find . -name "*.sh" | xargs chmod +x
 
-# Parallel download
+## Parallel download
 cat urls.txt | xargs -P 8 -I {} wget {}
-```
+```text
 
+
+## Overview
 ### 04.6 Real-World Tasks
 
 **Log analysis pipeline:**
 
 ```bash
-# Find top 10 most frequent IP addresses in access log
+## Find top 10 most frequent IP addresses in access log
 cat access.log | awk '{print $1}' | sort | uniq -c | sort -rn | head -10
 
-# Find all 500 errors in the last hour
+## Find all 500 errors in the last hour
 grep "500" access.log | awk '$4 >="[21/Jan/2024:10:"' 
 
-# Count requests per endpoint
+## Count requests per endpoint
 awk '{print $7}' access.log | sort | uniq -c | sort -rn | head -20
 
-# Find slow requests (> 2 seconds)
+## Find slow requests (> 2 seconds)
 awk '$NF > 2.0 {print $0}' access.log
-```
+```text
 
 **Disk usage and cleanup:**
 
 ```bash
-# Find largest files in current directory
+## Find largest files in current directory
 du -ah . | sort -rh | head -20
 
-# Find directories using more than 500MB
+## Find directories using more than 500MB
 du -sh */ | sort -rh | head -10
 
-# Find and remove files older than 30 days
+## Find and remove files older than 30 days
 find /var/log -name "*.log" -mtime +30 -delete
 
-# Find files larger than 50MB
+## Find files larger than 50MB
 find . -type f -size +50M -exec ls -lh {} +
 
-# Clean up node_modules recursively
+## Clean up node_modules recursively
 find . -name "node_modules" -type d -exec rm -rf {} +
-```
+```text
 
 **Monitoring and debugging:**
 
 ```bash
-# Watch a log file in real-time
+## Watch a log file in real-time
 tail -f /var/log/syslog
 
-# Watch with pattern filtering
+## Watch with pattern filtering
 tail -f app.log | grep --line-buffered "ERROR"
 
-# Find what's using a port
+## Find what's using a port
 lsof -i :8080
 
-# Find large files created in last 24 hours
+## Find large files created in last 24 hours
 find . -type f -mtime -1 -size +10M -exec ls -lh {} +
 
-# Monitor disk space every 5 seconds
+## Monitor disk space every 5 seconds
 watch -n 5 df -h
-```
+```text
 
 ## Summary
 
@@ -737,6 +748,7 @@ d) Finds the largest text file
 3. Not using quotes around filenames with spaces
 4. Forgetting that Linux is case-sensitive
 5. Not using find/locate for file search
+
 ## Revision Notes
 
 - ls -la: detailed listing
@@ -745,6 +757,7 @@ d) Finds the largest text file
 - find / -name "*.py": find files
 - 管道 (|) pipes output to next command
 - tee: write to file and stdout
+
 ## Placement Section
 
 ### Top 10 Interview Questions

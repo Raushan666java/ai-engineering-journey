@@ -11,12 +11,13 @@
 
 ## Introduction
 
-14-fine-tuning-peft is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding full fine tuning is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering full fine tuning.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -42,7 +43,7 @@ flowchart TD
     U -->|Epoch end| E[Eval on Validation]
     E -->|Loss OK| S[Save Checkpoint]
     E -->|Overfitting| ES[Early Stop]
-```
+```text
 
 ## 2.1 Supervised Fine-Tuning Basics
 
@@ -92,7 +93,7 @@ def test_causal_loss():
     print(f"Causal LM loss: {loss:.4f}")
 
 test_causal_loss()
-```
+```text
 
 ### 2.1.2 Supervised Fine-Tuning Simulator
 
@@ -141,7 +142,7 @@ ex = SFTExample("What is attention?", "Attention is a mechanism...")
 formatted = sim.format_example(ex)
 print(f"Formatted: {formatted}")
 print(f"Memory estimate: {sim.estimate_memory(batch_size=4, seq_len=2048)}")
-```
+```text
 
 ## 2.2 Training Loop
 
@@ -209,7 +210,7 @@ for epoch in range(3):
     train_loss = loop.train_epoch(train_data, batch_size=8)
     val_loss = loop.evaluate(val_data)
     print(f"Epoch {epoch+1}: train={train_loss:.4f}, val={val_loss:.4f}")
-```
+```text
 
 ### 2.2.2 Gradient Accumulation
 
@@ -246,7 +247,7 @@ for i in range(8):
         print(f"Step performed (accumulated {accum.steps} mini-batches)")
         accum.reset()
 print("Gradient accumulation complete")
-```
+```text
 
 ## 2.3 Loss Curves
 
@@ -295,7 +296,7 @@ val_losses = [2.6, 2.3, 2.1, 2.0, 2.05, 2.1, 2.2, 2.3, 2.4, 2.5]  # diverging
 analyzer = LossCurveAnalyzer(train_losses, val_losses)
 print(f"Status: {analyzer.convergence_status()}")
 print(f"Recommendation: {analyzer.recommend_action()}")
-```
+```text
 
 ### 2.3.2 Learning Rate Scheduling
 
@@ -319,7 +320,7 @@ class LRScheduler:
 scheduler = LRScheduler(base_lr=2e-5, warmup_steps=100, total_steps=500)
 lrs = scheduler.schedule(500)
 print(f"LR: start={lrs[0]:.8f}, peak={max(lrs):.8f}, end={lrs[-1]:.8f}")
-```
+```text
 
 ## 2.4 Overfitting
 
@@ -365,7 +366,7 @@ for i, vl in enumerate(val_losses):
     stop = detector.check(vl)
     print(f"Epoch {i+1}: val_loss={vl}, stop={stop}, counter={detector.patience_counter}")
 print(f"Early stopped: {detector.should_stop()}")
-```
+```text
 
 ### 2.4.2 Regularization Techniques
 
@@ -398,7 +399,7 @@ dropped = reg.apply_dropout(x)
 print(f"Before dropout: mean={x.mean():.3f}, After: mean={dropped.mean():.3f}")
 weight = np.random.randn(100, 100)
 print(f"L2 penalty: {reg.l2_penalty(weight):.4f}")
-```
+```text
 
 ## 2.5 Hyperparameters
 
@@ -441,7 +442,7 @@ warnings = config.validate()
 for w in warnings:
     print(f"Warning: {w}")
 print(f"Effective batch size: {config.effective_batch_size()}")
-```
+```text
 
 ### 2.5.2 Hyperparameter Search
 
@@ -471,7 +472,7 @@ search = HyperparamSearch()
 trials = search.grid_search(dataset_size=10000)
 for t in trials[:3]:
     print(f"LR={t['lr']:.0e}, BS={t['batch_size']}, Mem={t['memory_gb']}GB")
-```
+```text
 
 ## Summary
 
@@ -674,6 +675,7 @@ Answer: B
 4. Implement a hyperparameter grid search over LR [1e-5, 2e-5, 5e-5] and batch_size [4, 8, 16]. Report the best combination based on final validation loss.
 
 5. Build a memory estimator for full FT. Given model_size_b (7, 13, 70), batch_size, and seq_len, estimate GPU memory and recommend a GPU type (T4, A10
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 14-fine-tuning-peft
@@ -683,6 +685,7 @@ Answer: B
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

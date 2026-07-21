@@ -13,12 +13,13 @@
 
 ## Introduction
 
-02-sql-and-databases is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding indexes and performance is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering indexes and performance.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -47,7 +48,7 @@ flowchart LR
     E --> L[Bitmap Scan]
     F --> M[Statistics]
     F --> N[Anti-Patterns]
-```
+```text
 
 ## 7.1 Index Fundamentals
 
@@ -61,7 +62,7 @@ CREATE INDEX idx_employees_last_name ON employees(last_name);
 
 -- The index stores (last_name, ctid) sorted by last_name
 -- Lookup: O(log n) — about 3-4 page reads for 1M rows
-```
+```text
 
 **How a B-tree lookup works**:
 
@@ -80,7 +81,7 @@ EXPLAIN SELECT * FROM employees WHERE last_name = 'Smith';
 -- After index: Index Scan
 EXPLAIN SELECT * FROM employees WHERE last_name = 'Smith';
 -- Index Scan using idx_employees_last_name (cost=0.28..8.29 rows=1 width=100)
-```
+```text
 
 **Trade-offs of indexes**:
 
@@ -118,7 +119,7 @@ SELECT * FROM employees ORDER BY salary;
 
 -- Does NOT use index:
 SELECT * FROM employees WHERE UPPER(last_name) = 'SMITH';
-```
+```text
 
 **Hash** — equality only, faster than B-tree for exact lookups:
 
@@ -131,7 +132,7 @@ SELECT * FROM users WHERE email = 'alice@example.com';
 
 -- Not used for:
 SELECT * FROM users WHERE email LIKE '%example.com';
-```
+```text
 
 **GiST (Generalized Search Tree)** — for full-text search, geometric data:
 
@@ -141,7 +142,7 @@ CREATE INDEX idx_document_body ON documents USING gist(to_tsvector('english', bo
 
 SELECT * FROM documents
 WHERE to_tsvector('english', body) @@ to_tsquery('database & performance');
-```
+```text
 
 **GIN (Generalized Inverted Index)** — for array and jsonb containment:
 
@@ -155,7 +156,7 @@ SELECT * FROM products WHERE metadata @> '{"color": "red"}';
 CREATE INDEX idx_tags ON posts USING gin(tags);
 
 SELECT * FROM posts WHERE tags && ARRAY['postgresql', 'performance'];
-```
+```text
 
 **BRIN (Block Range Index)** — for large tables with naturally ordered data:
 
@@ -167,7 +168,7 @@ WITH (pages_per_range = 32);
 -- Very small index (~100KB vs 1GB B-tree for 1B rows)
 -- Best for columns with high correlation to physical storage order
 SELECT * FROM logs WHERE created_at > '2024-06-01';
-```
+```text
 
 **Choosing index type**:
 
@@ -203,7 +204,7 @@ SELECT * FROM employees WHERE department_id = 5;
 -- Cannot use this index
 SELECT * FROM employees WHERE last_name = 'Smith';
 -- Cannot use first column of index (no department_id filter)
-```
+```text
 
 **Column order rules**:
 
@@ -223,7 +224,7 @@ CREATE INDEX idx_orders_status_date ON orders(status, created_at);
 
 -- Not optimal: range first restricts index usefulness
 CREATE INDEX idx_orders_date_status ON orders(created_at, status);
-```
+```text
 
 **Covering indexes** (include extra columns):
 
@@ -237,7 +238,7 @@ INCLUDE (order_date, total_amount, status);
 SELECT order_date, total_amount, status
 FROM orders
 WHERE customer_id = 42;
-```
+```text
 
 **Multiple single-column vs composite indexes**:
 
@@ -254,7 +255,7 @@ WHERE customer_id = 42 AND status = 'shipped';
 -- Composite index is usually more efficient:
 CREATE INDEX idx_orders_customer_status ON orders(customer_id, status);
 -- Single index scan, no bitmap operations needed
-```
+```text
 
 ## 7.4 EXPLAIN and Query Plans
 
@@ -269,7 +270,7 @@ EXPLAIN ANALYZE SELECT * FROM employees WHERE department_id = 5;
 
 -- With buffers (shows cache hit/miss)
 EXPLAIN (ANALYZE, BUFFERS) SELECT * FROM employees WHERE department_id = 5;
-```
+```text
 
 **Understanding scan types**:
 
@@ -292,7 +293,7 @@ Bitmap Heap Scan on employees  (cost=12.34..50.00 rows=200 width=100)
   -> BitmapOr
        -> Bitmap Index Scan on idx_employees_dept  (cost=0.00..5.00 rows=100 width=0)
        -> Bitmap Index Scan on idx_employees_last_name  (cost=0.00..5.00 rows=100 width=0)
-```
+```text
 
 **Reading plan output**:
 
@@ -304,7 +305,7 @@ JOIN departments d ON e.department_id = d.id
 WHERE e.salary > 100000
 ORDER BY e.last_name
 LIMIT 10;
-```
+```text
 
 Key metrics in EXPLAIN ANALYZE:
 
@@ -336,7 +337,7 @@ Hash Join  (cost=50.00..200.00 rows=1000 width=200)
 Merge Join  (cost=100.00..500.00 rows=10000 width=200)
   -> Index Scan on employees  (rows=50000)
   -> Index Scan on departments  (rows=1000)
-```
+```text
 
 ## 7.5 Partial and Expression Indexes
 
@@ -355,7 +356,7 @@ SELECT * FROM orders WHERE status = 'pending';
 CREATE UNIQUE INDEX idx_active_username ON users(username)
 WHERE deleted_at IS NULL;
 -- Allows duplicate usernames for deleted accounts but enforces uniqueness for active ones
-```
+```text
 
 **Expression indexes** index the result of a function or expression:
 
@@ -371,7 +372,7 @@ CREATE INDEX idx_orders_year_month ON orders(EXTRACT(YEAR FROM created_at), EXTR
 SELECT * FROM orders
 WHERE EXTRACT(YEAR FROM created_at) = 2024
   AND EXTRACT(MONTH FROM created_at) = 6;
-```
+```text
 
 **Combining partial and expression indexes**:
 
@@ -383,7 +384,7 @@ WHERE status = 'shipped' AND total > 1000;
 -- Fast aggregation for the most common report
 SELECT COUNT(*), AVG(total) FROM orders
 WHERE status = 'shipped' AND total > 1000;
-```
+```text
 
 ## 7.6 Query Optimization
 
@@ -400,7 +401,7 @@ ALTER TABLE employees ALTER COLUMN salary SET STATISTICS 1000;
 SELECT tablename, attname, n_distinct, most_common_vals, most_common_freqs
 FROM pg_stats
 WHERE tablename = 'employees';
-```
+```text
 
 **Common anti-patterns**:
 
@@ -430,7 +431,7 @@ SELECT * FROM orders WHERE order_id = 12345;
 SELECT * FROM orders WHERE customer_id = 42;
 -- Good: selects only needed columns
 SELECT id, order_date, total FROM orders WHERE customer_id = 42;
-```
+```text
 
 **Vacuum and maintenance**:
 
@@ -450,7 +451,7 @@ VACUUM ANALYZE employees;
 -- Autovacuum settings (postgresql.conf):
 -- autovacuum = on
 -- autovacuum_vacuum_scale_factor = 0.01  (vacuum when 1% rows changed)
-```
+```text
 
 **Index maintenance**:
 
@@ -478,7 +479,7 @@ WHERE idx_scan = 0;
 -- Rebuild index (reduce bloat)
 REINDEX INDEX idx_employees_last_name;
 REINDEX TABLE employees;
-```
+```text
 
 **Query optimization checklist**:
 
@@ -558,7 +559,7 @@ class CompositeIndex<T> {
         return this.tree.get(key) || [];
     }
 }
-```
+```text
 
 ## Summary
 
@@ -676,6 +677,7 @@ class CompositeIndex<T> {
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 02-sql-and-databases
@@ -685,6 +687,7 @@ class CompositeIndex<T> {
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

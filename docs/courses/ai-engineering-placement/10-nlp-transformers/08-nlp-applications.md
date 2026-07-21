@@ -13,12 +13,13 @@
 
 ## Introduction
 
-10-nlp-transformers is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding nlp applications is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering nlp applications.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -47,7 +48,7 @@ flowchart LR
     F --> L[Summary Text]
     G --> M[Translated Text]
     H --> N[Spam/Ham Label]
-```
+```text
 
 ## 8.1 Text Classification
 
@@ -187,7 +188,7 @@ class MultiLabelClassifier {
     return predictions;
   }
 }
-```
+```text
 
 Real-world classifiers use BERT-like models achieving 95%+ accuracy on standard benchmarks. The key challenge is usually data quality and class imbalance, not model architecture.
 
@@ -359,7 +360,7 @@ class NERTagger {
     return this.iobDecode(tokens, bestTags);
   }
 }
-```
+```text
 
 Modern NER systems (BERT-based) achieve F1 > 92% on CoNLL-2003. Domain adaptation (medical, legal, financial) requires annotated data or few-shot learning.
 
@@ -531,7 +532,7 @@ class RAGSystem {
     return bestSentence || "No answer found.";
   }
 }
-```
+```text
 
 Real RAG systems use dense retrieval (DPR, Contriever) with FAISS for billions of documents and T5/BART for answer generation.
 
@@ -682,7 +683,7 @@ class AbstractiveSummarizer {
     return summary;
   }
 }
-```
+```text
 
 BART achieves ROUGE-L scores of 40+ on CNN/DailyMail. Key challenges: factual consistency (hallucination), length control, and handling very long documents.
 
@@ -842,7 +843,7 @@ function reverseDict(map: Map<number, string>): Map<string, number> {
   for (const [k, v] of map) rev.set(v, k);
   return rev;
 }
-```
+```text
 
 State-of-the-art translation achieves BLEU 35+ for high-resource pairs and uses back-translation for low-resource language pairs.
 
@@ -997,7 +998,7 @@ class SentimentAnalyzer {
     return explanations.slice(0, 5);
   }
 }
-```
+```text
 
 Production sentiment systems use BERT fine-tuned on domain data, achieving 95%+ accuracy. LIME and SHAP provide word-level explanations for model decisions.
 
@@ -1199,6 +1200,7 @@ d) PCA
 ---
 
 > **Previous**: [Hugging Face Ecosystem](07-hugging-face-ecos
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 10-nlp-transformers
@@ -1208,6 +1210,7 @@ d) PCA
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

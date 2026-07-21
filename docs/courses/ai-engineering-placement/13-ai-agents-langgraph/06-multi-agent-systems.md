@@ -12,12 +12,13 @@
 
 ## Introduction
 
-13-ai-agents-langgraph is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding multi agent systems is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering multi agent systems.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -47,7 +48,7 @@ flowchart TD
     A -->|Insights| W
     W -->|Output| C
     C -->|Result| User
-```
+```text
 
 ## 6.1 Multi-Agent Patterns
 
@@ -135,7 +136,7 @@ class AnalystAgent(AgentBase):
 
 
 print("Multi-agent base classes defined")
-```
+```text
 
 ## 6.2 Agent Communication
 
@@ -182,7 +183,7 @@ class MessageBus:
 
 bus = MessageBus()
 print("Message bus ready")
-```
+```text
 
 ### 6.2.2 Structured Communication Protocol
 
@@ -225,7 +226,7 @@ class CommunicationProtocol:
 protocol = CommunicationProtocol(bus)
 task_id = protocol.task_delegation("coordinator", "researcher", {"query": "AI trends"})
 print(f"Delegated task: {task_id}")
-```
+```text
 
 ### 6.2.3 Agent Discovery
 
@@ -264,7 +265,7 @@ registry.register("writer-1", "writer", ["content_generation", "summarization"])
 
 available = registry.find_by_capability("web_search")
 print(f"Available for web_search: {[a['name'] for a in available]}")
-```
+```text
 
 ## 6.3 Coordinator Pattern
 
@@ -319,7 +320,7 @@ Respond as JSON list: [{{"agent": "name", "input": "instructions"}}]"""
 
 coordinator = CoordinatorAgent("coordinator", lambda p: json.dumps([{"agent": "researcher-1", "input": "research task"}]), registry)
 print("Coordinator ready")
-```
+```text
 
 ### 6.3.2 Dynamic Task Distribution
 
@@ -362,7 +363,7 @@ class WorkDistributor:
 distributor = WorkDistributor(coordinator, bus)
 result = distributor.distribute("Research AI trends", "round_robin")
 print(f"Distribution: {result}")
-```
+```text
 
 ## 6.4 Specialized Agents
 
@@ -403,7 +404,7 @@ class RoleDefinitions:
 researcher = RoleDefinitions.create_researcher("researcher-1", lambda p: "Research findings.")
 analyst = RoleDefinitions.create_analyst("analyst-1", lambda p: "Analysis complete.")
 print(f"Created specialized agents")
-```
+```text
 
 ### 6.4.2 Agent Pipeline
 
@@ -435,7 +436,7 @@ class AgentPipeline:
 
 pipeline = AgentPipeline(["researcher-1", "analyst-1"])
 print("Agent pipeline configured")
-```
+```text
 
 ## 6.5 Consensus & Conflict
 
@@ -489,7 +490,7 @@ voters = [
 ]
 result = voting.request_vote("Should we use Python for this project?", voters)
 print(f"Vote result: {result['passed']} (YES: {result['yes']}, NO: {result['no']})")
-```
+```text
 
 ### 6.5.2 Conflict Resolution
 
@@ -529,7 +530,7 @@ Provide a resolution that incorporates the best of both positions:"""
 arbitrator = AgentBase("arbitrator", "arbitrator", lambda p: "Compromise resolution.")
 resolver = ConflictResolver(arbitrator)
 print("Conflict resolver ready")
-```
+```text
 
 ### 6.5.3 Consensus Building
 
@@ -570,7 +571,7 @@ Can you adjust to reach consensus? Respond with your revised position."""
 
 builder = ConsensusBuilder(voters, max_rounds=3)
 print("Consensus builder ready")
-```
+```text
 
 ## 6.6 Multi-Agent Evaluation
 
@@ -618,7 +619,7 @@ perf.record_task(3.0)
 perf.record_message()
 perf.record_decision(True)
 print(f"Team performance: {perf.report()}")
-```
+```text
 
 ### 6.6.2 Agent Contribution Analysis
 
@@ -650,7 +651,7 @@ class ContributionAnalyzer:
 
 analyzer = ContributionAnalyzer(bus)
 print("Contribution analyzer ready")
-```
+```text
 
 ## Summary
 
@@ -853,6 +854,7 @@ Answer: B
 4. Design a conflict resolution protocol where two agents disagree on approach and an arbitrator agent resolves the conflict. Show the positions and final resolution.
 
 5. Implement a team performance dashboard that tracks tasks completed, average completion time, conflicts resolved, and messages exchanged. Simulate 10 tasks and generate 
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 13-ai-agents-langgraph
@@ -862,6 +864,7 @@ Answer: B
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

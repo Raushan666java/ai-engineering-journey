@@ -12,12 +12,13 @@
 
 ## Introduction
 
-22-advanced-ai-agents is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding mcp protocol tools is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering mcp protocol tools.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -48,7 +49,7 @@ flowchart LR
     SERVER --> TOOLS
     SERVER --> RES
     SERVER --> PROMPTS
-```
+```text
 
 ## 4.1 MCP Architecture
 
@@ -162,7 +163,7 @@ class MCPServer {
         }
     }
 }
-```
+```text
 
 ```python
 from dataclasses import dataclass, field
@@ -227,7 +228,7 @@ class MCPServer:
 
         return {"jsonrpc": "2.0", "id": req_id,
                 "error": {"code": -32601, "message": f"Unknown method: {method}"}}
-```
+```text
 
 ## 4.2 Implementing an MCP Server
 
@@ -467,7 +468,7 @@ class CollaborationTools {
         }
     }
 }
-```
+```text
 
 ## 4.3 Tool Design Patterns
 
@@ -533,7 +534,7 @@ class ToolValidator {
         return errors
     }
 }
-```
+```text
 
 ## 4.4 Event-Driven Async Agents
 
@@ -647,7 +648,7 @@ class AsyncEventAgent {
         }
     }
 }
-```
+```text
 
 ```python
 import asyncio
@@ -713,7 +714,7 @@ class AsyncEventAgent:
                 priority=Priority.NORMAL,
                 data={'tool': event.data.get('name'), 'result': 'done'}
             ))
-```
+```text
 
 ## 4.5 Active Tool Selection
 
@@ -785,7 +786,7 @@ class ActiveToolSelector {
         return types
     }
 }
-```
+```text
 
 ## Summary
 
@@ -845,6 +846,7 @@ Create a tool selector that takes a task description and returns the top 3 most 
 ### Exercise 5: Safety Comparison
 
 Compare a tool system without validation vs one with sandboxing, approval, and rollback. Show 3 scenarios where safety
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 22-advanced-ai-agents
@@ -854,6 +856,7 @@ Compare a tool system without validation vs one with sandboxing, approval, and r
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

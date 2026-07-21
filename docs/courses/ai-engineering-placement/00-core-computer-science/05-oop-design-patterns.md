@@ -6,12 +6,13 @@ After this chapter you will be able to apply SOLID principles to build extensibl
 
 ## Introduction
 
-00-core-computer-science is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding oop design patterns is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering oop design patterns.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Theory
 
 ### Encapsulation, Inheritance, Polymorphism, Composition
@@ -60,7 +61,7 @@ classDiagram
     InferenceStrategy <|.. AnthropicStrategy
     InferenceStrategy <|.. LocalStrategy
     InferenceClient --> InferenceStrategy
-```
+```text
 
 Observer Pattern: One-to-many dependency where changes in one object notify all dependents. Useful for ML pipeline monitoring — data loading progress, training metrics, log streaming.
 
@@ -101,7 +102,7 @@ classDiagram
     CachingDecorator --> LLMService
     RateLimitDecorator --> LLMService
     LoggingDecorator --> LLMService
-```
+```text
 
 Adapter Pattern: Converts one interface to another. Wrap OpenAI SDK, Anthropic SDK, and HuggingFace pipelines behind a common LLMProvider interface.
 
@@ -466,7 +467,7 @@ class SlackNotifierObserver implements Observer {
         }
     }
 }
-```
+```text
 
 ### Command Pattern for Inference Queuing
 
@@ -525,7 +526,7 @@ class CommandQueue {
         this.processNext()
     }
 }
-```
+```text
 
 ### Clean Architecture for RAG Systems
 
@@ -564,7 +565,7 @@ mock.setResponse("Hello", "Hi there!")
 const client = new InferenceClient(mock)
 const result = await client.generate("Hello")
 // result === "Hi there!"
-```
+```text
 
 ## Summary
 
@@ -633,6 +634,7 @@ SOLID principles and design patterns are battle-tested approaches to writing mai
 3. Refactor a monolithic RAG pipeline into clean architecture layers: entities (Document, Chunk, Query), use cases (IngestUseCase, QueryUseCase), and interface adapters (VectorStoreAdapter, LLMAdapter).
 
 4. Implement the observer pattern for a training pipeline that notifies multiple listeners (console logger, metrics dashboard, Slack notifier) on epoch com
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 00-core-computer-science
@@ -642,6 +644,7 @@ SOLID principles and design patterns are battle-tested approaches to writing mai
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

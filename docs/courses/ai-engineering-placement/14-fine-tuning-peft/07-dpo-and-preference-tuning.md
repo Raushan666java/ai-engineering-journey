@@ -11,12 +11,13 @@
 
 ## Introduction
 
-14-fine-tuning-peft is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding dpo and preference tuning is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering dpo and preference tuning.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -55,7 +56,7 @@ flowchart LR
     R --> D
     D --> G -->|Increase prob| W
     D --> G -->|Decrease prob| L
-```
+```text
 
 ## 7.1 Preference Tuning
 
@@ -110,7 +111,7 @@ class PreferenceTuner:
 
 tuner = PreferenceTuner()
 print(f"Recommended method for 500 examples, low compute: {tuner.recommend(500, 'low').value}")
-```
+```text
 
 ### 7.1.2 Why Direct Optimization
 
@@ -147,7 +148,7 @@ class DirectOptimizationAdvantage:
 
 doa = DirectOptimizationAdvantage()
 print(f"DPO memory savings vs RLHF: {doa.memory_savings(7.0)}")
-```
+```text
 
 ## 7.2 DPO Theory
 
@@ -191,7 +192,7 @@ ref_rejected = np.array([-0.7, -0.5, -0.8])
 
 loss = dpo_math.dpo_loss(chosen, rejected, ref_chosen, ref_rejected, beta=0.1)
 print(f"DPO loss: {loss:.4f}")
-```
+```text
 
 ### 7.2.2 Beta Parameter Analysis
 
@@ -231,7 +232,7 @@ class BetaAnalyzer:
 analyzer = BetaAnalyzer()
 print(analyzer.analyze([0.01, 0.1, 0.5]))
 print(f"Recommended beta for 5K examples: {analyzer.recommend(5000)}")
-```
+```text
 
 ## 7.3 DPO Loss
 
@@ -276,7 +277,7 @@ rc = np.array([-0.5, -0.6, -0.4])
 rr = np.array([-0.6, -0.5, -0.7])
 result = loss_fn.compute(pc, pr, rc, rr)
 print(f"DPO loss: {result['loss']:.4f}, margin: {result['reward_margin']:.4f}, acc: {result['accuracy']:.2f}")
-```
+```text
 
 ### 7.3.2 Log Probability Extraction
 
@@ -304,7 +305,7 @@ logits = np.random.randn(10, 100)  # 10 tokens, vocab=100
 labels = np.random.randint(0, 100, 10)
 logprobs = extractor.get_logprobs(logits, labels)
 print(f"Sequence logprob: {extractor.sequence_logprob(logprobs):.4f}")
-```
+```text
 
 ## 7.4 Preference Data
 
@@ -368,7 +369,7 @@ responses = [("Great answer", 0.9), ("Okay answer", 0.5), ("Bad answer", 0.1)]
 pd.add_from_comparisons("Explain AI", responses)
 print(f"Generated {len(pd.pairs)} preference pairs")
 print(f"Stats: {pd.statistics()}")
-```
+```text
 
 ### 7.4.2 Synthetic Preference Data
 
@@ -421,7 +422,7 @@ gen = SyntheticPreferenceGenerator(mock_llm)
 pair = gen.generate_pair("What is DPO?")
 augmented = gen.augment_with_perturbations(pair)
 print(f"Generated {len(augmented)} preference pairs (1 original + {len(augmented)-1} augmented)")
-```
+```text
 
 ## 7.5 Training
 
@@ -488,7 +489,7 @@ dataset = [PreferencePair(prompt=f"Prompt {i}", chosen=f"Good {i}", rejected=f"B
            for i in range(50)]
 results = trainer.train(dataset, epochs=3, batch_size=8)
 print(f"Training results: {results}")
-```
+```text
 
 ### 7.5.2 DPO with LoRA
 
@@ -527,7 +528,7 @@ class DPOLoRAConfig:
 
 dpo_lora = DPOLoRAConfig()
 print(f"DPO+LoRA config validated: {dpo_lora.validate()}")
-```
+```text
 
 ## 7.6 Evaluation
 
@@ -585,7 +586,7 @@ wrc = WinRateCalculator()
 model_out = ["Good answer here." for _ in range(10)]
 baseline_out = ["Bad" for _ in range(10)]
 print(f"Win rate: {wrc.calculate(model_out, baseline_out)}")
-```
+```text
 
 ### 7.6.2 Alignment Evaluation
 
@@ -628,7 +629,7 @@ class AlignmentEvaluator:
 evaluator = AlignmentEvaluator()
 responses = ["I'll help you with that.", "I cannot help with that request."]
 print(f"Alignment scores: {evaluator.evaluate(responses)}")
-```
+```text
 
 ## Summary
 
@@ -832,6 +833,7 @@ Answer: B
 4. Create a win rate calculator that compares DPO-tuned vs base model outputs. Use simple quality proxies (length, completeness, formatting) to determine winners.
 
 5. Compare DPO (β=0.1) vs DPO (β=0.5) on a small synthetic dataset. Report the reward margin, win rate, and response diversity for each setting. Discuss the tr
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 14-fine-tuning-peft
@@ -841,6 +843,7 @@ Answer: B
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

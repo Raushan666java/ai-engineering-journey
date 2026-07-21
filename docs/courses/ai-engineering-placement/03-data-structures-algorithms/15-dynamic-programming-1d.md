@@ -19,6 +19,7 @@ Binary search is one of the most important algorithms, reducing search time from
 
 - Array basics
 - Time complexity analysis
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -40,7 +41,7 @@ flowchart LR
     D --> E[Advanced]
     E --> F[Applications]
     F --> G[Interview Prep]
-```
+```text
 
 ## 15.1 Section 1
 
@@ -66,7 +67,7 @@ Section 2 of Dynamic Programming 1D covers essential concepts for AI engineering
 The following code demonstrates fundamental operations:
 
 ```python
-# Dynamic Programming 1D - basic operations
+## Dynamic Programming 1D - basic operations
 def example_function(data):
     """Core functionality"""
     result = []
@@ -78,10 +79,10 @@ def example_function(data):
 def process(item):
     return item * 2
 
-# Test the implementation
+## Test the implementation
 test_data = [1, 2, 3, 4, 5]
 print(example_function(test_data))
-```
+```text
 
 ## 15.3 Section 3
 
@@ -117,7 +118,7 @@ flowchart TD
     B -->|Optimized| D[Advanced Solution]
     C --> E[Result]
     D --> E
-```
+```text
 
 ### Key Techniques
 
@@ -165,14 +166,14 @@ Common interview questions and strategies:
 Let's walk through a typical interview problem:
 
 ```python
-# Interview problem solution
+## Interview problem solution
 def solve_interview_problem(input_data):
     # Step 1: Understand the problem
     # Step 2: Design the approach
     # Step 3: Implement the solution
     # Step 4: Test and optimize
     return optimized_result
-```
+```text
 
 ---
 
@@ -192,7 +193,7 @@ function processDynamicProgramming1D(data: number[]): number[] {
 // Usage example
 const result = processDynamicProgramming1D([1, 2, 3]);
 console.log(result); // [2, 4, 6]
-```
+```text
 
 ---
 
@@ -457,6 +458,7 @@ d) Option D - Fourth choice
 3. Using wrong boundary conditions
 4. Not considering the three variants (left, right, standard)
 5. Confusing binary search with linear search
+
 ## Revision Notes
 
 - Binary search: O(log n) on sorted array
@@ -464,6 +466,7 @@ d) Option D - Fourth choice
 - Three variants: standard, leftmost, rightmost
 - Works on any monotonic function
 - Search space reduction is key
+
 ## Placement Section
 
 ### Top 10 Interview Questions

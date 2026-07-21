@@ -13,12 +13,13 @@
 
 ## Introduction
 
-06-docker-kubernetes-cloud is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding aws fundamentals is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering aws fundamentals.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,7 +44,7 @@ flowchart LR
     E --> F[ELB]
     F --> G[Auto Scaling]
     G --> H[Cost Optimization]
-```
+```text
 
 ## 7.1 AWS Global Infrastructure
 
@@ -59,11 +60,11 @@ AWS spans 30+ geographic regions, each with multiple Availability Zones (AZs). E
 | Local Zone | Extends region closer to end users |
 
 ```bash
-# AWS CLI basics
+## AWS CLI basics
 aws configure
 aws ec2 describe-regions
 aws ec2 describe-availability-zones --region us-east-1
-```
+```text
 
 **Choosing a region**: Consider latency to users, compliance requirements, service availability, and pricing (varies by region).
 
@@ -81,51 +82,51 @@ EC2 (Elastic Compute Cloud) provides virtual servers in the cloud.
 | GPU instances | ML training, rendering | p3, p4d, g5 |
 
 ```bash
-# Launch EC2 instance
+## Launch EC2 instance
 aws ec2 run-instances     --image-id ami-0c55b159cbfafe1f0     --instance-type t3.micro     --key-name my-key     --security-group-ids sg-123     --subnet-id subnet-456
 
-# SSH into instance
+## SSH into instance
 ssh -i my-key.pem ec2-user@54.123.45.67
 
-# Stop/start/terminate
+## Stop/start/terminate
 aws ec2 stop-instances --instance-ids i-123
 aws ec2 start-instances --instance-ids i-123
 aws ec2 terminate-instances --instance-ids i-123
-```
+```text
 
 **Security Groups** — virtual firewall for EC2 instances:
 
 ```bash
 aws ec2 create-security-group --group-name web-sg --description "Web server SG"
 aws ec2 authorize-security-group-ingress     --group-id sg-123     --protocol tcp     --port 80     --cidr 0.0.0.0/0
-```
+```text
 
 **EBS (Elastic Block Store)** — persistent block storage:
 
 ```bash
 aws ec2 create-volume --volume-type gp3 --size 100 --availability-zone us-east-1a
 aws ec2 attach-volume --volume-id vol-123 --instance-id i-456 --device /dev/sdf
-```
+```text
 
 ## 7.3 S3 Storage
 
 S3 (Simple Storage Service) provides scalable object storage.
 
 ```bash
-# Create bucket
+## Create bucket
 aws s3 mb s3://my-unique-bucket-name
 
-# Upload objects
+## Upload objects
 aws s3 cp file.txt s3://my-bucket/
 aws s3 sync ./local-folder s3://my-bucket/ --acl public-read
 
-# List objects
+## List objects
 aws s3 ls s3://my-bucket/
 aws s3 ls s3://my-bucket/ --recursive
 
-# Set bucket policy
+## Set bucket policy
 aws s3api put-bucket-policy --bucket my-bucket --policy file://policy.json
-```
+```text
 
 **Storage classes**:
 
@@ -153,7 +154,7 @@ aws s3api put-bucket-policy --bucket my-bucket --policy file://policy.json
     "Expiration": {"Days": 365}
   }]
 }
-```
+```text
 
 ## 7.4 IAM Security
 
@@ -180,22 +181,22 @@ IAM (Identity and Access Management) controls access to AWS resources.
     }
   ]
 }
-```
+```text
 
 ```bash
-# Create IAM user
+## Create IAM user
 aws iam create-user --user-name developer
 aws iam create-access-key --user-name developer
 
-# Attach policy
+## Attach policy
 aws iam attach-user-policy     --user-name developer     --policy-arn arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess
 
-# Create IAM role
+## Create IAM role
 aws iam create-role --role-name ec2-s3-access --assume-role-policy-document file://trust-policy.json
 
-# Attach role policy
+## Attach role policy
 aws iam attach-role-policy     --role-name ec2-s3-access     --policy-arn arn:aws:iam::aws:policy/AmazonS3FullAccess
-```
+```text
 
 **IAM Policies evaluation**: Explicit Deny > Explicit Allow > Default Deny.
 
@@ -206,21 +207,21 @@ aws iam attach-role-policy     --role-name ec2-s3-access     --policy-arn arn:aw
 VPC (Virtual Private Cloud) provides isolated networking in AWS.
 
 ```bash
-# Create VPC
+## Create VPC
 aws ec2 create-vpc --cidr-block 10.0.0.0/16
 
-# Create subnets (public and private)
+## Create subnets (public and private)
 aws ec2 create-subnet --vpc-id vpc-123 --cidr-block 10.0.1.0/24
 aws ec2 create-subnet --vpc-id vpc-123 --cidr-block 10.0.2.0/24
 
-# Internet Gateway
+## Internet Gateway
 aws ec2 create-internet-gateway
 aws ec2 attach-internet-gateway --vpc-id vpc-123 --internet-gateway-id igw-123
 
-# Route tables
+## Route tables
 aws ec2 create-route-table --vpc-id vpc-123
 aws ec2 create-route --route-table-id rtb-123 --destination-cidr-block 0.0.0.0/0 --gateway-id igw-123
-```
+```text
 
 **VPC components**:
 
@@ -247,25 +248,25 @@ flowchart TD
     NAT --> Private2[Private Subnet - App]
     Private1 --> DB1[Private Subnet - RDS]
     Private2 --> DB2[Private Subnet - RDS]
-```
+```text
 
 ## 7.6 Elastic Load Balancing
 
 ELB distributes incoming traffic across multiple targets.
 
 ```bash
-# Create Application Load Balancer
+## Create Application Load Balancer
 aws elbv2 create-load-balancer     --name my-alb     --subnets subnet-abc subnet-def     --security-groups sg-123
 
-# Create target group
+## Create target group
 aws elbv2 create-target-group     --name my-targets     --protocol HTTP     --port 80     --vpc-id vpc-123     --health-check-path /health
 
-# Register targets
+## Register targets
 aws elbv2 register-targets     --target-group-arn arn:aws:elasticloadbalancing:...     --targets Id=i-123 Id=i-456
 
-# Create listener
+## Create listener
 aws elbv2 create-listener     --load-balancer-arn arn:aws:elasticloadbalancing:...     --protocol HTTP --port 80     --default-actions Type=forward,TargetGroupArn=...
-```
+```text
 
 **ALB vs NLB**:
 
@@ -283,15 +284,15 @@ aws elbv2 create-listener     --load-balancer-arn arn:aws:elasticloadbalancing:.
 Auto Scaling automatically adjusts EC2 capacity based on demand.
 
 ```bash
-# Create launch template
+## Create launch template
 aws ec2 create-launch-template     --launch-template-name web-template     --version-description v1     --launch-template-data file://template-data.json
 
-# Create auto scaling group
+## Create auto scaling group
 aws autoscaling create-auto-scaling-group     --auto-scaling-group-name web-asg     --launch-template LaunchTemplateName=web-template     --min-size 2 --max-size 10 --desired-capacity 2     --vpc-zone-identifier subnet-abc,subnet-def     --target-group-arns arn:aws:elasticloadbalancing:...
 
-# Scaling policies
+## Scaling policies
 aws autoscaling put-scaling-policy     --auto-scaling-group-name web-asg     --policy-name cpu-target     --policy-type TargetTrackingScaling     --target-tracking-configuration file://cpu-target.json
-```
+```text
 
 **Scaling strategies**:
 
@@ -316,12 +317,12 @@ aws autoscaling put-scaling-policy     --auto-scaling-group-name web-asg     --p
 | Dedicated Host | None | Full instance cost |
 
 ```bash
-# Cost Explorer (CLI)
+## Cost Explorer (CLI)
 aws ce get-cost-and-usage     --time-period Start=2024-01-01,End=2024-01-31     --granularity MONTHLY     --metrics BlendedCost
 
-# Budget setup
+## Budget setup
 aws budgets create-budget     --account-id 123456789012     --budget file://budget.json     --notifications-with-subscribers file://notifications.json
-```
+```text
 
 **Cost optimization tips**:
 - Right-size instances using Compute Optimizer
@@ -358,7 +359,7 @@ async function listEC2(): Promise<string[]> {
   }
   return ids;
 }
-```
+```text
 
 ---
 
@@ -528,6 +529,7 @@ d) One Zone-IA
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 06-docker-kubernetes-cloud
@@ -537,6 +539,7 @@ d) One Zone-IA
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

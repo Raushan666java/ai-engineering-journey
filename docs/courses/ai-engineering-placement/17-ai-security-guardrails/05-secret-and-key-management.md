@@ -13,12 +13,13 @@
 
 ## Introduction
 
-17-ai-security-guardrails is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding secret and key management is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering secret and key management.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -56,7 +57,7 @@ flowchart TB
     A2 --> V1
     A3 --> V1
     V1 --> V2 --> V3
-```
+```text
 
 ## 5.1 Secret Management Overview
 
@@ -157,7 +158,7 @@ sm = SecretManager()
 sm.get_secret("openai_api_key")
 sm.get_secret("database_url")
 print(json.dumps(sm.get_access_report(), indent=2, default=str))
-```
+```text
 
 **Common AI secrets and their risks**:
 
@@ -275,7 +276,7 @@ class APIKeyManager:
     def _hash_key(self, key: str) -> str:
         return hashlib.sha256(key.encode()).hexdigest()
 
-# Simulated lifecycle
+## Simulated lifecycle
 km = APIKeyManager()
 
 prod_key = km.create_key("production-llm", ["llm:read", "llm:write"], rate_limit=5000)
@@ -284,15 +285,15 @@ dev_key = km.create_key("development-llm", ["llm:read"], rate_limit=100)
 print(f"\nDev key: {dev_key['key'][:20]}...")
 print(f"Validation: {km.validate_key(dev_key['key']) is not None}")
 
-# Simulate rotation
+## Simulate rotation
 new_prod_key = km.rotate_key(prod_key["key"])
 print(f"New prod key ID: {new_prod_key['key_id']}")
 print(f"Old key valid: {km.validate_key(prod_key['key']) is not None}")
 
-# Cleanup
+## Cleanup
 km.cleanup_expired_keys()
 print(f"\nActive keys: {len(km.list_keys('active'))}")
-```
+```text
 
 ---
 
@@ -385,11 +386,11 @@ class VaultClient:
     def get_audit_log(self, n: int = 20) -> List[Dict]:
         return self.audit_log[-n:]
 
-# Usage
+## Usage
 vault = VaultClient()
 vault.authenticate("ml-service")
 
-# Store LLM API keys
+## Store LLM API keys
 vault.write_secret("llm/openai/prod", {
     "api_key": "sk-prod-...",
     "organization": "org-123",
@@ -401,25 +402,25 @@ vault.write_secret("llm/anthropic/prod", {
     "rate_limit": 3000
 })
 
-# Store database credentials
+## Store database credentials
 vault.write_secret("database/vector-db", {
     "host": "qdrant.internal:6333",
     "api_key": "qdrant-secret-key",
     "tls_enabled": True
 })
 
-# Set policies
+## Set policies
 vault.set_policy("ml-engineer", [
     {"path": "llm/*", "capabilities": ["read"]},
     {"path": "database/*", "capabilities": ["read"]}
 ])
 
-# Read back
+## Read back
 secret = vault.read_secret("llm/openai/prod")
 print(f"\nOpenAI key stored: {secret['data']['api_key'][:15]}...")
 
 print(f"Audit entries: {len(vault.get_audit_log())}")
-```
+```text
 
 **Dynamic secrets for database access**:
 
@@ -464,7 +465,7 @@ class DynamicSecretEngine:
 dyn = DynamicSecretEngine(vault)
 creds = dyn.generate_credentials("analytics_db", ttl_seconds=300)
 print(f"Temp user: {creds['username']}, expires: {creds['expires_at']}")
-```
+```text
 
 ---
 
@@ -537,7 +538,7 @@ validation = ems.validate_environment("production")
 print(f"Production secrets: {validation['present']}/{validation['required']} valid={validation['valid']}")
 if not validation["valid"]:
     print(f"Missing: {validation['missing']}")
-```
+```text
 
 **Environment-aware secret resolution**:
 
@@ -563,10 +564,10 @@ resolver.add_source("vault", lambda n, e: f"vault-{e}-{n}" if n == "openai_api_k
 resolver.add_source("env_var", lambda n, e: os.environ.get(n.upper()))
 resolver.add_source("file", lambda n, e: Path(f".secrets/{e}/{n}.secret").read_text() if Path(f".secrets/{e}/{n}.secret").exists() else None)
 
-# os.environ["OPENAI_API_KEY"] = "sk-env-..."
+## os.environ["OPENAI_API_KEY"] = "sk-env-..."
 value = resolver.resolve("openai_api_key", "production")
 print(f"Resolved: {value}")
-```
+```text
 
 ---
 
@@ -650,7 +651,7 @@ anomalies = logger.detect_anomalies()
 print(f"Anomalies detected: {len(anomalies)}")
 for a in anomalies:
     print(f"  [{a['severity'].upper()}] {a['type']}")
-```
+```text
 
 **Secret scanning in code**:
 
@@ -713,7 +714,7 @@ for f in findings:
     print(f"   {f['snippet']}")
 
 os.remove(test_file)
-```
+```text
 
 ---
 
@@ -765,7 +766,7 @@ class ZeroTrustAuth:
         permissions = payload.get("permissions", [])
         return required_perm in permissions
 
-# Zero-trust middleware
+## Zero-trust middleware
 class ZeroTrustMiddleware:
     def __init__(self, auth: ZeroTrustAuth):
         self.auth = auth
@@ -788,7 +789,7 @@ class ZeroTrustMiddleware:
             "token_id": payload["jti"]
         }
 
-# mTLS for transport security
+## mTLS for transport security
 class mTLSConfig:
     """Mutual TLS configuration for model serving."""
 
@@ -806,7 +807,7 @@ class mTLSConfig:
         context.verify_mode = ssl.CERT_REQUIRED
         return context
 
-# Simulated zero-trust flow
+## Simulated zero-trust flow
 auth = ZeroTrustAuth("super-secret-key-2025")
 ztmw = ZeroTrustMiddleware(auth)
 
@@ -817,13 +818,13 @@ request = {"Authorization": f"Bearer {token}"}
 result = ztmw.authenticate_request(request)
 print(f"Authenticated: {result['authenticated']}, Service: {result.get('service', 'N/A')}")
 
-# Permission check
+## Permission check
 can_infer = auth.require_permission(token, "llm:inference")
 print(f"Can infer: {can_infer}")
 
-# Expired token test (simulated)
+## Expired token test (simulated)
 time.sleep(0.1)
-```
+```text
 
 ---
 
@@ -863,7 +864,7 @@ class SecretVault {
 const vault = new SecretVault();
 vault.set("openai_key", "sk-test...", "production");
 console.log(vault.get("openai_key", "production"));
-```
+```text
 
 ---
 
@@ -1077,6 +1078,7 @@ d) Change the file permission
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 17-ai-security-guardrails
@@ -1086,6 +1088,7 @@ d) Change the file permission
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

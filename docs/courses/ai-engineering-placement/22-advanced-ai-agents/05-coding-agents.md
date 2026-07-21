@@ -12,12 +12,13 @@
 
 ## Introduction
 
-22-advanced-ai-agents is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding coding agents is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering coding agents.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -51,7 +52,7 @@ flowchart TD
         SHELL[Shell Session]
     end
     Agent --> Tools
-```
+```text
 
 ## 5.1 Coding Agent Architecture
 
@@ -263,7 +264,7 @@ class CodingAgent {
         }
     }
 }
-```
+```text
 
 ```python
 from typing import List, Optional
@@ -338,7 +339,7 @@ class CodingAgent:
             language="python"
         )
         return file
-```
+```text
 
 ## 5.2 Proposer-Reviewer Pattern
 
@@ -455,7 +456,7 @@ class ProposerReviewerLoop {
         return result
     }
 }
-```
+```text
 
 ```python
 from typing import List, Tuple
@@ -502,7 +503,7 @@ class CodeReviewer:
 
         approved = all(i['severity'] != 'critical' for i in issues)
         return issues, approved
-```
+```text
 
 ## 5.3 Code as Meta-Tool
 
@@ -607,7 +608,7 @@ return parsed;
         return Object.fromEntries(this.parseFailureCount)
     }
 }
-```
+```text
 
 ```python
 from typing import Dict, Any, Callable
@@ -636,7 +637,7 @@ class DynamicToolCreator:
             return parser_fn
 
         return lambda x: {'raw': x}
-```
+```text
 
 ## 5.4 Self-Healing Systems
 
@@ -714,7 +715,7 @@ class SelfHealingSystem {
         return this.diagnosisHistory
     }
 }
-```
+```text
 
 ## 5.5 NL-to-SQL and Forms
 
@@ -816,7 +817,7 @@ class DynamicFormGenerator {
         return 'text'
     }
 }
-```
+```text
 
 ## 5.6 Artifact Pattern
 
@@ -894,7 +895,7 @@ class ArtifactGenerator {
         ].join('\n')
     }
 }
-```
+```text
 
 ## Summary
 
@@ -954,6 +955,7 @@ Write a natural language to SQL converter for a 3-table schema. Test with 10 var
 ### Exercise 5: Self-Healing Diagnostic
 
 Build a component that reads error logs, diagnoses issues, generates a fix script, and ap
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 22-advanced-ai-agents
@@ -963,6 +965,7 @@ Build a component that reads error logs, diagnoses issues, generates a fix scrip
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

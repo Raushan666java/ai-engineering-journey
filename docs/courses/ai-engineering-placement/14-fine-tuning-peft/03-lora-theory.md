@@ -11,12 +11,13 @@
 
 ## Introduction
 
-14-fine-tuning-peft is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding lora theory is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering lora theory.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -47,7 +48,7 @@ flowchart LR
     style B fill:#4a90d9,color:#fff
     style A fill:#4a90d9,color:#fff
     style W0 fill:#e0e0e0
-```
+```text
 
 ## 3.1 Low-Rank Intrinsic Dimension
 
@@ -94,7 +95,7 @@ W = np.random.randn(4096, 4096)  # typical LLM layer
 intrinsic_dim = analyzer.estimate_dimension(W)
 print(f"Intrinsic dimension (95% variance): {intrinsic_dim}")
 print(f"Rank analysis: {analyzer.rank_vs_original(4096, 4096, 8)}")
-```
+```text
 
 ### 3.1.2 Why Pre-Trained Weights Have Low Intrinsic Dimension
 
@@ -117,7 +118,7 @@ class SubspaceAnalysis:
 
 delta = np.random.randn(1024, 1024)
 print(f"Top-8 singular value energy ratio: {SubspaceAnalysis().subspace_similarity(np.zeros((1024,1024)), delta):.3f}")
-```
+```text
 
 ## 3.2 Matrix Decomposition
 
@@ -164,7 +165,7 @@ output = layer.forward(x)
 merged_output = layer.forward_with_merged(x)
 print(f"Outputs equal: {np.allclose(output, merged_output, atol=1e-6)}")
 print(f"Parameter savings: {layer.param_count()}")
-```
+```text
 
 ### 3.2.2 Weight Update Analysis
 
@@ -199,7 +200,7 @@ W0 = np.random.randn(64, 64)
 BA = np.random.randn(64, 64) * 0.01
 print(analyzer.compute_update_norm(W0, BA, 2.0))
 print(analyzer.rank_approximation_error(W0, 4))
-```
+```text
 
 ## 3.3 Parameter Savings
 
@@ -248,7 +249,7 @@ result = calc.calculate(4096, 32, 8)
 print(f"LoRA params: {result['lora_parameters']:,}")
 print(f"Trainable %: {result['trainable_pct']:.4f}%")
 print(f"Ratio vs full: {result['vs_full_ft']}")
-```
+```text
 
 ### 3.3.2 Memory Comparison
 
@@ -292,7 +293,7 @@ mem = MemoryComparison()
 full = mem.full_ft_memory(7.0, 4, 2048)
 lora = mem.lora_memory(7.0, 33_554_432, 4, 2048)
 print(f"Full FT: {full['total_gb']}GB | LoRA: {lora['total_gb']}GB")
-```
+```text
 
 ## 3.4 Rank Selection
 
@@ -332,7 +333,7 @@ class RankImpactAnalyzer:
 analyzer = RankImpactAnalyzer()
 analyzer.compare_ranks(4096, 4096)
 print(f"Recommended rank for complex task: {analyzer.rank_recommendation('complex')}")
-```
+```text
 
 ## 3.5 Scaling Factor
 
@@ -374,7 +375,7 @@ class LoRAScaling:
 scaling = LoRAScaling(r=8, alpha=16)
 print(scaling.gradient_magnitude())
 print(f"Recommended alpha for r=8: {LoRAScaling.recommend_alpha(8)}")
-```
+```text
 
 ### 3.5.2 Initialization Strategy
 
@@ -411,7 +412,7 @@ init = LoRAInitStrategy(768, 768, 8, "gaussian")
 x = np.random.randn(1, 768)
 out = init.get_initial_output(x)
 print(f"Initial LoRA output (should be near zero): norm={np.linalg.norm(out):.6f}")
-```
+```text
 
 ## Summary
 
@@ -614,6 +615,7 @@ Answer: B
 4. Compare memory requirements for full FT vs LoRA on a 7B model: compute total GPU memory needed for batch_size=4, seq_len=2048 for both approaches.
 
 5. Implement an alpha finder that tests alpha values [2, 4, 8, 16, 32, 64] for a given rank and reports gradient magnitudes and effective learni
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 14-fine-tuning-peft
@@ -623,6 +625,7 @@ Answer: B
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

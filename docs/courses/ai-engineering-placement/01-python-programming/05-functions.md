@@ -13,12 +13,13 @@
 
 ## Introduction
 
-01-python-programming is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding functions is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering functions.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -44,7 +45,7 @@ flowchart LR
     H --> I[map/filter/sorted]
     A --> J[Recursion]
     A --> K[Decorators]
-```
+```text
 
 ## 5.1 Function Basics
 
@@ -95,7 +96,7 @@ def power(base, exp=2):
 print(power(5))       # 25 (5^2)
 print(power(5, 3))    # 125 (5^3)
 
-# WARNING: Default arguments are evaluated ONCE at definition
+## WARNING: Default arguments are evaluated ONCE at definition
 def bad_append(item, lst=[]):
     lst.append(item)
     return lst
@@ -109,13 +110,13 @@ def good_append(item, lst=None):
     lst.append(item)
     return lst
 
-# Variable positional arguments
+## Variable positional arguments
 def sum_all(*numbers):
     return sum(numbers)
 
 print(sum_all(1, 2, 3, 4, 5))  # 15
 
-# Variable keyword arguments
+## Variable keyword arguments
 def build_profile(**info):
     for key, value in info.items():
         print(f"  {key}: {value}")
@@ -411,23 +412,23 @@ Python type hints enable static type checking and better IDE support.
 `python
 from typing import Optional, Union, Callable, TypeVar, Generic, Protocol
 
-# Optional and Union
+## Optional and Union
 def find_user(user_id: int) -> Optional[str]:
     return "Alice" if user_id == 1 else None
 
 def process(value: Union[int, str]) -> str:
     return str(value)
 
-# Callable signatures
+## Callable signatures
 def apply_twice(func: Callable[[int], int], x: int) -> int:
     return func(func(x))
 
-# Generics
+## Generics
 T = TypeVar("T")
 def first(items: list[T]) -> T:
     return items[0]
 
-# Protocols (structural subtyping)
+## Protocols (structural subtyping)
 class Drawable(Protocol):
     def draw(self) -> None: ...
 
@@ -464,11 +465,11 @@ def greet(name: str) -> str:
     return f"Hello, {name}!"
 
 greet("Alice")
-# Hello, Alice!
-# Hello, Alice!
-# Hello, Alice!
+## Hello, Alice!
+## Hello, Alice!
+## Hello, Alice!
 
-# Class-based decorator
+## Class-based decorator
 class CountCalls:
     def __init__(self, func):
         self.func = func
@@ -490,7 +491,7 @@ say_hello()  # Call 2 of say_hello
 ## 5.9 Common Pitfalls
 
 `python
-# Pitfall 1: Mutable default arguments
+## Pitfall 1: Mutable default arguments
 def add_item(item, lst=[]):  # BAD
     lst.append(item)
     return lst
@@ -504,16 +505,16 @@ def add_item_fixed(item, lst=None):  # GOOD
     lst.append(item)
     return lst
 
-# Pitfall 2: Late binding closures
+## Pitfall 2: Late binding closures
 funcs = [lambda x, n=i: x + n for i in range(5)]  # capture i immediately
 print([f(0) for f in funcs])  # [0, 1, 2, 3, 4]
 
-# Pitfall 3: Variable scope in comprehensions
+## Pitfall 3: Variable scope in comprehensions
 x = "global"
 values = [x for x in range(3)]  # leaks x in Python 2, not in 3
 print(x)  # "global" in Python 3
 
-# Pitfall 4: Modifying while iterating
+## Pitfall 4: Modifying while iterating
 def remove_negatives(numbers):
     for n in numbers:
         if n < 0:
@@ -525,9 +526,9 @@ print(remove_negatives([-1, -2, 3]))  # [-2, 3] -- wrong!
 def remove_negatives_fixed(numbers):
     return [n for n in numbers if n >= 0]
 
-# Pitfall 5: Using lambda where def is clearer
-# BAD: squared = lambda x: x ** 2
-# GOOD:
+## Pitfall 5: Using lambda where def is clearer
+## BAD: squared = lambda x: x ** 2
+## GOOD:
 def squared(x): return x ** 2
 `
 
@@ -536,7 +537,7 @@ def squared(x): return x ** 2
 `python
 import timeit
 
-# Local variable binding is faster
+## Local variable binding is faster
 def slow():
     import math
     return math.sqrt(100)
@@ -548,22 +549,22 @@ def fast():
 print(timeit.timeit(slow, number=100000))  # slower
 print(timeit.timeit(fast, number=100000))  # faster
 
-# Function call overhead
-# Inline is faster than function call for simple ops
+## Function call overhead
+## Inline is faster than function call for simple ops
 def compute(x):
     return x * 2
 
-# Inline: result = x * 2
-# Function: result = compute(x)
+## Inline: result = x * 2
+## Function: result = compute(x)
 
-# @lru_cache for expensive pure functions
+## @lru_cache for expensive pure functions
 from functools import lru_cache
 
 @lru_cache(maxsize=128)
 def expensive(n):
     return sum(i * i for i in range(n))
 
-# First call computes, subsequent calls are O(1)
+## First call computes, subsequent calls are O(1)
 print(expensive(10000))  # computes
 print(expensive(10000))  # cached hit
 `
@@ -578,6 +579,7 @@ print(expensive(10000))  # cached hit
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 01-python-programming
@@ -587,6 +589,7 @@ print(expensive(10000))  # cached hit
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

@@ -13,12 +13,13 @@
 
 ## Introduction
 
-19-capstone-projects is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding enterprise rag platform is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering enterprise rag platform.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -55,7 +56,7 @@ flowchart TB
         L[RBAC] --> I
         M[Audit Log] --> K
     end
-```
+```text
 
 ## 3.1 Multi-Source Ingestion
 
@@ -198,7 +199,7 @@ class APIConnector(DocumentConnector):
                         source=f"api:{self.endpoint}",
                         metadata=item,
                     )
-```
+```text
 
 ## 3.2 Document Processing
 
@@ -303,7 +304,7 @@ class MetadataExtractor:
             "char_count": len(doc.content),
             "word_count": len(doc.content.split()),
         }
-```
+```text
 
 ## 3.3 Hybrid Search
 
@@ -462,7 +463,7 @@ class HybridRetriever:
             results.append({**doc_data, "fusion_score": score})
 
         return results
-```
+```text
 
 ## 3.4 RBAC for Documents
 
@@ -591,7 +592,7 @@ class DocumentSharing:
                 if share["expires_at"] and datetime.now() > share["expires_at"]:
                     return True
         return False
-```
+```text
 
 ## 3.5 Analytics & Monitoring
 
@@ -684,7 +685,7 @@ class CostTracker:
     def cost_today(self) -> float:
         today = datetime.now().date().isoformat()
         return sum(u["cost"] for u in self.usage if u["timestamp"].startswith(today))
-```
+```text
 
 ## 3.6 Production Deployment
 
@@ -785,7 +786,7 @@ class ComplianceManager:
             "details": details,
             "timestamp": datetime.now().isoformat(),
         }
-```
+```text
 
 ## Summary
 
@@ -1056,6 +1057,7 @@ The Enterprise RAG Platform demonstrates production-grade retrieval-augmented ge
 9. **Compliance Implementation**: Implement GDPR right-to-erasure: on user request, delete all documents and embeddings for that user. Implement data retention: documents older than 90 days are archived and not searchable. Test both.
 
 10. **Full Platform Deployment**: Deploy the complete RAG platform with: Qdrant vector store, Redis cache, FastAPI backend, and PostgreSQL for metadata. Set up Docker Compose for local development and Kubernetes for production. Configure auto-scaling based on quer
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 19-capstone-projects
@@ -1065,6 +1067,7 @@ The Enterprise RAG Platform demonstrates production-grade retrieval-augmented ge
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

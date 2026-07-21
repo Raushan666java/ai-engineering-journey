@@ -13,12 +13,13 @@
 
 ## Introduction
 
-18-multimodal-ai-voice is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding image segmentation is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering image segmentation.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -42,7 +43,7 @@ flowchart LR
     E --> G[Panoptic Fusion]
     F --> G
     G --> H[Panoptic Output]
-```
+```text
 
 ## 3.1 Segmentation Types
 
@@ -97,7 +98,7 @@ class SegmentationVisualizer:
             mask[pos:pos + counts[i + 1]] = 1
             pos += counts[i + 1]
         return mask.reshape(s, order='F')
-```
+```text
 
 ## 3.2 U-Net Architecture
 
@@ -260,7 +261,7 @@ class UNetPlusPlus(nn.Module):
         x0_4 = self.conv0_4(torch.cat([x0_0, x0_1, x0_2, x0_3, F.interpolate(x1_3, scale_factor=2)], dim=1))
 
         return self.final(x0_4)
-```
+```text
 
 ## 3.3 Mask R-CNN
 
@@ -387,7 +388,7 @@ class MaskRCNN(nn.Module):
             cls_id = class_ids[i].item()
             binary_masks[i, 0] = (masks[i, cls_id] > threshold).float()
         return binary_masks
-```
+```text
 
 ## 3.4 Panoptic Segmentation
 
@@ -490,7 +491,7 @@ class PanopticFPN(nn.Module):
         semantic = self.semantic_head(fused)
         instance = self.instance_head(fused)
         return {"semantic": semantic, "instance": instance}
-```
+```text
 
 ## 3.5 Evaluation Metrics
 
@@ -586,7 +587,7 @@ class BoundaryMetrics:
         from scipy.spatial.distance import cdist
         dists = cdist(pred_points.astype(float), gt_points.astype(float))
         return max(dists.min(axis=1).max(), dists.min(axis=0).max())
-```
+```text
 
 ## 3.6 Applications & Deployment
 
@@ -720,7 +721,7 @@ class AutonomousDrivingSegmenter:
         total_pixels = mask.shape[0] * mask.shape[1]
         drivable_pixels = road_mask.sum() + sidewalk_mask.sum()
         return drivable_pixels / total_pixels
-```
+```text
 
 ## Summary
 
@@ -1044,6 +1045,7 @@ Image segmentation assigns labels to every pixel, with three levels of granulari
 9. **Tiling Large Images**: Write a tiling function that splits a 4000—4000 satellite image into 512—512 tiles with 64-pixel overlap. Segment each tile and reconstruct the full-resolution mask. Handle tile boundary artifacts by averaging overlapping predictions.
 
 10. **Real-time Segmentation Pipeline**: Build a webcam segmentation app using BiSeNet or a lightweight U-Net. Display the overlay at >30 FPS. Benchmark CPU vs. GPU performance. What is the bottleneck (preprocessing, inference, or post-pro
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 18-multimodal-ai-voice
@@ -1053,6 +1055,7 @@ Image segmentation assigns labels to every pixel, with three levels of granulari
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

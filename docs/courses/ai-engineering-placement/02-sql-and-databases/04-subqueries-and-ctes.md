@@ -13,12 +13,13 @@
 
 ## Introduction
 
-02-sql-and-databases is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding subqueries and ctes is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering subqueries and ctes.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -41,7 +42,7 @@ flowchart LR
     F[CTEs] --> G[WITH ... AS]
     F --> H[Recursive CTEs]
     F --> I[Multiple CTEs]
-```
+```text
 
 ## 4.1 Scalar Subqueries
 
@@ -76,7 +77,7 @@ cur.executemany("INSERT INTO emp VALUES (?,?,?,?)", [
     (1, "Alice", 75000, 1), (2, "Bob", 68000, 1),
     (3, "Charlie", 82000, 2), (4, "Diana", 72000, 2),
 ])
-# Employees earning above their department average
+## Employees earning above their department average
 cur.execute("""
     SELECT e.name, e.salary, e.dept_id
     FROM emp e
@@ -84,8 +85,8 @@ cur.execute("""
 """)
 for row in cur.fetchall():
     print(f"{row[0]}: {row[1]} > dept avg")
-# Alice: 75000 > Eng avg (71500)
-# Charlie: 82000 > Sales avg (77000)
+## Alice: 75000 > Eng avg (71500)
+## Charlie: 82000 > Sales avg (77000)
 `
 
 ## 4.2 Row & Table Subqueries
@@ -797,6 +798,7 @@ ORDER BY order_date;
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 02-sql-and-databases
@@ -806,6 +808,7 @@ ORDER BY order_date;
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

@@ -13,12 +13,13 @@
 
 ## Introduction
 
-02-sql-and-databases is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding postgresql advanced is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering postgresql advanced.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -46,7 +47,7 @@ flowchart LR
     E --> K[pg_trgm / PostGIS / uuid-ossp]
     F --> L[Functions / Triggers / Cursors]
     G --> M[Recursive CTEs / Lateral / FDW]
-```
+```text
 
 ## 10.1 JSONB
 
@@ -66,7 +67,7 @@ INSERT INTO products (name, attributes) VALUES
     ('Laptop', '{"brand": "Dell", "specs": {"ram": 16, "storage": 512, "cpu": "i7"}, "colors": ["silver", "black"]}'),
     ('Phone', '{"brand": "Apple", "specs": {"ram": 8, "storage": 256, "cpu": "A16"}, "colors": ["midnight", "starlight", "blue"]}'),
     ('Tablet', '{"brand": "Samsung", "specs": {"ram": 12, "storage": 256, "cpu": "Snapdragon"}, "colors": ["gray", "silver"]}');
-```
+```text
 
 **JSONB operators**:
 
@@ -91,7 +92,7 @@ SELECT attributes #> '{specs, ram}' AS ram FROM products;
 
 -- #>> : get JSON object at path as text
 SELECT attributes #>> '{specs, cpu}' AS cpu FROM products;
-```
+```text
 
 **JSONB containment and existence**:
 
@@ -109,7 +110,7 @@ SELECT * FROM products WHERE attributes ?| ARRAY['warranty', 'brand'];
 
 -- ?& : all keys exist?
 SELECT * FROM products WHERE attributes ?& ARRAY['brand', 'specs'];
-```
+```text
 
 **GIN indexes for JSONB**:
 
@@ -123,7 +124,7 @@ CREATE INDEX idx_products_attrs_path ON products USING gin(attributes jsonb_path
 -- Query using the index:
 SELECT * FROM products
 WHERE attributes @> '{"specs": {"ram": 16}}';
-```
+```text
 
 **JSONB modification functions**:
 
@@ -150,7 +151,7 @@ SET attributes = attributes || '{"in_stock": true}';
 SELECT id, jsonb_array_elements_text(attributes -> 'colors') AS color
 FROM products;
 -- Expands array into rows: id=1, color=silver; id=1, color=black; etc.
-```
+```text
 
 ## 10.2 Full-Text Search
 
@@ -175,7 +176,7 @@ INSERT INTO documents (title, body) VALUES
 -- Update tsvector column (or use a trigger)
 UPDATE documents SET
     search_vector = to_tsvector('english', title || ' ' || body);
-```
+```text
 
 **Search functions**:
 
@@ -193,7 +194,7 @@ WHERE search_vector @@ plainto_tsquery('english', 'text search');
 -- Search with phrase matching
 SELECT title FROM documents
 WHERE search_vector @@ phraseto_tsquery('english', 'built-in text search');
-```
+```text
 
 **Ranking results**:
 
@@ -211,7 +212,7 @@ SELECT
     ts_rank_cd(search_vector, to_tsquery('english', 'jsonb')) AS cover_density_rank
 FROM documents
 WHERE search_vector @@ to_tsquery('english', 'jsonb');
-```
+```text
 
 **Highlighting**:
 
@@ -222,7 +223,7 @@ SELECT
                 'StartSel = <mark>, StopSel = </mark>') AS highlighted
 FROM documents
 WHERE search_vector @@ to_tsquery('english', 'postgresql');
-```
+```text
 
 **Automatic tsvector with triggers**:
 
@@ -238,7 +239,7 @@ CREATE TRIGGER trg_documents_search
     BEFORE INSERT OR UPDATE ON documents
     FOR EACH ROW
     EXECUTE FUNCTION documents_search_update();
-```
+```text
 
 **GIN index for full-text search**:
 
@@ -248,7 +249,7 @@ CREATE INDEX idx_documents_search ON documents USING gin(search_vector);
 -- Dictionary configuration
 -- 'english', 'simple', 'french', 'german' — language-specific stemming
 -- Custom dictionaries: thesaurus, stop words, Ispell
-```
+```text
 
 ## 10.3 Partitioning
 
@@ -276,7 +277,7 @@ CREATE TABLE sales_2024_q4 PARTITION OF sales
 -- Partition pruning: only scans relevant partitions
 EXPLAIN SELECT * FROM sales WHERE sale_date = '2024-05-15';
 -- Seq Scan on sales_2024_q2 (prunes other partitions)
-```
+```text
 
 **List partitioning**:
 
@@ -296,7 +297,7 @@ CREATE TABLE customers_apac PARTITION OF customers
     FOR VALUES IN ('JP', 'KR', 'AU', 'SG', 'IN');
 CREATE TABLE customers_other PARTITION OF customers
     DEFAULT;
-```
+```text
 
 **Hash partitioning**:
 
@@ -316,7 +317,7 @@ CREATE TABLE sessions_2 PARTITION OF sessions
     FOR VALUES WITH (MODULUS 4, REMAINDER 2);
 CREATE TABLE sessions_3 PARTITION OF sessions
     FOR VALUES WITH (MODULUS 4, REMAINDER 3);
-```
+```text
 
 **Sub-partitioning**:
 
@@ -336,7 +337,7 @@ CREATE TABLE measurements_2024_s1 PARTITION OF measurements_2024
     FOR VALUES FROM (1) TO (100);
 CREATE TABLE measurements_2024_s2 PARTITION OF measurements_2024
     FOR VALUES FROM (100) TO (200);
-```
+```text
 
 **Partition management**:
 
@@ -350,7 +351,7 @@ ALTER TABLE sales ATTACH PARTITION sales_new
 
 -- Drop partition (fast, no vacuum needed)
 DROP TABLE sales_2024_q1;
-```
+```text
 
 ## 10.4 Extensions
 
@@ -360,7 +361,7 @@ Extensions add functionality to PostgreSQL.
 -- List installed extensions
 SELECT * FROM pg_available_extensions;
 SELECT * FROM pg_extension;
-```
+```text
 
 **uuid-ossp** (generate UUIDs):
 
@@ -375,7 +376,7 @@ CREATE TABLE users (
     id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
     name VARCHAR(100)
 );
-```
+```text
 
 **pgcrypto** (encryption and hashing):
 
@@ -392,7 +393,7 @@ WHERE password_hash = crypt('login_password', password_hash);
 -- Encryption
 SELECT encrypt('sensitive_data', 'encryption_key', 'aes');
 SELECT decrypt(encrypted_data, 'encryption_key', 'aes');
-```
+```text
 
 **pg_trgm** (trigram text search):
 
@@ -413,7 +414,7 @@ SELECT name, show_trgm(name) FROM products WHERE id = 1;
 
 -- Word similarity (word boundaries)
 SELECT word_similarity('postgre', 'PostgreSQL');
-```
+```text
 
 **PostGIS** (geospatial):
 
@@ -446,7 +447,7 @@ CREATE INDEX idx_locations_geom ON locations USING gist(geom);
 -- Within bounding box
 SELECT * FROM locations
 WHERE geom && ST_MakeEnvelope(-80, 30, -70, 45, 4326);
-```
+```text
 
 **hstore** (key-value store, predecessor to JSONB):
 
@@ -465,7 +466,7 @@ INSERT INTO config (settings) VALUES
 SELECT settings -> 'theme' FROM config;
 SELECT * FROM config WHERE settings ? 'language';
 SELECT * FROM config WHERE settings @> 'notifications => on';
-```
+```text
 
 ## 10.5 PL/pgSQL
 
@@ -489,7 +490,7 @@ $$;
 
 -- Usage
 SELECT * FROM get_products_by_category(5);
-```
+```text
 
 **Functions with OUT parameters**:
 
@@ -510,7 +511,7 @@ BEGIN
     GROUP BY c.name, o.total;
 END;
 $$;
-```
+```text
 
 **Procedures** (PostgreSQL 11+):
 
@@ -540,7 +541,7 @@ $$;
 
 -- Execute procedure
 CALL transfer_funds(1, 2, 100.00);
-```
+```text
 
 **Triggers**:
 
@@ -570,7 +571,7 @@ CREATE TRIGGER trg_orders_audit
     AFTER INSERT OR UPDATE OR DELETE ON orders
     FOR EACH ROW
     EXECUTE FUNCTION audit_orders();
-```
+```text
 
 **Error handling**:
 
@@ -589,7 +590,7 @@ EXCEPTION
         RETURN 'Error: ' || SQLERRM;
 END;
 $$;
-```
+```text
 
 **Cursors** for processing large result sets in batches:
 
@@ -619,7 +620,7 @@ BEGIN
     CLOSE cur;
 END;
 $$;
-```
+```text
 
 ## 10.6 Advanced Queries
 
@@ -655,7 +656,7 @@ WITH RECURSIVE category_tree AS (
     JOIN category_tree ct ON c.parent_id = ct.id
 )
 SELECT * FROM category_tree ORDER BY full_path;
-```
+```text
 
 **Lateral joins** (subqueries that can reference columns from preceding FROM items):
 
@@ -680,7 +681,7 @@ CROSS JOIN LATERAL (
     ORDER BY u.geom <-> geom
     LIMIT 1
 ) l;
-```
+```text
 
 **Custom aggregates**:
 
@@ -704,7 +705,7 @@ CREATE AGGREGATE array_agg_custom(INTEGER) (
 SELECT department_id, array_agg_custom(employee_id ORDER BY name)
 FROM employees
 GROUP BY department_id;
-```
+```text
 
 **Foreign Data Wrappers (FDW)**:
 
@@ -733,7 +734,7 @@ OPTIONS (schema_name 'public', table_name 'orders');
 
 -- Query remote data as if local
 SELECT * FROM remote_orders WHERE order_date > '2024-01-01';
-```
+```text
 
 ## TypeScript Parallel
 
@@ -797,7 +798,7 @@ class JsonStore {
         return true;
     }
 }
-```
+```text
 
 ## Summary
 
@@ -914,6 +915,7 @@ class JsonStore {
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 02-sql-and-databases
@@ -923,6 +925,7 @@ class JsonStore {
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

@@ -12,12 +12,13 @@
 
 ## Introduction
 
-22-advanced-ai-agents is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding advanced multi agent collaboration is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering advanced multi agent collaboration.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -51,7 +52,7 @@ flowchart TD
         M1 --> T1[Team 1]
         M1 --> T2[Team 2]
     end
-```
+```text
 
 ## 10.1 Multi-Agent Topologies
 
@@ -253,7 +254,7 @@ interface Agent {
     name: string
     execute(task: string, context?: string[]): Promise<any>
 }
-```
+```text
 
 ## 10.2 Shared vs No-Shared Context
 
@@ -398,7 +399,7 @@ class DirectMessenger {
         return messages.sort((a, b) => a.localeCompare(b))
     }
 }
-```
+```text
 
 ```python
 from typing import List, Optional
@@ -453,7 +454,7 @@ class NoSharedContext:
             'consensus': result_counts.most_common(1)[0][0] if result_counts else None,
             'agreement_rate': max(result_counts.values()) / len(self.results) if self.results else 0,
         }
-```
+```text
 
 ## 10.3 Failure Modes
 
@@ -559,7 +560,7 @@ class FailureModeCatalog {
         }
     }
 }
-```
+```text
 
 ## 10.4 Agent Society
 
@@ -691,7 +692,7 @@ class AgentSocietySimulator {
         ].join('\n')
     }
 }
-```
+```text
 
 ## 10.5 When Multi-Agent Wins
 
@@ -772,7 +773,7 @@ class MultiAgentDecider {
         return { recommendation, score: multiAgentScore, reasoning }
     }
 }
-```
+```text
 
 ```python
 import random
@@ -828,7 +829,7 @@ class MultiAgentEvaluator:
             'coordination_time_ms': round(elapsed * 1000 * 0.3, 2),  # estimated
             'productive_time_ms': round(elapsed * 1000 * 0.7, 2),
         }
-```
+```text
 
 ## Summary
 
@@ -888,6 +889,7 @@ Build a small-world network of 10 agents. Run 10 rounds and report emergent norm
 ### Exercise 5: Single vs Multi Benchmark
 
 Pick 5 tasks. Implement single-agent and multi-agent versions. Benchmark success rate and latency. Report when multi-ag
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 22-advanced-ai-agents
@@ -897,6 +899,7 @@ Pick 5 tasks. Implement single-agent and multi-agent versions. Benchmark success
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

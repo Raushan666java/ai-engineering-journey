@@ -13,12 +13,13 @@
 
 ## Introduction
 
-11-llms-prompt-engineering is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding context management is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering context management.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -47,7 +48,7 @@ flowchart LR
     I --> J[LLM Processing]
     J --> K[Response]
     K --> A
-```
+```text
 
 ## 6.1 Token Limits
 
@@ -72,7 +73,7 @@ def check_budget(messages, model="gpt-4o"):
 messages = [{"role": "user", "content": "Hello " * 10000}]
 budget = check_budget(messages)
 print(f"Tokens: {budget['tokens']}, Limit: {budget['limit']}, OK: {budget['ok']}")
-```
+```text
 
 **Token budget allocation**:
 
@@ -102,7 +103,7 @@ def allocate_budget(system_msg, history, new_input, max_output=4096, model="gpt-
 history = [{"role": "user", "content": "Tell me about AI"}] * 50
 trimmed = allocate_budget("You are helpful.", history, "What is ML?")
 print(f"Original: {len(history)}, Trimmed: {len(trimmed)}")
-```
+```text
 
 ```mermaid
 flowchart TD
@@ -115,7 +116,7 @@ flowchart TD
     F -->|Too Large| H[Trim History]
     H --> I[Budget Per Turn]
     I --> J[Truncated History]
-```
+```text
 
 ---
 
@@ -154,7 +155,7 @@ class SlidingWindowProcessor:
             combined = "\n\n".join(f"Part {i+1}: {r}" for i, r in enumerate(results))
             return self.process_chunk(combined, merge_instruction)
         return results[0]
-```
+```text
 
 **Overlap strategies**:
 
@@ -184,7 +185,7 @@ class OverlapStrategies:
 text = "This is sentence one. " * 100
 chunks = OverlapStrategies.sentence_overlap(text, 10, 3)
 print(f"Generated {len(chunks)} chunks")
-```
+```text
 
 ```mermaid
 flowchart TD
@@ -198,7 +199,7 @@ flowchart TD
     F --> H
     G --> H
     H --> I[Final Output]
-```
+```text
 
 ---
 
@@ -242,7 +243,7 @@ summarizer = ConversationSummarizer(client)
 history = [{"role": "user", "content": f"Msg {i}"} for i in range(50)]
 ctx = summarizer.build_context(history, max_turns=5)
 print(f"Context: {len(ctx)} msgs, Has summary: {'summary' in ctx[0]['content']}")
-```
+```text
 
 **Compression ratios**:
 
@@ -256,7 +257,7 @@ def measure_ratio(original, summary, model="gpt-4o-mini"):
 orig = [{"role": "user", "content": "Hello " * 100}] * 10
 summary = "User greeted repeatedly."
 print(measure_ratio(orig, summary))
-```
+```text
 
 ```mermaid
 flowchart TD
@@ -267,7 +268,7 @@ flowchart TD
     E --> F[Context: Summary + Recent]
     B --> F
     F --> G[LLM]
-```
+```text
 
 ---
 
@@ -319,7 +320,7 @@ msgs = [{"role": "system", "content": "Be helpful."}, {"role": "system", "conten
 msgs.append({"role": "user", "content": "What is AI? " * 5000})
 result = c.compress(msgs)
 print(f"Before: {len(msgs)}, After: {len(result)}")
-```
+```text
 
 ```mermaid
 flowchart LR
@@ -328,7 +329,7 @@ flowchart LR
     C --> D[Truncate Long Items]
     D --> E[Compressed Context]
     E --> F[LLM]
-```
+```text
 
 ---
 
@@ -380,7 +381,7 @@ mem = MemorySystem(client)
 mem.add("My name is Alice", "Nice to meet you, Alice!")
 mem.add("I work at Google", "Great!")
 print(f"Short-term: {len(mem.short_term)} turns, Facts: {mem.long_term.get('facts', 'none')[:80]}")
-```
+```text
 
 **Vector-based memory**:
 
@@ -404,10 +405,10 @@ class VectorMemory:
         top_k = np.argsort(scores)[-k:][::-1]
         return [(self.texts[i], scores[i]) for i in top_k]
 
-# vmem = VectorMemory()
-# vmem.add("User likes Python", np.random.randn(384))
-# result = vmem.search(np.random.randn(384))
-```
+## vmem = VectorMemory()
+## vmem.add("User likes Python", np.random.randn(384))
+## result = vmem.search(np.random.randn(384))
+```text
 
 ```mermaid
 flowchart TD
@@ -424,7 +425,7 @@ flowchart TD
     F --> LT
     LT --> G[Retrieve]
     G --> ST
-```
+```text
 
 ---
 
@@ -469,9 +470,9 @@ class MultiTurnManager:
         total = sum(len(self.enc.encode(m["content"])) for m in self.history)
         return {"messages": len(self.history), "tokens": total}
 
-# mgr = MultiTurnManager(client)
-# print(mgr.chat("Hello!"))
-```
+## mgr = MultiTurnManager(client)
+## print(mgr.chat("Hello!"))
+```text
 
 **History pruning**:
 
@@ -499,7 +500,7 @@ def prune(history, strategy="drop_oldest", max_tokens=8000):
 history = [{"role": "user", "content": f"Msg {i}" * 50} for i in range(20)]
 p = prune(history, "drop_oldest", 3000)
 print(f"Before: {len(history)}, After: {len(p)}")
-```
+```text
 
 ```mermaid
 flowchart TD
@@ -514,7 +515,7 @@ flowchart TD
     H --> I[LLM]
     I --> J[Response]
     J --> K[Add to History]
-```
+```text
 
 ---
 
@@ -553,7 +554,7 @@ class ContextManager {
     return ctx;
   }
 }
-```
+```text
 
 ---
 
@@ -722,6 +723,7 @@ d) 70-80%
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 11-llms-prompt-engineering
@@ -731,6 +733,7 @@ d) 70-80%
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

@@ -11,12 +11,13 @@
 
 ## Introduction
 
-14-fine-tuning-peft is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding instruction tuning is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering instruction tuning.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -49,7 +50,7 @@ flowchart TD
     R --> F --> S & U & A
     H --> U
     S & U & A & H --> T --> L --> E
-```
+```text
 
 ## 6.1 Dataset Formats
 
@@ -142,7 +143,7 @@ ex = InstructionExample(
 for fmt in ["alpaca", "dolly", "custom"]:
     print(f"\n--- {fmt} ---")
     print(converter.convert(ex, fmt)[:100] + "...")
-```
+```text
 
 ### 6.1.2 Dataset Loader
 
@@ -184,7 +185,7 @@ class InstructionDataset:
 ds = InstructionDataset()
 ds.add_batch([InstructionExample(instruction=f"Task {i}", output=f"Answer {i}") for i in range(10)])
 print(f"Dataset stats: {ds.statistics()}")
-```
+```text
 
 ## 6.2 Chat Templates
 
@@ -256,7 +257,7 @@ messages = [
 ]
 print("ChatML:", tpl.format(messages, "chatml")[:80] + "...")
 print("Llama:", tpl.format(messages, "llama")[:80] + "...")
-```
+```text
 
 ### 6.2.2 Multi-Turn Formatter
 
@@ -296,7 +297,7 @@ conversation = [
 ]
 training_ex = formatter.build_training_example(conversation)
 print(f"Training example length: {len(training_ex)} chars")
-```
+```text
 
 ## 6.3 Multi-Turn Conversations
 
@@ -341,7 +342,7 @@ cm.add_turn("user", "How does it work?")
 cm.add_turn("assistant", "It retrieves relevant documents and feeds them to the LLM.")
 context = cm.get_context()
 print(f"Context length: {len(context)} turns")
-```
+```text
 
 ### 6.3.2 Context Window Management
 
@@ -378,7 +379,7 @@ cwm = ContextWindowManager(max_tokens=4096)
 turns = [{"role": "user", "content": f"Message {i}" * 50} for i in range(20)]
 estimator = lambda s: len(s.split()) * 1.3
 print(f"Needs summarization: {cwm.needs_summarization(turns, estimator)}")
-```
+```text
 
 ## 6.4 System Prompts
 
@@ -437,7 +438,7 @@ designer = SystemPromptDesigner()
 for name, prompt in designer.examples().items():
     print(f"\n=== {name} ===")
     print(prompt[:200] + "...")
-```
+```text
 
 ### 6.4.2 System Prompt Evaluation
 
@@ -470,7 +471,7 @@ class SystemPromptEvaluator:
 evaluator = SystemPromptEvaluator()
 prompt = "You are an expert. Answer questions about Python."
 print(f"Prompt evaluation: {evaluator.evaluate(prompt)}")
-```
+```text
 
 ## 6.5 Quality
 
@@ -537,7 +538,7 @@ raw = [
 filter_obj = DatasetQualityFilter()
 clean = filter_obj.filter(raw)
 print(f"Clean dataset: {len(clean)} examples")
-```
+```text
 
 ### 6.5.2 Class Balancing
 
@@ -588,7 +589,7 @@ examples = [InstructionExample(instruction="Write a function", output="def f(): 
 examples += [InstructionExample(instruction="Explain gravity", output="Gravity is...") for _ in range(200)]
 dist = balancer.analyze(examples)
 print(f"Distribution: {dist}")
-```
+```text
 
 ## Summary
 
@@ -792,6 +793,7 @@ Answer: B
 4. Design 5 system prompts for different personas: coding assistant, tutor, translator, creative writer, and therapist. Evaluate each with a scoring rubric.
 
 5. Build a dataset quality pipeline: load 100 instruction examples, deduplicate, filter low-quality (output < 10 words), balance across 5 categories, and report before/after st
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 14-fine-tuning-peft
@@ -801,6 +803,7 @@ Answer: B
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

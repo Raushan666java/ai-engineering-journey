@@ -13,12 +13,13 @@
 
 ## Introduction
 
-19-capstone-projects is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding full ai saas platform is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering full ai saas platform.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -55,7 +56,7 @@ flowchart TB
         C --> G2[Stripe API]
         E --> H[GPU Cluster]
     end
-```
+```text
 
 ## 5.1 SaaS Architecture
 
@@ -148,7 +149,7 @@ class MultiTenantManager:
             tenant.tier = new_tier
             return True
         return False
-```
+```text
 
 ## 5.2 Authentication
 
@@ -272,7 +273,7 @@ class APIKeyAuth:
                 raise HTTPException(403, f"Role '{role}' required")
             return user
         return role_checker
-```
+```text
 
 ## 5.3 Billing Integration
 
@@ -409,7 +410,7 @@ class BillingService:
             "total_requests": usage_data.get(tenant_id, 0),
             "billing_period": "2025-07",
         }
-```
+```text
 
 ## 5.4 Usage Tracking
 
@@ -530,7 +531,7 @@ class RateLimiter:
         if self.tokens.get(key, 0) >= 0:
             return 0
         return -self.tokens.get(key, 0) / self.rate
-```
+```text
 
 ## 5.5 Monitoring & Alerting
 
@@ -663,7 +664,7 @@ class AlertManager:
             print(f"EMAIL: {alert['name']} — {alert['metrics']}")
         else:
             print(f"LOG: {alert['name']} — {alert['metrics']}")
-```
+```text
 
 ## 5.6 Deployment & DevOps
 
@@ -810,7 +811,7 @@ class HealthCheck:
 
     def readiness(self) -> bool:
         return all(self.services.values())
-```
+```text
 
 ## Summary
 
@@ -1100,6 +1101,7 @@ spec:
 9. **API Key Management**: Implement API key generation, validation, rotation, and revocation. Add support for key expiry and IP restriction. Test: create key → use → rotate → old key fails → use new key → revoke → fails.
 
 10. **Full SaaS Launch**: Deploy the complete platform with: custom domain with HTTPS, Stripe billing integration, email notifications (welcome, usage alerts, invoices), admin dashboard for tenant management, and Prometheus + Grafana monitoring. Measure: time to first request, monthly recurring revenue tracking, and customer acquisit
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 19-capstone-projects
@@ -1109,6 +1111,7 @@ spec:
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

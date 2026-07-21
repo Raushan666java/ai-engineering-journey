@@ -13,12 +13,13 @@
 
 ## Introduction
 
-07-system-design is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding cap and consistency is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering cap and consistency.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -44,7 +45,7 @@ flowchart LR
     E --> F[Quorum]
     F --> G[Consensus]
     G --> H[Vector Clocks]
-```
+```text
 
 ## 6.1 CAP Theorem
 
@@ -62,7 +63,7 @@ flowchart TD
     C <--> CP[CP: MongoDB, HBase]
     A <--> AP[AP: Cassandra, DynamoDB]
     C <--> CA[CA: Single-node DB]
-```
+```text
 
 **Key insight**: In a distributed system, partitions are inevitable. You must choose between CP or AP.
 
@@ -73,7 +74,7 @@ Choose Consistency over Availability during a partition.
 **Examples**: MongoDB (default), HBase, Zookeeper, etcd.
 
 ```python
-# CP system behavior
+## CP system behavior
 class CPStorage:
     def write(self, key, value):
         # Require all replicas to acknowledge
@@ -89,7 +90,7 @@ class CPStorage:
     def read(self, key):
         # Read from primary, always returns latest
         return self.primary.read(key)
-```
+```text
 
 **When to use**: Financial transactions, inventory management, any system where stale data causes problems.
 
@@ -100,7 +101,7 @@ Choose Availability over Consistency during a partition.
 **Examples**: Cassandra, DynamoDB, Riak, CouchDB.
 
 ```python
-# AP system behavior
+## AP system behavior
 class APStorage:
     def write(self, key, value):
         # Accept write even if some replicas unreachable
@@ -119,7 +120,7 @@ class APStorage:
             except:
                 continue
         return None  # All replicas down
-```
+```text
 
 **When to use**: Social media feeds, product catalog, user sessions, content delivery.
 
@@ -134,7 +135,7 @@ flowchart LR
     Partition -->|Yes| ChoosePA[AP: Availability]
     Partition -->|No| ChooseLC[Latency: Eventually Consistent]
     Partition -->|No| ChooseCC[Consistency: Strongly Consistent]
-```
+```text
 
 **Examples**:
 - DynamoDB: AP + EL (eventual consistency by default)
@@ -152,7 +153,7 @@ flowchart LR
 | Monotonic | Reads never go back in time | Session data |
 
 ```python
-# Read-your-writes consistency
+## Read-your-writes consistency
 class SessionStore:
     def write_session(self, user_id, data):
         self.primary.write(user_id, data)
@@ -164,7 +165,7 @@ class SessionStore:
             return self.primary.read(user_id)
         # Other reads can use replicas
         return self.replica.read(user_id)
-```
+```text
 
 ## 6.6 Quorum
 
@@ -197,7 +198,7 @@ class QuorumStorage:
         if len(results) < self.R:
             return None
         return max(results, key=lambda x: x["timestamp"])
-```
+```text
 
 ## 6.7 Consensus Algorithms
 
@@ -213,7 +214,7 @@ sequenceDiagram
     Leader->>Follower: Commit
     Follower->>Leader: Ack
     Leader->>Client: Committed
-```
+```text
 
 **Paxos**: Classic consensus (complex, hard to implement). Used in Google Chubby, Spanner.
 
@@ -247,7 +248,7 @@ class VectorClock:
         if all_leq and not greater: return -1
         if all_geq and not less: return 1
         return 0  # Concurrent
-```
+```text
 
 ---
 
@@ -276,7 +277,7 @@ class ConfigurableStorage {
     return isStrong ? "Strong consistency (W + R > N)" : "Eventual consistency";
   }
 }
-```
+```text
 
 ---
 
@@ -468,7 +469,7 @@ class LWWRegister:
         if other.timestamp > self.timestamp:
             self.value = other.value
             self.timestamp = other.timestamp
-```
+```text
 
 **CRDTs (Conflict-Free Replicated Data Types)**:
 
@@ -504,7 +505,7 @@ class PNCounter:
             self.positives[node] = max(self.positives.get(node, 0), count)
         for node, count in other.negatives.items():
             self.negatives[node] = max(self.negatives.get(node, 0), count)
-```
+```text
 
 ## Transaction Isolation Levels
 
@@ -525,7 +526,7 @@ class TransactionManager:
             await self.db.execute(f"SET TRANSACTION ISOLATION LEVEL {isolation_level}")
             for query in queries:
                 await self.db.execute(query["sql"], query.get("params", []))
-```
+```text
 
 ## Distributed Database Comparison
 
@@ -548,6 +549,7 @@ class TransactionManager:
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 07-system-design
@@ -557,6 +559,7 @@ class TransactionManager:
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

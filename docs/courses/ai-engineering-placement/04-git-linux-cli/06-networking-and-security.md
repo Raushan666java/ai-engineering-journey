@@ -19,6 +19,7 @@ DevOps automation — CI/CD, GitHub Actions, pre-commit hooks — ensures code q
 
 - Git basics
 - Linux command line
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -40,7 +41,7 @@ flowchart LR
     D --> E[Automated Testing]
     E --> F[Deployment]
     F --> G[Security]
-```
+```text
 
 ## Theory
 
@@ -58,7 +59,7 @@ flowchart LR
     D --> E[Deploy Staging]
     E --> F[Manual Approval]
     F --> G[Deploy Production]
-```
+```text
 
 | Stage | What Happens | Tools |
 |-------|-------------|-------|
@@ -81,7 +82,7 @@ GitHub Actions is GitHub's built-in CI/CD platform. Workflows run in response to
 **Workflow structure:**
 
 ```yaml
-# .github/workflows/ci.yml
+## .github/workflows/ci.yml
 name: CI Pipeline
 
 on:
@@ -159,12 +160,12 @@ jobs:
         with:
           name: build-output
           path: dist/
-```
+```text
 
 **Key workflow concepts:**
 
 ```yaml
-# Triggers
+## Triggers
 on:
   push:           # When code is pushed
   pull_request:   # When PR is opened/updated
@@ -172,7 +173,7 @@ on:
     - cron: '0 2 * * 1'  # Every Monday at 2 AM
   workflow_dispatch: # Manual trigger
 
-# Matrix strategy — test across multiple versions
+## Matrix strategy — test across multiple versions
 jobs:
   test:
     strategy:
@@ -185,23 +186,23 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-# Conditional steps
+## Conditional steps
 steps:
   - name: Deploy
     if: github.ref == 'refs/heads/main'
     run: npm run deploy
 
-# Caching dependencies
+## Caching dependencies
 - uses: actions/cache@v4
   with:
     path: ~/.npm
     key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-```
+```text
 
 **Reusable workflows:**
 
 ```yaml
-# .github/workflows/reusable-build.yml
+## .github/workflows/reusable-build.yml
 name: Reusable Build
 on:
   workflow_call:
@@ -220,13 +221,13 @@ jobs:
           node-version: ${{ inputs.node-version }}
       - run: npm ci && npm run build
 
-# Caller workflow
+## Caller workflow
 jobs:
   build:
     uses: ./.github/workflows/reusable-build.yml
     with:
       node-version: '20'
-```
+```text
 
 **Complete CI/CD pipeline with deploy:**
 
@@ -280,8 +281,10 @@ jobs:
           echo "Deploying to production..."
         env:
           DEPLOY_KEY: ${{ secrets.PRODUCTION_DEPLOY_KEY }}
-```
+```text
 
+
+## Overview
 ### 06.3 Pre-Commit Hooks
 
 Pre-commit hooks run automatically before each `git commit`, catching issues before they enter the codebase.
@@ -289,16 +292,16 @@ Pre-commit hooks run automatically before each `git commit`, catching issues bef
 **Using the pre-commit framework:**
 
 ```bash
-# Install pre-commit
+## Install pre-commit
 pip install pre-commit
 
-# Create .pre-commit-config.yaml
-# Install hooks
+## Create .pre-commit-config.yaml
+## Install hooks
 pre-commit install
 
-# Run against all files
+## Run against all files
 pre-commit run --all-files
-```
+```text
 
 **.pre-commit-config.yaml:**
 
@@ -351,12 +354,12 @@ repos:
     rev: v8.18.0
     hooks:
       - id: gitleaks
-```
+```text
 
 **Custom pre-commit hooks:**
 
 ```yaml
-# .pre-commit-config.yaml
+## .pre-commit-config.yaml
 repos:
   - repo: local
     hooks:
@@ -379,21 +382,21 @@ repos:
         language: system
         entry: bash -c 'changed=$(git diff --cached --name-only --diff-filter=ACM | grep -E "\.test\.(ts|tsx)$" | head -1); if [ -n "$changed" ]; then npm test -- --changedSince=HEAD; fi'
         pass_filenames: false
-```
+```text
 
 **Husky (JavaScript projects):**
 
 ```bash
-# Install husky
+## Install husky
 npm install husky --save-dev
 npx husky init
 
-# Add pre-commit hook
+## Add pre-commit hook
 echo "npm run lint && npm run test" > .husky/pre-commit
 
-# Add commit-msg hook
+## Add commit-msg hook
 echo "npx commitlint --edit" > .husky/commit-msg
-```
+```text
 
 **commitlint configuration:**
 
@@ -409,8 +412,10 @@ module.exports = {
     'subject-max-length': [2, 'always', 72],
   },
 };
-```
+```text
 
+
+## Overview
 ### 06.4 Automated Testing in CI
 
 **Testing strategy for CI:**
@@ -424,7 +429,7 @@ flowchart TD
     E --> F[Performance Tests]
     F --> G[Security Scan]
     G --> H[Deploy]
-```
+```text
 
 **GitHub Actions test workflow:**
 
@@ -472,12 +477,12 @@ jobs:
         env:
           DATABASE_URL: postgresql://postgres:test@localhost:5432/testdb
           REDIS_URL: redis://localhost:6379
-```
+```text
 
 **Test reporting:**
 
 ```yaml
-# Publish test results
+## Publish test results
 - uses: dorny/test-reporter@v1
   if: always()
   with:
@@ -485,22 +490,24 @@ jobs:
     path: 'test-results/**/*.xml'
     reporter: jest-junit
 
-# Code coverage with threshold
+## Code coverage with threshold
 - name: Check coverage
   run: |
     npx jest --coverage --coverageThreshold='{"global":{"lines":80,"functions":80}}'
-```
+```text
 
+
+## Overview
 ### 06.5 Deployment Automation
 
 **Environment protection rules:**
 
 ```yaml
-# GitHub Settings → Environments → production
-# Configure:
-# - Required reviewers
-# - Wait timer (e.g., 5 minutes)
-# - Deployment branches (only main)
+## GitHub Settings → Environments → production
+## Configure:
+## - Required reviewers
+## - Wait timer (e.g., 5 minutes)
+## - Deployment branches (only main)
 
 jobs:
   deploy:
@@ -514,23 +521,23 @@ jobs:
         run: ./deploy.sh
         env:
           API_KEY: ${{ secrets.API_KEY }}
-```
+```text
 
 **Secrets management:**
 
 ```bash
-# GitHub Secrets (Settings → Secrets → Actions)
-# Store: API keys, deploy tokens, database URLs
-# Reference in workflows: ${{ secrets.SECRET_NAME }}
+## GitHub Secrets (Settings → Secrets → Actions)
+## Store: API keys, deploy tokens, database URLs
+## Reference in workflows: ${{ secrets.SECRET_NAME }}
 
-# ⚠️ Never do this:
+## ⚠️ Never do this:
 echo ${{ secrets.MY_SECRET }}  # Visible in logs
 
-# ✅ Use env to mask secrets:
+## ✅ Use env to mask secrets:
 - run: deploy.sh
   env:
     API_KEY: ${{ secrets.API_KEY }}
-```
+```text
 
 **Blue-green deployment pattern:**
 
@@ -557,7 +564,7 @@ deploy:
       run: |
         # Blue remains available for instant rollback
         echo "Blue available at blue.example.com"
-```
+```text
 
 **Rollback strategy:**
 
@@ -582,23 +589,25 @@ deploy:
       run: |
         kubectl rollout undo deployment/app
         echo "Rolled back to ${{ steps.deploy.outputs.previous_version }}"
-```
+```text
 
+
+## Overview
 ### 06.6 Security & Best Practices
 
 **GitHub Actions security:**
 
 ```yaml
-# Pin actions to specific commits (not tags)
+## Pin actions to specific commits (not tags)
 - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11  # v4.1.1
 
-# Use minimal permissions
+## Use minimal permissions
 permissions:
   contents: read
   pull-requests: write
   packages: write
 
-# Avoid script injection
+## Avoid script injection
 - run: echo "Processing ${{ github.event.issue.title }}"
   # DANGEROUS if title contains shell commands
   # Use env instead:
@@ -606,32 +615,32 @@ permissions:
   env:
     ISSUE_TITLE: ${{ github.event.issue.title }}
 
-# Don't upload artifacts from PRs from forks
+## Don't upload artifacts from PRs from forks
 - uses: actions/upload-artifact@v4
   if: github.event_name != 'pull_request'
-```
+```text
 
 **Supply chain security:**
 
 ```yaml
-# Scan for vulnerabilities
+## Scan for vulnerabilities
 - uses: github/codeql-action/analyze@v3
   with:
     languages: javascript
 
-# Check for secrets in code
+## Check for secrets in code
 - uses: gitleaks/gitleaks-action@v2
   env:
     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-# Verify dependency integrity
+## Verify dependency integrity
 - run: npm ci
   # npm ci uses package-lock.json for deterministic installs
-```
+```text
 
 **Branch protection rules:**
 
-```
+```text
 GitHub Settings → Branches → Add rule:
 ✅ Require pull request reviews (1+ approvals)
 ✅ Require status checks (CI must pass)
@@ -641,7 +650,7 @@ GitHub Settings → Branches → Add rule:
 ✅ Include administrators
 ✅ Allow force pushes: never
 ✅ Allow deletions: never
-```
+```text
 
 **DevOps best practices checklist:**
 
@@ -824,6 +833,7 @@ d) Git creates a backup and proceeds
 ---
 
 > **End of Module 04**: [Back to Module Index →](
+
 ## Revision Notes
 
 - CI: test on every push
@@ -831,6 +841,7 @@ d) Git creates a backup and proceeds
 - GitHub Actions: YAML-based workflows
 - Pre-commit hooks: lint before commit
 - Secrets: never commit, use CI/CD secrets
+
 ## Placement Section
 
 ### Top 10 Interview Questions

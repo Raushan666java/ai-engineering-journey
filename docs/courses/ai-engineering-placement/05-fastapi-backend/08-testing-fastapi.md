@@ -13,12 +13,13 @@
 
 ## Introduction
 
-05-fastapi-backend is a fundamental concept in AI engineering. This chapter covers the core principles, practical implementations, and interview preparation for mastering this topic.
+Understanding testing fastapi is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering testing fastapi.
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -43,20 +44,20 @@ flowchart LR
     E --> F[Fixtures]
     F --> G[Coverage]
     G --> H[CI/CD]
-```
+```text
 
 ## 8.1 TestClient Setup
 
 FastAPI provides TestClient for making HTTP requests to your app without running a server.
 
 ```python
-# requirements-dev.txt
-# pytest
-# httpx
-# pytest-asyncio
-# pytest-cov
+## requirements-dev.txt
+## pytest
+## httpx
+## pytest-asyncio
+## pytest-cov
 
-# tests/conftest.py
+## tests/conftest.py
 import pytest
 from fastapi.testclient import TestClient
 from app.main import app
@@ -65,7 +66,7 @@ from app.main import app
 def client():
     return TestClient(app)
 
-# tests/test_main.py
+## tests/test_main.py
 def test_root_endpoint(client):
     response = client.get("/")
     assert response.status_code == 200
@@ -94,7 +95,7 @@ def test_invalid_email(client):
     assert response.status_code == 422
     errors = response.json()["detail"]
     assert any("email" in str(e["loc"]) for e in errors)
-```
+```text
 
 **Async TestClient**:
 
@@ -112,14 +113,14 @@ async def async_client():
 async def test_async_endpoint(async_client):
     response = await async_client.get("/async-data")
     assert response.status_code == 200
-```
+```text
 
 ## 8.2 Unit Testing
 
 Test pure functions, validators, and model logic in isolation.
 
 ```python
-# app/models/user.py
+## app/models/user.py
 from pydantic import BaseModel, field_validator, EmailStr
 
 class UserCreate(BaseModel):
@@ -138,7 +139,7 @@ class UserCreate(BaseModel):
             raise ValueError("Password must contain a number")
         return v
 
-# tests/test_models.py
+## tests/test_models.py
 import pytest
 from app.models.user import UserCreate
 
@@ -162,8 +163,8 @@ def test_missing_digit():
     with pytest.raises(ValueError, match="number"):
         UserCreate(username="bob", email="bob@example.com", password="NoDigits!")
 
-# Test utility functions
-# app/utils/security.py
+## Test utility functions
+## app/utils/security.py
 from passlib.context import CryptContext
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
@@ -174,14 +175,14 @@ def hash_password(password: str) -> str:
 def verify_password(plain: str, hashed: str) -> bool:
     return pwd_context.verify(plain, hashed)
 
-# tests/test_security.py
+## tests/test_security.py
 def test_password_hash_and_verify():
     password = "SecurePass123!"
     hashed = hash_password(password)
     assert hashed != password
     assert verify_password(password, hashed)
     assert not verify_password("WrongPassword", hashed)
-```
+```text
 
 **Unit test best practices**:
 - Test one thing per test function
@@ -195,7 +196,7 @@ def test_password_hash_and_verify():
 Test the full stack — database, API, and services together.
 
 ```python
-# tests/conftest.py — database fixture
+## tests/conftest.py — database fixture
 import pytest
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -221,7 +222,7 @@ def setup_database():
     yield
     Base.metadata.drop_all(bind=test_engine)
 
-# tests/test_integration.py
+## tests/test_integration.py
 def test_create_and_get_user(client):
     # Create user
     create_resp = client.post("/users", json={
@@ -271,24 +272,24 @@ def test_full_user_workflow(client):
 
     delete_resp = client.delete("/users/me", headers=headers)
     assert delete_resp.status_code == 204
-```
+```text
 
 ## 8.4 Dependency Overrides
 
 Mock external services by overriding FastAPI dependencies.
 
 ```python
-# tests/conftest.py — mock email service
+## tests/conftest.py — mock email service
 from app.dependencies import send_email
 
-# Mock dependency
+## Mock dependency
 async def mock_send_email(to: str, subject: str, body: str):
     print(f"Mock email sent to {to}: {subject}")
     return {"status": "sent"}
 
 app.dependency_overrides[send_email] = mock_send_email
 
-# Mock authentication
+## Mock authentication
 from app.dependencies import get_current_user
 
 mock_user = {"id": 1, "username": "testuser", "role": "admin"}
@@ -298,13 +299,13 @@ async def override_get_current_user():
 
 app.dependency_overrides[get_current_user] = override_get_current_user
 
-# Test with mocked auth
+## Test with mocked auth
 def test_protected_endpoint_with_mock(client):
     response = client.get("/admin/dashboard")
     assert response.status_code == 200
     assert response.json()["user"] == mock_user
 
-# Mock HTTPX external API calls
+## Mock HTTPX external API calls
 from unittest.mock import patch, AsyncMock
 
 @patch("httpx.AsyncClient.get")
@@ -316,12 +317,12 @@ async def test_external_api_call(mock_get):
         response = await client.get("/external-data")
         assert response.status_code == 200
 
-# Clear overrides after tests
+## Clear overrides after tests
 @pytest.fixture(autouse=True)
 def clear_overrides():
     yield
     app.dependency_overrides.clear()
-```
+```text
 
 **Mocking strategies**:
 
@@ -339,7 +340,7 @@ def clear_overrides():
 import pytest
 from httpx import ASGITransport, AsyncClient
 
-# Async test configuration
+## Async test configuration
 @pytest.mark.asyncio
 async def test_async_create_user():
     transport = ASGITransport(app=app)
@@ -349,7 +350,7 @@ async def test_async_create_user():
         })
         assert response.status_code == 201
 
-# Testing WebSocket endpoints
+## Testing WebSocket endpoints
 def test_websocket():
     with TestClient(app) as client:
         with client.websocket_connect("/ws") as websocket:
@@ -357,7 +358,7 @@ def test_websocket():
             data = websocket.receive_text()
             assert data == "Echo: Hello!"
 
-# Testing background tasks
+## Testing background tasks
 from unittest.mock import patch
 
 def test_background_task_execution(client):
@@ -368,7 +369,7 @@ def test_background_task_execution(client):
         assert response.status_code == 201
         mock_task.assert_called_once()
 
-# Testing async generators (database sessions)
+## Testing async generators (database sessions)
 @pytest.mark.asyncio
 async def test_generator_dependency():
     async def mock_get_db():
@@ -378,12 +379,12 @@ async def test_generator_dependency():
     async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as client:
         response = await client.get("/users")
         assert response.status_code == 200
-```
+```text
 
 ## 8.6 Test Fixtures
 
 ```python
-# tests/factories.py — test data factories
+## tests/factories.py — test data factories
 import factory
 from app.models.user import UserCreate
 
@@ -396,7 +397,7 @@ class UserFactory(factory.Factory):
     password = "SecurePass1"
     full_name = factory.Faker("name")
 
-# tests/conftest.py — fixtures
+## tests/conftest.py — fixtures
 @pytest.fixture
 def sample_user():
     return UserFactory()
@@ -419,7 +420,7 @@ def auth_token(client, sample_user):
 def auth_headers(auth_token):
     return {"Authorization": f"Bearer {auth_token}"}
 
-# Using fixtures
+## Using fixtures
 def test_create_post(client, auth_headers):
     response = client.post("/posts", json={
         "title": "Test Post",
@@ -430,15 +431,15 @@ def test_create_post(client, auth_headers):
 def test_list_posts_with_auth(client, auth_headers):
     response = client.get("/posts", headers=auth_headers)
     assert response.status_code == 200
-```
+```text
 
 ## 8.7 Test Coverage
 
 ```python
-# Run coverage
-# pytest --cov=app tests/ --cov-report=html --cov-report=term-missing
+## Run coverage
+## pytest --cov=app tests/ --cov-report=html --cov-report=term-missing
 
-# .coveragerc
+## .coveragerc
 [run]
 source = app
 omit = */migrations/*,*/tests/*
@@ -451,12 +452,12 @@ exclude_lines =
     if __name__ == .__main__.:
     pass
 
-# Coverage targets
-# Minimum: 80% line coverage
-# Critical paths: 100%
-# New code: 90%+
+## Coverage targets
+## Minimum: 80% line coverage
+## Critical paths: 100%
+## New code: 90%+
 
-# tests/test_coverage.py
+## tests/test_coverage.py
 def test_all_endpoints_have_tests(client):
     """Check that all registered routes have at least one test."""
     routes = [route.path for route in app.routes if hasattr(route, "methods")]
@@ -464,7 +465,7 @@ def test_all_endpoints_have_tests(client):
     tested_routes = extract_tested_routes()
     untested = set(routes) - set(tested_routes)
     assert len(untested) == 0, f"Untested routes: {untested}"
-```
+```text
 
 **Coverage best practices**:
 - Aim for 80%+ coverage, not 100%
@@ -476,7 +477,7 @@ def test_all_endpoints_have_tests(client):
 ## 8.8 CI/CD Testing
 
 ```yaml
-# .github/workflows/test.yml
+## .github/workflows/test.yml
 name: Test
 on: [push, pull_request]
 
@@ -515,10 +516,10 @@ jobs:
           pytest tests/ --cov=app/ --cov-report=xml
       - name: Upload coverage
         uses: codecov/codecov-action@v3
-```
+```text
 
 ```yaml
-# pre-commit config
+## pre-commit config
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.5.0
@@ -537,7 +538,7 @@ repos:
         language: system
         pass_filenames: false
         always_run: true
-```
+```text
 
 ---
 
@@ -567,7 +568,7 @@ describe("Users API", () => {
 vi.mock("../services/email", () => ({
   sendEmail: vi.fn().mockResolvedValue({ status: "sent" }),
 }));
-```
+```text
 
 ---
 
@@ -737,6 +738,7 @@ d) pytest-measure
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
 5. Not practicing enough problems to build pattern recognition
+
 ## Revision Notes
 
 - Key concept 1: Core principle of 05-fastapi-backend
@@ -746,6 +748,7 @@ d) pytest-measure
 - Key concept 5: Common interview pattern
 - Key concept 6: Edge cases to handle
 - Key concept 7: Related concepts for deeper understanding
+
 ## Placement Section
 
 ### Top 10 Interview Questions

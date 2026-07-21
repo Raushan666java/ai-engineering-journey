@@ -546,64 +546,62 @@ Operating systems knowledge separates engineers who can diagnose production issu
 
 ## Exercises
 
+1. Write a script that creates two CPU-bound processes with different nice values and measures their relative throughput.
+2. Implement a NUMA-aware memory allocator that allocates from the local NUMA node and falls back to remote.
+3. Build a container simulator with cgroup-like CPU and memory enforcement, then run competing workloads to observe throttling.
+4. Measure the throughput difference between blocking and async I/O for 1000 simulated 1KB file reads.
 
 ## Common Mistakes
 
-1. Not understanding the fundamental concepts before applying them
-2. Skipping edge cases in implementation
-3. Not analyzing time/space complexity
-4. Forgetting to handle null/empty inputs
-5. Not practicing enough problems to build pattern recognition1. Write a script that creates two CPU-bound processes with different nice values and measures their relative throughput.
-
-2. Implement a NUMA-aware memory allocator that allocates from the local NUMA node and falls back to remote.
-
-3. Build a container simulator with cgroup-like CPU and memory enforcement, then run competing workloads to observe throttling.
-
-4. Measure the throughput difference between blocking and async I/O for 1000 simulated 1KB
+1. Assuming processes and threads are interchangeable without considering shared memory and context switching costs
+2. Ignoring NUMA topology when optimizing memory-intensive AI workloads
+3. Not using epoll/kqueue for high-concurrency network servers
+4. Over-provisioning CPU for I/O-bound workloads instead of optimizing the I/O path
+5. Forgetting to set process priorities (nice values) for inference vs training workloads
 
 ## Revision Notes
 
-- Key concept 1: Core principle of 00-core-computer-science
-- Key concept 2: Common implementation pattern
-- Key concept 3: Time/space complexity to remember
-- Key concept 4: When to apply this technique
-- Key concept 5: Common interview pattern
-- Key concept 6: Edge cases to handle
-- Key concept 7: Related concepts for deeper understanding
+- **Process vs Thread**: Process = isolated memory space, Thread = shared memory within process
+- **Context Switching**: Cost of saving/restoring process state; minimize with async I/O and thread pools
+- **Scheduling**: CFS (Completely Fair Scheduler) uses virtual runtime; nice values affect CPU time proportionally
+- **Memory Management**: Virtual memory, page faults, NUMA-aware allocation for AI workloads
+- **I/O Models**: Blocking, non-blocking, select/poll/epoll for high-concurrency servers
+- **Linux Namespaces**: Isolation mechanism underlying containers (network, PID, mount, user)
+- **cgroups**: Control groups for limiting CPU, memory, and I/O per process group
 
 ## Placement Section
 
 ### Top 10 Interview Questions
 
 #### Google Style
-1. Explain the time and space trade-offs of 00-core-computer-science. When would you choose one approach over another?
-2. Design a system that efficiently handles 00-core-computer-science at scale (millions of requests/second).
+1. How would you design an OS-aware scheduler for AI inference workloads that need low latency and high throughput?
+2. Explain virtual memory and how it affects AI model loading. What happens when a model doesn't fit in RAM?
 
 #### Amazon Style
-1. Tell me about a time you had to optimize a system related to 00-core-computer-science. What was your approach and what was the result?
-2. How would you explain 00-core-computer-science to a non-technical stakeholder?
+1. Tell me about a time you optimized system performance by tuning OS-level settings. What did you change and why?
+2. How would you explain process scheduling to a non-technical product manager?
 
 #### Microsoft Style
-1. How does 00-core-computer-science integrate with enterprise systems and cloud architectures?
-2. What are the security implications of 00-core-computer-science?
+1. How would you implement containerization for AI models with strict CPU and memory requirements?
+2. What are the security implications of sharing kernel resources in containerized AI deployments?
 
 #### NVIDIA Style
-1. How would you optimize 00-core-computer-science for GPU-accelerated computing?
-2. What parallel processing patterns apply to 00-core-computer-science?
+1. How would you optimize memory allocation for GPU-accelerated workloads on NUMA systems?
+2. What OS-level optimizations are critical for multi-GPU training performance?
 
 #### AI Startup Style
-1. How would you implement 00-core-computer-science in a cost-effective, scalable way for a startup?
-2. What's the fastest way to prototype a solution using 00-core-computer-science?
+1. How would you set up process management for an AI inference service running on a single server?
+2. What's the simplest way to monitor and limit resource usage for multiple AI models on one machine?
 
 ### Resume Tips
-- **Technical Skills**: List 00-core-computer-science under relevant technical skills
-- **Project Description**: "Implemented 00-core-computer-science to [specific outcome], reducing [metric] by [X]%"
-- **Keywords**: Include 00-core-computer-science in your skills section for ATS optimization
+- **Technical Skills**: List "Linux", "Process Management", "Memory Optimization", "Containerization" under relevant skills
+- **Project Description**: "Optimized OS-level settings for AI inference, reducing latency by 30% through NUMA-aware allocation"
+- **Keywords**: Include "Linux", "process scheduling", "memory management", "containers", "cgroups" for ATS
 
 ### Interview Day Checklist
-- [ ] Review core concepts of 00-core-computer-science
-- [ ] Practice 3-5 problems related to 00-core-computer-science
-- [ ] Prepare 2 real-world examples of using 00-core-computer-science
-- [ ] Know the time/space complexity of common 00-core-computer-science operations
-- [ ] Have questions ready about how the company uses 00-core-computer-science reads.
+- [ ] Review process vs thread trade-offs with AI workload examples
+- [ ] Practice explaining virtual memory and page fault handling
+- [ ] Prepare examples of OS-level optimizations you've implemented
+- [ ] Know the difference between blocking and async I/O with use cases
+- [ ] Have questions about the company's infrastructure and deployment model
 

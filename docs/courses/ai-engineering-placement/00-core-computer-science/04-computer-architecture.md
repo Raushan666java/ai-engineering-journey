@@ -540,64 +540,62 @@ Computer architecture knowledge directly translates to faster ML code. The roofl
 
 ## Exercises
 
+1. Write a cache simulator that supports different associativities (direct-mapped, 2-way, 4-way, fully associative) and compare miss rates for a matrix transpose access pattern.
+2. Use the RooflineAnalyzer to classify three kernel profiles: an embedding lookup (few FLOPs, many bytes), a matrix multiply (many FLOPs, moderate bytes), and a softmax (few FLOPs, few bytes).
+3. Implement cache-blocked matrix multiplication (tiling) and count cache misses vs the naive triple loop.
+4. Measure the impact of memory access stride on throughput by simulating sequential vs strided access patterns.
 
 ## Common Mistakes
 
-1. Not understanding the fundamental concepts before applying them
-2. Skipping edge cases in implementation
-3. Not analyzing time/space complexity
-4. Forgetting to handle null/empty inputs
-5. Not practicing enough problems to build pattern recognition1. Write a cache simulator that supports different associativities (direct-mapped, 2-way, 4-way, fully associative) and compare miss rates for a matrix transpose access pattern.
-
-2. Use the RooflineAnalyzer to classify three kernel profiles: an embedding lookup (few FLOPs, many bytes), a matrix multiply (many FLOPs, moderate bytes), and a softmax (few FLOPs, few bytes).
-
-3. Implement cache-blocked matrix multiplication (tiling) and count cache misses vs the naive triple loop.
-
-4. Measure the impact of memory access stride on throughput by simulating sequential vs strided access pat
+1. Ignoring cache locality when optimizing AI kernel performance
+2. Not understanding memory alignment and its impact on SIMD/GPU throughput
+3. Over-optimizing compute when the bottleneck is memory bandwidth (memory-bound vs compute-bound)
+4. Not considering NUMA effects when deploying multi-GPU training jobs
+5. Using scalar operations when vectorized SIMD instructions would be 10x faster
 
 ## Revision Notes
 
-- Key concept 1: Core principle of 00-core-computer-science
-- Key concept 2: Common implementation pattern
-- Key concept 3: Time/space complexity to remember
-- Key concept 4: When to apply this technique
-- Key concept 5: Common interview pattern
-- Key concept 6: Edge cases to handle
-- Key concept 7: Related concepts for deeper understanding
+- **Cache Hierarchy**: L1 (fast, small) → L2 (medium) → L3 (large, shared) → main RAM (slow, huge)
+- **Cache Miss Types**: Cold (first access), conflict (same set), capacity (too large for cache)
+- **Memory Hierarchy**: Registers → Cache → RAM → SSD → Network; each level 10-100x slower
+- **SIMD Instructions**: AVX-512 on CPU, Tensor Cores on GPU — process multiple data elements per instruction
+- **Roofline Model**: Classify kernels as compute-bound or memory-bound based on arithmetic intensity
+- **GPU Architecture**: SMs (Streaming Multiprocessors) contain CUDA cores, shared memory, registers
+- **Warp Execution**: 32 threads execute in lockstep; divergence within a warp wastes cycles
 
 ## Placement Section
 
 ### Top 10 Interview Questions
 
 #### Google Style
-1. Explain the time and space trade-offs of 00-core-computer-science. When would you choose one approach over another?
-2. Design a system that efficiently handles 00-core-computer-science at scale (millions of requests/second).
+1. Design a cache-optimized data structure for storing 100M embedding vectors with sub-millisecond lookup. How would you think about cache lines and prefetching?
+2. Explain the Roofline model. How would you determine if an AI kernel is compute-bound or memory-bound?
 
 #### Amazon Style
-1. Tell me about a time you had to optimize a system related to 00-core-computer-science. What was your approach and what was the result?
-2. How would you explain 00-core-computer-science to a non-technical stakeholder?
+1. Tell me about a time you optimized memory access patterns for better performance. What techniques did you use?
+2. How would you explain cache locality to a non-technical product manager?
 
 #### Microsoft Style
-1. How does 00-core-computer-science integrate with enterprise systems and cloud architectures?
-2. What are the security implications of 00-core-computer-science?
+1. How would you design a CPU cache-aware layout for a large language model's key-value cache?
+2. What are the security implications of cache side-channel attacks on shared AI infrastructure?
 
 #### NVIDIA Style
-1. How would you optimize 00-core-computer-science for GPU-accelerated computing?
-2. What parallel processing patterns apply to 00-core-computer-science?
+1. How would you optimize GPU memory access patterns for a transformer attention kernel?
+2. Explain warp divergence and how to avoid it in AI inference kernels.
 
 #### AI Startup Style
-1. How would you implement 00-core-computer-science in a cost-effective, scalable way for a startup?
-2. What's the fastest way to prototype a solution using 00-core-computer-science?
+1. How would you choose between CPU and GPU inference based on model size and latency requirements?
+2. What's the simplest way to profile and optimize memory usage for an AI model on consumer hardware?
 
 ### Resume Tips
-- **Technical Skills**: List 00-core-computer-science under relevant technical skills
-- **Project Description**: "Implemented 00-core-computer-science to [specific outcome], reducing [metric] by [X]%"
-- **Keywords**: Include 00-core-computer-science in your skills section for ATS optimization
+- **Technical Skills**: List "CPU Architecture", "GPU Computing", "Cache Optimization", "SIMD" under relevant skills
+- **Project Description**: "Optimized AI kernel memory access patterns, achieving 3x throughput improvement through cache-blocking"
+- **Keywords**: Include "cache optimization", "memory hierarchy", "GPU architecture", "SIMD", "roofline model" for ATS
 
 ### Interview Day Checklist
-- [ ] Review core concepts of 00-core-computer-science
-- [ ] Practice 3-5 problems related to 00-core-computer-science
-- [ ] Prepare 2 real-world examples of using 00-core-computer-science
-- [ ] Know the time/space complexity of common 00-core-computer-science operations
-- [ ] Have questions ready about how the company uses 00-core-computer-scienceterns.
+- [ ] Review cache hierarchy and miss types with AI examples
+- [ ] Practice classifying kernels as compute-bound vs memory-bound
+- [ ] Prepare examples of memory optimization you've implemented
+- [ ] Know the difference between CPU SIMD and GPU Tensor Core operations
+- [ ] Have questions about the company's hardware and inference infrastructure
 

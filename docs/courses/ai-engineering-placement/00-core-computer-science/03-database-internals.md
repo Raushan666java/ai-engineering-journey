@@ -531,64 +531,62 @@ Database internals knowledge is essential for building scalable AI infrastructur
 
 ## Exercises
 
+1. Implement a bloom filter for LSM-tree SSTable lookups and measure the false positive rate.
+2. Extend the BTreeIndex to support range scan (return all keys between low and high).
+3. Build a cost-based query planner that chooses between hash join and nested loop join given table sizes and sort status.
+4. Simulate a Raft cluster of 5 nodes with a random network partition and verify availability and consistency.
 
 ## Common Mistakes
 
-1. Not understanding the fundamental concepts before applying them
-2. Skipping edge cases in implementation
-3. Not analyzing time/space complexity
-4. Forgetting to handle null/empty inputs
-5. Not practicing enough problems to build pattern recognition1. Implement a bloom filter for LSM-tree SSTable lookups and measure the false positive rate.
-
-2. Extend the BTreeIndex to support range scan (return all keys between low and high).
-
-3. Build a cost-based query planner that chooses between hash join and nested loop join given table sizes and sort status.
-
-4. Simulate a Raft cluster of 5 nodes with a random network partition and verify availability and consis
+1. Choosing the wrong index type (B-tree vs hash vs LSM) for the query pattern
+2. Not understanding transaction isolation levels and their impact on concurrency
+3. Ignoring write amplification in LSM-trees for write-heavy AI workloads
+4. Over-normalizing schema for AI feature stores that need fast reads
+5. Not considering replication lag in distributed vector databases
 
 ## Revision Notes
 
-- Key concept 1: Core principle of 00-core-computer-science
-- Key concept 2: Common implementation pattern
-- Key concept 3: Time/space complexity to remember
-- Key concept 4: When to apply this technique
-- Key concept 5: Common interview pattern
-- Key concept 6: Edge cases to handle
-- Key concept 7: Related concepts for deeper understanding
+- **B-Tree vs LSM-Tree**: B-tree for reads, LSM-tree for writes; both used in vector databases
+- **ACID Properties**: Atomicity, Consistency, Isolation, Durability — foundation of reliable transactions
+- **CAP Theorem**: Consistency, Availability, Partition tolerance — choose two; most AI systems choose AP
+- **Indexing**: B-tree, hash, LSM-tree — choose based on read/write ratio and query patterns
+- **Query Planning**: Cost-based optimization chooses between join algorithms and scan orders
+- **Replication**: Leader-follower for reads, multi-leader for writes, Raft/Paxos for consensus
+- **Vector Database Internals**: HNSW, IVF, PQ — approximate nearest neighbor search structures
 
 ## Placement Section
 
 ### Top 10 Interview Questions
 
 #### Google Style
-1. Explain the time and space trade-offs of 00-core-computer-science. When would you choose one approach over another?
-2. Design a system that efficiently handles 00-core-computer-science at scale (millions of requests/second).
+1. Design a distributed vector database that supports 100M embeddings with sub-millisecond query latency. How would you handle sharding and replication?
+2. Explain the trade-offs between B-tree and LSM-tree indexes for an AI feature store with mixed read/write patterns.
 
 #### Amazon Style
-1. Tell me about a time you had to optimize a system related to 00-core-computer-science. What was your approach and what was the result?
-2. How would you explain 00-core-computer-science to a non-technical stakeholder?
+1. Tell me about a time you optimized database performance for an AI workload. What indexes or schema changes did you make?
+2. How would you explain database replication to a non-technical product manager?
 
 #### Microsoft Style
-1. How does 00-core-computer-science integrate with enterprise systems and cloud architectures?
-2. What are the security implications of 00-core-computer-science?
+1. How would you design a database schema for an LLM training pipeline that tracks experiments, models, and metrics?
+2. What are the security implications of storing AI model embeddings in a shared database?
 
 #### NVIDIA Style
-1. How would you optimize 00-core-computer-science for GPU-accelerated computing?
-2. What parallel processing patterns apply to 00-core-computer-science?
+1. How would you optimize database queries for GPU-accelerated feature engineering pipelines?
+2. What database patterns are critical for high-throughput model serving with 10K QPS?
 
 #### AI Startup Style
-1. How would you implement 00-core-computer-science in a cost-effective, scalable way for a startup?
-2. What's the fastest way to prototype a solution using 00-core-computer-science?
+1. How would you choose between PostgreSQL, MongoDB, and a vector database for an AI startup's data layer?
+2. What's the simplest database architecture for storing and querying 10M embeddings?
 
 ### Resume Tips
-- **Technical Skills**: List 00-core-computer-science under relevant technical skills
-- **Project Description**: "Implemented 00-core-computer-science to [specific outcome], reducing [metric] by [X]%"
-- **Keywords**: Include 00-core-computer-science in your skills section for ATS optimization
+- **Technical Skills**: List "PostgreSQL", "Database Design", "Indexing", "Query Optimization" under relevant skills
+- **Project Description**: "Optimized database queries for AI inference, reducing p99 latency by 60% through index tuning and query planning"
+- **Keywords**: Include "database", "SQL", "indexing", "query optimization", "replication" for ATS
 
 ### Interview Day Checklist
-- [ ] Review core concepts of 00-core-computer-science
-- [ ] Practice 3-5 problems related to 00-core-computer-science
-- [ ] Prepare 2 real-world examples of using 00-core-computer-science
-- [ ] Know the time/space complexity of common 00-core-computer-science operations
-- [ ] Have questions ready about how the company uses 00-core-computer-sciencetency.
+- [ ] Review B-tree vs LSM-tree trade-offs with use cases
+- [ ] Practice designing database schemas for AI workloads
+- [ ] Prepare examples of database optimization you've implemented
+- [ ] Know the CAP theorem and its practical implications
+- [ ] Have questions about the company's database architecture and scale
 

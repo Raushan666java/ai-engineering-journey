@@ -61,7 +61,7 @@ classDiagram
     InferenceStrategy <|.. AnthropicStrategy
     InferenceStrategy <|.. LocalStrategy
     InferenceClient --> InferenceStrategy
-```text
+```
 
 Observer Pattern: One-to-many dependency where changes in one object notify all dependents. Useful for ML pipeline monitoring — data loading progress, training metrics, log streaming.
 
@@ -102,7 +102,7 @@ classDiagram
     CachingDecorator --> LLMService
     RateLimitDecorator --> LLMService
     LoggingDecorator --> LLMService
-```text
+```
 
 Adapter Pattern: Converts one interface to another. Wrap OpenAI SDK, Anthropic SDK, and HuggingFace pipelines behind a common LLMProvider interface.
 
@@ -126,7 +126,7 @@ For AI engineering: use OOP for the architecture (interfaces, dependency injecti
 
 ### Strategy Pattern: Multiple LLM Providers
 
-`	ypescript
+```typescript
 interface LLMProvider {
     generate(prompt: string, options?: Record<string, unknown>): Promise<string>
 }
@@ -168,7 +168,7 @@ class InferenceClient {
 
 ### Decorator Pattern: Caching, Rate Limiting, Logging
 
-`	ypescript
+```typescript
 class BasicLLMService implements LLMProvider {
     async generate(prompt: string): Promise<string> {
         return Generated response for:
@@ -242,7 +242,7 @@ class LoggingDecorator implements LLMProvider {
 
 ### Adapter Pattern: Unified LLM Interface
 
-`	ypescript
+```typescript
 interface ILLMProvider {
     complete(messages: { role: string; content: string }[]): Promise<string>
     embedding(text: string): Promise<number[]>
@@ -299,7 +299,7 @@ class HuggingFaceAdapter implements ILLMProvider {
 
 ### Factory and Template Method
 
-`	ypescript
+```typescript
 abstract class TrainingPipeline {
     async run(data: unknown[]): Promise<void> {
         const prepared = this.preprocess(data)
@@ -343,7 +343,7 @@ class ClassificationPipeline extends TrainingPipeline {
 
 Violation of Single Responsibility and Dependency Inversion:
 
-`	ypescript
+```typescript
 class MonolithicService {
     private openaiKey: string
 
@@ -379,7 +379,7 @@ class MonolithicService {
 
 After refactoring with Dependency Inversion and composition:
 
-`	ypescript
+```typescript
 interface Cache {
     get(key: string): string | null
     set(key: string, value: string, ttlMs: number): void
@@ -467,7 +467,7 @@ class SlackNotifierObserver implements Observer {
         }
     }
 }
-```text
+```
 
 ### Command Pattern for Inference Queuing
 
@@ -526,7 +526,7 @@ class CommandQueue {
         this.processNext()
     }
 }
-```text
+```
 
 ### Clean Architecture for RAG Systems
 
@@ -565,7 +565,7 @@ mock.setResponse("Hello", "Hi there!")
 const client = new InferenceClient(mock)
 const result = await client.generate("Hello")
 // result === "Hi there!"
-```text
+```
 
 ## Summary
 
@@ -621,62 +621,63 @@ SOLID principles and design patterns are battle-tested approaches to writing mai
 ## Exercises
 
 
+## Exercises
+
+1. Implement a CircuitBreakerDecorator that wraps an LLMProvider and trips after N consecutive failures, with a configurable reset timeout.
+2. Build a ProviderFactory that reads a config file and returns the correct LLMProvider implementation with all decorators applied.
+3. Refactor a monolithic RAG pipeline into clean architecture layers: entities (Document, Chunk, Query), use cases (IngestUseCase, QueryUseCase), and interface adapters (VectorStoreAdapter, LLMAdapter).
+4. Implement the observer pattern for a training pipeline that notifies multiple listeners (console logger, metrics dashboard, Slack notifier) on epoch completion.
+
 ## Common Mistakes
 
-1. Not understanding the fundamental concepts before applying them
-2. Skipping edge cases in implementation
-3. Not analyzing time/space complexity
-4. Forgetting to handle null/empty inputs
-5. Not practicing enough problems to build pattern recognition1. Implement a CircuitBreakerDecorator that wraps an LLMProvider and trips after N consecutive failures, with a configurable reset timeout.
-
-2. Build a ProviderFactory that reads a config file and returns the correct LLMProvider implementation with all decorators applied.
-
-3. Refactor a monolithic RAG pipeline into clean architecture layers: entities (Document, Chunk, Query), use cases (IngestUseCase, QueryUseCase), and interface adapters (VectorStoreAdapter, LLMAdapter).
-
-4. Implement the observer pattern for a training pipeline that notifies multiple listeners (console logger, metrics dashboard, Slack notifier) on epoch com
+1. Using inheritance when composition would be simpler and more flexible
+2. Creating God classes that handle multiple responsibilities (inference + caching + logging)
+3. Tight coupling to specific LLM provider SDKs instead of coding to interfaces
+4. Not applying the dependency inversion principle — high-level modules depending on low-level modules
+5. Over-engineering with patterns when simple functions would suffice
 
 ## Revision Notes
 
-- Key concept 1: Core principle of 00-core-computer-science
-- Key concept 2: Common implementation pattern
-- Key concept 3: Time/space complexity to remember
-- Key concept 4: When to apply this technique
-- Key concept 5: Common interview pattern
-- Key concept 6: Edge cases to handle
-- Key concept 7: Related concepts for deeper understanding
+- **Strategy Pattern**: Define a family of algorithms (LLM providers, vector stores) and make them interchangeable at runtime
+- **Decorator Pattern**: Add cross-cutting concerns (caching, rate limiting, logging) without modifying the core class
+- **Adapter Pattern**: Unify different SDK interfaces behind a common interface for swappable implementations
+- **Clean Architecture**: Source code dependencies point inwards — entities → use cases → adapters → frameworks
+- **SOLID Principles**: Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion
+- **Composition vs Inheritance**: Prefer composition (has-a) over inheritance (is-a) for flexible, testable code
+- **Testing with Mocks**: Use interface-based mocks to test without real API calls
 
 ## Placement Section
 
 ### Top 10 Interview Questions
 
 #### Google Style
-1. Explain the time and space trade-offs of 00-core-computer-science. When would you choose one approach over another?
-2. Design a system that efficiently handles 00-core-computer-science at scale (millions of requests/second).
+1. Design a model serving system that supports switching between OpenAI, Anthropic, and local models without code changes. Which patterns would you use?
+2. You have a monolithic ML pipeline that handles data loading, training, evaluation, and deployment. How would you refactor it using clean architecture principles?
 
 #### Amazon Style
-1. Tell me about a time you had to optimize a system related to 00-core-computer-science. What was your approach and what was the result?
-2. How would you explain 00-core-computer-science to a non-technical stakeholder?
+1. Tell me about a time you had to refactor a tightly coupled system. How did you apply design patterns to improve it?
+2. How would you explain the Strategy pattern to a non-technical product manager?
 
 #### Microsoft Style
-1. How does 00-core-computer-science integrate with enterprise systems and cloud architectures?
-2. What are the security implications of 00-core-computer-science?
+1. How would you implement a plugin architecture for LLM providers that allows third-party extensions?
+2. What are the trade-offs between using Singleton pattern vs dependency injection for configuration management?
 
 #### NVIDIA Style
-1. How would you optimize 00-core-computer-science for GPU-accelerated computing?
-2. What parallel processing patterns apply to 00-core-computer-science?
+1. How would you apply the Decorator pattern to add GPU memory monitoring to an inference service?
+2. Design a pipeline pattern for multi-stage GPU-accelerated data processing.
 
 #### AI Startup Style
-1. How would you implement 00-core-computer-science in a cost-effective, scalable way for a startup?
-2. What's the fastest way to prototype a solution using 00-core-computer-science?
+1. How would you build a model provider abstraction that lets you switch from OpenAI to a cheaper provider with minimal code changes?
+2. What's the simplest architecture for a startup to support multiple LLM backends?
 
 ### Resume Tips
-- **Technical Skills**: List 00-core-computer-science under relevant technical skills
-- **Project Description**: "Implemented 00-core-computer-science to [specific outcome], reducing [metric] by [X]%"
-- **Keywords**: Include 00-core-computer-science in your skills section for ATS optimization
+- **Technical Skills**: List "Design Patterns", "SOLID Principles", "Clean Architecture", "TypeScript" under relevant skills
+- **Project Description**: "Applied Strategy and Decorator patterns to build a multi-provider LLM service, enabling provider switching in 1 line of code"
+- **Keywords**: Include "design patterns", "SOLID", "clean architecture", "dependency injection" for ATS optimization
 
 ### Interview Day Checklist
-- [ ] Review core concepts of 00-core-computer-science
-- [ ] Practice 3-5 problems related to 00-core-computer-science
-- [ ] Prepare 2 real-world examples of using 00-core-computer-science
-- [ ] Know the time/space complexity of common 00-core-computer-science operations
-- [ ] Have questions ready about how the company uses 00-core-computer-sciencepletion.
+- [ ] Review SOLID principles with real-world AI examples
+- [ ] Practice implementing Strategy, Decorator, and Adapter patterns from scratch
+- [ ] Prepare 2 examples of refactoring monolithic code using design patterns
+- [ ] Know when to use composition vs inheritance
+- [ ] Have questions ready about the company's architecture and design patterns used

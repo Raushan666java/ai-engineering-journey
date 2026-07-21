@@ -589,36 +589,36 @@ Computer networks form the backbone of every distributed AI system. The key ment
 ### Top 10 Interview Questions
 
 #### Google Style
-1. Explain the time and space trade-offs of 00-core-computer-science. When would you choose one approach over another?
-2. Design a system that efficiently handles 00-core-computer-science at scale (millions of requests/second).
+1. Design a URL shortener like bit.ly that handles billions of URLs. How do DNS, load balancing, and CDN fit into the architecture?
+2. Explain the difference between TCP and UDP. When would you choose each for an AI inference service?
 
 #### Amazon Style
-1. Tell me about a time you had to optimize a system related to 00-core-computer-science. What was your approach and what was the result?
-2. How would you explain 00-core-computer-science to a non-technical stakeholder?
+1. Tell me about a time you debugged a network connectivity issue. What tools and techniques did you use?
+2. How would you explain the OSI model to a non-technical stakeholder?
 
 #### Microsoft Style
-1. How does 00-core-computer-science integrate with enterprise systems and cloud architectures?
-2. What are the security implications of 00-core-computer-science?
+1. How would you design a globally distributed API with low latency? What networking concepts apply?
+2. What are the security implications of running AI inference over public networks?
 
 #### NVIDIA Style
-1. How would you optimize 00-core-computer-science for GPU-accelerated computing?
-2. What parallel processing patterns apply to 00-core-computer-science?
+1. How would you optimize network throughput for GPU-to-GPU communication in a distributed training cluster?
+2. What networking patterns are critical for multi-node inference serving?
 
 #### AI Startup Style
-1. How would you implement 00-core-computer-science in a cost-effective, scalable way for a startup?
-2. What's the fastest way to prototype a solution using 00-core-computer-science?
+1. How would you set up networking for a startup deploying AI models across multiple regions?
+2. What's the simplest network architecture for a startup serving AI inference to 10K users?
 
 ### Resume Tips
-- **Technical Skills**: List 00-core-computer-science under relevant technical skills
-- **Project Description**: "Implemented 00-core-computer-science to [specific outcome], reducing [metric] by [X]%"
-- **Keywords**: Include 00-core-computer-science in your skills section for ATS optimization
+- **Technical Skills**: List "TCP/IP", "DNS", "Load Balancing", "Network Debugging" under relevant skills
+- **Project Description**: "Implemented network optimization for AI inference service, reducing latency by 40% through connection pooling and CDN"
+- **Keywords**: Include "networking", "TCP/IP", "DNS", "load balancing", "latency optimization" for ATS
 
 ### Interview Day Checklist
-- [ ] Review core concepts of 00-core-computer-science
-- [ ] Practice 3-5 problems related to 00-core-computer-science
-- [ ] Prepare 2 real-world examples of using 00-core-computer-science
-- [ ] Know the time/space complexity of common 00-core-computer-science operations
-- [ ] Have questions ready about how the company uses 00-core-computer-science
+- [ ] Review TCP 3-way handshake and connection lifecycle
+- [ ] Practice network debugging with curl, netstat, nslookup
+- [ ] Prepare examples of network optimization you've implemented
+- [ ] Know the difference between TCP and UDP with use cases
+- [ ] Have questions about the company's network architecture
 
 ### True/False
 

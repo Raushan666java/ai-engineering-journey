@@ -20,6 +20,39 @@ Understanding file io and exceptions is essential for AI engineers building prod
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding file io and exceptions is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how file io and exceptions works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind file io and exceptions
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
+## Examples
+
+### Basic Example
+
+```python
+## Basic file io and exceptions example
+def example():
+    """Demonstrate file io and exceptions"""
+    result = "Hello, file io and exceptions!"
+    print(result)
+    return result
+
+example()
+```
+
+### Expected Output
+
+```text
+Hello, file io and exceptions!
+```
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -340,12 +373,14 @@ with tempfile.TemporaryDirectory() as tmpdir:
     with open(file_path, "w") as f:
         f.write("Hello from temp dir")
     print(os.listdir(tmpdir))  # ['test.txt']
+
 ## Directory auto-deleted after context
 `
 
 ## 7.8 Advanced Exception Patterns
 
 `python
+
 ## try-except-else-finally complete example
 def process_config(path: str) -> dict:
     try:
@@ -516,15 +551,19 @@ logging.error("An error occurred")
 ## 7.11 Common Pitfalls
 
 `python
+
 ## Pitfall 1: Not closing files manually (use with!)
 f = open("file.txt", "r", encoding="utf-8")
 data = f.read()
+
 ## f.close() forgotten -- resource leak!
+
 ## Solution: with open("file.txt") as f: data = f.read()
 
 ## Pitfall 2: Ignoring encoding
 with open("file.txt", "r") as f:  # BAD: platform-dependent encoding
     data = f.read()
+
 ## Always specify: encoding="utf-8"
 
 ## Pitfall 3: Bare except clauses
@@ -532,6 +571,7 @@ try:
     result = risky_operation()
 except:  # BAD: catches KeyboardInterrupt, SystemExit too
     print("Error occurred")
+
 ## Use: except Exception as e:
 
 ## Pitfall 4: Suppressing exceptions silently
@@ -539,21 +579,25 @@ try:
     func()
 except Exception:
     pass  # BAD: errors are hidden
+
 ## At least log: except Exception as e: logging.error(e)
 
 ## Pitfall 5: Not handling file modes correctly
 with open("file.txt", "w") as f:  # TRUNCATES existing content!
     f.write("new content")
+
 ## Use "a" for append, "r+" for read/write
 
 ## Pitfall 6: Pickle with untrusted data
 import pickle
 data = pickle.loads(untrusted_bytes)  # BAD: arbitrary code execution
+
 ## Use JSON or other safe formats for untrusted data
 
 ## Pitfall 7: Line ending issues between platforms
 with open("file.txt", "w") as f:  # Windows: \r\n, Unix: \n
     f.write("line1\n")  # might get \r\n on Windows
+
 ## Use newline="" parameter for binary compatibility
 `
 
@@ -584,10 +628,15 @@ unpacked = msgpack.unpackb(packed)
 print(unpacked == data)  # True
 
 ## Protocol Buffers (via protobuf library)
+
 ## message.proto:
+
 ## message Person {
+
 ##   string name = 1;
+
 ##   int32 age = 2;
+
 ## }
 `
 

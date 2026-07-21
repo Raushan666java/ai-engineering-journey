@@ -20,6 +20,39 @@ Understanding concurrency is essential for AI engineers building production syst
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding concurrency is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how concurrency works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind concurrency
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
+## Examples
+
+### Basic Example
+
+```python
+## Basic concurrency example
+def example():
+    """Demonstrate concurrency"""
+    result = "Hello, concurrency!"
+    print(result)
+    return result
+
+example()
+```
+
+### Expected Output
+
+```text
+Hello, concurrency!
+```
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -174,6 +207,7 @@ if __name__ == "__main__":
 The Global Interpreter Lock (GIL) is a mutex in CPython that prevents multiple threads from executing Python bytecode simultaneously.
 
 `python
+
 ## GIL demonstration
 import threading
 import time
@@ -194,6 +228,7 @@ t2 = threading.Thread(target=count, args=(50_000_000,))
 t1.start(); t2.start()
 t1.join(); t2.join()
 print(f"Threaded: {time.time() - start:.2f}s")
+
 ## Both ~same time due to GIL
 
 ## I/O-bound � threading helps (GIL released during I/O)
@@ -271,6 +306,7 @@ asyncio.run(main())
 | Python model | OS threads | OS processes | Single-thread coroutines |
 
 `python
+
 ## Decision flowchart
 def choose_model(task_type: str, num_items: int):
     if task_type == "CPU":
@@ -595,10 +631,13 @@ for t in threads: t.join()
 ## 10.10 Common Pitfalls
 
 `python
+
 ## Pitfall 1: Not joining threads before exit
 t = threading.Thread(target=lambda: time.sleep(1))
 t.start()
+
 ## t.join()  # MISSING - program may exit before thread completes
+
 ## Daemon threads: t.daemon = True (killed when main exits)
 
 ## Pitfall 2: Race conditions without locks
@@ -625,7 +664,9 @@ def thread_b():
 ## Solution: consistent lock ordering
 
 ## Pitfall 4: Forgetting if __name__ == "__main__" in multiprocessing
+
 ## Multiprocessing on Windows re-imports the module
+
 ## All process-creating code must be guarded
 
 ## Pitfall 5: Mixing asyncio and blocking code
@@ -639,12 +680,14 @@ async def bad():
 ## Solution: use asyncio.to_thread() or aiohttp
 
 ## Pitfall 6: Shared mutable state across processes
+
 ## Processes don't share memory - use Manager() or Queue()
 `
 
 ## 10.11 Real-World Concurrency Patterns
 
 `python
+
 ## Thread pool for web scraping
 def scrape_url(url: str) -> dict:
     import requests

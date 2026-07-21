@@ -52,6 +52,29 @@ Git is a distributed version control system that tracks changes to files over ti
 **Creating a new repository:**
 
 ```bash
+
+
+## Examples
+
+### Basic Example
+
+```python
+## Basic git basics example
+def example():
+    """Demonstrate git basics"""
+    result = "Hello, git basics!"
+    print(result)
+    return result
+
+example()
+```
+
+### Expected Output
+
+```text
+Hello, git basics!
+```
+
 ## Create a new repo in the current directory
 git init
 
@@ -64,6 +87,7 @@ Running `git init` creates a hidden `.git` directory that stores all version con
 **Cloning an existing repository:**
 
 ```bash
+
 ## Clone via HTTPS
 git clone https://github.com/user/repo.git
 
@@ -92,6 +116,7 @@ flowchart LR
 
 
 ## Overview
+
 ### 01.2 Staging and Committing
 
 The staging area lets you craft commits selectively. You can stage some changes while leaving others unstaged, allowing atomic, focused commits.
@@ -99,6 +124,7 @@ The staging area lets you craft commits selectively. You can stage some changes 
 **Adding files to the staging area:**
 
 ```bash
+
 ## Stage a specific file
 git add index.html
 
@@ -118,6 +144,7 @@ git add -p
 **Committing staged changes:**
 
 ```bash
+
 ## Commit with inline message
 git commit -m "Add user authentication module"
 
@@ -134,6 +161,7 @@ git commit --amend -m "Fix: correct typo in auth header"
 **The three-area model in practice:**
 
 ```bash
+
 ## Edit a file
 echo "console.log('hello');" > app.js
 
@@ -155,6 +183,7 @@ git status
 
 
 ## Overview
+
 ### 01.3 Inspecting History
 
 Git log shows the commit history. Understanding how to read and filter it is essential for debugging and code review.
@@ -162,6 +191,7 @@ Git log shows the commit history. Understanding how to read and filter it is ess
 **Viewing commit history:**
 
 ```bash
+
 ## Compact one-line log
 git log --oneline
 
@@ -190,6 +220,7 @@ git log --grep="fix" --oneline
 **Comparing changes with diff:**
 
 ```bash
+
 ## Unstaged changes (working dir vs staging)
 git diff
 
@@ -212,6 +243,7 @@ git diff --word-diff
 **Inspecting specific commits:**
 
 ```bash
+
 ## Show a commit's details and diff
 git show abc1234
 
@@ -224,6 +256,7 @@ git show abc1234:path/to/file.ts
 
 
 ## Overview
+
 ### 01.4 Undoing Changes
 
 Mistakes happen. Git provides multiple tools to undo changes, each with different safety levels.
@@ -231,6 +264,7 @@ Mistakes happen. Git provides multiple tools to undo changes, each with differen
 **Discarding unstaged changes:**
 
 ```bash
+
 ## Discard changes in a specific file
 git restore index.html
 
@@ -244,6 +278,7 @@ git restore --source=HEAD~2 path/to/file.ts
 **Unstaging files:**
 
 ```bash
+
 ## Unstage a specific file (keeps working dir changes)
 git restore --staged index.html
 
@@ -254,6 +289,7 @@ git restore --staged .
 **Resetting commits (use with caution):**
 
 ```bash
+
 ## Soft reset: move HEAD, keep staged changes
 git reset --soft HEAD~1
 
@@ -270,6 +306,7 @@ git reset --hard abc1234
 **Recovering with reflog:**
 
 ```bash
+
 ## View the reflog (safety net for lost commits)
 git reflog
 
@@ -279,6 +316,7 @@ git reset --hard HEAD@{2}
 
 
 ## Overview
+
 ### 01.5 .gitignore
 
 The `.gitignore` file tells Git which files and directories to ignore. This prevents generated files, secrets, and dependencies from being tracked.
@@ -286,6 +324,7 @@ The `.gitignore` file tells Git which files and directories to ignore. This prev
 **Creating a .gitignore:**
 
 ```bash
+
 ## Create a .gitignore file
 touch .gitignore
 ```text
@@ -293,6 +332,7 @@ touch .gitignore
 **Common .gitignore patterns:**
 
 ```gitignore
+
 ## Dependencies
 node_modules/
 venv/
@@ -331,6 +371,7 @@ htmlcov/
 **Pattern syntax:**
 
 ```gitignore
+
 ## Ignore all .log files
 *.log
 
@@ -356,6 +397,7 @@ temp/
 **Removing tracked files from Git (after adding to .gitignore):**
 
 ```bash
+
 ## Remove file from Git but keep on disk
 git rm --cached secret.env
 
@@ -368,11 +410,13 @@ git commit -m "Remove tracked secrets and dependencies"
 
 
 ## Overview
+
 ### 01.6 Real-World Best Practices
 
 **Atomic commits:** Each commit should represent one logical change. This makes code review easier and bisection reliable.
 
 ```bash
+
 ## Bad: one massive commit
 git add .
 git commit -m "Update everything"

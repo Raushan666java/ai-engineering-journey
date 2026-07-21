@@ -20,6 +20,18 @@ Understanding pydantic and validation is essential for AI engineers building pro
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding pydantic and validation is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how pydantic and validation works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind pydantic and validation
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -72,7 +84,9 @@ user = User(
     created_at="2024-01-15T10:30:00Z"  # string to datetime
 )
 print(user.model_dump())
+
 ## {'id': 42, 'name': 'Alice', 'email': 'alice@example.com',
+
 ##  'age': 25, 'is_active': True, 'created_at': datetime(...)}
 
 ## Access as attributes
@@ -91,6 +105,7 @@ class StrictUser(BaseModel):
     name: str
 
 ## This will raise ValidationError
+
 ## StrictUser(id="42", name="Alice")  # id must be int, not str
 ```text
 
@@ -235,6 +250,7 @@ class Config(BaseModel):
     max_connections: int = 10
 
 config = Config(api_key="secret", max_connections=20)
+
 ## config.max_connections = 30  # ValidationError: frozen field
 
 ## Allow extra fields (ignore or populate)
@@ -308,7 +324,9 @@ event = Event(
 ## Serialize to dict
 data = event.model_dump()
 print(data)
+
 ## {'id': 1, 'name': 'Conference', 'date': '2025-06-15',
+
 ##  'created_at': '2025-01-01T00:00:00+00:00', 'metadata': {'attendees': 500}}
 
 ## Serialize to JSON
@@ -317,6 +335,7 @@ print(json_str)
 
 ## Exclude or include specific fields
 subset = event.model_dump(include={"id", "name"})
+
 ## {'id': 1, 'name': 'Conference'}
 
 ## Exclude unset or defaults
@@ -328,6 +347,7 @@ class User(BaseModel):
 
 user = User(id=1, name="Alice")
 print(user.model_dump(exclude_unset=True))
+
 ## {'id': 1, 'name': 'Alice'}  — excludes defaults
 
 ## Custom encoder for non-JSON types
@@ -345,6 +365,7 @@ class PriceModel(BaseModel):
 
 pm = PriceModel(amount=Decimal("19.99"))
 print(pm.model_dump_json())
+
 ## {"amount": 19.99, "currency": "USD"}
 ```text
 

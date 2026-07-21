@@ -20,6 +20,18 @@ Understanding object detection is essential for AI engineers building production
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding object detection is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how object detection works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind object detection
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -1158,7 +1170,7 @@ Object detection is a foundational computer vision task that combines classifica
 
 9. **Export and Quantize**: Take a pre-trained detection model (e.g., torchvision's `fasterrcnn_resnet50_fpn`), export it to ONNX, and apply dynamic quantization. Compare the model size and inference speed before and after quantization.
 
-10. **Live Detection Pipeline**: Build a webcam-based object detection pipeline using a YOLO model. Display FPS and detection overlay in real-time. Measure throughput with and without batching. What is the maximum FPS you can achieve on your 
+10. **Live Detection Pipeline**: Build a webcam-based object detection pipeline using a YOLO model. Display FPS and detection overlay in real-time. Measure throughput with and without batching. What is the maximum FPS you can achieve on your
 
 ## Revision Notes
 

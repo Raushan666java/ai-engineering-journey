@@ -20,6 +20,18 @@ Linked lists form the backbone of many advanced data structures like stacks, que
 - Basic programming
 - Understanding of pointers/references
 
+
+## Theory
+
+Understanding sliding window is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how sliding window works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind sliding window
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -266,6 +278,7 @@ def min_sliding_window(nums, k):
     return result
 
 print(min_sliding_window([1, 3, -1, -3, 5, 3, 6, 7], 3))
+
 ## [-1, -3, -3, -3, 3, 3]
 ```text
 

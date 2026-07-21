@@ -20,6 +20,18 @@ Understanding python basics is essential for AI engineers building production sy
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding python basics is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how python basics works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind python basics
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -54,6 +66,7 @@ Python is an interpreted, dynamically-typed, high-level programming language. It
 
 ```python
 python --version
+
 ## Python 3.11.9
 ```text
 
@@ -63,6 +76,7 @@ python --version
 2. **Script mode**: Save code in `.py` files and run with `python filename.py`.
 
 ```python
+
 ## hello.py — Your first Python program
 print("Hello, AI Engineering Journey!")
 ```text
@@ -84,6 +98,7 @@ source .venv/bin/activate  # Linux/macOS
 Python variables are **references to objects** in memory. Unlike statically-typed languages, a variable's type is inferred at runtime and can change.
 
 ```python
+
 ## Dynamic typing — type is inferred from value
 name = "Alice"       # str
 age = 30             # int
@@ -107,6 +122,7 @@ a = b = c = 0
 - Convention: `snake_case` for variables and functions, `UPPER_SNAKE` for constants
 
 ```python
+
 ## Constants by convention (not enforced)
 MAX_RETRIES = 3
 DEFAULT_TIMEOUT = 30.0
@@ -134,6 +150,7 @@ print(c)           # [1, 2, 3, 4, 5]
 Python supports three numeric types:
 
 ```python
+
 ## int — arbitrary precision integers
 count = 1_000_000          # Underscores for readability
 binary = 0b1010            # 10 in decimal
@@ -188,6 +205,7 @@ print(Decimal('0.1') + Decimal('0.2'))  # 0.3
 Strings are immutable sequences of Unicode characters.
 
 ```python
+
 ## String creation
 single = 'Hello'
 double = "World"
@@ -220,6 +238,7 @@ print(text.find("world"))  # 9
 name = "Alice"
 age = 30
 print(f"{name} is {age} years old.")
+
 ## Alice is 30 years old.
 
 ## Expressions inside f-strings
@@ -236,6 +255,7 @@ print(f"{pi:<10.2f}")      # "3.14      " (left-aligned)
 
 ```python
 s = "hello"
+
 ## s[0] = "H"  — TypeError!
 
 ## Must create new string
@@ -254,6 +274,7 @@ is_raining = False
 print(is_sunny + 2)   # 3 (True is 1)
 
 ## Truthiness — values that evaluate to False:
+
 ## False, None, 0, 0.0, "" (empty string), [] (empty list), {} (empty dict), set()
 print(bool(0))        # False
 print(bool(42))       # True
@@ -287,6 +308,7 @@ print(True + 2)   # 3   — bool promoted to int
 **Explicit conversion** (type casting):
 
 ```python
+
 ## To int
 print(int(3.9))       # 3 (truncates)
 print(int("42"))      # 42
@@ -301,8 +323,11 @@ print(str(42))        # "42"
 print(str(3.14))      # "3.14"
 
 ## Conversion gotchas
+
 ## int("3.14")  — ValueError: invalid literal
+
 ## float("3.14") — works fine
+
 ## int("0xFF", 0) — uses base from prefix
 ```text
 
@@ -337,7 +362,7 @@ def get_value():
 result = False and get_value()  # get_value NOT called
 ```text
 
-**Assignment operators**: `=`, `+=`, `-=`, `*=`, `/=`, `//=`, `%=`, `**=` 
+**Assignment operators**: `=`, `+=`, `-=`, `*=`, `/=`, `//=`, `%=`, `**=`
 
 ```python
 x = 10
@@ -386,6 +411,7 @@ print("key" in {"key": 1}) # True
 12. `or` — logical OR
 
 ```python
+
 ## Complex expression — use parentheses for clarity
 result = (2 + 3) * 4 > 15 and not False
 print(result)  # True
@@ -407,6 +433,7 @@ PEP 8 is Python's style guide. Key rules:
 | Spaces | `x = 1`, not `x=1` | missing spaces around operators |
 
 ```python
+
 ## Good PEP 8 style
 import os
 import sys
@@ -606,6 +633,7 @@ del b                       # reference count drops to 2</code></pre>
     </ul>
     <pre><code># Immutable — str
 s = "hello"
+
 ## s[0] = "H"  # TypeError
 s = "H" + s[1:]  # creates new string
 

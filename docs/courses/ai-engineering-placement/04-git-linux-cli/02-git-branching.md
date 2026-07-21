@@ -51,6 +51,7 @@ A branch in Git is a lightweight, movable pointer to a commit. The default branc
 **Creating and listing branches:**
 
 ```bash
+
 ## List local branches (* = current)
 git branch
 
@@ -76,6 +77,7 @@ git branch -D feature/abandoned
 **Switching branches:**
 
 ```bash
+
 ## Switch to an existing branch
 git switch feature/login
 
@@ -102,6 +104,7 @@ flowchart LR
 
 
 ## Overview
+
 ### 02.2 Merging
 
 Merging brings changes from one branch into another. Git supports two main strategies: fast-forward and three-way merge.
@@ -109,6 +112,7 @@ Merging brings changes from one branch into another. Git supports two main strat
 **Fast-forward merge:**
 
 ```bash
+
 ## Switch to the branch you want to merge INTO
 git switch main
 
@@ -116,6 +120,7 @@ git switch main
 git merge feature/login
 
 ## If the feature branch is ahead of main with no divergence,
+
 ## Git simply moves the main pointer forward (fast-forward)
 ```text
 
@@ -132,12 +137,14 @@ flowchart LR
 **Three-way merge:**
 
 ```bash
+
 ## When both branches have diverged, Git creates a merge commit
 git switch main
 git merge feature/login
 
 ## Preserve branch history (no fast-forward)
 git merge --no-ff feature/login
+
 ## Always creates a merge commit — useful for feature branch history
 ```text
 
@@ -160,6 +167,7 @@ flowchart TD
 **Squash merge:**
 
 ```bash
+
 ## Combine all feature commits into one commit on main
 git switch main
 git merge --squash feature/login
@@ -173,6 +181,7 @@ git commit -m "Add user login with OAuth2"
 
 
 ## Overview
+
 ### 02.3 Rebasing
 
 Rebase replays commits from one branch onto another, creating a linear history. Unlike merge, it rewrites commit hashes.
@@ -180,6 +189,7 @@ Rebase replays commits from one branch onto another, creating a linear history. 
 **Basic rebase:**
 
 ```bash
+
 ## Switch to your feature branch
 git switch feature/login
 
@@ -202,6 +212,7 @@ flowchart TD
 **Interactive rebase (cleaning up history):**
 
 ```bash
+
 ## Rebase the last 5 commits
 git rebase -i HEAD~5
 
@@ -245,7 +256,9 @@ Rebase rewrites commit hashes. If others have based work on those commits, rewri
 **Resolving rebase conflicts:**
 
 ```bash
+
 ## During rebase, conflicts may occur
+
 ## Fix the conflicted files, then:
 
 ## Stage resolved files
@@ -263,6 +276,7 @@ git rebase --abort
 
 
 ## Overview
+
 ### 02.4 GitFlow
 
 GitFlow is a structured branching model designed around release cycles. It uses five branch types.
@@ -294,6 +308,7 @@ flowchart TD
 **GitFlow workflow in practice:**
 
 ```bash
+
 ## Start a new feature
 git switch develop
 git switch -c feature/user-profile
@@ -341,6 +356,7 @@ git branch -d hotfix/crash-fix
 
 
 ## Overview
+
 ### 02.5 Trunk-Based Development
 
 Trunk-based development uses a single main branch (trunk) with very short-lived feature branches. Features are toggled with feature flags rather than long-lived branches.
@@ -353,6 +369,7 @@ Trunk-based development uses a single main branch (trunk) with very short-lived 
 - CI/CD runs on every commit to main
 
 ```bash
+
 ## Short-lived branch workflow
 git switch main
 git pull
@@ -364,6 +381,7 @@ git commit -m "fix: resolve memory leak in websocket handler"
 git push origin fix/memory-leak
 
 ## Create PR, get reviewed, merge within hours
+
 ## Delete branch immediately after merge
 git branch -d fix/memory-leak
 ```text
@@ -391,6 +409,7 @@ return <LegacyCheckoutFlow />;
 
 
 ## Overview
+
 ### 02.6 Handling Merge Conflicts
 
 Conflicts occur when two branches modify the same lines. Git marks the conflicting sections for manual resolution.
@@ -412,9 +431,11 @@ const timeout = 5000;
 **Resolution workflow:**
 
 ```bash
+
 ## Attempt merge
 git switch main
 git merge feature/new-timeout
+
 ## CONFLICT (content): Merge conflict in config.ts
 
 ## Check which files have conflicts
@@ -435,6 +456,7 @@ git merge --abort
 **Using a merge tool:**
 
 ```bash
+
 ## Configure a merge tool
 git config --global merge.tool vscode
 git config --global mergetool.vscode.cmd 'code --wait $MERGED'

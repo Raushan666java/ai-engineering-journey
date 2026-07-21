@@ -20,6 +20,18 @@ Understanding microservices architecture is essential for AI engineers building 
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding microservices architecture is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how microservices architecture works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind microservices architecture
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -76,6 +88,7 @@ DDD helps identify service boundaries.
 **Ubiquitous Language**: Common language shared by developers and domain experts.
 
 ```python
+
 ## Order bounded context
 class Order:
     def __init__(self, order_id, user_id, items, total):
@@ -96,6 +109,7 @@ class Order:
 **Synchronous**: REST (HTTP), gRPC, GraphQL. Simple but creates coupling.
 
 ```python
+
 ## REST communication
 import requests
 
@@ -104,14 +118,18 @@ def get_user_orders(user_id):
     return response.json()
 
 ## gRPC (protocol buffers)
+
 ## service OrderService {
+
 ##   rpc GetUserOrders (UserRequest) returns (OrderList);
+
 ## }
 ```text
 
 **Asynchronous**: Message queues (RabbitMQ, Kafka), event-driven. Loose coupling.
 
 ```python
+
 ## Event-driven communication
 class OrderService:
     def create_order(self, order_data):
@@ -187,6 +205,7 @@ class ServiceRegistry:
 **Saga pattern**: Distributed transaction across services using a sequence of local transactions with compensating actions on failure.
 
 ```python
+
 ## Choreography-based Saga
 class OrderSaga:
     def create_order(self, order_data):
@@ -451,6 +470,7 @@ flowchart LR
 **Istio features**:
 
 ```yaml
+
 ## Traffic management
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService

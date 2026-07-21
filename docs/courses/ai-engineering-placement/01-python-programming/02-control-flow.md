@@ -20,6 +20,39 @@ Understanding control flow is essential for AI engineers building production sys
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding control flow is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how control flow works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind control flow
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
+## Examples
+
+### Basic Example
+
+```python
+## Basic control flow example
+def example():
+    """Demonstrate control flow"""
+    result = "Hello, control flow!"
+    print(result)
+    return result
+
+example()
+```
+
+### Expected Output
+
+```text
+Hello, control flow!
+```
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -50,6 +83,7 @@ flowchart LR
 Conditional statements direct program flow based on boolean expressions. Python uses if, elif (short for "else if"), and else blocks.
 
 `python
+
 ## Basic if-elif-else structure
 temperature = 30
 
@@ -61,12 +95,14 @@ elif temperature > 15:
     print("It is mild")
 else:
     print("It is cold")
+
 ## Output: It is warm
 `
 
 **Truthiness in conditionals**: Python evaluates any object as True or False in a boolean context.
 
 `python
+
 ## Objects evaluated as False
 bool(0)       # False
 bool(0.0)     # False
@@ -83,6 +119,7 @@ bool([0])     # True (non-empty list)
 **Nested conditionals** should be kept shallow � 2 levels max. Use guard clauses to flatten:
 
 `python
+
 ## Deep nesting � hard to read
 def process_user(user):
     if user:
@@ -113,6 +150,7 @@ def process_user_flat(user):
 **Ternary (conditional) expression**:
 
 `python
+
 ## Syntax: value_if_true if condition else value_if_false
 age = 20
 status = "Adult" if age >= 18 else "Minor"
@@ -131,10 +169,12 @@ print(grade)  # B
 The or loop iterates over any iterable object. It is Python's primary looping construct.
 
 `python
+
 ## Iterating over a list
 fruits = ["apple", "banana", "cherry"]
 for fruit in fruits:
     print(fruit, end=" ")
+
 ## Output: apple banana cherry
 
 ## Using range() for numeric sequences
@@ -155,9 +195,13 @@ print()
 colors = ["red", "green", "blue"]
 for index, color in enumerate(colors, start=1):
     print(f"{index}: {color}")
+
 ## Output:
+
 ## 1: red
+
 ## 2: green
+
 ## 3: blue
 `
 
@@ -170,8 +214,11 @@ grades = ["A", "A", "B"]
 
 for name, score, grade in zip(names, scores, grades):
     print(f"{name}: {score} -> {grade}")
+
 ## Alice: 85 -> A
+
 ## Bob: 92 -> A
+
 ## Charlie: 78 -> B
 
 ## zip stops at the shortest iterable
@@ -203,11 +250,13 @@ for key, value in data.items(): # key-value pairs
 while loops execute as long as a condition remains True. Use them when the number of iterations is unknown.
 
 `python
+
 ## Basic while loop
 count = 0
 while count < 5:
     print(count, end=" ")
     count += 1
+
 ## Output: 0 1 2 3 4
 
 ## Sentinel pattern � loop until a sentinel value
@@ -223,6 +272,7 @@ print(f"Total: {total}")
 **Avoid infinite loops** � ensure the condition eventually becomes False:
 
 `python
+
 ## Infinite loop � CTRL+C to stop
 x = 0
 while x >= 0:
@@ -256,6 +306,7 @@ for num in range(10):
     if num == 5:
         break
     print(num, end=" ")
+
 ## Output: 0 1 2 3 4
 
 ## break only breaks the innermost loop
@@ -274,6 +325,7 @@ for num in range(10):
     if num % 2 == 0:
         continue  # skip even numbers
     print(num, end=" ")
+
 ## Output: 1 3 5 7 9
 `
 
@@ -293,6 +345,7 @@ if True:
 **else on loops** � executes only if the loop completed normally (no reak):
 
 `python
+
 ## else after for � executes when no break occurred
 def find_item(items, target):
     for i, item in enumerate(items):
@@ -312,6 +365,7 @@ while n < 3:
     n += 1
 else:
     print("� loop completed without break")
+
 ## Output: 0 1 2 � loop completed without break
 `
 
@@ -324,6 +378,7 @@ Comprehensions provide a concise syntax for creating collections from iterables.
 **List comprehension** � most common:
 
 `python
+
 ## Syntax: [expression for item in iterable if condition]
 
 ## Basic
@@ -348,6 +403,7 @@ print(caps)  # ['HELLO', 'WORLD', 'PYTHON']
 **Dict comprehension**:
 
 `python
+
 ## {key_expr: value_expr for item in iterable}
 squares_dict = {x: x**2 for x in range(5)}
 print(squares_dict)  # {0: 0, 1: 1, 2: 4, 3: 9, 4: 9}
@@ -368,6 +424,7 @@ print(temperatures_f)  # {'New York': 71.6, 'Tokyo': 82.4}
 **Set comprehension**:
 
 `python
+
 ## {expression for item in iterable}
 unique_lengths = {len(word) for word in ["hello", "world", "python", "hi"]}
 print(unique_lengths)  # {2, 5, 6}
@@ -376,6 +433,7 @@ print(unique_lengths)  # {2, 5, 6}
 **Generator expression** � memory-efficient, produces values on demand:
 
 `python
+
 ## (expression for item in iterable) � note parentheses
 import sys
 
@@ -406,6 +464,7 @@ Every or loop in Python uses the **iteration protocol** under the hood.
 **The protocol**: An object is iterable if it implements __iter__(), which returns an iterator. An iterator implements __next__(), which returns the next element or raises StopIteration.
 
 `python
+
 ## Manual iteration � what for does internally
 fruits = ["apple", "banana", "cherry"]
 iterator = iter(fruits)  # calls fruits.__iter__()
@@ -413,6 +472,7 @@ iterator = iter(fruits)  # calls fruits.__iter__()
 print(next(iterator))  # apple � calls iterator.__next__()
 print(next(iterator))  # banana
 print(next(iterator))  # cherry
+
 ## print(next(iterator))  # StopIteration raised
 `
 
@@ -461,6 +521,7 @@ print(next(gen))  # 3
 print(next(gen))  # 2
 print(next(gen))  # 1
 print(next(gen))  # 0
+
 ## print(next(gen))  # StopIteration
 `
 
@@ -480,18 +541,22 @@ for item in cycle(["A", "B", "C"]):
     counter += 1
     if counter > 5:
         break
+
 ## Output: A B C A B C
 
 ## product � Cartesian product
 print(list(product([1, 2], ["x", "y"])))
+
 ## [(1, 'x'), (1, 'y'), (2, 'x'), (2, 'y')]
 
 ## permutations � all orderings
 print(list(permutations([1, 2, 3], 2)))
+
 ## [(1, 2), (1, 3), (2, 1), (2, 3), (3, 1), (3, 2)]
 
 ## combinations � all subsets
 print(list(combinations([1, 2, 3], 2)))
+
 ## [(1, 2), (1, 3), (2, 3)]
 `
 
@@ -676,6 +741,7 @@ def placeholder():
     <p>Use a nested <code>for</code> clause in the comprehension:</p>
     <pre><code>matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 flat = [num for row in matrix for num in row]
+
 ## [1, 2, 3, 4, 5, 6, 7, 8, 9]</code></pre>
     <p>The order of <code>for</code> clauses follows the same order as nested loops.</p>
   </div>

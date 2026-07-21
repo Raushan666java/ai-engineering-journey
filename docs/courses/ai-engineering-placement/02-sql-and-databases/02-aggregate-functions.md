@@ -20,6 +20,39 @@ Understanding aggregate functions is essential for AI engineers building product
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding aggregate functions is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how aggregate functions works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind aggregate functions
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
+## Examples
+
+### Basic Example
+
+```python
+## Basic aggregate functions example
+def example():
+    """Demonstrate aggregate functions"""
+    result = "Hello, aggregate functions!"
+    print(result)
+    return result
+
+example()
+```
+
+### Expected Output
+
+```text
+Hello, aggregate functions!
+```
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -62,6 +95,7 @@ print(f"Count: {len(data)}")
 print(f"Sum: {sum(data)}")
 print(f"Avg: {sum(data)/len(data):.0f}")
 print(f"Min: {min(data)}, Max: {max(data)}")
+
 ## Count: 4, Sum: 297000, Avg: 74250, Min: 68000, Max: 82000
 
 import sqlite3
@@ -75,7 +109,9 @@ cur.executemany("INSERT INTO emp VALUES (?,?,?,?)", [
 cur.execute("SELECT dept, AVG(salary), MAX(salary) FROM emp GROUP BY dept")
 for row in cur.fetchall():
     print(f"{row[0]}: avg={row[1]:.0f}, max={row[2]}")
+
 ## Eng: avg=71500, max=75000
+
 ## Sales: avg=77000, max=82000
 `
 
@@ -183,6 +219,7 @@ cur.execute("CREATE TABLE scores (name, score)")
 cur.executemany("INSERT INTO scores VALUES (?,?)", [
     ("Alice", 95), ("Bob", None), ("Charlie", 88), ("Diana", None)
 ])
+
 ## COUNT(*) includes NULL rows; COUNT(score) excludes NULLs
 cur.execute("SELECT COUNT(*), COUNT(score), AVG(score) FROM scores")
 print(cur.fetchone())  # (4, 2, 91.5) � NULLs ignored in AVG

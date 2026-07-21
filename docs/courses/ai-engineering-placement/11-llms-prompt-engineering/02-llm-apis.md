@@ -20,6 +20,18 @@ Understanding llm apis is essential for AI engineers building production systems
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding llm apis is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how llm apis works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind llm apis
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -120,12 +132,17 @@ print(f"Request cost: ${cost:.6f}")
 **Secure key management** using environment files:
 
 ```python
+
 ## .env file (never commit to git)
+
 ## OPENAI_API_KEY=sk-...
+
 ## ANTHROPIC_API_KEY=sk-ant-...
+
 ## GEMINI_API_KEY=AIza...
 
 ## .gitignore
+
 ## .env
 
 ## Load securely
@@ -202,6 +219,7 @@ response = client.chat.completions.create(
 import json
 data = json.loads(response.choices[0].message.content)
 print(data)
+
 ## {'name': 'John', 'age': 32, 'city': 'San Francisco', 'occupation': 'software engineer'}
 ```text
 
@@ -602,10 +620,15 @@ async def chat_stream(messages: list):
     )
 
 ## Client-side
+
 ## fetch('/chat/stream', { method: 'POST', body: JSON.stringify(messages) })
+
 ##   .then(response => {
+
 ##     const reader = response.body.getReader();
+
 ##     // Read chunks incrementally
+
 ##   })
 ```text
 
@@ -725,9 +748,13 @@ def make_request():
     return safe_api_call(client, [{"role": "user", "content": "Hello"}])
 
 ## for i in range(10):
+
 ##     try:
+
 ##         result = breaker.call(make_request)
+
 ##     except Exception as e:
+
 ##         print(f"Request {i} failed: {e}")
 ```text
 
@@ -770,6 +797,7 @@ def rate_limited_api_call(client, messages):
     return safe_api_call(client, messages)
 
 ## for i in range(100):
+
 ##     response = rate_limited_api_call(client, messages)
 ```text
 

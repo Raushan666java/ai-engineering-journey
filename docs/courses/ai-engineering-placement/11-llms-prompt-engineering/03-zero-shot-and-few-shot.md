@@ -20,6 +20,18 @@ Understanding zero shot and few shot is essential for AI engineers building prod
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding zero shot and few shot is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how zero shot and few shot works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind zero shot and few shot
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -284,6 +296,7 @@ def evaluate_shots(examples, test_cases, shot_counts=[1, 2, 3, 5]):
         print(f"{k}-shot accuracy: {correct/len(test_cases):.2%}")
 
 test_cases = [("This is fantastic!", "POSITIVE"), ("Poor experience.", "NEGATIVE")]
+
 ## evaluate_shots(pool, test_cases)
 ```text
 

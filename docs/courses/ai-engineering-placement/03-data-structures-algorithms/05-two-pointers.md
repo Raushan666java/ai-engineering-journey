@@ -20,6 +20,18 @@ The two-pointer technique is a powerful pattern for solving array and linked lis
 - Array basics
 - Time complexity analysis
 
+
+## Theory
+
+Understanding two pointers is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how two pointers works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind two pointers
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -192,6 +204,7 @@ print(has_cycle(a))  # True
 
 
 ## Overview
+
 ### Find the Middle of a Linked List
 
 ```python
@@ -211,6 +224,7 @@ When fast reaches the end, slow is at the middle. This works in one pass without
 
 
 ## Overview
+
 ### Find the Start of the Cycle
 
 ```python

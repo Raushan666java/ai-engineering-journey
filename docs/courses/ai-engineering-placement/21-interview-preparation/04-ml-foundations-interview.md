@@ -20,6 +20,18 @@ Understanding ml foundations interview is essential for AI engineers building pr
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding ml foundations interview is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how ml foundations interview works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind ml foundations interview
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -61,6 +73,7 @@ Machine learning is broadly categorized into three main paradigms, with emerging
 **Self-supervised learning**: Generates labels from the data itself (pretext tasks). Used for pre-training large models (BERT, GPT, SimCLR). The model learns useful representations without manual labels.
 
 ```python
+
 ## Supervised learning example — classification
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
@@ -101,6 +114,7 @@ The bias-variance tradeoff is fundamental to understanding model performance.
 **Total error** = Bias² + Variance + Irreducible error.
 
 ```python
+
 ## Visualizing bias-variance with polynomial regression
 import numpy as np
 from sklearn.preprocessing import PolynomialFeatures
@@ -447,6 +461,7 @@ A production ML pipeline spans from data to deployment. Be prepared to discuss t
 8. **Retraining**: Scheduled (weekly/monthly) or triggered by performance degradation.
 
 ```python
+
 ## Complete ML pipeline with scikit-learn
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer

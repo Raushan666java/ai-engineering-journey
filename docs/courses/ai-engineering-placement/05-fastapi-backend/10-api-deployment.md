@@ -20,6 +20,18 @@ Understanding api deployment is essential for AI engineers building production s
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding api deployment is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how api deployment works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind api deployment
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -51,7 +63,9 @@ flowchart LR
 Docker ensures consistent environments from development to production.
 
 ```dockerfile
+
 ## Dockerfile — multi-stage build
+
 ## Stage 1: Build
 FROM python:3.12-slim AS builder
 
@@ -71,12 +85,14 @@ EXPOSE 8000
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
 
 ## docker build -t myapi:latest .
+
 ## docker run -p 8000:8000 myapi:latest
 ```text
 
 **Docker Compose** for local development with dependencies:
 
 ```yaml
+
 ## docker-compose.yml
 version: "3.9"
 
@@ -134,6 +150,7 @@ volumes:
 ## 10.2 Production ASGI Server
 
 ```bash
+
 ## Uvicorn direct (single process)
 uvicorn app.main:app --host 0.0.0.0 --port 8000 --workers 4
 
@@ -153,6 +170,7 @@ gunicorn app.main:app \
 **Worker calculation**: `2 * CPU cores + 1` (for I/O-bound). For CPU-bound, use fewer workers.
 
 ```python
+
 ## gunicorn.conf.py
 import multiprocessing
 
@@ -184,6 +202,7 @@ loglevel = "info"
 Nginx handles SSL termination, static files, and load balancing.
 
 ```nginx
+
 ## nginx.conf
 upstream api_servers {
     least_conn;
@@ -237,6 +256,7 @@ server {
 **Alternative: Traefik** (cloud-native reverse proxy):
 
 ```yaml
+
 ## traefik.yml
 entryPoints:
   web:
@@ -260,6 +280,7 @@ certificatesResolvers:
 ## 10.4 Environment Configuration
 
 ```python
+
 ## app/config.py
 from pydantic_settings import BaseSettings
 from pydantic import Field, SecretStr
@@ -334,6 +355,7 @@ CORS_ORIGINS=["https://example.com"]
 ## 10.5 CI/CD Pipeline
 
 ```yaml
+
 ## .github/workflows/deploy.yml
 name: Deploy
 on:
@@ -407,6 +429,7 @@ jobs:
 **AWS ECS (Fargate)**:
 
 ```yaml
+
 ## ecs-task-definition.json
 {
   "family": "myapi",
@@ -444,6 +467,7 @@ jobs:
 **GCP Cloud Run** (serverless containers):
 
 ```yaml
+
 ## cloudbuild.yaml
 steps:
   - name: "gcr.io/cloud-builders/docker"
@@ -470,6 +494,7 @@ steps:
 **Azure App Service**:
 
 ```bash
+
 ## Deploy with Azure CLI
 az webapp create \
     --resource-group my-rg \
@@ -491,6 +516,7 @@ az webapp deployment source config-zip \
 ## 10.7 Database in Production
 
 ```python
+
 ## Automated migration in startup
 from alembic.config import Config
 from alembic import command
@@ -506,8 +532,11 @@ async def lifespan(app: FastAPI):
     yield
 
 ## Database backup script
+
 ## backup.sh
+
 ## pg_dump -h localhost -U postgres appdb > backup_$(date +%Y%m%d).sql
+
 ## aws s3 cp backup_*.sql s3://my-backup-bucket/db/
 
 ## Connection pooling recommendations
@@ -563,12 +592,19 @@ logging.basicConfig(
 )
 
 ## Grafana dashboard for monitoring
+
 ## Key panels:
+
 ## - Request rate (RPS) by endpoint
+
 ## - Error rate (5xx vs 4xx)
+
 ## - p50/p95/p99 latency
+
 ## - Active database connections
+
 ## - CPU/Memory usage per container
+
 ## - Queue depth (Celery/SQS)
 ```text
 

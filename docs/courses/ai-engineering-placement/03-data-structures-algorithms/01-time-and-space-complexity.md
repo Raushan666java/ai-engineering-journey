@@ -36,7 +36,7 @@ flowchart LR
     D --> E
     E --> F[Amortized Analysis]
     F --> G[Practice Problems]
-```
+```text
 
 
 ## Introduction
@@ -69,6 +69,7 @@ Asymptotic notations describe the limiting behavior of a function as the input s
 ## Examples
 
 ```python
+
 ## Demonstrating growth rates
 import time
 import math
@@ -78,9 +79,11 @@ def measure_time(func, n):
     func(n)
     return time.perf_counter() - start
 
+
 ## O(1) � Constant
 def constant(n):
     return n * (n + 1) // 2
+
 
 ## O(n) � Linear
 def linear(n):
@@ -88,6 +91,7 @@ def linear(n):
     for i in range(n):
         total += i
     return total
+
 
 ## O(n�) � Quadratic
 def quadratic(n):
@@ -100,7 +104,7 @@ def quadratic(n):
 for n in [10, 100, 1000]:
     print(f"n={n}: O(1)={measure_time(constant, n):.6f}s, "
           f"O(n)={measure_time(linear, n):.6f}s")
-```
+```text
 
 **Growth rate hierarchy** (slowest to fastest):
 - O(1) � Constant
@@ -117,6 +121,7 @@ for n in [10, 100, 1000]:
 
 
 ## Overview
+
 ### 1.2 Complexity Classes
 
 **O(1) � Constant Time**: Execution time does not depend on input size. Array access by index, hash table lookup, arithmetic operations.
@@ -125,10 +130,11 @@ for n in [10, 100, 1000]:
 def get_first_element(arr):
     return arr[0]  # Always takes the same time
 
+
 ## Constant time operations
 def swap(a, b):
     return b, a
-```
+```text
 
 **O(log n) � Logarithmic Time**: Input size halves each step. Binary search, balanced BST operations.
 
@@ -144,7 +150,7 @@ def binary_search(arr, target):
         else:
             right = mid - 1
     return -1
-```
+```text
 
 **O(n) � Linear Time**: Single pass through data. Linear search, array sum, finding max/min.
 
@@ -154,7 +160,7 @@ def linear_search(arr, target):
         if val == target:
             return i
     return -1
-```
+```text
 
 **O(n log n) � Linearithmic Time**: Efficient sorting algorithms. Merge sort, heap sort, divide-and-conquer.
 
@@ -180,7 +186,7 @@ def merge(left, right):
     result.extend(left[i:])
     result.extend(right[j:])
     return result
-```
+```text
 
 **O(n�) � Quadratic Time**: Nested iterations over data. Bubble sort, insertion sort, naive matrix multiplication.
 
@@ -192,7 +198,7 @@ def bubble_sort(arr):
             if arr[j] > arr[j + 1]:
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
     return arr
-```
+```text
 
 **O(2n) � Exponential Time**: Recursive without memoization. Naive Fibonacci, subset generation.
 
@@ -201,7 +207,7 @@ def fibonacci_naive(n):
     if n <= 1:
         return n
     return fibonacci_naive(n - 1) + fibonacci_naive(n - 2)
-```
+```text
 
 | Complexity | n=10 | n=100 | n=1000 |
 |------------|------|-------|--------|
@@ -217,6 +223,7 @@ def fibonacci_naive(n):
 
 
 ## Overview
+
 ### 1.3 Analyzing Iterative Algorithms
 
 **Single loop**: Multiply iterations by constant work inside.
@@ -227,7 +234,7 @@ def sum_array(arr):
     for x in arr:      # n iterations
         total += x     # O(1) per iteration
     return total       # O(1) total: O(n)
-```
+```text
 
 **Nested loops**: Multiply iteration counts.
 
@@ -238,7 +245,7 @@ def nested_sum(arr):
         for j in range(len(arr)):   # n iterations per outer
             total += arr[i] + arr[j]  # O(1)
     return total  # Total: O(n�)
-```
+```text
 
 **Dependent nested loops**: Summation formula.
 
@@ -249,7 +256,7 @@ def triangular_sum(arr):
         for j in range(i, len(arr)): # n-i iterations
             total += arr[j]         # O(1)
     return total  # n + (n-1) + ... + 1 = n(n+1)/2 = O(n�)
-```
+```text
 
 **Loop with constant stride**: Only the number of iterations matters.
 
@@ -261,7 +268,7 @@ def halving_loop(n):
         count += 1
         i //= 2          # halves each step ? O(log n)
     return count
-```
+```text
 
 **Loop with varying increment**: Analyze how the counter changes.
 
@@ -273,7 +280,7 @@ def varying_increment(n):
         count += 1
         i *= 2           # doubles each step ? O(log n)
     return count
-```
+```text
 
 ```mermaid
 flowchart TD
@@ -283,7 +290,7 @@ flowchart TD
         E[Divide each step] -->|"O(log n)"| F[Logarithmic]
         G[Divide + process each half] -->|"O(n log n)"| H[Linearithmic]
     end
-```
+```text
 
 ---
 
@@ -305,7 +312,7 @@ def binary_search_recursive(arr, target, left, right):
         return binary_search_recursive(arr, target, mid + 1, right)
     else:
         return binary_search_recursive(arr, target, left, mid - 1)
-```
+```text
 
 **Recurrence for merge sort**: `T(n) = 2T(n/2) + O(n)`
 
@@ -317,6 +324,7 @@ def binary_search_recursive(arr, target, left, right):
 - If `f(n) = O(n^{log_b(a) + e})` and `a�f(n/b) = c�f(n)` for some `c < 1`, then `T(n) = T(f(n))`
 
 ```python
+
 ## Count recursive calls to understand complexity
 call_count = 0
 
@@ -327,11 +335,15 @@ def count_calls_fib(n):
         return n
     return count_calls_fib(n - 1) + count_calls_fib(n - 2)
 
+
 ## n=10 ? 177 calls
+
 ## n=20 ? 21891 calls
+
 ## n=30 ? 2692537 calls
+
 ## Demonstrates exponential growth
-```
+```text
 
 | Algorithm | Recurrence | Complexity |
 |-----------|------------|------------|
@@ -346,43 +358,49 @@ def count_calls_fib(n):
 
 
 ## Overview
+
 ### 1.5 Space Complexity
 
 Space complexity measures total memory used by an algorithm: input space + auxiliary space + stack space.
 
 ```python
+
 ## O(1) space � constant extra memory
 def sum_const_space(arr):
     total = 0           # single variable
     for x in arr:
         total += x
     return total
-```
+```text
 
 ```python
+
 ## O(n) space � creating new array of size n
 def double_array(arr):
     result = [0] * len(arr)   # O(n) space
     for i, val in enumerate(arr):
         result[i] = val * 2
     return result
-```
+```text
 
 ```python
+
 ## O(n) stack space � recursion depth
 def factorial_recursive(n):
     if n <= 1:
         return 1
     return n * factorial_recursive(n - 1)
+
 ## Call stack grows to n frames ? O(n) stack space
-```
+```text
 
 ```python
+
 ## O(n�) space � 2D matrix
 def create_matrix(n):
     matrix = [[0] * n for _ in range(n)]   # n * n elements
     return matrix
-```
+```text
 
 **Input space vs auxiliary space**:
 - Input space: memory used by the input data (typically not counted in complexity analysis)
@@ -390,6 +408,7 @@ def create_matrix(n):
 - Stack space: memory used by recursive call frames
 
 ```python
+
 ## In-place algorithm � O(1) auxiliary space
 def reverse_array_in_place(arr):
     left, right = 0, len(arr) - 1
@@ -399,16 +418,18 @@ def reverse_array_in_place(arr):
         right -= 1
     # No extra array created
 
+
 ## Out-of-place � O(n) auxiliary space
 def reverse_array_copy(arr):
     return arr[::-1]   # Creates new array
-```
+```text
 
 ---
 
 
 
 ## Overview
+
 ### 1.6 Amortized Analysis
 
 Amortized analysis averages the cost of expensive operations over a sequence. A single operation may be costly, but the average per operation is bounded.
@@ -416,6 +437,7 @@ Amortized analysis averages the cost of expensive operations over a sequence. A 
 **Dynamic array resizing**: When a dynamic array (Python list) grows beyond capacity, it allocates a new array (typically 2x size) and copies elements.
 
 ```python
+
 ## Simulating dynamic array resizing
 class DynamicArray:
     def __init__(self):
@@ -437,26 +459,35 @@ class DynamicArray:
         self.capacity = new_cap
         print(f"Resized to {new_cap}")
 
+
 ## Analysis: n appends cost O(n) total, so O(1) amortized per append
-```
+```text
 
 **Aggregate method**: Sum the cost of all operations and divide by n.
 
 ```python
+
 ## Cost of n dynamic array appends
+
 ## Resize happens at capacities: 1, 2, 4, 8, ...
+
 ## Total copies = 1 + 2 + 4 + ... + n/2 + n = O(n)
+
 ## Amortized cost = O(n)/n = O(1)
-```
+```text
 
 **Potential method**: Define a potential function that captures the "debt" of the data structure.
 
 **Accounting method**: Charge extra for cheap operations; use credits to pay for expensive ones.
 
 ```python
+
 ## Banker's view: charge 3 coins per append
+
 ## 1 coin pays for the immediate insert
+
 ## 2 coins saved for future resizing
+
 ## When resizing occurs, saved coins pay for copying
 class AmortizedArray:
     def __init__(self):
@@ -485,7 +516,7 @@ dyn = DynamicArray()
 for i in range(1000):
     dyn.append(i)
 print(f"Final capacity: {dyn.capacity}, size: {dyn.size}")
-```
+```text
 
 ```mermaid
 flowchart TD
@@ -494,7 +525,7 @@ flowchart TD
         B[Accounting] -->|"Assign different charges"| D
         C[Potential] -->|"Use potential function F"| D
     end
-```
+```text
 
 ---
 
@@ -536,7 +567,7 @@ function mergeSort<T>(arr: T[]): T[] {
     const right = mergeSort(arr.slice(mid));
     return merge(left, right);
 } // O(n log n)
-```
+```text
 
 ---
 
@@ -584,6 +615,7 @@ def linear_search(arr, target):
         if val == target:
             return i       # O(1) � best case
     return -1               # O(n) � worst case
+
 ## No T bound because best ? worst</code></pre>
     <p><strong>Interview insight</strong>: Use Big-O for worst-case guarantees; use Big-Theta only when best and worst cases match.</p>
   </div>
@@ -606,14 +638,21 @@ def linear_search(arr, target):
       <li>Apply Master Theorem or solve via recurrence tree</li>
     </ol>
     <pre><code># Fibonacci recurrence: T(n) = T(n-1) + T(n-2) + O(1)
+
 ## This gives O(2n) � exponential
 
+
 ## Binary search recurrence: T(n) = T(n/2) + O(1)
+
 ## Using Master Theorem: a=1, b=2, f(n)=O(1)
+
 ## log_b(a) = 0, f(n) = T(n�) ? T(n) = T(log n)
 
+
 ## Merge sort recurrence: T(n) = 2T(n/2) + O(n)
+
 ## Using Master Theorem: a=2, b=2, f(n)=O(n)
+
 ## log_b(a) = 1, f(n) = T(n�) ? T(n) = T(n log n)</code></pre>
   </div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button>
@@ -641,6 +680,7 @@ def linear_search(arr, target):
         return n
     memo[n] = fib_memo(n-1, memo) + fib_memo(n-2, memo)
     return memo[n]
+
 ## Time: O(n), Space: O(n)</code></pre>
   </div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button>
@@ -718,10 +758,12 @@ def linear_search(arr, target):
     </ul>
     <pre><code># O(log n) examples
 
+
 ## Binary search
 while left <= right:
     mid = (left + right) // 2
     # eliminate half
+
 
 ## Counting bits
 def count_bits(n):
@@ -730,6 +772,7 @@ def count_bits(n):
         count += n & 1
         n >>= 1  # divide by 2
     return count
+
 
 ## Exponentiation by squaring
 def power(x, n):
@@ -794,6 +837,7 @@ def reverse_array(arr):
         i += 1
         j -= 1
 
+
 ## Not in-place � O(n) auxiliary space
 def reverse_array_copy(arr):
     return arr[::-1]  # Creates new list</code></pre>
@@ -812,13 +856,20 @@ def reverse_array_copy(arr):
     <p><strong>Average case</strong>: Expected time over all possible inputs of size n. Requires knowing input distribution.</p>
     <p><strong>Worst case</strong>: Maximum time required for any input of size n. Most commonly used because it provides a guarantee.</p>
     <pre><code># Quick sort complexity
+
 ## Best: O(n log n) � pivot always median
+
 ## Average: O(n log n) � random pivot
+
 ## Worst: O(n�) � pivot always min/max (sorted input, bad pivot selection)
 
+
 ## Linear search complexity
+
 ## Best: O(1) � target is first element
+
 ## Average: T(n) � target is somewhere in middle
+
 ## Worst: O(n) � target is last or not present</code></pre>
     <p><strong>Interview insight</strong>: When comparing algorithms, always compare worst-case guarantees. Quick sort's O(n�) worst case can be mitigated with random pivot selection.</p>
   </div>
@@ -912,13 +963,20 @@ print(log_n_steps(10**12))   # 40</code></pre>
     </ul>
     <p>This is why P ? NP matters � exponential algorithms are effectively unsolvable for any significant n.</p>
     <pre><code># Polynomial: n� � doubling n quadruples work
+
 ## n=100: 10000 ops
+
 ## n=200: 40000 ops (4x)
 
+
 ## Exponential: 2n � adding 1 doubles work
+
 ## n=10: 1024 ops
+
 ## n=11: 2048 ops (2x)
+
 ## n=20: 1,048,576 ops
+
 ## n=30: 1,073,741,824 ops</code></pre>
   </div>
   <button class="tp-qa-mark-btn">? Mark Reviewed</button>

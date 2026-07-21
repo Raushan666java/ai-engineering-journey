@@ -40,7 +40,7 @@ flowchart LR
     H --> I[Vocabulary Building]
     I --> J[TF-IDF Vectorization]
     J --> K[Feature Matrix for Downstream Tasks]
-```
+```text
 
 
 ## Introduction
@@ -104,7 +104,7 @@ class RegexpTokenizer {
     return { tokens, spans };
   }
 }
-```
+```text
 
 The Treebank tokenizer (used in NLTK) handles contractions, quotes, and punctuation separately. For example, "don't" becomes ["do", "n't"] and "I'm" becomes ["I", "'m"].
 
@@ -133,7 +133,7 @@ class TreebankTokenizer {
     return tokens.filter((t) => t.length > 0);
   }
 }
-```
+```text
 
 **Tweet tokenizer** preserves emoticons, hashtags, mentions, and URLs. This is critical for social media NLP where standard tokenizers destroy semantic content like `#NLP` or `@user`.
 
@@ -216,7 +216,7 @@ class BPETokenizer {
     return word.split(/\s+/).map((t) => this.vocab.get(t) ?? this.vocab.get("<unk>")!);
   }
 }
-```
+```text
 
 SentencePiece extends BPE by treating the input as a raw Unicode byte sequence, removing the need for language-specific pre-tokenization. It supports both BPE and Unigram algorithms and is used by T5, XLNet, and ALBERT.
 
@@ -287,7 +287,7 @@ class WordNetLemmatizer {
     return WordNetLemmatizer.WORDNET.get(key.toLowerCase()) ?? word;
   }
 }
-```
+```text
 
 Lemmatizing requires part-of-speech tags: "meeting" as a noun should remain "meeting", but as a verb should become "meet". Stemming "meeting" gives "meet" regardless, which can discard important semantic distinctions.
 
@@ -336,7 +336,7 @@ class TextNormalizer {
     return normalized;
   }
 }
-```
+```text
 
 **Language-specific stop words**: The NLTK corpus provides stop word lists for 22 languages. For specialized domains (medical, legal), domain-specific stop words can be computed by selecting the most frequent tokens across a large in-domain corpus.
 
@@ -404,7 +404,7 @@ class Vocabulary {
     return this.tokenToId.size;
   }
 }
-```
+```text
 
 Handling OOV tokens: fallback strategies include character-level decomposition, subword fallback, or using a dedicated `<unk>` token. BERT's WordPiece returns `[UNK]` for out-of-vocabulary characters but covers most words through its 30K subword vocabulary.
 
@@ -482,7 +482,7 @@ class TfidfVectorizer {
     return names;
   }
 }
-```
+```text
 
 **Smooth IDF**: Adding 1 to both numerator and denominator (smooth IDF) prevents division by zero for terms that appear in every document. `sklearn` uses `idf = log((N+1)/(df+1)) + 1` by default.
 

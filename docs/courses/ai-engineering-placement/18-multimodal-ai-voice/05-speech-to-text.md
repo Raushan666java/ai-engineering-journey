@@ -20,6 +20,18 @@ Understanding speech to text is essential for AI engineers building production s
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding speech to text is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how speech to text works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind speech to text
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |

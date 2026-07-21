@@ -19,6 +19,18 @@ Understanding tool use and function calling is essential for AI engineers buildi
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding tool use and function calling is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how tool use and function calling works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind tool use and function calling
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -110,6 +122,7 @@ print(search_tool_schema.to_openai_schema())
 
 
 ## Overview
+
 ### 4.1.2 OpenAI Function Calling Flow
 
 ```python

@@ -20,6 +20,18 @@ Understanding database with sqlalchemy is essential for AI engineers building pr
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding database with sqlalchemy is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how database with sqlalchemy works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind database with sqlalchemy
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -275,6 +287,7 @@ class Tag(Base):
 Post.tags = relationship("Tag", secondary=post_tags, back_populates="posts")
 
 ## Eager loading vs lazy loading
+
 ## Lazy (default) — loads on access, can cause N+1
 @app.get("/posts")
 async def list_posts_lazy(db: AsyncSession = Depends(get_db)):
@@ -325,6 +338,7 @@ async def list_posts_selectin(db: AsyncSession = Depends(get_db)):
 Alembic manages database schema changes over time.
 
 ```bash
+
 ## Installation
 pip install alembic
 
@@ -332,6 +346,7 @@ pip install alembic
 alembic init alembic
 
 ## Configure alembic/env.py to use your models
+
 ## target_metadata = Base.metadata
 
 ## Auto-generate migration

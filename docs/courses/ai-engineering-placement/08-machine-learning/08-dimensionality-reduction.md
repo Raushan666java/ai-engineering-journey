@@ -20,6 +20,18 @@ Understanding dimensionality reduction is essential for AI engineers building pr
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding dimensionality reduction is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how dimensionality reduction works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind dimensionality reduction
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -141,6 +153,7 @@ class PCA:
 np.random.seed(42)
 n = 200
 X_high = np.random.randn(n, 10)
+
 ## Create correlations
 transform = np.random.randn(10, 10)
 X_high = X_high @ transform

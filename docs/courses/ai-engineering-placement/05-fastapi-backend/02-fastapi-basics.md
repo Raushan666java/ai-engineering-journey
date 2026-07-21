@@ -20,6 +20,18 @@ Understanding fastapi basics is essential for AI engineers building production s
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding fastapi basics is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how fastapi basics works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind fastapi basics
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -79,6 +91,7 @@ project/
 **Running the server**:
 
 ```python
+
 ## app/main.py
 from fastapi import FastAPI
 
@@ -90,8 +103,10 @@ def root():
 ```text
 
 ```bash
+
 ## Terminal
 uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+
 ## Visit http://localhost:8000/docs for Swagger UI
 ```text
 
@@ -253,6 +268,7 @@ async def update_user(
 **Body parameter merging**: FastAPI distinguishes between body parameters by reading the model definition. A single model parameter is read from the JSON body. Multiple model parameters are expected as nested keys.
 
 ```python
+
 ## Single body — expects {"name": "...", "email": "..."}
 @app.post("/users")
 async def create_user(user: UserCreate): ...

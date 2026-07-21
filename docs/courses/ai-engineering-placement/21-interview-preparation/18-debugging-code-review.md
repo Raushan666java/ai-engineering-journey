@@ -27,7 +27,7 @@ flowchart TD
     E -->|Yes| F[Fix]
     F --> G[Verify Tests Pass]
     G --> H[Check Edge Cases]
-```
+```text
 
 
 ### Debugging Interview Format
@@ -92,7 +92,7 @@ function findMissingNumber(nums: number[], n: number): number {
     }
     return total
 }
-```
+```text
 
 Bug: `i <= n` includes n, but the range should be 1 to n. Fix: `i < n` or start at 1: `for (let i = 1; i <= n; i++)`.
 
@@ -103,7 +103,7 @@ Bug: `i <= n` includes n, but the range should be 1 to n. Fix: `i < n` or start 
 function getFirstCharacter(str: string | null): string {
     return str.charAt(0)  // Bug: str could be null, calling charAt on null throws
 }
-```
+```text
 
 Fix: `return str?.charAt(0) ?? ''` or `if (!str) return ''; return str.charAt(0);`
 
@@ -115,7 +115,7 @@ function sortAndReverse(arr: number[]): number[] {
     arr.sort((a, b) => a - b)  // Bug: sort mutates the original array
     return arr.reverse()  // Bug: also mutates
 }
-```
+```text
 
 Fix: `const copy = [...arr]; copy.sort(...); return copy.reverse();`
 
@@ -130,7 +130,7 @@ function calculateTotal(prices: number[]): number {
     }
     return total  // Should round to 2 decimal places
 }
-```
+```text
 
 Fix: `return Math.round(total * 100) / 100;` or use integer arithmetic (cents).
 
@@ -147,7 +147,7 @@ async function processItems(items: string[]): Promise<void> {
     // Bug: at this point, results is still empty
     saveResults(results)
 }
-```
+```text
 
 Fix: Use `for...of` with await, or `Promise.all` with map:
 ```typescript
@@ -155,7 +155,7 @@ async function processItems(items: string[]): Promise<void> {
     const results = await Promise.all(items.map((item) => processItem(item)))
     saveResults(results)
 }
-```
+```text
 
 
 ### Example 6: Type Coercion
@@ -172,7 +172,7 @@ function countOccurrences(arr: any[]): Record<string, number> {
     }
     return counts
 }
-```
+```text
 
 Bug: when `counts[item]` is 0 (falsy), it incorrectly sets to 1 instead of incrementing. Fix: `if (counts[item] !== undefined)`.
 
@@ -187,7 +187,7 @@ function createCallbacks(): (() => void)[] {
     }
     return callbacks
 }
-```
+```text
 
 Fix: Use `let i = 0` (block scope) or an IIFE closure.
 
@@ -206,7 +206,7 @@ function binarySearch(arr: number[], target: number): number {
     }
     return -1  // Bug: never checks if arr[left] === target when left === right
 }
-```
+```text
 
 Fix: `while (left <= right)` or add a check after the loop for arr[left] === target.
 
@@ -222,7 +222,7 @@ function expensiveComputation(key: string): number {
     cache.set(key, result)
     return result
 }
-```
+```text
 
 Fix: Use async/await properly and handle concurrent requests for the same key with a pending promise map.
 
@@ -233,7 +233,7 @@ Fix: Use async/await properly and handle concurrent requests for the same key wi
 function areEqual(a: object, b: object): boolean {
     return a === b  // Bug: checks reference equality, not deep equality
 }
-```
+```text
 
 Fix: Implement recursive deep equality or use JSON.stringify for simple cases: `JSON.stringify(a) === JSON.stringify(b)` (does not handle all types).
 
@@ -249,7 +249,7 @@ app.post('/api/users', async (req, res) => {
     const saved = await db.save(user)
     res.status(201).json(saved)
 })
-```
+```text
 
 Issues found:
 - Missing input validation (`req.body` could be malformed)
@@ -276,7 +276,7 @@ app.post('/api/users', rateLimit(100, 60000), async (req, res, next) => {
         next(error)
     }
 })
-```
+```text
 
 
 ### Review 2: File Processing
@@ -287,7 +287,7 @@ function processFile(filename: string): string[] {
     const lines = data.split('\\n')
     return lines.filter((l) => l.trim() !== '')
 }
-```
+```text
 
 Issues found:
 - Synchronous file reading blocks event loop for large files
@@ -308,7 +308,7 @@ async function getOrders(userId: string): Promise<Order[]> {
     )
     return result.rows
 }
-```
+```text
 
 Fix: Use parameterized queries:
 ```typescript
@@ -318,7 +318,7 @@ async function getOrders(userId: string): Promise<Order[]> {
     )
     return result.rows
 }
-```
+```text
 
 
 
@@ -344,7 +344,7 @@ async function getOrders(userId: string): Promise<Order[]> {
 5. Floating point: 	oFixed(2) returns a string, use Math.round(n * 100) / 100
 6. map without return: rr.map(x => x * 2) returns a new array, but if you forget the return in {}, it returns undefined
 7. ilter(Boolean) removes falsy values including 0 and empty strings
-8. 
+8.
 educe without initial value: errors on empty arrays
 9. const does not make objects/arrays immutable
 10. Promise.all fails fast: one rejection rejects the entire promise
@@ -445,6 +445,14 @@ async function getData<T = any>(url: string): Promise<T> {
 `
 
 
+
+## Exercises
+
+**Easy** — Implement a basic debugging code review example that demonstrates the core concept.
+
+**Medium** — Create a more complex implementation that handles edge cases.
+
+**Hard** — Design an optimized solution for large-scale debugging code review scenarios.
 
 ## Summary
 

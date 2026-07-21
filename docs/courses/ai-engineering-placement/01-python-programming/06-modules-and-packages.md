@@ -20,6 +20,39 @@ Understanding modules and packages is essential for AI engineers building produc
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding modules and packages is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how modules and packages works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind modules and packages
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
+## Examples
+
+### Basic Example
+
+```python
+## Basic modules and packages example
+def example():
+    """Demonstrate modules and packages"""
+    result = "Hello, modules and packages!"
+    print(result)
+    return result
+
+example()
+```
+
+### Expected Output
+
+```text
+Hello, modules and packages!
+```
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -48,6 +81,7 @@ flowchart LR
 A module is a .py file containing Python definitions.
 
 `python
+
 ## mymodule.py
 PI = 3.14159
 
@@ -294,14 +328,17 @@ import fs from "fs";
 `__all__` controls what is exported when using `from module import *`.
 
 `python
+
 ## utils/__init__.py
 __all__ = ["format_date", "parse_csv"]
 
 ## Only these two names are accessible via from utils import *
+
 ## Without __all__, import * exports all non-underscore names
 `
 
 `python
+
 ## mymodule.py
 __all__ = ["public_func", "CONSTANT"]
 
@@ -314,6 +351,7 @@ def _private_func():
 CONSTANT = 42
 
 ## from mymodule import *  --> imports public_func and CONSTANT only
+
 ## from mymodule import _private_func  --> still works explicitly
 `
 
@@ -322,7 +360,9 @@ CONSTANT = 42
 Circular imports happen when two modules import each other.
 
 `python
+
 ## module_a.py
+
 ## from module_b import func_b  # BAD: circular!
 
 def func_a():
@@ -334,15 +374,22 @@ def use_b():
     func_b()
 
 ## Solution: restructure into a common module
+
 ## common.py: shared definitions used by both A and B
 `
 
 `python
+
 ## Good design patterns to avoid circular imports:
+
 ## 1. Move shared types to a base module
+
 ## 2. Use lazy imports inside functions
+
 ## 3. Restructure package hierarchy
+
 ## 4. Use import at the bottom of the file
+
 ## 5. Merge modules that depend on each other
 `
 
@@ -370,40 +417,58 @@ print(greet("Alice"))  # might still be old version
 Namespace packages allow splitting a package across multiple directories.
 
 `python
+
 ## No __init__.py needed (PEP 420)
+
 ## Directory structure:
+
 ## project/
+
 ##   mypackage/
+
 ##     sub_a/
+
 ##       module1.py
+
 ##   vendor/
+
 ##     mypackage/
+
 ##       sub_b/
+
 ##         module2.py
 
 ## Both sub_a and sub_b are part of mypackage namespace
+
 ## import mypackage.sub_a.module1
+
 ## import mypackage.sub_b.module2
+
 ## This enables plugin systems and distributed packages
 `
 
 ## 6.11 Common Pitfalls
 
 `python
+
 ## Pitfall 1: Import * pollutes namespace
 from math import *  # BAD: 50+ names imported
 print(sin(0))       # can conflict with local variables
 
 ## Pitfall 2: Module-level side effects
+
 ## bad_module.py
 import os
 os.chdir("/tmp")    # BAD: importing changes working directory
 
 ## Pitfall 3: Circular imports causing AttributeError
+
 ## module_a imports module_b; module_b imports module_a
+
 ## Solution: restructure or use lazy imports
 
 ## Pitfall 4: Not using __name__ guard
+
 ## code.py
 print("Module loaded")  # runs on import too!
 if __name__ == "__main__":
@@ -416,6 +481,7 @@ sys.path.insert(0, "/my/custom/path")  # affects all subsequent imports
 ## 6.12 Advanced Import Techniques
 
 `python
+
 ## Dynamic imports
 module_name = "json"
 import importlib
@@ -433,7 +499,9 @@ import pkg_resources
 data_path = pkg_resources.resource_filename("mypackage", "data/config.json")
 
 ## Self-contained packages with __main__.py
+
 ## python -m mypackage reads __main__.py entry point
+
 ## Useful for creating runnable packages
 `
 
@@ -468,9 +536,13 @@ import Calculator from "./Calculator.js";
 import sys
 
 ## Python searches modules in this order:
+
 ## 1. Current directory (script directory)
+
 ## 2. PYTHONPATH environment variable directories
+
 ## 3. Standard library directories
+
 ## 4. Site-packages (third-party packages)
 
 print("Module search paths:")
@@ -482,25 +554,34 @@ sys.path.insert(0, "/path/to/custom/modules")
 import my_custom_module  # now found
 
 ## Virtual environments modify sys.path to point to isolated site-packages
+
 ## python -m venv creates a fresh environment with its own sys.path
 
 ## Module cache
 import sys
 print(sys.modules.keys())  # all currently imported modules
+
 ## Cached modules persist until interpreter exits
+
 ## Reloading (importlib.reload) updates the cached module in-place
 `
 
 ## 6.15 Building a Simple Package from Scratch
 
 `python
+
 ## Step-by-step package creation
 
 ## Directory structure:
+
 ## text_analyzer/
+
 ##   __init__.py       # package initialization
+
 ##   tokenizer.py      # text tokenization
+
 ##   stats.py          # frequency statistics
+
 ##   utils.py          # helper functions
 
 ## __init__.py
@@ -555,6 +636,7 @@ print(f"Words: {len(tokens)}, Score: {score:.2f}")
 ## 6.16 Testing Your Modules
 
 `python
+
 ## test_tokenizer.py
 import unittest
 from text_analyzer.tokenizer import tokenize, sentence_split
@@ -581,6 +663,7 @@ if __name__ == "__main__":
     unittest.main()
 
 ## Run with: python -m unittest test_tokenizer.py
+
 ## Or: python -m pytest test_tokenizer.py
 `
 

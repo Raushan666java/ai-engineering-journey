@@ -20,6 +20,18 @@ Hash maps provide O(1) average-case lookup, insertion, and deletion. They are th
 - Array basics
 - Basic understanding of hashing
 
+
+## Theory
+
+Understanding hash maps and sets is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how hash maps and sets works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind hash maps and sets
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -168,11 +180,13 @@ def char_frequency(s):
     return freq
 
 print(char_frequency("hello world"))
+
 ## {'h': 1, 'e': 1, 'l': 3, 'o': 2, ' ': 1, 'w': 1, 'r': 1, 'd': 1}
 ```text
 
 
 ## Overview
+
 ### Word Frequency
 
 ```python
@@ -185,11 +199,13 @@ def word_frequency(text):
 
 text = "the quick brown fox jumps over the lazy dog the quick"
 print(word_frequency(text))
+
 ## {'the': 3, 'quick': 2, 'brown': 1, 'fox': 1, 'jumps': 1, 'over': 1, 'lazy': 1, 'dog': 1}
 ```text
 
 
 ## Overview
+
 ### Majority Element (Boyer-Moore Voting)
 
 Find the element that appears more than n/2 times. While Boyer-Moore uses O(1) space, the hash map approach is straightforward:
@@ -382,6 +398,7 @@ def group_anagrams(strs):
 
 strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
 print(group_anagrams(strs))
+
 ## [['eat', 'tea', 'ate'], ['tan', 'nat'], ['bat']]
 ```text
 
@@ -402,6 +419,7 @@ print(group_anagrams_optimized(["eat", "tea", "tan", "ate", "nat", "bat"]))
 
 
 ## Overview
+
 ### Isomorphic Strings
 
 Two strings are isomorphic if the characters in one can be replaced to get the other, preserving order.
@@ -843,6 +861,7 @@ print(top_k_frequent_bucket([1, 1, 1, 2, 2, 3], 2))  # [1, 2]
 
 
 ## Overview
+
 ### Exercise 3 (Medium): Valid Sudoku
 
 Determine if a 9x9 Sudoku board is valid. Each row, column, and 3x3 sub-box must contain the digits 1-9 without repetition.

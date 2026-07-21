@@ -18,6 +18,18 @@ Understanding tracing and monitoring is essential for AI engineers building prod
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding tracing and monitoring is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how tracing and monitoring works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind tracing and monitoring
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -794,7 +806,7 @@ Answer: B
 
 4. Build a dashboard with 3 panels: latency (P95 line chart), throughput (RPM gauge), and cost (per-component breakdown). Simulate 1 hour of data.
 
-5. Implement an anomaly detector using both IQR and moving average Z-score methods. Test with a dataset containing 3 anomalous values and evaluate detection 
+5. Implement an anomaly detector using both IQR and moving average Z-score methods. Test with a dataset containing 3 anomalous values and evaluate detection
 
 ## Revision Notes
 

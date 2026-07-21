@@ -20,6 +20,18 @@ Understanding advanced rag techniques is essential for AI engineers building pro
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding advanced rag techniques is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how advanced rag techniques works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind advanced rag techniques
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -411,7 +423,7 @@ class CorrectiveRAG:
 Answer: {answer}
 
 List any factual errors, omissions, or improvements needed.
-If the answer is correct as-is, say "CORRECT".""" 
+If the answer is correct as-is, say "CORRECT"."""
             review = self.generator(correction_prompt)
 
             if "CORRECT" in review:
@@ -1012,7 +1024,7 @@ Answer: B
 
 4. Implement an agentic RAG system with 3 tools: web search, vector search, and calculator. Demonstrate routing a query that requires all 3 tools.
 
-5. Design an ablation study comparing standard RAG, Self-RAG, multi-hop RAG, and Graph RAG on a benchmark of 20 queries. Report faithfulness, completeness, and average latency 
+5. Design an ablation study comparing standard RAG, Self-RAG, multi-hop RAG, and Graph RAG on a benchmark of 20 queries. Report faithfulness, completeness, and average latency
 
 ## Revision Notes
 

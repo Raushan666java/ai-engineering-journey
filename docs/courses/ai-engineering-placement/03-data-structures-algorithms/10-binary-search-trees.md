@@ -20,6 +20,18 @@ Tries (prefix trees) are specialized trees for efficient string operations. They
 - Tree basics
 - String operations
 
+
+## Theory
+
+Understanding binary search trees is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how binary search trees works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind binary search trees
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -59,10 +71,15 @@ class BSTNode:
         self.right = None
 
 ## Valid BST
+
 ##       5
+
 ##      / \
+
 ##     3   7
+
 ##    / \   \
+
 ##   2   4   8
 root = BSTNode(5)
 root.left = BSTNode(3)
@@ -154,7 +171,7 @@ def is_valid_bst(root):
             return True
         if node.val <= low or node.val >= high:
             return False
-        return (validate(node.left, low, node.val) and 
+        return (validate(node.left, low, node.val) and
                 validate(node.right, node.val, high))
     return validate(root, float("-inf"), float("inf"))
 ```text

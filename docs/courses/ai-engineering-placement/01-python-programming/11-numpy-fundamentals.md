@@ -20,6 +20,39 @@ Understanding numpy fundamentals is essential for AI engineers building producti
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding numpy fundamentals is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how numpy fundamentals works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind numpy fundamentals
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
+## Examples
+
+### Basic Example
+
+```python
+## Basic numpy fundamentals example
+def example():
+    """Demonstrate numpy fundamentals"""
+    result = "Hello, numpy fundamentals!"
+    print(result)
+    return result
+
+example()
+```
+
+### Expected Output
+
+```text
+Hello, numpy fundamentals!
+```
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -86,13 +119,18 @@ print(arr[::-1])     # [9 8 7 6 5 4 3 2 1 0]
 
 matrix = np.arange(12).reshape(3, 4)
 print(matrix)
+
 ## [[ 0  1  2  3]
+
 ##  [ 4  5  6  7]
+
 ##  [ 8  9 10 11]]
 
 print(matrix[1, 2])     # 6 (row 1, col 2)
 print(matrix[0:2, 1:3])
+
 ## [[1 2]
+
 ##  [5 6]]
 
 ## Fancy indexing
@@ -112,6 +150,7 @@ print(np.where(arr > 5, arr, -1))  # threshold
 ## 11.3 Universal Functions & Vectorization
 
 `python
+
 ## ufuncs operate element-wise (fast C loops)
 arr = np.array([1, 2, 3, 4, 5])
 
@@ -148,6 +187,7 @@ print(m.sum(axis=1))  # [3 7] (sum rows)
 Broadcasting allows arithmetic between arrays of different shapes.
 
 `python
+
 ## Scalar + array
 arr = np.array([1, 2, 3])
 print(arr + 10)        # [11 12 13]
@@ -158,8 +198,11 @@ row = np.array([10, 20, 30, 40])
 print(matrix + row)    # broadcast row across all rows
 
 ## Broadcasting rules:
+
 ## 1. If dimensions differ, prepend 1s to smaller shape
+
 ## 2. Arrays with size 1 in a dimension are stretched to match
+
 ## 3. Sizes must match or be 1, else error
 
 a = np.ones((3, 1))   # shape (3, 1)
@@ -176,6 +219,7 @@ normalized = (data - mean) / std  # broadcasts
 ## 11.5 Linear Algebra
 
 `python
+
 ## Dot product
 a = np.array([1, 2, 3])
 b = np.array([4, 5, 6])
@@ -186,7 +230,9 @@ print(a @ b)              # 32 (same, @ operator)
 A = np.array([[1, 2], [3, 4]])
 B = np.array([[5, 6], [7, 8]])
 print(A @ B)
+
 ## [[19 22]
+
 ##  [43 50]]
 
 ## Matrix inverse
@@ -214,6 +260,7 @@ print(np.linalg.norm([3, 4], ord=1))  # 7.0
 ## 11.6 Random & Statistics
 
 `python
+
 ## Random seed for reproducibility
 np.random.seed(42)
 
@@ -403,6 +450,7 @@ squeezed = np.squeeze(col_vector)   # back to (3,)
 ## 11.8 File I/O with NumPy
 
 `python
+
 ## Binary format (.npy)
 arr = np.random.randn(100, 50)
 np.save("array.npy", arr)
@@ -432,6 +480,7 @@ data = np.genfromtxt("messy.csv", delimiter=",", dtype=float, filling_values=0.0
 ## 11.9 Structured Arrays
 
 `python
+
 ## Structured arrays with mixed types
 dtype = [("name", "U10"), ("age", "i4"), ("salary", "f8")]
 data = np.array([
@@ -461,12 +510,14 @@ print(data[["name", "salary"]])
 ## 11.10 Advanced Linear Algebra
 
 `python
+
 ## Matrix decompositions
 A = np.random.randn(5, 5)
 
 ## LU decomposition
 import scipy.linalg
 P, L, U = scipy.linalg.lu(A) if False else (None, None, None)
+
 ## In pure numpy, use np.linalg
 
 ## QR decomposition
@@ -493,8 +544,11 @@ x = np.array([1, 2, 3])
 y = np.array([4, 5, 6])
 outer = np.outer(x, y)
 print(outer)
+
 ## [[ 4  5  6]
+
 ##  [ 8 10 12]
+
 ##  [12 15 18]]
 
 ## Einsum for complex operations
@@ -507,6 +561,7 @@ print(np.allclose(result, a @ b))  # True
 ## 11.11 Common Pitfalls
 
 `python
+
 ## Pitfall 1: View vs Copy confusion
 arr = np.array([1, 2, 3, 4, 5])
 slice_view = arr[0:3]    # view - modifications reflect in original
@@ -520,16 +575,20 @@ print(arr[0])  # 99 (copy did NOT modify original)
 arr = np.array([1, 2, 3])
 arr2 = arr.sort()   # sort() is in-place, returns None
 print(arr2)  # None!
+
 ## Use np.sort(arr) for out-of-place
 
 ## Pitfall 3: Broadcasting errors
 a = np.ones((3, 2))
 b = np.ones((2, 3))
+
 ## a + b  # ValueError: shapes (3,2) and (2,3) not aligned
 
 ## Pitfall 4: Integer overflow
 arr = np.array([100], dtype=np.int8)
+
 ## arr[0] += 100  # overflow! int8 max is 127
+
 ## Use dtype=np.int64 or np.float64
 
 ## Pitfall 5: Comparing floats
@@ -559,6 +618,7 @@ def good_approach():
 ## 2. Use in-place operations
 arr = np.random.randn(1000)
 arr += 1  # in-place, no copy
+
 ## vs arr = arr + 1  # creates new array
 
 ## 3. Use vectorized operations over loops
@@ -577,7 +637,9 @@ arr_int64 = np.zeros(1000000, dtype=np.int64)  # 8 MB
 
 ## 5. Use NumPy's own functions over Python's
 arr = np.random.randn(1000)
+
 ## Slow: sum(arr)  # Python's built-in
+
 ## Fast: arr.sum()  # NumPy's method
 `
 

@@ -20,6 +20,18 @@ Understanding aws containers is essential for AI engineers building production s
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding aws containers is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how aws containers works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind aws containers
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -60,6 +72,7 @@ Amazon ECS is a fully managed container orchestration service.
 | Duration | Short-lived and long | Best for persistent |
 
 ```bash
+
 ## Create ECS cluster
 aws ecs create-cluster --cluster-name my-cluster
 
@@ -72,6 +85,7 @@ aws ecs list-clusters
 ECR is a fully managed Docker container registry.
 
 ```bash
+
 ## Create repository
 aws ecr create-repository --repository-name my-app
 
@@ -163,6 +177,7 @@ aws ecs register-task-definition --cli-input-json file://task-definition.json
 Services maintain a desired count of tasks behind a load balancer.
 
 ```bash
+
 ## Create service
 aws ecs create-service     --cluster my-cluster     --service-name api-service     --task-definition my-app-task:1     --desired-count 3     --launch-type FARGATE     --network-configuration "awsvpcConfiguration={subnets=[subnet-abc,subnet-def],securityGroups=[sg-123],assignPublicIp=ENABLED}"     --load-balancers "targetGroupArn=arn:aws:elasticloadbalancing:...,containerName=api,containerPort=8000"
 
@@ -241,6 +256,7 @@ aws ecs update-service     --cluster my-cluster     --service api-service     --
 EKS is managed Kubernetes. AWS handles the control plane; you manage worker nodes.
 
 ```bash
+
 ## Create EKS cluster
 eksctl create cluster     --name my-cluster     --region us-east-1     --nodegroup-name standard-workers     --node-type t3.medium     --nodes 3     --nodes-min 1     --nodes-max 6     --managed
 
@@ -274,6 +290,7 @@ eksctl create fargateprofile     --cluster my-cluster     --name my-profile     
 **AWS CodePipeline with ECS**:
 
 ```yaml
+
 ## buildspec.yml for CodeBuild
 version: 0.2
 phases:
@@ -293,6 +310,7 @@ artifacts:
 ```text
 
 ```bash
+
 ## Create pipeline
 aws codepipeline create-pipeline --cli-input-json file://pipeline.json
 

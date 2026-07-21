@@ -20,6 +20,18 @@ Understanding production rag systems is essential for AI engineers building prod
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding production rag systems is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how production rag systems works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind production rag systems
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -214,19 +226,33 @@ class SourceResponse(BaseModel):
 
 ## app = FastAPI(title="RAG API")
 #
+
 ## @app.post("/query", response_model=QueryResponse)
+
 ## async def query_endpoint(request: QueryRequest):
+
 ##     try:
+
 ##         start = time.time()
+
 ##         result = rag_pipeline.query(request.query, request.top_k)
+
 ##         elapsed = (time.time() - start) * 1000
+
 ##         return QueryResponse(
+
 ##             answer=result["response"],
+
 ##             sources=[s["text"] for s in result["sources"]],
+
 ##             confidence=result.get("confidence", 0.95),
+
 ##             latency_ms=round(elapsed, 2),
+
 ##         )
+
 ##     except Exception as e:
+
 ##         raise HTTPException(status_code=500, detail=str(e))
 
 
@@ -235,6 +261,7 @@ print("FastAPI RAG endpoint design ready")
 
 
 ## Overview
+
 ### 9.2.2 Authentication
 
 ```python

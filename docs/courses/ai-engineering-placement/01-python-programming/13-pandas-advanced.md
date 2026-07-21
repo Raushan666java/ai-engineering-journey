@@ -20,6 +20,18 @@ Understanding pandas advanced is essential for AI engineers building production 
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding pandas advanced is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how pandas advanced works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind pandas advanced
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -82,6 +94,7 @@ print(pivot)
 **pivot_table parameters**:
 
 ```python
+
 ## Multiple values and aggregations
 pivot = df.pivot_table(
     values=["sales", "quantity"],
@@ -103,6 +116,7 @@ pivot = df.pivot_table(
 **crosstab** computes a frequency table of two or more factors:
 
 ```python
+
 ## Simple frequency table
 ct = pd.crosstab(df["product"], df["region"])
 print(ct)
@@ -151,17 +165,24 @@ df = pd.DataFrame({
 }, index=index)
 
 print(df)
+
 ##               sales  profit
+
 ## product year
+
 ## A       2023    100      20
+
 ##         2024    120      25
+
 ## B       2023    150      30
+
 ##         2024    140      28
 ```text
 
 **Selecting from MultiIndex**:
 
 ```python
+
 ## Select all rows for product A
 print(df.loc["A"])
 
@@ -176,6 +197,7 @@ print(df.xs(key=2024, level="year"))
 **swaplevel and reorder_levels**:
 
 ```python
+
 ## Swap index levels
 swapped = df.swaplevel()
 print(swapped)
@@ -187,13 +209,19 @@ reordered = df.reorder_levels(["year", "product"])
 **stack and unstack** convert between wide and long formats:
 
 ```python
+
 ## unstack: innermost index level → columns
 unstacked = df.unstack()
 print(unstacked)
+
 ##         sales         profit
+
 ## year    2023  2024    2023  2024
+
 ## product
+
 ## A        100   120      20    25
+
 ## B        150   140      30    28
 
 ## stack: columns → innermost index level
@@ -204,6 +232,7 @@ print(restacked)
 **set_index and reset_index**:
 
 ```python
+
 ## Move columns to index
 df_indexed = df.reset_index().set_index(["product", "year"])
 
@@ -232,6 +261,7 @@ Window functions operate on a sliding or expanding window of rows.
 **Rolling window**:
 
 ```python
+
 ## 3-day rolling mean
 series = pd.Series(np.random.randn(10))
 rolling_mean = series.rolling(window=3).mean()
@@ -246,6 +276,7 @@ stats = series.rolling(3).agg(["mean", "std", "min", "max"])
 **Expanding window** (uses all data from start):
 
 ```python
+
 ## Cumulative statistics
 expanding_mean = series.expanding().mean()
 expanding_std = series.expanding().std()
@@ -333,6 +364,7 @@ parts = dates.str.extractall(r"(?P<year>\d{4})-(?P<month>\d{2})-(?P<day>\d{2})")
 **Checking string patterns**:
 
 ```python
+
 ## Startswith / endswith
 mask = s.str.startswith("H")
 mask = s.str.endswith(".com")
@@ -379,6 +411,7 @@ df.eval("""
 **Categorical data** reduces memory for repeated strings:
 
 ```python
+
 ## Convert object column to categorical
 df["category"] = pd.Categorical(
     np.random.choice(["low", "medium", "high", "critical"], n)
@@ -386,6 +419,7 @@ df["category"] = pd.Categorical(
 
 ## Memory comparison
 print(df["category"].memory_usage(deep=True))
+
 ## vs
 identical_df = pd.DataFrame({
     "category": np.random.choice(["low", "medium", "high", "critical"], n)
@@ -416,6 +450,7 @@ result = df["A"].rolling(100).apply(
 **Other performance tips**:
 
 ```python
+
 ## Use inplace=False (default) chain operations
 df = (df
     .query("A > 0")
@@ -445,6 +480,7 @@ Pandas excels at time series data manipulation.
 **Date ranges and frequencies**:
 
 ```python
+
 ## Create date ranges
 dates = pd.date_range(
     start="2024-01-01",
@@ -463,6 +499,7 @@ every_6h = pd.date_range("2024-01-01", periods=4, freq="6h")
 **to_datetime and parsing**:
 
 ```python
+
 ## Parse string columns to datetime
 df = pd.DataFrame({"date_str": ["2024-01-15", "2024-02-20", "invalid"]})
 df["date"] = pd.to_datetime(df["date_str"], errors="coerce")
@@ -481,6 +518,7 @@ df["date"] = pd.to_datetime(df["date_str"], infer_datetime_format=True)
 **resample** changes the frequency of time series:
 
 ```python
+
 ## Create minute-level data
 idx = pd.date_range("2024-01-01", periods=1440, freq="min")
 ts = pd.Series(np.random.randn(1440), index=idx)
@@ -497,6 +535,7 @@ hourly = daily.resample("h").interpolate(method="linear")
 **Time zone handling**:
 
 ```python
+
 ## Localize naive timestamps
 ts_utc = ts.tz_localize("UTC")
 
@@ -508,6 +547,7 @@ ts_pst = ts_utc.tz_convert("US/Pacific")
 **Window functions on time series**:
 
 ```python
+
 ## Rolling with time-based window
 ts.rolling("1h").mean()        # 1-hour rolling mean
 ts.rolling("30min").std()      # 30-minute rolling std

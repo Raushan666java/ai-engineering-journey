@@ -22,6 +22,18 @@ Understanding pytorch nn module is essential for AI engineers building productio
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding pytorch nn module is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how pytorch nn module works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind pytorch nn module
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -45,7 +57,7 @@ flowchart LR
     D --> F[Automatic fprop]
     E --> F
     F --> G[Output]
-```
+```text
 
 
 ## 3.1 nn.Module Basics
@@ -81,7 +93,7 @@ model.train()
 print(f"Training mode: {model.training}")
 model.eval()
 print(f"Evaluation mode: {model.training}")
-```
+```text
 
 **nn.Module provides**: Automatic parameter tracking, train()/eval() mode, to(device), state_dict(), register_buffer().
 
@@ -107,7 +119,7 @@ model2 = nn.Sequential(OrderedDict([
     ("fc2", nn.Linear(64, 2)),
 ]))
 model2.add_module("dropout", nn.Dropout(0.1))
-```
+```text
 
 **When to use Sequential**: Simple feed-forward without branching or skip connections.
 
@@ -147,7 +159,7 @@ custom = CustomLinear(10, 20)
 block = ResidualBlock(64)
 x = torch.randn(5, 64)
 print(f"Residual output: {block(x).shape}")
-```
+```text
 
 ---
 
@@ -170,7 +182,7 @@ nn.init.kaiming_normal_(layer.weight, mode="fan_out")
 nn.init.orthogonal_(layer.weight)
 nn.init.sparse_(layer.weight, sparsity=0.9, std=0.01)
 print(f"Init schemes tested on Linear(100,100)")
-```
+```text
 
 ---
 
@@ -195,7 +207,7 @@ for param in model.fc1.parameters():
 ## Buffers (non-trainable)
 bn = nn.BatchNorm1d(10)
 print(f"Buffers: {[n for n, _ in bn.named_buffers()]}")
-```
+```text
 
 ---
 
@@ -228,7 +240,7 @@ def get_grad(name):
 model.fc3.register_backward_hook(get_grad("fc3"))
 y = torch.randn(5, 2)
 F.mse_loss(model(x), y).backward()
-```
+```text
 
 ---
 
@@ -238,6 +250,7 @@ F.mse_loss(model(x), y).backward()
 Sometimes we need to modify an existing model by swapping layers, adding branches, or composing sub-networks dynamically.
 
 ```python
+
 ## Replace last layer for transfer learning
 model = SimpleMLP(10, 64, 2)
 model.fc3 = nn.Linear(64, 10)  # Replace last layer
@@ -261,7 +274,7 @@ base = SimpleMLP(10, 64, 2)
 dual = DualOutputMLP(base, 5)
 m, e = dual(torch.randn(5, 10))
 print(f"Main: {m.shape}, Extra: {e.shape}")
-```
+```text
 
 **Use cases**: Multi-task learning, auxiliary loss computation, feature pyramid networks.
 
@@ -295,7 +308,7 @@ class LinearTS extends ModuleTS {
 const seq = new LinearTS(10, 64);
 const out = seq.forward(Array.from({length: 5}, () => Array.from({length: 10}, () => Math.random())));
 console.log(`Output shape: [${out.length}, ${out[0].length}]`);
-```
+```text
 
 
 ## Summary
@@ -421,7 +434,7 @@ class ClampFunction(torch.autograd.Function):
         grad_input[x < lo] = 0
         grad_input[x > hi] = 0
         return grad_input, None, None
-```
+```text
 
 Use it: `output = ClampFunction.apply(x, -1.0, 1.0)`
 

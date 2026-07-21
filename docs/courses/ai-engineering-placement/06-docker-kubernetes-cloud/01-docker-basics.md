@@ -39,7 +39,7 @@ flowchart LR
     F --> G[Networking]
     G --> H[Volumes]
     H --> I[Docker Compose]
-```
+```text
 
 
 ## Introduction
@@ -66,10 +66,11 @@ Containers provide OS-level virtualization by sharing the host kernel, while VMs
 ## Examples
 
 ```bash
+
 ## Check Docker version
 docker --version
 docker info
-```
+```text
 
 **Comparison table**:
 
@@ -104,11 +105,12 @@ flowchart LR
         D1 --> D2[Host OS]
         D2 --> D3[Hardware]
     end
-```
+```text
 
 
 
 ## Overview
+
 ### 1.2 Docker Architecture
 
 Docker follows a client-server architecture with three main components:
@@ -120,15 +122,18 @@ Docker follows a client-server architecture with three main components:
 **Docker Registry (Docker Hub)**: Repository for Docker images. Default public registry is Docker Hub. Private registries include AWS ECR, Google Artifact Registry, and self-hosted registries.
 
 ```bash
+
 ## Docker daemon info
 docker info
+
 
 ## Show running containers
 docker ps
 
+
 ## Show all containers (including stopped)
 docker ps -a
-```
+```text
 
 **Key Docker objects**:
 
@@ -142,81 +147,96 @@ flowchart TD
     C --> I
     C --> N
     C --> V
-```
+```text
 
 Images are read-only templates. Containers are runnable instances of images. Each container gets its own filesystem, network stack, and process tree.
 
 
 
 ## Overview
+
 ### 1.3 Working with Docker Images
 
 Images consist of read-only layers stacked on top of each other. Each RUN, COPY, or ADD instruction adds a new layer. Layers are cached and reused across builds.
 
 ```bash
+
 ## Pull an image
 docker pull nginx:latest
 docker pull python:3.11-slim
 
+
 ## List images
 docker images
+
 ## or
 docker image ls
+
 
 ## Tag an image
 docker tag nginx:latest my-nginx:v1
 
+
 ## Push to registry
 docker push my-nginx:v1
+
 
 ## Remove images
 docker rmi nginx:latest
 docker image prune  # remove dangling images
 
+
 ## Show image layers
 docker history nginx:latest
-```
+```text
 
 **Image naming convention**:
 
-```
+```text
 [registry/][user/]repository[:tag]
-```
+```text
 
 Examples: `python:3.11-slim`, `nginx:latest`, `myregistry.com/team/app:v2`
 
 **Layers and caching**: Docker caches each layer after a successful build. If a layer hasn't changed, Docker reuses the cached version. Place instructions that change less frequently (system packages) earlier in the Dockerfile.
 
 ```bash
+
 ## Save and load images as tar files
 docker save -o my-image.tar my-image:tag
 docker load -i my-image.tar
-```
+```text
 
 
 
 ## Overview
+
 ### 1.4 Dockerfiles
 
 A Dockerfile is a text file with instructions for building an image.
 
 ```dockerfile
+
 ## Dockerfile for a Python AI service
 FROM python:3.11-slim AS builder
 
 WORKDIR /app
+
 
 ## Install system dependencies
 RUN apt-get update && apt-get install -y \
     gcc \
     && rm -rf /var/lib/apt/lists/*
 
+
 ## Copy requirements first (leverage layer caching)
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
+
 ## Copy application code
 COPY src/ ./src/
+
 
 ## Final stage — multi-stage build
 FROM python:3.11-slim AS runtime
@@ -228,7 +248,7 @@ COPY --from=builder /app/src ./src
 EXPOSE 8000
 
 CMD ["python", "-m", "uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8000"]
-```
+```text
 
 **Key Dockerfile instructions**:
 
@@ -247,56 +267,70 @@ CMD ["python", "-m", "uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "
 **Multi-stage builds** keep final images small by separating build and runtime stages.
 
 ```bash
+
 ## Build an image
 docker build -t my-app:v1 .
 
+
 ## Build with build args
 docker build --build-arg VERSION=2.0 -t my-app:v2 .
-```
+```text
 
 
 
 ## Overview
+
 ### 1.5 Container Lifecycle
 
 ```bash
+
 ## Run a container
 docker run -d --name web -p 8080:80 nginx:latest
 
+
 ## Run interactively
 docker run -it --name debug python:3.11-slim bash
+
 
 ## List containers
 docker ps           # running only
 docker ps -a        # all containers
 
+
 ## Stop a container
 docker stop web
+
 
 ## Start a stopped container
 docker start web
 
+
 ## Restart
 docker restart web
+
 
 ## Remove a container
 docker rm web
 docker rm -f web    # force remove running container
 docker container prune  # remove all stopped containers
 
+
 ## Execute command in running container
 docker exec -it web bash
+
 
 ## View logs
 docker logs web
 docker logs -f web  # follow mode
 
+
 ## Inspect container details
 docker inspect web
 
+
 ## View resource usage
 docker stats web
-```
+```text
 
 **Container states**:
 
@@ -311,31 +345,37 @@ stateDiagram-v2
     Stopped --> Running: docker start
     Stopped --> [*]: docker rm
     Exited --> [*]: docker rm
-```
+```text
 
 
 
 ## Overview
+
 ### 1.6 Docker Networking
 
 Docker provides several network drivers for different isolation levels.
 
 ```bash
+
 ## List networks
 docker network ls
+
 
 ## Create custom network
 docker network create --driver bridge my-network
 
+
 ## Run container on specific network
 docker run -d --name app --network my-network my-app
+
 
 ## Connect container to network
 docker network connect my-network web
 
+
 ## Inspect network
 docker network inspect my-network
-```
+```text
 
 **Network drivers**:
 
@@ -349,39 +389,48 @@ docker network inspect my-network
 **DNS resolution**: Containers on the same user-defined bridge network can resolve each other by container name, not just IP.
 
 ```bash
+
 ## Port mapping
 docker run -d -p 8080:80 -p 443:443 nginx
+
 ## HOST:CONTAINER
-```
+```text
 
 
 
 ## Overview
+
 ### 1.7 Volumes and Bind Mounts
 
 Data persistence in Docker is managed through volumes and bind mounts.
 
 ```bash
+
 ## Create a volume
 docker volume create data-volume
+
 
 ## Run with volume
 docker run -d --name db -v data-volume:/var/lib/postgresql/data postgres:15
 
+
 ## Bind mount (host directory)
 docker run -d --name dev -v $(pwd):/app python:3.11-slim python /app/script.py
 
+
 ## List volumes
 docker volume ls
+
 
 ## Remove volume
 docker volume rm data-volume
 docker volume prune
 
+
 ## Copy files between container and host
 docker cp file.txt container:/app/
 docker cp container:/app/output.txt .
-```
+```text
 
 **Volume types**:
 
@@ -398,21 +447,24 @@ docker cp container:/app/output.txt .
 - Use `--mount` syntax for more explicit configuration
 
 ```bash
+
 ## Using --mount syntax
 docker run -d \
     --mount type=volume,source=data,target=/data \
     --mount type=bind,source=$(pwd),target=/app \
     my-image
-```
+```text
 
 
 
 ## Overview
+
 ### 1.8 Docker Compose Basics
 
 Docker Compose defines multi-container applications in a YAML file.
 
 ```yaml
+
 ## docker-compose.yml
 version: "3.9"
 
@@ -446,33 +498,40 @@ services:
 
 volumes:
   postgres_data:
-```
+```text
 
 **Common Compose commands**:
 
 ```bash
+
 ## Start services
 docker compose up
 docker compose up -d  # detached
 
+
 ## Build and start
 docker compose up --build
+
 
 ## Stop services
 docker compose down
 
+
 ## Stop and remove volumes
 docker compose down -v
+
 
 ## View logs
 docker compose logs -f
 
+
 ## Scale a service
 docker compose up -d --scale api=3
 
+
 ## Execute in running service
 docker compose exec api bash
-```
+```text
 
 ```mermaid
 flowchart TD
@@ -485,7 +544,7 @@ flowchart TD
     E --> H[redis:6379]
     F --> G
     F --> H
-```
+```text
 
 ---
 
@@ -529,7 +588,7 @@ async function runContainer(image: string, cmd: string[]): Promise<void> {
   const stream = await container.logs({ stdout: true, follow: true });
   stream.pipe(process.stdout);
 }
-```
+```text
 
 ---
 
@@ -573,7 +632,9 @@ async function runContainer(image: string, cmd: string[]): Promise<void> {
     <p>Containers provide process-level isolation (cgroups, namespaces), whereas VMs provide hardware-level isolation. Containers are ideal for microservices and stateless applications, while VMs offer stronger isolation for multi-tenant environments.</p>
     <pre><code># Container — shares host kernel
 FROM python:3.11-slim  # ~125 MB
+
 ## VM — full OS image
+
 ## Ubuntu Server + Python: ~2 GB</code></pre>
   </div>
   <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
@@ -592,6 +653,7 @@ FROM python:3.11-slim  # ~125 MB
 COPY package.json package-lock.json ./
 RUN npm ci
 COPY . .
+
 
 ## Inefficient: copies everything first, cache invalidated
 COPY . .
@@ -612,12 +674,16 @@ RUN npm ci</code></pre>
     <p><strong>ENTRYPOINT</strong> defines the executable that always runs. Arguments passed to <code>docker run</code> are appended to ENTRYPOINT.</p>
     <pre><code># CMD overridden
 CMD ["python", "app.py"]
+
 ## docker run my-image python other.py  # runs other.py
+
 
 ## ENTRYPOINT fixed, CMD as default args
 ENTRYPOINT ["python"]
 CMD ["app.py"]
+
 ## docker run my-image other.py  # runs python other.py
+
 ## docker run my-image  # runs python app.py</code></pre>
     <p><strong>Best practice</strong>: Use ENTRYPOINT for the main executable and CMD for default arguments.</p>
   </div>
@@ -681,6 +747,7 @@ WORKDIR /app
 COPY . .
 RUN go build -o myapp
 
+
 ## Runtime stage — only the binary
 FROM alpine:latest
 COPY --from=builder /app/myapp /usr/local/bin/
@@ -713,6 +780,7 @@ CMD ["myapp"]</code></pre>
     </ol>
     <pre><code># Debug with interactive shell
 docker run -it --entrypoint sh my-image
+
 
 ## Check exit code
 docker inspect --format '{{.State.ExitCode}}' container_name</code></pre>
@@ -765,8 +833,10 @@ __pycache__
 DATABASE_URL=postgresql://user:pass@localhost:5432/db
 API_KEY=sk-abc123
 
+
 ## docker run with env file
 docker run --env-file .env my-app
+
 
 ## docker-compose.yml
 services:

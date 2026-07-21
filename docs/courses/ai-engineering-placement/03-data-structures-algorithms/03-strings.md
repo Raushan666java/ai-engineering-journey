@@ -20,6 +20,18 @@ Strings are sequences of characters with unique operations. Many interview probl
 - Array basics
 - Character encoding (ASCII/Unicode)
 
+
+## Theory
+
+Understanding strings is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how strings works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind strings
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -56,6 +68,7 @@ Strings are **immutable sequences of Unicode characters** in Python. Every strin
 ```python
 # Strings are immutable
 s = "hello"
+
 ## s[0] = "H"  # TypeError: 'str' object does not support item assignment
 
 ## Every "modification" creates a new string
@@ -70,6 +83,7 @@ print(a is b)  # True — interned (CPython may intern some strings)
 **Unicode support**:
 
 ```python
+
 ## Unicode characters — Python 3 strings are Unicode
 emoji = "🚀🔥🐍"
 chinese = "你好世界"
@@ -88,6 +102,7 @@ print(chr(65))    # 'A'
 **String creation and conversion**:
 
 ```python
+
 ## Different ways to create strings
 s1 = "double quotes"
 s2 = 'single quotes'
@@ -144,6 +159,7 @@ print(text.title())          # "  Python Programming  "
 print(text.find("Pro"))      # 10
 print(text.find("Java"))     # -1
 print(text.index("Pro"))     # 10
+
 ## print(text.index("Java"))  # ValueError!
 print(text.count("m"))       # 2
 
@@ -176,6 +192,7 @@ print("%s is %d years old" % (name, age))
 **Efficient string building**:
 
 ```python
+
 ## Bad — O(n²) because strings are immutable
 def build_bad(n):
     result = ""
@@ -500,6 +517,7 @@ def group_anagrams(words):
 
 words = ["eat", "tea", "tan", "ate", "nat", "bat"]
 print(group_anagrams(words))
+
 ## [["eat", "tea", "ate"], ["tan", "nat"], ["bat"]]
 ```text
 
@@ -542,6 +560,7 @@ print(find_anagrams("cbaebabacd", "abc"))  # [0, 6]
 **Character frequency operations**:
 
 ```python
+
 ## Check if two strings are isomorphic
 def is_isomorphic(s, t):
     if len(s) != len(t):
@@ -775,8 +794,11 @@ function lcs(text1: string, text2: string): number {
       <li>This ensures no character in the text is compared more than once</li>
     </ul>
     <pre><code># Example: pattern = "AABA"
+
 ## LPS = [0, 1, 0, 1]
+
 ## At mismatch on j=3, we set j = LPS[2] = 0
+
 ## This skips already-matched characters</code></pre>
     <p><strong>Complexity</strong>: O(m) for LPS construction, O(n) for search, O(n+m) total.</p>
   </div>

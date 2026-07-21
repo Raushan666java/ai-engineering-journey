@@ -18,6 +18,18 @@ Understanding qlora and quantization is essential for AI engineers building prod
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding qlora and quantization is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how qlora and quantization works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind qlora and quantization
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -762,7 +774,7 @@ Answer: C
 
 4. Implement a paged optimizer that allocates pages of 4GB, offloads gradients to CPU when page is full, and swaps them back during optimization.
 
-5. Create a memory comparison table for 7B and 70B models across FP32, FP16, 8-bit, 4-bit NF4, and QLoRA. Recommend the optimal setup for a 
+5. Create a memory comparison table for 7B and 70B models across FP32, FP16, 8-bit, 4-bit NF4, and QLoRA. Recommend the optimal setup for a
 
 ## Revision Notes
 

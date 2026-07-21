@@ -82,6 +82,29 @@ GitHub Actions is GitHub's built-in CI/CD platform. Workflows run in response to
 **Workflow structure:**
 
 ```yaml
+
+
+## Examples
+
+### Basic Example
+
+```python
+## Basic networking and security example
+def example():
+    """Demonstrate networking and security"""
+    result = "Hello, networking and security!"
+    print(result)
+    return result
+
+example()
+```
+
+### Expected Output
+
+```text
+Hello, networking and security!
+```
+
 ## .github/workflows/ci.yml
 name: CI Pipeline
 
@@ -165,6 +188,7 @@ jobs:
 **Key workflow concepts:**
 
 ```yaml
+
 ## Triggers
 on:
   push:           # When code is pushed
@@ -202,6 +226,7 @@ steps:
 **Reusable workflows:**
 
 ```yaml
+
 ## .github/workflows/reusable-build.yml
 name: Reusable Build
 on:
@@ -285,6 +310,7 @@ jobs:
 
 
 ## Overview
+
 ### 06.3 Pre-Commit Hooks
 
 Pre-commit hooks run automatically before each `git commit`, catching issues before they enter the codebase.
@@ -292,10 +318,12 @@ Pre-commit hooks run automatically before each `git commit`, catching issues bef
 **Using the pre-commit framework:**
 
 ```bash
+
 ## Install pre-commit
 pip install pre-commit
 
 ## Create .pre-commit-config.yaml
+
 ## Install hooks
 pre-commit install
 
@@ -359,6 +387,7 @@ repos:
 **Custom pre-commit hooks:**
 
 ```yaml
+
 ## .pre-commit-config.yaml
 repos:
   - repo: local
@@ -387,6 +416,7 @@ repos:
 **Husky (JavaScript projects):**
 
 ```bash
+
 ## Install husky
 npm install husky --save-dev
 npx husky init
@@ -416,6 +446,7 @@ module.exports = {
 
 
 ## Overview
+
 ### 06.4 Automated Testing in CI
 
 **Testing strategy for CI:**
@@ -482,6 +513,7 @@ jobs:
 **Test reporting:**
 
 ```yaml
+
 ## Publish test results
 - uses: dorny/test-reporter@v1
   if: always()
@@ -498,15 +530,21 @@ jobs:
 
 
 ## Overview
+
 ### 06.5 Deployment Automation
 
 **Environment protection rules:**
 
 ```yaml
+
 ## GitHub Settings → Environments → production
+
 ## Configure:
+
 ## - Required reviewers
+
 ## - Wait timer (e.g., 5 minutes)
+
 ## - Deployment branches (only main)
 
 jobs:
@@ -526,8 +564,11 @@ jobs:
 **Secrets management:**
 
 ```bash
+
 ## GitHub Secrets (Settings → Secrets → Actions)
+
 ## Store: API keys, deploy tokens, database URLs
+
 ## Reference in workflows: ${{ secrets.SECRET_NAME }}
 
 ## ⚠️ Never do this:
@@ -593,11 +634,13 @@ deploy:
 
 
 ## Overview
+
 ### 06.6 Security & Best Practices
 
 **GitHub Actions security:**
 
 ```yaml
+
 ## Pin actions to specific commits (not tags)
 - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11  # v4.1.1
 
@@ -623,6 +666,7 @@ permissions:
 **Supply chain security:**
 
 ```yaml
+
 ## Scan for vulnerabilities
 - uses: github/codeql-action/analyze@v3
   with:

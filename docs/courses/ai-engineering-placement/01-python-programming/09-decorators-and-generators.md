@@ -20,6 +20,18 @@ Understanding decorators and generators is essential for AI engineers building p
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding decorators and generators is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how decorators and generators works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind decorators and generators
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -119,8 +131,11 @@ def greet(name: str):
     print(f"Hello, {name}!")
 
 greet("Alice")
+
 ## Hello, Alice!
+
 ## Hello, Alice!
+
 ## Hello, Alice!
 ```text
 
@@ -207,6 +222,7 @@ def chain(*iterables):
         yield from it
 
 print(list(chain([1, 2], [3, 4], "ab")))
+
 ## [1, 2, 3, 4, 'a', 'b']
 ```text
 
@@ -250,7 +266,9 @@ print(list(combined))  # [1, 2, 3, 4, 5]
 data = [("A", 1), ("A", 2), ("B", 3), ("B", 4)]
 for key, group in itertools.groupby(data, key=lambda x: x[0]):
     print(key, list(group))
+
 ## A [('A', 1), ('A', 2)]
+
 ## B [('B', 3), ('B', 4)]
 ```text
 
@@ -259,20 +277,25 @@ The input must be sorted by the same key for correct grouping.
 **Combinatorial iterators**:
 
 ```python
+
 ## Cartesian product
 print(list(itertools.product([1, 2], ["a", "b"])))
+
 ## [(1, 'a'), (1, 'b'), (2, 'a'), (2, 'b')]
 
 ## Permutations — order matters
 print(list(itertools.permutations([1, 2, 3], 2)))
+
 ## [(1, 2), (1, 3), (2, 1), (2, 3), (3, 1), (3, 2)]
 
 ## Combinations — order does not matter
 print(list(itertools.combinations([1, 2, 3], 2)))
+
 ## [(1, 2), (1, 3), (2, 3)]
 
 ## Combinations with replacement
 print(list(itertools.combinations_with_replacement([1, 2], 2)))
+
 ## [(1, 1), (1, 2), (2, 2)]
 ```text
 
@@ -286,6 +309,7 @@ print(result)  # [0, 1, 2, 3, 4]
 **Other useful itertools**:
 
 ```python
+
 ## accumulate — running sum/product
 print(list(itertools.accumulate([1, 2, 3, 4])))           # [1, 3, 6, 10]
 print(list(itertools.accumulate([1, 2, 3, 4], lambda a, b: a * b)))  # [1, 2, 6, 24]
@@ -326,7 +350,9 @@ def managed_file(filename: str, mode: str = "r"):
 
 with managed_file("test.txt", "w") as f:
     f.write("Hello, world!")
+
 ## Opening test.txt
+
 ## Closing test.txt
 ```text
 

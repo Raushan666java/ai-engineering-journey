@@ -20,6 +20,18 @@ Understanding deep learning interview is essential for AI engineers building pro
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding deep learning interview is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how deep learning interview works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind deep learning interview
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -615,6 +627,7 @@ def train_ddp(rank, world_size, model, dataset):
     cleanup_ddp()
 
 ## Usage
+
 ## mp.spawn(train_ddp, args=(world_size, model, dataset), nprocs=world_size)
 ```text
 
@@ -964,6 +977,7 @@ model.fc = nn.Linear(2048, num_classes)  # New classifier head
 model = torchvision.models.resnet50(pretrained=True)
 for param in model.parameters():
     param.requires_grad = False
+
 ## Unfreeze the last block
 for param in model.layer4.parameters():
     param.requires_grad = True</code></pre>

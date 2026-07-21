@@ -52,6 +52,29 @@ Stashing temporarily shelves changes in your working directory so you can work o
 **Basic stash operations:**
 
 ```bash
+
+
+## Examples
+
+### Basic Example
+
+```python
+## Basic git workflow example
+def example():
+    """Demonstrate git workflow"""
+    result = "Hello, git workflow!"
+    print(result)
+    return result
+
+example()
+```
+
+### Expected Output
+
+```text
+Hello, git workflow!
+```
+
 ## Stash all modified tracked files
 git stash
 
@@ -71,10 +94,12 @@ git stash -a
 **Listing and viewing stashes:**
 
 ```bash
+
 ## List all stashes
 git stash list
 
 ## Output: stash@{0}: On feature/login: WIP: half-finished login validation
+
 ##         stash@{1}: On main: Quick experiment
 
 ## Show stash contents
@@ -90,6 +115,7 @@ git stash show -p stash@{1}
 **Applying and popping stashes:**
 
 ```bash
+
 ## Apply the most recent stash (keep in stash list)
 git stash apply
 
@@ -106,6 +132,7 @@ git stash pop stash@{1}
 **Dropping and clearing stashes:**
 
 ```bash
+
 ## Drop a specific stash
 git stash drop stash@{0}
 
@@ -119,8 +146,10 @@ git stash clear
 **Branch-specific stash workflow:**
 
 ```bash
+
 ## Create a branch from stash
 git stash branch feature/from-stash stash@{0}
+
 ## This creates the branch, checks it out, and applies the stash
 ```text
 
@@ -133,6 +162,7 @@ git stash branch feature/from-stash stash@{0}
 
 
 ## Overview
+
 ### 03.2 Cherry-Pick
 
 Cherry-pick applies a specific commit from one branch to another without merging the entire branch. It's useful for backporting fixes.
@@ -140,6 +170,7 @@ Cherry-pick applies a specific commit from one branch to another without merging
 **Basic cherry-pick:**
 
 ```bash
+
 ## Apply a single commit to current branch
 git cherry-pick abc1234
 
@@ -156,12 +187,15 @@ git cherry-pick abc1234^..ghi9012
 **Cherry-pick options:**
 
 ```bash
+
 ## Apply commit without committing (stage changes only)
 git cherry-pick --no-commit abc1234
 
 ## Apply and create a new commit with a different message
 git cherry-pick -x -m 1 abc1234
+
 ## -x adds "cherry-picked from" reference
+
 ## -m 1 specifies parent number for merge commits
 
 ## Abort a cherry-pick in progress
@@ -174,6 +208,7 @@ git cherry-pick --abort
 **Common cherry-pick scenarios:**
 
 ```bash
+
 ## Scenario 1: Backport a bug fix from develop to a release branch
 git switch release/v1.0
 git cherry-pick abc1234  # the fix commit from develop
@@ -184,6 +219,7 @@ git cherry-pick abc1234  # commit that was accidentally on main
 
 ## Scenario 3: Partial cherry-pick (stage only, don't commit)
 git cherry-pick --no-commit abc1234
+
 ## Edit files if needed, then:
 git commit -m "Adapted fix for v1.0 release"
 ```text
@@ -199,6 +235,7 @@ git commit -m "Adapted fix for v1.0 release"
 
 
 ## Overview
+
 ### 03.3 Git Bisect
 
 Bisect performs a binary search through commit history to find the exact commit that introduced a bug. It's dramatically faster than manual bisection.
@@ -206,6 +243,7 @@ Bisect performs a binary search through commit history to find the exact commit 
 **Basic bisect workflow:**
 
 ```bash
+
 ## Start bisect session
 git bisect start
 
@@ -216,12 +254,15 @@ git bisect bad
 git bisect good abc1234
 
 ## Git checks out a middle commit
+
 ## Test the code, then mark it:
 git bisect good   # if the commit works
 git bisect bad    # if the commit has the bug
 
 ## Repeat until Git finds the first bad commit
+
 ## When done, Git outputs:
+
 ## abc1234 is the first bad commit
 
 ## Return to original branch
@@ -231,6 +272,7 @@ git bisect reset
 **Automated bisect:**
 
 ```bash
+
 ## Start bisect with a test script
 git bisect start
 git bisect bad HEAD
@@ -240,6 +282,7 @@ git bisect good abc1234
 git bisect run npm test
 
 ## The script must exit 0 for good, non-zero for bad
+
 ## Git will binary-search and find the exact commit automatically
 
 ## Reset when done
@@ -249,6 +292,7 @@ git bisect reset
 **Automated bisect example:**
 
 ```bash
+
 ## Find which commit broke the unit tests
 git bisect start
 git bisect bad HEAD
@@ -265,6 +309,7 @@ git bisect run bash -c "npm run build && node test-feature.js"
 **Bisect with visualizing:**
 
 ```bash
+
 ## Start bisect
 git bisect start HEAD v1.0.0
 
@@ -280,6 +325,7 @@ git bisect visualize
 
 
 ## Overview
+
 ### 03.4 Git Reflog
 
 Reflog records every movement of HEAD and branch pointers. It's Git's safety net — almost nothing is truly lost as long as it was committed.
@@ -287,12 +333,16 @@ Reflog records every movement of HEAD and branch pointers. It's Git's safety net
 **Viewing reflog:**
 
 ```bash
+
 ## Show HEAD reflog (most recent first)
 git reflog
 
 ## Output:
+
 ## abc1234 HEAD@{0}: reset: moving to HEAD~1
+
 ## def5678 HEAD@{1}: commit: Add feature X
+
 ## ghi9012 HEAD@{2}: checkout: moving from main to feature
 
 ## Show reflog for a specific branch
@@ -305,23 +355,28 @@ git reflog --date=iso
 **Recovering from mistakes:**
 
 ```bash
+
 ## Scenario 1: Accidentally reset --hard and lost commits
 git reflog
+
 ## Find the commit hash before the reset
 git reset --hard HEAD@{2}
 
 ## Scenario 2: Accidentally deleted a branch
 git reflog
+
 ## Find the last commit on the deleted branch
 git branch feature/recovered HEAD@{5}
 
 ## Scenario 3: Bad rebase — return to pre-rebase state
 git reflog
+
 ## Find the HEAD position before rebase started
 git reset --hard HEAD@{n}
 
 ## Scenario 4: Amend went wrong — undo the amend
 git reflog
+
 ## Find the commit before the amend
 git reset --hard HEAD@{1}
 ```text
@@ -333,6 +388,7 @@ git reset --hard HEAD@{1}
 - Run `git gc` to manually trigger garbage collection
 
 ```bash
+
 ## Check reflog expiration settings
 git config --get gc.reflogExpire
 
@@ -351,6 +407,7 @@ git config gc.reflogExpire "180 days"
 
 
 ## Overview
+
 ### 03.5 Git Submodules
 
 Submodules let you include an external Git repository inside your project as a subdirectory. This is useful for managing shared libraries, vendor code, or monorepo dependencies.
@@ -358,6 +415,7 @@ Submodules let you include an external Git repository inside your project as a s
 **Adding a submodule:**
 
 ```bash
+
 ## Add a submodule
 git submodule add https://github.com/user/library.git vendor/library
 
@@ -371,6 +429,7 @@ git commit -m "Add vendor/library submodule"
 **Cloning a repo with submodules:**
 
 ```bash
+
 ## Clone with submodules (two-step)
 git clone https://github.com/user/project.git
 cd project
@@ -390,10 +449,12 @@ git submodule update --remote --merge
 **Working with submodules:**
 
 ```bash
+
 ## Enter the submodule directory
 cd vendor/library
 
 ## Make changes inside the submodule
+
 ## ... edit files ...
 git add .
 git commit -m "Fix bug in library"
@@ -407,6 +468,7 @@ git commit -m "Update library submodule to latest"
 **Removing a submodule:**
 
 ```bash
+
 ## Step 1: Deinit the submodule
 git submodule deinit -f vendor/library
 
@@ -414,6 +476,7 @@ git submodule deinit -f vendor/library
 git rm -f vendor/library
 
 ## Step 3: Remove from .gitmodules (if it exists)
+
 ## Edit .gitmodules to remove the submodule entry
 
 ## Commit the removal
@@ -423,6 +486,7 @@ git commit -m "Remove vendor/library submodule"
 **Submodule gotchas:**
 
 ```bash
+
 ## Problem: submodule shows as modified after pull
 git submodule update --init --recursive
 
@@ -441,11 +505,13 @@ git config -f .gitmodules submodule.library.branch main
 
 
 ## Overview
+
 ### 03.6 Real-World Workflows
 
 **Combining stash + cherry-pick for hotfixes:**
 
 ```bash
+
 ## You're working on a feature, but need a quick hotfix
 git stash push -m "WIP: feature work"
 
@@ -470,6 +536,7 @@ git stash pop
 **Using bisect + test script for regression:**
 
 ```bash
+
 ## Find which commit broke the CI
 git bisect start
 git bisect bad HEAD
@@ -485,8 +552,10 @@ git bisect reset
 **Recovering a dropped stash:**
 
 ```bash
+
 ## Accidentally dropped a stash? Reflog saves the day
 git fsck --unreachable | grep commit
+
 ## Or check reflog for stash entries
 git stash list
 git log --oneline --all | grep stash

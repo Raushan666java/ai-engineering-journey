@@ -20,6 +20,18 @@ Understanding docker compose is essential for AI engineers building production s
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding docker compose is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how docker compose works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind docker compose
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -58,6 +70,7 @@ Docker Compose is a tool for defining and running multi-container Docker applica
 - Onboard team members with a single `docker compose up` command
 
 ```bash
+
 ## Check Compose version
 docker compose version
 
@@ -124,6 +137,7 @@ volumes:        # Define named volumes
 - Supports anchors (`&`) and aliases (`*`) for reuse
 
 ```yaml
+
 ## YAML anchors for config reuse
 x-logging: &default-logging
   driver: "json-file"
@@ -228,6 +242,7 @@ networks:
 **Service discovery**: Containers can reach each other by service name:
 
 ```python
+
 ## Inside api container — connects to db service
 DATABASE_URL = "postgresql://postgres:password@db:5432/app"
 ```text
@@ -329,6 +344,7 @@ services:
 **.env file** (placed alongside docker-compose.yml):
 
 ```env
+
 ## .env
 PORT=8000
 TAG=latest
@@ -360,6 +376,7 @@ services:
 Compose can scale stateless services to multiple replicas.
 
 ```bash
+
 ## Scale API to 3 instances
 docker compose up -d --scale api=3
 
@@ -405,6 +422,7 @@ services:
 ```text
 
 ```nginx
+
 ## nginx.conf — load balance across API replicas
 upstream api_servers {
     server api:8000;
@@ -425,6 +443,7 @@ server {
 **View logs**:
 
 ```bash
+
 ## All services
 docker compose logs
 
@@ -444,6 +463,7 @@ docker compose logs -t
 **Execute commands in running services**:
 
 ```bash
+
 ## Interactive shell
 docker compose exec api bash
 
@@ -457,6 +477,7 @@ docker compose exec --user root api apt-get update
 **Port conflicts**: If a host port is already in use, change the mapping or stop the conflicting process.
 
 ```bash
+
 ## Find process using port
 netstat -ano | findstr :8000
 
@@ -478,6 +499,7 @@ services:
 | Build cache issues | Stale code in container | `docker compose build --no-cache` |
 
 ```bash
+
 ## Full reset — remove everything and rebuild
 docker compose down -v
 docker compose build --no-cache

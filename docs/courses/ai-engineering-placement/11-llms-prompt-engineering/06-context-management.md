@@ -20,6 +20,18 @@ Understanding context management is essential for AI engineers building producti
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding context management is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how context management works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind context management
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -406,7 +418,9 @@ class VectorMemory:
         return [(self.texts[i], scores[i]) for i in top_k]
 
 ## vmem = VectorMemory()
+
 ## vmem.add("User likes Python", np.random.randn(384))
+
 ## result = vmem.search(np.random.randn(384))
 ```text
 
@@ -471,6 +485,7 @@ class MultiTurnManager:
         return {"messages": len(self.history), "tokens": total}
 
 ## mgr = MultiTurnManager(client)
+
 ## print(mgr.chat("Hello!"))
 ```text
 

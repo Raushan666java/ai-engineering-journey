@@ -20,6 +20,18 @@ Understanding data versioning is essential for AI engineers building production 
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding data versioning is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how data versioning works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind data versioning
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -54,6 +66,7 @@ Machine learning models depend equally on code and data. While code is rigorousl
 - Team members unknowingly use different data snapshots for training and evaluation
 
 ```python
+
 ## Without data versioning — fragile and irreproducible
 import pandas as pd
 import os
@@ -106,6 +119,7 @@ flowchart TB
 ```text
 
 ```bash
+
 ## Initialize DVC in a Git repository
 cd ml-project
 git init
@@ -122,6 +136,7 @@ dvc push
 ```text
 
 ```python
+
 ## Python API for DVC integration
 import hashlib
 import json
@@ -203,30 +218,52 @@ dvc_commit("add processed training data v2")
 DVC pipelines define reproducible stages for data processing. Each stage has versioned inputs and outputs.
 
 ```python
+
 ## dvc.yaml — define a data pipeline
+
 ## stages:
+
 ##   preprocess:
+
 ##     cmd: python scripts/preprocess.py
+
 ##     deps:
+
 ##       - data/raw/train.csv
+
 ##       - scripts/preprocess.py
+
 ##     outs:
+
 ##       - data/processed/train_clean.csv
+
 ##     params:
+
 ##       - preprocess.min_samples
+
 ##       - preprocess.max_features
+
 ##   feature_engineering:
+
 ##     cmd: python scripts/features.py
+
 ##     deps:
+
 ##       - data/processed/train_clean.csv
+
 ##       - scripts/features.py
+
 ##     outs:
+
 ##       - data/features/train_features.parquet
+
 ##     params:
+
 ##       - features.include_interactions
 ```text
 
 ```python
+
 ## scripts/preprocess.py — DVC pipeline stage
 import pandas as pd
 import numpy as np
@@ -508,35 +545,61 @@ print(f"Old data runs: {len(runs_old)}, New data runs: {len(runs_new)}")
 Automated data validation pipelines ensure data quality before training.
 
 ```python
+
 ## .github/workflows/data-ci.yml
+
 ## name: Data CI
+
 ## on:
+
 ##   push:
+
 ##     paths: ['data/**', 'params.yaml']
 #
+
 ## jobs:
+
 ##   validate-data:
+
 ##     runs-on: ubuntu-latest
+
 ##     steps:
+
 ##       - uses: actions/checkout@v4
+
 ##       - uses: actions/setup-python@v5
+
 ##       - run: |
+
 ##           pip install dvc pandas scipy
+
 ##           dvc pull
+
 ##       - name: Run data validation
+
 ##         run: python scripts/validate_data.py
+
 ##       - name: Check for drift
+
 ##         run: python scripts/check_drift.py --reference production
+
 ##       - name: Push new data version
+
 ##         run: |
+
 ##           dvc add data/
+
 ##           git config user.name "CI Bot"
+
 ##           git commit -m "auto: update data version [skip ci]"
+
 ##           dvc push
+
 ##           git push
 ```text
 
 ```python
+
 ## scripts/validate_data.py — data quality checks
 import pandas as pd
 import numpy as np

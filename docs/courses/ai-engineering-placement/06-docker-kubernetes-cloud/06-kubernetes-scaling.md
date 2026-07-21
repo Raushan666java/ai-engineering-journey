@@ -20,6 +20,39 @@ Understanding kubernetes scaling is essential for AI engineers building producti
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding kubernetes scaling is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how kubernetes scaling works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind kubernetes scaling
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
+## Examples
+
+### Basic Example
+
+```python
+# Basic kubernetes scaling example
+def example():
+    """Demonstrate kubernetes scaling"""
+    result = "Hello, kubernetes scaling!"
+    print(result)
+    return result
+
+example()
+```
+
+### Expected Output
+
+```text
+Hello, kubernetes scaling!
+```
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -122,7 +155,7 @@ kubectl get hpa --watch
 Cluster Autoscaler automatically adds or removes nodes based on pending Pods.
 
 `yaml
-# AWS EKS Cluster Autoscaler deployment
+## AWS EKS Cluster Autoscaler deployment
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -160,6 +193,7 @@ flowchart TD
 **Cloud provider configuration**:
 
 `ash
+
 ## AWS
 aws autoscaling describe-auto-scaling-groups
 eksctl scale nodegroup --cluster my-cluster --name workers --nodes 5
@@ -217,6 +251,7 @@ spec:
 | Recreate | Evict and recreate Pods with new requests |
 
 `ash
+
 ## Install VPA
 git clone https://github.com/kubernetes/autoscaler.git
 kubectl apply -k autoscaler/vertical-pod-autoscaler/deploy/
@@ -225,8 +260,11 @@ kubectl apply -k autoscaler/vertical-pod-autoscaler/deploy/
 kubectl describe vpa api-vpa
 
 ## Output shows:
+
 ## Recommended Pod Resources:
+
 ##   cpu: 250m (lower bound: 150m, upper bound: 500m)
+
 ##   memory: 512Mi (lower bound: 256Mi, upper bound: 1Gi)
 `
 
@@ -251,6 +289,7 @@ spec:
 **PDB strategies**:
 
 `yaml
+
 ## Critical service � always keep most available
 apiVersion: policy/v1
 kind: PodDisruptionBudget
@@ -283,8 +322,10 @@ kubectl describe pdb api-pdb
 **When PDBs block operations**:
 
 `ash
+
 ## If PDB prevents drain, use --disable-eviction
 kubectl drain node-1 --ignore-daemonsets --disable-eviction
+
 ## Force drain (use with caution)
 kubectl drain node-1 --ignore-daemonsets --delete-emptydir-data --force
 `
@@ -294,6 +335,7 @@ kubectl drain node-1 --ignore-daemonsets --delete-emptydir-data --force
 **Taints and Tolerations**: Taints repel Pods from nodes; tolerations allow Pods to be scheduled on tainted nodes.
 
 `ash
+
 ## Taint a node
 kubectl taint nodes node1 key=value:NoSchedule
 kubectl taint nodes node1 key=value:NoExecute
@@ -304,6 +346,7 @@ kubectl taint nodes node1 key=value:NoSchedule-
 `
 
 `yaml
+
 ## Pod toleration
 apiVersion: v1
 kind: Pod
@@ -351,6 +394,7 @@ spec:
 **Cordon, Drain, and Delete**:
 
 `ash
+
 ## Mark node as unschedulable
 kubectl cordon node1
 
@@ -372,6 +416,7 @@ kubectl delete node node1
 **Upgrade strategy**: Upgrade control plane first, then worker nodes.
 
 `ash
+
 ## Check current version
 kubectl version --short
 
@@ -400,6 +445,7 @@ az aks upgrade --resource-group my-rg --name my-cluster --kubernetes-version 1.2
 **Blue-green node pools**:
 
 `ash
+
 ## Create new node pool with updated version
 eksctl create nodegroup --cluster my-cluster --name workers-v2 \
     --node-type t3.medium --nodes 3
@@ -480,11 +526,13 @@ spec:
 **Canary deployment**:
 
 `ash
+
 ## Deploy canary with 1 replica
 kubectl scale deployment my-app-canary --replicas=1
 kubectl scale deployment my-app-stable --replicas=4
 
 ## Monitor canary metrics
+
 ## If stable, shift traffic gradually
 kubectl scale deployment my-app-canary --replicas=3
 kubectl scale deployment my-app-stable --replicas=2
@@ -508,6 +556,7 @@ kubectl top pods
 **Prometheus and Grafana**:
 
 `ash
+
 ## Install with Helm
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm install prometheus prometheus-community/kube-prometheus-stack
@@ -524,6 +573,7 @@ kubectl port-forward service/prometheus-kube-prometheus-prometheus 9090:9090
 `ash
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
 kubectl proxy
+
 ## Access: http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
 `
 

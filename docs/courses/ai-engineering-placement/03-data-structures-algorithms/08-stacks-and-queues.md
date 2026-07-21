@@ -21,6 +21,18 @@ Trees are hierarchical data structures fundamental to representing organized dat
 - Recursion basics
 - Stack/queue usage
 
+
+## Theory
+
+Understanding stacks and queues is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how stacks and queues works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind stacks and queues
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -221,7 +233,7 @@ def infix_to_postfix(expression):
                 result.append(stack.pop())
             stack.pop()  # remove "("
         else:
-            while stack and stack[-1] != "(" and 
+            while stack and stack[-1] != "(" and
                   precedence.get(stack[-1], 0) >= precedence.get(char, 0):
                 result.append(stack.pop())
             stack.append(char)
@@ -303,6 +315,7 @@ def daily_temperatures(temps):
     return result
 
 print(daily_temperatures([73, 74, 75, 71, 69, 72, 76, 73]))
+
 ## [1, 1, 4, 2, 1, 1, 0, 0]
 ```text
 
@@ -332,6 +345,7 @@ heapq.heappush(pq, (2, "task2"))
 while pq:
     priority, task = heapq.heappop(pq)
     print(f"{task}: {priority}")
+
 ## task1: 1, task2: 2, task3: 3
 ```text
 

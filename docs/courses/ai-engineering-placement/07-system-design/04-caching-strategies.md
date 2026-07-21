@@ -20,6 +20,18 @@ Understanding caching strategies is essential for AI engineers building producti
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding caching strategies is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how caching strategies works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind caching strategies
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -107,6 +119,7 @@ r.ltrim("recent_views:123", 0, 9)  # Keep last 10
 CDNs cache content at edge locations close to users.
 
 ```python
+
 ## CloudFront with Lambda@Edge for cache optimization
 def viewer_request(event):
     request = event["Records"][0]["cf"]["request"]
@@ -117,8 +130,11 @@ def viewer_request(event):
     return request
 
 ## Cache behavior rules
+
 ## /static/* -> long TTL (30 days)
+
 ## /api/user/* -> short TTL (60 seconds)
+
 ## /api/* -> no cache
 ```text
 
@@ -168,6 +184,7 @@ Invalidation is one of the two hard things in computer science.
 | Event-driven | Invalidate on event | Targeted | Complex |
 
 ```python
+
 ## Event-driven invalidation
 def on_user_updated(event):
     user_id = event["user_id"]
@@ -182,6 +199,7 @@ When many requests miss cache simultaneously and all hit the database.
 **Solutions**:
 
 ```python
+
 ## Mutex lock
 def get_expensive_data(key):
     data = cache.get(key)
@@ -441,6 +459,7 @@ d) Number of keys
 **Implementation comparison**:
 
 ```python
+
 ## Cache-Aside (most common)
 class CacheAside:
     def get(self, key):

@@ -67,6 +67,7 @@ Section 2 of Bit Manipulation and Math covers essential concepts for AI engineer
 The following code demonstrates fundamental operations:
 
 ```python
+
 ## Bit Manipulation and Math - basic operations
 def example_function(data):
     """Core functionality"""
@@ -166,6 +167,7 @@ Common interview questions and strategies:
 Let's walk through a typical interview problem:
 
 ```python
+
 ## Interview problem solution
 def solve_interview_problem(input_data):
     # Step 1: Understand the problem

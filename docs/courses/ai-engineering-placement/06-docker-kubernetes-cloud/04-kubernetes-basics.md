@@ -20,6 +20,39 @@ Understanding kubernetes basics is essential for AI engineers building productio
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding kubernetes basics is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how kubernetes basics works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind kubernetes basics
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
+## Examples
+
+### Basic Example
+
+```python
+# Basic kubernetes basics example
+def example():
+    """Demonstrate kubernetes basics"""
+    result = "Hello, kubernetes basics!"
+    print(result)
+    return result
+
+example()
+```
+
+### Expected Output
+
+```text
+Hello, kubernetes basics!
+```
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -158,7 +191,7 @@ spec:
 kubectl apply -f service.yaml
 kubectl get svc
 kubectl run test --image=alpine --rm -it -- sh
-# Inside: wget -qO- http://web-service
+## Inside: wget -qO- http://web-service
 `
 
 **DNS**: CoreDNS creates records like <service>.<namespace>.svc.cluster.local.

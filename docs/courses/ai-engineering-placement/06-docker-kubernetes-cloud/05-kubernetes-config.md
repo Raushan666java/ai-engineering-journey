@@ -20,6 +20,18 @@ Understanding kubernetes config is essential for AI engineers building productio
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding kubernetes config is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how kubernetes config works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind kubernetes config
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -119,6 +131,7 @@ helm uninstall my-release
 ## 5.4 Kustomize
 
 ```yaml
+
 ## base/kustomization.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
@@ -406,6 +419,7 @@ d) Gateway
 **Dependency management**: Helm charts can depend on other charts using the `dependencies` field in Chart.yaml.
 
 ```yaml
+
 ## Chart.yaml
 dependencies:
   - name: postgresql
@@ -415,13 +429,16 @@ dependencies:
     alias: db
 
 ## Install with dependencies
+
 ## helm dependency update
+
 ## helm install my-release . --set db.postgresql.enabled=true
 ```text
 
 **Go template functions in Helm templates**:
 
 ```yaml
+
 ## templates/configmap.yaml
 apiVersion: v1
 kind: ConfigMap
@@ -442,6 +459,7 @@ data:
 **Helm hooks** for lifecycle management:
 
 ```yaml
+
 ## templates/migration-job.yaml
 apiVersion: batch/v1
 kind: Job

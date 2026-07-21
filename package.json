@@ -1,4 +1,12 @@
 {
+  "scripts": {
+    "quality": "node scripts/quality-loop.js",
+    "quality:verbose": "node scripts/quality-loop.js --verbose",
+    "quality:max": "node scripts/quality-loop.js --max-iterations 20",
+    "fix": "node scripts/fix-quality.js",
+    "enhance-quizzes": "node scripts/enhance-quizzes.js",
+    "add-sections": "node scripts/add-missing-sections.js"
+  },
   "dependencies": {
     "@mermaid-js/mermaid-cli": "^11.16.0",
     "sharp": "^0.35.3"

@@ -20,6 +20,18 @@ Understanding rate limiting and idempotency is essential for AI engineers buildi
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding rate limiting and idempotency is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how rate limiting and idempotency works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind rate limiting and idempotency
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |

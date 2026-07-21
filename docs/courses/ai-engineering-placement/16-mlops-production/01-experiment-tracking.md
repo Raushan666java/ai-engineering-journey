@@ -20,6 +20,18 @@ Understanding experiment tracking is essential for AI engineers building product
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding experiment tracking is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how experiment tracking works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind experiment tracking
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -116,6 +128,7 @@ flowchart TB
 - **MLflow Projects**: Reusable, reproducible ML code packaged with conda/docker environments.
 
 ```python
+
 ## Setting up MLflow with a remote tracking server
 import mlflow
 
@@ -124,6 +137,7 @@ mlflow.set_tracking_uri("http://localhost:5000")
 mlflow.set_experiment("house-price-prediction")
 
 ## Or use SQLite backend
+
 ## mlflow.set_tracking_uri("sqlite:///mlflow.db")
 
 ## Autologging — automatically capture params, metrics, models
@@ -138,6 +152,7 @@ with mlflow.start_run():
 **Setting up the tracking server**:
 
 ```bash
+
 ## Start MLflow tracking server
 mlflow server \
     --backend-store-uri sqlite:///mlflow.db \
@@ -201,6 +216,7 @@ with mlflow.start_run(run_name="with-config"):
 | Nested params | `log_params(dict)` | Param grid |
 
 ```python
+
 ## Parameter logging with hierarchical names
 with mlflow.start_run():
     mlflow.log_params({
@@ -270,6 +286,7 @@ with mlflow.start_run(run_name="artifact-demo"):
 | Azure Blob | `wasbs://container@account.blob.core.windows.net/` | Azure deployments |
 
 ```python
+
 ## Register a model in the Model Registry
 with mlflow.start_run(run_name="register-model"):
     model = RandomForestRegressor(n_estimators=200)
@@ -327,6 +344,7 @@ print(df.sort_values("metric_mae").head())
 **Using the MLflow UI for comparison**:
 
 ```bash
+
 ## Launch the UI to compare runs visually
 mlflow ui --port 5000
 ```text
@@ -338,6 +356,7 @@ The UI provides:
 - **Compare mode**: Select multiple runs to see side-by-side parameter and metric differences
 
 ```python
+
 ## Programmatic comparison with statistical tests
 from scipy import stats
 
@@ -426,29 +445,49 @@ with mlflow.start_run(run_name="optuna-sweep"):
 Integrating experiment tracking into CI/CD pipelines ensures every model training run is captured automatically, with full lineage.
 
 ```python
+
 ## Example: GitHub Actions workflow for automated experiment tracking
+
 ## .github/workflows/train.yml
+
 ## on:
+
 ##   push:
+
 ##     branches: [main]
+
 ##     paths: ['models/**']
-# 
+#
+
 ## jobs:
+
 ##   train-and-track:
+
 ##     runs-on: ubuntu-latest
+
 ##     steps:
+
 ##       - uses: actions/checkout@v4
+
 ##       - uses: actions/setup-python@v5
+
 ##         with:
+
 ##           python-version: '3.11'
+
 ##       - run: |
+
 ##           pip install -r requirements.txt
+
 ##           python train.py \
+
 ##             --tracking-uri ${{ secrets.MLFLOW_TRACKING_URI }} \
+
 ##             --experiment-name ${{ github.ref_name }}
 ```text
 
 ```python
+
 ## train.py — script that runs in CI pipeline
 import argparse
 import os

@@ -20,6 +20,18 @@ Understanding behavioral star interview is essential for AI engineers building p
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding behavioral star interview is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how behavioral star interview works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind behavioral star interview
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -59,6 +71,7 @@ The STAR framework structures behavioral answers into four parts:
 **R €” Result**: What happened? Use concrete metrics when possible (35% faster, reduced costs by 20%, served 1M users). Include impact on the team, company, or users. If applicable, mention what you learned.
 
 ```python
+
 ## STAR answer template
 def star_answer(topic: str, situation: str, task: str, action: str, result: str) -> str:
     return f"""
@@ -116,6 +129,7 @@ Create a story bank with 8-10 prepared stories covering these categories:
 | 10 | Data-driven | "Tell me about making a data-informed decision" | A/B test that changed product direction |
 
 ```python
+
 ## Story bank template
 story_bank = {
     "leadership": {
@@ -155,6 +169,7 @@ Leadership questions assess your ability to take ownership, drive projects, and 
 - **Bias for action**: Moving fast, making decisions with incomplete information
 
 ```python
+
 ## Leadership story pattern
 def leadership_story(topic: str, scope: str, challenge: str, actions: list[str], metrics: dict) -> str:
     action_text = "\n".join(f"- {a}" for a in actions)
@@ -210,6 +225,7 @@ Conflict questions assess your ability to navigate disagreements, collaborate ac
 - **Constructive feedback**: Giving and receiving feedback professionally
 
 ```python
+
 ## Conflict resolution framework
 def conflict_story(context: str, disagreement: str, resolution: str, outcome: str) -> str:
     return f"""
@@ -256,6 +272,7 @@ Failure questions test your humility, self-awareness, and ability to learn from 
 5. **Share the positive outcome**: How did you and the team benefit from the experience?
 
 ```python
+
 ## Failure story framework
 def failure_story(context: str, mistake: str, consequence: str, lesson: str, change: str, impact: str) -> str:
     return f"""
@@ -307,6 +324,7 @@ These questions assess your motivation, career goals, and fit with the company's
 - **Adaptability**: Comfort with ambiguity, changing priorities, new domains
 
 ```python
+
 ## Answer template: "Where do you see yourself in 5 years?"
 def career_goal_story(current_role: str, target_role: str, skills_to_build: list[str], why_company: str) -> str:
     return f"""
@@ -356,6 +374,7 @@ Technical leadership questions assess your ability to make good engineering deci
 - **Operational excellence**: Monitoring, on-call, incident response, postmortems
 
 ```python
+
 ## Technical decision story
 def tech_decision_story(problem: str, options: list[tuple[str, str, str]], decision: str, rationale: str, outcome: str) -> str:
     options_text = "\n".join(f"- **{opt[0]}**: Pros: {opt[1]}, Cons: {opt[2]}" for opt in options)
@@ -420,6 +439,7 @@ The best stories won't help if you can't deliver them well. Practice is essentia
 - **Authenticity**: Be yourself. Scripted answers sound robotic. Practice enough that the structure is natural, but vary the wording each time.
 
 ```python
+
 ## Mock interview timer
 import time
 

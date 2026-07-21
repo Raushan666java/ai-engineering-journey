@@ -20,6 +20,18 @@ Understanding github profile optimization is essential for AI engineers building
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding github profile optimization is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how github profile optimization works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind github profile optimization
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -51,6 +63,7 @@ Your GitHub profile README is the first thing recruiters see. It should quickly 
 
 ```python
 # profile_readme_generator.py
+
 ## A tool to generate your GitHub profile README
 
 def generate_profile_readme(name: str, tagline: str, about: str,

@@ -252,6 +252,7 @@ print(optimize_output_strategy("Explain quantum computing.", 5))
 
 
 ## Overview
+
 ### 8.2.3 Prompt Template Optimization
 
 Minimize system prompt size by keeping only essential instructions.
@@ -435,6 +436,7 @@ print(f"Stats: {cache.stats()}")
 
 
 ## Overview
+
 ### 8.3.2 Semantic Cache
 
 Semantic caching matches queries based on meaning rather than exact text, using embeddings.
@@ -490,6 +492,7 @@ print(f"Dissimilar query found: {not_found}")
 
 
 ## Overview
+
 ### 8.3.3 Layered Caching
 
 Combine exact and semantic caching for optimal coverage.
@@ -516,12 +519,14 @@ class LayeredCache:
 
 
 layered = LayeredCache(exact_ttl=600, semantic_threshold=0.92)
+
 ## Usage: layered.get(messages, embedding, "gpt-4o-mini")
 print(f"Layered cache ready. Exact TTL: {layered.exact_cache.ttl}")
 ```text
 
 
 ## Overview
+
 ### 8.3.4 Cache Invalidation
 
 ```python
@@ -803,6 +808,7 @@ print(f"Time to first token: {ttft:.3f}s")
 Use a draft model to predict tokens, verified by the target model for correctness.
 
 ```python
+
 ## Conceptual speculative decoding
 class SpeculativeDecoder:
     def __init__(self, draft_model, target_model):
@@ -844,6 +850,7 @@ print(f"Speculative output: {output}")
 
 
 ## Overview
+
 ### 8.5.4 Response Trimming
 
 Reduce output tokens by enforcing concise responses.
@@ -1286,7 +1293,7 @@ Answer: C
 
 4. Design a model router that selects between gpt-4o-mini, gpt-4o, and claude-3-haiku based on task complexity, latency requirements, and remaining daily budget. Simulate 24 hours of traffic.
 
-5. Implement a budget monitoring dashboard that tracks daily spend, projects monthly cost, and sends alerts at configurable thresholds. Include cost attribution by feature 
+5. Implement a budget monitoring dashboard that tracks daily spend, projects monthly cost, and sends alerts at configurable thresholds. Include cost attribution by feature
 
 ## Revision Notes
 

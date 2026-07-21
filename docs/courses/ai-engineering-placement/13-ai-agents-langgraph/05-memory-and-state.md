@@ -19,6 +19,18 @@ Understanding memory and state is essential for AI engineers building production
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding memory and state is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how memory and state works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind memory and state
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |

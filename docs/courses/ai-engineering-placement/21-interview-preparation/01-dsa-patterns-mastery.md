@@ -20,6 +20,18 @@ Understanding dsa patterns mastery is essential for AI engineers building produc
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding dsa patterns mastery is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how dsa patterns mastery works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind dsa patterns mastery
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -55,6 +67,7 @@ The two-pointer technique uses two indices to traverse a data structure, typical
 **Same-direction pointers**: Both pointers start at the same end, one moving faster. Used for in-place removal, linked list cycle detection, and partition.
 
 ```python
+
 ## Opposite-direction: Two Sum II (sorted array)
 def two_sum_sorted(nums: list[int], target: int) -> list[int]:
     left, right = 0, len(nums) - 1
@@ -95,6 +108,7 @@ Sliding window maintains a contiguous subarray or substring that satisfies a con
 **Variable-size window**: The window grows or shrinks based on a constraint. Use a while loop to shrink from the left when the constraint is violated.
 
 ```python
+
 ## Fixed-size: Maximum sum subarray of size k
 def max_sum_subarray(nums: list[int], k: int) -> int:
     window_sum = sum(nums[:k])
@@ -134,6 +148,7 @@ Binary search finds an element in a sorted array in O(log n) time. Beyond the cl
 **Upper bound / Last occurrence**: Find the rightmost position where target could be inserted.
 
 ```python
+
 ## Classic binary search
 def binary_search(nums: list[int], target: int) -> int:
     left, right = 0, len(nums) - 1
@@ -272,6 +287,7 @@ DP solves problems by combining solutions to overlapping subproblems. Master the
 **Knapsack / Subset**: Partition equal subset sum, target sum, ones and zeros.
 
 ```python
+
 ## 1D DP — house robber
 def rob(nums: list[int]) -> int:
     prev, curr = 0, 0
@@ -334,6 +350,7 @@ def backtrack(candidate, state, constraints):
 ```text
 
 ```python
+
 ## Generate all subsets (power set)
 def subsets(nums: list[int]) -> list[list[int]]:
     result = []
@@ -481,6 +498,7 @@ The Blind 75 is a curated list of 75 LeetCode problems covering essential patter
 **Spaced repetition schedule**: Review each solved problem after 1 day, 3 days, 1 week, 2 weeks, and 1 month. Maintain a spreadsheet tracking problem name, pattern, date solved, and notes.
 
 ```python
+
 ## Simple spaced-repetition tracker
 import json
 from datetime import datetime, timedelta

@@ -300,7 +300,7 @@ class STARStoryBuilder {
         return targetPrinciples.filter((lp) => !covered.has(lp))
     }
 }
-```
+```text
 
 
 ### Company Process Comparator
@@ -375,7 +375,7 @@ class InterviewStrategyPlanner {
         }).filter((s) => s.length > 0)
     }
 }
-```
+```text
 
 
 ### Amazon LP Coverage Tracker
@@ -417,7 +417,7 @@ class AmazonLPCoverage {
             .map((c) => c.lp)
     }
 }
-```
+```text
 
 
 ### Behavioral Response Evaluator
@@ -472,7 +472,7 @@ class BehavioralEvaluator {
         return { score: Math.max(1, score), feedback }
     }
 }
-```
+```text
 
 
 
@@ -503,6 +503,36 @@ When comparing offers, use a weighted score:
 Calculate weighted score for each offer and compare.
 
 
+
+
+## Visual Explanation
+
+```mermaid
+flowchart TD
+    A[Input Data] --> B[Processing]
+    B --> C[Output]
+    C --> D[Feedback Loop]
+    D --> B
+```
+
+## Visual Analogy
+
+Think of faang company deep dives like a **delivery system**:
+
+- **Input** = Package to deliver
+- **Processing** = Route planning and optimization
+- **Output** = Package delivered to destination
+- **Feedback** = Delivery confirmation and tracking
+
+This analogy helps because faang company deep dives, like a delivery system, involves transforming inputs into outputs efficiently while handling constraints and edge cases.
+
+## Exercises
+
+**Easy** — Implement a basic faang company deep dives example that demonstrates the core concept.
+
+**Medium** — Create a more complex implementation that handles edge cases.
+
+**Hard** — Design an optimized solution for large-scale faang company deep dives scenarios.
 
 ## Summary
 

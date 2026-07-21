@@ -20,6 +20,18 @@ Understanding ai agents interview is essential for AI engineers building product
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding ai agents interview is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how ai agents interview works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind ai agents interview
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -139,6 +151,7 @@ Tools are the agent's interface to the external world. Well-designed tool defini
 **Execution patterns**: Sequential (one tool call at a time), parallel (multiple independent tool calls), iterative (tool calls in a loop), conditional (tool choice depends on previous results).
 
 ```python
+
 ## Tool definitions with Pydantic
 from pydantic import BaseModel, Field
 from typing import Optional
@@ -731,6 +744,7 @@ MCP standardizes how agents discover and interact with external tools, resources
 - **Transport**: JSON-RPC over stdin/stdout (local) or HTTP+SSE (remote).
 
 ```python
+
 ## MCP Server implementation
 from mcp.server import Server, NotificationOptions
 from mcp.server.models import InitializationOptions
@@ -1270,10 +1284,12 @@ class ProductionAgent:
     <p><strong>Tools needed</strong>: Calendar API (check availability, create event), Email/Slack (send invitations), Contacts directory (resolve names to emails).</p>
     <p><strong>Agent workflow</strong>:</p>
     <pre><code># Step 1: Parse the request
+
 ## User: "Schedule a 1-hour meeting with Alice and Bob next Tuesday afternoon"
 
 ## Step 2: Resolve participants
 participants = resolve_contacts(["Alice", "Bob"])
+
 ## → [{"name": "Alice", "email": "alice@co.com"}, {"name": "Bob", "email": "bob@co.com"}]
 
 ## Step 3: Check availability
@@ -1283,9 +1299,11 @@ slots = check_availability(
     duration_minutes=60,
     time_range="13:00-17:00",
 )
+
 ## → [{"start": "14:00", "end": "15:00", "all_available": True}]
 
 ## Step 4: Propose time to user
+
 ## Agent: "Next Tuesday at 2-3 PM works for everyone. Shall I book it?"
 
 ## Step 5: Create event (after user confirmation)
@@ -1298,6 +1316,7 @@ event = create_calendar_event(
 send_invitations(event["id"])
 
 ## Step 6: Confirm
+
 ## Agent: "Meeting booked for Tuesday at 2:00 PM. Invitations sent."</code></pre>
     <p><strong>Edge cases</strong>: No common slot found (suggest alternatives), participant declines (re-schedule), timezone differences (auto-convert), recurring meetings (handle separately).</p>
   </div>

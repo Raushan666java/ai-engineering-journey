@@ -171,7 +171,7 @@ class InferenceClient {
 `	ypescript
 class BasicLLMService implements LLMProvider {
     async generate(prompt: string): Promise<string> {
-        return Generated response for: 
+        return Generated response for:
     }
 }
 
@@ -361,7 +361,7 @@ class MonolithicService {
     }
 
     private async callOpenAI(prompt: string): Promise<string> {
-        return esponse to 
+        return esponse to
     }
 
     private getFromCache(key: string): string | null {

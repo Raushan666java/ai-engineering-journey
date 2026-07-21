@@ -20,6 +20,18 @@ Understanding structured output is essential for AI engineers building productio
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding structured output is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how structured output works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind structured output
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -372,6 +384,7 @@ class ExtractionPipeline:
         return {"entities": entities, "relations": relations}
 
 ## pipeline = ExtractionPipeline(client)
+
 ## result = pipeline.run("Apple Inc. was founded by Steve Jobs in Cupertino in 1976.")
 ```text
 

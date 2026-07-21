@@ -19,6 +19,18 @@ Understanding production agents is essential for AI engineers building productio
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding production agents is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how production agents works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind production agents
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -827,7 +839,7 @@ Answer: B
 
 4. Create an A/B testing framework for agent prompts. Route 50% of traffic to prompt A and 50% to prompt B, collect success rates and latencies, and report the winner.
 
-5. Implement a token budget manager with daily limits per user and a cost optimization advisor. Test with 3 users and show budget enforcement when limits are 
+5. Implement a token budget manager with daily limits per user and a cost optimization advisor. Test with 3 users and show budget enforcement when limits are
 
 ## Revision Notes
 

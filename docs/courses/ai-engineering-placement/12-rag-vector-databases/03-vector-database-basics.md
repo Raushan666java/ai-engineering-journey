@@ -164,16 +164,26 @@ for scale, budget in [("small", "free"), ("large", "paid"), ("large", "self-host
 Chroma is the most developer-friendly option for prototyping.
 
 ```python
+
 ## Conceptual Chroma usage
 import chromadb
+
 ## chroma_client = chromadb.Client()
+
 ## collection = chroma_client.create_collection(name="my_collection")
+
 ## collection.add(
+
 ##     documents=["Document about RAG", "Document about embeddings"],
+
 ##     metadatas=[{"source": "tutorial"}, {"source": "paper"}],
+
 ##     ids=["doc1", "doc2"]
+
 ## )
+
 ## results = collection.query(query_texts=["RAG pipeline"], n_results=2)
+
 ## print(results)
 
 ## In-memory mock for demonstration
@@ -454,7 +464,9 @@ class IndexBenchmark:
 
 
 benchmark = IndexBenchmark(dimension=128, num_vectors=1000)
+
 ## flat_result = benchmark.benchmark_index(FlatIndex(), "Flat")
+
 ## print(flat_result)
 print("Benchmark ready for testing")
 ```text

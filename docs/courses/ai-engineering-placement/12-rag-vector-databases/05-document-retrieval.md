@@ -20,6 +20,18 @@ Understanding document retrieval is essential for AI engineers building producti
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding document retrieval is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how document retrieval works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind document retrieval
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -761,12 +773,14 @@ class BoostedRetriever:
 
 boosted = BoostedRetriever(bm25)
 boosted.set_boost("doc1", 1.5)
+
 ## Results will favor doc1 score
 print("Boosted retriever ready")
 ```text
 
 
 ## Overview
+
 ### 5.6.3 Faceted Search
 
 ```python

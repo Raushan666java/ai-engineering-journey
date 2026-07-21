@@ -38,7 +38,7 @@ flowchart LR
     E --> F[Error Handling]
     F --> G[Versioning]
     G --> H[OpenAPI Docs]
-```
+```text
 
 
 ## Introduction
@@ -78,8 +78,10 @@ REST (Representational State Transfer) defines six architectural constraints tha
 ## Examples
 
 ```python
+
 ## Stateless request example — all context in the request
 import requests
+
 
 ## Each request carries authentication and all necessary data
 response = requests.get(
@@ -89,12 +91,14 @@ response = requests.get(
         "Accept": "application/json"
     }
 )
+
 ## Server does not need to remember previous interactions
-```
+```text
 
 
 
 ## Overview
+
 ### 1.2 HTTP Methods and Status Codes
 
 Every REST API maps CRUD operations to HTTP methods.
@@ -145,7 +149,7 @@ def delete_user(user_id: int):
     if user_id not in users_db:
         raise HTTPException(status_code=404, detail="User not found")
     del users_db[user_id]
-```
+```text
 
 **Best practices**: Always use the correct status code. Never return 200 for errors. Use 201 for resource creation. Use 204 for successful deletions. Use 422 for validation errors and 409 for conflicts.
 
@@ -164,11 +168,12 @@ flowchart LR
     D --> G[PATCH: Partial update]
     D --> H[DELETE: Remove user]
     D --> I[/users/42/orders]
-```
+```text
 
 **URL conventions**:
 
 ```python
+
 ## Good — plural nouns, nested resources
 GET    /users                    # List users
 GET    /users/42                 # Get user 42
@@ -179,12 +184,13 @@ DELETE /users/42                 # Delete user 42
 GET    /users/42/orders          # List user's orders
 GET    /users/42/orders/5        # Get order 5 for user 42
 
+
 ## Bad — verbs in URL, inconsistent casing
 GET    /getUser                  # Verb in URL
 POST   /createUser               # Verb
 GET    /UserList                 # PascalCase
 POST   /api/v1/get_user_profile  # Snake_case + verb
-```
+```text
 
 **Naming rules**:
 - Plural nouns (`/users` not `/user`)
@@ -196,6 +202,7 @@ POST   /api/v1/get_user_profile  # Snake_case + verb
 
 
 ## Overview
+
 ### 1.4 Request/Response Formats
 
 JSON is the standard data format for REST APIs.
@@ -205,6 +212,7 @@ from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
 
 app = FastAPI()
+
 
 ## Content negotiation — client specifies desired format
 @app.get("/users/{user_id}")
@@ -221,17 +229,26 @@ async def get_user(user_id: int, request: Request):
     user = {"id": user_id, "name": "Alice", "email": "alice@example.com"}
     return JSONResponse(content=user)
 
+
 ## Standard headers for REST APIs
+
 ## Request:  Accept: application/json
+
 ##           Authorization: Bearer <token>
+
 ##           Content-Type: application/json
+
 ##           If-None-Match: "abc123"
 
+
 ## Response: Content-Type: application/json
+
 ##           ETag: "abc123"
+
 ##           Cache-Control: private, max-age=60
+
 ##           X-Request-ID: req_abc123
-```
+```text
 
 **Common headers**:
 
@@ -248,6 +265,7 @@ async def get_user(user_id: int, request: Request):
 
 
 ## Overview
+
 ### 1.5 Pagination and Filtering
 
 REST APIs must handle large collections efficiently.
@@ -285,7 +303,7 @@ def list_users(
             "limit": limit
         }
     }
-```
+```text
 
 **Offset-based pagination** (simpler, but inconsistent under writes):
 
@@ -306,7 +324,7 @@ def list_products(offset: int = 0, limit: int = 20):
             "next_offset": offset + limit if offset + limit < total else None
         }
     }
-```
+```text
 
 **Filtering and sorting**:
 
@@ -332,7 +350,7 @@ def list_orders(
     query += f" ORDER BY {order_col} {order_dir}"
 
     return db.execute(query, params)
-```
+```text
 
 
 ### 1.6 Error Handling
@@ -344,6 +362,7 @@ from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import JSONResponse
 
 app = FastAPI()
+
 
 ## RFC 7807 Problem Details format
 class ProblemDetail(Exception):
@@ -367,6 +386,7 @@ async def problem_detail_handler(request: Request, exc: ProblemDetail):
         }
     )
 
+
 ## Usage
 @app.get("/users/{user_id}")
 def get_user(user_id: int):
@@ -376,7 +396,7 @@ def get_user(user_id: int):
     if user is None:
         raise ProblemDetail(404, "Not Found", f"User {user_id} not found")
     return user
-```
+```text
 
 **Error response structure**:
 
@@ -395,11 +415,12 @@ def get_user(user_id: int):
     }
   ]
 }
-```
+```text
 
 
 
 ## Overview
+
 ### 1.7 API Versioning
 
 APIs evolve over time. Versioning prevents breaking changes for existing clients.
@@ -413,6 +434,7 @@ APIs evolve over time. Versioning prevents breaking changes for existing clients
 
 ```python
 from fastapi import FastAPI, APIRouter
+
 
 ## URL path versioning
 v1_router = APIRouter(prefix="/api/v1")
@@ -429,13 +451,14 @@ def list_users_v2():
 app = FastAPI()
 app.include_router(v1_router)
 app.include_router(v2_router)
-```
+```text
 
 **Deprecation strategy**: Support at least two versions simultaneously. Return `Sunset` and `Deprecation` headers on old versions with migration timeline.
 
 
 
 ## Overview
+
 ### 1.8 Documentation with OpenAPI
 
 OpenAPI (formerly Swagger) is the industry standard for REST API documentation.
@@ -467,7 +490,7 @@ class UserCreate(BaseModel):
 )
 def create_user(user: UserCreate):
     return user
-```
+```text
 
 FastAPI auto-generates OpenAPI specs from Python type hints. Every endpoint appears in `/docs` (Swagger UI) and `/redoc` (ReDoc) automatically.
 
@@ -526,7 +549,7 @@ class ApiError extends Error {
     super(`API Error ${status}: ${body?.detail || body?.message}`);
   }
 }
-```
+```text
 
 ---
 

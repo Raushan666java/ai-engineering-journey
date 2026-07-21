@@ -20,6 +20,18 @@ Understanding async patterns is essential for AI engineers building production s
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding async patterns is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how async patterns works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind async patterns
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -81,6 +93,7 @@ async def fire_and_forget():
     await task  # Wait for completion if needed
 
 ## Running async code
+
 ## asyncio.run(main())  # Entry point
 ```text
 
@@ -228,6 +241,7 @@ async def upload_file(file: UploadFile, background_tasks: BackgroundTasks):
 Celery distributes tasks to worker processes for reliable background processing.
 
 ```python
+
 ## celery_app.py
 from celery import Celery
 
@@ -284,6 +298,7 @@ async def get_task_status(task_id: str):
     }
 
 ## Periodic tasks (Celery Beat)
+
 ## celery -A tasks beat
 from celery.schedules import crontab
 
@@ -508,6 +523,7 @@ import time
 app = FastAPI()
 
 ## Avoid blocking the event loop
+
 ## BAD — blocks entire server
 @app.get("/bad")
 async def bad_endpoint():

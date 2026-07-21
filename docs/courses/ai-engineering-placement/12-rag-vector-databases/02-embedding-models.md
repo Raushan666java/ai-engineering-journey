@@ -94,6 +94,7 @@ print(f"L2 norm: {np.linalg.norm(emb):.4f}")
 The pooling strategy determines how token-level representations are combined into a single sentence embedding.
 
 ```python
+
 ## Conceptual pooling strategies
 import numpy as np
 
@@ -178,6 +179,7 @@ print(f"OpenAI embedding (dim={len(emb)}): first 3 values = {emb[:3]}")
 
 
 ## Overview
+
 ### 2.2.2 Sentence-Transformers
 
 Open-source embedding models from Hugging Face, fine-tuned for semantic similarity.
@@ -328,6 +330,7 @@ print(f"Dot (unnormalized): {dot_product(a_unnorm, b_unnorm):.4f}")
 
 
 ## Overview
+
 ### 2.3.3 Euclidean Distance
 
 Measures straight-line distance between vectors. Convert to similarity via 1/(1+distance).

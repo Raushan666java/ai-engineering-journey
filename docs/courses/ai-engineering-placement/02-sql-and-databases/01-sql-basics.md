@@ -20,6 +20,39 @@ Understanding sql basics is essential for AI engineers building production syste
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding sql basics is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how sql basics works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind sql basics
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
+## Examples
+
+### Basic Example
+
+```python
+## Basic sql basics example
+def example():
+    """Demonstrate sql basics"""
+    result = "Hello, sql basics!"
+    print(result)
+    return result
+
+example()
+```
+
+### Expected Output
+
+```text
+Hello, sql basics!
+```
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -69,6 +102,7 @@ cur.executemany("INSERT INTO emp VALUES (?,?,?,?)", [
 cur.execute("SELECT name, salary FROM emp WHERE salary > 70000")
 for row in cur.fetchall():
     print(row)
+
 ## ('Alice', 75000) ('Charlie', 82000)
 `
 
@@ -109,6 +143,7 @@ cur.executemany("INSERT INTO scores VALUES (?,?)", [("Alice",95),("Bob",87),("Ch
 cur.execute("SELECT name, score FROM scores ORDER BY score DESC LIMIT 2")
 for r in cur.fetchall():
     print(f"{r[0]}: {r[1]}")
+
 ## Alice: 95, Charlie: 92
 `
 
@@ -132,7 +167,9 @@ cur.execute("INSERT INTO users VALUES (2, 'Bob', NULL)")
 cur.execute("SELECT name, COALESCE(email, 'No email') FROM users")
 for r in cur.fetchall():
     print(f"{r[0]}: {r[1]}")
+
 ## Alice: a@test.com
+
 ## Bob: No email
 `
 

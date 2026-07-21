@@ -19,6 +19,18 @@ Understanding multi agent systems is essential for AI engineers building product
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding multi agent systems is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how multi agent systems works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind multi agent systems
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -853,7 +865,7 @@ Answer: B
 
 4. Design a conflict resolution protocol where two agents disagree on approach and an arbitrator agent resolves the conflict. Show the positions and final resolution.
 
-5. Implement a team performance dashboard that tracks tasks completed, average completion time, conflicts resolved, and messages exchanged. Simulate 10 tasks and generate 
+5. Implement a team performance dashboard that tracks tasks completed, average completion time, conflicts resolved, and messages exchanged. Simulate 10 tasks and generate
 
 ## Revision Notes
 

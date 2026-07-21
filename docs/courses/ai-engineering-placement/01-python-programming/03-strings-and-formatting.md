@@ -20,6 +20,39 @@ Understanding strings and formatting is essential for AI engineers building prod
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding strings and formatting is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how strings and formatting works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind strings and formatting
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
+## Examples
+
+### Basic Example
+
+```python
+# Basic strings and formatting example
+def example():
+    """Demonstrate strings and formatting"""
+    result = "Hello, strings and formatting!"
+    print(result)
+    return result
+
+example()
+```
+
+### Expected Output
+
+```text
+Hello, strings and formatting!
+```
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -49,7 +82,7 @@ Python strings provide a rich set of methods for text manipulation. Since string
 `python
 text = "  Hello, Python World!  "
 
-# Case conversion
+## Case conversion
 print(text.upper())        # "  HELLO, PYTHON WORLD!  "
 print(text.lower())        # "  hello, python world!  "
 print(text.title())        # "  Hello, Python World!  "
@@ -144,6 +177,7 @@ print(s[10:4:-1]) # "margor" � reversed slice
 **Practical slicing patterns**:
 
 `python
+
 ## Palindrome check
 def is_palindrome(s):
     s = s.lower().replace(" ", "")
@@ -268,6 +302,7 @@ print(re.fullmatch(r"\d{5}", "12345-")) # None
 **Groups and capturing**:
 
 `python
+
 ## Named groups
 pattern = r"(?P<name>\w+)@(?P<domain>\w+\.\w+)"
 match = re.search(pattern, "user@example.com")
@@ -322,14 +357,18 @@ for name, pattern in patterns.items():
         print(f"{name}: {matches}")
 
 ## Output:
+
 ## url: ['https://example.com']
+
 ## phone: ['555-123-4567']
+
 ## hashtag: ['#AI']
 `
 
 **Compiled patterns** (faster for repeated use):
 
 `python
+
 ## Compile once, use many times
 email_re = re.compile(r"[\w.-]+@[\w.-]+")
 
@@ -342,6 +381,7 @@ for text in texts:
 ## With flags
 case_insensitive = re.compile(r"python", re.IGNORECASE)
 print(case_insensitive.findall("Python python PYTHON"))
+
 ## ['Python', 'python', 'PYTHON']
 `
 
@@ -352,6 +392,7 @@ print(case_insensitive.findall("Python python PYTHON"))
 Python 3 strings are Unicode by default. Encoding converts str to bytes; decoding converts bytes to str.
 
 `python
+
 ## str -> bytes (encoding)
 text = "Hello, ??"
 utf8_bytes = text.encode("utf-8")
@@ -370,10 +411,13 @@ print("�".encode("latin-1"))           # UnicodeEncodeError (� not in latin-
 
 ## Error handling
 text = "caf�"
+
 ## Ignore errors
 print(text.encode("ascii", errors="ignore"))    # b'caf'
+
 ## Replace errors
 print(text.encode("ascii", errors="replace"))   # b'caf?'
+
 ## XML charref
 print(text.encode("ascii", errors="xmlcharrefreplace"))  # b'caf&#233;'
 `
@@ -430,6 +474,7 @@ print(f"good: {time.time() - start:.4f}s")
 **String builder pattern**:
 
 `python
+
 ## Using list + join (preferred)
 def build_sentence(words):
     return " ".join(words)

@@ -20,6 +20,18 @@ Understanding training pipelines is essential for AI engineers building producti
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding training pipelines is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how training pipelines works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind training pipelines
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |

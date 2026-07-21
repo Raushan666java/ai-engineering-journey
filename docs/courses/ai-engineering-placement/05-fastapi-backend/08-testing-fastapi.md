@@ -20,6 +20,18 @@ Understanding testing fastapi is essential for AI engineers building production 
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding testing fastapi is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how testing fastapi works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind testing fastapi
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -51,10 +63,15 @@ flowchart LR
 FastAPI provides TestClient for making HTTP requests to your app without running a server.
 
 ```python
+
 ## requirements-dev.txt
+
 ## pytest
+
 ## httpx
+
 ## pytest-asyncio
+
 ## pytest-cov
 
 ## tests/conftest.py
@@ -120,6 +137,7 @@ async def test_async_endpoint(async_client):
 Test pure functions, validators, and model logic in isolation.
 
 ```python
+
 ## app/models/user.py
 from pydantic import BaseModel, field_validator, EmailStr
 
@@ -164,6 +182,7 @@ def test_missing_digit():
         UserCreate(username="bob", email="bob@example.com", password="NoDigits!")
 
 ## Test utility functions
+
 ## app/utils/security.py
 from passlib.context import CryptContext
 
@@ -196,6 +215,7 @@ def test_password_hash_and_verify():
 Test the full stack — database, API, and services together.
 
 ```python
+
 ## tests/conftest.py — database fixture
 import pytest
 from sqlalchemy import create_engine
@@ -279,6 +299,7 @@ def test_full_user_workflow(client):
 Mock external services by overriding FastAPI dependencies.
 
 ```python
+
 ## tests/conftest.py — mock email service
 from app.dependencies import send_email
 
@@ -384,6 +405,7 @@ async def test_generator_dependency():
 ## 8.6 Test Fixtures
 
 ```python
+
 ## tests/factories.py — test data factories
 import factory
 from app.models.user import UserCreate
@@ -436,7 +458,9 @@ def test_list_posts_with_auth(client, auth_headers):
 ## 8.7 Test Coverage
 
 ```python
+
 ## Run coverage
+
 ## pytest --cov=app tests/ --cov-report=html --cov-report=term-missing
 
 ## .coveragerc
@@ -453,8 +477,11 @@ exclude_lines =
     pass
 
 ## Coverage targets
+
 ## Minimum: 80% line coverage
+
 ## Critical paths: 100%
+
 ## New code: 90%+
 
 ## tests/test_coverage.py
@@ -477,6 +504,7 @@ def test_all_endpoints_have_tests(client):
 ## 8.8 CI/CD Testing
 
 ```yaml
+
 ## .github/workflows/test.yml
 name: Test
 on: [push, pull_request]
@@ -519,6 +547,7 @@ jobs:
 ```text
 
 ```yaml
+
 ## pre-commit config
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks

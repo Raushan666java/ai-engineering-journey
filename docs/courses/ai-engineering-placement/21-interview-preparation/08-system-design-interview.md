@@ -20,6 +20,18 @@ Understanding system design interview is essential for AI engineers building pro
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding system design interview is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how system design interview works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind system design interview
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -65,6 +77,7 @@ A structured approach ensures you cover all aspects of the system. Follow this f
 **Step 7 — Tradeoffs and summary (2-3 min)**: What you optimized for, what you sacrificed, alternative approaches.
 
 ```python
+
 ## Estimation utility
 def estimate_traffic(dau: int, requests_per_user_per_day: float) -> dict:
     daily_requests = dau * requests_per_user_per_day
@@ -86,14 +99,17 @@ def estimate_storage(records_per_day: int, record_size_bytes: int, retention_day
     }
 
 ## Example: Design Twitter
+
 ## DAU: 200M, tweets/user/day: 2
 traffic = estimate_traffic(200_000_000, 2)
 print(f"Avg QPS: {traffic['avg_qps']:.0f}, Peak QPS: {traffic['peak_qps']:.0f}")
+
 ## Avg QPS: 4,630, Peak QPS: 13,890
 
 ## Storage: 400M tweets/day, 500 bytes per tweet, 5 year retention
 storage = estimate_storage(400_000_000, 500, 365 * 5)
 print(f"Total storage: {storage['total_tb']:.0f} TB")
+
 ## Total storage: ~333 TB
 ```text
 
@@ -114,6 +130,7 @@ Choosing the right data store is one of the most important design decisions.
 **Search engines (Elasticsearch)**: Full-text search, complex aggregations. Best for: log analytics, product search, site search.
 
 ```python
+
 ## Sharding strategies
 import hashlib
 
@@ -274,6 +291,7 @@ Load balancers distribute traffic across multiple servers for availability and s
 **Layer 4 vs Layer 7**: L4 (transport layer — TCP/UDP, faster, less intelligent), L7 (application layer — HTTP/HTTPS, can inspect requests, content-based routing).
 
 ```python
+
 ## Simple round-robin load balancer
 class RoundRobinLoadBalancer:
     def __init__(self, servers: list[str]):
@@ -352,6 +370,7 @@ Microservices decompose a system into independently deployable services. Each se
 **gRPC**: High-performance RPC framework using Protocol Buffers. Good for internal service-to-service communication. Supports bi-directional streaming.
 
 ```python
+
 ## Service decomposition example — e-commerce platform
 SERVICES = {
     "user-service": {
@@ -538,6 +557,7 @@ Data-intensive systems handle large-scale data processing, analytics, and report
 **Kappa architecture**: Everything is a stream. Use stream processing for all data. Simpler than Lambda, but requires replay capability.
 
 ```python
+
 ## Event streaming architecture
 from dataclasses import dataclass
 from datetime import datetime
@@ -675,7 +695,7 @@ class RateLimiter:
 **Design interview walkthrough**:
 
 1. Clarify requirements (functional + non-functional)
-2. Estimate scale (traffic, storage, bandwidth)  
+2. Estimate scale (traffic, storage, bandwidth)
 3. Define data model and API
 4. Draw high-level architecture diagram
 5. Deep dive: sharding, caching, consistency, fault tolerance

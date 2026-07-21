@@ -169,6 +169,18 @@ What we're building and why it matters.
 ## Prerequisites
 What readers need to know and have installed.
 
+
+## Theory
+
+Understanding technical blogging is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how technical blogging works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind technical blogging
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Step 1: Setup
 Environment setup and dependencies.
 

@@ -20,6 +20,18 @@ Understanding dependency injection is essential for AI engineers building produc
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding dependency injection is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how dependency injection works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind dependency injection
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -57,6 +69,7 @@ Dependency injection (DI) is a design pattern where objects receive their depend
 - **Lifecycle management**: Automatic setup/cleanup of resources
 
 ```python
+
 ## Without DI — hard to test, tightly coupled
 def get_user(user_id: int):
     db = Database()  # Created inside — cannot mock
@@ -65,6 +78,7 @@ def get_user(user_id: int):
 ## With DI — dependencies injected
 def get_user(user_id: int, db: Database = Depends(get_db)):
     return db.query("SELECT * FROM users WHERE id = ?", user_id)
+
 ## db is injected — can be replaced with mock in tests
 ```text
 
@@ -184,6 +198,7 @@ async def list_users(db: Session = Depends(get_db)):
     # db is available here
     users = db.execute("SELECT * FROM users").fetchall()
     return {"users": users}
+
 ## After response, db.close() is called automatically
 
 ## Multiple resources
@@ -305,6 +320,7 @@ async def admin_list_users(admin: dict = Depends(get_admin_user)):
     return {"admin": admin["name"], "users": [{"id": 1}]}
 
 ## Trace the dependency chain:
+
 ## /admin/users -> get_admin_user(Depends(get_current_user(Depends(get_db))))
 ```text
 

@@ -40,7 +40,7 @@ flowchart LR
     H --> I{Converged?}
     I -->|No| A
     I -->|Yes| J[Trained Model]
-```
+```text
 
 
 ## Introduction
@@ -99,6 +99,7 @@ class Perceptron:
         return epoch
 
 
+
 ## XOR problem — perceptron cannot solve this
 X_xor = np.array([[0, 0], [0, 1], [1, 0], [1, 1]], dtype=np.float32)
 y_xor = np.array([0, 1, 1, 0], dtype=np.float32)
@@ -107,7 +108,7 @@ p = Perceptron(2)
 p.fit(X_xor, y_xor, epochs=20)
 print(f"Perceptron XOR predictions: {p.predict(X_xor)}")
 print("Perceptron cannot learn XOR (linear separability limitation)")
-```
+```text
 
 **Perceptron convergence theorem**: If the data is linearly separable, the perceptron converges in finite steps. XOR is not linearly separable, requiring a multi-layer network.
 
@@ -116,6 +117,7 @@ print("Perceptron cannot learn XOR (linear separability limitation)")
 
 
 ## Overview
+
 ### 1.2 Activation Functions
 
 Activation functions introduce non-linearity, enabling neural networks to learn complex patterns.
@@ -169,17 +171,18 @@ class ActivationFunctions:
 
 af = ActivationFunctions()
 af.plot_activations()
-```
+```text
 
 **PyTorch activations**:
 ```python
+
 ## PyTorch has built-in activation functions
 x_t = torch.randn(5)
 print(f"Sigmoid: {torch.sigmoid(x_t)}")
 print(f"ReLU: {torch.relu(x_t)}")
 print(f"Tanh: {torch.tanh(x_t)}")
 print(f"LeakyReLU: {nn.LeakyReLU(0.01)(x_t)}")
-```
+```text
 
 | Activation | Range | Derivative | Use Case |
 |------------|-------|------------|----------|
@@ -194,6 +197,7 @@ print(f"LeakyReLU: {nn.LeakyReLU(0.01)(x_t)}")
 
 
 ## Overview
+
 ### 1.3 Multi-Layer Perceptron
 
 An MLP has one or more hidden layers between input and output. The universal approximation theorem states that a single hidden layer with enough neurons can approximate any continuous function.
@@ -279,6 +283,7 @@ class MLPScratch:
         return np.mean((output - y) ** 2)
 
 
+
 ## Test MLP on regression
 np.random.seed(42)
 X_mlp = np.random.randn(100, 3)
@@ -296,13 +301,14 @@ for epoch in range(500):
 
     if epoch % 100 == 0:
         print(f"Epoch {epoch}: loss = {loss:.6f}")
-```
+```text
 
 ---
 
 
 
 ## Overview
+
 ### 1.4 Backpropagation
 
 Backpropagation computes gradients of the loss with respect to all parameters using the chain rule.
@@ -337,6 +343,7 @@ class ComputationalGraph:
         return {op["name"]: op["grad"] for op in self.graph}
 
 
+
 ## PyTorch autograd demonstration
 x = torch.tensor(2.0, requires_grad=True)
 w = torch.tensor(3.0, requires_grad=True)
@@ -350,7 +357,7 @@ loss.backward()
 print(f"dL/dw = {w.grad.item():.2f} (manual: {2 * (z.item() - y.item()) * x.item():.2f})")
 print(f"dL/db = {b.grad.item():.2f} (manual: {2 * (z.item() - y.item()):.2f})")
 print(f"dL/dx = {x.grad.item():.2f}")
-```
+```text
 
 **Backpropagation steps**:
 1. Forward pass: compute all activations
@@ -363,6 +370,7 @@ print(f"dL/dx = {x.grad.item():.2f}")
 
 
 ## Overview
+
 ### 1.5 Weight Initialization
 
 Good initialization prevents vanishing/exploding gradients and speeds convergence.
@@ -410,7 +418,7 @@ class WeightInitializer:
 
 init = WeightInitializer()
 init.test_initialization(100, 100)
-```
+```text
 
 **PyTorch initialization**:
 ```python
@@ -418,7 +426,7 @@ layer = nn.Linear(100, 100)
 nn.init.kaiming_normal_(layer.weight, mode="fan_in", nonlinearity="relu")
 nn.init.xavier_normal_(layer.weight)
 print(f"PyTorch init: mean={layer.weight.mean().item():.4f}, std={layer.weight.std().item():.4f}")
-```
+```text
 
 | Initialization | Distribution | Scale | Best For |
 |----------------|-------------|-------|----------|
@@ -465,7 +473,7 @@ y_p = np.array([0.1, 0.9, 0.3, 0.7])
 print(f"MSE: {lf.mse(y_t, y_p):.4f}")
 print(f"Binary CE: {lf.binary_cross_entropy(y_t, y_p):.4f}")
 print(f"Huber: {lf.huber_loss(y_t, y_p):.4f}")
-```
+```text
 
 ---
 
@@ -532,7 +540,7 @@ class NeuralNetworkTS {
 const nnTS = new NeuralNetworkTS();
 nnTS.addLayer(3, 8, "relu");
 nnTS.addLayer(8, 1, "sigmoid");
-```
+```text
 
 
 ## Summary

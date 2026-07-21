@@ -20,6 +20,18 @@ Understanding voice agents is essential for AI engineers building production sys
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding voice agents is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how voice agents works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind voice agents
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -1249,7 +1261,7 @@ Voice agents combine ASR, LLM, and TTS into a real-time conversational pipeline.
 
 9. **Multi-Language Voice Agent**: Build a voice agent that detects the user's language from speech (using Whisper language identification). Respond in the same language. Support at least 3 languages. Test code-switching (mixing languages in one utterance).
 
-10. **End-to-End Speech Model Exploration**: Research and test an end-to-end speech model (GPT-4o audio, SeamlessM4T, or similar). Compare its quality and latency with the cascaded approach (ASR + LLM + TTS). Report pros and cons of each 
+10. **End-to-End Speech Model Exploration**: Research and test an end-to-end speech model (GPT-4o audio, SeamlessM4T, or similar). Compare its quality and latency with the cascaded approach (ASR + LLM + TTS). Report pros and cons of each
 
 ## Revision Notes
 

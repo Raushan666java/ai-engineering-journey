@@ -270,11 +270,13 @@ def bleu_multiref(candidate: str, references: List[str], max_n: int = 4) -> floa
 
 
 ## Overview
+
 ### 7.2.3 BERTScore
 
 BERTScore uses contextual embeddings from BERT to compute token-level similarity, capturing semantic equivalence beyond surface n-gram overlap.
 
 ```python
+
 ## Conceptual BERTScore implementation using cosine similarity of embeddings
 from typing import List
 import numpy as np
@@ -318,6 +320,7 @@ def bertscore_f1(
 
 
 ## Implementation using HuggingFace transformers
+
 ## pip install transformers torch
 """
 from transformers import AutoTokenizer, AutoModel
@@ -343,11 +346,13 @@ print(f"BERTScore F1: {bertscore_f1(list(cand_vecs), list(ref_vecs)):.4f}")
 
 
 ## Overview
+
 ### 7.2.4 METEOR
 
 METEOR improves on BLEU by aligning synonyms and stems, using WordNet and Porter stemming for flexible matching.
 
 ```python
+
 ## Simplified METEOR implementation
 def meteor_score(candidate: str, reference: str) -> float:
     cand_unigrams = set(tokenize(candidate))
@@ -507,6 +512,7 @@ print(f"Bad output perplexity: {perplexity(log_probs_bad)}")
 
 
 ## Overview
+
 ### 7.4.2 Self-Consistency
 
 Self-consistency evaluates reliability by sampling multiple outputs and measuring agreement.
@@ -604,11 +610,13 @@ rubric = """
 """
 
 ## result = judge_evaluation(prompt, generated, rubric)
+
 ## print(result)
 ```text
 
 
 ## Overview
+
 ### 7.4.4 Factual Consistency Check
 
 Detect hallucinations by verifying generated claims against the input context.
@@ -649,9 +657,13 @@ def factual_consistency_score(
 
 
 ## Example usage (requires API key)
+
 ## context = "The Eiffel Tower was built in 1889 and is located in Paris, France."
+
 ## generated = "The Eiffel Tower is a famous landmark in Paris. It was built in the 19th century."
+
 ## score = factual_consistency_score(generated, context, client)
+
 ## print(f"Factual consistency: {score:.2%}")
 ```text
 
@@ -733,6 +745,7 @@ class AnnotationGuideline:
 
     def generate_instructions(self) -> str:
         return f"""
+
 ## Annotation Guidelines: {self.task_description}
 
 ## Rating Scale
@@ -1054,6 +1067,7 @@ print(json.dumps(pipeline.regression_report(), indent=2))
 Embed evaluation into CI/CD pipelines to catch regressions before deployment.
 
 ```python
+
 ## Conceptual CI/CD evaluation hook
 def evaluate_for_ci(
     model_fn,
@@ -1294,7 +1308,7 @@ Answer: D
 
 4. Design a stratified evaluation dataset with 50 examples across 5 categories (code generation, summarization, QA, translation, creative writing). Include metadata for difficulty level and source domain.
 
-5. Implement a regression monitoring dashboard that tracks evaluation metrics across model deployments and alerts when any metric drops by more than 5%. Use synthetic data to simulate a regression 
+5. Implement a regression monitoring dashboard that tracks evaluation metrics across model deployments and alerts when any metric drops by more than 5%. Use synthetic data to simulate a regression
 
 ## Revision Notes
 

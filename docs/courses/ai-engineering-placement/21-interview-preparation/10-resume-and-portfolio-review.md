@@ -52,6 +52,7 @@ Applicant Tracking Systems parse resumes before humans see them. If your resume 
 - Use bullet points (standard round dots, not custom characters)
 
 ```python
+
 ## ATS keyword matching tool
 import re
 
@@ -118,6 +119,7 @@ Every bullet point should demonstrate impact. Use the CAR method: Challenge → 
 **Powerful action verbs**: Designed, Architected, Led, Optimized, Implemented, Migrated, Automated, Reduced, Improved, Built, Delivered, Spearheaded, Transformed.
 
 ```python
+
 ## Bullet point generator
 def improve_bullet_point(weak: str, verb: str, tech: str, metric: str) -> str:
     return f"{verb} {weak.lower().lstrip('worked on ')} using {tech}, {metric}"
@@ -168,6 +170,7 @@ A well-structured resume guides the reader's eye and highlights the most importa
 7. **Additional**: Publications, talks, open source, certifications, languages.
 
 ```python
+
 ## Resume section validation
 def validate_resume_sections(resume_sections: dict) -> list[str]:
     issues = []
@@ -229,6 +232,7 @@ LinkedIn is where recruiters find you. An optimized profile dramatically increas
 **Experience**: Mirror your resume but expand slightly. Use the same strong bullet points. Have colleagues write recommendations (2-3 recommendations = significantly higher engagement).
 
 ```python
+
 ## LinkedIn profile optimizer
 def optimize_linkedin_sections(sections: dict) -> dict:
     suggestions = {}
@@ -289,6 +293,7 @@ A portfolio website showcases your work, personality, and technical skills. It's
 - **Contact**: Email, social links, contact form
 
 ```python
+
 ## Portfolio project card template
 def project_card(name: str, description: str, tech_stack: list[str], highlights: list[str],
                  github_url: str = None, live_url: str = None, image_url: str = None) -> str:
@@ -336,6 +341,7 @@ How you present your projects matters as much as the project itself. A well-docu
 **GitHub README**: Your README is the entry point. Include: project name and one-line description, detailed description with screenshots, tech stack, architecture diagram (Mermaid), setup instructions, API documentation (if applicable), and contribution guidelines.
 
 ```python
+
 ## README template
 README_TEMPLATE = """# {project_name}
 
@@ -383,6 +389,18 @@ docker-compose up
 
 ### Configuration
 Copy `.env.example` to `.env` and fill in the required values.
+
+
+## Theory
+
+Understanding resume and portfolio review is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how resume and portfolio review works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind resume and portfolio review
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
 
 ## API Documentation
 
@@ -476,6 +494,7 @@ Open source contributions and technical writing demonstrate community engagement
 **Technical blogging**: Shows communication skills and depth of knowledge. Topics: how you solved a specific problem, architecture decisions, comparisons of technologies, tutorials, case studies.
 
 ```python
+
 ## Blog post topic generator
 def generate_blog_topics(skills: list[str], experiences: list[str]) -> list[str]:
     topics = []
@@ -527,6 +546,7 @@ A generic resume sent to every company is less effective than a tailored one. Cu
 - **Projects**: Include projects most relevant to the role. Add a "Relevant Experience" section if changing domains.
 
 ```python
+
 ## Resume tailoring tool
 def tailor_resume(base_resume: dict, job_description: str) -> dict:
     jd_lower = job_description.lower()

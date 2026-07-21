@@ -19,6 +19,18 @@ Understanding model post training is essential for AI engineers building product
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding model post training is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how model post training works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind model post training
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -763,7 +775,7 @@ Implement adaptive reasoning depth selection. Show how easy vs hard problems get
 
 ### Exercise 5: Tool-Augmented Curriculum
 
-Design a 5-week training curriculum that progresses from single-tool calls to complex multi-tool reasoning with error 
+Design a 5-week training curriculum that progresses from single-tool calls to complex multi-tool reasoning with error
 
 ## Revision Notes
 

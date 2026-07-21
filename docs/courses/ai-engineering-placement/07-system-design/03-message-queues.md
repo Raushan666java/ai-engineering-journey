@@ -20,6 +20,18 @@ Understanding message queues is essential for AI engineers building production s
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding message queues is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how message queues works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind message queues
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -53,6 +65,7 @@ Message queues enable asynchronous communication between services.
 **Core concepts**: Producer (sends messages), Broker (stores/routes messages), Consumer (receives messages), Queue (buffer), Topic (message category).
 
 ```python
+
 ## Producer
 import pika
 
@@ -94,6 +107,7 @@ flowchart LR
 ```text
 
 ```python
+
 ## Topic exchange
 channel.exchange_declare(exchange="logs", exchange_type="topic")
 channel.queue_bind(exchange="logs", queue="critical_queue", routing_key="*.critical")
@@ -163,6 +177,7 @@ flowchart TD
 **Point-to-Point**: One message, one consumer. Competing consumers pattern.
 
 ```python
+
 ## Task queue — each task processed once
 channel.queue_declare(queue="tasks")
 channel.basic_consume(queue="tasks", on_message_callback=process_task)
@@ -171,6 +186,7 @@ channel.basic_consume(queue="tasks", on_message_callback=process_task)
 **Pub/Sub**: One message, multiple consumers. Each consumer gets a copy.
 
 ```python
+
 ## Fanout exchange — all queues get copy
 channel.exchange_declare(exchange="notifications", exchange_type="fanout")
 channel.queue_bind(exchange="notifications", queue="email_queue")
@@ -191,6 +207,7 @@ channel.queue_bind(exchange="notifications", queue="push_queue")
 **CQRS**: Separate read and write models. Writes use command model; reads use query model.
 
 ```python
+
 ## Event sourcing example
 class AccountAggregate:
     def __init__(self):
@@ -527,6 +544,7 @@ def create_avro_producer():
 **Kafka Streams** — process streams within your application:
 
 ```python
+
 ## Kafka Streams equivalent using Faust (Python)
 import faust
 

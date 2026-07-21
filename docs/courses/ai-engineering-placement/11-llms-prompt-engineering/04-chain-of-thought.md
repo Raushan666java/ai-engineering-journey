@@ -20,6 +20,18 @@ Understanding chain of thought is essential for AI engineers building production
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding chain of thought is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how chain of thought works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind chain of thought
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -454,6 +466,7 @@ class TreeOfThought:
         return r.choices[0].message.content
 
 ## tot = TreeOfThought(client)
+
 ## print(tot.solve("17 cows. All but 9 die. How many left?"))
 ```text
 
@@ -547,6 +560,7 @@ def basic_cot(q):
     ).choices[0].message.content
 
 test_cases = [("What is 15 + 27?", "42"), ("1/4 of 36?", "9")]
+
 ## print(f"Accuracy: {ev.accuracy(test_cases, basic_cot):.2%}")
 ```text
 

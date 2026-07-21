@@ -20,6 +20,18 @@ Understanding azure and gcp basics is essential for AI engineers building produc
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding azure and gcp basics is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how azure and gcp basics works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind azure and gcp basics
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -53,6 +65,7 @@ Azure provides several compute options for different workloads.
 **Azure Virtual Machines**:
 
 ```bash
+
 ## Create VM
 az vm create     --resource-group my-rg     --name my-vm     --image UbuntuLTS     --size Standard_B2s     --admin-username azureuser     --generate-ssh-keys
 
@@ -73,6 +86,7 @@ az webapp create     --resource-group my-rg     --plan my-plan     --name my-uni
 **Azure Kubernetes Service (AKS)**:
 
 ```bash
+
 ## Create cluster
 az aks create     --resource-group my-rg     --name my-cluster     --node-count 3     --enable-managed-identity
 
@@ -97,6 +111,7 @@ kubectl apply -f deployment.yaml
 **Blob Storage** — object storage (equivalent to S3):
 
 ```bash
+
 ## Create storage account
 az storage account create     --name mystorageaccount     --resource-group my-rg     --location eastus     --sku Standard_LRS
 
@@ -139,6 +154,7 @@ az network application-gateway create     --resource-group my-rg     --name my-g
 **Compute Engine**:
 
 ```bash
+
 ## Create VM
 gcloud compute instances create my-instance     --zone us-central1-a     --machine-type e2-medium     --image-family ubuntu-2204-lts     --image-project ubuntu-os-cloud
 
@@ -153,6 +169,7 @@ gcloud compute instances start my-instance --zone us-central1-a
 **Google Kubernetes Engine (GKE)**:
 
 ```bash
+
 ## Create cluster
 gcloud container clusters create my-cluster     --zone us-central1-a     --num-nodes 3     --machine-type e2-standard-2
 
@@ -166,6 +183,7 @@ kubectl apply -f deployment.yaml
 **Cloud Run** — serverless containers:
 
 ```bash
+
 ## Deploy container
 gcloud run deploy my-service     --image gcr.io/my-project/my-image:latest     --platform managed     --region us-central1     --allow-unauthenticated
 ```text
@@ -190,6 +208,7 @@ gcloud app deploy app.yaml --project my-project
 **Cloud Storage** — object storage (equivalent to S3):
 
 ```bash
+
 ## Create bucket
 gsutil mb gs://my-unique-bucket/
 
@@ -215,6 +234,7 @@ gcloud sql instances create my-instance     --database-version POSTGRES_15     -
 
 ```bash
 gcloud firestore databases create --region us-central1
+
 ## Use client libraries for CRUD operations
 ```text
 
@@ -223,6 +243,7 @@ gcloud firestore databases create --region us-central1
 **VPC**:
 
 ```bash
+
 ## Create VPC
 gcloud compute networks create my-vpc --subnet-mode custom
 
@@ -272,6 +293,7 @@ gcloud compute forwarding-rules create my-rule     --region us-central1     --lo
 **Cost comparison by provider**:
 
 ```bash
+
 ## AWS Cost Explorer
 aws ce get-cost-and-usage --time-period Start=2024-01-01,End=2024-01-31 --granularity MONTHLY --metrics BlendedCost
 
@@ -482,6 +504,7 @@ d) Re-purchase
 **Azure Entra ID** (formerly Azure AD):
 
 ```bash
+
 ## Create service principal
 az ad sp create-for-rbac --name my-app-sp --role Contributor --scopes /subscriptions/SUBSCRIPTION_ID
 
@@ -497,6 +520,7 @@ az role assignment list --assignee <principal-id> --output table
 **Azure Policy** enforces compliance rules across resources:
 
 ```bash
+
 ## Assign built-in policy
 az policy assignment create --name "require-tags" --policy "require-sql-server-encryption" --resource-group my-rg
 
@@ -509,6 +533,7 @@ az policy definition create --name "allowed-locations" --rules policy-rules.json
 **Service accounts**:
 
 ```bash
+
 ## Create service account
 gcloud iam service-accounts create my-sa --display-name "My Service Account"
 

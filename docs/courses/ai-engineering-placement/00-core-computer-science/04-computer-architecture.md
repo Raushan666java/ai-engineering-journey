@@ -242,7 +242,7 @@ class RooflineAnalyzer {
 
         let bound = operationalIntensity < ridgePoint ? "MEMORY BOUND" : "COMPUTE BOUND"
 
-        return ${kernel.name}: % roofline,  FLOPs/byte -> 
+        return ${kernel.name}: % roofline,  FLOPs/byte ->
     }
 }
 `

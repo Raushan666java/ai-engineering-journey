@@ -20,6 +20,18 @@ Heaps (priority queues) are specialized trees that efficiently provide the minim
 - Binary tree basics
 - Array representation of trees
 
+
+## Theory
+
+Understanding binary trees is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how binary trees works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind binary trees
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -60,9 +72,13 @@ class TreeNode:
         self.right = right
 
 ## Build:     1
+
 ##          / \
+
 ##         2   3
+
 ##        / \   \
+
 ##       4   5   6
 root = TreeNode(1)
 root.left = TreeNode(2, TreeNode(4), TreeNode(5))
@@ -161,7 +177,7 @@ def is_balanced(root):
         if not node: return (True, 0)
         left_balanced, left_h = dfs(node.left)
         right_balanced, right_h = dfs(node.right)
-        balanced = (left_balanced and right_balanced and 
+        balanced = (left_balanced and right_balanced and
                    abs(left_h - right_h) <= 1)
         return (balanced, 1 + max(left_h, right_h))
     return dfs(root)[0]

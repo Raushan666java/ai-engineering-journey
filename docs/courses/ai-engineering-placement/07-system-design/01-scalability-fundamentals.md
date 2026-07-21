@@ -38,7 +38,7 @@ flowchart LR
     E --> F[Async Processing]
     F --> G[Metrics]
     G --> H[Capacity Planning]
-```
+```text
 
 
 ## Introduction
@@ -79,7 +79,7 @@ flowchart LR
         H1 --> H3[Server 2]
         H1 --> H4[Server N]
     end
-```
+```text
 
 | Aspect | Vertical | Horizontal |
 |--------|----------|------------|
@@ -98,12 +98,14 @@ For horizontal scaling, applications must be stateless — any instance can hand
 **Stateless**: Session data in external store (Redis, DB) -> any server can handle any request.
 
 ```python
+
 ## Stateful approach (sticky sessions)
 session_data["user"] = user_info  # stored locally
 
+
 ## Stateless approach
 redis.set(f"session:{session_id}", user_info)  # external store
-```
+```text
 
 **Externalizing state**:
 - Session data -> Redis/Memcached
@@ -114,6 +116,7 @@ redis.set(f"session:{session_id}", user_info)  # external store
 
 
 ## Overview
+
 ### 1.3 Load Balancing
 
 Distributes incoming traffic across multiple servers.
@@ -138,7 +141,7 @@ class LoadBalancer:
         server = self.servers[self.index]
         self.index = (self.index + 1) % len(self.servers)
         return server
-```
+```text
 
 **Health checks**: Active (periodic pings) and passive (monitoring traffic errors).
 
@@ -162,7 +165,7 @@ class DatabaseRouter:
         import random
         replica = random.choice(self.replicas)
         return replica.execute(query)
-```
+```text
 
 **Sharding**: Splitting data across multiple databases based on a shard key.
 
@@ -202,7 +205,7 @@ def get_user(user_id):
     user = db.query("SELECT * FROM users WHERE id = ?", user_id)
     redis.set(f"user:{user_id}", user, ttl=3600)
     return user
-```
+```text
 
 
 ### 1.6 Asynchronous Processing
@@ -215,14 +218,16 @@ flowchart LR
     B --> C[Worker 1]
     B --> D[Worker 2]
     B --> E[Worker N]
-```
+```text
 
 ```python
+
 ## Producer
 def handle_request(request):
     task = {"type": "process", "data": request.data}
     queue.enqueue(task)
     return {"status": "accepted"}
+
 
 ## Consumer (Worker)
 def process_tasks():
@@ -230,13 +235,14 @@ def process_tasks():
         task = queue.dequeue()
         if task:
             process(task["data"])
-```
+```text
 
 **Benefits**: Improved responsiveness, decoupled components, burst handling, graceful degradation.
 
 
 
 ## Overview
+
 ### 1.7 Performance Metrics
 
 | Metric | Description | Good Target |
@@ -267,10 +273,11 @@ def estimate_servers(rps, rps_per_server, headroom=2.5):
     required = rps / rps_per_server
     return int(required * headroom) + 1
 
+
 ## Example: 10000 RPS, each server handles 500 RPS
 servers = estimate_servers(10000, 500)
 print(f"Need {servers} servers")  # 51
-```
+```text
 
 ---
 
@@ -321,7 +328,7 @@ function evaluateScaling(metrics: ServerMetrics, currentServers: number, maxRps:
   }
   return { action: "scale-up", reason: "Within limits", targetCount: currentServers };
 }
-```
+```text
 
 ---
 
@@ -508,7 +515,7 @@ class AutoScaler:
         return self.current
 
 scaler = AutoScaler()
-```
+```text
 
 **Predictive scaling** — use historical patterns to pre-provision:
 
@@ -519,7 +526,7 @@ def predict_capacity(traffic_history: list[int]) -> int:
     predicted_rps = sum(window) / len(window)
     # Add 30% headroom
     return int(predicted_rps * 1.3 / 500) + 1
-```
+```text
 
 
 ## Distributed System Patterns
@@ -562,9 +569,10 @@ def calculate_pool_size(
     optimal = int(arrival_rate * (service_time + target_queue_ms))
     return min(optimal, max_connections)
 
+
 ## Example: 500 concurrent requests, 50ms avg query, 10ms target queue
 pool = calculate_pool_size(100, 500, 50, 10)  # ~30 connections
-```
+```text
 
 ---
 

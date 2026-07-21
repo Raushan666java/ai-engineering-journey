@@ -20,6 +20,18 @@ Understanding incident response is essential for AI engineers building productio
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding incident response is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how incident response works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind incident response
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -480,6 +492,7 @@ inc = Incident("INC-004", IncidentType.DATA_FAILURE, "SEV1",
                "Feature pipeline failure", "ETL job failed",
                datetime.utcnow(), "monitoring", ["PricePredictor"])
 runbook = get_runbook(inc.type)
+
 ## runbook.execute(inc)
 ```text
 

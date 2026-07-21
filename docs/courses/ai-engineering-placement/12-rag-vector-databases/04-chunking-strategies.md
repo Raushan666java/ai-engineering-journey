@@ -518,14 +518,18 @@ class HTMLChunker:
 
 html_chunker = HTMLChunker()
 html_doc = "<h1>Intro</h1><p>Text</p><h2>Details</h2><p>More text</p>"
+
 ## sections = html_chunker.chunk(html_doc)
+
 ## for s in sections:
+
 ##     print(f"HTML Section: {s['heading']}")
 print("HTML chunker ready (requires beautifulsoup4)")
 ```text
 
 
 ## Overview
+
 ### 4.5.3 Markdown Chunking
 
 ```python
@@ -800,6 +804,17 @@ code = "def hello():\n    pass\n\nclass Test:\n    pass\n"
 result = adaptive.chunk(code)
 print(f"Adaptive chunking: {len(result)} chunks")
 ```text
+
+## Theory
+
+Understanding chunking strategies is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how chunking strategies works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind chunking strategies
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
 
 ## Summary
 

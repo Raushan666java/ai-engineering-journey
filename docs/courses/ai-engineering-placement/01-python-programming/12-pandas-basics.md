@@ -20,6 +20,39 @@ Understanding pandas basics is essential for AI engineers building production sy
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding pandas basics is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how pandas basics works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind pandas basics
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
+## Examples
+
+### Basic Example
+
+```python
+## Basic pandas basics example
+def example():
+    """Demonstrate pandas basics"""
+    result = "Hello, pandas basics!"
+    print(result)
+    return result
+
+example()
+```
+
+### Expected Output
+
+```text
+Hello, pandas basics!
+```
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -53,10 +86,15 @@ import numpy as np
 ## Series � 1D labeled array
 s = pd.Series([10, 20, 30, 40], index=["a", "b", "c", "d"])
 print(s)
+
 ## a    10
+
 ## b    20
+
 ## c    30
+
 ## d    40
+
 ## dtype: int64
 
 print(s["b"])   # 20
@@ -79,6 +117,7 @@ print(df.describe())  # summary statistics
 ## 12.2 Indexing
 
 `python
+
 ## Column access
 print(df["name"])       # Series
 print(df[["name", "salary"]])  # DataFrame
@@ -182,8 +221,11 @@ df = pd.DataFrame({
 
 ## Single aggregation
 print(df.groupby("dept")["salary"].mean())
+
 ## dept
+
 ## Eng      71500
+
 ## Sales    77000
 
 ## Multiple aggregations
@@ -361,6 +403,7 @@ import numpy as np
 ## Creating datetime ranges
 dates = pd.date_range("2024-01-01", periods=10, freq="D")
 print(dates)
+
 ## DatetimeIndex(['2024-01-01', '2024-01-02', ..., '2024-01-10'])
 
 ## Time series DataFrame
@@ -401,12 +444,15 @@ print(ts_ny)  # 2024-01-01 07:00:00-05:00
 ## 12.8 File I/O Operations
 
 `python
+
 ## CSV
 df.to_csv("output.csv", index=False)
 df_csv = pd.read_csv("output.csv")
 
 ## Excel (requires openpyxl or xlrd)
+
 ## df.to_excel("output.xlsx", sheet_name="Sheet1", index=False)
+
 ## df_excel = pd.read_excel("output.xlsx", sheet_name="Sheet1")
 
 ## JSON
@@ -414,7 +460,9 @@ df.to_json("output.json", orient="records", indent=2)
 df_json = pd.read_json("output.json", orient="records")
 
 ## Parquet (efficient columnar format)
+
 ## df.to_parquet("output.parquet")
+
 ## df_pq = pd.read_parquet("output.parquet")
 
 ## SQL databases
@@ -432,16 +480,23 @@ df_dtypes = pd.read_csv("data.csv", dtype={"age": "int8", "salary": "float32"})
 ## 12.9 Advanced Indexing Techniques
 
 `python
+
 ## MultiIndex (hierarchical index)
 arrays = [["A", "A", "B", "B"], [1, 2, 1, 2]]
 index = pd.MultiIndex.from_arrays(arrays, names=["group", "sub"])
 df_multi = pd.DataFrame({"value": [10, 20, 30, 40]}, index=index)
 print(df_multi)
+
 ##              value
+
 ## group sub
+
 ## A     1        10
+
 ##       2        20
+
 ## B     1        30
+
 ##       2        40
 
 ## Selection with MultiIndex
@@ -464,9 +519,13 @@ pivot = df_sales.pivot_table(
     aggfunc="sum", fill_value=0
 )
 print(pivot)
+
 ## product     A    B
+
 ## date
+
 ## 2024-01   100  200
+
 ## 2024-02   150  250
 
 ## Melt (unpivot)
@@ -519,50 +578,67 @@ print(df["category"].cat.codes)  # integer encoding
 ## 12.11 Common Pitfalls
 
 `python
+
 ## Pitfall 1: Chained indexing
 df = pd.DataFrame({"A": [1, 2, 3], "B": [4, 5, 6]})
+
 ## BAD: df[df["A"] > 1]["B"] = 99  # SettingWithCopyWarning
+
 ## GOOD: df.loc[df["A"] > 1, "B"] = 99
 
 ## Pitfall 2: Assuming inplace modifies the original
 df2 = df.drop("A", axis=1)  # returns new DataFrame
+
 ## df.drop("A", axis=1, inplace=True)  # modifies original
 
 ## Pitfall 3: NaN comparison
 s = pd.Series([1, np.nan, 3])
+
 ## BAD: s[s == np.nan]  # returns empty!
+
 ## GOOD: s[s.isna()]
+
 ## GOOD: s[s.notna()]
 
 ## Pitfall 4: Setting with copy warning
 df = pd.DataFrame({"A": [1, 2], "B": [3, 4]})
 subset = df[df["A"] > 0]  # could be view or copy
+
 ## subset["C"] = 99  # SettingWithCopyWarning
+
 ## Use .copy() explicitly: subset = df[df["A"] > 0].copy()
 
 ## Pitfall 5: Forgetting to specify index in merge
 pd.merge(df1, df2)  # merges on common columns by default
+
 ## Always specify on= parameter explicitly
 
 ## Pitfall 6: Type coercion
 s = pd.Series(["1", "2", "three"])
+
 ## s.astype(int)  # ValueError: invalid literal for int()
+
 ## Use pd.to_numeric(s, errors="coerce") for safe conversion
 `
 
 ## 12.12 Performance Tips
 
 `python
+
 ## 1. Use vectorized operations over apply
 df = pd.DataFrame({"x": np.random.randn(10000)})
+
 ## Slow: df["y"] = df["x"].apply(lambda v: v ** 2)
+
 ## Fast: df["y"] = df["x"] ** 2
 
 ## 2. Use category dtype for strings with few unique values
 df["city"] = pd.Categorical(df["city"])  # saves memory
 
 ## 3. Filter early, transform late
+
 ## BAD: df.assign(...).query(...)
+
 ## GOOD: df.query(...).assign(...)
 
 ## 4. Use .values or .to_numpy() for NumPy operations
@@ -576,6 +652,7 @@ df.sort_values("col", inplace=True)  # avoids copy
 
 ## 7. Index for faster lookups
 df.set_index("id", inplace=True)
+
 ## df.loc[42] is O(1) vs df[df.id == 42] is O(n)
 `
 

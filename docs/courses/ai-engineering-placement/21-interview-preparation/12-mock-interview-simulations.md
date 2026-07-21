@@ -20,6 +20,18 @@ Understanding mock interview simulations is essential for AI engineers building 
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding mock interview simulations is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how mock interview simulations works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind mock interview simulations
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -69,6 +81,7 @@ Mock interviews are the single highest-ROI activity for interview preparation. T
 - After the mock, spend 10 minutes on feedback and 5 minutes on self-reflection
 
 ```python
+
 ## Mock interview session tracker
 from datetime import datetime
 
@@ -137,6 +150,7 @@ The 45-minute DSA round is the most common interview format. A structured approa
 **Problem-solving framework**: Understand → Brute force → Optimize → Code → Test → Follow-up.
 
 ```python
+
 ## Live coding simulator with time tracking
 import time
 from typing import List, Optional
@@ -204,6 +218,7 @@ def find_median_sorted_arrays(nums1: List[int], nums2: List[int]) -> float:
 nums1 = [1, 3, 8, 9, 15]
 nums2 = [7, 11, 18, 19, 21, 25]
 print(f"Median: {find_median_sorted_arrays(nums1, nums2)}")
+
 ## Expected: (11 + 15) / 2 = 13.0
 ```text
 
@@ -226,6 +241,7 @@ The 60-minute system design round tests your ability to architect scalable syste
 - **55-60 min**: Summary. Recap the key decisions and tradeoffs.
 
 ```python
+
 ## System design estimation tool
 class SystemDesignEstimator:
     def __init__(self, daily_active_users: int):
@@ -320,6 +336,7 @@ The ML deep-dive round (45 min) tests your ability to design, implement, and dep
 - **38-45 min**: Deployment and monitoring. Serving infrastructure (batch vs real-time), latency requirements, model versioning, drift detection, retraining strategy.
 
 ```python
+
 ## ML interview deep-dive framework
 from typing import Callable
 import numpy as np
@@ -468,6 +485,7 @@ The behavioral round (30 min) tests culture fit, communication, leadership, and 
 - **28-30 min**: Closing. Express continued interest, thank them.
 
 ```python
+
 ## STAR story builder and tracker
 from dataclasses import dataclass
 from typing import Optional
@@ -577,6 +595,7 @@ Structured feedback turns mock interviews into measurable progress. Without trac
 **Improvement tracking**: Maintain a spreadsheet or document with date, company/role, round type, scores by category, specific feedback, and action items for next time. Review trends every 5 mocks.
 
 ```python
+
 ## Mock interview performance tracker
 import json
 from datetime import datetime

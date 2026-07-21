@@ -49,6 +49,29 @@ flowchart LR
 **Listing files and directories:**
 
 ```bash
+
+
+## Examples
+
+### Basic Example
+
+```python
+## Basic linux commands example
+def example():
+    """Demonstrate linux commands"""
+    result = "Hello, linux commands!"
+    print(result)
+    return result
+
+example()
+```
+
+### Expected Output
+
+```text
+Hello, linux commands!
+```
+
 ## Basic listing
 ls
 
@@ -80,6 +103,7 @@ ls -1
 **Changing directories:**
 
 ```bash
+
 ## Change to a directory
 cd /var/log
 
@@ -113,6 +137,7 @@ cd ~/projects/my-app
 **Printing the working directory:**
 
 ```bash
+
 ## Show current directory path
 pwd
 
@@ -122,11 +147,13 @@ pwd -P
 
 
 ## Overview
+
 ### 04.2 File Operations
 
 **Creating files and directories:**
 
 ```bash
+
 ## Create empty file or update timestamp
 touch newfile.txt
 
@@ -146,6 +173,7 @@ mkdir -m 755 public_dir
 **Copying files and directories:**
 
 ```bash
+
 ## Copy a file
 cp source.txt destination.txt
 
@@ -174,6 +202,7 @@ cp --backup=numbered source.txt dest.txt
 **Moving and renaming files:**
 
 ```bash
+
 ## Move a file
 mv oldname.txt newname.txt
 
@@ -199,6 +228,7 @@ mv -i file.txt /backup/
 **Removing files and directories:**
 
 ```bash
+
 ## Remove a file
 rm unwanted.txt
 
@@ -227,6 +257,7 @@ find . -name "*.pyc" -exec rm {} +
 **⚠️ Dangerous commands to avoid:**
 
 ```bash
+
 ## NEVER run these without extreme caution:
 rm -rf /                    # Deletes entire filesystem
 rm -rf /*                   # Same thing
@@ -236,6 +267,7 @@ find / -name "*.tmp" -exec rm {} +  # Dangerous recursive delete
 
 
 ## Overview
+
 ### 04.3 Permissions
 
 Linux file permissions control who can read, write, and execute files.
@@ -261,6 +293,7 @@ Linux file permissions control who can read, write, and execute files.
 **Symbolic mode with chmod:**
 
 ```bash
+
 ## Add execute permission for owner
 chmod u+x script.sh
 
@@ -283,6 +316,7 @@ chmod o= private-file.txt
 **Numeric (octal) mode with chmod:**
 
 ```bash
+
 ## rwxr-xr-- = 754
 chmod 754 script.sh
 
@@ -302,6 +336,7 @@ chmod 700 ~/bin/myscript
 **Changing ownership:**
 
 ```bash
+
 ## Change file owner
 sudo chown alice file.txt
 
@@ -318,6 +353,7 @@ chgrp developers project/
 **Special permissions:**
 
 ```bash
+
 ## Setuid: execute as file owner (use sparingly)
 chmod u+s /usr/bin/program
 chmod 4755 /usr/bin/program
@@ -333,11 +369,13 @@ chmod 1777 /tmp/shared/
 
 
 ## Overview
+
 ### 04.4 Searching
 
 **grep — search file contents:**
 
 ```bash
+
 ## Basic text search
 grep "error" logfile.txt
 
@@ -375,6 +413,7 @@ grep -o "error:.*" app.log
 **find — search for files by name, size, time:**
 
 ```bash
+
 ## Find files by name
 find /var -name "*.log"
 
@@ -412,21 +451,26 @@ find . -maxdepth 2 -name "*.ts"
 **Other search tools:**
 
 ```bash
+
 ## which: find command location
 which python3
+
 ## /usr/bin/python3
 
 ## whereis: find binary, source, manual
 whereis git
+
 ## git: /usr/bin/git /usr/share/man/man1/git.1.gz
 
 ## locate: fast search using pre-built database
 locate nginx.conf
+
 ## May need to update: sudo updatedb
 ```text
 
 
 ## Overview
+
 ### 04.5 Pipes and Redirection
 
 Pipes and redirects are the backbone of Linux command composition.
@@ -434,6 +478,7 @@ Pipes and redirects are the backbone of Linux command composition.
 **Output redirection:**
 
 ```bash
+
 ## Overwrite file with output
 echo "hello" > output.txt
 
@@ -457,6 +502,7 @@ command > /dev/null 2>&1
 **Input redirection:**
 
 ```bash
+
 ## Feed file contents as input
 wc -l < file.txt
 
@@ -474,6 +520,7 @@ grep "pattern" <<< "string to search"
 **Pipes:**
 
 ```bash
+
 ## Pipe output of one command as input to another
 ls -la | grep ".txt"
 
@@ -496,6 +543,7 @@ cat urls.txt | xargs -P 4 -I {} curl -s {}
 **tee — split output to file and screen:**
 
 ```bash
+
 ## Write to file AND display
 ls -la | tee listing.txt
 
@@ -509,6 +557,7 @@ find . -name "*.ts" | tee files.txt | wc -l
 **xargs — build commands from input:**
 
 ```bash
+
 ## Delete all .jpg files
 find . -name "*.jpg" | xargs rm
 
@@ -524,16 +573,18 @@ cat urls.txt | xargs -P 8 -I {} wget {}
 
 
 ## Overview
+
 ### 04.6 Real-World Tasks
 
 **Log analysis pipeline:**
 
 ```bash
+
 ## Find top 10 most frequent IP addresses in access log
 cat access.log | awk '{print $1}' | sort | uniq -c | sort -rn | head -10
 
 ## Find all 500 errors in the last hour
-grep "500" access.log | awk '$4 >="[21/Jan/2024:10:"' 
+grep "500" access.log | awk '$4 >="[21/Jan/2024:10:"'
 
 ## Count requests per endpoint
 awk '{print $7}' access.log | sort | uniq -c | sort -rn | head -20
@@ -545,6 +596,7 @@ awk '$NF > 2.0 {print $0}' access.log
 **Disk usage and cleanup:**
 
 ```bash
+
 ## Find largest files in current directory
 du -ah . | sort -rh | head -20
 
@@ -564,6 +616,7 @@ find . -name "node_modules" -type d -exec rm -rf {} +
 **Monitoring and debugging:**
 
 ```bash
+
 ## Watch a log file in real-time
 tail -f /var/log/syslog
 

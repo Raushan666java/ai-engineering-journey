@@ -19,6 +19,18 @@ Understanding langgraph basics is essential for AI engineers building production
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding langgraph basics is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how langgraph basics works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind langgraph basics
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -192,6 +204,7 @@ print(f"Steps: {result['step_count']}")
 
 
 ## Overview
+
 ### 3.2.2 LangChain-Style Interface
 
 ```python
@@ -375,6 +388,7 @@ print(f"Messages: {len(sm.state['messages'])}")
 
 
 ## Overview
+
 ### 3.4.2 State Schema
 
 ```python

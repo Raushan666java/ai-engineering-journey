@@ -19,6 +19,18 @@ Understanding ai developer toolkits workflows is essential for AI engineers buil
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding ai developer toolkits workflows is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how ai developer toolkits workflows works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind ai developer toolkits workflows
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -63,6 +75,7 @@ Claude Code (by Anthropic) is an agentic coding tool that runs in your terminal.
 **Installation**:
 
 ```bash
+
 ## macOS / Linux
 curl -fsSL https://claude.ai/install.sh | bash
 
@@ -157,6 +170,7 @@ List the files to create/modify, the approach, and any risks.`)
 
 
 ## Overview
+
 ### MCP Integration
 
 Claude Code supports the Model Context Protocol (MCP), allowing it to use external tools like databases, APIs, and file systems through a standardized interface:

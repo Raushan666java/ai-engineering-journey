@@ -20,6 +20,39 @@ Understanding collections is essential for AI engineers building production syst
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding collections is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how collections works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind collections
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
+## Examples
+
+### Basic Example
+
+```python
+# Basic collections example
+def example():
+    """Demonstrate collections"""
+    result = "Hello, collections!"
+    print(result)
+    return result
+
+example()
+```
+
+### Expected Output
+
+```text
+Hello, collections!
+```
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -49,7 +82,7 @@ flowchart LR
 Lists are ordered, mutable, heterogeneous sequences. They are the most versatile collection type.
 
 `python
-# Creation
+## Creation
 empty = []
 numbers = [1, 2, 3, 4, 5]
 mixed = [1, "hello", 3.14, True]
@@ -108,6 +141,7 @@ print(original)          # [3, 1, 4, 1, 5] � unchanged
 **List copying**:
 
 `python
+
 ## Shallow copy � 3 approaches
 a = [1, 2, [3, 4]]
 b = a.copy()         # method
@@ -132,6 +166,7 @@ print(e[2])  # [3, 4, 5] � independent
 ## 4.2 List Comprehensions
 
 `python
+
 ## Basic transformation
 squares = [x**2 for x in range(10)]
 print(squares)
@@ -164,6 +199,7 @@ print(transposed)  # [[1, 3, 5], [2, 4, 6]]
 Tuples are immutable sequences � they cannot be modified after creation.
 
 `python
+
 ## Creation
 empty = ()
 single = (42,)        # trailing comma required
@@ -224,6 +260,7 @@ x, y, z = p            # unpackable
 Sets are unordered collections of unique, hashable elements with O(1) membership testing.
 
 `python
+
 ## Creation
 empty = set()                    # not {} � that's empty dict
 numbers = {1, 2, 3, 4, 5}
@@ -274,6 +311,7 @@ print(fs)  # frozenset({1, 2, 3})
 Dictionaries map unique keys to values with O(1) average lookup.
 
 `python
+
 ## Creation
 empty = {}
 scores = {"Alice": 95, "Bob": 87, "Charlie": 92}
@@ -286,6 +324,7 @@ print(scores.get("David"))   # None � safe access
 print(scores.get("David", 0))  # 0 � with default
 
 ## KeyError for missing key
+
 ## print(scores["David"])  # KeyError
 
 ## Adding and modifying
@@ -451,7 +490,7 @@ console.log(Object.entries(obj));
 | Key-value mapping | dict | Two parallel lists |
 | Counting items | Counter | Manual if x in dict: ... |
 | Grouping by key | defaultdict(list) | Manual key checking |
-| Fixed coordinate data | 	uple or 
+| Fixed coordinate data | 	uple or
 amedtuple | list (allows modification) |
 | Need both index and value | enumerate() | ange(len(lst)) |
 | Creating a list from another | List comprehension | or loop with ppend |

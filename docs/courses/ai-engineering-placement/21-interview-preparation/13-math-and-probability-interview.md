@@ -534,6 +534,36 @@ Both measures choose splits that maximize class purity in child nodes. Entropy i
 
 
 
+
+## Visual Explanation
+
+```mermaid
+flowchart TD
+    A[Input Data] --> B[Processing]
+    B --> C[Output]
+    C --> D[Feedback Loop]
+    D --> B
+```
+
+## Visual Analogy
+
+Think of math and probability interview like a **delivery system**:
+
+- **Input** = Package to deliver
+- **Processing** = Route planning and optimization
+- **Output** = Package delivered to destination
+- **Feedback** = Delivery confirmation and tracking
+
+This analogy helps because math and probability interview, like a delivery system, involves transforming inputs into outputs efficiently while handling constraints and edge cases.
+
+## Exercises
+
+**Easy** — Implement a basic math and probability interview example that demonstrates the core concept.
+
+**Medium** — Create a more complex implementation that handles edge cases.
+
+**Hard** — Design an optimized solution for large-scale math and probability interview scenarios.
+
 ## Summary
 
 Math and probability are tested directly in ML interviews. Bayes theorem, MLE/MAP, and distributions appear in nearly every loop. Linear algebra (eigenvalues, SVD, PCA) and information theory (entropy, KL divergence) underpin the ML algorithms you will discuss. The core skill is translating an interview problem into a probability or linear algebra formulation and solving it step by step.
@@ -594,58 +624,169 @@ Math and probability are tested directly in ML interviews. Bayes theorem, MLE/MA
 2. Skipping edge cases in implementation
 3. Not analyzing time/space complexity
 4. Forgetting to handle null/empty inputs
-5. Not practicing enough problems to build pattern recognition# Exercises
+5. Not practicing enough problems to build pattern recognition
 
-1. Implement a Monte Carlo simulation that estimates pi by sampling points in a unit square and counting those inside the unit circle.
+## Code Examples
 
-2. Write a function that computes the posterior distribution for a Beta-Bernoulli model given prior parameters alpha, beta and observed data.
+### Bayes Theorem Implementation
 
-3. Implement PCA from scratch using SVD (compute the covariance matrix, find top-k eigenvectors).
+```python
+def bayes_theorem(prior: float, likelihood: float, evidence: float) -> float:
+    """
+    Compute P(A|B) using Bayes' Theorem.
+    
+    P(A|B) = P(B|A) * P(A) / P(B)
+    
+    Example: Disease testing
+    - Prior: 1% of population has disease
+    - Likelihood: 99% test accuracy
+    - Evidence: 5% false positive rate
+    """
+    posterior = (likelihood * prior) / evidence
+    return posterior
 
-4. Write a function that computes the gradient of the cross-entropy loss with respect to the model parameters for binary classif
+# Example: Medical diagnosis
+prior_disease = 0.01  # 1% prevalence
+sensitivity = 0.99    # True positive rate
+specificity = 0.95    # True negative rate
+false_positive_rate = 1 - specificity  # 5%
+
+# Positive test result
+posterior = bayes_theorem(prior_disease, sensitivity, 
+                          sensitivity * prior_disease + false_positive_rate * (1 - prior_disease))
+print(f"P(Disease | Positive test) = {posterior:.4f}")  # ~0.167
+```
+
+### MLE for Gaussian
+
+```python
+import numpy as np
+
+def mle_gaussian(data: np.ndarray) -> tuple:
+    """Compute MLE estimates for Gaussian distribution."""
+    mu_mle = np.mean(data)  # Sample mean
+    sigma_mle = np.std(data, ddof=0)  # MLE uses N, not N-1
+    return mu_mle, sigma_mle
+
+# Generate samples from N(5, 2)
+np.random.seed(42)
+data = np.random.normal(loc=5, scale=2, size=1000)
+mu_hat, sigma_hat = mle_gaussian(data)
+print(f"True mu: 5.0, MLE mu: {mu_hat:.4f}")
+print(f"True sigma: 2.0, MLE sigma: {sigma_hat:.4f}")
+```
+
+### KL Divergence
+
+```python
+def kl_divergence(p: np.ndarray, q: np.ndarray) -> float:
+    """
+    Compute KL(P || Q) = sum P(x) * log(P(x) / Q(x))
+    
+    Measures information lost when Q approximates P.
+    """
+    # Add small epsilon to avoid log(0)
+    p = np.clip(p, 1e-10, 1)
+    q = np.clip(q, 1e-10, 1)
+    return np.sum(p * np.log(p / q))
+
+# Example: Two Gaussians
+x = np.linspace(-5, 5, 1000)
+p = np.exp(-x**2 / 2) / np.sqrt(2 * np.pi)  # N(0,1)
+q = np.exp(-(x-1)**2 / 2) / np.sqrt(2 * np.pi)  # N(1,1)
+print(f"KL(N(0,1) || N(1,1)) = {kl_divergence(p, q):.4f}")
+```
+
+### PCA from Scratch
+
+```python
+def pca(X: np.ndarray, k: int) -> tuple:
+    """
+    Principal Component Analysis using SVD.
+    
+    Returns: top-k eigenvectors and transformed data
+    """
+    # Center the data
+    mean = np.mean(X, axis=0)
+    X_centered = X - mean
+    
+    # Compute covariance matrix
+    cov = np.cov(X_centered.T)
+    
+    # SVD decomposition
+    U, S, Vt = np.linalg.svd(cov)
+    
+    # Top-k components
+    components = Vt[:k]
+    explained_variance = S[:k] / np.sum(S)
+    
+    # Transform data
+    X_transformed = X_centered @ components.T
+    
+    return X_transformed, components, explained_variance
+
+# Example: Reduce 3D data to 2D
+np.random.seed(42)
+X = np.random.randn(100, 3)
+X_2d, comps, var = pca(X, k=2)
+print(f"Explained variance: {var}")
+print(f"Shape: {X.shape} -> {X_2d.shape}")
+```
+
+## Exercises
+
+**Easy** — Implement a Monte Carlo simulation that estimates pi by sampling points in a unit square and counting those inside the unit circle.
+
+**Medium** — Write a function that computes the posterior distribution for a Beta-Bernoulli model given prior parameters alpha, beta and observed data.
+
+**Medium** — Implement PCA from scratch using SVD (compute the covariance matrix, find top-k eigenvectors).
+
+**Hard** — Write a function that computes the gradient of the cross-entropy loss with respect to the model parameters for binary classification.
+
+**Hard** — Implement Newton-Raphson optimization to find the MLE for logistic regression parameters.
 
 ## Revision Notes
 
-- Key concept 1: Core principle of 21-interview-preparation
-- Key concept 2: Common implementation pattern
-- Key concept 3: Time/space complexity to remember
-- Key concept 4: When to apply this technique
-- Key concept 5: Common interview pattern
-- Key concept 6: Edge cases to handle
-- Key concept 7: Related concepts for deeper understanding
+- **Bayes Theorem**: Posterior = (Likelihood × Prior) / Evidence
+- **MLE**: Maximize likelihood function; for Gaussian, it's sample mean and std
+- **MAP**: Maximize posterior = likelihood × prior; L2 reg = Gaussian prior
+- **KL Divergence**: Asymmetric; KL(P||Q) ≠ KL(Q||P); measures information loss
+- **Entropy**: H(X) = -Σ p(x) log p(x); measures uncertainty
+- **Variance**: Var(X) = E[X²] - E[X]²; always ≥ 0
+- **Covariance**: Measures linear relationship between two variables
 
 ## Placement Section
 
 ### Top 10 Interview Questions
 
 #### Google Style
-1. Explain the time and space trade-offs of 21-interview-preparation. When would you choose one approach over another?
-2. Design a system that efficiently handles 21-interview-preparation at scale (millions of requests/second).
+1. Derive the MLE for the parameters of a Gaussian mixture model. What challenges arise?
+2. Explain the bias-variance tradeoff. How does it relate to model complexity?
 
 #### Amazon Style
-1. Tell me about a time you had to optimize a system related to 21-interview-preparation. What was your approach and what was the result?
-2. How would you explain 21-interview-preparation to a non-technical stakeholder?
+1. Tell me about a time you used statistical analysis to make a product decision. What was the outcome?
+2. How would you explain the difference between correlation and causation to a business stakeholder?
 
 #### Microsoft Style
-1. How does 21-interview-preparation integrate with enterprise systems and cloud architectures?
-2. What are the security implications of 21-interview-preparation?
+1. How would you design an A/B testing system for a recommendation engine?
+2. Explain how Bayesian inference can be used for personalization at scale.
 
 #### NVIDIA Style
-1. How would you optimize 21-interview-preparation for GPU-accelerated computing?
-2. What parallel processing patterns apply to 21-interview-preparation?
+1. How would you parallelize Monte Carlo simulations across multiple GPUs?
+2. What numerical stability issues arise when computing log-softmax on GPUs?
 
 #### AI Startup Style
-1. How would you implement 21-interview-preparation in a cost-effective, scalable way for a startup?
-2. What's the fastest way to prototype a solution using 21-interview-preparation?
+1. How would you implement a simple recommendation system using matrix factorization?
+2. What's the most efficient way to compute similarity for 1 million items?
 
 ### Resume Tips
-- **Technical Skills**: List 21-interview-preparation under relevant technical skills
-- **Project Description**: "Implemented 21-interview-preparation to [specific outcome], reducing [metric] by [X]%"
-- **Keywords**: Include 21-interview-preparation in your skills section for ATS optimization
+- **Technical Skills**: Bayesian Statistics, A/B Testing, Statistical Modeling, Python (NumPy, SciPy)
+- **Project Description**: "Implemented A/B testing framework using Bayesian inference, increasing conversion rate by 15%"
+- **Keywords**: Probability, Statistics, MLE, MAP, Bayesian Inference, Hypothesis Testing
 
 ### Interview Day Checklist
-- [ ] Review core concepts of 21-interview-preparation
-- [ ] Practice 3-5 problems related to 21-interview-preparation
-- [ ] Prepare 2 real-world examples of using 21-interview-preparation
-- [ ] Know the time/space complexity of common 21-interview-preparation operations
-- [ ] Have questions ready about how the company uses 21-interview-preparationication.
+- [ ] Review Bayes theorem and common probability distributions
+- [ ] Practice deriving MLE for common distributions (Gaussian, Bernoulli, Poisson)
+- [ ] Understand the connection between regularization and MAP estimation
+- [ ] Prepare 2 examples of applying statistics in real projects
+- [ ] Know the difference between Type I and Type II errors

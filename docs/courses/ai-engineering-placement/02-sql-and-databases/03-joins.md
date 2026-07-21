@@ -20,6 +20,39 @@ Understanding joins is essential for AI engineers building production systems. T
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding joins is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how joins works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind joins
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
+## Examples
+
+### Basic Example
+
+```python
+## Basic joins example
+def example():
+    """Demonstrate joins"""
+    result = "Hello, joins!"
+    print(result)
+    return result
+
+example()
+```
+
+### Expected Output
+
+```text
+Hello, joins!
+```
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |

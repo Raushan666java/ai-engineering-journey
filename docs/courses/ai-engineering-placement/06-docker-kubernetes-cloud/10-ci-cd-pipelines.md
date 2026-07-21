@@ -20,6 +20,18 @@ Understanding ci cd pipelines is essential for AI engineers building production 
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding ci cd pipelines is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how ci cd pipelines works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind ci cd pipelines
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -72,6 +84,7 @@ flowchart LR
 GitHub Actions automates workflows directly in your GitHub repository.
 
 ```yaml
+
 ## .github/workflows/ci.yml
 name: CI Pipeline
 
@@ -174,6 +187,7 @@ jobs:
 GitLab CI/CD uses a `.gitlab-ci.yml` file in the repository root.
 
 ```yaml
+
 ## .gitlab-ci.yml
 stages:
   - build
@@ -254,6 +268,7 @@ deploy-production:
 **Rolling update** — incrementally replace instances:
 
 ```yaml
+
 ## Kubernetes rolling update
 spec:
   strategy:
@@ -266,15 +281,18 @@ spec:
 **Blue-green** — switch between environments:
 
 ```yaml
+
 ## AWS ECS blue/green
 deploymentController:
   type: CODE_DEPLOY
+
 ## CodeDeploy handles traffic shifting
 ```text
 
 **Canary** — incremental traffic shifting:
 
 ```yaml
+
 ## Istio canary deployment
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
@@ -296,6 +314,7 @@ spec:
 **Feature flags** — decouple deployment from release:
 
 ```yaml
+
 ## LaunchDarkly or Flagsmith integration
 jobs:
   deploy:
@@ -322,6 +341,7 @@ jobs:
 **SAST (Static Analysis)**: Scan source code for vulnerabilities.
 
 ```yaml
+
 ## GitHub CodeQL
 - name: Initialize CodeQL
   uses: github/codeql-action/init@v3
@@ -378,6 +398,7 @@ jobs:
 **Security gates in pipelines**:
 
 ```yaml
+
 ## Block deployment if critical vulnerabilities found
 - name: Check security scan results
   run: |
@@ -392,6 +413,7 @@ jobs:
 **Caching dependencies**:
 
 ```yaml
+
 ## GitHub Actions
 - name: Cache Node modules
   uses: actions/cache@v3
@@ -411,6 +433,7 @@ cache:
 **Parallel jobs**:
 
 ```yaml
+
 ## Run test suites in parallel
 jobs:
   test-unit:
@@ -456,6 +479,7 @@ steps:
 GitOps uses Git as the single source of truth for declarative infrastructure and applications.
 
 ```yaml
+
 ## ArgoCD Application
 apiVersion: argoproj.io/v1alpha1
 kind: Application
@@ -501,6 +525,7 @@ flowchart LR
 - Drift detection and auto-remediation
 
 ```bash
+
 ## Install ArgoCD
 kubectl create namespace argocd
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml

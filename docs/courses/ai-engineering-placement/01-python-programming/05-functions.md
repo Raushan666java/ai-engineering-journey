@@ -20,6 +20,39 @@ Understanding functions is essential for AI engineers building production system
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding functions is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how functions works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind functions
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
+## Examples
+
+### Basic Example
+
+```python
+## Basic functions example
+def example():
+    """Demonstrate functions"""
+    result = "Hello, functions!"
+    print(result)
+    return result
+
+example()
+```
+
+### Expected Output
+
+```text
+Hello, functions!
+```
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -465,8 +498,11 @@ def greet(name: str) -> str:
     return f"Hello, {name}!"
 
 greet("Alice")
+
 ## Hello, Alice!
+
 ## Hello, Alice!
+
 ## Hello, Alice!
 
 ## Class-based decorator
@@ -491,6 +527,7 @@ say_hello()  # Call 2 of say_hello
 ## 5.9 Common Pitfalls
 
 `python
+
 ## Pitfall 1: Mutable default arguments
 def add_item(item, lst=[]):  # BAD
     lst.append(item)
@@ -527,7 +564,9 @@ def remove_negatives_fixed(numbers):
     return [n for n in numbers if n >= 0]
 
 ## Pitfall 5: Using lambda where def is clearer
+
 ## BAD: squared = lambda x: x ** 2
+
 ## GOOD:
 def squared(x): return x ** 2
 `
@@ -550,11 +589,13 @@ print(timeit.timeit(slow, number=100000))  # slower
 print(timeit.timeit(fast, number=100000))  # faster
 
 ## Function call overhead
+
 ## Inline is faster than function call for simple ops
 def compute(x):
     return x * 2
 
 ## Inline: result = x * 2
+
 ## Function: result = compute(x)
 
 ## @lru_cache for expensive pure functions

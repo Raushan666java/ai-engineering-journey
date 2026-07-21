@@ -24,6 +24,18 @@ Understanding cnn fundamentals is essential for AI engineers building production
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding cnn fundamentals is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how cnn fundamentals works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind cnn fundamentals
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic |
@@ -55,6 +67,7 @@ conv = nn.Conv2d(in_channels=3, out_channels=16, kernel_size=3, stride=1, paddin
 x = torch.randn(4, 3, 32, 32)  # batch, channels, height, width
 y = conv(x)
 print(f'Input: {x.shape}, Output: {y.shape}')
+
 ## Parameters: (in_c * kernel_h * kernel_w + 1) * out_c
 print(f'Parameters: {{sum(p.numel() for p in conv.parameters()):,}}')
 ```text
@@ -89,6 +102,7 @@ x = torch.randn(4, 16, 32, 32)
 y = bn(x)
 print(f'Running mean: {bn.running_mean.shape}')
 print(f'Running var: {bn.running_var.shape}')
+
 ## During eval, running stats replace batch stats
 bn.eval()
 y_eval = bn(x)

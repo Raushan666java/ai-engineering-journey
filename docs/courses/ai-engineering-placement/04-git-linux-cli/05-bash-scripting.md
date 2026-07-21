@@ -52,6 +52,29 @@ Aliases are shortcuts that expand to longer commands. They eliminate typing repe
 **Creating aliases:**
 
 ```bash
+
+
+## Examples
+
+### Basic Example
+
+```python
+## Basic bash scripting example
+def example():
+    """Demonstrate bash scripting"""
+    result = "Hello, bash scripting!"
+    print(result)
+    return result
+
+example()
+```
+
+### Expected Output
+
+```text
+Hello, bash scripting!
+```
+
 ## Simple alias
 alias ll='ls -la'
 
@@ -74,6 +97,7 @@ type ll
 **Essential aliases for developers:**
 
 ```bash
+
 ## Navigation
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -122,12 +146,15 @@ alias reload='source ~/.bashrc'
 **Persisting aliases:**
 
 ```bash
+
 ## Add to ~/.bashrc (permanent)
 echo "alias ll='ls -la'" >> ~/.bashrc
 
 ## Or add to ~/.bash_aliases (cleaner separation)
 echo "alias ll='ls -la'" >> ~/.bash_aliases
+
 ## Then source it from .bashrc:
+
 ## if [ -f ~/.bash_aliases ]; then . ~/.bash_aliases; fi
 
 ## Apply changes without restarting
@@ -137,6 +164,7 @@ source ~/.bashrc
 **When to use functions instead of aliases:**
 
 ```bash
+
 ## Alias can't take arguments easily
 alias greet='echo Hello'
 
@@ -171,6 +199,7 @@ extract() {
 
 
 ## Overview
+
 ### 05.2 Shell History
 
 Bash history records every command you type. Leveraging it saves significant time.
@@ -178,6 +207,7 @@ Bash history records every command you type. Leveraging it saves significant tim
 **Basic history operations:**
 
 ```bash
+
 ## View full history
 history
 
@@ -188,12 +218,14 @@ history 20
 history -c
 
 ## Search history interactively (Ctrl+R)
+
 ## Press Ctrl+R, then type a search term
 ```text
 
 **Repeating previous commands:**
 
 ```bash
+
 ## Run last command
 !!
 
@@ -217,6 +249,7 @@ echo !:3-5  # arguments 3 through 5
 **History expansion examples:**
 
 ```bash
+
 ## If last command was: git add src/auth.ts
 
 !!                     # git add src/auth.ts
@@ -230,7 +263,9 @@ sudo !!                # sudo git add src/auth.ts
 **Searching history:**
 
 ```bash
+
 ## Ctrl+R — reverse incremental search
+
 ## Type to search, press Enter to run, press Ctrl+R again for next match
 
 ## Search history with grep
@@ -246,6 +281,7 @@ HISTTIMEFORMAT="%Y-%m-%d %H:%M: " history
 **History configuration (~/.bashrc):**
 
 ```bash
+
 ## Increase history size
 HISTSIZE=50000
 HISTFILESIZE=100000
@@ -265,6 +301,7 @@ PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
 
 ## Overview
+
 ### 05.3 Tab Completion
 
 Tab completion automatically completes commands, filenames, variables, and arguments. It's one of the biggest productivity gains in the terminal.
@@ -272,7 +309,9 @@ Tab completion automatically completes commands, filenames, variables, and argum
 **Basic completion:**
 
 ```bash
+
 ## Press Tab once — completes if unique
+
 ## Press Tab twice — shows all possibilities
 
 ## Complete a command name
@@ -287,8 +326,10 @@ cd Docu<Tab>         # → cd Documents/
 **Completion features:**
 
 ```bash
+
 ## Complete command options
 git checkout -<Tab><Tab>
+
 ## Shows: -b -l -m -p -q ...
 
 ## Complete after pipes
@@ -308,6 +349,7 @@ ping local<Tab>    # → ping localhost
 **Custom completions (bash):**
 
 ```bash
+
 ## Create a completion function
 _complete_myapp() {
     local cur="${COMP_WORDS[COMP_CWORD]}"
@@ -321,6 +363,7 @@ complete -F _complete_myapp myapp
 **Enabling completions for common tools:**
 
 ```bash
+
 ## Git completion (install on Ubuntu/Debian)
 sudo apt install git-complete
 
@@ -337,7 +380,9 @@ poetry completions bash >> ~/.bash_completion.d/poetry.bash
 **Zsh completions (more powerful):**
 
 ```bash
+
 ## Zsh has built-in completion system
+
 ## Enable in ~/.zshrc:
 autoload -Uz compinit && compinit
 
@@ -350,6 +395,7 @@ zstyle ':completion:*' menu select
 
 
 ## Overview
+
 ### 05.4 Tmux
 
 Tmux is a terminal multiplexer. It lets you run multiple terminal sessions in a single window, detach and reattach sessions, and split your terminal into panes.
@@ -364,6 +410,7 @@ Tmux is a terminal multiplexer. It lets you run multiple terminal sessions in a 
 **Basic tmux operations:**
 
 ```bash
+
 ## Start a new session named "dev"
 tmux new -s dev
 
@@ -377,47 +424,60 @@ tmux attach -t dev
 tmux kill-session -t dev
 
 ## Detach from current session
+
 ## Press: Ctrl+b, then d
 ```text
 
 **Tmux panes:**
 
 ```bash
+
 ## Split horizontally
+
 ## Press: Ctrl+b, then "
 
 ## Split vertically
+
 ## Press: Ctrl+b, then %
 
 ## Navigate between panes
+
 ## Press: Ctrl+b, then arrow keys
 
 ## Resize pane
+
 ## Press: Ctrl+b, then Ctrl+arrow keys
 
 ## Close current pane
+
 ## Press: Ctrl+b, then x
 ```text
 
 **Tmux windows (tabs):**
 
 ```bash
+
 ## Create new window
+
 ## Press: Ctrl+b, then c
 
 ## Switch windows
+
 ## Press: Ctrl+b, then 0-9
 
 ## Rename current window
+
 ## Press: Ctrl+b, then ,
 
 ## Close window
+
 ## Press: Ctrl+b, then &
 ```text
 
 **Useful tmux config (~/.tmux.conf):**
 
 ```bash
+
 ## Enable mouse support
 set -g mouse on
 
@@ -444,6 +504,7 @@ bind r source-file ~/.tmux.conf
 **Tmux workflow for development:**
 
 ```bash
+
 ## Start a dev session with multiple windows
 tmux new -s dev
 
@@ -460,11 +521,13 @@ npm run test:watch
 git status
 
 ## Detach and reattach later
+
 ## Ctrl+b, d → tmux attach -t dev
 ```text
 
 
 ## Overview
+
 ### 05.5 Keyboard Shortcuts
 
 Bash uses the GNU Readline library for line editing. These shortcuts work in bash, zsh, and most CLI tools.
@@ -528,16 +591,20 @@ Bash uses the GNU Readline library for line editing. These shortcuts work in bas
 **Practical examples:**
 
 ```bash
+
 ## Fast file editing workflow
 vim /long/path/to/file.txt
+
 ## Oops, wrong file — Ctrl+U to clear, then type correct path
 
 ## Edit a long command
 git commit -m "Fix bug in authentication module that causes login failures on mobile"
+
 ## Ctrl+A to go to start, Ctrl+F to move to "Fix", change to "fix"
 
 ## Quick directory navigation
 cd /var/log/apache2/
+
 ## Ctrl+U clears the line, type new path
 cd /etc/nginx/
 
@@ -548,6 +615,7 @@ cd !$    # cd /var/log/apache2/
 
 
 ## Overview
+
 ### 05.6 Shell Configuration
 
 Your shell configuration files define the environment: aliases, functions, prompt, paths, and settings.
@@ -566,6 +634,7 @@ Your shell configuration files define the environment: aliases, functions, promp
 **Essential .bashrc structure:**
 
 ```bash
+
 ## ── History ──────────────────────────────
 HISTSIZE=50000
 HISTFILESIZE=100000
@@ -606,6 +675,7 @@ export PATH="$HOME/bin:$PATH"
 **Environment variables:**
 
 ```bash
+
 ## Set environment variable (persists in session)
 export EDITOR=vim
 

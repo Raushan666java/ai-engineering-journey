@@ -20,6 +20,18 @@ Understanding docker best practices is essential for AI engineers building produ
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding docker best practices is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how docker best practices works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind docker best practices
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -53,6 +65,7 @@ A well-optimized Dockerfile produces smaller, faster-building, and more secure i
 **Choose minimal base images**:
 
 ```dockerfile
+
 ## Fat — ~800MB
 FROM python:3.11
 
@@ -69,6 +82,7 @@ FROM gcr.io/distroless/python3:latest
 **Order layers for maximum cache reuse**:
 
 ```dockerfile
+
 ## ❌ Inefficient — cache invalidated on every code change
 FROM node:20
 WORKDIR /app
@@ -94,6 +108,7 @@ CMD ["node", "dist/server.js"]
 **Multi-stage build patterns**:
 
 ```dockerfile
+
 ## Stage 1: Compile
 FROM golang:1.21 AS builder
 WORKDIR /app
@@ -114,6 +129,7 @@ CMD ["/server"]
 **Additional optimization tips**:
 
 ```dockerfile
+
 ## Combine RUN commands to reduce layers
 RUN apt-get update && apt-get install -y \
     curl \
@@ -121,6 +137,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 ## Use .dockerignore effectively
+
 ## Exclude: node_modules, .git, .env, *.md, __pycache__
 
 ## Set --no-cache-dir for pip
@@ -137,6 +154,7 @@ Security must be integrated into every stage of the Docker workflow.
 **Least privilege principle**:
 
 ```dockerfile
+
 ## ❌ Running as root
 FROM node:20-alpine
 COPY . /app
@@ -154,10 +172,12 @@ CMD ["node", "server.js"]
 **Secret management**:
 
 ```dockerfile
+
 ## ❌ Never hardcode secrets
 ENV API_KEY=sk-abc123  # BAD — exposed in image layers
 
 ## ✅ Build-time secrets (Docker BuildKit)
+
 ## docker build --secret id=api_key,env=API_KEY .
 RUN --mount=type=secret,id=api_key \
     export API_KEY=$(cat /run/secrets/api_key) && \
@@ -165,6 +185,7 @@ RUN --mount=type=secret,id=api_key \
 ```text
 
 ```bash
+
 ## Runtime secrets
 docker run -e API_KEY=sk-abc123 my-image
 docker run --secret id=api_key my-image  # Swarm secrets
@@ -173,6 +194,7 @@ docker run --secret id=api_key my-image  # Swarm secrets
 **Image scanning**:
 
 ```bash
+
 ## Scan with Docker Scout
 docker scout quickview my-image
 docker scout recommendations my-image
@@ -198,6 +220,7 @@ snyk container test my-image
 | Regular updates | Rebase images weekly |
 
 ```bash
+
 ## Run with security hardening
 docker run -d \
     --read-only \
@@ -213,6 +236,7 @@ docker run -d \
 Containers without limits can exhaust host resources. Always set constraints.
 
 ```bash
+
 ## CPU constraints
 docker run --cpus=0.5 my-image      # half a core
 docker run --cpus=2 my-image        # 2 cores
@@ -262,6 +286,7 @@ docker run --oom-score-adj=1000 my-batch-job       # more likely to be killed
 **Monitoring resource usage**:
 
 ```bash
+
 ## Real-time stats
 docker stats
 
@@ -279,6 +304,7 @@ Consistent image tagging enables traceability and rollback.
 **Tagging strategies**:
 
 ```bash
+
 ## Semantic versioning
 docker build -t my-app:1.0.0 .
 docker build -t my-app:1.0 .
@@ -297,6 +323,7 @@ docker build -t my-app:production-$(git rev-parse --short HEAD) .
 **Image digests** — immutable references:
 
 ```bash
+
 ## Get digest
 docker images --digests my-app
 
@@ -310,6 +337,7 @@ docker run my-app@sha256:def456...
 **Registry management**:
 
 ```bash
+
 ## Tag for registry
 docker tag my-app:1.0.0 registry.example.com/team/my-app:1.0.0
 
@@ -320,7 +348,9 @@ docker push registry.example.com/team/my-app:1.0.0
 docker buildx build --platform linux/amd64,linux/arm64 -t my-app:latest --push .
 
 ## Garbage collection
+
 ## AWS ECR lifecycle policies
+
 ## Docker Registry: bin/registry garbage-collect /etc/docker/registry/config.yml
 ```text
 
@@ -382,6 +412,7 @@ jobs:
 **Build caching strategies**:
 
 ```yaml
+
 ## GitHub Actions caching
 cache-from: type=gha
 cache-to: type=gha,mode=max
@@ -421,6 +452,7 @@ docker-build:
 **Health checks** — required for container orchestration:
 
 ```dockerfile
+
 ## HTTP health check
 HEALTHCHECK --interval=30s --timeout=3s --start-period=10s --retries=3 \
     CMD curl -f http://localhost:8080/health || exit 1
@@ -437,16 +469,21 @@ HEALTHCHECK --interval=60s --timeout=5s \
 **Logging best practices**:
 
 ```dockerfile
+
 ## Send logs to stdout/stderr
 ENV PYTHONUNBUFFERED=1
 
 ## Configure application logger
+
 ## Python: logging.basicConfig(stream=sys.stdout)
+
 ## Node: pino-pretty
+
 ## Java: Logback console appender
 ```text
 
 ```yaml
+
 ## Compose logging configuration
 services:
   api:
@@ -460,6 +497,7 @@ services:
 **Metrics exposure**:
 
 ```dockerfile
+
 ## Expose metrics endpoint
 EXPOSE 9090
 
@@ -483,6 +521,7 @@ def metrics():
 **Zombie processes**: PID 1 in a container must handle signals properly. Use a minimal init system.
 
 ```dockerfile
+
 ## Solution 1: Use tini (tiny init)
 FROM python:3.11-slim
 RUN apt-get update && apt-get install -y tini
@@ -499,6 +538,7 @@ CMD ["node", "server.js"]
 **Permission issues with volumes**:
 
 ```dockerfile
+
 ## Match container user with host user
 RUN adduser -u 1001 appuser
 USER appuser
@@ -507,6 +547,7 @@ USER appuser
 **Timezone configuration**:
 
 ```dockerfile
+
 ## Set timezone
 ENV TZ=UTC
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
@@ -519,6 +560,7 @@ RUN apt-get install -y tzdata && \
 **File descriptor limits**:
 
 ```bash
+
 ## Increase in docker run
 docker run --ulimit nofile=65536:65536 my-app
 
@@ -532,6 +574,7 @@ ulimits:
 **Common Dockerfile mistakes**:
 
 ```dockerfile
+
 ## ❌ Wrong
 COPY . .
 RUN npm install
@@ -551,6 +594,7 @@ RUN npm run build
 **BuildKit features**:
 
 ```bash
+
 ## Enable BuildKit
 export DOCKER_BUILDKIT=1
 docker build --progress=plain -t my-app .
@@ -570,16 +614,20 @@ RUN --mount=type=bind,source=scripts,target=/scripts \
 **Layer compression**:
 
 ```dockerfile
+
 ## Use buildkit's compression
+
 ## docker build --output=type=image,name=my-app,compression=zstd
 
 ## Squash layers (use with caution — breaks cache)
+
 ## docker build --squash -t my-app .
 ```text
 
 **Network performance**:
 
 ```bash
+
 ## Use host network for high-performance needs
 docker run --network=host my-app
 
@@ -597,6 +645,7 @@ docker network create -d macvlan --subnet=192.168.1.0/24 my-network
 | aufs | Legacy | Not in mainline kernel |
 
 ```bash
+
 ## Check current storage driver
 docker info | grep "Storage Driver"
 
@@ -872,6 +921,7 @@ ps aux --sort=-%cpu</code></pre></li>
       <li><strong>Get thread dump</strong>:
         <pre><code># Java
 docker exec container_name jstack -l <pid>
+
 ## Python
 docker exec container_name python -c "import threading; print(threading.enumerate())"</code></pre></li>
       <li><strong>Set CPU limits</strong>: <code>docker update --cpus=0.5 container_name</code></li>

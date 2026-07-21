@@ -38,7 +38,7 @@ flowchart LR
     G -->|No| H[Tune Hyperparameters]
     H --> D
     G -->|Yes| I[Deploy]
-```
+```text
 
 
 ## Introduction
@@ -77,7 +77,7 @@ interface SupervisedModel {
   predict(X: number[][]): (number | string)[];
   score(X: number[][], y: (number | string)[]): number;
 }
-```
+```text
 
 **Unsupervised learning**: Model finds patterns in unlabeled data. Used for clustering and dimensionality reduction.
 
@@ -126,7 +126,7 @@ function analyzeBiasVariance(
   // Total error = bias^2 + variance + irreducible error
   return { bias, variance, totalError: bias + variance };
 }
-```
+```text
 
 **Rule of thumb**: Simple models (linear regression) have high bias, low variance. Complex models (deep neural networks) have low bias, high variance.
 
@@ -207,7 +207,7 @@ class DataPreprocessor {
     );
   }
 }
-```
+```text
 
 ---
 
@@ -310,7 +310,7 @@ class TrainTestSplitter {
     };
   }
 }
-```
+```text
 
 ---
 
@@ -400,7 +400,7 @@ class MetricsCalculator {
     return { fpr, tpr, auc };
   }
 }
-```
+```text
 
 ---
 
@@ -446,7 +446,7 @@ class MLEngine {
     return this.metrics.classification(yTest, predictions);
   }
 }
-```
+```text
 
 ---
 

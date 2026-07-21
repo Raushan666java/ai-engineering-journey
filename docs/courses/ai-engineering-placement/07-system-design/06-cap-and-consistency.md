@@ -20,6 +20,18 @@ Understanding cap and consistency is essential for AI engineers building product
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding cap and consistency is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how cap and consistency works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind cap and consistency
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -74,6 +86,7 @@ Choose Consistency over Availability during a partition.
 **Examples**: MongoDB (default), HBase, Zookeeper, etcd.
 
 ```python
+
 ## CP system behavior
 class CPStorage:
     def write(self, key, value):
@@ -101,6 +114,7 @@ Choose Availability over Consistency during a partition.
 **Examples**: Cassandra, DynamoDB, Riak, CouchDB.
 
 ```python
+
 ## AP system behavior
 class APStorage:
     def write(self, key, value):
@@ -153,6 +167,7 @@ flowchart LR
 | Monotonic | Reads never go back in time | Session data |
 
 ```python
+
 ## Read-your-writes consistency
 class SessionStore:
     def write_session(self, user_id, data):

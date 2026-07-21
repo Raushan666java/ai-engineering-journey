@@ -491,7 +491,7 @@ async function withRetry<T>(
     }
     throw lastError
 }
-```
+```text
 
 
 ## Visual Analogy

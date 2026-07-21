@@ -20,6 +20,18 @@ Arrays are the most fundamental data structure, providing O(1) random access. Un
 - Time and space complexity basics
 - Basic programming
 
+
+## Theory
+
+Understanding arrays is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how arrays works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind arrays
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -69,13 +81,18 @@ print(len(dynamic_arr))   # 7
 **Memory layout comparison**:
 
 ```python
+
 ## Array of 5 integers
 arr = [10, 20, 30, 40, 50]
+
 ## Memory: [10][20][30][40][50] — contiguous
+
 ## Address: base + 0, base + 8, base + 16, ... (on 64-bit)
+
 ## Access arr[3]: base + 3*8 = address of 40 — O(1)
 
 ## Linked list — nodes scattered in memory
+
 ## Access by index: must traverse nodes — O(n)
 ```text
 
@@ -928,6 +945,7 @@ def subarray_sum(arr, k):
       <li>Supports buffer protocol for zero-copy operations</li>
     </ul>
     <pre><code>from array import array
+
 ## 'i' = signed int, 'd' = double, 'f' = float
 int_arr = array('i', [1, 2, 3, 4, 5])
 float_arr = array('d', [1.0, 2.0, 3.0])

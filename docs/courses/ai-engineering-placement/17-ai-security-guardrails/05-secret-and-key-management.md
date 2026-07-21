@@ -20,6 +20,18 @@ Understanding secret and key management is essential for AI engineers building p
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding secret and key management is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how secret and key management works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind secret and key management
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |

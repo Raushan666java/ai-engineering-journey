@@ -18,6 +18,18 @@ Understanding linear regression is essential for AI engineers building productio
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding linear regression is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how linear regression works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind linear regression
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | 2.1 | OLS Linear Regression | Closed-form solution, normal equation |

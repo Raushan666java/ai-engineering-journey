@@ -33,7 +33,7 @@ flowchart TD
     G --> H{Done?}
     H -->|No| B
     H -->|Yes| I[Move to Next Problem]
-```
+```text
 
 
 ### Pattern Recognition
@@ -442,7 +442,7 @@ function twoSum(nums: number[], target: number): number[] {
     }
     return []
 }
-```
+```text
 
 
 ### Example 2: Binary Search on Rotated Array
@@ -463,7 +463,7 @@ function search(nums: number[], target: number): number {
     }
     return -1
 }
-```
+```text
 
 
 ### Example 3: LRU Cache (Linked List + HashMap)
@@ -488,7 +488,7 @@ class LRUCache {
         }
     }
 }
-```
+```text
 
 
 ## Summary

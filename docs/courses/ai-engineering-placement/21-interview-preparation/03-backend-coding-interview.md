@@ -20,6 +20,18 @@ Understanding backend coding interview is essential for AI engineers building pr
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding backend coding interview is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how backend coding interview works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind backend coding interview
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -524,6 +536,7 @@ Message queues decouple services and enable asynchronous processing. Common patt
 **Celery**: Python task queue that uses RabbitMQ or Redis as a broker. Handles periodic tasks, retries, and result storage.
 
 ```python
+
 ## Celery task queue example
 from celery import Celery
 
@@ -617,6 +630,7 @@ Microservices decompose a backend into independently deployable services. Be rea
 **Inter-service communication**: Synchronous (HTTP/REST, gRPC) or asynchronous (message queues, events). Choose async for loose coupling.
 
 ```python
+
 ## Service example — inventory service
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel

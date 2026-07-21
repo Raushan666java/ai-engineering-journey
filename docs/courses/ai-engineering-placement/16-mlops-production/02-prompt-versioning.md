@@ -20,6 +20,18 @@ Understanding prompt versioning is essential for AI engineers building productio
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding prompt versioning is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how prompt versioning works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind prompt versioning
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -53,7 +65,9 @@ Prompts are the primary interface to LLM behavior. A small change in wording can
 **Real-world prompt failure scenarios**:
 
 ```python
+
 ## Scenario: A seemingly harmless change breaks production
+
 ## Version 1.0 (production, working)
 prompt_v1 = """Extract the customer name, order ID, and total amount from the email below.
 
@@ -75,6 +89,7 @@ Email: {email}
     "order_id": "...",
     "total_amount": ...
 }"""
+
 ## Output became unpredictable — LLM often returned markdown or extra text
 ```text
 
@@ -85,6 +100,7 @@ Email: {email}
 - **Regression testing**: Automatically test new prompts against a suite of golden examples
 
 ```python
+
 ## Prompt version metadata structure
 prompt_version = {
     "version_id": "v2.1.0",
@@ -371,6 +387,7 @@ lc.promote("summarize", "v1", PromptStage.PRODUCTION)
 lc.promote("summarize", "v2", PromptStage.STAGING)
 
 ## Canary: 10% of traffic to v2
+
 ## If metrics degrade, rollback
 import random
 def route_request(text, canary_percent=0.1):
@@ -511,27 +528,45 @@ Rate on a scale of 1-5 where 5 is perfect. Return only the number."""
 Automate prompt validation and deployment in CI pipelines.
 
 ```python
+
 ## .github/workflows/prompt-ci.yml
+
 ## name: Prompt CI
+
 ## on:
+
 ##   pull_request:
+
 ##     paths: ['prompts/**']
 #
+
 ## jobs:
+
 ##   validate-prompts:
+
 ##     runs-on: ubuntu-latest
+
 ##     steps:
+
 ##       - uses: actions/checkout@v4
+
 ##       - run: pip install -r requirements.txt
+
 ##       - name: Run prompt evaluation
+
 ##         run: python scripts/evaluate_prompts.py
+
 ##       - name: Validate prompt templates
+
 ##         run: python scripts/validate_templates.py
+
 ##       - name: Check for prompt drift
+
 ##         run: python scripts/check_drift.py --baseline production
 ```text
 
 ```python
+
 ## scripts/evaluate_prompts.py — runs in CI
 import json
 import sys
@@ -573,6 +608,7 @@ validate_all_prompts()
 **Automated prompt deployment**:
 
 ```python
+
 ## scripts/deploy_prompt.py
 import argparse
 import json

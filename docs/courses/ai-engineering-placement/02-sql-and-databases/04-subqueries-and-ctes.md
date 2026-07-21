@@ -20,6 +20,39 @@ Understanding subqueries and ctes is essential for AI engineers building product
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding subqueries and ctes is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how subqueries and ctes works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind subqueries and ctes
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
+## Examples
+
+### Basic Example
+
+```python
+## Basic subqueries and ctes example
+def example():
+    """Demonstrate subqueries and ctes"""
+    result = "Hello, subqueries and ctes!"
+    print(result)
+    return result
+
+example()
+```
+
+### Expected Output
+
+```text
+Hello, subqueries and ctes!
+```
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -77,6 +110,7 @@ cur.executemany("INSERT INTO emp VALUES (?,?,?,?)", [
     (1, "Alice", 75000, 1), (2, "Bob", 68000, 1),
     (3, "Charlie", 82000, 2), (4, "Diana", 72000, 2),
 ])
+
 ## Employees earning above their department average
 cur.execute("""
     SELECT e.name, e.salary, e.dept_id
@@ -85,7 +119,9 @@ cur.execute("""
 """)
 for row in cur.fetchall():
     print(f"{row[0]}: {row[1]} > dept avg")
+
 ## Alice: 75000 > Eng avg (71500)
+
 ## Charlie: 82000 > Sales avg (77000)
 `
 

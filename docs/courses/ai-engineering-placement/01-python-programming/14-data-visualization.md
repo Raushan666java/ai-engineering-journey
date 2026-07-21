@@ -20,6 +20,18 @@ Understanding data visualization is essential for AI engineers building producti
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding data visualization is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how data visualization works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind data visualization
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -75,6 +87,7 @@ plt.show()
 **Common plot types**:
 
 ```python
+
 ## Scatter plot
 plt.figure(figsize=(6, 4))
 x = np.random.randn(100)
@@ -136,6 +149,7 @@ Fine-tune every element of your plots for publication quality.
 **Colors and colormaps**:
 
 ```python
+
 ## Named colors and hex codes
 plt.plot(x, y, color="tab:blue")
 plt.plot(x, y, color="#2E86AB")
@@ -211,6 +225,7 @@ plt.xticks(rotation=45)
 
 ```python
 print(plt.style.available)
+
 ## ['ggplot', 'seaborn-v0_8', 'fivethirtyeight', 'dark_background', ...]
 
 plt.style.use("seaborn-v0_8")
@@ -324,6 +339,7 @@ tips = sns.load_dataset("tips")
 **Relational plots** show relationships between variables:
 
 ```python
+
 ## Scatter with hue and style
 sns.scatterplot(
     data=tips, x="total_bill", y="tip",
@@ -347,6 +363,7 @@ sns.lineplot(
 **Distribution plots**:
 
 ```python
+
 ## Histogram with KDE
 sns.histplot(tips["tip"], bins=20, kde=True)
 
@@ -367,6 +384,7 @@ sns.ecdfplot(tips["tip"])
 **Categorical plots**:
 
 ```python
+
 ## Box plot
 sns.boxplot(data=tips, x="day", y="total_bill", hue="sex")
 
@@ -455,6 +473,7 @@ fig.show()
 **Chart types**:
 
 ```python
+
 ## Line chart
 fig = px.line(
     x=pd.date_range("2024-01-01", periods=100),
@@ -539,6 +558,7 @@ px.line(
 **3D plots and faceted layouts**:
 
 ```python
+
 ## 3D scatter
 fig = px.scatter_3d(
     df, x="sepal_width", y="sepal_length", z="petal_length",

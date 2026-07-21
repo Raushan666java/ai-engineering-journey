@@ -20,6 +20,39 @@ Understanding oop in python is essential for AI engineers building production sy
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding oop in python is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how oop in python works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind oop in python
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
+## Examples
+
+### Basic Example
+
+```python
+## Basic oop in python example
+def example():
+    """Demonstrate oop in python"""
+    result = "Hello, oop in python!"
+    print(result)
+    return result
+
+example()
+```
+
+### Expected Output
+
+```text
+Hello, oop in python!
+```
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -165,6 +198,7 @@ account = BankAccount("Alice", 1000)
 print(account.balance)       # 1000
 account.balance = 1500       # setter
 print(account._balance)      # 1500 (convention says don't)
+
 ## print(account.__pin)       # AttributeError
 print(account._BankAccount__pin)  # "1234" (mangled name)
 `
@@ -346,6 +380,7 @@ class Circle extends Shape {
 Favor composition over inheritance for flexible designs.
 
 `python
+
 ## Inheritance approach (tight coupling)
 class Engine:
     def start(self): return "Engine running"
@@ -463,6 +498,7 @@ class Product:
 
 p = Product("Widget", 10.99)
 print(p.price)  # 10.99
+
 ## p.price = -5  # ValueError: Invalid value: -5
 
 ## Property is implemented using descriptors
@@ -487,6 +523,7 @@ class Property:
 ## 8.10 Multiple Inheritance and MRO Deep Dive
 
 `python
+
 ## Diamond problem
 class A:
     def method(self): return "A"
@@ -503,11 +540,15 @@ class D(B, C):
 d = D()
 print(d.method())  # "B" (MRO: D -> B -> C -> A)
 print(D.__mro__)
+
 ## (<class 'D'>, <class 'B'>, <class 'C'>, <class 'A'>, <class 'object'>)
 
 ## MRO follows C3 linearization:
+
 ## 1. Children come before parents
+
 ## 2. Order of bases is respected
+
 ## 3. First occurrence of a class is kept
 
 ## Cooperative multiple inheritance with super()
@@ -534,9 +575,13 @@ class Person(NameMixin, AgeMixin):
         super().__init__(**kwargs)
 
 p = Person(name="Alice", age=30)
+
 ## Person.__init__
+
 ## NameMixin.__init__(name=Alice)
+
 ## AgeMixin.__init__(age=30)
+
 ## Base.__init__({})
 print(f"{p.name} is {p.age}")  # Alice is 30
 `
@@ -544,6 +589,7 @@ print(f"{p.name} is {p.age}")  # Alice is 30
 ## 8.11 Common Pitfalls
 
 `python
+
 ## Pitfall 1: Forgetting super() in __init__
 class Parent:
     def __init__(self):
@@ -591,12 +637,14 @@ class Fixed:
 
 f = Fixed()
 f.x = 1
+
 ## f.z = 2  # AttributeError: 'Fixed' has no attribute 'z'
 `
 
 ## 8.12 Design Patterns in Python
 
 `python
+
 ## Singleton pattern
 class Singleton:
     _instance = None

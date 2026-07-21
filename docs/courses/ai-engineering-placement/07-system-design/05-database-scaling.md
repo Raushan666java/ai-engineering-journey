@@ -20,6 +20,18 @@ Understanding database scaling is essential for AI engineers building production
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding database scaling is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how database scaling works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind database scaling
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -518,6 +530,7 @@ ORDER BY order_count DESC;
 | Multi-region sync | Minutes | Minutes | Very High |
 
 ```bash
+
 ## PostgreSQL backup automation
 #!/bin/bash
 DATABASE="mydb"
@@ -529,6 +542,7 @@ pg_dump -h localhost -U admin --format=custom --compress=9 \
     --file="${BACKUP_DIR}/full.backup" $DATABASE
 
 ## WAL archiving (continuous)
+
 ## postgresql.conf: archive_command = 'cp %p /wal_archive/%f'
 
 ## Restore

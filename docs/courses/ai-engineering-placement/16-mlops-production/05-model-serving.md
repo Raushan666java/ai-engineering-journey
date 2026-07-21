@@ -20,6 +20,18 @@ Understanding model serving is essential for AI engineers building production sy
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding model serving is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how model serving works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind model serving
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -61,6 +73,7 @@ Model serving is the process of making model predictions available to applicatio
 | Batch | Minutes-hours | Offline scoring | Daily customer churn prediction |
 
 ```python
+
 ## REST serving with FastAPI — the most common pattern
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
@@ -112,26 +125,44 @@ async def health():
 **gRPC serving for high throughput**:
 
 ```python
+
 ## grpc_servicer.py — gRPC model serving
+
 ## import grpc
+
 ## from concurrent import futures
+
 ## import model_pb2
+
 ## import model_pb2_grpc
+
 ## import mlflow.pyfunc
+
 ## import numpy as np
 #
+
 ## class ModelServicer(model_pb2_grpc.ModelServiceServicer):
+
 ##     def __init__(self):
+
 ##         self.model = mlflow.pyfunc.load_model("models:/PricePredictor/Production")
 #
+
 ##     def Predict(self, request, context):
+
 ##         features = np.array(request.features).reshape(1, -1)
+
 ##         prediction = self.model.predict(features)[0]
+
 ##         return model_pb2.PredictResponse(prediction=float(prediction))
 #
+
 ## server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
+
 ## model_pb2_grpc.add_ModelServiceServicer_to_server(ModelServicer(), server)
+
 ## server.add_insecure_port("[::]:50051")
+
 ## server.start()
 ```text
 
@@ -142,6 +173,7 @@ async def health():
 FastAPI provides async inference capabilities, automatic OpenAPI docs, and Pydantic validation — making it ideal for model serving.
 
 ```python
+
 ## serving_app.py — Complete model serving application
 from fastapi import FastAPI, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
@@ -265,6 +297,7 @@ async def log_prediction_to_db(features: dict, prediction: float):
 Caching repeated requests and batching concurrent requests significantly improve throughput.
 
 ```python
+
 ## caching.py — Redis-based prediction caching
 import redis
 import json
@@ -395,6 +428,7 @@ async def batched_predict(features: Dict[str, float]):
 A model router directs requests to different model versions based on routing rules.
 
 ```python
+
 ## model_router.py — Route requests to model versions
 import mlflow.pyfunc
 import random
@@ -471,41 +505,74 @@ async def routed_predict(features: Dict[str, float], user_id: str = None):
 Autoscaling ensures serving infrastructure matches traffic demands without over-provisioning.
 
 ```python
+
 ## kubernetes_hpa.yaml — Horizontal Pod Autoscaler
+
 ## apiVersion: autoscaling/v2
+
 ## kind: HorizontalPodAutoscaler
+
 ## metadata:
+
 ##   name: model-serving-hpa
+
 ## spec:
+
 ##   scaleTargetRef:
+
 ##     apiVersion: apps/v1
+
 ##     kind: Deployment
+
 ##     name: price-predictor
+
 ##   minReplicas: 2
+
 ##   maxReplicas: 20
+
 ##   metrics:
+
 ##     - type: Resource
+
 ##       resource:
+
 ##         name: cpu
+
 ##         target:
+
 ##           type: Utilization
+
 ##           averageUtilization: 70
+
 ##     - type: Resource
+
 ##       resource:
+
 ##         name: memory
+
 ##         target:
+
 ##           type: Utilization
+
 ##           averageUtilization: 80
+
 ##     - type: Pods
+
 ##       pods:
+
 ##         metric:
+
 ##           name: prediction_latency_p95
+
 ##         target:
+
 ##           type: AverageValue
+
 ##           averageValue: 500m  # 500ms p95 latency
 ```text
 
 ```python
+
 ## custom_autoscaler.py — Python-based autoscaling logic
 import time
 import psutil
@@ -573,6 +640,7 @@ async def predict_with_autoscaling(features: Dict[str, float]):
 Optimize model inference for production with quantization, ONNX, and TensorRT.
 
 ```python
+
 ## optimize_model.py — Convert sklearn model to ONNX for faster inference
 from skl2onnx import convert_sklearn
 from skl2onnx.common.data_types import FloatTensorType

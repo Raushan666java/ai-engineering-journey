@@ -307,7 +307,7 @@ class FeatureStore {
         return snapshot
     }
 }
-```
+```text
 
 
 ### Recommendation Pipeline Simulator
@@ -376,7 +376,7 @@ class RecommendationSystem {
         return this.rerank(userId, candidates, topK)
     }
 }
-```
+```text
 
 
 ### A/B Test Calculator
@@ -429,7 +429,7 @@ class ABTestCalculator {
         return 0.5 * (1 + sign * y)
     }
 }
-```
+```text
 
 
 ### Model Serving Platform
@@ -499,7 +499,7 @@ class ModelServingPlatform {
         workers.push(newWorker)
     }
 }
-```
+```text
 
 
 
@@ -518,6 +518,36 @@ Use this checklist for every ML system design question:
 
 
 
+
+
+## Visual Explanation
+
+```mermaid
+flowchart TD
+    A[Input Data] --> B[Processing]
+    B --> C[Output]
+    C --> D[Feedback Loop]
+    D --> B
+```
+
+## Visual Analogy
+
+Think of ml system design interview like a **delivery system**:
+
+- **Input** = Package to deliver
+- **Processing** = Route planning and optimization
+- **Output** = Package delivered to destination
+- **Feedback** = Delivery confirmation and tracking
+
+This analogy helps because ml system design interview, like a delivery system, involves transforming inputs into outputs efficiently while handling constraints and edge cases.
+
+## Exercises
+
+**Easy** — Implement a basic ml system design interview example that demonstrates the core concept.
+
+**Medium** — Create a more complex implementation that handles edge cases.
+
+**Hard** — Design an optimized solution for large-scale ml system design interview scenarios.
 
 ## Summary
 

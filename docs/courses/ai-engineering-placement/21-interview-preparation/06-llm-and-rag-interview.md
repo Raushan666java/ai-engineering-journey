@@ -20,6 +20,18 @@ Understanding llm and rag interview is essential for AI engineers building produ
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding llm and rag interview is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how llm and rag interview works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind llm and rag interview
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -68,6 +80,7 @@ tokens = tokenizer.tokenize(text)
 token_ids = tokenizer.encode(text)
 print(f"Tokens: {tokens}")
 print(f"Length: {len(tokens)} tokens")
+
 ## Output: ['The', '▁quick', '▁brown', '▁fox', '▁jumps', '▁over', '▁the', '▁lazy', '▁dog', '.']
 
 ## Counting tokens in a prompt
@@ -93,6 +106,7 @@ Prompting is the art of crafting inputs to elicit desired outputs from LLMs with
 **ReAct (Reasoning + Acting)**: Alternate between reasoning traces and actions (tool calls). The model thinks, then calls a tool, then observes the result, then continues reasoning. Used in agents and tool-using systems.
 
 ```python
+
 ## System prompt for a helpful assistant
 system_prompt = """You are an expert AI assistant specializing in backend engineering and AI/ML.
 Answer accurately and concisely. If you're unsure, say so.
@@ -163,6 +177,7 @@ Retrieval-Augmented Generation grounds LLM responses in external knowledge, redu
 6. **Generation**: Inject retrieved chunks into the LLM prompt as context. The LLM generates an answer grounded in the provided context.
 
 ```python
+
 ## RAG implementation with LangChain
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import OpenAIEmbeddings
@@ -259,6 +274,7 @@ Fine-tuning adapts a pre-trained LLM to a specific domain or task using labeled 
 **Supervised instruction tuning**: Train on (instruction, response) pairs. Dataset formats: ShareGPT, Alpaca, Dolly, OpenAssistant. Combines with system prompts for controllable behavior.
 
 ```python
+
 ## LoRA fine-tuning with Hugging Face PEFT
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, TrainingArguments
@@ -345,6 +361,7 @@ Evaluating LLMs is challenging because outputs are open-ended. Use multiple comp
 **Hallucination detection**: Check if the LLM's claims are grounded in the provided context. Use NLI models, factual consistency checkers (TrueTeacher, SelfCheckGPT), or ask the LLM to verify its own answer.
 
 ```python
+
 ## LLM-as-judge evaluation
 import json
 
@@ -497,6 +514,7 @@ Tool use (function calling) enables LLMs to interact with external systems — d
 **Parallel tool calling**: Modern LLMs can call multiple tools simultaneously (e.g., fetch weather for 3 cities at once). The model outputs multiple function calls in a single response.
 
 ```python
+
 ## Tool definitions (OpenAI format)
 tools = [
     {

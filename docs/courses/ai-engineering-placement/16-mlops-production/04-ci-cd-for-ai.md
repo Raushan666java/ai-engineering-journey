@@ -20,6 +20,18 @@ Understanding ci cd for ai is essential for AI engineers building production sys
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding ci cd for ai is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how ci cd for ai works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind ci cd for ai
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -84,33 +96,59 @@ flowchart TB
 | Monitoring | App health metrics | Model drift + performance |
 
 ```python
+
 ## Traditional CI pipeline
+
 ## on: push
+
 ## jobs:
+
 ##   test:
+
 ##     runs-on: ubuntu-latest
+
 ##     steps:
+
 ##       - run: npm test
+
 ##       - run: npm build
+
 ##       - run: deploy
 
 ## AI CI pipeline
+
 ## on: push
+
 ## jobs:
+
 ##   validate-data:
+
 ##     runs-on: ubuntu-latest
+
 ##     steps:
+
 ##       - run: python scripts/validate_data.py
+
 ##   train-evaluate:
+
 ##     needs: validate-data
+
 ##     runs-on: [self-hosted, gpu]
+
 ##     steps:
+
 ##       - run: python train.py --config params.yaml
+
 ##       - run: python evaluate.py --threshold 0.95
+
 ##   deploy:
+
 ##     needs: train-evaluate
+
 ##     runs-on: ubuntu-latest
+
 ##     steps:
+
 ##       - run: python deploy_model.py --stage staging
 ```text
 
@@ -121,6 +159,7 @@ flowchart TB
 A well-designed AI CI/CD pipeline has distinct stages for code, data, training, evaluation, and deployment.
 
 ```python
+
 ## pipeline_builder.py — Define and execute AI CI/CD pipelines
 import os
 import subprocess
@@ -202,6 +241,7 @@ pipeline.run()
 Parameterized training jobs allow CI to train models with different configurations.
 
 ```python
+
 ## train.py — parameterized training script for CI
 import argparse
 import json
@@ -284,32 +324,59 @@ if __name__ == "__main__":
 **GitHub Actions matrix for hyperparameter sweeps**:
 
 ```yaml
+
 ## .github/workflows/train-matrix.yml
+
 ## name: Model Training Matrix
+
 ## on:
+
 ##   workflow_dispatch:
+
 ##     inputs:
+
 ##       experiment_name:
+
 ##         description: "Experiment name"
+
 ##         required: true
+
 ## jobs:
+
 ##   train:
+
 ##     strategy:
+
 ##       matrix:
+
 ##         model_type: [random_forest, gradient_boosting]
+
 ##         n_estimators: [100, 200, 300]
+
 ##         max_depth: [5, 10, 15]
+
 ##     runs-on: ubuntu-latest
+
 ##     steps:
+
 ##       - uses: actions/checkout@v4
+
 ##       - uses: actions/setup-python@v5
+
 ##       - run: |
+
 ##           pip install -r requirements.txt
+
 ##           python train.py --config <(echo '{
+
 ##             "model_type": "${{ matrix.model_type }}",
+
 ##             "n_estimators": ${{ matrix.n_estimators }},
+
 ##             "max_depth": ${{ matrix.max_depth }},
+
 ##             "experiment_name": "${{ github.event.inputs.experiment_name }}"
+
 ##           }')
 ```text
 
@@ -320,6 +387,7 @@ if __name__ == "__main__":
 Evaluation gates are quality thresholds that models must pass before deployment. These prevent underperforming models from reaching production.
 
 ```python
+
 ## evaluate.py — evaluation gate logic
 import json
 import sys
@@ -423,6 +491,7 @@ print(json.dumps(comparison, indent=2))
 CD pipelines automate model version transitions through registry stages.
 
 ```python
+
 ## deploy_model.py — automated model promotion
 import mlflow
 import json

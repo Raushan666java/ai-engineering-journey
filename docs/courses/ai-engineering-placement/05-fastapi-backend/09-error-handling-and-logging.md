@@ -20,6 +20,18 @@ Understanding error handling and logging is essential for AI engineers building 
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding error handling and logging is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how error handling and logging works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind error handling and logging
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -57,16 +69,27 @@ from fastapi.responses import JSONResponse
 app = FastAPI()
 
 ## Consistent error response format
+
 ## {
+
 ##   "error": {
+
 ##     "code": "VALIDATION_ERROR",
+
 ##     "message": "The request contains invalid fields",
+
 ##     "details": [
+
 ##       {"field": "email", "message": "Invalid email format", "code": "invalid_format"}
+
 ##     ],
+
 ##     "request_id": "req_abc123",
+
 ##     "timestamp": "2025-01-15T10:30:00Z"
+
 ##   }
+
 ## }
 
 ## Error codes enum
@@ -342,20 +365,35 @@ class CreateItemRequest(BaseModel):
         return round(v, 2)
 
 ## Detailed validation error response
+
 ## HTTP 422
+
 ## {
+
 ##   "error": {
+
 ##     "code": "VALIDATION_ERROR",
+
 ##     "message": "Request validation failed",
+
 ##     "details": [
+
 ##       {
+
 ##         "field": "body.price",
+
 ##         "message": "Price must be positive",
+
 ##         "code": "value_error",
+
 ##         "input": -10.0
+
 ##       }
+
 ##     ]
+
 ##   }
+
 ## }
 ```text
 
@@ -459,6 +497,7 @@ async def get_user(user_id: int, db: Session = Depends(get_db)):
 Centralize logs for search, analysis, and alerting.
 
 ```python
+
 ## File logging for production
 import logging.handlers
 
@@ -472,22 +511,37 @@ file_handler.setFormatter(CustomJsonFormatter())
 logger.addHandler(file_handler)
 
 ## ELK Stack integration (Filebeat ships logs to Logstash/Elasticsearch)
+
 ## filebeat.yml:
+
 ## filebeat.inputs:
+
 ##   - type: log
+
 ##     paths:
+
 ##       - /var/log/app/*.log
+
 ## output.elasticsearch:
+
 ##   hosts: ["localhost:9200"]
 
 ## Loki integration (promtail ships logs)
+
 ## promtail.yml:
+
 ## scrape_configs:
+
 ##   - job_name: myapp
+
 ##     static_configs:
+
 ##       - targets: [localhost]
+
 ##         labels:
+
 ##           job: myapp
+
 ##           __path__: /var/log/app/*.log
 
 ## Log levels for different environments
@@ -497,7 +551,9 @@ LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO").upper()
 logger.setLevel(getattr(logging, LOG_LEVEL, logging.INFO))
 
 ## Development: DEBUG, detailed, human-readable
+
 ## Staging: INFO, structured JSON
+
 ## Production: WARNING, structured JSON, log only warnings and errors
 ```text
 

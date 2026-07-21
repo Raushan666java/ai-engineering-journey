@@ -20,6 +20,18 @@ Understanding aws fundamentals is essential for AI engineers building production
 - Basic programming knowledge
 - Understanding of data structures
 
+
+## Theory
+
+Understanding aws fundamentals is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how aws fundamentals works in practice.
+
+### Key Concepts
+
+- **Core Principle**: The foundational idea behind aws fundamentals
+- **How It Works**: The mechanism and process involved
+- **Why It Matters**: Relevance to AI engineering and real-world applications
+- **Trade-offs**: Advantages and limitations to consider
+
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
@@ -60,6 +72,7 @@ AWS spans 30+ geographic regions, each with multiple Availability Zones (AZs). E
 | Local Zone | Extends region closer to end users |
 
 ```bash
+
 ## AWS CLI basics
 aws configure
 aws ec2 describe-regions
@@ -82,6 +95,7 @@ EC2 (Elastic Compute Cloud) provides virtual servers in the cloud.
 | GPU instances | ML training, rendering | p3, p4d, g5 |
 
 ```bash
+
 ## Launch EC2 instance
 aws ec2 run-instances     --image-id ami-0c55b159cbfafe1f0     --instance-type t3.micro     --key-name my-key     --security-group-ids sg-123     --subnet-id subnet-456
 
@@ -113,6 +127,7 @@ aws ec2 attach-volume --volume-id vol-123 --instance-id i-456 --device /dev/sdf
 S3 (Simple Storage Service) provides scalable object storage.
 
 ```bash
+
 ## Create bucket
 aws s3 mb s3://my-unique-bucket-name
 
@@ -184,6 +199,7 @@ IAM (Identity and Access Management) controls access to AWS resources.
 ```text
 
 ```bash
+
 ## Create IAM user
 aws iam create-user --user-name developer
 aws iam create-access-key --user-name developer
@@ -207,6 +223,7 @@ aws iam attach-role-policy     --role-name ec2-s3-access     --policy-arn arn:aw
 VPC (Virtual Private Cloud) provides isolated networking in AWS.
 
 ```bash
+
 ## Create VPC
 aws ec2 create-vpc --cidr-block 10.0.0.0/16
 
@@ -255,6 +272,7 @@ flowchart TD
 ELB distributes incoming traffic across multiple targets.
 
 ```bash
+
 ## Create Application Load Balancer
 aws elbv2 create-load-balancer     --name my-alb     --subnets subnet-abc subnet-def     --security-groups sg-123
 
@@ -284,6 +302,7 @@ aws elbv2 create-listener     --load-balancer-arn arn:aws:elasticloadbalancing:.
 Auto Scaling automatically adjusts EC2 capacity based on demand.
 
 ```bash
+
 ## Create launch template
 aws ec2 create-launch-template     --launch-template-name web-template     --version-description v1     --launch-template-data file://template-data.json
 
@@ -317,6 +336,7 @@ aws autoscaling put-scaling-policy     --auto-scaling-group-name web-asg     --p
 | Dedicated Host | None | Full instance cost |
 
 ```bash
+
 ## Cost Explorer (CLI)
 aws ce get-cost-and-usage     --time-period Start=2024-01-01,End=2024-01-31     --granularity MONTHLY     --metrics BlendedCost
 

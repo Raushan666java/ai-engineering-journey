@@ -45,13 +45,15 @@ def example():
     return result
 
 example()
-```
+```text
 
+
+## Overview
 ### Expected Output
 
 ```text
 Hello, strings and formatting!
-```
+```text
 
 ## Chapter at a Glance
 

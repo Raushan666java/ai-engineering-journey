@@ -65,13 +65,13 @@ def example():
     return result
 
 example()
-```
+```text
 
 ### Expected Output
 
 ```text
 Hello, linux commands!
-```
+```text
 
 ## Basic listing
 ls

@@ -68,13 +68,13 @@ def example():
     return result
 
 example()
-```
+```text
 
 ### Expected Output
 
 ```text
 Hello, bash scripting!
-```
+```text
 
 ## Simple alias
 alias ll='ls -la'

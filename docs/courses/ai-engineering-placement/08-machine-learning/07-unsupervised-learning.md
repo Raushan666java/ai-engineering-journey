@@ -45,13 +45,15 @@ def example():
     return result
 
 example()
-```
+```text
 
+
+## Overview
 ### Expected Output
 
 ```text
 Hello, unsupervised learning!
-```
+```text
 
 ## Visual Explanation
 
@@ -61,7 +63,7 @@ flowchart TD
     B --> C[Output]
     C --> D[Feedback Loop]
     D --> B
-```
+```text
 
 ## Visual Analogy
 

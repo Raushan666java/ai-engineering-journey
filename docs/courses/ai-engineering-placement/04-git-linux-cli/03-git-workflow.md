@@ -68,13 +68,13 @@ def example():
     return result
 
 example()
-```
+```text
 
 ### Expected Output
 
 ```text
 Hello, git workflow!
-```
+```text
 
 ## Stash all modified tracked files
 git stash

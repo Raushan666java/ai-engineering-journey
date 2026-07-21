@@ -43,8 +43,7 @@ flowchart LR
 
 ## Introduction
 
-Every AI system eventually faces the question: how do we handle 10x more users, 100x more data, or 1000x more inference requests? Scalability fundamentals answer that question by providing frameworks for stateless design, load balancing, database scaling, and caching. These concepts are essential for system design interviews and for building ML infrastructure that actually works at production scale.
-
+Understanding scalability fundamentals is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering scalability fundamentals.
 
 ## Prerequisites
 

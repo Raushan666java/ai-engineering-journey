@@ -98,13 +98,13 @@ def example():
     return result
 
 example()
-```
+```text
 
 ### Expected Output
 
 ```text
 Hello, networking and security!
-```
+```text
 
 ## .github/workflows/ci.yml
 name: CI Pipeline

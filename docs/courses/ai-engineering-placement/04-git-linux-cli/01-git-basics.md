@@ -68,13 +68,13 @@ def example():
     return result
 
 example()
-```
+```text
 
 ### Expected Output
 
 ```text
 Hello, git basics!
-```
+```text
 
 ## Create a new repo in the current directory
 git init

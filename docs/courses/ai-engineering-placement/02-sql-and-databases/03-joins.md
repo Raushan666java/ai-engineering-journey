@@ -46,13 +46,13 @@ def example():
     return result
 
 example()
-```
+```text
 
 ### Expected Output
 
 ```text
 Hello, joins!
-```
+```text
 
 ## Chapter at a Glance
 

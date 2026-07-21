@@ -543,7 +543,7 @@ flowchart TD
     B --> C[Output]
     C --> D[Feedback Loop]
     D --> B
-```
+```text
 
 ## Visual Analogy
 
@@ -655,7 +655,7 @@ false_positive_rate = 1 - specificity  # 5%
 posterior = bayes_theorem(prior_disease, sensitivity, 
                           sensitivity * prior_disease + false_positive_rate * (1 - prior_disease))
 print(f"P(Disease | Positive test) = {posterior:.4f}")  # ~0.167
-```
+```text
 
 ### MLE for Gaussian
 
@@ -674,7 +674,7 @@ data = np.random.normal(loc=5, scale=2, size=1000)
 mu_hat, sigma_hat = mle_gaussian(data)
 print(f"True mu: 5.0, MLE mu: {mu_hat:.4f}")
 print(f"True sigma: 2.0, MLE sigma: {sigma_hat:.4f}")
-```
+```text
 
 ### KL Divergence
 
@@ -695,7 +695,7 @@ x = np.linspace(-5, 5, 1000)
 p = np.exp(-x**2 / 2) / np.sqrt(2 * np.pi)  # N(0,1)
 q = np.exp(-(x-1)**2 / 2) / np.sqrt(2 * np.pi)  # N(1,1)
 print(f"KL(N(0,1) || N(1,1)) = {kl_divergence(p, q):.4f}")
-```
+```text
 
 ### PCA from Scratch
 
@@ -731,7 +731,7 @@ X = np.random.randn(100, 3)
 X_2d, comps, var = pca(X, k=2)
 print(f"Explained variance: {var}")
 print(f"Shape: {X.shape} -> {X_2d.shape}")
-```
+```text
 
 ## Exercises
 

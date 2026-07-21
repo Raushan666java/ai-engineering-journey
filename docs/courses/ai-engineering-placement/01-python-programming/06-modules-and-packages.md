@@ -46,13 +46,13 @@ def example():
     return result
 
 example()
-```
+```text
 
 ### Expected Output
 
 ```text
 Hello, modules and packages!
-```
+```text
 
 ## Chapter at a Glance
 

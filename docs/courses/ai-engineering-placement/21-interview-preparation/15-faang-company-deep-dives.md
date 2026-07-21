@@ -513,7 +513,7 @@ flowchart TD
     B --> C[Output]
     C --> D[Feedback Loop]
     D --> B
-```
+```text
 
 ## Visual Analogy
 

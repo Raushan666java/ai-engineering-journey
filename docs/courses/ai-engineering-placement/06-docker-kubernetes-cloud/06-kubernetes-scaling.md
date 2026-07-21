@@ -45,13 +45,15 @@ def example():
     return result
 
 example()
-```
+```text
 
+
+## Overview
 ### Expected Output
 
 ```text
 Hello, kubernetes scaling!
-```
+```text
 
 ## Chapter at a Glance
 

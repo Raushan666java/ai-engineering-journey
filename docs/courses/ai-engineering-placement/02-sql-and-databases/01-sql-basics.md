@@ -46,13 +46,13 @@ def example():
     return result
 
 example()
-```
+```text
 
 ### Expected Output
 
 ```text
 Hello, sql basics!
-```
+```text
 
 ## Chapter at a Glance
 

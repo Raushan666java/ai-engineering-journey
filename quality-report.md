@@ -1,6 +1,6 @@
 # Quality Report — Iteration 0
 
-Generated: 2026-07-21T08:20:23.172Z
+Generated: 2026-07-21T08:24:47.898Z
 
 ## Summary
 
@@ -17,8 +17,8 @@ Generated: 2026-07-21T08:20:23.172Z
 
 | Score Range | Count | Percentage |
 |-------------|-------|------------|
-| 10/10 | 187 | 85.4% |
-| 9-9.9/10 | 32 | 14.6% |
+| 10/10 | 182 | 83.1% |
+| 9-9.9/10 | 37 | 16.9% |
 | 8-8.9/10 | 0 | 0.0% |
 | 7-7.9/10 | 0 | 0.0% |
 | <7/10 | 0 | 0.0% |
@@ -29,6 +29,7 @@ Generated: 2026-07-21T08:20:23.172Z
 |----------|---------------|------------|
 | Interview Questions with Answers | 18 | 8.2% |
 | No Placeholder Text | 12 | 5.5% |
+| Blank Lines Before Headings | 5 | 2.3% |
 | Introduction Section | 1 | 0.5% |
 | Prerequisites Section | 1 | 0.5% |
 

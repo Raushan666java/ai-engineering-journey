@@ -37,7 +37,9 @@ flowchart LR
     G --> H[OpenAPI Docs]
 ```
 
-## 1.1 REST Constraints
+## Theory
+
+### 1.1 REST Constraints
 
 REST (Representational State Transfer) defines six architectural constraints that guide API design.
 
@@ -52,6 +54,9 @@ REST (Representational State Transfer) defines six architectural constraints tha
 **Layered System**: Architecture can have multiple layers (gateway, load balancer, API, database). Each layer only knows about the immediate layer.
 
 **Code on Demand** (optional): Servers can extend client functionality by transferring executable code.
+
+
+## Examples
 
 ```python
 # Stateless request example — all context in the request
@@ -68,7 +73,7 @@ response = requests.get(
 # Server does not need to remember previous interactions
 ```
 
-## 1.2 HTTP Methods and Status Codes
+### 1.2 HTTP Methods and Status Codes
 
 Every REST API maps CRUD operations to HTTP methods.
 
@@ -122,7 +127,7 @@ def delete_user(user_id: int):
 
 **Best practices**: Always use the correct status code. Never return 200 for errors. Use 201 for resource creation. Use 204 for successful deletions. Use 422 for validation errors and 409 for conflicts.
 
-## 1.3 URL Design
+### 1.3 URL Design
 
 REST APIs use nouns (resources) not verbs (actions) in URLs.
 
@@ -165,7 +170,7 @@ POST   /api/v1/get_user_profile  # Snake_case + verb
 - Use query parameters for filtering, sorting
 - Nest resources for relationships (max 3 levels)
 
-## 1.4 Request/Response Formats
+### 1.4 Request/Response Formats
 
 JSON is the standard data format for REST APIs.
 
@@ -214,7 +219,7 @@ async def get_user(user_id: int, request: Request):
 | X-Request-ID | Both | Correlation ID for debugging |
 | RateLimit-Remaining | Response | API rate limit info |
 
-## 1.5 Pagination and Filtering
+### 1.5 Pagination and Filtering
 
 REST APIs must handle large collections efficiently.
 
@@ -300,7 +305,7 @@ def list_orders(
     return db.execute(query, params)
 ```
 
-## 1.6 Error Handling
+### 1.6 Error Handling
 
 Consistent error responses are crucial for API usability.
 
@@ -362,7 +367,7 @@ def get_user(user_id: int):
 }
 ```
 
-## 1.7 API Versioning
+### 1.7 API Versioning
 
 APIs evolve over time. Versioning prevents breaking changes for existing clients.
 
@@ -395,7 +400,7 @@ app.include_router(v2_router)
 
 **Deprecation strategy**: Support at least two versions simultaneously. Return `Sunset` and `Deprecation` headers on old versions with migration timeline.
 
-## 1.8 Documentation with OpenAPI
+### 1.8 Documentation with OpenAPI
 
 OpenAPI (formerly Swagger) is the industry standard for REST API documentation.
 

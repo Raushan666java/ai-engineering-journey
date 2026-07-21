@@ -1,4 +1,4 @@
-﻿# Time and Space Complexity
+# Time and Space Complexity
 
 ## Learning Objectives
 
@@ -9,14 +9,14 @@
 | LO3 | Derive space complexity including auxiliary and input space |
 | LO4 | Identify best, average, and worst-case scenarios for common algorithms |
 | LO5 | Apply asymptotic analysis to compare algorithm efficiency |
-| LO6 | Recognize common complexity classes: O(1), O(log n), O(n), O(n log n), O(n²), O(2ⁿ) |
+| LO6 | Recognize common complexity classes: O(1), O(log n), O(n), O(n log n), O(n�), O(2n) |
 
 ## Chapter at a Glance
 
 | Section | Topic | Key Concept |
 |---------|-------|-------------|
-| 1.1 | Asymptotic Notations | Big-O, Big-Ω, Big-Θ definitions |
-| 1.2 | Complexity Classes | O(1), O(log n), O(n), O(n log n), O(n²), O(2ⁿ) |
+| 1.1 | Asymptotic Notations | Big-O, Big-O, Big-T definitions |
+| 1.2 | Complexity Classes | O(1), O(log n), O(n), O(n log n), O(n�), O(2n) |
 | 1.3 | Analyzing Iterative Algorithms | Loop analysis, nested loops |
 | 1.4 | Analyzing Recursive Algorithms | Recurrence relations, Master theorem |
 | 1.5 | Space Complexity | Stack space, heap space, auxiliary space |
@@ -35,15 +35,20 @@ flowchart LR
     F --> G[Practice Problems]
 ```
 
-## 1.1 Asymptotic Notations
+## Theory
+
+### 1.1 Asymptotic Notations
 
 Asymptotic notations describe the limiting behavior of a function as the input size approaches infinity. They provide a mathematical framework for comparing algorithm efficiency independent of hardware and implementation details.
 
-**Big-O (O)** — Upper bound: `f(n) = O(g(n))` if there exist positive constants `c` and `n₀` such that `0 ≤ f(n) ≤ c·g(n)` for all `n ≥ n₀`. This describes the worst-case scenario.
+**Big-O (O)** � Upper bound: `f(n) = O(g(n))` if there exist positive constants `c` and `n0` such that `0 = f(n) = c�g(n)` for all `n = n0`. This describes the worst-case scenario.
 
-**Big-Omega (Ω)** — Lower bound: `f(n) = Ω(g(n))` if there exist positive constants `c` and `n₀` such that `0 ≤ c·g(n) ≤ f(n)` for all `n ≥ n₀`. This describes the best-case scenario.
+**Big-Omega (O)** � Lower bound: `f(n) = O(g(n))` if there exist positive constants `c` and `n0` such that `0 = c�g(n) = f(n)` for all `n = n0`. This describes the best-case scenario.
 
-**Big-Theta (Θ)** — Tight bound: `f(n) = Θ(g(n))` if there exist positive constants `c₁, c₂, n₀` such that `0 ≤ c₁·g(n) ≤ f(n) ≤ c₂·g(n)` for all `n ≥ n₀`. This describes the average-case scenario when both bounds match.
+**Big-Theta (T)** � Tight bound: `f(n) = T(g(n))` if there exist positive constants `c1, c2, n0` such that `0 = c1�g(n) = f(n) = c2�g(n)` for all `n = n0`. This describes the average-case scenario when both bounds match.
+
+
+## Examples
 
 ```python
 # Demonstrating growth rates
@@ -55,18 +60,18 @@ def measure_time(func, n):
     func(n)
     return time.perf_counter() - start
 
-# O(1) — Constant
+# O(1) � Constant
 def constant(n):
     return n * (n + 1) // 2
 
-# O(n) — Linear
+# O(n) � Linear
 def linear(n):
     total = 0
     for i in range(n):
         total += i
     return total
 
-# O(n²) — Quadratic
+# O(n�) � Quadratic
 def quadratic(n):
     total = 0
     for i in range(n):
@@ -80,20 +85,20 @@ for n in [10, 100, 1000]:
 ```
 
 **Growth rate hierarchy** (slowest to fastest):
-- O(1) — Constant
-- O(log n) — Logarithmic
-- O(n) — Linear
-- O(n log n) — Linearithmic
-- O(n²) — Quadratic
-- O(n³) — Cubic
-- O(2ⁿ) — Exponential
-- O(n!) — Factorial
+- O(1) � Constant
+- O(log n) � Logarithmic
+- O(n) � Linear
+- O(n log n) � Linearithmic
+- O(n�) � Quadratic
+- O(n�) � Cubic
+- O(2n) � Exponential
+- O(n!) � Factorial
 
 ---
 
-## 1.2 Complexity Classes
+### 1.2 Complexity Classes
 
-**O(1) — Constant Time**: Execution time does not depend on input size. Array access by index, hash table lookup, arithmetic operations.
+**O(1) � Constant Time**: Execution time does not depend on input size. Array access by index, hash table lookup, arithmetic operations.
 
 ```python
 def get_first_element(arr):
@@ -104,7 +109,7 @@ def swap(a, b):
     return b, a
 ```
 
-**O(log n) — Logarithmic Time**: Input size halves each step. Binary search, balanced BST operations.
+**O(log n) � Logarithmic Time**: Input size halves each step. Binary search, balanced BST operations.
 
 ```python
 def binary_search(arr, target):
@@ -120,7 +125,7 @@ def binary_search(arr, target):
     return -1
 ```
 
-**O(n) — Linear Time**: Single pass through data. Linear search, array sum, finding max/min.
+**O(n) � Linear Time**: Single pass through data. Linear search, array sum, finding max/min.
 
 ```python
 def linear_search(arr, target):
@@ -130,7 +135,7 @@ def linear_search(arr, target):
     return -1
 ```
 
-**O(n log n) — Linearithmic Time**: Efficient sorting algorithms. Merge sort, heap sort, divide-and-conquer.
+**O(n log n) � Linearithmic Time**: Efficient sorting algorithms. Merge sort, heap sort, divide-and-conquer.
 
 ```python
 def merge_sort(arr):
@@ -156,7 +161,7 @@ def merge(left, right):
     return result
 ```
 
-**O(n²) — Quadratic Time**: Nested iterations over data. Bubble sort, insertion sort, naive matrix multiplication.
+**O(n�) � Quadratic Time**: Nested iterations over data. Bubble sort, insertion sort, naive matrix multiplication.
 
 ```python
 def bubble_sort(arr):
@@ -168,7 +173,7 @@ def bubble_sort(arr):
     return arr
 ```
 
-**O(2ⁿ) — Exponential Time**: Recursive without memoization. Naive Fibonacci, subset generation.
+**O(2n) � Exponential Time**: Recursive without memoization. Naive Fibonacci, subset generation.
 
 ```python
 def fibonacci_naive(n):
@@ -183,12 +188,12 @@ def fibonacci_naive(n):
 | O(log n) | ~3 | ~7 | ~10 |
 | O(n) | 10 | 100 | 1000 |
 | O(n log n) | ~33 | ~664 | ~9966 |
-| O(n²) | 100 | 10000 | 10⁶ |
-| O(2ⁿ) | 1024 | ~10³⁰ | ~10³⁰¹ |
+| O(n�) | 100 | 10000 | 106 |
+| O(2n) | 1024 | ~10�� | ~10��� |
 
 ---
 
-## 1.3 Analyzing Iterative Algorithms
+### 1.3 Analyzing Iterative Algorithms
 
 **Single loop**: Multiply iterations by constant work inside.
 
@@ -208,7 +213,7 @@ def nested_sum(arr):
     for i in range(len(arr)):       # n iterations
         for j in range(len(arr)):   # n iterations per outer
             total += arr[i] + arr[j]  # O(1)
-    return total  # Total: O(n²)
+    return total  # Total: O(n�)
 ```
 
 **Dependent nested loops**: Summation formula.
@@ -219,7 +224,7 @@ def triangular_sum(arr):
     for i in range(len(arr)):       # n iterations
         for j in range(i, len(arr)): # n-i iterations
             total += arr[j]         # O(1)
-    return total  # n + (n-1) + ... + 1 = n(n+1)/2 = O(n²)
+    return total  # n + (n-1) + ... + 1 = n(n+1)/2 = O(n�)
 ```
 
 **Loop with constant stride**: Only the number of iterations matters.
@@ -230,7 +235,7 @@ def halving_loop(n):
     count = 0
     while i > 0:
         count += 1
-        i //= 2          # halves each step → O(log n)
+        i //= 2          # halves each step ? O(log n)
     return count
 ```
 
@@ -242,7 +247,7 @@ def varying_increment(n):
     count = 0
     while i < n:
         count += 1
-        i *= 2           # doubles each step → O(log n)
+        i *= 2           # doubles each step ? O(log n)
     return count
 ```
 
@@ -258,7 +263,7 @@ flowchart TD
 
 ---
 
-## 1.4 Analyzing Recursive Algorithms
+### 1.4 Analyzing Recursive Algorithms
 
 Recursive algorithms are analyzed using recurrence relations. A recurrence expresses the total work in terms of work done on smaller inputs.
 
@@ -279,12 +284,12 @@ def binary_search_recursive(arr, target, left, right):
 
 **Recurrence for merge sort**: `T(n) = 2T(n/2) + O(n)`
 
-**Recurrence for naive Fibonacci**: `T(n) = T(n-1) + T(n-2) + O(1) = O(2ⁿ)`
+**Recurrence for naive Fibonacci**: `T(n) = T(n-1) + T(n-2) + O(1) = O(2n)`
 
 **Master Theorem**: For recurrences of form `T(n) = aT(n/b) + f(n)`:
-- If `f(n) = O(n^{log_b(a) - ε})`, then `T(n) = Θ(n^{log_b(a)})`
-- If `f(n) = Θ(n^{log_b(a)})`, then `T(n) = Θ(n^{log_b(a)} log n)`
-- If `f(n) = Ω(n^{log_b(a) + ε})` and `a·f(n/b) ≤ c·f(n)` for some `c < 1`, then `T(n) = Θ(f(n))`
+- If `f(n) = O(n^{log_b(a) - e})`, then `T(n) = T(n^{log_b(a)})`
+- If `f(n) = T(n^{log_b(a)})`, then `T(n) = T(n^{log_b(a)} log n)`
+- If `f(n) = O(n^{log_b(a) + e})` and `a�f(n/b) = c�f(n)` for some `c < 1`, then `T(n) = T(f(n))`
 
 ```python
 # Count recursive calls to understand complexity
@@ -297,9 +302,9 @@ def count_calls_fib(n):
         return n
     return count_calls_fib(n - 1) + count_calls_fib(n - 2)
 
-# n=10 → 177 calls
-# n=20 → 21891 calls
-# n=30 → 2692537 calls
+# n=10 ? 177 calls
+# n=20 ? 21891 calls
+# n=30 ? 2692537 calls
 # Demonstrates exponential growth
 ```
 
@@ -308,17 +313,17 @@ def count_calls_fib(n):
 | Binary Search | T(n) = T(n/2) + O(1) | O(log n) |
 | Merge Sort | T(n) = 2T(n/2) + O(n) | O(n log n) |
 | Quick Sort (avg) | T(n) = T(k) + T(n-k-1) + O(n) | O(n log n) |
-| Fibonacci (naive) | T(n) = T(n-1) + T(n-2) + O(1) | O(2ⁿ) |
+| Fibonacci (naive) | T(n) = T(n-1) + T(n-2) + O(1) | O(2n) |
 | Fibonacci (memoized) | T(n) = T(n-1) + O(1) | O(n) |
 
 ---
 
-## 1.5 Space Complexity
+### 1.5 Space Complexity
 
 Space complexity measures total memory used by an algorithm: input space + auxiliary space + stack space.
 
 ```python
-# O(1) space — constant extra memory
+# O(1) space � constant extra memory
 def sum_const_space(arr):
     total = 0           # single variable
     for x in arr:
@@ -327,7 +332,7 @@ def sum_const_space(arr):
 ```
 
 ```python
-# O(n) space — creating new array of size n
+# O(n) space � creating new array of size n
 def double_array(arr):
     result = [0] * len(arr)   # O(n) space
     for i, val in enumerate(arr):
@@ -336,16 +341,16 @@ def double_array(arr):
 ```
 
 ```python
-# O(n) stack space — recursion depth
+# O(n) stack space � recursion depth
 def factorial_recursive(n):
     if n <= 1:
         return 1
     return n * factorial_recursive(n - 1)
-# Call stack grows to n frames → O(n) stack space
+# Call stack grows to n frames ? O(n) stack space
 ```
 
 ```python
-# O(n²) space — 2D matrix
+# O(n�) space � 2D matrix
 def create_matrix(n):
     matrix = [[0] * n for _ in range(n)]   # n * n elements
     return matrix
@@ -357,7 +362,7 @@ def create_matrix(n):
 - Stack space: memory used by recursive call frames
 
 ```python
-# In-place algorithm — O(1) auxiliary space
+# In-place algorithm � O(1) auxiliary space
 def reverse_array_in_place(arr):
     left, right = 0, len(arr) - 1
     while left < right:
@@ -366,14 +371,14 @@ def reverse_array_in_place(arr):
         right -= 1
     # No extra array created
 
-# Out-of-place — O(n) auxiliary space
+# Out-of-place � O(n) auxiliary space
 def reverse_array_copy(arr):
     return arr[::-1]   # Creates new array
 ```
 
 ---
 
-## 1.6 Amortized Analysis
+### 1.6 Amortized Analysis
 
 Amortized analysis averages the cost of expensive operations over a sequence. A single operation may be costly, but the average per operation is bounded.
 
@@ -456,7 +461,7 @@ flowchart TD
     subgraph "Amortized Analysis Methods"
         A[Aggregate] -->|"Sum all costs / n"| D[Average Cost]
         B[Accounting] -->|"Assign different charges"| D
-        C[Potential] -->|"Use potential function Φ"| D
+        C[Potential] -->|"Use potential function F"| D
     end
 ```
 
@@ -491,9 +496,9 @@ function mergeSort<T>(arr: T[]): T[] {
 
 ## Summary
 
-- Big-O provides an upper bound on algorithm growth rate; Big-Ω provides a lower bound; Big-Θ provides a tight bound
-- Common complexity classes ranked: O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2ⁿ) < O(n!)
-- Single loops typically yield O(n); nested loops yield O(n²) or higher depending on depth
+- Big-O provides an upper bound on algorithm growth rate; Big-O provides a lower bound; Big-T provides a tight bound
+- Common complexity classes ranked: O(1) < O(log n) < O(n) < O(n log n) < O(n�) < O(2n) < O(n!)
+- Single loops typically yield O(n); nested loops yield O(n�) or higher depending on depth
 - Recursive algorithms are analyzed via recurrence relations and the Master Theorem
 - Space complexity includes auxiliary space (extra memory) and stack space (recursion depth)
 - In-place algorithms use O(1) auxiliary space; algorithms creating copies use O(n) or more
@@ -521,20 +526,20 @@ function mergeSort<T>(arr: T[]): T[] {
     Q1: Explain the difference between Big-O, Big-Omega, and Big-Theta with examples.
   </summary>
   <div class="tp-qa-answer">
-    <p><strong>Big-O (O)</strong> — Upper bound: Algorithm will not perform worse than this. Example: Linear search is O(n) because in worst case we check all n elements.</p>
-    <p><strong>Big-Omega (Ω)</strong> — Lower bound: Algorithm will not perform better than this. Example: Linear search is Ω(1) because the target could be the first element.</p>
-    <p><strong>Big-Theta (Θ)</strong> — Tight bound: When upper and lower bounds match. Example: Merge sort is Θ(n log n) because both best and worst cases are n log n.</p>
+    <p><strong>Big-O (O)</strong> � Upper bound: Algorithm will not perform worse than this. Example: Linear search is O(n) because in worst case we check all n elements.</p>
+    <p><strong>Big-Omega (O)</strong> � Lower bound: Algorithm will not perform better than this. Example: Linear search is O(1) because the target could be the first element.</p>
+    <p><strong>Big-Theta (T)</strong> � Tight bound: When upper and lower bounds match. Example: Merge sort is T(n log n) because both best and worst cases are n log n.</p>
     <pre><code># Linear search example
 def linear_search(arr, target):
     for i, val in enumerate(arr):
         if val == target:
-            return i       # Ω(1) — best case
-    return -1               # O(n) — worst case
-# No Θ bound because best ≠ worst</code></pre>
+            return i       # O(1) � best case
+    return -1               # O(n) � worst case
+# No T bound because best ? worst</code></pre>
     <p><strong>Interview insight</strong>: Use Big-O for worst-case guarantees; use Big-Theta only when best and worst cases match.</p>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa01-q2">
@@ -546,24 +551,24 @@ def linear_search(arr, target):
     <p>Recursive algorithms are analyzed using <strong>recurrence relations</strong>. Steps:</p>
     <ol>
       <li>Identify the base case complexity</li>
-      <li>Identify the recursive case — how many subproblems (a), of what size (n/b)</li>
+      <li>Identify the recursive case � how many subproblems (a), of what size (n/b)</li>
       <li>Identify the cost of combining results (f(n))</li>
       <li>Form recurrence: T(n) = aT(n/b) + f(n)</li>
       <li>Apply Master Theorem or solve via recurrence tree</li>
     </ol>
     <pre><code># Fibonacci recurrence: T(n) = T(n-1) + T(n-2) + O(1)
-# This gives O(2ⁿ) — exponential
+# This gives O(2n) � exponential
 
 # Binary search recurrence: T(n) = T(n/2) + O(1)
 # Using Master Theorem: a=1, b=2, f(n)=O(1)
-# log_b(a) = 0, f(n) = Θ(n⁰) → T(n) = Θ(log n)
+# log_b(a) = 0, f(n) = T(n�) ? T(n) = T(log n)
 
 # Merge sort recurrence: T(n) = 2T(n/2) + O(n)
 # Using Master Theorem: a=2, b=2, f(n)=O(n)
-# log_b(a) = 1, f(n) = Θ(n¹) → T(n) = Θ(n log n)</code></pre>
+# log_b(a) = 1, f(n) = T(n�) ? T(n) = T(n log n)</code></pre>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa01-q3">
@@ -579,7 +584,7 @@ def linear_search(arr, target):
       <li>You can trade time for space (streaming algorithms, in-place operations)</li>
       <li>Different environments have different constraints (embedded systems care more about space)</li>
     </ul>
-    <p><strong>Example trade-off</strong>: Fibonacci with memoization uses O(n) space but O(n) time vs naive O(2ⁿ) time with O(n) stack space.</p>
+    <p><strong>Example trade-off</strong>: Fibonacci with memoization uses O(n) space but O(n) time vs naive O(2n) time with O(n) stack space.</p>
     <pre><code>def fib_memo(n, memo={}):
     if n in memo:
         return memo[n]
@@ -589,8 +594,8 @@ def linear_search(arr, target):
     return memo[n]
 # Time: O(n), Space: O(n)</code></pre>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa01-q4">
@@ -601,26 +606,26 @@ def linear_search(arr, target):
   <div class="tp-qa-answer">
     <p>The Master Theorem solves recurrences of the form <strong>T(n) = aT(n/b) + f(n)</strong> where:</p>
     <ul>
-      <li>a ≥ 1 — number of subproblems</li>
-      <li>b > 1 — factor by which input size shrinks</li>
-      <li>f(n) — cost of dividing and combining</li>
+      <li>a = 1 � number of subproblems</li>
+      <li>b > 1 � factor by which input size shrinks</li>
+      <li>f(n) � cost of dividing and combining</li>
     </ul>
     <p><strong>Three cases</strong>:</p>
     <ol>
-      <li>If f(n) = O(n^{log_b(a) - ε}) then T(n) = Θ(n^{log_b(a)})</li>
-      <li>If f(n) = Θ(n^{log_b(a)} log^k n) then T(n) = Θ(n^{log_b(a)} log^{k+1} n)</li>
-      <li>If f(n) = Ω(n^{log_b(a) + ε}) and af(n/b) ≤ cf(n) then T(n) = Θ(f(n))</li>
+      <li>If f(n) = O(n^{log_b(a) - e}) then T(n) = T(n^{log_b(a)})</li>
+      <li>If f(n) = T(n^{log_b(a)} log^k n) then T(n) = T(n^{log_b(a)} log^{k+1} n)</li>
+      <li>If f(n) = O(n^{log_b(a) + e}) and af(n/b) = cf(n) then T(n) = T(f(n))</li>
     </ol>
     <p><strong>Examples</strong>:</p>
     <ul>
-      <li>Binary search: a=1, b=2, f(n)=1 → T(n) = Θ(log n)</li>
-      <li>Merge sort: a=2, b=2, f(n)=n → T(n) = Θ(n log n)</li>
-      <li>Strassen's matrix: a=7, b=2, f(n)=n² → T(n) = Θ(n^{log₂7})</li>
+      <li>Binary search: a=1, b=2, f(n)=1 ? T(n) = T(log n)</li>
+      <li>Merge sort: a=2, b=2, f(n)=n ? T(n) = T(n log n)</li>
+      <li>Strassen's matrix: a=7, b=2, f(n)=n� ? T(n) = T(n^{log27})</li>
     </ul>
     <p>The theorem does NOT apply when f(n) is not a polynomial, or does not satisfy regularity condition.</p>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa01-q5">
@@ -632,20 +637,20 @@ def linear_search(arr, target):
     <p>Amortized analysis computes the average cost of an operation over a sequence, even if individual operations are expensive. It gives a realistic bound for data structures where occasional expensive operations are balanced by many cheap ones.</p>
     <p><strong>Classic example</strong>: Dynamic array (Python list) append.</p>
     <ul>
-      <li>Most appends: O(1) — just place element</li>
-      <li>Occasional append: O(n) — resize and copy all elements</li>
-      <li>Over n appends: O(n) total → O(1) amortized per append</li>
+      <li>Most appends: O(1) � just place element</li>
+      <li>Occasional append: O(n) � resize and copy all elements</li>
+      <li>Over n appends: O(n) total ? O(1) amortized per append</li>
     </ul>
     <p><strong>Three methods</strong>:</p>
     <ol>
       <li><strong>Aggregate</strong>: Sum total cost / n</li>
       <li><strong>Accounting</strong>: Overcharge cheap ops, use credits for expensive ones</li>
-      <li><strong>Potential</strong>: Use potential function — high potential before expensive op</li>
+      <li><strong>Potential</strong>: Use potential function � high potential before expensive op</li>
     </ol>
     <p><strong>Other examples</strong>: Splay tree operations, union-find with path compression, binary counter increment.</p>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa01-q6">
@@ -686,8 +691,8 @@ def power(x, n):
     return x * power(x * x, n // 2)</code></pre>
     <p><strong>Key insight</strong>: If the problem is halved (or reduced by factor b) at each step, and each step is O(1), the total is O(log_b n) = O(log n).</p>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa01-q7">
@@ -707,8 +712,8 @@ def power(x, n):
     </table>
     <p><strong>Key insight</strong>: Understanding these complexities is essential for choosing the right data structure. Hash tables give fastest search but no ordering; BSTs give ordered data with logarithmic ops.</p>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa01-q8">
@@ -717,22 +722,22 @@ def power(x, n):
     Q8: What does it mean for an algorithm to be "in-place"? Give examples.
   </summary>
   <div class="tp-qa-answer">
-    <p>An in-place algorithm uses <strong>O(1) auxiliary space</strong> — it modifies the input data structure directly rather than creating a copy. It may still use O(log n) stack space for recursion.</p>
+    <p>An in-place algorithm uses <strong>O(1) auxiliary space</strong> � it modifies the input data structure directly rather than creating a copy. It may still use O(log n) stack space for recursion.</p>
     <p><strong>In-place examples</strong>:</p>
     <ul>
-      <li>Bubble sort — swaps adjacent elements</li>
-      <li>Insertion sort — shifts elements in the array</li>
-      <li>Quick sort (recursive) — partitions in place</li>
-      <li>Heap sort — builds heap in the array</li>
+      <li>Bubble sort � swaps adjacent elements</li>
+      <li>Insertion sort � shifts elements in the array</li>
+      <li>Quick sort (recursive) � partitions in place</li>
+      <li>Heap sort � builds heap in the array</li>
       <li>Array reversal with two pointers</li>
     </ul>
     <p><strong>Not in-place examples</strong>:</p>
     <ul>
-      <li>Merge sort — needs O(n) auxiliary array</li>
-      <li>Counting sort — needs extra count arrays</li>
+      <li>Merge sort � needs O(n) auxiliary array</li>
+      <li>Counting sort � needs extra count arrays</li>
       <li>Most functional algorithms that create new data structures</li>
     </ul>
-    <pre><code># In-place — O(1) auxiliary space
+    <pre><code># In-place � O(1) auxiliary space
 def reverse_array(arr):
     i, j = 0, len(arr) - 1
     while i < j:
@@ -740,12 +745,12 @@ def reverse_array(arr):
         i += 1
         j -= 1
 
-# Not in-place — O(n) auxiliary space
+# Not in-place � O(n) auxiliary space
 def reverse_array_copy(arr):
     return arr[::-1]  # Creates new list</code></pre>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa01-q9">
@@ -758,18 +763,18 @@ def reverse_array_copy(arr):
     <p><strong>Average case</strong>: Expected time over all possible inputs of size n. Requires knowing input distribution.</p>
     <p><strong>Worst case</strong>: Maximum time required for any input of size n. Most commonly used because it provides a guarantee.</p>
     <pre><code># Quick sort complexity
-# Best: O(n log n) — pivot always median
-# Average: O(n log n) — random pivot
-# Worst: O(n²) — pivot always min/max (sorted input, bad pivot selection)
+# Best: O(n log n) � pivot always median
+# Average: O(n log n) � random pivot
+# Worst: O(n�) � pivot always min/max (sorted input, bad pivot selection)
 
 # Linear search complexity
-# Best: Ω(1) — target is first element
-# Average: Θ(n) — target is somewhere in middle
-# Worst: O(n) — target is last or not present</code></pre>
-    <p><strong>Interview insight</strong>: When comparing algorithms, always compare worst-case guarantees. Quick sort's O(n²) worst case can be mitigated with random pivot selection.</p>
+# Best: O(1) � target is first element
+# Average: T(n) � target is somewhere in middle
+# Worst: O(n) � target is last or not present</code></pre>
+    <p><strong>Interview insight</strong>: When comparing algorithms, always compare worst-case guarantees. Quick sort's O(n�) worst case can be mitigated with random pivot selection.</p>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa01-q10">
@@ -780,8 +785,8 @@ def reverse_array_copy(arr):
   <div class="tp-qa-answer">
     <p>Big-O comparison is asymptotic but practical considerations include:</p>
     <ol>
-      <li><strong>Constant factors</strong>: An O(n²) algorithm with small constant can beat O(n log n) for small n</li>
-      <li><strong>Input size</strong>: For n < 100, O(n²) may be faster than O(n log n) due to overhead</li>
+      <li><strong>Constant factors</strong>: An O(n�) algorithm with small constant can beat O(n log n) for small n</li>
+      <li><strong>Input size</strong>: For n < 100, O(n�) may be faster than O(n log n) due to overhead</li>
       <li><strong>Memory constraints</strong>: An O(n) space algorithm may be unusable with limited memory</li>
       <li><strong>Cache behavior</strong>: Sequential access patterns (arrays) are faster than random access (linked lists)</li>
       <li><strong>Implementation complexity</strong>: Simple algorithms are easier to maintain and debug</li>
@@ -793,7 +798,7 @@ def compare_sorting(n=1000):
     data1 = [random.randint(0, 10000) for _ in range(n)]
     data2 = data1.copy()
 
-    # O(n²) insertion sort vs O(n log n) Timsort
+    # O(n�) insertion sort vs O(n log n) Timsort
     # For small n, insertion sort may be competitive
     start = time.perf_counter()
     insertion_sort(data1)
@@ -805,8 +810,8 @@ def compare_sorting(n=1000):
 
     print(f"Insertion sort: {t1:.4f}s, Timsort: {t2:.4f}s")</code></pre>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa01-q11">
@@ -818,11 +823,11 @@ def compare_sorting(n=1000):
     <p>log n appears when an algorithm <strong>reduces the problem size by a constant factor</strong> at each step. It represents the number of times you can divide n by a constant before reaching 1.</p>
     <p><strong>Why log n matters</strong>:</p>
     <ul>
-      <li>log₂ 1,000,000 ≈ 20 — very efficient even for huge inputs</li>
-      <li>log₂ 1,000,000,000 ≈ 30 — barely grows with input size</li>
+      <li>log2 1,000,000 � 20 � very efficient even for huge inputs</li>
+      <li>log2 1,000,000,000 � 30 � barely grows with input size</li>
       <li>It represents the depth of balanced trees, binary search iterations, divide-and-conquer recursion depth</li>
     </ul>
-    <pre><code># Number of times you can divide n by 2 before reaching ≤ 1
+    <pre><code># Number of times you can divide n by 2 before reaching = 1
 def log_n_steps(n):
     steps = 0
     while n > 1:
@@ -834,41 +839,41 @@ print(log_n_steps(1000000))  # 20
 print(log_n_steps(10**12))   # 40</code></pre>
     <p><strong>Base of log doesn't matter</strong> for Big-O because log_a n = log_b n / log_b a, a constant factor.</p>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 <details class="tp-qa-card" data-qid="dsa01-q12">
   <summary class="tp-qa-question">
     <span class="tp-qa-status"></span>
-    Q12: Explain why `2ⁿ` is considered intractable while `n²⁰⁰` is polynomial.
+    Q12: Explain why `2n` is considered intractable while `n���` is polynomial.
   </summary>
   <div class="tp-qa-answer">
-    <p>For exponential growth (2ⁿ), each increment of n <strong>doubles</strong> the work. For polynomial growth (n^k), each increment of n adds a fraction proportional to the previous work.</p>
+    <p>For exponential growth (2n), each increment of n <strong>doubles</strong> the work. For polynomial growth (n^k), each increment of n adds a fraction proportional to the previous work.</p>
     <p><strong>Comparison at n=1000</strong>:</p>
     <ul>
-      <li>n² = 1,000,000 operations — feasible</li>
-      <li>n²⁰⁰ = 1000²⁰⁰ operations — astronomical but still polynomial</li>
-      <li>2ⁿ = 2¹⁰⁰⁰ operations — more than atoms in the universe</li>
+      <li>n� = 1,000,000 operations � feasible</li>
+      <li>n��� = 1000��� operations � astronomical but still polynomial</li>
+      <li>2n = 2���� operations � more than atoms in the universe</li>
     </ul>
     <p>The key distinction is <strong>how complexity scales</strong>:</p>
     <ul>
       <li>Polynomial: doubling n multiplies work by constant factor</li>
       <li>Exponential: adding 1 to n multiplies work by constant factor</li>
     </ul>
-    <p>This is why P ≠ NP matters — exponential algorithms are effectively unsolvable for any significant n.</p>
-    <pre><code># Polynomial: n² — doubling n quadruples work
+    <p>This is why P ? NP matters � exponential algorithms are effectively unsolvable for any significant n.</p>
+    <pre><code># Polynomial: n� � doubling n quadruples work
 # n=100: 10000 ops
 # n=200: 40000 ops (4x)
 
-# Exponential: 2ⁿ — adding 1 doubles work
+# Exponential: 2n � adding 1 doubles work
 # n=10: 1024 ops
 # n=11: 2048 ops (2x)
 # n=20: 1,048,576 ops
 # n=30: 1,073,741,824 ops</code></pre>
   </div>
-  <button class="tp-qa-mark-btn">✅ Mark Reviewed</button>
-  <button class="tp-qa-bookmark-btn">🔖 Bookmark</button>
+  <button class="tp-qa-mark-btn">? Mark Reviewed</button>
+  <button class="tp-qa-bookmark-btn">?? Bookmark</button>
 </details>
 
 ## Chapter Quiz
@@ -878,9 +883,9 @@ print(log_n_steps(10**12))   # 40</code></pre>
 a) O(1)
 b) O(n)
 c) O(log n)
-d) O(n²)
+d) O(n�)
 
-<details class="tp-qa-card" data-qid="dsa01-quiz1"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: a) O(1)</strong></p><p>Array access by index is always O(1) — direct memory addressing.</p></div></details>
+<details class="tp-qa-card" data-qid="dsa01-quiz1"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: a) O(1)</strong></p><p>Array access by index is always O(1) � direct memory addressing.</p></div></details>
 
 **Q2**: What is the recurrence relation for merge sort?
 
@@ -891,20 +896,20 @@ d) T(n) = T(n/2) + O(n)
 
 <details class="tp-qa-card" data-qid="dsa01-quiz2"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: b) T(n) = 2T(n/2) + O(n)</strong></p><p>Merge sort divides into two equal halves (2T(n/2)) and merges in O(n) time.</p></div></details>
 
-**Q3**: Which of these is NOT O(n²)?
+**Q3**: Which of these is NOT O(n�)?
 
 a) Nested loops where both go to n
-b) Matrix multiplication of n—n matrices
+b) Matrix multiplication of n�n matrices
 c) Binary search on sorted array
 d) Bubble sort
 
-<details class="tp-qa-card" data-qid="dsa01-quiz3"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: c) Binary search on sorted array</strong></p><p>Binary search is O(log n), not O(n²).</p></div></details>
+<details class="tp-qa-card" data-qid="dsa01-quiz3"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: c) Binary search on sorted array</strong></p><p>Binary search is O(log n), not O(n�).</p></div></details>
 
 **Q4**: What is the space complexity of an in-place algorithm?
 
 a) O(1) auxiliary space
 b) O(n) auxiliary space
-c) O(n²) auxiliary space
+c) O(n�) auxiliary space
 d) O(log n) auxiliary space
 
 <details class="tp-qa-card" data-qid="dsa01-quiz4"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: a) O(1) auxiliary space</strong></p><p>In-place algorithms modify the input directly using only O(1) extra memory (discounting recursion stack).</p></div></details>
@@ -914,22 +919,22 @@ d) O(log n) auxiliary space
 a) O(1)
 b) O(n)
 c) O(log n)
-d) O(n²)
+d) O(n�)
 
 <details class="tp-qa-card" data-qid="dsa01-quiz5"><summary>Show Answer</summary><div class="tp-qa-answer"><p><strong>Answer: a) O(1)</strong></p><p>While individual appends may be O(n) during resize, the amortized cost across n appends is O(1).</p></div></details>
 
 ## Exercises
 
-**Easy** — Write a function that takes a list of integers and returns its time complexity analysis (best, worst, average) for finding the maximum element.
+**Easy** � Write a function that takes a list of integers and returns its time complexity analysis (best, worst, average) for finding the maximum element.
 
-**Medium** — Implement a function to find the kth smallest element in an unsorted array using quickselect. Analyze its time complexity.
+**Medium** � Implement a function to find the kth smallest element in an unsorted array using quickselect. Analyze its time complexity.
 
-**Medium** — Write recurrence relations for the following functions and solve them using the Master Theorem: (a) T(n) = 3T(n/3) + n, (b) T(n) = 4T(n/2) + n², (c) T(n) = 2T(n/2) + √n.
+**Medium** � Write recurrence relations for the following functions and solve them using the Master Theorem: (a) T(n) = 3T(n/3) + n, (b) T(n) = 4T(n/2) + n�, (c) T(n) = 2T(n/2) + vn.
 
-**Hard** — Implement a custom data structure that supports O(1) amortized append and O(1) pop from either end (deque). Prove the amortized bounds using the accounting method.
+**Hard** � Implement a custom data structure that supports O(1) amortized append and O(1) pop from either end (deque). Prove the amortized bounds using the accounting method.
 
-**Hard** — Given an array of n integers, find the majority element (appears more than n/2 times) in O(n) time and O(1) space using Boyer-Moore voting algorithm. Explain why the algorithm works.
+**Hard** � Given an array of n integers, find the majority element (appears more than n/2 times) in O(n) time and O(1) space using Boyer-Moore voting algorithm. Explain why the algorithm works.
 
 ---
 
-> **Next**: [02 — Arrays →](02-arrays.md)
+> **Next**: [02 � Arrays ?](02-arrays.md)

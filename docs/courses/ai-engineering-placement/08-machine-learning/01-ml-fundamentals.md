@@ -35,9 +35,16 @@ flowchart LR
     G -->|No| H[Tune Hyperparameters]
     H --> D
     G -->|Yes| I[Deploy]
-## 1.1 ML Paradigms
+```
+
+## Theory
+
+### 1.1 ML Paradigms
 
 **Supervised learning**: Model learns from labeled data (input-output pairs). Used for classification and regression.
+
+
+## Examples
 
 ```typescript
 // Data point: features + label
@@ -60,7 +67,7 @@ interface SupervisedModel {
 
 ---
 
-## 1.2 Bias-Variance Trade-off
+### 1.2 Bias-Variance Trade-off
 
 **Bias**: Error from overly simplistic model assumptions. High bias = underfitting.
 **Variance**: Error from model sensitivity to training data fluctuations. High variance = overfitting.
@@ -106,7 +113,7 @@ function analyzeBiasVariance(
 
 ---
 
-## 1.3 Data Preprocessing
+### 1.3 Data Preprocessing
 
 Essential preprocessing steps before training any ML model.
 
@@ -184,7 +191,7 @@ class DataPreprocessor {
 
 ---
 
-## 1.4 Train/Test Split
+### 1.4 Train/Test Split
 
 Splitting data into training and testing sets prevents overfitting and gives an unbiased estimate of model performance.
 
@@ -286,7 +293,7 @@ class TrainTestSplitter {
 
 ---
 
-## 1.5 Evaluation Metrics
+### 1.5 Evaluation Metrics
 
 ```typescript
 interface ClassificationMetrics {

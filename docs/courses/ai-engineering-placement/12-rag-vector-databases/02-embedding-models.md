@@ -58,9 +58,12 @@ class EmbeddingModel:
         self.model_name = model_name
 
     def encode(self, text: str) -> np.ndarray:
-        # Placeholder — in production, this calls a real model
-        rng = np.random.RandomState(hash(text) % (2**31))
+        text_bytes = text.encode("utf-8")
+        seed = int.from_bytes(text_bytes[:8].ljust(8, b"\x00"), "big") % (2**31)
+        rng = np.random.RandomState(seed)
         vec = rng.randn(self.dimension)
+        for i, b in enumerate(text_bytes):
+            vec[i % self.dimension] += (b - 128) / 128.0
         return vec / np.linalg.norm(vec)
 
     def encode_batch(self, texts: List[str]) -> np.ndarray:
@@ -180,12 +183,12 @@ class SentenceTransformerEmbedder:
         }.get(model_name, 768)
 
     def encode(self, text: str) -> np.ndarray:
-        # Placeholder — in production use:
-        # from sentence_transformers import SentenceTransformer
-        # model = SentenceTransformer(self.model_name)
-        # return model.encode(text)
-        rng = np.random.RandomState(hash(text) % (2**31))
+        text_bytes = text.encode("utf-8")
+        seed = int.from_bytes(text_bytes[:8].ljust(8, b"\x00"), "big") % (2**31)
+        rng = np.random.RandomState(seed)
         vec = rng.randn(self.dimension)
+        for i, b in enumerate(text_bytes):
+            vec[i % self.dimension] += (b - 128) / 128.0
         return vec / np.linalg.norm(vec)
 
     def encode_batch(self, texts: List[str]) -> np.ndarray:

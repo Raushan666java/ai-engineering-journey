@@ -38,9 +38,14 @@ flowchart LR
     H --> I[Docker Compose]
 ```
 
-## 1.1 Containers vs Virtual Machines
+## Theory
+
+### 1.1 Containers vs Virtual Machines
 
 Containers provide OS-level virtualization by sharing the host kernel, while VMs use a hypervisor to run full guest operating systems. This fundamental difference makes containers lighter, faster, and more resource-efficient.
+
+
+## Examples
 
 ```bash
 # Check Docker version
@@ -83,7 +88,7 @@ flowchart LR
     end
 ```
 
-## 1.2 Docker Architecture
+### 1.2 Docker Architecture
 
 Docker follows a client-server architecture with three main components:
 
@@ -120,7 +125,7 @@ flowchart TD
 
 Images are read-only templates. Containers are runnable instances of images. Each container gets its own filesystem, network stack, and process tree.
 
-## 1.3 Working with Docker Images
+### 1.3 Working with Docker Images
 
 Images consist of read-only layers stacked on top of each other. Each RUN, COPY, or ADD instruction adds a new layer. Layers are cached and reused across builds.
 
@@ -164,7 +169,7 @@ docker save -o my-image.tar my-image:tag
 docker load -i my-image.tar
 ```
 
-## 1.4 Dockerfiles
+### 1.4 Dockerfiles
 
 A Dockerfile is a text file with instructions for building an image.
 
@@ -222,7 +227,7 @@ docker build -t my-app:v1 .
 docker build --build-arg VERSION=2.0 -t my-app:v2 .
 ```
 
-## 1.5 Container Lifecycle
+### 1.5 Container Lifecycle
 
 ```bash
 # Run a container
@@ -278,7 +283,7 @@ stateDiagram-v2
     Exited --> [*]: docker rm
 ```
 
-## 1.6 Docker Networking
+### 1.6 Docker Networking
 
 Docker provides several network drivers for different isolation levels.
 
@@ -316,7 +321,7 @@ docker run -d -p 8080:80 -p 443:443 nginx
 # HOST:CONTAINER
 ```
 
-## 1.7 Volumes and Bind Mounts
+### 1.7 Volumes and Bind Mounts
 
 Data persistence in Docker is managed through volumes and bind mounts.
 
@@ -364,7 +369,7 @@ docker run -d \
     my-image
 ```
 
-## 1.8 Docker Compose Basics
+### 1.8 Docker Compose Basics
 
 Docker Compose defines multi-container applications in a YAML file.
 

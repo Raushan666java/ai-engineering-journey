@@ -34,7 +34,9 @@ flowchart LR
     F --> G[Interview Prep]
 ```
 
-## 01.1 Section 1
+## Theory
+
+### 01.1 Section 1
 
 Section 1 of Git Basics covers essential concepts for AI engineering placement preparation.
 
@@ -49,13 +51,16 @@ The foundation of git basics rests on several key principles that every software
 - Concept 3: Relationship to other topics
 - Concept 4: Common applications
 
-## 01.2 Section 2
+### 01.2 Section 2
 
 Section 2 of Git Basics covers essential concepts for AI engineering placement preparation.
 
 ### Basic Operations
 
 The following code demonstrates fundamental operations:
+
+
+## Examples
 
 ```bash
 # Git Basics - basic operations
@@ -75,7 +80,7 @@ test_data = [1, 2, 3, 4, 5]
 print(example_function(test_data))
 ```
 
-## 01.3 Section 3
+### 01.3 Section 3
 
 Section 3 of Git Basics covers essential concepts for AI engineering placement preparation.
 
@@ -96,7 +101,7 @@ As problems become more complex, we need sophisticated approaches:
 | Optimized Git Basics | O(log n) | O(n) | With preprocessing |
 | Advanced Git Basics | O(n log n) | O(n) | Trade-off scenario |
 
-## 01.4 Section 4
+### 01.4 Section 4
 
 Section 4 of Git Basics covers essential concepts for AI engineering placement preparation.
 
@@ -118,7 +123,7 @@ flowchart TD
 - **Technique 3**: Description of the third advanced technique and when to apply it
 - **Technique 4**: Description of the fourth advanced technique and when to apply it
 
-## 01.5 Section 5
+### 01.5 Section 5
 
 Section 5 of Git Basics covers essential concepts for AI engineering placement preparation.
 
@@ -139,7 +144,7 @@ Git Basics is widely used in production systems:
 | Best Practice 2 | Detailed explanation | Code quality |
 | Best Practice 3 | Detailed explanation | Maintainability |
 
-## 01.6 Section 6
+### 01.6 Section 6
 
 Section 6 of Git Basics covers essential concepts for AI engineering placement preparation.
 

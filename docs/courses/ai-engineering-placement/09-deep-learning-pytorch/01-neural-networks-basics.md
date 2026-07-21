@@ -39,9 +39,14 @@ flowchart LR
     I -->|Yes| J[Trained Model]
 ```
 
-## 1.1 Perceptron
+## Theory
+
+### 1.1 Perceptron
 
 The perceptron is the simplest neural network: a linear classifier that maps inputs to binary outputs.
+
+
+## Examples
 
 ```python
 import numpy as np
@@ -90,7 +95,7 @@ print("Perceptron cannot learn XOR (linear separability limitation)")
 
 ---
 
-## 1.2 Activation Functions
+### 1.2 Activation Functions
 
 Activation functions introduce non-linearity, enabling neural networks to learn complex patterns.
 
@@ -165,7 +170,7 @@ print(f"LeakyReLU: {nn.LeakyReLU(0.01)(x_t)}")
 
 ---
 
-## 1.3 Multi-Layer Perceptron
+### 1.3 Multi-Layer Perceptron
 
 An MLP has one or more hidden layers between input and output. The universal approximation theorem states that a single hidden layer with enough neurons can approximate any continuous function.
 
@@ -271,7 +276,7 @@ for epoch in range(500):
 
 ---
 
-## 1.4 Backpropagation
+### 1.4 Backpropagation
 
 Backpropagation computes gradients of the loss with respect to all parameters using the chain rule.
 
@@ -328,7 +333,7 @@ print(f"dL/dx = {x.grad.item():.2f}")
 
 ---
 
-## 1.5 Weight Initialization
+### 1.5 Weight Initialization
 
 Good initialization prevents vanishing/exploding gradients and speeds convergence.
 
@@ -394,7 +399,7 @@ print(f"PyTorch init: mean={layer.weight.mean().item():.4f}, std={layer.weight.s
 
 ---
 
-## 1.6 Loss Functions
+### 1.6 Loss Functions
 
 ```python
 class LossFunctions:

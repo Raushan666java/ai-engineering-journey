@@ -339,15 +339,6 @@ function conv2dForward(input: number[][][], params: ConvParams, weights: number[
 
 <details class="tp-qa-card" data-qid="dl09-q10"><summary>Q10: How do you implement a ResNet-50 in PyTorch?</summary><div class="tp-qa-answer"><p>ResNet-50 uses Bottleneck blocks with [3,4,6,3] layers per stage. Each stage starts with stride=2 conv for downsampling (except first). The expansion=4 means output channels are 4x the input. A stem (7x7 conv + maxpool) processes the input. torchvision provides a ready implementation: resnet50(pretrained=True).</p></div><button class="tp-qa-mark-btn">Mark Reviewed</button><button class="tp-qa-bookmark-btn">Bookmark</button></details>
 
-## Practical Takeaways
-
-- Use ResNet with pre-activation blocks for stable gradient flow in very deep networks (>100 layers)
-- Depthwise separable convolutions reduce parameters by a factor of ~9 compared to standard conv with 3x3 kernels
-- Squeeze-and-excitation blocks provide significant gains at minimal computational cost (0.2-0.5% FLOPs increase)
-- EfficientNet's compound scaling is the most principled approach for balanced scaling
-- Modern ConvNeXt designs can match Transformer performance on vision tasks
-- Inception modules capture multi-scale features in a single layer
-
 ## Chapter Quiz
 
 **Q1**: Which architecture introduced skip connections?

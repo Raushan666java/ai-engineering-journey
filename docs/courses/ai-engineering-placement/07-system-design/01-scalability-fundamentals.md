@@ -37,11 +37,16 @@ flowchart LR
     G --> H[Capacity Planning]
 ```
 
-## 1.1 Vertical vs Horizontal Scaling
+## Theory
+
+### 1.1 Vertical vs Horizontal Scaling
 
 **Vertical scaling (scale up)**: Add more power to a single machine — more CPU, RAM, faster disks. Simple but has a hard limit (max server specs) and creates a single point of failure.
 
 **Horizontal scaling (scale out)**: Add more machines to distribute the load. Virtually unlimited, provides fault tolerance, but requires stateless application design and introduces complexity.
+
+
+## Examples
 
 ```mermaid
 flowchart LR
@@ -65,7 +70,7 @@ flowchart LR
 | Complexity | Low | High |
 | Max capacity | Server limit | Unlimited |
 
-## 1.2 Stateless Design
+### 1.2 Stateless Design
 
 For horizontal scaling, applications must be stateless — any instance can handle any request.
 
@@ -86,7 +91,7 @@ redis.set(f"session:{session_id}", user_info)  # external store
 - Job processing -> Message queue
 - Database -> Managed service
 
-## 1.3 Load Balancing
+### 1.3 Load Balancing
 
 Distributes incoming traffic across multiple servers.
 
@@ -116,7 +121,7 @@ class LoadBalancer:
 
 **Types**: Hardware (F5), Software (HAProxy, Nginx), Cloud (ALB, GCP LB).
 
-## 1.4 Database Scaling
+### 1.4 Database Scaling
 
 **Read replicas**: Primary handles writes; replicas handle reads. Improves read throughput.
 
@@ -143,7 +148,7 @@ class DatabaseRouter:
 | Hash-based | Hash of shard key | Even distribution | Re-sharding hard |
 | Directory-based | Lookup table | Flexible | Single point |
 
-## 1.5 Caching Fundamentals
+### 1.5 Caching Fundamentals
 
 **Cache types**:
 
@@ -174,7 +179,7 @@ def get_user(user_id):
     return user
 ```
 
-## 1.6 Asynchronous Processing
+### 1.6 Asynchronous Processing
 
 Decouple request handling from heavy processing using queues.
 
@@ -203,7 +208,7 @@ def process_tasks():
 
 **Benefits**: Improved responsiveness, decoupled components, burst handling, graceful degradation.
 
-## 1.7 Performance Metrics
+### 1.7 Performance Metrics
 
 | Metric | Description | Good Target |
 |--------|-------------|-------------|
@@ -218,7 +223,7 @@ def process_tasks():
 - SLO: Target value for SLI
 - SLA: Contractual agreement with consequences
 
-## 1.8 Capacity Planning
+### 1.8 Capacity Planning
 
 **Steps**:
 1. Estimate current traffic (RPS, bandwidth)

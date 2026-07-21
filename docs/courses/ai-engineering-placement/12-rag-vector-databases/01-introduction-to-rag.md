@@ -34,7 +34,9 @@ flowchart LR
     G --> H[Evaluation]
 ```
 
-## 1.1 LLM Limitations
+## Theory
+
+### 1.1 LLM Limitations
 
 Large language models have inherent limitations that RAG addresses.
 
@@ -45,6 +47,9 @@ Large language models have inherent limitations that RAG addresses.
 **Private Data**: LLMs have no access to private enterprise data, user-specific information, or proprietary documents without explicit inclusion in the context window.
 
 **Staleness**: Even if retrained periodically, LLMs cannot reflect real-time changes (stock prices, inventory, news).
+
+
+## Examples
 
 ```python
 from dataclasses import dataclass
@@ -90,7 +95,7 @@ for lim in limitations:
     print(f"{lim.name} ({lim.severity}): {lim.rag_mitigation}")
 ```
 
-## 1.2 RAG Paradigm
+### 1.2 RAG Paradigm
 
 Retrieval-Augmented Generation (RAG) enhances LLM outputs by retrieving relevant information from an external knowledge base before generating a response.
 
@@ -153,7 +158,7 @@ result = rag_pipeline("What is RAG?", mock_retriever, mock_augmenter, mock_gener
 print(json.dumps(result, indent=2))
 ```
 
-## 1.3 Core Components
+### 1.3 Core Components
 
 ### 1.3.1 Retriever
 
@@ -312,7 +317,7 @@ gen = MockGenerator()
 print(gen.generate("mock prompt"))
 ```
 
-## 1.4 RAG vs Alternatives
+### 1.4 RAG vs Alternatives
 
 | Aspect | RAG | Fine-Tuning | Prompt Engineering |
 |--------|-----|-------------|-------------------|
@@ -366,7 +371,7 @@ reqs = {"freshness": "critical", "latency_sensitive": False}
 print(f"Recommended: {comparator.recommend(reqs)}")
 ```
 
-## 1.5 Basic RAG Pipeline
+### 1.5 Basic RAG Pipeline
 
 Implementing a complete RAG pipeline from scratch.
 
@@ -489,7 +494,7 @@ answer = pipeline.answer("How does RAG work?", mock_llm)
 print(f"Answer: {answer}")
 ```
 
-## 1.6 Evaluation Dimensions
+### 1.6 Evaluation Dimensions
 
 RAG output quality requires specialized metrics beyond standard LLM evaluation.
 

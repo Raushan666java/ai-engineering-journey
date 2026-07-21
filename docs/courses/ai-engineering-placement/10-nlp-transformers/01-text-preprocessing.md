@@ -39,9 +39,14 @@ flowchart LR
     J --> K[Feature Matrix for Downstream Tasks]
 ```
 
-## 1.1 Word Tokenization
+## Theory
+
+### 1.1 Word Tokenization
 
 Tokenization splits text into atomic units called tokens. Word tokenization is the simplest form: tokens correspond to words, punctuation, and numbers.
+
+
+## Examples
 
 ```typescript
 interface TokenizerResult {
@@ -116,7 +121,7 @@ class TreebankTokenizer {
 
 ---
 
-## 1.2 Subword Tokenization
+### 1.2 Subword Tokenization
 
 Subword tokenization bridges words and characters. Byte-Pair Encoding (BPE) iteratively merges the most frequent character pairs. WordPiece (used in BERT) merges based on likelihood gain. Unigram (used in XLNet) starts from a large vocabulary and prunes. SentencePiece treats the input as a raw byte stream without pre-tokenization.
 
@@ -198,7 +203,7 @@ SentencePiece extends BPE by treating the input as a raw Unicode byte sequence, 
 
 ---
 
-## 1.3 Stemming & Lemmatization
+### 1.3 Stemming & Lemmatization
 
 Stemming crudely chops affixes; lemmatization uses vocabulary and morphology to return the dictionary base form.
 
@@ -268,7 +273,7 @@ Lemmatizing requires part-of-speech tags: "meeting" as a noun should remain "mee
 
 ---
 
-## 1.4 Stop Words & Normalization
+### 1.4 Stop Words & Normalization
 
 Stop words are high-frequency tokens that carry little semantic weight (e.g., "the", "a", "is", "and"). Normalization includes lowercasing, removing punctuation, expanding contractions, and Unicode NFKC normalization.
 
@@ -316,7 +321,7 @@ class TextNormalizer {
 
 ---
 
-## 1.5 Vocabulary Building
+### 1.5 Vocabulary Building
 
 A vocabulary maps tokens to integer IDs. Strategies include frequency-based maximum size, minimum frequency thresholds, and special token slots.
 
@@ -383,7 +388,7 @@ Handling OOV tokens: fallback strategies include character-level decomposition, 
 
 ---
 
-## 1.6 TF-IDF
+### 1.6 TF-IDF
 
 Term Frequency-Inverse Document Frequency (TF-IDF) weights terms by their importance in a document relative to the corpus. TF = count of term in document / total terms in document. IDF = log(N / df) where N is total documents and df is document frequency.
 

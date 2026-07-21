@@ -12,7 +12,7 @@ A modern CPU pipeline has 5+ stages: Fetch, Decode, Execute, Memory, Writeback. 
 
 Structural hazards occur when two instructions need the same hardware unit. Data hazards (read-after-write) require forwarding or stalling. Control hazards from branches are the most expensive — the pipeline must flush on misprediction.
 
-`mermaid
+```mermaid
 graph LR
     F["Fetch"] --> D["Decode"]
     D --> E["Execute"]
@@ -24,7 +24,7 @@ graph LR
     style E fill:#color3
     style M fill:#color4
     style W fill:#color5
-`
+```
 
 ### Branch Prediction
 
@@ -42,7 +42,7 @@ Cache associativity: n-way set associative means each memory address maps to one
 
 Cache coherence (MESI protocol): Modified, Exclusive, Shared, Invalid states ensure all cores see a consistent view of memory.
 
-`mermaid
+```mermaid
 graph TB
     CPU0["Core 0"]
     L1_0["L1 32KB"]
@@ -57,7 +57,7 @@ graph TB
     L2_0 --> L3
     L2_1 --> L3
     L3 --> RAM
-`
+```
 
 ### NUMA
 

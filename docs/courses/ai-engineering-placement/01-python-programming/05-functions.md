@@ -24,7 +24,7 @@
 
 ## Chapter Roadmap
 
-`mermaid
+```mermaid
 flowchart LR
     A[Function Definition] --> B[Parameters]
     B --> C[Positional]
@@ -36,7 +36,7 @@ flowchart LR
     H --> I[map/filter/sorted]
     A --> J[Recursion]
     A --> K[Decorators]
-`
+```
 
 ## 5.1 Function Basics
 

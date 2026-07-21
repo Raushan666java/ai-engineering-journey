@@ -8,7 +8,7 @@ After this chapter you will be able to explain the difference between processes 
 
 ### Process vs Thread
 
-A process is an independent execution unit with its own address space, file descriptors, and system state. A thread is a lighter unit within a process â€” threads share the address space but have their own stack and registers.
+A process is an independent execution unit with its own address space, file descriptors, and system state. A thread is a lighter unit within a process — threads share the address space but have their own stack and registers.
 
 Context switching between processes is expensive (TLB flush, page table switch). Thread context switches are cheaper because the virtual memory mapping stays the same. For AI workloads: use processes for isolation between training jobs, threads for parallelism within a single inference server.
 
@@ -43,7 +43,7 @@ For ML training, CPU pinning (taskset) prevents the scheduler from migrating thr
 
 Virtual memory provides each process with a contiguous address space mapped to physical memory through page tables. The Translation Lookaside Buffer (TLB) caches recent translations. A TLB miss walks the page table in hardware or software.
 
-Page faults occur when a virtual page isn't in physical memory. Major faults require disk I/O (swap). Minor faults happen for first access to a shared page. Huge pages (2MB or 1GB) reduce TLB pressure â€” critical for large model weights.
+Page faults occur when a virtual page isn't in physical memory. Major faults require disk I/O (swap). Minor faults happen for first access to a shared page. Huge pages (2MB or 1GB) reduce TLB pressure — critical for large model weights.
 
 The OOM killer terminates processes when memory is exhausted. Configurable with oom_score_adj.
 
@@ -55,7 +55,7 @@ sequenceDiagram
     participant RAM
     participant Disk
     CPU->>TLB: Translate VA
-    TLB-->>CPU: TLB Hit â†’ PA
+    TLB-->>CPU: TLB Hit → PA
     CPU->>TLB: Translate VA
     TLB-->>CPU: TLB Miss
     CPU->>PageTable: Walk Page Table
@@ -65,7 +65,7 @@ sequenceDiagram
     TLB-->>CPU: TLB Miss
     CPU->>PageTable: Walk Page Table
     PageTable-->>CPU: Page Not Present
-    CPU->>Disk: Page Fault â†’ Swap In
+    CPU->>Disk: Page Fault → Swap In
     Disk-->>RAM: Load Page
     CPU->>RAM: Access PA
 ```
@@ -76,14 +76,14 @@ sequenceDiagram
 - **ext4**: journaling, extent-based allocation, good general-purpose choice
 - **XFS**: scalable to large files, parallel allocations, better for concurrent I/O
 - **Page cache**: kernel caches file data in unused RAM. Reads hit page cache first. Write-back flushes asynchronously
-- **Direct I/O**: bypasses page cache â€” useful when the application manages its own cache (databases)
+- **Direct I/O**: bypasses page cache — useful when the application manages its own cache (databases)
 - **mmap**: maps files into virtual memory, allowing load/store operations instead of read/write syscalls
 
 ### I/O Models
 
 - **Blocking I/O**: read/write block until complete. Simple but wastes CPU during waits
 - **Non-blocking I/O**: returns immediately with EAGAIN if data not ready. Requires polling
-- **I/O multiplexing**: select, poll, epoll â€” monitor multiple FDs, wake on ready events
+- **I/O multiplexing**: select, poll, epoll — monitor multiple FDs, wake on ready events
 - **AIO (io_uring)**: submission and completion queues, zero-copy, kernel-bypass for high-throughput
 
 For data loading in ML, io_uring with direct I/O gives the best throughput. PyTorch's DataLoader uses multiprocessing with shared memory.
@@ -121,7 +121,7 @@ Containers are not lightweight VMs. They use Linux namespaces for isolation and 
 ### Virtualization
 
 - **Type 1 hypervisor**: runs directly on hardware (KVM, Xen, Hyper-V). VMs have dedicated vCPUs, memory, devices
-- **Paravirtualization**: guest OS is modified to make hypercalls â€” better performance for I/O
+- **Paravirtualization**: guest OS is modified to make hypercalls — better performance for I/O
 - **Bare-metal**: no hypervisor, OS runs directly. Best for GPU workloads where PCIe passthrough adds no overhead
 
 
@@ -486,7 +486,7 @@ class MemoryProfiler {
 
 ## Summary
 
-Operating systems knowledge separates engineers who can diagnose production issues from those who guess. The key mental models are: processes provide isolation (use for training jobs), threads provide efficiency (use for inference servers); virtual memory hides physical layout but TLB misses and page faults are real costs; cgroups are how containers enforce limits â€” understand them before tuning Kubernetes requests and limits; I/O is the most common bottleneck in ML pipelines â€” io_uring and direct I/O give the best throughput.
+Operating systems knowledge separates engineers who can diagnose production issues from those who guess. The key mental models are: processes provide isolation (use for training jobs), threads provide efficiency (use for inference servers); virtual memory hides physical layout but TLB misses and page faults are real costs; cgroups are how containers enforce limits — understand them before tuning Kubernetes requests and limits; I/O is the most common bottleneck in ML pipelines — io_uring and direct I/O give the best throughput.
 
 ## Practical Takeaways
 

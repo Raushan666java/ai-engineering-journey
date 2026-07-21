@@ -28,7 +28,7 @@ Dependency Inversion: Depend on abstractions, not concretions. High-level orches
 
 Strategy Pattern: Define a family of algorithms, encapsulate each, and make them interchangeable. In AI this means swapping inference backends (OpenAI, Anthropic, local), vector stores (Pinecone, Chroma, Qdrant), or embedding models.
 
-`mermaid
+```mermaid
 classDiagram
     class InferenceStrategy {
         <<interface>>
@@ -52,7 +52,7 @@ classDiagram
     InferenceStrategy <|.. AnthropicStrategy
     InferenceStrategy <|.. LocalStrategy
     InferenceClient --> InferenceStrategy
-`
+```
 
 Observer Pattern: One-to-many dependency where changes in one object notify all dependents. Useful for ML pipeline monitoring — data loading progress, training metrics, log streaming.
 
@@ -62,7 +62,7 @@ Singleton Pattern: Ensures only one instance exists. Used for configuration, mod
 
 Decorator Pattern: Wraps an object to add behavior without changing its interface. Perfect for cross-cutting concerns in AI services: caching, rate limiting, logging, retry logic.
 
-`mermaid
+```mermaid
 classDiagram
     class LLMService {
         <<interface>>
@@ -83,6 +83,7 @@ classDiagram
     }
     class LoggingDecorator {
         -wrapped: LLMService
+        -cache: Map
         +generate(prompt): string
     }
     LLMService <|.. BasicLLMService
@@ -92,7 +93,7 @@ classDiagram
     CachingDecorator --> LLMService
     RateLimitDecorator --> LLMService
     LoggingDecorator --> LLMService
-`
+```
 
 Adapter Pattern: Converts one interface to another. Wrap OpenAI SDK, Anthropic SDK, and HuggingFace pipelines behind a common LLMProvider interface.
 

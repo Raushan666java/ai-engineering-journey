@@ -15,12 +15,12 @@ The OSI model has seven layers but AI engineers live in layers 3-7. Layer 3 (IP)
 ```mermaid
 graph TB
     subgraph "OSI Model"
-        L7["7 Application â€” HTTP/gRPC/WebSocket"]
-        L6["6 Presentation â€” TLS/SSL"]
+        L7["7 Application — HTTP/gRPC/WebSocket"]
+        L6["6 Presentation — TLS/SSL"]
         L5["5 Session"]
-        L4["4 Transport â€” TCP/UDP"]
-        L3["3 Network â€” IP"]
-        L2["2 Data Link â€” Ethernet"]
+        L4["4 Transport — TCP/UDP"]
+        L3["3 Network — IP"]
+        L2["2 Data Link — Ethernet"]
         L1["1 Physical"]
     end
     subgraph "TCP/IP Model"
@@ -40,25 +40,25 @@ graph TB
 
 ### TCP vs UDP
 
-TCP guarantees delivery with three-way handshake, sequence numbers, ACKs, and retransmission. This matters for reliable API calls. The cost is latency â€” each connection setup costs one RTT (round-trip time). Connection pooling and keep-alive mitigate this.
+TCP guarantees delivery with three-way handshake, sequence numbers, ACKs, and retransmission. This matters for reliable API calls. The cost is latency — each connection setup costs one RTT (round-trip time). Connection pooling and keep-alive mitigate this.
 
 UDP is fire-and-forget. Use it when speed matters more than reliability and you handle drops at the application layer. QUIC (HTTP/3) runs over UDP.
 
 ### HTTP/1.1 vs HTTP/2 vs HTTP/3
 
-HTTP/1.1 serializes requests per connection â€” head-of-line blocking means one slow response holds up others. HTTP/2 introduces multiplexing over a single TCP stream, but TCP head-of-line persists because a lost packet blocks all streams. HTTP/3 uses QUIC over UDP, eliminating TCP-level HOL blocking entirely.
+HTTP/1.1 serializes requests per connection — head-of-line blocking means one slow response holds up others. HTTP/2 introduces multiplexing over a single TCP stream, but TCP head-of-line persists because a lost packet blocks all streams. HTTP/3 uses QUIC over UDP, eliminating TCP-level HOL blocking entirely.
 
 For AI serving: prefer HTTP/2 for internal services and HTTP/3 for global inference where packet loss is higher.
 
 ### DNS Resolution
 
-DNS translates hostnames to IPs. Recursive resolution walks the hierarchy: root â†’ TLD â†’ authoritative. Each hop adds latency. Caching at every level (browser, OS, local resolver, CDN) is critical.
+DNS translates hostnames to IPs. Recursive resolution walks the hierarchy: root → TLD → authoritative. Each hop adds latency. Caching at every level (browser, OS, local resolver, CDN) is critical.
 
 For globally deployed models, DNS-based geographic routing directs users to the nearest inference endpoint. Time-to-live (TTL) trades freshness for cache efficiency.
 
 ### Load Balancing
 
-Algorithms range from simple to sophisticated. Round-robin works for uniform workloads. Least connections adapts to varying request durations. Consistent hashing minimizes cache misses when nodes change â€” critical for in-memory model caches.
+Algorithms range from simple to sophisticated. Round-robin works for uniform workloads. Least connections adapts to varying request durations. Consistent hashing minimizes cache misses when nodes change — critical for in-memory model caches.
 
 Health checks, connection draining, and sticky sessions complete the picture.
 
@@ -84,7 +84,7 @@ Content delivery networks cache static and dynamic content at edge locations. Fo
 
 ### WebSocket
 
-WebSocket provides full-duplex communication over a single TCP connection after an HTTP upgrade handshake. Essential for streaming inference â€” the server pushes tokens as they're generated rather than waiting for the complete response. No polling overhead.
+WebSocket provides full-duplex communication over a single TCP connection after an HTTP upgrade handshake. Essential for streaming inference — the server pushes tokens as they're generated rather than waiting for the complete response. No polling overhead.
 
 ### gRPC
 
@@ -117,7 +117,7 @@ TLS 1.3 completes in one round trip (1-RTT) vs TLS 1.2's 2-RTT. The handshake in
 
 For AI APIs, TLS termination at the load balancer reduces per-request latency. Session resumption (session tickets) eliminates the handshake entirely for returning clients.
 
-`mermaid
+```mermaid
 sequenceDiagram
     participant C as Client
     participant S as Server
@@ -127,7 +127,7 @@ sequenceDiagram
     C->>S: Finished
     S->>C: Finished
     Note over C,S: Encrypted Application Data
-`
+```
 
 ### HTTP Methods and RESTful Design
 
@@ -493,10 +493,10 @@ Computer networks form the backbone of every distributed AI system. The key ment
 - Measure before optimizing. A network profiling tool (tcpdump, Wireshark, mtr) reveals real latency sources
 - Connection pooling is the single highest-impact optimization for HTTP services
 - gRPC outperforms REST for ML serving by 5-10x at high concurrency
-- DNS TTLs affect deployment rollouts â€” short TTLs for canary, long TTLs for stable
+- DNS TTLs affect deployment rollouts — short TTLs for canary, long TTLs for stable
 - Consistent hashing in load balancers prevents cache stampedes during node changes
 - For streaming inference, WebSocket or gRPC streaming beats polling every time
-- TLS handshake adds 1-3 RTTs â€” terminate TLS at the load balancer, not the application
+- TLS handshake adds 1-3 RTTs — terminate TLS at the load balancer, not the application
 
 ## Chapter Quiz
 

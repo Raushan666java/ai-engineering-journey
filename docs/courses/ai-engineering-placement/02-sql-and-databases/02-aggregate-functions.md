@@ -24,7 +24,7 @@
 
 ## Chapter Roadmap
 
-`mermaid
+```mermaid
 flowchart LR
     A[Aggregate Functions] --> B[COUNT/SUM/AVG]
     A --> C[MIN/MAX]
@@ -32,7 +32,7 @@ flowchart LR
     D --> E[HAVING filter]
     F[DISTINCT] --> G[COUNT DISTINCT]
     H[NULL behavior] -.-> A
-`
+```
 
 ## 2.1 Basic Aggregates
 

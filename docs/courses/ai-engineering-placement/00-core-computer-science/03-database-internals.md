@@ -12,7 +12,7 @@ B-trees and LSM-trees are the two dominant storage engine families. B-trees orga
 
 LSM-trees buffer writes in memory (memtable), flush to immutable sorted SSTables, and merge them in background compaction. Writes are sequential and fast. Reads must check memtable and multiple SSTable levels, though bloom filters reduce unnecessary lookups.
 
-`mermaid
+```mermaid
 graph TB
     subgraph "B-tree"
         Root["Root Page [10, 20, 30]"]
@@ -30,7 +30,7 @@ graph TB
         M --> L0
         L0 --> L1
     end
-`
+```
 
 Cassandra and RocksDB use LSM-trees. PostgreSQL and MySQL InnoDB use B-trees. For vector databases, IVF (inverted file index) and HNSW (hierarchical navigable small world) are the dominant index structures.
 
@@ -76,7 +76,7 @@ Hash-based sharding distributes rows uniformly but makes range scans impossible.
 
 Paxos and Raft solve the consensus problem: getting multiple nodes to agree on a value despite failures.
 
-`mermaid
+```mermaid
 sequenceDiagram
     participant C as Client
     participant L as Leader
@@ -88,7 +88,7 @@ sequenceDiagram
     F1-->>L: ACK
     F2-->>L: ACK
     L->>C: Committed (majority)
-`
+```
 
 Raft's leader election: nodes start as followers, become candidates on timeout, request votes, become leader with majority. Log replication: leader appends entries, replicates to followers, commits when majority acknowledges.
 

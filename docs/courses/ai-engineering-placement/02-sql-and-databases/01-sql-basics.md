@@ -24,7 +24,7 @@
 
 ## Chapter Roadmap
 
-`mermaid
+```mermaid
 flowchart LR
     A[SELECT] --> B[FROM table]
     B --> C[WHERE conditions]
@@ -33,7 +33,7 @@ flowchart LR
     F[DML] --> G[INSERT]
     F --> H[UPDATE]
     F --> I[DELETE]
-`
+```
 
 ## 1.1 SELECT Queries
 

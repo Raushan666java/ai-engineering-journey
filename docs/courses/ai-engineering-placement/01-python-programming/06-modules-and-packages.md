@@ -24,7 +24,7 @@
 
 ## Chapter Roadmap
 
-`mermaid
+```mermaid
 flowchart LR
     A[Module] --> B[import / from-import]
     B --> C[__name__ guard]
@@ -32,7 +32,7 @@ flowchart LR
     F[Packaging] --> G[pip + requirements.txt]
     F --> H[Virtual Environments]
     I[Project Structure] --> J[src layout]
-`
+```
 
 ## 6.1 Modules
 

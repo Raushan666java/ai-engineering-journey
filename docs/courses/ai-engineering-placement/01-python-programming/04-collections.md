@@ -24,7 +24,7 @@
 
 ## Chapter Roadmap
 
-`mermaid
+```mermaid
 flowchart LR
     A[Collections Overview] --> B[List]
     A --> C[Tuple]
@@ -33,7 +33,7 @@ flowchart LR
     B --> F[Comprehensions]
     E --> G[Advanced: defaultdict, Counter]
     F --> H[Choosing the Right Collection]
-`
+```
 
 ## 4.1 Lists
 

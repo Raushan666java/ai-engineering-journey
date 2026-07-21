@@ -24,7 +24,7 @@
 
 ## Chapter Roadmap
 
-`mermaid
+```mermaid
 flowchart LR
     A[Pandas] --> B[Series]
     A --> C[DataFrame]
@@ -33,7 +33,7 @@ flowchart LR
     C --> F[Transform: apply/map]
     C --> G[GroupBy]
     C --> H[Merge/Join/Concat]
-`
+```
 
 ## 12.1 Series & DataFrame
 

@@ -24,7 +24,7 @@
 
 ## Chapter Roadmap
 
-`mermaid
+```mermaid
 flowchart LR
     A[Subqueries] --> B[Scalar: single value]
     A --> C[Row/Table: FROM clause]
@@ -33,7 +33,7 @@ flowchart LR
     F[CTEs] --> G[WITH ... AS]
     F --> H[Recursive CTEs]
     F --> I[Multiple CTEs]
-`
+```
 
 ## 4.1 Scalar Subqueries
 

@@ -24,7 +24,7 @@
 
 ## Chapter Roadmap
 
-`mermaid
+```mermaid
 flowchart LR
     A[NumPy Arrays] --> B[Creation]
     A --> C[Indexing/Masking]
@@ -33,7 +33,7 @@ flowchart LR
     D --> F[Universal Functions]
     G[Linear Algebra] --> H[dot, inv, eig, SVD]
     I[Random] --> J[distributions, seeding]
-`
+```
 
 ## 11.1 Array Creation
 

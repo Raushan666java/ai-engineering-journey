@@ -24,7 +24,7 @@
 
 ## Chapter Roadmap
 
-`mermaid
+```mermaid
 flowchart LR
     A[File Operations] --> B[open/modes]
     B --> C[with Context Manager]
@@ -33,7 +33,7 @@ flowchart LR
     E --> F[try/except/else/finally]
     E --> G[Custom Exceptions]
     H[pathlib] --> I[Path methods]
-`
+```
 
 ## 7.1 File Basics
 

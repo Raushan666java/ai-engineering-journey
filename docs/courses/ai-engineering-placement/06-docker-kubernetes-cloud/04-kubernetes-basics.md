@@ -26,7 +26,7 @@
 
 ## Chapter Roadmap
 
-`mermaid
+```mermaid
 flowchart LR
     A[K8s Architecture] --> B[Pods]
     B --> C[Services]
@@ -35,7 +35,7 @@ flowchart LR
     E --> F[Namespaces & Labels]
     F --> G[kubectl]
     G --> H[Storage]
-`
+```
 
 ## 4.1 Kubernetes Architecture
 
@@ -43,7 +43,7 @@ Kubernetes (K8s) is an open-source container orchestration platform that automat
 
 **Control Plane components**:
 
-`mermaid
+```mermaid
 flowchart TD
     subgraph CP[Control Plane]
         AS1[API Server]
@@ -63,7 +63,7 @@ flowchart TD
     AS1 --> N2
     N1 --> K1[kubelet]
     N2 --> K2[kubelet]
-`
+```
 
 | Component | Role |
 |-----------|------|

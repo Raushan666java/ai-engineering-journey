@@ -24,7 +24,7 @@
 
 ## Chapter Roadmap
 
-`mermaid
+```mermaid
 flowchart LR
     A[Joins] --> B[INNER JOIN]
     A --> C[LEFT JOIN]
@@ -34,7 +34,7 @@ flowchart LR
     A --> G[Self-Join]
     B --> H[Equi-join / Non-equi]
     C --> I[Anti-join pattern]
-`
+```
 
 ## 3.1 INNER JOIN
 

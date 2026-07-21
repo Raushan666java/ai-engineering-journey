@@ -24,7 +24,7 @@
 
 ## Chapter Roadmap
 
-`mermaid
+```mermaid
 flowchart LR
     A[Concurrency] --> B[Threading: I/O bound]
     A --> C[Multiprocessing: CPU bound]
@@ -34,7 +34,7 @@ flowchart LR
     D --> G[async/await event loop]
     H[GIL] -.-> B
     H -.-> D
-`
+```
 
 ## 10.1 Threading Basics
 

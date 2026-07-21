@@ -26,7 +26,7 @@
 
 ## Chapter Roadmap
 
-`mermaid
+```mermaid
 flowchart LR
     A[HPA] --> B[Cluster Autoscaler]
     B --> C[VPA]
@@ -35,7 +35,7 @@ flowchart LR
     E --> F[Upgrades]
     F --> G[Deploy Strategies]
     G --> H[Monitoring]
-`
+```
 
 ## 6.1 Horizontal Pod Autoscaler
 
@@ -137,7 +137,7 @@ spec:
 
 **How it works**:
 
-`mermaid
+```mermaid
 flowchart TD
     P[Pending Pods] --> CA[Cluster Autoscaler]
     CA --> ASG[Check ASG/Node Group]
@@ -146,7 +146,7 @@ flowchart TD
     NodeReady --> Schedule[Schedule Pods]
     Schedule --> Idle[Node Underutilized]
     Idle --> ScaleDown[Scale Down Node]
-`
+```
 
 **Cloud provider configuration**:
 

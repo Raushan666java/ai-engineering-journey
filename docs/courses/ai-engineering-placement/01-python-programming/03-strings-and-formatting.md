@@ -24,14 +24,14 @@
 
 ## Chapter Roadmap
 
-`mermaid
+```mermaid
 flowchart LR
     A[String Methods] --> B[Slicing]
     B --> C[Formatting: f-strings]
     C --> D[Regular Expressions]
     D --> E[Unicode & Encoding]
     E --> F[Performance + Best Practices]
-`
+```
 
 ## 3.1 String Methods
 

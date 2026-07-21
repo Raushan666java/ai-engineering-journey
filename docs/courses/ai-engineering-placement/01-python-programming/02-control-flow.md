@@ -24,7 +24,7 @@
 
 ## Chapter Roadmap
 
-`mermaid
+```mermaid
 flowchart LR
     A[Conditionals] --> B[if/elif/else]
     A --> C[Ternary Operator]
@@ -34,7 +34,7 @@ flowchart LR
     F --> G
     G --> H[Comprehensions]
     H --> I[Iteration Protocol]
-`
+```
 
 ## 2.1 Conditional Statements
 

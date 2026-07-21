@@ -24,7 +24,7 @@
 
 ## Chapter Roadmap
 
-`mermaid
+```mermaid
 flowchart LR
     A[Classes] --> B[__init__ + self]
     A --> C[Methods & Attributes]
@@ -34,7 +34,7 @@ flowchart LR
     G --> I[ABC]
     J[Dunder Methods] --> K[__str__, __eq__, ...]
     L[Dataclasses] --> M[Auto __init__, __repr__, __eq__]
-`
+```
 
 ## 8.1 Classes and Objects
 

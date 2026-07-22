@@ -54,7 +54,7 @@ function processFile(filePath) {
   // Add Fine-Tuning Notes (for non-fine-tuning modules)
   if (moduleNum !== '14') {
     content = addSectionIfMissing(content, 'Fine-Tuning Notes',
-      `## Fine-Tuning Notes\n\nWhen applying ${topic} concepts to specific use cases, consider:\n- Adapting general principles to your specific domain requirements\n- Performance optimization for your target hardware and deployment environment\n- Cost considerations for production deployment and scaling\n- Monitoring and observability in production systems`);
+      `## Fine-Tuning Notes\n\nWhen applying ${topic} concepts to specific use cases, consider:\n- Fine-tuning techniques like LoRA and Adapters for domain adaptation\n- Adapting general principles to your specific domain requirements\n- Performance optimization for your target hardware and deployment environment\n- Cost considerations for production deployment and scaling`);
   }
 
   // Add Open-Source Tools
@@ -84,7 +84,7 @@ function processFile(filePath) {
   // Add Prompt Engineering Notes (for LLM-related modules)
   if (['11', '12', '13', '22'].includes(moduleNum)) {
     content = addSectionIfMissing(content, 'Prompt Engineering Notes',
-      `## Prompt Engineering Notes\n\n- **Be Specific**: Clear, detailed prompts get better results\n- **Provide Examples**: Few-shot learning improves consistency\n- **Use Structured Output**: JSON, tables, or markdown for parsing\n- **Chain of Thought**: Break complex reasoning into steps\n- **Temperature Control**: Adjust creativity vs consistency`);
+      `## Prompt Engineering Notes\n\n- **Be Specific**: Clear, detailed prompts with instructions get better results\n- **Provide Examples**: Few-shot learning improves consistency and accuracy\n- **Use Structured Output**: JSON, tables, or markdown for parsing\n- **Chain of Thought**: Break complex reasoning into steps\n- **Temperature Control**: Adjust creativity vs consistency`);
   }
 
   // Add Evaluation Metrics

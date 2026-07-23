@@ -625,11 +625,12 @@ Think of bit manipulation and math like learning a new language — start with b
 
 ## Fine-Tuning Notes
 
-When applying bit manipulation and math to specific use cases, consider:
-- Adapting general principles to your specific domain
-- Performance optimization for your target hardware
-- Cost considerations for production deployment
-- Monitoring and observability in production
+When applying this topic to production, consider:
+- Fine-tuning with LoRA or Adapters for domain adaptation
+- Adapting general principles to your specific use cases
+- Performance optimization for target hardware
+- Cost considerations for deployment
+
 
 ## Open-Source Tools
 

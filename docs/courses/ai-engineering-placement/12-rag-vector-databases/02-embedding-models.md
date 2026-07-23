@@ -13,12 +13,9 @@
 
 ## Introduction
 
-Understanding embedding models is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering embedding models.
+Retrieval-Augmented Generation lets LLMs answer questions about your private data. Vector databases store embeddings for semantic search. This module covers the complete RAG pipeline from chunking to reranking.
 
-## Prerequisites
 
-- Basic programming knowledge
-- Understanding of data structures
 
 ## Chapter at a Glance
 
@@ -1207,11 +1204,12 @@ Think of embedding models like learning a new language — start with basic voca
 
 ## Fine-Tuning Notes
 
-When applying embedding models to specific use cases, consider:
-- Adapting general principles to your specific domain
-- Performance optimization for your target hardware
-- Cost considerations for production deployment
-- Monitoring and observability in production
+When applying this topic to production, consider:
+- Fine-tuning with LoRA or Adapters for domain adaptation
+- Adapting general principles to your specific use cases
+- Performance optimization for target hardware
+- Cost considerations for deployment
+
 
 ## Open-Source Tools
 
@@ -1292,3 +1290,7 @@ When applying embedding models to specific use cases, consider:
 ## Next Topic
 
 After mastering RAG & Vector Databases, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
+
+## Limitations
+
+Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

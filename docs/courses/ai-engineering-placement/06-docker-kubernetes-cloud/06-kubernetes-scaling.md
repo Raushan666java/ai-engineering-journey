@@ -14,24 +14,27 @@
 
 ## Introduction
 
-Understanding kubernetes scaling is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering kubernetes scaling.
+Containers and cloud platforms are where AI models live in production. Docker packages your model, Kubernetes orchestrates it, and cloud platforms scale it. This module covers the full deployment stack.
+
+
+
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
 
+## Key Terminology
+
+**Key Terms**: Core vocabulary and concepts for this topic.
+
+**Definition**: Essential terms you must know for interviews and production work.
 
 ## Theory
 
 Understanding kubernetes scaling is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how kubernetes scaling works in practice.
 
-### Key Concepts
 
-- **Core Principle**: The foundational idea behind kubernetes scaling
-- **How It Works**: The mechanism and process involved
-- **Why It Matters**: Relevance to AI engineering and real-world applications
-- **Trade-offs**: Advantages and limitations to consider
 
 ## Examples
 
@@ -1022,11 +1025,12 @@ Think of kubernetes scaling like learning a new language — start with basic vo
 
 ## Fine-Tuning Notes
 
-When applying kubernetes scaling to specific use cases, consider:
-- Adapting general principles to your specific domain
-- Performance optimization for your target hardware
-- Cost considerations for production deployment
-- Monitoring and observability in production
+When applying this topic to production, consider:
+- Fine-tuning with LoRA or Adapters for domain adaptation
+- Adapting general principles to your specific use cases
+- Performance optimization for target hardware
+- Cost considerations for deployment
+
 
 ## Open-Source Tools
 
@@ -1108,3 +1112,7 @@ After mastering Docker, Kubernetes & Cloud, continue to the next module in the c
 4. **Postprocessing**: Format model output for consumption
 5. **Response**: Return results with metadata and timing
 6. **Monitoring**: Log requests, responses, and latency
+
+## Limitations
+
+Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

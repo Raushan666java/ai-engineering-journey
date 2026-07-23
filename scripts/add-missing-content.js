@@ -54,7 +54,7 @@ function processFile(filePath) {
   // Add Fine-Tuning Notes (for non-fine-tuning modules)
   if (moduleNum !== '14') {
     content = addSectionIfMissing(content, 'Fine-Tuning Notes',
-      `## Fine-Tuning Notes\n\nWhen applying ${topic} concepts to specific use cases, consider:\n- Fine-tuning techniques like LoRA and Adapters for domain adaptation\n- Adapting general principles to your specific domain requirements\n- Performance optimization for your target hardware and deployment environment\n- Cost considerations for production deployment and scaling`);
+      `## Fine-Tuning Notes\n\nWhen applying ${topic} to production, consider:\n- Fine-tuning with LoRA or Adapters for domain adaptation\n- Adapting general principles to your specific use cases\n- Performance optimization for target hardware\n- Cost considerations for deployment`);
   }
 
   // Add Open-Source Tools

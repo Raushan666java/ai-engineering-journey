@@ -171,16 +171,17 @@ What we're building and why it matters.
 What readers need to know and have installed.
 
 
+## Key Terminology
+
+**Key Terms**: Core vocabulary and concepts for this topic.
+
+**Definition**: Essential terms you must know for interviews and production work.
+
 ## Theory
 
 Understanding technical blogging is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how technical blogging works in practice.
 
-### Key Concepts
 
-- **Core Principle**: The foundational idea behind technical blogging
-- **How It Works**: The mechanism and process involved
-- **Why It Matters**: Relevance to AI engineering and real-world applications
-- **Trade-offs**: Advantages and limitations to consider
 
 ## Step 1: Setup
 Environment setup and dependencies.
@@ -1007,11 +1008,12 @@ Think of technical blogging like learning a new language — start with basic vo
 
 ## Fine-Tuning Notes
 
-When applying technical blogging to specific use cases, consider:
-- Adapting general principles to your specific domain
-- Performance optimization for your target hardware
-- Cost considerations for production deployment
-- Monitoring and observability in production
+When applying this topic to production, consider:
+- Fine-tuning with LoRA or Adapters for domain adaptation
+- Adapting general principles to your specific use cases
+- Performance optimization for target hardware
+- Cost considerations for deployment
+
 
 ## Open-Source Tools
 

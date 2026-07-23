@@ -14,24 +14,27 @@
 
 ## Introduction
 
-Understanding window functions is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering window functions.
+Data is the fuel of AI. SQL and database design skills let you query, transform, and store the data that powers machine learning models. This module covers everything from basic queries to advanced indexing and optimization.
+
+
+
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
 
+## Key Terminology
+
+**Key Terms**: Core vocabulary and concepts for this topic.
+
+**Definition**: Essential terms you must know for interviews and production work.
 
 ## Theory
 
 Understanding window functions is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how window functions works in practice.
 
-### Key Concepts
 
-- **Core Principle**: The foundational idea behind window functions
-- **How It Works**: The mechanism and process involved
-- **Why It Matters**: Relevance to AI engineering and real-world applications
-- **Trade-offs**: Advantages and limitations to consider
 
 ## Chapter at a Glance
 
@@ -796,11 +799,12 @@ Think of window functions like learning a new language — start with basic voca
 
 ## Fine-Tuning Notes
 
-When applying window functions to specific use cases, consider:
-- Adapting general principles to your specific domain
-- Performance optimization for your target hardware
-- Cost considerations for production deployment
-- Monitoring and observability in production
+When applying this topic to production, consider:
+- Fine-tuning with LoRA or Adapters for domain adaptation
+- Adapting general principles to your specific use cases
+- Performance optimization for target hardware
+- Cost considerations for deployment
+
 
 ## Open-Source Tools
 
@@ -882,3 +886,7 @@ For production systems, consider:
 ## Next Topic
 
 After mastering SQL & Databases, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
+
+## Limitations
+
+Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

@@ -14,24 +14,27 @@
 
 ## Introduction
 
-Understanding model serving is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering model serving.
+MLOps bridges the gap between experiment and production. Experiment tracking, CI/CD, model serving, and drift monitoring keep AI systems reliable. This module covers the operational side of AI engineering.
+
+
+
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
 
+## Key Terminology
+
+**Key Terms**: Core vocabulary and concepts for this topic.
+
+**Definition**: Essential terms you must know for interviews and production work.
 
 ## Theory
 
 Understanding model serving is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how model serving works in practice.
 
-### Key Concepts
 
-- **Core Principle**: The foundational idea behind model serving
-- **How It Works**: The mechanism and process involved
-- **Why It Matters**: Relevance to AI engineering and real-world applications
-- **Trade-offs**: Advantages and limitations to consider
 
 ## Chapter at a Glance
 
@@ -1189,11 +1192,12 @@ Think of model serving like learning a new language — start with basic vocabul
 
 ## Fine-Tuning Notes
 
-When applying model serving to specific use cases, consider:
-- Adapting general principles to your specific domain
-- Performance optimization for your target hardware
-- Cost considerations for production deployment
-- Monitoring and observability in production
+When applying this topic to production, consider:
+- Fine-tuning with LoRA or Adapters for domain adaptation
+- Adapting general principles to your specific use cases
+- Performance optimization for target hardware
+- Cost considerations for deployment
+
 
 ## Open-Source Tools
 
@@ -1275,3 +1279,7 @@ After mastering MLOps & Production, continue to the next module in the curriculu
 4. **Postprocessing**: Format model output for consumption
 5. **Response**: Return results with metadata and timing
 6. **Monitoring**: Log requests, responses, and latency
+
+## Limitations
+
+Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

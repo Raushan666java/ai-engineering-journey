@@ -56,6 +56,12 @@ Neural networks are the engine behind every modern AI system — from GPT-4's la
 - Basic calculus concept of derivatives (helpful but not strictly required)
 
 
+## Key Terminology
+
+**Key Terms**: Core vocabulary and concepts for this topic.
+
+**Definition**: Essential terms you must know for interviews and production work.
+
 ## Theory
 
 
@@ -889,11 +895,12 @@ Think of neural networks basics like learning a new language — start with basi
 
 ## Fine-Tuning Notes
 
-When applying neural networks basics to specific use cases, consider:
-- Adapting general principles to your specific domain
-- Performance optimization for your target hardware
-- Cost considerations for production deployment
-- Monitoring and observability in production
+When applying this topic to production, consider:
+- Fine-tuning with LoRA or Adapters for domain adaptation
+- Adapting general principles to your specific use cases
+- Performance optimization for target hardware
+- Cost considerations for deployment
+
 
 ## Open-Source Tools
 

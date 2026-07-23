@@ -9,12 +9,20 @@ After this chapter you will be able to strategically use LLMs during coding inte
 
 ## Introduction
 
-Understanding ai assisted coding is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering ai assisted coding.
+Interviews test both technical skill and communication. DSA patterns, system design, behavioral questions, and mock interviews prepare you for the full interview loop. This module is your final prep before offers.
+
+
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
+## Key Terminology
+
+**Key Terms**: Core vocabulary and concepts for this topic.
+
+**Definition**: Essential terms you must know for interviews and production work.
 
 ## Theory
 
@@ -662,11 +670,12 @@ Think of ai assisted coding like learning a new language — start with basic vo
 
 ## Fine-Tuning Notes
 
-When applying ai assisted coding to specific use cases, consider:
-- Adapting general principles to your specific domain
-- Performance optimization for your target hardware
-- Cost considerations for production deployment
-- Monitoring and observability in production
+When applying this topic to production, consider:
+- Fine-tuning with LoRA or Adapters for domain adaptation
+- Adapting general principles to your specific use cases
+- Performance optimization for target hardware
+- Cost considerations for deployment
+
 
 ## Open-Source Tools
 

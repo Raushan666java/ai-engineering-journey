@@ -44,7 +44,7 @@ flowchart LR
 
 ## Introduction
 
-Understanding scalability fundamentals is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering scalability fundamentals.
+System design interviews test your ability to architect large-scale systems. Caching, load balancing, message queues, and database sharding are patterns you will apply daily. This module prepares you for both interviews and production.
 
 ## Prerequisites
 
@@ -53,6 +53,12 @@ Understanding scalability fundamentals is essential for AI engineers building pr
 - Experience with at least one backend framework
 - Reference: Module 05 (FastAPI Backend) for API concepts
 
+
+## Key Terminology
+
+**Key Terms**: Core vocabulary and concepts for this topic.
+
+**Definition**: Essential terms you must know for interviews and production work.
 
 ## Theory
 
@@ -829,11 +835,12 @@ Think of scalability fundamentals like learning a new language — start with ba
 
 ## Fine-Tuning Notes
 
-When applying scalability fundamentals to specific use cases, consider:
-- Adapting general principles to your specific domain
-- Performance optimization for your target hardware
-- Cost considerations for production deployment
-- Monitoring and observability in production
+When applying this topic to production, consider:
+- Fine-tuning with LoRA or Adapters for domain adaptation
+- Adapting general principles to your specific use cases
+- Performance optimization for target hardware
+- Cost considerations for deployment
+
 
 ## Open-Source Tools
 
@@ -906,3 +913,7 @@ When applying scalability fundamentals to specific use cases, consider:
 ## Next Topic
 
 After mastering System Design, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
+
+## Limitations
+
+Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

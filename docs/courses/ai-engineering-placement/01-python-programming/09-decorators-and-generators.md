@@ -14,24 +14,27 @@
 
 ## Introduction
 
-Understanding decorators and generators is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering decorators and generators.
+Python is the lingua franca of AI engineering. Mastering its syntax, data structures, and libraries is non-negotiable for building ML pipelines, APIs, and automation scripts. This module covers everything from basics to advanced concurrency.
+
+
+
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
 
+## Key Terminology
+
+**Key Terms**: Core vocabulary and concepts for this topic.
+
+**Definition**: Essential terms you must know for interviews and production work.
 
 ## Theory
 
 Understanding decorators and generators is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how decorators and generators works in practice.
 
-### Key Concepts
 
-- **Core Principle**: The foundational idea behind decorators and generators
-- **How It Works**: The mechanism and process involved
-- **Why It Matters**: Relevance to AI engineering and real-world applications
-- **Trade-offs**: Advantages and limitations to consider
 
 ## Chapter at a Glance
 
@@ -877,11 +880,12 @@ Think of decorators and generators like learning a new language — start with b
 
 ## Fine-Tuning Notes
 
-When applying decorators and generators to specific use cases, consider:
-- Adapting general principles to your specific domain
-- Performance optimization for your target hardware
-- Cost considerations for production deployment
-- Monitoring and observability in production
+When applying this topic to production, consider:
+- Fine-tuning with LoRA or Adapters for domain adaptation
+- Adapting general principles to your specific use cases
+- Performance optimization for target hardware
+- Cost considerations for deployment
+
 
 ## Open-Source Tools
 
@@ -963,3 +967,7 @@ For production systems, consider:
 ## Next Topic
 
 After mastering Python Programming, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
+
+## Limitations
+
+Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

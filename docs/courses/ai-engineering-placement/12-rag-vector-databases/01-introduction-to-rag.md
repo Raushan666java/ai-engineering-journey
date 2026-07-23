@@ -51,6 +51,12 @@ Retrieval-Augmented Generation (RAG) is the most practical technique for making 
 - Familiarity with what embeddings are (helpful but introduced in Module 10)
 
 
+## Key Terminology
+
+**Key Terms**: Core vocabulary and concepts for this topic.
+
+**Definition**: Essential terms you must know for interviews and production work.
+
 ## Theory
 
 
@@ -1075,11 +1081,12 @@ Think of introduction to rag like learning a new language — start with basic v
 
 ## Fine-Tuning Notes
 
-When applying introduction to rag to specific use cases, consider:
-- Adapting general principles to your specific domain
-- Performance optimization for your target hardware
-- Cost considerations for production deployment
-- Monitoring and observability in production
+When applying this topic to production, consider:
+- Fine-tuning with LoRA or Adapters for domain adaptation
+- Adapting general principles to your specific use cases
+- Performance optimization for target hardware
+- Cost considerations for deployment
+
 
 ## Open-Source Tools
 

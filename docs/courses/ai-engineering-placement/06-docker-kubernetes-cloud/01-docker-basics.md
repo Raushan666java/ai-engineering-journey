@@ -55,6 +55,12 @@ Docker is the standard for packaging and deploying AI applications — from trai
 - Familiarity with Python or TypeScript project structures
 
 
+## Key Terminology
+
+**Key Terms**: Core vocabulary and concepts for this topic.
+
+**Definition**: Essential terms you must know for interviews and production work.
+
 ## Theory
 
 
@@ -1188,11 +1194,12 @@ Think of docker basics like learning a new language — start with basic vocabul
 
 ## Fine-Tuning Notes
 
-When applying docker basics to specific use cases, consider:
-- Adapting general principles to your specific domain
-- Performance optimization for your target hardware
-- Cost considerations for production deployment
-- Monitoring and observability in production
+When applying this topic to production, consider:
+- Fine-tuning with LoRA or Adapters for domain adaptation
+- Adapting general principles to your specific use cases
+- Performance optimization for target hardware
+- Cost considerations for deployment
+
 
 ## Open-Source Tools
 
@@ -1274,3 +1281,7 @@ After mastering Docker, Kubernetes & Cloud, continue to the next module in the c
 4. **Postprocessing**: Format model output for consumption
 5. **Response**: Return results with metadata and timing
 6. **Monitoring**: Log requests, responses, and latency
+
+## Limitations
+
+Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

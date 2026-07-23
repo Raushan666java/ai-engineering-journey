@@ -43,6 +43,12 @@ flowchart LR
     F --> G[Real-World Tasks]
 ```text
 
+## Key Terminology
+
+**Key Terms**: Core vocabulary and concepts for this topic.
+
+**Definition**: Essential terms you must know for interviews and production work.
+
 ## Theory
 
 ### 04.1 Navigation
@@ -980,11 +986,12 @@ Think of linux commands like learning a new language — start with basic vocabu
 
 ## Fine-Tuning Notes
 
-When applying linux commands to specific use cases, consider:
-- Adapting general principles to your specific domain
-- Performance optimization for your target hardware
-- Cost considerations for production deployment
-- Monitoring and observability in production
+When applying this topic to production, consider:
+- Fine-tuning with LoRA or Adapters for domain adaptation
+- Adapting general principles to your specific use cases
+- Performance optimization for target hardware
+- Cost considerations for deployment
+
 
 ## Open-Source Tools
 
@@ -1057,3 +1064,7 @@ When applying linux commands to specific use cases, consider:
 ## Next Topic
 
 After mastering Git, Linux & CLI, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
+
+## Limitations
+
+Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

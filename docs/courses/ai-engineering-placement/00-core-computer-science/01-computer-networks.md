@@ -9,10 +9,18 @@ After this chapter you will be able to explain the TCP/IP stack from an API desi
 
 Computer networking is the backbone of distributed AI systems. Understanding TCP/IP, DNS, load balancing, and HTTP protocols is essential for building scalable ML pipelines and serving models at scale.
 
+
+
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
+
+## Key Terminology
+
+**Key Terms**: Core vocabulary and concepts for this topic.
+
+**Definition**: Essential terms you must know for interviews and production work.
 
 ## Theory
 
@@ -810,11 +818,12 @@ Think of computer networks like learning a new language — start with basic voc
 
 ## Fine-Tuning Notes
 
-When applying computer networks to specific use cases, consider:
-- Adapting general principles to your specific domain
-- Performance optimization for your target hardware
-- Cost considerations for production deployment
-- Monitoring and observability in production
+When applying this topic to production, consider:
+- Fine-tuning with LoRA or Adapters for domain adaptation
+- Adapting general principles to your specific use cases
+- Performance optimization for target hardware
+- Cost considerations for deployment
+
 
 ## Open-Source Tools
 
@@ -887,3 +896,7 @@ When applying computer networks to specific use cases, consider:
 ## Next Topic
 
 After mastering Core Computer Science, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
+
+## Limitations
+
+Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

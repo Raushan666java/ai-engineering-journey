@@ -12,24 +12,27 @@
 
 ## Introduction
 
-Understanding when to fine tune is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering when to fine tune.
+Fine-tuning adapts foundation models to your specific domain. LoRA, QLoRA, and DPO make this affordable. This module covers when to fine-tune, how to do it, and how to evaluate the results.
+
+
+
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
 
+## Key Terminology
+
+**Key Terms**: Core vocabulary and concepts for this topic.
+
+**Definition**: Essential terms you must know for interviews and production work.
 
 ## Theory
 
 Understanding when to fine tune is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how when to fine tune works in practice.
 
-### Key Concepts
 
-- **Core Principle**: The foundational idea behind when to fine tune
-- **How It Works**: The mechanism and process involved
-- **Why It Matters**: Relevance to AI engineering and real-world applications
-- **Trade-offs**: Advantages and limitations to consider
 
 ## Chapter at a Glance
 
@@ -940,3 +943,7 @@ After mastering Fine-Tuning with PEFT, continue to the next module in the curric
 4. **Validation**: Evaluate on held-out data to prevent overfitting
 5. **Hyperparameter Tuning**: Optimize learning rate, batch size, etc.
 6. **Model Export**: Save trained model for deployment
+
+## Limitations
+
+Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

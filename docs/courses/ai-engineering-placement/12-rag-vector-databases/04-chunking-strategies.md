@@ -806,16 +806,22 @@ result = adaptive.chunk(code)
 print(f"Adaptive chunking: {len(result)} chunks")
 ```text
 
+## Prerequisites
+
+- Basic programming knowledge
+- Understanding of data structures
+
+## Key Terminology
+
+**Key Terms**: Core vocabulary and concepts for this topic.
+
+**Definition**: Essential terms you must know for interviews and production work.
+
 ## Theory
 
 Understanding chunking strategies is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how chunking strategies works in practice.
 
-### Key Concepts
 
-- **Core Principle**: The foundational idea behind chunking strategies
-- **How It Works**: The mechanism and process involved
-- **Why It Matters**: Relevance to AI engineering and real-world applications
-- **Trade-offs**: Advantages and limitations to consider
 
 ## Summary
 
@@ -1207,11 +1213,12 @@ Think of chunking strategies like learning a new language — start with basic v
 
 ## Fine-Tuning Notes
 
-When applying chunking strategies to specific use cases, consider:
-- Adapting general principles to your specific domain
-- Performance optimization for your target hardware
-- Cost considerations for production deployment
-- Monitoring and observability in production
+When applying this topic to production, consider:
+- Fine-tuning with LoRA or Adapters for domain adaptation
+- Adapting general principles to your specific use cases
+- Performance optimization for target hardware
+- Cost considerations for deployment
+
 
 ## Open-Source Tools
 
@@ -1292,3 +1299,7 @@ When applying chunking strategies to specific use cases, consider:
 ## Next Topic
 
 After mastering RAG & Vector Databases, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
+
+## Limitations
+
+Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

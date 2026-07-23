@@ -54,6 +54,12 @@ Machine learning fundamentals are the bedrock of every AI engineering role — f
 - Familiarity with linear algebra concepts (vectors, matrices) is helpful but not required
 
 
+## Key Terminology
+
+**Key Terms**: Core vocabulary and concepts for this topic.
+
+**Definition**: Essential terms you must know for interviews and production work.
+
 ## Theory
 
 
@@ -788,11 +794,12 @@ Think of ml fundamentals like learning a new language — start with basic vocab
 
 ## Fine-Tuning Notes
 
-When applying ml fundamentals to specific use cases, consider:
-- Adapting general principles to your specific domain
-- Performance optimization for your target hardware
-- Cost considerations for production deployment
-- Monitoring and observability in production
+When applying this topic to production, consider:
+- Fine-tuning with LoRA or Adapters for domain adaptation
+- Adapting general principles to your specific use cases
+- Performance optimization for target hardware
+- Cost considerations for deployment
+
 
 ## Open-Source Tools
 

@@ -14,12 +14,9 @@
 
 ## Introduction
 
-Understanding cost and latency optimization is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering cost and latency optimization.
+Large language models are transforming every industry. Understanding how to prompt, evaluate, and optimize LLMs is a critical skill for AI engineers. This module covers the full LLM lifecycle from API calls to cost optimization.
 
-## Prerequisites
 
-- Basic programming knowledge
-- Understanding of data structures
 
 ## Chapter at a Glance
 
@@ -1473,11 +1470,12 @@ Think of cost and latency optimization like learning a new language — start wi
 
 ## Fine-Tuning Notes
 
-When applying cost and latency optimization to specific use cases, consider:
-- Adapting general principles to your specific domain
-- Performance optimization for your target hardware
-- Cost considerations for production deployment
-- Monitoring and observability in production
+When applying this topic to production, consider:
+- Fine-tuning with LoRA or Adapters for domain adaptation
+- Adapting general principles to your specific use cases
+- Performance optimization for target hardware
+- Cost considerations for deployment
+
 
 ## Open-Source Tools
 
@@ -1567,3 +1565,7 @@ For production systems, consider:
 ## Next Topic
 
 After mastering LLMs & Prompt Engineering, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
+
+## Limitations
+
+Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

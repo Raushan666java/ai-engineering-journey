@@ -44,6 +44,12 @@ flowchart LR
     F --> G[Security]
 ```text
 
+## Key Terminology
+
+**Key Terms**: Core vocabulary and concepts for this topic.
+
+**Definition**: Essential terms you must know for interviews and production work.
+
 ## Theory
 
 ### 06.1 CI/CD Fundamentals
@@ -1053,11 +1059,12 @@ Think of networking and security like learning a new language — start with bas
 
 ## Fine-Tuning Notes
 
-When applying networking and security to specific use cases, consider:
-- Adapting general principles to your specific domain
-- Performance optimization for your target hardware
-- Cost considerations for production deployment
-- Monitoring and observability in production
+When applying this topic to production, consider:
+- Fine-tuning with LoRA or Adapters for domain adaptation
+- Adapting general principles to your specific use cases
+- Performance optimization for target hardware
+- Cost considerations for deployment
+
 
 ## Open-Source Tools
 

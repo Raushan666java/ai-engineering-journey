@@ -22,16 +22,17 @@ Arrays are the most fundamental data structure, providing O(1) random access. Un
 - Basic programming
 
 
+## Key Terminology
+
+**Key Terms**: Core vocabulary and concepts for this topic.
+
+**Definition**: Essential terms you must know for interviews and production work.
+
 ## Theory
 
 Understanding arrays is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how arrays works in practice.
 
-### Key Concepts
 
-- **Core Principle**: The foundational idea behind arrays
-- **How It Works**: The mechanism and process involved
-- **Why It Matters**: Relevance to AI engineering and real-world applications
-- **Trade-offs**: Advantages and limitations to consider
 
 ## Chapter at a Glance
 
@@ -1231,11 +1232,12 @@ Think of arrays like learning a new language — start with basic vocabulary (fu
 
 ## Fine-Tuning Notes
 
-When applying arrays to specific use cases, consider:
-- Adapting general principles to your specific domain
-- Performance optimization for your target hardware
-- Cost considerations for production deployment
-- Monitoring and observability in production
+When applying this topic to production, consider:
+- Fine-tuning with LoRA or Adapters for domain adaptation
+- Adapting general principles to your specific use cases
+- Performance optimization for target hardware
+- Cost considerations for deployment
+
 
 ## Open-Source Tools
 
@@ -1317,3 +1319,7 @@ For production systems, consider:
 ## Next Topic
 
 After mastering Data Structures & Algorithms, continue to the next module in the curriculum to build upon these foundations and deepen your AI engineering expertise.
+
+## Limitations
+
+Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

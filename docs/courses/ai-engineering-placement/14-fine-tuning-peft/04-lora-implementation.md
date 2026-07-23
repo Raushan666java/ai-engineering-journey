@@ -12,24 +12,27 @@
 
 ## Introduction
 
-Understanding lora implementation is essential for AI engineers building production systems. This chapter covers the core principles, practical implementations, and interview preparation for mastering lora implementation.
+Fine-tuning adapts foundation models to your specific domain. LoRA, QLoRA, and DPO make this affordable. This module covers when to fine-tune, how to do it, and how to evaluate the results.
+
+
+
 
 ## Prerequisites
 
 - Basic programming knowledge
 - Understanding of data structures
 
+## Key Terminology
+
+**Key Terms**: Core vocabulary and concepts for this topic.
+
+**Definition**: Essential terms you must know for interviews and production work.
 
 ## Theory
 
 Understanding lora implementation is fundamental for AI engineers. This section covers the core concepts, underlying principles, and theoretical framework that govern how lora implementation works in practice.
 
-### Key Concepts
 
-- **Core Principle**: The foundational idea behind lora implementation
-- **How It Works**: The mechanism and process involved
-- **Why It Matters**: Relevance to AI engineering and real-world applications
-- **Trade-offs**: Advantages and limitations to consider
 
 ## Chapter at a Glance
 
@@ -1010,3 +1013,7 @@ After mastering Fine-Tuning with PEFT, continue to the next module in the curric
 4. **Validation**: Evaluate on held-out data to prevent overfitting
 5. **Hyperparameter Tuning**: Optimize learning rate, batch size, etc.
 6. **Model Export**: Save trained model for deployment
+
+## Limitations
+
+Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.

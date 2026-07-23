@@ -1,6 +1,6 @@
 # 100-Point Rubric Report
 
-Generated: 2026-07-21T11:31:48.797Z
+Generated: 2026-07-23T05:25:32.432Z
 
 ## Summary
 
@@ -30,25 +30,25 @@ Generated: 2026-07-21T11:31:48.797Z
 | Rank | Criteria | Files Failing | % |
 |------|----------|---------------|---|
 | 1 | Clear Language | 219 | 100% |
-| 2 | No Duplicated Content | 198 | 90% |
-| 3 | Fine-Tuning Notes | 175 | 80% |
-| 4 | RAG Relevance | 154 | 70% |
-| 5 | Prompt Engineering Notes | 138 | 63% |
-| 6 | Tensor Explanation | 96 | 44% |
-| 7 | Optimized Implementation | 79 | 36% |
-| 8 | Training Workflow | 58 | 26% |
-| 9 | Title (Single H1) | 47 | 21% |
-| 10 | Key Terminology | 39 | 18% |
-| 11 | Mathematical Explanation | 36 | 16% |
-| 12 | Multiple Implementations | 36 | 16% |
-| 13 | Advanced Concepts | 30 | 14% |
-| 14 | Challenge Problems | 26 | 12% |
-| 15 | Limitations | 25 | 11% |
-| 16 | Learning Roadmap | 17 | 8% |
-| 17 | Complexity Analysis | 15 | 7% |
-| 18 | No Placeholder Text | 12 | 5% |
-| 19 | Mock Interview Section | 12 | 5% |
-| 20 | Tables | 11 | 5% |
+| 2 | No Duplicated Content | 199 | 91% |
+| 3 | RAG Relevance | 150 | 68% |
+| 4 | Prompt Engineering Notes | 136 | 62% |
+| 5 | Tensor Explanation | 96 | 44% |
+| 6 | Optimized Implementation | 79 | 36% |
+| 7 | Training Workflow | 58 | 26% |
+| 8 | Title (Single H1) | 47 | 21% |
+| 9 | Mathematical Explanation | 36 | 16% |
+| 10 | Multiple Implementations | 36 | 16% |
+| 11 | Advanced Concepts | 30 | 14% |
+| 12 | Challenge Problems | 26 | 12% |
+| 13 | Learning Roadmap | 17 | 8% |
+| 14 | Complexity Analysis | 15 | 7% |
+| 15 | No Placeholder Text | 12 | 5% |
+| 16 | Key Terminology | 12 | 5% |
+| 17 | Mock Interview Section | 12 | 5% |
+| 18 | Tables | 11 | 5% |
+| 19 | HR Questions | 7 | 3% |
+| 20 | Beginner Implementation | 7 | 3% |
 
 ## Bottom 10 Files
 

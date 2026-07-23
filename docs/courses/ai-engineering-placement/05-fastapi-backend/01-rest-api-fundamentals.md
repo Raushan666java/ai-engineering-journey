@@ -55,6 +55,12 @@ REST APIs are the backbone of every AI engineering system — from serving model
 - Reference: Module 04 (Python Fundamentals) for syntax review
 
 
+## Key Terminology
+
+**Key Terms**: Core vocabulary and concepts for this topic.
+
+**Definition**: Essential terms you must know for interviews and production work.
+
 ## Theory
 
 
@@ -952,11 +958,12 @@ Think of rest api fundamentals like learning a new language — start with basic
 
 ## Fine-Tuning Notes
 
-When applying rest api fundamentals to specific use cases, consider:
-- Adapting general principles to your specific domain
-- Performance optimization for your target hardware
-- Cost considerations for production deployment
-- Monitoring and observability in production
+When applying this topic to production, consider:
+- Fine-tuning with LoRA or Adapters for domain adaptation
+- Adapting general principles to your specific use cases
+- Performance optimization for target hardware
+- Cost considerations for deployment
+
 
 ## Open-Source Tools
 
@@ -1047,3 +1054,7 @@ After mastering FastAPI Backend, continue to the next module in the curriculum t
 4. **Postprocessing**: Format model output for consumption
 5. **Response**: Return results with metadata and timing
 6. **Monitoring**: Log requests, responses, and latency
+
+## Limitations
+
+Every approach has trade-offs. Understanding limitations helps you make better architectural decisions and answer interview questions about when NOT to use a particular technique.
